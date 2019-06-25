@@ -1732,9 +1732,6 @@ _.NeverImplemented =
 		un(1, i(156882, {	-- Pale Gladiator's Proto-Drake
 			["mountID"] = 262025,
 		})),
-		un(1, i(156881, {	-- Purple Gladiator's Proto-Drake
-			["mountID"] = 262024,
-		})),
 		un(1, model(41089, i(84753))),		-- Reins of the White Riding Yak 		(Never added in Game)
 		un(1, model(43707, i(87784))),		-- Reins of the Jungle Riding Crane 	(Never added in Game)
 		un(1, model(43709, i(87786))),		-- Reins of the Black Riding Yak 		(Never added in Game)

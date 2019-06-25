@@ -29,65 +29,57 @@ _.Zones =
 				n(-4,   {	-- Achievement
 					ach(10994, {	-- A Glorious Campaign
 						cl(2, {	-- Paladin
-						  q(45561),	-- Seek Me Out
-						  q(45562),	-- Kneel and Be Squired!
-						  q(45565),	-- Further Training
-						  q(45566),	-- A Knight's Belongings
-						  q(45567),	-- My Kingdom for a Horse
-						  q(45568),	-- They Stole Excaliberto!
-						  q(45644),	-- Oh Doloria, My Sweet Doloria
-						  q(45645),	-- A Fool's Errand
+							q(45561),	-- Seek Me Out
+							q(45562),	-- Kneel and Be Squired!
+							q(45565),	-- Further Training
+							q(45566),	-- A Knight's Belongings
+							q(45567),	-- My Kingdom for a Horse
+							q(45568),	-- They Stole Excaliberto!
+							q(45644),	-- Oh Doloria, My Sweet Doloria
+							q(45645),	-- A Fool's Errand
 						}),
 						cl(5, {	-- Priest
-						  q(45343),	-- A Curious Contagion
-						  q(45344),	-- Sampling the Source
-						  q(45346),	-- Shambling Specimens
-						  q(45345),	-- Mischievous Sprites
-						  q(45347),	-- Crafting a Cure
-						  q(45348),	-- Safekeeping
-						  q(45342),	-- Administering Aid
+							q(45343),	-- A Curious Contagion
+							q(45344),	-- Sampling the Source
+							q(45346),	-- Shambling Specimens
+							q(45345),	-- Mischievous Sprites
+							q(45347),	-- Crafting a Cure
+							q(45348),	-- Safekeeping
+							q(45342),	-- Administering Aid
 						}),
 					}),
 					ach(10059, {	-- Ain't No Mountain High Enough
-						{	-- Criteria 1 — The Rivermane Tribe
-							["criteriaID"] = 1,	-- The Rivermane Tribe
+						crit(1, {	-- The Rivermane Tribe
 							["sourceQuests"] = { 39487 },	-- Crystal Fury
-						},
-						{	-- Criteria 2 — Riverbend
-							["criteriaID"] = 2,	-- Riverbend
+						}),
+						crit(2, {	-- Riverbend
 							["sourceQuests"] = { 38909 },	-- Get to High Ground
-						},
-						{	-- Criteria 3 — The Skyhorn Tribe
-							["criteriaID"] = 3,	-- The Skyhorn Tribe
+						}),
+						crit(3, {	-- The Skyhorn Tribe
 							["sourceQuests"] = { 39387 },	-- The Skies of Highmountain
-						},
-						{	-- Criteria 4 — The Bloodtotem Tribe
-							["criteriaID"] = 4,	-- The Bloodtotem Tribe
+						}),
+						crit(4, {	-- The Bloodtotem Tribe
 							["sourceQuests"] = { 39426 },	-- Blood Debt
-						},
-						{	-- Criteria 5 — Huln's War
-							["criteriaID"] = 5,	-- Huln's War
+						}),
+						crit(5, {	-- Huln's War
 							["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
-						},
-						{	-- Criteria 6 — Secrets of Highmountain
-							["criteriaID"] = 6,	-- Secrets of Highmountain
+						}),
+						crit(6, {	-- Secrets of Highmountain
 							["sourceQuests"] = { 39579 },	-- The Backdoor
-						},
-						{	-- Criteria 7 — Battle of Snowblind Mesa
-							["criteriaID"] = 7,	-- Battle of Snowblind Mesa
+						}),
+						crit(7, {	-- Battle of Snowblind Mesa
 							["sourceQuests"] = { 39780 },	-- The Underking
-						},
+						}),
 					}),
 					ach(10398, {	-- Drum Circle
-						["description"] = "You need 5 people jumping on the drum on lower floor of Thunder Totem. CANNOT be completed while you are on 'Assault on Thunder Totem'."
+						["description"] = "You need 5 people jumping on the drum on the lower floor of Thunder Totem. CANNOT be completed while you are on 'Assault on Thunder Totem'."
 					}),
 					ach(10877, {	-- Pillars of Creation
 						["collectible"] = false,
 						["g"] = {
-							{	-- Criteria 4 — Hammer of Khaz'goroth
-								["criteriaID"] = 4,	-- Hammer of Khaz'goroth
+							crit(4, {	-- Hammer of Khaz'goroth
 								["sourceQuests"] = { 42454 },	-- The Hammer of Khaz'goroth
-							},
+							}),
 						},
 					}),
 					ach(11609, {	-- Power Unbound
@@ -118,6 +110,7 @@ _.Zones =
 				}),
 				n(-169, {	-- Emissary Quests
 					q(42233, {	-- Highmountain Tribes
+						["repeatable"] = true,
 						["g"] = {
 							i(157823, {	-- Highmountain Tribute
 								i(144313),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 3)
@@ -127,88 +120,74 @@ _.Zones =
 									i(139112),	-- Tribal Unification Cloak
 								}),
 								n(-3247, {	-- Roggthread Set
-									["g"] = {
-										i(134172),	-- Roggthread Headdress
-										i(134177),	-- Roggthread Mantle
-										i(134175),	-- Roggthread Robe
-										i(134178),	-- Roggthread Bracers
-										i(134173),	-- Roggthread Gloves
-										i(134171),	-- Roggthread Cord
-										i(134174),	-- Roggthread Legwarmers
-										i(134176),	-- Roggthread Slippers
-									},
+									i(134172),	-- Roggthread Headdress
+									i(134177),	-- Roggthread Mantle
+									i(134175),	-- Roggthread Robe
+									i(134178),	-- Roggthread Bracers
+									i(134173),	-- Roggthread Gloves
+									i(134171),	-- Roggthread Cord
+									i(134174),	-- Roggthread Legwarmers
+									i(134176),	-- Roggthread Slippers
 								}),
 								n(-3249, {	-- Sunfrost Set
-									["g"] = {
-										i(139124),	-- Sunfrost Aurora
-										i(139129),	-- Sunfrost Mantle
-										i(139127),	-- Sunfrost Robes
-										i(139130),	-- Sunfrost Wristwraps
-										i(139125),	-- Sunfrost Handwraps
-										i(139123),	-- Sunfrost Waistcord
-										i(139126),	-- Sunfrost Leggings
-										i(139128),	-- Sunfrost Slippers
-									},
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
 								}),
 								n(-3263, {	-- Rivermane Set
-									["g"] = {
-										i(139108),	-- Rivermane Hood
-										i(139110),	-- Rivermane Shoulders
-										i(139109),	-- Rivermane Robe
-										i(139104),	-- Rivermane Wraps
-										i(139107),	-- Rivermane Gloves
-										i(139111),	-- Rivermane Cord
-										i(139106),	-- Rivermane Kilt
-										i(139105),	-- Rivermane Sandals
-									},
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
 								}),
 								n(-3270, {	-- Steelgazer Set
-									["g"] = {
-										i(134152),	-- Steelgazer Hide Hood
-										i(134154),	-- Steelgazer Hide Mantle
-										i(134153),	-- Steelgazer Hide Jerkin
-										i(134148),	-- Steelgazer Hide Bracers
-										i(134151),	-- Steelgazer Hide Gloves
-										i(134155),	-- Steelgazer Hide Belt
-										i(134150),	-- Steelgazer Hide Leggings
-										i(134149),	-- Steelgazer Hide Boots
-									},
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
 								}),
 								n(-3275, {	-- Skyhorn Set
-									["g"] = {
-										i(139119),	-- Skyhorn Headgear
-										i(139121),	-- Skyhorn Mantle
-										i(139122),	-- Skyhorn Vest
-										i(139116),	-- Skyhorn Bindings
-										i(139117),	-- Skyhorn Gloves
-										i(139115),	-- Skyhorn Cinch
-										i(139120),	-- Skyhorn Legguards
-										i(139118),	-- Skyhorn Boots
-									},
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
 								}),
 								n(-3300, {	-- Greystone Set
-									["g"] = {
-										i(139096),	-- Greystone Helm
-										i(139098),	-- Greystone Pauldrons
-										i(139093),	-- Greystone Chestpiece
-										i(139100),	-- Greystone Wristplates
-										i(139094),	-- Greystone Gauntlets
-										i(139095),	-- Greystone Belt
-										i(139097),	-- Greystone Legplates
-										i(139099),	-- Greystone Boots
-									},
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
 								}),
 								n(-3308, {	-- Rockbound Set
-									["g"] = {
-										i(134138),	-- Rockbound Helm
-										i(134140),	-- Rockbound Pauldrons
-										i(134135),	-- Rockbound Chestguard
-										i(134142),	-- Rockbound Wristguard
-										i(134136),	-- Rockbound Gauntlets
-										i(134137),	-- Rockbound Girdle
-										i(134139),	-- Rockbound Legguards
-										i(134141),	-- Rockbound Sabatons
-									},
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
 								}),
 							}),
 							un(2, i(137561, {	-- Highmountain Tribute
@@ -217,88 +196,74 @@ _.Zones =
 									i(139112),	-- Tribal Unification Cloak
 								}),
 								n(-3247, {	-- Roggthread Set
-									["g"] = {
-										i(134172),	-- Roggthread Headdress
-										i(134177),	-- Roggthread Mantle
-										i(134175),	-- Roggthread Robe
-										i(134178),	-- Roggthread Bracers
-										i(134173),	-- Roggthread Gloves
-										i(134171),	-- Roggthread Cord
-										i(134174),	-- Roggthread Legwarmers
-										i(134176),	-- Roggthread Slippers
-									},
+									i(134172),	-- Roggthread Headdress
+									i(134177),	-- Roggthread Mantle
+									i(134175),	-- Roggthread Robe
+									i(134178),	-- Roggthread Bracers
+									i(134173),	-- Roggthread Gloves
+									i(134171),	-- Roggthread Cord
+									i(134174),	-- Roggthread Legwarmers
+									i(134176),	-- Roggthread Slippers
 								}),
 								n(-3249, {	-- Sunfrost Set
-									["g"] = {
-										i(139124),	-- Sunfrost Aurora
-										i(139129),	-- Sunfrost Mantle
-										i(139127),	-- Sunfrost Robes
-										i(139130),	-- Sunfrost Wristwraps
-										i(139125),	-- Sunfrost Handwraps
-										i(139123),	-- Sunfrost Waistcord
-										i(139126),	-- Sunfrost Leggings
-										i(139128),	-- Sunfrost Slippers
-									},
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
 								}),
 								n(-3263, {	-- Rivermane Set
-									["g"] = {
-										i(139108),	-- Rivermane Hood
-										i(139110),	-- Rivermane Shoulders
-										i(139109),	-- Rivermane Robe
-										i(139104),	-- Rivermane Wraps
-										i(139107),	-- Rivermane Gloves
-										i(139111),	-- Rivermane Cord
-										i(139106),	-- Rivermane Kilt
-										i(139105),	-- Rivermane Sandals
-									},
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
 								}),
 								n(-3270, {	-- Steelgazer Set
-									["g"] = {
-										i(134152),	-- Steelgazer Hide Hood
-										i(134154),	-- Steelgazer Hide Mantle
-										i(134153),	-- Steelgazer Hide Jerkin
-										i(134148),	-- Steelgazer Hide Bracers
-										i(134151),	-- Steelgazer Hide Gloves
-										i(134155),	-- Steelgazer Hide Belt
-										i(134150),	-- Steelgazer Hide Leggings
-										i(134149),	-- Steelgazer Hide Boots
-									},
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
 								}),
 								n(-3275, {	-- Skyhorn Set
-									["g"] = {
-										i(139119),	-- Skyhorn Headgear
-										i(139121),	-- Skyhorn Mantle
-										i(139122),	-- Skyhorn Vest
-										i(139116),	-- Skyhorn Bindings
-										i(139117),	-- Skyhorn Gloves
-										i(139115),	-- Skyhorn Cinch
-										i(139120),	-- Skyhorn Legguards
-										i(139118),	-- Skyhorn Boots
-									},
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
 								}),
 								n(-3300, {	-- Greystone Set
-									["g"] = {
-										i(139096),	-- Greystone Helm
-										i(139098),	-- Greystone Pauldrons
-										i(139093),	-- Greystone Chestpiece
-										i(139100),	-- Greystone Wristplates
-										i(139094),	-- Greystone Gauntlets
-										i(139095),	-- Greystone Belt
-										i(139097),	-- Greystone Legplates
-										i(139099),	-- Greystone Boots
-									},
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
 								}),
 								n(-3308, {	-- Rockbound Set
-									["g"] = {
-										i(134138),	-- Rockbound Helm
-										i(134140),	-- Rockbound Pauldrons
-										i(134135),	-- Rockbound Chestguard
-										i(134142),	-- Rockbound Wristguard
-										i(134136),	-- Rockbound Gauntlets
-										i(134137),	-- Rockbound Girdle
-										i(134139),	-- Rockbound Legguards
-										i(134141),	-- Rockbound Sabatons
-									},
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
 								}),
 							})),
 							un(2, i(154904, {	-- Highmountain Tribute
@@ -307,88 +272,74 @@ _.Zones =
 									i(139112),	-- Tribal Unification Cloak
 								}),
 								n(-3247, {	-- Roggthread Set
-									["g"] = {
-										i(134172),	-- Roggthread Headdress
-										i(134177),	-- Roggthread Mantle
-										i(134175),	-- Roggthread Robe
-										i(134178),	-- Roggthread Bracers
-										i(134173),	-- Roggthread Gloves
-										i(134171),	-- Roggthread Cord
-										i(134174),	-- Roggthread Legwarmers
-										i(134176),	-- Roggthread Slippers
-									},
+									i(134172),	-- Roggthread Headdress
+									i(134177),	-- Roggthread Mantle
+									i(134175),	-- Roggthread Robe
+									i(134178),	-- Roggthread Bracers
+									i(134173),	-- Roggthread Gloves
+									i(134171),	-- Roggthread Cord
+									i(134174),	-- Roggthread Legwarmers
+									i(134176),	-- Roggthread Slippers
 								}),
 								n(-3249, {	-- Sunfrost Set
-									["g"] = {
-										i(139124),	-- Sunfrost Aurora
-										i(139129),	-- Sunfrost Mantle
-										i(139127),	-- Sunfrost Robes
-										i(139130),	-- Sunfrost Wristwraps
-										i(139125),	-- Sunfrost Handwraps
-										i(139123),	-- Sunfrost Waistcord
-										i(139126),	-- Sunfrost Leggings
-										i(139128),	-- Sunfrost Slippers
-									},
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
 								}),
 								n(-3263, {	-- Rivermane Set
-									["g"] = {
-										i(139108),	-- Rivermane Hood
-										i(139110),	-- Rivermane Shoulders
-										i(139109),	-- Rivermane Robe
-										i(139104),	-- Rivermane Wraps
-										i(139107),	-- Rivermane Gloves
-										i(139111),	-- Rivermane Cord
-										i(139106),	-- Rivermane Kilt
-										i(139105),	-- Rivermane Sandals
-									},
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
 								}),
 								n(-3270, {	-- Steelgazer Set
-									["g"] = {
-										i(134152),	-- Steelgazer Hide Hood
-										i(134154),	-- Steelgazer Hide Mantle
-										i(134153),	-- Steelgazer Hide Jerkin
-										i(134148),	-- Steelgazer Hide Bracers
-										i(134151),	-- Steelgazer Hide Gloves
-										i(134155),	-- Steelgazer Hide Belt
-										i(134150),	-- Steelgazer Hide Leggings
-										i(134149),	-- Steelgazer Hide Boots
-									},
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
 								}),
 								n(-3275, {	-- Skyhorn Set
-									["g"] = {
-										i(139119),	-- Skyhorn Headgear
-										i(139121),	-- Skyhorn Mantle
-										i(139122),	-- Skyhorn Vest
-										i(139116),	-- Skyhorn Bindings
-										i(139117),	-- Skyhorn Gloves
-										i(139115),	-- Skyhorn Cinch
-										i(139120),	-- Skyhorn Legguards
-										i(139118),	-- Skyhorn Boots
-									},
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
 								}),
 								n(-3300, {	-- Greystone Set
-									["g"] = {
-										i(139096),	-- Greystone Helm
-										i(139098),	-- Greystone Pauldrons
-										i(139093),	-- Greystone Chestpiece
-										i(139100),	-- Greystone Wristplates
-										i(139094),	-- Greystone Gauntlets
-										i(139095),	-- Greystone Belt
-										i(139097),	-- Greystone Legplates
-										i(139099),	-- Greystone Boots
-									},
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
 								}),
 								n(-3308, {	-- Rockbound Set
-									["g"] = {
-										i(134138),	-- Rockbound Helm
-										i(134140),	-- Rockbound Pauldrons
-										i(134135),	-- Rockbound Chestguard
-										i(134142),	-- Rockbound Wristguard
-										i(134136),	-- Rockbound Gauntlets
-										i(134137),	-- Rockbound Girdle
-										i(134139),	-- Rockbound Legguards
-										i(134141),	-- Rockbound Sabatons
-									},
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
 								}),
 							})),
 							un(2, i(146748, {	-- Highmountain Tribute
@@ -397,88 +348,74 @@ _.Zones =
 									i(139112),	-- Tribal Unification Cloak
 								}),
 								n(-3247, {	-- Roggthread Set
-									["g"] = {
-										i(134172),	-- Roggthread Headdress
-										i(134177),	-- Roggthread Mantle
-										i(134175),	-- Roggthread Robe
-										i(134178),	-- Roggthread Bracers
-										i(134173),	-- Roggthread Gloves
-										i(134171),	-- Roggthread Cord
-										i(134174),	-- Roggthread Legwarmers
-										i(134176),	-- Roggthread Slippers
-									},
+									i(134172),	-- Roggthread Headdress
+									i(134177),	-- Roggthread Mantle
+									i(134175),	-- Roggthread Robe
+									i(134178),	-- Roggthread Bracers
+									i(134173),	-- Roggthread Gloves
+									i(134171),	-- Roggthread Cord
+									i(134174),	-- Roggthread Legwarmers
+									i(134176),	-- Roggthread Slippers
 								}),
 								n(-3249, {	-- Sunfrost Set
-									["g"] = {
-										i(139124),	-- Sunfrost Aurora
-										i(139129),	-- Sunfrost Mantle
-										i(139127),	-- Sunfrost Robes
-										i(139130),	-- Sunfrost Wristwraps
-										i(139125),	-- Sunfrost Handwraps
-										i(139123),	-- Sunfrost Waistcord
-										i(139126),	-- Sunfrost Leggings
-										i(139128),	-- Sunfrost Slippers
-									},
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
 								}),
 								n(-3263, {	-- Rivermane Set
-									["g"] = {
-										i(139108),	-- Rivermane Hood
-										i(139110),	-- Rivermane Shoulders
-										i(139109),	-- Rivermane Robe
-										i(139104),	-- Rivermane Wraps
-										i(139107),	-- Rivermane Gloves
-										i(139111),	-- Rivermane Cord
-										i(139106),	-- Rivermane Kilt
-										i(139105),	-- Rivermane Sandals
-									},
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
 								}),
 								n(-3270, {	-- Steelgazer Set
-									["g"] = {
-										i(134152),	-- Steelgazer Hide Hood
-										i(134154),	-- Steelgazer Hide Mantle
-										i(134153),	-- Steelgazer Hide Jerkin
-										i(134148),	-- Steelgazer Hide Bracers
-										i(134151),	-- Steelgazer Hide Gloves
-										i(134155),	-- Steelgazer Hide Belt
-										i(134150),	-- Steelgazer Hide Leggings
-										i(134149),	-- Steelgazer Hide Boots
-									},
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
 								}),
 								n(-3275, {	-- Skyhorn Set
-									["g"] = {
-										i(139119),	-- Skyhorn Headgear
-										i(139121),	-- Skyhorn Mantle
-										i(139122),	-- Skyhorn Vest
-										i(139116),	-- Skyhorn Bindings
-										i(139117),	-- Skyhorn Gloves
-										i(139115),	-- Skyhorn Cinch
-										i(139120),	-- Skyhorn Legguards
-										i(139118),	-- Skyhorn Boots
-									},
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
 								}),
 								n(-3300, {	-- Greystone Set
-									["g"] = {
-										i(139096),	-- Greystone Helm
-										i(139098),	-- Greystone Pauldrons
-										i(139093),	-- Greystone Chestpiece
-										i(139100),	-- Greystone Wristplates
-										i(139094),	-- Greystone Gauntlets
-										i(139095),	-- Greystone Belt
-										i(139097),	-- Greystone Legplates
-										i(139099),	-- Greystone Boots
-									},
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
 								}),
 								n(-3308, {	-- Rockbound Set
-									["g"] = {
-										i(134138),	-- Rockbound Helm
-										i(134140),	-- Rockbound Pauldrons
-										i(134135),	-- Rockbound Chestguard
-										i(134142),	-- Rockbound Wristguard
-										i(134136),	-- Rockbound Gauntlets
-										i(134137),	-- Rockbound Girdle
-										i(134139),	-- Rockbound Legguards
-										i(134141),	-- Rockbound Sabatons
-									},
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
 								}),
 							})),
 							un(2, i(151465, {	-- Highmountain Tribute
@@ -487,147 +424,132 @@ _.Zones =
 									i(139112),	-- Tribal Unification Cloak
 								}),
 								n(-3247, {	-- Roggthread Set
-									["g"] = {
-										i(134172),	-- Roggthread Headdress
-										i(134177),	-- Roggthread Mantle
-										i(134175),	-- Roggthread Robe
-										i(134178),	-- Roggthread Bracers
-										i(134173),	-- Roggthread Gloves
-										i(134171),	-- Roggthread Cord
-										i(134174),	-- Roggthread Legwarmers
-										i(134176),	-- Roggthread Slippers
-									},
+									i(134172),	-- Roggthread Headdress
+									i(134177),	-- Roggthread Mantle
+									i(134175),	-- Roggthread Robe
+									i(134178),	-- Roggthread Bracers
+									i(134173),	-- Roggthread Gloves
+									i(134171),	-- Roggthread Cord
+									i(134174),	-- Roggthread Legwarmers
+									i(134176),	-- Roggthread Slippers
 								}),
 								n(-3249, {	-- Sunfrost Set
-									["g"] = {
-										i(139124),	-- Sunfrost Aurora
-										i(139129),	-- Sunfrost Mantle
-										i(139127),	-- Sunfrost Robes
-										i(139130),	-- Sunfrost Wristwraps
-										i(139125),	-- Sunfrost Handwraps
-										i(139123),	-- Sunfrost Waistcord
-										i(139126),	-- Sunfrost Leggings
-										i(139128),	-- Sunfrost Slippers
-									},
+									i(139124),	-- Sunfrost Aurora
+									i(139129),	-- Sunfrost Mantle
+									i(139127),	-- Sunfrost Robes
+									i(139130),	-- Sunfrost Wristwraps
+									i(139125),	-- Sunfrost Handwraps
+									i(139123),	-- Sunfrost Waistcord
+									i(139126),	-- Sunfrost Leggings
+									i(139128),	-- Sunfrost Slippers
 								}),
 								n(-3263, {	-- Rivermane Set
-									["g"] = {
-										i(139108),	-- Rivermane Hood
-										i(139110),	-- Rivermane Shoulders
-										i(139109),	-- Rivermane Robe
-										i(139104),	-- Rivermane Wraps
-										i(139107),	-- Rivermane Gloves
-										i(139111),	-- Rivermane Cord
-										i(139106),	-- Rivermane Kilt
-										i(139105),	-- Rivermane Sandals
-									},
+									i(139108),	-- Rivermane Hood
+									i(139110),	-- Rivermane Shoulders
+									i(139109),	-- Rivermane Robe
+									i(139104),	-- Rivermane Wraps
+									i(139107),	-- Rivermane Gloves
+									i(139111),	-- Rivermane Cord
+									i(139106),	-- Rivermane Kilt
+									i(139105),	-- Rivermane Sandals
 								}),
 								n(-3270, {	-- Steelgazer Set
-									["g"] = {
-										i(134152),	-- Steelgazer Hide Hood
-										i(134154),	-- Steelgazer Hide Mantle
-										i(134153),	-- Steelgazer Hide Jerkin
-										i(134148),	-- Steelgazer Hide Bracers
-										i(134151),	-- Steelgazer Hide Gloves
-										i(134155),	-- Steelgazer Hide Belt
-										i(134150),	-- Steelgazer Hide Leggings
-										i(134149),	-- Steelgazer Hide Boots
-									},
+									i(134152),	-- Steelgazer Hide Hood
+									i(134154),	-- Steelgazer Hide Mantle
+									i(134153),	-- Steelgazer Hide Jerkin
+									i(134148),	-- Steelgazer Hide Bracers
+									i(134151),	-- Steelgazer Hide Gloves
+									i(134155),	-- Steelgazer Hide Belt
+									i(134150),	-- Steelgazer Hide Leggings
+									i(134149),	-- Steelgazer Hide Boots
 								}),
 								n(-3275, {	-- Skyhorn Set
-									["g"] = {
-										i(139119),	-- Skyhorn Headgear
-										i(139121),	-- Skyhorn Mantle
-										i(139122),	-- Skyhorn Vest
-										i(139116),	-- Skyhorn Bindings
-										i(139117),	-- Skyhorn Gloves
-										i(139115),	-- Skyhorn Cinch
-										i(139120),	-- Skyhorn Legguards
-										i(139118),	-- Skyhorn Boots
-									},
+									i(139119),	-- Skyhorn Headgear
+									i(139121),	-- Skyhorn Mantle
+									i(139122),	-- Skyhorn Vest
+									i(139116),	-- Skyhorn Bindings
+									i(139117),	-- Skyhorn Gloves
+									i(139115),	-- Skyhorn Cinch
+									i(139120),	-- Skyhorn Legguards
+									i(139118),	-- Skyhorn Boots
 								}),
 								n(-3300, {	-- Greystone Set
-									["g"] = {
-										i(139096),	-- Greystone Helm
-										i(139098),	-- Greystone Pauldrons
-										i(139093),	-- Greystone Chestpiece
-										i(139100),	-- Greystone Wristplates
-										i(139094),	-- Greystone Gauntlets
-										i(139095),	-- Greystone Belt
-										i(139097),	-- Greystone Legplates
-										i(139099),	-- Greystone Boots
-									},
+									i(139096),	-- Greystone Helm
+									i(139098),	-- Greystone Pauldrons
+									i(139093),	-- Greystone Chestpiece
+									i(139100),	-- Greystone Wristplates
+									i(139094),	-- Greystone Gauntlets
+									i(139095),	-- Greystone Belt
+									i(139097),	-- Greystone Legplates
+									i(139099),	-- Greystone Boots
 								}),
 								n(-3308, {	-- Rockbound Set
-									["g"] = {
-										i(134138),	-- Rockbound Helm
-										i(134140),	-- Rockbound Pauldrons
-										i(134135),	-- Rockbound Chestguard
-										i(134142),	-- Rockbound Wristguard
-										i(134136),	-- Rockbound Gauntlets
-										i(134137),	-- Rockbound Girdle
-										i(134139),	-- Rockbound Legguards
-										i(134141),	-- Rockbound Sabatons
-									},
+									i(134138),	-- Rockbound Helm
+									i(134140),	-- Rockbound Pauldrons
+									i(134135),	-- Rockbound Chestguard
+									i(134142),	-- Rockbound Wristguard
+									i(134136),	-- Rockbound Gauntlets
+									i(134137),	-- Rockbound Girdle
+									i(134139),	-- Rockbound Legguards
+									i(134141),	-- Rockbound Sabatons
 								}),
 							})),
 						},
-						["repeatable"] = true,
 					}),
 					n(-206, {	-- Paragon
 						q(46743, {	-- Supplies From Highmountain
+							["repeatable"] = true,
 							["g"] = {
 								i(152104, {	-- Highmountain Supplies
-									i(147807),	-- Highmountain Elderhorn
+									i(147807),	-- Highmountain Elderhorn (MOUNT!)
 								}),
 								un(2, i(146899, {	-- Highmountain Supplies
-									i(147807),	-- Highmountain Elderhorn
+									i(147807),	-- Highmountain Elderhorn (MOUNT!)
 								})),
 							},
-							["repeatable"] = true,
 						}),
 					}),
 				}),
 				n(-228, {	-- Flight Paths
 					fp(1850, {	-- Eastern Highmountain (Eagle)
-						["coord"] = { 56.6, 67.8 },
 						["classes"] = { 3 },	-- Hunter
+						["coord"] = { 56.6, 67.8 },
 					}),
 					fp(1755, {	-- Felbane Camp, Highmountain
-						["coord"] = { 30, 39.2 },
+						["coord"] = { 30.0, 39.2, 650 },
 					}),
 					fp(1759, {	-- Ironhorn Enclave, Highmountain
-						["coord"] = { 56.8, 83.8 },
+						["coord"] = { 56.8, 83.8, 650 },
 					}),
 					fp(1767, {	-- Nesingwary, Highmountain
-						["coord"] = { 40.2, 52.6 },
+						["coord"] = { 40.2, 52.6, 650 },
 					}),
 					fp(1758, {	-- Obsidian Overlook, Highmountain
-						["coord"] = { 47.2, 84.6 },
+						["coord"] = { 47.2, 84.6, 650 },
 					}),
 					fp(1761, {	-- Prepfoot, Highmountain
-						["coord"] = { 58, 28.6 },
+						["coord"] = { 58.0, 28.6, 650 },
 					}),
 					fp(1756, {	-- Shipwreck Cove, Highmountain
-						["coord"] = { 41.8, 10.4 },
+						["coord"] = { 41.8, 10.4, 650 },
 					}),
 					fp(1753, {	-- Skyhorn, Highmountain
-						["coord"] = { 52.6, 45.2 },
+						["coord"] = { 52.6, 45.2, 650 },
 					}),
 					fp(1778, {	-- Stonehoof Watch, Highmountain
-						["coord"] = { 59.2, 65 },
+						["coord"] = { 59.2, 65.0, 650 },
 					}),
 					fp(1777, {	-- Sylvan Falls, Highmountain
-						["coord"] = { 35.8, 66 },
+						["coord"] = { 35.8, 66.0, 650 },
 					}),
 					fp(1754, {	-- The Witchwood, Highmountain
-						["coord"] = { 38.2, 39.2 },
+						["coord"] = { 38.2, 39.2, 650 },
 					}),
 					fp(1719, {	-- Thunder Totem, Highmountain
-						["coord"] = { 44.6, 38.8 },
+						["coord"] = { 44.6, 38.8, 650 },
 					}),
 				}),
-				n(-25,  {	-- Pet Battle
+				filter(101, {	-- Battle Pet
 					{	-- Alpine Chipmonk
 						["speciesID"] = 487,	-- Alpine Chipmonk
 						["crs"] = { 62189 },	-- Alpine Chipmonk
@@ -878,15 +800,15 @@ _.Zones =
 					}),
 					prof(333, {	-- Enchanting
 						q(39883, {	-- Cloaked in Tradition
+							["sourceQuests"] = {
+								39879,	-- Strong Like the Earth
+								39880,	-- Waste Not
+							},
+							["qg"] = 98017,	-- Guron Twaintail
 							["g"] = {
 								i(128571),	-- Formula: Enchant Cloak - Word of Agility (Rank 1)
 								i(128572),	-- Formula: Enchant Cloak - Word of Intellect (Rank 1)
 								i(128570),	-- Formula: Enchant Cloak - Word of Strength (Rank 1)
-							},
-							["qg"] = 98017,	-- Guron Twaintail
-							["sourceQuests"] = {
-								39879,	-- Strong Like the Earth
-								39880,	-- Waste Not
 							},
 						}),
 					}),
@@ -1046,37 +968,33 @@ _.Zones =
 						i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
 					}),
 					prof(182, {	-- Herbalism
-						{	-- Felwort Sample [Felwort I]
-							["itemID"] = 129122,	-- Felwort Sample
-							["questID"] = 40040,	-- Felwort Sample
+						q(40040, {	-- Felwort Sample
 							["requireSkill"] = 182,	-- Herbalism
+							["itemID"] = 129122,	-- Felwort Sample
 							["g"] = {
 								recipe(193307),	-- Felwort [Rank 1]
 							},
-						},
-						{	-- Foxflower Sample  [Foxflower I]
+						}),
+						q(40024, {	-- Foxflower Sample
 							["itemID"] = 129119,	-- Foxflower Sample
-							["questID"] = 40024,	-- Foxflower Sample
 							["requireSkill"] = 182,	-- Herbalism
 							["g"] = {
 								recipe(193298),	-- Foxflower [Rank 1]
 							},
-						},
-						{	-- Foxflower Scent Gland [Foxflower III]
+						}),
+						q(40028, {	-- The Pied Picker
 							["itemID"] = 129278,	-- Foxflower Scent Gland
-							["questID"] = 40028,	-- The Pied Picker
 							["sourceQuests"] = { 40026 },	-- Chase the Culprit
 							["requireSkill"] = 182,	-- Herbalism
 							["g"] = {
 								recipe(193300),	-- Foxflower [Rank 3]
 							},
-						},
-						{	-- Nibbled Foxflowr Stem [Foxflower II]
+						}),
+						q(40025, {	-- Teeeny Bite Marks
 							["itemID"] = 129137,	-- Nibbled Foxflower Stem
-							["questID"] = 40025,	-- Teeeny Bite Marks
 							["sourceQuests"] = { 40024 },	-- Foxflower Sample
 							["requireSkill"] = 182,	-- Herbalism
-						},
+						}),
 					}),
 					prof(165, {	-- Leatherworking
 						q(40192, {	-- Claw of the Land
@@ -1123,15 +1041,13 @@ _.Zones =
 								}),
 							},
 						}),
-						{	-- Skinning Technique: Unbroken Tooth
-							["itemID"] = 139893,	-- Skinning Technique: Unbroken Tooth
-							--["questID"] = 40405,	-- !!Was originally here, don't believe it's needed now
+						i(139893, {	-- Skinning Technique: Unbroken Tooth
 							["requireSkill"] = 393,	-- Skinning
 							["crs"] = { 97449 },	-- Bristlemaul
 							["g"] = {
 								recipe(194170),	-- Unbroken Tooth
 							},
-						},
+						}),
 						q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 							["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
 							["requireSkill"] = 393,	-- Skinning
@@ -2256,10 +2172,9 @@ _.Zones =
 								["displayID"] = 65118,
 								["g"] = {
 									i(131781),	-- Plate Hiking Boots
-									{	-- Amateur Hunters (Adventurer of Highmountain)
+									crit(16, {	-- Amateur Hunters
 										["achievementID"] = 11264,	-- Adventurer of Highmountain
-										["criteriaID"] = 16,	-- Amateur Hunters
-									},
+									}),
 								},
 							}),
 						},
@@ -2274,10 +2189,9 @@ _.Zones =
 						["g"] = {
 							o(244473, { 	-- Thunder Totem Stolen Goods (No Model)
 								i(131756), 	-- Fletcher's Nimble Grips
-								{	-- Beastmaster Pao'lek (Adventurer of Highmountain)
+								crit(10, {	-- Beastmaster Pao'lek
 									["achievementID"] = 11264,	-- Adventurer of Highmountain
-									["criteriaID"] = 10,	-- Beastmaster Pao'lek
-								},
+								}),
 							}),
 						},
 					}),
@@ -2286,10 +2200,9 @@ _.Zones =
 						["coord"] = { 36.6, 16.6, 650 },
 						["g"] = {
 							i(131799),	-- Zugdug's Piece of Paradise
-							{	-- Bodash the Hoarder (Adventurer of Highmountain)
+							crit(14, {	-- Bodash the Hoarder
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 14,	-- Bodash the Hoarder
-							},
+							}),
 						},
 					}),
 					n(97449,  {	-- Bristlemaul
@@ -2297,10 +2210,9 @@ _.Zones =
 						["coord"] = { 37.7, 45.7, 650 },
 						["g"] = {
 							i(131761),	-- Thick Bristly Hood
-							{	-- Bristlemaul (Adventurer of Highmountain)
+							crit(12, {	-- Bristlemaul
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 12,	-- Bristlemaul
-							},
+							}),
 						},
 					}),
 					n(94877,  {	-- Brogrul the Mighty
@@ -2318,10 +2230,9 @@ _.Zones =
 						},
 						["g"] = {
 							i(131798),	-- Faded Swashbuckler's Jerkin
-							{	-- Crab Rider Grmlrml (Adventurer of Highmountain)
+							crit(3, {	-- Crab Rider Grmlrml
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 3,	-- Crab Rider Grmlrml
-							},
+							}),
 						},
 					}),
 					n(97345,  {	-- Crawshuk the Hungry
@@ -2331,25 +2242,23 @@ _.Zones =
 							i(131809, {	-- Gleaming Roc Feather
 								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
-							{	-- Crawshuk the Hungry (Adventurer of Highmountain)
+							crit(4, {	-- Crawshuk the Hungry
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 4,	-- Crawshuk the Hungry
-							},
+							}),
 						},
 					}),
 					n(100495, {	-- Devouring Darkness
 						["description"] = "|cff66ccffClick all candles to summon the mob.|r",
 						["coords"] = {
-							{ 55.1, 44.3, 650 },	-- cave entrance
 							{ 54.5, 41.4, 650 },	-- actual rare
+							{ 55.1, 44.3, 650 },	-- cave entrance
 						},
 						["questID"] = 40414,
 						["g"] = {
 							i(131780),	-- Void Slippers
-							{	-- Devouring Darkness (Adventurer of Highmountain)
+							crit(18, {	-- Devouring Darkness
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 18,	-- Devouring Darkness
-							},
+							}),
 						},
 					}),
 					n(96072,  {	-- Durguth
@@ -2372,10 +2281,9 @@ _.Zones =
 						["coord"] = { 56.5, 60.7, 650 },
 						["g"] = {
 							i(131775),	-- Da Basher's Toy Armor
-							{	-- Gurbog da Basher (Adventurer of Highmountain)
+							crit(5, {	-- Gurbog da Basher
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 5,	-- Gurbog da Basher
-							},
+							}),
 						},
 					}),
 					n(97326,  {	-- Hartli the Snatcher
@@ -2383,20 +2291,18 @@ _.Zones =
 						["coord"] = { 51.0, 48.5, 650 },
 						["g"] = {
 						--	i(129190),	-- Rope of Friendship
-							{	-- Hartli the Snatcher (Adventurer of Highmountain)
+							crit(6, {	-- Hartli the Snatcher
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 6,	-- Hartli the Snatcher
-							},
+							}),
 						},
 					}),
 					n(112419, {	-- Kuglaroth
 						["questID"] = 44055,
 						["coord"] = { 29.7, 40.1, 650 },	-- quest pickup
 						["g"] = {
-							{	-- Tehd & Marius' Excellent Adventure
+							crit(4, {	-- Stormheim
 								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
-								["criteriaID"] = 4,	-- Stormheim
-							},
+							}),
 						},
 					}),
 					n(98024,  {	-- Luggut the Eggeater
@@ -2407,10 +2313,9 @@ _.Zones =
 						},
 						["g"] = {
 							i(131776),	-- Scale Cord of the Eggeater
-							{	-- Luggut the Eggeater (Adventurer of Highmountain)
+							crit(19, {	-- Luggut the Eggeater
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 19,	-- Luggut the Eggeater
-							},
+							}),
 						},
 					}),
 					n(96410,  {	-- Majestic Elderhorn
@@ -2424,20 +2329,18 @@ _.Zones =
 						},
 						["g"] = {
 							i(131900), 	-- Magestic Elderhorn Hoof (TOY!)
-							{	-- Majestic Elderhorn (Adventurer of Highmountain)
+							crit(11, {	-- Majestic Elderhorn
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 11,	-- Majestic Elderhorn
-							},
+							}),
 						},
 					}),
 					n(96621,  {	-- Mellok, Son of Torok
 						["questID"] = 40242,
 						["coord"] = { 48.9, 27.0, 650 },
 						["g"] = {
-							{	-- Mellok, Son of Torok (Adventurer of Highmountain)
+							crit(17, {	-- Mellok, Son of Torok
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 17,	-- Mellok, Son of Torok
-							},
+							}),
 						},
 					}),
 					n(98311,  {	-- Mrrklr
@@ -2446,10 +2349,9 @@ _.Zones =
 						["crs"] = { 98754 },	-- Sloppy "Sloppy Joe" Joe
 						["g"] = {
 							i(131797),	-- Swamprock Salvage Band
-							{	-- Captured Survivor (Adventurer of Highmountain)
+							crit(21, {	-- Captured Survivor
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 21,	-- Captured Survivor
-							},
+							}),
 						},
 					}),
 					n(95204,  {	-- Oubdob da Smasher
@@ -2475,10 +2377,9 @@ _.Zones =
 							i(140681),	-- Jak's Gloves
 							i(140680),	-- Lysander's Lovindle Bracers
 							i(131767),	-- Xander's Gauntlets
-							{	-- Unethical Adventurers (Adventurer of Highmountain)
+							crit(8, {	-- Unethical Adventurers
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 8,	-- Unethical Adventurers
-							},
+							}),
 						},
 					}),
 					n(97102,  {	-- Ram'Pag <The Treasure Worm>
@@ -2486,10 +2387,9 @@ _.Zones =
 						["questID"] = 39766,
 						["coord"] = { 52.3,	51.4, 650 },
 						["g"] = {
-							{	-- Totally Safe Treasure Chest (Adventurer of Highmountain)
+							crit(15, {	-- Totally Safe Treasure Chest
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 15,	-- Totally Safe Treasure Chest
-							},
+							}),
 						},
 					}),
 					n(97579,  {	-- Scout Harefoot (Mynta Talonscreech)
@@ -2498,10 +2398,9 @@ _.Zones =
 						["coord"] = { 54.5, 40.5, 650 },
 						["g"] = {
 							i(131792),	-- Harefoot Pinnacle Wrap
-							{	-- Scout Harefoot (Adventurer of Highmountain)
+							crit(13, {	-- Scout Harefoot
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 13,	-- Scout Harefoot
-							},
+							}),
 						},
 					}),
 					n(97093,  {	-- Shara Felbreath
@@ -2509,10 +2408,9 @@ _.Zones =
 						["coord"] = { 51.0, 25.8, 650 },
 						["g"] = {
 							i(131791),	-- Felbreath Bloodsinger Robe
-							{	-- Shara Felbreath (Adventurer of Highmountain)
+							crit(20, {	-- Shara Felbreath
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 20,	-- Shara Felbreath
-							},
+							}),
 						},
 					}),
 					n(101077, {	-- Sekhan
@@ -2520,10 +2418,9 @@ _.Zones =
 						["coord"] = { 45.5, 55.2, 650 },
 						["g"] = {
 							i(131730),	-- Darksaber Leather Belt
-							{	--  (Adventurer of Highmountain)
+							crit(1, {	-- Sekhan
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 1,	-- Sekhan
-							},
+							}),
 						},
 					}),
 					n(95872,  {	-- Skullhat
@@ -2531,10 +2428,9 @@ _.Zones =
 						["coord"] = { 50.9, 32.0, 650 },
 						["g"] = {
 							i(131769),	-- The Taskmaster's Wristwraps
-							{	-- Skywhisker Taskmasker (Adventurer of Highmountain)
+							crit(7, {	-- Skywhisker Taskmasker
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 7,	-- Skywhisker Taskmasker
-							},
+							}),
 						},
 					}),
 					n(98890,  {	-- Slumber
@@ -2542,10 +2438,9 @@ _.Zones =
 						["coord"] = { 41.4, 31.9, 650 },
 						["g"] = {
 							i(131921),	-- Dreamflow Collar
-							{	-- Slumbering Bear (Adventurer of Highmountain)
+							crit(22, {	-- Slumbering Bear
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 22,	-- Slumbering Bear
-							},
+							}),
 						},
 					}),
 					n(97653,  {	-- Taurson
@@ -2555,10 +2450,9 @@ _.Zones =
 								["displayID"] = 65118,
 								["g"] = {
 									i(131800),	-- Taurson's Champion Belt
-									{	-- The Beastly Boxer (Adventurer of Highmountain)
+									crit(2, {	-- The Beastly Boxer
 										["achievementID"] = 11264,	-- Adventurer of Highmountain
-										["criteriaID"] = 2,	-- The Beastly Boxer
-									},
+									}),
 								},
 							}),
 						},
@@ -2568,10 +2462,9 @@ _.Zones =
 						["coord"] = { 41.9, 41.5, 650 },
 						["g"] = {
 							i(129175),	-- Crispin (PET!)
-							{	-- The Exiled Shaman (Adventurer of Highmountain)
+							crit(9, {	-- The Exiled Shaman
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
-								["criteriaID"] = 9,	-- The Exiled Shaman
-							},
+							}),
 						},
 					}),
 					n(97116,  {	-- Treasure Chest 244519
@@ -2952,139 +2845,6 @@ _.Zones =
 					q(46279),	-- Zargrom	--]]
 				}),
 				n(0,    {	-- Zone Drops
-					["g"] = {
-						i(144312),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 2)
-						i(137729),	-- Technique: Codex of the Tranquil Mind
-						i(141043),	-- Technique: Glyph of Arachnophobia
-						i(141035),	-- Technique: Glyph of Fel Wings
-						i(141060),	-- Technique: Glyph of Pebbles
-						i(141054),	-- Technique: Glyph of Smolder
-						i(141032),	-- Technique: Glyph of the Chilled Shell
-						i(141039),	-- Technique: Glyph of the Doe
-						i(141049),	-- Technique: Glyph of the Hook
-						i(141064),	-- Technique: Glyph of the Shivarra
-						i(141051),	-- Technique: Glyph of the Trident
-						i(121069, {	-- Brulwurm Scale
-							["bonusID"] = 1812,
-						}),
-						i(141289, {	-- Corruption of the Bloodtotem
-							["bonusID"] = 1812,
-						}),
-						i(121071, {	-- Enchanted Roc Feather
-							["bonusID"] = 1812,
-						}),
-						i(141288, {	-- Ettin Bone Fragment
-							["bonusID"] = 1812,
-						}),
-						i(121070, {	-- Hexweaver's Charm
-							["bonusID"] = 1812,
-						}),
-						i(121082, {	-- Thunder Totem Band
-							["bonusID"] = 1812,
-						}),
-						i(121067, {	-- Thunder Totem Cloak
-							["bonusID"] = 1812,
-						}),
-						i(121083, {	-- Thunder Totem Spirit Necklace
-							["bonusID"] = 1812,
-						}),
-						i(121104, {	-- Hagfeather Cowl
-							["bonusID"] = 1812,
-						}),
-						i(121109, {	-- Hagfeather Shoulderpads
-							["bonusID"] = 1812,
-						}),
-						i(121107, {	-- Hagfeather Robe
-							["bonusID"] = 1812,
-						}),
-						i(121110, {	-- Hagfeather Wristwraps
-							["bonusID"] = 1812,
-						}),
-						i(121105, {	-- Hagfeather Handwraps
-							["bonusID"] = 1812,
-						}),
-						i(121103, {	-- Hagfeather Cord
-							["bonusID"] = 1812,
-						}),
-						i(121106, {	-- Hagfeather Leggings
-							["bonusID"] = 1812,
-						}),
-						i(121108, {	-- Hagfeather Sandals
-							["bonusID"] = 1812,
-						}),
-						i(121076, {	-- Icepine Hood
-							["bonusID"] = 1812,
-						}),
-						i(121078, {	-- Icepine Shoulders
-							["bonusID"] = 1812,
-						}),
-						i(121077, {	-- Icepine Jerkin
-							["bonusID"] = 1812,
-						}),
-						i(121072, {	-- Icepine Bindings
-							["bonusID"] = 1812,
-						}),
-						i(121075, {	-- Icepine Gloves
-							["bonusID"] = 1812,
-						}),
-						i(121079, {	-- Icepine Waistband
-							["bonusID"] = 1812,
-						}),
-						i(121074, {	-- Icepine Britches
-							["bonusID"] = 1812,
-						}),
-						i(121073, {	-- Icepine Boots
-							["bonusID"] = 1812,
-						}),
-						i(121099, {	-- Hillstride Helm
-							["bonusID"] = 1812,
-						}),
-						i(121101, {	-- Hillstride Spaulders
-							["bonusID"] = 1812,
-						}),
-						i(121102, {	-- Hillstride Vest
-							["bonusID"] = 1812,
-						}),
-						i(121096, {	-- Hillstride Bracers
-							["bonusID"] = 1812,
-						}),
-						i(121097, {	-- Hillstride Gauntlets
-							["bonusID"] = 1812,
-						}),
-						i(121095, {	-- Hillstride Belt
-							["bonusID"] = 1812,
-						}),
-						i(121100, {	-- Hillstride Legguards
-							["bonusID"] = 1812,
-						}),
-						i(121098, {	-- Hillstride Greaves
-							["bonusID"] = 1812,
-						}),
-						i(121059, {	-- Ettinbone Helm
-							["bonusID"] = 1812,
-						}),
-						i(121061, {	-- Ettinbone Pauldrons
-							["bonusID"] = 1812,
-						}),
-						i(121056, {	-- Ettinbone Breastplate
-							["bonusID"] = 1812,
-						}),
-						i(121063, {	-- Ettinbone Vambraces
-							["bonusID"] = 1812,
-						}),
-						i(121057, {	-- Ettinbone Gauntlets
-							["bonusID"] = 1812,
-						}),
-						i(121058, {	-- Ettinbone Girdle
-							["bonusID"] = 1812,
-						}),
-						i(121060, {	-- Ettinbone Legplates
-							["bonusID"] = 1812,
-						}),
-						i(121062, {	-- Ettinbone Sabatons
-							["bonusID"] = 1812,
-						}),
-					},
 					["crs"] = {
 						104481,	-- Ala'washte
 						104294,	-- Archmage Brixton
@@ -3254,6 +3014,139 @@ _.Zones =
 						95310,	-- Witchwood Hag
 						90633,	-- Wrathguard
 						115677,	-- Young Snowfeather
+					},
+					["g"] = {
+						i(144312),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 2)
+						i(137729),	-- Technique: Codex of the Tranquil Mind
+						i(141043),	-- Technique: Glyph of Arachnophobia
+						i(141035),	-- Technique: Glyph of Fel Wings
+						i(141060),	-- Technique: Glyph of Pebbles
+						i(141054),	-- Technique: Glyph of Smolder
+						i(141032),	-- Technique: Glyph of the Chilled Shell
+						i(141039),	-- Technique: Glyph of the Doe
+						i(141049),	-- Technique: Glyph of the Hook
+						i(141064),	-- Technique: Glyph of the Shivarra
+						i(141051),	-- Technique: Glyph of the Trident
+						i(121069, {	-- Brulwurm Scale
+							["bonusID"] = 1812,
+						}),
+						i(141289, {	-- Corruption of the Bloodtotem
+							["bonusID"] = 1812,
+						}),
+						i(121071, {	-- Enchanted Roc Feather
+							["bonusID"] = 1812,
+						}),
+						i(141288, {	-- Ettin Bone Fragment
+							["bonusID"] = 1812,
+						}),
+						i(121070, {	-- Hexweaver's Charm
+							["bonusID"] = 1812,
+						}),
+						i(121082, {	-- Thunder Totem Band
+							["bonusID"] = 1812,
+						}),
+						i(121067, {	-- Thunder Totem Cloak
+							["bonusID"] = 1812,
+						}),
+						i(121083, {	-- Thunder Totem Spirit Necklace
+							["bonusID"] = 1812,
+						}),
+						i(121104, {	-- Hagfeather Cowl
+							["bonusID"] = 1812,
+						}),
+						i(121109, {	-- Hagfeather Shoulderpads
+							["bonusID"] = 1812,
+						}),
+						i(121107, {	-- Hagfeather Robe
+							["bonusID"] = 1812,
+						}),
+						i(121110, {	-- Hagfeather Wristwraps
+							["bonusID"] = 1812,
+						}),
+						i(121105, {	-- Hagfeather Handwraps
+							["bonusID"] = 1812,
+						}),
+						i(121103, {	-- Hagfeather Cord
+							["bonusID"] = 1812,
+						}),
+						i(121106, {	-- Hagfeather Leggings
+							["bonusID"] = 1812,
+						}),
+						i(121108, {	-- Hagfeather Sandals
+							["bonusID"] = 1812,
+						}),
+						i(121076, {	-- Icepine Hood
+							["bonusID"] = 1812,
+						}),
+						i(121078, {	-- Icepine Shoulders
+							["bonusID"] = 1812,
+						}),
+						i(121077, {	-- Icepine Jerkin
+							["bonusID"] = 1812,
+						}),
+						i(121072, {	-- Icepine Bindings
+							["bonusID"] = 1812,
+						}),
+						i(121075, {	-- Icepine Gloves
+							["bonusID"] = 1812,
+						}),
+						i(121079, {	-- Icepine Waistband
+							["bonusID"] = 1812,
+						}),
+						i(121074, {	-- Icepine Britches
+							["bonusID"] = 1812,
+						}),
+						i(121073, {	-- Icepine Boots
+							["bonusID"] = 1812,
+						}),
+						i(121099, {	-- Hillstride Helm
+							["bonusID"] = 1812,
+						}),
+						i(121101, {	-- Hillstride Spaulders
+							["bonusID"] = 1812,
+						}),
+						i(121102, {	-- Hillstride Vest
+							["bonusID"] = 1812,
+						}),
+						i(121096, {	-- Hillstride Bracers
+							["bonusID"] = 1812,
+						}),
+						i(121097, {	-- Hillstride Gauntlets
+							["bonusID"] = 1812,
+						}),
+						i(121095, {	-- Hillstride Belt
+							["bonusID"] = 1812,
+						}),
+						i(121100, {	-- Hillstride Legguards
+							["bonusID"] = 1812,
+						}),
+						i(121098, {	-- Hillstride Greaves
+							["bonusID"] = 1812,
+						}),
+						i(121059, {	-- Ettinbone Helm
+							["bonusID"] = 1812,
+						}),
+						i(121061, {	-- Ettinbone Pauldrons
+							["bonusID"] = 1812,
+						}),
+						i(121056, {	-- Ettinbone Breastplate
+							["bonusID"] = 1812,
+						}),
+						i(121063, {	-- Ettinbone Vambraces
+							["bonusID"] = 1812,
+						}),
+						i(121057, {	-- Ettinbone Gauntlets
+							["bonusID"] = 1812,
+						}),
+						i(121058, {	-- Ettinbone Girdle
+							["bonusID"] = 1812,
+						}),
+						i(121060, {	-- Ettinbone Legplates
+							["bonusID"] = 1812,
+						}),
+						i(121062, {	-- Ettinbone Sabatons
+							["bonusID"] = 1812,
+						}),
 					},
 				}),
 				n(-40,  {	-- Legacy

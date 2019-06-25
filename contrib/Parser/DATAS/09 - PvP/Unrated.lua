@@ -32,8 +32,8 @@ _.PVP =
 		{	-- 2v2/3v3/RBG
 			["itemID"] = 165718,	-- Steel Strong Box -- 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Horde
 		},
-		i(164261),	-- Steel Strongbox [Alliance] -- This item can drop any dread aspirant gear, but we dont list it cuz bloat. Rewarded from BG
-		i(164262),	-- Steel Strongbox [Horde] -- This item can drop any dread aspirant gear, but we dont list it cuz bloat. Rewarded from BG
+		i(164261),	-- Steel Strongbox [Alliance] -- This item can drop any <name of current season> aspirant gear, but we dont list it cuz bloat. Rewarded from BG
+		i(164262),	-- Steel Strongbox [Horde] -- This item can drop any <name of current season>, but we dont list it cuz bloat. Rewarded from BG
 		n(-3157, {	-- Player vs. Player (Battle for Azeroth Season 2)
 			["g"] = {
 				i(165196),	-- Sinister Aspirant's Pike

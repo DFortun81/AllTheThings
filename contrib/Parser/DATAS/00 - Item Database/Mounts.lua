@@ -218,6 +218,7 @@ i(169203, 300151);	-- Inkscale Deepseeker
 i(168370, 297157);	-- Junkheap Drifter
 i(168329, 296788);	-- Mechacycle Model W
 i(168826, 299158);	-- Mechagon Peacekeeper
+i(156881, 262024);	-- Notorious Gladiator's Proto-Drake
 i(161879, 275868);	-- Proudmoore Sea Scout
 i(169198, 294038);	-- Royal Snapdragon
 i(168829, 299170);	-- Rustbolt Resistor
