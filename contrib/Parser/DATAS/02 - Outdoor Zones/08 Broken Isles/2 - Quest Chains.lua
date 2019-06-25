@@ -5,14 +5,16 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		n(-171, {	-- Quest Chains
-			["groups"] = {
+			["lvl"] = 98,
+			["g"] = {
 				n(-4, {	-- Achievements
 					ach(11427, {	-- No Shellfish Endeavor
 						i(143660),	-- Mrgrglhjorn
 					}),
 				}),
 				n(-170, {	-- Balance of Power
-					["groups"] = {
+					["lvl"] = 110,
+					["g"] = {
 						q(43496, {	-- The Power Within
 						  ["classes"] = {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12},
 						  ["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna."
@@ -147,7 +149,6 @@ _.Zones =
 							}),
 						}),
 					},
-					["lvl"] = 110,
 				}),
 				n(113857, {	-- Light's Heart
 					["icon"] = "Interface\\Icons\\achievement_boss_illidan",
@@ -422,7 +423,6 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 98,
 		}),
 	}),
 };
