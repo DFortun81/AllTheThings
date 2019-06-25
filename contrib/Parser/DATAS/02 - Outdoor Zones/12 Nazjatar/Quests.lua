@@ -679,6 +679,11 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 54021,	-- The First Arcanist
 			}),
+			i(169636, {	-- Frenzy Fang
+				["questID"] = 56467,
+				["crs"] = { 154920 },	-- Frenzied Knifefang
+				["coord"] = { 59.1, 26.6, 1355 },
+			}),
 			q(56234, {	-- Friends in need
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 40.3, 55.2, 1355 },

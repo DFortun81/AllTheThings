@@ -117,7 +117,9 @@ _.Zones =
 						["description"] = "Activate Lesser Lithic Arcanocrystal",
 					}),
 					crit(5),	-- Zomera
-					crit(6),	-- Omus
+					crit(6, {	-- Omus
+						["description"] = "Active Lesser Benthic and Greater Pyroclasmic Arcanocrystals",
+					}),
 					crit(7, {	-- Osgen
 						["description"] = "Active Lesser and Greater Benthic Arcanocrystals",
 					}),
