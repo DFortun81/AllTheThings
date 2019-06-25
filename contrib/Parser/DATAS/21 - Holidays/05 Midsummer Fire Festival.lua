@@ -487,7 +487,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						["maps"] = { 371 },	-- Jade Forest
 					}),
 					crit(3, {	-- Krasarang Wilds
-						["coord"] = { 74.0, 9.40, 418 },
+						["coord"] = { 77.8, 3.60, 418 },
 						["maps"] = { 418 },	-- Krasarang Wilds
 					}),
 					crit(4, {	-- Kun-Lai Summit
@@ -1076,7 +1076,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						["maps"] = { 371 },	-- Jade Forest
 					}),
 					crit(3, {	-- Krasarang Wilds
-						["coord"] = { 74.0, 9.40, 418 },
+						["coord"] = { 77.8, 3.60, 418 },
 						["maps"] = { 418 },	-- Krasarang Wilds
 					}),
 					crit(4, {	-- Kun-Lai Summit
@@ -2962,7 +2962,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(32499, {	-- Honor the Flame — Krasarang Wilds
 				["isYearly"] = true,
-				["coord"] = { 74.0, 9.40, 418 },
+				["coord"] = { 77.8, 3.60, 418 },
 				["maps"] = { 418 },	-- Krasarang Wilds
 				["qg"] = 69533,	-- Krasarang Wilds Flame Guardian
 			}),
