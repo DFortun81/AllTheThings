@@ -10,6 +10,7 @@ _.Zones =
 				n(-169, {	-- Emissary Quests
 					q(48642, {	-- Argussian Reach
 						["qg"] = 127151,	-- Toraan the Revered
+						["repeatable"] = true,
 						["groups"] = {
 							i(157831, {	-- Scuffed Krokul Cache
 								["groups"] = {
@@ -324,6 +325,7 @@ _.Zones =
 					}),
 					q(48639, {	-- Army of the Light
 						["qg"] = 127120,	-- Vindicator Jaelaana
+						["repeatable"] = true,
 						["groups"] = {
 							i(157829, {	-- Gilded Trunk
 								["groups"] = {
@@ -639,6 +641,7 @@ _.Zones =
 					n(-206, {	-- Paragon
 						q(48973, {	-- Paragon of Argussian Reach
 							["qg"] = 127151,	-- Toraan the Revered
+							["repeatable"] = true,
 							["groups"] = {
 								i(152922, {	-- Brittle Krokul Chest
 									i(153127),	-- Cube of Discovery
@@ -647,6 +650,7 @@ _.Zones =
 						}),
 						q(48974, {	-- Paragon of the Army of the Light
 							["qg"] = 127120,	-- Vindicator Jaelaana
+							["repeatable"] = true,
 							["groups"] = {
 								i(152923, {	-- Gleaming Footlocker
 									i(153044),	-- Avenging Felcrusher Mount
