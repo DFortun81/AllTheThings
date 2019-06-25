@@ -408,6 +408,7 @@ _.ExpansionFeatures =
 							i(163809),	-- Deathsting Scorpid [Molten Cay]
 							i(163806),	-- False Knucklebump [Molten Cay]
 							i(166493),	-- Firesting Buzzer
+							i(169205),	-- Ghostly Whelpling
 							i(163811),	-- Giggling Flame
 							i(163802),	-- Inky [Un'gol Ruins]
 							i(163821),	-- Juvenile Brineshell

@@ -75,7 +75,14 @@ _.Zones =
 								}),
 							},
 						}),
-					]]--
+				]]	 	{	-- Francois 
+							["npcID"] = 134446,	-- Francois 
+							["g"] = {
+								i(158077),	-- Faberge Egg
+							},
+							["description"] = "To obtain the Faberge Egg you need to have 1,000,000 gold in your inventory.",
+							["coord"] = { 52.8, 31.1 },
+						},
 						{	-- Grumpy Grimble
 							["npcID"] = 142838,	-- Grumpy Grimble
 							["g"] = {
