@@ -511,11 +511,6 @@ _.Zones =
 							["coord"] = { 49.8, 95.9, 1165 },
 							["qg"] = 150433,	-- Bluffwatcher Proudscar
 						}),
-						qh(56044, {	-- Send the Fleet
-							["qg"] = 135691,	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 1165 },
-							["sourceQuest"] = 56030,	-- The Warchief's Order
-						}),
 						h(i(165668, {	-- The Azsharan Medallion
 							["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
 							["lvl"] = 120,
@@ -555,9 +550,6 @@ _.Zones =
 							["qg"] = 145396,	-- Xal'atath
 							["coord"] = { 75.0, 77.7, 895 },
 							["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
-						}),
-						qh(56030, {	-- The Warchief's Order
-							["description"] = "Automated granted when logging in.",
 						}),
 						{	-- To Mechagon!
 							["questID"] = 55651,
