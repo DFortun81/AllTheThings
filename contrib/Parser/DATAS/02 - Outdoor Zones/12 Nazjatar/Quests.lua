@@ -819,6 +819,11 @@ _.Zones =
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
+			i(169643, {	-- Molted Spineshell
+				["questID"] = 56460,
+				["crs"] = { 154913 },	-- Shadowspine Lurker
+				["coord"] = { 42.2, 14.0, 1355 },
+			}),
 			q(55529, {	-- No Backs
 				["qg"] = 152084,	-- Mrrl
 				["races"] = ALLIANCE_ONLY,
