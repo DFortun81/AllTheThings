@@ -77,6 +77,41 @@ _.Achievements =
 							})),
 						},
 					}),
+					n(-3156, {	--	Player vs. Player (Battle for Azeroth Season 3)
+						["groups"] = {
+							ach(13634, {			-- Challenger: Battle for Azeroth Season 3
+								title(32),				-- Challenger
+							}),
+							ach(13639),		-- Combatant: Battle for Azeroth Season 3
+							ach(13642, {		-- Duelist: Battle for Azeroth Season 3
+								["g"] = {
+									title(30),		-- Duelist
+									--[[ Note!! Currently we can not list this due to having no item.
+									Illusion: Dreadflame // Dreadflame Illusion --]]
+									i(167382),	-- Alliance Notorious Gladiator's Cloak
+									i(167381),	-- Horde Notorious Gladiator's Cloak
+								},
+							}),
+							ach(13676, {		-- Elite: Battle for Azeroth Season 3
+								i(167363),	-- Alliance Notorious Gladiator's Tabard
+								i(167362),	-- Horde Notorious Gladiator's Tabard
+							}),
+							ach(13647, {		-- Gladiator: Battle for Azeroth Season 2
+								["g"] = {
+									title(29),			-- Gladiator
+									i(156881),			-- Notorious Gladiator's Proto-Drake
+								},
+							}),
+							a(ach(13643)),			-- Hero of the Alliance: Notorious
+							h(ach(13644)),			-- Hero of the Horde: Notorious
+							ach(13641, {			-- Rival: Battle for Azeroth Season 3
+								title(31),				-- Rival
+							}),
+							ach(13630, {			-- Notorious Gladiator: Battle for Azeroth Season 3
+								--title(XX),			-- Notorious Gladiator (title not in as of Pre-Patch)
+							}),
+						},
+					}),
 					un(2, ach(420)),		-- Brutal Gladiator
 					un(2, ach(6938)),		-- Cataclysmic Gladiator
 					un(2, ach(11017)),		-- Challenger: Legion Season 1
