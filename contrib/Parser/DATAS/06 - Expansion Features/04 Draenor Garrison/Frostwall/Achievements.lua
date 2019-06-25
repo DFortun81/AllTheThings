@@ -4,9 +4,10 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		h(m(590, {	-- Frostwall
-			["groups"] = {
-				nh(-4, { 	-- Achievements
+		m(590, {	-- Frostwall
+			n(-4, { 	-- Achievements
+				["races"] = HORDE_ONLY,
+				["g"] = {
 					ach(10365, {	-- A Frightening Friend
 						["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
 						["coord"] = { 70.71, 90.21, 590 },	-- Pepe Location (Horde)
@@ -147,7 +148,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-107, {	-- Fishing Hut
-						ach(7274, { 	-- Learning From The Best	
+						ach(7274, { 	-- Learning From The Best
 							i(86596), 	-- Nat's Fishing Chair
 						}),
 					}),
@@ -356,8 +357,8 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-				}),
-			},
-		})),	
+				},
+			}),
+		}),
 	}),
 };

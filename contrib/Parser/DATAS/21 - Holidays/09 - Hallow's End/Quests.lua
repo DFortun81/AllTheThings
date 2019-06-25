@@ -171,6 +171,38 @@ _.Holidays = bubbleDown({["u"] = 26},
 							},
 						},
 					},
+					q(39721, {	-- Culling the Crew
+						["u"] = 26,
+						["qg"] = 96705,	-- Orukan
+						["isDaily"] = true,
+						["g"] = {
+							i(128658),	-- Spooky Supplies
+						},
+					}),
+					q(39720, {	-- Foul Fertilizer
+						["u"] = 26,
+						["qg"] = 96705,	-- Orukan
+						["isDaily"] = true,
+						["g"] = {
+							i(128658),	-- Spooky Supplies
+						},
+					}),
+					q(39719, {	-- Mutiny on the Boneship
+						["u"] = 26,
+						["qg"] = 96705,	-- Orukan
+						["isDaily"] = true,
+						["g"] = {
+							i(128658),	-- Spooky Supplies
+						},
+					}),
+					q(39716, {	-- Smashing Squashlings
+						["u"] = 26,
+						["qg"] = 96705,	-- Orukan
+						["isDaily"] = true,
+						["g"] = {
+							i(128658),	-- Spooky Supplies
+						},
+					}),
 					--Quests!! UC
 					{	-- Hallow's End Treats for Spoops!
 						["questID"] = 8312,	-- Hallow's End Treats for Spoops!

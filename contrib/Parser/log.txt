@@ -8,9 +8,6 @@
 .\DATAS\00 - Item Database\questDB.json... 
 .\DATAS\00 - Item Database\zoneDB.json... 
 Done parsing JSON files...
-.\DATAS\02 - Outdoor Zones\10 Kul Tiras\04 Tiragarde Sound\Vendors.lua
-NLua.Exceptions.LuaScriptException: ...utdoor Zones\10 Kul Tiras\04 Tiragarde Sound\Vendors.lua:131: unexpected symbol near '}'
-Press Enter once you have resolved the issue.
 There are 115962 Items loaded in the database.
 Custom NPC ID [-536] has no reference and should be removed.
 Custom NPC ID [-537] has no reference and should be removed.

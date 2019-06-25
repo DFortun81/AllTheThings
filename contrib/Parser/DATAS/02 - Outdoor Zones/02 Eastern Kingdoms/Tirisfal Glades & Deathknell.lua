@@ -17,10 +17,11 @@ _.Zones =
 				n(-10067, {	-- Artifacts
 					["lvl"] = 98,
 					["g"] = {
-						nh(11608, {	-- Bardu Sharpeye
+						n(11608, {	-- Bardu Sharpeye
 							["description"] = "After talking to Prince Tortheldrin, you can talk to him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
 							["classes"] = { 2 },	-- Paladin only
 							["coord"] = { 83.2, 71.8 },
+							["races"] = HORDE_ONLY,
 							["questID"] = 43683,	-- Traveller Found [Retribution Paladin Hidden Artifact Appearance]
 							["sourceQuests"] = { 43682 },	-- Book Presented
 						}),
@@ -386,7 +387,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 --[[
-				
+
 					qh(11403),	-- Free at Last! -- Hallow's End. No longer available? The quest giver was removed from the game
 					qh(14089),	-- Learn to Ride in Tirisfal Glades -- Legacy
 					qh(12139),	-- "Let the Fires Come!" -- Hallow's End
@@ -527,8 +528,11 @@ _.Zones =
 --]]
 				}),
 				n(-2, {	-- Vendors
-					nh(2118, {	-- Abigail Shiel <Trade Supplies>
-						i(12226),	-- Recipe: Crispy Bat Wing
+					n(2118, {	-- Abigail Shiel <Trade Supplies>
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(12226),	-- Recipe: Crispy Bat Wing
+						},
 					}),
 					n(10856, { -- Argent Quartermaster Hasana <The Argent Dawn>
 						["coord"] = { 83.26, 68.14, 18 },
@@ -550,22 +554,31 @@ _.Zones =
 							i(6270),	-- Pattern: Blue Linen Vest
 						},
 					}),
-					nh(3550, {	-- Martine Tramblay <Fishing Supplies>
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6326),	-- Recipe: Slitherskin Mackerel
+					n(3550, {	-- Martine Tramblay <Fishing Supplies>
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(6325),	-- Recipe: Brilliant Smallfish
+							i(6326),	-- Recipe: Slitherskin Mackerel
+						},
 					}),
-					nh(12943, {	-- Werg Thickblade <Leatherworking Supplies>
-						i(15741),	-- Pattern: Stormshroud Pants
-						i(15725),	-- Pattern: Wicked Leather Gauntlets
+					n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(15741),	-- Pattern: Stormshroud Pants
+							i(15725),	-- Pattern: Wicked Leather Gauntlets
+						},
 					}),
-					nh(4731, {	-- Zachariah Post <Undead Horse Merchant>
-						i(13334),
-						i(18791),
-						i(47101),
-						i(13331),
-						i(13332),
-						i(13333),
-						i(46308),
+					n(4731, {	-- Zachariah Post <Undead Horse Merchant>
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(13334),
+							i(18791),
+							i(47101),
+							i(13331),
+							i(13332),
+							i(13333),
+							i(46308),
+						},
 					})
 				}),
 				m(19, {	-- Scarlet Monastery Entrance

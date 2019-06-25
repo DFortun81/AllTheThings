@@ -4,9 +4,9 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		h(m(590, {	-- Frostwall
-			["g"] = {
-				nh(-136, { 	-- Invasions
+		m(590, {	-- Frostwall
+				n(-136, { 	-- Invasions
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						ach(9208),	-- Botani Invasion
 						ach(9207),	-- Goren Invasion
@@ -293,7 +293,7 @@ _.ExpansionFeatures =
 								i(122169),	-- Sooty Blackrock Iron Legplates
 								i(115411),	-- Ozymandias' Burdensome Treads
 							},
-							["description"] = "Bloodied Iron Horde Banner summons this boss. It has a chance to be obtained during an Iron Horde Invasion.",									
+							["description"] = "Bloodied Iron Horde Banner summons this boss. It has a chance to be obtained during an Iron Horde Invasion.",
 						}),
 						n(90943, {	-- Gaur
 							["g"] = {
@@ -387,7 +387,7 @@ _.ExpansionFeatures =
 								i(122169),	-- Sooty Blackrock Iron Legplates
 								i(115411),	-- Ozymandias' Burdensome Treads
 							},
-							["description"] = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",									
+							["description"] = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",
 						}),
 						n(90995, {	-- Mage Lord Gogg'nathog
 							["g"] = {
@@ -481,12 +481,11 @@ _.ExpansionFeatures =
 								i(122169),	-- Sooty Blackrock Iron Legplates
 								i(115411),	-- Ozymandias' Burdensome Treads
 							},
-							["description"] = "Heart of Oak summons this boss. It has a chance to be obtained during a Botani Invasion.",									
+							["description"] = "Heart of Oak summons this boss. It has a chance to be obtained during a Botani Invasion.",
 						}),
 					},
 					["description"] = "To trigger an invasion, you need to do an assault quest or purchase a scouting missive from the garrison quartermaster. \n\nBotani Invasion -- Assault on Lost Veil Anzu, Assault on the Everbloom Wilds \n\nGoren Invasion -- Assault on Magnarok, Assault on the Broken Precipice \n\nIron Horde Invasion -- Assault on Mok'gol Watchpost, Assault on the Iron Siegeworks, Assault on the Pit, Battle in Ashran \n\nOgre Invasion -- Assault on Stonefury Cliffs, Assault on the Gorian Proving Grounds, Challenge at the Ring of Blood \n\nShadow Council Invasion -- Assault on Shattrath Harbor, Assault on the Heart of Shattrath \n\nShadowmoon Invasion -- Assault on Darktide Roost, Assault on Pillars of Fate, Assault on Skettis, Assault on Socrethar's Rise \n\nYou can earn Bronze, Silver, Gold, and Platinum rewards once per week per toon.",
 				}),
-			},
-		})),	
+		}),
 	}),
 };

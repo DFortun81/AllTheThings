@@ -4,9 +4,10 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		h(m(590, {	-- Frostwall
-			["groups"] = {
-				nh(-153, {	-- Work Orders
+		m(590, {	-- Frostwall
+			n(-153, {	-- Work Orders
+				["races"] = HORDE_ONLY,
+				["g"] = {
 					ach(9407, {	-- Working Many Orders (750)
 						ach(9406, {		-- Working More Orders (250)
 							["groups"] = {
@@ -486,8 +487,8 @@ _.ExpansionFeatures =
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 					}),
-				}),
-			},
-		})),	
+				},
+			}),
+		}),
 	}),
 };

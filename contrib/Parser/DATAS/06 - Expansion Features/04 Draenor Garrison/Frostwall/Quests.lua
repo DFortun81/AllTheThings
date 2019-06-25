@@ -7,10 +7,6 @@ _.ExpansionFeatures =
 		h(m(590, {	-- Frostwall
 			["g"] = {
 				nh(-17, { 	-- Quests
-					--[[ Tracking/Flags
-						36793 - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
-						36799 - Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking all herbs
-					]]--
 					ach(8671, {	-- You'll Get Caught Up In The... Frostfire!
 						["races"] = HORDE_ONLY,
 						["g"] = {

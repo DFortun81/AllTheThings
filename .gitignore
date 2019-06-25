@@ -33,3 +33,4 @@ obj/
 
 # Backup files
 *.bak
+contrib/Parser/log.txt

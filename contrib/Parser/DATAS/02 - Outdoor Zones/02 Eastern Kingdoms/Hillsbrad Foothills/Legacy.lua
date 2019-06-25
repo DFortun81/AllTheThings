@@ -94,43 +94,66 @@ _.Zones =
 					n(2287, { 	-- Crushridge Warmonger 
 						un(7, i(1602)),	-- Sickle Axe
 					}),
-					nh(2358, { 	-- Dalaran Summoner
-						un(7, i(5245)), 	-- Summoner's Wand
+					n(2358, { 	-- Dalaran Summoner
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							un(7, i(5245)), 	-- Summoner's Wand
+						},
 					}),
-					un(43, nh(2346, { 	-- Dun Garok Priest
-						un(7, i(4723)),	-- Humbert's Pants
-					})),
-					un(43, nh(2345, { 	-- Dun Garok Rifleman
-						un(7, i(4724)), 	-- Humbert's Helm
-					})),
-					un(43, n(2427, { 	-- Jailor Eston
-						un(7, i(3429)), 	-- Guardsman Belt
-					})),
-					un(43, n(2428, { 	-- Jailor Marlgen
-						un(7, i(3429)),	-- Guardsman Belt
-					})),
+					n(2346, { 	-- Dun Garok Priest
+						["u"] = 43,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							un(7, i(4723)),	-- Humbert's Pants
+						},
+					}),
+					n(2345, { 	-- Dun Garok Rifleman
+						["u"] = 43,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							un(7, i(4724)), 	-- Humbert's Helm
+						},
+					}),
+					n(2427, { 	-- Jailor Eston
+						["u"] = 43,
+						["g"] = {
+							un(7, i(3429)), 	-- Guardsman Belt
+						},
+					}),
+					n(2428, { 	-- Jailor Marlgen
+						["u"] = 43,
+						["g"] = {
+							un(7, i(3429)),	-- Guardsman Belt
+						},
+					}),
 					n(2372, { 	-- Mudsnout Gnoll
 						un(7, i(3204)),	-- Deepwood Bracers
 					}),
-					un(43, n(2246, { 	-- Syndicate Assassin
-						un(7, i(1280)),	-- Cloaked Hood
-					})),
+					n(2246, { 	-- Syndicate Assassin
+						["u"] = 43,
+						["g"] = {
+							un(7, i(1280)),	-- Cloaked Hood
+						},
+					}),
 				}),
 				n(-2, {	-- Vendors (Legacy)
-					un(43, n(2381, {	-- Micha Yance <Trade Goods>
-						i(20973, {	-- Design: Blazing Citrine Ring (Removed in Cata and available through trainer now)
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 7,
-						}),
-						i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
-						}),
-						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge (Removed in Cata and available through trainer now)
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
-						}),
-					})),
+					n(2381, {	-- Micha Yance <Trade Goods>
+						["u"] = 43,
+						["g"] = {
+							i(20973, {	-- Design: Blazing Citrine Ring (Removed in Cata and available through trainer now)
+								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+								["u"] = 7,
+							}),
+							i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
+								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge (Removed in Cata and available through trainer now)
+								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+						},
+					}),
 				}),
 			}),
 		}),

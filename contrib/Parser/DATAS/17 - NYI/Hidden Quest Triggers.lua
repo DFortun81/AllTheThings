@@ -22,6 +22,8 @@ _.NeverImplemented =
 		q(37187),	-- The Dark Portal
 		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
+		q(36793),	-- Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
+		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking all herbs
 		
 		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
 		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
