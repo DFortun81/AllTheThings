@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 				n(-3, { 	-- Holidays	 [DO NOT REMOVE AT ALL PER LUCETIA]
 					n(-58, {     -- Hallow's End
 						["groups"] = {
-							n(-25, { 	 -- Pet Battle
+							filter(101, { 	 -- Pet Battle
 								n(96362, {	-- Izzy Hollyfizzle events coordintor
 									["groups"] = {	
 										un(25, i(128658, {	-- Spooky Supplies

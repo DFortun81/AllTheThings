@@ -651,7 +651,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-25,    {	-- Pet Battle
+				filter(101,    {	-- Pet Battle
 					{	-- Albatross Chick
 						["speciesID"] = 1708,	-- Albatross Chick
 						["crs"] = { 97018 },	-- Albatross Chick

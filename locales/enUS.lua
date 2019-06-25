@@ -288,7 +288,6 @@ AllTheThings.L = {
 		[-18] = "Interface\\Icons\\icon_scenarios",											-- Scenarios
 		[-19] = "Interface\\Icons\\achievement_scenario_arenaofannihilation", 				-- Arena of Annihilation
 		[-20] = "Interface\\Icons\\achievement_level_110",									-- Class Hall
-		[-25] = "Interface\\Icons\\Tracking_WildPet", 										-- Pet Battles
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green", 									-- Drop
 		[-29] = "Interface\\Icons\\Inv_misc_bag_17", 										-- Raid Finder Bag
 		[-31] = "Interface\\Icons\\INV_Pet_BabyMurlocs_Blue",								-- Promotion
@@ -866,7 +865,6 @@ AllTheThings.L = {
 		[-17] = TRACKER_HEADER_QUESTS, 											-- Quests
 		[-19] = DUNGEON_FLOOR_PROVINGGROUNDS1, 									-- Arena of Annihilation
 		
-		[-25] = SHOW_PET_BATTLES_ON_MAP_TEXT, 									-- Pet Battles
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
 		
 		[-31] = BATTLE_PET_SOURCE_8,											-- Promotion

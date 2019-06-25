@@ -387,7 +387,7 @@ _.Zones =
 					},
 					["races"]  = { 27 },	-- Nightborne
 				}),
-				n(-25, {	-- Pet Battle
+				filter(101, {	-- Pet Battle
 					p(425), 	-- Ash Viper
 					p(706), 	-- Bandicoon
 					p(1914), 	-- Coastal Sandpiper
