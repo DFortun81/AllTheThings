@@ -60,6 +60,9 @@ _.Zones =
 					["questID"] = 55946,
 					["coord"] = { 58.0, 35.0, 1355 },
 					["description"] = "In an underwater cave.",
+					["g"] = { -- TODO:: confirm if this always drops from this chest
+						i(170198),	-- Eternal Palace Dining Set
+					},
 				}),
 				o(326413, {	-- Arcane Chest
 					["questID"] = 55952,
