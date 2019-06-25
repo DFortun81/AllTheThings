@@ -167,6 +167,7 @@ _.Zones =
 							["criteriaID"] = 9,
 						},
 						i(169379),	-- Snowsoft Nibbler
+						i(167793),	-- Paint Vial: Overload Orange
 					},
 				}),
 				n(153228, {	-- Gear Checker Cogstar -- possibly 154184?
@@ -176,6 +177,7 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 28,
 						},
+						i(167847),	-- Blueprint: Ultrasafe Transporter: Mechagon
 					},
 				}),
 				n(153205, {	-- Gemicide
@@ -194,6 +196,7 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 33,
 						},
+						i(167846),	-- Blueprint: Mechano-Treat
 					},
 				}),
 				n(151684, {	-- Jawbreaker
@@ -206,10 +209,11 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 4,
 						},
-						i(168908, {	-- Blueprint: Experimental Adventurer Augment
-							["questID"] = 56087,
-						}),
-						i(168752),	-- Omnipurpose Efficient Logic Board (possibly random drop from rares? I got one, but my friend didn't)
+						--i(168908, {	-- Blueprint: Experimental Adventurer Augment
+						--	["questID"] = 56087,
+						--}),
+						--i(168752),	-- Omnipurpose Efficient Logic Board (possibly random drop from rares? I got one, but my friend didn't)
+						-- Commenting out for now
 					},
 				}),
 				n(152007, {	-- Killsaw
@@ -224,6 +228,7 @@ _.Zones =
 						},
 						i(167931),	-- Mechagonian Sawblades
 						i(168327),	-- Chain Ignitercoil
+						-- Multidrop
 					},
 				}),
 				n(151933, {	-- Malfunctioning Beastbot
@@ -247,6 +252,8 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 1,
 						},
+						i(168490),	-- Blueprint: Protocal Transference Device
+						i(169688),	-- Vinyl: Gnomeragan Forever
 					},
 				}),
 				n(151672, {	-- Mecharantula
@@ -276,6 +283,7 @@ _.Zones =
 						i(168248, {	-- Blueprint: BAWLD-371
 							["questID"] = 55068,
 						}),
+						i(167794),	-- Paint Vial: Lemonade Steel
 					},
 				}),
 				n(153206, {	-- Ol' Big Tusk
@@ -289,6 +297,7 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 22,
 						},
+						i(169691),	-- Vinyl: Depths of Ulduar
 					},
 				}),
 				n(151296, {	-- OOX-Avenger/MG
@@ -298,6 +307,7 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 12,
 						},
+						i(168492),	-- Blueprint: Emergency Rocket Chicken
 					},
 				}),
 				n(152764, {	-- Oxidized Leachbeast
@@ -307,6 +317,7 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 24,
 						},
+						i(170273),	-- Oxidizied Refuse Remover
 					},
 				}),
 				n(151702, {	-- Paol Pondwader
@@ -332,6 +343,7 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 6,
 						},
+						i(168001),	-- Paint Vial: Big-ol Bronze
 					},
 				}),
 				n(152182, {	-- Rustfeather
@@ -357,6 +369,7 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 36,
 						},
+						i(168490),	-- Blueprint: Protocol Transference Device
 						i(168327),	-- Chain Ignitercoil
 					},
 				}),
