@@ -11327,41 +11327,43 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						for rewardIndex=1,numRewards,1 do
 							local itemName,icon,count,claimed,rewardType,itemID,quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
 							if rewardType == "item" then
-								local item = { ["itemID"] = itemID, ["expanded"] = false, };
+								local item = { ["itemID"] = itemID, ["expanded"] = false };
 								cache = fieldCache["itemID"][itemID];
 								if cache then
 									local ACKCHUALLY;
 									for _,data in ipairs(cache) do
-									
-										if data.f then
-											item.f = data.f;
-										end
-										if data.s then
-											item.s = data.s;
-											if data.modID == modID then
-												ACKCHUALLY = data.s;
-												item.modID = modID;
-												if tagID == 137 then
-													local parent = data.parent;
-													while parent do
-														if parent.instanceID then
-															questObject.icon = parent.icon;
-															break;
+										local lvl = isTimeWalker and (data.lvl or data.parent.lvl) or 0;
+										if lvl <= minRecLevel then
+											if data.f then
+												item.f = data.f;
+											end
+											if data.s then
+												item.s = data.s;
+												if data.modID == modID then
+													ACKCHUALLY = data.s;
+													item.modID = modID;
+													if tagID == 137 then
+														local parent = data.parent;
+														while parent do
+															if parent.instanceID then
+																questObject.icon = parent.icon;
+																break;
+															end
+															parent = parent.parent;
 														end
-														parent = parent.parent;
 													end
 												end
 											end
-										end
-										if data.g and #data.g > 0 then
-											if not item.g then
-												item.g = {};
-												item.progress = 0;
-												item.total = 0;
-												item.OnUpdate = OnUpdateForItem;
-											end
-											for __,subdata in ipairs(data.g) do
-												MergeObject(item.g, subdata);
+											if data.g and #data.g > 0 then
+												if not item.g then
+													item.g = {};
+													item.progress = 0;
+													item.total = 0;
+													item.OnUpdate = OnUpdateForItem;
+												end
+												for __,subdata in ipairs(data.g) do
+													MergeObject(item.g, subdata);
+												end
 											end
 										end
 									end
@@ -11376,18 +11378,21 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									cache = fieldCache["currencyID"][itemID];
 									if cache then
 										for _,data in ipairs(cache) do
-											if data.f then
-												item.f = data.f;
-											end
-											if data.g and #data.g > 0 then
-												if not item.g then
-													item.g = {};
-													item.progress = 0;
-													item.total = 0;
-													item.OnUpdate = OnUpdateForItem;
+											local lvl = isTimeWalker and (data.lvl or data.parent.lvl) or 0;
+											if lvl <= minRecLevel then
+												if data.f then
+													item.f = data.f;
 												end
-												for __,subdata in ipairs(data.g) do
-													MergeObject(item.g, subdata);
+												if data.g and #data.g > 0 then
+													if not item.g then
+														item.g = {};
+														item.progress = 0;
+														item.total = 0;
+														item.OnUpdate = OnUpdateForItem;
+													end
+													for __,subdata in ipairs(data.g) do
+														MergeObject(item.g, subdata);
+													end
 												end
 											end
 										end
