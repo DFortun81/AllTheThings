@@ -58,6 +58,12 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			}),
+			q(55993, {	-- A Little Edge
+				["qg"] = 153743,	-- Kade Makreef
+				["coord"] = { 26.0, 41.8, 1355 },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
 			q(55983, {	-- A Safer Place
 				["qg"] = 152084,	-- Mrrl
 				["coord"] = { 48.1, 45.3, 1355 },
@@ -442,6 +448,11 @@ _.Zones =
 				["coord"] = { 38.8, 30.4, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
+			}),
+			i(169637, {	-- Crackling Mandible
+				["questID"] = 56466,
+				["crs"] = { 154919 },	-- Voltgorger
+				["coord"] = { 37.5, 16.7, 1355 },
 			}),
 			q(57004, {	-- Create Your Own Strength
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
