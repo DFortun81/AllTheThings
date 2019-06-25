@@ -1540,6 +1540,11 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56644,	-- Up Against It
 			}),
+			i(169646, {	-- Wiggletail's Poking Fork
+				["questID"] = 56445,
+				["crs"] = { 154910 },
+				["coord"] = { 34.7, 27.4, 1355 },
+			}),
 			q(56815, {	-- With A Little Help From My Friends
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
 				["races"] = HORDE_ONLY,
