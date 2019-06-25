@@ -21,6 +21,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				ach(13718, {	-- The Grand Reception
 					["g"] = {
 						e(2352, {	-- Abyssal Commander Sivara
+							["cr"] = 155144,
 							["g"] = {
 								i(168306),	-- Shiver Venom Lance
 								i(168276),	-- Claw of the Myrmidon
@@ -43,6 +44,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							},
 						}),
 						e(2347, {	-- Blackwater Behemoth
+							["cr"] = 154986,
 							["g"] = {
 								i(169360),	-- Mindlost Bloodfrenzy
 								i(168900),	-- Diver's Folly
@@ -63,6 +65,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							},
 						}),
 						e(2353, {	-- Radiance of Azshara
+							["cr"] = 152364,
 							["g"] = {
 								i(170163),	-- Technique: Glyph of the Dark Depths
 								i(169694),	-- Aqueous Reliquary
@@ -88,6 +91,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				ach(13719, {	-- Depths of the Devoted
 					["g"] = {
 						e(2354, {	-- Lady Ashvane
+							["cr"] = 153142,
 							["g"] = {
 								i(169358),	-- Lightless Ambusher
 								i(168904),	-- Current-Weaver's Gavel
@@ -106,6 +110,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							},
 						}),
 						e(2351, {	-- Orgozoa
+							["cr"] = 152128,
 							["g"] = {
 								i(168274),	-- Aqua-Pulse Trident
 								i(168897),	-- Tentacle Crusher
@@ -125,6 +130,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							},
 						}),
 						e(2359, {	-- The Queen's Court
+							["cr"] = 152853,
 							["g"] = {
 								i(169694),	-- Aqueous Reliquary
 								i(168892),	-- Court Dagger of Sentencing
@@ -147,6 +153,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				ach(13725, {	-- The Circle of Stars
 					["g"] = {
 						e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+							["cr"] = 150859,
 							["g"] = {
 								i(169362),	-- Nameless Octopode
 								i(168902),	-- Dream's End
@@ -164,6 +171,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							},
 						}),
 						e(2361, {	-- Queen Azshara
+							["cr"] = 152910,
 							["g"] = {
 								i(169348),	-- Zanj'ir Poker
 								i(169694),	-- Aqueous Reliquary
@@ -203,6 +211,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(167171),	-- Azshari Bloatray
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
+					["cr"] = 155144,
 					["g"] = {
 						{	-- The Grand Reception (Abyssal Commander Sivara)
 							["achievementID"] = 13718,
@@ -230,6 +239,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2347, {	-- Blackwater Behemoth
+					["cr"] = 154986,
 					["g"] = {
 						{	-- The Grand Reception (Blackwater Behemoth)
 							["achievementID"] = 13718,
@@ -255,6 +265,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2353, {	-- Radiance of Azshara
+					["cr"] = 152364,
 					["g"] = {
 						{	-- The Grand Reception (Radiance of Azshara)
 							["achievementID"] = 13718,
@@ -281,6 +292,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2354, {	-- Lady Ashvane
+					["cr"] = 153142,
 					["g"] = {
 						{	-- Depths of the Devoted (Lady Ashvane)
 							["achievementID"] = 13719,
@@ -304,6 +316,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2351, {	-- Orgozoa
+					["cr"] = 152128,
 					["g"] = {
 						{	-- Depths of the Devoted (Orgozoa)
 							["achievementID"] = 13719,
@@ -328,6 +341,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2359, {	-- The Queen's Court
+					["cr"] = 152853,
 					["g"] = {
 						{	-- Depths of the Devoted (The Queen's Court)
 							["achievementID"] = 13719,
@@ -351,6 +365,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+					["cr"] = 150859,
 					["g"] = {
 						{	-- The Circle of Stars (Za'qul, Harbinger of Ny'alotha)
 							["achievementID"] = 13725,
@@ -373,6 +388,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2361, {	-- Queen Azshara
+					["cr"] = 152910,
 					["g"] = {
 						{	-- The Circle of Stars (Queen Azshara)
 							["achievementID"] = 13725,
@@ -415,6 +431,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(167171),	-- Azshari Bloatray
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
+					["cr"] = 155144,
 					["g"] = {
 						{	-- The Grand Reception (Abyssal Commander Sivara)
 							["achievementID"] = 13718,
@@ -442,6 +459,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2347, {	-- Blackwater Behemoth
+					["cr"] = 154986,
 					["g"] = {
 						{	-- The Grand Reception (Blackwater Behemoth)
 							["achievementID"] = 13718,
@@ -467,6 +485,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2353, {	-- Radiance of Azshara
+					["cr"] = 152364,
 					["g"] = {
 						{	-- The Grand Reception (Radiance of Azshara)
 							["achievementID"] = 13718,
@@ -493,6 +512,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2354, {	-- Lady Ashvane
+					["cr"] = 153142,
 					["g"] = {
 						{	-- Depths of the Devoted (Lady Ashvane)
 							["achievementID"] = 13719,
@@ -516,6 +536,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2351, {	-- Orgozoa
+					["cr"] = 152128,
 					["g"] = {
 						{	-- Depths of the Devoted (Orgozoa)
 							["achievementID"] = 13719,
@@ -540,6 +561,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2359, {	-- The Queen's Court
+					["cr"] = 152853,
 					["g"] = {
 						{	-- Depths of the Devoted (The Queen's Court)
 							["achievementID"] = 13719,
@@ -563,6 +585,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+					["cr"] = 150859,
 					["g"] = {
 						{	-- The Circle of Stars (Za'qul, Harbinger of Ny'alotha)
 							["achievementID"] = 13725,
@@ -585,6 +608,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2361, {	-- Queen Azshara
+					["cr"] = 152910,
 					["g"] = {
 						ach(13784),	-- Ahead of the Curve: Queen Azshara
 						{	-- The Circle of Stars (Queen Azshara)
@@ -628,6 +652,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(167171),	-- Azshari Bloatray
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
+					["cr"] = 155144,
 					["g"] = {
 						ach(13726),	-- Mythic: Abyssal Commander Sivara
 						{	-- The Grand Reception (Abyssal Commander Sivara)
@@ -656,6 +681,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2347, {	-- Blackwater Behemoth
+					["cr"] = 154986,
 					["g"] = {
 						ach(13728),	-- Mythic: Blackwater Behemoth
 						{	-- The Grand Reception (Blackwater Behemoth)
@@ -682,6 +708,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2353, {	-- Radiance of Azshara
+					["cr"] = 152364,
 					["g"] = {
 						ach(13727),	-- Mythic: Radiance of Azshara
 						{	-- The Grand Reception (Radiance of Azshara)
@@ -709,6 +736,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2354, {	-- Lady Ashvane
+					["cr"] = 153142,
 					["g"] = {
 						ach(13729),	-- Mythic: Lady Ashvane
 						{	-- Depths of the Devoted (Lady Ashvane)
@@ -733,6 +761,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2351, {	-- Orgozoa
+					["cr"] = 152128,
 					["g"] = {
 						ach(13730),	-- Mythic: Orgozoa
 						{	-- Depths of the Devoted (Orgozoa)
@@ -758,6 +787,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2359, {	-- The Queen's Court
+					["cr"] = 152853,
 					["g"] = {
 						ach(13731),	-- Mythic:The Queen's Court
 						{	-- Depths of the Devoted (The Queen's Court)
@@ -782,6 +812,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+					["cr"] = 150859,
 					["g"] = {
 						ach(13732),	-- Mythic: Za'qul
 						{	-- The Circle of Stars (Za'qul, Harbinger of Ny'alotha)
@@ -805,6 +836,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2361, {	-- Queen Azshara
+					["cr"] = 152910,
 					["g"] = {
 						ach(13733, {	-- Mythic: Queen Azshara
 							title(404),	-- the Eternal
