@@ -100,9 +100,9 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55094,	-- Stay Low, Stay Fast!
 				["g"] = {
-					i(163456),	-- Honorbound Centurion's Greathelm
-					i(163453),	-- Honorbound Centurion's Shoulderplates
-					i(163459),	-- Honorbound Centurion's Breastplate
+					i(170536),	-- Honorbound Centurion's Greathelm
+					i(170535),	-- Honorbound Centurion's Shoulderplates
+					i(170537),	-- Honorbound Centurion's Breastplate
 				},
 			}),
 			q(57006, {	-- A Worthy Ally
@@ -472,6 +472,8 @@ _.Zones =
 					i(170275),	-- Honorbound Warmaul
 					i(163874),	-- Honorbound Decapitator
 					i(163880),	-- Honorbound Gladius
+					i(163869),	-- Honorbound Skullcrusher
+					i(163878),	-- Honorbound Barrier
 				},
 			}),
 			q(54969, {	-- Descent
