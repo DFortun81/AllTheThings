@@ -42,7 +42,7 @@ _.Zones =
 						un(2, i(2218)),	-- Craftsman's Dagger
 					},
 				}),
-				q(384,   {	-- Beer Basted Boar Ribs -- aa
+				q(384,   {	-- Beer Basted Boar Ribs
 					["qg"] = 1267,	-- Ragnar Thunderbrew
 					["coord"] = { 53.9, 50.6, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -55,7 +55,7 @@ _.Zones =
 					["qg"] = 1261,	-- Veron Amberstill
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26380, {	-- Bound for Kharanos -- aa
+				q(26380, {	-- Bound for Kharanos
 					["qg"] = 42933,	-- Ciara Deepstone
 					["coord"] = { 49.9, 44.9, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -81,14 +81,10 @@ _.Zones =
 						i(131462),	-- Dark Iron Spy-Bands
 					},
 				}),
-				q(25979, {	-- Dealing with the Surge -- aa
+				q(25979, {	-- Dealing with the Surge
 					["qg"] = 41804,	-- Khurgon Singefeather
 					["coord"] = { 82.6, 48.3, 27 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27635, {	-- Decontamination
-					["qg"] = 46274,	-- Gaffer Coilspring
-					["races"] = { 7 },	-- gnome
 				}),
 				q(26112, {	-- Demanding Answers
 					["qg"] = 41853,	-- Commander Stonebreaker
@@ -107,7 +103,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 				}),
-				q(25978, {	-- Entombed in Ice -- aa
+				q(25978, {	-- Entombed in Ice
 					["qg"] = 41786,	-- Sergeant Bahrum
 					["coord"] = { 82.8, 48.4, 27 },
 					["races"] = ALLIANCE_ONLY,	
@@ -144,6 +140,7 @@ _.Zones =
 					["qg"] = 40950,	-- Captain Tharran
 					["coord"] = { 53.7, 52.1, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26373,	-- On to Kharanos
 				}),
 				q(5625,  {	-- Garments of the Light
 					["u"] = 40,
@@ -196,7 +193,7 @@ _.Zones =
 				}),
 				q(6387, {	-- Honor Students
 					["qg"] = 1699,	-- Gremlock Pilsnor
-					["coord"] = { 54.6, 50.6, 27 },
+					["coord"] = { 54.7, 50.5, 27 },
 					["races"] = {
 						3,	-- Dwarf
 						7,	-- Gnome
@@ -215,7 +212,7 @@ _.Zones =
 						un(2, i(11964)),	-- Swiftstrike Cudgel
 					},
 				}),
-				q(25932, {	-- It's Raid Night Every Night -- aa
+				q(25932, {	-- It's Raid Night Every Night
 					["qg"] = 41578,	-- Sergeant Flinthammer
 					["coord"] = { 70.4, 48.9, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -255,11 +252,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 				}),
-				q(27670, {	-- Pinned Down
-					["qg"] = 45966,	-- Nevin Twistwrench
-					["races"] = { 7, 9 },	-- Gnome, Goblin
-				}),
-				q(25937, {	-- Priceless Treasures -- aa
+				q(25937, {	-- Priceless Treasures
 					["qg"] = 50631,	-- Prospector Drugan
 					["coord"] = { 76.1, 53.0, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -318,10 +311,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 				}),
-				q(28167, {	-- Report to Carvo Blastbolt
-					["qg"] = 45966,	-- Nevin Twistwrench
-					["races"] = { 7, 9 },	-- Gnome, Goblin
-				}),
 				q(320, {	-- Return to Bellowfiz
 					["u"] = 40,
 					["qg"] = 1374,	-- Rejold Barleybrew
@@ -352,10 +341,6 @@ _.Zones =
 						un(2, i(3565)),	-- Beerstained Gloves
 					},
 				}),
-				q(27671, {	-- See to the Survivors
-					["qg"] = 47250,	-- Carvo Blastbolt
-					["races"] = { 7, 9 },	-- Gnome, Goblin
-				}),
 				q(317, {	-- Stocking Jetsteam
 					["u"] = 40,
 					["qg"] = 1378,	-- Pilot Bellowfiz
@@ -373,7 +358,7 @@ _.Zones =
 					["sourceQuest"] = 26085,	-- Rallying the Defenders
 					["races"] = ALLIANCE_ONLY,	
 				}),
-				q(315, {	-- The Perfect Stout -- aa
+				q(315, {	-- The Perfect Stout
 					["qg"] = 1374,	-- Rejold Barleybrew
 					["coord"] = { 54.1, 51.1, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -384,7 +369,7 @@ _.Zones =
 					["races"] = { 3 },	-- Dwarf
 					["classes"] = { 2 },	-- Paladin
 				}),
-				q(433,   { 	-- The Public Servant -- aa
+				q(433,   { 	-- The Public Servant
 					["qg"] = 1977,	-- Senator Mehr Stonehallow
 					["coord"] = { 75.9, 54.3, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -413,14 +398,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 				}),
-				q(432, {	-- Those Blasted Troggs! -- aa
+				q(432, {	-- Those Blasted Troggs!
 					["qg"] = 1254,	-- Foreman Stonebrow
 					["coord"] = { 76.3, 54.6, 27 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27674, {	-- To the Surface
-					["qg"] = 46255,	-- Technician Braggle
-					["races"] = { 7 },	-- Gnome
 				}),
 				q(400, {	-- Tools for Steelgrill
 					["u"] = 40,
@@ -437,10 +418,6 @@ _.Zones =
 						433,	-- The Public Servant
 						432,	-- Those Blasted Troggs!
 					},
-				}),
-				q(28169, {	-- Withdraw to the Loading Room!
-					["qg"] = 47250,	-- 
-					["races"] = { 7 },	-- Gnome
 				}),
 			}),
 		}),

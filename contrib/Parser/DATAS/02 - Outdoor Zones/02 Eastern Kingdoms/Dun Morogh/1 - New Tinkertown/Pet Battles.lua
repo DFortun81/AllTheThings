@@ -23,7 +23,9 @@ _.Zones =
 			}),
 			m(30,  {	-- New Tinkertown [Below]
 				filter(101, {	-- Pet Battle
-					n(124617, {	-- Environeer Bert
+					q(47895, {	-- Bert's Bots
+						["qg"] = 124617,	-- Environeer Bert
+						["coord"] = { 42.9, 74.2, 30 },
 						["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan.",
 						["g"] = {
 							i(151638, {	-- Leprous Sack of Pet Supplies
@@ -32,9 +34,9 @@ _.Zones =
 						},
 					}),
 					q(54185, {	-- Gnomeregan's New Guardians
-						["sourceQuests"] = { 54184, 54276 },	-- Trouble in Gnomeregan [Alliance] + [Horde]
-						["coord"] = { 31.67, 71.61, 30 },
 						["qg"] = 147070,	-- Micro Zoox
+						["coord"] = { 31.67, 71.61, 30 },
+						["sourceQuests"] = { 54184, 54276 },	-- Trouble in Gnomeregan [Alliance] + [Horde]
 					}),
 				}),
 			}),
