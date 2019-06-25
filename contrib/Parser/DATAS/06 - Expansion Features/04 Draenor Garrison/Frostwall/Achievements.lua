@@ -72,10 +72,10 @@ _.ExpansionFeatures =
 					ach(9210, 9132),		-- Garrison Buddies [A] / [H]
 					--ach(9132),		-- Garrison Buddies (Horde)
 					ach(9487, {		-- Got My Mind On My Draenor Money (10,000)
-						["groups"] = {
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						["g"] = {
 							i(111983),		-- Storehouse, Level 3 [Blueprints]
 						},
-						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					ach(9128, {		-- Grand Master Draftsman (60)
 						ach(9126),		-- Master Draftsman (40)

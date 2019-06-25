@@ -3,24 +3,28 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
+	m(619, {	-- The Broken Isles
 		m(672, {	-- Mardum, the Shattered Abyss
-			["groups"] = {
-				n(-17, { 	-- Quests
+			["description"] = "|cff66ccffMardum, the Shattered Abyss, colloquially known simply as Mardum and originally called the Plane of Banishment) is a prison world that was created by Sargeras prior to his becoming the Fallen Titan to hold all the demons he killed in the Great Dark Beyond. After his decision to destroy all world-souls in the universe, Sargeras shattered Mardum to free the demons that would become his Burning Legion. This is the starting scenario for Demon Hunters.|r",
+			["classes"] = { 12 },	-- Demon Hunter Class
+			["icon"] = "Interface\\Icons\\Achievement_boss_illidan",	-- Illidan
+			["g"] = {
+				n(-17,  {	-- Quests
 					q(40077, {	-- The Invasion Begins
-						["groups"] = {
+						["qg"] = 93011,	-- Kayn Sunfury
+						["g"] = {
 							i(128953),	-- Treads of Illidari Supremacy
 							i(133317),	-- Treads of Illidari Supremacy
 						},
-						["qg"] = 93011,	-- Kayn Sunfury
 					}),
 					q(40378, {	-- Enter the Illidar: Ashtongue
-						["qg"] = 98229,	-- Kayn Sunfury
 						["sourceQuests"] = { 40077 },	-- Treads of Illidari Supremacy
+						["qg"] = 98229,	-- Kayn Sunfury
 					}),
 					q(39279, {	-- Assault on Mardum
-						["description"] = "This is a bonus objective.",
 						["sourceQuests"] = { 40077 },	-- Treads of Illidari Supremacy
+						["description"] = "This is a bonus objective.",
+						["collectible"] = false,
 					}),
 					q(40379, {	-- Enter the Illidari: Coilskar
 						["qg"] = 100982,	-- Sevis Brightflame
@@ -31,12 +35,12 @@ _.Zones =
 						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
 					}),
 					q(38759, {	-- Set Them Free
-						["groups"] = {
+						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
+						["qg"] = 94410,	-- Allari the Souleater
+						["g"] = {
 							i(128952),	-- Torment Ender's Chestguard
 							i(133312),	-- Torment Ender's Chestguard
 						},
-						["qg"] = 94410,	-- Allari the Souleater
-						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
 					}),
 					q(39050, {	-- Meeting With the Queen
 						["qg"] = 93759,	-- Jace Darkweaver
@@ -47,12 +51,12 @@ _.Zones =
 						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
 					}),
 					q(38765, {	-- Enter the Illidari: Shivarra
-						["groups"] = {
+						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
+						["qg"] = 93759,	-- Jace Darkweaver
+						["g"] = {
 							i(128951),	-- Leggings of Sacrifice
 							i(133316),	-- Leggings of Sacrifice
 						},
-						["qg"] = 93759,	-- Jace Darkweaver
-						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
 					}),
 					q(38813, {	-- Orders for Your Captains
 						["qg"] = 93127,	-- Kayn Sunfury
@@ -67,12 +71,12 @@ _.Zones =
 						["sourceQuests"] = { 39262 },	-- Give Me Sight Beyond Sight
 					}),
 					q(38819, {	-- Their Numbers Are Legion
-						["groups"] = {
+						["sourceQuests"] = { 39495 },	-- Hidden No More
+						["qg"] = 96420,	-- Cyana Nightglaive
+						["g"] = {
 							i(128950),	-- Demon-Rend Shoulderblades
 							i(133311),	-- Demon-Rend Shoulderblades
 						},
-						["qg"] = 96420,	-- Cyana Nightglaive
-						["sourceQuests"] = { 39495 },	-- Hidden No More
 					}),
 					q(38727, {	-- Stop the Bombardment
 						["qg"] = 93127,	-- Kayn Sunfury
@@ -83,12 +87,12 @@ _.Zones =
 						["sourceQuests"] = { 39495 },	-- Hidden No More
 					}),
 					q(40222, {	-- The Imp Mother's Tome
-						["groups"] = {
+						["sourceQuests"] = { 38819, 38727, 38725 },	-- Their Numbers Are Legion / Stop the Bombardment / Into the Foul Creche
+						["qg"] = 98711,	-- Kor'vas Bloodthorn
+						["g"] = {
 							i(128954),	-- Power Handler's Gloves
 							i(133314),	-- Power Handler's Gloves
 						},
-						["qg"] = 98711,	-- Kor'vas Bloodthorn
-						["sourceQuests"] = { 38819, 38727, 38725 },	-- Their Numbers Are Legion / Stop the Bombardment / Into the Foul Creche
 					}),
 					q(40051, {	-- Fel Secrets
 						["qg"] = 99045,	-- Kor'vas Bloodthorn
@@ -107,19 +111,46 @@ _.Zones =
 						["sourceQuests"] = { 39515, 39516 },	-- Vengeance Will Be Mine! /  Cry Havoc and Let Slip the Illidari!
 					}),
 					q(38728, {	-- The Keystone
-						["groups"] = {
+						["sourceQuests"] = { 39663 },	-- On Felbat Wings
+						["qg"] = 97297,	-- Cyana Nightglaive
+						["g"] = {
 							i(128955),	-- The Brood Queen's Veil
 							i(133310),	-- The Brood Queen's Veil
 						},
-						["qg"] = 97297,	-- Cyana Nightglaive
-						["sourceQuests"] = { 39663 },	-- On Felbat Wings
 					}),
 					q(38729, {	-- Return to the Black Temple
-						["groups"] = {
+						["sourceQuests"] = { 38728 },	-- The Keystone
+						["qg"] = 97303,	-- Kayn Sunfury
+						["g"] = {
 							i(132243),	-- Fel-Etched Glaive
 						},
-						["qg"] = 97303,	-- Kayn Sunfury
-						["sourceQuests"] = { 38728 },	-- The Keystone
+					}),
+				}),
+				n(-16,  {	-- Rares
+					n(97058,  { -- Count Nefarious
+						["questID"] = 40231,	-- Nefarious Ring
+						["g"] = {
+							i(128948),	-- Nefarious Ring
+						},
+					}),
+					n(97370, { 	-- General Volroth
+						["questID"] = 40234,
+						["g"] = {
+							i(128947),	-- Pit Lord's Cuffs
+							i(133313),	-- Pit Lord's Cuffs
+						},
+					}),
+					n(97059, { 	-- King Voras
+						["questID"] = 40232,
+						["g"] = {
+							i(128944),	-- Voras' Silk Drape
+						},
+					}),
+					n(97057,  { -- Overseer Brutarg
+						["questID"] = 40233,	-- Brutarg's Sword Tip
+						["g"] = {
+							i(133580),	-- Brutarg's Sword Tip
+						},
 					}),
 				}),
 				n(-212, {	-- Treasure Chest
@@ -132,11 +163,11 @@ _.Zones =
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(244691, {	-- Small Treasure Chest
-						["groups"] = {
-							i(129192),	-- Inquisitor's Menacing Eye
-						},
 						["questID"] = 39971,	-- Inquisitor's Menacing Eye
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["g"] = {
+							i(129192),	-- Inquisitor's Menacing Eye
+						},
 					}),
 					o(245316, {	-- Small Treasure Chest
 						["questID"] = 40223,	-- Fel Crystal Fragments x1
@@ -151,11 +182,11 @@ _.Zones =
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(244694, {	-- Small Treasure Chest
-						["groups"] = {
-							i(128946),	-- Mardum Lord Signet
-						},
 						["questID"] = 39973,	-- Mardum Lord Signet
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["g"] = {
+							i(128946),	-- Mardum Lord Signet
+						},
 					}),
 					o(244692, {	-- Small Treasure Chest
 						["questID"] = 39972,	-- Legion Healthstone
@@ -186,44 +217,25 @@ _.Zones =
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 				}),
-				n(-16, { 	-- Rares
-					n(97058,  { -- Count Nefarious
-						["groups"] = {
-							i(128948),	-- Nefarious Ring
-						},
-						["questID"] = 40231,	-- Nefarious Ring
-					}),
-					n(97370, { 	-- General Volroth
-						["groups"] = {
-							i(128947),	-- Pit Lord's Cuffs
-							i(133313),	-- Pit Lord's Cuffs
-						},
-						["questID"] = 40234,
-					}),
-					n(97059, { 	-- King Voras
-						["groups"] = {
-							i(128944),	-- Voras' Silk Drape
-						},
-						["questID"] = 40232,
-					}),
-					n(97057,  { -- Overseer Brutarg
-						["groups"] = {
-							i(133580),	-- Brutarg's Sword Tip
-						},
-						["questID"] = 40233,	-- Brutarg's Sword Tip
-					}),
-				}),
-				m(677, {	-- Vault of the Wardens: Vault of Silence
-					["groups"] = {
+				m(677,  {	-- Vault of the Wardens: Vault of Silence
+					["icon"] = "Interface\\Icons\\inv_pet_wardenowl",	-- Wardens Owl
+					["maps"] = {
+						673,	-- Cryptic Hollow
+						678,	-- Second Floor
+						679,	-- Third Floor
+						721,	-- Mardum, the Shattered Abyss
+					},
+					["g"] = {
 						n(-17, {	-- Quests
 							q(38672, {	-- Breaking Out
-								["groups"] = {
+								["description"] = "Maiev upgrades your uncommon Illidari Glaives to these two glaives.",
+								["sourceQuests"] = { 38729 },	-- Return to the Black Temple
+								["qg"] = 92718,	-- Maiev Shadowsong
+								["g"] = {
 									i(132243),	-- Fel-Etched Glaive
 									i(128956),	-- Fel-Etched Glaive
 								},
-								["description"] = "Maiev upgrades your uncommon Illidari Glaives to these two glaives.",
-								["qg"] = 92718,	-- Maiev Shadowsong
-								["sourceQuests"] = { 38729 },	-- Return to the Black Temple
+
 							}),
 							q(39742, {	-- Vault of the Wardens
 								["description"] = "This is a bonus objective.",
@@ -262,24 +274,24 @@ _.Zones =
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
 							}),
 							q(39685, {	-- Frozen in Time
-								["groups"] = {
+								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
+								["qg"] = 97643,	-- Kor'vas Bloodthorn
+								["g"] = {
 									i(128949),	-- Infernal Firecord Sash
 									i(133315),	-- Infernal Firecord Sash
 								},
-								["qg"] = 97643,	-- Kor'vas Bloodthorn
-								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
 							}),
 							q(39686, {	-- All The Way Up
 								["qg"] = 96675,	-- Allari the Souleater
 								["sourceQuests"] = { 39683, 40254, 39684, 39685 },	-- Forged in Fire / Beam Me Up / Frozen in Time
 							}),
 							q(40373, {	-- A New Direction
-								["groups"] = {
+								["sourceQuests"] = { 39686 },	-- All The Way Up
+								["qg"] = 97644,	-- Kor'vas Bloodthorn
+								["g"] = {
 									i(138970),	-- Helm of Reaffirmed Purpose
 									i(141650),	-- Helm of Reaffirmed Purpose
 								},
-								["qg"] = 97644,	-- Kor'vas Bloodthorn
-								["sourceQuests"] = { 39686 },	-- All The Way Up
 							}),
 							q(39688, {	-- Between Us and Freedom / Nightelf [Havoc]
 								["qg"] = 97644,	-- Kor'vas Bloodthorn
@@ -314,16 +326,16 @@ _.Zones =
 						}),
 						n(-16, {	-- Rares
 							n(96997, {	-- Kethrazor
-								["groups"] = {
+								["questID"] = 40251,	-- Inquisitor's Glowering Eye
+								["g"] = {
 									i(128945),	-- Inquisitor's Glowering Eye
 								},
-								["questID"] = 40251,	-- Inquisitor's Glowering Eye
 							}),
 							n(97069, {	-- Wrath-Lord Lekos
-								["groups"] = {
+								["questID"] = 40301,	-- Lekos' Leash
+								["g"] = {
 									i(128958),	-- Lekos' Leash
 								},
-								["questID"] = 40301,	-- Lekos' Leash
 							}),
 						}),
 						n(-212, {	-- Treasure Chest
@@ -361,18 +373,8 @@ _.Zones =
 							}),
 						}),
 					},
-					["icon"] = "Interface\\Icons\\inv_pet_wardenowl",	-- Wardens Owl
-					["maps"] = {
-						673,	-- Cryptic Hollow
-						678,	-- Second Floor
-						679,	-- Third Floor
-						721,	-- Mardum, the Shattered Abyss
-					},
 				}),
 			},
-			["classes"] = { 12 },	-- Demon Hunter Class
-			["icon"] = "Interface\\Icons\\Achievement_boss_illidan",	-- Illidan
-			["description"] = "|cff66ccffMardum, the Shattered Abyss, colloquially known simply as Mardum and originally called the Plane of Banishment) is a prison world that was created by Sargeras prior to his becoming the Fallen Titan to hold all the demons he killed in the Great Dark Beyond. After his decision to destroy all world-souls in the universe, Sargeras shattered Mardum to free the demons that would become his Burning Legion. This is the starting scenario for Demon Hunters.|r",
 		}),
 	}),
 };
