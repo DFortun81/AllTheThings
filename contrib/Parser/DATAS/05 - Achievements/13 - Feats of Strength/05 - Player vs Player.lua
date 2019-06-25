@@ -26,7 +26,7 @@ _.Achievements =
 							un(2, ach(12945, {			-- Dread Gladiator: Battle for Azeroth Season 1
 								un(39, title(111)),			-- Dread Gladiator
 							})),
-							un(2, ach(13465)),		-- Elite: Battle for Azeroth Season 1
+							un(2, ach(13465)),		-- Elite: Battle for Azeroth Season 1 -- The first Elite Achievement did not reward Tabards. From S2 & later they did.
 							un(2, ach(12961, {		-- Gladiator: Battle for Azeroth Season 1
 								["g"] = {
 									title(29),			-- Gladiator

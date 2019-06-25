@@ -200,3 +200,9 @@ i(167894, 294568);	-- Beastlord's Irontusk
 i(167895, 294569);	-- Beastlord's Warwolf
 i(168055, 295387);	-- Bloodflank Charger
 i(168056, 295386);	-- Ironclad Frostclaw
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+
+i(156881, 262024);	-- Notorious Gladiator's Proto-Drake
