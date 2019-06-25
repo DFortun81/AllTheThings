@@ -632,6 +632,11 @@ _.Zones =
 					}),
 				},
 			}),
+			i(170472, {	-- Encrusted Coin (possibly part of a secret?)
+				["questID"] = 57141,
+				["coord"] = { 38.0, 59.2, 1355 },
+				["description"] = "Turn in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+			}),
 			q(55851, {	-- Essential Empowerment
 				["qgs"] = {
 					154166,	-- Magni Bronzebeard (Alliance)
@@ -659,6 +664,11 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["isBreadcrumb"] = true,
+			}),
+			i(170176, {	-- Fathom Ray Wing
+				["questID"] = 26972,
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
 			q(55661, {	-- Fighting Venomous With Venom -- TODO:: verify sourceQuest
 				["qg"] = 153777,	-- Cando Mikfin

@@ -9,6 +9,9 @@ _.Zones =
 			void cache: locked chest, unknown pre-reqs. 56.3, 15.1
 			arcane cache: locked chest, unknown pre-reqs. 53.1, 28.3
 			reinforced cache: locked chest, unknown pre-reqs. 45.1, 22.1
+			
+			
+			i(170198),	-- Eternal Palace Dining Set <-- this toy dropped from arcane chest o(326412), but not for Gaulish. Maybe based on number of chests instead?
 			]]--
 			["description"] = "Must complete |cFFFFD700A Tempered Blade|r (Alliance) or |cFFFFD700Save a Friend|r (Horde) before the chests become available.",
 			["g"] = {
@@ -60,9 +63,6 @@ _.Zones =
 					["questID"] = 55946,
 					["coord"] = { 58.0, 35.0, 1355 },
 					["description"] = "In an underwater cave.",
-					["g"] = { -- TODO:: confirm if this always drops from this chest
-						i(170198),	-- Eternal Palace Dining Set
-					},
 				}),
 				o(326413, {	-- Arcane Chest
 					["questID"] = 55952,
