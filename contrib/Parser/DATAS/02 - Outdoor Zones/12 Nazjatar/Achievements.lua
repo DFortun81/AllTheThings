@@ -34,60 +34,69 @@ _.Zones =
 			}),
 			ach(13763),	-- Back to the Depths!
 			ach(13836, {	-- Feline Figurines Found
-				-- TODO:: For the sake recording IDs and coords, I'm putting them there but there should be a better way of listing these
-				{	-- Figurine 1
+				o(9999970, {	-- Figurine 1
 					["questID"] = 56983,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 28.8, 29.1, 1355 },
-				},
-				{	-- Figurine 2
+				}),
+				o(9999969, {	-- Figurine 2
 					["questID"] = 56988,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 71.4, 23.7, 1355 },
 					["description"] = "Hidden behind a starfish.",
-				},
-				{	-- Figurine 3
+				}),
+				o(9999968, {	-- Figurine 3
 					["questID"] = 56992,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 73.6, 25.9, 1355 },
-				},
-				{	-- Figurine 4 -- possibly moved/phased. This figure wasn't at the location prior to completing the first phase of the zone
+				}),
+				o(9999967, {	-- Figurine 4
 					["questID"] = 56990,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 58.2, 22.0, 1355 },
 					["description"] = "In an underwater cave.",
-				},
-				{	-- Figurine 5
+				}),
+				o(9999966, {	-- Figurine 5
 					["questID"] = 56986,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 55.3, 27.2, 1355 },
 					["description"] = "On top of a pillar at the back of the room. Jump onto one of the conch shells to reach it."
-				},
-				{	-- Figurine 6
+				}),
+				o(9999965, {	-- Figurine 6
 					["questID"] = 56984,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 61.1, 26.8, 1355 },
 					["description"] = "Behind the sea urchin.",
-				},
-				{	-- Figurine 7
+				}),
+				o(9999964, {	-- Figurine 7
 					["questID"] = 56991,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 61.6, 10.7, 1355 },
 					["description"] = "In an underwater cave with a school of |cFFFFD700Deeptide Frenzy|r swimming around. It's on a rocky outcrop at the top of the cave."
-				},
-				{	-- Figurine 8
+				}),
+				o(9999963, {	-- Figurine 8
 					["questID"] = 56989,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["description"] = "Drop down carefully from the path to a small cave hidden in the wall.",
 					["coords"] = {
 						{ 38.7, 49.3, 1355 },	-- cave entrance
 						{ 38.0, 49.3, 1355 },	-- figurine
 					},
-				},
-				{	-- Figurine 9
+				}),
+				o(9999962, {	-- Figurine 9
 					["questID"] = 56987,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coords"] = {
 						{ 40.3, 81.3, 1355 },	-- cave entrance
 						{ 40.1, 86.5, 1355 },	-- crystal cat
 					},
 					["description"] = "At the back of an underwater cave filled with |cFFFFD700Murkbloom Reefwalkers|r.",
-				},
-				{	-- Figurine 10
+				}),
+				o(9999961, {	-- Figurine 10
 					["questID"] = 56985,
+					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 59.1, 30.4, 1355 },
-				},
+				}),
 			}),
 			ach(13707),	-- Mrrl's Secret Stash
 			ach(13713),	-- Nothing to Scry About

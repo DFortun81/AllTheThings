@@ -106,35 +106,3 @@ Custom NPC ID [-10064] has no reference and should be removed.
 Custom NPC ID [-10065] has no reference and should be removed.
 Custom NPC ID [-10068] has no reference and should be removed.
 Custom NPC ID [-90000] has no reference and should be removed.
-ERROR: Encounter 2352 is missing a creature assignment!
-ERROR: Encounter 2347 is missing a creature assignment!
-ERROR: Encounter 2353 is missing a creature assignment!
-ERROR: Encounter 2354 is missing a creature assignment!
-ERROR: Encounter 2351 is missing a creature assignment!
-ERROR: Encounter 2359 is missing a creature assignment!
-ERROR: Encounter 2349 is missing a creature assignment!
-ERROR: Encounter 2361 is missing a creature assignment!
-ERROR: Encounter 2352 is missing a creature assignment!
-ERROR: Encounter 2347 is missing a creature assignment!
-ERROR: Encounter 2353 is missing a creature assignment!
-ERROR: Encounter 2354 is missing a creature assignment!
-ERROR: Encounter 2351 is missing a creature assignment!
-ERROR: Encounter 2359 is missing a creature assignment!
-ERROR: Encounter 2349 is missing a creature assignment!
-ERROR: Encounter 2361 is missing a creature assignment!
-ERROR: Encounter 2352 is missing a creature assignment!
-ERROR: Encounter 2347 is missing a creature assignment!
-ERROR: Encounter 2353 is missing a creature assignment!
-ERROR: Encounter 2354 is missing a creature assignment!
-ERROR: Encounter 2351 is missing a creature assignment!
-ERROR: Encounter 2359 is missing a creature assignment!
-ERROR: Encounter 2349 is missing a creature assignment!
-ERROR: Encounter 2361 is missing a creature assignment!
-ERROR: Encounter 2352 is missing a creature assignment!
-ERROR: Encounter 2347 is missing a creature assignment!
-ERROR: Encounter 2353 is missing a creature assignment!
-ERROR: Encounter 2354 is missing a creature assignment!
-ERROR: Encounter 2351 is missing a creature assignment!
-ERROR: Encounter 2359 is missing a creature assignment!
-ERROR: Encounter 2349 is missing a creature assignment!
-ERROR: Encounter 2361 is missing a creature assignment!
