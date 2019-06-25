@@ -8,7 +8,7 @@ _.Zones =
 			n(152415, { -- Alga the Eyeless
 				["allianceQuestID"] = 56604,
 				["hordeQuestID"] = 56279,
-				["description"] = "Patrols in stealth along the path",
+				["description"] = "Patrols in stealth along the path.",
 				["isDaily"] = true,
 				["coords"] = {
 					{ 52.4, 41.8, 1355 },	-- coord as of build 30613
@@ -44,6 +44,11 @@ _.Zones =
 			}),
 			n(152794, {	-- Amethyst Spireshell
 				["isDaily"] = true,
+				["coords"] = {
+					{ 72.2, 36.2, 1355 },
+					{ 60.6, 33.9, 1355 },
+					{ 55.0, 29.1, 1355 },
+				},
 				["g"] = {
 					crit(3, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -60,6 +65,7 @@ _.Zones =
 			}),
 			n(150191, {	-- Avarius
 				["isDaily"] = true,
+				["coord"] = { 36.9, 11.2, 1355 },
 				["g"] = {
 					i(169373),	-- Brinestone Algan
 				},
@@ -125,11 +131,18 @@ _.Zones =
 				["coord"] = { 33.4, 30.0, 1355 },
 				["isDaily"] = true,
 			}),
-			n(152756, {	-- Daggertooth Frenzy
+			n(152756, {	-- Daggertooth Terror
 				["allianceQuestID"] = 56612,
 				["hordeQuestID"] = 56271,
-				--["coord"] = { 71.0, 33.3, 1355 }, -- coords from previous PTR build. confirm if still valid
-				["coord"] = { 26.3, 29.0, 1355 },
+				["coords"] = {
+					{ 26.3, 29.0, 1355 },
+					{ 48.6, 19.7, 1355 },
+					{ 39.0, 59.3, 1355 },
+					{ 45.9, 70.9, 1355 },
+					{ 40.2, 81.5, 1355 },
+					{ 70.1, 42.1, 1355 },
+					{ 70.5, 33.5, 1355 },
+				},
 				["isDaily"] = true,
 				["g"] = {
 					crit(9, {	-- I Thought You Said They'd Be Rare?
@@ -140,6 +153,7 @@ _.Zones =
 			}),
 			n(152291, {	-- Deepglider
 				["isDaily"] = true,
+				["coord"] = { 56.4, 43.5, 1355 },
 				["g"] = {
 					crit(10, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -178,6 +192,7 @@ _.Zones =
 					crit(13, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+				--	i(170180),	-- Razorshell
 				},
 			}),
 			n(155838, {	-- Incantatrix Vazina
@@ -193,6 +208,7 @@ _.Zones =
 					crit(14, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(169352),	-- Pearlescent Glimmershell
 				},
 			}),
 			n(152567, {	-- Kelpwillow
@@ -205,6 +221,7 @@ _.Zones =
 			}),
 			n(152323, {	-- King Gakula
 				["isDaily"] = true,
+				["coord"] = { 28.8, 29.0, 1355 },
 				["g"] = {
 					crit(16, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -290,6 +307,7 @@ _.Zones =
 				},
 			}),
 			n(151870, {	-- Sandcastle
+				["description"] = "There is a chance for Sandcastle to spawn when you are using a Scrying Stone to find treasures in Nazjatar.",
 				["isDaily"] = true,
 				["g"] = {
 					crit(23, {	-- I Thought You Said They'd Be Rare?
@@ -323,21 +341,24 @@ _.Zones =
 			}),
 			n(152548, {	-- Scale Matriarch Gratinax
 				["isDaily"] = true,
+				["coord"] = { 35.6, 41.2, 1355 },
 				["g"] = {
 					crit(25, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(169370),	-- Scalebrood Hydra
 				},
 			}),
 			n(152545, {	-- Scale Matriarch Vynara
 				["allianceQuestID"] = 56293,
 				["hordeQuestID"] = 56590,
-				["coord"] = { 27.2, 37.1, 13555 },
+				["coord"] = { 27.2, 37.1, 1355 },
 				["isDaily"] = true,
 				["g"] = {
 					crit(26, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(169370),	-- Scalebrood Hydra
 				},
 			}),
 			n(152542, {	-- Scale Matriarch Zodia
@@ -350,6 +371,7 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(168155),	-- Chum
+					i(169370),	-- Scalebrood Hydra
 				},
 			}),
 			n(152552, {	-- Shassera
@@ -386,6 +408,7 @@ _.Zones =
 					crit(30, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+				--	i(170179),	-- Snapdragon Scent Gland
 				},
 			}),
 			n(152290, {	-- Soundless
@@ -397,10 +420,12 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(169163),	-- Silent Glider
+				--	i(170176),	-- Fathom Ray Wing
 				},
 			}),
 			n(153898, {	-- Tidelord Aquatus
 				["isDaily"] = true,
+				["coord"] = { 62.4, 29.6, 1355 },
 				["g"] = {
 					crit(32, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -441,6 +466,7 @@ _.Zones =
 					crit(35, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+				--	i(170178),	-- Alpha Fin
 				},
 			}),
 			n(152568, {	-- Urduu
@@ -464,7 +490,7 @@ _.Zones =
 				["questID"] = 55603,
 				["isDaily"] = true,
 				["coord"] = { 48.1, 24.3, 1355 },
-				["description"] = "Throw chum into Eel Infested Waters multiple times. He will spawn after ~8 throws",
+				["description"] = "Throw chum into Eel Infested Waters multiple times. He will spawn after ~8 throws.",
 				["g"] = {
 					i(169376),	-- Skittering Eel
 				},
