@@ -161,9 +161,6 @@ _.Achievements =
 					un(2, ach(12134, {		-- Dominant Gladiator: Legion Season 6
 						un(39, title(368)),		-- Dominant Gladiator
 					})),
-					ach(12962, {			--
-						title(30),				--
-					}),
 					un(2, ach(11015)),		-- Duelist: Legion Season 1
 					un(2, ach(11026)),		-- Duelist: Legion Season 2
 					un(2, ach(11041)),		-- Duelist: Legion Season 3
