@@ -57,12 +57,14 @@ _.Zones =
 								["qg"] = 41667,	-- 
 								["g"] = {
 									i(59639),	-- 
+									i(59638),	-- Necklace of the Furious Standard
 								},
 							}),
 							qh(25980, {	-- A Standard Day for Azrajar
 								["qg"] = 41670,	-- 
 								["g"] = {
 									i(59636),	-- 
+									i(59635),	-- Necklace of the Furious Standard
 								},
 							}),
 							q(26143, {	-- All that Rises
@@ -71,6 +73,7 @@ _.Zones =
 									i(59609),	-- 
 									i(59608),	-- 
 									i(59610),	-- 
+									i(59607),	-- Hallazeal's Demise
 								},
 							}),
 --[[
@@ -115,6 +118,7 @@ _.Zones =
 								["g"] = {
 									i(59601),	-- 
 									i(59603),	-- 
+									i(59602),	-- Signet of the Lookout
 								},
 							}),
 --[[
@@ -159,6 +163,8 @@ _.Zones =
 								["qg"] = 41600,	-- 
 								["g"] = {
 									i(59618),	-- 
+									i(59617),	-- Mentalist's Protective Bottle
+									i(59619),	-- Brain-Connector Chain
 								},
 							}),
 							qa(26080, {	-- One Last Favor
@@ -181,18 +187,24 @@ _.Zones =
 --							qa(26015),	-- Phosphora Hunting
 							n(41652, {	-- Twilight Champion
 								i(57102, {	-- Twilight Cage Key
-									qa(26144, {	-- Prisoners
-										i(59615),
-										i(59616),
-										i(59614),
-									}),
+									["description"] = "Only drops while on the Ascend No More! quest",
+									["groups"] = {
+										qa(26144, {	-- Prisoners
+											i(59615),
+											i(59616),
+											i(59614),
+										}),
+									},
 								}),
-								i(57118, {	-- Twilight Cage Key
-									qh(26149, {	-- Prisoners
-										i(59612),
-										i(59613),
-										i(59611),
-									}),
+								i(57118,  {	-- Twilight Cage Key
+									["description"] = "Only drops while on the Ascend No More! quest",
+									["groups"] = {
+										qh(26149, {	-- Prisoners
+											i(59612),
+											i(59613),
+											i(59611),
+										}),
+									},
 								}),
 							}),
 --[[
@@ -203,12 +215,14 @@ _.Zones =
 								["qg"] = 41666,	-- 
 								["g"] = {
 									i(59632),	-- 
+									i(59633),	-- Severed Visionary Tentacle
 								},
 							}),
 							qh(25988, {	-- Put It On
 								["qg"] = 41669,	-- 
 								["g"] = {
 									i(59629),	-- 
+									i(59630),	-- Severed Visionary Tentacle
 								},
 							}),
 --[[
@@ -230,6 +244,7 @@ _.Zones =
 							}),
 							qh(26126, {	-- The Perfect Fuel
 								["qg"] = 41669,	-- 
+								["description"] = "2 Remora, 3 Hammerhead",
 								["g"] = {
 									i(59643),	-- 
 									i(59642),	-- 
@@ -917,6 +932,7 @@ _.Zones =
 								["g"] = {
 									i(59746),	-- 
 									i(59744),	-- 
+									i(59745),	-- Dusky Pearl Ring
 								},
 							}),
 							qh(25992, {	-- Hopelessly Gearless
@@ -924,6 +940,7 @@ _.Zones =
 								["g"] = {
 									i(59743),	-- 
 									i(59741),	-- 
+									i(59742),	-- Dusky Pearl Ring
 								},
 							}),
 							{	-- Into Constant Earth
@@ -1011,6 +1028,7 @@ _.Zones =
 								["g"] = {
 									i(59663),	-- 
 									i(59662),	-- 
+									i(59664),	-- Pelagic Prism
 								},
 							}),
 							qh(25963, {	-- Swift Action
@@ -1018,6 +1036,7 @@ _.Zones =
 								["g"] = {
 									i(59660),	-- 
 									i(59659),	-- 
+									i(59661),	-- Pelagic Prism
 								},
 							}),
 							qh(25953, {	-- Swift Approach
@@ -1032,6 +1051,7 @@ _.Zones =
 								["g"] = {
 									i(59721),	-- 
 									i(59720),	-- 
+									i(59722),	-- Cowry-Shell Pendant
 								},
 							}),
 --[[
@@ -1058,15 +1078,18 @@ _.Zones =
 							qa(25626, {	-- Visions of the Past: Rise from the Deep
 								["qg"] = 39881,	-- 
 								["g"] = {
-									i(59671),	-- 
-									i(59670),	-- 
+									i(59671),	-- Pearlescent Spaulders
+									i(59670),	-- Volaran's Handguards
+									i(59672),	-- Quel'Dormir Signet Ring
+									i(59669),	-- Emerald Dragonet Choker
 								},
 							}),
 							qa(25760, {	-- Visions of the Past: Invasion of Vashj'ir
 								["qg"] = 39881,	-- 
 								["g"] = {
 									i(59709),	-- 
-									i(59708),	-- 
+									i(59708),	--
+									i(59710),	-- Wavespeaker's Focus
 								},
 							}),
 							qh(25957, {	-- Visions of the Past: Invasion of Vashj'ir
@@ -1074,6 +1097,7 @@ _.Zones =
 								["g"] = {
 									i(59706),	-- 
 									i(59705),	-- 
+									i(59707),	-- Wavespeaker's Focus
 								},
 							}),
 							qa(25755, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
@@ -1081,7 +1105,8 @@ _.Zones =
 								["g"] = {
 									i(59691),	-- 
 									i(59690),	-- 
-									i(59692),	-- 
+									i(59692),	--
+									i(59689),	-- Kvaldir Battle Standard
 								},
 							}),
 							qh(25966, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
@@ -1090,6 +1115,7 @@ _.Zones =
 									i(59687),	-- 
 									i(59686),	-- 
 									i(59688),	-- 
+									i(59685),	-- Kvaldir Battle Standard
 								},
 							}),
 --[[

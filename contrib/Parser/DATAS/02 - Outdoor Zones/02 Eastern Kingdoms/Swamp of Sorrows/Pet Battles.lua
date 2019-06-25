@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(51, {	-- Swamp of Sorrows
-			n(-25,  {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(648, {	-- Huge Toad
 					["crs"] = { 61368 },	-- Huge Toad
 				}),
@@ -28,8 +28,9 @@ _.Zones =
 					["crs"] = { 61367 },	-- Water Snake
 				}),
 				q(31913, {	-- Everessa
-					["isDaily"] = true,
 					["qg"] = 66518,	-- Everessa
+					["coord"] = { 76.8, 41.4, 51 },
+					["isDaily"] = true,
 				}),
 			}),
 		}),

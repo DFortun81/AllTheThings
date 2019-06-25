@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(117, {	-- Howling Fjord
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(646, {	-- Chicken
 					["crs"] = { 62664 },	-- Chicken
 				}),

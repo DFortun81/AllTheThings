@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 		cl(12, {	-- Mardum, The Shattered Abyss (Demon Hunter)
 			["lvl"] = 98,
 			["mapID"] = 720,	-- Mardum, The Shattered Abyss (Demon Hunter)
-			["groups"] = {
+			["g"] = {
 				n(-498, {	-- Twisting Nether Class Hall Ability
 					["questID"] = 44707,
 					["lvl"] = 105,
@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 						112388,	-- Thel'draz
 						112375,	-- Zaldrok
 					},
-					["groups"] = {
+					["g"] = {
 						i(139550, {	-- Bulwark of the Iron Warden [Hidden Artifact Appearance]
 							artifact(571),	-- Find Hidden Artifact Skin
 						}),
@@ -70,21 +70,21 @@ _.ExpansionFeatures =
 					q(44223),	-- Champion Armaments
 					q(42653, {	-- Champion: Akama
 						["qg"] = 108239,	-- Akama
-						["groups"] = {
+						["g"] = {
 							follower(718),	-- Champion: Akama
 						},
 					}),
 					q(43184, {	-- Champion: Allari the Souleater
 						["qg"] = 98648,	-- Allari the Souleater
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least  [This quest activates Champion: Allari the Souleater despite not being finished]
-						["groups"] = {
+						["g"] = {
 							follower(499),	-- Champion: Allari the Souleater
 						},
 					}),
 					q(42690, {	-- Champion: Altruis the Sufferer
 						["qg"] = 108571,	-- Altruis the Sufferer
 						["sourceQuests"] = { 42670 },	-- Rise, Champions [This quest activates Champion: Altruis the Sufferer despite not being finished]
-						["groups"] = {
+						["g"] = {
 							follower(498),	-- Champion: Altruis the Sufferer
 						},
 					}),
@@ -94,56 +94,56 @@ _.ExpansionFeatures =
 							42671,	-- Rise, Champions [This quest activates Champion: Asha Ravensong despite not being finished]
 							42670,	-- Rise, Champions [This quest activates Champion: Asha Ravensong despite not being finished]
 						}, 
-						["groups"] = {
+						["g"] = {
 							follower(722),	-- Champion: Asha Ravensong
 						},
 					}),
 					q(42777, {	-- Champion: Belath Dawnblade
 						["qg"] = 108782,	-- Belath Dawnblade
 						["sourceQuests"] = {  42776 },	-- Two Worthies [This quest activates Champion: Belath Dawnblade despite not being finished]
-						["groups"] = {
+						["g"] = {
 							follower(594),	-- Champion: Belath Dawnblade
 						},
 					}),
 					q(43185, {	-- Champion: Jace Darkweaver
 						["qg"] = 98646,	-- Jace Darkweaver
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least  [This quest activates Champion: Jace Darkweaver despite not being finished]
-						["groups"] = {
+						["g"] = {
 							follower(807),	-- Champion: Jace Darkweaver
 						},
 					}),
 					q(42695, {	-- Champion: Kayn Sunfury
 						["qg"] = 108572,	-- Kayn Sunfury
 						["sourceQuests"] = { 42671 },	-- Rise, Champions [This quest activates Champion: Kayn Sunfury despite not being finished]
-						["groups"] = {
+						["g"] = {
 							follower(595),	-- Champion: Kayn Sunfury
 						},
 					}),
 					q(42673, {	-- Champion: Kor'vas Bloodthorn
 						["qg"] = 103761,	-- Kor'vas Bloodthorn
 						["sourceQuests"] = { 42665 },	-- Into Our Ranks [This quest activates Champion: Kor'vas Bloodthorn despite not being finished]
-						["groups"] = {
+						["g"] = {
 							follower(721),	-- Champion: Kor'vas Bloodthorn
 						},
 					}),
 					q(45391, {	-- Champion: Lady S'theno
 						["qg"] = 117481,	-- Lady S'theno
 						["sourceQuests"] = { 46266 },	-- Return of the Slayer
-						["groups"] = {
+						["g"] = {
 							follower(990),	-- Champion: Lady S'theno
 						},
 					}),
 					q(42701, {	-- Champion: Matron Mother Malevolence
 						["qg"] = 98632,	-- Matron Mother Malevolence
 						["sourceQuests"] = { 42776 },	-- Two Worthies [This quest activates Champion: Matron Mother Malevolence despite not being finished]
-						["groups"] = {
+						["g"] = {
 							follower(720),	-- Champion: Matron Mother Malevolence
 						},
 					}),
 					q(42664, {	-- Champion: Shade of Akama
 						["qg"] = 108246,	-- Shade of Akama
 						["sourceQuests"] = { 42665 },	-- Into Our Ranks [This quest activates Champion: Shade of Akama despite not being finished]
-						["groups"] = {
+						["g"] = {
 							follower(719),	-- Champion: Shade of Akama
 						},
 					}),
@@ -275,7 +275,9 @@ _.ExpansionFeatures =
 					q(41863),	-- Vengeance Will Be Ours
 					q(44258),	-- Violet Hold
 					q(44259),	-- Violet Hold
-					qa(43557),	-- Violet Hold
+					q(43557, {	-- Violet Hold
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(44058),	-- Volpin the Elusive
 					q(45385),	-- We Must be Prepared!
 					q(45179),	-- Win the Crowd
@@ -284,7 +286,7 @@ _.ExpansionFeatures =
 					q(46334, {	-- To Fel and Back
 						["lvl"] = 110,
 						["classes"] = {12},
-						["groups"] = {
+						["g"] = {
 							{ ["mountID"] = 229417 },	-- Slayer's Felbroken Shrieker
 						},
 					}),
@@ -305,7 +307,7 @@ _.ExpansionFeatures =
 				}),
 				--[[
 				n(98613, {	-- Scouting Map
-					["groups"] = {
+					["g"] = {
 						-- Blank for Class Only Missions in the future
 					},
 					["achievementID"] = 11217,
@@ -363,13 +365,13 @@ _.ExpansionFeatures =
 					}),
 					n(112407, {	-- Falara Nightsong <Illidari Provisioner>
 						["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Black|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
-						["groups"] = {
+						["g"] = {
 							i(147537), 	-- A Tiny Set of Warglaives Toy
 							i(133670),  -- Slayer's Tabard
 							i(140560),	-- Warglaive of the Fel Hammer
 							{
 								["itemID"] = 139718,		-- Helm
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
@@ -378,7 +380,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139720,		-- Shoulders
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
@@ -387,7 +389,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139715,		-- Chestpiece
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
@@ -396,7 +398,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139722,		-- Bracers
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
@@ -405,7 +407,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139717,		-- Gloves
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
@@ -414,7 +416,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139721,		-- Belt
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
@@ -423,7 +425,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139719,		-- Leggings
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
@@ -432,7 +434,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139716,		-- Boots
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)

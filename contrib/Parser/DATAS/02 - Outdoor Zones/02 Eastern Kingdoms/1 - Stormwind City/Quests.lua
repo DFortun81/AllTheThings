@@ -108,7 +108,7 @@ _.Zones =
 									},
 								},
 							},
-							na(-252, {	-- Kul Tiran
+							n(-252, {	-- Kul Tiran
 								qa(54706, {	-- Made in Kul Tiras
 									["qg"] = 148798,	-- Lady Jaina Proudmoore
 									["coord"] = { 52.3, 13.5, 84 },	-- Stormwind
@@ -224,7 +224,7 @@ _.Zones =
 									},
 								}),
 							}),
-							na(-207, {	-- Lightforged Draenei
+							n(-207, {	-- Lightforged Draenei
 								qa(49698, {	-- The Lightforged
 									["qg"] = 126319,	-- High Exarch Turalyon
 								}),
@@ -240,7 +240,7 @@ _.Zones =
 									},
 								}),
 							}),
-							na(-208, {	-- Void Elves
+							n(-208, {	-- Void Elves
 								qa(49787, {	-- The Ghostlands
 									["qg"] = 126321,	-- Alleria Windrunner
 									["g"] = {
@@ -262,10 +262,12 @@ _.Zones =
 						},
 					}),
 					q(28393, {	-- A Dangerous Alliance
-					--	["sourceQuests"] = {  },	-- 
-						["classes"] = { 1 },	-- Warrior
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 914,	-- Ander Germaine
+						["coord"] = {79.4, 69.0, 84 },
+						["sourceQuest"] = 28258,	-- Meet with Ander Germaine
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 50,
 						["g"] = {
 							i(65618),	-- Faceguard of the Crown
 							i(65639),	-- Headguard of the Crown
@@ -279,10 +281,12 @@ _.Zones =
 					}),
 --					qa(26190),	-- A Fisherman's Feast 
 					q(27337, {	-- A Fitting Weapon
-					--	["sourceQuests"] = {  },	-- 
-						["classes"] = { 1 },	-- Warrior
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 914,	-- Ander Germaine
+						["coord"] = {79.4, 69.0, 84 },
+						["sourceQuest"] = 27225,	-- A Summons from Ander Germaine
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,	
 						["g"] = {
 							i(65492),	-- Broadsword of the Crown
 							i(65493),	-- Greatsword of the Crown
@@ -563,9 +567,7 @@ _.Zones =
 						["classes"] = { 11 },	-- Druid
 						["lvl"] = 50,
 					}),
---[[				qa(11924),	-- More Torch Catching
-					qa(11921),	-- More Torch Tossing
-					qa(8860),	-- New Year Celebrations!
+--[[				qa(8860),	-- New Year Celebrations!
 					qa(25105),	-- Nibbler! No!
 					qa(25155),	-- Ogrezonians in the Mood
 					qa(31592),	-- On The Mend

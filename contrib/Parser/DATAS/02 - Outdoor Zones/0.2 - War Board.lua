@@ -47,6 +47,7 @@ _.Zones =
 			q(28580),	-- Warchief's Command: Badlands!
 			q(28711),	-- Warchief's Command: Borean Tundra!
 			q(39198),	-- Warchief's Command: Blade's Edge Mountains!
+			q(28671),	-- Warchief's Command: Blasted Lands!
 			q(28667),	-- Warchief's Command: Burning Steppes!
 			q(27722),	-- Warchief's Command: Deepholm!
 			q(28548),	-- Warchief's Command: Desolace!
@@ -105,6 +106,7 @@ _.Zones =
 			q(28579),	-- Hero's Call: Badlands!
 			q(28673),	-- Hero's Call: Blasted Lands!
 			q(39199),	-- Hero's Call: Blade's Edge Mountains!
+			q(28559),	-- Hero's Call: Bloodmyst Isle
 			q(28709),	-- Hero's Call: Borean Tundra!
 			q(28666),	-- Hero's Call: Burning Steppes!
 			q(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
@@ -131,6 +133,11 @@ _.Zones =
 			q(28675),	-- Hero's Call: Swamp of Sorrows!
 			q(28507),	-- Hero's Call: Tanaris! (breadcrumb quest for 25048, not available if 27446 is completed) (max level 48)
 			q(39188),	-- Hero's Call: Terokkar Forest!
+			q(28702, {	-- Hero's Call: The Cape of Stranglethorn!
+				["isBreadcrumb"] = true,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 30,
+			}),
 			q(26542),	-- Hero's Call: The Hinterlands!
 			q(28503),	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
 			q(28716),	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)

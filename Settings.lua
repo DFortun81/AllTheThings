@@ -77,7 +77,7 @@ local GeneralSettingsBase = {
 		["AccountWide:Illusions"] = true,
 		-- ["AccountWide:Mounts"] = true,
 		["AccountWide:MusicRolls"] = true,
-		-- ["AccountWide:Quests"] = false,
+		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
 		["AccountWide:SelfieFilters"] = true,
@@ -1073,9 +1073,19 @@ QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
-	self:SetChecked(false);
-	self:Disable();
-	self:SetAlpha(0.2);
+	self:SetChecked(settings:Get("AccountWide:Quests"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Quests", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
 end);
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
 
@@ -2540,6 +2550,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["factionID"] = "Faction ID",
 	["filterID"] = "Filter ID",
 	["fileID"] = "File ID",
+	["flightPathID"] = "Flight Path ID",
 	["illusionID"] = "Illusion ID",
 	["instanceID"] = "Instance ID",
 	["itemID"] = "Item ID",
@@ -2557,7 +2568,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["visualID"] = "Visual ID",
 };
 local last = nil;
-for _,id in pairs({"achievementID","artifactID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","illusionID","instanceID"}) do
+for _,id in pairs({"achievementID","artifactID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","flightPathID","illusionID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2574,7 +2585,7 @@ for _,id in pairs({"achievementID","artifactID","bonusID","creatureID","creature
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemID","itemString", "mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
+for _,id in pairs({"instanceID","itemID","itemString", "mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));

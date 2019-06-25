@@ -6,7 +6,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 	holiday(235462, {	-- Hallow's End
 		["u"] = 26,				-- Hallow's End Filter
 		["g"] = {
-			n(-25, {	-- Pet Battles
+			filter(101, { 	-- Pet Battle
 				["groups"] = {
 					i(128664, {	-- Creepy Crawlers
 						["groups"] = {

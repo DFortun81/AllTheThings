@@ -446,14 +446,19 @@ _.Zones =
 							["qg"] = 128903,	-- Carentan
 							["sourceQuests"] = { 49407 },	-- Trixie Business [Alliance Only]
 						})),
-						a(q(49405, {	-- Defenders of Daelin's Gate [Alliance Only]
-							["qg"] = 128927,	-- Taelia
+						q(49405, {	-- Defenders of Daelin's Gate [Alliance Only]
 							["sourceQuests"] = { 49404 },	-- Fairwind's "Friends" [Alliance Only]
 							["groups"] = {
 								i(155040),	-- Freebooter Shoulderpads
 							},
 							["isBreadcrumb"] = true,
-						})),
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 128927,	-- Taelia
+							["g"] = {
+								i(160859),	-- Freebooter Hood
+								i(155040),	-- Freebooter Shoulderpads
+							},
+						}),
 						a(q(49239, {	-- Dress to Impress [Alliance Only]
 							["qg"] = 126158,	-- Flynn Fairwind
 							["sourceQuests"] = { 48773, 48558 },	-- Papers, Please / The Irontide Crew [Alliance Only]

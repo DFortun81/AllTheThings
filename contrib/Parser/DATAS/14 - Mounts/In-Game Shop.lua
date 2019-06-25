@@ -16,6 +16,7 @@ _.Mounts =
 		un(35, i(122469)),	-- Mystic Runesaber
 		un(35, i(156564)),	-- Shu-zen, the Divine Sentinel
 		un(35, i(92724)),	-- Swift Windsteed
+		un(35, i(166775)),	-- Vulpine Familiar
 		un(35, i(112326)),	-- Warforged Nightmare
 		un(35, i(69846)),	-- Winged Guardian
 	}),

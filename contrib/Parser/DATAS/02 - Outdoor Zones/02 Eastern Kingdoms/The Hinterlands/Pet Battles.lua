@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(26, {	-- The Hinterlands
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(449, {	-- Brown Marmot
 					["crs"] = { 61752 },	-- Brown Marmot
 				}),

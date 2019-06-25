@@ -19,7 +19,8 @@ _.Zones =
 							["qg"] = 25580,	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
 							["description"] = "One of five random fishing daily quests. The other four do not drop minipets.",
-							["isDaily"] = true,	
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
 							["groups"] = {
 								i(35348,  { -- Bag of Fishing Treasures
 									i(35350),	-- Chuck's Bucket
@@ -34,7 +35,8 @@ _.Zones =
 						q(11669, {	-- Felblood Fillet
 							["qg"] = 25580,	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
-							["isDaily"] = true,	
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
 							["groups"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
@@ -44,7 +46,8 @@ _.Zones =
 						q(11668, {	-- Shrimpin' Ain't Easy
 							["qg"] = 25580,	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
-							["isDaily"] = true,	
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
 							["groups"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
@@ -54,7 +57,8 @@ _.Zones =
 						q(11667, {	-- The One That Got Away
 							["qg"] = 25580,	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
-							["isDaily"] = true,	
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
 							["groups"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
@@ -64,7 +68,8 @@ _.Zones =
 						q(11666, {	-- Bait Bandits
 							["qg"] = 25580,	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
-							["isDaily"] = true,	
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
 							["groups"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat

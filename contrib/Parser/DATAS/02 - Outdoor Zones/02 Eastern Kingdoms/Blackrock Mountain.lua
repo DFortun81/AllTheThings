@@ -11,11 +11,16 @@ _.Zones =
 			["maps"] = {
 				33,	-- Blackrock Spire
 				34,	-- Blackrock Caverns
-			--	35,	-- Blackrock Depths
+				35,	-- Blackrock Depths
 			},
 			["lvl"] = 40,
 			["g"] = {
 				n(-17, {	-- Quests
+					q(7848, {	-- Attunement to the Core
+						["qg"] = 14387,	-- Lothos Riftwalker
+						["coord"] = { 54.2, 83.3, 35 },
+						["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
+					}),
 					q(8961, {	-- Three Kings of Flame
 						["qg"] = 16033,	-- Bodley
 						["coord"] = { 20.6, 29.1, 35 },

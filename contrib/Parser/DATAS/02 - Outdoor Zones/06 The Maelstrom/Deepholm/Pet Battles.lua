@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(948, { 	-- The Maelstrom
 		m(207, {	-- Deepholm
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(838, {	-- Amethyst Shale Hatchling
 					["crs"] = { 62182 },	-- Amethyst Shale Hatchling
 				}),

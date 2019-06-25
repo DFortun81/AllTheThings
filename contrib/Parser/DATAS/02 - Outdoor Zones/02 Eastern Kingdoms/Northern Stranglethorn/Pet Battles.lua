@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(50, {	-- Northern Stranglethorn
-			n(-25,  {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(406, {	-- Beetle
 					["crs"] = { 61319 },	-- Beetle
 				}),

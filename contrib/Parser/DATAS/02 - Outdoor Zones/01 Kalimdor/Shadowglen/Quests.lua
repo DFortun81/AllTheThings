@@ -7,25 +7,22 @@ _.Zones =
 		m(57, {	-- Teldrassil
 			m(460, {	-- Shadowglen
 				n(-17, {	-- Quests
-					{	-- A Favor for Melithar
-						["questID"] = 28734,
+					q(28734, {	-- A Favor for Melithar
 						["qg"] = 2079,	-- Ilthalaine
 						["coord"] = { 46.3, 73.5, 460 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-					},
-					{	-- Calligraphed Sigil
-						["questID"] = 31168,
+					}),
+					q(31168, {	-- Calligraphed Sigil
 						["u"] = 40,
 						["qg"] = 2077,	-- Melithar Staghelm
+						["classes"] = { 10 },	-- Monk
 						["races"] = {
 							4,	-- Night Elf
 							22,	-- Worgen
 						},
-						["classes"] = { 10 },	-- Monk
-					},
-					{	-- Demonic Thieves
-						["questID"] = 28715,
+					}),
+					q(28715, {	-- Demonic Thieves
 						["qg"] = 2077,	-- Melithar Staghelm
 						["coord"] = { 45.9, 72.8, 460 },
 						["races"] = ALLIANCE_ONLY,
@@ -33,60 +30,52 @@ _.Zones =
 							28734,	-- A Favor for Melithar
 							28713,	-- The Balance of Nature
 						},
-						["groups"] = {
+						["g"] = {
 							i(46753),	-- Melithar's Supply Bag
 						},
-					},
-					{	-- Dolanaar Delivery
-						["questID"] = 2159,
+					}),
+					q(2159,  {	-- Dolanaar Delivery
 						["qg"] = 6780,	-- Porthannius
 						["coord"] = { 54.5, 84.7, 460 },
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
-					},
-					{	-- Encrypted Sigil
-						["questID"] = 3118,
+					}),
+					q(3118,  {	-- Encrypted Sigil
 						["u"] = 40,
 						["qg"] = 2077,	-- Melithar Staghelm
 						["races"] = { 4 },	-- Night Elf
 						["classes"] = { 4 },	-- Rogue
-					},
-					{	-- Fel Moss Corruption
-						["questID"] = 28714,
+					}),
+					q(28714, {	-- Fel Moss Corruption
 						["qg"] = 2079,	-- Ilthalaine
 						["coord"] = { 45.6, 74.5, 460 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 28713,	-- The Balance of Nature
-					},
-					{	-- Hallowed Sigil
-						["questID"] = 3119,
+					}),
+					q(3119,  {	-- Hallowed Sigil
 						["u"] = 40,
 						["qg"] = 2077,	-- Melithar Staghelm
 						["races"] = { 4 },	-- Night Elf
 						["classes"] = { 5 },	-- Priest
-					},
-					{	-- Iverron's Antidote
-						["questID"] = 28724,
+					}),
+					q(28724, {	-- Iverron's Antidote
 						["qg"] = 49479,	-- Dentaria Silverglade
 						["coord"] = { 46.2, 73.5, 460 },
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 						["sourceQuest"] = 28723,	-- Priestess of the Moon
-					},
-					{	-- Learning the Word
-						["questID"] = 26949,
+					}),
+					q(26949, {	-- Learning the Word
 						["u"] = 40,
 						["qg"] = 3595,	-- Shanda
 						["races"] = { 4 },	-- Night Elf
 						["classes"] = { 5 },	-- Priest
-					},
-					{	-- Precious Waters
-						["questID"] = 28730,
+					}),
+					q(28730, {	-- Precious Waters
 						["qg"] = 49479,	-- Dentaria Silverglade
 						["coord"] = { 42.5, 50.4, 460 },
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 						["sourceQuest"] = 28729,	-- Teldrassil: Crown onf Azeroth
-					},
-					{	-- Priestess of the Moon
-						["questID"] = 28723,
+					}),
+					q(28723, {	-- Priestess of the Moon
 						["qg"] = 2079,	-- Ilthalaine
 						["coord"] = { 46.2, 73.5, 460 },
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
@@ -94,68 +83,60 @@ _.Zones =
 							28714,	-- Fel Moss Corruption
 							28715,	-- Demonic Thieves
 						},
-					},
-					{	-- Signs of Things to Come
-						["questID"] = 28728,
+					}),
+					q(28728, {	-- Signs of Things to Come
 						["qg"] = 49480,	-- Tarindrella
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 						["coord"] = { 44.8, 29.0, 460 },
 						["sourceQuest"] = 28727,	-- Vile Touch
-					},
-					{	-- Simple Sigil
-						["questID"] = 3116,
+					}),
+					q(3116,  {	-- Simple Sigil
 						["u"] = 40,
 						["qg"] = 2079,	-- Ilthalaine
+						["classes"] = { 1 },	-- Warrior
 						["races"] = {
 							4,	-- Night Elf
 							22,	-- Worgen
 						},
-						["classes"] = { 1 },	-- Warrior
-					},
-					{	-- Teldrassil: Crown of Azeroth
-						["questID"] = 28729,
+					}),
+					q(28729, {	-- Teldrassil: Crown of Azeroth
 						["qg"] = 49479,	-- Dentaria Silverglade
 						["coord"] = { 42.5, 50.4, 460 },
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 						["sourceQuest"] = 28728,	-- Signs of Things to Come
-					},
-					{	-- Teldrassil: Passing Awareness
-						["questID"] = 28731,
+					}),
+					q(28731, {	-- Teldrassil: Passing Awareness
 						["qg"] = 3514,	-- Tenaron Stormgrip
+						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
+						["sourceQuest"] = 28730,	-- Precious Waters
+						["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
 						["coords"] = {
 							{ 47.1, 55.9, 460 },
 							{ 41.4, 45.8, 57 },
 						},
-						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
-						["sourceQuest"] = 28730,	-- Precious Waters
-						["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
-					},
-					{	-- The Balance of Nature
-						["questID"] = 28713,
+					}),
+					q(28713, {	-- The Balance of Nature
 						["qg"] = 2079,	-- Ilthalaine
 						["coord"] = { 45.6, 74.5, 460 },
 						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- The Woodland Protector
-						["questID"] = 28725,
+					}),
+					q(28725, {	-- The Woodland Protector
 						["qg"] = 49479,	-- Dentaria Silverglade
 						["coord"] = { 42.4, 50.4, 460 },
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 						["sourceQuest"] = 28724,	-- Iverron's Antidote
-					},
-					{	-- Vile Touch
-						["questID"] = 28727,
+					}),
+					q(28727, {	-- Vile Touch
 						["qg"] = 49480,	-- Tarindrella
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 						["sourceQuest"] = 28726,	-- Webwood Corruption
-					},
-					{	-- Webwood Corruption
-						["questID"] = 28726,
+					}),
+					q(28726, {	-- Webwood Corruption
 						["qg"] = 49480,	-- Tarindrella
 						["coord"] = { 45.8, 91.0, 460 },
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 						["sourceQuest"] = 28725,	-- The Woodland Protector
-					},
+					}),
 				}),
 			}),
 		}),

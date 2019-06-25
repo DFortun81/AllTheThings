@@ -5,13 +5,10 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(468, {	-- Ammen Vale
-			n(-25, {	-- Pet Battle
-				["f"] = 101,	-- Battle Pets
-				["g"] = {
-					p(464, {	-- Grey Moth
-						["crs"] = { 62050 },	-- Grey Moth
-					}),
-				},
+			filter(101, {	-- Pet Battle
+				p(464, {	-- Grey Moth
+					["crs"] = { 62050 },	-- Grey Moth
+				}),
 			}),
 		}),
 	}),

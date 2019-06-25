@@ -119,30 +119,52 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(-40, {	-- Legacy
 				n(-17, {	-- Quests (Legacy)
-					un(40, qa(7070, {	-- Shadowshard Fragments
-						un(2, i(17773)),	-- Prodigious Shadowshard Pendant
-						un(2, i(17772)),	-- Zealous Shadowshard Pendant
-					})),
-					un(40, qh(7068, {	-- Shadowshard Fragments
-						un(2, i(17773)),	-- Prodigious Shadowshard Pendant
-						un(2, i(17772)),	-- Zealous Shadowshard Pendant
-					})),
-					un(40, q(7067, {	-- The Pariah's Instructions
-						un(2, i(17774)),	-- Mark of the Chosen
-					})),
-					un(40, q(7046, {	-- The Scepter of Celebras
-						un(2, i(17191)),	-- Scepter of Celebras
-					})),
-					un(40, qh(7029, {	-- Vyletongue Corruption
-						un(2, i(17770)), 	-- Branchclaw Gauntlets
-						un(2, i(17778)),	-- Sagebrush Girdle
-						un(2, i(17768)),	-- Woodseed Hoop
-					})),
-					un(40, qa(7041, {	-- Vyletongue Corruption
-						un(2, i(17770)), 	-- Branchclaw Gauntlets
-						un(2, i(17778)),	-- Sagebrush Girdle
-						un(2, i(17768)),	-- Woodseed Hoop
-					})),
+					q(7070, {	-- Shadowshard Fragments
+						["u"] = 40,
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							un(2, i(17773)),	-- Prodigious Shadowshard Pendant
+							un(2, i(17772)),	-- Zealous Shadowshard Pendant
+						},
+					}),
+					q(7068, {	-- Shadowshard Fragments
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							un(2, i(17773)),	-- Prodigious Shadowshard Pendant
+							un(2, i(17772)),	-- Zealous Shadowshard Pendant
+						},
+					}),
+					q(7067, {	-- The Pariah's Instructions
+						["u"] = 40,
+						["g"] = {
+							un(2, i(17774)),	-- Mark of the Chosen
+						},
+					}),
+					q(7046, {	-- The Scepter of Celebras
+						["u"] = 40,
+						["g"] = {
+							un(2, i(17191)),	-- Scepter of Celebras
+						},
+					}),
+					q(7029, {	-- Vyletongue Corruption
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							un(2, i(17770)), 	-- Branchclaw Gauntlets
+							un(2, i(17778)),	-- Sagebrush Girdle
+							un(2, i(17768)),	-- Woodseed Hoop
+						},
+					}),
+					q(7041, {	-- Vyletongue Corruption
+						["u"] = 40,
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							un(2, i(17770)), 	-- Branchclaw Gauntlets
+							un(2, i(17778)),	-- Sagebrush Girdle
+							un(2, i(17768)),	-- Woodseed Hoop
+						},
+					}),
 				}),
 			}),
 		},

@@ -707,7 +707,7 @@ local function GetCompletionIcon(state)
 	return L[state and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"];
 end
 local function GetCompletionText(state)
-	return L[state and "COMPLETE" or "INCOMPLETE"];
+	return L[(state == 2 and "COMPLETE_OTHER") or (state == 1 and "COMPLETE") or "INCOMPLETE"];
 end
 local function GetProgressTextForRow(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
@@ -980,6 +980,10 @@ local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	DirtyQuests[key] = true;
 	rawset(t, key, value);
+	if value then
+		SetDataSubMember("CollectedQuests", key, 1);
+		SetTempDataSubMember("CollectedQuests", key, 1);
+	end
 	
 	if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", key);
@@ -995,6 +999,20 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 end});
 local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
+end
+local IsQuestFlaggedCompletedForObject = function(t)
+	-- If the quest or altQuestID is completed, then return completed.
+	if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
+		return 1;
+	end
+	if not t.repeatable and app.Settings:Get("AccountWide:Quests") then
+		if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
+			return 2;
+		end
+		if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
+			return 2;
+		end
+	end
 end
 
 -- Quest Name Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
@@ -3142,7 +3160,7 @@ app.AchievementFilter = 4;
 app.BaseAchievement = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -3174,12 +3192,11 @@ end
 app.BaseAchievementCriteria = { 
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID or (t.parent and (t.parent.achievementID or (t.parent.parent and t.parent.parent.achievementID)));
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
 			end
-			return t.parent and (t.parent.achievementID or (t.parent.parent and t.parent.parent.achievementID));
 		elseif key == "key" then
 			return "criteriaID";
 		elseif key == "text" then
@@ -3626,9 +3643,7 @@ app.BaseEncounter = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
-				return true;
-			end
+			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "index" then
 			return 1;
 		else
@@ -3677,7 +3692,7 @@ app.BaseFaction = {
 	-- friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionID)
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -3780,20 +3795,22 @@ end)();
 		862,	-- Zuldazar (All of Zuldazar)
 		896,	-- Drustvar (All of Kul Tiras)
 	};
-	local cachedNodeData = {};
 	app.CacheFlightPathData = function()
 		for i,mapID in ipairs(arrOfNodes) do
 			local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
 			if allNodeData then
 				for j,nodeData in ipairs(allNodeData) do
-					local node = cachedNodeData[nodeData.nodeID];
-					if not node then
-						node = {};
-						cachedNodeData[nodeData.nodeID] = node;
+					if nodeData.name then 
+						local node = app.FlightPathDB[nodeData.nodeID];
+						if node then
+							node.name = nodeData.name;
+						else
+							node = {};
+							node.name = nodeData.name .. " *NEW*";
+							node.faction = nodeData.faction;
+							app.FlightPathDB[nodeData.nodeID] = node;
+						end
 					end
-					if nodeData.faction then node["faction"] = nodeData.faction; end
-					if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
-					if nodeData.name then node["text"] = nodeData.name; end
 				end
 			end
 		end
@@ -3803,18 +3820,19 @@ end)();
 		if allNodeData then
 			local knownNodeIDs = {};
 			for j,nodeData in ipairs(allNodeData) do
-				local node = cachedNodeData[nodeData.nodeID];
-				if not node then
-					node = {};
-					cachedNodeData[nodeData.nodeID] = node;
-				end
-				if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
-				if nodeData.name then node["text"] = nodeData.name; end
 				if nodeData.state and nodeData.state < 2 then
 					table.insert(knownNodeIDs, nodeData.nodeID);
 				end
+				if nodeData.name then 
+					local node = app.FlightPathDB[nodeData.nodeID];
+					if not node then
+						node = {};
+						node.name = nodeData.name .. " *NEW*";
+						node.faction = nodeData.faction;
+						app.FlightPathDB[nodeData.nodeID] = node;
+					end
+				end
 			end
-			
 			if app.AccountWideFlightPaths then
 				for i,nodeID in ipairs(knownNodeIDs) do
 					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
@@ -3852,23 +3870,30 @@ end)();
 					end
 				end
 			elseif key == "text" then
-				local info = t.info;
-				return info and info.text or "Visit the Flight Master to cache.";
+				return t.info.name or "Visit the Flight Master to cache.";
+			elseif key == "u" then
+				return t.info.u;
+			elseif key == "mapID" then
+				return t.info.mapID;
 			elseif key == "nmr" then
 				local info = t.info;
-				if info and info.faction then
-					return info.faction == app.FactionID;
+				if info and info.faction and info.faction > 0 then
+					return info.faction ~= app.FactionID;
 				end
 			elseif key == "info" then
-				return cachedNodeData[t.flightPathID];
+				return app.FlightPathDB[t.flightPathID] or {};
 			elseif key == "description" then
-				return "Flight paths are cached when you look at the flight master on each continent. We refresh the collection status when you look at the Flight Map. (blizzard limitation, not by choice... sorry!)\n\nHave fun!\n - Crieve";
+				return "Flight paths are cached when you talk to the flight master on each continent.";
 			elseif key == "icon" then
 				local info = t.info;
-				if info and info.faction and info.faction == 2 then
-					return "Interface/ICONS/Ability_Rogue_Sprint_Blue";
+				if info and info.faction and info.faction > 0 then
+					if info.faction == Enum.FlightPathFaction.Horde then
+						return "Interface\\Addons\\AllTheThings\\assets\\fp_horde";
+					else
+						return "Interface\\Addons\\AllTheThings\\assets\\fp_alliance";
+					end
 				end
-				return "Interface/ICONS/Ability_Rogue_Sprint";
+				return "Interface\\Addons\\AllTheThings\\assets\\fp_neutral";
 			else
 				-- Something that isn't dynamic.
 				return table[key];
@@ -4027,7 +4052,7 @@ app.BaseGarrisonTalent = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "saved" then
-			if t.questID then return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID); end
+			if t.questID then return IsQuestFlaggedCompleted(t.questID); end
 			local info = t.info;
 			if info.researched then return info.researched; end
 		elseif key == "icon" then
@@ -4487,7 +4512,7 @@ end
 app.BaseGearSetHeader = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -4513,7 +4538,7 @@ end
 app.BaseGearSetSubHeader = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -4657,9 +4682,9 @@ app.BaseItem = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "modID" then
 			return 1;
 		elseif key == "name" then
@@ -4779,7 +4804,7 @@ end
 app.BaseMap = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -4822,7 +4847,7 @@ app.BaseMount = {
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
 			end
-			if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID)) then
+			if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
@@ -4952,7 +4977,7 @@ end
 app.BaseNPC = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -4983,17 +5008,10 @@ app.BaseNPC = {
 			return t.questID;
 		elseif key == "collectible" then
 			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
-		elseif key == "saved" then
-			if t.questID and IsQuestFlaggedCompleted(t.questID) then
-				return 1;
-			end
-			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
-				return 1;
-			end
-		elseif key == "collected" then
-			return t.saved;
+		elseif key == "saved" or key == "collected" then
+			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5018,12 +5036,10 @@ app.BaseObject = {
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
 			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests);
-		elseif key == "collected" then
-			return t.saved;
 		elseif key == "trackable" then
 			return t.questID;
-		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+		elseif key == "saved" or key == "collected" then
+			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5142,7 +5158,7 @@ app.BaseQuest = {
 			end
 			return questName;
 		elseif key == "questName" then
-			local questID = t.altQuestID and app.FactionID == 2 and t.altQuestID or t.questID;
+			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
 			local questName = QuestTitleFromID[questID];
 			if questName then
 				t.retries = nil;
@@ -5155,24 +5171,17 @@ app.BaseQuest = {
 				t.retries = (t.retries or 0) + 1;
 			end
 		elseif key == "link" then
-			return "quest:" .. (t.altQuestID and app.FactionID == 2 and t.altQuestID or t.questID);
+			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
 		elseif key == "icon" then
 			return "Interface\\Icons\\Achievement_Quests_Completed_08";
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
 			return not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
-		elseif key == "collected" then
-			return t.saved;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
-		elseif key == "saved" then
-			if IsQuestFlaggedCompleted(t.questID) then
-				return 1;
-			end
-			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
-				return 1;
-			end
+			return t.isDaily or t.isWeekly or t.isYearly;
+		elseif key == "saved" or key == "collected" then
+			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5282,9 +5291,7 @@ app.BaseSelfieFilter = {
 			return true;
 		elseif key == "collectible" then
 			return app.CollectibleSelfieFilters;
-		elseif key == "collected" then
-			return t.saved;
-		elseif key == "saved" then
+		elseif key == "saved" or key == "collected" then
 			if app.AccountWideSelfieFilters then
 				if GetDataSubMember("CollectedSelfieFilters", t.questID) then
 					return 1;
@@ -5707,7 +5714,7 @@ app.BaseVignette = {
 			end
 			return t.questName;
 		elseif key == "questName" then
-			local questID = t.altQuestID and app.FactionID == 2 and t.altQuestID or t.questID;
+			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
 			local questName = QuestTitleFromID[questID];
 			if questName then
 				t.retries = nil;
@@ -5720,7 +5727,7 @@ app.BaseVignette = {
 				t.retries = (t.retries or 0) + 1;
 			end
 		elseif key == "link" then
-			return "quest:" .. (t.altQuestID and app.FactionID == 2 and t.altQuestID or t.questID);
+			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 		elseif key == "collectible" then
@@ -5728,9 +5735,9 @@ app.BaseVignette = {
 		elseif key == "collected" then
 			return t.collectible and t.saved;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -7006,7 +7013,7 @@ local function CreateMiniListForGroup(group)
 								if sq and app.GroupFilter(sq) and not sq.isBreadcrumb then
 									if sq.altQuestID then
 										-- Alt Quest IDs are always Horde.
-										if app.FactionID == 2 then
+										if app.FactionID == Enum.FlightPathFaction.Horde then
 											if sq.altQuestID == sourceQuestID then
 												found = sq;
 												break;
@@ -7748,9 +7755,6 @@ local function RowOnEnter(self)
 		end
 		if reference.encounterID then
 			if app.Settings:GetTooltipSetting("encounterID") then GameTooltip:AddDoubleLine(L["ENCOUNTER_ID"], tostring(reference.encounterID)); end
-		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
-		--elseif reference.creatureID or (reference.npcID and reference.npcID > 0) then
-		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.minReputation and not reference.maxReputation then
@@ -7789,7 +7793,7 @@ local function RowOnEnter(self)
 		if reference.setID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setID)); end
 		if reference.setHeaderID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setHeaderID)); end
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setSubHeaderID)); end
-		
+		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
 			local j = 0;
@@ -7891,11 +7895,12 @@ local function RowOnEnter(self)
 				end
 				GameTooltip:AddDoubleLine("Races", str);
 			elseif reference.r and reference.r > 0 then
-				GameTooltip:AddDoubleLine("Races", (reference.r == 1 and "Alliance Only") or (reference.r == 2 and "Horde Only") or "Unknown");
+				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
 			end
 		end
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
 		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
+		if reference.isYearly then GameTooltip:AddLine("This can be completed yearly."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			GameTooltipIcon:SetSize(72,72);
 			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
@@ -7942,16 +7947,18 @@ local function RowOnEnter(self)
 		if reference.sourceQuests and not reference.saved then
 			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
-				if sourceQuestID > 0 and not IsQuestFlaggedCompleted(sourceQuestID) then
+				if sourceQuestID > 0 then
 					local sqs = SearchForField("questID", sourceQuestID);
 					if sqs and #sqs > 0 then
 						local sq = sqs[1];
-						if sq and sq.isBreadcrumb then
-							table.insert(bc, sqs[1]);
-						else
-							table.insert(prereqs, sqs[1]);
+						if IsQuestFlaggedCompletedForObject(sq) ~= 1 then
+							if sq.isBreadcrumb then
+								table.insert(bc, sqs[1]);
+							else
+								table.insert(prereqs, sqs[1]);
+							end
 						end
-					else
+					elseif not IsQuestFlaggedCompleted(sourceQuestID) then
 						table.insert(prereqs, {questID = sourceQuestID});
 					end
 				end
@@ -8399,7 +8406,7 @@ function app:GetDataCache()
 		
 		-- Mounts
 		if app.Categories.Mounts then
-			db = app.CreateAchievement(app.FactionID == 2 and 12934 or 12933, app.Categories.Mounts);
+			db = app.CreateAchievement(app.FactionID == Enum.FlightPathFaction.Horde and 12934 or 12933, app.Categories.Mounts);
 			db.expanded = false;
 			db.text = MOUNTS;
 			table.insert(g, db);
@@ -8431,12 +8438,6 @@ function app:GetDataCache()
 			db.text = TOY_BOX; -- Toy Box
 			table.insert(g, db);
 		end
-		
-		-- Yourself.
-		table.insert(g, app.CreateUnit("player", {
-			["collected"] = 1,
-			["description"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
-		}));
 		
 		--[[
 		-- Never Implemented
@@ -8516,7 +8517,7 @@ function app:GetDataCache()
 		
 		-- Mounts (Dynamic)
 		--[[
-		db = app.CreateAchievement(app.FactionID == 2 and 10355 or 10356, GetTempDataMember("MOUNT_CACHE"));
+		db = app.CreateAchievement(app.FactionID == Enum.FlightPathFaction.Horde and 10355 or 10356, GetTempDataMember("MOUNT_CACHE"));
 		db.expanded = false;
 		db.text = "Mounts (Dynamic)";
 		table.insert(g, db);
@@ -8575,6 +8576,37 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
+		--]]
+		
+		db = {};
+		db.g = {};
+		db.fps = {};
+		app.CacheFlightPathData();
+		db.OnUpdate = function(self)
+			local cache = self.g;
+			table.wipe(cache);
+			-- Uncomment to harvest flight path data.
+			-- SetDataMember("FlightPathData", AllTheThings.FlightPathDB);
+			for i,fp in pairs(AllTheThings.FlightPathDB) do
+				local id = tonumber(i);
+				local fp = self.fps[id];
+				if not fp then
+					fp = app.CreateFlightPath(id);
+					self.fps[id] = fp;
+				end
+				tinsert(cache, fp);
+			end
+			table.sort(cache, function(a, b)
+				return a.text < b.text;
+			end);
+			self.g = cache;
+		end;
+		db.OnUpdate(db);
+		db.text = "Flight Paths";
+		db.icon = "Interface\\Minimap\\Tracking\\Flightmaster";
+		table.insert(g, db);
+		
+		--[[
 		
 		-- Gear Sets
 		function SortGearSetInformation(a,b)
@@ -8677,39 +8709,11 @@ function app:GetDataCache()
 		end)());
 		--]]
 		
-		-- Raw Source Data (Oh god)
-		--[[
-		db = {};
-		db.expanded = false;
-		db.g = (function()
-			local cache = GetTempDataMember("RAW_DATA_CACHE");
-			if not cache then
-				cache = {};
-				SetTempDataMember("RAW_DATA_CACHE", cache);
-				local sCache = fieldCache["s"];
-				for s=1,100000 do
-					if not sCache[s] then
-						local t = app.CreateGearSource(s);
-						if t.info then
-							tinsert(cache, t);
-						end
-					end
-				end
-			end
-			return cache;
-		end)();
-		db.text = "Raw Source Data (Dynamic)";
-		table.insert(g, db);
-		--]]
-		--[[
-		-- SUPER DUPER SECRET
-		if app.Categories.NaughtySecrets then
-			db = app.CreateAchievement(12478, app.Categories.NaughtySecrets);
-			db.expanded = false;
-			db.text = "Naughty Secrets";
-			table.insert(g, db);
-		end
-		--]]
+		-- Yourself.
+		table.insert(g, app.CreateUnit("player", {
+			["collected"] = 1,
+			["description"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
+		}));
 		
 		-- The Main Window's Data
 		app.refreshDataForce = true;
@@ -8833,77 +8837,6 @@ function app:GetDataCache()
 			UpdateVisibleRowData(self);
 		end
 		]]--
-		
-		-- Uncomment this section if you need to Harvest Source IDs:
-		--[[--
-		local harvestData = {};
-		harvestData.visible = true;
-		harvestData.expanded = true;
-		harvestData.progress = 0;
-		harvestData.total = 0;
-		harvestData.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
-		harvestData.text = "Harvesting All Items";
-		harvestData.description = "If you're seeing this window outside of Git, please yell loudly in Crieve's ear.";
-		harvestData.g = {};
-		
-		local mID = 1;
-		local modIDs = {};
-		local bonusIDs = {};
-		app.MaximumItemInfoRetries = 40;
-		for itemID,groups in pairs(fieldCache["itemID"]) do
-			for i,group in ipairs(groups) do
-				if (not group.s or group.s == 0) then	--  and (not group.f or group.filterID == 109 or group.f < 50)
-					if group.bonusID and not bonusIDs[group.bonusID] then
-						bonusIDs[group.bonusID] = true;
-						tinsert(harvestData.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
-					else
-						mID = group.modID or 1;
-						if not modIDs[mID] then
-							modIDs[mID] = true;
-							tinsert(harvestData.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
-						end
-					end
-				end
-			end
-			wipe(modIDs);
-			wipe(bonusIDs);
-		end
-		harvestData.rows = harvestData.g;
-		BuildGroups(harvestData, harvestData.g);
-		UpdateGroups(harvestData, harvestData.g);
-		
-		-- Assign the missing data table to the harvester.
-		local popout = app:GetWindow("Harvester");
-		popout.data = harvestData;
-		popout.ScrollBar:SetValue(1);
-		popout:SetVisible(true);
-		popout.UpdateDone = function(self)
-			local progress = 0;
-			local total = 0;
-			for i,group in ipairs(harvestData.g) do
-				total = total + 1;
-				if group.s and group.s == 0 then
-					group.visible = true;
-				else
-					group.visible = false;
-					progress = progress + 1;
-				end
-			end
-			if self.rowData then
-				local count = #self.rowData;
-				if count > 1 then
-					self.rowData[1].progress = progress;
-					self.rowData[1].total = total;
-					for i=count,1,-1 do
-						if self.rowData[i] and not self.rowData[i].visible then
-							table.remove(self.rowData, i);
-						end
-					end
-				end
-			end
-			UpdateVisibleRowData(self);
-		end
-		--]]--
 	end
 	return allData;
 end
@@ -9057,8 +8990,8 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime"):SetSize(425, 305);
 app:GetWindow("Unsorted");
-(function()
-	app:GetWindow("CosmicInfuser", UIParent, function(self)
+app:GetWindow("CosmicInfuser", UIParent, function(self)
+	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
 			self.data = {
@@ -9132,9 +9065,9 @@ app:GetWindow("Unsorted");
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
-	end);
-end)();
-
+	end
+end);
+--[[--
 -- Uncomment this section if you need to enable Debugger:
 app.ModelViewer = GameTooltipModel;
 app.ModelViewer.SetRotation = function(number)
@@ -9454,10 +9387,10 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:RegisterEvent("QUEST_LOOT_RECEIVED");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-		--self:RegisterEvent("NEW_WMO_CHUNK");
-		--self:RegisterEvent("MERCHANT_SHOW");
-		--self:RegisterEvent("MERCHANT_UPDATE");
-		--self:RegisterEvent("CHAT_MSG_LOOT");
+		self:RegisterEvent("NEW_WMO_CHUNK");
+		self:RegisterEvent("MERCHANT_SHOW");
+		self:RegisterEvent("MERCHANT_UPDATE");
+		self:RegisterEvent("CHAT_MSG_LOOT");
 		--self:RegisterAllEvents();
 	end
 	
@@ -9473,404 +9406,408 @@ app:GetWindow("Debugger", UIParent, function(self)
 	UpdateWindow(self, true);
 end):Show();
 --]]--
-(function()
-	local IsSameMap = function(data, results)
-		if data.mapID then
-			-- Exact same map?
-			if data.mapID == results.mapID then
-				return true;
-			end
-			
-			-- Does the result map have an array of associated maps and this map is in there?
-			if results.maps and contains(results.maps, data.mapID) then
-				return true;
-			end
-		end
-		if data.maps then
-			-- Does the old map data contain this map?
-			if contains(data.maps, results.mapID) then
-				return true;
-			end
-			
-			-- Does the result map have an array of associated maps and this map is in there?
-			if results.maps and containsAny(results.maps, data.maps) then
-				return true;
-			end
-		end
-	end
-	app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
-		if not self.initialized then
-			self.initialized = true;
-			self.openedOnLogin = false;
-			self.data = app.CreateMap(946, {
-				['text'] = "Mini List",
-				['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp", 
-				["description"] = "This list contains the relevant information for your current zone.",
-				['visible'] = true, 
-				['expanded'] = true,
-				['g'] = {
-					{
-						['text'] = "Update Location Now",
-						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "If you wish to forcibly refresh the data without changing zones, click this button now!",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							Push(self, "Rebuild", self.Rebuild);
-							return true;
-						end,
-					},
+app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
+	if not self.initialized then
+		self.initialized = true;
+		self.openedOnLogin = false;
+		self.data = app.CreateMap(946, {
+			['text'] = "Mini List",
+			['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp", 
+			["description"] = "This list contains the relevant information for your current zone.",
+			['visible'] = true, 
+			['expanded'] = true,
+			['g'] = {
+				{
+					['text'] = "Update Location Now",
+					['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+					['description'] = "If you wish to forcibly refresh the data without changing zones, click this button now!",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						Push(self, "Rebuild", self.Rebuild);
+						return true;
+					end,
 				},
-			});
-			table.insert(app.RawData, self.data);
-			self.rawData = {};
-			self.Rebuild = function(self)
-				local results = SearchForField("mapID", self.mapID);
-				if results then
-					-- Simplify the returned groups
-					local groups, holiday = {}, {};
-					local header = app.CreateMap(self.mapID, { g = groups });
-					for i, group in ipairs(results) do
-						local clone = {};
-						for key,value in pairs(group) do
-							if key == "maps" then
-								local maps = {};
-								for i,mapID in ipairs(value) do
-									tinsert(maps, mapID);
-								end
-								clone[key] = maps;
-							elseif key == "g" then
-								local g = {};
-								for i,o in ipairs(value) do
-									o = CloneData(o);
-									ExpandGroupsRecursively(o, false);
-									tinsert(g, o);
-								end
-								clone[key] = g;
-							else
-								clone[key] = value;
+			},
+		});
+		table.insert(app.RawData, self.data);
+		self.rawData = {};
+		local IsSameMap = function(data, results)
+			if data.mapID then
+				-- Exact same map?
+				if data.mapID == results.mapID then
+					return true;
+				end
+				
+				-- Does the result map have an array of associated maps and this map is in there?
+				if results.maps and contains(results.maps, data.mapID) then
+					return true;
+				end
+			end
+			if data.maps then
+				-- Does the old map data contain this map?
+				if contains(data.maps, results.mapID) then
+					return true;
+				end
+				
+				-- Does the result map have an array of associated maps and this map is in there?
+				if results.maps and containsAny(results.maps, data.maps) then
+					return true;
+				end
+			end
+		end
+		self.SetMapID = function(self, mapID)
+			self.mapID = mapID;
+			self:SetVisible(true);
+			self:Update();
+		end
+		self.Rebuild = function(self)
+			local results = SearchForField("mapID", self.mapID);
+			if results then
+				-- Simplify the returned groups
+				local groups, holiday = {}, {};
+				local header = app.CreateMap(self.mapID, { g = groups });
+				for i, group in ipairs(results) do
+					local clone = {};
+					for key,value in pairs(group) do
+						if key == "maps" then
+							local maps = {};
+							for i,mapID in ipairs(value) do
+								tinsert(maps, mapID);
 							end
+							clone[key] = maps;
+						elseif key == "g" then
+							local g = {};
+							for i,o in ipairs(value) do
+								o = CloneData(o);
+								ExpandGroupsRecursively(o, false);
+								tinsert(g, o);
+							end
+							clone[key] = g;
+						else
+							clone[key] = value;
 						end
-						setmetatable(clone, getmetatable(group));
-						group = clone;
-						
-						-- If relative to a difficultyID, then merge it into one.
-						local difficultyID = GetRelativeValue(group, "difficultyID");
-						if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
-						
-						-- If this is relative to a holiday, let's do something special
-						if GetRelativeField(group, "npcID", -3) then
-							if group.achievementID then
-								if group.criteriaID then
-									if group.parent.achievementID then
-										group = app.CreateAchievement(group.parent.achievementID, 
-											{ g = { group }, total = group.total, progress = group.progress, 
-												u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
-									else
-										group = app.CreateAchievement(group.achievementID,
-											{ g = { group }, total = group.total, progress = group.progress,
-												u = group.u, races = group.races, r = group.r, c = group.c, nmc = group.nmc, nmr = group.nmr });
-									end
+					end
+					setmetatable(clone, getmetatable(group));
+					group = clone;
+					
+					-- If relative to a difficultyID, then merge it into one.
+					local difficultyID = GetRelativeValue(group, "difficultyID");
+					if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
+					
+					-- If this is relative to a holiday, let's do something special
+					if GetRelativeField(group, "npcID", -3) then
+						if group.achievementID then
+							if group.criteriaID then
+								if group.parent.achievementID then
+									group = app.CreateAchievement(group.parent.achievementID, 
+										{ g = { group }, total = group.total, progress = group.progress, 
+											u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+								else
+									group = app.CreateAchievement(group.achievementID,
+										{ g = { group }, total = group.total, progress = group.progress,
+											u = group.u, races = group.races, r = group.r, c = group.c, nmc = group.nmc, nmr = group.nmr });
 								end
-							elseif group.criteriaID and group.parent.achievementID then
-								group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
-									u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
 							end
-							
-							local holidayID = GetRelativeValue(group, "holidayID");
-							local u = group.u or GetRelativeValue(group, "u");
-							if group.key == "npcID" then
-								if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
-									if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
-								elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-									if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
-								elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-									if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
-								end
-							elseif group.key == "questID" then
+						elseif group.criteriaID and group.parent.achievementID then
+							group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
+								u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+						end
+						
+						local holidayID = GetRelativeValue(group, "holidayID");
+						local u = group.u or GetRelativeValue(group, "u");
+						if group.key == "npcID" then
+							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
+								if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
+							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
+							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
 								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
 							end
-							if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
-							MergeObject(holiday, group);
-						elseif group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
-							header.key = group.key;
-							header[group.key] = group[group.key];
-							MergeObject({header}, group);
-						elseif group.key == "npcID" then
-							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
-								MergeObject(groups, app.CreateNPC(-4, { g = { group } }), 1);
-							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-								MergeObject(groups, app.CreateNPC(-2, { g = { group } }), 1);
-							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-								MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
-							else
-								MergeObject(groups, group);
-							end
 						elseif group.key == "questID" then
+							if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
+						end
+						if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
+						MergeObject(holiday, group);
+					elseif group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
+						header.key = group.key;
+						header[group.key] = group[group.key];
+						MergeObject({header}, group);
+					elseif group.key == "npcID" then
+						if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
+							MergeObject(groups, app.CreateNPC(-4, { g = { group } }), 1);
+						elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+							MergeObject(groups, app.CreateNPC(-2, { g = { group } }), 1);
+						elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
 							MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
-						elseif group.key == "speciesID" then
-							MergeObject(groups, app.CreateNPC(-25, { g = { group } }), 1);
 						else
 							MergeObject(groups, group);
 						end
-					end
-					
-					if #holiday > 0 then
-						-- Search for Holiday entries that are not within a holidayID and attempt to find the appropriate group for them.
-						local holidays, unlinked = {}, {};
-						for i=#holiday,1,-1 do
-							local group = holiday[i];
-							if group.holidayID then
-								if group.u then holidays[group.u] = group; end
-							elseif group.u then
-								local temp = unlinked[group.u];
-								if not temp then
-									temp = {};
-									unlinked[group.u] = temp;
-								end
-								table.insert(temp, group);
-								table.remove(holiday, i);
-							end
-						end
-						for u,temp in pairs(unlinked) do
-							local h = holidays[u];
-							if h then
-								for i,data in ipairs(temp) do
-									MergeObject(h.g, data);
-								end
-							else
-								-- Attempt to scan for the main holiday header.
-								local done = false;
-								for j,o in ipairs(SearchForField("npcID", -3)) do
-									if o.g and #o.g > 5 and o.g[1].holidayID then
-										for k,group in ipairs(o.g) do
-											if group.holidayID and group.u == u then
-												MergeObject(holiday, app.CreateHoliday(group.holidayID, { g = temp, u = u }));
-												done = true;
-											end
-										end
-										break;
-									end
-								end
-								if not done then
-									for i,data in ipairs(temp) do
-										MergeObject(holiday, data);
-									end
-								end
-							end
-						end
-						
-						tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
-					end
-					
-					-- Check for timewalking difficulty objects
-					for i, group in ipairs(groups) do
-						if group.difficultyID and group.difficultyID == 24 and group.g then
-							-- Look for a Common Boss Drop header.
-							local cbdIndex = -1;
-							for j, subgroup in ipairs(group.g) do
-								if subgroup.npcID and subgroup.npcID == -1 then
-									cbdIndex = j;
-									break;
-								end
-							end
-							
-							-- Push the Common Boss Drop header to the top.
-							if cbdIndex > -1 then
-								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
-							end
-							
-							-- Look for a Zone Drop header.
-							cbdIndex = -1;
-							for j, subgroup in ipairs(group.g) do
-								if subgroup.npcID and subgroup.npcID == 0 then
-									cbdIndex = j;
-									break;
-								end
-							end
-							
-							-- Push the Zone Drop header to the top.
-							if cbdIndex > -1 then
-								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
-							end
-						end
-					end
-					
-					-- Swap out the map data for the header.
-					results = header;
-					
-					if IsSameMap(self.data, results) then
-						ReapplyExpand(self.data.g, results.g);
+					elseif group.key == "questID" then
+						MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
+					elseif group.key == "speciesID" then
+						MergeObject(groups, app.CreateNPC(-25, { g = { group } }), 1);
 					else
-						ExpandGroupsRecursively(results, true);
+						MergeObject(groups, group);
 					end
-					
-					for key,value in pairs(self.data) do
-						self.data[key] = nil;
-					end
-					for key,value in pairs(results) do
-						self.data[key] = value;
-					end
-					
-					self.data.u = nil;
-					self.data.mapID = self.mapID;
-					setmetatable(self.data,
-						self.data.instanceID and app.BaseInstance
-						or self.data.classID and app.BaseCharacterClass
-						or app.BaseMap);
-					
-					-- If we have determined that we want to expand this section, then do it
-					if results.g then
-						local bottom = {};
-						local top = {};
-						for i=#results.g,1,-1 do
-							local o = results.g[i];
-							if o.difficultyID then
-								table.remove(results.g, i);
-								table.insert(bottom, 1, o);
-							elseif o.isRaid then
-								table.remove(results.g, i);
-								table.insert(top, o);
-							end
-						end
-						for i,o in ipairs(top) do
-							table.insert(results.g, 1, o);
-						end
-						for i,o in ipairs(bottom) do
-							table.insert(results.g, o);
-						end
-						
-						-- if enabled minimize rows based on difficulty 
-						if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-							local difficultyID = select(3, GetInstanceInfo());
-							if difficultyID and difficultyID > 0 and results.g then
-								for _, row in ipairs(results.g) do
-									if row.difficultyID or row.difficulties then
-										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											if not row.expanded then ExpandGroupsRecursively(row, true); end
-										elseif row.expanded then 
-											ExpandGroupsRecursively(row, false);
-										end
-									end
-								end
-							end
-						end
-						if app.Settings:GetTooltipSetting("Warn:Difficulty") then
-							local difficultyID = select(3, GetInstanceInfo());
-							if difficultyID and difficultyID > 0 and results.g then
-								local completed,other = true, nil;
-								for _, row in ipairs(results.g) do
-									if row.difficultyID or row.difficulties then
-										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											if row.total and row.progress < row.total then
-												completed = false;
-											end
-										else 
-											if row.total and row.progress < row.total then
-												other = row.text;
-											end
-										end
-									end
-								end
-								if completed and other then
-									print("You have collected everything from this difficulty. Switch to " .. other .. " instead.");
-								end
-							end
-						end
-					end
-					
-					-- Check to see completion...
-					BuildGroups(self.data, self.data.g);
-					UpdateGroups(self.data, self.data.g);
 				end
 				
-				-- If we don't have any map data on this area, report it to the chat window.
-				if not results or not results.g or #results.g < 1 then
-					local mapID = self.mapID;
-					local mapInfo = C_Map.GetMapInfo(mapID);
-					local mapPath = mapInfo.name or ("Map ID #" .. mapID);
-					mapID = mapInfo.parentMapID;
-					while mapID do
-						mapInfo = C_Map.GetMapInfo(mapID);
-						if mapInfo then
-							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
-							mapID = mapInfo.parentMapID;
+				if #holiday > 0 then
+					-- Search for Holiday entries that are not within a holidayID and attempt to find the appropriate group for them.
+					local holidays, unlinked = {}, {};
+					for i=#holiday,1,-1 do
+						local group = holiday[i];
+						if group.holidayID then
+							if group.u then holidays[group.u] = group; end
+						elseif group.u then
+							local temp = unlinked[group.u];
+							if not temp then
+								temp = {};
+								unlinked[group.u] = temp;
+							end
+							table.insert(temp, group);
+							table.remove(holiday, i);
+						end
+					end
+					for u,temp in pairs(unlinked) do
+						local h = holidays[u];
+						if h then
+							for i,data in ipairs(temp) do
+								MergeObject(h.g, data);
+							end
 						else
-							break;
+							-- Attempt to scan for the main holiday header.
+							local done = false;
+							for j,o in ipairs(SearchForField("npcID", -3)) do
+								if o.g and #o.g > 5 and o.g[1].holidayID then
+									for k,group in ipairs(o.g) do
+										if group.holidayID and group.u == u then
+											MergeObject(holiday, app.CreateHoliday(group.holidayID, { g = temp, u = u }));
+											done = true;
+										end
+									end
+									break;
+								end
+							end
+							if not done then
+								for i,data in ipairs(temp) do
+									MergeObject(holiday, data);
+								end
+							end
 						end
 					end
-					print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
-					print("Path: ", mapPath);
-					print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("AllTheThings", "Version"));
+					
+					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
 				end
-			end
-			local function OpenMiniList(id, show)
-				-- Determine whether or not to forcibly reshow the mini list.
-				local self = app:GetWindow("CurrentInstance");
-				if not self:IsVisible() then
-					if app.Settings:GetTooltipSetting("Auto:MiniList") then
-						if not self.openedOnLogin and not show then
-							self.openedOnLogin = true;
-							show = true;
+				
+				-- Check for timewalking difficulty objects
+				for i, group in ipairs(groups) do
+					if group.difficultyID and group.difficultyID == 24 and group.g then
+						-- Look for a Common Boss Drop header.
+						local cbdIndex = -1;
+						for j, subgroup in ipairs(group.g) do
+							if subgroup.npcID and subgroup.npcID == -1 then
+								cbdIndex = j;
+								break;
+							end
 						end
+						
+						-- Push the Common Boss Drop header to the top.
+						if cbdIndex > -1 then
+							table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+						end
+						
+						-- Look for a Zone Drop header.
+						cbdIndex = -1;
+						for j, subgroup in ipairs(group.g) do
+							if subgroup.npcID and subgroup.npcID == 0 then
+								cbdIndex = j;
+								break;
+							end
+						end
+						
+						-- Push the Zone Drop header to the top.
+						if cbdIndex > -1 then
+							table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+						end
+					end
+				end
+				
+				-- Swap out the map data for the header.
+				results = header;
+				
+				if IsSameMap(self.data, results) then
+					ReapplyExpand(self.data.g, results.g);
+				else
+					ExpandGroupsRecursively(results, true);
+				end
+				
+				for key,value in pairs(self.data) do
+					self.data[key] = nil;
+				end
+				for key,value in pairs(results) do
+					self.data[key] = value;
+				end
+				
+				self.data.u = nil;
+				self.data.mapID = self.mapID;
+				setmetatable(self.data,
+					self.data.instanceID and app.BaseInstance
+					or self.data.classID and app.BaseCharacterClass
+					or app.BaseMap);
+				
+				-- If we have determined that we want to expand this section, then do it
+				if results.g then
+					local bottom = {};
+					local top = {};
+					for i=#results.g,1,-1 do
+						local o = results.g[i];
+						if o.difficultyID then
+							table.remove(results.g, i);
+							table.insert(bottom, 1, o);
+						elseif o.isRaid then
+							table.remove(results.g, i);
+							table.insert(top, o);
+						end
+					end
+					for i,o in ipairs(top) do
+						table.insert(results.g, 1, o);
+					end
+					for i,o in ipairs(bottom) do
+						table.insert(results.g, o);
+					end
+					
+					-- if enabled minimize rows based on difficulty 
+					if app.Settings:GetTooltipSetting("Expand:Difficulty") then
+						local difficultyID = select(3, GetInstanceInfo());
+						if difficultyID and difficultyID > 0 and results.g then
+							for _, row in ipairs(results.g) do
+								if row.difficultyID or row.difficulties then
+									if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if not row.expanded then ExpandGroupsRecursively(row, true); end
+									elseif row.expanded then 
+										ExpandGroupsRecursively(row, false);
+									end
+								end
+							end
+						end
+					end
+					if app.Settings:GetTooltipSetting("Warn:Difficulty") then
+						local difficultyID = select(3, GetInstanceInfo());
+						if difficultyID and difficultyID > 0 and results.g then
+							local completed,other = true, nil;
+							for _, row in ipairs(results.g) do
+								if row.difficultyID or row.difficulties then
+									if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if row.total and row.progress < row.total then
+											completed = false;
+										end
+									else 
+										if row.total and row.progress < row.total then
+											other = row.text;
+										end
+									end
+								end
+							end
+							if completed and other then
+								print("You have collected everything from this difficulty. Switch to " .. other .. " instead.");
+							end
+						end
+					end
+				end
+				
+				-- Check to see completion...
+				BuildGroups(self.data, self.data.g);
+				UpdateGroups(self.data, self.data.g);
+			end
+			
+			-- If we don't have any map data on this area, report it to the chat window.
+			if not results or not results.g or #results.g < 1 then
+				local mapID = self.mapID;
+				local mapInfo = C_Map.GetMapInfo(mapID);
+				local mapPath = mapInfo.name or ("Map ID #" .. mapID);
+				mapID = mapInfo.parentMapID;
+				while mapID do
+					mapInfo = C_Map.GetMapInfo(mapID);
+					if mapInfo then
+						mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
+						mapID = mapInfo.parentMapID;
 					else
-						self.openedOnLogin = false;
+						break;
 					end
-					if show then self:Show(); end
-				else
-					show = true;
 				end
-				
-				-- Cache that we're in the current map ID.
-				self.mapID = id;
-				self:Update();
+				print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
+				print("Path: ", mapPath);
+				print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("AllTheThings", "Version"));
 			end
-			local function OpenMiniListForCurrentZone()
-				OpenMiniList(app.GetCurrentMapID(), true);
-			end
-			local function RefreshLocationCoroutine()
-				-- Wait for a few moments for the map to update.
-				local waitTimer = 30;
-				while waitTimer > 0 do
-					coroutine.yield();
-					waitTimer = waitTimer - 1;
-				end
-				
-				-- While the player is in combat, wait for combat to end.
-				while InCombatLockdown() do coroutine.yield(); end
-				
-				-- Acquire the new map ID.
-				local mapID = app.GetCurrentMapID();
-				while not mapID or mapID < 0 do
-					coroutine.yield();
-					mapID = app.GetCurrentMapID();
-				end
-				OpenMiniList(mapID);
-			end
-			local function RefreshLocation()
-				if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
-					StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
-				end
-			end
-			local function ToggleMiniListForCurrentZone()
-				local self = app:GetWindow("CurrentInstance");
-				if self:IsVisible() then
-					self:Hide();
-				else
-					OpenMiniListForCurrentZone();
-				end
-			end
-			app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
-			app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
-			app.RefreshLocation = RefreshLocation;
-			self:SetScript("OnEvent", function(self, e, ...)
-				RefreshLocation();
-			end);
-			self:RegisterEvent("PLAYER_LOGIN");
-			self:RegisterEvent("NEW_WMO_CHUNK");
-			self:RegisterEvent("SCENARIO_UPDATE");
-			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 		end
-		
+		local function OpenMiniList(id, show)
+			-- Determine whether or not to forcibly reshow the mini list.
+			local self = app:GetWindow("CurrentInstance");
+			if not self:IsVisible() then
+				if app.Settings:GetTooltipSetting("Auto:MiniList") then
+					if not self.openedOnLogin and not show then
+						self.openedOnLogin = true;
+						show = true;
+					end
+				else
+					self.openedOnLogin = false;
+				end
+				if show then self:Show(); end
+			else
+				show = true;
+			end
+			
+			-- Cache that we're in the current map ID.
+			self.mapID = id;
+			self:Update();
+		end
+		local function OpenMiniListForCurrentZone()
+			OpenMiniList(app.GetCurrentMapID(), true);
+		end
+		local function RefreshLocationCoroutine()
+			-- Wait for a few moments for the map to update.
+			local waitTimer = 30;
+			while waitTimer > 0 do
+				coroutine.yield();
+				waitTimer = waitTimer - 1;
+			end
+			
+			-- While the player is in combat, wait for combat to end.
+			while InCombatLockdown() do coroutine.yield(); end
+			
+			-- Acquire the new map ID.
+			local mapID = app.GetCurrentMapID();
+			while not mapID or mapID < 0 do
+				coroutine.yield();
+				mapID = app.GetCurrentMapID();
+			end
+			OpenMiniList(mapID);
+		end
+		local function RefreshLocation()
+			if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
+				StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+			end
+		end
+		local function ToggleMiniListForCurrentZone()
+			local self = app:GetWindow("CurrentInstance");
+			if self:IsVisible() then
+				self:Hide();
+			else
+				OpenMiniListForCurrentZone();
+			end
+		end
+		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
+		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
+		app.RefreshLocation = RefreshLocation;
+		self:SetScript("OnEvent", function(self, e, ...)
+			RefreshLocation();
+		end);
+		self:RegisterEvent("PLAYER_LOGIN");
+		self:RegisterEvent("NEW_WMO_CHUNK");
+		self:RegisterEvent("SCENARIO_UPDATE");
+		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+	end
+	if self:IsVisible() then
 		-- Update the window and all of its row data
 		if self.mapID ~= self.displayedMapID then
 			self.displayedMapID = self.mapID;
@@ -9883,294 +9820,451 @@ end):Show();
 		UpdateGroups(self.data, self.data.g);
 		self.data.visible = true;
 		UpdateWindow(self, true, got);
-	end);
-end)();
-app:GetWindow("RaidAssistant", UIParent, function(self)
-	if not self.initialized then
-		self.initialized = true;
-		
-		-- Define the different window configurations that the mini list will switch to based on context.
-		local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
-		
-		-- Raid Assistant
-		local difficultyLookup = {
-			personalloot = "Personal Loot",
-			group = "Group Loot",
-			master = "Master Loot",
-		};
-		local difficultyDescriptions = {
-			personalloot = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself.",
-			group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
-			master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
-		};
-		local switchDungeonDifficulty = function(row, button)
-			self.data = raidassistant;
-			SetDungeonDifficultyID(row.ref.difficultyID);
-			self:Update(true);
-			return true;
-		end
-		local switchRaidDifficulty = function(row, button)
-			self.data = raidassistant;
-			local myself = self;
-			local difficultyID = row.ref.difficultyID;
-			if not self.running then
-				self.running = true;
-			else
-				self.running = false;
-			end
+	end
+end);
+app:GetWindow("Harvester", UIParent, function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			local db = {};
+			db.g = {};
+			db.text = "Harvesting All Items";
+			db.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
+			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW a lot!";
+			db.visible = true;
+			db.expanded = true;
+			db.progress = 0;
+			db.total = 0;
+			db.back = 1;
 			
-			SetRaidDifficultyID(difficultyID);
-			StartCoroutine("RaidDifficulty", function()
-				while InCombatLockdown() do coroutine.yield(); end
-				while myself.running do
-					for i=0,150,1 do
-						if myself.running then
-							coroutine.yield();
+			local mID = 1;
+			local modIDs = {};
+			local bonusIDs = {};
+			app.MaximumItemInfoRetries = 40;
+			for itemID,groups in pairs(fieldCache["itemID"]) do
+				for i,group in ipairs(groups) do
+					if (not group.s or group.s == 0) then	--  and (not group.f or group.filterID == 109 or group.f < 50)
+						if group.bonusID and not bonusIDs[group.bonusID] then
+							bonusIDs[group.bonusID] = true;
+							tinsert(db.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
 						else
-							break;
+							mID = group.modID or 1;
+							if not modIDs[mID] then
+								modIDs[mID] = true;
+								tinsert(db.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+							end
 						end
 					end
-					if app.RaidDifficulty == difficultyID then
-						myself.running = false;
-						break;
-					else
-						SetRaidDifficultyID(difficultyID);
-					end
 				end
-			end);
-			self:Update(true);
-			return true;
-		end
-		local switchLegacyRaidDifficulty = function(row, button)
-			self.data = raidassistant;
-			local myself = self;
-			local difficultyID = row.ref.difficultyID;
-			if not self.legacyrunning then
-				self.legacyrunning = true;
-			else
-				self.legacyrunning = false;
+				wipe(modIDs);
+				wipe(bonusIDs);
 			end
-			SetLegacyRaidDifficultyID(difficultyID);
-			StartCoroutine("LegacyRaidDifficulty", function()
-				while InCombatLockdown() do coroutine.yield(); end
-				while myself.legacyrunning do
-					for i=0,150,1 do
-						if myself.legacyrunning then
-							coroutine.yield();
-						else
-							break;
-						end
-					end
-					if app.LegacyRaidDifficulty == difficultyID then
-						myself.legacyrunning = false;
-						break;
+			self.data = db;
+			BuildGroups(db, db.g);
+			UpdateGroups(db, db.g);
+			self.ScrollBar:SetValue(1);
+			self.UpdateDone = function(self)
+				local progress = 0;
+				local total = 0;
+				for i,group in ipairs(db.g) do
+					total = total + 1;
+					if group.s and group.s == 0 then
+						group.visible = true;
 					else
-						SetLegacyRaidDifficultyID(difficultyID);
+						group.visible = false;
+						progress = progress + 1;
 					end
 				end
-			end);
-			self:Update(true);
-			return true;
+				if self.rowData then
+					local count = #self.rowData;
+					if count > 1 then
+						self.rowData[1].progress = progress;
+						self.rowData[1].total = total;
+						for i=count,1,-1 do
+							if self.rowData[i] and not self.rowData[i].visible then
+								table.remove(self.rowData, i);
+							end
+						end
+					end
+				end
+				UpdateVisibleRowData(self);
+			end
 		end
-		raidassistant = {
-			['text'] = "Raid Assistant",
-			['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
-			["description"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
-			['visible'] = true, 
-			['expanded'] = true,
-			['back'] = 1,
-			['g'] = {
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		UpdateWindow(self, true);
+	end
+end);
+app:GetWindow("SourceFinder", UIParent, function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			local db = {};
+			db.g = {
 				{
-					['text'] = "Loot Specialization Unknown",
-					['title'] = "Loot Specialization",
-					["description"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!",
+					['text'] = "Update Now",
+					['icon'] = "Interface\\Icons\\ability_monk_roll",
+					["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
 					['visible'] = true,
+					['fails'] = 0,
 					['OnClick'] = function(row, button)
-						self.data = lootspecialization;
 						self:Update(true);
 						return true;
 					end,
 					['OnUpdate'] = function(data)
-						if app.Spec then
-							local id, name, description, icon, role, class = GetSpecializationInfoByID(app.Spec);
-							if name then
-								if GetLootSpecialization() == 0 then name = name .. " (Automatic)"; end
-								data.text = name;
-								data.icon = icon;
+						data.visible = true;
+					end,
+				},
+			};
+			db.OnUpdate = function(db)
+				if self:IsVisible() then
+					local iCache = fieldCache["itemID"];
+					local sCache = fieldCache["s"];
+					for s=1,103000 do
+						if not sCache[s] then
+							local t = app.CreateGearSource(s);
+							if t.info then
+								t.fails = 0;
+								t.OnUpdate = function(source)
+									local text = source.text;
+									if text and text ~= RETRIEVING_DATA then
+										source.OnUpdate = function(source)
+											local itemID = source.itemID;
+											if itemID then
+												local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
+												itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, 
+												isCraftingReagent = GetItemInfo(itemID);
+												if itemRarity and itemRarity < 2 then
+													source.fails = source.fails + 1;
+													self.shouldFullRefresh = true;
+												else
+													local searchResults = iCache[itemID];
+													if searchResults and #searchResults > 0 then
+														if not searchResults[1].collectible then
+															source.fails = source.fails + 1;
+															self.shouldFullRefresh = true;
+														end
+													end
+												end
+											else
+												source.fails = source.fails + 1;
+											end
+										end;
+									else
+										source.fails = source.fails + 1;
+										self.shouldFullRefresh = true;
+									end
+								end
+								tinsert(db.g, t);
 							end
 						end
-					end,
-				},
-				app.CreateDifficulty(1, {
-					['title'] = "Dungeon Difficulty",
-					["description"] = "The difficulty setting for dungeons.\n\nClick this row to change it now!",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						self.data = dungeondifficulty;
-						self:Update(true);
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						if app.DungeonDifficulty then
-							data.difficultyID = app.DungeonDifficulty;
-							data.name = GetDifficultyInfo(data.difficultyID) or "???";
-							local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
-							if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'party' then
-								data.name = data.name .. " (" .. (difficultyName or "???") .. ")";
+					end
+					db.OnUpdate = function(self)
+						local g = self.g;
+						if g then
+							local count = #g;
+							if count > 0 then
+								for i=count,1,-1 do
+									if g[i].fails > 2 then
+										table.remove(g, i);
+									end
+								end
 							end
 						end
-					end,
-				}),
-				app.CreateDifficulty(14, {
-					['title'] = "Raid Difficulty",
-					["description"] = "The difficulty setting for raids.\n\nClick this row to change it now!",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
-						if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
-						self.data = raiddifficulty;
-						self:Update(true);
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						if app.RaidDifficulty then
-							data.difficultyID = app.RaidDifficulty;
-							local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
-							if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'raid' then
-								data.name = (GetDifficultyInfo(data.difficultyID) or "???") .. " (" .. (difficultyName or "???") .. ")";
-							else
-								data.name = GetDifficultyInfo(data.difficultyID);
-							end
-						end
-					end,
-				}),
-				app.CreateDifficulty(5, {
-					['title'] = "Legacy Raid Difficulty",
-					["description"] = "The difficulty setting for legacy raids.\n\nClick this row to change it now!",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
-						if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
-						self.data = legacyraiddifficulty;
-						self:Update(true);
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						if app.LegacyRaidDifficulty then
-							data.difficultyID = app.LegacyRaidDifficulty;
-						end
-					end,
-				}),
-				{
-					['text'] = "Teleport to/from Dungeon",
-					['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
-					['description'] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						LFGTeleport(IsInLFGDungeon());
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						data.visible = IsAllowedToUserTeleport();
-					end,
-				},
-				{
-					['text'] = "Reset Instances",
-					['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
-					['description'] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						if IsAltKeyDown() then
-							row.ref.saved = not row.ref.saved;
-							self:Update();
-						else
-							ResetInstances();
-						end
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						data.visible = not IsInGroup() or UnitIsGroupLeader("player");
-						if data.visible and data.saved then
-							if IsInInstance() or C_Scenario.IsInScenario() then
-								data.shouldReset = true;
-							elseif data.shouldReset then
-								data.shouldReset = nil;
-								C_Timer.After(0.5, ResetInstances);
-							end
-						end
-					end,
-				},
-				{
-					['text'] = "Delist Group",
-					['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
-					['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						C_LFGList.RemoveListing();
-						if GroupFinderFrame:IsVisible() then
-							PVEFrame_ToggleFrame("GroupFinderFrame")
-						end
-						self.data = raidassistant;
-						UpdateWindow(self, true);
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						data.visible = C_LFGList.GetActiveEntryInfo();
-					end,
-				},
-				{
-					['text'] = "Leave Group",
-					['icon'] = "Interface\\Icons\\Ability_Vanish",
-					['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						LeaveParty();
-						if GroupFinderFrame:IsVisible() then
-							PVEFrame_ToggleFrame("GroupFinderFrame")
-						end
-						self.data = raidassistant;
-						UpdateWindow(self, true);
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						data.visible = IsInGroup();
-					end,
-				},
-			}
-		};
-		lootspecialization = {
-			['text'] = "Loot Specialization",
-			['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02.blp",
-			["description"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.",
-			['OnClick'] = function(row, button)
+					end;
+					
+				end
+			end
+			db.text = "Source Finder";
+			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp";
+			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
+			db.visible = true;
+			db.expanded = true;
+			db.progress = 0;
+			db.total = 0;
+			db.back = 1;
+			self.data = db;
+		end
+		self.data.progress = 0;
+		self.data.total = 0;
+		BuildGroups(self.data, self.data.g);
+		UpdateGroups(self.data, self.data.g);
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		UpdateWindow(self, true);
+	end
+end);
+app:GetWindow("RaidAssistant", UIParent, function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			
+			-- Define the different window configurations that the mini list will switch to based on context.
+			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
+			
+			-- Raid Assistant
+			local difficultyLookup = {
+				personalloot = "Personal Loot",
+				group = "Group Loot",
+				master = "Master Loot",
+			};
+			local difficultyDescriptions = {
+				personalloot = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself.",
+				group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
+				master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
+			};
+			local switchDungeonDifficulty = function(row, button)
 				self.data = raidassistant;
+				SetDungeonDifficultyID(row.ref.difficultyID);
 				self:Update(true);
 				return true;
-			end,
-			['OnUpdate'] = function(data)
-				data.g = {};
-				local numSpecializations = GetNumSpecializations();
-				if numSpecializations and numSpecializations > 0 then
-					tinsert(data.g, {
-						['text'] = "Current Specialization",
-						['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
-						['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01.blp",
-						['id'] = 0,
-						["description"] = "If you switch your talents, your loot specialization changes with you.",
+			end
+			local switchRaidDifficulty = function(row, button)
+				self.data = raidassistant;
+				local myself = self;
+				local difficultyID = row.ref.difficultyID;
+				if not self.running then
+					self.running = true;
+				else
+					self.running = false;
+				end
+				
+				SetRaidDifficultyID(difficultyID);
+				StartCoroutine("RaidDifficulty", function()
+					while InCombatLockdown() do coroutine.yield(); end
+					while myself.running do
+						for i=0,150,1 do
+							if myself.running then
+								coroutine.yield();
+							else
+								break;
+							end
+						end
+						if app.RaidDifficulty == difficultyID then
+							myself.running = false;
+							break;
+						else
+							SetRaidDifficultyID(difficultyID);
+						end
+					end
+				end);
+				self:Update(true);
+				return true;
+			end
+			local switchLegacyRaidDifficulty = function(row, button)
+				self.data = raidassistant;
+				local myself = self;
+				local difficultyID = row.ref.difficultyID;
+				if not self.legacyrunning then
+					self.legacyrunning = true;
+				else
+					self.legacyrunning = false;
+				end
+				SetLegacyRaidDifficultyID(difficultyID);
+				StartCoroutine("LegacyRaidDifficulty", function()
+					while InCombatLockdown() do coroutine.yield(); end
+					while myself.legacyrunning do
+						for i=0,150,1 do
+							if myself.legacyrunning then
+								coroutine.yield();
+							else
+								break;
+							end
+						end
+						if app.LegacyRaidDifficulty == difficultyID then
+							myself.legacyrunning = false;
+							break;
+						else
+							SetLegacyRaidDifficultyID(difficultyID);
+						end
+					end
+				end);
+				self:Update(true);
+				return true;
+			end
+			raidassistant = {
+				['text'] = "Raid Assistant",
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
+				["description"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {
+					{
+						['text'] = "Loot Specialization Unknown",
+						['title'] = "Loot Specialization",
+						["description"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							self.data = raidassistant;
-							SetLootSpecialization(row.ref.id);
+							self.data = lootspecialization;
 							self:Update(true);
+							return true;
 						end,
-					});
-					for i=1,numSpecializations,1 do
-						local id, name, description, icon, background, role, primaryStat = GetSpecializationInfo(i);
+						['OnUpdate'] = function(data)
+							if app.Spec then
+								local id, name, description, icon, role, class = GetSpecializationInfoByID(app.Spec);
+								if name then
+									if GetLootSpecialization() == 0 then name = name .. " (Automatic)"; end
+									data.text = name;
+									data.icon = icon;
+								end
+							end
+						end,
+					},
+					app.CreateDifficulty(1, {
+						['title'] = "Dungeon Difficulty",
+						["description"] = "The difficulty setting for dungeons.\n\nClick this row to change it now!",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							self.data = dungeondifficulty;
+							self:Update(true);
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							if app.DungeonDifficulty then
+								data.difficultyID = app.DungeonDifficulty;
+								data.name = GetDifficultyInfo(data.difficultyID) or "???";
+								local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
+								if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'party' then
+									data.name = data.name .. " (" .. (difficultyName or "???") .. ")";
+								end
+							end
+						end,
+					}),
+					app.CreateDifficulty(14, {
+						['title'] = "Raid Difficulty",
+						["description"] = "The difficulty setting for raids.\n\nClick this row to change it now!",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
+							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
+							self.data = raiddifficulty;
+							self:Update(true);
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							if app.RaidDifficulty then
+								data.difficultyID = app.RaidDifficulty;
+								local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
+								if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'raid' then
+									data.name = (GetDifficultyInfo(data.difficultyID) or "???") .. " (" .. (difficultyName or "???") .. ")";
+								else
+									data.name = GetDifficultyInfo(data.difficultyID);
+								end
+							end
+						end,
+					}),
+					app.CreateDifficulty(5, {
+						['title'] = "Legacy Raid Difficulty",
+						["description"] = "The difficulty setting for legacy raids.\n\nClick this row to change it now!",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
+							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
+							self.data = legacyraiddifficulty;
+							self:Update(true);
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							if app.LegacyRaidDifficulty then
+								data.difficultyID = app.LegacyRaidDifficulty;
+							end
+						end,
+					}),
+					{
+						['text'] = "Teleport to/from Dungeon",
+						['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
+						['description'] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							LFGTeleport(IsInLFGDungeon());
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							data.visible = IsAllowedToUserTeleport();
+						end,
+					},
+					{
+						['text'] = "Reset Instances",
+						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
+						['description'] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							if IsAltKeyDown() then
+								row.ref.saved = not row.ref.saved;
+								self:Update();
+							else
+								ResetInstances();
+							end
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							data.visible = not IsInGroup() or UnitIsGroupLeader("player");
+							if data.visible and data.saved then
+								if IsInInstance() or C_Scenario.IsInScenario() then
+									data.shouldReset = true;
+								elseif data.shouldReset then
+									data.shouldReset = nil;
+									C_Timer.After(0.5, ResetInstances);
+								end
+							end
+						end,
+					},
+					{
+						['text'] = "Delist Group",
+						['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
+						['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							C_LFGList.RemoveListing();
+							if GroupFinderFrame:IsVisible() then
+								PVEFrame_ToggleFrame("GroupFinderFrame")
+							end
+							self.data = raidassistant;
+							UpdateWindow(self, true);
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							data.visible = C_LFGList.GetActiveEntryInfo();
+						end,
+					},
+					{
+						['text'] = "Leave Group",
+						['icon'] = "Interface\\Icons\\Ability_Vanish",
+						['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							LeaveParty();
+							if GroupFinderFrame:IsVisible() then
+								PVEFrame_ToggleFrame("GroupFinderFrame")
+							end
+							self.data = raidassistant;
+							UpdateWindow(self, true);
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							data.visible = IsInGroup();
+						end,
+					},
+				}
+			};
+			lootspecialization = {
+				['text'] = "Loot Specialization",
+				['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02.blp",
+				["description"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.",
+				['OnClick'] = function(row, button)
+					self.data = raidassistant;
+					self:Update(true);
+					return true;
+				end,
+				['OnUpdate'] = function(data)
+					data.g = {};
+					local numSpecializations = GetNumSpecializations();
+					if numSpecializations and numSpecializations > 0 then
 						tinsert(data.g, {
-							['text'] = name,
-							['icon'] = icon,
-							['id'] = id,
-							["description"] = description,
+							['text'] = "Current Specialization",
+							['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
+							['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01.blp",
+							['id'] = 0,
+							["description"] = "If you switch your talents, your loot specialization changes with you.",
 							['visible'] = true,
 							['OnClick'] = function(row, button)
 								self.data = raidassistant;
@@ -10178,143 +10272,157 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 								self:Update(true);
 							end,
 						});
+						for i=1,numSpecializations,1 do
+							local id, name, description, icon, background, role, primaryStat = GetSpecializationInfo(i);
+							tinsert(data.g, {
+								['text'] = name,
+								['icon'] = icon,
+								['id'] = id,
+								["description"] = description,
+								['visible'] = true,
+								['OnClick'] = function(row, button)
+									self.data = raidassistant;
+									SetLootSpecialization(row.ref.id);
+									self:Update(true);
+								end,
+							});
+						end
 					end
-				end
-			end,
-			['visible'] = true, 
-			['expanded'] = true,
-			['back'] = 1,
-			['g'] = {},
-		};
-		dungeondifficulty = {
-			['text'] = "Dungeon Difficulty",
-			['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-			["description"] = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant.",
-			['OnClick'] = function(row, button)
-				self.data = raidassistant;
-				self:Update(true);
-				return true;
-			end,
-			['visible'] = true, 
-			['expanded'] = true,
-			['back'] = 1,
-			['g'] = {
-				app.CreateDifficulty(1, {
-					['OnClick'] = switchDungeonDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-					['back'] = 0.5,
-				}),
-				app.CreateDifficulty(2, {
-					['OnClick'] = switchDungeonDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-					['back'] = 0.5,
-				}),
-				app.CreateDifficulty(23, {
-					['OnClick'] = switchDungeonDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-					['back'] = 0.5,
-				})
-			},
-		};
-		raiddifficulty = {
-			['text'] = "Raid Difficulty",
-			['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-			["description"] = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant.",
-			['OnClick'] = function(row, button)
-				self.data = raidassistant;
-				self:Update(true);
-				return true;
-			end,
-			['visible'] = true, 
-			['expanded'] = true,
-			['back'] = 1,
-			['g'] = {
-				app.CreateDifficulty(14, {
-					['OnClick'] = switchRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-				}),
-				app.CreateDifficulty(15, {
-					['OnClick'] = switchRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-				}),
-				app.CreateDifficulty(16, {
-					['OnClick'] = switchRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-				})
-			},
-		};
-		legacyraiddifficulty = {
-			['text'] = "Legacy Raid Difficulty",
-			['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-			["description"] = "This setting allows you to customize the difficulty of a legacy raid. (Pre-Siege of Orgrimmar)\n\nClick this row to go back to the Raid Assistant.",
-			['OnClick'] = function(row, button)
-				self.data = raidassistant;
-				self:Update(true);
-				return true;
-			end,
-			['visible'] = true, 
-			['expanded'] = true,
-			['back'] = 1,
-			['g'] = {
-				app.CreateDifficulty(3, {
-					['OnClick'] = switchLegacyRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-				}),
-				app.CreateDifficulty(5, {
-					['OnClick'] = switchLegacyRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-				}),
-				app.CreateDifficulty(4, {
-					['OnClick'] = switchLegacyRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-				}),
-				app.CreateDifficulty(6, {
-					['OnClick'] = switchLegacyRaidDifficulty,
-					["description"] = "Click to change now. (if available)",
-					['visible'] = true,
-				}),
-			},
-		};
-		self.data = raidassistant;
+				end,
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {},
+			};
+			dungeondifficulty = {
+				['text'] = "Dungeon Difficulty",
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
+				["description"] = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant.",
+				['OnClick'] = function(row, button)
+					self.data = raidassistant;
+					self:Update(true);
+					return true;
+				end,
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {
+					app.CreateDifficulty(1, {
+						['OnClick'] = switchDungeonDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+						['back'] = 0.5,
+					}),
+					app.CreateDifficulty(2, {
+						['OnClick'] = switchDungeonDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+						['back'] = 0.5,
+					}),
+					app.CreateDifficulty(23, {
+						['OnClick'] = switchDungeonDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+						['back'] = 0.5,
+					})
+				},
+			};
+			raiddifficulty = {
+				['text'] = "Raid Difficulty",
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
+				["description"] = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant.",
+				['OnClick'] = function(row, button)
+					self.data = raidassistant;
+					self:Update(true);
+					return true;
+				end,
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {
+					app.CreateDifficulty(14, {
+						['OnClick'] = switchRaidDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+					}),
+					app.CreateDifficulty(15, {
+						['OnClick'] = switchRaidDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+					}),
+					app.CreateDifficulty(16, {
+						['OnClick'] = switchRaidDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+					})
+				},
+			};
+			legacyraiddifficulty = {
+				['text'] = "Legacy Raid Difficulty",
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
+				["description"] = "This setting allows you to customize the difficulty of a legacy raid. (Pre-Siege of Orgrimmar)\n\nClick this row to go back to the Raid Assistant.",
+				['OnClick'] = function(row, button)
+					self.data = raidassistant;
+					self:Update(true);
+					return true;
+				end,
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {
+					app.CreateDifficulty(3, {
+						['OnClick'] = switchLegacyRaidDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+					}),
+					app.CreateDifficulty(5, {
+						['OnClick'] = switchLegacyRaidDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+					}),
+					app.CreateDifficulty(4, {
+						['OnClick'] = switchLegacyRaidDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+					}),
+					app.CreateDifficulty(6, {
+						['OnClick'] = switchLegacyRaidDifficulty,
+						["description"] = "Click to change now. (if available)",
+						['visible'] = true,
+					}),
+				},
+			};
+			self.data = raidassistant;
+			
+			-- Setup Event Handlers and register for events
+			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
+			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
+			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
+			self:RegisterEvent("CHAT_MSG_SYSTEM");
+			self:RegisterEvent("SCENARIO_UPDATE");
+			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+			self:RegisterEvent("GROUP_ROSTER_UPDATE");
+		end
 		
-		-- Setup Event Handlers and register for events
-		self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
-		self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
-		self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
-		self:RegisterEvent("CHAT_MSG_SYSTEM");
-		self:RegisterEvent("SCENARIO_UPDATE");
-		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-		self:RegisterEvent("GROUP_ROSTER_UPDATE");
+		-- Update the window and all of its row data
+		app.LegacyRaidDifficulty = GetLegacyRaidDifficultyID() or 1;
+		app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
+		app.RaidDifficulty = GetRaidDifficultyID() or 14;
+		app.Spec = GetLootSpecialization();
+		if not app.Spec or app.Spec == 0 then
+			local s = GetSpecialization();
+			if s then app.Spec = select(1, GetSpecializationInfo(s)); end
+		end
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		for i,g in ipairs(self.data.g) do
+			if g.OnUpdate then g.OnUpdate(g); end
+		end
+		BuildGroups(self.data, self.data.g);
+		UpdateWindow(self, true);
 	end
-	
-	-- Update the window and all of its row data
-	app.LegacyRaidDifficulty = GetLegacyRaidDifficultyID() or 1;
-	app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
-	app.RaidDifficulty = GetRaidDifficultyID() or 14;
-	app.Spec = GetLootSpecialization();
-	wipe(app.searchCache);
-	if not app.Spec or app.Spec == 0 then
-		local s = GetSpecialization();
-		if s then app.Spec = select(1, GetSpecializationInfo(s)); end
-	end
-	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-	for i,g in ipairs(self.data.g) do
-		if g.OnUpdate then g.OnUpdate(g); end
-	end
-	BuildGroups(self.data, self.data.g);
-	UpdateWindow(self, true);
 end);
-(function()
-	app:GetWindow("Random", UIParent, function(self)
+app:GetWindow("Random", UIParent, function(self)
+	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
 			local function SearchRecursively(group, field, temp)
@@ -10765,10 +10873,7 @@ end);
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			self:RegisterEvent("PLAYER_LOGIN");
-			self:SetScript("OnEvent", function(self, e, ...) 
-				rerollOption.text = "Reroll: " .. app.GetDataMember("RandomSearchFilter", "Instance");
-			end);
+			rerollOption.text = "Reroll: " .. app.GetDataMember("RandomSearchFilter", "Instance");
 		end
 		
 		-- Update the window and all of its row data
@@ -10778,211 +10883,198 @@ end);
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
-	end);
-end)();
-(function()
-	app:GetWindow("Tradeskills", UIParent, function(self, ...)
-		if not self.initialized then
-			self.initialized = true;
-			self:SetClampedToScreen(false);
-			self:RegisterEvent("TRADE_SKILL_SHOW");
-			self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
-			self:RegisterEvent("TRADE_SKILL_CLOSE");
-			self:RegisterEvent("NEW_RECIPE_LEARNED");
-			self.wait = 5;
-			self.data = {
-				['text'] = "Profession List",
-				['icon'] = "Interface\\Icons\\INV_Scroll_04.blp", 
-				["description"] = "Open your professions to cache them.",
-				['visible'] = true, 
-				['expanded'] = true,
-				["indent"] = 0,
-				['back'] = 1,
-				['g'] = { },
-			};
-			self.CacheRecipes = function(self)
-				-- Cache Learned Spells
-				local skillCache = fieldCache["spellID"];
-				if skillCache then
-					local tradeSkillID = AllTheThings.GetTradeSkillLine();
-					if tradeSkillID == self.lastTradeSkillID then
-						return false;
+	end
+end);
+app:GetWindow("Tradeskills", UIParent, function(self, ...)
+	if not self.initialized then
+		self.initialized = true;
+		self:SetClampedToScreen(false);
+		self:RegisterEvent("TRADE_SKILL_SHOW");
+		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+		self:RegisterEvent("TRADE_SKILL_CLOSE");
+		self:RegisterEvent("NEW_RECIPE_LEARNED");
+		self.wait = 5;
+		self.data = {
+			['text'] = "Profession List",
+			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp", 
+			["description"] = "Open your professions to cache them.",
+			['visible'] = true, 
+			['expanded'] = true,
+			["indent"] = 0,
+			['back'] = 1,
+			['g'] = { },
+		};
+		self.CacheRecipes = function(self)
+			-- Cache Learned Spells
+			local skillCache = fieldCache["spellID"];
+			if skillCache then
+				local tradeSkillID = AllTheThings.GetTradeSkillLine();
+				if tradeSkillID == self.lastTradeSkillID then
+					return false;
+				end
+				-- If it's not yours, don't take credit for it.
+				if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
+					return false;
+				end
+				self.lastTradeSkillID = tradeSkillID;
+				
+				local currentCategoryID, categories = -1, {};
+				local categoryIDs = { C_TradeSkillUI.GetCategories() };
+				for i = 1,#categoryIDs do
+					currentCategoryID = categoryIDs[i];
+					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+					if categoryData then
+						if not categories[currentCategoryID] then
+							app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+							categories[currentCategoryID] = true;
+						end
 					end
-					-- If it's not yours, don't take credit for it.
-					if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
-						return false;
-					end
-					self.lastTradeSkillID = tradeSkillID;
-					
-					local currentCategoryID, categories = -1, {};
-					local categoryIDs = { C_TradeSkillUI.GetCategories() };
-					for i = 1,#categoryIDs do
-						currentCategoryID = categoryIDs[i];
-						local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-						if categoryData then
-							if not categories[currentCategoryID] then
+				end
+				
+				-- Cache learned recipes
+				local learned = 0;
+				local reagentCache = app.GetDataMember("Reagents", {});
+				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+				for i = 1,#recipeIDs do
+					local spellRecipeInfo = {};
+					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+						currentCategoryID = spellRecipeInfo.categoryID;
+						if not categories[currentCategoryID] then
+							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+							if categoryData then
 								app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
 								categories[currentCategoryID] = true;
 							end
 						end
-					end
-					
-					-- Cache learned recipes
-					local learned = 0;
-					local reagentCache = app.GetDataMember("Reagents", {});
-					local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
-					for i = 1,#recipeIDs do
-						local spellRecipeInfo = {};
-						if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
-							currentCategoryID = spellRecipeInfo.categoryID;
-							if not categories[currentCategoryID] then
-								local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-								if categoryData then
-									app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
-									categories[currentCategoryID] = true;
-								end
-							end
-							if spellRecipeInfo.learned then
-								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-								if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-									SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-									learned = learned + 1;
-								end
-							end
-							if not skillCache[spellRecipeInfo.recipeID] then
-								--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-								skillCache[spellRecipeInfo.recipeID] = { {} };
-							end
-							local craftedItemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeItemLink(spellRecipeInfo.recipeID));
-							for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
-								local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);
-								local itemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeReagentItemLink(spellRecipeInfo.recipeID, i));
-								--print(spellRecipeInfo.recipeID, itemID, "=>", craftedItemID);
-								
-								-- Make sure a cache table exists for this item.
-								-- Index 1: The Recipe Skill IDs
-								-- Index 2: The Crafted Item IDs
-								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-								reagentCache[itemID][1][spellRecipeInfo.recipeID] = reagentCount;
-								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+						if spellRecipeInfo.learned then
+							SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+							if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+								learned = learned + 1;
 							end
 						end
-					end
-					
-					-- Open the Tradeskill list for this Profession
-					if self.tradeSkillID ~= tradeSkillID then
-						self.tradeSkillID = tradeSkillID;
-						for i,group in ipairs(app.Categories.Professions) do
-							if group.requireSkill == tradeSkillID then
-								self.data = setmetatable({ ['visible'] = true, ["indent"] = 0, total = 0, progress = 0 }, { __index = group });
-								BuildGroups(self.data, self.data.g);
-								app.UpdateGroups(self.data, self.data.g);
-								if not self.data.expanded then
-									self.data.expanded = true;
-									ExpandGroupsRecursively(self.data, true);
-								end
-								if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-									self:SetVisible(true);
-								end
-							end
+						if not skillCache[spellRecipeInfo.recipeID] then
+							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+							skillCache[spellRecipeInfo.recipeID] = { {} };
+						end
+						local craftedItemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeItemLink(spellRecipeInfo.recipeID));
+						for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
+							local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);
+							local itemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeReagentItemLink(spellRecipeInfo.recipeID, i));
+							--print(spellRecipeInfo.recipeID, itemID, "=>", craftedItemID);
+							
+							-- Make sure a cache table exists for this item.
+							-- Index 1: The Recipe Skill IDs
+							-- Index 2: The Crafted Item IDs
+							if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+							reagentCache[itemID][1][spellRecipeInfo.recipeID] = reagentCount;
+							if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
 						end
 					end
+				end
 				
-					-- If something new was "learned", then refresh the data.
-					if learned > 0 then
-						app:RefreshData(false, true);
-						app.print("Cached " .. learned .. " known recipes!");
-						wipe(searchCache);
+				-- Open the Tradeskill list for this Profession
+				if self.tradeSkillID ~= tradeSkillID then
+					self.tradeSkillID = tradeSkillID;
+					for i,group in ipairs(app.Categories.Professions) do
+						if group.requireSkill == tradeSkillID then
+							self.data = setmetatable({ ['visible'] = true, ["indent"] = 0, total = 0, progress = 0 }, { __index = group });
+							BuildGroups(self.data, self.data.g);
+							app.UpdateGroups(self.data, self.data.g);
+							if not self.data.expanded then
+								self.data.expanded = true;
+								ExpandGroupsRecursively(self.data, true);
+							end
+							if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+								self:SetVisible(true);
+							end
+						end
 					end
 				end
-			end
-			self.RefreshRecipes = function(self)
-				if app.CollectibleRecipes then
-					self.wait = 5;
-					StartCoroutine("RefreshingRecipes", function()
-						while self.wait > 0 do
-							self.wait = self.wait - 1;
-							coroutine.yield();
-						end
-						self:CacheRecipes();
-					end);
-				end
-			end
 			
-			-- Setup Event Handlers and register for events
-			self:SetScript("OnEvent", function(self, e, ...)
-				if e == "TRADE_SKILL_LIST_UPDATE" then
-					if self:IsVisible() then
-						-- If it's not yours, don't take credit for it.
-						if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
-							self:SetVisible(false);
-							return false;
-						end
-						
-						-- Check to see if ATT has information about this profession.
-						local tradeSkillID = AllTheThings.GetTradeSkillLine();
-						if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
-							if self:IsVisible() then
-								app.print("You must have a profession open to open the profession mini list.");
-							end
-							self:SetVisible(false);
-							return false;
-						end
-						
-						-- Set the Window to align with the Profession Window
-						self:ClearAllPoints();
-						self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-						self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
-						self:Update();
-					end
-					self:RefreshRecipes();
-				elseif e == "TRADE_SKILL_SHOW" then
-					if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-						self:SetVisible(true);
-					end
-					self:RefreshRecipes();
-				elseif e == "NEW_RECIPE_LEARNED" then
-					local spellID = ...;
-					if spellID then
-						local previousState = GetDataSubMember("CollectedSpells", spellID);
-						SetDataSubMember("CollectedSpells", spellID, 1);
-						if not GetTempDataSubMember("CollectedSpells", spellID) then
-							SetTempDataSubMember("CollectedSpells", spellID, 1);
-							app:RefreshData(true, true);
-							if not previousState or not app.Settings:Get("AccountWide:Recipes") then
-								app:PlayFanfare();
-							end
-							wipe(searchCache);
-							collectgarbage();
-						end
-					end
-				elseif e == "TRADE_SKILL_CLOSE" then
-					self:SetVisible(false);
+				-- If something new was "learned", then refresh the data.
+				if learned > 0 then
+					app:RefreshData(false, true);
+					app.print("Cached " .. learned .. " known recipes!");
+					wipe(searchCache);
 				end
-			end);
+			end
+		end
+		self.RefreshRecipes = function(self)
+			if app.CollectibleRecipes then
+				self.wait = 5;
+				StartCoroutine("RefreshingRecipes", function()
+					while self.wait > 0 do
+						self.wait = self.wait - 1;
+						coroutine.yield();
+					end
+					self:CacheRecipes();
+				end);
+			end
 		end
 		
+		-- Setup Event Handlers and register for events
+		self:SetScript("OnEvent", function(self, e, ...)
+			if e == "TRADE_SKILL_LIST_UPDATE" then
+				if self:IsVisible() then
+					-- If it's not yours, don't take credit for it.
+					if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
+						self:SetVisible(false);
+						return false;
+					end
+					
+					-- Check to see if ATT has information about this profession.
+					local tradeSkillID = AllTheThings.GetTradeSkillLine();
+					if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
+						if self:IsVisible() then
+							app.print("You must have a profession open to open the profession mini list.");
+						end
+						self:SetVisible(false);
+						return false;
+					end
+					
+					-- Set the Window to align with the Profession Window
+					self:ClearAllPoints();
+					self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+					self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+					self:Update();
+				end
+				self:RefreshRecipes();
+			elseif e == "TRADE_SKILL_SHOW" then
+				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+					self:SetVisible(true);
+				end
+				self:RefreshRecipes();
+			elseif e == "NEW_RECIPE_LEARNED" then
+				local spellID = ...;
+				if spellID then
+					local previousState = GetDataSubMember("CollectedSpells", spellID);
+					SetDataSubMember("CollectedSpells", spellID, 1);
+					if not GetTempDataSubMember("CollectedSpells", spellID) then
+						SetTempDataSubMember("CollectedSpells", spellID, 1);
+						app:RefreshData(true, true);
+						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
+							app:PlayFanfare();
+						end
+						wipe(searchCache);
+						collectgarbage();
+					end
+				end
+			elseif e == "TRADE_SKILL_CLOSE" then
+				self:SetVisible(false);
+			end
+		end);
+	end
+	if self:IsVisible() then
 		-- Update the window and all of its row data
 		self.data.progress = 0;
 		self.data.total = 0;
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, ...);
-	end);
-end)();
-(function()
-	local worldMapIDs = {
-		14,		-- Arathi Highlands
-		62,		-- Darkshore
-		875,	-- Zandalar
-		876,	-- Kul'Tiras
-		619,	-- The Broken Isles
-		885,	-- Antoran Wastes
-		830,	-- Krokuun
-		882,	-- Mac'Aree
-		1355,	-- Nazjatar
-		1462,	-- Mechagon Island
-	};
-	app:GetWindow("WorldQuests", UIParent, function(self)
+	end
+end);
+app:GetWindow("WorldQuests", UIParent, function(self)
+	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
 			self.data = {
@@ -11009,6 +11101,16 @@ end)();
 				},
 			};
 			self.rawData = {};
+			local worldMapIDs = {
+				14,		-- Arathi Highlands
+				62,		-- Darkshore
+				875,	-- Zandalar
+				876,	-- Kul'Tiras
+				619,	-- The Broken Isles
+				885,	-- Antoran Wastes
+				830,	-- Krokuun
+				882,	-- Mac'Aree
+			};
 			local OnUpdateForItem = function(self)
 				for i,o in ipairs(self.g) do
 					o.visible = false;
@@ -11250,8 +11352,8 @@ end)();
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
-	end);
-end)();
+	end
+end);
 
 hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 	local link = C_ToyBox_GetToyLink(itemID);
@@ -11300,23 +11402,47 @@ SLASH_AllTheThings1 = "/allthethings";
 SLASH_AllTheThings2 = "/things";
 SLASH_AllTheThings3 = "/att";
 SlashCmdList["AllTheThings"] = function(cmd)
-	if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
-		app.ToggleMainList();
-	elseif cmd == "mini" or cmd == "minilist" then
-		app:ToggleMiniListForCurrentZone();
-	elseif cmd == "ra" then
-		app:GetWindow("RaidAssistant"):Toggle();
-	elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
-		app:GetWindow("Random"):Toggle();
-	elseif cmd == "wq" then
-		app:GetWindow("WorldQuests"):Toggle();
-	elseif cmd == "unsorted" then
-		app:GetWindow("Unsorted"):Toggle();
-	else
+	if cmd then
+		cmd = string.lower(cmd);
+		if cmd == "" or cmd == "main" or cmd == "mainlist" then
+			app.ToggleMainList();
+			return true;
+		elseif cmd == "ra" then
+			app:GetWindow("RaidAssistant"):Toggle();
+			return true;
+		elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
+			app:GetWindow("Random"):Toggle();
+			return true;
+		elseif cmd == "wq" then
+			app:GetWindow("WorldQuests"):Toggle();
+			return true;
+		elseif cmd == "unsorted" then
+			app:GetWindow("Unsorted"):Toggle();
+			return true;
+		elseif strsub(cmd, 1, 4) == "mini" then
+			app:ToggleMiniListForCurrentZone();
+			return true;
+		else
+			local subcmd = strsub(cmd, 1, 6);
+			if subcmd == "mapid:" then
+				app:GetWindow("CurrentInstance"):SetMapID(tonumber(strsub(cmd, 7)));
+				return true;
+			end
+		end
+		
 		-- Search for the Link in the database
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		if group then CreateMiniListForGroup(group); end
+	else
+		-- Default command
+		app.ToggleMainList();
 	end
+end
+
+SLASH_AllTheThingsHARVESTER1 = "/attharvest";
+SLASH_AllTheThingsHARVESTER2 = "/attharvester";
+SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
+	app:GetWindow("Harvester"):Toggle();
 end
 
 SLASH_AllTheThingsMAPS1 = "/attmaps";
@@ -11324,7 +11450,14 @@ SlashCmdList["AllTheThingsMAPS"] = function(cmd)
 	app:GetWindow("CosmicInfuser"):Toggle();
 end
 
+SLASH_AllTheThingsMINI1 = "/attmini";
+SLASH_AllTheThingsMINI2 = "/attminilist";
+SlashCmdList["AllTheThingsMINI"] = function(cmd)
+	app:ToggleMiniListForCurrentZone();
+end
+
 SLASH_AllTheThingsRA1 = "/attra";
+SLASH_AllTheThingsRA2 = "/attraid";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
 end
@@ -11412,9 +11545,9 @@ app.events.VARIABLES_LOADED = function()
 	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.Faction = UnitFactionGroup("player");
 	if app.Faction == "Horde" then
-		app.FactionID = 2;
+		app.FactionID = Enum.FlightPathFaction.Horde;
 	elseif app.Faction == "Alliance" then
-		app.FactionID = 1;
+		app.FactionID = Enum.FlightPathFaction.Alliance;
 	else
 		-- Neutral Pandaren or... something else. Scourge? Neat.
 		app.FactionID = 0;
@@ -11426,9 +11559,10 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedFlightPaths", {});
 	GetDataMember("CollectedFollowers", {});
 	GetDataMember("CollectedMusicRolls", {});
+	GetDataMember("CollectedQuests", {});
 	GetDataMember("CollectedSelfieFilters", {});
-	GetDataMember("CollectedTitles", {});
 	GetDataMember("CollectedSpells", {});
+	GetDataMember("CollectedTitles", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
 	GetDataMember("ArtifactRelicItemLevels", {});
@@ -11518,6 +11652,15 @@ app.events.VARIABLES_LOADED = function()
 		musicRolls[app.GUID] = myMusicRolls;
 	end
 	
+	-- Cache your character's quest data.
+	local quests = GetDataMember("CollectedQuestsPerCharacter", {});
+	local myQuests = GetTempDataMember("CollectedQuests", quests[app.GUID]);
+	if not myQuests then
+		myQuests = {};
+		quests[app.GUID] = myQuests;
+		SetTempDataMember("CollectedQuests", myQuests);
+	end
+	
 	-- Cache your character's selfie filters data.
 	local selfieFilters = GetDataMember("CollectedSelfieFiltersPerCharacter", {});
 	local mySelfieFilters = GetTempDataMember("CollectedSelfieFilters", selfieFilters[app.GUID]);
@@ -11600,6 +11743,8 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedIllusions",
 		"CollectedMusicRolls",
 		"CollectedMusicRollsPerCharacter",
+		"CollectedQuests",
+		"CollectedQuestsPerCharacter",
 		"CollectedSelfieFilters",
 		"CollectedSelfieFiltersPerCharacter",
 		"CollectedSources",

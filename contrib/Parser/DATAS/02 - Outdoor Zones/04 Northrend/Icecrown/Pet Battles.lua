@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(118, {	-- Icecrown
-			n(-25, {	-- Pet Battles
+			filter(101, {	-- Pet Battle
 				p(641, {	-- Arctic Hare
 					["crs"] = { 62693 },	-- Arctic Hare
 				}),

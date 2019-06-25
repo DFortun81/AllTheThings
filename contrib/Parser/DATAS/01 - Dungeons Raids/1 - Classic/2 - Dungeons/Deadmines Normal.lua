@@ -8,65 +8,100 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 291,
 		["maps"] = { 292 },
 		["coord"] = { 25.59, 50.97, 55 },	-- Deadmines, The Deadmines [Westfall]
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				q(44930,{ -- Deadmines: Sea'in Red
-					["groups"] = {
-						{ -- Ensemble: Blackened Defias Armor
-							["groups"] = {
+					["qg"] = 115818,	-- Captain Bramblebeard
+					["classes"] = { 4 },
+					["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Rogue in Outlaw Specialization.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove (Wooden Catwalk & Boat)|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5,17).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon Green Wing Macaw (Extra Action Button will appear, grapple up the wall).|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept quest and kill pirates for the 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat process to get back to questgiver to turn in.|r",
+					["g"] = {
+						i(142273, {	-- Ensemble: Blackened Defias Armor
+							["classes"] = { 4 },	-- Rogue
+							["g"] = {
 								i(10399),	-- Blackened Defias Armor
 								i(10401),	-- Blackened Defias Gloves
 								i(10403),	-- Blackened Defias Belt
 								i(10400),	-- Blackened Defias Leggings
 								i(10402),	-- Blackened Defias Boots
 							},
-							["itemID"] = 142273,	-- Ensemble: Blackened Defias Armor
-							["classes"] = { 4 },	-- Rogue
-						},
+						}),
 					},
-					["qg"] = 115818,	-- Captain Bramblebeard
-					["classes"] = { 4 },
-					["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Rogue in Outlaw Specialization.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove (Wooden Catwalk & Boat)|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5,17).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon Green Wing Macaw (Extra Action Button will appear, grapple up the wall).|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept quest and kill pirates for the 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat process to get back to questgiver to turn in.|r",
 				}),
-				qa(27756, {	-- The Foreman
-					["qg"] = 46612,	-- Lieutenant Horatio Laine
+				q(27848, {	-- Good Intentions...Poor Execution
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 27847 },	-- Not Quite There
 				}),
-				qa(27758, {	-- The Carpenter
-					["sourceQuests"] = { 27756 },	-- The Foreman
+				q(27847, {	-- Not Quite There
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 27844 },	-- Traitors!!!
 				}),
-				qa(27781, {	-- The Machination
-					["sourceQuests"] = { 27758 },	-- The Carpenter
+				q(27842, {	-- Only the Beginning
+					["qg"] = 46889,	-- Kagtha
+					["races"] = HORDE_ONLY,
 				}),
-				qa(27785, {	-- The Admiral
+				q(214, { 	-- Red Silk Bandanas
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(6094)),		-- Piercing Axe
+						un(2, i(2089)), 	-- Scrimshaw Dagger
+						un(2, i(2074)), 	-- Solid Shortblade
+					},
+				}),
+				q(27785, {	-- The Admiral
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27781 },	-- The Machination
 				}),
-				qa(27790, {	-- The Defias Kingpin
-					["groups"] = {
+				q(27758, {	-- The Carpenter
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 27756 },	-- The Foreman
+				}),
+				q(166, { 	-- The Defias Brotherhood
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(6087)),		-- Chausses of Westfall
+						un(2, i(2042)),		-- Staff of Westfall
+						un(2, i(2041)),		-- Tunic of Westfall
+					},
+				}),
+				q(27790, {	-- The Defias Kingpin
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 27785 },	-- The Admiral
+					["g"] = {
 						i(65935),	-- Cookie's Meat Mallet
 						i(65959),	-- Cookie's Stirring Stick
 						i(65983),	-- Cookie's Table Cloth
 					},
-					["sourceQuests"] = { 27785 },	-- The Admiral
 				}),
-				qh(27842, {	-- Only the Beginning
-					["qg"] = 46889,	-- Kagtha
-				}),
-				qh(27844, {	-- Traitors!!!
-					["sourceQuests"] = { 27842 },	-- Only the Beginning
-				}),
-				qh(27847, {	-- Not Quite There
-					["sourceQuests"] = { 27844 },	-- Traitors!!!
-				}),
-				qh(27848, {	-- Good Intentions...Poor Execution
-					["sourceQuests"] = { 27847 },	-- Not Quite There
-				}),
-				qh(27850, {	-- The Defias Kingpin
-					["groups"] = {
+				q(27850, {	-- The Defias Kingpin
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 27848 },	-- Good Intentions...Poor Execution
+					["g"] = {
 						i(66019),	-- Cookie's Meat Mallet
 						i(66028),	-- Cookie's Stirring Rod
 						i(66037),	-- Cookie's Table Cloth
 					},
-					["sourceQuests"] = { 27848 },	-- Good Intentions...Poor Execution
+				}),
+				q(27756, {	-- The Foreman
+					["qg"] = 46612,	-- Lieutenant Horatio Laine
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27781, {	-- The Machination
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 27758 },	-- The Carpenter
+				}),
+				q(27844, {	-- Traitors!!!
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 27842 },	-- Only the Beginning
+				}),
+				q(2040, { 	-- Underground Assault
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(7606)),		-- Polar Gauntlets
+						un(2, i(7607)),		-- Sable Wand
+					},
 				}),
 			}),
 			n(0, {	-- Zone Drop
@@ -103,7 +138,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			d(  1, {	-- Normal
+			d(1, {	-- Normal
 				cr(47162, e(89, {	-- Glubtok
 					i(2169),	-- Buzzer Blade
 					i(5444),	-- Miner's Cape
@@ -145,41 +180,19 @@ _.Instances = { tier(1, {	-- Classic
 					i(5202),	-- Corsair's Overshirt
 				})),
 				n(-40, {	-- Legacy
-					n(-17, {	-- Quests (Legacy)
-						un(40, qa(214, { 	-- Red Silk Bandanas
-							un(2, i(6094)),		-- Piercing Axe
-							un(2, i(2089)), 	-- Scrimshaw Dagger
-							un(2, i(2074)), 	-- Solid Shortblade
-						})),
-						un(40, qa(166, { 	-- The Defias Brotherhood
-							un(2, i(6087)),		-- Chausses of Westfall
-							un(2, i(2042)),		-- Staff of Westfall
-							un(2, i(2041)),		-- Tunic of Westfall
-						})),
-						un(40, qa(2040, { 	-- Underground Assault
-							un(2, i(7606)),		-- Polar Gauntlets
-							un(2, i(7607)),		-- Sable Wand
-						})),
-					}),
-					n(0, {	-- Zone Drops
+					n(0, {	-- Zone Drops -- TODO:: These are all from the original version of deadmines. Should these be merged into the rest of this file or left in a dedicated header?
 						un(43, n(647, { 	-- Captain Greenskin
 							i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
-								["groups"] = {
-								},
 								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(4416, { 	-- Defias Strip Miner
 							i(10402, {	-- Blackend Defias Boots **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
-								["groups"] = {
-								},
 								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(639, { 	-- Edwin Van Cleef
 							i(10399, {	-- Blackened Defias Armor **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
-								["groups"] = {
-								},
 								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
 							}),
 						})),

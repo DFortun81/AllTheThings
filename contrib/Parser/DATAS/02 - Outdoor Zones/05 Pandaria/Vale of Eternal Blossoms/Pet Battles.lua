@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
-			n(-25, {	-- Pet Battles
+			filter(101, {	-- Pet Battle
 				q(32603, {	-- Beasts of Fable
 					["g"] = {
 						i(94025),	-- Red Panda

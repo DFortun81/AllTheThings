@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		h(m(590, {	-- Frostwall
 			["groups"] = {
-				nh(-25, { 	-- Pet Battle
+				filter(101, { 	-- Pet Battle
 					p(560),	-- Sea Gull
 					ach(9264),	-- Draenor Pet Brawler
 					{	-- Battle Pet Tamers: Warlords

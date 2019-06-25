@@ -179,6 +179,7 @@ for key,value in pairs({
 	[190104] = "Secchio delle Caramelle",
 	[190917] = "Posta Abbandonata",
 	[190936] = "Calderone della Piaga",
+	[191728] = "Ricercato!",
 	[191760] = "Console della Biblioteca dell'Intelletto",
 	[191761] = "Console dei Prototipi",
 	[192049] = "Banco di Aringhe Zannute",
@@ -925,6 +926,7 @@ for key,value in pairs({
 	[294317] = "Cassa dei Legnomorto",
 	[294319] = "Tesoro Sepolto nella Sabbia",
 --	[294703] = "Grimmy's Rusty Lockbox",						-- No Translation
+	[296536] = "Trilama Insanguinata della Sentinella",
 	[297825] = "Cassa Coperta di Ragnatele",
 	[297828] = "Cassa del Mercante",
 	[297878] = "Cassa Maledetta",

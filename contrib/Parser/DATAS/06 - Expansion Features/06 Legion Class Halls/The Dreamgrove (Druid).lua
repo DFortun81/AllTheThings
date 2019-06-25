@@ -19,7 +19,7 @@ _.ExpansionFeatures =
 						i(140741),	-- Nightmare Lasher Pet
 					},
 				}),
-				n(-25, {	-- Pet Battle
+				filter(101, { 	-- Pet Battle
 					p(479),	-- Elfin Rabbit
 				}),
 				n(-17, {	-- Quests

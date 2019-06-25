@@ -1,11 +1,12 @@
-﻿using System;
+﻿using NLua;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Parser_V2
+namespace ATT
 {
     // Framework extension for Objects
     partial class Framework
@@ -48,901 +49,6 @@ namespace Parser_V2
             public static List<object> GetNull(string containerName)
             {
                 return AllContainers.TryGetValue(containerName, out List<object> obj) ? obj : null;
-            }
-            #endregion
-            #region Fields
-            /// <summary>
-            /// All of the object contructors used by the exporter ordered by export priority.
-            /// </summary>
-            private static readonly IDictionary<string, ObjectData> OBJECT_CONSTRUCTORS = new Dictionary<string, ObjectData>();
-
-            /// <summary>
-            /// All of the Object ID fields sorted by export priority.
-            /// </summary>
-            private static readonly List<ObjectData> OBJECT_ID_FIELDS = new List<ObjectData>
-            {
-                new ObjectData("buildingID", "gb", new List<string>{ "f", "spellID" }),
-                new ToyData("isToy", "toy", new List<string>{ "f", "spellID" }),                // Toy ID
-                new ToyData("toyID", "toy", new List<string>{ "f", "spellID" }),                // Toy ID
-                new MountData("mountID", "mnt", new List<string>{ "f", "spellID" }),            // Mount ID (TODO: Add item ID cache data if missing)
-                new SpeciesData("speciesID", "p", new List<string>{ "f", "spellID" }),          // Species ID (TODO: Add item ID cache data if missing)
-                new MusicRollData("musicRollID", "mr", new List<string>{ "f", "spellID" }),     // Music Roll ID (TODO: Add item ID cache data if missing)
-                new ObjectData("instanceID", "inst", new List<string>{ "f" }),
-                new ObjectData("artifactID", "artifact", new List<string>{ "f" }),
-                new HeirloomData("heirloomID", "heir"),
-                new ObjectData("holidayID", "ho", new List<string>{ "f" }),
-                new ItemSourceData("s", "s"),
-                new ObjectData("categoryID", "cat", new List<string>{ "f" }),
-                new ObjectData("category", "tcat", new List<string>{ "f" }),
-                new ObjectData("classID", "cl", new List<string>{ "f" }),
-                new ObjectData("raceID", "ra", new List<string>{ "f" }),
-                new ObjectData("criteriaID", "crit", new List<string>{ "f" }),
-                new ObjectData("difficultyID", "d", new List<string>{ "f" }),
-                new ObjectData("encounterID", "e", new List<string>{ "f" }),
-                new ObjectData("flightPathID", "fp", new List<string>{ "f" }),
-                new NPCData("npcID", "n", new List<string>{ "f" }),
-                new ObjectData("objectID", "o", new List<string>{ "f" }),
-                new ObjectData("petAbilityID", "pa", new List<string>{ "f" }),
-                new ObjectData("petTypeID", "pt", new List<string>{ "f" }),
-                new ObjectData("followerID", "follower", new List<string>{ "f" }),
-                new ObjectData("missionID", "gm", new List<string>{ "f" }),
-                new ObjectData("talentID", "gt", new List<string>{ "f" }),
-                new ObjectData("mapID", "m", new List<string>{ "f" }),
-                new ObjectData("illusionID", "ill", new List<string>{ "f", "spellID" }),
-                new ObjectData("recipeID", "r", new List<string>{ "f", "spellID" }),
-                new ObjectData("spellID", "sp", new List<string>{ "f" }),
-                new ObjectData("setID", "gs", new List<string>{ "f" }),
-                new ObjectData("setHeaderID", "gsh", new List<string>{ "f" }),
-                new ObjectData("setSubHeaderID", "gssh", new List<string>{ "f" }),
-                new ObjectData("titleID", "title", new List<string>{ "f" }),
-                new ObjectData("currencyID", "cu", new List<string>{ "f" }),
-                new ItemData("itemID", "i", new List<string>{ "f" }),
-                new ObjectData("factionID", "faction", new List<string>{ "f" }),
-                new QuestData("questID", "q", new List<string>{ "f" }),
-                new ObjectData("achID", "ach", new List<string>{ "f" }),
-                new ObjectData("tierID", "t", new List<string>{ "f" }),
-                new ObjectData("professionID", "prof", new List<string>{ "requireSkill" }),
-                new ObjectData("vignetteID", "v", new List<string>{ "f" }),
-                new ObjectData("f", "flt"),
-            };
-
-            /// <summary>
-            /// This table is used for Skill ID conversions from the new style BFA Skill IDs to the original style.
-            /// </summary>
-            public static readonly Dictionary<object, object> SKILL_ID_CONVERSION_TABLE = new Dictionary<object, object>
-            {
-	            // Alchemy Skills
-	            {171, 171},	// Alchemy [7.3.5]
-	            {2485, 171},	// Classic Alchemy [8.0.1]
-	            {2484, 171},	// Outland Alchemy [8.0.1]
-	            {2483, 171},	// Northrend Alchemy [8.0.1]
-	            {2482, 171},	// Cataclysm Alchemy [8.0.1]
-	            {2481, 171},	// Pandaria Alchemy [8.0.1]
-	            {2480, 171},	// Draenor Alchemy [8.0.1]
-	            {2479, 171},	// Legion Alchemy [8.0.1]
-	            {2478, 171},	// Kul Tiran Alchemy [8.0.1]
-
-	            // Archaeology Skills
-	            {794, 794},	// Archaeology [7.3.5]
-
-	            // Blacksmithing Skills
-	            {164, 164},	// Blacksmithing [7.3.5]
-	            {2477, 164},	// Classic Blacksmithing [8.0.1]
-	            {2476, 164},	// Outland Blacksmithing [8.0.1]
-	            {2475, 164},	// Northrend Blacksmithing [8.0.1]
-	            {2474, 164},	// Cataclysm Blacksmithing [8.0.1]
-	            {2473, 164},	// Pandaria Blacksmithing [8.0.1]
-	            {2472, 164},	// Draenor Blacksmithing [8.0.1]
-	            {2454, 164},	// Legion Blacksmithing [8.0.1]
-	            {2437, 164},	// Kul Tiran Blacksmithing [8.0.1]
-
-	            // Cooking Skills
-	            {185, 185},	    // Cooking [7.3.5]
-                {975, 185},     // Way of the Grill
-                {976, 185},     // Way of the Wok
-                {977, 185},     // Way of the Pot
-                {978, 185},     // Way of the Steamer
-                {979, 185},     // Way of the Oven
-                {980, 185},     // Way of the Brew
-	            {2548, 185},	// Classic Cooking [8.0.1]
-	            {2547, 185},	// Outland Cooking [8.0.1]
-	            {2546, 185},	// Northrend Cooking [8.0.1]
-	            {2545, 185},	// Cataclysm Cooking [8.0.1]
-	            {2544, 185},	// Pandaria Cooking [8.0.1]
-	            {2543, 185},	// Draenor Cooking [8.0.1]
-	            {2542, 185},	// Legion Cooking [8.0.1]
-	            {2541, 185},	// Kul Tiran Cooking [8.0.1]
-
-	            // Enchanting Skills
-	            {333, 333},	// Enchanting [7.3.5]
-	            {2494, 333},	// Classic Enchanting [8.0.1]
-	            {2493, 333},	// Outland Enchanting [8.0.1]
-	            {2492, 333},	// Northrend Enchanting [8.0.1]
-	            {2491, 333},	// Cataclysm Enchanting [8.0.1]
-	            {2489, 333},	// Pandaria Enchanting [8.0.1]
-	            {2488, 333},	// Draenor Enchanting [8.0.1]
-	            {2487, 333},	// Legion Enchanting [8.0.1]
-	            {2486, 333},	// Kul Tiran Enchanting [8.0.1]
-
-	            // Engineering Skills
-	            {202, 202},	// Engineering [7.3.5]
-	            {2506, 202},	// Classic Engineering [8.0.1]
-	            {2505, 202},	// Outland Engineering [8.0.1]
-	            {2504, 202},	// Northrend Engineering [8.0.1]
-	            {2503, 202},	// Cataclysm Engineering [8.0.1]
-	            {2502, 202},	// Pandaria Engineering [8.0.1]
-	            {2501, 202},	// Draenor Engineering [8.0.1]
-	            {2500, 202},	// Legion Engineering [8.0.1]
-	            {2499, 202},	// Kul Tiran Engineering [8.0.1]
-
-	            // First Aid Skills
-	            {129, 129},	// First Aid [7.3.5] [REMOVED FROM GAME]
-
-	            // Fishing Skills
-	            {356, 356},	// Fishing [7.3.5]
-	            {2592, 356},	// Classic Fishing [8.0.1]
-	            {2591, 356},	// Outland Fishing [8.0.1]
-	            {2590, 356},	// Northrend Fishing [8.0.1]
-	            {2589, 356},	// Cataclysm Fishing [8.0.1]
-	            {2588, 356},	// Pandaria Fishing [8.0.1]
-	            {2587, 356},	// Draenor Fishing [8.0.1]
-	            {2586, 356},	// Legion Fishing [8.0.1]
-	            {2585, 356},	// Kul Tiran Fishing [8.0.1]
-
-	            // Herbalism Skills
-	            {182, 182},	// Herbalism [7.3.5]
-	            {2556, 182},	// Classic Herbalism [8.0.1]
-	            {2555, 182},	// Outland Herbalism [8.0.1]
-	            {2554, 182},	// Northrend Herbalism [8.0.1]
-	            {2553, 182},	// Cataclysm Herbalism [8.0.1]
-	            {2552, 182},	// Pandaria Herbalism [8.0.1]
-	            {2551, 182},	// Draenor Herbalism [8.0.1]
-	            {2550, 182},	// Legion Herbalism [8.0.1]
-	            {2549, 182},	// Kul Tiran Herbalism [8.0.1]
-
-	            // Inscription Skills
-	            {773, 773},	// Inscription [7.3.5]
-	            {2514, 773},	// Classic Inscription [8.0.1]
-	            {2513, 773},	// Outland Inscription [8.0.1]
-	            {2512, 773},	// Northrend Inscription [8.0.1]
-	            {2511, 773},	// Cataclysm Inscription [8.0.1]
-	            {2510, 773},	// Pandaria Inscription [8.0.1]
-	            {2509, 773},	// Draenor Inscription [8.0.1]
-	            {2508, 773},	// Legion Inscription [8.0.1]
-	            {2507, 773},	// Kul Tiran Inscription [8.0.1]
-
-	            // Jewelcrafting Skills
-	            {755, 755},	// Jewelcrafting [7.3.5]
-	            {2524, 755},	// Classic Jewelcrafting [8.0.1]
-	            {2523, 755},	// Outland Jewelcrafting [8.0.1]
-	            {2522, 755},	// Northrend Jewelcrafting [8.0.1]
-	            {2521, 755},	// Cataclysm Jewelcrafting [8.0.1]
-	            {2520, 755},	// Pandaria Jewelcrafting [8.0.1]
-	            {2519, 755},	// Draenor Jewelcrafting [8.0.1]
-	            {2518, 755},	// Legion Jewelcrafting [8.0.1]
-	            {2517, 755},	// Kul Tiran Jewelcrafting [8.0.1]
-
-	            // Leatherworking Skills
-	            {165, 165},	// Leatherworking [7.3.5]
-	            {2532, 165},	// Classic Leatherworking [8.0.1]
-	            {2531, 165},	// Outland Leatherworking [8.0.1]
-	            {2530, 165},	// Northrend Leatherworking [8.0.1]
-	            {2529, 165},	// Cataclysm Leatherworking [8.0.1]
-	            {2528, 165},	// Pandaria Leatherworking [8.0.1]
-	            {2527, 165},	// Draenor Leatherworking [8.0.1]
-	            {2526, 165},	// Legion Leatherworking [8.0.1]
-	            {2525, 165},	// Kul Tiran Leatherworking [8.0.1]
-
-	            // Mining Skills
-	            {186, 186},	// Mining [7.3.5]
-	            {2572, 186},	// Classic Mining [8.0.1]
-	            {2571, 186},	// Outland Mining [8.0.1]
-	            {2570, 186},	// Northrend Mining [8.0.1]
-	            {2569, 186},	// Cataclysm Mining [8.0.1]
-	            {2568, 186},	// Pandaria Mining [8.0.1]
-	            {2567, 186},	// Draenor Mining [8.0.1]
-	            {2566, 186},	// Legion Mining [8.0.1]
-	            {2565, 186},	// Kul Tiran Mining [8.0.1]
-
-	            // Skinning Skills
-	            {393, 393},	// Skinning [7.3.5]
-	            {2564, 393},	// Classic Skinning [8.0.1]
-	            {2563, 393},	// Outland Skinning [8.0.1]
-	            {2562, 393},	// Northrend Skinning [8.0.1]
-	            {2561, 393},	// Cataclysm Skinning [8.0.1]
-	            {2560, 393},	// Pandaria Skinning [8.0.1]
-	            {2559, 393},	// Draenor Skinning [8.0.1]
-	            {2558, 393},	// Legion Skinning [8.0.1]
-	            {2557, 393},	// Kul Tiran Skinning [8.0.1]
-
-	            // Tailoring Skills
-	            {197, 197},	// Tailoring [7.3.5]
-	            {2540, 197},	// Classic Tailoring [8.0.1]
-	            {2539, 197},	// Outland Tailoring [8.0.1]
-	            {2538, 197},	// Northrend Tailoring [8.0.1]
-	            {2537, 197},	// Cataclysm Tailoring [8.0.1]
-	            {2536, 197},	// Pandaria Tailoring [8.0.1]
-	            {2535, 197},	// Draenor Tailoring [8.0.1]
-	            {2534, 197},	// Legion Tailoring [8.0.1]
-	            {2533, 197},    // Kul Tiran Tailoring [8.0.1]
-            };
-
-            #region Object Data Classes
-            /// <summary>
-            /// The item source data class.
-            /// This writes the sourceID to the constructor.
-            /// </summary>
-            public class ItemSourceData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public ItemSourceData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public ItemSourceData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    // Write the default data field to the builder.
-                    Framework.Export(builder, data[ObjectType]);
-                    fields.Remove(ObjectType);
-
-                    // Export the Item ID as the second argument.
-                    builder.Append(',');
-                    Framework.Export(builder, data["itemID"]);
-                    fields.Remove("itemID");
-                }
-                #endregion
-            }
-
-            /// <summary>
-            /// The object data class.
-            /// Contains the shortcut used by the constructor and a list of all explicitly black listed fields.
-            /// </summary>
-            public class ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public ObjectData(string objectType, string shortcut) : this(objectType, shortcut, new List<string>())
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public ObjectData(string objectType, string shortcut, List<string> blacklist)
-                {
-                    OBJECT_CONSTRUCTORS[ObjectType = objectType] = this;
-                    BlacklistedFields = blacklist;
-                    ConstructorShortcut = shortcut;
-                }
-                #endregion
-                #region Properties
-                /// <summary>
-                /// The blacklisted fields.
-                /// </summary>
-                public List<string> BlacklistedFields { get; private set; }
-
-                /// <summary>
-                /// The constructor shortcut.
-                /// </summary>
-                public string ConstructorShortcut { get; private set; }
-
-                /// <summary>
-                /// The object type.
-                /// </summary>
-                public string ObjectType { get; private set; }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// Build the object.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public virtual void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    builder.Append(ConstructorShortcut).Append('(');
-                    Constructor(builder, data, fields);
-                }
-
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public virtual void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    // Write the default data field to the builder.
-                    Framework.Export(builder, data[ObjectType]);
-                    fields.Remove(ObjectType);
-                }
-                #endregion
-            }
-
-
-            /// <summary>
-            /// The heirloom data class.
-            /// This writes the heirloomID to the constructor.
-            /// </summary>
-            public class HeirloomData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public HeirloomData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public HeirloomData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    // Write the default data field to the builder.
-                    Framework.Export(builder, data[ObjectType]);
-                    fields.Remove(ObjectType);
-
-                    // Check to make sure that only filterable types get written here.
-                    // Rings, Necks, and Trinkets by default will 
-                    if (data.TryGetValue("f", out object fObj))
-                    {
-                        var f = Convert.ToInt32(fObj);
-                        if (f == 51 || f == 52 || f == 53) fields.Remove("f");
-                    }
-                }
-                #endregion
-            }
-
-            /// <summary>
-            /// The item data class.
-            /// This writes the itemID to the constructor.
-            /// </summary>
-            public class ItemData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public ItemData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public ItemData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// Build the object.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    if (data.TryGetValue("f", out object fObj) && Convert.ToInt32(fObj) == 60)
-                    {
-                        builder.Append("selfie(");
-                        Framework.Export(builder, data["questID"]);
-                        fields.Remove("questID");
-                    }
-                    else
-                    {
-                        builder.Append(ConstructorShortcut).Append('(');
-                        Framework.Export(builder, data[ObjectType]);
-                        fields.Remove(ObjectType);
-                    }
-                    Constructor(builder, data, fields);
-                }
-
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-
-                }
-                #endregion
-            }
-
-            /// <summary>
-            /// The mount data class.
-            /// This writes the mountID to the constructor.
-            /// </summary>
-            public class MountData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public MountData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public MountData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    // Write the default data field to the builder.
-                    Framework.Export(builder, data[ObjectType]);
-                    fields.Remove(ObjectType);
-
-                    // Export the Item ID as the second argument.
-                    //builder.Append(',');
-                    //Framework.Export(builder, data["itemID"]);
-                    //fields.Remove("itemID");
-
-                    // If this data dictionary doesn't have the itemID, let's get it in there.
-                    if (data.ContainsKey("itemID")) return;
-
-                    // TODO: Attach the itemID if it's cached somewhere.
-                }
-                #endregion
-            }
-
-            /// <summary>
-            /// The music roll data class.
-            /// This writes the musicRollID to the constructor.
-            /// </summary>
-            public class MusicRollData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public MusicRollData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public MusicRollData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    // Write the default data field to the builder.
-                    Framework.Export(builder, data[ObjectType]);
-                    fields.Remove(ObjectType);
-
-                    // Export the Item ID as the second argument.
-                    //builder.Append(',');
-                    //Framework.Export(builder, data["itemID"]);
-                    //fields.Remove("itemID");
-                }
-                #endregion
-            }
-
-            /// <summary>
-            /// The NPC data class.
-            /// This writes the npcID to the constructor.
-            /// </summary>
-            public class NPCData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public NPCData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public NPCData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// Build the object.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    if (data.TryGetValue("f", out object fObj) && Convert.ToInt32(fObj) == 60)
-                    {
-                        builder.Append("selfie(");
-                        Framework.Export(builder, data["questID"]);
-                        fields.Remove("questID");
-                    }
-                    else
-                    {
-                        builder.Append(ConstructorShortcut).Append('(');
-                        Framework.Export(builder, data[ObjectType]);
-                        fields.Remove(ObjectType);
-                    }
-                    Constructor(builder, data, fields);
-                }
-
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    
-                }
-                #endregion
-            }
-
-
-            /// <summary>
-            /// The species data class.
-            /// This writes the speciesID to the constructor.
-            /// </summary>
-            public class SpeciesData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public SpeciesData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public SpeciesData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    // Write the default data field to the builder.
-                    Framework.Export(builder, data[ObjectType]);
-                    fields.Remove(ObjectType);
-
-                    // Export the Item ID as the second argument.
-                    //builder.Append(',');
-                    //Framework.Export(builder, data["itemID"]);
-                    //fields.Remove("itemID");
-                }
-                #endregion
-            }
-
-            /// <summary>
-            /// The toy data class.
-            /// This writes the toyID to the constructor.
-            /// </summary>
-            public class ToyData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public ToyData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public ToyData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// The constructor.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    // Remove the identification fields.
-                    fields.Remove("isToy");
-                    fields.Remove("toyID");
-                    fields.Remove("itemID");
-
-                    // Write the Item ID as the primary field.
-                    if (data.TryGetValue("itemID", out object itemIDRef) || data.TryGetValue("toyID", out itemIDRef))
-                    {
-                        Framework.Export(builder, itemIDRef);
-                    }
-                }
-                #endregion
-            }
-
-            /// <summary>
-            /// The quest data class.
-            /// This writes the questID to the constructor.
-            /// </summary>
-            public class QuestData : ObjectData
-            {
-                #region Constructor
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                public QuestData(string objectType, string shortcut) : base(objectType, shortcut)
-                {
-
-                }
-
-                /// <summary>
-                /// Create a data container for the shortcut.
-                /// </summary>
-                /// <param name="objectType">The object type.</param>
-                /// <param name="shortcut">The shortcut.</param>
-                /// <param name="blacklist">The blacklist.</param>
-                public QuestData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
-                {
-
-                }
-                #endregion
-                #region Functionality
-                /// <summary>
-                /// Build the object.
-                /// This writes the primary field and removes it from the list of available fields.
-                /// </summary>
-                /// <param name="builder">The builder.</param>
-                /// <param name="data">The data.</param>
-                /// <param name="fields">The fields.</param>
-                public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-                {
-                    if (data.TryGetValue("f", out object fObj) && Convert.ToInt32(fObj) == 60)
-                    {
-                        builder.Append("selfie(");
-                    }
-                    else builder.Append(ConstructorShortcut).Append('(');
-                    Constructor(builder, data, fields);
-                }
-                #endregion
-            }
-            #endregion
-
-            /// <summary>
-            /// Calculate the most significant field type.
-            /// </summary>
-            /// <param name="data">The data dictionary.</param>
-            /// <returns>The most signficant field type or null if unknown.</returns>
-            public static string CalculateMostSignificantFieldType(Dictionary<string, object> data)
-            {
-                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                string defaultValue = null;
-                foreach (var objectType in OBJECT_ID_FIELDS)
-                {
-                    if (data.TryGetValue(objectType.ObjectType, out object objRef))
-                    {
-                        if (Convert.ToInt32(objRef) == 0) defaultValue = objectType.ObjectType;
-                        else return objectType.ObjectType;
-                    }
-                }
-                return defaultValue;
-            }
-
-            /// <summary>
-            /// Calculate the most significant field type.
-            /// </summary>
-            /// <param name="data">The data dictionary.</param>
-            /// <returns>The most signficant field type or null if unknown.</returns>
-            public static string CalculateMostSignificantFieldType(Dictionary<object, object> data)
-            {
-                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                string defaultValue = null;
-                foreach (var objectType in OBJECT_ID_FIELDS)
-                {
-                    if (data.TryGetValue(objectType.ObjectType, out object objRef))
-                    {
-                        if (Convert.ToInt32(objRef) == 0) defaultValue = objectType.ObjectType;
-                        else return objectType.ObjectType;
-                    }
-                }
-                return defaultValue;
-            }
-
-            /// <summary>
-            /// Export the contructor for the data dictionary.
-            /// </summary>
-            /// <typeparam name="VALUE">The value type.</typeparam>
-            /// <param name="builder">The builder.</param>
-            /// <param name="data">The data dictionary.</param>
-            /// <param name="fields">The list of remaining fields to write.</param>
-            /// <returns>Whether or not the constructor was found.</returns>
-            public static bool ExportConstructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
-            {
-                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                var mostSignificantType = Objects.CalculateMostSignificantFieldType(data);
-                if (string.IsNullOrEmpty(mostSignificantType)) return false;
-
-                // Write the Constructor with the highest priority
-                if (OBJECT_CONSTRUCTORS.TryGetValue(mostSignificantType, out ObjectData constructor))
-                {
-                    // Write the shortcut for the shortcut and the required types.
-                    constructor.Build(builder, data, fields);
-
-                    // Remove globally blacklisted fields.
-                    fields.Remove("ilvl");
-                    fields.Remove("name");
-                    fields.Remove("q");
-
-                    // Conditionally remove certain fields.
-                    if (data.TryGetValue("b", out object objRef))
-                    {
-                        // If not BoP, then don't write the field.
-                        if (Convert.ToInt32(objRef) < 1) fields.Remove("b");
-                    }
-                    if (data.TryGetValue("bonusID", out objRef))
-                    {
-                        // Bonus ID <1 is default, so we don't need to write it.
-                        // Additionally, there must be an itemID for the bonusID to be present.
-                        if (Convert.ToInt32(objRef) < 2 || !data.ContainsKey("itemID")) fields.Remove("bonusID");
-                    }
-                    if (data.TryGetValue("modID", out objRef))
-                    {
-                        // Mod ID 1 is default, so we don't need to write it.
-                        // Additionally, there must be an itemID for the modID to be present.
-                        if (Convert.ToInt32(objRef) < 2 || !data.ContainsKey("itemID")) fields.Remove("modID");
-                    }
-                    if (data.TryGetValue("f", out objRef))
-                    {
-                        // If invalid, then don't write the field.
-                        if (Convert.ToInt32(objRef) < 0) fields.Remove("f");
-                    }
-                    /*
-                    if (data.TryGetValue("lvl", out objRef))
-                    {
-                        // No lvl field for items
-                        if (data.ContainsKey("itemID")) fields.Remove("lvl");
-                    }
-                    */
-
-                    // Remove Blacklisted Fields for this object type.
-                    foreach (var field in constructor.BlacklistedFields)
-                    {
-                        fields.Remove(field);
-                    }
-                    return true;
-                }
-                return false;
             }
             #endregion
             #region Filters
@@ -995,6 +101,7 @@ namespace Parser_V2
                 Reagent = 56,
                 FishingPole = 57,
                 Containers = 58,
+                ClassBooks = 59,
 
                 // Non-Equipment Types
                 Mount = 100,
@@ -1013,7 +120,9 @@ namespace Parser_V2
                 Bag = 113,
 
                 // Recipes
-                Recipe = 200
+                Recipe = 200,
+
+                EventItem = 999,
             }
 
             /// <summary>
@@ -1294,11 +403,172 @@ namespace Parser_V2
             public static void AssignFilterID(Dictionary<string, object> data)
             {
                 // If an object already has a filter ID assigned and the ID is valid, ignore it.
-                if (data.TryGetValue("f", out object temp) && Convert.ToInt32(temp) > 0) return;
+                if (data.TryGetValue("f", out int f) && f > 0) return;
 
                 // Calculate the filter ID. (0 is invalid, -1 is explicitly ignored)
                 data["f"] = (int)CalculateFilter(data);
             }
+
+            /// <summary>
+            /// This table is used for Skill ID conversions from the new style BFA Skill IDs to the original style.
+            /// </summary>
+            public static readonly Dictionary<object, object> SKILL_ID_CONVERSION_TABLE = new Dictionary<object, object>
+            {
+	            // Alchemy Skills
+	            {171, 171},	// Alchemy [7.3.5]
+	            {2485, 171},	// Classic Alchemy [8.0.1]
+	            {2484, 171},	// Outland Alchemy [8.0.1]
+	            {2483, 171},	// Northrend Alchemy [8.0.1]
+	            {2482, 171},	// Cataclysm Alchemy [8.0.1]
+	            {2481, 171},	// Pandaria Alchemy [8.0.1]
+	            {2480, 171},	// Draenor Alchemy [8.0.1]
+	            {2479, 171},	// Legion Alchemy [8.0.1]
+	            {2478, 171},	// Kul Tiran Alchemy [8.0.1]
+
+	            // Archaeology Skills
+	            {794, 794},	// Archaeology [7.3.5]
+
+	            // Blacksmithing Skills
+	            {164, 164},	// Blacksmithing [7.3.5]
+	            {2477, 164},	// Classic Blacksmithing [8.0.1]
+	            {2476, 164},	// Outland Blacksmithing [8.0.1]
+	            {2475, 164},	// Northrend Blacksmithing [8.0.1]
+	            {2474, 164},	// Cataclysm Blacksmithing [8.0.1]
+	            {2473, 164},	// Pandaria Blacksmithing [8.0.1]
+	            {2472, 164},	// Draenor Blacksmithing [8.0.1]
+	            {2454, 164},	// Legion Blacksmithing [8.0.1]
+	            {2437, 164},	// Kul Tiran Blacksmithing [8.0.1]
+
+	            // Cooking Skills
+	            {185, 185},	    // Cooking [7.3.5]
+                {975, 185},     // Way of the Grill
+                {976, 185},     // Way of the Wok
+                {977, 185},     // Way of the Pot
+                {978, 185},     // Way of the Steamer
+                {979, 185},     // Way of the Oven
+                {980, 185},     // Way of the Brew
+	            {2548, 185},	// Classic Cooking [8.0.1]
+	            {2547, 185},	// Outland Cooking [8.0.1]
+	            {2546, 185},	// Northrend Cooking [8.0.1]
+	            {2545, 185},	// Cataclysm Cooking [8.0.1]
+	            {2544, 185},	// Pandaria Cooking [8.0.1]
+	            {2543, 185},	// Draenor Cooking [8.0.1]
+	            {2542, 185},	// Legion Cooking [8.0.1]
+	            {2541, 185},	// Kul Tiran Cooking [8.0.1]
+
+	            // Enchanting Skills
+	            {333, 333},	// Enchanting [7.3.5]
+	            {2494, 333},	// Classic Enchanting [8.0.1]
+	            {2493, 333},	// Outland Enchanting [8.0.1]
+	            {2492, 333},	// Northrend Enchanting [8.0.1]
+	            {2491, 333},	// Cataclysm Enchanting [8.0.1]
+	            {2489, 333},	// Pandaria Enchanting [8.0.1]
+	            {2488, 333},	// Draenor Enchanting [8.0.1]
+	            {2487, 333},	// Legion Enchanting [8.0.1]
+	            {2486, 333},	// Kul Tiran Enchanting [8.0.1]
+
+	            // Engineering Skills
+	            {202, 202},	// Engineering [7.3.5]
+	            {2506, 202},	// Classic Engineering [8.0.1]
+	            {2505, 202},	// Outland Engineering [8.0.1]
+	            {2504, 202},	// Northrend Engineering [8.0.1]
+	            {2503, 202},	// Cataclysm Engineering [8.0.1]
+	            {2502, 202},	// Pandaria Engineering [8.0.1]
+	            {2501, 202},	// Draenor Engineering [8.0.1]
+	            {2500, 202},	// Legion Engineering [8.0.1]
+	            {2499, 202},	// Kul Tiran Engineering [8.0.1]
+
+	            // First Aid Skills
+	            {129, 129},	// First Aid [7.3.5] [REMOVED FROM GAME]
+
+	            // Fishing Skills
+	            {356, 356},	// Fishing [7.3.5]
+	            {2592, 356},	// Classic Fishing [8.0.1]
+	            {2591, 356},	// Outland Fishing [8.0.1]
+	            {2590, 356},	// Northrend Fishing [8.0.1]
+	            {2589, 356},	// Cataclysm Fishing [8.0.1]
+	            {2588, 356},	// Pandaria Fishing [8.0.1]
+	            {2587, 356},	// Draenor Fishing [8.0.1]
+	            {2586, 356},	// Legion Fishing [8.0.1]
+	            {2585, 356},	// Kul Tiran Fishing [8.0.1]
+
+	            // Herbalism Skills
+	            {182, 182},	// Herbalism [7.3.5]
+	            {2556, 182},	// Classic Herbalism [8.0.1]
+	            {2555, 182},	// Outland Herbalism [8.0.1]
+	            {2554, 182},	// Northrend Herbalism [8.0.1]
+	            {2553, 182},	// Cataclysm Herbalism [8.0.1]
+	            {2552, 182},	// Pandaria Herbalism [8.0.1]
+	            {2551, 182},	// Draenor Herbalism [8.0.1]
+	            {2550, 182},	// Legion Herbalism [8.0.1]
+	            {2549, 182},	// Kul Tiran Herbalism [8.0.1]
+
+	            // Inscription Skills
+	            {773, 773},	// Inscription [7.3.5]
+	            {2514, 773},	// Classic Inscription [8.0.1]
+	            {2513, 773},	// Outland Inscription [8.0.1]
+	            {2512, 773},	// Northrend Inscription [8.0.1]
+	            {2511, 773},	// Cataclysm Inscription [8.0.1]
+	            {2510, 773},	// Pandaria Inscription [8.0.1]
+	            {2509, 773},	// Draenor Inscription [8.0.1]
+	            {2508, 773},	// Legion Inscription [8.0.1]
+	            {2507, 773},	// Kul Tiran Inscription [8.0.1]
+
+	            // Jewelcrafting Skills
+	            {755, 755},	// Jewelcrafting [7.3.5]
+	            {2524, 755},	// Classic Jewelcrafting [8.0.1]
+	            {2523, 755},	// Outland Jewelcrafting [8.0.1]
+	            {2522, 755},	// Northrend Jewelcrafting [8.0.1]
+	            {2521, 755},	// Cataclysm Jewelcrafting [8.0.1]
+	            {2520, 755},	// Pandaria Jewelcrafting [8.0.1]
+	            {2519, 755},	// Draenor Jewelcrafting [8.0.1]
+	            {2518, 755},	// Legion Jewelcrafting [8.0.1]
+	            {2517, 755},	// Kul Tiran Jewelcrafting [8.0.1]
+
+	            // Leatherworking Skills
+	            {165, 165},	// Leatherworking [7.3.5]
+	            {2532, 165},	// Classic Leatherworking [8.0.1]
+	            {2531, 165},	// Outland Leatherworking [8.0.1]
+	            {2530, 165},	// Northrend Leatherworking [8.0.1]
+	            {2529, 165},	// Cataclysm Leatherworking [8.0.1]
+	            {2528, 165},	// Pandaria Leatherworking [8.0.1]
+	            {2527, 165},	// Draenor Leatherworking [8.0.1]
+	            {2526, 165},	// Legion Leatherworking [8.0.1]
+	            {2525, 165},	// Kul Tiran Leatherworking [8.0.1]
+
+	            // Mining Skills
+	            {186, 186},	// Mining [7.3.5]
+	            {2572, 186},	// Classic Mining [8.0.1]
+	            {2571, 186},	// Outland Mining [8.0.1]
+	            {2570, 186},	// Northrend Mining [8.0.1]
+	            {2569, 186},	// Cataclysm Mining [8.0.1]
+	            {2568, 186},	// Pandaria Mining [8.0.1]
+	            {2567, 186},	// Draenor Mining [8.0.1]
+	            {2566, 186},	// Legion Mining [8.0.1]
+	            {2565, 186},	// Kul Tiran Mining [8.0.1]
+
+	            // Skinning Skills
+	            {393, 393},	// Skinning [7.3.5]
+	            {2564, 393},	// Classic Skinning [8.0.1]
+	            {2563, 393},	// Outland Skinning [8.0.1]
+	            {2562, 393},	// Northrend Skinning [8.0.1]
+	            {2561, 393},	// Cataclysm Skinning [8.0.1]
+	            {2560, 393},	// Pandaria Skinning [8.0.1]
+	            {2559, 393},	// Draenor Skinning [8.0.1]
+	            {2558, 393},	// Legion Skinning [8.0.1]
+	            {2557, 393},	// Kul Tiran Skinning [8.0.1]
+
+	            // Tailoring Skills
+	            {197, 197},	// Tailoring [7.3.5]
+	            {2540, 197},	// Classic Tailoring [8.0.1]
+	            {2539, 197},	// Outland Tailoring [8.0.1]
+	            {2538, 197},	// Northrend Tailoring [8.0.1]
+	            {2537, 197},	// Cataclysm Tailoring [8.0.1]
+	            {2536, 197},	// Pandaria Tailoring [8.0.1]
+	            {2535, 197},	// Draenor Tailoring [8.0.1]
+	            {2534, 197},	// Legion Tailoring [8.0.1]
+	            {2533, 197},    // Kul Tiran Tailoring [8.0.1]
+            };
 
             private static List<object> ALLIANCE_ONLY = new List<object> {
                 1,  // Human
@@ -1409,13 +679,13 @@ namespace Parser_V2
                                 if (leftovers == 0)
                                 {
                                     // This is all horde races, cool. Let's clean this up!
-                                    data["r"] = 2;  // Horde Only!
+                                    data["r"] = 1;  // Horde Only!
                                     data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
                                 }
                                 else
                                 {
                                     // Nah man, we need to list them all. Damnit!
-                                    //Console.WriteLine("There was a leftover race?!");
+                                    //Trace.WriteLine("There was a leftover race?!");
                                 }
                             }
                         }
@@ -1425,7 +695,7 @@ namespace Parser_V2
                             if (leftovers == 0)
                             {
                                 // This is all alliance races, cool. Let's clean this up!
-                                data["r"] = 1;  // Alliance Only!
+                                data["r"] = 2;  // Alliance Only!
                                 data.Remove("races");   // We do not need to include races for this as it is ALLIANCE_ONLY.
                             }
                             else if (hordeCount == 0)
@@ -1438,13 +708,13 @@ namespace Parser_V2
                                 if (leftovers == 0)
                                 {
                                     // This is all horde races, cool. Let's clean this up!
-                                    data["r"] = 2;  // Horde Only!
+                                    data["r"] = 1;  // Horde Only!
                                     data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
                                 }
                                 else
                                 {
                                     // Nah man, we need to list them all. Damnit!
-                                    //Console.WriteLine("There was a leftover race?!");
+                                    //Trace.WriteLine("There was a leftover race?!");
                                 }
                             }
                         }
@@ -1452,7 +722,7 @@ namespace Parser_V2
                     else
                     {
                         // Nah man, we need to list them all. Damnit!
-                        //Console.WriteLine("There was a leftover race?!");
+                        //Trace.WriteLine("There was a leftover race?!");
                     }
                 }
             }
@@ -1465,13 +735,16 @@ namespace Parser_V2
             public static void ExportDebug(string directory)
             {
                 // Export all of the Containers
-                File.WriteAllText(Path.Combine(directory, "Categories.lua"), Framework.ExportRaw(AllContainers).ToString());
+                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportRawLua(AllContainers).ToString());
+
+                // Export as JSON!
+                File.WriteAllText(Path.Combine(directory, "Categories.json"), MiniJSON.Json.Serialize(AllContainers));
 
                 // Cache the "Unsorted" list.
                 if (AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
                 {
                     // Export all Unsorted.
-                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), Framework.ExportRaw(unsorted).ToString());
+                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ATT.Export.ExportRawLua(unsorted).ToString());
 
                     // Export all Unsorted items... in a sorted way.
                     var sortedList = new List<Dictionary<string, object>>();
@@ -1528,6 +801,40 @@ namespace Parser_V2
                     }
                     File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString());
                 }
+
+                // Load in the Locale File and Warn about Unused Custom NPC IDs.
+                var content = File.ReadAllText("./../../locales/enUS.lua");
+                content = content.Substring(content.IndexOf("{", content.IndexOf("[\"NPC_ID_NAMES\"]")));
+                content = content.Substring(0, content.IndexOf('}'));
+
+                // Scan through for NPC IDs. (we don't care about the actual name)
+                int npcID;
+                int index = 0;
+                var allLocalizedNPCIDs = new Dictionary<int, bool>();
+                while ((index = content.IndexOf('[', index)) > -1)
+                {
+                    ++index;
+                    int endIndex = content.IndexOf(']', index);
+                    if (endIndex > -1 && int.TryParse(content.Substring(index, endIndex - index), out npcID))
+                    {
+                        allLocalizedNPCIDs[npcID] = true;
+                    }
+                }
+
+                // Determine if any of the localized NPC IDs have no references.
+                if (allLocalizedNPCIDs.Any())
+                {
+                    var sortedNPCIDs = allLocalizedNPCIDs.Keys.ToList();
+                    sortedNPCIDs.Sort();
+                    sortedNPCIDs.Reverse();
+                    foreach(int sortedNPCID in sortedNPCIDs)
+                    {
+                        if (NPCS_WITH_REFERENCES.ContainsKey(sortedNPCID)) continue;
+                        Trace.Write("Custom NPC ID [");
+                        Trace.Write(sortedNPCID);
+                        Trace.WriteLine("] has no reference and should be removed.");
+                    }
+                }
             }
 
             /// <summary>
@@ -1536,122 +843,10 @@ namespace Parser_V2
             /// <param name="directory">The directory to file the debug files to.</param>
             public static void Export(string directory)
             {
-                // Export all of the Categories
-                STRUCTURE_COUNTS.Clear();   // Clear the structure counts
-
-                int categoryCount = 0;
-                var builder = new StringBuilder();
-                builder.AppendLine("_.Categories={};");
-                builder.Append("local l={};");
-                foreach (var pair in AllContainers)
-                {
-                    if (categoryCount++ > 0) builder.Append("l={};");
-                    builder.Append("_.Categories.").Append(pair.Key).AppendLine("=l;");
-                    foreach (var group in pair.Value)
-                    {
-                        builder.Append("tinsert(l,");
-                        Framework.Export(builder, group);
-                        builder.AppendLine(");");
-                    }
-                }
-                var categories = builder.ToString();
-
-                // Export Shortcuts for Constructors.
-                builder.Clear().AppendLine("-----------------------------------------------------")
-                   .AppendLine("--   S O U R C E   D A T A B A S E   M O D U L E   --")
-                   .AppendLine("-----------------------------------------------------")
-                   .AppendLine("--   WARNING: This file is dynamically generated   --")
-                   .Append("-- UPDATED: ").Append(string.Format("{0} @ {1}", DateTime.UtcNow.ToLongDateString(), DateTime.UtcNow.ToShortTimeString()).PadRight(38, ' ')).AppendLine(" --")
-                   .AppendLine("-----------------------------------------------------")
-                   .AppendLine("local _ = AllTheThings;")
-                   //.AppendLine("local cr = function(cr,t) t.creatureID = cr; return t; end")
-                   .AppendLine("local g = function(t,g) t.g = g; return t; end");
-
-                // Prepare the templates used for the shortcuts.
-                var keyValues = (new Dictionary<string, string>
-                {
-                    { "ach", "_.CreateAchievement" },
-                    { "artifact", "_.CreateArtifact" },
-                    { "cat", "_.CreateCategory" },
-                    { "cl", "_.CreateCharacterClass" },
-                    { "crit", "_.CreateAchievementCriteria" },
-                    { "cu", "_.CreateCurrencyClass" },
-                    { "d", "_.CreateDifficulty" },
-                    { "e", "_.CreateEncounter" },
-                    { "faction", "_.CreateFaction" },
-                    { "fp", "_.CreateFlightPath" },
-                    { "flt", "_.CreateFilter" },
-                    { "follower", "_.CreateFollower" },
-                    { "gb", "_.CreateGarrisonBuilding" },
-                    { "gm", "_.CreateGarrisonMission" },
-                    { "gt", "_.CreateGarrisonTalent" },
-                    { "gs", "_.CreateGearSet" },
-                    { "gsh", "_.CreateGearSetHeader" },
-                    { "gssh", "_.CreateGearSetSubHeader" },
-                    { "heir", "_.CreateHeirloom" },
-                    { "ho", "_.CreateHoliday" },
-                    { "inst", "_.CreateInstance" },
-                    { "ill", "_.CreateIllusion" },
-                    { "i", "_.CreateItem" },
-                    { "m", "_.CreateMap" },
-                    { "mnt", "_.CreateMount" },
-                    { "mr", "_.CreateMusicRoll" },
-                    { "n", "_.CreateNPC" },
-                    { "o", "_.CreateObject" },
-                    { "p", "_.CreateSpecies" },
-                    { "pa", "_.CreatePetAbility" },
-                    { "pt", "_.CreatePetType" },
-                    { "prof", "_.CreateProfession" },
-                    { "q", "_.CreateQuest" },
-                    { "r", "_.CreateRecipe" },
-                    { "s", "_.CreateItemSource" },
-                    { "selfie", "_.CreateSelfieFilter" },
-                    { "sp", "_.CreateSpell" },
-                    { "t", "_.CreateTier" },
-                    { "title", "_.CreateTitle" },
-                    { "tcat", "_.CreateTransmogCategory" },
-                    { "toy", "_.CreateToy" },
-                    { "v", "_.CreateVignette" },
-                }).ToList();
-
-                // Build Shortcuts for Arrays.
-                var order = STRUCTURE_COUNTS.ToList();
-                order.Sort(delegate (KeyValuePair<string, int> a, KeyValuePair<string, int> b)
-                {
-                    return b.Value - a.Value;
-                });
-                int count = 0;
-                foreach (var pair in order)
-                {
-                    if (pair.Value < 4 || count > 50) break;
-
-                    var key = $"a{count++}";
-                    categories = categories.Replace(pair.Key, key);
-                    keyValues.Add(new KeyValuePair<string, string>(key, pair.Key));
-                }
-
-                // Export all of the Shortcuts.
-                count = 0;
-                builder.Append("local ");
-                foreach (var pair in keyValues)
-                {
-                    if (count++ > 0) builder.Append(',');
-                    builder.Append(pair.Key);
-                }
-                builder.Append('=');
-                count = 0;
-                foreach (var pair in keyValues)
-                {
-                    if (count++ > 0) builder.Append(',');
-                    builder.Append(pair.Value);
-                }
-                builder.Append(';').AppendLine();
-                File.WriteAllText(Path.Combine(directory, "Categories.lua"), builder.Append(categories).ToString());
-
-                builder.Clear();
-                builder.Append("AllTheThings.NPCDB=");
-                Framework.Export(builder, NPCS);
-                File.WriteAllText(Path.Combine(directory, "NPCDB.lua"), builder.ToString());
+                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportCompressedLuaCategories(AllContainers).ToString());
+                
+                var builder = ATT.Export.ExportCompressedLua(NPCS);
+                File.WriteAllText(Path.Combine(directory, "NPCDB.lua"), builder.Insert(0, "AllTheThings.NPCDB=").ToString());
             }
             #endregion
             #region Merge (for acquiring fields for the Item Database)
@@ -1739,13 +934,13 @@ namespace Parser_V2
                                 }
                                 else
                                 {
-                                    Debug.WriteLine(ToJSON(value));
+                                    Trace.WriteLine(ToJSON(value));
                                     Console.ReadLine();
                                 }
                             }
                             catch
                             {
-                                Debug.WriteLine(ToJSON(value));
+                                Trace.WriteLine(ToJSON(value));
                             }
                             break;
                         }
@@ -1757,6 +952,7 @@ namespace Parser_V2
                     case "isBreadcrumb":
                     case "isDaily":
                     case "isWeekly":
+                    case "isYearly":
                     case "isWQ":
                     case "isRaid":
                     case "isLockoutShared":
@@ -1774,7 +970,7 @@ namespace Parser_V2
                         {
                             if (value is String)
                             {
-                                item[field] = Framework.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
+                                item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
                             }
                             else item[field] = Convert.ToInt32(value);
                             break;
@@ -1783,14 +979,14 @@ namespace Parser_V2
                     // String Data Type Fields
                     case "model":
                         {
-                            item[field] = Framework.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
+                            item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
                             break;
                         }
                     case "name":
                     case "description":
                     case "title":
                         {
-                            item[field] = Framework.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
+                            item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
                             break;
                         }
 
@@ -2014,7 +1210,7 @@ namespace Parser_V2
                     default:
                         {
                             // Integer Data Type Fields
-                            if (OBJECT_CONSTRUCTORS.ContainsKey(field))
+                            if (ATT.Export.ObjectData.ContainsObjectType(field))
                             {
                                 item[field] = Convert.ToInt32(value);
                                 return;
@@ -2023,13 +1219,13 @@ namespace Parser_V2
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
-                            Debug.Write("Parser is ignoring field '");
-                            Debug.Write(field);
-                            Debug.WriteLine("' for objects.");
-                            Debug.Write("  [");
-                            Debug.Write(MiniJSON.Json.Serialize(value));
-                            Debug.WriteLine("]");
-                            Debug.WriteLine(MiniJSON.Json.Serialize(item));
+                            Trace.Write("Parser is ignoring field '");
+                            Trace.Write(field);
+                            Trace.WriteLine("' for objects.");
+                            Trace.Write("  [");
+                            Trace.Write(MiniJSON.Json.Serialize(value));
+                            Trace.WriteLine("]");
+                            Trace.WriteLine(MiniJSON.Json.Serialize(item));
                             break;
                         }
                 }
@@ -2044,7 +1240,7 @@ namespace Parser_V2
             /// <param name="data">The data to merge into the item.</param>
             public static void Merge(Dictionary<string, object> item, Dictionary<object, object> data)
             {
-                foreach (var pair in data) Merge(item, Framework.ToString(pair.Key), pair.Value);
+                foreach (var pair in data) Merge(item, ATT.Export.ToString(pair.Key), pair.Value);
             }
 
             /// <summary>
@@ -2070,24 +1266,23 @@ namespace Parser_V2
                 if (data == null) return;
 
                 // Convert the object based on key values.
-                Dictionary<object, object> data2 = new Dictionary<object, object>();
+                Dictionary<string, object> data2 = new Dictionary<string, object>();
                 foreach (var pair in data) data2[ConvertFieldName(pair.Key.ToString())] = pair.Value;
 
                 // Find the Object Dictionary that matches the data.
                 Dictionary<string, object> entry = null;
 
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                string mostSignificantID = CalculateMostSignificantFieldType(data2);
-
-                // If there is no most significant ID field, then complain.
-                if (string.IsNullOrEmpty(mostSignificantID))
+                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData))
                 {
-                    Debug.WriteLine("No Most Significant ID for:");
-                    Debug.WriteLine(ToJSON(data));
+                    // If there is no most significant ID field, then complain.
+                    Trace.WriteLine("No Most Significant ID for:");
+                    Trace.WriteLine(ToJSON(data));
                 }
                 else
                 {
                     // Cache the ID of the data we're merging into the container.
+                    string mostSignificantID = objectData.ObjectType;
                     var id = Convert.ToInt32(data2[mostSignificantID]);
 
                     // Iterate through the list and search for an entry that matches the data
@@ -2244,8 +1439,8 @@ namespace Parser_V2
                     if (data is Dictionary<object, object> oDict) Merge(container, oDict);
                     else
                     {
-                        Console.Write("MERGE CONFUSION: ");
-                        Console.WriteLine(ToJSON(data));
+                        Trace.Write("MERGE CONFUSION: ");
+                        Trace.WriteLine(ToJSON(data));
                     }
                 }
             }

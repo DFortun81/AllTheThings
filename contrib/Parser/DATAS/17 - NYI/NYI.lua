@@ -2783,13 +2783,14 @@ _.NeverImplemented =
 ------------------------------------------------------------
 
 -- Here I am going to call upon maps that don't really have any data and wouldn't make sense to display a mini list in
-m(465),	-- Le Glas
-m(516),	-- Isle of Thunder (One of last initial scenaraio)
-m(892),	-- Azuremyst Isle (Argus Opening)
-m(893),	-- Azuremyst Isle (Argus Opening)
-m(889),	-- Arcatraz - scenario map
-m(890),	-- Arcatraz - scenario map
-m(933),	-- Forge of Souls (Lightbound Draenei scenario map)
+m(465),		-- Le Glas
+m(516),		-- Isle of Thunder (One of last initial scenaraio)
+m(892),		-- Azuremyst Isle (Argus Opening)
+m(893),		-- Azuremyst Isle (Argus Opening)
+m(889),		-- Arcatraz - scenario map
+m(890),		-- Arcatraz - scenario map
+m(1338),	-- Darkshore (Tyrande's Ascension scenario)
+m(933),		-- Forge of Souls (Lightbound Draenei scenario map)
 m(1170),	-- Gorgrond (Mag'har scenario)
 m(1351),	-- Horde war campaign scenario to free Lady Ashvane
 };

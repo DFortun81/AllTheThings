@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(114, {	-- Borean Tundra
-			n(-25, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(641), 	-- Arctic Hare
 				p(639), 	-- Borean Marmot
 				p(1165), 	-- Nexus Whelpling

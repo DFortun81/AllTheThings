@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(50, {	-- Northern Stranglethorn
-			n(-17,  {	-- Quests
+			n(-17, {	-- Quests
 				ach(4906, {		-- Northern Stranglethorn Quests
 					crit(1, {	-- Ohgan'aka
 							--26744,	-- Deep Roots -- this is probably part of crit(1)
@@ -380,6 +380,22 @@ _.Zones =
 						i(131506),	-- Palm Frond Pauldrons
 					},
 				}),
+				q(26812, {	-- High Priestess Jeklik
+					["sourceQuests"] = { 26811 },	-- Through the Troll Hole
+					["coord"] = { 78.5, 35.6, 50 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(26814, {	-- High Priest Venoxis
+					["sourceQuests"] = { 26813 },	-- Plunging Into Zul'Gurub
+					["coord"] = { 82.1, 35.3, 50 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(61549),	-- Maywiki's Favorite Ring
+						i(61550),	-- Boots of the Foolhardy
+						i(61551),	-- Cloak of Great Endeavors
+						i(131607),	-- Treads of the Foolhardy
+					},
+				}),
 				q(29213, {	-- How's the Hunter Holding Up?
 					["qg"] = 52234,	-- Bwemba
 					["coord"] = { 77.1, 69.1, 50 },
@@ -511,6 +527,11 @@ _.Zones =
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 191,	-- Panther Stalking
+				}),
+				q(26813, {	-- Plunging Into Zul'Gurub
+					["sourceQuests"] = { 26812 },	-- High Priestess Jeklik
+					["coord"] = { 77.9, 44.1, 50 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 --[[
 				q(26338, {	-- Population Con-Troll

@@ -178,6 +178,7 @@ for key,value in pairs({
 	[190104] = "Balde de Balas",
 	[190917] = "Cartas Abandonadas",
 	[190936] = "Caldeirão da Praga",
+	[191728] = "Procura-se!",
 	[191760] = "Console da Biblioteca do Inventor",
 	[191761] = "Console de Protótipo",
 	[192049] = "Cardume de Arenques Presadentes",
@@ -924,6 +925,7 @@ for key,value in pairs({
 	[294317] = "Baú de Lenha Morta",
 	[294319] = "Tesouro Soterrado por Areia",
 --	[294703] = "Grimmy's Rusty Lockbox",						-- No Translation
+	[296536] = "Glaive da Sentinela Ensanguentada",
 	[297825] = "Baú Coberto de Teia",
 	[297828] = "Baú do Mercador",
 	[297878] = "Baú Bagateado",

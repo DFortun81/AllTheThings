@@ -6,16 +6,21 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(27, {	-- Dun Morogh
 			n(-17,  {	-- Quests
---[[				
 				q(319, {	-- A Favor for Evershine
-					["qg"] = 1374,	-- 
+					["u"] = 40,
+					["qg"] = 1374,	-- Rejold Barleybrew
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25882, {	-- A Hand at the Ranch
-					["qg"] = 41298,	-- 
+					["qg"] = 41298,	-- Slamp Wobblecog
+					["coord"] = { 62.5, 53.7, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						25840,	-- Eliminate the Resistance
+						25841,	-- Strike From Above
+					},
 				}),
---]]
 				q(26855, {	-- A Pilot's Revenge
 				--	["objectID"] = 2059,	-- A Dwarven Corpse
 					["coord"] = { 87.6, 50.2, 27 },
@@ -29,49 +34,46 @@ _.Zones =
 						i(131612),	-- Siege Engineer's Waistband
 					},
 				}),
-				q(417,   {	-- A Pilot's Revenge NOTE: Replaced by quest 26855 which has a different loot table
+				q(417,   {	-- A Pilot's Revenge
+					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(1009)),	-- Compact Hammer
 						un(2, i(2218)),	-- Craftsman's Dagger
 					},
 				}),
---[[
-				q(24471, {	-- Aid for the Wounded
-					["qg"] = 658,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]
 				q(384,   {	-- Beer Basted Boar Ribs
+					["qg"] = 1267,	-- Ragnar Thunderbrew
+					["coord"] = { 53.9, 50.6, 27 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1267,	-- 
 					["g"] = {
 						i(2889),	-- Recipe: Beer Basted Boar Ribs
 					},
-				}),
---[[					
+				}),	
 				q(7674, {	-- Black Ram Exchange
-					["qg"] = 1261,	-- 
+					["u"] = 40,
+					["qg"] = 1261,	-- Veron Amberstill
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26380, {	-- Bound for Kharanos
-					["qg"] = 42933,	-- 
+					["qg"] = 42933,	-- Ciara Deepstone
+					["coord"] = { 49.9, 44.9, 27 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25667, {	-- Culling the Wendigos
-					["qg"] = 40950,	-- 
+					["qg"] = 40950,	-- Captain Tharran
+					["coord"] = { 53.7, 52.1, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25724,	-- Frostmane Aggression
 				}),
---]]
 				q(25997, {	-- Dark Iron Scheming
 					["qg"] = 41786,	-- Sergeant Bahrum
 					["coord"] = { 82.8, 48.4, 27 },
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25979,	-- Dealing With the Surge
 						25978,	-- Entombed in Ice
 					},
-					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57575),	-- Belt of Dark Schemes
 						i(57576),	-- Dark Iron Infiltrator's Bracer
@@ -84,72 +86,66 @@ _.Zones =
 					["coord"] = { 82.6, 48.3, 27 },
 					["races"] = ALLIANCE_ONLY,
 				}),
---[[
-				q(27635, {	-- Decontamination
-					["qg"] = 46274,	-- 
-					["races"] = {7},
-				}),
---]]
-				q(43291, {	-- Defend (pre-Legion invasions)
-					["u"] = 40,	-- Legacy Quests
-				}),
 				q(26112, {	-- Demanding Answers
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["coord"] = { 78.2, 20.4, 87 },
 					["sourceQuest"] = 26102,	-- Grimaxe's Demise
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(43283, {	-- Demon Commander (pre-Legion invasions)
-					["u"] = 40,	-- Legacy Quests
-				}),
---[[
 				q(308, {	-- Distracting Jarven
-					["qg"] = 1373,	-- 
+					["u"] = 40,
+					["qg"] = 1373,	-- Jarven Thunderbrew
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25840, {	-- Eliminate the Resistance
-					["qg"] = 41298,	-- 
+					["qg"] = 41298,	-- Slamp Wobblecog
+					["coord"] = { 62.5, 53.7, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 				}),
---]]
 				q(25978, {	-- Entombed in Ice
 					["qg"] = 41786,	-- Sergeant Bahrum
 					["coord"] = { 82.8, 48.4, 27 },
-					["sourceQuest"] = 25986,	-- Trouble at the Lake
 					["races"] = ALLIANCE_ONLY,	
+					["sourceQuest"] = 25986,	-- Trouble at the Lake
 				}),
-
---[[			q(318,   {	-- Evershine
-					["qg"] = 1378,	-- 
+				q(318,   {	-- Evershine
+					["u"] = 40,
+					["qg"] = 1378,	-- Pilot Bellowfiz
 					["races"] = ALLIANCE_ONLY,
 				}),
-]]--
 				q(26078, {	-- Extinguish the Fires
 					["qg"] = 41853,	-- Commander Stonebreaker			
 					["coord"] = { 78.2, 20.5, 27 },
 					["sourceQuest"] = 25998,	-- Get to the Airfield
 					["races"] = ALLIANCE_ONLY,	
 				}),
-				q(313,   {	-- Forced to Watch from Afar (add'l QG 1377, may have changed in Cata)
+				q(313,   {	-- Forced to Watch from Afar
+					["qg"] = 40950,	-- Captain Tharran
+					["coord"] = { 53.7, 52.1, 27 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 40950,	-- 
+					["sourceQuest"] = 25724,	-- Frostmane Aggression
 				}),
 				q(7673,  { -- Frost Ram Exchange
-					["qg"] = 1261,	-- Veron Amberstill
 					["u"] = 40,	-- Legacy Quests
+					["qg"] = 1261,	-- Veron Amberstill
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7673,  {	-- Frost Ram Exchange
+					["u"] = 40,
+					["qg"] = 1261,	-- Veron Amberstill
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1261,	-- 
 				}),
 				q(25724, {	-- Frostmane Aggression
+					["qg"] = 40950,	-- Captain Tharran
+					["coord"] = { 53.7, 52.1, 27 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 40950,	-- 
+					["sourceQuest"] = 26373,	-- On to Kharanos
 				}),
 				q(5625,  {	-- Garments of the Light
-					["classes"] = { 5 },	-- Priest
+					["u"] = 40,
 					["races"] = { 3 },	-- Dwarf
-					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 5 },	-- Priest
 					["g"] = {
 						un(2, i(16605)),	-- Friar's Robes of the Light
 					},
@@ -175,77 +171,91 @@ _.Zones =
 					},
 				}),
 				q(403,   {	-- Guarded Thunderbrew Barrel
-					["u"] = 40,	-- Legacy Quests
+					["u"] = 40,
 				}),
---[[			q(25933, {	-- Help for the Quarry
-					["qg"] = 41578,	-- 
+				q(25933, {	-- Help for the Quarry
+					["qg"] = 41578,	-- Sergeant Flinterhammer
+					["coord"] = { 70.4, 48.9, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						314,	-- Protecting the Herd (TODO:: verify if needed)
+						25905,	-- Rams on the Lam
+					},
 				}),
 				q(25838, {	-- Help from Steelgrill's Depot
-					["qg"] = 40950,	-- 
+					["qg"] = 40950,	-- Captain Tharran
+					["coord"] = { 53.7, 52.1, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						412,	-- Operation Recombobulation
+						25792,	-- Pushing Forward
+					},
 				}),
-]]--
 				q(6387, {	-- Honor Students
 					["qg"] = 1699,	-- Gremlock Pilsnor
-					["coord"] = { 54.6, 50.6, 27 },
+					["coord"] = { 54.7, 50.5, 27 },
 					["races"] = {
 						3,	-- Dwarf
 						7,	-- Gnome
 					},
 				}),
---[[
 				q(8149, {	-- Honoring a Hero
-					["qg"] = 15011,	-- 
+					["u"] = 25,	-- Harvest Festival
+					["qg"] = 15011,	-- Wagner Hammerstrike
 					["races"] = ALLIANCE_ONLY,
 				}),
-]]--
 				q(4126,  {	-- Hurley Blackbreath
+					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(12000)),	-- Limb Cleaver
 						un(2, i(11964)),	-- Swiftstrike Cudgel
 					},
 				}),
---[[
---					q(25285),	-- In and Out (REMOVED)
---					q(43284),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
---					q(42803),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
 				q(25932, {	-- It's Raid Night Every Night
-					["qg"] = 41578,	-- 
+					["qg"] = 41578,	-- Sergeant Flinthammer
+					["coord"] = { 70.4, 48.9, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25882,	-- A Hand at the Ranch
 				}),
 				q(32663, {	-- Learn To Ride
+					["races"] = { 7 },
 					["description"] = "This quest is available to Gnomes upon reaching level 20.",
-					["races"] = {7},
+					["isBreadcrumb"] = true,
 				}),
 				q(32662, {	-- Learn To Ride
+					["races"] = { 3 },
 					["description"] = "This quest is available to Dwarves upon reaching level 20.",
-					["races"] = {3},
+					["isBreadcrumb"] = true,
 				}),
---					qa(14084),	-- Learn to Ride in Dun Morogh (REMOVED)
---					qa(14083),	-- Learn to Ride in Dun Morogh (REMOVED)
---					q(25289),	-- One Step Forward... (REMOVED with Cata)
---					q(24462),	-- Operation Item Get (REMOVED with Cata)
+				q(14084, {	-- Learn to Ride in Dun Morogh
+					["u"] = 40,
+					["races"] = { 7 },	-- gnome
+				}),
+				q(14083, {	-- Learn to Ride in Dun Morogh
+					["u"] = 40,
+					["races"] = { 3 },	-- dwarf
+				}),
 				q(412, {	-- Operation Recombobulation
-					["qg"] = 1269,	-- 
+					["qg"] = 1269,	-- Razzle Sprysprocket
+					["coord"] = { 53.2, 51.9, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						25667,	-- Culling the Wendigos
+						313,	-- Forced to Watch from Afar
+						25668,	-- Pilfered Supplies (TODO:: verify if this is needed)
+					},
 				}),
 				q(25668, {	-- Pilfered Supplies
-					["qg"] = 40951,	-- 
+					["qg"] = 40951,	-- Quartermaster Glynna
+					["coord"] = { 53.7, 52.0, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25724,	-- Frostmane Aggression
 				}),
-				q(27670, {	-- Pinned Down
-					["qg"] = 45966
-					["races"] = {7,9},	-- Gnome, Goblin
-				}),
---					q(25295),	-- Press Fire (REMOVED)
---]]
 				q(25937, {	-- Priceless Treasures
+					["qg"] = 50631,	-- Prospector Drugan
 					["coord"] = { 76.1, 53.0, 27 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 50631,	-- Prospector Drugan
 					["g"] = {
 						i(57571),	-- Archaeologist's Pants
 						i(57572),	-- Dun Morogh Hiking Pants
@@ -257,8 +267,10 @@ _.Zones =
 					},
 				}),
 				q(314,   {	-- Protecting the Herd
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1265,	-- Rudra Amberstill
+					["coord"] = { 70.2, 48.1, 27 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 					["g"] = {
 						--Note!! When questing confirm that is isn't obtainable as reports says it was and it was previously marked unobtainable
 						--Might be racial locked and not unobtainable
@@ -277,36 +289,42 @@ _.Zones =
 						}),
 					},
 				}),
---[[
 				q(25792, {	-- Pushing Forward
-					["qg"] = 40950,	-- 
+					["qg"] = 40950,	-- Captain Tharran
+					["coord"] = { 53.7, 52.1, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						25667,	-- Culling the Wendigos
+						313,	-- Forced to Watch from Afar
+						25668,	-- Pilfered Supplies (TODO:: verify if this is needed)
+					},
 				}),
-]]--
 				q(26085, {	-- Rallying the Defenders
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["coord"] = { 78.2, 20.5, 27 },
 					["sourceQuest"] = 26078,	-- Extinguish the Fires
 					["races"] = ALLIANCE_ONLY,	
 				}),
---[[
 				q(25905, {	-- Rams on the Lam
-					["qg"] = 1261,	-- 
+					["qg"] = 1261,	-- Veron Amberstill
+					["coord"] = { 70.6, 48.9, 27 },
 					["races"] = ALLIANCE_ONLY,
-				}),
---					q(43292),	-- Repel (REMOVED, pre-Legion invasions)
-				q(28167, {	-- Report to Carvo Blastbolt
-					["qg"] = 45966,	-- 
-					["races"] = {7,9},	-- Gnome, Goblin
+					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 				}),
 				q(320, {	-- Return to Bellowfiz
-					["qg"] = 1374,	-- 
+					["u"] = 40,
+					["qg"] = 1374,	-- Rejold Barleybrew
 					["races"] = ALLIANCE_ONLY,
 				}),
 				o(270, {	-- Unguarded Thunder Ale Barrel
-					qa(311),	-- Return to Marleth
+					["u"] = 43,
+					["g"] = {
+						q(311, {	-- Return to Marleth
+							["u"] = 40,
+							["races"] = ALLIANCE_ONLY,
+						}),
+					},
 				}),
-]]--				
 				q(6391, {	-- Ride to Ironforge
 					["qg"] = 43701,	-- Brolan Galebeard
 					["coord"] = { 53.8, 52.6, 27 },
@@ -317,91 +335,90 @@ _.Zones =
 					},
 				}),
 				q(466,   {	-- Search for Incendicite
+					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(3565)),	-- Beerstained Gloves
 					},
 				}),
---[[
-				q(27671, {	-- See to the Survivors
-					["qg"] = 47250,	-- 
-					["races"] = {7,9},	-- Gnome, Goblin
-				}),
 				q(317, {	-- Stocking Jetsteam
-					["qg"] = 1378,	-- 
-					["races"] = {3,7},	-- Dwarf, Gnome
+					["u"] = 40,
+					["qg"] = 1378,	-- Pilot Bellowfiz
+					["races"] = { 3, 7 },	-- Dwarf, Gnome
 				}),
 				q(25841, {	-- Strike From Above
-					["qg"] = 41298,	-- 
+					["qg"] = 41298,	-- Slamp Wobblecog
+					["coord"] = { 62.5, 53.7, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 				}),
---]]
 				q(26094, {	-- Striking Back
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["coord"] = { 78.2, 20.5, 27 },
 					["sourceQuest"] = 26085,	-- Rallying the Defenders
 					["races"] = ALLIANCE_ONLY,	
 				}),
---[[
 				q(315, {	-- The Perfect Stout
-					["qg"] = 1374,	-- 
+					["qg"] = 1374,	-- Rejold Barleybrew
+					["coord"] = { 54.1, 51.1, 27 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24528, {	-- The Power of the Light
-					["qg"] = 926,	-- 
-					["races"] = {3},	-- Dwarf
-					["classes"] = {2},	-- Paladin
-				})),
---]]					
-				q(433,   { 	-- The Public Servant
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1977,	-- 
-					["g"] = {
-						i(57570),	-- 
-						i(57568),	-- 
-						i(57569),	-- 
-						i(131208),	-- 
-						i(131209),	-- 
-					},
+					["u"] = 40,
+					["qg"] = 926,	-- Bromos Grummner
+					["races"] = { 3 },	-- Dwarf
+					["classes"] = { 2 },	-- Paladin
 				}),
---[[					
+				q(433,   { 	-- The Public Servant
+					["qg"] = 1977,	-- Senator Mehr Stonehallow
+					["coord"] = { 75.9, 54.3, 27 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(57570),	-- Gol'Bolar Miner's Belt
+						i(57568),	-- Senator's Dignified Pants
+						i(57569),	-- Stonehallow's Arm Bands
+						i(131208),	-- Senator's Handsome Leggings
+						i(131209),	-- Stonehallow's Pressed Cuffs
+					},
+				}),	
 				q(291, {	-- The Reports
-					["qg"] = 1252,	-- 
+					["u"] = 40,
+					["qg"] = 1252,	-- Senir Whitebeard
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25839, {	-- The Ultrasafe Personnel Launcher
-					["qg"] = 41363,	-- 
+					["qg"] = 41363,	-- Delber Cranktoggle
+					["coord"] = { 56.8, 47.1, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25838,	-- Help from Steelgrill's Depot
 				}),
 				q(28868, {	-- The View from Down Here
-					["qg"] = 50601,	-- 
+					["qg"] = 50601,	-- Snevik the Blade
+					["coord"] = { 62.5, 53.8, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 				}),
 				q(432, {	-- Those Blasted Troggs!
-					["qg"] = 1254,	-- 
-				}),
-				q(27674, {	-- To the Surface
-					["qg"] = 46255,	-- 
-					["races"] = {7},	-- Gnome
-				}),
-				q(400, {	-- Tools for Steelgrill
-					["qg"] = 1872,	-- 
+					["qg"] = 1254,	-- Foreman Stonebrow
+					["coord"] = { 76.3, 54.6, 27 },
 					["races"] = ALLIANCE_ONLY,
 				}),
---]]
+				q(400, {	-- Tools for Steelgrill
+					["u"] = 40,
+					["qg"] = 1872,	-- Tharek Blackstone
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(25986, {	-- Trouble at the Lake
 					["qg"] = 1977,	-- Senator Mehr Stonehallow
 					["coord"] = { 75.8, 54.2, 27 },
-					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,	
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						25937,	-- Priceless Treasures
+						433,	-- The Public Servant
+						432,	-- Those Blasted Troggs!
+					},
 				}),
---[[
-				q(28169, {	-- Withdraw to the Loading Room!
-					["qg"] = 47250,	-- 
-					["races"] = {7},	-- Gnome
-				}),
---]]
 			}),
 		}),
 	}),

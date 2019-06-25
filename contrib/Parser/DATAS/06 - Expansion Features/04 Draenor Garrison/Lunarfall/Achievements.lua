@@ -11,14 +11,17 @@ _.ExpansionFeatures =
 						["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
 						["coord"] = { 40.12, 70.06, 582 },	-- Pepe Location [Alliance]
 					}),
-					ach(9630),		-- Defender of Draenor (Alliance)
+					ach(9630, 9248),	-- Defender of Draenor [A] / [H]
 					ach(9928, 9901, {	-- Don't Call Me Junior
 						follower(465),	-- Harrison Jones
 						crit(1),		-- Master Relic Hunter
 					}),
-					ach(9101, {		-- Even More Plots (Alliance)
-						ach(9100),		-- More Plots (Alliance)
+					ach(9101, 9546, {		-- Even More Plots [A] / [H]
+						ach(9100, 9545),		-- More Plots [A] / [H]
 					}),
+					--[[ach(9101, {		-- Even More Plots (Alliance)
+						ach(9100),		-- More Plots (Alliance)
+					}),]]
 					ach(10015, 10016, {	-- Full Discography
 						--[[
 						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
@@ -66,7 +69,8 @@ _.ExpansionFeatures =
 						crit(4),		-- Master Builder
 						crit(5),		-- Keepin' Busy
 					}),
-					ach(9210),		-- Garrison Buddies (Alliance)
+					ach(9210, 9132),		-- Garrison Buddies [A] / [H]
+					--ach(9210),		-- Garrison Buddies (Alliance)
 					ach(9487, {		-- Got My Mind On My Draenor Money (10,000)
 						["groups"] = {
 							i(111983),		-- Storehouse, Level 3 [Blueprints]

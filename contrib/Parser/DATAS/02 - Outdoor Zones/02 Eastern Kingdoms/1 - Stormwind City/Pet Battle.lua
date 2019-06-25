@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(378),	-- Rabbit
 				p(379),	-- Squirrel
 				p(675),	-- Stormwind Rat

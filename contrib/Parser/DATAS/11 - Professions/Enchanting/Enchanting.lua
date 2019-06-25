@@ -8,57 +8,60 @@
 profession(333, {	-- Enchanting
 	gb(126, {	-- Enchanter's Study (Level 3)  --- Leaving here for now, but should really be moved to the garrison vendor files
 		["maps"] = {582, 590},	-- Both Garrisons
-		["groups"] = {
-			na(77354, { 	-- Ayada the White [Alliance]
-				i(111922, {		-- Draenor Enchanting
-					["spellID"] = 0,
-					["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
-					["groups"] = {
-						recipe(177043),	-- Secrets of Draenor Enchanting
-						recipe(169092),	-- Temporal Crystal
-						recipe(169091),	-- Luminous Shard
-						recipe(162948),	-- Enchanted Dust
-						recipe(158907),	-- Breath of Critical Strike [Ring]
-						recipe(158908),	-- Breath of Haste [Ring]
-						recipe(158909),	-- Breath of Mastery
-						un(1, recipe(158910)),	-- Breath of Mastery
-						recipe(158911),	-- Breath of Versatility
-						recipe(159236),	-- Mark of the Shattered Hand
-					},
-				}),
-				i(119293, {		-- Secret of Draenor Enchanting
-					i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
-					i(118429),	-- Formula: Enchant Cloak - Breath of Haste
-					i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
-					i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
-					i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
-					i(118434),	-- Formula: Enchant Cloak - Gift of Haste
-					i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
-					i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
-					i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
-					i(118439),	-- Formula: Enchant Neck - Breath of Haste
-					i(118440),	-- Formula: Enchant Neck - Breath of Mastery
-					i(118442),	-- Formula: Enchant Neck - Breath of Versatility
-					i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
-					i(118444),	-- Formula: Enchant Neck - Gift of Haste
-					i(118445),	-- Formula: Enchant Neck - Gift of Mastery
-					i(118447),	-- Formula: Enchant Neck - Gift of Versatility
-					i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
-					i(118454),	-- Formula: Enchant Ring - Gift of Haste
-					i(118455),	-- Formula: Enchant Ring - Gift of Mastery
-					i(118457),	-- Formula: Enchant Ring - Gift of Versatility
-					i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
-					i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
-					i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
-					i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
-					i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
-					i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
-					i(138882),	-- Formula: Tome of Illusions: Draenor
-				}),
+		["g"] = {
+			n(77354, { 	-- Ayada the White [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(111922, {		-- Draenor Enchanting
+						["spellID"] = 0,
+						["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+						["g"] = {
+							recipe(177043),	-- Secrets of Draenor Enchanting
+							recipe(169092),	-- Temporal Crystal
+							recipe(169091),	-- Luminous Shard
+							recipe(162948),	-- Enchanted Dust
+							recipe(158907),	-- Breath of Critical Strike [Ring]
+							recipe(158908),	-- Breath of Haste [Ring]
+							recipe(158909),	-- Breath of Mastery
+							un(1, recipe(158910)),	-- Breath of Mastery
+							recipe(158911),	-- Breath of Versatility
+							recipe(159236),	-- Mark of the Shattered Hand
+						},
+					}),
+					i(119293, {		-- Secret of Draenor Enchanting
+						i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
+						i(118429),	-- Formula: Enchant Cloak - Breath of Haste
+						i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
+						i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
+						i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
+						i(118434),	-- Formula: Enchant Cloak - Gift of Haste
+						i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
+						i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
+						i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
+						i(118439),	-- Formula: Enchant Neck - Breath of Haste
+						i(118440),	-- Formula: Enchant Neck - Breath of Mastery
+						i(118442),	-- Formula: Enchant Neck - Breath of Versatility
+						i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
+						i(118444),	-- Formula: Enchant Neck - Gift of Haste
+						i(118445),	-- Formula: Enchant Neck - Gift of Mastery
+						i(118447),	-- Formula: Enchant Neck - Gift of Versatility
+						i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
+						i(118454),	-- Formula: Enchant Ring - Gift of Haste
+						i(118455),	-- Formula: Enchant Ring - Gift of Mastery
+						i(118457),	-- Formula: Enchant Ring - Gift of Versatility
+						i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
+						i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
+						i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
+						i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
+						i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
+						i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
+						i(138882),	-- Formula: Tome of Illusions: Draenor
+					}),
+				},
 			}),
-			n(88611, {		-- Enchanting Follower
+			n(88611, {	-- Enchanting Follower
 				["description"] = "You have to build Level 3 Enchanter's Study and hire an enchanter there in order to use these spells. A player with enchanting can't learn them, however, ATT will detect that you've earned them by opening the profession window. (Proof that you have a Rank 3 Enchanter's Study.)",
-				["groups"] = {
+				["g"] = {
 					spell(177355),	-- Remove Illusion
 					spell(173716),	-- Illusion: Agility
 					spell(173717),	-- Illusion: Battlemaster
@@ -89,58 +92,61 @@ profession(333, {	-- Enchanting
 					spell(175074),	-- Illusion: Windfury
 				},
 			}),
-			nh(79821, { 	-- Yukla Greenshadow [Horde]
-				i(111922, {		-- Draenor Enchanting
-					["spellID"] = 0,
-					["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
-					["groups"] = {
-						recipe(177043),	-- Secrets of Draenor Enchanting
-						recipe(169092),	-- Temporal Crystal
-						recipe(169091),	-- Luminous Shard
-						recipe(162948),	-- Enchanted Dust
-						recipe(158907),	-- Breath of Critical Strike [Ring]
-						recipe(158908),	-- Breath of Haste [Ring]
-						recipe(158909),	-- Breath of Mastery
-						un(1, recipe(158910)),	-- Breath of Mastery
-						recipe(158911),	-- Breath of Versatility
-						recipe(159236),	-- Mark of the Shattered Hand
-					},
-				}),
-				i(119293, {		-- Secret of Draenor Enchanting
-					i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
-					i(118429),	-- Formula: Enchant Cloak - Breath of Haste
-					i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
-					i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
-					i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
-					i(118434),	-- Formula: Enchant Cloak - Gift of Haste
-					i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
-					i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
-					i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
-					i(118439),	-- Formula: Enchant Neck - Breath of Haste
-					i(118440),	-- Formula: Enchant Neck - Breath of Mastery
-					i(118442),	-- Formula: Enchant Neck - Breath of Versatility
-					i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
-					i(118444),	-- Formula: Enchant Neck - Gift of Haste
-					i(118445),	-- Formula: Enchant Neck - Gift of Mastery
-					i(118447),	-- Formula: Enchant Neck - Gift of Versatility
-					i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
-					i(118454),	-- Formula: Enchant Ring - Gift of Haste
-					i(118455),	-- Formula: Enchant Ring - Gift of Mastery
-					i(118457),	-- Formula: Enchant Ring - Gift of Versatility
-					i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
-					i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
-					i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
-					i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
-					i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
-					i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
-					i(138882),	-- Formula: Tome of Illusions: Draenor
-				}),
+			n(79821, { 	-- Yukla Greenshadow [Horde]
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(111922, {		-- Draenor Enchanting
+						["spellID"] = 0,
+						["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+						["g"] = {
+							recipe(177043),	-- Secrets of Draenor Enchanting
+							recipe(169092),	-- Temporal Crystal
+							recipe(169091),	-- Luminous Shard
+							recipe(162948),	-- Enchanted Dust
+							recipe(158907),	-- Breath of Critical Strike [Ring]
+							recipe(158908),	-- Breath of Haste [Ring]
+							recipe(158909),	-- Breath of Mastery
+							un(1, recipe(158910)),	-- Breath of Mastery
+							recipe(158911),	-- Breath of Versatility
+							recipe(159236),	-- Mark of the Shattered Hand
+						},
+					}),
+					i(119293, {		-- Secret of Draenor Enchanting
+						i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
+						i(118429),	-- Formula: Enchant Cloak - Breath of Haste
+						i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
+						i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
+						i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
+						i(118434),	-- Formula: Enchant Cloak - Gift of Haste
+						i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
+						i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
+						i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
+						i(118439),	-- Formula: Enchant Neck - Breath of Haste
+						i(118440),	-- Formula: Enchant Neck - Breath of Mastery
+						i(118442),	-- Formula: Enchant Neck - Breath of Versatility
+						i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
+						i(118444),	-- Formula: Enchant Neck - Gift of Haste
+						i(118445),	-- Formula: Enchant Neck - Gift of Mastery
+						i(118447),	-- Formula: Enchant Neck - Gift of Versatility
+						i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
+						i(118454),	-- Formula: Enchant Ring - Gift of Haste
+						i(118455),	-- Formula: Enchant Ring - Gift of Mastery
+						i(118457),	-- Formula: Enchant Ring - Gift of Versatility
+						i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
+						i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
+						i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
+						i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
+						i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
+						i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
+						i(138882),	-- Formula: Tome of Illusions: Draenor
+					}),
+				},
 			}),
 			un(1, i(120135)),	-- Recipe: Secrets of Draenor Enchanting
 		},
 	}),
 	n(-492, {	-- Illusions -- these should probably be moved to Craftable Items
-		["groups"] = {
+		["g"] = {
 			sp(217637, {					-- Tome of Illusions: Azeroth
 				i(138787, {
 					ill(803),			-- Fiery Weapon

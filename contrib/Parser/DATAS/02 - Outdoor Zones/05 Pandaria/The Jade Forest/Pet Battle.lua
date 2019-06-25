@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(371, {	-- The Jade Forest
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				q(31953, {	-- Grand Master Hyuna
 					["repeatable"] = true,
 					["coord"] = { 47.9, 54.1, 371 },

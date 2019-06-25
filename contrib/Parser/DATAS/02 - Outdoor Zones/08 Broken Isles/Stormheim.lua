@@ -2278,9 +2278,10 @@ _.Zones =
 							i(129264),	-- Patrol Captain's Gauntlets
 						},
 					}),
-					nh(94313, {	-- Daniel "Boomer" Vorick
+					n(94313, {	-- Daniel "Boomer" Vorick
 						["questID"] = 39048,
 						["coord"] = { 58.2, 75.5, 634 },
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(129144),	-- Boomer's Utility Belt
 						},
@@ -2303,9 +2304,10 @@ _.Zones =
 							},
 						},
 					}),
-					na(94347, {	-- Dread-Rider Cortis
+					n(94347, {	-- Dread-Rider Cortis
 						["questID"] = 43343,
 						["coord"] = { 74.2, 62.4, 634 },
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(130134),	-- Padded-Link Sniper Leggings
 						},
@@ -2376,9 +2378,10 @@ _.Zones =
 							i(129109),	-- Sinker's Line
 						},
 					}),
-					nh(92951, {	-- Houndmaster Ely
+					n(92951, {	-- Houndmaster Ely
 						["questID"] = 38712,
 						["coord"] = { 47.1, 57.2, 634 },
+						["races"] = HORDE_ONLY,
 						["g"] = {	
 							i(129037),	-- THe Houndmaster's Fancy Pants
 						},
@@ -2443,9 +2446,10 @@ _.Zones =
 							i(129035),	-- Indomitable Bearskin Cloak
 						},
 					}), 
-					nh(91780, {	-- Mother Clacker
+					n(91780, {	-- Mother Clacker
 						["questID"] = 38422,
 						["crs"] = { 92343 },	-- Captain Tomas
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(129040),	-- Clacker's Clanking Clam Diggers
 						},

@@ -42,7 +42,7 @@ _.Zones =
 						i(10073),	-- Righteous Helmet
 						i(10176),	-- Mystical Gloves
 					},
-				}), 
+				}),
 				n(50882, {	-- Chupacabros
 					["coord"] = { 27.8, 62.0, 51 },	-- pats a little but should be targetable from this point
 					["g"] = {
@@ -73,7 +73,7 @@ _.Zones =
 						i(10126),	-- Ornate Bracers
 						i(10203),	-- Overlord's Chestplate
 					},
-				}), 
+				}),
 				n(5348,  {	-- Dreamwatcher Forktongue
 					["coord"] = { 18.0, 69.8, 51 },
 					["g"] = {
@@ -121,7 +121,7 @@ _.Zones =
 						i(10106),	-- Wanderer's Boots
 						i(10095),	-- Councillor's Boots
 					},
-				}), 
+				}),
 				n(14446, {	-- Fingat
 					["coords"] = {	-- pats between two points
 						{ 77.2, 82.0, 51 },
@@ -170,7 +170,7 @@ _.Zones =
 						i(10109),	-- Wanderer's Belt
 						i(10128),	-- Revenant Chestplate
 					},
-				}), 
+				}),
 				n(51052, {	-- Gib the Banana-Hoarder
 					["coord"] = { 16.71, 47.30, 51 },
 					["g"] = {
@@ -234,7 +234,7 @@ _.Zones =
 						i(10120),	-- Ornate Cloak
 						i(10168),	-- Templar Crown
 					},
-				}), 
+				}),
 				n(50790, {	-- Ionis
 					["coord"] = { 40.0, 35.6, 51 },
 					["g"] = {
@@ -257,7 +257,7 @@ _.Zones =
 						i(10245),	-- Heavy Lamellar Pauldrons
 						i(10108),	-- Wanderer's Cloak
 					},
-				}), 
+				}),
 				n(1063,  {	-- Jade
 					["coord"] = { 30.53, 47.19, 51 },
 					["g"] = {
@@ -308,7 +308,7 @@ _.Zones =
 						i(10097),	-- Councillor's Circlet
 						i(10148),	-- Mighty Cloak
 					},
-				}), 
+				}),
 				n(50837, {	-- Kash
 					["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
 						{ 79.4, 26.8, 51 },
@@ -342,7 +342,7 @@ _.Zones =
 						i(10134),	-- Revenant Shoulders
 						i(10242),	-- Heavy Lamellar Gauntlets
 					},
-				}), 
+				}),
 				n(763,   {	-- Lost One Chieftain
 					["coords"] = {	-- pats back and forth
 						{ 59.6, 26.4, 51 },
@@ -392,7 +392,7 @@ _.Zones =
 						i(10123),	-- Ornate Circlet
 						i(10111),	-- Wanderer's Hat
 					},
-				}), 
+				}),
 				n(1106,  {	-- Lost One Cook
 					["coords"] = {	-- pats and/or multiple spawnpoints
 						{ 63.0, 24.4, 51 },
@@ -445,7 +445,7 @@ _.Zones =
 						i(10189),	-- Swashbuckler's Shoulderpads
 						i(10167),	-- Templar Boots
 					},
-				}), 
+				}),
 				n(14448, {	-- Molt Thorn
 					["coords"] = {	-- lumbers around a little
 						{ 48.2, 40.8, 51 },
@@ -494,7 +494,7 @@ _.Zones =
 						i(10188),	-- Swashbuckler's Leggings
 						i(10109),	-- Wanderer's Belt
 					},
-				}), 
+				}),
 				n(50903, {	-- Orlix the Swamplord
 					["coords"] = {
 						{ 17.12, 36.45, 51 },
@@ -524,7 +524,7 @@ _.Zones =
 						i(10200),	-- Crusader's Pauldrons
 						i(10125),	-- Ornate Pauldrons
 					},
-				}), 
+				}),
 				n(50886, {	-- Seawing
 					["coords"] = {	-- pats up and down the beach, coords not exhaustive
 						{ 80.2, 16.2, 51 },
@@ -560,7 +560,7 @@ _.Zones =
 						i(10189),	-- Swashbuckler's Shoulderpads
 						i(10113),	-- Wanderer's Shoulders
 					},
-				}), 
+				}),
 				n(50738, {	-- Shimmerscale
 					["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
 						{ 57.0, 51.6, 51 },

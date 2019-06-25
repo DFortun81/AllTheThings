@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(398), 	-- Black Rat
 				p(456), 	-- Blighthawk
 				p(648), 	-- Huge Toad

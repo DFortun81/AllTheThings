@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(467, {	-- Sunstrider Isle
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(459, {	-- Cat
 					["crs"] = { 62019 },	-- Cat
 				}),

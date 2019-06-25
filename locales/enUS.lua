@@ -74,6 +74,7 @@ AllTheThings.L = {
 	["INSTANCE_ID"] = "Instance ID";
 	["ITEM_ID"] = "Item ID";
 	["FACTION_ID"] = "Faction ID";
+	["FLIGHT_PATH_ID"] = "Flight Path ID";
 	["MAP_ID"] = "Map ID";
 	["MOUNT_ID"] = "Mount ID";
 	["MUSIC_ROLL_ID"] = "Music Roll ID";
@@ -107,6 +108,7 @@ AllTheThings.L = {
 	["COLLECTED_APPEARANCE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_circle:0|t |cff15abffCollected*|r";	-- Acquired the colors and icon from CanIMogIt.
 	["NOT_COLLECTED"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Not Collected|r";		-- Acquired the colors and icon from CanIMogIt.
 	["COMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47Complete|r";		-- Acquired the colors and icon from CanIMogIt.
+	["COMPLETE_OTHER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47Complete*|r";		-- Acquired the colors and icon from CanIMogIt.
 	["INCOMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
 	["KNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffKnown on current character|r";
 	["UNKNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Unknown on current character|r";
@@ -254,11 +256,14 @@ AllTheThings.L = {
 		[52] = "Interface\\Icons\\INV_Jewelry_Ring_04",						-- Finger
 		[53] = "Interface\\Icons\\INV_Trinket_Naxxramas05",					-- Trinket
 		[54] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",			-- Relic
+		[55] = "Interface\\Icons\\INV_Drink_25_HoneyTea",					-- Consumables
+		[59] = "Interface\\Icons\\INV_Misc_Book_03",						-- Class Books
 		[100] = "Interface\\Icons\\ability_mount_fireravengodmountgreen",	-- Mounts
 		[101] = "Interface\\Icons\\Tracking_WildPet", 						-- Battle Pets
 		[102] = "Interface\\Icons\\INV_Misc_Toy_10",						-- Toy
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",						-- Bag
 		[200] = "Interface\\Icons\\inv_scroll_05",							-- Recipes
+		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",		-- Event Item
 		
 	},
 
@@ -840,20 +845,6 @@ AllTheThings.L = {
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101504] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-		
-		
-		[-91001] = "Interface\\Icons\\achievement_zone_durotar",
-		[-91002] = "Interface\\Icons\\achievement_zone_durotar",
-		[-91003] = "Interface\\Icons\\achievement_zone_durotar",
-		[-91004] = "Interface\\Icons\\achievement_zone_barrens_01",
-		[-91005] = "Interface\\Icons\\achievement_zone_barrens_01",
-		[-91006] = "Interface\\Icons\\achievement_zone_barrens_01",
-		[-91007] = "Interface\\Icons\\achievement_zone_barrens_01",
-		[-91008] = "Interface\\Icons\\achievement_zone_barrens_01",
-		[-91009] = "Interface\\Icons\\achievement_zone_barrens_01",
-		[-91010] = "Interface\\Icons\\achievement_zone_barrens_01",
-		[-91011] = "Interface\\Icons\\achievement_zone_barrens_01",
-		[-91012] = "Interface\\Icons\\achievement_zone_barrens_01",
 	};
 	["NPC_ID_NAMES"] = {
 
@@ -863,44 +854,30 @@ AllTheThings.L = {
 		[-2] = BATTLE_PET_SOURCE_3, 											-- Vendor
 		[-3] = GetItemSubClassInfo(15,3), 										-- World Event
 		[-4] = BATTLE_PET_SOURCE_6, 											-- Achievement
-		[-5] = UNIT_NAME_PLAYER_TITLE, 											-- Titles
-		[-6] = GUILD_INTEREST_DUNGEON, 											-- Dungeons
 		[-7] = WORLD.." "..RAID_BOSSES, 										-- World Bosses
-		[-8] = GDAPI_REALMTYPE_NORMAL,											-- PvE
 		[-9] = GDAPI_REALMTYPE_PVP,												-- PvP
-		[-10] = PLAYER_DIFFICULTY1, 											-- Normal
-		[-11] = PLAYER_DIFFICULTY2, 											-- Heroic
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",					-- Warpwood Quarter [East - Demon]
 		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",					-- Gordok Commons [North - Ogres]
 		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",						-- Capital Gardens [West - Elves]
 		[-15] = "Common Vendor Items",											-- Common Vendor Items
 		[-16] = BATTLE_PET_BREED_QUALITY4, 										-- Rares
 		[-17] = TRACKER_HEADER_QUESTS, 											-- Quests
-		[-18] = SCENARIOS, 														-- Scenarios
 		[-19] = DUNGEON_FLOOR_PROVINGGROUNDS1, 									-- Arena of Annihilation
-		[-20] = GetCategoryInfo(15275), 										-- Class Hall
-		[-21] = ORDER_HALL_PALADIN, 											-- Sanctum of Light
-		[-22] = ORDER_HALL_ROGUE, 												-- The Hall of Shadows
-		[-23] = ORDER_HALL_DEATHKNIGHT, 										-- Acherus
-		[-24] = ORDER_HALL_WARLOCK, 											-- Dreadscar Rift
+		
 		[-25] = SHOW_PET_BATTLES_ON_MAP_TEXT, 									-- Pet Battles
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
-		[-27] = PLAYER_DIFFICULTY6, 											-- Mythic
-		[-28] = PLAYER_DIFFICULTY3, 											-- Raid Finder
-		[-29] = PLAYER_DIFFICULTY3.." "..BAGSLOT, 								-- Raid Finder Bag
-		[-30] = GUILD_EVENTS, 													-- Events
+		
 		[-31] = BATTLE_PET_SOURCE_8,											-- Promotion
 		[-32] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
-		[-33] = PROFESSIONS_FISHING,											-- Fishing
+		
 		[-34] = TRACKER_HEADER_WORLD_QUESTS, 									-- World Quests
-		[-35] = ORDER_HALL_MISSIONS, 											-- Class Hall Missions
+		
 		[-36] = BATTLE_PET_SOURCE_10, 											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
 		[-38] = TRADE_SKILLS,													-- Professions
-		[-39] = LFG_LIST_LEGACY.." "..TRACKER_HEADER_QUESTS,					-- Legacy Quest
+		
 		[-40] = LFG_LIST_LEGACY, 												-- Legacy
 		[-41] = "Cache of Madness",
-		[-42] = ORDER_HALL_MISSIONS,  											-- Class Hall Missions
 -- Armor Types
 		[-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,				-- Cloth
 		[-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,				-- Leather
@@ -909,32 +886,23 @@ AllTheThings.L = {
 -- World Events
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
 		[-48] = MINIMAP_TRACKING_STABLEMASTER,									-- Stable Master
-		[-49] = (1275),
 		[-50] = GetSpellInfo(27741),											-- Love is in the Air
 		[-51] = select(1,GetCategoryInfo(159)),									-- Noblegarden
 		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
 		[-53] = "Midsummer Fire Festival",										-- Midsummer Fire Festival
-		[-54] = "Unused",														-- Unused (Previously: Midsummer Fire Festival [Horde])
 		[-55] = "Pirate's Day",
 		[-56] = select(1,GetCategoryInfo(162)),									-- Brewfest
-		[-57] = "Harvest Festival",
 		[-58] = select(1,GetCategoryInfo(158)),									-- Hallow's End
 		[-59] = "Day of the Dead",
 		[-60] = select(1,GetCategoryInfo(14981)),								-- Pilgrim's Bounty
 		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
 		[-62] = "Stranglethorn Fishing Extravaganza",
-		[-63] = GetSpellInfo(243549),											-- Trial of Style
-		[-64] = "Main Questline",
 		[-65] = GetSpellInfo(190357).." "..select(1,GetCategoryInfo(15268)),	-- Blizzard Promotions
-		[-66] = BATTLE_PET_SOURCE_5, 											-- Pet Battle
-		[-67] = EXPANSION_NAME5.." "..CHALLENGE_MODE.." "..AUCTION_CATEGORY_WEAPONS, -- Warlords of Draenor Chaallenge Mode Weapons
 		[-68] = DUNGEON_FLOOR_NIGHTMARERAID13,									-- The Emerald Dream
 		[-69] = GetSpellInfo(21127),											-- Maraudon Portal
 		[-70] = DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097),			-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21.." - "..GetSpellInfo(251095),			-- The Wicked Grotto [Purple]
 		[-72] = "Sargerei War Council",
-		[-73] = "Call of the Scarab",											-- Call of the Scarab
-		[-74] = ZONE.." "..WIDE, 												-- Zone Wide
 		[-75] = DUNGEON_FLOOR_BLACKROCKDEPTHS1,  								-- Detention Block
 		[-76] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,  								-- Shadowforge City
 		[-77] = SPECIAL, 														-- Special
@@ -949,24 +917,14 @@ AllTheThings.L = {
 		[-86] = "Library",
 		[-87] = "Armory",
 		[-88] = "Cathedral",
-		[-89] = "Scorn",
 		[-90] = ELITE,															-- Elite
-		[-91] = "Deprecated",
-		[-92] = "How to obtain Meatball",										-- Meatball Instructions
 		[-93] = "Silithus (The Wound)",
 		[-94] = "Black Market Auction House",									-- Black Market Auction House"
-		[-95] = ENABLE_MUSIC.." "..ROLL,										-- Music Roll
-		[-96] = NPC_NAMES_DROPDOWN_TRACKED,										-- Quest NPCs
-		[-97] = VOICEMACRO_20_Dw_0_FEMALE,										-- No, they're not real, but thanks for noticing.
-		[-98] = GARRISON_LOCATION_TOOLTIP,										-- Garrison
 -- Garrison Note: These will be changed into a new class soon(TM)
 		[-99] = select(2,C_Garrison.GetBuildingInfo(65) ), 						-- Stables
 		[-100] = LFG_LIST_LEGACY, 												-- Legacy (Unassociated with shortcut)
-		[-101] = GARRISON_FOLLOWERS,											-- Followers
-		[-102] = select(2,C_Garrison.GetBuildingInfo(76)),						-- Alchemy Lab
 		[-103] = select(2,C_Garrison.GetBuildingInfo(24)),						-- Barn
 		[-104] = select(2,C_Garrison.GetBuildingInfo(26)),						-- Barracks
-		[-105] = select(2,C_Garrison.GetBuildingInfo(93)), 						-- Enchanter's Study
 		[-106] = select(2,C_Garrison.GetBuildingInfo(91)), 						-- Engineering Works
 		[-107] = select(2,C_Garrison.GetBuildingInfo(64)), 						-- Fishing Shack
 		[-108] = select(2,C_Garrison.GetBuildingInfo(96)), 						-- Gem Boutique
@@ -976,16 +934,11 @@ AllTheThings.L = {
 		[-112] = select(2,C_Garrison.GetBuildingInfo(42)), 						-- Menagerie
 		[-113] = select(2,C_Garrison.GetBuildingInfo(52)), 						-- Salvage Yard
 		[-114] = select(2,C_Garrison.GetBuildingInfo(95)), 						-- Scribe's Quaters
-		[-115] = select(2,C_Garrison.GetBuildingInfo(51)), 						-- Storehouse
-		[-116] = select(2,C_Garrison.GetBuildingInfo(94)), 						-- Tailoring Emporium
 		[-117] = select(2,C_Garrison.GetBuildingInfo(60)), 						-- The Forge
 		[-118] = select(2,C_Garrison.GetBuildingInfo(90)), 						-- The Tannery
 		[-119] = select(2,C_Garrison.GetBuildingInfo(111)), 					-- Trading Post
 --Horde [Swaps based on faction ONLY after a reloadui]
-		[-120] = select(2,C_Garrison.GetBuildingInfo(61)), 						-- Lunarfall Excavation / Frostwall Mine [585]
 		[-121] = select(2,C_Garrison.GetBuildingInfo(34)), 						-- Lunarfall Inn / Frostwall Tavern
-		[-122] = select(2,C_Garrison.GetBuildingInfo(162)), 					-- Gnomish Gearworks / Goblin Workshop
-		[-123] = select(2,C_Garrison.GetBuildingInfo(37)), 						-- Mage Tower / Spirit Lodge
 		[-124] = "Garrison Sets", 												-- Garrison Sets
 -- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-125] = select(2,C_Garrison.GetBuildingInfo(8)), 						-- Dwarven Bunker / War Mill
@@ -997,13 +950,6 @@ AllTheThings.L = {
 		[-131] = "The Hinterlands "..GetSpellInfo(133137),						-- The Hinterlands Active
 		[-132] = "Feralas "..GetSpellInfo(133137),								-- Feralas Active
 		[-133] = "Duskwood "..GetSpellInfo(78741),								-- Duskwood Activated
-		--[[ Would rather cache through Blizzard, but it's not able to retrieve info during loading screen.
-		-- Need to talk to Crieve more and see if there's a way to cache it possible
-		--[-130] = select(1,AllTheThings.GetMapName(47)),	-- Duskwood Active
-		--[-131] = select(1,AllTheThings.GetMapName(26)).." "..GetSpellInfo(133137),	-- The Hinterlands Active
-		--[-132] = select(1,AllTheThings.GetMapName(69)).." "..GetSpellInfo(133137),	-- Feralas Active
-		--[-133] = select(1,AllTheThings.GetMapName(47)).." "..GetSpellInfo(78741),	-- Duskwood Activated
-		--]]
 --Transmog Sets
 		[-134] = "Orgrimmar Set",
 		[-135] = "Stormwind Set",
@@ -1024,39 +970,27 @@ AllTheThings.L = {
 		[-148] = "Streamtalker",
 		[-149] = "Sunsoul",
 		[-150] = "Trailseeker",
-		[-151] = "Soulare of Andorhal",
 		[-152] = "Garrison Campaign",
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
-		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 130),					-- Level 130
 		[-157] = "The Hinterlands "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "Feralas "..GetSpellInfo(78741),								-- Feralas Activated
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
-		--[[ See above
-		[-157] = select(1,AllTheThings.GetMapName(26)).." "..GetSpellInfo(78741),	-- The Hinterlands Activated
-		[-158] = select(1,AllTheThings.GetMapName(69)).." "..GetSpellInfo(78741),	-- Feralas Activated
-		--]]
 -- Expansions
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
 -- Other
 		[-161] = TOY,															-- Toy
 		[-162] = PETS,															-- Pets
 		[-163] = RESISTANCE0_NAME,  											-- Armor
-		[-164] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
 		[-165] = GetItemSubClassInfo(13,1),
-		[-166] = GetSpellInfo(168819),											-- Pickpocketing
 		[-167] = GetSpellInfo(7738),											-- Fishing Poles
 		[-168] = FACTION_OTHER .. " " ..QUESTS_LABEL, 							-- Other Quests
 		[-169] = BOUNTY_BOARD_LOCKED_TITLE, 									-- Emissary Quests
 		[-170] = GetSpellInfo(41341), 											-- Balance of Power
 		[-171] = "Quest Chains",
-		[-172] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
 		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
 		[-174] = CALENDAR_FILTER_DARKMOON,										-- Darkmoon Faire
-		[-175] = CALENDAR_REPEAT_MONTHLY.." "..WORLD.." "..EVENTS_LABEL,		-- Monthly World Events
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
-		[-177] = GetSpellInfo(57055).." "..WORLD.." "..EVENTS_LABEL,			-- Mini Holidays
 -- Professions
 		[-178] = GetSpellInfo(20221), 											-- Goblin Engineering"Goblin Engineering",
 		[-179] = GetSpellInfo(20220), 											-- Gnomish Engineering
@@ -1064,29 +998,16 @@ AllTheThings.L = {
 		[-181] = GetSpellInfo(88422),				 							-- Blacksmithing
 		[-182] = GetSpellInfo(175640),				 							-- Enchanting
 		[-183] = GetSpellInfo(59193),				 							-- Engineering
-		[-184] = GetSpellInfo(170691),				 							-- Herbalism
 		[-185] = GetSpellInfo(90441),				 							-- Inscription
 		[-186] = GetSpellInfo(169145),				 							-- Jewelcrafting
 		[-187] = GetSpellInfo(86666),				 							-- Leatherworking
 		[-188] = GetSpellInfo(32606),				 							-- Mining
-		[-189] = GetSpellInfo(87077),				 							-- Skinning
 		[-190] = GetSpellInfo(86818),				 							-- Tailoring
 		[-191] = PROFESSIONS_ARCHAEOLOGY, 										-- Archaeology
 		[-192] = PROFESSIONS_COOKING, 											-- Cooking
 		[-193] = PROFESSIONS_FIRST_AID, 										-- First Aid
 		[-194] = PROFESSIONS_FISHING, 											-- Fishing
-		-- Scroll of Resurrection Sets
-		[-195] = "Seraphic Set", -- Priest
-		[-196] = "Magesoul Set", -- Mage
-		[-197] = "Dreadsoul Set", -- Warlock
-		[-198] = "Wildsoul Set", -- Druid
-		[-199] = "Shadowstalking", -- Rogue
-		[-200] = "Beastsoul", -- Hunter
-		[-201] = "Stormbinder", -- Shaman
-		[-202] = "Zealous", -- Paladin
-		[-203] = "Valiant", -- Warrior
-		[-204] = "Ebonsoul", -- Death Knight
-		[-205] = "Monastic", -- Monk
+		
 		[-206] = GetSpellInfo(67772),											-- Paragon
 		[-207] = GetSpellInfo(262064),											-- Lightforged Draenei
 		[-208] = GetSpellInfo(262062),											-- Void Elf
@@ -1096,36 +1017,26 @@ AllTheThings.L = {
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
 		[-214] = GetSpellInfo(262061).." "..HOME,								-- Nightborne Home
-		[-215] = GetSpellInfo(250877),											-- Vindicaar
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
-		[-219] = MINIMAP_TRACKING_TRAINER_PROFESSION,							-- Profession Trainers
 		[-220] = CLASS,															-- Class
-		[-221] = TASKS_BONUS_OBJECTIVES,										-- Bonus Objectives
 		[-222] = select(2, GetAchievementInfo(9726)),							-- Treasure Hunter
-		[-223] = DAILY,															-- Daily
 		[-224] = "Illidari",													-- Illidari
-		[-225] = "Elemental Bonds",												-- Elemental Bonds
 		[-226] = TRANSMOG_SOURCE_4,												-- World Drop
 		[-227] = GetSpellInfo(109382),											-- Victory
 		[-228] = GetSpellInfo(218950),											-- Flight Path
 		[-229] = CALENDAR_REPEAT_WEEKLY,										-- Weekly
 		[-230] = PVP_CONQUEST,													-- Conquest
-		[-231] = BATTLE_PET_BREED_QUALITY4.." - "..FACTION_ALLIANCE,			-- Rares - Alliance  [Note: Temp Solution]
-		[-232] = BATTLE_PET_BREED_QUALITY4.." - "..FACTION_HORDE,				-- Rares - Horde  [Note: Temp Solution]
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde [Horde]
 		[-234] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde [Alliance]
 		[-235] = AUCTION_CATEGORY_RECIPES,										-- Recipes
 		[-236] = "Alliance War Campaign",										-- Alliance War Campaign
-		[-237] = GetSpellInfo(290253),											-- Warfront: The Battle for Darkshore [Alliance]
-		[-238] = GetSpellInfo(290228),											-- Warfront: The Battle for Darkshore [Horde]
-		[-239] = GetSpellInfo(208246),											-- Assault [8.1 Assaults]
+		[-237] = GetSpellInfo(290253),											-- Warfront: The Battle for Darkshore
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-241] = PVP_SEASON_REWARD,												-- Season Reward
 		[-242] = "Unrated",														-- Unrated
 		[-243] = "Bounty",														-- Bounty
-		[-244] = "Dark Iron Dwarf",												-- Dark Iron Dwarf
 		[-245] = "Mag'har Orc",													-- Mag'har Orc
 		
 		-- S.E.L.F.I.E. Camera Filters
@@ -1140,14 +1051,8 @@ AllTheThings.L = {
 		[-253] = "Horde War Campaign",											-- Horde War Campaign
 		[-254] = "Heritage Armor",												-- Heritage Armor
 -- Other
-		[-294] = "Killed First",
-		[-295] = "Killed Second",
-		[-296] = "Killed Fourth",
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
-		[-298] = BOSSES,														-- Bosses
 		[-299] = GARRISON_MISSIONS, 											-- Missions
-		[-300] = "Satchels of Helpful Goods",
-		[-301] = "Crates of Battlefield Goods",
 		[-302] = BATTLEFIELD_LEVEL.." 80-84", 									-- Level Range 80-84
 		[-303] = BATTLEFIELD_LEVEL.." 85-89",									-- Level Range 85-89
 		[-304] = BATTLEGROUNDS,													-- Battlegrounds
@@ -1177,7 +1082,6 @@ AllTheThings.L = {
 		[-341] = GetItemSubClassInfo(2,19),										-- Wands
 		[-342] = GetItemSubClassInfo(2,10),										-- Staffs
 		[-343] = GetItemSubClassInfo(2,6),										-- Polearms
-		[-344] = GetItemSubClassInfo(2,17),										-- Spears
 		[-345] = GetItemSubClassInfo(2,3),										-- Guns
 		[-346] = GetItemSubClassInfo(2,2),										-- Bows
 		[-347] = GetItemSubClassInfo(2,18),										-- Crossbows
@@ -1205,14 +1109,9 @@ AllTheThings.L = {
 		[-371] = DUNGEON_FLOOR_NAXXRAMAS6, 										-- The Upper Necropolis
 		[-372] = RAID_DIFFICULTY1,												-- 10 Player
 		[-373] = RAID_DIFFICULTY2,												-- 25 Player
-		[-374] = RAID_DIFFICULTY3,												-- 10 Player (Heroic)
 		[-375] = RAID_DIFFICULTY4,												-- 25 Player (Heroic)
 		[-376] = PLAYER_DIFFICULTY1,											-- Normal
 		[-377] = PLAYER_DIFFICULTY2,											-- Heroic
-		[-378] = PLAYER_DIFFICULTY3,											-- Raid Finder
-		[-379] = PLAYER_DIFFICULTY4,											-- Flexible
-		[-380] = PLAYER_DIFFICULTY5,											-- Challenge
-		[-381] = PLAYER_DIFFICULTY6,											-- Mythic
 		[-382] = BATTLETAG,														-- BattleTag
 		[-383] = GetItemSubClassInfo(2,14),										-- Miscellaneous
 		[-384] = GetItemSubClassInfo(8,1),										-- Neck
@@ -1226,17 +1125,11 @@ AllTheThings.L = {
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "War Chest",													-- Daily War Chest
 		[-489] = "Weekly PVP Chest",											-- Weekly Conquest Point Cap Chest
-		[-490] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
 		[-491] = "Tarot Cards",
 		[-492] = "Illusions",
-		[-493] = TIME_UNKNOWN.." "..SPELL_TARGET_TYPE6_DESC, 					-- Unknown location
 		[-494] = MAC_OPTIONS_MISC, 												-- Miscellaneous
-		[-495] = TOY_BOX, 														-- Toy Box
 		[-496] = DUNGEON_FLOOR_DEEPRUNTRAM2,									-- Bizmo's Brawlpub
-		[-497] = GetSpellInfo(213410).." "..GetSpellInfo(76724),				-- Demonic Offering
-		[-498] = GetSpellInfo(23700),											-- Twisting Nether
 		[-499] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
-		[-500] = "WoW Anniversary",
 		-- Dark Iron Dwarves Mole Machine
 		[-501] = C_Map.GetAreaInfo(5039),										-- Sulfuron Spire
 		[-502] = C_Map.GetAreaInfo(348),										-- Aerie Peak
@@ -1269,7 +1162,7 @@ AllTheThings.L = {
 		[-532] = "Heroes of the Storm Promotion",
 		[-533] = "Hearthstone Promotion",
 		[-534] = "Collector's Edition",
-		[-535] = "Blizzcon Event",
+		
 		[-536] = "Overwatch Promotion",
 		[-537] = "Starcraft Promotion",
 		[-538] = "Diablo 20th Anniversary Promotion",
@@ -1820,25 +1713,6 @@ AllTheThings.L = {
 		[-90002] = C_Map.GetAreaInfo(9338),							-- Waning Glacier
 		[-90002] = C_Map.GetAreaInfo(9617),							-- Anyport
 		[-90005] = C_Map.GetAreaInfo(9305),							-- Castaway Point
-		
-		-- Durotar
-		[-91001] = C_Map.GetAreaInfo(362),	-- Razor Hill
-		[-91002] = C_Map.GetAreaInfo(367),	-- Sen'jin Village
-		[-91003] = C_Map.GetAreaInfo(4982),	-- The Dranosh'ar Blockade
-		-- Northern Barrens
-		[-91004] = C_Map.GetAreaInfo(379),	-- Far Watch Post
-		[-91005] = C_Map.GetAreaInfo(1704),	-- Grol'dom Farm
-		[-91006] = C_Map.GetAreaInfo(380),	-- The Crossroads
-		[-91007] = C_Map.GetAreaInfo(386),	-- The Forgotten Pools
-		[-91008] = C_Map.GetAreaInfo(388),	-- The Stagnant Oasis
-		[-91009] = C_Map.GetAreaInfo(392),	-- Ratchet
-		[-91010] = C_Map.GetAreaInfo(5117),	-- Nozzlepot's Outpost
-		[-91011] = C_Map.GetAreaInfo(382),	-- The Sludge Fen
-		[-91012] = C_Map.GetAreaInfo(1703),	-- The Mor'Shan Ramparts
-		
-		 
--- Custom Subzone Names that we can't pull from the API because Blizz hates us
-  -- Val'sharah
 	},
 
 	["OBJECT_ID_ICONS"] = {
@@ -1950,8 +1824,10 @@ AllTheThings.L = {
 		[188085] = "Interface\\Icons\\inv_misc_food_wheat_01",
 		[188128] = "Interface\\Icons\\INV_SummerFest_FireSpirit",
 		[188129] = "Interface\\Icons\\INV_SummerFest_FireSpirit",
+		[188418] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[189989] = "Interface\\Icons\\INV_Misc_WartornScrap_Plate",
 		[189990] = "Interface\\Icons\\INV_Misc_WartornScrap_Plate",
+		[190020] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[190035] = "Interface\\Icons\\Achievement_Halloween_Candy_01",
 		[190037] = "Interface\\Icons\\Achievement_Halloween_Candy_01",
 		[190038] = "Interface\\Icons\\Achievement_Halloween_Candy_01",
@@ -1963,6 +1839,7 @@ AllTheThings.L = {
 		[190083] = "Interface\\Icons\\Achievement_Halloween_Candy_01",
 		[190085] = "Interface\\Icons\\Achievement_Halloween_Candy_01",
 		[190104] = "Interface\\Icons\\Achievement_Halloween_Candy_01",
+		[191728] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[191760] = "Interface\\Icons\\Icon_UpgradeStone_Mechanical_legendary",
 		[191761] = "Interface\\Icons\\Icon_UpgradeStone_Mechanical_legendary",
 		[192049] = "Interface\\ICons\\inv_misc_fish_67",
@@ -2490,6 +2367,7 @@ AllTheThings.L = {
 		[190104] = "Candy Bucket",
 		[190917] = "Abandoned Mail",
 		[190936] = "Plague Cauldron",
+		[191728] = "Wanted!",
 		[191760] = "Inventor's Library Console",
 		[191761] = "Prototype Console",
 		[192049] = "Fangtooth Herring School",
@@ -3236,6 +3114,7 @@ AllTheThings.L = {
 		[294317] = "Deadwood Chest",
 		[294319] = "Sandsunken Treasure",
 		[294703] = "Grimmy's Rusty Lockbox",
+		[296536] = "Bloodied Sentinel's Glaive",
 		[297825] = "Web-Covered Chest",
 		[297828] = "Merchant's Chest",
 		[297878] = "Hexed Chest",

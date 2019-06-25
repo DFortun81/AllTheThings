@@ -48,7 +48,8 @@ _.Zones =
 					un(40, qa(46314)),	-- Vengeance: Seeking Kor'vas
 				}),
 				n(-2, {	-- Vendors
-					nh(18751, {	-- Kalaen <Jewelcrafting Trainer>
+					n(18751, {	-- Kalaen <Jewelcrafting Trainer>
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
 								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -97,7 +98,8 @@ _.Zones =
 						},
 						["description"] = "This vendor's designs have been removed but recipes are still available at trainer.",
 					}),
-					na(18774, {	-- Tatiana <Jewelcrafting Trainer>
+					n(18774, {	-- Tatiana <Jewelcrafting Trainer>
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
 								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe

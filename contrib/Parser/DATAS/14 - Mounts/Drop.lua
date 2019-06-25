@@ -49,7 +49,9 @@ _.Mounts =
 		i(116794),	-- Garn Nighthowl
 		i(116779),	-- Garn Steelmaw
 		i(116673),	-- Giant Coldsnout
+		i(166705),	-- Glacial Tidestorm
 		i(153042),	-- Glorious Felcrusher Mount
+		i(166518),	-- G.M.O.D.
 		i(163573),	-- Goldenmane's Rein's
 		i(43959),	-- Grand Black War Mammoth (Alliance)
 		i(44083),	-- Grand Black War Mammoth (Horde)

@@ -35,7 +35,7 @@ _.Zones =
 						["coord"] = { 83.4, 70 },
 					}),
 				}),
-				n(-25, {	-- Pet Battle
+				filter(101, {	-- Pet Battle
 					p(417),		-- Bat
 					p(646),		-- Chicken
 					q(3861, { 	-- CLUCK!
@@ -639,7 +639,7 @@ _.Zones =
 					["description"] = "|cff66ccffDeathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.|r",
 					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",
 					["g"] = {
-						n(-25, {	-- Pet Battle
+						filter(101, {	-- Pet Battle
 							p(417, {	-- Rat
 								["crs"] = { 61366 },	-- Rat
 							}),

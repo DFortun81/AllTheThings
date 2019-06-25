@@ -170,9 +170,16 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 						["groups"] = {
 							ach(12272),	-- Gold Fever
+							-- NOTE:: blizzard switched boss criteria numbers for horde and alliance here [Pr3vention]
+							{
+								["achievementID"] = 12270,	-- Bringing Hexy Back
+								["criteriaID"] = 2,	-- Vol'kaal defeated
+								["races"] = ALLIANCE_ONLY,
+							},
 							{
 								["achievementID"] = 12270,	-- Bringing Hexy Back
 								["criteriaID"] = 1,	-- Vol'kaal defeated
+								["races"] = HORDE_ONLY,
 							},
 							i(158321),	-- Wand of Zealous Purification
 							i(158322),	-- Aureus Vessel
@@ -190,9 +197,16 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							122965,	-- Vol'kaal
 						},
 						["groups"] = {
+							-- NOTE:: blizzard switched boss criteria numbers for horde and alliance here [Pr3vention]
+							{
+								["achievementID"] = 12270,	-- Bringing Hexy Back
+								["criteriaID"] = 1,	-- Priestess Alun'za defeated
+								["races"] = ALLIANCE_ONLY,
+							},
 							{
 								["achievementID"] = 12270,	-- Bringing Hexy Back
 								["criteriaID"] = 2,	-- Priestess Alun'za defeated
+								["races"] = HORDE_ONLY,
 							},
 							i(159632),	-- Adulation Enforcer
 							i(158375),	-- Drape of the Loyal Vassal

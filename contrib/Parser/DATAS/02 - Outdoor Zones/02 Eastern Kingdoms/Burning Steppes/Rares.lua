@@ -7,6 +7,7 @@ _.Zones =
 		m(36, {	-- Burning Steppes
 			n(-16, {	-- Rares
 				n(50725, { 	-- Azelisk
+					["coord"] = { 71.8, 23.0, 36 },
 					["g"] = {
 						i(10083),	-- Lord's Crown
 						i(10068),	-- Righteous Boots
@@ -20,6 +21,7 @@ _.Zones =
 					},
 				}),
 				n(50807, { 	-- Catal
+					["coord"] = { 64.6, 54.8, 36 },
 					["g"] = {
 						i(10075),	-- Righteous Spaulders
 						i(10190),	-- Swashbuckler's Belt
@@ -38,6 +40,7 @@ _.Zones =
 					},
 				}),
 				n(50792, { 	-- Chiaa
+					["coord"] = { 35.4, 26.8, 36 },
 					["g"] = {
 						i(10203),	-- Overlord's Chestplate
 						i(10107),	-- Wanderer's Bracers
@@ -64,6 +67,14 @@ _.Zones =
 					},
 				}),
 				n(10077, { 	-- Deathmaw
+					["coords"] = {
+						{ 63.2, 32.2, 36 },
+						{ 70.6, 31.0, 36 },
+						{ 73.3, 51.7, 36 },
+						{ 68.4, 55.2, 36 },
+						{ 70.2, 56.8, 36 },
+						{ 72.2, 59.0, 36 },
+					},
 					["g"] = {
 						i(10208),	-- Overlord's Legplates
 						i(10243),	-- Heavy Lamellar Girdle
@@ -105,6 +116,11 @@ _.Zones =
 					},
 				}),
 				n(50810, { 	-- Favored of Isiset
+					["coords"] = {
+						{ 74.2, 52.0, 36 },
+						{ 75.4, 51.8, 36 },
+						{ 75.6, 53.4, 36 },
+					},
 					["g"] = {
 						i(10080),	-- Lord's Gauntlets
 						i(10185),	-- Swashbuckler's Cape
@@ -126,6 +142,7 @@ _.Zones =
 					},
 				}),
 				n(9604, { 	-- Gorgon'och
+					["coord"] = { 64.0, 46.4, 36 },
 					["g"] = {
 						i(10062),	-- Duskwoven Gloves
 						i(10239),	-- Heavy Lamellar Vambraces
@@ -161,6 +178,7 @@ _.Zones =
 					},
 				}),
 				n(8979, { 	-- Gruklash
+					["coord"] = { 33.6, 37.0, 36 },
 					["g"] = {
 						i(10238),	-- Heavy Lamellar Boots
 						i(10075),	-- Righteous Spaulders
@@ -196,6 +214,7 @@ _.Zones =
 					},
 				}),
 				n(9602, { 	-- Hahk'Zor
+					["coord"] = { 68.6, 40.6, 36 },
 					["g"] = {
 						i(10241),	-- Heavy Lamellar Helm
 						i(9943),	-- Abjurer's Robe
@@ -229,6 +248,11 @@ _.Zones =
 					},
 				}),
 				n(8976, { 	-- Hematos
+					["coords"] = {
+						{ 26.4, 58.2, 36 },
+						{ 27.6, 59.4, 36 },
+						{ 28.0, 60.0, 36 },
+					},
 					["g"] = {
 						i(10133),	-- Revenant Leggings
 						i(10244),	-- Heavy Lamellar Leggings
@@ -267,6 +291,7 @@ _.Zones =
 					},
 				}),
 				n(50855, { 	-- Jaxx the Rabid
+					["coord"] = { 47.0, 24.2, 36 },
 					["g"] = {
 						i(10197),	-- Crusader's Belt
 						i(10240),	-- Heavy Lamellar Chestpiece
@@ -283,6 +308,11 @@ _.Zones =
 					},
 				}),
 				n(50842, { 	-- Magmagan
+					["coords"] = {
+						{ 29.2, 31.4, 36 },
+						{ 29.0, 34.8, 36 },
+						{ 28.8, 33.0, 36 },
+					},
 					["g"] = {
 						i(9954),	-- Chieftain's Leggings
 						i(10072),	-- Righteous Gloves
@@ -304,6 +334,12 @@ _.Zones =
 					},
 				}),
 				n(8981, { 	-- Malfunctioning Reaver
+					["coords"] = {
+						{ 51.0, 36.8, 36 },
+						{ 52.6, 38.6, 36 },
+						{ 55.2, 43.0, 36 },
+						{ 53.6, 36.6, 36 },
+					},
 					["g"] = {
 						i(10245),	-- Heavy Lamellar Pauldrons
 						i(10172),	-- Mystical Mantle
@@ -348,6 +384,7 @@ _.Zones =
 					},
 				}),
 				n(50361, { 	-- Ornat
+					["coord"] = { 50.6, 60.6, 36 },
 					["g"] = {
 						i(10196),	-- Crusader's Gauntlets
 						i(10075),	-- Righteous Spaulders
@@ -372,6 +409,11 @@ _.Zones =
 					},
 				}),
 				n(50357, { 	-- Sunwing
+					["coords"] = {
+						{ 8.4, 54.6, 36 },
+						{ 9.8, 54.4, 36 },
+						{ 9.4, 53.4, 36 },
+					},
 					["g"] = {
 						i(10243),	-- Heavy Lamellar Girdle
 						i(10085),	-- Lord's Pauldrons
@@ -387,6 +429,11 @@ _.Zones =
 					},
 				}),
 				n(10078, { 	-- Terrorspark
+					["coords"] = {
+						{ 57.0, 31.4, 36 },
+						{ 56.2, 33.0, 36 },
+						{ 58.0, 33.6, 36 },
+					},
 					["g"] = {
 						i(10243),	-- Heavy Lamellar Girdle
 						i(10068),	-- Righteous Boots
@@ -427,6 +474,7 @@ _.Zones =
 					},
 				}),
 				n(8978, { 	-- Thauris Balgarr
+					["coord"] = { 43.8, 39.8, 36 },
 					["g"] = {
 						i(10197),	-- Crusader's Belt
 						i(10200),	-- Crusader's Pauldrons
@@ -466,6 +514,7 @@ _.Zones =
 					},
 				}),
 				n(50730, { 	-- Venomspine
+					["coord"] = { 5.8, 38.2, 36 },
 					["g"] = {
 						i(10130),	-- Revenant Girdle
 						i(10134),	-- Revenant Shoulders
@@ -485,6 +534,12 @@ _.Zones =
 					},
 				}),
 				n(10119, { 	-- Volchan
+					["coords"] = {
+						{ 19.6, 42.6, 36 },
+						{ 19.8, 41.4, 36 },
+						{ 21.2, 42.4, 36 },
+						{ 22.6, 41.8, 36 },
+					},
 					["g"] = {
 						i(10194),	-- Crusader's Cloak
 						i(10080),	-- Lord's Gauntlets

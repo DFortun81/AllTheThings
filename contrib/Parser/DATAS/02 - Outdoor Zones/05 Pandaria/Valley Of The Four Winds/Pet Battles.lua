@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		m(376, {	-- Valley of the Four Winds				
-			n(-25, {	-- Pet Battles
+		m(376, {	-- Valley of the Four Winds
+			filter(101, {	-- Pet Battle
 				p(706), 	-- Bandicoon
 				p(707), 	-- Bandicoon Kit
 				p(564), 	-- Emerald Turtle

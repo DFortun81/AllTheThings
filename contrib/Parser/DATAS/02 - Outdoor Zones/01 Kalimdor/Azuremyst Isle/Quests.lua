@@ -81,7 +81,10 @@ _.Zones =
 				q(9603, {	-- Beds, Bandages, and Beyond
 					["qg"] = 16553,	-- Caregiver Chellan
 					["coord"] = { 48.3, 49.1, 97 },
-					["races"] = { 11 },	-- Draenei
+					["races"] = { 
+						11,	-- Draenei
+						30,	-- Lightforged Draenei
+					},
 				}),
 				q(10350, {	-- Behomat
 					["qg"] = 17480,	-- Ruada
@@ -201,6 +204,13 @@ _.Zones =
 					["coord"] = { 48.4, 51.8, 97 },
 					["races"] = { 11 },	-- Draenei
 				}),
+				q(28289, {	-- Moonglade Calls
+					["qg"] = 16721,	-- Shalannius
+					["lvl"] = 50,
+					["coord"] = { 24.4, 54.5, 97 },
+					["classes"] = { 11 },	-- Druid
+					["isBreadcrumb"] = true,
+				}),
 				q(9562, {	-- Murlocs... Why Here? Why Now?
 					["qg"] = 17441,	-- Gurf
 					["coord"] = { 44.6, 23.4, 97 },
@@ -215,8 +225,11 @@ _.Zones =
 				q(9604, {	-- On the Wings of a Hippogryph
 					["qg"] = 43991,	-- Zaldaan
 					["coord"] = { 49.7, 49.1, 97 },
-					["races"] = { 11 },	-- Draenei
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
+					["races"] = { 
+						11,	-- Draenei
+						30,	-- Lightforged Draenei
+					},
 				}),
 				q(9523, {	-- Precious and Fragile Things Need Special Handling
 					["qg"] = 17242,	-- Archaeologist Adamant Ironheart
@@ -277,6 +290,12 @@ _.Zones =
 					["coord"] = { 49.8, 50.4, 97 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
+				}),
+				q(9671, {	-- The Bloodcurse Legacy
+					["qg"] = 17240,	-- Admiral Odesyus
+					["coord"] = { 47.0, 70.2, 97 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 9671,	-- Urgent Delivery
 				}),
 				q(9454, {	-- The Great Moongraze Hunt
 					["qg"] = 17110,	-- Acteon

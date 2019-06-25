@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
-			n(-25,  {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(558, {	-- Arctic Fox Kit
 					["crs"] = { 62864 },	-- Arctic Fox Kit
 				}),

@@ -11,31 +11,28 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			271,	-- Containment Core
 		},
 		["coord"] = { 74.42, 57.72, 109 },	-- The Arcatraz, Netherstorm
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 29675,	-- Hey There Dalliah
+				q(29675, {	-- Hey There Dalliah
 					["sourceQuest"] = 29674,	-- Unbound Darkness
 					["qg"] = 18481,	-- A'dal
-					["coord"] = { 74.42, 57.72, 109 },	-- The Arcatraz, Netherstorm
-				},
-				{
-					["questID"] = 29681,	-- Maximum Security Breakout
+					["coord"] = { 74.4, 57.7, 109 },	-- The Arcatraz, Netherstorm
+				}),
+				q(29681, {	-- Maximum Security Breakout
 					["sourceQuest"] = 29675,	-- Hey There Dalliah
 					["qg"] = 18481,	-- A'dal
-					["groups"] = {
+					["g"] = {
 						i(31749),	-- A'dal's Recovery Necklace
 						i(31747),	-- Potent Sha'tari Pendant
 						i(31748),	-- Shattrath Choker of Power
 					},
-				},
-				{
-					["questID"] = 29674,	-- Unbound Darkness
+				}),
+				q(29674, {	-- Unbound Darkness
 					["qg"] = 18481,	-- A'dal
-				},
+				}),
 				faction(932, {	-- The Aldor
 					["collectible"] = false,
-					["groups"] = {
+					["g"] = {
 						q(10706, {	-- A Mysterious Portent
 							["qg"] = 21962,	-- Udalo
 							["sourceQuests"] = { 10705 },	-- Seer Udalo
@@ -44,7 +41,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				faction(934, {	-- The Scryers
 					["collectible"] = false,
-					["groups"] = {
+					["g"] = {
 						q(10706, {	-- A Mysterious Portent
 							["qg"] = 21962,	-- Udalo
 							["sourceQuests"] = { 10705 },	-- Seer Udalo
@@ -52,25 +49,18 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(0,  {	-- Zone Drop
 				i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility
-					["crs"] = {
-						20880,	-- Eredar Deathbringer
-					},
+					["crs"] = { 20880 },	-- Eredar Deathbringer
 				}),
 				i(21905, {	-- Pattern: Arcanoweave Bracers
-					["crs"] = {
-						20869,	-- Arcatraz Sentinel
-					},
+					["crs"] = { 20869 },	-- Arcatraz Sentinel
 				}),
-				{	-- Plans: Felsteel Leggings
-					["itemID"]  = 23606,	-- Plans: Felsteel Leggings
-					["crs"] = {
-						20900,	-- Unchained Doombringer
-					},
-				},
+				i(23606, {	-- Plans: Felsteel Leggings
+					["crs"] = { 20900 },	-- Unchained Doombringer
+				}),
 			}),
-			d(  1, {	-- Normal
+			d(1,  {	-- Normal
 				cr(20870, e(548, {	-- Zereketh the Unbound
 					i(28373),	-- Cloak of Scintillating Auras
 					i(28396),	-- Gloves of the Unbound (7.3.5 - Moved from Harbinger Skyriss)
@@ -120,10 +110,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(29360),	-- Vileblade of the Betrayer
 				})),
 			}),
-			d(  2, {	-- Heroic
+			d(2,  {	-- Heroic
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["g"] = {
 					cr(20870, e(548, {	-- Zereketh the Unbound
 						i(28373),	-- Cloak of Scintillating Auras
 						i(28396),	-- Gloves of the Unbound (7.3.5 - Moved from Harbinger Skyriss)
@@ -176,7 +166,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			d(24, {	-- Timewalking
 				["lvl"] = 71,
-				["groups"] = {
+				["g"] = {
 					cr(20870, e(548, {	-- Zereketh the Unbound
 						i(127151),	-- Cloak of Scintillating Auras
 						i(127162),	-- Gloves of the Unbound

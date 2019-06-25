@@ -61,7 +61,7 @@ _.Zones =
 						["coord"] = { 43.8, 57.2 },
 					}),
 				}),
-				n(-25,  {	-- Pet Battle
+				filter(101, {	-- Pet Battle
 					q(31974, {	-- Goz Banefury
 						["qg"] = 66822,	-- Goz Banefury
 						["coord"] = { 56.6, 56.8, 241 },
@@ -79,9 +79,6 @@ _.Zones =
 					p(388), 	-- Shore Crab
 					p(552), 	-- Twilight Fiendling
 					p(470), 	-- Twilight Spider
-					p(2677, {	-- Twilight Whelpling
-						["crs"] = { 154803 },	-- Twilight Whelpling
-					}),
 					p(418), 	-- Water Snake
 					p(548), 	-- Wildhammer Gryphon Hatchling
 					p(549), 	-- Yellow-Bellied Marmot
@@ -1169,7 +1166,12 @@ _.Zones =
 					
 
 					qa(28280, {	-- Tear Them From the Sky!
-						["sourceQuests"] = { 28215 },	-- Potential Energy
+						["sourceQuests"] = {
+							28212,	-- Hot Stuff
+							28215,	-- Potential Energy
+							28211,	-- Tempered in Elemental Flame
+						},
+					--	not sure if this requires "A Vision in Twilight" and its followups
 						["coord"] = { 49.1, 29.3, 241 },
 						["qg"] = 48174,	-- Nivvet Channelock
 					}),
@@ -1682,7 +1684,11 @@ _.Zones =
 					qh(27690),	-- Narkrall, the Drake-Tamer
 					qh(26608),	-- Negotiations Terminated
 					qa(28862),	-- Never Leave a Dinner Behind
-					qh(28170),	-- Night Terrors
+					qh(28170, {	-- Night Terrors
+						i(63840),	-- Juju of Nimbleness
+						i(63839),	-- Harmlight Token
+						i(63838),	-- Shrine-Cleansing Purifier
+					},
 					qh(28593),	-- Of Utmost Importance
 					qh(28591),	-- Off The Wall
 					qh(27493),	-- Ogres & Ettins

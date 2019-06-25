@@ -316,7 +316,7 @@ profession(186, {	-- Mining
 			},
 		}),
 	}),
-	n(-25, {	-- Pet Battles
+	filter(101, { 	-- Pet Battle
 		i(67282),	-- Elementium Geode
 		i(118919),	-- Red Goren Egg
 	}),

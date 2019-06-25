@@ -17,6 +17,29 @@ _.PVP =
 				a(faction(890, {	-- Silverwing Sentinels
 					["creatureID"] = 19908,	-- Su'ura Swiftarrow <Warsong Gulch Battlemaster>
 					["g"] = {
+						q(7865,  {	-- Sentinel Advanced Care Package
+							["qg"] = 14753,	-- Illiyana Moonblaze
+							["lvl"] = 45,
+							["coord"] = { 61.5, 83.9, 63 },
+							["races"] = ALLIANCE_ONLY,
+							["minReputation"] = FRIENDLY,
+						}),
+						q(7863,  {	-- Sentinel Basic Care Package
+							["u"] = 40,
+							["qg"] = 14753,	-- Illiyana Moonblaze
+							["lvl"] = 25,
+							["coord"] = { 61.5, 83.9, 63 },
+							["races"] = ALLIANCE_ONLY,
+							["minReputation"] = FRIENDLY,
+						}),
+						q(7864,  {	-- Sentinel Standard Care Package
+							["u"] = 40,
+							["qg"] = 14753,	-- Illiyana Moonblaze
+							["lvl"] = 35,
+							["coord"] = { 61.5, 83.9, 63 },
+							["races"] = ALLIANCE_ONLY,
+							["minReputation"] = FRIENDLY,
+						}),
 						n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 61.6, 83.8, 63 },

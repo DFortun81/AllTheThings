@@ -713,7 +713,7 @@ _.Craftables =
 			n(-160, {	-- Mounts
 				i(115363),	-- Creeping Carpet
 			}),
-			n(-25, {	-- Pet Battles
+			filter(101, { 	-- Pet Battle
 				i(113216),	-- Elekk Plushie
 			}),
 		}),

@@ -20,9 +20,11 @@ locales\itIT.lua
 locales\koKR.lua
 locales\ptBR.lua
 locales\ruRU.lua
+locales\zhCN.lua
 db\Presets.lua
 Settings.lua
 AllTheThings.lua
+db\FlightPathDB.lua
 db\RaceDB.lua
 db\NPCDB.lua
 db\Categories.lua

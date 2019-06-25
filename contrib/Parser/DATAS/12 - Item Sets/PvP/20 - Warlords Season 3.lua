@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets =
+--[[_.GearSets =
 {
 	n(-4189, {	-- PvP Item Sets
 		gsh(117, {	-- Warlords Season 3
@@ -127,4 +127,4 @@ _.GearSets =
 			["achievementID"]  = 11722,	-- War-Mog-ering
 		}),
 	}),
-};
+};--]]

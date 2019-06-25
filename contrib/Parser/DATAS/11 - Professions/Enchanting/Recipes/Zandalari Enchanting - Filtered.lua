@@ -9,6 +9,7 @@ profession(333, {	-- Enchanting
 						{
 							-- Enchant Runic Power Core
 							["recipeID"] = 284415,--[[Enchant Runic Power Core]]
+							["u"] = 15,	-- Training
 						}
 					}
 				},

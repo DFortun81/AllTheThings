@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(388, {	-- Townlong Steppes
-			n(-25, {	-- Pet Battles
+			filter(101, {	-- Pet Battle
 				p(724), 	-- Alpine Foxling
 				p(725), 	-- Alpine Foxling Kit
 				p(732), 	-- Amber Moth

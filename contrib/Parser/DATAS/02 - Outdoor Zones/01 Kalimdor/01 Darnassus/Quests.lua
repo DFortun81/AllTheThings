@@ -32,17 +32,17 @@ _.Zones =
 					["isDaily"] = true,
 					["requireSkill"] = 129,	-- Fishing
 				},
-				{	-- A Summons from Ander Germaine
-					["questID"] = 27225,
-					["qg"] = 4087,	-- Arias'ta Bladesinger
-					["coord"] = { 56.4, 46.2, 89 },
+				q(27225, {	-- A Summons from Ander Germaine
+					["qg"] = 4087,	-- Arias'ta Bladesinger (Darnassus)
+					["coord"] = { 56.4, 46.2, 89 },	-- Arias'ta Bladesinger (Darnassus)
+					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
-					["isBreadcrumb"] = true,
-				},
+					["lvl"] = 20,					
+				}),
 				q(27270, {	-- An Audience with the Farseer
-					["qg"] = 52292,	-- Droha
-					["coord"] = { 43.8, 78.8, 89 },
+					["qg"] = 52292,	-- Droha (Darnassus)
+					["coord"] = { 43.8, 78.8, 89 },	-- Droha (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 7 },	-- Shaman	
@@ -230,14 +230,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 				},
-				{	-- Meet with Ander Germaine
-					["questID"] = 28258,
-					["qg"] = 4087,	-- Arias'ta Bladesinger
-					["coord"] = { 56.4, 46.2, 89 },
+				q(28258, {	-- Meet with Ander Germaine
+					["qg"] = 4087,	-- Arias'ta Bladesinger (Darnassus)
+					["coord"] = { 56.4, 46.2, 89 },	-- Arias'ta Bladesinger (Darnassus)
+					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
-					["isBreadcrumb"] = true,
-				},
+				}),
 				q(28287, {	-- Meet with Farseer Umbrua
 					["qg"] = 52292,	-- Droha (Darnassus)
 					["coord"] = { 43.8, 78.8, 89 },	-- Droha (Darnassus)

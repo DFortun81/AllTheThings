@@ -138,6 +138,16 @@ _.Zones =
 					["coord"] = { 96.8, 72.4, 64 },
 					["sourceQuest"] = 25661,	-- With a Little Help...
 				},
+				q(25561, {	-- Circle the Wagons... er, Boats
+					["u"] = 40,
+					["qg"] = 40475,	-- 
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(25562, {	-- Circle the Wagons... er, Boats
+					["u"] = 40,
+					["qg"] = 40487,	-- 
+					["races"] = HORDE_ONLY,
+				}),
 				{	-- Circle the Wagons... er, Boats
 					["questID"] = 25542,
 					["races"] = ALLIANCE_ONLY,
@@ -1102,14 +1112,6 @@ _.Zones =
 						i(63620),	-- Hard Headed Helm
 					},
 				},
-				--[[
-				qa(25561, {	-- Circle the Wagons... er, Boats (REMOVED/REPLACED)
-					["qg"] = 40475,	-- 
-				}),
-				qh(25562, {	-- Circle the Wagons... er, Boats (REMOVED/REPLACED)
-					["qg"] = 40487,	-- 
-				}),
-				]]--
 --					q(28601),	-- Old Puttery (REMOVED?  no info on wowhead)
 --[[EVENT WORLD Quests
 				q(45808),	-- Beach Ball Bash (WORLD QUEST)
