@@ -174,7 +174,7 @@ _.Zones =
 				["coord"] = { 49.1, 62.2, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56179,	-- The Needs of the People
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 			}),
 			q(55823, {	-- Bounty: A Few Crabs
 				["isDaily"] = true,
@@ -187,8 +187,7 @@ _.Zones =
 					{ 50.8, 64.7, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(55825, {	-- Bounty: A Few Fathom Rays
@@ -202,8 +201,7 @@ _.Zones =
 					{ 47.4, 63.2, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(55837, {	-- Bounty: Dangerous Creatures
@@ -217,8 +215,7 @@ _.Zones =
 					{ 47.3, 61.9, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(55836, {	-- Bounty: Elite Naga Forces
@@ -226,7 +223,7 @@ _.Zones =
 				["coord"] = { 50.4, 66.2, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56179,	-- The Needs of the People
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 			}),
 			q(55830, {	-- Bounty: More Coral Ancients
 				["isDaily"] = true,
@@ -239,8 +236,7 @@ _.Zones =
 					{ 49.1, 62.1, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(55832, {	-- Bounty: More Crabs
@@ -254,8 +250,7 @@ _.Zones =
 					{ 50.8, 64.7, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(55834, {	-- Bounty: More Fathom Rays
@@ -263,7 +258,7 @@ _.Zones =
 				["coord"] = { 47.4, 63.2, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56179,	-- The Needs of the People
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 			}),
 			q(55828, {	-- Bounty: More Murlocs
 				["isDaily"] = true,
@@ -274,8 +269,19 @@ _.Zones =
 					{ 39.6, 55.5, 1355 },	-- alliance
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
+				},
+			}),
+			q(55827, {	-- Bounty: More Naga
+				["isDaily"] = true,
+				["qgs"] = {
+					151614,	-- Nevin Tideheart (Horde)
+				},
+				["coords"] = {
+					{ 50.4, 66.2, 1355 },	-- (horde)
+				},
+				["sourceQuests"] = {
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(55833, {	-- Bounty: More Snapdragons
@@ -289,8 +295,7 @@ _.Zones =
 					{ 50.9, 65.3, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			o(326140, {	-- Bounty Board
@@ -424,7 +429,7 @@ _.Zones =
 				["qg"] = 154520,	-- First Arcanist Thalyssra
 				["coord"] = { 73.4, 47.8, 1355 },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 56179,	-- The Needs of the People
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 			}),
 			q(55601, {	-- Coveted Crystals
 				["qg"] = 153385,	-- Blademaster Okani
@@ -546,7 +551,7 @@ _.Zones =
 				["qg"] = 154652,	-- Dazzerian
 				["coord"] = { 48.8, 60.6, 1355 },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 57010,	-- Harnessing the Power
+				["sourceQuest"] = 55481,	-- Scouting the Palace
 				["g"] = {
 					i(168850),	-- Time-Lost Battlefield Memento
 				},
@@ -649,7 +654,7 @@ _.Zones =
 				["coord"] = { 64.5, 48.5, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56179,	-- The Needs of the People
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 			}),
 			q(56640, {	-- Fortunate Souls
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
@@ -857,7 +862,7 @@ _.Zones =
 				["coord"] = { 33.5, 47.9, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56179,	-- The Needs of the People
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			}),
 			q(56151, {	-- Poen's Favorite Dish
@@ -865,7 +870,7 @@ _.Zones =
 				["coord"] = { 50.8, 64.7, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56179,	-- The Needs of the People
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			}),
 			q(56241, {	-- Preserved Clues
@@ -901,7 +906,7 @@ _.Zones =
 			}),
 			q(55724, {	-- Requisition: A Few Deepcoral Buds
 				["isDaily"] = true,
-				["sourceQuest"] = 56179,	-- The Needs of the People
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 				["qgs"] = {
 					153772,	-- Lina Bluegill (horde)
 				},
@@ -918,8 +923,7 @@ _.Zones =
 					{ 37.7, 55.3, 1355 },	-- alliance
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(55725, {	-- Requisition: A Few Spiral Leaf
@@ -933,8 +937,7 @@ _.Zones =
 					{ 50.4, 66.2, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(55785, {	-- Requisition: More Starfish
@@ -942,7 +945,7 @@ _.Zones =
 				["coord"] = { 49.3, 61.5, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56179,	-- The Needs of the People
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 			}),
 			q(55801, {	-- Requisition: We Need It All
 				["isDaily"] = true,
@@ -955,8 +958,7 @@ _.Zones =
 					{ 50.9, 65.7, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (alliance)
-					56179,	-- The Needs of the People (horde)
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(57024, {	-- Rumors of Mechagon
@@ -1006,10 +1008,6 @@ _.Zones =
 					},
 					{	-- Bounty: More Makrura
 						["questID"] = 55831,
-						["isDaily"] = true,
-					},
-					{	-- Bounty: More Naga
-						["questID"] = 55827,
 						["isDaily"] = true,
 					},
 					{	-- Requisition: A Few Carp
@@ -1311,12 +1309,14 @@ _.Zones =
 				["sourceQuest"] = 56350,	-- Scouting the Palace
 			}),
 			q(56166, {	-- The Needs of the People
+				["u"] = 40,
 				["qg"] = 151763,	-- Isla
 				["coord"] = { 37.7, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56164,	-- Desperate Need
 			}),
 			q(56179, {	-- The Needs of the People
+				["u"] = 40,
 				["qg"] = 154208,	-- Jonah Lowtide
 				["coord"] = { 50.5, 66.2, 1355 },
 				["races"] = HORDE_ONLY,
@@ -1371,7 +1371,7 @@ _.Zones =
 				["coord"] = { 52.7, 52.8, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56179,	-- The Needs of the People -- todo: confirm
+				["sourceQuest"] = 55500,	-- Becoming a Friend
 			}),
 			q(55469, {	-- To Zin-Azshari
 				["qg"] = 151848,	-- Lor'themar Theron
