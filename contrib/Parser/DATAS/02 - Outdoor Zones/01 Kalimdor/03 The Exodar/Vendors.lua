@@ -6,17 +6,23 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(103, {	-- The Exodar
 			n(-2, {	-- Vendors
-				na(16705, {	-- Altaa <Alchemy Supplies>
-					i(22900),	-- Recipe: Elixir of Camouflage
-					i(23574),	-- Recipe: Transmute Primal Might
+				n(16705, {	-- Altaa <Alchemy Supplies>
+					["coord"] = { 27.8, 61.8, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(22900),	-- Recipe: Elixir of Camouflage
+						i(23574),	-- Recipe: Transmute Primal Might
+					},
 				}),
-				na(16713, {	-- Arras <Blacksmithing Supplies>
-					i(23591),	-- Plans: Adamantite Cleaver
-					i(23592),	-- Plans: Adamantite Dagger
-					i(23590),	-- Plans: Adamantite Maul
-					i(23593),	-- Plans: Adamantite Rapier
-					i(52186, {	-- Elementium Bar
-						["g"] = {
+				n(16713, {	-- Arras <Blacksmithing Supplies>
+					["coord"] = { 61.0, 89.0, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(23591),	-- Plans: Adamantite Cleaver
+						i(23592),	-- Plans: Adamantite Dagger
+						i(23590),	-- Plans: Adamantite Maul
+						i(23593),	-- Plans: Adamantite Rapier
+						i(52186, {	-- Elementium Bar
 							i(66107),	-- Plans: Elementium Girdle of Pain
 							i(66105),	-- Plans: Hardened Elementium Girdle
 							i(66109),	-- Plans: Light Elementium Belt
@@ -27,10 +33,8 @@ _.Zones =
 							i(66119),	-- Plans: Vicious Pyrium Belt
 							i(66117),	-- Plans: Vicious Pyrium Bracers
 							i(66118),	-- Plans: Vicious Pyrium Gauntlets
-						},
-					}),
-					i(53039, {	-- Hardened Elementium Bar
-						["g"] = {
+						}),
+						i(53039, {	-- Hardened Elementium Bar
 							i(66113),	-- Plans: Elementium Bonesplitter
 							i(66106),	-- Plans: Elementium Deathplate
 							i(66115),	-- Plans: Elementium Earthguard
@@ -46,10 +50,8 @@ _.Zones =
 							i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
 							i(66120),	-- Plans: Vicious Pyrium Boots
 							i(66121),	-- Plans: Vicious Pyrium Shoulders
-						},
-					}),
-					i(51950, {	-- Pyrium Bar
-						["g"] = {
+						}),
+						i(51950, {	-- Pyrium Bar
 							i(66100),	-- Plans: Ebonsteel Belt Buckle
 							i(67606),	-- Plans: Forged Elementium Mindcrusher
 							i(66101),	-- Plans: Pyrium Shield Spike
@@ -59,11 +61,12 @@ _.Zones =
 							i(66124),	-- Plans: Vicious Pyrium Breastplate
 							i(66123),	-- Plans: Vicious Pyrium Helm
 							i(66122),	-- Plans: Vicious Pyrium Legguards
-						},
-					}),
+						}),
+					},
 				}),
-				na(17512, {	-- Arred <Jewelcrafting Supplies>
+				n(17512, {	-- Arred <Jewelcrafting Supplies>
 					["coord"] = { 45.6, 25.0, 103 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20854),	-- Design: Amulet of the Moon
 						i(20856),	-- Design: Heavy Golden Necklace of Battle
@@ -161,46 +164,61 @@ _.Zones =
 						}),
 					},
 				}),
-				na(16722, {	-- Egomis <Enchanting Supplies>
-					i(22565),	-- Formula: Large Prismatic Shard
-					i(20753),	-- Formula: Lesser Wizard Oil
-					i(20752),	-- Formula: Minor Mana Oil
-					i(20758),	-- Formula: Minor Wizard Oil
-					i(22562),	-- Formula: Superior Mana Oil
-					i(22563),	-- Formula: Superior Wizard Oil
-					i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					i(52555, {	-- Hypnotic Dust
-						a(i(67312)),	-- Formula: Magic Lamp
-					}),
-					i(52721, {	-- Heavenly Shard
-						i(64411),	-- Formula: Enchant Boots - Assassin's Step
-						i(64412),	-- Formula: Enchant Boots - Lavawalker
-						i(52738),	-- Formula: Enchant Bracer - Greater Critical Strike
-						i(64413),	-- Formula: Enchant Bracer - Greater Speed
-						i(52740),	-- Formula: Enchant Chest - Greater Stamina
-						i(52739),	-- Formula: Enchant Chest - Peerless Stats
-						i(52737),	-- Formula: Enchant Cloak - Greater Critical Strike
-						i(64414),	-- Formula: Enchant Gloves - Greater Mastery
-						i(64415),	-- Formula: Enchant Gloves - Mighty Strength
-					}),
-					i(52722, {	-- Maelstrom Crystal
-						i(52736),	-- Formula: Enchant Weapon - Landslide
-						i(52733),	-- Formula: Enchant Weapon - Power Torrent
-						i(52735),	-- Formula: Enchant Weapon - Windwalk
-					}),
+				n(16722, {	-- Egomis <Enchanting Supplies>
+					["coord"] = { 39.8, 39.8, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(22565),	-- Formula: Large Prismatic Shard
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(22562),	-- Formula: Superior Mana Oil
+						i(22563),	-- Formula: Superior Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(52555, {	-- Hypnotic Dust
+							i(67312, {	-- Formula: Magic Lamp
+								["races"] = ALLIANCE_ONLY,
+							}),
+						}),
+						i(52721, {	-- Heavenly Shard
+							i(64411),	-- Formula: Enchant Boots - Assassin's Step
+							i(64412),	-- Formula: Enchant Boots - Lavawalker
+							i(52738),	-- Formula: Enchant Bracer - Greater Critical Strike
+							i(64413),	-- Formula: Enchant Bracer - Greater Speed
+							i(52740),	-- Formula: Enchant Chest - Greater Stamina
+							i(52739),	-- Formula: Enchant Chest - Peerless Stats
+							i(52737),	-- Formula: Enchant Cloak - Greater Critical Strike
+							i(64414),	-- Formula: Enchant Gloves - Greater Mastery
+							i(64415),	-- Formula: Enchant Gloves - Mighty Strength
+						}),
+						i(52722, {	-- Maelstrom Crystal
+							i(52736),	-- Formula: Enchant Weapon - Landslide
+							i(52733),	-- Formula: Enchant Weapon - Power Torrent
+							i(52735),	-- Formula: Enchant Weapon - Windwalk
+						}),
+					},
 				}),
-				na(16657, {	-- Feera <Engineering Supplies>
-					i(23799),	-- Schematic: Adamantite Rifle
-					i(23816),	-- Schematic: Fel Iron Toolbox
-					i(23811),	-- Schematic: White Smoke Flare
+				n(16657, {	-- Feera <Engineering Supplies>
+					["coord"] = { 53.0, 90.0, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(23799),	-- Schematic: Adamantite Rifle
+						i(23816),	-- Schematic: Fel Iron Toolbox
+						i(23811),	-- Schematic: White Smoke Flare
+					},
 				}),
-				na(16716, {	-- Gornii <Cloth Armor Merchant>
-					i(3428),	-- Common Grey Shirt
-					i(16059),	-- Common Brown Shirt
-					i(16060),	-- Common White Shirt
+				n(16716, {	-- Gornii <Cloth Armor Merchant>
+					["coord"] = { 71.0, 91.4, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(3428),	-- Common Grey Shirt
+						i(16059),	-- Common Brown Shirt
+						i(16060),	-- Common White Shirt
+					},
 				}),
-				na(16748, {	-- Haferet <Leatherworking Supplies>
+				n(16748, {	-- Haferet <Leatherworking Supplies>
 					["coord"] = { 66.6, 74.0, 103 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(67095),	-- Pattern: Assassin's Chestplate
 						i(67070),	-- Pattern: Belt of Nefarious Whispers
@@ -250,59 +268,80 @@ _.Zones =
 						i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
 					},
 				}),
-				na(50306, {	-- Kadu <Exodar Quartermaster>
-					i(64889),	-- Mantle of Exodar
-					i(64890),	-- Cape of Exodar
-					i(64891),	-- Shroud of Exodar
-					i(67527),	-- Exodar Satchel
-					i(45580),	-- Exodar Tabard
+				n(50306, {	-- Kadu <Exodar Quartermaster>
+					["coord"] = { 66.6, 74.0, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(64889),	-- Mantle of Exodar
+						i(64890),	-- Cape of Exodar
+						i(64891),	-- Shroud of Exodar
+						i(67527),	-- Exodar Satchel
+						i(45580),	-- Exodar Tabard
+					},
 				}),
-				na(16767, {	-- Neii <Tailoring Supplies>
-					i(54440, {	-- Dreamcloth
-						i(54601),	-- Pattern: Belt of the Depths
-						i(54602),	-- Pattern: Dreamless Belt
-						i(54603),	-- Pattern: Breeches of Mended Nightmares
-						i(54604),	-- Pattern: Flame-Ascended Pantaloons
-						i(54605),	-- Pattern: Illusionary Bag
-					}),
-					i(53643, {	-- Bolt of Embersilk Cloth
-						i(68199),	-- Pattern: Black Embersilk Gown
-						i(54600),	-- Pattern: Powerful Ghostly Spellthread
-						i(54599),	-- Pattern: Powerful Enchanted Spellthread
-						i(54593),	-- Pattern: Vicious Embersilk Cowl
-						i(54594),	-- Pattern: Vicious Embersilk Pants
-						i(54595),	-- Pattern: Vicious Embersilk Robe
-						i(54596),	-- Pattern: Vicious Fireweave Cowl
-						i(54597),	-- Pattern: Vicious Fireweave Pants
-						i(54598),	-- Pattern: Vicious Fireweave Robe
-					}),
-					i(21892),	-- Pattern: Bolt of Imbued Netherweave
-					i(21894),	-- Pattern: Bolt of Soulcloth
-					i(21896), 	-- Pattern: Netherweave Robe
-					i(21897), 	-- Pattern: Netherweave Tunic
+				n(16767, {	-- Neii <Tailoring Supplies>
+					["coord"] = { 64.6, 68.6, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(54440, {	-- Dreamcloth
+							i(54601),	-- Pattern: Belt of the Depths
+							i(54602),	-- Pattern: Dreamless Belt
+							i(54603),	-- Pattern: Breeches of Mended Nightmares
+							i(54604),	-- Pattern: Flame-Ascended Pantaloons
+							i(54605),	-- Pattern: Illusionary Bag
+						}),
+						i(53643, {	-- Bolt of Embersilk Cloth
+							i(68199),	-- Pattern: Black Embersilk Gown
+							i(54600),	-- Pattern: Powerful Ghostly Spellthread
+							i(54599),	-- Pattern: Powerful Enchanted Spellthread
+							i(54593),	-- Pattern: Vicious Embersilk Cowl
+							i(54594),	-- Pattern: Vicious Embersilk Pants
+							i(54595),	-- Pattern: Vicious Embersilk Robe
+							i(54596),	-- Pattern: Vicious Fireweave Cowl
+							i(54597),	-- Pattern: Vicious Fireweave Pants
+							i(54598),	-- Pattern: Vicious Fireweave Robe
+						}),
+						i(21892),	-- Pattern: Bolt of Imbued Netherweave
+						i(21894),	-- Pattern: Bolt of Soulcloth
+						i(21896), 	-- Pattern: Netherweave Robe
+						i(21897), 	-- Pattern: Netherweave Tunic
+					},
 				}),
-				na(16718, {		-- Phea <Cooking Supplies>
-					i(21219),	-- Recipe: Sagefish Delight
-					i(21099),	-- Recipe: Smoked Sagefish
+				n(16718, {		-- Phea <Cooking Supplies>
+					["coord"] = { 54.6, 26.6, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					},
 				}),
-				na(21019, {	-- Sixx <Moth Keeper>
-					i(29901),	-- Blue Moth Egg Pet
-					i(29903),	-- Yellow Moth Egg Pet
-					i(29904),	-- White Moth Egg Pet
+				n(21019, {	-- Sixx <Moth Keeper>
+					["coord"] = { 30.4, 34.6, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(29901),	-- Blue Moth Egg Pet
+						i(29903),	-- Yellow Moth Egg Pet
+						i(29904),	-- White Moth Egg Pet
+					},
 				}),
-				na(30716, {	-- Thoth <Inscription Trainer>
+				n(30716, {	-- Thoth <Inscription Trainer>
 					["coord"] = { 39.78, 38.87, 103 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(137789),	-- Technique: Songs of the Legion
 					},
 				}),
-				na(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
-					i(29745),	-- Great Blue Elekk Mount
-					i(29746),	-- Great Green Elekk Mount
-					i(29747),	-- Great Purple Elekk Mount
-					i(28481),	-- Brown Elekk
-					i(29743),	-- Purple Elekk
-					i(29744),	-- Gray Elekk
+				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
+					["coord"] = { 81.6, 52.6, 103 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(29745),	-- Great Blue Elekk Mount
+						i(29746),	-- Great Green Elekk Mount
+						i(29747),	-- Great Purple Elekk Mount
+						i(28481),	-- Brown Elekk
+						i(29743),	-- Purple Elekk
+						i(29744),	-- Gray Elekk
+					},
 				}),
 			}),
 		}),

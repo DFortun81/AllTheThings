@@ -575,11 +575,11 @@ _.Zones =
 					["qg"] = 39433,	-- Ian Duran
 					["races"] = ALLIANCE_ONLY,
 				},
-				{	-- Good News... and Bad News
-					["questID"] = 29066,
+				q(29066, {	-- Good News... and Bad News
 					["coord"] = { 22.2, 44.9, 198 },
 					["sourceQuest"] = 25428,	-- Black Heart of Flame
-				},
+					["isBreadcrumb"] = true,
+				}),
 				{	-- Graduation Speech
 					["questID"] = 25315,
 					["qg"] = 39413,	-- Instructor Mylva

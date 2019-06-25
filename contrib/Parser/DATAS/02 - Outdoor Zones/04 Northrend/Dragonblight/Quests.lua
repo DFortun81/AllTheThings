@@ -703,11 +703,11 @@ _.Zones =
 					["g"] = {
 						q(42007, {	-- A Forgotten Enemy
 							["lvl"] = 98,
-							["classes"] = { 5 },	-- Priest
+							["classes"] = { 8 },	-- Mage
 						}),
 						q(41627, {	-- A Forgotten Enemy
 							["lvl"] = 98,
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { 5 },	-- Priest
 						}),
 					},
 				}),
