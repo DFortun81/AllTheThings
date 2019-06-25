@@ -251,6 +251,9 @@ _.Zones =
 					["crs"] = { 62177 },	-- Forest Moth	
 				}),
 				p(2165, {	-- Francois
+					["g"] = {
+						i(158077),	-- Faberge Egg
+					},
 					["coord"] = { 52.8, 31.1, 895 },
 					["description"] = "Must have 1 million gold in your inventory before he will talk to you.  You do NOT lose any gold in this transaction.",
 				}),
