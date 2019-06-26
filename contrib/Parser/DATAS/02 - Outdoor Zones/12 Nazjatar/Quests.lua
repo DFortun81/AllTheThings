@@ -983,7 +983,7 @@ _.Zones =
 				["sourceQuests"] = {
 					55500,	-- Save a Friend (horde)
 				},
-			},
+			}),
 			q(55720, {	-- Requisition: A Few Seaweed
 				["isDaily"] = true,
 				["qgs"] = {
