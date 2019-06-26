@@ -96,6 +96,7 @@ _.NeverImplemented =
 		q(56673),	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
 		q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
 		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
+		q(56901),	-- Triggers after buying Mrrl's secret trader stock (requires cloak with special stock trait). Received 170162 - waterlogged toolbox first
 		q(56974),	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk
 		q(56975),	-- Triggers when receiving "Mardivas's Rentention Dimension Invention (itemID 170475) from a Glowing Arcane Trunk
 		q(56976),	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
