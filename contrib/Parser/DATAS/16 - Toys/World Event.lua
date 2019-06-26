@@ -92,6 +92,7 @@ _.Toys =
 		n(-56, {    -- Brewfest
 			["groups"] = {
 				i(116758),	-- Brewfest Banner
+				i(169865),	-- Brewfest Chowdown Trophy
 				i(71137), 	-- Brewfest Keg Pony
 				i(33927),	-- Brewfest Pony Keg
 				i(166747),	-- Brewfest Reveler's Hearthstone

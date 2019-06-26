@@ -90,6 +90,9 @@ _.Toys =
 			i(130254),		-- Chatterstone
 			i(130251),		-- JewelCraft
 		}),
+		n(-175, {	-- Junkyard Tinkering
+			i(168907),	-- Holographic Digitalization Hearthstone
+		}),
 		n(-187, { 	-- Leatherworking
 			i(129961),		-- Flaming Hoop
 			i(129956), 		-- Leather Love Seat

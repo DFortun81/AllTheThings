@@ -398,6 +398,7 @@ AllTheThings.L = {
 		[-171] = "Interface\\Icons\\Achievement_Quests_Completed_07", 						-- Quest Chains
 		[-173] = "Interface\\Icons\\spell_holy_borrowedtime",								-- Timewalking
 		[-174] = "Interface\\Icons\\INV_DARKMOON_EYE",										-- Darkmoon Faire
+		[-175] = "Interface\\Icons\\INV_Gnomish_XRAY_Specs",								-- Junkyard Tinkering
 		[-178] = "Interface\\Icons\\Creatureportrait_Goblin_Rocket",						-- Goblin Engineering
 		[-179] = "Interface\\Icons\\INV_Gnomish_XRAY_Specs",								-- Gnomish Engineering
 		[-180] = "Interface\\Icons\\trade_alchemy",											-- Alchemy
@@ -991,6 +992,7 @@ AllTheThings.L = {
 		[-171] = "Quest Chains",
 		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
 		[-174] = CALENDAR_FILTER_DARKMOON,										-- Darkmoon Faire
+		[-175] = "Junkyard Tinkering",											-- Junkyard Tinkering
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 -- Professions
 		[-178] = GetSpellInfo(20221), 											-- Goblin Engineering"Goblin Engineering",

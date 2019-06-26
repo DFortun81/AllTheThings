@@ -81,7 +81,6 @@ _.Toys =
 		i(113631),		-- Hypnosis Goggles
 		i(118244),		-- Iron Buccaneer's Hat
 		i(127668),		-- Jewel of Hellfire
-		un(1, i(164372)), 		-- Jinyu Light Globe
 		i(141299), 		-- Kaldorei Light Globe
 		i(86571),		-- Kang's Bindstone
 		i(116125), 		-- Klikixx's Webspinner
@@ -118,7 +117,6 @@ _.Toys =
 		un(7, i(140363)),	-- Pocket Fel Spreader
 		i(127394), 		-- Podling Camouflage
 		i(153181),  	-- Red Conservatory Scroll
-		un(1, i(164377)), 		-- Regenerating Banana Bunch
 		i(104294), 		-- Rime of the Time-Lost Mariner
 		i(131811),		-- Rocfeather Skyhorn Kite
 		i(153253),  	-- S.F.E. Interceptor
@@ -164,6 +162,7 @@ _.Toys =
 		i(163829), 		-- Toy War Machine
 		i(166787),		-- Twiddle Twirler: Sentinel's Glaive
 		i(166788),		-- Twiddle Twirler: Shredder Blade
+		i(170476),		-- Underlight Sealamp
 		i(153004), 		-- Unstable Portal Emitter
 		i(141301),		-- Unstable Powder Box
 		i(141331), 		-- Vial of Green Goo
@@ -182,5 +181,6 @@ _.Toys =
 		i(36862),		-- Worn Troll Dice
 		-- i(164371), 		-- Yaungol Oil Stove
 		i(153180),  	-- Yellow Conservatory Scroll
+		i(170199),		-- Zanj'ir Weapon Rack
 	}),
 };

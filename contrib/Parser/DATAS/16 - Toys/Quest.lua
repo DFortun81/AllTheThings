@@ -29,6 +29,7 @@ _.Toys =
 		i(95589),		-- Glorious Standard of the Kirin Tor Offensive (Alliance)
 		i(95590),		-- Glorious Standard of the Sunreaver Onslaught (Horde)
 		i(88417),		-- Gokk'lok's Shell
+		i(169768),		-- Heart of a Champion
 		i(119218),		-- Horde Flag of Victory (Horde)
 		i(88385),		-- Hozen Idol
 		i(88579), 		-- Jin Warmkeg's Brew

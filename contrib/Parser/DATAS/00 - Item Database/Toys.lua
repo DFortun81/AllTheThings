@@ -247,6 +247,7 @@ t(134026);	-- Honorable Pennant
 t(87528);	-- Honorary Brewmaster Keg
 t(119218);	-- Horde Flag of Victory (Horde)
 t(119221);	-- Horde Gladiator's Banner (Never Implemented)
+t(166778);	-- Horde's Might Firework
 t(151271);	-- Horse Head Costume
 t(151270);	-- Horse Tail Costume
 t(162539);	-- Hot Buttered Popcorn
@@ -293,6 +294,7 @@ t(128536);	-- Leylight Brazier
 t(119039);	-- Lilian's Warning Sign
 t(142452);	-- Lingering Wyrmtongue Essence
 t(70722);	-- Little Wickerman
+t(166777);	-- Lion's Pride Firework
 t(63269);	-- Loaded Gnomish Dice
 t(60854);	-- Loot-a-Rang (Engineering)
 t(142341);	-- Love Boat
@@ -491,6 +493,7 @@ t(163829);	-- Toy War Machine
 t(151349);	-- Toy Weapon Set [Alliance]
 t(151348);	-- Toy Weapon Set [Horde]
 t(122293);	-- Trans-Dimensional Bird Whistle
+t(166779);	-- Transmorpher Beacon
 t(130191);	-- Trapped Treasure Chest Kit
 t(152556);	-- Trawler Totem
 t(115506);	-- Treessassin's Guise

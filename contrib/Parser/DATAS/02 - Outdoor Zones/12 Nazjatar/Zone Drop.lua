@@ -11,6 +11,8 @@ _.Zones =
 				i(170120),	-- Handmaiden's Longstaff
 			}),
 			]]--
+			i(170199),	-- Zanj'ir Weapon Rack
+			i(170476),	-- Underlight Sealamp
 			i(169402),	-- Deeptide Amice
 			i(169403),	-- Deeptide Cinch
 			i(169400),	-- Deeptide Cover

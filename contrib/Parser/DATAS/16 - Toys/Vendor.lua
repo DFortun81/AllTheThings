@@ -58,6 +58,7 @@ _.Toys =
 		i(127707),		-- Indestructible Bone
 		i(43499), 		-- Iron Boot Flask
 		i(45018),		-- Ironforge Banner (Alliance)
+		i(170380),		-- Jar of Sunwarmed Sand
 		i(68806), 		-- Kalytha's Haunted Locket
 		i(128462),		-- Karabor Councilor's Attire (Alliance)
 		i(147708), 		-- Legion Invasion Simulator

@@ -2268,6 +2268,8 @@ _.NeverImplemented =
 		un(1, i(122235)),	-- Unknown
 		un(1, i(108640)),	-- Unknown
 		un(1, i(119179)),	-- Iron Star Roller
+		un(1, i(164372)), 		-- Jinyu Light Globe
+		un(1, i(164377)), 		-- Regenerating Banana Bunch
 	}),
 	n(-319, {	-- Weapons
 		n(-347, {	-- Bows
