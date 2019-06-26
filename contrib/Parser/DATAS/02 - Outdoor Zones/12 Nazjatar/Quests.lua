@@ -654,6 +654,9 @@ _.Zones =
 				["questID"] = 57141,
 				["coord"] = { 38.0, 59.2, 1355 },
 				["description"] = "Turn in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+				["groups"] = {
+					i(170473),	-- Jingling Sack
+				},
 			}),
 			q(55851, {	-- Essential Empowerment
 				["qgs"] = {
