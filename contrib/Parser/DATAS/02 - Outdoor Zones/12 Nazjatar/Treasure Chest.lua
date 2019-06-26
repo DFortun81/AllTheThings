@@ -11,7 +11,8 @@ _.Zones =
 			reinforced cache: locked chest, unknown pre-reqs. 45.1, 22.1
 			
 			
-			i(170198),	-- Eternal Palace Dining Set <-- this toy dropped from arcane chest o(326412), but not for Gaulish. Maybe based on number of chests instead?
+			i(170198),	-- Eternal Palace Dining Set (toy) <-- this toy dropped from arcane chest o(326412), but not for Gaulish. Maybe based on number of chests instead?
+			i(168824),	-- Ocean Simulator (toy) <-- dropped when looting the 20th arcane chest at (56.3, 33.8)
 			]]--
 			["description"] = "Must complete |cFFFFD700A Tempered Blade|r (Alliance) or |cFFFFD700Save a Friend|r (Horde) before the chests become available.",
 			["g"] = {
@@ -88,6 +89,20 @@ _.Zones =
 					["questID"] = 55955,
 					["coord"] = { 50.6, 50.0, 1355 },
 				}),
+				o(326401, {	-- Arcane Chest
+					["questID"] = 55950,
+					["coord"] = { 38.7, 74.4, 1355 },
+					["description"] = "Use a |cFFFFD700Goblin Glider|r, |cFFFFD700Deepcoral Pod|r, or fly ontop of the rocks.",
+				}),
+				o(326418, {	-- Arcane Chest
+					["questID"] = 55943,
+					["coord"] = { 64.3, 33.3, 1355 },
+				}),
+				o(326419, {	-- Arcane Chest
+					["questID"] = 55944,
+					["coord"] = { 56.3, 33.8, 1355 },
+					["description"] = "At the very top of the mountain. Flying is recommended, but it's possible with a |cFFFFD700Deepcoral Pod|r, but very tricky."
+				}),
 				o(326395, {	-- Glowing Arcane Trunk
 					["questID"] = 55959,
 					["coord"] = { 37.9, 6.4, 1355 },
@@ -118,20 +133,6 @@ _.Zones =
 					["coord"] = { 37.2, 19.2, 1355 },
 					["description"] = "Match 4 Cyan runes.",
 				}),
-				--[[ -- these are the remaining known objectIDs for each chest
-				o(326401, {	-- Arcane Chest
-					["questID"] = ,
-					["coord"] = { , 1355 },
-				}),
-				o(326418, {	-- Arcane Chest
-					["questID"] = ,
-					["coord"] = { , 1355 },
-				}),
-				o(326419, {	-- Arcane Chest
-					["questID"] = ,
-					["coord"] = { , 1355 },
-				}),
-				]]--
 			},
 		}),
 	}),
