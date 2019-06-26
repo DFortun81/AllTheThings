@@ -27,6 +27,7 @@ _.Zones =
 			i(169425),	-- Deeptide Robe
 			i(170201),	-- Deeptide Scroll
 			i(169398),	-- Deeptide Slippers
+			i(170114),	-- Flanged Mace
 			i(170115),	-- Massive Viridian Claw
 			i(169431),	-- Reefwalker Cape
 			i(169419),	-- Reefwalker Chain

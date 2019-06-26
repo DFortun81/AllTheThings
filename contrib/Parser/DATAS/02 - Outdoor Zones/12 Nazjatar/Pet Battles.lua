@@ -180,7 +180,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 			}),
 			q(56456, {	-- Opaline Conch (A)
-				["itemID"] = 169635,	-- Opaline Conch
+				["itemID"] = 169634,	-- Opaline Conch
 				["crs"] = { 154921 },	-- Giant Opaline Conch
 				["coord"] = { 28.2, 26.8, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -189,6 +189,18 @@ _.Zones =
 				["itemID"] = 169635,	-- Opaline Conch
 				["crs"] = { 154921 },	-- Giant Opaline Conch
 				["coord"] = { 28.2, 26.8, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(56453, {	-- Overgrown Stone (A)
+				["itemID"] = 169631,	-- Overgrown Stone
+				["crs"] = { 154918 },	-- Kelpstone
+				["coord"] = { 46.6, 28.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56465, {	-- Overgrown Stone (H)
+				["itemID"] = 169638,	-- Overgrown Stone
+				["crs"] = { 154918 },	-- Kelpstone
+				["coord"] = { 46.6, 28.0, 1355 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(56449, {	-- Pearlescent Shell (A)

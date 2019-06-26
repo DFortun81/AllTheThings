@@ -401,6 +401,7 @@ _.Zones =
 							i(167773),	-- Azsh'iri Stormsurger Links
 							i(167765),	-- Fathomstalker Waistband
 							i(167757),	-- Shirakess Cinch
+							i(170368),	-- Vim's Scalecrusher Clasp
 							i(167782),	-- Zanj'ir Scaleguard Greatbelt
 						}),
 						i(169482, {	-- Benthic Leggings
