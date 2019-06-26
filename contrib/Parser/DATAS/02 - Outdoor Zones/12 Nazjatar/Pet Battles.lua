@@ -107,6 +107,20 @@ _.Zones =
 			p(2653, {	-- Spireshell Snail
 				["crs"] = { 154716 },	-- Spireshell Snail
 			}),
+			q(56449, {	-- Pearlescent Shell (A)
+				["itemID"] = 169627,	-- Pearlescent Shell
+				["races"] = ALLIANCE_ONLY,
+			--	["qg"] = 154914,	-- Pearlhusk Crawler
+			--	sort of????  not sure what these are for.  i defeated Pearlhusk Crawler and this item popped into my inventory/quest popped up
+			--	not sure if this can be done daily for reputation or if it's a one-time little rep boost (+250), or if it's used for something else
+			}),
+			q(56461, {	-- Pearlescent Shell (H) — need to confirm horde questID -- completing the alliance version above also completed this questID.  not sure if the quest is neutral or if horde actually gets a 	different version.  wowhead lists 56461 as "both," not horde-specific, but lists 56449 as alliance-only.
+				["itemID"] = 169642,	-- Pearlescent Shell
+				["races"] = HORDE_ONLY,
+			--	["qg"] = 154914,	-- Pearlhusk Crawler
+			--	sort of????  not sure what these are for.  i defeated Pearlhusk Crawler and this item popped into my inventory/quest popped up
+			--	not sure if this can be done daily for reputation or if it's a one-time little rep boost (+250), or if it's used for something else
+			}),
 		}),
 	}),
 };

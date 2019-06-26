@@ -470,7 +470,7 @@ _.Zones =
 			}),
 			q(57004, {	-- Create Your Own Strength
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
-				["coord"] = { 40.3, 55.2, 1355 },
+				["coord"] = { 40.2, 55.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56350,	-- Scouting the Palace
 			}),
@@ -594,7 +594,7 @@ _.Zones =
 			}),
 			q(55362, {	-- Elemental Fury
 				["qg"] = 151741,	-- Apprentice Odari
-				["coord"] = { 43.5, 49.7, 1355 },
+				["coord"] = { 43.4, 49.8, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55361,	-- The Lost Shaman
 			}),
@@ -962,7 +962,7 @@ _.Zones =
 			}),
 			q(55363, {	-- Rescue The Farseer
 				["qg"] = 151741,	-- Apprentice Odari
-				["coord"] = { 43.5, 49.7, 1355 },
+				["coord"] = { 43.4, 49.8, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55361,	-- The Lost Shaman
 			}),
@@ -1376,7 +1376,7 @@ _.Zones =
 			}),
 			q(55361, {	-- The Lost Shaman
 				["qg"] = 151626,	-- Hunter Akana
-				["coord"] = { 39.4, 53.4, 1355 },
+				["coord"] = { 39.4, 53.5, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56350,	-- Scouting the Palace
 			}),
