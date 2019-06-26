@@ -34,3 +34,4 @@ obj/
 # Backup files
 *.bak
 contrib/Parser/log.txt
+contrib/Harvesters/API.key
