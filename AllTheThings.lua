@@ -412,41 +412,43 @@ GameTooltipModel.SetCreatureID = function(self, creatureID)
 end
 GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 	if displayInfos then
-		local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
-		local scale = reference.modelScale or 1;
 		local count = #displayInfos;
-		if count > 1 then
-			count = math.min(count, MAX_CREATURES_PER_ENCOUNTER);
-			local ratio = count / MAX_CREATURES_PER_ENCOUNTER;
-			if count < 3 then
-				for i=1,count do
-					model = self.Models[i];
-					model:SetDisplayInfo(displayInfos[i]);
-					model:SetCamDistanceScale(scale);
-					model:SetFacing(rotation);
-					model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
-					model:Show();
+		if count > 0 then
+			local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
+			local scale = reference.modelScale or 1;
+			if count > 1 then
+				count = math.min(count, MAX_CREATURES_PER_ENCOUNTER);
+				local ratio = count / MAX_CREATURES_PER_ENCOUNTER;
+				if count < 3 then
+					for i=1,count do
+						model = self.Models[i];
+						model:SetDisplayInfo(displayInfos[i]);
+						model:SetCamDistanceScale(scale);
+						model:SetFacing(rotation);
+						model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
+						model:Show();
+					end
+				else
+					scale = (1 + (ratio * 0.5)) * scale;
+					for i=1,count do
+						model = self.Models[i];
+						model:SetDisplayInfo(displayInfos[i]);
+						model:SetCamDistanceScale(scale);
+						model:SetFacing(rotation);
+						fi = math.floor(i / 2);
+						model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
+						model:Show();
+					end
 				end
 			else
-				scale = (1 + (ratio * 0.5)) * scale;
-				for i=1,count do
-					model = self.Models[i];
-					model:SetDisplayInfo(displayInfos[i]);
-					model:SetCamDistanceScale(scale);
-					model:SetFacing(rotation);
-					fi = math.floor(i / 2);
-					model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
-					model:Show();
-				end
+				self.Model:SetFacing(rotation);
+				self.Model:SetCamDistanceScale(scale);
+				self.Model:SetDisplayInfo(displayInfos[1]);
+				self.Model:Show();
 			end
-		else
-			self.Model:SetFacing(rotation);
-			self.Model:SetCamDistanceScale(scale);
-			self.Model:SetDisplayInfo(displayInfos[1]);
-			self.Model:Show();
+			self:Show();
+			return true;
 		end
-		self:Show();
-		return true;
 	end
 end
 GameTooltipModel.TrySetModel = function(self, reference)
