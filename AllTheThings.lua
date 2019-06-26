@@ -8774,9 +8774,6 @@ function app:GetDataCache()
 		displayData.text = "Harvesting All Display IDs";
 		displayData.description = "If you're seeing this window outside of Git, please yell loudly in Crieve's ear.";
 		displayData.g = {};
-		for model,groups in pairs(fieldCache["model"]) do
-			tinsert(displayData.g, {visible = true, model = model, text = model});
-		end
 		for i=1,78092,1 do
 			tinsert(displayData.g, {["displayID"] = i,["text"] = "Model #" .. i});
 		end
