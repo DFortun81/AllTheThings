@@ -587,11 +587,11 @@ AllTheThings.L = {
 		[-658] = "Interface\\Worldmap\\GlowSkull_64Blue",							-- Combatant PvP Gear
 		[-659] = "Interface\\Worldmap\\GlowSkull_64Purple",							-- Gladator PvP Gear
 		[-660] = "Interface\\Worldmap\\GlowSkull_64Red",							-- Elite PvP Gear
+		[-664] = "Interface\\Icons\\ability_mount_protodrakegladiatormount",		-- Dread Gladiator: Battle for Azeroth Season 1
+		[-665] = "Interface\\Icons\\inv_misc_tabard_forsaken",						-- Sinister Gladiator: Battle for Azeroth Season 2
+		[-666] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",			-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",				-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",					-- The Black Vault
-		[-3156] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",			-- BFA PvP Season 3
-		[-3157] = "Interface\\Icons\\inv_misc_tabard_forsaken",						-- BFA PvP Season 2
-		[-3158] = "Interface\\Icons\\ability_mount_protodrakegladiatormount",		-- BFA PvP Season 1
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",			-- Tier 3.5
 		[-3181] = "Interface\\Icons\\achievement_boss_ossiriantheunscarred",		-- Cenarion Circle Set (Ruins of Ahn'Qiraj)
 		[-3183] = "Interface\\Icons\\achievement_boss_hakkar",						-- Tier 1.5
@@ -1129,7 +1129,6 @@ AllTheThings.L = {
 		[-492] = "Illusions",
 		[-494] = MAC_OPTIONS_MISC, 												-- Miscellaneous
 		[-496] = DUNGEON_FLOOR_DEEPRUNTRAM2,									-- Bizmo's Brawlpub
-		[-499] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
 		-- Dark Iron Dwarves Mole Machine
 		[-501] = C_Map.GetAreaInfo(5039),										-- Sulfuron Spire
 		[-502] = C_Map.GetAreaInfo(348),										-- Aerie Peak
@@ -1248,14 +1247,19 @@ AllTheThings.L = {
 		[-657] = select(2, GetAchievementInfo(12185)),							-- Demonic Gladiator: Legion Season 7
 		
 -- PvP Set Names
-		[-658] = "Aspirant / Combatant Set",										-- Aspirant (WoD) / Combatant (Legion) PvP Gear
-		[-659] = "Gladiator Set",													-- Gladiator PvP Gear
-		[-660] = "Elite Set",														-- Elite PvP Gear
+		[-658] = "Aspirant / Combatant Gear",									-- Aspirant (WoD) / Combatant (Legion) PvP Gear
+		[-659] = "Gladiator Gear",												-- Gladiator PvP Gear
+		[-660] = "Elite Gear",													-- Elite PvP Gear
 		
 -- Warlods Pvp Seasons
 		[-661] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
 		[-662] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
 		[-663] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
+		
+-- Battle for Azeroth PvP Seasons
+		[-664] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
+		[-665] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
+		[-666] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
 		
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
