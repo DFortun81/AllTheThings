@@ -50,6 +50,7 @@ namespace ATT
             ObjectData.Create("setSubHeaderID",     "gssh",         "_.CreateGearSetSubHeader", "f");
             ObjectData.Create("titleID",            "title",        "_.CreateTitle", "f");
             ObjectData.Create("currencyID",         "cu",           "_.CreateCurrencyClass", "f");
+            ObjectData.Create("azeriteEssenceID",   "aze",          "_.CreateAzeriteEssence", "f");
             ObjectData.Create<ItemData>("itemID",   "i",            "_.CreateItem", "f");
             ObjectData.Create("factionID",          "faction",      "_.CreateFaction", "f");
             ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");

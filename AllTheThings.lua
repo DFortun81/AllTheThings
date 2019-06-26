@@ -1412,6 +1412,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local now = time();
 		local cache = searchCache[search];
 		if cache and (now - cache[1]) < cache[2] then return cache[3]; end
+		print(paramA, paramB, ...);
 		
 		-- Determine if this tooltip needs more work the next time it refreshes.
 		if not paramA then paramA = ""; end
@@ -3389,6 +3390,35 @@ app.BaseArtifact = {
 end)();
 app.CreateArtifact = function(id, t)
 	return setmetatable(constructor(id, t, "artifactID"), app.BaseArtifact);
+end
+
+-- Azerite Essence Lib
+app.BaseAzeriteEssence = {
+	__index = function(t, key)
+		if key == "key" then
+			return "azeriteEssenceID";
+		elseif key == "collectible" then
+			return true;
+		elseif key == "collected" then
+			return t.info.unlocked;
+		elseif key == "text" then
+			return t.link;
+		elseif key == "icon" then
+			return t.info.icon;
+		elseif key == "link" then
+			return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, t.info.rank or 0);
+		elseif key == "info" then
+			local info = C_AzeriteEssence.GetEssenceInfo(t.azeriteEssenceID);
+			rawset(t, "info", info);
+			return info;
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateAzeriteEssence = function(id, t)
+	return setmetatable(constructor(id, t, "azeriteEssenceID"), app.BaseAzeriteEssence);
 end
 
 -- Category Lib
@@ -7750,6 +7780,7 @@ local function RowOnEnter(self)
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
 		if reference.artifactID and app.Settings:GetTooltipSetting("artifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
+		if reference.azeriteEssenceID and app.Settings:GetTooltipSetting("azeriteEssenceID") then GameTooltip:AddDoubleLine(L["AZERITE_ESSENCE_ID"], tostring(reference.azeriteEssenceID)); end
 		if reference.difficultyID and app.Settings:GetTooltipSetting("difficultyID") then GameTooltip:AddDoubleLine(L["DIFFICULTY_ID"], tostring(reference.difficultyID)); end
 		if app.Settings:GetTooltipSetting("creatureID") then 
 			if reference.creatureID then

@@ -65,6 +65,7 @@ AllTheThings.L = {
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
 	["ARTIFACT_ID"] = "Artifact ID";
+	["AZERITE_ESSENCE_ID"] = "Azerite Essence ID";
 	["CREATURE_ID"] = "Creature ID";
 	["CURRENCY_ID"] = "Currency ID";
 	["DIFFICULTY_ID"] = "Difficulty ID";

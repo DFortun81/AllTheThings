@@ -9,6 +9,9 @@ _.Zones =
 			m(1021, {	-- Chamber of Heart
 				["achievementID"] = 12918,	-- Have a Heart
 				["description"] = "|cff66ccffThe Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.|r",
+				["maps"] = {
+					1473,	-- Chamber of Heart
+				},
 				["lvl"] = 110,
 				["g"] = {
 					n(-169, {	-- Emissary Quests
@@ -95,7 +98,9 @@ _.Zones =
 							["sourceQuest"] = 55497,	-- A Friendly Face
 							["g"] = {
 								ach(13572),	-- The Heart Forge
-								i(168611),	-- Petrified Ebony Scale
+								i(168611, {	-- Petrified Ebony Scale
+									{ ["azeriteEssenceID"] = 12 },
+								}),
 							},
 						}),
 						q(53031, {	-- The Speaker's Imperative
