@@ -43,9 +43,6 @@ _.Toys =
 			{	-- Warbeast Kraal Dinner Bell
 				["itemID"] = 166701,	-- Warbeast Kraal Dinner Bell
 			},
-			{	-- Words of Akunda
-				["itemID"] = 165021,	-- Words of Akunda
-			},
 		},
 	},
 };
