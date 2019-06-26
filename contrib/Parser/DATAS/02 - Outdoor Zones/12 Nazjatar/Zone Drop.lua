@@ -19,7 +19,7 @@ _.Zones =
 			i(169399),	-- Deeptide Gloves
 			i(169401),	-- Deeptide Legwraps
 			i(169425),	-- Deeptide Robe
-			i(170113),	-- Deeptide Scroll
+			i(170201),	-- Deeptide Scroll
 			i(169398),	-- Deeptide Slippers
 			i(169431),	-- Reefwalker Cape
 			i(169419),	-- Reefwalker Chain
