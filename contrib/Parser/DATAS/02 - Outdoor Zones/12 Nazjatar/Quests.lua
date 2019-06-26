@@ -734,6 +734,11 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
 			}),
+			i(169644, {	-- Half-Digested Deepcoral Pod
+				["questID"] = 56459,
+				["crs"] = { 154912 },	-- Silence
+				["coord"] = { 58.3, 48.1, 1355 },
+			}),
 			q(56643, {	-- In Deep
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
 				["races"] = ALLIANCE_ONLY,
