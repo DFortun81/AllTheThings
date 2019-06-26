@@ -1412,7 +1412,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local now = time();
 		local cache = searchCache[search];
 		if cache and (now - cache[1]) < cache[2] then return cache[3]; end
-		print(paramA, paramB, ...);
 		
 		-- Determine if this tooltip needs more work the next time it refreshes.
 		if not paramA then paramA = ""; end
