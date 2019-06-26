@@ -15,6 +15,7 @@ _.Zones =
 								i(161667),	-- Reins of the Voldunai Dunescraper
 								i(163211),	-- Akunda's Firesticks*
 								i(159753),	-- Desert Flute*
+								i(165021),	-- Words of Akunda
 								un(1, i(163565)),	-- Vulpera Scrapper's Armor [Was in beta, not there on 8/12/18]
 								un(1, i(161531)),	-- Akunda's Grounding Boots [Was in beta, not there on 9/16/18]
 								i(165245, {	-- Akunda's Grounding Girdle*

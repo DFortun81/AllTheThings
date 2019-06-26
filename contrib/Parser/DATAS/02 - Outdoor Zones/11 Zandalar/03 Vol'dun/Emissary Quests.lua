@@ -27,10 +27,6 @@ _.Zones =
 										{	-- Meerah's Jukebox
 											["itemID"] = 166880,	-- Meerah's Jukebox
 										},
-										{	-- Words of Akunda
-											["itemID"] = 165021,	-- Words of Akunda
-											["u"] = 1,
-										},
 									},
 								},
 							},
