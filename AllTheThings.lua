@@ -3399,21 +3399,27 @@ app.BaseAzeriteEssence = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return t.info and t.info.unlocked;
+			local info = t.info;
+			if info and info.unlocked then return 1; end
 		elseif key == "text" then
-			return t.link;
+			return t.link or t.name;
 		elseif key == "lvl" then
 			return 120;
 		elseif key == "icon" then
-			return t.info.icon;
+			local info = t.info;
+			if info then return info.icon; end
+			return "Interface/ICONS/INV_Glowing Azerite Spire";
 		elseif key == "name" then
-			return t.info.name;
+			local info = t.info;
+			if info then return info.name; end
+			return "Blizzard API is scuffed. Read description.";
+		elseif key == "description" then
+			if not t.info then return "Due to Blizzard API shenanigans, you can only view this information on a 120. Imagine writing an API to get information and then intentionally gating that information to only 120s. If someone links you an essence, you can't even look at it on a <120 character. \n\nIncredible.\n\n- Crieve"; end
 		elseif key == "link" then
-			return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, t.info.rank or 0);
+			local info = t.info;
+			if info then return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, info.rank or 0); end
 		elseif key == "info" then
-			local info = C_AzeriteEssence.GetEssenceInfo(t.azeriteEssenceID);
-			rawset(t, "info", info);
-			return info;
+			return C_AzeriteEssence.GetEssenceInfo(t.azeriteEssenceID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -8337,18 +8343,21 @@ function app:GetDataCache()
 		db.g = {};
 		db.lvl = 120;
 		db.OnUpdate = function(self)
-			local essences = C_AzeriteEssence.GetEssences();
-			if essences and #essences > 0 then
-				local cache = self.g;
-				table.wipe(cache);
-				for i,essence in ipairs(essences) do
-					tinsert(cache, app.CreateAzeriteEssence(essence.ID));
+			local level = UnitLevel("player");
+			if level and level >= 120 then
+				local essences = C_AzeriteEssence.GetEssences();
+				if essences and #essences > 0 then
+					local cache = self.g;
+					table.wipe(cache);
+					for i,essence in ipairs(essences) do
+						tinsert(cache, app.CreateAzeriteEssence(essence.ID));
+					end
+					table.sort(cache, function(a, b)
+						return a.name < b.name;
+					end);
+					self.g = cache;
+					self.OnUpdate = nil;
 				end
-				table.sort(cache, function(a, b)
-					return a.name < b.name;
-				end);
-				self.g = cache;
-				self.OnUpdate = nil;
 			end
 		end;
 		db.OnUpdate(db);
