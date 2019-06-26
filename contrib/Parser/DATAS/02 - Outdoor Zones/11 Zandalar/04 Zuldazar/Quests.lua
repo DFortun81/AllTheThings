@@ -596,16 +596,6 @@ _.Zones =
 						49491,	-- Fuel for the Voodoo
 					},
 				}),
-				q(56030, {	-- The Warchief's Order
-					["races"] = HORDE_ONLY,
-					["description"] = "Automated granted when logging in.",
-				}),
-				q(56044, {	-- Send the Fleet
-					["qg"] = 135691,	-- Nathanos Blightcaller
-					["coord"] = { 58.4, 62.6, 1165 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 56030,	-- The Warchief's Order
-				}),
 				q(49493, {	-- Zul's Ethical Dilemma
 					["races"] = HORDE_ONLY,
 					["qg"] = 129907,	-- Zul the Prophet

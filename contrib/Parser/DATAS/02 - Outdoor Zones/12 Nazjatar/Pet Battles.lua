@@ -179,6 +179,18 @@ _.Zones =
 				["coord"] = { 29.6, 49.7, 1355 },
 				["races"] = HORDE_ONLY,
 			}),
+			q(56456, {	-- Opaline Conch (A)
+				["itemID"] = 169635,	-- Opaline Conch
+				["crs"] = { 154921 },	-- Giant Opaline Conch
+				["coord"] = { 28.2, 26.8, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56458, {	-- Opaline Conch (H)
+				["itemID"] = 169635,	-- Opaline Conch
+				["crs"] = { 154921 },	-- Giant Opaline Conch
+				["coord"] = { 28.2, 26.8, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
 			q(56449, {	-- Pearlescent Shell (A)
 				["itemID"] = 169627,	-- Pearlescent Shell
 				["crs"] = { 154914 },	-- Pearlhusk Crawler
