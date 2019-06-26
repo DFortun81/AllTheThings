@@ -155,6 +155,20 @@ _.Zones =
 				["coord"] = { 58.3, 48.1, 1355 },
 				["races"] = HORDE_ONLY,
 			}),
+			--[[ TODO:: figure out what the alliance questID is
+			q(, {	-- Leathery Venom Gland (a)
+				["itemID"] = 169624,
+				["crs"] = { 154911 },	-- Chomp
+				["coord"] = { 71.9, 51.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			]]--
+			q(56457, {	-- Leathery Venom Gland (H)
+				["itemID"] = 169645,
+				["crs"] = { 154911 },	-- Chomp
+				["coord"] = { 71.9, 51.2, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
 			q(56448, {	-- Molted Spineshell (A)
 				["itemID"] = 169626,
 				["crs"] = { 154913 },	-- Shadowspine Lurker
@@ -235,13 +249,13 @@ _.Zones =
 			}),
 			q(56444, {	-- Wiggletail's Poking Fork (A)
 				["itemID"] = 169623,
-				["crs"] = { 154910 },
+				["crs"] = { 154910 },	-- Prince Wiggletail
 				["coord"] = { 34.7, 27.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56445, {	-- Wiggletail's Poking Fork (H)
 				["itemID"] = 169646,
-				["crs"] = { 154910 },
+				["crs"] = { 154910 },	-- Prince Wiggletail
 				["coord"] = { 34.7, 27.4, 1355 },
 				["races"] = HORDE_ONLY,
 				
