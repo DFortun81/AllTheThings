@@ -8369,7 +8369,7 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		-- World Events
+		-- Events
 		if app.Categories.WorldEvents then
 			db = app.CreateDifficulty(18, app.Categories.WorldEvents);
 			db.icon = "Interface\\Icons\\inv_misc_celebrationcake_01";
@@ -8378,15 +8378,33 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		-- Holidays
-		if app.Categories.Holidays then
-			db = app.CreateAchievement(2144, app.Categories.Holidays);
-			db.expanded = false;
-			db.text = GetItemSubClassInfo(15,3);
-			db.npcID = -3;
-			db.collectible = false;
-			table.insert(g, db);
-		end
+		db = {};
+		db.g = {};
+		db.fps = {};
+		app.CacheFlightPathData();
+		db.OnUpdate = function(self)
+			local cache = self.g;
+			table.wipe(cache);
+			-- Uncomment to harvest flight path data.
+			-- SetDataMember("FlightPathData", AllTheThings.FlightPathDB);
+			for i,fp in pairs(AllTheThings.FlightPathDB) do
+				local id = tonumber(i);
+				local fp = self.fps[id];
+				if not fp then
+					fp = app.CreateFlightPath(id);
+					self.fps[id] = fp;
+				end
+				tinsert(cache, fp);
+			end
+			table.sort(cache, function(a, b)
+				return a.text < b.text;
+			end);
+			self.g = cache;
+		end;
+		db.OnUpdate(db);
+		db.text = "Flight Paths";
+		db.icon = "Interface\\Minimap\\Tracking\\Flightmaster";
+		table.insert(g, db);
 		
 		-- Pet Battles
 		if app.Categories.PetBattles then
@@ -8499,9 +8517,41 @@ function app:GetDataCache()
 			db = app.CreateAchievement(12996, app.Categories.Toys);
 			db.icon = "Interface\\ICONS\\INV_Misc_Toy_10";
 			db.expanded = false;
-			db.text = TOY_BOX; -- Toy Box
+			db.f = 102;
+			db.text = TOY_BOX;
 			table.insert(g, db);
 		end
+		
+		--[[
+		-- DYNAMIC TOY BOX (not filtered)
+		db = {};
+		db.g = {};
+		db.OnUpdate = function(self)
+			local numToys = C_ToyBox.GetNumToys();
+			if numToys and numToys > 0 then
+				local cache = self.g;
+				table.wipe(cache);
+				C_ToyBox.SetAllExpansionTypeFilters(true);
+				C_ToyBox.SetAllSourceTypeFilters(true);
+				C_ToyBox.SetUncollectedShown(true);
+				C_ToyBox.SetCollectedShown(true);
+				C_ToyBox.SetUnusableShown(true);
+				for index=1,numToys,1 do
+					local itemID = C_ToyBox.GetToyFromIndex(index);
+					if itemID and itemID > 0 then
+						tinsert(cache, app.CreateToy(itemID));
+					end
+				end
+				self.g = cache;
+				self.OnUpdate = nil;
+			end
+		end;
+		db.OnUpdate(db);
+		db.expanded = false;
+		db.text = TOY_BOX;
+		db.icon = "Interface\\ICONS\\INV_Misc_Toy_10";
+		table.insert(g, db);
+		]]--
 		
 		--[[
 		-- Never Implemented
@@ -8642,33 +8692,7 @@ function app:GetDataCache()
 		table.insert(g, db);
 		--]]
 		
-		db = {};
-		db.g = {};
-		db.fps = {};
-		app.CacheFlightPathData();
-		db.OnUpdate = function(self)
-			local cache = self.g;
-			table.wipe(cache);
-			-- Uncomment to harvest flight path data.
-			-- SetDataMember("FlightPathData", AllTheThings.FlightPathDB);
-			for i,fp in pairs(AllTheThings.FlightPathDB) do
-				local id = tonumber(i);
-				local fp = self.fps[id];
-				if not fp then
-					fp = app.CreateFlightPath(id);
-					self.fps[id] = fp;
-				end
-				tinsert(cache, fp);
-			end
-			table.sort(cache, function(a, b)
-				return a.text < b.text;
-			end);
-			self.g = cache;
-		end;
-		db.OnUpdate(db);
-		db.text = "Flight Paths";
-		db.icon = "Interface\\Minimap\\Tracking\\Flightmaster";
-		table.insert(g, db);
+		
 		
 		--[[
 		
@@ -11564,6 +11588,584 @@ WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
+app.OpenAuctionModule = function(self)
+	if app.Blizzard_AuctionUILoaded then
+		-- Create the Auction Tab for ATT.
+		local n = AuctionFrame.numTabs + 1;
+		local button = CreateFrame("Button", "AuctionFrameTab" .. n, AuctionFrame, "AuctionTabTemplate");
+		button:SetID(n);
+		button:SetText(L["AUCTION_TAB"]);
+		button:SetPoint("LEFT", _G["AuctionFrameTab" .. n-1], "RIGHT", -8, 0);
+		
+		PanelTemplates_SetNumTabs (AuctionFrame, n);
+		PanelTemplates_EnableTab  (AuctionFrame, n);
+		app.OpenAuctionModule = nil;
+		app.AuctionModuleTabID = n;
+		
+		-- Create the Auction Frame
+		local frame = CreateFrame("FRAME", app:GetName() .. "-AuctionFrame", AuctionFrame );
+		frame:SetPoint("TOPLEFT", AuctionFrame, 19, -67);
+		frame:SetPoint("BOTTOMRIGHT", AuctionFrame, -8, 36);
+		frame:Hide();
+		
+		-- Create the movable Auction Data window.
+		local window = app:GetWindow("AuctionData", AuctionFrame, function(self)
+			if not self.initialized then
+				self.shouldFullRefresh = false;
+				self.initialized = true;
+				self.data = {
+					["text"] = "Auction Module",
+					["visible"] = true,
+					["back"] = 1,
+					["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01",
+					["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
+					["options"] = {
+						{
+							["text"] = "Wipe Scan Data",
+							["icon"] = "INTERFACE/ICONS/INV_firstAid_Sun-Bleached Linen",
+							["description"] = "Click this button to wipe out all of the previous scan data.",
+							["visible"] = true,
+							["priority"] = -4,
+							["OnClick"] = function() 
+								local window = app:GetWindow("AuctionData");
+								wipe(AllTheThingsAuctionData);
+								wipe(window.data.g);
+								for i,option in ipairs(window.data.options) do
+									table.insert(window.data.g, option);
+								end
+								window:Update();
+							end,
+							['OnUpdate'] = function(data)
+								local window = app:GetWindow("AuctionData");
+								data.visible = #window.data.g > #window.data.options;
+							end,
+						},
+						{
+							["text"] = "Perform a Full Scan",
+							["icon"] = "INTERFACE/ICONS/INV_DARKMOON_EYE",
+							["description"] = "Click this button to perform a full scan of the auction house. This information will appear within this window and clear out the existing data.",
+							["visible"] = true,
+							["priority"] = -3,
+							["OnClick"] = function() 
+								if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
+							
+								-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
+								if select(2, CanSendAuctionQuery()) then
+									-- Disable the button and register for the event.
+									frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
+									frame.descriptionLabel:SetText("Full Scan request sent.\n\nPlease wait while we wait for the server to respond.");
+									frame.descriptionLabel:Show();
+									QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
+								end
+							end,
+							['OnUpdate'] = function(data)
+								data.visible = true;
+							end,
+						},
+						{
+							["text"] = "Toggle Debug Mode",
+							["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
+							["description"] = "Click this button to toggle debug mode to show everything regardless of filters!",
+							["visible"] = true,
+							["priority"] = -2,
+							["OnClick"] = function() 
+								app.Settings:ToggleDebugMode();
+							end,
+							['OnUpdate'] = function(data)
+								data.visible = true;
+								if app.Settings:Get("DebugMode") then
+									-- Novaplane made me do it
+									data.trackable = true;
+									data.saved = true;
+								else
+									data.trackable = nil;
+									data.saved = nil;
+								end
+							end,
+						},
+						{
+							["text"] = "Toggle Account Mode",
+							["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
+							["description"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
+							["visible"] = true,
+							["priority"] = -1,
+							["OnClick"] = function() 
+								app.Settings:ToggleAccountMode();
+							end,
+							['OnUpdate'] = function(data)
+								data.visible = true;
+								if app.Settings:Get("AccountMode") then
+									data.trackable = true;
+									data.saved = true;
+								else
+									data.trackable = nil;
+									data.saved = nil;
+								end
+							end,
+						},
+						{
+							["text"] = "Toggle Unobtainable Items",
+							["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
+							["description"] = "Turn this setting on if you want to show Unobtainable items.",
+							["visible"] = true,
+							["priority"] = 0,
+							["OnClick"] = function()
+								local val = app.GetDataMember("UnobtainableItemFilters");
+								val[7] = not val[7];
+								app.Settings:Refresh();
+								app:RefreshData();
+							end,
+							['OnUpdate'] = function(data)
+								data.visible = true;
+								local val = app.GetDataMember("UnobtainableItemFilters");
+								if val[7] then
+									data.trackable = true;
+									data.saved = true;
+								else
+									data.trackable = nil;
+									data.saved = nil;
+								end
+							end,
+						},
+					},
+					["g"] = {}
+				};
+				for i,option in ipairs(self.data.options) do
+					table.insert(self.data.g, option);
+				end
+			end
+		
+			-- Update the window and all of its row data
+			self.data.progress = 0;
+			self.data.total = 0;
+			self.data.indent = 0;
+			self.data.back = 1;
+			BuildGroups(self.data, self.data.g);
+			UpdateGroups(self.data, self.data.g);
+			for i,option in ipairs(self.data.options) do
+				if option.OnUpdate then
+					option.OnUpdate(option);
+				end
+			end
+			self.data.visible = true;
+			UpdateWindow(self, true);
+		end);
+		window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
+		window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
+		window:Hide();
+		
+		-- Cache some functions to make them faster
+		local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
+		local origSideDressUpFrameHide, origSideDressUpFrameShow = SideDressUpFrame.Hide, SideDressUpFrame.Show;
+		SideDressUpFrame.Hide = function(...)
+			origSideDressUpFrameHide(...);
+			window:ClearAllPoints();
+			window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
+			window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
+		end
+		SideDressUpFrame.Show = function(...)
+			origSideDressUpFrameShow(...);
+			window:ClearAllPoints();
+			window:SetPoint("LEFT", SideDressUpFrame, "RIGHT", 0, 0);
+			window:SetPoint("TOP", AuctionFrame, "TOP", 0, -10);
+			window:SetPoint("BOTTOM", AuctionFrame, "BOTTOM", 0, 10);
+		end
+		
+		-- The ALL THE THINGS Epic Logo!
+		local f = frame:CreateTexture(nil, "ARTWORK");
+		f:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
+		f:SetPoint("BOTTOMLEFT", frame, "TOPLEFT", 72, 0);
+		f:SetSize(36, 36);
+		f:SetScale(0.8);
+		f:Show();
+		frame.logo = f;
+
+		f = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+		f:SetPoint("TOPLEFT", frame.logo, "TOPRIGHT", 4, -2);
+		f:SetJustifyH("LEFT");
+		f:SetText(L["TITLE"]);
+		f:SetScale(1.5);
+		f:Show();
+		frame.title = f;
+		
+		f = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+		f:SetPoint("CENTER", frame.title, "CENTER", 0, 0);
+		f:SetPoint("RIGHT", frame, "RIGHT", -8, 0);
+		f:SetJustifyH("RIGHT");
+		f:SetText("Auction House Module");
+		f:Show();
+		frame.moduletitle = f;
+		
+		-- Settings Button
+		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
+		f:SetPoint("TOPLEFT", frame, "BOTTOMLEFT", 160, 0);
+		f:SetText("Settings");
+		f:SetWidth(120);
+		f:SetHeight(22);
+		f:RegisterForClicks("AnyUp");
+		f:SetScript("OnClick", function() 
+			-- Open the Settings Menu
+			if InterfaceOptionsFrame:IsVisible() then
+				InterfaceOptionsFrame_Show();
+			else
+				InterfaceOptionsFrame_OpenToCategory(app:GetName());
+				InterfaceOptionsFrame_OpenToCategory(app:GetName());
+			end
+		end);
+		f:SetATTTooltip("Click this button to toggle the settings menu.\n\nThe results displayed in this window will be filtered by your settings.");
+		frame.settingsButton = f;
+		
+		-- Function to Update the State of the Scan button. (Coroutines, do not call manually.)
+		local ObjectTypeMetas = {
+			["criteriaID"] = setmetatable({	-- Achievements
+				["npcID"] = -4,
+				["description"] = "All items that can be used to obtain achievements that you are missing are displayed here.",
+				["priority"] = 1,
+			}, app.BaseNPC),
+			["s"] = setmetatable({	-- Appearances
+				["npcID"] = -10032,
+				["description"] = "All appearances that you need are displayed here.",
+				["priority"] = 2,
+			}, app.BaseNPC),
+			["mountID"] = setmetatable({	-- Mounts
+				["filterID"] = 100,
+				["description"] = "All mounts that you have not collected yet are displayed here.",
+				["priority"] = 3,
+			}, app.BaseFilter),
+			["speciesID"] = setmetatable({	-- Pets
+				["npcID"] = -25,
+				["description"] = "All pets that you have not collected yet are displayed here.",
+				["priority"] = 4,
+			}, app.BaseNPC),
+			["recipeID"] = setmetatable({	-- Recipes
+				["filterID"] = 200,
+				["description"] = "All recipes that you have not collected yet are displayed here.",
+				["priority"] = 6,
+			}, app.BaseFilter),
+			["reagentID"] = {	-- Reagents
+				["text"] = "Reagents",
+				["icon"] = "Interface/ICONS/INV_Enchant_DustIllusion",
+				["description"] = "All items that can be used to craft an item using a profession on your account.",
+				["priority"] = 5,
+			},
+			["itemID"] = {	-- Non-Collectible Items
+				["text"] = "Non-Collectible Items",
+				["icon"] = "Interface/ICONS/ACHIEVEMENT_GUILDPERK_BARTERING",
+				["description"] = "All items that can be used to earn other collectible items, but are not necessarily collectible themselves are displayed here.",
+				["priority"] = 7,
+			},
+		};
+		local UpdateScanButtonState = function()
+			repeat
+				if select(2, CanSendAuctionQuery()) then
+					frame.scanButton:Enable();
+					return true;
+				else
+					frame.scanButton:Disable();
+					for i=0,60,1 do coroutine.yield(); end
+				end
+			until not frame:IsVisible();
+		end
+		local ProcessAuctionData = function()
+			-- If we have no auction data, then simply return now.
+			if not AllTheThingsAuctionData then return false; end
+			local count = #AllTheThingsAuctionData;
+			if count < 1 then return false; end
+			
+			-- Wait a second!
+			for i=0,60,1 do coroutine.yield(); end
+			
+			-- Search the ATT Database for information related to the auction links (items, species, etc)
+			local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {};
+			for i,itemLink in ipairs(AllTheThingsAuctionData) do
+				searchResults = SearchForLink(itemLink);
+				if searchResults and #searchResults > 0 then
+					searchResult = searchResults[1];
+					key = searchResult.key;
+					if key == "npcID" then
+						if searchResult.itemID then
+							key = "itemID";
+						end
+					end
+					value = searchResult[key];
+					keys = searchResultsByKey[key];
+					
+					-- Make sure that the key type is represented.
+					if not keys then
+						keys = {};
+						searchResultsByKey[key] = keys;
+					end
+					
+					-- First time this key value was used.
+					data = keys[value];
+					if not data then
+						data = CreateObject(searchResult);
+						for i=2,#searchResults,1 do
+							MergeObject(data, CreateObject(searchResults[i]));
+						end
+						if data.key == "npcID" then setmetatable(data, app.BaseItem); end
+						data.auctions = {};
+						keys[value] = data;
+					end
+					table.insert(data.auctions, itemLink);
+				end
+			end
+			
+			-- Move all achievementID-based items into criteriaID
+			if searchResultsByKey.achievementID then
+				local criteria = searchResultsByKey.criteriaID;
+				if criteria then
+					for key,entry in pairs(searchResultsByKey.achievementID) do
+						criteria[key] = entry;
+					end
+				else
+					searchResultsByKey.criteriaID = searchResultsByKey.achievementID;
+				end
+				searchResultsByKey.achievementID = nil;
+			end
+			
+			-- Apply a sub-filter to items with spellID-based identifiers.
+			if searchResultsByKey.spellID then
+				local filteredItems = {};
+				for key,entry in pairs(searchResultsByKey.spellID) do
+					if entry.filterID then
+						local filterData = filteredItems[entry.filterID];
+						if not filterData then
+							filterData = {};
+							filteredItems[entry.filterID] = filterData;
+						end
+						filterData[key] = entry;
+					else
+						print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or "???") .. " is missing a filterID?");
+					end
+				end
+				
+				if filteredItems[100] then searchResultsByKey.mountID = filteredItems[100]; end	-- Mounts
+				if filteredItems[200] then searchResultsByKey.recipeID = filteredItems[200]; end	-- Recipes
+				searchResultsByKey.spellID = nil;
+			end
+			
+			if searchResultsByKey.s then
+				local filteredItems = {};
+				local cachedS = searchResultsByKey.s;
+				searchResultsByKey.s = {};
+				for sourceID,entry in pairs(cachedS) do
+					if entry.f then
+						local filterData = filteredItems[entry.f];
+						if not filterData then
+							filterData = setmetatable({ ["filterID"] = entry.f, ["g"] = {} }, app.BaseFilter);
+							filteredItems[entry.f] = filterData;
+							table.insert(searchResultsByKey.s, filterData);
+						end
+						table.insert(filterData.g, entry);
+					end
+				end
+				for f,entry in pairs(filteredItems) do
+					table.sort(entry.g, function(a,b)
+						return a.u and not b.u;
+					end);
+				end
+			end
+			
+			-- Process the Non-Collectible Items for Reagents
+			local reagentCache = app.GetDataMember("Reagents");
+			if reagentCache and searchResultsByKey.itemID then
+				local cachedItems = searchResultsByKey.itemID;
+				searchResultsByKey.itemID = {};
+				searchResultsByKey.reagentID = {};
+				for itemID,entry in pairs(cachedItems) do
+					if reagentCache[itemID] then
+						searchResultsByKey.reagentID[itemID] = entry;
+						if not entry.g then entry.g = {}; end
+						for itemID2,count in pairs(reagentCache[itemID][2]) do
+							local searchResults = app.SearchForField("itemID", itemID2);
+							if searchResults and #searchResults > 0 then
+								table.insert(entry.g, CloneData(searchResults[1]));
+							end
+						end
+					else
+						-- Push it back into the itemID table
+						searchResultsByKey.itemID[itemID] = entry;
+					end
+				end
+			end
+			
+			-- Insert Buttons into the groups.
+			wipe(window.data.g);
+			for i,option in ipairs(window.data.options) do
+				table.insert(window.data.g, option);
+			end
+			
+			-- Display Test for Raw Data + Filtering
+			for key, searchResults in pairs(searchResultsByKey) do
+				local subdata = {};
+				subdata.visible = true;
+				if ObjectTypeMetas[key] then
+					setmetatable(subdata, { __index = ObjectTypeMetas[key] });
+				else
+					subdata.description = "Container for '" .. key .. "' object types.";
+					subdata.text = key;
+				end
+				subdata.g = {};
+				for i,j in pairs(searchResults) do
+					table.insert(subdata.g, j);
+				end
+				table.insert(window.data.g, subdata);
+			end
+			table.sort(window.data.g, function(a, b)
+				return (b.priority or 0) > (a.priority or 0);
+			end);
+			BuildGroups(window.data, window.data.g);
+			UpdateGroups(window.data, window.data.g);
+			window:Show();
+			window:Update();
+			
+			-- Change the message!
+			frame.descriptionLabel:SetText("Got the datas!\n\nShift Left click into the search bar on the Browse tab to look for items!");
+			frame.descriptionLabel:Show();
+		end
+		local ProcessAuctions = function()
+			-- Gather the Auctions
+			AllTheThingsAuctionData = {};
+			app.CurrentAuctionIndex = 1;
+			if app.CurrentAuctionIndex <= app.CurrentAuctionTotal then
+				local iter = 0;
+				repeat
+					-- Process the Auction
+					local link = _GetAuctionItemLink("list", app.CurrentAuctionIndex);
+					if link then
+						table.insert(AllTheThingsAuctionData, link);
+					else
+						local name, texture, count, quality, canUse, level, levelColHeader, minBid,
+							minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
+							ownerFullName, saleStatus, itemID, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
+						if itemID and itemID > 0 and saleStatus == 0 then
+							table.insert(AllTheThingsAuctionData, "item:" .. itemID);
+						end
+					end
+					
+					-- Increment the index and check the iteration variable.
+					iter = iter + 1;
+					if iter >= 10000 then
+						coroutine.yield();
+						iter = 0;
+					end
+					app.CurrentAuctionIndex = app.CurrentAuctionIndex + 1;
+				until app.CurrentAuctionIndex > app.CurrentAuctionTotal;
+			else
+				return false;
+			end
+			
+			-- Process the items
+			app.CurrentAuctionIndex = 0;
+			app.CurrentAuctionTotal = 0;
+			StartCoroutine("ProcessAuctionData", ProcessAuctionData);
+		end
+		
+		-- Scan Button
+		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
+		f:SetPoint("TOPLEFT", frame.settingsButton, "TOPRIGHT", 2, 0);
+		f:SetPoint("BOTTOMLEFT", frame.settingsButton, "BOTTOMRIGHT", 2, 0);
+		f:SetText("Scan");
+		f:SetWidth(120);
+		f:RegisterForClicks("AnyUp");
+		f:SetScript("OnClick", function()
+			if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
+		
+			-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
+			local CanQuery, CanQueryAll = CanSendAuctionQuery();
+			if CanQueryAll then
+				-- Disable the button and register for the event.
+				frame.scanButton:Disable();
+				frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
+				frame.descriptionLabel:SetText("Full Scan request sent.\n\nPlease wait while we wait for the server to respond.");
+				frame.descriptionLabel:Show();
+				QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
+			else
+				return false;
+			end
+			
+			-- Update the Scan Button State
+			StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
+		end);
+		f:SetATTTooltip("Click this button to scan the auction house for collectible Things.\n\nFull Scans have an internal 15 minute cooldown if you invalidate the cache by reloading your UI.");
+		frame.scanButton = f;
+		f = frame.scanButton:CreateTexture(nil, "BORDER");
+		f:SetPoint("TOPRIGHT", frame.scanButton, "TOPLEFT", 6, 1);
+		f:SetTexture("Interface\\FrameGeneral\\UI-Frame");
+		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
+		f:SetSize(13, 25);
+		f:Show();
+		f = frame.scanButton:CreateTexture(nil, "BORDER");
+		f:SetPoint("TOPLEFT", frame.scanButton, "TOPRIGHT", -6, 1);
+		f:SetTexture("Interface\\FrameGeneral\\UI-Frame");
+		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
+		f:SetSize(13, 25);
+		f:Show();
+		
+		-- Close Button
+		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
+		f:SetPoint("TOPRIGHT", frame, "BOTTOMRIGHT", 0, 0);
+		f:SetText("Close");
+		f:SetWidth(80);
+		f:SetHeight(22);
+		f:RegisterForClicks("AnyUp");
+		f:SetScript("OnClick", CloseAuctionHouse);
+		frame.closeButton = f;
+		f = frame.closeButton:CreateTexture(nil, "BORDER");
+		f:SetPoint("TOPRIGHT", frame.closeButton, "TOPLEFT", 5, 1);
+		f:SetTexture("Interface\\FrameGeneral\\UI-Frame");
+		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
+		f:SetSize(13, 25);
+		f:Show();
+		
+		f = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+		f:SetPoint("CENTER", frame, "CENTER", 0, 0);
+		f:SetText("No Auction Data.\n\nPress 'Scan' to ask the server for information.");
+		f:SetTextColor(1, 1, 1, 1);
+		f:SetJustifyH("CENTER");
+		f:Show();
+		frame.descriptionLabel = f;
+		
+		-- Register for Events [Only when requests sent by ATT]
+		frame:SetScript("OnEvent", function(self, e, ...)
+			local numItems = GetNumAuctionItems("list");
+			if numItems > 0 then
+				-- Unregister, then begin processing the Auction Item List
+				self:UnregisterEvent("AUCTION_ITEM_LIST_UPDATE");
+				app.CurrentAuctionTotal = numItems;
+				app.CurrentAuctionIndex = 0;
+				frame.descriptionLabel:SetText("Scan data received. Found " .. numItems .. " auctions.\n\nPlease wait while we determine how useful they all are.");
+				frame.descriptionLabel:Show();
+				StartCoroutine("ProcessAuctions", ProcessAuctions);
+			end
+		end);
+		hooksecurefunc("AuctionFrameTab_OnClick", function(self)
+			-- print("AuctionFrameTab_OnClick", self:GetID());
+			if self:GetID() == n then
+				--Default AH textures
+				AuctionFrameTopLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-TopLeft");
+				AuctionFrameTop:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-Top");
+				AuctionFrameTopRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-TopRight");
+				AuctionFrameBotLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotLeft");
+				AuctionFrameBot:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-Bot");
+				AuctionFrameBotRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotRight");
+				StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
+				if not self.InitialProcess then
+					StartCoroutine("ProcessAuctionData", ProcessAuctionData);
+					self.InitialProcess = true;
+				else
+					window:Show();
+				end
+				
+				frame:Show();
+			else
+				frame:Hide();
+			end
+		end);
+	end
+end
+
 -- Slash Command List
 SLASH_AllTheThings1 = "/allthethings";
 SLASH_AllTheThings2 = "/things";
@@ -12093,536 +12695,11 @@ app.events.PLAYER_LOGIN = function()
 end
 app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionUI" then
+		app.Blizzard_AuctionUILoaded = true;
 		app:UnregisterEvent("ADDON_LOADED");
-		
-		-- Create the Auction Tab for ATT.
-		local n = AuctionFrame.numTabs + 1;
-		local button = CreateFrame("Button", "AuctionFrameTab" .. n, AuctionFrame, "AuctionTabTemplate");
-		button:SetID(n);
-		button:SetText(L["AUCTION_TAB"]);
-		button:SetPoint("LEFT", _G["AuctionFrameTab" .. n-1], "RIGHT", -8, 0);
-		
-		PanelTemplates_SetNumTabs (AuctionFrame, n);
-		PanelTemplates_EnableTab  (AuctionFrame, n);
-		
-		-- Create the Auction Frame
-		local frame = CreateFrame("FRAME", app:GetName() .. "-AuctionFrame", AuctionFrame );
-		frame:SetPoint("TOPLEFT", AuctionFrame, 19, -67);
-		frame:SetPoint("BOTTOMRIGHT", AuctionFrame, -8, 36);
-		
-		-- Create the movable Auction Data window.
-		local window = app:GetWindow("AuctionData");
-		window.shouldFullRefresh = true;
-		window:SetParent(AuctionFrame);
-		window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
-		window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
-		window.data = {
-			["text"] = "Auction Module",
-			["visible"] = true,
-			["back"] = 1,
-			["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01",
-			["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
-			["options"] = {
-				{
-					["text"] = "Perform a Full Scan",
-					["icon"] = "INTERFACE/ICONS/INV_DARKMOON_EYE",
-					["description"] = "Click this button to perform a full scan of the auction house. This information will appear within this window and clear out the existing data.",
-					["visible"] = true,
-					["OnClick"] = function() 
-						if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
-					
-						-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
-						if select(2, CanSendAuctionQuery()) then
-							-- Disable the button and register for the event.
-							frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
-							frame.descriptionLabel:SetText("Full Scan request sent.\n\nPlease wait while we wait for the server to respond.");
-							frame.descriptionLabel:Show();
-							QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
-						end
-					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
-				},
-				{
-					["text"] = "Toggle Debug Mode",
-					["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
-					["description"] = "Click this button to toggle debug mode to show everything regardless of filters!",
-					["visible"] = true,
-					["OnClick"] = function() 
-						app.Settings:ToggleDebugMode();
-					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-						if app.Settings:Get("DebugMode") then
-							-- Novaplane made me do it
-							data.trackable = true;
-							data.saved = true;
-						else
-							data.trackable = nil;
-							data.saved = nil;
-						end
-					end,
-				},
-				{
-					["text"] = "Toggle Account Mode",
-					["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
-					["description"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
-					["visible"] = true,
-					["OnClick"] = function() 
-						app.Settings:ToggleAccountMode();
-					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-						if app.Settings:Get("AccountMode") then
-							data.trackable = true;
-							data.saved = true;
-						else
-							data.trackable = nil;
-							data.saved = nil;
-						end
-					end,
-				},
-				{
-					["text"] = "Toggle Unobtainable Items",
-					["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
-					["description"] = "Turn this setting on if you want to show Unobtainable items.",
-					["visible"] = true,
-					["OnClick"] = function()
-						local val = app.GetDataMember("UnobtainableItemFilters");
-						val[7] = not val[7];
-						app.Settings:Refresh();
-						app:RefreshData();
-					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-						local val = app.GetDataMember("UnobtainableItemFilters");
-						if val[7] then
-							data.trackable = true;
-							data.saved = true;
-						else
-							data.trackable = nil;
-							data.saved = nil;
-						end
-					end,
-				},
-			},
-			["g"] = {}
-		};
-		for i,option in ipairs(window.data.options) do
-			table.insert(window.data.g, option);
+		if app.Settings:GetTooltipSetting("Auto:AH") then
+			app:OpenAuctionModule();
 		end
-		window:Hide();
-		
-		-- Cache some functions to make them faster
-		local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
-		local origSideDressUpFrameHide, origSideDressUpFrameShow = SideDressUpFrame.Hide, SideDressUpFrame.Show;
-		SideDressUpFrame.Hide = function(...)
-			origSideDressUpFrameHide(...);
-			window:ClearAllPoints();
-			window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
-			window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
-		end
-		SideDressUpFrame.Show = function(...)
-			origSideDressUpFrameShow(...);
-			window:ClearAllPoints();
-			window:SetPoint("LEFT", SideDressUpFrame, "RIGHT", 0, 0);
-			window:SetPoint("TOP", AuctionFrame, "TOP", 0, -10);
-			window:SetPoint("BOTTOM", AuctionFrame, "BOTTOM", 0, 10);
-		end
-		
-		-- The ALL THE THINGS Epic Logo!
-		local f = frame:CreateTexture(nil, "ARTWORK");
-		f:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
-		f:SetPoint("BOTTOMLEFT", frame, "TOPLEFT", 72, 0);
-		f:SetSize(36, 36);
-		f:SetScale(0.8);
-		f:Show();
-		frame.logo = f;
-
-		f = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-		f:SetPoint("TOPLEFT", frame.logo, "TOPRIGHT", 4, -2);
-		f:SetJustifyH("LEFT");
-		f:SetText(L["TITLE"]);
-		f:SetScale(1.5);
-		f:Show();
-		frame.title = f;
-		
-		f = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-		f:SetPoint("CENTER", frame.title, "CENTER", 0, 0);
-		f:SetPoint("RIGHT", frame, "RIGHT", -8, 0);
-		f:SetJustifyH("RIGHT");
-		f:SetText("Auction House Module");
-		f:Show();
-		frame.moduletitle = f;
-		
-		-- Settings Button
-		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
-		f:SetPoint("TOPLEFT", frame, "BOTTOMLEFT", 160, 0);
-		f:SetText("Settings");
-		f:SetWidth(120);
-		f:SetHeight(22);
-		f:RegisterForClicks("AnyUp");
-		f:SetScript("OnClick", function() 
-			-- Open the Settings Menu
-			if InterfaceOptionsFrame:IsVisible() then
-				InterfaceOptionsFrame_Show();
-			else
-				InterfaceOptionsFrame_OpenToCategory(app:GetName());
-				InterfaceOptionsFrame_OpenToCategory(app:GetName());
-			end
-		end);
-		f:SetATTTooltip("Click this button to toggle the settings menu.\n\nThe results displayed in this window will be filtered by your settings.");
-		frame.settingsButton = f;
-		
-		-- Function to Update the State of the Scan button. (Coroutines, do not call manually.)
-		local ObjectTypeMetas = {
-			["criteriaID"] = setmetatable({	-- Achievements
-				["npcID"] = -4,
-				["description"] = "All items that can be used to obtain achievements that you are missing are displayed here.",
-				["priority"] = 1,
-			}, app.BaseNPC),
-			["s"] = setmetatable({	-- Appearances
-				["npcID"] = -10032,
-				["description"] = "All appearances that you need are displayed here.",
-				["priority"] = 2,
-			}, app.BaseNPC),
-			["mountID"] = setmetatable({	-- Mounts
-				["filterID"] = 100,
-				["description"] = "All mounts that you have not collected yet are displayed here.",
-				["priority"] = 3,
-			}, app.BaseFilter),
-			["speciesID"] = setmetatable({	-- Pets
-				["npcID"] = -25,
-				["description"] = "All pets that you have not collected yet are displayed here.",
-				["priority"] = 4,
-			}, app.BaseNPC),
-			["recipeID"] = setmetatable({	-- Recipes
-				["filterID"] = 200,
-				["description"] = "All recipes that you have not collected yet are displayed here.",
-				["priority"] = 6,
-			}, app.BaseFilter),
-			["reagentID"] = {	-- Reagents
-				["text"] = "Reagents",
-				["icon"] = "Interface/ICONS/INV_Enchant_DustIllusion",
-				["description"] = "All items that can be used to craft an item using a profession on your account.",
-				["priority"] = 5,
-			},
-			["itemID"] = {	-- Non-Collectible Items
-				["text"] = "Non-Collectible Items",
-				["icon"] = "Interface/ICONS/ACHIEVEMENT_GUILDPERK_BARTERING",
-				["description"] = "All items that can be used to earn other collectible items, but are not necessarily collectible themselves are displayed here.",
-				["priority"] = 7,
-			},
-		};
-		local UpdateScanButtonState = function()
-			repeat
-				if select(2, CanSendAuctionQuery()) then
-					frame.scanButton:Enable();
-					return true;
-				else
-					frame.scanButton:Disable();
-					for i=0,60,1 do coroutine.yield(); end
-				end
-			until not frame:IsVisible();
-		end
-		local ProcessAuctionData = function()
-			-- If we have no auction data, then simply return now.
-			if not AllTheThingsAuctionData then return false; end
-			local count = #AllTheThingsAuctionData;
-			if count < 1 then return false; end
-			
-			-- Wait a second!
-			for i=0,60,1 do coroutine.yield(); end
-			
-			-- Search the ATT Database for information related to the auction links (items, species, etc)
-			local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {};
-			for i,itemLink in ipairs(AllTheThingsAuctionData) do
-				searchResults = SearchForLink(itemLink);
-				if searchResults and #searchResults > 0 then
-					searchResult = searchResults[1];
-					key = searchResult.key;
-					if key == "npcID" then
-						if searchResult.itemID then
-							key = "itemID";
-						end
-					end
-					value = searchResult[key];
-					keys = searchResultsByKey[key];
-					
-					-- Make sure that the key type is represented.
-					if not keys then
-						keys = {};
-						searchResultsByKey[key] = keys;
-					end
-					
-					-- First time this key value was used.
-					data = keys[value];
-					if not data then
-						data = CreateObject(searchResult);
-						for i=2,#searchResults,1 do
-							MergeObject(data, CreateObject(searchResults[i]));
-						end
-						if data.key == "npcID" then setmetatable(data, app.BaseItem); end
-						data.auctions = {};
-						keys[value] = data;
-					end
-					table.insert(data.auctions, itemLink);
-				end
-			end
-			
-			-- Move all achievementID-based items into criteriaID
-			if searchResultsByKey.achievementID then
-				local criteria = searchResultsByKey.criteriaID;
-				if criteria then
-					for key,entry in pairs(searchResultsByKey.achievementID) do
-						criteria[key] = entry;
-					end
-				else
-					searchResultsByKey.criteriaID = searchResultsByKey.achievementID;
-				end
-				searchResultsByKey.achievementID = nil;
-			end
-			
-			-- Apply a sub-filter to items with spellID-based identifiers.
-			if searchResultsByKey.spellID then
-				local filteredItems = {};
-				for key,entry in pairs(searchResultsByKey.spellID) do
-					if entry.filterID then
-						local filterData = filteredItems[entry.filterID];
-						if not filterData then
-							filterData = {};
-							filteredItems[entry.filterID] = filterData;
-						end
-						filterData[key] = entry;
-					else
-						print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or "???") .. " is missing a filterID?");
-					end
-				end
-				
-				if filteredItems[100] then searchResultsByKey.mountID = filteredItems[100]; end	-- Mounts
-				if filteredItems[200] then searchResultsByKey.recipeID = filteredItems[200]; end	-- Recipes
-				searchResultsByKey.spellID = nil;
-			end
-			
-			if searchResultsByKey.s then
-				local filteredItems = {};
-				local cachedS = searchResultsByKey.s;
-				searchResultsByKey.s = {};
-				for sourceID,entry in pairs(cachedS) do
-					if entry.f then
-						local filterData = filteredItems[entry.f];
-						if not filterData then
-							filterData = setmetatable({ ["filterID"] = entry.f, ["g"] = {} }, app.BaseFilter);
-							filteredItems[entry.f] = filterData;
-							table.insert(searchResultsByKey.s, filterData);
-						end
-						table.insert(filterData.g, entry);
-					end
-				end
-				for f,entry in pairs(filteredItems) do
-					table.sort(entry.g, function(a,b)
-						return a.u and not b.u;
-					end);
-				end
-			end
-			
-			-- Process the Non-Collectible Items for Reagents
-			local reagentCache = app.GetDataMember("Reagents");
-			if reagentCache and searchResultsByKey.itemID then
-				local cachedItems = searchResultsByKey.itemID;
-				searchResultsByKey.itemID = {};
-				searchResultsByKey.reagentID = {};
-				for itemID,entry in pairs(cachedItems) do
-					if reagentCache[itemID] then
-						searchResultsByKey.reagentID[itemID] = entry;
-						if not entry.g then entry.g = {}; end
-						for itemID2,count in pairs(reagentCache[itemID][2]) do
-							local searchResults = app.SearchForField("itemID", itemID2);
-							if searchResults and #searchResults > 0 then
-								table.insert(entry.g, CloneData(searchResults[1]));
-							end
-						end
-					else
-						-- Push it back into the itemID table
-						searchResultsByKey.itemID[itemID] = entry;
-					end
-				end
-			end
-			
-			-- Insert Buttons into the groups.
-			wipe(window.data.g);
-			for i,option in ipairs(window.data.options) do
-				table.insert(window.data.g, option);
-			end
-			
-			-- Display Test for Raw Data + Filtering
-			for key, searchResults in pairs(searchResultsByKey) do
-				local subdata = {};
-				subdata.visible = true;
-				if ObjectTypeMetas[key] then
-					setmetatable(subdata, { __index = ObjectTypeMetas[key] });
-				else
-					subdata.description = "Container for '" .. key .. "' object types.";
-					subdata.text = key;
-				end
-				subdata.g = {};
-				for i,j in pairs(searchResults) do
-					table.insert(subdata.g, j);
-				end
-				table.insert(window.data.g, subdata);
-			end
-			table.sort(window.data.g, function(a, b)
-				return (b.priority or 0) > (a.priority or 0);
-			end);
-			BuildGroups(window.data, window.data.g);
-			UpdateGroups(window.data, window.data.g);
-			window:Show();
-			window:Update();
-			
-			-- Change the message!
-			frame.descriptionLabel:SetText("Got the datas!\n\nShift Left click into the search bar on the Browse tab to look for items!");
-			frame.descriptionLabel:Show();
-		end
-		local ProcessAuctions = function()
-			-- Gather the Auctions
-			AllTheThingsAuctionData = {};
-			app.CurrentAuctionIndex = 1;
-			if app.CurrentAuctionIndex <= app.CurrentAuctionTotal then
-				local iter = 0;
-				repeat
-					-- Process the Auction
-					local link = _GetAuctionItemLink("list", app.CurrentAuctionIndex);
-					if link then
-						table.insert(AllTheThingsAuctionData, link);
-					else
-						local name, texture, count, quality, canUse, level, levelColHeader, minBid,
-							minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
-							ownerFullName, saleStatus, itemID, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
-						if itemID and itemID > 0 and saleStatus == 0 then
-							table.insert(AllTheThingsAuctionData, "item:" .. itemID);
-						end
-					end
-					
-					-- Increment the index and check the iteration variable.
-					iter = iter + 1;
-					if iter >= 10000 then
-						coroutine.yield();
-						iter = 0;
-					end
-					app.CurrentAuctionIndex = app.CurrentAuctionIndex + 1;
-				until app.CurrentAuctionIndex > app.CurrentAuctionTotal;
-			else
-				return false;
-			end
-			
-			-- Process the items
-			app.CurrentAuctionIndex = 0;
-			app.CurrentAuctionTotal = 0;
-			StartCoroutine("ProcessAuctionData", ProcessAuctionData);
-		end
-		
-		-- Scan Button
-		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
-		f:SetPoint("TOPLEFT", frame.settingsButton, "TOPRIGHT", 2, 0);
-		f:SetPoint("BOTTOMLEFT", frame.settingsButton, "BOTTOMRIGHT", 2, 0);
-		f:SetText("Scan");
-		f:SetWidth(120);
-		f:RegisterForClicks("AnyUp");
-		f:SetScript("OnClick", function()
-			if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
-		
-			-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
-			local CanQuery, CanQueryAll = CanSendAuctionQuery();
-			if CanQueryAll then
-				-- Disable the button and register for the event.
-				frame.scanButton:Disable();
-				frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
-				frame.descriptionLabel:SetText("Full Scan request sent.\n\nPlease wait while we wait for the server to respond.");
-				frame.descriptionLabel:Show();
-				QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
-			else
-				return false;
-			end
-			
-			-- Update the Scan Button State
-			StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
-		end);
-		f:SetATTTooltip("Click this button to scan the auction house for collectible Things.\n\nIf you have \"Live Scan\" checked, this will do a scan through common collectible categories using Live data rather than a more efficient Full Scan.\n\nFull Scans have an internal 15 minute cooldown if you invalidate the cache by reloading your UI.");
-		frame.scanButton = f;
-		f = frame.scanButton:CreateTexture(nil, "BORDER");
-		f:SetPoint("TOPRIGHT", frame.scanButton, "TOPLEFT", 6, 1);
-		f:SetTexture("Interface\\FrameGeneral\\UI-Frame");
-		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
-		f:SetSize(13, 25);
-		f:Show();
-		f = frame.scanButton:CreateTexture(nil, "BORDER");
-		f:SetPoint("TOPLEFT", frame.scanButton, "TOPRIGHT", -6, 1);
-		f:SetTexture("Interface\\FrameGeneral\\UI-Frame");
-		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
-		f:SetSize(13, 25);
-		f:Show();
-		
-		-- Close Button
-		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
-		f:SetPoint("TOPRIGHT", frame, "BOTTOMRIGHT", 0, 0);
-		f:SetText("Close");
-		f:SetWidth(80);
-		f:SetHeight(22);
-		f:RegisterForClicks("AnyUp");
-		f:SetScript("OnClick", CloseAuctionHouse);
-		frame.closeButton = f;
-		f = frame.closeButton:CreateTexture(nil, "BORDER");
-		f:SetPoint("TOPRIGHT", frame.closeButton, "TOPLEFT", 5, 1);
-		f:SetTexture("Interface\\FrameGeneral\\UI-Frame");
-		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
-		f:SetSize(13, 25);
-		f:Show();
-		
-		f = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-		f:SetPoint("CENTER", frame, "CENTER", 0, 0);
-		f:SetText("No Auction Data.\n\nPress 'Scan' to ask the server for information.");
-		f:SetTextColor(1, 1, 1, 1);
-		f:SetJustifyH("CENTER");
-		f:Show();
-		frame.descriptionLabel = f;
-		
-		-- Register for Events [Only when requests sent by ATT]
-		frame:SetScript("OnEvent", function(self, e, ...)
-			local numItems = GetNumAuctionItems("list");
-			if numItems > 0 then
-				-- Unregister, then begin processing the Auction Item List
-				self:UnregisterEvent("AUCTION_ITEM_LIST_UPDATE");
-				app.CurrentAuctionTotal = numItems;
-				app.CurrentAuctionIndex = 0;
-				frame.descriptionLabel:SetText("Scan data received. Found " .. numItems .. " auctions.\n\nPlease wait while we determine how useful they all are.");
-				frame.descriptionLabel:Show();
-				StartCoroutine("ProcessAuctions", ProcessAuctions);
-			end
-		end);
-		hooksecurefunc("AuctionFrameTab_OnClick", function(self)
-			-- print("AuctionFrameTab_OnClick", self:GetID());
-			if self:GetID() == n then
-				--Default AH textures
-				AuctionFrameTopLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-TopLeft");
-				AuctionFrameTop:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-Top");
-				AuctionFrameTopRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-TopRight");
-				AuctionFrameBotLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotLeft");
-				AuctionFrameBot:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-Bot");
-				AuctionFrameBotRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotRight");
-				StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
-				if not self.InitialProcess then
-					StartCoroutine("ProcessAuctionData", ProcessAuctionData);
-					self.InitialProcess = true;
-				else
-					window:Show();
-				end
-				
-				frame:Show();
-			else
-				frame:Hide();
-			end
-		end);
 	end
 end
 app.events.ACTIVE_TALENT_GROUP_CHANGED = function()

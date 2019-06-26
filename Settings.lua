@@ -112,6 +112,7 @@ local TooltipSettingsBase = {
 	__index = {
 		["Auto:MiniList"] = true,
 		["Auto:ProfessionList"] = true,
+		["Auto:AH"] = true,
 		["Celebrate"] = true,
 		["Channel"] = "master",
 		["ClassRequirements"] = true,
@@ -2781,6 +2782,7 @@ end);
 OpenRaidAssistantAutomatically:SetATTTooltip("Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra");
 OpenRaidAssistantAutomatically:SetPoint("TOPLEFT", OpenProfessionListAutomatically, "BOTTOMLEFT", 0, 4);
 
+
 local OpenWorldQuestsListAutomatically = settings:CreateCheckBox("Automatically Open the World Quests List",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"));
@@ -2800,6 +2802,28 @@ function(self)
 end);
 ShowCurrenciesInWorldQuestsList:SetATTTooltip("Enable this option if you want to treat currencies awarded by World Quests as if all of the Things they are used to acquire counted as +1 in the list.");
 ShowCurrenciesInWorldQuestsList:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 4, 4);
+
+local ShowAuctionHouseModuleTab = settings:CreateCheckBox("Show the Auction House Module Tab",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:AH"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:AH", self:GetChecked());
+	if app.Blizzard_AuctionUILoaded then
+		if app.AuctionModuleTabID then
+			if self:GetChecked() then
+				PanelTemplates_EnableTab(AuctionFrame, app.AuctionModuleTabID);
+				if app.OpenAuctionModule then app:OpenAuctionModule(); end
+			else
+				PanelTemplates_DisableTab(AuctionFrame, app.AuctionModuleTabID);
+			end
+		elseif app.OpenAuctionModule then
+			app:OpenAuctionModule();
+		end
+	end
+end);
+ShowAuctionHouseModuleTab:SetATTTooltip("Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.");
+ShowAuctionHouseModuleTab:SetPoint("TOPLEFT", ShowCurrenciesInWorldQuestsList, "BOTTOMLEFT", -4, 4);
 
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CelebrationsLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -50, -8);
