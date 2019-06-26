@@ -1598,7 +1598,7 @@ _.Craftables =
 					i(8198),	-- Turtle Scale Bracers
 				}),
 				n(-327, {	-- Hands
-					un(8, i(19157)),	-- Chromatic Gauntlets
+					i(19157),	-- Chromatic Gauntlets
 					un(8, i(22666)),	-- Icy Scale Gauntlets
 					i(20480),	-- Spitfire Gauntlets
 					i(20477),	-- Sandstalker Gauntlets
