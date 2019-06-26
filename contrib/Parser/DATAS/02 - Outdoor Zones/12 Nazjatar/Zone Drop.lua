@@ -13,6 +13,7 @@ _.Zones =
 			]]--
 		--	Recipes
 			i(169497),	-- Recipe: Superior Battle Potion of Intellect (Rank 3)
+			i(169498),  -- Recipe: Superior Battle Potion of Stamina (Rank 3)
 		--	Gear
 			i(170199),	-- Zanj'ir Weapon Rack
 			i(170476),	-- Underlight Sealamp
