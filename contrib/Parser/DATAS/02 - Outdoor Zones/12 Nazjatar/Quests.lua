@@ -852,6 +852,11 @@ _.Zones =
 				["crs"] = { 154913 },	-- Shadowspine Lurker
 				["coord"] = { 42.2, 14.0, 1355 },
 			}),
+			i(169640, {	-- Mottled Hydra Scale
+				["questID"] = 56463,
+				["crs"] = { 154916 },	-- Ravenous Scalespawn
+				["coord"] = { 29.6, 49.7, 1355 },
+			}),
 			q(55529, {	-- No Backs
 				["qg"] = 152084,	-- Mrrl
 				["races"] = ALLIANCE_ONLY,
