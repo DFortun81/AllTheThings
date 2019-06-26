@@ -3404,6 +3404,8 @@ app.BaseAzeriteEssence = {
 			return t.link;
 		elseif key == "icon" then
 			return t.info.icon;
+		elseif key == "name" then
+			return t.info.name;
 		elseif key == "link" then
 			return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, t.info.rank or 0);
 		elseif key == "info" then
@@ -8317,6 +8319,30 @@ function app:GetDataCache()
 			db.collectible = false;
 			table.insert(g, db);
 		end
+		
+		-- Azerite Essences
+		db = {};
+		db.g = {};
+		db.OnUpdate = function(self)
+			local essences = C_AzeriteEssence.GetEssences();
+			if essences and #essences > 0 then
+				local cache = self.g;
+				table.wipe(cache);
+				for i,essence in ipairs(essences) do
+					tinsert(cache, app.CreateAzeriteEssence(essence.ID));
+				end
+				table.sort(cache, function(a, b)
+					return a.name < b.name;
+				end);
+				self.g = cache;
+				self.OnUpdate = nil;
+			end
+		end;
+		db.OnUpdate(db);
+		db.text = "Azerite Essences";
+		db.icon = "Interface\\ICONS\\Inv_heartofazeroth";
+		db.description = "Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.\n\nEssences must be learned at the Heart Forge, but can be swapped out in any Rest Area.";
+		table.insert(g, db);
 		
 		-- Achievements
 		if app.Categories.Achievements then
