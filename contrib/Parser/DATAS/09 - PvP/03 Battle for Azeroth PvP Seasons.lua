@@ -1,5 +1,5 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R		 --
+--     P L A Y E R   V S   P L A Y E R			--
 -----------------------------------------------
 _.PVP =
 {
@@ -2069,38 +2069,431 @@ _.PVP =
 		n(-666, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 			n(-658, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
+					-- Horde
+					i(169757),	-- Notorious Aspirant's Blade
+					i(169755),	-- Notorious Aspirant's Cutter
+					i(169749),	-- Notorious Aspirant's Gavel
+					i(169761),	-- Notorious Aspirant's Greatsword
+					i(169747),	-- Notorious Aspirant's Longbow
+					i(169759),	-- Notorious Aspirant's Pike
+					i(169751),	-- Notorious Aspirant's Pummeler
+					i(169743),	-- Notorious Aspirant's Reprieve
+					i(169737),	-- Notorious Aspirant's Shanker
+					i(167521),	-- Notorious Aspirant's Shield Wall
+					i(169745),	-- Notorious Aspirant's Shield Wall
+					i(169753),	-- Notorious Aspirant's Slicer
+					i(169736),	-- Notorious Aspirant's Stabber
+					i(169741),	-- Notorious Aspirant's Staff
+					i(169739),	-- Notorious Aspirant's Wand
+					i(170082),	-- Notorious Aspirant's Warglaive
+					-- Alliance
+					i(169756),	-- Notorious Aspirant's Blade
+					i(169754),	-- Notorious Aspirant's Cutter
+					i(169748),	-- Notorious Aspirant's Gavel
+					i(169760),	-- Notorious Aspirant's Greatsword
+					i(169746),	-- Notorious Aspirant's Longbow
+					i(169758),	-- Notorious Aspirant's Pike
+					i(169750),	-- Notorious Aspirant's Pummeler
+					i(169742),	-- Notorious Aspirant's Reprieve
+					i(169735),	-- Notorious Aspirant's Shanker
+					i(167522),	-- Notorious Aspirant's Shield Wall
+					i(169744),	-- Notorious Aspirant's Shield Wall
+					i(169752),	-- Notorious Aspirant's Slicer
+					i(169734),	-- Notorious Aspirant's Stabber
+					i(169740),	-- Notorious Aspirant's Staff
+					i(169738),	-- Notorious Aspirant's Wand
+					i(170080),	-- Notorious Aspirant's Warglaive
 				}),
 				n(-322, {	-- Back
+					-- Horde
+					i(167532),	-- Notorious Aspirant's Cape
+					i(167531),	-- Notorious Aspirant's Drape
+					i(167530),	-- Notorious Aspirant's Greatcloak
+					i(167529),	-- Notorious Aspirant's Shawl
+					-- Alliance
+					i(167536),	-- Notorious Aspirant's Cape
+					i(167535),	-- Notorious Aspirant's Drape
+					i(167534),	-- Notorious Aspirant's Greatcloak
+					i(167533),	-- Notorious Aspirant's Shawl
 				}),
 				n(-43, {	-- Cloth
+					-- Horde
+					i(167464),	-- Notorious Aspirant's Silk Cord
+					i(167463),	-- Notorious Aspirant's Silk Cuffs
+					i(167459),	-- Notorious Aspirant's Silk Gloves
+					i(167460),	-- Notorious Aspirant's Silk Hood
+					i(167461),	-- Notorious Aspirant's Silk Leggings
+					i(167462),	-- Notorious Aspirant's Silk Mantle
+					i(167457),	-- Notorious Aspirant's Silk Robe
+					i(167458),	-- Notorious Aspirant's Silk Treads
+					-- Alliance
+					i(167514),	-- Notorious Aspirant's Silk Cord
+					i(167517),	-- Notorious Aspirant's Silk Cuffs
+					i(167500),	-- Notorious Aspirant's Silk Gloves
+					i(167502),	-- Notorious Aspirant's Silk Hood
+					i(167506),	-- Notorious Aspirant's Silk Leggings
+					i(167511),	-- Notorious Aspirant's Silk Mantle
+					i(167490),	-- Notorious Aspirant's Silk Robe
+					i(167495),	-- Notorious Aspirant's Silk Treads
 				}),
 				n(-44, {	-- Leather
+					-- Horde
+					i(167471),	-- Notorious Aspirant's Leather Belt
+					i(167472),	-- Notorious Aspirant's Leather Bindings
+					i(167466),	-- Notorious Aspirant's Leather Boots
+					i(167467),	-- Notorious Aspirant's Leather Gloves
+					i(167468),	-- Notorious Aspirant's Leather Helm
+					i(167469),	-- Notorious Aspirant's Leather Legguards
+					i(167470),	-- Notorious Aspirant's Leather Spaulders
+					i(167465),	-- Notorious Aspirant's Leather Tunic
+					-- Alliance
+					i(167516),	-- Notorious Aspirant's Leather Belt
+					i(167520),	-- Notorious Aspirant's Leather Bindings
+					i(167497),	-- Notorious Aspirant's Leather Boots
+					i(167498),	-- Notorious Aspirant's Leather Gloves
+					i(167504),	-- Notorious Aspirant's Leather Helm
+					i(167508),	-- Notorious Aspirant's Leather Legguards
+					i(167509),	-- Notorious Aspirant's Leather Spaulders
+					i(167493),	-- Notorious Aspirant's Leather Tunic
+
+
 				}),
 				n(-45, {	-- Mail
+					-- Horde
+					i(167480),	-- Notorious Aspirant's Chain Armbands
+					i(167473),	-- Notorious Aspirant's Chain Armor
+					i(167475),	-- Notorious Aspirant's Chain Gauntlets
+					i(167476),	-- Notorious Aspirant's Chain Helm
+					i(167477),	-- Notorious Aspirant's Chain Leggings
+					i(167474),	-- Notorious Aspirant's Chain Sabatons
+					i(167478),	-- Notorious Aspirant's Chain Spaulders
+					i(167479),	-- Notorious Aspirant's Chain Waistguard
+					-- Alliance
+					i(167519),	-- Notorious Aspirant's Chain Armbands
+					i(167492),	-- Notorious Aspirant's Chain Armor
+					i(167501),	-- Notorious Aspirant's Chain Gauntlets
+					i(167503),	-- Notorious Aspirant's Chain Helm
+					i(167507),	-- Notorious Aspirant's Chain Leggings
+					i(167496),	-- Notorious Aspirant's Chain Sabatons
+					i(167512),	-- Notorious Aspirant's Chain Spaulders
+					i(167515),	-- Notorious Aspirant's Chain Waistguard
 				}),
 				n(-46, {	-- Plate
+					-- Horde
+					i(167488),	-- Notorious Aspirant's Plate Armguards
+					i(167482),	-- Notorious Aspirant's Plate Chestpiece
+					i(167484),	-- Notorious Aspirant's Plate Gauntlets
+					i(167487),	-- Notorious Aspirant's Plate Girdle
+					i(167481),	-- Notorious Aspirant's Plate Helm
+					i(167485),	-- Notorious Aspirant's Plate Legguards
+					i(167486),	-- Notorious Aspirant's Plate Pauldrons
+					i(167483),	-- Notorious Aspirant's Plate Warboots
+					-- Alliance
+					i(167518),	-- Notorious Aspirant's Plate Armguards
+					i(167491),	-- Notorious Aspirant's Plate Chestpiece
+					i(167499),	-- Notorious Aspirant's Plate Gauntlets
+					i(167513),	-- Notorious Aspirant's Plate Girdle
+					i(167489),	-- Notorious Aspirant's Plate Helm
+					i(167505),	-- Notorious Aspirant's Plate Legguards
+					i(167510),	-- Notorious Aspirant's Plate Pauldrons
+					i(167494),	-- Notorious Aspirant's Plate Warboots
 				}),
 				n(-385, {	-- Finger
+					i(167523),	-- Notorious Aspirant's Ring
+					i(167524),	-- Notorious Aspirant's Band
 				}),
 				n(-386, {	-- Trinkets
+					i(167528),	-- Notorious Aspirant's Badge
+					i(167526),	-- Notorious Aspirant's Emblem
+					i(167527),	-- Notorious Aspirant's Insignia
+					i(167525),	-- Notorious Aspirant's Medallion
 				}),
 			}),
 			n(-659, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
+					-- Horde
+					i(169724),	-- Notorious Gladiator's Bonegrinder
+					i(169721),	-- Notorious Gladiator's Bonegrinder
+					i(169704),	-- Notorious Gladiator's Chopper
+					i(171161),	-- Notorious Gladiator's Claw
+					i(169731),	-- Notorious Gladiator's Cutter
+					i(169728),	-- Notorious Gladiator's Cutter
+					i(169732),	-- Notorious Gladiator's Gavel
+					i(169717),	-- Notorious Gladiator's Longbow
+					i(169714),	-- Notorious Gladiator's Pike
+					i(171157),	-- Notorious Gladiator's Pike
+					i(169705),	-- Notorious Gladiator's Pummeler
+					i(169722),	-- Notorious Gladiator's Reprieve
+					i(169708),	-- Notorious Gladiator's Shanker
+					i(167364),	-- Notorious Gladiator's Shield Wall
+					i(169706),	-- Notorious Gladiator's Slicer
+					i(169726),	-- Notorious Gladiator's Stabber
+					i(171154),	-- Notorious Gladiator's Staff
+					i(169719),	-- Notorious Gladiator's Wand
+					i(169707),	-- Notorious Gladiator's Warglaive
+					-- Alliance
+					i(169720),	-- Notorious Gladiator's Bonegrinder
+					i(169725),	-- Notorious Gladiator's Bonegrinder
+					i(169712),	-- Notorious Gladiator's Chopper
+					i(171160),	-- Notorious Gladiator's Claw
+					i(169729),	-- Notorious Gladiator's Cutter
+					i(169730),	-- Notorious Gladiator's Cutter
+					i(169733),	-- Notorious Gladiator's Gavel
+					i(169716),	-- Notorious Gladiator's Longbow
+					i(169715),	-- Notorious Gladiator's Pike
+					i(171156),	-- Notorious Gladiator's Pike
+					i(169711),	-- Notorious Gladiator's Pummeler
+					i(169723),	-- Notorious Gladiator's Reprieve
+					i(169709),	-- Notorious Gladiator's Shanker
+					i(167365),	-- Notorious Gladiator's Shield Wall
+					i(169713),	-- Notorious Gladiator's Slicer
+					i(169727),	-- Notorious Gladiator's Stabber
+					i(171155),	-- Notorious Gladiator's Staff
+					i(169718),	-- Notorious Gladiator's Wand
+					i(169710),	-- Notorious Gladiator's Warglaive
 				}),
 				n(-322, {	-- Back
+					-- Horde
+					i(167381),	-- Notorious Gladiator's Cloak
+					i(167369),	-- Notorious Gladiator's Cape
+					i(167368),	-- Notorious Gladiator's Drape
+					i(167367),	-- Notorious Gladiator's Greatcloak
+					i(167366),	-- Notorious Gladiator's Shawl
+					-- Alliance
+					i(167382),	-- Notorious Gladiator's Cloak
+					i(167373),	-- Notorious Gladiator's Cape
+					i(167372),	-- Notorious Gladiator's Drape
+					i(167371),	-- Notorious Gladiator's Greatcloak
+					i(167370),	-- Notorious Gladiator's Shawl
 				}),
 				n(-43, {	-- Cloth
+					-- Horde
+					i(167303),	-- Notorious Gladiator's Silk Amice
+					i(167425),	-- Notorious Gladiator's Silk Armor
+					i(167304),	-- Notorious Gladiator's Silk Bracers
+					i(167401),	-- Notorious Gladiator's Silk Cap
+					i(167417),	-- Notorious Gladiator's Silk Chestwrap
+					i(167241),	-- Notorious Gladiator's Silk Cord
+					i(167393),	-- Notorious Gladiator's Silk Cover
+					i(167301),	-- Notorious Gladiator's Silk Cowl
+					i(167240),	-- Notorious Gladiator's Silk Cuffs
+					i(167433),	-- Notorious Gladiator's Silk Epaulets
+					i(167236),	-- Notorious Gladiator's Silk Gloves
+					i(167300),	-- Notorious Gladiator's Silk Handguards
+					i(167385),	-- Notorious Gladiator's Silk Helm
+					i(167237),	-- Notorious Gladiator's Silk Hood
+					i(167238),	-- Notorious Gladiator's Silk Leggings
+					i(167239),	-- Notorious Gladiator's Silk Mantle
+					i(167298),	-- Notorious Gladiator's Silk Raiment
+					i(167234),	-- Notorious Gladiator's Silk Robe
+					i(167305),	-- Notorious Gladiator's Silk Sash
+					i(167449),	-- Notorious Gladiator's Silk Shoulderguards
+					i(167441),	-- Notorious Gladiator's Silk Shoulderpads
+					i(167299),	-- Notorious Gladiator's Silk Slippers
+					i(167235),	-- Notorious Gladiator's Silk Treads
+					i(167302),	-- Notorious Gladiator's Silk Trousers
+					i(167409),	-- Notorious Gladiator's Silk Vestments
+					-- Alliance
+					i(167352),	-- Notorious Gladiator's Silk Amice
+					i(167429),	-- Notorious Gladiator's Silk Armor
+					i(167358),	-- Notorious Gladiator's Silk Bracers
+					i(167406),	-- Notorious Gladiator's Silk Cap
+					i(167421),	-- Notorious Gladiator's Silk Chestwrap
+					i(167291),	-- Notorious Gladiator's Silk Cord
+					i(167398),	-- Notorious Gladiator's Silk Cover
+					i(167343),	-- Notorious Gladiator's Silk Cowl
+					i(167294),	-- Notorious Gladiator's Silk Cuffs
+					i(167439),	-- Notorious Gladiator's Silk Epaulets
+					i(167277),	-- Notorious Gladiator's Silk Gloves
+					i(167341),	-- Notorious Gladiator's Silk Handguards
+					i(167390),	-- Notorious Gladiator's Silk Helm
+					i(167279),	-- Notorious Gladiator's Silk Hood
+					i(167283),	-- Notorious Gladiator's Silk Leggings
+					i(167288),	-- Notorious Gladiator's Silk Mantle
+					i(167331),	-- Notorious Gladiator's Silk Raiment
+					i(167267),	-- Notorious Gladiator's Silk Robe
+					i(167355),	-- Notorious Gladiator's Silk Sash
+					i(167455),	-- Notorious Gladiator's Silk Shoulderguards
+					i(167447),	-- Notorious Gladiator's Silk Shoulderpads
+					i(167336),	-- Notorious Gladiator's Silk Slippers
+					i(167272),	-- Notorious Gladiator's Silk Treads
+					i(167347),	-- Notorious Gladiator's Silk Trousers
+					i(167413),	-- Notorious Gladiator's Silk Vestments
 				}),
 				n(-44, {	-- Leather
+					-- Horde
+					i(167313),	-- Notorious Gladiator's Leather Armwraps
+					i(167248),	-- Notorious Gladiator's Leather Belt
+					i(167249),	-- Notorious Gladiator's Leather Bindings
+					i(167243),	-- Notorious Gladiator's Leather Boots
+					i(167386),	-- Notorious Gladiator's Leather Cap
+					i(167418),	-- Notorious Gladiator's Leather Chestguard
+					i(167307),	-- Notorious Gladiator's Leather Footguards
+					i(167244),	-- Notorious Gladiator's Leather Gloves
+					i(167308),	-- Notorious Gladiator's Leather Handguards
+					i(167426),	-- Notorious Gladiator's Leather Harness
+					i(167402),	-- Notorious Gladiator's Leather Headpiece
+					i(167245),	-- Notorious Gladiator's Leather Helm
+					i(167309),	-- Notorious Gladiator's Leather Hood
+					i(167410),	-- Notorious Gladiator's Leather Jerkin
+					i(167246),	-- Notorious Gladiator's Leather Legguards
+					i(167311),	-- Notorious Gladiator's Leather Mantle
+					i(167310),	-- Notorious Gladiator's Leather Pants
+					i(167442),	-- Notorious Gladiator's Leather Pauldrons
+					i(167434),	-- Notorious Gladiator's Leather Shoulderguards
+					i(167450),	-- Notorious Gladiator's Leather Shoulderpads
+					i(167394),	-- Notorious Gladiator's Leather Skullguard
+					i(167247),	-- Notorious Gladiator's Leather Spaulders
+					i(167242),	-- Notorious Gladiator's Leather Tunic
+					i(167306),	-- Notorious Gladiator's Leather Vest
+					i(167312),	-- Notorious Gladiator's Leather Waistband
+					-- Alliance
+					i(167361),	-- Notorious Gladiator's Leather Armwraps
+					i(167293),	-- Notorious Gladiator's Leather Belt
+					i(167297),	-- Notorious Gladiator's Leather Bindings
+					i(167274),	-- Notorious Gladiator's Leather Boots
+					i(167392),	-- Notorious Gladiator's Leather Cap
+					i(167424),	-- Notorious Gladiator's Leather Chestguard
+					i(167338),	-- Notorious Gladiator's Leather Footguards
+					i(167275),	-- Notorious Gladiator's Leather Gloves
+					i(167339),	-- Notorious Gladiator's Leather Handguards
+					i(167432),	-- Notorious Gladiator's Leather Harness
+					i(167408),	-- Notorious Gladiator's Leather Headpiece
+					i(167281),	-- Notorious Gladiator's Leather Helm
+					i(167345),	-- Notorious Gladiator's Leather Hood
+					i(167416),	-- Notorious Gladiator's Leather Jerkin
+					i(167285),	-- Notorious Gladiator's Leather Legguards
+					i(167350),	-- Notorious Gladiator's Leather Mantle
+					i(167349),	-- Notorious Gladiator's Leather Pants
+					i(167445),	-- Notorious Gladiator's Leather Pauldrons
+					i(167437),	-- Notorious Gladiator's Leather Shoulderguards
+					i(167453),	-- Notorious Gladiator's Leather Shoulderpads
+					i(167400),	-- Notorious Gladiator's Leather Skullguard
+					i(167286),	-- Notorious Gladiator's Leather Spaulders
+					i(167270),	-- Notorious Gladiator's Leather Tunic
+					i(167334),	-- Notorious Gladiator's Leather Vest
+					i(167357),	-- Notorious Gladiator's Leather Waistband
 				}),
 				n(-45, {	-- Mail
+					-- Horde
+					i(167257),	-- Notorious Gladiator's Chain Armbands
+					i(167250),	-- Notorious Gladiator's Chain Armor
+					i(167314),	-- Notorious Gladiator's Chain Chestguard
+					i(167320),	-- Notorious Gladiator's Chain Clasp
+					i(167387),	-- Notorious Gladiator's Chain Coif
+					i(167451),	-- Notorious Gladiator's Chain Epaulets
+					i(167315),	-- Notorious Gladiator's Chain Footguards
+					i(167252),	-- Notorious Gladiator's Chain Gauntlets
+					i(167316),	-- Notorious Gladiator's Chain Handguards
+					i(167411),	-- Notorious Gladiator's Chain Hauberk
+					i(167395),	-- Notorious Gladiator's Chain Headgear
+					i(167317),	-- Notorious Gladiator's Chain Headpiece
+					i(167253),	-- Notorious Gladiator's Chain Helm
+					i(167254),	-- Notorious Gladiator's Chain Leggings
+					i(167318),	-- Notorious Gladiator's Chain Legguards
+					i(167443),	-- Notorious Gladiator's Chain Mantle
+					i(167435),	-- Notorious Gladiator's Chain Pauldrons
+					i(167251),	-- Notorious Gladiator's Chain Sabatons
+					i(167319),	-- Notorious Gladiator's Chain Shoulderguards
+					i(167403),	-- Notorious Gladiator's Chain Skullcover
+					i(167255),	-- Notorious Gladiator's Chain Spaulders
+					i(167427),	-- Notorious Gladiator's Chain Vest
+					i(167256),	-- Notorious Gladiator's Chain Waistguard
+					i(167321),	-- Notorious Gladiator's Chain Wristguards
+					i(167419),	-- Notorious Gladiator's Chainmail
+					-- Alliance
+					i(167296),	-- Notorious Gladiator's Chain Armbands
+					i(167269),	-- Notorious Gladiator's Chain Armor
+					i(167333),	-- Notorious Gladiator's Chain Chestguard
+					i(167356),	-- Notorious Gladiator's Chain Clasp
+					i(167391),	-- Notorious Gladiator's Chain Coif
+					i(167456),	-- Notorious Gladiator's Chain Epaulets
+					i(167337),	-- Notorious Gladiator's Chain Footguards
+					i(167278),	-- Notorious Gladiator's Chain Gauntlets
+					i(167342),	-- Notorious Gladiator's Chain Handguards
+					i(167415),	-- Notorious Gladiator's Chain Hauberk
+					i(167399),	-- Notorious Gladiator's Chain Headgear
+					i(167344),	-- Notorious Gladiator's Chain Headpiece
+					i(167280),	-- Notorious Gladiator's Chain Helm
+					i(167284),	-- Notorious Gladiator's Chain Leggings
+					i(167348),	-- Notorious Gladiator's Chain Legguards
+					i(167448),	-- Notorious Gladiator's Chain Mantle
+					i(167440),	-- Notorious Gladiator's Chain Pauldrons
+					i(167273),	-- Notorious Gladiator's Chain Sabatons
+					i(167353),	-- Notorious Gladiator's Chain Shoulderguards
+					i(167407),	-- Notorious Gladiator's Chain Skullcover
+					i(167289),	-- Notorious Gladiator's Chain Spaulders
+					i(167431),	-- Notorious Gladiator's Chain Vest
+					i(167292),	-- Notorious Gladiator's Chain Waistguard
+					i(167360),	-- Notorious Gladiator's Chain Wristguards
+					i(167423),	-- Notorious Gladiator's Chainmail
 				}),
 				n(-46, {	-- Plate
+					-- Horde
+					i(167265),	-- Notorious Gladiator's Plate Armguards
+					i(167412),	-- Notorious Gladiator's Plate Armor
+					i(167420),	-- Notorious Gladiator's Plate Breastplate
+					i(167323),	-- Notorious Gladiator's Plate Chestguard
+					i(167259),	-- Notorious Gladiator's Plate Chestpiece
+					i(167428),	-- Notorious Gladiator's Plate Chestplate
+					i(167328),	-- Notorious Gladiator's Plate Clasp
+					i(167261),	-- Notorious Gladiator's Plate Gauntlets
+					i(167264),	-- Notorious Gladiator's Plate Girdle
+					i(167325),	-- Notorious Gladiator's Plate Gloves
+					i(167396),	-- Notorious Gladiator's Plate Greathelm
+					i(167324),	-- Notorious Gladiator's Plate Greaves
+					i(167322),	-- Notorious Gladiator's Plate Headcover
+					i(167258),	-- Notorious Gladiator's Plate Helm
+					i(167326),	-- Notorious Gladiator's Plate Leg Armor
+					i(167262),	-- Notorious Gladiator's Plate Legguards
+					i(167263),	-- Notorious Gladiator's Plate Pauldrons
+					i(167444),	-- Notorious Gladiator's Plate Shoulderguards
+					i(167327),	-- Notorious Gladiator's Plate Shoulders
+					i(167404),	-- Notorious Gladiator's Plate Skullguard
+					i(167436),	-- Notorious Gladiator's Plate Spaulders
+					i(167329),	-- Notorious Gladiator's Plate Vambraces
+					i(167260),	-- Notorious Gladiator's Plate Warboots
+					i(167388),	-- Notorious Gladiator's Plate Warhelm
+					i(167452),	-- Notorious Gladiator's Shoulderplates
+					-- Alliance
+					i(167295),	-- Notorious Gladiator's Plate Armguards
+					i(167414),	-- Notorious Gladiator's Plate Armor
+					i(167422),	-- Notorious Gladiator's Plate Breastplate
+					i(167332),	-- Notorious Gladiator's Plate Chestguard
+					i(167268),	-- Notorious Gladiator's Plate Chestpiece
+					i(167430),	-- Notorious Gladiator's Plate Chestplate
+					i(167354),	-- Notorious Gladiator's Plate Clasp
+					i(167276),	-- Notorious Gladiator's Plate Gauntlets
+					i(167290),	-- Notorious Gladiator's Plate Girdle
+					i(167340),	-- Notorious Gladiator's Plate Gloves
+					i(167397),	-- Notorious Gladiator's Plate Greathelm
+					i(167335),	-- Notorious Gladiator's Plate Greaves
+					i(167330),	-- Notorious Gladiator's Plate Headcover
+					i(167266),	-- Notorious Gladiator's Plate Helm
+					i(167346),	-- Notorious Gladiator's Plate Leg Armor
+					i(167282),	-- Notorious Gladiator's Plate Legguards
+					i(167287),	-- Notorious Gladiator's Plate Pauldrons
+					i(167446),	-- Notorious Gladiator's Plate Shoulderguards
+					i(167351),	-- Notorious Gladiator's Plate Shoulders
+					i(167405),	-- Notorious Gladiator's Plate Skullguard
+					i(167438),	-- Notorious Gladiator's Plate Spaulders
+					i(167359),	-- Notorious Gladiator's Plate Vambraces
+					i(167271),	-- Notorious Gladiator's Plate Warboots
+					i(167389),	-- Notorious Gladiator's Plate Warhelm
+					i(167454),	-- Notorious Gladiator's Shoulderplates
 				}),
 				n(-385, {	-- Finger
+					i(167375),	-- Notorious Gladiator's Band
+					i(167374),	-- Notorious Gladiator's Ring
+					i(167376),	-- Notorious Gladiator's Signet
 				}),
 				n(-386, {	-- Trinkets
+					i(167380),	-- Notorious Gladiator's Badge
+					i(167378),	-- Notorious Gladiator's Emblem
+					i(167379),	-- Notorious Gladiator's Insignia
+					i(167383),	-- Notorious Gladiator's Maledict
+					i(167377),	-- Notorious Gladiator's Medallion
+					i(167384),	-- Notorious Gladiator's Safeguard
 				}),
 			}),	
 		}),
