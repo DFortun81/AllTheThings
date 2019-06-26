@@ -8377,7 +8377,17 @@ function app:GetDataCache()
 			db.collectible = false;
 			table.insert(g, db);
 		end
-		
+
+		-- Holidays
+		if app.Categories.Holidays then
+			db = app.CreateAchievement(2144, app.Categories.Holidays);
+			db.expanded = false;
+			db.text = GetItemSubClassInfo(15,3);
+			db.npcID = -3;
+			db.collectible = false;
+			table.insert(g, db);
+		end
+
 		db = {};
 		db.g = {};
 		db.fps = {};
