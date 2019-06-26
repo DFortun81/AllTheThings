@@ -144,6 +144,22 @@ namespace ATT
             {
                 NPCS_WITH_REFERENCES[npcID] = true;
             }
+            if (data.TryGetValue("creatureID", out npcID))
+            {
+                NPCS_WITH_REFERENCES[npcID] = true;
+            }
+            if (data.TryGetValue("qg", out npcID))
+            {
+                NPCS_WITH_REFERENCES[npcID] = true;
+            }
+            if (data.TryGetValue("qgs", out List<object> qgs))
+            {
+                foreach(var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt32(qg)] = true;
+            }
+            if (data.TryGetValue("crs", out qgs))
+            {
+                foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt32(qg)] = true;
+            }
 
             // Cache whether or not this entry had an explicit spellID assignment already.
             bool hasSpellID = data.ContainsKey("spellID");
