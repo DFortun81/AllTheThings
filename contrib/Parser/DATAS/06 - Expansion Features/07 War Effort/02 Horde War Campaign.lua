@@ -102,7 +102,7 @@ _.ExpansionFeatures =
 						["coord"] = { 51.2, 100.8, 862 },	-- Zuldazar
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
-						["qg"] = 1356991,	-- Nathanos Blightcaller
+						["qg"] = 135691,	-- Nathanos Blightcaller
 					}),
 					
 					

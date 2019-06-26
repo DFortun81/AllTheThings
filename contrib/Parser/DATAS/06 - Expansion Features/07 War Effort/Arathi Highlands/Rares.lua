@@ -106,7 +106,7 @@ _.ExpansionFeatures =
 							["allianceQuestID"] = 53059,	-- Echo of Myzrael [Alliance]
 							["hordeQuestID"] = 53508,		-- Echo of Myzrael [Horde]
 							["npcID"] = 141668,				-- Echo of Myzrael
-							["qg"] = 1416668,				-- Echo of Myzrael
+							["qg"] = 141668,				-- Echo of Myzrael
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 57.07, 34.69 },
