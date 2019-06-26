@@ -9170,7 +9170,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 		UpdateWindow(self, true);
 	end
 end);
-
+--[[--
 -- Uncomment this section if you need to enable Debugger:
 app.ModelViewer = GameTooltipModel;
 app.ModelViewer.SetRotation = function(number)
@@ -9490,10 +9490,10 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:RegisterEvent("QUEST_LOOT_RECEIVED");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-		--self:RegisterEvent("NEW_WMO_CHUNK");
-		--self:RegisterEvent("MERCHANT_SHOW");
-		--self:RegisterEvent("MERCHANT_UPDATE");
-		--self:RegisterEvent("CHAT_MSG_LOOT");
+		self:RegisterEvent("NEW_WMO_CHUNK");
+		self:RegisterEvent("MERCHANT_SHOW");
+		self:RegisterEvent("MERCHANT_UPDATE");
+		self:RegisterEvent("CHAT_MSG_LOOT");
 		--self:RegisterAllEvents();
 	end
 	
