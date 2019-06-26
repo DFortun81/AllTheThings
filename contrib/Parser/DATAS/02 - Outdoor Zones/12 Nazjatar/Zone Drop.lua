@@ -14,9 +14,11 @@ _.Zones =
 		--	Recipes
 			i(169497),	-- Recipe: Superior Battle Potion of Intellect (Rank 3)
 			i(169498),  -- Recipe: Superior Battle Potion of Stamina (Rank 3)
-		--	Gear
-			i(170199),	-- Zanj'ir Weapon Rack
+		--	Toys
 			i(170476),	-- Underlight Sealamp
+			i(170199),	-- Zanj'ir Weapon Rack
+		-- Gear
+			i(170116),	-- Darkened Slicer
 			i(169402),	-- Deeptide Amice
 			i(169403),	-- Deeptide Cinch
 			i(169400),	-- Deeptide Cover
@@ -28,6 +30,7 @@ _.Zones =
 			i(170201),	-- Deeptide Scroll
 			i(169398),	-- Deeptide Slippers
 			i(170114),	-- Flanged Mace
+			i(170120),	-- Handmaiden's Longstaff
 			i(170115),	-- Massive Viridian Claw
 			i(169431),	-- Reefwalker Cape
 			i(169419),	-- Reefwalker Chain

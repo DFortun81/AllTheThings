@@ -351,6 +351,22 @@ _.Zones =
 						i(168332),	-- Recipe: Abyssal-Fried Rissole (Rank 3)
 					},
 				}),
+				q(56826, {	-- Work Order: Enchant Weapon - Force Multiplier (A)
+					["lvl"] = 120,
+					["collectible"] = false,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(169535),	-- Formula: Force Multiplier (Rank 3)
+					},
+				}),
+				q(56820, {	-- Work Order: Enchant Weapon - Force Multiplier (H)
+					["lvl"] = 120,
+					["collectible"] = false,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(169535),	-- Formula: Force Multiplier (Rank 3)
+					},
+				}),
 				q(55894, {	-- Zoko, Her Iron Defender
 					["lvl"] = 120,
 					["collectible"] = false,
