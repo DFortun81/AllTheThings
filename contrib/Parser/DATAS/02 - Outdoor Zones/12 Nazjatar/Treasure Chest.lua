@@ -133,6 +133,11 @@ _.Zones =
 					["coord"] = { 37.2, 19.2, 1355 },
 					["description"] = "Match 4 Cyan runes.",
 				}),
+				o(332220, {	-- Glowing Arcane Trunk
+					["questID"] = 56547,
+					["coord"] = { 80.5, 31.9, 1355 },
+					["description"] = "Use a |cFFFFD700Deepcoral Pod|r or fly to get on the roof.",
+				}),
 			},
 		}),
 	}),
