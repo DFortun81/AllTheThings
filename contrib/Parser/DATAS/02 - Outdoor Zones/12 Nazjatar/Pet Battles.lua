@@ -119,6 +119,18 @@ _.Zones =
 				["coord"] = { 37.5, 16.7, 1355 },
 				["races"] = HORDE_ONLY,
 			}),
+			q(56450, {	-- Eel Jelly (A)
+				["itemID"] = 169628,
+				["crs"] = { 154915 },	-- Elderspawn of Nalaada
+				["coord"] = { 51.3, 75.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56462, {	-- Eel Jelly (H)
+				["itemID"] = 169641,
+				["crs"] = { 154915 },	-- Elderspawn of Nalaada
+				["coord"] = { 51.3, 75.0, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
 			q(56455, {	-- Frenzy Fang (A)
 				["itemID"] = 169633,
 				["crs"] = { 154920 },	-- Frenzied Knifefang
@@ -176,7 +188,7 @@ _.Zones =
 			--	sort of????  not sure what these are for.  i defeated Pearlhusk Crawler and this item popped into my inventory/quest popped up
 			--	not sure if this can be done daily for reputation or if it's a one-time little rep boost (+250), or if it's used for something else
 			}),
-			q(56461, {	-- Pearlescent Shell (H) — need to confirm horde questID -- completing the alliance version above also completed this questID.  not sure if the quest is neutral or if horde actually gets a 	different version.  wowhead lists 56461 as "both," not horde-specific, but lists 56449 as alliance-only.
+			q(56461, {	-- Pearlescent Shell (H)
 				["itemID"] = 169642,	-- Pearlescent Shell
 				["crs"] = { 154914 },	-- Pearlhusk Crawler
 				["coord"] = { 50.5, 50.2, 1355 },
