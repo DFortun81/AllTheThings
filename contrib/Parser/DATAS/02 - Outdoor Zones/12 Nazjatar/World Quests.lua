@@ -262,6 +262,7 @@ _.Zones =
 						},
 					},
 				}),
+				--[[ -- this one has a typo in the questID. Need to figure out what it really is
 				q(56223, {	-- Runelocked Chest
 					["lvl"] = 120,
 					["collectible"] = false,
@@ -273,6 +274,7 @@ _.Zones =
 						},
 					},
 				}),
+				]]--
 				q(55899, {	-- Starseeker of the Shirakess
 					["lvl"] = 120,
 					["collectible"] = false,
