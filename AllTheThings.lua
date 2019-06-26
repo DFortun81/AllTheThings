@@ -2242,6 +2242,7 @@ local function SearchForLink(link)
 				_ = SearchForField("itemID", itemID);
 				if _ and modID and modID ~= "" then
 					modID = tonumber(modID or "1");
+					if modID == 35 then modID = 23; end
 					local onlyMatchingModIDs = {};
 					for i,o in ipairs(_) do
 						if o.modID then
