@@ -463,11 +463,6 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
 			}),
-			i(169637, {	-- Crackling Mandible
-				["questID"] = 56466,
-				["crs"] = { 154919 },	-- Voltgorger
-				["coord"] = { 37.5, 16.7, 1355 },
-			}),
 			q(57004, {	-- Create Your Own Strength
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 40.2, 55.2, 1355 },
@@ -705,11 +700,6 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 54021,	-- The First Arcanist
 			}),
-			i(169636, {	-- Frenzy Fang
-				["questID"] = 56467,
-				["crs"] = { 154920 },	-- Frenzied Knifefang
-				["coord"] = { 59.1, 26.6, 1355 },
-			}),
 			q(56234, {	-- Friends in need
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 40.3, 55.2, 1355 },
@@ -741,11 +731,6 @@ _.Zones =
 				["questID"] = 56973,
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-			}),
-			i(169644, {	-- Half-Digested Deepcoral Pod
-				["questID"] = 56459,
-				["crs"] = { 154912 },	-- Silence
-				["coord"] = { 58.3, 48.1, 1355 },
 			}),
 			q(56643, {	-- In Deep
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
@@ -859,16 +844,6 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-			}),
-			i(169643, {	-- Molted Spineshell
-				["questID"] = 56460,
-				["crs"] = { 154913 },	-- Shadowspine Lurker
-				["coord"] = { 42.2, 14.0, 1355 },
-			}),
-			i(169640, {	-- Mottled Hydra Scale
-				["questID"] = 56463,
-				["crs"] = { 154916 },	-- Ravenous Scalespawn
-				["coord"] = { 29.6, 49.7, 1355 },
 			}),
 			q(55529, {	-- No Backs
 				["qg"] = 152084,	-- Mrrl
@@ -1570,11 +1545,6 @@ _.Zones =
 				["coord"] = { 48.9, 67.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56644,	-- Up Against It
-			}),
-			i(169646, {	-- Wiggletail's Poking Fork
-				["questID"] = 56445,
-				["crs"] = { 154910 },
-				["coord"] = { 34.7, 27.4, 1355 },
 			}),
 			q(56815, {	-- With A Little Help From My Friends
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)

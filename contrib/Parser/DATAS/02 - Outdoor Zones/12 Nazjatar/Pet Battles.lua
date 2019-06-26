@@ -107,8 +107,70 @@ _.Zones =
 			p(2653, {	-- Spireshell Snail
 				["crs"] = { 154716 },	-- Spireshell Snail
 			}),
+			q(56454, {	-- Crackling Mandible (A)
+				["itemID"] = 169632,
+				["crs"] = { 154919 },	-- Voltgorger
+				["coord"] = { 37.5, 16.7, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56466, {	-- Crackling Mandible (H)
+				["itemID"] = 169637,
+				["crs"] = { 154919 },	-- Voltgorger
+				["coord"] = { 37.5, 16.7, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(56455, {	-- Frenzy Fang (A)
+				["itemID"] = 169633,
+				["crs"] = { 154920 },	-- Frenzied Knifefang
+				["coord"] = { 59.1, 26.6, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56467, {	-- Frenzy Fang (H)
+				["itemID"] = 169636,
+				["crs"] = { 154920 },	-- Frenzied Knifefang
+				["coord"] = { 59.1, 26.6, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(56447, {	-- Half-Digested Deepcoral Pod (A)
+				["itemID"] = 169625,
+				["crs"] = { 154912 },	-- Silence
+				["coord"] = { 58.3, 48.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56459, {	-- Half-Digested Deepcoral Pod (H)
+				["itemID"] = 169644,
+				["crs"] = { 154912 },	-- Silence
+				["coord"] = { 58.3, 48.1, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(56448, {	-- Molted Spineshell (A)
+				["itemID"] = 169626,
+				["crs"] = { 154913 },	-- Shadowspine Lurker
+				["coord"] = { 42.2, 14.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56460, {	-- Molted Spineshell (H)
+				["itemID"] = 169643,
+				["crs"] = { 154913 },	-- Shadowspine Lurker
+				["coord"] = { 42.2, 14.0, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(56451, {	-- Mottled Hydra Scale (A)
+				["itemID"] = 169629,
+				["crs"] = { 154916 },	-- Ravenous Scalespawn
+				["coord"] = { 29.6, 49.7, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56463, {	-- Mottled Hydra Scale (H)
+				["itemID"] = 169640,
+				["crs"] = { 154916 },	-- Ravenous Scalespawn
+				["coord"] = { 29.6, 49.7, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
 			q(56449, {	-- Pearlescent Shell (A)
 				["itemID"] = 169627,	-- Pearlescent Shell
+				["crs"] = { 154914 },	-- Pearlhusk Crawler
+				["coord"] = { 50.5, 50.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			--	["qg"] = 154914,	-- Pearlhusk Crawler
 			--	sort of????  not sure what these are for.  i defeated Pearlhusk Crawler and this item popped into my inventory/quest popped up
@@ -116,10 +178,25 @@ _.Zones =
 			}),
 			q(56461, {	-- Pearlescent Shell (H) — need to confirm horde questID -- completing the alliance version above also completed this questID.  not sure if the quest is neutral or if horde actually gets a 	different version.  wowhead lists 56461 as "both," not horde-specific, but lists 56449 as alliance-only.
 				["itemID"] = 169642,	-- Pearlescent Shell
+				["crs"] = { 154914 },	-- Pearlhusk Crawler
+				["coord"] = { 50.5, 50.2, 1355 },
 				["races"] = HORDE_ONLY,
 			--	["qg"] = 154914,	-- Pearlhusk Crawler
 			--	sort of????  not sure what these are for.  i defeated Pearlhusk Crawler and this item popped into my inventory/quest popped up
 			--	not sure if this can be done daily for reputation or if it's a one-time little rep boost (+250), or if it's used for something else
+			}),
+			q(56444, {	-- Wiggletail's Poking Fork (A)
+				["itemID"] = 169623,
+				["crs"] = { 154910 },
+				["coord"] = { 34.7, 27.4, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56445, {	-- Wiggletail's Poking Fork (H)
+				["itemID"] = 169646,
+				["crs"] = { 154910 },
+				["coord"] = { 34.7, 27.4, 1355 },
+				["races"] = HORDE_ONLY,
+				
 			}),
 		}),
 	}),
