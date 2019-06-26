@@ -3402,6 +3402,8 @@ app.BaseAzeriteEssence = {
 			return t.info.unlocked;
 		elseif key == "text" then
 			return t.link;
+		elseif key == "lvl" then
+			return 120;
 		elseif key == "icon" then
 			return t.info.icon;
 		elseif key == "name" then
@@ -8323,6 +8325,7 @@ function app:GetDataCache()
 		-- Azerite Essences
 		db = {};
 		db.g = {};
+		db.lvl = 120;
 		db.OnUpdate = function(self)
 			local essences = C_AzeriteEssence.GetEssences();
 			if essences and #essences > 0 then
