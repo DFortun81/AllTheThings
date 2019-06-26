@@ -114,6 +114,9 @@ _.Zones =
 					i(170536),	-- Honorbound Centurion's Greathelm
 					i(170535),	-- Honorbound Centurion's Shoulderplates
 					i(170537),	-- Honorbound Centurion's Breastplate
+					i(170532),  -- Honorbound Outrider's Headpiece
+					i(170531),  -- Honorbound Outrider's Shoulderguards
+					i(170518),  -- Honorbound Outrider's Tunic
 				},
 			}),
 			q(57006, {	-- A Worthy Ally
