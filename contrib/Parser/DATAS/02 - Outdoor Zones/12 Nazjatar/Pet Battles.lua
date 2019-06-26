@@ -221,6 +221,18 @@ _.Zones =
 			--	sort of????  not sure what these are for.  i defeated Pearlhusk Crawler and this item popped into my inventory/quest popped up
 			--	not sure if this can be done daily for reputation or if it's a one-time little rep boost (+250), or if it's used for something else
 			}),
+			q(56452, {	-- Strange Organ (A)
+				["itemID"] = 169630,	-- Strange Organ
+				["crs"] = { 154917 },	-- Mindshackle
+				["coord"] = { 56.4, 8.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56464, {	-- Strange Organ (H)
+				["itemID"] = 169639,	-- Strange Organ
+				["crs"] = { 154917 },	-- Mindshackle
+				["coord"] = { 56.4, 8.1, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
 			q(56444, {	-- Wiggletail's Poking Fork (A)
 				["itemID"] = 169623,
 				["crs"] = { 154910 },
