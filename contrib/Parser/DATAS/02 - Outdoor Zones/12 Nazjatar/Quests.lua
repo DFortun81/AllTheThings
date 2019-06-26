@@ -726,6 +726,11 @@ _.Zones =
 					}),
 				},
 			}),
+			i(170171, {	-- Giant Crab Leg
+				["questID"] = 56973,
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+			}),
 			q(56643, {	-- In Deep
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
 				["races"] = ALLIANCE_ONLY,
