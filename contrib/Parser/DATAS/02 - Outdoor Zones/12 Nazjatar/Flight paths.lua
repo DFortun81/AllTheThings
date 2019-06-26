@@ -26,6 +26,7 @@ _.Zones =
 				["description"] = "Must complete the |cFFFFD700On Ghostly Wings|r quest to unlock this path.",
 			}),
 			fp(2408, {	-- Mezzamere
+				["description"] = "Must complete the |cFFFFD700Where the Road Leads|r quest to unlock this path.",
 				["coord"] = { 39.9, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),

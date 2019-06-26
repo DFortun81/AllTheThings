@@ -101,7 +101,8 @@ _.Zones =
 							i(170141),	-- Fathomstalker Footwraps
 							i(167752),	-- Shirakess Footwraps
 							i(169894),	-- Shirakess Sandals
-							i(170140),	-- Shirakess Slippers
+							i(170371),	-- Shirakess Slippers (probably changed itemIDs for these)
+						--	i(170140),	-- Shirakess Slippers
 							i(167776),	-- Zanj'ir Scaleguard Stompers
 							i(170143),	-- Zanj'ir Scaleguard Waders
 							i(169891),	-- Zanj'ir Scaleguard Warboots

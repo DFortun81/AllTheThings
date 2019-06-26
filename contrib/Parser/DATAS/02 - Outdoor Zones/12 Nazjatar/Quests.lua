@@ -88,10 +88,13 @@ _.Zones =
 			}),
 			q(54972, {	-- A Way Home
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
-				["coord"] = { 40.3, 55.2, 1355 },
+				["coord"] = { 40.2, 55.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55175,	-- Where the Road Leads
 				["g"] = {
+					i(170520),	-- 7th Legionnaire's Hood
+					i(170519),	-- 7th Legionnaire's Amice
+					i(170514),	-- 7th Legionnaire's Robes
 					i(170527),	-- 7th Legionnaire's Headpiece
 					i(170526),	-- 7th Legionnaire's Shoulderplates
 					i(170528),	-- 7th Legionnaire's Chestguard
@@ -111,6 +114,9 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55094,	-- Stay Low, Stay Fast!
 				["g"] = {
+					i(170530),	-- Honorbound Artificer's Guise	\
+					i(170529),	-- Honorbound Artificer's Amice	 > when i completed the alliance version of the quest on my priest, it also awarded these.
+					i(170516),	-- Honorbound Artificer's Robes	/
 					i(170536),	-- Honorbound Centurion's Greathelm
 					i(170535),	-- Honorbound Centurion's Shoulderplates
 					i(170537),	-- Honorbound Centurion's Breastplate
@@ -476,7 +482,7 @@ _.Zones =
 			}),
 			q(56642, {	-- Dark Tides
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
-				["coord"] = { 48.8, 86.9, 1355 },
+				["coord"] = { 48.7, 86.8, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 54969,	-- Descent
 				["g"] = {
@@ -485,6 +491,8 @@ _.Zones =
 					i(163885),	-- 7th Legionnaire's Halberd
 					i(163886),	-- 7th Legionnaire's Stave
 					i(170274),	-- 7th Legionnaire's Greathammer
+					i(163894),	-- 7th Legionnaire's Spellhammer
+					i(163892),	-- 7th Legionnaire's Censer
 				},
 			}),
 			q(56063, {	-- Dark Tides
@@ -502,7 +510,7 @@ _.Zones =
 			}),
 			q(54969, {	-- Descent
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
-				["coord"] = { 48.8, 89.3, 1355 },
+				["coord"] = { 48.8, 89.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55095,	-- Upheaval
 			}),
@@ -537,8 +545,8 @@ _.Zones =
 				["sourceQuest"] = 55862,	-- Insight into Our Enemies
 			}),
 			q(56641, {	-- Disruption of Power
-				["qg"] = 155482,	-- Sentinel (Shadris Feathermoon)
-				["coord"] = { 48.8, 86.9, 1355 },
+				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
+				["coord"] = { 48.7, 86.8, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 54969,	-- Descent
 			}),
@@ -651,7 +659,7 @@ _.Zones =
 					154167,	-- Magni Bronzebeard (Horde)
 				},
 				["coords"] = {
-					{ 40.0, 55.1, 1355 },	-- Alliance
+					{ 40.0, 55.2, 1355 },	-- Alliance
 					{ 48.2, 62.4, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
@@ -687,7 +695,7 @@ _.Zones =
 			}),
 			q(56640, {	-- Fortunate Souls
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
-				["coord"] = { 48.8, 86.9, 1355 },
+				["coord"] = { 48.7, 86.8, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 54969,	-- Descent
 			}),
@@ -1150,7 +1158,7 @@ _.Zones =
 			}),
 			q(56350, {	-- Scouting the Palace
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
-				["coord"] = { 40.3, 55.2, 1355 },
+				["coord"] = { 40.2, 55.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = {
 					56162,	-- Back Out to Sea (optional quest, but not an actual breadcrumb)
@@ -1160,7 +1168,7 @@ _.Zones =
 					i(169482),	-- Benthic Leggings
 					i(169483),	-- Benthic Treads
 					i(169485),	-- Benthic Gauntlets
-					currency(1721),	-- Prismatic Manapearls
+					currency(1721),	-- Prismatic Manapearls x20
 				},
 			}),
 			q(55481, {	-- Scouting the Palace
@@ -1451,7 +1459,7 @@ _.Zones =
 			}),
 			q(56644, {	-- Up Against it
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
-				["coord"] = { 45.4, 74.7, 1355 },
+				["coord"] = { 45.5, 74.9, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 155482,	-- In Deep
 			}),
@@ -1463,7 +1471,7 @@ _.Zones =
 			}),
 			q(55095, {	-- Upheaval
 				["qg"] = 150087,	-- Genn Greymane
-				["coord"] = { 48.3, 92.6, 1355 },
+				["coord"] = { 48.2, 92.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56043,	-- Send the Fleet
 			}),
@@ -1559,7 +1567,7 @@ _.Zones =
 			}),
 			q(55175, {	-- Where the Road Leads
 				["qg"] = 151000,	-- Blademaster Okani
-				["coord"] = { 49.0, 67.3, 1355 },
+				["coord"] = { 48.9, 67.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56644,	-- Up Against It
 			}),

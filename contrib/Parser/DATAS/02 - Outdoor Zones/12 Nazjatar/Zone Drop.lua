@@ -11,6 +11,9 @@ _.Zones =
 				i(170120),	-- Handmaiden's Longstaff
 			}),
 			]]--
+		--	Recipes
+			i(169497),	-- Recipe: Superior Battle Potion of Intellect (Rank 3)
+		--	Gear
 			i(170199),	-- Zanj'ir Weapon Rack
 			i(170476),	-- Underlight Sealamp
 			i(169402),	-- Deeptide Amice
@@ -23,6 +26,7 @@ _.Zones =
 			i(169425),	-- Deeptide Robe
 			i(170201),	-- Deeptide Scroll
 			i(169398),	-- Deeptide Slippers
+			i(170115),	-- Massive Viridian Claw
 			i(169431),	-- Reefwalker Cape
 			i(169419),	-- Reefwalker Chain
 			i(169416),	-- Reefwalker Coif

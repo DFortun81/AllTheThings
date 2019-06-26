@@ -1063,7 +1063,7 @@ _.Zones =
 				}),
 				n(-17,  {	-- Quests
 					q(55497, {	-- A Friendly Face
-						["qg"] = 152385,	-- Highmountain Shaman (ebonhorn)
+						["qg"] = 152385,	-- Highmountain Shaman (Ebonhorn)
 						["lvl"] = 120,
 						["coord"] = { 18.9, 58.0, 1472 },
 						["sourceQuests"] = { 55425 },	-- Dominating the Indomitable
@@ -1194,7 +1194,7 @@ _.Zones =
 					q(55407, {	-- Calming the Spine
 						["qg"] = 151695,	-- Spiritwalker Ebonhorn
 						["lvl"] = 120,
-						["coord"] = { 26.7, 46.2, 1472 },
+						["coord"] = { 27.0, 45.9, 1472 },
 						["sourceQuests"] = { 55400 },	-- Take My Hand
 					}),
 					q(40339, {	-- Candle of Command
@@ -1675,7 +1675,7 @@ _.Zones =
 					q(55400, {	-- Take My Hand
 						["qg"] = 151641,	-- Spiritwalker Ebonhorn
 						["lvl"] = 120,
-						["coord"] = { 49.5, 68.3, 650 },
+						["coord"] = { 49.4, 68.3, 650 },
 						["sourceQuests"] = { 55374 },	-- A Disurbance Beneath the Earth
 					}),
 					q(40071, {	-- Tamer Takedown
