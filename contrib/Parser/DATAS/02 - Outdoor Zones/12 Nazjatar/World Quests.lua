@@ -77,6 +77,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(56382, {	-- Chomp
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
 				q(55973, {	-- Deepcoil Experiments
 					["lvl"] = 120,
 					["collectible"] = false,

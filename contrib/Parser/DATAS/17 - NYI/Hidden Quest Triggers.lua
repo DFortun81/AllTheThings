@@ -100,6 +100,10 @@ _.NeverImplemented =
 		q(56975),	-- Triggers when receiving "Mardivas's Rentention Dimension Invention (itemID 170475) from a Glowing Arcane Trunk
 		q(56976),	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
 		q(56977),	-- Triggers when receiving "Mardivas's Universally Lauded Tote" (itemID 170477) from a Glowing Arcane Trunk
+		q(55427),	-- Ravenous Slime fed (55.1, 48.8)
+		q(55428),	-- Ravenous Slime fed (71.7, 25.7)
+		q(55429),	-- Ravenous Slime fed (45.7, 24.1)
+		q(55430),	-- Ravenous Slime fed (32.9, 39.8)
 		
 		-- Mechagon
 		q(55547),	-- Mechanized Chest. Chests spawn randomly
