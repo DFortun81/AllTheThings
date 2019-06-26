@@ -76,6 +76,46 @@ _.Zones =
 				p(2666, {	-- Yellow Junkhopper
 					["crs"] = { 154777 },	-- Yellow Junkhopper
 				}),
+				q(56442, {	-- Broken Unit 6
+					["itemID"] = 169621,	-- Broken Unit 6
+					["crs"] = { 154928 },	-- Unit 6
+					["coord"] = { 39.5, 40.2, 1462 },
+				}),
+				q(56440, {	-- Can of Critter Spray
+					["itemID"] = 169619,	-- Can of Critter Spray
+					["crs"] = { 154926 },	-- CK-9 Micro-Oppression Unit
+					["coord"] = { 65.4, 57.6, 1462 },
+				}),
+				q(56441, {	-- Cluckbox
+					["itemID"] = 169620,	-- Cluckbox
+					["crs"] = { 154927 },	-- Unit 35
+					["coord"] = { 51.1, 45.4, 1462 },
+				}),
+				q(56438, {	-- Flashing Siren
+					["itemID"] = 169617,	-- Flashing Siren
+					["crs"] = { 154924 },	-- Goldenbot XD
+					["coord"] = { 60.6, 56.9, 1462 },
+				}),
+				q(56439, {	-- Mechanical Egg Sac
+					["itemID"] = 169618,	-- Mechanical Egg Sac
+					["crs"] = { 154925 },	-- Creakclank
+					["coord"] = { 59.2, 50.9, 1462 },
+				}),
+				q(56443, {	-- Mechanical Eye
+					["itemID"] = 169622,	-- Mechanical Eye
+					["crs"] = { 154929 },	-- Unit 17
+					["coord"] = { 72.1, 72.9, 1462 },
+				}),
+				q(56437, {	-- Rusty Tube
+					["itemID"] = 169616,	-- Rusty Tube
+					["crs"] = { 154923 },	-- Sputtertube
+					["coord"] = { 60.7, 46.5, 1462 },
+				}),
+				q(56436, {	-- Small Skull
+					["itemID"] = 169615,	-- Small Skull
+					["crs"] = { 154922 },	-- Gnomefeaster
+					["coord"] = { 64.7, 64.6, 1462 },
+				}),
 			}),
 		}),
 	}),

@@ -285,6 +285,7 @@ _.Zones =
 					["sourceQuest"] = 55708,	-- Upgraded
 					["g"] = {
 						i(168752),	-- Omnipurpose Efficient Logic Board
+						i(167556),	-- Subroutine: Overclock
 					},
 				}),
 				q(55298, {	-- Fishing for Something Bigger (possibly only available after Welcome to the Resistance?)

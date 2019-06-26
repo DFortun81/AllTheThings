@@ -11,6 +11,9 @@ _.Zones =
 						i(168832),	-- Galvanic Oscillator
 					},
 				}),
+				q(56394, {	-- Sputtertube
+					["collectible"] = false,
+				}),
 			}),
 		}),
 	}),
