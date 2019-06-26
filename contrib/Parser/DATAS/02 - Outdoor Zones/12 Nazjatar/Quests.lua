@@ -239,11 +239,16 @@ _.Zones =
 				},
 			}),
 			q(55836, {	-- Bounty: Elite Naga Forces
-				["qg"] = 151614,	-- Nevin Tideheart
-				["coord"] = { 50.4, 66.2, 1355 },
-				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Save a Friend
+				["qgs"] = {
+					151614,	-- Nevin Tideheart (horde)
+				},
+				["coords"] = {
+					{ 50.4, 66.2, 1355 },	-- horde
+				},
+				["sourceQuests"] = {
+					55500,	-- Save a Friend
+				},
 			}),
 			q(55830, {	-- Bounty: More Coral Ancients
 				["isDaily"] = true,
@@ -284,9 +289,11 @@ _.Zones =
 				["isDaily"] = true,
 				["qgs"] = {
 					155941,	-- Tamer Orami (alliance)
+					151352,	-- Lily Bopip
 				},
 				["coords"] = {
 					{ 39.6, 55.5, 1355 },	-- alliance
+					{ 47.3, 61.9, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
 					55500,	-- Save A Friend (horde)
@@ -965,6 +972,18 @@ _.Zones =
 					55500,	-- Save A Friend (horde)
 				},
 			}),
+			q(55727, {	-- Requisition: A Few Flotsam
+				["isDaily"] = true,
+				["qgs"] = {
+					153512,	-- Finder Pruc (horde)
+				},
+				["coords"] = {
+					{ 49.2, 62.2, 1355 },	-- horde
+				},
+				["sourceQuests"] = {
+					55500,	-- Save a Friend (horde)
+				},
+			},
 			q(55720, {	-- Requisition: A Few Seaweed
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1063,10 +1082,6 @@ _.Zones =
 					},
 					{	-- Requisition: A Few Cone Shells
 						["questID"] = 55726,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: A Few Flotsam
-						["questID"] = 55727,
 						["isDaily"] = true,
 					},
 					{	-- Requisition: A Few Kelp Buds
