@@ -3402,7 +3402,7 @@ app.BaseAzeriteEssence = {
 			local info = t.info;
 			if info and info.unlocked then return 1; end
 		elseif key == "text" then
-			return t.link or t.name;
+			return t.link;
 		elseif key == "lvl" then
 			return 120;
 		elseif key == "icon" then
@@ -3412,12 +3412,11 @@ app.BaseAzeriteEssence = {
 		elseif key == "name" then
 			local info = t.info;
 			if info then return info.name; end
-			return "Blizzard API is scuffed. Read description.";
-		elseif key == "description" then
-			if not t.info then return "Due to Blizzard API shenanigans, you can only view this information on a 120. Imagine writing an API to get information and then intentionally gating that information to only 120s. If someone links you an essence, you can't even look at it on a <120 character. \n\nIncredible.\n\n- Crieve"; end
 		elseif key == "link" then
+			return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, t.rank or 0);
+		elseif key == "rank" then
 			local info = t.info;
-			if info then return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, info.rank or 0); end
+			if info then return info.rank; end
 		elseif key == "info" then
 			return C_AzeriteEssence.GetEssenceInfo(t.azeriteEssenceID);
 		else
