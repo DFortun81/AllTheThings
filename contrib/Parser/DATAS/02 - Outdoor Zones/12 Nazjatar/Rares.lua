@@ -6,7 +6,7 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		n(-16, {	-- Rares
 			n(152415, { -- Alga the Eyeless
-				["allianceQuestID"] = 56604,
+				["allianceQuestID"] = 56604, 
 				["hordeQuestID"] = 56279,
 				["description"] = "Patrols in stealth along the path.",
 				["isDaily"] = true,
@@ -43,6 +43,8 @@ _.Zones =
 				},
 			}),
 			n(152794, {	-- Amethyst Spireshell
+				["allianceQuestID"] = 56268,
+				["hordeQuestID"] = 56268,
 				["isDaily"] = true,
 				["coords"] = {
 					{ 72.2, 36.2, 1355 },
@@ -64,6 +66,8 @@ _.Zones =
 				},
 			}),
 			n(150191, {	-- Avarius
+				["allianceQuestID"] = 55584,
+				["hordeQuestID"] = 55584,
 				["isDaily"] = true,
 				["coord"] = { 36.9, 11.2, 1355 },
 				["g"] = {
@@ -80,7 +84,8 @@ _.Zones =
 			}),
 			n(152712, {	-- Blindlight
 				["allianceQuestID"] = 56269,
-				["hordeQuestID"] = 56614,
+				--["hordeQuestID"] = 56614,
+				["hordeQuestID"] = 56269,
 				["isDaily"] = true,
 				["coords"] = {
 					{ 39.8, 77.2, 1355 },	-- cave entrance
@@ -94,8 +99,10 @@ _.Zones =
 				},
 			}),
 			n(149653, {	-- Carnivorous Lasher -- to spawn him, it procs quest 55366? verify IDs
-				["allianceQuestID"] = 56887,
-				["hordeQuestID"] = 56888,
+				--["allianceQuestID"] = 56887,
+				--["hordeQuestID"] = 56888,
+				["allianceQuestID"] = 55366,
+				["hordeQuestID"] = 55366,
 				["coord"] = { 54.7, 41.7, 1355 },
 				["isDaily"] = true,
 				["g"] = {
@@ -104,7 +111,8 @@ _.Zones =
 			}),
 			n(152464, {	-- Caverndark Terror
 				["allianceQuestID"] = 56283,
-				["hordeQuestID"] = 56600,
+				--["hordeQuestID"] = 56600,
+				["hordeQuestID"] = 56283,
 				["coord"] = { 55.6, 26.9, 1355 },
 				["isDaily"] = true,
 				["g"] = {
@@ -132,7 +140,8 @@ _.Zones =
 				["isDaily"] = true,
 			}),
 			n(152756, {	-- Daggertooth Terror
-				["allianceQuestID"] = 56612,
+				["allianceQuestID"] = 56271,
+				--["allianceQuestID"] = 56612,
 				["hordeQuestID"] = 56271,
 				["coords"] = {
 					{ 26.3, 29.0, 1355 },
@@ -172,7 +181,8 @@ _.Zones =
 				},
 			}),
 			n(152555, {	-- Elderspawn Nalaada
-				["allianceQuestID"] = 56598,
+				["allianceQuestID"] = 56285,
+				--["allianceQuestID"] = 56598,
 				["hordeQuestID"] = 56285,
 				["coord"] = { 52.1, 75.4, 1355 },
 				["isDaily"] = true,
@@ -184,7 +194,8 @@ _.Zones =
 				},
 			}),
 			n(152553, {	-- Garnetscale
-				["allianceQuestID"] = 56610,
+				["allianceQuestID"] = 56273,
+				--["allianceQuestID"] = 56610,
 				["hordeQuestID"] = 56273,
 				["coord"] = { 37.3, 40.3, 1355 },
 				["isDaily"] = true,
@@ -200,7 +211,8 @@ _.Zones =
 				["description"] = "One of many Naga commanders that spawn over time.",
 			}),
 			n(152448, {	-- Iridescent Glimmershell
-				["allianceQuestID"] = 56597,
+				["allianceQuestID"] = 56286,
+				--["allianceQuestID"] = 56597,
 				["hordeQuestID"] = 56286,
 				["coord"] = { 45.3, 56.2, 1355 },
 				["isDaily"] = true,
@@ -220,6 +232,8 @@ _.Zones =
 				},
 			}),
 			n(152323, {	-- King Gakula
+				["allianceQuestID"] = 55671,
+				["hordeQuestID"] = 55671,
 				["isDaily"] = true,
 				["coord"] = { 28.8, 29.0, 1355 },
 				["g"] = {
@@ -237,8 +251,9 @@ _.Zones =
 					currency(1721),	-- Prismatic Manapearl
 				},
 			}),
-			n(144644, {	-- Mireclaw
-				["allianceQuestID"] = 56609,
+			n(144644, {	-- Mirecrawler
+				["allianceQuestID"] = 56274,
+				--["allianceQuestID"] = 56609,
 				["hordeQuestID"] = 56274,
 				["coord"] = { 61.0, 31.7, 1355 },
 				["isDaily"] = true,
@@ -250,7 +265,8 @@ _.Zones =
 				},
 			}),
 			n(152465, {	-- Needlespine
-				["allianceQuestID"] = 56608,
+				["allianceQuestID"] = 56275,
+				--["allianceQuestID"] = 56608,
 				["hordeQuestID"] = 56275,
 				["isDaily"] = true,
 				["coords"] = {
@@ -274,7 +290,8 @@ _.Zones =
 				},
 			}),
 			n(152681, {	-- Prince Typhonus
-				["allianceQuestID"] = 56594,
+				["allianceQuestID"] = 56289,
+				--["allianceQuestID"] = 56594,
 				["hordeQuestID"] = 56289,
 				["coord"] = { 43.2, 88.0, 1355 },
 				["isDaily"] = true,
@@ -287,7 +304,8 @@ _.Zones =
 			}),
 			n(152682, {	-- Prince Vortran
 				["allianceQuestID"] = 56290,
-				["hordeQuestID"] = 56593,
+				--["hordeQuestID"] = 56593,
+				["hordeQuestID"] = 56290,
 				["coord"] = { 43.0, 75.6, 1355 },
 				["isDaily"] = true,
 				["g"] = {
@@ -298,6 +316,8 @@ _.Zones =
 				},
 			}),
 			n(150583, {	-- Rockweed Shambler
+				["allianceQuestID"] = 56291,
+				["hordeQuestID"] = 56291,
 				["isDaily"] = true,
 				["g"] = {
 					crit(22, {	-- I Thought You Said They'd Be Rare?
@@ -308,6 +328,8 @@ _.Zones =
 			}),
 			n(151870, {	-- Sandcastle
 				["description"] = "There is a chance for Sandcastle to spawn when you are using a Scrying Stone to find treasures in Nazjatar.",
+				["allianceQuestID"] = 56276,
+				["hordeQuestID"] = 56276,
 				["isDaily"] = true,
 				["g"] = {
 					crit(23, {	-- I Thought You Said They'd Be Rare?
@@ -317,7 +339,8 @@ _.Zones =
 				},
 			}),
 			n(152795, {	-- Sandclaw Stoneshell
-				["allianceQuestID"] = 56606,
+				["allianceQuestID"] = 56277,
+				--["allianceQuestID"] = 56606,
 				["hordeQuestID"] = 56277,
 				["isDaily"] = true,
 				--[[ -- now spawns all over the map multiple times at once. Not sure if this is intentional or not but these coords don't apply anymore
@@ -340,6 +363,8 @@ _.Zones =
 				},
 			}),
 			n(152548, {	-- Scale Matriarch Gratinax
+				["allianceQuestID"] = 56292,
+				["hordeQuestID"] = 56292,
 				["isDaily"] = true,
 				["coord"] = { 35.6, 41.2, 1355 },
 				["g"] = {
@@ -351,7 +376,8 @@ _.Zones =
 			}),
 			n(152545, {	-- Scale Matriarch Vynara
 				["allianceQuestID"] = 56293,
-				["hordeQuestID"] = 56590,
+				--["hordeQuestID"] = 56590,
+				["hordeQuestID"] = 56293,
 				["coord"] = { 27.2, 37.1, 1355 },
 				["isDaily"] = true,
 				["g"] = {
@@ -362,7 +388,8 @@ _.Zones =
 				},
 			}),
 			n(152542, {	-- Scale Matriarch Zodia
-				["allianceQuestID"] = 56589,
+				["allianceQuestID"] = 56294,
+				--["allianceQuestID"] = 56589,
 				["hordeQuestID"] = 56294,
 				["coord"] = { 28.6, 46.6, 1355 },
 				["isDaily"] = true,
@@ -376,7 +403,8 @@ _.Zones =
 			}),
 			n(152552, {	-- Shassera
 				["allianceQuestID"] = 56295,
-				["hordeQuestID"] = 56588,
+				--["hordeQuestID"] = 56588,
+				["hordeQuestID"] = 56295,
 				["coord"] = { 63.7, 6.0, 1355 },
 				["g"] = {
 					crit(28, {	-- I Thought You Said They'd Be Rare?
@@ -400,7 +428,8 @@ _.Zones =
 				},
 			}),
 			n(152359, {	-- Siltstalker the Packmother
-				["allianceQuestID"] = 56586,
+				["allianceQuestID"] = 56297,
+				--["allianceQuestID"] = 56586,
 				["hordeQuestID"] = 56297,
 				["coord"] = { 71.6, 54.8, 1355 },
 				["isDaily"] = true,
@@ -412,6 +441,8 @@ _.Zones =
 				},
 			}),
 			n(152290, {	-- Soundless
+				["allianceQuestID"] = 56298,
+				["hordeQuestID"] = 56298,
 				["coord"] = { 59.9, 47.6, 1355 },
 				["isDaily"] = true,
 				["description"] = "On top of the coral reef. Requires Flying.", 
@@ -445,7 +476,8 @@ _.Zones =
 				},
 			}),
 			n(154148, {	-- Tidemistress Leth'sindra
-				["allianceQuestID"] = 56620,
+				["allianceQuestID"] = 56106,
+				--["allianceQuestID"] = 56620,
 				["hordeQuestID"] = 56106,
 				["coord"] = { 65.9, 22.9, 1355 },
 				["isDaily"] = true,
@@ -458,7 +490,8 @@ _.Zones =
 				},
 			}),
 			n(152360, {	-- Toxigore the Alpha
-				["allianceQuestID"] = 56605,
+				["allianceQuestID"] = 56278,
+				--["allianceQuestID"] = 56605,
 				["hordeQuestID"] = 56278,
 				["coord"] = { 64.8, 46.4, 1355 },
 				["isDaily"] = true,
