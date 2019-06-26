@@ -11112,7 +11112,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					local tradeSkillID = AllTheThings.GetTradeSkillLine();
 					if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
 						if self:IsVisible() then
-							app.print("You must have a profession open to open the profession mini list.");
+							-- app.print("You must have a profession open to open the profession mini list.");
 						end
 						self:SetVisible(false);
 						return false;
