@@ -1409,6 +1409,13 @@ _.Zones =
 						i(65478),	-- Staff of the Sunchaser
 					},
 				}),	
+				q(55779, {	-- Stay of Execution
+					["qg"] = 152977,	-- Thrall
+					["lvl"] = 120,
+					["coord"] = { 56.1, 68.0, 86 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55781,	-- Old Allies
+				}),
 				q(28459, {	-- Stones of Binding
 					["qg"] = 88705,	-- Kranosh
 					["coord"] = { 49.0, 55.2, 85 },
