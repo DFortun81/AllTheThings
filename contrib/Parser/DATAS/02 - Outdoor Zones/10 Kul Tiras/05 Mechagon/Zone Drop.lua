@@ -14,6 +14,10 @@ _.Zones =
 				i(159552),	-- Shipwrecker Maul
 				i(159797),	-- Shipwrecker Shield
 				i(159566),	-- Shipwrecker Spire
+				i(169878),  -- Irradiated Undercoat
+				i(159164),  -- Ashvane Company Sabatons
+				i(159539),  -- Ironcrest Club
+				i(159519),  -- Ironcrest Knife
 			}),
 		}),
 	}),
