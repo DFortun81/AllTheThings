@@ -3399,7 +3399,7 @@ app.BaseAzeriteEssence = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			return t.info.unlocked;
+			return t.info and t.info.unlocked;
 		elseif key == "text" then
 			return t.link;
 		elseif key == "lvl" then
