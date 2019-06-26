@@ -2359,4 +2359,75 @@ AllTheThings.FlightPathDB = {
 		name="Bastion Rise, Gorgrond",
 		faction=1,
 	},
+	[2410] = {
+		name="Ashen Strand",
+		coord={ 31.8, 38.1, 1355 },
+		races=2,
+	},
+	[2411] = {
+		name="Ashen Strand",
+		coord={ 34.5, 37.3, 1355 },
+		faction=1,
+	},
+	[2437] = {
+		name="Ekka's Hideaway",
+		coord={ 64.0, 51.8, 1355 },
+		faction=1,
+	},
+	[2406] = {
+		name="Elun'alor Temple",
+		coord={ 74.0, 40.0, 1355 },
+		faction=2,
+	},
+	[2403] = {
+		name="Kelya's Grave",
+		coord={ 74.2, 24.9, 1355 },
+		description="Must complete the |cFFFFD700On Ghostly Wings|r quest to unlock this path.",
+	},
+	[2408] = {
+		name="Mezzamere",
+		coord={ 39.9, 54.1, 1355 },
+		faction=2,
+	},
+	[2404] = {
+		name="Newhome",
+		coord={ 47.5, 63.3, 1355 },
+		faction=1,
+	},
+	[2482] = {
+		name="The Tidal Conflux",
+		coord={ 51.1, 23.6, 1355 },
+		faction=1,
+		description="Must complete the zone storyline to unlock this path.",
+	},
+	[2407] = {
+		name="Utama's Stand",
+		coord={ 61.7, 36.5, 1355 },
+		faction=2,
+	},
+	[2412] = {
+		name="Wreck of the Hungry Riverbeast",
+		coord={ 36.1, 82.3, 1355 },
+		faction=1,
+	},
+	[2409] = {
+		name="Wreck of the Old Blanchy",
+		coord={ 44.5, 85.5, 1355 },
+		faction=2,
+	},
+	[2405] = {
+		name="Zin'Azshari",
+		coord={ 79.5, 37.9, 1355 },
+		faction=1,
+	},
+	[2442] = {
+		name="Overspark Expedition Camp",
+		coord={ 77.8, 40.9, 1462 },
+		faction=2,
+	},
+	[2441] = {
+		name="Prospectus Bay",
+		coord={ 73.5, 25.8, 1462 },
+		faction=1,
+	},
 };
