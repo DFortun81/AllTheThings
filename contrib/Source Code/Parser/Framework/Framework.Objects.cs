@@ -844,8 +844,24 @@ namespace ATT
             public static void Export(string directory)
             {
                 File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportCompressedLuaCategories(AllContainers).ToString());
-                
-                var builder = ATT.Export.ExportCompressedLua(NPCS);
+
+                // Only export NPC ID / Display ID pairs with references.
+                var usedNPCDisplayIDs = new Dictionary<int, int>();
+                foreach(var npcID in NPCS_WITH_REFERENCES.Keys)
+                {
+                    if(NPCS.TryGetValue(npcID, out int displayID))
+                    {
+                        usedNPCDisplayIDs[npcID] = displayID;
+                    }
+                    else if(npcID > 0)
+                    {
+                        Trace.Write("NPC #");
+                        Trace.Write(npcID);
+                        Trace.WriteLine(" is missing a displayID...");
+                    }
+                }
+
+                var builder = ATT.Export.ExportCompressedLua(usedNPCDisplayIDs);
                 File.WriteAllText(Path.Combine(directory, "NPCDB.lua"), builder.Insert(0, "AllTheThings.NPCDB=").ToString());
             }
             #endregion
