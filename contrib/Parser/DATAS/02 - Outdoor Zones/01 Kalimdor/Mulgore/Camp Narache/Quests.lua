@@ -7,13 +7,6 @@ _.Zones =
 		m(7, {	-- Mulgore
 			m(462, {	-- Camp Narache
 				n(-17, {	-- Quests
-					q(54762, {	-- A Small Retreat
-						["qg"] = 149084,	-- Spiritwalker Ussoh
-						["coord"] = { 12.3, 31.3, 462 },
-						["sourceQuest"] = 54761,	-- Spirit Guide	
-						["races"] = { 6 },	-- Tauren
-						["lvl"] = 120,
-					}),
 					{	-- The First Step
 						["questID"] = 14449,
 						["qg"] = 2981,	-- Chief Hawkwind
@@ -109,13 +102,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 23733,	-- Rites of the Earthmother
 					},
-					q(54761, {	-- Spirit Guide
-						["qg"] = 149084,	-- Spiritwalker Ussoh
-						["coord"] = { 12.3, 31.3, 462 },
-						["sourceQuest"] = 54760,	-- The Spiritwalkers	
-						["races"] = { 6 },	-- Tauren
-						["lvl"] = 120,
-					}),
 					{	-- Tiger Palm
 						["questID"] = 31166,
 						["u"] = 40,
