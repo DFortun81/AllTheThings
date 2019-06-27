@@ -510,6 +510,7 @@ pet(163801, 2462);	-- Octopode Fry
 pet(104166, 1335); 	-- Ominous Flame
 pet(142090, 1959); 	-- Ominous Pile of Snow (WInter Rageling)
 pet(49362, 243); 	-- Onyxian Whelpling
+pet(169381, 2714);	-- OOX-35/MG
 pet(20651, 1168);	-- Orange Murloc Egg (Murki)
 pet(147841, 2050); 	-- Orphaned Felbat
 pet(153027, 2116); 	-- Orphaned Marsuul

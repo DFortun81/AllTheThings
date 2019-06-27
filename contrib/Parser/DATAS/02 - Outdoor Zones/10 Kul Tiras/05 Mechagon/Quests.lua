@@ -329,6 +329,16 @@ _.Zones =
 					["coord"] = { 37.0, 47.1, 1462 },
 					["sourceQuest"] = 55055,	-- Build A Bigger Fish Trap
 				}),
+				q(56523, {	-- My Chickens are Not for Eating!
+					["qg"] = 155254,	-- Oglethorpe Obnoticus
+					["coord"] = { 72.7, 38.0, 1462 },
+					["isDaily"] = true,
+					["g"] = {
+						i(169381, {	-- OOX-35/MG (pet)
+							["description"] = "When the quest \"My Chickens are Not for Eating!\" is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
+						}),
+					},
+				}),
 				q(55731, {	-- My Father's Armies
 					["qg"] = 152820,	-- Prince Erazmin
 					["coord"] = { 58.9, 54.8, 1462 },
