@@ -64,7 +64,7 @@ _.Zones =
 			q(56778, {	-- A Glint of the Darkness
 				["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "Available when your bodyguard hits rank 5",
+				["description"] = "Available when your bodyguard hits rank 5.",
 			}),
 			q(55984, {	-- A Good Offense
 				["qg"] = 153623,	-- Korl
@@ -228,11 +228,11 @@ _.Zones =
 					151635,	-- Slen Darkroe
 				},
 				["coords"] = {
-					{ 40.0, 55.6, 1355 },	-- alliance
-					{ 50.8, 64.7, 1355 },	-- horde
+					{ 40.0, 55.6, 1355 },	-- Alliance
+					{ 50.8, 64.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(55825, {	-- Bounty: A Few Fathom Rays
@@ -242,11 +242,27 @@ _.Zones =
 					153772,	-- Lina Bluegill
 				},
 				["coords"] = {
-					{ 39.9, 54.1, 1355 },	-- alliance
-					{ 47.4, 63.2, 1355 },	-- horde
+					{ 39.9, 54.1, 1355 },	-- Alliance
+					{ 47.4, 63.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
+				},
+			}),
+			q(55820, {	-- Bounty: A Few Hydras
+				["isDaily"] = true,
+				["qgs"] = {
+					152942,	-- Lieutenant Hawkins (Alliance)
+				--	,	--  (Horde)
+				},
+				["coords"] = {
+					{ 40.1, 55.5, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(55837, {	-- Bounty: Dangerous Creatures
@@ -357,7 +373,7 @@ _.Zones =
 			o(326140, {	-- Bounty Board
 				["coord"] = { 39.1, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "The daily quest that is offered is only available if you select the right follower for the day",	-- the conch/flame gives a "Daily Quest" indicator if the board has something, but it's currently bugged
+				["description"] = "The daily quest that is offered is only available if you select the right follower for the day.",	-- the conch/flame gives a "Daily Quest" indicator if the board has something, but it's currently bugged
 				["g"] = {
 					q(55777, {	-- Wanted: Braxicus
 						["isDaily"] = true,
@@ -461,7 +477,7 @@ _.Zones =
 				["sourceQuest"] = 55175,	-- Where the Road Leads
 			}),
 			i(168155, {	-- Chum
-				["description"] = "Drops from any rare in Nazjatar",
+				["description"] = "Can drop from any rare in Nazjatar.",
 				["g"] = {
 					q(55602, {	-- What Will It Lure?
 						currency(1721),	-- Prismatic Manapearls
@@ -928,7 +944,7 @@ _.Zones =
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
 			q(56158, {	-- Plug the Geysers
-				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 				["isDaily"] = true,
 				["coord"] = { 45.9, 76.6, 1355 },
@@ -937,10 +953,10 @@ _.Zones =
 			}),
 			q(56155, {	-- Plug the Geysers	-- similar name to another daily, but different ID across the map	-- also popped 55874. Possibly an equivalent hordeID?
 				["qg"] = 154247,	-- Apprentice Utapo
-				["coord"] = { 60.6, 50.9, 1355 },
+				["coord"] = { 60.7, 50.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56166,	-- The Needs of the People
+				["sourceQuest"] = 56156,	-- A Tempered Blade  (maybe add 57041 for selecting Farseer Ori for the day?)
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
 			q(55875, {	-- Plug the Geysers -- also triggered 56700
@@ -970,6 +986,19 @@ _.Zones =
 				["coord"] = { 49.2, 62.0, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56240,	-- Strange Silver Knife
+			}),
+			q(56970, {	-- Reefwalker Bark	TO DO: ADD HORDE TURN-IN NPC / COORDS TO DESCRIPTION
+				["description"] = "Turn in to |cFFFFD700Artisan Itanu|r for 75 reputation.",
+				["coords"] = {
+					{ 37.9, 55.6, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
+				},
+				["itemID"] = 170183,	-- Reefwalker Bark
+				["g"] = {
+					crit(39, {	-- Reefwalker Bark
+						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+					}),
+				},
 			}),
 			q(55363, {	-- Rescue The Farseer
 				["qg"] = 151741,	-- Apprentice Odari
@@ -1025,7 +1054,8 @@ _.Zones =
 					{ 37.7, 55.3, 1355 },	-- alliance
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(55725, {	-- Requisition: A Few Spiral Leaf
@@ -1039,7 +1069,23 @@ _.Zones =
 					{ 50.4, 66.2, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
+				},
+			}),
+			q(55789, {	-- Requisition: More Carp
+				["isDaily"] = true,
+				["qgs"] = {
+					155941,	-- Tamer Orami (Alliance)
+				--	,	--  (Horde)
+				},
+				["coords"] = {
+					{ 39.5, 55.4, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(55785, {	-- Requisition: More Starfish
@@ -1060,7 +1106,8 @@ _.Zones =
 					{ 50.9, 65.7, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(57024, {	-- Rumors of Mechagon
@@ -1084,10 +1131,6 @@ _.Zones =
 					56179,	-- The Needs of the People (Horde)
 				},
 				["g"] = {
-					{	-- Bounty: A Few Hydra
-						["questID"] = 55820,
-						["isDaily"] = true,
-					},
 					{	-- Bounty: A Few Makura
 						["questID"] = 55822,
 						["isDaily"] = true,
@@ -1122,10 +1165,6 @@ _.Zones =
 					},
 					{	-- Requisition: A Few Starfish
 						["questID"] = 55719,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: More Carp
-						["questID"] = 55789,
 						["isDaily"] = true,
 					},
 					{	-- Requisition: More Cone Shells
