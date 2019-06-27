@@ -28,6 +28,11 @@ _.Zones =
 					crit(1, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170189, {	-- Blind Eye
+						crit(33, {	-- Blind Eye
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),				
+					}),				
 				},
 			}),
 			n(152416, {	-- Allseer Oma'kil
@@ -398,7 +403,11 @@ _.Zones =
 					crit(28, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(170187),	-- Shadescale
+					i(170187, {	-- Shadescale
+						crit(35, {	-- Shadescale
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),				
+					}),
 				},
 			}),
 			n(153658, {	-- Shiz'narasz the Consumer (verified: Pr3vention)
@@ -479,7 +488,11 @@ _.Zones =
 					crit(34, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(170196),	-- Shirakess Warning Sign
+					i(170196, {	-- Shirakess Warning Sign
+						crit(26, {	-- Shirakess Warning Sign
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),				
+					}),
 				},
 			}),
 			n(152360, {	-- Toxigore the Alpha
@@ -492,7 +505,11 @@ _.Zones =
 					crit(35, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-				--	i(170178),	-- Alpha Fin
+					i(170178, {	-- Alpha Fin
+						crit(44, {	-- Alpha Fin
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),				
+					}),				
 				},
 			}),
 			n(152568, {	-- Urduu

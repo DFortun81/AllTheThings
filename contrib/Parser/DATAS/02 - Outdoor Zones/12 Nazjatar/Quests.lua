@@ -384,6 +384,7 @@ _.Zones =
 					q(55772, {	-- WANTED: Lady Narjiss
 						["isDaily"] = true,
 					}),
+					i(170075),	-- Recipe: Unagi Skewer
 				},
 			}),
 			o(327585, {	-- Bounty Board

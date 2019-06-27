@@ -12,8 +12,16 @@ _.Zones =
 			}),
 			]]--
 		--	Toys
-			i(170476),	-- Underlight Sealamp
-			i(170199),	-- Zanj'ir Weapon Rack
+			i(170476, {	-- Underlight Sealamp
+				crit(20, {	-- Underlight Sealamp
+					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+				}),				
+			}),				
+			i(170199, {	-- Zanj'ir Weapon Rack
+				crit(24, {	-- Underlight Sealamp
+					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+				}),				
+			}),				
 		-- Gear
 			i(170116),	-- Darkened Slicer
 			i(169402),	-- Deeptide Amice

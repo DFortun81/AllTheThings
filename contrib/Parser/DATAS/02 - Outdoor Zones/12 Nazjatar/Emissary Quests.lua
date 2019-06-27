@@ -12,7 +12,11 @@ _.Zones =
 				["repeatable"] = true,
 				["g"] = {
 					i(169940, {	-- Unshackled Supplies
-						i(170203),	-- Flopping Fish
+						i(170203, {	-- Flopping Fish
+							crit(22, {	-- Flopping Fish
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),		
+						}),
 						i(170469),	-- Memento of the Deeps
 						i(170169),	-- Technique: Glyph of the Cold Waves
 					}),
@@ -25,7 +29,11 @@ _.Zones =
 				["repeatable"] = true,
 				["g"] = {
 					i(169939, {	-- Ankoan Supplies
-						i(170203),	-- Flopping Fish
+						i(170203, {	-- Flopping Fish
+							crit(22, {	-- Flopping Fish
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),		
+						}),
 						i(170469),	-- Memento of the Deeps
 					}),
 				},

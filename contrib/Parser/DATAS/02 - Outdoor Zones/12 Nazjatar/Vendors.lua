@@ -570,8 +570,7 @@ _.Zones =
 					}),
 					i(163073),	-- Conch of Wa'mundi
 					i(169364),	-- Prismatic Softshell
-					i(168610),	-- Tabard of the Ankoan
-					i(170075),	-- Recipe: Unagi Skewer (this seems to be on the alliance vendor, but not horde?)
+					i(168610),	-- Tabard of the Waveblade Ankoan
 					i(169548),	-- Recipe: Contract: Ankoan
 					i(169530),	-- Formula: Accord of Critical Strike (Rank 3)
 					i(169531),	-- Formula: Accord of Haste (Rank 3)
