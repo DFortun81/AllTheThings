@@ -359,6 +359,11 @@ _.Zones =
 					["coord"] = { 58.9, 54.8, 1462 },
 					["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				}),
+				q(56532, {	-- Nuke 'Em Norbit
+					["qg"] = 153701,	-- Dashman Hammerall
+					["coord"] = { 80.8, 18.8, 1462 },
+					["isDaily"] = true,
+				}),
 				q(56552, {	-- Off-the-Books Brawlin'
 					["qg"] = 155355,	-- Usha Eyegouge
 					["coord"] = { 70.0, 31.0, 1462 },
