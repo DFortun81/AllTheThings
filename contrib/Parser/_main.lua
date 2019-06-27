@@ -544,10 +544,10 @@ end
 gb = function(id, t)									-- Create an GARRISON BUILDING Object (Alternative)
 	return struct("buildingID", id, t);
 end
-garrisonMission = function(id, t)						-- Create an GARRISON MISSION Object
+mission = function(id, t)						-- Create an MISSION Object
 	return struct("missionID", id, t);
 end
-gm = function(id, t)									-- Create an GARRISON MISSION Object (Alternative)
+mi = function(id, t)									-- Create an MISSION Object (Alternative)
 	return struct("missionID", id, t);
 end
 garrisonTalent = function(id, t)						-- Create an GARRISON TALENT Object
