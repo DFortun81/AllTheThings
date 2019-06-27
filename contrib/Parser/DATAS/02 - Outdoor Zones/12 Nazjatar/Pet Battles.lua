@@ -108,13 +108,13 @@ _.Zones =
 				["crs"] = { 154716 },	-- Spireshell Snail
 			}),
 			q(56454, {	-- Crackling Mandible (A)
-				["itemID"] = 169632,
+				["itemID"] = 169632,	-- Crackling Mandible
 				["crs"] = { 154919 },	-- Voltgorger
 				["coord"] = { 37.5, 16.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56466, {	-- Crackling Mandible (H)
-				["itemID"] = 169637,
+				["itemID"] = 169637,	-- Crackling Mandible
 				["crs"] = { 154919 },	-- Voltgorger
 				["coord"] = { 37.5, 16.7, 1355 },
 				["races"] = HORDE_ONLY,

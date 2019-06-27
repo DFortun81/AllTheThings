@@ -1583,11 +1583,11 @@ _.Zones =
 			o(327170, {	-- Weapon Rack
 				["coord"] = { 34.6, 21.1, 1355 },
 				["g"] = {
-					q(56037, {	-- Stealing the Naga's Secrets
+					q(56037, {	-- Stealing the Naga's Secrets (A)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 56039,	-- We Can't Have Dull Weapons
 					}),
-					q(56045, {	-- Stealing the Naga's Secrets
+					q(56045, {	-- Stealing the Naga's Secrets (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
 					}),

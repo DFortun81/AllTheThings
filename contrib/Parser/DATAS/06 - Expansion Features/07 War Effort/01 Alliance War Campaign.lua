@@ -15,46 +15,30 @@ _.ExpansionFeatures =
 					["maps"] = { 1161 },	-- Boralus
 					["lvl"] = 110,
 					["g"] = {
-						{	-- Criteria 1 — Nazmir Foothold
-							["achievementID"] = 12510,	-- Ready for War
-							["criteriaID"] = 1,	-- Nazmir Foothold
+						crit(1, {	-- Nazmir Foothold
 							["sourceQuests"] = { 51967 },	-- Return to Boralus (Nazmir)
-						},
-						{	-- Criteria 2 — Vol'dun Foothold
-							["achievementID"] = 12510,	-- Ready for War
-							["criteriaID"] = 2,	-- Vol'dun Foothold
+						}),
+						crit(2, {	-- Vol'dun Foothold
 							["sourceQuests"] = { 51969 },	-- Return to Boralus (Vol'dun)
-						},
-						{	-- Criteria 3 — Zuldazar Foothold
-							["achievementID"] = 12510,	-- Ready for War
-							["criteriaID"] = 3,	-- Zuldazar Foothold
+						}),
+						crit(3, {	-- Zuldazar Foothold
 							["sourceQuests"] = { 51968 },	-- Return to Boralus (Zuldazar)
-						},
-						{	-- Criteria 4 — Blood on the Sand
-							["achievementID"] = 12510,	-- Ready for War
-							["criteriaID"] = 4,	-- Blood on the Sand
+						}),
+						crit(4, {	-- Blood on the Sand
 							["sourceQuests"] = { 52146 },	-- Blood on the Sand
-						},
-						{	-- Criteria 5 — Chasing Darkness
-							["achievementID"] = 12510,	-- Ready for War
-							["criteriaID"] = 5,	-- Chasing Darkness
+						}),
+						crit(5, {	-- Chasing Darkness
 							["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
-						},
-						{	-- Criteria 6 — A Golden Opportunity
-							["achievementID"] = 12510,	-- Ready for War
-							["criteriaID"] = 6,	-- A Golden Opportunity
+						}),
+						crit(6, {	-- A Golden Opportunity
 							["sourceQuests"] = { 52261 },	-- Gallywix Got Away
-						},
-						{	-- Criteria 7 — Blood in the Water
-							["achievementID"] = 12510,	-- Ready for War
-							["criteriaID"] = 7,	-- Blood in the Water
+						}),
+						crit(7, {	-- Blood in the Water
 							["sourceQuests"] = { 52496 },	-- A Clean Escape
-						},
-						{	-- Criteria 8 — The Strike on Zuldazar
-							["achievementID"] = 12510,	-- Ready for War
-							["criteriaID"] = 8,	-- The Strike on Zuldazar
+						}),
+						crit(8, {	-- The Strike on Zuldazar
 							["sourceQuests"] = { 52790 },	-- The Strike on Zuldazar
-						},
+						}),
 					},
 				}),
 				ach(13384, {	-- Kul Tirans Don't Look at Explosions
@@ -64,26 +48,18 @@ _.ExpansionFeatures =
 				ach(13467, {	-- Tides of Vengeance
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						{	-- Criteria 1 — War Marches On
-							["achievementID"] = 13467,	-- Tides of Vengeance
-							["criteriaID"] = 1,	-- War Marches On
+						crit(1, {	-- War Marches On
 							["sourceQuests"] = { 53887 },	-- War Marches On
-						},
-						{	-- Criteria 2 — The Sleeper Agent
-							["achievementID"] = 13467,	-- Tides of Vengeance
-							["criteriaID"] = 2,	-- The Sleeper Agent
+						}),
+						crit(2, {	-- The Sleeper Agent
 							["sourceQuests"] = { 54206 },	-- The Sleeper Agent
-						},
-						{	-- Criteria 3 — Mischief Managed
-							["achievementID"] = 13467,	-- Tides of Vengeance
-							["criteriaID"] = 3,	-- Mischief Managed
+						}),
+						crit(3, {	-- Mischief Managed
 							["sourceQuests"] = { 54510 },	-- Mischief Managed
-						},
-						{	-- Criteria 4 — He Who Walks in the Light
-							["achievementID"] = 13467,	-- Tides of Vengeance
-							["criteriaID"] = 4,	-- He Who Walks in the Light
+						}),
+						crit(4, {	-- He Who Walks in the Light
 							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
-						},
+						}),
 					},
 				}),
 				n(-6015, {	-- Rewards
@@ -1093,6 +1069,29 @@ _.ExpansionFeatures =
 						["qg"] = 147885,	-- Anduin Wrynn
 						["coord"] = { 49.2, 85.4, 1161 },	-- Boralus
 						["sourceQuests"] = { 54163 },	-- As the Dust Settles
+					}),
+				--	RISE OF AZSHARA (8.2)
+					q(55784, {	-- Payment in Kind
+						["sourceQuests"] = {
+							55937,	-- Clearing Out the Cache
+							54183,	-- Dead Reckoning
+						},
+						["coord"] = { 40.2, 55.2, 1355 },	-- Nazjatar
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 1355 },	-- Nazjatar
+						["lvl"] = 120,
+						["qg"] = 150101,	-- Lady Jaina Proudmoore
+					}),
+					q(55783, {	-- Stay of Execution
+						["sourceQuests"] = { 55784 },	-- Payment in Kind
+						["coord"] = { 85.7, 31.7, 84 },	-- Stormwind
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 
+							84,		-- Stormwind
+							1479,	-- Baine Rescue (this quest leads to this scenario.  not sure where else to put this map)
+						},
+						["lvl"] = 120,
+						["qg"] = 107574,	-- Anduin Wrynn
 					}),
 				}),
 			},
