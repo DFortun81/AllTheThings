@@ -1017,6 +1017,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				},
+				q(54763, {	-- Crossing Over
+					["qg"] = 149529,	-- Spiritwalker Ussoh
+					["coord"] = { 49.2, 60.8, 65 },
+					["sourceQuest"] = 54761,	-- Spirit Guide
+					["races"] = { 6 },	-- Tauren
+					["lvl"] = 120,
+				}),
+				q(54764, {	-- Storm in Bloodhoof
+					["qg"] = 149529,	-- Spiritwalker Ussoh
+					["coord"] = { 49.2, 60.8, 65 },
+					["sourceQuest"] = 54763,	-- Crossing Over
+					["races"] = { 6 },	-- Tauren
+					["lvl"] = 120,
+				}),
 			}),
 		}),
 	}),

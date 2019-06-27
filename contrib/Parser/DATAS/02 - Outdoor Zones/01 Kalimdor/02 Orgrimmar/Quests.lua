@@ -1768,6 +1768,13 @@ _.Zones =
 					["sourceQuest"] = 26311,	-- Unfamiliar Waters
 					["lvl"] = 84,
 				}),
+				q(54759, {	-- When Spririts Whisper	
+					["qg"] = 149088,	-- Spiritwalker Isahi
+					["coord"] = { 39.1, 79.0, 85 },
+					["sourceQuest"] = 56571,	-- Finish Baine Rescue Scenario
+					["races"] = { 6 },	-- Tauren
+					["lvl"] = 120,
+				}),
 				q(49982, {	-- Witness to the Wound
 					["qg"] = 132254,	-- Nathanos Blightcaller
 					["coord"] = { 49.8, 75.6, 85 },
@@ -1797,7 +1804,7 @@ _.Zones =
 						i(18798),	-- Horn of the Swift Gray Wolf
 						i(18797),	-- Horn of the Swift Timber Wolf
 					},
-				}),				
+				}),
 			}),
 		}),
 	}),
