@@ -49,6 +49,11 @@ _.Zones =
 						},
 					},
 				}),
+				q(55813, {	-- Aim High
+					["qg"] = 154568,	-- Pedram Mechanotrax
+					["coord"] = { 62.1, 76.8, 1462 },
+					["isDaily"] = true,
+				}),
 				q(55210, {	-- Batteries Not Included
 					["qg"] = 150630,	-- Flip Quickcharge
 					["coord"] = { 70.8, 39.1, 1462 },
@@ -353,6 +358,14 @@ _.Zones =
 							["achievementID"] = 13556,
 							["criteriaID"] = 25,
 						},
+					},
+				}),
+				q(55451, {	-- Paint Vial: Fireball Red
+					["itemID"] = 167790,
+					["g"] = {
+						crit(6, {	-- Available in Eight Colors
+							["achievementID"] = 13513,
+						}),
 					},
 				}),
 				o(327548, {	-- Powerpack Blueprints
