@@ -42,9 +42,11 @@ _.Zones =
 				}),
 				p(2662, {	-- Duskytooth Snooter
 					["crs"] = { 154769 },	-- Duskytooth Snoother
+					["description"] = "Rare pet. Shares spawns with |cFFFFD700Rustyroot Snooter|r."
 				}),
 				p(2664, {	-- Experimental Roach
 					["crs"] = { 154773 },	-- Experimental Roach
+					["description"] = "Rare pet. Shares spawns with |cFFFFD700Junkheap Roach|r."
 				}),
 				p(2665, {	-- Fleeting Frog
 					["crs"] = { 154775 },	-- Fleeting Frog
@@ -75,6 +77,7 @@ _.Zones =
 				}),
 				p(2666, {	-- Yellow Junkhopper
 					["crs"] = { 154777 },	-- Yellow Junkhopper
+					["description"] = "Rare pet. Shares spawns with |cFFFFD700Fleeting Frog|r."
 				}),
 				q(56442, {	-- Broken Unit 6
 					["itemID"] = 169621,	-- Broken Unit 6
