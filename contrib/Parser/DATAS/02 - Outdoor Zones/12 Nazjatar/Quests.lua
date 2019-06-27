@@ -1536,6 +1536,13 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55869,	-- Clearing Out the Cache
 			}),
+			q(55714, {	-- Void Cache
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 56.3, 15.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(56039, {	-- We Can't Have Dull Weapons
 				["qg"] = 153936,	-- Overseer Hajeer
 				["coord"] = { 36.9, 27.0, 1355 },
