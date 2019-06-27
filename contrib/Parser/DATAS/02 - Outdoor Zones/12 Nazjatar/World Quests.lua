@@ -233,6 +233,17 @@ _.Zones =
 						},
 					},
 				}),
+				q(56013, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
+					["sourceQuest"] = 56248,	-- Treasure Tale
+					["g"] = {
+						{	-- Puzzle Performer (Easy Runelocked Chest: Orange)
+							["achievementID"] = 13764,
+							["criteriaID"] = 13,
+						},
+					},
+				}),
 				q(56016, {	-- Runelocked Chest
 					["lvl"] = 120,
 					["collectible"] = false,

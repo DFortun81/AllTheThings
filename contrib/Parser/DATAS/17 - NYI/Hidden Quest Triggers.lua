@@ -106,6 +106,8 @@ _.NeverImplemented =
 		q(55429),	-- Ravenous Slime fed (45.7, 24.1)
 		q(55430),	-- Ravenous Slime fed (32.9, 39.8)
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
+		q(56614),	-- Blightlight first kill
+		q(56606),	-- Sandclaw Stonoeshell first kill
 		
 		-- Mechagon
 		q(55547),	-- Mechanized Chest. Chests spawn randomly

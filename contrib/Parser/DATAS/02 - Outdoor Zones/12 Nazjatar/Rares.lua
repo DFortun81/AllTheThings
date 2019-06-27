@@ -82,10 +82,8 @@ _.Zones =
 					}),
 				},
 			}),
-			n(152712, {	-- Blindlight
-				["allianceQuestID"] = 56269,
-				--["hordeQuestID"] = 56614,
-				["hordeQuestID"] = 56269,
+			n(152712, {	-- Blindlight (Verified: Pr3vention)
+				["questID"] = 56269,
 				["isDaily"] = true,
 				["coords"] = {
 					{ 39.8, 77.2, 1355 },	-- cave entrance
@@ -338,21 +336,9 @@ _.Zones =
 					i(169369),	-- Sandkeep
 				},
 			}),
-			n(152795, {	-- Sandclaw Stoneshell
-				["allianceQuestID"] = 56277,
-				["allianceQuestID"] = 56606,
-				["hordeQuestID"] = 56277,
+			n(152795, {	-- Sandclaw Stoneshell (Verified: Pr3vention)
+				["questID"] = 56277,
 				["isDaily"] = true,
-				--[[ -- now spawns all over the map multiple times at once. Not sure if this is intentional or not but these coords don't apply anymore
-				["coords"] = {
-					{ 67.2, 52.2, 1355 },
-					{ 64.4, 55.0, 1355 },
-					{ 74.7, 31.4, 1355 },
-					{ 80.5, 42.2, 1355 }, -- on top of a building. Requires the Deepcoral Pod buff to get to him
-					{ 84.5, 40.7, 1355 }, -- second time on land
-					{ 74.5, 44.0, 1355 }, -- first time finding him. Possibly spawns in multiple places
-				},
-				]]--
 				["g"] = {
 					crit(24, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
