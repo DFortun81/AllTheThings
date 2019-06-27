@@ -118,5 +118,6 @@ _.NeverImplemented =
 		q(55554),	-- Mechanized Chest. Chests spawn randomly
 		q(55555),	-- Mechanized Chest. Chests spawn randomly
 		q(55556),	-- Mechanized Chest. Chests spawn randomly
+		q(55921),	-- Uncle T'Rogg first kill
 	}),
 };

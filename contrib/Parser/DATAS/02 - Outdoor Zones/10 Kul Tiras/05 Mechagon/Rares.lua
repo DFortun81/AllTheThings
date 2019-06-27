@@ -476,9 +476,7 @@ _.Zones =
 					},
 				}),
 				n(151940, {	-- Uncle T'Rogg
-					["allianceQuestID"] = 55538, -- 56333 also triggered (alliance)
-					--["hordeQuestID"] = 55921,
-					["hordeQuestID"] = 55538,
+					["questID"] = 55538,
 					["coord"] = { 57.3, 20.7, 1462 },
 					["isDaily"] = true,
 					["g"] = {

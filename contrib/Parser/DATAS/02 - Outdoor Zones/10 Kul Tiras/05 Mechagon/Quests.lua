@@ -197,6 +197,14 @@ _.Zones =
 						},
 					},
 				}),
+				q(55305, {	-- Bolted Steelhead -- caught around 46.8,28.2
+					["itemID"] = 167655,
+					["g"] = {
+						crit(2, {	-- Secret Fish of Mechagon
+							["achievementID"] = 13489,
+						}),
+					},
+				}),
 				q(55055, {	-- Build a Bigger Fish Trap
 					["qg"] = 151462,	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },
@@ -497,6 +505,14 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 55736,	-- Welcome to the Resistance
+				}),
+				q(55312, {	-- Solarsprocket Barbel -- caught around 46.8,28.2
+					["itemID"] = 167662,
+					["g"] = {
+						crit(9, {	-- Secret Fish of Mechagon
+							["achievementID"] = 13489,
+						}),
+					},
 				}),
 				q(56740, {	-- S.P.A.R.E. Crates
 					["qg"] = 152295,	-- Pascal
