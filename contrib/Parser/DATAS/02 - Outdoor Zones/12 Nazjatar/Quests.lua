@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-17,  {	-- Quests
+		n(-17, {	-- Quests
 			--[[
 			possible secrets:
 			"Neri's Spot" npc at 71.5, 19.4 at the top of a hidden path behind the waterfall
@@ -35,6 +35,22 @@ _.Zones =
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["g"] = {
 					i(168846),	-- Pearl of Lucid Dreams (Rank 1)
+				},
+			}),
+			o(329805, {	-- Strange Crystal
+				["coords"] = {
+					{ 32.8, 39.5, 1355 },
+					{ 55.2, 48.8, 1355 },
+				},
+				["g"] = {
+					q(56561, {	-- A Curious Discovery (A)
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 56156,	-- A Tempered Blade
+					}),
+					q(56560, {	-- A Curious Discovery (H)
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55500,	-- Save a Friend
+					}),
 				},
 			}),
 			q(56777, {	-- A Gift From The Clan
@@ -241,13 +257,16 @@ _.Zones =
 			q(55836, {	-- Bounty: Elite Naga Forces
 				["isDaily"] = true,
 				["qgs"] = {
-					151614,	-- Nevin Tideheart (horde)
+					152942,	-- Lieutenant Hawkins (Alliance)
+					151614,	-- Nevin Tideheart (Horde)
 				},
 				["coords"] = {
-					{ 50.4, 66.2, 1355 },	-- horde
+					{ 40.0, 55.4, 1355 },	-- Alliance
+					{ 50.4, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save a Friend
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
 				},
 			}),
 			q(55830, {	-- Bounty: More Coral Ancients
@@ -288,15 +307,16 @@ _.Zones =
 			q(55828, {	-- Bounty: More Murlocs
 				["isDaily"] = true,
 				["qgs"] = {
-					155941,	-- Tamer Orami (alliance)
-					151352,	-- Lily Bopip
+					155941,	-- Tamer Orami (Alliance)
+					151352,	-- Lily Bopip (Horde)
 				},
 				["coords"] = {
-					{ 39.6, 55.5, 1355 },	-- alliance
-					{ 47.3, 61.9, 1355 },	-- horde
+					{ 39.6, 55.4, 1355 },	-- Alliance
+					{ 47.3, 61.9, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(55827, {	-- Bounty: More Naga
@@ -896,6 +916,14 @@ _.Zones =
 				["sourceQuest"] = 56166,	-- The Needs of the People
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
+			q(56158, {	-- Plug the Geysers
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 45.9, 76.6, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154245,	-- Apprentice Unato
+			}),
 			q(56155, {	-- Plug the Geysers	-- similar name to another daily, but different ID across the map	-- also popped 55874. Possibly an equivalent hordeID?
 				["qg"] = 154247,	-- Apprentice Utapo
 				["coord"] = { 60.6, 50.9, 1355 },
@@ -978,13 +1006,16 @@ _.Zones =
 			q(55727, {	-- Requisition: A Few Flotsam
 				["isDaily"] = true,
 				["qgs"] = {
-					153512,	-- Finder Pruc (horde)
+					153509,	-- Artisan Okata
+					153512,	-- Finder Pruc (Horde)
 				},
 				["coords"] = {
-					{ 49.2, 62.2, 1355 },	-- horde
+					{ 37.9, 55.7, 1355 },	-- Alliance
+					{ 49.2, 62.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save a Friend (horde)
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
 				},
 			}),
 			q(55720, {	-- Requisition: A Few Seaweed
@@ -1203,10 +1234,9 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 154248,	-- A Tempered Blade
 				["g"] = {
-					{	-- Tour of the Depths (Learn about the Scrying Stones of Nazjatar)
-						["achievementID"] = 13635,
-						["criteriaID"] = 3,
-					},
+					crit(3, {	-- Learn about the Scrying Stones of Nazjatar
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 				},
 			}),
 			q(56210, {	-- Scrying Stones
@@ -1215,10 +1245,9 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55500,	-- Save A Friend
 				["g"] = {
-					{	-- Tour of the Depths (Learn about the Scrying Stones of Nazjatar)
-						["achievementID"] = 13635,
-						["criteriaID"] = 3,
-					},
+					crit(3, {	-- Learn about the Scrying Stones of Nazjatar
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 				},
 			}),
 			q(55860, {	-- Sea Slug Liquidation
@@ -1282,22 +1311,6 @@ _.Zones =
 				["coord"] = { 37.2, 67.3, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56429,	-- Up Against It
-			}),
-			o(329805, {	-- Strange Crystal
-				["coords"] = {
-					{ 32.8, 39.5, 1355 },
-					{ 55.2, 48.8, 1355 },
-				},
-				["g"] = {
-					q(56561, {	-- A Curious Discovery
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 56156,	-- A Tempered Blade
-					}),
-					q(56560, {	-- A Curious Discovery
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 55500,	-- Save a Friend
-					}),
-				},
 			}),
 			q(55485, {	-- Terrors in the Deep
 				["qg"] = 152066,	-- First Arcanist Thalyssra

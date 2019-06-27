@@ -37,7 +37,7 @@ _.Zones =
 				}),
 				crit(1, {	-- Prince Wiggletail
 					["crs"] = { 154910 },	-- Prince Wiggletail
-					["coord"] = { 34.7, 27.4, 1355 },
+					["coord"] = { 34.7, 27.4, 1355 },	-- entrance at 36.9, 27.6
 				}),
 				crit(7, {	-- Ravenous Scalespawn
 					["crs"] = { 154916 },	-- Ravenous Scalespawn
@@ -120,13 +120,13 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 			}),
 			q(56450, {	-- Eel Jelly (A)
-				["itemID"] = 169628,
+				["itemID"] = 169628,	-- Eel Jelly
 				["crs"] = { 154915 },	-- Elderspawn of Nalaada
 				["coord"] = { 51.3, 75.0, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56462, {	-- Eel Jelly (H)
-				["itemID"] = 169641,
+				["itemID"] = 169641,	-- Eel Jelly
 				["crs"] = { 154915 },	-- Elderspawn of Nalaada
 				["coord"] = { 51.3, 75.0, 1355 },
 				["races"] = HORDE_ONLY,
@@ -144,27 +144,25 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 			}),
 			q(56447, {	-- Half-Digested Deepcoral Pod (A)
-				["itemID"] = 169625,
+				["itemID"] = 169625,	-- Half-Digested Deepcoral Pod
 				["crs"] = { 154912 },	-- Silence
 				["coord"] = { 58.3, 48.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56459, {	-- Half-Digested Deepcoral Pod (H)
-				["itemID"] = 169644,
+				["itemID"] = 169644,	-- Half-Digested Deepcoral Pod
 				["crs"] = { 154912 },	-- Silence
 				["coord"] = { 58.3, 48.1, 1355 },
 				["races"] = HORDE_ONLY,
 			}),
-			--[[ TODO:: figure out what the alliance questID is
-			q(, {	-- Leathery Venom Gland (a)
-				["itemID"] = 169624,
+			q(56446, {	-- Leathery Venom Gland (A)
+				["itemID"] = 169624,	-- Leathery Venom Gland
 				["crs"] = { 154911 },	-- Chomp
 				["coord"] = { 71.9, 51.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			]]--
 			q(56457, {	-- Leathery Venom Gland (H)
-				["itemID"] = 169645,
+				["itemID"] = 169645,	-- Leathery Venom Gland
 				["crs"] = { 154911 },	-- Chomp
 				["coord"] = { 71.9, 51.2, 1355 },
 				["races"] = HORDE_ONLY,
@@ -182,13 +180,13 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 			}),
 			q(56451, {	-- Mottled Hydra Scale (A)
-				["itemID"] = 169629,
+				["itemID"] = 169629,	-- Mottled Hydra Scale
 				["crs"] = { 154916 },	-- Ravenous Scalespawn
 				["coord"] = { 29.6, 49.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56463, {	-- Mottled Hydra Scale (H)
-				["itemID"] = 169640,
+				["itemID"] = 169640,	-- Mottled Hydra Scale
 				["crs"] = { 154916 },	-- Ravenous Scalespawn
 				["coord"] = { 29.6, 49.7, 1355 },
 				["races"] = HORDE_ONLY,
@@ -222,18 +220,12 @@ _.Zones =
 				["crs"] = { 154914 },	-- Pearlhusk Crawler
 				["coord"] = { 50.5, 50.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
-			--	["qg"] = 154914,	-- Pearlhusk Crawler
-			--	sort of????  not sure what these are for.  i defeated Pearlhusk Crawler and this item popped into my inventory/quest popped up
-			--	not sure if this can be done daily for reputation or if it's a one-time little rep boost (+250), or if it's used for something else
 			}),
 			q(56461, {	-- Pearlescent Shell (H)
 				["itemID"] = 169642,	-- Pearlescent Shell
 				["crs"] = { 154914 },	-- Pearlhusk Crawler
 				["coord"] = { 50.5, 50.2, 1355 },
 				["races"] = HORDE_ONLY,
-			--	["qg"] = 154914,	-- Pearlhusk Crawler
-			--	sort of????  not sure what these are for.  i defeated Pearlhusk Crawler and this item popped into my inventory/quest popped up
-			--	not sure if this can be done daily for reputation or if it's a one-time little rep boost (+250), or if it's used for something else
 			}),
 			q(56452, {	-- Strange Organ (A)
 				["itemID"] = 169630,	-- Strange Organ
@@ -248,13 +240,13 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 			}),
 			q(56444, {	-- Wiggletail's Poking Fork (A)
-				["itemID"] = 169623,
+				["itemID"] = 169623,	-- Wiggletail's Poking Fork
 				["crs"] = { 154910 },	-- Prince Wiggletail
 				["coord"] = { 34.7, 27.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56445, {	-- Wiggletail's Poking Fork (H)
-				["itemID"] = 169646,
+				["itemID"] = 169646,	-- Wiggletail's Poking Fork
 				["crs"] = { 154910 },	-- Prince Wiggletail
 				["coord"] = { 34.7, 27.4, 1355 },
 				["races"] = HORDE_ONLY,
