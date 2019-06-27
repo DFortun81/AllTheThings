@@ -360,10 +360,8 @@ _.Zones =
 					i(169370),	-- Scalebrood Hydra
 				},
 			}),
-			n(152545, {	-- Scale Matriarch Vynara
-				["allianceQuestID"] = 56293,
-				--["hordeQuestID"] = 56590,
-				["hordeQuestID"] = 56293,
+			n(152545, {	-- Scale Matriarch Vynara (Verified: Pr3vention)
+				["questID"] = 56293,
 				["coord"] = { 27.2, 37.1, 1355 },
 				["isDaily"] = true,
 				["g"] = {
@@ -443,6 +441,12 @@ _.Zones =
 				--	i(170176),	-- Fathom Ray Wing
 				},
 			}),
+			--[[
+			n(155836, {	-- Theurgist Nitara 
+				["questID"] = 56890,	-- hordeID. verify if alliance is the same
+				["coord"] = { 49.4, 65.5, 1355 },
+			}),
+			]]--
 			n(153898, {	-- Tidelord Aquatus
 				["isDaily"] = true,
 				["coord"] = { 62.4, 29.6, 1355 },
