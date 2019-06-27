@@ -77,6 +77,16 @@ _.Zones =
 						},
 					},
 				}),
+				i(167836, {	-- Blueprint: Canned Minnows
+					["questID"] = 55057,
+					["crs"] = { 151569 },	-- Deepwater Maw
+					["g"] = {
+						{	-- Junkyard Architect (Canned Minnows)
+							["achievementID"] = 13479,
+							["criteriaID"] = 5,
+						},
+					},
+				}),
 				i(168908, {	-- Blueprint: Experimental Adventurer Augment
 					["questID"] = 56087,
 					["crs"] = {
