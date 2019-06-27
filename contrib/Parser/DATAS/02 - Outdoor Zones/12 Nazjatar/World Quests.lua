@@ -367,6 +367,22 @@ _.Zones =
 						i(169535),	-- Formula: Force Multiplier (Rank 3)
 					},
 				}),
+				q(56827, {	-- Work Order: Enchant Weapon - Naga Hide (A)
+					["lvl"] = 120,
+					["collectible"] = false,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(170213),	-- Formula: Naga Hide (Rank 3)
+					},
+				}),
+				q(56818, {	-- Work Order: Enchant Weapon - Naga Hide (H)
+					["lvl"] = 120,
+					["collectible"] = false,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(170213),	-- Formula: Naga Hide (Rank 3)
+					},
+				}),
 				q(55894, {	-- Zoko, Her Iron Defender
 					["lvl"] = 120,
 					["collectible"] = false,
