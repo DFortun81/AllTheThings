@@ -586,7 +586,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(168307),	-- Necklace of Most Beautiful Shells
-					i(138308),	-- Most Magnificient Small Shell of Shimmering
+					i(168308),	-- Most Magnificient Small Shell of Shimmering
 					-- i(168824),	-- Ocean Simulator -- not on Suva's inventory now. Need to verify new source
 					i(168309),	-- Armwrap of Ocean Magic
 					i(168320),	-- Shiniest Roundiest Pearl of Goodness
