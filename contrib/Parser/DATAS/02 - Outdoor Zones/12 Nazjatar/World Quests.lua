@@ -23,10 +23,6 @@ _.Zones =
 					["lvl"] = 120,
 					["collectible"] = false,
 				}),
-				q(55820, {	-- Bounty: A Few Hydras
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(55891, {	-- Champion Aldrantiss, Defender of Her Kingdom
 					["lvl"] = 120,
 					["collectible"] = false,

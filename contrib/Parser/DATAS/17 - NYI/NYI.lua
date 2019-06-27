@@ -2772,7 +2772,7 @@ _.NeverImplemented =
 	un(1, i(146307)), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)						(removed Beta)
 
 ------------------------------------------------------------
---			T E M P O R A R Y			I T E M S		 	--
+--			T E M P O R A R Y			I T E M S		  --
 ------------------------------------------------------------
 
 -- Here I am going to call upon maps that don't really have any data and wouldn't make sense to display a mini list in
@@ -2786,4 +2786,5 @@ m(1338),	-- Darkshore (Tyrande's Ascension scenario)
 m(933),		-- Forge of Souls (Lightbound Draenei scenario map)
 m(1170),	-- Gorgrond (Mag'har scenario)
 m(1351),	-- Horde war campaign scenario to free Lady Ashvane
+m(1479),	-- Baine Rescue (Scenario)
 };
