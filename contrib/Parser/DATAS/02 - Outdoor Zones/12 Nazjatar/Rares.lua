@@ -43,7 +43,7 @@ _.Zones =
 				},
 			}),
 			n(152794, {	-- Amethyst Spireshell
-				["allianceQuestID"] = 56268,
+				["allianceQuestID"] = 56615,
 				["hordeQuestID"] = 56268,
 				["isDaily"] = true,
 				["coords"] = {
@@ -340,7 +340,7 @@ _.Zones =
 			}),
 			n(152795, {	-- Sandclaw Stoneshell
 				["allianceQuestID"] = 56277,
-				--["allianceQuestID"] = 56606,
+				["allianceQuestID"] = 56606,
 				["hordeQuestID"] = 56277,
 				["isDaily"] = true,
 				--[[ -- now spawns all over the map multiple times at once. Not sure if this is intentional or not but these coords don't apply anymore
@@ -401,9 +401,13 @@ _.Zones =
 					i(169370),	-- Scalebrood Hydra
 				},
 			}),
+--[[		n(155841, {	-- Shadowbinder Athissa (Naga Commander)
+				["questID"] = 56894,	-- Alliance, not sure if Horde has a separate questID
+				["coord"] = { 74.0, 32.8, 1355 },
+			}),		--]]
 			n(152552, {	-- Shassera
 				["allianceQuestID"] = 56295,
-				--["hordeQuestID"] = 56588,
+				["hordeQuestID"] = 56588,
 				["hordeQuestID"] = 56295,
 				["coord"] = { 63.7, 6.0, 1355 },
 				["g"] = {

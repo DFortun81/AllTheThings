@@ -74,6 +74,17 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			}),
+			o(325853, {	-- Empty Bookcase
+				["coord"] = { 78.4, 28.6, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					q(55636, {	-- A Life's Work
+						["isDaily"] = true,
+						["sourceQuest"] = 56156,	-- A Tempered Blade
+						["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+					}),
+				},
+			}),
 			q(55993, {	-- A Little Edge
 				["qg"] = 153743,	-- Kade Makreef
 				["coord"] = { 26.0, 41.8, 1355 },
@@ -178,16 +189,14 @@ _.Zones =
 			o(326588, {	-- Azerite Weapons Cache -- TODO: 326588 was the original objectID on horde, but alliance is 326393. Has this changed for horde as well?
 				["coord"] = { 46.0, 51.9, 1355 },
 				["g"] = {
-					{	-- Clearing Out the Cache
-						["questID"] = 55937,
+					q(55937, {	-- Clearing Out the Cache (A)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 55861,	-- Let the Residue Lead You
-					},
-					{	-- Clearing Out the Cache
-						["questID"] = 55869,
+					}),
+					q(55869, {	-- Clearing Out the Cache (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55868,	-- Let the Residue Lead You
-					},
+					}),
 				},
 			}),
 			q(57005, {	-- Becoming a Friend
@@ -350,18 +359,15 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "The daily quest that is offered is only available if you select the right follower for the day",	-- the conch/flame gives a "Daily Quest" indicator if the board has something, but it's currently bugged
 				["g"] = {
-					{	-- Wanted: Braxicus
-						["questID"] = 55777,
+					q(55777, {	-- Wanted: Braxicus
 						["isDaily"] = true,
-					},
-					{	-- WANTED: Commander Sarj'eth
-						["questID"] = 55770,
+					}),
+					q(55770, {	-- WANTED: Commander Sarj'eth
 						["isDaily"] = true,
-					},
-					{	-- WANTED: Lady Narjiss
-						["questID"] = 55772,
+					}),
+					q(55772, {	-- WANTED: Lady Narjiss
 						["isDaily"] = true,
-					},
+					}),
 				},
 			}),
 			o(327585, {	-- Bounty Board
@@ -394,12 +400,10 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save A Friend -- confirm sourceQuest. Possibly  "The Needs of the People" instead?
 			}),
 			i(168081, {	-- Brinestone Pickaxe
-				["description"] = "Drops from any rare in Nazjatar",
+				["description"] = "Can drop from any rare in Nazjatar.",
 				["g"] = {
 					q(55531, {	-- What Will It Mine?
-						["g"] = {
-							currency(1721),	-- Prismatic Manapearl
-						},
+						currency(1721),	-- Prismatic Manapearl
 					}),
 				},
 			}),
@@ -460,15 +464,13 @@ _.Zones =
 				["description"] = "Drops from any rare in Nazjatar",
 				["g"] = {
 					q(55602, {	-- What Will It Lure?
-						["g"] = {
-							currency(1721),	-- Prismatic Manapearls
-						},
+						currency(1721),	-- Prismatic Manapearls
 					}),
 				},
 			}),
 			q(56309, {	-- City of Drowned Friends
 				["qg"] = 154522,	-- Shandris Feathermoon
-				["coord"] = { 76.1, 45.7, 1355 },
+				["coord"] = { 76.0, 45.8, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 			}),
@@ -566,6 +568,19 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55862,	-- Insight into Our Enemies
 			}),
+			o(327591, {	-- Preserved Journal
+				["coord"] = { 81.4, 45.4, 1355 },
+				["g"] = {
+					q(56243, {	-- Diaries of the Dead
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 56241,	-- Preserved Clues
+					}),
+					q(56244, {	-- Diaries of the Dead
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 56242,	-- Preserved Clues
+					}),
+				},
+			}),
 			q(56641, {	-- Disruption of Power
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
 				["coord"] = { 48.7, 86.8, 1355 },
@@ -620,17 +635,6 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55361,	-- The Lost Shaman
 			}),
-			o(325853, {	-- Empty Bookcase
-				["coord"] = { 78.4, 28.6, 1355 },
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					q(55636, {	-- A Life's Work
-						["isDaily"] = true,
-						["sourceQuest"] = 56156,	-- A Tempered Blade
-						["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-					}),
-				},
-			}),
 			o(325869, {	-- Empty Cask
 				["coord"] = { 59.5, 41.8, 1355 },
 				["races"] = HORDE_ONLY,
@@ -644,24 +648,24 @@ _.Zones =
 			o(327592, {	-- Enchanted Lock
 				["coord"] = { 78.8, 41.1, 1355 },
 				["g"] = {
-					q(56246, {	-- Enchanted Lock
+					q(56246, {	-- Enchanted Lock (A)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 56243,	-- Diaries of the Dead
 						["description"] = "Match 3 purple runes.",
 					}),
-					q(56245, {	-- Enchanted Lock
+					q(56245, {	-- Enchanted Lock (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 56244,	-- Diaries of the Dead
 						["description"] = "Match 3 purple runes.",
 					}),
-					q(56247, {	-- Treasure Tale
+					q(56247, {	-- Treasure Tale (A)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 56246,	-- Enchanted Lock
 						["g"] = {
 							spell(305101),	-- Curios of Nazjatar
 						},
 					}),
-					q(56248, {	-- Treasure Tale
+					q(56248, {	-- Treasure Tale (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 56245,	-- Enchanted Lock
 						["g"] = {
@@ -717,6 +721,14 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save a Friend
+			}),
+			q(55683, {	-- Forgotten Memories
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 78.5, 26.8, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 152716,	-- Arylina
 			}),
 			q(56640, {	-- Fortunate Souls
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
@@ -887,10 +899,9 @@ _.Zones =
 					55530,	-- A Safer Place (horde)
 				},
 				["g"] = {
-					{	-- Tour of the Depths (Find and Assist Mrrl)
-						["achievementID"] = 13635,
-						["criteriaID"] = 7,
-					},
+					crit(7, {	-- Find and Assist Mrrl
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 					i(168093),	-- Grimy Manapearl Bracelet
 				},
 			}),
@@ -959,19 +970,6 @@ _.Zones =
 				["coord"] = { 49.2, 62.0, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56240,	-- Strange Silver Knife
-			}),
-			o(327591, {	-- Preserved Journal
-				["coord"] = { 81.4, 45.4, 1355 },
-				["g"] = {
-					q(56243, {	-- Diaries of the Dead
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 56241,	-- Preserved Clues
-					}),
-					q(56244, {	-- Diaries of the Dead
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 56242,	-- Preserved Clues
-					}),
-				},
 			}),
 			q(55363, {	-- Rescue The Farseer
 				["qg"] = 151741,	-- Apprentice Odari
@@ -1336,13 +1334,13 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56353,	-- An Abyssal Opportunity
 			}),
-			q(56311, {	-- The Ever Drowning
+			q(56311, {	-- The Ever Drowning (A)
 				["qg"] = 154660,	-- Shandris Feathermoon
 				["coord"] = { 73.9, 41.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56309,	-- City of Drowned Friends
 			}),
-			q(56312, {	-- The Ever Drowning
+			q(56312, {	-- The Ever Drowning (H)
 				["qg"] = 154661,	-- First Arcanist Thalyssra
 				["coord"] = { 73.9, 41.7, 1355 },
 				["races"] = HORDE_ONLY,
@@ -1374,10 +1372,10 @@ _.Zones =
 			}),
 			q(56304, {	-- The High Life
 				["qg"] = 154574,	-- Kelya Moonfall
-				["coord"] = { 74.1, 24.9, 1355 },
+				["coord"] = { 74.2, 24.9, 1355 },
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade
-					55500,	-- Save a Friend
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
 				},
 			}),
 			q(55361, {	-- The Lost Shaman
@@ -1406,7 +1404,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55862,	-- Insight into Our Enemies
 			}),
-			q(56782, {	-- The Speaker's Gift
+			q(56782, {	-- The Speaker's Gift (also gave credit for Horde quest 56803 "Just a Friend")
 				["qg"] = 154304,	-- Waveblade Shaman (Farseer Ori)
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches rank 2.",
@@ -1420,25 +1418,25 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55490,	-- We'll Poke Their Eye Out
 			}),
-			q(56313, {	-- The Warbringer
+			q(56313, {	-- The Warbringer (A)
 				["qg"] = 155071,	-- Shandris Feathermoon
 				["coord"] = { 79.7, 44.9, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56311,	-- The Ever Drowning
 			}),
-			q(56314, {	-- The Warbringer
+			q(56314, {	-- The Warbringer (H)
 				["qg"] = 155325,	-- First Arcanist Thalyssra
 				["coord"] = { 79.7, 44.9, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56312,	-- The Ever Drowning
 			}),
-			q(56315, {	-- They Made Their Choice
+			q(56315, {	-- They Made Their Choice (A)
 				["qg"] = 155071,	-- Shandris Feathermoon
 				["coord"] = { 79.7, 44.9, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56313,	-- The Warbringer
 			}),
-			q(56316, {	-- They Made Their Choice
+			q(56316, {	-- They Made Their Choice (H)
 				["qg"] = 155325,	-- First Arcanist Thalyssra
 				["coord"] = { 79.7, 44.9, 1355 },
 				["races"] = HORDE_ONLY,
