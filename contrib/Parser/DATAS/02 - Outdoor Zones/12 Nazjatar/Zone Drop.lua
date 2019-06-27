@@ -11,9 +11,6 @@ _.Zones =
 				i(170120),	-- Handmaiden's Longstaff
 			}),
 			]]--
-		--	Recipes
-			i(169497),	-- Recipe: Superior Battle Potion of Intellect (Rank 3)
-			i(169498),  -- Recipe: Superior Battle Potion of Stamina (Rank 3)
 		--	Toys
 			i(170476),	-- Underlight Sealamp
 			i(170199),	-- Zanj'ir Weapon Rack

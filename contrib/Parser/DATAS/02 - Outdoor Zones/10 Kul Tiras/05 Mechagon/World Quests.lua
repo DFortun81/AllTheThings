@@ -13,6 +13,7 @@ _.Zones =
 				}),
 				q(56394, {	-- Sputtertube
 					["collectible"] = false,
+					["lvl"] = 120,
 				}),
 			}),
 		}),

@@ -23,6 +23,10 @@ _.Zones =
 					["lvl"] = 120,
 					["collectible"] = false,
 				}),
+				q(55820, {	-- Bounty: A Few Hydras
+					["collectible"] = false,
+					["lvl"] = 120,
+				}),
 				q(55891, {	-- Champion Aldrantiss, Defender of Her Kingdom
 					["lvl"] = 120,
 					["collectible"] = false,
@@ -279,6 +283,10 @@ _.Zones =
 					},
 				}),
 				]]--
+				q(56383, {	-- Silence
+					["collectible"] = false,
+					["lvl"] = 120,
+				}),
 				q(55899, {	-- Starseeker of the Shirakess
 					["lvl"] = 120,
 					["collectible"] = false,
@@ -381,6 +389,24 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(170213),	-- Formula: Naga Hide (Rank 3)
+					},
+				}),
+				q(56570, {	-- Work Order: Greater Flask of the Currents (A)
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(169500),	-- Recipe: Greater Flask of the Currents
+					},
+				}),
+				q(56770, {	-- Work Order: Greater Flask of the Currents (H)
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(169500),	-- Recipe: Greater Flask of the Currents
 					},
 				}),
 				q(55894, {	-- Zoko, Her Iron Defender

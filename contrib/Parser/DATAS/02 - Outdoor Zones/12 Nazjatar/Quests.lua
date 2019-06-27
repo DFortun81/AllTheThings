@@ -254,11 +254,11 @@ _.Zones =
 				["isDaily"] = true,
 				["qgs"] = {
 					152942,	-- Lieutenant Hawkins (Alliance)
-				--	,	--  (Horde)
+					151614,	-- Nevin Tideheart  (Horde)
 				},
 				["coords"] = {
 					{ 40.1, 55.5, 1355 },	-- Alliance
-				--	{ , , 1355 },	-- Horde
+					{ 49.8, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)
@@ -650,6 +650,12 @@ _.Zones =
 				["coord"] = { 43.4, 49.8, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55361,	-- The Lost Shaman
+			}),
+			q(55768, {	-- Emergent Sea Weeds
+				["qg"] = 153006,	-- Bren Inkfin
+				["coord"] = { 38.0, 48.6, 1355 },
+				["isDaily"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 			o(325869, {	-- Empty Cask
 				["coord"] = { 59.5, 41.8, 1355 },
@@ -1077,11 +1083,11 @@ _.Zones =
 				["isDaily"] = true,
 				["qgs"] = {
 					155941,	-- Tamer Orami (Alliance)
-				--	,	--  (Horde)
+					151352,	-- Lily Bopip  (Horde)
 				},
 				["coords"] = {
 					{ 39.5, 55.4, 1355 },	-- Alliance
-				--	{ , , 1355 },	-- Horde
+					{ 47.3, 61.9, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)
