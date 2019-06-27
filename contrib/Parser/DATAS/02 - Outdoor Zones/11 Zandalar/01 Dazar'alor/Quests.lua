@@ -7,42 +7,6 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(-17, {	-- Quests
-				ach(12478, {	-- Secrets of the Sands
-					["races"] = HORDE_ONLY,
-				}),
-				ach(11861, {	-- The Throne of Zuldazar
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						{	-- Criteria 2 — Port of Zuldazar
-							["achievementID"] = 11861,	-- The Throne of Zuldazar
-							["criteriaID"] = 2,
-							["sourceQuests"] = { 50881 },	-- Royal Report
-						},
-						{	-- Criteria 6 — The Zanchuli Council
-							["achievementID"] = 11861,	-- The Throne of Zuldazar
-							["criteriaID"] = 6,	-- The Zanchuli Council
-							["sourceQuests"] = {	-- whichever one you pick
-								47439,	-- Gonk, Lord of the Pack
-								47440,	-- Pa'ku, Master of Winds
-							},
-						},
-					},
-				}),
-				ach(11868, {	-- The Dark Heart of Nazmir
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						{	-- Criteria 1 — Deep in the Swamp
-							["achievementID"] = 11868,	-- The Dark Heart of Nazmir
-							["criteriaID"] = 1,	-- Deep in the Swamp
-							["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
-						},
-					},
-				}),
-				ach(12555, {	-- Welcome to Zandalar
-					["sourceQuests"] = { 52131 },	-- We Need Each Other
-					["races"] = HORDE_ONLY,
-				}),
-			--	QUESTS START HERE
 				q(51465, {	-- A Load of Scrap
 				--	confirm SQ when flying is implemented.
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde

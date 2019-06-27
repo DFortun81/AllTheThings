@@ -7,13 +7,13 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(-10057, {	-- War Effort
-				["groups"] = {
+				["g"] = {
 					n(-17, {	-- Quests
-						["groups"] = {
+						["g"] = {
 							q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
-								["groups"] = {
+								["g"] = {
 									i(166369, {	-- Sentinel Equipment Cache
-										["groups"] = bubbleDown({["modID"] = 6}, {
+										["g"] = bubbleDown({["modID"] = 6}, {
 														-- HORDE SET --
 											i(165614),	-- Apothecary Spellstaff
 											i(165608),	-- Blightspreader's Crescent
@@ -86,9 +86,9 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 							}),
 							q(53416, {	-- Warfront: The Battle For Stromgarde [Tier 3]
-								["groups"] = {
+								["g"] = {
 									i(164577, {	-- Warfronts Equipment Cache
-										["groups"] = bubbleDown({["modID"] = 6}, {
+										["g"] = bubbleDown({["modID"] = 6}, {
 											i(163878),	-- Honorbound Barrier
 											i(163870),	-- Honorbound Bonebreaker
 											i(163868),	-- Honorbound Dagger

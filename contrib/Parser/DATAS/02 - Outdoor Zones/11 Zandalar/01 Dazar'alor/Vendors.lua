@@ -147,6 +147,7 @@ _.Zones =
 					},
 				}),
 				n(132114, {	-- Griftah <Amazing Amulets> [Horde]
+					["races"] = HORDE_ONLY,
 					["coords"] = {
 						{ 53.02, 89.93, 1165 },	-- Griftah
 						{ 34.77, 11.58, 1165 },	-- Much-Too-Hot Pepper
@@ -155,7 +156,6 @@ _.Zones =
 						{ 57.15, 91.47, 1165 },	-- Preserved Night Elf Head
 						{ 53.77, 85.97, 1165 },	-- Counterfeit Rastakhan Mask
 					},
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(156659, {	-- Counterfeit Rastakhan Mask
 							i(156649, {	-- Zandalari Effigy Amulet
@@ -370,23 +370,20 @@ _.Zones =
 								["questID"] = 54226,	-- Mission Start Trigger
 								["f"] = 55,	-- Consumable
 								["g"] = {
-									{	-- Upgrade: The Great Seal
-										["missionID"] = 2106,	-- Upgrade: The Great Seal
+									mission(2106, {	-- Upgrade: The Great Seal
 										["questID"] = 54294,	-- Triggers when completed
 										["sourceQuests"] = { 54226 },	-- Outpost Upgrade Mission Trigger
-									},
-									{	-- Mission Report: The Great Seal
-										["questID"] = 54225,	-- Mission Report: The Great Seal
+									}),
+									q(54225, {	-- Mission Report: The Great Seal
 										["qg"] = 138706,		-- Mission Command Table
 										["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
 										["sourceQuests"] = { 54294 },	-- Upgrade: The Great Seal Mission Complete
-									},
-									{	-- Outpost Upgrade: The Great Seal
-										["questID"] = 54231,	-- Outpost Upgrade: The Great Seal
+									}),
+									q(54231, {	-- Outpost Upgrade: The Great Seal
 										["qg"] = 135691,		-- Nathanos Blightcaller
 										["coord"] = { 58.44, 62.67, 862 },
 										["sourceQuests"] = { 54225 },	-- Mission Report: The Great Seal
-									},
+									}),
 								},
 							}),
 							i(165804, {	-- Outpost Upgrade: Vulpera Hideaway
@@ -417,7 +414,6 @@ _.Zones =
 								["f"] = 55,	-- Consumable; Might change to Misc later
 							}),
 						}),
-
 					},
 				}),
 				n(122695, {	-- Seshuli <Jewelcrafting Trainer>

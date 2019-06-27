@@ -121,7 +121,7 @@ _.Zones =
 							["coord"] = { 62.9, 28.9, 863 },
 							["sourceQuest"] = 50119,	-- Chemically Compounded
 							["requireSkill"] = 171,	-- Alchemy
-							["groups"] = {
+							["g"] = {
 								recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
 							},
 						}),
@@ -133,7 +133,7 @@ _.Zones =
 						["coord"] = { 44.0, 39.0, 1165 },
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 50 Zandalari Mining",
-						["groups"] = {
+						["g"] = {
 							recipe(253334),	-- Monelite Deposit Rank 2
 						},
 					}),
@@ -142,7 +142,7 @@ _.Zones =
 						["coord"] = { 44.0, 39.0, 1165 },
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 130 Zandalari Mining",
-						["groups"] = {
+						["g"] = {
 							recipe(253335),	-- Monelite Deposit Rank 2
 						},
 					}),
@@ -151,7 +151,7 @@ _.Zones =
 						["coord"] = { 44.0, 39.0, 1165 },
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 50 Zandalari Mining",
-						["groups"] = {
+						["g"] = {
 							recipe(253343),	-- Monelite Seam Rank 2
 						},
 					}),
@@ -160,7 +160,7 @@ _.Zones =
 						["coord"] = { 44.0, 39.0, 1165 },
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 150 Zandalari Mining",
-						["groups"] = {
+						["g"] = {
 							recipe(253344),	-- Monelite Seam Rank 3
 						},
 					}),
@@ -169,7 +169,7 @@ _.Zones =
 						["coord"] = { 44.0, 39.0, 1165 },
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 50 Zandalari Mining",
-						["groups"] = {
+						["g"] = {
 							recipe(253337),	-- Storm Silver Deposit Rank 2
 						},
 					}),
@@ -178,7 +178,7 @@ _.Zones =
 						["coord"] = { 44.0, 39.0, 1165 },
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 135 Zandalari Mining",
-						["groups"] = {
+						["g"] = {
 							recipe(253338),	-- Storm Silver Deposit Rank 3
 						},
 					}),
@@ -187,7 +187,7 @@ _.Zones =
 						["coord"] = { 44.0, 39.0, 1165 },
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 125 Zandalari Mining",
-						["groups"] = {
+						["g"] = {
 							recipe(253346),	-- Storm Silver Seam Rank 2
 						},
 					}),
@@ -203,7 +203,7 @@ _.Zones =
 						["sourceQuest"] = 52017,	-- Back to Biru
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 150 Zandalari Mining",
-						["groups"] = {
+						["g"] = {
 							recipe(253347),	-- Storm Silver Seam Rank 3
 						},
 					}),
@@ -211,7 +211,7 @@ _.Zones =
 						qh(52046, {	-- An Exceptional Platinum Shard
 							["requireSkill"] = 186,	--  Mining
 							["description"] = "Requires 130 Zandalari Mining",
-							["groups"] = {
+							["g"] = {
 								recipe(253340),	-- Platinum Deposit Rank 2
 							},
 						}),
@@ -291,7 +291,7 @@ _.Zones =
 						["coord"] = { 71.6, 39.8, 115 },
 						["sourceQuest"] = 53869,	-- Killing Time
 						["requireSkill"] = 197,
-						["groups"] = {
+						["g"] = {
 							recipe(292946, {	-- Recipe: Synchronous Thread
 								["requireSkill"] = 197,
 							}),
