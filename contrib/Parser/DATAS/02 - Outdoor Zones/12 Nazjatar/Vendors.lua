@@ -534,8 +534,9 @@ _.Zones =
 					i(169202),	-- Crimson Tidestallion
 					-- Mrrl sells containers of random stuff. Need way more testing to figure out what these contain
 					i(168092),	-- Curiously Warm Kelp Bundle
-					i(168095),	-- Strange Coral Cluster
 					i(168091),	-- Severly Rusted Lockbox
+					i(168095),	-- Strange Coral Cluster
+					i(168053),	-- Unusually Wise Hermit Crab
 				}
 			}),
 			n(152084, {	-- Mrrl (horde)
@@ -545,8 +546,9 @@ _.Zones =
 					i(169202),	-- Crimson Tidestallion
 					-- Mrrl sells containers of random stuff. Need way more testing to figure out what these contain
 					i(168092),	-- Curiously Warm Kelp Bundle
-					i(168095),	-- Strange Coral Cluster
 					i(168091),	-- Severly Rusted Lockbox
+					i(168095),	-- Strange Coral Cluster
+					i(168053),	-- Unusually Wise Hermit Crab
 				}
 			}),
 			n(154140, {	-- Speaker Utia

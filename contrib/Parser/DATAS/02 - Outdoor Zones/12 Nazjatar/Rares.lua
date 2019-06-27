@@ -403,9 +403,8 @@ _.Zones =
 					i(170187),	-- Shadescale
 				},
 			}),
-			n(153658, {	-- Shiz'narasz the Consumer
-				["allianceQuestID"] = 56587,
-				["hordeQuestID"] = 56296,
+			n(153658, {	-- Shiz'narasz the Consumer (verified: Pr3vention)
+				["questID"] = 56296,
 				["isDaily"] = true,
 				["coords"] = {
 					{ 38.9, 9.4, 1355 },

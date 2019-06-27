@@ -108,6 +108,7 @@ _.NeverImplemented =
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
 		q(56614),	-- Blightlight first kill
 		q(56606),	-- Sandclaw Stonoeshell first kill
+		q(56587),	-- Shiz'narasz the Consumer first kill
 		
 		-- Mechagon
 		q(55547),	-- Mechanized Chest. Chests spawn randomly
