@@ -89,6 +89,19 @@ _.Zones =
 					crit(9),	-- Making the Mount
 					crit(10),	-- Armed for Action
 				}),
+				ach(13489, {	-- Secret Fish of Mechagon
+					i(167698),	-- Secret Fish Goggles
+					crit(1),	-- Bottom Feeding Stinkfish
+					crit(2),	-- Bolted Steelhead
+					crit(3),	-- Pond Hopping Springfish
+					crit(4),	-- Shadowy Cave Eel
+					crit(5),	-- Mechanical Blowfish
+					crit(6),	-- Spitting Clownfish
+					crit(7),	-- Sludge-Fouled Carp
+					crit(8),	-- Energized Lighting Cod
+					crit(9),	-- Solarsprocket Barbel
+					crit(10),	-- Tasty Steelfin
+				}),
 			}),
 		}),
 	}),

@@ -331,6 +331,54 @@ _.Achievements =
 					}),
 					ach(12755),		-- Scent of the Sea
 					ach(9461),		-- Sea Scorpion Angler
+					ach(13489, {	-- Secret Fish of Mechagon
+						i(167698),	-- Secret Fish Goggles
+						crit(1),	-- Bottom Feeding Stinkfish
+						crit(2),	-- Bolted Steelhead
+						crit(3),	-- Pond Hopping Springfish
+						crit(4),	-- Shadowy Cave Eel
+						crit(5),	-- Mechanical Blowfish
+						crit(6),	-- Spitting Clownfish
+						crit(7),	-- Sludge-Fouled Carp
+						crit(8),	-- Energized Lighting Cod
+						crit(9),	-- Solarsprocket Barbel
+						crit(10),	-- Tasty Steelfin
+					}),
+					ach(13502, {	-- Secret Fish and Where to Find Them
+						i(168016),	-- Hyper-Compressed Ocean
+						crit(1),	-- Ancient Mana Fin
+						crit(2),	-- Barbed Fjord Fin
+						crit(3),	-- Camouflaged Snark
+						crit(4),	-- Collectable Saltfin
+						crit(5),	-- Dead Fel Bone
+						crit(6),	-- Dreadeye Wally
+						crit(7),	-- Deceptive Maw
+						crit(8),	-- Drowned Goldfish
+						crit(9),	-- Deceptive Maw
+						crit(10),	-- Drowned Goldfish
+						crit(11),	-- Elusive Moonfish
+						crit(12),	-- Golden Sunsoaker
+						crit(13),	-- Inconspicuous Catfish
+						crit(14),	-- Invisible Smelt
+						crit(15),	-- Jade Story Fish
+						crit(16),	-- Kirin Tor Clown
+						crit(17),	-- Mechanized Mackerel
+						crit(18),	-- Prisoner Fish
+						crit(19),	-- Queen's Delight
+						crit(20),	-- Quiet Floater
+						crit(21),	-- Rotted Blood Cod
+						crit(22),	-- Thunderous Flounder
+						crit(23),	-- Tortollan Tank Dweller
+						crit(24),	-- Travelling Goby
+						crit(25),	-- Unseen Mimmic
+						crit(26),	-- Spiritual Salmon
+						crit(27),	-- Veiled Ghost
+						crit(28),	-- Very Tiny Whale
+						crit(29),	-- Green Roughy
+						crit(30),	-- Displaced Scrapfin
+						crit(31),	-- Thin Air Flounder
+						crit(32),	-- Well Lurker
+					}),
 					ach(2095, {		-- Silver in the City
 						crit(1),		-- Aegwynn's Silver Coin
 						crit(2),		-- Alleria's Silver Coin

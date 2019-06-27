@@ -222,14 +222,12 @@ _.Zones =
 					["coord"] = { 59.9, 69.6, 1462 },
 					["isDaily"] = true,
 				}),
-				i(167654, {	-- Bottom Feeding Stinkfish
+				i(167654, {	-- Bottom Feeding Stinkfish -- caught around 78.9, 62.5
 					["questID"] = 55299,
-					["repeatable"] = true,
 					["g"] = {
-						{	-- Secret Fish of Mechagon (Bottom Feeding Stinkfish)
+						crit(1, {	-- Secret Fish of Mechagon
 							["achievementID"] = 13489,
-							["criteriaID"] = 1,
-						},
+						}),
 					},
 				}),
 				q(54965, {	-- Chopped Bots -- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation? -- also popped 55480
