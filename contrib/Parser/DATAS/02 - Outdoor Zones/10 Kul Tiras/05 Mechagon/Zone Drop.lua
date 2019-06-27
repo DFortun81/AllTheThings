@@ -18,6 +18,8 @@ _.Zones =
 				i(159164),  -- Ashvane Company Sabatons
 				i(159539),  -- Ironcrest Club
 				i(159519),  -- Ironcrest Knife
+				i(159173),  -- Freehold Shoulderpads
+				i(159228),  -- Freehold Cape
 			}),
 		}),
 	}),

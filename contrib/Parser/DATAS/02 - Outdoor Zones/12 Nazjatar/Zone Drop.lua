@@ -62,6 +62,7 @@ _.Zones =
 			i(169427),	-- Wavecrash Shoulderplates
 			i(169422),	-- Wavecrash Smashers
 			i(169429),	-- Wavecrash Wristguards
+			i(170118),  -- Centurion's Shortsword
 		}),
 	}),
 };
