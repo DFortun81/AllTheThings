@@ -3199,6 +3199,7 @@ end
 );
 
 -- Achievement Lib
+app.AchievementFilter = 4;
 app.BaseAchievement = {
 	__index = function(t, key)
 		if key == "achievementID" then
@@ -3219,7 +3220,7 @@ app.BaseAchievement = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "collected" then
-			return select(4, GetAchievementInfo(t.achievementID));
+			return select(app.AchievementFilter, GetAchievementInfo(t.achievementID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3301,7 +3302,7 @@ app.BaseAchievementCriteria = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "saved" or key == "collected" then
-			if select(4, GetAchievementInfo(t.achievementID)) then
+			if select(app.AchievementFilter, GetAchievementInfo(t.achievementID)) then
 				return true;
 			elseif t.criteriaID then
 				local m = GetAchievementNumCriteria(t.achievementID);
