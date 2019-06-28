@@ -87,6 +87,20 @@ _.NeverImplemented =
 		q(49913),	-- Nazmir repeatable random chest
 		q(49914),	-- Nazmir repeatable random chest
 		q(49899),	-- Nazmir repeatable random chest
+		q(51184),	-- Stormsong Valley repeatable random chest
+		q(51927),	-- Stormsong Valley repeatable random chest
+		q(51930),	-- Stormsong Valley repeatable random chest
+		q(51935),	-- Stormsong Valley repeatable random chest
+		q(51938),	-- Stormsong Valley repeatable random chest
+		q(51939),	-- Stormsong Valley repeatable random chest
+		q(51940),	-- Stormsong Valley repeatable random chest
+		q(51941),	-- Stormsong Valley repeatable random chest
+		q(51942),	-- Stormsong Valley repeatable random chest
+		q(51943),	-- Stormsong Valley repeatable random chest
+		q(51944),	-- Stormsong Valley repeatable random chest
+		q(51945),	-- Stormsong Valley repeatable random chest
+		q(51946),	-- Stormsong Valley repeatable random chest
+		q(52989),	-- Stormsong Valley repeatable random chest
 		q(50922),	-- Vol'dun repeatable random chest
 		q(50920),	-- Vol'dun repeatable random chest
 		q(51673),	-- Vol'dun repeatable random chest

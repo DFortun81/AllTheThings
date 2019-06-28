@@ -8,45 +8,37 @@ _.Zones =
 			n(-4,   {	-- Achievement
 				ach(12940),		-- Adventurer of Stormsong Valley
 				ach(13051, {	-- Legends of the Tidesages
-					{	-- Legends of the Tidesages - Part 1
-						["criteriaID"] = 1,	-- Legends of the Tidesages - Part 1
-						["coord"] = { 49.51, 80.90 },
-					},
-					{	-- Legends of the Tidesages - Part 2
-						["criteriaID"] = 2,	-- Legends of the Tidesages - Part 2
-						["coord"] = { 59.02, 59.54 },
-					},
-					{	-- Legends of the Tidesages - Part 3
-						["criteriaID"] = 3,	-- Legends of the Tidesages - Part 3
-						["coord"] = { 31.95, 72.91 },
-					},
-					{	-- Legends of the Tidesages - Part 4
-						["criteriaID"] = 4,	-- Legends of the Tidesages - Part 4
-						["coord"] = { 33.81, 33.23 },
-					},
-					{	-- Legends of the Tidesages - Part 5
-						["criteriaID"] = 5,	-- Legends of the Tidesages - Part 5
-						["coord"] = { 56.02, 38.53 },
-					},
-					{	-- Legends of the Tidesages - Part 6
-						["criteriaID"] = 6,	-- Legends of the Tidesages - Part 6
-						["coord"] = { 44.18, 36.60 },
-					},
-					{	-- Legends of the Tidesages - Part 7
-						["criteriaID"] = 7,	-- Legends of the Tidesages - Part 7
-						["coord"] = { 62.08, 30.22 },
-					},
-					{	-- Legends of the Tidesages - Part 8
-						["criteriaID"] = 8,	-- Legends of the Tidesages - Part 8
-						["coord"] = { 75.07, 31.13 },
-					},
+					crit(1, {	-- Legends of the Tidesages - Part 1
+						["coord"] = { 49.51, 80.90, 942 },
+					}),
+					crit(2, {	-- Legends of the Tidesages - Part 2
+						["coord"] = { 59.02, 59.54, 942 },
+					}),
+					crit(3, {	-- Legends of the Tidesages - Part 3
+						["coord"] = { 31.95, 72.91, 942 },
+					}),
+					crit(4, {	-- Legends of the Tidesages - Part 4
+						["coord"] = { 33.81, 33.23, 942 },
+					}),
+					crit(5, {	-- Legends of the Tidesages - Part 5
+						["coord"] = { 56.02, 38.53, 942 },
+					}),
+					crit(6, {	-- Legends of the Tidesages - Part 6
+						["coord"] = { 44.18, 36.60, 942 },
+					}),
+					crit(7, {	-- Legends of the Tidesages - Part 7
+						["coord"] = { 62.08, 30.22, 942 },
+					}),
+					crit(8, {	-- Legends of the Tidesages - Part 8
+						["coord"] = { 75.07, 31.13, 942 },
+					}),
 				}),
 				ach(13054),		-- Sabertron Assemble
 				ach(12853, {	-- Treasures of Stormsong
 					o(293350, {	-- Carved Wooden Chest	
 						["questID"] = 52429,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["groups"] = {
+						["g"] = {
 							i(162000),	-- Pig Nose
 						},
 					}),
@@ -54,7 +46,7 @@ _.Zones =
 						["questID"] = 52326,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 58.2, 63.7 },
-						["groups"] = {
+						["g"] = {
 							i(160485, {	-- An Unforgettable Luncheon
 								
 							}),

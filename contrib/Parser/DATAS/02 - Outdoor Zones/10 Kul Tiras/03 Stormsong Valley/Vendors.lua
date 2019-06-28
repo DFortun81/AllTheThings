@@ -8,7 +8,7 @@ _.Zones =
 			n(-2, { 	-- Vendors
 				n(135793, {	-- Collector Kojo <Tortollan Seekers Emissary>
 					["coord"] = { 40.4, 36.4, 942 },
-					["groups"] = {
+					["g"] = {
 						i(160543),	-- Tabard of the Tortollan Seekers
 						i(163513),	-- Cou'pa
 						i(161514),	-- Antiquity Handler's Gloves
@@ -60,7 +60,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(163036, {	-- Polished Pet Charm
-							["groups"] = {
+							["g"] = {
 								i(163489),	-- Abyssal Eel
 								i(163511),	-- Barnacled Hermit Crab
 								i(163508),	-- Butterfly in a Jar

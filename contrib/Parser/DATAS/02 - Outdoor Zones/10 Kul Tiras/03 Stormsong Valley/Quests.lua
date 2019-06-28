@@ -6,26 +6,17 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-17,	{	-- Quests [Finalized]
-				{	-- Ancient Pilgrimage Scrollcasing [Quest: The Great Sea Scrolls]
-					["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+				i(163856, {	-- Ancient Pilgrimage Scrollcasing
 					["questID"] = 53476,	-- The Great Sea Scrolls
-					["description"] = "You receive this item when looting any treasure chest and has a random chance to spawn.",
 					["races"] = ALLIANCE_ONLY,
+					["description"] = "You receive this item when looting any treasure chest and has a random chance to spawn.",
 					["g"] = {
-						{	-- Bartered Vrykul Cowl
-							["itemID"] = 163863,	-- Bartered Vrykul Cowl
-						},
-						{	-- Bartered Vrykul Facemask
-							["itemID"] = 163864,	-- Bartered Vrykul Facemask
-						},
-						{	-- Bartered Vrykul Hood
-							["itemID"] = 163862,	-- Bartered Vrykul Hood
-						},
-						{	-- Bartered Vrykul Warhelm
-							["itemID"] = 163865,	-- Bartered Vrykul Warhelm
-						},
+						i(163863),	-- Bartered Vrykul Cowl
+						i(163864),	-- Bartered Vrykul Facemask
+						i(163862),	-- Bartered Vrykul Hood
+						i(163865),	-- Bartered Vrykul Warhelm
 					},
-				},
+				}),
 			}),
 			n(-17,  {	-- Quests [Crieve]
 				a(q(50781, {	-- A Bridge Too Far
@@ -65,7 +56,7 @@ _.Zones =
 					["qg"] = 133953,	-- Sergeant Calvin
 					["sourceQuests"] = { 50368 },	-- Terror of the Kraul [Alliance Only]
 					["coord"] = { 71.2, 52.2 },
-					["groups"] = {
+					["g"] = {
 						{
 							["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
 							["criteriaID"] = 7,	-- Briarback Kraul [Criteria]
@@ -91,7 +82,7 @@ _.Zones =
 					["qg"] = 134702,	-- Nedly Grinner
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting [Alliance Only]
 					["coord"] = { 44.4, 55.5 },
-					["groups"] = {
+					["g"] = {
 						i(158682),	-- Anchor-Strapped Barrier
 						i(158684),	-- Salvage-Hunter's Torch
 						i(160332),	-- Mud-Slicked Capote
@@ -101,7 +92,7 @@ _.Zones =
 					["qg"] = 134447,	-- Lost Farmhand
 					["sourceQuests"] = { 50493, 50264, 50165, 50534 },	-- Fetching Wrex / Free the Farmhands / The Bee Team / Wendigo Away [Alliance Only]
 					["coord"] = { 72.7, 72.2 },
-					["groups"] = {
+					["g"] = {
 						i(158558),	-- Back to the Lab
 					},
 				})),
@@ -109,7 +100,7 @@ _.Zones =
 					["qg"] = 134639,	-- Brother Pike
 					["sourceQuests"] = { 49998 },	-- Voices Below [Alliance Only]
 					["coord"] = { 66.1, 47.4 },
-					["groups"] = {
+					["g"] = {
 						i(155229),	-- Abyssal Beacon
 						i(155228),	-- Tideguard Bulwark
 						i(155231),	-- Purified Tideblood Band
@@ -141,7 +132,7 @@ _.Zones =
 				})),
 				a(o(282457, {	-- Brambleguard Totem
 					["coord"] = { 44.0, 72.4 },
-					["groups"] = {
+					["g"] = {
 						a(q(50111, {	-- Totems, Totems, Totems!
 							-- ["sourceQuests"] = { 50622 },	-- Deal's Off [Alliance Only] ??? (not required)
 						})),
@@ -155,7 +146,7 @@ _.Zones =
 				a(q(51401, {	-- Carry On
 					["qg"] = 137866,	-- Taelia
 					["sourceQuests"] = { 51490 },	-- Border Issues [Alliance Only]
-					["groups"] = {
+					["g"] = {
 						{
 							["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
 							["criteriaID"] = 1,	-- The Tidesages of Stormsong [Criteria]
@@ -169,7 +160,7 @@ _.Zones =
 					["coord"] = { 42.6, 54.3 },
 				})),
 				a(o(280727, {	-- Charred Note
-					["groups"] = {
+					["g"] = {
 						a(q(50139, {	-- The Missing Link
 							["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only](needs verification)
 						})),
@@ -208,7 +199,7 @@ _.Zones =
 				})),
 				a(o(244983, {	-- Dirty Pocketwatch
 					["coord"] = { 49.8, 73.5 },
-					["groups"] = {
+					["g"] = {
 						a(q(50065, {	-- A Reason to Stay
 							-- ["sourceQuests"] = { 50157 },	-- There's Gold in Them There Fields [Alliance Only] ??? (not required)
 						})),
@@ -218,7 +209,7 @@ _.Zones =
 					["qg"] = 132017,	-- Ancel Mildenhall
 					["sourceQuests"] = { 50359, 50070 },	-- Cleanup Duty / Detective Mildenhall [Alliance Only]
 					["coord"] = { 70.6, 69.6 },
-					["groups"] = {
+					["g"] = {
 						i(160331),	-- Apiarist's Protective Drape
 						i(160346),	-- Honey-Artisan's Ring
 					},
@@ -237,7 +228,7 @@ _.Zones =
 					["qg"] = 135067,	-- Moxie Lockspinner
 					["sourceQuests"] = { 50741 },	-- Don't Turtle [Alliance Only]
 					["coord"] = { 42.6, 54.3 },
-					["groups"] = {
+					["g"] = {
 						i(160514, {	-- Maokka's Box
 							i(158679),	-- Maokka's Carving
 						}),
@@ -245,7 +236,7 @@ _.Zones =
 				})),
 				a(o(282478, {	-- Empty Crate
 					["coord"] = { 46.3, 77.0 },
-					["groups"] = {
+					["g"] = {
 						a(q(50340, {	-- Steal Them Back
 							["sourceQuests"] = { 50353 },	-- Boaring Company [Alliance Only]
 						})),
@@ -265,7 +256,7 @@ _.Zones =
 					["qg"] = 132118,	-- Farmer Burton
 					["sourceQuests"] = { 50134, 50135 },	-- Gadgets and Gizmos Aplenty / Stop Vining [Alliance Only]
 					["coord"] = { 51.5, 65.9 },
-					["groups"] = {
+					["g"] = {
 						i(155197),	-- Darkwater Bracers
 						i(155195),	-- Dread Corsair Bracers
 						i(155196),	-- Stormchaser Bracers
@@ -311,7 +302,7 @@ _.Zones =
 				})),
 				a(i(158195, {	-- Frothing Vial
 					["qg"] = 130094,	-- Tidesage Seacaller
-					["groups"] = {
+					["g"] = {
 						a(q(50593, {	-- A Bloody Mess
 							["qg"] = 130094,	-- Tidesage Seacaller
 							["sourceQuests"] = { 49998 },	-- Voices Below [Alliance Only]
@@ -347,7 +338,7 @@ _.Zones =
 				a(q(51314, {	-- Grain Drain
 					["qg"] = 137094,	-- Farmer Max
 					-- ["sourceQuests"] = {  },	--  [Alliance Only] (This didn't have a source Quest that I could tell)
-					["groups"] = {
+					["g"] = {
 						i(161084),	-- Recovered Stormsong Produce
 					},
 					["coord"] = { 54.9, 67.9 },
@@ -361,7 +352,7 @@ _.Zones =
 					["qg"] = 130694,	-- Mayor Roz
 					["sourceQuests"] = { 49744, 49746, 49745 },	-- Bombs, Away / Dousing the Flames / You Have Their Orders [Alliance Only]
 					["coord"] = { 57.6, 66.4 },
-					["groups"] = {
+					["g"] = {
 						i(158692),	-- Darkwater Cinch
 						i(160364),	-- Darkwater Legwraps
 						i(158689),	-- Dread Corsair Greatbelt
@@ -373,7 +364,7 @@ _.Zones =
 					},
 				})),
 				a(o(290537, {	-- Help Wanted
-					["groups"] = {
+					["g"] = {
 						a(q(51582, {	-- Make it Mildenhall
 							["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only](needs verification)
 							["isBreadcrumb"] = true,
@@ -391,7 +382,7 @@ _.Zones =
 					["sourceQuests"] = { 49725 },	-- A Risky Ploy [Alliance Only]
 				})),
 				q(50385, {	-- Indefatigable Purpose
-					["groups"] = {
+					["g"] = {
 						i(157771),	-- Holy Water
 					},
 				}),
@@ -407,10 +398,10 @@ _.Zones =
 				})),
 				a(o(290993, {	-- Irontide Loot
 					["coord"] = { 35.8, 56.1 },
-					["groups"] = {
+					["g"] = {
 						a(q(50742, {	-- All Laid Out For Us
 							["sourceQuests"] = { 50803, 52132, 50955 },	-- I Want It All Now / The Proof of Piracy / We're Not Friends [Alliance Only]
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
 									["criteriaID"] = 8,	-- Treasure in Deadwash [Criteria]
@@ -421,7 +412,7 @@ _.Zones =
 				})),
 				a(o(290765, {	-- Large Pile of Gold
 					["coord"] = { 50.8, 56.7 },
-					["groups"] = {
+					["g"] = {
 						a(q(51140, {	-- Share the Wealth
 							["sourceQuests"] = { 50697 },	-- Bomb Beats Rock [Alliance Only]
 						})),
@@ -491,7 +482,7 @@ _.Zones =
 					["qg"] = 131249,	-- Taelia
 					["sourceQuests"] = { 49975 },	-- Rest in the Depths [Alliance Only]
 					["coord"] = { 66.4, 56.5 },
-					["groups"] = {
+					["g"] = {
 						i(155204),	-- Brineworks Boot Knife
 						i(155214),	-- Brineworks Hullcracker
 						i(155199),	-- Great Sea Waraxe
@@ -566,7 +557,7 @@ _.Zones =
 					["qg"] = 137506,	-- Brother Pike
 					["sourceQuests"] = { 51319 },	-- The Final Ascent [Alliance Only]
 					["coord"] = { 75.6, 27.0 },
-					["groups"] = {
+					["g"] = {
 						{
 							["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
 							["criteriaID"] = 4,	-- At the Edge of Madness [Criteria]
@@ -581,7 +572,7 @@ _.Zones =
 					["qg"] = 130714,	-- Brother Pike
 					["sourceQuests"] = { 49996 },	-- Rearmament [Alliance Only]
 					["coord"] = { 66.3, 56.5 },
-					["groups"] = {
+					["g"] = {
 						{
 							["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
 							["criteriaID"] = 2,	-- A House In Peril [Criteria]
@@ -598,7 +589,7 @@ _.Zones =
 					["qg"] = 134639,	-- Brother Pike
 					["sourceQuests"] = { 50608, 50609, 50610 },	-- Forbidden Rites / From the Maw of Madness / Gathering Storm [Alliance Only]
 					["coord"] = { 66.1, 47.4 },
-					["groups"] = {
+					["g"] = {
 						{
 							["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
 							["criteriaID"] = 3,	-- The Growing Tempest [Criteria]
@@ -617,7 +608,7 @@ _.Zones =
 					["qg"] = 133953,	-- Sergeant Calvin
 					["sourceQuests"] = { 50363, 50365 },	-- Run For the Hills / War Pigs [Alliance Only]
 					["coord"] = { 46.7, 73.8 },
-					["groups"] = {
+					["g"] = {
 						i(155225),	-- Bramblehulk Greatsword
 						i(160522),	-- Brennadam Vinescythe
 						i(155205),	-- Briarback Thornshaper
@@ -633,7 +624,7 @@ _.Zones =
 					["qg"] = 136498,	-- Taelia
 					["sourceQuests"] = { 50777, 50778 },	-- The Storm Awakens / Twisted Intentions [Alliance Only]
 					["coord"] = { 60.0, 37.8 },
-					["groups"] = {
+					["g"] = {
 						i(158702),	-- Darkwater Bindings
 						i(158700),	-- Dread Corsair Vambraces
 						i(158701),	-- Stormchaser Shackles
@@ -670,7 +661,7 @@ _.Zones =
 					["qg"] = 130715,	-- Taelia
 					["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress [Alliance Only]
 					["coord"] = { 63.5, 64.8 },
-					["groups"] = {
+					["g"] = {
 						i(155193),	-- Darkwater Belt
 						i(155190),	-- Dread Corsair Girdle
 						i(155192),	-- Stormchaser Belt
@@ -717,7 +708,7 @@ _.Zones =
 					["qg"] = 130714,	-- Brother Pike
 					["sourceQuests"] = { 49703 },	-- House Stormsong [Alliance Only]
 					["coord"] = { 63.4, 64.7 },
-					["groups"] = {
+					["g"] = {
 						i(155173),	-- Darkwater Gloves
 						i(155174),	-- Dread Corsair Gauntlets
 						i(155176),	-- Stormchaser Gloves
@@ -746,7 +737,7 @@ _.Zones =
 				})),
 				a(o(288157, {	-- WANTED: Yarsel'ghun
 					["coord"] = { 57.8, 55.8 },
-					["groups"] = {
+					["g"] = {
 						a(q(51217, {	-- WANTED: Yarsel'ghun
 							["sourceQuests"] = { 52067 },	-- Survivors [Alliance Only] ??? (potentially required)
 						})),
@@ -754,7 +745,7 @@ _.Zones =
 				})),
 				a(o(282448, {	-- Wanted Poster
 					["coord"] = { 46.0, 61.8 },
-					["groups"] = {
+					["g"] = {
 						a(q(49730)),	-- WANTED: Thundersnout [Source Quest Unknown]
 					},
 				})),
@@ -781,10 +772,10 @@ _.Zones =
 				})),
 			}),
 			n(-17,  {	-- Quests
-				["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
+				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
 					a(ach(12496, {	-- Stormsong and Dance
 						crit(1, {		-- The Tidesages of Stormsong
-							["groups"] = {
+							["g"] = {
 								q(51488, {	-- Archived Knowledge
 									["qg"] = 137866,	-- Taelia
 									["sourceQuests"] = { 51487 },	-- Searching for Answers
@@ -949,7 +940,7 @@ _.Zones =
 					a({
 						["questID"] = 51492,	-- Gunpowder Plot
 						["qg"] = 136574,	-- Charles Davenport
-						["groups"] = {
+						["g"] = {
 							i(160350),	-- Darkwater Handwraps
 							i(160356),	-- Dread Corsair Gloves
 							i(160353),	-- Stormchaser Handguards
@@ -966,7 +957,7 @@ _.Zones =
 					{
 						["questID"] = 51427,	-- I like Turtles
 						["qg"] = 137453,	-- Loroja <Watcher of Ai'twen>
-						["groups"] = {
+						["g"] = {
 							i(160395),	-- Ai'twen's Light
 							i(160396),	-- Ai'twen's Defender
 							i(160352),	-- Darkwater Grasps
@@ -1070,7 +1061,6 @@ _.Zones =
 					q(48551),	-- Wither Without Water
 					q(47576),	-- Wrath of the Tiger
 					q(48330),	-- Zandalari Treasure Trove
-
 				}),
 			}),
 		}),

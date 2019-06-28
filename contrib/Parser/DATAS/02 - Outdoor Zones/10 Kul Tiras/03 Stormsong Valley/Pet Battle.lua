@@ -12,231 +12,171 @@ _.Zones =
 						ach(13280, {	-- Hobbyist Aquarist
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 						ach(13270, {	-- Beast Mode
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 						ach(13271, {	-- Critters with Huge Teeth
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 						ach(13272, {	-- Dragons Make Everything Better
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 						ach(13273, {	-- Element of Success
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 						ach(13274, {	-- Fun With Flying
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 						ach(13281, {	-- Human Resources
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 						ach(13275, {	-- Magician's Secrets
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 						ach(13277, {	-- Machine Learning
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 						ach(13278, {	-- Not Quite Dead Yet
 							["collectible"] = false,
 							["g"] = {
-								{	-- Eddie Fixit — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["criteriaID"] = 2,	-- Eddie Fixit
 									["coord"] = { 36.5, 33.7, 942 },
-								},
-								{	-- Ellie Vern — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								}),
+								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["criteriaID"] = 6,	-- Ellie Vern
 									["coord"] = { 65.0, 50.8, 942 },
-								},
-								{	-- Leana Darkwind — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								}),
+								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["criteriaID"] = 7,	-- Leana Darkwind
 									["coord"] = { 77.2, 29.0, 942 },
-								},
+								}),
 							},
 						}),
 					},
