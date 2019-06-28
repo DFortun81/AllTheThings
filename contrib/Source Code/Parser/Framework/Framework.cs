@@ -868,6 +868,11 @@ namespace ATT
                         return "altQuestID";
                     }
 
+                case "altSpeciesID":
+                    {
+                        return "altSpeciesID";
+                    }
+
                 case "questID":
                 case "aQuestID":
                 case "allyQuestID":

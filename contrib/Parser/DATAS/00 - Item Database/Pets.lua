@@ -1,6 +1,7 @@
 _.ItemDB = {};
-local pet = function(itemID, speciesID)
+local pet = function(itemID, speciesID, altSpeciesID)
     local item = { ["speciesID"] = speciesID, ["ignoreBonus"] = true };
+	if altSpeciesID then item.altSpeciesID = altSpeciesID; end
     _.ItemDB[itemID] = item;
     return item;
 end
@@ -329,10 +330,10 @@ pet(128770, 1725);	-- Grumpling
 pet(128354, 1705); 	-- Grumpy
 pet(49662, 245);	-- Gryphon Hatchling
 pet(72068, 311); 	-- Guardian Cub
-pet(65363, 282);	-- Guild Herald (Alliance)
-pet(65364, 283);	-- Guild Herald (Horde)
-pet(65361, 280);	-- Guild Page (Alliance)
-pet(65362, 281);	-- Guild Page (Horde)
+pet(65363, 282, 283);	-- Guild Herald (Alliance) [Alt: Horde]
+pet(65364, 283, 282);	-- Guild Herald (Horde) [Alt: Alliance]
+pet(65361, 280, 281);	-- Guild Page (Alliance) [Alt: Horde]
+pet(65362, 281, 280);	-- Guild Page (Horde) [Alt: Alliance]
 pet(104169, 1338); 	-- Gulp Froglet
 pet(48116, 234); 	-- Gundrak Hatchling
 pet(93669, 1174);	-- Gusting Grimoire

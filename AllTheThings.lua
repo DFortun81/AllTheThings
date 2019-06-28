@@ -5528,6 +5528,13 @@ app.BaseSpecies = {
 				collectedSpecies[t.speciesID] = true;
 				return 1;
 			end
+			local altSpeciesID = t.altSpeciesID;
+			if altSpeciesID then
+				if collectedSpecies[altSpeciesID] or select(1, C_PetJournal.GetNumCollectedInfo(altSpeciesID)) > 0 then
+					collectedSpecies[altSpeciesID] = true;
+					return 2;
+				end
+			end
 		elseif key == "text" then
 			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
 		elseif key == "icon" then

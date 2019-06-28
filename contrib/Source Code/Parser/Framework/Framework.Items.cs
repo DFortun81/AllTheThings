@@ -316,6 +316,7 @@ namespace ATT
                     case "altItemID":
                     case "altAchID":
                     case "altQuestID":
+                    case "altSpeciesID":
                     case "buildingID":
                     case "questID":
                     case "musicRollID":
@@ -590,6 +591,7 @@ namespace ATT
                     case "altItemID":
                     case "altAchID":
                     case "altQuestID":
+                    case "altSpeciesID":
                     case "buildingID":
                     case "musicRollID":
                     case "illusionID":

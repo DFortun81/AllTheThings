@@ -1021,6 +1021,7 @@ namespace ATT
                     //case "illusionID":
                     case "altAchID":
                     case "altQuestID":
+                    case "altSpeciesID":
                     case "requireSkill":
                     case "class":
                     case "subclass":

@@ -193,10 +193,10 @@ namespace ATT
             o.Remove("sym");
             o.Remove("modID");
             o.Remove("bonusID");
-            o.Remove("altQuestID");
+            //o.Remove("altQuestID");
             o.Remove("altAchID");
             o.Remove("hordeAchievementID");
-            o.Remove("hordeQuestID");
+            //o.Remove("hordeQuestID");
             o.Remove("mountID");
             o.Remove("collectible");
             o.Remove("style");
