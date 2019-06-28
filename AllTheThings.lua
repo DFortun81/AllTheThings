@@ -115,43 +115,72 @@ local containsValue = function(dict, value)
 end
 
 -- Data Lib
+local _cache;
 local AllTheThingsTempData = {}; 	-- For temporary data.
 local AllTheThingsAD = {};			-- For account-wide data.
 local function SetDataMember(member, data)
-	AllTheThingsAD[member] = data;
+	rawset(AllTheThingsAD, member, data);
 end
 local function GetDataMember(member, default)
-	if AllTheThingsAD[member] == nil then AllTheThingsAD[member] = default; end
-	return AllTheThingsAD[member];
+	_cache = rawget(AllTheThingsAD, member);
+	if _cache == nil then
+		rawset(AllTheThingsAD, member, default);
+		return default;
+	else
+		return _cache;
+	end
 end
 local function SetTempDataMember(member, data)
-	AllTheThingsTempData[member] = data;
+	rawset(AllTheThingsTempData, member, data);
 end
 local function GetTempDataMember(member, default)
-	if AllTheThingsTempData[member] == nil then AllTheThingsTempData[member] = default; end
-	return AllTheThingsTempData[member];
+	_cache = rawget(AllTheThingsTempData, member);
+	if _cache == nil then
+		rawset(AllTheThingsTempData, member, default);
+		return default;
+	else
+		return _cache;
+	end
 end
 local function SetDataSubMember(member, submember, data)
-	if AllTheThingsAD[member] then AllTheThingsAD[member][submember] = data; end
+	rawset(rawget(AllTheThingsAD,member), submember, data);
 end
 local function GetDataSubMember(member, submember, default)
-	if not AllTheThingsAD[member] then AllTheThingsAD[member] = { }; end
-	if AllTheThingsAD[member][submember] == nil then AllTheThingsAD[member][submember] = default; end
-	return AllTheThingsAD[member][submember];
+	_cache = rawget(AllTheThingsAD,member);
+	if _cache then 
+		_cache = rawget(_cache, submember);
+		if _cache == nil then
+			rawset(rawget(AllTheThingsAD,member), submember, default);
+			return default;
+		else
+			return _cache;
+		end
+	else
+		_cache = {};
+		rawset(_cache, submember, default);
+		rawset(AllTheThingsAD, member, _cache);
+		return default;
+	end
 end
 local function SetTempDataSubMember(member, submember, data)
-	if AllTheThingsTempData[member] then
-		AllTheThingsTempData[member][submember] = data;
-	end
+	rawset(rawget(AllTheThingsTempData,member), submember, data);
 end
 local function GetTempDataSubMember(member, submember, default)
-	if AllTheThingsTempData[member] == nil then
-		AllTheThingsTempData[member] = { };
+	_cache = rawget(AllTheThingsTempData,member);
+	if _cache then 
+		_cache = rawget(_cache, submember);
+		if _cache == nil then
+			rawset(rawget(AllTheThingsTempData,member), submember, default);
+			return default;
+		else
+			return _cache;
+		end
+	else
+		_cache = {};
+		rawset(_cache, submember, default);
+		rawset(AllTheThingsTempData, member, _cache);
+		return default;
 	end
-	if AllTheThingsTempData[member][submember] == nil then
-		AllTheThingsTempData[member][submember] = default;
-	end
-	return AllTheThingsTempData[member][submember];
 end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
