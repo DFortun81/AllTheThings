@@ -11199,7 +11199,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				-- Open the Tradeskill list for this Profession
 				if self.tradeSkillID ~= tradeSkillID then
 					self.tradeSkillID = tradeSkillID;
-					--[[
+					--[[]]--
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.requireSkill == tradeSkillID then
 							self.data = setmetatable({ ['visible'] = true, ["indent"] = 0, total = 0, progress = 0 }, { __index = group });
@@ -11214,7 +11214,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							end
 						end
 					end
-					]]--
+					--[[]]--
 				end
 			
 				-- If something new was "learned", then refresh the data.
