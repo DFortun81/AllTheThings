@@ -87,10 +87,10 @@ local function StartCoroutine(name, method)
 end
 local constructor = function(id, t, typeID)
 	if t then
-		if not rawget(t, "g") and rawget(t, 1) then
+		if not t.g and t[1] then
 			return { g=t, [typeID]=id };
 		else
-			rawset(t, typeID, id);
+			t[typeID] = id;
 			return t;
 		end
 	else
@@ -116,72 +116,43 @@ local containsValue = function(dict, value)
 end
 
 -- Data Lib
-local _cache;
 local AllTheThingsTempData = {}; 	-- For temporary data.
 local AllTheThingsAD = {};			-- For account-wide data.
 local function SetDataMember(member, data)
-	rawset(AllTheThingsAD, member, data);
+	AllTheThingsAD[member] = data;
 end
 local function GetDataMember(member, default)
-	_cache = rawget(AllTheThingsAD, member);
-	if _cache == nil then
-		rawset(AllTheThingsAD, member, default);
-		return default;
-	else
-		return _cache;
-	end
+	if AllTheThingsAD[member] == nil then AllTheThingsAD[member] = default; end
+	return AllTheThingsAD[member];
 end
 local function SetTempDataMember(member, data)
-	rawset(AllTheThingsTempData, member, data);
+	AllTheThingsTempData[member] = data;
 end
 local function GetTempDataMember(member, default)
-	_cache = rawget(AllTheThingsTempData, member);
-	if _cache == nil then
-		rawset(AllTheThingsTempData, member, default);
-		return default;
-	else
-		return _cache;
-	end
+	if AllTheThingsTempData[member] == nil then AllTheThingsTempData[member] = default; end
+	return AllTheThingsTempData[member];
 end
 local function SetDataSubMember(member, submember, data)
-	rawset(rawget(AllTheThingsAD,member), submember, data);
+	if AllTheThingsAD[member] then AllTheThingsAD[member][submember] = data; end
 end
 local function GetDataSubMember(member, submember, default)
-	_cache = rawget(AllTheThingsAD,member);
-	if _cache then 
-		_cache = rawget(_cache, submember);
-		if _cache == nil then
-			rawset(rawget(AllTheThingsAD,member), submember, default);
-			return default;
-		else
-			return _cache;
-		end
-	else
-		_cache = {};
-		rawset(_cache, submember, default);
-		rawset(AllTheThingsAD, member, _cache);
-		return default;
-	end
+	if not AllTheThingsAD[member] then AllTheThingsAD[member] = { }; end
+	if AllTheThingsAD[member][submember] == nil then AllTheThingsAD[member][submember] = default; end
+	return AllTheThingsAD[member][submember];
 end
 local function SetTempDataSubMember(member, submember, data)
-	rawset(rawget(AllTheThingsTempData,member), submember, data);
+	if AllTheThingsTempData[member] then
+		AllTheThingsTempData[member][submember] = data;
+	end
 end
 local function GetTempDataSubMember(member, submember, default)
-	_cache = rawget(AllTheThingsTempData,member);
-	if _cache then 
-		_cache = rawget(_cache, submember);
-		if _cache == nil then
-			rawset(rawget(AllTheThingsTempData,member), submember, default);
-			return default;
-		else
-			return _cache;
-		end
-	else
-		_cache = {};
-		rawset(_cache, submember, default);
-		rawset(AllTheThingsTempData, member, _cache);
-		return default;
+	if AllTheThingsTempData[member] == nil then
+		AllTheThingsTempData[member] = { };
 	end
+	if AllTheThingsTempData[member][submember] == nil then
+		AllTheThingsTempData[member][submember] = default;
+	end
+	return AllTheThingsTempData[member][submember];
 end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
@@ -1011,22 +982,23 @@ end
 -- Quest Completion Lib
 local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
+	DirtyQuests[key] = true;
 	rawset(t, key, value);
 	if value then
-		DirtyQuests[key] = true;
 		SetDataSubMember("CollectedQuests", key, 1);
 		SetTempDataSubMember("CollectedQuests", key, 1);
-		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
+	end
+	
+	if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
+		local searchResults = app.SearchForField("questID", key);
+		if searchResults and #searchResults > 0 then
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-				local searchResults = app.SearchForField("questID", key);
-				if searchResults and #searchResults > 0 then
-					return true;
-				else
-					key = key .. " (Missing in ATT)";
-				end
+				return true;
 			end
-			print("Completed Quest ID #" .. key);
+		else
+			key = key .. " (Missing in ATT)";
 		end
+		print("Completed Quest ID #" .. key);
 	end
 end});
 local IsQuestFlaggedCompleted = function(questID)
@@ -2118,14 +2090,14 @@ end
 local fieldCache = {};
 local CacheFields;
 (function()
-local fieldCache_g,fieldCache_f, fieldConverters;
+local fieldCache_g,fieldCache_f, fieldConverters, converter;
 local function CacheField(group, field, value)
-	fieldCache_g = rawget(fieldCache, field);
-	fieldCache_f = rawget(fieldCache_g, value);
+	fieldCache_g = fieldCache[field];
+	fieldCache_f = fieldCache_g[value];
 	if fieldCache_f then
 		tinsert(fieldCache_f, group);
 	else
-		rawset(fieldCache_g, value, {group});
+		fieldCache_g[value] = {group};
 	end
 end
 -- These are the fields we store.
@@ -2178,7 +2150,7 @@ fieldConverters = {
 	end,
 	["itemID"] = function(group, value)
 		CacheField(group, "itemID", value);
-		if rawget(group, "filterID") == 102 then CacheField(group, "toyID", value); end
+		if group.filterID == 102 then CacheField(group, "toyID", value); end
 	end,
 	["mapID"] = function(group, value)
 		CacheField(group, "mapID", value);
@@ -2215,65 +2187,58 @@ fieldConverters = {
 		end
 	end,
 	["crs"] = function(group, value)
-		_cache = rawget(fieldConverters, "creatureID");
 		for i,creatureID in ipairs(value) do
-			_cache(group, creatureID);
+			fieldConverters["creatureID"](group, creatureID);
 		end
 	end,
 	["qgs"] = function(group, value)
-		_cache = rawget(fieldConverters, "creatureID");
 		for i,questGiverID in ipairs(value) do
-			_cache(group, questGiverID);
+			fieldConverters["creatureID"](group, questGiverID);
 		end
 	end,
 	["altQuests"] = function(group, value)
-		_cache = rawget(fieldConverters, "questID");
 		for i,questID in ipairs(value) do
-			_cache(group, questID);
+			fieldConverters["questID"](group, questID);
 		end
 	end,
 	["maps"] = function(group, value)
-		_cache = rawget(fieldConverters, "mapID");
 		for i,mapID in ipairs(value) do
-			_cache(group, mapID);
+			fieldConverters["mapID"](group, mapID);
 		end
 	end,
 	--[[
 	-- TODO: Mark coordinates in a special way.
 	["coord"] = function(group, value)
 		if value[3] then
-			rawget(fieldConverters, "mapID")(group, value[3]);
+			fieldConverters["mapID"](group, value[3]);
 		end
 	end,
 	["coords"] = function(group, value)
-		_cache = rawget(fieldConverters, "mapID");
 		for i,coord in ipairs(value) do
-			if coord[3] then
-				_cache(group, coord[3]);
-			end
+			fieldConverters["coord"](group, coord);
 		end
 	end,
 	]]--
 	["c"] = function(group, value)
 		if not containsValue(value, app.ClassIndex) then
-			rawset(group, "nmc", true); -- "Not My Class"
+			group.nmc = true;	-- "Not My Class"
 		end
 	end,
 	["r"] = function(group, value)
 		if value ~= app.FactionID then
-			rawset(group, "nmr", true);	-- "Not My Race"
+			group.nmr = true;	-- "Not My Race"
 		end
 	end,
 	["races"] = function(group, value)
 		if not containsValue(value, app.RaceIndex) then
-			rawset(group, "nmr", true);	-- "Not My Race"
+			group.nmr = true;	-- "Not My Race"
 		end
 	end,
 };
 CacheFields = function(group)
 	for key,value in pairs(group) do
-		_cache = rawget(fieldConverters, key);
-		if _cache then _cache(group, value); end
+		converter = fieldConverters[key];
+		if converter then converter(group, value); end
 	end
 end
 end)();
@@ -2310,13 +2275,12 @@ local function SearchForFieldRecursively(group, field, value)
 	end
 end
 local function SearchForFieldContainer(field)
-	if field then return rawget(fieldCache, field); end
+	if field then return fieldCache[field]; end
 end
 local function SearchForField(field, id)
 	if field and id then
 		local group = app:GetDataCache();
-		_cache = rawget(fieldCache, field);
-		if _cache then return rawget(_cache, id); end
+		if fieldCache[field] then return fieldCache[field][id]; end
 		return SearchForFieldRecursively(group, field, id);
 	end
 end
@@ -2325,7 +2289,7 @@ app.SearchForField = SearchForField;
 -- Item Information Lib
 local function SearchForSourceIDQuickly(sourceID)
 	if sourceID and sourceID > 0 and app:GetDataCache() then
-		local group = rawget(rawget(fieldCache, "s"),sourceID);
+		local group = fieldCache["s"][sourceID];
 		if group and #group > 0 then return group[1]; end
 	end
 end
@@ -2719,13 +2683,13 @@ local function RefreshCollections()
 		-- Harvest Illusion Collections
 		local collectedIllusions = GetDataMember("CollectedIllusions", {});
 		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
-			if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
+			if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
 		end
 		
 		-- Harvest Title Collections
 		local collectedTitles = GetTempDataMember("CollectedTitles", {});
 		for i=1,GetNumTitles(),1 do
-			if IsTitleKnown(i) then rawset(collectedTitles, i, 1); end
+			if IsTitleKnown(i) then collectedTitles[i] = 1; end
 		end
 		
 		-- Refresh Mounts / Pets
@@ -2734,8 +2698,8 @@ local function RefreshCollections()
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
-				rawset(collectedSpells, spellID, 1);
-				rawset(collectedSpellsPerCharacter, spellID, 1);
+				collectedSpells[spellID] = 1;
+				collectedSpellsPerCharacter[spellID] = 1;
 			end
 		end
 		
@@ -2748,8 +2712,8 @@ local function RefreshCollections()
 		-- Refresh Toys from Cache
 		local collectedToys = GetDataMember("CollectedToys", {});
 		for id,group in pairs(fieldCache["toyID"]) do
-			if not rawget(collectedToys, id) and PlayerHasToy(id) then
-				rawset(collectedToys, id, 1);
+			if not collectedToys[id] and PlayerHasToy(id) then
+				collectedToys[id] = 1;
 			end
 		end
 		
@@ -2758,22 +2722,22 @@ local function RefreshCollections()
 		if app.Settings:Get("Completionist") then
 			-- Completionist Mode can simply use the *fast* blizzard API.
 			for id,group in pairs(fieldCache["s"]) do
-				if not rawget(collectedSources, id) then
+				if not collectedSources[id] then
 					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
+						collectedSources[id] = 1;
 					end
 				end
 			end
 		else
 			-- Unique Mode requires a lot more calculation.
 			for id,group in pairs(fieldCache["s"]) do
-				if not rawget(collectedSources, id) then
+				if not collectedSources[id] then
 					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
+						collectedSources[id] = 1;
 					else
-						_cache = C_TransmogCollection_GetSourceInfo(id);
-						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-							rawset(collectedSources, id, 2);
+						local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
+						if sourceInfo and app.ItemSourceFilter(sourceInfo, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) then
+							collectedSources[id] = 2;
 						end
 					end
 				end
@@ -4022,17 +3986,13 @@ end)();
 				return t.info.u;
 			elseif key == "mapID" then
 				return t.info.mapID;
-			elseif key == "info" then
-				_cache = app.FlightPathDB[t.flightPathID];
-				if _cache then
-					if _cache.faction and _cache.faction > 0 then
-						rawset(t, "nmr", _cache.faction ~= app.FactionID);
-					end
-				else
-					_cache = {};
+			elseif key == "nmr" then
+				local info = t.info;
+				if info and info.faction and info.faction > 0 then
+					return info.faction ~= app.FactionID;
 				end
-				rawset(t, "info", _cache);
-				return _cache;
+			elseif key == "info" then
+				return app.FlightPathDB[t.flightPathID] or {};
 			elseif key == "description" then
 				return "Flight paths are cached when you talk to the flight master on each continent.";
 			elseif key == "icon" then
@@ -4754,207 +4714,195 @@ app.CreateInstance = function(id, t)
 end
 
 -- Item Lib
-(function()
-local itemFields = {
-	["key"] = function(t) return "itemID"; end,
-	["b"] = function(t)
-		return 2;
-	end,
-	["collectible"] = function(t)
-		return (rawget(t, "s") and app.CollectibleTransmog)
-			or (rawget(t, "questID") and app.CollectibleQuests and not rawget(t, "isBreadcrumb") and not t.repeatable)
-			or (rawget(t, "factionID") and app.CollectibleReputations);
-	end,
-	["collected"] = function(t)
-		local cache = rawget(t, "s");
-		if cache and cache ~= 0 and GetDataSubMember("CollectedSources", cache) then
-			return 1;
-		end
-		cache = rawget(t, "factionID");
-		if cache then
-			if t.repeatable then
-				-- This is used by reputation tokens.
-				if app.AccountWideReputations then
-					if GetDataSubMember("CollectedFactions", cache) then
-						return 1;
-					end
-				else
-					if GetTempDataSubMember("CollectedFactions", cache) then
-						return 1;
-					end
-				end
-				
-				if select(1, GetFriendshipReputation(cache)) and not select(9, GetFriendshipReputation(cache)) or select(3, GetFactionInfoByID(cache)) == 8 then
-					SetTempDataSubMember("CollectedFactions", cache, 1);
-					SetDataSubMember("CollectedFactions", cache, 1);
-					return 1;
-				end
-			else
-				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if GetDataSubMember("CollectedFactionBonusReputation", cache) then return 1; end
-				if select(15, GetFactionInfoByID(cache)) then
-					SetTempDataSubMember("CollectedFactionBonusReputation", cache, 1);
-					SetDataSubMember("CollectedFactionBonusReputation", cache, 1);
-					return 1;
-				end
-			end
-		end
-		return t.saved;
-	end,
-	["icon"] = function(t)
-		return "Interface\\Icons\\INV_Misc_QuestionMark";
-	end,
-	["link"] = function(t)
-		local itemLink = t.itemID;
-		if itemLink then
-			local bonusID = rawget(t, "bonusID");
-			if bonusID then
-				if bonusID > 0 then
-					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
-				else
-					itemLink = string.format("item:%d:::::::::::::", itemLink);
-				end
-			else
-				bonusID = rawget(t, "modID");
-				if bonusID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
-				end
-			end
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
-			if link then
-				rawset(t, "retries", nil);
-				rawset(t, "link", link);
-				if icon then rawset(t, "icon", icon); end
-				return link;
-			else
-				if rawget(t, "retries") then
-					rawset(t, "retries", rawget(t, "retries") + 1);
-					if t.retries > app.MaximumItemInfoRetries then
-						local itemName = "Item #" .. t.itemID .. "*";
-						rawset(t, "title", "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.");
-						rawset(t, "text", itemName);
-						rawset(t, "retries", nil);
-						rawset(t, "link", "");
-						rawset(t, "s", nil);
-						return itemName;
-					end
-				else
-					rawset(t, "retries", 1);
-				end
-			end
-		end
-	end,
-	["modID"] = function(t)
-		return 1;
-	end,
-	["name"] = function(t)
-		local link = t.link;
-		return link and GetItemInfo(link);
-	end,
-	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
-	end,
-	["trackable"] = function(t)
-		return rawget(t, "questID");
-	end,
-	["saved"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t);
-	end,
-	["specs"] = function(t)
-		return GetItemSpecInfo(t.itemID);
-	end,
-	["tsm"] = function(t)
-		local itemLink = t.itemID;
-		if itemLink then
-			local bonusID = t.bonusID;
-			if bonusID then
-				if bonusID> 0 then
-					return string.format("i:%d:0:1:%d", itemLink, bonusID);
-				else
-					return string.format("i:%d", itemLink);
-				end
-			--elseif t.modID then
-				-- NOTE: At this time, TSM3 does not support modID. (RIP)
-				--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
-			end
-			return string.format("i:%d", itemLink);
-		end
-	end,
-};
-itemFields.text = itemFields.link;
 app.BaseItem = {
 	__index = function(t, key)
-		_cache = rawget(itemFields, key);
-		return _cache and _cache(t);
+		if key == "key" then
+			return "itemID";
+		elseif key == "collectible" then
+			return (t.s and app.CollectibleTransmog) or (t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests) or (t.factionID and app.CollectibleReputations);
+		elseif key == "collected" then
+			if t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s) then
+				return 1;
+			end
+			if t.factionID then
+				if t.repeatable then
+					-- This is used by reputation tokens.
+					if app.AccountWideReputations then
+						if GetDataSubMember("CollectedFactions", t.factionID) then
+							return 1;
+						end
+					else
+						if GetTempDataSubMember("CollectedFactions", t.factionID) then
+							return 1;
+						end
+					end
+					
+					if select(1, GetFriendshipReputation(t.factionID)) and not select(9, GetFriendshipReputation(t.factionID)) or select(3, GetFactionInfoByID(t.factionID)) == 8 then
+						SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+						SetDataSubMember("CollectedFactions", t.factionID, 1);
+						return 1;
+					end
+				else
+					-- This is used for the Grand Commendations unlocking Bonus Reputation
+					if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
+					if select(15, GetFactionInfoByID(t.factionID)) then
+						SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+						SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
+						return 1;
+					end
+				end
+			end
+			return t.saved;
+		elseif key == "text" then
+			return t.link;
+		elseif key == "link" then
+			local itemLink = t.itemID;
+			if itemLink then
+				if t.bonusID then
+					if t.bonusID > 0 then
+						itemLink = string.format("item:%d::::::::::::1:%d", itemLink, t.bonusID);
+					else
+						itemLink = string.format("item:%d:::::::::::::", itemLink);
+					end
+				elseif t.modID then
+					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.modID);
+				end
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					t.retries = nil;
+					return link;
+				else
+					if t.retries then
+						t.retries = t.retries + 1;
+						if t.retries > app.MaximumItemInfoRetries then
+							local itemName = "Item #" .. t.itemID .. "*";
+							t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
+							t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+							t.link = "";
+							t.s = nil;
+							t.text = itemName;
+							return itemName;
+						end
+					else
+						t.retries = 1;
+					end
+				end
+			end
+		elseif key == "trackable" then
+			return t.questID;
+		elseif key == "repeatable" then
+			return t.isDaily or t.isWeekly or t.isYearly;
+		elseif key == "saved" then
+			return IsQuestFlaggedCompletedForObject(t);
+		elseif key == "modID" then
+			return 1;
+		elseif key == "name" then
+			return t.link and GetItemInfo(t.link);
+		elseif key == "specs" then
+			return GetItemSpecInfo(t.itemID);
+		elseif key == "tsm" then
+			local itemLink = t.itemID;
+			if itemLink then
+				if t.bonusID then
+					if t.bonusID > 0 then
+						return string.format("i:%d:0:1:%d", itemLink, t.bonusID);
+					else
+						return string.format("i:%d", itemLink);
+					end
+				--elseif t.modID then
+					-- NOTE: At this time, TSM3 does not support modID. (RIP)
+					--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
+				end
+				return string.format("i:%d", itemLink);
+			end
+		elseif key == "b" then
+			return 2;
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
 	end
 };
 app.CreateItem  = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
 
--- Appearance Lib (Item Source)
-local appearanceFields = {
-	["key"] = function(t) return "s"; end,
-	["collectible"] = function(t)
-		return app.CollectibleTransmog;
-	end,
-	["collected"] = function(t)
-		return GetDataSubMember("CollectedSources", rawget(t, "s"));
-	end,
-	["link"] = function(t)
-		local itemLink = t.itemID;
-		if itemLink then
-			local bonusID = rawget(t, "bonusID");
-			if bonusID then
-				if bonusID > 0 then
-					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
-				else
-					itemLink = string.format("item:%d:::::::::::::", itemLink);
-				end
-			else
-				bonusID = rawget(t, "modID");
-				if bonusID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
+-- Item Source Lib
+app.BaseItemSource = {
+	__index = function(t, key)
+		if key == "key" then
+			return "s";
+		elseif key == "collectible" then
+			return app.CollectibleTransmog;
+		elseif key == "collected" then
+			return GetDataSubMember("CollectedSources", t.s);
+		elseif key == "text" then
+			return t.link;
+		elseif key == "link" then
+			local itemLink = t.itemID;
+			if itemLink then
+				if t.bonusID then
+					if t.bonusID > 0 then
+						itemLink = string.format("item:%d::::::::::::1:%d", itemLink, t.bonusID);
+					else
+						itemLink = string.format("item:%d:::::::::::::", itemLink);
+					end
+				elseif t.modID then
+					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.modID);
 				end
 			end
 			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
 			if link then
-				rawset(t, "retries", nil);
-				rawset(t, "link", link);
-				if icon then rawset(t, "icon", icon); end
+				t.link = link;
+				t.icon = icon;
+				t.retries = nil;
 				return link;
 			else
-				if rawget(t, "retries") then
-					rawset(t, "retries", rawget(t, "retries") + 1);
+				if t.retries then
+					t.retries = t.retries + 1;
 					if t.retries > app.MaximumItemInfoRetries then
 						local itemName = "Item #" .. t.itemID .. "*";
-						rawset(t, "title", "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.");
-						rawset(t, "text", itemName);
-						rawset(t, "retries", nil);
-						rawset(t, "link", "");
+						t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
+						t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+						t.link = "";
+						t.text = itemName;
 						return itemName;
 					end
 				else
-					rawset(t, "retries", 1);
+					t.retries = 1;
 				end
 			end
+		elseif key == "modID" then
+			return 1;
+		elseif key == "name" then
+			return t.link and GetItemInfo(t.link);
+		elseif key == "specs" then
+			return GetItemSpecInfo(t.itemID);
+		elseif key == "tsm" then
+			local itemLink = t.itemID;
+			if itemLink then
+				if t.bonusID then
+					if t.bonusID > 0 then
+						return string.format("i:%d:0:1:%d", itemLink, t.bonusID);
+					else
+						return string.format("i:%d", itemLink);
+					end
+				--elseif t.modID then
+					-- NOTE: At this time, TSM3 does not support modID. (RIP)
+					--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
+				end
+				return string.format("i:%d", itemLink);
+			end
+		elseif key == "s" then
+			return 0;
+		elseif key == "b" then
+			return 2;
+		else
+			-- Something that isn't dynamic.
+			return table[key];
 		end
-	end,
-	["s"] = function(t)
-		return 0;
-	end,
-};
-appearanceFields.b = itemFields.b;
-appearanceFields.tsm = itemFields.tsm;
-appearanceFields.icon = itemFields.icon;
-appearanceFields.name = itemFields.name;
-appearanceFields.modID = itemFields.modID;
-appearanceFields.specs = itemFields.specs;
-appearanceFields.text = appearanceFields.link;
-app.BaseItemSource = {
-	__index = function(t, key)
-		_cache = rawget(appearanceFields, key);
-		return _cache and _cache(t);
 	end
 };
 app.CreateItemSource = function(sourceID, itemID, t)
@@ -4962,7 +4910,6 @@ app.CreateItemSource = function(sourceID, itemID, t)
 	t.itemID = itemID;
 	return t;
 end
-end)();
 
 -- Map Lib
 app.BaseMap = {
@@ -5534,20 +5481,12 @@ end
 
 -- Species Lib
 (function()
-local meta = {
-	__index = function(t, key)
-		if C_PetJournal.GetNumCollectedInfo(key) > 0 then
-			rawset(t, key, 1);
-			return 1;
-		end
-	end
-};
-local collectedSpecies = setmetatable({}, meta);
+local collectedSpecies = {};
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
 	--print("NEW_PET_ADDED", petID, speciesID);
-	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not rawget(collectedSpecies, speciesID) then
-		rawset(collectedSpecies, speciesID, 1);
+	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not collectedSpecies[speciesID] then
+		collectedSpecies[speciesID] = true;
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
 		wipe(searchCache);
@@ -5563,12 +5502,15 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	local atLeastOne = false;
 	for speciesID,collected in pairs(collectedSpecies) do
 		if C_PetJournal.GetNumCollectedInfo(speciesID) < 1 then
-			rawset(collectedSpecies, speciesID, nil);
 			atLeastOne = true;
+			break;
 		end
 	end
 	if atLeastOne then
+		wipe(collectedSpecies);
 		app:PlayRemoveSound();
+		
+		-- Refresh the Collection Windows!
 		app:RefreshData(false, true);
 		wipe(searchCache);
 	end
@@ -5582,12 +5524,16 @@ app.BaseSpecies = {
 		elseif key == "collectible" then
 			return app.CollectibleBattlePets;
 		elseif key == "collected" then
-			if collectedSpecies[t.speciesID] then
+			if collectedSpecies[t.speciesID] or select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
+				collectedSpecies[t.speciesID] = true;
 				return 1;
 			end
 			local altSpeciesID = t.altSpeciesID;
-			if altSpeciesID and collectedSpecies[altSpeciesID]then
-				return 2;
+			if altSpeciesID then
+				if collectedSpecies[altSpeciesID] or select(1, C_PetJournal.GetNumCollectedInfo(altSpeciesID)) > 0 then
+					collectedSpecies[altSpeciesID] = true;
+					return 2;
+				end
 			end
 		elseif key == "text" then
 			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
@@ -5603,7 +5549,7 @@ app.BaseSpecies = {
 			if t.itemID then
 				local link = select(2, GetItemInfo(t.itemID));
 				if link then
-					rawset(t, "link", link);
+					t.link = link;
 					return link;
 				end
 			end
@@ -5928,26 +5874,20 @@ function app.NoFilter()
 	return true;
 end
 function app.FilterGroupsByLevel(group)
-	_cache = group.lvl;
-	if _cache then
-		return _cache <= rawget(app, "Level");
-	else
-		return true;
-	end
+	return app.Level >= (group.lvl or 0);
 end
 function app.FilterGroupsByCompletion(group)
-	return rawget(group, "progress") < rawget(group, "total");
+	return group.progress < group.total;
 end
 function app.FilterItemBind(item)
-	_cache = group.b;
-	return _cache == 2 or _cache == 3; -- BoE
+	return item.b == 2 or item.b == 3; -- BoE
 end
 function app.FilterItemClass(item)
 	if app.UnobtainableItemFilter(item) and app.SeasonalItemFilter(item) then
 		if app.ItemBindFilter(item) then return true; end
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
-			and app.RequiredSkillFilter(item)
+			and app.RequiredSkillFilter(item.requireSkill)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item);
 	end
@@ -5956,9 +5896,8 @@ function app.FilterItemClass_RequireClasses(item)
 	return not item.nmc;
 end
 function app.FilterItemClass_RequireItemFilter(item)
-	_cache = item.f;
-	if _cache then
-		if app.Settings:GetFilter(_cache) then
+	if item.f then
+		if app.Settings:GetFilter(item.f) then
 			return true;
 		else
 			return false;
@@ -5967,51 +5906,62 @@ function app.FilterItemClass_RequireItemFilter(item)
 		return true;
 	end
 end
+function app.FilterItemClass_RequirePersonalLoot(item)
+	local specs = item.specs;
+	if specs then return #specs > 0; end
+	return true;
+end
+function app.FilterItemClass_RequirePersonalLootCurrentSpec(item)
+    local specs = item.specs;
+    if specs then
+        for i, v in ipairs(specs) do
+            if v == app.Spec then return true; end
+        end
+        return false;
+    end
+    return true;
+end
 function app.FilterItemClass_RequireRaces(item)
 	return not item.nmr;
 end
 function app.FilterItemClass_SeasonalItem(item)
-	_cache = item.u;
-	if _cache and rawget(rawget(rawget(L, "UNOBTAINABLE_ITEM_REASONS"), _cache), 1) > 4 then
-	  return GetDataSubMember("SeasonalFilters", _cache);
-	else
-	  return true
-	end
+   if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] > 4 then
+      return GetDataSubMember("SeasonalFilters", item.u);
+   else
+      return true
+   end
 end
 function app.FilterItemClass_UnobtainableItem(item)
-	_cache = item.u;
-	if _cache and rawget(rawget(rawget(L, "UNOBTAINABLE_ITEM_REASONS"), _cache), 1) < 5 then
-	  return GetDataSubMember("UnobtainableItemFilters", _cache);
+	if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] < 5 then
+	   return GetDataSubMember("UnobtainableItemFilters", item.u);
 	else
-	  return true
+		return true;
 	end
 end
 function app.FilterItemClass_RequireBinding(item)
-	_cache = item.b;
-	if _cache and (_cache == 2 or _cache == 3) then
+	if item.b and (item.b == 2 or item.b == 3) then
 		return false;
 	else
 		return true;
 	end
 end
-function app.FilterItemClass_RequiredSkill(item)
-	_cache = item.requireSkill;
-	if _cache then
-		return rawget(app.GetTradeSkillCache(), _cache);
+function app.FilterItemClass_RequiredSkill(requireSkill)
+	if requireSkill then
+		return app.GetTradeSkillCache()[requireSkill];
 	else
 		return true;
 	end
 end
 function app.FilterItemSource(sourceInfo)
-	return rawget(sourceInfo, "isCollected");
+	return sourceInfo.isCollected;
 end
 function app.FilterItemSourceUnique(sourceInfo, allSources)
-	if rawget(sourceInfo, "isCollected") then
+	if sourceInfo.isCollected then
 		-- NOTE: This makes it so that the loop isn't necessary.
 		return true;
 	else
 		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
-		local item = SearchForSourceIDQuickly(rawget(sourceInfo, "sourceID"));
+		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
 		if item then
 			if item.races then
 				-- If the first item is EXPLICITLY race locked...
@@ -6315,7 +6265,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 	end
 end
 function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
-	if rawget(sourceInfo, "isCollected") then
+	if sourceInfo.isCollected then
 		-- NOTE: This makes it so that the loop isn't necessary.
 		return true;
 	else
@@ -6393,7 +6343,7 @@ UpdateGroup = function(parent, group)
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
 		-- Check if this is a group
-		if rawget(group, "g") then
+		if group.g then
 			-- If this item is collectible, then mark it as such.
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
@@ -6476,22 +6426,21 @@ UpdateGroups = function(parent, g)
 	end
 end
 local function UpdateParentProgress(group)
-	rawset(group, "progress", rawget(group, "progress") + 1);
+	group.progress = group.progress + 1;
 	
 	-- Continue on to this object's parent.
-	_cache = rawget(group, "parent");
-	if _cache then
-		if rawget(group, "visible") then
+	if group.parent then
+		if group.visible then
 			-- If we were initially visible, then update the parent.
-			UpdateParentProgress(_cache);
+			UpdateParentProgress(group.parent);
 			
 			-- If this group is trackable, then we should show it.
 			if app.GroupVisibilityFilter(group) then
-				rawset(group, "visible", true);
+				group.visible = true;
 			elseif app.ShowIncompleteThings(group) then
-				rawset(group, "visible", not rawget(group, "saved"));
+				group.visible = not group.saved;
 			else
-				rawset(group, "visible", false);
+				group.visible = false;
 			end
 		end
 	end
@@ -7353,7 +7302,7 @@ local function CreateMiniListForGroup(group)
 	end
 end
 local function ClearRowData(self)
-	rawset(self, "ref", nil);
+	self.ref = nil;
 	self.Background:Hide();
 	self.Texture:Hide();
 	self.Texture.Background:Hide();
@@ -7363,21 +7312,17 @@ local function ClearRowData(self)
 	self.Label:Hide();
 end
 local function CalculateRowBack(data)
-	_cache = rawget(data, "back");
-	if _cache then return _cache; end
-	_cache = rawget(data, "parent");
-	if _cache then
-		return CalculateRowBack(_cache) * 0.5;
+	if data.back then return data.back; end
+	if data.parent then
+		return CalculateRowBack(data.parent) * 0.5;
 	else
 		return 0;
 	end
 end
 local function CalculateRowIndent(data)
-	_cache = rawget(data, "indent");
-	if _cache then return _cache; end
-	_cache = rawget(data, "parent");
-	if _cache then
-		return CalculateRowIndent(_cache) + 1;
+	if data.indent then return data.indent; end
+	if data.parent then
+		return CalculateRowIndent(data.parent) + 1;
 	else
 		return 0;
 	end
@@ -7452,7 +7397,7 @@ local function SetRowData(self, row, data)
 			end
 		end
 		if data.saved then
-			if data.parent and data.parent.locks or data.repeatable then
+			if data.parent and data.parent.locks or data.isDaily then
 				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known");
 			else
 				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known_green");
@@ -7471,8 +7416,7 @@ local function SetRowData(self, row, data)
 		end
 		local summary = GetProgressTextForRow(data);
 		if not summary then
-			_cache = rawget(data, "g");
-			if _cache and not rawget(data, "expanded") and #_cache > 0 then
+			if data.g and not data.expanded and #data.g > 0 then
 				summary = "+++";
 			else
 				summary = "---";
@@ -7495,10 +7439,9 @@ local function SetRowData(self, row, data)
 			row.Label:SetPoint("RIGHT");
 		end
 		row.Label:SetText(text);
-		_cache = rawget(data, "font");
-		if _cache then
-			row.Label:SetFontObject(_cache);
-			row.Summary:SetFontObject(_cache);
+		if data.font then
+			row.Label:SetFontObject(data.font);
+			row.Summary:SetFontObject(data.font);
 		else
 			row.Label:SetFontObject("GameFontNormal");
 			row.Summary:SetFontObject("GameFontNormal");
@@ -7510,29 +7453,46 @@ local function SetRowData(self, row, data)
 		row:Hide();
 	end
 end
+local function UpdateRowProgress(group)
+	if group.collectible then
+		group.progress = group.collected and 1 or 0;
+		group.total = 1;
+	else
+		group.progress = 0;
+		group.total = 0;
+	end
+	if group.g then
+		for i,subgroup in ipairs(group.g) do
+			UpdateRowProgress(subgroup);
+			if subgroup.total then
+				group.progress = group.progress + subgroup.progress;
+				group.total = group.total + subgroup.total;
+			end
+		end
+	end
+end
 local function UpdateVisibleRowData(self)
 	-- If there is no raw data, then return immediately.
-	local rowData = rawget(self, "rowData");
-	if not rowData then return; end
+	if not self.rowData then return; end
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
-	local totalRowCount = #rowData;
+	local totalRowCount = #self.rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
 		local container, rowCount, totalHeight = self.Container, 0, 0;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 		
 		-- Ensure that the first row doesn't move out of position.
-		local row = rawget(container.rows, 1) or CreateRow(container);
-		SetRowData(self, row, rawget(rowData, 1));
+		local row = container.rows[1] or CreateRow(container);
+		SetRowData(self, row, self.rowData[1]);
 		totalHeight = totalHeight + row:GetHeight();
 		current = current + 1;
 		rowCount = rowCount + 1;
 		
 		for i=2,totalRowCount do
-			row = rawget(container.rows, i) or CreateRow(container);
-			SetRowData(self, row, rawget(rowData, current));
+			row = container.rows[i] or CreateRow(container);
+			SetRowData(self, row, self.rowData[current]);
 			totalHeight = totalHeight + row:GetHeight();
 			if totalHeight > container:GetHeight() then
 				break;
@@ -7544,9 +7504,8 @@ local function UpdateVisibleRowData(self)
 		
 		-- Hide the extra rows if any exist
 		for i=math.max(2, rowCount + 1),#container.rows do
-			row = rawget(container.rows, i);
-			ClearRowData(row);
-			row:Hide();
+			ClearRowData(container.rows[i]);
+			container.rows[i]:Hide();
 		end
 		
 		totalRowCount = totalRowCount + 1;
@@ -8301,9 +8260,8 @@ end
 local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
 		tinsert(data, object);
-		_cache = rawget(object, "g");
-		if _cache and rawget(object, "expanded") then
-			for j, group in ipairs(_cache) do
+		if object.g and object.expanded then
+			for j, group in ipairs(object.g) do
 				ProcessGroup(data, group);
 			end
 		end
@@ -8312,36 +8270,32 @@ end
 local function UpdateWindow(self, force, got)
 	-- If this window doesn't have data, do nothing.
 	if not self.data then return; end
-	local rowData = rawget(self, "rowData");
-	if rowData then
-		wipe(rowData);
+	if not self.rowData then
+		self.rowData = {};
 	else
-		rowData = {};
-		rawset(self, "rowData", rowData);
+		wipe(self.rowData);
 	end
-	local data = rawget(self, "data");
-	if data and (force or self:IsVisible()) then
-		rawset(data, "expanded", true);
+	if self.data and (force or self:IsVisible()) then
+		self.data.expanded = true;
 		if self.shouldFullRefresh and (force or got) then
-			rawset(data, "progress", 0);
-			rawset(data, "total", 0);
-			UpdateGroups(data, rawget(data, "g"));
+			self.data.progress = 0;
+			self.data.total = 0;
+			UpdateGroups(self.data, self.data.g);
 		end
-		ProcessGroup(rowData, data);
+		ProcessGroup(self.rowData, self.data);
 		
 		-- Does this user have everything?
-		_cache = rawget(data, "total");
-		if _cache then
-			if _cache <= data.progress then
-				if #rowData < 1 then
-					rawset(data, "back", 1);
-					tinsert(rowData, data);
+		if self.data.total then
+			if self.data.total <= self.data.progress then
+				if #self.rowData < 1 then
+					self.data.back = 1;
+					tinsert(self.rowData, self.data);
 				end
 				if self.missingData then
 					if got then app:PlayCompleteSound(); end
 					self.missingData = nil;
 				end
-				tinsert(rowData, {
+				tinsert(self.rowData, {
 					["text"] = "No entries matching your filters were found.",
 					["description"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
 					["collectible"] = 1,
@@ -9059,8 +9013,6 @@ function app:GetDataCache()
 			UpdateVisibleRowData(self);
 		end
 		]]--
-		
-		-- app.Categories = nil;
 	end
 	return allData;
 end
@@ -11201,9 +11153,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					self.tradeSkillID = tradeSkillID;
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.requireSkill == tradeSkillID then
-							self.data = CloneData(group);
-							self.data.indent = 0;
-							self.data.visible = true;
+							self.data = setmetatable({ ['visible'] = true, ["indent"] = 0, total = 0, progress = 0 }, { __index = group });
 							BuildGroups(self.data, self.data.g);
 							app.UpdateGroups(self.data, self.data.g);
 							if not self.data.expanded then
@@ -12655,29 +12605,6 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedQuests", myQuests);
 	end
 	
-	-- Cache some collection states for account wide quests that aren't actually account wide. (Allied Races)
-	for i,achievementQuests in ipairs({
-		{ 12453, { 49973, 49613, 49354, 49614 } },	-- Allied Races: Nightborne
-		{ 12517, { 53466, 53467, 53353, 53355, 52942, 52943, 52945, 52955, 51479 } },	-- Allied Races: Mag'har
-		{ 13156, { 53831, 53823, 53824, 54419, 53826, 54301, 54300, 53825, 53827, 53828, 54031, 54033, 54032, 54034, 53830, 53719 } },	-- Allied Races: Zandalari Troll
-		{ 12452, { 48066, 48067, 49756, 48079, 41884, 41764, 48185, 41799, 48190, 41800, 48434, 41815, 41840, 41882, 41841, 48403, 48433 } },	-- Allied Races: Highmountain Tauren
-		{ 12450, { 49787, 48962 } },	-- Allied Races: Void Elf
-		{ 12516, { 51813, 53351, 53342, 53352, 51474, 53566 } },	-- Allied Races: Dark Iron Dwarf
-		{ 12451, { 49698, 49266, 50071 } },	-- Allied Races: Lightforged Draenei 
-		{ 13157, { 54706, 55039, 55043, 54708, 54721, 54723, 54725, 54726, 54727, 54728, 54730, 54731, 54729, 54732, 55136, 54733, 54734, 54735, 54851, 53720 } },	-- Allied Races: Kul Tiran
-	}) do
-		-- If you completed the achievement, then mark the associated quests.
-		if select(4, GetAchievementInfo(achievementQuests[1])) then
-			for j,questID in ipairs(achievementQuests[2]) do
-				rawset(CompletedQuests, questID, 2);
-				if not myQuests[questID] then
-					myQuests[questID] = 2;
-					quests[questID] = 1;
-				end
-			end
-		end
-	end
-	
 	-- Cache your character's selfie filters data.
 	local selfieFilters = GetDataMember("CollectedSelfieFiltersPerCharacter", {});
 	local mySelfieFilters = GetTempDataMember("CollectedSelfieFilters", selfieFilters[app.GUID]);
@@ -12786,11 +12713,11 @@ app.events.VARIABLES_LOADED = function()
 		"TomTomIgnoreCompletedObjects",
 		"WipedCollectedMusicRollsPerCharacter"
 	}) do
-		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
+		oldsettings[key] = AllTheThingsAD[key];
 	end
 	wipe(AllTheThingsAD);
 	for key,value in pairs(oldsettings) do
-		rawset(AllTheThingsAD, key, value);
+		AllTheThingsAD[key] = value;
 	end
 
 	-- Tooltip Settings
