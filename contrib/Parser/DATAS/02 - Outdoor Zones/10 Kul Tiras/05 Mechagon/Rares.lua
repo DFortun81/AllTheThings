@@ -222,11 +222,10 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 4,
 						},
-						--i(168908, {	-- Blueprint: Experimental Adventurer Augment
-						--	["questID"] = 56087,
-						--}),
-						--i(168752),	-- Omnipurpose Efficient Logic Board (possibly random drop from rares? I got one, but my friend didn't)
-						-- Commenting out for now
+						i(168908, {	-- Blueprint: Experimental Adventurer Augment
+							["questID"] = 56087,
+						}),
+						i(168752),	-- Omnipurpose Efficient Logic Board (possibly random drop from rares? I got one, but my friend didn't)
 					},
 				}),
 				n(152007, {	-- Killsaw
@@ -241,8 +240,6 @@ _.Zones =
 							["criteriaID"] = 8,
 						},
 						i(167931),	-- Mechagonian Sawblades
-						i(168327),	-- Chain Ignitercoil
-						-- Multidrop
 					},
 				}),
 				n(151933, {	-- Malfunctioning Beastbot
@@ -284,7 +281,6 @@ _.Zones =
 							["criteriaID"] = 3,
 						},
 						i(169393),	-- Arachnoid Skitterbot
-						i(168327),	-- Chain Ignitercoil
 					},
 				}),
 				n(151627, {	-- Mr. Fixthis
@@ -338,6 +334,7 @@ _.Zones =
 							["criteriaID"] = 24,
 						},
 						i(170273),	-- Oxidizied Refuse Remover
+						i(167794),	-- Paint Vial: Lemonade Steel
 					},
 				}),
 				n(151702, {	-- Paol Pondwader
@@ -351,7 +348,7 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 5,
 						},
-						i(168832),	-- Galvanic Oscillator
+						i(170468),	-- Supervolt Zapper
 					},
 				}),
 				n(150575, {	-- Rumblerocks
@@ -394,7 +391,6 @@ _.Zones =
 							["criteriaID"] = 36,
 						},
 						i(168490),	-- Blueprint: Protocol Transference Device
-						i(168327),	-- Chain Ignitercoil
 					},
 				}),
 				n(150937, {	-- Seaspit
@@ -487,6 +483,8 @@ _.Zones =
 						i(168749),	-- Performant Effective Logic Board
 					},
 				}),
+				-- Shared Rares Drop
+				i(168327),	-- Chain Ignitercoil
 			}),
 		}),
 	}),
