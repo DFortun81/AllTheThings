@@ -127,6 +127,28 @@ _.Zones =
 						}),
 					}),
 				}),
+				prof(164, {	-- Blacksmith
+					q(50276, {	-- A Recipe For the Ages
+						["qg"] = 127112,	-- Forgemaster Zak'aal
+						["coord"] = { 43.6, 38.3, 1165 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(253145),	-- Khaz'gorian Smithing Hammer
+						},
+					}),
+					q(50278, {	-- Deep In the Core
+						["qg"] = 127112,	-- Forgemaster Zak'aal
+						["coord"] = { 43.6, 38.3, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 50277,	-- Hammering Out Information
+					}),
+					q(50277, {	-- Hammering Out Information
+						["qg"] = 127112,	-- Forgemaster Zak'aal
+						["coord"] = { 43.6, 38.3, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 50276,	-- A Recipe For the Ages
+					}),
+				}),
 				n(-188, {	-- Mining
 					qh(51962, {	-- Lumbering Away
 						["qg"] = 122694,	-- Secott the Goldsmith
