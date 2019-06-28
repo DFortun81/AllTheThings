@@ -5948,7 +5948,7 @@ function app.FilterItemClass(item)
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
-	return not rawget(group, "nmc");
+	return not rawget(item, "nmc");
 end
 function app.FilterItemClass_RequireItemFilter(item)
 	_cache = group.f;
@@ -5963,10 +5963,10 @@ function app.FilterItemClass_RequireItemFilter(item)
 	end
 end
 function app.FilterItemClass_RequireRaces(item)
-	return not rawget(group, "nmr");
+	return not rawget(item, "nmr");
 end
 function app.FilterItemClass_SeasonalItem(item)
-	_cache = rawget(group, "u");
+	_cache = rawget(item, "u");
 	if _cache and rawget(rawget(rawget(L, "UNOBTAINABLE_ITEM_REASONS"), _cache), 1) > 4 then
 	  return GetDataSubMember("SeasonalFilters", _cache);
 	else
@@ -5974,7 +5974,7 @@ function app.FilterItemClass_SeasonalItem(item)
 	end
 end
 function app.FilterItemClass_UnobtainableItem(item)
-	_cache = rawget(group, "u");
+	_cache = rawget(item, "u");
 	if _cache and rawget(rawget(rawget(L, "UNOBTAINABLE_ITEM_REASONS"), _cache), 1) < 5 then
 	  return GetDataSubMember("UnobtainableItemFilters", _cache);
 	else
@@ -5982,7 +5982,7 @@ function app.FilterItemClass_UnobtainableItem(item)
 	end
 end
 function app.FilterItemClass_RequireBinding(item)
-	_cache = group.b;
+	_cache = item.b;
 	if _cache and (_cache == 2 or _cache == 3) then
 		return false;
 	else
@@ -6471,10 +6471,10 @@ UpdateGroups = function(parent, g)
 	end
 end
 local function UpdateParentProgress(group)
-	group.progress = group.progress + 1;
+	rawset(group, "progress", rawget(group, "progress") + 1);
 	
 	-- Continue on to this object's parent.
-	if group.parent then
+	if rawget(group, "parent") then
 		if group.visible then
 			-- If we were initially visible, then update the parent.
 			UpdateParentProgress(group.parent);
