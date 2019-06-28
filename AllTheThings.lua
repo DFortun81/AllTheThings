@@ -86,15 +86,16 @@ local function StartCoroutine(name, method)
 	end
 end
 local constructor = function(id, t, typeID)
-	if not t then
-		return { [typeID] = id };
-	end
-	if not t.g and t[1] then
-		t = { ["g"] = t, [typeID] = id };
+	if t then
+		if not rawget(t, "g") and rawget(t, 1) then
+			return { g=t, [typeID]=id };
+		else
+			rawset(t, typeID, id);
+			return t;
+		end
 	else
-		t[typeID] = id;
+		return {[typeID] = id};
 	end
-	return t;
 end
 local contains = function(arr, value)
 	for i,value2 in ipairs(arr) do
@@ -115,43 +116,72 @@ local containsValue = function(dict, value)
 end
 
 -- Data Lib
+local attData;
 local AllTheThingsTempData = {}; 	-- For temporary data.
 local AllTheThingsAD = {};			-- For account-wide data.
 local function SetDataMember(member, data)
-	AllTheThingsAD[member] = data;
+	rawset(AllTheThingsAD, member, data);
 end
 local function GetDataMember(member, default)
-	if AllTheThingsAD[member] == nil then AllTheThingsAD[member] = default; end
-	return AllTheThingsAD[member];
+	attData = rawget(AllTheThingsAD, member);
+	if attData == nil then
+		rawset(AllTheThingsAD, member, default);
+		return default;
+	else
+		return attData;
+	end
 end
 local function SetTempDataMember(member, data)
-	AllTheThingsTempData[member] = data;
+	rawset(AllTheThingsTempData, member, data);
 end
 local function GetTempDataMember(member, default)
-	if AllTheThingsTempData[member] == nil then AllTheThingsTempData[member] = default; end
-	return AllTheThingsTempData[member];
+	attData = rawget(AllTheThingsTempData, member);
+	if attData == nil then
+		rawset(AllTheThingsTempData, member, default);
+		return default;
+	else
+		return attData;
+	end
 end
 local function SetDataSubMember(member, submember, data)
-	if AllTheThingsAD[member] then AllTheThingsAD[member][submember] = data; end
+	rawset(rawget(AllTheThingsAD,member), submember, data);
 end
 local function GetDataSubMember(member, submember, default)
-	if not AllTheThingsAD[member] then AllTheThingsAD[member] = { }; end
-	if AllTheThingsAD[member][submember] == nil then AllTheThingsAD[member][submember] = default; end
-	return AllTheThingsAD[member][submember];
+	attData = rawget(AllTheThingsAD,member);
+	if attData then 
+		attData = rawget(attData, submember);
+		if attData == nil then
+			rawset(rawget(AllTheThingsAD,member), submember, default);
+			return default;
+		else
+			return attData;
+		end
+	else
+		attData = {};
+		rawset(attData, submember, default);
+		rawset(AllTheThingsAD, member, attData);
+		return default;
+	end
 end
 local function SetTempDataSubMember(member, submember, data)
-	if AllTheThingsTempData[member] then
-		AllTheThingsTempData[member][submember] = data;
-	end
+	rawset(rawget(AllTheThingsTempData,member), submember, data);
 end
 local function GetTempDataSubMember(member, submember, default)
-	if AllTheThingsTempData[member] == nil then
-		AllTheThingsTempData[member] = { };
+	attData = rawget(AllTheThingsTempData,member);
+	if attData then 
+		attData = rawget(attData, submember);
+		if attData == nil then
+			rawset(rawget(AllTheThingsTempData,member), submember, default);
+			return default;
+		else
+			return attData;
+		end
+	else
+		attData = {};
+		rawset(attData, submember, default);
+		rawset(AllTheThingsTempData, member, attData);
+		return default;
 	end
-	if AllTheThingsTempData[member][submember] == nil then
-		AllTheThingsTempData[member][submember] = default;
-	end
-	return AllTheThingsTempData[member][submember];
 end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
@@ -12666,11 +12696,11 @@ app.events.VARIABLES_LOADED = function()
 		"TomTomIgnoreCompletedObjects",
 		"WipedCollectedMusicRollsPerCharacter"
 	}) do
-		oldsettings[key] = AllTheThingsAD[key];
+		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
 	end
 	wipe(AllTheThingsAD);
 	for key,value in pairs(oldsettings) do
-		AllTheThingsAD[key] = value;
+		rawset(AllTheThingsAD, key, value);
 	end
 
 	-- Tooltip Settings
