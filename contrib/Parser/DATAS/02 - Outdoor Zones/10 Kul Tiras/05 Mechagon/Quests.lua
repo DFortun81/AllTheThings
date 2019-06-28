@@ -324,6 +324,11 @@ _.Zones =
 					["coord"] = { 42.8, 29.3, 1462 },
 					["isDaily"] = true,
 				}),
+				q(56301, {	-- Go For The Gold
+					["qg"] = 154485,	-- Short John Mithril
+					["coord"] = { 21.5, 81.9, 1462 },
+					["isDaily"] = true,
+				}),
 				q(55101, {	-- Junkyard Tinkering and You -- also triggered 56902 for alliance
 					["qg"] = 152295,	-- Pascal
 					["coord"] = { 71.2, 32.3, 1462 },
@@ -388,6 +393,11 @@ _.Zones =
 							["achievementID"] = 13513,
 						}),
 					},
+				}),
+				q(56184, {	-- Pirates, Sea Monsters, Robots
+					["qg"] = 154335,	-- Dread Captain DeMeza
+					["coord"] = { 71.7, 38.8, 1462 },
+					["isDaily"] = true,
 				}),
 				o(327548, {	-- Powerpack Blueprints
 					["coord"] = { 60.9, 41.5, 1462 },
@@ -522,6 +532,11 @@ _.Zones =
 							["criteriaID"] = 38,
 						},
 					},
+				}),
+				q(56306, {	-- The Family Jewels
+					["qg"] = 154511,	-- Sneaky Pete
+					["coord"] = { 24.2, 75.3, 1462 },
+					["isDaily"] = true,
 				}),
 				q(55696, {	-- Test Drive
 					["qg"] = 150573,	-- Recycler Kerchunk

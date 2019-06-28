@@ -15,6 +15,13 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
+				q(55901, {	-- Rustbolt Rebellion
+					["collectible"] = false,
+					["lvl"] = 120,
+					["g"] = {
+						i(168832),	-- Galvanic Oscillator
+					},
+				}),
 			}),
 		}),
 	}),
