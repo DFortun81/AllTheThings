@@ -112,6 +112,8 @@ _.ExpansionFeatures =
 			1032,	-- Skittering Hollow
 			1034,	-- Verdant Wilds
 			1037,	-- Whispering Reef
+			1501,	-- Crestfall
+			1502,	-- Snowblossom Village
 		},
 	}),
 };
