@@ -86,10 +86,10 @@ local function StartCoroutine(name, method)
 end
 local constructor = function(id, t, typeID)
 	if t then
-		if not t.g and t[1] then
+		if not rawget(t, "g") and rawget(t, 1) then
 			return { g=t, [typeID]=id };
 		else
-			t[typeID] = id;
+			rawset(t, typeID, id);
 			return t;
 		end
 	else
@@ -2119,12 +2119,12 @@ local CacheFields;
 (function()
 local fieldCache_g,fieldCache_f, fieldConverters, converter;
 local function CacheField(group, field, value)
-	fieldCache_g = fieldCache[field];
-	fieldCache_f = fieldCache_g[value];
+	fieldCache_g = rawget(fieldCache, field);
+	fieldCache_f = rawget(fieldCache_g, value);
 	if fieldCache_f then
 		tinsert(fieldCache_f, group);
 	else
-		fieldCache_g[value] = {group};
+		rawset(fieldCache_g, value, {group});
 	end
 end
 -- These are the fields we store.
@@ -2177,7 +2177,7 @@ fieldConverters = {
 	end,
 	["itemID"] = function(group, value)
 		CacheField(group, "itemID", value);
-		if group.filterID == 102 then CacheField(group, "toyID", value); end
+		if rawget(group, "filterID") == 102 then CacheField(group, "toyID", value); end
 	end,
 	["mapID"] = function(group, value)
 		CacheField(group, "mapID", value);
@@ -2214,51 +2214,58 @@ fieldConverters = {
 		end
 	end,
 	["crs"] = function(group, value)
+		_cache = rawget(fieldConverters, "creatureID");
 		for i,creatureID in ipairs(value) do
-			fieldConverters["creatureID"](group, creatureID);
+			_cache(group, creatureID);
 		end
 	end,
 	["qgs"] = function(group, value)
+		_cache = rawget(fieldConverters, "creatureID");
 		for i,questGiverID in ipairs(value) do
-			fieldConverters["creatureID"](group, questGiverID);
+			_cache(group, questGiverID);
 		end
 	end,
 	["altQuests"] = function(group, value)
+		_cache = rawget(fieldConverters, "questID");
 		for i,questID in ipairs(value) do
-			fieldConverters["questID"](group, questID);
+			_cache(group, questID);
 		end
 	end,
 	["maps"] = function(group, value)
+		_cache = rawget(fieldConverters, "mapID");
 		for i,mapID in ipairs(value) do
-			fieldConverters["mapID"](group, mapID);
+			_cache(group, mapID);
 		end
 	end,
 	--[[
 	-- TODO: Mark coordinates in a special way.
 	["coord"] = function(group, value)
 		if value[3] then
-			fieldConverters["mapID"](group, value[3]);
+			rawget(fieldConverters, "mapID")(group, value[3]);
 		end
 	end,
 	["coords"] = function(group, value)
+		_cache = rawget(fieldConverters, "mapID");
 		for i,coord in ipairs(value) do
-			fieldConverters["coord"](group, coord);
+			if coord[3] then
+				_cache(group, coord[3]);
+			end
 		end
 	end,
 	]]--
 	["c"] = function(group, value)
 		if not containsValue(value, app.ClassIndex) then
-			group.nmc = true;	-- "Not My Class"
+			rawset(group, "nmc", true); -- "Not My Class"
 		end
 	end,
 	["r"] = function(group, value)
 		if value ~= app.FactionID then
-			group.nmr = true;	-- "Not My Race"
+			rawset(group, "nmr", true);	-- "Not My Race"
 		end
 	end,
 	["races"] = function(group, value)
 		if not containsValue(value, app.RaceIndex) then
-			group.nmr = true;	-- "Not My Race"
+			rawset(group, "nmr", true);	-- "Not My Race"
 		end
 	end,
 };
