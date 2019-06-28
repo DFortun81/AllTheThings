@@ -20,6 +20,7 @@ _.Zones =
 					q(50858, {	-- Sky Queeen [Alliance]
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 					q(51038, {	-- Supplies Needed: Akunda's Bite
 						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
