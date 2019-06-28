@@ -2718,13 +2718,13 @@ local function RefreshCollections()
 		-- Harvest Illusion Collections
 		local collectedIllusions = GetDataMember("CollectedIllusions", {});
 		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
-			if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
+			if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
 		end
 		
 		-- Harvest Title Collections
 		local collectedTitles = GetTempDataMember("CollectedTitles", {});
 		for i=1,GetNumTitles(),1 do
-			if IsTitleKnown(i) then collectedTitles[i] = 1; end
+			if IsTitleKnown(i) then rawset(collectedTitles, i, 1); end
 		end
 		
 		-- Refresh Mounts / Pets
@@ -2733,8 +2733,8 @@ local function RefreshCollections()
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
-				collectedSpells[spellID] = 1;
-				collectedSpellsPerCharacter[spellID] = 1;
+				rawset(collectedSpells, spellID, 1);
+				rawset(collectedSpellsPerCharacter, spellID, 1);
 			end
 		end
 		
@@ -2747,8 +2747,8 @@ local function RefreshCollections()
 		-- Refresh Toys from Cache
 		local collectedToys = GetDataMember("CollectedToys", {});
 		for id,group in pairs(fieldCache["toyID"]) do
-			if not collectedToys[id] and PlayerHasToy(id) then
-				collectedToys[id] = 1;
+			if not rawget(collectedToys, id) and PlayerHasToy(id) then
+				rawset(collectedToys, id, 1);
 			end
 		end
 		
@@ -2757,22 +2757,22 @@ local function RefreshCollections()
 		if app.Settings:Get("Completionist") then
 			-- Completionist Mode can simply use the *fast* blizzard API.
 			for id,group in pairs(fieldCache["s"]) do
-				if not collectedSources[id] then
+				if not rawget(collectedSources, id) then
 					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						collectedSources[id] = 1;
+						rawset(collectedSources, id, 1);
 					end
 				end
 			end
 		else
 			-- Unique Mode requires a lot more calculation.
 			for id,group in pairs(fieldCache["s"]) do
-				if not collectedSources[id] then
+				if not rawget(collectedSources, id) then
 					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						collectedSources[id] = 1;
+						rawset(collectedSources, id, 1);
 					else
-						local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
-						if sourceInfo and app.ItemSourceFilter(sourceInfo, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) then
-							collectedSources[id] = 2;
+						_cache = C_TransmogCollection_GetSourceInfo(id);
+						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
+							rawset(collectedSources, id, 2);
 						end
 					end
 				end
@@ -6388,7 +6388,7 @@ UpdateGroup = function(parent, group)
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
 		-- Check if this is a group
-		if group.g then
+		if rawget(group, "g") then
 			-- If this item is collectible, then mark it as such.
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
@@ -6474,18 +6474,19 @@ local function UpdateParentProgress(group)
 	rawset(group, "progress", rawget(group, "progress") + 1);
 	
 	-- Continue on to this object's parent.
-	if rawget(group, "parent") then
-		if group.visible then
+	_cache = rawget(group, "parent");
+	if _cache then
+		if rawget(group, "visible") then
 			-- If we were initially visible, then update the parent.
-			UpdateParentProgress(group.parent);
+			UpdateParentProgress(_cache);
 			
 			-- If this group is trackable, then we should show it.
 			if app.GroupVisibilityFilter(group) then
-				group.visible = true;
+				rawset(group, "visible", true);
 			elseif app.ShowIncompleteThings(group) then
-				group.visible = not group.saved;
+				rawset(group, "visible", not rawget(group, "saved"));
 			else
-				group.visible = false;
+				rawset(group, "visible", false);
 			end
 		end
 	end
@@ -7347,7 +7348,7 @@ local function CreateMiniListForGroup(group)
 	end
 end
 local function ClearRowData(self)
-	self.ref = nil;
+	rawset(self, "ref", nil);
 	self.Background:Hide();
 	self.Texture:Hide();
 	self.Texture.Background:Hide();
@@ -7357,17 +7358,21 @@ local function ClearRowData(self)
 	self.Label:Hide();
 end
 local function CalculateRowBack(data)
-	if data.back then return data.back; end
-	if data.parent then
-		return CalculateRowBack(data.parent) * 0.5;
+	_cache = rawget(data, "back");
+	if _cache then return _cache; end
+	_cache = rawget(data, "parent");
+	if _cache then
+		return CalculateRowBack(_cache) * 0.5;
 	else
 		return 0;
 	end
 end
 local function CalculateRowIndent(data)
-	if data.indent then return data.indent; end
-	if data.parent then
-		return CalculateRowIndent(data.parent) + 1;
+	_cache = rawget(data, "indent");
+	if _cache then return _cache; end
+	_cache = rawget(data, "parent");
+	if _cache then
+		return CalculateRowIndent(_cache) + 1;
 	else
 		return 0;
 	end
@@ -7442,7 +7447,7 @@ local function SetRowData(self, row, data)
 			end
 		end
 		if data.saved then
-			if data.parent and data.parent.locks or data.isDaily then
+			if data.parent and data.parent.locks or data.repeatable then
 				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known");
 			else
 				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known_green");
@@ -7461,7 +7466,8 @@ local function SetRowData(self, row, data)
 		end
 		local summary = GetProgressTextForRow(data);
 		if not summary then
-			if data.g and not data.expanded and #data.g > 0 then
+			_cache = rawget(data, "g");
+			if _cache and not rawget(data, "expanded") and #_cache > 0 then
 				summary = "+++";
 			else
 				summary = "---";
@@ -7484,9 +7490,10 @@ local function SetRowData(self, row, data)
 			row.Label:SetPoint("RIGHT");
 		end
 		row.Label:SetText(text);
-		if data.font then
-			row.Label:SetFontObject(data.font);
-			row.Summary:SetFontObject(data.font);
+		_cache = rawget(data, "font");
+		if _cache then
+			row.Label:SetFontObject(_cache);
+			row.Summary:SetFontObject(_cache);
 		else
 			row.Label:SetFontObject("GameFontNormal");
 			row.Summary:SetFontObject("GameFontNormal");
@@ -7498,46 +7505,29 @@ local function SetRowData(self, row, data)
 		row:Hide();
 	end
 end
-local function UpdateRowProgress(group)
-	if group.collectible then
-		group.progress = group.collected and 1 or 0;
-		group.total = 1;
-	else
-		group.progress = 0;
-		group.total = 0;
-	end
-	if group.g then
-		for i,subgroup in ipairs(group.g) do
-			UpdateRowProgress(subgroup);
-			if subgroup.total then
-				group.progress = group.progress + subgroup.progress;
-				group.total = group.total + subgroup.total;
-			end
-		end
-	end
-end
 local function UpdateVisibleRowData(self)
 	-- If there is no raw data, then return immediately.
-	if not self.rowData then return; end
+	local rowData = rawget(self, "rowData");
+	if not rowData then return; end
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
-	local totalRowCount = #self.rowData;
+	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
 		local container, rowCount, totalHeight = self.Container, 0, 0;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 		
 		-- Ensure that the first row doesn't move out of position.
-		local row = container.rows[1] or CreateRow(container);
-		SetRowData(self, row, self.rowData[1]);
+		local row = rawget(container.rows, 1) or CreateRow(container);
+		SetRowData(self, row, rawget(rowData, 1));
 		totalHeight = totalHeight + row:GetHeight();
 		current = current + 1;
 		rowCount = rowCount + 1;
 		
 		for i=2,totalRowCount do
-			row = container.rows[i] or CreateRow(container);
-			SetRowData(self, row, self.rowData[current]);
+			row = rawget(container.rows, i) or CreateRow(container);
+			SetRowData(self, row, rawget(rowData, current));
 			totalHeight = totalHeight + row:GetHeight();
 			if totalHeight > container:GetHeight() then
 				break;
@@ -7549,8 +7539,9 @@ local function UpdateVisibleRowData(self)
 		
 		-- Hide the extra rows if any exist
 		for i=math.max(2, rowCount + 1),#container.rows do
-			ClearRowData(container.rows[i]);
-			container.rows[i]:Hide();
+			row = rawget(container.rows, i);
+			ClearRowData(row);
+			row:Hide();
 		end
 		
 		totalRowCount = totalRowCount + 1;
@@ -8305,8 +8296,9 @@ end
 local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
 		tinsert(data, object);
-		if object.g and object.expanded then
-			for j, group in ipairs(object.g) do
+		_cache = rawget(object, "g");
+		if _cache and rawget(object, "expanded") then
+			for j, group in ipairs(_cache) do
 				ProcessGroup(data, group);
 			end
 		end
@@ -8315,32 +8307,36 @@ end
 local function UpdateWindow(self, force, got)
 	-- If this window doesn't have data, do nothing.
 	if not self.data then return; end
-	if not self.rowData then
-		self.rowData = {};
+	local rowData = rawget(self, "rowData");
+	if rowData then
+		wipe(rowData);
 	else
-		wipe(self.rowData);
+		rowData = {};
+		rawset(self, "rowData", rowData);
 	end
-	if self.data and (force or self:IsVisible()) then
-		self.data.expanded = true;
+	local data = rawget(self, "data");
+	if data and (force or self:IsVisible()) then
+		rawset(data, "expanded", true);
 		if self.shouldFullRefresh and (force or got) then
-			self.data.progress = 0;
-			self.data.total = 0;
-			UpdateGroups(self.data, self.data.g);
+			rawset(data, "progress", 0);
+			rawset(data, "total", 0);
+			UpdateGroups(data, rawget(data, "g"));
 		end
-		ProcessGroup(self.rowData, self.data);
+		ProcessGroup(rowData, data);
 		
 		-- Does this user have everything?
-		if self.data.total then
-			if self.data.total <= self.data.progress then
-				if #self.rowData < 1 then
-					self.data.back = 1;
-					tinsert(self.rowData, self.data);
+		_cache = rawget(data, "total");
+		if _cache then
+			if _cache <= data.progress then
+				if #rowData < 1 then
+					rawset(data, "back", 1);
+					tinsert(rowData, data);
 				end
 				if self.missingData then
 					if got then app:PlayCompleteSound(); end
 					self.missingData = nil;
 				end
-				tinsert(self.rowData, {
+				tinsert(rowData, {
 					["text"] = "No entries matching your filters were found.",
 					["description"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
 					["collectible"] = 1,
@@ -12785,11 +12781,11 @@ app.events.VARIABLES_LOADED = function()
 		"TomTomIgnoreCompletedObjects",
 		"WipedCollectedMusicRollsPerCharacter"
 	}) do
-		oldsettings[key] = AllTheThingsAD[key];
+		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
 	end
 	wipe(AllTheThingsAD);
 	for key,value in pairs(oldsettings) do
-		AllTheThingsAD[key] = value;
+		rawset(AllTheThingsAD, key, value);
 	end
 
 	-- Tooltip Settings
