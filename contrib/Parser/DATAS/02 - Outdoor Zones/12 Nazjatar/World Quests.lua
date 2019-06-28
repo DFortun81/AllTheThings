@@ -425,8 +425,7 @@ _.Zones =
 						i(169501),	-- Recipe: Greater Flask of Endless Fathoms (Rank 3)
 					},
 				}),
---[[			-- QuestID is missing
-				q(??, {	-- Work Order: Greater Flask of Endless Fathoms (H)
+				q(56772, {	-- Work Order: Greater Flask of Endless Fathoms (H)
 					["collectible"] = false,
 					["requireSkill"] = 171,	-- Alchemy
 					["races"] = HORDE_ONLY,
@@ -435,7 +434,6 @@ _.Zones =
 						i(169501),	-- Recipe: Greater Flask of Endless Fathoms (Rank 3)
 					},
 				}),
-]]--
 				q(56770, {	-- Work Order: Greater Flask of the Undertow (A)
 					["collectible"] = false,
 					["requireSkill"] = 171,	-- Alchemy
