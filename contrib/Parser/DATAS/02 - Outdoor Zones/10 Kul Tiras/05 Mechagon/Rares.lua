@@ -106,7 +106,7 @@ _.Zones =
 					["hordeQuestID"] = 55514,
 					["coord"] = { 35.3, 43.0, 1462 },
 					["isDaily"] = true,
-					["description"] = "Must complete the |cFFFFD7000Let's Fish!|r questline to spawn him.",
+					["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn him.",
 					["g"] = {
 						crit(11, {	-- Deepwater Maw
 							["achievementID"] = 13470,	-- Rest in Pistons
