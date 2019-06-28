@@ -5951,7 +5951,7 @@ function app.FilterItemClass_RequireClasses(item)
 	return not rawget(item, "nmc");
 end
 function app.FilterItemClass_RequireItemFilter(item)
-	_cache = group.f;
+	_cache = item.f;
 	if _cache then
 		if app.Settings:GetFilter(_cache) then
 			return true;
