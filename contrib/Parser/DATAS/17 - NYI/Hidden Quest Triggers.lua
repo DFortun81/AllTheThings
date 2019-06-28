@@ -166,5 +166,7 @@ _.NeverImplemented =
 		q(55555),	-- Mechanized Chest. Chests spawn randomly
 		q(55556),	-- Mechanized Chest. Chests spawn randomly
 		q(55921),	-- Uncle T'Rogg first kill
+		q(56004),	-- looting Energy Cell while on the quest "We Can Fix It"
+		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"
 	}),
 };

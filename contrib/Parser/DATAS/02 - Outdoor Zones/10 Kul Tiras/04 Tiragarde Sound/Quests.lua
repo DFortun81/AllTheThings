@@ -624,34 +624,30 @@ _.Zones =
 						})),
 						
 						--
-						{	-- Let's Get It Started
-							["questID"] = 54945,
+						q(54945, {	-- Let's Get It Started
 							["qg"] = 149877,	-- Tinkmaster Overspark
 							["coord"] = { 65.8, 66.3, 895 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 55040,	-- Looking Inside
-						},
-						{	-- Looking Inside
-							["questID"] = 55040,
+						}),
+						q(55040, {	-- Looking Inside
 							["qg"] = 149864,	-- Tinkmaster Overspark
 							["coord"] = { 65.5, 65.0, 895 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 54088,	-- The Legend of Mechagon
-						},
-						{	-- Report to Gila
-							["questID"] = 54946,
+						}),
+						q(54946, {	-- Report to Gila
 							["qg"] = 152864,	-- Tinkmaster Overspark
 							["coord"] = { 65.8, 66.3, 895 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 54087,	-- You Must be This Height
-						},
-						{	-- You Must be This Height
-							["questID"] = 54087,
+						}),
+						q(54087, {	-- You Must be This Height
 							["qg"] = 149877,	-- Tinkmaster Overspark
 							["coord"] = { 65.8, 66.3, 895 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 54945,	-- Let's Get It Started
-						},
+						}),
 						
 						
 						q(48903, {	-- The Perfect Horse, of Course

@@ -94,10 +94,9 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
 					["g"] = {
-						{	-- Rest in Pistons (Crazed Trogg)
-							["achievementID"] = 13470,
-							["criteriaID"] = 20,
-						},
+						crit(20, {	-- Crazed Trogg
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(169674),	-- Green Paint Filled Bladder
 					},
 				}),
@@ -109,10 +108,9 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Must complete the |cFFFFD7000Let's Fish!|r questline to spawn him.",
 					["g"] = {
-						{	-- Rest in Pistons (Deepwater Maw)
-							["achievementID"] = 13470,
-							["criteriaID"] = 11,
-						},
+						crit(11, {	-- Deepwater Maw
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168804),	-- Powered Piscine Procurement Pole
 					},
 				}),
@@ -218,10 +216,9 @@ _.Zones =
 					["coord"] = { 77.3, 44.8, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Jawbreaker)
-							["achievementID"] = 13470,
-							["criteriaID"] = 4,
-						},
+						crit(4, {	-- Jawbreaker
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168908, {	-- Blueprint: Experimental Adventurer Augment
 							["questID"] = 56087,
 						}),
@@ -250,10 +247,9 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Requires a |cFFFFD700Beastbot Powerpack|r.",
 					["g"] = {
-						{	-- Rest in Pistons (Malfunctioning Beastbot)
-							["achievementID"] = 13470,
-							["criteriaID"] = 19,
-						},
+						crit(19, {	-- Malfunctioning Beastbot
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(169382),	-- Lost Robogrip
 					},
 				}),

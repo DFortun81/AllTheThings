@@ -43,10 +43,9 @@ _.Zones =
 					["coord"] = { 72.1, 37.2, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Outside Influences
-							["achievementID"] = 13556,
-							["criteriaID"] = 1,
-						},
+						crit(1, {	-- Aid From Nordrassil
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
 					},
 				}),
 				q(55813, {	-- Aim High
@@ -71,33 +70,30 @@ _.Zones =
 						151627,	-- Mr. Fixthis
 					},
 					["g"] = {
-						{	-- Junkyard Architect (BAWLD-371)
-							["achievementID"] = 13479,
-							["criteriaID"] = 15,
-						},
+						crit(15, {	-- BAWLD-371
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(167836, {	-- Blueprint: Canned Minnows
 					["questID"] = 55057,
 					["crs"] = { 151569 },	-- Deepwater Maw
 					["g"] = {
-						{	-- Junkyard Architect (Canned Minnows)
-							["achievementID"] = 13479,
-							["criteriaID"] = 5,
-						},
+						crit(5, {	-- Canned Minnows
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(168908, {	-- Blueprint: Experimental Adventurer Augment
-					["questID"] = 56087,
+					["questID"] = 56087,	-- Blueprint: Experimental Adventurer Augment
 					["crs"] = {
 						151934,	-- Arachnoid Harvester
 						151684,	-- Jawbreaker
 					},
 					["g"] = {
-						{	-- Junkyard Architect (Experimental Adventurer Augment)
-							["achievementID"] = 13479,
-							["criteriaID"] = 22,
-						},
+						crit(22, {	-- Experimental Adventurer Augment
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(169168, {	-- Blueprint: Green Spraybot
@@ -106,10 +102,9 @@ _.Zones =
 						152569,	-- Crazed Trogg
 					},
 					["g"] = {
-						{	-- Junkyard Architect (Green Spraybot)
-							["achievementID"] = 13479,
-							["criteriaID"] = 28,
-						},
+						crit(28, {	-- Green Spraybot
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(167871, {	-- Blueprint: G99.99 Landshark
@@ -119,10 +114,9 @@ _.Zones =
 						151202,	-- Foul Manifestation
 					},
 					["g"] = {
-						{	-- Junkyard Architect (G99.99 Landshark)
-							["achievementID"] = 13479,
-							["criteriaID"] = 11,
-						},
+						crit(11, {	-- G99.99 Landshark
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(167787, {	-- Blueprint: Mechanocat Laser Pointer
@@ -130,10 +124,9 @@ _.Zones =
 					["coord"] = { 63.3, 42.9, 1462 },
 					["description"] = "Purchase the Blueprint from Cork Stuttguard",
 					["g"] = {
-						{	-- Junkyard Architect (Mechanocat Laser Pointer)
-							["achievementID"] = 13479,
-							["criteriaID"] = 4,
-						},
+						crit(4, {	-- Mechanocat Laser Pointer
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(167846, {	-- Blueprint: Mechano-Treat
@@ -142,10 +135,9 @@ _.Zones =
 						151625,	-- The Scrap King
 					},
 					["g"] = {
-						{	-- Junkyard Architect (Mechano-Treat)
-							["achievementID"] = 13479,
-							["criteriaID"] = 9,
-						},
+						crit(9, {	-- Mechano-Treat
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(168491, {	-- Blueprint: Personal Time Displacer
@@ -155,10 +147,9 @@ _.Zones =
 						153991,	-- Clockwork Giant
 					},
 					["g"] = {
-						{	-- Junkyard Architect (Personal Time Displacer
-							["achievementID"] = 13479,
-							["criteriaID"] = 26,
-						},
+						crit(26, {	-- Personal Time Displacer
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(168062, {	-- Blueprint: Rustbolt Gramophone
@@ -167,10 +158,9 @@ _.Zones =
 						153226,	-- Steel Singer Freza
 					},
 					["g"] = {
-						{	-- Junkyard Architect (Rustbolt Gramophone
-							["achievementID"] = 13479,
-							["criteriaID"] = 12,
-						},
+						crit(12, {	-- Rustbolt Gramophone
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(168063, {	-- Blueprint: Rustbolt Kegerator
@@ -179,10 +169,9 @@ _.Zones =
 						150937,	-- Sea Spit
 					},
 					["g"] = {
-						{	-- Junkyard Architect (Rustbolt Kegerator)
-							["achievementID"] = 13479,
-							["criteriaID"] = 13,
-						},
+						crit(13, {	-- Rustbolt Kegerator
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				i(167843, {	-- Blueprint: Vaultbot Key
@@ -191,10 +180,9 @@ _.Zones =
 						150394,	-- Armored Vaultbot
 					},
 					["g"] = {
-						{	-- Junkyard Architect (Vaultbot Key)
-							["achievementID"] = 13479,
-							["criteriaID"] = 6,
-						},
+						crit(6, {	-- Vaultbot Key
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				q(55305, {	-- Bolted Steelhead -- caught around 46.8,28.2
@@ -210,10 +198,9 @@ _.Zones =
 					["coord"] = { 37.0, 47.1, 1462 },
 					["sourceQuest"] = 55339,	-- Tidying Up
 					["g"] = {
-						{	-- Junkyard Architect (Hundred-Fathom Lure)
-							["achievementID"] = 13479,
-							["criteriaID"] = 3,
-						},
+						crit(3, {	-- Hundred-Fathom Lure
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 						i(167649),	-- Hundred-Fathom Lure
 					},
 				}),
@@ -283,10 +270,9 @@ _.Zones =
 					["questID"] = 55311,
 					["repeatable"] = true,
 					["g"] = {
-						{	-- Secret Fish of Mechagon (Energized Lighting Cod)
-							["achievementID"] = 13489,
-							["criteriaID"] = 8,
-						},
+						crit(8, {	-- Energized Lighting Cod
+							["achievementID"] = 13489,	-- Secret Fish of Mechagon
+						}),
 					},
 				}),
 				q(55213, {	-- Energy Cells for Everyone
@@ -329,15 +315,14 @@ _.Zones =
 					["coord"] = { 21.5, 81.9, 1462 },
 					["isDaily"] = true,
 				}),
-				q(55101, {	-- Junkyard Tinkering and You -- also triggered 56902 for alliance
+				q(55101, {	-- Junkyard Tinkering and You -- also triggered 56902 for alliance -- slumber note: maybe not on live?  didn't get it on my priest.
 					["qg"] = 152295,	-- Pascal
 					["coord"] = { 71.2, 32.3, 1462 },
 					["sourceQuest"] = 55736,	-- Welcome to the Resistance
 					["g"] = {
-						{	-- Junkyard Architect (Scrap Grenade)
-							["achievementID"] = 13479,
-							["criteriaID"] = 1,
-						},
+						crit(1, {	-- Scrap Grenade
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				q(55373, {	-- Knock 'Em Out The Box
@@ -367,7 +352,7 @@ _.Zones =
 				}),
 				q(55731, {	-- My Father's Armies
 					["qg"] = 152820,	-- Prince Erazmin
-					["coord"] = { 58.9, 54.8, 1462 },
+					["coord"] = { 59.1, 55.1, 1462 },
 					["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				}),
 				q(56532, {	-- Nuke 'Em Norbit
@@ -380,10 +365,9 @@ _.Zones =
 					["coord"] = { 70.0, 31.0, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Outside Influences
-							["achievementID"] = 13556,
-							["criteriaID"] = 25,
-						},
+						crit(25, {	-- Off-the-Books Brawlin'
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
 					},
 				}),
 				q(55451, {	-- Paint Vial: Fireball Red
@@ -405,17 +389,16 @@ _.Zones =
 						i(168219, {	-- Blueprint: Beastbot Powerpack
 							["questID"] = 55066,
 							["g"] = {
-								{	-- Junkyard Architect (Beastbot Powerpack)
-									["achievementID"] = 13479,
-									["criteriaID"] = 14,
-								},
+								crit(14, {	-- Beastbot Powerpack
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
 							},
 						}),
 					},
 				}),
 				q(55645, {	-- Princely Visit
 					["qg"] = 152484,	-- Tinkmaster Overspark
-					["coord"] = { 77.5, 40.4, 1462 },
+					["coord"] = { 77.7, 40.4, 1462 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 54992,	-- The Start of Something Bigger
 				}),
@@ -430,9 +413,9 @@ _.Zones =
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 54086,	-- Right Bot for the Job
 				}),
-				q(55730, {	-- Rescuing the Resistance -- also popped 56004 (probably another flag), 56005 (flag: engineers rescued)
+				q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued -- horde only?  didn't pop on alliance on live)
 					["qg"] = 152820,	-- Prince Erazmin
-					["coord"] = { 58.9, 54.8, 1462 },
+					["coord"] = { 59.1, 55.1, 1462 },
 					["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				}),
 				q(54086, {	-- Right Bot for the Job -- 55907 and 56100 also popped
@@ -500,7 +483,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(55096, {	-- Send My Father a Message-- also popped 55495 (flag: repel HK-8 Aerial Oppression Unit)
+				q(55096, {	-- Send My Father a Message
 					["qg"] = 153670,	-- Rustbolt Resistance Fighter (Prinze Erazmin)
 					["coord"] = { 55.6, 60.1, 1462 },
 					["sourceQuests"] = {
@@ -527,10 +510,9 @@ _.Zones =
 					["coord"] = { 71.2, 32.3, 1462 },
 					["sourceQuest"] = 55101,	-- Junkyard Tinkering and You
 					["g"] = {
-						{	-- Junkyard Architect (S.P.A.R.E. Crate)
-							["achievementID"] = 13479,
-							["criteriaID"] = 38,
-						},
+						crit(38, {	-- S.P.A.R.E. Crate
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				q(56306, {	-- The Family Jewels
@@ -555,7 +537,7 @@ _.Zones =
 				}),
 				q(55729, {	-- The Resistance Needs You!
 					["qg"] = 152851,	-- Prince Erazmin
-					["coord"] = { 71.0, 38.3, 1462 },
+					["coord"] = { 71.1, 38.2, 1462 },
 					["sourceQuests"] = {
 						55645,	-- Princely Visit
 						55685,	-- We Come in Peace... and Profit
@@ -586,22 +568,19 @@ _.Zones =
 								["questID"] = 56426,
 							}),
 							i(169794, {	-- Azeroth Mini: Izira Gearsworn
-								{	-- Most Minis Wins (Izira Gearsworn)
-									["achievementID"] = 13708,
-									["criteriaID"] = 1,
-								},
+								crit(1, {	-- Izira Gearsworn
+									["achievementID"] = 13708,	-- Most Minis Wins
+								}),
 							}),
 							i(169844, {	-- Azeroth Mini: Overspark
-								{	-- Most Minis Wins (Overspark)
-									["achievementID"] = 13708,
-									["criteriaID"] = 4,
-								},
+								crit(4, {	-- Overspark
+									["achievementID"] = 13708,	-- Most Minis Wins
+								}),
 							}),
 							i(169797, {	-- Azeroth Mini: Wrenchbot
-								{	-- Most Minis Wins (Wrenchbot)
-									["achievementID"] = 13708,
-									["criteriaID"] = 2,
-								},
+								crit(2, {	-- Wrenchbot
+									["achievementID"] = 13708,	-- Most Minis Wins
+								}),
 							}),
 						}),
 					},
@@ -633,6 +612,12 @@ _.Zones =
 						155259,	-- Lifting Specialist Gogo
 					},
 				}),
+			--	not sure about next quest.  when i walked by after doing the charging for the original quest, this was up with a blue question mark.  it gives a 2-hour buff -- so i guess if the charging machine is available, it's repeatable?  when i turned in the first charging quest, the NPC said it "wouldn't be available every day."  i also got credit for "collaborative construction" while here (counted as a daily construction project, which waren gearhart tells you about), but i'm not sure if that was part of the quest or if that was something else happening in the area as i did it.
+		--[[	q(56335, {	-- Wanna Charge? Gotta Pay!
+					["sourceQuests"] = { 56320 },	-- Your First Charge is Free
+					["repeatable"] = true,
+					["coord"] = { 61.4, 37.5, 1462 },
+				}),	--]]
 				o(329641, {	-- Wanted: Junkbrat and Roadtrogg
 					["questID"] = 56434,
 					["coord"] = { 67.3, 35.2, 1462 },
@@ -640,7 +625,7 @@ _.Zones =
 				}),
 				q(55995, {	-- We Can Fix It
 					["qg"] = 150956,	-- Broken Drill Rig
-					["coord"] = { 56.7, 60.0, 1462 },
+					["coord"] = { 56.7, 59.7, 1462 },
 					["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				}),
 				q(55685, {	-- We Come in Peace... and Profit
@@ -654,10 +639,9 @@ _.Zones =
 					["coord"] = { 71.2, 35.8, 1462 },
 					["sourceQuest"] = 55096,	-- Send My Father a Message
 					["g"] = {
-						{	-- The Mechagonian Threat
-							["achievementID"] = 13700,
+						ach(13700, {	-- The Mechagonian Threat
 							["races"] = HORDE_ONLY,
-						},
+						}),
 					},
 				}),
 				q(56320, {	-- Your First Charge is Free!

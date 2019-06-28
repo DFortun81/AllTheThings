@@ -176,7 +176,7 @@ _.Zones =
 				},
 				q(54947, {	-- A Small Team
 					["qg"] = 151100,	-- Gila Crosswires
-					["coord"] = { 67.2, 15.9, 1161 },
+					["coord"] = { 67.3, 15.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 54946,	-- Report to Gila
 				}),
@@ -377,13 +377,14 @@ _.Zones =
 					}),
 				}),
 				q(54088, {	-- The Legend of Mechagon
-					["qg"] = 150208,	-- Tinkmaster Overspark
+					["sourceQuests"] = { 57009 },	-- Fame Waits for Gnome One
 					["coord"] = { 67.2, 15.6, 1161 },
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 150208,	-- Tinkmaster Overspark
 				}),
 				q(54992, {	-- The Start of Something Bigger
 					["qg"] = 150145,	-- Gila Crosswires
-					["coord"] = { 43.2, 31.9, 1161 },
+					["coord"] = { 43.3, 32.0, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 54947,	-- A Small Team
 				}),
