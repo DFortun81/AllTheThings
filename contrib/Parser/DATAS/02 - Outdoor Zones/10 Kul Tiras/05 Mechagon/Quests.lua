@@ -418,6 +418,55 @@ _.Zones =
 					["coord"] = { 59.1, 55.1, 1462 },
 					["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				}),
+				o(326027, {	-- Recyclerizer DX-82
+					q(55743, {	-- More Recycling
+						["coords"] = {
+							{ 58.8, 59.2, 1462 },
+							{ 54.5, 56.4, 1462 },
+							{ 55.8, 62.7, 1462 },
+							{ 53.5, 61.5, 1462 },
+						},
+						["isDaily"] = true,
+						["groups"] = {
+							i(168264, {	-- Recycling Requisition(Green)
+								i(169167),	-- Blueprint: Orange Spraybot
+								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
+								i(167795),	-- Paint Vial: Copper Trim
+							}),
+							--[[i(168266, {	-- Strange Recycling Requisiton(Epic)
+								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
+								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
+								i(167795),	-- Paint Vial: Copper Trim
+								i(169689),	-- Vinyl: Mimiron's Brainstorm
+								i(169175),	-- Blueprint: Annoy-o-Tron Gang
+							}),]]
+						},
+					}),
+					q(56116, {	-- Even More Recycling
+						["coords"] = {
+							{ 58.8, 59.2, 1462 },
+							{ 54.5, 56.4, 1462 },
+							{ 55.8, 62.7, 1462 },
+							{ 53.5, 61.5, 1462 },
+						},
+						["sourceQuest"] = 55743,	-- More Recycling
+						["repeatable"] = true,
+						["groups"] = {
+							i(168264, {	-- Recycling Requisition(Green)
+								i(169167),	-- Blueprint: Orange Spraybot
+								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
+								i(167795),	-- Paint Vial: Copper Trim
+							}),
+							i(168266, {	-- Strange Recycling Requisiton(Epic)
+								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
+								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
+								i(167795),	-- Paint Vial: Copper Trim
+								i(169689),	-- Vinyl: Mimiron's Brainstorm
+								i(169175),	-- Blueprint: Annoy-o-Tron Gang
+							}),
+						},
+					}),
+				}),
 				q(54086, {	-- Right Bot for the Job -- 55907 and 56100 also popped
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
@@ -526,7 +575,7 @@ _.Zones =
 					["sourceQuest"] = 56175,	-- Emission Free
 				}),
 				q(54922, {	-- The Nuts and Bolts of it
-					["qg"] = 150573,	-- Recycler Kerchunk
+					["qg"] = 150573,	-- 2r Kerchunk
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 55697,	-- A Little Leg Work
 				}),

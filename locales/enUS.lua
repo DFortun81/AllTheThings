@@ -2197,6 +2197,7 @@ AllTheThings.L = {
 		[226469] = "Interface\\Icons\\trade_archaeology_nerubian_obelisk",		-- Spirit of the Wolf
 		[239926] = "Interface\\Icons\\trade_archaeology_nerubian_obelisk",		-- Touched By Fire
 		[230544] = "Interface\\Icons\\trade_archaeology_nerubian_obelisk",		-- Touched By Ice
+		[326027] = "Interface\\Icons\\INV_Mechagon_JunkyardTinkeringCrafting",
 	};
 	["OBJECT_ID_NAMES"] = {
 		[31] = "Old Lion Statue",
@@ -3148,6 +3149,7 @@ AllTheThings.L = {
 		[325668] = "Mechanized Chest",
 		[325853] = "Empty Bookcase",
 		[325869] = "Empty Cask",
+		[326027] = "Recyclerizer DX-82",
 		[326140] = "Bounty Board",
 		[326394] = "Arcane Chest",
 		[326395] = "Glowing Arcane Trunk",
