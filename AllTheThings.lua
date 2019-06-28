@@ -1011,23 +1011,22 @@ end
 -- Quest Completion Lib
 local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
-	rawset(t, key, value);
 	if value then
+		rawset(t, key, value);
 		DirtyQuests[key] = true;
 		SetDataSubMember("CollectedQuests", key, 1);
 		SetTempDataSubMember("CollectedQuests", key, 1);
-	end
-	
-	if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local searchResults = app.SearchForField("questID", key);
-		if searchResults and #searchResults > 0 then
+		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-				return true;
+				local searchResults = app.SearchForField("questID", key);
+				if searchResults and #searchResults > 0 then
+					return true;
+				else
+					key = key .. " (Missing in ATT)";
+				end
 			end
-		else
-			key = key .. " (Missing in ATT)";
+			print("Completed Quest ID #" .. key);
 		end
-		print("Completed Quest ID #" .. key);
 	end
 end});
 local IsQuestFlaggedCompleted = function(questID)
