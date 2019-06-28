@@ -816,6 +816,13 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 55253,	-- A Show of Faith
 				}),
+				q(55251, {	-- A Daughter of Torcali
+					["qg"] = 151319,	-- Li'zal
+					["coord"] = { 68.1, 41.7, 862 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 55253,	-- A Show of Faith
+				}),
 			}),
 		}),
 	}),
