@@ -9,13 +9,15 @@ _.Zones =
 			void cache: locked chest, unknown pre-reqs. 56.3, 15.1
 			arcane cache: locked chest, unknown pre-reqs. 53.1, 28.3
 			reinforced cache: locked chest, unknown pre-reqs. 45.1, 22.1
-			
-			
-			i(170198),	-- Eternal Palace Dining Set (toy) <-- this toy dropped from arcane chest o(326412), but not for Gaulish. Maybe based on number of chests instead?
-			i(168824),	-- Ocean Simulator (toy) <-- dropped when looting the 20th arcane chest at (56.3, 33.8)
 			]]--
 			["description"] = "Must complete |cFFFFD700A Tempered Blade|r (Alliance) or |cFFFFD700Save a Friend|r (Horde) before the chests become available.",
 			["g"] = {
+				i(170198, {	-- Eternal Palace Dining Set (toy)
+					["description"] = "Obtained from the 12th |cFFFFD700Arcane Chest|r you open.",
+				}),
+				i(168824, {	-- Ocean Simulator (toy)
+					["description"] = "Obtained from looting all 20 |cFFFFD700Arcane Chests|r.",
+				}),
 				o(326394, {	-- Arcane Chest
 					["questID"] = 55954,
 					["coord"] = { 34.5, 40.4, 1355 },
