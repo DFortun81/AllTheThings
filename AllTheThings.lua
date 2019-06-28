@@ -2088,15 +2088,26 @@ end
 local fieldCache = {};
 local CacheFields;
 (function()
+local fieldCache_g,fieldCache_f, fieldConverters, converter;
+local function CacheField(group, field, value)
+	fieldCache_g = fieldCache[field];
+	fieldCache_f = fieldCache_g[value];
+	if fieldCache_f then
+		tinsert(fieldCache_f, group);
+	else
+		fieldCache_g[value] = {group};
+	end
+end
+-- These are the fields we store.
 fieldCache["achievementID"] = {};
-fieldCache["currencyID"] = {};
 fieldCache["creatureID"] = {};
+fieldCache["currencyID"] = {};
 fieldCache["encounterID"] = {};
-fieldCache["instanceID"] = {};
 fieldCache["flightPathID"] = {};
-fieldCache["objectID"] = {};
+fieldCache["instanceID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["mapID"] = {};
+fieldCache["objectID"] = {};
 fieldCache["questID"] = {};
 fieldCache["requireSkill"] = {};
 fieldCache["s"] = {};
@@ -2104,79 +2115,128 @@ fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
 fieldCache["titleID"] = {};
 fieldCache["toyID"] = {};
-local function CacheArrayFieldIDs(group, field, arrayField)
-	local firldCache_g = group[arrayField];
-	if firldCache_g then
-		for i,fieldID in ipairs(firldCache_g) do
-			local fieldCache_f = fieldCache[field][fieldID];
-			if not fieldCache_f then
-				fieldCache_f = {};
-				fieldCache[field][fieldID] = fieldCache_f;
-			end
-			tinsert(fieldCache_f, group);
-			--tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [field] = fieldID });
+fieldConverters = {
+	-- Simple Converters
+	["achievementID"] = function(group, value)
+		CacheField(group, "achievementID", value);
+	end,
+	["achID"] = function(group, value)
+		CacheField(group, "achievementID", value);
+	end,
+	["altAchID"] = function(group, value)
+		CacheField(group, "achievementID", value);
+	end,
+	["altQuestID"] = function(group, value)
+		CacheField(group, "questID", value);
+	end,
+	["creatureID"] = function(group, value)
+		if value > 0 then
+			CacheField(group, "creatureID", value);
 		end
-	end
-end
-local function CacheFieldValue(group, field, value)
-	if value then
-		local fieldCache_f = fieldCache[field][value];
-		if not fieldCache_f then
-			fieldCache_f = {};
-			fieldCache[field][value] = fieldCache_f;
-		end
-		tinsert(fieldCache_f, group);
-	end
-end
-local function CacheFieldID(group, field)
-	CacheFieldValue(group, field, group[field]);
-end
-local function CacheSubFieldID(group, field, subfield)
-	local firldCache_g = group[subfield];
-	if firldCache_g then
-		local fieldCache_f = fieldCache[field][firldCache_g];
-		if not fieldCache_f then
-			fieldCache_f = {};
-			fieldCache[field][firldCache_g] = fieldCache_f;
-		end
-		tinsert(fieldCache_f, group);
-		-- tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [subfield] = firldCache_g });
-	end
-end
-CacheFields = function(group)
-	CacheFieldID(group, "achievementID");
-	CacheFieldID(group, "creatureID");
-	CacheFieldID(group, "currencyID");
-	CacheArrayFieldIDs(group, "creatureID", "crs");
-	CacheArrayFieldIDs(group, "creatureID", "qgs");
-	CacheFieldID(group, "encounterID");
-	CacheFieldID(group, "instanceID");
-	CacheFieldID(group, "flightPathID");
-	CacheFieldID(group, "objectID");
-	CacheFieldID(group, "itemID");
-	CacheFieldID(group, "titleID");
-	CacheFieldID(group, "questID");
-	CacheSubFieldID(group, "questID", "altQuestID");
-	CacheArrayFieldIDs(group, "questID", "altQuests");
-	CacheFieldID(group, "requireSkill");
-	CacheFieldID(group, "s");
-	CacheFieldID(group, "speciesID");
-	CacheFieldID(group, "spellID");
-	CacheFieldID(group, "mapID");
-	CacheArrayFieldIDs(group, "mapID", "maps");
-	if group.filterID == 102 and group.itemID then CacheFieldValue(group, "toyID", group.itemID); end
-	if group.c and not containsValue(group.c, app.ClassIndex) then
-		group.nmc = true;	-- "Not My Class"
-	end
-	if group.r and group.r ~= app.FactionID then
-		group.nmr = true;	-- "Not My Race"
-	elseif group.races and not containsValue(group.races, app.RaceIndex) then
-		group.nmr = true;	-- "Not My Race"
-	end
-	if group.g then
-		for i,subgroup in ipairs(group.g) do
+	end,
+	["currencyID"] = function(group, value)
+		CacheField(group, "currencyID", value);
+	end,
+	["encounterID"] = function(group, value)
+		CacheField(group, "encounterID", value);
+	end,
+	["flightPathID"] = function(group, value)
+		CacheField(group, "flightPathID", value);
+	end,
+	["instanceID"] = function(group, value)
+		CacheField(group, "instanceID", value);
+	end,
+	["itemID"] = function(group, value)
+		CacheField(group, "itemID", value);
+		if group.filterID == 102 then CacheField(group, "toyID", value); end
+	end,
+	["mapID"] = function(group, value)
+		CacheField(group, "mapID", value);
+	end,
+	["objectID"] = function(group, value)
+		CacheField(group, "objectID", value);
+	end,
+	["questID"] = function(group, value)
+		CacheField(group, "questID", value);
+	end,
+	["requireSkill"] = function(group, value)
+		CacheField(group, "requireSkill", value);
+	end,
+	["s"] = function(group, value)
+		CacheField(group, "s", value);
+	end,
+	["speciesID"] = function(group, value)
+		CacheField(group, "speciesID", value);
+	end,
+	["spellID"] = function(group, value)
+		CacheField(group, "spellID", value);
+	end,
+	["titleID"] = function(group, value)
+		CacheField(group, "titleID", value);
+	end,
+	["toyID"] = function(group, value)
+		CacheField(group, "toyID", value);
+	end,
+	
+	-- Complex Converters
+	["g"] = function(group, value)
+		for i,subgroup in ipairs(value) do
 			CacheFields(subgroup);
 		end
+	end,
+	["crs"] = function(group, value)
+		for i,creatureID in ipairs(value) do
+			fieldConverters["creatureID"](group, creatureID);
+		end
+	end,
+	["qgs"] = function(group, value)
+		for i,questGiverID in ipairs(value) do
+			fieldConverters["creatureID"](group, questGiverID);
+		end
+	end,
+	["altQuests"] = function(group, value)
+		for i,questID in ipairs(value) do
+			fieldConverters["questID"](group, questID);
+		end
+	end,
+	["maps"] = function(group, value)
+		for i,mapID in ipairs(value) do
+			fieldConverters["mapID"](group, mapID);
+		end
+	end,
+	--[[
+	-- TODO: Mark coordinates in a special way.
+	["coord"] = function(group, value)
+		if value[3] then
+			fieldConverters["mapID"](group, value[3]);
+		end
+	end,
+	["coords"] = function(group, value)
+		for i,coord in ipairs(value) do
+			fieldConverters["coord"](group, coord);
+		end
+	end,
+	]]--
+	["c"] = function(group, value)
+		if not containsValue(value, app.ClassIndex) then
+			group.nmc = true;	-- "Not My Class"
+		end
+	end,
+	["r"] = function(group, value)
+		if value ~= app.FactionID then
+			group.nmr = true;	-- "Not My Race"
+		end
+	end,
+	["races"] = function(group, value)
+		if not containsValue(value, app.RaceIndex) then
+			group.nmr = true;	-- "Not My Race"
+		end
+	end,
+};
+CacheFields = function(group)
+	for key,value in pairs(group) do
+		converter = fieldConverters[key];
+		if converter then converter(group, value); end
 	end
 end
 end)();
