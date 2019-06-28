@@ -4022,13 +4022,6 @@ end)();
 				return t.info.u;
 			elseif key == "mapID" then
 				return t.info.mapID;
-			--[[
-			elseif key == "nmr" then
-				local info = t.info;
-				if info and info.faction and info.faction > 0 then
-					return info.faction ~= app.FactionID;
-				end
-			]]--
 			elseif key == "info" then
 				_cache = app.FlightPathDB[t.flightPathID];
 				if _cache then
@@ -5960,7 +5953,7 @@ function app.FilterItemClass(item)
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
-	return not rawget(item, "nmc");
+	return not item.nmc;
 end
 function app.FilterItemClass_RequireItemFilter(item)
 	_cache = item.f;
@@ -5975,10 +5968,10 @@ function app.FilterItemClass_RequireItemFilter(item)
 	end
 end
 function app.FilterItemClass_RequireRaces(item)
-	return not rawget(item, "nmr");
+	return not item.nmr;
 end
 function app.FilterItemClass_SeasonalItem(item)
-	_cache = rawget(item, "u");
+	_cache = item.u;
 	if _cache and rawget(rawget(rawget(L, "UNOBTAINABLE_ITEM_REASONS"), _cache), 1) > 4 then
 	  return GetDataSubMember("SeasonalFilters", _cache);
 	else
@@ -5986,7 +5979,7 @@ function app.FilterItemClass_SeasonalItem(item)
 	end
 end
 function app.FilterItemClass_UnobtainableItem(item)
-	_cache = rawget(item, "u");
+	_cache = item.u;
 	if _cache and rawget(rawget(rawget(L, "UNOBTAINABLE_ITEM_REASONS"), _cache), 1) < 5 then
 	  return GetDataSubMember("UnobtainableItemFilters", _cache);
 	else
@@ -6328,7 +6321,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	else
 		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
 		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
-		if item and not rawget(item, "nmc") and not rawget(item, "nmr") then
+		if item and not item.nmc and not item.nmr then
 			-- This item is for my race and class.
 			for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
@@ -6343,10 +6336,10 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	end
 end
 function app.FilterItemTrackable(group)
-	return rawget(group, "trackable");
+	return group.trackable;
 end
 function app.ObjectVisibilityFilter(group)
-	return rawget(group, "visible");
+	return group.visible;
 end
 
 -- Default Filter Settings (changed in VARIABLES_LOADED and in the Options Menu)
