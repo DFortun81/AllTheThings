@@ -73,6 +73,19 @@ _.NeverImplemented =
 		q(49913),	-- Nazmir repeatable random chest
 		q(49914),	-- Nazmir repeatable random chest
 		q(49899),	-- Nazmir repeatable random chest
+		q(50922),	-- Vol'dun repeatable random chest
+		q(50920),	-- Vol'dun repeatable random chest
+		q(51673),	-- Vol'dun repeatable random chest
+		q(50926),	-- Vol'dun repeatable random chest
+		q(50928),	-- Vol'dun repeatable random chest
+		q(50916),	-- Vol'dun repeatable random chest
+		q(50914),	-- Vol'dun repeatable random chest
+		q(50918),	-- Vol'dun repeatable random chest
+		q(50923),	-- Vol'dun repeatable random chest
+		q(50924),	-- Vol'dun repeatable random chest
+		q(50921),	-- Vol'dun repeatable random chest
+		q(50917),	-- Vol'dun repeatable random chest
+		q(50919),	-- Vol'dun repeatable random chest
 		q(50711),	-- Zuldazar repeatable random chest
 		q(50715),	-- Zuldazar repeatable random chest
 		q(50716),	-- Zuldazar repeatable random chest

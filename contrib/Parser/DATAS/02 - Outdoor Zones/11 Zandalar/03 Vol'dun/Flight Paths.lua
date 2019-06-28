@@ -7,7 +7,7 @@ _.Zones =
 		m(864, {	-- Vol'dun
 			n(-228, {	-- Flight Paths
 				fp(2144, {	-- Goldtusk Inn, Vol'dun
-					["description"] = "Whistlebloom Oasis, Vol'dun. Becomes available after completing \"The Best Kill is Overkill\" during the Goldtusk Inn quest chain.",
+					["description"] = "Whistlebloom Oasis, Vol'dun. Becomes available after completing |cFFFFD700The Best Kill is Overkill|r during the Goldtusk Inn quest chain.",
 					["races"] = HORDE_ONLY,
 					["coord"] = { 42.7, 61.1, 864 },
 				}),
