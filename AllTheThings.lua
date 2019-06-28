@@ -9060,7 +9060,7 @@ function app:GetDataCache()
 		end
 		]]--
 		
-		app.Categories = nil;
+		-- app.Categories = nil;
 	end
 	return allData;
 end
