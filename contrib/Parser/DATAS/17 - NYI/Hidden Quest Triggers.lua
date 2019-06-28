@@ -6,38 +6,6 @@ _.NeverImplemented =
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
 	n(-9956, {	-- Quests
-		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
-	
-		q(54872),	-- Opening a darkshore chest
-		q(54877),	-- Opening a darkshore chest
-		q(54879),	-- Opening a darkshore chest
-		q(54880),	-- Opening a darkshore chest
-		q(54881),	-- Opening a darkshore chest
-		
-		q(50711),	-- Zuldazar repeatable random chest
-		q(50715),	-- Zuldazar repeatable random chest
-		q(50716),	-- Zuldazar repeatable random chest
-		q(50720),	-- Zuldazar repeatable random chest
-		q(50722),	-- Zuldazar repeatable random chest
-		q(50723),	-- Zuldazar repeatable random chest
-		q(50724),	-- Zuldazar repeatable random chest
-		q(50726),	-- Zuldazar repeatable random chest
-		q(50728),	-- Zuldazar repeatable random chest
-		q(51346),	-- Zuldazar repeatable random chest
-		
-		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
-		
-		q(51825),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
-		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
-		q(37187),	-- The Dark Portal
-		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
-		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
-		q(36793),	-- Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
-		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking all herbs
-		q(54991),	-- Khaz'gorian Smithing Hammer - Anvil created
-		
 		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
 		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
@@ -84,7 +52,57 @@ _.NeverImplemented =
 		q(35588),	-- Zul'Farrak: end-of-dungeon reward granted
 		q(35589),	-- Zul'Farrak: bonus objective completed
 		
+		q(37187),	-- The Dark Portal
+		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
+		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
+		q(36793),	-- Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
+		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking all herbs
+		
+		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+		
+		-------------------
+		--      BFA      --
+		-------------------
+		q(50855),	-- Nazmir repeatable random chest
+		q(49885),	-- Nazmir repeatable random chest
+		q(50895),	-- Nazmir repeatable random chest
+		q(49904),	-- Nazmir repeatable random chest
+		q(49916),	-- Nazmir repeatable random chest
+		q(50894),	-- Nazmir repeatable random chest
+		q(49913),	-- Nazmir repeatable random chest
+		q(49914),	-- Nazmir repeatable random chest
+		q(49899),	-- Nazmir repeatable random chest
+		q(50711),	-- Zuldazar repeatable random chest
+		q(50715),	-- Zuldazar repeatable random chest
+		q(50716),	-- Zuldazar repeatable random chest
+		q(50720),	-- Zuldazar repeatable random chest
+		q(50722),	-- Zuldazar repeatable random chest
+		q(50723),	-- Zuldazar repeatable random chest
+		q(50724),	-- Zuldazar repeatable random chest
+		q(50726),	-- Zuldazar repeatable random chest
+		q(50728),	-- Zuldazar repeatable random chest
+		q(51346),	-- Zuldazar repeatable random chest
+		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
+		q(54872),	-- Opening a darkshore chest
+		q(54877),	-- Opening a darkshore chest
+		q(54879),	-- Opening a darkshore chest
+		q(54880),	-- Opening a darkshore chest
+		q(54881),	-- Opening a darkshore chest
+		
+		q(53534),	-- when entering The Necropolis for the first time during "The Necropolis"
+		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
+		q(49367),	-- when returning to Zo'bal Ruins during "We'll Meet Again"
+		q(52294),	-- triggers with Krag'wa after accepting "The Last Witch Doctor of Krag'wa"
+		q(47530),	-- ???? [The Necropolis] (completed after soulbound, but not known)
+		q(47531),	-- triggered when turning in "Krag'wa the Terrible"
+		q(50314),	-- triggered when turning in "Target of Opportunity"
+		q(51825),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
+		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
+		q(54991),	-- Khaz'gorian Smithing Hammer - Anvil created
+		
 		-- Nazjatar
+		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires
 		q(56881),	-- Triggered upon first entry into Nazjatar
 		q(57040),	-- Triggers when you select Vim Brineheart as your friend for the day

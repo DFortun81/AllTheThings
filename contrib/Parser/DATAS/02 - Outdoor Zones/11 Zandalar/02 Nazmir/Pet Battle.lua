@@ -12,231 +12,171 @@ _.Zones =
 						ach(13280, {	-- Hobbyist Aquarist
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 						ach(13270, {	-- Beast Mode
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 						ach(13271, {	-- Critters with Huge Teeth
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 						ach(13272, {	-- Dragons Make Everything Better
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 						ach(13273, {	-- Element of Success
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 						ach(13274, {	-- Fun With Flying
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 						ach(13281, {	-- Human Resources
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 						ach(13275, {	-- Magician's Secrets
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 						ach(13277, {	-- Machine Learning
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 						ach(13278, {	-- Not Quite Dead Yet
 							["collectible"] = false,
 							["g"] = {
-								{	-- Lozu — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								crit(11, {	-- Lozu
 									["creatureID"] = 141529,	-- Lozu
-									["criteriaID"] = 11,	-- Lozu
 									["coord"] = { 72.8, 48.6, 863 },
-								},
-								{	-- Grady Prett — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								}),
+								crit(12, {	-- Grady Prett
 									["creatureID"] = 141799,	-- Grady Prett
-									["criteriaID"] = 12,	-- Grady Prett
 									["coord"] = { 36.0, 54.6, 863 },
-								},
-								{	-- Korval Darkbeard — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								}),
+								crit(13, {	-- Korval Darkbeard
 									["creatureID"] = 141814,	-- Korval Darkbeard
-									["criteriaID"] = 13,	-- Korval Darkbeard
 									["coord"] = { 43.0, 38.8, 863 },
-								},
+								}),
 							},
 						}),
 					},
