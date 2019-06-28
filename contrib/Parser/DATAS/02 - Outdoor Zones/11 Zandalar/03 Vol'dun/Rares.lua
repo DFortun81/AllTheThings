@@ -86,10 +86,11 @@ _.Zones =
 					}),
 				}),
 				n(134643, {	-- Brgl-Lrgl the Basher							
-					["description"] = "This rare is only up when its associated world quest is active.",
 					["questID"] = 50663,
-					["coord"] = { 29.78, 46.47, 864 },
 					["lvl"] = 120,	-- Note!! This is due to him being tied to the WQ
+					["coord"] = { 29.78, 46.47, 864 },
+					["repeatable"] = true,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["g"] = {
 						i(161044),	-- Tideflat Brute's Greatbelt
 					},
@@ -132,10 +133,11 @@ _.Zones =
 					},
 				}),
 				n(136323, {	-- Fangcaller Xorreth
-					["description"] = "This rare is only up when its associated world quest is active.",
 					["questID"] = 51065,
-					["coord"] = { 53.60, 35.01, 864 },
 					["lvl"] = 120,	-- Note!! This is due to him being tied to the WQ
+					["coord"] = { 53.60, 35.01, 864 },
+					["repeatable"] = true,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["g"] = {
 						i(162612),	-- Cobra Priest's Headdress
 					},
@@ -228,10 +230,11 @@ _.Zones =
 					}),
 				}),
 				n(134694, {	-- Mor'fani the Exile
-					["description"] = "This rare is only up when its associated world quest is active.",
 					["questID"] = 50666,
 					["lvl"] = 120,	-- Note!! This is due to him being tied to the WQ
 					["coord"] = { 37.41, 88.71, 864 },
+					["repeatable"] = true,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["g"] = {
 						i(162616),	-- Master Dinomancer's Tunic
 					},
