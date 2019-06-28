@@ -4037,7 +4037,7 @@ app.BaseFollower = {
 			return info and info.portraitIconID;
 		elseif key == "displayID" then
 			local info = t.info;
-			return info and info.displayID;
+			return info and info.displayIDs and #info.displayIDs > 0 and info.displayIDs[1].id;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
