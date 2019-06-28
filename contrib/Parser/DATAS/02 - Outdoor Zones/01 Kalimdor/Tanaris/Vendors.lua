@@ -634,7 +634,7 @@ _.Zones =
 						i(18046),	-- Recipe: Tender Wolf Steak
 					},
 				}),
-				n(106940, {	-- Otela
+				n(155944, {	-- Otela
 				--	["coord"] = { 52.6, 27.0, 71 },
 					["g"] = {
 						i(170739),	-- Sunswarmed Sand
