@@ -146,6 +146,7 @@ _.Zones =
 						},
 						i(167174),	-- Blueprint: Rustbolt Pocket Turret
 						i(170467),	-- Whirring Chainblade
+						i(170466),	-- Junkyard Motivator  -- Needs more confirmation, recieved in the area this mob spawns.
 					},
 				}),
 				n(151202, {	-- Foul Manifestation
