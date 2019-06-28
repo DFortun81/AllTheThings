@@ -85,15 +85,16 @@ local function StartCoroutine(name, method)
 	end
 end
 local constructor = function(id, t, typeID)
-	if not t then
-		return { [typeID] = id };
-	end
-	if not t.g and t[1] then
-		t = { ["g"] = t, [typeID] = id };
+	if t then
+		if not t.g and t[1] then
+			return { g=t, [typeID]=id };
+		else
+			t[typeID] = id;
+			return t;
+		end
 	else
-		t[typeID] = id;
+		return {[typeID] = id};
 	end
-	return t;
 end
 local contains = function(arr, value)
 	for i,value2 in ipairs(arr) do
@@ -2786,7 +2787,6 @@ local function RefreshMountCollection()
 			app:PlayFanfare();
 		end
 		wipe(searchCache);
-		collectgarbage();
 	end);
 end
 app.GetCurrentMapID = function()
@@ -5490,7 +5490,6 @@ app.events.NEW_PET_ADDED = function(petID)
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
 		wipe(searchCache);
-		collectgarbage();
 	end
 end
 app.events.PET_JOURNAL_PET_DELETED = function(petID)
@@ -5514,7 +5513,6 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 		-- Refresh the Collection Windows!
 		app:RefreshData(false, true);
 		wipe(searchCache);
-		collectgarbage();
 	end
 end
 app.BaseSpecies = {
@@ -9008,6 +9006,8 @@ function app:GetDataCache()
 			UpdateVisibleRowData(self);
 		end
 		]]--
+		
+		app.Categories = nil;
 	end
 	return allData;
 end
@@ -9041,7 +9041,6 @@ function app:RefreshData(lazy, got, manual)
 			app:UpdateWindows(nil, got);
 		end
 		wipe(searchCache);
-		collectgarbage();
 	end);
 end
 function app:GetWindow(suffix, parent, onUpdate)
@@ -11147,6 +11146,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				-- Open the Tradeskill list for this Profession
 				if self.tradeSkillID ~= tradeSkillID then
 					self.tradeSkillID = tradeSkillID;
+					--[[
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.requireSkill == tradeSkillID then
 							self.data = setmetatable({ ['visible'] = true, ["indent"] = 0, total = 0, progress = 0 }, { __index = group });
@@ -11161,6 +11161,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							end
 						end
 					end
+					]]--
 				end
 			
 				-- If something new was "learned", then refresh the data.
@@ -11228,7 +11229,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							app:PlayFanfare();
 						end
 						wipe(searchCache);
-						collectgarbage();
 					end
 				end
 			elseif e == "TRADE_SKILL_CLOSE" then
@@ -12840,7 +12840,6 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		app:RefreshData(false, true);
 		app:PlayFanfare();
 		wipe(searchCache);
-		collectgarbage();
 		
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local name, link = GetItemInfo(itemID);
@@ -12891,7 +12890,6 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		app:RefreshData(false, true);
 		app:PlayFanfare();
 		wipe(searchCache);
-		collectgarbage();
 		
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local name, link = GetItemInfo(itemID);
@@ -12911,7 +12909,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			app:PlayFanfare();
 			wipe(searchCache);
-			collectgarbage();
 		end
 	end
 end
@@ -12955,6 +12952,5 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		app:RefreshData(false, true);
 		app:PlayRemoveSound();
 		wipe(searchCache);
-		collectgarbage();
 	end
 end
