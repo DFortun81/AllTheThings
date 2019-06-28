@@ -177,13 +177,13 @@ _.Zones =
 					i(163073),	-- Conch of Wa'mundi
 					i(169365),	-- Damplight Slug
 					i(169274),	-- Tabard of the Unshackled
-					un(1,i(170076)),	-- Recipe: Unagi Skewer
+					un(1, i(170076)),	-- Recipe: Unagi Skewer
 					i(169549),	-- Recipe: Contract: Unshackled
 					i(169606),	-- Formula: Accord of Mastery (Rank 3)
 					i(169605),	-- Formula: Accord of Haste (Rank 3)
 					i(169604),	-- Formula: Accord of Critical Strike (Rank 3)
 					i(169607),	-- Formula: Accord of Versatility (Rank 3)
-					--i(169601),	-- Recipe: Potion of Reconstitution (Rank 3) -- need to determine source or NYI
+					i(169601),	-- Recipe: Potion of Reconstitution (Rank 3)
 					i(169602),	-- Recipe: Potion of Focused Resolve (Rank 3)
 					i(169600),	-- Recipe: Potion of Empowered Proximity (Rank 3)
 					i(169603),	-- Recipe: Greater Mystical Cauldron (Rank 3)
@@ -579,7 +579,7 @@ _.Zones =
 					i(169504),	-- Recipe: Greater Mystical Cauldron (Rank 3)
 					i(169492),	-- Recipe: Potion of Empowered Proximity (Rank 3)
 					i(169494),	-- Recipe: Potion of Focused Resolve (Rank 3)
-					--i(169493),	-- Recipe: Potion of Reconstitution (Rank 3) -- is this still in the game? find a new source
+					i(169493),	-- Recipe: Potion of Reconstitution (Rank 3)
 				},
 			}),
 			n(153024, {	-- Suva

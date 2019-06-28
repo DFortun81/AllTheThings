@@ -404,7 +404,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
 					["g"] = {
-						i(169500),	-- Recipe: Greater Flask of the Currents
+						i(169500),	-- Recipe: Greater Flask of the Currents (Rank 3)
 					},
 				}),
 				q(56770, {	-- Work Order: Greater Flask of the Currents (H)
@@ -413,7 +413,63 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 					["g"] = {
-						i(169500),	-- Recipe: Greater Flask of the Currents
+						i(169500),	-- Recipe: Greater Flask of the Currents (Rank 3)
+					},
+				}),
+				q(56767, {	-- Work Order: Greater Flask of Endless Fathoms (A)
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(169501),	-- Recipe: Greater Flask of Endless Fathoms (Rank 3)
+					},
+				}),
+--[[			-- QuestID is missing
+				q(??, {	-- Work Order: Greater Flask of Endless Fathoms (H)
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(169501),	-- Recipe: Greater Flask of Endless Fathoms (Rank 3)
+					},
+				}),
+]]--
+				q(56770, {	-- Work Order: Greater Flask of the Undertow (A)
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(169503),	-- Recipe: Greater Flask of the Undertow (Rank 3)
+					},
+				}),
+				q(56768, {	-- Work Order: Greater Flask of the Undertow (H)
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(169503),	-- Recipe: Greater Flask of the Undertow (Rank 3)
+					},
+				}),
+				q(56769, {	-- Work Order: Greater Flask of the Vast Horizon (A)
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(169502),	-- Recipe: Greater Flask of the Vast Horizon (Rank 3)
+					},
+				}),
+				q(56773, {	-- Work Order: Greater Flask of the Vast Horizon (h)
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(169502),	-- Recipe: Greater Flask of the Vast Horizon (Rank 3)
 					},
 				}),
 				q(55894, {	-- Zoko, Her Iron Defender

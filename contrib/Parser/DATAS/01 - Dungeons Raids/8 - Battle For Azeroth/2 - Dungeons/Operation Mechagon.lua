@@ -7,6 +7,24 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["groups"] = {
 			d(23,  {	-- Mythic
 				["g"] = {
+					n(-1, {	-- Common Boss Drops
+						["crs"] = {
+							150159,	-- King Gobbamak
+							150222,	-- Gunker
+							155407,	-- Trixie & Naeno
+							155157,	-- HK-8 Aerial Oppression Unit
+							144244,	-- Tussle Tonks
+							144246,	-- K.U.-J.0.
+							144248,	-- Machinist's Garden
+							155438,	-- King Mechagon
+						},
+						["g"] = {
+							-- Alchemy
+							i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)
+							i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
+							i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
+						},
+					}),
 					e(2357, {	-- King Gobbamak
 						["crs"] = { 150159 },	-- King Gobbamak
 						["g"] = {
@@ -109,6 +127,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168971),	-- Swift Pneumatic Grips
 							i(168968),	-- Flame-Seared Leggings
 							i(168972),	-- Pyroclastic Greatboots
+							i(169529),	-- Recipe: Monelite Reinforced Chassis (Rank 3)
+							i(169609),	-- Schematic: Super-Charged Engine (Rank 3)					
 						},
 					}),
 					e(2348, {	-- Machinist's Garden

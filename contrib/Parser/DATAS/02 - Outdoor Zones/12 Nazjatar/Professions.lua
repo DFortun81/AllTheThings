@@ -7,9 +7,11 @@ _.Zones =
 		n(-38, {	-- Professions
 			prof(171, {	-- Alchemy
 				n(0, {	-- Zone Drop
+					i(169495),	-- Recipe: Superior Battle Potion of Agility (Rank 3)
+					i(169499),	-- Recipe: Superior Battle Potion of Strength (Rank 3)
 					i(169497),	-- Recipe: Superior Battle Potion of Intellect (Rank 3)
 					i(169498),  -- Recipe: Superior Battle Potion of Stamina (Rank 3)
-					i(169496),	-- Recipe: Superior Steelskin Potion
+					i(169496),	-- Recipe: Superior Steelskin Potion (Rank 3)
 				}),
 			}),
 			prof(182, {	-- Herbalism
