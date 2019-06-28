@@ -1019,7 +1019,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	if t.altQuests then
 		for i,questID in ipairs(t.altQuests) do
 			if IsQuestFlaggedCompleted(questID) then
-				return 1;
+				return 2;
 			end
 		end
 	end
