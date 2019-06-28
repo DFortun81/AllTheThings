@@ -84,7 +84,7 @@ namespace ATT
                 .Append("-- UPDATED: ").Append($"{utcNow.ToLongDateString()} @ {utcNow.ToShortTimeString()}".PadRight(38, ' ')).AppendLine(" --")
                 .AppendLine("-----------------------------------------------------")
                 .AppendLine("local _ = AllTheThings;")
-                .AppendLine("local g = function(t,g) t.g = g; return t; end"));
+                .AppendLine("local g = function(t,g) rawset(t,'g',g); return t; end"));
         }
 
         /// <summary>
