@@ -1040,6 +1040,7 @@ AllTheThings.L = {
 		[-241] = PVP_SEASON_REWARD,												-- Season Reward
 		[-242] = "Unrated",														-- Unrated
 		[-243] = "Bounty",														-- Bounty
+		[-244] = "Dark Iron Dwarf",												-- Dark Iron Dwarf
 		[-245] = "Mag'har Orc",													-- Mag'har Orc
 		
 		-- S.E.L.F.I.E. Camera Filters

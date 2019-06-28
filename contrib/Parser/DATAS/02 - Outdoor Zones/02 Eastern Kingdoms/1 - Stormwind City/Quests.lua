@@ -31,167 +31,175 @@ _.Zones =
 						},
 					}),
 					q(50239, {	-- A Choice of Allies
-						["coord"] = { 52.07, 13.43, 84 },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 126301,	-- Anduin Wyrnn
+						["coord"] = { 52.2, 13.6, 84 },
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							{	-- Dark Iron Dwaves
-								["achievementID"] = 12515,	-- Allied Races: Dark Iron Dwarf
-								["sourceQuests"] = {
-									53566,	-- Dark Iron Dwaves
-								},
-								["g"] = {
-									{	-- Blackrock Depths
-										["questID"] = 51813,	-- Blackrock Depths
-										["qg"] = 133197,		-- Moira Thaurissan
-										["coords"] = {
-											{ 52.03, 13.73, 84 },
-										},
+							n(-244, {	-- Dark Iron Dwarf
+								q(51813, {	-- Blackrock Depths
+									["qg"] = 133197,	-- Moira Thaurissan
+									["coord"] = { 52.0, 13.8, 84 },
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53351, {	-- The MOTHERLODE!!: Ironfoe
+									["qg"] = 140309,	-- Moira Thaurissan
+									["coord"] = { 57.0, 30.6, 1159 },
+									["sourceQuest"] = 51813,	-- Blackrock Depths
+									["maps"] = { 1159 },	-- Blackrock Depths: Dark Iron Dwarf Scenario
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53342, {	-- Molten Core
+									["qg"] = 133197,	-- Moira Thaurissan
+									["coord"] = { 52.0, 13.8, 84 },
+									["sourceQuest"] = 53351,	-- The MOTHERLODE!!: Ironfoe
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53352, {	-- Firelands
+									["qg"] = 133197,	-- Moira Thaurissan
+									["coord"] = { 52.0, 13.8, 84 },
+									["sourceQuest"] = 53342,	-- Molten Core
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(51474, {	-- Forged in Fire an'Flame
+									["qg"] = 133197,	-- Moira Thaurissan
+									["coord"] = { 52.0, 13.8, 84 },
+									["sourceQuest"] = 53352,	-- Firelands
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53566, {	-- Dark Iron Dwarves
+									["qg"] = 140309,	-- Moira Thaurissan
+									["coord"] = { 57.0, 30.6, 1159 },
+									["sourceQuest"] = 51474,	-- Forgged in Fire an'Flame
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+									["g"] = {
+										ach(12515, {	-- Allied Races: Dark Iron Dwarf
+											h(i(161331)),	-- Dark Iron Core Hound
+										}),
 									},
-									{	-- The MOTHERLODE!!: Ironfoe
-										["questID"] = 53351,	-- The MOTHERLODE!!: Ironfoe
-										["qg"] = 140309,		-- Moira Thaurissan
-										["coords"] = {
-											{ 57.04, 30.33, 1159 },
-										},
-										["sourceQuests"] = {
-											51813,	-- Blackrock Depths
-										},
-										["maps"] = {
-											1159,	-- Blackrock Depths: Dark Iron Dwarf Scenario
-										},
-									},
-									{	-- Molten Core
-										["questID"] = 53342,	-- Molten Core
-										["qg"] = 133197,		-- Moira Thaurissan
-										["coords"] = {
-											{ 52.03, 13.73, 84 },
-										},
-										["sourceQuests"] = {
-											53351,	-- The MOTHERLODE!!: Ironfoe
-										},
-									},
-									{	-- Firelands
-										["questID"] = 53352,	-- Firelands
-										["qg"] = 133197,		-- Moira Thaurissan
-										["coords"] = {
-											{ 52.03, 13.73, 84 },
-										},
-										["sourceQuests"] = {
-											53342,	-- Molten Core
-										},
-									},
-									{	-- Forged in Fire an'Flame
-										["questID"] = 51474,	-- Forged in Fire an'Flame
-										["qg"] = 133197,		-- Moira Thaurissan
-										["coords"] = {
-											{ 52.03, 13.73, 84 },
-										},
-										["sourceQuests"] = {
-											53352,	-- Firelands
-										},
-									},
-									{	-- Dark Iron Dwarves
-										["questID"] = 53566,	-- Dark Iron Dwarves
-										["qg"] = 140309,		-- Moira Thaurissan
-										["coords"] = {
-											{ 57.20, 30.89, 1159 },
-										},
-										["sourceQuests"] = {
-											51474,	-- Forgged in Fire an'Flame
-										},
-										["g"] = {
-											{	-- Dark Iron Core Hound
-												["itemID"] = 161331,	-- Dark Iron Core Hound
-											},
-										},
-									},
-								},
-							},
+								}),
+							}),
 							n(-252, {	-- Kul Tiran
-								qa(54706, {	-- Made in Kul Tiras
+								q(54706, {	-- Made in Kul Tiras
 									["qg"] = 148798,	-- Lady Jaina Proudmoore
 									["coord"] = { 52.3, 13.5, 84 },	-- Stormwind
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(55039, {	-- The Master Shipwright
+								q(55039, {	-- The Master Shipwright
 									["qg"] = 122370,	-- Cyrus Crestfall
 									["coord"] = { 67.9, 22.1, 1161 },	-- Boralus
-									["sourceQuests"] = { 54706 },	-- Made in Kul Tiras
+									["sourceQuest"] = 54706,	-- Made in Kul Tiras
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(55043, {	-- Fish Tales and Distant Sails
+								q(55043, {	-- Fish Tales and Distant Sails
 									["qg"] = 150515,	-- Cyrus Crestfall
 									["coord"] = { 59.3, 70.2, 942 },	-- Stormsong Valley
-									["sourceQuests"] = { 55039 },	-- The Master Shipwright
+									["sourceQuest"] = 55039,	-- The Master Shipwright
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54708, {	-- Home, Home on the Range
+								q(54708, {	-- Home, Home on the Range
 									["qg"] = 150515,	-- Cyrus Crestfall
 									["coord"] = { 58.6, 70.4, 942 },	-- Stormsong Valley
-									["sourceQuests"] = { 55043 },	-- Fish Tales and Distant Sails
+									["sourceQuest"] = 55043,	-- Fish Tales and Distant Sails
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54721, {	-- I'm Too Old for This Ship
+								q(54721, {	-- I'm Too Old for This Ship
 									["qg"] = 148870,	-- Dorian Atwater
 									["coord"] = { 50.1, 49.8, 942 },	-- Stormsong Valley
-									["sourceQuests"] = { 54708 },	-- Home, Home on the Range
+									["sourceQuest"] = 54708,	-- Home, Home on the Range
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54723, {	-- Covering Our Masts
+								q(54723, {	-- Covering Our Masts
 									["qg"] = 148870,	-- Dorian Atwater
 									["coord"] = { 66.0, 47.4, 942 },	-- Stormsong Valley
-									["sourceQuests"] = { 54721 },	-- I'm Too Old for This Ship
+									["sourceQuest"] = 54721,	-- I'm Too Old for This Ship
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54725, {	-- The Deep Ones
+								q(54725, {	-- The Deep Ones
 									["qg"] = 148870,	-- Dorian Atwater
 									["coord"] = { 66.0, 47.4, 942 },	-- Stormsong Valley
-									["sourceQuests"] = { 54721 },	-- I'm Too Old for This Ship
+									["sourceQuest"] = 54721,	-- I'm Too Old for This Ship
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54726, {	-- Frame Work
+								q(54726, {	-- Frame Work
 									["qg"] = 148870,	-- Dorian Atwater
 									["coord"] = { 66.0, 47.4, 942 },	-- Stormsong Valley
 									["sourceQuests"] = {
 										54723,	-- Covering Our Masts
 										54725,	-- The Deep Ones
 									},
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54727, {	-- Team Carry
+								q(54727, {	-- Team Carry
 									["qg"] = 148870,	-- Dorian Atwater
 									["coord"] = { 68.9, 20.5, 895 },	-- Tiragarde Sound
-									["sourceQuests"] = { 54726 },	-- Frame Work
+									["sourceQuest"] = 54726,	-- Frame Work
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54728, {	-- This Lumber is Haunted
+								q(54728, {	-- This Lumber is Haunted
 									["qg"] = 148870,	-- Dorian Atwater
 									["coord"] = { 67.1, 12.3, 895 },	-- Tiragarde Sound
-									["sourceQuests"] = { 54727 },	-- Team Carry
+									["sourceQuest"] = 54727,	-- Team Carry
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54730, {	-- Gorak Tul's Influence
+								q(54730, {	-- Gorak Tul's Influence
 									["qg"] = 139926,	-- Thornspeaker Birchgrove
 									["coord"] = { 61.9, 59.4, 896 },	-- Drustvar
-									["sourceQuests"] = { 54728 },	-- This Lumber is Haunted
+									["sourceQuest"] = 54728,	-- This Lumber is Haunted
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54731, {	-- Balance in All Things
+								q(54731, {	-- Balance in All Things
 									["qg"] = 139926,	-- Thornspeaker Birchgrove
 									["coord"] = { 61.9, 59.4, 896 },	-- Drustvar
-									["sourceQuests"] = { 54730 },	-- Gorak Tul's Influence
+									["sourceQuest"] = 54730,	-- Gorak Tul's Influence
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54729, {	-- The Bleak Hills
+								q(54729, {	-- The Bleak Hills
 									["qg"] = 148870,	-- Dorian Atwater
 									["coord"] = { 67.1, 12.3, 895 },	-- Tiragarde Sound
-									["sourceQuests"] = { 54727 },	-- Team Carry
+									["sourceQuest"] = 54727,	-- Team Carry
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54732, {	-- Drop It!
+								q(54732, {	-- Drop It!
 									["qg"] = 150884,	-- Chelsea Wright
 									["coord"] = { 33.1, 30.4, 896 },	-- Drustvar
-									["sourceQuests"] = { 54729 },	-- The Bleak Hills
+									["sourceQuest"] = 54729,	-- The Bleak Hills
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(55136, {	-- Her Dog Days Are Over
+								q(55136, {	-- Her Dog Days Are Over
 									["qg"] = 150885,	-- Wicker Beast
 									["coord"] = { 36.5, 28.9, 896 },	-- Drustvar
-									["sourceQuests"] = { 54732 },	-- Drop It!
+									["sourceQuest"] = 54732,	-- Drop It!
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54733, {	-- Make it Wright
+								q(54733, {	-- Make it Wright
 									["qg"] = 150884,	-- Chelsea Wright
 									["coord"] = { 33.1, 30.4, 896 },	-- Drustvar
-									["sourceQuests"] = { 55136 },	-- Her Dog Days Are Over
+									["sourceQuest"] = 55136,	-- Her Dog Days Are Over
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54734, {	-- Summons from Dorian
+								q(54734, {	-- Summons from Dorian
 									["qg"] = 149252,	-- Bound Sky
 									["coords"] = {
 										{ 45.4, 45.6, 896 },	-- Drustvar
@@ -202,21 +210,29 @@ _.Zones =
 										54731,	-- Balance in All Things
 										54733,	-- Make it Wright
 									},
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54735, {	-- A Worthy Crew
+								q(54735, {	-- A Worthy Crew
 									["qg"] = 148798,	-- Lady Jaina Proudmoore
 									["coord"] = { 66.5, 44.3, 942 },	-- Stormsong Valley
-									["sourceQuests"] = { 54734 },	-- Summons from Dorian
+									["sourceQuest"] = 54734,	-- Summons from Dorian
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(54851, {	-- Blessing of the Tides
+								q(54851, {	-- Blessing of the Tides
 									["qg"] = 148798,	-- Lady Jaina Proudmoore
 									["coord"] = { 67.5, 44.7, 942 },	-- Stormsong Valley
-									["sourceQuests"] = { 54735 },	-- A Worthy Crew
+									["sourceQuest"] = 54735,	-- A Worthy Crew
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(53720, {	-- Allegiance of Kul Tiras
+								q(53720, {	-- Allegiance of Kul Tiras
 									["qg"] = 148798,	-- Lady Jaina Proudmoore
 									["coord"] = { 71.1, 43.9, 942 },	-- Stormsong Valley
-									["sourceQuests"] = { 54851 },	-- Blessing of the Tides
+									["sourceQuest"] = 54851,	-- Blessing of the Tides
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 									["g"] = {
 										ach(13163, {	-- Allied Races: Kul Tiran
 											a(i(164762)),	-- Kul Tiran Charger
@@ -225,14 +241,25 @@ _.Zones =
 								}),
 							}),
 							n(-207, {	-- Lightforged Draenei
-								qa(49698, {	-- The Lightforged
+								q(49698, {	-- The Lightforged
 									["qg"] = 126319,	-- High Exarch Turalyon
+									["coord"] = { 52.2, 13.6, 84 },
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(49266, {	-- Captain Fareeya
-									["qg"] = 126319,	-- High Exarch Turalyon
+								q(49266, {	-- Forge of Aeons
+									["qg"] = 130549,	-- Captain Fareeya
+									["coord"] = { 44.0, 28.0, 886 },
+									["sourceQuest"] = 49698,	-- The Lightforged
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 								}),
-								qa(50071, {	-- For the Light!
-									["qg"] = 126319,	-- High Exarch Turalyon
+								q(50071, {	-- For the Light!
+									["qg"] = 130810,	-- High Exarch Turalyon
+									["coord"] = { 48.6, 40.4, 886 },
+									["sourceQuest"] = 49266,	-- Forge of Aeons
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 									["g"] = {
 										ach(12243, {	-- Allied Races: Lightforged Draenei
 											a(i(155656)),	-- Lightforged Felcrusher
@@ -241,22 +268,32 @@ _.Zones =
 								}),
 							}),
 							n(-208, {	-- Void Elves
-								qa(49787, {	-- The Ghostlands
+								q(49787, {	-- The Ghostlands
 									["qg"] = 126321,	-- Alleria Windrunner
+									["coord"] = { 52.2, 13.6, 84 },
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(48962, {	-- Telogrus Rift
+									["qg"] = 130919,	-- High Elf Ranger
+									["sourceQuest"] = 49787,	-- The Ghostlands
+									["maps"] = { 972 },	-- Telogrus Rift, Void Elf Scenario
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
 									["g"] = {
 										ach(12242, {	-- Allied Races: Void Elf
 											a(i(156486)),	-- Starcursed Voidstrider
 										}),
 									},
 								}),
-								qa(48787, {	-- Telogrus Rift. Quest got removed & renamed to 'not used reuse me' & talks about Ranishu's in Voldun.
-									["u"] = 1,
-									["qg"] = 126321,	-- Alleria Windrunner
-								}),
 							}),
-							qa(50248, {	-- A Second Ally for the Cause
-								["u"] = 40,
+							q(50248, {	-- A Second Ally for the Cause
 								["qg"] = 126301,	-- Anduin Wrynn
+								["coord"] = { 52.2, 13.6, 84 },
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 110,
+								["u"] = 40,
+								
 							}),
 							qa(49929),	-- The Call for Allies
 						},
@@ -264,7 +301,7 @@ _.Zones =
 					q(28393, {	-- A Dangerous Alliance
 						["qg"] = 914,	-- Ander Germaine
 						["coord"] = {79.4, 69.0, 84 },
-						["sourceQuest"] = 28258,	-- Meet with Ander Germaine
+						["sourceQuests"] = 28258,	-- Meet with Ander Germaine
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 1 },	-- Warrior
 						["lvl"] = 50,
