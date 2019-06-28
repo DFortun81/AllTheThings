@@ -71,44 +71,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(11861, {	-- The Throne of Zuldazar
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						{	-- Criteria 1 — Portents and Prophecies
-							["achievementID"] = 11861,	-- The Throne of Zuldazar
-							["criteriaID"] = 1,	-- Portents and Prophecies
-							["sourceQuests"] = { 49663 },	-- False Prophecies
-						},
-						{	-- Criteria 3 — Warport Rastari
-							["achievementID"] = 11861,	-- The Throne of Zuldazar
-							["criteriaID"] = 3,	-- Warport Rastari
-							["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
-						},
-						{	-- Criteria 4 — Web of Lies
-							["achievementID"] = 11861,	-- The Throne of Zuldazar
-							["criteriaID"] = 4,	-- Web of Lies
-							["sourceQuests"] = { 47528 },	-- Mistress of Lies
-						},
-						{	-- Criteria 5 — Among the People
-							["achievementID"] = 11861,	-- The Throne of Zuldazar
-							["criteriaID"] = 5,	-- Among the People
-							["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa
-						},
-						{	-- Criteria 7 — March of the Loa
-							["achievementID"] = 11861,	-- The Throne of Zuldazar
-							["criteriaID"] = 7,	-- March of the Loa
-							["sourceQuests"] = { 49426 },	-- The King's Gambit
-						},
-					},
-				}),
-				ach(12480, {	-- A Bargain of Blood
-					["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
-					["races"] = HORDE_ONLY,		-- Horde Only Races
-				}),
-				ach(12481, {	-- The Final Seal
-					["sourceQuests"] = { 50954 },	-- Zandalar Forever!
-					["races"] = HORDE_ONLY,
-				}),
 				
 			-- QUESTS START HERE	
 				

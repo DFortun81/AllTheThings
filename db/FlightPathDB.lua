@@ -186,12 +186,12 @@ AllTheThings.FlightPathDB = {
 	{
 		name="Nighthaven, Moonglade",
 		faction=2,
-		["un"] = 1,
+		["u"] = 1,
 	}, -- [62]
 	{
 		name="Nighthaven, Moonglade",
 		faction=1,
-		["un"] = 1,
+		["u"] = 1,
 	}, -- [63]
 	nil, -- [64]
 	{
@@ -1033,7 +1033,7 @@ AllTheThings.FlightPathDB = {
 	[2066] = {
 		name="Atal'Gral, Zuldazar",
 		faction=0,
-		["un"] = 1,
+		["u"] = 1,
 	},
 	[1293] = {
 		name="Tushui Landing, Timeless Isle",

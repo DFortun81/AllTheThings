@@ -3,57 +3,33 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Zandalar
-		["mapID"] = 875,	-- Zandalar
-		["g"] = {
-			{	-- Zuldazar
-				["mapID"] = 862,	-- Zuldazar
+	m(875, {	-- Zandalar
+		m(862, {	-- Zuldazar
+			n(-169, {	-- Emissary Quests
+				["races"] = HORDE_ONLY,	-- Attaching this here so it doesn't interfere with the quests that use the same ID as the alliance.
 				["g"] = {
-					n(-169,  { 	-- Emissary Quests
-						["races"] = HORDE_ONLY,	-- Attaching this here so it doesn't interfere with the quests that use the same ID as the alliance.
+					q(54451, {	-- Baubles from the Seekers
+						["qg"] = 134345,	-- Collector Kojo
+						["lvl"] = 120,
+						["coord"] = { 71.51, 30.35, 862 },
+						["repeatable"] = true,
 						["g"] = {
-							{	-- Baubles from the Seekers
-								["questID"] = 54451,	-- Baubles from the Seekers
-								["qg"] = 134345, 		-- Collector Kojo
-								["repeatable"] = true,
-								["lvl"] = 120,
-								["coords"] = {
-									{ 71.51, 30.35, 862 },
-								},
-								["g"] = {
-									{	-- Tortollan Seekers Supplies
-										["itemID"] = 166245,	-- Tortollan Seekers Supplies
-										["g"] = {
-											{	-- Bowl of Glowing Pufferfish
-												["itemID"] = 166704,	-- Bowl of Glowing Pufferfish
-											},
-											{	-- Kojo's Master Matching Set
-												["itemID"] = 166851,	-- Kojo's Master Matching Set
-												["u"] = 2,
-											},
-											{	-- Recipe: Boralus Blood Sausage [Rank 3]
-												["itemID"] = 166807,	-- Recipe: Boralus Blood Sausage [Rank 3]
-											},
-											{	-- Recipe: Sanguiated Feast [Rank 3]
-												["itemID"] = 166264,	-- Recipe: Sanguiated Feast [Rank 3]
-											},
-										},
-									},
-								},
-							},
-							{	-- Tortollan Emissary [Horde]
-								["questID"] = 50604,	-- Tortollan Emissary [Horde]
-								["qg"] = 134345, 		-- Collector Kojo
-								["isDaily"] = true,
-								["lvl"] = 120,
-								["coords"] = {
-									{ 71.51, 30.35, 862 },
-								},
-							},
+							i(166245, {	-- Tortollan Seekers Supplies
+								i(166704),	-- Bowl of Glowing Pufferfish
+								un(2, i(166851)),	-- Kojo's Master Matching Set
+								i(166807),	-- Recipe: Boralus Blood Sausage [Rank 3]
+								i(166264),	-- Recipe: Sanguiated Feast [Rank 3]
+							}),
 						},
 					}),
+					q(50604, {	-- Tortollan Emissary [Horde]
+						["qg"] = 134345,	-- Collector Kojo
+						["lvl"] = 120,
+						["coord"] = { 71.51, 30.35, 862 },
+						["isDaily"] = true,
+					}),
 				},
-			},
-		},
-	},
+			}),
+		}),
+	}),
 };

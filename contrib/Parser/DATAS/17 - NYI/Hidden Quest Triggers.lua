@@ -14,6 +14,17 @@ _.NeverImplemented =
 		q(54880),	-- Opening a darkshore chest
 		q(54881),	-- Opening a darkshore chest
 		
+		q(50711),	-- Zuldazar repeatable random chest
+		q(50715),	-- Zuldazar repeatable random chest
+		q(50716),	-- Zuldazar repeatable random chest
+		q(50720),	-- Zuldazar repeatable random chest
+		q(50722),	-- Zuldazar repeatable random chest
+		q(50723),	-- Zuldazar repeatable random chest
+		q(50724),	-- Zuldazar repeatable random chest
+		q(50726),	-- Zuldazar repeatable random chest
+		q(50728),	-- Zuldazar repeatable random chest
+		q(51346),	-- Zuldazar repeatable random chest
+		
 		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
 		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
