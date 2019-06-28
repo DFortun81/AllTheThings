@@ -24,6 +24,7 @@ _.Zones =
 						i(167751),	-- Mechanocat Laser Pointer
 						i(169384),	-- Microbot XD
 						i(169383),	-- Utility Mechanoclaw
+						i(169155),	-- Scrapmaster's Blowtorch
 					},
 				}),
 				n(150716, {	-- Stolen Royal Vendorbot
