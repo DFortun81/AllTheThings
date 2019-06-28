@@ -5481,12 +5481,20 @@ end
 
 -- Species Lib
 (function()
-local collectedSpecies = {};
+local meta = {
+	__index = function(t, key)
+		if C_PetJournal.GetNumCollectedInfo(key) > 0 then
+			rawset(t, key, 1);
+			return 1;
+		end
+	end
+};
+local collectedSpecies = setmetatable({}, meta);
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
 	--print("NEW_PET_ADDED", petID, speciesID);
-	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not collectedSpecies[speciesID] then
-		collectedSpecies[speciesID] = true;
+	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not rawget(collectedSpecies, speciesID) then
+		rawset(collectedSpecies, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
 		wipe(searchCache);
@@ -5502,15 +5510,12 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	local atLeastOne = false;
 	for speciesID,collected in pairs(collectedSpecies) do
 		if C_PetJournal.GetNumCollectedInfo(speciesID) < 1 then
+			rawset(collectedSpecies, speciesID, nil);
 			atLeastOne = true;
-			break;
 		end
 	end
 	if atLeastOne then
-		wipe(collectedSpecies);
 		app:PlayRemoveSound();
-		
-		-- Refresh the Collection Windows!
 		app:RefreshData(false, true);
 		wipe(searchCache);
 	end
@@ -5524,16 +5529,12 @@ app.BaseSpecies = {
 		elseif key == "collectible" then
 			return app.CollectibleBattlePets;
 		elseif key == "collected" then
-			if collectedSpecies[t.speciesID] or select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
-				collectedSpecies[t.speciesID] = true;
+			if collectedSpecies[t.speciesID] then
 				return 1;
 			end
 			local altSpeciesID = t.altSpeciesID;
-			if altSpeciesID then
-				if collectedSpecies[altSpeciesID] or select(1, C_PetJournal.GetNumCollectedInfo(altSpeciesID)) > 0 then
-					collectedSpecies[altSpeciesID] = true;
-					return 2;
-				end
+			if altSpeciesID and collectedSpecies[altSpeciesID]then
+				return 2;
 			end
 		elseif key == "text" then
 			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
@@ -5549,7 +5550,7 @@ app.BaseSpecies = {
 			if t.itemID then
 				local link = select(2, GetItemInfo(t.itemID));
 				if link then
-					t.link = link;
+					rawset(t, "link", link);
 					return link;
 				end
 			end
