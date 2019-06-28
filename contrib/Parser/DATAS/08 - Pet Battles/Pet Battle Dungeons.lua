@@ -57,6 +57,7 @@ _.PetBattles =
 		["coord"] = { 43.1, 19.9, 23 },
 		["maps"] = {
 			23,	-- Eastern Plaguelands
+			1505,	-- Pet Dungeon
 		},
 		["g"] = {
 			ach(13627, {	-- Pet Battle Challenge: Stratholme
@@ -76,6 +77,7 @@ _.PetBattles =
 		["coord"] = { 43.1, 19.9, 23 },
 		["maps"] = {
 			23,	-- Eastern Plaguelands
+			1505,	-- Pet Dungeon
 		},
 		["g"] = {
 			i(122457),	-- Ultimate Battle-Training Stone
