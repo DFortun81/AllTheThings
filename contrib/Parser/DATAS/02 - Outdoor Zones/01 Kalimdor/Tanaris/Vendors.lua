@@ -634,6 +634,14 @@ _.Zones =
 						i(18046),	-- Recipe: Tender Wolf Steak
 					},
 				}),
+				n(106940, {	-- Otela
+				--	["coord"] = { 52.6, 27.0, 71 },
+					["g"] = {
+						i(170739),	-- Sunswarmed Sand
+						i(170380),	-- Jar of the Sunwarmed Sand
+					},
+				}),
+				
 				n(69323,  {	-- Tiny Tayger <Ruthless Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
