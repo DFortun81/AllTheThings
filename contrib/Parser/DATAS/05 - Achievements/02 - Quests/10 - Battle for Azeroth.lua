@@ -241,6 +241,11 @@ _.Achievements =
 						crit(7),		-- Briarback Kraul
 						crit(8),		-- Treasure in Deadwash
 					})),
+					a(ach(13710, {	-- Sunken Ambitions
+						crit(1),		-- Welcome to Nazjatar
+						crit(2),		-- Secrets in the Sea
+						crit(3),		-- Turning the Tide
+					})),
 					h(ach(11868, {	-- The Dark Heart of Nazmir
 						crit(1),		-- Deep in the Swamp
 						crit(2),		-- A Pact with Death
@@ -333,11 +338,11 @@ _.Achievements =
 						crit(3),		-- Zandalar Forever!
 						crit(4),		-- Tides of Vengeance (H)
 					}),
-					ach(13709, {	-- Unfathomable
+					h(ach(13709, {	-- Unfathomable
 						crit(1),	-- Welcome to Nazjatar
 						crit(2),	-- Secrets in the Sea
 						crit(3),	-- Turning the Tide
-					}),
+					})),
 					a(ach(13285, {	-- Upright Citizens
 						i(166247),		-- Citizens Brigade Whistle (toy)
 						crit(1),		-- Russel the Bard recruited

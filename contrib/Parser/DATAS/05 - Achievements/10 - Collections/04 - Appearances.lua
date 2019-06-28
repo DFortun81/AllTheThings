@@ -47,6 +47,7 @@ _.Achievements =
 					ach(11747),	-- Merely a Set (Serpentshrine Cavern and The Eye)
 					ach(11751),	-- Mogg-Saron (Ulduar)
 					ach(11630),	-- More Like Win-dictive (PvP Season 19 or 20)
+					ach(13585),	-- Never Lose, Never Choose To
 					ach(12991),	-- New Mog, G'huun This?
 					ach(11707),	-- No Mercy (PvP Season 2)
 					ach(11746),	-- Outlandish Style (Gruuls' Lair, Karazhan, and Magtheridon's Lair)
