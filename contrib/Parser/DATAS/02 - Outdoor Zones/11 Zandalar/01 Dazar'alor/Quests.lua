@@ -75,6 +75,9 @@ _.Zones =
 					["coord"] = { 42.4, 9.00, 1165 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 126560,	-- Wardruid Loti
+					["altQuests"] = {
+						47440,	-- Pa'ku, Master of Winds
+					},
 				}),
 				q(52472, {	-- Make Loh Go
 				--	confirm SQ when flying is implemented.
@@ -105,6 +108,9 @@ _.Zones =
 					["coord"] = { 42.5, 9.30, 1165 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 126564,	-- Hexlord Raal
+					["altQuests"] = {
+						47439,	-- Gonk, Lord of the Pack
+					},
 				}),
 				q(47441, {	-- Pests
 				--	confirm SQ when flying is implemented.
