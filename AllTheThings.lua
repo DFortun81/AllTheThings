@@ -2117,6 +2117,7 @@ end
 -- Lua Constructor Lib
 local fieldCache = {};
 local CacheFields;
+local _cache;
 (function()
 fieldCache["achievementID"] = {};
 fieldCache["currencyID"] = {};
@@ -2243,12 +2244,13 @@ local function SearchForFieldRecursively(group, field, value)
 	end
 end
 local function SearchForFieldContainer(field)
-	if field then return fieldCache[field]; end
+	if field then return rawget(fieldCache, field); end
 end
 local function SearchForField(field, id)
 	if field and id then
 		local group = app:GetDataCache();
-		if fieldCache[field] then return fieldCache[field][id]; end
+		_cache = rawget(fieldCache, field);
+		if _cache then return rawget(_cache, id); end
 		return SearchForFieldRecursively(group, field, id);
 	end
 end
@@ -2257,7 +2259,7 @@ app.SearchForField = SearchForField;
 -- Item Information Lib
 local function SearchForSourceIDQuickly(sourceID)
 	if sourceID and sourceID > 0 and app:GetDataCache() then
-		local group = fieldCache["s"][sourceID];
+		local group = rawget(rawget(fieldCache, "s"),sourceID);
 		if group and #group > 0 then return group[1]; end
 	end
 end
@@ -2651,13 +2653,13 @@ local function RefreshCollections()
 		-- Harvest Illusion Collections
 		local collectedIllusions = GetDataMember("CollectedIllusions", {});
 		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
-			if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
+			if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
 		end
 		
 		-- Harvest Title Collections
 		local collectedTitles = GetTempDataMember("CollectedTitles", {});
 		for i=1,GetNumTitles(),1 do
-			if IsTitleKnown(i) then collectedTitles[i] = 1; end
+			if IsTitleKnown(i) then rawset(collectedTitles, i, 1); end
 		end
 		
 		-- Refresh Mounts / Pets
@@ -2666,8 +2668,8 @@ local function RefreshCollections()
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
-				collectedSpells[spellID] = 1;
-				collectedSpellsPerCharacter[spellID] = 1;
+				rawset(collectedSpells, spellID, 1);
+				rawset(collectedSpellsPerCharacter, spellID, 1);
 			end
 		end
 		
@@ -2680,8 +2682,8 @@ local function RefreshCollections()
 		-- Refresh Toys from Cache
 		local collectedToys = GetDataMember("CollectedToys", {});
 		for id,group in pairs(fieldCache["toyID"]) do
-			if not collectedToys[id] and PlayerHasToy(id) then
-				collectedToys[id] = 1;
+			if not rawget(collectedToys, id) and PlayerHasToy(id) then
+				rawset(collectedToys, id, 1);
 			end
 		end
 		
@@ -2690,22 +2692,22 @@ local function RefreshCollections()
 		if app.Settings:Get("Completionist") then
 			-- Completionist Mode can simply use the *fast* blizzard API.
 			for id,group in pairs(fieldCache["s"]) do
-				if not collectedSources[id] then
+				if not rawget(collectedSources, id) then
 					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						collectedSources[id] = 1;
+						rawset(collectedSources, id, 1);
 					end
 				end
 			end
 		else
 			-- Unique Mode requires a lot more calculation.
 			for id,group in pairs(fieldCache["s"]) do
-				if not collectedSources[id] then
+				if not rawget(collectedSources, id) then
 					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						collectedSources[id] = 1;
+						rawset(collectedSources, id, 1);
 					else
-						local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
-						if sourceInfo and app.ItemSourceFilter(sourceInfo, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) then
-							collectedSources[id] = 2;
+						_cache = C_TransmogCollection_GetSourceInfo(id);
+						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
+							rawset(collectedSources, id, 2);
 						end
 					end
 				end
@@ -5866,21 +5868,6 @@ function app.FilterItemClass_RequireItemFilter(item)
 		return true;
 	end
 end
-function app.FilterItemClass_RequirePersonalLoot(item)
-	local specs = item.specs;
-	if specs then return #specs > 0; end
-	return true;
-end
-function app.FilterItemClass_RequirePersonalLootCurrentSpec(item)
-    local specs = item.specs;
-    if specs then
-        for i, v in ipairs(specs) do
-            if v == app.Spec then return true; end
-        end
-        return false;
-    end
-    return true;
-end
 function app.FilterItemClass_RequireRaces(item)
 	return not item.nmr;
 end
@@ -7413,46 +7400,29 @@ local function SetRowData(self, row, data)
 		row:Hide();
 	end
 end
-local function UpdateRowProgress(group)
-	if group.collectible then
-		group.progress = group.collected and 1 or 0;
-		group.total = 1;
-	else
-		group.progress = 0;
-		group.total = 0;
-	end
-	if group.g then
-		for i,subgroup in ipairs(group.g) do
-			UpdateRowProgress(subgroup);
-			if subgroup.total then
-				group.progress = group.progress + subgroup.progress;
-				group.total = group.total + subgroup.total;
-			end
-		end
-	end
-end
 local function UpdateVisibleRowData(self)
 	-- If there is no raw data, then return immediately.
-	if not self.rowData then return; end
+	local rowData = rawget(self, "rowData");
+	if not rowData then return; end
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
-	local totalRowCount = #self.rowData;
+	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
 		local container, rowCount, totalHeight = self.Container, 0, 0;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 		
 		-- Ensure that the first row doesn't move out of position.
-		local row = container.rows[1] or CreateRow(container);
-		SetRowData(self, row, self.rowData[1]);
+		local row = rawget(container.rows, 1) or CreateRow(container);
+		SetRowData(self, row, rawget(rowData, 1));
 		totalHeight = totalHeight + row:GetHeight();
 		current = current + 1;
 		rowCount = rowCount + 1;
 		
 		for i=2,totalRowCount do
-			row = container.rows[i] or CreateRow(container);
-			SetRowData(self, row, self.rowData[current]);
+			row = rawget(container.rows, i) or CreateRow(container);
+			SetRowData(self, row, rawget(rowData, current));
 			totalHeight = totalHeight + row:GetHeight();
 			if totalHeight > container:GetHeight() then
 				break;
@@ -7464,8 +7434,9 @@ local function UpdateVisibleRowData(self)
 		
 		-- Hide the extra rows if any exist
 		for i=math.max(2, rowCount + 1),#container.rows do
-			ClearRowData(container.rows[i]);
-			container.rows[i]:Hide();
+			row = rawget(container.rows, i);
+			ClearRowData(row);
+			row:Hide();
 		end
 		
 		totalRowCount = totalRowCount + 1;
@@ -11113,7 +11084,9 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					self.tradeSkillID = tradeSkillID;
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.requireSkill == tradeSkillID then
-							self.data = setmetatable({ ['visible'] = true, ["indent"] = 0, total = 0, progress = 0 }, { __index = group });
+							self.data = CloneData(group);
+							self.data.indent = 0;
+							self.data.visible = true;
 							BuildGroups(self.data, self.data.g);
 							app.UpdateGroups(self.data, self.data.g);
 							if not self.data.expanded then
