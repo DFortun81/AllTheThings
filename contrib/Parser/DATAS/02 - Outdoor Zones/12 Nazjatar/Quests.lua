@@ -265,6 +265,21 @@ _.Zones =
 					55500,	-- Save A Friend (Horde)
 				},
 			}),
+			q(55822, {	-- Bounty: A Few Makura
+				["isDaily"] = true,
+				["qgs"] = {
+					155941,	-- Tamer Orami (Alliance)
+					151352,	-- Lily Bopip  (Horde)
+				},
+				["coords"] = {
+					{ 39.5, 55.4, 1355 },	-- Alliance
+					{ 47.3, 61.9, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
+				},
+			}),
 			q(55837, {	-- Bounty: Dangerous Creatures
 				["isDaily"] = true,
 				["qgs"] = {
@@ -272,11 +287,12 @@ _.Zones =
 					151352,	-- Lily Bopip
 				},
 				["coords"] = {
-					{ 39.6, 55.5, 1355 },	-- alliance
-					{ 47.3, 61.9, 1355 },	-- horde
+					{ 39.6, 55.5, 1355 },	-- Alliance
+					{ 47.3, 61.9, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(55836, {	-- Bounty: Elite Naga Forces
@@ -376,12 +392,15 @@ _.Zones =
 				["description"] = "The daily quest that is offered is only available if you select the right follower for the day.",	-- the conch/flame gives a "Daily Quest" indicator if the board has something, but it's currently bugged
 				["g"] = {
 					q(55777, {	-- Wanted: Braxicus
+						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(55770, {	-- WANTED: Commander Sarj'eth
+						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(55772, {	-- WANTED: Lady Narjiss
+						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					i(170075),	-- Recipe: Unagi Skewer
@@ -399,12 +418,15 @@ _.Zones =
 					]]--
 					q(56223, {	-- Wanted: Commander Sarj'eth
 						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 					}),
 					q(56227, {	-- WANTED: Inquisitor Ithriza
 						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 					}),
 					q(56225, {	-- Wanted: Lady Narjiss
 						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 					}),
 					i(170075),	-- Recipe: Unagi Skewer
 				},
@@ -1138,10 +1160,7 @@ _.Zones =
 					56179,	-- The Needs of the People (Horde)
 				},
 				["g"] = {
-					{	-- Bounty: A Few Makura
-						["questID"] = 55822,
-						["isDaily"] = true,
-					},
+					
 					{	-- Bounty: A Few Murlocs
 						["questID"] = 55819,
 						["isDaily"] = true,
