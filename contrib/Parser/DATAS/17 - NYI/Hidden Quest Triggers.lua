@@ -52,14 +52,21 @@ _.NeverImplemented =
 		q(35588),	-- Zul'Farrak: end-of-dungeon reward granted
 		q(35589),	-- Zul'Farrak: bonus objective completed
 		
+		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+		
+		-------------------
+		--      WOD      --
+		-------------------
 		q(37187),	-- The Dark Portal
 		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
+		q(35983),	-- triggered during "Onslaught's End" when door to Cho'gal was opened
+		q(35253),	-- triggered during "Onslaught's End" when door to Teron'gor was opened
+		q(35297),	-- triggered during "Blazing of Glory" when you approach Khadgar around 67.6,60.5
+		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
 		q(36793),	-- Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
 		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking all herbs
-		
-		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
 		
 		-------------------
 		--      BFA      --
