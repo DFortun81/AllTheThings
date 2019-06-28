@@ -180,8 +180,8 @@ _.Zones =
 			}),
 			q(56814, {	-- Anytime You Need a Friend
 				["qg"] = 149904,	-- Neri Sharpfin
-				["coord"] = { 50.2, 64.9, 1355 },
 				["races"] = HORDE_ONLY,
+				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 5.",
 				["g"] = {
 					i(169908),	-- Cleverly Concealed Supplies
 				},
