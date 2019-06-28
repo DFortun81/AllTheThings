@@ -348,6 +348,7 @@ namespace ATT
                     case "specs":
                     case "races":
                     case "sourceQuests":
+                    case "altQuests":
                         {
                             MergeArrayData(item, field, value);
                             break;
@@ -608,6 +609,7 @@ namespace ATT
                     case "c":
                     case "specs":
                     case "sourceQuests":
+                    case "altQuests":
                     case "repeatable":
                     case "isWeekly":
                     case "isDaily":

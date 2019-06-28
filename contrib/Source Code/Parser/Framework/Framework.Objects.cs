@@ -1078,6 +1078,7 @@ namespace ATT
                     case "specs":
                     case "difficulties":
                     case "sourceQuests":
+                    case "altQuests":
                     case "races":
                     case "maps":
                     case "qgs":

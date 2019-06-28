@@ -853,6 +853,14 @@ namespace ATT
                         return "sourceQuests";
                     }
 
+                case "altQuests":
+                case "alternateQuests":
+                case "exclusiveQuests":
+                case "exclusiveWithQuests":
+                    {
+                        return "altQuests";
+                    }
+
                 case "altQuestID":
                 case "hQuestID":
                 case "hordeQuestID":

@@ -1015,6 +1015,13 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			return 2;
 		end
 	end
+	if t.altQuests then
+		for i,questID in ipairs(t.altQuests) do
+			if IsQuestFlaggedCompleted(questID) then
+				return 1;
+			end
+		end
+	end
 end
 
 -- Quest Name Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
@@ -2150,6 +2157,7 @@ CacheFields = function(group)
 	CacheFieldID(group, "titleID");
 	CacheFieldID(group, "questID");
 	CacheSubFieldID(group, "questID", "altQuestID");
+	CacheArrayFieldIDs(group, "questID", "altQuests");
 	CacheFieldID(group, "requireSkill");
 	CacheFieldID(group, "s");
 	CacheFieldID(group, "speciesID");
@@ -7036,14 +7044,14 @@ local function CreateMiniListForGroup(group)
 			end;
 		elseif group.questID or group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
-			local mainQuest = CloneData(group);
-			mainQuest.collectible = true;
-			local g = { mainQuest };
+			local root = CloneData(group);
+			root.collectible = true;
+			local g = { root };
 			
 			-- Show Quest Prereqs
-			if mainQuest.sourceQuests then
+			if root.sourceQuests then
 				local breakafter = 0;
-				local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests;
+				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				while sourceQuests and #sourceQuests > 0 do
 					subSourceQuests = {}; prereqs = {};
 					for i,sourceQuestID in ipairs(sourceQuests) do
@@ -7108,7 +7116,7 @@ local function CreateMiniListForGroup(group)
 						if #prereqs > 0 then
 							tinsert(prereqs, {
 								["text"] = "Upon Completion",
-								["description"] = "The above quests need to be completed before being able to complete the quest(s) listed below.",
+								["description"] = "The above quests need to be completed before being able to complete the things listed below.",
 								["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 								["visible"] = true,
 								["expanded"] = true,
