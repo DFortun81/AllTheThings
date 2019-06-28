@@ -42,6 +42,7 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
+local rawget, rawset = rawget, rawset;
 
 -- Coroutine Helper Functions
 app.RawData = {};
