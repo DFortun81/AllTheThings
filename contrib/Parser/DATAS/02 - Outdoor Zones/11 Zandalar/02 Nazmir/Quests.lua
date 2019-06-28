@@ -820,6 +820,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 49370,	-- Rescue the Chronicler
 					},
+					q(53781, {	-- Eyir
+						["qg"] = 122688,	-- Bwonsamdi
+						["lvl"] = 120,
+						["coord"] = { 39.5, 24.6, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54145,	-- The Loa of Death
+					}),
 					{	-- Getting a Leg Up
 						["questID"] = 48492,
 						["qg"] = 126346,	-- Chadwick Paxton
@@ -865,6 +872,13 @@ _.Zones =
 							-- are 49378 and 49379 also required?
 						},
 					},
+					q(53780, {	-- Jailor of the Damned
+						["qg"] = 122688,	-- Bwonsamdi
+						["lvl"] = 120,
+						["coord"] = { 39.5, 24.6, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54145,	-- The Loa of Death
+					}),
 					{	-- Just Say No to Cannibalism
 						["questID"] = 47919,
 						["qg"] = 125024,	-- Kajosh
@@ -900,6 +914,16 @@ _.Zones =
 						["questID"] = 47996,
 						["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 					},
+					q(53782, {	-- Mysteries of Death
+						["qg"] = 122688,	-- Bwonsamdi
+						["lvl"] = 120,
+						["coord"] = { 39.5, 24.6, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							54147,	-- Confront The Val'kyr
+							53780,	-- Jailor of the Damned
+						},
+					}),
 					{	-- Necessity is the MOTHER
 						["questID"] = 54940,
 						["qg"] = 149823,
@@ -1071,6 +1095,13 @@ _.Zones =
 							48478,	-- Kel'vax's Home
 						},
 					},
+					q(54145, {	-- The Loa of Death
+						["qg"] = 146824,	-- Princess Talanji
+						["lvl"] = 120,
+						["coord"] = { 39.5, 27.0, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 53779,	-- The Lies of a Loa
+					}),
 					{	-- The Underrot: Sealing G'huun's Corruption
 						["questID"] = 51302,
 						["qg"] = 137112,	-- Titan Keeper Hezrel

@@ -1380,6 +1380,13 @@ _.Zones =
 						["coord"] = { 71.5, 59.9, 634 },
 						["qg"] = 94318,	-- Genn Greymane
 					}),
+					q(54147, {	-- Confront the Val'kyr
+						["qg"] = 146877,	-- Princess Talanji
+						["lvl"] = 120,
+						["coord"] = { 61.2, 68.1, 634 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 53781,	-- Eyir
+					}),
 					q(38624,  {	-- Cry Thunder!
 						["qg"] = 92218,	-- Thymjaris
 						["coord"] = { 40.8, 80.8, 634 },

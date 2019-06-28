@@ -272,6 +272,13 @@ _.Zones =
 						46765,	-- The Broken Shore: Investigating the Legion
 					},
 				}),
+				q(54120, {	-- To Orgrimmar
+					["qg"] = 145965,	-- Spirit of Vol'jin
+					["lvl"] = 120,
+					["coord"] = { 62.3, 30.4, 646 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 53778,	-- Where He Felll
+				}),
 				q(46675, {	-- To Track a Demon
 					["lvl"] = 110,
 					["classes"]= { 11 },	-- Druid
@@ -280,6 +287,13 @@ _.Zones =
 						120070,	-- Thisalee Crow
 						120084,	-- Druid of the Talon
 					},
+				}),
+				q(53778, {	-- Where He Fell
+					["qg"] = 145965,	-- Spirit of Vol'jin
+					["lvl"] = 120,
+					["coord"] = { 63.2, 33.3, 646 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 53776,	-- To the Broken Shore
 				}),
 				i(143559, {	-- Wyrmtongue's Cache Key
 					q(46499, {	-- Spiders, Huh?

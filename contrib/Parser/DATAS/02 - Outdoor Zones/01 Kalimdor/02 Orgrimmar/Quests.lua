@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor		
+	m(12, {	-- Kalimdor
 		m(85, {	-- Orgrimmar
 			n(-17, {	-- Quests
 				gsh(1522, {	-- Allied Races 	-- This belongs to black rock depths where this quest line takes place, but I at least wanted to get this in first.
@@ -116,7 +116,7 @@ _.Zones =
 									q(41841, {	-- The Final Ward
 										["qg"] = 105213,	-- Spiritwalker Ebonhorn
 										["coord"] = { 56.8, 92.0, 650 },
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											41840,	-- Ice and Shadow
 											41882,	-- Whispers of the Darkness
 										},
@@ -168,14 +168,14 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 110,
 									}),
-									q(49613, {	-- Silvermoon City	
+									q(49613, {	-- Silvermoon City
 										["qg"] = 131478,	-- Lady Liadrin
 										["coord"] = { 65.8, 63.6, 680 },
 										["sourceQuest"] = 49973,	-- Thalyssra's Estate
 										["races"] = HORDE_ONLY,
 										["lvl"] = 110,
 									}),
-									q(49354, {	-- Remember the Sunwell	
+									q(49354, {	-- Remember the Sunwell
 										["qg"] = 130133,	-- Lady Liadrin
 										["coord"] = { 58.2, 19.4, 110 },
 										["sourceQuest"] = 49613,	-- Silvermoon City
@@ -192,7 +192,7 @@ _.Zones =
 											ach(12244, {	-- Allied Races: Nightborne
 												i(156487),	-- Nightborne Manasaber
 											}),
-										},	
+										},
 									}),
 									-- Nightborne Starter Quest
 									q(49933, {	-- For the Horde
@@ -221,7 +221,7 @@ _.Zones =
 										["lvl"] = 120,
 									}),
 									q(53467, {	-- Caverns of Time
-										["qg"] = 131443,	-- Chief Telemancer Oculeth 
+										["qg"] = 131443,	-- Chief Telemancer Oculeth
 										["coord"] = { 67.0, 73.7, 1185 },
 										["sourceQuest"] = 53466,	-- Vision of Time
 										["races"] = HORDE_ONLY,
@@ -235,21 +235,21 @@ _.Zones =
 										["lvl"] = 120,
 									}),
 									q(53353, {	-- Echo of Warlord Zaela
-										["qg"] = 143692,	-- Anachronos 
+										["qg"] = 143692,	-- Anachronos
 										["coord"] = { 54.4, 50.2, 17 },
 										["sourceQuest"] = 53354,	-- Echo of Gul'dan
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 									}),
 									q(53355, {	-- Echo of Garrosh Hellscream
-										["qg"] = 143692,	-- Anachronos 
+										["qg"] = 143692,	-- Anachronos
 										["coord"] = { 68.8, 44.0, 379 },
 										["sourceQuest"] = 53353,	-- Echo of Warlord Zaela
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
-									}),	
+									}),
 									q(52942, {	-- Restoring Old Bonds
-										["qg"] = 126066,	-- Eitrigg 
+										["qg"] = 126066,	-- Eitrigg
 										["coord"] = { 69.9, 69.4, 1185 },
 										["sourceQuest"] = 53355,	-- Echo of Garrosh Hellscream
 										["races"] = HORDE_ONLY,
@@ -345,7 +345,7 @@ _.Zones =
 									q(54301, {	-- Talanji's Mercy
 										["qg"] = 145359,	-- Princess Talanji
 										["coord"] = { 40.5, 11.9, 1165 },
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											54419,	-- Quelling the Masses
 											53826,	-- The Instigator Among Us
 										},
@@ -355,7 +355,7 @@ _.Zones =
 									q(54925, {	-- Heresy!
 										["qg"] = 148096,	-- High Prelate Rata
 										["coord"] = { 40.2, 11.9, 1165 },
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											54419,	-- Quelling the Masses
 											53826,	-- The Instigator Among Us
 										},
@@ -365,7 +365,7 @@ _.Zones =
 									q(54300, {	-- Breaking the Faith
 										["qg"] = 145360,	-- Zolani
 										["coord"] = { 40.5, 12.4, 1165 },
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											54419,	-- Quelling the Masses
 											53826,	-- The Instigator Among Us
 										},
@@ -375,7 +375,7 @@ _.Zones =
 									q(53825, {	-- The New Zanchuli Council
 										["qg"] = 145359,	-- Princess Talanji
 										["coord"] = { 40.6, 12.0, 1165 },
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											54301,	-- Talanji's Mercy
 											54925,	-- Heresy!
 											54300,	-- Breaking the Faith
@@ -544,7 +544,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
 					["u"] = 40,
-				}),	
+				}),
 				q(27435, {	-- A Seer's Staff
 					["qg"] = 44735,	-- Seer Liwatha
 					["coord"] = { 45.4, 53.4, 85 },
@@ -558,7 +558,7 @@ _.Zones =
 					["g"] = {
 						i(65484),	-- Staff of the Earthmother
 					},
-				}), 
+				}),
 				q(27441, {	-- A Seer's Staff
 					["qg"] = 45347,	-- Brother Silverhallow
 					["coord"] = { 37.8, 87.4, 85 },
@@ -642,7 +642,7 @@ _.Zones =
 					["coord"] = { 48.6, 71.0, 85 },
 					["sourceQuest"] = 9626,	-- Meeting the Orcs
 					["races"] = { 10 },	-- Blood Elf
-					["lvl"] = 10,					
+					["lvl"] = 10,
 				}),
 				q(1431, {	-- Alliance Relations
 					["qg"] = 5639,	-- Craven Drok
@@ -700,7 +700,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22004)),	-- Darkmantle Bracers 
+						un(2, i(22004)),	-- Darkmantle Bracers
 					},
 				}),
 				q(8916, {	-- An Earnest Proposition (Priest)
@@ -753,7 +753,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 58,
-					["u"] = 40,						
+					["u"] = 40,
 					["g"] = {
 						un(2, i(22108)),	-- Feralheart Bracers
 					},
@@ -837,8 +837,8 @@ _.Zones =
 					["lvl"] = 50,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11872)),	-- Eschewal Greaves 
-						un(2, i(11870)),	-- Oblivion Orb 
+						un(2, i(11872)),	-- Eschewal Greaves
+						un(2, i(11870)),	-- Oblivion Orb
 						un(2, i(11871)),	-- Snarkshaw Spaulders
 					},
 				}),
@@ -877,7 +877,7 @@ _.Zones =
 						i(119326), 	-- Ring of Pardons
 						i(119327),	-- Durak's Downfall
 					},
-				}),			
+				}),
 				q(31034, {	-- Enemies Below
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
@@ -889,7 +889,7 @@ _.Zones =
 					["coord"] = { 49.4, 59.2, 85 },
 					["sourceQuest"] = 26803,	-- Missing Reports
 					["races"] = { 9 },	-- Goblin
-					["lvl"] = 5,					
+					["lvl"] = 5,
 				}),
 				q(7491, {	-- For All To See
 					["qg"] = 4949,	-- Thrall
@@ -910,7 +910,7 @@ _.Zones =
 					["lvl"] = 9,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(15424)),	-- Axe of Orgrimmar 
+						un(2, i(15424)),	-- Axe of Orgrimmar
 						un(2, i(15445)),	-- Hammer of Orgrimmar
 						un(2, i(15443)),	-- Kris of Orgrimmar
 						un(2, i(15444)),	-- Staff of Ogrimmar
@@ -922,7 +922,7 @@ _.Zones =
 					["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
-					["g"] = {		
+					["g"] = {
 						i(163528),	-- Deathguard's Gladius
 						i(163525),	-- Grunt's Boot Knife
 						i(163531),	-- Grunt's Cleaver
@@ -933,7 +933,7 @@ _.Zones =
 						i(163529),	-- War-Caller's Spellhammer
 						i(163532),	-- Warmage's Spellblade
 						i(163530),	-- Warmage's Spire
-					},		
+					},
 				}),
 				q(32674, {	-- I Believe You Can Fly
 					["description"] = "This quest is automatically offered to Horde players upon reaching level 60.",
@@ -1037,7 +1037,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22078)), 	-- Virtuous Belt 
+						un(2, i(22078)), 	-- Virtuous Belt
 						un(2, i(22081)), 	-- Virtuous Gloves
 					},
 				}),
@@ -1063,7 +1063,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22062)), 	-- Sorcerer's Belt 
+						un(2, i(22062)), 	-- Sorcerer's Belt
 						un(2, i(22066)), 	-- Sorcerer's Gloves
 					},
 				}),
@@ -1098,13 +1098,13 @@ _.Zones =
 					["races"] = { 9 },	-- Goblin
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
-				}),					
+				}),
 				q(32669, {	-- Learn To Ride
 					["description"] = "This quest is available to Orcs upon reaching level 20.",
 					["races"] = { 2 },	-- Orc
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
-				}),				
+				}),
 				q(32667,{	-- Learn To Ride
 					["description"] = "This quest is available to Pandaren upon reaching level 20.",
 					["races"] = { 26 },	-- Pandaren
@@ -1126,7 +1126,7 @@ _.Zones =
 					["coord"] = { 48.6, 71.0, 85 },
 					["sourceQuest"] = 28717,	-- Warchief's Command: Twilight Highlands!
 					["races"] = HORDE_ONLY,
-					["lvl"] = 84,					
+					["lvl"] = 84,
 				}),
 				q(4494, {	-- March of the Silithid [Horde]
 					["qg"] = 7010,	-- Zilzibin Drumlore
@@ -1165,7 +1165,7 @@ _.Zones =
 					["qg"] = 140176,	-- Nathanos Blightcaller
 					["coord"] = { 48.9, 91.4, 85 },
 					["sourceQuest"] = 53031,	-- The Speaker's Imperative
-					["races"] = HORDE_ONLY,	
+					["races"] = HORDE_ONLY,
 				}),
 				q(26803, {	-- Missing Reports
 					["qg"] = 3144,	-- Eitrigg
@@ -1197,7 +1197,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-				}),						
+				}),
 				q(26642, {	-- Preserving the Barrens
 					["qg"] = 35068,	-- Gotura Fourwinds
 					["coord"] = { 47.6, 71.3, 85 },
@@ -1242,7 +1242,7 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11854)),	-- Samophlange Screwdriver 
+						un(2, i(11854)),	-- Samophlange Screwdriver
 						un(2, i(11855)),	-- Tork Wrench
 					},
 				}),
@@ -1258,7 +1258,7 @@ _.Zones =
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1271,7 +1271,7 @@ _.Zones =
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1284,12 +1284,12 @@ _.Zones =
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 58,
-					["u"] = 40,							
+					["u"] = 40,
 					["g"] = {
-						un(2, i(22013)),	-- Beastmaster's Cap 
+						un(2, i(22013)),	-- Beastmaster's Cap
 						un(2, i(22060)),	-- Beastmaster's Tunic
 					},
 				}),
@@ -1297,7 +1297,7 @@ _.Zones =
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1310,12 +1310,12 @@ _.Zones =
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22080)),	-- Virtuous Crown 
+						un(2, i(22080)),	-- Virtuous Crown
 						un(2, i(22083)),	-- Virtuous Robe
 					},
 				}),
@@ -1323,12 +1323,12 @@ _.Zones =
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22097)),	-- Coif of The Five Thunders 
+						un(2, i(22097)),	-- Coif of The Five Thunders
 						un(2, i(22102)),	-- Vest of The Five Thunders
 					},
 				}),
@@ -1336,7 +1336,7 @@ _.Zones =
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1349,12 +1349,12 @@ _.Zones =
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22074)),	-- Deathmist Mask 
+						un(2, i(22074)),	-- Deathmist Mask
 						un(2, i(22075)),	-- Deathmist Robe
 					},
 				}),
@@ -1362,12 +1362,12 @@ _.Zones =
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22109)),	-- Feralheart Cowl 
+						un(2, i(22109)),	-- Feralheart Cowl
 						un(2, i(22113)),	-- Feralheart Vest
 					},
 				}),
@@ -1408,7 +1408,7 @@ _.Zones =
 					["g"] = {
 						i(65478),	-- Staff of the Sunchaser
 					},
-				}),	
+				}),
 				q(55779, {	-- Stay of Execution
 					["qg"] = 152977,	-- Thrall
 					["lvl"] = 120,
@@ -1497,10 +1497,10 @@ _.Zones =
 					["g"] = {
 						i(65629),	-- Facemask of the Shattered Hand
 					},
-				}), 
+				}),
 				q(7926, {	-- The Darkmoon Faire
 					["qg"] = 55382,	-- Darkmoon Faire Mystic Mage
-					
+
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
@@ -1553,7 +1553,14 @@ _.Zones =
 					["coord"] = { 48.2, 70.6, 85 },
 					["races"] = { 26 },	-- Pandaren
 					["lvl"] = 5,
-				}),							
+				}),
+				q(53779, {	-- The Lies of a Loa
+					["qg"] = 146630,
+					["lvl"] = 120,
+					["coord"] = { 48.4, 71.4, 85 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 53777,	-- Where He Died
+				}),
 				q(7784, {	-- The Lord of Blackrock
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
@@ -1571,7 +1578,7 @@ _.Zones =
 					["coord"] = { 50.4, 38.2, 85 },
 					["sourceQuest"] = 27722,	-- Warchief's Command: Deepholm!
 					["lvl"] = 82,
-				}),					
+				}),
 				q(28458, {	-- The Pyromancer's Grimoire
 					["qg"] = 47246,	-- Ureda
 					["coord"] = { 48.4, 62.6, 85 },
@@ -1598,10 +1605,10 @@ _.Zones =
 					["qg"] = 45137,	-- Shadow-Walker Zuru
 					["coord"] = { 35.4, 69.2, 85 },
 					["sourceQuest"] = 27332,	-- Seek the Shadow-Walker
-					["races"] = { 
+					["races"] = {
 						8,	-- Troll
 						31,	-- Zandalari Troll
-					},	
+					},
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
 					["g"] = {
@@ -1620,7 +1627,7 @@ _.Zones =
 					["coord"] = { 32.6, 68.2, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 85,
-				}),				
+				}),
 				q(28816, {	-- To the Depths
 					["qg"] = 45244,	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },
@@ -1663,7 +1670,7 @@ _.Zones =
 					["g"] = {
 						i(7981),	-- Plans: Barbaric Iron Boots
 					},
-				}),				
+				}),
 				q(28475,{	-- Twilight Scheming
 					["qg"] = 45337,	-- Tyelis
 					["coord"] = { 49.0, 71.0, 85 },
@@ -1733,7 +1740,7 @@ _.Zones =
 						i(63924),	-- Blade-Dodging Girdle
 						i(63923),	-- Hauberk of Shock
 					},
-				}), 
+				}),
 				q(28466, {	-- Weapons of Darkness
 					["qg"] = 44725,	-- Sunwalker Atohmo
 					["coord"] = { 45.2, 53.4, 85 },
@@ -1745,7 +1752,7 @@ _.Zones =
 						i(65631),	-- Helm of the Sunwalker
 						i(65644),	-- Faceguard of the Sunwalker
 						i(65647),	-- Headguard of the Sunwalker
-					},					
+					},
 				}),
 				q(28473, {	-- Weapons of Darkness
 					["qg"] = 23128,	-- Master Pyreanor

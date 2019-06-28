@@ -303,6 +303,10 @@ _.Zones =
 								["criteriaID"] = 4,	-- Toadcruel
 							}),
 						}),
+						ach(13263, {	-- The Shadow Hunter
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 53782,	-- Mysteries of Death
+						}),
 						ach(12771, {	-- Treasures of Nazmir
 							["groups"] = {
 								o(279260, {	-- Cleverly Disguised Chest
@@ -312,7 +316,7 @@ _.Zones =
 								o(277715, {	-- Cursed Nazmani Chest
 									["questID"] = 49979,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						s		}),
+								}),
 								o(279689, {	-- Lost Nazmani Treasure
 									["questID"] = 49891,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",

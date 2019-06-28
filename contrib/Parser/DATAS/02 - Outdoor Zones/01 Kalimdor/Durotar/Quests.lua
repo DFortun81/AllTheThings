@@ -538,6 +538,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 				},
+				q(53777, {	-- Where He Died
+					["qg"] = 146290,	-- Spirit of Vol'jin
+					["lvl"] = 120,
+					["coord"] = { 45.9, 15.9, 1 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 54120,	-- To Orgrimmar
+				}),
 				{	-- Winds in the Desert
 					["questID"] = 834,
 					["qg"] = 3293,	-- Rezlak
