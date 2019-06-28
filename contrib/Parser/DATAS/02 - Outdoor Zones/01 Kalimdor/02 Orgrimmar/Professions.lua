@@ -14,20 +14,44 @@ _.Zones =
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
 							["races"] = HORDE_ONLY,	
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
 						}),
 						q(29067, {	-- Potion Master
 							["qg"] = 3347,	-- Yelmak
 							["coord"] = { 55.6, 45.8, 85 },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["races"] = HORDE_ONLY,	
+							["races"] = HORDE_ONLY,
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},	
 						}),
 						q(29482, {	-- Transmutation Master
 							["qg"] = 3347,	-- Yelmak
 							["coord"] = { 55.6, 45.8, 85 },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["races"] = HORDE_ONLY,						
+							["races"] = HORDE_ONLY,
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
 						}),
 					}),
 				}),
