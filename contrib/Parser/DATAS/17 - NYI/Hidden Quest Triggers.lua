@@ -101,6 +101,19 @@ _.NeverImplemented =
 		q(51945),	-- Stormsong Valley repeatable random chest
 		q(51946),	-- Stormsong Valley repeatable random chest
 		q(52989),	-- Stormsong Valley repeatable random chest
+		q(48593),	-- Tirigarde Sound repeatable random chest
+		q(48595),	-- Tirigarde Sound repeatable random chest
+		q(48596),	-- Tirigarde Sound repeatable random chest
+		q(48598),	-- Tirigarde Sound repeatable random chest
+		q(48599),	-- Tirigarde Sound repeatable random chest
+		q(48607),	-- Tirigarde Sound repeatable random chest
+		q(48608),	-- Tirigarde Sound repeatable random chest
+		q(48609),	-- Tirigarde Sound repeatable random chest
+		q(48617),	-- Tirigarde Sound repeatable random chest
+		q(48618),	-- Tirigarde Sound repeatable random chest
+		q(48619),	-- Tirigarde Sound repeatable random chest
+		q(48621),	-- Tirigarde Sound repeatable random chest
+		q(50166),	-- Tirigarde Sound repeatable random chest
 		q(50922),	-- Vol'dun repeatable random chest
 		q(50920),	-- Vol'dun repeatable random chest
 		q(51673),	-- Vol'dun repeatable random chest
