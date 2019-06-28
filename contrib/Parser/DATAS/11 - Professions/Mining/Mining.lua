@@ -5,51 +5,6 @@ profession(186, {	-- Mining
 			["collectible"] = false,
 			["description"] = "This can drop from any ore gathering node on Draenor.",
 		}),
-		n(93237, {	-- Brimstone Destroyer
-			["description"] = "These mobs are only available during a World Quest. They can only be mined one time, similarly to the Slice of Bacon cooking quests.",
-			["groups"] = {
-				i(124444, {	-- Infernal Brimstone
-					{
-						["itemID"] = 124502,	-- Infernal Brimstone Sample
-						["questID"] = 38806,	-- Infernal Brimstone Sample (Quest)
-						["groups"] = {
-							recipe(184504),	-- Infernal Brimstone [Rank 1]
-						},
-					},
-					{
-						["questID"] = 38807,	-- Infernal Brimstone Analysis
-						["sourceQuest"] = 38806,	-- Source Quest: Infernal Brimstone Sample (Quest)
-						["qg"] = 93189,			-- Quest Giver: Mama Diggs <Mining Trainer>
-						["groups"] = {
-							recipe(184505),	-- Infernal Brimstone [Rank 2]
-						},
-					},
-					{
-						["questID"] = 39790,	-- Infernal Brimstone Theory
-						["sourceQuest"] = 38807,	-- Source Quest: Infernal Brimstone Analysis (Quest)
-						["qg"] = 93189,			-- Quest Giver: Mama Diggs <Mining Trainer>
-					},
-					{
-						["questID"] = 39763,	-- For Whom the Fel Tolls
-						["sourceQuest"] = 39790,	-- Source Quest: Infernal Brimstone Theory (Quest)
-						["qg"] = 97360,			-- Quest Giver: Matthew Rabis <Feral Warlock>
-					},
-					{
-						["questID"] = 39817,	-- The Brimstone's Secret
-						["sourceQuest"] = 39763,	-- Source Quest: For Whom the Fel Tolls (Quest)
-						["qg"] = 97360,			-- Quest Giver: Matthew Rabis <Feral Warlock>
-					},
-					{
-						["questID"] = 39830,	-- Hellfire Citadel: Hellfire and Brimstone
-						["sourceQuest"] = 39817,	-- Source Quest: The Brimstone's Secret
-						["qg"] = 93189,			-- Quest Giver: Mama Diggs <Mining Trainer>
-						["groups"] = {
-							recipe(191970),	-- Infernal Brimstone [Rank 3]
-						},
-					},
-				}),
-			},
-		}),
 		i(151564, {	-- Empyrium
 			{
 				["objectID"] = 272768,	-- Empyrium Deposit [No Model]
@@ -319,5 +274,88 @@ profession(186, {	-- Mining
 	filter(101, { 	-- Pet Battle
 		i(67282),	-- Elementium Geode
 		i(118919),	-- Red Goren Egg
+	}),
+	n(-17,  {	-- Quests
+		{
+			["questID"] = 38807,	-- Infernal Brimstone Analysis
+			["sourceQuest"] = 38806,	-- Source Quest: Infernal Brimstone Sample (Quest)
+			["qg"] = 93189,			-- Quest Giver: Mama Diggs <Mining Trainer>
+			["lvl"] = 110,
+			["groups"] = {
+				{
+					["itemID"] = 124488,	-- Mining Technique: Infernal Brimstone [Rank 2]
+					["spellID"] = 184505,	-- Infernal Brimstone [Rank 2]
+				},
+			},
+		},
+		{
+			["questID"] = 39790,	-- Infernal Brimstone Theory
+			["sourceQuest"] = 38807,	-- Source Quest: Infernal Brimstone Analysis (Quest)
+			["qg"] = 93189,			-- Quest Giver: Mama Diggs <Mining Trainer>
+			["lvl"] = 110,
+		},
+		{
+			["questID"] = 39763,	-- For Whom the Fel Tolls
+			["sourceQuest"] = 39790,	-- Source Quest: Infernal Brimstone Theory (Quest)
+			["qg"] = 97360,			-- Quest Giver: Matthew Rabis <Feral Warlock>
+			["lvl"] = 110,
+		},
+		{
+			["questID"] = 39817,	-- The Brimstone's Secret
+			["sourceQuest"] = 39763,	-- Source Quest: For Whom the Fel Tolls (Quest)
+			["qg"] = 97360,			-- Quest Giver: Matthew Rabis <Feral Warlock>
+			["lvl"] = 110,
+		},
+		{
+			["questID"] = 39830,	-- Hellfire Citadel: Hellfire and Brimstone
+			["sourceQuest"] = 39817,	-- Source Quest: The Brimstone's Secret
+			["qg"] = 93189,			-- Quest Giver: Mama Diggs <Mining Trainer>
+			["lvl"] = 110,
+			["groups"] = {
+				recipe(191970),	-- Infernal Brimstone [Rank 3]
+			},
+		},
+	}),
+	n(-34,  {	-- World Quests
+		["lvl"] = 110,
+		["groups"] = {
+			n(93237, {	-- Brimstone Destroyer
+				["description"] = "These mobs are only available during a World Quest. They can only be mined one time, similar to the Slice of Bacon cooking quests.",
+				["altQuests"] = {
+					41208,	-- Brimstone Destroyer
+					41209,	-- Brimstone Destroyer
+					41210,	-- Brimstone Destroyer
+					41481,	-- Brimstone Destroyer
+					41482,	-- Brimstone Destroyer
+					41483,	-- Brimstone Destroyer
+					41484,	-- Brimstone Destroyer
+					41486,	-- Brimstone Destroyer
+					41487,	-- Brimstone Destroyer
+					41488,	-- Brimstone Destroyer
+					41489,	-- Brimstone Destroyer
+					41490,	-- Brimstone Destroyer
+					41491,	-- Brimstone Destroyer
+					41492,	-- Brimstone Destroyer
+					41493,	-- Brimstone Destroyer
+				},
+				["lvl"] = 110,
+				["groups"] = {
+					i(124444, {	-- Infernal Brimstone
+						["sourceQuest"] = 39830,	-- Hellfire Citadel: Hellfire and Brimstone
+					}),
+					{
+						["itemID"] = 124502,	-- Infernal Brimstone Sample
+						["questID"] = 38806,	-- Infernal Brimstone Sample (Quest)
+						["lvl"] = 110,
+						["groups"] = {
+							{
+								["itemID"] = 124487,	-- Mining Technique: Infernal Brimstone
+								["spellID"] = 184504,	-- Infernal Brimstone [Rank 1]
+							},
+						},
+					},
+				},
+			}),
+		},
 	}),
 });

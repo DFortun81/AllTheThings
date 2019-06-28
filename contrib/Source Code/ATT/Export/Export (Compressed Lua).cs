@@ -53,18 +53,20 @@ namespace ATT
 
                 // Export Fields
                 int fieldCount = 0;
-                foreach (var pair in data)
+                var keys = data.Keys.ToList();
+                keys.Sort();
+                foreach (var key in keys)
                 {
                     // If this is NOT the first field, append a comma.
                     if (fieldCount++ > 0) builder.Append(',');
 
                     // Append the Sub-Indent and the Field Name
                     builder.Append("[");
-                    ExportCompressedLua(builder, pair.Key);
+                    ExportCompressedLua(builder, key);
                     builder.Append("]=");
 
                     // Append the undetermined object's format to the builder.
-                    ExportCompressedLua(builder, pair.Value);
+                    ExportCompressedLua(builder, data[key]);
                 }
 
                 // Close Bracket for the end of the Dictionary.

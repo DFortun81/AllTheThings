@@ -138,22 +138,14 @@ _.Zones =
 							i(65435),	-- Recipe: Cauldron of Battle
 						},
 					}),
-					a(ach(6644, {	-- Pandaren Embassy
+					ach(6644, 6664, {	-- Pandaren Embassy
 						["collectible"] = false,
 						["groups"] = {
 							i(89191),	-- Artisan Initiate's Shirt - Exalted
 							i(89193),	-- Artisan Member's Shirt - Exalted
 							i(89195),	-- Artisan Officer's Shirt - Exalted
 						},
-					})),
-					h(ach(6664, {	-- Pandaren Embassy
-						["collectible"] = false,
-						["groups"] = {
-							i(89191),	-- Artisan Initiate's Shirt - Exalted
-							i(89193),	-- Artisan Member's Shirt - Exalted
-							i(89195),	-- Artisan Officer's Shirt - Exalted
-						},
-					})),
+					}),
 					ach(5201, {	-- Profit Sharing
 						["collectible"] = false,
 						["groups"] = {
@@ -161,22 +153,14 @@ _.Zones =
 							h(i(65364)),	-- Guild Herald - Revered - minipet bound to Character
 						},
 					}),
-					a(ach(7448, {	-- Scenario Roundup
+					ach(7448, 7449, {	-- Scenario Roundup
 						["collectible"] = false,
 						["groups"] = {
 							i(85508),	-- Initiate's Shirt - Honored
 							i(85509),	-- Member's Shirt - Honored
 							i(85510),	-- Officer's Shirt - Honored
 						},
-					})),
-					h(ach(7449, {	-- Scenario Roundup
-						["collectible"] = false,
-						["groups"] = {
-							i(85508),	-- Initiate's Shirt - Honored
-							i(85509),	-- Member's Shirt - Honored
-							i(85510),	-- Officer's Shirt - Honored
-						},
-					})),
+					}),
 					ach(5467, {	-- Set the Oven to "Cataclysmic"
 						["collectible"] = false,
 						["groups"] = {
@@ -189,18 +173,12 @@ _.Zones =
 							i(62800),	-- Recipe: Seafood Magnifique Feast
 						},
 					}),
-					a(ach(5812, {	-- United Nations
+					ach(5812, 5892, {	-- United Nations
 						["collectible"] = false,
 						["groups"] = {
 							i(63138),	-- Dark Phoenix Hatchling - Exalted
 						},
-					})),
-					h(ach(5892, {	-- United Nations
-						["collectible"] = false,
-						["groups"] = {
-							i(63138),	-- Dark Phoenix Hatchling - Exalted
-						},
-					})),
+					}),
 					--[[ Achievement Heirlooms; Commenting this part out so we keep all the heirlooms together down below
 					ach(6626, {	-- Working Better as a Team
 						["collectible"] = false,

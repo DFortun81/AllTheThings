@@ -847,7 +847,9 @@ namespace ATT
 
                 // Only export NPC ID / Display ID pairs with references.
                 var usedNPCDisplayIDs = new Dictionary<int, int>();
-                foreach(var npcID in NPCS_WITH_REFERENCES.Keys)
+                var keys = NPCS_WITH_REFERENCES.Keys.ToList();
+                keys.Sort();
+                foreach (var npcID in keys)
                 {
                     if(NPCS.TryGetValue(npcID, out int displayID))
                     {
