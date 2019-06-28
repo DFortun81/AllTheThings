@@ -64,6 +64,20 @@ _.NeverImplemented =
 		-------------------
 		--      BFA      --
 		-------------------
+		q(51871),	-- Drustvar repeatable random chest
+		q(51875),	-- Drustvar repeatable random chest
+		q(51878),	-- Drustvar repeatable random chest
+		q(51882),	-- Drustvar repeatable random chest
+		q(51885),	-- Drustvar repeatable random chest
+		q(51896),	-- Drustvar repeatable random chest
+		q(51899),	-- Drustvar repeatable random chest
+		q(51902),	-- Drustvar repeatable random chest
+		q(51907),	-- Drustvar repeatable random chest
+		q(51910),	-- Drustvar repeatable random chest
+		q(51911),	-- Drustvar repeatable random chest
+		q(51912),	-- Drustvar repeatable random chest
+		q(51913),	-- Drustvar repeatable random chest
+		q(51914),	-- Drustvar repeatable random chest
 		q(50855),	-- Nazmir repeatable random chest
 		q(49885),	-- Nazmir repeatable random chest
 		q(50895),	-- Nazmir repeatable random chest

@@ -13,291 +13,211 @@ _.Zones =
 						ach(13280, {	-- Hobbyist Aquarist
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Hobbyist Aquarist
-									["achievementID"] = 13280,	-- Hobbyist Aquarist
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 						ach(13270, {	-- Beast Mode
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Beast Mode
-									["achievementID"] = 13270,	-- Beast Mode
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 						ach(13271, {	-- Critters with Huge Teeth
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Critters with Huge Teeth
-									["achievementID"] = 13271,	-- Critters with Huge Teeth
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 						ach(13272, {	-- Dragons Make Everything Better
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Dragons Make Everything Better
-									["achievementID"] = 13272,	-- Dragons Make Everything Better
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 						ach(13273, {	-- Element of Success
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Element of Success
-									["achievementID"] = 13273,	-- Element of Success
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 						ach(13274, {	-- Fun With Flying
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Fun With Flying
-									["achievementID"] = 13274,	-- Fun With Flying
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 						ach(13281, {	-- Human Resources
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Human Resources
-									["achievementID"] = 13281,	-- Human Resources
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 						ach(13275, {	-- Magician's Secrets
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Magician's Secrets
-									["achievementID"] = 13275,	-- Magician's Secrets
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 						ach(13277, {	-- Machine Learning
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Machine Learning
-									["achievementID"] = 13277,	-- Machine Learning
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 						ach(13278, {	-- Not Quite Dead Yet
 							["collectible"] = false,
 							["g"] = {
-								{	-- Captain Hermes — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								crit(1, {	-- Captain Hermes
 									["creatureID"] = 139489,	-- Captain Hermes
-									["criteriaID"] = 1,	-- Captain Hermes
 									["coord"] = { 21.4, 66.4, 896 },
-								},
-								{	-- Dilbert McClint — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								}),
+								crit(3, {	-- Dilbert McClint
 									["creatureID"] = 140461,	-- Dilbert McClint
-									["criteriaID"] = 3,	-- Dilbert McClint
 									["coord"] = { 63.6, 59.6, 896 },
-								},
-								{	-- Fizzie Sparkwhistle — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								}),
+								crit(4, {	-- Fizzie Sparkwhistle
 									["creatureID"] = 140813,	-- Fizzie Sparkwhistle
-									["criteriaID"] = 4,	-- Fizzie Sparkwhistle
 									["coord"] = { 38.1, 38.5, 896 },
-								},
-								{	-- Michael Skarn — Not Quite Dead Yet
-									["achievementID"] = 13278,	-- Not Quite Dead Yet
+								}),
+								crit(5, {	-- Michael Skarn
 									["creatureID"] = 140880,	-- Michael Skarn
-									["criteriaID"] = 5,	-- Michael Skarn
 									["coord"] = { 61.0, 17.6, 896 },
-								},
+								}),
 							},
 						}),
 					},

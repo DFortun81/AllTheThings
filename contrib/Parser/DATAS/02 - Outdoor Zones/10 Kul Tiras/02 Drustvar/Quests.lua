@@ -1219,9 +1219,9 @@ _.Zones =
 			}),
 			n(-17, {	-- Quests [Horde]
 				n(-90004, {	-- Anyport
-					["groups"] = {
+					["g"] = {
 						o(288214, {	-- Wanted Poster
-							["groups"] = {
+							["g"] = {
 								q(51240),	-- WANTED: Anchorface
 								q(53455),	-- WANTED: The Crimson Cutthroats
 							},
@@ -1234,9 +1234,9 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\inv_drustvar",
 				}),
 				n(-90002, {	-- Krazzlefraz Outpost
-					["groups"] = {
+					["g"] = {
 						o(298858, {	-- Wanted Poster
-							["groups"] = {
+							["g"] = {
 								q(53456),	-- WANTED: The Rime Huntress
 								q(53458),	-- WANTED: The Rindlewoe
 								q(53459),	-- WANTED: Sister Lilias

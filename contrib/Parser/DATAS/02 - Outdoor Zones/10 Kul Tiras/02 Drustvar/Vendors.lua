@@ -9,7 +9,7 @@ _.Zones =
 			n(-2, {	-- Vendors
 				n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 					["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",	
-					["groups"] = {
+					["g"] = {
 						i(163036, {	-- Polished Pet Charm
 						--Note!! Write the item like this on this vendor to prevent the description from being written on the charms.
 							i(163493, {	-- Bloody Rabbit Fang
@@ -27,7 +27,8 @@ _.Zones =
 					},
 				}),
 				n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary> [Alliance]
-					["groups"] = {
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
 						i(160541),	-- Order of Embers Tabard
 						i(163036, {	-- Polished Pet Charm
 							i(163491),	-- Pristine Falcon Feather
@@ -44,60 +45,30 @@ _.Zones =
 						i(161592),	-- Leggings of Devout Opposition
 						i(161594),	-- Woven Thornspeaker's Leggings
 						i(160535),	-- Witch Hunter's Cape
-						i(162381, {	-- Design: Royal Quartz Loop [Rank 3]
-							["spellID"] = 256521,
-						}),
-						i(162305, {	-- Formula: Enchant Ring - Pact of Versatility [Rank 3]
-							["spellID"] = 255101,
-						}),
-						i(162318, {	-- Formula: Enchant Weapon - Gale-Force Striking [Rank 3]
-							["spellID"] = 255143,
-						}),
-						i(162320, {	-- Formula: Enchant Weapon - Versatile Navigation [Rank 3]
-							["spellID"] = 268879,
-						}),
-						i(162421, {	-- Pattern: Deep Sea Bag [Rank 3]
-							["spellID"] = 257127,
-						}),
-						i(162427, {	-- Pattern: Embroidered Deep Sea Cloak [Rank 3]
-							["spellID"] = 257116,
-						}),
-						i(163314, {	-- Recipe: Battle Potion of Agility [Rank 3]
-							["spellID"] = 279161,
-						}),
-						i(162256, {	-- Recipe: Coastal Rejuvenation Potion [Rank 3]
-							["spellID"] = 252390,
-						}),
-						i(162361, {	-- Recipe: Contract: Order of Embers [Rank 2]
-							["spellID"] = 256279,
-						}),
-						i(162135, {	-- Recipe: Flask of the Undertow [Rank 3]
-							["spellID"] = 252359,
-						}),
-						i(162131, {	-- Recipe: Potion of Rising Death [Rank 3]
-							["spellID"] = 252346,
-						}),
-						i(162412, {	-- Recipe: Recurve Bow of the Strands [Rank 3]
-							["spellID"] = 256789,
-						}),
-						i(162329, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2]
-							-- ["spellID"] = 272066,
-						}),
-						i(162330, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3]
-							-- ["spellID"] = 272067,
-						}),
-						i(162322, {	-- Schematic: Frost-Laced Ammunition [Rank 3]
-							["spellID"] = 265102,
-						}),
+						i(162381),	-- Design: Royal Quartz Loop [Rank 3]
+						i(162305),	-- Formula: Enchant Ring - Pact of Versatility [Rank 3]
+						i(162318),	-- Formula: Enchant Weapon - Gale-Force Striking [Rank 3]
+						i(162320),	-- Formula: Enchant Weapon - Versatile Navigation [Rank 3]
+						i(162421),	-- Pattern: Deep Sea Bag [Rank 3]
+						i(162427),	-- Pattern: Embroidered Deep Sea Cloak [Rank 3]
+						i(163314),	-- Recipe: Battle Potion of Agility [Rank 3]
+						i(162256),	-- Recipe: Coastal Rejuvenation Potion [Rank 3]
+						i(162361),	-- Recipe: Contract: Order of Embers [Rank 2]
+						i(162135),	-- Recipe: Flask of the Undertow [Rank 3]
+						i(162131),	-- Recipe: Potion of Rising Death [Rank 3]
+						i(162412),	-- Recipe: Recurve Bow of the Strands [Rank 3]
+						i(162329),	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2]
+						i(162330),	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3]
+						i(162322),	-- Schematic: Frost-Laced Ammunition [Rank 3]
 						i(163205, {	-- Ghostly Pet Biscuit
 							["f"] = 55,	-- Consumable
 							["description"] = "This gives your pet a ghostly appearance as a hunter for 30 minutes.",
 						}),
 					},
-					["races"] = ALLIANCE_ONLY,
 				}),
 				n(138021, {	-- Sally Boltwrench <Repairs> [Horde]
-					["groups"] = {
+					["races"] = HORDE_ONLY,
+					["g"] = {
 						i(23596),	-- Plans: Adamantite Breastplate
 						i(23591),	-- Plans: Adamantite Cleaver
 						i(23592),	-- Plans: Adamantite Dagger
@@ -107,7 +78,6 @@ _.Zones =
 						i(23595),	-- Plans: Adamantite Plate Gloves
 						i(23638),	-- Plans: Lesser Ward of Shielding
 					},
-					["races"] = HORDE_ONLY,
 				}),
 			}),
 		}),
