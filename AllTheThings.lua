@@ -42,7 +42,6 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset = rawget, rawset;
 
 -- Coroutine Helper Functions
 app.RawData = {};
@@ -86,16 +85,15 @@ local function StartCoroutine(name, method)
 	end
 end
 local constructor = function(id, t, typeID)
-	if t then
-		if not t.g and t[1] then
-			return { g=t, [typeID]=id };
-		else
-			t[typeID] = id;
-			return t;
-		end
-	else
-		return {[typeID] = id};
+	if not t then
+		return { [typeID] = id };
 	end
+	if not t.g and t[1] then
+		t = { ["g"] = t, [typeID] = id };
+	else
+		t[typeID] = id;
+	end
+	return t;
 end
 local contains = function(arr, value)
 	for i,value2 in ipairs(arr) do
@@ -1020,7 +1018,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	if t.altQuests then
 		for i,questID in ipairs(t.altQuests) do
 			if IsQuestFlaggedCompleted(questID) then
-				return 2;
+				return 1;
 			end
 		end
 	end
@@ -2090,26 +2088,15 @@ end
 local fieldCache = {};
 local CacheFields;
 (function()
-local fieldCache_g,fieldCache_f, fieldConverters, converter;
-local function CacheField(group, field, value)
-	fieldCache_g = fieldCache[field];
-	fieldCache_f = fieldCache_g[value];
-	if fieldCache_f then
-		tinsert(fieldCache_f, group);
-	else
-		fieldCache_g[value] = {group};
-	end
-end
--- These are the fields we store.
 fieldCache["achievementID"] = {};
-fieldCache["creatureID"] = {};
 fieldCache["currencyID"] = {};
+fieldCache["creatureID"] = {};
 fieldCache["encounterID"] = {};
-fieldCache["flightPathID"] = {};
 fieldCache["instanceID"] = {};
+fieldCache["flightPathID"] = {};
+fieldCache["objectID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["mapID"] = {};
-fieldCache["objectID"] = {};
 fieldCache["questID"] = {};
 fieldCache["requireSkill"] = {};
 fieldCache["s"] = {};
@@ -2117,128 +2104,79 @@ fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
 fieldCache["titleID"] = {};
 fieldCache["toyID"] = {};
-fieldConverters = {
-	-- Simple Converters
-	["achievementID"] = function(group, value)
-		CacheField(group, "achievementID", value);
-	end,
-	["achID"] = function(group, value)
-		CacheField(group, "achievementID", value);
-	end,
-	["altAchID"] = function(group, value)
-		CacheField(group, "achievementID", value);
-	end,
-	["altQuestID"] = function(group, value)
-		CacheField(group, "questID", value);
-	end,
-	["creatureID"] = function(group, value)
-		if value > 0 then
-			CacheField(group, "creatureID", value);
+local function CacheArrayFieldIDs(group, field, arrayField)
+	local firldCache_g = group[arrayField];
+	if firldCache_g then
+		for i,fieldID in ipairs(firldCache_g) do
+			local fieldCache_f = fieldCache[field][fieldID];
+			if not fieldCache_f then
+				fieldCache_f = {};
+				fieldCache[field][fieldID] = fieldCache_f;
+			end
+			tinsert(fieldCache_f, group);
+			--tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [field] = fieldID });
 		end
-	end,
-	["currencyID"] = function(group, value)
-		CacheField(group, "currencyID", value);
-	end,
-	["encounterID"] = function(group, value)
-		CacheField(group, "encounterID", value);
-	end,
-	["flightPathID"] = function(group, value)
-		CacheField(group, "flightPathID", value);
-	end,
-	["instanceID"] = function(group, value)
-		CacheField(group, "instanceID", value);
-	end,
-	["itemID"] = function(group, value)
-		CacheField(group, "itemID", value);
-		if group.filterID == 102 then CacheField(group, "toyID", value); end
-	end,
-	["mapID"] = function(group, value)
-		CacheField(group, "mapID", value);
-	end,
-	["objectID"] = function(group, value)
-		CacheField(group, "objectID", value);
-	end,
-	["questID"] = function(group, value)
-		CacheField(group, "questID", value);
-	end,
-	["requireSkill"] = function(group, value)
-		CacheField(group, "requireSkill", value);
-	end,
-	["s"] = function(group, value)
-		CacheField(group, "s", value);
-	end,
-	["speciesID"] = function(group, value)
-		CacheField(group, "speciesID", value);
-	end,
-	["spellID"] = function(group, value)
-		CacheField(group, "spellID", value);
-	end,
-	["titleID"] = function(group, value)
-		CacheField(group, "titleID", value);
-	end,
-	["toyID"] = function(group, value)
-		CacheField(group, "toyID", value);
-	end,
-	
-	-- Complex Converters
-	["g"] = function(group, value)
-		for i,subgroup in ipairs(value) do
+	end
+end
+local function CacheFieldValue(group, field, value)
+	if value then
+		local fieldCache_f = fieldCache[field][value];
+		if not fieldCache_f then
+			fieldCache_f = {};
+			fieldCache[field][value] = fieldCache_f;
+		end
+		tinsert(fieldCache_f, group);
+	end
+end
+local function CacheFieldID(group, field)
+	CacheFieldValue(group, field, group[field]);
+end
+local function CacheSubFieldID(group, field, subfield)
+	local firldCache_g = group[subfield];
+	if firldCache_g then
+		local fieldCache_f = fieldCache[field][firldCache_g];
+		if not fieldCache_f then
+			fieldCache_f = {};
+			fieldCache[field][firldCache_g] = fieldCache_f;
+		end
+		tinsert(fieldCache_f, group);
+		-- tinsert(fieldCache_f, {["g"] = { group }, ["parent"] = group, [subfield] = firldCache_g });
+	end
+end
+CacheFields = function(group)
+	CacheFieldID(group, "achievementID");
+	CacheFieldID(group, "creatureID");
+	CacheFieldID(group, "currencyID");
+	CacheArrayFieldIDs(group, "creatureID", "crs");
+	CacheArrayFieldIDs(group, "creatureID", "qgs");
+	CacheFieldID(group, "encounterID");
+	CacheFieldID(group, "instanceID");
+	CacheFieldID(group, "flightPathID");
+	CacheFieldID(group, "objectID");
+	CacheFieldID(group, "itemID");
+	CacheFieldID(group, "titleID");
+	CacheFieldID(group, "questID");
+	CacheSubFieldID(group, "questID", "altQuestID");
+	CacheArrayFieldIDs(group, "questID", "altQuests");
+	CacheFieldID(group, "requireSkill");
+	CacheFieldID(group, "s");
+	CacheFieldID(group, "speciesID");
+	CacheFieldID(group, "spellID");
+	CacheFieldID(group, "mapID");
+	CacheArrayFieldIDs(group, "mapID", "maps");
+	if group.filterID == 102 and group.itemID then CacheFieldValue(group, "toyID", group.itemID); end
+	if group.c and not containsValue(group.c, app.ClassIndex) then
+		group.nmc = true;	-- "Not My Class"
+	end
+	if group.r and group.r ~= app.FactionID then
+		group.nmr = true;	-- "Not My Race"
+	elseif group.races and not containsValue(group.races, app.RaceIndex) then
+		group.nmr = true;	-- "Not My Race"
+	end
+	if group.g then
+		for i,subgroup in ipairs(group.g) do
 			CacheFields(subgroup);
 		end
-	end,
-	["crs"] = function(group, value)
-		for i,creatureID in ipairs(value) do
-			fieldConverters["creatureID"](group, creatureID);
-		end
-	end,
-	["qgs"] = function(group, value)
-		for i,questGiverID in ipairs(value) do
-			fieldConverters["creatureID"](group, questGiverID);
-		end
-	end,
-	["altQuests"] = function(group, value)
-		for i,questID in ipairs(value) do
-			fieldConverters["questID"](group, questID);
-		end
-	end,
-	["maps"] = function(group, value)
-		for i,mapID in ipairs(value) do
-			fieldConverters["mapID"](group, mapID);
-		end
-	end,
-	--[[
-	-- TODO: Mark coordinates in a special way.
-	["coord"] = function(group, value)
-		if value[3] then
-			fieldConverters["mapID"](group, value[3]);
-		end
-	end,
-	["coords"] = function(group, value)
-		for i,coord in ipairs(value) do
-			fieldConverters["coord"](group, coord);
-		end
-	end,
-	]]--
-	["c"] = function(group, value)
-		if not containsValue(value, app.ClassIndex) then
-			group.nmc = true;	-- "Not My Class"
-		end
-	end,
-	["r"] = function(group, value)
-		if value ~= app.FactionID then
-			group.nmr = true;	-- "Not My Race"
-		end
-	end,
-	["races"] = function(group, value)
-		if not containsValue(value, app.RaceIndex) then
-			group.nmr = true;	-- "Not My Race"
-		end
-	end,
-};
-CacheFields = function(group)
-	for key,value in pairs(group) do
-		converter = fieldConverters[key];
-		if converter then converter(group, value); end
 	end
 end
 end)();
@@ -2788,6 +2726,7 @@ local function RefreshMountCollection()
 			app:PlayFanfare();
 		end
 		wipe(searchCache);
+		collectgarbage();
 	end);
 end
 app.GetCurrentMapID = function()
@@ -3230,6 +3169,7 @@ end
 );
 
 -- Achievement Lib
+app.AchievementFilter = 4;
 app.BaseAchievement = {
 	__index = function(t, key)
 		if key == "achievementID" then
@@ -3250,7 +3190,7 @@ app.BaseAchievement = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "collected" then
-			return select(4, GetAchievementInfo(t.achievementID));
+			return select(app.AchievementFilter, GetAchievementInfo(t.achievementID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3332,7 +3272,7 @@ app.BaseAchievementCriteria = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "saved" or key == "collected" then
-			if select(4, GetAchievementInfo(t.achievementID)) then
+			if select(app.AchievementFilter, GetAchievementInfo(t.achievementID)) then
 				return true;
 			elseif t.criteriaID then
 				local m = GetAchievementNumCriteria(t.achievementID);
@@ -5490,6 +5430,7 @@ app.events.NEW_PET_ADDED = function(petID)
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
 		wipe(searchCache);
+		collectgarbage();
 	end
 end
 app.events.PET_JOURNAL_PET_DELETED = function(petID)
@@ -5513,6 +5454,7 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 		-- Refresh the Collection Windows!
 		app:RefreshData(false, true);
 		wipe(searchCache);
+		collectgarbage();
 	end
 end
 app.BaseSpecies = {
@@ -5527,13 +5469,6 @@ app.BaseSpecies = {
 			if collectedSpecies[t.speciesID] or select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
 				collectedSpecies[t.speciesID] = true;
 				return 1;
-			end
-			local altSpeciesID = t.altSpeciesID;
-			if altSpeciesID then
-				if collectedSpecies[altSpeciesID] or select(1, C_PetJournal.GetNumCollectedInfo(altSpeciesID)) > 0 then
-					collectedSpecies[altSpeciesID] = true;
-					return 2;
-				end
 			end
 		elseif key == "text" then
 			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
@@ -9046,6 +8981,7 @@ function app:RefreshData(lazy, got, manual)
 			app:UpdateWindows(nil, got);
 		end
 		wipe(searchCache);
+		collectgarbage();
 	end);
 end
 function app:GetWindow(suffix, parent, onUpdate)
@@ -11232,6 +11168,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							app:PlayFanfare();
 						end
 						wipe(searchCache);
+						collectgarbage();
 					end
 				end
 			elseif e == "TRADE_SKILL_CLOSE" then
@@ -12843,6 +12780,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		app:RefreshData(false, true);
 		app:PlayFanfare();
 		wipe(searchCache);
+		collectgarbage();
 		
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local name, link = GetItemInfo(itemID);
@@ -12893,6 +12831,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		app:RefreshData(false, true);
 		app:PlayFanfare();
 		wipe(searchCache);
+		collectgarbage();
 		
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local name, link = GetItemInfo(itemID);
@@ -12912,6 +12851,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			app:PlayFanfare();
 			wipe(searchCache);
+			collectgarbage();
 		end
 	end
 end
@@ -12955,5 +12895,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		app:RefreshData(false, true);
 		app:PlayRemoveSound();
 		wipe(searchCache);
+		collectgarbage();
 	end
 end
