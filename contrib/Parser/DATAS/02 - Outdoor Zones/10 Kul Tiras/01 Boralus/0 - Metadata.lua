@@ -1,24 +1,10 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			["groups"] = {
-				--[[
-				n(-212, {	-- Treasures
-					o(1234, {	-- Small Treasure Chest
-						["questID"] = 50952,
-					}),
-					o(293965, {	-- Scrimshaw Cache
-						["coord"] = { 72.5, 21.7 },
-						["questID"] = ,
-					}),
-				}),
-				--]]
-			},
 			["lvl"] = 110,
 			["isRaid"] = true,
 			["achievementID"] = 12847,	-- Siege of Boralus
@@ -26,4 +12,3 @@ _.Zones =
 		}),
 	}),
 };
---]]
