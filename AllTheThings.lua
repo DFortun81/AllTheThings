@@ -5923,30 +5923,37 @@ function app.NoFilter()
 	return true;
 end
 function app.FilterGroupsByLevel(group)
-	return app.Level >= (group.lvl or 0);
+	_cache = group.lvl;
+	if _cache then
+		return _cache <= rawget(app, "Level");
+	else
+		return true;
+	end
 end
 function app.FilterGroupsByCompletion(group)
-	return group.progress < group.total;
+	return rawget(group, "progress") < rawget(group, "total");
 end
 function app.FilterItemBind(item)
-	return item.b == 2 or item.b == 3; -- BoE
+	_cache = group.b;
+	return _cache == 2 or _cache == 3; -- BoE
 end
 function app.FilterItemClass(item)
 	if app.UnobtainableItemFilter(item) and app.SeasonalItemFilter(item) then
 		if app.ItemBindFilter(item) then return true; end
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
-			and app.RequiredSkillFilter(item.requireSkill)
+			and app.RequiredSkillFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item);
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
-	return not item.nmc;
+	return not rawget(group, "nmc");
 end
 function app.FilterItemClass_RequireItemFilter(item)
-	if item.f then
-		if app.Settings:GetFilter(item.f) then
+	_cache = group.f;
+	if _cache then
+		if app.Settings:GetFilter(_cache) then
 			return true;
 		else
 			return false;
@@ -5955,62 +5962,51 @@ function app.FilterItemClass_RequireItemFilter(item)
 		return true;
 	end
 end
-function app.FilterItemClass_RequirePersonalLoot(item)
-	local specs = item.specs;
-	if specs then return #specs > 0; end
-	return true;
-end
-function app.FilterItemClass_RequirePersonalLootCurrentSpec(item)
-    local specs = item.specs;
-    if specs then
-        for i, v in ipairs(specs) do
-            if v == app.Spec then return true; end
-        end
-        return false;
-    end
-    return true;
-end
 function app.FilterItemClass_RequireRaces(item)
-	return not item.nmr;
+	return not rawget(group, "nmr");
 end
 function app.FilterItemClass_SeasonalItem(item)
-   if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] > 4 then
-      return GetDataSubMember("SeasonalFilters", item.u);
-   else
-      return true
-   end
+	_cache = rawget(group, "u");
+	if _cache and rawget(rawget(rawget(L, "UNOBTAINABLE_ITEM_REASONS"), _cache), 1) > 4 then
+	  return GetDataSubMember("SeasonalFilters", _cache);
+	else
+	  return true
+	end
 end
 function app.FilterItemClass_UnobtainableItem(item)
-	if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] < 5 then
-	   return GetDataSubMember("UnobtainableItemFilters", item.u);
+	_cache = rawget(group, "u");
+	if _cache and rawget(rawget(rawget(L, "UNOBTAINABLE_ITEM_REASONS"), _cache), 1) < 5 then
+	  return GetDataSubMember("UnobtainableItemFilters", _cache);
 	else
-		return true;
+	  return true
 	end
 end
 function app.FilterItemClass_RequireBinding(item)
-	if item.b and (item.b == 2 or item.b == 3) then
+	_cache = group.b;
+	if _cache and (_cache == 2 or _cache == 3) then
 		return false;
 	else
 		return true;
 	end
 end
-function app.FilterItemClass_RequiredSkill(requireSkill)
-	if requireSkill then
-		return app.GetTradeSkillCache()[requireSkill];
+function app.FilterItemClass_RequiredSkill(item)
+	_cache = item.requireSkill;
+	if _cache then
+		return rawget(app.GetTradeSkillCache(), _cache);
 	else
 		return true;
 	end
 end
 function app.FilterItemSource(sourceInfo)
-	return sourceInfo.isCollected;
+	return rawget(sourceInfo, "isCollected");
 end
 function app.FilterItemSourceUnique(sourceInfo, allSources)
-	if sourceInfo.isCollected then
+	if rawget(sourceInfo, "isCollected") then
 		-- NOTE: This makes it so that the loop isn't necessary.
 		return true;
 	else
 		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
-		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
+		local item = SearchForSourceIDQuickly(rawget(sourceInfo, "sourceID"));
 		if item then
 			if item.races then
 				-- If the first item is EXPLICITLY race locked...
@@ -6314,13 +6310,13 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 	end
 end
 function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
-	if sourceInfo.isCollected then
+	if rawget(sourceInfo, "isCollected") then
 		-- NOTE: This makes it so that the loop isn't necessary.
 		return true;
 	else
 		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
 		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
-		if item and not item.nmc and not item.nmr then
+		if item and not rawget(item, "nmc") and not rawget(item, "nmr") then
 			-- This item is for my race and class.
 			for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
@@ -6335,10 +6331,10 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	end
 end
 function app.FilterItemTrackable(group)
-	return group.trackable;
+	return rawget(group, "trackable");
 end
 function app.ObjectVisibilityFilter(group)
-	return group.visible;
+	return rawget(group, "visible");
 end
 
 -- Default Filter Settings (changed in VARIABLES_LOADED and in the Options Menu)
