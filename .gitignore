@@ -24,6 +24,7 @@ contrib/Harvesters/System.Net.Http.Formatting.xml
 contrib/Harvesters/Blizzard API Harvester.pdb
 contrib/Harvesters/Blizzard API Harvester.exe.config
 /contrib/Parser/DATAS/89 - Extra/
+contrib/Source Code/ATT/bin
 contrib/Source Code/Parser/obj/
 *.user
 contrib/Source Code/Parser/.vs/
