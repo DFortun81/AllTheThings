@@ -3444,10 +3444,12 @@ app.BaseArtifact = {
 		elseif key == "collectible" then
 			return app.CollectibleTransmog;
 		elseif key == "collected" then
-			if GetDataSubMember("CollectedArtifacts", t.artifactID) then return true; end
+			_cache = t.s;
+			if _cache and GetDataSubMember("CollectedSources", _cache) then return 1; end
+			if GetDataSubMember("CollectedArtifacts", t.artifactID) then return 1; end
 			if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
 				SetDataSubMember("CollectedArtifacts", t.artifactID, 1);
-				return true;
+				return 1;
 			end
 		elseif key == "text" then
 			return t.parent and t.parent.itemID and t.variantText or t.appearanceText;
@@ -3483,20 +3485,24 @@ app.BaseArtifact = {
 			rawset(t, "info", info);
 			return info;
 		elseif key == "silentLink" then
+			local itemID = t.silentItemID;
+			if itemID then return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))); end
+		elseif key == "silentItemID" then
 			local itemID = artifactItemIDs[t.artifactID];
 			if itemID then
-				return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))), itemID;
+				return itemID;
 			elseif t.parent and t.parent.npcID and (t.parent.npcID <= -5200 and t.parent.npcID >= -5205) then
-				itemID = GetRelativeValue(t.parent, "itemID");
-				artifactItemIDs[t.artifactID] = itemID;
-				return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))), itemID;
+				return GetRelativeValue(t.parent, "itemID");
 			end
 		elseif key == "s" then
-			local s, itemID = t.silentLink;
+			local s = t.silentLink;
 			if s then
-				s = app.GetSourceID(s, itemID);
-				if s then
+				s = app.GetSourceID(s, t.silentItemID);
+				if s and s > 0 then
 					rawset(t, "s", s);
+					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+						SetDataSubMember("CollectedSources", s, 1);
+					end
 					return s;
 				end
 			end
@@ -10098,6 +10104,9 @@ app:GetWindow("Harvester", UIParent, function(self)
 				wipe(modIDs);
 				wipe(bonusIDs);
 			end
+			for artifactID,groups in pairs(fieldCache["artifactID"]) do
+				tinsert(db.g, setmetatable({visible = true, artifactID = tonumber(artifactID)}, app.BaseArtifact));
+			end
 			self.data = db;
 			BuildGroups(db, db.g);
 			UpdateGroups(db, db.g);
@@ -10107,7 +10116,7 @@ app:GetWindow("Harvester", UIParent, function(self)
 				local total = 0;
 				for i,group in ipairs(db.g) do
 					total = total + 1;
-					if group.s and group.s == 0 then
+					if group.s and group.s == 0 or group.artifactID then
 						group.visible = true;
 					else
 						group.visible = false;
