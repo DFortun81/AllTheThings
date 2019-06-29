@@ -1017,13 +1017,13 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		SetDataSubMember("CollectedQuests", key, 1);
 		SetTempDataSubMember("CollectedQuests", key, 1);
 		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-				local searchResults = app.SearchForField("questID", key);
-				if searchResults and #searchResults > 0 then
+			local searchResults = app.SearchForField("questID", key);
+			if searchResults and #searchResults > 0 then
+				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 					return true;
-				else
-					key = key .. " (Missing in ATT)";
 				end
+			else
+				key = key .. " (Missing in ATT)";
 			end
 			print("Completed Quest ID #" .. key);
 		end
