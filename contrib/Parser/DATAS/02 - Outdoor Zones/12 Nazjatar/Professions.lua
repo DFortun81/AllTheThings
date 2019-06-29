@@ -25,14 +25,14 @@ _.Zones =
 					["itemID"] = 169596,	-- Zin'anthid Tentacle
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						recipe(299487),	-- Herbalism Technique: Zin'anthid (Rank 3)
+						recipe(298144),	-- Herbalism Technique: Zin'anthid (Rank 3)
 					},
 				}),
 				q(56098, {	-- Defensive in Death
 					["itemID"] = 168919,	-- Zin'anthid Tentacle
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						recipe(299487),	-- Herbalism Technique: Zin'anthid (Rank 3)
+						recipe(298144),	-- Herbalism Technique: Zin'anthid (Rank 3)
 					},
 				}),
 			}),
