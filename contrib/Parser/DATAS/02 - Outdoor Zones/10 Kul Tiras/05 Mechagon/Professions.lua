@@ -37,8 +37,8 @@ _.Zones =
 					i(167656, {	 -- Pond Hopping Springfish 
 						["questID"] = 55306,
 						["isDaily"] = true,
-						["description"] = "Can be caught at the Pond near the Waterfall - 65.32",
-						["coord"] = { 65.0, 32.0, 1462 },
+						["description"] = "Can be caught at the Pond near the Waterfall - 56.32",
+						["coord"] = { 56.0, 32.0, 1462 },
 					}),	
 					i(167657, {	 -- Shadowy Cave Eel 
 						["questID"] = 55307,
@@ -49,14 +49,14 @@ _.Zones =
 					i(167660, {	 -- Sludge-fouled Carp
 						["questID"] = 55310,
 						["isDaily"] = true,
-						["description"] = "Can be caught in the Oil Pond in the Middle - 65.51",
-						["coord"] = { 65.0, 51.0, 1462 },
+						["description"] = "Can be caught in the Oil Pond in the Middle - 66.52",
+						["coord"] = { 66.0, 52.0, 1462 },
 					}),	
 					i(167659, {	 -- Spitting Clownfish
 						["questID"] = 55309,
 						["isDaily"] = true,
-						["description"] = "Can be caught South South East - 83.72",
-						["coord"] = { 83.0, 72.0, 1462 },
+						["description"] = "Can be caught South South East - 83.74",
+						["coord"] = { 83.0, 74.0, 1462 },
 					}),	
 					i(167658, {	 -- Mechanical Blowfish
 						["questID"] = 55308,
