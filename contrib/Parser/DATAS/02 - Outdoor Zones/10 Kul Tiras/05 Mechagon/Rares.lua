@@ -12,10 +12,9 @@ _.Zones =
 					["coord"] = { 52.6, 41.0, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Arachnoid Harvester)
-							["achievementID"] = 13470,
-							["criteriaID"] = 7,
-						},
+						crit(7, {	-- Arachnoid Harvester
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168908, {	-- Blueprint: Experimental Adventurer Augment
 							["questID"] = 56087,
 						}),
@@ -31,12 +30,19 @@ _.Zones =
 						{ 53.2, 49.7, 1462 },
 					},
 					["g"] = {
-						{	-- Rest in Pistons (Vaultbot)
-							["achievementID"] = 13470,
-							["criteriaID"] = 30,
-						},
+						crit(30, {	-- Vaultbot
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(167843, {	-- Blueprint: Vaultbot Key
 							["questID"] = 55058,
+						}),
+						i(167796, {	-- Paint Vial: Mechagon Gold
+							["questID"] = 55455,	-- Paint Vial: Mechagon Gold
+							["g"] = {
+								crit(3, {	-- Mechagon Gold
+									["achievementID"] = 13513,	-- Available in Eight Colors
+								}),
+							},
 						}),
 					},
 				}),
@@ -46,20 +52,18 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Activate the |cFFFFD700Drill Rig|r.",
 					["g"] = {
-						{	-- Rest in Pistons (Boilburn)
-							["achievementID"] = 13470,
-							["criteriaID"] = 25,
-						},
+						crit(25, {	-- Boilburn
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 					},
 				}),
 				n(151308, {	-- Boggac Skullbash
 					["questID"] = 55539,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Boggac Skullbash)
-							["achievementID"] = 13470,
-							["criteriaID"] = 14,
-						},
+						crit(14, {	-- Boggac Skullbash
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 					},
 				}),
 				n(152001, {	-- Bonepicker
@@ -69,10 +73,9 @@ _.Zones =
 					["coord"] = { 65.8, 22.9, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest In Pistons (Bonepicker)
-							["achievementID"] = 13470,
-							["criteriaID"] = 13,
-						},
+						crit(13, {	-- Bonepicker
+							["achievementID"] = 13470,	-- Rest In Pistons
+						}),
 						i(169392),	-- Bonebiter
 					},
 				}),
@@ -80,10 +83,9 @@ _.Zones =
 					["questID"] = 56368,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Caustic Mechaslime)
-							["achievementID"] = 13470,
-							["criteriaID"] = 34,
-						},
+						crit(34, {	-- Caustic Mechaslime
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 					},
 				}),
 				n(152569, {	-- Crazed Trogg
@@ -117,20 +119,18 @@ _.Zones =
 				n(155060, {	-- Doppel Ganger
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (The Doppel Gang)
-							["achievementID"] = 13470,
-							["criteriaID"] = 35,
-						},
+						crit(35, {	-- The Doppel Gang
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 					},
 				}),
 				n(150342, {	-- Earthbreaker Gulroc
 					["questID"] = 55814,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Earthbreaker Gulroc)
-							["achievementID"] = 13470,
-							["criteriaID"] = 21,
-						},
+						crit(21, {	-- Earthbreaker Gulroc
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(167042),	-- Blueprint: Scrap Trap
 					},
 				}),
@@ -140,10 +140,9 @@ _.Zones =
 					["hordeQuestID"] = 56207,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Enforcer KX-T57)
-							["achievementID"] = 13470,
-							["criteriaID"] = 31,
-						},
+						crit(31, {	-- Enforcer KX-T57
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(167174),	-- Blueprint: Rustbolt Pocket Turret
 						i(170467),	-- Whirring Chainblade
 						i(170466),	-- Junkyard Motivator  -- Needs more confirmation, recieved in the area this mob spawns.
@@ -156,10 +155,9 @@ _.Zones =
 					["coord"] = { 65.7, 51.7, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Foul Manifestation)
-							["achievementID"] = 13470,
-							["criteriaID"] = 10,
-						},
+						crit(10, {	-- Foul Manifestation
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(167871, {	-- Blueprint: G99.99 Landshark
 							["questID"] = 55063,
 						}),
@@ -170,10 +168,9 @@ _.Zones =
 					["questID"] = 55367,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Fungarian Furor)
-							["achievementID"] = 13470,
-							["criteriaID"] = 9,
-						},
+						crit(9, {	-- Fungarian Furor
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(169379),	-- Snowsoft Nibbler
 						i(167793),	-- Paint Vial: Overload Orange
 					},
@@ -182,10 +179,9 @@ _.Zones =
 					["questID"] = 55852,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Gear Checker Cogstar)
-							["achievementID"] = 13470,
-							["criteriaID"] = 28,
-						},
+						crit(28, {	-- Gear Checker Cogstar
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(167847),	-- Blueprint: Ultrasafe Transporter: Mechagon
 					},
 				}),
@@ -193,20 +189,18 @@ _.Zones =
 					["questID"] = 55855,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Gemicide)
-							["achievementID"] = 13470,
-							["criteriaID"] = 23,
-						},
+						crit(23, {	-- Gemicide
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 					},
 				}),
 				n(154701, {	-- Gorged Gear-Cruncher
 					["questID"] = 56367,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Gorged Gear-Cruncher)
-							["achievementID"] = 13470,
-							["criteriaID"] = 33,
-						},
+						crit(33, {	-- Gorged Gear-Cruncher
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(167846),	-- Blueprint: Mechano-Treat
 					},
 				}),
@@ -233,10 +227,9 @@ _.Zones =
 					["coord"] = { 42.6, 48.7, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Killsaw)
-							["achievementID"] = 13470,
-							["criteriaID"] = 8,
-						},
+						crit(8, {	-- Killsaw
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(167931),	-- Mechagonian Sawblades
 					},
 				}),
@@ -258,10 +251,9 @@ _.Zones =
 					["questID"] = 55207,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest In Pistons (Mechagonian Nullifier)
-							["achievementID"] = 13470,
-							["criteriaID"] = 1,
-						},
+						crit(1, {	-- Mechagonian Nullifier
+							["achievementID"] = 13470,	-- Rest In Pistons
+						}),
 						i(168490),	-- Blueprint: Protocal Transference Device
 						i(169688),	-- Vinyl: Gnomeragan Forever
 					},
@@ -273,10 +265,9 @@ _.Zones =
 					["coord"] = { 88.3, 20.6, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Mecharantuala)
-							["achievementID"] = 13470,
-							["criteriaID"] = 3,
-						},
+						crit(3, {	-- Mecharantuala
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(169393),	-- Arachnoid Skitterbot
 					},
 				}),
@@ -287,10 +278,9 @@ _.Zones =
 					["coord"] = { 61.0, 61.4, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Mr. Fixthis)
-							["achievementID"] = 13470,
-							["criteriaID"] = 29,
-						},
+						crit(29, {	-- Mr. Fixthis
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168248, {	-- Blueprint: BAWLD-371
 							["questID"] = 55068,
 						}),
@@ -305,20 +295,18 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Must activate the |cFFFFD700Drill Rig|r.",
 					["g"] = {
-						{	-- Rest In Pistons (Ol' Big Tusk)
-							["achievementID"] = 13470,
-							["criteriaID"] = 22,
-						},
+						crit(22, {	-- Ol' Big Tusk
+							["achievementID"] = 13470,	-- Rest In Pistons
+						}),
 						i(169691),	-- Vinyl: Depths of Ulduar
 					},
 				}),
 				n(151296, {	-- OOX-Avenger/MG
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (OOX-Avenger/MG)
-							["achievementID"] = 13470,
-							["criteriaID"] = 12,
-						},
+						crit(12, {	-- OOX-Avenger/MG
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168492),	-- Blueprint: Emergency Rocket Chicken
 					},
 				}),
@@ -326,10 +314,9 @@ _.Zones =
 					["questID"] = 55856,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Oxidized Leachbeast)
-							["achievementID"] = 13470,
-							["criteriaID"] = 24,
-						},
+						crit(24, {	-- Oxidized Leachbeast
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(170273),	-- Oxidizied Refuse Remover
 						i(167794),	-- Paint Vial: Lemonade Steel
 					},
@@ -341,10 +328,9 @@ _.Zones =
 					["coord"] = { 23.0, 68.4, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Paol Pondwader)
-							["achievementID"] = 13470,
-							["criteriaID"] = 5,
-						},
+						crit(5, {	-- Paol Pondwader
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(170468),	-- Supervolt Zapper
 					},
 				}),
@@ -355,10 +341,9 @@ _.Zones =
 					["coord"] = { 39.9, 53.2, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Rumblerocks)
-							["achievementID"] = 13470,
-							["criteriaID"] = 6,
-						},
+						crit(6, {	-- Rumblerocks
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168001),	-- Paint Vial: Big-ol Bronze
 					},
 				}),
@@ -369,10 +354,9 @@ _.Zones =
 					["coord"] = { 65.6, 78.3, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Rustfeather)
-							["achievementID"] = 13470,
-							["criteriaID"] = 18,
-						},
+						crit(18, {	-- Rustfeather
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168370),	-- Rusted Keys to the Junkheap Drifter
 					},
 				}),
@@ -383,10 +367,9 @@ _.Zones =
 					["coord"] = { 82.3, 77.8, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Scrapclaw)
-							["achievementID"] = 13470,
-							["criteriaID"] = 36,
-						},
+						crit(36, {	-- Scrapclaw
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168490),	-- Blueprint: Protocol Transference Device
 					},
 				}),
@@ -397,10 +380,9 @@ _.Zones =
 					["coord"] = { 19.3, 80.4, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Seaspit)
-							["achievementID"] = 13470,
-							["criteriaID"] = 16,
-						},
+						crit(16, {	-- Seaspit
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168063, {	-- Blueprint: Rustbolt Kegerator
 							["questID"] = 55535,
 						}),
@@ -409,10 +391,9 @@ _.Zones =
 				n(153000, {	-- Sparkqueen P'Emp
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Sparkqueen P'Emp)
-							["achievementID"] = 13470,
-							["criteriaID"] = 17,
-						},
+						crit(17, {	-- Sparkqueen P'Emp
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 					},
 				}),
 				n(153226, {	-- Steel Singer Freza
@@ -422,10 +403,9 @@ _.Zones =
 					["coord"] = { 25.1, 77.4, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (Steel Singer Freza)
-							["achievementID"] = 13470,
-							["criteriaID"] = 27,
-						},
+						crit(27, {	-- Steel Singer Freza
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168062, {	-- Blueprint: Rustbolt Gramophone
 							["questID"] = 55064,
 						}),
@@ -438,10 +418,9 @@ _.Zones =
 					["questID"] = 55858,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (The Kleptoboss)
-							["achievementID"] = 13470,
-							["criteriaID"] = 26,
-						},
+						crit(26, {	-- The Kleptoboss
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(169886),	-- Spraybot 0D
 					},
 				}),
@@ -449,10 +428,9 @@ _.Zones =
 					["questID"] = 56182,
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest in Pistons (The Rusty Prince)
-							["achievementID"] = 13470,
-							["criteriaID"] = 32,
-						},
+						crit(32, {	-- The Rusty Prince
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 					},
 				}),
 				n(151625, {	-- The Scrap King
@@ -465,10 +443,9 @@ _.Zones =
 						151623,	-- The Scrap King (while mounted on goretusk)
 					},
 					["g"] = {
-						{	-- Rest in Pistons (The Scrap King)
-							["achievementID"] = 13470,
-							["criteriaID"] = 2,
-						},
+						crit(2, {	-- The Scrap King
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 					},
 				}),
 				n(151940, {	-- Uncle T'Rogg
@@ -476,10 +453,9 @@ _.Zones =
 					["coord"] = { 57.3, 20.7, 1462 },
 					["isDaily"] = true,
 					["g"] = {
-						{	-- Rest In Pistons (Uncle T'Rogg)
-							["achievementID"] = 13470,
-							["criteriaID"] = 15,
-						},
+						crit(15, {	-- Uncle T'Rogg
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
 						i(168749),	-- Performant Effective Logic Board
 					},
 				}),

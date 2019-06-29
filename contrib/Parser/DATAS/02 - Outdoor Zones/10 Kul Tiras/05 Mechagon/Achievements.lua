@@ -6,6 +6,16 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
 			n(-4, {	-- Achievements
+				ach(13513, {	-- Available in Eight Colors
+				-- the only one sourced is crit 3, Mechagon Gold.  are the other random drops or do they come from specific mobs?
+					crit(1),	-- Big-ol Bronze
+					crit(2),	-- Fel Mint Green
+					crit(3),	-- Mechagon Gold
+					crit(4),	-- Copper Trim
+					crit(5),	-- Lemonade Steel
+					crit(6),	-- Fireball Red
+					crit(7),	-- Overload Orange
+				}),
 				ach(13473, {	-- Diversed Investments
 					crit(1),	-- Flame Turret
 					crit(2),	-- Drill Rig

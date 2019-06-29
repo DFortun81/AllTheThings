@@ -366,24 +366,25 @@ _.Zones =
 					151614,	-- Nevin Tideheart (Horde)
 				},
 				["coords"] = {
-					{ 50.4, 66.2, 1355 },	-- (horde)
+					{ 50.4, 66.2, 1355 },	-- (Horde)
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(55833, {	-- Bounty: More Snapdragons
 				["isDaily"] = true,
 				["qgs"] = {
-					155940,	-- Enizo (alliance)
-					151618,	-- Asme Seapearl (horde)
+					155940,	-- Enizo (Alliance)
+					151618,	-- Asme Seapearl (Horde)
 				},
 				["coords"] = {
-					{ 37.7, 55.4, 1355 },	-- alliance
-					{ 50.9, 65.3, 1355 },	-- horde
+					{ 37.7, 55.4, 1355 },	-- Alliance
+					{ 50.9, 65.3, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			o(326140, {	-- Bounty Board
@@ -808,9 +809,7 @@ _.Zones =
 				["description"] = "Drops from any rare in Nazjatar",
 				["g"] = {
 					q(55426, {	-- What Will It Grow?
-						["g"] = {
-							currency(1721),	-- Prismatic Manapearl
-						},
+						currency(1721),	-- Prismatic Manapearl
 					}),
 				},
 			}),
@@ -1038,25 +1037,37 @@ _.Zones =
 			q(55723, {	-- Requisition: A Few Carp
 				["isDaily"] = true,
 				["qgs"] = {
-					151352,	-- Lily Bopip (horde)
+					151352,	-- Lily Bopip (Horde)
 				},
 				["coords"] = {
-					{ 47.3, 61.9, 1355 },	-- (horde)
+					{ 47.3, 61.9, 1355 },	-- (Horde)
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					55500,	-- Save A Friend (Horde)
+				},
+			}),
+			q(55726, {	-- Requisition: A Few Cone Shells
+				["isDaily"] = true,
+				["qgs"] = {
+					154436,	-- Craftsman Azama (Alliance)
+				},
+				["coords"] = {
+					{ 38.0, 53.3, 1355 },	-- Alliance
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
 				},
 			}),
 			q(55724, {	-- Requisition: A Few Deepcoral Buds
 				["isDaily"] = true,
 				["qgs"] = {
-					153772,	-- Lina Bluegill (horde)
+					153772,	-- Lina Bluegill (Horde)
 				},
 				["coords"] = {
-					{ 47.4, 63.2, 1355 },	-- horde
+					{ 47.4, 63.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(55727, {	-- Requisition: A Few Flotsam
@@ -1135,12 +1146,12 @@ _.Zones =
 			q(55801, {	-- Requisition: We Need It All
 				["isDaily"] = true,
 				["qgs"] = {
-					151618,	-- Asme Seapearl
-					155940,	-- Enizo
+					151618,	-- Asme Seapearl (Horde)
+					155940,	-- Enizo (Alliance)
 				},
 				["coords"] = {
-					{ 37.7, 55.4, 1355 },	-- alliance
-					{ 50.9, 65.7, 1355 },	-- horde
+					{ 37.7, 55.4, 1355 },	-- Alliance
+					{ 50.9, 65.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)
@@ -1151,7 +1162,7 @@ _.Zones =
 				["qg"] = 156187,	-- Disgruntled Laborer
 				["coord"] = { 48.4, 60.6, 1355 },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 55500,	-- Save A Friend,
+				["sourceQuest"] = 55500,	-- Save A Friend
 				["isBreadcrumb"] = true,
 			}),
 			--[[ PTR build 30613 reworked all the dailies so they aren't in a single object anymore.
@@ -1187,10 +1198,6 @@ _.Zones =
 					},
 					{	-- Bounty: More Makrura
 						["questID"] = 55831,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: A Few Cone Shells
-						["questID"] = 55726,
 						["isDaily"] = true,
 					},
 					{	-- Requisition: A Few Kelp Buds
