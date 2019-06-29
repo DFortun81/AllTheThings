@@ -5189,53 +5189,66 @@ app.CreateMusicRoll = function(questID, t)
 end
 
 -- NPC Lib
+(function()
+local npcFields = {
+	["key"] = function(t) return "npcID"; end,
+	["achievementID"] = function(t)
+		local achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
+		if achievementID then
+			rawset(t, "achievementID", achievementID);
+			return achievementID;
+		end
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleQuests and rawget(t, "questID") and not rawget(t, "isBreadcrumb") and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
+	end,
+	["collected"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t);
+	end,
+	["creatureID"] = function(t) return t.npcID; end,
+	["icon"] = function(t)
+		return L["NPC_ID_ICONS"][t.npcID] 
+			or (t.achievementID and select(10, GetAchievementInfo(t.achievementID))) 
+			or (t.parent and t.parent.npcID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
+			or "Interface\\Worldmap\\Skull_64Green";
+	end,
+	["link"] = function(t)
+		_cache = rawget(t, "achievementID");
+		return _cache and GetAchievementLink(_cache);
+	end,
+	["name"] = function(t)
+		_cache = rawget(t, "npcID");
+		return (_cache > 0 and NPCNameFromID or L["NPC_ID_NAMES"])[_cache];
+	end,
+	["repeatable"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+	end,
+	["text"] = function(t)
+		_cache = t.name;
+		if rawget(t, "isRaid") and _cache then
+			return "|cffff8000" .. _cache .. "|r";
+		end
+		return _cache;
+	end,
+	["title"] = function(t)
+		_cache = rawget(t, "npcID");
+		if _cache > 0 then return NPCTitlesFromID[_cache]; end
+	end,
+	["trackable"] = function(t)
+		return rawget(t, "questID");
+	end,
+};
+npcFields.saved = npcFields.collected;
 app.BaseNPC = {
 	__index = function(t, key)
-		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-			if achievementID then
-				rawset(t, "achievementID", achievementID);
-				return achievementID;
-			end
-		elseif key == "key" then
-			return "npcID";
-		elseif key == "text" then
-			if t["isRaid"] and t.name then return "|cffff8000" .. t.name .. "|r"; end
-			return t.name;
-		elseif key == "name" then
-			if t.npcID > 0 then
-				return t.npcID > 0 and NPCNameFromID[t.npcID];
-			else
-				return L["NPC_ID_NAMES"][t.npcID];
-			end
-		elseif key == "title" then
-			if t.npcID > 0 then return NPCTitlesFromID[t.npcID]; end
-		elseif key == "link" then
-			return (t.achievementID and GetAchievementLink(t.achievementID));
-		elseif key == "icon" then
-			return L["NPC_ID_ICONS"][t.npcID] 
-				or (t.achievementID and select(10, GetAchievementInfo(t.achievementID))) 
-				or (t.parent and t.parent.npcID == -2 and "Interface\\Icons\\Achievement_Character_Human_Male")
-				or "Interface\\Icons\\INV_Misc_Head_Human_01";
-		elseif key == "creatureID" then
-			return t.npcID;
-		elseif key == "trackable" then
-			return t.questID;
-		elseif key == "collectible" then
-			return app.CollectibleQuests and t.questID and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
-		elseif key == "saved" or key == "collected" then
-			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly or t.isYearly;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
+		_cache = rawget(npcFields, key);
+		return _cache and _cache(t);
 	end
 };
 app.CreateNPC = function(id, t)
 	return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
 end
+end)();
 
 -- Object Lib (as in "World Object")
 app.BaseObject = {
