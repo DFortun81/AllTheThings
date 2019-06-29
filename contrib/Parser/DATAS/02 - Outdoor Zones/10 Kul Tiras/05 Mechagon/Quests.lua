@@ -370,6 +370,16 @@ _.Zones =
 						}),
 					},
 				}),
+				q(55575, {	-- One Gnome's Trash
+					["qg"] = 152499,	-- Moxie Lockspinner
+					["coord"] = { 73.7, 34.3, 1462 },
+					["isDaily"] = true,
+				}),
+				q(56173, {	-- Other Interests
+					["qg"] = 152575,	-- Steelsage Gao
+					["coord"] = { 73.6, 34.3, 1462 },
+					["isDaily"] = true,
+				}),
 				q(55451, {	-- Paint Vial: Fireball Red
 					["itemID"] = 167790,
 					["g"] = {

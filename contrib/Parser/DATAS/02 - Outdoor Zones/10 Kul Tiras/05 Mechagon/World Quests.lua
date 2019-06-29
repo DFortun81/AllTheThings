@@ -6,6 +6,10 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
 			n(-34,  {	-- World Quests
+				q(56396, {	-- Creakclank
+					["collectible"] = false,
+					["lvl"] = 120,
+				}),	
 				q(56395, {	-- Goldenbot XD
 					["collectible"] = false,
 					["lvl"] = 120,
