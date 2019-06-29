@@ -195,13 +195,31 @@ _.NeverImplemented =
 		q(55427),	-- Ravenous Slime fed (55.1, 48.8)
 		q(55428),	-- Ravenous Slime fed (71.7, 25.7)
 		q(55429),	-- Ravenous Slime fed (45.7, 24.1)
+		q(55472),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (45.7, 24.1)
+		q(55477),	-- Slimy Cocoon opened (45.7, 24.1)
 		q(55430),	-- Ravenous Slime fed (32.9, 39.8)
+		q(55473),	-- Ravenous Slime fed 5x to spawn the Sly Cocoon (32.9, 39.8)
+		q(55478),	-- Slimy Cocoon opened (32.9, 39.8)
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
 		q(56614),	-- Blightlight first kill
+		q(56887),	-- Carnivorous Lasher first kill
+		q(56600),	-- Caverndark Terror first kill
+		q(56612),	-- Daggertooth Terror first kill
+		q(56598),	-- Elderspawn Nalaada first kill
+		q(56610),	-- Garnetscale first kill
+		q(56597),	-- Iridescent Glimmershell first kill
+		q(56609),	-- Mirecrawler first kill
+		q(56608),	-- Needlespine first kill
+		q(56594),	-- Prince Typhonus first kill
+		q(56593),	-- Prince Vortran first kill
 		q(56606),	-- Sandclaw Stonoeshell first kill
 		q(56590),	-- Scale Matriarch Vynara first kill
+		q(56589),	-- Scale Matriarch Zodia first kill
+		q(56588),	-- Shassera first kill
 		q(56587),	-- Shiz'narasz the Consumer first kill
-		
+		q(56586),	-- Silstalker the Packmother first kill
+		q(56620),	-- Tidemistress Leth'sindra first kill
+		q(56605),	-- Toxigore the Alpha first kill
 		-- Mechagon
 		q(55547),	-- Mechanized Chest. Chests spawn randomly
 		q(55548),	-- Mechanized Chest. Chests spawn randomly
