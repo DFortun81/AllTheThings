@@ -3427,30 +3427,6 @@ app.BaseAchievementCriteria = {
 app.CreateAchievementCriteria = function(id, t)
 	return setmetatable(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
 end
-
-(function()
-local transmogSlotIcons = { "axe_17", "axe_09", "weapon_bow_05", "weapon_rifle_01", "mace_02", "hammer_16", "spear_04", "sword_04", "sword_07", "weapon_glave_01", "staff_27", nil, nil, "misc_monsterclaw_02", nil, "weapon_shortblade_01", nil, nil, "weapon_crossbow_01","wand_02", "shield_06", "helmet_03", "shoulder_05", "misc_cape_11", "chest_chain", "shirt_grey_01", "misc_tournaments_tabard_gnome", "bracer_07", "gauntlets_24", "belt_24", "pants_09", "boots_09", "misc_orb_01" }
-local transmogArmorSlots = { INVTYPE_HEAD, INVTYPE_NECK, INVTYPE_SHOULDER, INVTYPE_CLOAK, INVTYPE_CHEST, INVTYPE_BODY, INVTYPE_TABARD, INVTYPE_WRIST, INVTYPE_HAND, INVTYPE_WAIST, INVTYPE_LEGS, INVTYPE_FEET, INVTYPE_RING, INVTYPE_TRINKET, INVTYPE_HOLDABLE };
-app.BaseTransmogCategory = {
-  __index = function(t, key)
-    if key == "text" then
-      if t.itemSubClass < 20 then
-        return GetItemSubClassInfo(2, t.itemSubClass);
-      elseif t.itemSubClass == 21 then return GetItemSubClassInfo(4,6);
-      elseif t.itemSubClass <21 then
-        return transmogArmorSlots[t.itemSubClass - 20]
-      end
-    elseif key == "icon" then
-        return "Interface\\Icons\\inv_"..transmogSlotIcons[t.itemSubClass];
-    else
-      return table[key];
-    end
-  end
-};
-end)();
-app.CreateTransmogCategory = function(id, t)
-  return setmetatable(constructor(id, t, "category"), app.BaseTransmogCategory);
-end
     
 -- Artifact Lib
 (function()
@@ -4277,6 +4253,147 @@ app.CreateGarrisonTalent = function(id, t)
 	return setmetatable(constructor(id, t, "talentID"), app.BaseGarrisonTalent);
 end
 
+-- Gear Set Lib
+app.BaseGearSet = {
+	__index = function(t, key)
+		if key == "key" then
+			return "setID";
+		elseif key == "info" then
+			return C_TransmogSets_GetSetInfo(t.setID);
+		elseif key == "text" then
+			local info = t.info;
+			if info then return info.name; end
+		elseif key == "description" then
+			local info = t.info;
+			if info then
+				if info.description then
+					if info.label then return info.label .. " (" .. info.description .. ")"; end
+					return info.description;
+				end
+				return info.label;
+			end
+		elseif key == "title" then
+			local info = t.info;
+			if info then return info.requiredFaction; end
+		elseif key == "icon" then
+			if t.sources then
+				for sourceID, value in pairs(t.sources) do
+					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+					if sourceInfo and sourceInfo.invType == 2 then
+						local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
+						if icon then rawset(t, "icon", icon); end
+						return icon;
+					end
+				end
+			end
+			return QUESTION_MARK_ICON;
+		elseif key == "sources" then
+			local sources = C_TransmogSets.GetSetSources(t.setID);
+			if sources then
+				rawset(t, "sources", sources);
+				return sources;
+			end
+		elseif key == "header" then
+			local info = t.info;
+			if info then return info.label; end
+		elseif key == "subheader" then
+			local info = t.info;
+			if info then return info.description; end
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateGearSet = function(id, t)
+	return setmetatable(constructor(id, t, "setID"), app.BaseGearSet);
+end
+app.BaseGearSource = {
+	__index = function(t, key)
+		if key == "collectible" then
+			return true;
+		elseif key == "info" then
+			return C_TransmogCollection_GetSourceInfo(t.s);
+		elseif key == "itemID" then
+			local info = t.info;
+			if info then
+				rawset(t, "itemID", info.itemID);
+				return info.itemID;
+			end
+		elseif key == "text" then
+			return select(2, GetItemInfo(t.itemID));
+		elseif key == "link" then
+			return select(2, GetItemInfo(t.itemID));
+		elseif key == "invType" then
+			local info = t.info;
+			if info then return info.invType; end
+			return 99;
+		elseif key == "icon" then
+			return select(5, GetItemInfoInstant(t.itemID));
+		elseif key == "specs" then
+			return GetItemSpecInfo(t.itemID);
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateGearSource = function(id)
+	return setmetatable({ s = id}, app.BaseGearSource);
+end
+app.BaseGearSetHeader = {
+	__index = function(t, key)
+		if key == "achievementID" then
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+			if achievementID then
+				rawset(t, "achievementID", achievementID);
+				return achievementID;
+			end
+		elseif key == "key" then
+			return "setHeaderID";
+		elseif key == "text" then
+			local info = C_TransmogSets_GetSetInfo(t.setHeaderID);
+			if info then return info.label; end
+		elseif key == "link" then
+			return t.achievementID and GetAchievementLink(t.achievementID);
+		elseif key == "icon" then
+			return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateGearSetHeader = function(id, t)
+	return setmetatable(constructor(id, t, "setHeaderID"), app.BaseGearSetHeader);
+end
+app.BaseGearSetSubHeader = {
+	__index = function(t, key)
+		if key == "achievementID" then
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+			if achievementID then
+				rawset(t, "achievementID", achievementID);
+				return achievementID;
+			end
+		elseif key == "key" then
+			return "setSubHeaderID";
+		elseif key == "text" then
+			local info = C_TransmogSets_GetSetInfo(t.setSubHeaderID);
+			if info then return info.description; end
+		elseif key == "link" then
+			return t.achievementID and GetAchievementLink(t.achievementID);
+		elseif key == "icon" then
+			return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateGearSetSubHeader = function(id, t)
+	return setmetatable(constructor(id, t, "setSubHeaderID"), app.BaseGearSetSubHeader);
+end
+
 -- Heirloom Lib
 (function()
 local isWeapon = { 20, 29, 28,  21, 22, 23, 24, 25, 26,  50, 57, 34, 35, 27,  33, 32, 31 };
@@ -4621,147 +4738,6 @@ app.BaseIllusion = {
 };
 app.CreateIllusion = function(id, t)
 	return setmetatable(constructor(id, t, "illusionID"), app.BaseIllusion);
-end
-
--- Gear Set Lib
-app.BaseGearSet = {
-	__index = function(t, key)
-		if key == "key" then
-			return "setID";
-		elseif key == "info" then
-			return C_TransmogSets_GetSetInfo(t.setID);
-		elseif key == "text" then
-			local info = t.info;
-			if info then return info.name; end
-		elseif key == "description" then
-			local info = t.info;
-			if info then
-				if info.description then
-					if info.label then return info.label .. " (" .. info.description .. ")"; end
-					return info.description;
-				end
-				return info.label;
-			end
-		elseif key == "title" then
-			local info = t.info;
-			if info then return info.requiredFaction; end
-		elseif key == "icon" then
-			if t.sources then
-				for sourceID, value in pairs(t.sources) do
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo and sourceInfo.invType == 2 then
-						local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
-						if icon then rawset(t, "icon", icon); end
-						return icon;
-					end
-				end
-			end
-			return QUESTION_MARK_ICON;
-		elseif key == "sources" then
-			local sources = C_TransmogSets.GetSetSources(t.setID);
-			if sources then
-				rawset(t, "sources", sources);
-				return sources;
-			end
-		elseif key == "header" then
-			local info = t.info;
-			if info then return info.label; end
-		elseif key == "subheader" then
-			local info = t.info;
-			if info then return info.description; end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateGearSet = function(id, t)
-	return setmetatable(constructor(id, t, "setID"), app.BaseGearSet);
-end
-app.BaseGearSource = {
-	__index = function(t, key)
-		if key == "collectible" then
-			return true;
-		elseif key == "info" then
-			return C_TransmogCollection_GetSourceInfo(t.s);
-		elseif key == "itemID" then
-			local info = t.info;
-			if info then
-				rawset(t, "itemID", info.itemID);
-				return info.itemID;
-			end
-		elseif key == "text" then
-			return select(2, GetItemInfo(t.itemID));
-		elseif key == "link" then
-			return select(2, GetItemInfo(t.itemID));
-		elseif key == "invType" then
-			local info = t.info;
-			if info then return info.invType; end
-			return 99;
-		elseif key == "icon" then
-			return select(5, GetItemInfoInstant(t.itemID));
-		elseif key == "specs" then
-			return GetItemSpecInfo(t.itemID);
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateGearSource = function(id)
-	return setmetatable({ s = id}, app.BaseGearSource);
-end
-app.BaseGearSetHeader = {
-	__index = function(t, key)
-		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-			if achievementID then
-				rawset(t, "achievementID", achievementID);
-				return achievementID;
-			end
-		elseif key == "key" then
-			return "setHeaderID";
-		elseif key == "text" then
-			local info = C_TransmogSets_GetSetInfo(t.setHeaderID);
-			if info then return info.label; end
-		elseif key == "link" then
-			return t.achievementID and GetAchievementLink(t.achievementID);
-		elseif key == "icon" then
-			return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateGearSetHeader = function(id, t)
-	return setmetatable(constructor(id, t, "setHeaderID"), app.BaseGearSetHeader);
-end
-app.BaseGearSetSubHeader = {
-	__index = function(t, key)
-		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-			if achievementID then
-				rawset(t, "achievementID", achievementID);
-				return achievementID;
-			end
-		elseif key == "key" then
-			return "setSubHeaderID";
-		elseif key == "text" then
-			local info = C_TransmogSets_GetSetInfo(t.setSubHeaderID);
-			if info then return info.description; end
-		elseif key == "link" then
-			return t.achievementID and GetAchievementLink(t.achievementID);
-		elseif key == "icon" then
-			return t.achievementID and select(10, GetAchievementInfo(t.achievementID));
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateGearSetSubHeader = function(id, t)
-	return setmetatable(constructor(id, t, "setSubHeaderID"), app.BaseGearSetSubHeader);
 end
 
 -- Instance Lib

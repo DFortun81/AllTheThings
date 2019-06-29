@@ -28,7 +28,6 @@ namespace ATT
             ObjectData.Create("holidayID",          "ho",           "_.CreateHoliday", "f");
             ObjectData.Create<ItemSourceData>("s",  "s",            "_.CreateItemSource");
             ObjectData.Create("categoryID",         "cat",          "_.CreateCategory", "f");
-            ObjectData.Create("category",           "tcat",         "_.CreateTransmogCategory", "f");
             ObjectData.Create("classID",            "cl",           "_.CreateCharacterClass", "f");
             ObjectData.Create("criteriaID",         "crit",         "_.CreateAchievementCriteria", "f");
             ObjectData.Create("difficultyID",       "d",            "_.CreateDifficulty", "f");
