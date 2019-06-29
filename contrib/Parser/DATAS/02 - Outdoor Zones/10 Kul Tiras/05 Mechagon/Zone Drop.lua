@@ -6,6 +6,7 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
 			n(0, {	-- Zone Drop
+				i(166846),	-- Spare Parts
 				i(159475),	-- Shipwrecker Axe
 				i(159590),	-- Shipwrecker Blade
 				i(159504),	-- Shipwrecker Crescents
