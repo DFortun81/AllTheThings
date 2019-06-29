@@ -1457,7 +1457,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		searchCache[search] = cache;
 		
 		-- Call to the method to search the database.
-		local group = method(paramA, paramB, ...) or {};
+		local group, a, b = method(paramA, paramB, ...);
+		if not group then group = {}; end
+		if a then paramA = a; end
+		if b then paramB = b; end
 		
 		-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 		if paramA == "creatureID" or paramA == "encounterID" then
@@ -1555,6 +1558,24 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			
 			group = regroup;
 		elseif paramA == "titleID" then
+			-- Don't do anything
+			local regroup = {};
+			if app.Settings:Get("AccountMode") then
+				for i,j in ipairs(group) do
+					if app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					end
+				end
+			else
+				for i,j in ipairs(group) do
+					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					end
+				end
+			end
+			
+			group = regroup;
+		elseif paramA == "followerID" then
 			-- Don't do anything
 			local regroup = {};
 			if app.Settings:Get("AccountMode") then
@@ -2330,8 +2351,8 @@ local function SearchForField(field, id)
 	if field and id then
 		local group = app:GetDataCache();
 		_cache = rawget(fieldCache, field);
-		if _cache then return rawget(_cache, id); end
-		return SearchForFieldRecursively(group, field, id);
+		if _cache then return rawget(_cache, id), field, id; end
+		return SearchForFieldRecursively(group, field, id), field, id;
 	end
 end
 app.SearchForField = SearchForField;
@@ -2408,6 +2429,8 @@ local function SearchForLink(link)
 			return SearchForField("speciesID", id);
 		elseif kind == "follower" or kind == "followerid" or kind == "followerID" or kind == "garrfollower" then
 			return SearchForField("followerID", id);
+		elseif kind == "azessence" or kind == "azeriteEssenceID" then
+			return SearchForField("azeriteEssenceID", id);
 		else
 			return SearchForField(string.gsub(kind, "id", "ID"), id);
 		end
