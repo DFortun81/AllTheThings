@@ -4062,13 +4062,16 @@ end)();
 				return t.info.u;
 			elseif key == "mapID" then
 				return t.info.mapID;
-			elseif key == "nmr" then
-				local info = t.info;
-				if info and info.faction and info.faction > 0 then
-					return info.faction ~= app.FactionID;
-				end
 			elseif key == "info" then
-				return app.FlightPathDB[t.flightPathID] or {};
+				local info = app.FlightPathDB[t.flightPathID];
+				if info then
+					if info.faction and info.faction > 0 then
+						t.nmr = info.faction ~= app.FactionID;
+						t.r = info.faction;
+					end
+					return info;
+				end
+				return {};
 			elseif key == "description" then
 				return "Flight paths are cached when you talk to the flight master on each continent.";
 			elseif key == "icon" then
