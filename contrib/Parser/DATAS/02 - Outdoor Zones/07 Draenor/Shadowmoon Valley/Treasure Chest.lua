@@ -42,7 +42,7 @@ _.Zones =
 						i(109739),	-- Star Chart Toy
 					},
 				}),
-				o(232591, {	-- Beloved's Offering 
+				o(232591, {	-- Beloved's Offering
 					["questID"] = 33046,
 					["coord"] = { 36.8, 41.5, 539 },
 					["g"] = {
@@ -143,7 +143,7 @@ _.Zones =
 						i(106400),	-- Coldsnout Boots
 						i(106418),	-- Frostlink Greaves
 						i(106478),	-- Iyun Sandals
-						i(106412),	-- Lunarglow Sandals						
+						i(106412),	-- Lunarglow Sandals
 						i(106466),	-- Tailthrasher Boots
 						i(106484),	-- Tangleheart Greaves
 					},

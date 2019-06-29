@@ -15,7 +15,7 @@ _.Zones =
 						{ 41.4, 32.8, 539 },
 					},
 					["g"] = {
-						i(109060),	-- Rylak-Scale Vest 
+						i(109060),	-- Rylak-Scale Vest
 					},
 				}),
 				n(86212, {	-- Aqualir
@@ -30,14 +30,14 @@ _.Zones =
 					["questID"] = 37410,
 					["coord"] = { 67.2, 84.6, 539 },
 					["g"] = {
-						i(119400), 	-- Rugged Crystal Cudgel 
+						i(119400), 	-- Rugged Crystal Cudgel
 					},
 				}),
-				n(82326, {	-- Ba'ruun 
+				n(82326, {	-- Ba'ruun
 					["questID"] = 35731,
 					["coord"] = { 52.9, 16.7, 539 },
 					["g"] = {
-						i(113540),	-- Ba'ruun's Bountiful Bloom Toy 
+						i(113540),	-- Ba'ruun's Bountiful Bloom Toy
 					},
 				}),
 				n(81406, {	-- Bahameye
@@ -48,14 +48,14 @@ _.Zones =
 					["questID"] = 33383,
 					["coord"] = { 44.8, 77.2, 539 },
 					["g"] = {
-						i(117551),	-- Staff of the One True Bramble King 
+						i(117551),	-- Staff of the One True Bramble King
 					},
 				}),
 				n(77085, {	-- Dark Emanation
 					["questID"] = 33064,
 					["coord"] = { 48.6, 43.6, 539 },
 					["g"] = {
-						i(109075),	-- Abberant's Paw 
+						i(109075),	-- Abberant's Paw
 					},
 				}),
 				n(82268, {	-- Darkmaster Go'vid
@@ -67,14 +67,14 @@ _.Zones =
 						{ 42.2, 83.8, 539 },
 					},
 					["g"] = {
-						i(113548),	-- Darktide Summoner Staff 
+						i(113548),	-- Darktide Summoner Staff
 					},
 				}),
 				n(82411, {	-- Darktalon
 					["questID"] = 35555,
 					["coord"] = { 49.7, 41.8, 539 },
 					["g"] = {
-						i(113541),	-- Darktalon's Drape 
+						i(113541),	-- Darktalon's Drape
 					},
 				}),
 				n(84911, {	-- Demidos <Devourer of Lights>
@@ -101,7 +101,7 @@ _.Zones =
 						o(239901, {	-- Voidtalon Egg
 							["modelScale"] = 2,
 							["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
-							["g"] = {	
+							["g"] = {
 								i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
 							},
 						}),
@@ -118,7 +118,7 @@ _.Zones =
 					["questID"] = 35725,
 					["coord"] = { 61.6, 61.8, 539 },
 					["g"] = {
-						i(113557),	-- Dragonrider's Tinkered Leggings 
+						i(113557),	-- Dragonrider's Tinkered Leggings
 					},
 				}),
 				n(76380, {	-- Gorum
@@ -150,14 +150,14 @@ _.Zones =
 					["questID"] = 33043,
 					["coord"] = { 40.8, 44.6, 539 },
 					["g"] = {
-						i(109078),	-- Killmaw's Canine 
+						i(109078),	-- Killmaw's Canine
 					},
 				}),
 				n(72362, {	-- Ku'targ the Voidseer
 					["questID"] = 33039,
 					["coord"] = { 32.5, 35.1, 539 },
 					["g"] = {
-						i(109061),	-- Ku'targ's Merciless Grips 
+						i(109061),	-- Ku'targ's Merciless Grips
 					},
 				}),
 				n(85121, {	-- Lady Temptessa
@@ -166,7 +166,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 48.0, 77.6, 539 },
 					["g"] = {
-						i(119360),	-- Temptessa's Knee-High Boots 
+						i(119360),	-- Temptessa's Knee-High Boots
 					},
 				}),
 				n(72537, {	-- Leaf-Reader Kurri
@@ -180,7 +180,7 @@ _.Zones =
 					["questID"] = 35906,
 					["coord"] = { 44.8, 20.8, 539 },
 					["g"] = {
-						i(113561),	-- Staff of the Mad Bramble King 
+						i(113561),	-- Staff of the Mad Bramble King
 					},
 				}),
 				n(85451, {	-- Malgosh Shadowkeeper
@@ -188,7 +188,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 29.6, 51.0, 539 },
 					["g"] = {
-						i(119369),	-- Malgosh's Coif 
+						i(119369),	-- Malgosh's Coif
 					},
 				}),
 				n(85001, {	-- Master Sergeant Milgra
@@ -199,14 +199,14 @@ _.Zones =
 						{ 52.0, 79.6, 539 },
 					},
 					["g"] = {
-						i(119368),	-- Milgra's Mighty Mitts 
+						i(119368),	-- Milgra's Mighty Mitts
 					},
 				}),
 				n(82362, {	-- Morva Soultwister
 					["questID"] = 35523,
 					["coord"] = { 38.6, 70.4, 539 },
 					["g"] = {
-						i(113559),	-- Void Prophecy Cudgel 
+						i(113559),	-- Void Prophecy Cudgel
 					},
 				}),
 				n(75071, {	-- Mother Om'ra
@@ -264,7 +264,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 48.2, 80.8, 539 },
 					["g"] = {
-						i(119396),	-- Shadowspeaker's Shard 
+						i(119396),	-- Shadowspeaker's Shard
 					},
 				}),
 				n(82415, {	-- Shinri
@@ -277,7 +277,7 @@ _.Zones =
 						{ 59.8, 58.6, 539 },
 					},
 					["g"] = {
-						i(113543),	-- Spirit of Shinri (TOY!) 
+						i(113543),	-- Spirit of Shinri (TOY!)
 					},
 				}),
 				n(85837, {	-- Slivermaw
@@ -292,7 +292,7 @@ _.Zones =
 					["questID"] = 36880,
 					["coord"] = { 27.6, 43.6, 539 },
 					["g"] = {
-						i(118734),	-- Sneevel's Loincloth 
+						i(118734),	-- Sneevel's Loincloth
 					},
 				}),
 				n(82366, {	-- Swamplighter Hive
@@ -313,14 +313,14 @@ _.Zones =
 					["questID"] = 33643,
 					["coord"] = { 54.6, 70.2, 539 },
 					["g"] = {
-						i(108957),	-- Venomshade Skin Boots 
+						i(108957),	-- Venomshade Skin Boots
 					},
 				}),
 				n(83385, {	-- Voidseer Kalurg
 					["questID"] = 35847,
 					["coord"] = { 32.7, 41.4, 539 },
 					["g"] = {
-						i(109074),	-- Fine Void-Chain Cinch 
+						i(109074),	-- Fine Void-Chain Cinch
 					},
 				}),
 				n(75434, {	-- Windfang Matriarch (Alliance)
@@ -337,7 +337,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),	
+				}),
 				n(75435, {	-- Yggdrel
 					["questID"] = 33389,
 					["coords"] = {

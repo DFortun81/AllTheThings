@@ -12,33 +12,26 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1, {	-- Establishing a Foothold
-							["achievementID"] = 8845,	-- As I Walk Through the Valley of the Shadow of Moon
 							["sourceQuests"] = { 34692 },	-- Delegating on Draenor
 						}),
-						{	-- Criteria 2 — Shadows Awaken
-							["criteriaID"] = 2,	-- Shadows Awaken
+						crit(2, {	-- Shadows Awaken
 							["sourceQuests"] = { 34019 },	-- Shadows Awaken
-						},
-						{	-- Criteria 3 — Dark Side of the Moon
-							["criteriaID"] = 3,	-- Dark Side of the Moon
+						}),
+						crit(3, {	-- Dark Side of the Moon
 							["sourceQuests"] = { 34054, 35093 },	-- Dark Side of the Moon (not sure why there are two different versions)
-						},
-						{	-- Criteria 4 — The Light Prevails
-							["criteriaID"] = 4,	-- The Light Prevails
+						}),
+						crit(4, {	-- The Light Prevails
 							["sourceQuests"] = { 33256 },	-- The Defense of Karabor
-						},
-						{	-- Criteria 5 — Gloomshade Grove
-							["criteriaID"] = 5,	-- Gloomshade Grove
+						}),
+						crit(5, {	-- Gloomshade Grove
 							["sourceQuests"] = { 33271 },	-- Game of Thorns
-						},
-						{	-- Criteria 6 — The Pursuit of Justice
-							["criteriaID"] = 6,	-- The Pursuit of Justice
+						}),
+						crit(6, {	-- The Pursuit of Justice
 							["sourceQuests"] = { 34792 },	-- The Traitor's True Name
-						},
-						{	-- Criteria 7 — Purifying the Gene Pool
-							["criteriaID"] = 7,	-- Purifying the Gene Pool
+						}),
+						crit(7, {	-- Purifying the Gene Pool
 							["sourceQuests"] = { 35015 },	-- Gestating Genesaur
-						},
+						}),
 					},
 				}),
 				ach(9436, {	-- It's the Stones! (Socrethar's Rise)
@@ -70,10 +63,18 @@ _.Zones =
 				ach(9602, {	-- Shoot For the Moon
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- Bonus Objective: Bloodthorn Cave
-						crit(2),	-- Bonus Objective: The Burial Fields
-						crit(3),	-- Bonus Objective: The Hills of Valuun
-						crit(4),	-- Bonus Objective: The Shimmer Moor
+						crit(1, {	-- Bonus Objective: Bloodthorn Cave
+							["sourceQuest"] = 34504,	-- Bloodthorn Cave
+						}),
+						crit(2, {	-- Bonus Objective: The Burial Fields
+							["sourceQuest"] = 34076,	-- The Burial Fields
+						}),
+						crit(3, {	-- Bonus Objective: The Hills of Valuun
+							["sourceQuest"] = 34496,	-- The Hills of Valuun
+						}),
+						crit(4, {	-- Bonus Objective: The Shimmer Moor
+							["sourceQuest"] = 34728,	-- The Shimmer Moor
+						}),
 					},
 				}),
 				ach(9435),	-- Take From Them Everything (Socrethar's Rise)
@@ -82,5 +83,5 @@ _.Zones =
 				ach(9481),	-- You Have Been Rylakinated! (Darktide Roost)
 			}),
 		}),
-	}),			
+	}),
 };

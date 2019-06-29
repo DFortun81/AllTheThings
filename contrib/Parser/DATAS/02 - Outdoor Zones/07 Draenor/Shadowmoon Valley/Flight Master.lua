@@ -27,7 +27,6 @@ _.Zones =
 				fp(1475, {	-- Socrethar's Rise, Shadowmoon Valley
 					["coord"] = { 43.8, 77.4, 539 },
 				}),
-				--fp(1567),	-- Temple of Karabor, Shadowmoon Valley (See 1556 Tranquil Court, cannot locate point that checks this item off)
 				fp(1467, {	-- The Draakorium, Shadowmoon Valley
 					["coord"] = { 57.0, 56.6, 539 },
 				}),
