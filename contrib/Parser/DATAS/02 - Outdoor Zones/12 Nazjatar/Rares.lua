@@ -29,9 +29,14 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170189, {	-- Blind Eye
-						crit(33, {	-- Blind Eye
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),				
+						["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+					--	["questID"] = ,
+						["coord"] = { 38.0, 59.2, 1355 },
+						["g"] = {
+							crit(33, {	-- Blind Eye
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),				
 				},
 			}),
@@ -62,6 +67,11 @@ _.Zones =
 					}),
 					i(169363, {	-- Amethyst Softshell (PET!)
 						crit(11, {	-- Amethyst Softshell
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170172, {	-- Brightspine Shell
+						crit(48, {	-- Brightspine Shell
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
@@ -155,6 +165,11 @@ _.Zones =
 					crit(8, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170167, {	-- Eel Filet
+						crit(51, {	-- Eel Filet
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(155811, {	-- Commander Minzera -- part of the Nazjtar commander spawns
@@ -193,6 +208,21 @@ _.Zones =
 				["g"] = {
 					crit(10, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170176, {	-- Fathom Ray Wing
+						["allianceQuestID"] = 57247,	-- Fathom Ray Wing
+						["hordeQuestID"] = 56972,	-- Fathom Ray Wing
+						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation.",
+						["repeatable"] = true,
+						["coords"] = {
+							{ 39.4, 53.4, 1355 },	-- Alliance
+							{ 49.6, 64.6, 1355 },	-- Horde
+						},
+						["g"] = {
+							crit(46, {	-- Fathom Ray Wing
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),
 				},
 			}),
@@ -234,7 +264,11 @@ _.Zones =
 					crit(13, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-				--	i(170180),	-- Razorshell
+					i(170180, {	-- Razorshell
+						crit(42, {	-- Razorshell
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(155838, {	-- Incantatrix Vazina
@@ -299,6 +333,11 @@ _.Zones =
 				["g"] = {
 					crit(17, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170172, {	-- Brightspine Shell
+						crit(48, {	-- Brightspine Shell
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
 					}),
 					i(169366, {	-- Wriggler (PET!)
 						crit(10, {	-- Wriggler
@@ -385,13 +424,33 @@ _.Zones =
 					{ 60.6, 13.6, 1355 },
 				},
 				["g"] = {
-					i(170200, {	-- Seastorm Totem
-						crit(23, {	-- Seastorm Totem
+					i(170186, {	-- Abyss Pearl
+						crit(36, {	-- Abyss Pearl
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170172, {	-- Brightspine Shell
+						crit(48, {	-- Brightspine Shell
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170177, {	-- Exposed Fish
+						crit(45, {	-- Exposed Fish
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170170, {	-- Fermented Deviate Fish
+						crit(50, {	-- Fermented Deviate Fish
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
 					i(170192, {	-- Mudwrap
 						crit(30, {	-- Mudwrap
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170200, {	-- Seastorm Totem
+						crit(23, {	-- Seastorm Totem
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
@@ -435,6 +494,21 @@ _.Zones =
 					crit(24, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170171, {	-- Giant Crab Leg
+						["allianceQuestID"] = 57248,	-- Giant Crab Leg
+						["hordeQuestID"] = 56973,	-- Giant Crab Leg
+						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation.",
+						["repeatable"] = true,
+						["coords"] = {
+							{ 37.9, 55.6, 1355 },	-- Alliance
+							{ 49.2, 62.0, 1355 },	-- Horde
+						},
+						["g"] = {
+							crit(49, {	-- Giant Crab Leg
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
+					}),
 					i(169350, {	-- Glittering Diamondshell (PET!)
 						crit(2, {	-- Glittering Diamondshell
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -457,6 +531,11 @@ _.Zones =
 					crit(25, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170185, {	-- Intact Naga Skeleton
+						crit(37, {	-- Intact Naga Skeleton
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 					i(169370, {	-- Scalebrood Hydra (PET!)
 						crit(7, {	-- Scalebrood Hydra
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -471,6 +550,11 @@ _.Zones =
 				["g"] = {
 					crit(26, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170185, {	-- Intact Naga Skeleton
+						crit(37, {	-- Intact Naga Skeleton
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
 					}),
 					i(169370, {	-- Scalebrood Hydra (PET!)
 						crit(7, {	-- Scalebrood Hydra
@@ -490,6 +574,11 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(168155),	-- Chum
+					i(170185, {	-- Intact Naga Skeleton
+						crit(37, {	-- Intact Naga Skeleton
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 					i(169370, {	-- Scalebrood Hydra (PET!)
 						crit(7, {	-- Scalebrood Hydra
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -497,10 +586,11 @@ _.Zones =
 					}),
 				},
 			}),
---[[		n(155841, {	-- Shadowbinder Athissa (Naga Commander)
-				["questID"] = 56894,	-- Alliance, not sure if Horde has a separate questID
+			n(155841, {	-- Shadowbinder Athissa (Naga Commander)
+				["description"] = "One of many Naga commanders that spawn over time.",
+				["questID"] = 56894,	-- Alliance, not sure if Horde has a separate questID	-- Theurgist Nitara is verified to share a questID, so they may all share.
 				["coord"] = { 74.0, 32.8, 1355 },
-			}),		--]]
+			}),
 			n(152552, {	-- Shassera
 				["allianceQuestID"] = 56295,
 				["hordeQuestID"] = 56588,
@@ -510,7 +600,7 @@ _.Zones =
 					crit(28, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(170187, {	-- Shadescale
+					i(170187, {	-- Shadescale (TOY!)
 						crit(35, {	-- Shadescale
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),				
@@ -528,6 +618,16 @@ _.Zones =
 					crit(29, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170181, {	-- Tidal Guard
+						crit(41, {	-- Tidal Guard
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170182, {	-- Voltscale Shield
+						crit(40, {	-- Voltscale Shield
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152359, {	-- Siltstalker the Packmother
@@ -540,7 +640,11 @@ _.Zones =
 					crit(30, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-				--	i(170179),	-- Snapdragon Scent Gland
+					i(170179, {	-- Snapdragon Scent Gland
+						crit(43, {	-- Snapdragon Scent Gland
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152290, {	-- Soundless
@@ -554,15 +658,28 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(169163),	-- Silent Glider
-				--	i(170176),	-- Fathom Ray Wing
+					i(170176, {	-- Fathom Ray Wing
+						["allianceQuestID"] = 57247,	-- Fathom Ray Wing
+						["hordeQuestID"] = 56972,	-- Fathom Ray Wing
+						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation.",
+						["repeatable"] = true,
+						["coords"] = {
+							{ 39.4, 53.4, 1355 },	-- Alliance
+							{ 49.6, 64.6, 1355 },	-- Horde
+						},
+						["g"] = {
+							crit(46, {	-- Fathom Ray Wing
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
+					}),
 				},
 			}),
-			--[[
 			n(155836, {	-- Theurgist Nitara 
-				["questID"] = 56890,	-- hordeID. verify if alliance is the same
+				["description"] = "One of many Naga commanders that spawn over time.",
+				["questID"] = 56890,	-- single questID for Alliance and Horde
 				["coord"] = { 49.4, 65.5, 1355 },
 			}),
-			]]--
 			n(153898, {	-- Tidelord Aquatus
 				["isDaily"] = true,
 				["coord"] = { 62.4, 29.6, 1355 },
@@ -626,7 +743,12 @@ _.Zones =
 						crit(44, {	-- Alpha Fin
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),				
-					}),				
+					}),
+					i(170177, {	-- Exposed Fish
+						crit(45, {	-- Exposed Fish
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152568, {	-- Urduu
@@ -654,6 +776,11 @@ _.Zones =
 				["g"] = {
 					i(169376, {	-- Skittering Eel (PET!)
 						crit(5, {	-- Skittering Eel
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170181, {	-- Tidal Guard
+						crit(41, {	-- Tidal Guard
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),

@@ -748,11 +748,6 @@ _.Zones =
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["isBreadcrumb"] = true,
 			}),
-			i(170176, {	-- Fathom Ray Wing
-				["questID"] = 26972,
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
-			}),
 			q(55661, {	-- Fighting Venomous With Venom -- TODO:: verify sourceQuest
 				["qg"] = 153777,	-- Cando Mikfin
 				["coord"] = { 64.5, 48.5, 1355 },
@@ -810,20 +805,6 @@ _.Zones =
 				["g"] = {
 					q(55426, {	-- What Will It Grow?
 						currency(1721),	-- Prismatic Manapearl
-					}),
-				},
-			}),
-			q(56970, {	-- Giant Crab Leg	TO DO: ADD HORDE TURN-IN NPC / COORDS TO DESCRIPTION
-				["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation.",
-				["repeatable"] = true,
-				["coords"] = {
-					{ 37.9, 55.6, 1355 },	-- Alliance
-					{ 49.2, 62.0, 1355 },	-- Horde
-				},
-				["itemID"] = 170171,	-- Giant Crab Leg
-				["g"] = {	-- we should move these to zone drops or something once we have a better idea of exactly what drops them -- the criteria is awarded when you loot the item, not when you turn in the quest
-					crit(49, {	-- Giant Crab Leg
-						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				},
 			}),
@@ -1023,20 +1004,6 @@ _.Zones =
 				["coord"] = { 49.2, 62.0, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56240,	-- Strange Silver Knife
-			}),
-			q(56970, {	-- Reefwalker Bark	TO DO: ADD HORDE TURN-IN NPC / COORDS TO DESCRIPTION
-				["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation.",
-				["repeatable"] = true,
-				["coords"] = {
-					{ 37.9, 55.6, 1355 },	-- Alliance
-					{ 49.2, 62.0, 1355 },	-- Horde
-				},
-				["itemID"] = 170183,	-- Reefwalker Bark
-				["g"] = {	-- we should move these to zone drops or something once we have a better idea of exactly what drops them -- the criteria is awarded when you loot the item, not when you turn in the quest
-					crit(39, {	-- Reefwalker Bark
-						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-					}),
-				},
 			}),
 			q(55363, {	-- Rescue The Farseer
 				["qg"] = 151741,	-- Apprentice Odari
