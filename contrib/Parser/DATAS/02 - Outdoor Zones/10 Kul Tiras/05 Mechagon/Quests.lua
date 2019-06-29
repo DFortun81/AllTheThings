@@ -266,15 +266,6 @@ _.Zones =
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 54083,	-- Grease The Wheels
 				}),
-				i(167661, {	-- Energized Lighting Cod
-					["questID"] = 55311,
-					["repeatable"] = true,
-					["g"] = {
-						crit(8, {	-- Energized Lighting Cod
-							["achievementID"] = 13489,	-- Secret Fish of Mechagon
-						}),
-					},
-				}),
 				q(55213, {	-- Energy Cells for Everyone
 					["qg"] = 150631,	-- Pristy Quickcharge
 					["coord"] = { 70.7, 38.4, 1462 },
@@ -555,14 +546,6 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 55736,	-- Welcome to the Resistance
-				}),
-				q(55312, {	-- Solarsprocket Barbel -- caught around 46.8,28.2
-					["itemID"] = 167662,
-					["g"] = {
-						crit(9, {	-- Secret Fish of Mechagon
-							["achievementID"] = 13489,
-						}),
-					},
 				}),
 				q(56740, {	-- S.P.A.R.E. Crates
 					["qg"] = 152295,	-- Pascal
