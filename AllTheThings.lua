@@ -4109,6 +4109,12 @@ app.BaseFollower = {
 		elseif key == "text" then
 			local info = t.info;
 			return info and info.name;
+		elseif key == "link" then
+			if GetTempDataSubMember("CollectedFollowers", t.followerID) then
+				return C_Garrison.GetFollowerLink(t.followerID);
+			else
+				return C_Garrison.GetFollowerLinkByID(t.followerID);
+			end
 		elseif key == "description" then
 			return "Followers can be collected Account Wide. Unlocking them on one toon will count as collected across all your characters in ATT. \n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
 		elseif key == "info" then
@@ -4117,6 +4123,12 @@ app.BaseFollower = {
 		elseif key == "icon" then
 			local info = t.info;
 			return info and info.portraitIconID;
+		elseif key == "lvl" then
+			local info = t.info;
+			return info and info.level or 90;
+		elseif key == "title" then
+			local info = t.info;
+			return info and info.className;
 		elseif key == "displayID" then
 			local info = t.info;
 			return info and info.displayIDs and #info.displayIDs > 0 and info.displayIDs[1].id;
@@ -5534,12 +5546,20 @@ end
 
 -- Species Lib
 (function()
-local collectedSpecies = {};
+local meta = {
+	__index = function(t, key)
+		if C_PetJournal.GetNumCollectedInfo(key) > 0 then
+			rawset(t, key, 1);
+			return 1;
+		end
+	end
+};
+local collectedSpecies = setmetatable({}, meta);
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
 	--print("NEW_PET_ADDED", petID, speciesID);
-	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not collectedSpecies[speciesID] then
-		collectedSpecies[speciesID] = true;
+	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not rawget(collectedSpecies, speciesID) then
+		rawset(collectedSpecies, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
 		wipe(searchCache);
@@ -5555,12 +5575,11 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	local atLeastOne = false;
 	for speciesID,collected in pairs(collectedSpecies) do
 		if C_PetJournal.GetNumCollectedInfo(speciesID) < 1 then
+			rawset(collectedSpecies, speciesID, nil);
 			atLeastOne = true;
-			break;
 		end
 	end
 	if atLeastOne then
-		wipe(collectedSpecies);
 		app:PlayRemoveSound();
 		app:RefreshData(false, true);
 		wipe(searchCache);
@@ -5575,9 +5594,12 @@ app.BaseSpecies = {
 		elseif key == "collectible" then
 			return app.CollectibleBattlePets;
 		elseif key == "collected" then
-			if collectedSpecies[t.speciesID] or select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
-				collectedSpecies[t.speciesID] = true;
+			if collectedSpecies[t.speciesID] then
 				return 1;
+			end
+			local altSpeciesID = t.altSpeciesID;
+			if altSpeciesID and collectedSpecies[altSpeciesID]then
+				return 2;
 			end
 		elseif key == "text" then
 			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
@@ -7833,7 +7855,7 @@ local function RowOnEnter(self)
 				end
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
-			elseif not reference.encounterID then
+			elseif not (reference.encounterID or reference.followerID) then
 				local link = reference.link;
 				if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
 			end
@@ -7911,6 +7933,7 @@ local function RowOnEnter(self)
 			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId, true) .. ".";
 			GameTooltip:AddLine(msg);
 		end
+		if reference.followerID and app.Settings:GetTooltipSetting("followerID") then GameTooltip:AddDoubleLine(L["FOLLOWER_ID"], tostring(reference.followerID)); end
 		if reference.illusionID and app.Settings:GetTooltipSetting("illusionID") then GameTooltip:AddDoubleLine(L["ILLUSION_ID"], tostring(reference.illusionID)); end
 		if reference.instanceID then
 			if app.Settings:GetTooltipSetting("instanceID") then GameTooltip:AddDoubleLine(L["INSTANCE_ID"], tostring(reference.instanceID)); end

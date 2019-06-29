@@ -72,6 +72,7 @@ AllTheThings.L = {
 	["ENCOUNTER_ID"] = "Encounter ID";
 	["EXPANSION_ID"] = "Expansion ID";
 	["FILTER_ID"] = "Filter ID";
+	["FOLLOWER_ID"] = "Follower ID";
 	["INSTANCE_ID"] = "Instance ID";
 	["ITEM_ID"] = "Item ID";
 	["FACTION_ID"] = "Faction ID";
