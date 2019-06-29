@@ -429,6 +429,9 @@ _.Zones =
 						i(168062, {	-- Blueprint: Rustbolt Gramophone
 							["questID"] = 55064,
 						}),
+						i(169691, {	-- Vinyl: Depths of Ulduar
+							["questID"] = 56518,	-- Vinyl: Depths of Ulduar
+						}),
 					},
 				}),
 				n(152113, {	-- The Kleptoboss

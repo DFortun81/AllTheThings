@@ -237,6 +237,15 @@ _.Zones =
 					["coord"] = { 75.2, 69.8, 862 },
 					["races"] = HORDE_ONLY,	-- QG is tauren. probably horde only? verify this
 				}),
+				i(169691, {	-- Vinyl: Depths of Ulduar
+					["questID"] = 56518,	-- Vinyl: Depths of Ulduar
+					["coord"] = { 70.3, 30.2, 862 },
+					["g"] = {
+						crit(5, {	-- Junkyard Melomaniac
+							["achievementID"] = 13686,
+						}),
+					},
+				}),
 				q(56410, {	-- Discs of Norgannon
 					["qg"] = 154982,	-- Archivist Bitbyte
 					["coord"] = { 72.0, 36.5, 1462 },
