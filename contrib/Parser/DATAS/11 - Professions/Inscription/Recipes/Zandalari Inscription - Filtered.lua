@@ -174,6 +174,14 @@ profession(773, {	-- Inscription
 							["previousRecipeID"] = 284293,
 							["races"] = ALLIANCE_ONLY,
 						},
+						{	-- Contract: Ankoan
+							["recipeID"] = 299665,
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Contract: Unshackled
+							["recipeID"] = 299668,
+							["races"] = HORDE_ONLY,
+						},
 					},
 				},
 				{	-- Cards
