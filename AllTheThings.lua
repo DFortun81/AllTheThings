@@ -4802,195 +4802,207 @@ app.CreateInstance = function(id, t)
 end
 
 -- Item Lib
+(function()
+local itemFields = {
+	["key"] = function(t) return "itemID"; end,
+	["b"] = function(t)
+		return 2;
+	end,
+	["collectible"] = function(t)
+		return (rawget(t, "s") and app.CollectibleTransmog)
+			or (rawget(t, "questID") and app.CollectibleQuests and not rawget(t, "isBreadcrumb") and not t.repeatable)
+			or (rawget(t, "factionID") and app.CollectibleReputations);
+	end,
+	["collected"] = function(t)
+		local cache = rawget(t, "s");
+		if cache and cache ~= 0 and GetDataSubMember("CollectedSources", cache) then
+			return 1;
+		end
+		cache = rawget(t, "factionID");
+		if cache then
+			if t.repeatable then
+				-- This is used by reputation tokens.
+				if app.AccountWideReputations then
+					if GetDataSubMember("CollectedFactions", cache) then
+						return 1;
+					end
+				else
+					if GetTempDataSubMember("CollectedFactions", cache) then
+						return 1;
+					end
+				end
+				
+				if select(1, GetFriendshipReputation(cache)) and not select(9, GetFriendshipReputation(cache)) or select(3, GetFactionInfoByID(cache)) == 8 then
+					SetTempDataSubMember("CollectedFactions", cache, 1);
+					SetDataSubMember("CollectedFactions", cache, 1);
+					return 1;
+				end
+			else
+				-- This is used for the Grand Commendations unlocking Bonus Reputation
+				if GetDataSubMember("CollectedFactionBonusReputation", cache) then return 1; end
+				if select(15, GetFactionInfoByID(cache)) then
+					SetTempDataSubMember("CollectedFactionBonusReputation", cache, 1);
+					SetDataSubMember("CollectedFactionBonusReputation", cache, 1);
+					return 1;
+				end
+			end
+		end
+		return t.saved;
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\INV_Misc_QuestionMark";
+	end,
+	["link"] = function(t)
+		local itemLink = t.itemID;
+		if itemLink then
+			local bonusID = rawget(t, "bonusID");
+			if bonusID then
+				if bonusID > 0 then
+					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+				else
+					itemLink = string.format("item:%d:::::::::::::", itemLink);
+				end
+			else
+				bonusID = rawget(t, "modID");
+				if bonusID then
+					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
+				end
+			end
+			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
+			if link then
+				rawset(t, "retries", nil);
+				rawset(t, "link", link);
+				if icon then rawset(t, "icon", icon); end
+				return link;
+			else
+				if rawget(t, "retries") then
+					rawset(t, "retries", rawget(t, "retries") + 1);
+					if t.retries > app.MaximumItemInfoRetries then
+						local itemName = "Item #" .. t.itemID .. "*";
+						rawset(t, "title", "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.");
+						rawset(t, "text", itemName);
+						rawset(t, "retries", nil);
+						rawset(t, "link", "");
+						rawset(t, "s", nil);
+						return itemName;
+					end
+				else
+					rawset(t, "retries", 1);
+				end
+			end
+		end
+	end,
+	["modID"] = function(t)
+		return 1;
+	end,
+	["name"] = function(t)
+		local link = t.link;
+		return link and GetItemInfo(link);
+	end,
+	["repeatable"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+	end,
+	["trackable"] = function(t)
+		return rawget(t, "questID");
+	end,
+	["saved"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t);
+	end,
+	["specs"] = function(t)
+		return GetItemSpecInfo(t.itemID);
+	end,
+	["tsm"] = function(t)
+		local itemLink = t.itemID;
+		if itemLink then
+			local bonusID = t.bonusID;
+			if bonusID then
+				if bonusID> 0 then
+					return string.format("i:%d:0:1:%d", itemLink, bonusID);
+				else
+					return string.format("i:%d", itemLink);
+				end
+			--elseif t.modID then
+				-- NOTE: At this time, TSM3 does not support modID. (RIP)
+				--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
+			end
+			return string.format("i:%d", itemLink);
+		end
+	end,
+};
+itemFields.text = itemFields.link;
 app.BaseItem = {
 	__index = function(t, key)
-		if key == "key" then
-			return "itemID";
-		elseif key == "collectible" then
-			return (t.s and app.CollectibleTransmog) or (t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests) or (t.factionID and app.CollectibleReputations);
-		elseif key == "collected" then
-			if t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s) then
-				return 1;
-			end
-			if t.factionID then
-				if t.repeatable then
-					-- This is used by reputation tokens.
-					if app.AccountWideReputations then
-						if GetDataSubMember("CollectedFactions", t.factionID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedFactions", t.factionID) then
-							return 1;
-						end
-					end
-					
-					if select(1, GetFriendshipReputation(t.factionID)) and not select(9, GetFriendshipReputation(t.factionID)) or select(3, GetFactionInfoByID(t.factionID)) == 8 then
-						SetTempDataSubMember("CollectedFactions", t.factionID, 1);
-						SetDataSubMember("CollectedFactions", t.factionID, 1);
-						return 1;
-					end
-				else
-					-- This is used for the Grand Commendations unlocking Bonus Reputation
-					if GetDataSubMember("CollectedFactionBonusReputation", t.factionID) then return 1; end
-					if select(15, GetFactionInfoByID(t.factionID)) then
-						SetTempDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
-						SetDataSubMember("CollectedFactionBonusReputation", t.factionID, 1);
-						return 1;
-					end
-				end
-			end
-			return t.saved;
-		elseif key == "text" then
-			return t.link;
-		elseif key == "link" then
-			local itemLink = t.itemID;
-			if itemLink then
-				if t.bonusID then
-					if t.bonusID > 0 then
-						itemLink = string.format("item:%d::::::::::::1:%d", itemLink, t.bonusID);
-					else
-						itemLink = string.format("item:%d:::::::::::::", itemLink);
-					end
-				elseif t.modID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.modID);
-				end
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					t.retries = nil;
-					return link;
-				else
-					if t.retries then
-						t.retries = t.retries + 1;
-						if t.retries > app.MaximumItemInfoRetries then
-							local itemName = "Item #" .. t.itemID .. "*";
-							t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
-							t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-							t.link = "";
-							t.s = nil;
-							t.text = itemName;
-							return itemName;
-						end
-					else
-						t.retries = 1;
-					end
-				end
-			end
-		elseif key == "trackable" then
-			return t.questID;
-		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly or t.isYearly;
-		elseif key == "saved" then
-			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "modID" then
-			return 1;
-		elseif key == "name" then
-			return t.link and GetItemInfo(t.link);
-		elseif key == "specs" then
-			return GetItemSpecInfo(t.itemID);
-		elseif key == "tsm" then
-			local itemLink = t.itemID;
-			if itemLink then
-				if t.bonusID then
-					if t.bonusID > 0 then
-						return string.format("i:%d:0:1:%d", itemLink, t.bonusID);
-					else
-						return string.format("i:%d", itemLink);
-					end
-				--elseif t.modID then
-					-- NOTE: At this time, TSM3 does not support modID. (RIP)
-					--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
-				end
-				return string.format("i:%d", itemLink);
-			end
-		elseif key == "b" then
-			return 2;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
+		_cache = rawget(itemFields, key);
+		return _cache and _cache(t);
 	end
 };
 app.CreateItem  = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
 
--- Item Source Lib
-app.BaseItemSource = {
-	__index = function(t, key)
-		if key == "key" then
-			return "s";
-		elseif key == "collectible" then
-			return app.CollectibleTransmog;
-		elseif key == "collected" then
-			return GetDataSubMember("CollectedSources", t.s);
-		elseif key == "text" then
-			return t.link;
-		elseif key == "link" then
-			local itemLink = t.itemID;
-			if itemLink then
-				if t.bonusID then
-					if t.bonusID > 0 then
-						itemLink = string.format("item:%d::::::::::::1:%d", itemLink, t.bonusID);
-					else
-						itemLink = string.format("item:%d:::::::::::::", itemLink);
-					end
-				elseif t.modID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.modID);
+-- Appearance Lib (Item Source)
+local appearanceFields = {
+	["key"] = function(t) return "s"; end,
+	["collectible"] = function(t)
+		return app.CollectibleTransmog;
+	end,
+	["collected"] = function(t)
+		return GetDataSubMember("CollectedSources", rawget(t, "s"));
+	end,
+	["link"] = function(t)
+		local itemLink = t.itemID;
+		if itemLink then
+			local bonusID = rawget(t, "bonusID");
+			if bonusID then
+				if bonusID > 0 then
+					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+				else
+					itemLink = string.format("item:%d:::::::::::::", itemLink);
+				end
+			else
+				bonusID = rawget(t, "modID");
+				if bonusID then
+					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
 				end
 			end
 			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
 			if link then
-				t.link = link;
-				t.icon = icon;
-				t.retries = nil;
+				rawset(t, "retries", nil);
+				rawset(t, "link", link);
+				if icon then rawset(t, "icon", icon); end
 				return link;
 			else
-				if t.retries then
-					t.retries = t.retries + 1;
+				if rawget(t, "retries") then
+					rawset(t, "retries", rawget(t, "retries") + 1);
 					if t.retries > app.MaximumItemInfoRetries then
 						local itemName = "Item #" .. t.itemID .. "*";
-						t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
-						t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-						t.link = "";
-						t.text = itemName;
+						rawset(t, "title", "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.");
+						rawset(t, "text", itemName);
+						rawset(t, "retries", nil);
+						rawset(t, "link", "");
 						return itemName;
 					end
 				else
-					t.retries = 1;
+					rawset(t, "retries", 1);
 				end
 			end
-		elseif key == "modID" then
-			return 1;
-		elseif key == "name" then
-			return t.link and GetItemInfo(t.link);
-		elseif key == "specs" then
-			return GetItemSpecInfo(t.itemID);
-		elseif key == "tsm" then
-			local itemLink = t.itemID;
-			if itemLink then
-				if t.bonusID then
-					if t.bonusID > 0 then
-						return string.format("i:%d:0:1:%d", itemLink, t.bonusID);
-					else
-						return string.format("i:%d", itemLink);
-					end
-				--elseif t.modID then
-					-- NOTE: At this time, TSM3 does not support modID. (RIP)
-					--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
-				end
-				return string.format("i:%d", itemLink);
-			end
-		elseif key == "s" then
-			return 0;
-		elseif key == "b" then
-			return 2;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
 		end
+	end,
+	["s"] = function(t)
+		return 0;
+	end,
+};
+appearanceFields.b = itemFields.b;
+appearanceFields.tsm = itemFields.tsm;
+appearanceFields.icon = itemFields.icon;
+appearanceFields.name = itemFields.name;
+appearanceFields.modID = itemFields.modID;
+appearanceFields.specs = itemFields.specs;
+appearanceFields.text = appearanceFields.link;
+app.BaseItemSource = {
+	__index = function(t, key)
+		_cache = rawget(appearanceFields, key);
+		return _cache and _cache(t);
 	end
 };
 app.CreateItemSource = function(sourceID, itemID, t)
@@ -4998,6 +5010,7 @@ app.CreateItemSource = function(sourceID, itemID, t)
 	t.itemID = itemID;
 	return t;
 end
+end)();
 
 -- Map Lib
 app.BaseMap = {
