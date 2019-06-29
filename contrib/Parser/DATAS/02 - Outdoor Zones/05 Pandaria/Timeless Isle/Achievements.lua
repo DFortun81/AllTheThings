@@ -7,8 +7,7 @@ _.Zones =
 		m(554, {	-- Timeless Isle
 			n(-4, {	-- Achievements
 				ach(8730),	-- Rolo's Riddle
-				{	-- Timeless Legends
-					["achievementID"] = 8784,	-- Timeless Legends
+				ach(8784, {	-- Timeless Legends
 					["coords"] = {
 						{ 43, 55, 554 },
 						{ 25, 72, 554 },
@@ -31,24 +30,12 @@ _.Zones =
 						{ 22, 38, 554 },
 					},
 					["g"] = {
-						{	-- Cloudstrike Family Helm
-							["achievementID"] = 8784,	-- Timeless Legends
-							["criteriaID"] = 1,			-- Cloudstrike Family Helm
-						},
-						{	-- Flameheart Shawl
-							["achievementID"] = 8784,	-- Timeless Legends
-							["criteriaID"] = 2,			-- Flameheart Shawl
-						},
-						{	-- Riverspeaker's Trident
-							["achievementID"] = 8784,	-- Timeless Legends
-							["criteriaID"] = 3,			-- Riverspeaker's Trident
-						},
-						{	-- Snowdrift Tiger Talons
-							["achievementID"] = 8784,	-- Timeless Legends
-							["criteriaID"] = 4,			-- Snowdrift Tiger Talons
-						},
+						crit(1),	-- Cloudstrike Family Helm
+						crit(2),	-- Flameheart Shawl
+						crit(3),	-- Riverspeaker's Trident
+						crit(4),	-- Snowdrift Tiger Talons
 					},
-				},
+				}),
 			}),
 		}),
 	}),

@@ -12,7 +12,7 @@ _.Zones =
 				["repeatable"] = true,
 				["g"] = {
 					i(169940, {	-- Unshackled Supplies
-						i(170203, {	-- Flopping Fish
+						i(170203, {	-- Flopping Fish (TOY!)
 							crit(22, {	-- Flopping Fish
 								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 							}),		
@@ -29,7 +29,7 @@ _.Zones =
 				["repeatable"] = true,
 				["g"] = {
 					i(169939, {	-- Ankoan Supplies
-						i(170203, {	-- Flopping Fish
+						i(170203, {	-- Flopping Fish (TOY!)
 							crit(22, {	-- Flopping Fish
 								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 							}),		

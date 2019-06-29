@@ -720,14 +720,6 @@ _.Zones =
 					}),
 				},
 			}),
-			i(170472, {	-- Encrusted Coin (possibly part of a secret?)
-				["questID"] = 57141,
-				["coord"] = { 38.0, 59.2, 1355 },
-				["description"] = "Turn in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
-				["groups"] = {
-					i(170473),	-- Jingling Sack
-				},
-			}),
 			q(55851, {	-- Essential Empowerment
 				["qgs"] = {
 					154166,	-- Magni Bronzebeard (Alliance)
@@ -767,6 +759,14 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save a Friend
+			}),
+			q(55846, {	-- Forbidden Rituals
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 56.5, 29.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153147,	-- Apprentice Ukaro
 			}),
 			q(55683, {	-- Forgotten Memories
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
@@ -1466,6 +1466,17 @@ _.Zones =
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)
 					55500,	-- Save a Friend (Horde)
+				},
+			}),
+			q(56783, {	-- The Lambent Lockbox
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Your Ankoan friend will offer this quest upon reaching Rank 5.",
+				["races"] = ALLIANCE_ONLY,
+				["qgs"] = {	-- add other two bodyguards/friends/whatever
+					154304,	-- Farseer Ori
+				},
+				["g"] = {
+					i(169905),	-- Faintly Glowing Supplies
 				},
 			}),
 			q(55361, {	-- The Lost Shaman

@@ -12,10 +12,15 @@ _.Zones =
 			]]--
 			["description"] = "Must complete |cFFFFD700A Tempered Blade|r (Alliance) or |cFFFFD700Save a Friend|r (Horde) before the chests become available.",
 			["g"] = {
-				i(170198, {	-- Eternal Palace Dining Set (toy)
+				i(170198, {	-- Eternal Palace Dining Set (TOY!)
 					["description"] = "Obtained from the 12th |cFFFFD700Arcane Chest|r you open.",
+					["g"] = {
+						crit(25, {	-- Eternal Palace Dining Set
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					},
 				}),
-				i(168824, {	-- Ocean Simulator (toy)
+				i(168824, {	-- Ocean Simulator (TOY!)
 					["description"] = "Obtained from looting all 20 |cFFFFD700Arcane Chests|r.",
 				}),
 				o(326394, {	-- Arcane Chest

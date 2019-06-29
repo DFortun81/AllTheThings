@@ -150,7 +150,11 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					currency(1721, {	-- Prismatic Manapearl
-						i(169352),	-- Pearlescent Glimmershell
+						i(169352, {	-- Pearlescent Glimmershell (PET!)
+							crit(6, {	-- Pearlescent Glimmershell
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						}),
 						i(167167),	-- Ankoan Waveray
 						i(170204),	-- Symbol of Gral
 						i(169885),	-- Budding Deepcoral

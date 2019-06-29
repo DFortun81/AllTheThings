@@ -60,7 +60,11 @@ _.Zones =
 					crit(3, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169363),	-- Amethyst Softshell
+					i(169363, {	-- Amethyst Softshell (PET!)
+						crit(11, {	-- Amethyst Softshell
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152566, {	-- Anemonar
@@ -76,7 +80,11 @@ _.Zones =
 				["isDaily"] = true,
 				["coord"] = { 36.9, 11.2, 1355 },
 				["g"] = {
-					i(169373),	-- Brinestone Algan
+					i(169373, {	-- Brinestone Algan (PET!)
+						crit(13, {	-- Brinestone Algan
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152361, {	-- Banescale the Packfather
@@ -98,7 +106,11 @@ _.Zones =
 					crit(6, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169372),	-- Necrofin Tadpole
+					i(169372, {	-- Necrofin Tadpole (PET!)
+						crit(18, {	-- Necrofin Tadpole
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(149653, {	-- Carnivorous Lasher -- to spawn him, it procs quest 55366? verify IDs
@@ -109,7 +121,11 @@ _.Zones =
 				["coord"] = { 54.7, 41.7, 1355 },
 				["isDaily"] = true,
 				["g"] = {
-					i(169375),	-- Coral Lashling
+					i(169375, {	-- Coral Lashling (PET!)
+						crit(14, {	-- Coral Lashling
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152464, {	-- Caverndark Terror
@@ -122,7 +138,11 @@ _.Zones =
 					crit(7, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169356),	-- Caverndark Nightmare
+					i(169356, {	-- Caverndark Nightmare (PET!)
+						crit(8, {	-- Caverndark Nightmare
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152556, {	-- Chasm-Haunter
@@ -160,7 +180,11 @@ _.Zones =
 					crit(9, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169361),	-- Daggertooth Frenzy
+					i(169361, {	-- Daggertooth Frenzy (PET!)
+						crit(4, {	-- Daggertooth Frenzy
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152291, {	-- Deepglider
@@ -193,7 +217,11 @@ _.Zones =
 					crit(12, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169359),	-- Spawn of Nalaada
+					i(169359, {	-- Spawn of Nalaada (PET!)
+						crit(1, {	-- Spawn of Nalaada
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152553, {	-- Garnetscale
@@ -223,7 +251,11 @@ _.Zones =
 					crit(14, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169352),	-- Pearlescent Glimmershell
+					i(169352, {	-- Pearlescent Glimmershell (PET!) — possible this is just a vendor item now?  check back.
+						crit(6, {	-- Pearlescent Glimmershell
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152567, {	-- Kelpwillow
@@ -243,7 +275,11 @@ _.Zones =
 					crit(16, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169371),	-- Murgle
+					i(169371, {	-- Murgle (PET!)
+						crit(19, {	-- Murgle
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
@@ -264,7 +300,11 @@ _.Zones =
 					crit(17, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169366),	-- Wriggler
+					i(169366, {	-- Wriggler (PET!)
+						crit(10, {	-- Wriggler
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152465, {	-- Needlespine
@@ -281,7 +321,11 @@ _.Zones =
 					crit(18, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169355),	-- Chitterspine Needler
+					i(169355, {	-- Chitterspine Needler (PET!)
+						crit(9, {	-- Chitterspine Needler
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152397, {	-- Oronu
@@ -302,7 +346,16 @@ _.Zones =
 					crit(20, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169367),	-- Seafury
+					i(169367, {	-- Seafury (PET!)
+						crit(17, {	-- Seafury
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170193, {	-- Sea Totem
+						crit(29, {	-- Sea Totem
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152682, {	-- Prince Vortran
@@ -315,7 +368,33 @@ _.Zones =
 					crit(21, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169368),	-- Stormwrath
+					i(169368, {	-- Stormwrath (PET!)
+						crit(12, {	-- Stormwrath
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+				},
+			}),
+			n(153310, {	-- Qalina, Spear of Ice <Queensguard>
+			--	["questID"] = 
+			--	55888 is WQ ID.  possibly only up when her WQ is active?
+				["isDaily"] = true,
+				["coords"] = {
+					{ 52.6, 24.6, 1355 },
+					{ 61.6, 24.6, 1355 },
+					{ 60.6, 13.6, 1355 },
+				},
+				["g"] = {
+					i(170200, {	-- Seastorm Totem
+						crit(23, {	-- Seastorm Totem
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170192, {	-- Mudwrap
+						crit(30, {	-- Mudwrap
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(150583, {	-- Rockweed Shambler
@@ -326,7 +405,11 @@ _.Zones =
 					crit(22, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169374),	-- Budding Algan
+					i(169374, {	-- Budding Algan (PET!)
+						crit(15, {	-- Budding Algan
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(151870, {	-- Sandcastle
@@ -338,7 +421,11 @@ _.Zones =
 					crit(23, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169369),	-- Sandkeep
+					i(169369, {	-- Sandkeep (PET!)
+						crit(16, {	-- Sandkeep
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152795, {	-- Sandclaw Stoneshell (Verified: Pr3vention)
@@ -348,8 +435,16 @@ _.Zones =
 					crit(24, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169350),	-- Glittering Diamondshell
-					i(169351),	-- Sandclaw Nestseeker
+					i(169350, {	-- Glittering Diamondshell (PET!)
+						crit(2, {	-- Glittering Diamondshell
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(169351, {	-- Sandclaw Nestseeker (PET!) — may actually only drop from glimmering chest, check back on this
+						crit(3, {	-- Sandclaw Nestseeker
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 					i(168081),	-- Brinestone Pickaxe
 				},
 			}),
@@ -362,7 +457,11 @@ _.Zones =
 					crit(25, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169370),	-- Scalebrood Hydra
+					i(169370, {	-- Scalebrood Hydra (PET!)
+						crit(7, {	-- Scalebrood Hydra
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152545, {	-- Scale Matriarch Vynara (Verified: Pr3vention)
@@ -373,7 +472,11 @@ _.Zones =
 					crit(26, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169370),	-- Scalebrood Hydra
+					i(169370, {	-- Scalebrood Hydra (PET!)
+						crit(7, {	-- Scalebrood Hydra
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152542, {	-- Scale Matriarch Zodia
@@ -387,7 +490,11 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(168155),	-- Chum
-					i(169370),	-- Scalebrood Hydra
+					i(169370, {	-- Scalebrood Hydra (PET!)
+						crit(7, {	-- Scalebrood Hydra
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 --[[		n(155841, {	-- Shadowbinder Athissa (Naga Commander)
@@ -414,7 +521,7 @@ _.Zones =
 				["questID"] = 56296,
 				["isDaily"] = true,
 				["coords"] = {
-					{ 38.9, 9.4, 1355 },
+					{ 38.9, 9.40, 1355 },
 					{ 41.3, 15.9, 1355 },
 				},
 				["g"] = {
@@ -463,6 +570,11 @@ _.Zones =
 					crit(32, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170193, {	-- Sea Totem
+						crit(29, {	-- Sea Totem
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(153928, {	-- Tidelord Dispersius
@@ -474,6 +586,11 @@ _.Zones =
 				["g"] = {
 					crit(33, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170193, {	-- Sea Totem
+						crit(29, {	-- Sea Totem
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
 					}),
 				},
 			}),
@@ -535,7 +652,11 @@ _.Zones =
 				["coord"] = { 48.1, 24.3, 1355 },
 				["description"] = "Throw chum into Eel Infested Waters multiple times. He will spawn after ~8 throws.",
 				["g"] = {
-					i(169376),	-- Skittering Eel
+					i(169376, {	-- Skittering Eel (PET!)
+						crit(5, {	-- Skittering Eel
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency that can be looted once per day
