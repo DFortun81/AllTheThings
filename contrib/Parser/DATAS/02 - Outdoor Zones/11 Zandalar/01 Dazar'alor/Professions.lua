@@ -67,7 +67,7 @@ _.Zones =
 				h(ach(12754)),	-- Zandalari Fisherman
 				h(ach(12737)),	-- Zandalari Master of All
 				--]]
-				n(-180, {	-- Alchemy
+				prof(171, {	-- Alchemy
 					-- Tools of Trade Questline
 					qh(50112, {	-- Casting the First Stone
 						["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
@@ -127,7 +127,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(164, {	-- Blacksmith
+				prof(164, {	-- Blacksmithing
 					q(50276, {	-- A Recipe For the Ages
 						["qg"] = 127112,	-- Forgemaster Zak'aal
 						["coord"] = { 43.6, 38.3, 1165 },
@@ -149,7 +149,20 @@ _.Zones =
 						["sourceQuest"] = 50276,	-- A Recipe For the Ages
 					}),
 				}),
-				n(-188, {	-- Mining
+				prof(333, {	-- Enchanting
+					q(55635, {	-- A Voice on the Wind
+						["sourceQuests"] = { 54161 },	-- What the Drust Knew
+						["coord"] = { 46.9, 35.8, 1165 },
+						["races"] = HORDE_ONLY,
+					}),
+					q(54161, {	-- What the Drust Knew
+						["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
+						["coord"] = { 46.9, 35.8, 1165 },
+						["races"] = HORDE_ONLY,
+						["qg"] = 122702,	-- Enchantress Quinni
+					}),
+				}),
+				prof(186, {	-- Mining
 					qh(51962, {	-- Lumbering Away
 						["qg"] = 122694,	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
@@ -239,7 +252,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-190, {	-- Tailoring
+				prof(197, {	-- Tailoring
 					-- Tools of Trade Questline
 					qh(53938, {	-- A Friend in Needle
 						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>

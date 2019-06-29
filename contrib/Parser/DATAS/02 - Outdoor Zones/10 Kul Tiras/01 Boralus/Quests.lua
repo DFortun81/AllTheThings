@@ -271,6 +271,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 139522,	-- Scouting Map
 				}),
+				q(56378, {	-- The Missing Crew
+				--	["sourceQuests"] = {  },	-- UNKNOWN
+					["coord"] = { 67.9, 26.4, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["qg"] = 135681,	-- Grand Admiral Jes-Tereth
+					["g"] = {
+						follower(1182),	-- Grand Admiral Jes-Tereth
+					},
+				}),
 				q(47952, {	-- The Missing Fleet
 					["sourceQuests"] = { 47962 },	-- Stormsong Valley 
 					["isBreadcrumb"] = true,

@@ -530,7 +530,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(56759, {	-- Rustbolt Requisitions: Tempest Hide
+				q(56760, {	-- Rustbolt Requisitions: Tempest Hide (A)
+					["qg"] = 149813,	-- Gila Crosswires
+					["coord"] = { 77.7, 40.4, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(56759, {	-- Rustbolt Requisitions: Tempest Hide (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,
@@ -570,6 +576,12 @@ _.Zones =
 					["qg"] = 154511,	-- Sneaky Pete
 					["coord"] = { 24.2, 75.3, 1462 },
 					["isDaily"] = true,
+				}),
+				q(56053, {	-- The Final Act
+					["qg"] = 153982,	-- Izira Gearsworn
+					["coord"] = { 72.7, 33.9, 1462 },
+					["isDaily"] = true,
+					["sourceQuests"] = { 56142 },	-- Adapt, Improve, Overcome!
 				}),
 				q(55696, {	-- Test Drive
 					["qg"] = 150573,	-- Recycler Kerchunk

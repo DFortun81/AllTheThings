@@ -1118,11 +1118,19 @@ _.Zones =
 				},
 			}),
 			q(55785, {	-- Requisition: More Starfish
-				["qg"] = 151633,	-- Karn Deepweld
-				["coord"] = { 49.3, 61.5, 1355 },
-				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Save a Friend
+				["qgs"] = {
+					154436,	-- Craftsman Azama (A)
+					151633,	-- Karn Deepweld (H)
+				},
+				["coords"] = {
+					{ 37.9, 53.4, 1355 },	-- Alliance
+					{ 49.3, 61.5, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)				
+					55500,	-- Save a Friend (Horde)
+				},
 			}),
 			q(55801, {	-- Requisition: We Need It All
 				["isDaily"] = true,
@@ -1569,6 +1577,14 @@ _.Zones =
 				["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
+			}),
+			q(55774, {	-- WANTED: Inquisitor Ithriza
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			--	["objectID"] = ,	-- Bounty Board (unknown objectID, not linked to quest)
+				["isDaily"] = true,
+				["coord"] = { 39.2, 54.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56039, {	-- We Can't Have Dull Weapons
 				["qg"] = 153936,	-- Overseer Hajeer
