@@ -4813,7 +4813,7 @@ local itemFields = {
 	end,
 	["collectible"] = function(t)
 		return (rawget(t, "s") and app.CollectibleTransmog)
-			or (rawget(t, "questID") and app.CollectibleQuests and not rawget(t, "isBreadcrumb") and not t.repeatable)
+			or (rawget(t, "questID") and app.CollectibleQuests and not rawget(t, "isBreadcrumb") and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
 			or (rawget(t, "factionID") and app.CollectibleReputations);
 	end,
 	["collected"] = function(t)
@@ -5222,7 +5222,7 @@ app.BaseNPC = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "collectible" then
-			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
+			return app.CollectibleQuests and t.questID and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
 		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "repeatable" then
@@ -5250,7 +5250,7 @@ app.BaseObject = {
 		elseif key == "icon" then
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
-			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests);
+			return app.CollectibleQuests and t.questID and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" or key == "collected" then
@@ -5392,7 +5392,7 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
+			return app.CollectibleQuests and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" or key == "collected" then
@@ -5952,7 +5952,7 @@ app.BaseVignette = {
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 		elseif key == "collectible" then
-			return not t.repeatable and app.CollectibleQuests;
+			return app.CollectibleQuests and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
 		elseif key == "collected" then
 			return t.collectible and t.saved;
 		elseif key == "repeatable" then
