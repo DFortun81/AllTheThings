@@ -193,12 +193,16 @@ _.NeverImplemented =
 		q(56976),	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
 		q(56977),	-- Triggers when receiving "Mardivas's Universally Lauded Tote" (itemID 170477) from a Glowing Arcane Trunk
 		q(55427),	-- Ravenous Slime fed (55.1, 48.8)
+		q(55470),	-- Ravenous SLime fed 5x to spawn the Slimy Cocoon(55.1, 48.8)
+		q(55475),	-- Slimy Cocoon opened (55.1, 48.8)
 		q(55428),	-- Ravenous Slime fed (71.7, 25.7)
+		q(55471),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (71.7, 25.7)
+		q(55476),	-- Slimy Cocoon opened (71.7, 25.7)
 		q(55429),	-- Ravenous Slime fed (45.7, 24.1)
 		q(55472),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (45.7, 24.1)
 		q(55477),	-- Slimy Cocoon opened (45.7, 24.1)
 		q(55430),	-- Ravenous Slime fed (32.9, 39.8)
-		q(55473),	-- Ravenous Slime fed 5x to spawn the Sly Cocoon (32.9, 39.8)
+		q(55473),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (32.9, 39.8)
 		q(55478),	-- Slimy Cocoon opened (32.9, 39.8)
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
 		q(56614),	-- Blightlight first kill
