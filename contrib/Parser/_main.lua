@@ -741,19 +741,6 @@ crit = function(criteriaID, t)           -- Create an Achievement Criteria Objec
     t.criteriaID = criteriaID;
   return t;
 end
-sz = function(achievementID, criteriaID, t)  -- Create a Subzone Object (localized automatically)
-  if not t then t = {};
-    elseif not t.groups then
-		if not isarray(t) then
-			-- DO NOT do that lol
-		else
-			t = { ["groups"] = t };
-		end
-	end
-    t.achievementID = achievementID;
-    t.criteriaID = criteriaID;
-  return t;
-end
 model = function(displayID, t)
 	t.displayID = displayID;
 	return t;
