@@ -41,7 +41,8 @@ _.Zones =
 				},
 			}),
 			n(152416, {	-- Allseer Oma'kil
-				["allianceQuestID"] = 56603,
+				["allianceQuestID"] = 56280,
+				--["allianceQuestID"] = 56603,
 				["hordeQuestID"] = 56280,
 				["coord"] = { 65.4, 36.5, 1355 },
 				["isDaily"] = true,
@@ -247,7 +248,10 @@ _.Zones =
 			}),
 			n(152553, {	-- Garnetscale
 				["questID"] = 56273,
-				["coord"] = { 37.3, 40.3, 1355 },
+				["coords"] = {
+					{ 37.3, 40.3, 1355 },
+					{ 39.0, 57.0, 1355 },
+				},
 				["isDaily"] = true,
 				["g"] = {
 					crit(13, {	-- I Thought You Said They'd Be Rare?
@@ -728,9 +732,12 @@ _.Zones =
 			}),
 			n(152568, {	-- Urduu
 				["questID"] = 56584, -- TODO: verify daily ID. Also triggered 57140
-				["coord"] = { 31.3, 29.4, 1355 },
+				["coords"] = {
+					{ 31.3, 29.4, 1355 },
+					{ 30.3, 35.9, 1355 },
+				},
 				["isDaily"] = true,
-				["description"] = "Kill a |cFFFFD700Staghorn Reefwalker|r on top of Urduu to activate him.",
+				["description"] = "Kill a |cFFFFD700Staghorn Reefwalker|r on top of Urduu to activate him.  |cFFDD3333Before you start kiting make sure any followers are deactivated by right-clicking the buff to dismiss.",
 				["g"] = {
 					crit(36, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
