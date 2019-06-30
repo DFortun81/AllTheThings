@@ -1027,12 +1027,15 @@ _.Zones =
 				["isDaily"] = true,
 				["qgs"] = {
 					154436,	-- Craftsman Azama (Alliance)
+					151633,	-- Karn Deepweld (Horde)
 				},
 				["coords"] = {
 					{ 38.0, 53.3, 1355 },	-- Alliance
+					{ 49.3, 61.5, 1355 },	-- Karn Deepweld (Horde)
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
 				},
 			}),
 			q(55724, {	-- Requisition: A Few Deepcoral Buds
@@ -1105,22 +1108,21 @@ _.Zones =
 					55500,	-- Save A Friend (Horde)
 				},
 			}),
-			q(55792, {	-- Requisition: More Cone Shells
+--[[		q(55792, {	-- Requisition: More Cone Shells 	-- Need to be confirmed
+				["isDaily"] = true,
 				["qgs"] = {
+					154436,	-- Craftsman Azama (Alliance)
 					151633,	-- Karn Deepweld (Horde)
-				--	??,	-- ?? (Alliance)
 				},
 				["coords"] = {
+					{ 38.0, 53.3, 1355 },	-- Alliance
 					{ 49.3, 61.5, 1355 },	-- Karn Deepweld (Horde)
-				--	{ ??, ??, 1355 },	-- ?? (Alliance)
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)
 					55500,	-- Save a Friend (Horde)
 				},
-				["isDaily"] = true,
-				
-			}),
+]]--		}),
 			q(55785, {	-- Requisition: More Starfish
 				["isDaily"] = true,
 				["qgs"] = {
