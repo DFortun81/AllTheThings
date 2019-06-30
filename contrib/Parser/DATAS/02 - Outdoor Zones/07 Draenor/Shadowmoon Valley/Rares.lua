@@ -29,6 +29,7 @@ _.Zones =
 				n(85568, {	-- Avalanche
 					["questID"] = 37410,
 					["coord"] = { 67.2, 84.6, 539 },
+					["isDaily"] = true,
 					["g"] = {
 						i(119400), 	-- Rugged Crystal Cudgel
 					},
@@ -332,6 +333,7 @@ _.Zones =
 						i(113553),	-- Windfang Sabre
 						q(35614, {	-- Artificer Romuul
 							["races"] = ALLIANCE_ONLY,
+							["description"] = "Available the day after killing |cFFFFD700Windfang Matriarch|r.",
 							["g"] = {
 								follower(179),	-- Artificer Romuul
 							},

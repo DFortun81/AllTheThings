@@ -1798,7 +1798,10 @@ _.ExpansionFeatures =
 				}),
 				q(33075, {	-- A Hero's Welcome
 					["sourceQuests"] = { 34692 },	-- Delegating on Draenor
-					["coord"] = { 46.9, 50.8, 582 },
+					["coords"] = {
+						{ 46.9, 50.8, 582 },	-- lvl 1 garrison
+						{ 47.0, 51.0, 582 },	-- lvl 2 garrison
+					},
 					["qg"] = 80568,	-- Yrel
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1814,16 +1817,18 @@ _.ExpansionFeatures =
 					["qg"] = 81492,	-- Bodrick Grey
 				}),
 				q(36624, {	-- Ashran Appearance
-					["coord"] = { 40.7, 53.6, 582 },
 					["lvl"] = 91,
 					["qg"] = 79953,	-- Lieutenant Thorn
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34692,	-- Delegating on Draenor
+					["coords"] = {
+						{ 40.7, 53.6, 582 },	-- lvl 1 garrison
+						{ 31.1, 32.8, 582 },	-- lvl 2 garrison
+					},
 				}),
 				q(36592, {	-- Bigger is Better
-					["sourceQuests"] = {
-						33081,	-- Escape from Shaz'gul
-						33814,	-- Fast Expansion
-					},
+					["sourceQuest"] = 34692,	-- Delegating on Draenor
+					["coord"] = { 41.2, 49.3, 582 },
 					["qg"] = 77209,	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1850,7 +1855,9 @@ _.ExpansionFeatures =
 				}),
 				q(36100, {	-- Building For Professions
 					["qg"] = 77209,	-- Baros Alexston
+					["coord"] = { 41.3, 49.4, 582 },	-- lvl 1 garrison
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34586,	-- Establish Your Garrison
 				}),
 				q(34587, {	-- Build Your Barracks
 					["sourceQuests"] = {
@@ -1868,12 +1875,12 @@ _.ExpansionFeatures =
 				}),
 				q(36404, {	-- Clearing the Garden
 					["sourceQuest"] = 36592,	-- Bigger is Better
-					["coord"] = { 31.6, 18.1, 582 },	-- level 2 garrison
+					["coord"] = { 58.9, 53.4, 582 },	-- level 2 garrison
 					["lvl"] = 96,
 					["qg"] = 85344,	-- Naron Bloomthistle
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						{ ["buildingID"] = 29 },	-- Herb Garden lvl 1
+						garrisonBuilding(29),	-- Herb Garden lvl 1
 					},
 				}),
 				q(34692, {	-- Delegating on Draenor
@@ -1946,9 +1953,11 @@ _.ExpansionFeatures =
 					["qg"] = 77209,	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34758, {	-- Looking For Help
+				q(34194, {	-- Looking For Help
 					["requireSkill"] = 356,	-- Fishing
+					["sourceQuest"] = 36592,	-- Bigger is Better
 					["qg"] = 77733,	-- Ron Ashton
+					["coord"] = { 53.9, 13.4, 582 },	-- lvl 2 garrison
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34584, {	-- Looking for Lumber
@@ -1968,15 +1977,22 @@ _.ExpansionFeatures =
 				}),
 				q(33359, {	-- Meet Us at Starfall Post
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
-					["coord"] = { 43.8, 44.4, 582 },
 					["qg"] = 80645,	-- Cordana Felsong
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["coords"] = {
+						{ 43.8, 44.4, 582 },	-- lvl 1 garrison
+						{ 43.1, 44.7, 582 },	-- lvl 2 garrison
+					},
 				}),
 				q(34778, {	-- Migrant Workers
 					["sourceQuests"] = { 34692 },	-- Delegating on Draenor
-					["coord"] = { 44.1, 53.2, 582 },
 					["qg"] = 79457,	-- Vindicator Maraad
 					["races"] = ALLIANCE_ONLY,
+					["coords"] = {
+						{ 44.1, 53.2, 582 },	-- lvl 1 garrison
+						{ 41.5, 44.9, 582 },	-- lvl 2 garrison
+					},
 				}),
 				n(89763,  {	-- Muradin Bronzebeard
 					["races"] = ALLIANCE_ONLY,
@@ -2339,6 +2355,9 @@ _.ExpansionFeatures =
 					["coord"] = { 44.1, 53.3, 582 },
 					["qg"] = 79457,	-- Vindicator Maraad
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						follower(34),	-- Qiana Moonshadow
+					},
 				}),
 				q(34616, {	-- Ravenous Ravens
 					["sourceQuests"] = { 34583 },	-- For the Alliance!
@@ -2374,13 +2393,13 @@ _.ExpansionFeatures =
 				}),
 				q(35556, {	-- The Secrets of Gorgrond
 					["isBreadcrumb"] = true,
-					["coords"] = {
-						{ 31.4, 33.5, 582 },	-- level 1 garrison
-						{ 37.6, 37.0, 582 },	-- level 2 garrison
-					},
 					["lvl"] = 92,
 					["qg"] = 81492,	-- Bodrick Grey
 					["races"] = ALLIANCE_ONLY,
+					["coords"] = {
+						{ 31.4, 33.5, 582 },	-- level 1 garrison
+						{ 38.3, 36.7, 582 },	-- level 2 garrison
+					},
 				}),
 				q(34028, {	-- These Look Familiar...
 					["qg"] = 77217,	-- Jr. Surveyor Dorn
@@ -2389,9 +2408,10 @@ _.ExpansionFeatures =
 				q(34192, {	-- Things Are Not Goren Our Way
 					["sourceQuests"] = { 36592 },	-- Bigger is Better
 					["qg"] = 77730,	-- Timothy Leens
+					["coord"] = { 65.2, 41.8, 582 },	-- lvl 2 garrison
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						{ ["buildingID"] = 61 },	-- Frostwall Mines
+						garrisonBuilding(61),	-- Frostwall Mines
 					},
 				}),
 				q(37941,  {	-- Treasure Contract: The Infected Orc
@@ -2399,6 +2419,21 @@ _.ExpansionFeatures =
 					["qgs"] = {
 						89793,	-- Harrison Jones
 						92223,	-- Surveyor Daltry
+					},
+				}),
+				o(236165, {	-- War Planning Map
+					["sourceQuest"] = 36592,	-- Bigger is Better
+					["coord"] = { 30.7, 31.8, 582 },	-- lvl 2 garrison
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						q(36686, {	-- Assault on the Pit
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+						q(36679, {	-- Assault on Darktide Roost
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
 					},
 				}),
 				q(38257, {	-- We Need a Shipwright

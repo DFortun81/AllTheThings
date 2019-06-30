@@ -303,6 +303,10 @@ _.Zones =
 					["coord"] = { 82.6, 69.8, 525 },
 					["races"] = HORDE_ONLY,
 				},
+				q(36079, {	 -- A Hero's Welcome
+					["u"] = 1,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				{	-- A Proper Parting -- aa
 					["questID"] = 33125,
 					["qg"] = 72976,	-- Outrider Urakag

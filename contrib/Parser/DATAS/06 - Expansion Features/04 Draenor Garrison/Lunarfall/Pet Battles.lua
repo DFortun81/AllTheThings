@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 					q(40329,  {	-- Battle Pet Tamers: Warlords
 						["sourceQuests"] = { 36592 },	-- Bigger is Better
 						["isWeekly"] = true,
-						["coord"] = { 29.3, 38.8, 582 },
+						["coord"] = { 28.3, 38.8, 582 },	-- lvl 2 garrison
 						["qg"] = 85418,	-- Lio the Lioness
 					}),
 					q(38299,  {	-- Critters of Draenor
