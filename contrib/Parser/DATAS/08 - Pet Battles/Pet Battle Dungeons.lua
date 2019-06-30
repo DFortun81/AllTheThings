@@ -27,7 +27,7 @@ _.PetBattles =
 			}),
 		},
 	},
-	{	-- Micro Zoox
+	{	
 		["questID"] = 54186,	-- Pet Battle Challenge: Gnomeregan
 		["qg"] = 147070,	-- Micro Zoox
 		["maps"] = {
@@ -36,6 +36,7 @@ _.PetBattles =
 			841,	-- Pet Dungeon
 			842,	-- Pet Dungeon
 		},
+		["isWeekly"] = true,
 		["g"] = {
 			ach(13269, {	-- Pet Battle Challenge: Gnomeregan
 				i(165894),	-- Mini Spider Tank
@@ -59,9 +60,13 @@ _.PetBattles =
 			23,	-- Eastern Plaguelands
 			1505,	-- Pet Dungeon
 		},
+		["isWeekly"] = true,
 		["g"] = {
 			ach(13627, {	-- Pet Battle Challenge: Stratholme
 				i(169670),	-- Evil Wizard Hat (minimancer)
+			}),
+			ach(13766, {	-- Malowned
+				i(170102),	-- Burnout
 			}),
 			i(169665, {	-- Cleansed Remains
 				i(169666),	-- Unopened Stratholme Supply Crate
