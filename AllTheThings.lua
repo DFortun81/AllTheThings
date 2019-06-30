@@ -3729,6 +3729,7 @@ app.DifficultyIcons = {
 	[15] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
 	[16] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",
 	[17] = "Interface\\Addons\\AllTheThings\\assets\\LFR",
+	[18] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 	[23] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",
 	[24] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",
 	[33] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",
