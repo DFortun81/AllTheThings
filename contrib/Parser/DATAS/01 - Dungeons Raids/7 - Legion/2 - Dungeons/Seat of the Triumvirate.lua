@@ -7,15 +7,14 @@ _.Instances = { tier(7, {	-- Legion
 		["lvl"] = 110,
 		["mapID"] = 903,
 		["coord"] = { 22.2, 55.9, 882 },	-- Mac'Aree
-		["groups"] = {
-			d(2, {	-- Heroic
-				sz(12069,9, { 	-- Shadowguard Incursion
+		["g"] = {
+			n(-17, {	-- Quests
+				crit(9, {	-- Shadowguard Incursion
+					["achievementID"] = 12069,
 					["description"] = "|cFFFFD700Glowing Key Fragment|r can drop from any mob in the |cFFFFFFFFShadowguard Incursion|r area.  Rares and Elites have a higher drop chance than normal mobs.",
 					["icon"] = "Interface\\Icons\\inv_icon_shadowcouncilorb_purple",
-					["maps"] = {
-						882,	-- Mac'Aree
-					},
-					["groups"] = {
+					["maps"] = { 882 },	-- Mac'Aree
+					["g"] = {
 						i(152204, {	-- Glowing Key Fragment
 							["questID"] = 48230,	-- Fragment of the Past
 							["crs"] = {
@@ -34,96 +33,81 @@ _.Instances = { tier(7, {	-- Legion
 								122421,	-- Umbral War-Adept
 								122056,	-- Viceroy Nezhar
 							},
-							["groups"] = {
-								{
-									["questID"] = 48864,	-- The Broken Blacksmith
-									["sourceQuest"] = 48230,	-- Fragment of the Past
+							["g"] = {
+								q(48864, {	-- The Broken Blacksmith
 									["qg"] = 123668,	-- Captain Fareeya <The Crescent Glaive>
-								},
-								{
-									["questID"] = 48271,	-- Recovering the Pieces
-									["sourceQuest"] = 48864,	-- The Broken Blacksmith
+									["sourceQuest"] = 48230,	-- Fragment of the Past
+								}),
+								q(48271, {	-- Recovering the Pieces
 									["qg"] = 125246,	-- Gaal <Blacksmith>
-								},
-								{
-									["questID"] = 48803,	-- The Power to Reforge
 									["sourceQuest"] = 48864,	-- The Broken Blacksmith
+								}),
+								q(48803, {	-- The Power to Reforge
 									["qg"] = 125246,	-- Gaal <Blacksmith>
-								},
-								{
-									["questID"] = 48261,	-- Forging a Key to the Past
+									["sourceQuest"] = 48864,	-- The Broken Blacksmith
+								}),
+								q(48261, {	-- Forging a Key to the Past
+									["qg"] = 125246,	-- Gaal <Blacksmith>
 									["sourceQuests"] = {
 										48271,	-- Recovering the Pieces
 										48803,	-- The Power to Reforge
 									},
+								}),
+								q(48231, {	-- The Seat of the Triumvirate: Armor of the Triumvirate
 									["qg"] = 125246,	-- Gaal <Blacksmith>
-								},
-								{
-									["questID"] = 48231,	-- The Seat of the Triumvirate: Armor of the Triumvirate
-									["qg"] = 125246,	-- Gaal <Blacksmith>
-									["groups"] = {
-										{ -- Ensemble: Light-Woven Triumvirate Regalia
-											["itemID"] = 152241,
-											["groups"] = {
-												i(151337),	-- Head
-												i(151299),	-- Shoulder
-												i(151635),	-- Cloak
-												i(151303),	-- Chest
-												i(151305),	-- Wrist
-												i(151300),	-- Hands
-												i(151302),	-- Waist
-												i(151304),	-- Legs
-												i(151301),	-- Feet
-											},
-										},
-										{ -- Ensemble: Burnished Triumvirate Armor
-											["itemID"] = 152242,
-											["groups"] = {
-												i(151336),	-- Head
-												i(151319),	-- Shoulder
-												i(151306),	-- Cloak
-												i(151313),	-- Chest
-												i(151315),	-- Wrist
-												i(151318),	-- Hands
-												i(151316),	-- Waist
-												i(151314),	-- Legs
-												i(151317),	-- Feet
-											},
-										},
-										{ -- Ensemble: Sterling Triumvirate Chainmail
-											["itemID"] = 152243,
-											["groups"] = {
-												i(151324),	-- Head
-												i(151323),	-- Shoulder
-												i(151634),	-- Cloak
-												i(151325),	-- Chest
-												i(151321),	-- Wrist
-												i(151322),	-- Hands
-												i(151326),	-- Waist
-												i(151338),	-- Legs
-												i(151320),	-- Feet
-											},
-										},
-										{ -- Ensemble: Venerated Triumvirate Battleplate
-											["itemID"] = 152244,
-											["groups"] = {
-												i(151333),	-- Head
-												i(151331),	-- Shoulder
-												i(151298),	-- Cloak
-												i(151329),	-- Chest
-												i(151328),	-- Wrist
-												i(151332),	-- Hands
-												i(151327),	-- Waist
-												i(151339),	-- Legs
-												i(151330),	-- Feet
-											},
-										},
+									["g"] = {
+										i(152241, { -- Ensemble: Light-Woven Triumvirate Regalia
+											i(151337),	-- Head
+											i(151299),	-- Shoulder
+											i(151635),	-- Cloak
+											i(151303),	-- Chest
+											i(151305),	-- Wrist
+											i(151300),	-- Hands
+											i(151302),	-- Waist
+											i(151304),	-- Legs
+											i(151301),	-- Feet
+										}),
+										i(152242, { -- Ensemble: Burnished Triumvirate Armor
+											i(151336),	-- Head
+											i(151319),	-- Shoulder
+											i(151306),	-- Cloak
+											i(151313),	-- Chest
+											i(151315),	-- Wrist
+											i(151318),	-- Hands
+											i(151316),	-- Waist
+											i(151314),	-- Legs
+											i(151317),	-- Feet
+										}),
+										i(152243, { -- Ensemble: Sterling Triumvirate Chainmail
+											i(151324),	-- Head
+											i(151323),	-- Shoulder
+											i(151634),	-- Cloak
+											i(151325),	-- Chest
+											i(151321),	-- Wrist
+											i(151322),	-- Hands
+											i(151326),	-- Waist
+											i(151338),	-- Legs
+											i(151320),	-- Feet
+										}),
+										i(152244, { -- Ensemble: Venerated Triumvirate Battleplate
+											i(151333),	-- Head
+											i(151331),	-- Shoulder
+											i(151298),	-- Cloak
+											i(151329),	-- Chest
+											i(151328),	-- Wrist
+											i(151332),	-- Hands
+											i(151327),	-- Waist
+											i(151339),	-- Legs
+											i(151330),	-- Feet
+										}),
 									},
-								},
+								}),
 							},
 						}),
 					},
 				}),
+			}),
+			d(2, {	-- Heroic
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter
 					i(152982),	-- Vixx's Chest of Tricks

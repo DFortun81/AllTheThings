@@ -9,13 +9,16 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			934,	-- Atal'Dazar
 			935,	-- Sacrificial Pits
 		},
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
-				qh(51517, {	-- You Owe Me a Spirit
+				q(51517, {	-- You Owe Me a Spirit
 					["qg"] = 140405,	-- Bwonsamdi
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 51516 },	-- Atal'Dazar: Ashes of a Warchief
-					["groups"] = {
-						sz(12719, 1),	-- The Fallen Chieftain
+					["g"] = {
+						crit(1, {	-- The Fallen Chieftain
+							["achievementID"] = 12719,
+						}),
 					},
 				}),
 			}),
@@ -23,16 +26,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				q(49800, {	--  Atal'Dazar: Spiders!
 					["repeatable"] = true,
 					["isDaily"] = true, 	-- Would like to swap it to WQ below
-					--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 					["lvl"] = 120,			-- WQ is 120+ only
 				}),
 			}),
 			d(1, {	-- Normal
 				e(2082, {	-- Priestess Alun'za
-					["crs"] = {
-						122967,	-- Priestess Alun'za
-					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["crs"] = { 122967 },	-- Priestess Alun'za
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158321),	-- Wand of Zealous Purification
 						i(158322),	-- Aureus Vessel
 						i(158309),	-- Wristlinks of Alchemical Transfusion
@@ -45,10 +45,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2036, {	-- Vol'kaal
-					["crs"] = {
-						122965,	-- Vol'kaal
-					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["crs"] = { 122965 },	-- Vol'kaal
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159632),	-- Adulation Enforcer
 						i(158375),	-- Drape of the Loyal Vassal
 						i(158348),	-- Wraps of Everliving Fealty
@@ -59,10 +57,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2083, {	-- Rezan
-					["crs"] = {
-						122963,	-- Rezan
-					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["crs"] = { 122963 },	-- Rezan
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160269),	-- Soulrending Claw
 						i(158711),	-- Hallowed Ossein Longbow
 						i(158713),	-- Disc of Indomitable Will
@@ -74,10 +70,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2030, {	-- Yazma
-					["crs"] = {
-						122968,	-- Yazma
-					},
-					["groups"] = bubbleDown({["bonusID"] = 4}, {
+					["crs"] = { 122968 },	-- Yazma
+					["g"] = bubbleDown({["bonusID"] = 4}, {
 						ach(12824),	-- Atal'Dazar
 						i(158323),	-- Soulrender's Fang
 						i(159358),	-- Coif of the Court Spider
@@ -94,12 +88,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2082, {	-- Priestess Alun'za
-						["crs"] = {
-							122967,	-- Priestess Alun'za
-						},
-						["groups"] = {
+						["crs"] = { 122967 },	-- Priestess Alun'za
+						["g"] = {
 							i(158321),	-- Wand of Zealous Purification
 							i(158322),	-- Aureus Vessel
 							i(158309),	-- Wristlinks of Alchemical Transfusion
@@ -112,10 +104,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2036, {	-- Vol'kaal
-						["crs"] = {
-							122965,	-- Vol'kaal
-						},
-						["groups"] = {
+						["crs"] = { 122965 },	-- Vol'kaal
+						["g"] = {
 							i(159632),	-- Adulation Enforcer
 							i(158375),	-- Drape of the Loyal Vassal
 							i(158348),	-- Wraps of Everliving Fealty
@@ -126,10 +116,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2083, {	-- Rezan
-						["crs"] = {
-							122963,	-- Rezan
-						},
-						["groups"] = {
+						["crs"] = { 122963 },	-- Rezan
+						["g"] = {
 							i(160269),	-- Soulrending Claw
 							i(158711),	-- Hallowed Ossein Longbow
 							i(158713),	-- Disc of Indomitable Will
@@ -141,10 +129,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2030, {	-- Yazma
-						["crs"] = {
-							122968,	-- Yazma
-						},
-						["groups"] = {
+						["crs"] = { 122968 },	-- Yazma
+						["g"] = {
 							ach(12825),	-- Heroic: Atal'Dazar
 							i(158323),	-- Soulrender's Fang
 							i(159358),	-- Coif of the Court Spider
@@ -162,25 +148,21 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(23, {	-- Mythic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					ach(12270),	-- Bringing Hexy Back
 					e(2082, {	-- Priestess Alun'za
-						["crs"] = {
-							122967,	-- Priestess Alun'za
-						},
-						["groups"] = {
+						["crs"] = { 122967 },	-- Priestess Alun'za
+						["g"] = {
 							ach(12272),	-- Gold Fever
 							-- NOTE:: blizzard switched boss criteria numbers for horde and alliance here [Pr3vention]
-							{
+							crit(2, {	-- Vol'kaal defeated
 								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["criteriaID"] = 2,	-- Vol'kaal defeated
 								["races"] = ALLIANCE_ONLY,
-							},
-							{
+							}),
+							crit(1, {	-- Vol'kaal defeated
 								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["criteriaID"] = 1,	-- Vol'kaal defeated
 								["races"] = HORDE_ONLY,
-							},
+							}),
 							i(158321),	-- Wand of Zealous Purification
 							i(158322),	-- Aureus Vessel
 							i(158309),	-- Wristlinks of Alchemical Transfusion
@@ -193,21 +175,17 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2036, {	-- Vol'kaal
-						["crs"] = {
-							122965,	-- Vol'kaal
-						},
-						["groups"] = {
+						["crs"] = { 122965 },	-- Vol'kaal
+						["g"] = {
 							-- NOTE:: blizzard switched boss criteria numbers for horde and alliance here [Pr3vention]
-							{
+							crit(1, {	-- Priestess Alun'za defeated
 								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["criteriaID"] = 1,	-- Priestess Alun'za defeated
 								["races"] = ALLIANCE_ONLY,
-							},
-							{
+							}),
+							crit(2, {	-- Priestess Alun'za defeated
 								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["criteriaID"] = 2,	-- Priestess Alun'za defeated
 								["races"] = HORDE_ONLY,
-							},
+							}),
 							i(159632),	-- Adulation Enforcer
 							i(158375),	-- Drape of the Loyal Vassal
 							i(158348),	-- Wraps of Everliving Fealty
@@ -218,14 +196,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2083, {	-- Rezan
-						["crs"] = {
-							122963,	-- Rezan
-						},
-						["groups"] = {
-							{
+						["crs"] = { 122963 },	-- Rezan
+						["g"] = {
+							crit(3, {	-- Rezan defeated
 								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["criteriaID"] = 3,	-- Rezan defeated
-							},
+							}),
 							i(159841),	-- Tome of Hex: Skeletal Hatchling
 							i(160269),	-- Soulrending Claw
 							i(158711),	-- Hallowed Ossein Longbow
@@ -238,16 +213,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2030, {	-- Yazma
-						["crs"] = {
-							122968,	-- Yazma
-						},
-						["groups"] = {
+						["crs"] = { 122968 },	-- Yazma
+						["g"] = {
 							ach(12826),	-- Mythic: Atal'Dazar
 							ach(12273),	-- It's Lit!
-							{
+							crit(4, {	-- Yazma defeated
 								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["criteriaID"] = 4,	-- Yazma defeated
-							},
+							}),
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(158323),	-- Soulrender's Fang
 							i(159358),	-- Coif of the Court Spider

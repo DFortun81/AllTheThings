@@ -16,7 +16,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["maps"] = { 895 },	-- Tiragarde Sound
 				["crs"] = { 136385 },	-- Azurethos, The Winged Typhoon
 				["g"] = bubbleDown({["modID"] = 3}, {
-					sz(12587, 6),	--  Azurethos Criteria
+					crit(6, {	-- Unbound Monstrosities (Azurethos)
+						["achievementID"] = 12587,
+					}),
 					i(161356),	-- Feathered Galeforce Crest
 					i(161352),	-- Chestguard of Dire Winds
 					i(161369),	-- Bindings of the Winged Typhoon
@@ -78,7 +80,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["title"] = "Kraulok bonus roll used",
 						["isWeekly"] = true,
 					}),
-					sz(12587, 5),	--  Dunegorger Kraulok Criteria
+					crit(5, {	-- Unbound Monstrosities (Dunegorger Kraulok)
+						["achievementID"] = 12587,
+					}),
 					i(161404),	-- Hood of the Sinuous Devilsaur
 					i(164385),	-- Desert Nomad's Wrap
 					i(161400),	-- Raider's Shrouding Thobe
@@ -103,7 +107,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["maps"] = { 896 },	-- Drustvar
 				["crs"] = { 140252 },	-- Hailstone Construct
 				["g"] = bubbleDown({["modID"] = 3}, {
-					sz(12587, 2),	--  Hailstone Criteria
+					crit(2, {	-- Unbound Monstrosities (Hailstone)
+						["achievementID"] = 12587,
+					}),
 					i(161372),	-- Ice-Carved Shoulderplates
 					i(161367),	-- Hailstone Hauberk
 					i(161364),	-- Chill's End Wristguards
@@ -170,7 +176,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["maps"] = { 862 },	-- Zuldazar
 				["crs"] = { 132253 },	-- Ji'arak
 				["g"] = bubbleDown({["modID"] = 3}, {
-					sz(12587, 4),	--  Ji'arak Criteria
+					crit(4, {	-- Unbound Monstrosities (Ji'arak)
+						["achievementID"] = 12587,
+					}),
 					i(161401),	-- Matriarch's Shadowveil
 					i(164384),	-- Windswept Dinorider's Cape
 					i(161409),	-- Stormcrash Chestguard
@@ -191,7 +199,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["maps"] = { 863 },	-- Nazmir
 				["crs"] = { 132701 },	-- T'zane <Tehe Soul Terror>
 				["g"] =  bubbleDown({["modID"] = 3}, {
-					sz(12587, 3),	--  Tzane Criteria
+					crit(3, {	-- Unbound Monstrosities (Tzane)
+						["achievementID"] = 12587,
+					}),
 					i(161396),	-- Petrified Mask of the Afterlife
 					i(161391),	-- Deathshambler's Shoulderpads
 					i(161392),	-- Bindings of Eternal Fears
@@ -266,7 +276,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["maps"] = { 942 },	-- Stormsong Valley
 				["crs"] = { 140163 },	-- Warbringeer Yenajz
 				["g"] = bubbleDown({["modID"] = 3}, {
-					sz(12587, 1),	--  Warbringer Yenajz Criteria
+					crit(1, {	-- Unbound Monstrosities (Warbringer Yenajz)
+						["achievementID"] = 12587,
+					}),
 					i(161349),	-- Amice of the Rending Abyss
 					i(161357),	-- Spaulders of the Enveloping Maw
 					i(161351),	-- Wristwraps of Warped Reality

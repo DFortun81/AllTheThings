@@ -2044,54 +2044,93 @@ _.Zones =
 						q(40668),	-- Eye of Azshara: The Heart of Zin-Azshari
 						q(43517),	-- Darkheart Thicket: Fallen Power
 					}),
-					n(-168, {	-- Other Quests
-						sz(10665,2, {	-- Felblaze Ingress
-							q(42372),	-- Felblaze Ingress
-							q(42375),	-- Eye See You
-							q(42369),	-- They're Doing it Wrong
-							q(42367, {	-- Arkethrax
-								["sourceQuest"] = 42375,	-- Eye See You
-								["qg"] = 107245,	-- Marius Felbane
-								["g"] = {
-									i(121480),	-- Felblaze Chain
-									i(129171),	-- Band of Ingression
-								},
-							}),
-							q(42367, {	-- Quantity over Quality
-								["sourceQuest"] = 42368,	-- Eye See You
-								["qg"] = 107245,	-- Marius Felbane
-							}),
-						}),
-						sz(10665,5, {	-- Llothien Highlands
-							q(42238),	-- Missing Demon
-							q(38460),	-- Let's Make A Deal
-							q(38232),	-- Minion! Kill Them!
-							q(38237,  {  	-- This IS In My Contract
-								i(138878), 		-- Copy of Daglop's Contract
-							}),
-						}),
-						sz(10665,6, {	-- The Lost Orchard
-							q(38203,  {  	-- Challiane Vineyards
-								i(132967),	-- Cooper's Bindings
-								i(121493),	-- Liastrin's Wine Taster
-								i(132966),	-- Oenologer's Protection Bands
-								i(121491),	-- Shalrala's Engraved Goblet
-								i(121489),	-- Valiana's Secret Recipe
-								i(132968),	-- Vintner's Wristwraps
-								i(132965),	-- Wine-Resistant Bracers
-							}),
-						}),
-						sz(10665,7, {	-- Nar'thalas
-							q(42692),	-- Children of Nar'thalas
-							q(42693),	-- You Never Know Until You Scry
-							q(42694,  {  	-- Back from the Dead
-								i(138820),
-								i(138821),
-								i(138822),
-								i(138824),
-							}),
-						}),
+					q(42367, {	-- Arkethrax
+						["sourceQuest"] = 42375,	-- Eye See You
+						["qg"] = 107245,	-- Marius Felbane
+						["g"] = {
+							i(121480),	-- Felblaze Chain
+							i(129171),	-- Band of Ingression
+						},
 					}),
+					q(42694,  {  	-- Back from the Dead
+						i(138820),
+						i(138821),
+						i(138822),
+						i(138824),
+					}),
+					q(38203,  {  	-- Challiane Vineyards
+						i(132967),	-- Cooper's Bindings
+						i(121493),	-- Liastrin's Wine Taster
+						i(132966),	-- Oenologer's Protection Bands
+						i(121491),	-- Shalrala's Engraved Goblet
+						i(121489),	-- Valiana's Secret Recipe
+						i(132968),	-- Vintner's Wristwraps
+						i(132965),	-- Wine-Resistant Bracers
+					}),
+					q(42692),	-- Children of Nar'thalas
+					q(42375),	-- Eye See You
+					q(45127, {	-- Fel-Crossed Lovers
+						["qg"] = 116189,	-- Levia Laurence
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(42372),	-- Felblaze Ingress
+					q(45836, {	-- Jorach's Calling
+						["qg"] = 119821,	-- Princess Tess Greymane
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 4 },
+					}),
+					q(46326, {	-- Jorach's Calling
+						["qg"] = 119822,	-- Lilian Voss
+						["races"] = HORDE_ONLY,
+						["classes"] = { 4 },
+					}),
+					q(38959, {	-- Left Behind
+						["qg"] = 93967,	-- Lyndras
+						["sourceQuests"] = { 38957 },	-- Taking Inspiration
+					}),
+					q(38460),	-- Let's Make A Deal
+					q(38960, {	-- Lining Them Up
+						["qg"] = 93967,	-- Lyndras
+						["sourceQuests"] = { 38957 },	-- Taking Inspiration
+					}),
+					q(38232),	-- Minion! Kill Them!
+					q(42238),	-- Missing Demon
+					q(37728, {	-- Presentation is Everything
+						["qg"] = 89341,	-- Magister Garuhod
+						["sourceQuest"] = 37727,	-- The Magister of Mixology
+					}),
+					q(42367, {	-- Quantity over Quality
+						["sourceQuest"] = 42368,	-- Eye See You
+						["qg"] = 107245,	-- Marius Felbane
+					}),
+					q(37727, {	-- The Magister of Mixology
+						["qg"] = 89341,	-- Magister Garuhod
+						["g"]  = {
+							i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
+						},
+					}),
+					q(42369),	-- They're Doing it Wrong
+					q(38237,  {  	-- This IS In My Contract
+						i(138878), 		-- Copy of Daglop's Contract
+					}),
+					q(40210, {	-- Time Well Spent
+						["qg"] = 98964,	-- Celea
+						["sourceQuests"] = {
+							40203,	-- Strength of the Past
+							40204,	-- Evolution of the Past
+							40205,	-- Respect for the Past
+							40207,	-- Scales of the Arcane
+							40208,	-- Eye of Azshara: Scales of the Sea
+							40209,	-- Scales of the Earth
+						},
+						["requireSkill"] = 165,
+					}),
+					q(40547, {	-- To Dalaran, With Love
+						["qg"] = 100521,	-- Jabrul
+						["requireSkill"] = 755,
+						["sourceQuests"] = { 40556 },	-- Jabrul Needs You
+					}),
+					q(42693),	-- You Never Know Until You Scry
         --[[ These quests will be organized soon™
 					q(41173),	-- A Beacon of Hope
 					q(46205),	-- A Conduit No More
@@ -2234,52 +2273,6 @@ _.Zones =
 					q(45174),	-- The Hunt for Illidan Stormrage
 					q(41185),	-- The Keys to Success
 ]]--
-					qa(45127, {	-- Fel-Crossed Lovers
-						["qg"] = 116189,	-- Levia Laurence
-					}),
-					qa(45836, {	-- Jorach's Calling
-						["qg"] = 119821,	-- Princess Tess Greymane
-						["classes"] = { 4 },
-					}),
-					qh(46326, {	-- Jorach's Calling
-						["qg"] = 119822,	-- Lilian Voss
-						["classes"] = { 4 },
-					}),
-					q(38959, {	-- Left Behind
-						["qg"] = 93967,	-- Lyndras
-						["sourceQuests"] = { 38957 },	-- Taking Inspiration
-					}),
-					q(38960, {	-- Lining Them Up
-						["qg"] = 93967,	-- Lyndras
-						["sourceQuests"] = { 38957 },	-- Taking Inspiration
-					}),
-					q(37727, {	-- The Magister of Mixology
-						["qg"] = 89341,	-- Magister Garuhod
-						["g"]  = {
-							i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
-						},
-					}),
-					q(37728, {	-- Presentation is Everything
-						["qg"] = 89341,	-- Magister Garuhod
-						["sourceQuest"] = 37727,	-- The Magister of Mixology
-					}),
-					q(40210, {	-- Time Well Spent
-						["qg"] = 98964,	-- Celea
-						["sourceQuests"] = {
-							40203,	-- Strength of the Past
-							40204,	-- Evolution of the Past
-							40205,	-- Respect for the Past
-							40207,	-- Scales of the Arcane
-							40208,	-- Eye of Azshara: Scales of the Sea
-							40209,	-- Scales of the Earth
-						},
-						["requireSkill"] = 165,
-					}),
-					q(40547, {	-- To Dalaran, With Love
-						["qg"] = 100521,	-- Jabrul
-						["requireSkill"] = 755,
-						["sourceQuests"] = { 40556 },	-- Jabrul Needs You
-					}),
 --[[
 					q(42407),	-- The Nature of the Beast
 					qh(46322),	-- The Pirate's Bay
