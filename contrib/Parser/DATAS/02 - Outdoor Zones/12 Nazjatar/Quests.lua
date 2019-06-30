@@ -215,11 +215,19 @@ _.Zones =
 				["sourceQuest"] = 55593,	-- Insight into Our Enemies
 			}),
 			q(55821, {	-- Bounty: A Few Coral Ancients
-				["qg"] = 153512,	-- Finder Pruc
-				["coord"] = { 49.1, 62.2, 1355 },
-				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Save a Friend
+				["qgs"] = {
+					153509,	-- Artisan Okata
+					153512,	-- Finder Pruc (Horde)
+				},
+				["coords"] = {
+					{ 37.9, 55.7, 1355 },	-- Alliance
+					{ 49.1, 62.2, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
+				},
 			}),
 			q(55823, {	-- Bounty: A Few Crabs
 				["isDaily"] = true,
@@ -232,6 +240,7 @@ _.Zones =
 					{ 50.8, 64.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
 					55500,	-- Save A Friend (Horde)
 				},
 			}),
@@ -1123,6 +1132,21 @@ _.Zones =
 					55500,	-- Save a Friend (Horde)
 				},
 ]]--		}),
+			q(55791, {	-- Requisition: More Spiral Leaf
+				["isDaily"] = true,
+				["qgs"] = {
+					151763,	-- Isla (Alliance)
+				--	,	--  (Horde)
+				},
+				["coords"] = {
+					{ 37.8, 55.4, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)				
+					55500,	-- Save a Friend (Horde)
+				},
+			}),
 			q(55785, {	-- Requisition: More Starfish
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1209,10 +1233,6 @@ _.Zones =
 					},
 					{	-- Requisition: More Kelp Buds
 						["questID"] = 55787,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: More Spiral Leaf
-						["questID"] = 55791,
 						["isDaily"] = true,
 					},
 					{	-- Requisition: More Seaweek
