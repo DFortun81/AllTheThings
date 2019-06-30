@@ -23,6 +23,7 @@ _.NeverImplemented =
 		q(35888),	-- Maraudon: dungeon completion
 		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
 		q(32751),	-- Primordious Dead (killed Primordius on normal in ToT — again, "Primordius" is spelled wrong in the tracking quest title)
+		q(35929),	-- Blackfathom Deeps: bonus objective rewarded
 		q(35598),	-- Razorfen Downs: dungeon completion
 		q(35615),	-- Razorfen Kraul: dungeon completion
 		q(35518),	-- Shattered Halls Reward Quest (completed Timewalking Shattered Halls)
