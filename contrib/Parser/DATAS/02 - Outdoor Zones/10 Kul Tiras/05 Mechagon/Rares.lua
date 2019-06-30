@@ -125,7 +125,9 @@ _.Zones =
 						crit(21, {	-- Earthbreaker Gulroc
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167042),	-- Blueprint: Scrap Trap
+						i(167042, {	-- Blueprint: Scrap Trap
+							["questID"] = 55030,
+						}),
 					},
 				}),
 				n(154153, {	-- Enforcer KX-T57
@@ -151,7 +153,9 @@ _.Zones =
 						i(167871, {	-- Blueprint: G99.99 Landshark
 							["questID"] = 55063,
 						}),
-						i(167042),	-- Blueprint: Scrap Trap
+						i(167042, {	-- Blueprint: Scrap Trap
+							["questID"] = 55030,
+						}),
 					},
 				}),
 				n(151884, {	-- Fungarian Furor
