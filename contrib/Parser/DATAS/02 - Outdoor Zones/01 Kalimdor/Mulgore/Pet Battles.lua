@@ -19,6 +19,7 @@ _.Zones =
 					["crs"] = { 61080 },	-- Rabbit
 				}),
 				n(63067, {	-- Naleen
+					["coord"] = { 49.2, 56.1, 7 },
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
 						p(75, {	-- Black Kingsnake
@@ -46,21 +47,25 @@ _.Zones =
 				}),
 				q(31575, {	-- Got One!
 					["qg"] = 63067,	-- Naleen
+					["coord"] = { 49.2, 56.1, 7 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31831,	-- Level Up!
 				}),
 				q(31573, {	-- Learning the Ropes
 					["qg"] = 63067,	-- Naleen
-					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+					["coord"] = { 49.2, 56.1, 7 },
 					["races"] = HORDE_ONLY,
+					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31831, {	-- Level Up!
 					["qg"] = 63067,	-- Naleen
+					["coord"] = { 49.2, 56.1, 7 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31574,	-- On The Mend
 				}),
 				q(31574, {	-- On The Mend
 					["qg"] = 63067,	-- Naleen
+					["coord"] = { 49.2, 56.1, 7 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31573,	-- Learning the Ropes
 				}),
