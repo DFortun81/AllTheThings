@@ -9,6 +9,10 @@ _.Zones =
 				q(56396, {	-- Creakclank
 					["collectible"] = false,
 					["lvl"] = 120,
+				}),
+				q(56397, {	-- CK-9 Micro-Oppression Unit
+					["collectible"] = false,
+					["lvl"] = 120,
 				}),	
 				q(56395, {	-- Goldenbot XD
 					["collectible"] = false,
