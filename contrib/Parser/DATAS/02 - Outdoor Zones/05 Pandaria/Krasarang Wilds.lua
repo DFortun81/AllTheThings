@@ -1250,9 +1250,11 @@ _.Zones =
 						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
-					qh(32222, {	-- Wanted: Chief Engineer Cogwrench
-						["qg"] = 216322,	-- Bounty Board
-						["isDaily"] = true,
+					o(216322, {	-- Bounty Board
+						q(32222, {	-- Wanted: Chief Engineer Cogwrench
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
 					}),
 					qa(30360, {	-- Warn Stoneplow
 						["qg"] = 58821,	-- Lyalia

@@ -937,13 +937,16 @@ _.Zones =
 						i(80797),	-- Jinyu Combat Mace
 					},
 				}),
-				qa(29889, {	-- Borrowed Brew
-					["qg"] = 209845,	--  Mouthwatering Brew
-					["sourceQuests"] = { 29888 },	-- Seek Out the Lorewalker
+				o(209845, {	--  Mouthwatering Brew
+					q(29889, {	-- Borrowed Brew
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = { 29888 },	-- Seek Out the Lorewalker
+					}),
 				}),
-				q(29747, {	-- Break the Cycle
-					["qg"] = 214871,	-- Shattered Destroyer
-					["sourceQuests"] = { 29745 },	-- The Sprites' Plight
+				o(214871, {	-- Shattered Destroyer
+					q(29747, {	-- Break the Cycle
+						["sourceQuests"] = { 29745 },	-- The Sprites' Plight
+					}),
 				}),
 				q(29631, {	-- Burning Bright
 					["qg"] = 55094,	-- Guard Shan Long
@@ -1232,9 +1235,11 @@ _.Zones =
 					["qg"] = 55521,	-- Rivett Clutchpop
 					["sourceQuests"] = { 31999 },	-- Nazgrim's Command
 				}),
-				qh(29743, {	-- Monstrosity
-					["qg"] = 212181,	-- Ancient Statue
-					["sourceQuests"] = { 31774 },	-- Seeking Zin'jun
+				o(212181, {	-- Ancient Statue
+					q(29743, {	-- Monstrosity
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 31774 },	-- Seeking Zin'jun
+					}),
 				}),
 				q(30001, {	-- Moth-Ridden
 					["qg"] = 56786,	-- Lorewalker Stonestep
@@ -1244,20 +1249,22 @@ _.Zones =
 					["qg"] = 59899,	-- Fei
 					["sourceQuests"] = { 30504, 31319, 30502, 30500 },	-- Emergency Response (horde and alliance), Jaded Heart, Residual Fallout
 				}),
-				qh(31999, {	-- Nazgrim's Command
-					["qg"] = 215844,	-- Flagpole
-					["sourceQuests"] = { 31779 },	-- The Darkness Within
-					["groups"] = {
-						i(90293),	-- Peacebreaker's Armored Helm
-						i(90292),	-- Peacebreaker's Burnished Headcover
-						i(90290),	-- Peacebreaker's Chain Helm
-						i(90294),	-- Peacebreaker's Heavy Helm
-						i(90287),	-- Peacebreaker's Hide Helm
-						i(90285),	-- Peacebreaker's Leather Helm
-						i(90286),	-- Peacebreaker's Ringmail Helm
-						i(90288),	-- Peacebreaker's Satin Cowl
-						i(90289),	-- Peacebreaker's Silk Cowl
-					},
+				o(215844, {	-- Flagpole
+					q(31999, {	-- Nazgrim's Command
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 31779 },	-- The Darkness Within
+						["groups"] = {
+							i(90293),	-- Peacebreaker's Armored Helm
+							i(90292),	-- Peacebreaker's Burnished Headcover
+							i(90290),	-- Peacebreaker's Chain Helm
+							i(90294),	-- Peacebreaker's Heavy Helm
+							i(90287),	-- Peacebreaker's Hide Helm
+							i(90285),	-- Peacebreaker's Leather Helm
+							i(90286),	-- Peacebreaker's Ringmail Helm
+							i(90288),	-- Peacebreaker's Satin Cowl
+							i(90289),	-- Peacebreaker's Silk Cowl
+						},
+					}),
 				}),
 				q(31705, {	-- Needle Me Not
 					["qg"] = 58564,	-- Elder Anli
@@ -1314,22 +1321,22 @@ _.Zones =
 					["qg"] = 63217,	-- Lorewalker Cho
 					["sourceQuests"] = { 31134 },	-- If These Stones Could Speak
 				}),
-				q(29755, {	-- Pei-Back
-					["qg"] = 214903,	-- The Tan-Chao
-					["sourceQuests"] = { 29754 },	-- To Bridge Earth and Sky
-					["groups"] = {
-						i(80695),	-- Ambermist Mantle
-						i(80696),	-- Blackthicket Spaulders
-						i(80697),	-- Jade Witch Spaulders
-						i(80698),	-- Glass Lake Spaulders
-						i(80699),	-- Silkwood Amice
-						i(80700),	-- Deepwoods Spaulders
-						i(80701),	-- Fox Grove Spaulders
-						i(80702),	-- Thunderwood Shoulders
-						i(80703),	-- Jade Tiger Shoulders
-					},
+				o(214903, {	-- The Tan-Chao
+					q(29755, {	-- Pei-Back
+						["sourceQuests"] = { 29754 },	-- To Bridge Earth and Sky
+						["groups"] = {
+							i(80695),	-- Ambermist Mantle
+							i(80696),	-- Blackthicket Spaulders
+							i(80697),	-- Jade Witch Spaulders
+							i(80698),	-- Glass Lake Spaulders
+							i(80699),	-- Silkwood Amice
+							i(80700),	-- Deepwoods Spaulders
+							i(80701),	-- Fox Grove Spaulders
+							i(80702),	-- Thunderwood Shoulders
+							i(80703),	-- Jade Tiger Shoulders
+						},
+					}),
 				}),
-
 				q(31704, {	-- Pooped
 					["qgs"] = { 58384, 65669, 65670, 65671 },	-- 4 different hatchlings
 					["isDaily"] = true,
@@ -1491,9 +1498,10 @@ _.Zones =
 					["qg"] = 56358,	-- Eekle Eekle
 					["sourceQuests"] = { 29937 },	-- Furious Fowl
 				}),
-				q(29748, {	-- Simulacrumble
-					["qg"] = 214871,	-- Shattered Destroyed
-					["sourceQuests"] = { 29745 },	-- The Sprites' Plight
+				o(214871, {	-- Shattered Destroyed
+					q(29748, {	-- Simulacrumble
+						["sourceQuests"] = { 29745 },	-- The Sprites' Plight
+					}),
 				}),
 				q(31194, {	-- Slitherscale Suppression
 					["qg"] = 58564,	-- Elder Anli

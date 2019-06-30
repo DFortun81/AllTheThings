@@ -162,9 +162,10 @@ _.Zones =
 						["qg"] = 60042,	-- Korga Strongmane
 						["sourceQuests"] = { 29792 },	-- Bidden to Greatness
 					}),
-					q(29782, {	-- Stronger Than Bone
-						["qg"] = 209673,	-- Jade Tiger Pillar
-						["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
+					o(209673, {	-- Jade Tiger Pillar
+						q(29782, {	-- Stronger Than Bone
+							["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
+						}),
 					}),
 					q(29662, {	-- Stronger Than Reeds
 						["qg"] = 55585,	-- Jojo Ironbrow

@@ -823,8 +823,8 @@ _.Zones =
 							}),
 						},
 					}),
-					q(39961,  {	-- An Embarrassing Revelation
-						["qg"] = 244651,	-- Steamy Romance Novel
+					o(244651, {	-- Steamy Romance Novel
+						q(39961),	-- An Embarrassing Revelation
 					}),
 					q(39950,  {	-- An Odd Trinket
 						["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
@@ -1019,8 +1019,8 @@ _.Zones =
 							recipe(195881),	-- Jeweled Lockpick
 						},
 					}),
-					q(40556,  {	-- Jabrul Needs You
-						["qg"] = 246250,	-- Letter From Jabrul
+					o(246250, {	-- Letter From Jabrul
+						q(40556),	-- Jabrul Needs You
 					}),
 					q(40538,  {	-- Lapidary Lessons
 						["qg"] = 93526,	-- Tiffany Cartier

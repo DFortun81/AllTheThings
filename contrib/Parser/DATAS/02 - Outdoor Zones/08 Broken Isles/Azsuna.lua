@@ -1060,9 +1060,10 @@ _.Zones =
 				}),
 				n(-38, { 	-- Profession
 					prof(171, {	-- Alchemy
-						q(39390, {	-- A Mysterious Text
-							["sourceQuests"] = { 39566 },	-- The Search for Knowledge
-							["qg"] = 243392,	-- Alchemy Book
+						o(243392, {	-- Alchemy Book
+							q(39390, {	-- A Mysterious Text
+								["sourceQuests"] = { 39566 },	-- The Search for Knowledge
+							}),
 						}),
 					}),
 					prof(164, {	-- Blacksmithing
@@ -1934,25 +1935,27 @@ _.Zones =
 								}),	
 							}),
 							q(37659),	-- The Captain's Foot Locker
-							qa(40794, {	-- Fate of the Queen's Reprisal [Alliance]
-								["g"] = {
-									i(121482),	-- Cloak of the Greywatch
-									i(138857),	-- SI:7 Standard Issue Vest
-									i(138856),	-- Alliance Auxillary Hauberk
-									i(138855),	-- Alliance Crusader's Breastplate
-									i(138858),	-- Stormwind Clergy Vestments
-								},
-								["qg"] = 239328,
-							}),
-							qh(42244, {	-- Fate of the Queen's Reprisal [Horde]
-								["g"] = {
-									i(138859),	-- Royal Apothecary Robe
-									i(121488),	-- Royal Apothecary Drape
-									i(138862),	-- Decorated Deathstalker Jerkin
-									i(138861),	-- Troll Auxillary Chainmail
-									i(138860),	-- Kor'kron Breastplate
-								},
-								["qg"] = 239328,
+							o(239328, {	-- Captain's Foot Locker
+								q(40794, {	-- Fate of the Queen's Reprisal [Alliance]
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										i(121482),	-- Cloak of the Greywatch
+										i(138857),	-- SI:7 Standard Issue Vest
+										i(138856),	-- Alliance Auxillary Hauberk
+										i(138855),	-- Alliance Crusader's Breastplate
+										i(138858),	-- Stormwind Clergy Vestments
+									},
+								}),
+								q(42244, {	-- Fate of the Queen's Reprisal [Horde]
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										i(138859),	-- Royal Apothecary Robe
+										i(121488),	-- Royal Apothecary Drape
+										i(138862),	-- Decorated Deathstalker Jerkin
+										i(138861),	-- Troll Auxillary Chainmail
+										i(138860),	-- Kor'kron Breastplate
+									},
+								}),
 							}),
 						}),
 					}),

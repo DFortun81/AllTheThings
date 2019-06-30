@@ -467,10 +467,12 @@ _.Zones =
 						122926,	-- Image of Chromie
 					},
 				}),
-				qh(42539, {	-- Cloak and Dagger
-					["sourceQuests"] = { 42503 },	-- Codebreaker
-					["classes"] = { 4 },
-					["qg"] = 250671,	-- Notes on the Veiled Hand
+				o(250671, {	-- Notes on the Veiled Hand
+					q(42539, {	-- Cloak and Dagger
+						["sourceQuests"] = { 42503 },	-- Codebreaker
+						["races"] = HORDE_ONLY,
+						["classes"] = { 4 },
+					}),
 				}),
 				qh(42503, {	-- Codebreaker
 					["sourceQuests"] = {
