@@ -341,14 +341,6 @@ _.NeverImplemented =
 			un(1, i(32100)),	-- Chancellor's Mooncloth Mitts
 			un(1, i(32101)),	-- Chancellor's Mooncloth Shoulderpads
 			un(1, i(32102)),	-- Chancellor's Mooncloth Vestments
-			un(1, i(167711)),	-- Unknown
-			un(1, i(167712)),	-- Unknown
-			un(1, i(167713)),	-- Unknown
-			un(1, i(167714)),	-- Unknow
-			un(1, i(167715)),	-- Unknow
-			un(1, i(167716)),	-- Unknow
-			un(1, i(167717)),	-- Unknow
-			un(1, i(167718)),	-- Unknow
 			un(1, i(166406)),	-- flaskzertaurens cloth robes
 			un(1, i(166407)),	-- flaskzertaurens cloth shoulders
 			un(1, i(32103)),	-- Chancellor's Satin Gloves

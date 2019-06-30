@@ -346,38 +346,126 @@ _.Achievements =
 					}),
 					ach(13502, {	-- Secret Fish and Where to Find Them
 						i(168016),	-- Hyper-Compressed Ocean
-						crit(1),	-- Ancient Mana Fin
-						crit(2),	-- Barbed Fjord Fin
-						crit(3),	-- Camouflaged Snark
-						crit(4),	-- Collectable Saltfin
-						crit(5),	-- Dead Fel Bone
-						crit(6),	-- Dreadeye Wally
-						crit(7),	-- Deceptive Maw
-						crit(8),	-- Drowned Goldfish
-						crit(9),	-- Deceptive Maw
-						crit(10),	-- Drowned Goldfish
-						crit(11),	-- Elusive Moonfish
-						crit(12),	-- Golden Sunsoaker
-						crit(13),	-- Inconspicuous Catfish
-						crit(14),	-- Invisible Smelt
-						crit(15),	-- Jade Story Fish
-						crit(16),	-- Kirin Tor Clown
-						crit(17),	-- Mechanized Mackerel
-						crit(18),	-- Prisoner Fish
-						crit(19),	-- Queen's Delight
-						crit(20),	-- Quiet Floater
-						crit(21),	-- Rotted Blood Cod
-						crit(22),	-- Thunderous Flounder
-						crit(23),	-- Tortollan Tank Dweller
-						crit(24),	-- Travelling Goby
-						crit(25),	-- Unseen Mimmic
-						crit(26),	-- Spiritual Salmon
-						crit(27),	-- Veiled Ghost
-						crit(28),	-- Very Tiny Whale
-						crit(29),	-- Green Roughy
-						crit(30),	-- Displaced Scrapfin
-						crit(31),	-- Thin Air Flounder
-						crit(32),	-- Well Lurker
+						{	-- Ancient Mana Fin
+							["criteriaID"] = 1,	-- Ancient Mana Fin
+							["itemID"] = 167708,	-- Ancient Mana Fin
+						},
+						{	-- Barbed Fjord Fin
+							["criteriaID"] = 2,	-- Barbed Fjord Fin
+							["itemID"] = 167710,	-- Barbed Fjord Fin
+						},
+						{	-- Camouflaged Snark
+							["criteriaID"] = 3,	-- Camouflaged Snark
+							["itemID"] = 167717,	-- Camouflaged Snark
+						},
+						{	-- Collectable Saltfin
+							["criteriaID"] = 4,	-- Collectable Saltfin
+							["itemID"] = 167718,	-- Collectable Saltfin
+						},
+						{	-- Dead Fel Bone
+							["criteriaID"] = 5,	-- Dead Fel Bone
+							["itemID"] = 167711,	-- Dead Fel Bone
+						},
+						{	-- Dreadeye Wally
+							["criteriaID"] = 6,	-- Dreadeye Wally
+							["itemID"] = 167727,	-- Dreadeye Wally
+						},
+						{	-- Deceptive Maw
+							["criteriaID"] = 7,	-- Deceptive Maw
+							["itemID"] = 167729,	-- Deceptive Maw
+						},
+						{	-- Drowned Goldfish
+							["criteriaID"] = 8,	-- Drowned Goldfish
+							["itemID"] = 167709,	-- Drowned Goldfish
+						},
+						{	-- Elusive Moonfish
+							["criteriaID"] = 9,	-- Elusive Moonfish
+							["itemID"] = 167715,	-- Elusive Moonfish
+						},
+						{	-- Golden Sunsoaker
+							["criteriaID"] = 10,	-- Golden Sunsoaker
+							["itemID"] = 167719,	-- Golden Sunsoaker
+						},
+						{	-- Inconspicuous Catfish
+							["criteriaID"] = 11,	-- Inconspicuous Catfish
+							["itemID"] = 167730,	-- Inconspicuous Catfish
+						},
+						{	-- Invisible Smelt
+							["criteriaID"] = 12,	-- Invisible Smelt
+							["itemID"] = 167721,	-- Invisible Smelt
+						},
+						{	-- Jade Story Fish
+							["criteriaID"] = 13,	-- Jade Story Fish
+							["itemID"] = 167706,	-- Jade Story Fish
+						},
+						{	-- Kirin Tor Clown
+							["criteriaID"] = 14,	-- Kirin Tor Clown
+							["itemID"] = 167707,	-- Kirin Tor Clown
+						},
+						{	-- Mechanized Mackerel
+							["criteriaID"] = 15,	-- Mechanized Mackerel
+							["itemID"] = 167705,	-- Mechanized Mackerel
+						},
+						{	-- Prisoner Fish
+							["criteriaID"] = 16,	-- Prisoner Fish
+							["itemID"] = 167722,	-- Prisoner Fish
+						},
+						{	-- Queen's Delight
+							["criteriaID"] = 17,	-- Queen's Delight
+							["itemID"] = 167728,	-- Queen's Delight
+						},
+						{	-- Quiet Floater
+							["criteriaID"] = 18,	-- Quiet Floater
+							["itemID"] = 167726,	-- Quiet Floater
+						},
+						{	-- Rotted Blood Cod
+							["criteriaID"] = 19,	-- Rotted Blood Cod
+							["itemID"] = 167712,	-- Rotted Blood Cod
+						},
+						{	-- Thunderous Flounder
+							["criteriaID"] = 20,	-- Thunderous Flounder
+							["itemID"] = 167723,	-- Thunderous Flounder
+						},
+						{	-- Tortollan Tank Dweller
+							["criteriaID"] = 21,	-- Tortollan Tank Dweller
+							["itemID"] = 167724,	-- Tortollan Tank Dweller
+						},
+						{	-- Travelling Goby
+							["criteriaID"] = 22,	-- Travelling Goby
+							["itemID"] = 167714,	-- Travelling Goby
+						},
+						{	-- Unseen Mimmic
+							["criteriaID"] = 23,	-- Unseen Mimmic
+							["itemID"] = 167716,	-- Unseen Mimmic
+						},
+						{	-- Spiritual Salmon
+							["criteriaID"] = 24,	-- Spiritual Salmon
+							["itemID"] = 167725,	-- Spiritual Salmon
+						},
+						{	-- Veiled Ghost
+							["criteriaID"] = 25,	-- Veiled Ghost
+							["itemID"] = 167713,	-- Veiled Ghost
+						},
+						{	-- Very Tiny Whale
+							["criteriaID"] = 26,	-- Very Tiny Whale
+							["itemID"] = 167720,	-- Very Tiny Whale
+						},
+						{	-- Green Roughy
+							["criteriaID"] = 27,	-- Green Roughy
+							["itemID"] = 169884,	-- Green Roughy
+						},
+						{	-- Displaced Scrapfin
+							["criteriaID"] = 28,	-- Displaced Scrapfin
+							["itemID"] = 169870,	-- Displaced Scrapfin
+						},
+						{	-- Thin Air Flounder
+							["criteriaID"] = 29,	-- Thin Air Flounder
+							["itemID"] = 169897,	-- Thin Air Flounder
+						},
+						{	-- Well Lurker
+							["criteriaID"] = 30,	-- Well Lurker
+							["itemID"] = 169898,	-- Well Lurker
+						},
 					}),
 					ach(2095, {		-- Silver in the City
 						crit(1),		-- Aegwynn's Silver Coin
