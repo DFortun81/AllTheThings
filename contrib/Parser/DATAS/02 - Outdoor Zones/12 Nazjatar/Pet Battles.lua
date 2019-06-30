@@ -57,7 +57,7 @@ _.Zones =
 				}),
 			}),
 			n(151782, {	-- Ravenous Slime
-				["description"] = "Feed |cFFFFD700Ravenous Slime|r a critter by using a |cFFFFD700Prismatic Crystal|r to charm them. Do this for 5 days to get a random pet from the cocoon.",
+				["description"] = "Feed each |cFFFFD700Ravenous Slime|r a critter by using a |cFFFFD700Prismatic Crystal|r to charm them. Do this for 5 days to get a random pet from the cocoon.",
 				["coords"] = {
 					{ 32.9, 39.8, 1355 },
 					{ 45.7, 24.1, 1355 },
