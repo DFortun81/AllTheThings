@@ -423,6 +423,15 @@ _.Zones =
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 54086,	-- Right Bot for the Job
 				}),
+				q(55211, {	-- Recharging Rustbolt
+					["qg"] = 150631,	-- Pristy Quickcharge
+					["coord"] = { 70.7, 38.4, 1462 },
+					["sourceQuest"] = 56319,	-- The Quickcharge Contract
+					["minReputation"] = HONORED,
+					["g"] = {
+						i(166970),	-- Energy Cell
+					},
+				}),
 				q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued -- horde only?  didn't pop on alliance on live)
 					["qg"] = 152820,	-- Prince Erazmin
 					["coord"] = { 59.1, 55.1, 1462 },
@@ -609,6 +618,11 @@ _.Zones =
 					["qg"] = 153993,	-- Chromie
 					["coord"] = { 70.2, 30.9, 1462 },
 					["isDaily"] = true,
+				}),
+				q(56319, {	-- The Quickcharge Contract
+					["qg"] = 150631,	-- Pristy Quickcharge
+					["coord"] = { 70.7, 38.4, 1462 },
+					["minReputation"] = HONORED,
 				}),
 				q(55729, {	-- The Resistance Needs You!
 					["qg"] = 152851,	-- Prince Erazmin
