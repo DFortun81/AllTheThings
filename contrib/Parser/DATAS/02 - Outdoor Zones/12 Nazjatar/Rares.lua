@@ -79,6 +79,10 @@ _.Zones =
 				},
 			}),
 			n(152566, {	-- Anemonar
+				--["questID"] =
+				--["description"] = 
+				["isDaily"] = true,
+				["coord"] = { 58.6, 53.2, 1355 },
 				["g"] = {
 					crit(4, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
