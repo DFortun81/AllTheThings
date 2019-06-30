@@ -186,6 +186,10 @@ _.Factions =
 						["factionID"] = 2162,	-- Storm's Wake
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Waveblade Ankoan
+						["factionID"] = 2400,	-- Waveblade Ankoan
+						["races"] = ALLIANCE_ONLY,
+					},
 				},
 			},
 		},
@@ -370,6 +374,10 @@ _.Factions =
 						["factionID"] = 2103,	-- Zandalari Empire
 						["races"] = HORDE_ONLY,
 					},
+					{	-- The Unshackled
+						["factionID"] = 2373,	-- The Unshackled
+						["races"] = ALLIANCE_ONLY,
+					},
 				},
 			},
 		},
@@ -466,5 +474,6 @@ _.Factions =
 	tier(8, {	-- Battle For Azeroth
 		faction(2164), 	-- Champions of Azeroth
 		faction(2163), 	-- Tortollan Seekers
+		faction(2391),	-- Rustbolt Resistance
 	}),
 };
