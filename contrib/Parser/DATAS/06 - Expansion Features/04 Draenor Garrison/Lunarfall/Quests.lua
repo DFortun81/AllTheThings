@@ -2301,18 +2301,19 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
 				}),
 				q(36861, {	-- Pinchwhistle Gearworks (Alliance)
-				--	unknown prerequisite(s) to get this version
-					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
 					["coord"] = { 45.8, 46.0, 582 },
 					["lvl"] = 96,
 					["qg"] = 86589,	-- Watchman Tilnia
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(37433, {	-- Proving Grounds
 					["coord"] = { 29.1, 34.6, 582 },
 					["lvl"] = 100,
 					["qg"] = 79953,	-- Lieutenant Thorn
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
 					["g"] = {
 						i(119463),	-- Staff of Trials
 						i(119458),	-- Greataxe of Trials
