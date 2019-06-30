@@ -497,11 +497,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 149813,	-- Gila Crosswires
 				}),
-				q(56751, {	-- Rustbolt Requisitions: Calcified Bone (H)
-					["isDaily"] = true,
-					["coord"] = { 73.8, 26.0, 1462 },
-					["races"] = HORDE_ONLY,
+				q(56750, {	-- Rustbolt Requisitions: Calcified Bone (H)
 					["qg"] = 150563,	-- Skaggit
+					["coord"] = { 73.8, 26.0, 1462 },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
 				}),
 				q(56752, {	-- Rustbolt Requisitions: Deep Sea Satin
 					["qg"] = 150563,	-- Skaggit
