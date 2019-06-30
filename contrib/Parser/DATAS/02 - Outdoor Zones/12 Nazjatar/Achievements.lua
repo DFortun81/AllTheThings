@@ -147,6 +147,9 @@ _.Zones =
 			ach(13722, {	-- Terror of the Tadpoles
 				["coord"] = { 28.5, 31.2, 1355 },
 				["description"] = "Tadpoles are easily found in and around Bloodfin Village.",
+				["crs"] = {
+					152275,	-- Bloodfin Tadpole
+				},
 			}),
 			ach(13549),	-- Trove Tracker
 			ach(13638, {	-- Undersea Usurper
