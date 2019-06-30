@@ -219,8 +219,7 @@ _.Zones =
 				},
 			}),
 			n(152414, {	-- Elder Unu
-				["allianceQuestID"] = 56599,
-				["hordeQuestID"] = 56284,
+				["questID"] = 56284,
 				["coord"] = { 64.3, 34.7, 1355 },
 				["isDaily"] = true,
 				["g"] = {
@@ -652,6 +651,7 @@ _.Zones =
 				["coord"] = { 49.4, 65.5, 1355 },
 			}),
 			n(153898, {	-- Tidelord Aquatus
+				["questID"] = 56122,
 				["isDaily"] = true,
 				["coord"] = { 62.4, 29.6, 1355 },
 				["g"] = {

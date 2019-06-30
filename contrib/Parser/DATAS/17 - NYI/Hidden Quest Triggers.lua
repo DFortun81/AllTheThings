@@ -210,6 +210,7 @@ _.NeverImplemented =
 		q(56887),	-- Carnivorous Lasher first kill
 		q(56600),	-- Caverndark Terror first kill
 		q(56612),	-- Daggertooth Terror first kill
+		q(56599),	-- Elder Unu first kill
 		q(56598),	-- Elderspawn Nalaada first kill
 		q(56610),	-- Garnetscale first kill
 		q(56597),	-- Iridescent Glimmershell first kill
