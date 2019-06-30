@@ -235,6 +235,23 @@ _.NeverImplemented =
 		q(55554),	-- Mechanized Chest. Chests spawn randomly
 		q(55555),	-- Mechanized Chest. Chests spawn randomly
 		q(55556),	-- Mechanized Chest. Chests spawn randomly
+		q(55919),	-- Bonepicker first kill
+		q(55927),	-- Crazed Trogg first kill
+		q(55917),	-- Deepwater Maw first kill
+		q(56994),	-- Enforcer KX-T57 first kill
+		q(55916),	-- Foul Manifestation first kill
+		q(55910),	-- Jawbreaker first kill
+		q(55914),	-- Killsaw first kill
+		q(55926),	-- Malfunctioning Beastbot first kill
+		q(55909),	-- Mecharantula first kill
+		q(55935),	-- Mr. Fixthis first kill
+		q(55928),	-- Ol' Big Tusk first kill
+		q(55911),	-- Paol Pondwader first kill
+		q(55912),	-- Rumblerocks first kill
+		q(55924),	-- Rustfeather first kill
+		q(55922),	-- Seaspit first kill
+		q(55933),	-- Steel Singer Freza first kill
+		q(55908),	-- The Scrap King first kill
 		q(55921),	-- Uncle T'Rogg first kill
 		q(56004),	-- looting Energy Cell while on the quest "We Can Fix It"
 		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"

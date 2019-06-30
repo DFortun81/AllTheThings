@@ -67,9 +67,7 @@ _.Zones =
 					},
 				}),
 				n(152001, {	-- Bonepicker
-					["allianceQuestID"] = 55537,
-					--["hordeQuestID"] = 55919,
-					["hordeQuestID"] = 55537,
+					["questID"] = 55537,
 					["coord"] = { 65.8, 22.9, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -89,9 +87,7 @@ _.Zones =
 					},
 				}),
 				n(152569, {	-- Crazed Trogg
-					["allianceQuestID"] = 55812,
-					--["allianceQuestID"] = 55927,
-					["hordeQuestID"] = 55812,
+					["questID"] = 55812,
 					["coord"] = { 82.3, 21.0, 1462 },
 					["isDaily"] = true,
 					["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
@@ -103,9 +99,7 @@ _.Zones =
 					},
 				}),
 				n(151569, {	-- Deepwater Maw
-					["allianceQuestID"] = 55514,
-					--["hordeQuestID"] = 55917,
-					["hordeQuestID"] = 55514,
+					["questID"] = 55514,
 					["coord"] = { 35.3, 43.0, 1462 },
 					["isDaily"] = true,
 					["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn him.",
@@ -135,9 +129,7 @@ _.Zones =
 					},
 				}),
 				n(154153, {	-- Enforcer KX-T57
-					["allianceQuestID"] = 56207,
-					--["hordeQuestID"] = 56994,
-					["hordeQuestID"] = 56207,
+					["questID"] = 56207,
 					["isDaily"] = true,
 					["g"] = {
 						crit(31, {	-- Enforcer KX-T57
@@ -149,9 +141,7 @@ _.Zones =
 					},
 				}),
 				n(151202, {	-- Foul Manifestation
-					["allianceQuestID"] = 55513,
-					--["hordeQuestID"] = 55916,
-					["hordeQuestID"] = 55513,
+					["questID"] = 55513,
 					["coord"] = { 65.7, 51.7, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -205,9 +195,7 @@ _.Zones =
 					},
 				}),
 				n(151684, {	-- Jawbreaker
-					["allianceQuestID"] = 55399,
-					--["hordeQuestID"] = 55910, -- 56089 also popped.
-					["hordeQuestID"] = 55399,
+					["questID"] = 55399,
 					["coord"] = { 77.3, 44.8, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -221,9 +209,7 @@ _.Zones =
 					},
 				}),
 				n(152007, {	-- Killsaw
-					["allianceQuestID"] = 55369,
-					--["hordeQuestID"] = 55914, -- 56506 also triggered. verify on next kill
-					["hordeQuestID"] = 55369,
+					["questID"] = 55369,
 					["coord"] = { 42.6, 48.7, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -234,9 +220,7 @@ _.Zones =
 					},
 				}),
 				n(151933, {	-- Malfunctioning Beastbot
-					["allianceQuestID"] = 55544,
-					--["hordeQuestID"] = 55926,
-					["hordeQuestID"] = 55544,
+					["questID"] = 55544,
 					["coord"] = { 60.7, 42.2, 1462 },
 					["isDaily"] = true,
 					["description"] = "Requires a |cFFFFD700Beastbot Powerpack|r.",
@@ -259,9 +243,7 @@ _.Zones =
 					},
 				}),
 				n(151672, {	-- Mecharantula
-					["allianceQuestID"] = 55386,
-					--["allianceQuestID"] = 55909,
-					["hordeQuestID"] = 55386,
+					["questID"] = 55386,
 					["coord"] = { 88.3, 20.6, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -272,9 +254,7 @@ _.Zones =
 					},
 				}),
 				n(151627, {	-- Mr. Fixthis
-					["allianceQuestID"] = 55859,
-					--["hordeQuestID"] = 55935,
-					["hordeQuestID"] = 55859,
+					["questID"] = 55859,
 					["coord"] = { 61.0, 61.4, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -288,9 +268,7 @@ _.Zones =
 					},
 				}),
 				n(153206, {	-- Ol' Big Tusk
-					["allianceQuestID"] = 55853,
-					--["hordeQuestID"] = 55928,
-					["hordeQuestID"] = 55853,
+					["questID"] = 55853,
 					["coord"] = { 55.6, 39.5, 1462 },
 					["isDaily"] = true,
 					["description"] = "Must activate the |cFFFFD700Drill Rig|r.",
@@ -322,9 +300,7 @@ _.Zones =
 					},
 				}),
 				n(151702, {	-- Paol Pondwader
-					["allianceQuestID"] = 55405,
-					--["hordeQuestID"] = 55911,
-					["hordeQuestID"] = 55405,
+					["questID"] = 55405,
 					["coord"] = { 23.0, 68.4, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -335,9 +311,7 @@ _.Zones =
 					},
 				}),
 				n(150575, {	-- Rumblerocks
-					["allianceQuestID"] = 55368,
-					--["hordeQuestID"] = 55912,
-					["hordeQuestID"] = 55368,
+					["questID"] = 55368,
 					["coord"] = { 39.9, 53.2, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -348,9 +322,7 @@ _.Zones =
 					},
 				}),
 				n(152182, {	-- Rustfeather
-					["allianceQuestID"] = 55811,
-					--["hordeQuestID"] = 55924,
-					["hordeQuestID"] = 55811,
+					["questID"] = 55811,
 					["coord"] = { 65.6, 78.3, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -374,9 +346,7 @@ _.Zones =
 					},
 				}),
 				n(150937, {	-- Seaspit
-					["allianceQuestID"] = 55545,
-					--["hordeQuestID"] = 55922,
-					["hordeQuestID"] = 55545,
+					["questID"] = 55545,
 					["coord"] = { 19.3, 80.4, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -397,9 +367,7 @@ _.Zones =
 					},
 				}),
 				n(153226, {	-- Steel Singer Freza
-					["allianceQuestID"] = 55854,
-					--["hordeQuestID"] = 55933,
-					["hordeQuestID"] = 55854,
+					["questID"] = 55854,
 					["coord"] = { 25.1, 77.4, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -434,9 +402,7 @@ _.Zones =
 					},
 				}),
 				n(151625, {	-- The Scrap King
-					["allianceQuestID"] = 55364,
-					--["allianceQuestID"] = 55908,
-					["hordeQuestID"] = 55364,
+					["questID"] = 55364,
 					["coord"] = { 72.3, 49.8, 1462 },
 					["isDaily"] = true,
 					["crs"] = {

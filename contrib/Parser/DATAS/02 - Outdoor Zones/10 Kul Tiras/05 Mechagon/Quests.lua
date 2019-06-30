@@ -482,11 +482,17 @@ _.Zones =
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 55608,	-- Shop Project
 				}),
-				q(56751, {	-- Rustbolt Requisitions: Calcified Bone
+				q(56751, {	-- Rustbolt Requisitions: Calcified Bone (A)
 					["isDaily"] = true,
 					["coord"] = { 77.7, 40.3, 1462 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 149813,	-- Gila Crosswires
+				}),
+				q(56751, {	-- Rustbolt Requisitions: Calcified Bone (H)
+					["isDaily"] = true,
+					["coord"] = { 73.8, 26.0, 1462 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 150563,	-- Skaggit
 				}),
 				q(56752, {	-- Rustbolt Requisitions: Deep Sea Satin
 					["qg"] = 150563,	-- Skaggit
