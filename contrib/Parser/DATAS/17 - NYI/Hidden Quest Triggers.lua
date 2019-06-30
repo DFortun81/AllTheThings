@@ -216,8 +216,10 @@ _.NeverImplemented =
 		q(56597),	-- Iridescent Glimmershell first kill
 		q(56609),	-- Mirecrawler first kill
 		q(56608),	-- Needlespine first kill
+		q(56595),	-- Oronu first kill
 		q(56594),	-- Prince Typhonus first kill
 		q(56593),	-- Prince Vortran first kill
+		q(56287),	-- Reefwalker first kill
 		q(56606),	-- Sandclaw Stonoeshell first kill
 		q(56590),	-- Scale Matriarch Vynara first kill
 		q(56589),	-- Scale Matriarch Zodia first kill
@@ -226,6 +228,7 @@ _.NeverImplemented =
 		q(56586),	-- Silstalker the Packmother first kill
 		q(56620),	-- Tidemistress Leth'sindra first kill
 		q(56605),	-- Toxigore the Alpha first kill
+		q(56299),	-- Urduu first kill
 		-- Mechagon
 		q(55547),	-- Mechanized Chest. Chests spawn randomly
 		q(55548),	-- Mechanized Chest. Chests spawn randomly

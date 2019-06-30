@@ -32,6 +32,11 @@ _.Zones =
 			--		{ , , 1355 },	-- Alliance
 			--		{ , , 1355 },	-- Horde
 			--	},
+				["questID"] = 56969,	-- confirmed as ID for horde (Pr3vention)
+				["repeatable"] = true,
+				["crs"] = {
+					152568,	-- Urduu
+				},
 				["g"] = {
 					crit(38, {	-- Ancient Reefwalker Bark
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got

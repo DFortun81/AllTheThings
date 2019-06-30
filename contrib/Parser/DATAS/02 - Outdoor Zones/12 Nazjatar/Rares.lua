@@ -278,7 +278,10 @@ _.Zones =
 				},
 			}),
 			n(152567, {	-- Kelpwillow
+				["questID"] = 56596,	-- (TODO: verify this)
+				["coord"] = { 50.2, 69.6, 1355 },
 				["isDaily"] = true,
+				["description"] = "Use a |cFFFFD700Prismatic Crystal|r to charm a |cFFFFD700Muck Slug|r and bring it to Kelpwillow to activate him.",
 				["g"] = {
 					crit(15, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -349,7 +352,10 @@ _.Zones =
 				},
 			}),
 			n(152397, {	-- Oronu
+				["questID"] = 56288, -- TODO: verify id
+				["coord"] = { 78.2, 25.0, 1355 },
 				["isDaily"] = true,
+				["description"] = "Summon a |cFFFFD700Drowned Hatchling|r battle pet to activate. You can purchase the pet from |cFFFFD700Feylana the Handler|r for 40 Prismatic Manapearls.",
 				["g"] = {
 					crit(19, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -719,7 +725,10 @@ _.Zones =
 				},
 			}),
 			n(152568, {	-- Urduu
+				["questID"] = 56584, -- TODO: verify daily ID. Also triggered 57140
+				["coord"] = { 31.3, 29.4, 1355 },
 				["isDaily"] = true,
+				["description"] = "Kill a |cFFFFD700Staghorn Reefwalker|r on top of Urduu to activate him.",
 				["g"] = {
 					crit(36, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
