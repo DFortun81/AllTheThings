@@ -1105,6 +1105,22 @@ _.Zones =
 					55500,	-- Save A Friend (Horde)
 				},
 			}),
+			q(55792, {	-- Requisition: More Cone Shells
+				["qgs"] = {
+					151633,	-- Karn Deepweld (Horde)
+				--	??,	-- ?? (Alliance)
+				},
+				["coords"] = {
+					{ 49.3, 61.5, 1355 },	-- Karn Deepweld (Horde)
+				--	{ ??, ??, 1355 },	-- ?? (Alliance)
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
+				},
+				["isDaily"] = true,
+				
+			}),
 			q(55785, {	-- Requisition: More Starfish
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1183,10 +1199,6 @@ _.Zones =
 					},
 					{	-- Requisition: A Few Starfish
 						["questID"] = 55719,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: More Cone Shells
-						["questID"] = 55792,
 						["isDaily"] = true,
 					},
 					{	-- Requisition: More Deepcoral Buds

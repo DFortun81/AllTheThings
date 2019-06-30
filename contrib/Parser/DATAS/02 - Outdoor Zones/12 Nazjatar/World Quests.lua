@@ -123,7 +123,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(56022, {	-- Leylocked Chest
+				q(56022, {	-- Runelocked Chest
 					["lvl"] = 120,
 					["collectible"] = false,
 					["g"] = {
@@ -162,6 +162,10 @@ _.Zones =
 							["criteriaID"] = 1,
 						},
 					},
+				}),
+				q(56385, {	-- Pearlhusk Crawler
+					["collectible"] = false,
+					["lvl"] = 120,
 				}),
 				q(56381, {	-- Prince Wiggletail
 					["lvl"] = 120,
@@ -434,7 +438,7 @@ _.Zones =
 						i(169501),	-- Recipe: Greater Flask of Endless Fathoms (Rank 3)
 					},
 				}),
-				q(56770, {	-- Work Order: Greater Flask of the Undertow (A)
+				q(56768, {	-- Work Order: Greater Flask of the Undertow (A)
 					["collectible"] = false,
 					["requireSkill"] = 171,	-- Alchemy
 					["races"] = ALLIANCE_ONLY,
@@ -443,7 +447,7 @@ _.Zones =
 						i(169503),	-- Recipe: Greater Flask of the Undertow (Rank 3)
 					},
 				}),
-				q(56768, {	-- Work Order: Greater Flask of the Undertow (H)
+				q(56774, {	-- Work Order: Greater Flask of the Undertow (H)
 					["collectible"] = false,
 					["requireSkill"] = 171,	-- Alchemy
 					["races"] = HORDE_ONLY,
