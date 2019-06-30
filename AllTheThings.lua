@@ -11350,6 +11350,10 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				},
 			};
 			self.rawData = {};
+			local emissaryMapIDs = {
+				{ 619, 650 },	-- Broken Isles, Highmountain
+				{ app.FactionID == Enum.FlightPathFaction.Horde and 875 or 876, 895 },	-- Kul'Tiras or Zandalar, Stormsong Valley
+			};
 			local worldMapIDs = {
 				14,		-- Arathi Highlands
 				62,		-- Darkshore
@@ -11379,7 +11383,51 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				local retry = false;
 				local temp = {};
 				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
-				for _,mapID in pairs(worldMapIDs) do
+				
+				-- Acquire all of the emissary quests
+				for _,pair in ipairs(emissaryMapIDs) do
+					local mapID = pair[1];
+					local mapObject = { mapID=mapID,g={},progress=0,total=0};
+					local cache = fieldCache["mapID"][mapID];
+					if cache then
+						for _,data in ipairs(cache) do
+							if data.mapID and data.icon then
+								mapObject.icon = data.icon;
+								mapObject.lvl = data.lvl;
+								mapObject.description = data.description;
+								break;
+							end
+						end
+					end
+					local bounties = GetQuestBountyInfoForMapID(pair[2]);
+					if bounties and #bounties > 0 then
+						for i,bounty in ipairs(bounties) do
+							local questObject = {questID=bounty.questID,g={}};
+							cache = fieldCache["questID"][questObject.questID];
+							if cache then
+								for _,data in ipairs(cache) do
+									for key,value in pairs(data) do
+										if not (key == "g" or key == "parent") then
+											questObject[key] = value;
+										end
+									end
+									if data.g then
+										for _,entry in ipairs(data.g) do
+											tinsert(questObject.g, entry);
+										end
+									end
+								end
+							end
+							MergeObject(mapObject.g, questObject);
+						end
+					end
+					if #mapObject.g > 0 then
+						MergeObject(temp, mapObject);
+					end
+				end
+				
+				-- Acquire all of the world quests.
+				for _,mapID in ipairs(worldMapIDs) do
 					local mapObject = { mapID=mapID,g={},progress=0,total=0};
 					local cache = fieldCache["mapID"][mapID];
 					if cache then
