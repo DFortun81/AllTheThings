@@ -1,18 +1,19 @@
 profession(333, {	-- Enchanting
 	filter(200, {	-- Recipes
 		{
+			["categoryID"] = 1255--[[Training]],
+			["g"] = {
+				{
+					-- Enchant Runic Power Core
+					["recipeID"] = 284415,--[[Enchant Runic Power Core]]
+					["u"] = 15,	-- Training
+				}
+			}
+		},
+		{
 			["categoryID"] = 647--[[Zandalari Enchanting]],
 			["g"] = {
-								{
-					["categoryID"] = 1255--[[Training]],
-					["g"] = {
-						{
-							-- Enchant Runic Power Core
-							["recipeID"] = 284415,--[[Enchant Runic Power Core]]
-							["u"] = 15,	-- Training
-						}
-					}
-				},
+
 				{
 					["categoryID"] = 650--[[Glove Enchantments]],
 					["g"] = {
