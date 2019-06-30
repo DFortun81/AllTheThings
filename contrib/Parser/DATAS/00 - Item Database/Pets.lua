@@ -100,6 +100,7 @@ pet(166452, 2547);	-- Bottled Essence of Hydrath (Hydrath Droplet)
 pet(152970, 2082);	-- Bound Stream
 pet(66067, 291); 	-- Brazie's Sunflower Seeds (Singing Sunflower)
 pet(128424, 1466);	-- Brightpaw
+pet(169354, 2688);	-- Brilliant Glimmershell
 pet(71387, 325);	-- Brilliant Kaliri
 pet(97557, 1235); 	-- Brilliant Phoenix Hawk Feather (Pheonix Hawk Hatchling)
 pet(118107, 1540); 	-- Brilliant Spore
@@ -370,6 +371,7 @@ pet(163802, 2461);	-- Inky
 pet(97549, 1227); 	-- Instant Arcane Sanctum Security Kit (Menagerie Custodian)
 pet(111660, 1387); 	-- Iron Starlette
 pet(142087, 1956); 	-- Ironbound Collar (Ironbound Proto-Whelp)
+pet(169879, 2756);	-- Irradiated Elementaling
 pet(88148, 792); 	-- Jade Crane Chick
 pet(82774, 845); 	-- Jade Owl
 pet(89686, 856);	-- Jade Tentacle

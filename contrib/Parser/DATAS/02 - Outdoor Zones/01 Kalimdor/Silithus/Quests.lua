@@ -418,6 +418,7 @@ _.Zones =
 					["g"] = {
 						un(2, i(20601, { 	-- Sack of Spoils
 							un(7, i(20696)), 	-- Crystal Spiked Maul
+							un(7, i(20698)),	-- Elemental Attuned Blade
 						})),
 					},
 				},

@@ -479,6 +479,7 @@ _.ExpansionFeatures =
 						i(164320),	-- Plundered Bear-Carved Fists
 						i(164270),	-- Plundered Berserker's Poleaxe
 						i(164267),	-- Plundered Biting Shot Longbow
+						i(169290),	-- Plundered Black Tooth Face-Splitter
 						i(164334),	-- Plundered Blade of Northern Kings
 						i(164333),	-- Plundered Bow of the Chosen
 						i(164364),	-- Plundered Carapace Linked Longsword
@@ -503,6 +504,7 @@ _.ExpansionFeatures =
 						i(164346),	-- Plundered Frost Scepter
 						i(164327),	-- Plundered Fury-Fin Axe
 						i(164342),	-- Plundered Geode Gavel
+						i(169289),	-- Plundered Gourd Thumper
 						i(164295),	-- Plundered Heart Hacker
 						i(164293),	-- Plundered Horn Pummeler
 						i(164314),	-- Plundered Hozen Chieftain's Stave

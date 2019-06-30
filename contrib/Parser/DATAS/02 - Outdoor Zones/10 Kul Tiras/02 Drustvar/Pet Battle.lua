@@ -274,6 +274,7 @@ _.Zones =
 						i(163796, {	-- Wolf Pup Spine
 							["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
 						}),
+						i(163497),	-- Spooky Bundle of Sticks (this item actually gives the pet)
 					},
 				}),
 			}),

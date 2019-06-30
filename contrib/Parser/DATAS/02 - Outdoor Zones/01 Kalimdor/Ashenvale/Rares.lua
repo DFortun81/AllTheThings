@@ -533,6 +533,7 @@ _.Zones =
 						i(9806),	-- Superior Gloves
 						i(9807),	-- Superior Shoulders
 						i(9809),	-- Superior Tunic
+						un(7, i(5753)),	-- Ruffled Chaplet
 						un(7, i(5754)),	-- Wolfpack Medallion
 					},
 				}),
