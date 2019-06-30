@@ -64,6 +64,17 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 54090,	-- Toys For Destruction
 				}),
+				i(169173, {	-- Blueprint: Anti-Gravity Pack
+					["questID"] = 55081,
+					["crs"] = {
+						152182,	-- Rustfeather
+					},
+					["g"] = {
+						crit(33, {	-- Anti-Gravity Pack
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
 				i(168248, {	-- Blueprint: BAWLD-371
 					["questID"] = 55068,
 					["crs"] = {
@@ -71,6 +82,17 @@ _.Zones =
 					},
 					["g"] = {
 						crit(15, {	-- BAWLD-371
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
+				i(169169, {	-- Blueprint: Blue Spraybot
+					["questID"] = 55077,
+					["crs"] = {
+						152569,	-- Crazed Trogg
+					},
+					["g"] = {
+						crit(29, {	-- Blue Spraybot
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
@@ -140,6 +162,17 @@ _.Zones =
 						}),
 					},
 				}),
+				i(169167, {	-- Blueprint: Orange Spraybot
+					["questID"] = 55075,
+					["crs"] = {
+						152569,	-- Crazed Trogg
+					},
+					["g"] = {
+						crit(27, {	-- Orange Spraybot
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
 				i(168491, {	-- Blueprint: Personal Time Displacer
 					["questID"] = 55070,
 					["description"] = "Can only be found during the |cFFFFD700The Other Place|r world quest.",
@@ -170,6 +203,19 @@ _.Zones =
 					},
 					["g"] = {
 						crit(13, {	-- Rustbolt Kegerator
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
+				i(167042, {	-- Blueprint: Scrap Trap
+					["questID"] = 55030,
+					["crs"] = {
+						153200,	-- Boilburn
+						150342,	-- Earthbreaker Gulroc
+						151202,	-- Foul Manifestation
+					},
+					["g"] = {
+						crit(2, {	-- Scrap Trap
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
