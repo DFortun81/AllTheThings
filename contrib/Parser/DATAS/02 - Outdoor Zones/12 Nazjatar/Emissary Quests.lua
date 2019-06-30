@@ -35,6 +35,7 @@ _.Zones =
 							}),		
 						}),
 						i(170469),	-- Memento of the Deeps
+						i(170169),	-- Technique: Glyph of the Cold Waves
 					}),
 				},
 			}),

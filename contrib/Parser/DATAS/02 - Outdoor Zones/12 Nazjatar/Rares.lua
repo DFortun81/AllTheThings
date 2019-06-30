@@ -94,6 +94,8 @@ _.Zones =
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
+					i(169612),	-- Recipe: Osmenite Deposit (Rank 2)
+					i(169613),	-- Recipe: Osmenite Seam (Rank 2)
 				},
 			}),
 			n(152361, {	-- Banescale the Packfather
@@ -760,6 +762,8 @@ _.Zones =
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
+					i(170066),	-- Skinning Technique: Dredged Leather (Rank 2)
+					i(170067),	-- Skinning Technique: Cragscale (Rank 2)
 				},
 			}),
 			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency that can be looted once per day
