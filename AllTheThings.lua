@@ -9735,9 +9735,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					setmetatable(clone, getmetatable(group));
 					group = clone;
 					
-					-- If relative to a difficultyID, then merge it into one.
-					local difficultyID = GetRelativeValue(group, "difficultyID");
-					if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
+					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
+					local difficultyID = not GetRelativeField(group, "npcID", -496) and GetRelativeValue(group, "difficultyID");
+					local first = false;
 					
 					-- If this is relative to a holiday, let's do something special
 					if GetRelativeField(group, "npcID", -3) then
@@ -9773,26 +9773,33 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						end
 						if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
 						MergeObject(holiday, group);
-					elseif group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
-						header.key = group.key;
-						header[group.key] = group[group.key];
-						MergeObject({header}, group);
-					elseif group.key == "npcID" then
-						if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
-							MergeObject(groups, app.CreateNPC(-4, { g = { group } }), 1);
-						elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-							MergeObject(groups, app.CreateNPC(-2, { g = { group } }), 1);
-						elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-							MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
-						else
-							MergeObject(groups, group);
-						end
-					elseif group.key == "questID" then
-						MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
-					elseif group.key == "speciesID" then
-						MergeObject(groups, app.CreateNPC(-25, { g = { group } }), 1);
 					else
-						MergeObject(groups, group);
+						if group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
+							header.key = group.key;
+							header[group.key] = group[group.key];
+							MergeObject({header}, group);
+						elseif group.key == "speciesID" then
+							group = app.CreateNPC(-25, { g = { group } });
+							first = true;
+						elseif group.key == "questID" then
+							group = app.CreateNPC(-17, { g = { group } });
+							first = true;
+						else
+							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
+								group = app.CreateNPC(-4, { g = { group } });
+								first = true;
+							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+								group = app.CreateNPC(-2, { g = { group } });
+								first = true;
+							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
+								group = app.CreateNPC(-17, { g = { group } });
+								first = true;
+							end
+						end
+						
+						-- If relative to a difficultyID, then merge it into one.
+						if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
+						MergeObject(groups, group, first and 1);
 					end
 				end
 				
