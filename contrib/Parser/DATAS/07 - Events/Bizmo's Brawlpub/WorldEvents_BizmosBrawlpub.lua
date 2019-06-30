@@ -143,16 +143,6 @@ _.WorldEvents =
 					},
 					["g"] = {
 						i(166724),	-- Bruce (MOUNT!)
-						i(164936, {	-- Mysterious Challenge Card
-							["questID"] = 55022,	-- Solving the Mystery
-							["groups"] = {
-								n(145782, {	-- Xan-Sallish <Blade of the Watcher>
-									i(164940, {	-- Mysterious Satchel
-										i(164942),	-- Shadowscrawled Tome
-									}),
-								}),
-							},
-						}),
 					},
 				}),
 			}),
@@ -163,6 +153,17 @@ _.WorldEvents =
 					}),
 					i(164935, {	-- Challenge Card: Lord Sylysthrel
 						["questID"] = 55007,	-- Lord Browne's Debts
+					}),
+					i(164936, {	-- Mysterious Challenge Card
+						["description"] = "If you fail killing Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
+						["questID"] = 55022,	-- Solving the Mystery
+						["groups"] = {
+							n(145782, {	-- Xan-Sallish <Blade of the Watcher>
+								i(164940, {	-- Mysterious Satchel
+									i(164942),	-- Shadowscrawled Tome
+								}),
+							}),
+						},
 					}),
 				}),
 				n(70723, { -- Dame Jesepha
@@ -227,6 +228,7 @@ _.WorldEvents =
 					["currencyID"] = 1299,	-- Brawler's Gold
 					["groups"] = {
 						i(143763, {	-- Bag of Chipped Dice
+							ach(13194),		-- I Am Thrall's Complete Lack Of Surprise
 							n(117208, {		-- a Seagull
 								i(144375, {		-- Feathered Brawler's Purse
 									i(144368),		-- Felfeather Jersey
@@ -337,6 +339,53 @@ _.WorldEvents =
 						i(143758, {	-- Free Drinks Voucher
 							["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
 							["questID"] = 55017,	-- Flaunt It If You Got It
+						}),
+						i(142288, {	-- Rumble Card: Grief Warden
+							{
+								["npcID"] = 114943,	-- Grief Warden <Enmity Moose>
+								["achievementID"] = 11573,	-- Rumble Club
+								["criteriaID"] = 2,	-- Grief Warden
+							},
+						}),
+						i(142290, {	-- Rumble Card: Battle of the Brew
+							{
+								["achievementID"] = 11573,	-- Rumble Club
+								["criteriaID"] = 3,	-- Battle of the Brew
+							},
+						}),
+						i(142294, {	-- Rumble Card: Mazhareen
+							{
+								["npcID"] = 68251,	-- Mazhareen
+								["achievementID"] = 11573,	-- Rumble Club
+								["criteriaID"] = 1,	-- Mazhareen
+							},
+						}),
+						i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
+							{
+								["npcID"] = 117102,	-- Mindbreaker Gzzaj
+								["achievementID"] = 11573,	-- Rumble Club
+								["criteriaID"] = 4,	-- Mindbreaker Gzzaj
+							},
+						}),
+						i(142289, {	-- Rumble Card: Penguin Stampede
+							{
+								["npcID"] = 115185,	-- Penguin Stampede
+								["achievementID"] = 11573,	-- Rumble Club
+								["criteriaID"] = 6,	-- Penguin Stampede
+							},
+						}),
+						i(142291, {	-- Rumble Card: Senya
+							{
+								["npcID"] = 115357,	-- Senya
+								["achievementID"] = 11573,	-- Rumble Club
+								["criteriaID"] = 5,	-- Senya
+							},
+						}),
+						i(142292, {	-- Rumble Card: Stranglethorn Streak
+							{
+								["achievementID"] = 11573,	-- Rumble Club
+								["criteriaID"] = 7,	-- Stranglethorn Streak
+							},
 						}),
 						i(143759, {	-- VIP Room Rental Form
 							["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
