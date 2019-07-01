@@ -33,10 +33,6 @@ profession(202, {	-- Engineering
 							["recipeID"] = 39895
 						},
 						{
-							["name"] = "Goblin Rocket Fuel Recipe",
-							["recipeID"] = 12715
-						},
-						{
 							["name"] = "Gold Power Core",
 							["recipeID"] = 12584
 						},
@@ -51,10 +47,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Heavy Blasting Powder",
 							["recipeID"] = 3945
-						},
-						{
-							["name"] = "Inlaid Mithril Cylinder Plans",
-							["recipeID"] = 12895
 						},
 						{
 							["name"] = "Iron Strut",
@@ -151,24 +143,8 @@ profession(202, {	-- Engineering
 							["recipeID"] = 8243
 						},
 						{
-							["name"] = "Goblin Bomb Dispenser",
-							["recipeID"] = 12755
-						},
-						{
-							["name"] = "Goblin Dragon Gun",
-							["recipeID"] = 12908
-						},
-						{
 							["name"] = "Goblin Land Mine",
 							["recipeID"] = 3968
-						},
-						{
-							["name"] = "Goblin Mortar",
-							["recipeID"] = 12716
-						},
-						{
-							["name"] = "Goblin Sapper Charge",
-							["recipeID"] = 12760
 						},
 						{
 							["name"] = "Heavy Dynamite",
@@ -223,10 +199,6 @@ profession(202, {	-- Engineering
 							["recipeID"] = 12586
 						},
 						{
-							["name"] = "The Big One",
-							["recipeID"] = 12754
-						},
-						{
 							["name"] = "The Mortar: Reloaded",
 							["recipeID"] = 13240,
 							["u"] = 2
@@ -270,10 +242,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Flying Tiger Goggles",
 							["recipeID"] = 3934
-						},
-						{
-							["name"] = "Gnomish Goggles",
-							["recipeID"] = 12897
 						},
 						{
 							["name"] = "Green Lens",
@@ -334,10 +302,6 @@ profession(202, {	-- Engineering
 							["recipeID"] = 12617
 						},
 						{
-							["name"] = "Dimensional Ripper - Everlook",
-							["recipeID"] = 23486
-						},
-						{
 							["name"] = "Discombobulator Ray",
 							["recipeID"] = 3959
 						},
@@ -354,68 +318,16 @@ profession(202, {	-- Engineering
 							["recipeID"] = 22797
 						},
 						{
-							["name"] = "Gnomish Alarm-o-Bot",
-							["recipeID"] = 23096
-						},
-						{
-							["name"] = "Gnomish Battle Chicken",
-							["recipeID"] = 12906
-						},
-						{
 							["name"] = "Gnomish Cloaking Device",
 							["recipeID"] = 3971
-						},
-						{
-							["name"] = "Gnomish Death Ray",
-							["recipeID"] = 12759
-						},
-						{
-							["name"] = "Gnomish Harm Prevention Belt",
-							["recipeID"] = 12903
-						},
-						{
-							["name"] = "Gnomish Mind Control Cap",
-							["recipeID"] = 12907
-						},
-						{
-							["name"] = "Gnomish Net-o-Matic Projector",
-							["recipeID"] = 12902
-						},
-						{
-							["name"] = "Gnomish Rocket Boots",
-							["recipeID"] = 12905
-						},
-						{
-							["name"] = "Gnomish Shrink Ray",
-							["recipeID"] = 12899
 						},
 						{
 							["name"] = "Gnomish Universal Remote",
 							["recipeID"] = 9269
 						},
 						{
-							["name"] = "Goblin Construction Helmet",
-							["recipeID"] = 12718
-						},
-						{
 							["name"] = "Goblin Jumper Cables",
 							["recipeID"] = 9273
-						},
-						{
-							["name"] = "Goblin Jumper Cables XL",
-							["recipeID"] = 23078
-						},
-						{
-							["name"] = "Goblin Mining Helmet",
-							["recipeID"] = 12717
-						},
-						{
-							["name"] = "Goblin Rocket Boots",
-							["recipeID"] = 8895
-						},
-						{
-							["name"] = "Goblin Rocket Helmet",
-							["recipeID"] = 12758
 						},
 						{
 							["name"] = "Gyrofreeze Ice Reflector",
@@ -438,10 +350,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Lifelike Mechanical Toad",
 							["recipeID"] = 19793
-						},
-						{
-							["name"] = "Lil' Smoky",
-							["recipeID"] = 15633
 						},
 						{
 							["name"] = "Major Recombobulator",
@@ -506,17 +414,8 @@ profession(202, {	-- Engineering
 							["recipeID"] = 23082
 						},
 						{
-							["name"] = "Ultrasafe Transporter - Gadgetzan",
-							["recipeID"] = 23489,
-							["description"] = "Speak to Jhordy Lapforge in Gadgetzan at 52.17, 27.88 to learn this recipe.",
-						},
-						{
 							["name"] = "Voice Amplification Modulator",
 							["recipeID"] = 19819
-						},
-						{
-							["name"] = "World Enlarger",
-							["recipeID"] = 23129
 						}
 					}
 				},
