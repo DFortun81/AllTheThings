@@ -354,6 +354,21 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
+			q(55829, {	-- Bounty: More Hydras
+				["isDaily"] = true,
+				["qgs"] = {
+					152942,	-- Lieutenant Hawkins (Alliance)
+				--	,	--  (Horde)
+				},
+				["coords"] = {
+					{ 40.1, 55.5, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
+				},
+			}),
 			q(55828, {	-- Bounty: More Murlocs
 				["isDaily"] = true,
 				["qgs"] = {
@@ -962,12 +977,20 @@ _.Zones =
 					spell(303357),	-- Flight Master's Whistle Upgrade: Nazjatar
 				},
 			}),
+			q(55625, {	-- Pearls of Unimaginable Power
+				["qg"] = 152407,	-- Arcanist Owara
+				["coord"] = { 31.5, 37.6, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
+				["sourceQuest"] = 56156,	-- A Tempered Blade  (maybe add 57041 for selecting Farseer Ori for the day?)
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			}),
 			q(56157, {	-- Plug the Geysers
 				["qg"] = 154246,	-- Apprentice Inari
 				["coord"] = { 31.0, 37.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56166,	-- The Needs of the People
+				["sourceQuest"] = 56156,	-- A Tempered Blade  (maybe add 57041 for selecting Farseer Ori for the day?)
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
 			q(56158, {	-- Plug the Geysers
@@ -1209,10 +1232,6 @@ _.Zones =
 					},
 					{	-- Bounty: A Few Snapdragons
 						["questID"] = 55824,
-						["isDaily"] = true,
-					},
-					{	-- Bounty: More Hydra
-						["questID"] = 55829,
 						["isDaily"] = true,
 					},
 					{	-- Bounty: More Makrura
