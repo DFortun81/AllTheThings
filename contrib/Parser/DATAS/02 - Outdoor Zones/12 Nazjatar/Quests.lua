@@ -358,11 +358,11 @@ _.Zones =
 				["isDaily"] = true,
 				["qgs"] = {
 					152942,	-- Lieutenant Hawkins (Alliance)
-				--	,	--  (Horde)
+					151614,	-- Nevin Tideheart  (Horde)
 				},
 				["coords"] = {
 					{ 40.1, 55.5, 1355 },	-- Alliance
-				--	{ , , 1355 },	-- Horde
+					{ 49.8, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)

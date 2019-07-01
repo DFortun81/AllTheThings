@@ -41,6 +41,10 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
+				q(56399, {	-- Unit 6
+					["collectible"] = false,
+					["lvl"] = 120,
+				}),	
 				q(56398, {	-- Unit 35
 					["collectible"] = false,
 					["lvl"] = 120,
