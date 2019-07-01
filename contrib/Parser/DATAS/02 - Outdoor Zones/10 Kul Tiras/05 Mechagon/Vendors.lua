@@ -21,10 +21,16 @@ _.Zones =
 						i(167062, {	-- Armored Vaultbot Key
 							i(170072),	-- Armored Vaultbot
 						}),
+						i(168833, {	-- Experimental Adventurer Augmentation
+							i(169002),	-- Calibrated Hefty Cog
+							i(169007),	-- Laser-Etched Band
+							i(169009),	-- Reinforced Digit Diode
+							i(169008),	-- Rust Resistant Loop
+						}),
 						i(167751),	-- Mechanocat Laser Pointer
 						i(169384),	-- Microbot XD
-						i(169383),	-- Utility Mechanoclaw
 						i(169155),	-- Scrapmaster's Blowtorch
+						i(169383),	-- Utility Mechanoclaw
 					},
 				}),
 				n(150716, {	-- Stolen Royal Vendorbot
