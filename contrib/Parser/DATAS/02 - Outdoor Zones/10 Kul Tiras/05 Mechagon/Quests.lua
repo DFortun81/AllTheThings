@@ -263,6 +263,11 @@ _.Zones =
 						}),
 					},
 				}),
+				q(56573, {	-- Certified Pre-Owned (may require completion of 56319 "The Quickcharge Contract" / Honored rep)
+					["qg"] = 150631,	-- Pristy Quickcharge
+					["coord"] = { 70.8, 38.4, 1462 },
+					["isDaily"] = true,
+				}),
 				q(54965, {	-- Chopped Bots -- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation? -- also popped 55480
 					["qg"] = 150086,	-- Bolten Springspark
 					["coord"] = { 63.1, 39.2, 1462 },
@@ -446,6 +451,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(55451, {	-- Paint Vial: Fireball Red
+					["description"] = "This item can drop from any of the Mechanized Chests in the zone.",
 					["itemID"] = 167790,
 					["g"] = {
 						crit(6, {	-- Available in Eight Colors
