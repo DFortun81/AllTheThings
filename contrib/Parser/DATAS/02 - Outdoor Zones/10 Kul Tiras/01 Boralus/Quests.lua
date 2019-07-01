@@ -408,13 +408,13 @@ _.Zones =
 					["coord"] = { 75.0, 77.7, 895 },
 					["qg"] = 145396,	-- Xal'atath
 				}),
-				q(53763, {	-- Twist the Knife
+				qa(54126, {	-- Twist the Knife [Alliance]
 					["sourceQuest"] = 53762,	-- The Tempest Crown
 					["coord"] = { 53.0, 13.6, 864 },
 					["qg"] = 146384,	-- Xal'atath
 				}),
 				q(53766, {	-- His Eye Upon You
-					["sourceQuest"] = 53763,	-- Twist the Knife
+					["sourceQuest"] = 54126,	-- Twist the Knife [Alliance]
 					["description"]	= "You only get the toy if you choose to cleanse the gift.",
 					["coords"] = { 67.4, 21.0, 1161 },
 					["races"] = ALLIANCE_ONLY,
@@ -424,7 +424,7 @@ _.Zones =
 					},
 				}),
 				q(54438, {	-- Crucible of Storms: Relics of Shadow
-					["sourceQuest"] = 53763,	-- Twist the Knife
+					["sourceQuest"] = 54126,	-- Twist the Knife
 					["coords"] = { 67.4, 21.0, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 146902,	-- Brother Pike
