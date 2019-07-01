@@ -175,6 +175,10 @@ _.Zones =
 					["lvl"] = 120,
 					["collectible"] = false,
 				}),
+				q(56387, {	-- Ravenous Scalespawn
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
 				q(56003, {	-- Runelocked Chest
 					["lvl"] = 120,
 					["collectible"] = false,
