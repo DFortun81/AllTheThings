@@ -21,74 +21,52 @@ _.Toys =
 		i(98132),		-- Shado-Pan Geyser Gun
 		i(43824),		-- The Schools of Arcane Magic - Mastery
 		i(122293, {		-- Trans-Dimensional Bird Whistle
-			["groups"] = {
-				{	-- A Tiny Diving Helmet
-					["itemID"] = 161451,	-- A Tiny Diving Helmet
-					["questID"] = 52277,	-- Pepe can be sometimes be summoned with this mask
-					["coord"] = {
-						54.01, 71.01,	-- Pepe Location
-					},
-					["description"] = "Located inside the fish tank of \"Catherine Morgan's\" cat house.",
+			i(161451, {	-- A Tiny Diving Helmet
+				["questID"] = 52277,	-- Pepe can be sometimes be summoned with this mask
+				["coord"] = { 54.01, 71.01, 1161 },
+				["description"] = "Located inside the fish tank of |cFFFFD700Catherine Morgan's|r cat house.",
+			}),
+			i(127867, {	-- A Tiny Ninja Shroud
+				["questID"] = 39267,	-- Pepe can be sometimes be summoned with this mask
+				["coord"] = { 47.51, 41.31, 543 },
+			}),
+			i(139632, {	-- A Tiny Pair of Goggles
+				["questID"] = 43695,	-- Pepe can be sometimes be summoned with this mask
+				["coords"] = {
+					{ 42.31, 57.51, 627 },	-- Near Fruit Vendor
+					{ 48.01, 58.01, 627 },	-- Stairs to Curiositiese & Moore
+					{ 47.71, 32.31, 627 },	-- Magus Commerce Exchange well
+					{ 47.31, 37.61, 627 },	-- Legerdemain Lounge
+					{ 40.01, 28.01, 627 },	-- Things of the Past
+					{ 42.01, 19.01, 627 },	-- Antonidas Memoria
+					{ 36.01, 37.01, 627 },	-- Angelique Butler (First Aid Shop)
 				},
-				{	-- A Tiny Ninja Shroud
-					["itemID"] = 127867,	-- A Tiny Ninja Shroud
-					["questID"] = 39267,	-- Pepe can be sometimes be summoned with this mask
-					["coord"] = {
-						47.51, 41.31	-- Pepe Location
-					},
+			}),
+			i(127870, {	-- A Tiny Pirate Hat
+				["questID"] = 39268,	-- Pepe can be sometimes be summoned with this mask
+				["coord"] = { 54.11, 83.61, 542 },
+			}),
+			i(127869, {	-- A Tiny Plated Helm
+				["questID"] = 39266,	-- Pepe can be sometimes be summoned with this mask
+				["coord"] = { 51.01, 63.31, 535 },
+			}),
+			i(128874, {	-- A Tiny Scarecrow Costume
+				["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
+				["coords"] = {
+					{ 70.71, 90.21, 590 },	-- Pepe Location [Horde]
+					{ 40.12, 70.06, 582 },	-- Pepe Location [Alliance]
 				},
-				{	-- A Tiny Pair of Goggles
-					["itemID"] = 139632,	-- A Tiny Pair of Goggles
-					["questID"] = 43695,	-- Pepe can be sometimes be summoned with this mask
-					["coords"] = {
-						{ 42.31, 57.51 },	-- Near Fruit Vendor
-						{ 48.01, 58.01 },	-- Stairs to Curiositiese & Moore
-						{ 47.71, 32.31 },	-- Magus Commerce Exchange well
-						{ 47.31, 37.61 },	-- Legerdemain Lounge
-						{ 40.01, 28.01 },	-- Things of the Past
-						{ 42.01, 19.01 },	-- Antonidas Memoria
-						{ 36.01, 37.01 },	-- Angelique Butler (First Aid Shop)
-					},
-				},
-				{	-- A Tiny Pirate Hat
-					["itemID"] = 127870,	-- A Tiny Pirate Hat
-					["questID"] = 39268,	-- Pepe can be sometimes be summoned with this mask
-					["coord"] = {
-						54.11, 83.61	-- Pepe Location
-					},
-				},
-				{	-- A Tiny Plated Helm
-					["itemID"] = 127869,	-- A Tiny Plated Helm
-					["questID"] = 39266,	-- Pepe can be sometimes be summoned with this mask
-					["coord"] = {
-						51.01, 63.31	-- Pepe Location
-					},
-				},
-				{	-- A Tiny Scarecrow Costume
-					["itemID"] = 128874,	-- A Tiny Scarecrow Costume
-					["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
-					["coords"] = {
-						{ 70.71, 90.21 },	-- Pepe Location [Horde]
-						{ 40.12, 70.06 },	-- Pepe Location [Alliance]
-					},
-					["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
-				},
-				{	-- A Tiny Viking Helmet
-					["itemID"] = 127865,	-- A Tiny Viking Helmet
-					["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask
-					["coord"] = {
-						80.11, 50.4	-- Pepe Location
-					},
-				},
-				{	-- A Tiny Voodoo Mask
-					["itemID"] = 161443,	-- A Tiny Voodo Mask
-					["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask
-					["coord"] = {
-						38.98, 15.80,	-- Pepe Location
-					},
-					["description"] = "Located inside the \"Hot House\" with it's entrance at 37.88, 15.98.",
-				},
-			},
+				["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
+			}),
+			i(127865, {	-- A Tiny Viking Helmet
+				["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask
+				["coord"] = { 80.11, 50.4, 550 },
+			}),
+			i(161443, {	-- A Tiny Voodo Mask
+				["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask
+				["coord"] = { 38.98, 15.80, 1163 },
+				["description"] = "Located inside the |cFFFFD700Hot House|r.",
+			}),
 		}),
 	}),
 };

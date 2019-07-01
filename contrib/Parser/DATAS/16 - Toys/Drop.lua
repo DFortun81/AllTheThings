@@ -59,9 +59,7 @@ _.Toys =
 		i(129113), 		-- Faintly Glowing Flagon of Mead
 		i(140780), 		-- Fal'dorei Egg
 		i(122304, { 	-- Fandral's Seed Pouch (Druid Only)
-			["groups"] = {
-			},
-			["classes"] = {11},
+			["classes"] = {11},	-- Druid
 		}),
 		i(86581),		-- Farwater Conch
 		i(127652),		-- Felflame Campfire
@@ -87,9 +85,7 @@ _.Toys =
 		i(163750),		-- Kovork Kostume
 		i(88566), 		-- Krastinov's Bag of Horrors
 		i(140632, {		-- Lava Fountain -- only Shaman
-			["groups"] = {
-			},
-			["classes"] = {7},
+			["classes"] = {7},	-- Shaman
 		}),
 		i(163603),		-- Lucille's Handkerchief
 		i(153194),  	-- Legion Communication Orb
@@ -127,9 +123,7 @@ _.Toys =
 		i(153293),  	-- Sightless Eye
 		i(128328), 		-- Skoller's Bag of Squirrel Treats
 		i(143544, { 	-- Skull of Corruption -- only demon hunter
-			["groups"] = {
-			},
-			["classes"] = {12},
+			["classes"] = {12},	-- Demon Hunter
 		}),
 		i(127669), 		-- Skull of the Mad Chief
 		i(119163),		-- Soul Inhaler
@@ -141,15 +135,11 @@ _.Toys =
 		i(122681), 		-- Sternfathom's Pet Journal
 		i(111476),		-- Stolen Breath
 		i(140160, { 	-- Stormforged Vrykul Horn -- only Warrior
-			["groups"] = {
-			},
-			["classes"] = {1},
+			["classes"] = {1},	-- Warrior
 		}),
 		i(37254), 		-- Super Simian Sphere
 		i(139587, { 	-- Suspicious Crate -- only Rogue
-			["groups"] = {
-			},
-			["classes"] = {4},
+			["classes"] = {4},	-- Rogue
 		}),
 		i(163738),		-- Syndicate Mask
 		i(116120),		-- Tasty Talador Lunch
@@ -179,7 +169,7 @@ _.Toys =
 		i(163745),		-- Witherbark Gong
 		i(130214), 		-- Worn Doll
 		i(36862),		-- Worn Troll Dice
-		-- i(164371), 		-- Yaungol Oil Stove
+		un(1, i(164371)), 		-- Yaungol Oil Stove
 		i(153180),  	-- Yellow Conservatory Scroll
 		i(170199),		-- Zanj'ir Weapon Rack
 	}),

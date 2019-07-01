@@ -90,7 +90,9 @@ _.Toys =
 			i(138202),	-- Sparklepony XL
 		}),
 		n(-56, {    -- Brewfest
-			["groups"] = {
+			["achievementID"] = 1683,	-- Brewmaster
+			["u"] = 24,
+			["g"] = {
 				i(116758),	-- Brewfest Banner
 				i(169865),	-- Brewfest Chowdown Trophy
 				i(71137), 	-- Brewfest Keg Pony
@@ -100,30 +102,30 @@ _.Toys =
 				i(90427),	-- Pandaren Brewpack
 				i(116757),	-- Steamworks Sausage Grill
 			},
-			["achievementID"] = 1683,	-- Brewmaster
-			["u"] = 24,
 		}),
 		n(-52, {    -- Children's Week
-			["groups"] = {
+			["achievementID"] = 1793,	-- For The Children
+			["u"] = 20,
+			["g"] = {
 				i(69895), 	-- Green Balloon
 				i(69896), 	-- Yellow Balloon
 			},
-			["achievementID"] = 1793,	-- For The Children
-			["u"] = 20,
 		}),
 		n(-59, {    -- Day of the Dead
-			["groups"] = {
+			["achievementID"] = 3456,	-- Dead Man's Party
+			["u"] = 27,
+			["g"] = {
 				i(116856),	-- "Blooming Rose" Contender's Costume
 				i(116888),	-- "Night Demon" Contender's Costume
 				i(116889),	-- "Purple Phantom" Contender's Costume
 				i(116890),	-- "Santo's Sun" Contender's Costume
 				i(116891),	-- "Snowy Owl" Contender's Costume
 			},
-			["achievementID"] = 3456,	-- Dead Man's Party
-			["u"] = 27,
 		}),
 		n(-61, {    -- Feast of Winter Veil
-			["groups"] = {
+			["achievementID"] = 1691,	-- Merrymaker
+			["u"] = 29,
+			["g"] = {
 				i(54343), 	-- Blue Crashin' Thrashin' Racer Controller
 				i(108632), 	-- Crashin' Thrashin' Flamer Controller
 				i(104318), 	-- Crashin' Thrashin' Flyer Controller
@@ -154,120 +156,82 @@ _.Toys =
 				i(17712), 	-- Winter Veil Disguise Kit
 				i(116691), 	-- Zhevra Lounge Cushion
 			},
-			["achievementID"] = 1691,	-- Merrymaker
-			["u"] = 29,
 		}),
-		{	-- Hallow's End
-			["npcID"] = -58,			-- Hallow's End
+		n(-58, {	-- Hallow's End
 			["achievementID"] = 1656,	-- Hallowed Be Thy Name
+			["u"] = 26,
 			["g"] = {
-				{	-- Coin of Many Faces
-					["itemID"] = 128807,	-- Coin of Many Faces
-					["u"] = 26,				-- Hallow's End
-				},
-				{	-- Headless Horseman's Hearthstone
-					["itemID"] = 163045,	-- Headless Horseman's Hearthstone
-				},
-				{	-- Horse Head Costume
-					["itemID"] = 151271,	-- Horse Head Costume
-					["u"] = 26,				-- Hallow's End
-				},
-				{	-- Horse Tail Costume
-					["itemID"] = 151270,	-- Horse Tail Costume
-					["u"] = 26,				-- Hallow's End
-				},
-				{	-- Little Wickerman
-					["itemID"] = 70722,		-- Little Wickerman
-					["u"] = 26,				-- Hallow's End
-				},
-				{	-- Sack of Spectral Spiders
-					["itemID"] = 128794,	-- Sack of Spectral Spiders
-					["u"] = 26,				-- Hallow's End
-				},
+				un(26, i(128807)),	-- Coin of Many Faces
+				i(163045),	-- Headless Horseman's Hearthstone
+				un(26, i(151271)),	-- Horse Head Costume
+				un(26, i(151270)),	-- Horse Tail Costume
+				un(26, i(70722)),	-- Little Wickerman
+				un(26, i(128794)),	-- Sack of Spectral Spiders
 			},
-		},
+		}),
 		n(-50, {    -- Love is in the Air
-			["groups"] = {
+			["achievementID"] = 1693,    -- Fool For Love
+			["u"] = 18,
+			["g"] = {
 				i(142341), 	-- Love Boat
-				{	-- Peddlefeet's Lovely Hearthstone
-					["itemID"] = 165670,	-- Peddlefeet's Lovely Hearthstone
-				},
+				i(165670),	-- Peddlefeet's Lovely Hearthstone
 				i(34480),	-- Romantic Picnic Basket
 				i(144339), 	-- Sturdy Love Fool
 				i(50471),	-- The Heartbreaker
 				i(116651),	-- True Love Prism
 			},
-			["achievementID"] = 1693,    -- Fool For Love
-			["u"] = 18,
 		}),
 		n(-47, {    -- Lunar Festival
-			["groups"] = {
-				{	-- Blue Dragon Body Costume
-					["itemID"] = 165672,	-- Blue Dragon Body Costume
-				},
-				{	-- Blue Dragon Head Costume
-					["itemID"] = 165671,	-- Blue Dragon Head Costume
-				},
-				{	-- Blue Dragon Tail Costume
-					["itemID"] = 165673,	-- Blue Dragon Tail Costume
-				},				
+			["achievementID"] = 913,	-- To Honor One's Elders
+			["u"] = 17,
+			["g"] = {
+				i(165672),	-- Blue Dragon Body Costume
+				i(165671),	-- Blue Dragon Head Costume
+				i(165673),	-- Blue Dragon Tail Costume
 				i(143828), 	-- Dragon Body Costume
 				i(143827), 	-- Dragon Head Costume
 				i(143829), 	-- Dragon Tail Costume
 				i(21540),	-- Elune's Lantern
 				i(89999),	-- Everlasting Alliance Firework (Alliance)
 				i(90000),	-- Everlasting Horde Firework (Horde)
-				{	-- Green Dragon Body Costume
-					["itemID"] = 165675,	-- Green Dragon Body Costume
-				},
-				{	-- Green Dragon Head Costume
-					["itemID"] = 165674,	-- Green Dragon Head Costume
-				},
-				{	-- Green Dragon Tail Costume
-					["itemID"] = 165676,	-- Green Dragon Tail Costume
-				},
-				{	-- Lunar Elder's Hearthstone
-					["itemID"] = 165669,	-- Lunar Elder's Hearthstone
-				},
+				i(165675),	-- Green Dragon Body Costume
+				i(165674),	-- Green Dragon Head Costume
+				i(165676),	-- Green Dragon Tail Costume
+				i(165669),	-- Lunar Elder's Hearthstone
 			},
-			["achievementID"] = 913,	-- To Honor One's Elders
-			["u"] = 17,
 		}),
 		n(-53, {  	-- Midsummer Fire Festival
-			["groups"] = {
+			["icon"] = "Interface\\Icons\\inv_summerfest_firespirit",
+			["u"] = 21,
+			["g"] = {
 				i(34686), 	-- Brazier of Dancing Flames
 				i(116440), 	-- Burning Defender's Medallion
 				i(116435),	-- Cozy Bonfire
 				i(166746),	-- Fire Eater's Hearthstone
 				i(141649),	-- Set of Matches
 			},
-			["icon"] = "Interface\\Icons\\inv_summerfest_firespirit",
-			["u"] = 21,
 		}),
-		{	-- Noblegarden
-			["npcID"] = -51,			-- Noblegarden
+		n(-51, {	-- Noblegarden
 			["achievementID"] = 2798,	-- Noble Gardener
+			["u"] = 19,
 			["g"] = {
-				{	-- Noble Gardener's Hearthstone
-					["itemID"] = 165802,	-- Noble Gardener's Hearthstone
-					["u"] = 19,				-- Noble Garden
-				},
+				un(19, i(165802)),	-- Noble Gardener's Hearthstone
 			},
-		},			
+		}),			
 		n(-60, {    -- Pilgrim's Bounty
-			["groups"]  = {
-				un(28, i(116400)), 	-- Silver-Plated Turkey Shooter
-			},
 			["achievementID"] = 3478,	-- Pilgrim
 			["u"] = 28,
+			["g"]  = {
+				un(28, i(116400)), 	-- Silver-Plated Turkey Shooter
+			},
 		}),
 		n(-55, {    -- Pirate's Day
-			["groups"] = {
+			["achievementID"] = 3457,	-- The Captain's Booty
+			["u"] = 23,
+			["g"] = {
 				i(150547),	-- Jolly Roger
 				i(138415),	-- Slightly-Chewed Insult Book
 			},
-			["achievementID"] = 3457,	-- The Captain's Booty
-			["u"] = 23,
 		}),
 	}),
 };

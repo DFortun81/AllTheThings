@@ -22,7 +22,7 @@ _.InGameShop =
 		un(35, i(156564)),	-- Shu-zen, the Divine Sentinel
 		un(2, i(92724)),	-- Swift Windsteed
 		un(35, i(112326, {	-- Warforged Nightmare
-			["groups"] = {
+			["g"] = {
 				un(35, i(112324)),	-- Nightmarish Hitching Post
 			},
 		})),
@@ -40,8 +40,6 @@ _.InGameShop =
 		un(2, i(69847)),	-- Guardian Cub (Original Version which was bound for 24h)
 		un(7, i(72068)),	-- Guardian Cub
 		un(2, i(49662, {	-- Gryphon Hatchling
-			["groups"] = {
-			},
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		})),
 		un(35, i(49693)),	-- Lil' K.T.
@@ -57,13 +55,11 @@ _.InGameShop =
 		un(35, i(147900)),	-- Twilight
 		un(35, i(160587)),	-- Whomper
 		un(2, i(49663, {	-- Wind Rider Cub
-			["groups"] = {
-			},
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		})),
 	}),
 	n(-161, {	-- Toys
-			["groups"] = {
+			["g"] = {
 				un(35, i(166778)),	-- Horde's Might Firework
 				un(35, i(166777)),	-- Lion's Pride Firework
 				un(35, i(166779)),	-- Transmorpher Beacon
