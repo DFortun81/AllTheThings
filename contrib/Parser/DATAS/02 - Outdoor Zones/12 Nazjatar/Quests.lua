@@ -853,7 +853,7 @@ _.Zones =
 				["coord"] = { 44.9, 76.8, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Save A Friend -- todo: verify source
+				["sourceQuest"] = 55500,	-- Save A Friend
 			}),
 			q(56095, {	-- Legacy of Nar'anan
 				["qg"] = 154143,	-- Collector Kojo
@@ -1136,11 +1136,11 @@ _.Zones =
 				["isDaily"] = true,
 				["qgs"] = {
 					151763,	-- Isla (Alliance)
-				--	,	--  (Horde)
+					151614,	-- Nevin Tideheart (Horde)
 				},
 				["coords"] = {
 					{ 37.8, 55.4, 1355 },	-- Alliance
-				--	{ , , 1355 },	-- Horde
+					{ 50.4, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)				

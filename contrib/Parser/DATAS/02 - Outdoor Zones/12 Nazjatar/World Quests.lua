@@ -89,6 +89,10 @@ _.Zones =
 					["lvl"] = 120,
 					["collectible"] = false,
 				}),
+				q(56386, {	-- Elderspawn of Nalaada
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
 				q(55895, {	-- Frozen Winds of Zhiela
 					["lvl"] = 120,
 					["collectible"] = false,
