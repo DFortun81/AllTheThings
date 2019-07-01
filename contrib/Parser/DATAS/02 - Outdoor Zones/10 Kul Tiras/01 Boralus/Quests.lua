@@ -413,7 +413,7 @@ _.Zones =
 					["coord"] = { 53.0, 13.6, 864 },
 					["qg"] = 146384,	-- Xal'atath
 				}),
-				q(53766, {	-- His Eye Upon You
+				q(53765, {	-- His Eye Upon You
 					["sourceQuest"] = 54126,	-- Twist the Knife [Alliance]
 					["description"]	= "You only get the toy if you choose to cleanse the gift.",
 					["coords"] = { 67.4, 21.0, 1161 },
