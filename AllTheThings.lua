@@ -144,7 +144,14 @@ local function GetTempDataMember(member, default)
 	end
 end
 local function SetDataSubMember(member, submember, data)
-	rawset(rawget(AllTheThingsAD,member), submember, data);
+	attData = rawget(AllTheThingsAD, member);
+	if attData == nil then
+		attData = {};
+		rawset(attData, submember, data);
+		rawset(AllTheThingsAD, member, attData);
+	else
+		rawset(attData, submember, data);
+	end
 end
 local function GetDataSubMember(member, submember, default)
 	attData = rawget(AllTheThingsAD,member);
@@ -164,7 +171,14 @@ local function GetDataSubMember(member, submember, default)
 	end
 end
 local function SetTempDataSubMember(member, submember, data)
-	rawset(rawget(AllTheThingsTempData,member), submember, data);
+	attData = rawget(AllTheThingsTempData, member);
+	if attData == nil then
+		attData = {};
+		rawset(attData, submember, data);
+		rawset(AllTheThingsTempData, member, attData);
+	else
+		rawset(attData, submember, data);
+	end
 end
 local function GetTempDataSubMember(member, submember, default)
 	attData = rawget(AllTheThingsTempData,member);
@@ -12702,6 +12716,13 @@ app.events.VARIABLES_LOADED = function()
 		myfactions = {};
 		factions[app.GUID] = myfactions;
 		SetTempDataMember("CollectedFactions", myfactions);
+	end
+	local factionBonusReps = GetDataMember("CollectedFactionBonusReputationPerCharacter", {});
+	local myfactionBonusReps = GetTempDataMember("CollectedFactionBonusReputation", factionBonusReps[app.GUID]);
+	if not myfactionBonusReps then
+		myfactionBonusReps = {};
+		factionBonusReps[app.GUID] = myfactionBonusReps;
+		SetTempDataMember("CollectedFactionBonusReputation", myfactionBonusReps);
 	end
 	
 	-- Cache your character's building data.
