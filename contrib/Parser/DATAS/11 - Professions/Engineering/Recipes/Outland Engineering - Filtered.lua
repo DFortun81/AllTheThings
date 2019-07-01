@@ -61,14 +61,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Frost Grenade",
 							["recipeID"] = 39973
-						},
-						{
-							["name"] = "Super Sapper Charge",
-							["recipeID"] = 30560
-						},
-						{
-							["name"] = "The Bigger One",
-							["recipeID"] = 30558
 						}
 					}
 				},
@@ -78,7 +70,8 @@ profession(202, {	-- Engineering
 					["g"] = {
 						{
 							["name"] = "Annihilator Holo-Gogs",
-							["recipeID"] = 46111
+							["recipeID"] = 46111,
+							["classes"] = { 5,8,9 } -- Priest, Mage, Warlock
 						},
 						{
 							["name"] = "Cogspinner Goggles",
@@ -101,20 +94,14 @@ profession(202, {	-- Engineering
 							["recipeID"] = 41315
 						},
 						{
-							["name"] = "Gnomish Battle Goggles",
-							["recipeID"] = 30575
-						},
-						{
-							["name"] = "Gnomish Power Goggles",
-							["recipeID"] = 30574
-						},
-						{
 							["name"] = "Hard Khorium Goggles",
-							["recipeID"] = 46115
+							["recipeID"] = 46115,
+							["classes"] = { 1,2,6 } -- Warrior, Paladin, Death Knight
 						},
 						{
 							["name"] = "Hyper-Magnified Moon Specs",
-							["recipeID"] = 46109
+							["recipeID"] = 46109,
+							["classes"] = { 11 } -- Druid
 						},
 						{
 							["name"] = "Hyper-Vision Goggles",
@@ -126,11 +113,13 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Justicebringer 3000 Specs",
-							["recipeID"] = 46107
+							["recipeID"] = 46107,
+							["classes"] = { 2 } -- Paladin
 						},
 						{
 							["name"] = "Lightning Etched Specs",
-							["recipeID"] = 46112
+							["recipeID"] = 46112,
+							["classes"] = { 7 } -- Shaman
 						},
 						{
 							["name"] = "Living Replicator Specs",
@@ -142,7 +131,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Mayhem Projection Goggles",
-							["recipeID"] = 46114
+							["recipeID"] = 46114,
+							["classes"] = { 11 } -- Druid
 						},
 						{
 							["name"] = "Power Amplification Goggles",
@@ -154,15 +144,18 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Powerheal 9000 Lens",
-							["recipeID"] = 46108
+							["recipeID"] = 46108,
+							["classes"] = { 5 } -- Priest
 						},
 						{
 							["name"] = "Primal-Attuned Goggles",
-							["recipeID"] = 46110
+							["recipeID"] = 46110,
+							["classes"] = { 7 } -- Shaman
 						},
 						{
 							["name"] = "Quad Deathblow X44 Goggles",
-							["recipeID"] = 46116
+							["recipeID"] = 46116,
+							["classes"] = { 4,10,11 } -- Rogue, Monk, Druid
 						},
 						{
 							["name"] = "Surestrike Goggles v2.0",
@@ -170,7 +163,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Surestrike Goggles v3.0",
-							["recipeID"] = 46113
+							["recipeID"] = 46113,
+							["classes"] = { 3,7 } -- Hunter, Shaman
 						},
 						{
 							["name"] = "Tankatronic Goggles",
@@ -186,7 +180,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Wonderheal XT68 Shades",
-							["recipeID"] = 46106
+							["recipeID"] = 46106,
+							["classes"] = { 11 } -- Druid
 						}
 					}
 				},
@@ -199,36 +194,12 @@ profession(202, {	-- Engineering
 							["recipeID"] = 30337
 						},
 						{
-							["name"] = "Dimensional Ripper - Area 52",
-							["recipeID"] = 36954
-						},
-						{
 							["name"] = "Fel Iron Toolbox",
 							["recipeID"] = 30348
 						},
 						{
 							["name"] = "Field Repair Bot 110G",
 							["recipeID"] = 44391
-						},
-						{
-							["name"] = "Foreman's Enchanted Helmet",
-							["recipeID"] = 30565
-						},
-						{
-							["name"] = "Foreman's Reinforced Helmet",
-							["recipeID"] = 30566
-						},
-						{
-							["name"] = "Gnomish Flame Turret",
-							["recipeID"] = 30568
-						},
-						{
-							["name"] = "Gnomish Poultryizer",
-							["recipeID"] = 30569
-						},
-						{
-							["name"] = "Goblin Rocket Launcher",
-							["recipeID"] = 30563
 						},
 						{
 							["name"] = "Healing Potion Injector",
@@ -239,21 +210,12 @@ profession(202, {	-- Engineering
 							["recipeID"] = 30552
 						},
 						{
-							["name"] = "Nigh-Invulnerability Belt",
-							["recipeID"] = 30570
-						},
-						{
 							["name"] = "Rocket Boots Xtreme",
 							["recipeID"] = 30556
 						},
 						{
 							["name"] = "Rocket Boots Xtreme Lite",
 							["recipeID"] = 46697
-						},
-						{
-							["name"] = "Ultrasafe Transporter - Toshley's Station",
-							["recipeID"] = 36955,
-							["description"] = "Requires Gnomish Engineering. Speak to Smiles O'Byron just outside Toshley's Station in Blade's Edge Mountains at 60.35, 65.21 to learn this recipe.",
 						},
 						{
 							["name"] = "Zapthrottle Mote Extractor",
