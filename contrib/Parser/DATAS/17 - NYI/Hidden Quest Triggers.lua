@@ -114,6 +114,7 @@ _.NeverImplemented =
 		q(35051),	-- Mage Tower Complete
 		q(34772),	-- Morkeths Cage
 		q(33963),	-- Nagrand Flowerpicker
+		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle
 		q(34904),	-- Portal Vision
 		q(34872),	-- Prized Repossessions Tracking
 		q(34985),	-- Prized Repossessions Tracking
@@ -141,6 +142,18 @@ _.NeverImplemented =
 		q(34118),	-- Vignette: Guy 1 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
 		q(34119),	-- Vignette: Guy 2 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
 		q(34523),	-- Warlock Speaking to Gul'dan),	-- triggers near Gul'Rok
+		q(35626),	-- Friend of the Exarchs: Apprentice Artificer Andren selected
+		q(35629),	-- Friend of the Exarchs: Vindicator Onaala selected
+		q(35628),	-- Friend of the Exarchs: Rangari Chel selected
+		q(34600),	-- Tracking Quest: Saw Vorka, Rangari Leave
+		q(34622),	-- Tracking Quest: Saw Ner'zhul Leave
+		q(33839),	-- Tracking Quest: Saw Naaru Purified
+		q(36907),	-- Tracking Quest: Defense of Karabor - Celebration Finished
+		q(33086),	-- Tracking Quest: The Root of Darkness - Stone 1
+		q(33165),	-- Tracking Quest: The Root of Darkness - Stone 2
+		q(33167),	-- Tracking Quest: The Root of Darkness - Stone 3
+		q(33166),	-- Tracking Quest: The Root of Darkness - Stone 4
+		q(34896),	-- Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
 		
 		-------------------
 		--      BFA      --

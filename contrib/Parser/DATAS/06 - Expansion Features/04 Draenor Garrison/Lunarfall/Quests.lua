@@ -21,6 +21,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
 						["qg"] = 77733,	-- Ron Ashton
+						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(112623, {	-- Pack of Fishing Supplies
@@ -37,6 +38,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
 						["qg"] = 77733,	-- Ron Ashton
+						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
@@ -47,6 +49,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
 						["qg"] = 77733,	-- Ron Ashton
+						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
@@ -57,6 +60,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
 						["qg"] = 77733,	-- Ron Ashton
+						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
@@ -67,6 +71,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
 						["qg"] = 77733,	-- Ron Ashton
+						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
@@ -77,6 +82,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
 						["qg"] = 77733,	-- Ron Ashton
+						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
@@ -1952,6 +1958,7 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 30.2, 18.1, 582 },	-- level 2 garrison
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+					--["objectID"] = 230865,	-- List of Ingredients
 				}),
 				q(35176, {	-- Keeping it Together
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
@@ -1977,7 +1984,10 @@ _.ExpansionFeatures =
 						33081,	-- Escape from Shaz'gul
 						33059,	-- The Fate of Karabor
 					},
-					["coord"] = { 29.6, 19.3, 582 },	-- level 2 garrison
+					["coords"] = {
+						{ 29.6, 19.3, 582 },	-- level 2 garrison
+						{ 40.3, 54.4, 582 },	-- lvl 3 garrison
+					},
 					["qg"] = 80163,	-- Ken Loggin
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2410,6 +2420,13 @@ _.ExpansionFeatures =
 						{ 31.4, 33.5, 582 },	-- level 1 garrison
 						{ 38.3, 36.7, 582 },	-- level 2/3 garrison
 					},
+				}),
+				q(35459, {	-- The Southern Wilds
+					["sourceQuests"] = { 34019 },	-- Shadows Awaken
+					["coord"] = { 42.8, 45.2, 582 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					--["objectID"] = 232397,	-- Bulletin Board
 				}),
 				q(34028, {	-- These Look Familiar...
 					["qg"] = 77217,	-- Jr. Surveyor Dorn

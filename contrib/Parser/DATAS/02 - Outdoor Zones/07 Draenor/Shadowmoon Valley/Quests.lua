@@ -18,12 +18,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 72623,	-- Delas Moonfang
 				}),
-				q(33077, {	-- A Grandmother's Remedy -- aa
+				q(33077, {	-- A Grandmother's Remedy
 					["coord"] = { 41.2, 55.0, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 71641,	-- Old Loola
 				}),
-				q(33419, {	-- A Matter of Life and Death -- aa
+				q(33419, {	-- A Matter of Life and Death
 					["coord"] = { 60.3, 30.5, 540 },	-- Bloodthorn Cave
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 70902,	-- Roona
@@ -43,10 +43,11 @@ _.Zones =
 				q(36202, {	-- Anglin' In Our Garrison
 					["sourceQuests"] = { 36201 },	-- Proving Your Worth
 					["requireSkill"] = 356,	-- Fishing
+					["coord"] = { 26.9, 6.6, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 84372,	-- Madari
 					["g"] = {
-						{ ["buildingID"] = 64 },	-- Fishing Shack
+						garrisonBuilding(64),	-- Fishing Shack
 					},
 				}),
 				q(35014, {	-- Blademoon Bloom
@@ -55,7 +56,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 80727,	-- Rangari Arepheon
 				}),
-				q(34504, {	-- Bloodthorn Cave (bonus objective) -- aa
+				q(34504, {	-- Bloodthorn Cave (bonus objective)
 					["coord"] = { 79.7, 34.0, 540 },	-- Bloodthorn Cave
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -81,7 +82,10 @@ _.Zones =
 					["qg"] = 77184,	-- Archmage Khadgar
 				}),
 				q(33586, {	-- Chasing Shadows
-					["sourceQuests"] = { 33059 },	-- The Fate of Karabor
+					["sourceQuests"] = { 
+						33081,	-- Escape From Shaz'gul
+						33059,	-- The Fate of Karabor
+					},
 					["coord"] = { 40.5, 55.0, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 79043,	-- Prophet Velen
@@ -97,6 +101,12 @@ _.Zones =
 						i(117497),	-- Moonchain Boots
 						i(117498),	-- Moonsole Slippers
 					},
+				}),
+				q(33135, {	-- Cleaning Up Gul'var
+					["sourceQuests"] = { 33112 },	-- Ominous Portents
+					["coord"] = { 19.0, 28.5, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 77417,	-- Image of Archmage Khadgar
 				}),
 				q(33269, {	-- Cleaning Up Gul'var
 					["sourceQuests"] = { 33112 },	-- Ominous Portents
@@ -119,7 +129,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 76204,	-- Fiona
 				}),
-				q(44488,  {	-- Cursed Tome -- aa
+				q(44488,  {	-- Cursed Tome
 					["itemID"] = 141361,	-- Cursed Tome
 					--["objectID"] = 258980,	-- Cursed Tome
 					["coord"] = { 37.6, 59.3, 539 },
@@ -149,7 +159,8 @@ _.Zones =
 						33795,	-- Across the Stars
 						33793,	-- Harbingers of the Void
 						33083,	-- On the Offensive
-						34054,	-- The Dark Side of the Moon
+						34054,	-- The Dark Side of the Moon (granted automatically)
+						35093,	-- The Dark Side of the Moon (replacement if you abandon the original quest)
 						33794,	-- The Great Salvation
 					},
 					["coord"] = { 46.3, 38.6, 539 },
@@ -171,6 +182,7 @@ _.Zones =
 					["coord"] = { 56.9, 34.6, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_DataCrystal11",
+					--["objectID"] = 230933,	-- Defense Pylon Central Control Console
 				}),
 				i(114877, {	-- Dirty Note
 					["crs"] = { 75043 },	-- Karnoth
@@ -181,9 +193,9 @@ _.Zones =
 				}),
 				q(34786, {	-- Engorged Goren
 					["sourceQuests"] = { 34785 },	-- Hataaru, the Artificer
-					["coord"] = { 61.8, 29.6, 539 },
+					["coord"] = { 61.8, 29.1, 539 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 80075,	-- Exarch Hataaru
+					["qg"] = 81140,	-- Apprentice Artificer Andren
 					["g"] = {
 						i(113155),	-- Karabor Honor Guard Seal
 						i(113156),	-- Karabor Sage Signet
@@ -255,7 +267,7 @@ _.Zones =
 						follower(180),	-- Fiona
 					},
 				}),
-				q(33787, {	-- Fiona's Solution -- aa
+				q(33787, {	-- Fiona's Solution
 					["coord"] = { 53.5, 57.2, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 76204,	-- Fiona
@@ -266,7 +278,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 77417,	-- Image of Archmage Khadgar
 				}),
-				q(34847, {	-- Forbidden Love -- aa
+				q(34847, {	-- Forbidden Love
 					["coord"] = { 46.1, 25.5, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 77211,	-- Dulga
@@ -284,6 +296,7 @@ _.Zones =
 				}),
 				q(34455, {	-- Free Their Minds
 					["qg"] = 89158,	-- Goblin Mind Control Device
+					--["objectID"] = 229314,	-- Goblin Mind Control Device
 					["coord"] = { 59.8, 94.4, 539 },
 				}),
 				q(34788, {	-- Friend of the Exarchs
@@ -305,7 +318,7 @@ _.Zones =
 					["sourceQuest"] = 36176,	-- A Call for Huntsman
 					["requireSkill"] = 165,	-- Leatherworking
 				}),
-				q(37332, {	-- Fungal Bundle -- aa
+				q(37332, {	-- Fungal Bundle
 					["itemID"] = 119317,	-- Curious Growth
 					["coords"] = {
 						{ 51.8, 19.0, 539 },
@@ -370,7 +383,6 @@ _.Zones =
 				}),
 				q(33168, {	-- Heart On Fire
 					["sourceQuests"] = { 33066 },	-- Soul Shards of Summoning
-				--	Was able to pick up before turning in "Cleaning Up Gul'var."
 					["coord"] = { 19.1, 28.5, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 77417,	-- Image of Archmage Khadgar
@@ -395,16 +407,16 @@ _.Zones =
 				}),
 				q(34780, {	-- Invisible Ramparts
 					["sourceQuests"] = { 34779 },	-- Circle the Wagon
-					["coord"] = { 56.1, 32.6, 539 },
+					["coord"] = { 56.2, 32.6, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 80075,	-- Exarch Hataaru
 				}),
-				q(34876, {	-- Loola's Lost Love -- aa
+				q(34876, {	-- Loola's Lost Love
 					["coord"] = { 41.2, 55.0, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 71641,	-- Old Loola
 				}),
-				q(34836, {	-- Lunarblossom -- aa
+				q(34836, {	-- Lunarblossom
 					["coord"] = { 46.3, 25.3, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 80248,	-- Zukaza
@@ -413,6 +425,7 @@ _.Zones =
 					["sourceQuests"] = { 34194 },	-- Looking For Help
 					["requireSkill"] = 356,	-- Fishing
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 26.9, 6.6, 539 },
 					["qg"] = 84372,	-- Madari
 				}),
 				q(34783, {	-- Naielle, The Rangari
@@ -423,7 +436,6 @@ _.Zones =
 				}),
 				q(33112, {	-- Ominous Portents
 					["sourceQuests"] = { 33115 },	-- Shrouding Stones
-				--	May also require "A Curse Upon the Woods"
 					["coord"] = { 29.2, 25.6, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 77184,	-- Archmage Khadgar
@@ -449,6 +461,7 @@ _.Zones =
 					["sourceQuests"] = { 36199 },	-- Moonshell Claws
 					["requireSkill"] = 356,	-- Fishing
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 26.9, 6.6, 539 },
 					["qg"] = 84372,	-- Madari
 				}),
 				q(34806, {	-- Prune the Podlings
@@ -462,7 +475,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 80378,	-- Rangari Navra
 				}),
-				q(34996, {	-- Rotting Riverbeasts -- aa
+				q(34996, {	-- Rotting Riverbeasts
 					["coord"] = { 52.6, 59.6, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 80859,	-- Rangari Duula
@@ -528,7 +541,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 80075,	-- Exarch Hataaru
 				}),
-				q(34997, {	-- Slumberbloom -- aa
+				q(34997, {	-- Slumberbloom
 					["coord"] = { 53.0, 65.3, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 80707,	-- Sleepy Rangari
@@ -551,7 +564,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 80079,	-- Exarch Naielle
 				}),
-				q(33808, {	-- Swamplighter Queen -- aa
+				q(33808, {	-- Swamplighter Queen
 					["coord"] = { 53.5, 57.2, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 76204,	-- Fiona
@@ -562,12 +575,12 @@ _.Zones =
 						i(106176),	-- Rangari Initiate Vest
 					},
 				}),
-				q(33084, {	-- The Big Haul -- aa
+				q(33084, {	-- The Big Haul
 					["coord"] = { 62.4, 36.7, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 74233,	-- Traevar Gunnermark
 				}),
-				q(34076, {	-- The Burial Fields (bonus objective) -- aa
+				q(34076, {	-- The Burial Fields (bonus objective)
 					["coord"] = { 44.9, 60.6, 539 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -580,6 +593,7 @@ _.Zones =
 				q(34054, {	-- The Dark Side of the Moon
 					["sourceQuests"] = { 35032 },	-- Into Anguish
 					["races"] = ALLIANCE_ONLY,
+					["description"] = "Granted automatically upon completing |cFFFFD700Into Anguish|r.",
 					["g"] = {
 						i(107312),	-- Karabor Honor Guard Shoulders
 						i(107317),	-- Karabor Sage Mantle
@@ -587,7 +601,20 @@ _.Zones =
 						i(106175),	-- Rangari Initiate Spaulders
 					},
 				}),
-				q(33078, {	-- The Dark that Blinds Us -- aa
+				q(35093, {	-- The Dark Side of the Moon
+					["qg"] = 77282,	-- Prophet Velen
+					["coord"] = { 35.7, 36.8, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35032,	-- Into Anguish
+					["description"] = "This version is offered if you abandon the quest and return to |cFFFFD700Prophet Velen|r.",
+					["g"] = {
+						i(107312),	-- Karabor Honor Guard Shoulders
+						i(107317),	-- Karabor Sage Mantle
+						i(107307),	-- Karabor Skirmisher Spaulders
+						i(106175),	-- Rangari Initiate Spaulders
+					},
+				}),
+				q(33078, {	-- The Dark that Blinds Us
 					["coord"] = { 42.1, 57.4, 539 },
 					["qg"] = 74121,	-- Loreseeker Heidii
 					["races"] = ALLIANCE_ONLY,
@@ -630,7 +657,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 81176,	-- Rangari Saa'to
 				}),
-				q(34496, {	-- The Hills of Valuun (bonus objective) -- aa
+				q(34496, {	-- The Hills of Valuun (bonus objective)
 					["coord"] = { 65.1, 33.6, 539 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -653,8 +680,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 73395,	-- Yrel
 				}),
-				q(34728, {	-- The Shimmer Moor (bonus objective) -- aa
+				q(34728, {	-- The Shimmer Moor (bonus objective)
 					["coord"] = { 60.3, 65.0, 539 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(35450, {	-- The Southern Wilds
+					["sourceQuests"] = { 34019 },	-- Shadows Awaken
+					["qg"] = 81126,	-- Prelate Luari
+					["coord"] = { 45.8, 37.4, 539 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35444, {	-- The Southern Wilds
@@ -664,7 +697,7 @@ _.Zones =
 					["qg"] = 82256,	-- Farmer Gehaar
 				}),
 				q(34790, {	-- The Sting
-					["sourceQuests"] = { 34782 },	-- The Exarch Council
+					["sourceQuests"] = { 34783 },	-- Naielle, The Rangari
 					["coord"] = { 56.7, 23.0, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 82537,	-- Rangari Chel
@@ -711,7 +744,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 80073,	-- Exarch Maladaar
 				}),
-				q(33834, {	-- WANTED: Kliaa's Stinger -- aa
+				q(33834, {	-- WANTED: Kliaa's Stinger
 					--["objectID"] = 237021,	-- Wanted: Kliaa's Stinger
 					["coord"] = { 26.4, 32.7, 539 },
 					["races"] = ALLIANCE_ONLY,
@@ -726,11 +759,13 @@ _.Zones =
 					["coord"] = { 33.2, 30.7, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+					--["objectID"] = 237016,	-- Wanted: Kuu'rat
 				}),
 				q(33836, {	-- WANTED: Maa'run's Hoof
 					["coord"] = { 57.5, 57.2, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+					--["objectID"] = 232405,	-- Wanted Poster
 					["g"] = {
 						i(117989),	-- Maa'run's Baleful Eye
 						i(117990),	-- Maa'run's Prescient Eye
@@ -742,6 +777,7 @@ _.Zones =
 					["coord"] = { 60.9, 24.4, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Artifact_tome01",
+					--["objectID"] = 233229,	-- Shadow Council Tome of Curses
 				}),
 				i(111418),	-- Mushroom Juice (Used for the Bonus Objective).
 			}),

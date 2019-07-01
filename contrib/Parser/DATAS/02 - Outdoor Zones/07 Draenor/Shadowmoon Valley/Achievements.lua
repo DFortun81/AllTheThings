@@ -18,7 +18,10 @@ _.Zones =
 							["sourceQuests"] = { 34019 },	-- Shadows Awaken
 						}),
 						crit(3, {	-- Dark Side of the Moon
-							["sourceQuests"] = { 34054, 35093 },	-- Dark Side of the Moon (not sure why there are two different versions)
+							["sourceQuests"] = {
+								34054,	-- Dark Side of the Moon (granted automatically)
+								35093,	-- Dark Side of the Moon (granted if you abandon 34054)
+							},
 						}),
 						crit(4, {	-- The Light Prevails
 							["sourceQuests"] = { 33256 },	-- The Defense of Karabor
