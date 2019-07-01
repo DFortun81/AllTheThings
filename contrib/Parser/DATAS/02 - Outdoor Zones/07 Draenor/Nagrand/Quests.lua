@@ -300,6 +300,14 @@ _.Zones =
 					i(118157),	-- Thunderbolt Tanned Helmet
 					i(118155),	-- Thundercaller's Cowl
 				}),
+				--[[
+				i(118658, {	-- Gagrog's Skull
+					["questID"] = ,
+					["coord"] = { 48.1, 22.1, 550 },
+					["crs"] = { 86771 },	-- Gagrog the Brutal
+					["repeatable"] = true,
+				}),
+				]]--
 --[[					
 				q(37210),	-- Aogexon's Fang
 				q(37211),	-- Bergruu's Horn

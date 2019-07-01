@@ -434,7 +434,7 @@ _.Zones =
 					["coord"] = { 69.6, 33.6, 535 },
 					["g"] = {
 						o(227859, {	-- Hope	
-							["questID"] = 34204,
+							["questID"] = 34205,
 							["coord"] = { 69.7, 33.2, 535 },
 							["g"] = {
 								i(112261),	-- Forgotten Vindicator's Blade

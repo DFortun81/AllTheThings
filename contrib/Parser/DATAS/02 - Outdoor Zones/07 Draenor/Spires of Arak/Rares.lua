@@ -14,6 +14,10 @@ _.Zones =
 						i(116907),	-- Betsi's Boomstick
 					},
 				}),
+				n(80614, {	-- Blade-Dancer Aeryx
+					["questID"] = 35599,
+					["coord"] = { 46.8, 23.2, 542 },
+				}),
 				n(84856, {	-- Blightglow
 					["questID"] = 36283,
 					["coords"] = {
@@ -271,6 +275,10 @@ _.Zones =
 					["g"] = {
 						i(116852),	-- Tesska's Cursed Talisman
 					},
+				}),
+				n(80524, {	-- Underseer Bloodmane
+					["questID"] = 34945,
+					["coord"] = { 63.6, 20.8, 542 },
 				}),
 				n(82050, {	-- Varasha
 					["questID"] = 35334,

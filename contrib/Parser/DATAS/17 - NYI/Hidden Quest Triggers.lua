@@ -67,7 +67,80 @@ _.NeverImplemented =
 		q(35297),	-- triggered during "Blazing of Glory" when you approach Khadgar around 67.6,60.5
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
 		q(36793),	-- Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
-		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking all herbs
+		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking herbs
+		q(34946),	-- Morkurk Greeting - triggers upon entering the zone from Talador
+		q(34935),	-- After Wall Greeting
+		q(33964),	-- Arak Flowerpicker
+		q(34560),	-- Armory
+		q(34568),	-- Armory
+		q(37301),	-- Armory
+		q(37304),	-- Armory
+		q(34793),	-- Auchenai Defenders Greeting
+		q(36636),	-- Blueprint Read
+		q(36856),	-- Burning Missive
+		q(36849),	-- Burning Missive
+		q(36850),	-- Burning Missive
+		q(36851),	-- Burning Missive
+		q(36852),	-- Burning Missive
+		q(36853),	-- Burning Missive
+		q(36854),	-- Burning Missive
+		q(36855),	-- Burning Missive
+		q(35044),	-- Cordana Summon
+		q(34920),	-- Destroy Ward
+		q(33927),	-- Draenei Camp Explosion Tracker
+		q(33927),	-- Draenei Camp Explosion Tracker),	-- triggers when approaching the area for Deceptia's Smoldering Boots
+		q(34580),	-- Draenor Flowerpicker
+		q(34581),	-- Draenor Flowerpicker Note Found
+		q(37300),	-- Drafting Table Interact
+		q(37311),	-- Drafting Table Interact
+		q(34895),	-- Dropping Bombs Tracking
+		q(34983),	-- Dropping Bombs Tracking
+		q(35047),	-- Dropping Bombs Tracking
+		q(36426),	-- Dueling Orbs),	-- triggered when completing "Mysterious Ring" (34463)
+		q(34831),	-- Encounter Mushroom
+		q(36640),	-- Followers Obtained
+		q(33961),	-- Frostfire Flowerpicker
+		q(34835),	-- Gather Energy
+		q(34834),	-- General Commentary
+		q(33966),	-- Gorgrond Flowerpicker
+		q(34934),	-- Initial Defenders
+		q(33645),	-- Tracking Quest),	-- Iskar's Hired Hand
+		q(34821),	-- Khadgar Summon
+		q(34906),	-- Krelas Summoned
+		q(34561),	-- Mage Tower
+		q(37302),	-- Mage Tower
+		q(37303),	-- Mage Tower
+		q(34567),	-- Mage Tower
+		q(35051),	-- Mage Tower Complete
+		q(34772),	-- Morkeths Cage
+		q(33963),	-- Nagrand Flowerpicker
+		q(34904),	-- Portal Vision
+		q(34872),	-- Prized Repossessions Tracking
+		q(34985),	-- Prized Repossessions Tracking
+		q(34833),	-- Prune Ancient
+		q(34986),	-- Punching Through Tracking
+		q(34873),	-- Punching Through Tracking
+		q(34503),	-- Screaming Telmor Citizen),	-- triggers in Telmor
+		q(35192),	-- See Reinforcements Teleport
+		q(34969),	-- Serena Summoned
+		q(33962),	-- Shadowmoon Flowerpicker
+		q(34053),	-- SoL Conversation Tracker
+		q(36942),	-- Soulbinder Aedraa
+		q(34871),	-- Supply Recovery Tracking
+		q(34984),	-- Supply Recovery Tracking
+		q(33960),	-- Talador Flowerpicker
+		q(33965),	-- Tanaan Flowerpicker
+		q(33931),	-- This Is Not a Quest),	-- triggers when you loot Deceptia's Smoldering Boots. Supposedly it shows the map indicator but is silently completed when the explosion happens?
+		q(34857),	-- Tracking Flag: Orcs Kicked Out of Cave),	-- triggers when going to turn in "Old Friends, New Enemies"
+		q(34562),	-- Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
+		q(34047),	-- Tuurem Explosion Tracker
+		q(34101),	-- Vignette: Aruumel's Worn Mace
+		q(34115),	-- Vignette: Four Friends Found),	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
+		q(34116),	-- Vignette: Girl 1 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
+		q(34117),	-- Vignette: Girl 2 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
+		q(34118),	-- Vignette: Guy 1 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
+		q(34119),	-- Vignette: Guy 2 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
+		q(34523),	-- Warlock Speaking to Gul'dan),	-- triggers near Gul'Rok
 		
 		-------------------
 		--      BFA      --

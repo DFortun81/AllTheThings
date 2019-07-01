@@ -5,9 +5,6 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
-			--[[ triggers/flags
-				34946 - Morkurk Greeting - triggers upon entering the zone from Talador
-			]]
 			n(-17, {	-- Quests
 				q(34756, {	-- A Charming Deception
 					["sourceQuests"] = { 34659 },	-- The Crone

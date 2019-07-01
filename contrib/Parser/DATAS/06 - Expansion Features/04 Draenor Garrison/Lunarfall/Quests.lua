@@ -1798,12 +1798,12 @@ _.ExpansionFeatures =
 				}),
 				q(33075, {	-- A Hero's Welcome
 					["sourceQuests"] = { 34692 },	-- Delegating on Draenor
-					["coords"] = {
-						{ 46.9, 50.8, 582 },	-- lvl 1 garrison
-						{ 47.0, 51.0, 582 },	-- lvl 2 garrison
-					},
 					["qg"] = 80568,	-- Yrel
 					["races"] = ALLIANCE_ONLY,
+					["coords"] = {
+						{ 46.9, 50.8, 582 },	-- lvl 1 garrison
+						{ 47.0, 51.0, 582 },	-- lvl 2/3 garrison
+					},
 				}),
 				q(38259, {	-- All Hands on Deck
 					["qg"] = 92219,	-- King Varian Wrynn
@@ -1836,8 +1836,10 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 36615 },	-- My Very Own Castle
 					["lvl"] = 100,
 					["qg"] = 91589,	-- Fix "Smallie" Biggswrench
+					["coord"] = { 33.8, 36.4, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						spell(181715),	-- Unlock Garrison Jukebox
 						i(122613, {	-- Stash of Dusty Music Rolls
 							i(122209),	-- Music Roll: Curse of the Worgen
 							i(122208),	-- Music Roll: Exodar
@@ -1855,9 +1857,12 @@ _.ExpansionFeatures =
 				}),
 				q(36100, {	-- Building For Professions
 					["qg"] = 77209,	-- Baros Alexston
-					["coord"] = { 41.3, 49.4, 582 },	-- lvl 1 garrison
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34586,	-- Establish Your Garrison
+					["coords"] = {
+						{ 41.3, 49.4, 582 },	-- lvl 1 garrison
+						{ 29.2, 33.1, 582 },	-- lvl 2/3 garrison
+					},
 				}),
 				q(34587, {	-- Build Your Barracks
 					["sourceQuests"] = {
@@ -1875,7 +1880,7 @@ _.ExpansionFeatures =
 				}),
 				q(36404, {	-- Clearing the Garden
 					["sourceQuest"] = 36592,	-- Bigger is Better
-					["coord"] = { 58.9, 53.4, 582 },	-- level 2 garrison
+					["coord"] = { 58.9, 53.4, 582 },
 					["lvl"] = 96,
 					["qg"] = 85344,	-- Naron Bloomthistle
 					["races"] = ALLIANCE_ONLY,
@@ -1927,6 +1932,7 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 36615 },	-- My Very Own Castle
 					["lvl"] = 100,
 					["races"] = ALLIANCE_ONLY,
+					["description"] = "Automatically granted upon entering your garrison.",
 				}),
 				q(39195, {	-- Gems of the Apexis
 					["requireSkill"] = 755,	-- Jewelcrafting
@@ -1982,7 +1988,7 @@ _.ExpansionFeatures =
 					["isBreadcrumb"] = true,
 					["coords"] = {
 						{ 43.8, 44.4, 582 },	-- lvl 1 garrison
-						{ 43.1, 44.7, 582 },	-- lvl 2 garrison
+						{ 43.1, 44.7, 582 },	-- lvl 2/3 garrison
 					},
 				}),
 				q(34778, {	-- Migrant Workers
@@ -1991,10 +1997,11 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["coords"] = {
 						{ 44.1, 53.2, 582 },	-- lvl 1 garrison
-						{ 41.5, 44.9, 582 },	-- lvl 2 garrison
+						{ 41.5, 44.9, 582 },	-- lvl 2/3 garrison
 					},
 				}),
 				n(89763,  {	-- Muradin Bronzebeard
+					["coord"] = { 34.1, 32.6, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 					["g"] = {
@@ -2290,9 +2297,9 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(38344, {	-- Mystery Notebook
+					["sourceQuest"] = 36615,	-- My Very Own Castle
 					["qg"] = 91589,	-- Fix "Smallie" Biggswrench
-					["coord"] = { 33.9, 37.2, 582 },
-					["description"] = "Requires Garrison Rank 3.",
+					["coord"] = { 33.8, 36.4, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 100,
 				}),
@@ -2305,7 +2312,7 @@ _.ExpansionFeatures =
 				}),
 				q(38408, {	-- New Goods
 					["sourceQuests"] = { 36615 },	-- My Very Own Castle
-					["coord"] = { 29.1, 34.6, 582 },
+					["coord"] = { 28.7, 35.0, 582 },
 					["lvl"] = 100,
 					["qg"] = 79953,	-- Lieutenant Thorn
 					["races"] = ALLIANCE_ONLY,
@@ -2318,11 +2325,14 @@ _.ExpansionFeatures =
 				}),
 				q(36861, {	-- Pinchwhistle Gearworks (Alliance)
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
-					["coord"] = { 45.8, 46.0, 582 },
 					["lvl"] = 96,
 					["qg"] = 86589,	-- Watchman Tilnia
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["coords"] = {
+						{ 45.8, 46.0, 582 },	-- lvl 1 garrison
+						{ 46.1, 45.7, 582 },	-- lvl 2/3 garrison
+					},
 				}),
 				q(37433, {	-- Proving Grounds
 					["coord"] = { 29.1, 34.6, 582 },
@@ -2398,7 +2408,7 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["coords"] = {
 						{ 31.4, 33.5, 582 },	-- level 1 garrison
-						{ 38.3, 36.7, 582 },	-- level 2 garrison
+						{ 38.3, 36.7, 582 },	-- level 2/3 garrison
 					},
 				}),
 				q(34028, {	-- These Look Familiar...
@@ -2408,7 +2418,7 @@ _.ExpansionFeatures =
 				q(34192, {	-- Things Are Not Goren Our Way
 					["sourceQuests"] = { 36592 },	-- Bigger is Better
 					["qg"] = 77730,	-- Timothy Leens
-					["coord"] = { 65.2, 41.8, 582 },	-- lvl 2 garrison
+					["coord"] = { 65.2, 41.8, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						garrisonBuilding(61),	-- Frostwall Mines
@@ -2423,8 +2433,11 @@ _.ExpansionFeatures =
 				}),
 				o(236165, {	-- War Planning Map
 					["sourceQuest"] = 36592,	-- Bigger is Better
-					["coord"] = { 30.7, 31.8, 582 },	-- lvl 2 garrison
 					["races"] = ALLIANCE_ONLY,
+					["coords"] = {
+						{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+						{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+					},
 					["g"] = {
 						q(36686, {	-- Assault on the Pit
 							["races"] = ALLIANCE_ONLY,
@@ -2442,6 +2455,7 @@ _.ExpansionFeatures =
 						40418,	-- To Tanaan!
 					},
 					["qg"] = 92219,	-- King Varian Wrynn
+					["coord"] = { 32.0, 31.9, 582 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

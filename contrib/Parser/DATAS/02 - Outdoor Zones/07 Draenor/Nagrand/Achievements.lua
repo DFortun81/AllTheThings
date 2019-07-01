@@ -100,6 +100,7 @@ _.Zones =
 				}),
 				ach(9617,  {	-- Making the Cut (Gorian Proving Grounds)
 					["description"] = "Spawns in the building behind The Ring of Blood.  Kill 15 mobs that spawn around him in order to attack him.",
+					["crs"] = { 88210 },	-- Krud the Eviscerator
 				}),
 				ach(9564,  {	-- Securing Draenor (Alliance)
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
