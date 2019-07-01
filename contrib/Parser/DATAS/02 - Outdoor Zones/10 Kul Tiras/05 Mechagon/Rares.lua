@@ -127,7 +127,7 @@ _.Zones =
 					["questID"] = 55814,
 					["coord"] = { 63.9, 24.4, 1462 },
 					["isDaily"] = true,
-					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(21, {	-- Earthbreaker Gulroc
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -185,7 +185,7 @@ _.Zones =
 					["questID"] = 55855,
 					["coord"] = { 57.6, 69.2, 1462 },
 					["isDaily"] = true,
-					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(23, {	-- Gemicide
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -196,7 +196,7 @@ _.Zones =
 					["coord"] = { 50.5, 48.3, 1462 },
 					["questID"] = 56367,
 					["isDaily"] = true,
-					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(33, {	-- Gorged Gear-Cruncher
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -282,7 +282,7 @@ _.Zones =
 					["questID"] = 55853,
 					["coord"] = { 55.6, 39.5, 1462 },
 					["isDaily"] = true,
-					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(22, {	-- Ol' Big Tusk
 							["achievementID"] = 13470,	-- Rest In Pistons
@@ -396,7 +396,7 @@ _.Zones =
 				n(152113, {	-- The Kleptoboss
 					["questID"] = 55858,
 					["isDaily"] = true,
-					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(26, {	-- The Kleptoboss
 							["achievementID"] = 13470,	-- Rest in Pistons
