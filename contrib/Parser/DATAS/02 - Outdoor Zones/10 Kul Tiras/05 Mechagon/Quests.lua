@@ -273,6 +273,20 @@ _.Zones =
 					["coord"] = { 70.4, 31.0, 1462 },
 					["isDaily"] = true,
 				}),
+				q(56405, {	-- Cogfrenzy's Construction Frenzy
+					["qg"] = 154967,	-- Walton Cogfrenzy
+					["coord"] = { 73.4, 33.3, 1462 },
+					["isDaily"] = true,
+					["g"] = {
+						i(169471, {	-- Cogfrenzy's Construction Toolkit
+							["g"] = {
+								i(167845),	-- Blueprint: Emergency Powerpack
+								i(167844),	-- Blueprint: Emergency Repair Kit
+								i(169470),	-- Pressure Relief Valve
+							},
+						}),
+					},
+				}),
 				q(55153, {	-- Collaborative Construction
 					["qg"] = 150555,	-- Waren Gearhart
 					["coord"] = { 73.1, 33.3, 1462 },

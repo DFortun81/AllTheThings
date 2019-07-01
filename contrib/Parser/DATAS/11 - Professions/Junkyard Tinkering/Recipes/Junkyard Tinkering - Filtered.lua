@@ -12,6 +12,17 @@ profession(2720, {	-- Junkyard Tinkering
 						},
 					}
 				},
+				{	-- Components & Tools
+					["categoryID"] = 1259,
+					["g"] = {
+						{	-- Emergency Powerpack (not listed in Automation file)
+							["recipeID"] = 291600
+						},
+						{	-- Emergency Repair Kit (not listed in Automation file)
+							["recipeID"] = 291601
+						},
+					}
+				},
 			}
 		},
 	}),
