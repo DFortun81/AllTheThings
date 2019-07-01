@@ -616,7 +616,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(55381, {	-- Rustbolt Requisitions: Storm Silver Ore
+				q(55380, {	-- Rustbolt Requisitions: Storm Silver Ore (A)
+					["qg"] = 149813,	-- Gila Crosswires
+					["coord"] = { 77.7, 40.4, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(55381, {	-- Rustbolt Requisitions: Storm Silver Ore (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,
@@ -640,6 +646,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
+				q(56181, {	-- Scrapmaster's Blowtorch
+					["qg"] = 152295,	-- Pascal
+					["coord"] = { 71.2, 32.5, 1462 },
+					["minReputation"] = HONORED,
+					["g"] = {
+						spell(300122),	-- Scrapmaster's Blowtorch
+						crit(21, {	-- Scrapmaster's Blowtorch
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
 				q(55096, {	-- Send My Father a Message
 					["qg"] = 153670,	-- Rustbolt Resistance Fighter (Prinze Erazmin)
 					["coord"] = { 55.6, 60.1, 1462 },
@@ -662,6 +679,18 @@ _.Zones =
 						crit(38, {	-- S.P.A.R.E. Crate
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
+					},
+				}),
+				q(56501, {	-- Taking the Air Out	— TO DO: figure out if you need to be on "A Direct Approach" to get this
+					["isDaily"] = true,
+					["itemID"] = 169682,	-- Venture Co. Rocket Box
+					["crs"] = {
+						155259,	-- Lifting Specialist Gogo <Venture Co.> (Horde)
+						155202,	-- Profit Maker Grifa <Venture Co.> (Alliance)
+					},
+					["coords"] = {
+						{ 47.6, 36.8, 1462 },	-- Alliance
+						{ 42.6, 41.4, 1462 },	-- Horde
 					},
 				}),
 				q(56306, {	-- The Family Jewels
