@@ -494,6 +494,15 @@ _.Zones =
 						i(166970),	-- Energy Cell
 					},
 				}),
+				q(55847, {	-- Reclamation Rig
+					["coord"] = { 70.0, 62.0, 1462 },
+					["isDaily"] = true,
+					["g"] = {
+						i(168394),	-- Box of Assorted Parts
+						i(168264),	-- Recycling Requisition(Green)
+						i(168266),	-- Strange Recycling Requisiton(Epic)
+					},
+				}),
 				q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued -- horde only?  didn't pop on alliance on live)
 					["qg"] = 152820,	-- Prince Erazmin
 					["coord"] = { 59.1, 55.1, 1462 },

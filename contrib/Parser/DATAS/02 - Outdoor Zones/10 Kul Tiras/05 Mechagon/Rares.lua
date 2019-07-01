@@ -50,7 +50,7 @@ _.Zones =
 					["questID"] = 55857, -- no second questID
 					["coord"] = { 51.1, 50.4, 1462 },
 					["isDaily"] = true,
-					["description"] = "Activate the |cFFFFD700Drill Rig|r.",
+					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(25, {	-- Boilburn
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -59,6 +59,7 @@ _.Zones =
 				}),
 				n(151308, {	-- Boggac Skullbash
 					["questID"] = 55539,
+					["coord"] = { 55.4, 25.9, 1462 },
 					["isDaily"] = true,
 					["g"] = {
 						crit(14, {	-- Boggac Skullbash
@@ -79,11 +80,14 @@ _.Zones =
 				}),
 				n(154739, {	-- Caustic Mechaslime
 					["questID"] = 56368,
+					["coord"] = { 51.3, 47.8, 1462 },
 					["isDaily"] = true,
+					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(34, {	-- Caustic Mechaslime
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
+						i(169170),	-- Blueprint: Utility Mechanoclaw	
 					},
 				}),
 				n(152569, {	-- Crazed Trogg
@@ -96,6 +100,7 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(169674),	-- Green Paint Filled Bladder
+						i(167792),	-- Paint Vial: Fel Mint Green
 					},
 				}),
 				n(151569, {	-- Deepwater Maw
@@ -120,7 +125,9 @@ _.Zones =
 				}),
 				n(150342, {	-- Earthbreaker Gulroc
 					["questID"] = 55814,
+					["coord"] = { 63.9, 24.4, 1462 },
 					["isDaily"] = true,
+					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(21, {	-- Earthbreaker Gulroc
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -129,6 +136,7 @@ _.Zones =
 				}),
 				n(154153, {	-- Enforcer KX-T57
 					["questID"] = 56207,
+					["coord"] = { 63.8, 24.5, 1462 },
 					["isDaily"] = true,
 					["g"] = {
 						crit(31, {	-- Enforcer KX-T57
@@ -175,7 +183,9 @@ _.Zones =
 				}),
 				n(153205, {	-- Gemicide
 					["questID"] = 55855,
+					["coord"] = { 57.6, 69.2, 1462 },
 					["isDaily"] = true,
+					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(23, {	-- Gemicide
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -183,8 +193,10 @@ _.Zones =
 					},
 				}),
 				n(154701, {	-- Gorged Gear-Cruncher
+					["coord"] = { 50.5, 48.3, 1462 },
 					["questID"] = 56367,
 					["isDaily"] = true,
+					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(33, {	-- Gorged Gear-Cruncher
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -231,6 +243,7 @@ _.Zones =
 				}),
 				n(151124, {	-- Mechagonian Nullifier
 					["questID"] = 55207,
+					["coord"] = { 56.9, 52.1, 1462 },
 					["isDaily"] = true,
 					["g"] = {
 						crit(1, {	-- Mechagonian Nullifier
@@ -269,7 +282,7 @@ _.Zones =
 					["questID"] = 55853,
 					["coord"] = { 55.6, 39.5, 1462 },
 					["isDaily"] = true,
-					["description"] = "Must activate the |cFFFFD700Drill Rig|r.",
+					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(22, {	-- Ol' Big Tusk
 							["achievementID"] = 13470,	-- Rest In Pistons
@@ -383,6 +396,7 @@ _.Zones =
 				n(152113, {	-- The Kleptoboss
 					["questID"] = 55858,
 					["isDaily"] = true,
+					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(26, {	-- The Kleptoboss
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -392,11 +406,13 @@ _.Zones =
 				}),
 				n(154225, {	-- The Rusty Prince
 					["questID"] = 56182,
+					["coord"] = { 57.2, 58.6, 1462 },
 					["isDaily"] = true,
 					["g"] = {
 						crit(32, {	-- The Rusty Prince
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
+						i(169347),	-- Judgment of Mechagon
 					},
 				}),
 				n(151625, {	-- The Scrap King
@@ -425,6 +441,7 @@ _.Zones =
 				}),
 				-- Shared Rares Drop
 				i(168327),	-- Chain Ignitercoil
+				i(170147),	-- Paint Bottle: Goblin Green(Treasure drop in chromie side, but maybe zone?)
 			}),
 		}),
 	}),
