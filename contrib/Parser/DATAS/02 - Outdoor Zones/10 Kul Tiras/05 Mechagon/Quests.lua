@@ -606,7 +606,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(56765, {	-- Rustbolt Requisitions: Lane Snapper
+				q(56761, {	-- Rustbolt Requisitions: Lane Snapper (A)
+					["qg"] = 149813,	-- Gila Crosswires
+					["coord"] = { 77.7, 40.4, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(56765, {	-- Rustbolt Requisitions: Lane Snapper (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,
