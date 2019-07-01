@@ -1432,14 +1432,6 @@ profession(202, {	-- Engineering
 					["categoryID"] = 733,
 					["g"] = {
 						{
-							["name"] = "Depleted-Kyparium Rocket",
-							["recipeID"] = 127138
-						},
-						{
-							["name"] = "Geosynchronous World Spinner",
-							["recipeID"] = 127139
-						},
-						{
 							["name"] = "Sky Golem",
 							["recipeID"] = 139192
 						}
@@ -1530,10 +1522,6 @@ profession(202, {	-- Engineering
 					["categoryID"] = 737,
 					["g"] = {
 						{
-							["name"] = "Big Daddy",
-							["recipeID"] = 95707
-						},
-						{
 							["name"] = "Volatile Seaforium Blastpack",
 							["recipeID"] = 84409
 						}
@@ -1596,10 +1584,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Elementium Toolbox",
 							["recipeID"] = 84416
-						},
-						{
-							["name"] = "Gnomish Gravity Well",
-							["recipeID"] = 95705
 						},
 						{
 							["name"] = "Goblin Barbecue",
@@ -1744,10 +1728,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Explosive Decoy",
 							["recipeID"] = 56463
-						},
-						{
-							["name"] = "Global Thermal Sapper Charge",
-							["recipeID"] = 56514
 						}
 					}
 				},
@@ -1766,10 +1746,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Electroflux Sight Enhancers",
 							["recipeID"] = 56487
-						},
-						{
-							["name"] = "Gnomish X-Ray Specs",
-							["recipeID"] = 56473
 						},
 						{
 							["name"] = "Greensight Gogs",
@@ -1984,14 +1960,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Frost Grenade",
 							["recipeID"] = 39973
-						},
-						{
-							["name"] = "Super Sapper Charge",
-							["recipeID"] = 30560
-						},
-						{
-							["name"] = "The Bigger One",
-							["recipeID"] = 30558
 						}
 					}
 				},
@@ -2022,14 +1990,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Gadgetstorm Goggles",
 							["recipeID"] = 41315
-						},
-						{
-							["name"] = "Gnomish Battle Goggles",
-							["recipeID"] = 30575
-						},
-						{
-							["name"] = "Gnomish Power Goggles",
-							["recipeID"] = 30574
 						},
 						{
 							["name"] = "Hard Khorium Goggles",
@@ -2122,36 +2082,12 @@ profession(202, {	-- Engineering
 							["recipeID"] = 30337
 						},
 						{
-							["name"] = "Dimensional Ripper - Area 52",
-							["recipeID"] = 36954
-						},
-						{
 							["name"] = "Fel Iron Toolbox",
 							["recipeID"] = 30348
 						},
 						{
 							["name"] = "Field Repair Bot 110G",
 							["recipeID"] = 44391
-						},
-						{
-							["name"] = "Foreman's Enchanted Helmet",
-							["recipeID"] = 30565
-						},
-						{
-							["name"] = "Foreman's Reinforced Helmet",
-							["recipeID"] = 30566
-						},
-						{
-							["name"] = "Gnomish Flame Turret",
-							["recipeID"] = 30568
-						},
-						{
-							["name"] = "Gnomish Poultryizer",
-							["recipeID"] = 30569
-						},
-						{
-							["name"] = "Goblin Rocket Launcher",
-							["recipeID"] = 30563
 						},
 						{
 							["name"] = "Healing Potion Injector",
@@ -2162,20 +2098,12 @@ profession(202, {	-- Engineering
 							["recipeID"] = 30552
 						},
 						{
-							["name"] = "Nigh-Invulnerability Belt",
-							["recipeID"] = 30570
-						},
-						{
 							["name"] = "Rocket Boots Xtreme",
 							["recipeID"] = 30556
 						},
 						{
 							["name"] = "Rocket Boots Xtreme Lite",
 							["recipeID"] = 46697
-						},
-						{
-							["name"] = "Ultrasafe Transporter - Toshley's Station",
-							["recipeID"] = 36955
 						},
 						{
 							["name"] = "Zapthrottle Mote Extractor",
@@ -2298,10 +2226,6 @@ profession(202, {	-- Engineering
 							["recipeID"] = 39895
 						},
 						{
-							["name"] = "Goblin Rocket Fuel Recipe",
-							["recipeID"] = 12715
-						},
-						{
 							["name"] = "Gold Power Core",
 							["recipeID"] = 12584
 						},
@@ -2316,10 +2240,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Heavy Blasting Powder",
 							["recipeID"] = 3945
-						},
-						{
-							["name"] = "Inlaid Mithril Cylinder Plans",
-							["recipeID"] = 12895
 						},
 						{
 							["name"] = "Iron Strut",
@@ -2416,24 +2336,8 @@ profession(202, {	-- Engineering
 							["recipeID"] = 8243
 						},
 						{
-							["name"] = "Goblin Bomb Dispenser",
-							["recipeID"] = 12755
-						},
-						{
-							["name"] = "Goblin Dragon Gun",
-							["recipeID"] = 12908
-						},
-						{
 							["name"] = "Goblin Land Mine",
 							["recipeID"] = 3968
-						},
-						{
-							["name"] = "Goblin Mortar",
-							["recipeID"] = 12716
-						},
-						{
-							["name"] = "Goblin Sapper Charge",
-							["recipeID"] = 12760
 						},
 						{
 							["name"] = "Heavy Dynamite",
@@ -2488,10 +2392,6 @@ profession(202, {	-- Engineering
 							["recipeID"] = 12586
 						},
 						{
-							["name"] = "The Big One",
-							["recipeID"] = 12754
-						},
-						{
 							["name"] = "The Mortar: Reloaded",
 							["recipeID"] = 13240
 						},
@@ -2532,10 +2432,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Flying Tiger Goggles",
 							["recipeID"] = 3934
-						},
-						{
-							["name"] = "Gnomish Goggles",
-							["recipeID"] = 12897
 						},
 						{
 							["name"] = "Green Lens",
@@ -2596,10 +2492,6 @@ profession(202, {	-- Engineering
 							["recipeID"] = 12617
 						},
 						{
-							["name"] = "Dimensional Ripper - Everlook",
-							["recipeID"] = 23486
-						},
-						{
 							["name"] = "Discombobulator Ray",
 							["recipeID"] = 3959
 						},
@@ -2616,68 +2508,16 @@ profession(202, {	-- Engineering
 							["recipeID"] = 22797
 						},
 						{
-							["name"] = "Gnomish Alarm-o-Bot",
-							["recipeID"] = 23096
-						},
-						{
-							["name"] = "Gnomish Battle Chicken",
-							["recipeID"] = 12906
-						},
-						{
 							["name"] = "Gnomish Cloaking Device",
 							["recipeID"] = 3971
-						},
-						{
-							["name"] = "Gnomish Death Ray",
-							["recipeID"] = 12759
-						},
-						{
-							["name"] = "Gnomish Harm Prevention Belt",
-							["recipeID"] = 12903
-						},
-						{
-							["name"] = "Gnomish Mind Control Cap",
-							["recipeID"] = 12907
-						},
-						{
-							["name"] = "Gnomish Net-o-Matic Projector",
-							["recipeID"] = 12902
-						},
-						{
-							["name"] = "Gnomish Rocket Boots",
-							["recipeID"] = 12905
-						},
-						{
-							["name"] = "Gnomish Shrink Ray",
-							["recipeID"] = 12899
 						},
 						{
 							["name"] = "Gnomish Universal Remote",
 							["recipeID"] = 9269
 						},
 						{
-							["name"] = "Goblin Construction Helmet",
-							["recipeID"] = 12718
-						},
-						{
 							["name"] = "Goblin Jumper Cables",
 							["recipeID"] = 9273
-						},
-						{
-							["name"] = "Goblin Jumper Cables XL",
-							["recipeID"] = 23078
-						},
-						{
-							["name"] = "Goblin Mining Helmet",
-							["recipeID"] = 12717
-						},
-						{
-							["name"] = "Goblin Rocket Boots",
-							["recipeID"] = 8895
-						},
-						{
-							["name"] = "Goblin Rocket Helmet",
-							["recipeID"] = 12758
 						},
 						{
 							["name"] = "Gyrofreeze Ice Reflector",
@@ -2698,10 +2538,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Lifelike Mechanical Toad",
 							["recipeID"] = 19793
-						},
-						{
-							["name"] = "Lil' Smoky",
-							["recipeID"] = 15633
 						},
 						{
 							["name"] = "Major Recombobulator",
@@ -2764,16 +2600,8 @@ profession(202, {	-- Engineering
 							["recipeID"] = 23082
 						},
 						{
-							["name"] = "Ultrasafe Transporter - Gadgetzan",
-							["recipeID"] = 23489
-						},
-						{
 							["name"] = "Voice Amplification Modulator",
 							["recipeID"] = 19819
-						},
-						{
-							["name"] = "World Enlarger",
-							["recipeID"] = 23129
 						}
 					}
 				},

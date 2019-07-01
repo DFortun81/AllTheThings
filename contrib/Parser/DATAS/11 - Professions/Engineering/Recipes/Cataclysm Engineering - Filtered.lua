@@ -45,10 +45,6 @@ profession(202, {	-- Engineering
 					["categoryID"] = 737,
 					["g"] = {
 						{
-							["name"] = "Big Daddy",
-							["recipeID"] = 95707
-						},
-						{
 							["name"] = "Volatile Seaforium Blastpack",
 							["recipeID"] = 84409
 						}
@@ -111,10 +107,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Elementium Toolbox",
 							["recipeID"] = 84416
-						},
-						{
-							["name"] = "Gnomish Gravity Well",
-							["recipeID"] = 95705
 						},
 						{
 							["name"] = "Goblin Barbecue",

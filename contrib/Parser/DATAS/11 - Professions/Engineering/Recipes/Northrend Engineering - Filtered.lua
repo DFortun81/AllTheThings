@@ -68,10 +68,6 @@ profession(202, {	-- Engineering
 							["name"] = "Explosive Decoy",
 							["recipeID"] = 56463
 						},
-						{
-							["name"] = "Global Thermal Sapper Charge",
-							["recipeID"] = 56514
-						}
 					}
 				},
 				{
@@ -89,10 +85,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Electroflux Sight Enhancers",
 							["recipeID"] = 56487
-						},
-						{
-							["name"] = "Gnomish X-Ray Specs",
-							["recipeID"] = 56473
 						},
 						{
 							["name"] = "Greensight Gogs",

@@ -191,14 +191,6 @@ profession(202, {	-- Engineering
 					["categoryID"] = 733,
 					["g"] = {
 						{
-							["name"] = "Depleted-Kyparium Rocket",
-							["recipeID"] = 127138
-						},
-						{
-							["name"] = "Geosynchronous World Spinner",
-							["recipeID"] = 127139
-						},
-						{
 							["name"] = "Sky Golem",
 							["recipeID"] = 139192
 						}

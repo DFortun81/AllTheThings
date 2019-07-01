@@ -191,6 +191,18 @@ app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
 
 (function()
+	local tradeSkillSpecializationMap = {
+		-- Engineering Skills
+		[202] = { 
+				  20219,    -- Gnomish Engineering
+		          20222     -- Goblin Engineering
+				}
+	};
+	local specializationTradeSkillMap = {
+		-- Engineering Skills
+		[20219] = 202,  -- Gnomish Engineering
+		[20222] = 202   -- Goblin Engineering
+	};
 	-- Map all Skill IDs to the old Skill IDs
 	local tradeSkillMap = {
 		-- Alchemy Skills
@@ -354,6 +366,15 @@ app.GetTempDataSubMember = GetTempDataSubMember;
 	app.GetTradeSkillLine = function()
 		return app.GetBaseTradeSkillID(C_TradeSkillUI.GetTradeSkillLine());
 	end
+	app.GetTradeSkillSpecialization = function(skillID)
+		return tradeSkillSpecializationMap[skillID];
+	end
+	app.GetBaseTradeSkillID = function(skillID)
+		return tradeSkillMap[skillID] or skillID;
+	end
+	app.GetSpecializationBaseTradeSkill = function(specializationID)
+		return specializationTradeSkillMap[specializationID];
+	end
 	app.GetTradeSkillCache = function(invalidate)
 		local cache = GetTempDataMember("PROFESSION_CACHE");
 		if not cache or invalidate then
@@ -361,7 +382,18 @@ app.GetTempDataSubMember = GetTempDataSubMember;
 			SetTempDataMember("PROFESSION_CACHE", cache);
 			local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 			for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
-				if j ~= 0 then cache[app.GetBaseTradeSkillID(select(7, GetProfessionInfo(j)))] = true; end
+				if j ~= 0 then 
+					local prof = select(7, GetProfessionInfo(j));
+					cache[app.GetBaseTradeSkillID(prof)] = true;
+					local specializations = app.GetTradeSkillSpecialization(prof);
+					if specializations ~= nil then
+						for _,s in pairs(specializations) do
+							if s and IsSpellKnown(s) then
+								cache[s] = true;
+							end
+						end
+					end
+				end
 			end
 		end
 		return cache;
@@ -1851,8 +1883,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						if not app.AppliedSkillIDToNPCIDs then
 							app.AppliedSkillIDToNPCIDs = true;
 							local skillIDMap = {
-								[-178] = 202, 											-- Goblin Engineering"Goblin Engineering",
-								[-179] = 202, 											-- Gnomish Engineering
+								[-178] = 20222, 										-- Goblin Engineering
+								[-179] = 20219, 										-- Gnomish Engineering
 								[-180] = 171,				 							-- Alchemy
 								[-181] = 164,				 							-- Blacksmithing
 								[-182] = 333,				 							-- Enchanting
@@ -5327,9 +5359,11 @@ app.BaseProfession = {
 		if key == "key" then
 			return "requireSkill";
 		elseif key == "text" then
+			if app.GetSpecializationBaseTradeSkill(t.requireSkill) then return select(1, GetSpellInfo(t.requireSkill)); end
 			if t.requireSkill == 129 then return select(1, GetSpellInfo(t.spellID)); end
 			return C_TradeSkillUI.GetTradeSkillDisplayName(t.requireSkill);
 		elseif key == "icon" then
+			if app.GetSpecializationBaseTradeSkill(t.requireSkill) then return select(3, GetSpellInfo(t.requireSkill)); end
 			if t.requireSkill == 129 then return select(3, GetSpellInfo(t.spellID)); end
 			return C_TradeSkillUI.GetTradeSkillTexture(t.requireSkill);
 		elseif key == "spellID" then
