@@ -143,8 +143,9 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(167174),	-- Blueprint: Rustbolt Pocket Turret
-						i(170467),	-- Whirring Chainblade
 						i(170466),	-- Junkyard Motivator  -- Needs more confirmation, recieved in the area this mob spawns.
+						i(170470),	-- Reinforced Grease Deflector
+						i(170467),	-- Whirring Chainblade
 					},
 				}),
 				n(151202, {	-- Foul Manifestation
@@ -354,6 +355,7 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(168490),	-- Blueprint: Protocol Transference Device
+						i(170470),	-- Reinforced Grease Deflector
 					},
 				}),
 				n(150937, {	-- Seaspit

@@ -482,6 +482,22 @@ _.Zones =
 						i(169502),	-- Recipe: Greater Flask of the Vast Horizon (Rank 3)
 					},
 				}),
+				q(56793, {	-- Work Order: Mech-Dowel's "Big Mech" (A)
+					["collectible"] = false,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(168330),	-- Recipe: Mech-Dowel's "Big Mech" (Rank 3)
+					},
+				}),
+				q(56802, {	-- Work Order: Mech-Dowel's "Big Mech" (H)
+					["collectible"] = false,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(168330),	-- Recipe: Mech-Dowel's "Big Mech" (Rank 3)
+					},
+				}),
 				q(55894, {	-- Zoko, Her Iron Defender
 					["lvl"] = 120,
 					["collectible"] = false,

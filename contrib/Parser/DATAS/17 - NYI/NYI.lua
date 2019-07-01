@@ -1958,8 +1958,17 @@ _.NeverImplemented =
 				["u"] = 1,
 			},
 		}),
-		-- Enchanting
+		n(-182, { 	-- Enchanting
 			un(1, i(84582)),	-- Formula: Enchant Weapon - Windsong (never added version)
+			un(1, i(168450)),	-- Formula: Enchant Ring - Accord of Critical Strike (not used, vendors sell 169530 and 169604)
+			un(1, i(168451)),	-- Formula: Enchant Ring - Accord of Haste (not used, vendors sell 169531 and 169605)
+			un(1, i(168452)),	-- Formula: Enchant Ring - Accord of Mastery (not used, vendors sell 169532 and 169606)
+			un(1, i(168453)),	-- Formula: Enchant Ring - Accord of Versatility (not used, vendors sell 169533 and 169607)
+			un(1, i(168583)),	-- "REUSE ME [MTMM]"
+			un(1, i(168584)),	-- "REUSE ME [MTMM]"
+			un(1, i(168585)),	-- "REUSE ME [MTMM]"
+			un(1, i(168586)),	-- "REUSE ME [MTMM]"
+		}),
 		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
 			un(1, i(87829)),	-- Recipe: Incarnadine Ink
