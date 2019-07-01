@@ -50,7 +50,7 @@ _.Zones =
 					["questID"] = 55857, -- no second questID
 					["coord"] = { 51.1, 50.4, 1462 },
 					["isDaily"] = true,
-					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
 						crit(25, {	-- Boilburn
 							["achievementID"] = 13470,	-- Rest in Pistons
