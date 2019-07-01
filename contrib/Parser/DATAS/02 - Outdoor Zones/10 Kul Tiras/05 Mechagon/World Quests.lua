@@ -18,6 +18,13 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
+				q(56139, {	-- Junkyard Treasures
+					["collectible"] = false,
+					["lvl"] = 120,
+					["g"] = {
+						i(168832),	-- Galvanic Oscillator
+					},
+				}),
 				q(55901, {	-- Rustbolt Rebellion
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -33,7 +40,11 @@ _.Zones =
 				q(56394, {	-- Sputtertube
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),				
+				}),
+				q(56398, {	-- Unit 35
+					["collectible"] = false,
+					["lvl"] = 120,
+				}),	
 			}),
 		}),
 	}),

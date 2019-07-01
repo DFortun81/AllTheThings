@@ -386,6 +386,11 @@ _.Zones =
 					["coord"] = { 37.0, 47.1, 1462 },
 					["sourceQuest"] = 55055,	-- Build A Bigger Fish Trap
 				}),
+				q(54082, {	-- More Power
+					["qg"] = 150630,	-- Flip Quickcharge
+					["coord"] = { 70.8, 39.1, 1462 },
+					["isDaily"] = true,
+				}),
 				q(56523, {	-- My Chickens are Not for Eating!
 					["qg"] = 155254,	-- Oglethorpe Obnoticus
 					["coord"] = { 72.7, 38.0, 1462 },
@@ -439,6 +444,12 @@ _.Zones =
 					["coord"] = { 71.7, 38.8, 1462 },
 					["isDaily"] = true,
 				}),
+				q(55528, {	-- Playtime's Over
+					["qg"] = 151006,	-- Rocket-Chief Fuselage
+					["coord"] = { 69.7, 33.0, 1462 },
+					["isDaily"] = true,
+					["sourceQuest"] = 54090,	-- Toys For Destruction
+				}),
 				o(327548, {	-- Powerpack Blueprints
 					["coord"] = { 60.9, 41.5, 1462 },
 					["g"] = {
@@ -468,6 +479,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 54086,	-- Right Bot for the Job
+				}),
+				q(56326, {	-- Ravenous Rescue
+					["qg"] = 154568,	-- Pedram Mechanotrax
+					["coord"] = { 62.1, 76.8, 1462 },
+					["isDaily"] = true,
 				}),
 				q(55211, {	-- Recharging Rustbolt
 					["qg"] = 150631,	-- Pristy Quickcharge
