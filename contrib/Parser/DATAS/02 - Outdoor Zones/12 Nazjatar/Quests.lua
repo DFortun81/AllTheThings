@@ -277,11 +277,11 @@ _.Zones =
 			q(55818, {	-- Bounty: A Few Naga
 				["isDaily"] = true,
 				["qgs"] = {
-				--	152942,	-- Lieutenant Hawkins (Alliance)		-- Need to be confirmed
+					152942,	-- Lieutenant Hawkins (Alliance)
 					151614,	-- Nevin Tideheart  (Horde)
 				},
 				["coords"] = {
-				--	{ 40.1, 55.5, 1355 },	-- Alliance				-- Need to be confirmed
+					{ 40.0, 55.4, 1355 },	-- Alliance
 					{ 49.8, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
@@ -840,11 +840,22 @@ _.Zones =
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			}),
 			i(167786, {	-- Germinating Seed
-				["description"] = "Drops from any rare in Nazjatar",
+				["description"] = "Can drop from any rare in Nazjatar.",
 				["g"] = {
 					q(55426, {	-- What Will It Grow?
 						currency(1721),	-- Prismatic Manapearl
 					}),
+				},
+			}),
+			q(56784, {	-- Helpful Provisions
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Your Ankoan friend will offer this quest upon reaching Rank 7.",
+				["races"] = ALLIANCE_ONLY,
+				["qgs"] = {	-- add other two bodyguards/friends/whatever
+					154304,	-- Farseer Ori
+				},
+				["g"] = {
+					i(169904),	-- Ankoan Commendation Crate (contained a benthic token, some war resources, and some zin'anthid)
 				},
 			}),
 			q(56643, {	-- In Deep
@@ -1173,11 +1184,11 @@ _.Zones =
 			q(55793, {	-- Requisition: More Flotsam
 				["isDaily"] = true,
 				["qgs"] = {
-				--	153509,	-- Artisan Okata (Alliance)			-- Need to be confirmed
+					153509,	-- Artisan Okata (Alliance)
 					153512,	-- Finder Pruc (Horde)
 				},
 				["coords"] = {
-				--	{ 37.9, 55.7, 1355 },	-- Alliance			-- Need to be confirmed
+					{ 37.9, 55.6, 1355 },	-- Alliance
 					{ 49.2, 62.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {

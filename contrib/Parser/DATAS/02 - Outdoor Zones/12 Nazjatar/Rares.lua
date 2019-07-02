@@ -54,8 +54,7 @@ _.Zones =
 				},
 			}),
 			n(152794, {	-- Amethyst Spireshell
-				["allianceQuestID"] = 56615,
-				["hordeQuestID"] = 56268,
+				["questID"] = 56268,
 				["isDaily"] = true,
 				["coords"] = {
 					{ 72.2, 36.2, 1355 },
