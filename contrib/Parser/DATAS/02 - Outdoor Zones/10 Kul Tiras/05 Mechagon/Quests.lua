@@ -64,6 +64,14 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 54090,	-- Toys For Destruction
 				}),
+				i(169112, {	-- Blueprint: Advanced Adventurer Augment
+					["questID"] = 56145,
+					["g"] = {
+						crit(23, {	-- Advanced Adventurer Augment
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
 				i(169173, {	-- Blueprint: Anti-Gravity Pack
 					["questID"] = 55081,
 					["crs"] = {
