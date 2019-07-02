@@ -69,8 +69,12 @@ _.PetJournal =
 		p(472),		-- Rabid Nut Varmint 5000
 		p(1636),	-- Race MiniZep
 		p(1256),	-- Rascal-Bot
-		a(p(2564)),	-- Rebuilt Gorilla Bot
-		h(p(2565)),	-- Rebuilt Mechanical Spider
+		p(2564, {	-- Rebuilt Gorilla Bot
+			["races"] = ALLIANCE_ONLY,
+		}),
+		p(2565, {	-- Rebuilt Mechanical Spider
+			["races"] = HORDE_ONLY,
+		}),
 		p(471),		-- Robo-Chick
 		un(10, p(168)),	-- Rocket Chicken
 		p(2401),	-- Rooter

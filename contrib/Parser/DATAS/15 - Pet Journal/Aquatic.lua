@@ -19,7 +19,9 @@ _.PetJournal =
 		p(1666), 	-- Blorp
 		p(2398),	-- Boghopper
 		p(2688),	-- Brilliant Glimmershell
-		h(p(2479)),	-- Bucketshell
+		p(2479, {	-- Bucketshell
+			["races"] = HORDE_ONLY,
+		}),
 		p(2690),	-- Caverndark Nightmare
 		p(2658),	-- Chitterspine Deepstalker
 		p(2691),	-- Chitterspine Devourer
@@ -123,7 +125,9 @@ _.PetJournal =
 		p(629), 	-- Shore Crawler
 		p(711), 	-- Sifang Otter
 		p(712), 	-- Sifang Otter Pup
-		a(p(2478));	-- Sir Snips
+		p(2478, {	-- Sir Snips
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(2709),	-- Skittering Eel
 		p(2758),	-- Slimy Eel
 		p(2761),	-- Slimy Fangtooth
@@ -168,7 +172,9 @@ _.PetJournal =
 		p(65), 		-- Tree Frog
 		p(536), 	-- Tundra Penguin
 		p(473), 	-- Turquoise Turtle
-		a(p(2569)),	-- Violet Abyssal Eel
+		p(2569, {	-- Violet Abyssal Eel
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(1013), 	-- Wanderer's Festival Hatchling
 		p(64),	 	-- Wood Frog
 		p(752), 	-- Yellow-Bellied Bullfrog

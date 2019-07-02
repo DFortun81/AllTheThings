@@ -197,7 +197,9 @@ _.PetJournal =
 		p(679),				-- Summit Kid
 		p(1128),			-- Sumprush Rodent
 		p(1196),			-- Sunfur Panda
-		h(p(2540)),			-- Tanzil
+		p(2540, {			-- Tanzil
+			["races"] = HORDE_ONLY,
+		}),
 		p(2198),			-- Taptaf
 		p(567),				-- Temple Snake
 		p(1735),			-- Terror Larva
@@ -207,7 +209,9 @@ _.PetJournal =
 		p(2529),			-- Thunder Lizard Runt
 		p(2412),			-- Tiny Direhorn
 		p(1236),			-- Tito
-		a(p(2539)),			-- Trecker
+		p(2539, {			-- Trecker
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(405),				-- Tree Python
 		un(35, p(2051)),	-- Twilight
 		p(505),				-- Twilight Iguana

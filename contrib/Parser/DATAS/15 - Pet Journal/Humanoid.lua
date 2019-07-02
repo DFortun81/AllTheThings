@@ -5,7 +5,9 @@ _.PetJournal =
 {
 	pa(238, { 	-- Humanoid
 		p(2755),			-- Adventurous Hopling
-		a(p(1918)),			-- Alliance Enthusiast (Alliance)
+		p(1918, {			-- Alliance Enthusiast (Alliance)
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(1155),			-- Anubisath Idol
 		p(216),				-- Argent Gruntling
 		p(214),				-- Argent Squire
@@ -19,8 +21,12 @@ _.PetJournal =
 		un(20, p(226)),		-- Curious Wolvar Hatchling
 		p(1329),			-- Dandelion Frolicker
 		un(16, p(294)),		-- Deathy
-		h(p(1979)),			-- Dutiful Gruntling
-		a(p(1978)),			-- Dutiful Squire
+		p(1979, {			-- Dutiful Gruntling
+			["races"] = HORDE_ONLY,
+		}),
+		p(1978, {			-- Dutiful Squire
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(119),				-- Father Winter's Helper
 		p(821),				-- Feral Vermling
 		p(1229),			-- Fiendish Imp
@@ -30,25 +36,47 @@ _.PetJournal =
 		un(4, p(1602)),		-- Grommloc
 		p(1725),			-- Grumpling
 		un(4, p(228)),		-- Grunty
-		a(p(282)),			-- Guild Herald (Alliance)
-		h(p(283)),			-- Guild Herald (Horde)
-		a(p(280)),			-- Guild Page (Alliance)
-		h(p(281)),			-- Guild Page (Horde)
+		p(282, {			-- Guild Herald (Alliance)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		p(283, {			-- Guild Herald (Horde)
+			["races"] = HORDE_ONLY,
+		}),
+		p(280, {			-- Guild Page (Alliance)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		p(281, {			-- Guild Page (Horde)
+			["races"] = HORDE_ONLY,
+		}),
 		un(3, p(121)),		-- Gurky
 		p(1147),			-- Harbinger of Flame
 		p(1157),			-- Harpy Youngling
 		p(1384),			-- Hogs
 		p(835),				-- Hopling
-		h(p(1919)),			-- Horde Fanatic (Horde)
+		p(1919, {			-- Horde Fanatic (Horde)
+			["races"] = HORDE_ONLY,
+		}),
 		p(2683),			-- Kelpfin
-		a(un(3, p(1940))),	-- Knight-Captain Murky (Alliance)
+		p(1940, {			-- Knight-Captain Murky (Alliance)
+			["u"] = 3,
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(1166),			-- Kun-Lai Runt
-		h(un(4, p(1939))),	-- Legionnaire Murky (Horde)
+		p(1939, {			-- Legionnaire Murky (Horde)
+			["u"] = 4,
+			["races"] = HORDE_ONLY,
+		}),
 		p(1226),			-- Lil' Bad Wolf
 		un(6, p(111)),		-- Lurky
 		un(4, p(189)),		-- Mini Tyrael
-		un(35, a(p(296))),	-- Moonkin Hatchling (Alliance)
-		un(35, h(p(298))),	-- Moonking Hatchling (Horde)
+		p(296, {	-- Moonkin Hatchling (Alliance)
+			["u"] = 35,
+			["races"] = ALLIANCE_ONLY,
+		}),
+		p(298, {	-- Moonking Hatchling (Horde)
+			["u"] = 35,
+			["races"] = HORDE_ONLY,
+		}),
 		p(2681),			-- Murgle
 		un(4, p(329)),		-- Murkablo
 		un(4, p(1364)),		-- Murkalot

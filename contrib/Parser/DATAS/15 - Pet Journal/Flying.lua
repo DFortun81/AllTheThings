@@ -5,10 +5,14 @@ _.PetJournal =
 {
 	pa(239, { 	-- Flying
 		p(1708),	-- Albatross Chick
-		a(p(2566)),	-- Albatross Hatchling
+		p(2566, {	-- Albatross Hatchling
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(1984),	-- Albino Buzzard
 		p(2555), 	-- Albino Duskwatcher
-		a(p(331)),	-- Alliance Balloon (Alliance)
+		p(331, {	-- Alliance Balloon (Alliance)
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(732),		-- Amber Moth
 		p(1465),	-- Amberbarb Wisp
 		p(2586),	-- Amberglow Stinger
@@ -39,9 +43,13 @@ _.PetJournal =
 		p(646),		-- Chicken
 		p(2527),	-- Child of Pa'ku
 		p(1914),	-- Coastal Sandpiper
-		a(p(2568)),	-- Cobalt Raven
+		p(2568, {	-- Cobalt Raven
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(47),		-- Cockatiel
-		a(p(2405)),	-- Corlain Falcon
+		p(2405, {	-- Corlain Falcon
+			["races"] = ALLIANCE_ONLY,
+		}),
 		p(1997),	-- Crackers
 		p(507),		-- Crested Owl
 		p(2567),	-- Crimson Bat Pup
@@ -98,7 +106,9 @@ _.PetJournal =
 		un(35, p(130)),		-- Hippogryph Hatchling
 		p(1762),	-- Hog-Nosed Bat
 		p(2379),	-- Honey Bee
-		h(p(332)),	-- Horde Balloon (Horde)
+		p(332, {	-- Horde Balloon (Horde)
+			["races"] = HORDE_ONLY,
+		}),
 		p(2484),	-- Horse Balloon
 		p(49),		-- Hyacinth Macaw
 		p(1532),	-- Ikky
