@@ -116,6 +116,9 @@ _.Zones =
 					},
 				}),
 				n(155060, {	-- Doppel Ganger
+					--["questID"] = 56419,	-- Needs confirmation(missing in att)
+					["questID"] = 55544,	-- Needs confirmation
+					["coord"] = { 81.0, 20.2, 1462 },
 					["isDaily"] = true,
 					["g"] = {
 						crit(35, {	-- The Doppel Gang
@@ -397,6 +400,7 @@ _.Zones =
 				}),
 				n(152113, {	-- The Kleptoboss
 					["questID"] = 55858,
+					["coord"] = { 51.3, 47.7, 1462 },
 					["isDaily"] = true,
 					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {

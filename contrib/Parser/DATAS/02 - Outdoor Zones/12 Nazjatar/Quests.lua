@@ -74,6 +74,12 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			}),
+			q(56816, {	-- A Kelfin's Best Friend
+				--["qg"] = 151309,	-- Kelfin Scout(any follower?)
+				["coord"] = { 45.0, 60.9, 1355 },
+				--["races"] = HORDE_ONLY,
+				--["sourceQuest"] = 
+			}),
 			o(325853, {	-- Empty Bookcase
 				["coord"] = { 78.4, 28.6, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -889,6 +895,12 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56235,	-- Down Into Nazjatar
 			}),
+			q(56803, {	-- Just A Friend
+				["qg"] = 151309,	-- Kelfin Scout(any follower?)
+				["coord"] = { 50.8, 65.2, 1355 },
+				["races"] = HORDE_ONLY,
+				--["sourceQuest"] = 
+			}),
 			q(55873, {	-- Kill the Kritch
 				["qg"] = 153537,	-- Rlgmrr
 				["coord"] = { 44.9, 76.8, 1355 },
@@ -1456,6 +1468,13 @@ _.Zones =
 				["coord"] = { 37.2, 67.3, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56429,	-- Up Against It
+			}),
+			q(56830, {	-- Summons from the Depths
+				["isDaily"] = true,
+				["coord"] = { 48.5, 40.4, 1355 },
+				["g"] = {
+					ach(13763),	-- Back to the Depths!
+				},
 			}),
 			q(55485, {	-- Terrors in the Deep
 				["qg"] = 152066,	-- First Arcanist Thalyssra

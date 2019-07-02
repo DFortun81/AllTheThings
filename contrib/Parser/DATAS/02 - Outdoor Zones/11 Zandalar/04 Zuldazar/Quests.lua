@@ -134,7 +134,13 @@ _.Zones =
 				
 			--	unsorted
 
-				
+				{	-- A Growing Appetite
+					["questID"] = 55250,	-- A Growing Appetite
+					["races"] = HORDE_ONLY,
+					["qg"] = 151286,		-- Child of Torcali
+					["isDaily"] = true,
+					["coord"] = { 68.2, 41.8, 862 },
+				},
 				{	-- Zandalar Forever!
 					["questID"] = 50954,	-- Zandalar Forever!
 					["races"] = HORDE_ONLY,
@@ -158,6 +164,14 @@ _.Zones =
 						{ 56.91, 19.11, 862 },
 					},
 				},
+				q(56205, {	--  Just Ptrust Me On This
+					["races"] = HORDE_ONLY,
+					["qg"] = 127377,	-- Pa'Ku
+					["coords"] = { 71.5, 49.4, 862 },
+					["g"] = {
+						ach(13573),	-- How to Ptrain Your Pterrordax
+					},
+				}),
 				{ 	-- Rokhan
 					["questID"] = 47201,	-- Rokhan
 					["races"] = HORDE_ONLY,
@@ -413,6 +427,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 124629,	-- Kaza'jin the Wavebinder
 					["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
+				}),
+				q(56500, {	-- Storming the Battlefields
+					["races"] = HORDE_ONLY,
+					["coord"] = { 51.6, 58.2, 862 },
 				}),
 				q(47509, {	-- Terrace of the Chosen
 					["races"] = HORDE_ONLY,

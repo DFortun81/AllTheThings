@@ -78,7 +78,8 @@ _.Zones =
 				},
 			}),
 			n(152566, {	-- Anemonar
-				--["questID"] =
+				["questID"] = 56602,	-- Needs confirmation
+				--["questID"] = 56281,	-- Needs confirmation
 				--["description"] = 
 				["isDaily"] = true,
 				["coord"] = { 58.6, 53.2, 1355 },

@@ -405,6 +405,11 @@ _.Zones =
 					["coord"] = { 21.5, 81.9, 1462 },
 					["isDaily"] = true,
 				}),
+				q(55103, {	-- Ideas Can Com from Anywhere
+					["qg"] = 152295, -- Pascal
+					["coord"] = { 71.2, 32.3, 1462 },
+					["minReputation"] = REVERED,
+				}),
 				q(55101, {	-- Junkyard Tinkering and You -- also triggered 56902 for alliance -- slumber note: maybe not on live?  didn't get it on my priest.
 					["qg"] = 152295,	-- Pascal
 					["coord"] = { 71.2, 32.3, 1462 },
@@ -545,6 +550,13 @@ _.Zones =
 						i(168394),	-- Box of Assorted Parts
 						i(168264),	-- Recycling Requisition(Green)
 						i(168266),	-- Strange Recycling Requisiton(Epic)
+					},
+				}),
+				q(55148, {	-- Reclamation Rig
+					["coord"] = { 70.0, 62.0, 1462 },
+					["repeatable"] = true,
+					["g"] = {
+						i(168264),	-- Recycling Requisition(Green)
 					},
 				}),
 				q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued -- horde only?  didn't pop on alliance on live)
