@@ -371,11 +371,36 @@ _.Zones =
 						}),
 					},
 				}),
-				q(56795, {	-- Work Order: Abyssal-Fried Rissole
+				q(56795, {	-- Work Order: Abyssal-Fried Rissole (A)
 					["lvl"] = 120,
+					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 					["g"] = {
 						i(168332),	-- Recipe: Abyssal-Fried Rissole (Rank 3)
+					},
+				}),
+				q(56800, {	-- Work Order: Abyssal-Fried Rissole (H)
+					["lvl"] = 120,
+					["races"] = HORDE_ONLY,
+					["collectible"] = false,
+					["g"] = {
+						i(168332),	-- Recipe: Abyssal-Fried Rissole (Rank 3)
+					},
+				}),
+				q(56794, {	-- Work Order: Baked Port Tato (A)
+					["collectible"] = false,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(168331),	-- Recipe: Baked Port Tato (Rank 3)
+					},
+				}),
+				q(56801, {	-- Work Order: Baked Port Tato (H)
+					["collectible"] = false,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(168331),	-- Recipe: Baked Port Tato (Rank 3)
 					},
 				}),
 				q(56826, {	-- Work Order: Enchant Weapon - Force Multiplier (A)
