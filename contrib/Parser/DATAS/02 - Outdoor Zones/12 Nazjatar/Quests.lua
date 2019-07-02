@@ -274,6 +274,21 @@ _.Zones =
 					55500,	-- Save A Friend (Horde)
 				},
 			}),
+			q(55818, {	-- Bounty: A Few Naga
+				["isDaily"] = true,
+				["qgs"] = {
+				--	152942,	-- Lieutenant Hawkins (Alliance)		-- Need to be confirmed
+					151614,	-- Nevin Tideheart  (Horde)
+				},
+				["coords"] = {
+				--	{ 40.1, 55.5, 1355 },	-- Alliance				-- Need to be confirmed
+					{ 49.8, 66.2, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
+				},
+			}),
 			q(55822, {	-- Bounty: A Few Makura
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1085,7 +1100,7 @@ _.Zones =
 			q(55727, {	-- Requisition: A Few Flotsam
 				["isDaily"] = true,
 				["qgs"] = {
-					153509,	-- Artisan Okata
+					153509,	-- Artisan Okata (Alliance)
 					153512,	-- Finder Pruc (Horde)
 				},
 				["coords"] = {
@@ -1155,6 +1170,21 @@ _.Zones =
 					55500,	-- Save a Friend (Horde)
 				},
 ]]--		}),
+			q(55793, {	-- Requisition: More Flotsam
+				["isDaily"] = true,
+				["qgs"] = {
+				--	153509,	-- Artisan Okata (Alliance)			-- Need to be confirmed
+					153512,	-- Finder Pruc (Horde)
+				},
+				["coords"] = {
+				--	{ 37.9, 55.7, 1355 },	-- Alliance			-- Need to be confirmed
+					{ 49.2, 62.2, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
+				},
+			}),
 			q(55791, {	-- Requisition: More Spiral Leaf
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1224,10 +1254,6 @@ _.Zones =
 					
 					{	-- Bounty: A Few Murlocs
 						["questID"] = 55819,
-						["isDaily"] = true,
-					},
-					{	-- Bounty: A Few Naga
-						["questID"] = 55818,
 						["isDaily"] = true,
 					},
 					{	-- Bounty: A Few Snapdragons
