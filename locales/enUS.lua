@@ -1256,7 +1256,7 @@ AllTheThings.L = {
 		[-659] = "Gladiator Gear",												-- Gladiator PvP Gear
 		[-660] = "Elite Gear",													-- Elite PvP Gear
 		
--- Warlods Pvp Seasons
+-- Warlords Pvp Seasons
 		[-661] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
 		[-662] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
 		[-663] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
@@ -1269,6 +1269,8 @@ AllTheThings.L = {
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
 		
+-- Mechagon
+		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
