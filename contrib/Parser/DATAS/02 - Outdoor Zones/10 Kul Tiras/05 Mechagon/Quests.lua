@@ -106,7 +106,7 @@ _.Zones =
 						}),
 					},
 				}),
-				i(167845, {	-- Blueprint: Emergency Repair Kit
+				i(167844, {	-- Blueprint: Emergency Repair Kit
 					["questID"] = 55059,	-- Blueprint: Emergency Repair Kit
 					["g"] = {
 						crit(7, {	-- Emergency Repair Kit
