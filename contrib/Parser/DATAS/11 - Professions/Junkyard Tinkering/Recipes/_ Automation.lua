@@ -3,7 +3,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
     -CRIEVE
 ]]--
-profession(2720, {	-- Junkyard Tinkering
+--[[profession(2720, {	-- Junkyard Tinkering
 	filter(200, {
 		{
 			["name"] = "Junkyard Tinkering",
@@ -22,6 +22,10 @@ profession(2720, {	-- Junkyard Tinkering
 							["recipeID"] = 299186
 						},
 						{
+							["name"] = "Extraordinary Adventurer Augment",
+							["recipeID"] = 299952
+						},
+						{
 							["name"] = "Re-Procedurally Generated Punchcard",
 							["recipeID"] = 300277
 						},
@@ -35,6 +39,18 @@ profession(2720, {	-- Junkyard Tinkering
 					["name"] = "Resources",
 					["categoryID"] = 1281,
 					["g"] = {
+						{
+							["name"] = "Battle Box",
+							["recipeID"] = 298137
+						},
+						{
+							["name"] = "Rustbolt Requisitions",
+							["recipeID"] = 298140
+						},
+						{
+							["name"] = "Rustbolt Resistance Insignia",
+							["recipeID"] = 298138
+						},
 						{
 							["name"] = "S.P.A.R.E. Crate",
 							["recipeID"] = 300291
@@ -50,12 +66,20 @@ profession(2720, {	-- Junkyard Tinkering
 							["recipeID"] = 300274
 						},
 						{
+							["name"] = "G99.99 Landshark",
+							["recipeID"] = 294420
+						},
+						{
 							["name"] = "Rustbolt Pocket Turret",
 							["recipeID"] = 300273
 						},
 						{
 							["name"] = "Scrap Grenade",
 							["recipeID"] = 295290
+						},
+						{
+							["name"] = "Scrap Trap",
+							["recipeID"] = 291524
 						}
 					}
 				},
@@ -66,6 +90,10 @@ profession(2720, {	-- Junkyard Tinkering
 						{
 							["name"] = "BAWLD-371",
 							["recipeID"] = 296595
+						},
+						{
+							["name"] = "Encrypted Black Market Radio",
+							["recipeID"] = 300275
 						},
 						{
 							["name"] = "Mechano-Treat",
@@ -90,6 +118,10 @@ profession(2720, {	-- Junkyard Tinkering
 							["recipeID"] = 298136
 						},
 						{
+							["name"] = "Holographic Digitalization Hearthstone",
+							["recipeID"] = 299411
+						},
+						{
 							["name"] = "Personal Time Displacer",
 							["recipeID"] = 300265
 						},
@@ -104,12 +136,24 @@ profession(2720, {	-- Junkyard Tinkering
 					["categoryID"] = 1291,
 					["g"] = {
 						{
+							["name"] = "Blue Spraybot",
+							["recipeID"] = 300268
+						},
+						{
 							["name"] = "Green Spraybot",
 							["recipeID"] = 300267
 						},
 						{
+							["name"] = "Microbot XD",
+							["recipeID"] = 300270
+						},
+						{
 							["name"] = "Orange Spraybot",
 							["recipeID"] = 300266
+						},
+						{
+							["name"] = "Utility Mechanoclaw",
+							["recipeID"] = 300269
 						}
 					}
 				},
@@ -120,6 +164,14 @@ profession(2720, {	-- Junkyard Tinkering
 						{
 							["name"] = "Beastbot Powerpack",
 							["recipeID"] = 295362
+						},
+						{
+							["name"] = "Emergency Powerpack",
+							["recipeID"] = 291600
+						},
+						{
+							["name"] = "Emergency Repair Kit",
+							["recipeID"] = 291601
 						}
 					}
 				},
@@ -136,12 +188,26 @@ profession(2720, {	-- Junkyard Tinkering
 							["recipeID"] = 293394
 						},
 						{
+							["name"] = "Perfectly Timed Differential",
+							["recipeID"] = 300271
+						},
+						{
 							["name"] = "Vaultbot Key",
 							["recipeID"] = 291788
+						}
+					}
+				},
+				{
+					["name"] = "***[UNAUTHORIZED ACCESS]***",
+					["categoryID"] = 1282,
+					["g"] = {
+						{
+							["name"] = "Subroutine: Optimization",
+							["recipeID"] = 298141
 						}
 					}
 				}
 			}
 		}
 	}),
-});
+});]]
