@@ -151,6 +151,7 @@ i(163124, 270560);	-- Vicious War Clefthoof [Horde]
 i(151625, 239767);	-- Red Qiraji War Tank
 i(151626, 239766);	-- Sapphire Qiraji Resonating Crystal
 i(164762, 282682);	-- Kul Tiran Charger (Kul Tiran Allied Race)
+i(161330, 267274);	-- Mag'har Direwolf
 
 ---------------
 -- PATCH 8.1 --
@@ -229,6 +230,7 @@ i(169194, 294039);	-- Snapback Scuttler
 i(169199, 300146);	-- Snapdragon Kelpstalker
 i(161664, 244712);	-- Spectral Pterrorwing
 i(161909, 275866);	-- Stormsong Coastwatcher
+i(166776, 290132);	-- Sylverian Dreamer
 i(167170, 291538);	-- Unshackled Waveray
 i(161667, 275840);	-- Voldunai Dunescraper
 i(169162, 290328);	-- Wonderwing 2.0

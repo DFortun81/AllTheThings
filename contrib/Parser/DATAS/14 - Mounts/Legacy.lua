@@ -30,16 +30,14 @@ _.Mounts =
 		un(2, ach(9550, {	-- Boldly, You Sought the Power of Ragnaros
 			un(9, i(115484)),	-- Core Hound Chain
 		})),
-		{		-- Brawler's Burly Mushan Beast
-			["itemID"] = 98405,
+		i(98405, {			-- Brawler's Burly Mushan Beast
+			["u"] = 4,
 			["description"] = "If you completed rank 8 in Season 1 or 2 of the Brawler's Guild, you can purchase this mount from Quartermaster in Brawler's Guild.",
+		}),
+		i(33976, {			-- Brewfest Ram
 			["u"] = 4,
-		},
-		{		-- Brewfest Ram
-			["itemID"] = 33976,
 			["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
-			["u"] = 4,
-		},
+		}),
 		un(2, ach(6375, {	-- Challenge Conqueror: Silver
 			un(2, i(90710)),	-- Ashen Pandaren Phoenix
 			un(2, i(89154)),	-- Crimson Pandaren Phoenix
@@ -53,16 +51,16 @@ _.Mounts =
 			un(2, i(128422)),	-- Grove Warden
 		})),
 		un(2, ach(2138, {	-- Glory of the Raider (25 Player) Pre 3.1
-			["groups"] = {
+			["description"] = "|cff66ccffCompleted prior to patch 3.1 awarded the mount.|r",
+			["g"] = {
 				un(2, i(44164)),	-- Reins of the Black Proto-Drake
 			},
-			["description"] = "|cff66ccffCompleted prior to patch 3.1 awarded the mount.|r",
 		})),
 		un(2, ach(2137, {	-- Glory of the Raider (10 Player) Pre 3.1
-			["groups"] = {
+			["description"] = "|cff66ccffCompleted prior to patch 3.1 awarded the mount.|r",
+			["g"] = {
 				un(9, i(44175)),	-- Reins of the Plagued Proto-Drake
 			},
-			["description"] = "|cff66ccffCompleted prior to patch 3.1 awarded the mount.|r",
 		})),
 		un(2, ach(879, {	-- Old School Ride
 			un(2, i(13328)),	-- Black Ram
@@ -165,15 +163,13 @@ _.Mounts =
 			un(2, i(141848)),	-- Dominant Gladiator's Storm Dragon
 		})),
 		un(2, ach(12168, {	-- Gladiator: Legion Season 7
-			["groups"] = {
+			["collectible"] = false,
+			["g"] = {
 				i(153493),	-- Demonic Gladiator's Storm Dragon
 			},
-			["collectible"] = false,
 		})),
 		un(2, ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
-			["groups"] = {
-				i(156879),	-- Dread Gladiator's Proto-Drake
-			},
+			i(156879),	-- Dread Gladiator's Proto-Drake
 		})),
 	}),
 };

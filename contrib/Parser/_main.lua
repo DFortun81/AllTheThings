@@ -550,6 +550,9 @@ end
 mi = function(id, t)									-- Create an MISSION Object (Alternative)
 	return struct("missionID", id, t);
 end
+mount = function(id, t)
+	return struct("mountID", id, t);
+end
 garrisonTalent = function(id, t)						-- Create an GARRISON TALENT Object
 	return struct("talentID", id, t);
 end

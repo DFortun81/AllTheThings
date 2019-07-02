@@ -330,7 +330,9 @@ _.Mounts =
 		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)
 			["classes"] = { 9 },	-- Warlock
 		}),
-		-- Netherlord's Chaotic Wrathsteed [Warlock Only]
+		mount(232412, {	-- Netherlord's Chaotic Wrathsteed [Warlock Only]
+			["classes"] = { 9 },
+		}),
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
 		un(2, i(116776)),	-- Pale Thorngrazer --Note!! Rep removed from Medallion of the Legion in hotfix for 8.0

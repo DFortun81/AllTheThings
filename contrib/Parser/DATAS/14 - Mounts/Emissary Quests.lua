@@ -3,9 +3,7 @@
 ---------------------------------------------
 _.Mounts =
 {
-	{	-- Emissary Quests
-		["npcID"] = -169,	-- Emissary Quests
-		["g"] = {
-		},
-	},
+	n(-169, {	-- Emissary Quests
+	
+	}),
 };
