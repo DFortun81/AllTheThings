@@ -10398,8 +10398,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							return true;
 						end,
 						['OnUpdate'] = function(data)
-							if app.Spec then
-								local id, name, description, icon, role, class = GetSpecializationInfoByID(app.Spec);
+							if self.Spec then
+								local id, name, description, icon, role, class = GetSpecializationInfoByID(self.Spec);
 								if name then
 									if GetLootSpecialization() == 0 then name = name .. " (Automatic)"; end
 									data.text = name;
@@ -10707,10 +10707,10 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		app.LegacyRaidDifficulty = GetLegacyRaidDifficultyID() or 1;
 		app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
 		app.RaidDifficulty = GetRaidDifficultyID() or 14;
-		app.Spec = GetLootSpecialization();
-		if not app.Spec or app.Spec == 0 then
+		self.Spec = GetLootSpecialization();
+		if not self.Spec or self.Spec == 0 then
 			local s = GetSpecialization();
-			if s then app.Spec = select(1, GetSpecializationInfo(s)); end
+			if s then self.Spec = select(1, GetSpecializationInfo(s)); end
 		end
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 		for i,g in ipairs(self.data.g) do
@@ -12601,8 +12601,6 @@ app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
 app:RegisterEvent("NEW_PET_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
-app:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
-app:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 app:RegisterEvent("HEIRLOOMS_UPDATED");
@@ -12927,11 +12925,8 @@ app.events.VARIABLES_LOADED = function()
 	-- Tooltip Settings
 	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
 	GetDataMember("TomTomIgnoreCompletedObjects", true);
-	app.Spec = GetLootSpecialization();
-	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
 	app.CurrentMapID = app.GetCurrentMapID();
 	app.Settings:Initialize();
-	print("SPECIALIZATION", app.Spec);
 	
 	local reagentCache = app.GetDataMember("Reagents");
 	if reagentCache then
@@ -12998,14 +12993,6 @@ app.events.ADDON_LOADED = function(addonName)
 			app:OpenAuctionModule();
 		end
 	end
-end
-app.events.ACTIVE_TALENT_GROUP_CHANGED = function()
-	app.Spec = GetLootSpecialization();
-	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
-end
-app.events.PLAYER_LOOT_SPEC_UPDATED = function()
-	app.Spec = GetLootSpecialization();
-	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
 	app.Level = newLevel;
