@@ -453,6 +453,12 @@ _.Zones =
 				["allianceQuestID"] = 56291,
 				["hordeQuestID"] = 56291,
 				["isDaily"] = true,
+				["coords"] = {
+					{ 76.4, 24.4, 1355 },
+					{ 37.6, 39.8, 1355 },
+					{ 45.6, 64.8, 1355 },
+					{ 38.8, 85.4, 1355 },
+				},
 				["g"] = {
 					crit(22, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
