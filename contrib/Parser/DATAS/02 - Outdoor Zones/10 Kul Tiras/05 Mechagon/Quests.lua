@@ -106,6 +106,22 @@ _.Zones =
 						}),
 					},
 				}),
+				i(55059, {	-- Blueprint: Emergency Repair Kit
+					["questID"] = 55060,	-- Blueprint: Emergency Repair Kit
+					["g"] = {
+						crit(7, {	-- Emergency Repair Kit
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
+				i(167845, {	-- Blueprint: Emergency Powerpack
+					["questID"] = 55060,	-- Blueprint: Emergency Powerpack
+					["g"] = {
+						crit(8, {	-- Emergency Powerpack
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
 				i(168908, {	-- Blueprint: Experimental Adventurer Augment
 					["questID"] = 56087,	-- Blueprint: Experimental Adventurer Augment
 					["crs"] = {
@@ -827,12 +843,11 @@ _.Zones =
 						155259,	-- Lifting Specialist Gogo
 					},
 				}),
-			--	not sure about next quest.  when i walked by after doing the charging for the original quest, this was up with a blue question mark.  it gives a 2-hour buff -- so i guess if the charging machine is available, it's repeatable?  when i turned in the first charging quest, the NPC said it "wouldn't be available every day."  i also got credit for "collaborative construction" while here (counted as a daily construction project, which waren gearhart tells you about), but i'm not sure if that was part of the quest or if that was something else happening in the area as i did it.
-		--[[	q(56335, {	-- Wanna Charge? Gotta Pay!
-					["sourceQuests"] = { 56320 },	-- Your First Charge is Free
-					["repeatable"] = true,
+				q(56335, {	-- Wanna Charge? Gotta Pay!
 					["coord"] = { 61.4, 37.5, 1462 },
-				}),	--]]
+					["sourceQuest"] = 56320,	-- Your First Charge is Free
+					["repeatable"] = true,
+				}),
 				o(329641, {	-- Wanted: Junkbrat and Roadtrogg
 					["questID"] = 56434,
 					["coord"] = { 67.3, 35.2, 1462 },

@@ -33,6 +33,17 @@ _.Zones =
 					},
 				}),
 				q(56131, {	-- Security First
+					["collectible"] = false,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(168832),	-- Galvanic Oscillator
+					},
+				}),
+				q(56141, {	-- Security First
+					["collectible"] = false,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
 					["g"] = {
 						i(168832),	-- Galvanic Oscillator
 					},
