@@ -103,6 +103,7 @@ _.Zones =
 					["g"] = {
 						i(65694),	-- Clerk Whitesteed's Cloak
 						i(65672),	-- Crossbow of the Twice-Slain
+						i(65712),	-- Citizen Wilkes' ring
 					},
 					["qg"] = 47781,	-- Warden Stillwater
 					["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive

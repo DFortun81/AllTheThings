@@ -269,6 +269,9 @@ _.Zones =
 					["qg"] = 45878,	-- Lord Godfrey
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27580 },	-- Sowing Discord
+					["g"] = {
+						i(62892),	-- Windrunner Band
+					},
 				}),
 				q(27484, {	-- Only One May Enter
 					["qg"] = 1938,	-- Dalar Dawnweaver

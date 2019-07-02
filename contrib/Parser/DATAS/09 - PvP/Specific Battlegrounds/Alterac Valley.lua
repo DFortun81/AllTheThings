@@ -66,6 +66,14 @@ _.PVP =
 						["u"] = 2,
 					},
 				}),
+				q(56259),	-- Lokholar the Ice Lord
+				q(7385),	-- A Gallon of Blood
+				q(6801, {	-- Lokholar the Ice Lord
+					["repeatable"] = true,
+				}),
+				q(6741, {	-- More Booty!
+					["repeatable"] = true,
+				}),
 			},
 		}),
 	}),

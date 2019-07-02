@@ -363,11 +363,17 @@ _.Zones =
 						{ 72.0, 24.0, 525 },
 						{ 71.6, 28.6, 525 },
 					},
+					["g"] = {
+						i(119416),	-- Magnaron Heart
+					},
 				}),
 				n(87356, {	-- Vrok the Ancient
 					["questID"] = 37379,
 					["isDaily"] = true,
 					["coord"] = { 70.6, 39.0, 525 },	-- **Coords uncofirmed, relied on wowhead**
+					["g"] = {
+						i(119416),	-- Magnaron Heart
+					},
 				}),
 				n(79145, {	-- Yaga the Scarred
 					["questID"] = 34559,

@@ -220,6 +220,7 @@ _.WorldDrops =
 				i(88149),	-- The Gloaming Blade
 				i(88150),	-- Krol Scimitar
 			}),
+			i(169475),	-- Barnacled Lockbox
 		},
 		["icon"] = "Interface\\Icons\\inv_box_01",
 		["description"] = "These items have a small chance of dropping from the junkboxes.",
