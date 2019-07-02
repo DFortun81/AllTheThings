@@ -10,6 +10,11 @@ _.Zones =
 				i(166971),	-- Empty Energy Cell
 				i(166846),	-- Spare Parts
 				i(168327),	-- Chain Ignitercoil
+				i(167790, {	-- Paint Vial: Fireball Red
+					["g"] = {
+						q(55451),	-- Paint Vial: Fireball Red
+					},
+				}),
 			}),
 		}),
 	}),

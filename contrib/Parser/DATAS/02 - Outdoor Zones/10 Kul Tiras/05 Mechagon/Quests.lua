@@ -476,8 +476,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(55451, {	-- Paint Vial: Fireball Red
-					["description"] = "This item can drop from any of the Mechanized Chests in the zone.",
-					["itemID"] = 167790,
+				--	["description"] = "This item can drop from any of the Mechanized Chests in the zone.",
 					["g"] = {
 						crit(6, {	-- Available in Eight Colors
 							["achievementID"] = 13513,
