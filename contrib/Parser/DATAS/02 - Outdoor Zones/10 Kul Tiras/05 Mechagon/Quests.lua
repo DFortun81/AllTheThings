@@ -223,6 +223,15 @@ _.Zones =
 						}),
 					},
 				}),
+				i(169174, {	-- Blueprint: Rustbolt Pocket Turret
+					["questID"] = 55082,
+					["crs"] = { 56207 },	-- Enforcer KX-T57
+					["g"] = {
+						crit(34, {	-- Rustbolt Pocket Turret
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
 				i(167042, {	-- Blueprint: Scrap Trap
 					["questID"] = 55030,
 					["crs"] = {
