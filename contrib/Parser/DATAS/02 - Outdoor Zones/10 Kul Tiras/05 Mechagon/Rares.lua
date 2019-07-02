@@ -428,6 +428,7 @@ _.Zones =
 						crit(2, {	-- The Scrap King
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
+						i(167846),	-- Blueprint: Mechano-Treat
 					},
 				}),
 				n(151940, {	-- Uncle T'Rogg

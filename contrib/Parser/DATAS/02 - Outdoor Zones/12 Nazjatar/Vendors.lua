@@ -531,25 +531,21 @@ _.Zones =
 					i(163975),	-- Sir Snips
 				},
 			}),
-			n(152153, {	-- Mrrl (alliance)
-				--["coord"] = { , 1355 },
-				["races"] = ALLIANCE_ONLY,
+			n(152084, {	-- Mrrl
+				["coords"] = { 
+					{ 39.1, 54.4, 1355 },	-- Alliance
+					{ 47.0, 61.5, 1355 },	-- Horde
+				},
 				["g"] = {
 					i(169202),	-- Crimson Tidestallion
 					-- Mrrl sells containers of random stuff. Need way more testing to figure out what these contain
 					i(168092),	-- Curiously Warm Kelp Bundle
-					i(168091),	-- Severly Rusted Lockbox
-					i(168095),	-- Strange Coral Cluster
-					i(168053),	-- Unusually Wise Hermit Crab
-				}
-			}),
-			n(152084, {	-- Mrrl (horde)
-				["coord"] = { 47.0, 61.5, 1355 },
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(169202),	-- Crimson Tidestallion
-					-- Mrrl sells containers of random stuff. Need way more testing to figure out what these contain
-					i(168092),	-- Curiously Warm Kelp Bundle
+					i(168097, {	-- Pilfered Armor Crate
+						["g"] = {
+							-- probably contains other benthic items too, but this is only one confirmed so far
+							i(169477),	-- Benthic Girdle
+						},
+					}),
 					i(168091),	-- Severly Rusted Lockbox
 					i(168095),	-- Strange Coral Cluster
 					i(168053),	-- Unusually Wise Hermit Crab
