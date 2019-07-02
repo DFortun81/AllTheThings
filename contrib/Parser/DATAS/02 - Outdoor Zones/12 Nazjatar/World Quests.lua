@@ -127,6 +127,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(56388, {	-- Mindshackle
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
 				q(56022, {	-- Runelocked Chest
 					["lvl"] = 120,
 					["collectible"] = false,

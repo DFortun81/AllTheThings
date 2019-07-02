@@ -55,6 +55,10 @@ _.Zones =
 				q(56399, {	-- Unit 6
 					["collectible"] = false,
 					["lvl"] = 120,
+				}),
+				q(56400, {	-- Unit 17
+					["collectible"] = false,
+					["lvl"] = 120,
 				}),	
 				q(56398, {	-- Unit 35
 					["collectible"] = false,

@@ -264,6 +264,11 @@ _.Zones =
 						}),
 					},
 				}),
+				q(55765, {	-- Bugs, Lots of 'Em!
+					["qg"] = 152932,	-- Razak Ironsides
+					["coord"] = { 75.8, 34.4, 1462 },
+					["isDaily"] = true,
+				}),
 				q(55055, {	-- Build a Bigger Fish Trap
 					["qg"] = 151462,	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },
@@ -297,6 +302,12 @@ _.Zones =
 					["qg"] = 150086,	-- Bolten Springspark
 					["coord"] = { 63.1, 39.2, 1462 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(56327, {	-- Chopped Bots
+					["qg"] = 150086,	-- Bolten Springspark
+					["coord"] = { 63.1, 39.2, 1462 },
+					["sourceQuest"] = 54965,	-- Chopped Bots
+					["isDaily"] = true,
 				}),
 				q(55658, {	-- Clues Abound
 					["qg"] = 152501,	-- Elise Starseeker
@@ -564,6 +575,7 @@ _.Zones =
 					["coord"] = { 59.1, 55.1, 1462 },
 					["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				}),
+				q(56117),	-- Recyclable Parts
 				o(326027, {	-- Recyclerizer DX-82
 					q(55743, {	-- More Recycling
 						["coords"] = {
@@ -612,6 +624,11 @@ _.Zones =
 							}),
 						},
 					}),
+				}),
+				q(55885, {	-- Rico's Rescue
+					["qg"] = 153324,	-- Rico Bugsnapper
+					["coord"] = { 82.9, 23.3, 1462 },
+					["isDaily"] = true,
 				}),
 				q(54086, {	-- Right Bot for the Job -- 55907 and 56100 also popped
 					["qg"] = 150573,	-- Recycler Kerchunk
