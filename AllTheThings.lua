@@ -2254,7 +2254,7 @@ fieldConverters = {
 	end,
 	["itemID"] = function(group, value)
 		CacheField(group, "itemID", value);
-		if rawget(group, "filterID") == 102 then CacheField(group, "toyID", value); end
+		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
 	end,
 	["mapID"] = function(group, value)
 		CacheField(group, "mapID", value);
@@ -5163,7 +5163,7 @@ frame:SetScript("OnEvent", function(self, e, ...)
 		frame:UnregisterAllEvents();
 	end
 end);
-frame:RegisterEvent("PLAYER_LOGIN");
+frame:RegisterEvent("VARIABLES_LOADED");
 frame:RegisterEvent("QUEST_TURNED_IN");
 frame:RegisterEvent("QUEST_LOG_UPDATE");
 app.BaseMusicRoll = {
@@ -9429,7 +9429,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
 			print(e, ...);
-			if e == "PLAYER_LOGIN" then
+			if e == "VARIABLES_LOADED" then
 				if not AllTheThingsDebugData then
 					AllTheThingsDebugData = app.GetDataMember("Debugger", {});
 					app.SetDataMember("Debugger", nil);
@@ -9676,7 +9676,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 				end
 			end
 		end);
-		self:RegisterEvent("PLAYER_LOGIN");
+		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("QUEST_DETAIL");
 		self:RegisterEvent("QUEST_LOOT_RECEIVED");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
@@ -10075,18 +10075,14 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			
 			-- While the player is in combat, wait for combat to end.
 			while InCombatLockdown() do coroutine.yield(); end
-			
-			-- Acquire the new map ID.
-			local mapID = app.GetCurrentMapID();
-			while not mapID or mapID < 0 do
-				coroutine.yield();
-				mapID = app.GetCurrentMapID();
-			end
-			OpenMiniList(mapID);
-		end
-		local function RefreshLocation()
 			if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
-				StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+				-- Acquire the new map ID.
+				local mapID = app.GetCurrentMapID();
+				while not mapID or mapID < 0 do
+					coroutine.yield();
+					mapID = app.GetCurrentMapID();
+				end
+				OpenMiniList(mapID);
 			end
 		end
 		local function ToggleMiniListForCurrentZone()
@@ -10099,11 +10095,10 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		end
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
-		app.RefreshLocation = RefreshLocation;
 		self:SetScript("OnEvent", function(self, e, ...)
-			RefreshLocation();
+			StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
 		end);
-		self:RegisterEvent("PLAYER_LOGIN");
+		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("NEW_WMO_CHUNK");
 		self:RegisterEvent("SCENARIO_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
@@ -12932,13 +12927,12 @@ app.events.VARIABLES_LOADED = function()
 	-- Tooltip Settings
 	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
 	GetDataMember("TomTomIgnoreCompletedObjects", true);
-	app.Settings:Initialize();
-end
-app.events.PLAYER_LOGIN = function()
-	app:UnregisterEvent("PLAYER_LOGIN");
 	app.Spec = GetLootSpecialization();
-	app.CurrentMapID = app.GetCurrentMapID();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
+	app.CurrentMapID = app.GetCurrentMapID();
+	app.Settings:Initialize();
+	print("SPECIALIZATION", app.Spec);
+	
 	local reagentCache = app.GetDataMember("Reagents");
 	if reagentCache then
 		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
@@ -12985,6 +12979,9 @@ app.events.PLAYER_LOGIN = function()
 		end
 		app:RefreshData(false);
 	end);
+end
+app.events.PLAYER_LOGIN = function()
+	app:UnregisterEvent("PLAYER_LOGIN");
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
 		icon = "Interface\\Addons\\AllTheThings\\assets\\logo_32x32",
