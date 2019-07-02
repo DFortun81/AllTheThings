@@ -49,22 +49,18 @@ _.Zones =
 							i(170104),	-- Fathomstalker Bindings
 							i(170122),	-- Fathomstalker Coils
 							i(167766),	-- Fathomstalker Wristwraps
+							i(170329),	-- Neri's Chain Manacles
+							i(170328),	-- Neri's Heavy Manacles
+							i(170330),	-- Neri's Wavebreaker Bindings
+							i(170331),	-- Neri's Wavebreaker Cuffs
+							i(170304),	-- Ori's Tidal Bracers
+							i(170305),	-- Ori's Tidal Wristwraps
 							i(170103),	-- Shirakess Armwraps
 							i(170123),	-- Shirakess Bracelets
 							i(169812),	-- Shirakess Cuffs
 							i(167758),	-- Shirakess Wristwraps
-							i(170304, {	-- Ori's Tidal Bracers
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(170305, {	-- Ori's Tidal Wristwraps
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(170303, {	-- Waveblade Farseer's Armguards
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(170306, {	-- Waveblade Farseer's Bindings
-								["races"] = ALLIANCE_ONLY,
-							}),
+							i(170303),	-- Waveblade Farseer's Armguards
+							i(170306),	-- Waveblade Farseer's Bindings
 							i(167783),	-- Zanj'ir Scaleguard Armguards
 							i(170111),	-- Zanj'ir Scaleguard Coils
 							i(169815),	-- Zanj'ir Scaleguard Vambraces
@@ -77,18 +73,14 @@ _.Zones =
 							i(169791),	-- Fathomstalker Gloves
 							i(167761),	-- Fathomstalker Grips
 							i(170134),	-- Fathomstalker Handwraps
-							i(170378, {	-- Inowari's Waterdancer Gauntlets
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(170376, {	-- Inowari's Waterdancer Grips
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(170377, {	-- Inowari's Waterdancer Handguards
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(170375, {	-- Inowari's Waterdancer Handwraps
-								["races"] = ALLIANCE_ONLY,
-							}),
+							i(170378),	-- Inowari's Waterdancer Gauntlets
+							i(170376),	-- Inowari's Waterdancer Grips
+							i(170377),	-- Inowari's Waterdancer Handguards
+							i(170375),	-- Inowari's Waterdancer Handwraps
+							i(170333),	-- Poen's Deepsea Gloves
+							i(170334),	-- Poen's Deepsea Grips
+							i(170335),	-- Poen's Deepsea Handgrips
+							i(170336),	-- Poen's Deepsea Handguards
 							i(169790),	-- Shirakess Gloves
 							i(170133),	-- Shirakess Grips
 							i(167753),	-- Shirakess Handwraps
@@ -100,6 +92,10 @@ _.Zones =
 							i(167773),	-- Azsh'iri Stormsurger Links
 							i(167765),	-- Fathomstalker Waistband
 							i(167757),	-- Shirakess Cinch
+							i(170367),	-- Vim's Scalecrusher Belt
+							i(170369),	-- Vim's Scalecrusher Chain
+							i(170368),	-- Vim's Scalecrusher Clasp
+							i(170370),	-- Vim's Scalecrusher Girdle
 							i(167782),	-- Zanj'ir Scaleguard Greatbelt
 						}),
 						i(169482, {	-- Benthic Leggings
@@ -117,24 +113,16 @@ _.Zones =
 							i(167780),	-- Zanj'ir Scaleguard Wargreaves
 						}),
 						i(169483, {	-- Benthic Treads
-							i(170143, {	-- Akana's Reefstrider Boots
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(170141, {	-- Akana's Reefstrider Footwraps
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(170140, {	-- Akana's Reefstrider Soles
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(170142, {	-- Akana's Reefstrider Treads
-								["races"] = ALLIANCE_ONLY,
-							}),
+							i(170143),	-- Akana's Reefstrider Boots
+							i(170141),	-- Akana's Reefstrider Footwraps
+							i(170140),	-- Akana's Reefstrider Soles
+							i(170142),	-- Akana's Reefstrider Treads
 							i(169892),	-- Azsh'iri Stormsurger Boots
 							i(170142),	-- Azsh'iri Stormsurger Striders
 							i(167768),	-- Azsh'iri Stormsurger Treads
 							i(169893),	-- Fathomstalker Boots
 							i(167760),	-- Fathomstalker Footpads
-							i(170141),	-- Fathomstalker Footwraps
+							i(170372),	-- Fathomstalker Footwraps
 							i(167752),	-- Shirakess Footwraps
 							i(169894),	-- Shirakess Sandals
 							i(170140),	-- Shirakess Slippers
@@ -413,22 +401,18 @@ _.Zones =
 							i(170104),	-- Fathomstalker Bindings
 							i(170122),	-- Fathomstalker Coils
 							i(167766),	-- Fathomstalker Wristwraps
-							i(170329, {	-- Neri's Chain Manacles
-								["races"] = HORDE_ONLY,
-							}),
-							i(170328, {	-- Neri's Heavy Manacles
-								["races"] = HORDE_ONLY,
-							}),
-							i(170330, {	-- Neri's Wavebreaker Bindings
-								["races"] = HORDE_ONLY,
-							}),
-							i(170331, {	-- Neri's Wavebreaker Cuffs
-								["races"] = HORDE_ONLY,
-							}),
+							i(170329),	-- Neri's Chain Manacles
+							i(170328),	-- Neri's Heavy Manacles
+							i(170330),	-- Neri's Wavebreaker Bindings
+							i(170331),	-- Neri's Wavebreaker Cuffs
+							i(170304),	-- Ori's Tidal Bracers
+							i(170305),	-- Ori's Tidal Wristwraps
 							i(170103),	-- Shirakess Armwraps
 							i(170123),	-- Shirakess Bracelets
 							i(169812),	-- Shirakess Cuffs
 							i(167758),	-- Shirakess Wristwraps
+							i(170303),	-- Waveblade Farseer's Armguards
+							i(170306),	-- Waveblade Farseer's Bindings
 							i(167783),	-- Zanj'ir Scaleguard Armguards
 							i(170111),	-- Zanj'ir Scaleguard Coils
 							i(169815),	-- Zanj'ir Scaleguard Vambraces
@@ -441,18 +425,14 @@ _.Zones =
 							i(169791),	-- Fathomstalker Gloves
 							i(167761),	-- Fathomstalker Grips
 							i(170134),	-- Fathomstalker Handwraps
-							i(170333, {	-- Poen's Deepsea Gloves
-								["races"] = HORDE_ONLY,
-							}),
-							i(170334, {	-- Poen's Deepsea Grips
-								["races"] = HORDE_ONLY,
-							}),
-							i(170335, {	-- Poen's Deepsea Handgrips
-								["races"] = HORDE_ONLY,
-							}),
-							i(170336, {	-- Poen's Deepsea Handguards
-								["races"] = HORDE_ONLY,
-							}),
+							i(170378),	-- Inowari's Waterdancer Gauntlets
+							i(170376),	-- Inowari's Waterdancer Grips
+							i(170377),	-- Inowari's Waterdancer Handguards
+							i(170375),	-- Inowari's Waterdancer Handwraps
+							i(170333),	-- Poen's Deepsea Gloves
+							i(170334),	-- Poen's Deepsea Grips
+							i(170335),	-- Poen's Deepsea Handgrips
+							i(170336),	-- Poen's Deepsea Handguards
 							i(169790),	-- Shirakess Gloves
 							i(170133),	-- Shirakess Grips
 							i(167753),	-- Shirakess Handwraps
@@ -464,18 +444,10 @@ _.Zones =
 							i(167773),	-- Azsh'iri Stormsurger Links
 							i(167765),	-- Fathomstalker Waistband
 							i(167757),	-- Shirakess Cinch
-							i(170367, {	-- Vim's Scalecrusher Belt
-								["races"] = HORDE_ONLY,
-							}),
-							i(170369, {	-- Vim's Scalecrusher Chain
-								["races"] = HORDE_ONLY,
-							}),
-							i(170368, {	-- Vim's Scalecrusher Clasp
-								["races"] = HORDE_ONLY,
-							}),
-							i(170370, {	-- Vim's Scalecrusher Girdle
-								["races"] = HORDE_ONLY,
-							}),
+							i(170367),	-- Vim's Scalecrusher Belt
+							i(170369),	-- Vim's Scalecrusher Chain
+							i(170368),	-- Vim's Scalecrusher Clasp
+							i(170370),	-- Vim's Scalecrusher Girdle
 							i(167782),	-- Zanj'ir Scaleguard Greatbelt
 						}),
 						i(169482, {	-- Benthic Leggings
@@ -493,12 +465,16 @@ _.Zones =
 							i(167780),	-- Zanj'ir Scaleguard Wargreaves
 						}),
 						i(169483, {	-- Benthic Treads
+							i(170143),	-- Akana's Reefstrider Boots
+							i(170141),	-- Akana's Reefstrider Footwraps
+							i(170140),	-- Akana's Reefstrider Soles
+							i(170142),	-- Akana's Reefstrider Treads
 							i(169892),	-- Azsh'iri Stormsurger Boots
 							i(170142),	-- Azsh'iri Stormsurger Striders
 							i(167768),	-- Azsh'iri Stormsurger Treads
 							i(169893),	-- Fathomstalker Boots
 							i(167760),	-- Fathomstalker Footpads
-							i(170141),	-- Fathomstalker Footwraps
+							i(170372),	-- Fathomstalker Footwraps
 							i(167752),	-- Shirakess Footwraps
 							i(169894),	-- Shirakess Sandals
 							i(170140),	-- Shirakess Slippers
