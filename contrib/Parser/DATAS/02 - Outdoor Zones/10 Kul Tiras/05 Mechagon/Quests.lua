@@ -106,8 +106,8 @@ _.Zones =
 						}),
 					},
 				}),
-				i(55059, {	-- Blueprint: Emergency Repair Kit
-					["questID"] = 55060,	-- Blueprint: Emergency Repair Kit
+				i(167845, {	-- Blueprint: Emergency Repair Kit
+					["questID"] = 55059,	-- Blueprint: Emergency Repair Kit
 					["g"] = {
 						crit(7, {	-- Emergency Repair Kit
 							["achievementID"] = 13479,	-- Junkyard Architect
