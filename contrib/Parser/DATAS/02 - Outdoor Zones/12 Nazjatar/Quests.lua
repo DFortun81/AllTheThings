@@ -442,6 +442,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(55770, {	-- WANTED: Commander Sarj'eth
+						["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1137,6 +1138,21 @@ _.Zones =
 					55500,	-- Save a Friend (Horde)
 				},
 			}),
+			q(55721, {	-- Requisition: A Few Kelp Buds (also popped 56278, 56605)
+				["isDaily"] = true,
+				["qgs"] = {
+					153591,	-- Mikah Brewbelly (Alliance)
+				--	,	--  (Horde)
+				},
+				["coords"] = {
+					{ 40.1, 55.5, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
+				},
+			}),
 			q(55720, {	-- Requisition: A Few Seaweed
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1204,6 +1220,21 @@ _.Zones =
 				["coords"] = {
 					{ 37.9, 55.6, 1355 },	-- Alliance
 					{ 49.2, 62.2, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
+				},
+			}),
+			q(55786, {	-- Requisition: More Seaweek
+				["isDaily"] = true,
+				["qgs"] = {
+					151763,	-- Isla (Alliance)
+				--	,	--  (Horde)
+				},
+				["coords"] = {
+					{ 37.8, 55.4, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)
@@ -1289,10 +1320,6 @@ _.Zones =
 						["questID"] = 55831,
 						["isDaily"] = true,
 					},
-					{	-- Requisition: A Few Kelp Buds
-						["questID"] = 55721, -- also popped 56278, 56605
-						["isDaily"] = true,
-					},
 					{	-- Requisition: A Few Starfish
 						["questID"] = 55719,
 						["isDaily"] = true,
@@ -1303,10 +1330,6 @@ _.Zones =
 					},
 					{	-- Requisition: More Kelp Buds
 						["questID"] = 55787,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: More Seaweek
-						["questID"] = 55786,
 						["isDaily"] = true,
 					},
 				},

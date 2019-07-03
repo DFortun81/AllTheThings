@@ -9,6 +9,10 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
+			q(55970, {	-- Attrition
+				["lvl"] = 120,
+				["collectible"] = false,
+			}),
 			q(55893, {	-- Azanz, the Slitherblade
 				["lvl"] = 120,
 				["collectible"] = false,
@@ -17,10 +21,6 @@ _.Zones =
 						["achievementID"] = 13690,
 					}),
 				},
-			}),
-			q(55970, {	-- Attrition
-				["lvl"] = 120,
-				["collectible"] = false,
 			}),
 			q(55891, {	-- Champion Aldrantiss, Defender of Her Kingdom
 				["lvl"] = 120,
@@ -105,15 +105,15 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
-			q(56121, {	-- Jumping Jellies
-				["lvl"] = 120,
-				["collectible"] = false,
-			}),
 			q(55997, {	-- Hungry Hungry Hydras
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
 			q(55884, {	-- Infestation of Madness
+				["lvl"] = 120,
+				["collectible"] = false,
+			}),
+			q(56121, {	-- Jumping Jellies
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
@@ -126,49 +126,40 @@ _.Zones =
 					}),
 				},
 			}),
-			q(56388, {	-- Mindshackle
+			q(56389, {	-- Kelpstone
 				["lvl"] = 120,
 				["collectible"] = false,
-			}),
-			q(56022, {	-- Runelocked Chest
-				["lvl"] = 120,
-				["collectible"] = false,
-				["g"] = {
-					{	-- Puzzle Performer (Hard Runelocked Chest: Yellow)
-						["achievementID"] = 13764,
-						["criteriaID"] = 4,
-					},
-				},
 			}),
 			q(56023, {	-- Leylocked Chest
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					{	-- Puzzle Performer (Hard Leylocked Chest)
-						["achievementID"] = 13764,
-						["criteriaID"] = 3,
-					},
+					crit(3, {	-- Hard Leylocked Chest
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56024, {	-- Leylocked Chest
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					{	-- Puzzle Performer (Medium Leylocked Chest)
-						["achievementID"] = 13764,
-						["criteriaID"] = 2,
-					},
+					crit(2, {	-- Medium Leylocked Chest
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56025, {	-- Leylocked Chest
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					{	-- Puzzle Performer (Easy Leylocked Chest)
-						["achievementID"] = 13764,
-						["criteriaID"] = 1,
-					},
+					crit(1, {	-- Easy Leylocked Chest
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
+			}),
+			q(56388, {	-- Mindshackle
+				["lvl"] = 120,
+				["collectible"] = false,
 			}),
 			q(56385, {	-- Pearlhusk Crawler
 				["collectible"] = false,
@@ -187,10 +178,9 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Medium Runelocked Chest: Green)
-						["achievementID"] = 13764,
-						["criteriaID"] = 21,
-					},
+					crit(21, {	-- Medium Runelocked Chest: Green
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56006, {	-- Runelocked Chest
@@ -198,10 +188,9 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Medium Runelocked Chest: Orange)
-						["achievementID"] = 13764,
-						["criteriaID"] = 20,
-					},
+					crit(20, {	-- Medium Runelocked Chest: Orange
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56007, {	-- Runelocked Chest
@@ -209,10 +198,19 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Medium Runelocked Chest: Red)
-						["achievementID"] = 13764,
-						["criteriaID"] = 19,
-					},
+					crit(19, {	-- Medium Runelocked Chest: Purple
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
+				},
+			}),
+			q(56008, {	-- Runelocked Chest
+				["lvl"] = 120,
+				["collectible"] = false,
+				["sourceQuest"] = 56248,	-- Treasure Tale
+				["g"] = {
+					crit(18, {	-- Medium Runelocked Chest: Yellow
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56009, {	-- Runelocked Chest
@@ -220,10 +218,9 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Medium Runelocked Chest: Purple)
-						["achievementID"] = 13764,
-						["criteriaID"] = 17,
-					},
+					crit(17, {	-- Medium Runelocked Chest: Purple
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56011, {	-- Runelocked Chest
@@ -231,10 +228,9 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Medium Runelocked Chest: Blue)
-						["achievementID"] = 13764,
-						["criteriaID"] = 15,
-					},
+					crit(15, {	-- Medium Runelocked Chest: Blue
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56012, {	-- Runelocked Chest
@@ -242,10 +238,9 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Medium Runelocked Chest: Green)
-						["achievementID"] = 13764,
-						["criteriaID"] = 14,
-					},
+					crit(14, {	-- Medium Runelocked Chest: Green
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56013, {	-- Runelocked Chest
@@ -253,10 +248,9 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Easy Runelocked Chest: Orange)
-						["achievementID"] = 13764,
-						["criteriaID"] = 13,
-					},
+					crit(13, {	-- Easy Runelocked Chest: Orange
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56016, {	-- Runelocked Chest
@@ -264,10 +258,9 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Medium Runelocked Chest: Yellow)
-						["achievementID"] = 13764,
-						["criteriaID"] = 10,
-					},
+					crit(10, {	-- Medium Runelocked Chest: Yellow
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56019, {	-- Runelocked Chest
@@ -275,10 +268,9 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Hard Runelocked Chest: Orange)
-						["achievementID"] = 13764,
-						["criteriaID"] = 7,
-					},
+					crit(7, {	-- Hard Runelocked Chest: Orange
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			q(56020, {	-- Runelocked Chest
@@ -286,10 +278,18 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Hard Runelocked Chest: Purple)
+					crit(6, {	-- Hard Runelocked Chest: Purple
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
+				},
+			}),
+			q(56022, {	-- Runelocked Chest
+				["lvl"] = 120,
+				["collectible"] = false,
+				["g"] = {
+					crit(4, {	-- Hard Runelocked Chest: Yellow
 						["achievementID"] = 13764,
-						["criteriaID"] = 6,
-					},
+					}),
 				},
 			}),
 			--[[ -- this one has a typo in the questID. Need to figure out what it really is
@@ -298,10 +298,9 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					{	-- Puzzle Performer (Medium Runelocked Chest: Purple)
-						["achievementID"] = 13764,
-						["criteriaID"] = 12,
-					},
+					crit(12, {	-- Medium Runelocked Chest: Purple
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
 				},
 			}),
 			]]--
