@@ -64,6 +64,15 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 54090,	-- Toys For Destruction
 				}),
+				q(56365, {	-- Be Kind, Rewind
+					--["qg"] = 
+					["coords"] = {
+						--{ 69.7, 33.0, 1462 },	-- Future
+						{ 73.6, 35.6, 1462 },	-- Current
+					},
+					["isDaily"] = true,
+					--["sourceQuest"] =
+				}),
 				i(169112, {	-- Blueprint: Advanced Adventurer Augment
 					["questID"] = 56145,
 					["g"] = {

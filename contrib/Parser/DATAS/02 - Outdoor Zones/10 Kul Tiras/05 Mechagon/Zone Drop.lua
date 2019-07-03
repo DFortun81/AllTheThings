@@ -15,6 +15,12 @@ _.Zones =
 								i(169396),	-- Echoing Oozeling
 							},
 						}),
+						i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
+							i(169844),	-- Azeroth Mini: Overspark
+							i(169852),	-- Azeroth Mini: Blastatron
+							i(169851),	-- Azeroth Mini: Cogstar
+							i(169845),	-- Azeroth Mini: HK-8
+						}),
 					},
 				}),
 				i(159228),  -- Freehold Cape

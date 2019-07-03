@@ -243,6 +243,12 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(169382),	-- Lost Robogrip
+						i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+							i(169843),	-- Azeroth Mini: Cork Stuttguard
+							i(169842),	-- Azeroth Mini: Roadtrogg
+							i(169840),	-- Azeroth Mini: Gazlowe
+							i(169795),	-- Azeroth Mini: Bondo Bigblock
+						}),
 					},
 				}),
 				n(151124, {	-- Mechagonian Nullifier
