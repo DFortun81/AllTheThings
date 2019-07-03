@@ -678,7 +678,7 @@ _.Zones =
 							q(41634, {	-- Work Order: Leystone Armguards
 								["qg"] = 106901,	-- Sylvia Hartshorn
 								["lvl"] = 110,
-							--	["isWQ"] = true,	-- maybe, someday?
+								["collectible"] = false,
 								["g"] = {
 									i(123936),	-- Recipe: Leystone Armguards (Rank 3)
 								},
@@ -1978,28 +1978,32 @@ _.Zones =
 					}),
 					q(41676, {	-- Work Order: Pump-Action Bandage Gun
 						["requireSkill"] = 202,	-- Engineering
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["g"] = {
 							i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
 						},
 					}),
 					q(41646, {	-- Work Order: Silkweave Gloves
 						["requireSkill"] = 197,	-- Tailoring
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["g"] = {
 							i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
 						},
 					}),
 					q(41640, {	-- Work Order: Warhide Mask
 						["requireSkill"] = 165,	-- Leatherworking
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["g"] = {
 							i(137878),	-- Recipe: Warhide Mask (Rank 3)
 						},
 					}),
 					q(41670, {	-- Work Order: Word of Agility
 						["requireSkill"] = 333,	-- Enchanting
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["qg"] = 106901,	-- Sylvia Hartshorn
 						["g"] = {
 							i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)

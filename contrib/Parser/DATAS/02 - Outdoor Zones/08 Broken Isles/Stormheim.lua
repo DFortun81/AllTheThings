@@ -2693,7 +2693,8 @@ _.Zones =
 						["g"] = {
 							i(137865),	-- Design: Queen's Opal Loop (Rank 3)
 						},
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["requireSkill"] = 755,	-- Jewelcrafting
 					},
 					{	-- Work Order: Silkweave Bracers
@@ -2701,7 +2702,8 @@ _.Zones =
 						["g"] = {
 							i(137961),	-- Pattern: Silkweave Bracers (Rank 3)
 						},
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["requireSkill"] = 197,	-- Tailoring
 					},
 					{	-- Work Order: Warhide Footpads
@@ -2710,7 +2712,8 @@ _.Zones =
 						["g"] = {
 							i(137880),	-- Recipe: Warhide Footpads (Rank 3)
 						},
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["requireSkill"] = 165,	-- Leatherworking
 					},
 					{	-- Work Order: Word of Haste
@@ -2719,7 +2722,8 @@ _.Zones =
 						["g"] = {
 							i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
 						},
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["requireSkill"] = 333,	-- Enchanting
 					},
 				}),				

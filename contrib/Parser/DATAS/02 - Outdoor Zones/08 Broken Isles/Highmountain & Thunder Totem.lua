@@ -2560,28 +2560,32 @@ _.Zones =
 				n(-34,  {	-- World Quests
 					q(41677, {	-- Work Order: Auto-Hammer
 						["requireSkill"] = 202,	-- Engineering
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["g"] = {
 							i(137723),	-- Schematic: Auto-Hammer (Rank 3)
 						},
 					}),
 					q(41641, {	-- Work Order: Battlebound Armbands
 						["requireSkill"] = 165,	-- Leatherworking
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["g"] = {
 							i(137908),	-- Recipe: Battlebound Armbands (Rank 3)
 						},
 					}),
 					q(41653, {	-- Work Order: Skystone Pendant
 						["requireSkill"] = 755,	-- Jewelcrafting
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["g"] = {
 							i(137842),	-- Design: Skystone Pendant (Rank 3)
 						},
 					}),
 					q(41671, {	-- Work Order: Word of Strength
 						["requireSkill"] = 333,	-- Enchanting
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["g"] = {
 							i(128604),	-- Formula: Enchant Cloak - Word of Strength (Rank 3)
 						},

@@ -361,8 +361,9 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(41674, {	-- Work Order: Word of Intellect
 							["requireSkill"] = 333,	-- Enchanting
-							["isWQ"] = 110,
 							["qg"] = 32725,	-- Warmage Silva
+							["lvl"] = 110,
+							["collectible"] = false,
 							["g"] = {
 								i(128606),	-- Formula: Enchant CLoak - Word of Intellect (Rank 3)
 							},
@@ -480,7 +481,8 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(41680, {	-- Work Order: Failure Detection Pylon
 							["requireSkill"] = 202,	-- Engineering
-							["isWQ"] = 110,
+							["lvl"] = 110,
+							["collectible"] = false,
 							["qg"] = 32725,	-- Warmage Silva
 							["g"] = {
 								i(137724),	-- Schematic: Failure Detection Pylon (Rank 3)
@@ -1070,7 +1072,8 @@ _.Zones =
 						},
 					}),
 					q(41656,  {	-- Work Order: Azsunite Loop
-						["isWQ"] = 110,
+						["lvl"] = 110,
+						["collectible"] = false,
 						["g"] = {
 							i(137840),	-- Design: Azsunite Loop (Rank 3)
 						},
@@ -1206,7 +1209,8 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(41644, {	-- Work Order: Warhide Gloves
 							["requireSkill"] = 165,	-- Leatherworking
-							["isWQ"] = 110,
+							["lvl"] = 110,
+							["collectible"] = false,
 							["qg"] = 32725,	-- Warmage Silva
 							["g"] = {
 								i(137879),	-- Recipe: Warhide Gloves (Rank 3)
@@ -1432,7 +1436,8 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(41650, {
 							["requireSkill"] = 197,	-- Tailoring
-							["isWQ"] = 110,
+							["lvl"] = 110,
+							["collectible"] = false,
 							["g"] = {
 								i(138013),	-- Pattern: Silkweave Hood (Rank 3)
 							},

@@ -10,10 +10,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["groups"] = {
 			n(-34, {	-- World Quests
 				q(51500, {	-- The Weaponmaster Walks Again
-					["repeatable"] = true,
-					["isDaily"] = true, 	-- Would like to swap it to WQ below
-					--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-					["lvl"] = 120,			-- WQ is 120+ only
+					["lvl"] = 120,
+					["collectible"] = false,
 				}),
 			}),
 			d(2,   {	-- Heroic

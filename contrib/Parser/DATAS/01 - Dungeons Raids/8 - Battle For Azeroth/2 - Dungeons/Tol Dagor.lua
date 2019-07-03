@@ -19,10 +19,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["g"] = {
 			n(-34, {	-- World Quests
 				q(51297, {	-- Tol Dagor: Shorefront Property
-					["repeatable"] = true,
-					["isDaily"] = true, 	-- Would like to swap it to WQ below
-					--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-					["lvl"] = 120,			-- WQ is 120+ only
+					["lvl"] = 120,
+					["collectible"] = false,
 				}),
 			}),
 			d(1,  {	-- Normal
