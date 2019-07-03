@@ -46,12 +46,13 @@ _.Zones =
 					["questID"] = 56988,
 					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 71.4, 23.7, 1355 },
-					["description"] = "Hidden behind a starfish.",
+					["description"] = "Hidden behind a starfish on the left side of an underwater cave.",
 				}),
 				o(9999968, {	-- Figurine 3
 					["questID"] = 56992,
 					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 73.6, 25.9, 1355 },
+					["description"] = "On the left side of a small underwater cave, tucked behind a curved piece of broken shell on the ground.",
 				}),
 				o(9999967, {	-- Figurine 4
 					["questID"] = 56990,
@@ -69,7 +70,7 @@ _.Zones =
 					["questID"] = 56984,
 					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 61.1, 26.8, 1355 },
-					["description"] = "Behind the sea urchin.",
+					["description"] = "Behind the sea urchin in a small cave filled with wind elementals.",
 				}),
 				o(9999964, {	-- Figurine 7
 					["questID"] = 56991,
@@ -99,6 +100,7 @@ _.Zones =
 					["questID"] = 56985,
 					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 59.1, 30.4, 1355 },
+					["description"] = "In a coral outcropping at the back of a small cave filled with water elementals.",
 				}),
 			}),
 			ach(13707),		-- Mrrl's Secret Stash
