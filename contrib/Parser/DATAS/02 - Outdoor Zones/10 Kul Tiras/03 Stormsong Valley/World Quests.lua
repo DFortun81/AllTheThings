@@ -92,6 +92,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(52310, {	-- Corrupted Tideskipper
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52179, {	-- Fortified Resistance
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -136,6 +140,11 @@ _.Zones =
 					}),
 					q(51806, {	-- Pest Remover Mk. II
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52142, {	-- Restocking
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51974, { 	-- Sabertron (COPPER)
@@ -192,6 +201,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(52271, {	-- Sea Salt Flavored
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52315, {	-- Severus the Outcast
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -207,6 +221,11 @@ _.Zones =
 					}),
 					q(52452, {	-- Song Mistress Dadalea
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52198, {	-- Tank and Spank
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52166, {	-- The Faceless Herald
