@@ -157,8 +157,7 @@ _.Zones =
 				},
 			}),
 			n(152556, {	-- Chasm-Haunter
-				["allianceQuestID"] = 56613,
-				["hordeQuestID"] = 56270,
+				["questID"] = 56270,
 				["coord"] = { 49.2, 88.8, 1355 },
 				["isDaily"] = true,
 				["description"] = "Inside a hidden cave beneath the waterfall.",

@@ -296,6 +296,7 @@ _.NeverImplemented =
 		q(56614),	-- Blightlight first kill
 		q(56887),	-- Carnivorous Lasher first kill
 		q(56600),	-- Caverndark Terror first kill
+		q(56613),	-- Chasm Haunter first kill
 		q(56612),	-- Daggertooth Terror first kill
 		q(56599),	-- Elder Unu first kill
 		q(56598),	-- Elderspawn Nalaada first kill
