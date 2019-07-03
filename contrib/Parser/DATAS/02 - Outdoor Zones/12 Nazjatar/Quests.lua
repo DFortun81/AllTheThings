@@ -532,7 +532,7 @@ _.Zones =
 			q(56148, {	-- Call to Arms: Nazjatar
 				["qg"] = 154641,	-- High Warlord Volrath
 				["coord"] = { 48.7, 60.6, 1355 },
-				["races"] = HORDE_ONLY
+				["races"] = HORDE_ONLY,
 			}),
 			q(52948, {	-- Call to Arms: Tirigarde Sound
 				["qg"] = 154640,	-- Grand Marshall Tremblade
