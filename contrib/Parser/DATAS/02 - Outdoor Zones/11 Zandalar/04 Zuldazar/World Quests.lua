@@ -37,6 +37,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51475, {	-- Brutal Escort
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(55344, {	-- Calligraphy
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -61,6 +65,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(50548, {	-- Enforcing the Will of the King
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50877, {	-- Gahz'ralka
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -164,6 +172,10 @@ _.Zones =
 					q(50756, {	-- Subterranean Evacuation
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51081, {	-- Syrawon the Dominus
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(50867, {	-- Tambano
