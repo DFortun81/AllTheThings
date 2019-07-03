@@ -12,6 +12,8 @@ _.NeverImplemented =
 		q(35894),	-- Dire Maul: Bonus objective complete
 		q(32750),	-- Durumu Dead (killed Durumu on normal in ToT)
 		q(32755),	-- Empyreal Queens Dead (killed Twin Consorts in ToT)
+		q(35601),	-- Gnomeregan Reward Quest - received after killing Mekgineer Thermaplugg
+		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - received after killing Grubbis
 		q(35572),	-- Hellfire Ramparts Reward Quest (Triggered by completing Hellfire Ramparts)
 		q(32745),	-- Horridon Dead (killed Horridon on normal in ToT)
 		q(32754),	-- Iron Qon Dead (killed Iron Qon on normal in ToT)
