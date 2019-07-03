@@ -56,7 +56,7 @@ _.Zones =
 			q(56777, {	-- A Gift From The Clan
 				["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "Offered every time your follower gains a rank.",
+				["description"] = "Offered when your bodyguard hits rank 2.",
 				["g"] = {
 					i(169903),	-- Nazjatar Survival Pack
 				},
@@ -75,10 +75,10 @@ _.Zones =
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			}),
 			q(56816, {	-- A Kelfin's Best Friend
-				--["qg"] = 151309,	-- Kelfin Scout(any follower?)
+				["qg"] = 151309,	-- Kelfin Scout (Neri Sharpfin)
 				["coord"] = { 45.0, 60.9, 1355 },
-				--["races"] = HORDE_ONLY,
-				--["sourceQuest"] = 
+				["races"] = HORDE_ONLY,
+				["description"] = "Available when your bodyguard hits rank 9.",
 			}),
 			o(325853, {	-- Empty Bookcase
 				["coord"] = { 78.4, 28.6, 1355 },
@@ -630,12 +630,14 @@ _.Zones =
 				["sourceQuest"] = 55054,	-- Upheaval
 			}),
 			q(56164, {	-- Desperate Need
+				["u"] = 1,
 				["qg"] = 151763,	-- Isla
 				["coord"] = { 37.7, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 154248,	-- A Tempered Blade
 			}),
 			q(56176, {	-- Desperate Need
+				["u"] = 1,
 				["qg"] = 154208,	-- Jonah Lowtide
 				["coord"] = { 50.5, 66.2, 1355 },
 				["races"] = HORDE_ONLY,

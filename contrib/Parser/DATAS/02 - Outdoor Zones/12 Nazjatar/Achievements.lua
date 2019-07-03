@@ -116,7 +116,11 @@ _.Zones =
 					crit(4, {	-- Dusty Amalgamation
 						["description"] = "Activate Lesser Lithic Arcanocrystal",
 					}),
-					crit(5),	-- Zomera
+					crit(5, {	-- Zomera
+						-- activated quest 55199. Is this a generic flag for using the amalgamator or is it specific to the mob?
+						-- 56480, 56723, 56891 and 56892 triggered after killing the mob
+						["description"] = "Active Lesser Benthic and Greater Lithic Arcanocrystals",
+					}),
 					crit(6, {	-- Omus
 						["description"] = "Active Lesser Benthic and Greater Pyroclasmic Arcanocrystals",
 					}),
