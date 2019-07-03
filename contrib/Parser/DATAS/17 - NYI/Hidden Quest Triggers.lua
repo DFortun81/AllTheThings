@@ -154,10 +154,16 @@ _.NeverImplemented =
 		q(33167),	-- Tracking Quest: The Root of Darkness - Stone 3
 		q(33166),	-- Tracking Quest: The Root of Darkness - Stone 4
 		q(34896),	-- Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
+				
+		-------------------
+		--    Legion     --
+		-------------------
+		q(45533),	-- Legion Dungeon Reward Quest
 		
 		-------------------
 		--      BFA      --
 		-------------------
+		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
 		q(51871),	-- Drustvar repeatable random chest
 		q(51875),	-- Drustvar repeatable random chest
 		q(51878),	-- Drustvar repeatable random chest
