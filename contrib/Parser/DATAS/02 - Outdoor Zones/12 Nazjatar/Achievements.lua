@@ -40,6 +40,7 @@ _.Zones =
 					["questID"] = 56983,
 					["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 					["coord"] = { 28.8, 29.1, 1355 },
+					["description"] = "In an underwater cave filled with |cFFFFD700Bloodfin Murlocs|r. ",
 				}),
 				o(9999969, {	-- Figurine 2
 					["questID"] = 56988,
