@@ -1594,6 +1594,19 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56350,	-- Scouting the Palace
 			}),
+			q(56785, {	-- The Mystic Chest
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Your Ankoan friend will offer this quest upon reaching Rank 9.",
+				["races"] = ALLIANCE_ONLY,
+				["qgs"] = {	-- add other two bodyguards/friends/whatever
+					154304,	-- Farseer Ori
+				},
+				["g"] = {
+					i(169911, {	-- Liberated Naga Cache
+						currency(1721),	-- Prismatic Manapearl x10 (also contained 11 Osmenite Ore, but not sure if this is a static reward)
+					}),
+				},
+			}),
 			q(56166, {	-- The Needs of the People
 				["u"] = 40,
 				["qg"] = 151763,	-- Isla

@@ -62,6 +62,7 @@ _.Zones =
 				}),
 				qh(28344, {	-- Can You Smell What the Lok'tar is Cooking?
 					["qg"] = 48129,	-- Helcular
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 28332, 28331 },	-- Helcular's Command & Helcular's Rod Giveth...
 				}),
 				qpvp(qa(7122, {	-- Capture a Mine
