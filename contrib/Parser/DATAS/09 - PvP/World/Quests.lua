@@ -13,7 +13,7 @@ _.PVP =
 				},
 			}),
 			q(52784, {	-- The Horde Slayer
-				["races"] = ALLLIANCE_ONLY,
+				["races"] = ALLIANCE_ONLY,
 				["g"] =	{
 					ach(12567),	-- The Horde Slayer
 					title(625),	-- <Name>, the Horde Slayer
