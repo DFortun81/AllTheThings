@@ -375,6 +375,8 @@ _.Zones =
 					},
 				}),
 				n(153000, {	-- Sparkqueen P'Emp
+					--["questID"] =
+					["coord"] = { 83.8, 22.0, 1462 },
 					["isDaily"] = true,
 					["g"] = {
 						crit(17, {	-- Sparkqueen P'Emp

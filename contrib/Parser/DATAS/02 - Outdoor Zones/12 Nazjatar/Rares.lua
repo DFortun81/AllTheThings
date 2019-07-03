@@ -288,7 +288,9 @@ _.Zones =
 				},
 			}),
 			n(152567, {	-- Kelpwillow
-				["questID"] = 56596,	-- (TODO: verify this)
+				--["questID"] = 56287,
+				["questID"] = 57140,	-- (TODO: verify this)(missing in ATT)
+				--["questID"] = 56596,	-- (TODO: verify this)(not it)
 				["coord"] = { 50.2, 69.6, 1355 },
 				["isDaily"] = true,
 				["description"] = "Use a |cFFFFD700Prismatic Crystal|r to charm a |cFFFFD700Muck Slug|r and bring it to Kelpwillow to activate him.",

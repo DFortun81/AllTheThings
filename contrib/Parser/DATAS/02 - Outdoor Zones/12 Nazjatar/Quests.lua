@@ -1473,7 +1473,10 @@ _.Zones =
 			}),
 			q(56830, {	-- Summons from the Depths
 				["isDaily"] = true,
-				["coord"] = { 48.5, 40.4, 1355 },
+				["coords"] = {
+					{ 48.5, 40.4, 1355 },
+					{ 58.2, 28.7, 1355 },
+				},
 				["g"] = {
 					ach(13763),	-- Back to the Depths!
 				},
