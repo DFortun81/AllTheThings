@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+_.GearSets =
 {
 	n(-573, {	-- Scroll of Resurrection
 		["description"] = "These were originally obtained by using the Scroll of Resurrection Character Boost. They were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
@@ -20,7 +20,7 @@ _.GearSets =
 			{ 45.0, 23.2, 201},	-- Erunak Stonespeaker <The Earthen Ring>
 			{ 38.8, 31.6, 201},	-- Erunak Stonespeaker <The Earthen Ring>
 		},
-		["groups"] = {
+		["g"] = {
 			cl(1, {	-- Warrior [Valiant]
 				i(72982),	-- Valiant Bulwark
 				i(72992),	-- Valiant Greatsword

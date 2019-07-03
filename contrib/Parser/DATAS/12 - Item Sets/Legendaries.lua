@@ -4,7 +4,8 @@
 _.GearSets = 
 {
 	n(-364, {	-- Legendaries
-		["groups"] = {	
+		["achievementID"] = 5010,	-- The Ultimate Collection
+		["g"] = {	
 			n(-319, {	-- Weapons
 				un(2, i(22632, {	-- Atiesh, Greatstaff of the Guardian (Druid)
 					["classes"] = { 11 }
@@ -352,6 +353,5 @@ _.GearSets =
 			un(38, i(102246)),	-- Xing-Ho, Breath of Yu'lon
 			}),
 		},
-		["achievementID"] = 5010,	-- The Ultimate Collection
 	}),
 };

@@ -13,7 +13,15 @@ _.GearSets =
 			i(14616),	-- Feet
 		}),
 		gs(1470, {	-- Burnished Triumvirate Armor
-			["groups"] = {
+			["classes"] = {
+				11,	--  Druid
+				4,  -- Rogue
+				10,	-- Monk
+				12,	-- Demon  Hunter
+			},
+			["lvl"] = 110,
+			--["itemID"] =  152242,	-- Ensemble: Burnished Armor
+			["g"] = {
 				i(151336),	-- Voidlashed Hood
 				i(151319),	-- Twilight's Edge Spaulders
 				i(151306),	-- Dignitary's Traveling Cloak
@@ -24,14 +32,6 @@ _.GearSets =
 				i(151314),	-- Shifting Stalker Hide Pants
 				i(151317),	-- Footpads of Seeping Dread
 			},
-			["classes"] = {
-				11,	--  Druid
-				4,  -- Rogue
-				10,	-- Monk
-				12,	-- Demon  Hunter
-			},
-			["lvl"] = 110,
-			--["itemID"] =  152242,	-- Ensemble: Burnished Armor
 		}),
 		n(-3229, {	-- Cadaverous Garb [Unobtainable]
 			i(14637),	-- Chest
@@ -41,7 +41,8 @@ _.GearSets =
 			i(14641),	-- Feet
 		}),
 		n(-3181, {	-- Cenarion Circle Set (Ruins of Ahn'Qiraj)
-			["groups"] = {
+			["lvl"] = 60,
+			["g"] = {
 				n(-3232, {	-- Finery of Infinite Wisdom
 					i(21412),	-- Back
 					i(21410),	-- Weapon
@@ -79,10 +80,16 @@ _.GearSets =
 					i(21392),	-- Weapon
 				}),
 			},
-			["lvl"] = 60,
 		}),	
 		gs(1457, {	-- Chronoscryer's Finery
-			["groups"] = {
+			["classes"] = {
+				5,	-- Priest
+				8,	-- Mage
+				9,	-- Warlock
+			},
+			["lvl"] = 110,
+			--["itemID"] = 151692,	-- Ensemble: Chronoscryer's Finery
+			["g"] = {
 				i(151672),	-- Head
 				i(151682),	-- Shoulders
 				i(151679),	-- Chest
@@ -92,13 +99,6 @@ _.GearSets =
 				i(151676),	-- Legs
 				i(151664),	-- Feet
 			},
-			["classes"] = {
-				5,	-- Priest
-				8,	-- Mage
-				9,	-- Warlock
-			},
-			["lvl"] = 110,
-			--["itemID"] = 151692,	-- Ensemble: Chronoscryer's Finery
 		}),
 		n(-3231, {	-- Deathbone Guardian [Unobtainable]
 			i(14624),	-- Chest
@@ -107,8 +107,13 @@ _.GearSets =
 			i(14623),	-- Legs
 			i(14621),	-- Feet
 		}),
-		{ -- Ensemble: Chain of the Scarlet Crusade
-			["groups"] = {
+		i(138430, { -- Ensemble: Chain of the Scarlet Crusade
+			["ignoreBonus"] = true,
+			["classes"] = {
+				3,	-- Hunter
+				7,	-- Shaman
+			},
+			["g"] = {
 				i(10328),	-- chest
 				i(10333),	-- bracers
 				i(10331),	-- gloves
@@ -116,11 +121,15 @@ _.GearSets =
 				i(10330),	-- legs
 				i(10332),	-- feet
 			},
+		}),
+		i(138431, { -- Ensemble: Scale of the Scarlet Crusade
 			["ignoreBonus"] = true,
-			["itemID"] = 138430,
-		},
-		{ -- Ensemble: Scale of the Scarlet Crusade
-			["groups"] = {
+			["classes"] = {
+				1,	-- Warrior
+				2,	-- Paladin
+				6,	-- Death Knight
+			},
+			["g"] = {
 				i(138423),	-- chest
 				i(138428),	-- bracers
 				i(138426),	-- gloves
@@ -128,21 +137,25 @@ _.GearSets =
 				i(138425),	-- legs
 				i(138427),	-- feet
 			},
-			["ignoreBonus"] = true,
-			["itemID"] = 138431
-		},
+		}),
 		n(-4169, {	-- Embrace of the Viper
-			["groups"] = {
+			["icon"] = "Interface\\Icons\\inv_shirt_16",
+			["g"] = {
 				i(6473),	-- Armor of the Fang
 				i(10413),	-- Gloves of the Fang
 				i(10412),	-- Belt of the Fang
 				i(10410),	-- Leggings of the Fang
 				i(10411),	-- Footpads of the Fang
 			},
-			["icon"] = "Interface\\Icons\\inv_shirt_16",
 		}),
 		gs(1458, {	-- Epoch Sentinel's Mail
-			["groups"] = {
+			["classes"] = {
+				3,	-- Hunter
+				7,	-- Shaman
+			}, 
+			["lvl"] = 110,
+			--["itemID"] = 151694,	-- Ensemble: Epoch Sentinel's Mail
+			["g"] = {
 				i(151673),	-- Head
 				i(151683),	-- Shoulders
 				i(151661),	-- Chest
@@ -152,12 +165,6 @@ _.GearSets =
 				i(151677),	-- Legs
 				i(151665),	-- Feet
 			},
-			["classes"] = {
-				3,	-- Hunter
-				7,	-- Shaman
-			}, 
-			["lvl"] = 110,
-			--["itemID"] = 151694,	-- Ensemble: Epoch Sentinel's Mail
 		}),
 		n(-3226, {	-- Ironweave Battlesuit [Unobtainable]
 			i(22302),	-- Helm
@@ -170,7 +177,14 @@ _.GearSets =
 			un(2, i(22311)),	-- Feet
 		}),
 		gs(1471, {	-- Light-Woven Triumvirate Regalia
-			["groups"] = {
+			["classes"] = {
+				5,	-- Priest
+				8,	-- Mage
+				9,	-- Warlock
+			},
+			["lvl"] = 110,
+			--["itemID"] = 152241,	-- Ensemble: Light-Woven Triumvirate Regalia
+			["g"] = {
 				i(151337),	-- Head
 				i(151299),	-- Shoulder
 				i(151635),	-- Cloak
@@ -181,13 +195,6 @@ _.GearSets =
 				i(151304),	-- Legs
 				i(151301),	-- Feet
 			},
-			["classes"] = {
-				5,	-- Priest
-				8,	-- Mage
-				9,	-- Warlock
-			},
-			["lvl"] = 110,
-			--["itemID"] = 152241,	-- Ensemble: Light-Woven Triumvirate Regalia
 		}),
 		n(-3228, {	-- Necropile Raiment [Unobtainable]
 			i(14633),	-- Shoulders
@@ -197,7 +204,15 @@ _.GearSets =
 			i(14631),	-- Feet
 		}),
 		gs(1459, {	-- Riftscarred Vestments
-			["groups"] = {
+			["classes"] = {
+				4,  -- Rogue
+				10,	-- Monk
+				11,	-- Druid
+				12,	-- Demon Hunter
+			},
+			["lvl"] = 110,
+			--["itemID"] = 151693,	-- Ensemble: Riftscarred Vestments
+			["g"] = {
 				i(151674),	-- Head
 				i(151680),	-- Shoulders
 				i(151662),	-- Chest
@@ -207,17 +222,15 @@ _.GearSets =
 				i(151678),	-- Legs
 				i(151666),	-- Feet
 			},
-			["classes"] = {
-				11,	--  Druid
-				4,  -- Rogue
-				10,	-- Monk
-				12,	-- Demon  Hunter
-			},
-			["lvl"] = 110,
-			--["itemID"] = 151693,	-- Ensemble: Riftscarred Vestments
 		}),
 		gs(1469, {	-- Sterling Triumvirate Chainmail
-			["groups"] = {
+			["classes"] = {
+				3,	-- Hunter
+				7,	-- Shaman
+			}, 
+			["lvl"] = 110,
+			--["itemID"] = 152243,	-- Ensemble: Sterling Triumvirate Chainmail
+			["g"] = {
 				i(151324),	-- Head
 				i(151323),	-- Shoulder
 				i(151634),	-- Cloak
@@ -228,12 +241,6 @@ _.GearSets =
 				i(151338),	-- Legs
 				i(151320),	-- Feet
 			},
-			["classes"] = {
-				3,	-- Hunter
-				7,	-- Shaman
-			}, 
-			["lvl"] = 110,
-			--["itemID"] = 152243,	-- Ensemble: Sterling Triumvirate Chainmail
 		}),
 		n(-3227, {	-- The Postmaster
 			i(13390),	-- Helm
@@ -242,17 +249,23 @@ _.GearSets =
 			i(13391),	-- Feet
 		}),
 		n(-4168, {	-- The Scale's Embraces
-			["groups"] = {
+			["icon"] = "Interface\\Icons\\inv_shirt_16",
+			["g"] = {
 				i(132739),	-- Slither-Scale Hauberk
 				i(132743),	-- Slither-Scale Gauntlets
 				i(132740),	-- Slither-Scale Cord
 				i(132742),	-- Slither-Scale Britches
 				i(132741),	-- Slither-Scale Boots
 			},
-			["icon"] = "Interface\\Icons\\inv_shirt_16",
 		}),
 		gs(1456, {	-- Timewarden's Plate
-			["groups"] = {
+			["classes"] = { 
+				2,	-- Paladin
+				1,	-- Warrior
+				6,	-- Death Knight
+			},
+			["lvl"] = 110,
+			["g"] = {
 				i(151671),	-- Head
 				i(151681),	-- Shoulders
 				i(151660),	-- Chest
@@ -262,15 +275,16 @@ _.GearSets =
 				i(151675),	-- Legs
 				i(151663),	-- Feet
 			},
+		}),
+		gs(1468, {	-- Venerated Triumvirate Battleplate
 			["classes"] = { 
 				2,	-- Paladin
 				1,	-- Warrior
 				6,	-- Death Knight
 			},
 			["lvl"] = 110,
-		}),
-		gs(1468, {	-- Venerated Triumvirate Battleplate
-			["groups"] = {
+			--["itemID"] = 152244,	-- Ensemble: Venerated Triumvirate Battleplate
+			["g"] = {
 				i(151333),	-- Head
 				i(151331),	-- Shoulder
 				i(151298),	-- Cloak
@@ -281,16 +295,16 @@ _.GearSets =
 				i(151339),	-- Legs
 				i(151330),	-- Feet
 			},
-			["classes"] = { 
-				2,	-- Paladin
-				1,	-- Warrior
-				6,	-- Death Knight
-			},
-			["lvl"] = 110,
-			--["itemID"] = 152244,	-- Ensemble: Venerated Triumvirate Battleplate
 		}),
 		gs(1637, {	-- Vestments of the Tidesages
-			["groups"] = {
+			--["itemID"] = 162598,
+			["classes"] = {
+				5,	-- Priest
+				8,	-- Mage
+				9,	-- Warlock
+			},
+			["lvl"] = 120,
+			["g"] = {
 				i(162592),	-- Hood of the Tidesages
 				i(162595),	-- Mantle of the Tidesages
 				i(162594),	-- Robe of the Tidesages
@@ -299,13 +313,6 @@ _.GearSets =
 				i(162593),	-- Pantaloons of the Tidesages
 				i(162590),	-- Sandals of the Tidesages
 			},
-			--["itemID"] = 162598,
-			["classes"] = {
-				5,	-- Priest
-				8,	-- Mage
-				9,	-- Warlock
-			},
-			["lvl"] = 120,
 		}),
 	}),
 };

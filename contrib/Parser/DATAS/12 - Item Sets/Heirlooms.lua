@@ -4,7 +4,8 @@
 _.GearSets = 
 {
 	n(-365, {	-- Heirlooms
-		["groups"] = {	
+		["achievementID"] = 9909,	-- Heirloom Hoarder
+		["g"] = {	
 			i(120968),	-- Chauffeured Chopper
 			i(122703),	-- Chauffeured Chopper
 			n(-319, {	-- Weapons
@@ -258,6 +259,5 @@ _.GearSets =
 				}),
 			}),
 		},
-		["achievementID"] = 9909,	-- Heirloom Hoarder
 	}),
 };

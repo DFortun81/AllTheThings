@@ -1,12 +1,14 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+_.GearSets =
 {
 	gsh(330, {	-- Legion Order Hall
-		["groups"] = {
+		["icon"] = "Interface\\Icons\\achievement_level_110",
+		["g"] = {
 			gs(330, {	-- Regalia of the High Priest
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_Priest",
+				["g"] = {
 					i(139757),	-- Head
 					i(139760),	-- Shoulders
 					i(139759),	-- Chest
@@ -16,10 +18,10 @@ _.GearSets =
 					i(139758),	-- Legs
 					i(139755),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Priest",
 			}),
 			gs(516, {	-- Vesture of Tirisgarde
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_Mage",
+				["g"] = {
 					i(139749),	-- Head
 					i(139752),	-- Shoulders
 					i(139751),	-- Chest
@@ -29,10 +31,10 @@ _.GearSets =
 					i(139750),	-- Legs
 					i(139747),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Mage",		
 			}),
 			gs(448, {	-- Vestments of the Black Harvest
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_Warlock",
+				["g"] = {
 					i(139765),	-- Head
 					i(139768),	-- Shoulders
 					i(139767),	-- Chest
@@ -42,10 +44,10 @@ _.GearSets =
 					i(139766),	-- Legs
 					i(139763),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Warlock",		
 			}),
-			gs(549, {	-- Dreamgrove Raiment 
-				["groups"] = {
+			gs(549, {	-- Dreamgrove Raiment
+				["icon"] = "Interface\\Icons\\ClassIcon_Druid",
+				["g"] = {
 					i(139726),	-- Head
 					i(139728),	-- Shoulders
 					i(139723),	-- Chest
@@ -55,10 +57,10 @@ _.GearSets =
 					i(139727),	-- Legs
 					i(139724),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Druid",		
 			}),
 			gs(464, {	-- Battlegear of the Uncrowned
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_Rogue",
+				["g"] = {
 					i(139742),	-- Head
 					i(139744),	-- Shoulders
 					i(139739),	-- Chest
@@ -68,10 +70,10 @@ _.GearSets =
 					i(139743),	-- Legs
 					i(139740),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Rogue",		
 			}),
 			gs(497, {	-- Grandmaster's Finery
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_Monk",
+				["g"] = {
 					i(139734),	-- Head
 					i(139736),	-- Shoulders
 					i(139731),	-- Chest
@@ -81,10 +83,10 @@ _.GearSets =
 					i(139735),	-- Legs
 					i(139732),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Monk",		
 			}),
 			gs(548, {	-- Battlegear of the Shattered Abyss
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_DemonHunter",
+				["g"] = {
 					i(139718),	-- Head
 					i(139720),	-- Shoulders
 					i(139715),	-- Chest
@@ -92,12 +94,12 @@ _.GearSets =
 					i(139717),	-- Hands
 					i(139721),	-- Belt
 					i(139719),	-- Legs
-					i(139716),	-- Feet	
+					i(139716),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_DemonHunter",	
 			}),
 			gs(532, {	-- Guise of the Unseen Path
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_Hunter",
+				["g"] = {
 					i(139710),	-- Head
 					i(139712),	-- Shoulders
 					i(139707),	-- Chest
@@ -107,10 +109,10 @@ _.GearSets =
 					i(139711),	-- Legs
 					i(139708),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Hunter",		
 			}),
 			gs(430, {	-- Raiment of the Farseer
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_Shaman",
+				["g"] = {
 					i(139701),	-- Head
 					i(139703),	-- Shoulders
 					i(139698),	-- Chest
@@ -118,12 +120,12 @@ _.GearSets =
 					i(139700),	-- Hands
 					i(139704),	-- Belt
 					i(139702),	-- Legs
-					i(139699),	-- Feet	
+					i(139699),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Shaman",	
 			}),
 			gs(496, {	-- Battleplate of the Silver Hand
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_Paladin",
+				["g"] = {
 					i(139693),	-- Head
 					i(139695),	-- Shoulders
 					i(139690),	-- Chest
@@ -133,10 +135,10 @@ _.GearSets =
 					i(139694),	-- Legs
 					i(139691),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Paladin",		
 			}),
 			gs(447, {	-- Battlelord's Plate
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_Warrior",
+				["g"] = {
 					i(139684),	-- Head
 					i(139686),	-- Shoulders
 					i(139681),	-- Chest
@@ -146,10 +148,10 @@ _.GearSets =
 					i(139685),	-- Legs
 					i(139682),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_Warrior",		
 			}),
 			gs(550, {	-- Deathlord's Battleplate
-				["groups"] = {
+				["icon"] = "Interface\\Icons\\ClassIcon_DeathKnight",
+				["g"] = {
 					i(139676),	-- Head
 					i(139678),	-- Shoulders
 					i(139673),	-- Chest
@@ -159,9 +161,7 @@ _.GearSets =
 					i(139677),	-- Legs
 					i(139674),	-- Feet
 				},
-				["icon"] = "Interface\\Icons\\ClassIcon_DeathKnight",		
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_level_110",
-	}),	
+	}),
 };
