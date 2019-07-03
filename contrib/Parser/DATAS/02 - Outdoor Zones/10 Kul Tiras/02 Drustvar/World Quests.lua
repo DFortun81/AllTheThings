@@ -18,6 +18,12 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51612, { 	-- Azerite Empowerment
+						["crs"] = { 138295 },	-- Sister Hilga
+						["lvl"] = 120,	
+						["coord"] = { 39.75, 37.84, 896 },
+						["collectible"] = false,
+					}),
 					q(51608, {	-- Azerite Madness
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -34,6 +40,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51506, {	-- Barbthorn Queen
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51681, {	-- Basic Witch
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -41,6 +51,11 @@ _.Zones =
 					}),
 					q(51637, {	-- Beachhead
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50000, {	-- Beastly Dealings
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51917, {	-- Beshol
@@ -55,6 +70,10 @@ _.Zones =
 						["coord"] = { 37.32, 51.83, 896 },	-- Rocket Pack Start
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51699, {	-- Blighted Monstrosity
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51468, {	-- Bonesquall
@@ -143,6 +162,10 @@ _.Zones =
 						["collectible"] = false,
 						["requireSkill"] = 186,	-- Mining
 					}),
+					q(51433, {	-- Matron Morana
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(53979, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -157,6 +180,11 @@ _.Zones =
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
+					q(51620, {	-- Natural Resources
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52218, {	-- Night Horrors
 						["qg"] = 140461,	-- Dilbert McClint
 						["lvl"] = 120,
@@ -168,7 +196,7 @@ _.Zones =
 							},
 						},
 					}),
-					q(54089, {	-- Fungal Infestation
+					q(54089, {	-- Omgar Doombow
 						["crs"] = { 146607 },	-- Omgar Doombow
 						["lvl"] = 120,
 						["coord"] = { 31.78, 33.06, 896 },
@@ -186,6 +214,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51710, {	-- Rise of the Yetis
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52278, {	-- Rogue Azerite
 						["qg"] = 140813,	-- Fizzie Sparkwhistle
 						["lvl"] = 120,
@@ -196,10 +229,8 @@ _.Zones =
 							}),
 						},
 					}),
-					q(51612, { 	-- Sister Hilga
-						["crs"] = { 138295 },	-- Sister Hilga
-						["lvl"] = 120,	
-						["coord"] = { 39.75, 37.84, 896 },
+					q(51625, {	-- Shell Game
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51906, { 	-- Sister Martha
@@ -280,6 +311,11 @@ _.Zones =
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(51682, {	-- Witches by the Dozen
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 					q(52424, {	-- Work Order: Battle Flag: Rallying Swiftness
 						["lvl"] = 120,
