@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
-			n(-17,  {	-- Quests
+			n(-17, {	-- Quests
 				--[[
 					55623 triggered after killing crazed trogg, but isn't a killID for him. Not sure what this is from
 					
@@ -272,6 +272,26 @@ _.Zones =
 						}),
 					},
 				}),
+				q(56082, {	-- Bot Rampage
+				--	don't know if there are SQs or a reputation requirement.  i was at 2,500 Honored and this quest was up as a daily when i flew to the island.
+					["isDaily"] = true,
+					["coord"] = { 77.8, 40.0, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 154101,	-- Corey Clockbonk
+				}),
+				q(56334, {	-- Bots Gone Wild
+					["qg"] = 154655,	-- Tyler Swaptech
+					["coord"] = { 59.9, 69.6, 1462 },
+					["isDaily"] = true,
+				}),
+				i(167654, {	-- Bottom Feeding Stinkfish -- caught around 78.9, 62.5
+					["questID"] = 55299,
+					["g"] = {
+						crit(1, {	-- Secret Fish of Mechagon
+							["achievementID"] = 13489,
+						}),
+					},
+				}),
 				q(55765, {	-- Bugs, Lots of 'Em!
 					["qg"] = 152932,	-- Razak Ironsides
 					["coord"] = { 75.8, 34.4, 1462 },
@@ -286,19 +306,6 @@ _.Zones =
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 						i(167649),	-- Hundred-Fathom Lure
-					},
-				}),
-				q(56334, {	-- Bots Gone Wild
-					["qg"] = 154655,	-- Tyler Swaptech
-					["coord"] = { 59.9, 69.6, 1462 },
-					["isDaily"] = true,
-				}),
-				i(167654, {	-- Bottom Feeding Stinkfish -- caught around 78.9, 62.5
-					["questID"] = 55299,
-					["g"] = {
-						crit(1, {	-- Secret Fish of Mechagon
-							["achievementID"] = 13489,
-						}),
 					},
 				}),
 				q(56573, {	-- Certified Pre-Owned (may require completion of 56319 "The Quickcharge Contract" / Honored rep)
@@ -655,7 +662,13 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(56752, {	-- Rustbolt Requisitions: Deep Sea Satin
+				q(56753, {	-- Rustbolt Requisitions: Deep Sea Satin (A)
+					["isDaily"] = true,
+					["coord"] = { 77.7, 40.3, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 149813,	-- Gila Crosswires
+				}),
+				q(56752, {	-- Rustbolt Requisitions: Deep Sea Satin (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,

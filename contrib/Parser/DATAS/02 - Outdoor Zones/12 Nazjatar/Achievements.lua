@@ -4,35 +4,37 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-4,   {	-- Achievements
-			ach(13711),	-- A Fistful of Manapearls
+		n(-4, {	-- Achievements
+			ach(13711),		-- A Fistful of Manapearls
 			ach(13762, {	-- Aqua Team Murder Force (A)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1),	-- Battle-Scarred: Bladesman Inowari
-					crit(2),	-- Battle-Scarred: Farseer Ori
-					crit(3),	-- Battle-Scarred: Hunter Akana
+					ach(13744),	-- Seasoned: Bladesman Inowari
+					ach(13745),	-- Seasoned: Farseer Ori
+					ach(13743),	-- Seasoned: Hunter Akana
 					ach(13704, {	-- Nautical Battlefield Training
-						crit(1),	-- Seasoned: Bladesman Inowari
-						crit(2),	-- Seasoned: Farseer Ori
-						crit(3),	-- Seasoned: Hunter Akana
+						["description"] = "Requires hitting Rank 20 with each bodyguard.",
 					}),
+					ach(13759),	-- Battle-Scarred: Bladesman Inowari
+					ach(13760),	-- Battle-Scarred: Farseer Ori
+					ach(13758),	-- Battle-Scarred: Hunter Akana
 				},
 			}),
 			ach(13761, {	-- Aqua Team Murder Force (H)
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1),	-- Battle-Scarred: Neri Sharpfin
-					crit(2),	-- Battle-Scarred: Poen Gillbrack
-					crit(3),	-- Battle-Scarred: Vim Brineheart
+					ach(13746),	-- Seasoned: Neri Sharpfin
+					ach(13747),	-- Seasoned: Poen Gillbrack
+					ach(13748),	-- Seasoned: Vim Brineheart
 					ach(13645, {	-- Nautical Battlefield Training
-						crit(1),	-- Seasoned: Neri Sharpfin
-						crit(2),	-- Seasoned: Poen Gillbrack
-						crit(3),	-- Seasoned: Vim Brineheart
+						["description"] = "Requires hitting Rank 20 with each bodyguard.",
 					}),
+					ach(13750),	-- Battle-Scarred: Neri Sharpfin
+					ach(13756),	-- Battle-Scarred: Poen Gillbrack
+					ach(13757),	-- Battle-Scarred: Vim Brineheart
 				},
 			}),
-			ach(13763),	-- Back to the Depths!
+			ach(13763),		-- Back to the Depths!
 			ach(13836, {	-- Feline Figurines Found
 				o(9999970, {	-- Figurine 1
 					["questID"] = 56983,
@@ -98,8 +100,8 @@ _.Zones =
 					["coord"] = { 59.1, 30.4, 1355 },
 				}),
 			}),
-			ach(13707),	-- Mrrl's Secret Stash
-			ach(13713),	-- Nothing to Scry About
+			ach(13707),		-- Mrrl's Secret Stash
+			ach(13713),		-- Nothing to Scry About
 			ach(13699, {	-- Periodic Destruction
 				["coord"] = { 60.7, 32.1, 1355 },
 				["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob.",
@@ -135,7 +137,7 @@ _.Zones =
 					crit(13),	-- Salgos the Eternal
 				},
 			}),
-			ach(13765),	-- Subaquatic Support
+			ach(13765),		-- Subaquatic Support
 			ach(13710, {	-- Sunken Ambitions
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -155,7 +157,7 @@ _.Zones =
 					152275,	-- Bloodfin Tadpole
 				},
 			}),
-			ach(13549),	-- Trove Tracker
+			ach(13549),		-- Trove Tracker
 			ach(13638, {	-- Undersea Usurper
 				i(169194),	-- Snapback Scuttler
 				title(405),	-- of the Deeps
