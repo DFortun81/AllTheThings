@@ -11,6 +11,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(52869, {	-- Azerite Empowerment [AH]
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52874, { 	-- Azerite Mining
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -19,7 +23,7 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(52869, {	-- Azerite Empowerment [AH]
+					q(51583, { 	-- Azerite Wounds
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -28,6 +32,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51638, {	-- Beachhead [AH]
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51841, {	-- Blackthorne
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -74,6 +82,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(52167, {	-- Hardcore Raiders
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52760, {	-- Like a Fish in a Barrel
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -113,6 +126,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51892, {	-- Shiverscale the Toxic
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(53331, {	-- Show-Off
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -124,6 +141,11 @@ _.Zones =
 					q(51463, {	-- Sky Drop Rescue
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52143, {	-- Smaller Haulers
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51651, {	-- Squacks [AH]
@@ -163,13 +185,25 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51241, {	-- The Bear Witch Project
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51406, {	-- The Lord's Hunt
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(53078, {	-- Treasure in the Ttides
+--[[					
+					q(53078, {	-- Treasure in the Tides (this may not be a valid WQ see 52155, will need to see if this version pops or not as it was in the file previous to 52155 popping)
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+]]--			
+					q(52155, {	-- Treasure in the Tides (confirmed Alliance side on 7-3-2019 - Iyanden)
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(53346, {	-- Trogg Tromping

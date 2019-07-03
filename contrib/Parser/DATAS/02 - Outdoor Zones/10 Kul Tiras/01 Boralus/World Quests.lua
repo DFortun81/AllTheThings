@@ -178,6 +178,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50958, {	-- Watch Your Wallets
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
