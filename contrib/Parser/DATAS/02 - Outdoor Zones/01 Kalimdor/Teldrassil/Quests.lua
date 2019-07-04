@@ -11,13 +11,13 @@ _.Zones =
 					["coord"] = { 55.7, 51.9, 57 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(997,   {	-- Denalan's Earth
+				q(997, {	-- Denalan's Earth
 					["qg"] = 2083,	-- Syral Blackleaf
 					["coord"] = { 55.7, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 486,	-- Ursal the Mauler
 				}),
-				q(2561,  {	-- Druid of the Claw
+				q(2561, {	-- Druid of the Claw
 					["qg"] = 7317,	-- Oben Rageclaw
 					["coord"] = { 41.1, 83.7, 57 },
 					["races"] = ALLIANCE_ONLY,
@@ -28,7 +28,15 @@ _.Zones =
 						un(2, i(9602)),	-- Brushwood Blade
 					},
 				}),
-				q(1581,  {	-- Elixirs for the Bladeleafs
+				q(1684, {	-- Elanaria
+					["qg"] = 3598,	-- Kyra Windblade
+					["coord"] = { 56.2, 59.2, 57 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
+					["u"] = 40,
+				}),					
+				q(1581, {	-- Elixirs for the Bladeleafs
 					["qg"] = 2083,	-- Syral Bladeleaf
 					["coord"] = { 55.8, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
@@ -41,12 +49,14 @@ _.Zones =
 					["sourceQuest"] = 2438,	-- The Emerald Dreamcatcher
 				}),
 				q(26758, {	-- Flight to Auberdine
-					["u"] = 40,
 					["qg"] = 3838,	-- Vesprystus
-					["races"] = { 4 },
+					["coord"] = { 58.4, 94.0, 57 },
 					["sourceQuest"] = 26757,	-- The Bounty of Teldrassil
+					["races"] = { 4 },	-- Night Elf
+					["lvl"] = 10,
+					["u"] = 40,
 				}),
-				q(5621,  {	-- Garments of the Moon
+				q(5621, {	-- Garments of the Moon
 					["u"] = 40,
 					["races"] = { 4 },	-- Night Elf
 					["classes"] = { 5 },	-- Priest
@@ -54,7 +64,7 @@ _.Zones =
 						un(2, i(16604)),	-- Moon Robes of Elune
 					},
 				}),
-				q(476,   {	-- Gnarlpine Corruption
+				q(476, {	-- Gnarlpine Corruption
 					["qg"] = 2107,	-- Gaerolas Talvethren
 					["coord"] = { 64.5, 51.1, 57 },
 					["races"] = ALLIANCE_ONLY,
@@ -205,10 +215,12 @@ _.Zones =
 					["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
 				}),
 				q(26757, {	-- The Bounty of Teldrassil
-					["u"] = 40,
 					["qg"] = 10118,	-- Nessa Shadowsong
-					["races"] = { 4 },
+					["coord"] = { 56.2, 92.4, 57 },
 					["sourceQuest"] = 26756,	-- Nessa Shadowsong
+					["races"] = { 4 },	-- Night Elf
+					["lvl"] = 10,
+					["u"] = 40,
 				}),
 				q(32327, {	-- The Darnassus Mission
 					["qg"] = 68077,	-- Fanlyr Silverthorn

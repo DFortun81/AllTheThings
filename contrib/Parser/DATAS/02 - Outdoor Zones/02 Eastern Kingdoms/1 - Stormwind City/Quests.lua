@@ -376,13 +376,22 @@ _.Zones =
 							i(65465),	-- Crossbow of the Crown
 						},
 					}),
---[[
-					qa(11451),	-- Alicia's Poem
+--					qa(11451),	-- Alicia's Poem
 					q(27273, {	-- An Invitation from Moonglade
-						["classes"] = { 11 },	-- Druid
+						["qgs"] = {
+							5504,	-- Sheldras Moontree (Stormwind)
+							44395,	-- Celestine of the Harvest (Stormwind)
+						},
+						["coords"] = {
+							{ 27.6, 50.0, 84 },	-- Sheldras Moontree (Stormwind)
+							{ 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind)
+						},
+						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 44395,	-- 
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 20,
 					}),
+--[[
 					q(325, {	-- Armed and Ready
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 40,	-- Legacy Quests
@@ -405,6 +414,15 @@ _.Zones =
 						["g"] = {
 							i(72042), 	-- Alliance Balloon (PET!)
 						},
+					}),
+					q(1705, {	-- Burning Blood
+						["qg"] = 1416,	-- Grimand Elmore
+						["coord"] = { 51.6, 12.4, 84 },
+						["sourceQuest"] = 1700,	-- Grimand Elmore
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
 					}),
 					q(29100, {	-- Bwemba's Spirit
 						["qg"] = 52654,	-- Bwemba
@@ -481,10 +499,31 @@ _.Zones =
 					}),
 					qa(26177),	-- Feeling Crabby?
 					qa(29398),	-- Fencing the Goods
-					qa(24848),	-- Fireworks At The Gilded Rose
-					qa(8356),	-- Flexing for Nougat
-					qa(27675),	-- Forged Documents
---]]
+]]--
+					q(1701, {	-- Fire Hardened Mail
+						["qg"] = 5413,	-- Furen Longbeard
+						["coord"] = { 58.0, 16.6, 84 },
+						["sourceQuest"] = 1702,	-- The Shieldsmith
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
+					}),
+--					qa(24848),	-- Fireworks At The Gilded Rose
+--					qa(8356),	-- Flexing for Nougat
+					q(1782, {	-- Furen's Armor
+						["qg"] = 5413,	-- Furen Longbeard
+						["coord"] = { 58.0, 16.6, 84 },
+						["sourceQuest"] = 1701,	-- Fire Hardened Mail
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(6972)),	-- Fire-Hardened Hauberk
+						},
+					}),
+--					qa(27675),	-- Forged Documents
 					qa(49976, {	-- Gifts of the Fallen
 						["qg"] = 132255,	-- Master Mathias Shawa
 						["sourceQuests"] = { 50371 } ,	-- Summons to Stormwind
@@ -505,6 +544,27 @@ _.Zones =
 							i(121753),	-- Skyfire Marine's Pauldrons
 							i(121761),	-- Skyfire Marine's Vambraces
 						},
+					}),
+					q(1706, {	-- Grimand's Armor
+						["qg"] = 1416,	-- Grimand Elmore
+						["coord"] = { 51.6, 12.4, 84 },
+						["sourceQuest"] = 1705,	-- Burning Blood
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(6971)),	-- Fire Hardened Coif
+						},
+					}),
+					q(1700, {	-- Grimand Elmore
+						["qg"] = 5413,	-- Furen Longbeard
+						["coord"] = { 58.0, 16.6, 84 },
+						["sourceQuest"] = 1701,	-- Fire Hardened Mail
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
 					}),
 --[[
 					qa(29391),	-- Guardians of Hyjal: Call of the Ancients
@@ -556,10 +616,19 @@ _.Zones =
 					qa(30987),	-- Joining the Alliance
 					qa(27271),	-- Journey to the Wizard's Sanctum
 					qa(31316),	-- Julia, The Pet Tamer
-					qa(32665),	-- Learn To Ride
-					qa(31591),	-- Learning the Ropes
-					qa(31821),	-- Level Up!
 ]]--
+					q(1704, {	-- Klockmort Spannerspan
+						["qg"] = 5413,	-- Furen Longbeard
+						["coord"] = { 58.0, 16.6, 84 },
+						["sourceQuest"] = 1701,	-- Fire Hardened Mail
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 22,
+						["u"] = 40,
+					}),
+--					qa(32665),	-- Learn To Ride
+--					qa(31591),	-- Learning the Ropes
+--					qa(31821),	-- Level Up!
 					q(32470, {	-- Light Camera Action
 						["qg"] = 16908,	-- Arielle Snapflash
 						["lvl"] = 15,
@@ -570,9 +639,7 @@ _.Zones =
 							i(122637),	-- S.E.L.F.I.E. Camera
 						},
 					}),
---[[
-					qa(29071),	-- Make Haste to Stormwind!
-					--]]
+--					qa(29071),	-- Make Haste to Stormwind!
 					qa(38206, {	-- Making the Rounds
 						["sourceQuests"] = { 38035 },	-- A Royal Summons
 						["coord"] = { 18.8, 42.6, 84 },
@@ -589,6 +656,15 @@ _.Zones =
 						["g"] = {
 							i(65467),	-- Staff of the Royal Wizard
 						},
+					}),
+					q(1703, {	-- Mathiel
+						["qg"] = 5413,	-- Furen Longbeard
+						["coord"] = { 58.0, 16.6, 84 },
+						["sourceQuest"] = 1701,	-- Fire Hardened Mail
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 22,
+						["u"] = 40,
 					}),
 --[[				qa(28258)),	-- Meet with Ander Germaine
 					qa(28259)),	-- Meet with Demisette Cloyce
@@ -932,6 +1008,14 @@ _.Zones =
 					qa(31732)),	-- Unleash Hell
 					q(11886)),	-- Unusual Activity
 --]]
+					q(1698, {	-- Yorus Barleybrew
+						["qg"] = 5479,	-- Wu Shen
+						["coord"] = { 78.8, 45.4, 84 },
+						["races"] = exclude(11, ALLIANCE_ONLY),	-- All alliance races exception Draenei
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
+					}),
 					q(28405, {	-- Weapons of Darkness
 						["qg"] = 928,	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.6, 45.0, 84 },

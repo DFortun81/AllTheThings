@@ -23,32 +23,33 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(27273, {	-- An Invitation from Moonglade
-					["qg"] = 4217,	-- Mathrengyl Bearwalker
-					["coord"] = { 40.4, 27.6, 89 },
+					["qg"] = 4217,	-- Mathrengyl Bearwalker (Darnassus)
+					["coord"] = { 40.4, 27.6, 89 },	-- Mathrengyl Bearwalker (Darnassus)
 					["isBreadcrumb"] = true,
-					["races"] = {
-						4,	-- Night Elf
-						22,	-- Worgen
-					},
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 11 },	-- Druid
+					["lvl"] = 20,
 				}),		
 				q(6342, {	-- An Unexpected Gift
 					["qg"] = 7316,	-- Sister Aquinne
 					["coord"] = { 36.0, 53.4, 89 },
 					["sourceQuest"] = 6341,	-- To Darnassus
 					["races"] = { 4 },	-- Night Elf
+					["lvl"] = 5,
 				}),			
 				q(26383, {	-- Breaking Waves of Change
 					["qg"] = 42936,	-- Sentinel Cordressa Briarbow
 					["coord"] = { 43.8, 76.2, 89 },
-					["races"] = exclude(22, ALLIANCE_ONLY),	-- All alliance races exception Worgen
 					["isBreadcrumb"] = true,
+					["races"] = exclude(22, ALLIANCE_ONLY),	-- All alliance races exception Worgen
+					["lvl"] = 10,
 				}),
 				q(26385, {	-- Breaking Waves of Change
 					["qg"] = 48736,	-- Genn Greymane
 					["coord"] = { 48.2, 14.6, 89 },
-					["races"] = { 22 },	-- Worgen
 					["isBreadcrumb"] = true,
+					["races"] = { 22 },	-- Worgen
+					["lvl"] = 10,
 				}),
 				q(4510, {	-- Calm Before the Storm
 					["qg"] = 7740,	-- Gracina Spiritmight
@@ -69,6 +70,7 @@ _.Zones =
 					["sourceQuest"] = 27269,	-- The Temple of the Moon
 					["races"] = { 4 },	-- Night Elf
 					["classes"] = { 5 },	-- Priest
+					["lvl"] = 20,
 					["g"] = {
 						i(65483),	-- Moon Staff of Elune
 					},
@@ -96,10 +98,10 @@ _.Zones =
 					["u"] = 40
 				}),
 				i(46876, {	-- Riding Training Pamphlet
-					q(14085, {	-- Learn to Ride in Darnassus
-						["races"] = ALLIANCE_ONLY,
-						["u"] = 40,
-					}),
+					["questID"]	= 14085,	-- Learn to Ride in Darnassus
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["u"] = 40,
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
 					["qg"] = 35281,	-- Rukua (Darnassus)
@@ -127,8 +129,11 @@ _.Zones =
 				}),
 				q(1711, {	-- Mathiel's Armor
 					["qg"] = 6142,	-- Mathiel
+					["coord"] = { 56.8, 53.2, 89 },
+					["sourceQuest"] = 1710,	-- Sunscorched Shells
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
 						un(2, i(6973)),	-- Fire Hardened Leggings
@@ -140,6 +145,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 50,
 				}),
 				q(28287, {	-- Meet with Farseer Umbrua
 					["qg"] = 52292,	-- Droha (Darnassus)
@@ -196,55 +202,94 @@ _.Zones =
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 50,
 				}),
-				q(1582, {	-- Moonglow Vest
-					["qg"] = 6034,	-- Lotherias
-					["coord"] = { 60.4, 37.0, 89 },
-					["requireSkill"] = 165,	-- Leatherworking
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(6710),	-- Pattern: Moonglow Vest
-					},
-				}),
 				q(26756, {	-- Nessa Shadowsong
 					["qg"] = 4241,	-- Mydrannul
+					["coord"] = { 64.6, 53.0, 89 },
 					["races"] = { 4 },	-- Night Elf
+					["lvl"] = 10,
 					["u"] = 40,
 				}),	
 				q(6343, {	-- Return to Nyoma
 					["qg"] = 40552,	-- Leora
 					["coord"] = { 36.5, 47.8, 89 },
 					["sourceQuest"] = 6342,	-- An Unexpected Gift
-					["races"] = { 4 },	-- Night Elf	
-				}),		
+					["races"] = { 4 },	-- Night Elf
+					["lvl"] = 5,
+				}),
+				q(1692, {	-- Smith Mathiel
+					["qg"] = 4088,	-- Elanaria
+					["coord"] = { 57.8, 34.4, 89 },
+					["sourceQuest"] = 1686,	-- The Shade of Elura
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
+					["u"] = 40,
+				}),
+				q(1710, {	-- Sunscorched Shells
+					["qg"] = 6142,	-- Mathiel
+					["coord"] = { 56.8, 53.2, 89 },
+					["sourceQuest"] = 1703,	-- Mathiel
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 25,
+					["u"] = 40,
+				}),
 				q(1039, {	-- The Barrens Port
 					["qg"] = 8026,	-- Thyn'tel Bladeweaver
+					["coord"] = { 61.8, 39.4, 89 },
 					["sourceQuest"] = 1038,	-- Velinde's Effects
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 					["u"] = 40,
 				}),	
+				q(1686, {	-- The Shade of Elura
+					["qg"] = 4088,	-- Elanaria
+					["coord"] = { 57.8, 34.4, 89 },
+					["sourceQuest"] = 1683,	-- Vorlus Vilehoof
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
+					["u"] = 40,
+				}),
 				q(27269, {	-- The Temple of the Moon
 					["qg"] = 11401,	-- Priestess Alathea
 					["coord"] = { 43.4, 79.2, 89 },
 					["isBreadcrumb"] = true,
 					["races"] = { 4 },	-- Night Elf
 					["classes"] = { 5 },	-- Priest
+					["lvl"] = 20,
 				}),
 				q(32460, {	-- Tracking the Thieves
 					["qg"] = 68651,	-- Lady Jaina Proudmoore
 					["coord"] = { 39.0, 32.8, 89 },
 					["description"] = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 81,
 				}),
 				q(1038, {	-- Velinde's Effects
 					["qg"] = 8026,	-- Thyn'tel Bladeweaver
+					["coord"] = { 61.8, 39.4, 89 },
 					["sourceQuest"] = 1037,	-- Velinde Starsong
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
+				}),
+				q(1683, {	-- Vorlus Vilehoof
+					["qg"] = 4088,	-- Elanaria
+					["coord"] = { 57.8, 34.4, 89 },
+					["sourceQuest"] = 1684,	-- Elanaria
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
 					["u"] = 40,
 				}),
 				q(1693, {	-- Weapons of Elunite
 					["qg"] = 6142,	-- Mathiel
+					["coord"] = { 56.8, 53.2, 89 },
+					["sourceQuest"] = 1692,	-- Smith Mathiel
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
 						un(2, i(6966)),	-- Elunite Axe

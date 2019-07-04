@@ -130,32 +130,30 @@ _.Zones =
 						i(65617),	-- Headdress of the Verdant Circle
 					},
 				},
-				{	-- The Circle's Future
-					["questID"] = 27356,
+				q(27356, {	-- The Circle's Future
 					["qg"] = 12042,	-- Loganaar
-					["lvl"] = 20,
 					["coord"] = { 52.4, 40.4, 80 },
+					["sourceQuest"] = 27273,	-- An Invitation from Moonglade
 					["races"] = ALLIANCE_ONLY,
 					["classes"]= { 11 },	-- Druid
-					["sourceQuest"] = 27273,	-- An Invitation from Moonglade
-					["groups"] = {
+					["lvl"] = 20,
+					["g"] = {
 						i(65461),	-- Staff of the Green Circle
 						i(65462),	-- Staff of the Verdant Circle
 					},
-				},
-				{	-- The Circle's Future
-					["questID"] = 27404,
+				}),
+				q(27404, {	-- The Circle's Future
 					["qg"] = 12042,	-- Loganaar
-					["lvl"] = 20,
 					["coord"] = { 52.4, 40.4, 80 },
-					["classes"]= { 11 },	-- Druid
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27283,	-- A Journey to Moonglade
-					["groups"] = {
+					["races"] = HORDE_ONLY,
+					["classes"]= { 11 },	-- Druid
+					["lvl"] = 20,
+					["g"] = {
 						i(65463),	-- Staff of the Green Circle
 						i(65464),	-- Staff of the Verdant Circle
 					},
-				},
+				}),
 				{	-- The Dreamway
 					["questID"] = 40644,
 					["qg"] = 101064,	-- Archdruid Hamuul Runetotem

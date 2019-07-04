@@ -767,13 +767,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["description"] = "Requires reputation level of Revered with Warsong Outriders to complete.",
 				},
-				{	-- Passage to Booty Bay
-					["questID"] = 1040,
-					["u"] = 40,
+				q(1040, {	-- Passage to Booty Bay
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 63.2, 38.4, 10 },
 					["sourceQuest"] = 1039,	-- The Barrens Port
-				},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
+				}),
 				{	-- Plainstrider Menace
 					["questID"] = 844,
 					["qg"] = 34258,	-- Halga Bloodeye

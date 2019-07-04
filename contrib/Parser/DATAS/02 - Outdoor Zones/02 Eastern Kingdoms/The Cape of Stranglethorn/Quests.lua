@@ -767,10 +767,13 @@ _.Zones =
 				un(40, q(617, {	-- Akiris by the Bundle
 					un(2, i(4117)),	-- Scorching Sash
 				})),
-				qa(1041, {	-- The Caravan Road
-					["u"] = 40,
+				q(1041, {	-- The Caravan Road
 					["qg"] = 3945,	-- Caravaneer Ruzzgot
-					["sourceQuests"] = { 1040 },	-- The Passage to Booty Bay
+					["coord"] = { 27.4, 74.2, 210 },
+					["sourceQuests"] = 1040,	-- The Passage to Booty Bay
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
 				}),
 				un(40, qa(613, {	-- Cracking Maury's Foot
 					un(2, i(4129)),	-- Collection Plate

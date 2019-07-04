@@ -388,10 +388,26 @@ _.Zones =
 						i(60720),	-- Treacherous Treads
 					},
 				}),
-				q(1702,  {	-- The Shieldsmith
-					["u"] = 40,
+				q(1699, {	-- The Rethban Gauntlet
+					["qg"] = 6166,	-- Yorus Barleybrew
+					["coord"] = { 26.8, 44.8, 49 },
+					["sourceQuests"] = {
+						1698,	-- Yorus Barleybrew
+						10371,	-- Yorus Barleybrew (Draenei)
+					},
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 20,
+					["u"] = 40,
+				}),
+				q(1702,  {	-- The Shieldsmith
+					["qg"] = 6166,	-- Yorus Barleybrew
+					["coord"] = { 26.8, 44.8, 49 },
+					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 20,
+					["u"] = 40,
 					["g"] = {
 						un(2, i(6970)),	-- Furen's Favor
 					},
