@@ -140,6 +140,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
+				q(10371, {	-- Yorus Barleybrew (Draenei)
+					["qg"] = 16771,	-- Ahonan
+					["coord"] = { 55.0, 83.4, 103 },
+					["races"] = { 11 },	-- Draenei
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 20,
+					["u"] = 40,
+				}),
 				q(27266, {	-- Wulf Calls
 					["qg"] = 17122,	-- Vord (The Exodar)
 					["coord"] = { 47.2, 88.4, 103 },	-- Vord (The Exodar)

@@ -283,6 +283,15 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
+				q(1708, {	-- Iron Coral
+					["qg"] = 6169,	-- Klockmort Spannerspan
+					["coord"] = { 67.9, 46.1, 87 },
+					["sourceQuest"] = 1704,	-- Klockmort Spannerspan
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 20,
+					["u"] = 40,
+				}),
 				q(8937, {	-- Just Compensation (Warrior)
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
@@ -411,6 +420,7 @@ _.Zones =
 				q(1709, {	-- Klockmort's Creation
 					["qg"] = 6169,	-- Klockmort Spannerspan
 					["coord"] = { 67.9, 46.1, 87 },
+					["sourceQuest"] = 1708,	-- Iron Coral
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 20,

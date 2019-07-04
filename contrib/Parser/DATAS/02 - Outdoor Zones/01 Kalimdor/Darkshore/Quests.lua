@@ -81,7 +81,7 @@ _.Zones =
 						13522,	-- Threat From the Water
 					},
 				}),
-				q(13542, {	-- Against the Wind -- aa
+				q(13542, {	-- Against the Wind
 					["qg"] = 3694,	-- Sentinel Selarin
 					["coord"] = { 42.5, 45.1, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -221,17 +221,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13544,	-- The Bear's Blessing
 				}),
-				q(13547, {	-- Coaxing the Spirits -- aa
+				q(13547, {	-- Coaxing the Spirits
 					["qg"] = 6887,	-- Yalda
 					["coord"] = { 39.0, 43.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(13881, {	-- Consumed -- aa
+				q(13881, {	-- Consumed
 					["qg"] = 34301,	-- Kathrena Winterwisp
 					["coord"] = { 45.1, 74.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(44927, {	-- Corruptor's Master Key -- aa
+				i(44927, {	-- Corruptor's Master Key
 					["crs"] = {
 						33022,	-- Vile Corruptor
 						33020,	-- Zenn Foulhoof
@@ -372,7 +372,7 @@ _.Zones =
 						i(131289),	-- Jadefire Squelcher Cord
 					},
 				}),
-				q(13892, {	-- Leave No Tracks -- aa
+				q(13892, {	-- Leave No Tracks
 					["qg"] = 34402,	-- Balren of the Claw
 					["coord"] = { 45.3, 75.1, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -383,7 +383,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13587,	-- The Waking Nightmare
 				}),
-				q(13573, {	-- Malfurion's Return -- aa
+				q(13573, {	-- Malfurion's Return
 					["qg"] = 32987,	-- Corvine Moonrise
 					["coord"] = { 42.6, 45.1, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -448,7 +448,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13508,	-- Swift Response
 				}),
-				q(5713,  {	-- One Shot. One Kill. -- aa
+				q(5713,  {	-- One Shot. One Kill.
 					["qg"] = 11711,	-- Sentinel Aynasha
 					["coord"] = { 47.7, 88.9, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -462,7 +462,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(13523, {	-- Power Over the Tides -- aa
+				q(13523, {	-- Power Over the Tides
 					["qg"] = 32932,	-- Moon Priestess Tharill
 					["coord"] = { 44.5, 30.7, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -472,7 +472,7 @@ _.Zones =
 						i(131281),	-- Tharill's Boon
 					},
 				}),
-				q(13579, {	-- Protector of Ameth'Aran -- aa
+				q(13579, {	-- Protector of Ameth'Aran
 					["qg"] = 33091,	-- Malfurion Stormrage
 					["coord"] = { 43.6, 53.4, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -497,10 +497,12 @@ _.Zones =
 					["sourceQuest"] = 13589,	-- The Shatterspear Invaders
 				}),
 				q(26759, {	-- Return to Nessa
-					["u"] = 40,
 					["qg"] = 4200,	-- Laird
-					["races"] = { 4 },	-- Night Elf
+					["coord"] = { 36.8, 44.2, 62 },
 					["sourceQuest"] = 26758,	-- Flight to Auberdine
+					["races"] = { 4 },	-- Night Elf
+					["lvl"] = 10,
+					["u"] = 40,
 				}),
 				q(13566, {	-- Ritual Materials
 					["qg"] = 33048,	-- Keeper Karithus
@@ -514,7 +516,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13589,	-- The Shatterspear Invaders
 				}),
-				q(13561, {	-- Solace for the Highborne -- aa
+				q(13561, {	-- Solace for the Highborne
 					["qg"] = 33177,	-- Arya Autumnlight
 					["coord"] = { 46.8, 33.2, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -595,12 +597,12 @@ _.Zones =
 						i(52650),	-- Dryad's Wand
 					},
 				}),
-				q(13912, {	-- Swamped Secrets -- aa
+				q(13912, {	-- Swamped Secrets
 					["qg"] = 34342,	-- Jr. Archaeologist Ferd
 					["coord"] = { 37.7, 82.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(13907, {	-- Sweeping Clean the Ruins -- aa
+				q(13907, {	-- Sweeping Clean the Ruins
 					["qg"] = 34340,	-- Archaeologist Groff
 					["coord"] = { 37.6, 82.8, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -645,7 +647,7 @@ _.Zones =
 						un(2, i(5626)),	-- Skullchipper
 					},
 				}),
-				q(13911, {	-- The Absent-Minded Prospector -- aa
+				q(13911, {	-- The Absent-Minded Prospector
 					["qg"] = 34343,	-- Prospector Remtravel
 					["coord"] = { 37.6, 82.9, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -683,7 +685,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13526,	-- The Bear's Paw
 				}),
-				q(13526, {	-- The Bear's Paw -- aa
+				q(13526, {	-- The Bear's Paw
 					["qg"] = 32967,	-- Elder Brolg
 					["coord"] = { 43.5, 81.0, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -795,12 +797,12 @@ _.Zones =
 						13512,	-- Strategic Strikes
 					},
 				}),
-				q(13575, {	-- The Land Is in Their Blood -- aa
+				q(13575, {	-- The Land Is in Their Blood
 					["qg"] = 33091,	-- Malfurion Stormrage
 					["coord"] = { 43.6, 53.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(13605, {	-- The Last Refugee -- aa
+				q(13605, {	-- The Last Refugee
 					["qg"] = 33232,	-- Archaeologist Hollee
 					["coord"] = { 38.5, 42.4, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -811,13 +813,17 @@ _.Zones =
 						i(131293),	-- Archaeologist's Leggings
 					},
 				}),
-				q(13518, {	-- The Last Wave of Survivors -- aa
+				q(13518, {	-- The Last Wave of Survivors
 					["qg"] = 32973,	-- Dentaria Silverglade
 					["coord"] = { 51.7, 18.0, 62 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 28490,	-- Hero's Call: Darkshore!
+					["sourceQuests"] = {
+						28490,	-- Hero's Call: Darkshore!
+						26383,	-- Breaking Waves of Change
+						26385,	-- Breaking Waves of Change (Worgen)
+					},
 				}),
-				q(13577, {	-- The Last Wildkin -- aa
+				q(13577, {	-- The Last Wildkin
 					["qg"] = 33091,	-- Malfurion Stormrage
 					["coord"] = { 43.6, 53.4, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -965,12 +971,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13582,	-- Elune's Fire
 				}),
-				q(13522, {	-- Threat from the Water -- aa
+				q(13522, {	-- Threat from the Water
 					["qg"] = 32971,	-- Ranger Glynda Nal'Shea
 					["coord"] = { 50.2, 19.7, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(13543, {	-- Three Hammers to Break -- aa
+				q(13543, {	-- Three Hammers to Break
 					["qg"] = 32987,	-- Corvine Moonrise
 					["coord"] = { 42.6, 45.1, 62 },
 					["races"] = ALLIANCE_ONLY,
@@ -1041,7 +1047,7 @@ _.Zones =
 						un(2, i(15399)),	-- Dryweed Belt
 					},
 				}),
-				q(13525, {	-- What's Happening to the Blackwood Furbolg? -- aa
+				q(13525, {	-- What's Happening to the Blackwood Furbolg?
 					["qg"] = 33250,	-- Foriel Broadleaf
 					["coord"] = { 45.1, 75.1, 62 },
 					["races"] = ALLIANCE_ONLY,

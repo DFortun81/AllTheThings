@@ -78,26 +78,6 @@ _.Zones =
 						["qg"] = 656,	-- Wilder Thistlenettle
 						["races"] = ALLIANCE_ONLY,
 					},
-					{ 	-- Furen's Armor
-						["questID"] = 1782,
-						["groups"] = {
-							un(2, i(6972)),	-- Fire-Hardened Hauberk
-						},
-						["u"] = 40,
-						["qg"] = 5413,	-- Furen Longbeard
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 1 },	-- Warrior
-					},
-					{	-- Grimand's Armor
-						["questID"] = 1706,
-						["groups"] = {
-							un(2, i(6971)),	-- Fire Hardened Coif
-						},
-						["u"] = 40,
-						["qg"] = 1416,	-- Grimand Elmore
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 1 },	-- Warrior
-					},
 					{	-- In Search of Galvan
 						["questID"] = 2758,	-- In Search of Galvan
 						["groups"] = {

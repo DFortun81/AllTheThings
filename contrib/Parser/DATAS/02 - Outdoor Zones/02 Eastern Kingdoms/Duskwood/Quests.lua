@@ -418,10 +418,12 @@ _.Zones =
 					["sourceQuest"] = 26627,	-- The Hermit
 				}),
 				q(1042, {	-- The Carevin Family
-					["u"] = 40,
 					["qg"] = 267,	-- Clerk Daltry
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 72.6, 46.8, 47 },
 					["sourceQuest"] = 1041,	-- The Caravan Road
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
 				}),
 				q(26778, {	-- The Cries of the Dead
 					["qg"] = 43731,	-- Sister Elsington
@@ -471,10 +473,12 @@ _.Zones =
 					},
 				}),
 				q(1043, {	-- The Scythe of Elune
-					["u"] = 40,
 					["qg"] = 661,	-- Jonathan Carevin
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 75.2, 48.8, 47 },
 					["sourceQuest"] = 1042,	-- The Carevin Family
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
 				}),
 				q(26723, {	-- The Fate of Morbent Fel
 					["qg"] = 43861,	-- Sven Yorgen

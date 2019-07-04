@@ -163,10 +163,12 @@ _.Zones =
 					["sourceQuest"] = 1023,	-- Raene's Cleansing
 				}),
 				q(1044,  {	-- Answered Questions
-					["u"] = 40,
 					["qg"] = 661,	-- Jonathan Carevin
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 75.2, 48.8, 47 },
 					["sourceQuest"] = 1043,	-- The Scythe of Elune
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
 					["g"] = {
 						un(2, i(5817)),	-- Lunaris Bow
 						un(2, i(5818)),	-- Moonbeam Wand
@@ -1109,9 +1111,11 @@ _.Zones =
 					},
 				}),
 				q(1022,  {	-- The Howling Vale
-					["u"] = 40,
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+					["coord"] = { 22.2, 52.8, 63 },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
 				}),
 				q(247,   {	-- The Hunt Completed
 					["u"] = 40,
@@ -1316,10 +1320,12 @@ _.Zones =
 					["description"] = "Can be found roaming the woods west of Silverwind Refuge.",
 				}),
 				q(1037,  {	-- Velinde Starsong
-					["u"] = 40,
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 22.2, 52.8, 63 },
 					["sourceQuest"] = 1022,	-- The Howling Vale
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
 				}),
 				q(1021,  {	-- Vile Satyr! Dryads in Danger!
 					["u"] = 40,
