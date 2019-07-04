@@ -1228,6 +1228,9 @@ _.Zones =
 					["qg"] = 85089,	-- Rakthoth
 					["coord"] = { 51.2 ,48.0, 543 },
 					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						33663,	-- Shredder vs. Saberon
+					},
 					["sourceQuests"] = {
 						33685,	-- Ambassador to the Ancient
 						33689,	-- Plant Pruning
@@ -2132,6 +2135,9 @@ _.Zones =
 					["questID"] = 33663,
 					["qg"] = 85089,	-- Rakthoth
 					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						33662,	-- Beatface vs. Boulder
+					},
 				},
 				{	-- Shredder vs. Saberon
 					["questID"] = 36439,
