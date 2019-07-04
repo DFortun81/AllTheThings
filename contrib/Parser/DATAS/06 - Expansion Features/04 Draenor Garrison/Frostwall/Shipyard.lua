@@ -10,9 +10,33 @@ _.ExpansionFeatures =
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					n(-17, {	-- Quests
+						q(39676, {	-- A True Naval Commander
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 39675,	-- Equipping Our Fleet
+						}),
+						q(39401, {	-- Destroying the Competition
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 39243,	-- Naval Commander
+						}),
+						q(39675, {	-- Equipping Our Fleet
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 39674,	-- If At First You Fail, Try Again!
+						}),
+						q(39604, {	-- I Sunk Your Battleship
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 39676,	-- A True Naval Commander
+						}),
+						q(39674, {	-- If At First You Fail, Try Again!
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 39401,	-- Destroying the Competition
+						}),
 						q(39236, {	-- Let's Get To Work
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 38259,	-- All Hands on Deck
+						}),
+						q(39243, {	-- Naval Commander
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 39423,	-- Shipyard Report
 						}),
 						q(39242, {	-- Ship Shape
 							["races"] = HORDE_ONLY,

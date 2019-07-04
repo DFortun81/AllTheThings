@@ -78,7 +78,7 @@ _.Zones =
 				n(93264, {	-- Captain Grok'mar
 					["questID"] = 38820,
 					["isDaily"] = true,
-					["coord"] = { 48.6, 57.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 48.6, 57.4, 534 },
 					["g"] = {
 						i(127664),	-- Grokmar's Greaves of Fortification
 					},
@@ -275,7 +275,7 @@ _.Zones =
 				n(92941, {	-- Gorabosh
 					["questID"] = 38709,
 					["isDaily"] = true,
-					["coord"] = { 33.0, 35.8, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 33.3, 35.8, 534 },
 					["g"] = {
 						i(127304),	-- Cave Keeper Wraps 
 					},
@@ -302,7 +302,7 @@ _.Zones =
 				n(90094, {	-- Harbormaster Korak
 					["questID"] = 39046,
 					["isDaily"] = true,
-					["coord"] = { 39.6, 32.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 39.6, 32.6, 534 },
 					["g"] = {
 						i(127309),	-- Korak's Reinforced Iron Tunic 
 					},
@@ -498,7 +498,7 @@ _.Zones =
 				n(93236, {	-- Shadowthrash
 					["questID"] = 38812,
 					["isDaily"] = true,
-					["coord"] = { 49.8, 61.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 49.8, 61.3, 534 },
 					["g"] = {
 						i(127665),	-- Warpscaled Wristwraps
 					},
@@ -664,7 +664,7 @@ _.Zones =
 				n(91087, {	-- Zeter'el
 					["questID"] = 38207,
 					["isDaily"] = true,
-					["coord"] = { 48.4, 28.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 48.4, 28.6, 534 },
 					["g"] = {
 						i(127340),	-- Felfire Lit Greatsword
 					},

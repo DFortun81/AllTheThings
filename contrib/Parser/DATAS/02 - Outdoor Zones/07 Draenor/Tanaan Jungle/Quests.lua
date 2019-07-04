@@ -9,8 +9,6 @@ _.Zones =
 --[[
 				q(40235),	-- Abrogator Arbitrator
 				q(38462),	-- Breaching the Barrier
-				qh(39315),	-- Bring the Reinforcements
-				qh(38001),	-- Commander in the Field!
 				q(38223),	-- Dark Ascension
 				q(38270),	-- Finding the Killer
 				q(38271),	-- Following the Bloody Path
@@ -25,20 +23,14 @@ _.Zones =
 				qh(38458),	-- Garrison Campaign: The Warlock
 				q(38213),	-- Get a Clue
 				qh(39604),	-- I Sunk Your Battleship
-				qa(39601),	-- I Sunk Your Battleship
 				q(39129),	-- Ill Tempered
-				qh(37934),	-- In, Through, and Beyond!
 				qh(38599),	-- Infrastructure Improvements
 				qa(37839),	-- Light Be With You
 				q(39176),	-- Mastery Of Taladite
-				qh(37890),	-- Obstacle Course
 				q(39395),	-- Oronok's Offer
 				q(39177),	-- Ruined Construct
-				qh(39423),	-- Shipyard Report
 				q(38273),	-- Spirits of the Bleeding Hollow
 				q(34366),	-- Tanaan 01: Front of the Portal
-				qh(37935),	-- The Assault Base
-				qh(38577),	-- The Battle for the West
 				q(38272),	-- The Bleeding Hollow
 				qh(38463),	-- The Cipher of Damnation
 				qa(39394),	-- The Cipher of Damnation
@@ -237,6 +229,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
 				}),
+				q(39315, {	-- Bring the Reinforcements
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 37935,	-- The Assault Base
+				}),
 				q(39569, {	-- Breaking Their Fel Bonds
 					["qg"] = 90974,	-- Vindicator Krethos
 					["coord"] = { 58.4, 60.4, 534 },
@@ -260,6 +256,10 @@ _.Zones =
 					["coord"] = { 9.8, 53.5, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38581,	-- The Battle for the West
+				}),
+				q(38001, {	-- Commander in the Field!
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 38577,	-- The Battle for the West
 				}),
 				q(39519, {	-- Demonslayer of Tanaan
 					["qg"] = 93396,	-- Nimi Brightcastle
@@ -308,6 +308,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38436,	-- Obstacle Course
 				}),
+				q(37934, {	-- In, Through, and Beyond!
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 37890,	-- Obstacle Course
+				}),
 				o(240317, {	-- Iskar's Tome of Shadows
 					["g"] = {
 						q(38223, {	-- Dark Ascension
@@ -325,6 +329,10 @@ _.Zones =
 					["coord"] = { 73.4, 71.1, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38435,	-- The Invasion of Tanaan
+				}),
+				q(37890, {	-- Obstacle Course
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 37889,	-- The Invasion of Tanaan
 				}),
 				q(39526, {	-- Pressing the Attack
 					["qg"] = 96014,	-- Shadow Hunter Denjai
@@ -367,17 +375,29 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
 				}),
+				q(39423, {	-- Shipyard Report
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 37935,	-- The Assault Base
+				}),
 				q(38445, {	-- The Assault Base
 					["qg"] = 91923,	-- Exarch Naielle
 					["coord"] = { 62.4, 54.2, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38444,	-- In, Through, and Beyond!
 				}),
+				q(37935, {	-- The Assault Base
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 37934,	-- In, Through, and Beyond!
+				}),
 				q(38581, {	-- The Battle for the West
 					["qg"] = 90309,	-- Exarch Yrel
 					["coord"] = { 58.4, 60.3, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
+				}),
+				q(38577, {	-- The Battle for the West
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 37935,	-- The Assault Base
 				}),
 				q(39394, {	-- The Cipher of Damnation
 					["qg"] = 92120,	-- Oronok Torn-heart

@@ -8,14 +8,21 @@ _.Zones =
 			filter(101, {	-- Battle Pets
 				i(127751, {	-- Fel-Touched Pet Supplies
 					["crs"] = {
+						94645,	-- Bleakclaw (15.8, 44.6)
+						94638,	-- Chaos Pup (25.0, 76.2)
 						94637,	-- Corrupted Thundertail (53.0, 65.2)
 						94639,	-- Cursed Spirit (39162 daily)
 						94644,	-- Dark Gazer (54.1, 29.8)
+						94650,	-- Defiled Earth (75.4, 37.4)
 						94642,	-- Direflame (57.7, 37.3)
 						94647,	-- Dreadwalker (47.3, 52.8)
+						94640,	-- Felfly (55.8, 80.8)
 						94601,	-- Felsworn Sentry (26.1, 31.6)
 						94643,	-- Mirecroak (42.2, 71.8)
 						94648,	-- Netherfist (48.4, 35.5)
+						94649,	-- Skrillix (48.6, 31.3)
+						94641,	-- Tainted Maulclaw (43.4, 84.6)
+						94646,	-- Vile Blood of Draenor (44.0, 45.8)
 					},
 					["description"] = "Fel-Touched Pet Supplies is the reward for defeating any of the Tiny Terrors in Tanaan. You can defeat each Tiny Terror once per character per day.|r",
 					["g"] = {

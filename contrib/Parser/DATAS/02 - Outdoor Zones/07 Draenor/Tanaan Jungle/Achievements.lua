@@ -196,12 +196,18 @@ _.Zones =
 					crit(2, {	-- Corrupted Thundertail
 						["crs"] = { 94637 },
 					}),
-					crit(3),	-- Chaos Pup
+					crit(3, {	-- Chaos Pup
+						["crs"] = { 94638 },
+					}),
 					crit(4, {	-- Cursed Spirit
 						["crs"] = { 94639 },
 					}),
-					crit(5),	-- Felfly
-					crit(6),	-- Tainted Maulclaw
+					crit(5, {	-- Felfly
+						["crs"] = { 94640 },
+					}),
+					crit(6, {	-- Tainted Maulclaw
+						["crs"] = { 94641 },
+					}),
 					crit(7, {	-- Direflame
 						["crs"] = { 94642 },
 					}),
@@ -211,16 +217,24 @@ _.Zones =
 					crit(9, {	-- Dark Gazer
 						["crs"] = { 94644 },
 					}),
-					crit(10),	-- Bleakclaw
-					crit(11),	-- Vile Blood of Draenor
+					crit(10, {	-- Bleakclaw
+						["crs"] = { 94645 },
+					}),
+					crit(11, {	-- Vile Blood of Draenor
+						["crs"] = { 94646 },
+					}),
 					crit(12, {	-- Dreadwalker
 						["crs"] = { 94647 },
 					}),
 					crit(13, {	-- Netherfist
 						["crs"] = { 94648 },
 					}),
-					crit(14),	-- Skrillix
-					crit(15),	-- Defiled Earth
+					crit(14, {	-- Skrillix
+						["crs"] = { 94649 },
+					}),
+					crit(15, {	-- Defiled Earth
+						["crs"] = { 94650 },
+					}),
 				}),
 			}),
 		}),

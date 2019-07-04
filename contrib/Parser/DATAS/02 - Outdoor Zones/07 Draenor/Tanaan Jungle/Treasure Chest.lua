@@ -132,6 +132,13 @@ _.Zones =
 						}),
 					},
 				}),
+				o(241673, {	-- Looted Bleeding Hollow Treasure
+					["questID"] = 38741,
+					["coord"] = { 26.5, 63.0, 534 },
+					["g"] = {
+						currency(823),	-- Apexis Crystal x209
+					},
+				}),
 				o(241841, {	-- Looted Mystical Staff
 					["questID"] = 38814,
 					["coords"] = {

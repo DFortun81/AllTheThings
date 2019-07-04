@@ -10,11 +10,47 @@ _.ExpansionFeatures =
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					n(-17, {	-- Quests
+						q(39665, {	-- A True Naval Commander
+							["qg"] = 93812,	-- Salty Jorren
+							["coord"] = { 28.6, 10.8, 539 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 39666,	-- Equipping Our Fleet
+						}),
+						q(39404, {	-- Destroying the Competition
+							["qg"] = 93822,	-- Merreck Vonder
+							["coord"] = { 28.2, 11.6, 539 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 39056,	-- Naval Commander
+						}),
+						q(39666, {	-- Equipping Our Fleet
+							["qg"] = 93822,	-- Merreck Vonder
+							["coord"] = { 28.2, 11.6, 539 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 39655,	-- If At First You Fail, Try Again!
+						}),
+						q(39601, {	-- I Sunk Your Battleship
+							["qg"] = 93822,	-- Merreck Vonder
+							["coord"] = { 28.2, 11.6, 539 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 39665,	-- A True Naval Commander
+						}),
+						q(39655, {	-- If At First You Fail, Try Again!
+							["qg"] = 93822,	-- Merreck Vonder
+							["coord"] = { 28.2, 11.6, 539 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 39404,	-- Destroying the Competition
+						}),
 						q(39082, {	-- Let's Get To Work
 							["qg"] = 93822,	-- Merreck Vonder
 							["coord"] = { 28.1, 10.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 38259,	-- All Hands on Deck
+						}),
+						q(39056, {	-- Naval Commander
+							["qg"] = 93822,	-- Merreck Vonder
+							["coord"] = { 28.2, 10.6, 539 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 39422,	-- Shipyard Report
 						}),
 						q(39055, {	-- Ship Shape
 							["qg"] = 95002,	-- Yanas Seastrike
@@ -39,6 +75,12 @@ _.ExpansionFeatures =
 							["coord"] = { 29.8, 10.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39055,	-- Ship Shape
+						}),
+						q(39067, {	-- Upgrading The Fleet
+							["qg"] = 93822,	-- Merreck Vonder
+							["coord"] = { 28.2, 11.6, 539 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 39665,	-- A True Naval Commander
 						}),
 					}),
 				},
