@@ -21,6 +21,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50863, {	-- Avatar of Xolotal
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52858, { 	-- Azerite Empowerment
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -66,6 +70,11 @@ _.Zones =
 					}),
 					q(50871, {	-- Daggerjaw
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51815, {	-- Eggstermination
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50548, {	-- Enforcing the Will of the King

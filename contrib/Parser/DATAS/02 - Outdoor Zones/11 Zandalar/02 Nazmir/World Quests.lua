@@ -118,6 +118,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50503, {	-- Juba the Scarred
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50505, {	-- Kal'draxa
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -215,6 +219,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52785, {	-- Smashing Zalamar
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50936, {	-- Survival Strategy
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,

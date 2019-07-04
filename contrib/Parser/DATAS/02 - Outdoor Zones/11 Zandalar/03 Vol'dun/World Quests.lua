@@ -141,6 +141,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51124, {	-- Relic Hunter Hazaak
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51173, {	-- Sandfishing
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
