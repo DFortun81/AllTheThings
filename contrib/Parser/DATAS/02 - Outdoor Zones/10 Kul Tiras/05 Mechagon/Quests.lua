@@ -22,6 +22,10 @@ _.Zones =
 					["coord"] = { 37.0, 47.1, 1462 },
 					["isDaily"] = true,
 				}),
+				q(55672, {	-- A Historical Mess
+				--	["qg"] = 
+					["isDaily"] = true,
+				}),
 				q(55697, {	-- A Little Leg Work
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
@@ -557,6 +561,11 @@ _.Zones =
 					["coord"] = { 62.1, 76.8, 1462 },
 					["isDaily"] = true,
 				}),
+				q(56621, {	-- Real Ultimate Power
+					["qg"] = 150630,	-- Flip Quickcharge
+					["coord"] = { 70.8, 39.1, 1462 },
+					["isDaily"] = true,
+				}),
 				q(55211, {	-- Recharging Rustbolt
 					["qg"] = 150631,	-- Pristy Quickcharge
 					["coord"] = { 70.7, 38.4, 1462 },
@@ -810,6 +819,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 56175,	-- Emission Free
+				}),
+				q(55695, {	-- That New Mount Smell
+					["qg"] = 152321,	-- Cork Stuttguard
+					["coord"] = { 63.2, 43.0, 1462 },
+					["isDaily"] = true,
 				}),
 				q(54922, {	-- The Nuts and Bolts of it
 					["qg"] = 150573,	-- 2r Kerchunk
