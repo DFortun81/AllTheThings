@@ -42,7 +42,7 @@ _.PetJournal =
 		p(2443),	-- Lil' Siege Tower
 		p(86),		-- Lil' Smoky
 		p(2444),	-- Lil' War Machine
-		p(256),		-- Lil' XT
+		un(35, p(256)),		-- Lil' XT
 		p(2715),	-- Lost Robogrip
 		p(2676),	-- Malfunctioning Microbot
 		p(83),		-- Mechanical Chicken
@@ -80,7 +80,7 @@ _.PetJournal =
 		p(2401),	-- Rooter
 		p(1957),	-- Runeforged Servitor
 		p(2673),	-- Scrapyard Tunneler
-		p(2671),	-- Species 97
+		p(2671),	-- Specimen 97
 		p(1467),	-- Sky-Bo
 		p(1183),	-- Son of Animus
 		p(2753),	-- Spraybot 0D

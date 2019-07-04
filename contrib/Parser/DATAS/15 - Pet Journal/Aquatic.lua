@@ -131,8 +131,10 @@ _.PetJournal =
 		p(2709),	-- Skittering Eel
 		p(2758),	-- Slimy Eel
 		p(2761),	-- Slimy Fangtooth
+		p(2763),	-- Slimy Hermit Crab
 		p(2760),	-- Slimy Octopode
 		p(2757),	-- Slimy Otter
+		p(2765),	-- Slimy Sea Slug
 		p(2475),	-- Slippy
 		p(1655), 	-- Slithershock Elver
 		p(419), 	-- Small Frog
