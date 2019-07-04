@@ -37,6 +37,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50862, {	-- Bloodbulge
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51475, {	-- Brutal Escort
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -186,8 +190,21 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(52302, {	-- The MOTHERLODE!!: He's Got Really Big Bombs
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52248, {	-- The Shores of Xibala
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50861, {	-- Torraske the Eternal
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51374, {	-- Unending Gorilla Warfare
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52393, {	-- Work Order: Contract: Tortollan Seekers
