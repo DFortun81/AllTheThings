@@ -23,6 +23,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51641, {	-- Beachhead
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51155, {	-- Brgl-Lrgl the Basher
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -89,6 +93,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51125, {	-- Jungleweb Hunter
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52850, {	-- Keeyo's Champions of Vol'dun
 						["qg"] = 141879,	-- Keeyo
 						["lvl"] = 120,
@@ -117,6 +125,11 @@ _.Zones =
 						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
+					}),
+					q(53300, {	-- Overgrown Anchor Weed
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(51850, {	-- Preserve the Oasis
 						["lvl"] = 120,
