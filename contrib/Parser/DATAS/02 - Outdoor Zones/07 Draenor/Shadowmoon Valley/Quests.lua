@@ -184,6 +184,9 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_DataCrystal11",
 					--["objectID"] = 230933,	-- Defense Pylon Central Control Console
 				}),
+				q(33267, {	-- [Deprecated}
+					["u"] = 1,
+				}),
 				i(114877, {	-- Dirty Note
 					["crs"] = { 75043 },	-- Karnoth
 					["requireSkill"] = 165,	-- Leatherworking

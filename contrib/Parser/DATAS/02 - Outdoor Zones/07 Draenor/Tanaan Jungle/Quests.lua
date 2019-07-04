@@ -22,7 +22,6 @@ _.Zones =
 				qa(38561),	-- Garrison Campaign: The Warlock
 				qh(38458),	-- Garrison Campaign: The Warlock
 				q(38213),	-- Get a Clue
-				qh(39604),	-- I Sunk Your Battleship
 				q(39129),	-- Ill Tempered
 				qh(38599),	-- Infrastructure Improvements
 				qa(37839),	-- Light Be With You
@@ -32,10 +31,7 @@ _.Zones =
 				q(38273),	-- Spirits of the Bleeding Hollow
 				q(34366),	-- Tanaan 01: Front of the Portal
 				q(38272),	-- The Bleeding Hollow
-				qh(38463),	-- The Cipher of Damnation
-				qa(39394),	-- The Cipher of Damnation
 				q(38274),	-- The Eye of Kilrogg
-				qh(37889),	-- The Invasion of Tanaan
 				qh(35058),	-- The Mysterious Flask
 				q(40237),	-- Work Work Stoppage
 				qh(38989),	-- Your Orders, General?

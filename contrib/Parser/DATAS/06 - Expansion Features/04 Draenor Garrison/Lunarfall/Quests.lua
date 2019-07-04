@@ -1757,6 +1757,18 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				garrisonBuilding(51, {	-- Storehouse
+					q(37087, {	-- Lost in Transition
+						["qg"] = 84857,	-- Kyra Goldhands
+						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				garrisonBuilding(90, {	-- The Tannery
+					q(36642, {	-- Your First Leatherworking Work Order
+						["qg"] = 77383,	-- Anders Longstitch
+						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
 				garrisonBuilding(144, {	-- Trading Post
 					q(36948, {	-- Auctioning for Parts
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
@@ -1803,6 +1815,18 @@ _.ExpansionFeatures =
 						q(34026, {	-- Garrison Campaign: Seismic Matters
 							["qg"] = 77209,	-- Baros Alexston
 							["coord"] = { 29.2, 33.1, 582 },	-- garrison lvl 3
+						}),
+						q(34027, {	-- Groundbreaking Data
+							["qg"] = 77217,	-- Jr. Surveyor Dorn
+							["coord"] = { 64.5, 69.8, 582 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 34026,	-- Garrison Campaign: Seismic Matters
+						}),
+						q(34028, {	-- These Look Familiar....
+							["qg"] = 77217,	-- Jr. Surveyor Dorn
+							["coord"] = { 64.5, 69.8, 582 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 34027,	-- Groundbreaking Data
 						}),
 						q(35195, {	-- Socrethar's Fury
 							i(119134),	-- Sargerei Disguise (TOY!)
@@ -2442,10 +2466,6 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					--["objectID"] = 232397,	-- Bulletin Board
-				}),
-				q(34028, {	-- These Look Familiar...
-					["qg"] = 77217,	-- Jr. Surveyor Dorn
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34192, {	-- Things Are Not Goren Our Way
 					["sourceQuests"] = { 36592 },	-- Bigger is Better
