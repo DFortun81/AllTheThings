@@ -93,10 +93,6 @@ profession(202, {	-- Engineering
 					["categoryID"] = 739,
 					["g"] = {
 						{
-							["name"] = "De-Weaponized Mechanical Companion",
-							["recipeID"] = 84413
-						},
-						{
 							["name"] = "Electrostatic Condenser",
 							["recipeID"] = 95703
 						},
@@ -123,10 +119,6 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Lure Master Tackle Box",
 							["recipeID"] = 84415
-						},
-						{
-							["name"] = "Personal World Destroyer",
-							["recipeID"] = 84412
 						}
 					}
 				},

@@ -25,6 +25,10 @@ profession(20219, {	-- Gnomish Engineering
 					["categoryID"] = 739,
 					["g"] = {
 						{
+							["name"] = "De-Weaponized Mechanical Companion",
+							["recipeID"] = 84413
+						},
+						{
 							["name"] = "Gnomish Gravity Well",
 							["recipeID"] = 95705
 						}
