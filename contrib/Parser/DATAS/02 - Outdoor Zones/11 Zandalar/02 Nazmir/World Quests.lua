@@ -17,7 +17,7 @@ _.Zones =
 						},
 					}),
 					q(54684, {	-- Arcanist Quintril (Incursion WQ)
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
@@ -187,7 +187,7 @@ _.Zones =
 						},
 					}),
 					q(54839, {	-- Rightfully Ours (Incursion WQ)
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
@@ -205,7 +205,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54539, {	-- Skirmish at the Span (Incursion WQ)
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
@@ -236,7 +236,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54500, {	-- Untapped Potential (Incursion WQ)
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
@@ -249,7 +249,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54020, {	-- Wet Work: Gloomwater Span (Incursion WQ)
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),

@@ -68,7 +68,7 @@ _.Zones =
 					}),
 					q(54143, {	-- Bird's-Eye (Incursion WQ)
 						["coord"] = { 37.32, 51.83, 896 },	-- Rocket Pack Start
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),

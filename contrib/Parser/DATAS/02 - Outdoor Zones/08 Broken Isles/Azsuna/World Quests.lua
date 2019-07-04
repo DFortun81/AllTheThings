@@ -119,6 +119,30 @@ _.Zones =
 				n(-387, {	-- Relics
 					i(141273),	-- Echo of Eons
 				}),
+				q(45203, {	-- Battle for the Ruins (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(46165, {	-- Kazruul (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(45058, {	-- Release the Wardens (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(46170, {	-- Thar'gokk (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(46116, {	-- On Unhallowed Grounds (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(46263, {	-- Weaving Fel Webs (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(41651, {	-- Work Order: Azsunite Pendant
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["collectible"] = false,
@@ -133,7 +157,7 @@ _.Zones =
 						i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
 					},
 				}),
-				q(41639, {	-- Work Order: Blink-Trigger Headgun
+				q(41675, {	-- Work Order: Blink-Trigger Headgun
 					["requireSkill"] = 202,	-- Engineering
 					["collectible"] = false,
 					["g"] = {

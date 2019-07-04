@@ -20,7 +20,6 @@ _.Zones =
 				q(45838),	-- Assault on Azsuna
 				q(42165),	-- Azsuna Specimens
 				q(45069),	-- Barrels o' Fun
-				q(45203),	-- Battle for the Ruins
 				q(44894),	-- Bloodgazer Swarm!
 				q(41495),	-- Brilliant Leystone Seams
 				q(41481),	-- Brimstone Destroyer
@@ -80,7 +79,6 @@ _.Zones =
 				q(42277),	-- Interlopers!
 				q(42021),	-- Investigation at Mak'rana
 				q(41528),	-- Iridescent Aethril
-				q(46165),	-- Kazruul
 				q(46167),	-- Kozrum
 				q(42101),	-- Language of the Lost
 				q(42211),	-- Leodrath's Kin
@@ -100,14 +98,12 @@ _.Zones =
 				q(42105),	-- Mixology Mix-up
 				q(44048),	-- Nagana Happen
 				q(42275),	-- Not On My Watch
-				q(46116),	-- On Unhallowed Grounds
 				q(41896),	-- Operation Murloc Freedom
 				q(42623),	-- Piracy Doesn't Pay
 				q(41268),	-- Queen Queenfish
 				q(41266),	-- Raft Fishing
 				q(42108),	-- Rally the Nightwatchers
 				q(42123),	-- Reclaiming Llothien
-				q(45058),	-- Release the Wardens!
 				q(43776),	-- Scouting
 				q(43765),	-- Scouting
 				q(43801),	-- Shell Out Some Pain
@@ -120,8 +116,6 @@ _.Zones =
 				q(41582),	-- Smooth Sunrunner Hide
 				q(44847),	-- Straight From the Source
 				q(46162),	-- Subjugator Val'rek
-				q(43192),	-- Terror of the Deep
-				q(46170),	-- Thar'gokk
 				q(46163),	-- Thaz'gul
 				q(42022),	-- The Broken Academy
 				q(46146),	-- The Burning Shores
@@ -161,7 +155,6 @@ _.Zones =
 				q(43431),	-- WANTED: Warbringer Mox'na
 				q(43615),	-- WANTED: Warbringer Mox'na
 				q(43802),	-- Watery Graves
-				q(46263),	-- Weaving Fel Webs
 				q(42274),	-- Won't Anyone Think of the Whelps?
 				q(41287),	-- Work Order: Aethril
 				q(41267),	-- Work Order: Cursed Queenfish
