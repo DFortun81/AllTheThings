@@ -63,6 +63,12 @@ _.PetBattles =
 			ach(13766, {	-- Malowned
 				i(170102),	-- Burnout
 			}),
+			q(56914, {	-- Angry Residents
+				["isWeekly"] = true,
+				["g"] = {
+					i(169665),	-- Cleansed Remains
+				},
+			}),
 			i(169665, {	-- Cleansed Remains
 				i(169666),	-- Unopened Stratholme Supply Crate
 				i(169678),	-- Ziggy
