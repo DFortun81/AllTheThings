@@ -84,6 +84,10 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
+			q(57338, {	-- Depopulation Effort
+				["lvl"] = 120,
+				["collectible"] = false,
+			}),
 			q(56032, {	-- Dirty Dozen
 				["lvl"] = 120,
 				["collectible"] = false,
@@ -359,6 +363,10 @@ _.Zones =
 						["achievementID"] = 13690,
 					}),
 				},
+			}),
+			q(57330, {	-- Time for Revenge
+				["lvl"] = 120,
+				["collectible"] = false,
 			}),
 			q(56078, {	-- Time to Krill
 				["lvl"] = 120,
