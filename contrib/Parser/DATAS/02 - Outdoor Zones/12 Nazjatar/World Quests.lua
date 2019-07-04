@@ -381,6 +381,10 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56390, {	-- Voltgorger
+				["lvl"] = 120,
+				["collectible"] = false,
+			}),
 			q(56795, {	-- Work Order: Abyssal-Fried Rissole (A)
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
@@ -515,6 +519,22 @@ _.Zones =
 				["lvl"] = 120,
 				["g"] = {
 					i(169502),	-- Recipe: Greater Flask of the Vast Horizon (Rank 3)
+				},
+			}),
+			q(56796, {	-- Work Order: Fragrant Kakavia (A)
+				["collectible"] = false,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(168334),	-- Recipe: Fragrant Kakavia (Rank 3)
+				},
+			}),
+			q(56799, {	-- Work Order: Fragrant Kakavia (H)
+				["collectible"] = false,
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(168334),	-- Recipe: Fragrant Kakavia (Rank 3)
 				},
 			}),
 			q(56793, {	-- Work Order: Mech-Dowel's "Big Mech" (A)
