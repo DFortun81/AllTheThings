@@ -941,12 +941,48 @@ _.Craftables =
 				i(29507),	-- Windslayer Wraps
 			}),
 			n(-45, { 	-- Mail
-				un(5, i(29516)),	-- Ebon Netherscale Belt
-				un(5, i(29517)),	-- Ebon Netherscale Bracers
-				un(5, i(29515)),	-- Ebon Netherscale Breastplate
-				un(5, i(29520)),	-- Netherstrike Belt
-				un(5, i(29521)),	-- Netherstrike Bracers
-				un(5, i(29519)),	-- Netherstrike Breastplate
+				{	-- Ebon Netherscale Belt
+					["itemID"] = 29516,	-- Ebon Netherscale Belt
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Ebon Netherscale Bracers
+					["itemID"] = 29517,	-- Ebon Netherscale Bracers
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Ebon Netherscale Breastplate
+					["itemID"] = 29515,	-- Ebon Netherscale Breastplate
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Netherstrike Belt
+					["itemID"] = 29520,	-- Netherstrike Belt
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Netherstrike Bracers
+					["itemID"] = 29521,	-- Netherstrike Bracers
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Netherstrike Breastplate
+					["itemID"] = 29519,	-- Netherstrike Breastplate
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
 				i(30046),	-- Belt of the Black Eagle
 				i(32574),	-- Bindings of Lightning Reflexes
 				i(32398),	-- Boots of Shackled Souls
