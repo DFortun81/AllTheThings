@@ -46,7 +46,7 @@ _.Zones =
 					q(39325, {	-- Get Your Mix On
 						["qg"] = 92458,	-- Deucus Valdera
 						["g"] = {
-							recipe(195095),	-- Alchemy (lvl 800)
+							recipe(264251),	-- Legion Alchemy
 						},
 					}),
 					q(39344, {	-- Going Underground
@@ -175,7 +175,7 @@ _.Zones =
 					q(38499,  {	-- Strange New Ores
 						["qg"] = 92183,	-- Alard Schmied
 						["g"] = {
-							recipe(195097),	-- Legion Blacksmithing
+							recipe(264446),	-- Legion Blacksmithing
 						},
 					}),
 					q(39681,  {	-- The Properties of Leystone
@@ -347,7 +347,7 @@ _.Zones =
 					q(39874, {	-- Some Enchanted Evening
 						["qg"] = 93531,	-- Enchanter Nalthanis
 						["g"] = {
-							recipe(195096),	-- Enchanting (lvl 800)
+							recipe(264471),	-- Legion Enchanting
 						},
 					}),
 					q(39875, {	-- The Last Few
@@ -396,7 +396,7 @@ _.Zones =
 					q(40545, {	-- Aww Scrap!
 						["qg"] = 93539,	-- Hobart Grapplehammer
 						["g"] = {
-							recipe(195112),	-- Engineering (lvl 800)
+							recipe(264490),	-- Legion Engineering
 						},
 					}),
 					q(46119, {	-- Boon of the Builder
@@ -907,7 +907,7 @@ _.Zones =
 					q(39847,  {	-- Sign This
 						["qg"] = 92195,	-- Professor Pallin
 						["g"] = {
-							recipe(195115),	-- Inscription (lvl 800)
+							recipe(264506),	-- Legion Inscription
 						},
 					}),
 					q(39931,  {	-- Smashing Herbs
@@ -999,7 +999,7 @@ _.Zones =
 					q(40523,  {	-- Facet-nating Friends
 						["qg"] = 93526,	-- Tiffany Cartier
 						["g"] = {
-							recipe(195116),	-- Jewelcrafting (lvl 800)
+							recipe(264546),	-- Legion Jewelcrafting
 						},
 					}),
 					{	-- Felslate
@@ -1173,7 +1173,7 @@ _.Zones =
 					q(39958,  {	-- Skin Deep
 						["qg"] = 93523,	-- Namha Moonwater
 						["g"] = {
-							recipe(195119),	-- Leatherworking (lvl 800)
+							recipe(264590),	-- Legion Leatherworking
 						},
 					}),
 					q(40179,  {	-- Stormheim Savagery
@@ -1356,7 +1356,7 @@ _.Zones =
 					q(38944,  {	-- Sew It Begins
 						["qg"] = 93542,	-- Tanithria
 						["g"] = {
-							recipe(195126),	-- Tailoring (lvl 800)
+							recipe(264628),	-- Legion Tailoring
 						},
 					}),
 					q(38949,  {	-- So You Think You Can Sew
