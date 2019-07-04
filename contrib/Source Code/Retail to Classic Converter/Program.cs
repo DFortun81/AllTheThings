@@ -10,6 +10,21 @@ namespace ATT
 {
     class Program
     {
+        /// <summary>
+        /// The current version of Classic WoW.
+        /// </summary>
+        private static readonly int[] CURRENT_VERSION_ARR = new int[] { 1, 13, 2, 0 };
+
+        /// <summary>
+        /// The current version of Classic WoW. [Format: ABBBCCCFFFFFF]
+        /// </summary>
+        private static readonly long CURRENT_VERSION = CURRENT_VERSION_ARR.ConvertVersion();
+
+        /// <summary>
+        /// The maximum version of Classic WoW. [Format: ABBBCCCFFFFFF]
+        /// </summary>
+        private static readonly long MAX_VERSION = new int[] { 2, 0, 0, 0 }.ConvertVersion();
+
         static void Main(string[] args)
         {
             // Setup tracing to the console.
@@ -428,6 +443,70 @@ namespace ATT
                                             index = keys.IndexOf(key);
                                         }
                                     }
+                                }
+                            }
+                            break;
+                        }
+
+                    case "timeline":
+                        {
+                            if (o.TryGetValue(key, out object timelineRef) && timelineRef is List<object> timeline)
+                            {
+                                int removed = 0;
+                                var versionIndex = 0;
+                                long firstVersion = 0;
+                                long lastVersion = 0;
+                                foreach (var entry in timeline)
+                                {
+                                    var commandSplit = Convert.ToString(entry).Split(' ');
+                                    var version = commandSplit[1].Split('.').ConvertVersion();
+                                    switch (commandSplit[0])
+                                    {
+                                        case "added":
+                                            {
+                                                // If this is the first patch the thing was added.
+                                                if (versionIndex == 0)
+                                                {
+                                                    if (CURRENT_VERSION < version) removed = 1;
+                                                }
+                                                else
+                                                {
+                                                    if (CURRENT_VERSION >= version) removed = 0;
+                                                }
+                                                break;
+                                            }
+                                        case "removed":
+                                            {
+                                                if (CURRENT_VERSION >= version) removed = 0;
+                                                break;
+                                            }
+                                        case "blackmarket":
+                                            {
+                                                if (CURRENT_VERSION >= version) removed = 2;
+                                                break;
+                                            }
+                                    }
+                                    ++versionIndex;
+                                }
+                                if (removed > 0)
+                                {
+                                    if (removed == 2)
+                                    {
+                                        // Black Market
+                                        o["u"] = 9;
+                                    }
+                                    else
+                                    {
+                                        // If the version is the same as the last version, mark it as "Never Implemented".
+                                        if (firstVersion == lastVersion) o["u"] = 1;
+                                        else o["u"] = 2;
+                                    }
+                                }
+
+                                if (firstVersion >= MAX_VERSION)
+                                {
+                                    // Throw away all the data.
+                                    return false;
                                 }
                             }
                             break;

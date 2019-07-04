@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace ATT
 {
@@ -8,6 +9,21 @@ namespace ATT
     /// </summary>
     public static class Extensions
     {
+        /// <summary>
+        /// Convert the version number array to a version number.
+        /// </summary>
+        /// <typeparam name="T">The generic type.</typeparam>
+        /// <param name="arr">The array.</param>
+        /// <returns>The version number.</returns>
+        public static long ConvertVersion<T>(this T[] arr)
+        {
+            if (arr == null || arr.Length < 1) return 0;
+            return long.Parse(new StringBuilder().Append(Convert.ToString(arr[0]).Trim())
+                .Append((arr.Length >= 2 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(3, '0'))
+                .Append((arr.Length >= 3 ? Convert.ToString(arr[2]).Trim() : "").PadLeft(3, '0'))
+                .Append((arr.Length >= 4 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(6, '0')).ToString());
+        }
+
         /// <summary>
         /// Get a boolean from the dictionary.
         /// </summary>

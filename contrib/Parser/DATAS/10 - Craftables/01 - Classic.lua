@@ -74,6 +74,10 @@ _.Craftables =
 				},
 				{	-- Bleakwood Hew
 					["itemID"] = 12769,	-- Bleakwood Hew
+					["timeline"] = {
+						"created 1.11.1.5462",	-- Was originally never implemented.
+						"added 7.1.5.23360",
+					},
 				},
 				{	-- Bronze Battle Axe
 					["itemID"] = 7958,	-- Bronze Battle Axe
@@ -170,6 +174,11 @@ _.Craftables =
 				},
 				{	-- Blazing Rapier
 					["itemID"] = 12777,	-- Blazing Rapier
+					["timeline"] = {
+						"added 1.11.1.5462",
+						"removed 4.0.1.13287",
+						"added 7.1.5.23360",
+					},
 				},
 				{	-- Bronze Shortsword
 					["itemID"] = 2850,	-- Bronze Shortsword
@@ -194,6 +203,11 @@ _.Craftables =
 				},
 				{	-- Light Earthforged Blade
 					["itemID"] = 30071,	-- Light Earthforged Blade
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+						"added 7.1.5.23360",
+					},
 				},
 				{	-- Phantom Blade
 					["itemID"] = 7961,	-- Phantom Blade
@@ -208,6 +222,11 @@ _.Craftables =
 			filter(26, {	-- 2H Swords
 				{	-- Arcanite Champion
 					["itemID"] = 12790,	-- Arcanite Champion
+					["timeline"] = {
+						"added 1.11.1.5462",
+						"removed 4.0.1.13287",
+						"added 7.1.5.23360",
+					},
 				},
 				{	-- Bronze Greatsword
 					["itemID"] = 7957,	-- Bronze Greatsword
@@ -235,15 +254,18 @@ _.Craftables =
 				},
 				{	-- Blight
 					["itemID"] = 7959,	-- Blight
+					["timeline"] = {
+						"added 1.11.1.5462",
+						"removed 4.0.1.13287",
+						"added 7.1.5.23360",
+					},
 				},
 				{	-- Darkspear
 					["itemID"] = 12802,	-- Darkspear
-				},
-			}),
-			filter(34, {	-- Fist Weapons
-				{	-- Blood Talon
-					["itemID"] = 12795,	-- Blood Talon
-					["u"] = 1,
+					["timeline"] = {
+						"created 1.12.1.6898",	-- Was originally never implemented.
+						"added 7.1.5.23360",
+					},
 				},
 			}),
 			filter(8, {		-- Shield

@@ -75,6 +75,11 @@ _.Craftables =
 				},
 				{	-- Skyforged Great Axe
 					["itemID"] = 30088,	-- Skyforged Great Axe
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+						"added 7.1.5.23360",
+					},
 				},
 			}),
 			filter(23, {	-- 1H Maces
@@ -94,10 +99,15 @@ _.Craftables =
 					["itemID"] = 23498,	-- Fel Iron Hammer
 				},
 				{	-- Hand of Eternity
-					["itemID" ] =23556,	-- Hand of Eternity
+					["itemID"] = 23556,	-- Hand of Eternity
 				},
 				{	-- Lavaforged Warhammer
 					["itemID"] = 30089,	-- Lavaforged Warhammer
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+						"added 7.1.5.23360",
+					},
 				},
 				{	-- Light Emberforged Hammer
 					["itemID"] = 30073,	-- Light Emberforged Hammer
@@ -120,6 +130,11 @@ _.Craftables =
 				},
 				{	-- Great Earthforged Hammer
 					["itemID"] = 30093,	-- Great Earthforged Hammer
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+						"added 7.1.5.23360",
+					},
 				},
 				{	-- Hammer of Righteous Might
 					["itemID"] = 32854,	-- Hammer of Righteous Might
@@ -154,6 +169,11 @@ _.Craftables =
 				},
 				{	-- Windforged Rapier
 					["itemID"] = 30077,	-- Windforged Rapier
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+						"added 7.1.5.23360",
+					},
 				},
 			}),
 			filter(26, {	-- 2H Swords
@@ -177,6 +197,11 @@ _.Craftables =
 				},
 				{	-- Stoneforged Claymore
 					["itemID"] = 30086,	-- Stoneforged Claymore
+					["timeline"] = {
+						"added 2.1.0.6692",
+						"removed 4.0.1.13287",
+						"added 7.1.5.23360",
+					},
 				},
 			}),
 			n(-320, {		-- Head

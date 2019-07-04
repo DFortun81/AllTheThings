@@ -192,7 +192,7 @@ namespace ATT
             /// <param name="item">The item!</param>
             /// <param name="field">The field!</param>
             /// <param name="value">The value.</param>
-            private static void MergeArrayData(Dictionary<string, object> item, string field, object value)
+            private static void MergeIntegerArrayData(Dictionary<string, object> item, string field, object value)
             {
                 // Convert the data to a list of generic objects.
                 var newList = value as List<object>;
@@ -225,6 +225,44 @@ namespace ATT
 
                 // Sort the old list to ensure that the order is consistent.
                 oldList.Sort();
+            }
+
+            /// <summary>
+            /// Merge the array data!
+            /// </summary>
+            /// <param name="item">The item!</param>
+            /// <param name="field">The field!</param>
+            /// <param name="value">The value.</param>
+            private static void MergeStringArrayData(Dictionary<string, object> item, string field, object value)
+            {
+                // Convert the data to a list of generic objects.
+                var newList = value as List<object>;
+                if (newList == null)
+                {
+                    if (value is Dictionary<object, object> dict) newList = dict.Values.ToList();
+                    else return;
+                }
+
+                // Attempt to get the old list data.
+                List<object> oldList;
+                if (item.TryGetValue(field, out object oldData))
+                {
+                    // Convert the old data to a list of objects.
+                    oldList = oldData as List<object>;
+                }
+                else
+                {
+                    // Create a new list.
+                    item[field] = oldList = new List<object>();
+                }
+
+                // Merge the new list of data into the old data and ensure there are no duplicate values.
+                foreach (var entry in newList)
+                {
+                    var index = Convert.ToString(entry);
+                    if (oldList.Contains(index)) continue;
+                    oldList.Add(index);
+                }
             }
 
             /// <summary>
@@ -351,7 +389,7 @@ namespace ATT
                     case "sourceQuests":
                     case "altQuests":
                         {
-                            MergeArrayData(item, field, value);
+                            MergeIntegerArrayData(item, field, value);
                             break;
                         }
 
@@ -377,6 +415,13 @@ namespace ATT
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
                             foreach (var pair in newDict) oldDict[Convert.ToInt32(pair.Key)] = Convert.ToInt32(pair.Value);
+                            break;
+                        }
+
+                    // List of String Data Type Fields (stored as List<string> for usability reasons)
+                    case "timeline":
+                        {
+                            MergeStringArrayData(item, field, value);
                             break;
                         }
 

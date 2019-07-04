@@ -1859,6 +1859,10 @@ _.NeverImplemented =
 				["itemID"] = 12831,	-- Plans: Blood Talon
 				["u"] = 1,
 			},
+			{	-- Blood Talon
+				["itemID"] = 12795,	-- Blood Talon
+				["u"] = 1,
+			},
 			{	-- Plans: Darkspear
 				["itemID"] = 12832,	-- Plans: Darkspear
 				["u"] = 1,

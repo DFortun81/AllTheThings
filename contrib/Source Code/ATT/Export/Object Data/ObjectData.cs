@@ -177,6 +177,8 @@ namespace ATT
             public virtual void Clean(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
             {
                 // Remove globally blacklisted fields.
+                fields.Remove("ignoreBonus");
+                fields.Remove("ignoreSource");
                 fields.Remove("ilvl");
                 fields.Remove("name");
                 fields.Remove("q");
