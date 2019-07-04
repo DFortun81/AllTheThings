@@ -3058,9 +3058,30 @@ _.NeverImplemented =
 		un(1, i(122230)),	-- Unknown
 		un(1, i(122235)),	-- Unknown
 		un(1, i(108640)),	-- Unknown
-		un(1, i(119179)),	-- Iron Star Roller
-		un(1, i(164372)), 		-- Jinyu Light Globe
-		un(1, i(164377)), 		-- Regenerating Banana Bunch
+		{
+			["itemID"] = 119179,	-- Iron Star Roller
+			["timeline"] = {
+				"created 6.0.1.18738",	-- Never Implemented
+			},
+		},
+		{
+			["itemID"] = 164371,	-- Yaungol Oil Stove
+			["timeline"] = {
+				"created 8.0.1.26871",	-- Never Implemented
+			},
+		},
+		{
+			["itemID"] = 164372,	-- Jinyu Light Globe
+			["timeline"] = {
+				"created 8.0.1.26871",	-- Never Implemented
+			},
+		},
+		{
+			["itemID"] = 164377,	-- Regenerating Banana Bunch
+			["timeline"] = {
+				"created 8.0.1.26871",	-- Never Implemented
+			},
+		},
 	}),
 	n(-319, {	-- Weapons
 		n(-347, {	-- Bows

@@ -110,7 +110,13 @@ _.Toys =
 		i(118221),		-- Petrification Stone
 		i(13379),		-- Piccolo of the Flaming Fire
 		i(147867), 		-- Pilfered Sweeper
-		un(7, i(140363)),	-- Pocket Fel Spreader
+		{
+			["itemID"] = 140363,	-- Pocket Fel Spreader
+			["timeline"] = {
+				"added 7.0.3.22248",
+				"removed 7.0.3.22810",
+			},
+		},
 		i(127394), 		-- Podling Camouflage
 		i(153181),  	-- Red Conservatory Scroll
 		i(104294), 		-- Rime of the Time-Lost Mariner
@@ -169,7 +175,6 @@ _.Toys =
 		i(163745),		-- Witherbark Gong
 		i(130214), 		-- Worn Doll
 		i(36862),		-- Worn Troll Dice
-		un(1, i(164371)), 		-- Yaungol Oil Stove
 		i(153180),  	-- Yellow Conservatory Scroll
 		i(170199),		-- Zanj'ir Weapon Rack
 	}),

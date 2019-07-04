@@ -26,6 +26,16 @@ namespace ATT
         private static readonly long CURRENT_VERSION = CURRENT_VERSION_ARR.ConvertVersion();
 
         /// <summary>
+        /// The initial build version for the Legion Expansion.
+        /// </summary>
+        private static readonly int[] LEGION_VERSION_ARR = new int[] { 7, 0, 3, 22248 };
+
+        /// <summary>
+        /// The initial build version for the Legion Expansion.
+        /// </summary>
+        private static readonly long LEGION_VERSION = LEGION_VERSION_ARR.ConvertVersion();
+
+        /// <summary>
         /// All of the NPCs that have been parsed sorted by NPC ID.
         /// </summary>
         private static IDictionary<int, int> NPCS = new Dictionary<int, int>();
@@ -210,7 +220,7 @@ namespace ATT
             }
             if (data.TryGetValue("s", out f))
             {
-                if (f < 1) data.Remove("s");
+                if (f < 1 || CURRENT_VERSION < LEGION_VERSION) data.Remove("s");
             }
 
             if (data.TryGetValue("q", out f))
