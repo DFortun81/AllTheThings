@@ -273,14 +273,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(55305, {	-- Bolted Steelhead -- caught around 46.8,28.2
-					["itemID"] = 167655,
-					["g"] = {
-						crit(2, {	-- Secret Fish of Mechagon
-							["achievementID"] = 13489,
-						}),
-					},
-				}),
 				q(56082, {	-- Bot Rampage
 				--	don't know if there are SQs or a reputation requirement.  i was at 2,500 Honored and this quest was up as a daily when i flew to the island.
 					["isDaily"] = true,
@@ -292,14 +284,6 @@ _.Zones =
 					["qg"] = 154655,	-- Tyler Swaptech
 					["coord"] = { 59.9, 69.6, 1462 },
 					["isDaily"] = true,
-				}),
-				i(167654, {	-- Bottom Feeding Stinkfish -- caught around 78.9, 62.5
-					["questID"] = 55299,
-					["g"] = {
-						crit(1, {	-- Secret Fish of Mechagon
-							["achievementID"] = 13489,
-						}),
-					},
 				}),
 				q(55765, {	-- Bugs, Lots of 'Em!
 					["qg"] = 152932,	-- Razak Ironsides
@@ -558,6 +542,11 @@ _.Zones =
 					["coord"] = { 76.1, 15.3, 1462 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55651,	-- To Mechagon!
+				}),
+				q(57327, {	-- Prototypes for Inspiration
+					["qg"] = 150282,	-- Tinkmaster Overspark
+					["coord"] = { 73.96, 36.93, 1462 },
+					["isDaily"] = true,
 				}),
 				q(54929, {	-- Ready to Rumble
 					["qg"] = 150573,	-- Recycler Kerchunk
