@@ -530,15 +530,12 @@ _.Zones =
 						q(48739),	-- Commander Xethgar
 						q(48096),	-- Core Mechanics
 						q(49051),	-- Corrupted Blood of Argus
-						q(48095),	-- Dark Experimentation
 						q(48722),	-- Feasel the Muffin Thief
 						q(48098),	-- Garden Pests
-						q(48097),	-- Gatekeeper's Review: Cunning
 						q(48103),	-- Gatekeeper's Review: Tenacity
 						q(49049),	-- Gloamwing
 						q(48731),	-- Herald of Chaos
 						q(48175),	-- Hidden in the Hollows
-						q(48099),	-- Hostile Echology
 						q(48737),	-- Instructor Tarahna
 						q(48733),	-- Jed'hin Champion Vorusk
 						q(48386),	-- Jed'hin Tournament
@@ -546,9 +543,7 @@ _.Zones =
 						q(49052),	-- Mar'cuus
 						q(47828),	-- Memories of the Fallen
 						q(48106),	-- No Love Lost
-						q(48734),	-- Overseer Y'Beda
 						q(48736),	-- Overseer Y'Morna
-						q(48735),	-- Overseer Y'Sorna
 						q(48105),	-- Peer Review
 						q(47844),	-- Recurring Madness
 						q(48732),	-- Sabuul
@@ -556,7 +551,6 @@ _.Zones =
 						q(47858),	-- Security: Engaged
 						q(49050),	-- Shadeflicker
 						q(47833),	-- Shadowcaster Voruun
-						q(48740),	-- Skreeg the Devourer
 						q(48936),	-- Slithon the Last
 						q(49048),	-- Snozz
 						q(48730),	-- Sorolis the Ill-Fated
@@ -565,11 +559,10 @@ _.Zones =
 						q(48726),	-- Turek the Lucid
 						q(48728),	-- Umbraliss
 						q(48725),	-- Venomtail Skyfin
-						q(48724),	-- Vigilant Kuro
 						q(48723),	-- Vigilant Thanos
 						q(48094),	-- Void Clot
 						q(48696),	-- Wrangler Kravos
-						q(48738),	-- Zul'tan the Numerous
+						
 					}),
 --]]
 					{	-- A Colorful Key
@@ -1138,6 +1131,52 @@ _.Zones =
 							-- DROPS CACHE
 						},
 						["questID"] = 48719,
+					}),
+				}),
+				n(-34, {	-- World Quests
+					q(47705, {	-- Behind Legion Lines
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48095, {	-- Dark Experimentation
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(47135, {	-- For Their Own Good
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48097, {	-- Gatekeeper's Review: Cunning
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48099, {	-- Hostile Echology
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48734, {	-- Overseer Y'Beda
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48735, {	-- Overseer Y'Sorna
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48957, {	-- Seat of the Triumvirate: Void-Blade Zedaat
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48740, {	-- Skreeg the Devourer
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48724, {	-- Vigilant Kuro
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48738, {	-- Zul'tan the Numerous
+						["lvl"] = 110,
+						["collectible"] = false,
 					}),
 				}),
 			},
