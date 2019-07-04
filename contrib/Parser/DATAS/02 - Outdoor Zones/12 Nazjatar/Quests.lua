@@ -904,7 +904,7 @@ _.Zones =
 				["sourceQuest"] = 56235,	-- Down Into Nazjatar
 			}),
 			q(56803, {	-- Just A Friend
-				["qg"] = 151309,	-- Kelfin Scout(any follower?)
+				["qg"] = 149906,	-- Vim Brineheart
 				["coord"] = { 50.8, 65.2, 1355 },
 				["races"] = HORDE_ONLY,
 				--["sourceQuest"] = 
@@ -1231,6 +1231,21 @@ _.Zones =
 					55500,	-- Save a Friend (Horde)
 				},
 			}),
+			q(55787, {	-- Requisition: More Kelp Buds
+				["isDaily"] = true,
+				["qgs"] = {
+				--	153591,	-- Mikah Brewbelly (Alliance)		-- Need to be confirmed
+					151635,	-- Slen Darkroe (Horde)
+				},
+				["coords"] = {
+				--	{ 40.0, 55.6, 1355 },	-- Alliance			-- Need to be confirmed	
+					{ 50.8, 64.7, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
+				},
+			}),
 			q(55786, {	-- Requisition: More Seaweed
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1337,10 +1352,6 @@ _.Zones =
 					},
 					{	-- Requisition: More Deepcoral Buds
 						["questID"] = 55790,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: More Kelp Buds
-						["questID"] = 55787,
 						["isDaily"] = true,
 					},
 				},
