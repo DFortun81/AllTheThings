@@ -257,60 +257,6 @@ namespace ATT
                 }
             }
 
-            // If this container has groups, then process those groups as well.
-            if (data.TryGetValue("g", out List<object> groups))
-            {
-                Process(groups, modID, minLevel);
-            }
-
-            if (data.TryGetValue("requireSkill", out object requiredSkill))
-            {
-                if(Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out object newRequiredSkill))
-                {
-                    data["requireSkill"] = newRequiredSkill;
-                }
-                else
-                {
-                    switch (Convert.ToInt32(requiredSkill))
-                    {
-                        // https://www.wowhead.com/skill=
-                        case 40:    // Rogue Poisons
-                        case 150:   // Tiger Riding
-                        case 762:   // Riding
-                        case 849:   // Warlock
-                            {
-                                // Ignore! (and remove!)
-                                data.Remove("requireSkill");
-                                break;
-                            }
-                        default:
-                            {
-                                Trace.Write("Missing Skill ID in Conversion Table: ");
-                                Trace.WriteLine(requiredSkill);
-                                Trace.WriteLine(ToJSON(data));
-                                Console.ReadLine();
-                                break;
-                            }
-                    }
-                }
-            }
-
-            if (data.TryGetValue("name", out string name))
-            {
-                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if(ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData) && data.TryGetValue(objectData.ObjectType, out int id))
-                {
-                    // Store the name of this object (or whatever it is) in our table.
-                    if(!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<int, object> names))
-                    {
-                        names = new Dictionary<int, object>();
-                        NAMES_BY_TYPE[objectData.ObjectType] = names;
-                    }
-                    names[id] = name;
-                    data.Remove("name");
-                }
-            }
-
             // Check to see what patch this data was made relevant for.
             if (data.TryGetValue("timeline", out object timelineRef) && !data.ContainsKey("u") && timelineRef is List<object> timeline)
             {
@@ -383,6 +329,60 @@ namespace ATT
                         }
                         else data["u"] = 7;
                     }
+                }
+            }
+
+            // If this container has groups, then process those groups as well.
+            if (data.TryGetValue("g", out List<object> groups))
+            {
+                Process(groups, modID, minLevel);
+            }
+
+            if (data.TryGetValue("requireSkill", out object requiredSkill))
+            {
+                if(Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out object newRequiredSkill))
+                {
+                    data["requireSkill"] = newRequiredSkill;
+                }
+                else
+                {
+                    switch (Convert.ToInt32(requiredSkill))
+                    {
+                        // https://www.wowhead.com/skill=
+                        case 40:    // Rogue Poisons
+                        case 150:   // Tiger Riding
+                        case 762:   // Riding
+                        case 849:   // Warlock
+                            {
+                                // Ignore! (and remove!)
+                                data.Remove("requireSkill");
+                                break;
+                            }
+                        default:
+                            {
+                                Trace.Write("Missing Skill ID in Conversion Table: ");
+                                Trace.WriteLine(requiredSkill);
+                                Trace.WriteLine(ToJSON(data));
+                                Console.ReadLine();
+                                break;
+                            }
+                    }
+                }
+            }
+
+            if (data.TryGetValue("name", out string name))
+            {
+                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
+                if(ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData) && data.TryGetValue(objectData.ObjectType, out int id))
+                {
+                    // Store the name of this object (or whatever it is) in our table.
+                    if(!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<int, object> names))
+                    {
+                        names = new Dictionary<int, object>();
+                        NAMES_BY_TYPE[objectData.ObjectType] = names;
+                    }
+                    names[id] = name;
+                    data.Remove("name");
                 }
             }
         }

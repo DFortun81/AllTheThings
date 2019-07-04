@@ -179,6 +179,7 @@ namespace ATT
                 // Remove globally blacklisted fields.
                 fields.Remove("ignoreBonus");
                 fields.Remove("ignoreSource");
+                fields.Remove("timeline");
                 fields.Remove("ilvl");
                 fields.Remove("name");
                 fields.Remove("q");

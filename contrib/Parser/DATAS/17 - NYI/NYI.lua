@@ -2601,9 +2601,42 @@ _.NeverImplemented =
 			un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
 		}),
 		n(-186, { 	-- Jewelcrafting
-			un(1, i(20972)),	-- Design: Silver Rose Pendant
-			un(1, i(21959)),	-- Design: Blood Crown
-			un(1, i(25888)),	-- Design: Primal Stone Statue
+			{	-- Arcanite Sword Pendant
+				["itemID"] = 21793,	-- Arcanite Sword Pendant
+				["timeline"] = {
+					"created 2.1.3.6898",	-- Never Implemented
+				},
+			},
+			{	-- Design: Blood Crown
+				["itemID"] = 21959,	-- Design: Blood Crown
+				["timeline"] = {
+					"created 2.1.3.6898",	-- Never Implemented
+				},
+			},
+			{	-- Blood Crown
+				["itemID"] = 21780,	-- Blood Crown
+				["timeline"] = {
+					"created 2.1.3.6898",	-- Never Implemented
+				},
+			},
+			{	-- Design: Primal Stone Statue
+				["itemID"] = 25888,	-- Design: Primal Stone Statue
+				["timeline"] = {
+					"created 4.0.3.13287",	-- Never Implemented
+				},
+			},
+			{	-- Design: Silver Rose Pendant
+				["itemID"] = 20972,	-- Design: Silver Rose Pendant
+				["timeline"] = {
+					"created 2.1.3.6898",	-- Never Implemented
+				},
+			},
+			{	-- Silver Rose Pendant
+				["itemID"] = 20956,	-- Silver Rose Pendant
+				["timeline"] = {
+					"created 2.1.3.6898",	-- Never Implemented
+				},
+			},
 		}),
 		n(-187, {	-- Leatherworking
 			{	-- Pattern: Cloak of Beasts

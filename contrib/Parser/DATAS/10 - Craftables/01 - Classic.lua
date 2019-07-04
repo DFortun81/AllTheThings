@@ -1233,10 +1233,6 @@ _.Craftables =
 				{	-- Sapphire Pendant of Winter Night
 					["itemID"] = 21790,	-- Sapphire Pendant of Winter Night
 				},
-				{	-- Silver Rose Pendant
-					["itemID"] = 20956,	-- Silver Rose Pendant
-					["u"] = 1,
-				},
 				{	-- Thick Bronze Necklace
 					["itemID"] = 21933,	-- Thick Bronze Necklace
 				},
@@ -1644,7 +1640,13 @@ _.Craftables =
 			n(-323, {	-- Chest
 				un(8, i(19682)),	-- Bloodvine Vest
 				un(8, i(22652)),	-- Glacial Vest
-				un(5, i(14153)),	-- Robe of the Void
+				{	-- Robe of the Void
+					["itemID"] = 14153,	-- Robe of the Void
+					["timeline"] = {
+						"added 1.11.1.5462",
+						"removed 5.0.4.15890",
+					},
+				},
 				i(4324),	-- Azure Silk Vest
 				i(2578),	-- Barbaric Linen Vest
 				i(10001),	-- Black Mageweave Robe

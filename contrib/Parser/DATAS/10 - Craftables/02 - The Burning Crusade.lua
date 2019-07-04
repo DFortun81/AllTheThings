@@ -599,7 +599,7 @@ _.Craftables =
 				i(23836),	-- Goblin Rocket Launcher*
 			}),				
 			filter(113, {	-- Bags
-				i(23774),	-- Fil Iron Toolbox
+				i(23774),	-- Fel Iron Toolbox
 			}),
 		}),
 		n(-185, { 	-- Inscription
@@ -657,10 +657,6 @@ _.Craftables =
 		n(-186, { 	-- Jewelcrafting
 		-- Reviewed and updated as of 11.26.2018 BfA 8.0
 			n(-320, {		-- Head
-				{	-- Blood Crown
-					["itemID"] = 21780,	-- Blood Crown
-					["u"] = 1,
-				},
 				{	-- Circlet of Arcane Might
 					["itemID"] = 24123,	-- Circlet of Arcane Might
 				},
@@ -672,10 +668,6 @@ _.Craftables =
 				},
 			}),
 			filter(51, {	-- Neck
-				{	-- Arcanite Sword Pendant
-					["itemID"] = 21793,	-- Arcanite Sword Pendant
-					["u"] = 1,
-				},
 				{	-- Amulet of Flowing Life
 					["itemID" ] = 34360,	-- Amulet of Flowing Life
 				},
@@ -825,20 +817,78 @@ _.Craftables =
 		}),
 		n(-187, { 	-- Leatherworking
 			filter(113, {	-- Bags
-				i(29540),	-- Reinforced Mining Bag
-				un(7, i(34099)),	-- Knothide Ammo Pouch
-				un(7, i(34105)),	-- Quiver of a Thousand Feathers
+				{	-- Knothide Ammo Pouch
+					["itemID"] = 34099,	-- Knothide Ammo Pouch
+					["timeline"] = {
+						"added 2.3.0.7382",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Quiver of a Thousand Feathers
+					["itemID"] = 34105,	-- Quiver of a Thousand Feathers
+					["timeline"] = {
+						"added 2.3.0.7382",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Reinforced Mining Bag
+					["itemID"] = 29540,	-- Reinforced Mining Bag
+					["timeline"] = {
+						"added 2.0.1.6180",
+					},
+				},
 			}),	
 			n(-322, { 	-- Cloak
-				i(33122),	-- Cloak of Darkness
+				{	-- Cloak of Darkness
+					["itemID"] = 33122,	-- Cloak of Darkness
+					["timeline"] = {
+						"added 2.2.0.6983",
+					},
+				},
 			}),
 			n(-44, { 	-- Leather
-				un(5, i(29526)),	-- Primalstrike Belt
-				un(5, i(29527)),	-- Primalstrike Bracers
-				un(5, i(29525)),	-- Primalstrike Vest
-				un(5, i(29524)),	-- Windhawk Belt
-				un(5, i(29523)),	-- Windhawk Bracers
-				un(5, i(29522)),	-- Windhawk Hauberk
+				{	-- Primalstrike Belt
+					["itemID"] = 29526,	-- Primalstrike Belt
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Primalstrike Bracers
+					["itemID"] = 29527,	-- Primalstrike Bracers
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Primalstrike Vest
+					["itemID"] = 29525,	-- Primalstrike Vest
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Windhawk Belt
+					["itemID"] = 29524,	-- Windhawk Belt
+					["timeline"] = {
+						"added 2.1.0.6655",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Windhawk Bracers
+					["itemID"] = 29523,	-- Windhawk Bracers
+					["timeline"] = {
+						"added 2.1.0.6655",
+						"removed 4.0.1.13287",
+					},
+				},
+				{	-- Windhawk Hauberk
+					["itemID"] = 29522,	-- Windhawk Hauberk
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
+				},
 				i(30040),	-- Belt of Deep Shadow
 				i(30042),	-- Belt of Natural Power
 				i(29964),	-- Blackstorm Leggings
