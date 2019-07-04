@@ -1957,6 +1957,7 @@ _.NeverImplemented =
 			un(1, i(162737)),	-- Schematic: Catchroot Seed Spreader
 			un(1, i(162334)),	-- Schematic: Charged Refrigeration Projectile
 			un(1, i(162738)),	-- Schematic: Charged Refrigeration Projectile
+			un(1, i(23882)),	-- Schematic: Critter Enlarger [removed in TBC beta]
 			un(1, i(162338)),	-- Schematic: Electro-Induced Slumber Bomb
 			un(1, i(162335)),	-- Schematic: Fro-Grow Grenade
 			un(1, i(162739)),	-- Schematic: Fro-Grow Grenade

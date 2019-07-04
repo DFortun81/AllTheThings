@@ -93,9 +93,6 @@ _.WorldDrops =
 					i(23802),	-- Schematic: Ornate Khorium Rifle
 					i(23804),	-- Schematic: Power Amplification Goggles
 					i(23810),	-- Schematic: Crashin' Thrashin' Robot
-					i(23882, {	-- Schematic: Critter Enlarger
-						["u"] = 1,  -- removed in TBC beta
-					}),
 					i(23883),	-- Schematic: Healing Potion Injector (BoE version)
 					i(23884),	-- Schematic: Mana Potion Injector (BoE version)
 					i(25887),	-- Schematic: Purple Smoke Flare
