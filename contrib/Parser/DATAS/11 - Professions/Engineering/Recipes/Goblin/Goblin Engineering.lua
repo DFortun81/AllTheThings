@@ -29,6 +29,16 @@ profession(20222, {	-- Goblin Engineering
 							["recipeID"] = 95707
 						}
 					}
+				},
+				{
+					["name"] = "Devices",
+					["categoryID"] = 739,
+					["g"] = {
+						{
+							["name"] = "Personal World Destroyer",
+							["recipeID"] = 84412
+						}
+					}
 				}
 			}
 		},
