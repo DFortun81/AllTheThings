@@ -251,6 +251,7 @@ _.Zones =
 				n(84912, {	-- Sunderthorn
 					["questID"] = 36298,
 					["coord"] = { 58.6, 45.0, 542 },
+					["description"] = "This rare is bugged as of 8.0.1. If you fly in fast enough, you can still enough wasps to get her to spawn. Melee classes may find this near impossible.",
 					["g"] = {	
 						i(116855),	-- Stingtail's Toxic Stinger
 					},

@@ -20,16 +20,78 @@ _.Zones =
 						i(116835),	-- Assassin's Spear
 					},
 				}),
+				o(232989, {	-- Basket of Arakkoa Goods
+					["questID"] = 35627,
+					["coords"] = {
+						{ 40.1, 60.3, 542 },	-- alliance
+						{ 40.1, 43.9, 542 },	-- horde
+					},
+				}),
+				o(234473, {	-- Campaign Contributions
+					["questID"] = 36367,
+					["coord"] = { 55.5, 90.8, 542 },
+					["description"] = "On a shelf above the doorway.",
+				}),
+				o(234704, {	-- Elixir of Shadow Sight
+					["questID"] = 36397,
+					["coord"] = { 43.8, 24.7, 542 },
+					["icon"] = "Interface\\Icons\\inv_potion_122",
+					["g"] = {
+						i(115463),	-- Elixir of Shadow Sight
+					},
+				}),
+				o(234736, {	-- Elixir of Shadow Sight
+					["questID"] = 36401,
+					["coord"] = { 53.1, 84.5, 542 },
+					["icon"] = "Interface\\Icons\\inv_potion_122",
+					["g"] = {
+						i(115463),	-- Elixir of Shadow Sight
+					},
+				}),
+				o(234705, {	-- Elixir of Shadow Sight
+					["questID"] = 36398,
+					["coord"] = { 69.2, 43.5, 542 },
+					["icon"] = "Interface\\Icons\\inv_potion_122",
+					["g"] = {
+						i(115463),	-- Elixir of Shadow Sight
+					},
+				}),
+				o(234703, {	-- Elixir of Shadow Sight
+					["questID"] = 36395,
+					["coord"] = { 43.9, 15.0, 542 },
+					["icon"] = "Interface\\Icons\\inv_potion_122",
+					["g"] = {
+						i(115463),	-- Elixir of Shadow Sight
+					},
+				}),
+				o(234735, {	-- Elixir of Shadow Sight
+					["questID"] = 36400,
+					["coord"] = { 55.6, 22.1, 542 },
+					["icon"] = "Interface\\Icons\\inv_potion_122",
+					["g"] = {
+						i(115463),	-- Elixir of Shadow Sight
+					},
+				}),
+				o(234734, {	-- Elixir of Shadow Sight
+					["questID"] = 36399,
+					["coord"] = { 48.9, 62.5, 542 },
+					["icon"] = "Interface\\Icons\\inv_potion_122",
+					["g"] = {
+						i(115463),	-- Elixir of Shadow Sight
+					},
+				}),
 				o(235097, {	-- Ephial's Dark Grimoire
 					["questID"] = 36418,
 					["coord"] = { 36.5, 57.9, 542 },
+					["icon"] = "Interface\\Icons\\inv_potion_122",
 					["g"] = {
 						i(116914),	-- Ephial's Grimoire
 					},
 				}),
 				o(235289, {	-- Garrison Workman's Hammer
 					["questID"] = 36451,
-					["coord"] = { 41.8, 50.5, 542 },	-- **Coords are correct but there are phasing issues with the interactable, you may be able to see it from a distance but it will disappear when you actually reach it.**
+					["coord"] = { 41.8, 50.5, 542 },
+					["description"] = "This treasure is bugged as of 8.0.1. The hammer can be seen in the cart from a distance but disappears when you approach it due to zone phasing. If you fly in fast enough, you can still loot it.",
 					["g"] = {
 						i(116918),	-- Garrison Workman's Hammer
 					},
@@ -39,7 +101,7 @@ _.Zones =
 					["modelScale"] = 4.5,
 					["questID"] = 36381,
 					["coord"] = { 61.1, 55.3, 542 },
-					["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
+					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 					["g"] = {
 						i(118240),	-- Anzu's Scything Talon
 					},
@@ -49,7 +111,7 @@ _.Zones =
 					["modelScale"] = 4.5,
 					["questID"] = 36386,
 					["coord"] = { 48.6, 44.4, 542 },
-					["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
+					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
 					["g"] = {
 						i(118237),	-- Anzu's Malice
@@ -60,7 +122,7 @@ _.Zones =
 					["modelScale"] = 4.5,
 					["questID"] = 36388,
 					["coord"] = { 42.42, 26.69, 542 },
-					["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
+					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
 					["g"] = {
 						i(118242),	-- Anzu's Scorn
@@ -71,7 +133,7 @@ _.Zones =
 					["modelScale"] = 4.5,
 					["questID"] = 36389,
 					["coord"] = { 46.9, 40.46, 542 },
-					["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
+					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
 					["g"] = {
 						i(118238),	-- Anzu's Reach
@@ -82,7 +144,7 @@ _.Zones =
 					["modelScale"] = 4.5,
 					["questID"] = 36390,
 					["coord"] = { 57.01, 78.93, 542 },
-					["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
+					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
 					["g"] = {
 						i(118241),	-- Anzu's Piercing Talon
@@ -93,7 +155,7 @@ _.Zones =
 					["modelScale"] = 4.5,
 					["questID"] = 36392,
 					["coord"] = { 52.0, 19.7, 542 },
-					["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
+					--["model"] = "World\\Expansion05\\Doodads\\Arakkoa\\6ak_Outcasts_Totem.mdx",
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",
 					["g"] = {
 						i(118239),	-- Anzu's Stoicism
@@ -104,6 +166,14 @@ _.Zones =
 					["coord"] = { 47.8, 36.1, 542 },
 					["g"] = {
 						i(116911),	-- Outcast Decoder Ring
+					},
+				}),
+				o(234154, {	-- Misplaced Scrolls
+					["questID"] = 36244,
+					["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
+					["coord"] = { 42.7, 18.3, 542 },
+					["g"] = {
+						i(109585),	-- Arakkoa Cipher
 					},
 				}),
 				o(234740, {	-- Orcish Signaling Horn
@@ -497,6 +567,42 @@ _.Zones =
 						}),					
 					},
 				}),	
+				o(234449, {	-- Relics of the Outcasts
+					["questID"] = 36355,
+					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+					["coord"] = { 43.2, 27.2, 542 },
+					["description"] = "Must have archaeology.",
+				}),
+				o(234454, {	-- Relics of the Outcasts
+					["questID"] = 36359,
+					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+					["coord"] = { 60.2, 53.8, 542 },
+					["description"] = "Requires archaeology.",
+				}),
+				o(234446, {	-- Relics of the Outcasts
+					["questID"] = 36354,
+					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+					["coord"] = { 45.9, 44.2, 542 },
+					["description"] = "Requires archaeology.",
+				}),
+				o(234451, {	-- Relics of the Outcasts
+					["questID"] = 36356,
+					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+					["coord"] = { 67.5, 39.9, 542 },
+					["description"] = "Requires archaeology.",
+				}),
+				o(234455, {	-- Relics of the Outcasts
+					["questID"] = 36360,
+					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+					["coord"] = { 51.8, 48.9, 542 },
+					["description"] = "Requires archaeology.",
+				}),
+				o(234155, {	-- Relics of the Outcasts
+					["questID"] = 36245,
+					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+					["coord"] = { 43.0, 16.5, 542 },
+					["description"] = "Requires archaeology.",
+				}),
 				o(233975, {	-- Rooby's Roo
 					["description"] = "Buy 3 Rooby Treats from Miril Dumonde in the basement of the inn and feed them to Rooby on the main floor of the inn.  Follow Rooby and feed him each time he stops until he leaves his treasure.",
 					["questID"] = 36657,
@@ -567,6 +673,24 @@ _.Zones =
 						}),				
 					},
 				}),							
+				o(235135, {	-- Smuggled Apexis Artifacts
+					["questID"] = 36433,
+					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+					["coord"] = { 56.3, 45.3, 542 },
+					["description"] = "Requires archaeology.",
+				}),
+				o(235104, {	-- Sun-Touched Cache
+					["questID"] = 36421,
+					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+					["coord"] = { 34.1, 27.5, 542 },
+					["description"] = "Requires archaeology.",
+				}),
+				o(235105, {	-- Sun-Touched Cache
+					["questID"] = 36422,
+					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+					["coord"] = { 33.3, 27.3, 542 },
+					["description"] = "Requires archaeology.",
+				}),
 				o(235307, {	-- Waterlogged Satchel
 					["modelID"] = 32854,
 					["questID"] = 36455,

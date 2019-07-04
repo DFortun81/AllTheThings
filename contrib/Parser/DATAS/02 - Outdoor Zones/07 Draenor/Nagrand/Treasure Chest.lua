@@ -1222,6 +1222,13 @@ _.Zones =
 						i(118250),	-- Riverwashed Warsong Helm
 					},
 				}),
+				o(235307, {	-- Watertight Bag
+					["questID"] = 36071,
+					["coord"] = { 64.8, 35.7, 550 },
+					["g"] = {
+						i(118235),	-- Ogre Diving Cap
+					},
+				}),
 			}),
 		}),
 	}),

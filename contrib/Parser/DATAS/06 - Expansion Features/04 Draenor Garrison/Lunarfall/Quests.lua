@@ -108,10 +108,22 @@ _.ExpansionFeatures =
 						["qg"] = 84248,	-- Justin Timberlord <Work Orders>
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(36192, {	-- Turning Timber into Profit
-						["sourceQuest"] = 36189,	-- Easing into Lumberjacking
-						["qg"] = 84248,	-- Justin Timberlord <Work Orders>
-						["races"] = ALLIANCE_ONLY,
+					n(85199, {	-- Petrified Ancient
+						["description"] = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
+						["g"] = {
+							i(115467, {	-- Barkskin Tome
+								["questID"] = 36385,	-- Legacy of the Ancients
+								["g"] = {
+									i(115506),	-- Treessassin's Guise
+								},
+							}),
+						},
+					}),
+					q(36296, {	-- Phylarch the Evergreen
+						["description"] = "Chance to spawn when you cut down trees with a rank 3 lumbermill in your garrison. After spawning 3 times, he will become your follower.",
+						["g"] = {
+							follower(194),	-- Phylarch the Evergreen
+						},
 					}),
 					q(36448, {	-- Reduction in Force
 						["sourceQuest"] = 36429,	-- The Rise and Fall of Barov Industries: Weldon Barov
@@ -145,16 +157,10 @@ _.ExpansionFeatures =
 						["qg"] = 84248,	-- Justin Timberlord <Work Orders>
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(85199, {	-- Petrified Ancient
-						["description"] = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
-						["g"] = {
-							i(115467, {	-- Barkskin Tome
-								["questID"] = 36385,	-- Legacy of the Ancients
-								["g"] = {
-									i(115506),	-- Treessassin's Guise
-								},
-							}),
-						},
+					q(36192, {	-- Turning Timber into Profit
+						["sourceQuest"] = 36189,	-- Easing into Lumberjacking
+						["qg"] = 84248,	-- Justin Timberlord <Work Orders>
+						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				garrisonBuilding(36,  {	-- Lunarfall Inn (rank 1: 34, rank 2: 35, rank 3: 36)
@@ -2474,6 +2480,13 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						garrisonBuilding(61),	-- Frostwall Mines
+					},
+				}),
+				q(37848, {	-- Treasure Contract: Amulet of Rukhmar
+					["isDaily"] = true,
+					["qgs"] = {
+						89793,	-- Harrison Jones
+						92223,	-- Surveyor Daltry
 					},
 				}),
 				q(37941,  {	-- Treasure Contract: The Infected Orc

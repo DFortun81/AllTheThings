@@ -28,6 +28,7 @@ _.Zones =
 					["crs"] = { 88417 },	-- Royal Moth
 				}),
 				p(1592, {	-- Sapphire Firefly
+					["crs"] = { 88356 },	-- Sapphire Firefly
 					["description"] = "Only one is up at a time.  Once captured or killed, it immediately respawns.",
 					["coords"] = {
 						{ 37.8, 41.8, 542 },
@@ -41,7 +42,6 @@ _.Zones =
 						{ 57.8, 51.0, 542 },
 						{ 59.0, 68.6, 542 },
 					},
-					["crs"] = { 88356 },	-- Sapphire Firefly
 				}),
 				p(568,  {	-- Silkbead Snail
 					["crs"] = { 63001 },	-- Silkbead Snail
@@ -63,6 +63,14 @@ _.Zones =
 				}),
 				p(1582, {	-- Zangar Crawler
 					["crs"] = { 88466 },	-- Zangar Crawler
+				}),
+				q(37207, {	-- Vesharr
+					["qg"] = 87123,	-- Vesharr
+					["coord"] = { 46.2, 45.3, 542 },
+					["isDaily"] = true,
+					["g"] = {
+						i(116415),	-- Shiny Pet Charm
+					},
 				}),
 			}),
 		}),

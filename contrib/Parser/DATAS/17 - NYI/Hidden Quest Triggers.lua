@@ -128,6 +128,27 @@ _.NeverImplemented =
 		q(33962),	-- Shadowmoon Flowerpicker
 		q(34053),	-- SoL Conversation Tracker
 		q(36942),	-- Soulbinder Aedraa
+		q(36951),	-- Arakkoa Exodus - offered by garrison bulletin/command board. Duplicate questID
+		q(35874),	-- Spires of Arak - Apparatus - triggers after finishing "The Ebon Hunter" quest
+		q(36859),	-- Spires of Arak - Deprecated version of "The Howling Crag" bonus objective
+		q(35201),	-- Spires of Arak - Krixel
+		q(37417),	-- Spires of Arak - Feast of the Spires (alliance) - put down by the barkeep if you have the brewery
+		q(37416),	-- Spires of Arak - Feast of the Spires (horde) - put down by the barkeep if you have the brewery
+		q(36111),	-- Spires of Arak - Flight Home
+		q(36112),	-- Spires of Arak - Flight Home
+		q(36577),	-- Spires of Arak - Flying Machine Completed after landing during "Flame On"
+		q(37317),	-- Spires of Arak - Talon King Ikiss killed during "The False Talon King"
+		q(35291),	-- Spires of Arak - Trading Post selected (alliance)
+		q(37316),	-- Spires of Arak - Trading Post selected (alliance)
+		q(35284),	-- Spires of Arak - Trading Post selected (horde)
+		q(37314),	-- Spires of Arak - Trading Post selected (horde)
+		q(35290),	-- Spires of Arak - Inn selected (alliance)
+		q(37315),	-- Spires of Arak - Inn selected (alliance)
+		q(35283),	-- Spires of Arak - Inn selected (horde)
+		q(37313),	-- Spires of Arak - Inn selected (horde)
+		q(36798),	-- Spires of Arak - Rooby Roo fed 3x to reveal the treasure
+		q(35028),	-- Spires of Arak - Krikka and Vakora Tracking - triggers during "The Bloodmane" and "Words of the Raven Mother"
+		q(36724),	-- Spires of Arak - Reshad Tracking - triggers after turning in "Call of the Raven Mother"
 		q(34871),	-- Supply Recovery Tracking
 		q(34984),	-- Supply Recovery Tracking
 		q(33960),	-- Talador Flowerpicker

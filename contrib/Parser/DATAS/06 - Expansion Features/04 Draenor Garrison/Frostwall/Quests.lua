@@ -1560,6 +1560,13 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 36137,	-- Easing into Lumberjacking
 							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
 						},
+						{	-- Phylarch the Evergreen
+							["questID"] = 36296,
+							["description"] = "Chance to spawn when you cut down trees with a rank 3 lumbermill in your garrison. After spawning 3 times, he will become your follower.",
+							["groups"] = {
+								follower(194),	-- Phylarch the Evergreen
+							},
+						},
 						{	-- Reduction in Force
 							["questID"] = 36449,
 							["qg"] = 85414,	-- Alexi Barov <Barov Industries>
@@ -2431,6 +2438,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Pinchwhistle Gearworks
 						["questID"] = 36862,
+						["altQuestID"] = 35620,
 						["qg"] = 86614,	-- Pinchwhistle Gearworks
 						["coords"] = {
 							{ 50.8, 50.7, 590 },	-- lvl 1 garrison

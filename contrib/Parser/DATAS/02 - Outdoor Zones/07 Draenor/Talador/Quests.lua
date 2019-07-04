@@ -1364,10 +1364,6 @@ _.Zones =
 					["questID"] = 33931,
 					["races"] = HORDE_ONLY,
 				},
-				{	-- Three Feet Under
-					["questID"] = 36864,
-					["races"] = HORDE_ONLY,
-				},
 				{	-- Through the Looking Glass
 					["questID"] = 34087,
 					["races"] = ALLIANCE_ONLY,
