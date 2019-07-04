@@ -1345,6 +1345,16 @@ _.Zones =
 						},
 					},
 				},
+				q(38569, {	-- Clearing the Way (bonus objective)
+					["lvl"] = 100,
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 38568,	-- We Need a Shipwright
+				}),
+				q(37921, {	-- Clearing the Way (bonus objective)
+					["lvl"] = 100,
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38257,	-- We Need a Shipwright
+				}),
 				{	-- Clearing the Way
 					["questID"] = 35027,
 					["qg"] = 80757,
@@ -1405,18 +1415,18 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35063,	-- We Need An Outpost
 				},
-				{	-- Derailment
-					["questID"] = 38254,
+				q(38254, {	-- Derailment
 					["qg"] = 90180,	-- Exarch Naielle
+					["coord"] = { 52.5, 9.8, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38257,	-- We Need a Shipwright
-				},
-				{	-- Derailment
-					["questID"] = 38570,
+				}),
+				q(38570, {	-- Derailment
 					["qg"] = 89937,	-- Sammy Fivefingers
+					["coord"] = { 52.5, 9.8, 543 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38568,	-- We Need a Shipwright
-				},
+				}),
 				{	-- Ebony Feather
 					["itemID"] = 113459,
 					["coords"] = {
@@ -1659,18 +1669,18 @@ _.Zones =
 					["qg"] = 74125,	-- Aren Mistshade
 					["sourceQuest"] = 34337,	-- The Giant Cauldron
 				},
-				{	-- Hook, Line, and... Sink Him!
-					["questID"] = 38572,
+				q(38572, {	-- Hook, Line, and... Sink Him!
 					["qg"] = 91242,	-- Solog Roark
+					["coord"] = { 56.7, 17.2, 543 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38571,	-- The Train Gang
-				},
-				{	-- Hook, Line, and... Sink Him!
-					["questID"] = 38256,
+				}),
+				q(38256, {	-- Hook, Line, and... Sink Him!
 					["qg"] = 91242,	-- Solog Roark
+					["coord"] = { 56.7, 17.2, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38255,	-- The Train Gang
-				},
+				}),
 				{	-- I Am Blook
 					["questID"] = 34279,	-- I Am Blook
 					["groups"] = {
@@ -1842,18 +1852,18 @@ _.Zones =
 						35036,	-- Is This One of Yours?
 					},
 				},
-				{	-- Nothing Remains
-					["questID"] = 38573,
+				q(38573, {	-- Nothing Remains
 					["qg"] = 91242,	-- Solog Roark
+					["coord"] = { 50.6, 16.6, 543 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38572,	-- Hook, Line, and... Sink Him!
-				},
-				{	-- Nothing Remains
-					["questID"] = 38258,
+				}),
+				q(38258, {	-- Nothing Remains
 					["qg"] = 91242,	-- Solog Roark
+					["coord"] = { 50.6, 16.6, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38256,	-- Hook, Line, and... Sink Him!
-				},
+				}),
 				{	-- On the Mend
 					["questID"] = 35026,
 					["qg"] = 82832,	-- Rexxar
@@ -2378,18 +2388,18 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 37943,	-- The Silent Skull: The Second Reagent
 				},
-				{	-- The Train Gang
-					["questID"] = 38255,
+				q(38255, {	-- The Train Gang
 					["qg"] = 90177,	-- Exarch Yrel
+					["coord"] = { 56.7, 17.1, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38254,	-- Derailment
-				},
-				{	-- The Train Gang
-					["questID"] = 38571,
+				}),
+				q(38571, {	-- The Train Gang
 					["qg"] = 92401,	-- Durotan
+					["coord"] = { 56.7, 17.1, 543 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38570,	-- Derailment
-				},
+				}),
 				{	-- Valley of Destruction
 					["questID"] = 36480,
 					["groups"] = {

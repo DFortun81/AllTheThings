@@ -238,7 +238,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["coord"] = { 40.6, 54.8, 539 },
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = { 81152, 81153 },	-- Scout Valdez (two versions)
+					["qg"] = 81153,	-- Scout Valdez
 				}),
 				q(36311, { -- Father and Son
 					["sourceQuests"] = { 36309 },	-- The Strength of Iron

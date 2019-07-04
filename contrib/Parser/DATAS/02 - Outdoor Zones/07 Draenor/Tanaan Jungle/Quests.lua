@@ -6,14 +6,11 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(534, {	-- Tanaan Jungle
 			n(-17, { 	-- Quests
---[[				
-				q(38578),	-- A Message of Terrible Import
+--[[
 				q(40235),	-- Abrogator Arbitrator
 				q(38462),	-- Breaching the Barrier
-				qa(39313),	-- Bring the Reinforcements
 				qh(39315),	-- Bring the Reinforcements
 				qh(38001),	-- Commander in the Field!
-				qa(38446),	-- Commander in the Field!
 				q(38223),	-- Dark Ascension
 				q(38270),	-- Finding the Killer
 				q(38271),	-- Following the Bloody Path
@@ -31,374 +28,361 @@ _.Zones =
 				qa(39601),	-- I Sunk Your Battleship
 				q(39129),	-- Ill Tempered
 				qh(37934),	-- In, Through, and Beyond!
-				qa(38444),	-- In, Through, and Beyond!
 				qh(38599),	-- Infrastructure Improvements
 				qa(37839),	-- Light Be With You
 				q(39176),	-- Mastery Of Taladite
 				qh(37890),	-- Obstacle Course
-				qa(38436),	-- Obstacle Course
 				q(39395),	-- Oronok's Offer
 				q(39177),	-- Ruined Construct
-				qa(38603),	-- Setting the Signal
 				qh(39423),	-- Shipyard Report
-				qa(39422),	-- Shipyard Report
 				q(38273),	-- Spirits of the Bleeding Hollow
 				q(34366),	-- Tanaan 01: Front of the Portal
-				qa(38445),	-- The Assault Base
-				qh(37935),	-- The Assault Base					
-				qa(38581),	-- The Battle for the West
+				qh(37935),	-- The Assault Base
 				qh(38577),	-- The Battle for the West
 				q(38272),	-- The Bleeding Hollow
 				qh(38463),	-- The Cipher of Damnation
 				qa(39394),	-- The Cipher of Damnation
 				q(38274),	-- The Eye of Kilrogg
-				qa(38435),	-- The Invasion of Tanaan
 				qh(37889),	-- The Invasion of Tanaan
 				qh(35058),	-- The Mysterious Flask
-				q(39432),	-- Unknowable Power
 				q(40237),	-- Work Work Stoppage
 				qh(38989),	-- Your Orders, General?
-				qa(38996),	-- Your Orders, General?	
+				qa(38996),	-- Your Orders, General?
 --]]
-				{	-- A Little Wetwork
-					["questID"] = 39510,
+				q(39510, {	-- A Little Wetwork
 					["qg"] = 96014,	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7 },
+					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- A Little Wetwork
-					["questID"] = 39568,
+				}),
+				q(39568, {	-- A Little Wetwork
 					["qg"] = 90974,	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4 },
+					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on Ironhold Harbor
-					["questID"] = 37940,
-					["groups"] = {
-						{
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-							["criteriaID"] = 1,
-						},
-					},
-					["coord"] = { 61.5, 45.9 },
+				}),
+				q(38578, {	-- A Message of Terrible Import -- aa
+					["qg"] = 90584,	-- Goi'orsh
+					["coord"] = { 44.2, 41.5, 534 },
+				}),
+				q(37940, {	-- Assault on Ironhold Harbor
+					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on Ironhold Harbor
-					["questID"] = 37891,
-					["groups"] = {
-						{
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-							["criteriaID"] = 1,
-						},
+					["g"] = {
+						crit(1, {
+							["achievementID"] = 10075,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 58.5, 60.4 },
+				}),
+				q(37891, {	-- Assault on Ironhold Harbor
+					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on The Fel Forge
-					["questID"] = 38441,
-					["groups"] = {
-						{
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-							["criteriaID"] = 4,
-						},
+					["g"] = {
+						crit(1, {
+							["achievementID"] = 10068,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 61.5, 45.9 },
+				}),
+				q(38441, {	-- Assault on The Fel Forge
+					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on The Fel Forge
-					["questID"] = 38440,
-					["groups"] = {
-						{
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-							["criteriaID"] = 4,
-						},
+					["g"] = {
+						crit(4, {
+							["achievementID"] = 10075,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 58.5, 60.4 },
+				}),
+				q(38440, {	-- Assault on The Fel Forge
+					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on the Ruins of Kra'nak
-					["questID"] = 38252,
-					["groups"] = {
-						{
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-							["criteriaID"] = 2,
-						},
+					["g"] = {
+						crit(4, {
+							["achievementID"] = 10068,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 61.5, 45.9 },
+				}),
+				q(38252, {	-- Assault on the Ruins of Kra'nak
+					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on the Ruins of Kra'nak
-					["questID"] = 38250,
-					["groups"] = {
-						{
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-							["criteriaID"] = 2,
-						},
+					["g"] = {
+						crit(2, {
+							["achievementID"] = 10075,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 58.5, 60.4 },
+				}),
+				q(38250, {	-- Assault on the Ruins of Kra'nak
+					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on the Temple of Sha'naar
-					["questID"] = 38449,
-					["groups"] = {
-						{
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-							["criteriaID"] = 3,
-						},
+					["g"] = {
+						crit(2, {
+							["achievementID"] = 10068,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 61.5, 45.9 },
+				}),
+				q(38449, {	-- Assault on the Temple of Sha'naar
+					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on the Temple of Sha'naar
-					["questID"] = 37968,
-					["groups"] = {
-						{
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-							["criteriaID"] = 3,
-						},
+					["g"] = {
+						crit(3, {
+							["achievementID"] = 10075,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 58.5, 60.4 },
+				}),
+				q(37968, {	-- Assault on the Temple of Sha'naar
+					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on the Throne of Kil'jaeden
-					["questID"] = 38586,
-					["groups"] = {
-						{
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-							["criteriaID"] = 6,
-						},
+					["g"] = {
+						crit(3, {
+							["achievementID"] = 10068,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 61.5, 45.9 },
+				}),
+				q(38586, {	-- Assault on the Throne of Kil'jaeden
+					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Assault on the Throne of Kil'jaeden
-					["questID"] = 38585,
-					["groups"] = {
-						{
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-							["criteriaID"] = 6,
-						},
+					["g"] = {
+						crit(6, {
+							["achievementID"] = 10075,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 58.5, 60.4 },
+				}),
+				q(38585, {	-- Assault on the Throne of Kil'jaeden
+					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Battle At The Iron Front
-					["questID"] = 38047,
-					["groups"] = {
-						{
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-							["criteriaID"] = 5,
-						},
+					["g"] = {
+						crit(6, {
+							["achievementID"] = 10068,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 61.5, 45.9 },
+				}),
+				q(38047, {	-- Battle At The Iron Front
+					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Battle At The Iron Front
-					["questID"] = 38046,
-					["groups"] = {
-						{
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-							["criteriaID"] = 5,
-						},
+					["g"] = {
+						crit(5, {
+							["achievementID"] = 10075,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 58.5, 60.4 },
+				}),
+				q(38866, {	-- Battle At The Iron Front
+					["hordeQuestID"] = 38865,
+					["coord"] = { 58.5, 60.4, 534 },
+					["sourceQuests"] = {
+						38445,	-- The Assault Base (alliance)
+						37935,	-- The Assault Base (horde)
+					},
+				}),
+				q(38046, {	-- Battle At The Iron Front
+					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Bleeding the Bleeding Hollow
-					["questID"] = 38044,
-					["groups"] = {
-						{
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-							["criteriaID"] = 7,
-						},
+					["g"] = {
+						crit(5, {
+							["achievementID"] = 10068,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 61.5, 45.9 },
+				}),
+				q(38044, {	-- Bleeding the Bleeding Hollow
+					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Bleeding the Bleeding Hollow
-					["questID"] = 38045,
-					["groups"] = {
-						{
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-							["criteriaID"] = 7,
-						},
+					["g"] = {
+						crit(7, {
+							["achievementID"] = 10075,	-- Draenor's Last Stand
+						}),
 					},
-					["coord"] = { 58.5, 60.4 },
+				}),
+				q(38045, {	-- Bleeding the Bleeding Hollow
+					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Blood of Fallen Brothers
-					["questID"] = 39511,
+					["g"] = {
+						crit(7, {
+							["achievementID"] = 10068,	-- Draenor's Last Stand
+						}),
+					},
+				}),
+				q(39511, {	-- Blood of Fallen Brothers
 					["qg"] = 96014,	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7 },
+					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Bloodied Blades of Zeth'Gol
-					["questID"] = 39509,
+				}),
+				q(39509, {	-- Bloodied Blades of Zeth'Gol
 					["qg"] = 96014,	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7 },
+					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Bloodied Blades of Zeth'Gol
-					["questID"] = 39567,
+				}),
+				q(39567, {	-- Bloodied Blades of Zeth'Gol
 					["qg"] = 90974,	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4 },
+					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Breaking Their Fel Bonds
-					["questID"] = 39569,
+				}),
+				q(39313, {	-- Bring the Reinforcements
+					["qg"] = 90963,	-- Angar Steelbellow
+					["coord"] = { 58.1, 58.6, 534 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38445,	-- The Assault Base
+				}),
+				q(39569, {	-- Breaking Their Fel Bonds
 					["qg"] = 90974,	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4 },
+					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Bringing Down the Iron Horde
-					["questID"] = 39532,
+				}),
+				q(39532, {	-- Bringing Down the Iron Horde
 					["qg"] = 93396,	-- Nimi Brightcastle
-					["coord"] = { 59.6, 45.9 },
+					["coord"] = { 59.6, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Bringing Down the Iron Horde
-					["questID"] = 39586,
+				}),
+				q(39586, {	-- Bringing Down the Iron Horde
 					["qg"] = 96147,	-- Parvink
-					["coord"] = { 57.8, 59.8 },
+					["coord"] = { 57.8, 59.8, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Demonslayer of Tanaan
-					["questID"] = 39519,
+				}),
+				q(38446, {	-- Commander in the Field!
+					["qg"] = 91935,	-- Exarch Maladaar
+					["coord"] = { 9.8, 53.5, 534 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38581,	-- The Battle for the West
+				}),
+				q(39519, {	-- Demonslayer of Tanaan
 					["qg"] = 93396,	-- Nimi Brightcastle
-					["coord"] = { 59.6, 45.9 },
+					["coord"] = { 59.6, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Demonslayer of Tanaan
-					["questID"] = 39581,
+				}),
+				q(39581, {	-- Demonslayer of Tanaan
 					["qg"] = 96147,	-- Parvink
-					["coord"] = { 57.8, 59.8 },
+					["coord"] = { 57.8, 59.8, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Disarming Sha'naar
-					["questID"] = 39513,
+				}),
+				q(39513, {	-- Disarming Sha'naar
 					["qg"] = 96014,	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7 },
+					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Disarming Sha'naar
-					["questID"] = 39571,
+				}),
+				q(39571, {	-- Disarming Sha'naar
 					["qg"] = 90974,	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4 },
+					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Garrison Campaign: Onslaught at Auchindoun
-					["questID"] = 38415,
+				}),
+				q(38415, {	-- Garrison Campaign: Onslaught at Auchindoun
 					["qg"] = 90481,	-- Draka
-					["coord"] = { 61.4, 45.7 },
+					["coord"] = { 61.4, 45.7, 534 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Harnessing Their Power
-					["questID"] = 39514,
+				}),
+				q(39514, {	-- Harnessing Their Power
 					["qg"] = 96014,	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7 },
+					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Harnessing Their Power
-					["questID"] = 39573,
+				}),
+				q(39573, {	-- Harnessing Their Power
 					["qg"] = 90974,	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4 },
+					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Iskar's Tome of Shadows
-					["objectID"] = 240317,
-					["groups"] = {
-						{	-- Dark Ascension
-							["questID"] = 38223,
-							["groups"] = {
-								i(124557, {	-- Baleful Girdle
-									i(124593),	-- Axeclaw Belt
-									i(124592),	-- Bladefang Belt
-									i(124594),	-- Felbane Girdle
-									i(124591),	-- Felcast Cord
-								}),
-							},
-						},
+				}),
+				q(38444, {	-- In, Through, and Beyond!
+					["qg"] = 91923,	-- Exarch Naielle
+					["coord"] = { 69.4, 52.9, 534 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38436,	-- Obstacle Course
+				}),
+				o(240317, {	-- Iskar's Tome of Shadows
+					["g"] = {
+						q(38223, {	-- Dark Ascension
+							i(124557, {	-- Baleful Girdle
+								i(124593),	-- Axeclaw Belt
+								i(124592),	-- Bladefang Belt
+								i(124594),	-- Felbane Girdle
+								i(124591),	-- Felcast Cord
+							}),
+						}),
 					},
-				},
-				{	-- Pressing the Attack
-					["questID"] = 39526,
+				}),
+				q(38436, {	-- Obstacle Course
+					["qg"] = 91913,	-- Exarch Yrel
+					["coord"] = { 73.4, 71.1, 534 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38435,	-- The Invasion of Tanaan
+				}),
+				q(39526, {	-- Pressing the Attack
 					["qg"] = 96014,	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7 },
+					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Pressing the Attack
-					["questID"] = 39574,
+				}),
+				q(39574, {	-- Pressing the Attack
 					["qg"] = 90974,	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4 },
+					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Rumble in the Jungle
-					["questID"] = 39565,
+				}),
+				q(39565, {	-- Rumble in the Jungle
 					["qg"] = 92805,	-- Z'tenga the Walker
-					["coord"] = { 55.2, 74.7 },
+					["coord"] = { 55.2, 74.7, 534 },
 					["isWeekly"] = true,
-				},
-				{	-- Secrets of the Shadow Council
-					["questID"] = 39512,
+				}),
+				q(39512, {	-- Secrets of the Shadow Council
 					["qg"] = 96014,	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7 },
+					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Secrets of the Shadow Council
-					["questID"] = 39570,
+				}),
+				q(39570, {	-- Secrets of the Shadow Council
 					["qg"] = 90974,	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4 },
+					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- The Cipher of Damnation
-					["questID"] = 39394,
-					["groups"] = {
-						i(128225),	-- Empowered Apexis Fragment
-						i(124551, {	-- Baleful Tunic
-							i(124568),	-- Axeclaw Chestguard
-							i(124567),	-- Bladefang Chestguard
-							i(124569),	-- Felbane Breastplate
-							i(124570),	-- Felcast Robes
-						}),
-					},
+				}),
+				q(38603, {	-- Setting the Signal
+					["qg"] = 90963,	-- Angar Steelbellow
+					["coord"] = { 58.1, 58.5, 534 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38445,	-- The Assault Base
+				}),
+				q(39422, {	-- Shipyard Report
+					["qg"] = 90309,	-- Exarch Yrel
+					["coord"] = { 58.4, 60.3, 534 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38445,	-- The Assault Base
+				}),
+				q(38445, {	-- The Assault Base
+					["qg"] = 91923,	-- Exarch Naielle
+					["coord"] = { 62.4, 54.2, 534 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38444,	-- In, Through, and Beyond!
+				}),
+				q(38581, {	-- The Battle for the West
+					["qg"] = 90309,	-- Exarch Yrel
+					["coord"] = { 58.4, 60.3, 534 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38445,	-- The Assault Base
+				}),
+				q(39394, {	-- The Cipher of Damnation
 					["qg"] = 92120,	-- Oronok Torn-heart
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- The Cipher of Damnation
-					["questID"] = 38463,
-					["groups"] = {
+					["g"] = {
 						i(128225),	-- Empowered Apexis Fragment
 						i(124551, {	-- Baleful Tunic
 							i(124568),	-- Axeclaw Chestguard
@@ -407,12 +391,23 @@ _.Zones =
 							i(124570),	-- Felcast Robes
 						}),
 					},
+				}),
+				q(38463, {	-- The Cipher of Damnation
 					["qg"] = 92120,	-- Oronok Torn-heart
 					["races"] = HORDE_ONLY,
-				},
-				{	-- The Eye of Kilrogg
-					["questID"] = 38274,
-					["groups"] = {
+					["g"] = {
+						i(128225),	-- Empowered Apexis Fragment
+						i(124551, {	-- Baleful Tunic
+							i(124568),	-- Axeclaw Chestguard
+							i(124567),	-- Bladefang Chestguard
+							i(124569),	-- Felbane Breastplate
+							i(124570),	-- Felcast Robes
+						}),
+					},
+				}),
+				q(38274, {	-- The Eye of Kilrogg
+					["qg"] = 91324,	-- Braknoth
+					["g"] = {
 						i(124553, {	-- Baleful Gauntlets
 							i(124577),	-- Axeclaw Gauntlets
 							i(124576),	-- Bladefang Gauntlets
@@ -420,28 +415,38 @@ _.Zones =
 							i(124575),	-- Felcast Gloves
 						}),
 					},
-					["qg"] = 91324,	-- Braknoth
-				},
-				{	-- Tooth and Claw
-					["questID"] = 39529,
+				}),
+				q(39529, {	-- Tooth and Claw
 					["qg"] = 93396,	-- Nimi Brightcastle
-					["coord"] = { 59.6, 45.9 },
+					["coord"] = { 59.6, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Tooth and Claw
-					["questID"] = 39582,
+				}),
+				q(39582, {	-- Tooth and Claw
 					["qg"] = 96147,	-- Parvink
-					["coord"] = { 57.8, 59.8 },
+					["coord"] = { 57.8, 59.8, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				},
-				{	-- Unseen Influence
-					["questID"] = 39433,
+				}),
+				q(39432, {	-- Unknowable Power
 					["qg"] = 95424,	-- Dawn-Seeker Krisek
-					["coord"] = { 60.4, 46.6 },
+					["coords"] = {
+						{ 57.9, 59.3, 534 },	-- alliance
+					},
+					["sourceQuests"] = {
+						38445,	-- The Assault Base (alliance)
+						37935,	-- The Assault Base (horde)
+					},
+				}),
+				q(39433, {	-- Unseen Influence
+					["qg"] = 95424,	-- Dawn-Seeker Krisek
 					["isDaily"] = true,
-				},
+					["sourceQuest"] = 39432,	-- Unknowable Power
+					["coords"] = {
+						{ 57.9, 59.3, 534 },	-- alliance
+						{ 60.4, 46.6, 534 },	-- horde
+					},
+				}),
 			}),
 		}),
 	}),

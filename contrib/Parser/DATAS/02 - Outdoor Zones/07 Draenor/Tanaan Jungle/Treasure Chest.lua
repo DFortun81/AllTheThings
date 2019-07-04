@@ -31,14 +31,16 @@ _.Zones =
 					},
 				}),
 				o(241664, {	-- "Borrowed" Enchanted Spyglass
-					["coord"] = { 25.5, 50.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["questID"] = 38735,
+					["coord"] = { 25.3, 50.3, 534 },
+					["description"] = "At the top of the watchtower.",
 					["g"] = {
 						i(128222),	-- Smokeglass Lens Spyglass
 					},
 				}),
 				o(241563, {	-- Censer of Torment
 					["questID"] = 38682,
-					["coord"] = { 62.6, 20.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 62.6, 20.6, 534 },
 					["g"] = {
 						i(127401),	-- Tormented Skull
 					},
@@ -78,6 +80,13 @@ _.Zones =
 						i(128218),	-- Fel-Proof Goggles
 					},
 				}),
+				o(242649, {	-- Fel-Tainted Apexis Formation
+					["questID"] = 39075,
+					["coord"] = { 51.6, 32.6, 534 },
+					["g"] = {
+						currency(823),	-- Apexis Crystal x500
+					},
+				}),
 				o(241533, {	-- Forgotten Champion's Blade
 					["questID"] = 38657,
 					["coord"] = { 41.5, 73.2, 534 },
@@ -86,9 +95,9 @@ _.Zones =
 					},
 				}),
 				o(241671, {	-- Forgotten Shard of the Cipher
-					["description"] = "You need to be on the quest above or have completed it to loot this item.",
 					["questID"] = 38740,
 					["coord"] = { 63.3, 28.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["description"] = "You need to be on the quest above or have completed it to loot this item.",
 					["g"] = {
 						q(39394,{	-- The Cipher of Damnation 
 							i(128309),  -- Shard of Cyrukh Pet	
@@ -97,10 +106,14 @@ _.Zones =
 				}),
 				o(240580, {	-- Jewel of Hellfire
 					["questID"] = 38334,
-					["coord"] = { 28.7, 23.5, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 28.7, 23.5, 534 },
 					["g"] = {
 						i(127668),	-- Jewel of Hellfire Toy
 					},
+				}),
+				o(241561, {	-- Jewel of the Fallen Star
+					["questID"] = 38679,
+					["coord"] = { 58.5, 25.3, 534 },
 				}),
 				o(241434, {	-- Lodged Hunting Spear
 					["questID"] = 38593,
@@ -110,9 +123,9 @@ _.Zones =
 					},
 				}),
 				o(241565, {	-- Looted Bleeding Hollow Treasure
-					["description"] = "You need to be on the quest above or have completed it to loot this item.",
 					["questID"] = 38683,
 					["coord"] = { 26.7, 44.3, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["description"] = "You need to be on the quest above or have completed it to loot this item.",
 					["g"] = {
 						q(38560,{	-- Garrison Campaign: The Bane of the Bleeding Hollow
 							i(127709), 	-- Throbbing Blood Orb
@@ -187,7 +200,8 @@ _.Zones =
 					},
 				}),			
 				o(240003, {	-- Strange Sapphire
-					["coord"] = { 36.4, 43.5, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["questID"] = 37956,
+					["coord"] = { 36.4, 43.5, 534 },
 					["g"] = {
 						i(127397),	-- Splendid Skettis Sapphire
 					},
@@ -215,7 +229,8 @@ _.Zones =
 				}),
 				o(241522, {	-- The Perfect Blossom
 					["questID"] = 38639,
-					["coord"] = { 40.7, 75.5, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 40.8, 75.6, 534 },
+					["description"] = "Eat |cFFFFD700Mysterious Fruit|r until you get the |cFFFFD700Pollen Protection|r buff.",
 					["g"] = {				
 						i(127766),	-- The Perfect Blossom Toy
 					},
@@ -234,7 +249,6 @@ _.Zones =
 						i(127324),	-- Weathered Memento Axe 
 					},
 				}),
-				
 			}),
 		}),
 	}),

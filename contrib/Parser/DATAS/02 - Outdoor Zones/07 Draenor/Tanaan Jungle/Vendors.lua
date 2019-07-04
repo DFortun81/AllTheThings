@@ -76,9 +76,7 @@ _.Zones =
 							["questID"] = 39561,
 						}),
 						i(128440, {	-- Contract: Dowser Bigspark
-							["g"] = {
-								follower(581.2),	-- Dowser Bigspark
-							},
+							follower(581.2),	-- Dowser Bigspark
 						}),
 						i(128526),	-- Deathtusk Felboar
 						i(128475),	-- Empowered Augment Rune
@@ -115,9 +113,7 @@ _.Zones =
 							["questID"] = 39561,
 						}),
 						i(128445, {	-- Contract: Dowser Bigspark
-							["g"] = {
-								follower(581.1),	-- Dowser Bigspark
-							},
+							follower(581.1),	-- Dowser Bigspark
 						}),
 						i(128527),	-- Deathtusk Felboar
 						i(128482),	-- Empowered Augment Rune

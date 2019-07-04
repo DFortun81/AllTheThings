@@ -18,7 +18,7 @@ _.Zones =
 				n(92552, {	-- Belgork
 					["questID"] = 38609,
 					["isDaily"] = true,
-					["coord"] = { 35.6, 46.8, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 35.6, 46.8, 534 },
 					["g"] = {
 						i(127650), 	-- Belgork's Bastion 
 						i(126950, {	-- Equipment Blueprint: Bilge Pump
@@ -192,7 +192,7 @@ _.Zones =
 				n(90888, {	-- Drivnul
 					["questID"] = 38264,
 					["isDaily"] = true,
-					["coord"] = { 25.6, 46.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 25.7, 46.1, 534 },
 					["g"] = {
 						i(127298),	-- Blood Infused Leggings 
 					},
@@ -208,7 +208,7 @@ _.Zones =
 				n(98408, {	-- Fel Overseer Mudlump
 					["questID"] = 40107,
 					["isDaily"] = true,
-					["coord"] = { 87.5, 56.1, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 41.0, 56.3, 534 },
 					["g"] = {
 						i(129295),	-- Spike-Toed Booterang
 					},
@@ -216,7 +216,11 @@ _.Zones =
 				n(93168, {	-- Felbore
 					["questID"] = 38775,
 					["isDaily"] = true,
-					["coord"] = { 28.8, 51.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["description"] = "At the back of an underground cave.",
+					["coords"] = {
+						{ 31.1, 53.3, 534 },	-- cave entrance
+						{ 28.6, 50.8, 534 },	-- felbore
+					},
 					["g"] = {
 						i(127350),	-- Fel Imbued Band
 					},
@@ -341,7 +345,7 @@ _.Zones =
 				n(92517, {	-- Krell the Serene
 					["questID"] = 38605,
 					["isDaily"] = true,
-					["coord"] = { 52.0, 83.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 52.0, 83.9, 534 },
 					["g"] = {
 						i(127418),	-- Soothing Incense Brazier
 					},
@@ -436,7 +440,7 @@ _.Zones =
 				n(92197, {	-- Relgor
 					["questID"] = 38496,
 					["isDaily"] = true,
-					["coord"] = { 26.2, 54.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 26.3, 54.3, 534 },
 					["g"] = {
 						i(127335),	-- Relgor's Master Glaive 
 					},
@@ -465,7 +469,7 @@ _.Zones =
 				n(90885, {	-- Rogond the Tracker
 					["questID"] = 38263,
 					["isDaily"] = true,
-					["coord"] = { 20.6, 50.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 20.4, 49.5, 534 },
 					["g"] = {
 						i(127314),	-- Rogond's Tracking Shoulderguards 
 					},
@@ -612,7 +616,7 @@ _.Zones =
 				n(92574, {	-- Thromma the Gutslicer
 					["questID"] = 38620,
 					["isDaily"] = true,	
-					["coord"] = { 34.0, 44.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 34.0, 44.7, 534 },
 					["g"] = {
 						i(127327),	-- Thromma's Gutslicer 
 					},

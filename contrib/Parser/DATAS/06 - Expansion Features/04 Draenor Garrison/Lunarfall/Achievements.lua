@@ -81,17 +81,16 @@ _.ExpansionFeatures =
 						ach(9126),		-- Master Draftsman (40)
 						ach(9125),		-- Draftsman (20)
 					}),
-					{	-- In Pursuit of Gul'dan (Alliance) (Garrison)
+					ach(10067, {	-- In Pursuit of Gul'dan (Alliance) (Garrison)
 						-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
-						["achievementID"] = 10067,	-- In Pursuit of Gul'dan (Alliance) (Garrison)
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["g"] = {
-							{	-- All Hands On Deck
-								["achievementID"] = 10067,	-- In Pursuit of Gul'dan (Alliance) (Garrison)
-								["criteriaID"] = 1,		-- All Hands On Deck
-							},
+							crit(1, {	-- All Hands On Deck
+								["sourceQuest"] = 38259,	-- All Hands On Deck
+							}),
 						},
-					},
+					}),
 					ach(9097, {		-- Keepin' Busy
 						crit(1),		-- Mine
 						crit(2),		-- Fishing Shack

@@ -791,6 +791,12 @@ _.ExpansionFeatures =
 								i(118926),	-- Huge Pile of Skins
 							},
 						}),
+						q(33814, {	-- Fast Expansion
+							["qg"] = 81152,	-- Scout Valdez
+							["coord"] = { 31.0, 31.1, 582 },	-- Garrison lvl 3
+							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
+						}),
 						q(37239, {	-- Fate of the Fallen
 							["qg"] = 88003,	--  Cowled Ranger
 							["sourceQuests"] = { 37164 },	-- The Huntress
@@ -1794,6 +1800,10 @@ _.ExpansionFeatures =
 				n(-152, {	-- Garrison Campaign
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						q(34026, {	-- Garrison Campaign: Seismic Matters
+							["qg"] = 77209,	-- Baros Alexston
+							["coord"] = { 29.2, 33.1, 582 },	-- garrison lvl 3
+						}),
 						q(35195, {	-- Socrethar's Fury
 							i(119134),	-- Sargerei Disguise (TOY!)
 						}),
@@ -1813,7 +1823,12 @@ _.ExpansionFeatures =
 				}),
 				q(38259, {	-- All Hands on Deck
 					["qg"] = 92219,	-- King Varian Wrynn
+					["coord"] = { 32.0, 31.9, 582 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38258,	-- Nothing Remains
+					["g"] = {
+						garrisonBuilding(205),	-- Shipyard lvl 1
+					},
 				}),
 				q(34653,  {	-- Arakkoa Exodus
 					["sourceQuests"] = { 35554 },	-- News from Spires of Arak

@@ -35,9 +35,6 @@ _.NeverImplemented =
 		q(32922),	-- Short-Supply Reward (Oondasta bonus roll)
 		q(33225),	-- Short-Supply Reward (Ordos bonus roll)
 		q(32924),	-- Short-Supply Reward (Sha of Anger bonus roll)
-		q(39375),	-- Short-Supply Reward (looted first treasure chest in Tanaan Jungle)
-		q(39376),	-- Short-Supply Reward (looted second treasure chest in Tanaan Jungle)
-		q(39377),	-- Short-Supply Reward (looted third treasure chest in Tanaan Jungle)
 		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
 		q(35563),	-- Stratholme main gate bonus reward
 		q(35564),	-- Stratholme main gate bonus objective completed
@@ -158,7 +155,18 @@ _.NeverImplemented =
 		q(33167),	-- Tracking Quest: The Root of Darkness - Stone 3
 		q(33166),	-- Tracking Quest: The Root of Darkness - Stone 4
 		q(34896),	-- Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
-				
+		q(39434),	-- Short-Supply Reward
+		q(39375),	-- Short-Supply Reward
+		q(39376),	-- Short-Supply Reward
+		q(39377),	-- Short-Supply Reward
+		q(39378),	-- Short-Supply Reward
+		q(37969),	-- Tanaan Jungle - Vol'mar built
+		q(38433),	-- Tanaan Jungle - lion's watch built
+		q(39306),	-- Tanaan Jungle - Call to Arms chosen during "Bring the Reinforcements"
+		q(38836),	-- Tanaan Jungle - Aktar's Post visited
+		q(37887),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE
+		q(38583),	-- Tanaan Jungle - Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden
+		q(38587),	-- Tanaan Jungle - Assault on the Throne of Kil'jaeden - criteria complete
 		-------------------
 		--    Legion     --
 		-------------------
