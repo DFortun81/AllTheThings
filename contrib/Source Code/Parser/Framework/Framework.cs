@@ -133,81 +133,6 @@ namespace ATT
             // Check to make sure the data is valid.
             if (data == null) return;
 
-            // Check to see what patch this data was made relevant for.
-            if (data.TryGetValue("timeline", out object timelineRef) && !data.ContainsKey("u") && timelineRef is List<object> timeline)
-            {
-                // 2.0.1 or older items.
-                int removed = 0;
-                var index = 0;
-                long firstVersion = 0;
-                long lastVersion = 0;
-                foreach (var entry in timeline)
-                {
-                    var commandSplit = Convert.ToString(entry).Split(' ');
-                    var version = commandSplit[1].Split('.').ConvertVersion();
-                    if (version > lastVersion) lastVersion = version;
-                    switch (commandSplit[0])
-                    {
-                        case "created":
-                        {
-                            removed = 1;
-                            break;
-                        }
-                        case "added":
-                        {
-                            // If this is the first patch the thing was added.
-                            if (index == 0)
-                            {
-                                firstVersion = version;
-                                if (CURRENT_VERSION < version) removed = 1;
-                            }
-                            else
-                            {
-                                if (CURRENT_VERSION >= version) removed = 0;
-                            }
-                            break;
-                        }
-                        case "removed":
-                        {
-                            if (CURRENT_VERSION >= version) removed = 1;
-                            break;
-                        }
-                        case "blackmarket":
-                        {
-                            if (CURRENT_VERSION >= version) removed = 2;
-                            break;
-                        }
-                    }
-                    ++index;
-                }
-                if (removed > 0)
-                {
-                    if (removed == 2)
-                    {
-                        // Black Market
-                        data["u"] = 9;
-                    }
-                    else
-                    {
-                        // If the version is the same as the last version, mark it as "Never Implemented".
-                        if (firstVersion == lastVersion || firstVersion > CURRENT_VERSION) data["u"] = 1;
-                        else if(data.TryGetValue("b", out int b))
-                        {
-                            switch(b)
-                            {
-                                case 1:
-                                    data["u"] = 2;
-                                    break;
-                                default:
-                                    data["u"] = 7;
-                                    break;
-                            }
-                        }
-                        else data["u"] = 7;
-                    }
-                }
-            }
-
             // Assign the modID if not already specified.
             if (data.TryGetValue("modID", out object modIDRef))
             {
@@ -383,6 +308,81 @@ namespace ATT
                     }
                     names[id] = name;
                     data.Remove("name");
+                }
+            }
+
+            // Check to see what patch this data was made relevant for.
+            if (data.TryGetValue("timeline", out object timelineRef) && !data.ContainsKey("u") && timelineRef is List<object> timeline)
+            {
+                // 2.0.1 or older items.
+                int removed = 0;
+                var index = 0;
+                long firstVersion = 0;
+                long lastVersion = 0;
+                foreach (var entry in timeline)
+                {
+                    var commandSplit = Convert.ToString(entry).Split(' ');
+                    var version = commandSplit[1].Split('.').ConvertVersion();
+                    if (version > lastVersion) lastVersion = version;
+                    switch (commandSplit[0])
+                    {
+                        case "created":
+                            {
+                                removed = 1;
+                                break;
+                            }
+                        case "added":
+                            {
+                                // If this is the first patch the thing was added.
+                                if (index == 0)
+                                {
+                                    firstVersion = version;
+                                    if (CURRENT_VERSION < version) removed = 1;
+                                }
+                                else
+                                {
+                                    if (CURRENT_VERSION >= version) removed = 0;
+                                }
+                                break;
+                            }
+                        case "removed":
+                            {
+                                if (CURRENT_VERSION >= version) removed = 1;
+                                break;
+                            }
+                        case "blackmarket":
+                            {
+                                if (CURRENT_VERSION >= version) removed = 2;
+                                break;
+                            }
+                    }
+                    ++index;
+                }
+                if (removed > 0)
+                {
+                    if (removed == 2)
+                    {
+                        // Black Market
+                        data["u"] = 9;
+                    }
+                    else
+                    {
+                        // If the version is the same as the last version, mark it as "Never Implemented".
+                        if (firstVersion == lastVersion || firstVersion > CURRENT_VERSION) data["u"] = 1;
+                        else if (data.TryGetValue("b", out int b))
+                        {
+                            switch (b)
+                            {
+                                case 1:
+                                    data["u"] = 2;
+                                    break;
+                                default:
+                                    data["u"] = 7;
+                                    break;
+                            }
+                        }
+                        else data["u"] = 7;
+                    }
                 }
             }
         }
