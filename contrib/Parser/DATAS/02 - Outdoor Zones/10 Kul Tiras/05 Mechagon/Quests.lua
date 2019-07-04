@@ -638,6 +638,11 @@ _.Zones =
 						},
 					}),
 				}),
+				q(55880, {	-- Redistribution of Power
+					["qg"] = 150631,	-- Pristy Quickcharge
+					["coord"] = { 70.7, 38.4, 1462 },
+					["isDaily"] = true,
+				}),
 				q(55885, {	-- Rico's Rescue
 					["qg"] = 153324,	-- Rico Bugsnapper
 					["coord"] = { 82.9, 23.3, 1462 },

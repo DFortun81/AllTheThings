@@ -1231,15 +1231,15 @@ _.Zones =
 					55500,	-- Save a Friend (Horde)
 				},
 			}),
-			q(55786, {	-- Requisition: More Seaweek
+			q(55786, {	-- Requisition: More Seaweed
 				["isDaily"] = true,
 				["qgs"] = {
 					151763,	-- Isla (Alliance)
-				--	,	--  (Horde)
+					151614,	-- Nevin Tideheart (Horde)
 				},
 				["coords"] = {
 					{ 37.8, 55.4, 1355 },	-- Alliance
-				--	{ , , 1355 },	-- Horde
+					{ 50.4, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)
