@@ -415,21 +415,24 @@ _.Zones =
 						qh(54172),	-- The Azsharan Medallion
 					},
 				})),
-				{	-- The Legend of Mechagon
-					["questID"] = 55646,
+				q(51803, {	--The Kul Tiras Campaign
+					["qg"] = 135691,	-- Nathanos Blightcaller
+					["coord"] = { 58.4, 62.6, 1163 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(55646, {	-- The Legend of Mechagon
 					["qg"] = 152522,	-- Gazlowe
 					["coord"] = { 53.0, 43.2, 1165 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- The Missing Crew
-					["questID"] = 56379,
+				}),
+				q(56379, {	-- The Missing Crew
 					["qg"] = 135690,	-- Dread-Admiral Tattersail
 					["coord"] = { 58.4, 62.9, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						follower(1182),	-- Dread-Admiral Tattersail
 					},
-				},
+				}),
 				q(53761,  {	-- The Pirate's Treasure
 					["sourceQuests"] = { 53760 },	-- Unintended Consequences
 					["coord"] = { 20.0, 35.8, 896 },
@@ -440,13 +443,12 @@ _.Zones =
 					["coord"] = { 75.0, 77.7, 895 },
 					["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
 				}),
-				{	-- To Mechagon!
-					["questID"] = 55651,
+				q(55651, {	-- To Mechagon!
 					["qg"] = 152504,	-- Gazlowe
 					["coord"] = { 42.0, 87.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55650,	-- Only the Best Will Do
-				},
+				}),
 				qh(54276, {	-- Trouble in Gnomeregan
 					["isBreadcrumb"] = true,
 					["qg"] = 147641,	-- Radek Fuselock

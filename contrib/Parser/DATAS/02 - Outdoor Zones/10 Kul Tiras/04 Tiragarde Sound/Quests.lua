@@ -786,6 +786,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55630,	-- Let's Get It Started
 				},
+				-- Unsorted (everything in here is ... unsorted ^^)
+				q(51435, {	-- Swashbuckling in Style
+					["qg"] = 137675,	-- Shadow Hunter Ty'jin
+					["coord"] = { 89.4, 53.4, 895 },
+					["sourceQuest"] = 51421,	-- Shiver Me Timbers
+					["races"] = HORDE_ONLY,
+				}),
+				q(51436, {	-- Parleyin' Wit Pirates
+					["qg"] = 137675,	-- Shadow Hunter Ty'jin
+					["coord"] = { 89.4, 53.4, 895 },
+					["sourceQuest"] = 51435,	-- Swashbuckling in Style
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 		}),
 	}),
