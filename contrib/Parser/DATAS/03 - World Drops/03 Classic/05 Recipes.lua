@@ -32,25 +32,11 @@ _.WorldDrops =
 					i(9294),	-- Recipe: Wildvine Potion
 				}),
 				n(-181, { 	-- Blacksmithing
-					{	-- Plans: Bleakwood Hew
-						["itemID"] = 12817,	-- Plans: Bleakwood Hew
-						["spellID"] = 0,	-- This is available via 142346, need to delink the old plans from the recipe
-						["u"] = 1,
-					},
-					{	-- Plans: Blood Talon
-						["itemID"] = 12831,	-- Plans: Blood Talon
-						["u"] = 1,
-					},
 					{	-- Plans: Blue Glittering Axe
 						["itemID"] = 7992,	-- Plans: Blue Glittering Axe
 					},
 					{	-- Plans: Copper Chain Vest
 						["itemID"] = 3609,	-- Plans: Copper Chain Vest
-					},
-					{	-- Plans: Darkspear
-						["itemID"] = 12832,	-- Plans: Darkspear
-						["spellID"] = 0,	-- This is available via 142383, need to delink the old plans from the recipe
-						["u"] = 1,
 					},
 					{	-- Plans: Dawnbringer Shoulders
 						["itemID"] = 12698,	-- Plans: Dawnbringer Shoulders
@@ -99,10 +85,6 @@ _.WorldDrops =
 					},
 					{	-- Plans: Helm of the Great Chief
 						["itemID"] = 12716,	-- Plans: Helm of the Great Chief
-					},
-					{	-- Plans: Inlaid Thorium Hammer
-						["itemID"] = 12818,	-- Plans: Inlaid Thorium Hammer
-						["u"] = 1,
 					},
 					{	-- Plans: Invulnerable Mail
 						["itemID"] = 12728,	-- Plans: Invulnerable Mail

@@ -1850,9 +1850,25 @@ _.NeverImplemented =
 			un(1, i(152622)),	-- Recipe: Astral Mana Potion (Rank 3)
 		}),
 		n(-181, {	-- Blacksmithing
+			{	-- Plans: Bleakwood Hew
+				["itemID"] = 12817,	-- Plans: Bleakwood Hew
+				["u"] = 1,
+			},
+			{	-- Plans: Blood Talon
+				["itemID"] = 12831,	-- Plans: Blood Talon
+				["u"] = 1,
+			},
+			{	-- Plans: Darkspear
+				["itemID"] = 12832,	-- Plans: Darkspear
+				["u"] = 1,
+			},
 			{   	-- Plans: Elementium Shield Spike
 				["itemID"] = 66102,   	-- Plans: Elementium Shield Spike
 				["spellID"] = 0,  	 	-- This is available via the trainer, need to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Plans: Inlaid Thorium Hammer
+				["itemID"] = 12818,	-- Plans: Inlaid Thorium Hammer
 				["u"] = 1,
 			},
 		}),
