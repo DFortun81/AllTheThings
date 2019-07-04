@@ -1923,6 +1923,422 @@ _.NeverImplemented =
 				["itemID"] = 12764,	-- Thorium Greatsword
 				["u"] = 1,
 			},
+			{	-- Draenic Steel Dagger
+				["itemID"] = 108054,	-- Draenic Steel Dagger
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Dagger
+				["itemID"] = 108150,	-- Hardened Draenic Steel Dagger
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Dagger
+				["itemID"] = 108234,	-- Peerless Draenic Steel Dagger
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Dagger
+				["itemID"] = 108235,	-- Peerless Draenic Steel Dagger
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Dagger
+				["itemID"] = 108236,	-- Peerless Draenic Steel Dagger
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Dagger
+				["itemID"] = 108237,	-- Peerless Draenic Steel Dagger
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel War Axe
+				["itemID"] = 108046,	-- Draenic Steel War Axe
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel War Axe
+				["itemID"] = 108142,	-- Hardened Draenic Steel War Axe
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel War Axe
+				["itemID"] = 108226,	-- Peerless Draenic Steel War Axe
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel War Axe
+				["itemID"] = 108227,	-- Peerless Draenic Steel War Axe
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel War Axe
+				["itemID"] = 108228,	-- Peerless Draenic Steel War Axe
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel War Axe
+				["itemID"] = 108229,	-- Peerless Draenic Steel War Axe
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Mace
+				["itemID"] = 108058,	-- Draenic Steel Mace
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Mace
+				["itemID"] = 108154,	-- Hardened Draenic Steel Mace
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Mace
+				["itemID"] = 108238,	-- Peerless Draenic Steel Mace
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Mace
+				["itemID"] = 108239,	-- Peerless Draenic Steel Mace
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Mace
+				["itemID"] = 108240,	-- Peerless Draenic Steel Mace
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Mace
+				["itemID"] = 108241,	-- Peerless Draenic Steel Mace
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Bulwark
+				["itemID"] = 108062,	-- Draenic Steel Bulwark
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Bulwark
+				["itemID"] = 108158,	-- Hardened Draenic Steel Bulwark
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Bulwark
+				["itemID"] = 108242,	-- Peerless Draenic Steel Bulwark
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Bulwark
+				["itemID"] = 108243,	-- Peerless Draenic Steel Bulwark
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Bulwark
+				["itemID"] = 108244,	-- Peerless Draenic Steel Bulwark
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Bulwark
+				["itemID"] = 108245,	-- Peerless Draenic Steel Bulwark
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Helm
+				["itemID"] = 107971,	-- Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Helm
+				["itemID"] = 107979,	-- Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Helm
+				["itemID"] = 108081,	-- Hardened Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Helm
+				["itemID"] = 108165,	-- Peerless Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Helm
+				["itemID"] = 108181,	-- Peerless Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Helm
+				["itemID"] = 108189,	-- Peerless Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Helm
+				["itemID"] = 108197,	-- Peerless Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Helm
+				["itemID"] = 108205,	-- Peerless Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Helm
+				["itemID"] = 108213,	-- Peerless Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Helm
+				["itemID"] = 108221,	-- Peerless Draenic Steel Helm
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Shoulders
+				["itemID"] = 107973,	-- Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Shoulders
+				["itemID"] = 107981,	-- Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Shoulders
+				["itemID"] = 108083,	-- Hardened Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Shoulders
+				["itemID"] = 108167,	-- Peerless Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Shoulders
+				["itemID"] = 108183,	-- Peerless Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Shoulders
+				["itemID"] = 108191,	-- Peerless Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Shoulders
+				["itemID"] = 108199,	-- Peerless Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Shoulders
+				["itemID"] = 108207,	-- Peerless Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Shoulders
+				["itemID"] = 108215,	-- Peerless Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Shoulders
+				["itemID"] = 108223,	-- Peerless Draenic Steel Shoulders
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Chestplate
+				["itemID"] = 107968,	-- Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Chestplate
+				["itemID"] = 107976,	-- Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Chestplate
+				["itemID"] = 108078,	-- Hardened Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Chestplate
+				["itemID"] = 108162,	-- Peerless Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Chestplate
+				["itemID"] = 108178,	-- Peerless Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Chestplate
+				["itemID"] = 108186,	-- Peerless Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Chestplate
+				["itemID"] = 108194,	-- Peerless Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Chestplate
+				["itemID"] = 108202,	-- Peerless Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Chestplate
+				["itemID"] = 108210,	-- Peerless Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Chestplate
+				["itemID"] = 108218,	-- Peerless Draenic Steel Chestplate
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Guantlets
+				["itemID"] = 107970,	-- Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Guantlets
+				["itemID"] = 107978,	-- Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Guantlets
+				["itemID"] = 108080,	-- Hardened Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Guantlets
+				["itemID"] = 108164,	-- Peerless Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Guantlets
+				["itemID"] = 108180,	-- Peerless Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Guantlets
+				["itemID"] = 108188,	-- Peerless Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Guantlets
+				["itemID"] = 108196,	-- Peerless Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Guantlets
+				["itemID"] = 108204,	-- Peerless Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Guantlets
+				["itemID"] = 108212,	-- Peerless Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Guantlets
+				["itemID"] = 108220,	-- Peerless Draenic Steel Guantlets
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Wristwraps
+				["itemID"] = 107975,	-- Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Wristwraps
+				["itemID"] = 107983,	-- Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Wristwraps
+				["itemID"] = 108085,	-- Hardened Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Wristwraps
+				["itemID"] = 108169,	-- Peerless Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Wristwraps
+				["itemID"] = 108185,	-- Peerless Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Wristwraps
+				["itemID"] = 108193,	-- Peerless Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Wristwraps
+				["itemID"] = 108201,	-- Peerless Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Wristwraps
+				["itemID"] = 108209,	-- Peerless Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Wristwraps
+				["itemID"] = 108217,	-- Peerless Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Wristwraps
+				["itemID"] = 108225,	-- Peerless Draenic Steel Wristwraps
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Girdle
+				["itemID"] = 107974,	-- Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Girdle
+				["itemID"] = 107982,	-- Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Girdle
+				["itemID"] = 108084,	-- Hardened Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Girdle
+				["itemID"] = 108168,	-- Peerless Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Girdle
+				["itemID"] = 108184,	-- Peerless Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Girdle
+				["itemID"] = 108192,	-- Peerless Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Girdle
+				["itemID"] = 108200,	-- Peerless Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Girdle
+				["itemID"] = 108208,	-- Peerless Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Girdle
+				["itemID"] = 108216,	-- Peerless Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Girdle
+				["itemID"] = 108224,	-- Peerless Draenic Steel Girdle
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Legguards
+				["itemID"] = 107972,	-- Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Legguards
+				["itemID"] = 107980,	-- Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Legguards
+				["itemID"] = 108082,	-- Hardened Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Legguards
+				["itemID"] = 108166,	-- Peerless Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Legguards
+				["itemID"] = 108182,	-- Peerless Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Legguards
+				["itemID"] = 108190,	-- Peerless Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Legguards
+				["itemID"] = 108198,	-- Peerless Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Legguards
+				["itemID"] = 108206,	-- Peerless Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Legguards
+				["itemID"] = 108214,	-- Peerless Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Legguards
+				["itemID"] = 108222,	-- Peerless Draenic Steel Legguards
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Warboots
+				["itemID"] = 107969,	-- Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Draenic Steel Warboots
+				["itemID"] = 107977,	-- Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Hardened Draenic Steel Warboots
+				["itemID"] = 108079,	-- Hardened Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Warboots
+				["itemID"] = 108163,	-- Peerless Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Warboots
+				["itemID"] = 108179,	-- Peerless Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Warboots
+				["itemID"] = 108187,	-- Peerless Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Warboots
+				["itemID"] = 108195,	-- Peerless Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Warboots
+				["itemID"] = 108203,	-- Peerless Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Warboots
+				["itemID"] = 108211,	-- Peerless Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
+			{	-- Peerless Draenic Steel Warboots
+				["itemID"] = 108219,	-- Peerless Draenic Steel Warboots
+				["u"] = 1,	-- Never made it out of Beta
+			},
 		}),
 		n(-192, { 	-- Cooking
 			un(1, i(86512)),	-- Journeyman Cookbook
