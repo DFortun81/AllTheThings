@@ -91,136 +91,201 @@ _.ExpansionFeatures =
 				}),	--]]
 				n(-17, {	-- Quests
 					q(52749, {	-- The War Campaign
-						["isBreadcrumb"] = true,	-- for "The War Cache"
+						["qg"] = 120170,	-- Nathanos Blightcaller
 						["coord"] = { 40.1, 69.4, 1164 },	-- Dazar'alor
+						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
-						["qg"] = 120170,	-- Nathanos Blightcaller
 					}),
 					q(52746, {	-- The War Cache
-						["sourceQuests"] = { 52749 },	-- The War Campaign
+						["qg"] = 135691,	-- Nathanos Blightcaller
 						["coord"] = { 51.2, 100.8, 862 },	-- Zuldazar
+						["sourceQuest"] = 52749,	-- The War Campaign
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
-						["qg"] = 135691,	-- Nathanos Blightcaller
 					}),
-					
-					
-					
-					
-					
-					
-				--[[	["sourceQuests"] = {  },	-- 
-						["coord"] = { , ,  },
-						["races"] = HORDE_ONLY,
-						["qg"] = ,	-- 
+					q(53333, {	-- Time for War
+						["sourceQuest"] = 52746,	-- The War Cache
+						["lvl"] = 110,
 					}),
-					
-							--]]
-			
-				
-				
-				--	unsorted below this point
-				
-					{	-- Champion: Hobart Grapplehammer
-						["questID"] = 51987,
-						["qg"] = 137613,	-- Hobart Grapplehammer
-						["sourceQuests"] = { 51234 },	-- Krazzlefrazz Outpost
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							follower(1068),	-- Hobart Grapplehammer
-						},
-					},
-					{	-- Champion: Lilian Voss
-						["questID"] = 52861,
-						["qg"] = 141961,	-- Lilian Voss
-						["sourceQuests"] = { 53003 },	-- A Cycle of Hatred
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							follower(1062),	-- Lilian Voss
-						},
-					},
-					{	-- Champion: Rexxar
-						["questID"] = 51753,
-						["qg"] = 138876,	-- Rexxar
-						["sourceQuests"] = { 51696 },	-- Reclaiming What's Ours
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							follower(1069),	-- Rexxar
-						},
-					},
-					{	-- Champion: Shadow Hunter Ty'jin
-						["questID"] = 51975,
-						["qg"] = 137742,	-- Shadow Hunter Ty'jin
-						["sourceQuests"] = { 51438 },	-- Marking Our Territory
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							follower(1072),	-- Shadow Hunter Ty'jin
-						},
-					},
-					{	-- Mission from the Warchief
-						["questID"] = 51770,
+					q(51770, {	-- Mission from the Warchief
 						["qg"] = 135691,	-- Nathanos Blightcaller
-						["sourceQuests"] = { 53333 },	-- Time for War
+						["coord"] = { 58.4, 62.6, 1163 },
+						["sourceQuests"] = 53333,	-- Time for War
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							follower(1065),	-- Arcanist Valtrois
 						},
-					},
-					{	-- Return to Zuldazar (Tiragarde foothold)
-						["questID"] = 51984,
-						["qg"] = 137742,	-- Shadow Hunter Ty'jin
-						["sourceQuests"] = { 51975 },	-- Champion: Shadow Hunter Ty'jin
+					}),
+					q(51771, {	-- War of Shadows
+						["qg"] = 138708,	-- Garona Halforcen
+						["coord"] = { 58.4, 62.6, 1163 },
+						["sourceQuest"] = 51770,	-- Mission from the Warchief
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["lvl"] = 110,
+					}),
+					q(53079, {	-- Reinforcements
+						["qg"] = 138708,	-- Garona Halforceen
+						["coord"] = { 58.4, 62.6, 1163 },
+						["sourceQuest"] = 51771,	-- War of Shadows
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(51803, {	-- The Kul Tiras Campaign
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 1163 },
+						["sourceQuest"] = 51770,	-- Mission from the Warchief
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(53050, {	-- Deeper Into Kul Tiras
+						["description"] = "Automatically starts when you finish your first Foothold in Kul Tiras",
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(51979, {	-- The Ongoing Campaign
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 1163 },
+						["sourceQuest"] = 51771,	-- War of Shadows
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(53056, {	-- Pushing Our Influence
+						["description"] = "Automatically starts when you finish your second Foothold in Kul Tiras",
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(52444, {	-- The Final Foothold
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 1163 },
+						["sourceQuest"] = 53056,	-- Pushing Our Influence
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(51800, {	-- Foothold: Tiragarde Sound
+						["qg"] = 144630,	-- Kul Tiras Campaign (Table)
+						["coord"] = { 58.4, 62.6, 1163 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(51421, {	-- Shiver Me Timbers
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 1163 },
+						["sourceQuest"] = 51800,	-- Foothold: Tiragarde Sound
+						["races"] = HORDE_ONLY,
+					}),
+					q(51801, {	-- Foothold: Drustvar
+						["qg"] = 144630,	-- Kul Tiras Campaign (Table)
+						["coord"] = { 58.4, 62.6, 1163 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(51802, {	-- Foothold: Stormsong Valley
+						["qg"] = 144630,	-- Kul Tiras Campaign (Table)
+						["coord"] = { 58.4, 62.6, 1163 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+
+				
+				--	unsorted below this point
+				
+					q(51987, {	-- Champion: Hobart Grapplehammer
+						["qg"] = 137613,	-- Hobart Grapplehammer
+						["coord"] = { 33.6, 37.8, 896 },
+						["sourceQuest"] = 51234,	-- Krazzlefrazz Outpost
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							follower(1068),	-- Hobart Grapplehammer
+						},
+					}),
+					q(51985, {	-- Return to Zuldazar (Stormsong Valley Foothold)
+						["qg"] = 136683,	-- Trade Prince Gallywix
+						["coord"] = { 37.2, 27.0, 896 },
+						["sourceQuest"] = 51987,	-- Champion: Hobart Grapplehammer
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							i(163675),	-- Honorbound Centurion's Breastplate
 							i(163674),	-- Honorbound Centurion's Helmet
 							i(163673),	-- Honorbound Centurion's Pauldrons
 							-- TODO: Add non-plate rewards
 						},
-					},
-					{	-- Uniting Zandalar
-						["questID"] = 51916,	-- Uniting Zandalar
-						["qg"] = 135691,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
-						["groups"] = {
+					}),
+					q(51753, {	-- Champion: Rexxar
+						["qg"] = 138876,	-- Rexxar
+						["coord"] = { 52.0, 33.6, 942 },
+						["sourceQuest"] = 51696,	-- Reclaiming What's Ours
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							follower(1069),	-- Rexxar
+						},
+					}),
+					q(51986, {	-- Return to Zuldazar (Drusvar Foothold)
+						["qg"] = 138876,	-- Rexxar
+						["coord"] = { 52.0, 33.6, 942 },
+						["sourceQuest"] = 51753,	-- Champion: Rexxar
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(163675),	-- Honorbound Centurion's Breastplate
+							i(163674),	-- Honorbound Centurion's Helmet
+							i(163673),	-- Honorbound Centurion's Pauldrons
+							-- TODO: Add non-plate rewards
+						},
+					}),
+					q(51975, {	-- Champion: Shadow Hunter Ty'jin
+						["qg"] = 137742,	-- Shadow Hunter Ty'jin
+						["coord"] = { 87.2, 50.0, 895 },
+						["sourceQuest"] = 51438,	-- Marking Our Territory
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							follower(1072),	-- Shadow Hunter Ty'jin
+						},
+					}),
+					q(51984, {	-- Return to Zuldazar (Tiragarde Foothold)
+						["qg"] = 137742,	-- Shadow Hunter Ty'jin
+						["coord"] = { 87.2, 50.0, 895 },
+						["sourceQuest"] = 51975,	-- Champion: Shadow Hunter Ty'jin
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(163675),	-- Honorbound Centurion's Breastplate
+							i(163674),	-- Honorbound Centurion's Helmet
+							i(163673),	-- Honorbound Centurion's Pauldrons
+							-- TODO: Add non-plate rewards
+						},
+					}),
+					q(52861, {	-- Champion: Lilian Voss
+						["qg"] = 141961,	-- Lilian Voss
+						["coord"] = { 58.4, 62.6, 1163 },
+						["sourceQuest"] = 53003,	-- A Cycle of Hatred
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							follower(1062),	-- Lilian Voss
+						},
+					}),
+					q(51916, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 1163 },
+						["description"] = "This version of the quest is offered to the first character on your account to reach Friendly with Zandalari Empire, Talanji's Expedition, and Voldunai.	Your alts will get a different quest with the same name when they reach level 120, but all characters get credit for both quests.",
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["g"] = {
+							spell(273743),	-- World Quests (BFA)
 							i(141605),	-- Flight Master Whistle
 						},
-					--	["sourceQuests"] = {
-					--		52654,	-- The War Campaign
-					--	},
-						["lvl"] = 120,
+					}),
+					q(52451, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 1163 },
+						["description"] = "This version of the quest is offered to 120 alts that share an account with a character that already completed the original 'Uniting Zandalar'.	All characters get credit for both quests.",
 						["races"] = HORDE_ONLY,
-						-- NOTE!! Also grants credit for Horde Equivalent == 52451 and 51916
-						-- NOTE!! Also grants credit for Alliance Other Quest (Same Name) == 52450
-					},
+						["lvl"] = 120,
+						["g"] = {
+							spell(273743),	-- World Quests (BFA)
+							i(141605),	-- Flight Master Whistle
+						},
+					}),
 				}),
 			},
 		}),
 	}),
-};
---[[	n(-17, {	-- Quests
-		-- We need to attach lvl requirements in various areas here as the quests are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
-		["groups"] = {
-			q(53333, {	-- Time for War
-				["sourceQuests"] = { 52746 },	-- The War Cache
-				["lvl"] = 110,
-			}),
-			q(51770, {	-- Mission from the Warchief
-				["groups"] = {
-					follower(1065),	-- Arcanist Valtrois
-				},
-				["qg"] = 135691,	-- Nathanos Blighttcaller
-				["sourceQuests"] = { 53333 },	-- Time For War
-				["lvl"] = 110,
-			}),
-			q(51771, {	-- War of Shadows
-				["qg"] = 138708,	-- Garona Halforcen
-				["sourceQuests"] = { 51770 },	-- Mission from the Warchief
-				["lvl"] = 110,
-			}),
-			q(53079, {	-- Reinforcements
-				["qg"] = 138708,	-- Garona Halforceen
-				["sourceQuests"] = { 51771 },	-- War of Shadows
-				["lvl"] = 110,
-				
---]]		
+};		

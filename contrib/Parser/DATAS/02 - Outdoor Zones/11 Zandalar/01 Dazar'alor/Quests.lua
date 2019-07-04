@@ -415,11 +415,7 @@ _.Zones =
 						qh(54172),	-- The Azsharan Medallion
 					},
 				})),
-				q(51803, {	--The Kul Tiras Campaign
-					["qg"] = 135691,	-- Nathanos Blightcaller
-					["coord"] = { 58.4, 62.6, 1163 },
-					["races"] = HORDE_ONLY,
-				}),
+				
 				q(55646, {	-- The Legend of Mechagon
 					["qg"] = 152522,	-- Gazlowe
 					["coord"] = { 53.0, 43.2, 1165 },
@@ -457,15 +453,6 @@ _.Zones =
 					["qg"] = 146384,	-- Xal'atath
 					["coord"] = { 53.0, 13.6, 864 },
 					["sourceQuests"] = { 53762 },	-- The Tempest Crown
-				}),
-				q(52451, {	-- Uniting Zandalar
-					["qg"] = 135691,	-- Nathanos Blightcaller
-					["coord"] = { 58.4, 62.6, 1163 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						spell(273743),	-- World Quests (BFA)
-					},
 				}),
 				q(53817, {	-- Whatever Happened to Grizzek Fizzwrench?
 					["coord"] = { 58.5, 62.6, 1163 },
