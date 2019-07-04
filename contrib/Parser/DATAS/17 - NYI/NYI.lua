@@ -1871,6 +1871,42 @@ _.NeverImplemented =
 				["itemID"] = 12818,	-- Plans: Inlaid Thorium Hammer
 				["u"] = 1,
 			},
+			{	-- Inlaid Thorium Hammer
+				["itemID"] = 12772,	-- Inlaid Thorium Hammer
+				["u"] = 1,
+			},
+			{	-- Plans: Mithril Scale Gloves
+				["itemID"] = 7977,	-- Plans: Mithril Scale Gloves
+				["u"] = 1,
+			},
+			{	-- Mithril Scale Gloves
+				["itemID"] = 7925,	-- Mithril Scale Gloves
+				["u"] = 1,
+			},
+			{	-- Plans: Rough Bronze Bracers
+				["itemID"] = 5577,	-- Plans: Rough Bronze Bracers
+				["u"] = 1,
+			},
+			{	-- Rough Bronze Bracers
+				["itemID"] = 2867,	-- Rough Bronze Bracers
+				["u"] = 1,
+			},
+			{	-- Plans: Rune Edge
+				["itemID"] = 12826,	-- Plans: Rune Edge
+				["u"] = 1,
+			},
+			{	-- Rune Edge
+				["itemID"] = 12779,	-- Rune Edge
+				["u"] = 1,
+			},
+			{	-- Plans: Thorium Greatsword
+				["itemID"] = 12816,	-- Plans: Thorium Greatsword
+				["u"] = 1,
+			},
+			{	-- Thorium Greatsword
+				["itemID"] = 12764,	-- Thorium Greatsword
+				["u"] = 1,
+			},
 		}),
 		n(-192, { 	-- Cooking
 			un(1, i(86512)),	-- Journeyman Cookbook

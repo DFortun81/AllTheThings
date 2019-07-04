@@ -64,10 +64,6 @@ _.Craftables =
 				{	-- Ornate Thorium Handaxe
 					["itemID"] = 12773,	-- Ornate Thorium Handaxe
 				},
-				{	-- Rune Edge
-					["itemID"] = 12779,	-- Rune Edge
-					["u"] = 1,
-				},
 				{	-- Thick War Axe
 					["itemID"] = 3489,	-- Thick War Axe
 				},
@@ -161,10 +157,6 @@ _.Craftables =
 				{	-- Heavy Copper Maul
 					["itemID"] = 6214,	-- Heavy Copper Maul
 				},
-				{	-- Inlaid Thorium Hammer
-					["itemID"] = 12772,	-- Inlaid Thorium Hammer
-					["u"] = 1,
-				},
 				{	-- Solid Iron Maul
 					["itemID"] = 3851,	-- Solid Iron Maul
 				},
@@ -231,10 +223,6 @@ _.Craftables =
 				},
 				{	-- Moonsteel Broadsword
 					["itemID"] = 3853,	-- Moonsteel Broadsword
-				},
-				{	-- Thorium Greatsword
-					["itemID"] = 12764,	-- Thorium Greatsword
-					["u"] = 1,
 				},
 				{	-- Truesilver Champion
 					["itemID"] = 7960,	-- Truesilver Champion
@@ -523,10 +511,6 @@ _.Craftables =
 				{	-- Ironvine Gloves
 					["itemID"] = 22763,	-- Ironvine Gloves
 				},
-				{	-- Mithril Scale Gloves
-					["itemID"] = 7925,	-- Mithril Scale Gloves
-					["u"] = 1,
-				},
 				{	-- Ornate Mithril Gloves
 					["itemID"] = 7927,	-- Ornate Mithril Gloves
 					["u"] = 8,
@@ -573,10 +557,6 @@ _.Craftables =
 				},
 				{	-- Patterned Bronze Bracers
 					["itemID"] = 2868,	-- Patterned Bronze Bracers
-				},
-				{	-- Rough Bronze Bracers
-					["itemID"] = 2867,	-- Rough Bronze Bracers
-					["u"] = 1,
 				},
 				{	-- Runed Copper Bracers
 					["itemID"] = 2854,	-- Runed Copper Bracers

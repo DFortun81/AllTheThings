@@ -115,10 +115,6 @@ _.WorldDrops =
 					{	-- Plans: Mighty Iron Hammer
 						["itemID"] = 3608,	-- Plans: Mighty Iron Hammer
 					},
-					{	-- Plans: Mithril Scale Gloves
-						["itemID"] = 7977,	-- Plans: Mithril Scale Gloves
-						["u"] = 1,
-					},
 					{	-- Plans: Mithril Scale Shoulders
 						["itemID"] = 7991,	-- Plans: Mithril Scale Shoulders
 					},
@@ -151,14 +147,6 @@ _.WorldDrops =
 					},
 					{	-- Plans: Radiant Leggings
 						["itemID"] = 12713,	-- Plans: Radiant Leggings
-					},
-					{	-- Plans: Rough Bronze Bracers
-						["itemID"] = 5577,	-- Plans: Rough Bronze Bracers
-						["u"] = 1,
-					},
-					{	-- Plans: Rune Edge
-						["itemID"] = 12826,	-- Plans: Rune Edge
-						["u"] = 1,
 					},
 					{	-- Plans: Runed Copper Breastplate
 						["itemID"] = 2881,	-- Plans: Runed Copper Breastplate
@@ -204,10 +192,6 @@ _.WorldDrops =
 					},
 					{	-- Plans: Thorium Bracers
 						["itemID"] = 12684,	-- Plans: Thorium Bracers
-					},
-					{	-- Plans: Thorium Greatsword
-						["itemID"] = 12816,	-- Plans: Thorium Greatsword
-						["u"] = 1,
 					},
 					{	-- Plans: Thorium Helm
 						["itemID"] = 12694,	-- Plans: Thorium Helm
