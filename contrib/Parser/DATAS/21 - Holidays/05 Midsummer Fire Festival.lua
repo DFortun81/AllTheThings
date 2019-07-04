@@ -2067,7 +2067,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
 				["maps"] = { 26 },	-- The Hinterlands
 			}),
-			q(54742, {	-- Desecrate this Fire! — Tiragarde Sound
+			q(54736, {	-- Desecrate this Fire! — Tiragarde Sound
 				["isYearly"] = true,
 			--	["objectID"] = ,	-- Alliance Bonfire (objectID not listed on wowhead at time of implementation)
 				["coord"] = { 76.3, 49.7, 895 },
