@@ -214,6 +214,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51921, {	-- Slickspill
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50591, {	-- Son of a Bee
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -330,6 +334,10 @@ _.Zones =
 						["g"] = {
 							i(162295),	-- Recipe: Sailor's Pie [Rank 3]
 						},
+					}),
+					q(52352, {	-- Zeritarj
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 				}),
 				i(158092),	-- Colscale Cudgel

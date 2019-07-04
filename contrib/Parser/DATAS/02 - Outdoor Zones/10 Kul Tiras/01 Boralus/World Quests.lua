@@ -236,6 +236,12 @@ _.Zones =
 						["qg"] = 135808,	-- Provisioner Fray
 						["coord"] = { 67.61, 21.81, 1161 },
 					}),
+					q(52392, {	-- Work Order: Ultramarine Pigment
+						["requireSkill"] = 773,	-- Inscription
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52366, {	-- Work Order: XA-1000 Surface Skimmer
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

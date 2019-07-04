@@ -76,6 +76,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51709, {	-- Bombarbment
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51468, {	-- Bonesquall
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -253,6 +258,11 @@ _.Zones =
 					}),
 					q(51529, {	-- Talon
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54187, {	-- Tea for Two
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(54471, {	-- Tend the Wounded

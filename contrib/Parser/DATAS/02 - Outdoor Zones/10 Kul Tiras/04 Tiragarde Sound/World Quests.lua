@@ -77,6 +77,10 @@ _.Zones =
 						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
+					q(51654, {	-- Fowlmouth
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52120, {	-- Gnomish Azerite Extraction
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
