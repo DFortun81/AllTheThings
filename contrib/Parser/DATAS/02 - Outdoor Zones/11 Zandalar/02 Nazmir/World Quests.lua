@@ -16,6 +16,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(54684, {	-- Arcanist Quintril (Incursion WQ)
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50564, {	-- Azerite Infused Slag
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -104,6 +109,10 @@ _.Zones =
 							ach(13023),	-- It's Really Getting Out of Hand
 						},
 					}),
+					q(50499, {	-- Gwugnug
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51546, {	-- It's the Pits
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -113,7 +122,7 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(50506, {	--  King Kooba
+					q(50506, {	-- King Kooba
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -177,12 +186,27 @@ _.Zones =
 							ach(13022),	-- Revenge is Best Served Speedily
 						},
 					}),
+					q(54839, {	-- Rightfully Ours (Incursion WQ)
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50521, {	-- Scorched Earth
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51109, {	-- Scorched Earth [A]
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51628, {	-- Shell Game
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54539, {	-- Skirmish at the Span (Incursion WQ)
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50650, {	-- Smashing Zalamar
@@ -199,12 +223,34 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(55302, {	-- The Cycle of Life
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51856, {	-- The Underrot: Rotmaw
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50514, {	-- Totem Maker Jash'ga
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54500, {	-- Untapped Potential (Incursion WQ)
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50483, {	-- Underlord Xerxiz
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(50515, {	-- Venomjaw
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54020, {	-- Wet Work: Gloomwater Span (Incursion WQ)
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52426, {	-- Work Order: Battle Flag: Phalanx Defense
