@@ -1047,6 +1047,14 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 154245,	-- Apprentice Unato
 			}),
+			q(56159, {	-- Plug the Geysers
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 44.6, 45.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154244,	-- Apprentice Uataro
+			}),
 			q(56155, {	-- Plug the Geysers	-- similar name to another daily, but different ID across the map	-- also popped 55874. Possibly an equivalent hordeID?
 				["qg"] = 154247,	-- Apprentice Utapo
 				["coord"] = { 60.7, 50.2, 1355 },
@@ -1161,10 +1169,10 @@ _.Zones =
 			q(55720, {	-- Requisition: A Few Seaweed
 				["isDaily"] = true,
 				["qgs"] = {
-					151763,	-- Isla (alliance)
+					151763,	-- Isla (Alliance)
 				},
 				["coords"] = {
-					{ 37.7, 55.3, 1355 },	-- alliance
+					{ 37.7, 55.3, 1355 },	-- Alliance
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (Alliance)
@@ -1234,11 +1242,11 @@ _.Zones =
 			q(55787, {	-- Requisition: More Kelp Buds
 				["isDaily"] = true,
 				["qgs"] = {
-				--	153591,	-- Mikah Brewbelly (Alliance)		-- Need to be confirmed
+					153591,	-- Mikah Brewbelly (Alliance)
 					151635,	-- Slen Darkroe (Horde)
 				},
 				["coords"] = {
-				--	{ 40.0, 55.6, 1355 },	-- Alliance			-- Need to be confirmed	
+					{ 40.1, 55.6, 1355 },	-- Alliance
 					{ 50.8, 64.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {

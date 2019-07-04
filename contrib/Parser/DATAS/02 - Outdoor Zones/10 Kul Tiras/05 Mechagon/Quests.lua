@@ -23,8 +23,9 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(55672, {	-- A Historical Mess
-				--	["qg"] = 
+					["qg"] = 152633,	-- Sir Finley Mrrgglton
 					["isDaily"] = true,
+					["sourceQuests"] = { 55658 },	-- Clues Abound
 				}),
 				q(55697, {	-- A Little Leg Work
 					["qg"] = 150573,	-- Recycler Kerchunk
@@ -510,6 +511,16 @@ _.Zones =
 						}),
 					},
 				}),
+				q(56469, {	-- Pirates? I Hate Those Guys!
+				--	not sure if there are any SQs or anything else that needs to be added here.
+					["crs"] = { 150698 },	-- Congealed Oil (not sure if it drops from anything else)
+					["isDaily"] = true,
+					["g"] = {
+						crit(10, {	-- Pirates? I Hate Those Guys!
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
+				}),
 				q(56184, {	-- Pirates, Sea Monsters, Robots
 					["qg"] = 154335,	-- Dread Captain DeMeza
 					["coord"] = { 71.7, 38.8, 1462 },
@@ -610,7 +621,11 @@ _.Zones =
 							i(168264, {	-- Recycling Requisition(Green)
 								i(169167),	-- Blueprint: Orange Spraybot
 								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
-								i(167795),	-- Paint Vial: Copper Trim
+								i(167795, {	-- Paint Vial: Copper Trim
+									crit(4, {	-- Copper Trim
+										["achievementID"] = 13513,	-- Available in Eight Colors
+									}),
+								}),
 							}),
 							--[[i(168266, {	-- Strange Recycling Requisiton(Epic)
 								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
@@ -634,12 +649,20 @@ _.Zones =
 							i(168264, {	-- Recycling Requisition(Green)
 								i(169167),	-- Blueprint: Orange Spraybot
 								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
-								i(167795),	-- Paint Vial: Copper Trim
+								i(167795, {	-- Paint Vial: Copper Trim
+									crit(4, {	-- Copper Trim
+										["achievementID"] = 13513,	-- Available in Eight Colors
+									}),
+								}),
 							}),
 							i(168266, {	-- Strange Recycling Requisiton(Epic)
 								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
 								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
-								i(167795),	-- Paint Vial: Copper Trim
+								i(167795, {	-- Paint Vial: Copper Trim
+									crit(4, {	-- Copper Trim
+										["achievementID"] = 13513,	-- Available in Eight Colors
+									}),
+								}),
 								i(169689),	-- Vinyl: Mimiron's Brainstorm
 								i(169175),	-- Blueprint: Annoy-o-Tron Gang
 							}),
@@ -751,7 +774,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(56362, {	-- Rustbolt Requisitions: Tidespray Linen
+				q(56361, {	-- Rustbolt Requisitions: Tidespray Linen (A)
+					["qg"] = 149813,	-- Gila Crosswires
+					["coord"] = { 77.7, 40.4, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(56362, {	-- Rustbolt Requisitions: Tidespray Linen (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,
@@ -792,7 +821,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(56501, {	-- Taking the Air Out	— TO DO: figure out if you need to be on "A Direct Approach" to get this
+				q(56501, {	-- Taking the Air Out	— TO DO: figure out if you need to be on "A Direct Approach" to get this -- this quest wasn't offered my second time doing "A Direct Approach, but "Waste Not" was.  maybe they cycle?
 					["isDaily"] = true,
 					["itemID"] = 169682,	-- Venture Co. Rocket Box
 					["crs"] = {
@@ -925,6 +954,11 @@ _.Zones =
 				o(329641, {	-- Wanted: Junkbrat and Roadtrogg
 					["questID"] = 56434,
 					["coord"] = { 67.3, 35.2, 1462 },
+					["isDaily"] = true,
+				}),
+				q(56508, {	-- Waste Not (picked up while doing "A Direct Approach," but not sure if you have to be on that quest or what the SQs are)
+				--	["objectID"] = ,	-- not linked to quest
+					["coord"] = { 43.0, 41.1, 1462 },
 					["isDaily"] = true,
 				}),
 				q(55995, {	-- We Can Fix It

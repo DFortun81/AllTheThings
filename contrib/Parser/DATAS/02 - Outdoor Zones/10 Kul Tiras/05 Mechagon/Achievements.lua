@@ -67,7 +67,7 @@ _.Zones =
 					crit(37),	-- Re-Procedurally Generated Punchcard
 					crit(38),	-- S.P.A.R.E. Create
 				}),
-				ach(13474),	-- Junkyard Machinist
+				ach(13474),		-- Junkyard Machinist
 				ach(13686, {	-- Junkyard Melomanic
 					crit(1),	-- Ode to Tinkertown
 					crit(2),	-- Gnomeregan Forever
@@ -98,6 +98,40 @@ _.Zones =
 					crit(8),	-- Junkyard Melomanic
 					crit(9),	-- Making the Mount
 					crit(10),	-- Armed for Action
+				}),
+				ach(13556, {	-- Outside Influences
+					crit(1),	-- Aid From Nordrassil
+					crit(2),	-- One Gnome's Trash
+					crit(3),	-- Clues Abound
+					crit(4),	-- A Historical Mess
+					crit(5),	-- A Growing Mystery
+					crit(6),	-- Time for Heroics
+					crit(7),	-- Strange Discovery
+					crit(8),	-- Deck 'Em
+					crit(9),	-- Bugs, Lots of 'Em!
+					crit(10),	-- Pirates? I Hate Those Guys!
+					crit(11),	-- Rico's Rescue
+					crit(12),	-- The Other Place
+					crit(13),	-- The Final Act
+					crit(14),	-- Abduction Reduction
+					crit(15),	-- Aim High
+					crit(16),	-- Pirates, Sea Monsters, Robots
+					crit(17),	-- Go For the Gold
+					crit(18),	-- The Family Jewels
+					crit(19),	-- Adapt, Improve, Overcome!
+					crit(20),	-- Toys For Destruction
+					crit(21),	-- Playtime's Over
+					crit(22),	-- Battle Tested
+					crit(23),	-- Be Kind, Rewind
+					crit(24),	-- My Chickens are Not For Eating!
+					crit(25),	-- Off-the-Books Brawlin'
+					crit(26),	-- Discs of Norgannon
+					crit(27),	-- Toys Like Us
+					crit(28),	-- Waste Not
+					crit(29),	-- Taking The Air Out
+					crit(30),	-- Unprofitable Ventures
+					crit(31),	-- A Direct Approach
+					crit(32),	-- Cogfrenzy's Construction Frenzy
 				}),
 				ach(13489, {	-- Secret Fish of Mechagon
 					i(167698),	-- Secret Fish Goggles

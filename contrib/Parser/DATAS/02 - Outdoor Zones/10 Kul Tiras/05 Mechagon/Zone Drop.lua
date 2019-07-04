@@ -20,6 +20,7 @@ _.Zones =
 							i(169852),	-- Azeroth Mini: Blastatron
 							i(169851),	-- Azeroth Mini: Cogstar
 							i(169845),	-- Azeroth Mini: HK-8
+							i(169846),	-- Azeroth Mini: King Mechagon *slumber note: this pack dropped from a mechanized chest for me and contained this mini
 						}),
 					},
 				}),
