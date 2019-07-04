@@ -1291,6 +1291,12 @@ _.Zones =
 					55500,	-- Save A Friend (Horde)
 				},
 			}),
+			q(57326, {	-- Prototypes for Profit
+				["qg"] = 150567,	-- Gazlowe
+				["coord"] = { 74.0, 36.8, 1355 },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+			}),
 			q(57024, {	-- Rumors of Mechagon
 				["qg"] = 156187,	-- Disgruntled Laborer
 				["coord"] = { 48.4, 60.6, 1355 },
