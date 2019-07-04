@@ -1875,6 +1875,22 @@ _.NeverImplemented =
 				["itemID"] = 12772,	-- Inlaid Thorium Hammer
 				["u"] = 1,
 			},
+			{	-- Plans: Ironforge Chain
+				["itemID"] = 6734,	-- -- Plans: Ironforge Chain
+				["u"] = 1,	-- Never implemented
+			},
+			{	-- Ironforge Chain
+				["itemID"] = 6730,	-- Ironforge Chain
+				["u"] = 1,	-- Never implemented
+			},
+			{	-- Plans: Ironforge Gauntlets
+				["itemID"] = 6736,	-- Plans: Ironforge Gauntlets
+				["u"] = 1,	-- Never implemented
+			},
+			{	-- Ironforge Gauntlets
+				["itemID"] = 6733,	-- Ironforge Gauntlets
+				["u"] = 1,
+			},
 			{	-- Plans: Mithril Scale Gloves
 				["itemID"] = 7977,	-- Plans: Mithril Scale Gloves
 				["u"] = 1,

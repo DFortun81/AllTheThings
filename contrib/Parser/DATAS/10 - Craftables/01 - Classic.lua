@@ -413,10 +413,6 @@ _.Craftables =
 				{	-- Ironforge Breastplate
 					["itemID"] = 6731,	-- Ironforge Breastplate
 				},
-				{	-- Ironforge Chain
-					["itemID"] = 6730,	-- Ironforge Chain
-					["u"] = 1,	-- Never implemented
-				},
 				{	-- Ironvine Breastplate
 					["itemID"] = 22762,	-- Ironvine Breastplate
 				},
@@ -503,10 +499,6 @@ _.Craftables =
 				{	-- Icebane Gauntlets
 					["itemID"] = 22670,	-- Icebane Gauntlets
 					["u"] = 8,
-				},
-				{	-- Ironforge Gauntlets
-					["itemID"] = 6733,	-- Ironforge Gauntlets
-					["u"] = 1,
 				},
 				{	-- Ironvine Gloves
 					["itemID"] = 22763,	-- Ironvine Gloves

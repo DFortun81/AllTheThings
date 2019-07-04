@@ -98,14 +98,6 @@ _.WorldDrops =
 					{	-- Plans: Iron Shield Spike
 						["itemID"] = 6044,	-- Plans: Iron Shield Spike
 					},
-					{	-- Plans: Ironforge Chain
-						["itemID"] = 6734,	-- -- Plans: Ironforge Chain
-						["u"] = 1,	-- Never implemented
-					},
-					{	-- Plans: Ironforge Gauntlets
-						["itemID"] = 6736,	-- Plans: Ironforge Gauntlets
-						["u"] = 1,	-- Never implemented
-					},
 					{	-- Plans: Jade Serpentblade
 						["itemID"] = 3866,	-- Plans: Jade Serpentblade
 					},
