@@ -30,7 +30,10 @@ _.Craftables =
 			filter(21, {	-- 1H Axes
 				{	-- Black Planar Edge
 					["itemID"] = 28432,	-- Black Planar Edge
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Fel Edged Battleaxe
 					["itemID"] = 23542,	-- Fel Edged Battleaxe
@@ -40,18 +43,27 @@ _.Craftables =
 				},
 				{	-- Light Skyforged Axe
 					["itemID"] = 30072,	-- Light Skyforged Axe
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Stormforged Axe
 					["itemID"] = 30087,	-- Stormforged Axe
 				},
 				{	-- The Planar Edge
 					["itemID"] = 28431,	-- The Planar Edge
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Wicked Edge of the Planes
 					["itemID"] = 28433,	-- Wicked Edge of the Planes
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 			}),
 			filter(22, {	-- 2H Axes
@@ -60,18 +72,27 @@ _.Craftables =
 				},
 				{	-- Bloodmoon
 					["itemID"] = 28436,	-- Bloodmoon
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Felsteel Reaper
 					["itemID"] = 23543,	-- Felsteel Reaper
 				},
 				{	-- Lunar Crescent
 					["itemID"] = 28434,	-- Lunar Crescent
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Mooncleaver
 					["itemID"] = 28435,	-- Mooncleaver
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Skyforged Great Axe
 					["itemID"] = 30088,	-- Skyforged Great Axe
@@ -85,15 +106,24 @@ _.Craftables =
 			filter(23, {	-- 1H Maces
 				{	-- Dragonmaw
 					["itemID"] = 28438,	-- Dragonmaw
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Dragonstrike
 					["itemID"] = 28439,	-- Dragonstrike
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Drakefist Hammer
 					["itemID"] = 28437,	-- Drakefist Hammer
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Fel Iron Hammer
 					["itemID"] = 23498,	-- Fel Iron Hammer
@@ -111,7 +141,10 @@ _.Craftables =
 				},
 				{	-- Light Emberforged Hammer
 					["itemID"] = 30073,	-- Light Emberforged Hammer
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Runic Hammer
 					["itemID"] = 23544,	-- Runic Hammer
@@ -123,7 +156,10 @@ _.Craftables =
 				},
 				{	-- Deep Thunder
 					["itemID"] = 28441,	-- Deep Thunder
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Fel Hardened Maul
 					["itemID"] = 23546,	-- Fel Hardened Maul
@@ -141,11 +177,17 @@ _.Craftables =
 				},
 				{	-- Stormherald
 					["itemID"] = 28442,	-- Stormherald
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Thunder
 					["itemID"] = 28440,	-- Thunder
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 			}),
 			filter(25, {	-- 1H Swords
@@ -154,18 +196,27 @@ _.Craftables =
 				},
 				{	-- Blazefury
 					["itemID"] = 28427,	-- Blazefury
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Blazeguard
 					["itemID"] = 28426,	-- Blazeguard
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Felsteel Longblade
 					["itemID"] = 23540,	-- Felsteel Longblade
 				},
 				{	-- Fireguard
 					["itemID"] = 28425,	-- Fireguard
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Windforged Rapier
 					["itemID"] = 30077,	-- Windforged Rapier
@@ -185,15 +236,24 @@ _.Craftables =
 				},
 				{	-- Lionheart Blade
 					["itemID"] = 28428,	-- Lionheart Blade
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Lionheart Champion
 					["itemID"] = 28429,	-- Lionheart Champion
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Lionheart Executioner
 					["itemID"] = 28430,	-- Lionheart Executioner
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Stoneforged Claymore
 					["itemID"] = 30086,	-- Stoneforged Claymore
@@ -250,22 +310,34 @@ _.Craftables =
 				},
 				{	-- Breastplate of Kings
 					["itemID"] = 28483,	-- Breastplate of Kings
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.1.0.6655",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Bulwark of Kings
 					["itemID"] = 28484,	-- Bulwark of Kings
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Bulwark of the Ancient Kings
 					["itemID"] = 28485,	-- Bulwark of the Ancient Kings
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Earthpeace Breastplate
 					["itemID"] = 23527,	-- Earthpeace Breastplate
 				},
 				{	-- Embrace of the Twisting Nether
 					["itemID"] = 23565,	-- Embrace of the Twisting Nether
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.1.0.6692",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Enchanted Adamantite Breastplate
 					["itemID"] = 23509,	-- Enchanted Adamantite Breastplate
@@ -284,28 +356,40 @@ _.Craftables =
 				},
 				{	-- Heavy Earthforged Breastplate
 					["itemID"] = 30074,	-- Heavy Earthforged Breastplate
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Iceguard Breastplate
 					["itemID"] = 31369,	-- Iceguard Breastplate
 				},
 				{	-- Nether Plate Shirt
 					["itemID"] = 23563,	-- Nether Plate Shirt
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.1.0.6655",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Ragesteel Breastplate
 					["itemID"] = 23522,	-- Ragesteel Breastplate
 				},
 				{	-- Stormforged Hauberk
 					["itemID"] = 30076,	-- Stormforged Hauberk
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Sunblessed Breastplate
 					["itemID"] = 34379,	-- Sunblessed Breastplate
 				},
 				{	-- Twisting Nether Plate Shirt
 					["itemID"] = 23564,	-- Twisting Nether Plate Shirt
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Wildguard Breastplate
 					["itemID"] = 31364,	-- Wildguard Breastplate
@@ -401,7 +485,10 @@ _.Craftables =
 			n(-329, {		-- Legs
 				{	-- Earthforged Leggings
 					["itemID"] = 30069,	-- Earthforged Leggings
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Enchanted Adamantite Leggings
 					["itemID"] = 23512,	-- Enchanted Adamantite Leggings
@@ -426,7 +513,10 @@ _.Craftables =
 				},
 				{	-- Windforged Leggings
 					["itemID"] = 30070,	-- Windforged Leggings
-					["u"] = 5,
+					["timeline"] = {
+						"added 2.0.1.6180",
+						"removed 4.0.1.13287",
+					},
 				},
 			}),
 			n(-330, {		-- Feet
