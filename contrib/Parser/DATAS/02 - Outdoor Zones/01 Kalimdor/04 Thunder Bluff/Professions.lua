@@ -6,6 +6,52 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
 			n(-38, {	-- Professions
+				prof(171, {	-- Alchemy
+					n(-17, {	-- Quests
+						q(29481, {	-- Elixir Master
+							["qg"] = 3009,	-- Bena Winterhoof (Thunder Bluff)
+							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy	
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
+						}),
+						q(29067, {	-- Potion Master
+							["qg"] = 3009,	-- Bena Winterhoof (Thunder Bluff)
+							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},	
+						}),
+						q(29482, {	-- Transmutation Master
+							["qg"] = 3009,	-- Bena Winterhoof (Thunder Bluff)
+							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
+						}),
+					}),
+				}),
 				prof(185, {	-- Cooking
 					n(-4, {	-- Achievements
 						ach(5843, {	-- Let's Do Lunch: Thunder Bluff

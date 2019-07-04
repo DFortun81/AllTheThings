@@ -6,6 +6,52 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(89, {	-- Darnassus			
 			n(-38, {	-- Professions
+				prof(171, {	-- Alchemy
+					n(-17, {	-- Quests
+						q(29481, {	-- Elixir Master
+							["qg"] = 4160,	-- Ainethil (Darnassus)
+							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
+						}),
+						q(29067, {	-- Potion Master
+							["qg"] = 4160,	-- Ainethil (Darnassus)
+							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},	
+						}),
+						q(29482, {	-- Transmutation Master
+							["qg"] = 4160,	-- Ainethil (Darnassus)
+							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
+						}),
+					}),
+				}),
 				prof(185, {	-- Cooking
 					n(-4, {	-- Achievements
 						ach(5842, {	-- Let's Do Lunch: Darnassus

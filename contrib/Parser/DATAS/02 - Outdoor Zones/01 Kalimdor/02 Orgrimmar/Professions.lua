@@ -9,11 +9,10 @@ _.Zones =
 				prof(171, {	-- Alchemy
 					n(-17, {	-- Quests
 						q(29481, {	-- Elixir Master
-							["qg"] = 3347,	-- Yelmak
-							["coord"] = { 55.6, 45.8, 85 },
+							["qg"] = 3347,	-- Yelmak (Orgrimmar)
+							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
-							["races"] = HORDE_ONLY,	
+							["requireSkill"] = 171,	-- Alchemy	
 							["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
@@ -24,11 +23,10 @@ _.Zones =
 							},								
 						}),
 						q(29067, {	-- Potion Master
-							["qg"] = 3347,	-- Yelmak
-							["coord"] = { 55.6, 45.8, 85 },
+							["qg"] = 3347,	-- Yelmak (Orgrimmar)
+							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["races"] = HORDE_ONLY,
 							["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
@@ -39,11 +37,10 @@ _.Zones =
 							},	
 						}),
 						q(29482, {	-- Transmutation Master
-							["qg"] = 3347,	-- Yelmak
-							["coord"] = { 55.6, 45.8, 85 },
+							["qg"] = 3347,	-- Yelmak (Orgrimmar)
+							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["races"] = HORDE_ONLY,
 							["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master

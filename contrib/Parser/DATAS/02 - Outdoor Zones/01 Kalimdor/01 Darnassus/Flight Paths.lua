@@ -9,6 +9,7 @@ _.Zones =
 				fp(457, {	-- Darnassus, Teldrassil [Alliance]
 					["description"] = "Darnassus, Teldrassil - Alliance Only",
 					["coord"] = { 36.61, 47.82, 89 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 		}),

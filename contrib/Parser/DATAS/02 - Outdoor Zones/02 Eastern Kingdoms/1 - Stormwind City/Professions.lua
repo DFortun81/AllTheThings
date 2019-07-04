@@ -6,6 +6,52 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
 			n(-38, {	-- Profession
+				prof(171, {	-- Alchemy
+					n(-17, {	-- Quests
+						q(29481, {	-- Elixir Master
+							["qg"] = 5499,	-- Lilyssia Nightbreeze (Stormwind)
+							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
+						}),
+						q(29067, {	-- Potion Master
+							["qg"] = 5499,	-- Lilyssia Nightbreeze (Stormwind)
+							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},	
+						}),
+						q(29482, {	-- Transmutation Master
+							["qg"] = 5499,	-- Lilyssia Nightbreeze (Stormwind)
+							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
+						}),
+					}),
+				}),
 				prof(164, {	-- Blacksmithing
 					n(-17, {	-- Quests
 						q(2759, {	-- In Search of Galvan

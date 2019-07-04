@@ -6,6 +6,52 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(87, {	-- Ironforge
 			n(-38, {	-- Profession
+				prof(171, {	-- Alchemy
+					n(-17, {	-- Quests
+						q(29481, {	-- Elixir Master
+							["qg"] = 5177,	-- Tally Berryfizz (Ironfoge)
+							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
+						}),
+						q(29067, {	-- Potion Master
+							["qg"] = 5177,	-- Tally Berryfizz (Ironfoge)
+							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},	
+						}),
+						q(29482, {	-- Transmutation Master
+							["qg"] = 5177,	-- Tally Berryfizz (Ironfoge)
+							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
+							["description"] = "Requires 300 Classic Alchemy.",
+							["requireSkill"] = 171,	-- Alchemy
+							["altQuests"] = {
+								29481,	-- Elixir Master
+								29067,	-- Potion Master
+								29482,	-- Transmutation Master
+								10902,	-- Elixir Master (Removed)
+								10897,	-- Potion Master (Removed)
+								10899,	-- Transmutation Master (Removed)
+							},								
+						}),
+					}),
+				}),
 				prof(185, {	-- Cooking
 					n(-4, {	-- Achievements
 						ach(5841, {	-- Let's Do Lunch: Ironforge
