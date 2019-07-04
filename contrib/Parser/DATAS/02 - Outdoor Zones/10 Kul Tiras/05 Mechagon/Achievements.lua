@@ -35,8 +35,8 @@ _.Zones =
 					crit(5),	-- Canned Minnows
 					crit(6),	-- Vaultbot Key
 					crit(7),	-- Emergency Repair Kit
-					crit(7),	-- Emergency Powerpack
-					crit(8),	-- Mechano-Treat
+					crit(8),	-- Emergency Powerpack
+					crit(9),	-- Mechano-Treat
 					crit(10),	-- Ultrasafe Transporter: Mechagon
 					crit(11),	-- G99.99 Landshark
 					crit(12),	-- Rustbolt Gramophone

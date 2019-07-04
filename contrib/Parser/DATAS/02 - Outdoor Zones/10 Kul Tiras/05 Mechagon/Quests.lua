@@ -387,7 +387,6 @@ _.Zones =
 				q(55213, {	-- Energy Cells for Everyone
 					["qg"] = 150631,	-- Pristy Quickcharge
 					["coord"] = { 70.7, 38.4, 1462 },
-					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(56168, {	-- Factory Refurbished
