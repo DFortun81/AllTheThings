@@ -1850,6 +1850,7 @@ _.NeverImplemented =
 			un(1, i(152622)),	-- Recipe: Astral Mana Potion (Rank 3)
 		}),
 		n(-181, {	-- Blacksmithing
+			-- Classic
 			{	-- Plans: Bleakwood Hew
 				["itemID"] = 12817,	-- Plans: Bleakwood Hew
 				["u"] = 1,
@@ -1860,11 +1861,6 @@ _.NeverImplemented =
 			},
 			{	-- Plans: Darkspear
 				["itemID"] = 12832,	-- Plans: Darkspear
-				["u"] = 1,
-			},
-			{   	-- Plans: Elementium Shield Spike
-				["itemID"] = 66102,   	-- Plans: Elementium Shield Spike
-				["spellID"] = 0,  	 	-- This is available via the trainer, need to delink the unused plans from the recipe
 				["u"] = 1,
 			},
 			{	-- Plans: Inlaid Thorium Hammer
@@ -1923,6 +1919,106 @@ _.NeverImplemented =
 				["itemID"] = 12764,	-- Thorium Greatsword
 				["u"] = 1,
 			},
+			
+			-- Burning Crusade
+			{   	-- Plans: Elementium Shield Spike
+				["itemID"] = 66102,   	-- Plans: Elementium Shield Spike
+				["spellID"] = 0,  	 	-- This is available via the trainer, need to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			
+			-- Mists of Pandaria
+			{	-- Lightsteel Helm
+				["itemID"] = 82911,	-- Lightsteel Helm
+				["u"] = 1,
+			},
+			{	-- Lightsteel Shoulders
+				["itemID"] = 82912,	-- Lightsteel Shoulders
+				["u"] = 1,
+			},
+			{	-- Lightsteel Breastplate
+				["itemID"] = 82913,	-- Lightsteel Breastplate
+				["u"] = 1,
+			},
+			{	-- Lightsteel Gauntlets
+				["itemID"] = 82914,	-- Lightsteel Gauntlets
+				["u"] = 1,
+			},
+			{	-- Lightsteel Belt
+				["itemID"] = 82918,	-- Lightsteel Belt
+				["u"] = 1,
+			},
+			{	-- Lightsteel Legplates
+				["itemID"] = 82915,	-- Lightsteel Legplates
+				["u"] = 1,
+			},
+			{	-- Lightsteel Boots
+				["itemID"] = 82917,	-- Lightsteel Boots
+				["u"] = 1,
+			},
+			{	-- Masterwork Lightsteel Helm
+				["itemID"] = 82935,	-- Masterwork Lightsteel Helm
+				["u"] = 1,
+			},
+			{	-- Masterwork Lightsteel Shoulders
+				["itemID"] = 82936,	-- Masterwork Lightsteel Shoulders
+				["u"] = 1,
+			},
+			{	-- Masterwork Lightsteel Breastplate
+				["itemID"] = 82937,	-- Masterwork Lightsteel Breastplate
+				["u"] = 1,
+			},
+			{	-- Masterwork Lightsteel Bracers
+				["itemID"] = 82940,	-- Masterwork Lightsteel Bracers
+				["u"] = 1,
+			},
+			{	-- Masterwork Lightsteel Gauntlets
+				["itemID"] = 82938,	-- Masterwork Lightsteel Gauntlets
+				["u"] = 1,
+			},
+			{	-- Masterwork Lightsteel Belt
+				["itemID"] = 82942,	-- Masterwork Lightsteel Belt
+				["u"] = 1,
+			},
+			{	-- Masterwork Lightsteel Legplates
+				["itemID"] = 82939,	-- Masterwork Lightsteel Legplates
+				["u"] = 1,
+			},
+			{	-- Masterwork Lightsteel Boots
+				["itemID"] = 82941,	-- Masterwork Lightsteel Boots
+				["u"] = 1,
+			},
+			{	-- Spiritguard Helm
+				["itemID"] = 80811,	-- Spiritguard Helm
+				["u"] = 1,
+			},
+			{	-- Spiritguard Shoulders
+				["itemID"] = 82896,	-- Spiritguard Shoulders
+				["u"] = 1,	-- Never Available
+			},
+			{	-- Spiritguard Breastplate
+				["itemID"] = 82897,	-- Spiritguard Breastplate
+				["u"] = 1,
+			},
+			{	-- Spiritguard Gauntlets
+				["itemID"] = 82898,	-- Spiritguard Gauntlets
+				["u"] = 1,
+			},
+			{	-- Spiritguard Belt
+				["itemID"] = 82902,	-- Spiritguard Belt
+				["u"] = 1,
+			},
+			{	-- Spiritguard Legplates
+				["itemID"] = 82899,	-- Spiritguard Legplates
+				["u"] = 1,
+			},
+			{	-- Spiritguard Boots
+				["itemID"] = 82901,	-- Spiritguard Boots
+				["u"] = 1,
+			},
+			
+			
+			-- Warlords of Draenor
 			{	-- Draenic Steel Dagger
 				["itemID"] = 108054,	-- Draenic Steel Dagger
 				["u"] = 1,	-- Never made it out of Beta

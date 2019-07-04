@@ -217,20 +217,8 @@ _.Craftables =
 				{	-- Haunted Steel Headguard
 					["itemID"] = 94268,	-- Haunted Steel Headguard
 				},
-				{	-- Lightsteel Helm
-					["itemID"] = 82911,	-- Lightsteel Helm
-					["u"] = 1,
-				},
-				{	-- Masterwork Lightsteel Helm
-					["itemID"] = 82935,	-- Masterwork Lightsteel Helm
-					["u"] = 1,
-				},
 				{	-- Masterwork Spiritguard Helm
 					["itemID"] = 82919,	-- Masterwork Spiritguard Helm
-				},
-				{	-- Spiritguard Helm
-					["itemID"] = 80811,	-- Spiritguard Helm
-					["u"] = 1,
 				},
 			}),
 			n(-321, {		-- Shoulders
@@ -270,20 +258,8 @@ _.Craftables =
 				{	-- Ghost-Forged Shoulders [Blue]
 					["itemID"] = 82928,	-- Ghost-Forged Shoulders
 				},
-				{	-- Lightsteel Shoulders
-					["itemID"] = 82912,	-- Lightsteel Shoulders
-					["u"] = 1,
-				},
-				{	-- Masterwork Lightsteel Shoulders
-					["itemID"] = 82936,	-- Masterwork Lightsteel Shoulders
-					["u"] = 1,
-				},
 				{	-- Masterwork Spiritguard Shoulders
 					["itemID"] = 82920,	-- Masterwork Spiritguard Shoulders
-				},
-				{	-- Spiritguard Shoulders
-					["itemID"] = 82896,	-- Spiritguard Shoulders
-					["u"] = 1,	-- Never Available
 				},
 			}),
 			n(-323, {		-- Chest
@@ -332,16 +308,8 @@ _.Craftables =
 				{	-- Ghost-Forged Breastplate [Blue]
 					["itemID"] = 82929,	-- Ghost-Forged Breastplate
 				},
-				{	-- Lightsteel Breastplate
-					["itemID"] = 82913,	-- Lightsteel Breastplate
-					["u"] = 1,
-				},
 				{	-- Living Steel Breastplate
 					["itemID"] = 82977,	-- Living Steel Breastplate
-				},
-				{	-- Masterwork Lightsteel Breastplate
-					["itemID"] = 82937,	-- Masterwork Lightsteel Breastplate
-					["u"] = 1,
 				},
 				{	-- Masterwork Spiritguard Breastplate
 					["itemID"] = 82921,	-- Masterwork Spiritguard Breastplate
@@ -349,15 +317,11 @@ _.Craftables =
 				{	-- Ornate Battleplate of the Master
 					["itemID"] = 87402,	-- Ornate Battleplate of the Master
 				},
-				{	-- Spiritguard Breastplate
-					["itemID"] = 82897,	-- Spiritguard Breastplate
-					["u"] = 1,
-				},
 				{	-- Unyielding Bloodplate
 					["itemID"] = 87405,	-- Unyielding Bloodplate
 				},
 			}),
-			n(-327, {	-- Hands
+			n(-327, {		-- Hands
 				{	-- Bloodforged Warfists
 					["itemID"] = 87407,	-- Bloodforged Warfists
 				},
@@ -409,23 +373,11 @@ _.Craftables =
 				{	-- Ghost-Forged Gauntlets [Blue]
 					["itemID"] = 82930,	-- Ghost-Forged Gauntlets
 				},
-				{	-- Lightsteel Gauntlets
-					["itemID"] = 82914,	-- Lightsteel Gauntlets
-					["u"] = 1,
-				},
 				{	-- Living Steel Gauntlets
 					["itemID"] = 82978,	-- Living Steel Gauntlets
 				},
-				{	-- Masterwork Lightsteel Gauntlets
-					["itemID"] = 82938,	-- Masterwork Lightsteel Gauntlets
-					["u"] = 1,
-				},
 				{	-- Masterwork Spiritguard Gauntlets
 					["itemID"] = 82922,	-- Masterwork Spiritguard Gauntlets
-				},
-				{	-- Spiritguard Gauntlets
-					["itemID"] = 82898,	-- Spiritguard Gauntlets
-					["u"] = 1,
 				},
 			}),
 			n(-326, {		-- Wrist
@@ -467,10 +419,6 @@ _.Craftables =
 				},
 				{	-- Lightsteel Bracers
 					["itemID"] = 82916,	-- Lightsteel Bracers
-				},
-				{	-- Masterwork Lightsteel Bracers
-					["itemID"] = 82940,	-- Masterwork Lightsteel Bracers
-					["u"] = 1,
 				},
 				{	-- Masterwork Spiritguard Bracers
 					["itemID"] = 82924,	-- Masterwork Spiritguard Bracers
@@ -522,23 +470,11 @@ _.Craftables =
 				{	-- Ghost-Forged Belt [Blue]
 					["itemID"] = 82934,	-- Ghost-Forged Belt
 				},
-				{	-- Lightsteel Belt
-					["itemID"] = 82918,	-- Lightsteel Belt
-					["u"] = 1,
-				},
-				{	-- Masterwork Lightsteel Belt
-					["itemID"] = 82942,	-- Masterwork Lightsteel Belt
-					["u"] = 1,
-				},
 				{	-- Masterwork Spiritguard Belt
 					["itemID"] = 82926,	-- Masterwork Spiritguard Belt
 				},
 				{	-- Protector's Trillium Waistguard
 					["itemID"] = 98615,	-- Protector's Trillium Waistguard
-				},
-				{	-- Spiritguard Belt
-					["itemID"] = 82902,	-- Spiritguard Belt
-					["u"] = 1,
 				},
 			}),
 			n(-329, {		-- Legs
@@ -584,23 +520,11 @@ _.Craftables =
 				{	-- Ghost-Forged Legplates [Blue]
 					["itemID"] = 82931,	-- Ghost-Forged Legplates
 				},
-				{	-- Lightsteel Legplates
-					["itemID"] = 82915,	-- Lightsteel Legplates
-					["u"] = 1,
-				},
-				{	-- Masterwork Lightsteel Legplates
-					["itemID"] = 82939,	-- Masterwork Lightsteel Legplates
-					["u"] = 1,
-				},
 				{	-- Masterwork Spiritguard Legplates
 					["itemID"] = 82923,	-- Masterwork Spiritguard Legplates
 				},
 				{	--	 Protector's Trillium Legguards
 					["itemID"] = 98606,	-- Protector's Trillium Legguards
-				},
-				{	-- Spiritguard Legplates
-					["itemID"] = 82899,	-- Spiritguard Legplates
-					["u"] = 1,
 				},
 			}),
 			n(-330, {		-- Feet
@@ -649,20 +573,8 @@ _.Craftables =
 				{	-- Haunted Steel Warboots
 					["itemID"] = 94267,	-- Haunted Steel Warboots
 				},
-				{	-- Lightsteel Boots
-					["itemID"] = 82917,	-- Lightsteel Boots
-					["u"] = 1,
-				},
-				{	-- Masterwork Lightsteel Boots
-					["itemID"] = 82941,	-- Masterwork Lightsteel Boots
-					["u"] = 1,
-				},
 				{	-- Masterwork Spiritguard Boots
 					["itemID"] = 82925,	-- Masterwork Spiritguard Boots
-				},
-				{	-- Spiritguard Boots
-					["itemID"] = 82901,	-- Spiritguard Boots
-					["u"] = 1,
 				},
 			}),
 		}),
@@ -721,13 +633,11 @@ _.Craftables =
 				i(92747),	-- Advanced Refrigeration Unit*
 			}),
 			i(89991, {  -- Pandaria Fireworks
-				["groups"] = {
-					i(89996),    -- Schematic: Autumn Flower Firework
-					i(89994),    -- Schematic: Celestial Firework
-					i(89993),    -- Schematic: Grand Celebration Firework
-					i(89997),    -- Schematic: Jade Blossom Firework
-					i(89992),    -- Schematic: Serpent's Heart Firework
-				},
+				i(89996),    -- Schematic: Autumn Flower Firework
+				i(89994),    -- Schematic: Celestial Firework
+				i(89993),    -- Schematic: Grand Celebration Firework
+				i(89997),    -- Schematic: Jade Blossom Firework
+				i(89992),    -- Schematic: Serpent's Heart Firework
 			}),
 		}),
 		n(-185, { 	-- Inscription
