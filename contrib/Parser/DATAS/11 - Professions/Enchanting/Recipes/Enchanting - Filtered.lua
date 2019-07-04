@@ -319,7 +319,10 @@ profession(333, {	-- Enchanting
 						{
 							-- Lifestealing
 							["recipeID"] = 20032,--[[Lifestealing]]
-							["u"] = 5
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 5.0.4.15890",
+							},
 						},
 						{
 							["recipeID"] = 20036--[[Major Intellect]]
@@ -342,7 +345,10 @@ profession(333, {	-- Enchanting
 						{
 							-- Superior Impact
 							["recipeID"] = 20030,--[[Superior Impact]]
-							["u"] = 5
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 6.0.1.18471",
+							},
 						},
 						{
 							["recipeID"] = 20031--[[Superior Striking]]

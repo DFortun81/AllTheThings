@@ -26,6 +26,16 @@ namespace ATT
         private static readonly long CURRENT_VERSION = CURRENT_VERSION_ARR.ConvertVersion();
 
         /// <summary>
+        /// The initial build version for the Warlords of Draenor Expansion.
+        /// </summary>
+        private static readonly int[] WARLORDS_VERSION_ARR = new int[] { 6, 0, 1, 18471 };
+
+        /// <summary>
+        /// The initial build version for the Warlords of Draenor Expansion.
+        /// </summary>
+        private static readonly long WARLORDS_VERSION = WARLORDS_VERSION_ARR.ConvertVersion();
+
+        /// <summary>
         /// The initial build version for the Legion Expansion.
         /// </summary>
         private static readonly int[] LEGION_VERSION_ARR = new int[] { 7, 0, 3, 22248 };

@@ -65,11 +65,17 @@ _.Craftables =
 			filter(25, {	-- 1H Swords
 				{	-- Corroded Saronite Edge
 					["itemID"] = 41186,	-- Corroded Saronite Edge
-					["u"] = 5,
+					["timeline"] = {
+						"added 3.0.1.8770",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Corroded Saronite Woundbringer
 					["itemID"] = 41187,	-- Corroded Saronite Woundbringer
-					["u"] = 5,
+					["timeline"] = {
+						"added 3.0.1.8770",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Saronite Spellblade
 					["itemID"] = 43871,	-- Saronite Spellblade
@@ -176,7 +182,10 @@ _.Craftables =
 				},
 				{	-- Chestplate of Conquest
 					["itemID"] = 41189,	-- Chestplate of Conquest
-					["u"] = 5,
+					["timeline"] = {
+						"added 3.0.1.8770",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Cobalt Chestpiece
 					["itemID"] = 39085,	-- Cobalt Chestpiece
@@ -326,7 +335,10 @@ _.Craftables =
 				},
 				{	-- Legplates of Conquest
 					["itemID"] = 41190,	-- Legplates of Conquest
-					["u"] = 5,
+					["timeline"] = {
+						"added 3.0.1.8770",
+						"removed 4.0.1.13287",
+					},
 				},
 				{	-- Legplates of Painful Death
 					["itemID"] = 49903,	-- Legplates of Painful Death
