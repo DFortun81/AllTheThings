@@ -298,6 +298,7 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest In Pistons
 						}),
 						i(169691),	-- Vinyl: Depths of Ulduar
+						i(170466),  -- Junkyard Motivator
 					},
 				}),
 				n(151296, {	-- OOX-Avenger/MG
