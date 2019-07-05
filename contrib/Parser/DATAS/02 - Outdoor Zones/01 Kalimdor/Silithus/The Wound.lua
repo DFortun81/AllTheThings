@@ -9,6 +9,10 @@ _.Zones =
 				["lvl"] = 110,
 				["g"] = {
 					n(-17, {	-- Quests
+						q(53112, {	-- Azeroth's Tear
+							["repeatable"] = true,
+							["lvl"] = 120,
+						}),
 						q(54938, {	-- A Brother's Help
 							["sourceQuests"] = { 53406 },	-- The Chamber of Heart
 							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",

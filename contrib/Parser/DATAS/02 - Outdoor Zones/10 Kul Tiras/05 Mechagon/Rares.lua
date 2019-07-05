@@ -56,6 +56,7 @@ _.Zones =
 						crit(25, {	-- Boilburn
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
+						i(167042),	-- Blueprint: Scrap Trap
 					},
 				}),
 				n(151308, {	-- Boggac Skullbash
@@ -103,6 +104,7 @@ _.Zones =
 						i(169674),	-- Green Paint Filled Bladder
 						i(167792),	-- Paint Vial: Fel Mint Green
 						i(169168),  -- Blueprint: Green Spraybot
+						i(167793),  -- Paint Vial: Overload Orange
 					},
 				}),
 				n(151569, {	-- Deepwater Maw
@@ -126,6 +128,7 @@ _.Zones =
 						crit(35, {	-- The Doppel Gang
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
+						i(168631),	-- Metal Detector
 					},
 				}),
 				n(150342, {	-- Earthbreaker Gulroc
@@ -137,6 +140,7 @@ _.Zones =
 						crit(21, {	-- Earthbreaker Gulroc
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
+						i(167042),	-- Blueprint: Scrap Trap
 					},
 				}),
 				n(154153, {	-- Enforcer KX-T57
@@ -148,9 +152,10 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(167174),	-- Blueprint: Rustbolt Pocket Turret
-						i(170466),	-- Junkyard Motivator  -- Needs more confirmation, recieved in the area this mob spawns.
+						i(170466),	-- Junkyard Motivator
 						i(170470),	-- Reinforced Grease Deflector
 						i(170467),	-- Whirring Chainblade
+						i(169174),	-- Blueprint: Rustbolt Pocket Turret
 					},
 				}),
 				n(151202, {	-- Foul Manifestation
@@ -250,6 +255,7 @@ _.Zones =
 							i(169842),	-- Azeroth Mini: Roadtrogg
 							i(169840),	-- Azeroth Mini: Gazlowe
 							i(169795),	-- Azeroth Mini: Bondo Bigblock
+							i(169849),	-- Azeroth Mini: Naeno Megacrash
 						}),
 					},
 				}),
@@ -406,6 +412,12 @@ _.Zones =
 						}),
 						i(169691, {	-- Vinyl: Depths of Ulduar
 							["questID"] = 56518,	-- Vinyl: Depths of Ulduar
+						}),
+						i(169692, {	-- Vinyl: Triumph of Gnomeregan
+							["questID"] = 56519,	-- Triumph of Gnomeregan
+						}),
+						i(169690, {	-- Vinyl: Battle of Gnomeregan
+							["questID"] = 56517,	-- Vinyl: Battle of Gnomeregan
 						}),
 					},
 				}),

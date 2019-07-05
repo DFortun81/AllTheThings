@@ -17,6 +17,9 @@ _.Zones =
 					["coord"] = { 72.2, 37.2, 862 },
 					["isDaily"] = true,
 				}),
+				q(55688, {	-- A Growing Mystery
+					["isDaily"] = true,
+				}),
 				q(56373, {	-- A Gulper Ate The Rolly
 					["qg"] = 151462,	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },
@@ -516,6 +519,13 @@ _.Zones =
 						}),
 					},
 				}),
+				q(55457, {	-- Paint Vial: Overload Orange
+					["g"] = {
+						crit(7, {	-- Available in Eight Colors
+							["achievementID"] = 13513,
+						}),
+					},
+				}),
 				q(56469, {	-- Pirates? I Hate Those Guys!
 				--	not sure if there are any SQs or anything else that needs to be added here.
 					["crs"] = { 150698 },	-- Congealed Oil (not sure if it drops from anything else)
@@ -631,14 +641,16 @@ _.Zones =
 										["achievementID"] = 13513,	-- Available in Eight Colors
 									}),
 								}),
+								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
-							--[[i(168266, {	-- Strange Recycling Requisiton(Epic)
+							i(168266, {	-- Strange Recycling Requisiton(Epic)
 								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
 								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
 								i(167795),	-- Paint Vial: Copper Trim
 								i(169689),	-- Vinyl: Mimiron's Brainstorm
 								i(169175),	-- Blueprint: Annoy-o-Tron Gang
-							}),]]
+								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
+							}),
 						},
 					}),
 					q(56116, {	-- Even More Recycling
@@ -659,6 +671,7 @@ _.Zones =
 										["achievementID"] = 13513,	-- Available in Eight Colors
 									}),
 								}),
+								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
 							i(168266, {	-- Strange Recycling Requisiton(Epic)
 								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
@@ -670,6 +683,7 @@ _.Zones =
 								}),
 								i(169689),	-- Vinyl: Mimiron's Brainstorm
 								i(169175),	-- Blueprint: Annoy-o-Tron Gang
+								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
 						},
 					}),
@@ -831,6 +845,11 @@ _.Zones =
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
+				}),
+				i(168256, {	-- Night Elf Ring
+					q(55718, {	-- Strange Discovery
+						["isDaily"] = true,
+					}),
 				}),
 				q(56501, {	-- Taking the Air Out	— TO DO: figure out if you need to be on "A Direct Approach" to get this -- this quest wasn't offered my second time doing "A Direct Approach, but "Waste Not" was.  maybe they cycle?
 					["isDaily"] = true,
