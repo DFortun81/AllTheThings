@@ -23,6 +23,7 @@ _.Zones =
 				i(168824, {	-- Ocean Simulator (TOY!)
 					["description"] = "Obtained from looting all 20 |cFFFFD700Arcane Chests|r.",
 				}),
+				i(170475),	-- Marvias Endless Bag Unit
 				o(326394, {	-- Arcane Chest
 					["questID"] = 55954,
 					["coord"] = { 34.5, 40.4, 1355 },
