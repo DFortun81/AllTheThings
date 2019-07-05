@@ -11,7 +11,7 @@ _.Zones =
 						["qg"] = 142114,	-- Talia Sparkbrow
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(22, {	-- Add More to the Collection
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -53,7 +53,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Master of Calligraphy - Triangle
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
@@ -62,7 +62,7 @@ _.Zones =
 					q(52892, {	-- Critters are Friends, Not Food
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(21, {	-- Critters are Friends, Not Food
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -89,12 +89,17 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13441),	-- Pushing the Payload
 						},
 					}),
 					q(50870, {	-- G'Naat
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54243, {	-- Gobliteration
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50846, {	-- Headhunter Lee'za
@@ -112,14 +117,14 @@ _.Zones =
 					q(54051, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
 					q(54060, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
@@ -127,7 +132,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(160509), 	-- Echoes of Rezan (TOY!)
 						},
 					}),
@@ -168,7 +173,7 @@ _.Zones =
 					q(52938, {	-- Small Beginnings
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(24, {	-- Small Beginnings
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -178,7 +183,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13440),	-- Pushing the Payload
 						},
 					}),
@@ -220,7 +225,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 773,	-- Inscription
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(162372),	-- Contract: Tortollan Seekers [Rank 3]
 						},
 					}),
@@ -229,7 +234,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 171,	-- Alchemy
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
 						},
 					}),
@@ -238,7 +243,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 171,	-- Alchemy
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
 						},
 					}),
@@ -246,7 +251,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(162294),	-- Recipe: Loa Loaf [Rank 3]
 						},
 					}),
@@ -254,7 +259,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(162296),	-- Recipe: Mon'Dazi [Rank 3]
 						},
 					}),
@@ -262,7 +267,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(162290),	-- Recipe: Ravenberry Tarts [Rank 3]
 						},
 					}),
@@ -270,7 +275,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(162297),	-- Recipe: Spiced Snapper [Rank 3]
 						},
 					}),
@@ -278,7 +283,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3]
 						},
 					}),
@@ -286,18 +291,22 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(160509), 	-- Echoes of Rezan (TOY!)
 						},
 					}),
 					q(52937, {	-- You've Never Seen Jammer Upset
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(23, {	-- You've Never Seen Jammer Upset
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(50866, {	-- Zayoos
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 				}),
 				i(158116),	-- Bonehex Claws

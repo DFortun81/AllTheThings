@@ -12,6 +12,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(52251, {	-- Compromised Reconnaissance
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(49413, { 	-- Scamps With Scrolls
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,

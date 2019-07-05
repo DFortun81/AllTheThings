@@ -11,11 +11,19 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13041),	-- Hungry, Hungry Ranishu
 						},
 					}),
 					q(51422, {	-- Azerite Madness
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50975, {	-- Azerite Mining
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51096, {	-- Azer'tor
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -27,6 +35,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(53298, {	-- Blooming Star Moss
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
 					q(51155, {	-- Brgl-Lrgl the Basher
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -35,7 +48,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Square
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
@@ -59,7 +72,7 @@ _.Zones =
 						["qg"] = 142054,	-- Kusa
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(20, {	-- Desert Survivors
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -101,7 +114,7 @@ _.Zones =
 						["qg"] = 141879,	-- Keeyo
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(17, {	-- Keeyo's Champions of Vol'dun
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -122,7 +135,7 @@ _.Zones =
 					q(54287, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
@@ -149,7 +162,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13009, {	-- Adept Sandfisher
 								crit(1),	-- Adept Sandfisher — Cobalt Sandworm Scale
 								crit(2),	-- Adept Sandfisher — Silver Sandworm Scale
@@ -167,7 +180,7 @@ _.Zones =
 						["qg"] = 141945,	-- Sizzik
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(18, {	-- Snakes on a Terrace
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -183,6 +196,14 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(55303, {	-- The Cycle of Life
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51112, {	-- Warbringer Hozzik
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51113, {	-- Warlord Zothix
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -191,7 +212,7 @@ _.Zones =
 						["qg"] = 141969,	-- Spineleaf
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(19, {	-- What Do You Mean, Mind Controlling Plants?
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -206,7 +227,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 197,	-- Tailoring
-						["g"] = {
+						["groups"] = {
 							i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
 						},
 					}),
@@ -215,7 +236,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 773,	-- Inscription
-						["g"] = {
+						["groups"] = {
 							i(162370),	-- Contract: Voldunai [Rank 3]
 						},
 					}),
@@ -224,7 +245,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 333,	-- Enchanting
-						["g"] = {
+						["groups"] = {
 							i(162314),	-- Formula: Enchant Weapon - Quick Navigation [Rank 3]
 						},
 					}),
@@ -233,7 +254,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 202,	-- Engineering
-						["g"] = {
+						["groups"] = {
 							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
 					}),
@@ -242,7 +263,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 171,	-- Alchemy
-						["g"] = {
+						["groups"] = {
 							i(162260),	-- Recipe: Potion of Concealment (Rank 3)
 						},
 					}),
@@ -251,7 +272,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 202,	-- Engineering
-						["g"] = {
+						["groups"] = {
 							i(162736), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
 						},
 					}),

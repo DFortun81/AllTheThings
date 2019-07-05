@@ -10,7 +10,7 @@ _.Zones =
 					q(52803, {	-- Accidental Dread
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(16, {	-- Accidental Dread
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -21,11 +21,19 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50570, {	-- Azerite Infused Elemental
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50564, {	-- Azerite Infused Slag
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51415, {	-- Azerite Madness
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51064, {	-- Azerite Wounds
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -46,7 +54,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Circle
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
@@ -56,7 +64,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13021, {	-- A Most Efficient Apocalypse
 								["races"] = HORDE_ONLY,
 							}),
@@ -69,7 +77,7 @@ _.Zones =
 					q(52779, {	-- Crawg in the Bog
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(14, {	-- Crawg in the Bog
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -79,7 +87,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13026),	-- 7th Legion Spycatcher
 						},
 					}),
@@ -87,9 +95,14 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13025),	-- Zandalari Spycatcher
 						},
+					}),
+					q(51166, {	-- Down to the Roots
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 					q(51172, {	-- Forked Lightning
 						["lvl"] = 120,
@@ -105,7 +118,7 @@ _.Zones =
 						["hordeQuestID"] = 50559,	-- Getting Out of Hand (H)
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 120,
-						["g"] = {
+						["groups"] = {
 							ach(13023),	-- It's Really Getting Out of Hand
 						},
 					}),
@@ -143,7 +156,7 @@ _.Zones =
 						["lvl"] = 120,
 						["qg"] = 141529,	-- Lozu
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(13, {	-- Marshdwellers
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -152,14 +165,14 @@ _.Zones =
 					q(54267, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
 					q(54236, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
@@ -167,7 +180,7 @@ _.Zones =
 						["qg"] = 141799,	-- Grady Prett
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(15, {	-- Pack Leader
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -186,7 +199,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13022),	-- Revenge is Best Served Speedily
 						},
 					}),
@@ -267,7 +280,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 197,	-- Tailoring
-						["g"] = {
+						["groups"] = {
 							i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
 						},
 					}),
@@ -276,7 +289,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 773,	-- Inscription
-						["g"] = {
+						["groups"] = {
 							i(162368),	-- Contract: Talanji's Expedition [Rank 3]
 						},
 					}),
@@ -285,7 +298,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 333,	-- Enchanting
-						["g"] = {
+						["groups"] = {
 							i(162315),	-- Formula: Enchant Weapon - Coastal Surge (Rank 3)
 						},
 					}),
@@ -294,7 +307,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 333,	-- Enchanting
-						["g"] = {
+						["groups"] = {
 							i(162319),	-- Formula: Enchant Weapon - Torrent of Elements (Rank 3)
 						},
 					}),
@@ -303,7 +316,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 171,	-- Alchemy
-						["g"] = {
+						["groups"] = {
 							i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
 						},
 					}),
@@ -312,7 +325,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 202,	-- Engineering
-						["g"] = {
+						["groups"] = {
 							i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
 						},
 					}),
@@ -324,6 +337,8 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					un(1, q(49675)),	-- showing in /attwq as [Quest 49675] no record of the quest found on Wowhead
+					un(1, q(49695)),	-- showing in /attwq as [Quest 49695] no record of the quest found on Wowhead
 				}),
 				i(158116),	-- Bonehex Claws
 				i(158125),	-- Bonehex Warmaul
