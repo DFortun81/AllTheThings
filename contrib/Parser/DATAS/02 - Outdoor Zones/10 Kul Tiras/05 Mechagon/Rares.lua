@@ -101,6 +101,7 @@ _.Zones =
 						}),
 						i(169674),	-- Green Paint Filled Bladder
 						i(167792),	-- Paint Vial: Fel Mint Green
+						i(169168),  -- Blueprint: Green Spraybot
 					},
 				}),
 				n(151569, {	-- Deepwater Maw
