@@ -324,6 +324,14 @@ _.Zones =
 						["requireSkill"] = 186,	-- Mining
 						["sourceQuest"] = 48764, 	-- Don't Pick a Fight
 						["description"] = "This drops from mining |cFFFFD700Monelite Seam|r.  You can only turn it in at Level 150 Kul Tiran Mining.",
+						["maps"] = {
+							896,	-- Drustvar
+							942,	-- Stormsong Valley
+							895,	-- Tiragarde Sound
+							863,	-- Nazmir
+							864,	-- Vol'dun
+							862,	-- Zuldazar
+						},
 						["g"] = {
 							recipe(253344),	-- Monelite Seam Rank 3
 						},

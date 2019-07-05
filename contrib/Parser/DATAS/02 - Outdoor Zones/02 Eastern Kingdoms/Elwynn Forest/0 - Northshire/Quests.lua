@@ -150,7 +150,7 @@ _.Zones =
 					q(29082, {	-- Fear No Evil
 						["qg"] = 951,	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = exclude({ 1 }, ALLIANCE_ONLY),
+						["races"] = exclude({ 1, 32 }, ALLIANCE_ONLY),	-- excluding Human and Kul Tiran
 						["sourceQuest"] = 29080,	-- Join the Battle!
 					}),
 					q(29080, {	-- Join the Battle!

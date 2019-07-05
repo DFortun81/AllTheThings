@@ -31,6 +31,7 @@ _.Zones =
 					["races"] = { 1 },	-- Human
 				}),
 				q(26150, {	-- A Visit With Maybell
+					["isBreadcrumb"] = true,
 					["qg"] = 253,	-- William Pestle
 					["coord"] = { 43.3, 65.7, 37 },
 					["races"] = ALLIANCE_ONLY,
