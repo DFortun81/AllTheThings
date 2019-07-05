@@ -65,6 +65,15 @@ _.Zones =
 						un(2, i(7129)),	-- Brutal Gauntlets
 					},
 				}),
+				q(25924, {	-- Call of Duty
+					["qg"] = 41621,	-- Commander Thorak
+					["coord"] = { 55.9, 12.3, 1 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						28816,	-- To the Depths
+						27718,	-- Warchief's Command: Vashj'ir!
+					},
+				}),
 				q(25170, {	-- Cleaning Up the Coastline
 					["qg"] = 10578,	-- Bom'bay
 					["coord"] = { 55.6, 75.2, 1 },
@@ -82,11 +91,23 @@ _.Zones =
 					["lvl"] = 98,
 					["coord"] = { 45.8, 15.1, 1 },
 					["races"] = HORDE_ONLY,
+					["classes"] = exclude({12}, ALL_CLASSES),	-- All exception demon hunters
 					["sourceQuests"] = { 40760 },	-- Emissary
 					["g"] = {
 						i(129104),	-- Brand of the Banshee Queen
 						i(138776),	-- Accolade of the Banshee Queen
 						i(138775),	-- Token of the Banshee Queen
+					},
+				}),
+				q(40983, {	-- Demons Among Them
+					["qg"] = 100873,	-- Allari the Souleater
+					["lvl"] = 98,
+					["coord"] = { 45.8, 15.1, 1 },
+					["races"] = HORDE_ONLY,
+					["classes"]= { 12 },	-- Demon Hunter
+					["sourceQuests"] = { 40760 },	-- Emissary
+					["g"] = {
+						i(129104),	-- Brand of the Banshee Queen
 					},
 				}),
 				q(40760, {	-- Emissary
@@ -182,7 +203,10 @@ _.Zones =
 					["coord"] = { 45.6, 15.9, 1 },
 					["qg"] = 101035,	-- Lady Sylvanas Windrunner
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 40607 },	-- Demons Among Us
+					["sourceQuests"] = {
+						40607,	-- Demons Among Us
+						40983,	-- Demons Among Them
+					},
 				}),
 				q(32671, {	-- Learn To Ride
 					["lvl"] = 20,
@@ -383,6 +407,7 @@ _.Zones =
 					["sourceQuest"] = 25194,	-- Unbidden Visitors
 				}),
 				q(40518, {	-- The Battle for Broken Shore
+					["altQuestID"] = 44543,	-- auto-granted
 					["qg"] = 113547,	-- Stone Guard Mukar
 					["lvl"] = 98,
 					["races"] = HORDE_ONLY,
@@ -475,6 +500,15 @@ _.Zones =
 						i(141294),	-- Mark of Orgrimmar
 					},
 				}),
+				q(47867, {	-- Two If By Sea
+					["qg"] = 122065,	-- Lady Liadrin
+					["coord"] = { 58.2, 12.0, 1 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						48507,	-- The Hand of Fate
+						47835,	-- The Hand of Fate
+					},
+				}),
 				q(25194, {	-- Unbidden Visitors
 					["qg"] = 39324,	-- Zen'Taji
 					["coord"] = { 35.8, 41.3, 1 },
@@ -500,28 +534,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 46.3, 22.8, 1 },
 				}),
---[[
-				q(25924, {	-- Call of Duty
-					["qg"] = 41621,	--
-					["races"] = HORDE_ONLY,
-				}),
-				q(40983, {	-- Demons Among Them
-					["qg"] = 100873,	--
-					["races"] = HORDE_ONLY,
-					["classes"]= {12},
-				}),
---				q(44543, {	-- The Battle for Broken Shore (looks like this is an auto-popup quest to take a wind rider from the ship to the shore, no QG)
-					["races"] = HORDE_ONLY,
-				}),
-				q(47835, {	-- The Hand of Fate (QG in Broken Isles Dalaran)
-					["races"] = HORDE_ONLY,
-					["description"] = "This quest will be automatically offered upon completion of the Assault on Broken Shore scenario and returning to Dalaran.  You may also choose the option to skip the scenario when speaking to Khadgar.",
-				}),
-				q(47867, {	-- Two If By Sea
-					["qg"] = 122065,	--
-					["races"] = HORDE_ONLY,
-				}),
---]]
 			}),
 		}),
 	}),
