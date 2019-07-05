@@ -28,6 +28,12 @@ _.Zones =
 			56521 popped randomly. possibly a progress flag for 55663?
 			56325 - alliance end to the zone, completed after turning in The Tide Turns (55799)
 			]]--
+			q(55558, {	-- A Bolt Hole (not actually sure if this is from the SQ or if it's from getting Revered with the Ankoan -- both happened at the same time for me)
+				["sourceQuests"] = { 56234 },	-- Friends in Need
+				["coord"] = { 40.2, 55.3, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153617,	-- Shandris Feathermoon
+			}),
 			q(54975, {	-- A Brief Respite
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 40.3, 55.2, 1355 },
@@ -836,13 +842,13 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 54021,	-- The First Arcanist
 			}),
-			q(56234, {	-- Friends in need
+			q(56234, {	-- Friends in Need
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 40.3, 55.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55937,	-- Clearing Out the Cache
 				["g"] = {
-					i(168847),	-- Pearl of Manifest Ambitions
+					i(168847),	-- Pearl of Manifest Ambitions (Rank 2)
 				},
 			}),
 			q(55871, {	-- Gather Friends -- also triggered 56544, 56682
@@ -1101,11 +1107,14 @@ _.Zones =
 				["isDaily"] = true,
 				["qgs"] = {
 					151352,	-- Lily Bopip (Horde)
+					155941,	-- Tamer Orami (Alliance)
 				},
 				["coords"] = {
+					{ 39.5, 55.4, 1355 },	-- Alliance)
 					{ 47.3, 61.9, 1355 },	-- (Horde)
 				},
 				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
 					55500,	-- Save A Friend (Horde)
 				},
 			}),
@@ -1224,6 +1233,21 @@ _.Zones =
 					55500,	-- Save a Friend (Horde)
 				},
 ]]--		}),
+			q(55790, {	-- Requisition: More Deepcoral Buds
+				["isDaily"] = true,
+				["qgs"] = {
+					151772,	-- Ray Tamer Enaka (Alliance)
+				--	,	--  (Horde)
+				},
+				["coords"] = {
+					{ 39.8, 54.1, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
+				},
+			}),
 			q(55793, {	-- Requisition: More Flotsam
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1356,10 +1380,6 @@ _.Zones =
 					},
 					{	-- Requisition: A Few Starfish
 						["questID"] = 55719,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: More Deepcoral Buds
-						["questID"] = 55790,
 						["isDaily"] = true,
 					},
 				},

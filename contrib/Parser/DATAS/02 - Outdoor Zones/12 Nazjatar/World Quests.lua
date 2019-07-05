@@ -96,6 +96,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
+			q(56391, {	-- Frenzied Knifefang
+				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
+				["lvl"] = 120,
+			}),
 			q(55895, {	-- Frozen Winds of Zhiela
 				["lvl"] = 120,
 				["collectible"] = false,
@@ -386,6 +391,7 @@ _.Zones =
 				["collectible"] = false,
 			}),
 			q(56795, {	-- Work Order: Abyssal-Fried Rissole (A)
+				["requireSkill"] = 185,	-- Cooking
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["collectible"] = false,
@@ -394,6 +400,7 @@ _.Zones =
 				},
 			}),
 			q(56800, {	-- Work Order: Abyssal-Fried Rissole (H)
+				["requireSkill"] = 185,	-- Cooking
 				["lvl"] = 120,
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
@@ -402,6 +409,7 @@ _.Zones =
 				},
 			}),
 			q(56794, {	-- Work Order: Baked Port Tato (A)
+				["requireSkill"] = 185,	-- Cooking
 				["collectible"] = false,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -410,11 +418,30 @@ _.Zones =
 				},
 			}),
 			q(56801, {	-- Work Order: Baked Port Tato (H)
+				["requireSkill"] = 185,	-- Cooking
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
 					i(168331),	-- Recipe: Baked Port Tato (Rank 3)
+				},
+			}),
+			q(56797, {	-- Work Order: Bil'Tong (A)
+				["requireSkill"] = 185,	-- Cooking
+				["collectible"] = false,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(168333),	-- Recipe: Bil'Tong (Rank 3)
+				},
+			}),
+			q(56798, {	-- Work Order: Bil'Tong (H)
+				["requireSkill"] = 185,	-- Cooking
+				["collectible"] = false,
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(168333),	-- Recipe: Bil'Tong (Rank 3)
 				},
 			}),
 			q(56826, {	-- Work Order: Enchant Weapon - Force Multiplier (A)
