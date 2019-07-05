@@ -5,11 +5,11 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
-			["g"] = {
+			["groups"] = {
 				n(-4, { 	-- Achievement
 					ach(12074, {	-- Shoot First, Loot Later
 						o(277205, {	-- Ancient Legion War Cache
-							["g"] = {
+							["groups"] = {
 								i(153308), --Unyielding Peacekeeper's Cudgel
 							},
 							["questID"] = 49018,
@@ -19,7 +19,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(277207, {	-- Legion Treasure Hoard
-							["g"] = {
+							["groups"] = {
 								i(153291), --Spectral Censorite's Staff
 							},
 							["questID"] = 49020,
@@ -29,7 +29,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(277346, {	-- Missing Augari Chest
-							["g"] = {
+							["groups"] = {
 								i(153285), --Augari Wakener's Mantle
 							},
 							["questID"] = 49159,
@@ -60,7 +60,7 @@ _.Zones =
 				}),
 				filter(101, {	-- Pet Battle
 					ach(12088, {	-- Anomalous Animals of Argus
-						["g"] = {
+						["groups"] = {
 							{
 								["achievementID"] = 12088,	-- Anomalous Animals of Argus
 								["criteriaID"] = 14, 		-- Bloat
@@ -95,12 +95,12 @@ _.Zones =
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					}),
 					ach(12100, {	-- Family Fighter
-						["g"] = {
+						["groups"] = {
 							i(153040, {	-- Felclaw Marsuul
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12089, {	-- Aquatic Assault
-								["g"]	= {
+								["groups"]	= {
 									{
 										["achievementID"] = 12089,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -135,7 +135,7 @@ _.Zones =
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12091, {	-- Beast Blitz
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 12091,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -170,7 +170,7 @@ _.Zones =
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12092, {	-- Critical Critters
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 12092,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -205,7 +205,7 @@ _.Zones =
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12093, {	-- Draconic Destruction
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 12093,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -240,7 +240,7 @@ _.Zones =
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12094, {	-- Elemental Escalation
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 12094,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -275,7 +275,7 @@ _.Zones =
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12095, {	-- Fierce Fliers
-								["g"]	= {
+								["groups"]	= {
 									{
 										["achievementID"] = 12095,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -310,7 +310,7 @@ _.Zones =
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12096, {	-- Humanoid Havoc
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 12096,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -345,7 +345,7 @@ _.Zones =
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12097, {	-- Magical Mayhem
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 12097,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -380,7 +380,7 @@ _.Zones =
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12098, {	-- Mechanical Melee
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 12098,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -415,7 +415,7 @@ _.Zones =
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							}),
 							ach(12099, {	-- Unstoppable Undead
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 12099,	-- Aquatic Assault
 										["criteriaID"] = 14, 		-- Bloat
@@ -462,8 +462,6 @@ _.Zones =
 						q(48837),	-- All-Seer Xanarian
 						q(48931),	-- Behemoths Awakened
 						q(49054),	-- Bloat
-						q(48867),	-- Chief Alchemist Munculus
-						q(48637),	-- Cleansing Fire
 						q(48831),	-- Commander Texlaz
 						q(48777),	-- Den of Fiends
 						q(49055),	-- Earseeker
@@ -477,20 +475,16 @@ _.Zones =
 						q(48783),	-- Nobody Expects Them
 						q(49058),	-- One-of-Many
 						q(49056),	-- Pilfer
-						q(48833),	-- Ritual Completion
 						q(48958),	-- Ritual Interruption
-						q(48526),	-- Scuttled
 						q(48662),	-- Short Fuses
 						q(48514),	-- Slumbering Behemoths
 						q(48691),	-- Soul Chain
-						q(48358),	-- Supplies Needed: Empyrium
 						q(48360),	-- Supplies Needed: Fiendish Leather
 						q(48374),	-- Supplies Needed: Lightweave Cloth
 						q(48640),	-- The Immortal Squadron
 						q(48870),	-- The Many-Faced Devourer
 						q(48952),	-- Throw Them a Bone
 						q(48827),	-- Varga
-						q(48866),	-- Void Warden Valsuran
 						q(49053),	-- Watcher
 						q(48836),	-- Watcher Aival
 						q(48624),	-- Who Let The Dogs Out?
@@ -508,7 +502,7 @@ _.Zones =
 						["qg"] = 125343,		-- Vorel
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["sourceQuests"] = { 46941 },	-- The Path Forward
-						["g"] = {
+						["groups"] = {
 							{	-- Design: Deadly Deep Chemirine
 								["itemID"] = 151736,	-- Design: Deadly Deep Chemirine
 							},
@@ -530,7 +524,7 @@ _.Zones =
 						["sourceQuests"] = {
 							48075,	-- A Colorful Key
 						},
-						["g"] = {
+						["groups"] = {
 							{	-- Design: Empyrial Cosmic Crown (Rank 1)
 								["itemID"] = 151724,	-- Design: Empyrial Cosmic Crown (Rank 1)
 							},
@@ -652,7 +646,7 @@ _.Zones =
 					n(127090, {	-- Admiral Rel'var
 						["questID"] = 48817,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153324),	-- Mac'Aree Vigilant's Bastion
 							i(152886),	--Zealous Felslinger's Visage
 							i(152888),	--Zealous Felslinger's Epaulets
@@ -667,13 +661,13 @@ _.Zones =
 					n(127096, {	-- All-Seer Xanarian
 						["questID"] = 48818,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153123),	-- Cracked Radinax Control Gem (Green Item)
 						},
 					}),
 					n(122958, {	-- Blistermaw
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(152905),	-- Crimson Slavermaw
 						},
 						["questID"] = 49183,
@@ -681,21 +675,21 @@ _.Zones =
 					}),
 					n(127376, {	-- Chief Alchemist Munculus
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 48865,
 					}),
 					n(127084, {	-- Commander Texlaz
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153123),	-- Cracked Radinax Control Gem (Green Item)
 						},
 						["questID"] = 48816,
 					}),
 					n(127703, {	-- Doomcaster Suprax
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153194),	-- Legion Communication Orb
 						},
 						["questID"] = 48968,
@@ -703,14 +697,14 @@ _.Zones =
 					}),
 					n(122999, {	-- Gar'zoth
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 49241,
 					}),
 					n(127288, {	-- Houndmaster Kerrax
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(152790),	-- Vile Fiend
 						},
 						["questID"] = 48821,
@@ -718,7 +712,7 @@ _.Zones =
 					}),
 					n(126946, {	-- Inquisitor Vethroz
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(151543),	-- Technique: Glyph of Fel-Touched Shards
 						},
 						["questID"] = 48815,
@@ -726,7 +720,7 @@ _.Zones =
 					o(273519, {	-- Legion War Supplies (east and south of small green lake in southeast area of map)
 						["questID"] = 48382,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153340),	-- Triumvirate High Guard's Breastplate
 							i(153344),	-- Triumvirate High Guard's Bracers
 							i(153343),	-- Triumvirate High Guard's Gauntlets
@@ -740,7 +734,7 @@ _.Zones =
 					o(273521, {	-- Legion War Supplies (around Spirit Crucible)
 						["questID"] = 48383,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153340),	-- Triumvirate High Guard's Breastplate
 							i(153344),	-- Triumvirate High Guard's Bracers
 							i(153343),	-- Triumvirate High Guard's Gauntlets
@@ -754,7 +748,7 @@ _.Zones =
 					o(273523, {	-- Legion War Supplies (north central, possibly only in cave)
 						["questID"] = 48384,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153339),	-- Triumvirate High Guard's Casque
 							i(153342),	-- Triumvirate High Guard's Pauldrons
 							i(153344),	-- Triumvirate High Guard's Bracers
@@ -766,7 +760,7 @@ _.Zones =
 					o(273524, {	-- Legion War Supplies (southernmost point of wide green river, close to Felfire Armory)
 						["questID"] = 48385,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153342),	-- Triumvirate High Guard's Pauldrons
 							i(153338),	-- Triumvirate High Guard's Leggings
 							i(152888),	-- Zealous Felslinger's Epaulets
@@ -778,7 +772,7 @@ _.Zones =
 					o(273527, {	-- Legion War Supplies (northeast, to the right of bridges)
 						["questID"] = 48387,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153339),	-- Triumvirate High Guard's Casque
 							i(153342),	-- Triumvirate High Guard's Pauldrons
 						},
@@ -786,7 +780,7 @@ _.Zones =
 					o(273528, {	-- Legion War Supplies (southeast, around Terminus)
 						["questID"] = 48390,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153339),	-- Triumvirate High Guard's Casque
 							i(153340),	-- Triumvirate High Guard's Breastplate
 							i(153344),	-- Triumvirate High Guard's Bracers
@@ -799,7 +793,7 @@ _.Zones =
 					o(273533, {	-- Legion War Supplies (north - northeast of Spirit Crucible, west of bridges)
 						["questID"] = 48388,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153339),	-- Triumvirate High Guard's Casque
 							i(153341),	-- Triumvirate High Guard's Greatbelt
 							i(152885),	-- Zealous Felslinger's Handwraps
@@ -808,7 +802,7 @@ _.Zones =
 					o(273535, {	-- Legion War Supplies (around spiders)
 						["questID"] = 48391,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153344),	-- Triumvirate High Guard's Bracers
 							i(153345),	-- Triumvirate High Guard's Warboots
 							i(152885),	-- Zealous Felslinger's Handwraps
@@ -817,7 +811,7 @@ _.Zones =
 					o(273538, {	-- Legion War Supplies (around Varga cave)
 						["questID"] = 48389,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153342),	-- Triumvirate High Guard's Pauldrons
 							i(153340),	-- Triumvirate High Guard's Breastplate
 							i(153345),	-- Triumvirate High Guard's Warboots
@@ -828,13 +822,13 @@ _.Zones =
 					n(126254, {	-- Lieutenant Xakaar
 						["questID"] = 48813,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153113),	-- Demon's Soulstone
 						},
 					}),
 					n(122947, {	-- Mistress Il'thendra
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153327),	-- Mystic Wakener's Dagger
 							i(152946),	-- World-Defiler's Casque
 							i(152944),	-- World-Defiler's Shoulderplates
@@ -849,13 +843,13 @@ _.Zones =
 					}),
 					n(127705, {	-- Mother Rosula
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(152999, {
 								["description"] = "Use 100 of these to create a Disgusting Feast.",
 							}),
 							i(153013, {	-- Disgusting Feast
 								["description"] = "Use this at the fel lava pit inside of the cave to summon Mother Rosula. Gather imp meat from the imps inside the cave. You need 100 to create this item.",
-								["g"] = {
+								["groups"] = {
 									i(153252),	-- Rebellious Imp
 								},
 							}),
@@ -866,14 +860,14 @@ _.Zones =
 					}),
 					n(126040, {	-- Puscilla
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(152903),	-- Biletooth Gnasher Mount
 						},
 						["questID"] = 48809,
 					}),
 					n(127700, {	-- Squadron Commander Vishax
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153253),	-- S.F.E. Interceptor
 						},
 						["description"] = "In order to summon this boss you need to combine the |cFFFFD700Smashed Portal Generator|r with |cFFFFD700Conductive Sheath|r, |cFFFFD700Arc Circuit|r and |cFFFFD700Power Cell|r to create the |cFFFFD700Vishax's Portal Generator|r.  You will need to do this only once.\n\nOnce you creat the item you will be given the quest |cFFFFD700Commander on Deck|r to go to coordinates |cFFFFFFFF77.55, 74.75|r.\n\nThe parts drop off the elite mobs that are on board the Terminus docks and ship.  There is a portal that will be located at |cFFFFFFFF80.50, 62.70|r that will allow you to go on to the ship.",
@@ -882,7 +876,7 @@ _.Zones =
 					}),
 					n(127581, {	-- The Many-Faced Devourer
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							{
 								["itemID"] = 152786,	-- Call of the Devourer
 								["description"] = "You must have this item in your inventory for the other items to drop.",
@@ -890,7 +884,7 @@ _.Zones =
 									126193,	-- Antoran Defender
 									126171,	-- Tormented Ritualist
 								},
-								["g"] = {
+								["groups"] = {
 									{
 										["itemID"] = 152993,	-- Ur'zul Bone
 										["description"] = "Located at 50.4 56.1 next to Altar.\n\nThanks Boxofbeer for the info.",
@@ -916,7 +910,7 @@ _.Zones =
 					}),
 					n(126208, {	-- Varga
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153190, {	-- Fel-Spotted Egg
 								i(153191, {	-- Cracked Fel-Spotted Egg
 									i(152843),	-- Darkspore Mana Ray Mount
@@ -933,14 +927,14 @@ _.Zones =
 					}),
 					n(126115, {	-- Ven'orn
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 48811,
 					}),
 					n(127300, {	-- Void Warden Valsuran
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153319),	-- Ardent Vindicator's Greatmace
 							i(152886),	-- Zealous Felslinger's Visage
 							i(152888),	-- Zealous Felslinger's Epaulets
@@ -955,21 +949,21 @@ _.Zones =
 					}),
 					n(126199, {	-- Vrax'thul
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(152903),	-- Biletooth Gnasher Mount
 						},
 						["questID"] = 48810,
 					}),
 					n(127291, {	-- Watcher Aival
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 48822,
 					}),
 					n(127118, {	-- Worldsplitter Skuul
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153312),	-- Praetor's Ornamental Greatsword
 							i(152886),	-- Zealous Felslinger's Visage
 							i(152888),	-- Zealous Felslinger's Epaulets
@@ -984,7 +978,7 @@ _.Zones =
 					}),
 					n(126338, {	-- Wrath-Lord Yarez
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(153126),	-- Micro-Artillery Controller
 						},
 						["questID"] = 48814,
@@ -994,7 +988,7 @@ _.Zones =
 				n(-2, { 	-- Vendors
 					n(128134, {	-- Orix the All-Seer
 						["coord"] = { 59.54, 44.98 },
-						["g"] = {
+						["groups"] = {
 							i(153021, {	-- Intact Demon Eye
 								["description"] = "These eyes drop off of any demon on Argus while you have the Agent of the All Seer buff which can be obtained by clicking on the All-Seer Focus. WARNING: You will lose 90% health, so if you are missing any health, you might die! Walking into a hub will have the guards attack you.\n\nYou need 2500 for all of the useful items.",
 								["qg"] = 128151,	-- All-Seer Focus
@@ -1004,16 +998,16 @@ _.Zones =
 									{ 64.41, 21.03 },	-- Defiled Path
 									{ 58.01, 66.96 },	-- Felfire Armory
 								},
-								["g"] = {
+								["groups"] = {
 									i(153204),	-- All-Seer's Eye Toy
 									i(153026),	-- Cross Gazer Pet
 									i(153226, {	-- Observer's Locus Resonator
 										["f"] = 0,	-- Not Miscellaneous
-										["g"] = {
+										["groups"] = {
 											n(127706, {	-- Rezira the Seer
 												["description"] = "In order to reach this rare you must either use the Observer's Locus Resonator purchaseable from Orix the All-Seer or use someone else's portal.",
 												["questID"] = 48971,
-												["g"] = {
+												["groups"] = {
 													i(153293),	-- Sightless Eye
 												},
 											}),
@@ -1026,6 +1020,40 @@ _.Zones =
 							}),
 						},
 						["description"] = "Once you collected the eyes you return to this npc to buy the items.  You can purchase an elixir for 25 eyes so you no longer need to find the focus."
+					}),
+				}),
+				n(-34, {	-- World Quests
+					q(48867, {	-- Chief Alchemist Munculus
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48637, {	-- Cleansing Fire
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(47552, {	-- Mistress Il'thendra
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48833, {	-- Ritual Completion
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48526, {	-- Scuttled
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48358, {	-- Supplies Needed: Empyrium
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48866, {	-- Void Warden Valsuran
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48465, {	-- Vrax'thul
+						["lvl"] = 110,
+						["collectible"] = false,
 					}),
 				}),
 			},
