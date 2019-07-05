@@ -17,6 +17,155 @@ _.Zones =
 			["lvl"] = 98,
 			["g"] = {
 				n(-4,   {	-- Achievements
+					ach(9696,  {	-- Family Familiar
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["g"] = {
+							ach(9686, {	-- Aquatic Acquiescence
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+							ach(9687, {	-- Best of the Beasts
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+							ach(9689, {	-- Dragons!
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+							ach(9691, {	-- Flock Together
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+							ach(9693, {	-- Master of Magic
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+							ach(9688, {	-- Mousing Around
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+							ach(9692, {	-- Murlocs, Harpies, and Wolvar, Oh My!
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+							ach(9690, {	-- Ragnaros, Watch and Learn
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+							ach(9694, {	-- Roboteer
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+							ach(9695, {	-- The Lil' Necromancer
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(14, {	-- Durian Strongfruit
+										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
+										["coord"] = { 47.0, 39.6, 641 },
+									}),
+									crit(15, {	-- Xorvasc
+										["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
+										["coord"] = { 63.6, 60.6, 641 },
+									}),
+								},
+							}),
+						},
+					}),
+					ach(10877, {	-- Pillars of Creation
+						["sourceQuests"] = { 40890 },	-- The Tears of Elune
+					}),
 					ach(10698, {	-- That's Val'sharah Folks!
 						crit(1, {	-- Archdruid of the Vale
 							["sourceQuests"] = { 40573 },	-- The Nightmare Lord
@@ -42,9 +191,6 @@ _.Zones =
 						crit(7, {	-- Black Rook Hold
 							["sourceQuests"] = { 38721 },	-- Lieutenant of the Tower
 						}),
-					}),
-					ach(10877, {	-- Pillars of Creation
-						["sourceQuests"] = { 40890 },	-- The Tears of Elune
 					}),
 				}),
 				n(-169, {	-- Emissary Quess

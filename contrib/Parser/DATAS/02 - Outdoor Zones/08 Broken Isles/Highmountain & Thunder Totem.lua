@@ -74,6 +74,192 @@ _.Zones =
 					ach(10398, {	-- Drum Circle
 						["description"] = "You need 5 people jumping on the drum on the lower floor of Thunder Totem. CANNOT be completed while you are on 'Assault on Thunder Totem'."
 					}),
+					ach(9696,  {	-- Family Familiar
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+							ach(9686, {	-- Aquatic Acquiescence
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+							ach(9687, {	-- Best of the Beasts
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+							ach(9689, {	-- Dragons!
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+							ach(9691, {	-- Flock Together
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+							ach(9693, {	-- Master of Magic
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+							ach(9688, {	-- Mousing Around
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+							ach(9692, {	-- Murlocs, Harpies, and Wolvar, Oh My!
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+							ach(9690, {	-- Ragnaros, Watch and Learn
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+							ach(9694, {	-- Roboteer
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+							ach(9695, {	-- The Lil' Necromancer
+								["collectible"] = false,
+								["filterID"] = 101,	-- Battle Pet
+								["g"] = {
+									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
+										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									}),
+									crit(7, {	-- Grixis Tinypop
+										["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
+										["coord"] = { 41.8, 35.8, 650 },
+									}),
+									crit(8, {	-- Odrogg
+										["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
+										["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
+									}),
+								},
+							}),
+						},
+					}),
 					ach(10877, {	-- Pillars of Creation
 						["collectible"] = false,
 						["g"] = {
