@@ -25,6 +25,7 @@ _.Zones =
 				}),
 				n(63083, {	-- Will Larsons
 					["coord"] = { 50.1, 20.2, 62 },
+					["races"] = ALLIANCE_ONLY,
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
 						p(138, {	-- Blue Moth
