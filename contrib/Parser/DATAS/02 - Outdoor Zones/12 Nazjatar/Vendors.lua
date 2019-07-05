@@ -175,7 +175,7 @@ _.Zones =
 					i(169605),	-- Formula: Accord of Haste (Rank 3)
 					i(169604),	-- Formula: Accord of Critical Strike (Rank 3)
 					i(169607),	-- Formula: Accord of Versatility (Rank 3)
-					i(169601),	-- Recipe: Potion of Reconstitution (Rank 3)
+					un(1, i(169601)),	-- Recipe: Potion of Reconstitution (Rank 3)
 					i(169602),	-- Recipe: Potion of Focused Resolve (Rank 3)
 					i(169600),	-- Recipe: Potion of Empowered Proximity (Rank 3)
 					i(169603),	-- Recipe: Greater Mystical Cauldron (Rank 3)
