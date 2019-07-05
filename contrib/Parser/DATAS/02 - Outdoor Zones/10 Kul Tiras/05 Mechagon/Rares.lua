@@ -18,6 +18,7 @@ _.Zones =
 						i(168908, {	-- Blueprint: Experimental Adventurer Augment
 							["questID"] = 56087,
 						}),
+						i(168823),	-- Rusty Mechanocrawler
 					},
 				}),
 				n(150394, {	-- Armored Vaultbot	-- possibly 154968
