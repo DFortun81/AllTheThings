@@ -7,6 +7,11 @@ _.Zones =
 		m(895, {	-- -- Tiragarde Sound
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
+					q(51385, {	-- A Supply of Stingers
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51610, {	-- Adhara White
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -52,7 +57,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Master of Calligraphy (Circle)
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
@@ -72,6 +77,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(53278, {	-- Flourishing Riverbud
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
 					q(53277, {	-- Flourishing Sea Stalks
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -80,6 +90,16 @@ _.Zones =
 					q(51654, {	-- Fowlmouth
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(53188, {	-- Frozen Freestyle
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["groups"] = {
+							ach(13060, {	-- Kul Runnings
+								crit(2),	-- Frozen Freestyle
+							}),
+						},
 					}),
 					q(52120, {	-- Gnomish Azerite Extraction
 						["lvl"] = 120,
@@ -107,7 +127,7 @@ _.Zones =
 					q(53994, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
@@ -115,7 +135,7 @@ _.Zones =
 						["qg"] = 141077,	-- Kwint
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(9, {	-- Battle on Zandalar and Kul Tiras (Not So Bad Down Here)
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -124,6 +144,10 @@ _.Zones =
 					q(51090, {	-- Picturesque Norwington Estate
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51843, {	-- P4-N73R4
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51656, {	-- Saurolisk Tamer Mugg
@@ -138,7 +162,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(12087),	-- The Reining Champion
 						},
 					}),
@@ -146,6 +170,26 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+					}),
+					q(49994, {	-- Sliding with Style
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["groups"] = {
+							ach(13060, {	-- Kul Runnings
+								crit(1),	-- Sliding with Style
+							}),
+						},
+					}),
+					q(53189, {	-- Slippery Slopes
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["groups"] = {
+							ach(13060, {	-- Kul Runnings
+								crit(3),	-- Slippery Slopes
+							}),
+						},
 					}),
 					q(52143, {	-- Smaller Haulers
 						["lvl"] = 120,
@@ -160,7 +204,7 @@ _.Zones =
 						["qg"] = 141479,	-- Burly
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(12, {	-- Battle on Zandalar and Kul Tiras (Strange Looking Dogs)
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -170,7 +214,7 @@ _.Zones =
 						["hordeQuestID"] = 53196,	-- Swab This! (Horde)
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13050, {	-- Bless the Rains Down in Freehold
 								crit(1),	-- Banana Hoard
 								crit(2),	-- Sweete's Feast
@@ -183,7 +227,7 @@ _.Zones =
 						["qg"] = 141292,	-- Delia Hanako
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(11, {	-- Battle on Zandalar and Kul Tiras (That's a Big Carcass)
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -214,7 +258,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							ach(13059),	-- Drag Race
 						},
 					}),
@@ -222,7 +266,7 @@ _.Zones =
 						["qg"] = 141215,	-- Chitara
 						["lvl"] = 120,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(10, {	-- Battle on Zandalar and Kul Tiras (Unbreakable)
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -233,7 +277,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 197,	-- Tailoring
-						["g"] = {
+						["groups"] = {
 							i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
 						},
 					}),
@@ -242,7 +286,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 171,	-- Alchemy
-						["g"] = {
+						["groups"] = {
 							i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
 						},
 					}),
@@ -251,7 +295,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 171,	-- Alchemy
-						["g"] = {
+						["groups"] = {
 							i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
 						},
 					}),

@@ -85,6 +85,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50369, { 	-- Bruin Potions
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(55264, {	-- Calligraphy
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -267,6 +272,15 @@ _.Zones =
 					}),
 					q(54471, {	-- Tend the Wounded
 						["coord"] = { 33.89, 46.98, 896 },
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(55215, { 	-- The Cycle of Life
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51690, { 	-- The Shadows of Corlain
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,

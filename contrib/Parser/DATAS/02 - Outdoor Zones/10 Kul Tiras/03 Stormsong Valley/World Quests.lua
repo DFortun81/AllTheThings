@@ -45,6 +45,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51623, {	-- Azerite Wounds
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51639, {	-- Beachhead
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -101,6 +105,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(52133, {	-- Good Boy!
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51779, {	-- Grimscowl the Harebrained
 						["coord"] = { 62.0, 73.9, 942 },
 						["lvl"] = 120,
@@ -139,6 +148,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51806, {	-- Pest Remover Mk. II
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52474, {	-- Poacher Zane
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
