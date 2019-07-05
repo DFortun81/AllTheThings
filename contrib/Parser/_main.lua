@@ -752,11 +752,6 @@ na = function(id, t) return a(n(id,t)); end					-- Alliance Only NPC Object
 nh = function(id, t) return h(n(id,t)); end					-- Horde Only NPC Object
 
 -- Specific Quest Type Shortcuts [Blame Daktar for long list! :) ]
-qart = function(t)						-- Gives a quest the Artifact Description
-	t.description = "This is an artifact quest.";
-	t.icon = "Interface\\Minimap\\TrapInactive_HammerGold";
-	return t;
-end
 ql = function(t)							-- Gives a quest the Legendary Description
 	t.description = "This quest is part of a legendary quest line.";
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_odyn";

@@ -7,10 +7,10 @@ _.Zones =
 		m(42, {	-- Deadwind Pass
 			n(-17, {	-- Quests
 --[[			
-				qart(q(40933, {	-- A Grisly Task
+				q(40933, {	-- A Grisly Task
 					["qg"] = 100729,	-- 
 					["classes"] = {6},
-				})),
+				}),
 				q(44421, {	-- Anomalous Anomalies
 					["qg"] = 113986,	-- 
 				}),
@@ -63,14 +63,14 @@ _.Zones =
 					["sourceQuest"] = 40588,	-- Following the Curse
 				}),
 				--[[
-				qart(q(40835, {	-- Disturbing the Past
+				q(40835, {	-- Disturbing the Past
 					["qg"] = 100729,	-- 
 					["classes"] = {11},
-				})),
-				qart(q(40932, {	-- Disturbing the Past
+				}),
+				q(40932, {	-- Disturbing the Past
 					["qg"] = 100729,	-- 
 					["classes"] = {6},
-				})),
+				}),
 ]]--
 				q(44557, {	-- Finite Numbers
 					["qg"] = 114310,	-- Archmage Khadgar
@@ -78,18 +78,18 @@ _.Zones =
 					["coord"] = { 47.0, 75.2, 42 },
 				}),
 --[[
-				qart(q(40931, {	-- Following the Curse
+				q(40931, {	-- Following the Curse
 					["qg"] = 100323,	-- 
 					["classes"] = {6},
-				})),
-				qart(q(40588, {	-- Following the Curse
+				}),
+				q(40588, {	-- Following the Curse
 					["qg"] = 100323,	-- 
 					["classes"] = {9},
-				})),
-				qart(q(40834, {	-- Following the Curse
+				}),
+				q(40834, {	-- Following the Curse
 					["qg"] = 100323,	-- 
 					["classes"] = {11},
-				})),
+				}),
 				]]--
 				q(44734, {	-- Fragments of the Past
 					["qg"] = 114310,	-- Archmage Khadgar
@@ -187,34 +187,34 @@ _.Zones =
 					["sourceQuest"] = 44733,	-- The Power of Corruption
 				}),
 				--[[
-				qart(q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
+				q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
 					["qg"] = 101282,	-- 
 					["classes"] = {11},
-				})),
-				qart(q(40935, {	-- The Call of Vengeance (map blank
+				}),
+				q(40935, {	-- The Call of Vengeance (map blank
 					["qg"] = 101282,	-- 
 					["classes"] = {6},
-				})),
-				qart(q(40987, {	-- The Call of Vengeance (map blank
+				}),
+				q(40987, {	-- The Call of Vengeance (map blank
 					["qg"] = 101282,	-- 
 					["classes"] = {6},
-				})),
-				qart(q(40934, {	-- The Dark Riders
+				}),
+				q(40934, {	-- The Dark Riders
 					["qg"] = 100812,	-- 
 					["classes"] = {6},
-				})),
-				qart(q(40986, {	-- The Dark Riders
+				}),
+				q(40986, {	-- The Dark Riders
 					["qg"] = 100812,	-- 
 					["classes"] = {6},
-				})),
-				qart(q(40838, {	-- The Dark Riders
+				}),
+				q(40838, {	-- The Dark Riders
 					["qg"] = 100812,	-- 
 					["classes"] = {11},
-				})),
-				qart(q(41155, {	-- The Dark Riders
+				}),
+				q(41155, {	-- The Dark Riders
 					["qg"] = 100812,	-- 
 					["classes"] = {9},
-				})),
+				}),
 --]]
 				q(40623, {	-- The Dark Riders
 					["qg"] = 100812,	-- Revil Kost
@@ -224,10 +224,10 @@ _.Zones =
 					["sourceQuest"] = 40611,	-- The Fate of Deadwind
 				}),
 --[[
-				qart(q(40837, {	-- The Deadwind Hunt
+				q(40837, {	-- The Deadwind Hunt
 					["qg"] = 100729,	-- 
 					["classes"] = {11},
-				})),
+				}),
 				q(42970, {	-- The Diamond King
 					["qg"] = 113655,	-- 
 				}),
@@ -241,9 +241,9 @@ _.Zones =
 				}),
 --[[
 				o(254007, {	-- Executioner's Altar
-					qart(q(44154, {	-- The Rite of the Executioner
+					q(44154, {	-- The Rite of the Executioner
 						["classes"] = {9},
-					})),
+					}),
 				}),
 				]]--
 				q(40606, {	-- To Point the Way

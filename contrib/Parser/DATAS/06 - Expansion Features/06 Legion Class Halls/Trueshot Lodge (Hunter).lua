@@ -19,15 +19,15 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-17, {	-- Quests
-					qart(q(41541, {	-- A Beastly Expedition 
+					q(41541, {	-- A Beastly Expedition 
 						["qg"] = 107317,	-- Emmarel Shadewarden
 						["classes"] = {3},
-					})),
+					}),
 	--[[ waiting on Coordinates							
-					qart(q(41541, {	-- A Beastly Expedition
+					q(41541, {	-- A Beastly Expedition
 						["qg"] = 107973,	-- Emmarel Shadewarden
 						["classes"] = {3},
-					})),
+					}),
 	--]]							
 					q(41541),	-- A Beastly Expedition
 					q(43423),	-- A Hero's Weapon

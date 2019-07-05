@@ -68,13 +68,13 @@ _.Zones =
 						i(157003),	-- Corpseweed Hewer
 					},
 				}),
-				qart(q(40785, {	-- A Foe of the Dark
+				q(40785, {	-- A Foe of the Dark
 					["qg"] = 101651,	-- Belysra Starbreeze
 					["lvl"] = 98,
 					["coord"] = { 48.8, 34.4, 47 },
 					["classes"] = { 11 },	-- Druid
 					["sourceQuest"] = 40784,	-- Its Rightful Place
-				})),
+				}),
 				q(26787, {	-- Bear In Mind
 					["qg"] = 288,	-- Jitters
 					["coord"] = { 18.6, 58.3, 47 },
@@ -187,27 +187,27 @@ _.Zones =
 						i(3683),	-- Recipe: Gooey Spider Cake
 					},
 				}),
-				qart(q(40834, {	-- Following the Curse
+				q(40834, {	-- Following the Curse
 					["qg"] = 100323,	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 77.4, 36.2, 47 },
 					["classes"] = { 11 },	-- Druid
 					["sourceQuest"] = 40785,	-- A Foe in the Dark
-				})),
-				qart(q(40588, {	-- Following the Curse
+				}),
+				q(40588, {	-- Following the Curse
 					["qg"] = 100323,	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 77.4, 36.1, 47 },
 					["classes"] = { 9 },	-- Warlock
 					["sourceQuest"] = 40495,	-- Ulthalesh, the Deadwind Harvester
-				})),
-				qart(q(40931, {	-- Following the Curse
+				}),
+				q(40931, {	-- Following the Curse
 					["qg"] = 100323,	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 77.4, 36.2, 47 },
 					["classes"] = { 6 },	-- Death Knight
 					["sourceQuest"] = 40930,	-- Apocalypse
-				})),
+				}),
 				q(26661, {	-- Gather Rot Blossoms
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.7, 44.4, 47 },
@@ -245,13 +245,13 @@ _.Zones =
 					["classes"] = { 5 },	-- Priest
 					["sourceQuest"] = 43391,	-- Secrets of the Void
 				}),
-				qart(q(40784, {	-- Its Rightful Place
+				q(40784, {	-- Its Rightful Place
 					["qg"] = 101656,	-- Valorn Stillbough
 					["lvl"] = 98,
 					["coord"] = { 48.8, 34.3, 47 },
 					["classes"] = { 11 },	-- Druid
 					["sourceQuest"] = 40783,	-- The Scythe of Elune
-				})),
+				}),
 				q(26676, {	-- Juice Delivery
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.7, 44.4, 47 },

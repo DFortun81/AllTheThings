@@ -318,18 +318,18 @@ _.Zones =
 						}),
 					},
 				}),
-				qart(q(42504, {	-- The Unseen Blade
+				q(42504, {	-- The Unseen Blade
 					["qg"] = 107979,	-- Garona Halforcen
 					["lvl"] = 100,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },
-				})),
-				qart(q(42627, {	-- The Unseen Blade
+				}),
+				q(42627, {	-- The Unseen Blade
 					["qg"] = 107979,	-- Garona Halforcen
 					["lvl"] = 100,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },
-				})),
+				}),
 				o(307265, {	-- Wanted Poster -- also provided by 307325 (24.5, 74.6)
 					["coords"] = {
 						{ 24.5, 78.2, 37 },

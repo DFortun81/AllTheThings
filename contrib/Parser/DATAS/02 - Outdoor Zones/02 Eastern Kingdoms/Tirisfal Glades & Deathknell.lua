@@ -135,13 +135,13 @@ _.Zones =
 						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuests"] = { 25009 },	-- At War With The Scarlet Crusade
 					}),
-					qart(q(40706, {	-- A Legend You Can Hold
+					q(40706, {	-- A Legend You Can Hold
 						["qg"] = 101314,	-- Alonsus Faol
 						["lvl"] = 98,
 						["coord"] = { 79.0, 40.9, 18 },
 						["classes"] = { 5 },	-- priest
 						["sourceQuests"] = { 40705 },	-- Priestly Matters
-					})),
+					}),
 					qh(25013, {	-- A Little Oomph
 						["g"] = {
 							i(57167),	-- Night Web Gloves
@@ -170,13 +170,13 @@ _.Zones =
 						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuests"] = { 25007 },	-- East... Always to the East
 					}),
-					qart(q(40710, {	-- Blade in Twilight
+					q(40710, {	-- Blade in Twilight
 						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
 						["lvl"] = 98,
 						["coord"] = { 79.0, 40.9, 18 },
 						["classes"] = { 5 },	-- Priest
 						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
-					})),
+					}),
 					{	-- Corrupter's Scourgestones [H]
 						["questID"] = 5406,	-- Corruptor's Scourgestones
 						["qg"] = 10839,		-- Argent Officer Garush
@@ -353,10 +353,10 @@ _.Zones =
 							["qg"] = 1658,	-- Captain Dargol
 						}),
 					}),
-					qart(q(41625, {	-- The Light's Wrath
+					q(41625, {	-- The Light's Wrath
 						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
 						["classes"] = { 5 },	-- Priest
-					})),
+					}),
 					qh(25004, {	-- The Mills Overrun
 						["qg"] = 1500,	-- Coleman Farthing
 						["sourceQuests"] = { 25003 },	-- The Family Crypt
@@ -369,10 +369,10 @@ _.Zones =
 						["qg"] = 1519,	-- Deathguard Simmer
 						["sourceQuests"] = { 24978 },	-- Reaping the Reapers
 					}),
-					qart(q(41957, {	-- The Vindicator's Plea
+					q(41957, {	-- The Vindicator's Plea
 						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
 						["classes"] = { 5 },	-- Priest
-					})),
+					}),
 					qh(25011, {	-- To Bigger and Better Things
 						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuests"] = { 25046 },	-- A Daughter's Embrace

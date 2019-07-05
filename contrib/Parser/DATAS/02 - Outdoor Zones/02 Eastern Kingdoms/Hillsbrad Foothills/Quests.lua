@@ -171,11 +171,11 @@ _.Zones =
 					["qg"] = 47900,	-- Master Apothecary Lydon
 					["sourceQuests"] = { 28206 },	-- Little Girl Lost
 				}),
-				qart(qa(11997, {	-- The Frozen Flame
+				qa(11997, {	-- The Frozen Flame
 					["qg"] = 99415,	-- Aethas Sunreaver
 					["classes"] = { 8 },	-- Mage
 					["sourceQuests"] = { 40270 },	-- The Path of Atonement
-				})),
+				}),
 				q(28744, {	-- Ghouls Hate My Grains
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuests"] = { 28617 },	-- Flower Power
@@ -528,11 +528,11 @@ _.Zones =
 					},
 					["qg"] = 2437,	-- Keeper Bel'varil
 				}),
-				qart(q(40270, {	-- The Path of Atonement
+				q(40270, {	-- The Path of Atonement
 					["qg"] = 99398,	-- Archmage Modera
 					["classes"] = { 8 },	-- Mage
 					["sourceQuests"] = { 40267 },	-- An Unexpected Message
-				})),
+				}),
 				qh(28375, {	-- The Road to Purgation
 					["qg"] = 48218,	-- Kingslayer Orkus
 					["sourceQuests"] = { 28354 },	-- Kasha Will Fly Again

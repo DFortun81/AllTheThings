@@ -2233,9 +2233,9 @@ _.Zones =
 					}),				  
 				--[[ These quests will be organized soon™
 					q(44720),	-- A Call to Action
-					qart(q(45534, {	-- A Common Enemy
+					q(45534, {	-- A Common Enemy
 						["qg"] = 117394,	-- Sigryn
-					})),
+					}),
 					q(40614),	-- A Feast Fit for Odyn
 					q(40078),	-- A Heavy Burden
 					q(44771),	-- A Threat Rises

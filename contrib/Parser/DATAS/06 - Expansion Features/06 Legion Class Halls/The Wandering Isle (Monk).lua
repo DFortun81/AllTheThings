@@ -257,14 +257,14 @@ _.ExpansionFeatures =
 					}),
 					--]]
 	--[[ These quests moved here from Uldum. Organize later plz?
-						qart(q(40570, {	-- Into The Heavens
+						q(40570, {	-- Into The Heavens
 							["qg"] = 47684,	-- King Phaoris
 							["classes"] = {10},
-						})),
-						qart(q(40634, {	-- Thunder on the Sands
+						}),
+						q(40634, {	-- Thunder on the Sands
 							["qg"] = 47684,	-- King Phaoris
 							["classes"] = {10},
-						})),
+						}),
 	--]]
 				}),
 				--[[

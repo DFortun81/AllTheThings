@@ -456,12 +456,12 @@ _.Zones =
 						un(2, i(15804)),	-- Cerise Drape
 					},
 				}),
-				qart(q(42774, {	-- Hope Prevails
+				q(42774, {	-- Hope Prevails
 					["lvl"] = 98,
 					["qg"] = 108776,	-- Lord Maxwell Tyrosus
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
-				})),
+				}),
 				q(5944, {	-- In Dreams
 					["u"] = 40,
 					["g"] = {
@@ -489,12 +489,12 @@ _.Zones =
 				q(27156, {	-- It's About Time!
 					["qg"] = 45157,	-- Lieutenant Myner
 				}),
-				qart(q(42771, {	-- Keeping the Peace
+				q(42771, {	-- Keeping the Peace
 					["qg"] = 108778,	-- Mehlar Dawnblade
 					["lvl"] = 98,
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
-				})),
+				}),
 				q(5060, {	-- Locked Away
 					["u"] = 40,
 					["g"] = {
@@ -536,18 +536,18 @@ _.Zones =
 					["qg"] = 44472,	-- Kelly Dumah
 					["sourceQuests"] = { 27013 },	-- Too Close for Comfort
 				}),
-				qart(q(42772, {	-- Sacred Ground
+				q(42772, {	-- Sacred Ground
 					["qg"] = 108777,	-- High Priest Thel'danis
 					["lvl"] = 98,
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
-				})),
-				qart(q(42770, {	-- Seeking Guidance
+				}),
+				q(42770, {	-- Seeking Guidance
 					["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (same QG, different IDs)
 					["lvl"] = 98,
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
-				})),
+				}),
 				qa(5344, {	-- The Last Barov
 					["u"] = 40,
 					["g"] = {
@@ -560,12 +560,12 @@ _.Zones =
 						un(2, i(14022)),	-- Barov Peasant Caller
 					},
 				}),
-				qart(q(42773, {	-- The Light Reveals
+				q(42773, {	-- The Light Reveals
 					["qgs"] = { 108776 },	-- Lord Maxwell Tyrosus
 					["lvl"] = 98,
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
-				})),
+				}),
 				q(26957, {	-- The Long Trip Home
 					["qg"] = 44905,	--
 				}),
