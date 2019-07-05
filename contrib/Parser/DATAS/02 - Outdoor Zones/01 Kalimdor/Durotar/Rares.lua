@@ -22,7 +22,7 @@ _.Zones =
 						{ 38.6, 44.0, 1 },
 						{ 36.6, 44.4, 1 },
 					},
-					["groups"] = {
+					["g"] = {
 						i(6267),	--Disciple's Pants
 						i(68762),	-- Imbued Cadet Cloak
 						i(68754),	-- Imbued Disciple's Boots
@@ -53,7 +53,7 @@ _.Zones =
 						{ 51.8, 9.6, 1 },
 						{ 53.2, 7.6, 1 },
 					},
-					["groups"] = {
+					["g"] = {
 						i(6267),	-- Disciple's Pants
 						i(6512),	-- Disciple's Robe
 						i(6266),	-- Disciple's Vest

@@ -14,7 +14,7 @@ _.Zones =
 					},
 				}),
 				n(113615, {	-- Ravika <Darkspear Quartermaster> Legion Version
-					["description"] = "Only available with the quest 'The Legion Returns'. Permanently available on the Echo Isles.",
+					["description"] = "Only available with the quest |cFFFFD700The Legion Returns|r. Permanently available on the Echo Isles.",
 					["coord"] = { 55.4, 11.2, 1 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
