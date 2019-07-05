@@ -351,6 +351,11 @@ _.Zones =
 					["coord"] = { 75.2, 69.8, 862 },
 					["races"] = HORDE_ONLY,	-- QG is tauren. probably horde only? verify this
 				}),
+				q(55994, {	-- Do Not Drink — don't know if there are any SQs or if this is just up some days
+					["isDaily"] = true,
+					["coord"] = { 58.9, 31.7, 1462 },
+					["qg"] = 153750,	-- Koupal Oilshins
+				}),
 				i(169691, {	-- Vinyl: Depths of Ulduar
 					["questID"] = 56518,	-- Vinyl: Depths of Ulduar
 					["coord"] = { 70.3, 30.2, 862 },
@@ -714,7 +719,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(56762, {	-- Rustbolt Requisitions: Great Sea Catfish
+				q(56763, {	-- Rustbolt Requisitions: Great Sea Catfish (A)
+					["isDaily"] = true,
+					["coord"] = { 77.7, 40.3, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 149813,	-- Gila Crosswires
+				}),
+				q(56762, {	-- Rustbolt Requisitions: Great Sea Catfish (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 862 },
 					["races"] = HORDE_ONLY,

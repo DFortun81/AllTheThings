@@ -198,7 +198,7 @@ _.Zones =
 					},
 				}),
 				n(154701, {	-- Gorged Gear-Cruncher
-					["coord"] = { 50.5, 48.3, 1462 },
+					["coord"] = { 73.2, 54.2, 1462 },
 					["questID"] = 56367,
 					["isDaily"] = true,
 					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
