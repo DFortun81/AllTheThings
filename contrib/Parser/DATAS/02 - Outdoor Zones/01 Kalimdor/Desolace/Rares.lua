@@ -63,7 +63,7 @@ _.Zones =
 						i(7436),	-- Twilight Cape
 						i(7437),	-- Twilight Cuffs
 					},
-				}), 
+				}),
 				n(18241, {	-- Crusty
 					["coords"] = {
 						{ 39.0, 18.2, 66 },
@@ -171,7 +171,7 @@ _.Zones =
 						i(9864),	-- Renegade Boots
 						i(9871),	-- Renegade Leggings
 					},
-				}), 
+				}),
 				n(14228, {	-- Giggler
 					["coords"] = {
 						{ 58.0, 9.00, 66 },
@@ -208,7 +208,7 @@ _.Zones =
 						i(6616),	-- Sage's Pants
 						i(9835),	-- Scaled Leather Tunic
 					},
-				}), 
+				}),
 				n(14227, {	-- Hissperak
 					["coords"] = {
 						{ 52.0, 48.0, 66 },
@@ -260,7 +260,7 @@ _.Zones =
 						i(7414),	-- Infiltrator Pants
 						i(7421),	-- Phalanx Gauntlets
 					},
-				}), 
+				}),
 				n(14226, {	-- Kaskk
 					["coords"] = {
 						{ 51.2, 84.8, 66 },
@@ -312,7 +312,7 @@ _.Zones =
 						i(7447),	-- Sentinel Bracers
 						i(7446),	-- Sentinel Cloak
 					},
-				}), 
+				}),
 				n(4684,  { 	-- Nether Sorceress
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
@@ -360,7 +360,7 @@ _.Zones =
 						i(10406),	-- Scaled Leather Headband
 						i(9834),	-- Scaled Leather Shoulders
 					},
-				}), 				
+				}),
 			}),
 		}),
 	}),

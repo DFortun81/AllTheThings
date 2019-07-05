@@ -26,11 +26,10 @@ _.Zones =
 					["coord"] = { 51.0, 53.4, 66 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						{	-- Design: Blazing Citrine Ring
-							["itemID"] = 20973,	-- Design: Blazing Citrine Ring
+						i(20973, {	-- Design: Blazing Citrine Ring
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 							["u"] = 7,
-						},
+						}),
 						i(7114),	-- Pattern: Azure Silk Gloves
 						i(12232),	-- Recipe: Carrion Surprise
 						i(12240),	-- Recipe: Heavy Kodo Stew

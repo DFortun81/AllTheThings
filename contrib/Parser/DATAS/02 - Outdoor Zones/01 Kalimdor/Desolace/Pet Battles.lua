@@ -50,7 +50,7 @@ _.Zones =
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
-				}),	
+				}),
 				q(31872, {	-- Merda Stronghoof
 					["qg"] = 66372,	-- Merda Stronghoof
 					["coord"] = { 57.2, 45.8, 66 },
