@@ -23,59 +23,50 @@ _.Zones =
 				877,	-- Fields of the Eternal Hunt
 			},
 			["lvl"] = 98,
-			["groups"] = {
+			["g"] = {
 				n(-4,     {	-- Achievement
 					ach(10877, {	-- Pillars of Creation
 						["collectible"] = false,
 						["groups"] = {
-							{	-- Criteria 1 — Aegis of Aggramar
-								["criteriaID"] = 1,	-- Aegis of Aggramar
+							crit(1, {	-- Aegis of Aggramar
 								["sourceQuests"] = { 43349 },	-- The Aegis of Aggramar
-							},
+							}),
 						},
 					}),
 					ach(10790, {	-- Vrykul Story, Bro
-						{	-- Criteria 1 — Greymane's Gambit
-							["criteriaID"] = 1,	-- Greymane's Gambit
+						crit(1, {	-- Greymane's Gambit
 							["sourceQuests"] = {
 								39800,	-- Greymane's Gambit (Alliance)
 								39801,	-- The Splintered Fleet (Horde)
 							},
-						},
-						{	-- Criteria 2 — The Aftermath
-							["criteriaID"] = 2,	-- The Aftermath
+						}),
+						crit(2, {	-- The Aftermath
 							["sourceQuests"] = {
 								38362,	-- A Grim Trophy (Horde)
 								38060,	-- Signal Boost (Alliance)
 							},
-						},
-						{	-- Criteria 3 — The Trial of Might
-							["criteriaID"] = 3,	-- The Trial of Might
+						}),
+						crit(3, {	-- The Trial of Might
 							["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
-						},
-						{	-- Criteria 4 — The Trial of Will
-							["criteriaID"] = 4,	-- The Trial of Will
+						}),
+						crit(4, {	-- The Trial of Will
 							["sourceQuests"] = { 38624 },	-- Cry Thunder!
-						},
-						{	-- Criteria 5 — The Trial of Valor
-							["criteriaID"] = 5,	-- The Trial of Valor
+						}),
+						crit(5, {	-- The Trial of Valor
 							["sourceQuests"] = { 38818 },	-- The Final Judgment
-						},
-						{	-- Criteria 6 — To Helheim and Back
-							["criteriaID"] = 6,	-- To Helheim and Back
+						}),
+						crit(6, {	-- To Helheim and Back
 							["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
-						},
-						{	-- Criteria 7 — Secrets of the Shieldmaidens
-							["criteriaID"] = 7,	-- Secrets of the Shieldmaidens
+						}),
+						crit(7, {	-- Secrets of the Shieldmaidens
 							["sourceQuests"] = {
 								39122,	-- Ending the New Beginning (Alliance)
 								38882,	-- A New Life for Undeath (Horde)
 							},
-						},
-						{	-- Criteria 8 — The Champion of Stormheim
-							["criteriaID"] = 8,	-- The Champion of Stormheim
+						}),
+						crit(8, {	-- The Champion of Stormheim
 							["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
-						},
+						}),
 					}),
 				}),
 				n(-10067, {	-- Artifacts
@@ -651,7 +642,7 @@ _.Zones =
 						}),
 					},
 				}),
-				filter(101,    {	-- Pet Battle
+				filter(101, {	-- Pet Battle
 					{	-- Albatross Chick
 						["speciesID"] = 1708,	-- Albatross Chick
 						["crs"] = { 97018 },	-- Albatross Chick
@@ -2604,6 +2595,153 @@ _.Zones =
 					}),
 				}),
 				n(-34,    {	-- World Quests
+					q(43964, {	-- A Jarl's Feast
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(42067, {	-- All Howl, No Bite
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(20, {	-- All Howl, No Bite
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(41948, {	-- All Pets Go to Heaven
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(24, {	-- All Pets Go to Heaven
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(43951, {	-- An Overdue Debt
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41935, {	-- Beasts of Burden
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(25, {	-- Beasts of Burden
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(42864, {	-- DANGER: Captain Dargun
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(44893, {	-- Direbeak Swarm!
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(44923, {	-- Helarjar Landing: Vrekt
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41944, {	-- Jarrun's Ladder
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(21, {	-- Jarrun's Ladder
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(43769, {	-- Ley Race
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(45049, {	-- Like the Wind
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(42757, {	-- Maw of Souls: Menace of the Seas
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(40278, {	-- My Beasts's Bidding
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(23, {	-- My Beasts's Bidding
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(41958, {	-- Oh, Ominitron
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(22, {	-- Oh, Ominitron
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(43786, {	-- Pesty Nests
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41927, {	-- Ruining the Runewood
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43827, {	-- Stormwing the Portals
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43452, {	-- WANTED: Isel the Hammer
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43599, {	-- Warden Tower Assault: Blackhawk's Bulwark [A]
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(41652, {	-- Work Order: Queen's Opal Loop
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["collectible"] = false,
+						["lvl"] = 110,
+						["g"] = {
+							i(137865),	-- Design: Queen's Opal Loop (Rank 3)
+						},
+					}),
+					q(41648, {	-- Work Order: Silkweave Bracers
+						["requireSkill"] = 197,	-- Tailoring
+						["collectible"] = false,
+						["lvl"] = 110,
+						["g"] = {
+							i(137961),	-- Pattern: Silkweave Bracers (Rank 3)
+						},
+					}),
+					q(41642, {	-- Work Order: Warhide Footpads
+						["requireSkill"] = 165,	-- Leatherworking
+						["collectible"] = false,
+						["lvl"] = 110,
+						["qg"] = 106904,	-- Valdemar Stormseeker
+						["g"] = {
+							i(137880),	-- Recipe: Warhide Footpads (Rank 3)
+						},
+					}),
+					q(41672, {	-- Work Order: Word of Haste
+						["requireSkill"] = 333,	-- Enchanting
+						["collectible"] = false,
+						["lvl"] = 110,
+						["qg"] = 106904,	-- Valdemar Stormseeker
+						["g"] = {
+							i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
+						},
+					}),
 					n(-322, {	-- Cloak
 						i(134202),	-- Stormsky Cloak
 					}),
@@ -2675,101 +2813,6 @@ _.Zones =
 					n(-387, {	-- Relics
 						i(143685),	-- Strength of the Nazjatar
 					}),
-					q(43964, {	-- A Jarl's Feast
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(43951, {	-- An Overdue Debt
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(42864, {	-- DANGER: Captain Dargun
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(44893, {	-- Direbeak Swarm!
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(44923, {	-- Helarjar Landing: Vrekt
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(43769, {	-- Ley Race
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(45049, {	-- Like the Wind
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(42757, {	-- Maw of Souls: Menace of the Seas
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(41958, {	-- Oh, Ominitron
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(43786, {	-- Pesty Nests
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(41927, {	-- Ruining the Runewood
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(43827, {	-- Stormwing the Portals
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(43452, {	-- WANTED: Isel the Hammer
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(43599, {	-- Warden Tower Assault: Blackhawk's Bulwark [A]
-						["lvl"] = 110,
-						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
-					}),
-					{	-- Work Order: Queen's Opal Loop
-						["questID"] = 41652,
-						["groups"] = {
-							i(137865),	-- Design: Queen's Opal Loop (Rank 3)
-						},
-						["lvl"] = 110,
-						["collectible"] = false,
-						["requireSkill"] = 755,	-- Jewelcrafting
-					},
-					{	-- Work Order: Silkweave Bracers
-						["questID"] = 41648,
-						["groups"] = {
-							i(137961),	-- Pattern: Silkweave Bracers (Rank 3)
-						},
-						["lvl"] = 110,
-						["collectible"] = false,
-						["requireSkill"] = 197,	-- Tailoring
-					},
-					{	-- Work Order: Warhide Footpads
-						["questID"] = 41642,
-						["qg"] = 106904,	-- Valdemar Stormseeker
-						["groups"] = {
-							i(137880),	-- Recipe: Warhide Footpads (Rank 3)
-						},
-						["lvl"] = 110,
-						["collectible"] = false,
-						["requireSkill"] = 165,	-- Leatherworking
-					},
-					{	-- Work Order: Word of Haste
-						["questID"] = 41672,
-						["qg"] = 106904,	-- Valdemar Stormseeker
-						["groups"] = {
-							i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
-						},
-						["lvl"] = 110,
-						["collectible"] = false,
-						["requireSkill"] = 333,	-- Enchanting
-					},
 				}),				
 				n(0,      {	-- Zone Drops
 					["groups"] = {

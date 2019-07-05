@@ -7,7 +7,133 @@ _.Zones =
 		m(630, {	-- Azsuna
 			n(-34, {	-- World Quests
 				-- Quests and WQ need to be done and split up in their files (some of the WQ are in the Questfile)
-				n(-322, {	-- Cloak
+				q(42165, {	-- Azsuna Specimens
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["lvl"] = 110,
+					["g"] = {
+						crit(2, {	-- Azsuna Specimens
+							["achievementID"] = 10876,	-- Battle on the Broken Isles
+						}),
+					},
+				}),
+				q(45203, {	-- Battle for the Ruins (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(42146, {	-- Dazed and Confused and Adorable
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["lvl"] = 110,
+					["g"] = {
+						crit(3, {	-- Dazed and Confused and Adorable
+							["achievementID"] = 10876,	-- Battle on the Broken Isles
+						}),
+					},
+				}),
+				q(42154, {	-- Help a Whelp
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["lvl"] = 110,
+					["g"] = {
+						crit(6, {	-- Help a Whelp
+							["achievementID"] = 10876,	-- Battle on the Broken Isles
+						}),
+					},
+				}),
+				q(46165, {	-- Kazruul (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(46116, {	-- On Unhallowed Grounds (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(45058, {	-- Release the Wardens (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(42063, {	-- Size Doesn't Matter
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["lvl"] = 110,
+					["g"] = {
+						crit(1, {	-- Size Doesn't Matter
+							["achievementID"] = 10876,	-- Battle on the Broken Isles
+						}),
+					},
+				}),
+				q(46170, {	-- Thar'gokk (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(42148, {	-- The Wine's Gone Bad
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["lvl"] = 110,
+					["g"] = {
+						crit(5, {	-- The Wine's Gone Bad
+							["achievementID"] = 10876,	-- Battle on the Broken Isles
+						}),
+					},
+				}),
+				q(42159, {	-- Training with the Nightwatchers
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["lvl"] = 110,
+					["g"] = {
+						crit(4, {	-- Training with the Nightwatchers
+							["achievementID"] = 10876,	-- Battle on the Broken Isles
+						}),
+					},
+				}),
+				q(46263, {	-- Weaving Fel Webs (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41651, {	-- Work Order: Azsunite Pendant
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["collectible"] = false,
+					["g"] = {
+						i(137843),	-- Design: Azsunite Pendant (Rank 3)
+					},					
+				}),
+				q(41639, {	-- Work Order: Battlebound Spaulders
+					["requireSkill"] = 165,	-- Leatherworking
+					["collectible"] = false,
+					["g"] = {
+						i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
+					},
+				}),
+				q(41675, {	-- Work Order: Blink-Trigger Headgun
+					["requireSkill"] = 202,	-- Engineering
+					["collectible"] = false,
+					["g"] = {
+						i(137711),	-- Schematic: Blink-Trigger Headgun (Rank 3)
+					},
+				}),
+				q(41652, {	-- Work Order: Deep Amber Loop
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["collectible"] = false,
+					["g"] = {
+						i(137838),	-- Design: Deep Amber Loop (Rank 3)
+					},
+				}),
+				q(41645, {	-- Work Order: Silkweave Epaulets
+					["requireSkill"] = 197,	-- Tailoring
+					["collectible"] = false,
+					["g"] = {
+						i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
+					},	
+				}),
+				q(41669, {	-- Work Order: Word of Critical Strike
+					["requireSkill"] = 333,	-- Enchanting
+					["collectible"] = false,
+					["g"] = {
+						i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)
+					},
+				}),
+				n(-322,  {	-- Cloak
 					i(134334),	-- Disgraced Court Cloak
 					i(134246),	-- Herringbone Drape
 					i(136748),	-- Vault Watcher's Cloak
@@ -116,74 +242,8 @@ _.Zones =
 						i(134317),	-- Ley-Scarred Sabatons
 					},		
 				}),			
-				n(-387, {	-- Relics
+				n(-387,  {	-- Relics
 					i(141273),	-- Echo of Eons
-				}),
-				q(45203, {	-- Battle for the Ruins (Invasion WQ)
-					["lvl"] = 98,
-					["collectible"] = false,
-				}),
-				q(46165, {	-- Kazruul (Invasion WQ)
-					["lvl"] = 98,
-					["collectible"] = false,
-				}),
-				q(45058, {	-- Release the Wardens (Invasion WQ)
-					["lvl"] = 98,
-					["collectible"] = false,
-				}),
-				q(46170, {	-- Thar'gokk (Invasion WQ)
-					["lvl"] = 98,
-					["collectible"] = false,
-				}),
-				q(46116, {	-- On Unhallowed Grounds (Invasion WQ)
-					["lvl"] = 98,
-					["collectible"] = false,
-				}),
-				q(46263, {	-- Weaving Fel Webs (Invasion WQ)
-					["lvl"] = 98,
-					["collectible"] = false,
-				}),
-				q(41651, {	-- Work Order: Azsunite Pendant
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["collectible"] = false,
-					["g"] = {
-						i(137843),	-- Design: Azsunite Pendant (Rank 3)
-					},					
-				}),
-				q(41639, {	-- Work Order: Battlebound Spaulders
-					["requireSkill"] = 165,	-- Leatherworking
-					["collectible"] = false,
-					["g"] = {
-						i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
-					},
-				}),
-				q(41675, {	-- Work Order: Blink-Trigger Headgun
-					["requireSkill"] = 202,	-- Engineering
-					["collectible"] = false,
-					["g"] = {
-						i(137711),	-- Schematic: Blink-Trigger Headgun (Rank 3)
-					},
-				}),
-				q(41652, {	-- Work Order: Deep Amber Loop
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["collectible"] = false,
-					["g"] = {
-						i(137838),	-- Design: Deep Amber Loop (Rank 3)
-					},
-				}),
-				q(41645, {	-- Work Order: Silkweave Epaulets
-					["requireSkill"] = 197,	-- Tailoring
-					["collectible"] = false,
-					["g"] = {
-						i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
-					},	
-				}),
-				q(41669, {	-- Work Order: Word of Critical Strike
-					["requireSkill"] = 333,	-- Enchanting
-					["collectible"] = false,
-					["g"] = {
-						i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)
-					},
 				}),
 			}),
 		}),

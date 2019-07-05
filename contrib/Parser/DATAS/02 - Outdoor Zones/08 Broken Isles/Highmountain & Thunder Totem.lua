@@ -2558,6 +2558,66 @@ _.Zones =
 					}),
 				}),
 				n(-34,  {	-- World Quests
+					q(42064, {	-- It's Illid... Wait.
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(17, {	-- It's Illid... Wait.
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(41624, {	-- Rocko Needs a Shave
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(19, {	-- Rocko Needs a Shave
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(41687, {	-- Snail Fight!
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(18, {	-- Snail Fight!
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(40282, {	-- Tiny Poacher, Tiny Animals
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(15, {	-- Tiny Poacher, Tiny Animals
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(40280, {	-- Training with Bredda
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(14, {	-- Training with Bredda
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(41766, {	-- Wildlife Protection Force
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(16, {	-- Wildlife Protection Force
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
 					q(41677, {	-- Work Order: Auto-Hammer
 						["requireSkill"] = 202,	-- Engineering
 						["lvl"] = 110,

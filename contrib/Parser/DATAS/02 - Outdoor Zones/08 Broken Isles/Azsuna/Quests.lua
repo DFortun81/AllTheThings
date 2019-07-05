@@ -108,7 +108,6 @@ _.Zones =
 				q(43765),	-- Scouting
 				q(43801),	-- Shell Out Some Pain
 				q(41324),	-- Silky Prowler Fur
-				q(42063),	-- Size Doesn't Matter
 				q(41551),	-- Slab of Bacon
 				q(41259),	-- Slab of Bacon
 				q(41552),	-- Slab of Bacon

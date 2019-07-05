@@ -80,13 +80,7 @@ _.Zones =
 				}),
 				n(-34,  {	-- World Quests
 --[[
-					q(42442),	-- Fight Night: Amalia
-					q(40299),	-- Fight Night: Bodhi Sunwayver
-					q(41881),	-- Fight Night: Heliosus
-					q(41886),	-- Fight Night: Rats!
-					q(40298),	-- Fight Night: Sir Galveston
-					q(42062),	-- Fight Night: Stitches Jr. Jr.
-					q(40277),	-- Fight Night: Tiffany Nelson
+
 					q(46136),	-- Gemcutter Needed
 					q(46134),	-- Gemcutter Needed
 					q(46139),	-- Gemcutter Needed

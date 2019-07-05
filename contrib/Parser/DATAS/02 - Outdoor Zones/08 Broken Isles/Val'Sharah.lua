@@ -18,37 +18,30 @@ _.Zones =
 			["g"] = {
 				n(-4,   {	-- Achievements
 					ach(10698, {	-- That's Val'sharah Folks!
-						{	-- Criteria 1 — Archdruid of the Vale
-							["criteriaID"] = 1,	-- Archdruid of the Vale
+						crit(1, {	-- Archdruid of the Vale
 							["sourceQuests"] = { 40573 },	-- The Nightmare Lord
-						},
-						{	-- Criteria 2 — Archdruid of the Claw
-							["criteriaID"] = 2,	-- Archdruid of the Claw
+						}),
+						crit(2, {	-- Archdruid of the Claw
 							["sourceQuests"] = { 38147 },	-- Entangled Dreams
-						},
-						{	-- Criteria 3 — Archdruid of Lore
-							["criteriaID"] = 3,	-- Archdruid of Lore
+						}),
+						crit(3, {	-- Archdruid of Lore
 							["sourceQuests"] = {
 								38225,	-- Death to the Witchmother
 								38235,	-- Solid as a Rock
 							},
-						},
-						{	-- Criteria 4 — Into the Nightmare
-							["criteriaID"] = 4,	-- Into the Nightmare
+						}),
+						crit(4, {	-- Into the Nightmare
 							["sourceQuests"] = { 38753 },	-- The Demon's Trail
-						},
-						{	-- Criteria 5 — All Nightmare Long
-							["criteriaID"] = 5,	-- All Nightmare Long
+						}),
+						crit(5, {	-- All Nightmare Long
 							["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
-						},
-						{	-- Criteria 6 — Bradensbrook
-							["criteriaID"] = 6,	-- Bradensbrook
+						}),
+						crit(6, {	-- Bradensbrook
 							["sourceQuests"] = { 38691 },	-- Jarod's Mission
-						},
-						{	-- Criteria 7 — Black Rook Hold
-							["criteriaID"] = 7,	-- Black Rook Hold
+						}),
+						crit(7, {	-- Black Rook Hold
 							["sourceQuests"] = { 38721 },	-- Lieutenant of the Tower
-						},
+						}),
 					}),
 					ach(10877, {	-- Pillars of Creation
 						["sourceQuests"] = { 40890 },	-- The Tears of Elune
@@ -1865,6 +1858,99 @@ _.Zones =
 					}),
 				}),
 				n(-34,  {	-- World Quests
+					q(41860, {	-- Dealing with Satyrs
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(37, {	-- Dealing with Satyrs
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(41861, {	-- Meet The Maw
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(34, {	-- Meet The Maw
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(41862, {	-- Only Pets Can Prevent Forest Fires
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(33, {	-- Only Pets Can Prevent Forest Fires
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(41855, {	-- Stand Up to Bullies
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(35, {	-- Stand Up to Bullies
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(40279, {	-- Training with Durian
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(32, {	-- Training with Durian
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(42190, {	-- Wildlife Conservationist
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["lvl"] = 110,
+						["g"] = {
+							crit(36, {	-- Wildlife Conservationist
+								["achievementID"] = 10876,	-- Battle on the Broken Isles
+							}),
+						},
+					}),
+					q(41676, {	-- Work Order: Pump-Action Bandage Gun
+						["requireSkill"] = 202,	-- Engineering
+						["lvl"] = 110,
+						["collectible"] = false,
+						["g"] = {
+							i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
+						},
+					}),
+					q(41646, {	-- Work Order: Silkweave Gloves
+						["requireSkill"] = 197,	-- Tailoring
+						["lvl"] = 110,
+						["collectible"] = false,
+						["g"] = {
+							i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
+						},
+					}),
+					q(41640, {	-- Work Order: Warhide Mask
+						["requireSkill"] = 165,	-- Leatherworking
+						["lvl"] = 110,
+						["collectible"] = false,
+						["g"] = {
+							i(137878),	-- Recipe: Warhide Mask (Rank 3)
+						},
+					}),
+					q(41670, {	-- Work Order: Word of Agility
+						["requireSkill"] = 333,	-- Enchanting
+						["lvl"] = 110,
+						["collectible"] = false,
+						["qg"] = 106901,	-- Sylvia Hartshorn
+						["g"] = {
+							i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
+						},
+					}),
 					n(-322,  {	-- Cloak
 						i(139074),	-- Dreamwalker's Cloak
 						i(121307),	-- Nightmare Shroud
@@ -1975,39 +2061,6 @@ _.Zones =
 					}),
 					n(-387,  {	-- Relics
 						i(143682),	-- Viscous Terror
-					}),
-					q(41676, {	-- Work Order: Pump-Action Bandage Gun
-						["requireSkill"] = 202,	-- Engineering
-						["lvl"] = 110,
-						["collectible"] = false,
-						["g"] = {
-							i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
-						},
-					}),
-					q(41646, {	-- Work Order: Silkweave Gloves
-						["requireSkill"] = 197,	-- Tailoring
-						["lvl"] = 110,
-						["collectible"] = false,
-						["g"] = {
-							i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
-						},
-					}),
-					q(41640, {	-- Work Order: Warhide Mask
-						["requireSkill"] = 165,	-- Leatherworking
-						["lvl"] = 110,
-						["collectible"] = false,
-						["g"] = {
-							i(137878),	-- Recipe: Warhide Mask (Rank 3)
-						},
-					}),
-					q(41670, {	-- Work Order: Word of Agility
-						["requireSkill"] = 333,	-- Enchanting
-						["lvl"] = 110,
-						["collectible"] = false,
-						["qg"] = 106901,	-- Sylvia Hartshorn
-						["g"] = {
-							i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
-						},
 					}),
 				}),
 				n(0,    {	-- Zone Drops (Need to change this to list crs individually because not all items drop from all of those mobs)
