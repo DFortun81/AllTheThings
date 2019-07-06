@@ -207,7 +207,9 @@ _.Zones =
 					crit(2, {	-- Secrets in the Sea
 						["sourceQuest"] = 55937,	-- Clearing Out the Cache
 					}),
-					crit(3),	-- Turning the Tide
+					crit(3, {	-- Turning the Tide
+						["sourceQuest"] = 56325,	-- Changing Tides
+					}),
 				},
 			}),
 			ach(13722, {	-- Terror of the Tadpoles

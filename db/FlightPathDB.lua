@@ -2400,6 +2400,12 @@ AllTheThings.FlightPathDB = {
 		faction=1,
 		description="Must complete the zone storyline to unlock this path.",
 	},
+	[2483] = {
+		name="The Tidal Conflux",
+		coord={ 49.8, 23.6, 1355 },
+		faction=2,
+		description="Must complete the zone storyline to unlock this path.",
+	},
 	[2407] = {
 		name="Utama's Stand",
 		coord={ 61.7, 36.5, 1355 },

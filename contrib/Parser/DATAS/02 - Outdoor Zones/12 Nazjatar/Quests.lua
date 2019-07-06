@@ -557,6 +557,15 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55175,	-- Where the Road Leads
 			}),
+			q(56325, {	-- Changing Tides
+				["sourceQuests"] = { 56741 },	-- The Spear of Destiny
+				["coord"] = { 40.2, 55.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 150101,	-- Lady Jaina Proudmoore
+				["g"] = {
+					currency(1721),	-- Prismatic Manapearl x25
+				},
+			}),
 			i(168155, {	-- Chum
 				["description"] = "Can drop from any rare in Nazjatar.",
 				["g"] = {
@@ -1604,19 +1613,25 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55482,	-- Making the Connection
 			}),
-			q(56356, {	-- The Eternal Palace: Queen's Gambit
+			q(56358, {	-- The Eternal Palace: Queen's Gambit (A)
+				["sourceQuests"] = { 56325 },	-- Changing Tides
+				["coord"] = { 50.4, 24.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153253,	-- Lady Jaina Proudmoore
+			}),
+			q(56356, {	-- The Eternal Palace: Queen's Gambit (H)
 				["qg"] = 153251,	-- Lor'themar Theron
 				["coord"] = { 50.6, 24.1, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55799,	-- The Tide Turns
 			}),
-			q(56348, {	-- The Eternal Palace: We Can Make It Stronger...
+			q(56348, {	-- The Eternal Palace: We Can Make It Stronger... (A)
 				["qg"] = 154257,	-- Instructor Ulooaka
 				["coord"] = { 37.9, 52.9, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56347,	-- An Abyssal Opportunity
 			}),
-			q(56352, {	-- The Eternal Palace: We Can Make It Stronger...
+			q(56352, {	-- The Eternal Palace: We Can Make It Stronger... (H)
 				["qg"] = 154408,	-- Rolm
 				["coord"] = { 49.3, 61.8, 1355 },
 				["races"] = HORDE_ONLY,

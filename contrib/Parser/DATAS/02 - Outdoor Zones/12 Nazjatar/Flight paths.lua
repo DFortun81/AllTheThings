@@ -34,8 +34,12 @@ _.Zones =
 				["coord"] = { 47.5, 63.3, 1355 },
 				["races"] = HORDE_ONLY,
 			}),
-			-- TODO:: there is an alliance-only flightpath missing here that unlocks after completing the storyline
-			fp(2482, {	-- The Tidal Conflux
+			fp(2483, {	-- The Tidal Conflux (A)
+				["coord"] = { 49.8, 23.6, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["description"] = "Must complete the zone storyline to unlock this path.",
+			}),
+			fp(2482, {	-- The Tidal Conflux (H)
 				["coord"] = { 51.1, 23.6, 1355 },
 				["races"] = HORDE_ONLY,
 				["description"] = "Must complete the zone storyline to unlock this path.",
