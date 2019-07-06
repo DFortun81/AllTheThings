@@ -9299,6 +9299,9 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 					['icon'] = "Interface\\Icons\\INV_Misc_Note_01",
 					['description'] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.",
 					['visible'] = true,
+					['OnUpdate'] = function(data) 
+						data.visible = true;
+					end,
 					['OnClick'] = function(row, button)
 						if app.Settings:GetTooltipSetting("Auto:BountyList") then
 							app.Settings:SetTooltipSetting("Auto:BountyList", false);
