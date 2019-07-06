@@ -487,6 +487,9 @@ _.Zones =
 						i(26017),	-- Venomous Silk Cover
 					},
 				}),
+				q(9749, {	-- They're Alive! Maybe... (duplicate, never went live)
+					["u"] = 1,
+				}),
 				q(9696,  {	-- Translations...
 					["qg"] = 17684,	-- Vindicator Boros
 					["coord"] = { 55.4, 55.2, 106 },

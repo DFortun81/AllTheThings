@@ -6,6 +6,7 @@ _.NeverImplemented =
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
 	n(-9956, {	-- Quests
+		q(13807),	-- FLAG: Tournament Invitation
 		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
 		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
@@ -190,6 +191,7 @@ _.NeverImplemented =
 		q(37887),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE
 		q(38583),	-- Tanaan Jungle - Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden
 		q(38587),	-- Tanaan Jungle - Assault on the Throne of Kil'jaeden - criteria complete
+		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 		-------------------
 		--    Legion     --
 		-------------------

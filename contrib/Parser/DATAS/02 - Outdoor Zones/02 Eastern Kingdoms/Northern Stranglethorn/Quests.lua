@@ -32,12 +32,10 @@ _.Zones =
 						},
 					}),
 				}),
---[[
 				q(26317, {	-- A Lashtail Hatchling
-					["qg"] = 2465,	-- 
+					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["races"] = HORDE_ONLY,
 				}),
---]]
 				q(26746, {	-- A Nose for This Sort of Thing
 					["qg"] = 43884,	-- Osborn Obnoticus
 					["coord"] = { 41.8, 23.3, 50 },
@@ -189,36 +187,42 @@ _.Zones =
 					},
 				}),
 				o(2076, {	-- Bubbling Cauldron
---[[
-					q(26325, {	-- A Nose for This Sort of Thing
-						["races"] = HORDE_ONLY,
-					}),
-					q(26302, {	-- Chasing Yenniku's Fate
-						["races"] = HORDE_ONLY,
-					}),
-					q(26332, {	-- Skullsplitter Mojo
-						["races"] = HORDE_ONLY,
-					}),
-]]--
-					q(26301, {	-- Speaking with Nezzliok
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(61099),	-- Slaver's Plate
-							i(61098),	-- Balia'mah Leggings
-							i(61097),	-- Ziata'jai Bracers
-							i(131507),	-- Balia'mah Chain Pants
-						},
-					}),
-					q(26330, {	-- Who's a Big Troll
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(61096),	-- Electrostatic Legguards
-							i(61095),	-- Discarded Troll Leggings
-							i(61094),	-- Juju Belt
-							i(131513),	-- Discarded Troll Greaves
-							i(156989),	-- Gan'zulah's Headchopper
-						},
-					}),
+					["coord"] = { 38.5, 48.7, 50 },
+					["g"] = {
+	--[[
+						q(26325, {	-- A Nose for This Sort of Thing
+							["races"] = HORDE_ONLY,
+						}),
+	]]--
+						q(26302, {	-- Chasing Yenniku's Fate
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 26301,	-- Speaking with Nezzliok
+						}),
+	--[[
+						q(26332, {	-- Skullsplitter Mojo
+							["races"] = HORDE_ONLY,
+						}),
+	]]--
+						q(26301, {	-- Speaking with Nezzliok
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(61099),	-- Slaver's Plate
+								i(61098),	-- Balia'mah Leggings
+								i(61097),	-- Ziata'jai Bracers
+								i(131507),	-- Balia'mah Chain Pants
+							},
+						}),
+						q(26330, {	-- Who's a Big Troll
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(61096),	-- Electrostatic Legguards
+								i(61095),	-- Discarded Troll Leggings
+								i(61094),	-- Juju Belt
+								i(131513),	-- Discarded Troll Greaves
+								i(156989),	-- Gan'zulah's Headchopper
+							},
+						}),
+					},
 				}),
 --[[
 				q(29232, {	-- Bury Me With Me Boots...
@@ -328,12 +332,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
---[[
 				q(26323, {	-- Favored Skull
-					["qg"] = 42736,	-- 
+					["qg"] = 42736,	-- Lashtail Hatchling
+					["description"] = "Becomes available after getting the |cFFFFD700Bloodscalp Lore Tablet|r.",
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26321,	-- I Think She's Hungry
 				}),
-]]--
 				q(26745, {	-- Favored Skull
 					["qg"] = 42736,	-- Lashtail Hatchling
 					["races"] = ALLIANCE_ONLY,
@@ -411,11 +415,13 @@ _.Zones =
 					["qg"] = 2497,	-- 
 					["races"] = HORDE_ONLY,
 				}),
-				q(26321, {	-- I Think She's Hungry
-					["qg"] = 2465,	-- 
-					["races"] = HORDE_ONLY,
-				}),
 ]]--
+				q(26321, {	-- I Think She's Hungry
+					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["coord"] = { 38.4, 51.0, 50 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26317,	-- A Lashtail Hatchling
+				}),
 				q(26739, {	-- I Think She's Hungry
 					["qg"] = 1422,	-- Corporal Sethman
 					["coord"] = { 46.9, 10.8, 50 },
@@ -496,12 +502,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26773,	-- See Raptor
 				}),
---[[
 				q(26304, {	-- Nighttime in the Jungle
-					["qg"] = 42813,	-- 
+					["qg"] = 42813,	-- Kil'karil
+					["coord"] = { 63.2, 39.8, 50 },
 					["races"] = HORDE_ONLY,
 				}),
---]]
 				q(190, {	-- Panther Hunting
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
@@ -640,8 +645,10 @@ _.Zones =
 					},
 				}),
 				q(26305, {	-- Saving Yenniku
-					["qg"] = 2519,	-- 
+					["qg"] = 2519,	-- Kin'weelay
+					["coord"] = { 63.0, 41.4, 50 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26303,	-- The Mind's Eye
 					["g"] = {
 						i(61102),	-- Nimboya's Legguards
 						i(61101),	-- Weavers of the Unending Tale
@@ -877,12 +884,12 @@ _.Zones =
 						i(131603),	-- Eye-Plucker Grips
 					},
 				}),
---[[
 				q(26303, {	-- The Mind's Eye
-					["qg"] = 2519,	-- 
+					["qg"] = 2519,	-- Kin'weelay
+					["coord"] = { 63.0, 41.4, 50 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26302,	-- Chasing Yenniku's Fate
 				}),
-]]--
 				q(2760, {	-- The Mithril Order
 					["u"] = 40,
 					["qg"] = 7794,	-- McGaven
