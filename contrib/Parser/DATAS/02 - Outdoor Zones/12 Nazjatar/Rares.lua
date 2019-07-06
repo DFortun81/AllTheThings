@@ -585,6 +585,7 @@ _.Zones =
 			}),
 			n(155841, {	-- Shadowbinder Athissa (Naga Commander)
 				["description"] = "One of many Naga commanders that spawn over time.",
+				["isDaily"] = true,
 				["questID"] = 56894,	-- Alliance, not sure if Horde has a separate questID	-- Theurgist Nitara is verified to share a questID, so they may all share.
 				["coord"] = { 74.0, 32.8, 1355 },
 			}),
@@ -670,6 +671,7 @@ _.Zones =
 			}),
 			n(155836, {	-- Theurgist Nitara 
 				["description"] = "One of many Naga commanders that spawn over time.",
+				["isDaily"] = true,
 				["questID"] = 56890,	-- single questID for Alliance and Horde
 				["coord"] = { 49.4, 65.5, 1355 },
 			}),
@@ -689,8 +691,7 @@ _.Zones =
 				},
 			}),
 			n(153928, {	-- Tidelord Dispersius
-				["allianceQuestID"] = 56123,
-				["hordeQuestID"] = 56619,
+				["questID"] = 56619,
 				["coord"] = { 58.0, 26.5, 1355 },
 				["isDaily"] = true,
 				["description"] = "Kill the |cFFFFD700Azsh'ari Invoker|r that is channeling an orb above the water pool.",
@@ -783,6 +784,12 @@ _.Zones =
 					i(170066),	-- Skinning Technique: Dredged Leather (Rank 2)
 					i(170067),	-- Skinning Technique: Cragscale (Rank 2)
 				},
+			}),
+			n(155840, {	-- Warlord Zalzjar (Naga commander)
+				["description"] = "One of many Naga commanders that spawn over time.",
+				["isDaily"] = true,
+				["questID"] = 56893,
+				["coord"] = { 47.6, 31.9, 1355 },
 			}),
 			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency that can be looted once per day
 				["questID"] = 56915,

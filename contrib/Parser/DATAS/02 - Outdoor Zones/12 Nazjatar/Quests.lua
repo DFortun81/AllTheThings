@@ -728,6 +728,16 @@ _.Zones =
 					i(168850),	-- Time-Lost Battlefield Memento
 				},
 			}),
+			q(55569, {	-- Echoes of Pain
+				["sourceQuests"] = {	-- may not require other two, definitely requires *
+					55565,	-- Shoring Up Mana Reserves
+					55694,	-- There's Something in the Water
+					55560,	-- Utama's Vengeance
+				},
+				["coord"] = { 74.6, 25.9, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153617,	-- Shandris Feathermoon
+			}),
 			q(55362, {	-- Elemental Fury
 				["qg"] = 151741,	-- Apprentice Odari
 				["coord"] = { 43.4, 49.8, 1355 },
@@ -877,6 +887,15 @@ _.Zones =
 				["g"] = {
 					i(169904),	-- Ankoan Commendation Crate (contained a benthic token, some war resources, and some zin'anthid)
 				},
+			}),
+			q(55571, {	-- Help Them See the Truth
+				["sourceQuests"] = {
+					55569,	-- Echoes of Pain
+					55570,	-- Secrets in the Ruins
+				},
+				["coord"] = { 74.2, 40.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153617,	-- Shandris Feathermoon
 			}),
 			q(56643, {	-- In Deep
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
@@ -1096,6 +1115,15 @@ _.Zones =
 				["coord"] = { 49.2, 62.0, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56240,	-- Strange Silver Knife
+			}),
+			q(55573, {	-- Purging the Defilers
+				["sourceQuests"] = {
+					55569,	-- Echoes of Pain
+					55570,	-- Secrets in the Ruins
+				},
+				["coord"] = { 74.2, 40.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153617,	-- Shandris Feathermoon
 			}),
 			q(55363, {	-- Rescue The Farseer
 				["qg"] = 151741,	-- Apprentice Odari
@@ -1482,17 +1510,27 @@ _.Zones =
 					}),
 				},
 			}),
-			q(55860, {	-- Sea Slug Liquidation
+			q(55860, {	-- Sea Slug Liquidation (A)
 				["qg"] = 153385,	-- Blademaster Okani
 				["coord"] = { 38.8, 30.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56037,	-- Stealing the Naga's Secrets
 			}),
-			q(55870, {	-- Sea Slug Liquidation
+			q(55870, {	-- Sea Slug Liquidation (H)
 				["qg"] = 153422,	-- Chief Telemancer Oculeth
 				["coord"] = { 38.8, 30.4, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
+			}),
+			q(55570, {	-- Secrets in the Ruins
+				["sourceQuests"] = {	-- may not require other two, definitely requires *
+					55565,	-- Shoring Up Mana Reserves
+					55694,	-- There's Something in the Water
+					55560,	-- Utama's Vengeance
+				},
+				["coord"] = { 74.6, 25.9, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153617,	-- Shandris Feathermoon
 			}),
 			q(55486, {	-- Secrets of Telemancy
 				["qg"] = 152316,	-- Image of Thalyssra
@@ -1505,6 +1543,12 @@ _.Zones =
 				["coord"] = { 49.7, 64.6, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55481,	-- Scouting the Palace
+			}),
+			q(55565, {	-- Shoring Up Mana Reserves
+				["sourceQuests"] = { 55561 },	-- What Remains of Zin-Azshari
+				["coord"] = { 66.0, 43.6, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153617,	-- Shandris Feathermoon
 			}),
 			i(169215, {	-- Silver Knife
 				["races"] = ALLIANCE_ONLY,
@@ -1622,6 +1666,15 @@ _.Zones =
 					55500,	-- Save a Friend (Horde)
 				},
 			}),
+			q(55574, {	-- The Javelins of Azshara
+				["sourceQuests"] = {
+					55573,	-- Purging the Defilers
+					56739,	-- The Power of Worship
+				},
+				["coord"] = { 74.2, 40.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153617,	-- Shandris Feathermoon
+			}),
 			q(56783, {	-- The Lambent Lockbox
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Your Ankoan friend will offer this quest upon reaching Rank 5.",
@@ -1666,6 +1719,12 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56176,	-- Desperate Need
 			}),
+			q(56739, {	-- The Power of Worship
+				["sourceQuests"] = { 55571 },	-- Help Them See the Truth
+				["coord"] = { 54.2, 20.8, 1499 },	-- a temple... thing?  not sure the actual map's name
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 152238,	-- Riathia Silverstar
+			}),
 			q(55864, {	-- The Price is Death
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
 				["coord"] = { 48.5, 62.1, 1355 },
@@ -1679,6 +1738,12 @@ _.Zones =
 				["g"] = {
 					i(169903),	-- Nazjatar Survival Pack
 				},
+			}),
+			q(56741, {	-- The Spear of Destiny
+				["sourceQuests"] = { 55574 },	-- The Javelins of Azshara
+				["coord"] = { 74.2, 40.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153617,	-- Shandris Feathermoon
 			}),
 			q(55799, {	-- The Tide Turns
 				["qg"] = 151848,	-- Lor'themar Theron
@@ -1697,6 +1762,12 @@ _.Zones =
 				["coord"] = { 79.7, 44.9, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56312,	-- The Ever Drowning
+			}),
+			q(55694, {	-- There's Something in the Water
+				["sourceQuests"] = { 55558 },	-- A Bolt Hole
+				["coord"] = { 62.4, 36.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 151000,	-- Blademaster Okani
 			}),
 			q(56315, {	-- They Made Their Choice (A)
 				["qg"] = 155071,	-- Shandris Feathermoon
@@ -1752,6 +1823,12 @@ _.Zones =
 				["coord"] = { 36.7, 93.5, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56044,	-- Send the Fleet
+			}),
+			q(55560, {	-- Utama's Vengeance
+				["sourceQuests"] = { 55558 },	-- A Bolt Hole
+				["coord"] = { 62.4, 36.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 151000,	-- Blademaster Okani
 			}),
 			q(55778, {	-- Visions of Danger
 				["qg"] = 151848,	-- Lor'themar Theron
@@ -1830,6 +1907,12 @@ _.Zones =
 						["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
 					}),
 				},
+			}),
+			q(55561, {	-- What Remains of Zin-Azshari
+				["sourceQuests"] = { 55558 },	-- A Bolt Hole
+				["coord"] = { 62.4, 36.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153617,	-- Shandris Feathermoon
 			}),
 			q(55598, {	-- What We Know of the Naga
 				["qg"] = 153496,	-- Adaru

@@ -103,7 +103,64 @@ _.Zones =
 					["description"] = "In a coral outcropping at the back of a small cave filled with water elementals.",
 				}),
 			}),
+			ach(13715, {	-- From the Belly of the Jelly
+				["filterID"] = 101,	-- Battle Pet
+			}),
 			ach(13707),		-- Mrrl's Secret Stash
+			ach(13626, {	-- Nautical Nuisances of Nazjatar
+				["filterID"] = 101,	-- Battle Pet
+				["g"] = {
+					crit(2, {	-- Chomp
+						["crs"] = { 154911 },	-- Chomp
+						["coord"] = { 71.9, 51.2, 1355 },
+					}),
+					crit(6, {	-- Elderspawn of Nalaada
+						["crs"] = { 154915 },	-- Elderspawn of Nalaada
+						["coord"] = { 51.3, 75.0, 1355 },
+					}),
+					crit(11, {	-- Frenzied Knifefang
+						["crs"] = { 154920 },	-- Frenzied Knifefang
+						["coord"] = { 59.1, 26.6, 1355 },
+					}),
+					crit(12, {	-- Giant Opaline Conch
+						["crs"] = { 154921 },	-- Giant Opaline Conch
+						["coord"] = { 28.1, 26.7, 1355 },
+					}),
+					crit(9, {	-- Kelpstone
+						["crs"] = { 154918 },	-- Kelpstone
+						["coord"] = { 46.6, 28.0, 1355 },
+						["description"] = "Inside a case at the bottom of the waterfall.",
+					}),
+					crit(8, {	-- Mindshackle
+						["crs"] = { 154917 },	-- Mindshackle
+						["coord"] = { 56.4, 8.1, 1355 },
+					}),
+					crit(5, {	-- Pearlhusk Crawler
+						["crs"] = { 154914 },	-- Pearlhusk Crawler
+						["coord"] = { 50.5, 50.2, 1355 },
+					}),
+					crit(1, {	-- Prince Wiggletail
+						["crs"] = { 154910 },	-- Prince Wiggletail
+						["coord"] = { 34.7, 27.4, 1355 },	-- entrance at 36.9, 27.6
+					}),
+					crit(7, {	-- Ravenous Scalespawn
+						["crs"] = { 154916 },	-- Ravenous Scalespawn
+						["coord"] = { 29.6, 49.7, 1355 },
+					}),
+					crit(4, {	-- Shadowspike Lurker
+						["crs"] = { 154913 },	-- Shadowspike Lurker
+						["coord"] = { 42.2, 14.0, 1355 },
+					}),
+					crit(3, {	-- Silence
+						["crs"] = { 154912 },	-- Silence
+						["coord"] = { 58.3, 48.1, 1355 },
+					}),
+					crit(10, {	-- Voltgorger
+						["crs"] = { 154919 },	-- Voltgorger
+						["coord"] = { 37.5, 16.7, 1355 },
+					}),
+				},
+			}),
 			ach(13713),		-- Nothing to Scry About
 			ach(13699, {	-- Periodic Destruction
 				["coord"] = { 60.7, 32.1, 1355 },
