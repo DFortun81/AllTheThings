@@ -316,6 +316,21 @@ _.Zones =
 					55500,	-- Save A Friend (Horde)
 				},
 			}),
+			q(55824, {	-- Bounty: A Few Snapdragons
+				["isDaily"] = true,
+				["qgs"] = {
+				--	155940,	-- Enizo (Alliance)				-- Need to be confirmed
+					151618,	-- Asme Seapearl (Horde)
+				},
+				["coords"] = {
+				--	{ 37.7, 55.4, 1355 },	-- Alliance		-- Need to be confirmed
+					{ 50.9, 65.3, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
+				},
+			}),
 			q(55837, {	-- Bounty: Dangerous Creatures
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1407,10 +1422,6 @@ _.Zones =
 						["questID"] = 55819,
 						["isDaily"] = true,
 					},
-					{	-- Bounty: A Few Snapdragons
-						["questID"] = 55824,
-						["isDaily"] = true,
-					},
 					{	-- Bounty: More Makrura
 						["questID"] = 55831,
 						["isDaily"] = true,
@@ -1605,6 +1616,14 @@ _.Zones =
 				},
 				["g"] = {
 					ach(13763),	-- Back to the Depths!
+				},
+			}),
+			q(56817, {	-- Thank You For Being A Friend
+				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
+				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 13.",
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(169920),	-- Neri's Spare Supplies
 				},
 			}),
 			q(55485, {	-- Terrors in the Deep

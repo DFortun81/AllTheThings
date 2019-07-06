@@ -110,6 +110,11 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56392, {	-- Giant Opaline Conch
+				["collectible"] = false,
+				["filterID"] = 101,	-- -- Battle Pets
+				["lvl"] = 120,
+			}),
 			q(56041, {	-- Give 'Em Shell
 				["lvl"] = 120,
 				["collectible"] = false,
@@ -258,6 +263,16 @@ _.Zones =
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(13, {	-- Easy Runelocked Chest: Orange
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
+				},
+			}),
+			q(56014, {	-- Runelocked Chest
+				["lvl"] = 120,
+				["collectible"] = false,
+				["sourceQuest"] = 56248,	-- Treasure Tale
+				["g"] = {
+					crit(12, {	-- Easy Runelocked Chest: Purple
 						["achievementID"] = 13764,	-- Puzzle Performer
 					}),
 				},
@@ -445,33 +460,37 @@ _.Zones =
 				},
 			}),
 			q(56826, {	-- Work Order: Enchant Weapon - Force Multiplier (A)
-				["lvl"] = 120,
 				["collectible"] = false,
+				["requireSkill"] = 333,	-- Enchanting
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
 				["g"] = {
 					i(169535),	-- Formula: Force Multiplier (Rank 3)
 				},
 			}),
 			q(56820, {	-- Work Order: Enchant Weapon - Force Multiplier (H)
-				["lvl"] = 120,
 				["collectible"] = false,
+				["requireSkill"] = 333,	-- Enchanting
 				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
 				["g"] = {
 					i(169535),	-- Formula: Force Multiplier (Rank 3)
 				},
 			}),
 			q(56827, {	-- Work Order: Enchant Weapon - Naga Hide (A)
-				["lvl"] = 120,
 				["collectible"] = false,
+				["requireSkill"] = 333,	-- Enchanting
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
 				["g"] = {
 					i(170213),	-- Formula: Naga Hide (Rank 3)
 				},
 			}),
 			q(56818, {	-- Work Order: Enchant Weapon - Naga Hide (H)
-				["lvl"] = 120,
 				["collectible"] = false,
+				["requireSkill"] = 333,	-- Enchanting
 				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
 				["g"] = {
 					i(170213),	-- Formula: Naga Hide (Rank 3)
 				},
