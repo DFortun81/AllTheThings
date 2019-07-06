@@ -112,7 +112,7 @@ _.Zones =
 			}),
 			q(56392, {	-- Giant Opaline Conch
 				["collectible"] = false,
-				["filterID"] = 101,	-- -- Battle Pets
+				["filterID"] = 101, -- Battle Pets
 				["lvl"] = 120,
 			}),
 			q(56041, {	-- Give 'Em Shell
@@ -475,6 +475,15 @@ _.Zones =
 				["lvl"] = 120,
 				["g"] = {
 					i(169535),	-- Formula: Force Multiplier (Rank 3)
+				},
+			}),
+			q(56824, {	-- Work Order: Enchant Weapon - Machinist's Brilliance (A)
+				["collectible"] = false,
+				["requireSkill"] = 333,	-- Enchanting
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(169534),	-- Formula: Machinist's Brilliance (Rank 3)
 				},
 			}),
 			q(56827, {	-- Work Order: Enchant Weapon - Naga Hide (A)

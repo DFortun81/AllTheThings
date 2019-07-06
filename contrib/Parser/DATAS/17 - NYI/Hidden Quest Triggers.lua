@@ -357,7 +357,7 @@ _.NeverImplemented =
 		q(56588),	-- Shassera first kill
 		q(56587),	-- Shiz'narasz the Consumer first kill
 		q(56586),	-- Silstalker the Packmother first kill
-		q(56123),	-- Tidelord Dispersius first kill
+		q(56619),	-- Tidelord Dispersius first kill
 		q(56620),	-- Tidemistress Leth'sindra first kill
 		q(56605),	-- Toxigore the Alpha first kill
 		q(56299),	-- Urduu first kill

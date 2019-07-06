@@ -319,11 +319,11 @@ _.Zones =
 			q(55824, {	-- Bounty: A Few Snapdragons
 				["isDaily"] = true,
 				["qgs"] = {
-				--	155940,	-- Enizo (Alliance)				-- Need to be confirmed
+					155940,	-- Enizo (Alliance)
 					151618,	-- Asme Seapearl (Horde)
 				},
 				["coords"] = {
-				--	{ 37.7, 55.4, 1355 },	-- Alliance		-- Need to be confirmed
+					{ 37.8, 55.5, 1355 },	-- Alliance
 					{ 50.9, 65.3, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
@@ -372,6 +372,7 @@ _.Zones =
 					{ 49.1, 62.1, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
 					55500,	-- Save A Friend (horde)
 				},
 			}),
@@ -382,11 +383,12 @@ _.Zones =
 					151635,	-- Slen Darkroe
 				},
 				["coords"] = {
-					{ 40.0, 55.6, 1355 },	-- alliance
-					{ 50.8, 64.7, 1355 },	-- horde
+					{ 40.0, 55.6, 1355 },	-- Alliance
+					{ 50.8, 64.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (horde)
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save A Friend (Horde)
 				},
 			}),
 			q(55834, {	-- Bounty: More Fathom Rays
@@ -612,6 +614,13 @@ _.Zones =
 				["coord"] = { 38.8, 30.4, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
+			}),
+			q(55681, {	-- Crab Marks The Spot
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			--	["objectID"] = ,	-- Illegible Treasure Map (unknown ID, not linked to quest)
+				["coord"] = { 43.8, 54.5, 1355 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(57004, {	-- Create Your Own Strength
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
@@ -1890,6 +1899,14 @@ _.Zones =
 			--	["objectID"] = ,	-- Bounty Board (unknown objectID, not linked to quest)
 				["isDaily"] = true,
 				["coord"] = { 39.2, 54.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(55771, {	-- WANTED: Lord Ha'kass
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			--	["objectID"] = 326142,	-- Bounty Board
+				["isDaily"] = true,
+				["coord"] = { 39.1, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56039, {	-- We Can't Have Dull Weapons

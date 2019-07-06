@@ -16,9 +16,19 @@ _.Zones =
 					["qg"] = 155188,	-- Scrollsage Nola
 					["coord"] = { 72.2, 37.2, 862 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(31, {	-- A Direct Approach
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55688, {	-- A Growing Mystery
 					["isDaily"] = true,
+					["g"] = {
+						crit(5, {	-- A Growing Mystery
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56373, {	-- A Gulper Ate The Rolly
 					["qg"] = 151462,	-- Danielle Anglers
@@ -29,6 +39,11 @@ _.Zones =
 					["qg"] = 152633,	-- Sir Finley Mrrgglton
 					["isDaily"] = true,
 					["sourceQuests"] = { 55658 },	-- Clues Abound
+					["g"] = {
+						crit(4, {	-- A Historical Mess
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55697, {	-- A Little Leg Work
 					["qg"] = 150573,	-- Recycler Kerchunk
@@ -39,12 +54,22 @@ _.Zones =
 					["qg"] = 153373,	-- Penny Clobberbottom
 					["coord"] = { 70.9, 37.6, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(14, {	-- Abduction Reduction
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56142, {	-- Adapt, Improve, Overcome!
 					["qg"] = 154214,	-- Christy Punchcog
 					["coord"] = { 71.8, 35.8, 1462 },
 					["isDaily"] = true,
 					["description"] = "Only available in the alternate timeline. Speak to |cFFFFD700Chromie|r when she is in town.",
+					["g"] = {
+						crit(19, {	-- Adapt, Improve, Overcome!
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55463, {	-- Aid from Nordrassil
 					["qg"] = 151936,	-- Mylune
@@ -60,6 +85,11 @@ _.Zones =
 					["qg"] = 154568,	-- Pedram Mechanotrax
 					["coord"] = { 62.1, 76.8, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(15, {	-- Aim High
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55210, {	-- Batteries Not Included
 					["qg"] = 150630,	-- Flip Quickcharge
@@ -71,6 +101,11 @@ _.Zones =
 					["coord"] = { 69.7, 33.0, 1462 },
 					["isDaily"] = true,
 					["sourceQuest"] = 54090,	-- Toys For Destruction
+					["g"] = {
+						crit(22, {	-- Battle Tested
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56365, {	-- Be Kind, Rewind
 					--["qg"] = 
@@ -80,6 +115,11 @@ _.Zones =
 					},
 					["isDaily"] = true,
 					--["sourceQuest"] =
+					["g"] = {
+						crit(23, {	-- Be Kind, Rewind
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				i(169112, {	-- Blueprint: Advanced Adventurer Augment
 					["questID"] = 56145,
@@ -297,6 +337,11 @@ _.Zones =
 					["qg"] = 152932,	-- Razak Ironsides
 					["coord"] = { 75.8, 34.4, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(9, {	-- Bugs, Lots of 'Em!
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55055, {	-- Build a Bigger Fish Trap
 					["qg"] = 151462,	-- Danielle Anglers
@@ -329,18 +374,24 @@ _.Zones =
 					["qg"] = 152501,	-- Elise Starseeker
 					["coord"] = { 70.4, 31.0, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(3, {	-- Clues Abound
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56405, {	-- Cogfrenzy's Construction Frenzy
 					["qg"] = 154967,	-- Walton Cogfrenzy
 					["coord"] = { 73.4, 33.3, 1462 },
 					["isDaily"] = true,
 					["g"] = {
+						crit(32, {	-- Cogfrenzy's Construction Frenzy
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
 						i(169471, {	-- Cogfrenzy's Construction Toolkit
-							["g"] = {
-								i(167845),	-- Blueprint: Emergency Powerpack
-								i(167844),	-- Blueprint: Emergency Repair Kit
-								i(169470),	-- Pressure Relief Valve
-							},
+							i(167845),	-- Blueprint: Emergency Powerpack
+							i(167844),	-- Blueprint: Emergency Repair Kit
+							i(169470),	-- Pressure Relief Valve
 						}),
 					},
 				}),
@@ -353,6 +404,11 @@ _.Zones =
 					["qg"] = 153538,	-- Adalin Halfheight
 					["coord"] = { 75.2, 69.8, 862 },
 					["races"] = HORDE_ONLY,	-- QG is tauren. probably horde only? verify this
+					["g"] = {
+						crit(8, {	-- Deck 'Em
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55994, {	-- Do Not Drink — don't know if there are any SQs or if this is just up some days
 					["isDaily"] = true,
@@ -372,6 +428,11 @@ _.Zones =
 					["qg"] = 154982,	-- Archivist Bitbyte
 					["coord"] = { 72.0, 36.5, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(26, {	-- Discs of Norgannon
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56328, {	-- Do Not Drink -- 56329 also popped. Possibly a daily?
 					["qg"] = 153750,	-- Koupal Oilshins
@@ -435,6 +496,11 @@ _.Zones =
 					["qg"] = 154485,	-- Short John Mithril
 					["coord"] = { 21.5, 81.9, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(17, {	-- Go For The Gold
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55103, {	-- Ideas Can Com from Anywhere
 					["qg"] = 152295, -- Pascal
@@ -476,6 +542,9 @@ _.Zones =
 					["coord"] = { 72.7, 38.0, 1462 },
 					["isDaily"] = true,
 					["g"] = {
+						crit(24, {	-- My Chickens are Not for Eating!
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
 						i(169381, {	-- OOX-35/MG (pet)
 							["description"] = "When the quest \"My Chickens are Not for Eating!\" is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
 						}),
@@ -491,10 +560,22 @@ _.Zones =
 					["coord"] = { 80.8, 18.8, 1462 },
 					["isDaily"] = true,
 				}),
-				q(56552, {	-- Off-the-Books Brawlin'
+				q(56558, {	-- Off-the-Books Brawlin' (A)
+					["qg"] = 155357,	-- Grumbol Grimhammer
+					["coord"] = { 70.1, 30.7, 1462 },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(25, {	-- Off-the-Books Brawlin'
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
+				}),
+				q(56552, {	-- Off-the-Books Brawlin' (H)
 					["qg"] = 155355,	-- Usha Eyegouge
 					["coord"] = { 70.0, 31.0, 1462 },
 					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(25, {	-- Off-the-Books Brawlin'
 							["achievementID"] = 13556,	-- Outside Influences
@@ -505,6 +586,11 @@ _.Zones =
 					["qg"] = 152499,	-- Moxie Lockspinner
 					["coord"] = { 73.7, 34.3, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(2, {	-- One Gnome's Trash
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56173, {	-- Other Interests
 					["qg"] = 152575,	-- Steelsage Gao
@@ -540,12 +626,22 @@ _.Zones =
 					["qg"] = 154335,	-- Dread Captain DeMeza
 					["coord"] = { 71.7, 38.8, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(16, {	-- Pirates, Sea Monsters, Robots
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55528, {	-- Playtime's Over
 					["qg"] = 151006,	-- Rocket-Chief Fuselage
 					["coord"] = { 69.7, 33.0, 1462 },
 					["isDaily"] = true,
 					["sourceQuest"] = 54090,	-- Toys For Destruction
+					["g"] = {
+						crit(21, {	-- Playtime's Over
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				o(327548, {	-- Powerpack Blueprints
 					["coord"] = { 60.9, 41.5, 1462 },
@@ -697,6 +793,11 @@ _.Zones =
 					["qg"] = 153324,	-- Rico Bugsnapper
 					["coord"] = { 82.9, 23.3, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(11, {	-- Rico's Rescue
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(54086, {	-- Right Bot for the Job -- 55907 and 56100 also popped
 					["qg"] = 150573,	-- Recycler Kerchunk
@@ -769,7 +870,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(55383, {	-- Rustbolt Requisitions: Star Moss
+				q(55379, {	-- Rustbolt Requisitions: Star Moss (A)
+					["qg"] = 149813,	-- Gila Crosswires
+					["coord"] = { 77.7, 40.4, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(55383, {	-- Rustbolt Requisitions: Star Moss (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,
@@ -849,6 +956,11 @@ _.Zones =
 				i(168256, {	-- Night Elf Ring
 					q(55718, {	-- Strange Discovery
 						["isDaily"] = true,
+						["g"] = {
+							crit(7, {	-- Strange Discovery
+								["achievementID"] = 13556,	-- Outside Influences
+							}),
+						},
 					}),
 				}),
 				q(56501, {	-- Taking the Air Out	— TO DO: figure out if you need to be on "A Direct Approach" to get this -- this quest wasn't offered my second time doing "A Direct Approach, but "Waste Not" was.  maybe they cycle?
@@ -862,17 +974,32 @@ _.Zones =
 						{ 47.6, 36.8, 1462 },	-- Alliance
 						{ 42.6, 41.4, 1462 },	-- Horde
 					},
+					["g"] = {
+						crit(29, {	-- Taking the Air Out
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56306, {	-- The Family Jewels
 					["qg"] = 154511,	-- Sneaky Pete
 					["coord"] = { 24.2, 75.3, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(18, {	-- The Family Jewels
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56053, {	-- The Final Act
 					["qg"] = 153982,	-- Izira Gearsworn
 					["coord"] = { 72.7, 33.9, 1462 },
 					["isDaily"] = true,
 					["sourceQuests"] = { 56142 },	-- Adapt, Improve, Overcome!
+					["g"] = {
+						crit(13, {	-- The Final Act
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55696, {	-- Test Drive
 					["qg"] = 150573,	-- Recycler Kerchunk
@@ -893,6 +1020,11 @@ _.Zones =
 					["qg"] = 153993,	-- Chromie
 					["coord"] = { 70.2, 30.9, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(12, {	-- The Other Place
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56319, {	-- The Quickcharge Contract
 					["qg"] = 150631,	-- Pristy Quickcharge
@@ -916,17 +1048,30 @@ _.Zones =
 					["qg"] = 152633,	-- Sir Finley Mrrgglton
 					["isDaily"] = true,
 					["sourceQuest"] = 55658,	-- Clues Abound
+					["g"] = {
+						crit(6, {	-- Time for Heroics
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(54090, {	-- Toys For Destruction
 					["qg"] = 151006,	-- Rocket-Chief Fuselage
 					["coord"] = { 69.7, 33.1, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(20, {	-- Toys For Destruction
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56572, {	-- Toys Like Us
 					["qg"] = 155450,	-- Jepetto Joybuzz
 					["coord"] = { 70.2, 32.9, 1462 },
 					["isDaily"] = true,
 					["g"] = {
+						crit(27, {	-- Toys Like Us
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
 						i(169838, {	-- Azeroth Mini: Starter Pack
 							i(169796, {	-- Azeroth Mini Collection: Mechagon
 								["questID"] = 56426,
@@ -961,6 +1106,11 @@ _.Zones =
 					["qg"] = 155187,	-- Maokka
 					["coord"] = { 72.1, 37.1, 862 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(30, {	-- Unprofitable Ventures
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(56083, {	-- Unsafe Work Conditions
 					["qg"] = 150563,	-- Skaggit
@@ -990,6 +1140,11 @@ _.Zones =
 				--	["objectID"] = ,	-- not linked to quest
 					["coord"] = { 43.0, 41.1, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						crit(28, {	-- Waste Not
+							["achievementID"] = 13556,	-- Outside Influences
+						}),
+					},
 				}),
 				q(55995, {	-- We Can Fix It
 					["qg"] = 150956,	-- Broken Drill Rig

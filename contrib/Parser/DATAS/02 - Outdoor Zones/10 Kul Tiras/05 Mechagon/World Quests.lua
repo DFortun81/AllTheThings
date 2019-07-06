@@ -8,6 +8,7 @@ _.Zones =
 			n(-34,  {	-- World Quests
 				q(56396, {	-- Creakclank
 					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56397, {	-- CK-9 Micro-Oppression Unit

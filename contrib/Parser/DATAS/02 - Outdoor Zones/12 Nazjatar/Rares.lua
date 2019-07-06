@@ -692,7 +692,7 @@ _.Zones =
 				},
 			}),
 			n(153928, {	-- Tidelord Dispersius
-				["questID"] = 56619,
+				["questID"] = 56123,
 				["coord"] = { 58.0, 26.5, 1355 },
 				["isDaily"] = true,
 				["description"] = "Kill the |cFFFFD700Azsh'ari Invoker|r that is channeling an orb above the water pool.",
