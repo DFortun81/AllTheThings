@@ -35,6 +35,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51118, {	-- Bloodwing Bonepicker
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(53298, {	-- Blooming Star Moss
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -194,6 +198,10 @@ _.Zones =
 					q(51561, {	-- Spider Scorching
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51120, {	-- Stef "Marrow" Quin
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(55303, {	-- The Cycle of Life

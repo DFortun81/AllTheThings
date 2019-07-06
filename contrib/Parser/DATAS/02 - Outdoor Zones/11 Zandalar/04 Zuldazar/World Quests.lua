@@ -45,6 +45,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50868, {	-- Bramblewing
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51475, {	-- Brutal Escort
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -58,6 +62,10 @@ _.Zones =
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
 						},
+					}),
+					q(50854, {	-- Crimsonclaw
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 					q(52892, {	-- Critters are Friends, Not Food
 						["lvl"] = 120,
@@ -105,6 +113,14 @@ _.Zones =
 					q(50846, {	-- Headhunter Lee'za
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(51178, {	-- Hundred Troll Holdout
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["groups"] = {
+							ach(13035),	-- By de Power of de Loa!
+						},
 					}),
 					q(50869, { 	-- Kiboku
 						["lvl"] = 120,
@@ -213,6 +229,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(50861, {	-- Torraske the Eternal
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50853, {	-- Umbra'rix
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

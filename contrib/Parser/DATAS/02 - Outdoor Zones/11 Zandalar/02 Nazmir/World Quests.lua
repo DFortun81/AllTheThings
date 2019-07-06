@@ -74,6 +74,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50568, {	-- Chag's Challenge
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52779, {	-- Crawg in the Bog
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -82,6 +86,10 @@ _.Zones =
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(50492, {	-- Cursed Chest
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 					q(50899, {	-- Don't Stalk Me, Troll (A)
 						["lvl"] = 120,
@@ -205,6 +213,11 @@ _.Zones =
 					}),
 					q(54839, {	-- Rightfully Ours (Incursion WQ)
 						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50961, {	-- Save Our Scrolls!
+						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),

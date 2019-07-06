@@ -7,6 +7,10 @@ _.Zones =
 		m(896, {	-- Drustvar
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
+					q(51466, {	-- Arvon the Betrayed
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54681, {	-- Azerite Caravan
 						["coord"] = { 32.13, 46.54, 896 },
 						["crs"] = { 148676 },	-- Caravan Commander Veronica
@@ -163,6 +167,16 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51697, {	-- Hunting for Truffle Hunters
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51693, {	-- Intercepting the Irontide
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51972, {	-- Lost Goat
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -174,6 +188,11 @@ _.Zones =
 					}),
 					q(51433, {	-- Matron Morana
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51707, {	-- More Valuable Than Gold
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(53979, {	-- Naga Attack!
@@ -306,6 +325,10 @@ _.Zones =
 					q(51397, { 	-- Up In Your Drill
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51508, {	-- Vicemaul
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51530, {	-- Wedding Crashers

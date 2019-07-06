@@ -7,6 +7,11 @@ _.Zones =
 		m(942, {	-- Stormsong Valley
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests
+					q(52180, {	-- A Brennadam Shame
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51855, {	-- A Pirate's Life For Me
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -38,6 +43,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51618, { 	-- Azerite Madness
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51644, {	-- Azerite Mining
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -100,6 +109,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(52306, {	-- Croaker
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52179, {	-- Fortified Resistance
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -113,6 +126,11 @@ _.Zones =
 					q(51779, {	-- Grimscowl the Harebrained
 						["coord"] = { 62.0, 73.9, 942 },
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51854, {	-- I Am the Shark
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52328, {	-- Ice Sickle
@@ -156,6 +174,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52142, {	-- Restocking
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52979, {	-- Ritual Cleansing
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,

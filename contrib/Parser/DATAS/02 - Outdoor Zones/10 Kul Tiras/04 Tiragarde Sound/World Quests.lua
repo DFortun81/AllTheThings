@@ -101,9 +101,17 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51611, {	-- Ghost of the Deep
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52120, {	-- Gnomish Azerite Extraction
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51844, {	-- Gulliver
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(52167, {	-- Hardcore Raiders
@@ -120,6 +128,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51895, {	-- Maison the Portable
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51632, {	-- Make Loh Go
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -131,6 +143,11 @@ _.Zones =
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
+					q(50315, {	-- Not On the Itinerary
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52430, {	-- Not So Bad Down Here
 						["qg"] = 141077,	-- Kwint
 						["lvl"] = 120,
@@ -140,6 +157,11 @@ _.Zones =
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(50324, {	-- Picturesque Fizzsprings Resort
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 					q(51090, {	-- Picturesque Norwington Estate
 						["lvl"] = 120,
@@ -151,6 +173,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51656, {	-- Saurolisk Tamer Mugg
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51626, {	-- Shell Game
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -243,12 +269,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
---[[					
-					q(53078, {	-- Treasure in the Tides (this may not be a valid WQ see 52155, will need to see if this version pops or not as it was in the file previous to 52155 popping)
+					q(53078, {	-- Treasure in the Tides (this may be a Horde version that doesn't have a faction tag on wowhead)
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-]]--			
 					q(52155, {	-- Treasure in the Tides (confirmed Alliance side on 7-3-2019 - Iyanden)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
