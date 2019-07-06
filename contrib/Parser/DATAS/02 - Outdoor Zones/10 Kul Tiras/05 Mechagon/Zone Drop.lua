@@ -10,11 +10,7 @@ _.Zones =
 				i(168394, {	-- Box of Assorted Parts
 					["description"] = "Non-guaranteed drop from Reclamation Rig event",
 					["g"] = {
-						p(2721, {	-- Echoing Oozeling
-							["g"] = {
-								i(169396),	-- Echoing Oozeling
-							},
-						}),
+						i(169396),	-- Echoing Oozeling
 						i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
 							i(169844),	-- Azeroth Mini: Overspark
 							i(169852),	-- Azeroth Mini: Blastatron
@@ -31,11 +27,7 @@ _.Zones =
 				i(169878, {  -- Irradiated Undercoat
 					["description"] = "Must use up all charges of the shirt to receive the pet",
 					["g"] = {
-						p(2756, {	-- Irradiated Elementaling
-							["g"] = {
-								i(169879),	-- Melted Irradiated Undercoat
-							},
-						}),
+						i(169879),	-- Melted Irradiated Undercoat
 					},
 				}),
 				i(159475),	-- Shipwrecker Axe
