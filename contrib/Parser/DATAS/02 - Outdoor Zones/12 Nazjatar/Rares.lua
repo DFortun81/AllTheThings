@@ -196,6 +196,7 @@ _.Zones =
 				["coords"] = {
 					{ 26.3, 29.0, 1355 },
 					{ 48.6, 19.7, 1355 },
+					{ 39.7, 27.9, 1355 },
 					{ 39.0, 59.3, 1355 },
 					{ 45.9, 70.9, 1355 },
 					{ 40.2, 81.5, 1355 },
@@ -531,6 +532,7 @@ _.Zones =
 				},
 			}),
 			n(152795, {	-- Sandclaw Stoneshell (Verified: Pr3vention)
+				["description"] = "Spawns in numerous places throughout the zone, mostly to the east of the Coral Forest.",
 				["questID"] = 56277,
 				["isDaily"] = true,
 				["g"] = {
@@ -852,9 +854,9 @@ _.Zones =
 				["coord"] = { 47.6, 31.9, 1355 },
 			}),
 			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency that can be looted once per day
+				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but can be looted once per day for for some Prismatic Manapearls and a chance at Benthic gear.",
 				["questID"] = 56915,
 				["isDaily"] = true,
-				["description"] = "Wanders around Nazjatar.",
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearl
 				},

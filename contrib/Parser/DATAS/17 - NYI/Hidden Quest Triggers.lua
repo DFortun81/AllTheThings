@@ -361,6 +361,7 @@ _.NeverImplemented =
 		q(56620),	-- Tidemistress Leth'sindra first kill
 		q(56605),	-- Toxigore the Alpha first kill
 		q(56299),	-- Urduu first kill
+		q(57083),	-- Wayward Algan first kill
 		-- Mechagon
 		q(55547),	-- Mechanized Chest. Chests spawn randomly
 		q(55548),	-- Mechanized Chest. Chests spawn randomly
