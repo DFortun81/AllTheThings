@@ -78,14 +78,28 @@ _.Zones =
 				},
 			}),
 			n(152566, {	-- Anemonar
+				["description"] = "Kill a |cFFFFD700Colossal Sky Ray|r on top of Anemonar to activate him.  |cFFDD3333Before you start kiting make sure any followers are deactivated by right-clicking the buff to dismiss.",
 				["questID"] = 56602,	-- Needs confirmation
 				--["questID"] = 56281,	-- Needs confirmation
-				--["description"] = 
 				["isDaily"] = true,
 				["coord"] = { 58.6, 53.2, 1355 },
 				["g"] = {
 					crit(4, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170184, {	-- Ancient Reefwalker Bark
+						["coords"] = {
+							{ 37.8, 55.6, 1355 },	-- Alliance
+							{ 49.2, 62.0, 1355 },	-- Horde
+						},
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
+						["repeatable"] = true,
+						["questID"] = 56969,
+						["g"] = {
+							crit(38, {	-- Ancient Reefwalker Bark
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),
 				},
 			}),
@@ -143,7 +157,7 @@ _.Zones =
 			}),
 			n(152464, {	-- Caverndark Terror
 				["questID"] = 56283,
-				["coord"] = { 55.6, 26.9, 1355 },
+				["coord"] = { 42.3, 13.2, 1355 },
 				["isDaily"] = true,
 				["g"] = {
 					crit(7, {	-- I Thought You Said They'd Be Rare?
@@ -201,6 +215,7 @@ _.Zones =
 				},
 			}),
 			n(152291, {	-- Deepglider
+				["questID"] = 56272,	-- also popped 56611, not sure which is first kill and which is daily
 				["isDaily"] = true,
 				["coord"] = { 56.4, 43.5, 1355 },
 				["g"] = {
@@ -252,6 +267,7 @@ _.Zones =
 			n(152553, {	-- Garnetscale
 				["questID"] = 56273,
 				["coords"] = {
+					{ 37.1, 47.5, 1355 },
 					{ 37.3, 40.3, 1355 },
 					{ 39.0, 57.0, 1355 },
 				},
@@ -287,15 +303,28 @@ _.Zones =
 				},
 			}),
 			n(152567, {	-- Kelpwillow
-				--["questID"] = 56287,
-				["questID"] = 57140,	-- (TODO: verify this)(missing in ATT)
-				--["questID"] = 56596,	-- (TODO: verify this)(not it)
+				--["questID"] = 56287,	-- both these quests popped on my first kelpwillow kill.  no other quests popped.
+				["questID"] = 56596,
 				["coord"] = { 50.2, 69.6, 1355 },
 				["isDaily"] = true,
 				["description"] = "Use a |cFFFFD700Prismatic Crystal|r to charm a |cFFFFD700Muck Slug|r and bring it to Kelpwillow to activate him.",
 				["g"] = {
 					crit(15, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170184, {	-- Ancient Reefwalker Bark
+						["coords"] = {
+							{ 37.8, 55.6, 1355 },	-- Alliance
+							{ 49.2, 62.0, 1355 },	-- Horde
+						},
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
+						["repeatable"] = true,
+						["questID"] = 56969,
+						["g"] = {
+							crit(38, {	-- Ancient Reefwalker Bark
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),
 				},
 			}),
@@ -371,6 +400,20 @@ _.Zones =
 				["g"] = {
 					crit(19, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170184, {	-- Ancient Reefwalker Bark
+						["coords"] = {
+							{ 37.8, 55.6, 1355 },	-- Alliance
+							{ 49.2, 62.0, 1355 },	-- Horde
+						},
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
+						["repeatable"] = true,
+						["questID"] = 56969,
+						["g"] = {
+							crit(38, {	-- Ancient Reefwalker Bark
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),
 				},
 			}),
@@ -591,8 +634,10 @@ _.Zones =
 				["coord"] = { 74.0, 32.8, 1355 },
 			}),
 			n(152552, {	-- Shassera
+				["description"] = "The rare flies back and forth above the water at the back of the cave.",
+				["isDaily"] = true,
 				["questID"] = 56295,
-				["coord"] = { 63.7, 6.0, 1355 },
+				["coord"] = { 63.0, 12.0, 1355 },
 				["g"] = {
 					crit(28, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -744,7 +789,7 @@ _.Zones =
 				},
 			}),
 			n(152568, {	-- Urduu
-				["questID"] = 56584, -- TODO: verify daily ID. Also triggered 57140
+				["questID"] = 56584, -- TODO: verify daily ID. Also triggered 57140 — slumber killed urduu 7/6/19 and it triggered 56584 + 56299, but not 57140
 				["coords"] = {
 					{ 31.3, 29.4, 1355 },
 					{ 30.3, 35.9, 1355 },
@@ -754,6 +799,20 @@ _.Zones =
 				["g"] = {
 					crit(36, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170184, {	-- Ancient Reefwalker Bark
+						["coords"] = {
+							{ 37.8, 55.6, 1355 },	-- Alliance
+							{ 49.2, 62.0, 1355 },	-- Horde
+						},
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
+						["repeatable"] = true,
+						["questID"] = 56969,
+						["g"] = {
+							crit(38, {	-- Ancient Reefwalker Bark
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),
 				},
 			}),

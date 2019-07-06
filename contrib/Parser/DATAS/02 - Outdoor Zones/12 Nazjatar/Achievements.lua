@@ -34,7 +34,9 @@ _.Zones =
 					ach(13757),	-- Battle-Scarred: Vim Brineheart
 				},
 			}),
-			ach(13763),		-- Back to the Depths!
+			ach(13763, {	-- Back to the Depths!
+				["description"] = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time).  A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
+			}),
 			ach(13836, {	-- Feline Figurines Found
 				o(9999970, {	-- Figurine 1
 					["questID"] = 56983,

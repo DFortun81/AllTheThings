@@ -59,10 +59,18 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56787, {	-- Additional Supplies
+				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 2.",
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154297,	-- Bladesman Inowari
+				["g"] = {
+					i(169903),	-- Nazjatar Survival Pack
+				},
+			}),
 			q(56777, {	-- A Gift From The Clan
 				["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "Offered when your bodyguard hits rank 2.",
+				["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 2.",
 				["g"] = {
 					i(169903),	-- Nazjatar Survival Pack
 				},
@@ -70,7 +78,7 @@ _.Zones =
 			q(56778, {	-- A Glint of the Darkness
 				["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "Available when your bodyguard hits rank 5.",
+				["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 5.",
 			}),
 			q(55984, {	-- A Good Offense
 				["qg"] = 153623,	-- Korl
@@ -84,7 +92,7 @@ _.Zones =
 				["qg"] = 151309,	-- Kelfin Scout (Neri Sharpfin)
 				["coord"] = { 45.0, 60.9, 1355 },
 				["races"] = HORDE_ONLY,
-				["description"] = "Available when your bodyguard hits rank 9.",
+				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 9.",
 			}),
 			o(325853, {	-- Empty Bookcase
 				["coord"] = { 78.4, 28.6, 1355 },
@@ -619,6 +627,7 @@ _.Zones =
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
 			--	["objectID"] = ,	-- Illegible Treasure Map (unknown ID, not linked to quest)
+				["isDaily"] = true,
 				["coord"] = { 43.8, 54.5, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1004,6 +1013,14 @@ _.Zones =
 					55867,	-- Coveted Crystals
 					55870,	-- Sea Slug Liquidation
 				},
+			}),
+			q(56146, {	-- Making Kelpberry Wine
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			--	["objectID"] = 325869,	-- Empty Cask
+				["isDaily"] = true,
+				["coord"] = { 59.5, 42.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(55482, {	-- Making the Connection
 				["qg"] = 152066,	-- First Arcanist Thalyssra
@@ -1459,7 +1476,7 @@ _.Zones =
 				["coord"] = { 38.8, 42.4, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55385,	-- Scouting the Pens
-				["description"] = "Unlocks the rest of the zone and opens up World Quests.", -- (spellID 304906)
+				["description"] = "Unlocks the rest of the zone and opens up World Quests.",
 				["g"] = {
 					spell(304906),	-- World Quests
 				},
@@ -1617,14 +1634,24 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56429,	-- Up Against It
 			}),
-			q(56830, {	-- Summons from the Depths
+			q(56830, {	-- Summons from the Deep
+				["description"] = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time).  A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
 				["isDaily"] = true,
 				["coords"] = {
 					{ 48.5, 40.4, 1355 },
 					{ 58.2, 28.7, 1355 },
 				},
+				["crs"] = { -- not sure if there are any other bosses that get summoned
+					153308,	-- Fury of Azshara
+				},
 				["g"] = {
 					ach(13763),	-- Back to the Depths!
+					i(170081, {	-- Abyssal Conch
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(170079, {	-- Abyssal Conch
+						["races"] = HORDE_ONLY,
+					}),
 				},
 			}),
 			q(56817, {	-- Thank You For Being A Friend
@@ -1676,7 +1703,7 @@ _.Zones =
 				["coord"] = { 73.9, 41.7, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56310,	-- City of Drowned Friends
-				["description"] = "Dodge the fleeing civilians",
+				["description"] = "Dodge the fleeing civilians.",
 			}),
 			q(56143, {	-- The Fate of Professor Elryna
 				["qg"] = 154143,	-- Collector Kojo
@@ -2002,7 +2029,7 @@ _.Zones =
 			q(56815, {	-- With A Little Help From My Friends
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
 				["races"] = HORDE_ONLY,
-				["description"] = "Unlocks when |nFFFFD700Neri Sharpfin|r hits rank 7.",
+				["description"] = "Offered when |nFFFFD700Neri Sharpfin|r reaches rank 7.",
 				["g"] = {
 					i(169919),	-- Unshackled Commendation Crate
 				},

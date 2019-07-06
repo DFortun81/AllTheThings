@@ -24,25 +24,6 @@ _.Zones =
 					}),
 				},
 			}),
-			i(170184, {	-- Ancient Reefwalker Bark — MAY NEED TO BE MOVED.  no info on where this comes from yet!
-			--	there are lots of mobs that have "reefwalker" in their name -- maybe those?  there are also elite ones, so possibly more common from them?
-			--	["description"] = "Turn in to |cFFFFD700INSERTNAMEHERE|r (Alliance) or |cFFFFD700INSERTNAMEHERE|r (Horde) for INSERTAMOUNTHERE reputation.",
-			--	["questID"] = ,	-- also check if there are separate horde/alliance questIDs or if they're shared
-			--	["coords"] = {
-			--		{ , , 1355 },	-- Alliance
-			--		{ , , 1355 },	-- Horde
-			--	},
-				["questID"] = 56969,	-- confirmed as ID for horde (Pr3vention)
-				["repeatable"] = true,
-				["crs"] = {
-					152568,	-- Urduu
-				},
-				["g"] = {
-					crit(38, {	-- Ancient Reefwalker Bark
-						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-					}),
-				},
-			}),
 			i(170188, {	-- Barnacled Bag of Goods
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					148392,	-- Kil'karrok Makrura
