@@ -3,7 +3,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
     -CRIEVE
 ]]--
---[[profession(2720, {	-- Junkyard Tinkering
+profession(2720, {	-- Junkyard Tinkering
 	filter(200, {
 		{
 			["name"] = "Junkyard Tinkering",
@@ -162,6 +162,10 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
 					["categoryID"] = 1259,
 					["g"] = {
 						{
+							["name"] = "500S-Cybergenic Powercore",
+							["recipeID"] = 291598
+						},
+						{
 							["name"] = "Beastbot Powerpack",
 							["recipeID"] = 295362
 						},
@@ -210,4 +214,4 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
 			}
 		}
 	}),
-});]]
+});
