@@ -8058,23 +8058,21 @@ local function RowOnEnter(self)
 		if reference.bonusID and app.Settings:GetTooltipSetting("bonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
 		if reference.modID and app.Settings:GetTooltipSetting("modID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
 		if reference.dr then GameTooltip:AddDoubleLine(L["DROP_RATE"], "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
+		if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
+			local found = false;
+			for i=1,GameTooltip:NumLines() do
+				if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
+					found = true;
+					break;
+				end
+			end
+			if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+		end
 		if not reference.itemID then
 			if reference.speciesID then
 				AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
-			else
-				if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
-					local found = false;
-					for i=1,GameTooltip:NumLines() do
-						if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
-							found = true;
-							break;
-						end
-					end
-					if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
-				end
-				if reference.u then
-					GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
-				end
+			elseif reference.u then
+				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
 			end
 		end
 		if reference.speciesID then
@@ -9284,6 +9282,115 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime"):SetSize(425, 305);
 app:GetWindow("Unsorted");
+app:GetWindow("Bounty", UIParent, function(self, force, got)
+	if not self.initialized then
+		self.initialized = true;
+		self.openedOnLogin = false;
+		self.data = {
+			['text'] = "Bounty",
+			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp", 
+			["description"] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
+			['visible'] = true, 
+			['expanded'] = true,
+			['indent'] = 0,
+			['g'] = {
+				{
+					['text'] = "Open Automatically",
+					['icon'] = "Interface\\Icons\\INV_Misc_Note_01",
+					['description'] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						if app.Settings:GetTooltipSetting("Auto:BountyList") then
+							app.Settings:SetTooltipSetting("Auto:BountyList", false);
+							row.ref.saved = false;
+							UpdateWindow(self, true, got);
+						else
+							app.Settings:SetTooltipSetting("Auto:BountyList", true);
+							row.ref.saved = true;
+							UpdateWindow(self, true, got);
+						end
+						return true;
+					end,
+				},
+				app.CreateInstance(745, { 	-- Karazhan (Raid)
+					['description'] = "The reward chest for completing the Chess Event in Karazhan is currently not interactable since 8.2. All items found within it are now considered Unobtainable.",
+					['isRaid'] = true,
+					['g'] = {
+						app.CreateItemSource(12700, 28749),	-- King's Defender
+						app.CreateItemSource(12704, 28754),	-- Triptych Shield of the Ancients
+						app.CreateItemSource(12706, 28756),	-- Headdress of the High Potentate
+						app.CreateItem(28745),	-- Mithril Chain of Heroism
+						app.CreateItemSource(12705, 28755),	-- Bladed Shoulderpads of the Merciless
+						app.CreateItemSource(12701, 28750),	-- Girdle of Treachery
+						app.CreateItemSource(12702, 28751),	-- Heart-Flame Leggings
+						app.CreateItemSource(12699, 28748),	-- Legplates of the Innocent
+						app.CreateItemSource(12698, 28747),	-- Battlescar Boots
+						app.CreateItemSource(12697, 28746),	-- Fiend Slayer Boots
+						app.CreateItemSource(12703, 28752),	-- Forestlord Striders
+						app.CreateItem(28753),	-- Ring of Recurrence
+					},
+				}),
+				app.CreateInstance(746, {	-- Gruul's Lair
+					['description'] = "A number of items that used to drop from Gruul the Dragonkiller no longer drop at all.\n\nIt is believed that the transition to Legacy Loot Mode broke these items.",
+					['isRaid'] = true,
+					['g'] = {
+						app.CreateItemSource(12738, 28802),	-- Bloodmaw Magus-Blade
+						app.CreateItemSource(12740, 28804),	-- Collar of Cho'gall
+						app.CreateItemSource(12739, 28803),	-- Cowl of Nature's Breath
+						app.CreateItemSource(12746, 28810),	-- Windshear Boots
+						app.CreateItem(28822),	-- Teeth of Gruul
+						app.CreateItem(28823),	-- Eye of Grull
+					},
+				}),
+				app.CreateInstance(228, {	-- Blackrock Depths
+					['description'] = "This item has been listed as a drop from General Angerforge in the Adventure Guide since 7.3.5 and has never dropped. Originally dropped from Princess Moira Bronzebeard during the Emperor Dagran Thaurissan encounter.\n\nThere is currently an outstanding 100k gold bounty on this item posted by Crieve of the ATT Discord that has yet to be claimed.",
+					['g'] = {
+						app.CreateItemSource(4464, 12557),	-- Ebonsteel Spaulders
+					},
+				}),
+				app.CreateInstance(230, {	-- Dire Maul (West)
+					['description'] = "This item used to drop from Prince Tortheldrin, but was moved to Tendris Warpwood during 7.3.5's Legacy Loot Mode adjustments. It remained on the loot table in the Adventure Guide until 8.1 when it was removed from the Adventure Guide completely.\n\nDon't be lazy.\nPlease add this item back.",
+					['g'] = {
+						app.CreateItemSource(7303, 18382),	-- Fluctuating Cloak
+					},
+				}),
+				app.CreateInstance(277, { 	-- Halls of Stone
+					['description'] = "The reward chest for completing the Tribunal of Ages Event in Halls of Stone is currently not interactable since 8.2. All items found within it are now considered Unobtainable.",
+					['g'] = {
+						app.CreateItemSource(17928, 37653),	-- Sword of Justice
+						app.CreateItemSource(17930, 37655),	-- Mantle of the Tribunal
+						app.CreateItemSource(16594, 35677),	-- Cosmos Vestments
+						app.CreateItemSource(16592, 35675),	-- Linked Armor of the Sphere
+						app.CreateItemSource(93759, 157564), 	-- Marbled Bracers
+						app.CreateItemSource(17931, 37656),	-- Raging Construct Bands
+						app.CreateItemSource(16593, 35676),	-- Constellation Leggings
+						app.CreateItemSource(17929, 37654),	-- Sabaton of the Ages
+					},
+				}),
+			},
+		};
+		BuildGroups(self.data, self.data.g);
+		table.insert(app.RawData, self.data);
+		self.rawData = {};
+		self:SetScript("OnEvent", function(self, e, ...)
+			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
+				self.data.g[1].saved = true;
+				self:SetVisible(true);
+			end
+		end);
+		self:RegisterEvent("VARIABLES_LOADED");
+	end
+	if self:IsVisible() then
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		self.data.back = 1;
+		self.data.indent = 0;
+		UpdateGroups(self.data, self.data.g);
+		self.data.visible = true;
+		UpdateWindow(self, true, got);
+	end
+end);
 app:GetWindow("CosmicInfuser", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
@@ -12448,6 +12555,9 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		if cmd == "" or cmd == "main" or cmd == "mainlist" then
 			app.ToggleMainList();
 			return true;
+		elseif cmd == "bounty" then
+			app:GetWindow("Bounty"):Toggle();
+			return true;
 		elseif cmd == "ra" then
 			app:GetWindow("RaidAssistant"):Toggle();
 			return true;
@@ -12562,6 +12672,11 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		-- Default command
 		app.ToggleMainList();
 	end
+end
+
+SLASH_AllTheThingsBOUNTY1 = "/attbounty";
+SlashCmdList["AllTheThingsBOUNTY"] = function(cmd)
+	app:GetWindow("Bounty"):Toggle();
 end
 
 SLASH_AllTheThingsHARVESTER1 = "/attharvest";

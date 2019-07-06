@@ -102,14 +102,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 485,	-- Halls of Stone
 						["criteriaID"] = 2,	-- Tribunal of Ages
 					},
-					i(37653),	-- Sword of Justice
-					i(37655),	-- Mantle of the Tribunal
-					i(35677),	-- Cosmos Vestments
-					i(35675),	-- Linked Armor of the Sphere
-					i(157564), 	-- Marbled Bracers
-					i(37656),	-- Raging Construct Bands
-					i(35676),	-- Constellation Leggings
-					i(37654),	-- Sabaton of the Ages
+					un(45, i(37653)),	-- Sword of Justice
+					un(45, i(37655)),	-- Mantle of the Tribunal
+					un(45, i(35677)),	-- Cosmos Vestments
+					un(45, i(35675)),	-- Linked Armor of the Sphere
+					un(45, i(157564)), 	-- Marbled Bracers
+					un(45, i(37656)),	-- Raging Construct Bands
+					un(45, i(35676)),	-- Constellation Leggings
+					un(45, i(37654)),	-- Sabaton of the Ages
 				})),
 				cr(27978, e(607, {	-- Sjonnir The Ironshaper
 					{	-- Halls of Stone: Sjonnir The Ironshaper
@@ -217,14 +217,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 496,	-- Heroic: Halls of Stone
 							["criteriaID"] = 3,	-- Tribunal of Ages
 						},
-						i(37653),	-- Sword of Justice
-						i(37655),	-- Mantle of the Tribunal
-						i(35677),	-- Cosmos Vestments
-						i(35675),	-- Linked Armor of the Sphere
-						i(157564), 	-- Marbled Bracers
-						i(37656),	-- Raging Construct Bands
-						i(35676),	-- Constellation Leggings
-						i(37654),	-- Sabaton of the Ages
+						un(45, i(37653)),	-- Sword of Justice
+						un(45, i(37655)),	-- Mantle of the Tribunal
+						un(45, i(35677)),	-- Cosmos Vestments
+						un(45, i(35675)),	-- Linked Armor of the Sphere
+						un(45, i(157564)), 	-- Marbled Bracers
+						un(45, i(37656)),	-- Raging Construct Bands
+						un(45, i(35676)),	-- Constellation Leggings
+						un(45, i(37654)),	-- Sabaton of the Ages
 					})),
 					cr(27978, e(607, {	-- Sjonnir The Ironshaper
 						{	-- Abuse the Ooze

@@ -111,6 +111,7 @@ local FilterSettingsBase = {
 };
 local TooltipSettingsBase = {
 	__index = {
+		["Auto:BountyList"] = true,
 		["Auto:MiniList"] = true,
 		["Auto:ProfessionList"] = true,
 		["Auto:AH"] = true,
@@ -2763,6 +2764,16 @@ end);
 AutomaticallySkipCutscenesCheckBox:SetATTTooltip("Enable this option if you want ATT to automatically skip all cutscenes on your behalf.");
 AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
 
+local OpenBountyListAutomatically = settings:CreateCheckBox("Automatically Open the Bounty List",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:BountyList", self:GetChecked());
+end);
+OpenBountyListAutomatically:SetATTTooltip("Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty");
+OpenBountyListAutomatically:SetPoint("TOPLEFT", AutomaticallySkipCutscenesCheckBox, "BOTTOMLEFT", 0, 4);
+
 local OpenMainListAutomatically = settings:CreateCheckBox("Automatically Open the Main List",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:MainList"));
@@ -2771,7 +2782,7 @@ function(self)
 	settings:SetTooltipSetting("Auto:MainList", self:GetChecked());
 end);
 OpenMainListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att");
-OpenMainListAutomatically:SetPoint("TOPLEFT", AutomaticallySkipCutscenesCheckBox, "BOTTOMLEFT", 0, 4);
+OpenMainListAutomatically:SetPoint("TOPLEFT", OpenBountyListAutomatically, "BOTTOMLEFT", 0, 4);
 
 local OpenMiniListAutomatically = settings:CreateCheckBox("Automatically Open the Mini List",
 function(self)
