@@ -15,16 +15,16 @@ _.Zones =
 				868,	-- Val'sharah (Legion Invasion)
 			},
 			["lvl"] = 98,
-			["g"] = {
+			["groups"] = {
 				n(-4,   {	-- Achievements
 					ach(9696,  {	-- Family Familiar
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
-						["g"] = {
+						["groups"] = {
 							ach(9686, {	-- Aquatic Acquiescence
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -38,7 +38,7 @@ _.Zones =
 							ach(9687, {	-- Best of the Beasts
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -52,7 +52,7 @@ _.Zones =
 							ach(9689, {	-- Dragons!
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -66,7 +66,7 @@ _.Zones =
 							ach(9691, {	-- Flock Together
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -80,7 +80,7 @@ _.Zones =
 							ach(9693, {	-- Master of Magic
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -94,7 +94,7 @@ _.Zones =
 							ach(9688, {	-- Mousing Around
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -108,7 +108,7 @@ _.Zones =
 							ach(9692, {	-- Murlocs, Harpies, and Wolvar, Oh My!
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -122,7 +122,7 @@ _.Zones =
 							ach(9690, {	-- Ragnaros, Watch and Learn
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -136,7 +136,7 @@ _.Zones =
 							ach(9694, {	-- Roboteer
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -150,7 +150,7 @@ _.Zones =
 							ach(9695, {	-- The Lil' Necromancer
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(14, {	-- Durian Strongfruit
 										["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 										["coord"] = { 47.0, 39.6, 641 },
@@ -195,9 +195,9 @@ _.Zones =
 				}),
 				n(-169, {	-- Emissary Quess
 					q(42170, {	-- The Dreamweavers
-						["g"] = {
+						["groups"] = {
 							i(157822, {	-- Dreamweaver Provisions
-								["g"] = {
+								["groups"] = {
 									i(144319),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 3)
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									i(130167),	-- Thistleleaf Adventurer
@@ -206,7 +206,7 @@ _.Zones =
 										i(121307),	-- Nightmare Shroud
 									}),
 									n(-3245, {	-- Night Dreamer Set
-										["g"] = {
+										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
 											i(139089),	-- Night Dreamer Robe
@@ -218,7 +218,7 @@ _.Zones =
 										},
 									}),
 									n(-3259, {	-- Terrorweave Set
-										["g"] = {
+										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
 											i(121327),	-- Terrorweave Robe
@@ -230,7 +230,7 @@ _.Zones =
 										},
 									}),
 									n(-3269, {	-- Dreadhide Set
-										["g"] = {
+										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
 											i(121297),	-- Dreadhide Chestguard
@@ -242,7 +242,7 @@ _.Zones =
 										},
 									}),
 									n(-3268, {	-- Tranquil Bough Set
-										["g"] = {
+										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
 											i(139071),	-- Tranquil Bough Vest
@@ -254,7 +254,7 @@ _.Zones =
 										},
 									}),
 									n(-3281, {	-- Bramblemail Set
-										["g"] = {
+										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
 											i(139084),	-- Bramblemail Hauberk
@@ -266,7 +266,7 @@ _.Zones =
 										},
 									}),
 									n(-3279, {	-- Vilescale Set
-										["g"] = {
+										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
 											i(121322),	-- Vilescale Chain Shirt
@@ -278,7 +278,7 @@ _.Zones =
 										},
 									}),
 									n(-3307, {	-- Nightsfall Set
-										["g"] = {
+										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
 											i(139055),	-- Nightsfall Breastplate
@@ -290,7 +290,7 @@ _.Zones =
 										},
 									}),
 									n(-3303, {	-- Wracksoul Set
-										["g"] = {
+										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
 											i(121276),	-- Wracksoul Chestplate
@@ -304,14 +304,14 @@ _.Zones =
 								},
 							}),
 							un(2, i(154903, {	-- Dreamweaver Provisions
-								["g"] = {
+								["groups"] = {
 									i(130167),	-- Thistleleaf Adventurer
 									n(-322, {	-- Cloak
 										i(139074),	-- Dreamwalker's Cloak
 										i(121307),	-- Nightmare Shroud
 									}),
 									n(-3245, {	-- Night Dreamer Set
-										["g"] = {
+										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
 											i(139089),	-- Night Dreamer Robe
@@ -323,7 +323,7 @@ _.Zones =
 										},
 									}),
 									n(-3259, {	-- Terrorweave Set
-										["g"] = {
+										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
 											i(121327),	-- Terrorweave Robe
@@ -335,7 +335,7 @@ _.Zones =
 										},
 									}),
 									n(-3269, {	-- Dreadhide Set
-										["g"] = {
+										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
 											i(121297),	-- Dreadhide Chestguard
@@ -347,7 +347,7 @@ _.Zones =
 										},
 									}),
 									n(-3268, {	-- Tranquil Bough Set
-										["g"] = {
+										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
 											i(139071),	-- Tranquil Bough Vest
@@ -359,7 +359,7 @@ _.Zones =
 										},
 									}),
 									n(-3281, {	-- Bramblemail Set
-										["g"] = {
+										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
 											i(139084),	-- Bramblemail Hauberk
@@ -371,7 +371,7 @@ _.Zones =
 										},
 									}),
 									n(-3279, {	-- Vilescale Set
-										["g"] = {
+										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
 											i(121322),	-- Vilescale Chain Shirt
@@ -383,7 +383,7 @@ _.Zones =
 										},
 									}),
 									n(-3307, {	-- Nightsfall Set
-										["g"] = {
+										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
 											i(139055),	-- Nightsfall Breastplate
@@ -395,7 +395,7 @@ _.Zones =
 										},
 									}),
 									n(-3303, {	-- Wracksoul Set
-										["g"] = {
+										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
 											i(121276),	-- Wracksoul Chestplate
@@ -409,14 +409,14 @@ _.Zones =
 								},
 							})),
 							un(2, i(151464, {	-- Dreamweaver Provisions
-								["g"] = {
+								["groups"] = {
 									i(130167),	-- Thistleleaf Adventurer
 									n(-322, {	-- Cloak
 										i(139074),	-- Dreamwalker's Cloak
 										i(121307),	-- Nightmare Shroud
 									}),
 									n(-3245, {	-- Night Dreamer Set
-										["g"] = {
+										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
 											i(139089),	-- Night Dreamer Robe
@@ -428,7 +428,7 @@ _.Zones =
 										},
 									}),
 									n(-3259, {	-- Terrorweave Set
-										["g"] = {
+										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
 											i(121327),	-- Terrorweave Robe
@@ -440,7 +440,7 @@ _.Zones =
 										},
 									}),
 									n(-3269, {	-- Dreadhide Set
-										["g"] = {
+										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
 											i(121297),	-- Dreadhide Chestguard
@@ -452,7 +452,7 @@ _.Zones =
 										},
 									}),
 									n(-3268, {	-- Tranquil Bough Set
-										["g"] = {
+										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
 											i(139071),	-- Tranquil Bough Vest
@@ -464,7 +464,7 @@ _.Zones =
 										},
 									}),
 									n(-3281, {	-- Bramblemail Set
-										["g"] = {
+										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
 											i(139084),	-- Bramblemail Hauberk
@@ -476,7 +476,7 @@ _.Zones =
 										},
 									}),
 									n(-3279, {	-- Vilescale Set
-										["g"] = {
+										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
 											i(121322),	-- Vilescale Chain Shirt
@@ -488,7 +488,7 @@ _.Zones =
 										},
 									}),
 									n(-3307, {	-- Nightsfall Set
-										["g"] = {
+										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
 											i(139055),	-- Nightsfall Breastplate
@@ -500,7 +500,7 @@ _.Zones =
 										},
 									}),
 									n(-3303, {	-- Wracksoul Set
-										["g"] = {
+										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
 											i(121276),	-- Wracksoul Chestplate
@@ -514,14 +514,14 @@ _.Zones =
 								},
 							})),
 							un(2, i(146747, {	-- Dreamweaver Provisions
-								["g"] = {
+								["groups"] = {
 									i(130167),	-- Thistleleaf Adventurer
 									n(-322, {	-- Cloak
 										i(139074),	-- Dreamwalker's Cloak
 										i(121307),	-- Nightmare Shroud
 									}),
 									n(-3245, {	-- Night Dreamer Set
-										["g"] = {
+										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
 											i(139089),	-- Night Dreamer Robe
@@ -533,7 +533,7 @@ _.Zones =
 										},
 									}),
 									n(-3259, {	-- Terrorweave Set
-										["g"] = {
+										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
 											i(121327),	-- Terrorweave Robe
@@ -545,7 +545,7 @@ _.Zones =
 										},
 									}),
 									n(-3269, {	-- Dreadhide Set
-										["g"] = {
+										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
 											i(121297),	-- Dreadhide Chestguard
@@ -557,7 +557,7 @@ _.Zones =
 										},
 									}),
 									n(-3268, {	-- Tranquil Bough Set
-										["g"] = {
+										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
 											i(139071),	-- Tranquil Bough Vest
@@ -569,7 +569,7 @@ _.Zones =
 										},
 									}),
 									n(-3281, {	-- Bramblemail Set
-										["g"] = {
+										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
 											i(139084),	-- Bramblemail Hauberk
@@ -581,7 +581,7 @@ _.Zones =
 										},
 									}),
 									n(-3279, {	-- Vilescale Set
-										["g"] = {
+										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
 											i(121322),	-- Vilescale Chain Shirt
@@ -593,7 +593,7 @@ _.Zones =
 										},
 									}),
 									n(-3307, {	-- Nightsfall Set
-										["g"] = {
+										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
 											i(139055),	-- Nightsfall Breastplate
@@ -605,7 +605,7 @@ _.Zones =
 										},
 									}),
 									n(-3303, {	-- Wracksoul Set
-										["g"] = {
+										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
 											i(121276),	-- Wracksoul Chestplate
@@ -619,14 +619,14 @@ _.Zones =
 								},
 							})),
 							un(2, i(137560, {	-- Dreamweaver Provisions
-								["g"] = {
+								["groups"] = {
 									i(130167),	-- Thistleleaf Adventurer
 									n(-322, {	-- Cloak
 										i(139074),	-- Dreamwalker's Cloak
 										i(121307),	-- Nightmare Shroud
 									}),
 									n(-3245, {	-- Night Dreamer Set
-										["g"] = {
+										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
 											i(139089),	-- Night Dreamer Robe
@@ -638,7 +638,7 @@ _.Zones =
 										},
 									}),
 									n(-3259, {	-- Terrorweave Set
-										["g"] = {
+										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
 											i(121327),	-- Terrorweave Robe
@@ -650,7 +650,7 @@ _.Zones =
 										},
 									}),
 									n(-3269, {	-- Dreadhide Set
-										["g"] = {
+										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
 											i(121297),	-- Dreadhide Chestguard
@@ -662,7 +662,7 @@ _.Zones =
 										},
 									}),
 									n(-3268, {	-- Tranquil Bough Set
-										["g"] = {
+										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
 											i(139071),	-- Tranquil Bough Vest
@@ -674,7 +674,7 @@ _.Zones =
 										},
 									}),
 									n(-3281, {	-- Bramblemail Set
-										["g"] = {
+										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
 											i(139084),	-- Bramblemail Hauberk
@@ -686,7 +686,7 @@ _.Zones =
 										},
 									}),
 									n(-3279, {	-- Vilescale Set
-										["g"] = {
+										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
 											i(121322),	-- Vilescale Chain Shirt
@@ -698,7 +698,7 @@ _.Zones =
 										},
 									}),
 									n(-3307, {	-- Nightsfall Set
-										["g"] = {
+										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
 											i(139055),	-- Nightsfall Breastplate
@@ -710,7 +710,7 @@ _.Zones =
 										},
 									}),
 									n(-3303, {	-- Wracksoul Set
-										["g"] = {
+										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
 											i(121276),	-- Wracksoul Chestplate
@@ -728,7 +728,7 @@ _.Zones =
 					}),
 					n(-206, {	-- Paragon
 						q(46747, {	-- Supplies From the Dreamweavers
-							["g"] = {
+							["groups"] = {
 								i(152103, {	-- Dreamweaver Cache
 									i(147804),	-- Wild Dreamrunner
 								}),
@@ -778,7 +778,7 @@ _.Zones =
 					p(1737), 	-- Vale Flitter
 					n(115740, {	-- Orphaned Sharptalon
 						["description"] = "1. Buy Dried Bilberries from Fialla Sweetberry in Dalaran.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling|r",
-						["g"] = {
+						["groups"] = {
 							p(1976), 	-- Sharptalon Hatchling
 							q(45007, {	-- Sharptalon Bonding
 								i(142496),	-- Dirty Spoon
@@ -800,7 +800,7 @@ _.Zones =
 						q(39680, {	-- Between the Hammer...
 							["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
 							["qg"] = 96763,	-- Saris Swifthammer
-							["g"] = {
+							["groups"] = {
 								i(123929),	-- Plans: Leystone Waistguard (Rank 2)
 							},
 						}),
@@ -818,7 +818,7 @@ _.Zones =
 								["qg"] = 106901,	-- Sylvia Hartshorn
 								["lvl"] = 110,
 								["collectible"] = false,
-								["g"] = {
+								["groups"] = {
 									i(123936),	-- Recipe: Leystone Armguards (Rank 3)
 								},
 							}),
@@ -828,7 +828,7 @@ _.Zones =
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
-							["g"] = {
+							["groups"] = {
 								{
 									["itemID"] = 133887,	-- Luminous Pearl (Item)
 									["questID"] = 40960,	-- Luminous Pearl (Quest)
@@ -839,7 +839,7 @@ _.Zones =
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure
 									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["g"] = {
+									["groups"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 4,			-- Axefish (Criteria)
@@ -854,19 +854,19 @@ _.Zones =
 								}),
 								i(133724, {		-- Decayed Whale Blubber
 									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["g"] = {
+									["groups"] = {
 										i(133795),	-- Ravenous Fly
 									}
 								}),
 								i(133721, {		-- Message in a Bottle
 									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["g"] = {
+									["groups"] = {
 										i(133722)		-- Axefish Lure
 									},
 								}),
 								i(133795, {		-- Ravenous Fly
 									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["g"] = {
+									["groups"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
@@ -881,10 +881,10 @@ _.Zones =
 								}),
 								i(133723, {		-- Stunned, Angry Shark
 									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["g"] = {
+									["groups"] = {
 										n(102359, {		-- Landlocked Shark
 											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["g"] = {
+											["groups"] = {
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
 													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
@@ -902,7 +902,7 @@ _.Zones =
 							}),
 							i(133708, {		-- Drowned Thistleleaf
 								["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
-								["g"] = {
+								["groups"] = {
 									spell(202067, {		-- Blessing of the Thistleleaf
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -919,7 +919,7 @@ _.Zones =
 							}),
 							i(133707, {		-- Nightmare Nightcrawler
 								["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
 										["criteriaID"] = 17,		-- Terrorfin (Criteria)
@@ -934,10 +934,10 @@ _.Zones =
 							}),
 							i(133705, {		-- Rotten Fishbone
 								["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-								["g"] = {
+								["groups"] = {
 									n(102349, {		-- Lorlathil Druid
 										["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-										["g"] = {
+										["groups"] = {
 											spell(201809, {		-- The Cat's Meow (Spell)
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -957,13 +957,13 @@ _.Zones =
 						}),
 						ach(11725, { 	-- Fisherfriend of the Isles
 							faction(2098, {	-- Keeper Raynae
-								["g"] = {
+								["groups"] = {
 									i(146959, {		-- Corrupted Globule
 										i(147309), 	-- Face of the Forest
 										i(152565),	-- Recipe: Feast of the Fishes
 										i(133708, {		-- Drowned Thistleleaf
 											["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
-											["g"] = {
+											["groups"] = {
 												spell(202067, {		-- Blessing of the Thistleleaf
 													{
 														["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -980,7 +980,7 @@ _.Zones =
 										}),
 										i(133707, {		-- Nightmare Nightcrawler
 											["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
-											["g"] = {
+											["groups"] = {
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
 													["criteriaID"] = 17,		-- Terrorfin (Criteria)
@@ -995,10 +995,10 @@ _.Zones =
 										}),
 										i(133705, {		-- Rotten Fishbone
 											["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-											["g"] = {
+											["groups"] = {
 												n(102349, {		-- Lorlathil Druid
 													["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-													["g"] = {
+													["groups"] = {
 														spell(201809, {		-- The Cat's Meow (Spell)
 															{
 																["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -1050,7 +1050,7 @@ _.Zones =
 							["itemID"] = 129122,	-- Felwort Sample
 							["questID"] = 40040,	-- Felwort Sample
 							["requireSkill"] = 182,	-- Herbalism
-							["g"] = {
+							["groups"] = {
 								recipe(193307),	-- Felwort [Rank 1]
 							},
 						},
@@ -1069,7 +1069,7 @@ _.Zones =
 						["description"] = "|cff66ccffYou have to kill Jinikki the Puncturer to get this quest.|n",
 						["coord"] = { 53.0, 87.7, 641 },	-- cave entrance
 						["crs"] = { 93686 },	-- Jinikki the Puncturer
-						["g"] = {
+						["groups"] = {
 							i(128690),	-- Ashmaw Cub (PET!)
 						},
 					}),
@@ -1135,7 +1135,7 @@ _.Zones =
 					q(40536,  {	-- Bruls Before Jewels
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["qg"] = 100776,	-- Jabrul <Jewelcrafting Master>
-						["g"] = {
+						["groups"] = {
 							i(132469),	-- Design: Azsunite Pendant
 							i(132468),	-- Design: Deep Amber Pendant
 							i(132467),	-- Design: Skystone Pendant
@@ -1155,7 +1155,7 @@ _.Zones =
 						["sourceQuests"] = { 43702 },	-- Softening the Target
 						["coord"] = { 63.2, 42.1, 641 },
 						["qg"] = 104728,	-- Tyrande Whisperwind
-						["g"] = {
+						["groups"] = {
 							i(132311),	-- Blossom of Promise
 							i(132319),	-- Charred Imp Claw
 							i(132314),	-- Desiccated Breeze
@@ -1178,7 +1178,7 @@ _.Zones =
 						["sourceQuests"] = { 43702 },	-- Softening the Target
 						["coord"] = { 63.2, 42.1, 641 },
 						["qg"] = 104728,	-- Tyrande Whisperwind
-						["g"] = {
+						["groups"] = {
 							i(132311),	-- Blossom of Promise
 							i(132319),	-- Charred Imp Claw
 							i(132314),	-- Desiccated Breeze
@@ -1201,7 +1201,7 @@ _.Zones =
 						["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
 						["coord"] = { 53.7, 55.8, 641 },
 						["qg"] = 104921,	-- Tyrande Whisperwind
-						["g"] = {
+						["groups"] = {
 							i(141551),	-- Boots of the Receding Nightmare
 							i(141548),	-- Footwraps of the Receding Nightmare
 							i(141550),	-- Sabatons of the Receding Nightmare
@@ -1225,7 +1225,7 @@ _.Zones =
 						},
 						["coord"] = { 48.9, 70.1, 641 },
 						["qg"] = 91066,	-- Elothir
-						["g"] = {
+						["groups"] = {
 							i(121646),	-- Witchmother Drape
 							i(130021),	-- Swiftfeather Band
 						},
@@ -1259,7 +1259,7 @@ _.Zones =
 						},
 						["coord"] = { 63.7, 49.9, 643 },	-- Sleeper's Barrow
 						["qg"] = 91223,	-- Koda Steelclaw
-						["g"] = {
+						["groups"] = {
 							i(121586),	-- Nightvale Cowl
 							i(121593),	-- Nightvale Robe
 							i(121574),	-- Rooksguard Breastplate
@@ -1302,7 +1302,7 @@ _.Zones =
 					q(39015,  {	-- Grumpy
 						-- not sure if there are prereqs for this.
 						["coord"] = { 38.6, 65.6, 641 },
-						["g"] = {
+						["groups"] = {
 							i(128354),	-- Grumpy's Leash (PET!)
 						},
 					}),
@@ -1351,7 +1351,7 @@ _.Zones =
 						["sourceQuests"] = { 38724 },	-- Brotherly Love
 						["coord"] = { 24.5, 42.3, 642 },
 						["qg"] = 93027,	-- Maiev Shadowsong
-						["g"] = {
+						["groups"] = {
 							i(141389),	-- Stareye Gem
 							i(132337),	-- Araxxas's Badge
 							i(132334),	-- Blessed Cup of the Moon
@@ -1399,7 +1399,7 @@ _.Zones =
 						["sourceQuests"] = { 38718 },	-- Kur'talos Ravencrest
 						["coord"] = { 40.7, 53.0, 641 },
 						["qg"] = 92850,	-- Commander Jarod Shadowsong
-						["g"] = {
+						["groups"] = {
 							i(129983),	-- Farseeker Drape
 							i(121602),	-- Nightvale Wristwraps
 							i(121603),	-- Rooksguard Vambraces
@@ -1434,7 +1434,7 @@ _.Zones =
 						["sourceQuests"] = { 40122 },	-- Cenarius, Keeper of the Grove
 						["coord"] = { 51.9, 64.1, 641 },
 						["qg"] = 91109,	-- Malfurion Stormrage
-						["g"] = {
+						["groups"] = {
 							i(141618),	-- Life-Giving Berries
 							i(141619),	-- Mana-Infused Berries
 						},
@@ -1484,7 +1484,7 @@ _.Zones =
 						["sourceQuests"] = { 38643 },	-- A Village in Peril
 						["coord"] = { 37.1, 58.4, 641 },
 						["qg"] = 94117,	-- Cecily Radcliffe
-						["g"] = {
+						["groups"] = {
 							i(133812),	-- Recipe: Deep-Fried Mossgill
 							i(129168),	-- Band of Sablehide
 							i(130009),	-- Bonefeather Talisman
@@ -1509,7 +1509,7 @@ _.Zones =
 					q(40221,  {	-- Spread Your Lunarwings and Fly
 						["coord"] = { 53.8, 79.7, 641 },
 						["qg"] = 93600,	-- Saylanna Riverbreeze
-						["g"] = {
+						["groups"] = {
 							i(121590),	-- Nightvale Leggings
 							i(121578),	-- Nightvale Sandals
 							i(121589),	-- Rooksguard Legguards
@@ -1524,14 +1524,13 @@ _.Zones =
 						["sourceQuests"] = { 38641 },	-- The Temple of Elune
 						["coord"] = { 51.4, 56.9, 641 },
 						["qg"] = 92680,	-- Lyanis Moonfall
-						["g"] = {
+						["groups"] = {
 							i(121651),	-- Darkfiend Dreadbringer Horn
 							i(121641),	-- Radiant Charm of Elune
 							i(121647),	-- Temple Priestess' Charm
 							i(121649),	-- Vibrant Temple Masonry
 						},
 					}),
-					
 					{	-- The Chieftain's Beads
 						["questID"] = 38146,	-- The Chieftain's Beads
 						["itemID"] = 128340,
@@ -1569,7 +1568,7 @@ _.Zones =
 						},
 						["coord"] = { 51.9, 64.1, 641 },
 						["qg"] = 91109,	-- Malfurion Stormrage
-						["g"] = {
+						["groups"] = {
 							i(141387),	-- Emerald Bloom
 							i(132279),	-- Cleansed Shrine Relic
 							i(132282),	-- Enchanted Pool Garnet
@@ -1597,7 +1596,7 @@ _.Zones =
 						["sourceQuests"] = { 38643 },	-- A Village in Peril
 						["coord"] = { 42.2, 59.0, 641 },
 						["qg"] = 92683,	-- Emmeline
-						["g"] = {
+						["groups"] = {
 							i(121583),	-- Nightvale Handwraps
 							i(129991),	-- Nightvale Waistwrap
 							i(130018),	-- Rooksguard Binding
@@ -1617,7 +1616,7 @@ _.Zones =
 						["sourceQuests"] = { 39384 },	-- The Corruptor
 						["coord"] = { 65.1, 67.0, 641 },
 						["qg"] = 91650,	-- Evelle Nightwhisper
-						["g"] = {
+						["groups"] = {
 							i(130008),	-- Armbands of Unrelenting Anguish
 							i(130019),	-- Armplates of Unrelenting Anguish
 							i(130000),	-- Bands of Unrelenting Anguish
@@ -1640,7 +1639,7 @@ _.Zones =
 							{ 53.7, 55.8, 641 },
 						},
 						["icon"] = "Interface\\Icons\\inv_jewelcrafting_gem_42",
-						["g"] = {
+						["groups"] = {
 							{	-- Shaladrassil Cuirass
 								["itemID"] = 130001,	-- Shaladrassil Cuirass
 							},
@@ -1685,7 +1684,7 @@ _.Zones =
 						["sourceQuests"] = { 38595 },	-- Malfurion's Fury
 						["coord"] = { 60.7, 61.5, 641 },
 						["qg"] = 92420,	-- Ysera
-						["g"] = {
+						["groups"] = {
 							i(129986),	-- Nightvale Footwraps
 							i(121596),	-- Nightvale Mantle
 							i(121595),	-- Rooksguard Pauldrons
@@ -1700,7 +1699,7 @@ _.Zones =
 						["sourceQuests"] = { 38922 },	-- Littlefur
 						["coord"] = { 46.3, 84.6, 641 },
 						["qg"] = 93581,	-- Littlefur
-						["g"] = {
+						["groups"] = {
 							i(121599),	-- Nightvale Cord
 							i(129987),	-- Nightvale Gloves
 							i(121598),	-- Rooksguard Girdle
@@ -1719,7 +1718,7 @@ _.Zones =
 						["sourceQuests"] = { 38384 },	-- Nature's Call
 						["coord"] = { 54.3, 68.3, 641 },
 						["qg"] = 95202,	-- Syndrelle
-						["g"] = {
+						["groups"] = {
 							i(130127),	-- Syndrelle's Favorite Ring
 						},
 					}),
@@ -1739,7 +1738,7 @@ _.Zones =
 								   -- 38903,	-- 7.0 Val'sharah - Bluffs - Vignette: Nightcaller - Interaction - TRACKING - twh
 								   -- second quest isn't required
 						["coord"] = { 64.5, 85.3, 641 },
-						["g"] = {
+						["groups"] = {
 							{	-- Antydas Nightcaller (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
 								["criteriaID"] = 8,	-- Antydas Nightcaller
@@ -1749,7 +1748,7 @@ _.Zones =
 					n(110562, {	-- Bahagar
 						["questID"] = 43446,
 						["coord"] = { 45.2, 88.1, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130135),	-- Mana-Prowler Leggings
 							{	-- Bahagar (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1760,7 +1759,7 @@ _.Zones =
 					n(92965,  {	-- Darkshadew
 						["questID"] = 38767,
 						["coord"] = { 44.0, 52.5, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130166), 	-- Risen Saber Kitten (PET!)
 							{	-- Darkshade, Saber Matriarch (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1771,7 +1770,7 @@ _.Zones =
 					n(97517,  {	-- Dreadbog
 						["questID"] = 39858,
 						["coord"] = { 60.4, 44.1, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130125),	-- Dreadbog Fungalflesh Cape
 							{	-- Dreadbog (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1784,7 +1783,7 @@ _.Zones =
 						["questID"] = 38887,
 						["coord"] = { 60.4, 90.7, 641 },
 						["crs"] = { 93654 },	-- Skul'vrax
-						["g"] = {
+						["groups"] = {
 							i(130115),	-- Darkfiend Slippers
 							{	-- Elindya Featherlight (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1796,7 +1795,7 @@ _.Zones =
 						["questID"] = 44070,
 						["coord"] = { 49.1, 47.4, 641 },
 						["crs"] = { 112472 },	-- Tehd Shoemaker
-						["g"] = {	
+						["groups"] = {	
 							i(132359),	-- The Subjugator's Shackles
 							{	-- Marius & Tehd versus a Satyr (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1808,7 +1807,7 @@ _.Zones =
 						["questID"] = 38468,
 						["coord"] = { 59.7, 77.2, 641 },
 						["crs"] = { 92111 },	-- Lorel Sagefeather
-						["g"] = {
+						["groups"] = {
 							i(130154),  -- Pygmy Owl (PET!)
 							{	-- Gorebeak (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1819,7 +1818,7 @@ _.Zones =
 					n(95123,  {	-- Grelda the Hag
 						["questID"] = 40126,
 						["coord"] = { 66.0, 52.5, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130122),	-- Grelda's Ageless Pendant
 							{	-- Grelda the Hag (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1830,7 +1829,7 @@ _.Zones =
 					n(93030,  {	-- Ironbranch
 						["questID"] = 40080,
 						["coord"] = { 58.8, 33.9, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130126),	-- Iron Branch
 							{	-- Ironbranch (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1841,7 +1840,7 @@ _.Zones =
 					n(94414,  {	-- Kiranys Duskwhisper
 						["questID"] = 39121,
 						["coord"] = { 34.4, 58.3, 641 },
-						["g"] = {
+						["groups"] = {
 							{	-- Haunted Manor (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
 								["criteriaID"] = 9,	-- Haunted Manor
@@ -1851,7 +1850,7 @@ _.Zones =
 					n(98241,  {	-- Lyrath Moonfeather
 						["questID"] = 40079,
 						["coord"] = { 61.9, 30.2, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130118),	-- Moonfeather Handwraps
 							{	-- Lyrath Moonfeather (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1862,7 +1861,7 @@ _.Zones =
 					n(95221,  {	-- Mad Henryk
 						["questID"] = 39357,
 						["coord"] = { 47.1, 57.8, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130214),	-- Worn Doll (TOY!)
 							{	-- Old Bear Trap (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1873,7 +1872,7 @@ _.Zones =
 					n(95318,  {	-- Perrexx
 						["questID"] = 39596,
 						["coord"] = { 61.1, 69.9, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130137),	-- Bramblevine Spaulders
 							{	-- Perrexx the Corruptor (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1884,7 +1883,7 @@ _.Zones =
 					n(94485,  {	-- Pollous the Fetid
 						["questID"] = 39130,
 						["coord"] = { 67.0, 44.0, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130168),	-- Fetid Waveling (PET!)
 							{	-- Purging the River (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1895,7 +1894,7 @@ _.Zones =
 					n(92180,  {	-- Seersei
 						["questID"] = 38479,
 						["coord"] = { 41.8, 77.7, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130171),	-- Cursed Orb (TOY!)
 							{	-- Seersei (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1907,7 +1906,7 @@ _.Zones =
 						["description"] = "|cff66ccffClick on Theryssia's nameplate on the gravestone.|r",
 						["questID"] = 38772,
 						["coord"] = { 38.0, 52.8, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130136),	-- Theryssia's White Gown
 							{	-- Theryssia (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1918,7 +1917,7 @@ _.Zones =
 					n(93205,  {	-- Thondrax
 						["questID"] = 38780,
 						["coord"] = { 62.6, 47.8, 641 },
-						["g"] = {	
+						["groups"] = {	
 							i(130121),	-- Thondrax's Night-Runed Bands
 							{	-- Thondrax (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1930,7 +1929,7 @@ _.Zones =
 						["questID"] = 43176,
 						["coord"] = { 67.0, 69.5, 641 },
 						["crs"] = { 109225 },	-- Elandris Bladesong
-						["g"] = {	
+						["groups"] = {	
 							i(130133),	-- Undergrell Mobilehelm
 							{	-- Undergrell Attack (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1942,7 +1941,7 @@ _.Zones =
 						["objectID"] = 241128,	-- Unguarded Thistleleaf Treasure
 						["questID"] = 38466,	-- Grellkin Treasure
 						["coord"] = { 55.4, 77.6, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130147),	-- Thistleleaf Branch (TOY!)
 							{	-- Unguarded Thistleleaf Treasure (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -1953,7 +1952,7 @@ _.Zones =
 					n(97504,  {	-- Wraithtalon
 						["questID"] = 39856,
 						["coord"] = { 66.6, 37.0, 641 },
-						["g"] = {
+						["groups"] = {
 							i(130116),	-- Twisted Wraithtalon Gloves
 							{	-- Wraithtalon (Adventurer of Val'sharah)
 								["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -2004,21 +2003,45 @@ _.Zones =
 					}),
 				}),
 				n(-34,  {	-- World Quests
+					q(45070, {	-- Barrels o' Fun
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(42080, {	-- Bastion of Bradensbrook
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43762, {	-- Black Rook Hold: Traitor's Demise
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(42174, {	-- Champions of Elune
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(42927, {	-- DANGER: Malisandra
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41860, {	-- Dealing with Satyrs
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(37, {	-- Dealing with Satyrs
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
 					}),
+					q(43753, {	-- Ley Race
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41861, {	-- Meet The Maw
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(34, {	-- Meet The Maw
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
@@ -2028,17 +2051,29 @@ _.Zones =
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(33, {	-- Only Pets Can Prevent Forest Fires
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
 					}),
+					q(41956, {	-- Petrified Acolytes
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(42076, {	-- Shadowfen Village
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(44895, {	-- Sharptalon Swarm!
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41855, {	-- Stand Up to Bullies
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(35, {	-- Stand Up to Bullies
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
@@ -2048,17 +2083,35 @@ _.Zones =
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(32, {	-- Training with Durian
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
 					}),
+					q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
+						["qg"] = 106901,	-- Sylvia Hartshorn <Dreamweaver Emissary>
+						["lvl"] = 110,
+						["collectible"] = false,
+						["requireSkill"] = 773,	-- Inscription
+						["groups"] = {
+							i(137770),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 3]
+						},
+					}),
+					q(43457, {	-- WANTED: Theryssia
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43183, {	-- Warden Tower Assault: Starstalker's Point [A]
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(42190, {	-- Wildlife Conservationist
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(36, {	-- Wildlife Conservationist
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
@@ -2068,7 +2121,7 @@ _.Zones =
 						["requireSkill"] = 202,	-- Engineering
 						["lvl"] = 110,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
 						},
 					}),
@@ -2076,7 +2129,7 @@ _.Zones =
 						["requireSkill"] = 197,	-- Tailoring
 						["lvl"] = 110,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
 						},
 					}),
@@ -2084,7 +2137,7 @@ _.Zones =
 						["requireSkill"] = 165,	-- Leatherworking
 						["lvl"] = 110,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(137878),	-- Recipe: Warhide Mask (Rank 3)
 						},
 					}),
@@ -2093,7 +2146,7 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 						["qg"] = 106901,	-- Sylvia Hartshorn
-						["g"] = {
+						["groups"] = {
 							i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
 						},
 					}),
@@ -2103,7 +2156,7 @@ _.Zones =
 					}),
 					n(-3245, {	-- Night Dreamer Set
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
-						["g"] = {
+						["groups"] = {
 							i(139086),	-- Night Dreamer Crest
 							i(139091),	-- Night Dreamer Mantle
 							i(139089),	-- Night Dreamer Robe
@@ -2116,7 +2169,7 @@ _.Zones =
 					}),
 					n(-3259, {	-- Terrorweave Set
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
-						["g"] = {
+						["groups"] = {
 							i(121324),	-- Terrorweave Cowl
 							i(121329),	-- Terrorweave Pauldrons
 							i(121327),	-- Terrorweave Robe
@@ -2129,7 +2182,7 @@ _.Zones =
 					}),
 					n(-3269, {	-- Dreadhide Set
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
-						["g"] = {
+						["groups"] = {
 							i(121296),	-- Dreadhide Hood
 							i(121298),	-- Dreadhide Mantle
 							i(121297),	-- Dreadhide Chestguard
@@ -2142,7 +2195,7 @@ _.Zones =
 					}),
 					n(-3268, {	-- Tranquil Bough Set
 						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
-						["g"] = {
+						["groups"] = {
 							i(139070),	-- Tranquil Bough Hood
 							i(139072),	-- Tranquil Bough Spaulders
 							i(139071),	-- Tranquil Bough Vest
@@ -2155,7 +2208,7 @@ _.Zones =
 					}),
 					n(-3281, {	-- Bramblemail Set
 						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
-						["g"] = {
+						["groups"] = {
 							i(139081),	-- Bramblemail Helm
 							i(139083),	-- Bramblemail Pauldrons
 							i(139084),	-- Bramblemail Hauberk
@@ -2168,7 +2221,7 @@ _.Zones =
 					}),
 					n(-3279, {	-- Vilescale Set
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
-						["g"] = {
+						["groups"] = {
 							i(121319),	-- Vilescale Helm
 							i(121321),	-- Vilescale Shoulderguards
 							i(121322),	-- Vilescale Chain Shirt
@@ -2181,7 +2234,7 @@ _.Zones =
 					}),
 					n(-3307, {	-- Nightsfall Set
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-						["g"] = {
+						["groups"] = {
 							i(139058),	-- Nightsfall Helmet
 							i(139060),	-- Nightsfall Shoulderplates
 							i(139055),	-- Nightsfall Breastplate
@@ -2194,7 +2247,7 @@ _.Zones =
 					}),
 					n(-3303, {	-- Wracksoul Set
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-						["g"] = {
+						["groups"] = {
 							i(121279),	-- Wracksoul Helm
 							i(121281),	-- Wracksoul Pauldrons
 							i(121276),	-- Wracksoul Chestplate
@@ -2210,7 +2263,7 @@ _.Zones =
 					}),
 				}),
 				n(0,    {	-- Zone Drops (Need to change this to list crs individually because not all items drop from all of those mobs)
-					["g"] = {
+					["groups"] = {
 						i(144318),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 2)
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings
@@ -2480,10 +2533,10 @@ _.Zones =
 				n(-40,  {	-- Legacy
 					n(-4, {	-- Achievements
 						un(2, ach(11139, {	-- Field Medic! 
-							["g"] = {
+							["groups"] = {
 								un(39, title(340, {	-- TITLE: Field Medic!
 									["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-									["g"] = {
+									["groups"] = {
 										{
 											["achievementID"] = 11139,	-- Field Medic (Achievement)
 											["criteriaID"] = 3, 		-- Bloody Plea (Criteria)

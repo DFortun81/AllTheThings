@@ -8,13 +8,6 @@ _.Zones =
 			["lvl"] = 110,
 			["g"] = {
 				filter(200, {	-- Recipes
-					q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
-						["repeatable"] = true,
-						["qg"] = 106901,	-- Sylvia Hartshorn <Dreamweaver Emissary>
-						["g"] = {
-							i(137770),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 3]
-						},
-					}),
 					q(41663, {	-- Vantus Rune Work Order: Elerethe Renferal
 						["repeatable"] = true,
 						["qg"] = 107376,	-- Veridis Fallon <Court of Farondis Emissary>

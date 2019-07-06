@@ -7,11 +7,15 @@ _.Zones =
 		m(630, {	-- Azsuna
 			n(-34, {	-- World Quests
 				-- Quests and WQ need to be done and split up in their files (some of the WQ are in the Questfile)
+				q(42014, {	-- A Tainted Vintage
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42165, {	-- Azsuna Specimens
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
+					["groups"] = {
 						crit(2, {	-- Azsuna Specimens
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -21,11 +25,15 @@ _.Zones =
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
+				q(43098, {	-- DANGER: Marblub the Massive
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42146, {	-- Dazed and Confused and Adorable
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
+					["groups"] = {
 						crit(3, {	-- Dazed and Confused and Adorable
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -35,18 +43,35 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
+					["groups"] = {
 						crit(6, {	-- Help a Whelp
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
 				}),
+				q(41611, {	-- Huge Cursed Queenfish
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
 				q(46165, {	-- Kazruul (Invasion WQ)
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
+				q(42211, {	-- Leodrath's Kin
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46116, {	-- On Unhallowed Grounds (Invasion WQ)
 					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41896, {	-- Operation Murloc Freedom
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42108, {	-- Rally the Nightwatchers
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(45058, {	-- Release the Wardens (Invasion WQ)
@@ -57,7 +82,7 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- Size Doesn't Matter
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -67,11 +92,15 @@ _.Zones =
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
+				q(42711, {	-- The Eternal Mages
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42148, {	-- The Wine's Gone Bad
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
+					["groups"] = {
 						crit(5, {	-- The Wine's Gone Bad
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -81,11 +110,15 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
+					["groups"] = {
 						crit(4, {	-- Training with the Nightwatchers
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(42924, {	-- Vault of the Wardens: A Grim Matter
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(46263, {	-- Weaving Fel Webs (Invasion WQ)
 					["lvl"] = 98,
@@ -94,42 +127,42 @@ _.Zones =
 				q(41651, {	-- Work Order: Azsunite Pendant
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["collectible"] = false,
-					["g"] = {
+					["groups"] = {
 						i(137843),	-- Design: Azsunite Pendant (Rank 3)
 					},					
 				}),
 				q(41639, {	-- Work Order: Battlebound Spaulders
 					["requireSkill"] = 165,	-- Leatherworking
 					["collectible"] = false,
-					["g"] = {
+					["groups"] = {
 						i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
 					},
 				}),
 				q(41675, {	-- Work Order: Blink-Trigger Headgun
 					["requireSkill"] = 202,	-- Engineering
 					["collectible"] = false,
-					["g"] = {
+					["groups"] = {
 						i(137711),	-- Schematic: Blink-Trigger Headgun (Rank 3)
 					},
 				}),
 				q(41652, {	-- Work Order: Deep Amber Loop
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["collectible"] = false,
-					["g"] = {
+					["groups"] = {
 						i(137838),	-- Design: Deep Amber Loop (Rank 3)
 					},
 				}),
 				q(41645, {	-- Work Order: Silkweave Epaulets
 					["requireSkill"] = 197,	-- Tailoring
 					["collectible"] = false,
-					["g"] = {
+					["groups"] = {
 						i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
 					},	
 				}),
 				q(41669, {	-- Work Order: Word of Critical Strike
 					["requireSkill"] = 333,	-- Enchanting
 					["collectible"] = false,
-					["g"] = {
+					["groups"] = {
 						i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)
 					},
 				}),
@@ -140,7 +173,7 @@ _.Zones =
 				}),
 				n(-3241, {	-- Arcane Singed Set		
 					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
-					["g"] = {		
+					["groups"] = {		
 						i(134348),	-- Arcane Singed Aurora
 						i(134353),	-- Arcane Singed Mantle
 						i(134351),	-- Arcane Singed Robe
@@ -153,7 +186,7 @@ _.Zones =
 				}),			
 				n(-3248, {	-- Seawitch Set		
 					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
-					["g"] = {		
+					["groups"] = {		
 						i(134260),	-- Seawitch Hood
 						i(134265),	-- Seawitch Mantle
 						i(134263),	-- Seawitch Robes
@@ -166,7 +199,7 @@ _.Zones =
 				}),			
 				n(-3271, {	-- Brinewashed Set		
 					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
-					["g"] = {		
+					["groups"] = {		
 						i(134240),	-- Brinewashed Leather Cowl
 						i(134242),	-- Brinewashed Leather Shoulderpads
 						i(134241),	-- Brinewashed Leather Vest
@@ -179,7 +212,7 @@ _.Zones =
 				}),			
 				n(-3264, {	-- Mana-Saber Set		
 					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
-					["g"] = {		
+					["groups"] = {		
 						i(134328),	-- Mana-Saber Hide Hood
 						i(134330),	-- Mana-Saber Hide Shoulders
 						i(134329),	-- Mana-Saber Hide Jerkin
@@ -192,7 +225,7 @@ _.Zones =
 				}),			
 				n(-3282, {	-- Manaburst Set		
 					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
-					["g"] = {		
+					["groups"] = {		
 						i(134343),	-- Manaburst Helm
 						i(134345),	-- Manaburst Spaulders
 						i(134346),	-- Manaburst Chainmail
@@ -205,7 +238,7 @@ _.Zones =
 				}),	
 				n(-3276, {	-- Sea Stalker's Set		
 					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
-					["g"] = {		
+					["groups"] = {		
 						i(134255),	-- Sea Stalker's Hood
 						i(134257),	-- Sea Stalker's Mantle
 						i(134258),	-- Sea Stalker's Shirt
@@ -218,7 +251,7 @@ _.Zones =
 				}),			
 				n(-3305, {	-- Coralplate Set		
 					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
-					["g"] = {		
+					["groups"] = {		
 						i(134226),	-- Coralplate Helmet
 						i(134228),	-- Coralplate Pauldrons
 						i(134223),	-- Coralplate Chestguard
@@ -231,7 +264,7 @@ _.Zones =
 				}),			
 				n(-3304, {	-- Ley-Scarred Set		
 					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
-					["g"] = {		
+					["groups"] = {		
 						i(134314),	-- Ley-Scarred Helm
 						i(134316),	-- Ley-Scarred Pauldrons
 						i(134311),	-- Ley-Scarred Chestplate

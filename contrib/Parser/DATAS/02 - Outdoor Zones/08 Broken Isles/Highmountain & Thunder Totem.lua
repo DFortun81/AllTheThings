@@ -25,7 +25,7 @@ _.Zones =
 				1472,	-- The Dragon's Spine (8.2 Heart Forge unlock scenario)
 			},
 			["lvl"] = 98,
-			["g"] = {
+			["groups"] = {
 				n(-4,   {	-- Achievement
 					ach(10994, {	-- A Glorious Campaign
 						cl(2, {	-- Paladin
@@ -77,11 +77,11 @@ _.Zones =
 					ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
-					["g"] = {
+					["groups"] = {
 							ach(9686, {	-- Aquatic Acquiescence
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -99,7 +99,7 @@ _.Zones =
 							ach(9687, {	-- Best of the Beasts
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -117,7 +117,7 @@ _.Zones =
 							ach(9689, {	-- Dragons!
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -135,7 +135,7 @@ _.Zones =
 							ach(9691, {	-- Flock Together
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -153,7 +153,7 @@ _.Zones =
 							ach(9693, {	-- Master of Magic
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -171,7 +171,7 @@ _.Zones =
 							ach(9688, {	-- Mousing Around
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -189,7 +189,7 @@ _.Zones =
 							ach(9692, {	-- Murlocs, Harpies, and Wolvar, Oh My!
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -207,7 +207,7 @@ _.Zones =
 							ach(9690, {	-- Ragnaros, Watch and Learn
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -225,7 +225,7 @@ _.Zones =
 							ach(9694, {	-- Roboteer
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -243,7 +243,7 @@ _.Zones =
 							ach(9695, {	-- The Lil' Necromancer
 								["collectible"] = false,
 								["filterID"] = 101,	-- Battle Pet
-								["g"] = {
+								["groups"] = {
 									crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 										["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
@@ -262,7 +262,7 @@ _.Zones =
 					}),
 					ach(10877, {	-- Pillars of Creation
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- Hammer of Khaz'goroth
 								["sourceQuests"] = { 42454 },	-- The Hammer of Khaz'goroth
 							}),
@@ -278,7 +278,7 @@ _.Zones =
 						["classes"] = { 1 },	-- Warrior Only
 						["description"] = "Read the Saga of the Valajar tablet (right behind your AK research guy) in your Garrison first.\nGo forward into the cave until the zone changes to \"Neltharions Vault\" (just to make sure, the next step can already trigger in front of the cave)\nIf you see the chat emote \"You hear a strange roar from the cavern ahead\" carefully search all gold piles for your appreance (it can be on multiple locations, so search carefully)\nIf you do not see that emote, try visiting the cave the next day...\n\nYou must be spec'd Protection to see the appearance on the ground.",
 						["icon"] = "Interface\\Icons\\Spell_Warrior_DragonCharge",
-						["g"] = {
+						["groups"] = {
 							q(44311, {	-- Burning Plate of the Worldbreaker Available
 								["title"] = "Burning Plate of the Worldbreaker Available",
 								["description"] = "This quest indicates if the appearance spawns and can be looted.",
@@ -297,7 +297,7 @@ _.Zones =
 				n(-169, {	-- Emissary Quests
 					q(42233, {	-- Highmountain Tribes
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(157823, {	-- Highmountain Tribute
 								i(144313),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 3)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
@@ -685,7 +685,7 @@ _.Zones =
 					n(-206, {	-- Paragon
 						q(46743, {	-- Supplies From Highmountain
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								i(152104, {	-- Highmountain Supplies
 									i(147807),	-- Highmountain Elderhorn (MOUNT!)
 								}),
@@ -824,7 +824,7 @@ _.Zones =
 						i(137298), 		-- Zoom
 					}),
 					n(115737, {	-- Orphaned Snowfeather
-						["g"] = {
+						["groups"] = {
 							p(1974),  	-- Snowfeather Hatchling
 							q(44959, {	-- Snowfeather Bonding
 								i(142497),	-- Tiny Pack
@@ -858,7 +858,7 @@ _.Zones =
 							["requireSkill"] = 794,	-- Archaeology
 							["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
 							["qg"] = 103485,	-- Lessah Moonwater
-							["g"] = {
+							["groups"] = {
 								i(131736),	-- Prizerock Neckband
 							},
 							--Note!! This resets either bi-weekly or when it comes up against
@@ -873,14 +873,14 @@ _.Zones =
 						q(39699, {	-- Ironhorn Leysmithing
 							["sourceQuests"] = { 38514 },	-- You Are Not Worthy
 							["qg"] = 92242,	-- Barm Stonebreaker
-							["g"] = {
+							["groups"] = {
 								i(123933),	-- Plans: Leystone Gauntlets (Rank 2)
 							},
 						}),
 						q(38519, {	-- Grayheft
 							["sourceQuests"] = { 39699 },	-- Ironhorn Leysmithing
 							["qg"] = 92245,	-- Thala Steeltotem
-							["g"] = {
+							["groups"] = {
 								i(137680),	-- Plans: Leystone Greaves (Rank 2)
 							},
 						}),
@@ -892,7 +892,7 @@ _.Zones =
 						q(38531, {	-- Leystone Mastery
 							["sourceQuests"] = { 38530 },	-- The Firmament Stone
 							["qg"] = 92242,	-- Barm Stonebreaker
-							["g"] = {
+							["groups"] = {
 								i(123932),	-- Plans: Leystone Helm (Rank 2)
 								i(123930),	-- Plans: Leystone Pauldrons (Rank 2)
 							},
@@ -911,69 +911,69 @@ _.Zones =
 						q(38833, {	-- The Art of Demonsteel
 							["sourceQuests"] = { 38559 },	-- Worthy of the Stone
 							["qg"] = 92243,	-- Muirn Ironhorn
-							["g"] = {
+							["groups"] = {
 								i(124462),	-- Plans: Demonsteel Bar
 							},
 						}),
 						q(38533, {	-- Tribal Knowledge
 							["sourceQuests"] = { 38833 },	-- The Art of Demonsteel
 							["qg"] = 92243,	-- Muirn Ironhorn
-							["g"] = {
+							["groups"] = {
 								i(123920),	-- Plans: Demonsteel Armguards (Rank 1)
 							},
 						}),
 						q(38534, {	-- Demonsteel Armguards
 							["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
-							["g"] = {
+							["groups"] = {
 								i(123940),	-- Recipe: Demonsteel Armguards [Rank 2]
 							},
 						}),
 						q(38538, {	-- Demonsteel Boots
 							["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
-							["g"] = {
+							["groups"] = {
 								i(123946),	-- Recipe: Demonsteel Boots [Rank 2]
 							},
 						}),
 						q(38542, {	-- Demonsteel Breastplate
 							["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
-							["g"] = {
+							["groups"] = {
 								i(123947),	-- Recipe: Demonsteel Breastplate [Rank 2]
 							},
 						}),
 						q(38539, {	-- Demonsteel Gauntlets
 							["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
-							["g"] = {
+							["groups"] = {
 								i(123945),	-- Recipe: Demonsteel Gauntlets [Rank 2]
 							},
 						}),
 						q(38541, {	-- Demonsteel Greaves
 							["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
-							["g"] = {
+							["groups"] = {
 								i(123943),	-- Recipe: Demonsteel Greaves [Rank 2]
 							},
 						}),
 						q(38540, {	-- Demonsteel Helm
 							["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
-							["g"] = {
+							["groups"] = {
 								i(123944),	-- Recipe: Demonsteel Helm [Rank 2]
 							},
 						}),
 						q(38537, {	-- Demonsteel Pauldrons
 							["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
-							["g"] = {
+							["groups"] = {
 								i(123942),	-- Recipe: Demonsteel Pauldrons [Rank 2]
 							},
 						}),
 						q(38536, {	-- Demonsteel Waistguard
 							["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
-							["g"] = {
+							["groups"] = {
 								i(123941),	-- Recipe: Demonsteel Waistguard [Rank 2]
 							},
 						}),
 						n(-34, {	-- World Quests
 							q(41635, {	-- Work Order: Leystone Boots
 								["qg"] = 106902,	-- Ransa Greyfeather
-								["g"] = {
+								["groups"] = {
 									i(137605),	-- Recipe: Leystone Boots (Rank 3)
 								},
 							}),
@@ -991,7 +991,7 @@ _.Zones =
 								39880,	-- Waste Not
 							},
 							["qg"] = 98017,	-- Guron Twaintail
-							["g"] = {
+							["groups"] = {
 								i(128571),	-- Formula: Enchant Cloak - Word of Agility (Rank 1)
 								i(128572),	-- Formula: Enchant Cloak - Word of Intellect (Rank 1)
 								i(128570),	-- Formula: Enchant Cloak - Word of Strength (Rank 1)
@@ -1002,7 +1002,7 @@ _.Zones =
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
-							["g"] = {
+							["groups"] = {
 								{
 									["itemID"] = 133887,	-- Luminous Pearl (Item)
 									["questID"] = 40960,	-- Luminous Pearl (Quest)
@@ -1013,7 +1013,7 @@ _.Zones =
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure
 									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["g"] = {
+									["groups"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 4,			-- Axefish (Criteria)
@@ -1028,19 +1028,19 @@ _.Zones =
 								}),
 								i(133724, {		-- Decayed Whale Blubber
 									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["g"] = {
+									["groups"] = {
 										i(133795),	-- Ravenous Fly
 									}
 								}),
 								i(133721, {		-- Message in a Bottle
 									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["g"] = {
+									["groups"] = {
 										i(133722)		-- Axefish Lure
 									},
 								}),
 								i(133795, {		-- Ravenous Fly
 									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["g"] = {
+									["groups"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
@@ -1055,10 +1055,10 @@ _.Zones =
 								}),
 								i(133723, {		-- Stunned, Angry Shark
 									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["g"] = {
+									["groups"] = {
 										n(102359, {		-- Landlocked Shark
 											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["g"] = {
+											["groups"] = {
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
 													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
@@ -1076,7 +1076,7 @@ _.Zones =
 							}),
 							i(133712, {		-- Frost Worm
 								["description"] = "This item will allow you to catch the Rare fish Coldriver Carp in Highmountain.",
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
 										["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
@@ -1091,10 +1091,10 @@ _.Zones =
 							}),
 							i(133709, {		-- Funky Sea Snail
 								["description"] = "The short buff will eventually expire and this item will disappear from your inventory. When it does, the attached mob will spawn.",
-								["g"] = {
+								["groups"] = {
 									n(102347, {
 										["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
-										["g"] = {
+										["groups"] = {
 											i(133710), 	-- Salmon Lure
 										},
 									}),
@@ -1102,7 +1102,7 @@ _.Zones =
 							}),
 							i(133710, {		-- Salmon Lure
 								["description"] = "This item will allow you to catch the Rare fish Ancient Highmountain Salmon in Highmountain.",
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
 										["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
@@ -1117,10 +1117,10 @@ _.Zones =
 							}),
 							i(133711, {		-- Swollen Murloc Egg
 								["description"] = "This item that will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
-								["g"] = {
+								["groups"] = {
 									n(102339, {		-- Swamprock Tadpole
 										["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",
-										["g"] = {
+										["groups"] = {
 											spell(202056, {		-- Blessing of the Murlocs
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -1140,7 +1140,7 @@ _.Zones =
 						}),
 						ach(11725, { 	-- Fisherfriend of the Isles
 							faction(2099, {	-- Akule Riverhorn
-								["g"] = {
+								["groups"] = {
 									i(146960, {		-- Ancient Totem Fragment
 										i(147310),	-- Floating Totem
 										i(152556), 	-- Trawler Totem
@@ -1157,14 +1157,14 @@ _.Zones =
 						q(40040, {	-- Felwort Sample
 							["requireSkill"] = 182,	-- Herbalism
 							["itemID"] = 129122,	-- Felwort Sample
-							["g"] = {
+							["groups"] = {
 								recipe(193307),	-- Felwort [Rank 1]
 							},
 						}),
 						q(40024, {	-- Foxflower Sample
 							["itemID"] = 129119,	-- Foxflower Sample
 							["requireSkill"] = 182,	-- Herbalism
-							["g"] = {
+							["groups"] = {
 								recipe(193298),	-- Foxflower [Rank 1]
 							},
 						}),
@@ -1172,7 +1172,7 @@ _.Zones =
 							["itemID"] = 129278,	-- Foxflower Scent Gland
 							["sourceQuests"] = { 40026 },	-- Chase the Culprit
 							["requireSkill"] = 182,	-- Herbalism
-							["g"] = {
+							["groups"] = {
 								recipe(193300),	-- Foxflower [Rank 3]
 							},
 						}),
@@ -1185,32 +1185,32 @@ _.Zones =
 					prof(165, {	-- Leatherworking
 						q(40192, {	-- Claw of the Land
 							["qg"] = 98948,	-- Hrul Sharphoof
-							["g"] = {
+							["groups"] = {
 								i(137869),	-- Recipe: Warhide Belt (Rank 2)
 								i(137868),	-- Recipe: Warhide Bindings (Rank 2)
 							},
 						}),
 						q(40204, {	-- Evolution of the Past
 							["qg"] = 98948,	-- Hrul Sharphoof
-							["g"] = {
+							["groups"] = {
 								i(137873),	-- Recipe: Warhide Gloves (Rank 2)
 							},
 						}),
 						q(40205, {	-- Respect for the Past
 							["qg"] = 98948,	-- Hrul Sharphoof
-							["g"] = {
+							["groups"] = {
 								i(137871),	-- Recipe: Warhide Pants (Rank 2)
 							},
 						}),
 						q(40191, {	-- Stamped Stories
 							["qg"] = 98948,	-- Hrul Sharphoof
-							["g"] = {
+							["groups"] = {
 								i(137875),	-- Recipe: Warhide Jerkin (Rank 2)
 							},
 						}),
 						q(40203, {	-- Strength of the Past
 							["qg"] = 98948,	-- Hrul Sharphoof
-							["g"] = {
+							["groups"] = {
 								i(137872),	-- Recipe: Warhide Mask (Rank 2)
 							},
 						}),
@@ -1221,7 +1221,7 @@ _.Zones =
 					}),
 					prof(393, {	-- Skinning
 						q(40134, {	-- Highmountain Hides
-							["g"] = {
+							["groups"] = {
 								i(130064, {	-- Deadeye Monocle
 									["description"] = "In order to mark this item as collected you will need to Shift+Click the ATT header.",
 								}),
@@ -1230,7 +1230,7 @@ _.Zones =
 						i(139893, {	-- Skinning Technique: Unbroken Tooth
 							["requireSkill"] = 393,	-- Skinning
 							["crs"] = { 97449 },	-- Bristlemaul
-							["g"] = {
+							["groups"] = {
 								recipe(194170),	-- Unbroken Tooth
 							},
 						}),
@@ -1349,7 +1349,7 @@ _.Zones =
 						},
 						["coord"] = { 45.1, 32.4, 650 },
 						["qg"] = 95421,	-- Navarrogg
-						["g"] = {
+						["groups"] = {
 							i(133115),	-- Stonedark Focus
 							i(133116),	-- Bloodsinger Essence
 							i(133117),	-- Torok's Heart
@@ -1396,7 +1396,7 @@ _.Zones =
 						["sourceQuests"] = { 40345 },	-- Burn the Candle at Both Ends
 						["coord"] = { 55.2, 41.8, 650 },
 						["qg"] = 97130,	-- Bluewax Gatekeeper
-						["g"] = {
+						["groups"] = {
 							i(130275),	-- Chain of Bossing Around
 							i(130286),	-- Thunderpeak Breastplate
 							i(130285),	-- Whitewater Chestwrap
@@ -1424,7 +1424,7 @@ _.Zones =
 							39489,	-- Invading Spelunkers
 						},
 						["qg"] = 96038,	-- Jale Rivermane
-						["g"] = {
+						["groups"] = {
 							i(133070),	-- Empowered Lifespring Crystal
 							i(133081),	-- Manathirster Focus
 							i(133071),	-- Rivermanes' Sacrifice
@@ -1447,7 +1447,7 @@ _.Zones =
 						["sourceQuests"] = { 39043 },	-- Bitestone Enclave
 						["coord"] = { 46.6, 44.0, 651 },	-- Bitestone Enclave
 						["qg"] = 97553,	-- Warbrave Oro
-						["g"] = {
+						["groups"] = {
 							i(121722),	-- Staunch Warbrave Loop
 							i(130287),	-- Snowblind Bracers
 							i(130288),	-- Drogstitch Wristwraps
@@ -1467,7 +1467,7 @@ _.Zones =
 						},
 						["coord"] = { 30.0, 62.7, 654 },	-- Mucksnout Den
 						["qg"] = 97846,	-- Apprentice Rosalyn
-						["g"] = {
+						["groups"] = {
 							i(132091),	-- Warmth of Uriah
 							i(132092),	-- Solace of Uriah
 							i(132093),	-- Courage of Uriah
@@ -1495,7 +1495,7 @@ _.Zones =
 						},
 						["coord"] = { 49.4, 39.2, 650 },
 						["qg"] = 94068,	-- Oren Windstrider
-						["g"] = {
+						["groups"] = {
 							i(129277), 		-- Skyhorn Nestling (PET!)
 						},
 					}),
@@ -1537,7 +1537,7 @@ _.Zones =
 						["sourceQuests"] = { 39440 },	-- You Lift, Brul?
 						["coord"] = { 52.3, 61.6, 659 },	-- Stonedark Grotto
 						["qg"] = 95799,	-- Damrul the Stronk
-						["g"] = {
+						["groups"] = {
 							i(130296),	-- Deep Squatter's Waistguard (Leather)
 							i(130295),	-- Deep Squatter's Sash
 							i(130297),	-- Deep Squatter's Belt
@@ -1590,7 +1590,7 @@ _.Zones =
 						["sourceQuests"] = { 39123 },	-- Lion Stalkin'
 						["coord"] = { 39.9, 52.2, 650 },
 						["qg"] = 95438,	-- Ellias
-						["g"] = {
+						["groups"] = {
 							i(133810),	-- Recipe: Salt and Pepper Shank [Rank 1]
 						},
 					}),
@@ -1635,7 +1635,7 @@ _.Zones =
 						["sourceQuests"] = { 39124 },	-- Moose Shootin'
 						["coord"] = { 39.9, 52.2, 650 },
 						["qg"] = 94101,	-- Laeni Silvershot
-						["g"] = {
+						["groups"] = {
 							i(141647),	-- Medallion of Morashu
 						},
 					}),
@@ -1651,7 +1651,7 @@ _.Zones =
 						["sourceQuests"] = { 39323 },	-- Moozy's Sojourn
 						["coord"] = { 37.5, 64.2, 650 },
 						["qg"] = 95130,	-- Mooze Waterwise
-						["g"] = {
+						["groups"] = {
 							i(121724),	-- Whitewater Safety Blanket
 						},
 					}),
@@ -1682,7 +1682,7 @@ _.Zones =
 						},
 						["coord"] = { 42.7, 10.8, 650 },
 						["qg"] = 98067,	-- King Mrgl-Mrgl
-						["g"] = {
+						["groups"] = {
 							i(133818),	-- Recipe: Barracuda Mrglgagh [Rank 1]
 						},
 					}),
@@ -1702,7 +1702,7 @@ _.Zones =
 							39417,	-- Rating Razik
 						},
 						["qg"] = 94434,	-- Addie Fizzlebog
-						["g"] = {
+						["groups"] = {
 							i(130320),	-- Addie's Ink-Stained Satchel
 						},
 					}),
@@ -1724,7 +1724,7 @@ _.Zones =
 						},
 						["coord"] = { 42.7, 10.8, 650 },
 						["qg"] = 98067,	-- King Mrgl-Mrgl
-						["g"] = {
+						["groups"] = {
 							i(132116),	-- Slime-Stacked Shoulderguards
 							i(132113),	-- Pufferfish Demolition Greaves (Cloth)
 							i(132112),	-- Pufferfish Demolition Legwraps
@@ -1739,7 +1739,7 @@ _.Zones =
 						["sourceQuests"] = { 38911 },	-- The Rivermane Tribe
 						["coord"] = { 43.6, 59.8, 650 },
 						["qg"] = 93833,	-- Jale Rivermane
-						["g"] = {
+						["groups"] = {
 							i(121657),	-- Snowblind Treads
 							i(121659),	-- Drogstitch Footwraps
 							i(121658),	-- Whitewater Sabatons
@@ -1779,7 +1779,7 @@ _.Zones =
 						["sourceQuests"] = { 39455 },	-- Cave of the Blood Trial
 						["coord"] = { 59.1, 31.8, 653 },	-- Cave of the Blood Trial
 						["qg"] = 93836,	-- Torok Bloodtotem
-						["g"] = {
+						["groups"] = {
 							i(121669),	-- Snowblind Leggings
 							i(121671),	-- Drogstitch Legguards
 							i(121670),	-- Whitewater Leggings
@@ -1803,7 +1803,7 @@ _.Zones =
 						["sourceQuests"] = { 40216 },	-- A Hunter at Heart
 						["coord"] = { 40.0, 52.2, 650 },
 						["qg"] = 94409,	-- Hemet Nesingwary
-						["g"] = {
+						["groups"] = {
 							i(121672),	-- Lead-Studded Robes
 							i(121655),	-- Lead-Studded Vest
 							i(121654),	-- Lead-Studded Chestguard
@@ -1832,7 +1832,7 @@ _.Zones =
 						["sourceQuests"] = { 39496 },	-- The Flow of the River
 						["coord"] = { 41.2, 61.5, 650 },
 						["qg"] = 95956,	-- Jale Rivermane
-						["g"] = {
+						["groups"] = {
 							i(130291),	-- Snowblind Gloves
 							i(130292),	-- Drogstitch Grips
 							i(130293),	-- Whitewater Gloves
@@ -1867,7 +1867,7 @@ _.Zones =
 					q(40071, {	-- Tamer Takedown
 						["coord"] = { 50.9, 36.6, 650 },
 						["qg"] = 94068,	-- Oren Windstrider
-						["g"] = {
+						["groups"] = {
 							i(121681),	-- Snowblind Wristwraps
 							i(121684),	-- Dogstitch Bracers
 							i(121683),	-- Whitewater Ringmail Cuffs
@@ -1885,7 +1885,7 @@ _.Zones =
 						["sourceQuests"] = { 39577 },	-- An Ancient Secret
 						["coord"] = { 61.1, 73.7, 657 },	-- Path of Huln
 						["qg"] = 96270,	-- Ebyssian
-						["g"] = {
+						["groups"] = {
 							i(133137),	-- Wisps of Illusion
 							i(133138),	-- Time-Lost Dragon Heart
 							i(133139),	-- Feltotem Sigil
@@ -1973,7 +1973,7 @@ _.Zones =
 						["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
 						["coord"] = { 52.3, 36.5, 650 },
 						["qg"] = 95410,	-- Lasan Skyhorn
-						["g"] = {
+						["groups"] = {
 							i(121665),	-- Snowblind Cowl
 							i(121667),	-- Drogstitch Hood
 							i(121666),	-- Whitewater Helmet
@@ -1988,7 +1988,7 @@ _.Zones =
 						["sourceQuests"] = { 40594 },	-- Justice Rains from Above
 						["coord"] = { 53.1, 68.7, 650 },
 						["qg"] = 97407,	-- Lasan Skyhorn
-						["g"] = {
+						["groups"] = {
 							i(121675),	-- Snowblind Mantle
 							i(121673),	-- Drogstitch Spaulders
 							i(121676),	-- Whitewater Amice
@@ -2011,7 +2011,7 @@ _.Zones =
 						},
 						["coord"] = { 49.2, 36.5, 650 },
 						["qg"] = 95410,	-- Lasan Skyhorn
-						["g"] = {
+						["groups"] = {
 							i(133093),	-- Crawliac Charming Draught
 							i(133104),	-- Errant Mana
 							i(133094),	-- Heart of the Witchqueen
@@ -2037,7 +2037,7 @@ _.Zones =
 					q(44055, {	-- They Have a Pitlord
 						["coord"] = { 29.7, 40.1, 650 },
 						["qg"] = 108504,	-- Marius Felbane
-						["g"] = {
+						["groups"] = {
 							i(140726),	-- Hood of the Spurious Journey
 							i(140728),	-- Kuglaroth's Helm
 							i(140724),	-- Pit Lord Stompers
@@ -2057,7 +2057,7 @@ _.Zones =
 						["sourceQuests"] = { 40219 },	-- In Defiance of Deathwing
 						["coord"] = { 49.3, 54.1, 657 },	-- Path of Huln
 						["qg"] = 108069,	-- Spiritwalker Ebonhorn
-						["g"] = {
+						["groups"] = {
 							i(121662),	-- Snowblind Handwraps
 							i(121660),	-- Drogstitch Gloves
 							i(121663),	-- Whitewater Gauntlets
@@ -2093,7 +2093,7 @@ _.Zones =
 						["sourceQuests"] = { 39670 },	-- Critter Scatter Shot
 						["coord"] = { 57.6, 56.5, 650 },
 						["qg"] = 96513,	-- Razik Gazbolt
-						["g"] = {
+						["groups"] = {
 							i(131933),	-- Critter Hand Cannon (TOY!)
 						},	
 					}),
@@ -2101,7 +2101,7 @@ _.Zones =
 						["sourceQuests"] = { 38909 },	-- Get to High Ground
 						["coord"] = { 49.0, 55.2, 650 },
 						["qg"] = 94561,	-- Warbrave Nava
-						["g"] = {
+						["groups"] = {
 							i(121678),	-- Snowblind Cord
 							i(121680),	-- Drogstitch Belt
 							i(121679),	-- Whitewater Cinch
@@ -2267,7 +2267,7 @@ _.Zones =
 					q(42384),	-- Scouting Reports
 					q(40133),	-- Scrap of Pants
 					q(44039),	-- Sea King Tidross
---					q(38914),	-- Secrets of Highmountain REMOVED
+					q(38914),	-- Secrets of Highmountain REMOVED
 					q(42698),	-- Selia, Master of Balefire
 					q(40050),	-- Shipwreck Cove
 					q(40185),	-- Shoulder the Burden
@@ -2342,7 +2342,8 @@ _.Zones =
 					q(45179),	-- Win the Crowd
 					q(47019),	-- Windwalker: Rumblings Near Feltotem
 					q(41825),	-- Winged Menace
-					q(41761),	-- Winter Moose Roundup		  --]]
+					q(41761),	-- Winter Moose Roundup		  
+					--]]
 				}),
 				n(-16,  {	-- Rares
 					v(40413,  {	-- "Sure Shot" Arnie (Amateur Hunters)
@@ -2353,10 +2354,10 @@ _.Zones =
 							100230,	-- "Sure-Shot" Arnie <Amateur Hunter>
 							100231,	-- Dargok Thunderuin <Amateur Hunter>
 						},
-						["g"] = {
+						["groups"] = {
 							o(245479, {	-- Battered Chest
 								["displayID"] = 65118,
-								["g"] = {
+								["groups"] = {
 									i(131781),	-- Plate Hiking Boots
 									crit(16, {	-- Amateur Hunters
 										["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2372,7 +2373,7 @@ _.Zones =
 							97215,	-- Beastmaster Pao'lek
 							97220, 	-- Arru <The Terror>
 						},
-						["g"] = {
+						["groups"] = {
 							o(244473, { 	-- Thunder Totem Stolen Goods (No Model)
 								i(131756), 	-- Fletcher's Nimble Grips
 								crit(10, {	-- Beastmaster Pao'lek
@@ -2384,7 +2385,7 @@ _.Zones =
 					n(98299,  {	-- Bodash the Hoarder
 						["questID"] = 40084,
 						["coord"] = { 36.6, 16.6, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131799),	-- Zugdug's Piece of Paradise
 							crit(14, {	-- Bodash the Hoarder
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2394,7 +2395,7 @@ _.Zones =
 					n(97449,  {	-- Bristlemaul
 						["questID"] = 40405,
 						["coord"] = { 37.7, 45.7, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131761),	-- Thick Bristly Hood
 							crit(12, {	-- Bristlemaul
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2404,7 +2405,7 @@ _.Zones =
 					n(94877,  {	-- Brogrul the Mighty
 						["questID"] = 39235,
 						["coord"] = { 56.2, 72.4, 650 },
-						["g"] = {
+						["groups"] = {
 							i(138396),	-- Mighty Chain Footpads
 						},
 					}),
@@ -2414,7 +2415,7 @@ _.Zones =
 							{ 43.0, 10.4, 650 },
 							{ 46.2, 12.0, 650 },
 						},
-						["g"] = {
+						["groups"] = {
 							i(131798),	-- Faded Swashbuckler's Jerkin
 							crit(3, {	-- Crab Rider Grmlrml
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2424,7 +2425,7 @@ _.Zones =
 					n(97345,  {	-- Crawshuk the Hungry
 						["questID"] = 39806,
 						["coord"] = { 48.3, 40.4, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131809, {	-- Gleaming Roc Feather
 								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
@@ -2440,7 +2441,7 @@ _.Zones =
 							{ 55.1, 44.3, 650 },	-- cave entrance
 						},
 						["questID"] = 40414,
-						["g"] = {
+						["groups"] = {
 							i(131780),	-- Void Slippers
 							crit(18, {	-- Devouring Darkness
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2450,7 +2451,7 @@ _.Zones =
 					n(96072,  {	-- Durguth
 						["questID"] = 45508,
 						["coord"] = { 43.8, 75.6, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131796),	-- Roggumsoggum's Boppers
 						},
 					}),
@@ -2458,14 +2459,14 @@ _.Zones =
 						["description"] = "|cff66ccffClick on the Abandoned Fishing Pole to summon Flamescale.|r",
 						["questID"] = 39963,
 						["coord"] = { 40.9, 57.7, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131773),	-- Flamescale Mail
 						},
 					}),
 					n(96590,  {	-- Gurbog da Basher
 						["questID"] = 40347,
 						["coord"] = { 56.5, 60.7, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131775),	-- Da Basher's Toy Armor
 							crit(5, {	-- Gurbog da Basher
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2475,7 +2476,7 @@ _.Zones =
 					n(97326,  {	-- Hartli the Snatcher
 						["questID"] = 39802,
 						["coord"] = { 51.0, 48.5, 650 },
-						["g"] = {
+						["groups"] = {
 						--	i(129190),	-- Rope of Friendship
 							crit(6, {	-- Hartli the Snatcher
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2485,7 +2486,7 @@ _.Zones =
 					n(112419, {	-- Kuglaroth
 						["questID"] = 44055,
 						["coord"] = { 29.7, 40.1, 650 },	-- quest pickup
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- Stormheim
 								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
 							}),
@@ -2497,7 +2498,7 @@ _.Zones =
 							{ 51.4, 37.3, 650 },	-- cave entrance
 							{ 50.8, 34.7, 650 },	-- actual rare
 						},
-						["g"] = {
+						["groups"] = {
 							i(131776),	-- Scale Cord of the Eggeater
 							crit(19, {	-- Luggut the Eggeater
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2513,7 +2514,7 @@ _.Zones =
 							{ 45.2, 25.8, 650 },
 							{ 45.4, 30.4, 650 },
 						},
-						["g"] = {
+						["groups"] = {
 							i(131900), 	-- Magestic Elderhorn Hoof (TOY!)
 							crit(11, {	-- Majestic Elderhorn
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2523,7 +2524,7 @@ _.Zones =
 					n(96621,  {	-- Mellok, Son of Torok
 						["questID"] = 40242,
 						["coord"] = { 48.9, 27.0, 650 },
-						["g"] = {
+						["groups"] = {
 							crit(17, {	-- Mellok, Son of Torok
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
 							}),
@@ -2533,7 +2534,7 @@ _.Zones =
 						["questID"] = 40096,
 						["coord"] = { 46.7, 7.30, 650 },
 						["crs"] = { 98754 },	-- Sloppy "Sloppy Joe" Joe
-						["g"] = {
+						["groups"] = {
 							i(131797),	-- Swamprock Salvage Band
 							crit(21, {	-- Captured Survivor
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2543,7 +2544,7 @@ _.Zones =
 					n(95204,  {	-- Oubdob da Smasher
 						["questID"] = 39435,
 						["coord"] = { 47.4, 73.8, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131793),	-- Oubdob's Smashin' Sweatband
 						},
 					}),
@@ -2557,7 +2558,7 @@ _.Zones =
 							109501,	-- Darkful <Unethical Adventurers>
 							109500,	-- Jak <Unethical Adventurers>
 						},
-						["g"] = {
+						["groups"] = {
 							i(140683),	-- Darkful's Mitts
 							i(140682),	-- Zenobia's Handwraps
 							i(140681),	-- Jak's Gloves
@@ -2572,7 +2573,7 @@ _.Zones =
 						["description"] = "Click on the Totally Safe Treasure Chest to spawn Ram'Pag.",
 						["questID"] = 39766,
 						["coord"] = { 52.3,	51.4, 650 },
-						["g"] = {
+						["groups"] = {
 							crit(15, {	-- Totally Safe Treasure Chest
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
 							}),
@@ -2582,7 +2583,7 @@ _.Zones =
 						["description"] = "|cff66ccffSpeak to Scout Harefoot and Mynta Talonscreech will spawn.|r",
 						["questID"] = 39866,
 						["coord"] = { 54.5, 40.5, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131792),	-- Harefoot Pinnacle Wrap
 							crit(13, {	-- Scout Harefoot
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2592,7 +2593,7 @@ _.Zones =
 					n(97093,  {	-- Shara Felbreath
 						["questID"] = 39762,
 						["coord"] = { 51.0, 25.8, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131791),	-- Felbreath Bloodsinger Robe
 							crit(20, {	-- Shara Felbreath
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2602,7 +2603,7 @@ _.Zones =
 					n(101077, {	-- Sekhan
 						["questID"] = 40681,
 						["coord"] = { 45.5, 55.2, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131730),	-- Darksaber Leather Belt
 							crit(1, {	-- Sekhan
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2612,7 +2613,7 @@ _.Zones =
 					n(95872,  {	-- Skullhat
 						["questID"] = 39465,
 						["coord"] = { 50.9, 32.0, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131769),	-- The Taskmaster's Wristwraps
 							crit(7, {	-- Skywhisker Taskmasker
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2622,7 +2623,7 @@ _.Zones =
 					n(98890,  {	-- Slumber
 						["questID"] = 40175,
 						["coord"] = { 41.4, 31.9, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131921),	-- Dreamflow Collar
 							crit(22, {	-- Slumbering Bear
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2631,10 +2632,10 @@ _.Zones =
 					}),
 					n(97653,  {	-- Taurson
 						["questID"] = 39872,
-						["g"] = {
+						["groups"] = {
 							o(244628, {	-- Taurson's Prize
 								["displayID"] = 65118,
-								["g"] = {
+								["groups"] = {
 									i(131800),	-- Taurson's Champion Belt
 									crit(2, {	-- The Beastly Boxer
 										["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2646,7 +2647,7 @@ _.Zones =
 					n(97203,  {	-- Tenpak Flametotem
 						["questID"] = 39782,
 						["coord"] = { 41.9, 41.5, 650 },
-						["g"] = {
+						["groups"] = {
 							i(129175),	-- Crispin (PET!)
 							crit(9, {	-- The Exiled Shaman
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -2657,7 +2658,7 @@ _.Zones =
 						["modelID"] = 73098,
 						["questID"] = 39824,
 						["coord"] = { 53.5, 51.0, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131810, {	-- Derelict Skyhorn Kite
 								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
@@ -2667,7 +2668,7 @@ _.Zones =
 						["modelID"] = 73098,
 						["questID"] = 39466,
 						["coord"] = { 49.7, 37.7, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131927, {	-- Shimmering Roc Feather
 								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
@@ -2677,7 +2678,7 @@ _.Zones =
 						["modelID"] = 73098,
 						["questID"] = 39503,
 						["coord"] = { 47.6, 44.0, 650 },
-						["g"] = {
+						["groups"] = {
 							i(131926, {	-- Delicate Roc Feather
 								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
@@ -2687,7 +2688,7 @@ _.Zones =
 				n(-2,   {	-- Vendors
 					n(93975,  {	-- Leyweaver Yaphisteia
 						["coord"] = { 29.4, 26.2, 650 },
-						["g"] = {
+						["groups"] = {
 							i(127027, {	-- Pattern: Imbued Silkweave Slippers
 								i(126996),	-- Imbued Silkweave Slippers
 							}),
@@ -2695,7 +2696,7 @@ _.Zones =
 					}),
 					n(94100,  {	-- Lucas Sigmund <Repairs>
 						["coord"] = { 39.9, 52.3, 650 },
-						["g"] = {
+						["groups"] = {
 							i(141044),	-- Technique: Glyph of Nesingwary's Nemeses
 							i(141048, {	-- Technique: Glyph of the Headhunter
 								["u"] = 2,	-- Removed BoP/BoA item
@@ -2707,7 +2708,7 @@ _.Zones =
 					}),
 					n(106902, {	-- Ransa Greyfeather <Highmountain Emissary>
 						["coord"] = { 38.3, 45.8, 750 },	-- Thunder Totem
-						["g"] = {
+						["groups"] = {
 							i(137855),	-- Design: Ancient Maelstrom Amulet (Rank 3)*
 							i(137846),	-- Design: Dawnlight Band (Rank 3)*
 							i(137844),	-- Design: Prophetic Band (Rank 3)*
@@ -2731,54 +2732,74 @@ _.Zones =
 					}),
 					n(99574,  {	-- Slyhoof the Shameless Shaman <Used Totem Vendor>
 						["coord"] = { 60.9, 59.5, 750 },	-- Thunder Totem
-						["g"] = {
+						["groups"] = {
 							i(140336),	-- Brulfist Idol (TOY!)
 							i(140335),	-- Totem Tote
 						},
 					}),
 					n(115887, {	-- Trinket
 						["coord"] = { 32.4, 66.8, 650 },
-						["g"] = {
+						["groups"] = {
 							i(142369),	-- Ivory Hawkstrider Mount
 						},
 					}),
 				}),
 				n(-34,  {	-- World Quests
+					q(43767, {	-- Enigmatic
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(42064, {	-- It's Illid... Wait.
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(17, {	-- It's Illid... Wait.
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
 					}),
+					q(41866, {	-- Neltharion's Lair: Blighted Bat
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41624, {	-- Rocko Needs a Shave
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(19, {	-- Rocko Needs a Shave
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
 					}),
+					q(41691, {	-- Sea of Feathers
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41692, {	-- Shipwreck Scavengers
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41687, {	-- Snail Fight!
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(18, {	-- Snail Fight!
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
 					}),
+					q(44892, {	-- Snowfeather Swarm!
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(40282, {	-- Tiny Poacher, Tiny Animals
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(15, {	-- Tiny Poacher, Tiny Animals
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
@@ -2788,17 +2809,38 @@ _.Zones =
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(14, {	-- Training with Bredda
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
 					}),
+					q(44289, {	-- WANTED: Arru
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41819, {	-- WANTED: Gurbog da Basher
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41421, {	-- Warden Tower Assault: Nightwatcher's Perch [A]
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(41145, {	-- Water of Life
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41414, {	-- Weapons of Deathwing
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41766, {	-- Wildlife Protection Force
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							crit(16, {	-- Wildlife Protection Force
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
@@ -2808,7 +2850,7 @@ _.Zones =
 						["requireSkill"] = 202,	-- Engineering
 						["lvl"] = 110,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(137723),	-- Schematic: Auto-Hammer (Rank 3)
 						},
 					}),
@@ -2816,7 +2858,7 @@ _.Zones =
 						["requireSkill"] = 165,	-- Leatherworking
 						["lvl"] = 110,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(137908),	-- Recipe: Battlebound Armbands (Rank 3)
 						},
 					}),
@@ -2824,7 +2866,7 @@ _.Zones =
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["lvl"] = 110,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(137842),	-- Design: Skystone Pendant (Rank 3)
 						},
 					}),
@@ -2832,7 +2874,7 @@ _.Zones =
 						["requireSkill"] = 333,	-- Enchanting
 						["lvl"] = 110,
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							i(128604),	-- Formula: Enchant Cloak - Word of Strength (Rank 3)
 						},
 					}),
@@ -2842,7 +2884,7 @@ _.Zones =
 					}),
 					n(-3247, {	-- Roggthread Set
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
-						["g"] = {
+						["groups"] = {
 							i(134172),	-- Roggthread Headdress
 							i(134177),	-- Roggthread Mantle
 							i(134175),	-- Roggthread Robe
@@ -2855,7 +2897,7 @@ _.Zones =
 					}),
 					n(-3249, {	-- Sunfrost Set
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
-						["g"] = {
+						["groups"] = {
 							i(139124),	-- Sunfrost Aurora
 							i(139129),	-- Sunfrost Mantle
 							i(139127),	-- Sunfrost Robes
@@ -2868,7 +2910,7 @@ _.Zones =
 					}),
 					n(-3263, {	-- Rivermane Set
 						["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
-						["g"] = {
+						["groups"] = {
 							i(139108),	-- Rivermane Hood
 							i(139110),	-- Rivermane Shoulders
 							i(139109),	-- Rivermane Robe
@@ -2881,7 +2923,7 @@ _.Zones =
 					}),
 					n(-3270, {	-- Steelgazer Set
 						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
-						["g"] = {
+						["groups"] = {
 							i(134152),	-- Steelgazer Hide Hood
 							i(134154),	-- Steelgazer Hide Mantle
 							i(134153),	-- Steelgazer Hide Jerkin
@@ -2894,7 +2936,7 @@ _.Zones =
 					}),
 					n(-3275, {	-- Skyhorn Set
 						["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
-						["g"] = {
+						["groups"] = {
 							i(139119),	-- Skyhorn Headgear
 							i(139121),	-- Skyhorn Mantle
 							i(139122),	-- Skyhorn Vest
@@ -2907,7 +2949,7 @@ _.Zones =
 					}),
 					n(-3300, {	-- Greystone Set
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-						["g"] = {
+						["groups"] = {
 							i(139096),	-- Greystone Helm
 							i(139098),	-- Greystone Pauldrons
 							i(139093),	-- Greystone Chestpiece
@@ -2920,7 +2962,7 @@ _.Zones =
 					}),
 					n(-3308, {	-- Rockbound Set
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-						["g"] = {
+						["groups"] = {
 							i(134138),	-- Rockbound Helm
 							i(134140),	-- Rockbound Pauldrons
 							i(134135),	-- Rockbound Chestguard
@@ -2971,7 +3013,6 @@ _.Zones =
 					q(41013),	-- Darkbrul Arena
 					q(41835),	-- Deworming
 					q(41024),	-- Dirge of the Dead
-					q(43767),	-- Enigmatic
 					q(39424),	-- Everything!
 					q(41561),	-- Felhide
 					q(41560),	-- Felhide
@@ -2994,7 +3035,6 @@ _.Zones =
 					q(41243),	-- Huge Highmountain Salmon
 					q(41609),	-- Huge Highmountain Salmon
 					q(46185),	-- Iroxus
-					q(42064),	-- It's Illid... Wait.
 					q(46186),	-- Ix'dreloth
 					q(46187),	-- Larthogg
 					q(43764),	-- Ley Race
@@ -3024,18 +3064,13 @@ _.Zones =
 					q(40985),	-- Rimescale Naga Incursion: Highmountain
 					q(41025),	-- Rise of the Fallen
 					q(40966),	-- Ritualists in Our Midsts
-					q(41624),	-- Rocko Needs a Shave
 					q(41200),	-- Rough Leystone Outcropping
 					q(46262),	-- Save the Tadpoles!
-					q(41691),	-- Sea of Feathers
 					q(41234),	-- Shaggy Saber Hide
 					q(46189),	-- Shel'zuul
-					q(41692),	-- Shipwreck Scavengers
 					q(41242),	-- Slab of Bacon
 					q(41549),	-- Slab of Bacon
 					q(41550),	-- Slab of Bacon
-					q(41687),	-- Snail Fight!
-					q(44892),	-- Snowfeather Swarm!
 					q(40920),	-- Stonebinder Bounty
 					q(41224),	-- Supplies Needed: Foxflower
 					q(41207),	-- Supplies Needed: Leystone
@@ -3047,13 +3082,10 @@ _.Zones =
 					q(41232),	-- Thick Ironhorn Hide
 					q(40896),	-- Threnody of Chieftains
 					q(44823),	-- Thunder Totem Cleanup Detail
-					q(40282),	-- Tiny Poacher, Tiny Animals
-					q(40280),	-- Training with Bredda
 					q(46190),	-- Ulgrom
 					q(41011),	-- Umbralshard Rituals
 					q(41428),	-- Unstable Portal
 					q(41824),	-- WANTED: Arru
-					q(44289),	-- WANTED: Arru
 					q(41836),	-- WANTED: Bodash the Hoarder
 					q(43616),	-- WANTED: Bodash the Hoarder
 					q(41828),	-- WANTED: Bristlemaul
@@ -3062,7 +3094,6 @@ _.Zones =
 					q(44291),	-- WANTED: Crawshuk the Hungry
 					q(43455),	-- WANTED: Devouring Darkness
 					q(43617),	-- WANTED: Devouring Darkness
-					q(41819),	-- WANTED: Gurbog da Basher
 					q(43618),	-- WANTED: Gurbog da Basher
 					q(41818),	-- WANTED: Majestic Elderhorn
 					q(44292),	-- WANTED: Majestic Elderhorn
@@ -3075,13 +3106,9 @@ _.Zones =
 					q(41227),	-- Warden Tower Assault: Cordana's Apex
 					q(41257),	-- Warden Tower Assault: Cordana's Apex
 					q(41420),	-- Warden Tower Assault: Nightwatcher's Perch
-					q(41421),	-- Warden Tower Assault: Nightwatcher's Perch
 					q(41205),	-- Warm Leystone Deposits
-					q(41145),	-- Water of Life
 					q(41321),	-- Weapons of Deathwing
-					q(41414),	-- Weapons of Deathwing
 					q(41252),	-- Wild Northern Barracuda
-					q(41766),	-- Wildlife Protection Force
 					q(41525),	-- Wispy Foxflower
 					q(46194),	-- Wolves of the Legion
 					q(41659),	-- Work Order: Avalanche Elixirs
@@ -3089,10 +3116,10 @@ _.Zones =
 					q(41240),	-- Work Order: Highmountain Salmon
 					q(41206),	-- Work Order: Leystone
 					q(41647),	-- Work Order: Silkweave Robe
-					q(41653),	-- Work Order: Skystone Pendant
 					q(41235),	-- Work Order: Stonehide Leather
 					q(46192),	-- Zar'vok
-					q(46279),	-- Zargrom	--]]
+					q(46279),	-- Zargrom
+					--]]
 				}),
 				n(0,    {	-- Zone Drops
 					["crs"] = {
@@ -3265,7 +3292,7 @@ _.Zones =
 						90633,	-- Wrathguard
 						115677,	-- Young Snowfeather
 					},
-					["g"] = {
+					["groups"] = {
 						i(144312),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 2)
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
@@ -3404,7 +3431,7 @@ _.Zones =
 						un(2, ach(11139, {	-- Field Medic!
 							un(39, title(340, {	-- TITLE: Field Medic!
 								["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-								["g"] = {
+								["groups"] = {
 									{
 										["achievementID"] = 11139,	-- Field Medic (Achievement)
 										["criteriaID"] = 6, 		-- Crumpled Letter (Criteria)
