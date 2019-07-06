@@ -35,24 +35,6 @@ _.Zones =
 						i(118198),	-- Steelmaw's Stompers
 					},
 				}),
-				o(239828, {	-- Edge of Reality
-					["description"] = "When you click on the Edge of Reality, it will teleport you.  Click on the egg to receive the mount.|nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you. |r",
-					["coords"] = {
-						{ 36.4, 18.3, 542 },
-						{ 47.0, 20.1, 542 },
-						{ 50.4, 6.10, 542 },
-						{ 60.8, 11.2, 542 },
-					},
-					["g"] = {
-						o(239901, {	-- Voidtalon Egg
-							["modelScale"] = 2,
-							["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
-							["g"] = {	
-								i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
-							},
-						}),
-					},
-				}),
 				n(84890, {	-- Festerbloom
 					["questID"] = 36297,
 					["coord"] = { 54.8, 39.8, 542 },

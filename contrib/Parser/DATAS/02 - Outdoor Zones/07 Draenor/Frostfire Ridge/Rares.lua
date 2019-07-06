@@ -99,26 +99,6 @@ _.Zones =
 						i(119374),	-- Gold Ogron Earring
 					},
 				}),
-				o(239828, {	-- Edge of Reality
-					["description"] = "When you click on the Edge of Reality, it will teleport you.  Click on the egg to receive the mount.|nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you. |r",
-					["coords"] = {
-						{ 51.1, 19.86, 525 },
-						{ 52.4, 18.18, 525 },
-						{ 53.8, 17.46, 525 },
-						{ 47.7, 27.57, 525 },
-						{ 39.0, 26.00, 525 },
-						{ 47.7, 27.57, 525 },
-					},
-					["g"] = {
-						o(239901, {	-- Voidtalon Egg
-							["modelScale"] = 2,
-							["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
-							["g"] = {	
-								i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
-							},
-						}),
-					},
-				}),
 				n(74971, {	-- Firefury Giant
 					["questID"] = 33504,
 					["coord" ] = { 71.5, 46.8, 525 },

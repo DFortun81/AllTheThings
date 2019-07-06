@@ -110,25 +110,6 @@ _.Zones =
 						i(119225),	-- Studded Gronn-Stitched Girdle
 					},
 				}),
-				o(239828, {	-- Edge of Reality
-					["description"] = "When you click on the Edge of Reality, it will teleport you.  Click on the egg to receive the mount.|nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you. |r",
-					["coords"] = {
-						{ 51.6, 38.8, 543 },
-						{ 54.0, 45.8, 543 },
-						{ 56.0, 40.7, 543 },
-						{ 43.3, 34.2, 543 },
-						{ 46.9, 21.2, 543 },
-					},
-					["g"] = {
-						o(239901, {	-- Voidtalon Egg
-							["modelScale"] = 2,
-							["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
-							["g"] = {	
-								i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
-							},
-						}),
-					},
-				}),
 				n(88580, {	-- Firestarter Grash
 					["description"] = "Will spawn in the area that is on fire.",
 					["questID"] = 37373,

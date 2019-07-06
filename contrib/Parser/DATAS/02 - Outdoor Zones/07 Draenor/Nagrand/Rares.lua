@@ -71,26 +71,7 @@ _.Zones =
 						}),
 						i(119405),	-- Durg's Heavy Maul
 					},
-				}), 
-				o(239828, {	-- Edge of Reality
-					["description"] = "When you click on the Edge of Reality, it will teleport you.  Click on the egg to receive the mount.|nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you. |r",
-					["coords"] = {
-						{ 40.5, 47.6, 550 },
-						{ 44.0, 30.7, 550 },
-						{ 45.9, 31.4, 550 },
-						{ 57.3, 26.7, 550 },
-						{ 59.5, 10.2, 550 },
-					},
-					["g"] = {
-						o(239901, {	-- Voidtalon Egg
-							["modelScale"] = 2,
-							["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
-							["g"] = {	
-								i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
-							},
-						}),
-					},
-				}),										
+				}),
 				n(83483, {	-- Flinthide
 					["questID"] = 35893,
 					["coord"] = { 69.6, 42.0, 550 }, 						

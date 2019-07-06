@@ -87,27 +87,6 @@ _.Zones =
 						i(119377),	-- Void-Touched Diamond Necklace
 					},
 				}),
-				o(239828, {	-- Edge of Reality
-					["description"] = "When you click on the Edge of Reality, it will teleport you.  Click on the egg to receive the mount.|nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you. |r",
-					["coords"] = {
-						{ 41.9, 75.7, 539 },
-						{ 43.7, 70.9, 539 },
-						{ 48.9, 70.2, 539 },
-						{ 50.3, 71.5, 539 },
-						{ 49.6, 71.6, 539 },
-						{ 50.9, 72.5, 539 },
-						{ 51.6, 74.8, 539 },
-					},
-					["g"] = {
-						o(239901, {	-- Voidtalon Egg
-							["modelScale"] = 2,
-							["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
-							["g"] = {
-								i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
-							},
-						}),
-					},
-				}),
 				n(82676, {	-- Enavra
 					["questID"] = 35688,
 					["coord"] = { 67.9, 63.9, 539 },
