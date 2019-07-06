@@ -11246,10 +11246,15 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							end
 						end
 						if spellRecipeInfo.learned then
-							SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-							if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-								learned = learned + 1;
+							if spellRecipeInfo.disabled and GetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, nil);
+								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, nil);
+							else
+								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+								if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+									SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+									learned = learned + 1;
+								end
 							end
 						end
 						if not skillCache[spellRecipeInfo.recipeID] then
