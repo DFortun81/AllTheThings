@@ -226,6 +226,19 @@ _.Zones =
 						i(166272),	-- Recipe: Potion of the Unveiling Eye [Rank 3]
 					},
 				}),
+				n(143555, {	-- Xander Silberman
+					["coord"] = { 51.6, 58.2, 862 },
+					["description"] = "You have to finish the Quest \"Storming the Battlefields\" before you can buy the other Rank 1 items. Rank 2 will be visible after you bought Rank 1.",
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
+						i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
+						i(168578),	-- Sphere of Suppressed Force (Rank 1)
+						i(168443),	-- Agitated Blood of the Dominated (Rank 2)
+						i(168921),	-- Azerite-Infused Timequartz (Rank 2)
+						i(168579),	-- Sphere of Unrestrained Fury (Rank 2)
+					},
+				}),
 			}),
 		}),
 	}),

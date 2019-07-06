@@ -429,8 +429,15 @@ _.Zones =
 					["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
 				}),
 				q(56500, {	-- Storming the Battlefields
-					["races"] = HORDE_ONLY,
+					["qg"] = 143555,	-- Xander Silberman
 					["coord"] = { 51.6, 58.2, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(168442),	-- Roiling Blood of the Vanquished
+						i(168920),	-- Azerite-Encrusted Timequartz
+						i(168578),	-- Sphere of Suppressed Force
+					},
 				}),
 				q(47509, {	-- Terrace of the Chosen
 					["races"] = HORDE_ONLY,

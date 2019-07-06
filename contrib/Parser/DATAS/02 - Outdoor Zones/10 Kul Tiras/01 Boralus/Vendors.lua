@@ -327,6 +327,19 @@ _.Zones =
 						i(142379),	-- Dutiful Squire
 					},
 				}),
+				n(143560, {	-- Marshal Gabriel
+					["coord"] = { 56.2, 25.7, 1161 },
+					["description"] = "You have to finish the Quest \"Storming the Battlefields\" before you can buy the other Rank 1 items. Rank 2 will be visible after you bought Rank 1.",
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
+						i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
+						i(168578),	-- Sphere of Suppressed Force (Rank 1)
+						i(168443),	-- Agitated Blood of the Dominated (Rank 2)
+						i(168921),	-- Azerite-Infused Timequartz (Rank 2)
+						i(168579),	-- Sphere of Unrestrained Fury (Rank 2)
+					},
+				}),
 				n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 					["coord"] = { 67.52, 21.56, 1161 },
 					["races"] = ALLIANCE_ONLY,

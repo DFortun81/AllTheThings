@@ -265,6 +265,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 56031,	-- The Wolf's Offensive
 				}),
+				q(56500, {	-- Storming the Battlefields
+					["qg"] = 143560,	-- Marshal Gabriel
+					["coord"] = { 56.2, 25.7, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(168442),	-- Roiling Blood of the Vanquished
+						i(168920),	-- Azerite-Encrusted Timequartz
+						i(168578),	-- Sphere of Suppressed Force
+					},
+				}),
 				q(47962, {	-- Stormsong Valley
 					["sourceQuests"] = { 47189 },	-- A Nation Divided
 					["isBreadcrumb"] = true,
