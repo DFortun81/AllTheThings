@@ -6,7 +6,7 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(550, {	-- Nagrand (Draenor)
 			n(-16, { 	-- Rares
-				-- Coords have been confirmed on rares except for Edge of Reality, Luk'hok, Nakk, and a few noted long spawns.
+				-- Coords have been confirmed on rares except for Luk'hok, Nakk, and a few noted long spawns.
 				n(82899, {	-- Ancient Blademaster
 					["questID"] = 35778,
 					["coord"] = { 84.6, 53.6, 550 },
@@ -17,13 +17,14 @@ _.Zones =
 				n(82826, {	-- Berserk T-300 Series Mark II
 					["questID"] = 35735,
 					["coord"] = { 76.9, 64.3, 550 },
+					["description"] = "Use the plunger next to the cave.",
 					["g"] = {
 						i(116823),	-- Katealystic Konverter
 					},
 				}),
 				n(87837, {	-- Bonebreaker
 					["questID"] = 37396,
-					["isDaily"] = true,							
+					["isDaily"] = true,
 					["coords"] = {
 						{ 39.2, 15.8, 550 },
 						{ 39.8, 13.2, 550 },
@@ -35,11 +36,11 @@ _.Zones =
 						}),
 						i(119370),	-- Rattlekilt
 					},
-				}), 
+				}),
 				n(87234, {	-- Brutag Grimblade
 					["questID"] = 37400,
-					["isDaily"] = true,							
-					["coord"] = { 43.0, 36.2, 550 },	-- **Coords uncofirmed, relied on wowhead**
+					["isDaily"] = true,
+					["coord"] = { 43.2, 36.3, 550 },
 					["lvl"] = 100,
 					["g"] = {
 						crit(2, {	-- Brutag Grimblade
@@ -51,15 +52,15 @@ _.Zones =
 				n(79725, {	-- Captain Ironbeard
 					["questID"] = 34727,
 					["coord"] = { 34.6, 77.0, 550 },
-					["isDaily"] = true,						
-					["g"] = {	
+					["isDaily"] = true,
+					["g"] = {
 						i(118244),	-- Iron Buccaneer's Hat Toy
 						i(116809),	-- Ironbeard's Blunderbuss
 					},
 				}),
 				n(87788, {	-- Durg Spinecrusher
 					["questID"] = 37395,
-					["isDaily"] = true,							
+					["isDaily"] = true,
 					["coords"] = {	-- patrols in a circle
 						{ 38.8, 23.0, 550 },
 						{ 35.6, 20.6, 550 },
@@ -74,20 +75,28 @@ _.Zones =
 				}),
 				n(83483, {	-- Flinthide
 					["questID"] = 35893,
-					["coord"] = { 69.6, 42.0, 550 }, 						
-					["g"] = {	
+					["coord"] = { 69.6, 42.0, 550 },
+					["g"] = {
 						i(116807),	-- Flinthide's Impenetrable Crest
 					},
 				}),
 				n(82764, {	-- Gar'lua <The Wolfmother>
 					["questID"] = 35715,
 					["coord"] = { 52.4, 55.7, 550 },
+					["crs"] = {
+						82766,	-- Jo'kar
+						83548,	-- Thaif
+					},
 					["g"] = {
 						i(118246),	-- Call of the Wolfmother
 					},
 				}),
 				n(80122, {	-- Gaz'orda
-					["coord"] = { 43.8, 77.7, 550 },
+					["questID"] = 34725,
+					["coords"] = {
+						{ 42.1, 78.8, 550 },	-- cave
+						{ 43.8, 77.7, 550 },
+					},
 					["g"] = {
 						i(116798),	-- Gaz'orda's Grim Gaze
 					},
@@ -102,7 +111,7 @@ _.Zones =
 				n(83509, {	-- Gorepetal
 					["questID"] = 35898,
 					["coord"] = { 93.2, 28.2, 550 },
-					["g"] = {	
+					["g"] = {
 						i(116916),	-- Gorepetal's Gentle Grasp
 					},
 				}),
@@ -120,23 +129,23 @@ _.Zones =
 				}),
 				n(84263, {	-- Graveltooth
 					["description"] = "Kill about 15 goren in the area to draw out Graveltooth.  He will yell 3 times before appearing.",
-					["questID"] = 36159,	
+					["questID"] = 36159,
 					["coord"] = { 84.0, 36.8, 550 },
-					["g"] = {	
+					["g"] = {
 						i(118689),	-- Graveltooth's Manacles
 					},
 				}),
 				n(82758, {	-- Greatfeather
 					["questID"] = 35714,
 					["coord"] = { 66.8, 51.2, 550 },
-					["g"] = {	
+					["g"] = {
 						i(116795),	-- Greatfeather's Down Robe
 					},
 				}),
 				n(82912, {	-- Grizzlemaw
 					["questID"] = 35784,
 					["coord"] = { 89.4, 72.6, 550 },
-					["g"] = {	
+					["g"] = {
 						i(118687),	-- Grizzled Wolfskin Cloak
 					},
 				}),
@@ -152,7 +161,7 @@ _.Zones =
 				n(83603, {	-- Hunter Blacktooth
 					["questID"] = 35923,
 					["coord"] = { 80.6, 30.6, 550 },
-					["g"] = {	
+					["g"] = {
 						i(118245),	-- Hunter Blacktooth's Ribcruncher
 					},
 				}),
@@ -165,7 +174,7 @@ _.Zones =
 				}),
 				n(86959, {	-- Karosh Blackwind
 					["questID"] = 37399,
-					["isDaily"] = true,								
+					["isDaily"] = true,
 					["coord"] = { 45.8, 34.8, 550 },
 					["lvl"] = 100,
 					["g"] = {
@@ -186,11 +195,11 @@ _.Zones =
 							["achievementID"] = 9541,	-- The Song of Silence
 						}),
 					},
-				}),					
+				}),
 				n(88210, {	-- Krud the Eviscerator
 					["description"] = "|cff66ccffKill 15 mobs near him to make him attackable.|r",
 					["questID"] = 37398,
-					["isDaily"] = true,								
+					["isDaily"] = true,
 					["coord"] = { 58.2, 12.0, 550 },
 					["g"] = {
 						i(119384),	-- Krud's Girthy Girdle
@@ -207,7 +216,7 @@ _.Zones =
 					["g"] = {
 						i(116661),		-- Mottled Meadowstomper (MOUNT!)
 					},
-				}), 
+				}),
 				n(83643, {	-- Malroc Stonesunder
 					["questID"] = 35932,
 					["coord"] = { 81.2, 60.0, 550 },
@@ -248,22 +257,22 @@ _.Zones =
 						{ 42.0, 50.2, 550 },
 						{ 45.4, 47.4, 550 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(116765),	-- Positive Pantaloons
 					},
-				}), 
+				}),
 				n(83680, {	-- Outrider Duretha
 					["questID"] = 35943,
 					["coord"] = { 61.8, 69.0, 550 },
-					["g"] = {	
+					["g"] = {
 						i(116800),	-- Duretha's Trail Boots
 					},
 				}),
 				n(88208, {	-- Pit Beast
 					["questID"] = 37637,
-					["isDaily"] = true,							
+					["isDaily"] = true,
 					["coord"] = { 58.2, 18.4, 550 },	-- **Coords uncofirmed, relied on wowhead**
-					["g"] = {	
+					["g"] = {
 						i(120317),	-- Pristine Hide of the Pit Beast
 					},
 				}),
@@ -292,14 +301,14 @@ _.Zones =
 				n(82755, {	-- Redclaw the Feral
 					["questID"] = 35712,
 					["coord"] = { 73.6, 57.8, 550 },
-					["g"] = {	
+					["g"] = {
 						i(118243),	-- Redclaw's Gutripper
 					},
 				}),
 				n(83526, {	-- Ru'klaa
 					["questID"] = 35900,
 					["coord"] = { 58.0, 83.9, 550 },
-					["g"] = {	
+					["g"] = {
 						i(118688),	-- Carapace Shell Shoulders
 					},
 				}),
@@ -315,12 +324,13 @@ _.Zones =
 				n(83634, {	-- Scout Pokhar
 					["questID"] = 35931,
 					["coord"] = { 54.8, 61.2, 550 },
-					["g"] = {	
+					["g"] = {
 						i(116797),	-- Pokhar's Eighth Axe
 					},
 				}),
 				n(83542, {	-- Sean Whitesea
 					["questID"] = 35912,
+					["crs"] = { 83559 },	-- Highwayman
 					["coord"] = { 60.9, 47.78, 550 },
 					["description"] = "Spawns after abandoned chest is looted.",
 					["g"] = {
@@ -330,14 +340,14 @@ _.Zones =
 				n(80057, {	-- Soulfang
 					["questID"] = 36128,
 					["coord"] = { 75.6, 65.2, 550 },
-					["g"] = {	
+					["g"] = {
 						i(116806),	-- Soul Fang
 					},
 				}),
 				n(83591, {	-- Tura'aka
 					["questID"] = 35920,
 					["coord"] = { 65.0, 39.2, 550 },
-					["g"] = {	
+					["g"] = {
 						i(116814),	-- Tura'aka's Clipped Wing
 					},
 				}),
@@ -359,14 +369,14 @@ _.Zones =
 				n(79024, {	-- Warmaster Blugthol
 					["questID"] = 34645,
 					["coord"] = { 82.6, 76.2, 550 },
-					["g"] = {	
+					["g"] = {
 						i(116805),	-- Blug'thol's Bloody Bracers
 					},
 				}),
 				n(83428, {	-- Windcaller Korast
 					["questID"] = 35877,
 					["coord"] = { 70.6, 29.6, 550 },
-					["g"] = {	
+					["g"] = {
 						i(116808),	-- Whirlwind's Harvest
 					},
 				}),

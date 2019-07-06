@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			n(-17, { 	-- Quests
+			n(-17, {	-- Quests
 				garrisonBuilding(10,  {	-- Dwarven Bunker (rank 1: 8, rank 2: 9, rank 3: 10)
 					q(37092, {	-- Scraps of Iron
 						["qg"] = 77377,	-- Kristen Stoneforge
@@ -1763,13 +1763,13 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				garrisonBuilding(51, {	-- Storehouse
+				garrisonBuilding(51,  {	-- Storehouse
 					q(37087, {	-- Lost in Transition
 						["qg"] = 84857,	-- Kyra Goldhands
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				garrisonBuilding(90, {	-- The Tannery
+				garrisonBuilding(90,  {	-- The Tannery
 					q(36642, {	-- Your First Leatherworking Work Order
 						["qg"] = 77383,	-- Anders Longstitch
 						["races"] = ALLIANCE_ONLY,
@@ -1815,7 +1815,7 @@ _.ExpansionFeatures =
 						})),
 					}),
 				}),
-				n(-152, {	-- Garrison Campaign
+				n(-152,  {	-- Garrison Campaign
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(34026, {	-- Garrison Campaign: Seismic Matters
@@ -1860,7 +1860,7 @@ _.ExpansionFeatures =
 						garrisonBuilding(205),	-- Shipyard lvl 1
 					},
 				}),
-				q(34653,  {	-- Arakkoa Exodus
+				q(34653, {	-- Arakkoa Exodus
 					["sourceQuests"] = { 35554 },	-- News from Spires of Arak
 					["isBreadcrumb"] = true,
 					["coord"] = { 37.8, 36.8, 582 },
@@ -1903,7 +1903,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				q(37667,  {	-- Building For Professions - alternate version that was never used
+				q(37667, {	-- Building For Professions - alternate version that was never used
 					["u"] = 1,
 				}),
 				q(36100, {	-- Building For Professions
@@ -1925,7 +1925,7 @@ _.ExpansionFeatures =
 					["qg"] = 77209,	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(35988,  {	-- Call of the Archmage
+				q(35988, {	-- Call of the Archmage
 					["qg"] = 83858,	-- Khadgar's Servant
 					["u"] = 40,
 				}),
@@ -2055,7 +2055,7 @@ _.ExpansionFeatures =
 						{ 41.5, 44.9, 582 },	-- lvl 2/3 garrison
 					},
 				}),
-				n(89763,  {	-- Muradin Bronzebeard
+				n(89763, {	-- Muradin Bronzebeard
 					["coord"] = { 34.1, 32.6, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
@@ -2456,6 +2456,23 @@ _.ExpansionFeatures =
 					["qg"] = 77209,	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(34674, {	-- Taking the Fight to Nagrand
+					["lvl"] = 98,
+					["coord"] = { 42.8, 45.2, 582 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					--["objectID"] = 232397,	-- Bulletin Board
+				}),
+				q(37184, {	-- Taking the Fight to Nagrand
+					["qg"] = 81492,	-- Bodrick Grey
+					["lvl"] = 98,
+					["coord"] = { 38.2, 37.0, 582 },	-- garrison lvl 3
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						36601,	-- News From Nagrand (Shadow-sage Iskar)
+						36606,	-- News From Nagrand (Lieutenant Willem)
+					},
+				}),
 				q(35556, {	-- The Secrets of Gorgrond
 					["isBreadcrumb"] = true,
 					["lvl"] = 92,
@@ -2489,7 +2506,7 @@ _.ExpansionFeatures =
 						92223,	-- Surveyor Daltry
 					},
 				}),
-				q(37941,  {	-- Treasure Contract: The Infected Orc
+				q(37941, {	-- Treasure Contract: The Infected Orc
 					["isDaily"] = true,
 					["qgs"] = {
 						89793,	-- Harrison Jones

@@ -2517,6 +2517,18 @@ _.ExpansionFeatures =
 							{ 48.67, 52.21, 590 },	-- Tier 3 Garrison
 						},
 					},
+					q(34794, {	-- Taking the Fight to Nagrand
+						["lvl"] = 98,
+						["qg"] = 78487,	-- Rokhan
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(36952, {	-- Taking the Fight to Nagrand
+						["lvl"] = 98,
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						--["objectID"] = 232416,	-- Command Board (237022 extra object, same name)
+					}),
 					{	-- The Mysterious Flask	-- depends on alchemy lab and/or alchemy profession?
 						["questID"] = 35058,
 						["races"] = HORDE_ONLY,

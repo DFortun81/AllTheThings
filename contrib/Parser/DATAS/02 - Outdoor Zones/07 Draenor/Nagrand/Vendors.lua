@@ -10,7 +10,7 @@ _.Zones =
 					["coord"] = { 50.4, 41.4, 550 },
 					["g"] = {
 						currency(823, {	-- Apexis Crystal
-							["groups"] = {
+							["g"] = {
 								i(119149),	-- Captured Forest Sproutling
 								i(116672),	-- Domesticated Razorback
 								i(119148),	-- Indentured Albino River Calf

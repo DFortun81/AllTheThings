@@ -6,6 +6,23 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(550, {	-- Nagrand
 			n(-212, {	-- Treasure Chest
+				--[[
+				Note: These objects have known flags to mark completion but they never seem to fire.
+					  The coords have been added to the "Abu'gar" quest instead.
+				o(233157, {	-- Abu'gar's Vitality
+					["questID"] = 35711,
+					["coord"] = { 65.8, 61.1, 550 },
+				}),
+				o(233506, {	-- Abu'gar's Missing Reel
+					["questID"] = 36089,
+					["coord"] = { 85.4, 38.7, 550 },
+				}),
+				o(233642, {	-- Abu'Gar's Favorite Lure
+					["questID"] = 36072,
+					["coord"] = { 38.4, 49.3, 550 },
+					["description"] = "Hidden behind some reeds by the bridge.",
+				}),
+				]]--
 				o(233206, {	-- Abandoned Cargo
 					["questID"] = 35759,
 					["coord"] = { 67.6, 59.8, 550 },
@@ -389,6 +406,7 @@ _.Zones =
 				o(232406, {	-- Adventurer's Pack
 					["questID"] = 35597,
 					["coord"] = { 69.9, 52.5, 550 },
+					["description"] = "Hanging in a tree.",
 					["g"] = {
 						-- Weapons
 						i(116627),	-- Howling Axe
@@ -516,8 +534,8 @@ _.Zones =
 					["modelID"] = 32854,
 					["coords"] = {
 						{ 56.4, 61.8, 550 },	-- Cave Entrance
-						{ 64.2, 37.9, 550 },	-- Start of Ramp
-						{ 65.8, 57.6, 550 },	-- Pouch
+						{ 64.2, 37.9, 553 },	-- Start of Ramp
+						{ 65.8, 57.6, 553 },	-- Pouch
 					},
 					["g"] = {
 						-- Weapons
@@ -1042,6 +1060,27 @@ _.Zones =
 						i(117981),	-- Fragment of Oshu'gun
 					},
 				}),
+				o(233134, {	-- Golden Kaliri Egg
+					["questID"] = 35694,
+					["coord"] = { 58.3, 52.5, 550 },
+					["g"] = {
+						i(118266),	-- Golden Kaliri Egg
+					},
+				}),
+				o(233626, {	-- Grizzlemaw's Bonepile
+					["questID"] = 36051,
+					["coord"] = { 87.1, 72.9, 550 },
+					["g"] = {
+						i(118054),	-- Discarded Bone x10
+					},
+				}),
+				o(232986, {	-- Hidden Stash
+					["questID"] = 35622,
+					["coord"] = { 87.6, 45.0, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(233611, {	-- Highmaul Sledge
 					["questID"] = 36039,
 					["coord"] = { 67.3, 49.0, 550 },
@@ -1210,7 +1249,7 @@ _.Zones =
 				}),
 				o(232590, {	-- Void-Infused Crystal
 					["questID"] = 35579,	
-					["coord"] = { 50.0, 66.5, 550 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 50.0, 66.5, 550 },
 					["g"] = {
 						i(118264),	-- Serrated Void Crystal
 					},

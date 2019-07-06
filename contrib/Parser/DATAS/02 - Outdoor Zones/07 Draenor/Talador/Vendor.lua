@@ -24,7 +24,8 @@ _.Zones =
 				}),
 				n(84216, {	-- Talgaiir the Ironrender
 					["description"] = "This vendor is only available until you reach level 100. Items are also available from Big Zokk Torquewrench in Area 52. Items require Legionnaire/Knight-Captain or higher to purchase. |r",
-					["coord"] = { 45.6, 38.6, 535 },					["g"] = {
+					["coord"] = { 45.6, 38.6, 535 },
+					["g"] = {
 						un(4, a(i(77596))),	-- Replica Grand Marshal's Aegis
 						un(4, a(i(77563))),	-- Replica Grand Marshal's Battle Hammer
 						un(4, a(i(77565))),	-- Replica Grand Marshal's Bullseye
@@ -78,9 +79,9 @@ _.Zones =
 						i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
 					},
 				}),
-				n(86949, {	-- Zooti Fizzlefury 
+				n(86949, {	-- Zooti Fizzlefury
 					["coord"] = { 85.0, 31.0, 535 },
-					["g"] = { 
+					["g"] = {
 						currency(1191, {	-- Valor
 							un(2, i(127785)),	-- Crystallized Fel
 						}),

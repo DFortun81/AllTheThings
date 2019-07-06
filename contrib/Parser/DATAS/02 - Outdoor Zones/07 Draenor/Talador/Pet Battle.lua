@@ -13,6 +13,7 @@ _.Zones =
 					["crs"] = { 88385 },	--  Brilliant Bloodfeather
 				}),
 				p(1589, {	-- Crimsonwing Moth
+					["crs"] = { 88413 },	-- Crimsonwing Moth
 					["description"] = "Only one is up at a time.  Once captured or killed, it immediately respawns.",
 					["coords"] = {
 						{ 32.4, 63.6, 535 },
@@ -50,7 +51,6 @@ _.Zones =
 						{ 74.0, 32.2, 535 },
 						{ 75.0, 17.8, 535 },
 					},
-					["crs"] = { 88413 },	-- Crimsonwing Moth
 				}),
 				p(1595, {	--  Flat-Tooth Calf
 					["crs"] = { 88572 },	--  Flat-Tooth Calf
