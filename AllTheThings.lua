@@ -11246,9 +11246,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							end
 						end
 						if spellRecipeInfo.learned then
-							if spellRecipeInfo.disabled and GetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, nil);
-								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, nil);
+							if spellRecipeInfo.disabled then
+								if GetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+									SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, nil);
+									SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, nil);
+								end
 							else
 								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
 								if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
