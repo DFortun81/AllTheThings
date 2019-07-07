@@ -106,17 +106,17 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28966),	-- Voidheart Leggings
 					}),
 					i(28794),	-- Axe of the Gronn Lords
-					un(45, i(28802)),	-- Bloodmaw Magus-Blade		-- Note!! No solid leads as of 7.3.5 - 8.0
+					i(28802),	-- Bloodmaw Magus-Blade				-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
 					i(28825),	-- Aldori Legacy Defender
-					un(45, i(28804)),	-- Collar of Cho'gall		-- Note!! No solid leads as of 7.3.5 - 8.0
-					un(45, i(28803)),	-- Cowl of Nature's Breath	-- Note!! No solid leads as of 7.3.5 - 8.0
-					un(45, i(28822)),	-- Teeth of Gruul
+					i(28804),	-- Collar of Cho'gall				-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
+					i(28803),	-- Cowl of Nature's Breath			-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
+					i(28822),	-- Teeth of Gruul					-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
 					i(28824),	-- Gauntlets of Martial Perfection
 					i(28827),	-- Gauntlets of the Dragonslayer
 					i(28828),	-- Gronn-Stitched Girdle
-					un(45, i(28810)),	-- Windshear Boots
+					i(28810),	-- Windshear Boots					-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
 					i(28830),	-- Dragonspine Trophy
-					un(45, i(28823)),	-- Eye of Grull
+					i(28823),	-- Eye of Grull						-- Confirmed by Crieve, 2019-07-07. Was Unobtainable since 7.3.5
 				},
 			})
 		},

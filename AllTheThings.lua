@@ -9314,6 +9314,14 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 						return true;
 					end,
 				},
+				app.CreateInstance(746, {	-- Gruul's Lair
+					['description'] = "Gruul's Lair has been hotfixed! All of the items previously marked Unobtainable from Gruul the Dragonkiller have been fixed and confirmed as dropping once again!",
+					['isRaid'] = true,
+					['visible'] = true, 
+					['OnUpdate'] = function(data) 
+						data.visible = true;
+					end,
+				}),
 				app.CreateInstance(745, { 	-- Karazhan (Raid)
 					['description'] = "The reward chest for completing the Chess Event in Karazhan is currently not interactable since 8.2. All items found within it are now considered Unobtainable.",
 					['isRaid'] = true,
@@ -9330,18 +9338,6 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 						app.CreateItemSource(12697, 28746),	-- Fiend Slayer Boots
 						app.CreateItemSource(12703, 28752),	-- Forestlord Striders
 						app.CreateItem(28753),	-- Ring of Recurrence
-					},
-				}),
-				app.CreateInstance(746, {	-- Gruul's Lair
-					['description'] = "A number of items that used to drop from Gruul the Dragonkiller no longer drop at all.\n\nIt is believed that the transition to Legacy Loot Mode broke these items.",
-					['isRaid'] = true,
-					['g'] = {
-						app.CreateItemSource(12738, 28802),	-- Bloodmaw Magus-Blade
-						app.CreateItemSource(12740, 28804),	-- Collar of Cho'gall
-						app.CreateItemSource(12739, 28803),	-- Cowl of Nature's Breath
-						app.CreateItemSource(12746, 28810),	-- Windshear Boots
-						app.CreateItem(28822),	-- Teeth of Gruul
-						app.CreateItem(28823),	-- Eye of Grull
 					},
 				}),
 				app.CreateInstance(228, {	-- Blackrock Depths
