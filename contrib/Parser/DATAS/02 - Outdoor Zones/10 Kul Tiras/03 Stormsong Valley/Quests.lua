@@ -821,19 +821,35 @@ _.Zones =
 						i(160380),	-- Dread Corsair Warbelt
 					},
 				}),
-				a(q(50694)),	-- A Bloody Mess
-				a(q(50705)),	-- A Snake with Three Heads
-				un(1, q(50132)),	-- A Sticky Proposition
+				q(50694, {	-- A Bloody Mess
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50705, {	-- A Snake with Three Heads
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50132, {	-- A Sticky Proposition (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
 				q(49832, {	-- An Illegible Scroll (breadcrumb per wowhead comments)
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 32.2, 40.0, 942 },
 					["isBreadcrumb"] = true,
 				}),
-				a(q(51354)),	-- Anger in a Bottle
-				a(q(50672)),	-- Any Ammo Will Do
-				a(q(51205)),	-- Aww, Rats!
-				a(q(49908)),	-- Back to Brennadam
-				a(q(51251)),	-- Basement Dwellers
+				q(51354, {	-- Anger in a Bottle
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50672, {	-- Any Ammo Will Do
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51205, {	-- Aww, Rats!
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49908, {	-- Back to Brennadam
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51251, {	-- Basement Dwellers
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(51386, {	-- Battle Victorious
 					i(160335),	-- Tidespeaker Soles
 					i(160338),	-- Darkwater Waders
@@ -844,8 +860,12 @@ _.Zones =
 					i(160379),	-- Stormchaser Buckle
 					i(160382), -- Dread Corsair Cincture
 				}),
-				a(q(52070)),	-- Bauer Backup
-				a(q(51214)),	-- Be A Dear
+				q(52070, {	-- Bauer Backup
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51214, {	-- Be A Dear
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(51545),	-- Breaker Bad
 				q(51159, {	-- Bring out the Big Gun
 					["qg"] = 136481,	-- Cannon
@@ -858,8 +878,12 @@ _.Zones =
 					["qg"] = 131793,	-- Ancel Mildenhall
 					["description"] = "First obtain an Annealed Honey Amulet from mobs in the Mildenhall Meadery area in Stormsong Valley.  Give the amulet to Rosaline Mildenhall in Boralus.  She will give you a letter.  Give the letter to Ancel Mildenhall, and this questline will then become available.",
 				},
-				a(q(51728)),	-- Burn It All Down
-				a(q(50621)),	-- Caught in the Net
+				q(51728, {	-- Burn It All Down
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50621, {	-- Caught in the Net
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(51353),	-- Cave of Ai'twen
 				q(51339, {	-- Cleaning Bills
 					i(155237),	-- Nola's Shawl
@@ -868,22 +892,48 @@ _.Zones =
 					i(160390),	-- Stormchaser Wristguards
 					i(160393),	-- Dread Corsair Wristguards
 				}),
-				a(q(50706)),	-- Clearing the Delta
-				un(1, q(51110)),	-- Clearing the Skies (looks like this never made it out of beta)
-				a(q(51504)),	-- Cookie Delivery
-				a(q(51335)),	-- Cookies and Cream
-				a(q(51203)),	-- Cry Wolf
-				a(q(52130)),	-- Deadliest Cache: Carpe Diem
-				a(q(50391)),	-- Deadliest Cache: Gun Fishin'
-				a(q(50376)),	-- Deadliest Cache: Reel Big Fish
-				a(q(50418)),	-- Deadliest Cache: Sink and Swim
+				q(50706, {	-- Clearing the Delta
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51110, {	-- Clearing the Skies (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(51504, {	-- Cookie Delivery
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51335, {	-- Cookies and Cream
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51203, {	-- Cry Wolf
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(52130, {	-- Deadliest Cache: Carpe Diem
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50391, {	-- Deadliest Cache: Gun Fishin'
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50376, {	-- Deadliest Cache: Reel Big Fish
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50418, {	-- Deadliest Cache: Sink and Swim
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(51220),	-- Deep Sea Venture
 				q(53097),	-- Despondent Ablutions
-				un(1, q(51066)),	-- Destroy Mine Carts (looks like this never made it out of beta)
-				un(1, q(50285)),	-- Don't Be Crabby (looks like this never made it out of beta)
+				q(51066, {	-- Destroy Mine Carts (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(50285, {	-- Don't Be Crabby (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
 				q(51352),	-- Don't Play with Matches
-				un(1, q(51756)),	-- Economic Downturn (looks like this never made it out of beta)
-				a(q(50645)),	-- Eeling in a Big One
+				q(51756, {	-- Economic Downturn (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(50645, {	-- Eeling in a Big One
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(51207, {	-- Ettin It Done
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -897,14 +947,26 @@ _.Zones =
 						i(160392),	-- Dread Corsair Armguards
 					},
 				}),
-				un(1, q(49732)),	-- Evacuate! (looks like this never made it out of beta)
+				q(49732, {	-- Evacuate! (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
 				q(51540),	-- Explosive Situation
-				a(q(51712)),	-- Eye for an Eye
-				a(q(50644)),	-- Facing the Invaders
-				un(1, q(51750)),	-- Field Promotions (looks like this never made it out of beta)
-				a(q(50649)),	-- Filching from Thieves
+				q(51712, {	-- Eye for an Eye
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50644, {	-- Facing the Invaders
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51750, {	-- Field Promotions (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(50649, {	-- Filching from Thieves
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(51371),	-- Flavorable Offering
-				a(q(50614)),	-- Freedom for the Sea
+				q(50614, {	-- Freedom for the Sea
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(49831, {	-- From the Depths
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -918,11 +980,20 @@ _.Zones =
 						i(155212),	-- Zeth'jir Tidemaiden Scepter
 					},
 				}),
-				a(q(51726)),	-- Get Out of Here
-				a(q(51720)),	-- Get Shredded
-				un(1, i(160897, {	-- Grizz's Lunchbox (poosible this did not make it out of beta, cannot find info on where item is found but is linked to assoicated quest on wowpedia)
-					un(1, q(51883)),	-- Grizz's Lunch
-				})),
+				q(51726, {	-- Get Out of Here
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51720, {	-- Get Shredded
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(160897, {	-- Grizz's Lunchbox (poosible this did not make it out of beta, cannot find info on where item is found but is linked to assoicated quest on wowpedia)
+					["u"] = 1,
+					["g"] = {
+						q(51883, {	-- Grizz's Lunch
+							["u"] = 1,
+						}),
+					},
+				}),
 				q(51752, {	-- Grizzled
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -951,12 +1022,16 @@ _.Zones =
 						i(160359),	-- Tidespeaker Pantaloons
 					},
 				},
-				a(q(51711)),	-- Having a Blast
+				q(51711, {	-- Having a Blast
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(52068, {	-- Helping Out, Somewhere Else (appears to be a breadcrumb based on wowpedia)
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				un(1, q(50060)),	-- Honey, Slimes! (looks like this never made it out of beta)
+				q(50060, {	-- Honey, Slimes! (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
 				{	-- I like Turtles
 					["questID"] = 51427,	-- I like Turtles
 					["qg"] = 137453,	-- Loroja <Watcher of Ai'twen>
@@ -969,7 +1044,9 @@ _.Zones =
 						i(160349),	-- Tidespeaker Mittens
 					},
 				},
-				un(1, q(51557)),	-- Irontide Warning (possible this did not make it out or beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
+				q(51557, {	-- Irontide Warning (possible this did not make it out or beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
+					["u"] = 1,
+				}),
 				{	-- Let's Bee Friends
 					["questID"] = 53371,
 					["races"] = ALLIANCE_ONLY,
@@ -978,20 +1055,40 @@ _.Zones =
 					["sourceQuest"] = 53347,	-- Bumbles the Bee
 					["description"] = "Complete this daily quest 7 times to receive the Bumbles pet in your mailbox.",
 				},
-				a(q(53369)),	-- Make Loh Go
-				un(1, q(50383)),	-- Mankrik's Wrath (looks like this never made it out of beta)
-				a(q(51209)),	-- Mighty Grokkfist
-				a(q(51215)),	-- Milking Goats
-				un(1, q(51202)),	-- Millstone Hamlet Quest Template (looks like this never made it out of beta)
+				q(53369, {	-- Make Loh Go
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50383, {	-- Mankrik's Wrath (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(51209, {	-- Mighty Grokkfist
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51215, {	-- Milking Goats
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51202, {	-- Millstone Hamlet Quest Template (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
 				q(52069, {	-- More Fodder (noted as breadcrumb on wowhead have not sourced any further)
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				un(1, q(50815)),	-- Orcs Versus Humans (looks like this never made it out of beta)
-				a(q(50679)),	-- Piercing the Shield
-				un(1, q(50907)),	-- Poor Souls (looks like this never made it out of beta)
-				un(1, q(51724)),	-- Powered Up (looks like this never made it out of beta)
-				a(q(50698)),	-- Problem Solving with Gunpowder
+				q(50815, {	-- Orcs Versus Humans (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(50679, {	-- Piercing the Shield
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50907, {	-- Poor Souls (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(51724, {	-- Powered Up (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(50698, {	-- Problem Solving with Gunpowder
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50653, {	-- Reclaiming our Defenses
 					["qg"] = 131003,	-- Specialist Wembley
 					["races"] = ALLIANCE_ONLY,
@@ -1003,35 +1100,71 @@ _.Zones =
 						i(160334),	-- Tidespeaker Footwraps
 					},
 				}),
-				un(1, q(49742)),	-- Respect Your Elders (looks like this never made it out of beta)
+				q(49742, {	-- Respect Your Elders (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
 				q(51221),	-- Response Required
-				un(1, q(50816)),	-- Roarke's Missing (looks like this never made it out of beta)
-				a(q(51723)),	-- Saw Dusted
-				un(1, q(51334)),	-- Securing The Square (looks like this never made it out of beta)
-				un(1, q(49743)),	-- Shoot First, Questions Later (looks like this never made it out of beta)
+				q(50816, {	-- Roarke's Missing (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(51723, {	-- Saw Dusted
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51334, {	-- Securing The Square (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(49743, {	-- Shoot First, Questions Later (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
 				q(53045, {	-- Surveying the Wharf  (appears to be a breadcrumb based on wowpedia)
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(51343),	-- Swimming Lessons
-				a(q(51200)),	-- The Black Sheep
-				un(1, q(50743)),	-- The Immediate Problem (possible this did not make it out or beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
-				a(q(51881)),	-- The Mine Sweeper
-				a(q(50635)),	-- The Shifting Tides
-				a(q(51218)),	-- Undelivered Package
+				q(51200, {	-- The Black Sheep
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50743, {	-- The Immediate Problem (possible this did not make it out or beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
+					["u"] = 1,
+				}),
+				q(51881, {	-- The Mine Sweeper
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50635, {	-- The Shifting Tides
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51218, {	-- Undelivered Package
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(50956, {	-- Walking-Around Money
 					["qg"] = 134720,	-- Leo Shealds
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 				}),
-				a(q(51204)),	-- WANTED: Razorclaw Alpha
-				h(q(53330)),	-- WANTED: Razorclaw Alpha
-				h(q(53348)),	-- WANTED: Thundersnout
-				a(q(52876)),	-- WANTED: War Gore
-				un(1, q(51708)),	-- Warfang Hold Quest Template (looks like this never made it out of beta)
-				a(q(51222)),	-- What's Yours is Mined
-				a(q(51208)),	-- Wheat A Minute
-				a(q(50773)),	-- You're a Shark
+				q(51204, {	-- WANTED: Razorclaw Alpha
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53330, {	-- WANTED: Razorclaw Alpha
+					["races"] = HORDE_ONLY,
+				}),
+				q(53348, {	-- WANTED: Thundersnout
+					["races"] = HORDE_ONLY,
+				}),
+				q(52876, {	-- WANTED: War Gore
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51708, {	-- Warfang Hold Quest Template (looks like this never made it out of beta)
+					["u"] = 1,
+				}),
+				q(51222, {	-- What's Yours is Mined
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(51208, {	-- Wheat A Minute
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50773, {	-- You're a Shark
+					["races"] = ALLIANCE_ONLY,
+				}),
 			}),
 		}),
 	}),

@@ -157,6 +157,10 @@ _.Zones =
 						["coord"] = { 30.04, 40.55, 896 },
 						["collectible"] = false,
 					}),
+					q(51909, {	-- Grozgore
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51604, {	-- Hunters Hunted [Alliance]
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

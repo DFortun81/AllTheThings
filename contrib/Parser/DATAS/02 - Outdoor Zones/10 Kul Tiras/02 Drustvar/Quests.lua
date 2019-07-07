@@ -930,7 +930,7 @@ _.Zones =
 				qa(48793, {	-- The Adventurer's Society
 					["qg"] = 127015,	-- Thaddeus "Gramps" Rifthold
 					["coord"] = { 53.9, 27.0, 896 },
-					["sourceQuests"] = { 48948 },	-- The North Pass Caverns
+					["sourceQuests"] = { 47982, 47948 },	-- The Final Effigy, The North Pass Caverns
 				}),
 				qa(48198, {	-- The Burden of Proof
 					["g"] = {
@@ -1019,6 +1019,7 @@ _.Zones =
 				qa(48948, {	-- The North Pass Caverns
 					["qg"] = 128457,	-- Maude Rifthold
 					["coord"] = { 55.1, 35.1, 896 },
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 47982 },	-- The Final Effigy
 				}),
 				qa(48946, {	-- The Order of Embers

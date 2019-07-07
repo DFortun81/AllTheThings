@@ -29,6 +29,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51444, { 	-- Azerite Empowerment
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52877, {	-- Azerite Mining
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -151,6 +155,11 @@ _.Zones =
 						["groups"] = {
 							i(160509), 	-- Echoes of Rezan (TOY!)
 						},
+					}),
+					q(51821, { 	-- Quelling the Cove
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 					q(51816, {	-- Pterrible Ingredients
 						["lvl"] = 120,

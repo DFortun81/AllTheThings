@@ -165,6 +165,11 @@ _.Zones =
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
+					q(51820, {	-- Oily Mess
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52939, {	-- Ordnance Orders [Alliance]
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -184,6 +189,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52979, {	-- Ritual Cleansing
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52164, {	-- Rum- Paaaage!
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -265,6 +275,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52452, {	-- Song Mistress Dadalea
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52322, {	-- Taja the Tidehowler
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

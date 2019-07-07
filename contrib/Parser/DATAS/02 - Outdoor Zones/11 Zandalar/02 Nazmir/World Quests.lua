@@ -16,6 +16,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(50488, {	-- Ancient Jawbreaker
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54684, {	-- Arcanist Quintril (Incursion WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -130,6 +134,10 @@ _.Zones =
 							ach(13023),	-- It's Really Getting Out of Hand
 						},
 					}),
+					q(50498, {	-- Gutrip
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50499, {	-- Gwugnug
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -184,6 +192,10 @@ _.Zones =
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
+					q(51548, {	-- Nagative Feedback
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52799, {	-- Pack Leader
 						["qg"] = 141799,	-- Grady Prett
 						["lvl"] = 120,
@@ -231,6 +243,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51628, {	-- Shell Game
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50468, {	-- Shul-Nagruth
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

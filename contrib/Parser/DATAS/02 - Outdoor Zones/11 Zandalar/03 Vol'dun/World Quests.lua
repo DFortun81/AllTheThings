@@ -86,6 +86,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51121, {	-- Enraged Krolusk
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51792, {	-- Erupting Totem Testing
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -146,6 +150,10 @@ _.Zones =
 						["groups"] = {
 							i(165605),  -- Azsharan Medallion
 						},
+					}),
+					q(51103, {	-- Nez'ara
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 					q(53300, {	-- Overgrown Anchor Weed
 						["lvl"] = 120,

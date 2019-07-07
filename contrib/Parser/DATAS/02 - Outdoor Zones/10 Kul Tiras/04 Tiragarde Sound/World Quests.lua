@@ -7,6 +7,11 @@ _.Zones =
 		m(895, {	-- -- Tiragarde Sound
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
+					q(53812, {	-- A Carefully Laid Trap (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51385, {	-- A Supply of Stingers
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -17,6 +22,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52869, {	-- Azerite Empowerment [AH]
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51584, {	-- Azerite Madness
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -77,6 +86,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(53951, {	-- Explosive Relief (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(53278, {	-- Flourishing Riverbud
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -101,6 +115,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(53699, {	-- Gate Crashers (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51611, {	-- Ghost of the Deep
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -119,9 +138,18 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51245, {	-- I'm a Lumberjack and I'm Okay
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52760, {	-- Like a Fish in a Barrel
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51664, {	-- Kulett the Ornery
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51670, {	-- Lumberjack Sentinel
@@ -134,6 +162,11 @@ _.Zones =
 					}),
 					q(51632, {	-- Make Loh Go
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53726, {	-- Mechinations (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(53994, {	-- Naga Attack!
@@ -192,6 +225,11 @@ _.Zones =
 							ach(12087),	-- The Reining Champion
 						},
 					}),
+					q(53784, {	-- Siege Engineer Krackleboom (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51463, {	-- Sky Drop Rescue
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -223,6 +261,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51651, {	-- Squacks [AH]
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51839, {	-- Squirgle of the Depths
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
