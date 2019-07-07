@@ -788,6 +788,14 @@ _.Zones =
 					i(168850),	-- Time-Lost Battlefield Memento
 				},
 			}),
+			q(56001, {	-- Drunk Angry Murlocs
+				["qg"] = 153884,	-- King Mrgl-Mrgl
+				["coord"] = { 25.5, 26.5, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(170075),	-- Recipe: Unagi Skewer
+				},
+			}),
 			q(55569, {	-- Echoes of Pain
 				["sourceQuests"] = {	-- may not require other two, definitely requires *
 					55565,	-- Shoring Up Mana Reserves
