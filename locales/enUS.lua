@@ -2708,6 +2708,7 @@ AllTheThings.L = {
 		[233241] = "Glowing Cave Mushroom",
 		[233263] = GetSpellInfo(154253),		-- Blessing of the Wolf
 		[233391] = "Weaponization Orders",
+		[233452] = "A Pile of Dirt",
 		[233455] = "Aged Stone Container",
 		[233457] = "Adventurer's Staff",
 		[233492] = "Elemental Offering",

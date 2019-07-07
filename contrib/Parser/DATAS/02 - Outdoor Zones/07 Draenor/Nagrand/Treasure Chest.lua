@@ -23,6 +23,13 @@ _.Zones =
 					["description"] = "Hidden behind some reeds by the bridge.",
 				}),
 				]]--
+				o(233452, {	-- A Pile of Dirt
+					["questID"] = 35951,
+					["coord"] = { 73.1, 10.8, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(233206, {	-- Abandoned Cargo
 					["questID"] = 35759,
 					["coord"] = { 67.6, 59.8, 550 },

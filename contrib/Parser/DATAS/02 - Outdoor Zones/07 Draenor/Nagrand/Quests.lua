@@ -87,7 +87,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(35095, {	-- Along the Riverside
+					["qg"] = 80003,	-- Thrall
+					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34918,	-- Shields Down!
 					["isBreadcrumb"] = true,
 				}),
 				q(36193, {	-- An Act of Kindness
@@ -100,7 +103,10 @@ _.Zones =
 				q(34943, {	-- An Old Friend
 					["qg"] = 80595,	-- Kalandrios
 					["coord"] = { 72.7, 19.7, 550 },
-					["sourceQuest"] = 35331,	-- Called to the Throne
+					["sourceQuests"] = {
+						35331,	-- Called to the Throne (alliance)
+						34965,	-- Called to the Throne (horde)
+					},
 				}),
 				q(35169, {	-- And Justice for Thrall
 					["qg"] = 79576,	-- Rangari D'kaan
@@ -119,7 +125,14 @@ _.Zones =
 					},
 				}),
 				q(35171, {	-- And Justice for Thrall
+					["qg"] = 80003,	-- Thrall
+					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						34868,	-- Challenge of the Masters
+						35098,	-- Lok-rath is Secured
+						35158,	-- Reglakk's Research
+					},
 					["g"] = {
 						i(118156),	-- Coif of Grasping Earth
 						i(118154),	-- Grounded Headguard
@@ -158,7 +171,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(35922, {	-- Bread and Circuses
+					["qg"] = 83606,	-- Lucy Brokerblast
+					["coord"] = { 82.8, 46.8, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35098,	-- Lok-rath is Secured
 					["isBreadcrumb"] = true,
 				}),
 				q(35973, {	-- Brokyo Beatdown
@@ -176,7 +192,7 @@ _.Zones =
 					["qg"] = 80597,	-- Farseer Drek'Thar
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = HORDE_ONLY,
-					--["sourceQuest"] = ,	-- 
+					["sourceQuest"] = 34964,	-- The Farseer Awaits
 				}),
 				q(35141, {	-- Carrier Has Arrived
 					["qg"] = 81412,	-- Vindicator Yrel
@@ -217,7 +233,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(35170, {	-- Consumed by Vengeance
+					["qg"] = 82688,	-- Olgra
+					["coord"] = { 74.1, 37.5, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35167,	-- Lost in Nagrand
 				}),
 				q(35398, {	-- Dark Binding
 					["qg"] = 82179,	-- Vindicator Nobundo
@@ -226,7 +245,10 @@ _.Zones =
 					["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 				}),
 				q(35144, {	-- Dark Binding
+					["qg"] = 81335,	-- Farseer Drek'Thar
+					["coord"] = { 55.5, 55.9, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 				}),
 				q(34512, {	-- Declawing the Competition
 					["qg"] = 79310,	-- Pyxni Pennypocket
@@ -246,7 +268,10 @@ _.Zones =
 				}),
 				q(35083, {	-- Disrupt the Rituals
 					--["objectID"] = 233263,	-- Shamanstone
-					["sourceQuest"] = 35372,	-- The Call of Oshu'gun
+					["sourceQuests"] = {
+						35372,	-- The Call of Oshu'gun (alliance)
+						35232,	-- The Call of Oshu'gun (horde)
+					},
 					["coords"] = {
 						{ 55.4, 55.9, 550 },
 						{ 51.8, 58.8, 550 },
@@ -265,8 +290,10 @@ _.Zones =
 				q(34881, {	-- Earth, Wind and Fire...and Water
 					["qg"] = 80593,	-- Incineratus
 					["coord"] = { 71.3, 17.8, 550 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35331,	-- Called to the Throne
+					["sourceQuests"] = {
+						35331,	-- Called to the Throne (alliance)
+						34965,	-- Called to the Throne (horde)
+					},
 					["g"] = {
 						i(119066),	-- Seal of Falling Snow
 						i(119074),	-- Seal of Rumbling Earth
@@ -287,7 +314,10 @@ _.Zones =
 					["sourceQuest"] = 35331,	-- Called to the Throne
 				}),
 				q(34891, {	-- Elemental Attunement
+					["qg"] = 80597,	-- Farseer Drek'Thar
+					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34965,	-- Called to the Throne
 				}),
 				q(36221, {	-- Entry Fee
 					["qg"] = 84720,	-- Kroggol the Wall
@@ -367,8 +397,10 @@ _.Zones =
 				q(34893, {	-- Guardians of the Plateau
 					["qg"] = 80593,	-- Incineratus
 					["coord"] = { 71.3, 17.8, 550 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35331,	-- Called to the Throne
+					["sourceQuests"] = {
+						35331,	-- Called to the Throne (alliance)
+						34965,	-- Called to the Throne (horde)
+					},
 				}),
 				q(34932, {	-- Guise of the Deceiver
 					["qg"] = 80434,	-- Gar'rok
@@ -406,7 +438,10 @@ _.Zones =
 					["sourceQuests"] = { 36219, 36280, 36281, 36282 },	-- Garrison Campaign: The Ring of Blood (4 different versions... come on, blizzard)
 				}),
 				q(34915, {	-- I Help Ya Kill Dem
+					["qg"] = 80429,	-- Shadow Hunter Kajassa
+					["coord"] = { 68.5, 64.5, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34914,	-- Target of Opportunity
 				}),
 				q(35068, {	-- If They Won't Surrender...
 					["qg"] = 81097,	-- Lieutenant K. K. Lee
@@ -421,7 +456,10 @@ _.Zones =
 					},
 				}),
 				q(35100, {	-- If They Won't Surrender...
+					["qg"] = 81194,	-- Senior Sergeant Igerdes
+					["coord"] = { 55.4, 42.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35096,	-- Terms of Surrender
 					["g"] = {
 						i(118150),	-- Beastrider Bracers
 						i(118148),	-- Plainsthunder Bracers
@@ -436,7 +474,10 @@ _.Zones =
 					["sourceQuest"] = 35839,	-- Plans of War
 				}),
 				q(35846, {	-- Intercepting the Orders
+					["qg"] = 83054,	-- Shadow Hunter Kajassa
+					["coord"] = { 41.8, 37.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35845,	-- Plans of War
 				}),
 				q(34723, {	-- Ironfist Harbor (bonus objective)
 					["coord"] = { 40.0, 74.4, 550 },
@@ -477,7 +518,10 @@ _.Zones =
 					["sourceQuest"] = 35061,	-- The Pride of Lok-rath
 				}),
 				q(35098, {	-- Lok-rath is Secured
+					["qg"] = 81186,	-- Durotan
+					["coord"] = { 48.5, 48.2, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35097,	-- The Pride of Lok-rath
 				}),
 				q(35167, {	-- Lost in Nagrand
 					["qg"] = 72822,	-- Mankrik
@@ -655,6 +699,8 @@ _.Zones =
 					["sourceQuest"] = 34678,	-- Up and Running
 				}),
 				q(36290, {	-- Out of the Shadows
+					["qg"] = 84784,	-- Wodin the Troll-Servant
+					["coord"] = { 56.8, 13.0, 550 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(36289, {	-- Out of the Shadows
@@ -664,7 +710,10 @@ _.Zones =
 					["sourceQuest"] = 36222,	-- The Champion of Blood
 				}),
 				q(35845, {	-- Plans of War
+					["qg"] = 83054,	-- Shadow Hunter Kajassa
+					["coord"] = { 41.8, 37.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35844,	-- The Warlord's Council
 				}),
 				q(35839, {	-- Plans of War
 					["qg"] = 83053,	-- Flint Shadowmore
@@ -694,7 +743,10 @@ _.Zones =
 					["sourceQuest"] = 35840,	-- Intercepting the Orders
 				}),
 				q(35842, {	-- Putting Down the Packleader
+					["qg"] = 83054,	-- Shadow Hunter Kajassa
+					["coord"] = { 41.8, 37.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35846,	-- Intercepting the Orders
 				}),
 				q(35350, {	-- Queen of the Clefthoof
 					["qg"] = 82092,	-- Kia Herman
@@ -712,10 +764,7 @@ _.Zones =
 					["qg"] = 81144,	-- Rangari Eleena
 					["coord"] = { 84.0, 76.8, 550 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {
-						34572,	-- Obliterating Ogres
-						34593,	-- Obtaining Ogre Offensive Orders
-					},
+					["sourceQuest"] = 34593,	-- Obtaining Ogre Offensive Orders
 					["g"] = {
 						i(114911),	-- Mighty Gorian Cleaver
 						i(114912),	-- Mighty Gorian Greatsword
@@ -729,7 +778,10 @@ _.Zones =
 					},
 				}),
 				q(35158, {	-- Reglakk's Research
+					["qg"] = 81361,	-- Dalgorsh
+					["coord"] = { 83.7, 76.8, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35157,	-- Obtaining Ogre Offensive Orders
 					["g"] = {
 						i(114911),	-- Mighty Gorian Cleaver
 						i(114912),	-- Mighty Gorian Greatsword
@@ -766,7 +818,10 @@ _.Zones =
 					},
 				}),
 				q(35159, {	-- Removing the Reinforcements
+					["qg"] = 81361,	-- Dalgorsh
+					["coord"] = { 83.7, 76.8, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35157,	-- Obtaining Ogre Offensive Orders
 				}),
 				q(34665, {	-- Ring of Trials: Captain Boomspark
 					["qg"] = 79188,	-- Dexyl Deadblade
@@ -820,7 +875,14 @@ _.Zones =
 					},
 				}),
 				q(34918, {	-- Shields Down!
+					["qg"] = 80429,	-- Shadow Hunter Kajassa
+					["coord"] = { 68.5, 64.5, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						34915,	-- I Help Ya Kill Dem
+						34917,	-- Shields Up!
+						34916,	-- The Blessing of Samedi
+					},
 					["g"] = {
 						i(114707),	-- Beastrider Belt
 						i(114704),	-- Plainsthunder Girdle
@@ -829,6 +891,8 @@ _.Zones =
 					},
 				}),
 				q(34917, {	-- Shields Up!
+					["qg"] = 80451,	-- Rangari Keilnei
+					["coord"] = { 68.5, 64.5, 550 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35338, {	-- Shooting the Breeze
@@ -851,7 +915,10 @@ _.Zones =
 				}),
 				q(35084, {	-- Silence the Call
 					--["objectID"] = 233263,	-- Shamanstone
-					["sourceQuest"] = 35372,	-- The Call of Oshu'gun
+					["sourceQuests"] = {
+						35372,	-- The Call of Oshu'gun (alliance)
+						35232,	-- The Call of Oshu'gun (horde)
+					},
 					["coords"] = {
 						{ 55.4, 55.9, 550 },
 						{ 51.8, 58.8, 550 },
@@ -871,7 +938,10 @@ _.Zones =
 					["sourceQuest"] = 35060,	-- Terms of Surrender
 				}),
 				q(35099, {	-- Silence the War Machines
+					["qg"] = 81194,	-- Senior Sergeant Igerdes
+					["coord"] = { 55.4, 42.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35096,	-- Terms of Surrender
 				}),
 				i(113107, {	-- Rangari Arrow
 					["crs"] = { 78278 },	-- Breezestrider Talbuk
@@ -896,7 +966,10 @@ _.Zones =
 					["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 				}),
 				q(35231, {	-- Spiritual Matters
+					["qg"] = 81335,	-- Farseer Drek'Thar
+					["coord"] = { 55.5, 55.9, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 				}),
 				q(34914, {	-- Target of Opportunity: Telaar
 					["qg"] = 81189,	-- Aggra
@@ -940,7 +1013,10 @@ _.Zones =
 					["sourceQuest"] = 35060,	-- Terms of Surrender
 				}),
 				q(35101, {	-- Terror of Nagrand
+					["qg"] = 81195,	-- Fallen Horde Soldier
+					["coord"] = { 56.1, 43.7, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35096,	-- Terms of Surrender
 				}),
 				q(35140, {	-- THAELIN!
 					["qg"] = 81039,	-- Vindicator Yrel
@@ -989,6 +1065,8 @@ _.Zones =
 					["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
 				}),
 				q(34916, {	-- The Blessing of Samedi
+					["qg"] = 80429,	-- Shadow Hunter Kajassa
+					["coord"] = { 68.5, 64.5, 550 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(114687),	-- Beastrider Gloves
@@ -1010,7 +1088,10 @@ _.Zones =
 					["sourceQuest"] = 35330,	-- The Ritual of Binding
 				}),
 				q(35232, {	-- The Call of Oshu'gun
+					["qg"] = 80597,	-- Farseer Drek'Thar
+					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35265,	-- The Ritual of Binding
 				}),
 				q(36222, {	-- The Champion of Blood
 					["qg"] = 84784,	-- Wodin the Troll-Servant
@@ -1037,7 +1118,13 @@ _.Zones =
 					},
 				}),
 				q(35317, {	-- The Dark Heart of Oshu'gun
+					["qg"] = 81953,	-- Farseer Drek'Thar
+					["coord"] = { 46.0, 32.7, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						35144,	-- Dark Binding
+						35145,	-- The Pale Threat
+					},
 					["g"] = {
 						i(118126),	-- Void-Warped Oshu'gun Crossbow
 						i(118127),	-- Void-Warped Oshu'gun Dagger
@@ -1069,7 +1156,11 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(34964, {	-- The Farseer Awaits
+					["qg"] = 80003,	-- Thrall
+					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34918,	-- Shields Down!
+					["isBreadcrumb"] = true,
 				}),
 				q(35395, {	-- The Fate of Gordawg
 					["qg"] = 82181,	-- Vindicator Nobundo
@@ -1081,7 +1172,13 @@ _.Zones =
 					},
 				}),
 				q(34271, {	-- The Fate of Gordawg
+					["qg"] = 81953,	-- Farseer Drek'Thar
+					["coord"] = { 46.0, 32.7, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						35144,	-- Dark Binding
+						35145,	-- The Pale Threat
+					},
 				}),
 				q(34952, {	-- The Friend o' My Enemy
 					["qg"] = 79954,	-- Hansel Heavyhands
@@ -1175,7 +1272,10 @@ _.Zones =
 					["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 				}),
 				q(35145, {	-- The Pale Threat
+					["qg"] = 81335,	-- Farseer Drek'Thar
+					["coord"] = { 55.5, 55.9, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 				}),
 				q(35061, { 	-- The Pride of Lok-rath
 					["qg"] = 81086,	-- Uruk Foecleaver
@@ -1190,7 +1290,10 @@ _.Zones =
 					},
 				}),
 				q(35097, {	-- The Pride of Lok-rath
+					["qg"] = 81086,	-- Uruk Foecleaver
+					["coord"] = { 55.5, 42.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35096,	-- Terms of Surrender
 					["g"] = {
 						i(118142),	-- Beastrider Belt
 						i(118139),	-- Plainsthunder Waistguard
@@ -1216,7 +1319,15 @@ _.Zones =
 					},
 				}),
 				q(35265, {	-- The Ritual of Binding
+					["qg"] = 80597,	-- Farseer Drek'Thar
+					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						34891,	-- Elemental Attunement
+						34881,	-- Earth, Wind and Fire... and Water
+						34893,	-- Guardians of the Plateau
+						34941,	-- The Debt We Share
+					},
 					["g"] = {
 						i(114682),	-- Beastrider Vest
 						i(114680),	-- Plainsthunder Chestplate
@@ -1272,7 +1383,10 @@ _.Zones =
 					["sourceQuest"] = 35085,	-- Through the Nether
 				}),
 				q(35844, {	-- The Warlord's Council
+					["qg"] = 83052,	-- Shadow Hunter Zasta
+					["coord"] = { 49.8, 37.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35843,	-- Garrison Campaign: Deep Recon
 				}),
 				q(35838, {	-- The Warlord's Council
 					["qg"] = 83051,	-- Jeanine Amrell

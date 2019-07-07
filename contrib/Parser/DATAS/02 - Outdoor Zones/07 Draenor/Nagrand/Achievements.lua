@@ -120,13 +120,27 @@ _.Zones =
 						crit(1, {	-- The Might of Steel and Blood
 							["sourceQuest"] = 34899,	-- A Choice to Make
 						}),
-						crit(2),	-- The Ring of Trials
-						crit(3),	-- The Shadow of the Void
-						crit(4),	-- The Dark Heart of Oshu'gun
-						crit(5),	-- Remains of Telaar
-						crit(6),	-- Trouble at the Overwatch
-						crit(7),	-- The Taking of Lok-rath
-						crit(8),	-- The Legacy of Garrosh Hellscream
+						crit(2, {	-- The Ring of Trials
+							["sourceQuest"] = 34666,	-- Ring of Trials: Roakk the Zealot
+						}),
+						crit(3, {	-- The Shadow of the Void
+							["sourceQuest"] = 35088,	-- The Shadow of the Void
+						}),
+						crit(4, {	-- The Dark Heart of Oshu'gun
+							["sourceQuest"] = 35317,	-- The Dark Heart of Oshu'gun
+						}),
+						crit(5, {	-- Remains of Telaar
+							["sourceQuest"] = 34918,	-- Shields Down!
+						}),
+						crit(6, {	-- Trouble at the Overwatch
+							["sourceQuest"] = 35158,	-- Reglakk's Research
+						}),
+						crit(7, {	-- The Taking of Lok-rath
+							["sourceQuest"] = 35097,	-- The Pride of Lok-Rath
+						}),
+						crit(8, {	-- The Legacy of Garrosh Hellscream
+							["sourceQuest"] = 35171,	-- And Justice for Thrall
+						}),
 					},
 				}),
 				ach(9564,  {	-- Securing Draenor (Alliance)
