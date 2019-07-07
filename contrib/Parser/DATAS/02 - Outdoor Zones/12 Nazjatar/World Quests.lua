@@ -209,6 +209,7 @@ _.Zones =
 				["lvl"] = 120,
 			}),
 			q(56381, {	-- Prince Wiggletail
+				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
@@ -530,6 +531,15 @@ _.Zones =
 					i(169534),	-- Formula: Machinist's Brilliance (Rank 3)
 				},
 			}),
+			q(56821, {	-- Work Order: Enchant Weapon - Machinist's Brilliance (H)
+				["collectible"] = false,
+				["requireSkill"] = 333,	-- Enchanting
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(169534),	-- Formula: Machinist's Brilliance (Rank 3)
+				},
+			}),
 			q(56827, {	-- Work Order: Enchant Weapon - Naga Hide (A)
 				["collectible"] = false,
 				["requireSkill"] = 333,	-- Enchanting
@@ -546,6 +556,24 @@ _.Zones =
 				["lvl"] = 120,
 				["g"] = {
 					i(170213),	-- Formula: Naga Hide (Rank 3)
+				},
+			}),
+			q(56825, {	-- Work Order: Enchant Weapon - Oceanic Restoration (A)
+				["collectible"] = false,
+				["requireSkill"] = 333,	-- Enchanting
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(169536),	-- Formula: Oceanic Restoration (Rank 3)
+				},
+			}),
+			q(56819, {	-- Work Order: Enchant Weapon - Oceanic Restoration (H)
+				["collectible"] = false,
+				["requireSkill"] = 333,	-- Enchanting
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(169536),	-- Formula: Oceanic Restoration (Rank 3)
 				},
 			}),
 			q(56570, {	-- Work Order: Greater Flask of the Currents (A)

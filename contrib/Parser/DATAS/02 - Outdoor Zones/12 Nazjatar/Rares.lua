@@ -6,10 +6,9 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		n(-16, {	-- Rares
 			n(152415, { -- Alga the Eyeless
-				["allianceQuestID"] = 56604, 
-				["hordeQuestID"] = 56279,
+				["questID"] = 56279, 
 				["isDaily"] = true,
-				["coord"] = { 52.4, 41.9, 1355 },	-- coord as of build 30613
+				["coord"] = { 52.4, 41.9, 1355 },
 				["g"] = {
 					crit(1, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -255,6 +254,7 @@ _.Zones =
 			n(152553, {	-- Garnetscale
 				["questID"] = 56273,
 				["coords"] = {
+					{ 31.6, 35.5, 1355 },
 					{ 37.1, 47.5, 1355 },
 					{ 37.3, 40.3, 1355 },
 					{ 39.0, 57.0, 1355 },

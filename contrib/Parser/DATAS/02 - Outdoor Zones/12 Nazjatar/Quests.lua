@@ -418,11 +418,19 @@ _.Zones =
 				},
 			}),
 			q(55834, {	-- Bounty: More Fathom Rays
-				["qg"] = 153772,	-- Lina Bluegill
-				["coord"] = { 47.4, 63.2, 1355 },
-				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Save a Friend
+				["qgs"] = {
+					153772,	-- Lina Bluegill (Horde)
+					151772,	-- Ray Tamer Enaka (Alliance)
+				},
+				["coords"] = {
+					{ 39.8, 54.1, 1355 },	-- Alliance
+					{ 47.4, 63.2, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (Alliance)
+					55500,	-- Save a Friend (Horde)
+				},
 			}),
 			q(55829, {	-- Bounty: More Hydras
 				["isDaily"] = true,
@@ -689,39 +697,39 @@ _.Zones =
 					i(163878),	-- Honorbound Barrier
 				},
 			}),
-			q(54969, {	-- Descent
+			q(54969, {	-- Descent (A)
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 48.8, 89.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55095,	-- Upheaval
 			}),
-			q(54018, {	-- Descent
+			q(54018, {	-- Descent (H)
 				["qg"] = 150206,	-- Chief Telemancer Oculeth
 				["coord"] = { 36.6, 86.9, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55054,	-- Upheaval
 			}),
-			q(56164, {	-- Desperate Need
+			q(56164, {	-- Desperate Need (A)
 				["u"] = 1,
 				["qg"] = 151763,	-- Isla
 				["coord"] = { 37.7, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 154248,	-- A Tempered Blade
 			}),
-			q(56176, {	-- Desperate Need
+			q(56176, {	-- Desperate Need (H)
 				["u"] = 1,
 				["qg"] = 154208,	-- Jonah Lowtide
 				["coord"] = { 50.5, 66.2, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
-			q(55595, {	-- Deteriorating Knowledge
+			q(55595, {	-- Deteriorating Knowledge (A)
 				["qg"] = 151000,	-- Blademaster Okani
 				["coord"] = { 38.9, 54.6, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55593,	-- Insight into Our Enemies
 			}),
-			q(55863, {	-- Deteriorating Knowledge
+			q(55863, {	-- Deteriorating Knowledge (H)
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
 				["coord"] = { 48.5, 62.1, 1355 },
 				["races"] = HORDE_ONLY,
@@ -789,7 +797,9 @@ _.Zones =
 				},
 			}),
 			q(56001, {	-- Drunk Angry Murlocs
-				["qg"] = 153884,	-- King Mrgl-Mrgl
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.  Your cooking may also need to be at a certain level to receive the recipe as a reward.  I saw it at Cooking 168. — slumber",
+				["isDaily"] = true,
 				["coord"] = { 25.5, 26.5, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -1180,17 +1190,23 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			}),
-			q(56241, {	-- Preserved Clues
+			q(56241, {	-- Preserved Clues (A)
 				["qg"] = 153510,	-- Artisan Itanu
 				["coord"] = { 37.8, 55.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56239,	-- Strange Silver Knife
 			}),
-			q(56242, {	-- Preserved Clues
+			q(56242, {	-- Preserved Clues (H)
 				["qg"] = 153514,	-- Finder Palta
 				["coord"] = { 49.2, 62.0, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56240,	-- Strange Silver Knife
+			}),
+			q(57326, {	-- Prototypes for Profit
+				["qg"] = 150567,	-- Gazlowe
+				["coord"] = { 74.0, 36.8, 1355 },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(55573, {	-- Purging the Defilers
 				["sourceQuests"] = {
@@ -1201,11 +1217,13 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 153617,	-- Shandris Feathermoon
 			}),
-			q(55363, {	-- Rescue The Farseer
-				["qg"] = 151741,	-- Apprentice Odari
-				["coord"] = { 43.4, 49.8, 1355 },
+			q(55728, {	-- Reinforced Cache
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+				["objectID"] = 326047,	-- Reinforced Cache
+				["isDaily"] = true,
+				["coord"] = { 45.0, 22.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuest"] = 55361,	-- The Lost Shaman
 			}),
 			q(55723, {	-- Requisition: A Few Carp
 				["isDaily"] = true,
@@ -1442,11 +1460,11 @@ _.Zones =
 					55500,	-- Save A Friend (Horde)
 				},
 			}),
-			q(57326, {	-- Prototypes for Profit
-				["qg"] = 150567,	-- Gazlowe
-				["coord"] = { 74.0, 36.8, 1355 },
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,
+			q(55363, {	-- Rescue The Farseer
+				["qg"] = 151741,	-- Apprentice Odari
+				["coord"] = { 43.4, 49.8, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 55361,	-- The Lost Shaman
 			}),
 			q(57024, {	-- Rumors of Mechagon
 				["qg"] = 156187,	-- Disgruntled Laborer
