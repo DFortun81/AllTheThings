@@ -63,10 +63,16 @@ _.Zones =
 						}),
 						i(169547),	-- Recipe: Contract: Rustbolt Resistance
 						i(168660),	-- Schematic: Blingtron 7000
-						i(168369),	-- Recipe: Famine Evaluator And Snack Table
-						i(168533),	-- Schematic: Ub3r-Module: P.O.G.O.
-						i(168535),	-- Schematic: Ub3r-Module: Scrap Cannon
-						i(168534),	-- Schematic: Ub3r-Module: Ub3r-Coil
+						i(168369),	-- Recipe: Famine Evaluator And Snack Table (Rank 2)
+						i(168533, {	-- Schematic: Ub3r-Module: P.O.G.O.
+							["description"] = "Must be an engineer with a crafted Ub3r-Spanner and having completed the Iteration Is Key quest, for this to show up on vendor",
+						}),
+						i(168535, {	-- Schematic: Ub3r-Module: Scrap Cannon
+							["description"] = "Must be an engineer with a crafted Ub3r-Spanner and having completed the Iteration Is Key quest, for this to show up on vendor",
+						}),
+						i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil
+							["description"] = "Must be an engineer with a crafted Ub3r-Spanner and having completed the Iteration Is Key quest, for this to show up on vendor",
+						}),
 					},
 				}),
 			}),

@@ -31,52 +31,52 @@ _.Zones =
 				n(32515,  {	-- Braeg Stoutbeard
 					["coord"] = { 37.33, 28.69, 125 },
 					["g"] = {
-						{	-- Artic Fur
-							["itemID"] = 44128,	-- Artic Fur
+						{	-- Arctic Fur
+							["itemID"] = 44128,	-- Arctic Fur
 							["g"] = {
 								{	-- Pattern: Earthgiving Boots
 									["itemID"] = 44553,	-- Pattern: Earthgiving Boots
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Earthgiving Legguards
 									["itemID"] = 44552,	-- Pattern: Earthgiving Legguards
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Giantmaim Bracers
 									["itemID"] = 44547,	-- Pattern: Giantmaim Bracers
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Giantmaim Legguards
 									["itemID"] = 44546,	-- Pattern: Giantmaim Legguards
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Revenant's Breastplate
 									["itemID"] = 44548,	-- Pattern: Revenant's Breastplate
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Revenant's Treads
 									["itemID"] = 44549,	-- Pattern: Revenant's Treads
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Swiftarrow Belt
 									["itemID"] = 44535,	-- Pattern: Swiftarrow Belt
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Trollwoven Girdle
 									["itemID"] = 44551,	-- Pattern: Trollwoven Girdle
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Trollwoven Spaulders
 									["itemID"] = 44550,	-- Pattern: Trollwoven Spaulders
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Windripper Boots
 									["itemID"] = 44932,	-- Pattern: Windripper Boots
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 								{	-- Pattern: Windripper Leggings
 									["itemID"] = 44933,	-- Pattern: Windripper Leggings
-									["description"] = "Cost: 2 Artic Fur",
+									["description"] = "Cost: 2 Arctic Fur",
 								},
 							},
 						},
