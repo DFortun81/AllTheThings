@@ -6,21 +6,6 @@ _.Zones =
 	m(572, { 	-- Draenor
 		m(550, {	-- Nagrand (Draenor)
 			n(-17, { 	-- Quests
---[[	Achievement info for Loremaster related zone quests
-				ach(8928, {	-- Nagrandeur (Horde) (unlocks ability to buy Nagrand Treasure Map from Srikka in Warspear)
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(1),	-- The Might of Steel and Blood
-						crit(2),	-- The Ring of Trials
-						crit(3),	-- The Shadow of the Void
-						crit(4),	-- The Dark Heart of Oshu'gun
-						crit(5),	-- Remains of Telaar
-						crit(6),	-- Trouble at the Overwatch
-						crit(7),	-- The Taking of Lok-rath
-						crit(8),	-- The Legacy of Garrosh Hellscream
-					},
-				}),
-]]--
 				q(34719, {	-- ... and My Hammer
 					["qg"] = 79743,	-- Vindicator Mo'mor
 					["coord"] = { 66.7, 68.6, 550 },
@@ -34,7 +19,10 @@ _.Zones =
 					["sourceQuest"] = 34746,	-- Shields Down!
 				}),
 				q(34899, {	-- A Choice to Make
+					["qg"] = 80140,	-- A Choice to Make
+					["coord"] = { 82.9, 44.1, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34868,	-- Challenge of the Masters
 				}),
 				q(36284, {	-- A Fascinating Fungus
 					["qg"] = 84861,	-- A Fascinating Fungus
@@ -46,7 +34,7 @@ _.Zones =
 					["coord"] = { 71.1, 52.3, 550 },
 					["sourceQuests"] = {
 						34809,	-- A Lesson in Mineralogy
-						34811,	-- Good Help is Hard to Find (verify if this is needed)
+						34811,	-- Good Help is Hard to Find
 					},
 				}),
 				q(34809, {	-- A Lesson in Mineralogy
@@ -59,7 +47,7 @@ _.Zones =
 					["coord"] = { 71.1, 52.3, 550 },
 					["sourceQuests"] = {
 						34809,	-- A Lesson in Mineralogy
-						34811,	-- Good Help is Hard to Find (verify if this is needed)
+						34811,	-- Good Help is Hard to Find
 					},
 					["g"] = {
 						i(114890),	-- Excavated Highmaul Doohickey
@@ -100,6 +88,7 @@ _.Zones =
 				}),
 				q(35095, {	-- Along the Riverside
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(36193, {	-- An Act of Kindness
 					["qg"] = 84459,	-- Rangari Saardar
@@ -149,12 +138,17 @@ _.Zones =
 					["qg"] = 80161,	-- Lantresor of the Blade
 					["coord"] = { 85.4, 54.6, 550 },
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = { 34952 },	-- The Friend o' My Enemy
 					["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
 					["description"] = "Only available if you do not accept |cFFFFD700The Friend o' My Enemy|r from Hansel Heavyhands.",
-					["altQuests"] = { 34952 },	-- The Friend o' My Enemy
 				}),
 				q(35143, {	-- Blood of the Burning Blade
+					["qg"] = 80161,	-- Lantresor of the Blade
+					["coord"] = { 85.4, 54.5, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34808,	-- More Lazy Peons
+					["altQuests"] = { 34826 },	-- The Friend of My Enemy
+					["description"] = "Only available if you do not accept |cFFFFD700The Friend of My Enemy|r from Thrall.",
 				}),
 				q(35921, {	-- Bread and Circuses
 					["qg"] = 83606,	-- Lucy Brokerblast
@@ -179,7 +173,10 @@ _.Zones =
 					["sourceQuest"] = 35332,	-- Nobundo Sends Word
 				}),
 				q(34965, {	-- Called to the Throne
+					["qg"] = 80597,	-- Farseer Drek'Thar
+					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = HORDE_ONLY,
+					--["sourceQuest"] = ,	-- 
 				}),
 				q(35141, {	-- Carrier Has Arrived
 					["qg"] = 81412,	-- Vindicator Yrel
@@ -203,7 +200,10 @@ _.Zones =
 					},
 				}),
 				q(34868, {	-- Challenge of the Masters
+					["qg"] = 80319,	-- Lantresor of the Blade
+					["coord"] = { 44.8, 19.7, 551 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34866,	-- Meet Me in the Cavern
 					["g"] = {
 						i(114700),	-- Beastrider Spaulders
 						i(114701),	-- Plainsthunder Shoulders
@@ -212,6 +212,8 @@ _.Zones =
 					},
 				}),
 				q(37293, {	-- Clearing the Mist
+					["qg"] = 88240,	-- Shadow Hunter Mok'e
+					["coord"] = { 52.3, 19.1, 550 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35170, {	-- Consumed by Vengeance
@@ -229,7 +231,10 @@ _.Zones =
 				q(34512, {	-- Declawing the Competition
 					["qg"] = 79310,	-- Pyxni Pennypocket
 					["coord"] = { 78.5, 48.5, 550 },
-					["sourceQuest"] = 34769,	-- A Choice to Make
+					["sourceQuests"] = {
+						34769,	-- A Choice to Make (alliance)
+						34899,	-- A Choice to Make (horde)
+					},
 				}),
 				q(36285, {	-- Dirgemire
 					["qg"] = 84861,	-- A Fascinating Fungus
@@ -294,9 +299,18 @@ _.Zones =
 					["crs"] = { 80080 },	-- Bolkar the Cruel
 					["coord"] = { 40.4, 76.1, 550 },
 					["description"] = "Kill |cFFFFD700Bolkar the Cruel|r to loot |cFFFFD700Goldmane's Cage Key|r, then use the key on the cage.";
-					--["sourceQuest"] = 34769,	-- A Choice to Make (verify if this is needed)
 					["g"] = {
 						follower(170),	-- Goldmane the Skinner
+					},
+				}),
+				i(113109, {	-- Frostwolf Axe
+					["crs"] = { 78278 },	-- Breezestrider Talbuk
+					["races"] = HORDE_ONLY,
+					["description"] = "Drops while doing |cFFFFD700Shooting the Breeze|r.",
+					["g"] = {
+						q(35377, {	-- Someone's Missing Axe
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 				q(34819, {	-- Fruitful Ventures
@@ -307,7 +321,10 @@ _.Zones =
 				q(34810, {	-- Gazmolf Futzwangler and the Highmaul Crusade
 					["qg"] = 80184,	-- Gabby Goldsnap
 					["coord"] = { 79.8, 48.8, 550 },
-					["sourceQuest"] = 34769,	-- A Choice to Make
+					["sourceQuests"] = {
+						34769,	-- A Choice to Make (alliance)
+						34899,	-- A Choice to Make (horde)
+					},
 				}),
 				q(34515, {	-- Gobnapped
 					["qg"] = 79312,	-- Greezlex Fizzpinch
@@ -437,7 +454,10 @@ _.Zones =
 					},
 				}),
 				q(35378, {	-- King of the Breezestriders
+					["qg"] = 82080,	-- Stalker Ogka
+					["coord"] = { 82.5, 43.9, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35377,	-- Someone's Missing Axe
 					["g"] = {
 						i(114698),	-- Beastrider Breeches
 						i(114695),	-- Plainsthunder Legguards
@@ -460,6 +480,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(35167, {	-- Lost in Nagrand
+					["qg"] = 72822,	-- Mankrik
+					["coord"] = { 49.2, 47.9, 550 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35928, {	-- Meatgut Needs Bones
@@ -478,7 +500,13 @@ _.Zones =
 					},
 				}),
 				q(34866, {	-- Meet Me in the Cavern
+					["qg"] = 80161,
+					["coord"] = { 85.4, 54.5, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						34850,	-- Not Without My Honor
+						34849,	-- The Blade Itself
+					},
 				}),
 				q(34716, { 	-- Mo'mor Might Know
 					["qg"] = 79722,	-- Mo'mor Might Know
@@ -493,7 +521,10 @@ _.Zones =
 					},
 				}),
 				q(34808, {	-- More Lazy Peons
+					["qg"] = 80003,	-- Thrall
+					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34795,	-- The Might of the Warsong
 				}),
 				q(34516, {	-- My Precious!
 					["qg"] = 79899,	-- Bazwix
@@ -503,7 +534,6 @@ _.Zones =
 				q(34466, {	-- Mysterious Staff
 					["coord"] = { 46.3, 16.0, 550 },
 					["icon"] = "Interface\\Icons\\inv_staff_52",
-					--["sourceQuest"] = 34769,	-- A Choice to Make
 					--["objectID"] = 229344,	-- Buried Timewarped Staff
 				}),
 				q(34900, {	-- New Babies
@@ -546,7 +576,10 @@ _.Zones =
 					},
 				}),
 				q(34850, {	-- Not Without My Honor
+					["qg"] = 80161,	-- Lantresor of the Blade
+					["coord"] = { 85.4, 54.5, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
 					["g"] = {
 						i(114694),	-- Beastrider Helm
 						i(114691),	-- Plainsthunder Helm
@@ -558,7 +591,7 @@ _.Zones =
 					["qg"] = 79282,	-- Rangari Eleena
 					["coord"] = { 78.7, 69.2, 550 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34769,	-- A Choice to Make (verify)
+					["sourceQuest"] = 34769,	-- A Choice to Make (alliance)
 					["g"] = {
 						i(114686),	-- Beastrider Boots
 						i(114683),	-- Plainsthunder Warboots
@@ -567,7 +600,10 @@ _.Zones =
 					},
 				}),
 				q(35155, {	-- Obliterating Ogres
+					["qg"] = 79281,	-- Akrosh
+					["coord"] = { 83.0, 67.9, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34899,	-- A Choice to Make (horde)
 					["g"] = {
 						i(114686),	-- Beastrider Boots
 						i(114683),	-- Plainsthunder Warboots
@@ -580,12 +616,18 @@ _.Zones =
 					["coord"] = { 78.7, 69.2, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
-						34769,	-- A Choice to Make (verify)
+						34769,	-- A Choice to Make (alliance)
 						35148,	-- Trouble at the Overwatch
 					},
 				}),
 				q(35157, {	-- Obtaining Ogre Offensive Orders
+					["qg"] = 79281,	-- Akrosh
+					["coord"] = { 83.0, 67.9, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						34899,	-- A Choice to Make (horde)
+						35150,	-- Trouble at the Overwatch
+					},
 				}),
 				q(35972, {	-- Ogre Onslaught
 					["qg"] = 83734,	-- Greblin Fastfizzle
@@ -661,7 +703,10 @@ _.Zones =
 					["sourceQuest"] = 35337,	-- That Pounding Sound
 				}),
 				q(35375, {	-- Queen of the Clefthoof
+					["qg"] = 82078,	-- Shadow Hunter Tax
+					["coord"] = { 82.5, 43.9, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35374,	-- That Pounding Sound
 				}),
 				q(34596, {	-- Reglakk's Research
 					["qg"] = 81144,	-- Rangari Eleena
@@ -701,11 +746,15 @@ _.Zones =
 					["coord"] = { 81.3, 70.3, 550 },
 					["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34769,	-- A Choice to Make (verify)
+					["sourceQuest"] = 34769,	-- A Choice to Make (alliance)
 					--["objectID"] = 231901,	-- Ogre Scrolls
 				}),
 				q(35156, {	-- Removing the Paper Trail
+					["coord"] = { 81.3, 70.3, 550 },
+					["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34899,	-- A Choice to Make (horde)
+					--["objectID"] = 231901,	-- Ogre Scrolls
 				}),
 				q(34877, {	-- Removing the Reinforcements
 					["qg"] = 81144,	-- Rangari Eleena
@@ -728,7 +777,8 @@ _.Zones =
 					["qg"] = 79188,	-- Dexyl Deadblade
 					["coord"] = { 79.4, 50.2, 550 },
 					["sourceQuests"] = {
-						34769,	-- A Choice to Make (verify if needed)
+						34769,	-- A Choice to Make (alliance)
+						34899,	-- A Choice to Make (horde)
 						35921,	-- Bread and Circuses (alliance breadcrumb)
 						35922,	-- Bread and Circuses (horde breadcrumb)
 					},
@@ -788,7 +838,10 @@ _.Zones =
 					["sourceQuest"] = 34769,	-- A Choice to Make
 				}),
 				q(35376, {	-- Shooting the Breeze
+					["qg"] = 82080,	-- Stalker Ogka
+					["coord"] = { 82.5, 43.9, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34899,	-- A Choice to Make
 				}),
 				q(35389, {	-- Silence the Call (duplicate, never went live)
 					["u"] = 1,
@@ -846,7 +899,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(34914, {	-- Target of Opportunity: Telaar
+					["qg"] = 81189,	-- Aggra
+					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34899,	-- A Choice to Make
 				}),
 				q(35995, {	-- Tarnished Bronze
 					["u"] = 40,
@@ -854,19 +910,28 @@ _.Zones =
 				q(34869, {	-- Tastes Like Chicken
 					["qg"] = 81955,	-- Digrem Orebar
 					["coord"] = { 79.2, 52.6, 550 },
-					["sourceQuest"] = 34769,	-- A Choice to Make (verify if needed)
+					["sourceQuests"] = {
+						34769,	-- A Choice to Make (alliance)
+						34899,	-- A Choice to Make (horde)
+					},
 				}),
 				q(35060, {	-- Terms of Surrender
 					["qg"] = 81039,	-- Vindicator Yrel
 					["coord"] = { 61.9, 40.5, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
-						34769,	-- A Choice to Make (verify if needed)
+						34769,	-- A Choice to Make (alliance)
 						35059,	-- Along the Riverside
 					},
 				}),
 				q(35096, {	-- Terms of Surrender
+					["qg"] = 81186,	-- Durotan
+					["coord"] = { 48.5, 48.2, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						34899,	-- A Choice to Make (horde)
+						35095,	-- Along the Riverside
+					},
 				}),
 				q(35069, {	-- Terror of Nagrand
 					["qg"] = 81134,	-- Fallen Alliance Solder
@@ -898,7 +963,10 @@ _.Zones =
 					},
 				}),
 				q(35374, {	-- That Pounding Sound
+					["qg"] = 82078,	-- Shadow Hunter Taz
+					["coord"] = { 82.5, 43.9, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34899,	-- A Choice to Make
 					["g"] = {
 						i(118137),	-- Plainshunter Blackjack
 						i(118135),	-- Plainshunter Claws
@@ -915,7 +983,10 @@ _.Zones =
 					["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
 				}),
 				q(34849, {	-- The Blade Itself
+					["qg"] = 80161,	-- Lantresor of the Blade
+					["coord"] = { 85.4, 54.5, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
 				}),
 				q(34916, {	-- The Blessing of Samedi
 					["races"] = HORDE_ONLY,
@@ -1021,12 +1092,16 @@ _.Zones =
 					["altQuests"] = { 34953 },	-- Blood of the Burning Blade
 				}),
 				q(34826, {	-- The Friend of My Enemy
+					["qg"] = 80003,	-- Thrall
+					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
+					["altQuests"] = { 35143 },	-- Blood of the Burning Blade
+					["sourceQuest"] = 34808,	-- More Lazy Peons
+					["description"] = "This quest is only available if you do not accept |cFFFFD700Blood of the Burning Blade|r from Lantresor of the Blade.",
 				}),
 				q(35146, {	-- The Good Doctor
 					["qg"] = 84632,	-- Marybelle Walsh
 					["coord"] = { 77.4, 47.3, 550 },
-					["sourceQuest"] = 34769,	-- A Choice to Make (verify)
 				}),
 				q(34747, {	-- The Honor of a Blademaster
 					["qg"] = 81790,	-- Lantresor of the Blade
@@ -1039,6 +1114,7 @@ _.Zones =
 				}),
 				q(34770, {	-- The Honor of a Blademaster
 					["qg"] = 81790,	-- Lantresor of the Blade
+					["coord"] = { 82.6, 46.7, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34868,	-- Challenge of the Masters
 					["g"] = {
@@ -1056,12 +1132,22 @@ _.Zones =
 					},
 				}),
 				q(34795, {	-- The Might of the Warsong
+					["qg"] = 80001,	-- Stone Guard Brox
+					["coord"] = { 86.3, 66.1, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						34794,	-- Taking the Fight to Nagrand
+						36952,	-- Taking the Fight to Nagrand
+						49549,	-- Warchief's Command: Nagrand!
+					},
 				}),
 				q(34598, {	-- The Missing Caravan
 					["qg"] = 79310,	-- Pyxni Pennypocket
 					["coord"] = { 78.5, 48.5, 550 },
-					["sourceQuest"] = 34769,	-- A Choice to Make (verify)
+					["sourceQuests"] = {
+						34769,	-- A Choice to Make (alliance)
+						34899,	-- A Choice to Make (horde)
+					},
 				}),
 				q(35392, {	-- The Nether Approaches
 					["u"] = 1,
@@ -1195,12 +1281,13 @@ _.Zones =
 					["sourceQuest"] = 35837,	-- Garrison Campaign: Deep Recon
 				}),
 				q(35271, {	-- The Warsong Threat
+					["coord"] = { 51.8, 62.0, 550 },
 					["races"] = HORDE_ONLY,
+					--["objectID"] = 232024,	-- Warsong Attack Plans
 				}),
 				q(35386, {	-- The Warsong Threat
 					["coord"] = { 51.8, 62.0, 550 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34769,	-- A Choice to Make (verify if this is available anywhere)
 					--["objectID"] = 232024,	-- Warsong Attack Plans
 				}),
 				q(37981),	-- The World Famous Ring of Blood!
@@ -1211,7 +1298,10 @@ _.Zones =
 					["sourceQuest"] = 34769,	-- A Choice to Make
 				}),
 				q(34818, {	-- They Call Him Lantresor of the Blade
+					["qg"] = 80140,	-- Foreman Thazz'ril
+					["coord"] = { 82.9, 44.1, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34808,	-- More Lazy Peons
 				}),
 				q(34514, {	-- They've Got The Goods!
 					["qg"] = 79312,	-- Greezlex Fizzpinch
@@ -1242,7 +1332,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(35150, {	-- Trouble at the Overwatch
+					["qg"] = 81319,	-- Draka
+					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34899,	-- A Choice to Make
 					["isBreadcrumb"] = true,
 				}),
 				q(34678, {	-- Up and Running
@@ -1253,13 +1346,15 @@ _.Zones =
 				}),
 				q(34513, {	-- WANTED: Razorpaw!
 					["coord"] = { 78.9, 58.9, 550 },
-					["sourceQuest"] = 34769,	-- A Choice to Make (verify)
+					["sourceQuests"] = {
+						34769,	-- A Choice to Make (alliance)
+						34899,	-- A Choice to Make (horde)
+					},
 					--["objectID"] = 230303,	-- Bounty Board
 				}),
 				q(36273, {	-- Whacking Weeds
 					["qg"] = 84632,	-- Marybelle Walsh
 					["coord"] = { 77.4, 47.3, 550 },
-					["sourceQuest"] = 34769,	-- A Choice to Make (verify)
 				}),
 			}),
 		}),

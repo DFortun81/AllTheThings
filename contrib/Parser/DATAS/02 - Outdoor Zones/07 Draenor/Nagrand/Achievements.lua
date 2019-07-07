@@ -114,6 +114,21 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(8928, {	-- Nagrandeur (Horde)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {	-- The Might of Steel and Blood
+							["sourceQuest"] = 34899,	-- A Choice to Make
+						}),
+						crit(2),	-- The Ring of Trials
+						crit(3),	-- The Shadow of the Void
+						crit(4),	-- The Dark Heart of Oshu'gun
+						crit(5),	-- Remains of Telaar
+						crit(6),	-- Trouble at the Overwatch
+						crit(7),	-- The Taking of Lok-rath
+						crit(8),	-- The Legacy of Garrosh Hellscream
+					},
+				}),
 				ach(9564,  {	-- Securing Draenor (Alliance)
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["races"] = ALLIANCE_ONLY,

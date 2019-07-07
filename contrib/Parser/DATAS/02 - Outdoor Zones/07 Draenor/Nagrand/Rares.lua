@@ -360,12 +360,6 @@ _.Zones =
 						i(116814),	-- Tura'aka's Clipped Wing
 					},
 				}),
-				n(88951, {	-- Vileclaw
-					["coord"] = { 37.2, 39.0, 550 },
-					["g"] = {
-						i(120172),	-- Vileclaw's Claw
-					},
-				}),
 				n(81330, {	-- Warleader Tome
 					["description"] = "Spawns at Anguish Point and wanders the zone, moving clockwise.  Your best bet is to camp his spawnpoint.",
 					["questID"] = 37546,

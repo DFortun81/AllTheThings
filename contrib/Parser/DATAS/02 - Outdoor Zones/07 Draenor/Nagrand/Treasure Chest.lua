@@ -1053,6 +1053,13 @@ _.Zones =
 						}),	
 					},
 				}),
+				o(233492, {	-- Elemental Offering
+					["questID"] = 35954,
+					["coord"] = { 67.0, 19.5, 550 },
+					["g"] = {
+						i(118234),	-- Smoldering Offerings
+					},
+				}),
 				o(233598, {	-- Elemental Shackles
 					["questID"] = 36036,
 					["coord"] = { 78.9, 15.5, 550 },
@@ -1102,6 +1109,21 @@ _.Zones =
 						currency(824),	-- Garrison Resources
 					},
 				}),
+				o(232597, {	-- Goblin Pack
+					["questID"] = 35590,
+					["coord"] = { 73.0, 62.1, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(232571, {	-- Goblin Pack
+					["questID"] = 35576,
+					["coord"] = { 47.2, 74.3, 550 },
+					["description"] = "Hidden in the tree.",
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(233134, {	-- Golden Kaliri Egg
 					["questID"] = 35694,
 					["coord"] = { 58.3, 52.5, 550 },
@@ -1128,6 +1150,13 @@ _.Zones =
 					["coord"] = { 67.3, 49.0, 550 },
 					["g"] = {
 						i(118252),	-- Trophy Loop of the Highmaul
+					},
+				}),
+				o(233696, {	-- Important Exploration Supplies
+					["questID"] = 36099,
+					["coord"] = { 75.2, 65.6, 550 },
+					["g"] = {
+						i(61986),	-- Tol Barad Coconut Rum
 					},
 				}),
 				o(233651, {	-- Lost Pendant
@@ -1289,6 +1318,34 @@ _.Zones =
 						}),
 					},
 				}),
+				o(232985, {	-- Steamwheedle Supplies
+					["questID"] = 35616,
+					["coord"] = { 88.2, 42.6, 550 },
+				}),
+				o(232598, {	-- Steamwheedle Supplies
+					["questID"] = 35591,
+					["coord"] = { 77.8, 52.0, 550 },
+				}),
+				o(233034, {	-- Steamwheedle Supplies
+					["questID"] = 35648,
+					["coord"] = { 64.6, 17.6, 550 },
+				}),
+				o(232584, {	-- Steamwheedle Supplies
+					["questID"] = 35577,
+					["coord"] = { 50.1, 82.2, 550 },
+				}),
+				o(232595, {	-- Steamwheedle Supplies
+					["questID"] = 35583,
+					["coord"] = { 52.7, 80.1, 550 },
+				}),
+				o(233033, {	-- Steamwheedle Supplies
+					["questID"] = 35646,
+					["coord"] = { 70.6, 18.6, 550 },
+				}),
+				o(233052, {	-- Steamwheedle Supplies
+					["questID"] = 35662,
+					["coord"] = { 87.6, 20.5, 550 },
+				}),
 				o(233613, {	-- Telaar Defender Shield
 					["questID"] = 36046,
 					["coord"] = { 64.6, 65.8, 550 },
@@ -1308,6 +1365,13 @@ _.Zones =
 					["coord"] = { 52.5, 44.5, 550 },
 					["g"] = {
 						i(118250),	-- Riverwashed Warsong Helm
+					},
+				}),
+				o(233113, {	-- Warsong Spear
+					["questID"] = 35682,
+					["coord"] = { 76.1, 69.9, 550 },
+					["g"] = {
+						i(118678),	-- Ceremonial Warsong Spear
 					},
 				}),
 				o(235307, {	-- Watertight Bag
