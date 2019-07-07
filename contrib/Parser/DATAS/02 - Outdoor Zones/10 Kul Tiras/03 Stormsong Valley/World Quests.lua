@@ -105,6 +105,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(53106, {	-- Censership
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52310, {	-- Corrupted Tideskipper
 						["lvl"] = 120,
 						["collectible"] = false,

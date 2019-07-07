@@ -772,296 +772,266 @@ _.Zones =
 				})),
 			}),
 			n(-17,  {	-- Quests
-				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
-					a(ach(12496, {	-- Stormsong and Dance
-						crit(1, {		-- The Tidesages of Stormsong
-							["g"] = {
-								q(51488, {	-- Archived Knowledge
-									["qg"] = 137866,	-- Taelia
-									["sourceQuests"] = { 51487 },	-- Searching for Answers
-								}),
-								q(51490, {	-- Border Issues
-									["qg"] = 137866,	-- Taelia
-									["sourceQuests"] = { 51489 },	-- Time to Leave
-								}),	
-								q(51401, {	-- Carry On
-									["qg"] = 137866,	-- Taelia
-									["sourceQuests"] = { 51490 },	-- Border Issues
-								}),	
-								q(51487, {	-- Searching for Answers
-									["qg"] = 137866,	-- Taelia
-									["sourceQuests"] = { 47952 },	-- The Missing Fleet
-								}),	
-								q(51489, {	-- Time to Leave
-									["qg"] = 137866,	-- Taelia
-									["sourceQuests"] = { 51488 },	-- Archived Knowledge
-								}),	
-							},
-						}),
-						crit(2, {		-- A House in Peril
-						}),
-						crit(3),		-- The Growing Tempest
-						crit(4),		-- At the Edge of Madness
-						crit(5),		-- Cycle of Hatred
-						crit(6),		-- From the Depths They Come
-						crit(7),		-- Briarback Kraul
-						crit(8),		-- Treasure in Deadwash
-					})),
-					--]]
-					
-					q(50616, {	-- A Bit of a Bind
-					i(160345),
-					i(160371),
-					i(160374),
-					i(160377),
-					i(160380),
+				a(ach(12496, {	-- Stormsong and Dance
+					crit(1, {		-- The Tidesages of Stormsong
+						["g"] = {
+							q(51488, {	-- Archived Knowledge
+								["qg"] = 137866,	-- Taelia
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = { 51487 },	-- Searching for Answers
+							}),
+							q(51490, {	-- Border Issues
+								["qg"] = 137866,	-- Taelia
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = { 51489 },	-- Time to Leave
+							}),	
+							q(51401, {	-- Carry On
+								["qg"] = 137866,	-- Taelia
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = { 51490 },	-- Border Issues
+							}),	
+							q(51487, {	-- Searching for Answers
+								["qg"] = 137866,	-- Taelia
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = { 47952 },	-- The Missing Fleet
+							}),	
+							q(51489, {	-- Time to Leave
+								["qg"] = 137866,	-- Taelia
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = { 51488 },	-- Archived Knowledge
+							}),	
+						},
 					}),
-					q(50694),	-- A Bloody Mess
-					q(50814),	-- A Horrible Place
-					q(50041),	-- A Pocketful of Shells
-					q(50065),	-- A Reason to Stay
-					q(50705),	-- A Snake with Three Heads
-					q(50132),	-- A Sticky Proposition
-					q(50742),	-- All Laid Out For Us
-					q(49832),	-- An Illegible Scroll
-					q(51354),	-- Anger in a Bottle
-					q(50367),	-- Anger in a Bottle
-					q(50672),	-- Any Ammo Will Do
-					q(51488),	-- Archived Knowledge
-					q(51205),	-- Aww, Rats!
-					q(49908),	-- Back to Brennadam
-					q(50553, {	-- Back to the Lab
-						i(158558),
+					crit(2, {		-- A House in Peril
 					}),
-					q(51251),	-- Basement Dwellers
-					q(51386, {	-- Battle Victorious
-					i(160335),
-					i(160338),
-					i(160341),
-					i(160344),
-					i(160373),
-					i(160376),
-					i(160379),
-					i(160382),
-					}),
-					q(52070),	-- Bauer Backup
-					q(51214),	-- Be A Dear
-					q(49744),	-- Bombs, Away
-					q(49792),	-- Bound and Oppressed
-					q(50810),	-- Break 'Em Out
-					q(51545),	-- Breaker Bad
-					q(51159),	-- Bring out the Big Gun
-					{	-- Bumbles the Bee
-						["questID"] = 53347,
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 131793,	-- Ancel Mildenhall
-						["description"] = "First obtain an Annealed Honey Amulet from mobs in the Mildenhall Meadery area in Stormsong Valley.  Give the amulet to Rosaline Mildenhall in Boralus.  She will give you a letter.  Give the letter to Ancel Mildenhall, and this questline will then become available.",
+					crit(3),		-- The Growing Tempest
+					crit(4),		-- At the Edge of Madness
+					crit(5),		-- Cycle of Hatred
+					crit(6),		-- From the Depths They Come
+					crit(7),		-- Briarback Kraul
+					crit(8),		-- Treasure in Deadwash
+				})),					
+				q(50616, {	-- A Bit of a Bind
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160345),	-- Zeth'jir Seacaller Signet
+						i(160371),	-- Tidespeaker Belt
+						i(160374),	-- Darkwater Waistcord
+						i(160377),	-- Stormchaser Chain
+						i(160380),	-- Dread Corsair Warbelt
 					},
-					q(51728),	-- Burn It All Down
-					q(50621),	-- Caught in the Net
-					q(51353),	-- Cave of Ai'twen
-					q(53106),	-- Censership
-					q(51339, {	-- Cleaning Bills
-					i(155237),
-					i(160384),
-					i(160387),
-					i(160390),
-					i(160393),
-					}),
-					q(50359),	-- Cleanup Duty
-					q(50706),	-- Clearing the Delta
-					q(51110),	-- Clearing the Skies
-					q(51504),	-- Cookie Delivery
-					q(51335),	-- Cookies and Cream
-					q(51203),	-- Cry Wolf
-					q(50910),	-- Dangerous Game
-					q(52130),	-- Deadliest Cache: Carpe Diem
-					q(50391),	-- Deadliest Cache: Gun Fishin'
-					q(50376),	-- Deadliest Cache: Reel Big Fish
-					q(50418),	-- Deadliest Cache: Sink and Swim
-					q(51220),	-- Deep Sea Venture
-					q(53097),	-- Despondent Ablutions
-					q(51066),	-- Destroy Mine Carts
-					q(50285),	-- Don't Be Crabby
-					q(51352),	-- Don't Play with Matches
-					q(49746),	-- Dousing the Flames
-					q(51756),	-- Economic Downturn
-					q(50645),	-- Eeling in a Big One
-					q(51207, {	-- Ettin It Done
-					i(160333),
-					i(160336),
-					i(160339),
-					i(160342),
-					i(160383),
-					i(160386),
-					i(160389),
-					i(160392),
-					}),
-					q(49732),	-- Evacuate!
-					q(51540),	-- Explosive Situation
-					q(51712),	-- Eye for an Eye
-					q(49995),	-- Fabricated Fabrications
-					q(50644),	-- Facing the Invaders
-					q(50493),	-- Fetching Wrex
-					q(51750),	-- Field Promotions
-					q(50649),	-- Filching from Thieves
-					q(51371),	-- Flavorable Offering
-					q(49887),	-- Forced Labor
-					q(50264),	-- Free the Farmhands
-					q(50614),	-- Freedom for the Sea
-					q(49831, {	-- From the Depths
-					i(160519),
-					i(155219),
-					i(160521),
-					i(155198),
-					i(155211),
-					i(155217),
-					i(155226),
-					i(155212),
-					}),
-					q(50134),	-- Gadgets and Gizmos Aplenty
-					q(51726),	-- Get Out of Here
-					q(51720),	-- Get Shredded
-					q(50088),	-- Golden Fields Forever
-					q(50069),	-- Goldfield's War
-					q(51883),	-- Grizz's Lunch
-					q(51752, {	-- Grizzled
-						["g"] = {
-							i(160348),	-- Tidespeaker Handwraps
-							i(160351),	-- Darkwater Mitts
-							i(160354),	-- Stormchaser Strikers
-							i(160357),	-- Dread Corsair Strikers
-							i(158686),	-- Tidespeaker Slippers
-							i(158688),	-- Darkwater Treads
-							i(158687),	-- Stormchaser Striders
-							i(158685),	-- Dread Corsair Warboots
-						},
-					}),
-					a({
-						["questID"] = 51492,	-- Gunpowder Plot
-						["qg"] = 136574,	-- Charles Davenport
-						["g"] = {
-							i(160350),	-- Darkwater Handwraps
-							i(160356),	-- Dread Corsair Gloves
-							i(160353),	-- Stormchaser Handguards
-							i(160347),	-- Tidespeaker Grips
-							i(160362),	-- Darkwater Britches
-							i(160368),	-- Dread Corsair Pants
-							i(160365),	-- Stormchaser Pants
-							i(160359),	-- Tidespeaker Pantaloons
-						},
-					}),
-					q(51711),	-- Having a Blast
-					q(52068),	-- Helping Out, Somewhere Else
-					q(50060),	-- Honey, Slimes!
-					{
-						["questID"] = 51427,	-- I like Turtles
-						["qg"] = 137453,	-- Loroja <Watcher of Ai'twen>
-						["g"] = {
-							i(160395),	-- Ai'twen's Light
-							i(160396),	-- Ai'twen's Defender
-							i(160352),	-- Darkwater Grasps
-							i(160358),	-- Dread Corsair Grips
-							i(160355),	-- Stormchaser Handcovers
-							i(160349),	-- Tidespeaker Mittens
-						},
-					},
-					q(50802),	-- Iron Low Tide
-					q(51557),	-- Irontide Warning
-					{	-- Let's Bee Friends
-						["questID"] = 53371,
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["qg"] = 132647,	-- Ancel Mildenhall
-						["sourceQuest"] = 53347,	-- Bumbles the Bee
-						["description"] = "Complete this daily quest 7 times to receive the Bumbles pet in your mailbox.",
-					},
-					q(51582),	-- Make it Mildenhall
-					q(53369),	-- Make Loh Go
-					q(50383),	-- Mankrik's Wrath
-					q(49793),	-- Means to an End
-					q(51209),	-- Mighty Grokkfist
-					q(51215),	-- Milking Goats
-					q(51202),	-- Millstone Hamlet Quest Template
-					q(52069),	-- More Fodder
-					q(50909),	-- Never Outgunned
-					q(50815),	-- Orcs Versus Humans
-					q(50679),	-- Piercing the Shield
-					q(50907),	-- Poor Souls
-					q(51724),	-- Powered Up
-					q(50698),	-- Problem Solving with Gunpowder
-					q(50653, {	-- Reclaiming our Defenses
-						["qg"] = 131003,	-- Specialist Wembley
-						["g"] = {
-							i(160337),	-- Darkwater Footpads
-							i(160343),	-- Dread Corsair Boots
-							i(155232),	-- Proudmoore Battalion Cloak
-							i(160340),	-- Stormchaser Treads
-							i(160334),	-- Tidespeaker Footwraps
-						},
-					}),
-					q(50161),	-- Recovering Raimond
-					q(51554),	-- Reloading
-					q(49742),	-- Respect Your Elders
-					q(51221),	-- Response Required
-					q(50816),	-- Roarke's Missing
-					q(50168),	-- Royal Succession
-					q(50365),	-- Run For the Hills
-					q(51723),	-- Saw Dusted
-					q(51487),	-- Searching for Answers
-					q(51334),	-- Securing The Square
-					q(51140),	-- Share the Wealth
-					q(49743),	-- Shoot First, Questions Later
-					q(50908),	-- Smells like Trouble
-					q(50340),	-- Steal Them Back
-					q(50162),	-- Sticky Situation
-					q(50135),	-- Stop Vining!
-					q(51846),	-- Storm's End
-					q(53045),	-- Surveying the Wharf
-					q(52067),	-- Survivors
-					q(51343),	-- Swimming Lessons
-					q(51534),	-- The Battle for Brennadam
-					q(50165),	-- The Bee Team
-					q(51200),	-- The Black Sheep
-					q(51552),	-- The Days Are Just Packed
-					q(50743),	-- The Immediate Problem
-					q(51881),	-- The Mine Sweeper
-					q(47952),	-- The Missing Fleet
-					q(50139),	-- The Missing Link
-					q(49794),	-- The Rising Tide
-					q(50635),	-- The Shifting Tides
-					q(51489),	-- Time to Leave
-					q(50111),	-- Totems, Totems, Totems!
-					q(50675),	-- Treasure Hunting
-					q(50778),	-- Twisted Intentions
-					q(50674),	-- Two Faced Pirate Scum
-					q(51218),	-- Undelivered Package
-					q(49998),	-- Voices Below
-					q(50956),	-- Walking-Around Money
-					q(51204),	-- WANTED: Razorclaw Alpha
-					q(53330),	-- WANTED: Razorclaw Alpha
-					q(53348),	-- WANTED: Thundersnout
-					q(49730),	-- WANTED: Thundersnout
-					q(52876),	-- WANTED: War Gore
-					q(51708),	-- Warfang Hold Quest Template
-					q(50133),	-- Weed Whacking
-					q(50534),	-- Wendigo Away
-					q(51222),	-- What's Yours is Mined
-					q(51208),	-- Wheat A Minute
-					q(49745),	-- You Have Their Orders
-					q(50773),	-- You're a Shark
-					q(48533),	-- Vol'duni Fried Chicken
-					q(51164),	-- WANTED: Cobra Excursion Participants
-					q(51165),	-- WANTED: Sandscout Vesarik
-					q(51162),	-- WANTED: Taz'raka the Traitor
-					q(51161),	-- WANTED: Za'roco
-					q(48585),	-- Wasteland Survivor
-					q(48838),	-- Water Reclamation
-					q(48555),	-- We Can Salvage the Seeds
-					q(48551),	-- Wither Without Water
-					q(47576),	-- Wrath of the Tiger
-					q(48330),	-- Zandalari Treasure Trove
 				}),
+				a(q(50694)),	-- A Bloody Mess
+				a(q(50705)),	-- A Snake with Three Heads
+				un(1, q(50132)),	-- A Sticky Proposition
+				q(49832, {	-- An Illegible Scroll (breadcrumb per wowhead comments)
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 32.2, 40.0, 942 },
+					["isBreadcrumb"] = true,
+				}),
+				a(q(51354)),	-- Anger in a Bottle
+				a(q(50672)),	-- Any Ammo Will Do
+				a(q(51205)),	-- Aww, Rats!
+				a(q(49908)),	-- Back to Brennadam
+				a(q(51251)),	-- Basement Dwellers
+				q(51386, {	-- Battle Victorious
+					i(160335),	-- Tidespeaker Soles
+					i(160338),	-- Darkwater Waders
+					i(160341),	-- Stormchaser Footgear
+					i(160344),	-- Dread Corsair Stompers
+					i(160373),	-- Tidespeaker Waistwrap
+					i(160376),	-- Darkwater Clasp
+					i(160379),	-- Stormchaser Buckle
+					i(160382), -- Dread Corsair Cincture
+				}),
+				a(q(52070)),	-- Bauer Backup
+				a(q(51214)),	-- Be A Dear
+				q(51545),	-- Breaker Bad
+				q(51159, {	-- Bring out the Big Gun
+					["qg"] = 136481,	-- Cannon
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 60.21, 54.55, 942 },
+				}),
+				{	-- Bumbles the Bee
+					["questID"] = 53347,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131793,	-- Ancel Mildenhall
+					["description"] = "First obtain an Annealed Honey Amulet from mobs in the Mildenhall Meadery area in Stormsong Valley.  Give the amulet to Rosaline Mildenhall in Boralus.  She will give you a letter.  Give the letter to Ancel Mildenhall, and this questline will then become available.",
+				},
+				a(q(51728)),	-- Burn It All Down
+				a(q(50621)),	-- Caught in the Net
+				q(51353),	-- Cave of Ai'twen
+				q(51339, {	-- Cleaning Bills
+					i(155237),	-- Nola's Shawl
+					i(160384),	-- Tidespeaker Armbands
+					i(160387),	-- Darkwater Armbands
+					i(160390),	-- Stormchaser Wristguards
+					i(160393),	-- Dread Corsair Wristguards
+				}),
+				a(q(50706)),	-- Clearing the Delta
+				un(1, q(51110)),	-- Clearing the Skies (looks like this never made it out of beta)
+				a(q(51504)),	-- Cookie Delivery
+				a(q(51335)),	-- Cookies and Cream
+				a(q(51203)),	-- Cry Wolf
+				a(q(52130)),	-- Deadliest Cache: Carpe Diem
+				a(q(50391)),	-- Deadliest Cache: Gun Fishin'
+				a(q(50376)),	-- Deadliest Cache: Reel Big Fish
+				a(q(50418)),	-- Deadliest Cache: Sink and Swim
+				q(51220),	-- Deep Sea Venture
+				q(53097),	-- Despondent Ablutions
+				un(1, q(51066)),	-- Destroy Mine Carts (looks like this never made it out of beta)
+				un(1, q(50285)),	-- Don't Be Crabby (looks like this never made it out of beta)
+				q(51352),	-- Don't Play with Matches
+				un(1, q(51756)),	-- Economic Downturn (looks like this never made it out of beta)
+				a(q(50645)),	-- Eeling in a Big One
+				q(51207, {	-- Ettin It Done
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160333),	-- Tidespeaker Shoes
+						i(160336),	-- Darkwater Footwraps
+						i(160339),	-- Stormchaser Footguards
+						i(160342),	-- Dread Corsair Footguards
+						i(160383),	-- Tidespeaker Wristwraps
+						i(160386),	-- Darkwater Wristwraps
+						i(160389),	-- Stormchaser Bindings
+						i(160392),	-- Dread Corsair Armguards
+					},
+				}),
+				un(1, q(49732)),	-- Evacuate! (looks like this never made it out of beta)
+				q(51540),	-- Explosive Situation
+				a(q(51712)),	-- Eye for an Eye
+				a(q(50644)),	-- Facing the Invaders
+				un(1, q(51750)),	-- Field Promotions (looks like this never made it out of beta)
+				a(q(50649)),	-- Filching from Thieves
+				q(51371),	-- Flavorable Offering
+				a(q(50614)),	-- Freedom for the Sea
+				q(49831, {	-- From the Depths
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160519),	-- Fort Daelin Speargun
+						i(155219),	-- Zeth'jir Scaleguard Pillar
+						i(160521),	-- Kellam's Longknife
+						i(155198),	-- Fort Daelin Handaxe
+						i(155211),	-- Storm's Wake Truncheon
+						i(155217),	-- Proudmoore Battalion Pike
+						i(155226),	-- Storm's Wake Baton
+						i(155212),	-- Zeth'jir Tidemaiden Scepter
+					},
+				}),
+				a(q(51726)),	-- Get Out of Here
+				a(q(51720)),	-- Get Shredded
+				un(1, i(160897, {	-- Grizz's Lunchbox (poosible this did not make it out of beta, cannot find info on where item is found but is linked to assoicated quest on wowpedia)
+					un(1, q(51883)),	-- Grizz's Lunch
+				})),
+				q(51752, {	-- Grizzled
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160348),	-- Tidespeaker Handwraps
+						i(160351),	-- Darkwater Mitts
+						i(160354),	-- Stormchaser Strikers
+						i(160357),	-- Dread Corsair Strikers
+						i(158686),	-- Tidespeaker Slippers
+						i(158688),	-- Darkwater Treads
+						i(158687),	-- Stormchaser Striders
+						i(158685),	-- Dread Corsair Warboots
+					},
+				}),
+				{	-- Gunpowder Plot
+					["questID"] = 51492,	-- Gunpowder Plot
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 136574,	-- Charles Davenport
+					["g"] = {
+						i(160350),	-- Darkwater Handwraps
+						i(160356),	-- Dread Corsair Gloves
+						i(160353),	-- Stormchaser Handguards
+						i(160347),	-- Tidespeaker Grips
+						i(160362),	-- Darkwater Britches
+						i(160368),	-- Dread Corsair Pants
+						i(160365),	-- Stormchaser Pants
+						i(160359),	-- Tidespeaker Pantaloons
+					},
+				},
+				a(q(51711)),	-- Having a Blast
+				q(52068, {	-- Helping Out, Somewhere Else (appears to be a breadcrumb based on wowpedia)
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				un(1, q(50060)),	-- Honey, Slimes! (looks like this never made it out of beta)
+				{	-- I like Turtles
+					["questID"] = 51427,	-- I like Turtles
+					["qg"] = 137453,	-- Loroja <Watcher of Ai'twen>
+					["g"] = {
+						i(160395),	-- Ai'twen's Light
+						i(160396),	-- Ai'twen's Defender
+						i(160352),	-- Darkwater Grasps
+						i(160358),	-- Dread Corsair Grips
+						i(160355),	-- Stormchaser Handcovers
+						i(160349),	-- Tidespeaker Mittens
+					},
+				},
+				un(1, q(51557)),	-- Irontide Warning (possible this did not make it out or beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
+				{	-- Let's Bee Friends
+					["questID"] = 53371,
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["qg"] = 132647,	-- Ancel Mildenhall
+					["sourceQuest"] = 53347,	-- Bumbles the Bee
+					["description"] = "Complete this daily quest 7 times to receive the Bumbles pet in your mailbox.",
+				},
+				a(q(53369)),	-- Make Loh Go
+				un(1, q(50383)),	-- Mankrik's Wrath (looks like this never made it out of beta)
+				a(q(51209)),	-- Mighty Grokkfist
+				a(q(51215)),	-- Milking Goats
+				un(1, q(51202)),	-- Millstone Hamlet Quest Template (looks like this never made it out of beta)
+				q(52069, {	-- More Fodder (noted as breadcrumb on wowhead have not sourced any further)
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				un(1, q(50815)),	-- Orcs Versus Humans (looks like this never made it out of beta)
+				a(q(50679)),	-- Piercing the Shield
+				un(1, q(50907)),	-- Poor Souls (looks like this never made it out of beta)
+				un(1, q(51724)),	-- Powered Up (looks like this never made it out of beta)
+				a(q(50698)),	-- Problem Solving with Gunpowder
+				q(50653, {	-- Reclaiming our Defenses
+					["qg"] = 131003,	-- Specialist Wembley
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160337),	-- Darkwater Footpads
+						i(160343),	-- Dread Corsair Boots
+						i(155232),	-- Proudmoore Battalion Cloak
+						i(160340),	-- Stormchaser Treads
+						i(160334),	-- Tidespeaker Footwraps
+					},
+				}),
+				un(1, q(49742)),	-- Respect Your Elders (looks like this never made it out of beta)
+				q(51221),	-- Response Required
+				un(1, q(50816)),	-- Roarke's Missing (looks like this never made it out of beta)
+				a(q(51723)),	-- Saw Dusted
+				un(1, q(51334)),	-- Securing The Square (looks like this never made it out of beta)
+				un(1, q(49743)),	-- Shoot First, Questions Later (looks like this never made it out of beta)
+				q(53045, {	-- Surveying the Wharf  (appears to be a breadcrumb based on wowpedia)
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(51343),	-- Swimming Lessons
+				a(q(51200)),	-- The Black Sheep
+				un(1, q(50743)),	-- The Immediate Problem (possible this did not make it out or beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
+				a(q(51881)),	-- The Mine Sweeper
+				a(q(50635)),	-- The Shifting Tides
+				a(q(51218)),	-- Undelivered Package
+				q(50956, {	-- Walking-Around Money
+					["qg"] = 134720,	-- Leo Shealds
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+				}),
+				a(q(51204)),	-- WANTED: Razorclaw Alpha
+				h(q(53330)),	-- WANTED: Razorclaw Alpha
+				h(q(53348)),	-- WANTED: Thundersnout
+				a(q(52876)),	-- WANTED: War Gore
+				un(1, q(51708)),	-- Warfang Hold Quest Template (looks like this never made it out of beta)
+				a(q(51222)),	-- What's Yours is Mined
+				a(q(51208)),	-- Wheat A Minute
+				a(q(50773)),	-- You're a Shark
 			}),
 		}),
 	}),

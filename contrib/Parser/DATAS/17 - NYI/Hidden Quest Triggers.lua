@@ -302,6 +302,8 @@ _.NeverImplemented =
 		q(51825),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(54991),	-- Khaz'gorian Smithing Hammer - Anvil created
+		q(53111),	-- triggered when leaving the mob area of Mildenhall Meadery in Stormsong Valley after completing Bumbles the Bee and first daily of Let's Bee Friends
+		q(53200),	-- triggered when leaving the mob area of Mildenhall Meadery in Stormsong Valley after completing Bumbles the Bee and first daily of Let's Bee Friends
 		
 		-- Nazjatar
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
