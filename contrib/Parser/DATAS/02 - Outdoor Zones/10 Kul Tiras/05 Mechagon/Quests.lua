@@ -875,13 +875,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(56754, {	-- Rustbolt Requisitions: Monelite Ore
+				q(56755, {	-- Rustbolt Requisitions: Monelite Ore (A)
+					["qg"] = 149813,	-- Gila Crosswires
+					["coord"] = { 77.7, 40.4, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(56754, {	-- Rustbolt Requisitions: Monelite Ore (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(55382, {	-- Rustbolt Requisitions: Shimmerscale
+				q(55382, {	-- Rustbolt Requisitions: Shimmerscale (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,

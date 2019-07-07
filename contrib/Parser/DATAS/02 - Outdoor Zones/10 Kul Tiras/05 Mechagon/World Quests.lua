@@ -13,6 +13,7 @@ _.Zones =
 				}),
 				q(56397, {	-- CK-9 Micro-Oppression Unit
 					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56393, {	-- Gnomefeaster

@@ -172,8 +172,11 @@ _.Zones =
 					},
 				}),
 				n(151884, {	-- Fungarian Furor
+					["description"] = "When the |cFFFFD700Aid From Nordrassil|r quest is active, fly around the ",
 					["questID"] = 55367,
 					["isDaily"] = true,
+					["coord"] = { 44.5, 41.1, 1462 },	-- center of quest area / area with mushrooms
+					["crs"] = { 135497 },	-- Mushroom that spawns the rare
 					["g"] = {
 						crit(9, {	-- Fungarian Furor
 							["achievementID"] = 13470,	-- Rest in Pistons
