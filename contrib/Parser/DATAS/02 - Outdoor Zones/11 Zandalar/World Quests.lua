@@ -5,6 +5,7 @@ _.Zones =
 {
 	m(875, {		-- Zandalar
 		n(-34,  {	-- World Quests
+			i(158151),	-- Zandalari Band
 			i(163857, {	-- Azerite Armor Cache
 				["bonusID"] = 4818,
 				["ilvl"] = 325,

@@ -363,7 +363,6 @@ _.Zones =
 				i(165684),	-- Gurubashi Empire Greatcloak
 				i(158150),	-- Loa-Pledged Drape
 				i(158152),	-- Golden Empire Signet
-				i(158151),	-- Zandalari Band
 				n(-43, {	-- Cloth
 					i(157907),	-- Shadra Silk Mantle
 					i(157909),	-- Shadra Silk Cuffs

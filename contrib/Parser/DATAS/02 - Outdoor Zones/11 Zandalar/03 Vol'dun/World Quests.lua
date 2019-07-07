@@ -15,6 +15,10 @@ _.Zones =
 							ach(13041),	-- Hungry, Hungry Ranishu
 						},
 					}),
+					q(52849, {	-- Azerite Empowerment
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51422, {	-- Azerite Madness
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -318,7 +322,6 @@ _.Zones =
 				i(158114),	-- Zocalo Stabber
 				i(166673),	-- Devoted Lookout's Windcloak
 				i(158155),	-- Dinobone Charm
-				i(158151),	-- Zandalari Band
 				n(-43, {	-- Cloth
 					i(157937),	-- Sandspinner Headdress
 					i(157939),	-- Sandspinner Mantle
