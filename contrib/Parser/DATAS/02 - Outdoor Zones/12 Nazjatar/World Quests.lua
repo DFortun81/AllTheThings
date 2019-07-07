@@ -17,8 +17,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(6, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(6, {	-- Azanz, the Slitherblade
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
+					}),
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 				},
 			}),
@@ -26,8 +29,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(10, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(10, {	-- Champion Aldrantiss, Defender of Her Kingdom
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
+					}),
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 				},
 			}),
@@ -35,8 +41,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(11, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(11, {	-- Champion Alzana, Arrow of Thunder
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
+					}),
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 				},
 			}),
@@ -44,8 +53,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(12, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(12, {	-- Champion Eldanar, Shield of Her Glory
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
+					}),
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 				},
 			}),
@@ -53,8 +65,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(13, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(13, {	-- Champion Kyx'zhul the Deepspeaker
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
+					}),
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 				},
 			}),
@@ -62,8 +77,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(14, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(14, {	-- Champion Qalina, Spear of Ice
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
+					}),
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 				},
 			}),
@@ -71,8 +89,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(15, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(15, {	-- Champion Vyz'olgo the Mind-Taker
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
+					}),
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 				},
 			}),
@@ -105,8 +126,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(2, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+					crit(2, {	-- Frozen Winds of Zhiela
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
 					}),
 				},
 			}),
@@ -135,8 +159,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(8, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+					crit(8, {	-- Kassar, Wielder of Dark Blades
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
 					}),
 				},
 			}),
@@ -172,11 +199,13 @@ _.Zones =
 				},
 			}),
 			q(56388, {	-- Mindshackle
+				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
 			q(56385, {	-- Pearlhusk Crawler
 				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(56381, {	-- Prince Wiggletail
@@ -336,8 +365,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(5, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+					crit(5, {	-- Starseeker of the Shirakess
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
 					}),
 				},
 			}),
@@ -345,8 +377,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(1, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+					crit(1, {	-- Szun, Breaker of Slaves
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
 					}),
 				},
 			}),
@@ -354,8 +389,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(4, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+					crit(4, {	-- Tempest-Speaker Shalan'ali
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
 					}),
 				},
 			}),
@@ -379,8 +417,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(9, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+					crit(9, {	-- The Zanj'ir Brutalizer
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
 					}),
 				},
 			}),
@@ -396,8 +437,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(7, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+					crit(7, {	-- Undana, Chilling Assassin
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
 					}),
 				},
 			}),
@@ -612,8 +656,11 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 				["g"] = {
-					crit(3, {	-- Nazjatarget Eliminated
-						["achievementID"] = 13690,
+					crit(4, {	-- Defeat one of Azshara's Champions
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+					crit(3, {	-- Zoko, Her Iron Defender
+						["achievementID"] = 13690,	-- Nazjatarget Eliminated
 					}),
 				},
 			}),

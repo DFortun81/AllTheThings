@@ -79,6 +79,11 @@ _.Zones =
 				["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 5.",
+				["g"] = {
+					crit(5, {	-- Level a Nazjatar Ally to Level 5.
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+				},
 			}),
 			q(55984, {	-- A Good Offense
 				["qg"] = 153623,	-- Korl
@@ -111,17 +116,27 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
-			q(55983, {	-- A Safer Place
+			q(55983, {	-- A Safer Place (A)
 				["qg"] = 152084,	-- Mrrl
 				["coord"] = { 48.1, 45.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56156,	-- A Tempered Blade
+				["g"] = {
+					crit(7, {	-- Find and Assist Mrrl
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+				},
 			}),
-			q(55530, {	-- A Safer Place
+			q(55530, {	-- A Safer Place (H)
 				["qg"] = 152084,	-- Mrrl
 				["coord"] = { 48.1, 45.3, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55500,	-- Save a Friend
+				["g"] = {
+					crit(7, {	-- Find and Assist Mrrl
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+				},
 			}),
 			q(56156, {	-- A Tempered Blade
 				["qg"] = 154248,	-- Bladesman Inowari
@@ -203,6 +218,9 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 5.",
 				["g"] = {
+					crit(5, {	-- Level a Nazjatar Ally to Level 5.
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 					i(169908),	-- Cleverly Concealed Supplies
 				},
 			}),
@@ -1038,6 +1056,9 @@ _.Zones =
 							55500,	-- Save A Friend
 						},
 						["g"] = {
+							crit(6, {	-- Defeat one of Mardivas's Laboratory creations
+								["achievementID"] = 13635,	-- Tour of the Depths
+							}),
 							currency(1721),	-- Prismatic Manapearl x5
 						},
 					}),
@@ -1070,17 +1091,14 @@ _.Zones =
 				["qg"] = 152084,	-- Mrrl
 				["races"] = ALLIANCE_ONLY,
 				["coords"] = {
-					{ 46.9, 61.4, 1355 },	-- alliance
-					{ 39.1, 54.3, 1355 },	-- horde
+					{ 46.9, 61.4, 1355 },	-- Alliance
+					{ 39.1, 54.3, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55983,	-- A Safer Place (alliance)
-					55530,	-- A Safer Place (horde)
+					55983,	-- A Safer Place (Alliance)
+					55530,	-- A Safer Place (Horde)
 				},
 				["g"] = {
-					crit(7, {	-- Find and Assist Mrrl
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
 					i(168093),	-- Grimy Manapearl Bracelet
 				},
 			}),
@@ -1753,6 +1771,9 @@ _.Zones =
 					154304,	-- Farseer Ori
 				},
 				["g"] = {
+					crit(5, {	-- Level a Nazjatar Ally to Level 5.
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 					i(169905),	-- Faintly Glowing Supplies
 				},
 			}),

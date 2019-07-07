@@ -8,22 +8,8 @@ _.Zones =
 			n(152415, { -- Alga the Eyeless
 				["allianceQuestID"] = 56604, 
 				["hordeQuestID"] = 56279,
-				["description"] = "Patrols in stealth along the path.",
 				["isDaily"] = true,
-				["coords"] = {
-					{ 52.4, 41.8, 1355 },	-- coord as of build 30613
-					--[[	-- old ptr build coords. Verify if these are even still valid
-					{ 62.1, 50.3, 1355 },
-					{ 60.9, 43.6, 1355 },
-					{ 60.1, 42.8, 1355 },
-					{ 56.9, 44.5, 1355 },
-					{ 55.0, 52.5, 1355 },
-					{ 57.2, 54.5, 1355 },
-					{ 59.0, 53.7, 1355 },
-					{ 60.8, 51.7, 1355 },
-					{ 61.8, 47.7, 1355 },
-					]]--
-				},
+				["coord"] = { 52.4, 41.9, 1355 },	-- coord as of build 30613
 				["g"] = {
 					crit(1, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -54,6 +40,7 @@ _.Zones =
 				},
 			}),
 			n(152794, {	-- Amethyst Spireshell
+				["description"] = "This rare can spawn pretty much anywhere throughout the zone.",
 				["questID"] = 56268,
 				["isDaily"] = true,
 				["coords"] = {

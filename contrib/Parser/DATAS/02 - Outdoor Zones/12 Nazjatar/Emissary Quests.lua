@@ -43,20 +43,18 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 				["g"] = {
-					{	-- Tour of the Depths (Complete an Emissary for your ally in Nazjatar)
-						["achievementID"] = 13635,
-						["criteriaID"] = 1,
-					},
+					crit(1, {	-- Complete an Emissary for your ally in Nazjatar
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 				},
 			}),
 			q(56120, {	-- The Unshackled
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
 				["g"] = {
-					{	-- Tour of the Depths (Complete an Emissary for your ally in Nazjatar)
-						["achievementID"] = 13635,
-						["criteriaID"] = 1,
-					},
+					crit(1, {	-- Complete an Emissary for your ally in Nazjatar
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 				},
 			}),
 		}),

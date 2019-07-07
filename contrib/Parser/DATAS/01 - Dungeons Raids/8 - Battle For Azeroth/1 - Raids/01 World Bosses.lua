@@ -255,6 +255,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					152697,	-- Ulmath
 				},
 				["g"] = bubbleDown({["modID"] = 3 }, {
+					crit(2, {	-- Defeat one of the World Bosses in Nazjatar
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 					i(170089),	-- Liara's Spire
 					i(170093),	-- Tyr'mar's Greatsword
 					i(170091),	-- Willbinder's Halberd
@@ -291,12 +294,15 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2363, {	-- Wekemara
-				["questID"] = 56055,
+				["questID"] = 56055,	-- 56056 according to wowhead
 				["isRaid"] = true,
 				["coord"] = { 42.8, 77.9, 1355 },
 				["maps"] = { 1355 },
 				["crs"] = { 152671 },	-- Wekemara
 				["g"] = bubbleDown({["modID"] = 3}, {
+					crit(2, {	-- Defeat one of the World Bosses in Nazjatar
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 					i(168340),	-- Naga Ritualist's Mantle
 					i(168366),	-- Tidal Lurker's Greathelm
 					i(168351),	-- Spitcharged Shoulderguards
