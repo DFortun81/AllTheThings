@@ -9285,7 +9285,6 @@ app:GetWindow("Unsorted");
 app:GetWindow("Bounty", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
-		self.openedOnLogin = false;
 		self.data = {
 			['text'] = "Bounty",
 			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp", 
@@ -9375,11 +9374,17 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 		BuildGroups(self.data, self.data.g);
 		table.insert(app.RawData, self.data);
 		self.rawData = {};
-		self:SetScript("OnEvent", function(self, e, ...)
+		local function RefreshBounties()
+			for i=1,30,1 do
+				coroutine.yield();
+			end
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
 				self.data.g[1].saved = true;
 				self:SetVisible(true);
 			end
+		end
+		self:SetScript("OnEvent", function(self, e, ...)
+			StartCoroutine("RefreshBounties", RefreshBounties);
 		end);
 		self:RegisterEvent("VARIABLES_LOADED");
 	end
