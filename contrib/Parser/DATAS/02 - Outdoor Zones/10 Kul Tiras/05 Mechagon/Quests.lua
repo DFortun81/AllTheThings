@@ -50,6 +50,11 @@ _.Zones =
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 55373,	-- Knock 'Em Out The Box
 				}),
+				q(56557, {	-- A Little Side Action
+					["qg"] = 155355,	-- Usha Eyegouge
+					["coord"] = { 70.0, 31.1, 1462 },
+					["isDaily"] = true,
+				}),
 				q(55905, {	-- Abduction Reduction
 					["qg"] = 153373,	-- Penny Clobberbottom
 					["coord"] = { 70.9, 37.6, 1462 },
@@ -127,6 +132,12 @@ _.Zones =
 						crit(23, {	-- Advanced Adventurer Augment
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
+					},
+				}),
+				i(169175, {	-- Blueprint: Annoy-o-Tron Gang
+					["questID"] = 55083,
+					["g"] = {
+						ach(13479, crit(35)),	-- Junkyard Architect / Annoy-o-Tron Gang
 					},
 				}),
 				i(169173, {	-- Blueprint: Anti-Gravity Pack
@@ -266,6 +277,13 @@ _.Zones =
 						}),
 					},
 				}),
+				i(168490, {	-- Blueprint: Protocol Transference Device
+					["questID"] = 55069,	-- Blueprint: Protocol Transference Device
+					["crs"] = { 151124 },	-- Mechagonian Nullifier
+					["g"] = {
+						ach(13479, crit(16)),	-- Junkyard Architect / Protocol Transference Device
+					},
+				}),
 				i(168062, {	-- Blueprint: Rustbolt Gramophone
 					["questID"] = 55064,
 					["crs"] = {
@@ -278,14 +296,13 @@ _.Zones =
 					},
 				}),
 				i(168063, {	-- Blueprint: Rustbolt Kegerator
-					["questID"] = 55535,	-- The Tipsy Tinkerer
-					["crs"] = {
-						150937,	-- Sea Spit
-					},
+					["questID"] = 55065,	-- Blueprint: Rustbolt Kegerator
+					["crs"] = { 150937 },	-- Seaspit
 					["g"] = {
-						crit(13, {	-- Rustbolt Kegerator
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
+						ach(13479, crit(13)),	-- Junkyard Architect / Rustbolt Kegerator
+						i(168047, {	-- Rustbolt Kegerator
+							["questID"] = 55535,	-- The Tipsy Tinkerer
+						}),	
 					},
 				}),
 				i(169174, {	-- Blueprint: Rustbolt Pocket Turret

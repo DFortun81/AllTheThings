@@ -267,7 +267,9 @@ _.Zones =
 						crit(1, {	-- Mechagonian Nullifier
 							["achievementID"] = 13470,	-- Rest In Pistons
 						}),
-						i(168490),	-- Blueprint: Protocal Transference Device
+						i(168490, {	-- Blueprint: Protocal Transference Device
+							["questID"] = 55069,	-- Blueprint: Protocal Transference Device
+						}),
 						i(169688),	-- Vinyl: Gnomeragan Forever
 					},
 				}),
@@ -385,7 +387,7 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(168063, {	-- Blueprint: Rustbolt Kegerator
-							["questID"] = 55535,
+							["questID"] = 55065,	-- Rustbolt Kegerator
 						}),
 					},
 				}),
