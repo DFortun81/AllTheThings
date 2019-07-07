@@ -189,9 +189,12 @@ _.Zones =
 				}),
 				i(114877, {	-- Dirty Note
 					["crs"] = { 75043 },	-- Karnoth
+					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = 165,	-- Leatherworking
 					["g"] = {
-						q(36176),	-- A Call for Huntsman
+						q(36176, {	-- A Call for Huntsman
+							["races"] = ALLIANCE_ONLY,
+						}),
 					},
 				}),
 				q(34786, {	-- Engorged Goren
