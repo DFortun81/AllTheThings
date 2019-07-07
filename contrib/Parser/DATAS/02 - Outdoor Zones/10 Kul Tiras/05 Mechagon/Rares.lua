@@ -172,7 +172,7 @@ _.Zones =
 					},
 				}),
 				n(151884, {	-- Fungarian Furor
-					["description"] = "When the |cFFFFD700Aid From Nordrassil|r quest is active, fly around the ",
+					["description"] = "When the |cFFFFD700Aid From Nordrassil|r quest is active, fly around the quest area and look for a mushroom with the NPC ID 135497.  Clicking on that mushroom will spawn the rare.  If no mushroom with that ID is up, you'll need to click on some other ones to try to get the correct one to respawn.",
 					["questID"] = 55367,
 					["isDaily"] = true,
 					["coord"] = { 44.5, 41.1, 1462 },	-- center of quest area / area with mushrooms
