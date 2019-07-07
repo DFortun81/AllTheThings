@@ -85,6 +85,35 @@ _.Zones =
 					["description"] = "Spawns in the building behind The Ring of Blood.  Kill 15 mobs that spawn around him in order to attack him.",
 					["crs"] = { 88210 },	-- Krud the Eviscerator
 				}),
+				ach(8927,  {	-- Nagrandeur (Alliance)
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1, {	-- The Might of Steel and Blood
+							["sourceQuest"] = 34769,	-- A Choice to Make
+						}),
+						crit(2, {	-- The Ring of Trials
+							["sourceQuest"] = 34666,	-- Ring of Trials: Roakk the Zealot
+						}),
+						crit(3, {	-- The Shadow of the Void
+							["sourceQuest"] = 35088,	-- The Shadow of the Void
+						}),
+						crit(4, {	-- The Dark Heart of Oshu'gun
+							["sourceQuest"] = 35396,	-- The Dark Heart of Oshu'gun
+						}),
+						crit(5, {	-- A Blademaster's Honor
+							["sourceQuest"] = 34957,	-- Challenge of the Masters
+						}),
+						crit(6, {	-- Trouble at the Overwatch
+							["sourceQuest"] = 34596,	-- Reglakk's Research
+						}),
+						crit(7, {	-- The Taking of Lok'rath
+							["sourceQuest"] = 35061,	-- The Pride of Lok'rath
+						}),
+						crit(8, {	-- The Legacy of Garrosh Hellscream
+							["sourceQuest"] = 35169,	-- And Justice for Thrall
+						}),
+					},
+				}),
 				ach(9564,  {	-- Securing Draenor (Alliance)
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["races"] = ALLIANCE_ONLY,

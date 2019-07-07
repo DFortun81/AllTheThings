@@ -132,6 +132,17 @@ _.NeverImplemented =
 		q(34053),	-- SoL Conversation Tracker
 		q(36942),	-- Soulbinder Aedraa
 		q(36951),	-- Arakkoa Exodus - offered by garrison bulletin/command board. Duplicate questID
+		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
+		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
+		q(38348),	-- Triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar". Appears to be a duplicate ID
+		
+		q(34679),	-- Nagrand - Alliance Stables Tracking Event
+		q(34680),	-- Nagrand - Alliance Workshop Tracking Event
+		q(37202),	-- Nagrand - Hemet Nesingwary Visitor Tracking Event
+		q(34812),	-- Nagrand - Horde Stables Tracking Event
+		q(34813),	-- Nagrand - Horde Workshop Tracking Event
+		q(34518),	-- Nagrand - Nagrand Corral
+		
 		q(35874),	-- Spires of Arak - Apparatus - triggers after finishing "The Ebon Hunter" quest
 		q(36859),	-- Spires of Arak - Deprecated version of "The Howling Crag" bonus objective
 		q(35201),	-- Spires of Arak - Krixel

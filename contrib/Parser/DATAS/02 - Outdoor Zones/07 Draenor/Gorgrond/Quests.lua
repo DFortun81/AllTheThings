@@ -2245,12 +2245,6 @@ _.Zones =
 						34338,	-- The Descent
 					},
 				},
-				{	-- The Captive Engineer
-					["questID"] = 34030,
-					["qg"] = 77160,	-- Hansel Heavyhands
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34029,	-- The Prototype
-				},
 				{	-- The Crystal Shard
 					["questID"] = 36208,
 					["qg"] = 82610,	-- Rangari Erdanii
@@ -2332,12 +2326,12 @@ _.Zones =
 						i(118010),	-- Waterworn Ogre Carving
 					},
 				},
-				{	-- The Prototype
-					["questID"] = 34029,
+				q(34029, {	-- The Prototype
 					["qg"] = 77160,	-- Hansel Heavyhands
+					["coord"] = { 69.6, 26.1, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34028,	-- These Look Familiar
-				},
+				}),
 				{	-- The Razorbloom
 					["questID"] = 36500,
 					["sourceQuest"] = 35151,	-- Your Base, Your Choice

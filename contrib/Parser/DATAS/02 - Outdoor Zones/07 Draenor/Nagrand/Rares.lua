@@ -73,6 +73,14 @@ _.Zones =
 						i(119405),	-- Durg's Heavy Maul
 					},
 				}),
+				n(82975, {	-- Fangler
+					["questID"] = 35836,
+					["coord"] = { 75.3, 10.9, 550 },
+					["description"] = "Use the |cFFFFD700Abandoned Fishing Rod|r.",
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				n(83483, {	-- Flinthide
 					["questID"] = 35893,
 					["coord"] = { 69.6, 42.0, 550 },
@@ -166,7 +174,8 @@ _.Zones =
 					},
 				}),
 				n(78161, {	-- Hyperious
-					["coord"] = { 87.0, 54.8, 550 },	-- **Coords uncofirmed, relied on wowhead**
+					["questID"] = 34862,
+					["coord"] = { 87.0, 55.0, 550 },
 					["description"] = "Use the 3 braziers around the pit to summon him.",
 					["g"] = {
 						i(116799),	-- Smoldering Heart of Hyperious

@@ -6,6 +6,11 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			n(-17, {	-- Quests
+				prof(794, {	-- Archaeology
+					i(114216, {	-- Pristine Burial Urn
+						["questID"] = 36772,
+					}),
+				}),
 				garrisonBuilding(10,  {	-- Dwarven Bunker (rank 1: 8, rank 2: 9, rank 3: 10)
 					q(37092, {	-- Scraps of Iron
 						["qg"] = 77377,	-- Kristen Stoneforge
@@ -92,6 +97,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(161, {	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						q(37082),	-- Call of the Gladiator
 						q(37083, {	-- Fight, Kill, Salute!
 							i(120142, {	-- Coliseum Champion's Spoils
 								i(119217),	-- Alliance Flag of Victory
@@ -1488,6 +1494,10 @@ _.ExpansionFeatures =
 						["qg"] = 86973,	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(36274, {	-- Bigger Trap, Better Rewards
+						["qg"] = 84524,	-- Homer Stonefield
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(36997, {	-- Boar Training: Bulbapore
 						["qg"] = 86973,	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
@@ -1818,9 +1828,28 @@ _.ExpansionFeatures =
 				n(-152,  {	-- Garrison Campaign
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						q(35837, {	-- Garrison Campaign: Deep Recon
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(34026, {	-- Garrison Campaign: Seismic Matters
 							["qg"] = 77209,	-- Baros Alexston
 							["coord"] = { 29.2, 33.1, 582 },	-- garrison lvl 3
+						}),
+						q(35985, {	-- Garrison Campaign: The Broken Precipice
+							["qg"] = 88892,	-- Nixxie
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(36219, {	-- Garrison Campaign: The Ring of Blood
+							["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+						}),
+						q(36280, {	-- Garrison Campaign: The Ring of Blood
+							["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
+						}),
+						q(36281, {	-- Garrison Campaign: The Ring of Blood
+							["description"] = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+						}),
+						q(36282, {	-- Garrison Campaign: The Ring of Blood
+							["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
 						}),
 						q(34027, {	-- Groundbreaking Data
 							["qg"] = 77217,	-- Jr. Surveyor Dorn
@@ -2468,6 +2497,7 @@ _.ExpansionFeatures =
 					["lvl"] = 98,
 					["coord"] = { 38.2, 37.0, 582 },	-- garrison lvl 3
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						36601,	-- News From Nagrand (Shadow-sage Iskar)
 						36606,	-- News From Nagrand (Lieutenant Willem)
@@ -2500,6 +2530,13 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(37848, {	-- Treasure Contract: Amulet of Rukhmar
+					["isDaily"] = true,
+					["qgs"] = {
+						89793,	-- Harrison Jones
+						92223,	-- Surveyor Daltry
+					},
+				}),
+				q(37788, {	-- Treasure Contract: Gutrek's Cleaver
 					["isDaily"] = true,
 					["qgs"] = {
 						89793,	-- Harrison Jones

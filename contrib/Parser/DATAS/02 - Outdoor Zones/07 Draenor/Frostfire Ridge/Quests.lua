@@ -320,6 +320,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34230,	-- Eye Need That
 				},
+				q(34033, {	-- And The Mole You Rode In On
+					["qg"] = 77167,	-- Thaelin Darkanvil (Dark Iron Golem)
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34032,	-- Privileged Information
+				}),
 				{	-- Anglin' In Our Garrison
 					["questID"] = 36132,
 					["qg"] = 79896,	-- Mokugg Lagerpounder
@@ -671,6 +676,12 @@ _.Zones =
 					["coord"] = { 21.6, 55.0, 525 },
 					["races"] = HORDE_ONLY,
 				},
+				q(34048, {	-- "Mole Machine, Go Home"
+					["qg"] = 77167,	-- Thaelin Darkanvil (Dark Iron Golem)
+					["coord"] = { 88.4, 49.4, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34030,	-- The Captive Engineer
+				}),
 				{	-- Mopping Up
 					["questID"] = 33412,
 					["qg"] = 81678,	-- Snowrunner Rolga
@@ -745,6 +756,14 @@ _.Zones =
 					["coord"] = { 52.6, 40.4, 525 },
 					["races"] = HORDE_ONLY,
 				},
+				q(34032, {	-- Privileged Information
+					["qg"] = 77167,	-- Thaelin Darkanvil (Dark Iron Golem)
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						34048,	-- "Mole Machine, Go Home"
+						34031,	-- Something to Remember Me By
+					},
+				}),
 				{	-- Proving Your Worth
 					["questID"] = 36131,
 					["qg"] = 79896,	-- Mokugg Lagerpounder
@@ -848,6 +867,12 @@ _.Zones =
 					["coord"] = { 65.0, 39.5, 525 },
 					["races"] = HORDE_ONLY,
 				},
+				q(34031, {	-- Something to Remember Me By
+					["qg"] = 77167,	-- Thaelin Darkanvil (Dark Iron Golem)
+					["coord"] = { 88.4, 49.4, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34030,	-- The Captive Engineer
+				}),
 				{	-- Stealing the Declaration
 					["questID"] = 36475,
 					["qg"] = 85440,	-- Nicholaus Page
@@ -891,6 +916,12 @@ _.Zones =
 					["questID"] = 35251,
 					["u"] = 1,
 				},
+				q(34030, {	-- The Captive Engineer
+					["qg"] = 77160,	-- Hansel Heavyhands
+					["coord"] = { 86.3, 48.9, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34029,	-- The Prototype
+				}),
 				{	-- The Cure
 					["questID"] = 33454,
 					["qg"] = 74635,	-- Igrimar the Resolute

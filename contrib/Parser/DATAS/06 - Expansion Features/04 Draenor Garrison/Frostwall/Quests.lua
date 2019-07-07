@@ -7,6 +7,11 @@ _.ExpansionFeatures =
 		h(m(590, {	-- Frostwall
 			["g"] = {
 				nh(-17, { 	-- Quests
+					prof(794, {	-- Archaeology
+						i(114216, {	-- Pristine Burial Urn
+							["questID"] = 36772,
+						}),
+					}),
 					ach(8671, {	-- You'll Get Caught Up In The... Frostfire!
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -1543,6 +1548,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					garrisonBuilding(161, {	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
+						q(37082),	-- Call of the Gladiator
 						q(37083, {
 							i(120142, {
 								i(119218),
@@ -1624,6 +1630,10 @@ _.ExpansionFeatures =
 							["qg"] = 86979,	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
 						},
+						q(36346, {	-- Bigger Trap, Better Rewards
+							["qg"] = 85048,	-- Farmer Lok'lub
+							["races"] = HORDE_ONLY,
+						}),
 						{	-- Boar Training: Bulbapore
 							["questID"] = 37034,
 							["qg"] = 86979,	-- Tormak the Scarred
@@ -2397,17 +2407,35 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(-152, {	-- Garrison Campaign
+						q(35843, {	-- Garrison Campaign: Deep Recon
+							["races"] = HORDE_ONLY,
+						}),
+						q(36117, {	-- Garrison Campaign: The Broken Precipice
+							["qg"] = 88892,	-- Nixxie
+							["races"] = HORDE_ONLY,
+						}),
+						q(36219, {	-- Garrison Campaign: The Ring of Blood
+							["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+						}),
+						q(36280, {	-- Garrison Campaign: The Ring of Blood
+							["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
+						}),
+						q(36281, {	-- Garrison Campaign: The Ring of Blood
+							["description"] = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+						}),
+						q(36282, {	-- Garrison Campaign: The Ring of Blood
+							["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+						}),
 						q(35195, {
 							i(119134),	-- Toy
 						}),
 						q(32985, {
 							i(119145),	-- Toy
 						}),
+						q(38567, {	-- Garrison Campaign: War Council
+							["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
+						}),
 					}),
-					{	-- Garrison Campaign: War Council
-						["questID"] = 38567,
-						["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
-					},
 					{	-- It's a Matter of Strategy
 						["questID"] = 34681,
 						["qg"] = 78487,	-- Rokhan
@@ -2553,6 +2581,13 @@ _.ExpansionFeatures =
 							92223,	-- Surveyor Daltry
 						},
 					},
+					q(37788, {	-- Treasure Contract: Gutrek's Cleaver
+						["isDaily"] = true,
+						["qgs"] = {
+							89793,	-- Harrison Jones
+							92223,	-- Surveyor Daltry
+						},
+					}),
 					{	-- Upgrades in Ashran
 						["questID"] = 37290,
 						["qg"] = 78466,	-- Gazlowe

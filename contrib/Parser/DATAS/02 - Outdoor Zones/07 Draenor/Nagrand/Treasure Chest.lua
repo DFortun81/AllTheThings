@@ -922,6 +922,13 @@ _.Zones =
 						i(116760),	-- Saberon-Fang Shanker
 					},
 				}),
+				o(233973, {	-- Bounty of the Elements
+					["questID"] = 36174,
+					["coord"] = { 77.1, 16.6, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(233137, {	-- Burning Blade Cache
 					["questID"] = 35696,
 					["coord"] = { 85.4, 53.46, 550 },
@@ -1060,6 +1067,41 @@ _.Zones =
 						i(117981),	-- Fragment of Oshu'gun
 					},
 				}),
+				o(233539, {	-- Genedar Debris
+					["questID"] = 35987,
+					["coord"] = { 43.2, 57.6, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(233549, {	-- Genedar Debris
+					["questID"] = 35999,
+					["coord"] = { 48.1, 60.1, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(233551, {	-- Genedar Debris
+					["questID"] = 36002,
+					["coord"] = { 44.7, 67.6, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(233555, {	-- Genedar Debris
+					["questID"] = 36008,
+					["coord"] = { 48.6, 72.8, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(233557, {	-- Genedar Debris
+					["questID"] = 36011,
+					["coord"] = { 55.3, 68.3, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(233134, {	-- Golden Kaliri Egg
 					["questID"] = 35694,
 					["coord"] = { 58.3, 52.5, 550 },
@@ -1093,6 +1135,13 @@ _.Zones =
 					["coord"] = { 61.8, 57.5, 550 },
 					["g"] = {
 						i(116687),	-- Oshu'gun Amulet
+					},
+				}),
+				o(233032, {	-- Mountain Climber's Pack
+					["questID"] = 35643,
+					["coord"] = { 70.5, 13.8, 550 },
+					["g"] = {
+						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233618, {	-- Ogre Beads

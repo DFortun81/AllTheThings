@@ -122,18 +122,23 @@ _.ExpansionFeatures =
 					}),
 					ach(8933),		-- Staying Regular
 					ach(9491, {	-- The Garrison Campaign (Alliance)
-						crit(11),		-- A Strike at the Heart
-						crit(7),		-- Bloodmaul Compound
-						crit(8),		-- Broken Precipice
-						crit(3),		-- Darktide Roost
-						crit(10),		-- Heart of the Breakers
-						crit(4),		-- Iron Siegeworks
-						crit(12),		-- Primal Fury
-						crit(9),		-- The Exarch's Call
-						crit(6),		-- The Fall of Shattrath
-						crit(5),		-- The Ring of Blood
-						crit(2),		-- The Sargerei
-						crit(1),		-- The Warlord's Council
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							crit(1),	-- The Warlord's Council
+							crit(2),	-- The Sargerei
+							crit(3),	-- Darktide Roost
+							crit(4, {	-- Iron Siegeworks
+								["sourceQuest"] = 34033,	-- And The Mole You Rode In On
+							}),
+							crit(5),	-- The Ring of Blood
+							crit(6),	-- The Fall of Shattrath
+							crit(7),	-- Bloodmaul Compound
+							crit(8),	-- Broken Precipice
+							crit(9),	-- The Exarch's Call
+							crit(10),	-- Heart of the Breakers
+							crit(11),	-- A Strike at the Heart
+							crit(12),	-- Primal Fury
+						},
 					}),
 					n(-104, {	-- Barracks
 						ach(9499, {		-- Wingmen
