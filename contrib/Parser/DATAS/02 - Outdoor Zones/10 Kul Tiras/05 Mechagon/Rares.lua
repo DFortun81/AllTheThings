@@ -172,6 +172,7 @@ _.Zones =
 						i(170466),	-- Junkyard Motivator
 						i(170470),	-- Reinforced Grease Deflector
 						i(170467),	-- Whirring Chainblade
+						i(170468),	-- Supervolt Zapper
 						i(169174, {	-- Blueprint: Rustbolt Pocket Turret
 							["questID"] = 55082,
 						}),
@@ -386,7 +387,7 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(168001, {	-- Paint Vial: Big-ol Bronze
-							["questID"] = 55454, -- Paint Vial: Big-ol Bronze
+							["questID"] = 55517, -- Paint Vial: Big-ol Bronze
 						}),
 					},
 				}),
