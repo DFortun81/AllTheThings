@@ -433,6 +433,7 @@ _.Zones =
 							i(37081),	-- Meathook's SLicer
 							i(151451),	-- Strip-Thorn Gauntlets (Razorlash)?
 							i(6341),	-- Eerie-Stable Lantern
+							i(1292),    -- Butcher's Cleaver
 						}),
 						crit(26, {	-- Discs of Norgannon
 							["achievementID"] = 13556,	-- Outside Influences
