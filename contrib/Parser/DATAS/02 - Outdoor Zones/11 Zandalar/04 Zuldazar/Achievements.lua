@@ -226,7 +226,10 @@ _.Zones =
 				}),
 				ach(13027, {	-- Mushroom Harvest
 					n(143314, {	-- Bane of the Woods
-						crit(2),	-- Bane of the Woods
+						["coord"] = { 45.6, 79.0, 862 },
+						["g"] = {
+							crit(2),	-- Bane of the Woods
+						},
 					}),
 				}),
 				ach(12481, {	-- The Final Seal

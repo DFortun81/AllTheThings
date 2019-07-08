@@ -33,6 +33,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51179, {	-- Azerite Madness
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52877, {	-- Azerite Mining
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -85,6 +89,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51815, {	-- Eggstermination
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50969, {	-- Emergency Management
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -234,6 +243,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52248, {	-- The Shores of Xibala
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50850, {	-- Tia'Kawan
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

@@ -72,6 +72,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(52865, {	-- Blockade Runner
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(53286, {	-- Blooming Siren's Sting
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -171,6 +176,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52939, {	-- Ordnance Orders [Alliance]
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52964, {	-- Pest Problem
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -278,6 +288,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(52432, {	-- Squall
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52322, {	-- Taja the Tidehowler
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -288,6 +302,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52166, {	-- The Faceless Herald
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52476, {	-- The Lichen King
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

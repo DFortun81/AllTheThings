@@ -41,6 +41,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51652, {	-- Barman Bill
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51666, {	-- Bashmu
 						["lvl"] = 120,
 						["collectible"] = false,

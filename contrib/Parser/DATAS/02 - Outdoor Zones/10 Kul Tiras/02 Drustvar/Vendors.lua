@@ -8,7 +8,8 @@ _.Zones =
 		m(896, {	-- Drustvar
 			n(-2, {	-- Vendors
 				n(142197, {	-- Nigel Rifthold <Adventurer's Society>
-					["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",	
+					["coord"] = { 52.2, 31.6, 896 },
+					["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",	
 					["g"] = {
 						i(163036, {	-- Polished Pet Charm
 						--Note!! Write the item like this on this vendor to prevent the description from being written on the charms.

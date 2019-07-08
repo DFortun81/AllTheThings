@@ -7,6 +7,11 @@ _.Zones =
 		m(896, {	-- Drustvar
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
+					q(51687, {	-- A Smelly Solution
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51466, {	-- Arvon the Betrayed
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -33,6 +38,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52872, {	-- Azerite Mining
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51615, {	-- Azerite Mining
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -155,6 +164,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 30.04, 40.55, 896 },
+						["collectible"] = false,
+					}),
+					q(51887, {	-- Fungi Trio
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51909, {	-- Grozgore

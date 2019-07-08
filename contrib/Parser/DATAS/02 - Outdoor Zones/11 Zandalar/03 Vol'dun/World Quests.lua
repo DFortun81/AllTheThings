@@ -228,6 +228,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51114, {	-- Warmother Captive
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52864, {	-- What Do You Mean, Mind Controlling Plants?
 						["qg"] = 141969,	-- Spineleaf
 						["lvl"] = 120,

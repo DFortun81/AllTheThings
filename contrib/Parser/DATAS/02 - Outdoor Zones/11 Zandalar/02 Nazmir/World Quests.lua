@@ -82,6 +82,14 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54512, {	-- Cleansing Tide (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["g"] = {
+							ach(13426),	-- Come On and Slam
+						},
+					}),
 					q(52779, {	-- Crawg in the Bog
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -168,6 +176,10 @@ _.Zones =
 						["collectible"] = false,
 						["requireSkill"] = 186,	-- Mining
 					}),
+					q(50517, {	-- Mala'kili and Rohnkor
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52754, {	-- Marshdwellers
 						["lvl"] = 120,
 						["qg"] = 141529,	-- Lozu
@@ -210,9 +222,24 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51154, {	-- Past Due
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54680, {	-- Plague Master Herbert (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52006, {	-- Preemptive Assault
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54693, {	-- Pterror of the Horde (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50786, {	-- Revenge of Krag'wa
