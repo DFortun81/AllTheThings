@@ -56,7 +56,9 @@ _.Zones =
 						crit(25, {	-- Boilburn
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167042),	-- Blueprint: Scrap Trap
+						i(167042, {	-- Blueprint: Scrap Trap
+							["questID"] = 55030,
+						}),
 					},
 				}),
 				n(151308, {	-- Boggac Skullbash
@@ -108,12 +110,14 @@ _.Zones =
 							["questID"] = 55452, -- Paint Vial: Fel Mint Green
 						}),
 						i(169168, {  -- Blueprint: Green Spraybot
-							["questID"] = 55077,
+							["questID"] = 55076,
 						}),
 						i(169169, {	-- Blueprint: Blue Spraybot
 							["questID"] = 55077,
 						}),
-						i(167793),  -- Paint Vial: Overload Orange
+						i(167793, {  -- Paint Vial: Overload Orange
+							["questID"] = 55457,
+						}),
 					},
 				}),
 				n(151569, {	-- Deepwater Maw
@@ -152,7 +156,9 @@ _.Zones =
 						crit(21, {	-- Earthbreaker Gulroc
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167042),	-- Blueprint: Scrap Trap
+						i(167042, {	-- Blueprint: Scrap Trap
+							["questID"] = 55030,
+						}),
 					},
 				}),
 				n(154153, {	-- Enforcer KX-T57
@@ -194,7 +200,9 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(169379),	-- Snowsoft Nibbler
-						i(167793),	-- Paint Vial: Overload Orange
+						i(167793, {  -- Paint Vial: Overload Orange
+							["questID"] = 55457,
+						}),
 					},
 				}),
 				n(153228, {	-- Gear Checker Cogstar -- possibly 154184?

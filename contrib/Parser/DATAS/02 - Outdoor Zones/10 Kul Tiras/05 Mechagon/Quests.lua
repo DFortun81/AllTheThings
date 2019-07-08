@@ -242,22 +242,17 @@ _.Zones =
 						}),
 					},
 				}),
-				i(167846, {	-- Blueprint: Mechano-Treat
-					["questID"] = 55061,
-					["crs"] = {
-						151625,	-- The Scrap King
-					},
+				q(55061, {	-- Blueprint: Mechano-Treat
+				--	["crs"] = {
+				--		151625,	-- The Scrap King
+				--	},
 					["g"] = {
 						crit(9, {	-- Mechano-Treat
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(169167, {	-- Blueprint: Orange Spraybot
-					["questID"] = 55075,
-					["crs"] = {
-						152569,	-- Crazed Trogg
-					},
+				q(55075, {	-- Blueprint: Orange Spraybot
 					["g"] = {
 						crit(27, {	-- Orange Spraybot
 							["achievementID"] = 13479,	-- Junkyard Architect
@@ -276,61 +271,38 @@ _.Zones =
 						}),
 					},
 				}),
-				i(168490, {	-- Blueprint: Protocol Transference Device
-					["questID"] = 55069,	-- Blueprint: Protocol Transference Device
-					["crs"] = { 151124 },	-- Mechagonian Nullifier
+				q(55069, {	-- Blueprint: Protocol Transference Device
 					["g"] = {
 						ach(13479, crit(16)),	-- Junkyard Architect / Protocol Transference Device
 					},
 				}),
-				i(168062, {	-- Blueprint: Rustbolt Gramophone
-					["questID"] = 55064,
-					["crs"] = {
-						153226,	-- Steel Singer Freza
-					},
+				q(55064, {	-- Blueprint: Rustbolt Gramophone
 					["g"] = {
 						crit(12, {	-- Rustbolt Gramophone
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(168063, {	-- Blueprint: Rustbolt Kegerator
-					["questID"] = 55065,	-- Blueprint: Rustbolt Kegerator
-					["crs"] = { 150937 },	-- Seaspit
+				q(55065, {	-- Blueprint: Rustbolt Kegerator
 					["g"] = {
 						ach(13479, crit(13)),	-- Junkyard Architect / Rustbolt Kegerator
-						i(168047, {	-- Rustbolt Kegerator
-							["questID"] = 55535,	-- The Tipsy Tinkerer
-						}),	
 					},
 				}),
-				i(169174, {	-- Blueprint: Rustbolt Pocket Turret
-					["questID"] = 55082,
-					["crs"] = { 56207 },	-- Enforcer KX-T57
+				q(55082, {	-- Blueprint: Rustbolt Pocket Turret
 					["g"] = {
 						crit(34, {	-- Rustbolt Pocket Turret
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(167042, {	-- Blueprint: Scrap Trap
-					["questID"] = 55030,
-					["crs"] = {
-						153200,	-- Boilburn
-						150342,	-- Earthbreaker Gulroc
-						151202,	-- Foul Manifestation
-					},
+				q(55030, {	-- Blueprint: Scrap Trap
 					["g"] = {
 						crit(2, {	-- Scrap Trap
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(167843, {	-- Blueprint: Vaultbot Key
-					["questID"] = 55058,
-					["crs"] = {
-						150394,	-- Armored Vaultbot
-					},
+				q(55058, {	-- Blueprint: Vaultbot Key
 					["g"] = {
 						crit(6, {	-- Vaultbot Key
 							["achievementID"] = 13479,	-- Junkyard Architect
