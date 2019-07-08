@@ -212,7 +212,9 @@ _.Zones =
 						crit(28, {	-- Gear Checker Cogstar
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167847),	-- Blueprint: Ultrasafe Transporter: Mechagon
+						i(167847, {	-- Blueprint: Ultrasafe Transporter: Mechagon
+							["questID"] = 55062,
+						}),
 					},
 				}),
 				n(153205, {	-- Gemicide
@@ -235,7 +237,9 @@ _.Zones =
 						crit(33, {	-- Gorged Gear-Cruncher
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167846),	-- Blueprint: Mechano-Treat
+						i(167846, {	-- Blueprint: Mechano-Treat
+							["questID"] = 55061,
+						}),
 					},
 				}),
 				n(151684, {	-- Jawbreaker
@@ -249,7 +253,7 @@ _.Zones =
 						i(168908, {	-- Blueprint: Experimental Adventurer Augment
 							["questID"] = 56087,
 						}),
-						i(168752),	-- Omnipurpose Efficient Logic Board (possibly random drop from rares? I got one, but my friend didn't)
+						i(168752),	-- Omnipurpose Efficient Logic Board
 					},
 				}),
 				n(152007, {	-- Killsaw
@@ -293,7 +297,9 @@ _.Zones =
 						i(168490, {	-- Blueprint: Protocal Transference Device
 							["questID"] = 55069,	-- Blueprint: Protocal Transference Device
 						}),
-						i(169688),	-- Vinyl: Gnomeragan Forever
+						i(169688, {	-- Vinyl: Gnomeragan Forever
+							["questID"] = 56515,
+						}),
 					},
 				}),
 				n(151672, {	-- Mecharantula
@@ -329,7 +335,9 @@ _.Zones =
 						crit(22, {	-- Ol' Big Tusk
 							["achievementID"] = 13470,	-- Rest In Pistons
 						}),
-						i(169691),	-- Vinyl: Depths of Ulduar
+						i(169691, {	-- Vinyl: Depths of Ulduar
+							["questID"] = 56518, -- Vinyl: Depths of Ulduar
+						}),
 						i(170466),  -- Junkyard Motivator
 					},
 				}),
@@ -339,7 +347,9 @@ _.Zones =
 						crit(12, {	-- OOX-Avenger/MG
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(168492),	-- Blueprint: Emergency Rocket Chicken
+						i(168492, {	-- Blueprint: Emergency Rocket Chicken
+							["questID"] = 55071,
+						}),
 					},
 				}),
 				n(152764, {	-- Oxidized Leachbeast
@@ -374,7 +384,9 @@ _.Zones =
 						crit(6, {	-- Rumblerocks
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(168001),	-- Paint Vial: Big-ol Bronze
+						i(168001, {	-- Paint Vial: Big-ol Bronze
+							["questID"] = 55454, -- Paint Vial: Big-ol Bronze
+						}),
 					},
 				}),
 				n(152182, {	-- Rustfeather
@@ -484,7 +496,9 @@ _.Zones =
 						crit(2, {	-- The Scrap King
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167846),	-- Blueprint: Mechano-Treat
+						i(167846, {	-- Blueprint: Mechano-Treat
+							["questID"] = 55061,
+						}),
 					},
 				}),
 				n(151940, {	-- Uncle T'Rogg
@@ -500,7 +514,9 @@ _.Zones =
 				}),
 				-- Shared Rares Drop
 				i(168327),	-- Chain Ignitercoil
-				i(170147),	-- Paint Bottle: Goblin Green(Treasure drop in chromie side, but maybe zone?)
+				i(170147, {	-- Paint Bottle: Goblin Green(Treasure drop in chromie side, but maybe zone?)
+					["questID"] = 56908,
+				}),
 			}),
 		}),
 	}),
