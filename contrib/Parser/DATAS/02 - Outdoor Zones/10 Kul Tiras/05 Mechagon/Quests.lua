@@ -432,8 +432,8 @@ _.Zones =
 					["coord"] = { 58.9, 31.7, 1462 },
 					["qg"] = 153750,	-- Koupal Oilshins
 				}),
-				i(169691, {	-- Vinyl: Depths of Ulduar
-					["questID"] = 56518,	-- Vinyl: Depths of Ulduar
+				q(56518, {	-- Vinyl: Depths of Ulduar
+				--	["questID"] = 56518,	-- Vinyl: Depths of Ulduar
 					["coord"] = { 70.3, 30.2, 862 },
 					["g"] = {
 						crit(5, {	-- Junkyard Melomaniac
@@ -446,6 +446,23 @@ _.Zones =
 					["coord"] = { 72.0, 36.5, 1462 },
 					["isDaily"] = true,
 					["g"] = {
+						n(152961, {	-- Data Anomaly Balnazzar
+							i(168631),	-- Metal Detector
+							i(169169, { -- Blueprint: Blue Spraybot (any)
+								["questID"] = 55077,	-- Blueprint: Blue Spraybot
+							}),
+							i(169690),	-- Vinyl: Battle of Gnomeregan (any)
+							i(18507),	-- Boots of the Full Moon
+							i(16844),	-- Earthfury Epaulets (Geddon?)
+							i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
+								["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+							}),
+							i(13349),	-- Demonshear (Balnazaar?)
+							i(11764),	-- Cinderhide Armsplints
+							i(37081),	-- Meathook's SLicer
+							i(151451),	-- Strip-Thorn Gauntlets (Razorlash)?
+							i(6341),	-- Eerie-Stable Lantern
+						}),
 						crit(26, {	-- Discs of Norgannon
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
