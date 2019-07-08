@@ -13,59 +13,9 @@ _.Achievements =
 					un(2, ach(1766)),		-- Ancient Protector
 					un(2, ach(2189)),		-- Artillery Expert
 					un(2, ach(1763)),		-- Artillery Veteran
-					un(2, ach(9102)),		-- Ashran Victory
 					un(2, h(ach(449, {		-- Blood Guard
 						un(39, h(title(21))),	-- Blood Guard
 					}))),
-					{	-- Bounty Hunter
-						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-						["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
-						["g"] = {
-							{	-- Pandaren Hide
-								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-								["criteriaID"] = 1,					-- Pandaren Hide
-								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
-							},
-							{	-- Blood Elf Ear // Worgen Snout
-								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-								["criteriaID"] = 2,					-- Blood Elf Ear // Worgen Snout 
-								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
-							},
-							{	-- Tauren Hoof // Severed Night Elf Head
-								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-								["criteriaID"] = 3,					-- Tauren Hoof // Severed Night Elf Head
-								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
-							},
-							{	-- Orc Tooth // Dwarf Spine
-								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-								["criteriaID"] = 4,					-- Orc Tooth // Dwarf Spine
-								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
-							},
-							{	-- Troll Feet // Tuft of Gnome Hair
-								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-								["criteriaID"] = 5,					-- Troll Feet // Tuft of Gnome Hair
-								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
-							},
-							{	-- Forsaken Brains // Human Bone Chip
-								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-								["criteriaID"] = 6,					-- Forsaken Brains // Human Bone Chip
-								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
-							},
-							{	-- Goblin Nose // Draenei Tail
-								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
-								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-								["criteriaID"] = 7,					-- Goblin Nose // Draenei Tail
-								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
-							},
-						},
-					},
 					un(2, ach(12180)),		-- Catching Twenty-Two
 					un(2, h(ach(448, {		-- Centurion
 						un(39, h(title(23))),	-- Centurion
@@ -98,7 +48,6 @@ _.Achievements =
 					}))),
 					un(2, ach(12182)),		-- Demonic Double Dozen
 					un(2, ach(11687)),		-- Demonic Dozen
-					un(2, ach(9222)),		-- Divide and Conquer
 					un(2, a(ach(12137, {	-- Dominant Combatant (Alliance)
 						crit(1),				-- Win 100 Arena (3v3) matches in Legion Season 6
 						crit(2),				-- Win 40 Rated Battleground Matches in Legion Season 6
@@ -109,7 +58,6 @@ _.Achievements =
 					}))),
 					un(2, ach(11471)),		-- Don't Hate, Grind to Eight
 					un(2, ach(12108)),		-- Double Decade of Dominance
-					un(2, a(ach(9228))),	-- Down Goes Van Rook
 					un(2, ach(2190)),		-- Drop It Now!
 					un(2, ach(1764)),		-- Drop It!
 					un(2, ach(11693)),		-- Eighteen and Over
@@ -132,11 +80,7 @@ _.Achievements =
 					un(2, ach(11692)),		-- Going On Seventeen
 					un(2, a(ach(433, {		-- Grand Marshal
 						un(39, a(title(14))),	-- Grand Marshal
-					}))),
-					un(2, ach(9220, {		-- Grand Theft, 3rd Degree
-							un(2, ach(9219)),	-- Grand Theft, 2nd Degree
-							un(2, ach(9218)),	-- Grand Theft, 1st Degree
-					})),
+					}))),				
 					un(2, a(ach(8485))),	-- Grievous Combatant (Alliance)
 					un(2, h(ach(8484))),	-- Grievous Combatant (Horde)
 					un(2, a(ach(8382))),	-- Grievous Conquest (Alliance)
@@ -151,20 +95,8 @@ _.Achievements =
 					un(2, h(ach(9215))),	-- Hero of Warspear - This requires a rep at Exalted
 					un(2, h(ach(443, {		-- High Warlord
 						un(39, h(title(28))),	-- High Warlord
-					}))),
-					un(2, ach(9216, {		-- High-value Targets - The criteria are NPCs with item drops
-							crit(1),			-- Elder Darkweaver Kath
-							crit(2),			-- Ancient Inferno
-							crit(3),			-- Panthora
-							crit(4),			-- Mandragoraster
-							crit(5),			-- Titarus
-							crit(6),			-- Brickhouse
-							crit(7),			-- Korthall Soulgorger
-							crit(8),			-- Oraggro
-							crit(9),			-- Goregore
-					})),
+					}))),	
 					un(2, h(ach(617))),		-- Immortal No More
-					un(2, ach(9106)),		-- Just for Me
 					un(2, a(ach(439, {		-- Knight
 						un(39, a(title(6))),	-- Knight
 					}))),
@@ -209,8 +141,6 @@ _.Achievements =
 					}))),
 					un(2, a(ach(1762))),	-- Not Even a Scratch (Alliance)
 					un(2, h(ach(2192))),	-- Not Even a Scratch (Horde)
-					un(2, a(ach(9408))),	-- Operation Counterattack (Alliance)
-					un(2, h(ach(9217))),	-- Operation Counterattack (Horde)
 					un(2, a(ach(610))),		-- Orgrimmar Offensive
 					un(2, ach(12183)),		-- Prestige Quartermaster
 					un(2, a(ach(8642))),	-- Prideful Combatant (Alliance)
@@ -248,36 +178,7 @@ _.Achievements =
 					un(2, ach(1310)),		-- Storm the Beach
 					un(2, ach(1309, {		-- Strand of the Ancients Veteran
 							un(2, ach(1308)),	-- Strand of the Ancients Victory
-					})),
-					un(2, a(ach(9225, {		-- Take Them Out
-							crit(1),			-- Captain Hoodrych
-							crit(2),			-- Elementalist Novo
-							crit(3),			-- Elliott Van Rook
-							crit(4),			-- Jared V. Hellstrike
-							crit(5),			-- Kaz Endsky
-							crit(6),			-- Lord Mes
-							crit(7),			-- Mindbender Talbadar
-							crit(8),			-- Mor'riz
-							crit(9),			-- Necrolord Azael
-							crit(10),			-- Soulbrewer Nadagast
-							crit(11),			-- Razor Guerra
-							crit(12),			-- Rifthunter Yoske
-							crit(13),			-- Vanguard Samuelle
-					}))),
-					un(2, h(ach(9224, {		-- Take Them Out
-							crit(1),			-- Alune Windmane
-							crit(2),			-- Anne Otther
-							crit(3),			-- Avenger Turley
-							crit(4),			-- Chani Malflame
-							crit(5),			-- Hildie Hackerguard
-							crit(6),			-- Jackson Bajheera
-							crit(7),			-- John Swifty
-							crit(8),			-- Malda Brewbelly
-							crit(9),			-- Mathias Zunn
-							crit(10),			-- Shani Freezewind
-							crit(11),			-- Taylor Dewland
-							crit(12),			-- Tosan Galaxyfist
-					}))),
+					})),				
 					un(2, ach(1174, {		-- The Arena Master
 						un(39, title(50)),	-- Arena Master
 					})),
@@ -285,26 +186,15 @@ _.Achievements =
 					un(2, ach(11469)),		-- The River Six
 					un(2, ach(11686)),		-- These Go To Eleven
 					un(2, ach(10993)),		-- Third Time's The Charm
-					un(2, a(ach(9714))),	-- Thy Kingdom Come (Alliance)
-					un(2, h(ach(9715))),	-- Thy Kingdom Come (Horde)
 					{	-- Top Honors
 						["allianceAchievementID"] = 10988,	-- Top Honors [Alliance]
 						["hordeAchievementID"] = 10990,		-- Top Honors [Horde]
 						["u"] = 2,							-- Removed in Patch 8.0
 					},
-					un(2, ach(9105, {		-- Tour of Duty
-							crit(1),			-- Molten Quarry
-							crit(2),			-- Brute's Rise
-							crit(3),			-- Ashmaul Burial Grounds
-							crit(4),			-- Amphitheater of Annihilation
-					})),
+					
 					un(2, ach(12109)),		-- Twenty-One Arms Salute
 					un(2, a(ach(8218))),	-- Tyrannical Conquest (Alliance)
 					un(2, h(ach(8093))),	-- Tyrannical Conquest (Horde)
-					un(2, h(ach(9473, {		-- Vol'jin's Spear
-						un(39, h(title(285))),	-- ,Spear of Vol'jin
-						un(2, faction(1681)), 	-- Vol'jin's Spear
-					}))),
 					un(2, h(ach(445, {		-- Warlord
 						un(39, h(title(27))),	-- Warlord
 					}))),
@@ -323,11 +213,7 @@ _.Achievements =
 						["allianceAchievementID"] = 10089,	-- Wild Conquest [Alliance]
 						["hordeAchievementID"] = 10088,		-- Wild Conquest [Horde]
 						["u"] = 2,							-- Removed in Patch 6.2.2
-					},
-					un(2, a(ach(9474, {		-- Wrynn's Vanguard
-						un(39, a(title(286))),	-- ,Sword of Wrynn
-						un(2, faction(1682)),	-- Wyrnn's Vanguard
-					}))),
+					},	
 					un(2, ach(11691)),		-- You Are Sixteen
 				},
 			}),

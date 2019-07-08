@@ -277,6 +277,7 @@ t(88580);	-- Ken-Ken's Mask
 t(95567);	-- Kirin Tor Beacon (Alliance)
 t(116125);	-- Klikixx's Webspinner
 t(163750);	-- Kovork Kostume
+t(115501);	-- Kowalski's Music Box
 t(88566);	-- Krastinov's Bag of Horrors
 t(129111);	-- Kvaldir Raiding Horn (Never Implemented)
 t(88531);	-- Lao Chin's Last Mug
@@ -285,6 +286,8 @@ t(140632);	-- Lava Fountain
 t(129956);	-- Leather Love Seat
 t(129960);	-- Leather Pet Bed
 t(129958);	-- Leather Pet Leash
+t(116396);	-- LeBlanc's Recorder (A)
+t(115505);	-- LeBlanc's Recorder (H)
 t(153194);	-- Legion Communication Orb
 t(147708);	-- Legion Invasion Simulator
 t(130199);	-- Legion Pocket Portal

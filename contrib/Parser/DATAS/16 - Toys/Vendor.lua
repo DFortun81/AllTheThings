@@ -61,6 +61,9 @@ _.Toys =
 		i(170380),		-- Jar of Sunwarmed Sand
 		i(68806), 		-- Kalytha's Haunted Locket
 		i(128462),		-- Karabor Councilor's Attire (Alliance)
+		i(115501),		-- Kowalski's Music Box
+		i(116396),		-- LeBlanc's Recorder (A)
+		i(115505),		-- LeBlanc's Recorder (H)	
 		i(147708), 		-- Legion Invasion Simulator
 		i(130199), 		-- Legion Pocket Portal
 		i(142452), 		-- Lingering Wyrmtongue Essence

@@ -1716,7 +1716,6 @@ _.Zones =
 				--	n(91921, {	-- Wyrmple	}), 
 				--	n(94113, {	-- Rukmaz	}),
 				}),
-				--]]
 				n(-2, {		-- Vendors
 					n(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
 						["races"] = ALLIANCE_ONLY,
@@ -2885,7 +2884,7 @@ _.Zones =
 					i(134705),	-- Surging Chain Leggings
 				}),
 				i(128216),	-- Dented Ashmaul Strongbox A S3
-			},
+			},			
 		}),	
 	}),
 };
