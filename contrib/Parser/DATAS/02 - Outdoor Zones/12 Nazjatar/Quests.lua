@@ -1686,6 +1686,7 @@ _.Zones =
 					{ 58.2, 28.7, 1355 },
 				},
 				["crs"] = { -- not sure if there are any other bosses that get summoned
+					153306,	-- Azsh'ari Leviathan
 					153308,	-- Fury of Azshara
 				},
 				["g"] = {

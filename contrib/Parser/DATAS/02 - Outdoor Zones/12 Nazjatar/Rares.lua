@@ -335,7 +335,7 @@ _.Zones =
 			n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
 				["questID"] = 56916,
 				["isDaily"] = true,
-				["description"] = "Wanders around Nazjatar.",
+				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but can be looted once per day for for some Prismatic Manapearls and a chance at Benthic gear.",
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearl
 				},
