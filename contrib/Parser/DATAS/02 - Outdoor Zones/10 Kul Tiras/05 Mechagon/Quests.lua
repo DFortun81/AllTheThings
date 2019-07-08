@@ -457,7 +457,7 @@ _.Zones =
 							i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
 								["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
 							}),
-							i(13349),	-- Demonshear (Balnazaar?)
+							i(13348),	-- Demonshear (Balnazaar?)
 							i(11764),	-- Cinderhide Armsplints
 							i(37081),	-- Meathook's SLicer
 							i(151451),	-- Strip-Thorn Gauntlets (Razorlash)?
