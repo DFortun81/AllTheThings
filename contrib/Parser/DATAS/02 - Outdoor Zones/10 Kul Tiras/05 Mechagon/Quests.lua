@@ -128,7 +128,7 @@ _.Zones =
 				}),
 				q(56145, {	-- Blueprint: Advanced Adventurer Augment
 					["g"] = {
-						i(169112),	-- Blueprint: Advanced Adventurer Augment
+					--	i(169112),	-- Blueprint: Advanced Adventurer Augment
 						crit(23, {	-- Advanced Adventurer Augment
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -136,7 +136,7 @@ _.Zones =
 				}),
 				q(55083, {	-- Blueprint: Annoy-o-Tron Gang
 					["g"] = {
-						i(169175),	-- Blueprint: Annoy-o-Tron Gang
+					--	i(169175),	-- Blueprint: Annoy-o-Tron Gang
 						ach(13479, crit(35)),	-- Junkyard Architect / Annoy-o-Tron Gang
 					},
 				}),
@@ -145,7 +145,7 @@ _.Zones =
 				--		152182,	-- Rustfeather
 				--	},
 					["g"] = {
-						i(169173),	--
+					--	i(169173),	--
 						crit(33, {	-- Anti-Gravity Pack
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -156,7 +156,7 @@ _.Zones =
 				--		151627,	-- Mr. Fixthis
 				--	},
 					["g"] = {
-						i(168248),	-- Blueprint: BAWLD-371
+					--	i(168248),	-- Blueprint: BAWLD-371
 						crit(15, {	-- BAWLD-371
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -167,7 +167,7 @@ _.Zones =
 				--		152569,	-- Crazed Trogg
 				--	},
 					["g"] = {
-						i(169169),	-- Blueprint: Blue Spraybot
+					--	i(169169),	-- Blueprint: Blue Spraybot
 						crit(29, {	-- Blue Spraybot
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -176,7 +176,7 @@ _.Zones =
 				q(55057, {	-- Blueprint: Canned Minnows
 				--	["crs"] = { 151569 },	-- Deepwater Maw
 					["g"] = {
-						i(167836),	-- Blueprint: Canned Minnows
+					--	i(167836),	-- Blueprint: Canned Minnows
 						crit(5, {	-- Canned Minnows
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -184,7 +184,7 @@ _.Zones =
 				}),
 				q(55059, {	-- Blueprint: Emergency Repair Kit
 					["g"] = {
-						i(167844),	-- Blueprint: Emergency Repair Kit
+					--	i(167844),	-- Blueprint: Emergency Repair Kit
 						crit(7, {	-- Emergency Repair Kit
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -192,7 +192,7 @@ _.Zones =
 				}),
 				q(55060, {	-- Blueprint: Emergency Powerpack
 					["g"] = {
-						i(167845),	-- Blueprint: Emergency Powerpack
+					--	i(167845),	-- Blueprint: Emergency Powerpack
 						crit(8, {	-- Emergency Powerpack
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -204,7 +204,7 @@ _.Zones =
 				--		151684,	-- Jawbreaker
 				--	},
 					["g"] = {
-						i(168908),	-- Blueprint: Experimental Adventurer Augment
+					--	i(168908),	-- Blueprint: Experimental Adventurer Augment
 						crit(22, {	-- Experimental Adventurer Augment
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -215,7 +215,7 @@ _.Zones =
 					--	152569,	-- Crazed Trogg
 					--},
 					["g"] = {
-						i(169168),	-- Blueprint: Green Spraybot
+					--	i(169168),	-- Blueprint: Green Spraybot
 						crit(28, {	-- Green Spraybot
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -227,7 +227,7 @@ _.Zones =
 				--		151202,	-- Foul Manifestation
 				--	},
 					["g"] = {
-						i(167871),	-- Blueprint: G99.99 Landshark
+					--	i(167871),	-- Blueprint: G99.99 Landshark
 						crit(11, {	-- G99.99 Landshark
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
@@ -235,9 +235,8 @@ _.Zones =
 				}),
 				q(55056, {	-- Blueprint: Mechanocat Laser Pointer
 					["coord"] = { 63.3, 42.9, 1462 },
-					["description"] = "Purchase the Blueprint from Cork Stuttguard",
 					["g"] = {
-						i(167787),	-- Blueprint: Mechanocat Laser Pointer
+					--	i(167787),	-- Blueprint: Mechanocat Laser Pointer
 						crit(4, {	-- Mechanocat Laser Pointer
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
