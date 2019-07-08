@@ -169,11 +169,12 @@ _.Zones =
 						crit(31, {	-- Enforcer KX-T57
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167174),	-- Blueprint: Rustbolt Pocket Turret
 						i(170466),	-- Junkyard Motivator
 						i(170470),	-- Reinforced Grease Deflector
 						i(170467),	-- Whirring Chainblade
-						i(169174),	-- Blueprint: Rustbolt Pocket Turret
+						i(169174, {	-- Blueprint: Rustbolt Pocket Turret
+							["questID"] = 55082,
+						}),
 					},
 				}),
 				n(151202, {	-- Foul Manifestation
