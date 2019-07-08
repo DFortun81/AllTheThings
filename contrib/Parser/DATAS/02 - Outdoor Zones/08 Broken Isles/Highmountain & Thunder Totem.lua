@@ -2243,7 +2243,6 @@ _.Zones =
 					q(46796),	-- Paragon of Highmountain
 					q(44090),	-- Pledge of Loyalty
 					q(41542),	-- Preparation for the Hunt
-					q(40850),	-- Prisoners of Greystone
 					q(42700),	-- Quin'el, Master of Chillwind
 					q(42399),	-- Ready to Work
 					q(42134),	-- Recruiting More Troops
@@ -2745,9 +2744,166 @@ _.Zones =
 					}),
 				}),
 				n(-34,  {	-- World Quests
+				--[[		q(43985),	-- A Dark Tide
+					q(45840),	-- Assault on Highmountain
+					q(41705),	-- Assault on Thunder Totem
+					q(41026),	-- Back to the Shadows
+					q(46191),	-- Balinar
+					q(45071),	-- Barrels o' Fun
+					q(40978),	-- Bears Behaving Badly
+					q(40951),	-- Bitestone Bazaar
+					q(40925),	-- Bitestone Burglary
+					q(40980),	-- Boilback Plague
+					q(41310),	-- Border Reinforcements
+					q(41308),	-- Border Reinforcements
+					q(46193),	-- Borne of Fel
+					q(41203),	-- Bright Leystone Deposits
+					q(41208),	-- Brimstone Destroyer
+					q(41209),	-- Brimstone Destroyer
+					q(41210),	-- Brimstone Destroyer
+					q(41706),	-- Briny Waters
+					q(41233),	-- Bristled Bear Skin
+					q(41526),	-- Bushy Foxflower
+					q(41238),	-- Calcified Wormscales
+					q(41623),	-- Champions of Highmountain
+					q(46196),	-- Class Dismissed
+					q(41201),	-- Coarse Leystone Outcropping
+					q(46183),	-- Commander Zarthak
+					q(41699),	-- Crabby Crunchies
+					q(41622),	-- Crawliac's Legacy
+					q(41095),	-- Critical Crops
+					q(41202),	-- Crude Leystone Seams
+					q(41685),	-- DANGER: Ala'washte
+					q(41695),	-- DANGER: Defilia
+					q(41093),	-- DANGER: Durguth
+					q(41696),	-- DANGER: Mawat'aki
+					q(41686),	-- DANGER: Olokk the Shipbreaker
+					q(41703),	-- DANGER: Ormagrogg
+					q(41816),	-- DANGER: Oubdob da Smasher
+					q(41884),	-- Dark Tales
+					q(41835),	-- Deworming
+					q(41024),	-- Dirge of the Dead
+					q(39424),	-- Everything!
+					q(41561),	-- Felhide
+					q(41560),	-- Felhide
+					q(41239),	-- Felhide
+					q(41225),	-- Felwort
+					q(41511),	-- Felwort
+					q(41432),	-- Fiery Leystone Deposits
+					q(41219),	-- Flourishing Foxflower
+					q(41228),	-- Foxflower Cluster
+					q(41544),	-- Foxflower Cluster
+					q(46197),	-- From the Skies They Fel
+					q(41014),	-- Fury Road
+					q(46184),	-- Gelgothar
+					q(41701),	-- Gettin' Tuffer
+					q(41882),	-- Grey Idols
+					q(41127),	-- Gunksnout Infestation
+					q(41204),	-- Hard Leystone Deposits
+					q(41243),	-- Huge Highmountain Salmon
+					q(46185),	-- Iroxus
+					q(46186),	-- Ix'dreloth
+					q(46187),	-- Larthogg
+					q(43764),	-- Ley Race
+					q(41196),	-- Leystone Basilisks
+					q(41198),	-- Leystone Basilisks
+					q(41199),	-- Leystone Rumblers
+					q(45048),	-- Like the Wind
+					q(41596),	-- Lively Highmountain Salmon
+					q(41244),	-- Lively Highmountain Salmon
+					q(41597),	-- Lively Highmountain Salmon
+					q(41091),	-- Lords of the Hills
+					q(41090),	-- Lords of the Hills
+					q(41089),	-- Lords of the Hills
+					q(41433),	-- Massive Leystone Deposits
+					q(41253),	-- Migrating Highmountain Salmon
+					q(41122),	-- Mists Take You
+					q(41076),	-- Munitions Testing
+					q(41077),	-- Munitions Testing
+					q(41078),	-- Munitions Testing
+					q(46188),	-- Orgrokk
+					q(41057),	-- Primal Payback
+					q(39462),	-- Primal Payback
+					q(41055),	-- Primal Payback
+					q(41144),	-- Return to the River
+					q(40985),	-- Rimescale Naga Incursion: Highmountain
+					q(41025),	-- Rise of the Fallen
+					q(40966),	-- Ritualists in Our Midsts
+					q(41200),	-- Rough Leystone Outcropping
+					q(46262),	-- Save the Tadpoles!
+					q(41234),	-- Shaggy Saber Hide
+					q(46189),	-- Shel'zuul
+					q(41242),	-- Slab of Bacon
+					q(41549),	-- Slab of Bacon
+					q(41550),	-- Slab of Bacon
+					q(40920),	-- Stonebinder Bounty
+					q(41224),	-- Supplies Needed: Foxflower
+					q(41207),	-- Supplies Needed: Leystone
+					q(41237),	-- Supplies Needed: Stonehide Leather
+					q(46195),	-- Swarming Skies
+					q(42086),	-- The Feltotem
+					q(43448),	-- The Frozen King
+					q(43766),	-- The Magic of Flight
+					q(41232),	-- Thick Ironhorn Hide
+					q(40896),	-- Threnody of Chieftains
+					q(44823),	-- Thunder Totem Cleanup Detail
+					q(46190),	-- Ulgrom
+					q(41011),	-- Umbralshard Rituals
+					q(41428),	-- Unstable Portal
+					q(41824),	-- WANTED: Arru
+					q(41836),	-- WANTED: Bodash the Hoarder
+					q(43616),	-- WANTED: Bodash the Hoarder
+					q(41828),	-- WANTED: Bristlemaul
+					q(44290),	-- WANTED: Bristlemaul
+					q(41826),	-- WANTED: Crawshuk the Hungry
+					q(44291),	-- WANTED: Crawshuk the Hungry
+					q(43455),	-- WANTED: Devouring Darkness
+					q(43617),	-- WANTED: Devouring Darkness
+					q(43618),	-- WANTED: Gurbog da Basher
+					q(41818),	-- WANTED: Majestic Elderhorn
+					q(44292),	-- WANTED: Majestic Elderhorn
+					q(41844),	-- WANTED: Sekhan
+					q(44294),	-- WANTED: Sekhan
+					q(41821),	-- WANTED: Shara Felbreath
+					q(43619),	-- WANTED: Shara Felbreath
+					q(41838),	-- WANTED: Slumber
+					q(41227),	-- Warden Tower Assault: Cordana's Apex
+					q(41257),	-- Warden Tower Assault: Cordana's Apex
+					q(41420),	-- Warden Tower Assault: Nightwatcher's Perch
+					q(41205),	-- Warm Leystone Deposits
+					q(41321),	-- Weapons of Deathwing
+					q(41252),	-- Wild Northern Barracuda
+					q(46194),	-- Wolves of the Legion
+					q(41659),	-- Work Order: Avalanche Elixirs
+					q(41223),	-- Work Order: Foxflower
+					q(41240),	-- Work Order: Highmountain Salmon
+					q(41206),	-- Work Order: Leystone
+					q(41647),	-- Work Order: Silkweave Robe
+					q(41235),	-- Work Order: Stonehide Leather
+					q(46192),	-- Zar'vok
+					q(46279),	-- Zargrom
+					--]]
+					q(41013, {	-- Darkbrul Arena
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(43767, {	-- Enigmatic
 						["lvl"] = 110,
 						["collectible"] = false,
+					}),
+					q(41512, {	-- Felwort
+						["lvl"] = 110,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(44746, {	-- Helarjar Landing: Rockaway Coast
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41609, {	-- Huge Highmountain Salmon
+						["lvl"] = 110,
+						["collectible"] = false,
+						["requireSkill"] = 356,	-- Fishing
 					}),
 					q(42064, {	-- It's Illid... Wait.
 						["collectible"] = false,
@@ -2760,6 +2916,18 @@ _.Zones =
 						},
 					}),
 					q(41866, {	-- Neltharion's Lair: Blighted Bat
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(40850, {	-- Prisoners of Greystone
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41416, {	-- Retake the Skyhorn
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41789, {	-- Return to the Crag
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2823,6 +2991,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(44293, {	-- WANTED: Slumber
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41421, {	-- Warden Tower Assault: Nightwatcher's Perch [A]
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -2845,6 +3017,11 @@ _.Zones =
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
+					}),
+					q(41525, {	-- Wispy Foxflower
+						["lvl"] = 110,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(41677, {	-- Work Order: Auto-Hammer
 						["requireSkill"] = 202,	-- Engineering
@@ -2973,153 +3150,6 @@ _.Zones =
 							i(134141),	-- Rockbound Sabatons
 						},
 					}),
-		--[[		q(43985),	-- A Dark Tide
-					q(45840),	-- Assault on Highmountain
-					q(41705),	-- Assault on Thunder Totem
-					q(41026),	-- Back to the Shadows
-					q(46191),	-- Balinar
-					q(45071),	-- Barrels o' Fun
-					q(40978),	-- Bears Behaving Badly
-					q(40951),	-- Bitestone Bazaar
-					q(40925),	-- Bitestone Burglary
-					q(40980),	-- Boilback Plague
-					q(41310),	-- Border Reinforcements
-					q(41308),	-- Border Reinforcements
-					q(46193),	-- Borne of Fel
-					q(41203),	-- Bright Leystone Deposits
-					q(41208),	-- Brimstone Destroyer
-					q(41209),	-- Brimstone Destroyer
-					q(41210),	-- Brimstone Destroyer
-					q(41706),	-- Briny Waters
-					q(41233),	-- Bristled Bear Skin
-					q(41526),	-- Bushy Foxflower
-					q(41238),	-- Calcified Wormscales
-					q(41623),	-- Champions of Highmountain
-					q(46196),	-- Class Dismissed
-					q(41201),	-- Coarse Leystone Outcropping
-					q(46183),	-- Commander Zarthak
-					q(41699),	-- Crabby Crunchies
-					q(41622),	-- Crawliac's Legacy
-					q(41095),	-- Critical Crops
-					q(41202),	-- Crude Leystone Seams
-					q(41685),	-- DANGER: Ala'washte
-					q(41695),	-- DANGER: Defilia
-					q(41093),	-- DANGER: Durguth
-					q(41696),	-- DANGER: Mawat'aki
-					q(41686),	-- DANGER: Olokk the Shipbreaker
-					q(41703),	-- DANGER: Ormagrogg
-					q(41816),	-- DANGER: Oubdob da Smasher
-					q(41884),	-- Dark Tales
-					q(41013),	-- Darkbrul Arena
-					q(41835),	-- Deworming
-					q(41024),	-- Dirge of the Dead
-					q(39424),	-- Everything!
-					q(41561),	-- Felhide
-					q(41560),	-- Felhide
-					q(41239),	-- Felhide
-					q(41512),	-- Felwort
-					q(41225),	-- Felwort
-					q(41511),	-- Felwort
-					q(41432),	-- Fiery Leystone Deposits
-					q(41219),	-- Flourishing Foxflower
-					q(41228),	-- Foxflower Cluster
-					q(41544),	-- Foxflower Cluster
-					q(46197),	-- From the Skies They Fel
-					q(41014),	-- Fury Road
-					q(46184),	-- Gelgothar
-					q(41701),	-- Gettin' Tuffer
-					q(41882),	-- Grey Idols
-					q(41127),	-- Gunksnout Infestation
-					q(41204),	-- Hard Leystone Deposits
-					q(44746),	-- Helarjar Landing: Rockaway Coast
-					q(41243),	-- Huge Highmountain Salmon
-					q(41609),	-- Huge Highmountain Salmon
-					q(46185),	-- Iroxus
-					q(46186),	-- Ix'dreloth
-					q(46187),	-- Larthogg
-					q(43764),	-- Ley Race
-					q(41196),	-- Leystone Basilisks
-					q(41198),	-- Leystone Basilisks
-					q(41199),	-- Leystone Rumblers
-					q(45048),	-- Like the Wind
-					q(41596),	-- Lively Highmountain Salmon
-					q(41244),	-- Lively Highmountain Salmon
-					q(41597),	-- Lively Highmountain Salmon
-					q(41091),	-- Lords of the Hills
-					q(41090),	-- Lords of the Hills
-					q(41089),	-- Lords of the Hills
-					q(41433),	-- Massive Leystone Deposits
-					q(41253),	-- Migrating Highmountain Salmon
-					q(41122),	-- Mists Take You
-					q(41076),	-- Munitions Testing
-					q(41077),	-- Munitions Testing
-					q(41078),	-- Munitions Testing
-					q(46188),	-- Orgrokk
-					q(41057),	-- Primal Payback
-					q(39462),	-- Primal Payback
-					q(41055),	-- Primal Payback
-					q(41416),	-- Retake the Skyhorn
-					q(41789),	-- Return to the Crag
-					q(41144),	-- Return to the River
-					q(40985),	-- Rimescale Naga Incursion: Highmountain
-					q(41025),	-- Rise of the Fallen
-					q(40966),	-- Ritualists in Our Midsts
-					q(41200),	-- Rough Leystone Outcropping
-					q(46262),	-- Save the Tadpoles!
-					q(41234),	-- Shaggy Saber Hide
-					q(46189),	-- Shel'zuul
-					q(41242),	-- Slab of Bacon
-					q(41549),	-- Slab of Bacon
-					q(41550),	-- Slab of Bacon
-					q(40920),	-- Stonebinder Bounty
-					q(41224),	-- Supplies Needed: Foxflower
-					q(41207),	-- Supplies Needed: Leystone
-					q(41237),	-- Supplies Needed: Stonehide Leather
-					q(46195),	-- Swarming Skies
-					q(42086),	-- The Feltotem
-					q(43448),	-- The Frozen King
-					q(43766),	-- The Magic of Flight
-					q(41232),	-- Thick Ironhorn Hide
-					q(40896),	-- Threnody of Chieftains
-					q(44823),	-- Thunder Totem Cleanup Detail
-					q(46190),	-- Ulgrom
-					q(41011),	-- Umbralshard Rituals
-					q(41428),	-- Unstable Portal
-					q(41824),	-- WANTED: Arru
-					q(41836),	-- WANTED: Bodash the Hoarder
-					q(43616),	-- WANTED: Bodash the Hoarder
-					q(41828),	-- WANTED: Bristlemaul
-					q(44290),	-- WANTED: Bristlemaul
-					q(41826),	-- WANTED: Crawshuk the Hungry
-					q(44291),	-- WANTED: Crawshuk the Hungry
-					q(43455),	-- WANTED: Devouring Darkness
-					q(43617),	-- WANTED: Devouring Darkness
-					q(43618),	-- WANTED: Gurbog da Basher
-					q(41818),	-- WANTED: Majestic Elderhorn
-					q(44292),	-- WANTED: Majestic Elderhorn
-					q(41844),	-- WANTED: Sekhan
-					q(44294),	-- WANTED: Sekhan
-					q(41821),	-- WANTED: Shara Felbreath
-					q(43619),	-- WANTED: Shara Felbreath
-					q(41838),	-- WANTED: Slumber
-					q(44293),	-- WANTED: Slumber
-					q(41227),	-- Warden Tower Assault: Cordana's Apex
-					q(41257),	-- Warden Tower Assault: Cordana's Apex
-					q(41420),	-- Warden Tower Assault: Nightwatcher's Perch
-					q(41205),	-- Warm Leystone Deposits
-					q(41321),	-- Weapons of Deathwing
-					q(41252),	-- Wild Northern Barracuda
-					q(41525),	-- Wispy Foxflower
-					q(46194),	-- Wolves of the Legion
-					q(41659),	-- Work Order: Avalanche Elixirs
-					q(41223),	-- Work Order: Foxflower
-					q(41240),	-- Work Order: Highmountain Salmon
-					q(41206),	-- Work Order: Leystone
-					q(41647),	-- Work Order: Silkweave Robe
-					q(41235),	-- Work Order: Stonehide Leather
-					q(46192),	-- Zar'vok
-					q(46279),	-- Zargrom
-					--]]
 				}),
 				n(0,    {	-- Zone Drops
 					["crs"] = {

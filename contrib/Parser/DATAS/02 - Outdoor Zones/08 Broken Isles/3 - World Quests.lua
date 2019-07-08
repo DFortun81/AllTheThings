@@ -29,13 +29,6 @@ _.Zones =
 							i(137767),	-- Vantus Rune Technique: Ursoc [Rank 3]
 						},
 					}),
-					q(41667, {	-- Vantus Rune Work Order: Xavius
-						["repeatable"] = true,
-						["qg"] = 115736,	-- First Arcanist Thalyssra
-						["g"] = {
-							i(137771),	-- Vantus Rune Technique: Xavius [Rank 3]
-						},
-					}),
 				}),
 				n(-322, {	-- Cloak
 					i(134334),	-- Disgraced Court Cloak

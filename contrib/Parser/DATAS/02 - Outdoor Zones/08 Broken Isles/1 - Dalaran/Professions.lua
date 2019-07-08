@@ -966,15 +966,6 @@ _.Zones =
 							}),
 						},
 					}),
-					n(-34, {	-- World Quests
-						q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
-							["repeatable"] = true,
-							["qg"] = 32725,	-- Warmage Silva
-							["g"] = {
-								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3]
-							},
-						}),
-					}),
 				}),
 				prof(755, {	-- Jewelcrafting
 					q(40524,  {	-- A Familiar Ring to It

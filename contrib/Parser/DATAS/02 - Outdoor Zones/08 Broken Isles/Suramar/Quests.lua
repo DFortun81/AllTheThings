@@ -178,7 +178,6 @@ _.Zones =
 				qa(44843),	-- Crystal Clearing
 				q(45239),	-- Cubic Coalescing
 				q(45160),	-- Cubic Currents
-				q(44856),	-- Cut the Cattitude
 				q(41166),	-- Dark Secrets
 				q(40158),	-- Darkheart Thicket: Demons Be Different
 				q(38799),	-- Darkheart Thicket: Nal'ryssa's Sisters

@@ -9,17 +9,14 @@ _.Zones =
 --[[
 				n(-34, {	-- World Quests
 					q(46209),	-- A Flare In The Dark
-					q(45473),	-- A Giant Problem
 					q(46932),	-- A Tad More Corruption
 					q(45988),	-- Ancient Bones
 					q(47061),	-- Apocron
 					q(45694),	-- Arachnicide
 					q(46105),	-- Arachnid Superiority
 					q(46104),	-- Arachnid Toxicity
-					q(46750),	-- Battery Backup
 					q(45520),	-- Behind Enemy Portals
 					q(45542),	-- Behind Enemy Portals
-					q(45559),	-- Behind Enemy Portals
 					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
 					q(46068),	-- Brute Wrangling
@@ -47,7 +44,6 @@ _.Zones =
 					q(45985),	-- Hellish Scavengers
 					q(45541),	-- How Do YOU Like It?!
 					q(46066),	-- I Fel Bat For You
-					q(46112),	-- Illidari Masters: Madam Viciosa
 					q(46111),	-- Illidari Masters: Sissix
 					q(46817),	-- Infernal Downfall
 					q(45743),	-- Judgment of Odyn
@@ -72,7 +68,6 @@ _.Zones =
 					q(46180),	-- Power of Our Enemy
 					q(45929),	-- Purging the Flames
 					q(46075),	-- Relic Hunting
-					q(46175),	-- Rolling Thunder
 					q(46001),	-- Rules of the Hunt
 					q(45550),	-- Salving the Corruption
 					q(45549),	-- Salving the Corruption
@@ -83,8 +78,6 @@ _.Zones =
 					q(46236),	-- Stonebound Soldiers
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
-					q(45805),	-- The Burning Keys
-					q(45035),	-- The Call of Battle
 					q(46942),	-- The Cost of Power
 					q(46160),	-- The Shackled Void
 					q(46032),	-- The Tormented Return
@@ -95,6 +88,18 @@ _.Zones =
 					q(45977),	-- Where There is a Whip...
 				}),
 ]]--
+				q(45473, {	-- A Giant Problem
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46750, {	-- Battery Backup
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45559, {	-- Behind Enemy Portals
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46073, {	-- Break Their Garrison
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -107,12 +112,34 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46112, {	-- Illidari Masters: Madam Viciosa
+					["lvl"] = 110,
+					["filterID"] = 101,	-- Battle Pet
+					["collectible"] = false,
+				}),
 				q(46113, {	-- Illidari Masters: Nameless Mystic
 					["lvl"] = 110,
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(46076, {	-- Restless Spirits
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46175, {	-- Rolling Thunder
+					["lvl"] = 110,
+					["collectible"] = false,
+					["g"] = {
+						ach(11607, {	-- They See Me Rolling
+							["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
+						}),
+					},
+				}),
+				q(45805, {	-- The Burning Keys
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45035, {	-- The Call of Battle
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

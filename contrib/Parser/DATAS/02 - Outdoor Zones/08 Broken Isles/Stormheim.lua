@@ -2619,10 +2619,8 @@ _.Zones =
 							q(46011),	-- Colossal Infernal
 							q(46216),	-- Congealed Corruption
 							q(46179),	-- Crushing the Legion
-							q(41950),	-- Cry More Thunder!
 							q(43745),	-- Culling the Storm
 							q(42820),	-- DANGER: Aegir Wavecrusher
-							q(42861),	-- DANGER: Boulderfall, the Eroded
 							q(42785),	-- DANGER: Den Mother Ylva
 							q(42806),	-- DANGER: Fjorlag, the Grave's Chill
 							q(42798),	-- DANGER: Huntress Estrid
@@ -2660,7 +2658,6 @@ _.Zones =
 							q(41602),	-- Lively Stormrays
 							q(46016),	-- Magdrezoth
 							q(43752),	-- Oh, Ship!
-							q(43751),	-- Oh, Ship!
 							q(41340),	-- Perfect Storm Drake Scale
 							q(41535),	-- Prickly Fjarnskaggl
 							q(41460),	-- Primal Leystone Outcropping
@@ -2670,7 +2667,6 @@ _.Zones =
 							q(43722),	-- Sacred Bones
 							q(42270),	-- Scourge of the Skies
 							q(46017),	-- Shel'drozul
-							q(42178),	-- Shock Absorber
 							q(41300),	-- Singed Fjarnskaggl
 							q(41555),	-- Slab of Bacon
 							q(41556),	-- Slab of Bacon
@@ -2695,7 +2691,6 @@ _.Zones =
 							q(42182),	-- To Battle!
 							q(42183),	-- To Battle!
 							q(41930),	-- Valor Calls
-							q(43963),	-- Vampirates!
 							q(43454),	-- WANTED: Egyl the Enduring
 							q(43620),	-- WANTED: Egyl the Enduring
 							q(43434),	-- WANTED: Fathnyr
@@ -2762,6 +2757,14 @@ _.Zones =
 							}),
 						},
 					}),
+					q(41950, {	-- Cry More Thunder!
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(42861, {	-- DANGER: Boulderfall, the Eroded
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(42864, {	-- DANGER: Captain Dargun
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2813,6 +2816,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(42788, {	-- Maw of Souls: Return of the Beast
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(40278, {	-- My Beasts's Bidding
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
@@ -2837,6 +2844,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(43751, {	-- Oh, Ship!
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(43786, {	-- Pesty Nests
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2857,7 +2869,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(42178, {	-- Shock Absorber
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(43827, {	-- Stormwing the Portals
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43963, {	-- Vampirates!
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

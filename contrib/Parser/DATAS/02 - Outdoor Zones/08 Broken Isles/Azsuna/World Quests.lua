@@ -25,6 +25,10 @@ _.Zones =
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
+				q(44894, {	-- Bloodgazer Swarm!
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43098, {	-- DANGER: Marblub the Massive
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -62,6 +66,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44786, {	-- Midterm: Rune Aptitude
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46116, {	-- On Unhallowed Grounds (Invasion WQ)
 					["lvl"] = 98,
 					["collectible"] = false,
@@ -96,6 +104,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43327, {	-- The Magic of Flight
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42148, {	-- The Wine's Gone Bad
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -105,6 +117,14 @@ _.Zones =
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(42112, {	-- The Withered Return
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42506, {	-- Tomes of Yore
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(42159, {	-- Training with the Nightwatchers
 					["collectible"] = false,
@@ -117,6 +137,10 @@ _.Zones =
 					},
 				}),
 				q(42924, {	-- Vault of the Wardens: A Grim Matter
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43430, {	-- WANTED: Captain Volo'ren
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

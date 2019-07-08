@@ -17,7 +17,6 @@ _.Zones =
 				q(41290),	-- Aqueous Aethril
 				q(45838),	-- Assault on Azsuna
 				q(45069),	-- Barrels o' Fun
-				q(44894),	-- Bloodgazer Swarm!
 				q(41495),	-- Brilliant Leystone Seams
 				q(41481),	-- Brimstone Destroyer
 				q(41483),	-- Brimstone Destroyer
@@ -86,7 +85,6 @@ _.Zones =
 				q(41264),	-- Lively Cursed Queenfish
 				q(41454),	-- Luminous Leystone Outcropping
 				q(46164),	-- Mal'serus
-				q(44786),	-- Midterm: Rune Aptitude
 				q(42105),	-- Mixology Mix-up
 				q(44048),	-- Nagana Happen
 				q(42275),	-- Not On My Watch
@@ -109,12 +107,10 @@ _.Zones =
 				q(42022),	-- The Broken Academy
 				q(46146),	-- The Burning Shores
 				q(44050),	-- The Felsworn Must Fall
-				q(43327),	-- The Magic of Flight
 				q(45134),	-- The Soul Harvesters
 				q(42112),	-- The Withered Return
 				q(42018),	-- Those Beyond Redemption
 				q(42019),	-- Tip the Scales
-				q(42506),	-- Tomes of Yore
 				q(42511),	-- Twisted Souls
 				q(41322),	-- Unscratched Hippogryph Scale
 				q(42160),	-- Unwelcome Visitors
@@ -124,7 +120,6 @@ _.Zones =
 				q(43606),	-- WANTED: Arcavellus
 				q(43426),	-- WANTED: Brogozog
 				q(43607),	-- WANTED: Brogozog
-				q(43430),	-- WANTED: Captain Volo'ren
 				q(43608),	-- WANTED: Captain Volo'ren
 				q(43428),	-- WANTED: Doomlord Kazrok
 				q(43609),	-- WANTED: Doomlord Kazrok

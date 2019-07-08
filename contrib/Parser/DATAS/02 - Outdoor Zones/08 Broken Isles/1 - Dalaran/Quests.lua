@@ -78,22 +78,6 @@ _.Zones =
 						]]--
 					},
 				}),
-				n(-34,  {	-- World Quests
---[[
-
-					q(46136),	-- Gemcutter Needed
-					q(46134),	-- Gemcutter Needed
-					q(46139),	-- Gemcutter Needed
-					q(46135),	-- Gemcutter Needed
-					q(46138),	-- Gemcutter Needed
-					q(46137),	-- Gemcutter Needed
-					q(41668),	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
-					q(41662),	-- Work Order: Ancient Rejuvenation Potions
-					q(41656),	-- Work Order: Azsunite Loop
-					q(41638),	-- Work Order: Leystone Gauntlets
-					q(41650),	-- Work Order: Silkweave Hood
---]]
-				}),
 				o(247797, {	-- Lost Mail
 					i(134859, {	-- Lost Mail
 						q(41368),	-- Lost Mail

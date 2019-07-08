@@ -2015,11 +2015,19 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(41955, {	-- Bloodline of Stone
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(42174, {	-- Champions of Elune
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
 					q(42927, {	-- DANGER: Malisandra
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43347, {	-- DANGER: Rabxach
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2033,7 +2041,15 @@ _.Zones =
 							}),
 						},
 					}),
+					q(43756, {	-- Enigmatic
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(43753, {	-- Ley Race
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(44011, {	-- Lost Wisp
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2089,6 +2105,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(41992, {	-- Twisted Ash
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
 						["qg"] = 106901,	-- Sylvia Hartshorn <Dreamweaver Emissary>
 						["lvl"] = 110,
@@ -2098,8 +2118,25 @@ _.Zones =
 							i(137770),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 3]
 						},
 					}),
+					q(42077, {	-- Waking Nightmares
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(44301, {	-- WANTED: Bahagar
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43458, {	-- WANTED: Perrexx
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(43457, {	-- WANTED: Theryssia
 						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43248, {	-- Warden Tower Assault: Darkfollow's Spire [A]
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(43183, {	-- Warden Tower Assault: Starstalker's Point [A]

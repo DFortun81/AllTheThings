@@ -249,13 +249,6 @@ _.Zones =
 					["qg"] = 106011,	-- Jace Darkweaver
 					["classes"] = { 5 },
 				}),
-				q(46175, {	-- Rolling Thunder
-					["g"] = {
-						ach(11607, {	-- They See Me Rolling
-							["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
-						}),
-					},
-				}),
 				q(47067, {	-- Seeking Lost Knowledge
 					["u"] = 2,
 					["qg"] = 116302,	-- Archmage Khadgar

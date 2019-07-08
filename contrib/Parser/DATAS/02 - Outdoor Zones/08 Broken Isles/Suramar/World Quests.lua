@@ -20,7 +20,6 @@ _.Zones =
 				q(41447),	-- Burning Felslate Deposits
 				q(45307),	-- Claws for Alarm!
 				q(42151),	-- Clear the Skies
-				q(44067),	-- Consolidating Power
 				q(44867),	-- Contain their Advance
 				q(44816),	-- Continued Exposure
 				q(41195),	-- Culling Ambervale
@@ -52,7 +51,6 @@ _.Zones =
 				q(42209),	-- Freeing the Taken
 				q(41448),	-- Heavy Felslate Deposits
 				q(44811),	-- Help on the Way
-				q(42071),	-- Honoring the Past
 				q(41616),	-- Huge Runescale Koi
 				q(41280),	-- Huge Runescale Koi
 				q(41617),	-- Huge Runescale Koi
@@ -61,7 +59,6 @@ _.Zones =
 				q(42169),	-- Left for Dead
 				q(44813),	-- Ley Line Interference
 				q(43583),	-- Life Finds a Way
-				q(44744),	-- Lifelines
 				q(45032),	-- Like the Wind
 				q(41605),	-- Lively Runescale Koi
 				q(41279),	-- Lively Runescale Koi
@@ -93,7 +90,6 @@ _.Zones =
 				q(41283),	-- The Angler Mangler
 				q(43435),	-- The Battle Rages On
 				q(42089),	-- The Fallen Ones
-				q(43777),	-- The Magic of Flight
 				q(42082),	-- The Shattered Locus
 				q(44002),	-- Undersea Survey
 				q(43814),	-- Unspeakable Collaborators
@@ -158,7 +154,15 @@ _.Zones =
 						}),
 					},
 				}),
+				q(44067, {	-- Consolidating Power
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42764, {	-- Court of Stars: Wraith in the Machine
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44856, {	-- Cut the Cattitude
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -172,7 +176,15 @@ _.Zones =
 						}),
 					},
 				}),
+				q(42071, {	-- Honoring the Past
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43774, {	-- Ley Race
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44744, {	-- Lifelines
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -203,8 +215,16 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43640, {	-- The Arcway: Creeping Suspicions
-					["collectible"] = false,
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43641, {	-- The Arcway: Wandering Plague
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43777, {	-- The Magic of Flight
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(41895, {	-- The Master of Pets
 					["collectible"] = false,
@@ -224,6 +244,14 @@ _.Zones =
 						crit(30, {	-- Threads of Fate
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
+					},
+				}),
+				q(41667, {	-- Vantus Rune Work Order: Xavius
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 773,	-- Inscription
+					["g"] = {
+						i(137771),	-- Vantus Rune Technique: Xavius [Rank 3]
 					},
 				}),
 				q(43943, {	-- Withered Army Training
