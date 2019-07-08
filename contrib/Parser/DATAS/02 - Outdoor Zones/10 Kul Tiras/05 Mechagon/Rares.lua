@@ -89,7 +89,9 @@ _.Zones =
 						crit(34, {	-- Caustic Mechaslime
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(169170),	-- Blueprint: Utility Mechanoclaw	
+						i(169170, {	-- Blueprint: Utility Mechanoclaw
+							["questID"] = 55078, -- Blueprint: Utility Mechanoclaw
+						}),
 					},
 				}),
 				n(152569, {	-- Crazed Trogg
@@ -102,7 +104,9 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(169674),	-- Green Paint Filled Bladder
-						i(167792),	-- Paint Vial: Fel Mint Green
+						i(16779, {	-- Paint Vial: Fel Mint Green
+							["questID"] = 55452, -- Paint Vial: Fel Mint Green
+						}),
 						i(169168),  -- Blueprint: Green Spraybot
 						i(167793),  -- Paint Vial: Overload Orange
 					},
@@ -331,7 +335,9 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(170273),	-- Oxidizied Refuse Remover
-						i(167794),	-- Paint Vial: Lemonade Steel
+						i(167794, {	-- Paint Vial: Lemonade Steel
+							["questID"] = 55454, -- Paint Vial: Lemonade Steel
+						}),
 					},
 				}),
 				n(151702, {	-- Paol Pondwader
