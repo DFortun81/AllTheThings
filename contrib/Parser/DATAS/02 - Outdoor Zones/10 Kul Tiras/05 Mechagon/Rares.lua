@@ -104,7 +104,7 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(169674),	-- Green Paint Filled Bladder
-						i(16779, {	-- Paint Vial: Fel Mint Green
+						i(167792, {	-- Paint Vial: Fel Mint Green
 							["questID"] = 55452, -- Paint Vial: Fel Mint Green
 						}),
 						i(169168),  -- Blueprint: Green Spraybot
@@ -302,7 +302,6 @@ _.Zones =
 						i(168248, {	-- Blueprint: BAWLD-371
 							["questID"] = 55068,
 						}),
-						i(167794),	-- Paint Vial: Lemonade Steel
 					},
 				}),
 				n(153206, {	-- Ol' Big Tusk
