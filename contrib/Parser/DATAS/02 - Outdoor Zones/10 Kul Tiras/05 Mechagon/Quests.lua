@@ -126,118 +126,118 @@ _.Zones =
 						}),
 					},
 				}),
-				i(169112, {	-- Blueprint: Advanced Adventurer Augment
-					["questID"] = 56145,
+				q(56145, {	-- Blueprint: Advanced Adventurer Augment
 					["g"] = {
+						i(169112),	-- Blueprint: Advanced Adventurer Augment
 						crit(23, {	-- Advanced Adventurer Augment
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-					["questID"] = 55083,
+				q(55083, {	-- Blueprint: Annoy-o-Tron Gang
 					["g"] = {
+						i(169175),	-- Blueprint: Annoy-o-Tron Gang
 						ach(13479, crit(35)),	-- Junkyard Architect / Annoy-o-Tron Gang
 					},
 				}),
-				i(169173, {	-- Blueprint: Anti-Gravity Pack
-					["questID"] = 55081,
-					["crs"] = {
-						152182,	-- Rustfeather
-					},
+				q(55081, {	-- Blueprint: Anti-Gravity Pack
+				--	["crs"] = {
+				--		152182,	-- Rustfeather
+				--	},
 					["g"] = {
+						i(169173),	--
 						crit(33, {	-- Anti-Gravity Pack
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(168248, {	-- Blueprint: BAWLD-371
-					["questID"] = 55068,
-					["crs"] = {
-						151627,	-- Mr. Fixthis
-					},
+				q(55068, {	-- Blueprint: BAWLD-371
+				--	["crs"] = {
+				--		151627,	-- Mr. Fixthis
+				--	},
 					["g"] = {
+						i(168248),	-- Blueprint: BAWLD-371
 						crit(15, {	-- BAWLD-371
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(169169, {	-- Blueprint: Blue Spraybot
-					["questID"] = 55077,
-					["crs"] = {
-						152569,	-- Crazed Trogg
-					},
+				q(55077, {	-- Blueprint: Blue Spraybot
+				--	["crs"] = {
+				--		152569,	-- Crazed Trogg
+				--	},
 					["g"] = {
+						i(169169),	-- Blueprint: Blue Spraybot
 						crit(29, {	-- Blue Spraybot
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(167836, {	-- Blueprint: Canned Minnows
-					["questID"] = 55057,
-					["crs"] = { 151569 },	-- Deepwater Maw
+				q(55057, {	-- Blueprint: Canned Minnows
+				--	["crs"] = { 151569 },	-- Deepwater Maw
 					["g"] = {
+						i(167836),	-- Blueprint: Canned Minnows
 						crit(5, {	-- Canned Minnows
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(167844, {	-- Blueprint: Emergency Repair Kit
-					["questID"] = 55059,	-- Blueprint: Emergency Repair Kit
+				q(55059, {	-- Blueprint: Emergency Repair Kit
 					["g"] = {
+						i(167844),	-- Blueprint: Emergency Repair Kit
 						crit(7, {	-- Emergency Repair Kit
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(167845, {	-- Blueprint: Emergency Powerpack
-					["questID"] = 55060,	-- Blueprint: Emergency Powerpack
+				q(55060, {	-- Blueprint: Emergency Powerpack
 					["g"] = {
+						i(167845),	-- Blueprint: Emergency Powerpack
 						crit(8, {	-- Emergency Powerpack
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(168908, {	-- Blueprint: Experimental Adventurer Augment
-					["questID"] = 56087,	-- Blueprint: Experimental Adventurer Augment
-					["crs"] = {
-						151934,	-- Arachnoid Harvester
-						151684,	-- Jawbreaker
-					},
+				q(56087, {	-- Blueprint: Experimental Adventurer Augmentt
+				--	["crs"] = {
+				--		151934,	-- Arachnoid Harvester
+				--		151684,	-- Jawbreaker
+				--	},
 					["g"] = {
+						i(168908),	-- Blueprint: Experimental Adventurer Augment
 						crit(22, {	-- Experimental Adventurer Augment
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(169168, {	-- Blueprint: Green Spraybot
-					["questID"] = 55076, -- also triggered 55161
-					["crs"] = {
-						152569,	-- Crazed Trogg
-					},
+				q(55076, {	-- Blueprint: Green Spraybot -- also triggered 55161
+					--["crs"] = {
+					--	152569,	-- Crazed Trogg
+					--},
 					["g"] = {
+						i(169168),	-- Blueprint: Green Spraybot
 						crit(28, {	-- Green Spraybot
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(167871, {	-- Blueprint: G99.99 Landshark
-					["questID"] = 55063,
+				q(55063, {	-- Blueprint: G99.99 Landshark
 					["coord"] = { 65.6, 51.5, 1462 },
-					["crs"] = {
-						151202,	-- Foul Manifestation
-					},
+				--	["crs"] = {
+				--		151202,	-- Foul Manifestation
+				--	},
 					["g"] = {
+						i(167871),	-- Blueprint: G99.99 Landshark
 						crit(11, {	-- G99.99 Landshark
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},
 				}),
-				i(167787, {	-- Blueprint: Mechanocat Laser Pointer
-					["questID"] = 55056,
+				q(55056, {	-- Blueprint: Mechanocat Laser Pointer
 					["coord"] = { 63.3, 42.9, 1462 },
 					["description"] = "Purchase the Blueprint from Cork Stuttguard",
 					["g"] = {
+						i(167787),	-- Blueprint: Mechanocat Laser Pointer
 						crit(4, {	-- Mechanocat Laser Pointer
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),

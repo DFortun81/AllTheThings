@@ -107,7 +107,12 @@ _.Zones =
 						i(167792, {	-- Paint Vial: Fel Mint Green
 							["questID"] = 55452, -- Paint Vial: Fel Mint Green
 						}),
-						i(169168),  -- Blueprint: Green Spraybot
+						i(169168, {  -- Blueprint: Green Spraybot
+							["questID"] = 55077,
+						}),
+						i(169169, {	-- Blueprint: Blue Spraybot
+							["questID"] = 55077,
+						}),
 						i(167793),  -- Paint Vial: Overload Orange
 					},
 				}),
@@ -121,6 +126,9 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(168804),	-- Powered Piscine Procurement Pole
+						i(167836, {	-- Blueprint: Canned Minnows
+							["questID"] = 55057,
+						}),
 					},
 				}),
 				n(155060, {	-- Doppel Ganger
@@ -370,6 +378,9 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(168370),	-- Rusted Keys to the Junkheap Drifter
+						i(169173, {	-- Blueprint: Anti-Gravity Pack
+							["questID"] = 55081,
+						}),
 					},
 				}),
 				n(155583, {	-- Scrapclaw
