@@ -39,6 +39,9 @@ _.Zones =
 				i(159797),	-- Shipwrecker Shield
 				i(159566),	-- Shipwrecker Spire
 				i(166846),	-- Spare Parts
+				i(166971),	-- Empty Energy Cell
+				i(166970),	-- Energy Cell
+				i(170500),	-- Energy Cell
 			}),
 		}),
 	}),
