@@ -20,30 +20,63 @@ _.PVP =
 						["coord"] = { 50.9, 30.8, 91 },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(56258, {	-- Ivus the Forest Lord
+					q(56258, {	-- Ivus the Forest Lord 
 						["qg"] = 154476,	-- Archdruid Renferal
-						["coord"] = { 43.9, 12.6, 91 },
-						["repeatable"] = true,
-						["races"] = HORDE_ONLY,
+					--	["coord"] = { , 91 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(6881, {	-- Ivus the Forest Lord
 						["qg"] = 13442,	-- Archdruid Renferal
 						["coord"] = { 43.9, 12.6, 91 },
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 40,
 					}),
 					q(7386, {	-- Crystal Cluster
 						["qg"] = 13442,	-- Archdruid Renferal
 						["coord"] = { 43.9, 12.6, 91 },
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 40,
+					}),
+					q(7223, {	-- Armor Scraps
+						["qg"] = 13257,	-- Murgot Deepforge
+					--	["coord"] = { , 91 },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(6781, {	-- More Armor Scraps
+						["qg"] = 13257,	-- Murgot Deepforge
+					--	["coord"] = { , 91 },
+						["sourceQuest"] = 7223,	-- Armor Scraps
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,	
+					}),
+					q(6982, {	-- Coldtooth Supplies (A)
+						["qg"] = 12096, -- Stormpike Quartermaster
+						["coord"] = { 46.6, 84.0, 91 },
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(5892, {	-- Irondeep Supplies (A)
+						["qg"] = 12096, -- Stormpike Quartermaster
+						["coord"] = { 46.6, 84.0, 91 },
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(7027, {	-- Empty Stables (A)
+						["qg"] = 13617, -- Stormpike Stable Master
+						["coord"] = { 42.6, 16.9 , 91 },
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(7026, {	-- Ram Riding Harnesses
+						["qg"] = 13577, -- Stormpike Ram Rider Commander
+					--	["coord"] = { , 91 },
+						["repeatable"] = true,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					-- Horde Quests
 					q(56257, {	-- The Battle for Alterac (H)
 						["qg"] = 154473,	-- Voggah Deathgrip
-					--	["coord"] = {  , 91 },
+						["coord"] = { 55.0, 87.2, 91 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(7281, {	-- Brotherly Love (H)
@@ -53,8 +86,7 @@ _.PVP =
 					}),
 					q(56259, {	-- Lokholar the Ice Lord
 						["qg"] = 154474,	-- Primalist Thurloga
-						["coord"] = { 50.1, 85.1, 91 },
-						["repeatable"] = true,
+						["coord"] = { 55.0, 87.2, 91 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(6801, {	-- Lokholar the Ice Lord
@@ -62,14 +94,12 @@ _.PVP =
 						["coord"] = { 50.1, 85.1, 91 },
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,	
-						["u"] = 40,
 					}),
 					q(7385, {	-- A Gallon of Blood
 						["qg"] = 13236,	-- Primalist Thurloga
 						["coord"] = { 50.1, 85.1, 91 },
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
-						["u"] = 40,
 					}),
 					q(7224, {	-- Enemy Booty
 						["qg"] = 13176,	-- Smith Regzar
@@ -83,12 +113,56 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,	
 					}),
+					q(5893, {	-- Coldtooth Supplies (H)
+						["qg"] = 12097, -- Frostwolf Quartermaster
+						["coord"] = { 46.6, 84.0, 91 },
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
+					q(6985, {	-- Irondeep Supplies (H)
+						["qg"] = 12097, -- Frostwolf Quartermaster
+						["coord"] = { 46.6, 84.0, 91 },
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
+					q(7001, {	-- Empty Stables (H)
+						["qg"] = 13616, -- Frostwolf Stable Master
+						["coord"] = { 57.1, 82.5, 91 },
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
+					q(7002, {	-- Ram Hide Harnesses
+						["qg"] = 13441, -- Frostwolf Wolf Rider Commander
+						["coord"] = { 57.0, 82.5, 91 },
+						["repeatable"] = true,
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 				n(0, {	-- Zone Drop
 					i(18229, {	-- Nat Pagle's Guide to Extreme Anglin'
 						["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nLooted from Player Corpses in Alterac Valley.",
 					}),
 					i(18231),	-- Sleeveless T-Shirt
+				}),
+				n(-2, {		-- Vendors
+					n(154478, {	-- Prospector Stonehewer
+					--	["coord"] = { , 91 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(169297, {	-- Stormpike Insignia
+								["sourceQuest"] = 56256,	-- The Battle for Alterac (A)
+							}),
+						},
+					}),
+					n(154473, {	-- Voggah Deathgrip
+						["coord"] = { 54.7, 87.3, 91 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(169298, {	-- Frostwolf Insignia
+								["sourceQuest"] = 56257,	-- The Battle for Alterac (H)
+							}),
+						},
+					}),
 				}),
 				n(13419, {	-- Ivus the Forest Lord
 					i(19110, {	-- Cold Forged Blade

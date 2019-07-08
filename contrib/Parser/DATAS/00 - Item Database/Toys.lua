@@ -201,6 +201,7 @@ t(88802);	-- Foxicopter Controller
 t(151016);	-- Fractured Necrolyte Skull
 t(44719);	-- Frenzyheart Brew
 t(128471);	-- Frostwolf Grunt's Battlegear (Horde)
+t(169298);	-- Frostwolf Insignia (H)
 t(119083);	-- Fruit Basket
 t(116692);	-- Fuzzy Green Lounge Cushion
 t(118937);	-- Gamon's Braid
@@ -447,6 +448,7 @@ t(129211);	-- Steamy Romance Novel Kit
 t(122681);	-- Sternfathom's Pet Journal
 t(111476);	-- Stolen Breath
 t(140160);	-- Stormforged Vrykul Horn
+t(169297);	-- Stormpike Insignia (A)
 t(45011);	-- Stormwind Banner (Alliance)
 t(144339);	-- Sturdy Love Fool
 t(95568);	-- Sunreaver Beacon (Horde)

@@ -43,6 +43,7 @@ _.Toys =
 		i(88802), 		-- Foxicopter Controller
 		i(44719), 		-- Frenzyheart Brew
 		i(128471),		-- Frostwolf Grunt's Battlegear (Horde)
+		i(169298),		-- Frostwolf Insignia (H)
 		i(90175), 		-- Gin-Ji Knife Set
 		i(166744),		-- Glaive Tosser
 		i(166461),		-- Gnarlwood Waveboard
@@ -107,6 +108,7 @@ _.Toys =
 		i(127695),		-- Spirit Wand
 		i(91904), 		-- Stackable Stag
 		i(66888), 		-- Stave of Fur and Claw
+		i(169297),		-- Stormpike Insignia (A)
 		i(45011),		-- Stormwind Banner (Alliance)
 		i(150743),		-- Surviving Kalimdor (Alliance)
 		i(130157),		-- Syxsehnz Rod
