@@ -256,30 +256,30 @@ _.Zones =
 				["isDaily"] = true,
 				["qgs"] = {
 					153509,	-- Artisan Okata
-					153512,	-- Finder Pruc (Horde)
+					153512,	-- Finder Pruc (H)
 				},
 				["coords"] = {
 					{ 37.9, 55.7, 1355 },	-- Alliance
 					{ 49.1, 62.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55823, {	-- Bounty: A Few Crabs
 				["isDaily"] = true,
 				["qgs"] = {
-					153591,	-- Mikah Brewbelly
-					151635,	-- Slen Darkroe
+					153591,	-- Mikah Brewbelly (A)
+					151635,	-- Slen Darkroe (H)
 				},
 				["coords"] = {
 					{ 40.0, 55.6, 1355 },	-- Alliance
 					{ 50.8, 64.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55825, {	-- Bounty: A Few Fathom Rays
@@ -293,98 +293,113 @@ _.Zones =
 					{ 47.4, 63.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55820, {	-- Bounty: A Few Hydras
 				["isDaily"] = true,
 				["qgs"] = {
-					152942,	-- Lieutenant Hawkins (Alliance)
-					151614,	-- Nevin Tideheart  (Horde)
+					152942,	-- Lieutenant Hawkins (A)
+					151614,	-- Nevin Tideheart  (H)
 				},
 				["coords"] = {
 					{ 40.1, 55.5, 1355 },	-- Alliance
 					{ 49.8, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55818, {	-- Bounty: A Few Naga
 				["isDaily"] = true,
 				["qgs"] = {
-					152942,	-- Lieutenant Hawkins (Alliance)
-					151614,	-- Nevin Tideheart  (Horde)
+					152942,	-- Lieutenant Hawkins (A)
+					151614,	-- Nevin Tideheart  (H)
 				},
 				["coords"] = {
 					{ 40.0, 55.4, 1355 },	-- Alliance
 					{ 49.8, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55822, {	-- Bounty: A Few Makura
 				["isDaily"] = true,
 				["qgs"] = {
-					155941,	-- Tamer Orami (Alliance)
-					151352,	-- Lily Bopip  (Horde)
+					155941,	-- Tamer Orami (A)
+					151352,	-- Lily Bopip  (H)
 				},
 				["coords"] = {
 					{ 39.5, 55.4, 1355 },	-- Alliance
 					{ 47.3, 61.9, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
+				},
+			}),
+			q(55819, {	-- Bounty: A Few Murlocs
+				["isDaily"] = true,
+				["qgs"] = {
+				--	155941,	-- Tamer Orami (A)			-- Need to be confirmed
+					151352,	-- Lily Bopip (H)
+				},
+				["coords"] = {
+				--	{ 39.6, 55.4, 1355 },	-- Alliance			-- Need to be confirmed
+					{ 47.3, 61.9, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55824, {	-- Bounty: A Few Snapdragons
 				["isDaily"] = true,
 				["qgs"] = {
-					155940,	-- Enizo (Alliance)
-					151618,	-- Asme Seapearl (Horde)
+					155940,	-- Enizo (A)
+					151618,	-- Asme Seapearl (H)
 				},
 				["coords"] = {
 					{ 37.8, 55.5, 1355 },	-- Alliance
 					{ 50.9, 65.3, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55837, {	-- Bounty: Dangerous Creatures
 				["isDaily"] = true,
 				["qgs"] = {
-					155941,	-- Tamer Orami
-					151352,	-- Lily Bopip
+					155941,	-- Tamer Orami (A)
+					151352,	-- Lily Bopip (H)
 				},
 				["coords"] = {
 					{ 39.6, 55.5, 1355 },	-- Alliance
 					{ 47.3, 61.9, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55836, {	-- Bounty: Elite Naga Forces
 				["isDaily"] = true,
 				["qgs"] = {
-					152942,	-- Lieutenant Hawkins (Alliance)
-					151614,	-- Nevin Tideheart (Horde)
+					152942,	-- Lieutenant Hawkins (A)
+					151614,	-- Nevin Tideheart (H)
 				},
 				["coords"] = {
 					{ 40.0, 55.4, 1355 },	-- Alliance
 					{ 50.4, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55830, {	-- Bounty: More Coral Ancients
@@ -398,95 +413,98 @@ _.Zones =
 					{ 49.1, 62.1, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55832, {	-- Bounty: More Crabs
 				["isDaily"] = true,
 				["qgs"] = {
-					153591,	-- Mikah Brewbelly
-					151635,	-- Slen Darkroe
+					153591,	-- Mikah Brewbelly (A)
+					151635,	-- Slen Darkroe (H)
 				},
 				["coords"] = {
 					{ 40.0, 55.6, 1355 },	-- Alliance
 					{ 50.8, 64.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55834, {	-- Bounty: More Fathom Rays
 				["isDaily"] = true,
 				["qgs"] = {
-					153772,	-- Lina Bluegill (Horde)
-					151772,	-- Ray Tamer Enaka (Alliance)
+					151772,	-- Ray Tamer Enaka (A)
+					153772,	-- Lina Bluegill (H)
 				},
 				["coords"] = {
 					{ 39.8, 54.1, 1355 },	-- Alliance
 					{ 47.4, 63.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55829, {	-- Bounty: More Hydras
 				["isDaily"] = true,
 				["qgs"] = {
-					152942,	-- Lieutenant Hawkins (Alliance)
-					151614,	-- Nevin Tideheart  (Horde)
+					152942,	-- Lieutenant Hawkins (A)
+					151614,	-- Nevin Tideheart  (H)
 				},
 				["coords"] = {
 					{ 40.1, 55.5, 1355 },	-- Alliance
 					{ 49.8, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55828, {	-- Bounty: More Murlocs
 				["isDaily"] = true,
 				["qgs"] = {
-					155941,	-- Tamer Orami (Alliance)
-					151352,	-- Lily Bopip (Horde)
+					155941,	-- Tamer Orami (A)
+					151352,	-- Lily Bopip (H)
 				},
 				["coords"] = {
 					{ 39.6, 55.4, 1355 },	-- Alliance
 					{ 47.3, 61.9, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55827, {	-- Bounty: More Naga
 				["isDaily"] = true,
 				["qgs"] = {
-					151614,	-- Nevin Tideheart (Horde)
+					152942,	-- Lieutenant Hawkins (A)
+					151614,	-- Nevin Tideheart  (H)
 				},
 				["coords"] = {
-					{ 50.4, 66.2, 1355 },	-- (Horde)
+					{ 40.0, 55.4, 1355 },	-- Alliance
+					{ 49.8, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55833, {	-- Bounty: More Snapdragons
 				["isDaily"] = true,
 				["qgs"] = {
-					155940,	-- Enizo (Alliance)
-					151618,	-- Asme Seapearl (Horde)
+					155940,	-- Enizo (A)
+					151618,	-- Asme Seapearl (H)
 				},
 				["coords"] = {
 					{ 37.7, 55.4, 1355 },	-- Alliance
 					{ 50.9, 65.3, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			o(326140, {	-- Bounty Board
@@ -869,16 +887,16 @@ _.Zones =
 			}),
 			q(55851, {	-- Essential Empowerment
 				["qgs"] = {
-					154166,	-- Magni Bronzebeard (Alliance)
-					154167,	-- Magni Bronzebeard (Horde)
+					154166,	-- Magni Bronzebeard (A)
+					154167,	-- Magni Bronzebeard (H)
 				},
 				["coords"] = {
 					{ 40.0, 55.2, 1355 },	-- Alliance
 					{ 48.2, 62.4, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					54972,	-- A Way Home (Alliance)
-					55053,	-- A Way Home (Horde)
+					54972,	-- A Way Home (A)
+					55053,	-- A Way Home (H)
 				},
 			}),
 			q(55985, {	-- Extra Shiny
@@ -1113,8 +1131,8 @@ _.Zones =
 					{ 39.1, 54.3, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					55983,	-- A Safer Place (Alliance)
-					55530,	-- A Safer Place (Horde)
+					55983,	-- A Safer Place (A)
+					55530,	-- A Safer Place (H)
 				},
 				["g"] = {
 					i(168093),	-- Grimy Manapearl Bracelet
@@ -1228,206 +1246,207 @@ _.Zones =
 			q(55723, {	-- Requisition: A Few Carp
 				["isDaily"] = true,
 				["qgs"] = {
-					151352,	-- Lily Bopip (Horde)
-					155941,	-- Tamer Orami (Alliance)
+					151352,	-- Lily Bopip (H)
+					155941,	-- Tamer Orami (A)
 				},
 				["coords"] = {
-					{ 39.5, 55.4, 1355 },	-- Alliance)
-					{ 47.3, 61.9, 1355 },	-- (Horde)
+					{ 39.5, 55.4, 1355 },	-- (A)
+					{ 47.3, 61.9, 1355 },	-- (H)
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55726, {	-- Requisition: A Few Cone Shells
 				["isDaily"] = true,
 				["qgs"] = {
-					154436,	-- Craftsman Azama (Alliance)
-					151633,	-- Karn Deepweld (Horde)
+					154436,	-- Craftsman Azama (A)
+					151633,	-- Karn Deepweld (H)
 				},
 				["coords"] = {
 					{ 38.0, 53.3, 1355 },	-- Alliance
-					{ 49.3, 61.5, 1355 },	-- Karn Deepweld (Horde)
+					{ 49.3, 61.5, 1355 },	-- Karn Deepweld (H)
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55724, {	-- Requisition: A Few Deepcoral Buds
 				["isDaily"] = true,
 				["qgs"] = {
-					153772,	-- Lina Bluegill (Horde)
+					151772,	-- Ray Tamer Enaka (A)
+					153772,	-- Lina Bluegill (H)
 				},
 				["coords"] = {
-					{ 47.4, 63.2, 1355 },	-- Horde
-				},
-				["sourceQuests"] = {
-					55500,	-- Save A Friend (Horde)
+					{ 39.8, 54.1, 1355 },	-- Alliance
+					{ 47.4, 63.2, 1355 },	-- (H)
 				},
 			}),
 			q(55727, {	-- Requisition: A Few Flotsam
 				["isDaily"] = true,
 				["qgs"] = {
-					153509,	-- Artisan Okata (Alliance)
-					153512,	-- Finder Pruc (Horde)
+					153509,	-- Artisan Okata (A)
+					153512,	-- Finder Pruc (H)
 				},
 				["coords"] = {
 					{ 37.9, 55.7, 1355 },	-- Alliance
 					{ 49.2, 62.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55721, {	-- Requisition: A Few Kelp Buds (also popped 56278, 56605)
 				["isDaily"] = true,
 				["qgs"] = {
-					153591,	-- Mikah Brewbelly (Alliance)
-				--	,	--  (Horde)
+					153591,	-- Mikah Brewbelly (A)
+					151635,	-- Slen Darkroe
 				},
 				["coords"] = {
-					{ 40.1, 55.5, 1355 },	-- Alliance
-				--	{ , , 1355 },	-- Horde
+					{ 40.0, 55.6, 1355 },	-- Alliance
+					{ 50.8, 64.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
-			}),
+			}),			
 			q(55720, {	-- Requisition: A Few Seaweed
 				["isDaily"] = true,
 				["qgs"] = {
-					151763,	-- Isla (Alliance)
+					151763,	-- Isla (A)
+					151614,	-- Nevin Tideheart (H)
 				},
 				["coords"] = {
-					{ 37.7, 55.3, 1355 },	-- Alliance
+					{ 37.8, 55.4, 1355 },	-- Alliance
+					{ 50.4, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55725, {	-- Requisition: A Few Spiral Leaf
 				["isDaily"] = true,
 				["qgs"] = {
-					151763,	-- Isla (alliance)
-					151614,	-- Nevin Tideheart (horde)
+					151763,	-- Isla (A)
+					151614,	-- Nevin Tideheart (H)
 				},
 				["coords"] = {
 					{ 37.7, 55.3, 1355 },	-- alliance
 					{ 50.4, 66.2, 1355 },	-- horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55789, {	-- Requisition: More Carp
 				["isDaily"] = true,
 				["qgs"] = {
-					155941,	-- Tamer Orami (Alliance)
-					151352,	-- Lily Bopip  (Horde)
+					155941,	-- Tamer Orami (A)
+					151352,	-- Lily Bopip  (H)
 				},
 				["coords"] = {
 					{ 39.5, 55.4, 1355 },	-- Alliance
 					{ 47.3, 61.9, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 --[[		q(55792, {	-- Requisition: More Cone Shells 	-- Need to be confirmed
 				["isDaily"] = true,
 				["qgs"] = {
-					154436,	-- Craftsman Azama (Alliance)
-					151633,	-- Karn Deepweld (Horde)
+					154436,	-- Craftsman Azama (A)
+					151633,	-- Karn Deepweld (H)
 				},
 				["coords"] = {
 					{ 38.0, 53.3, 1355 },	-- Alliance
-					{ 49.3, 61.5, 1355 },	-- Karn Deepweld (Horde)
+					{ 49.3, 61.5, 1355 },	-- Karn Deepweld (H)
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 ]]--		}),
 			q(55790, {	-- Requisition: More Deepcoral Buds
 				["isDaily"] = true,
 				["qgs"] = {
-					151772,	-- Ray Tamer Enaka (Alliance)
-				--	,	--  (Horde)
+					151772,	-- Ray Tamer Enaka (A)
+					153772,	-- Lina Bluegill (H)
 				},
 				["coords"] = {
 					{ 39.8, 54.1, 1355 },	-- Alliance
-				--	{ , , 1355 },	-- Horde
+					{ 47.4, 63.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55793, {	-- Requisition: More Flotsam
 				["isDaily"] = true,
 				["qgs"] = {
-					153509,	-- Artisan Okata (Alliance)
-					153512,	-- Finder Pruc (Horde)
+					153509,	-- Artisan Okata (A)
+					153512,	-- Finder Pruc (H)
 				},
 				["coords"] = {
 					{ 37.9, 55.6, 1355 },	-- Alliance
 					{ 49.2, 62.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55787, {	-- Requisition: More Kelp Buds
 				["isDaily"] = true,
 				["qgs"] = {
-					153591,	-- Mikah Brewbelly (Alliance)
-					151635,	-- Slen Darkroe (Horde)
+					153591,	-- Mikah Brewbelly (A)
+					151635,	-- Slen Darkroe (H)
 				},
 				["coords"] = {
 					{ 40.1, 55.6, 1355 },	-- Alliance
 					{ 50.8, 64.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55786, {	-- Requisition: More Seaweed
 				["isDaily"] = true,
 				["qgs"] = {
-					151763,	-- Isla (Alliance)
-					151614,	-- Nevin Tideheart (Horde)
+					151763,	-- Isla (A)
+					151614,	-- Nevin Tideheart (H)
 				},
 				["coords"] = {
 					{ 37.8, 55.4, 1355 },	-- Alliance
 					{ 50.4, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55791, {	-- Requisition: More Spiral Leaf
 				["isDaily"] = true,
 				["qgs"] = {
-					151763,	-- Isla (Alliance)
-					151614,	-- Nevin Tideheart (Horde)
+					151763,	-- Isla (A)
+					151614,	-- Nevin Tideheart (H)
 				},
 				["coords"] = {
 					{ 37.8, 55.4, 1355 },	-- Alliance
 					{ 50.4, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)				
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)				
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55785, {	-- Requisition: More Starfish
@@ -1441,23 +1460,23 @@ _.Zones =
 					{ 49.3, 61.5, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)				
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)				
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55801, {	-- Requisition: We Need It All
 				["isDaily"] = true,
 				["qgs"] = {
-					151618,	-- Asme Seapearl (Horde)
-					155940,	-- Enizo (Alliance)
+					151618,	-- Asme Seapearl (H)
+					155940,	-- Enizo (A)
 				},
 				["coords"] = {
 					{ 37.7, 55.4, 1355 },	-- Alliance
 					{ 50.9, 65.7, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save A Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
 				},
 			}),
 			q(55363, {	-- Rescue The Farseer
@@ -1483,15 +1502,12 @@ _.Zones =
 					{ 51.0, 65.5, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56166,	-- The Needs of the People (Alliance)
-					56179,	-- The Needs of the People (Horde)
+					56166,	-- The Needs of the People (A)
+					56179,	-- The Needs of the People (H)
 				},
 				["g"] = {
 					
-					{	-- Bounty: A Few Murlocs
-						["questID"] = 55819,
-						["isDaily"] = true,
-					},
+					
 					{	-- Bounty: More Makrura
 						["questID"] = 55831,
 						["isDaily"] = true,
@@ -1777,8 +1793,8 @@ _.Zones =
 				["qg"] = 154574,	-- Kelya Moonfall
 				["coord"] = { 74.2, 24.9, 1355 },
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (Alliance)
-					55500,	-- Save a Friend (Horde)
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55574, {	-- The Javelins of Azshara
