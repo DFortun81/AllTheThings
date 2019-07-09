@@ -705,7 +705,7 @@ _.Zones =
 				}),
 				q(47046,  {	-- Frost: The Thieving Apprentice
 					["classes"] = { 6 },
-					["qgs"] = { 105467, 115081 },	-- Archmage Kalec (2 versions)
+					["qgs"] = { 115467, 105081 },	-- Archmage Kalec (2 versions)
 				}),
 				qa(45182, {	-- Frost: The Twisted Twin
 					["classes"] = { 8 },
@@ -753,7 +753,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(47043,  {	-- Havoc: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Havoc DH only)
-					["qgs"] = { 105467, 115081 },	-- Archmage Kalec (2 versions)
+					["qgs"] = { 115467, 105081 },	-- Archmage Kalec (2 versions)
 					["classes"] = { 12 },
 				}),
 				qh(46178, {	-- Hiding In Plain Sight
@@ -1258,11 +1258,11 @@ _.Zones =
 			--	q(44411),	-- Strange Humming Crystal -- granted by i(141349)
 				q(47048,  {	-- Subtlety: The Thieving Apprentice
 					["classes"] = { 4 },
-					["qgs"] = { 105467, 115081 },	-- Archmage Kalec
+					["qgs"] = { 115467, 105081 },	-- Archmage Kalec (2 versions)
 				}),
 				q(47047,  {	-- Survival: The Thieving Apprentice
 					["classes"] = { 3 },
-					["qgs"] = { 105467, 115081 },	-- Archmage Kalec
+					["qgs"] = { 115467, 105081 },	-- Archmage Kalec (2 versions)
 				}),
 				q(42703,  {	-- Technical Wizardry
 					["sourceQuests"] = { 42663 },	-- Rise, Champions

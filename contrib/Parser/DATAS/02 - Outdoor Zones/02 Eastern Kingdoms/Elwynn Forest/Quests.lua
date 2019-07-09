@@ -291,7 +291,7 @@ _.Zones =
 					["sourceQuest"] = 106,	-- Young Lovers
 				}),
 				q(114, {	-- The Escape
-					["qg"] = 256,	-- William Pestle
+					["qg"] = 253,	-- William Pestle
 					["coord"] = { 43.3, 65.7, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 112,	-- Collecting Kelp

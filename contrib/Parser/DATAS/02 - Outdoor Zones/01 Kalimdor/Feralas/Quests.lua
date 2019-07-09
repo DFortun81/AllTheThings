@@ -1077,7 +1077,7 @@ _.Zones =
 				},
 				{	-- Ysondre's Call (H)
 					["questID"] = 25378,
-					["qg"] = 39547,	-- Chief Spirithorn
+					["qg"] = 39847,	-- Chief Spirithorn
 					["coord"] = { 74.5, 42.8, 69 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25349,	-- Twisted Sisters

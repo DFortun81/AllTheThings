@@ -1112,7 +1112,7 @@ _.Zones =
 						["qg"] = 98931,	-- Thanid Glowergold
 					}),
 					q(40190,  {	-- Hardening the Hide
-						["qg"] = 9352,	-- Diane Cannings
+						["qg"] = 93522,	-- Diane Cannings
 					}),
 					q(40177,  {	-- Leather Lady
 						["qg"] = 93523,	-- Namha Moonwater

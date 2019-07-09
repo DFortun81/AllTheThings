@@ -849,7 +849,7 @@ _.Zones =
 				},
 				{	-- Slavery and Strife
 					["questID"] = 33119,
-					["qg"] = 7822,	-- Guse
+					["qg"] = 78222,	-- Guse
 					["coord"] = { 20.0, 52.8, 526 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33527,	-- Last Steps

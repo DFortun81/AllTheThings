@@ -810,7 +810,7 @@ _.Zones =
 							},
 						}),
 						qa(9874,  { 	-- Stopping the Spread
-							["qg"] = 8222,	-- Otonbu the Sage
+							["qg"] = 18222,	-- Otonbu the Sage
 							["coord"] = { 54.4, 72.0, 107 },
 							["g"] = {
 								i(25570),	-- Melia's Lustrous Crown

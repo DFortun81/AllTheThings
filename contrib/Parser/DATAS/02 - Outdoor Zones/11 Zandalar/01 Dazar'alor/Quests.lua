@@ -300,7 +300,7 @@ _.Zones =
 					["repeatable"] = true,
 					["isWeekly"] = true,
 					["coord"] = { 44.60, 95.40, 1163 },
-					["qg"] = 133000,	-- Captain Rez'okun
+					["qg"] = 123000,	-- Captain Rez'okun
 					["g"] = {
 						i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 						i(166999),	-- Treasure Map

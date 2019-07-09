@@ -294,7 +294,7 @@ _.Zones =
 					{	-- Moonfire [Druid]
 						["questID"] = 14283,	-- Moonfire
 						["u"] = 2,				-- Quest No Longer Available
-						["qg"] = 35783,			-- Celestine of the Harvest
+						["qg"] = 35873,			-- Celestine of the Harvest
 						["sourceQuests"] = {
 							14280,	-- The Winds Know Your Name... Apparently
 						},
@@ -472,7 +472,7 @@ _.Zones =
 					},
 					{	-- Safety in Numbers [Druid]
 						["questID"] = 14291,	-- Safety in Numbers
-						["qg"] = 35783,			-- Celestine of the Harvest
+						["qg"] = 35873,			-- Celestine of the Harvest
 						["sourceQuests"] = {
 							14283,	-- Moonfire
 							14280,	-- The Winds Know Your Name... Apparently
