@@ -3200,6 +3200,7 @@ AllTheThings.L = {
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
 		[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)
 		[332220] = "Glowing Arcane Trunk",
+		[322413] = "Glimmering Chest",
 		[322533] = "Mardivas's Tome of the Elements",
 		[325659] = "Mechanized Chest",
 		[325660] = "Mechanized Chest",

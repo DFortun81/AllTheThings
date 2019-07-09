@@ -840,14 +840,15 @@ _.Zones =
 				["questID"] = 56893,
 				["coord"] = { 47.6, 31.9, 1355 },
 			}),
-			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency that can be looted once per day
-				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but can be looted once per day for for some Prismatic Manapearls and a chance at Benthic gear.",
+			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency
+				["description"] = "Can drop Prismatic Manapearls and Benthic gear.",
 				["questID"] = 56915,
 				["isDaily"] = true,
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearl
 				},
 			}),
+			i(167077),	-- Srying Stone
 		}),
 	}),
 };
