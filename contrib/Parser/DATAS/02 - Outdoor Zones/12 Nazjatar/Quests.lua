@@ -345,11 +345,11 @@ _.Zones =
 			q(55819, {	-- Bounty: A Few Murlocs
 				["isDaily"] = true,
 				["qgs"] = {
-				--	155941,	-- Tamer Orami (A)			-- Need to be confirmed
+					155941,	-- Tamer Orami (A)
 					151352,	-- Lily Bopip (H)
 				},
 				["coords"] = {
-				--	{ 39.6, 55.4, 1355 },	-- Alliance			-- Need to be confirmed
+					{ 39.5, 55.4, 1355 },	-- Alliance
 					{ 47.3, 61.9, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
@@ -1160,6 +1160,14 @@ _.Zones =
 				["sourceQuest"] = 56156,	-- A Tempered Blade  (maybe add 57041 for selecting Farseer Ori for the day?)
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
+			q(55845, {	-- Plans of Attack
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			--	["objectID"] = ,	-- Naga Attack Plans (unknown ID, not linked to quest)
+				["isDaily"] = true,
+				["coord"] = { 37.2, 19.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(56157, {	-- Plug the Geysers
 				["qg"] = 154246,	-- Apprentice Inari
 				["coord"] = { 31.0, 37.7, 1355 },
@@ -1207,6 +1215,14 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			}),
+			q(55637, {	-- Poor, Unfortunate Souls
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 74.2, 24.8, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 152494,	-- Elycina Starcaller
 			}),
 			q(56241, {	-- Preserved Clues (A)
 				["qg"] = 153510,	-- Artisan Itanu
@@ -2095,6 +2111,14 @@ _.Zones =
 				["coord"] = { 48.9, 67.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56644,	-- Up Against It
+			}),
+			q(56154, {	-- Where They Hide
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 41.3, 58.2, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154241,	-- Seeker Anagi
 			}),
 			q(56815, {	-- With A Little Help From My Friends
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)

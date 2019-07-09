@@ -203,6 +203,10 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
+			q(57354, {	-- Overdue
+				["collectible"] = false,
+				["lvl"] = 120,
+			}),
 			q(56385, {	-- Pearlhusk Crawler
 				["collectible"] = false,
 				["filterID"] = 101,	-- Battle Pet
@@ -212,6 +216,10 @@ _.Zones =
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 				["collectible"] = false,
+			}),
+			q(57336, {	-- Putting the Past to Rest
+				["collectible"] = false,
+				["lvl"] = 120,
 			}),
 			q(56387, {	-- Ravenous Scalespawn
 				["lvl"] = 120,
@@ -360,6 +368,7 @@ _.Zones =
 			]]--
 			q(56383, {	-- Silence
 				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(55899, {	-- Starseeker of the Shirakess
