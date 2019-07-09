@@ -6,7 +6,7 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
 			n(-16, {	-- Rares
-				-- Coords have been confirmed on rares except for Edge of Reality, Silthide, and some noted rares on longer spawn timers.
+				-- Coords have been confirmed on rares except for Silthide and some noted rares on longer spawn timers.
 				n(88043, {	-- Avatar of Socrethar
 					["questID"] = 37338,
 					["isDaily"] = true,
@@ -377,7 +377,7 @@ _.Zones =
 					},
 				}),
 				n(80524, {	-- Underseer Bloodmane
-					["questID"] = 35491,	-- also triggers 34945 (duplicate ID for vignette)
+					["questID"] = 34945,
 					["coord"] = { 63.6, 20.8, 535 },
 					["g"] = {
 						i(112475),	-- Prize's Horn-Ring

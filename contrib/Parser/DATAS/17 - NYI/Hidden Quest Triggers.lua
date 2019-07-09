@@ -72,14 +72,9 @@ _.NeverImplemented =
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
 		q(36793),	-- Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
 		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking herbs
-		q(34946),	-- Morkurk Greeting - triggers upon entering the zone from Talador
 		q(34935),	-- After Wall Greeting
 		q(33964),	-- Arak Flowerpicker
 		q(34560),	-- Armory
-		q(34568),	-- Armory
-		q(37301),	-- Armory
-		q(37304),	-- Armory
-		q(34793),	-- Auchenai Defenders Greeting
 		q(36636),	-- Blueprint Read
 		q(36856),	-- Burning Missive
 		q(36849),	-- Burning Missive
@@ -91,16 +86,11 @@ _.NeverImplemented =
 		q(36855),	-- Burning Missive
 		q(35044),	-- Cordana Summon
 		q(34920),	-- Destroy Ward
-		q(33927),	-- Draenei Camp Explosion Tracker
-		q(33927),	-- Draenei Camp Explosion Tracker),	-- triggers when approaching the area for Deceptia's Smoldering Boots
 		q(34580),	-- Draenor Flowerpicker
 		q(34581),	-- Draenor Flowerpicker Note Found
 		q(37300),	-- Drafting Table Interact
 		q(37311),	-- Drafting Table Interact
-		q(34895),	-- Dropping Bombs Tracking
-		q(34983),	-- Dropping Bombs Tracking
-		q(35047),	-- Dropping Bombs Tracking
-		q(36426),	-- Dueling Orbs),	-- triggered when completing "Mysterious Ring" (34463)
+		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
 		q(34831),	-- Encounter Mushroom
 		q(36640),	-- Followers Obtained
 		q(33961),	-- Frostfire Flowerpicker
@@ -108,15 +98,10 @@ _.NeverImplemented =
 		q(34834),	-- General Commentary
 		q(33966),	-- Gorgrond Flowerpicker
 		q(34934),	-- Initial Defenders
-		q(33645),	-- Tracking Quest),	-- Iskar's Hired Hand
 		q(34821),	-- Khadgar Summon
 		q(34906),	-- Krelas Summoned
 		q(34561),	-- Mage Tower
-		q(37302),	-- Mage Tower
-		q(37303),	-- Mage Tower
-		q(34567),	-- Mage Tower
 		q(35051),	-- Mage Tower Complete
-		q(34772),	-- Morkeths Cage
 		q(33963),	-- Nagrand Flowerpicker
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle
 		q(34904),	-- Portal Vision
@@ -125,7 +110,6 @@ _.NeverImplemented =
 		q(34833),	-- Prune Ancient
 		q(34986),	-- Punching Through Tracking
 		q(34873),	-- Punching Through Tracking
-		q(34503),	-- Screaming Telmor Citizen),	-- triggers in Telmor
 		q(35192),	-- See Reinforcements Teleport
 		q(34969),	-- Serena Summoned
 		q(33962),	-- Shadowmoon Flowerpicker
@@ -135,7 +119,18 @@ _.NeverImplemented =
 		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(38348),	-- Triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar". Appears to be a duplicate ID
+		q(34871),	-- Supply Recovery Tracking
+		q(34984),	-- Supply Recovery Tracking
+		q(33960),	-- Talador Flowerpicker
+		q(33965),	-- Tanaan Flowerpicker
+		q(39434),	-- Short-Supply Reward
+		q(39375),	-- Short-Supply Reward
+		q(39376),	-- Short-Supply Reward
+		q(39377),	-- Short-Supply Reward
+		q(39378),	-- Short-Supply Reward
+		q(34857),	-- Tracking Flag: Orcs Kicked Out of Cave),	-- triggers when going to turn in "Old Friends, New Enemies"
 		
+
 		q(34679),	-- Nagrand - Alliance Stables Tracking Event
 		q(34680),	-- Nagrand - Alliance Workshop Tracking Event
 		q(37202),	-- Nagrand - Hemet Nesingwary Visitor Tracking Event
@@ -143,6 +138,19 @@ _.NeverImplemented =
 		q(34813),	-- Nagrand - Horde Workshop Tracking Event
 		q(34518),	-- Nagrand - Nagrand Corral
 		
+		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
+		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
+		q(35628),	-- Shadowmoon Valley - Friend of the Exarchs: Rangari Chel selected
+		q(34600),	-- Shadowmoon Valley - Tracking Quest: Saw Vorka, Rangari Leave
+		q(34622),	-- Shadowmoon Valley - Tracking Quest: Saw Ner'zhul Leave
+		q(33839),	-- Shadowmoon Valley - Tracking Quest: Saw Naaru Purified
+		q(36907),	-- Shadowmoon Valley - Tracking Quest: Defense of Karabor - Celebration Finished
+		q(33086),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 1
+		q(33165),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 2
+		q(33167),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 3
+		q(33166),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 4
+		q(34896),	-- Shadowmoon Valley - Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
+
 		q(35874),	-- Spires of Arak - Apparatus - triggers after finishing "The Ebon Hunter" quest
 		q(36859),	-- Spires of Arak - Deprecated version of "The Howling Crag" bonus objective
 		q(35201),	-- Spires of Arak - Krixel
@@ -163,38 +171,36 @@ _.NeverImplemented =
 		q(36798),	-- Spires of Arak - Rooby Roo fed 3x to reveal the treasure
 		q(35028),	-- Spires of Arak - Krikka and Vakora Tracking - triggers during "The Bloodmane" and "Words of the Raven Mother"
 		q(36724),	-- Spires of Arak - Reshad Tracking - triggers after turning in "Call of the Raven Mother"
-		q(34871),	-- Supply Recovery Tracking
-		q(34984),	-- Supply Recovery Tracking
-		q(33960),	-- Talador Flowerpicker
-		q(33965),	-- Tanaan Flowerpicker
-		q(33931),	-- This Is Not a Quest),	-- triggers when you loot Deceptia's Smoldering Boots. Supposedly it shows the map indicator but is silently completed when the explosion happens?
-		q(34857),	-- Tracking Flag: Orcs Kicked Out of Cave),	-- triggers when going to turn in "Old Friends, New Enemies"
-		q(34562),	-- Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
-		q(34047),	-- Tuurem Explosion Tracker
-		q(34101),	-- Vignette: Aruumel's Worn Mace
-		q(34115),	-- Vignette: Four Friends Found),	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
-		q(34116),	-- Vignette: Girl 1 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34117),	-- Vignette: Girl 2 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34118),	-- Vignette: Guy 1 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34119),	-- Vignette: Guy 2 Found),	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34523),	-- Warlock Speaking to Gul'dan),	-- triggers near Gul'Rok
-		q(35626),	-- Friend of the Exarchs: Apprentice Artificer Andren selected
-		q(35629),	-- Friend of the Exarchs: Vindicator Onaala selected
-		q(35628),	-- Friend of the Exarchs: Rangari Chel selected
-		q(34600),	-- Tracking Quest: Saw Vorka, Rangari Leave
-		q(34622),	-- Tracking Quest: Saw Ner'zhul Leave
-		q(33839),	-- Tracking Quest: Saw Naaru Purified
-		q(36907),	-- Tracking Quest: Defense of Karabor - Celebration Finished
-		q(33086),	-- Tracking Quest: The Root of Darkness - Stone 1
-		q(33165),	-- Tracking Quest: The Root of Darkness - Stone 2
-		q(33167),	-- Tracking Quest: The Root of Darkness - Stone 3
-		q(33166),	-- Tracking Quest: The Root of Darkness - Stone 4
-		q(34896),	-- Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
-		q(39434),	-- Short-Supply Reward
-		q(39375),	-- Short-Supply Reward
-		q(39376),	-- Short-Supply Reward
-		q(39377),	-- Short-Supply Reward
-		q(39378),	-- Short-Supply Reward
+
+		q(34568),	-- Talador - Armory
+		q(37301),	-- Talador - Armory
+		q(37304),	-- Talador - Armory
+		q(34793),	-- Talador - Auchenai Defenders Greeting
+		q(33927),	-- Talador - Draenei Camp Explosion Tracker,	-- triggers when approaching the area for Deceptia's Smoldering Boots
+		q(34895),	-- Talador - Dropping Bombs Tracking
+		q(34983),	-- Talador - Dropping Bombs Tracking
+		q(35047),	-- Talador - Dropping Bombs Tracking
+		q(36426),	-- Talador - Dueling Orbs
+		q(37302),	-- Talador - Mage Tower
+		q(37303),	-- Talador - Mage Tower
+		q(34567),	-- Talador - Mage Tower
+		q(34772),	-- Talador - Morkeths Cage
+		q(34946),	-- Talador - Morkurk Greeting
+		q(33931),	-- Talador - This Is Not a Quest,	-- triggers when you loot Deceptia's Smoldering Boots. Supposedly it shows the map indicator but is silently completed when the explosion happens?
+		q(33645),	-- Talador - Tracking Quest,	-- Iskar's Hired Hand
+		q(34562),	-- Talador - Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
+		q(34101),	-- Talador - Vignette: Aruumel's Worn Mace	-- triggers when looting "Lightbearer"
+		q(34115),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
+		q(34116),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
+		q(34117),	-- Talador - Vignette: Girl 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
+		q(34118),	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
+		q(34119),	-- Talador - Vignette: Guy 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
+		q(34523),	-- Talador - Warlock Speaking to Gul'dan,	-- triggers near Gul'Rok
+		q(34047),	-- Talador - Tuurem Explosion Tracker
+		q(34503),	-- Talador - Screaming Telmor Citizen,	-- triggers in Telmor
+		q(34760),	-- Talador - triggered when looting the Rusted Lockbox. WoWhead lists as a nagrand treasure but that treasure doesn't seem to exist
+		q(35491),	-- Talador - Underseer Bloodmane vignette duplicate flag
+		
 		q(37969),	-- Tanaan Jungle - Vol'mar built
 		q(38433),	-- Tanaan Jungle - lion's watch built
 		q(39306),	-- Tanaan Jungle - Call to Arms chosen during "Bring the Reinforcements"
@@ -202,6 +208,7 @@ _.NeverImplemented =
 		q(37887),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE
 		q(38583),	-- Tanaan Jungle - Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden
 		q(38587),	-- Tanaan Jungle - Assault on the Throne of Kil'jaeden - criteria complete
+		
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 		-------------------
 		--    Legion     --

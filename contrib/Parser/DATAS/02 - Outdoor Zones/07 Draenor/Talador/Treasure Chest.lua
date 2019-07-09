@@ -160,7 +160,7 @@ _.Zones =
 					},
 				}),
 				o(227527, {	-- Lightbearer
-					["questID"] = 35964,	-- also triggers 34101
+					["questID"] = 35964,
 					["coord"] = { 68.8, 56.2 , 535 },
 					["g"] = {
 						i(109192),	-- Lightbearer
@@ -214,9 +214,9 @@ _.Zones =
 					},
 				}),
 				o(228483, {	-- Rusted Lockbox
+					["questID"] = 34276,
 					["description"] = "Swim down to the bottom of the cavern.",
 					["modelID"] = 34286,
-					["questID"] = 34276,	-- also triggered 34760
 					["coord"] = { 66.0, 85.1, 535 },
 					["g"] = {
 						-- Weapons
@@ -345,10 +345,10 @@ _.Zones =
 					},
 				}),
 				o(227868, {	-- Sparkling Pool
-					["description"] = "Requires Fishing.",
-					["modelScale"] = 10,
 					["questID"] = 34207,
-					["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
+					["description"] = "Requires Fishing.",
+					--["modelScale"] = 10,
+					--["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
 					["coord"] = { 39.2, 41.7, 535 },
 					["g"] = {
 						i(112623, {	-- Pack of Fishing Supplies

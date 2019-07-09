@@ -2605,6 +2605,7 @@ AllTheThings.L = {
 		[226967] = "Lagoon Pool",
 		[226976] = "Deceptia's Smoldering Boots",
 		[226983] = "Crag-Leaper's Cache",
+		[226987] = "Ricky",
 		[226990] = "Supply Dump",
 		[226993] = "Survivalist's Cache",
 		[226994] = "Grimfrost Treasure",

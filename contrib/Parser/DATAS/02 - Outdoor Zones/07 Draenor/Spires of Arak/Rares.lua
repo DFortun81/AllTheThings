@@ -259,10 +259,6 @@ _.Zones =
 						i(116852),	-- Tesska's Cursed Talisman
 					},
 				}),
-				n(80524, {	-- Underseer Bloodmane
-					["questID"] = 34945,
-					["coord"] = { 63.6, 20.8, 542 },
-				}),
 				n(82050, {	-- Varasha
 					["questID"] = 35334,
 					["coords"] = { 
