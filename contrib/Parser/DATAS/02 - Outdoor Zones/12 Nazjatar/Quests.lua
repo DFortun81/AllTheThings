@@ -1934,6 +1934,12 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
+			q(55980, {	-- Turn the Scale
+				["qg"] = 153543,	-- Krato Flipperfoot
+				["coord"] = { 34.4, 37.8, 1355 },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
 			q(56644, {	-- Up Against it
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 45.5, 74.9, 1355 },

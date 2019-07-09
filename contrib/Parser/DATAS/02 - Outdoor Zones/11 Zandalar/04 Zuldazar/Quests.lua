@@ -57,6 +57,18 @@ _.Zones =
 								}),
 							},
 						}),
+						q(52952, { 	-- Call to Arms: Zuldazar
+							["repeatable"] = true,
+							["isWeekly"] = true,
+							["coord"] = { 51.54, 58.21 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 143536,	-- High Warlord Volrath
+							["g"] = {
+								i(164261, { 	-- Steel Strongbox
+									i(137642),	-- Mark of Honor
+								}),
+							},
+						}),
 						q(53338, { 	-- Prove Your Worth
 							["repeatable"] = true,
 							["isWeekly"] = true,
@@ -69,6 +81,11 @@ _.Zones =
 								}),
 							},
 						}),
+						--[[q(54068, { 	-- Conquest's Reward  -- Needs more research.  Same quest name, but changes weekly as the season goes on for diffrent rewards?
+							["repeatable"] = true,
+							["coord"] = { 51.56, 58.06 },
+							["races"] = HORDE_ONLY,
+						}),]]
 					},
 				}),
 				
@@ -749,6 +766,41 @@ _.Zones =
 						i(159150),	-- Rastari Stompers
 						i(159123),	-- Jambani Barrier
 					},
+				}),
+				q(55462, { 	-- The Wanderer's Call
+					["races"] = HORDE_ONLY,
+					["qg"] = 151999,	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
+					["coord"] = { 68.2, 41.6 },
+				}),
+				q(55504, { 	-- Wayshrines of Zuldazar
+					["races"] = HORDE_ONLY,
+					["qg"] = 151257,	-- Torcali <Loa of Wanderers>
+					["coord"] = { 68.2, 29.6 },
+					["sourceQuests"] = { 55462 },	-- The Wanderer's Call
+				}),
+				q(55503, { 	-- The Direhorn and the Saurid
+					["races"] = HORDE_ONLY,
+					["qg"] = 154607,	-- Image of Torcali
+					["coord"] = { 52.4, 23.2 },
+					["sourceQuests"] = { 55504 },	-- Wayshrines of Zuldazar
+				}),
+				q(55506, { 	-- One Road Ends
+					["races"] = HORDE_ONLY,
+					["qg"] = 154607,	-- Image of Torcali
+					["coord"] = { 52.4, 23.2 },
+					["sourceQuests"] = { 55503 },	-- The Direhorn and the Saurid
+				}),
+				q(55505, { 	-- Roo'li's Memory
+					["races"] = HORDE_ONLY,
+					["qg"] = 154607,	-- Image of Torcali
+					["coord"] = { 62.0, 49.6 },
+					["sourceQuests"] = { 55506 },	-- One Road Ends
+				}),
+				q(55507, { 	-- Torcali's Blessing
+					["races"] = HORDE_ONLY,
+					["qg"] = 151257,	-- Torcali <Loa of Wanderers>
+					["coord"] = { 68.2, 29.4 },
+					["sourceQuests"] = { 55505 },	-- Roo'li's Memory
 				}),
 				q(49285, {	-- Tiny Treasures
 					["g"] = {
