@@ -855,7 +855,7 @@ AllTheThings.L = {
 	["NPC_ID_NAMES"] = {
 
 -- Commonly used
-		[0] = ZONE.." "..BATTLE_PET_SOURCE_1, 									-- Zone Drop
+		[0] = "Zone Drop", 														-- Zone Drop
 		[-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,				-- Common Boss Drop
 		[-2] = BATTLE_PET_SOURCE_3, 											-- Vendor
 		[-3] = GetItemSubClassInfo(15,3), 										-- World Event
