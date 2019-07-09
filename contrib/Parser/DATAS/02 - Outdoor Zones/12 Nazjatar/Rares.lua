@@ -14,9 +14,8 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170189, {	-- Blind Eye
-						["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+						["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r (cave entrance at 38.6, 58.3) for a hefty sum of gold.",
 					--	["questID"] = ,
-						["coord"] = { 38.0, 59.2, 1355 },
 						["g"] = {
 							crit(33, {	-- Blind Eye
 								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -74,10 +73,6 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170184, {	-- Ancient Reefwalker Bark
-						["coords"] = {
-							{ 37.8, 55.6, 1355 },	-- Alliance
-							{ 49.2, 62.0, 1355 },	-- Horde
-						},
 						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
 						["repeatable"] = true,
 						["questID"] = 56969,
@@ -214,10 +209,6 @@ _.Zones =
 						["hordeQuestID"] = 56972,	-- Fathom Ray Wing
 						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation.",
 						["repeatable"] = true,
-						["coords"] = {
-							{ 39.4, 53.4, 1355 },	-- Alliance
-							{ 49.6, 64.6, 1355 },	-- Horde
-						},
 						["g"] = {
 							crit(46, {	-- Fathom Ray Wing
 								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -301,10 +292,6 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170184, {	-- Ancient Reefwalker Bark
-						["coords"] = {
-							{ 37.8, 55.6, 1355 },	-- Alliance
-							{ 49.2, 62.0, 1355 },	-- Horde
-						},
 						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
 						["repeatable"] = true,
 						["questID"] = 56969,
@@ -335,14 +322,17 @@ _.Zones =
 			n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
 				["questID"] = 56916,
 				["isDaily"] = true,
-				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but can be looted once per day for for some Prismatic Manapearls and a chance at Benthic gear.",
+				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearl
 				},
 			}),
 			n(144644, {	-- Mirecrawler
 				["questID"] = 56274,
-				["coord"] = { 61.0, 31.7, 1355 },
+				["coords"] = {
+					{ 58.2, 26.7, 1355 },
+					{ 61.0, 31.7, 1355 },
+				},
 				["isDaily"] = true,
 				["g"] = {
 					crit(17, {	-- I Thought You Said They'd Be Rare?
@@ -390,10 +380,6 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170184, {	-- Ancient Reefwalker Bark
-						["coords"] = {
-							{ 37.8, 55.6, 1355 },	-- Alliance
-							{ 49.2, 62.0, 1355 },	-- Horde
-						},
 						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
 						["repeatable"] = true,
 						["questID"] = 56969,
@@ -531,10 +517,6 @@ _.Zones =
 						["hordeQuestID"] = 56973,	-- Giant Crab Leg
 						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation.",
 						["repeatable"] = true,
-						["coords"] = {
-							{ 37.9, 55.6, 1355 },	-- Alliance
-							{ 49.2, 62.0, 1355 },	-- Horde
-						},
 						["g"] = {
 							crit(49, {	-- Giant Crab Leg
 								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -679,7 +661,10 @@ _.Zones =
 			n(152290, {	-- Soundless
 				["allianceQuestID"] = 56298,
 				["hordeQuestID"] = 56298,
-				["coord"] = { 59.9, 47.6, 1355 },
+				["coords"] = {
+					{ 54.8, 50.1, 1355 },
+					{ 59.9, 47.6, 1355 },
+				},
 				["isDaily"] = true,
 				["description"] = "On top of the coral reef. Requires Flying.", 
 				["g"] = {
@@ -692,10 +677,6 @@ _.Zones =
 						["hordeQuestID"] = 56972,	-- Fathom Ray Wing
 						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation.",
 						["repeatable"] = true,
-						["coords"] = {
-							{ 39.4, 53.4, 1355 },	-- Alliance
-							{ 49.6, 64.6, 1355 },	-- Horde
-						},
 						["g"] = {
 							crit(46, {	-- Fathom Ray Wing
 								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -790,10 +771,6 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170184, {	-- Ancient Reefwalker Bark
-						["coords"] = {
-							{ 37.8, 55.6, 1355 },	-- Alliance
-							{ 49.2, 62.0, 1355 },	-- Horde
-						},
 						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
 						["repeatable"] = true,
 						["questID"] = 56969,
@@ -841,7 +818,7 @@ _.Zones =
 				["coord"] = { 47.6, 31.9, 1355 },
 			}),
 			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency
-				["description"] = "Can drop Prismatic Manapearls and Benthic gear.",
+				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 				["questID"] = 56915,
 				["isDaily"] = true,
 				["g"] = {
