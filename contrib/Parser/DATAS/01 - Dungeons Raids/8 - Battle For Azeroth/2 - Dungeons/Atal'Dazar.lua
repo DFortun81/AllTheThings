@@ -10,6 +10,17 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			935,	-- Sacrificial Pits
 		},
 		["g"] = {
+			n(-4, {	-- Achievements
+				ach(13020, {	-- Bow to Your Masters
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(8, {	-- Rezan Respected
+							["npcID"] = 122963,	-- Rezan
+						}),
+					},
+				}),
+			}),					
 			n(-17, {	-- Quests
 				q(51517, {	-- You Owe Me a Spirit
 					["qg"] = 140405,	-- Bwonsamdi

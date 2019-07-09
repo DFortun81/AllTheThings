@@ -6,6 +6,25 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
 			n(-4, {	-- Achievements
+				ach(13020, {	-- Bow to Your Masters
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(6, {	-- Jani Respected
+							["npcID"] = 126334,	-- Jani
+							["description"] = "Click on the trash pile to have Jani spawn then /bow. Curse of Jani questline must have been completed.",
+							["coord"] = { 35.41, 7.81, 1165 },
+						}),
+						crit(4, {	-- Gonk Respected
+							["npcID"] = 129740,	-- Gonk
+							["coord"] = { 49.27, 44.33, 1165 },
+						}),
+						crit(7, {	-- Pa'ku Respected
+							["npcID"] = 127377,	-- Pa'ku
+							["coord"] = { 71.54, 49.41, 1165 },
+						}),
+					}
+				}),
 				ach(12480, {	-- A Bargain of Blood
 					["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
 					["races"] = HORDE_ONLY,		-- Horde Only Races

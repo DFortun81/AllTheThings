@@ -22,17 +22,6 @@ _.Zones =
 					-- Note: Actual information is in rare file.  This just lets us alphabetize it properly instead of it going to the bottom.
 					["collectible"] = false,	-- Can't be completed solely in this zone
 				}),
-				ach(13020, {	-- Bow to Your Masters
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(6, {	-- Jani Respected
-							["npcID"] = 126334,	-- Jani
-							["description"] = "Click on the trash pile to have Jani spawn then /bow. Curse of Jani questline must have been completed.",
-							["coord"] = { 35.41, 7.81, 1165 },
-						})
-					}
-				}),
 				ach(12740, {	-- Full of Scrap! [500 Items] [Horde]
 					["races"] = HORDE_ONLY,
 					["g"] = {

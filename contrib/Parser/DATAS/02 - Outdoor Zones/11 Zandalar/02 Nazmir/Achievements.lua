@@ -7,6 +7,20 @@ _.Zones =
 		m(863, {	-- Nazmir
 			n(-4, {	-- Achievements
 				ach(12942),		-- Adventurer of Nazmir
+				ach(13020, {	-- Bow to Your Masters
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {	-- Bwonsamdi respected
+							["npcID"] = 122688,	-- Bwonsamdi
+							["coord"] = { 9.42, 24.74, 863 },
+						}),
+						crit(2, {	-- Krag'wa respected
+							["npcID"] = 120551,	-- Krag'wa
+							["coord"] = { 75.49, 56.76, 863 },
+						}),
+					}
+				}),
 				ach(13036, {	-- A Loa of a Tale
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
