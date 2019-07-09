@@ -115,6 +115,87 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["qg"] = 136907,	-- Magni Bronzebeard	
 						}),
+						q(55390, {	-- In Darkness, I Dream
+							["qg"] = 152365,	-- Kalecgos
+							["coord"] = { 53.1, 70.9, 1473 },
+							["description"] = "Your Hearth of Azeroth need to be 54 to start the Questline.",
+							["lvl"] = 120,
+						}),	
+						q(55392, {	-- Enter the Dreamway
+							["qg"] = 151682,	-- Merithra of the Dream
+							["coord"] = { 51.6, 57.2, 641 },
+							["sourceQuest"] = 55390,	-- In Darkness, I Dream
+							["lvl"] = 120,
+							["maps"] = { 1471 },	-- Emerald Dreamway
+						}),
+						q(55393, {	-- Null the Void
+							["qg"] = 151693,	-- Merithra of the Dream
+							["coord"] = { 44.1, 30.7, 1471 },
+							["sourceQuest"] = 55392,	-- Enter the Dreamway
+							["lvl"] = 120,
+							["maps"] = { 1471 },	-- Emerald Dreamway
+						}),
+						q(55394, {	-- Shards of Emerald
+							["qg"] = 151693,	-- Merithra of the Dream
+							["coord"] = { 44.1, 30.7, 1471 },
+							["sourceQuest"] = 55392,	-- Enter the Dreamway
+							["lvl"] = 120,
+							["maps"] = { 1471 },	-- Emerald Dreamway
+						}),
+						q(55395, {	-- Don't Close Your Eyes
+							["qg"] = 151704,	-- Valithria Dreamwalker
+							["coord"] = { 27.1, 55.9, 1471 },
+							["sourceQuest"] = 55392,	-- Enter the Dreamway
+							["lvl"] = 120,
+							["maps"] = { 1471 },	-- Emerald Dreamway
+						}),
+						q(55465, {	-- We Must Go Deeper
+							["qg"] = 151693,	-- Merithra of the Dream
+							["coord"] = { 44.1, 30.7, 1471 },
+							["sourceQuests"] = {
+								55393,	-- Null the Void
+								55394,	-- Shards of Emerald
+								55395,	-- Don't Close Your Eyes
+							},
+							["lvl"] = 120,
+							["maps"] = { 
+								1471,	-- Emerald Dreamway
+								1475,	-- The Emerald Dream
+							},
+						}),
+						q(55397, {	-- Before I Wake
+							["qg"] = 151825,	-- Merithra of the Dream
+							["coord"] = { 46.5, 39.7, 1475 },
+							["sourceQuest"] = 55465,	-- We Must Go Deeper
+							["lvl"] = 120,
+							["maps"] = { 1475 },	-- The Emerald Dream
+						}),
+						q(55397, {	-- Before I Wake
+							["qg"] = 151825,	-- Merithra of the Dream
+							["coord"] = { 46.5, 39.7, 1475 },
+							["sourceQuest"] = 55465,	-- We Must Go Deeper
+							["lvl"] = 120,
+							["maps"] = { 1475 },	-- The Emerald Dream
+						}),
+						q(55396, {	-- The Stuff Dreams Are Made Of
+							["qg"] = 151825,	-- Merithra of the Dream
+							["coord"] = { 46.5, 39.7, 1475 },
+							["sourceQuest"] = 55397,	-- Before I Wake
+							["lvl"] = 120,
+							["maps"] = { 1475 },	-- The Emerald Dream
+							["g"] = {
+								i(168612, {	-- Dreamglow Dragonscale (Rank 2)
+									{ ["azeriteEssenceID"] = 12 },
+								}),
+							},
+						}),
+						q(55398, {	-- The Long Awake
+							["qg"] = 151887,	-- Merithra of the Dream
+							["coord"] = { 46.5, 39.7, 1475 },
+							["sourceQuest"] = 55396,	-- The Stuff Dreams Are Made Of
+							["lvl"] = 120,
+							["maps"] = { 1475 },	-- The Emerald Dream
+						}),
 					}),
 					n(-2,   {	-- Vendors
 						["lvl"] = 120,
