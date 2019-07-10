@@ -1110,6 +1110,12 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56266, {	-- Mgglurky's Mugglrgl
+				["qg"] = 153884,	-- King Mrgl-Mrgl
+				["coord"] = { 25.5, 26.4, 1355 },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
 			q(55767, {	-- Misdirection
 				["qg"] = 152985,	-- Dani Bluegill
 				["coord"] = { 31.2, 32.0, 1355 },
@@ -1393,21 +1399,21 @@ _.Zones =
 					55500,	-- Save A Friend (H)
 				},
 			}),
---[[		q(55792, {	-- Requisition: More Cone Shells 	-- Need to be confirmed
+			q(55792, {	-- Requisition: More Cone Shells 	
 				["isDaily"] = true,
 				["qgs"] = {
-					154436,	-- Craftsman Azama (A)
+				--	154436,	-- Craftsman Azama (A)				-- Need to be confirmed
 					151633,	-- Karn Deepweld (H)
 				},
 				["coords"] = {
-					{ 38.0, 53.3, 1355 },	-- Alliance
-					{ 49.3, 61.5, 1355 },	-- Karn Deepweld (H)
+				--	{ 38.0, 53.3, 1355 },	-- Alliance			-- Need to be confirmed
+					{ 49.3, 61.5, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade (A)
 					55500,	-- Save a Friend (H)
 				},
-]]--		}),
+			}),
 			q(55790, {	-- Requisition: More Deepcoral Buds
 				["isDaily"] = true,
 				["qgs"] = {

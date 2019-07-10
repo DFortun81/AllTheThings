@@ -370,6 +370,11 @@ _.Zones =
 				},
 			}),
 			]]--
+			q(56384, {	-- Shadowspike Lurker
+				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
+				["lvl"] = 120,
+			}),
 			q(56383, {	-- Silence
 				["collectible"] = false,
 				["filterID"] = 101,	-- Battle Pet
