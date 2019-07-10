@@ -5,6 +5,17 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1179, { 	-- The Eternal Palace
 		["isRaid"] = true,
 		["lvl"] = 120,
+		["maps"] = {
+			1512,
+			1513,
+			1514,
+			1515,
+			1516,
+			1517,
+			1518,
+			1519,
+			1520,
+		},
 		["g"] = {
 			d(17, {	-- LFR
 				n(0, {	-- Zone Drops
