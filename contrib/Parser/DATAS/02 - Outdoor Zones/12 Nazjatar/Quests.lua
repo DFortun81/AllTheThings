@@ -580,10 +580,12 @@ _.Zones =
 				["coord"] = { 38.1, 36.9, 1355 },
 				["g"] = {
 					q(56346, {	-- Ancient Technology
+						["description"] = "This quest is not available unless you have 150 in Kul Tiran Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 56156,	-- A Tempered Blade
 					}),
 					q(56354, {	-- Ancient Technology
+						["description"] = "This quest is not available unless you have 150 in Zandalari Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55500,	-- Save a Friend
 					}),
@@ -1040,7 +1042,15 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				--["sourceQuest"] = 
 			}),
-			q(55873, {	-- Kill the Kritch
+			q(56150, {	-- Kill the Kritch (A)
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 45.0, 76.7, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153537,	-- Rlgmrr
+			}),
+			q(55873, {	-- Kill the Kritch (H)
 				["qg"] = 153537,	-- Rlgmrr
 				["coord"] = { 44.9, 76.8, 1355 },
 				["races"] = HORDE_ONLY,
@@ -1402,11 +1412,11 @@ _.Zones =
 			q(55792, {	-- Requisition: More Cone Shells 	
 				["isDaily"] = true,
 				["qgs"] = {
-				--	154436,	-- Craftsman Azama (A)				-- Need to be confirmed
+					154436,	-- Craftsman Azama (A)
 					151633,	-- Karn Deepweld (H)
 				},
 				["coords"] = {
-				--	{ 38.0, 53.3, 1355 },	-- Alliance			-- Need to be confirmed
+					{ 38.0, 53.4, 1355 },	-- Alliance
 					{ 49.3, 61.5, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
@@ -1721,6 +1731,14 @@ _.Zones =
 					56156,	-- A Tempered Blade
 					55500,	-- Save A Friend
 				},
+			}),
+			q(55701, {	-- Snapdragon Claws
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 62.5, 51.7, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 152737,	-- Tracker Ikuto
 			}),
 			q(55488, {	-- Speak with the Dead
 				["qg"] = 152316,	-- Image of Thalyssra
