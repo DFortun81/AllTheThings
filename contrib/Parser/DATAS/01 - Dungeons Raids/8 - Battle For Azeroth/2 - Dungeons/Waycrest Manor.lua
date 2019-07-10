@@ -26,7 +26,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(1,  {	-- Normal
 				e(2125, {	-- Heartsbane Triad
 					["crs"] = {
 						131825,	-- Sister Briar
@@ -106,10 +106,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159448),	-- Breastplate of the Vengeful
 						i(159395),	-- Deathslaver's Hauberk
 						i(159335),	-- Raiment of the Blighted Tribe
+						i(168125),	-- Runestone of Thros
 					}),
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(2,  {	-- Heroic
 				["lvl"] = 120,
 				["g"] = {
 					e(2125, {	-- Heartsbane Triad
@@ -191,6 +192,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159448),	-- Breastplate of the Vengeful
 							i(159395),	-- Deathslaver's Hauberk
 							i(159335),	-- Raiment of the Blighted Tribe
+							i(168125),	-- Runestone of Thros
 						},
 					}),
 				},
@@ -199,26 +201,21 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["lvl"] = 120,
 				["g"] = {
 					ach(12489, {	-- Losing My Profession
-						{
-							["criteriaID"] = 1,	-- Governess Tabitha
+						crit(1, {	-- Governess Tabitha
 							["creatureID"] = 131595,	-- Governess Tabitha
-						},
-						{
-							["criteriaID"] = 3,	-- Groundskeeper Lilith
-							["creatureID"] = 131617,	-- Groundskeeper Lilith
-						},
-						{
-							["criteriaID"] = 2,	-- Head Vintner Justin
+						}),
+						crit(2, {	-- Head Vintner Justin
 							["creatureID"] = 131615,	-- Head Vintner Justin
-						},
-						{
-							["criteriaID"] = 5,	-- Huntmaster Grath
-							["creatureID"] = 131853,	-- Huntmaster Grath
-						},
-						{
-							["criteriaID"] = 4,	-- Seamstress Johanna
+						}),
+						crit(3, {	-- Groundskeeper Lilith
+							["creatureID"] = 131617,	-- Groundskeeper Lilith
+						}),
+						crit(4, {	-- Seamstress Johanna
 							["creatureID"] = 131619,	-- Seamstress Johanna
-						},
+						}),
+						crit(5, {	-- Huntmaster Grath
+							["creatureID"] = 131853,	-- Huntmaster Grath
+						}),
 					}),
 					e(2125, {	-- Heartsbane Triad
 						["crs"] = {

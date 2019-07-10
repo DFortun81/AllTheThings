@@ -160,14 +160,14 @@ _.Zones =
 					i(170527),	-- 7th Legionnaire's Headpiece
 					i(170526),	-- 7th Legionnaire's Shoulderplates
 					i(170528),	-- 7th Legionnaire's Chestguard
+					i(170521),	-- 7th Legionnaire's Mantle
+					i(170515),	-- 7th Legionnaire's Vest
+					i(170522),	-- 7th Legionnaire's Visage
 					
 					-- Crieve NOTE: Likely changed them all to new itemIDs like they did for Plate.
 					--i(163410),	-- 7th Legionnaire's Headpiece
 					--i(163405),	-- 7th Legionnaire's Shoulderplates
 					--i(163418),	-- 7th Legionnaire's Chestguard
-					--i(163380),	-- 7th Legionnaire's Visage
-					--i(163377),	-- 7th Legionnaire's Leather Mantle
-					--i(163251),	-- 7th Legionnaire's Vest
 				},
 			}),
 			q(55053, {	-- A Way Home
@@ -553,7 +553,15 @@ _.Zones =
 					i(170075),	-- Recipe: Unagi Skewer
 				},
 			}),
-			q(55986, {	-- Break a Few Eggs -- also popped 56370. alliance daily questID or flag?
+			q(56370, {	-- Break a Few Eggs (A)
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 66.8, 29.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154075,	-- Tracker Kenji
+			}),
+			q(55986, {	-- Break a Few Eggs (H)
 				["qg"] = 153684,	-- Caitfin Gills
 				["coord"] = { 70.2, 23.2, 1355 },
 				["races"] = HORDE_ONLY,
@@ -561,7 +569,7 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save A Friend -- confirm sourceQuest. Possibly  "The Needs of the People" instead?
 			}),
 			i(168081, {	-- Brinestone Pickaxe
-				["description"] = "Can drop from any rare in Nazjatar.",
+				["description"] = "Can drop from any rare in Nazjatar or be mined from Osmenite Deposits or Seams.",
 				["g"] = {
 					q(55531, {	-- What Will It Mine?
 						currency(1721),	-- Prismatic Manapearl
@@ -700,6 +708,8 @@ _.Zones =
 					i(170274),	-- 7th Legionnaire's Greathammer
 					i(163894),	-- 7th Legionnaire's Spellhammer
 					i(163892),	-- 7th Legionnaire's Censer
+					i(163882),	-- 7th Legionnaire's Dagger
+					i(166336),	-- 7th Legionnaire's Skullcleaver
 				},
 			}),
 			q(56063, {	-- Dark Tides
@@ -1258,6 +1268,14 @@ _.Zones =
 				["isDaily"] = true,
 				["coord"] = { 45.0, 22.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
+			}),
+			q(55659, {	-- Relics of the Sundering
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 78.9, 42.5, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 152532,	-- Shirelle McFadden
 			}),
 			q(55723, {	-- Requisition: A Few Carp
 				["isDaily"] = true,
@@ -2005,6 +2023,14 @@ _.Zones =
 				["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
+			}),
+			q(55776, {	-- WANTED: Emorneth
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			--	["objectID"] = 326140,	-- Bounty Board
+				["isDaily"] = true,
+				["coord"] = { 39.2, 54.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(55774, {	-- WANTED: Inquisitor Ithriza
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)

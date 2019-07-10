@@ -7,6 +7,39 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			n(-38, {	-- Professions
+				prof(171, {	-- Alchemy
+					q(50126, {	-- A Deathly Draught
+						["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+						["coord"] = { 30.6, 49.6, 896 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 50125,
+					}),
+					q(50129, {	-- A Recipe for Success
+					--	["objectID"] = 280755,	-- Quintin's Satchel
+						["coord"] = { 62.9, 28.9, 896 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 50128,
+						["requireSkill"] = 171,	-- Alchemy
+						["g"] = {
+							recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
+						},
+					}),
+					q(50127, {	-- A Stone's Throw
+						["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+						["coord"] = { 30.6, 49.6, 896 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 50125,
+					}),
+					q(50128, {	-- Chemically Compounded
+						["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+						["coord"] = { 30.6, 49.6, 896 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							50127,	-- A Deathly Draught
+							50126,	-- A Stone's Throw
+						},
+					}),
+				}),
 				prof(333, {	-- Enchanting
 					q(53998, {	-- Exhumed
 						["sourceQuests"] = { 53997 },	-- The Sixth Sense

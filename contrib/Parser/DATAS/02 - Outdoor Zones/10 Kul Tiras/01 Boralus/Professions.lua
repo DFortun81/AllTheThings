@@ -8,24 +8,6 @@ _.Zones =
 		m(1161, {	-- Boralus
 			n(-38, {	-- Professions
 				prof(171, {	-- Alchemy
-					-- Tools of Trade Questline
-					q(50121, {	-- Casting the First Stone
-						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-						["coord"] = { 74.2, 6.5, 1161 },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50122, {	-- Ocular Extracts
-						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-						["coord"] = { 74.2, 6.5, 1161 },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 50121,	-- Casting the First Stone
-					}),
-					q(50124, {	-- Changing the Scenery
-						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-						["coord"] = { 74.2, 6.5, 1161 },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 50121,	-- Casting the First Stone
-					}),
 					q(50125, {	-- A Possible Solution
 						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
 						["coord"] = { 74.2, 6.5, 1161 },
@@ -35,37 +17,23 @@ _.Zones =
 							50122,	-- Ocular Extracts
 						},
 					}),
-					q(50126, {	-- A Deathly Draught
-						["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
-						["coord"] = { 30.6, 49.6, 896 },
+					q(50121, {	-- Casting the First Stone
+						["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
+						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+						["coord"] = { 74.2, 6.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 50125,
 					}),
-					q(50127, {	-- A Stone's Throw
-						["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
-						["coord"] = { 30.6, 49.6, 896 },
+					q(50124, {	-- Changing the Scenery
+						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+						["coord"] = { 74.2, 6.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 50125,
+						["sourceQuest"] = 50121,	-- Casting the First Stone
 					}),
-					q(50128, {	-- Chemically Compounded
-						["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
-						["coord"] = { 30.6, 49.6, 896 },
+					q(50122, {	-- Ocular Extracts
+						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+						["coord"] = { 74.2, 6.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = {
-							50127,	-- A Deathly Draught
-							50126,	-- A Stone's Throw
-						},
-					}),
-					o(280755, {	-- Quintin's Satchel
-						q(50129, {	-- A Recipe for Success
-							["coord"] = { 62.9, 28.9, 863 },
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 50128,
-							["requireSkill"] = 171,	-- Alchemy
-							["g"] = {
-								recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
-							},
-						}),
+						["sourceQuest"] = 50121,	-- Casting the First Stone
 					}),
 				}),
 				prof(333, {	-- Enchanting

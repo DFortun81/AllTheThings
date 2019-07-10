@@ -19,6 +19,14 @@ _.Zones =
 						137134,	-- Hexthralled Soldier
 					},
 				}),
+				i(168126, {	-- Grasping Wicker Arm
+					["crs"] = {
+						138244,	-- Briarwood Bulwark
+						133118,	-- Gnarled Hulk
+						137133,	-- Wicker Golem
+					},
+				}),
+				i(168127),	-- Lingering Drust Essence
 			}),
 		}),
 	}),
