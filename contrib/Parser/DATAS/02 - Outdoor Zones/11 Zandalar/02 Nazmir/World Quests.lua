@@ -25,6 +25,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51412, {	-- Azerite Empowerment
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50570, {	-- Azerite Infused Elemental
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -313,6 +317,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51176, {	-- Unaccounted For
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(54500, {	-- Untapped Potential (Incursion WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -323,6 +332,14 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(50515, {	-- Venomjaw
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50459, {	-- Vugthuth
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50516, {	-- Wardrummer Zurula
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

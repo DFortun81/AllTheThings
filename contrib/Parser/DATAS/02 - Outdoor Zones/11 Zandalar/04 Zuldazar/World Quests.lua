@@ -84,8 +84,22 @@ _.Zones =
 							}),
 						},
 					}),
+					q(50651, {	-- Cut Off Potential
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50871, {	-- Daggerjaw
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50875, {	-- Darkspeaker Jo'la
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51373, {	-- Ears Everywhere
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51815, {	-- Eggstermination

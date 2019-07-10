@@ -192,6 +192,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51122, {	-- Scorpox
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52856, {	-- Snakes on a Terrace
 						["qg"] = 141945,	-- Sizzik
 						["lvl"] = 120,

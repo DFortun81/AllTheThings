@@ -264,6 +264,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50977, {	-- Smuggler Shakedown
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51651, {	-- Squacks [AH]
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -331,6 +336,10 @@ _.Zones =
 						["groups"] = {
 							ach(13059),	-- Drag Race
 						},
+					}),
+					q(51657, {	-- Twin-Hearted Construct
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 					q(52455, {	-- Unbreakable
 						["qg"] = 141215,	-- Chitara

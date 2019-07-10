@@ -113,6 +113,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51920, {	-- Cottontail Matron
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52009, {	-- Crab People
 						["qg"] = 139489,	-- Captain Hermes
 						["lvl"] = 120,
@@ -258,6 +262,11 @@ _.Zones =
 						["lvl"] = 120,
 						["coord"] = { 33.89, 46.98, 896 },
 						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51585, {	-- Quit Your Witchin'
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51710, {	-- Rise of the Yetis

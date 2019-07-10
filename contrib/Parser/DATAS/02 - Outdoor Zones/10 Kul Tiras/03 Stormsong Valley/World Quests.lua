@@ -138,6 +138,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(52988, {	-- House Cleaning
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51854, {	-- I Am the Shark
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -154,6 +159,11 @@ _.Zones =
 					}),
 					q(51633, {	-- Make Loh Go
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52924, {	-- Mead Some Help?
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(53773, {	-- Naga Attack!
@@ -321,6 +331,10 @@ _.Zones =
 						},
 					}),
 					q(52209, {	-- Turtle Tactics
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52300, {	-- Wagga Snarltusk
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
