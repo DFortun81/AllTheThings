@@ -90,17 +90,6 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
-					q(51312, {	-- Aromatic Pollenator
-						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
-						["itemID"] = 159877,	-- Dead Pollen-Covered Bee
-						["races"] = ALLIANCE_ONLY,
-						["maps"] = {	-- there are two separate object IDs, one for kul tiras and one for zandalar.  apparently the alliance quest item only comes from the kul tiras zones and the horde quest item only comes from zandalar.
-							896,	-- Drustvar
-							942,	-- Stormsong Valley
-							895,	-- Tiragarde Sound
-						},
-					}),
 					q(48754, {	-- Breaking the Food Chain
 						["qg"] = 136096,	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
@@ -118,19 +107,7 @@ _.Zones =
 						["description"] = "Requires 50 Kul Tiran Herbalism.",
 						["requireSkill"] = 182,	-- Herbalism
 						["g"] = {
-							recipe(252422),	-- Sea Stalk [Rank 2]
-						},
-					}),
-					q(48758, {	-- Disgustingly Damp Flower
-						["sourceQuests"] = { 51313 },	-- Learn From the Best
-						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
-						["itemID"] = 159956,	-- Disgustingly Damp Flower
-						["races"] = ALLIANCE_ONLY,
-						["maps"] = {	-- there are two separate object IDs, one for kul tiras and one for zandalar.  apparently the alliance quest item only comes from the kul tiras zones and the horde quest item only comes from zandalar.
-							896,	-- Drustvar
-							942,	-- Stormsong Valley
-							895,	-- Tiragarde Sound
+							recipe(252422),	-- Sea Stalk (Rank 2)
 						},
 					}),
 					q(48753, {	-- Emergency Transplants
@@ -141,21 +118,6 @@ _.Zones =
 						["description"] = "Requires 50 Kul Tiran Herbalism.",
 						["g"] = {
 							recipe(252406),	-- Riverbud [Rank 2]
-						},
-					}),
-					q(51360, {	-- Enormous Anchor Pod
-						["sourceQuests"] = { 51016 },	-- Seeking More Knowledge
-						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
-						["itemID"] = 160035,	-- Enormous Anchor Pod
-						["races"] = ALLIANCE_ONLY,
-						["maps"] = {	-- apparently drops from both anchor weed objectIDs
-							896,	-- Drustvar
-							942,	-- Stormsong Valley
-							895,	-- Tiragarde Sound
-							863,	-- Nazmir
-							864,	-- Vol'dun
-							862,	-- Zuldazar
 						},
 					}),
 					q(48769, {	-- Gathering Memento
@@ -175,7 +137,7 @@ _.Zones =
 						["sourceQuest"] = 48756,	-- Here in Spirit
 						["requireSkill"] = 182,	-- Herbalism
 						["g"] = {
-							recipe(252410),	-- Star Moss [Rank 3]
+							recipe(252410),	-- Star Moss (Rank 3)
 						},
 					}),
 					q(48756, {	-- Here in Spirit
@@ -211,7 +173,7 @@ _.Zones =
 						["requireSkill"] = 182,	-- Herbalism
 						["sourceQuest"] = 51360,	-- Enormous Anchor Pod
 						["g"] = {
-							recipe(252426),	-- Anchor Weed [Rank 3]
+							recipe(252426),	-- Anchor Weed (Rank 3)
 						},
 					}),
 					q(48755, {	-- Pollen Punching
@@ -220,7 +182,7 @@ _.Zones =
 						["requireSkill"] = 182,	-- Herbalism
 						["sourceQuest"] = 48758,	-- Disgustingly Damp Flower
 						["g"] = {
-							recipe(252420),	-- Siren's Pollen [Rank 3]
+							recipe(252420),	-- Siren's Pollen (Rank 3)
 						},
 					}),
 					q(51016, {	-- Seeking More Knowledge
@@ -233,47 +195,16 @@ _.Zones =
 							recipe(252425),	-- Anchor Weed [Rank 2]
 						},
 					}),
-					q(51404, {	-- What Happens Next
-						["description"] = "When harvesting, make sure to stand at max range.",
-						["sourceQuests"] = { 53142 },	-- Foul Harvest
-						["requireSkill"] = 182,	-- Herbalism
-						["itemID"] = 160117,	-- Fully Charged Lightning Pod
-						["races"] = ALLIANCE_ONLY,
-						["maps"] = {
-							863,	-- Nazmir
-							864,	-- Vol'dun
-						},
-						["g"] = {
-							recipe(252413),	-- Akunda's Bite Rank 3
-						},
-					}),
 				}),
 				prof(186, {	-- Mining
 					q(48752, {	-- A Need For Coal
 						["qg"] = 136091,	-- Myra Cabot
 						["coord"] = { 75.01, 7.61, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "Requires 50 Kul'Tiran Mining",
+						["description"] = "Requires 50 Kul'Tiran Mining.",
 						["requireSkill"] = 186,	-- Mining
 						["g"] = {
 							recipe(253334),	-- Monelite Deposit Rank 2
-						},
-					}),
-					q(52044, {	-- An Exceptional Platinum Shard
-						["requireSkill"] = 186,	-- Mining
-						["description"] = "Requires 150 Kul'Tiran Mining.  The quest item can be mined from Platinum Deposits and Rich Platinum Deposits.",
-						["itemID"] = 161078,	-- Exceptional Platinum Shard
-						["races"] = ALLIANCE_ONLY,
-						["maps"] = {
-							896,	-- Drustvar
-							942,	-- Stormsong Valley
-							895,	-- Tiragarde Sound
-							863,	-- Nazmir
-							864,	-- Vol'dun
-							862,	-- Zuldazar
-						},
-						["g"] = {
-							recipe(253340),	-- Platinum Deposit [Rank 2]
 						},
 					}),
 					q(51380, {	-- Back to Franklin
@@ -282,7 +213,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 48770,	-- Three Sheets to the Wind
 						["requireSkill"] = 186,	-- Mining
-						["description"] = "Requires 150 Kul'Tiran Mining",
+						["description"] = "Requires 150 Kul'Tiran Mining.",
 					}),
 					q(48768, {	-- Brined Justice
 						["qg"] = 136091,	-- Myra Cabot
@@ -290,7 +221,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 51568,	-- Ritualistic Preparations
 						["requireSkill"] = 186,	-- Mining
-						["description"] = "Requires 150 Kul'Tiran Mining",
+						["description"] = "Requires 150 Kul'Tiran Mining.",
 						["g"] = {
 							recipe(253338),	-- Storm Silver Deposit Rank 3
 						},
@@ -300,9 +231,9 @@ _.Zones =
 						["requireSkill"] = 186,	-- Mining
 						["coord"] = { 75.01, 7.61, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "Requires 100 Kul'Tiran Mining",
+						["description"] = "Requires 100 Kul'Tiran Mining.",
 						["g"] = {
-							recipe(253343),	-- Monelite Seam Rank 2
+							recipe(253343),	-- Monelite Seam (Rank 2)
 						},
 					}),
 					q(51568, {	-- Ritualistic Preparations
@@ -311,29 +242,12 @@ _.Zones =
 						["description"] = "Requires 50 Kul'Tiran Mining\n73.49, 08.38 in Boralus is Forge Location\n41.87, 30.02 in Tiragarde Sound is Blessing Location",
 						["requireSkill"] = 186,	-- Mining
 						["coords"] = {
-							{ 75.01, 7.61, 1161 },	-- Trainer Location
-							{ 73.49, 8.38, 1161 },	-- Forge
-							{ 41.87, 30.02, 1161 },	-- Ingot Blessing
+							{ 75.0, 7.61, 1161 },	-- Trainer Location
+							{ 73.4, 8.38, 1161 },	-- Forge
+							{ 41.8, 30.0, 1161 },	-- Ingot Blessing
 						},
 						["g"] = {
-							recipe(253337),	-- Storm Silver Deposit Rank 2
-						},
-					}),
-					q(48767, {	-- Seams Familiar
-						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 186,	-- Mining
-						["sourceQuest"] = 48764, 	-- Don't Pick a Fight
-						["description"] = "This drops from mining |cFFFFD700Monelite Seam|r.  You can only turn it in at Level 150 Kul Tiran Mining.",
-						["maps"] = {
-							896,	-- Drustvar
-							942,	-- Stormsong Valley
-							895,	-- Tiragarde Sound
-							863,	-- Nazmir
-							864,	-- Vol'dun
-							862,	-- Zuldazar
-						},
-						["g"] = {
-							recipe(253344),	-- Monelite Seam Rank 3
+							recipe(253337),	-- Storm Silver Deposit (Rank 2)
 						},
 					}),
 					q(48761, {	-- Spiderphobia
@@ -344,7 +258,7 @@ _.Zones =
 						["sourceQuest"] = 48752, 	-- A Need For Coal
 						["requireSkill"] = 186,	-- Mining
 						["g"] = {
-							recipe(253335),	-- Monelite Deposit Rank 3
+							recipe(253335),	-- Monelite Deposit (Rank 3)
 						},
 					}),
 					q(51889, {	-- The Wrath of Grapes
@@ -354,11 +268,11 @@ _.Zones =
 						["sourceQuest"] = 51380,	-- Back to Franklin
 						["requireSkill"] = 186,	-- Mining
 						["coords"] = {
-							{ 75.63, 23.53, 1161 },	-- Franklin the Drunk
-							{ 69.37, 13.05, 1161 },	-- Hilock of Eggs
-							{ 74.01, 12.79, 1161 },	-- Jar of Pickle Juice [Inside Inn]
-							{ 70.49, 9.67, 1161 },	-- Mountain of Bacon
-							{ 72.55, 11.65, 1161 },	-- Pile of Sausages
+							{ 75.6, 23.5, 1161 },	-- Franklin the Drunk
+							{ 69.3, 13.0, 1161 },	-- Hilock of Eggs
+							{ 74.0, 12.7, 1161 },	-- Jar of Pickle Juice [Inside Inn]
+							{ 70.4, 9.67, 1161 },	-- Mountain of Bacon
+							{ 72.5, 11.6, 1161 },	-- Pile of Sausages
 						},
 						["g"] = {
 							recipe(253347),	-- Storm Silver Seam Rank 3
@@ -370,26 +284,12 @@ _.Zones =
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
 						["coords"] = {
-							{ 75.01, 7.61, 1161 },	-- Trainer Location
-							{ 75.25, 14.33, 1161 },	-- Harold Atkey
-							{ 75.51, 23.21, 1161 },	-- Franklin The Drunk
+							{ 75.0, 7.61, 1161 },	-- Trainer Location
+							{ 75.2, 14.3, 1161 },	-- Harold Atkey
+							{ 75.5, 23.2, 1161 },	-- Franklin The Drunk
 						},
 						["g"] = {
-							recipe(253346),	-- Storm Silver Seam Rank 2
-						},
-					}),
-					q(52049, {	-- X Marks the Plat!
-						["requireSkill"] = 186,	-- Mining
-						["description"] = "Requires 150 Kul'Tiran Mining.  The quest item can be mined from Platinum Deposits or Rich Platinum Deposits.",
-						["itemID"] = 161085,	-- Tattered Map
-						["races"] = ALLIANCE_ONLY,
-						["maps"] = {
-							896,	-- Drustvar
-							942,	-- Stormsong Valley
-							895,	-- Tiragarde Sound
-							863,	-- Nazmir
-							864,	-- Vol'dun
-							862,	-- Zuldazar
+							recipe(253346),	-- Storm Silver Seam (Rank 2)
 						},
 					}),
 				}),
