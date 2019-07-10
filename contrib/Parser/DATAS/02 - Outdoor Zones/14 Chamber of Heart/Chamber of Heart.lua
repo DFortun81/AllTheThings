@@ -115,6 +115,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["qg"] = 136907,	-- Magni Bronzebeard	
 						}),
+						-- Hearth of Azeroth Level 54
 						q(55390, {	-- In Darkness, I Dream
 							["qg"] = 152365,	-- Kalecgos
 							["coord"] = { 53.1, 70.9, 1473 },
@@ -195,6 +196,27 @@ _.Zones =
 							["sourceQuest"] = 55396,	-- The Stuff Dreams Are Made Of
 							["lvl"] = 120,
 							["maps"] = { 1475 },	-- The Emerald Dream
+						}),
+						-- Hearth of Azeroth Level 55
+						q(55519, {	-- A Fresh Trauma
+							["qg"] = 152206,	-- Magni Bronzebeard
+							["coord"] = { 50.0, 59.2, 1473 },
+							["description"] = "Your Hearth of Azeroth need to be 55 to start the Questline.",
+							["lvl"] = 120,
+						}),
+						q(55520, {	-- Healing Nordrassil
+							["qg"] = 152095,	-- Magni Bronzebeard
+							["coord"] = { 62.0, 24.9, 198 },
+							["sourceQuest"] = 55519,	-- A Fresh Trauma
+							["lvl"] = 120,
+							["maps"] = { 198 },	-- Mount Hyjal
+						}),
+						q(55521, {	-- Do It the Azerite Way
+							["qg"] = 152095,	-- Magni Bronzebeard
+							["coord"] = { 62.0, 24.9, 198 },
+							["sourceQuest"] = 55520,	-- Healing Nordrassil
+							["lvl"] = 120,
+							["maps"] = { 198 },	-- Mount Hyjal
 						}),
 					}),
 					n(-2,   {	-- Vendors
