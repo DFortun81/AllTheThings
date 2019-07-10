@@ -25,6 +25,10 @@ _.Zones =
 					}),
 				},
 			}),
+			q(57334, {	-- Cave of Murlocs
+				["lvl"] = 120,
+				["collectible"] = false,
+			}),
 			q(55891, {	-- Champion Aldrantiss, Defender of Her Kingdom
 				["lvl"] = 120,
 				["collectible"] = false,
