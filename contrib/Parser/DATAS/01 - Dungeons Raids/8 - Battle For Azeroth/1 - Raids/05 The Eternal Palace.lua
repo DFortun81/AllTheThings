@@ -17,6 +17,17 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1520,
 		},
 		["g"] = {
+			filter(101, {	-- Pet Battles
+				p(2657, {	-- Blackchasm Crawler
+					["crs"] = { 154718 },
+				}),
+				p(2658, {	-- Chitterspine Deepstalker
+					["crs"] = { 154720 },
+				}),
+				p(2659, {	-- Trench Slug
+					["crs"] = { 154722 },
+				}),
+			}),
 			d(17, {	-- LFR
 				n(0, {	-- Zone Drops
 					i(169930),	-- Handwraps of Unhindered Resonance
