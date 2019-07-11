@@ -75,6 +75,14 @@ _.Zones =
 					i(169903),	-- Nazjatar Survival Pack
 				},
 			}),
+			q(56789, {	-- A Gift of Supplies
+				["description"] = "Offered when |nFFFFD700Bladesman Inowari|r reaches rank 7.",
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154297,	-- Bladesman Inowari
+				["g"] = {
+					i(169904),	-- Ankoan Commendation Crate
+				},
+			}),
 			q(56778, {	-- A Glint of the Darkness
 				["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
 				["races"] = ALLIANCE_ONLY,
@@ -1978,6 +1986,14 @@ _.Zones =
 				["coord"] = { 62.4, 36.0, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 151000,	-- Blademaster Okani
+			}),
+			q(55633, {	-- The Sunken Chest
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			--	["objectID"] = 325795,	-- Sunken Chest
+				["isDaily"] = true,
+				["coord"] = { 45.7, 83.7, 1355 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56315, {	-- They Made Their Choice (A)
 				["qg"] = 155071,	-- Shandris Feathermoon

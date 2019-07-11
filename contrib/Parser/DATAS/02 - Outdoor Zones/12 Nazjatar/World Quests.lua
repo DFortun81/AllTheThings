@@ -106,6 +106,10 @@ _.Zones =
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
+			q(57353, {	-- Deepcoil Cleansing
+				["collectible"] = false,
+				["lvl"] = 120,
+			}),
 			q(55973, {	-- Deepcoil Experiments
 				["lvl"] = 120,
 				["collectible"] = false,
@@ -212,6 +216,10 @@ _.Zones =
 			q(56388, {	-- Mindshackle
 				["collectible"] = false,
 				["filterID"] = 101,	-- Battle Pet
+				["lvl"] = 120,
+			}),
+			q(57335, {	-- Murloc Mayhem
+				["collectible"] = false,
 				["lvl"] = 120,
 			}),
 			q(57354, {	-- Overdue
@@ -337,6 +345,16 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56017, {	-- Runelocked Chest
+				["lvl"] = 120,
+				["collectible"] = false,
+				["sourceQuest"] = 56248,	-- Treasure Tale
+				["g"] = {
+					crit(9, {	-- Hard Runelocked Chest: Blue
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
+				},
+			}),
 			q(56019, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["collectible"] = false,
@@ -362,7 +380,7 @@ _.Zones =
 				["collectible"] = false,
 				["g"] = {
 					crit(4, {	-- Hard Runelocked Chest: Yellow
-						["achievementID"] = 13764,
+						["achievementID"] = 13764,	-- Puzzle Performer
 					}),
 				},
 			}),
