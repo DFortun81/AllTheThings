@@ -11,8 +11,7 @@ _.PVP =
 				["npcID"] = -241,	-- Seasonal Rewards
 				["icon"] = "Interface\\Icons\\inv_misc_diachest01",
 				["g"] = {
-					{	-- Player vs. Player (Battle for Azeroth Season 2)
-						["npcID"] = -3157,	-- Player vs. Player (Battle for Azeroth Season 2
+					n(-665,{	-- Sinister Gladiator: Battle for Azeroth Season 2
 						["g"] = {
 							{	-- Mounts
 								["filter"] = 100,	-- Mounts
@@ -42,9 +41,8 @@ _.PVP =
 							["itemID"] = 164955,	-- Battleborn Sigil Sinister Elite
 						},
 						},
-					},
-					{	-- Player vs. Player (Battle for Azeroth Season 3)
-						["npcID"] = -3156,	-- Player vs. Player (Battle for Azeroth Season 3
+					}),
+					n(-666, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 						["g"] = {
 							{	-- Mounts
 								["filter"] = 100,	-- Mounts
@@ -74,7 +72,7 @@ _.PVP =
 							["itemID"] = 164955,	-- Battleborn Sigil Sinister Elite
 						},--]]
 						},
-					},
+					}),
 				},
 			},
 			{	-- Recipes

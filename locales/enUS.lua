@@ -1281,9 +1281,6 @@ AllTheThings.L = {
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
 
 -- Other Sets
-		[-3156] = string.format(PLAYER_V_PLAYER_SEASON, 3),						-- Player vs. Player (Battle for Azeroth Season 3)
-		[-3157] = string.format(PLAYER_V_PLAYER_SEASON, 2),						-- Player vs. Player (Battle for Azeroth Season 2)
-		[-3158] = string.format(PLAYER_V_PLAYER_SEASON, 1),						-- Player vs. Player (Battle for Azeroth Season 1)
 		[-3159] = GARRISON_TIER.." 6.5 "..WARDROBE_SETS,
 		[-3160] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 21),
 		[-3161] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 20),
