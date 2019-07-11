@@ -76,6 +76,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51848, {	-- Captain Wintersail
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51842, {	-- Carla Smirk
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -318,6 +322,10 @@ _.Zones =
 					q(51406, {	-- The Lord's Hunt
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51847, {	-- Tort Jaw
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(53078, {	-- Treasure in the Tides (this may be a Horde version that doesn't have a faction tag on wowhead)

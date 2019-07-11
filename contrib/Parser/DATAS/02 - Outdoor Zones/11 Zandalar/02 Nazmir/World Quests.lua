@@ -7,6 +7,11 @@ _.Zones =
 		m(863, {	-- Nazmir
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
+					q(51131, {	-- Absolutely Barbaric
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52803, {	-- Accidental Dread
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -26,6 +31,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51412, {	-- Azerite Empowerment
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52832, {	-- Azerite Empowerment
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

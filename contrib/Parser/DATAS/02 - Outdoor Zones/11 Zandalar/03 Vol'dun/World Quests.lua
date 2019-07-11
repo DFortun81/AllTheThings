@@ -27,6 +27,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51428, {	-- Azerite Wounds
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51096, {	-- Azer'tor
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -196,6 +200,14 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51629, {	-- Shell Game
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51123, {	-- Sirokar
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52856, {	-- Snakes on a Terrace
 						["qg"] = 141945,	-- Sizzik
 						["lvl"] = 120,
@@ -217,6 +229,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51120, {	-- Stef "Marrow" Quin
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51379, {	-- Temple of Sethraliss: Navigating Currents
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

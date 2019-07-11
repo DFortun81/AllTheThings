@@ -7,6 +7,11 @@ _.Zones =
 		m(896, {	-- Drustvar
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
+					q(51616, {	-- A Final Rest
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51687, {	-- A Smelly Solution
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -152,6 +157,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+					}),
+					q(53266, {	-- Flourishing Sea Stalks
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(51658, { 	-- Fly the Coop!
 						["lvl"] = 120,

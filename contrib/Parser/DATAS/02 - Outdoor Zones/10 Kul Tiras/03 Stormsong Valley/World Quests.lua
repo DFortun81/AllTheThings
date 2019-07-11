@@ -128,6 +128,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51776, {	-- Galestorm
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52133, {	-- Good Boy!
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -162,6 +166,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52924, {	-- Mead Some Help?
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52982, {	-- Mine or Trouble
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -281,6 +290,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51627, {	-- Shell Game
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52446, {	-- Sister Absinthe
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -302,6 +315,16 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(52507, {	-- Sticky Mess
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52879, {	-- Stiff Policy
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52322, {	-- Taja the Tidehowler
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -309,6 +332,10 @@ _.Zones =
 					q(52198, {	-- Tank and Spank
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(55301, {	-- The Cycle of Life
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(52166, {	-- The Faceless Herald

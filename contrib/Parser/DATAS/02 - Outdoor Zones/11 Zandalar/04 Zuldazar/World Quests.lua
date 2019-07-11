@@ -41,12 +41,21 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51450, {	-- Azerite Mining
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51175, {	-- Azerite Wounds
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(51642, {	-- Beachhead [AH]
+					q(51642, {	-- Beachhead
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54537, {	-- Bilestomper (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50862, {	-- Bloodbulge
@@ -97,6 +106,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54513, {	-- Dino Time! (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51373, {	-- Ears Everywhere
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -135,6 +149,15 @@ _.Zones =
 					q(54243, {	-- Gobliteration
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54298, {	-- Gravity Matters (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50874, {	-- Hakbi the Risen
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(50846, {	-- Headhunter Lee'za
@@ -199,6 +222,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51814, {	-- Ravoracious
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52250, {	-- Saving Xibala
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -226,6 +254,11 @@ _.Zones =
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(54712, {	-- Spell Components (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 					q(54498, {	-- Stack on the Tank
 						["lvl"] = 120,
@@ -274,6 +307,11 @@ _.Zones =
 					}),
 					q(51374, {	-- Unending Gorilla Warfare
 						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54017, {	-- Wet Work: Warbeast Kraal (Invasion WQ)
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
