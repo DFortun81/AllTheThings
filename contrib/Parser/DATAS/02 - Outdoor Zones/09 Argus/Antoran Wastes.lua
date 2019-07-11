@@ -456,47 +456,6 @@ _.Zones =
 					p(2126), 	-- Antoran Bilescourge
 				}),
 				n(-17, { 	-- Quests
---[[
-					n(-34, {	-- World Quests
-						q(48832),	-- Admiral Rel'var
-						q(48837),	-- All-Seer Xanarian
-						q(48931),	-- Behemoths Awakened
-						q(49054),	-- Bloat
-						q(48831),	-- Commander Texlaz
-						q(48777),	-- Den of Fiends
-						q(49055),	-- Earseeker
-						q(48780),	-- Gladius
-						q(48835),	-- Houndmaster Kerrax
-						q(48830),	-- Inquisitor Vethroz
-						q(48828),	-- Lieutenant Xakaar
-						q(48983),	-- Mining Regulation
-						q(49057),	-- Minixis
-						q(48875),	-- Mix It Up
-						q(48783),	-- Nobody Expects Them
-						q(49058),	-- One-of-Many
-						q(49056),	-- Pilfer
-						q(48958),	-- Ritual Interruption
-						q(48662),	-- Short Fuses
-						q(48514),	-- Slumbering Behemoths
-						q(48691),	-- Soul Chain
-						q(48360),	-- Supplies Needed: Fiendish Leather
-						q(48374),	-- Supplies Needed: Lightweave Cloth
-						q(48640),	-- The Immortal Squadron
-						q(48870),	-- The Many-Faced Devourer
-						q(48952),	-- Throw Them a Bone
-						q(48827),	-- Varga
-						q(49053),	-- Watcher
-						q(48836),	-- Watcher Aival
-						q(48624),	-- Who Let The Dogs Out?
-						q(48349),	-- Work Order: Empyrium
-						q(48359),	-- Work Order: Fiendish Leather
-						q(48363),	-- Work Order: Florid Malachite
-						q(48364),	-- Work Order: Hasselian
-						q(48373),	-- Work Order: Lightweave Cloth
-						q(48834),	-- Worldsplitter Skuul
-						q(48829),	-- Wrath-Lord Yarez
-					}),
---]]
 					{	-- A Colorful Key
 						["questID"] = 48075,	-- A Colorful Key
 						["qg"] = 125343,		-- Vorel
@@ -1023,11 +982,69 @@ _.Zones =
 					}),
 				}),
 				n(-34, {	-- World Quests
+--[[
+					n(-34, {	-- World Quests
+						q(48837),	-- All-Seer Xanarian
+						q(48931),	-- Behemoths Awakened
+						q(48831),	-- Commander Texlaz
+						q(48777),	-- Den of Fiends
+						q(49055),	-- Earseeker
+						q(48835),	-- Houndmaster Kerrax
+						q(48830),	-- Inquisitor Vethroz
+						q(48983),	-- Mining Regulation
+						q(49057),	-- Minixis
+						q(48875),	-- Mix It Up
+						q(48783),	-- Nobody Expects Them
+						q(49058),	-- One-of-Many
+						q(49056),	-- Pilfer
+						q(48958),	-- Ritual Interruption
+						q(48662),	-- Short Fuses
+						q(48514),	-- Slumbering Behemoths
+						q(48691),	-- Soul Chain
+						q(48360),	-- Supplies Needed: Fiendish Leather
+						q(48374),	-- Supplies Needed: Lightweave Cloth
+						q(48640),	-- The Immortal Squadron
+						q(48870),	-- The Many-Faced Devourer
+						q(48952),	-- Throw Them a Bone
+						q(48827),	-- Varga
+						q(49053),	-- Watcher
+						q(48836),	-- Watcher Aival
+						q(48624),	-- Who Let The Dogs Out?
+						q(48349),	-- Work Order: Empyrium
+						q(48359),	-- Work Order: Fiendish Leather
+						q(48363),	-- Work Order: Florid Malachite
+						q(48364),	-- Work Order: Hasselian
+						q(48373),	-- Work Order: Lightweave Cloth
+						q(48834),	-- Worldsplitter Skuul
+						q(48829),	-- Wrath-Lord Yarez
+					}),
+--]]				
+					q(48832, {	-- Admiral Rel'var
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(49054, {	-- Bloat
+						["lvl"] = 110,
+						["filterID"] = 101,	-- Battle Pet
+						["collectible"] = false,
+					}),
+					q(47561, {	-- Blistermaw
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48867, {	-- Chief Alchemist Munculus
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
 					q(48637, {	-- Cleansing Fire
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48780, {	-- Gladius
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48828, {	-- Lieutenant Xakaar
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

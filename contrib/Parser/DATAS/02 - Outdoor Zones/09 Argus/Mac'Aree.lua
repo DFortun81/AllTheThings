@@ -520,42 +520,6 @@ _.Zones =
 					p(2128), 	-- Warpstalker Runt
 				}),
 				n(-17,  {	-- Quests
---[[
-					n(-34, {	-- World Quests
-						q(48729),	-- Ataxon
-						q(48701),	-- Baruut the Bloodthirsty
-						q(49047),	-- Bucky
-						q(48727),	-- Captain Faruq
-						q(48739),	-- Commander Xethgar
-						q(49051),	-- Corrupted Blood of Argus
-						q(48722),	-- Feasel the Muffin Thief
-						q(48098),	-- Garden Pests
-						q(48103),	-- Gatekeeper's Review: Tenacity
-						q(49049),	-- Gloamwing
-						q(48731),	-- Herald of Chaos
-						q(48737),	-- Instructor Tarahna
-						q(48733),	-- Jed'hin Champion Vorusk
-						q(48386),	-- Jed'hin Tournament
-						q(48698),	-- Kaara the Pale
-						q(49052),	-- Mar'cuus
-						q(47828),	-- Memories of the Fallen
-						q(48736),	-- Overseer Y'Morna
-						q(47844),	-- Recurring Madness
-						q(48732),	-- Sabuul
-						q(48102),	-- Scale Samples
-						q(47858),	-- Security: Engaged
-						q(49050),	-- Shadeflicker
-						q(47833),	-- Shadowcaster Voruun
-						q(48936),	-- Slithon the Last
-						q(48730),	-- Sorolis the Ill-Fated
-						q(48694),	-- Soultwisted Monstrosity
-						q(48100),	-- The Defense of Mac'Aree
-						q(48728),	-- Umbraliss
-						q(48094),	-- Void Clot
-						q(48696),	-- Wrangler Kravos
-						
-					}),
---]]
 					{	-- A Colorful Key
 						["questID"] = 48075,	-- A Colorful Key
 						["qg"] = 125343,		-- Vorel
@@ -1125,11 +1089,47 @@ _.Zones =
 					}),
 				}),
 				n(-34, {	-- World Quests
+--[[
+					n(-34, {	-- World Quests
+						q(48701),	-- Baruut the Bloodthirsty
+						q(49047),	-- Bucky
+						q(48727),	-- Captain Faruq
+						q(49051),	-- Corrupted Blood of Argus
+						q(48722),	-- Feasel the Muffin Thief
+						q(48103),	-- Gatekeeper's Review: Tenacity
+						q(49049),	-- Gloamwing
+						q(48731),	-- Herald of Chaos
+						q(48737),	-- Instructor Tarahna
+						q(48733),	-- Jed'hin Champion Vorusk
+						q(48386),	-- Jed'hin Tournament
+						q(48698),	-- Kaara the Pale
+						q(49052),	-- Mar'cuus
+						q(48736),	-- Overseer Y'Morna
+						
+						q(48102),	-- Scale Samples
+						q(47858),	-- Security: Engaged
+						q(49050),	-- Shadeflicker
+						q(47833),	-- Shadowcaster Voruun
+						q(48936),	-- Slithon the Last
+						q(48730),	-- Sorolis the Ill-Fated
+						q(48728),	-- Umbraliss
+						q(48094),	-- Void Clot
+						q(48696),	-- Wrangler Kravos
+					}),
+--]]				
+					q(48729, {	-- Ataxon
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(47705, {	-- Behind Legion Lines
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
 					q(48101, {	-- Bully Pulpit
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48739, {	-- Commander Xethgar
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1145,6 +1145,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48098, {	-- Garden Pests
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48097, {	-- Gatekeeper's Review: Cunning
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1154,6 +1158,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48099, {	-- Hostile Echology
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(47828, {	-- Memories of the Fallen
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1173,6 +1181,18 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(47844, {	-- Recurring Madness
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48732, {	-- Sabuul
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48953, {	-- Seat of the Triumvirate: Darkcaller
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48957, {	-- Seat of the Triumvirate: Void-Blade Zedaat
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1182,6 +1202,14 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(49048, {	-- Snozz
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48694, {	-- Soultwisted Monstrosity
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48100, {	-- The Defense of Mac'Aree
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

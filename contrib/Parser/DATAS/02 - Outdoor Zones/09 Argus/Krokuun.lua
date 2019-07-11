@@ -1113,7 +1113,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48286, {	-- Crystal Methods
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(47720, {	-- Eternal Vengeance
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48282, {	-- Imp Mother Laglath
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1121,11 +1129,31 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(47542, {	-- Siegemaster Voraan
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48512, {	-- Sister Subversia
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(47563, {	-- Spirits of the Fallen
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(47728, {	-- Talestra the Vile
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48192, {	-- Tar Spitter
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(47953, {	-- Terek the Selector
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(47712, {	-- The Devastator
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
