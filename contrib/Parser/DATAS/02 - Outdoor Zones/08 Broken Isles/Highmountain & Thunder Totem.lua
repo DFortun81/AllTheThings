@@ -2744,7 +2744,8 @@ _.Zones =
 					}),
 				}),
 				n(-34,  {	-- World Quests
-				--[[		q(43985),	-- A Dark Tide
+--[[				
+					q(43985),	-- A Dark Tide
 					q(45840),	-- Assault on Highmountain
 					q(41705),	-- Assault on Thunder Totem
 					q(41026),	-- Back to the Shadows
@@ -2771,7 +2772,6 @@ _.Zones =
 					q(46183),	-- Commander Zarthak
 					q(41699),	-- Crabby Crunchies
 					q(41622),	-- Crawliac's Legacy
-					q(41095),	-- Critical Crops
 					q(41202),	-- Crude Leystone Seams
 					q(41685),	-- DANGER: Ala'washte
 					q(41695),	-- DANGER: Defilia
@@ -2787,7 +2787,6 @@ _.Zones =
 					q(41561),	-- Felhide
 					q(41560),	-- Felhide
 					q(41239),	-- Felhide
-					q(41225),	-- Felwort
 					q(41511),	-- Felwort
 					q(41432),	-- Fiery Leystone Deposits
 					q(41219),	-- Flourishing Foxflower
@@ -2823,7 +2822,6 @@ _.Zones =
 					q(41078),	-- Munitions Testing
 					q(46188),	-- Orgrokk
 					q(41057),	-- Primal Payback
-					q(39462),	-- Primal Payback
 					q(41055),	-- Primal Payback
 					q(41144),	-- Return to the River
 					q(40985),	-- Rimescale Naga Incursion: Highmountain
@@ -2843,7 +2841,6 @@ _.Zones =
 					q(46195),	-- Swarming Skies
 					q(42086),	-- The Feltotem
 					q(43448),	-- The Frozen King
-					q(43766),	-- The Magic of Flight
 					q(41232),	-- Thick Ironhorn Hide
 					q(40896),	-- Threnody of Chieftains
 					q(44823),	-- Thunder Totem Cleanup Detail
@@ -2859,7 +2856,6 @@ _.Zones =
 					q(44291),	-- WANTED: Crawshuk the Hungry
 					q(43455),	-- WANTED: Devouring Darkness
 					q(43617),	-- WANTED: Devouring Darkness
-					q(43618),	-- WANTED: Gurbog da Basher
 					q(41818),	-- WANTED: Majestic Elderhorn
 					q(44292),	-- WANTED: Majestic Elderhorn
 					q(41844),	-- WANTED: Sekhan
@@ -2882,7 +2878,11 @@ _.Zones =
 					q(41235),	-- Work Order: Stonehide Leather
 					q(46192),	-- Zar'vok
 					q(46279),	-- Zargrom
-					--]]
+--]]
+					q(41095, {	-- Critical Crops
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41013, {	-- Darkbrul Arena
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2892,6 +2892,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(41512, {	-- Felwort
+						["lvl"] = 110,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(41225, {	-- Felwort
 						["lvl"] = 110,
 						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
@@ -2916,6 +2921,14 @@ _.Zones =
 						},
 					}),
 					q(41866, {	-- Neltharion's Lair: Blighted Bat
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41865, {	-- Neltharion's Lair: Mother of Stone
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(39462, {	-- Primal Payback
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2963,6 +2976,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(43766, {	-- The Magic of Flight
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(40282, {	-- Tiny Poacher, Tiny Animals
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
@@ -2991,8 +3008,17 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(43618, {	-- WANTED: Gurbog da Basher
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(44293, {	-- WANTED: Slumber
 						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41257, {	-- Warden Tower Assault: Cordana's Apex [A]
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(41421, {	-- Warden Tower Assault: Nightwatcher's Perch [A]

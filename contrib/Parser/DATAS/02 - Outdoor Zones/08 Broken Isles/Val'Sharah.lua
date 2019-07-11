@@ -2015,6 +2015,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(42023, {	-- Black Rook Rumble
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41955, {	-- Bloodline of Stone
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2031,6 +2035,14 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(41700, {	-- DANGER: Shalas'aman
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43101, {	-- DANGER: Witchdoctor Grgl-Brgl
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41860, {	-- Dealing with Satyrs
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
@@ -2042,6 +2054,10 @@ _.Zones =
 						},
 					}),
 					q(43756, {	-- Enigmatic
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43332, {	-- Grell in a Handbasket
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2077,6 +2093,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(43709, {	-- Seal Clubbing
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(42076, {	-- Shadowfen Village
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2094,6 +2114,10 @@ _.Zones =
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
+					}),
+					q(41316, {	-- Supplies Needed: Leystone
+						["lvl"] = 110,
+						["collectible"] = false,
 					}),
 					q(40279, {	-- Training with Durian
 						["collectible"] = false,

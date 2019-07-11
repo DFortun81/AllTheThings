@@ -7,11 +7,9 @@ _.Zones =
 		m(680, {	-- Suramar
 			n(-34, {	-- World Quests
 --[[
-				q(42859),	-- A Draught of Hope
 				q(42969),	-- A Spy in Our Midst
 				q(42111),	-- Aggressive Reconnaisance
 				q(43512),	-- Ana-Mouz
-				q(44802),	-- Ancient Guidance
 				q(44769),	-- Arming the Populace
 				q(45068),	-- Barrels o' Fun
 				q(41493),	-- Brimstone Destroyer
@@ -29,7 +27,6 @@ _.Zones =
 				q(41697),	-- DANGER: Colerian, Alteria, and Selenyi
 				q(44114),	-- DANGER: Magistrix Vilessa
 				q(42799),	-- DANGER: Oglok the Furious
-				q(42797),	-- DANGER: Scythemaster Cil'raman
 				q(44122),	-- DANGER: Sorallus
 				q(44119),	-- DANGER: Volshax, Breaker of Will
 				q(41446),	-- Darkened Felslate Deposits
@@ -91,7 +88,6 @@ _.Zones =
 				q(43435),	-- The Battle Rages On
 				q(42089),	-- The Fallen Ones
 				q(42082),	-- The Shattered Locus
-				q(44002),	-- Undersea Survey
 				q(43814),	-- Unspeakable Collaborators
 				q(41346),	-- Velvety Stalker Hide
 				q(44017),	-- WANTED: Apothecary Faldren
@@ -100,7 +96,6 @@ _.Zones =
 				q(44186),	-- WANTED: Broodmother Shu'malis
 				q(44016),	-- WANTED: Cadraeus
 				q(44031),	-- WANTED: Cadraeus
-				q(44013),	-- WANTED: Guardian Thor'el
 				q(44030),	-- WANTED: Guardian Thor'el
 				q(44021),	-- WANTED: Hertha Grimdottir
 				q(44029),	-- WANTED: Hertha Grimdottir
@@ -118,15 +113,22 @@ _.Zones =
 				q(44024),	-- WANTED: Shal'an
 				q(44012),	-- WANTED: Siegemaster Aedrin
 				q(44023),	-- WANTED: Siegemaster Aedrin
-				q(43807),	-- Withered Wrangling: Ambervale
 				q(44157),	-- Withered Wrangling: Tel'anor
 				q(41314),	-- Work Order: Felslate
 				q(41282),	-- Work Order: Runescale Koi
 				q(41661),	-- Work Order: Skystep Potions
 				q(41302),	-- Work Order: Starlight Roses
 				q(41350),	-- Work Order: Stonehide Leather
---]]		
+--]]
+				q(42859, {	-- A Draught of Hope
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43445, {	-- Air Superiority
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44802, {	-- Ancient Guidance
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -163,6 +165,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44856, {	-- Cut the Cattitude
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42797, {	-- DANGER: Scythemaster Cil'raman
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -246,6 +252,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(44002, {	-- Undersea Survey
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41667, {	-- Vantus Rune Work Order: Xavius
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -254,48 +264,56 @@ _.Zones =
 						i(137771),	-- Vantus Rune Technique: Xavius [Rank 3]
 					},
 				}),
+				q(44013, {	-- WANTED: Guardian Thor'el
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43943, {	-- Withered Army Training
-						["qgs"] = {
-							97140,	-- First Arcanist Thalyssra (Frail)
-							115736,	-- First Arcanist Thalyssra (Kinda Hot)
-						},
-						["maps"] = {
-							692,	-- Falanaar Arcway
-							693,	-- Falanaar Arcway
-						},
-						["groups"] = {
-							n(109556, {	-- Treasure Chest
-								i(136914),	-- Leyline Broodling
+					["qgs"] = {
+						97140,	-- First Arcanist Thalyssra (Frail)
+						115736,	-- First Arcanist Thalyssra (Kinda Hot)
+					},
+					["maps"] = {
+						692,	-- Falanaar Arcway
+						693,	-- Falanaar Arcway
+					},
+					["groups"] = {
+						n(109556, {	-- Treasure Chest
+							i(136914),	-- Leyline Broodling
+						}),
+						n(109564, {	-- Glimmering Treasure Chest
+							i(140495, {	-- Torn Invitation [Fox Mount Quest]
+								i(137573),	-- Reins of the Llothien Prowler
 							}),
-							n(109564, {	-- Glimmering Treasure Chest
-								i(140495, {	-- Torn Invitation [Fox Mount Quest]
-									i(137573),	-- Reins of the Llothien Prowler
-								}),
-								i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
-									artifact(720),	-- Find Hidden Artifact Skin
-								}),
-								i(139563, {	-- The Stormfist [Windwalker Monk Hidden Artifact Appearance]
-									artifact(527),	-- Find Hidden Artifact Skin
-								}),
-								i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
-									artifact(921),	-- Find Hidden Artifact Skin
-								}),
-								i(141296),	-- Ancient Mana Basin
-								i(141297),	-- Arcano-Shower
-								i(141298),	-- Displacer Meditation Stone
-								i(140780),	-- Fal'dorei Egg
-								i(141299),	-- Kaldorei Light Globe
-								i(140786),	-- Ley Spider Eggs
-								i(141301),	-- Unstable Powder Box
-								i(141306),	-- Wisp in a Bottle
+							i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
+								artifact(720),	-- Find Hidden Artifact Skin
 							}),
-							n(109497, {	-- Small Treasure Chest
-								i(137823),	-- Design: Prophetic Band (Rank 2)
-								i(137892),	-- Recipe: Dreadleather Bindings (Rank 3)
-								i(137718),  -- Schematic: Ironsight Cranial Cannon (Rank 3)
+							i(139563, {	-- The Stormfist [Windwalker Monk Hidden Artifact Appearance]
+								artifact(527),	-- Find Hidden Artifact Skin
 							}),
-						},
-					}),
+							i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
+								artifact(921),	-- Find Hidden Artifact Skin
+							}),
+							i(141296),	-- Ancient Mana Basin
+							i(141297),	-- Arcano-Shower
+							i(141298),	-- Displacer Meditation Stone
+							i(140780),	-- Fal'dorei Egg
+							i(141299),	-- Kaldorei Light Globe
+							i(140786),	-- Ley Spider Eggs
+							i(141301),	-- Unstable Powder Box
+							i(141306),	-- Wisp in a Bottle
+						}),
+						n(109497, {	-- Small Treasure Chest
+							i(137823),	-- Design: Prophetic Band (Rank 2)
+							i(137892),	-- Recipe: Dreadleather Bindings (Rank 3)
+							i(137718),  -- Schematic: Ironsight Cranial Cannon (Rank 3)
+						}),
+					},
+				}),
+				q(43807, {	-- Withered Wrangling: Ambervale
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44158, {	-- Withered Wrangling: Falanaar
 					["lvl"] = 110,
 					["collectible"] = false,

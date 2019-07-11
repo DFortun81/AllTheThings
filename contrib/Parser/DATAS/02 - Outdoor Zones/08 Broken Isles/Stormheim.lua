@@ -2644,7 +2644,6 @@ _.Zones =
 							q(41547),	-- Fjarnskaggl Cluster
 							q(41299),	-- Flourishing Fjarnskaggl
 							q(46014),	-- Gelthrog
-							q(41427),	-- Get Vrekt
 							q(42004),	-- Ghostship
 							q(41614),	-- Huge Stormrays
 							q(41275),	-- Huge Stormrays
@@ -2697,12 +2696,10 @@ _.Zones =
 							q(43621),	-- WANTED: Fathnyr
 							q(43436),	-- WANTED: Glimar Ironfist
 							q(43622),	-- WANTED: Glimar Ironfist
-							q(43453),	-- WANTED: Hannval the Butcher
 							q(43623),	-- WANTED: Hannval the Butcher
 							q(43624),	-- WANTED: Isel the Hammer
 							q(43438),	-- WANTED: Nameless King
 							q(43625),	-- WANTED: Nameless King
-							q(43437),	-- WANTED: Thane Irglov
 							q(43626),	-- WANTED: Thane Irglov
 							q(43450),	-- WANTED: Tiptog the Lost
 							q(43627),	-- WANTED: Tiptog the Lost
@@ -2716,7 +2713,6 @@ _.Zones =
 							q(41660),	-- Work Order: Skaggldrynk
 							q(41277),	-- Work Order: Stormrays
 							q(41344),	-- Work Order: Stormscales
-							q(41936),	-- You Have Been Challenged					
 						}),
 --]]				
 					q(43964, {	-- A Jarl's Feast
@@ -2785,6 +2781,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(41427, {	-- Get Vrekt
+						["lvl"] = 110,
+						["collectible"] = false,
 					}),
 					q(42243, {	-- Halls of Valor: Deeds of the Past
 						["lvl"] = 110,
@@ -2881,11 +2881,19 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
-					q(43451, {	-- WANTED: Urgev the Flayer
+					q(43453, {	-- WANTED: Hannval the Butcher
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
 					q(43452, {	-- WANTED: Isel the Hammer
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43437, {	-- WANTED: Thane Irglov
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43451, {	-- WANTED: Urgev the Flayer
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2927,6 +2935,10 @@ _.Zones =
 						["groups"] = {
 							i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
 						},
+					}),
+					q(41936, {	-- You Have Been Challenged
+						["lvl"] = 110,
+						["collectible"] = false,
 					}),
 					n(-322, {	-- Cloak
 						i(134202),	-- Stormsky Cloak

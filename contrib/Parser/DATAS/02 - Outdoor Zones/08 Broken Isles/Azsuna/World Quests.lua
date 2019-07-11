@@ -43,6 +43,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(42712, {	-- Eye of Azshara: Termination Claws
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42154, {	-- Help a Whelp
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -62,8 +66,16 @@ _.Zones =
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
+				q(46167, {	-- Kozrum (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(42211, {	-- Leodrath's Kin
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46164, {	-- Mal'serus (Invasion WQ)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(44786, {	-- Midterm: Rune Aptitude

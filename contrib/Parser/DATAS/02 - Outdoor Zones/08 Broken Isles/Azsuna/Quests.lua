@@ -71,7 +71,7 @@ _.Zones =
 				q(42277),	-- Interlopers!
 				q(42021),	-- Investigation at Mak'rana
 				q(41528),	-- Iridescent Aethril
-				q(46167),	-- Kozrum
+				
 				q(42101),	-- Language of the Lost
 				q(43325),	-- Ley Race
 				q(42172),	-- Leyhollow Infestation
@@ -84,7 +84,6 @@ _.Zones =
 				q(41599),	-- Lively Cursed Queenfish
 				q(41264),	-- Lively Cursed Queenfish
 				q(41454),	-- Luminous Leystone Outcropping
-				q(46164),	-- Mal'serus
 				q(42105),	-- Mixology Mix-up
 				q(44048),	-- Nagana Happen
 				q(42275),	-- Not On My Watch

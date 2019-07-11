@@ -20,7 +20,6 @@ _.Zones =
 					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
 					q(46068),	-- Brute Wrangling
-					q(46201),	-- By Water Be Purged
 					q(46814),	-- Call of the Frostwyrm
 					q(44846),	-- Clearing the Path
 					q(45178),	-- Contagion Containment
@@ -32,19 +31,16 @@ _.Zones =
 					q(46829),	-- Elemental Abuse
 					q(46288),	-- Everyone to the Front
 					q(45744),	-- Fall of the Felskorn
-					q(47132),	-- Fel Fire and Ice
 					q(46126),	-- Fel-Corrupted Feathers
 					q(46077),	-- Felbound Spirits
 					q(46933),	-- Felrglrglrglrgl
 					q(45934),	-- Fowl Play
 					q(46072),	-- Full Fel
-					q(46198),	-- Gems of Destruction
 					q(46212),	-- Get Them Up
 					q(40390),	-- Hallowed Ground
 					q(45985),	-- Hellish Scavengers
 					q(45541),	-- How Do YOU Like It?!
 					q(46066),	-- I Fel Bat For You
-					q(46111),	-- Illidari Masters: Sissix
 					q(46817),	-- Infernal Downfall
 					q(45743),	-- Judgment of Odyn
 					q(45776),	-- Keys are a Crutch
@@ -69,7 +65,6 @@ _.Zones =
 					q(45929),	-- Purging the Flames
 					q(46075),	-- Relic Hunting
 					q(46001),	-- Rules of the Hunt
-					q(45550),	-- Salving the Corruption
 					q(45549),	-- Salving the Corruption
 					q(45626),	-- Set You Up the Bomb!
 					q(46945),	-- Si'vash
@@ -84,7 +79,6 @@ _.Zones =
 					q(46325),	-- The United Front
 					q(46063),	-- The Wailing Dead
 					q(45791),	-- War Materiel
-					q(45930),	-- We Didn't Start the Fire
 					q(45977),	-- Where There is a Whip...
 				}),
 ]]--
@@ -104,11 +98,27 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46201, {	-- By Water Be Purged
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46865, {	-- Cathedral of Eternal Night: Mother of Flame
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(45970, {	-- Duty's End
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(45878, {	-- Exterminating with Impunity
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(47132, {	-- Fel Fire and Ice
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46198, {	-- Gems of Destruction
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -118,6 +128,11 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46113, {	-- Illidari Masters: Nameless Mystic
+					["lvl"] = 110,
+					["filterID"] = 101,	-- Battle Pet
+					["collectible"] = false,
+				}),
+				q(46111, {	-- Illidari Masters: Sissix
 					["lvl"] = 110,
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
@@ -134,6 +149,10 @@ _.Zones =
 							["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
 						}),
 					},
+				}),
+				q(45550, {	-- Salving the Corruption
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(45805, {	-- The Burning Keys
 					["lvl"] = 110,
@@ -152,6 +171,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(45973, {	-- Unchecked Power
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45930, {	-- We Didn't Start the Fire
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
