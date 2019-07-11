@@ -232,6 +232,8 @@ i(161664, 244712);	-- Spectral Pterrorwing
 i(161909, 275866);	-- Stormsong Coastwatcher
 i(166776, 290132);	-- Sylverian Dreamer
 i(167170, 291538);	-- Unshackled Waveray
+i(163122, 261433);	-- Vicious War Basilisk (A)
+i(163121, 261434);	-- Vicious War Basilisk (H)
 i(161667, 275840);	-- Voldunai Dunescraper
 i(169162, 290328);	-- Wonderwing 2.0
 i(167751, 294143);	-- X-995 Mechanocat

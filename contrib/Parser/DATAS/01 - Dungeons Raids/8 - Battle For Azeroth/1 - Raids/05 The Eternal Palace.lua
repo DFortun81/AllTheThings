@@ -29,9 +29,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(17, {	-- LFR
-				n(-1, {	-- Common Boss Drops
-					i(169329),	-- Eternal Ornament
-				}),
 				n(0, {	-- Zone Drops
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
