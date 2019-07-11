@@ -2469,6 +2469,11 @@ _.PVP =
 					i(167384),	-- Notorious Gladiator's Safeguard
 				}),
 			}),
+			i(171095),	-- Warlord's Trophy Notorious Combatant
+			i(171096),	-- Warlord's Trophy Notorious Challenger
+			i(171097),	-- Warlord's Trophy Notorious Rival
+			i(171098),	-- Warlord's Trophy Notorious Duelist
+			i(171099),	-- Warlord's Trophy Notorious Elite
 			i(167363, {	-- Notorious Gladiator's Tabard (A)
 				["races"] = ALLIANCE_ONLY,
 			}),

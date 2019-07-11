@@ -8,109 +8,213 @@ _.Achievements =
 		["groups"] = {
 			n(-9958, {	-- Player vs Player
 				["groups"] = {
-					n(-3158, {	--	Player vs. Player (Battle for Azeroth Season 1)
-						["groups"] = {
-							un(2, ach(12959, {			-- Challenger: Battle for Azeroth Season 1
-								title(32),				-- Challenger
-							})),
-							un(2, a(ach(13199))),	-- Dread Combatant
-							un(2, ach(12962, {		-- Duelist: Battle for Azeroth Season 1
-								["g"] = {
-									title(30),		-- Duelist
-									--[[ Note!! Currently we can not list this due to having no item.
-									Illusion: Dreadflame // Dreadflame Illusion --]]
-									un(2, i(164575)),	-- Alliance Dread Gladiator's Cloak
-									un(2, i(164574)),	-- Horde Dread Gladiator's Cloak
-								},
-							})),
-							un(2, ach(12945, {			-- Dread Gladiator: Battle for Azeroth Season 1
-								--un(39, title(111)),			-- Dread Gladiator.
-							})),
-							un(2, ach(13465)),		-- Elite: Battle for Azeroth Season 1 -- The first Elite Achievement did not reward Tabards. From S2 & later they did.
-							un(2, ach(12961, {		-- Gladiator: Battle for Azeroth Season 1
-								["g"] = {
-									title(29),			-- Gladiator
-									un(2, i(156879)),	-- Dread Gladiator's Proto-Drake
-									un(2, i(164573)),	-- Alliance Dread Gladiator's Tabard
-									un(2, i(164572)),	-- Horde Dread Gladiator's Tabard
-								},
-							})),
-							un(2, a(ach(12963))),	-- Hero of the Alliance: Dread
-							un(2, h(ach(12964))),	-- Hero of the Horde: Dread
-							un(2, ach(12960, {			-- Rival: Battle for Azeroth Season 1
-								title(31),				-- Rival
-							})),
-						},
+					n(-664, {	-- Dread Gladiator: Battle for Azeroth Season 1
+						ach(12959, {	-- Challenger: Battle for Azeroth Season 1
+							["u"] = 4,
+							["g"] = {
+								title(32),	-- Challenger <Name>
+							},
+						}),
+						ach(13199, {	-- Combatant: Battle for Azeroth Season 1
+							["u"] = 4,
+							["g"] = {
+								title(110),	-- Combatant <Name>
+							},
+						}),
+						ach(12962, {	-- Duelist: Battle for Azeroth Season 1
+							["u"] = 4,
+							["g"] = {
+								title(30),		-- Duelist <Name>
+								--[[ Note!! Currently we can not list this due to having no item.
+								Illusion: Dreadflame // Dreadflame Illusion --]]
+								i(164575, {	-- Dread Gladiator's Cloak (A)
+									["u"] = 2,
+								}),
+								i(164574, {	-- Dread Gladiator's Cloak (H)
+									["u"] = 2,
+								}),
+							},
+						}),
+						ach(13465, {	-- Elite: Battle for Azeroth Season 1
+							["u"] = 4,
+						}),
+						ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
+							["u"] = 4,
+							["g"] = {
+								title(29),			-- Gladiator <Name>
+								i(156879, {	-- Dread Gladiator's Proto-Drake
+									["u"] = 2,
+								}),
+								i(164573, {	-- Dread Gladiator's Tabard (A)
+									["u"] = 2,
+								}),
+								i(164572, {	-- Dread Gladiator's Tabard (H)
+									["u"] = 2,
+								}),
+							},
+						}),
+						ach(12963, {	-- Hero of the Alliance: Dread
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 4,
+						}),
+						ach(12964, {	-- Hero of the Horde: Dread
+							["races"] = HORDE_ONLY,
+							["u"] = 4,
+						}),
+						ach(12960, {	-- Rival: Battle for Azeroth Season 1
+							["u"] = 4,
+							["g"] = {
+								title(31),	-- Rival <Name>
+							},
+						}),
+						ach(12945, {	-- Dread Gladiator: Battle for Azeroth Season 1
+							["u"] = 4,
+--[[							["g"] = {
+								title(??, {	-- Dread Gladiator <Name>
+									["u"] = 37,
+								}),
+]]--							},
+						}),
 					}),
-					n(-3157, {	--	Player vs. Player (Battle for Azeroth Season 2)
-						["groups"] = {
-							un(2, ach(13203, {			-- Challenger: Battle for Azeroth Season 2
-								title(32),				-- Challenger
-							})),
-							un(2, ach(13204)),		-- Combatant: Battle for Azeroth Season 2
-							un(2, ach(13209, {		-- Duelist: Battle for Azeroth Season 1
-								["g"] = {
-									title(30),		-- Duelist
-									--[[ Note!! Currently we can not list this due to having no item.
-									Illusion: Dreadflame // Dreadflame Illusion --]]
-									un(2, i(165060)),	-- Alliance Sinister Gladiator's Cloak
-									un(2, i(165059)),	-- Horde Sinister Gladiator's Cloak
-								},
-							})),
-							un(2, ach(13451, {		-- Elite: Battle for Azeroth Season 2
-								un(2, i(164910)),	-- Alliance Sinister Gladiator's Tabard
-								un(2, i(164909)),	-- Horde Sinister Gladiator's Tabard
-							})),
-							un(2, ach(13212, {		-- Gladiator: Battle for Azeroth Season 2
-								["g"] = {
-									title(29),			-- Gladiator
-									un(2, i(156880)),	-- Sinister Gladiator's Proto-Drake
-								},
-							})),
-							un(2, a(ach(13210))),			-- Hero of the Alliance: Sinister
-							un(2, h(ach(13211))),			-- Hero of the Horde: Sinister
-							un(2, ach(13205, {			-- Rival: Battle for Azeroth Season 2
-								title(31),				-- Rival
-							})),
-							un(2, ach(13200, {			-- Sinister Gladiator: Battle for Azeroth Season 2
-								--title(XX),			-- Sinister Gladiator (title not in as of Pre-Patch)
-							})),
-						},
+					n(-665,{	-- Sinister Gladiator: Battle for Azeroth Season 2
+						ach(13203, {	-- Challenger: Battle for Azeroth Season 2
+							["u"] = 4,
+							["g"] = {
+								title(32),	-- Challenger <Name>
+							},
+						}),
+						ach(13204, {	-- Combatant: Battle for Azeroth Season 2
+							["u"] = 4,
+							["g"] = {
+								title(110),	-- Combatant <Name>
+							},
+						}),
+						ach(13209, {	-- Duelist: Battle for Azeroth Season 2
+							["u"] = 4,
+							["g"] = {
+								title(30),	-- Duelist <Name>
+								--[[ Note!! Currently we can not list this due to having no item.
+								Illusion: Dreadflame // Dreadflame Illusion --]]
+								i(165060, {	-- Alliance Sinister Gladiator's Cloak
+									["u"] = 2,
+								}),
+								i(165059, {	-- Horde Sinister Gladiator's Cloak
+									["u"] = 2,
+								}),
+							},
+						}),
+						ach(13451, {	-- Elite: Battle for Azeroth Season 2
+							["u"] = 4,
+							["g"] = {
+								i(164910, {	-- Sinister Gladiator's Tabard (A)
+									["u"] = 2,
+								}),
+								i(164909, {	-- Sinister Gladiator's Tabard (H)
+									["u"] = 2,
+								}),
+							},
+						}),
+						ach(13212, {	-- Gladiator: Battle for Azeroth Season 2
+							["u"] = 4,
+							["g"] = {
+								title(29),	-- Gladiator <Name>
+								i(156880, {	-- Sinister Gladiator's Proto-Drake
+									["u"] = 2,
+								}),
+							},
+						}),
+						ach(13210, {	-- Hero of the Alliance: Sinister
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 4,
+						}),
+						ach(13211, {	-- Hero of the Horde: Sinister
+							["races"] = HORDE_ONLY,
+							["u"] = 4,
+						}),
+						ach(13205, {	-- Rival: Battle for Azeroth Season 2
+							["u"] = 4,
+							["g"] = {
+								title(31),	-- Rival <Name>
+							},
+						}),
+						ach(13200, {	-- Sinister Gladiator: Battle for Azeroth Season 2
+							["u"] = 4,
+--[[							["g"] = {
+								title(??, {	-- Sinister Gladiator <Name>
+									["u"] = 37,
+								}),
+]]--							},
+						}),
 					}),
-					n(-3156, {	--	Player vs. Player (Battle for Azeroth Season 3)
-						["groups"] = {
-							ach(13634, {			-- Challenger: Battle for Azeroth Season 3
-								title(32),				-- Challenger
-							}),
-							ach(13639),		-- Combatant: Battle for Azeroth Season 3
-							ach(13642, {		-- Duelist: Battle for Azeroth Season 3
-								["g"] = {
-									title(30),		-- Duelist
-									--[[ Note!! Currently we can not list this due to having no item.
-									Illusion: Dreadflame // Dreadflame Illusion --]]
-									i(167382),	-- Alliance Notorious Gladiator's Cloak
-									i(167381),	-- Horde Notorious Gladiator's Cloak
-								},
-							}),
-							ach(13676, {		-- Elite: Battle for Azeroth Season 3
-								i(167363),	-- Alliance Notorious Gladiator's Tabard
-								i(167362),	-- Horde Notorious Gladiator's Tabard
-							}),
-							ach(13647, {		-- Gladiator: Battle for Azeroth Season 2
-								["g"] = {
-									title(29),			-- Gladiator
-									i(156881),			-- Notorious Gladiator's Proto-Drake
-								},
-							}),
-							a(ach(13643)),			-- Hero of the Alliance: Notorious
-							h(ach(13644)),			-- Hero of the Horde: Notorious
-							ach(13641, {			-- Rival: Battle for Azeroth Season 3
-								title(31),				-- Rival
-							}),
-							ach(13630, {			-- Notorious Gladiator: Battle for Azeroth Season 3
-								--title(XX),			-- Notorious Gladiator (title not in as of Pre-Patch)
-							}),
-						},
+					n(-666, {	-- Notorious Gladiator: Battle for Azeroth Season 3
+						ach(13634, {	-- Challenger: Battle for Azeroth Season 3
+						--	["u"] = 4, S3
+							["g"] = {
+								title(32),	-- Challenger <Name>
+							},
+						}),
+						ach(13639, {	-- Combatant: Battle for Azeroth Season 3
+						--	["u"] = 4, S3
+							["g"] = {
+								title(110),	-- Combatant <Name>
+							},
+						}),
+						ach(13642, {	-- Duelist: Battle for Azeroth Season 3
+						--	["u"] = 4, S3
+							["g"] = {
+								title(30),	-- Duelist <Name>
+								--[[ Note!! Currently we can not list this due to having no item.
+								Illusion: Dreadflame // Dreadflame Illusion --]]
+								i(167382, {	-- Notorious Gladiator's Cloak (A)
+								--	["u"] = 2, S3
+								}),
+								i(167381, {	-- Notorious Gladiator's Cloak (H)
+								--	["u"] = 2, S3
+								}),
+							},
+						}),
+						ach(13676, {	-- Elite: Battle for Azeroth Season 3
+						--	["u"] = 4, S3
+							["g"] = {
+								i(167363, {	-- Notorious Gladiator's Tabard (A)
+								--	["u"] = 2, S3
+								}),
+								i(167362, {	-- Notorious Gladiator's Tabard (H)
+								--	["u"] = 2, S3
+								}),
+							},
+						}),
+						ach(13647, {	-- Gladiator: Battle for Azeroth Season 3
+						--	["u"] = 4, S3
+							["g"] = {
+								title(29),	-- Gladiator <Name>
+								i(156881, {	-- Notorious Gladiator's Proto-Drake
+								--	["u"] = 2, S3
+								}),
+							},
+						}),
+						ach(13643, {	-- Hero of the Alliance: Notorious
+							["races"] = ALLIANCE_ONLY,
+						--	["u"] = 4, S3
+						}),
+						ach(13644, {	-- Hero of the Horde: Notorious
+							["races"] = HORDE_ONLY,
+						--	["u"] = 4, S3
+						}),
+						ach(13641, {	-- Rival: Battle for Azeroth Season 3
+						--	["u"] = 4, S3
+							["g"] = {
+								title(31),	-- Rival <Name>
+							},
+						}),
+						ach(13630, {	-- Notorious Gladiator: Battle for Azeroth Season 3
+						--	["u"] = 4, S3
+--[[							["g"] = {
+								title(??, {	-- Notorious Gladiator <Name>
+								--	["u"] = 37, S3
+								}),
+]]--							},
+						}),
 					}),
 					un(2, ach(420)),		-- Brutal Gladiator
 					un(2, ach(6938)),		-- Cataclysmic Gladiator
