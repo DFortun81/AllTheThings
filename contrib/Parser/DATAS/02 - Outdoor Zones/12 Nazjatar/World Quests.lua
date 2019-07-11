@@ -102,8 +102,9 @@ _.Zones =
 				},
 			}),
 			q(56382, {	-- Chomp
-				["lvl"] = 120,
 				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
+				["lvl"] = 120,
 			}),
 			q(55973, {	-- Deepcoil Experiments
 				["lvl"] = 120,
@@ -118,8 +119,9 @@ _.Zones =
 				["collectible"] = false,
 			}),
 			q(56386, {	-- Elderspawn of Nalaada
-				["lvl"] = 120,
 				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
+				["lvl"] = 120,
 			}),
 			q(57340, {	-- Fathom Ray Feast
 				["collectible"] = false,
@@ -176,8 +178,9 @@ _.Zones =
 				},
 			}),
 			q(56389, {	-- Kelpstone
-				["lvl"] = 120,
 				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
+				["lvl"] = 120,
 			}),
 			q(56023, {	-- Leylocked Chest
 				["lvl"] = 120,
@@ -207,9 +210,9 @@ _.Zones =
 				},
 			}),
 			q(56388, {	-- Mindshackle
+				["collectible"] = false,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
-				["collectible"] = false,
 			}),
 			q(57354, {	-- Overdue
 				["collectible"] = false,
@@ -221,17 +224,18 @@ _.Zones =
 				["lvl"] = 120,
 			}),
 			q(56381, {	-- Prince Wiggletail
+				["collectible"] = false,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
-				["collectible"] = false,
 			}),
 			q(57336, {	-- Putting the Past to Rest
 				["collectible"] = false,
 				["lvl"] = 120,
 			}),
 			q(56387, {	-- Ravenous Scalespawn
-				["lvl"] = 120,
 				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
+				["lvl"] = 120,
 			}),
 			q(56003, {	-- Runelocked Chest
 				["lvl"] = 120,
@@ -469,8 +473,9 @@ _.Zones =
 				},
 			}),
 			q(56390, {	-- Voltgorger
-				["lvl"] = 120,
 				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
+				["lvl"] = 120,
 			}),
 			q(56795, {	-- Work Order: Abyssal-Fried Rissole (A)
 				["requireSkill"] = 185,	-- Cooking

@@ -46,7 +46,7 @@ _.Zones =
 					q(39325, {	-- Get Your Mix On
 						["qg"] = 92458,	-- Deucus Valdera
 						["g"] = {
-							recipe(264251),	-- Legion Alchemy
+							recipe(264250),	-- Legion Alchemy	-- taught by 264251
 						},
 					}),
 					q(39344, {	-- Going Underground

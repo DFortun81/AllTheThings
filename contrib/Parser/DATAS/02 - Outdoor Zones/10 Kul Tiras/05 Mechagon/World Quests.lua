@@ -18,10 +18,12 @@ _.Zones =
 				}),
 				q(56393, {	-- Gnomefeaster
 					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56395, {	-- Goldenbot XD
 					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56139, {	-- Junkyard Treasures
@@ -56,18 +58,22 @@ _.Zones =
 				}),
 				q(56394, {	-- Sputtertube
 					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56399, {	-- Unit 6
 					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56400, {	-- Unit 17
 					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),	
 				q(56398, {	-- Unit 35
 					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),	
 			}),
