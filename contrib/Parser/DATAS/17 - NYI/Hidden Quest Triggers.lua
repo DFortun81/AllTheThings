@@ -356,16 +356,19 @@ _.NeverImplemented =
 		q(55478),	-- Slimy Cocoon opened (32.9, 39.8)
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
 		q(56604),	-- Alga the Eyeless first kill
+		q(56602),	-- Anemonar first kill
 		q(56615),	-- Amethyst Spireshell first kill
 		q(56614),	-- Blightlight first kill
 		q(56887),	-- Carnivorous Lasher first kill
 		q(56600),	-- Caverndark Terror first kill
 		q(56613),	-- Chasm Haunter first kill
 		q(56612),	-- Daggertooth Terror first kill
+		q(56611),	-- Deepglider first kill
 		q(56599),	-- Elder Unu first kill
 		q(56598),	-- Elderspawn Nalaada first kill
 		q(56610),	-- Garnetscale first kill
 		q(56597),	-- Iridescent Glimmershell first kill
+		q(56596),	-- Kelpwillow first kill
 		q(56609),	-- Mirecrawler first kill
 		q(56608),	-- Needlespine first kill
 		q(56595),	-- Oronu first kill
@@ -381,8 +384,8 @@ _.NeverImplemented =
 		q(56619),	-- Tidelord Dispersius first kill
 		q(56620),	-- Tidemistress Leth'sindra first kill
 		q(56605),	-- Toxigore the Alpha first kill
-		q(56299),	-- Urduu first kill
-		q(57083),	-- Wayward Algan first kill
+		q(56584),	-- Urduu first kill
+		q(57083),	-- Wayward Algan Benthic loot
 		-- Mechagon
 		q(55547),	-- Mechanized Chest. Chests spawn randomly
 		q(55548),	-- Mechanized Chest. Chests spawn randomly

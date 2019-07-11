@@ -121,6 +121,10 @@ _.Zones =
 				["lvl"] = 120,
 				["collectible"] = false,
 			}),
+			q(57340, {	-- Fathom Ray Feast
+				["collectible"] = false,
+				["lvl"] = 120,
+			}),
 			q(56391, {	-- Frenzied Knifefang
 				["collectible"] = false,
 				["filterID"] = 101,	-- Battle Pet

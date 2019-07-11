@@ -1133,7 +1133,15 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save A Friend
 			}),
-			q(56035, {	-- Most Delicious Clams -- also triggered 56153
+			q(56153, {	-- Most Delicious Clams (A)
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 45.6, 19.6, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154239,	-- Tracker Otaru
+			}),
+			q(56035, {	-- Most Delicious Clams (H)
 				["qg"] = 153900,	-- Sardina Lauray
 				["coord"] = { 48.7, 22.6, 1355 },
 				["races"] = HORDE_ONLY,
@@ -1276,6 +1284,18 @@ _.Zones =
 				["coord"] = { 74.2, 40.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 153617,	-- Shandris Feathermoon
+			}),
+			q(56788, {	-- Reclaimed Treasure
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 5.",
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154297,	-- Bladesman Inowari
+				["g"] = {
+					crit(5, {	-- Level a Nazjatar Ally to Level 5.
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
+					i(169905),	-- Faintly Glowing Supplies
+				},
 			}),
 			q(55728, {	-- Reinforced Cache
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
@@ -1866,11 +1886,9 @@ _.Zones =
 			}),
 			q(56783, {	-- The Lambent Lockbox
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
-				["description"] = "Your Ankoan friend will offer this quest upon reaching Rank 5.",
+				["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 5.",
 				["races"] = ALLIANCE_ONLY,
-				["qgs"] = {	-- add other two bodyguards/friends/whatever
-					154304,	-- Farseer Ori
-				},
+				["qg"] = 154304,	-- Farseer Ori
 				["g"] = {
 					crit(5, {	-- Level a Nazjatar Ally to Level 5.
 						["achievementID"] = 13635,	-- Tour of the Depths
@@ -2062,6 +2080,14 @@ _.Zones =
 			--	["objectID"] = ,	-- Bounty Board (unknown objectID, not linked to quest)
 				["isDaily"] = true,
 				["coord"] = { 39.2, 54.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(55750, {	-- WANTED: Lady Naz'jess
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			--	["objectID"] = 326142,	-- Bounty Board
+				["isDaily"] = true,
+				["coord"] = { 39.1, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(55771, {	-- WANTED: Lord Ha'kass

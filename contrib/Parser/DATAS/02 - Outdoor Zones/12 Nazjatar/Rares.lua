@@ -64,8 +64,7 @@ _.Zones =
 			}),
 			n(152566, {	-- Anemonar
 				["description"] = "Kill a |cFFFFD700Colossal Sky Ray|r on top of Anemonar to activate him.  |cFFDD3333Before you start kiting make sure any followers are deactivated by right-clicking the buff to dismiss.",
-				["questID"] = 56602,	-- Needs confirmation
-				--["questID"] = 56281,	-- Needs confirmation
+				["questID"] = 56281,
 				["isDaily"] = true,
 				["coord"] = { 58.6, 53.2, 1355 },
 				["g"] = {
@@ -99,7 +98,10 @@ _.Zones =
 				},
 			}),
 			n(152361, {	-- Banescale the Packfather
+				["description"] = "There is a chance for Banescale to spawn after |cFFCC4D38Siltstalker the Packmother|r is killed.",
+				["questID"] = 56282,	-- also triggered 56601, not sure which is first kill ID
 				["isDaily"] = true,
+				["coord"] = { 73.4, 54.0, 1355 },
 				["g"] = {
 					crit(5, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -110,8 +112,8 @@ _.Zones =
 				["questID"] = 56269,
 				["isDaily"] = true,
 				["coords"] = {
-					{ 39.8, 77.2, 1355 },	-- cave entrance
 					{ 37.4, 82.6, 1355 },	-- mob
+					{ 39.8, 77.2, 1355 },	-- cave entrance
 				},
 				["g"] = {
 					crit(6, {	-- I Thought You Said They'd Be Rare?
@@ -197,7 +199,7 @@ _.Zones =
 				},
 			}),
 			n(152291, {	-- Deepglider
-				["questID"] = 56272,	-- also popped 56611, not sure which is first kill and which is daily
+				["questID"] = 56272,
 				["isDaily"] = true,
 				["coord"] = { 56.4, 43.5, 1355 },
 				["g"] = {
@@ -282,8 +284,7 @@ _.Zones =
 				},
 			}),
 			n(152567, {	-- Kelpwillow
-				--["questID"] = 56287,	-- both these quests popped on my first kelpwillow kill.  no other quests popped.
-				["questID"] = 56596,
+				["questID"] = 56287,
 				["coord"] = { 50.2, 69.6, 1355 },
 				["isDaily"] = true,
 				["description"] = "Use a |cFFFFD700Prismatic Crystal|r to charm a |cFFFFD700Muck Slug|r and bring it to Kelpwillow to activate him.",
@@ -320,7 +321,7 @@ _.Zones =
 				},
 			}),
 			n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
-				["questID"] = 56916,
+				["questID"] = 56916,	-- triggered upon looting.  can also trigger 57082 upon looting.  possible separate manapearl + benthic trigger?
 				["isDaily"] = true,
 				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 				["g"] = {
@@ -491,7 +492,7 @@ _.Zones =
 			}),
 			n(151870, {	-- Sandcastle
 				["description"] = "There is a chance for Sandcastle to spawn when you are using a Scrying Stone to find treasures in Nazjatar.",
-				["questID"] = 56276,
+				["questID"] = 56276,	-- 57191 and 57192 triggered around the time sandcastle 
 				["isDaily"] = true,
 				["g"] = {
 					crit(23, {	-- I Thought You Said They'd Be Rare?
@@ -759,7 +760,8 @@ _.Zones =
 				},
 			}),
 			n(152568, {	-- Urduu
-				["questID"] = 56584, -- TODO: verify daily ID. Also triggered 57140 — slumber killed urduu 7/6/19 and it triggered 56584 + 56299, but not 57140
+				["questID"] = 57140,	-- triggered 56584 the first time i killed it, 56299 both times i killed it, and 57140 the second time i killed it — slumber
+			--	["questID"] = 56584,
 				["coords"] = {
 					{ 31.3, 29.4, 1355 },
 					{ 30.3, 35.9, 1355 },
@@ -819,7 +821,7 @@ _.Zones =
 			}),
 			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency
 				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
-				["questID"] = 56915,
+				["questID"] = 56915,	-- triggered when looting manapearls; triggered 57083 when looting benthic gear
 				["isDaily"] = true,
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearl
