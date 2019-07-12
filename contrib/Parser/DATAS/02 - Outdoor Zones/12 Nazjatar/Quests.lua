@@ -470,6 +470,21 @@ _.Zones =
 					55500,	-- Save A Friend (H)
 				},
 			}),
+			q(55831, {	-- Bounty: More Makrura
+				["isDaily"] = true,
+				["qgs"] = {
+					155941,	-- Tamer Orami (A)
+				--	,	--  (Horde)
+				},
+				["coords"] = {
+					{ 39.5, 55.4, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
+				},
+			}),
 			q(55828, {	-- Bounty: More Murlocs
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1155,6 +1170,14 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save A Friend
 			}),
+			q(54949, {	-- More Mouths To Feed
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 35.0, 49.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 150123,	-- Tracker Onu
+			}),
 			q(56153, {	-- Most Delicious Clams (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
@@ -1436,6 +1459,21 @@ _.Zones =
 					55500,	-- Save A Friend (H)
 				},
 			}),
+			q(55719, {	-- Requisition: A Few Starfish
+				["isDaily"] = true,
+				["qgs"] = {
+					154436,	-- Craftsman Azama
+				--	,	--  (Horde)
+				},
+				["coords"] = {
+					{ 38.0, 53.3, 1355 },	-- Alliance
+				--	{ , , 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save A Friend (H)
+				},
+			}),
 			q(55789, {	-- Requisition: More Carp
 				["isDaily"] = true,
 				["qgs"] = {
@@ -1584,33 +1622,6 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save A Friend
 				["isBreadcrumb"] = true,
 			}),
-			--[[ PTR build 30613 reworked all the dailies so they aren't in a single object anymore.
-				 Leaving this hear until the quests are rediscovered from their new sources
-			{	-- Sack of Tasks (rewards appear to change over time)
-				["u"] = 43,
-				["objectID"] = 327427,
-				["coords"] = {
-					{ 38.0, 55.6, 1355 },	-- Alliance
-					{ 51.0, 65.5, 1355 },	-- Horde
-				},
-				["sourceQuests"] = {
-					56166,	-- The Needs of the People (A)
-					56179,	-- The Needs of the People (H)
-				},
-				["g"] = {
-					
-					
-					{	-- Bounty: More Makrura
-						["questID"] = 55831,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: A Few Starfish
-						["questID"] = 55719,
-						["isDaily"] = true,
-					},
-				},
-			},
-			]]--
 			q(55600, {	-- Sating Snapdragons
 				["qg"] = 153936,	-- Overseer Hajeer
 				["coord"] = { 36.9, 27.0, 1355 },
@@ -2158,7 +2169,15 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 2.",
 			}),
-			q(56264, {	-- We've Got Crabs!
+			q(56000, {	-- We've Got Crabs! (A)
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 25.5, 26.5, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 153884,	-- King Mrgl-Mrgl
+			}),
+			q(56264, {	-- We've Got Crabs! (H)
 				["qg"] = 153884,	-- King Mrgl-Mrgl
 				["coord"] = { 25.4, 26.3, 1355 },
 				["races"] = HORDE_ONLY,
