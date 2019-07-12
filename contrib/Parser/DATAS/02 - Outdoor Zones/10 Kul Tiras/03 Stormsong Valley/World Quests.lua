@@ -315,6 +315,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(53040, {	-- Squall Squelching
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52507, {	-- Sticky Mess
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -361,6 +366,11 @@ _.Zones =
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(52054, {	-- Too Much To Bear
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 					q(52209, {	-- Turtle Tactics
 						["lvl"] = 120,

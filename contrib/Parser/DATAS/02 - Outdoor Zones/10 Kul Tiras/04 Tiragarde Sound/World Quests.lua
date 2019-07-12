@@ -53,8 +53,18 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54182, {	-- Bilgewater Bash Brothers (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51841, {	-- Blackthorne
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53755, {	-- Blight and Sound (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51613, {	-- Bloodmaw
@@ -95,6 +105,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53951, {	-- Explosive Relief (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53814, {	-- First Sergeant Steelfang (Invasion WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -199,6 +214,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51843, {	-- P4-N73R4
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50324, {	-- Picturesque Fizzsprings Resort
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -209,8 +228,9 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(51843, {	-- P4-N73R4
+					q(50164, {	-- Polly Want A Cracker?
 						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51656, {	-- Saurolisk Tamer Mugg
@@ -358,6 +378,11 @@ _.Zones =
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(52475, {	-- Where Eagles Prey (Invasion WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 					q(52423, {	-- Work Order: Battle Flag: Phalanx Defense
 						["lvl"] = 120,

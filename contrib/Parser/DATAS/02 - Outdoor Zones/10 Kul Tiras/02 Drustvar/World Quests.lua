@@ -294,6 +294,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(49397, {	-- Sausage Party
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51625, {	-- Shell Game
 						["lvl"] = 120,
 						["collectible"] = false,

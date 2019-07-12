@@ -64,6 +64,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51030, {	-- Supplies Needed: Coarse Leather
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51035, {	-- Supplies Needed: Deep Sea Satin
 						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,

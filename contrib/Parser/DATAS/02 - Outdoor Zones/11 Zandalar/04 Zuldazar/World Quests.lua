@@ -285,6 +285,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(55304, {	-- The Cycle of Life
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52302, {	-- The MOTHERLODE!!: He's Got Really Big Bombs
 						["lvl"] = 120,
 						["collectible"] = false,
