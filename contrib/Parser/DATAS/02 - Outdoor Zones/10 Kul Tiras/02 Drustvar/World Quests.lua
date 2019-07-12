@@ -395,6 +395,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51676, {	-- What a Gull Wants
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51682, {	-- Witches by the Dozen
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

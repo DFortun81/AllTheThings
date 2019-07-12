@@ -677,6 +677,7 @@ _.Zones =
 				q(57327, {	-- Prototypes for Inspiration
 					["qg"] = 150282,	-- Tinkmaster Overspark
 					["coord"] = { 73.96, 36.93, 1462 },
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(54929, {	-- Ready to Rumble

@@ -7,6 +7,11 @@ _.Zones =
 		m(1161, {	-- Boralus
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
+					q(52047, {	-- Against the Storm
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(53704, {	-- Not Too Sober Citizens Brigade
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -175,6 +180,11 @@ _.Zones =
 						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50792, {	-- Taking Bribes
+						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),

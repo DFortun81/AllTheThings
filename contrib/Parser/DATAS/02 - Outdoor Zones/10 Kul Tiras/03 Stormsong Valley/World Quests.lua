@@ -338,6 +338,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(53025, {	-- The Culling
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52166, {	-- The Faceless Herald
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -358,6 +363,10 @@ _.Zones =
 						},
 					}),
 					q(52209, {	-- Turtle Tactics
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52301, {	-- Vinespeaker Ratha
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

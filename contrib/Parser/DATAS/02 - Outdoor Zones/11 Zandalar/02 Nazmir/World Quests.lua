@@ -168,6 +168,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50502, {	-- Jax'teb the Reanimated
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50503, {	-- Juba the Scarred
 						["lvl"] = 120,
 						["collectible"] = false,
