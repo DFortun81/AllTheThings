@@ -5,6 +5,24 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1178, {	-- Operation: Mechagon
 		["lvl"] = 120,
 		["groups"] = {
+			n(0, {	-- Zone Drops
+				i(170212),	-- Mecha-Bytes
+				i(170211),	-- Recipe: Famine Evaluator and Snack Table
+			}),
+			filter(101, {	-- Pet Battles
+				p(2672, {	-- Alloyed Alleyrat -- pet battle: operation mechagon
+					["crs"] = { 154789 },
+				}),
+				p(2675, {	-- Clanking Scrapsorter -- pet battle: operation mechagon
+					["crs"] = { 154796 },
+				}),
+				p(2668, {	-- Copper Hopper -- pet battle: operation mechagon
+					["crs"] = { 154781 },
+				}),
+				p(2674, {	-- H4ND-EE -- pet battle: operation mechagon
+					["crs"] = { 154794 },
+				}),
+			}),
 			d(23,  {	-- Mythic
 				["g"] = {
 					n(-1, {	-- Common Boss Drops
