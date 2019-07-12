@@ -396,6 +396,10 @@ _.Zones =
 				},
 			}),
 			]]--
+			q(57331, {	-- Salvage Operations
+				["collectible"] = false,
+				["lvl"] = 120,
+			}),
 			q(56384, {	-- Shadowspike Lurker
 				["collectible"] = false,
 				["filterID"] = 101,	-- Battle Pet

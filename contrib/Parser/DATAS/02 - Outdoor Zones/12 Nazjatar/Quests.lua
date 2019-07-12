@@ -994,6 +994,19 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56214, {	--	Good Girl
+				["qgs"] = {
+					151300,	-- Neri Sharpfin
+					155978,	-- Poen Gillbrack		-- npcID need to be confirmed
+					149906,	-- Vim Brineheart		-- npcID need to be confirmed
+				},
+				["description"] = "Offered when your Follower reaches rank 20.",
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(169199),	-- Snapdragon Kelpstalker
+				},
+			}),
 			q(56784, {	-- Helpful Provisions
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Your Ankoan friend will offer this quest upon reaching Rank 7.",
@@ -2213,6 +2226,19 @@ _.Zones =
 				["coord"] = { 41.3, 58.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 154241,	-- Seeker Anagi
+			}),
+			q(56217, {	--	Wild Tame
+				["qgs"] = {
+					151626,	-- Hunter Akana			-- npcID need to be confirmed
+					154297,	-- Bladesman Inowari	-- npcID need to be confirmed
+					154304,	-- Farseer Ori			-- npcID need to be confirmed
+				},
+				["description"] = "Offered when your Follower reaches rank 20.",
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(169200),	-- Deepcoral Snapdragon
+				},
 			}),
 			q(56815, {	-- With A Little Help From My Friends
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)

@@ -69,11 +69,11 @@ _.Achievements =
 						}),
 						ach(12945, {	-- Dread Gladiator: Battle for Azeroth Season 1
 							["u"] = 4,
---[[							["g"] = {
-								title(??, {	-- Dread Gladiator <Name>
+							["g"] = {
+								title(79, {	-- Dread Gladiator <Name>
 									["u"] = 37,
 								}),
-]]--							},
+							},
 						}),
 					}),
 					n(-665,{	-- Sinister Gladiator: Battle for Azeroth Season 2
@@ -139,11 +139,11 @@ _.Achievements =
 						}),
 						ach(13200, {	-- Sinister Gladiator: Battle for Azeroth Season 2
 							["u"] = 4,
---[[							["g"] = {
-								title(??, {	-- Sinister Gladiator <Name>
+							["g"] = {
+								title(80, {	-- Sinister Gladiator <Name>
 									["u"] = 37,
 								}),
-]]--							},
+							},
 						}),
 					}),
 					n(-666, {	-- Notorious Gladiator: Battle for Azeroth Season 3
@@ -209,11 +209,11 @@ _.Achievements =
 						}),
 						ach(13630, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 						--	["u"] = 4, S3
---[[							["g"] = {
-								title(??, {	-- Notorious Gladiator <Name>
+							["g"] = {
+								title(402, {	-- Notorious Gladiator <Name>
 								--	["u"] = 37, S3
 								}),
-]]--							},
+							},
 						}),
 					}),
 					un(2, ach(420)),		-- Brutal Gladiator
