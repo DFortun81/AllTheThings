@@ -1105,6 +1105,10 @@ _.Zones =
 					}),
 				}),
 				n(-34, {	-- World Quests
+					q(47496, {	-- Bunker Buster
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48511, {	-- Commander Endaxis
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1122,6 +1126,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48282, {	-- Imp Mother Laglath
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(47507, {	-- Khazaduum
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1158,6 +1166,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(47625, {	-- The Ritual We Share
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48615, {	-- War Never Changes
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

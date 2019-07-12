@@ -1101,11 +1101,7 @@ _.Zones =
 						q(48731),	-- Herald of Chaos
 						q(48737),	-- Instructor Tarahna
 						q(48733),	-- Jed'hin Champion Vorusk
-						q(48386),	-- Jed'hin Tournament
-						q(48698),	-- Kaara the Pale
 						q(49052),	-- Mar'cuus
-						q(48736),	-- Overseer Y'Morna
-						
 						q(48102),	-- Scale Samples
 						q(47858),	-- Security: Engaged
 						q(49050),	-- Shadeflicker
@@ -1114,7 +1110,6 @@ _.Zones =
 						q(48730),	-- Sorolis the Ill-Fated
 						q(48728),	-- Umbraliss
 						q(48094),	-- Void Clot
-						q(48696),	-- Wrangler Kravos
 					}),
 --]]				
 					q(48729, {	-- Ataxon
@@ -1141,6 +1136,11 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(49051, {	-- Corrupted Blood of Argus
+						["lvl"] = 110,
+						["filterID"] = 101,	-- Battle Pet
+						["collectible"] = false,
+					}),
 					q(47135, {	-- For Their Own Good
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1161,6 +1161,14 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48386, {	-- Jed'hin Tournament
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48698, {	-- Kaara the Pale
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(47828, {	-- Memories of the Fallen
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1170,6 +1178,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48734, {	-- Overseer Y'Beda
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48736, {	-- Overseer Y'Morna
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1226,6 +1238,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48723, {	-- Vigilant Thanos
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48696, {	-- Wrangler Kravos
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

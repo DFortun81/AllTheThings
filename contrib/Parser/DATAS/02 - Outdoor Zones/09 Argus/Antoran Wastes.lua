@@ -985,11 +985,8 @@ _.Zones =
 --[[
 					n(-34, {	-- World Quests
 						q(48837),	-- All-Seer Xanarian
-						q(48931),	-- Behemoths Awakened
 						q(48831),	-- Commander Texlaz
-						q(48777),	-- Den of Fiends
 						q(49055),	-- Earseeker
-						q(48835),	-- Houndmaster Kerrax
 						q(48830),	-- Inquisitor Vethroz
 						q(48983),	-- Mining Regulation
 						q(49057),	-- Minixis
@@ -1005,7 +1002,6 @@ _.Zones =
 						q(48374),	-- Supplies Needed: Lightweave Cloth
 						q(48640),	-- The Immortal Squadron
 						q(48870),	-- The Many-Faced Devourer
-						q(48952),	-- Throw Them a Bone
 						q(48827),	-- Varga
 						q(49053),	-- Watcher
 						q(48836),	-- Watcher Aival
@@ -1016,10 +1012,13 @@ _.Zones =
 						q(48364),	-- Work Order: Hasselian
 						q(48373),	-- Work Order: Lightweave Cloth
 						q(48834),	-- Worldsplitter Skuul
-						q(48829),	-- Wrath-Lord Yarez
 					}),
 --]]				
 					q(48832, {	-- Admiral Rel'var
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48931, {	-- Behemoths Awakened
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1040,7 +1039,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48777, {	-- Den of Fiends
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48780, {	-- Gladius
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48835, {	-- Houndmaster Kerrax
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1049,6 +1056,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(47552, {	-- Mistress Il'thendra
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48467, {	-- Puscilla
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1064,11 +1075,19 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48952, {	-- Throw Them a Bone
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48866, {	-- Void Warden Valsuran
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
 					q(48465, {	-- Vrax'thul
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48829, {	-- Wrath-Lord Yarez
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
