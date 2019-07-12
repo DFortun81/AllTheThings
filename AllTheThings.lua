@@ -3327,6 +3327,8 @@ hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 		[46746] = 152106,	-- Valarjar // Supplies from the Valarjar
 		[54461] = 166290,	-- Voldunai // Supplies from the Voldunai
 		[54462] = 166292,	-- Zandalari Empire // Supplies from the Zandalari Empire
+		[55976] = 169939,	-- Waveblade Ankoan // Supplies From the Waveblade Ankoan
+		[53982] = 169940,	-- Unshackled // Supplies From The Unshackled
 		[55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
 	};
 	
