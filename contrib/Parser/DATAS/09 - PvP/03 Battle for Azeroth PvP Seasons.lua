@@ -947,22 +947,19 @@ _.PVP =
 			i(164587, {	-- Warlord's Trophy Dread Elite
 				["u"] = 2,	
 			}),
-			i(156879, {	-- Dread Gladiator's Proto-Drake
-				["u"] = 2,
+			{	-- Mounts
+				["filter"] = 100,	-- Mounts
 				["g"] = {
-					ach(13093, {	-- Dread Gladiator's Proto-Drake
+					i(163123, {	-- Vicious War Riverbeast (A)
+						["races"] = ALLIANCE_ONLY,
+						["u"] = 2,
+					}),
+					i(163124, {	-- Vicious War Clefthoof (H)
+						["races"] = HORDE_ONLY,
 						["u"] = 2,
 					}),
 				},
-			}),
-			i(163123, {	-- Vicious War Riverbeast (A)
-				["races"] = ALLIANCE_ONLY,
-				["u"] = 2,
-			}),
-			i(163124, {	-- Vicious War Clefthoof (H)
-				["races"] = HORDE_ONLY,
-				["u"] = 2,
-			}),
+			},
 		}),
 		n(-665,{	-- Sinister Gladiator: Battle for Azeroth Season 2
 			n(-658, {	-- Aspirant PvP Gear
@@ -2048,22 +2045,39 @@ _.PVP =
 			i(164959, {	-- Warlord's Trophy Sinister Elite
 				["u"] = 2,
 			}),
-			i(156880, {	-- Sinister Gladiator's Proto-Drake
+			{	-- Battleborn Sigil Sinister Combatant
+				["itemID"] = 164951,	-- Battleborn Sigil Sinister Combatant
 				["u"] = 2,
+			},
+			{	-- Battleborn Sigil Sinister Challenger
+				["itemID"] = 164952,	-- Battleborn Sigil Sinister Challenger
+				["u"] = 2,
+			},
+			{	-- Battleborn Sigil Sinister Rival
+				["itemID"] = 164953,	-- Battleborn Sigil Sinister Rival
+				["u"] = 2,
+			},
+			{	-- Battleborn Sigil Sinister Duelist
+				["itemID"] = 164954,	-- Battleborn Sigil Sinister Duelist
+				["u"] = 2,
+			},
+			{	-- Battleborn Sigil Sinister Elite
+				["itemID"] = 164955,	-- Battleborn Sigil Sinister Elite
+				["u"] = 2,
+			},
+			{	-- Mounts
+				["filter"] = 100,	-- Mounts
 				["g"] = {
-					ach(13202, {	-- Sinister Gladiator's Proto-Drake
+					i(165019, {	-- Vicious Black Warsaber (A)
+						["races"] = ALLIANCE_ONLY,
+						["u"] = 2,
+					}),
+					i(165020, {	-- Vicious Black Bonesteed (H)
+						["races"] = HORDE_ONLY,
 						["u"] = 2,
 					}),
 				},
-			}),
-			i(165019, {	-- Vicious Black Warsaber (A)
-				["races"] = ALLIANCE_ONLY,
-				["u"] = 2,
-			}),
-			i(165020, {	-- Vicious Black Bonesteed (H)
-				["races"] = HORDE_ONLY,
-				["u"] = 2,
-			}),
+			},
 		}),
 		n(-666, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 			n(-658, {	-- Aspirant PvP Gear
@@ -2474,23 +2488,22 @@ _.PVP =
 			i(171097),	-- Warlord's Trophy Notorious Rival
 			i(171098),	-- Warlord's Trophy Notorious Duelist
 			i(171099),	-- Warlord's Trophy Notorious Elite
-			i(167363, {	-- Notorious Gladiator's Tabard (A)
-				["races"] = ALLIANCE_ONLY,
-			}),
-			i(167362, {	-- Notorious Gladiator's Tabard (H)
-				["races"] = HORDE_ONLY,
-			}),
-			i(156881, {	-- Notorious Gladiator's Proto-Drake
-				ach(13632),	-- Notorious Gladiator's Proto-Drake
-			}),
-			i(163122, {	-- Vicious War Basilisk (A)
-				["races"] = ALLIANCE_ONLY,
-			}),
-			i(163121, {	-- Vicious War Basilisk (H)
-				["races"] = HORDE_ONLY,
-			}),
+			{	-- Mounts
+				["filter"] = 100,	-- Mounts
+				["g"] = {
+					i(163122, {	-- Vicious War Basilisk (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(163121, {	-- Vicious War Basilisk (H)
+						["races"] = HORDE_ONLY,
+					}),
+					--["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
+				},
+			},
 		}),
-		i(163827),	-- Quartermaster's Coin
+		i(163827, {	-- Quartermaster's Coin
+		 ["u"] = 2,
+		}),
 		i(163826),	-- Raider's Supply Cache
 	}),
 };
