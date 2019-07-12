@@ -13,6 +13,12 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(170061, {	-- Rustbolt Supplies
+							i(168494, {	-- Blueprint RUstbolt Resistance Insignia
+								["questID"] = 55073,
+							}),
+							i(169171, {	-- Blueprint MicroBot XD
+								["questID"] = 55079,
+							}),
 						}),
 					},
 				}),
