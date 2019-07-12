@@ -442,6 +442,10 @@ _.Zones =
 					}),
 				},
 			}),
+			q(57333, {	-- Terrace Terrors
+				["collectible"] = false,
+				["lvl"] = 120,
+			}),
 			q(56056, {	-- Terror of the Depths
 				["lvl"] = 120,
 				["collectible"] = false,

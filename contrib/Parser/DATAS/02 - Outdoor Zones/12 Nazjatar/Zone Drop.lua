@@ -48,10 +48,10 @@ _.Zones =
 			i(170167, {	-- Eel Filet
 				["allianceQuestID"] = 57246,	-- Eel Filet
 				["hordeQuestID"] = 56971,	-- Eel Filet
-			--	["description"] = "Turn in to |cFFFFD700INSERTNAMEHERE|r (Alliance) or |cFFFFD700FVim Brineheart|r (Horde) for 75 reputation.",
+				["description"] = "Turn in to |cFFFFD700Farseer Ori|r (Alliance) or |cFFFFD700Vim Brineheart|r (Horde) for 50 bodyguard experience and 250 reputation.",
 				["repeatable"] = true,
 				["coords"] = {
-				--	{ , , 1355 },	-- Alliance
+					{ 39.4, 53.6, 1355 },	-- Alliance
 					{ 49.4, 65.2, 1355 },	-- Horde
 				},
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
@@ -233,7 +233,7 @@ _.Zones =
 			}),
 			i(170191, {	-- Skeletal Hand
 				["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
-			--	["questID"] = ,
+			--	didn't trigger quest completion!
 				["coord"] = { 38.0, 59.2, 1355 },
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					152710,	-- Necrofin Deep Oracle

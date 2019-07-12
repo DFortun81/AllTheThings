@@ -248,6 +248,7 @@ _.Zones =
 				["questID"] = 56273,
 				["coords"] = {
 					{ 31.6, 35.5, 1355 },
+					{ 36.2, 44.9, 1355 },
 					{ 37.1, 47.5, 1355 },
 					{ 37.3, 40.3, 1355 },
 					{ 39.0, 57.0, 1355 },
@@ -321,7 +322,8 @@ _.Zones =
 				},
 			}),
 			n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
-				["questID"] = 56916,	-- triggered upon looting.  can also trigger 57082 upon looting.  possible separate manapearl + benthic trigger?
+				["questID"] = 56916,	-- triggered upon looting.  can also trigger 55427 and 57082 upon looting.  possible separate manapearl + benthic trigger?
+				-- 55427 & 56916 = manapearls only
 				["isDaily"] = true,
 				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 				["g"] = {
@@ -538,8 +540,8 @@ _.Zones =
 				},
 			}),
 			n(152548, {	-- Scale Matriarch Gratinax
-				["allianceQuestID"] = 56292,
-				["hordeQuestID"] = 56292,
+				["description"] = "All three Scale Matriarchs share a spawn timer.",
+				["questID"] = 56292,
 				["isDaily"] = true,
 				["coord"] = { 35.6, 41.2, 1355 },
 				["g"] = {
@@ -559,6 +561,7 @@ _.Zones =
 				},
 			}),
 			n(152545, {	-- Scale Matriarch Vynara (Verified: Pr3vention)
+				["description"] = "All three Scale Matriarchs share a spawn timer.",
 				["questID"] = 56293,
 				["coord"] = { 27.2, 37.1, 1355 },
 				["isDaily"] = true,
@@ -579,6 +582,7 @@ _.Zones =
 				},
 			}),
 			n(152542, {	-- Scale Matriarch Zodia
+				["description"] = "All three Scale Matriarchs share a spawn timer.",
 				["questID"] = 56294,
 				["coord"] = { 28.6, 46.6, 1355 },
 				["isDaily"] = true,

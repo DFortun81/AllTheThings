@@ -521,6 +521,7 @@ _.Zones =
 				["description"] = "The daily quest that is offered is only available if you select the right follower for the day.",	-- the conch/flame gives a "Daily Quest" indicator if the board has something, but it's currently bugged
 				["g"] = {
 					q(55777, {	-- Wanted: Braxicus
+						["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -2020,13 +2021,14 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56236,	-- Down But Not Out
 			}),
-			q(56152, {	-- Turn the Scale
+			q(56152, {	-- Turn the Scale (A)
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
 				["qg"] = 154238,	-- Tracker Akatani
 				["coord"] = { 31.2, 37.5, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
-			q(55980, {	-- Turn the Scale
+			q(55980, {	-- Turn the Scale (H)
 				["qg"] = 153543,	-- Krato Flipperfoot
 				["coord"] = { 34.4, 37.8, 1355 },
 				["races"] = HORDE_ONLY,

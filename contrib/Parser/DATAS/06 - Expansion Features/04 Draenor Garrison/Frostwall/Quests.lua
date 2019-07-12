@@ -2192,6 +2192,13 @@ _.ExpansionFeatures =
 										i(114576),	-- Sickened Scale Legguards
 										i(114575),	-- Yeti-Hide Legguards
 									}),
+									i(119123, {	-- Formidable Ring
+										i(114593),	-- Draenic Sorcerer's Mark
+										i(114592),	-- Grimtouch Seal
+										i(114595),	-- Gronn Bone Seal
+										i(114596),	-- Opalescent Tri-Ring
+										i(114594),	-- Soft-Stream Band
+									}),
 									i(114089, {	-- Formidable Robes
 										i(114561),	-- Aerial Acolyte's Robes
 										i(114560),	-- Crimson Carapace Breastplate
