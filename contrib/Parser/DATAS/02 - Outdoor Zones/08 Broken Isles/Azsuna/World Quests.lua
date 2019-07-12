@@ -21,11 +21,19 @@ _.Zones =
 						}),
 					},
 				}),
+				q(45069, {	-- Barrels o' Fun
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(45203, {	-- Battle for the Ruins (Invasion WQ)
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(44894, {	-- Bloodgazer Swarm!
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43175, {	-- DANGER: Deepclaw
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -43,7 +51,15 @@ _.Zones =
 						}),
 					},
 				}),
+				q(42276, {	-- Disgusting, but Useful
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42712, {	-- Eye of Azshara: Termination Claws
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44737, {	-- Helarjar Landing: Grey Shoals
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -61,6 +77,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(42021, {	-- Investigation at Mak'rana
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(46165, {	-- Kazruul (Invasion WQ)
 					["lvl"] = 98,
@@ -156,7 +176,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43429, {	-- WANTED: Syphonus
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46263, {	-- Weaving Fel Webs (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(42274, {	-- Won't Anyone Think of the Whelps?
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),

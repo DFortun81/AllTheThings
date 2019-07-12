@@ -13,10 +13,8 @@ _.Zones =
 					q(45988),	-- Ancient Bones
 					q(47061),	-- Apocron
 					q(45694),	-- Arachnicide
-					q(46105),	-- Arachnid Superiority
 					q(46104),	-- Arachnid Toxicity
 					q(45520),	-- Behind Enemy Portals
-					q(45542),	-- Behind Enemy Portals
 					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
 					q(46068),	-- Brute Wrangling
@@ -50,14 +48,10 @@ _.Zones =
 					q(46046),	-- Life's a Lich
 					q(46754),	-- Magical Beasts
 					q(46948),	-- Malificus
-					q(46707),	-- Minion! Kill That One Too!
 					q(46756),	-- Mission: Felrage Destruction
 					q(46755),	-- Mission: Felraging
-					q(46825),	-- Mud Mucking
 					q(46822),	-- Natural Selection
 					q(46833),	-- Nature Unshackled
-					q(44751),	-- No Soldier Left Behind
-					q(45792),	-- Occultist Onslaught
 					q(45793),	-- Occultist Onslaught
 					q(46752),	-- On Borrowed Wings
 					q(45797),	-- Playing with Green Fire
@@ -69,7 +63,7 @@ _.Zones =
 					q(45626),	-- Set You Up the Bomb!
 					q(46945),	-- Si'vash
 					q(46360),	-- Simply Stunning
-					q(46109),	-- Stand!
+					
 					q(46236),	-- Stonebound Soldiers
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
@@ -86,11 +80,19 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46105, {	-- Arachnid Superiority
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46750, {	-- Battery Backup
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(45559, {	-- Behind Enemy Portals
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45542, {	-- Behind Enemy Portals
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -137,6 +139,22 @@ _.Zones =
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
+				q(46707, {	-- Minion! Kill That One Too!
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46825, {	-- Mud Mucking
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44751, {	-- No Soldier Left Behind
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45792, {	-- Occultist Onslaught
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46076, {	-- Restless Spirits
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -151,6 +169,10 @@ _.Zones =
 					},
 				}),
 				q(45550, {	-- Salving the Corruption
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46109, {	-- Stand!
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

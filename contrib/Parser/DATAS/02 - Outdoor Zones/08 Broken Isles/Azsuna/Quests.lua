@@ -16,7 +16,6 @@ _.Zones =
 				q(42652),	-- Ancient Exemplars
 				q(41290),	-- Aqueous Aethril
 				q(45838),	-- Assault on Azsuna
-				q(45069),	-- Barrels o' Fun
 				q(41495),	-- Brilliant Leystone Seams
 				q(41481),	-- Brimstone Destroyer
 				q(41483),	-- Brimstone Destroyer
@@ -28,7 +27,6 @@ _.Zones =
 				q(44189),	-- DANGER: Bestrix
 				q(43121),	-- DANGER: Chief Treasurer Jabrill
 				q(44187),	-- DANGER: Cinderwing
-				q(43175),	-- DANGER: Deepclaw
 				q(43059),	-- DANGER: Fjordun
 				q(43079),	-- DANGER: Immolian
 				q(44190),	-- DANGER: Jade Darkhaven
@@ -43,7 +41,6 @@ _.Zones =
 				q(43040),	-- DANGER: Valakar the Thirsty
 				q(44287),	-- DEADLY: Withered J'im
 				q(44054),	-- Demonicide
-				q(42276),	-- Disgusting, but Useful
 				q(46169),	-- Dro'zek
 				q(43328),	-- Enigmatic
 				q(44049),	-- Evil Has Many Legs
@@ -65,13 +62,10 @@ _.Zones =
 				q(41434),	-- Glowing Leystone Deposits
 				q(43804),	-- Hate the Hatecoil
 				q(42624),	-- Heads of the Fleet
-				q(44737),	-- Helarjar Landing: Grey Shoals
 				q(41610),	-- Huge Cursed Queenfish
 				q(41265),	-- Huge Cursed Queenfish
 				q(42277),	-- Interlopers!
-				q(42021),	-- Investigation at Mak'rana
 				q(41528),	-- Iridescent Aethril
-				
 				q(42101),	-- Language of the Lost
 				q(43325),	-- Ley Race
 				q(42172),	-- Leyhollow Infestation
@@ -128,14 +122,12 @@ _.Zones =
 				q(43611),	-- WANTED: Inquisitor Tivos
 				q(43432),	-- WANTED: Normantis the Deposed
 				q(43612),	-- WANTED: Normantis the Deposed
-				q(43429),	-- WANTED: Syphonus
 				q(43613),	-- WANTED: Syphonus
 				q(42633),	-- WANTED: Vorthax
 				q(43614),	-- WANTED: Vorthax
 				q(43431),	-- WANTED: Warbringer Mox'na
 				q(43615),	-- WANTED: Warbringer Mox'na
 				q(43802),	-- Watery Graves
-				q(42274),	-- Won't Anyone Think of the Whelps?
 				q(41287),	-- Work Order: Aethril
 				q(41267),	-- Work Order: Cursed Queenfish
 				q(41657),	-- Work Order: Draughts of Raw Magic

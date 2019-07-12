@@ -2109,7 +2109,6 @@ _.Zones =
 					q(47051),	-- Assassination: Fate of the Tideskorn
 					q(43560),	-- Audience with the Windlord
 					q(42398),	-- Awakening the Senses
-					q(42025),	-- Bareback Brawl
 					q(42397),	-- Baron and the Huntsman
 					q(46110),	-- Battle for Stormheim
 					q(42391),	-- Bite of the Beast
@@ -2629,9 +2628,7 @@ _.Zones =
 							q(42991),	-- DANGER: Runeseer Sigvid
 							q(42953),	-- DANGER: Soulbinder Halldora
 							q(41444),	-- Dark Leystone Deposits
-							q(43710),	-- Dark Runes
 							q(41459),	-- Dense Leystone Outcropping
-							q(41794),	-- Drakestalker
 							q(45786),	-- Feast of the Hounds
 							q(46012),	-- Fel Commander Urgoz
 							q(41570),	-- Felhide
@@ -2705,7 +2702,6 @@ _.Zones =
 							q(43627),	-- WANTED: Tiptog the Lost
 							q(43628),	-- WANTED: Urgev the Flayer
 							q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
-							q(43601),	-- Warden Tower Assault: Whisperwind's Citadel
 							q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
 							q(41497),	-- Wild Leystone Seams
 							q(41297),	-- Work Order: Fjarnskaggl
@@ -2743,6 +2739,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(42025, {	-- Bareback Brawl
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41935, {	-- Beasts of Burden
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
@@ -2765,7 +2765,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(43710, {	-- Dark Runes
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(44893, {	-- Direbeak Swarm!
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41794, {	-- Drakestalker
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2898,6 +2906,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(43599, {	-- Warden Tower Assault: Blackhawk's Bulwark [A]
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(43601, {	-- Warden Tower Assault: Whisperwind's Citadel [A]
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,

@@ -2747,7 +2747,6 @@ _.Zones =
 --[[				
 					q(43985),	-- A Dark Tide
 					q(45840),	-- Assault on Highmountain
-					q(41705),	-- Assault on Thunder Totem
 					q(41026),	-- Back to the Shadows
 					q(46191),	-- Balinar
 					q(45071),	-- Barrels o' Fun
@@ -2797,13 +2796,11 @@ _.Zones =
 					q(46184),	-- Gelgothar
 					q(41701),	-- Gettin' Tuffer
 					q(41882),	-- Grey Idols
-					q(41127),	-- Gunksnout Infestation
 					q(41204),	-- Hard Leystone Deposits
 					q(41243),	-- Huge Highmountain Salmon
 					q(46185),	-- Iroxus
 					q(46186),	-- Ix'dreloth
 					q(46187),	-- Larthogg
-					q(43764),	-- Ley Race
 					q(41196),	-- Leystone Basilisks
 					q(41198),	-- Leystone Basilisks
 					q(41199),	-- Leystone Rumblers
@@ -2818,7 +2815,6 @@ _.Zones =
 					q(41253),	-- Migrating Highmountain Salmon
 					q(41122),	-- Mists Take You
 					q(41076),	-- Munitions Testing
-					q(41077),	-- Munitions Testing
 					q(41078),	-- Munitions Testing
 					q(46188),	-- Orgrokk
 					q(41057),	-- Primal Payback
@@ -2879,6 +2875,10 @@ _.Zones =
 					q(46192),	-- Zar'vok
 					q(46279),	-- Zargrom
 --]]
+					q(41705, {	-- Assault on Thunder Totem
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41095, {	-- Critical Crops
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2901,6 +2901,10 @@ _.Zones =
 						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
+					q(41127, {	-- Gunksnout Infestation
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(44746, {	-- Helarjar Landing: Rockaway Coast
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2919,6 +2923,14 @@ _.Zones =
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
+					}),
+					q(43764, {	-- Ley Race
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41077, {	-- Munitions Testing
+						["lvl"] = 110,
+						["collectible"] = false,
 					}),
 					q(41866, {	-- Neltharion's Lair: Blighted Bat
 						["lvl"] = 110,

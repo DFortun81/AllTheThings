@@ -1756,7 +1756,7 @@ _.Zones =
 							},
 						},
 					}),
-					n(92965,  {	-- Darkshadew
+					n(92965,  {	-- Darkshade
 						["questID"] = 38767,
 						["coord"] = { 44.0, 52.5, 641 },
 						["groups"] = {
@@ -2057,6 +2057,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(42087, {	-- Green Horror
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(43332, {	-- Grell in a Handbasket
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2090,6 +2094,10 @@ _.Zones =
 						},
 					}),
 					q(41956, {	-- Petrified Acolytes
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(43324, {	-- Rage of the Owlbeasts
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2150,7 +2158,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(44299, {	-- WANTED: Darkshade
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(43458, {	-- WANTED: Perrexx
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(44300, {	-- WANTED: Seersei
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2177,6 +2193,11 @@ _.Zones =
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
+					}),
+					q(41272, {	-- Work Order: Mossgill Perch
+						["lvl"] = 110,
+						["collectible"] = false,
+						["requireSkill"] = 356,	-- Fishing
 					}),
 					q(41676, {	-- Work Order: Pump-Action Bandage Gun
 						["requireSkill"] = 202,	-- Engineering

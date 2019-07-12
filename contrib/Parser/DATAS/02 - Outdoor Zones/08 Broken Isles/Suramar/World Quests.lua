@@ -10,7 +10,6 @@ _.Zones =
 				q(42969),	-- A Spy in Our Midst
 				q(42111),	-- Aggressive Reconnaisance
 				q(43512),	-- Ana-Mouz
-				q(44769),	-- Arming the Populace
 				q(45068),	-- Barrels o' Fun
 				q(41493),	-- Brimstone Destroyer
 				q(41492),	-- Brimstone Destroyer
@@ -19,7 +18,6 @@ _.Zones =
 				q(45307),	-- Claws for Alarm!
 				q(42151),	-- Clear the Skies
 				q(44867),	-- Contain their Advance
-				q(44816),	-- Continued Exposure
 				q(41195),	-- Culling Ambervale
 				q(44113),	-- DANGER: Achronos
 				q(44118),	-- DANGER: Auditor Esiel
@@ -30,7 +28,6 @@ _.Zones =
 				q(44122),	-- DANGER: Sorallus
 				q(44119),	-- DANGER: Volshax, Breaker of Will
 				q(41446),	-- Darkened Felslate Deposits
-				q(44801),	-- Defending Shal'aran
 				q(43778),	-- Enigmatic
 				q(41347),	-- Extra-Rancid Felhound Hide
 				q(41572),	-- Felhide
@@ -62,7 +59,6 @@ _.Zones =
 				q(41604),	-- Lively Runescale Koi
 				q(41537),	-- Lively Starlight Roses
 				q(41461),	-- Malevolent Felslate Outcropping
-				q(42880),	-- Meeting their Quota
 				q(43513),	-- Na'zak the Fiend
 				q(41305),	-- Nightborne Herb Trader
 				q(44857),	-- Not There, Not Then, Not Forever
@@ -71,10 +67,8 @@ _.Zones =
 				q(41357),	-- Primordial Felslate Deposits
 				q(41349),	-- Rock-Hard Crab Chitin
 				q(44812),	-- Running on Empty
-				q(42725),	-- Sharing the Wealth
 				q(41354),	-- Shattered Felslate Seams
 				q(44815),	-- Sick of the Sycophants
-				q(42090),	-- Skittering Subjects
 				q(41558),	-- Slab of Bacon
 				q(41557),	-- Slab of Bacon
 				q(41262),	-- Slab of Bacon
@@ -83,7 +77,6 @@ _.Zones =
 				q(41301),	-- Starlight Rose Cluster
 				q(41318),	-- Supplies Needed: Felslate
 				q(41303),	-- Supplies Needed: Starlight Roses
-				q(41351),	-- Supplies Needed: Stonehide Leather
 				q(41283),	-- The Angler Mangler
 				q(43435),	-- The Battle Rages On
 				q(42089),	-- The Fallen Ones
@@ -132,6 +125,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44769, {	-- Arming the Populace
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44780, {	-- Backlash
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -160,6 +157,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44816, {	-- Continued Exposure
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42764, {	-- Court of Stars: Wraith in the Machine
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -169,6 +170,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(42797, {	-- DANGER: Scythemaster Cil'raman
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44801, {	-- Defending Shal'aran
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -204,6 +209,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(42880, {	-- Meeting their Quota
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44799, {	-- Safe Keeping
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -212,11 +221,23 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42725, {	-- Sharing the Wealth
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42090, {	-- Skittering Subjects
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43959, {	-- Stelleris Shakedown
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(44817, {	-- Stirring the Swarm
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41351, {	-- Supplies Needed: Stonehide Leather
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
