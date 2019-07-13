@@ -598,6 +598,11 @@ _.Zones =
 						}),
 					},
 				}),
+				q(55609, {	-- Operation: Mechagon - The Mechoriginator
+					--["qg"] = 
+					--["coord"] = { 1462 },
+					--["sourceQuest"] = 
+				}),
 				q(56173, {	-- Other Interests
 					["qg"] = 152575,	-- Steelsage Gao
 					["coord"] = { 73.6, 34.3, 1462 },

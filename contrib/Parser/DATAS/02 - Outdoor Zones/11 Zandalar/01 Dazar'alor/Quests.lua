@@ -165,6 +165,48 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 135441,	-- Zolani
 				}),
+				i(163621, {	-- Rusted Horde Insignia
+					q(53116, {	-- Rusted Horde Insignia
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+					}),
+				}),
+				q(52834, {	-- Seal of Wartorn Fate: Gold
+					["coord"] = { 53.9, 88.4, 1165 },
+					--["races"] = HORDE_ONLY,
+					["qg"] = 141584,	-- Zurvan
+					["isWeekly"] = true,
+				}),
+				q(52838, {	-- Seal of Wartorn Fate: Piles of Gold
+					["coord"] = { 53.9, 88.4, 1165 },
+					--["races"] = HORDE_ONLY,
+					["qg"] = 141584,	-- Zurvan
+					["isWeekly"] = true,
+				}),
+				q(52835, {	-- Seal of Wartorn Fate: Marks of Honor
+					["coord"] = { 53.9, 88.4, 1165 },
+					--["races"] = HORDE_ONLY,
+					["qg"] = 141584,	-- Zurvan
+					["isWeekly"] = true,
+				}),
+				q(52839, {	-- Seal of Wartorn Fate: Additional Marks of Honor
+					["coord"] = { 53.9, 88.4, 1165 },
+					--["races"] = HORDE_ONLY,
+					["qg"] = 141584,	-- Zurvan
+					["isWeekly"] = true,
+				}),
+				q(52837, {	-- Seal of Wartorn Fate: War Resources
+					["coord"] = { 53.9, 88.4, 1165 },
+					--["races"] = HORDE_ONLY,
+					["qg"] = 141584,	-- Zurvan
+					["isWeekly"] = true,
+				}),
+				q(52840, {	-- Seal of Wartorn Fate: Stashed War Resources
+					["coord"] = { 53.9, 88.4, 1165 },
+					--["races"] = HORDE_ONLY,
+					["qg"] = 141584,	-- Zurvan
+					["isWeekly"] = true,
+				}),
 				q(56044, {	-- Send the Fleet
 					["qg"] = 135691,	-- Nathanos Blightcaller
 					["coord"] = { 58.4, 62.6, 1165 },

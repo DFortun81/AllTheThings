@@ -79,9 +79,15 @@ _.Zones =
 					p(388), 	-- Shore Crab
 					p(552), 	-- Twilight Fiendling
 					p(470), 	-- Twilight Spider
+					p(2677, {	-- Twilight Whelpling
+						i(169346, {	-- Young Twilight Scale
+							q(56371),	-- Young Twilight Scale
+						}),
+					}),
 					p(418), 	-- Water Snake
 					p(548), 	-- Wildhammer Gryphon Hatchling
 					p(549), 	-- Yellow-Bellied Marmot
+					
 				}),
 				n(-38,  {	-- Profession
 					n(-188,   {	-- Mining
