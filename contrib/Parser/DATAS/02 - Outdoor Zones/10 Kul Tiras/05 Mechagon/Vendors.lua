@@ -18,6 +18,18 @@ _.Zones =
 				n(150359, {	-- Pascal-K1N6
 					["coord"] = { 71.4, 32.3, 1462 },
 					["g"] = {
+						i(169113, {	-- Advanced Adventurer Augmentation
+							i(169002),	-- Calibrated Hefty Cog
+							i(169007),	-- Laser-Etched Band
+							i(169009),	-- Reinforced Digit Diode
+							i(169008),	-- Rust Resistant Loop
+							i(161375),	-- Clockwork Re-Sharpener
+							i(161418),	-- Deployable Vibro Enhancer
+							i(161416),	-- Galvanic Turbo-Charger
+							i(161374),	-- Ruthlessness Protocol Augment
+							i(161414),	-- Self-Accelerating Drive Shaft
+							i(161382),	-- Wind-Up Utility Pylon
+						}),
 						i(167062, {	-- Armored Vaultbot Key
 							i(170072),	-- Armored Vaultbot
 						}),
@@ -26,6 +38,24 @@ _.Zones =
 							i(169007),	-- Laser-Etched Band
 							i(169009),	-- Reinforced Digit Diode
 							i(169008),	-- Rust Resistant Loop
+							i(161375),	-- Clockwork Re-Sharpener
+							i(161418),	-- Deployable Vibro Enhancer
+							i(161416),	-- Galvanic Turbo-Charger
+							i(161374),	-- Ruthlessness Protocol Augment
+							i(161414),	-- Self-Accelerating Drive Shaft
+							i(161382),	-- Wind-Up Utility Pylon
+						}),
+						i(169137, {	-- Extraordinary Adventurer Augmentation
+							i(169002),	-- Calibrated Hefty Cog
+							i(169007),	-- Laser-Etched Band
+							i(169009),	-- Reinforced Digit Diode
+							i(169008),	-- Rust Resistant Loop
+							i(161375),	-- Clockwork Re-Sharpener
+							i(161418),	-- Deployable Vibro Enhancer
+							i(161416),	-- Galvanic Turbo-Charger
+							i(161374),	-- Ruthlessness Protocol Augment
+							i(161414),	-- Self-Accelerating Drive Shaft
+							i(161382),	-- Wind-Up Utility Pylon
 						}),
 						i(168907),	-- Holographic Digitalization Hearthstone
 						i(167751),	-- Mechanocat Laser Pointer

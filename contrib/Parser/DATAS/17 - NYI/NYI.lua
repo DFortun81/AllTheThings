@@ -2725,6 +2725,7 @@ _.NeverImplemented =
 			un(1, i(168584)),	-- "REUSE ME [MTMM]"
 			un(1, i(168585)),	-- "REUSE ME [MTMM]"
 			un(1, i(168586)),	-- "REUSE ME [MTMM]"
+			un(1, i(169537)),	-- "REUSE ME [MTMM] (DNT)" (naga hide rank 3 recipe in game is 170213)
 		}),
 		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
@@ -2771,6 +2772,7 @@ _.NeverImplemented =
 			un(1, i(146383)),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
 			un(1, i(141061)),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
 			un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
+			un(1, i(169550)),	-- "REUSE ME [MTMM]"
 		}),
 		n(-186, { 	-- Jewelcrafting
 			{	-- Arcanite Sword Pendant
