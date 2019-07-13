@@ -520,9 +520,6 @@ _.Zones =
 				}),
 				-- Shared Rares Drop
 				i(168327),	-- Chain Ignitercoil
-				i(170147, {	-- Paint Bottle: Goblin Green(Treasure drop in chromie side, but maybe zone?)
-					["questID"] = 56908,
-				}),
 			}),
 		}),
 	}),
