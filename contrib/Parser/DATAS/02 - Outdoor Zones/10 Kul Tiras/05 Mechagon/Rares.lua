@@ -217,6 +217,7 @@ _.Zones =
 						i(167847, {	-- Blueprint: Ultrasafe Transporter: Mechagon
 							["questID"] = 55062,
 						}),
+						i(170467),	-- Whirring Chainblade
 					},
 				}),
 				n(153205, {	-- Gemicide
@@ -326,6 +327,7 @@ _.Zones =
 						i(168248, {	-- Blueprint: BAWLD-371
 							["questID"] = 55068,
 						}),
+						i(170467),	-- Whirring Chainblade
 					},
 				}),
 				n(153206, {	-- Ol' Big Tusk
@@ -485,6 +487,7 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(169347),	-- Judgment of Mechagon
+						i(170467),	-- Whirring Chainblade
 					},
 				}),
 				n(151625, {	-- The Scrap King
@@ -501,6 +504,7 @@ _.Zones =
 						i(167846, {	-- Blueprint: Mechano-Treat
 							["questID"] = 55061,
 						}),
+						i(170467),	-- Whirring Chainblade
 					},
 				}),
 				n(151940, {	-- Uncle T'Rogg
