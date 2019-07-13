@@ -156,6 +156,12 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 						},
 					}),
+					garrisonBuilding(91,  {	-- Engineering Works (rank 1: 91, rank 2: 123, rank 3: 124)
+						i(116438, {	-- Burned-Out Hand Cannon
+							["questID"] = 36589,
+							["races"] = HORDE_ONLY,
+						}),
+					}),
 					garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 						{	-- Abyssal Gulper Eel
 							["questID"] = 35075,
@@ -1542,6 +1548,12 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 					}),
+					garrisonBuilding(93,  {	-- Enchanter's Study (rank 1: 93, rank 2: 125, rank 3: 126)
+						i(115008, {	-- Enchanted Highmaul Bracer
+							["questID"] = 36255,	-- Enchanted Highmaul Bracer
+							["races"] = HORDE_ONLY,
+						}),
+					}),
 					garrisonBuilding(132, {	-- Gem Boutique (rank 1: 96, rank 2: 131, rank 3: 132)
 						q(36380, {
 							i(115503),	-- Toy
@@ -2414,6 +2426,12 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(-152, {	-- Garrison Campaign
+						q(34335, {	-- Garrison Campaign: Crows In The Field
+							["races"] = HORDE_ONLY,
+						}),
+						q(35680, {	-- Garrison Campaign: The Fall of Shattrath
+							["races"] = HORDE_ONLY,
+						}),
 						q(35843, {	-- Garrison Campaign: Deep Recon
 							["races"] = HORDE_ONLY,
 						}),
@@ -2552,6 +2570,13 @@ _.ExpansionFeatures =
 							{ 48.67, 52.21, 590 },	-- Tier 3 Garrison
 						},
 					},
+					q(36522, {	-- Solidarity in Death
+						["qg"] = 85777,	-- Ahm
+						["sourceQuest"] = 33973,	-- Dying Wish
+						["g"] = {
+							follower(208),	-- Ahm
+						},
+					}),
 					q(34794, {	-- Taking the Fight to Nagrand
 						["lvl"] = 98,
 						["qg"] = 78487,	-- Rokhan

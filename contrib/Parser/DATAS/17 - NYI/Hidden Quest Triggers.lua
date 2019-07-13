@@ -72,7 +72,6 @@ _.NeverImplemented =
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
 		q(36793),	-- Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
 		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking herbs
-		q(34935),	-- After Wall Greeting
 		q(33964),	-- Arak Flowerpicker
 		q(34560),	-- Armory
 		q(36636),	-- Blueprint Read
@@ -84,30 +83,20 @@ _.NeverImplemented =
 		q(36853),	-- Burning Missive
 		q(36854),	-- Burning Missive
 		q(36855),	-- Burning Missive
-		q(35044),	-- Cordana Summon
-		q(34920),	-- Destroy Ward
 		q(34580),	-- Draenor Flowerpicker
 		q(34581),	-- Draenor Flowerpicker Note Found
-		q(37300),	-- Drafting Table Interact
 		q(37311),	-- Drafting Table Interact
 		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
 		q(34831),	-- Encounter Mushroom
 		q(36640),	-- Followers Obtained
 		q(33961),	-- Frostfire Flowerpicker
-		q(34835),	-- Gather Energy
-		q(34834),	-- General Commentary
 		q(33966),	-- Gorgrond Flowerpicker
 		q(34934),	-- Initial Defenders
-		q(34821),	-- Khadgar Summon
-		q(34906),	-- Krelas Summoned
 		q(34561),	-- Mage Tower
-		q(35051),	-- Mage Tower Complete
 		q(33963),	-- Nagrand Flowerpicker
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle
-		q(34904),	-- Portal Vision
 		q(34872),	-- Prized Repossessions Tracking
 		q(34985),	-- Prized Repossessions Tracking
-		q(34833),	-- Prune Ancient
 		q(34986),	-- Punching Through Tracking
 		q(34873),	-- Punching Through Tracking
 		q(35192),	-- See Reinforcements Teleport
@@ -172,20 +161,33 @@ _.NeverImplemented =
 		q(35028),	-- Spires of Arak - Krikka and Vakora Tracking - triggers during "The Bloodmane" and "Words of the Raven Mother"
 		q(36724),	-- Spires of Arak - Reshad Tracking - triggers after turning in "Call of the Raven Mother"
 
+		q(34935),	-- Talador - After Wall Greeting. Triggers during "Dropping In" after taking the portal
 		q(34568),	-- Talador - Armory
 		q(37301),	-- Talador - Armory
 		q(37304),	-- Talador - Armory
 		q(34793),	-- Talador - Auchenai Defenders Greeting
+		q(35044),	-- Talador - Cordana Summon. Triggers if you build the arcane sanctum and approach khadgar at the entrance of Zangarra
+		q(34920),	-- Talador - Destroy Ward. Triggers when interacting with the first orb during "Orbs of Power"
 		q(33927),	-- Talador - Draenei Camp Explosion Tracker,	-- triggers when approaching the area for Deceptia's Smoldering Boots
+		q(37300),	-- Talador - Drafting Table Interact. Triggers when you switch buildings in Talador
 		q(34895),	-- Talador - Dropping Bombs Tracking
 		q(34983),	-- Talador - Dropping Bombs Tracking
 		q(35047),	-- Talador - Dropping Bombs Tracking
 		q(36426),	-- Talador - Dueling Orbs
+		q(34835),	-- Talador - Gather Energy. Triggers when interacting with an energy orb in Zangarra during "Gathering the Spark"
+		q(34834),	-- Talador - General Commentary. Triggers during "Forming the Scroll" when you interact with the second ancient
+		q(33727),	-- Talador - Heal Up
+		q(34821),	-- Talador - Khadgar Summon. Triggers when you take the portal to Khadgar's Tower during "Making Acquaintances"
+		q(34906),	-- Talador - Krelas Summoned. Triggers when Krelas is summoned while approaching the arcane gate during "Dropping In"
 		q(37302),	-- Talador - Mage Tower
 		q(37303),	-- Talador - Mage Tower
 		q(34567),	-- Talador - Mage Tower
+		q(35051),	-- Talador - Mage Tower Complete. Triggers when obtaining your follower after "Due Cause to Celebrate"
 		q(34772),	-- Talador - Morkeths Cage
 		q(34946),	-- Talador - Morkurk Greeting
+		q(34904),	-- Talador - Portal Vision. Triggers during "Dropping In" when the portal is summoned to get on the wall
+		q(34833),	-- Talador - Prune Ancient. Triggers during "Forming the Scroll" when you interact with the first ancient
+		q(33732),	-- Talador - Sabotage Siege Weapons
 		q(33931),	-- Talador - This Is Not a Quest,	-- triggers when you loot Deceptia's Smoldering Boots. Supposedly it shows the map indicator but is silently completed when the explosion happens?
 		q(33645),	-- Talador - Tracking Quest,	-- Iskar's Hired Hand
 		q(34562),	-- Talador - Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok

@@ -1828,6 +1828,9 @@ _.ExpansionFeatures =
 				n(-152,  {	-- Garrison Campaign
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						q(35679, {	-- Garrison Campaign: The Fall of Shattrath
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(35837, {	-- Garrison Campaign: Deep Recon
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -2491,6 +2494,13 @@ _.ExpansionFeatures =
 					["coord"] = { 41.1, 49.4, 582 },
 					["qg"] = 77209,	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(36522, {	-- Solidarity in Death
+					["qg"] = 85777,	-- Ahm
+					["sourceQuest"] = 33973,	-- Dying Wish
+					["g"] = {
+						follower(208),	-- Ahm
+					},
 				}),
 				q(34674, {	-- Taking the Fight to Nagrand
 					["lvl"] = 98,

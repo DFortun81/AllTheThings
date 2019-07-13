@@ -16,7 +16,12 @@ _.Zones =
 				qh(38269),	-- Friends Above
 				qa(37687),	-- Garrison Campaign: In the Shadows
 				qh(37688),	-- Garrison Campaign: In the Shadows
-				qa(38421),	-- Garrison Campaign: Onslaught at Auchindoun
+				q(38421, {	-- Garrison Campaign: Onslaught at Auchindoun
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(38415, {	-- Garrison Campaign: Onslaught at Auchindoun
+					["races"] = HORDE_ONLY,
+				}),
 				qh(38453),	-- Garrison Campaign: The Bane of the Bleeding Hollow
 				qa(38560),	-- Garrison Campaign: The Bane of the Bleeding Hollow
 				qa(38561),	-- Garrison Campaign: The Warlock

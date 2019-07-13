@@ -7,6 +7,80 @@ _.Zones =
 		m(535, {	-- Talador
 			n(-17, { 	-- Quests
 				n(-360, {	-- Arcane Sanctum
+					q(34632, {	-- An Audience With The Archmage
+						["qg"] = 79176,	-- Foreman Grobash
+						["coord"] = { 71.0, 29.7, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34566,	-- At Your Command
+					}),
+					q(34634, {	-- Creating the Ink
+						["qg"] = 79393,	-- Magister Krelas
+						["coord"] = { 84.1, 30.2, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34814,	-- Making Acquaintances
+					}),
+					q(34879, {	-- Dropping In
+						["qg"] = 80396,	-- Magister Krelas
+						["coord"] = { 62.2, 68.2, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34878,	-- The Foot of the Fortress
+					}),
+					q(34712, {	-- Due Cause to Celebrate
+						["qg"] = 80389,	-- Kirin Tor Magus (Magister Krelas)
+						["coord"] = { 64.2, 81.7, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34890,	-- The Final Step
+					}),
+					q(34635, {	-- Forming the Scroll
+						["qg"] = 79393,	-- Magister Krelas
+						["coord"] = { 84.1, 30.2, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34814,	-- Making Acquaintances
+					}),
+					q(34636, {	-- Gathering the Spark
+						["qg"] = 79393,	-- Magister Krelas
+						["coord"] = { 84.1, 30.2, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34814,	-- Making Acquaintances
+					}),
+					q(34949, {	-- Joining the Ranks
+						["qg"] = 80553,	-- Magister Krelas
+						["coord"] = { 71.2, 29.9, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34712,	-- Due Cause to Celebrate
+						["g"] = {
+							follower(154),	-- Magister Krelas
+						},
+					}),
+					q(37421, {	-- Kuuro's Claim (bonus objective)
+						["coord"] = { 75.1, 23.4, 535 },
+						["sourceQuests"] = {
+							34558,	-- At Your Command (A)
+							34566,	-- At Your Command (H)
+						}
+					}),
+					q(34814, {	-- Making Acquaintances
+						["qg"] = 80142,	-- Archmage Khadgar
+						["coord"] = { 74.9, 31.1, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34632,	-- An Audience With The Archmage
+					}),
+					q(34874, {	-- Next Steps
+						["qg"] = 80193,	-- Kirin Tor Magus (Magister Krelas)
+						["coord"] = { 84.1, 30.2, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							34634,	-- Creating the Ink
+							34635,	-- Forming the Scroll
+							34636,	-- Gathering the Spark
+						},
+					}),
+					q(34889, {	-- Orbs of Power
+						["qg"] = 80390,	-- Magister Krelas
+						["coord"] = { 68.3, 70.3, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34879,	-- Dropping In
+					}),
 					q(34912, {	-- The Final Step
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -17,13 +91,38 @@ _.Zones =
 						},
 					}),
 					q(34890, {	-- The Final Step
+						["qg"] = 80389,	-- Kirin Tor Magus (Magister Krelas)
+						["coord"] = { 68.0, 80.0, 535 },
 						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							34889,	-- Orbs of Power
+							34888,	-- Vicious Viziers
+							34887,	-- While We're in the Neighborhood
+						},
 						["g"] = {
 							i(112521),	-- Auchenai Keeper Hood
 							i(112522),	-- Sha'tari Deadeye Helm
 							i(112520),	-- Sha'tari Keeper Helm
 							i(112523),	-- Talador Sentinel Helm
 						},
+					}),
+					q(34878, {	-- The Foot of the Fortress
+						["qg"] = 80965,	-- Magister Krelas
+						["coord"] = { 71.3, 29.5, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = 34874,	-- Next Steps
+					}),
+					q(34888, {	-- Vicious Viziers
+						["qg"] = 80390,	-- Magister Krelas
+						["coord"] = { 68.3, 70.3, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34879,	-- Dropping In
+					}),
+					q(34887, {	-- While We're in the Neighborhood
+						["qg"] = 80390,	-- Magister Krelas
+						["coord"] = { 68.3, 70.3, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34879,	-- Dropping In
 					}),
 				}),
 				n(-361, {	-- Artillery Tower
@@ -32,6 +131,12 @@ _.Zones =
 						["coord"] = { 62.1, 69.2, 535 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34837,	-- Going to the Gordunni
+					}),
+					q(34579, {	-- Gas Guzzlers
+						["qg"] = 79356,	-- Morketh Bladehowl
+						["coord"] = { 70.8, 30.4, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35102,	-- Unleashed Steel
 					}),
 					q(34837, {	-- Going to the Gordunni
 						["qg"] = 79356,	-- Morketh Bladehowl
@@ -42,6 +147,18 @@ _.Zones =
 							34576,	-- Iridium Recovery
 							34577,	-- Out of Jovite
 						},
+					}),
+					q(34576, {	-- Iridium Recovery
+						["qg"] = 79356,	-- Morketh Bladehowl
+						["coord"] = { 70.8, 30.4, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35102,	-- Unleashed Steel
+					}),
+					q(34577, {	-- Out of Jovite
+						["qg"] = 79356,	-- Morketh Bladehowl
+						["coord"] = { 70.8, 30.4, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35102,	-- Unleashed Steel
 					}),
 					q(34858, {	-- Prized Repossessions
 						["qg"] = 80341,	-- Morketh Bladehowl
@@ -85,6 +202,28 @@ _.Zones =
 							i(112523),	-- Talador Sentinel Helm
 						},
 					}),
+					q(34971, {	-- The Only Way to Travel
+						["qg"] = 80342,	-- Morketh Bladehowl
+						["coord"] = { 64.4, 81.6, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34870,	-- The Lord of the Gordunni
+					}),
+					q(34569, {	-- The Quarry Quandary
+						["qg"] = 79176,	-- Foreman Grobash
+						["coord"] = { 71.0, 29.7, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34566,	-- At Your Command
+					}),
+					q(35102, {	-- Unleashed Steel
+						["qg"] = 79210,	-- Morketh Bladehowl
+						["coord"] = { 71.8, 29.4, 535 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34569,	-- The Quarry Quandary
+					}),
+					q(37422, {	-- Zangarra (bonus objective)
+						["coord"] = { 83.4, 28.6, 535 },
+						["sourceQuest"] = 34566,	-- At Your Command
+					}),
 				}),
 				q(34465, {	-- A Mystical Hat -- aa
 					["coord"] = { 45.2, 37.0, 535 },
@@ -101,10 +240,6 @@ _.Zones =
 					["coord"] = { 61.3, 54.4, 535 },
 					["races"] = HORDE_ONLY,
 					--["sourceQuest"] = 34566,	-- At Your Command
-				}),
-				q(34632, {	-- An Audience With The Archmage
-					["qg"] = 79176,	-- Foreman Grobash
-					["races"] = HORDE_ONLY,
 				}),
 				q(34631, {	-- An Audience With The Archmage
 					["qg"] = 79133,	-- Foreman Eksos
@@ -123,6 +258,11 @@ _.Zones =
 						33736,	-- Iron Them Out
 						33724,	-- Vol. X Pages ?
 					},
+				}),
+				q(37837, {	-- An Inside Job
+					["u"] = 40,
+					["qg"] = 90233,	-- Archmage Khadgar
+					["sourceQuest"] = 37964,	-- To Gul'dan!
 				}),
 				q(34414, {	-- An'dure The Giant
 					["qg"] = 78515,	-- Manduil Skycaller
@@ -192,6 +332,7 @@ _.Zones =
 				q(34639),	-- Aruuna's Desolation (bonus objective) -- aa
 				q(34685, {	-- As the Smoke Rises
 					["qg"] = 79573,	-- Kalaam
+					["isBreadcrumb"] = true,
 				}),
 				q(34558, {	-- At Your Command
 					["qg"] = 79133,	-- Foreman Eksos
@@ -208,8 +349,23 @@ _.Zones =
 					["coord"] = { 76.2, 42.7, 535 },
 					["sourceQuest"] = 34566,	-- At Your Command
 				}),
+				q(36014, {	-- Blackhand's Secret
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuests"] = {
+						36010,	-- Flamebender's Tome
+						36009,	-- Heart of the Fury
+						36013,	-- Might of the Elemental Lords
+						36012,	-- Reverse Piracy
+					},
+				}),
 				q(34164, {	-- Book Burning
 					["qg"] = 77629,	-- Kor'thos Dawnfury
+					["coord"] = { 34.0, 73.9, 535 },
+					["sourceQuests"] = {
+						34092,	-- Desperate Measures
+						34122,	-- Ogre Diplomacy
+					},
 				}),
 				q(34097, {	-- Born to Shred
 					["qg"] = 75874,	-- Thaelin Darkanvil
@@ -221,16 +377,32 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33728,	-- An Eye for a Spy
 				}),
+				q(37836, {	-- Breaking Badness
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuest"] = 37834,	-- Orb of Dominion
+				}),
 				q(33740, {	-- Burning Sky
 					["qg"] = 75896,	-- Crystal-Shaper Barum
 					["coord"] = { 73.0, 38.7, 353 },
-					["sourceQuest"] = 34566,	-- At Your Command
+					["sourceQuests"] = {
+						34685,	-- As The Smoke Rises
+						34566,	-- At Your Command
+						36843,	-- They Came From Above
+					},
 				}),
 				q(39019, {	-- Call of the Archmage
 					["u"] = 40,
 				}),
 				q(39018, {	-- Call of the Archmage
 					["u"] = 40,
+				}),
+				q(39023, {	-- Call of the Archmage
+					["u"] = 40,
+					["sourceQuests"] = {
+						36014,	-- Blackhand's Secret
+						36016,	-- The Unbroken Circle
+					},
 				}),
 				q(34406, {	-- Caught In The Chaos
 					["races"] = ALLIANCE_ONLY,
@@ -253,14 +425,26 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34706, {	-- Come Together
+					["qg"] = 77580,	-- Lady Liadrin
+					["coord"] = { 45.6, 74.4, 535 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34564,	-- Destination: Unknown
+				}),
+				q(35990, {	-- Core of Flame
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+				}),
+				q(35991, {	-- Core of Iron
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+				}),
+				q(35992, {	-- Core of Life
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
 				}),
 				q(34667),	-- Court of Souls (bonus objective) -- aa
 				q(34609, {	-- Creating the Ink
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(34634, {	-- Creating the Ink
-					["races"] = HORDE_ONLY,
 				}),
 				q(34404, {	-- Crystals of Unusual Power
 					["qg"] = 78515,	-- Manduil Skycaller
@@ -279,8 +463,11 @@ _.Zones =
 					["coord"] = { 59.9, 16.4, 535 },
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\ability_mount_shreddermount",
-					["sourceQuest"] = 33754,	-- Through the Looking Glass
 					--["objectID"] = 225726,	-- Iron Shredder Decommission Orders -- verify
+					["sourceQuests"] = {
+						34948,	-- Shredder Manual
+						33754,	-- Through the Looking Glass
+					},
 				}),
 				q(33923, {	-- Demons? In Auchindoun?
 					["u"] = 1,
@@ -301,7 +488,10 @@ _.Zones =
 					},
 				}),
 				q(34564, {	-- Destination: Unknown
+					["qg"] = 77582,	-- Soulbinder Nyami
+					["coord"] = { 31.2, 73.6, 535 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 34157,	-- Into the Heart of Madness
 					["g"] = {
 						i(113015),	-- Auchenai Preserver's Loop
 						i(119069),	-- Auchenai Protector's Seal
@@ -314,6 +504,10 @@ _.Zones =
 					["qg"] = 78482,	-- Vindicator Nobundo
 					["coord"] = { 56.7, 65.8, 535 },
 					["sourceQuest"] = 34971,	-- The Only Way to Travel
+				}),
+				q(36158, {	-- Draenor's Secret Power
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
 				}),
 				q(34959, {	-- Dreadpiston
 					["races"] = ALLIANCE_ONLY,
@@ -330,14 +524,8 @@ _.Zones =
 				q(34976, {	-- Dropping Bombs
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34879, {	-- Dropping In
-					["races"] = HORDE_ONLY,
-				}),
 				q(34913, {	-- Dropping In
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(34712, {	-- Due Cause to Celebrate
-					["races"] = HORDE_ONLY,
 				}),
 				q(34711, {	-- Due Cause to Celebrate
 					["races"] = ALLIANCE_ONLY,
@@ -358,8 +546,13 @@ _.Zones =
 					["coord"] = { 56.9, 25.9, 535 },
 					--["sourceQuest"] = 34566,	-- At Your Command
 				}),
-				q(36255, {	-- Enchanted Highmaul Bracer
-					["races"] = HORDE_ONLY,
+				q(35997, {	-- Empire's Fall
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuests"] = {
+						36004,	-- Power Unleashed
+						39022,	-- Call of the Archmage
+					},
 				}),
 				q(34098, {	-- Engineering Her Demise
 					["races"] = ALLIANCE_ONLY,
@@ -400,6 +593,15 @@ _.Zones =
 					["coord"] = { 55.3, 66.7, 535 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(35994, {	-- Eyes of the Archmage
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+				}),
+				q(36010, {	-- Flamebender's Tome
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
+				}),
 				q(36353, {	-- For Old Times' Sake
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -411,37 +613,17 @@ _.Zones =
 				q(34612, {	-- Forming the Scroll
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34635, {	-- Forming the Scroll
-					["races"] = HORDE_ONLY,
-				}),
 				q(34400, {	-- Frenzied Manafeeders -- aa?
 					["qg"] = 78534,	-- Ageilaa
 					["coord"] = { 49.8, 56.1, 535 },
 					--["sourceQuest"] = 34566,	-- At Your Command
 				}),
-				q(34335, {	-- Garrison Campaign: Crows In The Field
-					["races"] = HORDE_ONLY,
-				}),
-				q(38421, {	-- Garrison Campaign: Onslaught at Auchindoun
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38415, {	-- Garrison Campaign: Onslaught at Auchindoun
-					["races"] = HORDE_ONLY,
-				}),
-				q(35679, {	-- Garrison Campaign: The Fall of Shattrath
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(35680, {	-- Garrison Campaign: The Fall of Shattrath
-					["races"] = HORDE_ONLY,
+				q(36000, {	-- Fugitive Dragon
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
 				}),
 				q(34624, {	-- Gas Guzzlers
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(34579, {	-- Gas Guzzlers
-					["qg"] = 79356,	-- Morketh Bladehowl
-					["coord"] = { 70.8, 30.4, 535 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35102,	-- Unleashed Steel
 				}),
 				q(34777, {	-- Gatekeepers of Auchindoun
 					["qg"] = 79979,	-- Defender Illona
@@ -453,9 +635,6 @@ _.Zones =
 					["coord"] = { 58.0, 53.0, 535 },
 					["races"] = HORDE_ONLY,
 					--["sourceQuest"] = 34566,	-- At Your Command
-				}),
-				q(34636, {	-- Gathering the Spark
-					["races"] = HORDE_ONLY,
 				}),
 				q(34619, {	-- Gathering the Spark
 					["races"] = ALLIANCE_ONLY,
@@ -473,11 +652,19 @@ _.Zones =
 				q(34578, {	-- Going to the Gordunni
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(33727),	-- Heal Up
-				q(36589, {	-- Heavy Arms
-					["races"] = HORDE_ONLY,
+				q(36009, {	-- Heart of the Fury
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
 				}),
-				q(34163),	-- Hiding in the Shadows
+				q(34163, {	-- Hiding in the Shadows
+					--["objectID"] = 227737,	-- Shadow Council Communicator
+					["coord"] = { 37.2, 79.3, 535 },
+					["sourceQuests"] = {
+						34092,	-- Desperate Measures
+						34122,	-- Ogre Diplomacy
+					},
+				}),
 				q(34407, {	-- Holding the Line
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -489,6 +676,11 @@ _.Zones =
 						34696,	-- The Lady of Light (breadcrumb)
 						34971,	-- The Only Way to Travel
 					},
+				}),
+				q(36006, {	-- Hunter: Hunted
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuest"] = 36005,	-- The Scrying Game
 				}),
 				q(35045, {	-- In Ared's Memory
 					["races"] = ALLIANCE_ONLY,
@@ -506,7 +698,12 @@ _.Zones =
 					},
 				}),
 				q(34157, {	-- Into the Heart of Madness
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 75392,	-- Exarch Maladaar
+					["coord"] = { 42.9, 76.1, 535 },
+					["sourceQuests"] = {
+						34092,	-- Desperate Measures
+						34122,	-- Ogre Diplomacy
+					},
 				}),
 				q(33958, {	-- Into the Hollow
 					["races"] = ALLIANCE_ONLY,
@@ -538,12 +735,6 @@ _.Zones =
 				q(34573, {	-- Iridium Recovery
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34576, {	-- Iridium Recovery
-					["qg"] = 79356,	-- Morketh Bladehowl
-					["coord"] = { 70.8, 30.4, 535 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35102,	-- Unleashed Steel
-				}),
 				q(33736, {	-- Iron Them Out
 					["qg"] = 75808,	-- Draka
 					["races"] = HORDE_ONLY,
@@ -556,9 +747,6 @@ _.Zones =
 				}),
 				q(34095, {	-- Iron Them Out
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(34949, {	-- Joining the Ranks
-					["races"] = HORDE_ONLY,
 				}),
 				q(34993, {	-- Joining the Ranks
 					["races"] = ALLIANCE_ONLY,
@@ -602,12 +790,30 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33730,	-- Engineering Her Demise
 				}),
+				q(35989, {	-- Khadgar's Task
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["g"] = {
+						un(4, i(118290)),	-- Solium Band of Might
+						un(4, i(118291)),	-- Solium Band of Wisdom
+						un(4, i(118292)),	-- Solium Band of Dexterity
+						un(4, i(118293)),	-- Solium Band of Endurance
+						un(4, i(118294)),	-- Solium Band of Mending
+					},
+				}),
 				q(33582, {	-- Kura's Vengeance
 					["qg"] = 75324,	-- Kura the Blind
 					["coord"] = { 70.7, 56.7, 535 },
 					["sourceQuest"] = 33579,	-- What the Draenei Found
 				}),
-				q(37421),	-- Kuuro's Claim (bonus objective)?
+				q(35998, {	-- Legacy of the Sorcerer Kings
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuests"] = {
+						36004,	-- Power Unleashed
+						39022,	-- Call of the Archmage
+					},
+				}),
 				q(34452, {	-- Light's Rest
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -624,14 +830,22 @@ _.Zones =
 				q(34815, {	-- Making Acquaintances
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34814, {	-- Making Acquaintances
-					["races"] = HORDE_ONLY,
+				q(36013, {	-- Might of the Elemental Lords
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
 				}),
-				q(36013),	-- Might of the Elemental Lords
 				q(35237, {	-- Mor'gran Logworks (bonus objective) -- aa
 					["coord"] = { 65.4, 32.0, 535 },
 				}),
-				q(37838),	-- My Garona
+				q(37838, {	-- My Garona
+					["u"] = 40,
+					["qg"] = 90237,	-- Garona Halforcen
+					["sourceQuest"] = 37837,	-- An Inside Job
+					["g"] = {
+						un(2, follower(466)),	-- Garona Halforcen
+					},
+				}),
 				q(34013, {	-- Never Forget
 					["qg"] = 78083,	-- Defender Artaal
 					["coord"] = { 50.5, 87.5, 535 },
@@ -667,9 +881,6 @@ _.Zones =
 				}),
 				q(34875, {	-- Next Steps
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(34874, {	-- Next Steps
-					["races"] = HORDE_ONLY,
 				}),
 				q(33530, {	-- Nightmare in the Tomb
 					["qg"] = 76790,	-- Nightmare in the Tomb
@@ -721,21 +932,26 @@ _.Zones =
 						34577,	-- Out of Jovite
 					},
 				}),
+				q(37834, {	-- Orb of Dominion
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuests"] = {
+						39023,	-- Call of the Archmage
+						36017,	-- Prisoner of the Mind
+						36018,	-- We're Not Finished...
+					},
+					["g"] = {
+						un(40, i(122155)),	-- Orb of Dominion
+					},
+				}),
 				q(34911, {	-- Orbs of Power
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34889, {	-- Orbs of Power
-					["races"] = HORDE_ONLY,
-				}),
-				q(35236),	-- Orunai Coast (bonus objective)
-				q(34571, {	-- Out of Jovite
+				q(35236, {	-- Orunai Coast (bonus objective)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34577, {	-- Out of Jovite
-					["qg"] = 79356,	-- Morketh Bladehowl
-					["coord"] = { 70.8, 30.4, 535 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35102,	-- Unleashed Steel
+				q(34571, {	-- Out of Jovite
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34234, {	-- Payback
 					["qg"] = 78082,	-- Vindicator Kaluud
@@ -765,6 +981,14 @@ _.Zones =
 					["coord"] = { 55.5, 67.0, 535 },
 					["sourceQuest"] = 34971,	-- The Only Way to Travel
 				}),
+				q(36017, {	-- Prisoner of the Mind
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuests"] = {
+						36014,	-- Blackhand's Secret
+						36016,	-- The Unbroken Circle
+					},
+				}),
 				q(34978, {	-- Prized Repossessions
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -780,13 +1004,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35684, {	-- Reclaiming the City
+					["qg"] = 76804,	-- Lady Liadrin
+					["coord"] = { 50.0, 48.4, 535 },
 					["races"] = HORDE_ONLY,
-				}),
-				q(36918, {	-- Requisition a Riverbeast
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(36945, {	-- Requisition a Riverbeast
-					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35680,	-- Garrison Campaign: The Fall of Shattrath
 				}),
 				q(34508, {	-- Restalaan, Captain of the Guard
 					["qg"] = 77869,	-- Soulbinder Tuulani
@@ -797,14 +1018,36 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34144, {	-- Retribution for the Light
+					["qg"] = 75389,	-- Lady Liadrin
+					["coord"] = { 42.9, 76.2, 535 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						34092,	-- Desperate Measures
+						34122,	-- Ogre Diplomacy
+					},
 				}),
-				q(33732),	-- Sabotage Siege Weapons
+				q(36012, {	-- Reverse Piracy
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
+				}),
 				q(37191, {	-- Sanketsu, The Burning Blade
+					["qg"] = 87764,	-- Sanketsu
+					["coord"] = { 69.5, 5.8, 535 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 36341,	-- Primal Fury
+					["g"] = {
+						i(120313),	-- Sanketsu
+					},
 				}),
 				q(37192, {	-- Sanketsu, The Burning Blade
+					["qg"] = 87764,	-- Sanketsu
+					["coord"] = { 69.5, 5.8, 535 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 36342,	-- Primal Fury
+					["g"] = {
+						i(120313),	-- Sanketsu
+					},
 				}),
 				q(34240, {	-- Scheduled Pickup
 					["races"] = ALLIANCE_ONLY,
@@ -819,8 +1062,11 @@ _.Zones =
 						33972,	-- Vile Defilers
 					},
 				}),
-				q(38562, {	-- Secrets of the Sargerei - Garrison Campaign Quest
+				q(38562, {	-- Secrets of the Sargerei
+					["qg"] = 91751,	-- Exarch Yrel
+					["coord"] = { 44.2, 65.4, 535 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 38421,	-- Garrison Campaign: Onslaught at Auchindoun
 					["g"] = {
 						i(124552, {	 -- Baleful Treads
 							i(124573),  -- Axeclaw Boots
@@ -830,8 +1076,11 @@ _.Zones =
 						}),
 					},
 				}),
-				q(38416, {	-- Secrets of the Sargerei - Garrison Campaign Quest
+				q(38416, {	-- Secrets of the Sargerei
+					["qg"] = 91750,	-- Lady Liadrin
+					["coord"] = { 44.2, 65.2, 535 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 38415,	-- Garrison Campaign: Onslaught at Auchindoun
 					["g"] = {
 						i(124552, {	 -- Baleful Treads
 							i(124573),  -- Axeclaw Boots
@@ -881,17 +1130,27 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34948, {	-- Shredder Manual
+					["qg"] = 75924,	-- Gazlowe
+					["coord"] = { 59.0, 20.6, 535 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 33721,	-- Gazlowe's Solution
+					["isBreadcrumb"] = true,
 				}),
 				q(35685, {	-- Socrethar's Demise
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35687, {	-- Socrethar's Demise
+					["qg"] = 76804,	-- Lady Liadrin
+					["coord"] = { 50.0, 48.4, 535 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35684,	-- Reclaiming the City
 				}),
-				q(36522),	-- Solidarity in Death
 				q(34701, {	-- Speaker for the Dead
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(36157, {	-- Spires of the Betrayer
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
 				}),
 				q(34451, {	-- Sunsworn Camp
 					["qg"] = 75121,	-- Sunsworn Camp
@@ -905,7 +1164,20 @@ _.Zones =
 				q(34977, {	-- Supply Recovery
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34472),	-- Temporal Juxtaposition
+				q(35993, {	-- Tackling Teron'gor
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+				}),
+				q(34472, {	-- Temporal Juxtaposition
+					["qg"] = 86949,	-- Zooti Fizzlefury
+					["coord"] = { 85.0, 31.0, 535 },
+					["sourceQuests"] = {
+						34464,	-- Mysterious Boots
+						34465,	-- Mysterious Hat
+						34463,	-- Mysterious Ring
+						34466,	-- Mysterious Staff
+					},
+				}),
 				q(34090, {	-- Thaelin's Quick Fix
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -941,6 +1213,11 @@ _.Zones =
 				q(34676, {	-- The Critical Path
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(37841, {	-- The Final Assault
+					["u"] = 40,
+					["qg"] = 90233,	-- Archmage Khadgar
+					["sourceQuest"] = 37837,	-- An Inside Job
+				}),
 				q(33976, {	-- The Final Piece
 					["qg"] = 77082,	-- Restalaan
 					["coord"] = { 44.8, 90.4, 535 },
@@ -958,9 +1235,6 @@ _.Zones =
 				}),
 				q(34908, {	-- The Foot of the Fortress
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(34878, {	-- The Foot of the Fortress
-					["races"] = HORDE_ONLY,
 				}),
 				q(33920, {	-- The Heart of Auchindoun
 					["qg"] = 78519,	-- Soulbinder Nyami
@@ -981,12 +1255,6 @@ _.Zones =
 					["sourceQuest"] = 34971,	-- The Only Way to Travel
 					["isBreadcrumb"] = true,
 				}),
-				q(34971, {	-- The Only Way to Travel
-					["qg"] = 80342,	-- Morketh Bladehowl
-					["coord"] = { 64.4, 81.6, 535 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 34870,	-- The Lord of the Gordunni
-				}),
 				q(34981, {	-- The Only Way to Travel
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1006,19 +1274,28 @@ _.Zones =
 				q(34563, {	-- The Quarry Quandary
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34569, {	-- The Quarry Quandary
-					["qg"] = 79176,	-- Foreman Grobash
-					["coord"] = { 71.0, 29.7, 535 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 34566,	-- At Your Command
-				}),
 				q(38565, {	-- The Sargerei Menace
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38417, {	-- The Sargerei Menace
 					["races"] = HORDE_ONLY,
 				}),
-				q(36027),	-- The Staff of Archmage Vargoth
+				q(36005, {	-- The Scrying Game
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuests"] = {
+						35997,	-- Empire's Fall
+						35998,	-- Legacy of the Sorcerer Kings
+					},
+				}),
+				q(36027, {	-- The Staff of Archmage Vargoth
+					["qg"] = 77853,	-- Image of Archmage Vargoth
+					["coord"] = { 84.6, 31.6, 535 },
+					["sourceQuest"] = 34472,	-- Temporal Juxtaposition
+					["g"] = {
+						follower(190),	-- Image of Archmage Vargoth
+					},
+				}),
 				q(36518, {	-- The True Path
 					["qg"] = 79978,	-- Aeda Brightdawn
 					["coord"] = { 58.1, 53.1, 535 },
@@ -1037,7 +1314,28 @@ _.Zones =
 						follower(207),	-- Defender Illona
 					},
 				}),
-				q(36843),	-- They Came From Above
+				q(36016, {	-- The Unbroken Circle
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuests"] = {
+						36010,	-- Flamebender's Tome
+						36009,	-- Heart of the Fury
+						36013,	-- Might of the Elemental Lords
+						36012,	-- Reverse Piracy
+					},
+					["g"] = {
+						un(4, i(118305)),	-- Spellbound Runic Band of Elemental Power
+						un(4, i(118306)),	-- Spellbound Runic Band of the All-Seeing Eye
+						un(4, i(118307)),	-- Spellbound Runic Band of Unrelenting Slaughter
+						un(4, i(118308)),	-- Spellbound Runic Band of Elemental Invincibility
+						un(4, i(118309)),	-- Spellbound Runic Band of Infinite Preservation
+					},
+				}),
+				q(36843, {	-- They Came From Above
+					["qg"] = 86522,	-- Akhan
+					["coord"] = { 67.4, 42.2, 535 },
+					["isBreadcrumb"] = true,
+				}),
 				q(34087, {	-- Through the Looking Glass
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1047,8 +1345,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34683,	-- One Step Ahead
 				}),
+				q(37964, {	-- To Gul'dan!
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuest"] = 37836,	-- Breaking Badness
+				}),
 				q(36512, {	-- Together We Are Strong
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 79434,	-- Soulbinder Tuulani
+					["coord"] = { 46.3, 74.1, 535 },
+					["sourceQuest"] = 34564,	-- Destination: Unknown
+					["g"] = {
+						follower(205),	-- Soulbinder Tuulani
+					},
 				}),
 				q(34088, {	-- Too Many Irons in the Fire
 					["races"] = ALLIANCE_ONLY,
@@ -1059,22 +1367,24 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33754,	-- Through the Looking Glass
 				}),
+				q(36007, {	-- Touch of the Kirin-Tor
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["g"] = {
+						un(4, i(118300)),	-- Spellbound Solium Band of Sorcerous Strength
+						un(4, i(118301)),	-- Spellbound Solium Band of the Kirin-Tor
+						un(4, i(118302)),	-- Spellbound Solium Band of Fatal Strikes
+						un(4, i(118303)),	-- Spellbound Solium Band of Sorcerous Invincibility
+						un(4, i(118304)),	-- Spellbound Solium Band of the Immortal Spirit
+					},
+				}),
 				q(34399, {	-- Trouble In The Mine -- aa?
 					["qg"] = 78534,	-- Ageilaa
 					["coord"] = { 49.8, 56.1, 535 },
 					--["sourceQuest"] = 34566,	-- At Your Command
 				}),
-				q(35102, {	-- Unleashed Steel
-					["qg"] = 79210,	-- Morketh Bladehowl
-					["coord"] = { 71.8, 29.4, 535 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 34569,	-- The Quarry Quandary
-				}),
 				q(34910, {	-- Vicious Viziers
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(34888, {	-- Vicious Viziers
-					["races"] = HORDE_ONLY,
 				}),
 				q(33969, {	-- Vile Defilers
 					["races"] = ALLIANCE_ONLY,
@@ -1187,6 +1497,14 @@ _.Zones =
 					["coord"] = { 68.4, 19.3, 536 },
 					["sourceQuest"] = 35249,	-- Powering the Defenses
 				}),
+				q(36018, {	-- We're Not Finished...
+					["u"] = 40,
+					["qg"] = 83823,	-- Archmage Khadgar
+					["sourceQuests"] = {
+						36014,	-- Blackhand's Secret
+						36016,	-- The Unbroken Circle
+					},
+				}),
 				q(33579, {	-- What the Draenei Found
 					["qg"] = 75311,	-- Raksi
 					["coord"] = { 77.7, 43.9, 535 },
@@ -1195,15 +1513,8 @@ _.Zones =
 				q(34909, {	-- While We're in the Neighborhood
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(34887, {	-- While We're in the Neighborhood
-					["races"] = HORDE_ONLY,
-				}),
 				q(34773, {	-- Why Is The Brew Gone?
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(37422, {	-- Zangarra (bonus objective)
-					["coord"] = { 83.4, 28.6, 535 },
-					["sourceQuest"] = 34566,	-- At Your Command
 				}),
 				q(34660),	-- Zorkra's Fall (bonus objective) -- aa
 			}),

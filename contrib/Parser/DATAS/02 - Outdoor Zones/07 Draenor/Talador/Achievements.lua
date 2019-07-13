@@ -21,7 +21,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- Establishing your Armory
-							["sourceQuest"] = 34971,	-- The Only Way to Travel
+							["sourceQuests"] = {
+								34712,	-- Due Cause to Celebrate (Arcane Sanctum)
+								34971,	-- The Only Way to Travel (Artillery Tower)
+							},
 						}),
 						crit(2, {	-- The Battle for Shattrath
 							["sourceQuest"] = 33731,	-- The Battle for Shattrath
@@ -29,7 +32,9 @@ _.Zones =
 						crit(3, {	-- The Plight of the Arakkoa
 							["sourceQuest"] = 33582,	-- Kura's Vengeance
 						}),
-						crit(4),	-- In the Shadows of Auchindoun
+						crit(4, {	-- In the Shadows of Auchindoun
+							["sourceQuest"] = 34564,	-- Destination: Unknown
+						}),
 					},
 				}),
 				ach(9486),		-- Goodness Gracious (Shattrath City)
