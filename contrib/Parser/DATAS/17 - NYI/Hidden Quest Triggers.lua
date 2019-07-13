@@ -389,6 +389,12 @@ _.NeverImplemented =
 		q(56605),	-- Toxigore the Alpha first kill
 		q(56584),	-- Urduu first kill
 		q(57083),	-- Wayward Algan Benthic loot
+		--	Naga Commanders
+		q(56882),	-- Commander Minezra
+		q(56895),	-- Incantatrix Vazina
+		q(56894),	-- Shadowbinder Athissa
+		q(56890),	-- Theurgist Nitara
+		q(56893),	-- Warlord Zalzjar
 		-- Mechagon
 		q(55547),	-- Mechanized Chest. Chests spawn randomly
 		q(55548),	-- Mechanized Chest. Chests spawn randomly

@@ -197,11 +197,6 @@ _.Zones =
 					}),
 				},
 			}),
-			n(155811, {	-- Commander Minzera -- part of the Nazjtar commander spawns
-				["questID"] = 56882,
-				["coord"] = { 33.4, 30.0, 1355 },
-				["isDaily"] = true,
-			}),
 			n(152756, {	-- Daggertooth Terror
 				["questID"] = 56271,
 				["coords"] = {
@@ -302,10 +297,6 @@ _.Zones =
 						}),
 					}),
 				},
-			}),
-			n(155838, {	-- Incantatrix Vazina
-				["coord"] = { 79.2, 51.1, 1355 },
-				["description"] = "One of many Naga commanders that spawn over time.",
 			}),
 			n(152448, {	-- Iridescent Glimmershell
 				["questID"] = 56286,
@@ -507,48 +498,6 @@ _.Zones =
 					}),
 				},
 			}),
-			n(153310, {	-- Qalina, Spear of Ice <Queensguard>
-			--	["questID"] = 
-			--	55888 is WQ ID.  possibly only up when her WQ is active?
-				["isDaily"] = true,
-				["coords"] = {
-					{ 52.6, 24.6, 1355 },
-					{ 61.6, 24.6, 1355 },
-					{ 60.6, 13.6, 1355 },
-				},
-				["g"] = {
-					i(170186, {	-- Abyss Pearl
-						crit(36, {	-- Abyss Pearl
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
-					i(170172, {	-- Brightspine Shell
-						crit(48, {	-- Brightspine Shell
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
-					i(170177, {	-- Exposed Fish
-						crit(45, {	-- Exposed Fish
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
-					i(170170, {	-- Fermented Deviate Fish
-						crit(50, {	-- Fermented Deviate Fish
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
-					i(170192, {	-- Mudwrap
-						crit(30, {	-- Mudwrap
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
-					i(170200, {	-- Seastorm Totem
-						crit(23, {	-- Seastorm Totem
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
-				},
-			}),
 			n(150583, {	-- Rockweed Shambler
 				["allianceQuestID"] = 56291,
 				["hordeQuestID"] = 56291,
@@ -681,12 +630,6 @@ _.Zones =
 					}),
 				},
 			}),
-			n(155841, {	-- Shadowbinder Athissa (Naga Commander)
-				["description"] = "One of many Naga commanders that spawn over time.",
-				["isDaily"] = true,
-				["questID"] = 56894,	-- Alliance, not sure if Horde has a separate questID	-- Theurgist Nitara is verified to share a questID, so they may all share.
-				["coord"] = { 74.0, 32.8, 1355 },
-			}),
 			n(152552, {	-- Shassera
 				["description"] = "The rare flies back and forth above the water at the back of the cave.",
 				["isDaily"] = true,
@@ -747,11 +690,14 @@ _.Zones =
 				},
 			}),
 			n(152290, {	-- Soundless
-				["allianceQuestID"] = 56298,
-				["hordeQuestID"] = 56298,
+				["questID"] = 56298,
 				["coords"] = {
-					{ 54.8, 50.1, 1355 },
-					{ 59.9, 47.6, 1355 },
+					{ 54.6, 41.2, 1355 },
+					{ 54.6, 50.6, 1355 },
+					{ 57.8, 53.2, 1355 },
+					{ 59.8, 49.0, 1355 },
+					{ 62.6, 59.6, 1355 },
+					{ 64.8, 52.0, 1355 },
 				},
 				["isDaily"] = true,
 				["description"] = "On top of the coral reef. Requires Flying.", 
@@ -772,12 +718,6 @@ _.Zones =
 						},
 					}),
 				},
-			}),
-			n(155836, {	-- Theurgist Nitara 
-				["description"] = "One of many Naga commanders that spawn over time.",
-				["isDaily"] = true,
-				["questID"] = 56890,	-- single questID for Alliance and Horde
-				["coord"] = { 49.4, 65.5, 1355 },
 			}),
 			n(153898, {	-- Tidelord Aquatus
 				["questID"] = 56122,
@@ -828,7 +768,10 @@ _.Zones =
 			}),
 			n(152360, {	-- Toxigore the Alpha
 				["questID"] = 56278,
-				["coord"] = { 64.8, 46.4, 1355 },
+				["coords"] = {
+					{ 64.8, 46.4, 1355 },
+					{ 65.5, 50.4, 1355 },
+				},
 				["isDaily"] = true,
 				["g"] = {
 					crit(35, {	-- I Thought You Said They'd Be Rare?
@@ -915,12 +858,6 @@ _.Zones =
 					i(170067),	-- Skinning Technique: Cragscale (Rank 2)
 				},
 			}),
-			n(155840, {	-- Warlord Zalzjar (Naga commander)
-				["description"] = "One of many Naga commanders that spawn over time.",
-				["isDaily"] = true,
-				["questID"] = 56893,
-				["coord"] = { 47.6, 31.9, 1355 },
-			}),
 			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency
 				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 				["questID"] = 56915,	-- triggered when looting manapearls; triggered 57083 when looting benthic gear
@@ -929,7 +866,7 @@ _.Zones =
 					currency(1721),	-- Prismatic Manapearl
 				},
 			}),
-			i(167077),	-- Srying Stone
+			i(167077),	-- Scrying Stone
 		}),
 	}),
 };
