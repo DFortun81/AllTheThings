@@ -27,6 +27,7 @@ _.Zones =
 							i(169009),	-- Reinforced Digit Diode
 							i(169008),	-- Rust Resistant Loop
 						}),
+						i(168907),	-- Holographic Digitalization Hearthstone
 						i(167751),	-- Mechanocat Laser Pointer
 						i(169384),	-- Microbot XD
 						i(169155),	-- Scrapmaster's Blowtorch

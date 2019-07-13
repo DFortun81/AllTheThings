@@ -8,7 +8,7 @@ _.Zones =
 			n(0, {	-- Zone Drop
 				i(159164),  -- Ashvane Company Sabatons
 				i(168394, {	-- Box of Assorted Parts
-					["description"] = "Non-guaranteed drop from Reclamation Rig event",
+					["description"] = "Drop from Reclamation Rig event",
 					["g"] = {
 						i(169396),	-- Echoing Oozeling
 						i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
@@ -18,6 +18,13 @@ _.Zones =
 							i(169845),	-- Azeroth Mini: HK-8
 							i(169846),	-- Azeroth Mini: King Mechagon *slumber note: this pack dropped from a mechanized chest for me and contained this mini
 						}),
+					},
+				}),
+				i(168395, {	-- Irradiated Box of Assorted Parts
+					["description"] = "Drop from Reclamation Rig event after using Supercollider on all Irradiated Elementals and defeating Unstable Irradiated Golems",
+					["g"] = {
+						i(168495),	-- Blueprint: Rustbolt Requisitions
+						i(169396),	-- Echoing Oozeling
 					},
 				}),
 				i(159228),  -- Freehold Cape

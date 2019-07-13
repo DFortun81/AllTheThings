@@ -174,7 +174,14 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							ach(13624),	-- Keep DPS-ing and Nobody Explodes
 							i(168830),	-- Aerial Unit R-21/X
 							i(169378),	-- Golden Snorf
-							i(169172),	-- Blueprint: Perfectly Timed Differential -- TODO:: this needs a questID for tracking
+							i(169172, {	-- Blueprint: Perfectly Timed Differential
+								["questID"] = 55080,
+								["g"] = {
+									crit(32, {	-- Perfectly Timed Differential
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								},
+							}),
 							i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 							i(168671),	-- Electromagnetic Resistors
 							i(168747),	-- Performant Adaptable Logic Board

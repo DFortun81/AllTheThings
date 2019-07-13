@@ -59,7 +59,7 @@ _.Zones =
 					crit(29),	-- Blue Spraybot
 					crit(30),	-- Utility Mechanoclaw
 					crit(31),	-- Microbot XD
-					crit(32),	-- Vision of Perfection Rank 2
+					crit(32),	-- Perfectly Timed Differential
 					crit(33),	-- Anti-Gravity Pack
 					crit(34),	-- Rustbolt Pocket Turrent
 					crit(35),	-- Annoy-o-Tron Gang

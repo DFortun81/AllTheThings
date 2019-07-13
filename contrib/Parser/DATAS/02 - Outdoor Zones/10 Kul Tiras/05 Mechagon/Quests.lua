@@ -608,6 +608,21 @@ _.Zones =
 					["coord"] = { 73.6, 34.3, 1462 },
 					["isDaily"] = true,
 				}),
+				q(56746, {	-- Our Direct Line
+					["qg"] = 152575,	-- Steelsage Gao
+					["coord"] = { 73.6, 34.3, 1462 },
+					["description"] = "Quest is offered once you have completed the daily Other Interests three times",
+					["g"] = {
+						i(169176, {	-- Blueprint: Encrypted Black Market Radio
+							["questID"] = 55084,
+							["g"] = {
+								crit(36, {	-- Encrypted Black Market Radio
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
+						}),
+					},
+				}),
 				q(55451, {	-- Paint Vial: Fireball Red
 				--	["description"] = "This item can drop from any of the Mechanized Chests in the zone.",
 					["g"] = {
@@ -1150,9 +1165,10 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				o(329641, {	-- Wanted: Junkbrat and Roadtrogg
-					["questID"] = 56434,
-					["coord"] = { 67.3, 35.2, 1462 },
-					["isDaily"] = true,
+					q(56434, {
+						["coord"] = { 67.3, 35.2, 1462 },
+						["isDaily"] = true,
+					}),
 				}),
 				q(56508, {	-- Waste Not (picked up while doing "A Direct Approach," but not sure if you have to be on that quest or what the SQs are)
 				--	["objectID"] = ,	-- not linked to quest
