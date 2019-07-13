@@ -4,45 +4,37 @@
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1178, {	-- Operation: Mechagon
 		["lvl"] = 120,
+		["maps"] = {
+			1490,	-- Mechagon Island
+			1491,	-- The Robodrome
+			1493,	-- Waste Pipes
+			1494,	-- The Under Junk
+			1497,	-- Mechagon City
+		},
 		["groups"] = {
 			n(0, {	-- Zone Drops
 				i(170212),	-- Mecha-Bytes
 				i(170211),	-- Recipe: Famine Evaluator and Snack Table
+				i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)
+				i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
+				i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
 			}),
 			filter(101, {	-- Pet Battles
-				p(2672, {	-- Alloyed Alleyrat -- pet battle: operation mechagon
+				p(2672, {	-- Alloyed Alleyrat
 					["crs"] = { 154789 },
 				}),
-				p(2675, {	-- Clanking Scrapsorter -- pet battle: operation mechagon
+				p(2675, {	-- Clanking Scrapsorter
 					["crs"] = { 154796 },
 				}),
-				p(2668, {	-- Copper Hopper -- pet battle: operation mechagon
+				p(2668, {	-- Copper Hopper
 					["crs"] = { 154781 },
 				}),
-				p(2674, {	-- H4ND-EE -- pet battle: operation mechagon
+				p(2674, {	-- H4ND-EE
 					["crs"] = { 154794 },
 				}),
 			}),
 			d(23,  {	-- Mythic
 				["g"] = {
-					n(-1, {	-- Common Boss Drops
-						["crs"] = {
-							150159,	-- King Gobbamak
-							150222,	-- Gunker
-							155407,	-- Trixie & Naeno
-							155157,	-- HK-8 Aerial Oppression Unit
-							144244,	-- Tussle Tonks
-							144246,	-- K.U.-J.0.
-							144248,	-- Machinist's Garden
-							155438,	-- King Mechagon
-						},
-						["g"] = {
-							-- Alchemy
-							i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)
-							i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
-							i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
-						},
-					}),
 					e(2357, {	-- King Gobbamak
 						["crs"] = { 150159 },	-- King Gobbamak
 						["g"] = {
