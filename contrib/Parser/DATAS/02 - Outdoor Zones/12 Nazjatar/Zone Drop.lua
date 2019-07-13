@@ -13,9 +13,20 @@ _.Zones =
 			]]--
 			i(170186, {	-- Abyss Pearl
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					152122,	-- Abyssal Defiler
+					153314,	-- Aldrantiss
+					153309,	-- Alzana, Arrow of Thunder
+					152744,	-- Elder Mindbreaker
+					152116,	-- Eye of the Corruptor
+					152968,	-- Gler'thogg
 					153327,	-- Infestation of Madness
+					152813,	-- Lesser Zoatroid
 					152067,	-- Lesser Zoatroid
 					155553,	-- Lesser Zoatroid
+					152534,	-- Merciless Controller
+					153310,	-- Qalina, Spear of Ice
+					151719,	-- Voice in the Deeps
+					153313,	-- Vyz'olgo the Mind-Taker
 					152812,	-- Zoatroid
 				},
 				["g"] = {
@@ -26,8 +37,13 @@ _.Zones =
 			}),
 			i(170188, {	-- Barnacled Bag of Goods
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					145346,	-- Kil'karrok Commander
+					152413,	-- Kil'karrok Hammerclaw
 					148392,	-- Kil'karrok Makrura
 					148391,	-- Kil'karrok Scavenger
+					152411,	-- Kil'karrok Seer
+					152412,	-- Kil'karrok Tidal Shaman
+					153263,	-- Kritch
 				},
 				["g"] = {
 					crit(34, {	-- Barnacled Bag of Goods
@@ -58,7 +74,9 @@ _.Zones =
 					145338,	-- Abyssal Eel
 					152554,	-- Abyssal Spawn
 					149707,	-- Coral Slitherer
+					152551,	-- Deepcoil Constrictor
 					145343,	-- Deepcoil Serpent
+					150463,	-- Skittering Eel
 				},
 				["g"] = {
 					crit(51, {	-- Eel Filet
@@ -79,12 +97,25 @@ _.Zones =
 			}),
 			i(170177, {	-- Exposed Fish
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					153314,	-- Aldrantiss
+					153309,	-- Alzana, Arrow of Thunder
+					154182,	-- Broken Snapdragon
+					152444,	-- Prowling Snapdragon
+					153310,	-- Qalina, Spear of Ice
+					154745,	-- Razortooth Snapdragon
 					155834,	-- Savage Snapdragon
 					152363,	-- Savage Snapdragon
 					153959,	-- Savage Snapdragon
+					154754,	-- Snapdragon Devourer
+					152357,	-- Snapdragon Hunter
+					154422,	-- Snapdragon Matriarch
 					152362,	-- Snapdragon Ravager
+					154753,	-- Snapdragon Stalker
 					152358,	-- Snapdragon Terrormaw
+					154752,	-- Snapdragon Vicemaw
 					152356,	-- Venomous Snapdragon
+					154755,	-- Venomspine Snapdragon
+					153313,	-- Vyz'olgo the Mind-Taker
 					155914,	-- Zanj'ir Snapdragon
 				},
 				["g"] = {
@@ -103,6 +134,8 @@ _.Zones =
 					{ 49.6, 64.6, 1355 },	-- Horde
 				},
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					150373,	-- Bloated Sky Ray
+					150467,	-- Colossal Sky Ray
 					150376,	-- Coral Skate
 					145967,	-- Fathom Ray
 					150696,	-- Fathom Ray Broodkeeper
@@ -113,7 +146,18 @@ _.Zones =
 					}),
 				},
 			}),
-		--	i(170170),	-- Fermented Deviate Fish — part of Biggest Bag, but the only recorded drop so far is from a rare, so it's only in that file for now.  check back!
+			i(170170, {	-- Fermented Deviate Fish
+				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					153314,	-- Aldrantiss
+					153310,	-- Qalina, Spear of Ice
+					153313,	-- Vyz'olgo the Mind-Taker
+				},
+				["g"] = {
+					crit(50, {	-- Fermented Deviate Fish
+						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+					}),
+				},
+			}),
 			i(170171, {	-- Giant Crab Leg
 				["allianceQuestID"] = 57248,	-- Giant Crab Leg
 				["hordeQuestID"] = 56973,	-- Giant Crab Leg
@@ -126,13 +170,18 @@ _.Zones =
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					153026,	-- Braxicus
 					152462,	-- Chitterspine Ambusher
+					153967,	-- Chitterspine Ambusher
 					152461,	-- Chitterspine Crab
+					153966,	-- Chitterspine Crab
 					153804,	-- Chitterspine Encroacher
+					153814,	-- Chitterspine Guillotine
 					153812,	-- Chitterspine Lurker
 					153818,	-- Crackleclaw Crab
 					148454,	-- Glimmershell Crab
 					152426,	-- Glimmershell Hulk
+					152448,	-- Iridescent Glimmershell
 					145337,	-- Sandclaw Crab
+					152795,	-- Sandclaw Stoneshell
 				},
 				["g"] = {
 					crit(49, {	-- Giant Crab Leg
@@ -142,6 +191,9 @@ _.Zones =
 			}),
 			i(170185, {	-- Intact Naga Skeleton
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					145340,	-- Siltridge Hydra
+					152541,	-- Siltridge Marauder
+					152546,	-- Stonemaw Devourer
 					152547,	-- Stonemaw Hydra
 					152543,	-- Voidscale Hydra
 					152544,	-- Voidscale Trenchstalker
@@ -154,8 +206,14 @@ _.Zones =
 			}),
 			i(170190, {	-- Mardivas' Bag of Containing
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					148475,	-- Blackfin Seer
+					152367,	-- Bloodfin Forager
 					152274,	-- Bloodfin Murloc
 					152273,	-- Bloodfin Tidecaller
+					153250,	-- Hoarder Moarrgl
+					152709,	-- Necrofin Murloc
+					152711,	-- Necrofin Reaver
+					151534,	-- Necrofin Scavenger
 				},
 				["g"] = {
 					crit(32, {	-- Mardivas' Bag of Containing
@@ -178,8 +236,11 @@ _.Zones =
 			}),
 			i(170192, {	-- Mudwrap
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					153314,	-- Aldrantiss
 					150834,	-- Disturbed Algan
 					152549,	-- Lost Algan
+					153310,	-- Qalina, Spear of Ice
+					150583,	-- Rockweed Shambler
 					151166,	-- Wayward Algan
 				},
 				["g"] = {
@@ -209,10 +270,30 @@ _.Zones =
 				},
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 				--	there are lots of mobs that have "reefwalker" in their name -- maybe those?  there are also elite ones, so possibly more common from them?
+					152558,	-- Barnacled Reefwalker
+					150568,	-- Deep Reefwalker
+					153025,	-- Emorneth
+					152564,	-- Gloomchawm Reefwalker
 					152559,	-- Murkbloom Reefwalker
+					152565,	-- Seashelf Reefwalker
+					152563,	-- Staghorn Reefwalker
+					152562,	-- Sunbleached Reefwalker
+					152560,	-- Whitewave Reefwalker
 				},
 				["g"] = {
 					crit(39, {	-- Reefwalker Bark
+						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+					}),
+				},
+			}),
+			i(170200, {	-- Seastorm Totem
+				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					153314,	-- Aldrantiss
+					153309,	-- Alzana, Arrow of Thunder
+					153310,	-- Qalina, Spear of Ice
+				},
+				["g"] = {
+					crit(23, {	-- Seastorm Totem
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				},
@@ -224,6 +305,9 @@ _.Zones =
 					152674,	-- Restoring Spring
 					152672,	-- Tide Surger
 					153998,	-- Tidespring Surger
+					153999,	-- Unleashed Tidefury
+					150371,	-- Volatile Tide Surger
+					152673,	-- Wave Surger
 				},
 				["g"] = {
 					crit(29, {	-- Sea Totem
@@ -237,6 +321,7 @@ _.Zones =
 				["coord"] = { 38.0, 59.2, 1355 },
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					152710,	-- Necrofin Deep Oracle
+					152709,	-- Necrofin Murloc
 					152711,	-- Necrofin Reaver
 					151534,	-- Necrofin Scavenger
 				},
@@ -249,10 +334,19 @@ _.Zones =
 			i(170179, {	-- Snapdragon Scent Gland
 				["crs"] = {	-- may drop from additional mobs, or chests.  check back and add crs as appropriate.
 					154182,	-- Broken Snapdragon
+					154756,	-- Razortooth Snapdragon
 					153959,	-- Savage Snapdragon
 					152363,	-- Savage Snapdragon
+					155834,	-- Savage Snapdragon
+					154754,	-- Snapdragon Devourer
 					152357,	-- Snapdragon Hunter
 					152362,	-- Snapdragon Ravager
+					154753,	-- Snapdragon Stalker
+					152358,	-- Snapdragon Terrormaw
+					154752,	-- Snapdragon Vicejaw
+					152356,	-- Venomous Snapdragon
+					154755,	-- Venomspine Snapdragon
+					155914,	-- Zanj'ir Snapdragon
 				},
 				["g"] = {
 					crit(43, {	-- Snapdragon Scent Gland
@@ -275,6 +369,7 @@ _.Zones =
 					153306,	-- Azsh'ari Leviathan
 					154132,	-- Tidal Cracklemaw
 					153655,	-- Tidal Guardian
+					153654,	-- Voltscale Guardian
 				},
 				["g"] = {
 					crit(41, {	-- Tidal Guard
@@ -284,10 +379,25 @@ _.Zones =
 			}),
 			i(170195, {	-- Voidcaster's Supply Bag
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					145326,	-- Azsh'ari Invoker
+					152918,	-- Azsh'ari Oracle
 					150508,	-- Azsh'ari Siegemistress
 					152917,	-- Azsh'ari Stormsurger
+					154141,	-- Azsh'ari Stormsurger
+					153302,	-- Glacier Mage Zhiela
+					154950,	-- Herald of the Queen
+					155838,	-- Incantatrix Vazina
+					152879,	-- Lady Naz'jess
+					155841,	-- Shadowbinder Athissa
+					145333,	-- Shirakess Apprentice
 					153737,	-- Shirakess Apprentice
 					149004,	-- Shirakess Overseer
+					153301,	-- Shirakess Starseeker
+					153843,	-- Shirakess Voidtwister
+					155836,	-- Theurgist Nitara
+					151662,	-- Tidebinder Sarjezi
+					153934,	-- Tidemistress Ethendriss
+					153304,	-- Undana Frostbarb
 				},
 				["g"] = {
 					crit(27, {	-- Voidcaster's Supply Bag
@@ -322,16 +432,32 @@ _.Zones =
 			}),				
 			i(170199, {	-- Zanj'ir Weapon Rack
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+					153299,	-- Bonebreaker Szun
+					152962,	-- Commander Sarj'eth
 					152963,	-- Lord Ha'kass
 					153738,	-- Shirakess Subjugator
 					152724,	-- Shirakess Subjugator
+					152827,	-- Shirakess Voidreaver
+					153303,	-- Voidblade Kassar
+					155840,	-- Warlord Zalzjar
+					153352,	-- Zanj'ir Assassin
+					154310,	-- Zanj'ir Brawler
+					152906,	-- Zanj'ir Centurion
+					153027,	-- Zanj'ir Defender
 					152883,	-- Zanj'ir Myrmidon
-					153739,	-- Zanj'ir Myrmidon
 					153960,	-- Zanj'ir Myrmidon
-					153740,	-- Zanj'ir Scaleguard
+					153739,	-- Zanj'ir Myrmidon
+					154311,	-- Zanj'ir Myrmidon
 					152881,	-- Zanj'ir Scaleguard
+					153740,	-- Zanj'ir Scaleguard
+					154312,	-- Zanj'ir Scaleguard
+					154194,	-- Zanj'ir Scalewarden
+					153753,	-- Zanj'ir Slaver
 					150541,	-- Zanj'ir Slaver
+					154222,	-- Zanj'ir Stalker
 					153962,	-- Zanj'ir Trapper
+					153741,	-- Zanj'ir Trapper
+					152884,	-- Zanj'ir Trapper
 				},
 				["g"] = {
 					crit(24, {	-- Underlight Sealamp
@@ -339,7 +465,13 @@ _.Zones =
 					}),
 				},
 			}),				
-		-- Gear
+		--	Recipes
+			i(169495),	-- Recipe: Superior Battle Potion of Agility (Rank 3)
+			i(169499),	-- Recipe: Superior Battle Potion of Strength (Rank 3)
+			i(169497),	-- Recipe: Superior Battle Potion of Intellect (Rank 3)
+			i(169498),  -- Recipe: Superior Battle Potion of Stamina (Rank 3)
+			i(169496),	-- Recipe: Superior Steelskin Potion (Rank 3)
+		--	Gear
 			i(170116),	-- Darkened Slicer
 			i(169402),	-- Deeptide Amice
 			i(169403),	-- Deeptide Cinch

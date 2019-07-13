@@ -358,6 +358,7 @@ _.NeverImplemented =
 		q(55478),	-- Slimy Cocoon opened (32.9, 39.8)
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
 		q(56604),	-- Alga the Eyeless first kill
+		q(56603),	-- Allseer Oma'kil first kill
 		q(56602),	-- Anemonar first kill
 		q(56615),	-- Amethyst Spireshell first kill
 		q(56614),	-- Blightlight first kill

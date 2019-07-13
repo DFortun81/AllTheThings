@@ -1815,6 +1815,7 @@ _.Zones =
 				["crs"] = { -- not sure if there are any other bosses that get summoned
 					153306,	-- Azsh'ari Leviathan
 					153308,	-- Fury of Azshara
+					153307,	-- Unleashed Arcanofiend
 				},
 				["g"] = {
 					ach(13763),	-- Back to the Depths!

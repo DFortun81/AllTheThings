@@ -25,9 +25,7 @@ _.Zones =
 				},
 			}),
 			n(152416, {	-- Allseer Oma'kil
-				["allianceQuestID"] = 56280,
-				--["allianceQuestID"] = 56603,
-				["hordeQuestID"] = 56280,
+				["questID"] = 56280,
 				["coord"] = { 65.4, 36.5, 1355 },
 				["isDaily"] = true,
 				["g"] = {
@@ -81,6 +79,16 @@ _.Zones =
 							}),
 						},
 					}),
+					i(170183, {	-- Reefwalker Bark
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation.",
+						["repeatable"] = true,
+						["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
+						["g"] = {
+							crit(39, {	-- Reefwalker Bark
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
+					}),
 				},
 			}),
 			n(150191, {	-- Avarius
@@ -106,6 +114,16 @@ _.Zones =
 					crit(5, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170177, {	-- Exposed Fish
+						crit(45, {	-- Exposed Fish
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
+					i(170179, {	-- Snapdragon Scent Gland
+						crit(43, {	-- Snapdragon Scent Gland
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152712, {	-- Blindlight (Verified: Pr3vention)
@@ -124,6 +142,15 @@ _.Zones =
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
+					i(170191, {	-- Skeletal Hand
+						["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+					--	didn't trigger quest completion!
+						["g"] = {
+							crit(31, {	-- Skeletal Hand
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
+					}),
 				},
 			}),
 			n(149653, {	-- Carnivorous Lasher -- to spawn him, it procs quest 55366? verify IDs
@@ -136,6 +163,7 @@ _.Zones =
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
+					i(169611),	-- Recipe: Zin'anthid (Rank 2)
 				},
 			}),
 			n(152464, {	-- Caverndark Terror
@@ -227,6 +255,11 @@ _.Zones =
 					crit(11, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170188, {	-- Barnacled Bag of Goods
+						crit(34, {	-- Barnacled Bag of Goods
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 				},
 			}),
 			n(152555, {	-- Elderspawn Nalaada
@@ -236,6 +269,11 @@ _.Zones =
 				["g"] = {
 					crit(12, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170167, {	-- Eel Filet
+						crit(51, {	-- Eel Filet
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
 					}),
 					i(169359, {	-- Spawn of Nalaada (PET!)
 						crit(1, {	-- Spawn of Nalaada
@@ -303,6 +341,16 @@ _.Zones =
 							}),
 						},
 					}),
+					i(170183, {	-- Reefwalker Bark
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation.",
+						["repeatable"] = true,
+						["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
+						["g"] = {
+							crit(39, {	-- Reefwalker Bark
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
+					}),
 				},
 			}),
 			n(152323, {	-- King Gakula
@@ -314,6 +362,14 @@ _.Zones =
 					crit(16, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170190, {	-- Mardivas' Bag of Containing
+						crit(32, {	-- Mardivas' Bag of Containing
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+						i(169332),	-- Strange Mineralized Water
+						i(169334),	-- Strange Oceanic Sediment
+						i(169333),	-- Strange Volcanic Rock
+					}),
 					i(169371, {	-- Murgle (PET!)
 						crit(19, {	-- Murgle
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -324,6 +380,7 @@ _.Zones =
 			n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
 				["questID"] = 56916,	-- triggered upon looting.  can also trigger 55427 and 57082 upon looting.  possible separate manapearl + benthic trigger?
 				-- 55427 & 56916 = manapearls only
+				-- 57082 = benthic only
 				["isDaily"] = true,
 				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 				["g"] = {
@@ -371,6 +428,17 @@ _.Zones =
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
+					i(170171, {	-- Giant Crab Leg
+						["allianceQuestID"] = 57248,	-- Giant Crab Leg
+						["hordeQuestID"] = 56973,	-- Giant Crab Leg
+						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation.",
+						["repeatable"] = true,
+						["g"] = {
+							crit(49, {	-- Giant Crab Leg
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
+					}),
 				},
 			}),
 			n(152397, {	-- Oronu
@@ -388,6 +456,16 @@ _.Zones =
 						["questID"] = 56969,
 						["g"] = {
 							crit(38, {	-- Ancient Reefwalker Bark
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
+					}),
+					i(170183, {	-- Reefwalker Bark
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation.",
+						["repeatable"] = true,
+						["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
+						["g"] = {
+							crit(39, {	-- Reefwalker Bark
 								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 							}),
 						},
@@ -618,6 +696,11 @@ _.Zones =
 					crit(28, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
+					i(170167, {	-- Eel Filet
+						crit(51, {	-- Eel Filet
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
+					}),
 					i(170187, {	-- Shadescale (TOY!)
 						crit(35, {	-- Shadescale
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -786,6 +869,16 @@ _.Zones =
 							}),
 						},
 					}),
+					i(170183, {	-- Reefwalker Bark
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation.",
+						["repeatable"] = true,
+						["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
+						["g"] = {
+							crit(39, {	-- Reefwalker Bark
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
+					}),
 				},
 			}),
 			n(151719, {	-- Voice in the Deeps -- TODO:: add description on how to actually release it
@@ -794,6 +887,11 @@ _.Zones =
 				["g"] = {
 					crit(37, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
+					}),
+					i(170186, {	-- Abyss Pearl
+						crit(36, {	-- Abyss Pearl
+							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+						}),
 					}),
 				},
 			}),
