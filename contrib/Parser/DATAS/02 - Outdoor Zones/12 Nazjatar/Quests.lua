@@ -949,6 +949,14 @@ _.Zones =
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["isBreadcrumb"] = true,
 			}),
+			q(56149, {	-- Feed Them All
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 55.6, 47.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154235,	-- Harvester Akaro
+			}),
 			q(55661, {	-- Fighting Venomous With Venom -- TODO:: verify sourceQuest
 				["qg"] = 153777,	-- Cando Mikfin
 				["coord"] = { 64.5, 48.5, 1355 },
@@ -1396,7 +1404,11 @@ _.Zones =
 				},
 				["coords"] = {
 					{ 39.8, 54.1, 1355 },	-- Alliance
-					{ 47.4, 63.2, 1355 },	-- (H)
+					{ 47.4, 63.2, 1355 },	-- Horde
+				},
+				["sourceQuests"] = {
+					56156,	-- A Tempered Blade (A)
+					55500,	-- Save a Friend (H)
 				},
 			}),
 			q(55727, {	-- Requisition: A Few Flotsam
@@ -1418,7 +1430,7 @@ _.Zones =
 				["isDaily"] = true,
 				["qgs"] = {
 					153591,	-- Mikah Brewbelly (A)
-					151635,	-- Slen Darkroe
+					151635,	-- Slen Darkroe (H)
 				},
 				["coords"] = {
 					{ 40.0, 55.6, 1355 },	-- Alliance

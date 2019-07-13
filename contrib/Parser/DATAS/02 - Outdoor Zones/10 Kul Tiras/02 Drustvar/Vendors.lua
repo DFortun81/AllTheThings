@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			n(-2, {	-- Vendors
 				n(142197, {	-- Nigel Rifthold <Adventurer's Society>
@@ -27,7 +27,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary> [Alliance]
+				n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(160541),	-- Order of Embers Tabard
@@ -67,7 +67,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(138021, {	-- Sally Boltwrench <Repairs> [Horde]
+				n(138021, {	-- Sally Boltwrench <Repairs>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(23596),	-- Plans: Adamantite Breastplate

@@ -295,6 +295,16 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56010, {	-- Runelocked Chest
+				["lvl"] = 120,
+				["collectible"] = false,
+				["sourceQuest"] = 56248,	-- Treasure Tale
+				["g"] = {
+					crit(16, {	-- Medium Runelocked Chest: Blue
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
+				},
+			}),
 			q(56011, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["collectible"] = false,
