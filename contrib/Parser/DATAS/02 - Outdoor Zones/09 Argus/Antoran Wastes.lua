@@ -990,20 +990,14 @@ _.Zones =
 						q(48830),	-- Inquisitor Vethroz
 						q(48983),	-- Mining Regulation
 						q(49057),	-- Minixis
-						q(48875),	-- Mix It Up
 						q(48783),	-- Nobody Expects Them
 						q(49058),	-- One-of-Many
 						q(49056),	-- Pilfer
-						q(48958),	-- Ritual Interruption
-						q(48662),	-- Short Fuses
 						q(48514),	-- Slumbering Behemoths
 						q(48691),	-- Soul Chain
-						q(48360),	-- Supplies Needed: Fiendish Leather
-						q(48374),	-- Supplies Needed: Lightweave Cloth
 						q(48640),	-- The Immortal Squadron
 						q(48870),	-- The Many-Faced Devourer
 						q(48827),	-- Varga
-						q(49053),	-- Watcher
 						q(48836),	-- Watcher Aival
 						q(48624),	-- Who Let The Dogs Out?
 						q(48349),	-- Work Order: Empyrium
@@ -1059,6 +1053,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48875, {	-- Mix It Up
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48467, {	-- Puscilla
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1067,11 +1065,27 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48958, {	-- Ritual Interruption
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48526, {	-- Scuttled
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48662, {	-- Short Fuses
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48358, {	-- Supplies Needed: Empyrium
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48360, {	-- Supplies Needed: Fiendish Leather
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48374, {	-- Supplies Needed: Lightweave Cloth
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1084,6 +1098,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48465, {	-- Vrax'thul
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(49053, {	-- Watcher
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

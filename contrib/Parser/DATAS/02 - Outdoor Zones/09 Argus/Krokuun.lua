@@ -1109,6 +1109,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(47624, {	-- Bury It
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48511, {	-- Commander Endaxis
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1137,6 +1141,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48284, {	-- Reap the Fields
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(47542, {	-- Siegemaster Voraan
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1146,6 +1154,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(47563, {	-- Spirits of the Fallen
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48338, {	-- Supplies Needed: Astral Glory
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1166,6 +1178,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(47625, {	-- The Ritual We Share
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48091, {	-- Vagath the Betrayed
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

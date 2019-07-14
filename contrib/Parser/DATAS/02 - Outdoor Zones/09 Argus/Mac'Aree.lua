@@ -1095,8 +1095,6 @@ _.Zones =
 						q(49047),	-- Bucky
 						q(48727),	-- Captain Faruq
 						q(49051),	-- Corrupted Blood of Argus
-						q(48722),	-- Feasel the Muffin Thief
-						q(48103),	-- Gatekeeper's Review: Tenacity
 						q(49049),	-- Gloamwing
 						q(48731),	-- Herald of Chaos
 						q(48737),	-- Instructor Tarahna
@@ -1105,8 +1103,6 @@ _.Zones =
 						q(48102),	-- Scale Samples
 						q(47858),	-- Security: Engaged
 						q(49050),	-- Shadeflicker
-						q(47833),	-- Shadowcaster Voruun
-						q(48936),	-- Slithon the Last
 						q(48730),	-- Sorolis the Ill-Fated
 						q(48728),	-- Umbraliss
 						q(48094),	-- Void Clot
@@ -1141,6 +1137,10 @@ _.Zones =
 						["filterID"] = 101,	-- Battle Pet
 						["collectible"] = false,
 					}),
+					q(48722, {	-- Feasel the Muffin Thief
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(47135, {	-- For Their Own Good
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1150,6 +1150,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48097, {	-- Gatekeeper's Review: Cunning
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48103, {	-- Gatekeeper's Review: Tenacity
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1209,7 +1213,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(47833, {	-- Shadowcaster Voruun
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48740, {	-- Skreeg the Devourer
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48936, {	-- Slithon the Last
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
