@@ -216,7 +216,8 @@ _.NeverImplemented =
 		--    Legion     --
 		-------------------
 		q(45533),	-- Legion Dungeon Reward Quest
-		
+		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
+		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		-------------------
 		--      BFA      --
 		-------------------

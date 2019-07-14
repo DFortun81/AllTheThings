@@ -415,7 +415,9 @@ _.Zones =
 					["qg"] = 103156,	-- Altruis the Sufferer
 				}),
 				q(39051,  {	-- By Any Means
-					["classes"] = { 12 },
+					["sourceQuests"] = { 40819 },	-- Making Arrangements
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 65.3, 66.9, 627 },
 					["qg"] = 94902,	-- Kayn Sunfury
 				}),
 				q(39047,  {	-- Call of the Illidari
@@ -423,7 +425,7 @@ _.Zones =
 					["qg"] = 99343,	-- Kor'vas Bloodthorn
 				}),
 				q(39261,  {	-- Call of the Illidari
-					["classes"] = { 12 },
+					["classes"] = { 12 },	-- Demon Hunter
 					["qg"] = 99343,	-- Kor'vas Bloodthorn
 				}),
 				q(40392,  {	-- Call of the Marksman
@@ -560,8 +562,9 @@ _.Zones =
 					},
 				}),
 				q(41220,  {	-- Down to Azsuna
-					["sourceQuests"] = { 39718 },	-- Paradise Lost [Demon Hunter]
+					["sourceQuests"] = { 39718 },	-- Paradise Lost (Demon Hunter)
 					["isBreadcrumb"] = true,
+					["coord"] = { 72.0, 45.4, 627 },
 					["qg"] = 41220,	-- Archmage Khadgar
 				}),
 				q(46103,  {	-- Dread Infiltrators
@@ -590,7 +593,9 @@ _.Zones =
 					["qg"] = 99262,	-- Jace Darkweaver
 				}),
 				q(42869,  {	-- Eternal Vigil
-					["classes"] = { 12 },
+					["sourceQuests"] = { 39247 },	-- The Hunt
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 74.3, 46.2, 627 },
 					["qg"] = 102799,	-- Kor'vas Bloodthorn
 				}),
 				q(43945,  {	-- Expanding Your Horizons
@@ -903,7 +908,9 @@ _.Zones =
 					["qg"] = 90417,	-- Archmage Khadgar
 				}),
 				q(40819,  {	-- Making Arrangements
-					["classes"] = { 12 },
+					["sourceQuests"] = { 40814 },	-- The Power to Survive
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 74.5, 48.7, 627 },
 					["qgs"] = { 99247, 108572 },	-- Kayn Sunfury
 				}),
 				q(41120,  {	-- Making Arrangements
@@ -1017,9 +1024,6 @@ _.Zones =
 					["classes"] = { 4 },
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
-				q(39718,  {	-- Paradise Lost
-					["isBreadcrumb"] = true,
-				}),
 				q(37666,  {	-- Picking a Fight
 					["sourceQuests"] = { 43508 },	-- The Captive Spymaster
 					["classes"] = { 4 },
@@ -1118,7 +1122,9 @@ _.Zones =
 				}),
 			--	q(44917)	-- Return to Karazhan: The Tower of Power -- mission board
 				q(41221,  {	-- Return to Mardum
-					["classes"] = { 12 },
+					["sourceQuests"] = { 42872 },	-- Securing the Way
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 95.0, 65.7, 627 },
 					["qg"] = 109295,	-- Matron Mother Malevolence
 				}),
 				q(41033,  {	-- Return to Mardum
@@ -1138,6 +1144,13 @@ _.Zones =
 				q(43007,  {	-- Return to the Chamber of Shadows
 					["classes"] = { 4 },
 					["qg"] = 112679,	-- Valeera Sanguinar
+				}),
+				q(44087, {	-- Return to the Fel Hammer
+					["sourceQuests"] = { 41069 },	-- Direct Our Wrath
+					["isBreadcrumb"] = true,
+					["classes"] = { 12 },	-- Demon Hunter
+					["lvl"] = 101,
+					["qg"] = 112666,	-- Asha Ravensong
 				}),
 				q(42663,  {	-- Rise, Champions
 					["sourceQuests"] = { 42175 },	-- Growing Power
@@ -1217,7 +1230,9 @@ _.Zones =
 					["qg"] = 116175,	-- Karam Magespear
 				}),
 				q(42872,  {	-- Securing the Way
-					["classes"] = { 12 },
+					["sourceQuests"] = { 42869 },	-- Eternal Vigil
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 95.3, 65.1, 627 },
 					["qg"] = 109196,	-- Jace Darkweaver
 				}),
 				q(42000,  {	-- Seeker of Truth
@@ -1379,10 +1394,6 @@ _.Zones =
 				}),
 				q(41119,  {	-- The Hunt
 					["classes"] = { 12 },
-					["qg"] = 103156,	-- Altruis the Sufferer
-				}),
-				q(39247,  {	-- The Hunt
-					["classes"] = { 12 },
 					["qg"] = 94902,	-- Kayn Sunfury
 				}),
 				q(41415,  {	-- The Hunter's Call
@@ -1467,7 +1478,9 @@ _.Zones =
 					["qg"] = 99254,	-- Altruis the Sufferer
 				}),
 				q(40814,  {	-- The Power to Survive
-					["classes"] = { 12 },
+					["sourceQuests"] = { 39261 },	-- Call of the Illidari
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 74.5, 48.7, 627 },
 					["qg"] = 99247,	-- Kayn Sunfury
 				}),
 				q(43249,  {	-- The Raven's Eye

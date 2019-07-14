@@ -7,6 +7,7 @@ _.ExpansionFeatures =
 		cl(12, {	-- Mardum, The Shattered Abyss (Demon Hunter)
 			["lvl"] = 98,
 			["mapID"] = 720,	-- Mardum, The Shattered Abyss (Demon Hunter)
+			["maps"] = { 721 },	-- Lower Command Center
 			["g"] = {
 				n(-498, {	-- Twisting Nether Class Hall Ability
 					["questID"] = 44707,
@@ -46,6 +47,50 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(-17, {	-- Quests
+					-- confirmed/sourced
+					q(41069, {	-- Direct Our Wrath (Kayn)
+						["sourceQuests"] = { 41067 },	-- Time is of the Essence
+						["classes"] = { 12 },	-- Demon Hunter
+						["coord"] = { 59.5, 58.0, 720 },
+						["qg"] = 95240,	-- Kayn Sunfury
+					}),
+					q(39718, {	-- Paradise Lost
+						["sourceQuests"] = {
+							41099,	-- Direct Our Wrath (Altruis)
+							41069,	-- Direct Our Wrath (Kayn)
+						},
+						["classes"] = { 12 },	-- Demon Hunter
+						["qg"] = 98613,	-- Scouting Map
+					}),
+					q(41062, {	-- Spoils of Victory
+						["sourceQuests"] = { 41037 },	-- Unbridled Power
+						["classes"] = { 12 },	-- Demon Hunter
+						["coord"] = { 58.6, 58.9, 720 },
+						["qg"] = 95240,	-- Kayn Sunfury
+					}),
+					q(41066, {	-- The Hunter's Gaze
+						["sourceQuests"] = { 41062 },	-- Spoils of Victory
+						["classes"] = { 12 },	-- Demon Hunter
+						["coord"] = { 59.4, 50.4, 721 },
+						["qg"] = 95238,	-- Allari the Souleater
+					}),
+					q(41067, {	-- Time is of the Essence
+						["sourceQuests"] = { 41066 },	-- The Hunter's Gaze
+						["classes"] = { 12 },	-- Demon Hunter
+						["coord"] = { 58.8, 51.2, 721 },
+						["qg"] = 95238,	-- Allari the Souleater
+					}),
+					q(41037, {	-- Unbridled Power
+						["sourceQuests"] = { 41221 },	-- Return to Mardum
+						["classes"] = { 12 },	-- Demon Hunter
+						["coord"] = { 57.7, 68.4, 720 },
+						["qg"] = 95240,	-- Kayn Sunfury
+					}),
+
+
+
+
+					-- unconfirmed/unsourced
 					q(44057),	-- A "Noble" Event
 					q(42810),	-- A Final Offer
 					q(43412),	-- A Hero's Weapon
@@ -162,7 +207,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42681 },	-- Loramus, Is That You?
 					}),
 					q(45173),	-- Desperate Times
-					q(41069),	-- Direct Our Wrath [Kayn]
 					q(41099),	-- Direct Our Wrath [Altruis
 					q(43552),	-- Eye of Azshara
 					q(44270),	-- Eye of Azshara
@@ -173,7 +217,9 @@ _.ExpansionFeatures =
 					q(42808),	-- Green Adepts
 					q(43186),	-- I Am the Slayer!
 					q(42510),	-- Immortal Soul
-					q(44383),	-- In Pursuit of Power
+					q(44383, {	-- In Pursuit of Power
+						["lvl"] = 102,
+					}),
 					q(44379),	-- In Pursuit of Power
 					q(42665),	-- Into Our Ranks
 					q(39741),	-- Into Our Ranks
@@ -200,13 +246,6 @@ _.ExpansionFeatures =
 					q(44694),	-- One Battle at a Time
 					q(44214),	-- One More Thing...
 					q(45329),	-- Operation: Portals
-					q(39718, {	-- Paradise Lost
-						["qg"] = 98613,	-- Scouting Map
-						["sourceQuests"] = {
-							41099,	-- Direct Our Wrath [Altruis]
-							41069,	-- Direct Our Wrath [Kayn]
-						},
-					}),
 					q(42669),	-- Preparations for Invasion
 					q(46266),	-- Return of the Slayer
 					q(44917),	-- Return to Karazhan: The Tower of Power
@@ -216,21 +255,17 @@ _.ExpansionFeatures =
 						["qg"] = 112666,	-- Asha Ravensong
 						--["sourceQuests"] = { },	-- DH was already on this point
 					}),
-					q(44087, {	-- Return to the Fel Hammer
-						["qg"] = 112666,	-- Asha Ravensong
-						--["sourceQuests"] = { },	-- DH was already on this point
-					}),
 					q(42670, {	-- Rise, Champions [Altruis]
-						["qg"] = 103025,	-- Battlelord Gaardoun
-						["sourceQuests"] = { 44087 },	-- Return to the Fel Hammer [Note: I *believe* this is the right ID, I forgot to check]
-					}),
-					q(42671, {	-- Rise, Champions [Kayn]
 						["qg"] = 103025,	-- Battlelord Gaardoun
 						["sourceQuests"] = { 42666 },	-- Return to the Fel Hammer [Note: I *believe* this is the right ID, I forgot to check]
 					}),
+					q(42671, {	-- Rise, Champions [Kayn]
+						["sourceQuests"] = { 44087 },	-- Return to the Fel Hammer
+						["lvl"] = 102,
+						["qg"] = 103025,	-- Battlelord Gaardoun
+					}),
 					q(45330),	-- Scouting Party
 					q(42802),	-- Securing Mardum
-					q(41062),	-- Spoils of Victory
 					q(41070),	-- Spoils of Victory
 					q(45301),	-- Taking Charge
 					q(42593),	-- The Arcane Way
@@ -242,7 +277,6 @@ _.ExpansionFeatures =
 					q(42775),	-- The Crux of the Plan							
 					q(39247),	-- The Hunt
 					q(41119),	-- The Hunt
-					q(41066),	-- The Hunter's Gaze
 					q(42809),	-- The Invasion of Niskara
 					q(42920),	-- The Invasion of Niskara
 					q(44276),	-- The Lord of Black Rook Hold
@@ -258,12 +292,10 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42670 },	-- Rise, Champions [Altruis]
 					}),
 					q(41096),	-- Time is of the Essence
-					q(41067),	-- Time is of the Essence
 					q(45172),	-- To Battle!
 					q(46334),	-- To Fel and Back
 					q(42776),	-- Two Worthies
 					q(41060),	-- Unbridled Power
-					q(41037),	-- Unbridled Power
 					q(42131),	-- Unexpected Visitors
 					q(44224),	-- Unleashing our Wrath
 					q(44261),	-- Vault of the Wardens

@@ -6,6 +6,32 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- -- Tiragarde Sound
 			n(-4, {	-- Achievement
+				ach(12473, {	-- A Sound Plan
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1, {	-- The Ashvane Trading Company
+							["sourceQuests"] = { 50531 },	-- Under Their Noses
+						}),
+						crit(2, {	-- Freehold
+							["sourceQuests"] = { 49404 },	-- Fairwind's "Friends"
+						}),
+						crit(3, {	-- Defenders of Daelin's Gate
+							["sourceQuests"] = { 49740 },	-- Cease Fire!
+						}),
+						crit(4, {	-- Enemies Within
+							["sourceQuests"] = { 50972 },	-- Proudmoore's Parley
+						}),
+						crit(5, {	-- The Shadow Over Anglepoint
+							["sourceQuests"] = { 49302 },	-- The Deadliest Catch
+						}),
+						crit(6, {	-- The Norwington Estate
+							["sourceQuests"] = { 48089 },	-- Mountain Sounds
+						}),
+						crit(7, {	-- Castaways and Cutouts
+							["sourceQuests"] = { 48421 },	-- Blood in the Tides
+						}),
+					},
+				}),
 				ach(12939),		-- Adventurer of Tiragarde Sound
 				ach(12852, {	-- Treasures of Tiragarde Sound
 					o(279750, {	-- Hay Covered Chest [Localized]

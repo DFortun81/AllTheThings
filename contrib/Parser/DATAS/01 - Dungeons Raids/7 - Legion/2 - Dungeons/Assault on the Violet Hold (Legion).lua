@@ -6,7 +6,18 @@ _.Instances = { tier(7, {	-- Legion
 	inst(777, {	-- Assault of Violet Hold (Legion)
 		["lvl"] = 105,
 		["mapID"] = 732,
-		["groups"] = {
+		["maps"] = {
+			723,	-- The Violet Hold (used in Demon Hunter Artifact questline)
+		},
+		["g"] = {
+			n(-17, {	-- Quests
+				q(39247,  {	-- The Hunt
+					["sourceQuests"] = { 39051 },	-- By Any Means
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 50.5, 69.4, 723 },
+					["qg"] = 103156,	-- Altruis the Sufferer
+				}),
+			}),
 			d(1, {	-- Normal
 				cr(101995, e(1693, {	-- Festerface
 					i(137438),	-- Band of Decaying Rubies
