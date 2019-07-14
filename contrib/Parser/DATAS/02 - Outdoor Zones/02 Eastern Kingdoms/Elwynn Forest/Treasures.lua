@@ -9,6 +9,7 @@ _.Zones =
 				o(310709, {	-- Waterlogged Chest
 					["questID"] = 54131,
 					["coord"] = { 32.3, 63.6, 37 },
+					["lvl"] = 110,
 					["g"] = {
 						i(3678),	-- Recipe: Crocolisk Steak
 						i(7997, {	-- Red Defias Mask

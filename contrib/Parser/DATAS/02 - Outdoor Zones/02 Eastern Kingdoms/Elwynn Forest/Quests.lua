@@ -309,6 +309,7 @@ _.Zones =
 				}),
 				q(42740, {	-- The Battle For Broken Shore
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 98,
 					["g"] = {
 						i(139389, {	-- Charred Locket
 							["description"] = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item.  You will then go to 85, 67 in Elywnn Forest located at the Eastvale Logging Camp.  From there you will go to the bedroom on the second floor to talk to Alaina.  After talking to her leave (log or swap zones) and then come back to her to retrieve the item.",

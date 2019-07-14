@@ -374,6 +374,7 @@ _.NeverImplemented =
 		q(56610),	-- Garnetscale first kill
 		q(56597),	-- Iridescent Glimmershell first kill
 		q(56596),	-- Kelpwillow first kill
+		q(57082),	-- Lost Algan Benthic loot
 		q(56609),	-- Mirecrawler first kill
 		q(56608),	-- Needlespine first kill
 		q(56595),	-- Oronu first kill
