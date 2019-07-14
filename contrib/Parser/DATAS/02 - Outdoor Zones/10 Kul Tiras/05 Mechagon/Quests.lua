@@ -561,6 +561,19 @@ _.Zones =
 					["coord"] = { 59.1, 55.1, 1462 },
 					["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				}),
+				q(56756, {	-- My Punkin, the Action Figure
+					["qg"] = 153701,	-- Grizzek Fizzwrench
+					["coord"] = { 72.0, 34.2, 1462 },
+					["minReputation"] = EXALTED,
+					["description"] = "Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",
+					["g"] = {
+						i(169876, {	-- Azeroth Mini: Sapphronetta
+							crit(14, {	-- Sapphronetta
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+					},
+				}),
 				q(56532, {	-- Nuke 'Em Norbit
 					["qg"] = 153701,	-- Dashman Hammerall
 					["coord"] = { 80.8, 18.8, 1462 },
