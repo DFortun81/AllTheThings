@@ -27,7 +27,7 @@ _.Zones =
 					q(45969),	-- Defense of the Ancient
 					q(46829),	-- Elemental Abuse
 					q(46288),	-- Everyone to the Front
-					q(45744),	-- Fall of the Felskorn
+					
 					q(46126),	-- Fel-Corrupted Feathers
 					q(46077),	-- Felbound Spirits
 					q(46072),	-- Full Fel
@@ -113,6 +113,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(45878, {	-- Exterminating with Impunity
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45744, {	-- Fall of the Felskorn
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

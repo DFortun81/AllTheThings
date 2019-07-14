@@ -49,7 +49,6 @@ _.Zones =
 				q(41280),	-- Huge Runescale Koi
 				q(41617),	-- Huge Runescale Koi
 				q(41538),	-- Iridescent Starlight Roses
-				q(42169),	-- Left for Dead
 				q(44813),	-- Ley Line Interference
 				q(43583),	-- Life Finds a Way
 				q(45032),	-- Like the Wind
@@ -60,12 +59,10 @@ _.Zones =
 				q(41461),	-- Malevolent Felslate Outcropping
 				q(43513),	-- Na'zak the Fiend
 				q(41305),	-- Nightborne Herb Trader
-				q(44857),	-- Not There, Not Then, Not Forever
 				q(41353),	-- Odious Felslate Outcropping
 				q(42830),	-- Pest Management
 				q(41357),	-- Primordial Felslate Deposits
 				q(41349),	-- Rock-Hard Crab Chitin
-				q(44812),	-- Running on Empty
 				q(41354),	-- Shattered Felslate Seams
 				q(41558),	-- Slab of Bacon
 				q(41557),	-- Slab of Bacon
@@ -191,6 +188,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42169, {	-- Left for Dead
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43774, {	-- Ley Race
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -213,7 +214,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44857, {	-- Not There, Not Then, Not Forever
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42830, {	-- Pest Management
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44812, {	-- Running on Empty
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -2614,7 +2614,7 @@ _.Zones =
 							q(41490),	-- Brimstone Destroyer
 							q(41489),	-- Brimstone Destroyer
 							q(41488),	-- Brimstone Destroyer
-							q(41938),	-- Brothers of Skovald
+							
 							q(46011),	-- Colossal Infernal
 							q(46216),	-- Congealed Corruption
 							q(46179),	-- Crushing the Legion
@@ -2747,6 +2747,10 @@ _.Zones =
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
+					}),
+					q(41938, {	-- Brothers of Skovald
+						["lvl"] = 110,
+						["collectible"] = false,
 					}),
 					q(41950, {	-- Cry More Thunder!
 						["lvl"] = 110,

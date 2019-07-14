@@ -2188,6 +2188,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(43758, {	-- Wherever I May Gloam
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(42190, {	-- Wildlife Conservationist
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
