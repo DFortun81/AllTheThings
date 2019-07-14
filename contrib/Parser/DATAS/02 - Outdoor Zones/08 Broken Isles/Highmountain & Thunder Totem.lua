@@ -2761,7 +2761,6 @@ _.Zones =
 					q(41208),	-- Brimstone Destroyer
 					q(41209),	-- Brimstone Destroyer
 					q(41210),	-- Brimstone Destroyer
-					q(41706),	-- Briny Waters
 					q(41233),	-- Bristled Bear Skin
 					q(41526),	-- Bushy Foxflower
 					q(41238),	-- Calcified Wormscales
@@ -2843,7 +2842,6 @@ _.Zones =
 					q(46190),	-- Ulgrom
 					q(41011),	-- Umbralshard Rituals
 					q(41428),	-- Unstable Portal
-					q(41824),	-- WANTED: Arru
 					q(41836),	-- WANTED: Bodash the Hoarder
 					q(43616),	-- WANTED: Bodash the Hoarder
 					q(41828),	-- WANTED: Bristlemaul
@@ -2876,6 +2874,10 @@ _.Zones =
 					q(46279),	-- Zargrom
 --]]
 					q(41705, {	-- Assault on Thunder Totem
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41706, {	-- Briny Waters	
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -3013,6 +3015,10 @@ _.Zones =
 						},
 					}),
 					q(44289, {	-- WANTED: Arru
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41824, {	-- WANTED: Arru
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

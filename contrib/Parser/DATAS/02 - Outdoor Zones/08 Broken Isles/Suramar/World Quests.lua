@@ -48,7 +48,6 @@ _.Zones =
 				q(41616),	-- Huge Runescale Koi
 				q(41280),	-- Huge Runescale Koi
 				q(41617),	-- Huge Runescale Koi
-				q(44805),	-- In the Thick of It
 				q(41538),	-- Iridescent Starlight Roses
 				q(42169),	-- Left for Dead
 				q(44813),	-- Ley Line Interference
@@ -68,7 +67,6 @@ _.Zones =
 				q(41349),	-- Rock-Hard Crab Chitin
 				q(44812),	-- Running on Empty
 				q(41354),	-- Shattered Felslate Seams
-				q(44815),	-- Sick of the Sycophants
 				q(41558),	-- Slab of Bacon
 				q(41557),	-- Slab of Bacon
 				q(41262),	-- Slab of Bacon
@@ -81,9 +79,7 @@ _.Zones =
 				q(43435),	-- The Battle Rages On
 				q(42089),	-- The Fallen Ones
 				q(42082),	-- The Shattered Locus
-				q(43814),	-- Unspeakable Collaborators
 				q(41346),	-- Velvety Stalker Hide
-				q(44017),	-- WANTED: Apothecary Faldren
 				q(44032),	-- WANTED: Apothecary Faldren
 				q(42796),	-- WANTED: Broodmother Shu'malis
 				q(44186),	-- WANTED: Broodmother Shu'malis
@@ -191,6 +187,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44805, {	-- In the Thick of It
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43774, {	-- Ley Race
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -213,6 +213,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42830, {	-- Pest Management
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44799, {	-- Safe Keeping
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -222,6 +226,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(42725, {	-- Sharing the Wealth
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44815, {	-- Sick of the Sycophants
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -277,6 +285,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43814, {	-- Unspeakable Collaborators
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41667, {	-- Vantus Rune Work Order: Xavius
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -284,6 +296,10 @@ _.Zones =
 					["g"] = {
 						i(137771),	-- Vantus Rune Technique: Xavius [Rank 3]
 					},
+				}),
+				q(44017, {	-- WANTED: Apothecary Faldren
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(44013, {	-- WANTED: Guardian Thor'el
 					["lvl"] = 110,

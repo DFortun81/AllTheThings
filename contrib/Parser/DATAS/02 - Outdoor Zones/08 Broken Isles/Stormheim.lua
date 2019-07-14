@@ -2620,7 +2620,6 @@ _.Zones =
 							q(46179),	-- Crushing the Legion
 							q(43745),	-- Culling the Storm
 							q(42820),	-- DANGER: Aegir Wavecrusher
-							q(42785),	-- DANGER: Den Mother Ylva
 							q(42806),	-- DANGER: Fjorlag, the Grave's Chill
 							q(42798),	-- DANGER: Huntress Estrid
 							q(42964),	-- DANGER: Lagertha
@@ -2658,7 +2657,6 @@ _.Zones =
 							q(41535),	-- Prickly Fjarnskaggl
 							q(41460),	-- Primal Leystone Outcropping
 							q(41536),	-- Pungent Fjarnskaggl
-							q(42177),	-- Reclaiming Morheim
 							q(41276),	-- Rocket Boot Fishing
 							q(43722),	-- Sacred Bones
 							q(42270),	-- Scourge of the Skies
@@ -2667,7 +2665,6 @@ _.Zones =
 							q(41555),	-- Slab of Bacon
 							q(41556),	-- Slab of Bacon
 							q(41261),	-- Slab of Bacon
-							q(41278),	-- Slippery Stormrays
 							q(41343),	-- Solid Crabshell Fragment
 							q(45390),	-- Souls of the Vrykul
 							q(41445),	-- Stormy Leystone Deposits
@@ -2676,9 +2673,7 @@ _.Zones =
 							q(41317),	-- Supplies Needed: Leystone
 							q(41345),	-- Supplies Needed: Stormscales
 							q(41984),	-- The Creeping Mists
-							q(41949),	-- The Drekirjar Return
 							q(43721),	-- The Helarjar Have Surfaced
-							q(42013),	-- The Helmouth
 							q(43771),	-- The Magic of Flight
 							q(42269),	-- The Soultakers
 							q(46264),	-- Their Eyes Are Upon Us
@@ -2765,6 +2760,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(42785, {	-- DANGER: Den Mother Ylva
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(43710, {	-- Dark Runes
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2795,6 +2794,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(42243, {	-- Halls of Valor: Deeds of the Past
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(42240, {	-- Halls of Valor: Ponderous Poaching
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -2865,6 +2868,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(42177, {	-- Reclaiming Morheim
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41926, {	-- Returning Champion
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2881,7 +2888,20 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(41278, {	-- Slippery Stormrays
+						["lvl"] = 110,
+						["collectible"] = false,
+						["requireSkill"] = 356,	-- Fishing
+					}),
 					q(43827, {	-- Stormwing the Portals
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41949, {	-- The Drekirjar Return
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(42013, {	-- The Helmouth
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

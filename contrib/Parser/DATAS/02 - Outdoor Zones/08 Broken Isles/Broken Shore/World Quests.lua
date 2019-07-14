@@ -14,7 +14,6 @@ _.Zones =
 					q(47061),	-- Apocron
 					q(45694),	-- Arachnicide
 					q(46104),	-- Arachnid Toxicity
-					q(45520),	-- Behind Enemy Portals
 					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
 					q(46068),	-- Brute Wrangling
@@ -31,8 +30,6 @@ _.Zones =
 					q(45744),	-- Fall of the Felskorn
 					q(46126),	-- Fel-Corrupted Feathers
 					q(46077),	-- Felbound Spirits
-					q(46933),	-- Felrglrglrglrgl
-					q(45934),	-- Fowl Play
 					q(46072),	-- Full Fel
 					q(46212),	-- Get Them Up
 					q(40390),	-- Hallowed Ground
@@ -63,7 +60,6 @@ _.Zones =
 					q(45626),	-- Set You Up the Bomb!
 					q(46945),	-- Si'vash
 					q(46360),	-- Simply Stunning
-					
 					q(46236),	-- Stonebound Soldiers
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
@@ -96,6 +92,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(45520, {	-- Behind Enemy Portals
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46073, {	-- Break Their Garrison
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -117,6 +117,14 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(47132, {	-- Fel Fire and Ice
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45934, {	-- Fowl Play
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46933, {	-- Felrglrglrglrgl
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
