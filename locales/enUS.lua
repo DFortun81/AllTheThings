@@ -524,6 +524,7 @@ AllTheThings.L = {
 		[-389] = "Interface\\Icons\\INV_MISC_KEY_13",								-- Service Entrance (Stratholme)
 		[-390] = "Interface\\Icons\\inv_misc_coinbag_special",						-- Smuggling Run!
 		[-391] = "Interface\\Icons\\achievement_guildperk_hastyhearth",				-- Stoktron Brewery (alliance)
+		[-392] = "Interface\\Icons\\achievement_guildperk_hastyhearth",				-- Hearthfire Tavern (horde)
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",					-- Tarot Cards
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",						-- Miscellaneous
 		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",					-- WoW Anniversary
@@ -1129,6 +1130,7 @@ AllTheThings.L = {
 		[-389] = "Service Entrance",											-- Service Entrance (Stratholme)
 		[-390] = "Smuggler's Den",												-- Smuggler's Den (Spires of Arak)
 		[-391] = "Stoktron Brewery",											-- Stoktron Brewery (Spires of Arak)
+		[-392] = "Hearthfire Tavern",											-- Hearthfire Tavern
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "War Chest",													-- Daily War Chest

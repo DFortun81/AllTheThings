@@ -148,6 +148,7 @@ _.NeverImplemented =
 		q(36111),	-- Spires of Arak - Flight Home
 		q(36112),	-- Spires of Arak - Flight Home
 		q(36577),	-- Spires of Arak - Flying Machine Completed after landing during "Flame On"
+		q(36184),	-- Spires of Arak - Mother Lode - triggers when you accept "The Mother Lode" quest and the crash happens
 		q(37317),	-- Spires of Arak - Talon King Ikiss killed during "The False Talon King"
 		q(35291),	-- Spires of Arak - Trading Post selected (alliance)
 		q(37316),	-- Spires of Arak - Trading Post selected (alliance)

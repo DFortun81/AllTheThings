@@ -35,6 +35,11 @@ _.Zones =
 						i(118198),	-- Steelmaw's Stompers
 					},
 				}),
+				n(80372, {	-- Echidna
+					["questID"] = 37406,
+					["coord"] = { 69.3, 53.9, 542 },
+					["isDaily"] = true,
+				}),
 				n(84890, {	-- Festerbloom
 					["questID"] = 36297,
 					["coord"] = { 54.8, 39.8, 542 },

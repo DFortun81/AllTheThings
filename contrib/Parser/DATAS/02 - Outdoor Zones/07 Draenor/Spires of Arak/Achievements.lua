@@ -8,7 +8,7 @@ _.Zones =
 			n(-4, {	-- Achievements
 				ach(9605, {		-- Arak Star
 					crit(1, {	-- The Howling Crag
-						["sourceQuest"] = 36590,
+						["sourceQuest"] = 36590,	-- The Howling Crag
 					}),
 					crit(2, {	-- Bloodmane Pridelands
 						["sourceQuest"] = 36660,	-- Bloodmane Pridelands
@@ -17,7 +17,7 @@ _.Zones =
 						["sourceQuest"] = 35649,	-- The Writhing Mire
 					}),
 					crit(4, {	-- Bladefist Hold
-						["sourceQuest"] = 36792,
+						["sourceQuest"] = 36792,	-- Bladefist Hold
 					}),
 				}),
 				ach(9433),		-- A-VOID-ance

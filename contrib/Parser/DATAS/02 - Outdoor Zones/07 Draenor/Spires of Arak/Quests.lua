@@ -6,153 +6,168 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
 			n(-17, {	-- Quests
-				n(-391, {	-- Brewery
-					q(35926, {	-- Assassin's Mark
-						["sourceQuests"] = { 35915 },	-- Attempted Murder
-						["coord"] = { 52.0, 23.5, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 83609,
-					}),
-					q(35924, {	-- Assassin's Mark
-						["sourceQuests"] = { 35907 },	-- Attempted Murder
-						["races"] = HORDE_ONLY,
-						["qg"] = 83608,	-- Dark Ranger Velonara
-					}),
-					q(35915, {	-- Attempted Murder
-						["sourceQuests"] = { 37329 },	-- Not Here, Not Now
-						["coord"] = { 39.6, 60.8, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 83549,	-- Hulda Shadowblade
-					}),
-					q(35907, {	-- Attempted Murder
-						["sourceQuests"] = { 37328 },	-- Not Here, Not Now
-						["races"] = HORDE_ONLY,
-						["qg"] = 83529,	-- Dark Ranger Velonara
-					}),
-					q(37327, {	-- Befriending the Locals
-						["sourceQuests"] = { 35286 },	-- Orders, Commander?
-						["coord"] = { 39.8, 60.8, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 81929,	-- Lieutenant Willem
-					}),
-					q(37326, {	-- Befriending the Locals
-						["sourceQuests"] = { 35277 },	-- Orders, Commander?
-						["races"] = HORDE_ONLY,
-						["qg"] = 81920,	-- Taskmaster Gornek
-					}),
-					q(37287,  {  -- Cleaning House
-						["sourceQuests"] = { 36165 },	-- No Time to Waste
-						["coord"] = { 39.5, 61.7, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 84291,	-- Kolrigg Stoktron
-						["g"] = {
-							i(119001),	-- Mystery Keg
-						},
-					}),
-					q(36023, {	-- Extrinsic Motivation
-						["sourceQuests"] = { 35926 },	-- Assassin's Mask
-						["coord"] = { 53.5, 27.5, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 83773,	-- Hulda Shadowblade
-					}),
-					q(36022, {	-- Extrinsic Motivation
-						["sourceQuests"] = { 35924 },	-- Assassin's Mask
-						["races"] = HORDE_ONLY,
-						["qg"] = 83772,	-- Dark Ranger Velonara
-					}),
-					q(36029, {	-- Gardul Venomshiv
-						["sourceQuests"] = {
-							36023,	-- Extrinsic Motivation
-							35959,	-- The Power of Poison
-						},
-						["coord"] = { 53.5, 27.5, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 83773,	-- Hulda Shadowblade
-					}),
-					q(36028, {	-- Gardul Venomshiv
-						["sourceQuests"] = {
-							36022,	-- Extrinsic Motivation
-							35947,	-- The Power of Poison
-						},
-						["races"] = HORDE_ONLY,
-						["qg"] = 83772,	-- Dark Ranger Velonara
-					}),
-					q(36165, {	-- No Time to Waste
-						["sourceQuests"] = { 36048 },	-- We Have Him Now
-						["coord"] = { 57.1, 34.4, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 83900,	-- Hulda Shadowblade
-					}),
-					q(36166, {	-- No Time to Waste
-						["sourceQuests"] = { 36047 },	-- We Have Him Now
-						["races"] = HORDE_ONLY,
-						["qg"] = 83772,	-- Dark Ranger Velonara
-					}),
-					q(37329, {	-- Not Here, Not Now
-						["sourceQuests"] = {
-							37296,	-- A Lack of Wasps
-							37327,	-- Befriending the Locals
-						},
-						["coord"] = { 43.8, 48.9, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 83463,	-- Dusk-Seer Irizzar
-					}),
-					q(37328, {	-- Not Here, Not Now
-						["sourceQuests"] = {
-							37296,	-- A Lack of Wasps
-							37326,	-- Befriending the Locals
-						},
-						["coord"] = { 43.8, 48.9, 542 },
-						["races"] = HORDE_ONLY,
-						["qg"] = 83463,	-- Dusk-Seer Irizzar
-					}),
-					q(37292,  {  -- Not In Your Army
-						["sourceQuests"] = { 36166 },	-- No Time to Waste
-						["races"] = HORDE_ONLY,
-						["qg"] = 84292,	-- Lunzul
-						["g"] = {
-							i(119001),	-- Mystery Keg
-						},
-					}),
-					q(37281, {	-- Standing United
-						["sourceQuests"] = { 36165 },	-- No Time to Waste
-						["coord"] = { 39.7, 60.9, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 88195,	-- Hulda Shadowblade
-						["g"] = {
-							follower(453),	-- Hulda Shadowblade
-						},
-					}),
-					q(37276, {	-- Standing United
-						["sourceQuests"] = { 36166 },	-- No Time to Waste
-						["races"] = HORDE_ONLY,
-						["qg"] = 88179,	-- Dark Ranger Velonara
-						["g"] = {
-							follower(453),	-- Dark Ranger Velonara
-						},
-					}),
-					q(35959, {	-- The Power of Poison
-						["sourceQuests"] = { 35926 },	-- Assassin's Mask
-						["coord"] = { 53.5, 27.5, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 83773,	-- Hulda Shadowblade
-					}),
-					q(35947, {	-- The Power of Poison
-						["sourceQuests"] = { 35924 },	-- Assassin's Mask
-						["races"] = HORDE_ONLY,
-						["qg"] = 83772,	-- Dark Ranger Velonara
-					}),
-					q(36048, {	-- We Have Him Now
-						["sourceQuests"] = { 36029 },	-- Gardul Venomshiv
-						["coord"] = { 57.1, 34.4, 542 },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 83900,	-- Hulda Shadowblade
-					}),
-					q(36047, {	-- We Have Him Now
-						["sourceQuests"] = { 36028 },	--	Gardul Venomshiv
-						["races"] = HORDE_ONLY,
-						["qg"] = 83899,	--	Dark Ranger Velonara
-					}),
+				n(-391, {	-- Stroktron Brewery
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						q(35926, {	-- Assassin's Mark
+							["sourceQuests"] = { 35915 },	-- Attempted Murder
+							["coord"] = { 52.0, 23.5, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 83609,
+						}),
+						q(35915, {	-- Attempted Murder
+							["sourceQuests"] = { 37329 },	-- Not Here, Not Now
+							["coord"] = { 39.6, 60.8, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 83549,	-- Hulda Shadowblade
+						}),
+						q(37327, {	-- Befriending the Locals
+							["sourceQuests"] = { 35286 },	-- Orders, Commander?
+							["coord"] = { 39.8, 60.8, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 81929,	-- Lieutenant Willem
+						}),
+						q(37287,  {  -- Cleaning House
+							["sourceQuests"] = { 36165 },	-- No Time to Waste
+							["coord"] = { 39.5, 61.7, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 84291,	-- Kolrigg Stoktron
+							["g"] = {
+								i(119001),	-- Mystery Keg
+							},
+						}),
+						q(36023, {	-- Extrinsic Motivation
+							["sourceQuests"] = { 35926 },	-- Assassin's Mask
+							["coord"] = { 53.5, 27.5, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 83773,	-- Hulda Shadowblade
+						}),
+						q(36029, {	-- Gardul Venomshiv
+							["sourceQuests"] = {
+								36023,	-- Extrinsic Motivation
+								35959,	-- The Power of Poison
+							},
+							["coord"] = { 53.5, 27.5, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 83773,	-- Hulda Shadowblade
+						}),
+						q(36165, {	-- No Time to Waste
+							["sourceQuests"] = { 36048 },	-- We Have Him Now
+							["coord"] = { 57.1, 34.4, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 83900,	-- Hulda Shadowblade
+						}),
+						q(37329, {	-- Not Here, Not Now
+							["sourceQuests"] = 37296,	-- A Lack of Wasps
+							["coord"] = { 43.8, 48.9, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 83463,	-- Dusk-Seer Irizzar
+						}),
+						q(37281, {	-- Standing United
+							["sourceQuests"] = { 36165 },	-- No Time to Waste
+							["coord"] = { 39.7, 60.9, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 88195,	-- Hulda Shadowblade
+							["g"] = {
+								follower(453),	-- Hulda Shadowblade
+							},
+						}),
+						q(35959, {	-- The Power of Poison
+							["sourceQuests"] = { 35926 },	-- Assassin's Mask
+							["coord"] = { 53.5, 27.5, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 83773,	-- Hulda Shadowblade
+						}),
+						q(36048, {	-- We Have Him Now
+							["sourceQuests"] = { 36029 },	-- Gardul Venomshiv
+							["coord"] = { 57.1, 34.4, 542 },
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 83900,	-- Hulda Shadowblade
+						}),
+					},
+				}),
+				n(-392, {	-- Hearthfire Tavern
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						q(35924, {	-- Assassin's Mark
+							["sourceQuests"] = { 35907 },	-- Attempted Murder
+							["coord"] = { 52.0, 23.5, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 83608,	-- Dark Ranger Velonara
+						}),
+						q(35907, {	-- Attempted Murder
+							["sourceQuests"] = {
+								37326,	-- Befriending the Locals
+								37328,	-- Not Here, Not Now
+							},
+							["coord"] = { 40.0, 43.2, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 83529,	-- Dark Ranger Velonara
+						}),
+						q(37326, {	-- Befriending the Locals
+							["sourceQuests"] = { 35277 },	-- Orders, Commander?
+							["coord"] = { 40.1, 43.5, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 81920,	-- Taskmaster Gornek
+						}),
+						q(36022, {	-- Extrinsic Motivation
+							["sourceQuests"] = { 35924 },	-- Assassin's Mask
+							["coord"] = { 53.5, 27.5, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 83772,	-- Dark Ranger Velonara
+						}),
+						q(36028, {	-- Gardul Venomshiv
+							["sourceQuests"] = {
+								36022,	-- Extrinsic Motivation
+								35947,	-- The Power of Poison
+							},
+							["coord"] = { 53.5, 27.5, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 83772,	-- Dark Ranger Velonara
+						}),
+						q(36166, {	-- No Time to Waste
+							["sourceQuests"] = { 36047 },	-- We Have Him Now
+							["coord"] = { 57.1, 34.4, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 83903,	-- Dark Ranger Velonara
+						}),
+						q(37328, {	-- Not Here, Not Now
+							["sourceQuests"] = 37296,	-- A Lack of Wasps
+							["coord"] = { 43.8, 48.9, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 83463,	-- Dusk-Seer Irizzar
+						}),
+						q(37292, {  -- Not In Your Army
+							["sourceQuests"] = { 36166 },	-- No Time to Waste
+							["coord"] = { 40.1, 42.6, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 84292,	-- Lunzul
+							["g"] = {
+								i(119001),	-- Mystery Keg
+							},
+						}),
+						q(37276, {	-- Standing United
+							["sourceQuests"] = { 36166 },	-- No Time to Waste
+							["coord"] = { 40.0, 43.3, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 88179,	-- Dark Ranger Velonara
+							["g"] = {
+								follower(453),	-- Dark Ranger Velonara
+							},
+						}),
+						q(35947, {	-- The Power of Poison
+							["sourceQuests"] = { 35924 },	-- Assassin's Mask
+							["coord"] = { 53.5, 27.5, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 83772,	-- Dark Ranger Velonara
+						}),
+						q(36047, {	-- We Have Him Now
+							["sourceQuests"] = { 36028 },	--	Gardul Venomshiv
+							["coord"] = { 57.1, 34.4, 542 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 83899,	--	Dark Ranger Velonara
+						}),
+					},
 				}),
 				n(-390, {	-- Smuggler's Den
 					q(35739, {	-- All Natural
@@ -163,6 +178,7 @@ _.Zones =
 					}),
 					q(35738, {	-- All Natural
 						["sourceQuests"] = { 35718 },	-- Back on Track
+						["coord"] = { 60.1, 53.1, 542 },
 						["races"] = HORDE_ONLY,
 						["qg"] = 82786,	-- Trixxy Weldblast
 					}),
@@ -180,10 +196,13 @@ _.Zones =
 							35879,	-- Safety Measures
 							35706,	-- Sticky Situation
 						},
+						["coord"] = { 56.0, 40.8, 542 },
 						["races"] = HORDE_ONLY,
 						["qg"] = 82713,	-- Mixxy Weldblast
 					}),
 					q(35705, {	-- Best Deals Anywhere
+						["sourceQuests"] = { 37330 },	-- Not Here, Not Now
+						["coord"] = { 40.0, 43.1, 542 },
 						["races"] = HORDE_ONLY,
 						["qg"] = 82691,	-- Provisioner Galgar
 					}),
@@ -195,23 +214,18 @@ _.Zones =
 					}),
 					q(35766, {	-- I See Dead Arakkoa
 						["sourceQuests"] = { 35718 },	-- Back on Track
+						["coord"] = { 60.1, 53.1, 542 },
 						["races"] = HORDE_ONLY,
 						["qg"] = 82786,	-- Trixxy Weldblast
 					}),
 					q(37331, {	-- Not Here, Not Now
-						["sourceQuests"] = {
-							37296,	-- A Lack of Wasps
-							35699,	-- Peace Offering
-						},
+						["sourceQuests"] = 37296,	-- A Lack of Wasps
 						["coord"] = { 43.9, 48.8, 542 },
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 83463,	-- Dusk-Seer Irizzar
 					}),
 					q(37330, {	-- Not Here, Not Now
-						["sourceQuests"] = {
-							37296,	-- A Lack of Wasps
-							35697,	-- Peace Offering
-						},
+						["sourceQuests"] = 37296,	-- A Lack of Wasps
 						["coord"] = { 43.9, 48.8, 542 },
 						["races"] = HORDE_ONLY,
 						["qg"] = 83463,	-- Dusk-Seer Irizzar
@@ -225,6 +239,7 @@ _.Zones =
 					q(35697, {	-- Peace Offering (Horde)
 						["sourceQuests"] = { 35277 },	-- Orders, Commander?
 						["races"] = HORDE_ONLY,
+						["coord"] = { 40.0, 43.1, 542 },
 						["qg"] = 82691,	-- Provisioner Galgar
 					}),
 					q(35878, {	-- Safety Measures
@@ -235,6 +250,7 @@ _.Zones =
 					}),
 					q(35879, {	-- Safety Measures
 						["sourceQuests"] = { 35705 },	-- Best Deals Anywhere
+						["coord"] = { 56.0, 40.8, 542 },
 						["races"] = HORDE_ONLY,
 						["qg"] = 82713,	-- Mixxy Weldblast
 					}),
@@ -246,6 +262,7 @@ _.Zones =
 					}),
 					q(35706, {	-- Sticky Situation
 						["sourceQuests"] = { 35705 },	-- Best Deals Anywhere
+						["coord"] = { 56.0, 40.8, 542 },
 						["races"] = HORDE_ONLY,
 						["qg"] = 82713,	-- Mixxy Weldblast
 					}),
@@ -266,6 +283,7 @@ _.Zones =
 							35738,	-- All Natural
 							35766,	-- I See Dead Arakkoa
 						},
+						["coord"] = { 60.1, 53.1, 542 },
 						["races"] = HORDE_ONLY,
 						["qg"] = 82786,	-- Trixxy Weldblast
 						["g"] = {
@@ -291,6 +309,60 @@ _.Zones =
 						i(114953),	-- Skettis Deceiver's Signet
 					},
 				}),
+				q(34883, { -- A Feast of Shadows
+					["sourceQuests"] = { 34830 },	-- Behind the Veil
+					["coord"] = { 44.4, 24.0, 542 },
+					["qg"] = 80508,	-- Talonpriest Zellek
+					["g"] = {
+						i(114723),	-- Cragplate Helm
+						i(114725),	-- Ravenchain Helm
+						i(114724),	-- Shadowveil Hood
+						i(114726),	-- Skysinger Helm
+					},
+				}),
+				q(35671, {	-- A Gathering of Shadows
+					["sourceQuests"] = {
+						34756,	-- A Charming Deception
+						34805,	-- Echo Hunters
+						35668,	-- Syth's Secret
+					},
+					["coord"] = { 48.5, 44.4, 542 },
+					["qg"] = 81770,	-- Reshad
+				}),
+				q(37296, {	-- A Lack of Wasps
+					["sourceQuests"] = {
+						37326,	-- Befriending the Locals (tavern/brewery)
+						35699,	-- Peace Offering (smuggler's den)
+					},
+					["coord"] = { 43.9, 48.8, 542 },
+					["qg"] = 83463,	-- Dusk-Seer Irizzar
+				}),
+				q(35339, {	-- A Parting Favor
+					["sourceQuests"] = { 
+						35329,	-- I See Dead People (A)
+						35339,	-- I See Dead People (H)
+					},
+					["coord"] = { 38.9, 48.8, 542 },
+					["qgs"] = { 82100, 82101 },	-- Bryan Finn (first version fades out about a minute after turning in previous quest and is replaced with second version)
+				}),
+				q(35353, {	-- A Piece of the Puzzle
+					["sourceQuests"] = { 35339 },	-- A Parting Favor
+					["coord"] = { 37.6, 51.0, 542 },
+					["qg"] = 82124,	-- Alice Finn
+					["g"] = {
+						i(114958),	-- Watch Commander Branson's Lape
+					},
+				}),
+				q(35245, {	-- A Sentimental Relic
+					["sourceQuests"] = { 35013 },	-- Lithic's Gift
+					["coord"] = { 60.5, 38.8, 542 },
+					["qg"] = 80834,	-- Memory of Lithic
+				}),
+				q(36059, {	-- A Worthy Vessel
+					["sourceQuests"] = { 35895 },	-- Terokk's Fall
+					["coord"] = { 46.5, 46.5, 542 },
+					["qg"] = 80153,	-- Shadow-Sage Iskar
+				}),
 				q(34657, {	-- Adherents of the Sun God
 					["sourceQuests"] = { 34655 },	-- The Shadows of Skettis
 					["coord"] = { 43.6, 12.9, 542 },
@@ -300,6 +372,26 @@ _.Zones =
 						i(114735),	-- Ravenchain Spaulders
 						i(114734),	-- Shadowveil Mantle
 						i(114732),	-- Skysinger Spaulders
+					},
+				}),
+				q(36183, {	-- Admiral Taylor
+					["sourceQuests"] = {
+						35408,	-- Prime the Cannons
+						35407,	-- Punishable by Death
+					},
+					["qg"] = 82278,	-- Lady Claudia
+					["coord"] = { 37.6, 53.8, 542 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(118082),	-- Admiral Taylor's Boot Knife
+						i(118079),	-- Admiral Taylor's Ceremonial Sword
+						i(118083),	-- Admiral Taylor's Cutlass
+						i(118084),	-- Admiral Taylor's Glaive
+						i(118080),	-- Admiral Taylor's Greatsword
+						i(118081),	-- Admiral Taylor's Hunting Bow
+						i(118086),	-- Admiral Taylor's Keg Tapper
+						i(114945),	-- Admiral Taylor's Shield
+						i(118085),	-- Admiral Taylor's Staff of Wisdom
 					},
 				}),
 				q(35482, {	-- Admiral Taylor
@@ -322,74 +414,10 @@ _.Zones =
 						i(118085),	-- Admiral Taylor's Staff of Wisdom
 					},
 				}),
-				q(34883,  { -- A Feast of Shadows
-					["sourceQuests"] = { 34830 },	-- Behind the Veil
-					["coord"] = { 44.4, 24.0, 542 },
-					["qg"] = 80508,	-- Talonpriest Zellek
-					["g"] = {
-						i(114723),	-- Cragplate Helm
-						i(114725),	-- Ravenchain Helm
-						i(114724),	-- Shadowveil Hood
-						i(114726),	-- Skysinger Helm
-					},
-				}),
-				q(35671, {	-- A Gathering of Shadows
-					["sourceQuests"] = {
-						34756,	-- A Charming Deception
-						34805,	-- Echo Hunters
-						35668,	-- Syth's Secret
-					},
-					["coord"] = { 48.5, 44.4, 542 },
-					["qg"] = 81770,	-- Reshad
-				}),
-				q(37296, {	-- A Lack of Wasps
-					["sourceQuests"] = { 35699 },	-- Peace Offering
-					["coord"] = { 43.9, 48.8, 542 },
-					["qg"] = 83463,	-- Dusk-Seer Irizzar
-				}),
 				q(35636, {	-- All Due Respect
 					["sourceQuests"] = { 34659 },	-- The Crone
 					["coord"] = { 51.6, 31.2, 542 },
 					["qg"] = 79890,	-- Ornekka
-				}),
-				q(35339, {	-- A Parting Favor
-					["sourceQuests"] = { 35329 },	-- I See Dead People
-					["coord"] = { 38.9, 48.8, 542 },
-					["races"] = ALLIANCE_ONLY,
-					["qgs"] = { 82100, 82101 },	-- Bryan Finn (first version fades out about a minute after turning in previous quest and is replaced with second version)
-				}),
-				q(35353, {	-- A Piece of the Puzzle
-					["sourceQuests"] = { 35339 },	-- A Parting Favor
-					["coord"] = { 37.6, 51.0, 542 },
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 82124,	-- Alice Finn
-					["g"] = {
-						i(114958),	-- Watch Commander Branson's Lape
-					},
-				}),
-				q(35245, {	-- A Sentimental Relic
-					["sourceQuests"] = { 35013 },	-- Lithic's Gift
-					["coord"] = { 60.5, 38.8, 542 },
-					["qg"] = 80834,	-- Memory of Lithic
-				}),
-				q(36059, {	-- A Worthy Vessel
-					["sourceQuests"] = { 35895 },	-- Terokk's Fall
-					["coord"] = { 46.5, 46.5, 542 },
-					["qg"] = 80153,	-- Shadow-Sage Iskar
-				}),
-				q(36183, {	-- Admiral Taylor
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(118082),	-- Admiral Taylor's Boot Knife
-						i(118079),	-- Admiral Taylor's Ceremonial Sword
-						i(118083),	-- Admiral Taylor's Cutlass
-						i(118084),	-- Admiral Taylor's Glaive
-						i(118080),	-- Admiral Taylor's Greatsword
-						i(118081),	-- Admiral Taylor's Hunting Bow
-						i(118086),	-- Admiral Taylor's Keg Tapper
-						i(114945),	-- Admiral Taylor's Shield
-						i(118085),	-- Admiral Taylor's Staff of Wisdom
-					},
 				}),
 				q(37851, {	-- Amulet of Rukhmar: The Final Key
 					["sourceQuests"] = { 37850 },	-- Amulet of Rukhmar: The Second Key
@@ -463,6 +491,7 @@ _.Zones =
 				}),
 				q(37177, {	-- Call of the Talon King
 					["qg"] = 84122,	-- Shade of Terokk
+					["coord"] = { 46.6, 46.7, 542 },
 					["minReputation"] = EXALTED,
 					["description"] = "Granted automatically. If you're in the zone when you hit exalted, leave the zone and return.",
 				}),
@@ -490,7 +519,7 @@ _.Zones =
 				}),
 				q(36428, {	-- Curing With Force
 					["sourceQuests"] = {
-						36384,	-- Field Trial -- todo: verify if this is the only one needed
+						36384,	-- Field Trial
 						35089,	-- Skimming Off the Top
 						35090,	-- The Right Parts for the Job
 					},
@@ -525,7 +554,7 @@ _.Zones =
 				q(34805, {	-- Echo Hunters
 					["sourceQuests"] = { 34659 },	-- The Crone
 					["coord"] = { 51.6, 31.2, 542 },
-					["qg"] = 79519,	-- Reshad
+					["qg"] = 80265,	-- Reshad
 				}),
 				q(36425, {	-- Egg Punt
 					["sourceQuests"] = { 34827 },	-- Last of the Talonpriests
@@ -665,6 +694,7 @@ _.Zones =
 				}),
 				q(35322, {	-- I See Dead People (horde)
 					["sourceQuests"] = { 35295 },	-- What's Theirs is Ours
+					["coord"] = { 39.1, 48.9, 542 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 81961,	-- Shadow Hunter Ukambe
 				}),
@@ -799,6 +829,7 @@ _.Zones =
 				}),
 				q(35277, {	-- Orders, Commander? (Horde)
 					["sourceQuests"] = { 35275 },	-- Inspecting the Troops (Horde)
+					["coord"] = { 40.1, 43.4, 542 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 81920,	-- Taskmaster Gornek
 				}),
@@ -812,22 +843,17 @@ _.Zones =
 				}),
 				q(35619, {	-- Pinchwhistle Gearworks (Alliance)
 					["sourceQuests"] = { 35286 },	-- Orders, Commander?
-				--	had also turned in "return to veil terokk" and "peace offering," possible that one or both of those is also required
-				--	i didn't see this quest until i came back to check something else unrelated after turning in the two previously mentioned quests...
-				--	(but i am a confirmed space case so it's possible missed it initially!)
 					["isBreadcrumb"] = true,
 					["coord"] = { 39.7, 60.6, 542 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 85550,	-- Watchman Kovak
 				}),
-				q(35620, {	-- Pinchwhistle Gearworks
+				q(35620, {	-- Pinchwhistle Gearworks (Horde)
+					["sourceQuests"] = { 35277 },	-- Orders, Commander?
 					["qg"] = 85566,	-- Scout Cel
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["coords"] = {
-						{ 50.8, 50.7, 590 },	-- lvl 1 garrison
-						{ 46.8, 45.8, 590 },	-- lvl 2 garrison
-					},
+					["coord"] = { 40.0, 43.8, 542 },
 				}),
 				q(35257, {	-- Power Unearthed
 					["sourceQuests"] = { 34942 },	-- Back from Beyond (must have picked up)
@@ -837,7 +863,7 @@ _.Zones =
 				}),
 				q(35211, {  -- Preventing the Worst
 					["sourceQuests"] = {
-						36384,	-- Field Trial	-- todo: verify if this quest is the only one needed
+						36384,	-- Field Trial
 						35089,	-- Skimming Off the Top
 						35090,	-- The Right Parts for the Job
 					},
@@ -853,13 +879,11 @@ _.Zones =
 				q(35408, {	-- Prime the Cannons
 					["sourceQuests"] = { 35380 },	-- Second in Command
 					["coord"] = { 37.6, 53.8, 542 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 82212,	-- Lady Claudia
 				}),
 				q(35407, {	-- Punishable by Death
 					["sourceQuests"] = { 35380 },	-- Second in Command
 					["coord"] = { 37.6, 53.8, 542 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 82194,	-- Sir Edward
 				}),
 				q(34938, {	-- Ralshiara's Demise
@@ -907,7 +931,6 @@ _.Zones =
 				q(35380, {	-- Second in Command
 					["sourceQuests"] = { 35353 },	-- A Piece of the Puzzle
 					["coord"] = { 37.5, 50.7, 542 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 82126,	-- Alice Finn
 				}),
 				q(35004, {  -- Servants of a Dead God
@@ -979,6 +1002,7 @@ _.Zones =
 					["qg"] = 81978,	-- Kimzee Pinchwhistle
 				}),
 				q(35550, {	-- Surviving in a Savage Land
+					["sourceQuests"] = { 36183 },	-- Admiral Taylor
 					["coord"] = { 36.8, 56.8, 542 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 82402,	-- Shadow Hunter Ukambe
@@ -1146,6 +1170,7 @@ _.Zones =
 					["coord"] = { 33.2, 43.3, 542 },
 				}),
 				q(36864, {	-- Three Feet Under
+					["qg"] = 86597,	-- Benjamin Gibb
 					["coord"] = { 35.8, 52.3, 542 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1173,7 +1198,8 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 				}),
 				q(35669, {	-- Wanted: Keeho's Severed Paw (Horde)
-					["sourceQuests"] = { 37316 },	-- Trading Post (Smuggling Run)
+					["sourceQuests"] = { 35277 },	-- Orders, Commander?
+					["coord"] = { 40.1, 43.0, 542 },
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 				}),
@@ -1184,7 +1210,8 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 				}),
 				q(35670, {	-- Wanted: Spineslicer's Husk (Horde)
-					["sourceQuests"] = { 37316 },	-- Trading Post (Smuggling Run)
+					["sourceQuests"] = { 35277 },	-- Orders, Commander?
+					["coord"] = { 40.1, 43.0, 542 },
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 				}),
@@ -1195,7 +1222,8 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 				}),
 				q(35672, {	-- Wanted: Venombarb (Horde)
-					["sourceQuests"] = { 37316 },	-- Trading Post (Smuggling Run)
+					["sourceQuests"] = { 35277 },	-- Orders, Commander?
+					["coord"] = { 40.1, 43.0, 542 },
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 				}),
@@ -1203,7 +1231,9 @@ _.Zones =
 					["u"] = 1
 				}),
 				q(35295, {	-- What's Theirs is Ours
+					["sourceQuests"] = { 35277 },	-- Orders, Commander?
 					["races"] = HORDE_ONLY,
+					["coord"] = { 40.2, 43.3, 542 },
 					["qg"] = 81959,	-- Shadow Hunter Ukambe
 				}),
 				q(35704, {  -- When All Is Aligned

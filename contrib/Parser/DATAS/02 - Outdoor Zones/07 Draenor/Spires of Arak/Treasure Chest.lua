@@ -22,6 +22,7 @@ _.Zones =
 				}),
 				o(232989, {	-- Basket of Arakkoa Goods
 					["questID"] = 35627,
+					["description"] = "Must establish your outpost to get this treasure.",
 					["coords"] = {
 						{ 40.1, 60.3, 542 },	-- alliance
 						{ 40.1, 43.9, 542 },	-- horde
