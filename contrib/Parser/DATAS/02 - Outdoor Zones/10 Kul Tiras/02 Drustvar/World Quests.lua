@@ -136,6 +136,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51461, { 	-- Deathcap
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54665, {	-- Duchess Fallensong
 						["crs"] = { 148563 },	-- Duchess Fallensong
 						["lvl"] = 120,

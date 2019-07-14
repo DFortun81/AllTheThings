@@ -62,6 +62,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51550, {	-- Bubbles and Trouble
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50735, {	-- Burial Detail
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,

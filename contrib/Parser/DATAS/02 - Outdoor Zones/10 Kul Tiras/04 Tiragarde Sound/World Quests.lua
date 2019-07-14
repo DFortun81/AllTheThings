@@ -21,7 +21,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(52869, {	-- Azerite Empowerment [AH]
+					q(52869, {	-- Azerite Empowerment
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51586, {	-- Azerite Empowerment
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
