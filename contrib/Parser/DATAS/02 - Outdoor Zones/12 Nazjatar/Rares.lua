@@ -201,13 +201,14 @@ _.Zones =
 				["questID"] = 56271,
 				["coords"] = {
 					{ 26.3, 29.0, 1355 },
-					{ 48.6, 19.7, 1355 },
 					{ 39.7, 27.9, 1355 },
 					{ 39.0, 59.3, 1355 },
-					{ 45.9, 70.9, 1355 },
 					{ 40.2, 81.5, 1355 },
+					{ 45.9, 70.9, 1355 },
+					{ 48.6, 19.7, 1355 },
 					{ 70.1, 42.1, 1355 },
 					{ 70.5, 33.5, 1355 },
+					{ 71.9, 28.1, 1355 },
 				},
 				["isDaily"] = true,
 				["g"] = {
@@ -244,7 +245,10 @@ _.Zones =
 			}),
 			n(152414, {	-- Elder Unu
 				["questID"] = 56284,
-				["coord"] = { 64.3, 34.7, 1355 },
+				["coords"] = {
+					{ 64.3, 34.7, 1355 },
+					{ 65.6, 32.6, 1355 },
+				},
 				["isDaily"] = true,
 				["g"] = {
 					crit(11, {	-- I Thought You Said They'd Be Rare?
@@ -381,6 +385,7 @@ _.Zones =
 			n(144644, {	-- Mirecrawler
 				["questID"] = 56274,
 				["coords"] = {
+					{ 27.1, 28.3, 1355 },
 					{ 58.2, 26.7, 1355 },
 					{ 61.0, 31.7, 1355 },
 				},
@@ -407,6 +412,7 @@ _.Zones =
 				["coords"] = {
 					{ 47.0, 30.6, 1355 },
 					{ 48.7, 26.2, 1355 },
+					{ 56.1, 11.0, 1355 },	-- cave entrance, putting this instead of actual coord because it's very close and kind of hard to find without the entrance
 					{ 57.0, 20.8, 1355 },
 					{ 50.2, 19.1, 1355 },
 				},
@@ -538,6 +544,9 @@ _.Zones =
 				["description"] = "Spawns in numerous places throughout the zone, mostly to the east of the Coral Forest.",
 				["questID"] = 56277,
 				["isDaily"] = true,
+				["coords"] = {
+					{ 63.7, 48.3, 1355 },
+				},
 				["g"] = {
 					crit(24, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,

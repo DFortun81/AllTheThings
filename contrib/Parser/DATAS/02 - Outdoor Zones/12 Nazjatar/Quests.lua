@@ -689,13 +689,13 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
-			q(55601, {	-- Coveted Crystals
+			q(55601, {	-- Coveted Crystals (A)
 				["qg"] = 153385,	-- Blademaster Okani
 				["coord"] = { 38.8, 30.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56037,	-- Stealing the Naga's Secrets
 			}),
-			q(55867, {	-- Coveted Crystals
+			q(55867, {	-- Coveted Crystals (H)
 				["qg"] = 153422,	-- Chief Telemancer Oculeth
 				["coord"] = { 38.8, 30.4, 1355 },
 				["races"] = HORDE_ONLY,
@@ -1115,7 +1115,7 @@ _.Zones =
 					q(57086),	-- Legacy of the Mad Mage
 				},
 			}),
-			q(55861, {	-- Let the Residue Lead You
+			q(55861, {	-- Let the Residue Lead You (A)
 				["qg"] = 153385,	-- Blademaster Okani
 				["coord"] = { 38.8, 30.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -1124,7 +1124,7 @@ _.Zones =
 					55860,	-- Sea Slug Liquidation
 				},
 			}),
-			q(55868, {	-- Let the Residue Lead You
+			q(55868, {	-- Let the Residue Lead You (H)
 				["qg"] = 153422,	-- 
 				["coord"] = { 38.8, 30.4, 1355 },
 				["races"] = HORDE_ONLY,
@@ -1634,13 +1634,13 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save A Friend
 				["isBreadcrumb"] = true,
 			}),
-			q(55600, {	-- Sating Snapdragons
+			q(55600, {	-- Sating Snapdragons (A)
 				["qg"] = 153936,	-- Overseer Hajeer
 				["coord"] = { 36.9, 27.0, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55599,	-- Scouting Undercover
 			}),
-			q(55967, {	-- Sating Snapdragons
+			q(55967, {	-- Sating Snapdragons (H)
 				["qg"] = 153936,	-- Overseer Hajeer
 				["coord"] = { 36.9, 27.0, 1355 },
 				["races"] = HORDE_ONLY,
@@ -2058,6 +2058,16 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56236,	-- Down But Not Out
 			}),
+			q(56790, {	-- Treasure to Find
+				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 9.",
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154297,	-- Bladesman Inowari
+				["g"] = {
+					i(169911, {	-- Liberated Naga Cache
+						currency(1721),	-- Prismatic Manapearls x10 — also contained 10x osmenite ore, but not sure if that's a static reward
+					}),
+				},
+			}),
 			q(56152, {	-- Turn the Scale (A)
 				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
 				["qg"] = 154238,	-- Tracker Akatani
@@ -2153,7 +2163,7 @@ _.Zones =
 				["coord"] = { 39.1, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(56039, {	-- We Can't Have Dull Weapons
+			q(56039, {	-- We Can't Have Dull Weapons (A)
 				["qg"] = 153936,	-- Overseer Hajeer
 				["coord"] = { 36.9, 27.0, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -2162,7 +2172,7 @@ _.Zones =
 					56038,	-- Working with Purpose
 				},
 			}),
-			q(56047, {	-- We Can't Have Dull Weapons
+			q(56047, {	-- We Can't Have Dull Weapons (H)
 				["qg"] = 153936,	-- Overseer Hajeer
 				["coord"] = { 36.9, 27.0, 1355 },
 				["races"] = HORDE_ONLY,
@@ -2280,7 +2290,13 @@ _.Zones =
 					i(169919),	-- Unshackled Commendation Crate
 				},
 			}),
-			q(56046, {	-- Working with Purpose
+			q(56038, {	-- Working with Purpose (A)
+				["qg"] = 153936,	-- Overseer Hajeer
+				["coord"] = { 36.9, 27.0, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuests"] = { 55599 },	-- Scouting Undercover
+			}),
+			q(56046, {	-- Working with Purpose (H)
 				["qg"] = 153936,	-- Overseer Hajeer
 				["coord"] = { 36.9, 27.0, 1355 },
 				["races"] = HORDE_ONLY,

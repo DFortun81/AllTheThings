@@ -861,6 +861,16 @@ _.Zones =
 						["questID"] = 49437,	-- Tattered Note
 						["sourceQuests"] = { 49668 },	-- Light Up the Gulch
 					},
+					q(53476, {	-- The Great Sea Scrolls
+						["description"] = "You receive the item that starts this quest from looting any treasure chest.",
+					--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+						["g"] = {
+							i(163863),	-- Bartered Vrykul Cowl
+							i(163864),	-- Bartered Vrykul Facemask
+							i(163862),	-- Bartered Vrykul Hood
+							i(163865),	-- Bartered Vrykul Warhelm
+						},
+					}),
 					q(49669, {	-- Unleash the Beasts
 						["g"] = {
 							i(161182),	-- Cracked Crawg Shackles

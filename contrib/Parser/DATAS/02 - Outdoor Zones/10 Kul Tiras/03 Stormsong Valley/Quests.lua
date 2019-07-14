@@ -6,10 +6,9 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-17,	{	-- Quests [Finalized]
-				i(163856, {	-- Ancient Pilgrimage Scrollcasing
-					["questID"] = 53476,	-- The Great Sea Scrolls
-					["races"] = ALLIANCE_ONLY,
-					["description"] = "You receive this item when looting any treasure chest and has a random chance to spawn.",
+				q(53476, {	-- The Great Sea Scrolls
+					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
+				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
 					["g"] = {
 						i(163863),	-- Bartered Vrykul Cowl
 						i(163864),	-- Bartered Vrykul Facemask

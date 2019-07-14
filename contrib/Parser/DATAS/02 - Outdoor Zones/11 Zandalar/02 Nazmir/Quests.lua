@@ -1074,6 +1074,16 @@ _.Zones =
 						48478,	-- Kel'vax's Home
 					},
 				},
+				q(53476, {	-- The Great Sea Scrolls
+					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
+				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+					["g"] = {
+						i(163863),	-- Bartered Vrykul Cowl
+						i(163864),	-- Bartered Vrykul Facemask
+						i(163862),	-- Bartered Vrykul Hood
+						i(163865),	-- Bartered Vrykul Warhelm
+					},
+				}),
 				q(54145, {	-- The Loa of Death
 					["qg"] = 146824,	-- Princess Talanji
 					["lvl"] = 120,

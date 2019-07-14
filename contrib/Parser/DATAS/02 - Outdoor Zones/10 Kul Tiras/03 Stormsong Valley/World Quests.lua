@@ -114,6 +114,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+						["g"] = {
+							i(163212, {	-- Cleansing Thurible
+								["collectible"] = false,	-- putting it here so it doesn't show as unsorted
+							}),
+						},
 					}),
 					q(52310, {	-- Corrupted Tideskipper
 						["lvl"] = 120,

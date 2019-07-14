@@ -104,7 +104,30 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(-17, {	-- Quests
+					q(47099, { 	-- Get Your Bearings
+						["coord"] = { 75.7, 23.5, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 121235,	-- Taelia
+					}),
+					q(46729, { 	-- The Old Knight
+						["sourceQuests"] = { 47099 },	-- Get Your Bearings
+						["coord"] = { 67.1, 15.3, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 124630,	-- Taelia
+					}),
+					q(47186, { 	-- Sanctum of Sages
+						["sourceQuests"] = { 46729 },	-- The Old Knight
+						["coord"] = { 68.1, 21.9, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 121235,	-- Taelia
+					}),
+					q(47189, { 	-- A Nation Divided
+						["sourceQuests"] = { 47186 },	-- Sanctum of Sages
+						["coord"] = { 68.1, 21.9, 1161 },
+						["qg"] = 121235,	-- Taelia
+					}),
 					qa(52654, {	-- The War Campaign
+						["sourceQuests"] = { 47189 },	-- A Nation Divided
 						["qg"] = 120788,	-- Genn Greymane
 						["coord"] = { 68.0, 22.3, 1161 },	-- Boralus
 						["isBreadcrumb"] = true,

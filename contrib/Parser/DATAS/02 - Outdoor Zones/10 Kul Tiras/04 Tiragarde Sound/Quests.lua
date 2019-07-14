@@ -3,9 +3,245 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
-		m(895, {	-- -- Tiragarde Sound
-			n(-17, {	-- Quests [Finalized]
+	m(876, {	-- Kul'Tiras
+		m(895, {	-- Tiragarde Sound
+			n(-17, {	-- Quests
+				q(50542, {	-- An Explosive Opportunity
+					["coord"] = { 66.6, 49.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129858,	-- Wulfred Fizzbracket
+				}),
+				
+				
+				q(48873, {	-- A Grizzly End
+					["sourceQuests"] = { 50544 },	-- The Hunters of Kennings Lodge
+					["coord"] = { 75.8, 65.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127646,	-- Lord Kennings
+				}),
+				
+				
+				q(48879, {	-- A Hunt for Hawk Eggs
+					["sourceQuests"] = { 50544 },	-- The Hunters of Kennings Lodge
+					["coord"] = { 75.8, 65.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127646,	-- Lord Kennings
+				}),
+				
+				
+				q(51151, {	-- A Letter to the League
+					["coord"] = { 65.8, 50.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129956,	-- Dockmaster Tyndall
+				}),
+				
+				
+				q(50349, {	-- An Overrun Mine
+					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
+					["isBreadcrumb"] = true,
+					["coord"] = { 75.6, 50.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133550,	-- Junior Miner Joe
+				}),
+				
+				
+				q(49028, {	-- A Sweater for Rupert
+				--	["objectID"] = 277199,	-- Weathered Job List
+					["coord"] = { 76.1, 65.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51226, {	-- Death from Two Sides
+					["sourceQuests"] = { 49715 },	-- Trouble at Greystone Keep
+					["coord"] = { 80.5, 42.0, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 132720,	-- Hawkmaster Lloyd
+				}),
+				
+				
+				q(48516, {	-- Toxic Community
+					["sourceQuests"] = { 48505 },	-- Lovesick and Lost
+					["coord"] = { 82.7, 72.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126511,	-- Skinner MacGuff
+				}),
+				
+				
+				q(51426, {	-- Inspection Gadget
+					["coord"] = { 65.0, 60.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 137694,	-- Parin Tinklocket
+				}),
+				
+				
+				q(51149, {	-- Left at the Port
+					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
+					["isBreadcrumb"] = true,
+					["coord"] = { 75.0, 49.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 136576,	-- Dockmaster Leighton
+				}),
+				
+				
+				q(49230, { 	-- Local Flavor
+					["sourceQuests"] = { 49218 },	-- The Castaways
+					["coord"] = { 85.4, 80.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128228,	-- Hungry Sam
+				}),
+				
+				
+				q(49897, {	-- Making Mysteries
+					["coord"] = { 67.5, 55.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129858,	-- Wulferd Fizzbracket
+				}),
+				
+				
+				q(50351, {	-- Miner Operation
+					["sourceQuests"] = { 50349 },	-- An Overrun Mine
+					["coord"] = { 78.1, 55.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133551,	-- Chief Miner Theock
+				}),
+				
+				
+				q(49178, { 	-- My Favorite Things
+					["sourceQuests"] = { 49218 },	-- The Castaways
+					["coord"] = { 85.4, 80.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128229,	-- Stabby Jane
+				}),
+				
+				
+				q(48874, {	-- Pardon Our Rust
+					["sourceQuests"] = { 50544 },	-- The Hunters of Kennings Lodge
+					["coord"] = { 75.8, 65.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127161,	-- Alanna Holton
+				}),
+				
+				
+				q(49733, {	-- Patching Up the Rear
+					["sourceQuests"] = { 49715 },	-- Trouble at Greystone Keep
+					["coord"] = { 81.0, 42.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133035,	-- Officer Jovan
+				}),
+				
+				
+				q(50352, {	-- Pinch of Azerite
+					["sourceQuests"] = { 50349 },	-- An Overrun Mine
+					["coord"] = { 78.1, 55.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133552,	-- Head Chemist Walters
+				}),
+				
+				
+				q(51430, {	-- Reverse Tinkering
+					["coord"] = { 65.0, 60.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 137694,	-- Parin Tinklocket
+				}),
+				
+				
+				q(49226, { 	-- Silencing the Sisters
+					["sourceQuests"] = { 49218 },	-- The Castaways
+					["coord"] = { 85.4, 80.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128229,	-- Stabby Jane
+				}),
+				
+				
+				q(49531, {	-- The Beauty of Marketing
+					["sourceQuests"] = { 50542 },	-- An Explosive Opportunity
+					["coord"] = { 67.5, 55.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129858,	-- Wulfred Fizzbracket
+					["g"] = {
+						i(158225),	-- Over-Engineered Flash Bulb
+					},
+				}),
+				
+				
+				q(49218, {	-- The Castaways
+					["isBreadcrumb"] = true,
+					["coord"] = { 85.5, 83.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128377,	-- Beachcomber Bob
+				}),
+				
+				
+				q(53476, {	-- The Great Sea Scrolls
+					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
+				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+					["g"] = {
+						i(163863),	-- Bartered Vrykul Cowl
+						i(163864),	-- Bartered Vrykul Facemask
+						i(163862),	-- Bartered Vrykul Hood
+						i(163865),	-- Bartered Vrykul Warhelm
+					},
+				}),
+				
+				
+				q(50544, {	-- The Hunters of Kennings Lodge
+					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
+					["isBreadcrumb"] = true,
+				--	["objectID"] = 281551,	-- Help Wanted Poster
+					["coord"] = { 75.5, 49.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(48070, {	-- The Norwington Festival
+					["isBreadcrumb"] = true,
+				--	["objectID"] = 281230,	-- Formal Invitation
+					["coord"] = { 66.0, 50.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(49069, {	-- WANTED: Ol' Frostclaw
+				--	["objectID"] = 277199,	-- Weathered Job List
+					["coord"] = { 76.1, 65.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(158243),	-- Navigator's Legwraps
+						i(158245),	-- Freebooter Trousers
+						i(158244),	-- Outrigger Chausses
+						i(158242),	-- Sea Raider's Legplates
+						i(158272),	-- Navigator's Bands
+						i(158275),	-- Freebooter Wristwraps
+						i(158274),	-- Outrigger Shackles
+						i(158273),	-- Sea Raider's Armplates
+					},
+				}),
+			
+			
+			
+			
+			
+			--[[
+					["sourceQuests"] = {  },	-- 
+					["coord"] = { , , 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = ,	-- 
+				}),
+				
+			--]]
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 				crit(7, {	-- Castaways and Cutouts
 					["achievementID"] = 12473,	-- A Sound Plan
 					["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
@@ -121,31 +357,6 @@ _.Zones =
 							["sourceQuest"] = 49178,	-- My Favorite Things
 							["coord"] = { 85.48, 80.78, 895 },
 						}),
-						q(49230, { 	-- Local Flavor
-							["qg"] = 128228,	-- Hungry Sam
-							["coord"] = { 85.4, 80.7, 895 },
-							["sourceQuest"] = 49218,	-- The Castaways
-							["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
-						}),
-						q(49178, { 	-- My Favorite Things
-							["qg"] = 128229,	-- Stabby Jane
-							["coord"] = { 85.4, 80.8, 895 },
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 49218,	-- The Castaways
-						}),
-						q(49226, { 	-- Silencing the Sisters
-							["qg"] = 128229,	-- Stabby Jane
-							["coord"] = { 85.4, 80.8, 895 },
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 49218,	-- The Castaways
-						}),
-						q(49218, {	-- The Castaways
-							["qg"] = 128377,	-- Beachcomber Bob
-							["coord"] = { 85.5, 83.5, 895 },
-							["races"] = ALLIANCE_ONLY,
-							["isBreadcrumb"] = true,
-							-- ["sourceQuests"] = { 47189 },	-- A Nation Divided		Note!! Not marking a SourceQuest others it routes all the way up to Heart of Azeroth the entire time.
-						}),
 					},
 				}),
 			}),
@@ -162,23 +373,6 @@ _.Zones =
 						crit(7),		-- Castaways and Cutouts
 					})),
 					--]]
-					--------------------------------------
-					-- Fizzlesprings Resort
-					--------------------------------------
-					a(q(48516, {	-- Toxic Community [Alliance Only]
-						["qg"] = 126511,	-- Skinner MacGuff
-						["sourceQuests"] = { 48505 },	-- Lovesick and Lost [Alliance Only]
-					})),
-					a(q(50542, {	-- An Explosive Opportunity
-						["qg"] = 129858,	-- Wulfred Fizzbracket
-					})),
-					a(q(49531, {	-- The Beauty of Marketing
-						["qg"] = 129858,	-- Wulfred Fizzbracket
-						["sourceQuests"] = { 50542 },	-- An Explosive Opportunity
-						["g"] = {
-							i(158225),	-- Over-Engineered Flash Bulb
-						},
-					})),
 					--------------------------------------
 					-- Hatherford
 					--------------------------------------
@@ -207,12 +401,6 @@ _.Zones =
 					a(q(48369, {	-- Emergent Strategy
 						["qg"] = 129613,	-- Maynard Algerson
 						["sourceQuests"] = { 49452, 49451, 49465  },	-- Inventory Deficit / Maximizing Resources / Time Off Requests
-					})),
-					a(o(281230, {	-- Formal Invitation
-						q(48070, {	-- The Norwington Festival
-							-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
-							["isBreadcrumb"] = true,
-						}),
 					})),
 					a(q(49453, {	-- Give a Dam
 						["qg"] = 129670,	-- Lyssa Treewarden
@@ -299,29 +487,6 @@ _.Zones =
 							},
 						},
 					},
-
-					--------------------------------------
-					-- Bridgeport
-					--------------------------------------
-					o(281551, {		-- Help Wanted Poster [Object]
-						a(q(50544, {	-- The Hunters of Kennings Lodge
-							["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
-							["isBreadcrumb"] = true,
-							-- Not required for "A Sound Plan."
-						})),
-					}),
-					a(q(50349, {	-- On Overrun Mine
-						["qg"] = 133550,	-- Junior Miner Joe
-						["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
-						["isBreadcrumb"] = true,
-						-- Not required for "A Sound Plan."
-					})),
-					a(q(51149, {	-- Left at the Port
-						["qg"] = 136576,	-- Dockmaster Leighton
-						["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
-						["isBreadcrumb"] = true,
-						-- Not required for "A Sound Plan."
-					})),
 
 					--------------------------------------
 					-- Freehold
@@ -555,100 +720,90 @@ _.Zones =
 						i(155082),	-- Durable Seashell Barrier
 					}),
 					q(49734, {	-- Targeting a Turncoat
-					i(155090),	-- Lieutenant Fernn's Ring
-					i(158266),	-- Southport Searchlight
-					i(158330),	-- Proudmoore Marine's Crest
+						i(155090),	-- Lieutenant Fernn's Ring
+						i(158266),	-- Southport Searchlight
+						i(158330),	-- Proudmoore Marine's Crest
 					}),
 					q(49431, {	-- Warm and Cozy
-					i(158289),	-- Navigator's Cinch
-					i(158291),	-- Freebooter Waistwrap
-					i(158290),	-- Outrigger Cincture
-					i(158288),	-- Sea Raider's Buckle
-					i(160082),	-- Griddon's Satin Towel
+						i(158289),	-- Navigator's Cinch
+						i(158291),	-- Freebooter Waistwrap
+						i(158290),	-- Outrigger Cincture
+						i(158288),	-- Sea Raider's Buckle
+						i(160082),	-- Griddon's Satin Towel
 					}),
 					q(48909, {	-- Noble Responsibilities
-					i(155089),	-- Lord Kenning's Signet
-					i(158281),	-- Navigator's Cord
-					i(158283),	-- Freebooter Cinch
-					i(158282),	-- Outrigger Chain
-					i(158280),	-- Sea Raider's Belt
+						i(155089),	-- Lord Kenning's Signet
+						i(158281),	-- Navigator's Cord
+						i(158283),	-- Freebooter Cinch
+						i(158282),	-- Outrigger Chain
+						i(158280),	-- Sea Raider's Belt
 					}),
 					q(50005, {	-- Hold My Hand
-					i(158264),	-- Navigator's Handwraps
-					i(158262),	-- Freebooter Mitts
-					i(158265),	-- Outrigger Grips
-					i(158263),	-- Sea Raider's Gloves
-					i(160087),	-- Penny's Friendship Ring
+						i(158264),	-- Navigator's Handwraps
+						i(158262),	-- Freebooter Mitts
+						i(158265),	-- Outrigger Grips
+						i(158263),	-- Sea Raider's Gloves
+						i(160087),	-- Penny's Friendship Ring
 					}),
 					q(49417, {	-- Roughneck Riders
-					i(158239),	-- Navigator's Walkers
-					i(158241),	-- Freebooter Striders
-					i(158240),	-- Outrigger Striders
-					i(158238),	-- Sea Raider's Footguards
-					i(158228),	-- Gryphon Rider's Ring
+						i(158239),	-- Navigator's Walkers
+						i(158241),	-- Freebooter Striders
+						i(158240),	-- Outrigger Striders
+						i(158238),	-- Sea Raider's Footguards
+						i(158228),	-- Gryphon Rider's Ring
 
 					}),
-					q(49069, {	-- WANTED: Ol' Frostclaw
-					i(158243),	-- Navigator's Legwraps
-					i(158245),	-- Freebooter Trousers
-					i(158244),	-- Outrigger Chausses
-					i(158242),	-- Sea Raider's Legplates
-					i(158272),	-- Navigator's Bands
-					i(158275),	-- Freebooter Wristwraps
-					i(158274),	-- Outrigger Shackles
-					i(158273),	-- Sea Raider's Armplates
-					}),
 					q(48077, {	-- The Stoat Hunt
-					i(158247),	-- Navigator's Pants
-					i(158249),	-- Freebooter Pants
-					i(158248),	-- Outrigger Links
-					i(158246),	-- Sea Raider's Chausses
-					i(158276),	-- Navigator's Bindings
-					i(158279),	-- Freebooter Bindings
-					i(158278),	-- Outrigger Bindings
-					i(158277),	-- Sea Raider's Wristguards
+						i(158247),	-- Navigator's Pants
+						i(158249),	-- Freebooter Pants
+						i(158248),	-- Outrigger Links
+						i(158246),	-- Sea Raider's Chausses
+						i(158276),	-- Navigator's Bindings
+						i(158279),	-- Freebooter Bindings
+						i(158278),	-- Outrigger Bindings
+						i(158277),	-- Sea Raider's Wristguards
 					}),
 					q(49299, {	-- Enemy Within
-					i(160083),	-- Navigator's Footwraps
-					i(160084),	-- Freebooter Shoes
-					i(160085),	-- Outrigger Waders
-					i(160086),	-- Sea Raider's Boots
-					i(160093),	-- Navigator's Waistwrap
-					i(160094),	-- Freebooter Cord
-					i(160095),	-- Outrigger Waistwrap
-					i(160096),	-- Sea Raider's Cinch
+						i(160083),	-- Navigator's Footwraps
+						i(160084),	-- Freebooter Shoes
+						i(160085),	-- Outrigger Waders
+						i(160086),	-- Sea Raider's Boots
+						i(160093),	-- Navigator's Waistwrap
+						i(160094),	-- Freebooter Cord
+						i(160095),	-- Outrigger Waistwrap
+						i(160096),	-- Sea Raider's Cinch
 					}),
 					q(48352, {	-- A Cure from the Sea
-					i(160097),	-- Navigator's Wristwraps
-					i(160098),	-- Freebooter Bands
-					i(160099),	-- Outrigger Bands
-					i(160100),	-- Sea Raider's Shackles
-					i(158260),	-- Navigator's Grips
-					i(158258),	-- Freebooter Handwraps
-					i(158261),	-- Outrigger Handguards
-					i(158259),	-- Sea Raider's Handguards
+						i(160097),	-- Navigator's Wristwraps
+						i(160098),	-- Freebooter Bands
+						i(160099),	-- Outrigger Bands
+						i(160100),	-- Sea Raider's Shackles
+						i(158260),	-- Navigator's Grips
+						i(158258),	-- Freebooter Handwraps
+						i(158261),	-- Outrigger Handguards
+						i(158259),	-- Sea Raider's Handguards
 					}),
 					q(49302, {	-- The Deadliest Catch
-					i(155053),	-- Scaleterror Slicer
-					i(155079),	-- Thrashneck Gladius
-					i(155072),	-- Wavetamer Trident
-					i(155059),	-- Sea Priest's Spellblade
-					i(158298),	-- Fishmonger's Gutter
-					i(155057),	-- Anglepoint Repeater
-					i(158296),	-- Angler's Longstaff
-					i(158295),	-- Shark-Hunter Glaive
-					i(155064),	-- Wharf-Porter Cudgel
+						i(155053),	-- Scaleterror Slicer
+						i(155079),	-- Thrashneck Gladius
+						i(155072),	-- Wavetamer Trident
+						i(155059),	-- Sea Priest's Spellblade
+						i(158298),	-- Fishmonger's Gutter
+						i(155057),	-- Anglepoint Repeater
+						i(158296),	-- Angler's Longstaff
+						i(158295),	-- Shark-Hunter Glaive
+						i(155064),	-- Wharf-Porter Cudgel
 					}),
 					q(48088, {	-- No Party Like a Trogg Party
-					i(155065),	-- Trogg Thumper
-					i(155068),	-- Grimestone Pounder
-					i(155075),	-- Lord Aldrus' Greatstaff
-					i(155054),	-- Reveler's Edge
-					i(155070),	-- Norwington's Poleaxe
-					i(155062),	-- Stoat-Trapper's Spikefist
-					i(155076),	-- Roughneck Rider Handaxe
-					i(158297),	-- Equestrian's Saddle Knife
-					i(158294),	-- Hollowbeak Hunting Rifle
+						i(155065),	-- Trogg Thumper
+						i(155068),	-- Grimestone Pounder
+						i(155075),	-- Lord Aldrus' Greatstaff
+						i(155054),	-- Reveler's Edge
+						i(155070),	-- Norwington's Poleaxe
+						i(155062),	-- Stoat-Trapper's Spikefist
+						i(155076),	-- Roughneck Rider Handaxe
+						i(158297),	-- Equestrian's Saddle Knife
+						i(158294),	-- Hollowbeak Hunting Rifle
 					}),
 					--]]
 				}),

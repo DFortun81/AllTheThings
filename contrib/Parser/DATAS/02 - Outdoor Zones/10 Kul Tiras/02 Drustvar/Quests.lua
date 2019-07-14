@@ -921,6 +921,16 @@ _.Zones =
 					["coord"] = { 50.6, 24.3, 896 },
 					["sourceQuests"] = { 48804 },	-- Mistakes Were Made
 				}),
+				q(53476, {	-- The Great Sea Scrolls
+					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
+				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+					["g"] = {
+						i(163863),	-- Bartered Vrykul Cowl
+						i(163864),	-- Bartered Vrykul Facemask
+						i(163862),	-- Bartered Vrykul Hood
+						i(163865),	-- Bartered Vrykul Warhelm
+					},
+				}),
 				o(277459, {	-- Pig Effigy
 					qa(47949, {	-- That's Not My Fetish
 						["coord"] = { 63.3, 30.1, 896 },

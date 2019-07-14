@@ -7,23 +7,27 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
 			n(-4, {	-- Achievements
-				ach(12891, {	-- A Nation United [Alliance]
+				ach(12891, {	-- A Nation United
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(3),	-- A Nation United
 						crit(1),	-- Kul Tourist
 						crit(2),	-- The Pride of Kul Tiras
+						crit(3),	-- A Nation United
 					},
 				}),
-				ach(12740, {	-- Full of Scrap! [500 Items] [Alliance]
+				ach(12582, {	-- Come Sail Away
+					["sourceQuests"] = { 47189 },	-- A Nation Divided
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(12740, {	-- Full of Scrap!
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						ach(12741),	-- Giving a Scrap [1 Item - Alliance]
-						ach(12738),	-- Holy Scrap! [100 Items]
-						ach(12739),	-- Scraptastic! [250 Items]
+						ach(12741),	-- Giving a Scrap
+						ach(12738),	-- Holy Scrap!
+						ach(12739),	-- Scraptastic!
 					},
 				}),
-				ach(12593, {	-- Kul Tourist [Alliance]
+				ach(12593, {	-- Kul Tourist
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1),	-- A Sound Plan
