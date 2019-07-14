@@ -23,6 +23,10 @@ _.Zones =
 							["npcID"] = 127377,	-- Pa'ku
 							["coord"] = { 71.54, 49.41, 1165 },
 						}),
+						crit(8, {	-- Rezan Respected
+							["npcID"] = 124948,	-- Rezan
+							["coord"] = { 70.81, 29.89, 1165 },
+						}),
 					}
 				}),
 				ach(12480, {	-- A Bargain of Blood
