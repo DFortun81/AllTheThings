@@ -171,6 +171,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50295, {	-- Like Pulling Teeth
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51664, {	-- Kulett the Ornery
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -231,6 +236,10 @@ _.Zones =
 					q(50164, {	-- Polly Want A Cracker?
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51661, {	-- Raging Swell
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51656, {	-- Saurolisk Tamer Mugg

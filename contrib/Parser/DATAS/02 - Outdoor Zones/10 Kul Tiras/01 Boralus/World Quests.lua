@@ -12,6 +12,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50776, {	-- False Prophets
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(53704, {	-- Not Too Sober Citizens Brigade
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

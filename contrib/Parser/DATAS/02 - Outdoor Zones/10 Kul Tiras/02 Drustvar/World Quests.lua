@@ -103,6 +103,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51989, {	-- Braedan Whitewall
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50369, { 	-- Bruin Potions
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

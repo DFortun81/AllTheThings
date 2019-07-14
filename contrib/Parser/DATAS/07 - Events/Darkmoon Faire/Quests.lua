@@ -565,6 +565,11 @@ _.WorldEvents =
 								},
 							},
 						},
+						{	-- Baby Needs Two Pair of Shoes [Blacksmithing]
+							["questID"] = 29468,	-- Baby Needs Two Pair of Shoes
+							["u"] = 1,
+							["requireSkill"] = 164,	-- Blacksmithing
+						},
 						{	-- Banners, Banners Everywhere! [Leatherworking]
 							["questID"] = 29520,	-- Banners, Banners Everywhere!
 							["qg"] = 10445,			-- Selina Dourman

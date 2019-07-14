@@ -42,6 +42,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51617, {	-- Azerite Empowerment
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51618, { 	-- Azerite Madness
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -296,6 +300,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51627, {	-- Shell Game
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51453, {	-- Shrine of the Storm: Behold, Pure Water
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

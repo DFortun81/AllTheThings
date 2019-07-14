@@ -53,6 +53,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50527, {	-- Behind Mogu Lines
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(54537, {	-- Bilestomper (Invasion WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -392,6 +397,11 @@ _.Zones =
 						["groups"] = {
 							i(160509), 	-- Echoes of Rezan (TOY!)
 						},
+					}),
+					q(51824, {	-- You're Grounded
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 					q(52937, {	-- You've Never Seen Jammer Upset
 						["lvl"] = 120,

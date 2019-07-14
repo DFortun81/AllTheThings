@@ -60,6 +60,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(49345, {	-- Buried Treasure
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(55343, {	-- Calligraphy
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -127,6 +131,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51125, {	-- Jungleweb Hunter
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51102, {	-- Kamid the Trapper
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -323,6 +331,10 @@ _.Zones =
 						["groups"] = {
 							i(162736), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
 						},
+					}),
+					q(51115, {	-- Zunashi the Exile
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 				}),
 				i(158116),	-- Bonehex Claws

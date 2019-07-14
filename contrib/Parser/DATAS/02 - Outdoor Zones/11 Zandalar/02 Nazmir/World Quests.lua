@@ -344,6 +344,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50490, {	-- Uroku the Bound
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50515, {	-- Venomjaw
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -507,4 +511,3 @@ _.Zones =
 		}),
 	}),
 };
---]]
