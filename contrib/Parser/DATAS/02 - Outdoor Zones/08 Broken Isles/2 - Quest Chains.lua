@@ -219,6 +219,7 @@ _.Zones =
 						}),
 						q(44153, {	-- Light's Charge
 							["sourceQuest"] = 44004,	-- Bringer of the Light
+							["coord"] = { 28.7, 48.5, 627 },
 							["qg"] = 90417,	-- Quest Giver: Archmage Khadgar
 							["g"] = {
 								crit(2, {	-- Complete the quest, "Light's Charge."

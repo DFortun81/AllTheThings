@@ -48,6 +48,11 @@ _.ExpansionFeatures =
 				}),
 				n(-17, {	-- Quests
 					-- confirmed/sourced
+					q(42682, {	-- Additional Accoutrements
+						["sourceQuests"] = { 42683 },	-- Demonic Improvements
+						["coord"] = { 59.7, 50.3, 720 },
+						["qg"] = 98632,  -- Matron Mother Malevolence
+					}),
 					q(42679, {	-- Broken Warriors
 						["sourceQuests"] = {
 							42677,	-- Things Gaardoun Needs (Kayn)
@@ -86,6 +91,11 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(595),	-- Champion: Kayn Sunfury
 						},
+					}),
+					q(42683, {	-- Demonic Improvements
+						["sourceQuests"] = { 42681 },	-- Loramus, Is That You?
+						["coord"] = { 59.1, 58.8, 720 },
+						["qg"] = 103761,	-- Kor'vas Bloodthorn
 					}),
 					q(41069, {	-- Direct Our Wrath (Kayn)
 						["sourceQuests"] = { 41067 },	-- Time is of the Essence
@@ -164,10 +174,6 @@ _.ExpansionFeatures =
 					q(42810),	-- A Final Offer
 					q(43412),	-- A Hero's Weapon
 					q(42733),	-- A Very Special Kind of Fuel
-					q(42682, {	-- Additional Accoutrements
-						["qg"] = 98632,  -- Matron Mother Malevolence
-						["sourceQuests"] = { 42683 },	-- Demonic Improvements
-					}),
 					q(45180),	-- An Island of War
 					q(46159),	-- An Urgent Message
 					q(45993),	-- An Urgent Warning
@@ -240,10 +246,6 @@ _.ExpansionFeatures =
 					q(42787),	-- Deal With It Personally
 					q(45339),	-- Defense of the Fel Hammer
 					q(47078),	-- Delivering Lost Knowledge
-					q(42683, {	-- Demonic Improvements
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
-						["sourceQuests"] = { 42681 },	-- Loramus, Is That You?
-					}),
 					q(45173),	-- Desperate Times
 					q(41099),	-- Direct Our Wrath [Altruis
 					q(43552),	-- Eye of Azshara

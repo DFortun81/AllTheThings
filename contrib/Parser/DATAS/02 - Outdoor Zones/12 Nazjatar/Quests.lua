@@ -156,6 +156,14 @@ _.Zones =
 					spell(304905),	-- World Quests
 				},
 			}),
+			q(56779, {	-- A Valorous Reward
+				["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 7.",
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 150202,	-- Hunter Akana
+				["g"] = {
+					i(169904),	-- Ankoan Commendation Crate
+				},
+			}),
 			q(54972, {	-- A Way Home
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 40.2, 55.2, 1355 },
@@ -1046,11 +1054,9 @@ _.Zones =
 			}),
 			q(56784, {	-- Helpful Provisions
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
-				["description"] = "Your Ankoan friend will offer this quest upon reaching Rank 7.",
+				["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 7.",
 				["races"] = ALLIANCE_ONLY,
-				["qgs"] = {	-- add other two bodyguards/friends/whatever
-					154304,	-- Farseer Ori
-				},
+				["qg"] = 154304,	-- Farseer Ori
 				["g"] = {
 					i(169904),	-- Ankoan Commendation Crate (contained a benthic token, some war resources, and some zin'anthid)
 				},
@@ -1233,6 +1239,15 @@ _.Zones =
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
+			q(56786, {	-- Naga Treasure
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 13.",
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154304,	-- Farseer Ori
+				["g"] = {
+					i(169917),	-- Mysterious Azshari Chest
+				},
+			}),
 			q(55529, {	-- No Backs
 				["qg"] = 152084,	-- Mrrl
 				["races"] = ALLIANCE_ONLY,
@@ -1360,6 +1375,15 @@ _.Zones =
 				["coord"] = { 74.2, 40.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 153617,	-- Shandris Feathermoon
+			}),
+			q(56807, {	-- Real Friends Help Hide Bodies — NEEDS CONFIRMATION.  i got credit for this when i turned in the Rank 13 quest for Farseer Ori on Alliance
+				["sourceQuests"] = { 55500 },	-- Save a Friend
+				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 13.",
+				["races"] = HORDE_ONLY,
+				["qg"] = 151309,	-- Vim Brineheart
+				["g"] = {
+					i(169922),	-- Vim's Gift of Appreciation
+				},
 			}),
 			q(56788, {	-- Reclaimed Treasure
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
@@ -2113,25 +2137,33 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
-			q(56644, {	-- Up Against it
+			q(55032, {	-- Unchained Resistance
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+				["isDaily"] = true,
+				["coord"] = { 48.4, 52.5, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 150553,	-- Tracker Okaju
+			}),
+			q(56644, {	-- Up Against it (A)
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 45.5, 74.9, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 155482,	-- In Deep
 			}),
-			q(56429, {	-- Up Against It
+			q(56429, {	-- Up Against It (H)
 				["qg"] = 150196,	-- First Arcanist Thalyssra
 				["coord"] = { 38.5, 76.1, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 54015,	-- In Deep
 			}),
-			q(55095, {	-- Upheaval
+			q(55095, {	-- Upheaval (A)
 				["qg"] = 150087,	-- Genn Greymane
 				["coord"] = { 48.2, 92.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56043,	-- Send the Fleet
 			}),
-			q(55054, {	-- Upheaval
+			q(55054, {	-- Upheaval (H)
 				["qg"] = 150187,	-- Nathanos Blightcaller
 				["coord"] = { 36.7, 93.5, 1355 },
 				["races"] = HORDE_ONLY,

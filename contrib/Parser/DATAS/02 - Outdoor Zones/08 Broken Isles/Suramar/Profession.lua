@@ -264,11 +264,17 @@ _.Zones =
 							sp(194822),	-- Skinning Technique: Stormscale (Rank 3)
 						},
 					}),
+					q(40138, {	-- Trial of the Crusader: Hides of Legend
+						["requireSkill"] = 393,	-- Skinning
+					}),
 					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
 						["requireSkill"] = 393,	-- Skinning
 						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
 						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
+					}),
+					q(40212, {	-- Wrong End of the Knife
+						["requireSkill"] = 393,	-- Skinning
 					}),
 				}),
 				prof(197, {	-- Tailoring
