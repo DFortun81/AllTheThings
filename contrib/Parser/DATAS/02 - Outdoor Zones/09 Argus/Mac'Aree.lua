@@ -1105,7 +1105,6 @@ _.Zones =
 						q(49050),	-- Shadeflicker
 						q(48730),	-- Sorolis the Ill-Fated
 						q(48728),	-- Umbraliss
-						q(48094),	-- Void Clot
 					}),
 --]]				
 					q(48729, {	-- Ataxon
@@ -1250,6 +1249,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48723, {	-- Vigilant Thanos
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48094, {	-- Void Clot
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

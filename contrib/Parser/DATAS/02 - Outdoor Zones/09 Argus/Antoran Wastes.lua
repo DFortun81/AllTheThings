@@ -987,8 +987,6 @@ _.Zones =
 						q(48837),	-- All-Seer Xanarian
 						q(48831),	-- Commander Texlaz
 						q(49055),	-- Earseeker
-						q(48830),	-- Inquisitor Vethroz
-						q(48983),	-- Mining Regulation
 						q(49057),	-- Minixis
 						q(48783),	-- Nobody Expects Them
 						q(49058),	-- One-of-Many
@@ -1037,6 +1035,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(47566, {	-- Gar'zoth
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48780, {	-- Gladius
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1045,7 +1047,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48830, {	-- Inquisitor Vethroz
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48828, {	-- Lieutenant Xakaar
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48983, {	-- Mining Regulation
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

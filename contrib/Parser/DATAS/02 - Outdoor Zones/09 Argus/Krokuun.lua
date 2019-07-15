@@ -1117,6 +1117,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48509, {	-- Commander Sathrenael
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48510, {	-- Commander Vecaya
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1137,7 +1141,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(47551, {	-- Lessons of Fire and Pain
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(47707, {	-- Melting Down
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48502, {	-- Naroua, King of the Forest
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1186,6 +1198,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48615, {	-- War Never Changes
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48614, {	-- Woeful Implications
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
