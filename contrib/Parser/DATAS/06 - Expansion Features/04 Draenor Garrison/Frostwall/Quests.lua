@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		h(m(590, {	-- Frostwall
 			["g"] = {
-				nh(-17, { 	-- Quests
+				n(-17, { 	-- Quests
 					prof(794, {	-- Archaeology
 						i(114216, {	-- Pristine Burial Urn
 							["questID"] = 36772,
