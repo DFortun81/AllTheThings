@@ -2614,7 +2614,6 @@ _.Zones =
 							q(41490),	-- Brimstone Destroyer
 							q(41489),	-- Brimstone Destroyer
 							q(41488),	-- Brimstone Destroyer
-							
 							q(46011),	-- Colossal Infernal
 							q(46216),	-- Congealed Corruption
 							q(46179),	-- Crushing the Legion
@@ -2672,7 +2671,6 @@ _.Zones =
 							q(41298),	-- Supplies Needed: Fjarnskaggl
 							q(41317),	-- Supplies Needed: Leystone
 							q(41345),	-- Supplies Needed: Stormscales
-							q(41984),	-- The Creeping Mists
 							q(43721),	-- The Helarjar Have Surfaced
 							q(43771),	-- The Magic of Flight
 							q(42269),	-- The Soultakers
@@ -2681,7 +2679,6 @@ _.Zones =
 							q(41342),	-- Thick Bear Hide
 							q(42182),	-- To Battle!
 							q(42183),	-- To Battle!
-							q(41930),	-- Valor Calls
 							q(43454),	-- WANTED: Egyl the Enduring
 							q(43620),	-- WANTED: Egyl the Enduring
 							q(43434),	-- WANTED: Fathnyr
@@ -2901,11 +2898,19 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(41984, {	-- The Creeping Mists
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41949, {	-- The Drekirjar Return
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
 					q(42013, {	-- The Helmouth
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41930, {	-- Valor Calls
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

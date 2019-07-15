@@ -2752,7 +2752,6 @@ _.Zones =
 					q(45071),	-- Barrels o' Fun
 					q(40978),	-- Bears Behaving Badly
 					q(40951),	-- Bitestone Bazaar
-					q(40925),	-- Bitestone Burglary
 					q(40980),	-- Boilback Plague
 					q(41310),	-- Border Reinforcements
 					q(41308),	-- Border Reinforcements
@@ -2769,7 +2768,6 @@ _.Zones =
 					q(41201),	-- Coarse Leystone Outcropping
 					q(46183),	-- Commander Zarthak
 					q(41699),	-- Crabby Crunchies
-					q(41622),	-- Crawliac's Legacy
 					q(41202),	-- Crude Leystone Seams
 					q(41685),	-- DANGER: Ala'washte
 					q(41695),	-- DANGER: Defilia
@@ -2877,7 +2875,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(40925, {	-- Bitestone Burglary
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(41706, {	-- Briny Waters	
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(41622, {	-- Crawliac's Legacy
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

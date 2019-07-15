@@ -16,7 +16,6 @@ _.Zones =
 				q(41491),	-- Brimstone Destroyer
 				q(41447),	-- Burning Felslate Deposits
 				q(45307),	-- Claws for Alarm!
-				q(42151),	-- Clear the Skies
 				q(44867),	-- Contain their Advance
 				q(41195),	-- Culling Ambervale
 				q(44113),	-- DANGER: Achronos
@@ -42,7 +41,6 @@ _.Zones =
 				q(43930),	-- Fiends of Tel'anor
 				q(41304),	-- Flourishing Starlight Roses
 				q(43932),	-- Forces of Oppression
-				q(42209),	-- Freeing the Taken
 				q(41448),	-- Heavy Felslate Deposits
 				q(44811),	-- Help on the Way
 				q(41616),	-- Huge Runescale Koi
@@ -146,6 +144,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(42151, {	-- Clear the Skies
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44067, {	-- Consolidating Power
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -179,6 +181,10 @@ _.Zones =
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(42209, {	-- Freeing the Taken
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(42071, {	-- Honoring the Past
 					["lvl"] = 110,

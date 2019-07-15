@@ -13,7 +13,6 @@ _.Zones =
 				q(44784),	-- Advanced Wanding
 				q(41545),	-- Aethril Cluster
 				q(41286),	-- Aethril Cluster
-				q(42652),	-- Ancient Exemplars
 				q(41290),	-- Aqueous Aethril
 				q(45838),	-- Assault on Azsuna
 				q(41495),	-- Brilliant Leystone Seams
@@ -73,7 +72,6 @@ _.Zones =
 				q(41500),	-- Leyworms
 				q(45046),	-- Like the Wind
 				q(41527),	-- Lively Aethril
-				q(41598),	-- Lively Cursed Queenfish
 				q(41599),	-- Lively Cursed Queenfish
 				q(41264),	-- Lively Cursed Queenfish
 				q(41454),	-- Luminous Leystone Outcropping
@@ -105,7 +103,6 @@ _.Zones =
 				q(41322),	-- Unscratched Hippogryph Scale
 				q(42160),	-- Unwelcome Visitors
 				q(42636),	-- WANTED: Arcanist Shal'iman
-				q(43605),	-- WANTED: Arcanist Shal'iman
 				q(42620),	-- WANTED: Arcavellus
 				q(43606),	-- WANTED: Arcavellus
 				q(43426),	-- WANTED: Brogozog
@@ -132,6 +129,10 @@ _.Zones =
 				q(44788),	-- Work Study: Bestiaries of Azsuna
 --]]
 				q(42014, {	-- A Tainted Vintage
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42652, {	-- Ancient Exemplars
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -223,6 +224,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41598, {	-- Lively Cursed Queenfish
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
 				q(46164, {	-- Mal'serus (Invasion WQ)
 					["lvl"] = 98,
 					["collectible"] = false,
@@ -306,6 +312,10 @@ _.Zones =
 					},
 				}),
 				q(42924, {	-- Vault of the Wardens: A Grim Matter
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43605, {	-- WANTED: Arcanist Shal'iman
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

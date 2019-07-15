@@ -27,7 +27,6 @@ _.Zones =
 					q(45969),	-- Defense of the Ancient
 					q(46829),	-- Elemental Abuse
 					q(46288),	-- Everyone to the Front
-					
 					q(46126),	-- Fel-Corrupted Feathers
 					q(46077),	-- Felbound Spirits
 					q(46072),	-- Full Fel
@@ -40,7 +39,6 @@ _.Zones =
 					q(45743),	-- Judgment of Odyn
 					q(45776),	-- Keys are a Crutch
 					q(45653),	-- Kill it with Fire!
-					q(45472),	-- Kraken Eggs
 					q(46308),	-- Leave a Trail
 					q(46046),	-- Life's a Lich
 					q(46754),	-- Magical Beasts
@@ -60,7 +58,6 @@ _.Zones =
 					q(45626),	-- Set You Up the Bomb!
 					q(46945),	-- Si'vash
 					q(46360),	-- Simply Stunning
-					q(46236),	-- Stonebound Soldiers
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
 					q(46942),	-- The Cost of Power
@@ -151,6 +148,10 @@ _.Zones =
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
+				q(45472, {	-- Kraken Eggs
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46707, {	-- Minion! Kill That One Too!
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -185,6 +186,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46109, {	-- Stand!
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46236, {	-- Stonebound Soldiers
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

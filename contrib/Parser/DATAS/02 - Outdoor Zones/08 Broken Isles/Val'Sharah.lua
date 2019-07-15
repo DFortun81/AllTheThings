@@ -2003,6 +2003,10 @@ _.Zones =
 					}),
 				}),
 				n(-34,  {	-- World Quests
+					q(44033, {	-- Aw, Nuts!
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(45070, {	-- Barrels o' Fun
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2096,6 +2100,10 @@ _.Zones =
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
+					}),
+					q(42145, {	-- Out of the Woodwork
+						["lvl"] = 110,
+						["collectible"] = false,
 					}),
 					q(41956, {	-- Petrified Acolytes
 						["lvl"] = 110,
