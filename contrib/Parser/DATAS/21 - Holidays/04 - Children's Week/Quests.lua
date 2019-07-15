@@ -1653,7 +1653,11 @@ _.Holidays =
 						["races"] = HORDE_ONLY,
 					},
 					-- To Dorn
---					qh(11357),	-- Masked Orphan Matron
+					--[[
+					q(11357, {	-- Masked Orphan Matron
+						["races"] = HORDE_ONLY,
+					}),
+					]]--
 				},
 			},
 		},

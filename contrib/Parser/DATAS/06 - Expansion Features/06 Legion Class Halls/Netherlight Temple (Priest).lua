@@ -26,19 +26,22 @@ _.ExpansionFeatures =
 								102333,	-- Hooded Priestess (Alliance)
 							},
 						}),	
-						qh(40706, {	-- A Legend You Can Hold
+						q(40706, {	-- A Legend You Can Hold
 							["sourceQuests"] = { 40705 },	-- Priestly Matters
+							["races"] = HORDE_ONLY,
 							["qg"] = 101314,	-- Alonsus Faol
 						}),	
-						qh(43935, {	-- A Second Legend
+						q(43935, {	-- A Second Legend
 							["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+							["races"] = HORDE_ONLY,
 							["coord"] = { 51.1, 48.2, 702 },
 							["lvl"] = 102,
 							["qg"] = 110564,	-- Alonsus Faol
 						}),	
-						qh(44407, {	-- The Third Legend
+						q(44407, {	-- The Third Legend
 							["sourceQuests"] = { 43935 },	-- A Second Legend
 							["qg"] = 110564,	-- Alonsus Faol
+							["races"] = HORDE_ONLY,
 						}),	
 						i(128868, {	-- Light's Wrath
 							["g"] = {
@@ -75,28 +78,31 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(128825, {	-- T'uure, Beacon of the Naaru
-							["g"] = {
-								qh(41957, {	-- The Vindicator's Plea
-									["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
-									["qg"] = 101314,	-- Alonsus Faol
-								}),	
-								qh(41966, {	-- House Call
-									["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
-									["qg"] = 105602,	-- Vindicator Boros
-								}),	
-								qh(41967, {	-- Out of the Darkness
-									["sourceQuests"] = { 41966 },	-- House Call
-									["qg"] = 105603,	-- Defender Barrem
-								}),	
-								qh(41993, {	-- Salvation From On High
-									["sourceQuests"] = { 41967 },	-- Out of the Darkness
-									["qg"] = 105684,	-- Alora
-								}),	
-								qh(42074, {	-- Return of the Light
-									["sourceQuests"] = { 41993 },	-- Salvation From On High
-									["qg"] = 106011,	-- Jace  Darkweaver
-								}),
-							},
+							q(41957, {	-- The Vindicator's Plea
+								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+								["qg"] = 101314,	-- Alonsus Faol
+								["races"] = HORDE_ONLY,
+							}),	
+							q(41966, {	-- House Call
+								["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
+								["qg"] = 105602,	-- Vindicator Boros
+								["races"] = HORDE_ONLY,
+							}),	
+							q(41967, {	-- Out of the Darkness
+								["sourceQuests"] = { 41966 },	-- House Call
+								["qg"] = 105603,	-- Defender Barrem
+								["races"] = HORDE_ONLY,
+							}),	
+							q(41993, {	-- Salvation From On High
+								["sourceQuests"] = { 41967 },	-- Out of the Darkness
+								["qg"] = 105684,	-- Alora
+								["races"] = HORDE_ONLY,
+							}),	
+							q(42074, {	-- Return of the Light
+								["sourceQuests"] = { 41993 },	-- Salvation From On High
+								["qg"] = 106011,	-- Jace  Darkweaver
+								["races"] = HORDE_ONLY,
+							}),
 						}),
 						i(128827, {	-- Xal'atah, Blade of the Black Empire
 							i(133958),	-- Secrets of the Void 
@@ -400,13 +406,6 @@ _.ExpansionFeatures =
 					--[[ Artifact Appearance Quests Commented Out For Now
 					q(43420, {	-- A Hero's Weapon
 						sp(219663)	-- Heroic Weapons [No item associated]
-					}),
-					
-						["sourceQuests"] = {  },	-- 
-						["classes"] = { 5 },	-- Priest
-						["coord"] = { , , 702 },
-						["lvl"] = ,
-						["qg"] = ,	-- 
 					}),
 					--]]
 				}),

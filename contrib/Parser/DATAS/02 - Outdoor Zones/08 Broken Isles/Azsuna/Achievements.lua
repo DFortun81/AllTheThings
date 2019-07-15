@@ -70,8 +70,12 @@ _.Zones =
 						q(42222),	-- Empyrean Society Report
 					}),
 					cl(4, {	-- Rogue
-						qh(46324),	-- False Orders
-						qa(45835),	-- False Orders
+						q(46324, {	-- False Orders
+							["races"] = HORDE_ONLY,
+						}),
+						q(45835, {	-- False Orders
+							["races"] = ALLIANCE_ONLY,
+						}),
 					}),
 					cl(9, {	-- Warlock
 						q(39179),	-- Bloodstone Bandit

@@ -10,11 +10,11 @@ _.ExpansionFeatures =
 				626,	-- The Hall of Shadows (Rogue)
 				740,	-- Shadowgore Citadel (Fangs of the Devourer Scenario)
 			},
-			["groups"] = {
+			["g"] = {
 				i(139781, {	-- Marin Noggenfogger's Lucky Coin
 					["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",
 					["qg"] = 102594,	-- Marin Noggenfogger <Baron of Gadgetzan>
-					["groups"] = {
+					["g"] = {
 						o(252273, {	-- Box of Throwing Daggers
 							i(139589),	-- Poisoned Throwing Knives
 							i(130322),	-- Mask of Artful Dodging
@@ -48,10 +48,10 @@ _.ExpansionFeatures =
 								["description"] = "Speak to Taoshi at the bottom level of the Order Hall to start the Troves of the Thunder King scenario. 1 Key to the Palace of Lei Shen is required for each attempt of this scenario.\n\nThis is the exact same scenario that was available during Mists of Pandaria. The mobs DO SCALE with level up to level 110 though.\n\nComplete the scenario (reaching the end, or until the timer runs out) looting chests and obtaining as many Burial Trove Keys as possible.",
 								["qg"] = 98100,	-- Taoshi
 								["maps"] = { 518 },
-								["groups"] = {
+								["g"] = {
 									i(95497, {	-- Burial Trove Key
 										["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
-										["groups"] = {
+										["g"] = {
 											i(139571, {	-- Tome of Otherwordly Venoms
 												artifact(891),	-- Find Hidden Artifact Skin
 											}),
@@ -103,12 +103,14 @@ _.ExpansionFeatures =
 					q(42140, {
 						["qg"] = 98092,	-- Nikki the Gossip
 					}),	-- A More Wretched Hive of Scum and Villainy
-					qa(46089, {	-- The Sunken Vault
+					q(46089, {	-- The Sunken Vault
 						["lvl"] = 110,
+						["races"] = ALLIANCEE_ONLY,
 						["classes"] = {4},
 					}),
-					qh(46178, {	-- The Sunken Vault
+					q(46178, {	-- The Sunken Vault
 						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["classes"] = {4},
 					}),
 					q(45848, {	-- Fit For a Pirate
@@ -134,68 +136,70 @@ _.ExpansionFeatures =
 					--Followers Sort later
 					q(44181, {	-- Champion: Fleet Admiral Tethys
 						["qg"] = 94159,		-- Fleet Admiral Tethys
-						["groups"] = {
+						["g"] = {
 							follower(780),	-- Fleet Admiral Tethys
 						},
 					}),
 					q(43262, {	-- Champion: Garona Halforcen
 						["qg"] = 94141,		-- Garona Halforcen
-						["groups"] = {
+						["g"] = {
 							follower(778),	-- Garona Halforcen
 						},
 					}),
 					q(44183, {	-- Champion: Lord Jorach Ravenholdt
 						["qg"] = 101513,	-- Lord Jorach Ravenholdt
-						["groups"] = {
+						["g"] = {
 							follower(779),	-- Lord Jorach Ravenholdt
 						},
 					}),
 					q(44180, {	-- Champion: Marin Noggenfogger
 						["qg"] = 102594,	-- Marin Noggenfogger <Baron of Gadgetzan>
-						["groups"] = {
+						["g"] = {
 							follower(890),	-- Marin Noggenfogger
 						},
 					}),
 					q(43724, {	-- Champion: Master Mathias Shaw
 						["qg"] = 110953,	-- Master Mathias Shaw <Leader of SI:7>
-						["groups"] = {
+						["g"] = {
 							follower(893),	-- Master Mathias Shaw
 						},
 					}),
-					qa(46059, {	-- Champion: Tess Greymane
+					q(46059, {	-- Champion: Tess Greymane
 						["qg"] = 94138,		-- Princess Tess Greymane
-						["groups"] = {
+						["races"] = ALLIANCEE_ONLY,
+						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
 					}),
-					qh(46058, {	-- Champion: Lilian Voss
+					q(46058, {	-- Champion: Lilian Voss
 						["qg"] = 98099,		-- Lilian Voss
-						["groups"] = {
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
 					}),
 					q(43723, {	-- Champion: Taoshi
 						["qg"] = 98100,		-- Taoshi
-						["groups"] = {
+						["g"] = {
 							follower(892),	-- Taoshi
 						},
 					}),
 					q(42800, {	-- Champion: Valeera Sanguinar
 						["qg"] = 98102,		-- Valeera Sanguinar
-						["groups"] = {
+						["g"] = {
 							follower(891),	-- Valeera Sanguinar
 						},
 					}),
 					q(43261, {	-- Champion: Vanessa VanCleef
 						["qg"] = 102636,	-- Vanessa VanCleef
-						["groups"] = {
+						["g"] = {
 							follower(591),	-- Vanessa VanCleef
 						},
 					}),
 				}),
 				--[[
 				n(98093, {	-- Scouting Map
-					["groups"] = {
+					["g"] = {
 						-- Blank for Class Only Missions in the future
 					},
 					["achievementID"] = 11217,
@@ -248,7 +252,7 @@ _.ExpansionFeatures =
 						i(140556),	-- Shortblade of the Uncrowned
 						{
 							["itemID"] = 139742,		-- Helm
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
@@ -257,7 +261,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139744,		-- Shoulders
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
@@ -266,7 +270,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139739,		-- Chestpiece
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
@@ -275,7 +279,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139746,		-- Bracers
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
@@ -284,7 +288,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139741,		-- Gloves
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
@@ -293,7 +297,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139745,		-- Belt
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
@@ -302,7 +306,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139743,		-- Leggings
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
@@ -311,7 +315,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139740,		-- Boots
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
@@ -331,7 +335,7 @@ _.ExpansionFeatures =
 					}),
 					n(121282, {	-- Zan Shivsproket
 						["sourceQuest"] = 46178,	-- Hiding In Plain Sight
-						["groups"] = {
+						["g"] = {
 							i(143490),	-- Bloody Reins of Dark Portent (MOUNT!)
 							i(143491),	-- Mephitic Reins of Dark Portent (MOUNT!)
 							i(143492),	-- Midnight Black Reins of Dark Portent (MOUNT!)
