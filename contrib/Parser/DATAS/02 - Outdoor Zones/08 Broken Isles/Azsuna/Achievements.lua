@@ -6,7 +6,29 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
 			n(-4, {		-- Achievements
-				ach(9696, {	-- Family Familiar
+				ach(11261),		-- Adventurer of Azsuna
+				ach(10763, {	-- Azsuna Matata
+					crit(1, {	-- Behind Legion Lines
+						["sourceQuests"] = { 37449 },	-- Dark Revelations
+					}),
+					crit(2, {	-- Defending Azurewing Repose
+						["sourceQuests"] = { 42756 },	-- Hunger's End
+					}),
+					crit(3, {	-- Azsuna versus Azshara
+						["sourceQuests"] = { 37470 },	-- The Head of the Snake
+					}),
+					crit(4, {	-- Against the Giants
+						["sourceQuests"] = { 37566 },	-- The Prince is Going Down
+					}),
+					crit(5, {	-- Mak'rana and the Fate of the Queen's Reprisal
+						["sourceQuests"] = { 
+							40794,	-- Fate of the Queen's Reprisal  (Alliance)
+							42244,	-- Fate of the Queen's Reprisal (Horde)
+							37657,	-- Making the World Safe for Profit
+						},
+					}),
+				}),
+				ach(9696, {		-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
@@ -143,6 +165,14 @@ _.Zones =
 						}
 					})),
 				})),
+				ach(10877, {	-- Pillars of Creation
+					["collectible"] = false,
+					["g"] = {
+						crit(2, {	-- Tidestone of Golganneth
+							["sourceQuests"] = { 42213 },	-- Eye of Azshara: The Tidestone of Golganneth
+						}),
+					},
+				}),  
 			}),
 		}),
 	}),

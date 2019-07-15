@@ -627,16 +627,6 @@ _.Zones =
 				}),
 			--	q(44271)	-- Eye of Azshara -- mission board
 			--	q(44270)	-- Eye of Azshara -- mission board
-				q(42213,  {	-- Eye of Azshara: The Tidestone of Golganneth
-					["sourceQuests"] = { 38286 },	-- Eye of Azshara: Wrath of Azshara
-					["qg"] = 106780,	-- Tidestone of Golganneth
-					["g"] = {
-						i(140622),	-- Hardshell Greatbelt
-						i(140623),	-- Brightscale Waistguard
-						i(140624),	-- Bitterbrine Binding
-						i(140625),	-- Waistband of the Hatecoil Oracles
-					},
-				}),
 				q(43852,  {	-- Fancy Lads and Buccaneers
 					["sourceQuests"] = { 43841 },	-- Convincin' Old Yancey
 					["classes"] = { 4 },

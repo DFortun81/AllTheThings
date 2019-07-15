@@ -262,7 +262,7 @@ _.Zones =
 					}),
 					ach(10877, {	-- Pillars of Creation
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							crit(4, {	-- Hammer of Khaz'goroth
 								["sourceQuests"] = { 42454 },	-- The Hammer of Khaz'goroth
 							}),

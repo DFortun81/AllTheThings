@@ -9,6 +9,50 @@ _.Zones =
 				q(38857, {	-- A Favor for Mr. Shackle
 					["coord"] = { 50.2, 61.0, 630 },
 					["qg"] = 88863,	-- Seska Seafang
+					["g"] = {
+						i(133039),	-- Breath of Al'Akir
+						i(133037),	-- Zandalari Voodoo Totem
+						i(133036),	-- Ravenous Seed
+						i(133035),	-- Myzrael Shard
+						i(133034),	-- Were-Yeti Paw
+						i(133033),	-- Sorceror's Ember
+						i(133032),	-- Fel-Fire Demon Claw
+						i(133031),	-- Rare White Tiger Heart
+						i(133030),	-- 'Procured' Kirin Tor Wand Tip
+						i(133029),	-- Dathrohan's Signet
+					},
+				}),
+				q(37991, {	-- Agapanthus
+					["sourceQuests"] = { 37853 },	-- The Death of the Eldest
+					["coord"] = { 48.0, 27.1, 630 },
+					["qg"] = 89795,	-- Emmigosa
+				}),
+				q(37492, {	-- A Rather Long Walk
+					["sourceQuests"] = { 37256 },	-- They Came From the Sea
+					["coord"] = { 47.0, 41.4, 630 },
+					["qg"] = 88798,	-- Lady Irisse
+				}),
+				q(42694, {	-- Back from the Dead
+					["sourceQuests"] = {
+						42692,	-- Children of Nar'thalas
+						42693,	-- You Never Know Until You Scry
+					},
+					["coord"] = { 53.3, 45.4, 630 },
+					["qg"] = 108328,	-- Olothil Starlance
+					["g"] = {
+						i(138820),	-- Starlance Pauldrons
+						i(138821),	-- Starlance Mantle
+						i(138822),	-- Starlance Shoulderpads
+						i(138824),	-- Starlance Amice
+						i(138823),	-- Starlance's Protective Ward
+						i(138819),	-- Defiance of the Stalwart Survivors
+						i(138837),	-- Ghostly Defenses
+					},
+				}),
+				q(37507, {	-- Boss Whalebelly's in Charge
+					["sourceQuests"] = { 37496 },	-- Infiltrating Shipwreck Arena
+					["coord"] = { 50.0, 48.4, 630 },
+					["qg"] = 88873,	-- Okuna Longtusk
 				}),
 				q(38407, {	-- Bottled Up
 				--	["itemID"] = 122699,	-- Okuna's Message
@@ -41,6 +85,31 @@ _.Zones =
 					["coord"] = { 53.3, 45.4, 630 },
 					["qg"] = 89326,	-- Kallista Starlance
 				}),
+				q(37449, {	-- Dark Revelations
+					["sourceQuests"] = {
+						37450,	-- Saving Stellagosa
+						37656,	-- Fel Machinations
+					},
+					["qg"] = 90474,	-- Kor'vas Bloodthorn
+					["g"] = {
+						i(132984),	-- Abandoned Highborne Mana Crystal
+						i(132985),	-- Blood of the Vanquished Highborne
+						i(133002),	-- Coalesced Shadows
+						i(132996),	-- Cursed Felstalker Flesh
+						i(132987),	-- Everburning Ruin Ember
+						i(132995),	-- Faronaar Arcane Power-Core
+						i(132990),	-- Fel-Resistant Clipping
+						i(132989),	-- Legion Iron Nugget
+						i(132991),	-- Mortiferous' Corruption
+						i(132993),	-- Nethrandamus' Zephyr
+						i(132999),	-- Preserved Highborne Warrior's Fist
+						i(133001),	-- Soul Fragment of Faronaar Innocent
+						i(133000),	-- Stalwart Faronaar Keystone
+						i(133004),	-- Swirling Demonic Whispers
+						i(132988),	-- The Dreadlord's Chill Eye
+						i(132998),	-- The Sufferer's Fury
+					},
+				}),
 				q(37653, {	-- Demon Souls
 					["sourceQuests"] = {
 						38834,	-- Into the Fray (Non-DH version)
@@ -49,10 +118,102 @@ _.Zones =
 					["coord"] = { 43.2, 43.1, 630 },
 					["qg"] = 89398,	-- Allari the Souleater
 				}),
+				q(37736, {	-- Dressing With Class
+					["sourceQuests"] = { 37468 },	-- Into the Academy
+					["coord"] = { 53.4, 48.9, 631 },	-- Nar'thalas Academy
+					["qg"] = 89660,	-- Thyrillion
+					["g"] = {
+						i(138873),	-- Mystical Frosh Hat (TOY!)
+					},
+				}),
+				q(38286, {	-- Eye of Azshara: Wrath of Azshara
+					["sourceQuests"] = { 37470 },	-- The Head of the Snake
+					["coord"] = { 61.7, 41.1, 630 },
+					["qg"] = 91403,	-- Prince Farondis
+				}),
 				q(42375, {	-- Eye See You
 					["sourceQuests"] = { 42372 },	-- Felblaze Ingress
 					["coord"] = { 63.8, 29.0, 630 },
 					["qg"] = 107244,	-- Tehd Shoemaker
+				}),
+				q(40794, {	-- Fate of the Queen's Reprisal (A)
+					["sourceQuests"] = { 37659 },	-- The Captain's Foot Locker
+				--	["objectID"] = 239328,	-- Captain's Foot Locker
+					["coord"] = { 65.6, 56.8, 630 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(121482),	-- Cloak of the Greywatch
+						i(138857),	-- SI:7 Standard Issue Vest
+						i(138856),	-- Alliance Auxillary Hauberk
+						i(138855),	-- Alliance Crusader's Breastplate
+						i(138858),	-- Stormwind Clergy Vestments
+					},
+				}),
+				q(42244, {	-- Fate of the Queen's Reprisal (H)
+					["sourceQuests"] = { 37659 },	-- The Captain's Foot Locker
+				--	["objectID"] = 239328,	-- Captain's Foot Locker
+					["coord"] = { 65.6, 56.8, 630 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(138859),	-- Royal Apothecary Robe
+						i(121488),	-- Royal Apothecary Drape
+						i(138862),	-- Decorated Deathstalker Jerkin
+						i(138861),	-- Troll Auxillary Chainmail
+						i(138860),	-- Kor'kron Breastplate
+					},
+				}),
+				q(37656, {	-- Fel Machinations
+					["sourceQuests"] = {
+						36920,	-- From Within (Non-DH Version)
+						40815,	-- From Within (DH - Altruis)
+						44140,	-- From Within (DH - Kayn)
+					},
+					["coord"] = { 41.2, 50.5, 630 },
+					["qg"] = 90474,	-- Kor'vas Bloodthorn
+				}),
+				q(36920, {	-- From Within (Non-DH version)
+					["sourceQuests"] = { 37660 },	-- The Scythe of Souls
+					["classes"] = exclude(12, ALL_CLASSES),	-- all classes, excluding Demon Hunter
+					["coord"] = { 43.5, 43.4, 630 },
+					["qg"] = 89362,	-- Kayn Sunfury
+				}),
+				q(40815, {	-- From Within (DH version, must choose Altruis)
+					["sourceQuests"] = { 37660 },	-- The Scythe of Souls
+					["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests.",
+					["classes"] = { 12 },	-- Demon Hunter
+					["qg"] = 101927,	-- Altruis the Sufferer
+				}),
+				q(44140, {	-- From Within (DH version, must choose Kayn)
+					["sourceQuests"] = { 37660 },	-- The Scythe of Souls
+					["description"] = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests.",
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 43.5, 43.4, 630 },
+					["qg"] = 89362,	-- Kayn Sunfury
+				}),
+				q(37678, {	-- Hit the Books
+					["sourceQuests"] = { 37468 },	-- Into the Academy
+					["coord"] = { 53.4, 48.9, 631 },	-- Nar'thalas Academy
+					["qg"] = 89849,	-- Andellis
+					["g"] = {
+						i(138843),	-- The Librarian's Handwraps
+						i(138842),	-- Bookbinding Wraps
+						i(138841),	-- Shark-Link Gloves
+						i(138840),	-- Fortified Librarian's Grips
+						i(138844),	-- Academy Girdle
+						i(138847),	-- Academy Cord
+						i(138846),	-- Academy Belt
+						i(138845),	-- Academy Chain
+					},
+				}),
+				q(37496, {	-- Infiltrating Shipwreck Arena
+					["sourceQuests"] = { 38407 },	-- Bottled Up
+					["coord"] = { 47.0, 41.4, 630 },
+					["qg"] = 88798,	-- Lady Irisse
+				}),
+				q(37468, {	-- Into the Academy
+					["sourceQuests"] = { 37467 },	-- The Walk of Shame
+					["coord"] = { 54.2, 42.0, 630 },
+					["qg"] = 88890,	-- Prince Farondis
 				}),
 				q(38834, {	-- Into the Fray (Non-DH version)
 					["sourceQuests"] = { 41220 },	-- Down to Azsuna
@@ -65,6 +226,16 @@ _.Zones =
 					["classes"] = { 12 },	-- Demon Hunter
 					["coord"] = { 45.1, 42.9, 630 },
 					["qg"] = 93337,	-- Archmage Khadgar
+				}),
+				q(38443, {	-- Journey to the Repose
+					["sourceQuests"] = { 37449 },	-- Dark Revelations
+					["coord"] = { 43.5, 43.4, 630 },
+					["qg"] = 93326,	-- Archmage Khadgar
+				}),
+				q(37528, {	-- Let Sleeping Giants Lie
+					["sourceQuests"] = { 37507 },	-- Boss Whalebelly's in Charge
+					["coord"] = { 50.0, 48.4, 630 },
+					["qg"] = 88873,	-- Okuna Longtusk
 				}),
 				q(38460, {	-- Let's Make A Deal
 					["sourceQuests"] = { 42238 },	-- Missing Demon
@@ -92,6 +263,69 @@ _.Zones =
 						}),	
 					},
 				}),
+				q(38232, {	-- Minion! Kill Them!
+					["sourceQuests"] = { 38460 },	-- Let's Make A Deal
+					["coord"] = { 62.8, 51.4, 630 },
+					["qg"] = 91166,	-- Daglop
+				}),
+				q(37536, {	-- Morale Booster
+					["sourceQuests"] = { 37510 },	-- Sternfathom's Champion
+					["coord"] = { 47.9, 48.7, 630 },
+					["qg"] = 88923,	-- Sternfathom
+					["g"] = {
+						i(133828),	-- Recipe: Fighter Chow (Rank 1)
+					},
+				}),
+				q(37486, {	-- Nar'thalas Still Suffers
+					["sourceQuests"] = { 37497 },	-- Trailing the Tidestone
+					["coord"] = { 51.7, 44.2, 630 },
+					["qg"] = 88867,	-- Prince Farondis
+					["g"] = {
+						i(121487),	-- Nar'thalas Protector's Cape
+						i(132911),	-- Seal of House Farondis
+					},
+				}),
+				q(37542, {	-- No Time for Tryouts
+					["sourceQuests"] = { 37507 },	-- Boss Whalebelly's in Charge
+					["coord"] = { 50.0, 48.4, 630 },
+					["qg"] = 88873,	-- Okuna Longtusk
+					["g"] = {
+						i(121492),	-- Shiny Ookin' Bauble
+						i(121494),	-- Mundane Ookin' Curio
+						i(121490),	-- Precious Ookin' Coin
+						i(132954),	-- Polished Dookin Ring
+					},
+				}),
+				q(37257, {	-- Our Very Bones
+					["sourceQuests"] = { 37733 },	-- Prince Farondis
+					["coord"] = { 46.9, 41.2, 630 },
+					["qg"] = 88115,	-- Prince Farondis
+					["g"] = {
+						i(121432),	-- Leywalker Leggings
+						i(121434),	-- Ruin-Stalker Breeches
+						i(121433),	-- Seaspray Leggings
+						i(121431),	-- Nar'thalas Legguards
+						i(132941),	-- Traitorous Robe
+						i(132939),	-- Nightglaive's Vest
+						i(132938),	-- Apostate's Hauberk
+						i(132937),	-- Traitor's Bane Breastplate
+					},
+				}),
+				q(37729, {	-- Pop Quiz: Advanced Rune Drawing
+					["sourceQuests"] = { 42371 },	-- Study Hall: Combat Research
+					["coord"] = { 29.5, 42.6, 631 },	-- Nar'thalas Academy
+					["qg"] = 89661,	-- Instructor Nidriel
+				}),
+				q(37728, {	-- Presentation is Everything
+					["sourceQuests"] = { 37256 },	-- They Came From the Sea
+					["coord"] = { 47.0, 41.3, 630 },
+					["qg"] = 89341,	-- Magister Garuhod
+				}),
+				q(37733, {	-- Prince Farondis
+					["sourceQuests"] = { 37256 },	-- They Came From the Sea
+					["coord"] = { 48.4, 34.4, 630 },
+					["qg"] = 89023,	-- Nightwatcher Idri
+				}),
 				q(37658, {	-- Reignite the Wards
 					["sourceQuests"] = {
 						38834,	-- Into the Fray (Non-DH version)
@@ -110,292 +344,300 @@ _.Zones =
 						i(141625),	-- Soul-Trapper's Greaves
 					},
 				}),
-				q(42220, {	-- Shipwrecked Sailors
+				q(37538, {	-- Round 1, Fight!
+					["sourceQuests"] = { 37536 },	-- Morale Booster
+					["coord"] = { 47.9, 48.7, 630 },
+					["qg"] = 89048,	-- Sternfathom
+					["g"] = {
+						i(121438),	-- Leywalker Amice
+						i(121436),	-- Ruin-Stalker Spaulders
+						i(121439),	-- Seaspray Mantle
+						i(121437),	-- Nar'thalas Pauldrons
+						i(132901),	-- Combatant's Halo
+						i(132899),	-- Pit-Fighter's Headgear
+						i(132900),	-- Scrapper's Coif
+						i(132902),	-- Pit-Brawler's Helm
+					},
+				}),
+				q(37530, {	-- Save Yourself
+					["sourceQuests"] = { 37469 },	-- The Tidestone: Shattered
+					["coord"] = { 57.8, 43.3, 630 },
+					["qg"] = 89009,	-- Prince Farondis
+					["g"] = {
+						i(121420),	-- Leywalker Treads
+						i(121422),	-- Ruin-Stalker Boots
+						i(121421),	-- Seaspray Sabatons
+						i(121419),	-- Nar'thalas Warboots
+						i(132946),	-- Leywalker Pants
+						i(132945),	-- Ruin-Stalker Pants
+						i(132944),	-- Seaspray Pants
+						i(132942),	-- Nar'thalas Greaves
+					},
+				}),
+				q(37450, {	-- Saving Stellagosa
+					["sourceQuests"] = {
+						36920,	-- From Within (Non-DH Version)
+						40815,	-- From Within (DH - Altruis)
+						44140,	-- From Within (DH - Kayn)
+					},
+					["coord"] = { 41.2, 50.5, 630 },
+					["qg"] = 90474,	-- Kor'vas Bloodthorn
+					["g"] = {
+						i(132961),	-- Cape of Azure Fury
+						i(132964),	-- Stellagosa's Breath
+						i(132962),	-- The Jailer's Key
+						i(132963),	-- Young Drake's Impulse
+					},
+				}),
+				q(42220, {	-- Shipwrecked Sailors (A)
 					["coord"] = { 58.9, 57.8, 630 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(42268, {	-- Shipwrecked Sailors (H)
+					["coord"] = { 58.9, 57.8, 630 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(37510, {	-- Sternfathom's Champion
+					["sourceQuests"] = {
+						37528,	-- Let Sleeping Giants Lie
+						37542,	-- No Time for Tryouts
+					},
+					["coord"] = { 50.0, 48.4, 630 },
+					["qg"] = 88873,	-- Okuna Longtusk
+				}),
+				q(42371, {	-- Study Hall: Combat Research
+					["sourceQuests"] = { 42370 },	-- Wanding 101
+					["coord"] = { 30.9, 44.6, 631 },	-- Nar'thalas Academy
+					["qg"] = 107334,	-- Sythorne
+				}),
+				q(37659, {	-- The Captain's Foot Locker
+					["sourceQuests"] = { 37654 },	-- Maritime Law
+					["coord"] = { 64.2, 56.0, 630 },
+					["qg"] = 106881,	-- Looper Allen
+				}),
+				q(37853, {	-- The Death of the Eldest
+					["sourceQuests"] = { 38443 },	-- Journey to the Repose
+					["coord"] = { 47.9, 27.2, 630 },
+					["qg"] = 93354,	-- Archmage Khadgar
+				}),
+				q(37518, {	-- The Haunted Halls
+					["sourceQuests"] = {
+						37736,	-- Dressing With Class
+						37678,	-- Hit the Books
+					},
+					["coord"] = { 53.4, 48.9, 631 },	-- Nar'thalas Academy
+					["qg"] = 89660,	-- Thyrillion
+				}),
+				q(37730, {	-- The Headmistress' Keys
+					["sourceQuests"] = { 37729 },	-- Pop Quiz: Advanced Rune Drawing
+					["coord"] = { 29.5, 42.6, 631 },	-- Nar'thalas Academy
+					["qg"] = 89661,	-- Instructor Nidriel
+					["g"] = {
+						i(121484),	-- Psychotic Scholar's Chain
+						i(132910),	-- Leywalker Bracers
+						i(132909),	-- Ruin-Stalker Bindings
+						i(132908),	-- Seaspray Bracers
+						i(132907),	-- Nar'thalas Bracers
+					},
+				}),
+				q(37470, {	-- The Head of the Snake
+					["sourceQuests"] = { 37530 },	-- Save Yourself
+					["coord"] = { 57.8, 43.4, 630 },
+					["qg"] = 89009,	-- Prince Farondis
+					["g"] = {
+						i(133028),	--	Gale of Azshara
+						i(133026),	--	Cursed Dissection Blade
+						i(133025),	--	Enchanted El'dranil Frond
+						i(133024),	--	Oracle's Sharpening Stone
+						i(133023),	--	Depths Shard Ice Crystal
+						i(133022),	--	Eternal Mage Flame
+						i(133020),	--	Blood of the Snake
+						i(133019),	--	Jewel of Nar'thalas
+						i(133061),	--	Heron's Grace
+						i(133059),	--	Corrupted Farondis House Insignia
+						i(133058),	--	Life-Giving Pearl
+						i(133057),	--	Etched Talisman of Nar'thalas
+						i(133056),	--	Azshara's Tempest
+						i(133055),	--	Azshara's Ire
+						i(133053),	--	Resilient Skrog Blood
+						i(133052),	--	Instructor's Crystal Head
+					},
+				}),
+				q(42271, {	-- Their Dying Breaths
+					["sourceQuests"] = { 37991 },	-- Agapanthus
+					["coord"] = { 48.8, 26.4, 630 },
+					["qg"] = 90543,	-- Agapanthus
+					["g"] = {
+						i(121481),	-- Tranquil Azurewing Band
+						i(121425),	-- Leywalker Gloves
+						i(121423),	-- Ruin-Stalker Gloves
+						i(121426),	-- Seaspray Gauntlets
+						i(121424),	-- Nar'thalas Gauntlets
+					},
+				}),
+				q(37855, {	-- The Last of the Last
+					["sourceQuests"] = { 42271 },	-- Their Dying Breaths
+					["coord"] = { 48.0, 26.9, 630 },
+					["qg"] = 89975,	-- Senegos
+				}),
+				q(37727, {	-- The Magister of Mixology
+					["sourceQuests"] = { 37256 },	-- They Came From the Sea
+					["coord"] = { 47.0, 41.3, 630 },
+					["qg"] = 89341,	-- Magister Garuhod
+					["g"]  = {
+						i(133814),	-- Recipe: Faronaar Fizz (Rank 1)
+					},
+				}),
+				q(37566, {	-- The Prince is Going Down
+					["sourceQuests"] = { 37565 },	-- The Right Weapons for the Job
+					["coord"] = { 53.4, 63.0, 630 },
+					["qg"] = 89051,	-- Okuna Longtusk
+					["g"] = {
+						i(121441),	-- Leywalker Waistwrap
+						i(121443),	-- Ruin-Stalker Belt
+						i(121442),	-- Seaspray Belt
+						i(121440),	-- Nar'thalas Girdle
+						i(132936),	-- Buccaneer's Lucky Chain
+					},
+				}),
+				q(37565, {	-- The Right Weapon for the Job
+					["sourceQuests"] = { 37538 },	-- Round 1, Fight!
+				--	["objectID"] = 239120,	-- Okuna Longtusk's Pack
+					["coord"] = { 43.4, 24.4, 632 },	-- Oceanus Cove
+				}),
+				q(37660, {	-- The Scythe of Souls
+					["sourceQuests"] = {
+						37653,	-- Reignite the Wards
+						37653,	-- Demon Souls
+					},
+					["coord"] = { 43.2, 43.1, 630 },
+					["qg"] = 89398,	-- Allari the Souleateer
+					["g"] = {
+						i(129172),	-- Band of Demonic Guile
+						i(132951),	-- Leywalker Shoes
+						i(132949),	-- Ruin-Stalker Footpads
+						i(132948),	-- Seaspray Chain Boots
+						i(132947),	-- Nar'thalas Sabatons
+					},
+				}),
+				q(37469, {	-- The Tidestone: Shattered
+					["sourceQuests"] = { 37730 },	-- The Headmistress' Keys
+					["coord"] = { 53.4, 48.6, 631 },	-- Nar'thalas Academy
+					["qg"] = 89660,	-- Thyrillion
+				}),
+				q(37467, {	-- The Walk of Shame
+					["sourceQuests"] = { 37486 },	-- Nar'thalas Still Suffers
+					["coord"] = { 51.7, 44.2, 630 },
+					["qg"] = 88867,	-- Prince Farondis
+				}),
+				q(37256, {	-- They Came From the Sea
+					["sourceQuests"] = { 37690 },	-- Those Who Remember
+					["coord"] = { 48.4, 34.4, 630 },
+					["qg"] = 89023,	-- Nightwatcher Idri
+					["g"] = {
+						i(121428),	-- Leywalker Aurora
+						i(121430),	-- Ruin-Stalker Helm
+						i(121429),	-- Seaspray Helm
+						i(121427),	-- Nar'thalas Helm
+						i(132906),	-- Leywalker Cord
+						i(132905),	-- Ruin-Stalker Cord
+						i(132904),	-- Seaspray Cinch
+						i(132903),	-- Nar'thalas Belt
+					},
+				}),
+				q(37690, {	-- Those Who Remember
+					["sourceQuests"] = { 42271 },	-- Their Dying Breaths
+					["coord"] = { 48.0, 26.9, 630 },
+					["qg"] = 89975,	-- Senegos
+				}),
+				q(37497, {	-- Trailing the Tidestone
+					["sourceQuests"] = { 37257 },	-- Our Very Bones
+					["coord"] = { 47.0, 41.2, 630 },
+					["qg"] = 88115,	-- Prince Farondis
+				}),
+				q(42370, {	-- Wanding 101
+					["sourceQuests"] = { 37518 },	-- The Haunted Halls
+					["coord"] = { 29.7, 42.5, 631 },	-- Nar'thalas Academy
+					["qg"] = 89661,	-- Instructor Nidriel
 				}),
 				q(42693, {	-- You Never Know Until You Scry
 					["coord"] = { 53.3, 45.4, 630 },
 					["qg"] = 108328,	-- Olothil Starlance
 				}),
-				ach(10763, {	-- Azsuna Matata
-					crit(1, {	-- Behind Legion Lines [Verified & Fully Finished - 7/26/18; Lucetia]
-						q(37660, {	-- The Scythe of Souls
-							["qg"] = 89398,	-- Allari the Souleateer
-							["coord"] = { 43.2, 43.1, 630 },
-							["g"] = {
-								i(129172),	-- Band of Demonic Guile
-								i(132951),	-- Leywalker Shoes
-								i(132949),	-- Ruin-Stalker Footpads
-								i(132948),	-- Seaspray Chain Boots
-								i(132947),	-- Nar'thalas Sabatons
-							},
-							["sourceQuests"] = {
-								37653,	-- Reignite the Wards
-								37653,	-- Demon Souls
-							},
-						}),
-						q(36920, {	-- From Within (Non-DH version)
-							["qg"] = 89362,	-- Kayn Sunfury
-							["classes"] = exclude(12, ALL_CLASSES),
-							["sourceQuest"] = 37660,	-- The Scythe of Souls
-						}),
-						q(40815, {	-- From Within (DH version, must choose Altruis)
-							["qg"] = 101927,	-- Altruis the Sufferer
-							["classes"] = { 12 },	-- Demon Hunter
-							["sourceQuest"] = 37660,	-- The Scythe of Souls
-							["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests."
-						}),
-						q(44140, {	-- From Within (DH version, must choose Kayn)
-							["qg"] = 89362,	-- Kayn Sunfury
-							["coord"] = { 43.5, 43.4, 630 },
-							["classes"] = { 12 },	-- Demon Hunter
-							["sourceQuest"] = 37660,	-- The Scythe of Souls
-							["description"] = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests."
-						}),
-						q(37450, {	-- Saving Stellagosa
-							["qg"] = 90474,	-- Kor'vas Bloodthorn
-							["coord"] = { 41.2, 50.5, 630 },
-							["g"] = {
-								i(132961),	-- Cape of Azure Fury
-								i(132964),	-- Stellagosa's Breath
-								i(132962),	-- The Jailer's Key
-								i(132963),	-- Young Drake's Impulse
-							},
-							["sourceQuests"] = {
-								36920,	-- From Within (Non-DH Version)
-								40815,	-- From Within (DH - Altruis)
-								44140,	-- From Within (DH - Kayn)
-							},
-						}),
-						q(37656, {	-- Fel Machinations
-							["qg"] = 90474,	-- Kor'vas Bloodthorn
-							["coord"] = { 41.2, 50.5, 630 },
-							["sourceQuests"] = {
-								36920,	-- From Within (Non-DH Version)
-								40815,	-- From Within (DH - Altruis)
-								44140,	-- From Within (DH - Kayn)
-							},
-						}),
-						q(37449, {	-- Dark Revelations
-							["qg"] = 90474,	-- Kor'vas Bloodthorn
-							["coord"] = { 38.0, 57.6, 630 },
-							["g"] = {
-								i(132984),	-- Abandoned Highborne Mana Crystal
-								i(132985),	-- Blood of the Vanquished Highborne
-								i(133002),	-- Coalesced Shadows
-								i(132996),	-- Cursed Felstalker Flesh
-								i(132987),	-- Everburning Ruin Ember
-								i(132995),	-- Faronaar Arcane Power-Core
-								i(132990),	-- Fel-Resistant Clipping
-								i(132989),	-- Legion Iron Nugget
-								i(132991),	-- Mortiferous' Corruption
-								i(132993),	-- Nethrandamus' Zephyr
-								i(132999),	-- Preserved Highborne Warrior's Fist
-								i(133001),	-- Soul Fragment of Faronaar Innocent
-								i(133000),	-- Stalwart Faronaar Keystone
-								i(133004),	-- Swirling Demonic Whispers
-								i(132988),	-- The Dreadlord's Chill Eye
-								i(132998),	-- The Sufferer's Fury
-							},
-							["sourceQuests"] = {
-								37450,	-- Saving Stellagosa
-								37656,	-- Fel Machinations
-							},
-						}),
-					}),
-					crit(2, {	-- Defending Azurewing Repose
-						q(37853),	-- The Death of the Eldest
-						q(37991),	-- Agapanthus
-						q(42271,  {  	-- Their Dying Breaths
-							i(121425),
-							i(121423),
-							i(121426),
-							i(121424),
-							i(121481),	-- Tranquil Azurewing Band
-						}),
-						q(37855),	-- The Last of the Last
-						q(37856),	-- The Withered
-						q(37859),	-- The Consumed
-						q(37858, {	-- Stellagosa
-							["qg"] = 89978,	-- Projection of Senegos
-							["isBreadcrumb"] = true,
-						}),
-						q(37957,  {  	-- Runas the Shamed
-							["g"] = {
-								i(132971),	-- Nightfallen's Desperation
-								i(132970),	-- Runas' Nearly Depleted Ley Crystal
-								i(132969),	-- Talisman of the Lost Blue Flight
-								i(132975),	-- Nightfallen Mantle
-								i(132974),	-- Mana-Stalker Shoulderpads
-								i(132973),	-- Whelp Protector's Mantle
-								i(132972),	-- Azure Champion's Pauldrons
-							},
-							["sourceQuests"] = { 37858 },	-- Stellagosa
-						}),
-						q(37857),	-- Runas Knows the Way
-						q(37959,  {  	-- The Hunger Returns
-							i(138876), 		-- Runas' Crystal Grinder
-						}),
-						q(37960),	-- Leyline Abuse
-						q(37860),	-- You Scratch My Back...
-						q(37861,  {  	-- The Nightborne Prince
-							i(121444),
-							i(121447),
-							i(121446),
-							i(121445),
-							i(132929),
-							i(132928),
-							i(132927),
-							i(132926),
-						}),
-						q(37862),	-- Still Alive
-						q(38014,  {  	-- Feasting on the Dragon
-							i(121435),
-							i(121418),
-							i(121417),
-							i(121416),
-							i(132914),
-							i(132915),
-							i(132916),
-							i(132917),
-						}),
-						q(38015,  {  	-- On the Brink
-							i(129178),  	-- Emmigosa
-						}),	
-						q(42567),	-- Cursed to Wither
-						q(42756),	-- Hunger's End
-					}),
-					crit(3, {	-- Azsuna versus Azshara
-						q(37690),	-- Those Who Remember
-						q(37256,  {  	-- They Came From the Sea
-							i(121428),
-							i(121430),
-							i(121429),
-							i(121427),
-							i(132906),
-							i(132905),
-							i(132904),
-							i(132903),
-						}),
-						q(37733),	-- Prince Farondis
-						q(37257,  {  	-- Our Very Bones
-							i(121432),
-							i(121434),
-							i(121433),
-							i(121431),
-							i(132941),
-							i(132939),
-							i(132938),
-							i(132937),
-						}),
-						q(37497),	-- Trailing the Tidestone
-						q(37486,  {  	-- Nar'thalas Still Suffers
-							i(121487),
-							i(132911),	-- Seal of House Farondis
-						}),
-						q(37467),	-- The Walk of Shame
-						q(37468),	-- Into the Academy
-						q(37736,  {  	-- Dressing With Class
-							i(138873),  	-- Mystical Frosh Hat
-						}),
-						q(37678,  {  	-- Hit the Books
-							i(138843),
-							i(138842),
-							i(138841),
-							i(138840),
-							i(138844),
-							i(138847),
-							i(138846),
-							i(138845),
-						}),
-						q(37518),	-- The Haunted Halls
-						q(42370),	-- Wanding 101
-						q(42371),	-- Study Hall: Combat Research
-						q(37729),	-- Pop Quiz: Advanced Rune Drawing
-						q(37730,  {  	-- The Headmistress' Keys
-							i(132910),
-							i(132909),
-							i(132908),
-							i(132907),
-						}),
-						q(37469),	-- The Tidestone: Shattered
-						q(37530,  {  	-- Save Yourself
-							i(121420),
-							i(121422),
-							i(121421),
-							i(121419),
-							i(132946),
-							i(132945),
-							i(132944),
-							i(132942),
-						}),
-						q(37470),	-- The Head of the Snake
-					}),
-					crit(4, {	-- Against the Giants
-						q(37496),	-- Infiltrating Shipwreck Arena
-						q(37507),	-- Boss Whalebelly's in Charge
-						q(37542, {	-- No Time for Tryouts
-							i(132954),	-- Polished Dookin Ring
-						}),
-						q(37528),	-- Let Sleeping Giants Lie
-						q(37510),	-- Sternfathom's Champion
-						q(37536, {	-- Morale Booster
-							i(133828),	-- Recipe: Fighter Chow [Rank 1]
-						}),
-						q(37538,  {  	-- Round 1, Fight!
-							i(121438),
-							i(121436),
-							i(121439),
-							i(121437),
-							i(132901),
-							i(132899),
-							i(132900),
-							i(132902),
-						}),
-						q(37565),	-- The Right Weapon for the Job
-						q(37566,  {  	-- The Prince is Going Down
-							i(121441),
-							i(121443),
-							i(121442),
-							i(121440),
-						}),
-					}),
-					crit(5, {	-- Mak'rana and the Fate of the Queen's Reprisal
-						q(37659),	-- The Captain's Foot Locker
-						o(239328, {	-- Captain's Foot Locker
-							q(40794, {	-- Fate of the Queen's Reprisal [Alliance]
-								["races"] = ALLIANCE_ONLY,
-								["g"] = {
-									i(121482),	-- Cloak of the Greywatch
-									i(138857),	-- SI:7 Standard Issue Vest
-									i(138856),	-- Alliance Auxillary Hauberk
-									i(138855),	-- Alliance Crusader's Breastplate
-									i(138858),	-- Stormwind Clergy Vestments
-								},
-							}),
-							q(42244, {	-- Fate of the Queen's Reprisal [Horde]
-								["races"] = HORDE_ONLY,
-								["g"] = {
-									i(138859),	-- Royal Apothecary Robe
-									i(121488),	-- Royal Apothecary Drape
-									i(138862),	-- Decorated Deathstalker Jerkin
-									i(138861),	-- Troll Auxillary Chainmail
-									i(138860),	-- Kor'kron Breastplate
-								},
-							}),
-						}),
-					}),
+				
+				
+				
+				
+				
+				--[[
+					["sourceQuests"] = {  },	-- 
+					["coord"] = { , , 630 },
+					["qg"] = ,	-- 
 				}),
-				ach(10877, {	-- Pillars of Creation
-					q(38286),	-- Eye of Azshara: Wrath of Azshara
-					q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
-						i(140622),	-- Harshell Greatbelt
-						i(140623),	-- Brightscale Waistguard
-						i(140624),	-- Bitterbrine Binding
-						i(140625),	-- Waistban of the Hatecoil Oracles
-					}),
-				}),  
+				--]]
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		ach(10763, {	-- Azsuna Matata
+			crit(2, {	-- Defending Azurewing Repose
+				q(37856),	-- The Withered
+				q(37859),	-- The Consumed
+				q(37858, {	-- Stellagosa
+					["qg"] = 89978,	-- Projection of Senegos
+					["isBreadcrumb"] = true,
+				}),
+				q(37957,  {  	-- Runas the Shamed
+					["g"] = {
+						i(132971),	-- Nightfallen's Desperation
+						i(132970),	-- Runas' Nearly Depleted Ley Crystal
+						i(132969),	-- Talisman of the Lost Blue Flight
+						i(132975),	-- Nightfallen Mantle
+						i(132974),	-- Mana-Stalker Shoulderpads
+						i(132973),	-- Whelp Protector's Mantle
+						i(132972),	-- Azure Champion's Pauldrons
+					},
+					["sourceQuests"] = { 37858 },	-- Stellagosa
+				}),
+				q(37857),	-- Runas Knows the Way
+				q(37959,  {  	-- The Hunger Returns
+					i(138876), 		-- Runas' Crystal Grinder
+				}),
+				q(37960),	-- Leyline Abuse
+				q(37860),	-- You Scratch My Back...
+				q(37861,  {  	-- The Nightborne Prince
+					i(121444),
+					i(121447),
+					i(121446),
+					i(121445),
+					i(132929),
+					i(132928),
+					i(132927),
+					i(132926),
+				}),
+				q(37862),	-- Still Alive
+				q(38014,  {  	-- Feasting on the Dragon
+					i(121435),
+					i(121418),
+					i(121417),
+					i(121416),
+					i(132914),
+					i(132915),
+					i(132916),
+					i(132917),
+				}),
+				q(38015,  {  	-- On the Brink
+					i(129178),  	-- Emmigosa
+				}),	
+				q(42567),	-- Cursed to Wither
+				q(42756),	-- Hunger's End
+			}),
+		}),
 				ach(10994, {	-- A Glorious Campaign
 					cl(5, {	-- Priest
 						q(43375, {	-- An Ample Supply
@@ -483,12 +725,6 @@ _.Zones =
 						i(129171),	-- Band of Ingression
 					},
 				}),
-				q(42694,  {  	-- Back from the Dead
-					i(138820),
-					i(138821),
-					i(138822),
-					i(138824),
-				}),
 				q(45127, {	-- Fel-Crossed Lovers
 					["qg"] = 116189,	-- Levia Laurence
 					["races"] = ALLIANCE_ONLY,
@@ -514,23 +750,12 @@ _.Zones =
 					["qg"] = 93967,	-- Lyndras
 					["sourceQuests"] = { 38957 },	-- Taking Inspiration
 				}),
-				q(38232),	-- Minion! Kill Them!
 				q(42238, {	-- Missing Demon
 					["isBreadcrumb"] = true,
-				}),
-				q(37728, {	-- Presentation is Everything
-					["qg"] = 89341,	-- Magister Garuhod
-					["sourceQuest"] = 37727,	-- The Magister of Mixology
 				}),
 				q(42367, {	-- Quantity over Quality
 					["sourceQuest"] = 42368,	-- Eye See You
 					["qg"] = 107245,	-- Marius Felbane
-				}),
-				q(37727, {	-- The Magister of Mixology
-					["qg"] = 89341,	-- Magister Garuhod
-					["g"]  = {
-						i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
-					},
 				}),
 				q(42369),	-- They're Doing it Wrong
 				q(38237,  {  	-- This IS In My Contract
@@ -562,7 +787,6 @@ _.Zones =
 				q(40206),	-- A Debt Paid
 				q(40524),	-- A Familiar Ring to It
 				q(38951),	-- A Needle Need
-				q(37492),	-- A Rather Long Walk
 				q(37965),	-- A Tainted Vintage
 				q(43514),	-- A Vainglorious Past
 				q(41183),	-- Academic Exploration
@@ -593,7 +817,6 @@ _.Zones =
 				q(41172),	-- Echoes of My Ancestors
 				q(41178),	-- Explosive Results
 				q(38961),	-- Eye of Azshara: The Depraved Nightfallen
-				q(37526),	-- Farondis Murder Flag
 				q(38014),	-- Feasting on the Dragon
 				q(41167),	-- Fel Fragments
 				q(42069),	-- Felbats
@@ -622,7 +845,6 @@ _.Zones =
 				q(39936),	-- Inscription of the Body
 				q(39389),	-- It Hungers for Blood
 				q(40556),	-- Jabrul Needs You
-				q(38443),	-- Journey to the Repose
 				q(40873),	-- Keep Yer Powder Dry
 				q(42214),	-- Knocked for a Loop
 				q(42689),	-- Knowing Our Enemy
@@ -670,7 +892,6 @@ _.Zones =
 				q(46795),	-- Ship - Azsuna
 				q(46808),	-- Ship - Highmountain
 				q(46801),	-- Ship - Val'sharah
-				q(42268),	-- Shipwrecked Sailors
 				q(41176),	-- Sifting Through the Rubble
 				q(38949),	-- So You Think You Can Sew
 				q(45175),	-- Soul Prism of the Illidari

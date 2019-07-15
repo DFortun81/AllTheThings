@@ -215,12 +215,24 @@ _.NeverImplemented =
 		q(38587),	-- Tanaan Jungle - Assault on the Throne of Kil'jaeden - criteria complete
 		
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
+		
 		-------------------
 		--    Legion     --
 		-------------------
 		q(45533),	-- Legion Dungeon Reward Quest
+		q(38365),	-- Azsuna - Treasure 015 - Giblin Treasure — looted Disputed Treasure near Shackle's Den
+		q(42285),	-- Azsuna - Treasure 029 - Nar'thalas 05 - Small — opened a treasure in Nar'thalas Academy near the Tidestone
+		q(42291),	-- Azsuna - Treasure 033 - Oceanus Cove 02 - Small — looted Small Treasure Chest inside Oceanus Cove
 		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
+		q(37526),	-- Farondis Murder Flag — triggers between turning in "The Tidestone: Shattered" and starting "Save Yourself" in Azsuna
+		
+		q(37965),	-- A Tainted Vintage — bonus objective in Azsuna, unavailable after 110
+		q(37495),	-- Plunder the Cove — bonus objective in Azsuna, unavailable after 110
+		q(36811),	-- Retake Faronaar — bonus objective in Azsuna, unavailable after 110
+		q(37466),	-- The Broken Academy — bonus objective in Azsuna, unavailable after 110
+		q(37779),	-- Tip the Scales — bonus objective in Azsuna, unavailable after 110
+		
 		-------------------
 		--      BFA      --
 		-------------------
