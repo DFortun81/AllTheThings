@@ -48,8 +48,6 @@ _.Zones =
 				q(12689),	-- Hand of the Oracles
 				q(12523),	-- Have a Part, Give a Part
 				q(12577),	-- Home Time!
-				qa(13486),	-- Honor the Flame
-				qh(13494),	-- Honor the Flame
 				q(12539),	-- Hoofing It
 				q(12595),	-- In Search of Bigger Game
 				qa(11964),	-- Incense for the Summer Scorchlings

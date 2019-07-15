@@ -9,16 +9,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 78,
 		["g"] = {
 			n(-17, {	-- Quests
-				qa(24500, {	-- Wrath of the Lich King
+				q(24500, {	-- Wrath of the Lich King
 					["qg"] = 37582,	-- Archmage Koreln <Kirin Tor>
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(24802, {	-- Wrath of the Lich King
+				q(24802, {	-- Wrath of the Lich King
 					["qg"] = 37779,	-- Dark Ranger Loralen
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			d(1,   {	-- Normal
 				ach(4518),	-- The Halls of Reflection
-				n(0, {		-- Zone Drop
+				n(0, {	-- Zone Drop
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
 							38177,	-- Shadowy Mercenary

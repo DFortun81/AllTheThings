@@ -417,11 +417,13 @@ _.Zones =
 					},
 					["isDaily"] = true,
 				}),
-				qh(31393, {	-- Temple of the White Tiger
+				q(31393, {	-- Temple of the White Tiger
 					["qg"] = 66247,	-- Tigermaster Liu-Do
+					["races"] = HORDE_ONLY,
 				}),
-				qa(31392, {	-- Temple of the White Tiger
+				q(31392, {	-- Temple of the White Tiger
 					["qg"] = 66247,	-- Tigermaster Liu-Do
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30900, {	-- Terror of the Dread Wastes
 					["groups"] = {

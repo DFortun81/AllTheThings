@@ -56,10 +56,20 @@ _.Zones =
 				q(32678, {	-- Thunder Calls (H)
 					["races"] = HORDE_ONLY,
 				}),
-				--qa(31382),	-- Defense At Niuzao Temple
-				--qh(31383),	-- Defense At Niuzao Temple
-				--qa(31387),	-- Understanding The Shado-Pan
-				--qh(31389),	-- Understanding The Shado-Pan
+				--[[
+				q(31382, {	-- Defense At Niuzao Temple
+					["races"] = ALLIANCE_ONLY
+				}),
+				q(31383, {	-- Defense At Niuzao Temple
+					["races"] = HORDE_ONLY
+				}),
+				q(31387, {	-- Understanding The Shado-Pan
+					["races"] = ALLIANCE_ONLY
+				}),
+				q(31389, {	-- Understanding The Shado-Pan
+					["races"] = HORDE_ONLY
+				}),
+				]]--
 			}),
 		}),
 	}),

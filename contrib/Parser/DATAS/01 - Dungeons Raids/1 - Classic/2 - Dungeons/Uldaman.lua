@@ -13,26 +13,33 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["groups"] = {
 			n(-17, {	-- Quests
-				qa(27677, {	-- Archaedas, The Ancient Stone Watcher
+				q(27677, {	-- Archaedas, The Ancient Stone Watcher
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27672 },	-- The Chamber of Khaz'mul
 				}),
-				qh(27680, {	-- Archaedas, The Ancient Stone Watcher
+				q(27680, {	-- Archaedas, The Ancient Stone Watcher
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27679 },	-- The Chamber of Khaz'mul
 				}),
-				qa(27676, {	-- Behind Closed Doors
+				q(27676, {	-- Behind Closed Doors
 					["qg"] = 46233,	-- Olga Runesworn
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(27681, {	-- Behind Closed Doors
+				q(27681, {	-- Behind Closed Doors
 					["qg"] = 46235,	-- Lidia Sunglow
+					["races"] = HORDE_ONLY,
 				}),
-				qa(27673, {	-- It's What's Inside That Counts
+				q(27673, {	-- It's What's Inside That Counts
 					["qg"] = 46247,	-- Kand Sandseeker
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(27672, {	-- The Chamber of Khaz'mul
+				q(27672, {	-- The Chamber of Khaz'mul
 					["qg"] = 46234,	-- Lead Prospector Durdin
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(27679, {	-- The Chamber of Khaz'mul
+				q(27679, {	-- The Chamber of Khaz'mul
 					["qg"] = 46236,	-- High Examiner Tae'thelan
+					["races"] = HORDE_ONLY,
 				}),
 				o(131474, {	-- The Discs of Norgannon
 					q(2278),	-- The Platinum Discs
@@ -57,8 +64,17 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 				}),
-				qh(27682, {	-- We Require More Minerals
+				q(2240, {	-- The Hidden Chamber
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(9626)),	-- Dwarven Charge
+						un(2, i(9627)),	-- Explorers' League Lodestar
+					},
+				}),
+				q(27682, {	-- We Require More Minerals
 					["qg"] = 46241,	-- Aoren Sunglow
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			n(0, {	-- Zone Drop
@@ -470,14 +486,6 @@ _.Instances = { tier(1, {	-- Classic
 					i(9925),	-- Tracker's Wristguards
 					i(8385),	-- Pattern: Turtle Scale Gloves
 				},
-			}),
-			n(-40, {	-- Legacy
-				n(-17, {	-- Quests (Legacy)
-					un(40, qa(2240, {	-- The Hidden Chamber
-						un(2, i(9626)),	-- Dwarven Charge
-						un(2, i(9627)),	-- Explorers' League Lodestar
-					})),
-				}),
 			}),
 		},
 	}),

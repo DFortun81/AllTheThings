@@ -119,8 +119,13 @@ _.Zones =
 					["qg"] = 34668,	-- Sassy Hardwrench
 					["sourceQuests"] = { 14125 },	-- 447
 				}),
-				--qh(28606), 	-- The Keys to the Hot Rod
-				--qh(28607), 	-- The Keys to the Hot Rod
+				q(28606, {	-- The Keys to the Hot Rod
+					["u"] = 1,
+				}),
+				q(28607, {	-- The Keys to the Hot Rod
+					["qg"] = 34874,	-- Megs Dreadshredder
+					["repeatable"] = true,
+				}),
 			}),
 		}),
 	}),

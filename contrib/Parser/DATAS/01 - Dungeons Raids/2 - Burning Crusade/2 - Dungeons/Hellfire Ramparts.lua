@@ -9,36 +9,42 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["coord"] = { 47.65, 53.57, 100 },	-- Hellfire Ramparts, Hellfire Peninsula
 		["g"] = {
 			n(-17, {	-- Quests
-				qa(29529, {	-- Demons in the Citadel
+				q(29529, {	-- Demons in the Citadel
 					["qg"] = 54603,	-- Advance Scout Chadwick
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(29594, {	-- Hitting Them Where It Hurts
-					["qg"] = 54603,	-- Advance Scout Chadwick
+				q(29530, {	-- Demons in the Citadel
+					["qg"] = 54606,	-- Stone Guard Stok'ton
+					["races"] = HORDE_ONLY,
 				}),
-				qa(29528, {	-- War on the Ramparts
+				q(29594, {	-- Hitting Them Where It Hurts
 					["qg"] = 54603,	-- Advance Scout Chadwick
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29593, {	-- Hitting Them Where It Hurts
+					["qg"] = 54606,	-- Stone Guard Stok'ton
+					["races"] = HORDE_ONLY,
+				}),
+				q(29528, {	-- War on the Ramparts
+					["qg"] = 54603,	-- Advance Scout Chadwick
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25718),	-- Mantle of Magical Might
 						i(25717),	-- Sure-Step Boots
 						i(25716),	-- Handguards of Precision
 						i(25715),	-- Jade Warrior Pauldrons
 					},
-				}),	
-				qh(29530, {	-- Demons in the Citadel
-					["qg"] = 54606,	-- Stone Guard Stok'ton
 				}),
-				qh(29593, {	-- Hitting Them Where It Hurts
+				q(29527, {	-- War on the Ramparts
 					["qg"] = 54606,	-- Stone Guard Stok'ton
-				}),
-				qh(29527, {	-- War on the Ramparts
-					["qg"] = 54606,	-- Stone Guard Stok'ton
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25718),	-- Mantle of Magical Might
 						i(25717),	-- Sure-Step Boots
 						i(25716),	-- Handguards of Precision
 						i(25715),	-- Jade Warrior Pauldrons
 					},
-				}),	
+				}),
 			}),
 			d(1, {		-- Normal
 				e(527, { 	-- Watchkeeper Gargolmar
@@ -188,10 +194,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 				}
 			}),
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
-				-- Note!! Blank so when map merges into the list it's in this spot rather than top
-			},
+			n(0),	-- Zone Drops -- Note!! Blank so when map merges into the list it's in this spot rather than top
 		},
 	}),
 })};

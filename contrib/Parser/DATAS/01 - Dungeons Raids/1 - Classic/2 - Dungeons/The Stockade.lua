@@ -3,17 +3,27 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(238, { 	-- The Stockade
+	inst(238, {	-- The Stockade
 		["lvl"] = 15,
 		["mapID"] = 225,
 		["coord"] = { 50.48, 66.46, 84 },	-- The Stockade, Stormwind City
-		["groups"] = {
-			n(-17, {			-- Quests
-				qa(27737, {	-- By Fire Be Saved!
+		["g"] = {
+			n(-17, {	-- Quests
+				q(27737, {	-- By Fire Be Saved!
 					["qg"] = 46410,	-- Nurse Lillian
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(50335, {	-- Grant Me Revenge
+				q(377, {	-- Crime and Punishment
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(2033)),	-- Ambassador's Boots
+						un(2, i(2906)),	-- Darkshire Mail Leggings
+					},
+				}),
+				q(50335, {	-- Grant Me Revenge
 					["qg"] = 46409,	-- Warden Thelwater
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65989),	-- Hogger's Shiny
 						i(65915),	-- Rifle Commander's Eyepatch
@@ -22,8 +32,17 @@ _.Instances = { tier(1, {	-- Classic
 						i(131683),	-- Thelwater's Steelwoven Eyepatch
 					},
 				}),
-				qa(27739,{	-- The Gnoll King
+				q(378, {	-- The Fury Runs Deep
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(3562)),	-- Belt of Vindication
+						un(2, i(1264)),	-- Headbasher
+					},
+				}),
+				q(27739,{	-- The Gnoll King
 					["qg"] = 46409,	-- Warden Thelwater
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(65989),	-- Hogger's Shiny
 						i(65915),	-- Rifle Commander's Eyepatch
@@ -32,8 +51,17 @@ _.Instances = { tier(1, {	-- Classic
 						i(131683),	-- Thelwater's Steelwoven Eyepatch
 					},
 				}),
-				qa(27733, {	-- The Good Ol' Switcheroo
+				q(27733, {	-- The Good Ol' Switcheroo
 					["qg"] = 46417,	-- Rifle Commander Coe
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(386, { 	-- What Comes Around...
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(1317)),	-- Hardened Root Staff
+						un(2, i(3400)),	-- Lucine Longsword
+					},
 				}),
 			}),
 			n(0, {	-- Zone Drop
@@ -43,6 +71,21 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				un(7, i(1076)),	-- Defias Renegade Ring
+			}),
+			n(1720, {	-- Bruegal Ironknuckle
+				["u"] = 43,
+				["description"] = "This is a rare that was not always present.",
+				["g"] = {
+					un(2, i(2942)),	-- Iron Knuckles
+					un(2, i(3228)),	-- Jimmied Handcuffs
+					un(2, i(2941)),	-- Prison Shank
+				},
+			}),
+			n(1666, { 	-- Kam Deepfury
+				["u"] = 43,
+				["g"] = {
+					un(2, i(2280)),	-- Kam's Walking Stick
+				},
 			}),
 			cr(46383, e(466, {	-- Randolph Moloch
 				i(63346),	-- Wicked Dagger
@@ -66,37 +109,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(132569),	-- Stolen Jailer's Greaves
 				i(2168),	-- Corpse Rompers
 			})),
-			n(-40, {	-- Legacy
-				n(-17, {	-- Quests (Legacy)
-					un(40, qa(377, {	-- Crime and Punishment
-						un(2, i(2033)),	-- Ambassador's Boots
-						un(2, i(2906)),	-- Darkshire Mail Leggings
-					})),
-					un(40, qa(378, {	-- The Fury Runs Deep
-						un(2, i(3562)),	-- Belt of Vindication
-						un(2, i(1264)),	-- Headbasher
-					})),
-					un(40, qa(386, { 	-- What Comes Around...
-						un(2, i(1317)),	-- Hardened Root Staff
-						un(2, i(3400)),	-- Lucine Longsword
-					})),
-				}),
-				n(0, {	-- Zone Drop (Legacy)
-					un(43, n(1666, { 	-- Kam Deepfury
-						un(2, i(2280)),	-- Kam's Walking Stick
-					})),
-				}),
-				n(-16, {	-- Rares (Legacy)
-					un(43, n(1720, {	-- Bruegal Ironknuckle
-						["description"] = "This is a rare that was not always present.",
-						["groups"] = {
-							un(2, i(2942)),	-- Iron Knuckles
-							un(2, i(3228)),	-- Jimmied Handcuffs
-							un(2, i(2941)),	-- Prison Shank
-						},
-					})),
-				}),
-			}),
 		},
 	}),
 })};

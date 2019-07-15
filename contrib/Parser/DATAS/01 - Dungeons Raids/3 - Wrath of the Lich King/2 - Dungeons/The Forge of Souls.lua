@@ -9,21 +9,25 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 75,
 		["g"] = {
 			n(-17, {	-- Quests 
-				qa(24499, {	-- Echoes of Tortured Souls
+				q(24499, {	-- Echoes of Tortured Souls
 					["sourceQuest"] = 24510,	-- Inside the Frozen Citadel
 					["qg"] = 37597,	-- Lady Jaina Proudmoore
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(24511, {	-- Echoes of Tortured Souls
+				q(24511, {	-- Echoes of Tortured Souls
 					["sourceQuest"] = 24506,	-- Inside the Frozen Citadel
 					["qg"] = 37596,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["races"] = HORDE_ONLY,
 				}),
-				qa(24683, {	-- The Pit of Saron
+				q(24683, {	-- The Pit of Saron
 					["sourceQuest"] = 24499,	-- Echoes of Tortured Souls
 					["qg"] = 38160,	-- Lady Jaina Proudmoore
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(24682, {	-- The Pit of Saron
+				q(24682, {	-- The Pit of Saron
 					["sourceQuest"] = 24511,	-- Echoes of Tortured Souls
 					["qg"] = 38161,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			d(1,   {	-- Normal

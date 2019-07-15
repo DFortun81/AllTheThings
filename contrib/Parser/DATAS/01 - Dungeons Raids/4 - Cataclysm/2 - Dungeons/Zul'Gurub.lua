@@ -220,7 +220,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 								}),
 							},
 						}),
-						qh(29253, {	-- A Shiny Reward
+						q(29253, {	-- A Shiny Reward
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								29251,	-- Booty Bay's Interests
 								29252,	-- Booty Bay's Interests
@@ -254,17 +255,21 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(69251),	-- Lashtail Hatchling
 							},
 						}),
-						qa(29153, {	-- Booty Bay's Interests
+						q(29153, {	-- Booty Bay's Interests
 							["qg"] = 2496,	-- Baron Revilgaz
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qa(29154, {	-- Booty Bay's Interests
+						q(29154, {	-- Booty Bay's Interests
 							["qg"] = 53151,			-- Overseer Revilgaz
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qh(29251, {	-- Booty Bay's Interests
+						q(29251, {	-- Booty Bay's Interests
 							["qg"] = 2496,			-- Baron Revilgaz
+							["races"] = HORDE_ONLY,
 						}),
-						qh(29252, {	-- Booty Bay's Interests
+						q(29252, {	-- Booty Bay's Interests
 							["qg"] = 53151,			-- Overseer Revilgaz
+							["races"] = HORDE_ONLY,
 						}),
 						q(29241,  {	-- Break the Godbreaker
 							["qg"] = 53024,			-- Bloodslayer Zala

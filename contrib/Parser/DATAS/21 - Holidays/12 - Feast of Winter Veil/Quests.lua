@@ -173,9 +173,10 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 					}),
 					--[[ this was listed in a metadata file. putting it here temporarily
-					qh(8861, {	-- New Year Celebrations!
+					q(8861, {	-- New Year Celebrations!
 						["qg"] = 15732,	-- Wonderform Operator
 						["maps"] = { 88 },	-- Thunder Bluff
+						["races"] = HORDE_ONLY,
 					}),
 					]]--
 					q(7061,  {	-- The Feast of Winter Veil (Horde)

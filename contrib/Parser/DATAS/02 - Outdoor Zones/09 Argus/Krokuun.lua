@@ -610,20 +610,24 @@ _.Zones =
 					["groups"] = {
 						ach(12066, {	-- You Are Now Prepared!
 							crit(1, {	-- The Assault Begings
-								qa(47221, {	-- The Hand of Fate
+								q(47221, {	-- The Hand of Fate
+									["races"] = ALLIANCE_ONLY,
 									["description"] = "Given by Auto Accept after completing Broken Shore scenario.  May have to log out.",
 									["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 								}),
-								qa(47222, {	-- Two If By Sea
+								q(47222, {	-- Two If By Sea
 									["qg"] = 121754,	-- Vereesa Windrunner
+									["races"] = ALLIANCE_ONLY,
 									["sourceQuests"] = { 47221 },	-- The Hand of Fate
 								}),
-								qh(47835, {	-- The Hand of Fate
+								q(47835, {	-- The Hand of Fate
+									["races"] = HORDE_ONLY,
 									["description"] = "Given by Auto Accept after completing Broken Shore scenario.  May have to log out.",
 									["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 								}),
-								qh(47867, {	-- Two If By Sea
+								q(47867, {	-- Two If By Sea
 									["qg"] = 122065,	-- Lady Liadrin
+									["races"] = HORDE_ONLY,
 									["sourceQuests"] = { 47221 },	-- The Hand of Fate
 								}),
 								q(47223, {	-- Light's Exodus

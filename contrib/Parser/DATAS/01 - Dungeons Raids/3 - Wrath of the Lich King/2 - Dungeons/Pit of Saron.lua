@@ -9,29 +9,35 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 78,
 		["g"] = {
 			n(-17, {	-- Quests
-				qa(24710, {	-- Deliverance from the Pit
+				q(24710, {	-- Deliverance from the Pit
 					["sourceQuest"] = 24498,	-- The Path to the Citadel
 					["qg"] = 37591,	-- Martin Victus
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(24712, {	-- Deliverance from the Pit
+				q(24712, {	-- Deliverance from the Pit
 					["sourceQuest"] = 24507,	-- The Path to the Citadel
 					["qg"] = 24712,	-- Gorkun Ironskull
+					["races"] = HORDE_ONLY,
 				}),
-				qa(24711, {	-- Frostmourne
+				q(24711, {	-- Frostmourne
 					["sourceQuest"] = 24710,	-- Deliverance from the Pit
 					["qg"] = 38188,	-- Lady Jaina Proudmoore
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(24713, {	-- Frostmourne
+				q(24713, {	-- Frostmourne
 					["sourceQuest"] = 24712,	-- Deliverance from the Pit
 					["qg"] = 38189,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["races"] = HORDE_ONLY,
 				}),
-				qa(24498, {	-- The Path to the Citadel
+				q(24498, {	-- The Path to the Citadel
 					["sourceQuest"] = 24683,	-- The Pit of Saron
 					["qg"] = 36993,	-- Lady Jaina Proudmoore
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(24507, {	-- The Path to the Citadel
+				q(24507, {	-- The Path to the Citadel
 					["sourceQuest"] = 24682,	-- The Pit of Saron
 					["qg"] = 36990,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			d(1,   {	-- Normal
