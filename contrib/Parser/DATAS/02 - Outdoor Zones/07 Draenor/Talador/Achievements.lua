@@ -11,10 +11,21 @@ _.Zones =
 				ach(8920, {	-- Don't Let the Tala-door Hit You on the Way Out (Alliance) (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- Establishing your Outpost
-						crit(2),	-- The Battle for Shattrath
-						crit(3),	-- The Plight of the Arakkoa
-						crit(4),	-- In the Shadows of Auchindoun
+						crit(1, {	-- Establishing your Outpost
+							["sourceQuests"] = {
+								34711,	-- Due Cause to Celebrate (Arcane Sanctum)
+								34981,	-- The Only Way to Travel (Artillery Tower)
+							},
+						}),
+						crit(2, {	-- The Battle for Shattrath
+							["sourceQuest"] = 34099,	-- The Battle for Shattrath
+						}),
+						crit(3, {	-- The Plight of the Arakkoa
+							["sourceQuest"] = 33582,	-- Kura's Vengeance
+						}),
+						crit(4, {	-- In the Shadows of Auchindoun
+							["sourceQuest"] = 34154,	-- Destination: Unknown
+						}),
 					},
 				}),
 				ach(8919, {	-- Don't Let the Tala-door Hit You on the Way Out (Horde) (unlocks ability to buy Gorgrond Treasure Map from Srikka in Warspear)

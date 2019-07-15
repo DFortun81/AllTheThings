@@ -2106,22 +2106,19 @@ _.ExpansionFeatures =
 							},
 						},
 					},
-					{	-- Command Board
-						["objectID"] = 232416,	-- 233291 and 237022 also valid depending on garrison level
+					o(232416, {	-- Command Board	-- 233291 and 237022 also valid depending on garrison level
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							{	-- The Secrets of Gorgrond
-								["questID"] = 35557,
+							q(35557, {	-- The Secrets of Gorgrond
 								["races"] = HORDE_ONLY,
 								["isBreadcrumb"] = true,
-							},
-							{	-- It's a Matter of Strategy
-								["questID"] = 36953,
+							}),
+							q(36953, {	-- It's a Matter of Strategy
 								["races"] = HORDE_ONLY,
 								["isBreadcrumb"] = true,
-							},
+							}),
 						},
-					},
+					}),
 					{	-- Den of Wolves
 						["questID"] = 34379,
 						["qg"] = 76411,	-- Farseer Drek'Thar
@@ -2461,13 +2458,12 @@ _.ExpansionFeatures =
 							["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
 						}),
 					}),
-					{	-- It's a Matter of Strategy
-						["questID"] = 34681,
+					q(34681, {	-- It's a Matter of Strategy
 						["qg"] = 78487,	-- Rokhan
 						["coord"] = { 45.9, 42.7, 590 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36494,	-- News from Talador
-					},
+					}),
 					{	-- My Very Own Fortress
 						["questID"] = 36614,
 						["qg"] = 78466,	-- Gazlowe

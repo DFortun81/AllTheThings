@@ -2520,6 +2520,20 @@ _.ExpansionFeatures =
 						36606,	-- News From Nagrand (Lieutenant Willem)
 					},
 				}),
+				q(34676, {	-- The Critical Path
+					["lvl"] = 94,
+					["coord"] = { 42.8, 45.2, 582 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					--["objectID"] = 232397,	-- Bulletin Board
+				}),
+				q(37183, {	-- The Critical Path
+					["qg"] = 81492,	-- Bodrick Grey
+					["lvl"] = 94,
+					["coord"] = { 38.2, 37.0, 582 },	-- garrison lvl 3
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(35556, {	-- The Secrets of Gorgrond
 					["isBreadcrumb"] = true,
 					["lvl"] = 92,

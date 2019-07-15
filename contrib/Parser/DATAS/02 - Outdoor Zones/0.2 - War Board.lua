@@ -73,6 +73,7 @@ _.Zones =
 			q(49536),	-- Warchief's Command: Storm Peaks!
 			q(28532),	-- Warchief's Command: Stonetalon Mountains!
 			q(28677),	-- Warchief's Command: Swamp of Sorrows!
+			q(49547),	-- Warchief's Command: Talador!
 			q(28509),	-- Warchief's Command: Tanaris!
 			q(39182),	-- Warchief's Command: Terokkar Forest!
 			q(28704),	-- Warchief's Command: The Cape of Stranglethorn!
@@ -131,6 +132,7 @@ _.Zones =
 			q(49554),	-- Hero's Call: Storm Peaks!
 			q(28539), 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
 			q(28675),	-- Hero's Call: Swamp of Sorrows!
+			q(49565),	-- Hero's Call: Talador!
 			q(28507),	-- Hero's Call: Tanaris! (breadcrumb quest for 25048, not available if 27446 is completed) (max level 48)
 			q(39188),	-- Hero's Call: Terokkar Forest!
 			q(28702, {	-- Hero's Call: The Cape of Stranglethorn!

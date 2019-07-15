@@ -54,7 +54,7 @@ _.Zones =
 					},
 				}),
 				n(77828, {	-- Echo of Murmur
-					["questID"] = 34221,	-- also triggers 34220
+					["questID"] = 34221,
 					["coord"] = { 34.0, 57.2, 535 },
 					["g"] = {	
 						i(113670),	-- Mournful Moan of Murmur Toy
@@ -186,7 +186,10 @@ _.Zones =
 				}), 
 				n(78872, {	-- Klikixx
 					["questID"] = 34498,
-					["coord"] = { 66.8, 85.6, 535 },
+					["coords"] = {
+						{ 61.1, 83.9, 535 },	-- cave
+						{ 66.8, 85.6, 535 },	-- klikixx
+					},
 					["g"] = {	
 						i(116125),	-- Klikixx's Webspinnner (TOY!)
 					},
@@ -291,10 +294,15 @@ _.Zones =
 					},
 				}),
 				n(-72,   {	-- Sargerei War Council
-					["description"] = "Strategist Ankor, Archmagus Tekar, and Soulbinder Naylana. \n\nPatrols the area in roughly a circle.|r",	
+					["description"] = "Patrols the area in roughly a circle.",	
 					["questID"] = 37337,
 					["modelID"] = 60730,
 					["isDaily"] = true,
+					["crs"] = {
+						88071,	-- Strategist Ankor
+						88072,	-- Archmagus Tekar
+						88073,	-- Soulbinder Naylana
+					},
 					["coords"] = {
 						{ 43.8, 26.4, 535 },
 						{ 45.8, 27.8, 535 },

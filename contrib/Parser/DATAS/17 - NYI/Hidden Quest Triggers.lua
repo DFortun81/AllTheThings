@@ -73,7 +73,6 @@ _.NeverImplemented =
 		q(36793),	-- Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
 		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking herbs
 		q(33964),	-- Arak Flowerpicker
-		q(34560),	-- Armory
 		q(36636),	-- Blueprint Read
 		q(36856),	-- Burning Missive
 		q(36849),	-- Burning Missive
@@ -91,8 +90,6 @@ _.NeverImplemented =
 		q(36640),	-- Followers Obtained
 		q(33961),	-- Frostfire Flowerpicker
 		q(33966),	-- Gorgrond Flowerpicker
-		q(34934),	-- Initial Defenders
-		q(34561),	-- Mage Tower
 		q(33963),	-- Nagrand Flowerpicker
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle
 		q(34872),	-- Prized Repossessions Tracking
@@ -100,7 +97,6 @@ _.NeverImplemented =
 		q(34986),	-- Punching Through Tracking
 		q(34873),	-- Punching Through Tracking
 		q(35192),	-- See Reinforcements Teleport
-		q(34969),	-- Serena Summoned
 		q(33962),	-- Shadowmoon Flowerpicker
 		q(34053),	-- SoL Conversation Tracker
 		q(36942),	-- Soulbinder Aedraa
@@ -163,6 +159,7 @@ _.NeverImplemented =
 		q(36724),	-- Spires of Arak - Reshad Tracking - triggers after turning in "Call of the Raven Mother"
 
 		q(34935),	-- Talador - After Wall Greeting. Triggers during "Dropping In" after taking the portal
+		q(34560),	-- Talador - Armory
 		q(34568),	-- Talador - Armory
 		q(37301),	-- Talador - Armory
 		q(37304),	-- Talador - Armory
@@ -175,23 +172,28 @@ _.NeverImplemented =
 		q(34983),	-- Talador - Dropping Bombs Tracking
 		q(35047),	-- Talador - Dropping Bombs Tracking
 		q(36426),	-- Talador - Dueling Orbs
+		q(34220),	-- Talador - Echo of Murmur killed, but not yet looted
 		q(34835),	-- Talador - Gather Energy. Triggers when interacting with an energy orb in Zangarra during "Gathering the Spark"
 		q(34834),	-- Talador - General Commentary. Triggers during "Forming the Scroll" when you interact with the second ancient
 		q(33727),	-- Talador - Heal Up
+		q(34934),	-- Talador - Initial Defenders. Triggers when approaching the gate at Gordal Fortress
 		q(34821),	-- Talador - Khadgar Summon. Triggers when you take the portal to Khadgar's Tower during "Making Acquaintances"
 		q(34906),	-- Talador - Krelas Summoned. Triggers when Krelas is summoned while approaching the arcane gate during "Dropping In"
+		q(34561),	-- Talador - Mage Tower
+		q(34567),	-- Talador - Mage Tower
 		q(37302),	-- Talador - Mage Tower
 		q(37303),	-- Talador - Mage Tower
-		q(34567),	-- Talador - Mage Tower
 		q(35051),	-- Talador - Mage Tower Complete. Triggers when obtaining your follower after "Due Cause to Celebrate"
 		q(34772),	-- Talador - Morkeths Cage
 		q(34946),	-- Talador - Morkurk Greeting
 		q(34904),	-- Talador - Portal Vision. Triggers during "Dropping In" when the portal is summoned to get on the wall
 		q(34833),	-- Talador - Prune Ancient. Triggers during "Forming the Scroll" when you interact with the first ancient
 		q(33732),	-- Talador - Sabotage Siege Weapons
+		q(34969),	-- Talador - Serena Summoned. Triggers when approaching Gordal Fortress and Serena ports in
 		q(33931),	-- Talador - This Is Not a Quest,	-- triggers when you loot Deceptia's Smoldering Boots. Supposedly it shows the map indicator but is silently completed when the explosion happens?
 		q(33645),	-- Talador - Tracking Quest,	-- Iskar's Hired Hand
 		q(34562),	-- Talador - Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
+		q(34574),	-- Talador - Unused. Triggered when choosing the Arcane Sanctum
 		q(34101),	-- Talador - Vignette: Aruumel's Worn Mace	-- triggers when looting "Lightbearer"
 		q(34115),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
 		q(34116),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
