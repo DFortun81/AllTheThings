@@ -169,50 +169,42 @@ _.Zones =
 						717,	-- Warlock
 						695,	-- Warrior
 					},
-					["groups"] = {
-						{
-							["questID"] = 44009,	-- A Falling Star (All other classes)
-							["qg"] = 90417,	-- Quest Giver: Archmage Khadgar
-							["classes"] = {
-								1,	-- Warrior
-								3,	-- Hunter
-								4,	-- Rogue
-								5,	-- Priest
-								6,	-- Death Knight
-								7,	-- Shaman
-								8,	-- Mage
-								9,	-- Warlock
-								10,	-- Monk
-								11,	-- Druid
-								12,	-- Demon Hunter
-							},
-						},
-						{
-							["questID"] = 44257,	-- A Falling Star (Paladin version)
-							["qg"] = 90417,	-- Quest Giver: Archmage Khadgar
+					["g"] = {
+						q(44009, {	-- A Falling Star (non-Paladin)
+							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required.  not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
+							["classes"] = exclude(2, ALL_CLASSES),	-- all classes, excluding Paladins
+							["coord"] = { 28.9, 48.4, 627 },
+							["qg"] = 90417,	-- Archmage Khadgar
+						}),
+						q(44257, {	-- A Falling Star (Paladin)
 							["classes"] = { 2 },	-- Paladin
-						},
-						{
-							["questID"] = 44004,	-- Bringer of the Light
-							["qg"] = 112130,	-- Quest Giver: Archmage Khadgar
-							["sourceQuests"] = {
-								44009,	-- A Falling Star (all other classes)
-								44257,	-- A Falling Star (paladin)
-							},
+							["qg"] = 90417,	-- Archmage Khadgar
+						}),
+						q(44004, {	-- Bringer of the Light
+							["sourceQuests"] = { 44009 },	-- A Falling Star (not sure if Paladin version of the quest leads to this also, so i didn't include it)
 							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
+							["coord"] = { 27.5, 35.8, 629 },	-- Aegwynn's Gallery
 							["maps"] = { 775, 776 },	-- Scenario: In Defense of the Exodar
-							["groups"] = {
-								{
-									["npcID"] = 110486,	-- Huk'roth the Huntmaster
-									["groups"] = {
+							["qg"] = 112130,	-- Archmage Khadgar
+							["g"] = {
+								i(140614),	-- Amice of Steadfast Allies
+								i(140610),	-- Wristwraps of the Grieving Prophet
+								i(140615),	-- Felstalking Shoulders
+								i(140613),	-- Bracers of Lost Lineage
+								i(140616),	-- Annihilator's Mantle
+								i(140612),	-- Bracers of the Fallen
+								i(140617),	-- Rakeesh's Pauldron
+								i(140611),	-- Fel Commander's Vambraces
+								n(110486, {	-- Huk'roth the Huntmaster
+									["questID"] = 43480,
+									["g"] = {
 										i(140533),	-- Huntmaster's Injector
 									},
-								},
-								{
-									["questID"] = 43705,	-- Nobundo's Last Stand
-									["qg"] = 110695,	-- Quest Giver: Farseer Nobundo
+								}),
+								q(43705, {	-- Nobundo's Last Stand
 									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. If you want to complete this optional quest, you MUST pick it up before completing the Step 2 objectives (Portals and Terrified Citizens) or else it will not be available!",
-									["groups"] = {
+									["qg"] = 110695,	-- Quest Giver: Farseer Nobundo
+									["g"] = {
 										i(140608),	-- Boots of the Broken
 										i(140604),	-- Britches of Elemental Protection
 										i(140606),	-- Earth-Crushing Sabatons
@@ -222,43 +214,24 @@ _.Zones =
 										i(140603),	-- Nobundo's Earthshaper Kilt
 										i(140609),	-- Slippers of the Earthen Healer
 									}
-								},
-								{
-									["questID"] = 43480,	-- Huk'roth the Houndmaster
-									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. This is an objective quest without a quest giver.",
-								},
-								{
-									["questID"] = 43483,	-- Fel Annihilation
-									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. This is an objective quest without a quest giver.",
-								},
-								i(140614),	-- Amice of Steadfast Allies
-								i(140616),	-- Annihilator's Mantle
-								i(140613),	-- Bracers of Lost Lineage
-								i(140612),	-- Bracers of the Fallen
-								i(140611),	-- Fel Commander's Vambraces
-								i(140615),	-- Felstalking Shoulders
-								i(140617),	-- Rakeesh's Pauldron
-								i(140610),	-- Wristwraps of the Grieving Prophet
+								}),
 							},
-						},
-						{
-							["questID"] = 44153,	-- Light's Charge
+						}),
+						q(44153, {	-- Light's Charge
+							["sourceQuest"] = 44004,	-- Bringer of the Light
 							["qg"] = 90417,	-- Quest Giver: Archmage Khadgar
-							["sourceQuest"] = 44004,	-- Source Quest: Bringer of the Light
-							["groups"] = {
-								{
+							["g"] = {
+								crit(2, {	-- Complete the quest, "Light's Charge."
 									["achievementID"] = 10461,	-- Fighting with Style: Classic
-									["criteriaID"] = 2,	-- Complete the quest, "Light's Charge."
-								},
+								}),
 							},
-						},
-						{
-							["questID"] = 44337,	-- Goddess Watch Over You
+						}),
+						q(44337, {	-- Goddess Watch Over You
 							["sourceQuest"] = 44153,	-- Source Quest: Light's Charge
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
 							["description"] = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that have.",
 							["lvl"] = 110,
-						},
+							["qg"] = 113857,	-- Quest Giver: Light's Heart
+						}),
 						{
 							["questID"] = 44338,	-- Goddess Watch Over You
 							["sourceQuest"] = 44153,	-- Source Quest: Light's Charge

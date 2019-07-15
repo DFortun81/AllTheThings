@@ -6,79 +6,11 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
 			n(-17, { 	-- Quests
-				ach(11133, {	-- Why Can't I Hold All This Mana
-					q(41138),	-- Feeding Shal'Aran
-					q(42230),	-- The Valewalker's Burden
-					q(42488),	-- Thalyssra's Abode
-					q(42833),	-- How It's Made: Arcwinee
-					q(42792),	-- Make Your Mark
-					i(136269, {	-- Kel'danath's Manaflask
-						["questID"] = 42842,
-					}),
-					i(140328, {	-- Volatile Leyline Crystal
-						["questID"] = 43988,
-					}),
-					i(140329, {	-- Infinite Stone
-						["questID"] = 43989,
-					}),
-					i(140326, {	-- Enchanted Burial Urn
-						["questID"] = 43986,
-					}),
-					i(140327, {	-- Krytos's Research Notes
-						["questID"] = 43987,
-					}),
-				}),
-				n(-181, {	-- Blacksmithing
-					["g"] = bubbleDown({["requireSkill"] = 164}, {	-- Blacksmithing
-						{	-- Part of the Team
-							["questID"] = 38525,	-- Part of the Team
-							["qg"] = 92264,	-- Felsmith Nal'ryssa
-							["sourceQuest"] = 38524,	-- Felsmith Nal'ryssa
-						},
-						{	-- Smith Under Fire
-							["questID"] = 38526,	-- Smith Under Fire
-							["qg"] = 92264,	-- Felsmith Nal'ryssa
-							["sourceQuest"] = 38525,	-- Part of the Team
-							["g"] = {
-								{	-- Plans: Leystone Boots (Rank 2)
-									["itemID"] = 123934,	-- Plans: Leystone Boots (Rank 2)
-								},
-							},
-						},
-						{	-- Nal'ryssa's Technique
-							["questID"] = 38527,	-- Nal'ryssa's Technique
-							["qg"] = 92264,	-- Felsmith Nal'ryssa
-							["sourceQuest"] = 38526,	-- Smith Under Fire
-						},
-						{	-- Leystone's Potential
-							["questID"] = 38528,	-- Leystone's Potential
-							["qg"] = 92264,	-- Felsmith Nal'ryssa
-							["sourceQuest"] = 38527,	-- Nal'ryssa's Technique
-							["g"] = {
-								{	-- Plans: Leystone Armguards (Rank 2)
-									["itemID"] = 123928,	-- Plans: Leystone Armguards (Rank 2)
-								},
-							},
-						},
-						{	-- The Firmament Stone
-							["questID"] = 38530,	-- The Firmament Stone
-							["qg"] = 92264,	-- Felsmith Nal'ryssa
-							["sourceQuest"] = 38528,	-- Leystone's Potential
-							["isBreadcrumb"] = true,
-						},
-						n(-34, {	-- World Quests
-							{	-- Work Order: Leystone Pauldrons
-								["questID"] = 41637,	-- Work Order: Leystone Pauldrons
-								["qg"] = 97140,	-- First Arcanist Thalyssra
-								["g"] = {
-									{	-- Recipe: Leystone Pauldrons (Rank 3)
-										["itemID"] = 123938,	-- Recipe: Leystone Pauldrons (Rank 3)
-									},
-								},
-							},
-						}),
-					}),
-				}),
+				q(41138),	-- Feeding Shal'Aran
+				q(42230),	-- The Valewalker's Burden
+				q(42488),	-- Thalyssra's Abode
+				q(42833),	-- How It's Made: Arcwinee
+				q(42792),	-- Make Your Mark
 				q(44057),	-- A "Noble" Event
 				q(41173, {	-- A Beacon of Hope
 					i(131717),	-- Starlight Beacon
@@ -209,28 +141,18 @@ _.Zones =
 				q(44752),	-- Essence Triangulation
 				q(41465),	-- Estate Jewelry: A Braggart's Brooch
 				q(41466),	-- Estate Jewelry: Haute Claw-ture
-				{	-- Exotic Textiles
-					["questID"] = 38971,	-- Exotic Textiles
-					["g"] = {
-						i(127026),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
-					},
-					["qg"] = 93978,	-- Leyweaver Athystro
-					["coord"] = { 26.6, 71.4 },
-					["requireSkill"] = 197,	-- Tailoring
-				},
 				q(45066),	-- Experimental Instability
 				q(41178),	-- Explosive Results
 				q(40154),	-- Eye of Azshara: The Scales of Serpentrix
 				q(41137),	-- Fall of the King
 				q(40883),	-- Fate of the Guard
-				{	-- Fate of the Nightborne
-					["questID"] = 45372,	-- Fate of the Nightborne
+				q(45372, {	-- Fate of the Nightborne
 					["qg"] = 115710,	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
 					["g"] = {
 						i(142436),	-- Arcanist's Manasaber
 					},
-				},
+				}),
 				q(40321),	-- Feathersong's Redemption
 				q(43106),	-- Feed Oculeth
 				q(43994),	-- Feed Thalyssra
@@ -239,13 +161,6 @@ _.Zones =
 				q(45265),	-- Feeding the Rebellion
 				q(40919),	-- Fel Bent for Leather
 				q(41167),	-- Fel Fragments
-				q(40214, {	-- Fel Tanning
-					["g"] = {
-						i(140636),	-- Pattern: Dreadleather Bindings (Rank 1)
-						i(140644),	-- Recipe: Gravenscale Armbands (Rank 1)
-					},
-					["qg"] = 98969,	-- Stalriss Dawnrunner
-				}),
 				q(45064),	-- Felborne No More
 				q(45555),	-- Felbound Beasts
 				q(41452),	-- Feline Frantic
@@ -313,15 +228,6 @@ _.Zones =
 				q(44726),	-- In the Business of Souls
 				qa(11964),	-- Incense for the Summer Scorchlings
 				q(44569),	-- Inquisitor Volitix
-				{	-- Inspire Me!
-					["questID"] = 38975,
-					["g"] = {
-						i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
-					},
-					["qg"] = 93976,	-- Leyweaver Mithrogane
-					["coord"] = { 40.2, 69.6 },
-					["requireSkill"] = 197,	-- Tailoring
-				},
 				q(45271),	-- Insurrection
 				q(45278),	-- Insurrection: An Elven Problem
 				q(45285),	-- Insurrection: As Strong As Our Will
@@ -462,15 +368,6 @@ _.Zones =
 				q(41469),	-- Return to Irongrove Retreat
 				q(45238),	-- Return to Karazhan: Cubic Cynosure
 				q(40153),	-- Return to Karazhan: Scales of Legend
-				{	-- Return to Karazhan: The Big Bag Theory
-					["questID"] = 44741,
-					["g"] = {
-						i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)
-					},
-					["qg"] = 93969,	-- Leyweaver Tytallo
-					["coord"] = { 40.4, 69.4 },
-					["requireSkill"] = 197,	-- Tailoring
-				},
 				q(42838),	-- Reversal
 				q(38803),	-- Rin'thissa
 				q(38800),	-- Rin'thissa's Eye
@@ -504,27 +401,6 @@ _.Zones =
 				q(42395),	-- Signaling Trouble
 				q(38649),	-- Silence in the City
 				q(42836),	-- Silkwing Sabotage
-				q(40140, {	-- Ske'rit's Leather Handbook
-					["requireSkill"] = 393,	-- Skinning
-					["sourceQuests"] = {
-						40138,	-- Trial of the Crusader: Hides of Legend
-						40139,	-- Halls of Valor: The Hide of Fenryr
-					},
-					["qg"] = 98720,	-- Ske'rit
-					["g"] = {
-						sp(194819),	-- Skinning Technique: Stonehide Leather (Rank 3)
-					},
-				}),
-				q(40155, {	-- Ske'rit's Scale-Skinning Suggestions
-					["sourceQuests"] = {
-						40153,	-- Return to Karazhan: Scales of Legend
-						40154,	-- Eye of Azshara: The Scales of Serpentrix
-					},
-					["qg"] = 98720,	-- Ske'rit
-					["g"] = {
-						sp(194822),	-- Skinning Technique: Stormscale (Rank 3)
-					},
-				}),
 				q(44727),	-- Smuggled!
 				q(40348),	-- Something in the Water
 				q(44928),	-- Something's Not Quite Right...
@@ -624,9 +500,6 @@ _.Zones =
 				q(39987),	-- Trail of Echoes
 				q(41230),	-- Trapping Evolved
 				q(44790),	-- Trial by Demonfire
-				q(40138, {	-- Trial of the Crusader: Hides of Legend
-					["requireSkill"] = 393,	-- Skinning
-				}),
 				q(41184),	-- Tried and True
 				qa(44858),	-- Trolling Them
 				qh(44860),	-- Trolling Them
@@ -656,9 +529,6 @@ _.Zones =
 				q(43566),	-- Withered Progress
 				q(41174),	-- Worth Its Weight
 				q(41702),	-- Written in Stone
-				q(40212, {	-- Wrong End of the Knife
-					["requireSkill"] = 393,	-- Skinning
-				}),
 				q(41197),	-- You've Got to Be Kitten Me Right Meow
 				q(40762),	-- Zealot's Dues
 				q(40009,  {  -- Arcane Thirst

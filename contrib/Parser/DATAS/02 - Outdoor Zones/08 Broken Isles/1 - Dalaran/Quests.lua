@@ -98,14 +98,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 93775,	-- Eitrigg
 				}),
-				q(44009,  {	-- A Falling Star
-					["classes"] = { 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 },	-- not Paladins
-					["qg"] = 90417,	-- Archmage Khadgar
-				}),
-				q(44257,  {	-- A Falling Star
-					["classes"] = { 2 },	-- Paladin
-					["qg"] = 90417,	-- Archmage Khadgar
-				}),
 				q(46083,  {	-- A Few Things First
 					["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
 					["classes"] = { 2 },
@@ -396,19 +388,6 @@ _.Zones =
 					["classes"] = { 10 },
 					["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 					["u"] = 40,
-				}),
-				q(44004,  {	-- Bringer of the Light
-					["qg"] = 112130,	-- Archmage Khadgar
-					["g"] = {
-						i(140614),	-- Amice of Steadfast Allies
-						i(140610),	-- Wristwraps of the Grieving Prophet
-						i(140615),	-- Felstalking Shoulders
-						i(140613),	-- Bracers of Lost Lineage
-						i(140616),	-- Annihilator's Mantle
-						i(140612),	-- Bracers of the Fallen
-						i(140617),	-- Rakeesh's Pauldron
-						i(140611),	-- Fel Commander's Vambraces
-					},
 				}),
 				q(41121,  {	-- By Any Means
 					["classes"] = { 12 },

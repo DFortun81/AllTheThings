@@ -234,6 +234,7 @@ _.NeverImplemented =
 		q(36811),	-- Retake Faronaar — bonus objective in Azsuna, unavailable after 110
 		q(37466),	-- The Broken Academy — bonus objective in Azsuna, unavailable after 110
 		q(37779),	-- Tip the Scales — bonus objective in Azsuna, unavailable after 110
+		q(43483),	-- Fel Annihilation — bonus objective in "In Defense of the Exodar" scenario, unavailable afterwards
 		
 		-------------------
 		--      BFA      --

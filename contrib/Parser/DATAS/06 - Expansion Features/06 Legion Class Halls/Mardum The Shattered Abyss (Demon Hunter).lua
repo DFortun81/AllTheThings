@@ -5,9 +5,9 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(12, {	-- Mardum, The Shattered Abyss (Demon Hunter)
-			["lvl"] = 98,
 			["mapID"] = 720,	-- Mardum, The Shattered Abyss (Demon Hunter)
 			["maps"] = { 721 },	-- Lower Command Center
+			["lvl"] = 98,	-- add ["lvl"] to any quests with a higher level requirement!
 			["g"] = {
 				n(-498, {	-- Twisting Nether Class Hall Ability
 					["questID"] = 44707,
@@ -48,11 +48,56 @@ _.ExpansionFeatures =
 				}),
 				n(-17, {	-- Quests
 					-- confirmed/sourced
+					q(42679, {	-- Broken Warriors
+						["sourceQuests"] = {
+							42677,	-- Things Gaardoun Needs (Kayn)
+							44161,	-- Things Gaardoun Needs (Altruis)
+						},
+						["coord"] = { 59.1, 58.7, 720 },
+						["lvl"] = 101,
+						["qg"] = 103761,	-- Kor'vas Bloodthorn
+					}),
+					q(42690, {	-- Champion: Altruis the Sufferer
+						["sourceQuests"] = { 42670 },	-- Rise, Champions (Altruis) — must be on this quest
+						["lvl"] = 101,
+						["qg"] = 108571,	-- Altruis the Sufferer
+						["g"] = {
+							follower(498),	-- Champion: Altruis the Sufferer
+						},
+					}),
+					q(42697, {	-- Champion: Asha Ravensong
+						["sourceQuests"] = {
+							42671,	-- Rise, Champions (Kayn) — must be on this quest
+							42670,	-- Rise, Champions (Altruis) — must be on this quest
+						}, 
+						["lvl"] = 101,
+						["qg"] = 108326,  -- Asha Ravensong
+						["g"] = {
+							follower(722),	-- Champion: Asha Ravensong
+						},
+					}),
+					q(42695, {	-- Champion: Kayn Sunfury
+						["sourceQuests"] = {
+							42671,	-- Rise, Champions (Kayn) — must be on this quest
+						}, 
+						["coord"] = { 59.1, 58.7, 720 },
+						["lvl"] = 101,
+						["qg"] = 108572,	-- Kayn Sunfury
+						["g"] = {
+							follower(595),	-- Champion: Kayn Sunfury
+						},
+					}),
 					q(41069, {	-- Direct Our Wrath (Kayn)
 						["sourceQuests"] = { 41067 },	-- Time is of the Essence
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 59.5, 58.0, 720 },
 						["qg"] = 95240,	-- Kayn Sunfury
+					}),
+					q(42681, {	-- Loramus, Is That You?
+						["sourceQuests"] = { 42679 },	-- Broken Warriors
+						["coord"] = { 59.1, 58.7, 720 },
+						["lvl"] = 101,
+						["qg"] = 103761,	-- Kor'vas Bloodthorn
 					}),
 					q(39718, {	-- Paradise Lost
 						["sourceQuests"] = {
@@ -61,6 +106,12 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { 12 },	-- Demon Hunter
 						["qg"] = 98613,	-- Scouting Map
+					}),
+					q(42671, {	-- Rise, Champions (Kayn)
+						["sourceQuests"] = { 44087 },	-- Return to the Fel Hammer
+						["coord"] = { 56.4, 55.1, 720 },
+						["lvl"] = 101,
+						["qg"] = 103025,	-- Battlelord Gaardoun
 					}),
 					q(41062, {	-- Spoils of Victory
 						["sourceQuests"] = { 41037 },	-- Unbridled Power
@@ -73,6 +124,24 @@ _.ExpansionFeatures =
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 59.4, 50.4, 721 },
 						["qg"] = 95238,	-- Allari the Souleater
+					}),
+					q(44161, {	-- Things Gaardoun Needs (Altruis)
+						["sourceQuests"] = {
+							42697,	-- Champion: Asha Ravensong
+							42690,	-- Champion: Altruis the Sufferer
+						},
+						["coord"] = { 59.5, 58.7, 720 },
+						["lvl"] = 101,
+						["qg"] = 103761,	-- Kor'vas Bloodthorn
+					}),
+					q(42677, {	-- Things Gaardoun Needs (Kayn)
+						["sourceQuests"] = {
+							42697,	-- Champion: Asha Ravensong
+							42695,	-- Champion: Kayn Sunfury
+						},
+						["coord"] = { 59.5, 58.7, 720 },
+						["lvl"] = 101,
+						["qg"] = 103761,	-- Kor'vas Bloodthorn
 					}),
 					q(41067, {	-- Time is of the Essence
 						["sourceQuests"] = { 41066 },	-- The Hunter's Gaze
@@ -105,13 +174,6 @@ _.ExpansionFeatures =
 					q(41803),	-- Asking a Favor
 					q(40247),	-- Asking a Favor
 					q(42801),	-- Back in Black
-					q(42679, {	-- Broken Warriors
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
-						["sourceQuests"] = {
-							42677,	-- Things Gaardoun Needs [Kayn]
-							44161,	-- Things Gaardoun Needs [Altruis]
-						},
-					}),
 					q(44223),	-- Champion Armaments
 					q(42653, {	-- Champion: Akama
 						["qg"] = 108239,	-- Akama
@@ -126,23 +188,6 @@ _.ExpansionFeatures =
 							follower(499),	-- Champion: Allari the Souleater
 						},
 					}),
-					q(42690, {	-- Champion: Altruis the Sufferer
-						["qg"] = 108571,	-- Altruis the Sufferer
-						["sourceQuests"] = { 42670 },	-- Rise, Champions [This quest activates Champion: Altruis the Sufferer despite not being finished]
-						["g"] = {
-							follower(498),	-- Champion: Altruis the Sufferer
-						},
-					}),
-					q(42697, {	-- Champion: Asha Ravensong
-						["qg"] = 108326,  -- Asha Ravensong
-						["sourceQuests"] = {
-							42671,	-- Rise, Champions [This quest activates Champion: Asha Ravensong despite not being finished]
-							42670,	-- Rise, Champions [This quest activates Champion: Asha Ravensong despite not being finished]
-						}, 
-						["g"] = {
-							follower(722),	-- Champion: Asha Ravensong
-						},
-					}),
 					q(42777, {	-- Champion: Belath Dawnblade
 						["qg"] = 108782,	-- Belath Dawnblade
 						["sourceQuests"] = {  42776 },	-- Two Worthies [This quest activates Champion: Belath Dawnblade despite not being finished]
@@ -155,13 +200,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least  [This quest activates Champion: Jace Darkweaver despite not being finished]
 						["g"] = {
 							follower(807),	-- Champion: Jace Darkweaver
-						},
-					}),
-					q(42695, {	-- Champion: Kayn Sunfury
-						["qg"] = 108572,	-- Kayn Sunfury
-						["sourceQuests"] = { 42671 },	-- Rise, Champions [This quest activates Champion: Kayn Sunfury despite not being finished]
-						["g"] = {
-							follower(595),	-- Champion: Kayn Sunfury
 						},
 					}),
 					q(42673, {	-- Champion: Kor'vas Bloodthorn
@@ -228,10 +266,6 @@ _.ExpansionFeatures =
 					q(42132),	-- Last, But Not Least
 					q(42522),	-- Leader of the Illidari
 					q(46333),	-- Livin' on the Ledge
-					q(42681, {	-- Loramus, Is That You?
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
-						["sourceQuests"] = { 42679 },	-- Broken Warriors
-					}),
 					q(40819),	-- Making Arrangements
 					q(41120),	-- Making Arrangements
 					q(42735),	-- Malace in Vrykul Land
@@ -255,13 +289,8 @@ _.ExpansionFeatures =
 						["qg"] = 112666,	-- Asha Ravensong
 						--["sourceQuests"] = { },	-- DH was already on this point
 					}),
-					q(42670, {	-- Rise, Champions [Altruis]
-						["qg"] = 103025,	-- Battlelord Gaardoun
+					q(42670, {	-- Rise, Champions (Altruis)
 						["sourceQuests"] = { 42666 },	-- Return to the Fel Hammer [Note: I *believe* this is the right ID, I forgot to check]
-					}),
-					q(42671, {	-- Rise, Champions [Kayn]
-						["sourceQuests"] = { 44087 },	-- Return to the Fel Hammer
-						["lvl"] = 102,
 						["qg"] = 103025,	-- Battlelord Gaardoun
 					}),
 					q(45330),	-- Scouting Party
@@ -283,14 +312,6 @@ _.ExpansionFeatures =
 					q(44277),	-- The Lord of Black Rook Hold
 					q(43501),	-- The Power Within
 					q(43496),	-- The Power Within
-					q(42677, {	-- Things Gaardoun Needs [Kayn]
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
-						["sourceQuests"] = { 42671 },	-- Rise, Champions [Kayn]
-					}),
-					q(44161, {	-- Things Gaardoun Needs [Altruis]
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
-						["sourceQuests"] = { 42670 },	-- Rise, Champions [Altruis]
-					}),
 					q(41096),	-- Time is of the Essence
 					q(45172),	-- To Battle!
 					q(46334),	-- To Fel and Back
