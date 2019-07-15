@@ -132,6 +132,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51778, {	-- Deepfang
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52179, {	-- Fortified Resistance
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -480,6 +484,12 @@ _.Zones =
 						["g"] = {
 							i(162295),	-- Recipe: Sailor's Pie [Rank 3]
 						},
+					}),
+					q(50982, {	-- Work Order: Star Moss
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(52352, {	-- Zeritarj
 						["lvl"] = 120,

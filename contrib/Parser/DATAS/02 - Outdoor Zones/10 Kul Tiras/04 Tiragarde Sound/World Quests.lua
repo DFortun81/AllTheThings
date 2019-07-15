@@ -21,6 +21,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51653, {	-- Auditor Dolp
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52869, {	-- Azerite Empowerment
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -104,6 +108,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(50234, {	-- Crews of Freehold
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51311, {	-- Energizing Extract
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -244,6 +253,11 @@ _.Zones =
 					}),
 					q(51661, {	-- Raging Swell
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51566, {	-- Resurgence of the Beast
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51656, {	-- Saurolisk Tamer Mugg

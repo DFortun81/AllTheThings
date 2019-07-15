@@ -172,6 +172,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50782, {	-- Word on the Streets
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52425, {	-- Work Order: Battle Flag: Spirit of Freedom
 						["qg"] = 131287,	-- Natal'hakata
 						["lvl"] = 120,

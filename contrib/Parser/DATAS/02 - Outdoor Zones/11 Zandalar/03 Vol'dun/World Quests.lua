@@ -15,6 +15,10 @@ _.Zones =
 							ach(13041),	-- Hungry, Hungry Ranishu
 						},
 					}),
+					q(51095, {	-- Ashmane
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52849, {	-- Azerite Empowerment
 						["lvl"] = 120,
 						["collectible"] = false,

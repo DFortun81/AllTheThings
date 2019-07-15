@@ -17,6 +17,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51576, {	-- Any Witch Way but Dead
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51466, {	-- Arvon the Betrayed
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -342,6 +347,10 @@ _.Zones =
 						["coord"] = { 33.89, 46.98, 896 },
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51970, { 	-- The Caterer
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(55215, { 	-- The Cycle of Life
