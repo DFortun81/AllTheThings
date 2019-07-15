@@ -10269,9 +10269,11 @@ app:GetWindow("Harvester", UIParent, function(self)
 				wipe(modIDs);
 				wipe(bonusIDs);
 			end
+			--[[
 			for artifactID,groups in pairs(fieldCache["artifactID"]) do
 				tinsert(db.g, setmetatable({visible = true, artifactID = tonumber(artifactID)}, app.BaseArtifact));
 			end
+			]]--
 			self.data = db;
 			BuildGroups(db, db.g);
 			UpdateGroups(db, db.g);
