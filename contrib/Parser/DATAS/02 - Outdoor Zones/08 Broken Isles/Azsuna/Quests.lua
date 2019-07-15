@@ -6,6 +6,12 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
 			n(-17, { 	-- Quests
+				n(-170, {	-- Balance of Power
+					q(43521),	-- Essence of Power
+					q(43522),	-- Essential Corruption
+					q(40668),	-- Eye of Azshara: The Heart of Zin-Azshari
+					q(43517),	-- Darkheart Thicket: Fallen Power
+				}),
 				q(38857, {	-- A Favor for Mr. Shackle
 					["coord"] = { 50.2, 61.0, 630 },
 					["qg"] = 88863,	-- Seska Seafang
@@ -31,6 +37,18 @@ _.Zones =
 					["sourceQuests"] = { 37256 },	-- They Came From the Sea
 					["coord"] = { 47.0, 41.4, 630 },
 					["qg"] = 88798,	-- Lady Irisse
+				}),
+				q(42367, {	-- Arkethrax
+					["sourceQuests"] = { 42375 },	-- Eye See You
+					["coord"] = { 63.8, 28.8, 630 },
+					["qg"] = 107245,	-- Marius Felbane
+					["g"] = {
+						crit(1, {	-- Azsuna
+							["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
+						}),
+						i(121480),	-- Felblaze Chain
+						i(129171),	-- Band of Ingression
+					},
 				}),
 				q(42694, {	-- Back from the Dead
 					["sourceQuests"] = {
@@ -84,6 +102,14 @@ _.Zones =
 				q(42692, {	-- Children of Nar'thalas
 					["coord"] = { 53.3, 45.4, 630 },
 					["qg"] = 89326,	-- Kallista Starlance
+				}),
+				q(42567, {	-- Cursed to Wither
+					["sourceQuests"] = {
+						38014,	-- Feasting on the Dragon
+						38015,	-- On the Brink
+					},
+					["coord"] = { 49.9, 26.6, 630 },
+					["qg"] = 90738,	-- Stellagosa
 				}),
 				q(37449, {	-- Dark Revelations
 					["sourceQuests"] = {
@@ -162,6 +188,33 @@ _.Zones =
 						i(138860),	-- Kor'kron Breastplate
 					},
 				}),
+				q(38014, {	-- Feasting on the Dragon
+					["sourceQuests"] = { 37862 },	-- Still Alive
+					["coord"] = { 49.7, 26.8, 630 },
+					["qg"] = 102988,	-- Archmage Khadgar
+					["g"] = {
+						i(121435),	-- Leywalker Robes
+						i(121418),	-- Ruin-Stalker Vest
+						i(121417),	-- Seaspray Vest
+						i(121416),	-- Nar'thalas Chestplate
+						i(132914),	-- Leywalker Handwraps
+						i(132915),	-- Ruin-Stalker Grips
+						i(132916),	-- Seaspray Grips
+						i(132917),	-- Nar'thalas Grips
+					},
+				}),
+				q(42372, {	-- Felblaze Ingress
+					["isBreadcrumb"] = true,
+					["coord"] = { 50.4, 30.6, 630 },
+					["qg"] = 106915,	-- Marius Felbane
+				}),
+				q(45127, {	-- Fel-Crossed Lovers
+				--	this is an artifact quest, but i'm not sure for which one(s).
+					["coord"] = { 25.6, 57.6, 630 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
+					["qg"] = 116189,	-- Levia Laurence
+				}),
 				q(37656, {	-- Fel Machinations
 					["sourceQuests"] = {
 						36920,	-- From Within (Non-DH Version)
@@ -205,6 +258,33 @@ _.Zones =
 						i(138845),	-- Academy Chain
 					},
 				}),
+				q(42756, {	-- Hunger's End
+					["sourceQuests"] = { 42567 },	-- Cursed to Wither
+					["coord"] = { 48.2, 22.7, 630 },
+					["qg"] = 91131,	-- Runas the Shamed
+					["g"] = {
+						i(133016),	-- Azurewing Guile
+						i(133014),	-- Senegos' Despair
+						i(133013),	-- Reinvigorating Crystal
+						i(133012),	-- Senegos' Resolve
+						i(133011),	-- Leyhollow Frost
+						i(133010),	-- Azure Flame
+						i(133009),	-- Corrupted Ley Crystal
+						i(133008),	-- Azurewing Blood
+						i(133007),	-- Everlasting Construct Core
+						i(133006),	-- Blessed Llothien Stone
+						i(133050),	-- Gale of the Blues
+						i(133048),	-- Wretched Draining Essence
+						i(133047),	-- Crystallized Whelp Egg
+						i(133046),	-- Fortified Ancient Dragonscale
+						i(133045),	-- Senegos' Breath
+						i(133044),	-- Stellagosa's Rage
+						i(133043),	-- Fel-Touched Mana Gems
+						i(133042),	-- Ley-Infused Blood
+						i(133041),	-- Radiating Ley Crystal
+						i(133040),	-- Teardrop of Elune
+					},
+				}),
 				q(37496, {	-- Infiltrating Shipwreck Arena
 					["sourceQuests"] = { 38407 },	-- Bottled Up
 					["coord"] = { 47.0, 41.4, 630 },
@@ -227,6 +307,19 @@ _.Zones =
 					["coord"] = { 45.1, 42.9, 630 },
 					["qg"] = 93337,	-- Archmage Khadgar
 				}),
+				q(45836, {	-- Jorach's Calling
+					["classes"] = { 4 },	-- Rogue
+					["coord"] = { 57.6, 63.4, 630 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
+					["qg"] = 119821,	-- Princess Tess Greymane
+				}),
+				q(46326, {	-- Jorach's Calling
+					["classes"] = { 4 },	-- Rogue
+					["coord"] = { 57.6, 63.4, 630 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 119822,	-- Lilian Voss
+				}),
 				q(38443, {	-- Journey to the Repose
 					["sourceQuests"] = { 37449 },	-- Dark Revelations
 					["coord"] = { 43.5, 43.4, 630 },
@@ -241,6 +334,11 @@ _.Zones =
 					["sourceQuests"] = { 42238 },	-- Missing Demon
 					["coord"] = { 62.0, 51.3, 630 },
 					["qg"] = 91166,	-- Daglop
+				}),
+				q(37960, {	-- Leyline Abuse
+					["sourceQuests"] = { 37857 },	-- Runas Knows the Way
+					["coord"] = { 53.4, 16.3, 630 },
+					["qg"] = 89978,	-- Projection of Senegos
 				}),
 				q(37654, {	-- Maritime Law
 					["coord"] = { 56.5, 59.5, 630 },
@@ -267,6 +365,11 @@ _.Zones =
 					["sourceQuests"] = { 38460 },	-- Let's Make A Deal
 					["coord"] = { 62.8, 51.4, 630 },
 					["qg"] = 91166,	-- Daglop
+				}),
+				q(42238, {	-- Missing Demon
+					["isBreadcrumb"] = true,
+					["coord"] = { 50.4, 30.6, 630 },
+					["qg"] = 106914,	-- Tehd Shoemaker
 				}),
 				q(37536, {	-- Morale Booster
 					["sourceQuests"] = { 37510 },	-- Sternfathom's Champion
@@ -296,6 +399,14 @@ _.Zones =
 						i(132954),	-- Polished Dookin Ring
 					},
 				}),
+				q(38015, {	-- On the Brink
+					["sourceQuests"] = { 37862 },	-- Still Alive
+					["coord"] = { 50.0, 26.5, 630 },
+					["qg"] = 90738,	-- Stellagosa
+					["g"] = {
+						i(129178),	-- Emmigosa (PET!)
+					},
+				}),	
 				q(37257, {	-- Our Very Bones
 					["sourceQuests"] = { 37733 },	-- Prince Farondis
 					["coord"] = { 46.9, 41.2, 630 },
@@ -325,6 +436,11 @@ _.Zones =
 					["sourceQuests"] = { 37256 },	-- They Came From the Sea
 					["coord"] = { 48.4, 34.4, 630 },
 					["qg"] = 89023,	-- Nightwatcher Idri
+				}),
+				q(42367, {	-- Quantity over Quality
+					["sourceQuests"] = { 42375 },	-- Eye See You
+					["coord"] = { 63.8, 28.8, 630 },
+					["qg"] = 107245,	-- Marius Felbane
 				}),
 				q(37658, {	-- Reignite the Wards
 					["sourceQuests"] = {
@@ -357,6 +473,25 @@ _.Zones =
 						i(132899),	-- Pit-Fighter's Headgear
 						i(132900),	-- Scrapper's Coif
 						i(132902),	-- Pit-Brawler's Helm
+					},
+				}),
+				q(37857, {	-- Runas Knows the Way
+					["sourceQuests"] = { 37957 },	-- Runas the Shamed
+					["coord"] = { 49.1, 16.1, 630 },
+					["qg"] = 90383,	-- Runas the Shamed
+				}),
+				q(37957, {	-- Runas the Shamed
+					["sourceQuests"] = { 37858 },	-- Stellagosa
+					["coord"] = { 46.6, 15.7, 630 },
+					["qg"] = 90065,	-- Stellagosa
+					["g"] = {
+						i(132971),	-- Nightfallen's Desperation
+						i(132970),	-- Runas' Nearly Depleted Ley Crystal
+						i(132969),	-- Talisman of the Lost Blue Flight
+						i(132975),	-- Nightfallen Mantle
+						i(132974),	-- Mana-Stalker Shoulderpads
+						i(132973),	-- Whelp Protector's Mantle
+						i(132972),	-- Azure Champion's Pauldrons
 					},
 				}),
 				q(37530, {	-- Save Yourself
@@ -397,6 +532,12 @@ _.Zones =
 					["coord"] = { 58.9, 57.8, 630 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(37858, {	-- Stellagosa
+					["sourceQuests"] = { 37856 },	-- The Withered
+					["isBreadcrumb"] = true,
+					["coord"] = { 49.1, 16.4, 630 },
+					["qg"] = 89978,	-- Projection of Senegos
+				}),
 				q(37510, {	-- Sternfathom's Champion
 					["sourceQuests"] = {
 						37528,	-- Let Sleeping Giants Lie
@@ -404,6 +545,12 @@ _.Zones =
 					},
 					["coord"] = { 50.0, 48.4, 630 },
 					["qg"] = 88873,	-- Okuna Longtusk
+				}),
+				q(37862, {	-- Still Alive
+				--	may also require "You Scratch My Back..."
+					["sourceQuests"] = { 37861 },	-- THe Nightborne Prince
+					["coord"] = { 57.5, 13.4, 630 },
+					["qg"] = 107995,	-- Stellagosa
 				}),
 				q(42371, {	-- Study Hall: Combat Research
 					["sourceQuests"] = { 42370 },	-- Wanding 101
@@ -414,6 +561,11 @@ _.Zones =
 					["sourceQuests"] = { 37654 },	-- Maritime Law
 					["coord"] = { 64.2, 56.0, 630 },
 					["qg"] = 106881,	-- Looper Allen
+				}),
+				q(37859, {	-- The Consumed
+					["sourceQuests"] = { 37855 },	-- The Last of the Last
+					["coord"] = { 49.3, 15.6, 630 },
+					["qg"] = 90423,	-- Mana-Drained Whelpling
 				}),
 				q(37853, {	-- The Death of the Eldest
 					["sourceQuests"] = { 38443 },	-- Journey to the Repose
@@ -463,6 +615,14 @@ _.Zones =
 						i(133052),	--	Instructor's Crystal Head
 					},
 				}),
+				q(37959, {	-- The Hunger Returns
+					["sourceQuests"] = { 37857 },	-- Runas Knows the Way
+					["coord"] = { 53.7, 16.7, 630 },
+					["qg"] = 90383,	-- Runas the Shamed
+					["g"] = {
+						i(138876), 		-- Runas' Crystal Grinder (TOY!)
+					},
+				}),
 				q(42271, {	-- Their Dying Breaths
 					["sourceQuests"] = { 37991 },	-- Agapanthus
 					["coord"] = { 48.8, 26.4, 630 },
@@ -486,6 +646,24 @@ _.Zones =
 					["qg"] = 89341,	-- Magister Garuhod
 					["g"]  = {
 						i(133814),	-- Recipe: Faronaar Fizz (Rank 1)
+					},
+				}),
+				q(37861, {	-- The Nightborne Prince
+					["sourceQuests"] = {
+						37960,	-- Leyline Abuse
+						37959,	-- The Hunger Returns
+					},
+					["coord"] = { 53.5, 16.3, 630 },
+					["qg"] = 89978,	-- Projection of Senegos
+					["g"] = {
+						i(121444),	-- Leywalker Wristwraps
+						i(121447),	-- Ruin-Stalker Wristwraps
+						i(121446),	-- Seaspray Wristwraps
+						i(121445),	-- Nar'thalas Vambraces
+						i(132929),	-- Leywalker Halo
+						i(132928),	-- Ruin-Stalker Headgear
+						i(132927),	-- Seaspray Coif
+						i(132926),	-- Nar'thalas Helmet
 					},
 				}),
 				q(37566, {	-- The Prince is Going Down
@@ -530,6 +708,11 @@ _.Zones =
 					["coord"] = { 51.7, 44.2, 630 },
 					["qg"] = 88867,	-- Prince Farondis
 				}),
+				q(37856, {	-- The Withered
+					["sourceQuests"] = { 37855 },	-- The Last of the Last
+					["coord"] = { 48.6, 16.4, 630 },
+					["qg"] = 90916,	-- Agapanthus
+				}),
 				q(37256, {	-- They Came From the Sea
 					["sourceQuests"] = { 37690 },	-- Those Who Remember
 					["coord"] = { 48.4, 34.4, 630 },
@@ -543,6 +726,18 @@ _.Zones =
 						i(132905),	-- Ruin-Stalker Cord
 						i(132904),	-- Seaspray Cinch
 						i(132903),	-- Nar'thalas Belt
+					},
+				}),
+				q(42369, {	-- They're Doing it Wrong
+					["sourceQuests"] = { 42375 },	-- Eye See You
+					["coord"] = { 63.8, 28.8, 630 },
+					["qg"] = 107244,	-- Tehd Shoemaker
+				}),
+				q(38237, {	-- This IS In My Contract.
+					["sourceQuests"] = { 38232 },	-- Minion!  Kill Them!
+					["qg"] = 91165,	-- Daglop
+					["g"] = {
+						i(138878),	-- Copy of Daglop's Contract (TOY!)
 					},
 				}),
 				q(37690, {	-- Those Who Remember
@@ -564,252 +759,26 @@ _.Zones =
 					["coord"] = { 53.3, 45.4, 630 },
 					["qg"] = 108328,	-- Olothil Starlance
 				}),
-				
-				
-				
-				
-				
-				--[[
-					["sourceQuests"] = {  },	-- 
-					["coord"] = { , , 630 },
-					["qg"] = ,	-- 
-				}),
-				--]]
-				
-				
-				
-				
-				
-				
-				
-				
-				
-		ach(10763, {	-- Azsuna Matata
-			crit(2, {	-- Defending Azurewing Repose
-				q(37856),	-- The Withered
-				q(37859),	-- The Consumed
-				q(37858, {	-- Stellagosa
-					["qg"] = 89978,	-- Projection of Senegos
-					["isBreadcrumb"] = true,
-				}),
-				q(37957,  {  	-- Runas the Shamed
-					["g"] = {
-						i(132971),	-- Nightfallen's Desperation
-						i(132970),	-- Runas' Nearly Depleted Ley Crystal
-						i(132969),	-- Talisman of the Lost Blue Flight
-						i(132975),	-- Nightfallen Mantle
-						i(132974),	-- Mana-Stalker Shoulderpads
-						i(132973),	-- Whelp Protector's Mantle
-						i(132972),	-- Azure Champion's Pauldrons
-					},
-					["sourceQuests"] = { 37858 },	-- Stellagosa
-				}),
-				q(37857),	-- Runas Knows the Way
-				q(37959,  {  	-- The Hunger Returns
-					i(138876), 		-- Runas' Crystal Grinder
-				}),
-				q(37960),	-- Leyline Abuse
-				q(37860),	-- You Scratch My Back...
-				q(37861,  {  	-- The Nightborne Prince
-					i(121444),
-					i(121447),
-					i(121446),
-					i(121445),
-					i(132929),
-					i(132928),
-					i(132927),
-					i(132926),
-				}),
-				q(37862),	-- Still Alive
-				q(38014,  {  	-- Feasting on the Dragon
-					i(121435),
-					i(121418),
-					i(121417),
-					i(121416),
-					i(132914),
-					i(132915),
-					i(132916),
-					i(132917),
-				}),
-				q(38015,  {  	-- On the Brink
-					i(129178),  	-- Emmigosa
-				}),	
-				q(42567),	-- Cursed to Wither
-				q(42756),	-- Hunger's End
-			}),
-		}),
-				ach(10994, {	-- A Glorious Campaign
-					cl(5, {	-- Priest
-						q(43375, {	-- An Ample Supply
-							["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 58.5, 37.2, 630 },
-							["lvl"] = 103,
-							["qg"] = 110686,	-- Zabra Hexx
-						}),
-						q(42137, {	-- Champion: Yalia Sagewhisper
-							["sourceQuests"] = { 43376 },	-- Problem Salver
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 47.1, 43.9, 630 },
-							["lvl"] = 103,
-							["qg"] = 110687,	-- Yalia Sagewhisper
-							["g"] = {
-								follower(871),	-- Yalia Sagewhisper
-							},
-						}),
-						q(42138, {	-- Champion: Zabra Hexx
-							["sourceQuests"] = { 43376 },	-- Problem Salver
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 47.1, 43.9, 630 },
-							["lvl"] = 103,
-							["qg"] = 110686,	-- Zabra Hexx
-							["g"] = {
-								follower(870),	-- Zabra Hexx
-							},
-						}),
-						q(43378, {	-- Eye of Azshara: Looking Through the Lens
-							["sourceQuests"] = {
-								42137,	-- Champion: Yalia Sagewhisper
-								42138,	-- Champion: Zabra Hexx
-							},
-							["classes"] = { 5 },
-							["qg"] = 110687,	-- Yalia Sagewhisper
-						}),
-						q(43374, {	-- Murloc Mind Control
-							["sourceQuests"] = { 43372 },	-- The Best and Brightest
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 58.5, 37.2, 630 },
-							["lvl"] = 103,
-							["qg"] = 110686,	-- Zabra Hexx
-						}),
-						q(43376, {	-- Problem Salver
-							["sourceQuests"] = {
-								43375,	-- An Ample Supply
-							--	43374,	-- Murloc Mind Control (commented out to avoid infinite loop!)
-							},
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 58.5, 37.2, 630 },
-							["lvl"] = 103,
-							["qg"] = 112487,	-- Yalia Sagewhisper
-						}),
-					}),
-					cl(2, {	-- Paladin
-						q(43490),	-- Aponi's Trail
-						q(42888),	-- Communication Orbs
-					}),
-					cl(8, {	-- Mage
-						q(42222),	-- Empyrean Society Report
-					}),
-					cl(4, {	-- Rogue
-						qh(46324),	-- False Orders
-						qa(45835),	-- False Orders
-					}),
-					cl(9, {	-- Warlock
-						q(39179),	-- Bloodstone Bandit
-						q(45024),	-- Cult Culling
-						q(40218),	-- Debt Repaid
-						q(45026),	-- Expending Fel Energy
-					}),
-				}),
-				n(-170, {	-- Balance of Power
-					q(43521),	-- Essence of Power
-					q(43522),	-- Essential Corruption
-					q(40668),	-- Eye of Azshara: The Heart of Zin-Azshari
-					q(43517),	-- Darkheart Thicket: Fallen Power
-				}),
-				q(42367, {	-- Arkethrax
-					["sourceQuest"] = 42375,	-- Eye See You
-					["qg"] = 107245,	-- Marius Felbane
-					["g"] = {
-						i(121480),	-- Felblaze Chain
-						i(129171),	-- Band of Ingression
-					},
-				}),
-				q(45127, {	-- Fel-Crossed Lovers
-					["qg"] = 116189,	-- Levia Laurence
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(42372, {	-- Felblaze Ingress
-					["isBreadcrumb"] = true,
-				}),
-				q(45836, {	-- Jorach's Calling
-					["qg"] = 119821,	-- Princess Tess Greymane
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },
-				}),
-				q(46326, {	-- Jorach's Calling
-					["qg"] = 119822,	-- Lilian Voss
-					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },
-				}),
-				q(38959, {	-- Left Behind
-					["qg"] = 93967,	-- Lyndras
-					["sourceQuests"] = { 38957 },	-- Taking Inspiration
-				}),
-				q(38960, {	-- Lining Them Up
-					["qg"] = 93967,	-- Lyndras
-					["sourceQuests"] = { 38957 },	-- Taking Inspiration
-				}),
-				q(42238, {	-- Missing Demon
-					["isBreadcrumb"] = true,
-				}),
-				q(42367, {	-- Quantity over Quality
-					["sourceQuest"] = 42368,	-- Eye See You
-					["qg"] = 107245,	-- Marius Felbane
-				}),
-				q(42369),	-- They're Doing it Wrong
-				q(38237,  {  	-- This IS In My Contract
-					i(138878), 		-- Copy of Daglop's Contract
-				}),
-				q(40210, {	-- Time Well Spent
-					["qg"] = 98964,	-- Celea
+				q(37860, {	-- You Scratch My Back...
 					["sourceQuests"] = {
-						40203,	-- Strength of the Past
-						40204,	-- Evolution of the Past
-						40205,	-- Respect for the Past
-						40207,	-- Scales of the Arcane
-						40208,	-- Eye of Azshara: Scales of the Sea
-						40209,	-- Scales of the Earth
+						37960,	-- Leyline Abuse
+						37959,	-- The Hunger Returns
 					},
-					["requireSkill"] = 165,
-				}),
-				q(40547, {	-- To Dalaran, With Love
-					["qg"] = 100521,	-- Jabrul
-					["requireSkill"] = 755,
-					["sourceQuests"] = { 40556 },	-- Jabrul Needs You
+					["coord"] = { 53.7, 16.7, 630 },
+					["qg"] = 90383,	-- Runas the Shamed
 				}),
         --[[ These quests will be organized soon™
 				q(41173),	-- A Beacon of Hope
 				q(46205),	-- A Conduit No More
-				q(42434),	-- A Covert Operation
 				q(44876),	-- A Dance With Dragons
-				q(40195),	-- A Daring Rescue
-				q(40206),	-- A Debt Paid
-				q(40524),	-- A Familiar Ring to It
-				q(38951),	-- A Needle Need
-				q(37965),	-- A Tainted Vintage
 				q(43514),	-- A Vainglorious Past
-				q(41183),	-- Academic Exploration
 				q(38953),	-- Advanced Needlework
-				q(41759),	-- An Unlikely Ally
 				q(41162),	-- And Into the Fel Fire
-				q(45021),	-- Answers Unknown
 				q(46199),	-- Battle for Azsuna
 				q(47193),	-- Battle for Azsuna
-				q(47194),	-- Battle for Highmountain
-				q(47195),	-- Battle for Stormheim
-				q(47196),	-- Battle for Val'sharah
-				q(40857),	-- Bits and Pieces
-				q(42450),	-- Brawlgoth
 				q(43193),	-- Calamitous Intent
-				q(40766),	-- Charfeather
-				q(42221),	-- Chief Bitterbrine										
-				q(44673),	-- Commander Soraax
-				q(38946),	-- Consult the Locals
 				q(41157),	-- Corrupted Studies
-				q(42420),	-- Court of Farondis
 				q(46020),	-- Crystal Containment
-				q(39891),	-- Cursed, But Convenient
 				q(41166),	-- Dark Secrets
 				q(41169),	-- Darkheart Thicket: Through the Fog
 				q(41165),	-- Deciphering Demonology
@@ -817,17 +786,13 @@ _.Zones =
 				q(41172),	-- Echoes of My Ancestors
 				q(41178),	-- Explosive Results
 				q(38961),	-- Eye of Azshara: The Depraved Nightfallen
-				q(38014),	-- Feasting on the Dragon
 				q(41167),	-- Fel Fragments
-				q(42069),	-- Felbats
 				q(42171),	-- Final Exit
 				q(40527),	-- Finishing Touches
 				q(40528),	-- Finishing Touches
 				q(40526),	-- Finishing Touches
 				q(45848),	-- Fit For a Pirate
 				q(41175),	-- Fit for an Elven Queen
-				q(45917),	-- Following the Scent
-				q(41158),	-- Fragments of the Fjords
 				q(40525),	-- Getting the Band Back Together
 				q(40193),	-- Getting the Kinks Out
 				q(40144),	-- Glielle

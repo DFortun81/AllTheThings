@@ -358,7 +358,15 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(755, {	-- Jewelcrafting
+					q(40547, {	-- To Dalaran, With Love
+						["sourceQuests"] = { 40556 },	-- Jabrul Needs You
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["qg"] = 100521,	-- Jabrul
+					}),
+				}),
 				prof(165, {	-- Leatherworking
+					q(40195),	-- A Daring Rescue
 					q(40188, {	-- Best Served Cold
 						["g"] = {
 							-- note there is no pattern item for these, so just listing the spell IDs
@@ -398,6 +406,18 @@ _.Zones =
 						},
 						["qg"] = 99689,	-- Taldranis
 					}),
+					q(40210, {	-- Time Well Spent
+						["requireSkill"] = 165,	-- Leatherworking
+						["sourceQuests"] = {
+							40203,	-- Strength of the Past
+							40204,	-- Evolution of the Past
+							40205,	-- Respect for the Past
+							40207,	-- Scales of the Arcane
+							40208,	-- Eye of Azshara: Scales of the Sea
+							40209,	-- Scales of the Earth
+						},
+						["qg"] = 98964,	-- Celea
+					}),
 				}),
 				prof(393, {	-- Skinning
 					q(40145, {	-- Under Down
@@ -414,6 +434,19 @@ _.Zones =
 						["requireSkill"] = 393,	-- Skinning
 						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
 						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
+					}),
+				}),
+				prof(197, {	-- Tailoring
+				--	not sure if these quests actually start in azsuna.  may start in dalaran, or both zones.
+					q(38959, {	-- Left Behind
+						["sourceQuests"] = { 38957 },	-- Taking Inspiration
+						["requireSkill"] = 197,	-- Tailoring
+						["qg"] = 93967,	-- Lyndras
+					}),
+					q(38960, {	-- Lining Them Up
+						["sourceQuests"] = { 38957 },	-- Taking Inspiration
+						["requireSkill"] = 197,	-- Tailoring
+						["qg"] = 93967,	-- Lyndras
 					}),
 				}),
 			}),

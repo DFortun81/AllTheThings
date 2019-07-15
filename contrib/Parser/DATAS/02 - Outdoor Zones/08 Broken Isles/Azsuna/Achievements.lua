@@ -7,6 +7,79 @@ _.Zones =
 		m(630, {	-- Azsuna
 			n(-4, {		-- Achievements
 				ach(11261),		-- Adventurer of Azsuna
+				ach(10994, {	-- A Glorious Campaign
+					cl(5, {	-- Priest
+						q(43375, {	-- An Ample Supply
+							["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
+							["classes"] = { 5 },	-- Priest
+							["coord"] = { 58.5, 37.2, 630 },
+							["lvl"] = 103,
+							["qg"] = 110686,	-- Zabra Hexx
+						}),
+						q(42137, {	-- Champion: Yalia Sagewhisper
+							["sourceQuests"] = { 43376 },	-- Problem Salver
+							["classes"] = { 5 },	-- Priest
+							["coord"] = { 47.1, 43.9, 630 },
+							["lvl"] = 103,
+							["qg"] = 110687,	-- Yalia Sagewhisper
+							["g"] = {
+								follower(871),	-- Yalia Sagewhisper
+							},
+						}),
+						q(42138, {	-- Champion: Zabra Hexx
+							["sourceQuests"] = { 43376 },	-- Problem Salver
+							["classes"] = { 5 },	-- Priest
+							["coord"] = { 47.1, 43.9, 630 },
+							["lvl"] = 103,
+							["qg"] = 110686,	-- Zabra Hexx
+							["g"] = {
+								follower(870),	-- Zabra Hexx
+							},
+						}),
+						q(43378, {	-- Eye of Azshara: Looking Through the Lens
+							["sourceQuests"] = {
+								42137,	-- Champion: Yalia Sagewhisper
+								42138,	-- Champion: Zabra Hexx
+							},
+							["classes"] = { 5 },
+							["qg"] = 110687,	-- Yalia Sagewhisper
+						}),
+						q(43374, {	-- Murloc Mind Control
+							["sourceQuests"] = { 43372 },	-- The Best and Brightest
+							["classes"] = { 5 },	-- Priest
+							["coord"] = { 58.5, 37.2, 630 },
+							["lvl"] = 103,
+							["qg"] = 110686,	-- Zabra Hexx
+						}),
+						q(43376, {	-- Problem Salver
+							["sourceQuests"] = {
+								43375,	-- An Ample Supply
+							--	43374,	-- Murloc Mind Control (commented out to avoid infinite loop!)
+							},
+							["classes"] = { 5 },	-- Priest
+							["coord"] = { 58.5, 37.2, 630 },
+							["lvl"] = 103,
+							["qg"] = 112487,	-- Yalia Sagewhisper
+						}),
+					}),
+					cl(2, {	-- Paladin
+						q(43490),	-- Aponi's Trail
+						q(42888),	-- Communication Orbs
+					}),
+					cl(8, {	-- Mage
+						q(42222),	-- Empyrean Society Report
+					}),
+					cl(4, {	-- Rogue
+						qh(46324),	-- False Orders
+						qa(45835),	-- False Orders
+					}),
+					cl(9, {	-- Warlock
+						q(39179),	-- Bloodstone Bandit
+						q(45024),	-- Cult Culling
+						q(40218),	-- Debt Repaid
+						q(45026),	-- Expending Fel Energy
+					}),
+				}),
 				ach(10763, {	-- Azsuna Matata
 					crit(1, {	-- Behind Legion Lines
 						["sourceQuests"] = { 37449 },	-- Dark Revelations
@@ -28,7 +101,7 @@ _.Zones =
 						},
 					}),
 				}),
-				ach(9696, {		-- Family Familiar
+				ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
@@ -134,37 +207,40 @@ _.Zones =
 						}),
 					},
 				}),
-				un(2, ach(11139, {	-- Field Medic!
-					un(39, title(340, {	-- TITLE: Field Medic!
-						["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-						["g"] = {
-							{
-								["achievementID"] = 11139,	-- Field Medic (Achievement)
-								["criteriaID"] = 2, 		-- Bloody Note (Criteria)
-								["itemID"] = 139522,		-- Bloody Note (Item)
-								--["questID"] = 42255,		-- Bloody Note (Quest)
-								["description"] = "Pirates in southern-east Azsuna.",
-								["qgs"] = {108133, 108139, 108153, 108146}
-							},
-							{
-								["achievementID"] = 11139,	-- Field Medic (Achievement)
-								["criteriaID"] = 11, 		-- Fevered Plea (Criteria)
-								["itemID"] = 139520,		-- Fevered Plea (Item)
-								--["questID"] = 42250,		-- Fevered Plea (Quest)
-								["description"] = "Murlocs at the southern tip in Azsuna.",
-								["qgs"] = {111598, 111630, 111586 }
-							},
-							{
-								["achievementID"] = 11139,	-- Field Medic (Achievement)
-								["criteriaID"] = 15, 		-- Singed Note (Criteria)
-								["itemID"] = 139521,		-- Singed Note (Item)
-								--["questID"] = 42245,		-- Singed Note (Quest)
-								["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",
-								["qgs"] = {88101, 88099, 108146}
-							},
-						}
-					})),
-				})),
+				ach(11139, {	-- Field Medic!
+					["u"] = 2,
+					["g"] = {
+						un(39, title(340, {	-- TITLE: Field Medic!
+							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+							["g"] = {
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 2, 		-- Bloody Note (Criteria)
+									["itemID"] = 139522,		-- Bloody Note (Item)
+									--["questID"] = 42255,		-- Bloody Note (Quest)
+									["description"] = "Pirates in southern-east Azsuna.",
+									["qgs"] = {108133, 108139, 108153, 108146}
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 11, 		-- Fevered Plea (Criteria)
+									["itemID"] = 139520,		-- Fevered Plea (Item)
+									--["questID"] = 42250,		-- Fevered Plea (Quest)
+									["description"] = "Murlocs at the southern tip in Azsuna.",
+									["qgs"] = {111598, 111630, 111586 }
+								},
+								{
+									["achievementID"] = 11139,	-- Field Medic (Achievement)
+									["criteriaID"] = 15, 		-- Singed Note (Criteria)
+									["itemID"] = 139521,		-- Singed Note (Item)
+									--["questID"] = 42245,		-- Singed Note (Quest)
+									["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",
+									["qgs"] = {88101, 88099, 108146}
+								},
+							}
+						})),
+					},
+				}),
 				ach(10877, {	-- Pillars of Creation
 					["collectible"] = false,
 					["g"] = {
