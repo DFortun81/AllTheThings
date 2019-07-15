@@ -351,6 +351,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51849, {	-- Tempestria
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52471, {	-- That's a Big Carcass
 						["qg"] = 141292,	-- Delia Hanako
 						["lvl"] = 120,
@@ -364,6 +368,10 @@ _.Zones =
 					q(51241, {	-- The Bear Witch Project
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(55300, {	-- The Cycle of Life
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51406, {	-- The Lord's Hunt

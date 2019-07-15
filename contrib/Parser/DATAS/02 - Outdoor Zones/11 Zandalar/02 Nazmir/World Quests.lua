@@ -230,6 +230,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(53293, {	-- Overgrown Anchor Weed
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182, 	-- Herbalism
+					}),
 					q(52799, {	-- Pack Leader
 						["qg"] = 141799,	-- Grady Prett
 						["lvl"] = 120,
