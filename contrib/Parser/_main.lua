@@ -32,7 +32,7 @@ function Harvest(things)
 	end
 end
 
--- Static values for minReputation/maxReputation properties. 
+-- Static values for minReputation/maxReputation properties.
 -- The values are based on a "distance from zero" to match what Blizzard tracks internally as "totalEarned" rep
 HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
 
@@ -577,7 +577,7 @@ end
 ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
 inst = function(id, t)									-- Create an INSTANCE Object
 	t = struct("instanceID", id, t);
-	
+
 	-- Look for the Timewalking difficulty
 	local groups = t.groups or t.g;
 	if groups then
@@ -689,7 +689,7 @@ a = function(t)	-- Flag as Alliance Only
 		t.races = ALLIANCE_ONLY;
 	end
 	return t;
-end			
+end
 cr = function(id, t)											-- Add a Creature List to an object.
 	if type(id) == "number" then
 		t.cr = id;
@@ -723,8 +723,7 @@ h = function(t) -- Flag as Horde Only
 		t.races = HORDE_ONLY;
 	end
 	return t;
-end	
-modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
+end
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object
 qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
