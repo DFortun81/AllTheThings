@@ -11,8 +11,10 @@ _.Toys =
 		i(119093),		-- Aviana's Feather
 		i(141879), 		-- Berglrgl Perrgl Girggrlf
 		i(133997),		-- Black Ice
+		i(170154),		-- Book of the Unshackled (H)
 		i(166678),		-- Brynja's Beacon
 		i(128310),		-- Burning Blade
+		i(170155),		-- Carved Ankoan Charm (A)
 		i(143727), 		-- Champion's Salute
 		i(138878),		-- Copy of Daglop's Contract
 		i(88589),		-- Cremating Torch

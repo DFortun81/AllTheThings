@@ -245,6 +245,15 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56218, {	--	Beauty in the Deeps
+				["qg"] = 154297,	-- Bladesman Inowari	-- npcID need to be confirmed
+				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 20.",
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(169354),	-- Brilliant Glimmershell
+				},
+			}),
 			q(57005, {	-- Becoming a Friend
 				["qg"] = 154002,	-- Atolia Seapearl
 				["coord"] = { 51.0, 65.5, 1355 },
@@ -1017,13 +1026,18 @@ _.Zones =
 					}),
 				},
 			}),
-			q(56214, {	--	Good Girl
-				["qgs"] = {
-					151300,	-- Neri Sharpfin
-					155978,	-- Poen Gillbrack		-- npcID need to be confirmed
-					149906,	-- Vim Brineheart		-- npcID need to be confirmed
+			q(56215, {	--	Glittering Shell
+				["qg"] = 155978,	-- Poen Gillbrack		-- npcID need to be confirmed
+				["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 20.",
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(169353),	-- Lustrous Glimmershell
 				},
-				["description"] = "Offered when your Follower reaches rank 20.",
+			}),
+			q(56214, {	--	Good Girl
+				["qg"] = 151300,	-- Neri Sharpfin
+				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 20.",
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -1101,6 +1115,15 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save A Friend
+			}),
+			q(56216, {	--	Last Heirloom
+				["qg"] = 154304,	-- Farseer Ori			-- npcID need to be confirmed
+				["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches rank 20.",
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(170155),	-- Carved Ankoan Charm
+				},
 			}),
 			q(56095, {	-- Legacy of Nar'anan
 				["qg"] = 154143,	-- Collector Kojo
@@ -2045,6 +2068,15 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56314,	-- The Warbringer
 			}),
+			q(56219, {	--	Tome of Tears
+				["qg"] = 149906,	-- Vim Brineheart		-- npcID need to be confirmed
+				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 20.",
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					i(170154),	-- Book of the Unshackled (H)
+				},
+			}),
 			q(55883, {	-- To Soar Like a Ray
 				["qg"] = 153321,	-- Ian Langill
 				["coord"] = { 52.7, 52.8, 1355 },
@@ -2270,12 +2302,8 @@ _.Zones =
 				["qg"] = 154241,	-- Seeker Anagi
 			}),
 			q(56217, {	--	Wild Tame
-				["qgs"] = {
-					151626,	-- Hunter Akana			-- npcID need to be confirmed
-					154297,	-- Bladesman Inowari	-- npcID need to be confirmed
-					154304,	-- Farseer Ori			-- npcID need to be confirmed
-				},
-				["description"] = "Offered when your Follower reaches rank 20.",
+				["qg"] = 151626,	-- Hunter Akana			-- npcID need to be confirmed
+				["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {

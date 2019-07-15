@@ -64,6 +64,7 @@ t(54343);	-- Blue Crashin' Thrashin' Racer Controller
 t(122298);	-- Bodyguard Miniaturization Device
 t(97921);	-- Bom'bay's Color-Seein' Sauce
 t(64646);	-- Bones of Transformation
+t(170154);	-- Book of the Unshackled (H)
 t(119432);	-- Botani Camouflage
 t(134023);	-- Bottled Tornado
 t(128223);	-- Bottomless Stygana Mushroom Brew
@@ -79,6 +80,7 @@ t(134022);	-- Burgy Blackheart's Handsome Hat
 t(128310);	-- Burning Blade
 t(116440);	-- Burning Defender's Medallion
 t(116122);	-- Burning Legion Missive
+t(170155);	-- Carved Ankoan Charm (A)
 t(49704);	-- Carved Ogre Idol
 t(147307);	-- Carved Wooden Helm
 t(103685);	-- Celestial Defender's Medallion
