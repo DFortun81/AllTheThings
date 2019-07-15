@@ -2109,6 +2109,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(43336, {	-- Purge of the Nightmare
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(43324, {	-- Rage of the Owlbeasts
 						["lvl"] = 110,
 						["collectible"] = false,

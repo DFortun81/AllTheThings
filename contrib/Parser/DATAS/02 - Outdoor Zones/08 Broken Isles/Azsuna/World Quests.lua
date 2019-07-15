@@ -35,7 +35,6 @@ _.Zones =
 				q(43027),	-- DANGER: Mortiferous
 				q(44193),	-- DANGER: Sea King Tidross
 				q(43063),	-- DANGER: Stormfeather
-				q(43072),	-- DANGER: The Whisperer
 				q(44194),	-- DANGER: Torrentius
 				q(43040),	-- DANGER: Valakar the Thirsty
 				q(44287),	-- DEADLY: Withered J'im
@@ -97,7 +96,6 @@ _.Zones =
 				q(44050),	-- The Felsworn Must Fall
 				q(45134),	-- The Soul Harvesters
 				q(42112),	-- The Withered Return
-				q(42018),	-- Those Beyond Redemption
 				q(42019),	-- Tip the Scales
 				q(42511),	-- Twisted Souls
 				q(41322),	-- Unscratched Hippogryph Scale
@@ -110,7 +108,6 @@ _.Zones =
 				q(43608),	-- WANTED: Captain Volo'ren
 				q(43428),	-- WANTED: Doomlord Kazrok
 				q(43609),	-- WANTED: Doomlord Kazrok
-				q(43427),	-- WANTED: Infernal Lord
 				q(43610),	-- WANTED: Infernal Lord
 				q(42631),	-- WANTED: Inquisitor Tivos
 				q(43611),	-- WANTED: Inquisitor Tivos
@@ -166,6 +163,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43072, {	-- DANGER: The Whisperer
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42146, {	-- Dazed and Confused and Adorable
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -177,6 +178,10 @@ _.Zones =
 					},
 				}),
 				q(42276, {	-- Disgusting, but Useful
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42713, {	-- Eye of Azshara: Slug It Out
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -297,6 +302,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42018, {	-- Those Beyond Redemption
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42506, {	-- Tomes of Yore
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -320,6 +329,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43430, {	-- WANTED: Captain Volo'ren
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43427, {	-- WANTED: Infernal Lord
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

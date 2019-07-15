@@ -2755,7 +2755,6 @@ _.Zones =
 					q(40980),	-- Boilback Plague
 					q(41310),	-- Border Reinforcements
 					q(41308),	-- Border Reinforcements
-					q(46193),	-- Borne of Fel
 					q(41203),	-- Bright Leystone Deposits
 					q(41208),	-- Brimstone Destroyer
 					q(41209),	-- Brimstone Destroyer
@@ -2788,7 +2787,6 @@ _.Zones =
 					q(41219),	-- Flourishing Foxflower
 					q(41228),	-- Foxflower Cluster
 					q(41544),	-- Foxflower Cluster
-					q(46197),	-- From the Skies They Fel
 					q(41014),	-- Fury Road
 					q(46184),	-- Gelgothar
 					q(41701),	-- Gettin' Tuffer
@@ -2823,7 +2821,6 @@ _.Zones =
 					q(41200),	-- Rough Leystone Outcropping
 					q(46262),	-- Save the Tadpoles!
 					q(41234),	-- Shaggy Saber Hide
-					q(46189),	-- Shel'zuul
 					q(41242),	-- Slab of Bacon
 					q(41549),	-- Slab of Bacon
 					q(41550),	-- Slab of Bacon
@@ -2831,13 +2828,11 @@ _.Zones =
 					q(41224),	-- Supplies Needed: Foxflower
 					q(41207),	-- Supplies Needed: Leystone
 					q(41237),	-- Supplies Needed: Stonehide Leather
-					q(46195),	-- Swarming Skies
 					q(42086),	-- The Feltotem
 					q(43448),	-- The Frozen King
 					q(41232),	-- Thick Ironhorn Hide
 					q(40896),	-- Threnody of Chieftains
 					q(44823),	-- Thunder Totem Cleanup Detail
-					q(46190),	-- Ulgrom
 					q(41011),	-- Umbralshard Rituals
 					q(41428),	-- Unstable Portal
 					q(41836),	-- WANTED: Bodash the Hoarder
@@ -2861,7 +2856,6 @@ _.Zones =
 					q(41205),	-- Warm Leystone Deposits
 					q(41321),	-- Weapons of Deathwing
 					q(41252),	-- Wild Northern Barracuda
-					q(46194),	-- Wolves of the Legion
 					q(41659),	-- Work Order: Avalanche Elixirs
 					q(41223),	-- Work Order: Foxflower
 					q(41240),	-- Work Order: Highmountain Salmon
@@ -2877,6 +2871,10 @@ _.Zones =
 					}),
 					q(40925, {	-- Bitestone Burglary
 						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(46193, {	-- Borne of Fel (Invasion WQ)
+						["lvl"] = 98,
 						["collectible"] = false,
 					}),
 					q(41706, {	-- Briny Waters	
@@ -2908,6 +2906,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(46197, {	-- From the Skies They Fel (Invasion WQ)
+						["lvl"] = 98,
+						["collectible"] = false,
 					}),
 					q(41127, {	-- Gunksnout Infestation
 						["lvl"] = 110,
@@ -2978,6 +2980,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(46189, {	-- Shel'zuul (Invasion WQ)
+						["lvl"] = 98,
+						["collectible"] = false,
+					}),
 					q(41692, {	-- Shipwreck Scavengers
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -2994,6 +3000,10 @@ _.Zones =
 					}),
 					q(44892, {	-- Snowfeather Swarm!
 						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(46195, {	-- Swarming Skies (Invasion WQ)
+						["lvl"] = 98,
 						["collectible"] = false,
 					}),
 					q(43766, {	-- The Magic of Flight
@@ -3019,6 +3029,10 @@ _.Zones =
 								["achievementID"] = 10876,	-- Battle on the Broken Isles
 							}),
 						},
+					}),
+					q(46190, {	-- Ulgrom (Invasion WQ)
+						["lvl"] = 98,
+						["collectible"] = false,
 					}),
 					q(44289, {	-- WANTED: Arru
 						["lvl"] = 110,
@@ -3072,6 +3086,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(46194, {	-- Wolves of the Legion (Invasion WQ)
+						["lvl"] = 98,
+						["collectible"] = false,
 					}),
 					q(41677, {	-- Work Order: Auto-Hammer
 						["requireSkill"] = 202,	-- Engineering

@@ -15,7 +15,7 @@ _.Zones =
 				q(41492),	-- Brimstone Destroyer
 				q(41491),	-- Brimstone Destroyer
 				q(41447),	-- Burning Felslate Deposits
-				q(45307),	-- Claws for Alarm!
+				
 				q(44867),	-- Contain their Advance
 				q(41195),	-- Culling Ambervale
 				q(44113),	-- DANGER: Achronos
@@ -97,7 +97,7 @@ _.Zones =
 				q(44024),	-- WANTED: Shal'an
 				q(44012),	-- WANTED: Siegemaster Aedrin
 				q(44023),	-- WANTED: Siegemaster Aedrin
-				q(44157),	-- Withered Wrangling: Tel'anor
+				
 				q(41314),	-- Work Order: Felslate
 				q(41282),	-- Work Order: Runescale Koi
 				q(41661),	-- Work Order: Skystep Potions
@@ -134,6 +134,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(45307, {	-- Claws for Alarm!
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41914, {	-- Clear the Catacombs
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -153,6 +157,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44816, {	-- Continued Exposure
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42769, {	-- Court of Stars: Bring Me the Eyes
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -367,6 +375,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44158, {	-- Withered Wrangling: Falanaar
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44157, {	-- Withered Wrangling: Tel'anor
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

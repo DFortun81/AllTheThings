@@ -29,7 +29,7 @@ _.Zones =
 					q(46288),	-- Everyone to the Front
 					q(46126),	-- Fel-Corrupted Feathers
 					q(46077),	-- Felbound Spirits
-					q(46072),	-- Full Fel
+					
 					q(46212),	-- Get Them Up
 					q(40390),	-- Hallowed Ground
 					q(45985),	-- Hellish Scavengers
@@ -61,7 +61,7 @@ _.Zones =
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
 					q(46942),	-- The Cost of Power
-					q(46160),	-- The Shackled Void
+					
 					q(46032),	-- The Tormented Return
 					q(46325),	-- The United Front
 					q(46063),	-- The Wailing Dead
@@ -121,11 +121,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46933, {	-- Felrglrglrglrgl
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(45934, {	-- Fowl Play
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(46933, {	-- Felrglrglrglrgl
+				q(46072, {	-- Full Fel
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -198,6 +202,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(45035, {	-- The Call of Battle
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46160, {	-- The Shackled Void
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
