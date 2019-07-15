@@ -991,7 +991,6 @@ _.Zones =
 						q(48783),	-- Nobody Expects Them
 						q(49058),	-- One-of-Many
 						q(49056),	-- Pilfer
-						q(48514),	-- Slumbering Behemoths
 						q(48691),	-- Soul Chain
 						q(48640),	-- The Immortal Squadron
 						q(48870),	-- The Many-Faced Devourer
@@ -1084,6 +1083,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48662, {	-- Short Fuses
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48514, {	-- Slumbering Behemoths
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

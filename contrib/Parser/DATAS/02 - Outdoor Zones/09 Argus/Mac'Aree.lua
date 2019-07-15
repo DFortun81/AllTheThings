@@ -1099,12 +1099,11 @@ _.Zones =
 						q(48731),	-- Herald of Chaos
 						q(48737),	-- Instructor Tarahna
 						q(48733),	-- Jed'hin Champion Vorusk
-						q(49052),	-- Mar'cuus
+						
 						q(48102),	-- Scale Samples
 						q(47858),	-- Security: Engaged
 						q(49050),	-- Shadeflicker
 						q(48730),	-- Sorolis the Ill-Fated
-						q(48728),	-- Umbraliss
 					}),
 --]]				
 					q(48729, {	-- Ataxon
@@ -1172,6 +1171,11 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(49052, {	-- Mar'cuus
+						["lvl"] = 110,
+						["filterID"] = 101,	-- Battle Pet
+						["collectible"] = false,
+					}),
 					q(47828, {	-- Memories of the Fallen
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1237,6 +1241,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48726, {	-- Turek the Lucid
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48728, {	-- Umbraliss
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
