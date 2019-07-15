@@ -39,13 +39,6 @@ _.Zones =
 				filter(101, {	-- Pet Battle
 					p(417),		-- Bat
 					p(646),		-- Chicken
-					q(3861, { 	-- CLUCK!
-						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor William Saldean sells the Special Chicken Feed you need.",
-						["repeatable"] = true,
-						["g"] = {
-							i(11110) -- Chicken Egg
-						},
-					}),
 					p(458),		-- Lost of Lordaeron
 					p(417),		-- Rat
 					n(63073, { 	-- Ansel Fincap
@@ -71,68 +64,90 @@ _.Zones =
 							}),
 						},
 					}),
+					q(3861, { 	-- CLUCK!
+						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor William Saldean sells the Special Chicken Feed you need.",
+						["repeatable"] = true,
+						["g"] = {
+							i(11110) -- Chicken Egg
+						},
+					}),
 				}),
 				n(-17, {	-- Quests
-					qh(26930, {	-- After the Crusade
+					q(26930, {	-- After the Crusade
 						["qg"] = 10837,	-- High Executor Derrington
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 26926 },	-- Victory, For Now
 					}),
-					qh(26933, {	-- Foes Before Hoes
+					q(26933, {	-- Foes Before Hoes
 						["qg"] = 11055,	-- Shadow Priestess Vandis
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 26931 },	-- Foxes and Hounds
 					}),
-					qh(26931, {	-- Foxes and Hounds -- anytime
+					q(26931, {	-- Foxes and Hounds -- anytime
+						["qg"] = 11055,	-- Shadow Priestess Vandis
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(62161),	-- Bullmastiff Vest
 							i(62163),	-- Fox Hunter's Rifle
 							i(62162),	-- Territorial Helm
 							i(131622),	-- Whitetail Fox Tunic
 						},
-						["qg"] = 11055,	-- Shadow Priestess Vandis
 					}),
-					qh(26934, {	-- Latent Disease -- anytime
+					q(26934, {	-- Latent Disease -- anytime
 						["qg"] = 11057,	-- Apothecary Dithers
+						["races"] = HORDE_ONLY,
 					}),
-					qh(26936, {	-- Lower the Boom
+					q(14089, {	-- Learn to Ride in Tirisfal Glades
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+					}),
+					q(26936, {	-- Lower the Boom
 						["qg"] = 10837,	-- High Executor Derrington
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							26978,	-- Who Needs Cauldrons?
 							26930,	-- After the Crusade
 						},
 					}),
-					qh(26979, {	-- Strange New Faces
+					q(26979, {	-- Strange New Faces
 						["qg"] = 10837,	-- High Executor Derrington
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 26936 },	-- Lower the Boom
 					}),
-					qh(26920, {	-- The Battle for Andorhal -- anytime
+					q(26920, {	-- The Battle for Andorhal -- anytime
 						["qg"] = 10837,	-- High Executor Derrington
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
 					}),
-					qh(26952, {	-- The Menders' Stead
+					q(26952, {	-- The Menders' Stead
 						["qg"] = 10839,	-- Argent Officer Garush
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 26933 },	-- Foes before Hoes
 						["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
 					}),
-					qh(26978, {	-- Who Needs Cauldrons?
+					q(26978, {	-- Who Needs Cauldrons?
+						["qg"] = 11057,	-- Apothecary Dithers
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 26934 },	-- Latent Disease
 						["g"] = {
 							i(62171),	-- Cloak of the Salted Earth
 							i(62169),	-- Dithering Belt
 							i(62170),	-- Plague Cauldron Lid
 						},
-						["qg"] = 11057,	-- Apothecary Dithers
-						["sourceQuests"] = { 26934 },	-- Latent Disease
 					}),
-					qh(25046, {	-- A Daughter's Embrace
+					q(25046, {	-- A Daughter's Embrace
+						["qg"] = 13158,	-- Lieutenant Sanders
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 25010 },	-- A Deadly new Ally
 						["g"] = {
 							i(57169),	-- Darrington's Dirk
 							i(57170),	-- Lilian's Staff
 							i(57171)	-- Executor's Breastplate
 						},
-						["qg"] = 13158,	-- Lieutenant Sanders
-						["sourceQuests"] = { 25010 },	-- A Deadly new Ally
 					}),
-					qh(25010, {	-- A Deadly New Ally
+					q(25010, {	-- A Deadly New Ally
 						["qg"] = 10837,	-- High Executor Derrington
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 25009 },	-- At War With The Scarlet Crusade
 					}),
 					q(40706, {	-- A Legend You Can Hold
@@ -142,32 +157,38 @@ _.Zones =
 						["classes"] = { 5 },	-- priest
 						["sourceQuests"] = { 40705 },	-- Priestly Matters
 					}),
-					qh(25013, {	-- A Little Oomph
+					q(25013, {	-- A Little Oomph
+						["qg"] = 11057,	-- Apothecary Dithers
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 25056 },	-- Grisly Grizzlies
 						["g"] = {
 							i(57167),	-- Night Web Gloves
 							i(57166),	-- Advanced Night Web Crossbow
 							i(57168),	-- Reaper's Buckler
 						},
-						["qg"] = 11057,	-- Apothecary Dithers
-						["sourceQuests"] = { 25056 },	-- Grisly Grizzlies
 					}),
-					qh(25090, {	-- A Putrid Task -- anytime
+					q(25090, {	-- A Putrid Task -- anytime
 						["qg"] = 1496,	-- Deathguard Dillinger
+						["races"] = HORDE_ONLY,
 					}),
 					i(52079, {
-						qh(24979, {	-- A Scarlet Letter
+						q(24979, {	-- A Scarlet Letter
 							["qg"] = 1535,	-- Scarlet Warrior
+							["races"] = HORDE_ONLY,
 						}),
 					}),
-					qh(24981, {	-- A Thorn in our Side -- anytime
+					q(24981, {	-- A Thorn in our Side -- anytime
 						["qg"] = 1515,	-- Executor Zygand
+						["races"] = HORDE_ONLY,
 					}),
-					qh(24993, {	-- Annihilate the Worgen
+					q(24993, {	-- Annihilate the Worgen
 						["qg"] = 1515,	-- Executor Zygand
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24992 },	-- Escaped From Gilneas
 					}),
-					qh(25009, {	-- At War With The Scarlet Crusade
+					q(25009, {	-- At War With The Scarlet Crusade
 						["qg"] = 10837,	-- High Executor Derrington
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 25007 },	-- East... Always to the East
 					}),
 					q(40710, {	-- Blade in Twilight
@@ -177,78 +198,105 @@ _.Zones =
 						["classes"] = { 5 },	-- Priest
 						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 					}),
-					{	-- Corrupter's Scourgestones [H]
-						["questID"] = 5406,	-- Corruptor's Scourgestones
-						["qg"] = 10839,		-- Argent Officer Garush
+					q(5406, {	-- Corruptor's Scourgestones
 						["u"] = 2,			-- Removed in Patch 4.0.3
-						["coords"] = {
-							{ 83.18, 68.45, 18 },
-						},
+						["qg"] = 10839,		-- Argent Officer Garush
+						["coord"] = { 83.18, 68.45, 18 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							{	-- Argent Dawn Valor Token
-								["itemID"] = 12844,	-- Argent Dawn Valor Token
-								["u"] = 2,			-- Removed in Patch 4.0.3
-							},
+							un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 						},
-					},
-					qh(24990, {	-- Darkhound Pounding -- anytime
-						["qg"] = 10665,	-- Junior Apothecary Holland
 					}),
-					qh(25029, {	-- Deaths in the Family
+					q(24990, {	-- Darkhound Pounding -- anytime
+						["qg"] = 10665,	-- Junior Apothecary Holland
+						["races"] = HORDE_ONLY,
+					}),
+					q(25029, {	-- Deaths in the Family
+						["qg"] = 1500,	-- Coleman Farthing
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 25003 },	-- The Family Crypt
 						["g"] = {
 							i(3446),	-- Darkwood Staff
 							i(3440),	-- Bonecracker
 						},
-						["qg"] = 1500,	-- Coleman Farthing
-						["sourceQuests"] = { 25003 },	-- The Family Crypt
 					}),
-					qh(24994, {	-- Doom Weed -- anytime
+					q(24994, {	-- Doom Weed -- anytime
 						["qg"] = 38977,	-- Apothecary Jerrod
+						["races"] = HORDE_ONLY,
 						["coord"] = { 61.7, 34.6, 18 },
 					}),
-					qh(25007, {	-- East... Always to the East
+					q(25007, {	-- East... Always to the East
 						["qg"] = 1499,	-- Magistrate Sevren
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 25006 },	-- The Grasp Weakens
 					}),
-					qh(24992, {	-- Escaped From Gilneas
+					q(24992, {	-- Escaped From Gilneas
+						["races"] = HORDE_ONLY,
 						["description"] = "Quest is granted by getting a Cursed Darkhound to low health and letting it cast Leaping Bite on you during or after completing \"Darkhound Pounding\".",
 					}),
-					qh(24974, {	-- Ever So Lonely -- anytime
+					q(24974, {	-- Ever So Lonely -- anytime
 						["qg"] = 38925,	-- Sidrick Calston
+						["races"] = HORDE_ONLY,
 					}),
-					qh(24975, {	-- Fields of Grief -- anytime
+					q(24975, {	-- Fields of Grief -- anytime
 						["qg"] = 1518,	-- Apothecary Johaan
+						["races"] = HORDE_ONLY,
 					}),
-					qh(24983, {	-- Forsaken Duties -- anytime
+					q(24983, {	-- Forsaken Duties -- anytime
 						["qg"] = 1499,	-- Magistrate Sevren
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24982 },	-- The New Forsaken
 					}),
-					qh(24991, {	-- Garren's Haunt
+					q(5650, {	-- Garments of Darkness
+						["u"] = 40,
+						["races"] =  { 5 },	-- Undead
+						["classes"] = { 5 },	-- Priest
+						["g"] = {
+							un(2, i(16607)),	-- Garments of Darkness
+						},
+					}),
+					q(24991, {	-- Garren's Haunt
 						["qg"] = 10665,	-- Apothecary Holland
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24996 },	-- Holland's Experiment
 						["isBreadcrumb"] = true,
 					}),
-					qh(25038, {	-- Gordo's Task
+					q(25038, {	-- Gordo's Task
 						["qg"] = 10666,	-- Gordo
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24980 },	-- The Scarlet Palisade
 					}),
-					qh(24997, {	-- Graverobbers -- anytime
+					q(24997, {	-- Graverobbers -- anytime
 						["qg"] = 38978,	-- Apprentice Crispin
+						["races"] = HORDE_ONLY,
 					}),
-					qh(25056, {	-- Grisly Grizzlies -- anytime
+					q(25056, {	-- Grisly Grizzlies -- anytime
 						["qg"] = 11057,	-- Apothecary Dithers
+						["races"] = HORDE_ONLY,
 					}),
-					qh(25039, {	-- Have You Seen Anything Weird Out There?
+					q(25039, {	-- Have You Seen Anything Weird Out There?
 						["qg"] = 6785,	-- Ratslin Maime
+						["races"] = HORDE_ONLY,
 					}),
-					qh(25031, {	-- Head for the Mills
+					q(25031, {	-- Head for the Mills
 						["qg"] = 38977,	-- Apothecary Jerrod
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24999 },	-- Planting the Seed of Fear
 						["isBreadcrumb"] = true,
 					}),
-					qh(24996, {	-- Holland's Experiment
+					q(1822, {	-- Heirloom Weapon
+						["u"] = 40,
+						["classes"] = { 1 },	-- Warrior
+						["g"] = {
+							un(2, i(7115)),	-- Heirloom Axe
+							un(2, i(7117)),	-- Heirloom Hammer
+							un(2, i(7116)),	-- Heirloom Dagger
+							un(2, i(7118)),	-- Heirloom Sword
+						},
+					}),
+					q(24996, {	-- Holland's Experiment
 						["qg"] = 10665,	-- Junior Apothecary Holland
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24990 },	-- Darkhound Pounding
 					}),
 					q(5403, {	-- Corruptor's Scourgestones
@@ -257,17 +305,17 @@ _.Zones =
 						["qg"] = 10839,		-- Argent Officer Garush
 						["u"] = 40,	-- Legacy Quests
 						["g"] = {
-							i(12844, {	-- Argent Dawn Valor Token
-								["u"] = 2,			-- Removed in Patch 4.0.3
-							}),
+							un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 						},
 					}),
-					qh(24977, {	-- Johaan's Experiment
+					q(24977, {	-- Johaan's Experiment
 						["qg"] = 1518,	-- Apothecary Johaan
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24976 },	-- Variety is the Spice of Death
 					}),
-					qh(24998, {	-- Maggot Eye
+					q(24998, {	-- Maggot Eye
 						["qg"] = 38978,	-- Apprentice Crispin
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24997 },	-- Graverobbers
 					}),
 					q(5402, {	-- Corruptor's Scourgestones
@@ -281,28 +329,41 @@ _.Zones =
 							}),
 						},
 					}),
-					qh(24995, {	-- Off the Scales
+					q(5237, {	-- Mission Accomplished!
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							un(2, i(15799)),	-- Heroic Commendation Medal
+							un(2, i(15800)),	-- Intrepid Shortsword
+							un(2, i(15801)),	-- Valiant Shortsword
+						},
+					}),
+					q(24995, {	-- Off the Scales
 						["qg"] = 38977,	-- Apothecary Jerrod
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24994 },	-- Doom Weed
 					}),
-					qh(24999, {	-- Planting the Seed of Fear
+					q(24999, {	-- Planting the Seed of Fear
 						["qg"] = 38978,	-- Apprentice Crispin
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24994 },	-- Doom Weed
 					}),
 					q(40705, {	-- Priestly Matters
 						-- Quest is actually picked up in Dalaran.
+						["lvl"] = 98,
+						["classes"] = { 5 },	-- Priest
 						["qgs"] = {
 							101344,	-- Hooded Priestess (horde)
 							102333,	-- Hooded Priestess (alliance)
 						},
-						["lvl"] = 98,
-						["classes"] = { 5 },	-- Priest
 					}),
-					qh(24978, {	-- Reaping the Reapers -- anytime
+					q(24978, {	-- Reaping the Reapers -- anytime
 						["qg"] = 1519,	-- Deathguard Simmer
+						["races"] = HORDE_ONLY,
 					}),
-					qh(24989, {	-- Return to the Magistrate
+					q(24989, {	-- Return to the Magistrate
 						["qg"] = 1495,	-- Deathguard Linnea
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24988 },	-- The Chill of Death
 					}),
 					q(6323, {	-- Ride to the Undercity
@@ -311,8 +372,9 @@ _.Zones =
 						["sourceQuest"] = 6321,	-- Supplying Brill
 						["races"] = { 5 },	-- Undead
 					}),
-					qh(25005, {	-- Speak with Sevren
+					q(25005, {	-- Speak with Sevren
 						["qg"] = 1500,	-- Coleman Farthing
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							25029,	-- Deaths in the Family
 							25004,	-- The Mills Overrun
@@ -323,79 +385,97 @@ _.Zones =
 						["coord"] = { 60.2, 52.4, 18 },
 						["races"] = { 5 },	-- Undead
 					}),
-					qh(25012, {	-- Take to the Skies
+					q(25012, {	-- Take to the Skies
 						["qg"] = 37915,	-- Timothy Cunningham
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 25011 },	-- To Bigger and Better Things
 					}),
-					qh(27083, {	-- The Battle Resumes! -- possible breadcrumb?
+					q(27083, {	-- The Battle Resumes! -- possible breadcrumb?
 						["qg"] = 10837,	-- High Executor Derrington
+						["races"] = HORDE_ONLY,
 					}),
-					qh(24988, {	-- The Chill of Death
+					q(24988, {	-- The Chill of Death
 						["qg"] = 1521,	-- Gretchen Dedmar
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							24983,	-- Forsaken Duties
 						},
 					}),
-					qh(25003, {	-- The Family Crypt
+					q(25003, {	-- The Family Crypt
 						["qg"] = 1500,	-- Coleman Farthing
 						["coord"] = { 54.6, 29.9, 18 },
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							25031,	-- Head for the Mills (breadcrumb)
 							24999,	-- Planting the Seed of Fear (unlocks this quest)
 						},
 					}),
-					qh(25006, {	-- The Grasp Weakens
+					q(25006, {	-- The Grasp Weakens
 						["qg"] = 1499,	-- Magistrate Sevren
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 25005 },	-- Speak with Sevren
 					}),
 					i(3082, {	-- Dargol's Skull
-						qh(25030, {	-- The Haunted Mills
+						q(25030, {	-- The Haunted Mills
 							["qg"] = 1658,	-- Captain Dargol
+							["races"] = HORDE_ONLY,
 						}),
 					}),
 					q(41625, {	-- The Light's Wrath
 						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
 						["classes"] = { 5 },	-- Priest
 					}),
-					qh(25004, {	-- The Mills Overrun
+					q(25004, {	-- The Mills Overrun
 						["qg"] = 1500,	-- Coleman Farthing
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 25003 },	-- The Family Crypt
 					}),
-					qh(24982, {	-- The New Forsaken -- anytime
+					q(24982, {	-- The New Forsaken -- anytime
 						["qg"] = 1496,	-- Deathguard Dillinger
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-					qh(24980, {	-- The Scarlet Palisade
+					q(24980, {	-- The Scarlet Palisade
 						["qg"] = 1519,	-- Deathguard Simmer
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24978 },	-- Reaping the Reapers
 					}),
 					q(41957, {	-- The Vindicator's Plea
 						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
 						["classes"] = { 5 },	-- Priest
 					}),
-					qh(25011, {	-- To Bigger and Better Things
+					q(25011, {	-- To Bigger and Better Things
 						["qg"] = 10837,	-- High Executor Derrington
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 25046 },	-- A Daughter's Embrace
 					}),
-					qh(24976, {	-- Variety is the Spice of Death
+					q(24976, {	-- Variety is the Spice of Death
 						["qg"] = 1518,	-- Apothecary Johaan
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24975 },	-- Fields of Grief
 					}),
-					qh(26964, {	-- Warchief's Command: Silverpine Forest! -- anytime
+					q(26964, {	-- Warchief's Command: Silverpine Forest! -- anytime
 						["qg"] = 1515,	-- Executor Zygand
+						["races"] = HORDE_ONLY,
 						["lvl"] = 9,
 						["isBreadcrumb"] = true,
 					}),
 --[[
-
-					qh(11403),	-- Free at Last! -- Hallow's End. No longer available? The quest giver was removed from the game
-					qh(14089),	-- Learn to Ride in Tirisfal Glades -- Legacy
-					qh(12139),	-- "Let the Fires Come!" -- Hallow's End
-					qh(31823),	-- Level Up! -- Pets
-					qh(31577),	-- On The Mend -- Pets, no qg
+					q(31823, {	-- Level Up! -- Pets
+						["races"] = HORDE_ONLY,
+					}),
+					q(31577, {	-- On The Mend -- Pets, no qg
+						["races"] = HORDE_ONLY,
+					}),
 --]]
 				}),
 				n(-16, {	-- Rares
+					n(1658, { 	-- Captain Dargol
+						["coord"] = { 52.6, 26.2, 18 },
+						["g"] = {
+							un(7, i(3330)),	-- Dargol's Hauberk
+						},
+					}),
 					n(1911, { 	-- Deeb
 						i(68743),	-- Imbued Infantry Cloak
 						i(68744),	-- Imbued Pioneer Cloak
@@ -616,38 +696,6 @@ _.Zones =
 					},
 					["icon"] = "Interface\\Icons\\inv_helmet_52",
 				}),
-				n(-40, {	-- Legacy
-					n(-17, {	-- Quests (Legacy)
-						un(40, q(5650, {	-- Garments of Darkness
-							["races"] =  { 5 },	-- Undead
-							["classes"] = { 5 },	-- Priest
-							["g"] = {
-								un(2, i(16607)),	-- Garments of Darkness
-							},
-						})),
-						un(40, q(1822, {	-- Heirloom Weapon
-							["g"] = {
-								un(2, i(7115)),	-- Heirloom Axe
-								un(2, i(7117)),	-- Heirloom Hammer
-								un(2, i(7116)),	-- Heirloom Dagger
-								un(2, i(7118)),	-- Heirloom Sword
-							},
-							["classes"] = { 1 },	-- Warrior
-						})),
-						un(40, qh(5237, {	-- Mission Accomplished!
-							un(2, i(15799)),	-- Heroic Commendation Medal
-							un(2, i(15800)),	-- Intrepid Shortsword
-							un(2, i(15801)),	-- Valiant Shortsword
-						})),
-					}),
-					n(-16, {	-- Rares (Legacy)
-						n(1658, { 	-- Captain Dargol
-							un(7, i(3330)),	-- Dargol's Hauberk
-						}),
-					}),
-					--n(0, {	-- Zone Drop (Legacy)
-					--}),
-				}),
 				m(465, {	-- Deathknell
 					["description"] = "|cff66ccffDeathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.|r",
 					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",
@@ -677,9 +725,50 @@ _.Zones =
 								["sourceQuests"] = { 26799 },	-- Those That Couldn't Be Saved
 								["races"] = { 5 },	-- undead
 							}),
-							q(24959, {	-- Fresh out of the Grave
+							q(3096, {	-- Encrypted Scroll
+								["u"] = 40,
+								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["races"] = { 5 },	-- undead
+								["classes"] = { 4 },	-- rogue
+							}),							q(24959, {	-- Fresh out of the Grave
 								["qg"] = 49044,	-- Agatha
 								["races"] = { 5 },	-- undead
+							}),
+							q(5650, {	-- Garments of Darkness
+								["u"] = 40,
+								["races"] =  { 5 },	-- Undead
+								["classes"] = { 5 },	-- Priest
+								["g"] = {
+									un(2, i(16607)),	-- Garments of Darkness
+								},
+							}),
+							q(3098, {	-- Glyphic Scroll
+								["u"] = 40,
+								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["sourceQuests"] = { 26800 },	-- Recruitment
+								["classes"] = { 8 },	-- mage
+								["races"] = { 5 },	-- undead
+							}),
+							q(3097, {	-- Hallowed Scroll
+								["u"] = 40,
+								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["sourceQuests"] = { 26800 },	-- Recruitment
+								["classes"] = { 5 },	-- priest
+								["races"] = {
+									5,	-- Undead
+									10,	-- Blood Elf
+								},
+							}),
+							q(1822, {	-- Heirloom Weapon
+								["u"] = 40,
+								["races"] = HORDE_ONLY,
+								["classes"] = { 1 },	-- Warrior
+								["g"] = {
+									un(2, i(7115)),	-- Heirloom Axe
+									un(2, i(7117)),	-- Heirloom Hammer
+									un(2, i(7116)),	-- Heirloom Dagger
+									un(2, i(7118)),	-- Heirloom Sword
+								},
 							}),
 							q(24965, {	-- Magic Training
 								["qg"] = 2124,	-- Isabella
@@ -726,6 +815,18 @@ _.Zones =
 								["sourceQuests"] = { 26800 },	-- Recruitment
 								["races"] = { 5 },	-- undead
 							}),
+							q(3095, {	-- Simple Scroll
+								["u"] = 40,
+								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["races"] = { 5 },	-- undead
+								["classes"] = { 1 },	-- warrior
+							}),
+							q(3099, {	-- Tainted Scroll
+								["u"] = 40,
+								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["races"] = { 5 },	-- undead
+								["classes"] = { 9 },	-- warlock
+							}),
 							q(26802, {	-- The Damned
 								["qg"] = 1570,	-- Executor Arren
 								["coord"] = { 55.4, 37.7, 465 },
@@ -770,63 +871,6 @@ _.Zones =
 						n(-16, {	-- Rares
 							n(50328),	-- Fangor
 							n(1688),	-- Night Web Matriarch
-						}),
-						n(-40, {	-- Legacy
-							["g"] = {
-								n(-17, {	-- Quests
-									un(40, q(3096, {	-- Encrypted Scroll
-										["qg"] = 1569,	-- Shadow Priest Sarvis
-										["races"] = { 5 },	-- undead
-										["classes"] = { 4 },	-- rogue
-									})),
-									un(40, q(5650, {	-- Garments of Darkness
-										["g"] = {
-											un(2, i(16607)),	-- Garments of Darkness
-										},
-										["races"] =  { 5 },	-- Undead
-										["classes"] = { 5 },	-- Priest
-									})),
-									un(40, q(3098, {	-- Glyphic Scroll
-										["qg"] = 1569,	-- Shadow Priest Sarvis
-										["sourceQuests"] = { 26800 },	-- Recruitment
-										["classes"] = { 8 },	-- mage
-										["races"] = { 5 },	-- undead
-									})),
-									un(40, q(3097, {	-- Hallowed Scroll
-										["qg"] = 1569,	-- Shadow Priest Sarvis
-										["sourceQuests"] = { 26800 },	-- Recruitment
-										["classes"] = { 5 },	-- priest
-										["races"] = {
-											5,	-- Undead
-											10,	-- Blood Elf
-										},
-									})),
-									un(40, qh(1822, {	-- Heirloom Weapon
-										["g"] = {
-											un(2, i(7115)),	-- Heirloom Axe
-											un(2, i(7117)),	-- Heirloom Hammer
-											un(2, i(7116)),	-- Heirloom Dagger
-											un(2, i(7118)),	-- Heirloom Sword
-										},
-										["classes"] = { 1 },	-- Warrior
-									})),
-									un(40, q(3095, {	-- Simple Scroll
-										["qg"] = 1569,	-- Shadow Priest Sarvis
-										["races"] = { 5 },	-- undead
-										["classes"] = { 1 },	-- warrior
-									})),
-									un(40, q(3099, {	-- Tainted Scroll
-										["qg"] = 1569,	-- Shadow Priest Sarvis
-										["races"] = { 5 },	-- undead
-										["classes"] = { 9 },	-- warlock
-									})),
-								}),
-								n(-16, {	-- Rares (Legacy)
-									n(1658, { 	-- Captain Dargol
-										un(7, i(3330)),	-- Dargol's Hauberk
-									}),
-								}),
-							},
 						}),
 					},
 				}),
