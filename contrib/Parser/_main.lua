@@ -748,8 +748,6 @@ model = function(displayID, t)
 	t.displayID = displayID;
 	return t;
 end
-na = function(id, t) return a(n(id,t)); end					-- Alliance Only NPC Object
-nh = function(id, t) return h(n(id,t)); end					-- Horde Only NPC Object
 
 -- Specific Quest Type Shortcuts [Blame Daktar for long list! :) ]
 ql = function(t)							-- Gives a quest the Legendary Description
