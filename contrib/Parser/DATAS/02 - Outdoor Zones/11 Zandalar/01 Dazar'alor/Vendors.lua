@@ -7,6 +7,83 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(-2, {  -- Vendors
+				n(149045, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
+					["coord"] = { 53.90, 88.90, 1165 },
+					["g"] = {
+							i(155860), -- Spymaster's Wrap
+							i(155866), -- Soulspun Casque
+							i(155885), -- Sea-Brawler's Greathelm
+							i(155886), -- Smartly Plumed Cap
+							i(155887), -- Sweete's Jeweled Headgear
+							i(155888), -- Irontide Captain's Hat
+							i(158301), -- Ruffled Poet Blouse
+							i(158304), -- Mantle of Fastidious Machinations
+							i(158307), -- Shrapnel-Dampening Chestguard
+							i(158315), -- Secret Spinner's Miter
+							i(158344), -- Mantle of Ceremonial Ascension
+							i(158349), -- Petticoat of the Self-Stylized Azerite Baron
+							i(158355), -- Loa-Blessed Chestguard
+							i(158364), -- High Altitude Turban
+							i(159232), -- Exquisitely Aerodynamic Shoulderpads
+							i(159233), -- Loa Betrayer's Vestments
+							i(159236), -- Headdress of the First Empire
+							i(159238), -- Mantle of Void-Touched Waters
+							i(159241), -- Blood-Drenched Robes
+							i(159244), -- Stormlurker's Cowl
+							i(159252), -- Grasping Crown of the Deep
+							i(159254), -- Brood Cleanser's Amice
+							i(159257), -- Robes of the Reborn Serpent
+							i(159267), -- Pauldrons of Vile Corruption
+							i(159268), -- Inmate's Straight Robe
+							i(159273), -- Amice of the Returned
+							i(159279), -- Soulfuel Headdress
+							i(159298), -- Venture Co. Plenipotentiary Vest
+							i(159299), -- Gold-Tasseled Epaulets
+							i(159302), -- Cowl of Fluid Machinations
+							i(159303), -- Vest of Reverent Adoration
+							i(159307), -- Tentacle-Laced Spaulders
+							i(159310), -- Circlet of the Enveloping Leviathan
+							i(159314), -- Cephalohide Jacket
+							i(159318), -- Hood of the Slithering Loa
+							i(159323), -- Shoulders of the Sanguine Monstrosity
+							i(159330), -- Gore-Splattered Vest
+							i(159331), -- Pistoleer's Spaulders
+							i(159334), -- Flashpowder Hood
+							i(159335), -- Raiment of the Blighted Tribe
+							i(159339), -- Gorak Tul's Mantle
+							i(159352), -- Gaping Maw Shoulderguard
+							i(159354), -- Hauberk of Sunken Despair
+							i(159358), -- Coif of the Court Spider
+							i(159360), -- Crashguard Spaulders
+							i(159362), -- Tri-Heart Chestguard
+							i(159368), -- Spaulders of Prime Emperor
+							i(159370), -- Corrupted Hexxer's Vestments
+							i(159374), -- Sethraliss' Fanged Helm
+							i(159376), -- Hook-Barbed Spaulders
+							i(159381), -- Visage of Bloody Horrors
+							i(159385), -- Amalgamated Abomination Spaulders
+							i(159391), -- Hood of the Dark Reaper
+							i(159393), -- Cannoneer's Mantle
+							i(159395), -- Deathslaver's Hauberk
+							i(159398), -- Soulscarred Headgear
+							i(159407), -- Lockjaw Shoulderplate
+							i(159408), -- Chestguard of the Deep Denizen
+							i(159414), -- Overseer's Riot Helmet
+							i(159415), -- Skyscorcher Pauldrons
+							i(159416), -- Harpooner's Plate Cuirass
+							i(159422), -- Helm of the Raptor King
+							i(159423), -- Pauldrons of the Great Unifier
+							i(159424), -- Desert Guardian's Breastplate
+							i(159430), -- Helm of Abyssal Malevolence
+							i(159431), -- Kraken Shell Pauldrons
+							i(159432), -- Breastplate of Arterial Protection
+							i(159439), -- C'thraxxi Binders Pauldrons
+							i(159440), -- Ashvane Warden's Cuirass
+							i(159446), -- Greathelm of the Putrid Path
+							i(159448), -- Breastplate of the Vengeful
+							i(159455), -- Pauldrons of the Horned Horror
+							},
+				}),
 				n(132153, {	-- "Black Eye" Zenru
 					["coord"] = { 53.77, 85.97, 1165 },
 					["races"] = HORDE_ONLY,
