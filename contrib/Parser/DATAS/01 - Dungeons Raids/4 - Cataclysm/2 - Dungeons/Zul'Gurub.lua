@@ -212,9 +212,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								53151,	-- Overseer Blingbang
 							},
 							["g"] = {
-								i(133997, {	-- Black Ice
-									["collectible"] = false,	-- Yay, Blizzard gave these sourceIDs
-								}),
+								i(133997),	-- Black Ice
 								i(69863, {			-- Golden Necklace
 									["collectible"] = false,	-- Yay, Blizzard gave these sourceIDs
 								}),
@@ -231,9 +229,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								53151,	-- Overseer Blingbang
 							},
 							["g"] = {
-								i(133997, {	-- Black Ice
-									["collectible"] = false,	-- Yay, Blizzard gave these sourceIDs
-								}),
+								i(133997),	-- Black Ice
 								i(69863, {	-- Golden Necklace
 									["collectible"] = false,	-- Yay, Blizzard gave these sourceIDs
 								}),
