@@ -9,6 +9,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			1040,	-- Storm's End
 		},
 		["groups"] = {
+			n(-34,  {	-- World Quests
+				q(51453, {	-- Shrine of the Storm: Behold, Pure Water
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2153, {	-- Aqu'sirr
 					["crs"]  = {

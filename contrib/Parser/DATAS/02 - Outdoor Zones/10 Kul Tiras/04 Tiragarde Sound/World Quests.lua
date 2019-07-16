@@ -7,7 +7,12 @@ _.Zones =
 		m(895, {	-- -- Tiragarde Sound
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
-					q(53812, {	-- A Carefully Laid Trap (Invasion WQ)
+					q(53812, {	-- A Carefully Laid Trap (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53711, {	-- A Sound Defense (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -19,6 +24,11 @@ _.Zones =
 					}),
 					q(51610, {	-- Adhara White
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54295, {	-- Artillery Master Goodwin (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51653, {	-- Auditor Dolp
@@ -61,7 +71,7 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54182, {	-- Bilgewater Bash Brothers (Invasion WQ)
+					q(54182, {	-- Bilgewater Bash Brothers (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -70,7 +80,7 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(53755, {	-- Blight and Sound (Invasion WQ)
+					q(53755, {	-- Blight and Sound (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -79,7 +89,12 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(52755, {	-- Bringing the Heat [Horde]
+					q(53939, {	-- Breaching Boralus (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52755, {	-- Bringing the Heat
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
@@ -94,12 +109,22 @@ _.Zones =
 							}),
 						},
 					}),
+					q(54257, {	-- Captain Greensails (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51848, {	-- Captain Wintersail
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51842, {	-- Carla Smirk
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53832, {	-- Counter-Sabotage (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51647, {	-- Crews of Freehold
@@ -112,17 +137,27 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(53716, {	-- Eastpoint Emergency (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51311, {	-- Energizing Extract
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(53951, {	-- Explosive Relief (Invasion WQ)
+					q(53951, {	-- Explosive Relief (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(53814, {	-- First Sergeant Steelfang (Invasion WQ)
+					q(54129, {	-- First Mate Malone (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53814, {	-- First Sergeant Steelfang (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -136,6 +171,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(53875, {	-- Fogsail for a Day (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(51654, {	-- Fowlmouth
 						["lvl"] = 120,
@@ -151,7 +191,7 @@ _.Zones =
 							}),
 						},
 					}),
-					q(53699, {	-- Gate Crashers (Invasion WQ)
+					q(53699, {	-- Gate Crashers (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -179,6 +219,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54268, {	-- Impulsive Propulsion (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52760, {	-- Like a Fish in a Barrel
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -187,6 +232,11 @@ _.Zones =
 					q(50295, {	-- Like Pulling Teeth
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53759, {	-- Look Out Below! (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51664, {	-- Kulett the Ornery
@@ -205,9 +255,9 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(53726, {	-- Mechinations (Invasion WQ)
+					q(54112, {	-- Mistweaver Nian (Faction Assault WQ)
 						["lvl"] = 110,
-						["races"] = ALLIANCE_ONLY,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(53994, {	-- Naga Attack!
@@ -280,11 +330,6 @@ _.Zones =
 							ach(12087),	-- The Reining Champion
 						},
 					}),
-					q(53784, {	-- Siege Engineer Krackleboom (Invasion WQ)
-						["lvl"] = 110,
-						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
-					}),
 					q(51463, {	-- Sky Drop Rescue
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -320,7 +365,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(51651, {	-- Squacks [AH]
+					q(51651, {	-- Squacks
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -338,7 +383,12 @@ _.Zones =
 							}),
 						},
 					}),
-					q(52159, {	-- Swab This! (Alliance)
+					q(54091, {	-- Strong Arm John (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52159, {	-- Swab This!
 						["hordeQuestID"] = 53196,	-- Swab This! (Horde)
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -365,6 +415,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(54251, {	-- The Ambassador (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51241, {	-- The Bear Witch Project
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -379,15 +434,21 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54237, {	-- Togoth Cruelarm (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51847, {	-- Tort Jaw
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(53078, {	-- Treasure in the Tides (this may be a Horde version that doesn't have a faction tag on wowhead)
+					q(53078, {	-- Treasure in the Tides
 						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
-					q(52155, {	-- Treasure in the Tides (confirmed Alliance side on 7-3-2019 - Iyanden)
+					q(52155, {	-- Treasure in the Tides
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -414,7 +475,12 @@ _.Zones =
 							}),
 						},
 					}),
-					q(52475, {	-- Where Eagles Prey (Invasion WQ)
+					q(53713, {	-- Wet Work: Bridgeport (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52475, {	-- Where Eagles Prey (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -445,6 +511,11 @@ _.Zones =
 						["groups"] = {
 							i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
 						},
+					}),
+					q(53772, {	-- Zagg Brokeneye (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 				}),
 				i(158092),	-- Colscale Cudgel

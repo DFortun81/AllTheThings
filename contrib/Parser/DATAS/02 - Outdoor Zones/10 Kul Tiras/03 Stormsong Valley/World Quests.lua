@@ -27,6 +27,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54647, {	-- Ale Intent (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52165, {	-- Automated Chaos
 						["qg"] = 140315,	-- Eddie Fixit
 						["lvl"] = 120,
@@ -66,6 +71,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54442, {	-- Beast Tamer Watkins (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52330, {	-- Beehemoth
 						["lvl"] = 120,
 						["npcID"] = 134147,		-- Beehemoth
@@ -100,6 +110,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(53857, {	-- Cap'n Gorok (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51782, {	-- Captain Razorspine
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -132,13 +147,41 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51777, {	-- Dagrus the Scorned
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51778, {	-- Deepfang
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53804, {	-- Dinomancer Zakuru (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51781, {	-- Foreman Scripps
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(52179, {	-- Fortified Resistance
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53768, {	-- Furious Fracas (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53769, {	-- Furious Fracas (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54414, {	-- Gale's Unrest (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51776, {	-- Galestorm
@@ -153,6 +196,16 @@ _.Zones =
 					q(51779, {	-- Grimscowl the Harebrained
 						["coord"] = { 62.0, 73.9, 942 },
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53771, {	-- Gurin Stonebinder (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54132, {	-- Horde of Heroes (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52988, {	-- House Cleaning
@@ -174,6 +227,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54328, {	-- Knight-Captain Joesiph (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51633, {	-- Make Loh Go
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -185,6 +243,16 @@ _.Zones =
 					}),
 					q(52982, {	-- Mine or Trouble
 						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54308, {	-- Mine Your Business (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54266, {	-- Mortar Master Zapfritz (Faction Assault WQ)
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
@@ -202,14 +270,24 @@ _.Zones =
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
+					q(54468, {	-- Nalaess Featherseeker (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51820, {	-- Oily Mess
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(52939, {	-- Ordnance Orders [Alliance]
+					q(52939, {	-- Ordnance Orders
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54437, {	-- Owynn Graddock (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52964, {	-- Pest Problem
@@ -223,6 +301,11 @@ _.Zones =
 					}),
 					q(52474, {	-- Poacher Zane
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52211, {	-- Red Sunrise
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52142, {	-- Restocking
@@ -280,6 +363,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(53706, {	-- Salvage the Supplies (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52889, {	-- Sandscour
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -307,8 +395,14 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(51453, {	-- Shrine of the Storm: Behold, Pure Water
-						["lvl"] = 120,
+					q(53753, {	-- Shell Outs (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53752, {	-- Shell Outs (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52446, {	-- Sister Absinthe
@@ -317,6 +411,11 @@ _.Zones =
 					}),
 					q(51921, {	-- Slickspill
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53707, {	-- Smoke the Supplies (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50591, {	-- Son of a Bee
@@ -347,6 +446,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51982, {	-- Storm's Rage (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52322, {	-- Taja the Tidehowler
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -373,16 +477,27 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51827, {	-- They Came From Behind!
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52126, {	-- This Little Piggy Has Sharp Tusks
 						["qg"] = 139987,	-- Bristlespine
 						["lvl"] = 120,
 						["coord"] = { 42.41, 76.61, 942 },
 						["collectible"] = false,
+						["filter"] = 101,	-- Pet Battles
 						["g"] = {
 							crit(2, {	-- Battle on Zandalar and Kul Tiras (This Little Piggy Has Sharp Tusks)
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(54403, {	-- Tidesage Clarissa (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(52054, {	-- Too Much To Bear
 						["lvl"] = 120,
@@ -393,12 +508,27 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(53712, {	-- Unfriendly Skies (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52301, {	-- Vinespeaker Ratha
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54434, {	-- Voidmaster Evenshade (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52300, {	-- Wagga Snarltusk
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53983, {	-- Wet Work: Fort Knight (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(53287, {	-- Winter's Kiss Cluster

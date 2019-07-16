@@ -12,13 +12,28 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(53808, {	-- Crawl To Victory (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51579, {	-- Dark Ranger Clea
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50776, {	-- False Prophets
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(53704, {	-- Not Too Sober Citizens Brigade
-						["lvl"] = 120,
+					q(53726, {	-- Mechinations (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53704, {	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 						["g"] = {
@@ -46,6 +61,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWeekly"] = true,
+						["collectible"] = false,
+					}),
+					q(53784, {	-- Siege Engineer Krackleboom (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51024, {	-- Supplies Needed: Akunda's Bite

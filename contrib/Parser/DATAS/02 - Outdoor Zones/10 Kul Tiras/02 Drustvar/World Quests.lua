@@ -7,9 +7,19 @@ _.Zones =
 		m(896, {	-- Drustvar
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
+					q(53701, {	-- A Drust Cause (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51616, {	-- A Final Rest
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51727, {	-- A Shot at the Dark Iron
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51687, {	-- A Smelly Solution
@@ -22,14 +32,19 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(53714, {	-- Apothecary Jerrod (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51466, {	-- Arvon the Betrayed
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54681, {	-- Azerite Caravan
+					q(54681, {	-- Azerite Caravan (Faction Assault WQ)
 						["coord"] = { 32.13, 46.54, 896 },
 						["crs"] = { 148676 },	-- Caravan Commander Veronica
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
@@ -89,7 +104,7 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54143, {	-- Bird's-Eye (Incursion WQ)
+					q(54143, {	-- Bird's-Eye (Faction Assault WQ)
 						["coord"] = { 37.32, 51.83, 896 },	-- Rocket Pack Start
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -110,6 +125,11 @@ _.Zones =
 					}),
 					q(51989, {	-- Braedan Whitewall
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54662, {	-- Brought to Light (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50369, { 	-- Bruin Potions
@@ -145,9 +165,9 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54665, {	-- Duchess Fallensong
+					q(54665, {	-- Duchess Fallensong (Faction Assault WQ)
 						["crs"] = { 148563 },	-- Duchess Fallensong
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["coord"] = { 40.21, 50.91, 896 },
 						["collectible"] = false,
@@ -157,16 +177,31 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54449, {	-- Elemental Azerite (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54448, {	-- Elemental Azerite (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53867, {	-- Engineer Bolthold (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51527, {	-- Executioner Blackwell
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(51761, {	-- Familiar Foes [Horde]
+					q(51761, {	-- Familiar Foes
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
-					q(51588, {	-- Familiar Foes [Alliance]
+					q(51588, {	-- Familiar Foes
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -181,14 +216,14 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54507, {	-- Fungal Infestation
-						["lvl"] = 120,
+					q(54507, {	-- Fungal Infestation (Faction Assault WQ)
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["coord"] = { 30.04, 40.55, 896 },
 						["collectible"] = false,
 					}),
-					q(54506, {	-- Fungal Infestation
-						["lvl"] = 120,
+					q(54506, {	-- Fungal Infestation (Faction Assault WQ)
+						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 30.04, 40.55, 896 },
 						["collectible"] = false,
@@ -197,16 +232,20 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51507, {	-- Gorehorn
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51909, {	-- Grozgore
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(51604, {	-- Hunters Hunted [Alliance]
+					q(51604, {	-- Hunters Hunted
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(51764, {	-- Hunters Hunted [Horde]
+					q(51764, {	-- Hunters Hunted
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
@@ -216,9 +255,24 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54137, {	-- In Every Dark Corner (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54688, {	-- Inquisitor Erik (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51693, {	-- Intercepting the Irontide
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54689, {	-- Lights Out (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51972, {	-- Lost Goat
@@ -230,12 +284,27 @@ _.Zones =
 						["collectible"] = false,
 						["requireSkill"] = 186,	-- Mining
 					}),
+					q(54690, {	-- Maddok the Sniper (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51433, {	-- Matron Morana
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54686, {	-- Medical Emergency (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51707, {	-- More Valuable Than Gold
 						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54650, {	-- Muk'luk (Faction Assault WQ)
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
@@ -269,9 +338,9 @@ _.Zones =
 							},
 						},
 					}),
-					q(54089, {	-- Omgar Doombow
+					q(54089, {	-- Omgar Doombow (Faction Assault WQ)
 						["crs"] = { 146607 },	-- Omgar Doombow
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["coord"] = { 31.78, 33.06, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -281,8 +350,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54472, {	-- Plowing the Field
-						["lvl"] = 120,
+					q(54666, {	-- Packmaster Swiftarrow (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54472, {	-- Plowing the Field (Faction Assault WQ)
+						["lvl"] = 110,
 						["coord"] = { 33.89, 46.98, 896 },
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
@@ -343,9 +417,9 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54471, {	-- Tend the Wounded
+					q(54471, {	-- Tend the Wounded (Faction Assault WQ)
 						["coord"] = { 33.89, 46.98, 896 },
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
@@ -370,12 +444,12 @@ _.Zones =
 							i(157845),	-- Falconer's Whistle
 						},
 					}),
-					q(51767, {	-- Trapline [Horde]
+					q(51767, {	-- Trapline
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
-					q(51619, {	-- Trapline [Alliance]
+					q(51619, {	-- Trapline
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -394,9 +468,9 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54011, {	-- Wet Work: Arom's Stand
+					q(54011, {	-- Wet Work: Arom's Stand (Faction Assault WQ)
 						["crs"] = { 146943 },	-- Field Marshal Yosk
-						["lvl"] = 120,
+						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["coords"] = {
@@ -483,8 +557,8 @@ _.Zones =
 							i(162332), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
 						},
 					}),
-					q(54711, {	-- Zillie Wunderwrench and Grizzwald
-						["lvl"] = 120,
+					q(54711, {	-- Zillie Wunderwrench and Grizzwald (Faction Assault WQ)
+						["lvl"] = 110,
 						["coord"] = { 39.69, 40.63, 896 },
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
@@ -492,6 +566,11 @@ _.Zones =
 							148862,	-- Zillie Wunderwrench
 							148860,	-- Grizzwald
 						},
+					}),
+					q(54488, {	-- Zul'aki the Headhunter (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
 					}),
 				}),
 				i(158092),	-- Colscale Cudgel
