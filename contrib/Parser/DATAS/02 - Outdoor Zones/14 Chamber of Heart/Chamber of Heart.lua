@@ -14,6 +14,23 @@ _.Zones =
 				},
 				["lvl"] = 110,
 				["g"] = {
+					n(-4,   {	-- Achievements
+						ach(13775, {	-- Essence Overload
+							ach(13772),	-- Essence Essentials
+							ach(13773),	-- Essence Gains
+						}),
+						ach(12918, {	-- Have a Heart
+							["sourceQuests"] = { 51211 },	-- The Heart of Azeroth
+						}),
+						ach(13777),		-- My Heart Container is Full
+						ach(13771, {	-- Power Is Beautiful
+							ach(13769),	-- Power Up
+							ach(13770),	-- Power Creep
+						}),
+						ach(13572, {	-- The Heart Forge
+							["sourceQuests"] = { 55618 },	-- The Heart Forge
+						}),
+					}),
 					n(-169, {	-- Emissary Quests
 						q(50562, {	-- Champions of Azeroth
 							["isDaily"] = true,
@@ -97,7 +114,6 @@ _.Zones =
 							["coord"] = { 48.1, 72.4, 1473 },
 							["sourceQuest"] = 55497,	-- A Friendly Face
 							["g"] = {
-								ach(13572),	-- The Heart Forge
 								i(168611, {	-- Petrified Ebony Scale
 									{ ["azeriteEssenceID"] = 12 },
 								}),
