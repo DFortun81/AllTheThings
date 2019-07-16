@@ -19,14 +19,12 @@ _.Zones =
 						},
 						["description"] = "You only need to complete one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to earn full credit.",
 					}),
-					{	-- Criteria 3 — A Pirate's Life For You
-						["criteriaID"] = 3,	-- A Pirate's Life For You
+					crit(3, {	-- A Pirate's Life For You
 						["sourceQuests"] = { 26665 },	-- Call of Booty
-					},
-					{	-- Criteria 4 — Bloodsail and Brashtide
-						["criteriaID"] = 4,	-- Bloodsail and Brashtide
+					}),
+					crit(4, {	-- Bloodsail and Brashtide
 						["sourceQuests"] = { 26703 },	-- Bloodsail's End
-					},
+					}),
 				}),
 
 
@@ -72,6 +70,17 @@ _.Zones =
 				}),
 				
 				
+				q(26644, {	-- Attracting Attention
+					["sourceQuests"] = {
+						26635,	-- Cannonball Swim
+						26633,	-- Swabbing Duty
+						26634,	-- The Bane of Many a Pirate
+					},
+					["coord"] = { 44.3, 91.6, 210 },
+					["qg"] = 2548,	-- Captain Keelhaul
+				}),
+				
+				
 				q(26809, {	-- Backdoor Dealings
 					["sourceQuests"] = { 26808 },	-- Maywiki
 					["coord"] = { 55.6, 42.2, 210 },
@@ -91,6 +100,13 @@ _.Zones =
 				--	["objectID"] = 2083,	-- Bloodsail Correspondence
 					["coord"] = { 41.2, 61.3, 210 },
 					["icon"] = "Interface\\Icons\\inv_misc_scrollunrolled04",
+				}),
+				
+				
+				q(26635,  {	-- Cannonball Swim
+					["sourceQuests"] = { 26631 },	-- Your First Day as a Pirate
+					["coord"] = { 44.5, 92.8, 210 },
+					["qg"] = 2545,	-- "Pretty Boy" Duncan
 				}),
 				
 				
@@ -120,6 +136,20 @@ _.Zones =
 						i(61574),	-- Sea Baron's Breastplate
 						i(61576),	-- Pirate's Musket
 						i(131563),	-- Cord of Supremecy
+					},
+				}),
+				
+				
+				q(26649,  {	-- Drive-By Piracy
+					["sourceQuests"] = { 26647 },	-- Ol' Blasty
+					["coord"] = { 46.6, 94.9, 210 },
+					["qg"] = 2547,	-- Ironpatch
+					["g"] = {
+						i(61592),	-- Black Gold Buckler
+						i(61594),	-- Venture Blaster
+						i(61596),	-- Slippery Glovelettes
+						i(61598),	-- Ironpatch Shoulderguards
+						i(131573),	-- Ironpatch Handguards
 					},
 				}),
 				
@@ -174,8 +204,23 @@ _.Zones =
 				}),
 				
 				
+				q(26595,  {	-- Kill-Collect
+					["sourceQuests"] = { 26594 },	-- Return to MacKinley
+					["qg"] = 2501,	-- "Sea Wolf" MacKinley
+					["coord"] = { 42.0, 73.4, 210 },
+					["g"] = {
+						i(61538),	-- Nice Shorts
+						i(61540),	-- Phase Three Bracers
+						i(61542),	-- Forceful Shield
+						i(131558),	-- Phase Three Leggings
+						i(131559),	-- Nice Cuffs
+					},
+				}),
+				
+				
 				q(26630, {	-- Looks Like a Tauren Pirate to Me
 					["description"] = "This is a sub-quest of Seeing Where Your Loyalties Lie.",
+					["collectible"] = false,	-- this quest doesn't permanently collect for god knows what stupid blizzard reason
 					["coord"] = { 41.0, 73.2, 210 },
 					["qg"] = 2487,	-- Fleet Master Seahorn
 				}),
@@ -206,6 +251,27 @@ _.Zones =
 						i(61566),	-- Landlubber Headband
 						i(61568),	-- Sea Legs
 						i(131561),	-- Landlubber Helm
+					},
+				}),
+				
+				
+				q(26647,  {	-- Ol' Blasty
+					["sourceQuests"] = { 26644 },	-- Attracting Attention
+					["coord"] = { 46.6, 94.9, 210 },
+					["qg"] = 2547,	-- Ironpatch
+				}),
+				
+				
+				q(26648,  {	-- Our Mortal Enemies
+					["sourceQuests"] = { 26644 },	-- Attracting Attention
+					["coord"] = { 46.5, 93.2, 210 },
+					["qg"] = 43556,	-- "Dead-Eye" Drederick McGumm
+					["g"] = {
+						i(61600),	-- Mortal Naginata
+						i(61604),	-- Other-Eye Patch
+						i(61606),	-- Pauldrons of the Eternal Battle
+						i(131572),	-- One-Eye Patch
+						i(156952),	-- Adversarial Blackjack
 					},
 				}),
 				
@@ -257,6 +323,13 @@ _.Zones =
 				}),
 				
 				
+				q(26594,  {	-- Return to MacKinley
+					["sourceQuests"] = { 26593 },	-- Scaring Shaky
+					["coord"] = { 40.5, 67.8, 210 },
+					["qg"] = 2502,	-- "Shaky" Phillipe
+				}),
+				
+				
 				q(26593, {	-- Scaring Shaky
 					["coord"] = { 42.0, 73.4, 210 },
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
@@ -279,6 +352,28 @@ _.Zones =
 						i(61560),	-- Chestpiece of Returning Strength
 						i(131560),	-- Savage Handguards
 					},
+				}),
+				
+				
+				q(26633,  {	-- Swabbing Duty
+					["sourceQuests"] = { 26631 },	-- Your First Day as a Pirate
+					["coord"] = { 44.4, 91.6, 210 },
+					["qg"] = 2548,	-- Captain Keelhaul
+					["g"] = {
+						i(61578),	-- Cleaning Britches
+						i(61580),	-- Swabbie's Booties
+						i(61582),	-- Riptide Vest
+						i(61584),	-- Keelhaul Shackles
+						i(131567),	-- Riptide Boots
+						i(131568),	-- Keelhaul Harness
+					},
+				}),
+				
+				
+				q(26634,  {	-- The Bane of Many A Pirate
+					["sourceQuests"] = { 26631 },	-- Your First Day as a Pirate
+					["coord"] = { 44.4, 92.0, 210 },
+					["qg"] = 2549,	-- Garr Salthoof
 				}),
 				
 				
@@ -324,6 +419,24 @@ _.Zones =
 					["g"] = {
 						i(11469),	-- Bloodband Bracers 
 					},
+				}),
+				
+				
+				q(26650,  {	-- The Damsel's Luck
+					["sourceQuests"] = {
+						26649,	-- Drive-By Piracy
+						26648,	-- Our Mortal Enemies
+					},
+					["coord"] = { 46.7, 95.2, 210 },
+					["qg"] = 2546, -- Fleet Master Firallon
+				}),
+				
+				
+				q(26598,  {	-- The Heart of Mokk
+					["description"] = "This quest is only available while you are on the [Stranglethorn Fever] quest.",
+					["repeatable"] = true,
+					["coord"] = { 54.1, 46.5, 210 },
+					["qg"] = 1449,	-- Witch Doctor Unbagwa
 				}),
 				
 				
@@ -447,10 +560,6 @@ _.Zones =
 						i(133997),  -- Black Ice (TOY!)
 					},
 				}),
-				q(26644, {	-- Attracting Attention
-					["qg"] = 2548,	-- Captain Keelhaul
-					["sourceQuests"] = {26633,26634,26635},
-				}),
 				q(4621,   {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["g"] = {
@@ -506,10 +615,6 @@ _.Zones =
 						["sourceQuests"] = {26550},
 					}),
 				}),
-				q(26635,  {	-- Cannonball Swim
-					["qg"] = 2545,	-- "Pretty Boy" Duncan
-					["sourceQuests"] = {26631},
-				}),
 				qh(26495, {	-- Chabal
 					["qg"] = 43095,	-- Sassy Hardwrench
 					["sourceQuests"] = {26493},
@@ -517,17 +622,6 @@ _.Zones =
 				q(26678,  {	-- Doublerum
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuests"] = {26665},
-				}),
-				q(26649,  {	-- Drive-By Piracy
-					["sourceQuests"] = {26647},
-					["qg"] = 2547,	-- Ironpatch
-					["g"] = {
-						i(61592),	-- Black Gold Buckler
-						i(61594),	-- Venture Blaster
-						i(61596),	-- Slippery Glovelettes
-						i(61598),	-- Ironpatch Shoulderguards
-						i(131573),	-- Ironpatch Handguards
-					},
 				}),
 				qh(26551, {	-- Eliminate the Outcast
 					["qg"] = 43098,	-- Chabal
@@ -566,17 +660,6 @@ _.Zones =
 					["races"] = {9},
 					["description"] = "This is only available to Goblin players who have not accepted [Akiris by the Bundle]."
 				}),
-				q(26595,  {	-- Kill-Collect
-					["sourceQuests"] = {26594},
-					["qg"] = 2501,	-- "Sea Wolf" MacKinley
-					["g"] = {
-						i(61538),	-- Nice Shorts
-						i(61540),	-- Phase Three Bracers
-						i(61542),	-- Forceful Shield
-						i(131558),	-- Phase Three Leggings
-						i(131559),	-- Nice Cuffs
-					},
-				}),
 				q(29152, {	-- Making Contact
 					["qg"] = 52646,	-- Colin Swifthammer
 					["coord"] = { 55.3, 41.9, 210 },
@@ -591,21 +674,6 @@ _.Zones =
 						i(61588),	-- Princess Poobah's Bracelets
 						i(61589),	-- Princess Poobah's Tiara
 						i(131562),	-- Princess Poobah's Bangles
-					},
-				}),
-				q(26647,  {	-- Ol' Blasty
-					["qg"] = 2547,	-- Ironpatch
-					["sourceQuests"] = {26644},
-				}),
-				q(26648,  {	-- Our Mortal Enemies
-					["sourceQuests"] = {26644},
-					["qg"] = 43556,	-- "Dead-Eye" Drederick McGumm
-					["g"] = {
-						i(61600),	-- Mortal Naginata
-						i(61604),	-- Other-Eye Patch
-						i(61606),	-- Pauldrons of the Eternal Battle
-						i(131572),	-- One-Eye Patch
-						i(156952),	-- Adversarial Blackjack
 					},
 				}),
 				qh(26554, {	-- Plunging Into Zul'Gurub
@@ -636,10 +704,6 @@ _.Zones =
 						i(131551),
 					},
 				}),
-				q(26594,  {	-- Return to MacKinley
-					["qg"] = 2502,	-- "Shaky" Phillipe
-					["sourceQuests"] = {26593},
-				}),
 				o(204578, {	-- Barrel of Doublerum
 					q(26679, {	-- Return to Revilgaz
 						["sourceQuests"] = {26678},
@@ -648,22 +712,6 @@ _.Zones =
 				q(26698,  {	-- Seeking Seahorn
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuests"] = {26679},
-				}),
-				q(26633,  {	-- Swabbing Duty
-					["sourceQuests"] = {26631},
-					["qg"] = 2548,	-- Captain Keelhaul
-					["g"] = {
-						i(61578),	-- Cleaning Britches
-						i(61580),	-- Swabbie's Booties
-						i(61582),	-- Riptide Vest
-						i(61584),	-- Keelhaul Shackles
-						i(131567),	-- Riptide Boots
-						i(131568),	-- Keelhaul Harness
-					},
-				}),
-				q(26634,  {	-- The Bane of Many A Pirate
-					["qg"] = 2549,	-- Garr Salthoof
-					["sourceQuests"] = {26631},
 				}),
 				qh(28750, {	-- The Battle for Andorhal
 					["qg"] = 49636,	-- Arcanist Arman
@@ -676,10 +724,6 @@ _.Zones =
 					["qg"] = 2487,	-- Fleet Master Seahorn
 					["sourceQuests"] = {26698},
 				}),
-				q(26650,  {	-- The Damsel's Luck
-					["qg"] = 2546, --Fleet Master Firallon
-					["sourceQuests"] = {26648,26649},
-				}),
 				q(26697,  {	-- The Final Voyage of the Brashtide
 					["sourceQuests"] = {26695},
 					["qg"] = 2496,	-- Baron Revilgaz
@@ -689,11 +733,6 @@ _.Zones =
 						i(61612),	-- Baron's Baton
 						i(157000),	-- Fuse-Cutter Knife
 					},
-				}),
-				q(26598,  {	-- The Heart of Mokk
-					["qg"] = 1449,	-- Witch Doctor Unbagwa
-					["repeatable"] = true,
-					["description"] = "This quest is only available while you are on the [Stranglethorn Fever] quest.",
 				}),
 				qh(26493, {	-- There's Somebody Out There Who Wants It
 					["sourceQuests"] = {26487,26489,26450},

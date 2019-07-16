@@ -145,6 +145,12 @@ _.ExpansionFeatures =
 						["coord"] = { 59.5, 58.0, 720 },
 						["qg"] = 95240,	-- Kayn Sunfury
 					}),
+					q(42808, {	-- Green Adepts
+						["sourceQuests"] = { 42802 },	-- Securing Mardum
+						["coord"] = { 58.3, 51.1, 720 },
+						["lvl"] = 103,
+						["qg"] = 108782,	-- Belath Dawnblade
+					}),
 					q(42510, {	-- Immortal Soul
 						["sourceQuests"] = { 37447 },	-- The Blood of Demons
 						["coord"] = { 57.7, 51.7, 721 },
@@ -345,7 +351,6 @@ _.ExpansionFeatures =
 					q(44226),	-- Fate Favors Us
 					q(46780),	-- Further Advancement
 					q(46152),	-- Furthering Knowledge
-					q(42808),	-- Green Adepts
 					q(43186),	-- I Am the Slayer!
 					q(44383, {	-- In Pursuit of Power
 						["lvl"] = 102,

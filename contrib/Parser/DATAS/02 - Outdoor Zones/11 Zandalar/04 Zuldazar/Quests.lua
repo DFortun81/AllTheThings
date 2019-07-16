@@ -672,16 +672,34 @@ _.Zones =
 				q(47587, {	-- Headhunter Jo
 					["qg"] = 138669,	-- Hemet Nesingwary
 					["sourceQuests"] = { 47586 },	-- Hunting the Hunter
-					["g"] = {
-						i(159120),	-- Great Hunt Warglaive
-						i(159117),	-- Great Hunt Skullcracker
-						i(159121),	-- Headhunter Jo's Longstaff
-						i(159119),	-- Headhunter Jo's Machete
-						i(159115),	-- K'tal Fang Blade
-						i(159114),	-- Rootway Safari Greatbow
-						i(159118),	-- Rootway Safari Magestaff
-						i(159116),	-- Wildtusk Ivory Cudgel
-						i(159122),	-- Wildtusk Ivory Headcracker
+					["g"] = {	-- the quest is neutral, but the rewards are horde-only.  thanks, blizzard!
+						i(159120, {	-- Great Hunt Warglaive
+							["races"] = HORDE_ONLY,
+						}),
+						i(159117, {	-- Great Hunt Skullcracker
+							["races"] = HORDE_ONLY,
+						}),
+						i(159121, {	-- Headhunter Jo's Longstaff
+							["races"] = HORDE_ONLY,
+						}),
+						i(159119, {	-- Headhunter Jo's Machete
+							["races"] = HORDE_ONLY,
+						}),
+						i(159115, {	-- K'tal Fang Blade
+							["races"] = HORDE_ONLY,
+						}),
+						i(159114, {	-- Rootway Safari Greatbow
+							["races"] = HORDE_ONLY,
+						}),
+						i(159118, {	-- Rootway Safari Magestaff
+							["races"] = HORDE_ONLY,
+						}),
+						i(159116, {	-- Wildtusk Ivory Cudgel
+							["races"] = HORDE_ONLY,
+						}),
+						i(159122, {	-- Wildtusk Ivory Headcracker
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 				q(50466, {	-- He's Gone Mad!
