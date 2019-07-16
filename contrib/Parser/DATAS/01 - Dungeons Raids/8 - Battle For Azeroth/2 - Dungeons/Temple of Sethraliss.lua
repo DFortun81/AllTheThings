@@ -9,6 +9,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			1043,	-- Atrium of Sethraliss
 		},
 		["groups"] = {
+			n(-34, {	-- World Quests
+				q(51379, {	-- Temple of Sethraliss: Navigating Currents
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2142, {	-- Adderis and Aspix
 					["crs"] = {

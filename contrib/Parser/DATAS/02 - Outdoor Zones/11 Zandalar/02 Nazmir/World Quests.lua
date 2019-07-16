@@ -25,7 +25,7 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54684, {	-- Arcanist Quintril (Incursion WQ)
+					q(54684, {	-- Arcanist Quintril (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -58,8 +58,18 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54533, {	-- Barreling Through (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51640, {	-- Beachhead
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54691, {	-- Brewmaster Lin (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51550, {	-- Bubbles and Trouble
@@ -100,7 +110,12 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54512, {	-- Cleansing Tide (Invasion WQ)
+					q(54699, {	-- Classic Gnomish Engineering (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54512, {	-- Cleansing Tide (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -168,6 +183,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54502, {	-- It's Raining Mana (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51546, {	-- It's the Pits
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -193,6 +213,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54697, {	-- Lightforged Warframe (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(53321, {	-- Luminous Monelite
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -200,6 +225,11 @@ _.Zones =
 					}),
 					q(50517, {	-- Mala'kili and Rohnkor
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54136, {	-- March on the Marsh (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52754, {	-- Marshdwellers
@@ -254,7 +284,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54680, {	-- Plague Master Herbert (Invasion WQ)
+					q(54680, {	-- Plague Master Herbert (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -264,7 +294,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54693, {	-- Pterror of the Horde (Invasion WQ)
+					q(54693, {	-- Pterror of the Horde (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -277,9 +307,14 @@ _.Zones =
 							ach(13022),	-- Revenge is Best Served Speedily
 						},
 					}),
-					q(54839, {	-- Rightfully Ours (Incursion WQ)
+					q(54839, {	-- Rightfully Ours (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54135, {	-- Romp in the Swamp (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50961, {	-- Save Our Scrolls!
@@ -296,6 +331,16 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(53886, {	-- Self Guided Tour (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54663, {	-- Shadow Hunter Vol'tris (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51628, {	-- Shell Game
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -304,9 +349,19 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54539, {	-- Skirmish at the Span (Incursion WQ)
+					q(54707, {	-- Siegeotron (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54539, {	-- Skirmish at the Span (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54538, {	-- Skirmish at the Span (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50650, {	-- Smashing Zalamar
@@ -319,6 +374,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54694, {	-- Stormcaller Morka (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50936, {	-- Survival Strategy
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -328,12 +388,22 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54534, {	-- The Blightest Touch (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(55302, {	-- The Cycle of Life
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51856, {	-- The Underrot: Rotmaw
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54503, {	-- This Gang of Mine (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50514, {	-- Totem Maker Jash'ga
@@ -345,7 +415,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54500, {	-- Untapped Potential (Incursion WQ)
+					q(54500, {	-- Untapped Potential (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -370,7 +440,7 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54020, {	-- Wet Work: Gloomwater Span (Incursion WQ)
+					q(54020, {	-- Wet Work: Gloomwater Span (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,

@@ -45,6 +45,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54016, {	-- Azerite Transport (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51175, {	-- Azerite Wounds
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -58,9 +63,14 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54537, {	-- Bilestomper (Invasion WQ)
+					q(54537, {	-- Bilestomper (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54523, {	-- Blinky Gizmospark (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50862, {	-- Bloodbulge
@@ -84,6 +94,16 @@ _.Zones =
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
 						},
+					}),
+					q(54524, {	-- Crate n' Barrel (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54516, {	-- Crate n' Barrel (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(50854, {	-- Crimsonclaw
 						["lvl"] = 120,
@@ -111,7 +131,17 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54513, {	-- Dino Time! (Invasion WQ)
+					q(54513, {	-- Dino Time! (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54527, {	-- Dinohunter Wildbeard (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54511, {	-- Down with the Death Captains! (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -139,7 +169,7 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(54505, {	-- Get on the Payload
+					q(54505, {	-- Get on the Payload (Faction Assault WQ)
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
@@ -156,13 +186,18 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54298, {	-- Gravity Matters (Invasion WQ)
+					q(54298, {	-- Gravity Matters (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50874, {	-- Hakbi the Risen
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54162, {	-- Hard Landing (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50846, {	-- Headhunter Lee'za
@@ -199,6 +234,11 @@ _.Zones =
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
+					q(54508, {	-- No Bridge Too Dire (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50855, { 	-- Old R'gal
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -210,6 +250,11 @@ _.Zones =
 					q(51821, { 	-- Quelling the Cove
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54535, {	-- Portal Keeper Romiir (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51816, {	-- Pterrible Ingredients
@@ -227,6 +272,16 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54532, {	-- Receding Treeline (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54138, {	-- Ritual Rampage (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51814, {	-- Ravoracious
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -234,6 +289,11 @@ _.Zones =
 					}),
 					q(52250, {	-- Saving Xibala
 						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54504, {	-- Scout Captain Grizzleknob (Faction Assault WQ)
+						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
@@ -251,16 +311,27 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(53883, {	-- Shores of Zuldazar (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54522, {	-- Short for an Orc (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52938, {	-- Small Beginnings
 						["lvl"] = 120,
 						["collectible"] = false,
+						["filter"] = 101,	-- Pet Battles
 						["groups"] = {
 							crit(24, {	-- Small Beginnings
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
 					}),
-					q(54712, {	-- Spell Components (Invasion WQ)
+					q(54712, {	-- Spell Components (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -272,6 +343,10 @@ _.Zones =
 						["groups"] = {
 							ach(13440),	-- Pushing the Payload
 						},
+					}),
+					q(50873, {	-- Strange Egg
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 					q(50756, {	-- Subterranean Evacuation
 						["lvl"] = 120,
@@ -294,16 +369,22 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(52302, {	-- The MOTHERLODE!!: He's Got Really Big Bombs
-						["lvl"] = 120,
-						["collectible"] = false,
-					}),
 					q(52248, {	-- The Shores of Xibala
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54685, {	-- They Love Iron (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50850, {	-- Tia'Kawan
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54515, {	-- Tidebinder Maka (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50861, {	-- Torraske the Eternal
@@ -319,7 +400,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54017, {	-- Wet Work: Warbeast Kraal (Invasion WQ)
+					q(54017, {	-- Wet Work: Warbeast Kraal (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -397,6 +478,11 @@ _.Zones =
 						["groups"] = {
 							i(160509), 	-- Echoes of Rezan (TOY!)
 						},
+					}),
+					q(54701, {	-- Wrath of the Ravasaur (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(51824, {	-- You're Grounded
 						["lvl"] = 120,

@@ -22,6 +22,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50737, {	-- Silence the Speakers (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50858, {	-- Sky Queeen [Alliance]
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -247,6 +252,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(52398, {	-- Work Order: Ultramarine Pigment
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 773,	-- Inscription
 					}),
 				}),
 				i(163857),	-- Azerite Armor Cache

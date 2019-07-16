@@ -15,11 +15,29 @@ _.Zones =
 							ach(13041),	-- Hungry, Hungry Ranishu
 						},
 					}),
+					q(51105, {	-- Ak'tar
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51095, {	-- Ashmane
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54245, {	-- Azerite Altercation (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54246, {	-- Azerite Altercation (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52849, {	-- Azerite Empowerment
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51185, {	-- Azerite Empowerment
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -47,8 +65,23 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54272, {	-- Battle Bots (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54273, {	-- Battle Bots (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51641, {	-- Beachhead
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54638, {	-- Beat Up the Drums (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51118, {	-- Bloodwing Bonepicker
@@ -59,6 +92,16 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(54254, {	-- Bombs Away (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54253, {	-- Bombs Away (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(51155, {	-- Brgl-Lrgl the Basher
 						["lvl"] = 120,
@@ -87,8 +130,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(51599, {	-- Damaged Goods
+					q(51559, {	-- Damaged Goods
 						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54189, {	-- Desert Crawl (Faction Assault WQ)
+						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
@@ -120,8 +168,28 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51198, {	-- Fertilizer Duty
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51564, {	-- Fertilizer Duty
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54645, {	-- Fury of the Earth (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51157, {	-- Golanar
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54646, {	-- Grand Marshal Fury (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51108, {	-- Hivemother Kraxi
@@ -132,6 +200,16 @@ _.Zones =
 					}),
 					q(51239, {	-- Instructions Not Included
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53885, {	-- Isolated Victory (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54574, {	-- Jin'tago (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51125, {	-- Jungleweb Hunter
@@ -156,8 +234,17 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51252, {	-- Kiro's Desert Flower
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51635, {	-- Make Loh Go
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54134, {	-- Many Fine Heroes (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51153, { 	-- Mor'fani the Exile
@@ -173,6 +260,11 @@ _.Zones =
 					}),
 					q(51103, {	-- Nez'ara
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54170, {	-- Ormin Rocketbop (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(53300, {	-- Overgrown Anchor Weed
@@ -192,6 +284,11 @@ _.Zones =
 					}),
 					q(51124, {	-- Relic Hunter Hazaak
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54636, {	-- Sandbinder Sodir (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51173, {	-- Sandfishing
@@ -216,11 +313,25 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54188, {	-- Scrambled Bots (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51629, {	-- Shell Game
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54555, {	-- Siege O' Matic 9000 (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51123, {	-- Sirokar
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51116, {	-- Skycarver Krakit
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -248,12 +359,23 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(51379, {	-- Temple of Sethraliss: Navigating Currents
-						["lvl"] = 120,
+					q(54786, {	-- Stop the Shipments (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(55303, {	-- The Cycle of Life
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54154, {	-- The Hills Have Spies (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(54415, {	-- Vulpera for a Day (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51112, {	-- Warbringer Hozzik
@@ -268,6 +390,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54014, {	-- Wet Work: Blood in the Sand (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52864, {	-- What Do You Mean, Mind Controlling Plants?
 						["qg"] = 141969,	-- Spineleaf
 						["lvl"] = 120,
@@ -280,6 +407,11 @@ _.Zones =
 					}),
 					q(51322, {	-- Wings and Stingers
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54554, {	-- Wolfleader Skraug (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52427, {	-- Work Order: Battle Flag: Rallying Swiftness
