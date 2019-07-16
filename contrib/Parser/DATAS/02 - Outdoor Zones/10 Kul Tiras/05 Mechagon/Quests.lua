@@ -964,6 +964,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
+--[[			-- Quest ID is missing	
+				q(56750, {	-- Rustbolt Requisitions: Winter's Kiss (A)
+					["qg"] = 149813,	-- Gila Crosswires
+					["coord"] = { 77.7, 40.4, 1462 },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+]]--				
+				q(56758, {	-- Rustbolt Requisitions: Winter's Kiss (H)
+					["qg"] = 150563,	-- Skaggit
+					["coord"] = { 73.8, 26.0, 1462 },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
 				q(56181, {	-- Scrapmaster's Blowtorch
 					["qg"] = 152295,	-- Pascal
 					["coord"] = { 71.2, 32.5, 1462 },
