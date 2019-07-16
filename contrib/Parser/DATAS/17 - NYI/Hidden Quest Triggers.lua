@@ -229,6 +229,9 @@ _.NeverImplemented =
 		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(37526),	-- Farondis Murder Flag — triggers between turning in "The Tidestone: Shattered" and starting "Save Yourself" in Azsuna
+		q(44638),	-- Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — think this is somewhere around "Immortal Soul" / "Leader of the Illidari" in the DH class hall
+		q(42116),	-- Tracking Quest: Chapter 2 Completed — think this is for "Unexpected Visitors" for the DH class campaign, which was the completion of the first order campaign effort for the "Fighting With Style: Classic" achievement
+		
 		q(37965),	-- A Tainted Vintage — bonus objective in Azsuna, unavailable after 110
 		q(37495),	-- Plunder the Cove — bonus objective in Azsuna, unavailable after 110
 		q(36811),	-- Retake Faronaar — bonus objective in Azsuna, unavailable after 110

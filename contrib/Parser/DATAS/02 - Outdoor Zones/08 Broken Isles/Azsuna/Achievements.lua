@@ -9,79 +9,94 @@ _.Zones =
 				ach(11261),		-- Adventurer of Azsuna
 				ach(10994, {	-- A Glorious Campaign
 					cl(5, {	-- Priest
-						q(43375, {	-- An Ample Supply
-							["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 58.5, 37.2, 630 },
-							["lvl"] = 103,
-							["qg"] = 110686,	-- Zabra Hexx
-						}),
-						q(42137, {	-- Champion: Yalia Sagewhisper
-							["sourceQuests"] = { 43376 },	-- Problem Salver
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 47.1, 43.9, 630 },
-							["lvl"] = 103,
-							["qg"] = 110687,	-- Yalia Sagewhisper
-							["g"] = {
-								follower(871),	-- Yalia Sagewhisper
-							},
-						}),
-						q(42138, {	-- Champion: Zabra Hexx
-							["sourceQuests"] = { 43376 },	-- Problem Salver
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 47.1, 43.9, 630 },
-							["lvl"] = 103,
-							["qg"] = 110686,	-- Zabra Hexx
-							["g"] = {
-								follower(870),	-- Zabra Hexx
-							},
-						}),
-						q(43378, {	-- Eye of Azshara: Looking Through the Lens
-							["sourceQuests"] = {
-								42137,	-- Champion: Yalia Sagewhisper
-								42138,	-- Champion: Zabra Hexx
-							},
-							["classes"] = { 5 },
-							["qg"] = 110687,	-- Yalia Sagewhisper
-						}),
-						q(43374, {	-- Murloc Mind Control
-							["sourceQuests"] = { 43372 },	-- The Best and Brightest
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 58.5, 37.2, 630 },
-							["lvl"] = 103,
-							["qg"] = 110686,	-- Zabra Hexx
-						}),
-						q(43376, {	-- Problem Salver
-							["sourceQuests"] = {
-								43375,	-- An Ample Supply
-							--	43374,	-- Murloc Mind Control (commented out to avoid infinite loop!)
-							},
-							["classes"] = { 5 },	-- Priest
-							["coord"] = { 58.5, 37.2, 630 },
-							["lvl"] = 103,
-							["qg"] = 112487,	-- Yalia Sagewhisper
-						}),
+						["classes"] = { 5 },	-- Priest
+						["g"] = {
+							q(43375, {	-- An Ample Supply
+								["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 58.5, 37.2, 630 },
+								["lvl"] = 103,
+								["qg"] = 110686,	-- Zabra Hexx
+							}),
+							q(42137, {	-- Champion: Yalia Sagewhisper
+								["sourceQuests"] = { 43376 },	-- Problem Salver
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 47.1, 43.9, 630 },
+								["lvl"] = 103,
+								["qg"] = 110687,	-- Yalia Sagewhisper
+								["g"] = {
+									follower(871),	-- Yalia Sagewhisper
+								},
+							}),
+							q(42138, {	-- Champion: Zabra Hexx
+								["sourceQuests"] = { 43376 },	-- Problem Salver
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 47.1, 43.9, 630 },
+								["lvl"] = 103,
+								["qg"] = 110686,	-- Zabra Hexx
+								["g"] = {
+									follower(870),	-- Zabra Hexx
+								},
+							}),
+							q(43378, {	-- Eye of Azshara: Looking Through the Lens
+								["sourceQuests"] = {
+									42137,	-- Champion: Yalia Sagewhisper
+									42138,	-- Champion: Zabra Hexx
+								},
+								["classes"] = { 5 },
+								["qg"] = 110687,	-- Yalia Sagewhisper
+							}),
+							q(43374, {	-- Murloc Mind Control
+								["sourceQuests"] = { 43372 },	-- The Best and Brightest
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 58.5, 37.2, 630 },
+								["lvl"] = 103,
+								["qg"] = 110686,	-- Zabra Hexx
+							}),
+							q(43376, {	-- Problem Salver
+								["sourceQuests"] = {
+									43375,	-- An Ample Supply
+								--	43374,	-- Murloc Mind Control (commented out to avoid infinite loop!)
+								},
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 58.5, 37.2, 630 },
+								["lvl"] = 103,
+								["qg"] = 112487,	-- Yalia Sagewhisper
+							}),
+						},
 					}),
 					cl(2, {	-- Paladin
-						q(43490),	-- Aponi's Trail
-						q(42888),	-- Communication Orbs
+						["classes"] = { 2 },	-- Paladin
+						["g"] = {
+							q(43490),	-- Aponi's Trail
+							q(42888),	-- Communication Orbs
+						},
 					}),
 					cl(8, {	-- Mage
-						q(42222),	-- Empyrean Society Report
+						["classes"] = { 8 },	-- Mage
+						["g"] = {
+							q(42222),	-- Empyrean Society Report
+						},
 					}),
 					cl(4, {	-- Rogue
-						q(46324, {	-- False Orders
-							["races"] = HORDE_ONLY,
-						}),
-						q(45835, {	-- False Orders
-							["races"] = ALLIANCE_ONLY,
-						}),
+						["classes"] = { 4 },	-- Rogue
+						["g"] = {
+							q(46324, {	-- False Orders
+								["races"] = HORDE_ONLY,
+							}),
+							q(45835, {	-- False Orders
+								["races"] = ALLIANCE_ONLY,
+							}),
+						},
 					}),
 					cl(9, {	-- Warlock
-						q(39179),	-- Bloodstone Bandit
-						q(45024),	-- Cult Culling
-						q(40218),	-- Debt Repaid
-						q(45026),	-- Expending Fel Energy
+						["classes"] = { 9 },	-- Warlock
+						["g"] = {
+							q(39179),	-- Bloodstone Bandit
+							q(45024),	-- Cult Culling
+							q(40218),	-- Debt Repaid
+							q(45026),	-- Expending Fel Energy
+						},
 					}),
 				}),
 				ach(10763, {	-- Azsuna Matata

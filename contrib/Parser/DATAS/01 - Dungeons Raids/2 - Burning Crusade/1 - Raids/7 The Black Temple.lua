@@ -15,14 +15,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			344,	-- Den of Mortal Delights
 			345,	-- Chamber of Command
 			346,	-- Temple Summit
+			759,	-- Black Temple (used in DH scenario for "Confrontation at the Black Temple" quest)
 		},
-		["coords"] = {
-			{ 71.04, 46.52, 104 },	-- Black Temple, Shadowmoon Valley
-		},
-		["groups"] = {
+		["coord"] = { 71.0, 46.5, 104 },	-- Black Temple, Shadowmoon Valley
+		["g"] = {
 			faction(1012, {	-- Ashtongue Deathsworn
 				["qg"] = 23159,	-- Okuno <Ashtongue Deathsworn Quartermaster>
-				["groups"] = {
+				["g"] = {
 					ach(958),	-- Sworn to the Deathsworn
 					i(32429),	-- Pattern: Boots of Shackled Souls
 					i(32430),	-- Pattern: Bracers of Shackled Souls
@@ -986,7 +985,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(14, {	-- Normal
 				["lvl"] = 68,
 				["ignoreBonus"] = 1,
-				["groups"] = {
+				["g"] = {
 					cr(22887, e(1582, {	-- High Warlord Naj'entus
 						i(122104),	-- Leviathan Egg (PET!)
 						i(32248),	-- Halberd of Desolation
@@ -1187,7 +1186,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					cr(22917, e(1590, {	-- Illidan Stormrage
 						ach(697),	-- The Black Temple
 						n(-2000, {	-- Twin Blades of Azzinoth
-							["groups"] = {
+							["g"] = {
 								i(32837),	-- Warglaive of Azzinoth (LEGENDARY! MH)
 								i(32838),	-- Warglaive of Azzinoth (LEGENDARY! OH)
 							},
@@ -1258,7 +1257,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			d(24, {	-- Timewalking
 				["lvl"] = 71,
-				["groups"] = {	
+				["g"] = {	
 					cr(22887, e(1582, {	-- High Warlord Naj'entus
 						i(122104),	-- Leviathan Egg (PET!)
 						i(150447),	-- Halberd of Desolation
@@ -1386,7 +1385,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					cr(22917, e(1590, {	-- Illidan Stormrage
 						ach(11869, {	-- I'll Hold These For You Until You Get Out
 							["classes"] = { 12 },
-							["groups"] = {
+							["g"] = {
 								i(150372, {	-- Arsenal: The Warglaives of Azzinoth
 									i(151137),	-- Warglaive of Azzinoth
 								}),

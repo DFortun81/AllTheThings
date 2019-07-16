@@ -53,6 +53,12 @@ _.ExpansionFeatures =
 						["coord"] = { 59.7, 50.3, 720 },
 						["qg"] = 98632,  -- Matron Mother Malevolence
 					}),
+					q(42801, {	-- Back in Black
+						["sourceQuests"] = { 42593 },	-- The Arcane Way
+						["coord"] = { 57.0, 53.1, 720 },
+						["lvl"] = 103,
+						["qg"] = 108782,	-- Belath Dawnblade
+					}),
 					q(42679, {	-- Broken Warriors
 						["sourceQuests"] = {
 							42677,	-- Things Gaardoun Needs (Kayn)
@@ -92,6 +98,42 @@ _.ExpansionFeatures =
 							follower(595),	-- Champion: Kayn Sunfury
 						},
 					}),
+					q(42673, {	-- Champion: Kor'vas Bloodthorn
+						["sourceQuests"] = {
+							39741,	-- Into Our Ranks (Altruis) — must be on this quest
+							42665,	-- Into Our Ranks (Kayn) — must be on this quest
+						},
+						["coord"] = { 58.5, 56.4, 720 },
+						["lvl"] = 103,
+						["qg"] = 103761,	-- Kor'vas Bloodthorn
+						["g"] = {
+							follower(721),	-- Champion: Kor'vas Bloodthorn
+						},
+					}),
+					q(42664, {	-- Champion: Shade of Akama
+						["sourceQuests"] = {
+							39741,	-- Into Our Ranks (Altruis) — must be on this quest
+							42665,	-- Into Our Ranks (Kayn) — must be on this quest
+						},
+						["coord"] = { 58.5, 56.4, 720 },
+						["lvl"] = 103,
+						["qg"] = 108246,	-- Shade of Akama
+						["g"] = {
+							follower(719),	-- Champion: Shade of Akama
+						},
+					}),
+					q(42634, {	-- Confrontation at the Black Temple (Altruis)
+						["sourceQuests"] = { 42801 },	-- Back in Black
+						["coord"] = { 59.4, 50.5, 720 },
+						["lvl"] = 103,
+						["qg"] = 98632,	-- Matron Mother Malevolence
+					}),
+					q(42921, {	-- Confrontation at the Black Temple (Kayn)
+						["sourceQuests"] = { 42801 },	-- Back in Black
+						["coord"] = { 59.4, 50.5, 720 },
+						["lvl"] = 103,
+						["qg"] = 98632,	-- Matron Mother Malevolence
+					}),
 					q(42683, {	-- Demonic Improvements
 						["sourceQuests"] = { 42681 },	-- Loramus, Is That You?
 						["coord"] = { 59.1, 58.8, 720 },
@@ -102,6 +144,30 @@ _.ExpansionFeatures =
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 59.5, 58.0, 720 },
 						["qg"] = 95240,	-- Kayn Sunfury
+					}),
+					q(42510, {	-- Immortal Soul
+						["sourceQuests"] = { 37447 },	-- The Blood of Demons
+						["coord"] = { 57.7, 51.7, 721 },
+						["lvl"] = 103,
+						["qg"] = 107724,	-- Kayn Sunfury
+					}),
+					q(39741, {	-- Into Our Ranks (Altruis)
+						["sourceQuests"] = { 42634 },	-- Confrontation at the Black Temple (Altruis)
+						["coord"] = { 58.5, 56.4, 720 },
+						["lvl"] = 103,
+						["qg"] = 108571,	-- Altruis the Sufferer
+					}),
+					q(42665, {	-- Into Our Ranks (Kayn)
+						["sourceQuests"] = { 42921 },	-- Confrontation at the Black Temple (Kayn)
+						["coord"] = { 58.5, 56.4, 720 },
+						["lvl"] = 103,
+						["qg"] = 108572,	-- Kayn Sunfury
+					}),
+					q(42522, {	-- Leader of the Illidari
+						["sourceQuests"] = { 42510 },
+						["coord"] = { 57.7, 51.7, 721 },
+						["lvl"] = 103,
+						["qg"] = 107724,	-- Kayn Sunfury
 					}),
 					q(42681, {	-- Loramus, Is That You?
 						["sourceQuests"] = { 42679 },	-- Broken Warriors
@@ -123,11 +189,32 @@ _.ExpansionFeatures =
 						["lvl"] = 101,
 						["qg"] = 103025,	-- Battlelord Gaardoun
 					}),
+					q(42802, {	-- Securing Mardum
+						["sourceQuests"] = {
+							42673,	-- Champion: Kor'vas Bloodthorn
+							42664,	-- Champion: Shade of Akama
+						},
+						["coord"] = { 59.5, 50.6, 720 },
+						["lvl"] = 103,
+						["qg"] = 98632,	-- Matron Mother Malevolence
+					}),
 					q(41062, {	-- Spoils of Victory
 						["sourceQuests"] = { 41037 },	-- Unbridled Power
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 58.6, 58.9, 720 },
 						["qg"] = 95240,	-- Kayn Sunfury
+					}),
+					q(42593, {	-- The Arcane Way
+						["sourceQuests"] = { 42522 },	-- Leader of the Illidari
+						["coord"] = { 59.6, 50.3, 720 },
+						["lvl"] = 103,
+						["qg"] = 98632,	-- Matron Mother Malevolence
+					}),
+					q(37447, {	-- The Blood of Demons
+						["sourceQuests"] = { 42682 },	-- Additional Accoutrements
+						["coord"] = { 59.1, 58.8, 720 },
+						["lvl"] = 103,
+						["qg"] = 103761,	-- Kor'vas Bloodthorn
 					}),
 					q(41066, {	-- The Hunter's Gaze
 						["sourceQuests"] = { 41062 },	-- Spoils of Victory
@@ -165,6 +252,27 @@ _.ExpansionFeatures =
 						["coord"] = { 57.7, 68.4, 720 },
 						["qg"] = 95240,	-- Kayn Sunfury
 					}),
+					q(42131, {	-- Unexpected Visitors
+						["sourceQuests"] = {
+							42673,	-- Champion: Kor'vas Bloodthorn
+							42664,	-- Champion: Shade of Akama
+						},
+						["coord"] = { 59.5, 50.6, 720 },
+						["lvl"] = 103,
+						["qg"] = 98632,	-- Matron Mother Malevolence
+						["g"] = {
+							crit(3, {	-- Complete the first order campaign effort.
+								["achievementID"] = 10461,	-- Fighting with Style: Classic
+							}),
+						},
+					}),
+					q(42731, {	-- Working With the Wardens
+					--	didn't require "Securing Mardum" even though that quest was given at the same time as the SQ.
+						["sourceQuests"] = { 42131 },	-- Unexpected Visitors
+						["coord"] = { 58.5, 51.6, 720 },
+						["lvl"] = 103,
+						["qg"] = 108782,	-- Belath Dawnblade
+					}),
 
 
 
@@ -179,7 +287,6 @@ _.ExpansionFeatures =
 					q(45993),	-- An Urgent Warning
 					q(41803),	-- Asking a Favor
 					q(40247),	-- Asking a Favor
-					q(42801),	-- Back in Black
 					q(44223),	-- Champion Armaments
 					q(42653, {	-- Champion: Akama
 						["qg"] = 108239,	-- Akama
@@ -208,13 +315,6 @@ _.ExpansionFeatures =
 							follower(807),	-- Champion: Jace Darkweaver
 						},
 					}),
-					q(42673, {	-- Champion: Kor'vas Bloodthorn
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
-						["sourceQuests"] = { 42665 },	-- Into Our Ranks [This quest activates Champion: Kor'vas Bloodthorn despite not being finished]
-						["g"] = {
-							follower(721),	-- Champion: Kor'vas Bloodthorn
-						},
-					}),
 					q(45391, {	-- Champion: Lady S'theno
 						["qg"] = 117481,	-- Lady S'theno
 						["sourceQuests"] = { 46266 },	-- Return of the Slayer
@@ -229,15 +329,6 @@ _.ExpansionFeatures =
 							follower(720),	-- Champion: Matron Mother Malevolence
 						},
 					}),
-					q(42664, {	-- Champion: Shade of Akama
-						["qg"] = 108246,	-- Shade of Akama
-						["sourceQuests"] = { 42665 },	-- Into Our Ranks [This quest activates Champion: Shade of Akama despite not being finished]
-						["g"] = {
-							follower(719),	-- Champion: Shade of Akama
-						},
-					}),
-					q(42634),	-- Confrontation at the Black Temple
-					q(42921),	-- Confrontation at the Black Temple
 					q(44275),	-- Court of Stars
 					q(41064),	-- Cursed Forge of the Nathrezim
 					q(44273),	-- Darkheart Thicket
@@ -256,24 +347,19 @@ _.ExpansionFeatures =
 					q(46152),	-- Furthering Knowledge
 					q(42808),	-- Green Adepts
 					q(43186),	-- I Am the Slayer!
-					q(42510),	-- Immortal Soul
 					q(44383, {	-- In Pursuit of Power
 						["lvl"] = 102,
 					}),
 					q(44379),	-- In Pursuit of Power
-					q(42665),	-- Into Our Ranks
-					q(39741),	-- Into Our Ranks
 					q(45994),	-- Investigate the Broken Shore
 					q(42754),	-- Jump-Capable
 					q(42132),	-- Last, But Not Least
-					q(42522),	-- Leader of the Illidari
 					q(46333),	-- Livin' on the Ledge
 					q(40819),	-- Making Arrangements
 					q(41120),	-- Making Arrangements
 					q(42735),	-- Malace in Vrykul Land
 					q(44266),	-- Maw of Souls
 					q(44267),	-- Maw of Souls
-					q(42594),	-- Move Like No Other
 					q(43554),	-- Neltharion's Lair
 					q(44264),	-- Neltharion's Lair
 					q(44265),	-- Neltharion's Lair
@@ -296,15 +382,9 @@ _.ExpansionFeatures =
 						["qg"] = 103025,	-- Battlelord Gaardoun
 					}),
 					q(45330),	-- Scouting Party
-					q(42802),	-- Securing Mardum
 					q(41070),	-- Spoils of Victory
 					q(45301),	-- Taking Charge
-					q(42593),	-- The Arcane Way
 					q(44263),	-- The Arcway
-					q(37447, {	-- The Blood of Demons
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
-						["sourceQuests"] = { 42682 },	-- Additional Accoutrements
-					}),
 					q(42775),	-- The Crux of the Plan							
 					q(39247),	-- The Hunt
 					q(41119),	-- The Hunt
@@ -336,7 +416,6 @@ _.ExpansionFeatures =
 					q(44058),	-- Volpin the Elusive
 					q(45385),	-- We Must be Prepared!
 					q(45179),	-- Win the Crowd
-					q(42731),	-- Working With the Wardens
 					q(44213),	-- You Will Be Prepared!										
 					q(46334, {	-- To Fel and Back
 						["lvl"] = 110,

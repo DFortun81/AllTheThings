@@ -921,7 +921,8 @@ _.Zones =
 				}),
 				q(42594,  {	-- Move Like No Other
 					["sourceQuests"] = { 42593 },	-- The Arcane Way
-					["classes"] = { 12 },
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 25.7, 51.5, 627 },
 					["qg"] = 107968,	-- Archmage Lan'dalock
 				}),
 				q(44116,  {	-- Mystery at Citrine Bay
