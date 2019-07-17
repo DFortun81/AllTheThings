@@ -186,7 +186,7 @@ _.Zones =
 				["questID"] = 56270,
 				["coord"] = { 49.2, 88.8, 1355 },
 				["isDaily"] = true,
-				["description"] = "Inside a hidden cave beneath the waterfall.",
+				["description"] = "Inside a hidden underwater cave beneath the waterfall.",
 				["g"] = {
 					crit(8, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,

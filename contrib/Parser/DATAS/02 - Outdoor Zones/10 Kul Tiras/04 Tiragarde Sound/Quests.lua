@@ -6,10 +6,23 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
 			n(-17, {	-- Quests
-				q(50542, {	-- An Explosive Opportunity
-					["coord"] = { 66.6, 49.9, 895 },
+		--	!! LEATHER/MAIL REWARDS NEEDED FOR QUEST 49404, "FAIRWIND'S 'FRIENDS'" !! — leather needs to be confirmed and mail is missing completely
+				q(49869, {	-- A Desperate Defense
+					["sourceQuests"] = { 52431 },	-- No-Landing Zone
+					["coord"] = { 60.9, 59.1, 895 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 129858,	-- Wulfred Fizzbracket
+					["qg"] = 141078,	-- Vigil Hill Refugee
+				}),
+		
+		
+				q(49290, {	-- Aged to Perfection
+					["sourceQuests"] = {
+						48773,	-- Papers, Please
+						48558,	-- The Irontide Crew
+					},
+					["coord"] = { 79.7, 81.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128702,	-- Roko <Wandering Merchant>
 				}),
 				
 				
@@ -29,15 +42,72 @@ _.Zones =
 				}),
 				
 				
+				q(48540, {	-- Aiding the Wharf
+					["sourceQuests"] = { 48347 },	-- Anglepoint Wharf
+					["coord"] = { 42.3, 29.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125922,	-- Brother Therold
+				}),
+				
+				
+				q(49737, {	-- Air Raid
+					["sourceQuests"] = { 49869 },	-- A Desperate Defense
+					["coord"] = { 56.7, 61.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131048,	-- Lieutenant Tarenfold
+				}),
+				
+				
 				q(51151, {	-- A Letter to the League
+					["isBreadcrumb"] = true,
 					["coord"] = { 65.8, 50.1, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 129956,	-- Dockmaster Tyndall
 				}),
 				
 				
+				q(49234, {	-- A Marine Out of Water
+					["sourceQuests"] = { 50700 },	-- Drust in Time
+					["coord"] = { 62.9, 29.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130101,	-- Recruit Brutis
+					["g"] = {
+						i(158255),	-- Sea Raider's Crushers
+						i(158256),	-- Navigator's Mitts
+						i(158257),	-- Outrigger Strikers
+						i(158254),	-- Freebooter Grips
+						i(158251),	-- Navigator's Woolies
+						i(158253),	-- Freebooter Pantaloons
+						i(158252),	-- Outrigger Pants
+						i(158250),	-- Sea Raider's Legguards
+					},
+				}),
+				
+				
+				q(48080, {	-- An Element of Danger
+					["sourceQuests"] = { 48070 },	-- The Norwington Festival
+					["coord"] = { 55.4, 24.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125398,	-- Harold Beckett
+				}),
+				
+				
+				q(50542, {	-- An Explosive Opportunity
+					["coord"] = { 66.6, 49.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129858,	-- Wulfred Fizzbracket
+				}),
+				
+				
+				q(48347, {	-- Anglepoint Wharf
+					["isBreadcrumb"] = true,
+				--	["objectID"] = 281718,	-- HELP WANTED
+					["coord"] = { 53.0, 28.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(50349, {	-- An Overrun Mine
-					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 					["isBreadcrumb"] = true,
 					["coord"] = { 75.6, 50.6, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -52,6 +122,47 @@ _.Zones =
 				}),
 				
 				
+				q(48421, { 	-- Blood in the Tides
+					["sourceQuests"] = { 47489 }, 	-- Stow and Go
+					["coord"] = { 85.61, 76.61, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125342,	-- Captain Keelson
+					["g"] = {
+						i(155024),	-- Navigator's Sandals
+						i(155026),	-- Freebooter Boots
+						i(155025),	-- Outrigger Boots
+						i(155023),	-- Sea Raider's Sabatons
+						i(155086),	-- Keelson's Bloody Drape
+					},
+				}),
+				
+				
+				q(48616, {	-- Bolas and Birds
+					["sourceQuests"] = { 48070 },	-- The Norwington Festival
+					["coord"] = { 55.4, 24.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125398,	-- Harold Beckett
+				}),
+				
+				
+				q(49225, {	-- Chasing the Leader
+					["sourceQuests"] = {
+						51151,	-- A Letter to the League
+						50700,	-- Drust in Time
+					},
+					["coord"] = { 62.7, 29.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128381,	-- Drogrin Alewhisker
+				}),
+				
+				
+				q(48008, {	-- Dangerous Cargo
+					["coord"] = { 37.6, 29.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125962,	-- Manager Yerold
+				}),
+				
+				
 				q(51226, {	-- Death from Two Sides
 					["sourceQuests"] = { 49715 },	-- Trouble at Greystone Keep
 					["coord"] = { 80.5, 42.0, 895 },
@@ -60,11 +171,105 @@ _.Zones =
 				}),
 				
 				
-				q(48516, {	-- Toxic Community
-					["sourceQuests"] = { 48505 },	-- Lovesick and Lost
-					["coord"] = { 82.7, 72.8, 895 },
+				q(49239, {	-- Dress to Impress
+					["sourceQuests"] = {
+						48773,	-- Papers, Please
+						48558,	-- The Irontide Crew
+					},
+					["coord"] = { 80.3, 81.4, 895 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 126511,	-- Skinner MacGuff
+					["qg"] = 126158,	-- Flynn Fairwind
+				}),
+				
+				
+				q(50700, {	-- Drust in Time
+					["isBreadcrumb"] = true,
+					["coord"] = { 66.3, 24.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 139089,	-- Hatherford Guard
+				}),
+				
+				
+				q(49299, {	-- Enemy Within
+					["coord"] = { 37.6, 29.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125962,	-- Manager Yerold
+					["g"] = {
+						i(160083),	-- Navigator's Footwraps
+						i(160084),	-- Freebooter Shoes
+						i(160085),	-- Outrigger Waders
+						i(160086),	-- Sea Raider's Boots
+						i(160093),	-- Navigator's Waistwrap
+						i(160094),	-- Freebooter Cord
+						i(160095),	-- Outrigger Waistwrap
+						i(160096),	-- Sea Raider's Cinch
+					},
+				}),
+				
+				
+				q(49404, {	-- Fairwind's "Friends"
+					["sourceQuests"] = { 49399 },	-- The Big Job
+					["coord"] = { 77.3, 83.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128927,	-- Venrik
+					["g"] = {
+						i(160859),	-- Freebooter Hood — NEEDS CONFIRMATION
+						i(155040),	-- Freebooter Shoulderpads — NEEDS CONFIRMATION
+						i(160858),	-- Navigator's Crown
+						i(155042),	-- Navigator's Mantle
+						i(160861),	-- Sea Raider's Helmet
+						i(155041),	-- Sea Raider's Spaulders
+					},
+				}),
+				
+				
+				q(52750, {	-- Farmers Who Fight
+					["sourceQuests"] = { 49869 },	-- A Desperate Defense
+					["coord"] = { 56.7, 61.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131048,	-- Lieutenant Tarenfold
+				}),
+				
+				
+				q(49402, {	-- Flew the Coop
+					["sourceQuests"] = {
+						49398,	-- Raise a Glass!
+						49401,	-- Rodrigo's Roost
+					},
+					["coord"] = { 77.0, 82.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129098,	-- Rodrigo <Flight Master>
+				}),
+				
+				
+				q(48539, {	-- Freehold
+					["sourceQuests"] = { 48505 },	-- Lovesick and Lost
+					["coord"] = { 80.2, 75.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126158,	-- Flynn Fairwind
+				}),
+				
+				
+				q(49453, {	-- Give a Dam
+					["sourceQuests"] = { 50699 },	-- Worker's Rights
+					["coord"] = { 66.6, 17.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129670,	-- Lyssa Treewarden
+				}),
+				
+				
+				q(49181, {	-- Glimmering Locket
+					["sourceQuests"] = { 49178 },	-- My Favorite Things (must be in log)
+					["objectID"] = 277373,	-- Glimmering Seaweed
+					["coord"] = { 88.0, 74.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(49233, {	-- I'm a Druid, Not a Priest
+					["coord"] = { 50.8, 69.4, 1171 },	-- Gol Thovas
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128349,	-- Hilde Firebreaker
 				}),
 				
 				
@@ -75,12 +280,35 @@ _.Zones =
 				}),
 				
 				
+				q(49452, {	-- Inventory Deficit
+					["sourceQuests"] = { 50699 },	-- Worker's Rights
+					["coord"] = { 68.9, 20.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129613,	-- Maynard Algerson
+				}),
+				
+				
+				q(47487, {	-- Labor Dispute
+					["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+					["coord"] = { 76.7, 43.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 122671,	-- Cagney
+				}),
+				
+				
 				q(51149, {	-- Left at the Port
-					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 					["isBreadcrumb"] = true,
 					["coord"] = { 75.0, 49.7, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 136576,	-- Dockmaster Leighton
+				}),
+				
+				
+				q(48606, {	-- Loaded for Bear
+					["sourceQuests"] = { 48539 },	-- Freehold
+				--	["objectID"] = 276488,	-- Azerite Cannonball
+					["coord"] = { 78.6, 77.8, 895 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				
 				
@@ -92,10 +320,63 @@ _.Zones =
 				}),
 				
 				
+				q(48505, { 	-- Lovesick and Lost
+					["sourceQuests"] = { 48419 }, 	-- Lured and Allured
+					["coord"] = { 84.8, 76.0, 895 },
+					["qg"] = 126158,	-- Flynn Fairwind
+					["g"] = {
+						crit(7, {	-- Castaways and Cutouts
+							["achievementID"] = 12473,	-- A Sound Plan
+						}),
+					},
+				}),
+				
+				
+				q(48898, {	-- Lucky Charm
+					["coord"] = { 51.2, 25.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127586,	-- Joma
+				}),
+				
+				
+				q(48419, { 	-- Lured and Allured
+					["sourceQuests"] = { 47489 }, 	-- Stow and Go
+					["coord"] = { 85.7, 83.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128377,	-- Beachcomber Bob
+				}),
+				
+				
 				q(49897, {	-- Making Mysteries
 					["coord"] = { 67.5, 55.7, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 129858,	-- Wulferd Fizzbracket
+				}),
+				
+				
+				q(49465, {	-- Maximizing Resources
+					["sourceQuests"] = { 50699 },	-- Worker's Rights
+					["coord"] = { 68.9, 20.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129613,	-- Maynard Algerson
+				}),
+				
+				
+				q(50573, {	-- Message from the Management
+				--	["objectID"] = 281647,	-- Posted Notice
+					["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+					["coord"] = { 78.9, 45.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(155029),	-- Navigator's Gloves
+						i(155036),	-- Navigator's Leggings
+						i(155027),	-- Freebooter Gloves
+						i(155038),	-- Freebooter Breeches
+						i(155030),	-- Outrigger Gloves
+						i(155037),	-- Outrigger Legguards
+						i(155028),	-- Sea Raider's Gauntlets
+						i(155035),	-- Sea Raider's Greaves
+					},
 				}),
 				
 				
@@ -107,11 +388,61 @@ _.Zones =
 				}),
 				
 				
+				q(49409, {	-- Missing Treasure!
+					["sourceQuests"] = {
+						49398,	-- Raise a Glass!
+						49401,	-- Rodrigo's Roost
+					},
+				--	["objectID"] = 278313,	-- Sternly Worded Letter
+					["coord"] = { 77.2, 84.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(161083, {	-- Satchel of Plundered Jewels
+							["description"] = "Contains some gems as well.",
+							["g"] = {
+								i(160261),	-- Soul of the Sea [Ring]
+							},
+						}),
+					},
+				}),
+				
+				
+				q(48902, {	-- Monstrous Energy
+					["coord"] = { 51.2, 25.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127586,	-- Joma
+				}),
+				
+				
 				q(49178, { 	-- My Favorite Things
 					["sourceQuests"] = { 49218 },	-- The Castaways
 					["coord"] = { 85.4, 80.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 128229,	-- Stabby Jane
+				}),
+				
+				
+				q(52431, {	-- No-Landing Zone
+					["sourceQuests"] = { 49405 },	-- Defenders of Daelin's Gate
+					["coord"] = { 60.9, 59.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 141078,	-- Vigil Hill Refugee
+				}),
+				
+				
+				q(52787, {	-- Numbing the Pain
+					["sourceQuests"] = { 49869 },	-- A Desperate Defense
+					["coord"] = { 56.4, 61.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 142393,	-- Taelia
+				}),
+				
+				
+				q(48773, {	-- Papers, Please
+					["sourceQuests"] = { 48539 },	-- Freehold
+					["coord"] = { 80.2, 75.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126158,	-- Flynn Fairwind
 				}),
 				
 				
@@ -139,10 +470,96 @@ _.Zones =
 				}),
 				
 				
+				q(49398, {	-- Raise a Glass!
+					["sourceQuests"] = { 49239 },	-- Dress to Impress
+					["coord"] = { 77.3, 83.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128927,	-- Venrik
+				}),
+				
+				
+				q(49400, {	-- Recruiting Efforts
+					["sourceQuests"] = {
+						49398,	-- Raise a Glass!
+						49401,	-- Rodrigo's Roost
+					},
+					["coord"] = { 77.3, 83.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128927,	-- Venrik
+						["g"] = {
+							i(155083),	-- Crow's Nest Spotlight
+							i(155081),	-- Great Sea Buckler
+							i(158285),	-- Navigator's Belt
+							i(158287),	-- Freebooter Buckle
+							i(158286),	-- Outrigger Cinch
+							i(158284),	-- Sea Raider's Greatbelt
+						},
+				}),
+				
+				
 				q(51430, {	-- Reverse Tinkering
 					["coord"] = { 65.0, 60.6, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 137694,	-- Parin Tinklocket
+				}),
+				
+				
+				q(48776, {	-- Rig Robbing
+					["sourceQuests"] = { 48539 },	-- Freehold
+					["coord"] = { 79.2, 76.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127537,	-- Geraldine
+				}),
+				
+				
+				q(49401, {	-- Rodrigo's Roost
+					["sourceQuests"] = { 49239 },	-- Dress to Impress
+					["coord"] = { 77.3, 83.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126158,	-- Flynn Fairwind
+				}),
+				
+				
+				q(48899, {	-- Safety First
+					["coord"] = { 51.2, 25.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127492,	-- Majo
+				}),
+				
+				
+				q(49232, {	-- Salvaging a Disaster
+					["coord"] = { 50.8, 69.4, 1171 },	-- Gol Thovas
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128353,	-- Pendi Cranklefuse
+				}),
+				
+				
+				q(53041, { 	-- Sampling the Goods
+					["sourceQuests"] =  { 50531 },	-- Under Their Noses
+					["coord"] = { 75.85, 49.08, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 121239,	-- Flynn Fairwind
+				}),
+				
+				
+				q(50026, {	-- Save Our Shipmates
+					["coord"] = { 49.4, 31.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131627,	-- Thomas Pinker
+				}),
+				
+				
+				q(48965, {	-- Settle the Score
+					["coord"] = { 58.2, 25.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127803,	-- Caleb Batharen
+				}),
+				
+				
+				q(52258, {	-- She Sells Seashells
+					["coord"] = { 60.9, 30.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 140752,	-- Jenny Swiftbrook
 				}),
 				
 				
@@ -151,6 +568,53 @@ _.Zones =
 					["coord"] = { 85.4, 80.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 128229,	-- Stabby Jane
+				}),
+				
+				
+				q(47488, {	-- Small Haulers
+					["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+					["coord"] = { 76.7, 43.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 122672,	-- Olive
+				}),
+				
+				
+				q(48557, {	-- Sowing Saplings
+					["sourceQuests"] = { 50699 },	-- Worker's Rights
+					["coord"] = { 66.6, 17.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129670,	-- Lyssa Treewarden
+				}),
+				
+				
+				q(48778, {	-- Stone Soup
+				--	["objectID"] = 276837,	-- Recipe Rock
+					["coord"] = { 56.1, 17.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(47489, { 	-- Stow and Go
+					["sourceQuests"] = { 53041 }, 	-- Sampling the Goods
+					["coord"] = { 75.8, 49.0, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 121239,	-- Flynn Fairwind
+				}),
+				
+				
+				q(47486, {	-- Suspicious Shipments
+					["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
+					["coord"] = { 76.7, 43.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 122671,	-- Cagney
+				}),
+				
+				
+				q(48774, {	-- The Beatings Will Continue
+					["sourceQuests"] = { 48539 },	-- Freehold
+					["coord"] = { 79.2, 76.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127537,	-- Geraldine
 				}),
 				
 				
@@ -165,11 +629,30 @@ _.Zones =
 				}),
 				
 				
+				q(49399, {	-- The Big Job
+					["sourceQuests"] = {
+						49398,	-- Raise a Glass!
+						49401,	-- Rodrigo's Roost
+					},
+					["coord"] = { 77.3, 83.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126158,	-- Flynn Fairwind
+				}),
+				
+				
 				q(49218, {	-- The Castaways
 					["isBreadcrumb"] = true,
 					["coord"] = { 85.5, 83.5, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 128377,	-- Beachcomber Bob
+				}),
+				
+				
+				q(51199, {	-- The Glory of the Hunt
+					["isBreadcrumb"] = true,	-- you get credit for this when turning in The Norwington Festival
+					["coord"] = { 51.6, 27.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125042,	-- Gora Layton
 				}),
 				
 				
@@ -194,10 +677,96 @@ _.Zones =
 				}),
 				
 				
+				q(48558, {	-- The Irontide Crew
+					["sourceQuests"] = { 48539 },	-- Freehold
+					["coord"] = { 80.2, 75.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126158,	-- Flynn Fairwind
+						["g"] = {
+							i(155077),	-- Ashvane Captain's Cutlass
+							i(155071),	-- Salty Dog's Harpoon
+							i(155080),	-- Seafury Tamer
+							i(155066),	-- Overseer's Authority
+							i(155058),	-- Irontide Gambler's Dagger
+							i(155063),	-- Trickshot Speargun
+							i(155073),	-- Waverider Warstaff
+							i(155052),	-- Port-Ruffian's Cleaver
+						},
+				}),
+				
+				
 				q(48070, {	-- The Norwington Festival
 					["isBreadcrumb"] = true,
 				--	["objectID"] = 281230,	-- Formal Invitation
-					["coord"] = { 66.0, 50.4, 895 },
+					["coord"] = { 67.1, 24.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(49393, {	-- The Roughnecks
+				--	["objectID"] = 278252,	-- Job Flyer
+					["coord"] = { 42.4, 27.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(49229, {	-- The Ruins Fought Back
+					["sourceQuests"] = { 50700 },	-- Drust in Time
+					["coord"] = { 62.7, 29.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128381,	-- Drogrin Alewhisker
+				}),
+				
+				
+				q(48077, {	-- The Stoat Hunt
+					["sourceQuests"] = { 48070 },	-- The Norwington Festival
+					["coord"] = { 55.4, 24.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125309,	-- Abbey Watkins
+					["g"] = {
+						i(158247),	-- Navigator's Pants
+						i(158249),	-- Freebooter Pants
+						i(158248),	-- Outrigger Links
+						i(158246),	-- Sea Raider's Chausses
+						i(158276),	-- Navigator's Bindings
+						i(158279),	-- Freebooter Bindings
+						i(158278),	-- Outrigger Bindings
+						i(158277),	-- Sea Raider's Wristguards
+					},
+				}),
+				
+				
+				q(49451, {	-- Time Off Requests
+					["sourceQuests"] = { 50699 },	-- Worker's Rights
+					["coord"] = { 68.8, 19.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129669,	-- Benjamin Algerson
+				}),
+				
+				
+				q(48516, {	-- Toxic Community
+					["coord"] = { 82.7, 72.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126511,	-- Skinner MacGuff
+				}),
+				
+				
+				q(50531, {	-- Under Their Noses
+					["sourceQuests"] = {
+						47487,	-- Labor Dispute
+						50573,	-- Message from the Management
+						47488,	-- Small Haulers
+						47486,	-- Suspicious Shipments
+					},
+					["coord"] = { 78.0, 47.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 121239,	-- Flynn Fairwind
+				}),
+				
+				
+				q(51358, {	-- WANTED: Gryphon 'Nappers
+					["objectID"] = 288641,	-- WANTED: Gryphon 'Nappers
+					["coord"] = { 66.8, 24.3, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
@@ -218,8 +787,34 @@ _.Zones =
 					},
 				}),
 			
-			
-			
+				
+				q(51384, {	-- WANTED: Quartermaster Ssylis
+				--	["objectID"] = 289361,	-- WANTED: Quartermaster Ssylis
+					["coord"] = { 42.2, 27.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51367, {	-- WANTED: Raging Earthguard
+				--	["objectID"] = 289310,	-- WANTED: Raging Earthguard
+					["coord"] = { 53.0, 28.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51368, {	-- WANTED: The Hornet
+				--	["objectID"] = 289313,	-- WANTED: The Hornet
+					["coord"] = { 42.2, 22.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(50699, {	-- Worker's Rights
+					["isBreadcrumb"] = true,
+					["coord"] = { 67.4, 24.0, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 134776,	-- Davey Brindle
+				}),
 			
 			
 			--[[
@@ -233,190 +828,18 @@ _.Zones =
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-				crit(7, {	-- Castaways and Cutouts
-					["achievementID"] = 12473,	-- A Sound Plan
-					["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
-					["description"] = "This chain ends with the final quest being |cFFFFD700\"Lovesick and Lost.\"|r",
-					["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
-					["g"] = {
-						q(48505, { 	-- Lovesick and Lost
-							["qg"] = 126158,	-- Flynn Fairwind
-							["sourceQuest"] = 48419, 	-- Lured and Allured
-							["coords"] = {
-								{ 84.81, 76.01, 895 },
-								{ 90.01, 74.41, 895 },
-							},
-							["g"] = {
-								crit(7, {	-- Castaways and Cutouts
-									["achievementID"] = 12473,	-- A Sound Plan
-								}),
-							},
-						}),
-						q(48419, { 	-- Lured and Allured
-							["qg"] = 128377,	-- Beachcomber Bob
-							["sourceQuest"] = 47489, 	-- Stow and Go
-							["coord"] = { 85.5, 83.5, 895 },
-						}),
-						q(53041, { 	-- Sampling the Goods
-							["qg"] = 121239,	-- Flynn Fairwind
-							["coord"] = { 75.85, 49.08, 895 },
-							["sourceQuest"] = 50531,	-- Under Their Noses
-						}),
-						q(47489, { 	-- Stow and Go
-							["qg"] = 121239,	-- Flynn Fairwind
-							["sourceQuest"] = 53041, 	-- Sampling the Goods
-						}),
-					},
-				}),
-				crit(1, {	-- The Ashvane Trading Company
-					["achievementID"] = 12473,	-- A Sound Plan
-					["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
-					["description"] = "This chain starts in |cFFFFD700Boralus|r with the final quest being |cFFFFD700\"Stow and Go.\"|r",
-					["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
-					["g"] = {
-						q(47487, {	-- Labor Dispute
-							["qg"] = 122671,	-- Cagney
-							["sourceQuest"] = 47485,	-- The Ashvane Trading Company
-							["coord"] = { 76.88, 43.49, 895 },
-						}),
-						q(50573, {	-- Message from the Management
-							["objectID"] = 281647,	-- Posted Notice
-							["sourceQuest"] = 47485,	-- The Ashvane Trading Company
-							["coords"] = {
-								{ 79.01, 45.81, 895 },
-								{ 79.51, 48.91, 895 },
-								{ 80.11, 46.91, 895 },
-								{ 80.51, 49.41, 895 },
-							},
-							["g"] = {
-								i(155029),	-- Navigator's Gloves
-								i(155036),	-- Navigator's Leggings
-								i(155027),	-- Freebooter Gloves
-								i(155038),	-- Freebooter Breeches
-								i(155030),	-- Outrigger Gloves
-								i(155037),	-- Outrigger Legguards
-								i(155028),	-- Sea Raider's Gauntlets
-								i(155035),	-- Sea Raider's Greaves
-							},
-						}),
-						q(47488, {	-- Small Haulers
-							["qg"] = 122672,	-- Olive
-							["coord"] = { 76.82, 43.49, 895 },
-							["sourceQuest"] = 47485,	-- The Ashvane Trading Company
-						}),
-						q(47486, {	-- Suspicious Shipments
-							["qg"] = 122671,	-- Cagney
-							["coord"] = { 76.88, 43.49, 895 },
-							["sourceQuest"] = 47485,	-- The Ashvane Trading Company
-						}),
-						q(50531, {	-- Under Their Noses
-							["qg"] = 121239,	-- Flynn Fairwind
-							["coord"] = { 78.04, 47.94, 895 },
-							["sourceQuests"] = {
-								47487,	-- Labor Dispute
-								50573,	-- Message from the Management
-								47488,	-- Small Haulers
-								47486,	-- Suspicious Shipments
-							},
-							["g"] = {
-								crit(1, {	-- A Sound Plan (The Ashvane Trading Company)
-									["achievementID"] = 12473,	-- A Sound Plan
-								}),
-							},
-						}),
-					},
-				}),
-				n(-90005, {	-- Castaway Point
-					["icon"] = "Interface\\Icons\\inv_tiragardesound",
-					--["races"] = ALLIANCE_ONLY,	-- Can't do this because Horde quest here too.  Need to mark below
-					["g"] = {
-						q(48421, { 	-- Blood in the Tides
-							["qg"] = 125342,	-- Captain Keelson
-							["sourceQuest"] = 47489, 	-- Stow and Go
-							["coord"] = { 85.61, 76.61, 895 },
-							["races"] = ALLIANCE_ONLY,	-- This hides it so only Alliance can see it without marking Quest Rewards as such
-							["g"] = {
-								i(155024),	-- Navigator's Sandals
-								i(155026),	-- Freebooter Boots
-								i(155025),	-- Outrigger Boots
-								i(155023),	-- Sea Raider's Sabatons
-								i(155086),	-- Keelson's Bloody Drape
-							},
-						}),
-						q(49181, {	-- Glimmering Locket
-							["objectID"] = 277373,	-- Glimmering Seaweed [Object]
-							["sourceQuest"] = 49178,	-- My Favorite Things
-							["coord"] = { 85.48, 80.78, 895 },
-						}),
-					},
-				}),
-			}),
-			n(-17, {	-- Quests [Alliance]
+--[[			n(-17, {	-- Quests [Alliance]
 				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
-					--[[
-					a(ach(12473, {	-- A Sound Plan
-						crit(1),		-- The Ashvane Trading Company
-						crit(2),		-- Freehold
-						crit(3),		-- Defenders of Daelin's Gate
-						crit(4),		-- Enemies Within
-						crit(5),		-- The Shadow Over Anglepoint
-						crit(6),		-- The Norwington Estate
-						crit(7),		-- Castaways and Cutouts
-					})),
-					--]]
 					--------------------------------------
 					-- Hatherford
 					--------------------------------------
-					a(q(49234, {	-- A Marine Out of Water
-						["qg"] = 130101,	-- Recruit Brutis
-						["sourceQuests"] = { 50700 },	-- Drust in Time
-						["g"] = {
-							i(158255),	-- Sea Raider's Crushers
-							i(158256),	-- Navigator's Mitts
-							i(158257),	-- Outrigger Strikers
-							i(158254),	-- Freebooter Grips
-							i(158251),	-- Navigator's Woolies
-							i(158253),	-- Freebooter Pantaloons
-							i(158252),	-- Outrigger Pants
-							i(158250),	-- Sea Raider's Legguards
-						},
-					})),
-					a(q(49225, {	-- Chasing the Leader
-						["qg"] = 128381,	-- Drogrin Alewhisker
-						["sourceQuests"] = { 50700 },	-- Drust in Time
-					})),
-					a(q(50700, {	-- Drust in Time
-						["qg"] = 139089,	-- Hatherford Guard
-						-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
-					})),
 					a(q(48369, {	-- Emergent Strategy
 						["qg"] = 129613,	-- Maynard Algerson
 						["sourceQuests"] = { 49452, 49451, 49465  },	-- Inventory Deficit / Maximizing Resources / Time Off Requests
 					})),
-					a(q(49453, {	-- Give a Dam
-						["qg"] = 129670,	-- Lyssa Treewarden
-						["sourceQuests"] = { 50699 },	-- Worker's Rights
-					})),
 					a(q(49450, {	-- Incident Reports
 						["qg"] = 129669,	-- Benjamin Algerson
 						["sourceQuests"] = { 48369  },	-- Emergent Strategy
-					})),
-					a(q(49452, {	-- Inventory Deficit
-						["qg"] = 129613,	-- Maynard Algerson
-						["sourceQuests"] = { 50699 },	-- Worker's Rights
-					})),
-					a(q(49465, {	-- Maximizing Resources
-						["qg"] = 129613,	-- Maynard Algerson
-						["sourceQuests"] = { 50699 },	-- Worker's Rights
 					})),
 					a(q(49454, {	-- Pest Prevention
 						["qg"] = 129669,	-- Benjamin Algerson
@@ -426,26 +849,9 @@ _.Zones =
 						["qg"] = 129669,	-- Benjamin Algerson
 						["sourceQuests"] = { 48369  },	-- Emergent Strategy
 					})),
-					a(q(48557, {	-- Sowing Saplings
-						["qg"] = 129670,	-- Lyssa Treewarden
-						["sourceQuests"] = { 50699 },	-- Worker's Rights
-					})),
-					a(q(49229, {	-- The Ruins Fought Back
-						["qg"] = 128381,	-- Drogrin Alewhisker
-						["sourceQuests"] = { 50700 },	-- Drust in Time
-					})),
 					a(q(50058, {	-- The Witch's Pet
 						["qg"] = 134325,	-- Terrence Foster
 						["sourceQuests"] = { 48369  },	-- Emergent Strategy
-					})),
-					a(q(49451, {	-- Time Off Requests
-						["qg"] = 129669,	-- Benjamin Algerson
-						["sourceQuests"] = { 50699 },	-- Worker's Rights
-					})),
-					a(o(288641, {	-- WANTED: Gryphon 'Nappers (sign)
-						q(51358, {	-- WANTED: Gryphon 'Nappers
-							-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
-						}),
 					})),
 					a(q(49467, {	-- Witch of the Woods
 						["qg"] = 129669,	-- Benjamin Algerson
@@ -453,10 +859,6 @@ _.Zones =
 						["g"] = {
 							i(158219),	-- Petula's Locket
 						},
-					})),
-					a(q(50699, {	-- Worker's Rights
-						["qg"] = 134776,	-- Davey Brindle
-						-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
 					})),
 
 					--------------------------------------
@@ -473,18 +875,6 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 49225 },	-- Chasing the Leader	NOTE: You need to do this quest or else it won't spawn
 							},
-							{	-- I'm a Druid, Not a Priest
-								["questID"] = 49233,	-- I'm a Druid, Not a Priest
-								["qg"] = 128349,	-- Hilde Firebreaker
-								-- ["sourceQuests"] = { 49225 },	-- Chasing the Leader	NOTE: You can get this quest with 0 quests done
-								["races"] = ALLIANCE_ONLY,
-							},
-							{	-- Salvaging a Disaster
-								["questID"] = 49232,	-- Salvaging a Disaster
-								["qg"] = 128353,	-- Pendi Cranklefuse
-								-- ["sourceQuests"] = { 50700 },	-- Drust in Time	NOTE: You can get this quest with 0 quests done
-								["races"] = ALLIANCE_ONLY,
-							},
 						},
 					},
 
@@ -492,124 +882,30 @@ _.Zones =
 					-- Freehold
 					--------------------------------------
 					-- crit(2),		-- Freehold
-					a(q(49522, {	-- A Bad Deal [Alliance Only]
+					a(q(49522, {	-- A Bad Deal
 						["qg"] = 128903,	-- Carentan
-						["sourceQuests"] = { 49522 },	-- Carentan's Payment [Alliance Only]
+						["sourceQuests"] = { 49522 },	-- Carentan's Payment
 					})),
-					a(q(49290, {	-- Aged to Perfection [Alliance Only]
-						["qg"] = 128702,	-- Roko <Wandering Merchant>
-						["sourceQuests"] = { 48773, 48558 },	-- Papers, Please / The Irontide Crew [Alliance Only]
-					})),
-					a(o(276488, {	-- Azerite Cannonball [Object]
-						q(48606, {	-- Loaded for Bear
-							["qg"] = 126927,	-- Ashvane Cannon
-							["sourceQuests"] = { 48539 },	-- Freehold [Alliance Only]
-						}),
-					})),
-					a(q(49522, {	-- Carentan's Payment [Alliance Only]
+					a(q(49522, {	-- Carentan's Payment
 						["qg"] = 128903,	-- Carentan
-						["sourceQuests"] = { 49407 },	-- Trixie Business [Alliance Only]
+						["sourceQuests"] = { 49407 },	-- Trixie Business
 					})),
-					q(49405, {	-- Defenders of Daelin's Gate [Alliance Only]
-						["sourceQuests"] = { 49404 },	-- Fairwind's "Friends" [Alliance Only]
-						["g"] = {
-							i(155040),	-- Freebooter Shoulderpads
-						},
-						["isBreadcrumb"] = true,
+					q(49405, {	-- Defenders of Daelin's Gate
+						["sourceQuests"] = { 49404 },	-- Fairwind's "Friends"
+						["coord"] = { 77.1, 82.9, 895 },
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 128927,	-- Taelia
-						["g"] = {
-							i(160859),	-- Freebooter Hood
-							i(155040),	-- Freebooter Shoulderpads
-						},
 					}),
-					a(q(49239, {	-- Dress to Impress [Alliance Only]
-						["qg"] = 126158,	-- Flynn Fairwind
-						["sourceQuests"] = { 48773, 48558 },	-- Papers, Please / The Irontide Crew [Alliance Only]
-					})),
-					a(q(49404, {	-- Fairwind's "Friends" [Alliance Only]
-						-- Gave credit for Freehold Criteria
-						["qg"] = 128927,	-- Venrik
-						["sourceQuests"] = { 49399 },	-- The Big Job [Alliance Only]
-						["g"] = {
-							i(160861),	-- Sea Raider's Helmet
-							i(155041),	-- Sea Raider's Spaulders
-						},
-					})),
-					a(q(49402, {	-- Flew the Coop [Alliance Only]
+					a(q(49403, {	-- Rodrigo's Revenge
 						["qg"] = 129098,	-- Rodrigo <Flight Master>
-						["sourceQuests"] = { 49401 },	-- Rodrigo's Roost [Alliance Only]
-					})),
-					a(q(48539, {	-- Freehold [Alliance Only]
-						["qg"] = 126158,	-- Flynn Fairwind
-						["sourceQuests"] = { 48505 },	-- Lovesick and Lost [Alliance Only]
-						["isBreadcrumb"] = true,
-					})),
-					a(o(278313, {	-- Sternly Worded Letter [Object]
-						a(q(49409, {	-- Missing Treasure! [Alliance Only]
-							["sourceQuests"] = { 49401 },	-- Rodrigo's Roost [Alliance Only]
-							["g"] = {
-								i(161083, {	-- Satchel of Plundered Jewels
-									["description"] = "Contains some gems as well.",
-									["g"] = {
-										i(160261),	-- Soul of the Sea [Ring]
-									},
-								}),
-							},
-						})),
-					})),
-					a(q(48773, {	-- Papers, Please [Alliance Only]
-						["qg"] = 126158,	-- Flynn Fairwind
-						["sourceQuests"] = { 48539 },	-- Freehold [Alliance Only]
-					})),
-					a(q(49398, {	-- Raise a Glass! [Alliance Only]
-						["qg"] = 128927,	-- Venrik
-						["sourceQuests"] = { 49239 },	-- Dress to Impress [Alliance Only]
-					})),
-					a(q(49400, {	-- Recruiting Efforts [Alliance Only]
-						["qg"] = 128927,	-- Venrik
-						["sourceQuests"] = { 49401 },	-- Rodrigo's Roost [Alliance Only]
-						["g"] = {
-							i(155083),	-- Crow's Nest Spotlight
-							i(155081),	-- Great Sea Buckler
-							i(158285),	-- Navigator's Belt
-							i(158287),	-- Freebooter Buckle
-							i(158286),	-- Outrigger Cinch
-							i(158284),	-- Sea Raider's Greatbelt
-						},
-					})),
-					a(q(49403, {	-- Rodrigo's Revenge [Alliance Only]
-						["qg"] = 129098,	-- Rodrigo <Flight Master>
-						["sourceQuests"] = { 49402 },	-- Flew the Coop [Alliance Only]
+						["sourceQuests"] = { 49402 },	-- Flew the Coop
 						["g"] = {
 							-- i(163036),	-- Polished Pet Charm [REMOVING THIS FOR NOW BECAUSE BUBBLE DOWN MAKES IT ALLIANCE ONLY.  BAD BUBBLEDOWN!!!!]
 						},
 					})),
-					a(q(49401, {	-- Rodrigo's Roost [Alliance Only]
-						["qg"] = 126158,	-- Flynn Fairwind
-						["sourceQuests"] = { 49239 },	-- Dress to Impress [Alliance Only]
-					})),
-					a(q(49399, {	-- The Big Job [Alliance Only]
-						["qg"] = 126158,	-- Flynn Fairwind
-						["sourceQuests"] = { 49401 },	-- Rodrigo's Roost [Alliance Only]
-					})),
-					a(q(48558, {	-- The Irontide Crew [Alliance Only]
-						["qg"] = 126158,	-- Flynn Fairwind
-						["sourceQuests"] = { 48539 },	-- Freehold [Alliance Only]
-						["g"] = {
-							i(155077),	-- Ashvane Captain's Cutlass
-							i(155071),	-- Salty Dog's Harpoon
-							i(155080),	-- Seafury Tamer
-							i(155066),	-- Overseer's Authority
-							i(155058),	-- Irontide Gambler's Dagger
-							i(155063),	-- Trickshot Speargun
-							i(155073),	-- Waverider Warstaff
-							i(155052),	-- Port-Ruffian's Cleaver
-						},
-					})),
-					a(q(49407, {	-- Trixie Business [Alliance Only]
+					a(q(49407, {	-- Trixie Business
 						["qg"] = 128903,	-- Carentan
-						["sourceQuests"] = { 49290 },	-- Aged to Perfection [Alliance Only]
+						["sourceQuests"] = { 49290 },	-- Aged to Perfection
 					})),
 
 					------------------------------------------------------------------
@@ -617,40 +913,28 @@ _.Zones =
 					-- Daelin's Gate / Old Drust Road
 					--------------------------------------
 					-- Defenders of Dealin's Gate
-					a(q(49869, {	-- A Desperate Defense [Alliance Only]
-						["qg"] = 141078,	-- Vigil Hill Refugee
-						["sourceQuests"] = { 52431 },	-- No-Landing Zone [Alliance Only]
-					})),
-					a(q(49737, {	-- Air Raid [Alliance Only]
-						["qg"] = 131048,	-- Lieutenant Tarenfold
-						["sourceQuests"] = { 49869 },	-- A Desperate Defense [Alliance Only]
-					})),
-					a(q(50110, {	-- Bearers of Bad News [Alliance Only]
+					a(q(50110, {	-- Bearers of Bad News
 						["qg"] = 142393,	-- Taelia
-						["sourceQuests"] = { 49741 },	-- Righteous Retribution [Alliance Only]
+						["sourceQuests"] = { 49741 },	-- Righteous Retribution
 						["isBreadcrumb"] = true,
 					})),
-					a(q(49757, {	-- Cat on a Hot Copper Roof [Alliance Only]
+					a(q(49757, {	-- Cat on a Hot Copper Roof
 						["qg"] = 131654,	-- Meredith
-						["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
+						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
 						["g"] = {
 							-- i(163036),	-- Polished Pet Charm [REMOVING THIS FOR NOW BECAUSE BUBBLE DOWN MAKES IT ALLIANCE ONLY.  BAD BUBBLEDOWN!!!!]
 						},
 					})),
-					a(q(49740, {	-- Cease Fire! [Alliance Only]
+					a(q(49740, {	-- Cease Fire!
 						["qg"] = 131048,	-- Lieutenant Tarenfold
-						["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
+						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
 					})),
-					a(q(49739, {	-- Enemies at the Gate [Alliance Only] (Objective)
-						["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
+					a(q(49739, {	-- Enemies at the Gate (Objective)
+						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
 					})),
-					a(q(52750, {	-- Farmers Who Fight [Alliance Only]
+					a(q(49736, {	-- For Kul Tiras!
 						["qg"] = 131048,	-- Lieutenant Tarenfold
-						["sourceQuests"] = { 49869 },	-- A Desperate Defense [Alliance Only]
-					})),
-					a(q(49736, {	-- For Kul Tiras! [Alliance Only]
-						["qg"] = 131048,	-- Lieutenant Tarenfold
-						["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
+						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
 						["g"] = {
 							i(155085),	-- Standard Bearer's Band
 							i(158235),	-- Navigator's Shoes
@@ -659,13 +943,13 @@ _.Zones =
 							i(158234),	-- Sea Raider's Stompers
 						},
 					})),
-					a(q(52148, {	-- Freehold: A Pirate's End [Alliance Only]
+					a(q(52148, {	-- Freehold: A Pirate's End
 						["qg"] = 121239,	-- Flynn Fairwind
-						["sourceQuests"] = { 49741 },	-- Righteous Retribution [Alliance Only]
+						["sourceQuests"] = { 49741 },	-- Righteous Retribution
 					})),
-					a(q(49738, {	-- Hands Off My Booty! [Alliance Only]
+					a(q(49738, {	-- Hands Off My Booty!
 						["qg"] = 131048,	-- Lieutenant Tarenfold
-						["sourceQuests"] = { 49737, 52750 },	-- Air Raid / Farmers Who Fight [Alliance Only]
+						["sourceQuests"] = { 49737, 52750 },	-- Air Raid / Farmers Who Fight
 						["g"] = {
 							i(158268),	-- Navigator's Bracers
 							i(158271),	-- Freebooter Armbands
@@ -674,17 +958,9 @@ _.Zones =
 							i(155092),	-- Master Cannoneer's Cloak
 						},
 					})),
-					a(q(52431, {	-- No-Landing Zone [Alliance Only]
-						["qg"] = 141078,	-- Vigil Hill Refugee
-						["sourceQuests"] = { 49405 },	-- Defenders of Daelin's Gate [Alliance Only]
-					})),
-					a(q(52787, {	-- Numbing the Pain [Alliance Only]
+					a(q(49741, {	-- Righteous Retribution
 						["qg"] = 142393,	-- Taelia
-						["sourceQuests"] = { 49869 },	-- A Desperate Defense [Alliance Only]
-					})),
-					a(q(49741, {	-- Righteous Retribution [Alliance Only]
-						["qg"] = 142393,	-- Taelia
-						["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
+						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
 					})),
 
 					--
@@ -692,25 +968,25 @@ _.Zones =
 						["qg"] = 149877,	-- Tinkmaster Overspark
 						["coord"] = { 65.8, 66.3, 895 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 55040,	-- Looking Inside
+						["sourceQuests"] = { 55040 },	-- Looking Inside
 					}),
 					q(55040, {	-- Looking Inside
 						["qg"] = 149864,	-- Tinkmaster Overspark
 						["coord"] = { 65.5, 65.0, 895 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 54088,	-- The Legend of Mechagon
+						["sourceQuests"] = { 54088 },	-- The Legend of Mechagon
 					}),
 					q(54946, {	-- Report to Gila
 						["qg"] = 152864,	-- Tinkmaster Overspark
 						["coord"] = { 65.8, 66.3, 895 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 54087,	-- You Must be This Height
+						["sourceQuests"] = { 54087 },	-- You Must be This Height
 					}),
 					q(54087, {	-- You Must be This Height
 						["qg"] = 149877,	-- Tinkmaster Overspark
 						["coord"] = { 65.8, 66.3, 895 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 54945,	-- Let's Get It Started
+						["sourceQuests"] = { 54945 },	-- Let's Get It Started
 					}),
 
 
@@ -753,26 +1029,6 @@ _.Zones =
 						i(158228),	-- Gryphon Rider's Ring
 
 					}),
-					q(48077, {	-- The Stoat Hunt
-						i(158247),	-- Navigator's Pants
-						i(158249),	-- Freebooter Pants
-						i(158248),	-- Outrigger Links
-						i(158246),	-- Sea Raider's Chausses
-						i(158276),	-- Navigator's Bindings
-						i(158279),	-- Freebooter Bindings
-						i(158278),	-- Outrigger Bindings
-						i(158277),	-- Sea Raider's Wristguards
-					}),
-					q(49299, {	-- Enemy Within
-						i(160083),	-- Navigator's Footwraps
-						i(160084),	-- Freebooter Shoes
-						i(160085),	-- Outrigger Waders
-						i(160086),	-- Sea Raider's Boots
-						i(160093),	-- Navigator's Waistwrap
-						i(160094),	-- Freebooter Cord
-						i(160095),	-- Outrigger Waistwrap
-						i(160096),	-- Sea Raider's Cinch
-					}),
 					q(48352, {	-- A Cure from the Sea
 						i(160097),	-- Navigator's Wristwraps
 						i(160098),	-- Freebooter Bands
@@ -805,7 +1061,6 @@ _.Zones =
 						i(158297),	-- Equestrian's Saddle Knife
 						i(158294),	-- Hollowbeak Hunting Rifle
 					}),
-					--]]
 				}),
 			}),
 			n(-17, {	-- Quests [Horde]
@@ -822,7 +1077,7 @@ _.Zones =
 					["qg"] = 152578,	-- Gazlowe
 					["coord"] = { 65.6, 64.6, 895 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55646,	-- The Legend of Mechagon
+					["sourceQuests"] = { 55646 },	-- The Legend of Mechagon
 				}),
 				n(-90005, {	-- Castaway Point
 					["icon"] = "Interface\\Icons\\inv_tiragardesound",
@@ -844,23 +1099,23 @@ _.Zones =
 							["objectID"] = 277373,	-- Glimmering Seaweed [Object]
 							["coord"] = { 85.48, 80.78, 895 },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 53443,	-- My Favorite Things
+							["sourceQuests"] = { 53443 },	-- My Favorite Things
 						}),
 						q(53446, {	-- Local Flavor
 							["qg"] = 128228,	-- Hungry Sam
 							["coord"] = { 85.4, 80.7, 895 },
-							["sourceQuest"] = 53442,	-- The Castaways
+							["sourceQuests"] = { 53442 },	-- The Castaways
 						}),
 						q(53443, {	-- My Favorite Things
 							["qg"] = 128229,	-- Stabby Jane
 							["coord"] = { 85.4, 80.8, 895 },
-							["sourceQuest"] = 53442,	-- The Castaways
+							["sourceQuests"] = { 53442 },	-- The Castaways
 							["races"] = HORDE_ONLY,
 						}),
 						q(53445, {	-- Silencing the Sisters
 							["qg"] = 128229,	-- Stabby Jane
 							["coord"] = { 85.4, 80.8, 895 },
-							["sourceQuest"] = 53442,	-- The Castaways
+							["sourceQuests"] = { 53442 },	-- The Castaways
 							["races"] = HORDE_ONLY,
 						}),
 						q(53442, {	-- The Castaways
@@ -876,42 +1131,42 @@ _.Zones =
 					["qg"] = 149842,	-- Baine Bloodhoof
 					["coord"] = { 85.8, 45.8, 895 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54958,	-- Ships in the Night
+					["sourceQuests"] = { 54958 },	-- Ships in the Night
 				},
 				{	-- Machinations for Mechagon
 					["questID"] = 55649,
 					["qg"] = 152652,	-- Gazlowe
 					["coord"] = { 65.9, 66.4, 895 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55632,	-- You Must be This Height
+					["sourceQuests"] = { 55632 },	-- You Must be This Height
 				},
 				{	-- Let's Get It Started
 					["questID"] = 55630,
 					["qg"] = 149809,	-- Gazlowe
 					["coord"] = { 65.8, 66.3, 895 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55648,	-- This is Our Vault Now
+					["sourceQuests"] = { 55648 },	-- This is Our Vault Now
 				},
 				{	-- Ships in the Night
 					["questID"] = 54958,
 					["qg"] = 150309,	-- Baine Bloodhoof
 					["coord"] = { 87.3, 49.6, 895 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55124,	-- Righting Wrongs
+					["sourceQuests"] = { 55124 },	-- Righting Wrongs
 				},
 				{	-- This is Our Vault Now
 					["questID"] = 55648,
 					["qg"] = 152578,	-- Gazlowe
 					["coord"] = { 65.6, 64.6, 895 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55647,	-- A Quick Ear Hustle
+					["sourceQuests"] = { 55647 },	-- A Quick Ear Hustle
 				},
 				{	-- Under Lock and Keys
 					["questID"] = 54959,
 					["qg"] = 149842,	-- Baine Bloodhoof
 					["coord"] = { 85.8, 45.8, 895 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54958,	-- Ships in the Night
+					["sourceQuests"] = { 54958 },	-- Ships in the Night
 				},
 				{	-- Waning Glacier
 					["npcID"] = -90003, 	-- Waning Glacier
@@ -939,21 +1194,21 @@ _.Zones =
 					["qg"] = 149809,	-- Gazlowe
 					["coord"] = { 65.8, 66.3, 895 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55630,	-- Let's Get It Started
+					["sourceQuests"] = { 55630 },	-- Let's Get It Started
 				},
 				-- Unsorted (everything in here is ... unsorted ^^)
 				q(51435, {	-- Swashbuckling in Style
 					["qg"] = 137675,	-- Shadow Hunter Ty'jin
 					["coord"] = { 89.4, 53.4, 895 },
-					["sourceQuest"] = 51421,	-- Shiver Me Timbers
+					["sourceQuests"] = { 51421 },	-- Shiver Me Timbers
 					["races"] = HORDE_ONLY,
 				}),
 				q(51436, {	-- Parleyin' Wit Pirates
 					["qg"] = 137675,	-- Shadow Hunter Ty'jin
 					["coord"] = { 89.4, 53.4, 895 },
-					["sourceQuest"] = 51435,	-- Swashbuckling in Style
+					["sourceQuests"] = { 51435 },	-- Swashbuckling in Style
 					["races"] = HORDE_ONLY,
-				}),
+				}), --]]
 			}),
 		}),
 	}),

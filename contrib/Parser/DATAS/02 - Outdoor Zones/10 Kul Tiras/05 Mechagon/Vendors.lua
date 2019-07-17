@@ -19,14 +19,10 @@ _.Zones =
 					["coord"] = { 71.4, 32.3, 1462 },
 					["g"] = {
 						i(168047, {	-- Rustbolt Kegerator
-							["g"] = {
-								q(55535),	-- The Tipsy Tinkerer
-									},
+							q(55535),	-- The Tipsy Tinkerer
 						}),
 						i(167069, {	-- Rustbolt Gramophone
-							["g"] = {
-								q(55534),	-- Rustbolt Gramophone
-									},
+							q(55534),	-- Rustbolt Gramophone
 						}),
 						i(169113, {	-- Advanced Adventurer Augmentation
 							i(169002),	-- Calibrated Hefty Cog
