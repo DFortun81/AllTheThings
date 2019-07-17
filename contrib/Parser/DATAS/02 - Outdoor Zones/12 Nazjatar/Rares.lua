@@ -202,6 +202,7 @@ _.Zones =
 				["questID"] = 56271,
 				["coords"] = {
 					{ 26.3, 29.0, 1355 },
+					{ 39.4, 72.0, 1355 },
 					{ 39.7, 27.9, 1355 },
 					{ 39.0, 59.3, 1355 },
 					{ 40.2, 81.5, 1355 },
@@ -430,7 +431,7 @@ _.Zones =
 					i(170171, {	-- Giant Crab Leg
 						["allianceQuestID"] = 57248,	-- Giant Crab Leg
 						["hordeQuestID"] = 56973,	-- Giant Crab Leg
-						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation.",
+						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
 						["repeatable"] = true,
 						["g"] = {
 							crit(49, {	-- Giant Crab Leg
@@ -548,6 +549,7 @@ _.Zones =
 				["isDaily"] = true,
 				["coords"] = {
 					{ 63.7, 48.3, 1355 },
+					{ 64.3, 54.9, 1355 },
 				},
 				["g"] = {
 					crit(24, {	-- I Thought You Said They'd Be Rare?
@@ -556,7 +558,7 @@ _.Zones =
 					i(170171, {	-- Giant Crab Leg
 						["allianceQuestID"] = 57248,	-- Giant Crab Leg
 						["hordeQuestID"] = 56973,	-- Giant Crab Leg
-						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation.",
+						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
 						["repeatable"] = true,
 						["g"] = {
 							crit(49, {	-- Giant Crab Leg
@@ -566,11 +568,6 @@ _.Zones =
 					}),
 					i(169350, {	-- Glittering Diamondshell (PET!)
 						crit(2, {	-- Glittering Diamondshell
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
-					i(169351, {	-- Sandclaw Nestseeker (PET!) — may actually only drop from glimmering chest, check back on this
-						crit(3, {	-- Sandclaw Nestseeker
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
@@ -814,7 +811,7 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170184, {	-- Ancient Reefwalker Bark
-						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
 						["repeatable"] = true,
 						["questID"] = 56969,
 						["g"] = {

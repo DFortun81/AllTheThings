@@ -1176,24 +1176,6 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55469,	-- To Zin-Azshari
 			}),
-			o(322533, {	-- Mardivas's Tome of the Elements
-				["coord"] = { 60.6, 33.2, 1355 },
-				["g"] = {
-					q(55121, {	-- The Laboratory of Mardivas -- 55145, 56481, 56725, 56891, 56892 also popped, 2nd run is 56428,56476,56724,56891 and 56892
-						["isWeekly"] = true,
-						["sourceQuests"] = {
-							56156,	-- A Tempered Blade
-							55500,	-- Save A Friend
-						},
-						["g"] = {
-							crit(6, {	-- Defeat one of Mardivas's Laboratory creations
-								["achievementID"] = 13635,	-- Tour of the Depths
-							}),
-							currency(1721),	-- Prismatic Manapearl x5
-						},
-					}),
-				},
-			}),
 			q(56266, {	-- Mgglurky's Mugglrgl
 				["qg"] = 153884,	-- King Mrgl-Mrgl
 				["coord"] = { 25.5, 26.4, 1355 },
@@ -2181,7 +2163,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55869,	-- Clearing Out the Cache
 			}),
-			q(55714, {	-- Void Cache (A9
+			q(55714, {	-- Void Cache (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 				["isDaily"] = true,

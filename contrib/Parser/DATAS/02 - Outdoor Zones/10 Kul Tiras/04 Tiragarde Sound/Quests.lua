@@ -828,7 +828,7 @@ _.Zones =
 			
 			
 			
---[[			n(-17, {	-- Quests [Alliance]
+			n(-17, {	-- Quests [Alliance]
 				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
 					--------------------------------------
 					-- Hatherford
@@ -1063,7 +1063,7 @@ _.Zones =
 					}),
 				}),
 			}),
-			n(-17, {	-- Quests [Horde]
+		--[[	n(-17, {	-- Quests [Horde]
 				q(54960, {	-- A Bitter Reunion
 					["qg"] = 149842,	-- Baine Bloodhoof
 					["coord"] = { 85.8, 45.8, 895 },
@@ -1083,6 +1083,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\inv_tiragardesound",
 					--["races"] = HORDE_ONLY,	-- Can't do this because Alliance quest here too.  Need to mark below
 					["g"] = {
+					--]]
 						q(53439, { 	-- Blood in the Tides
 							["qg"] = 143777,	-- Tall Hasani
 							["coord"] = { 85.21, 80.61, 895 },
@@ -1094,7 +1095,8 @@ _.Zones =
 								i(155023),	-- Sea Raider's Sabatons
 								i(155086),	-- Keelson's Bloody Drape
 							},
-						}),
+						}),	
+--[[
 						q(53444, {	-- Glimmering Locket	Note!! Use this because we have alliance above and Coords and objectID are exact same
 							["objectID"] = 277373,	-- Glimmering Seaweed [Object]
 							["coord"] = { 85.48, 80.78, 895 },

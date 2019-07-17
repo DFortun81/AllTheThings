@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-4, {	-- Achievements
+		n(-4, {		-- Achievements
 			ach(13715, {	-- From the Belly of the Jelly
 				["filterID"] = 101,	-- Battle Pet
 			}),
@@ -108,38 +108,7 @@ _.Zones =
 				}),
 				ach(13699, {	-- Periodic Destruction
 					["coord"] = { 60.7, 32.1, 1355 },
-					["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob.",
-					["g"] = {
-						crit(1, {	-- Arcane Amalgamation
-							["description"] = "Activate no crystals.",
-						}),
-						crit(2, {	-- Watery Amalgamation
-							["description"] = "Activate Lesser Benthic Arcanocrystal",
-						}),
-						crit(3, {	-- Burning Amalgamation
-							["description"] = "Activate Lesser Pyroclasmic Arcanocrystal",
-						}),
-						crit(4, {	-- Dusty Amalgamation
-							["description"] = "Activate Lesser Lithic Arcanocrystal",
-						}),
-						crit(5, {	-- Zomera
-							-- activated quest 55199. Is this a generic flag for using the amalgamator or is it specific to the mob?
-							-- 56480, 56723, 56891 and 56892 triggered after killing the mob
-							["description"] = "Active Lesser Benthic and Greater Lithic Arcanocrystals",
-						}),
-						crit(6, {	-- Omus
-							["description"] = "Active Lesser Benthic and Greater Pyroclasmic Arcanocrystals",
-						}),
-						crit(7, {	-- Osgen
-							["description"] = "Active Lesser and Greater Benthic Arcanocrystals",
-						}),
-						crit(8),	-- Moghiea
-						crit(9),	-- Xue
-						crit(10),	-- Ungormath
-						crit(11),	-- Spawn of Salgos
-						crit(12),	-- Herald of Salgos
-						crit(13),	-- Salgos the Eternal
-					},
+					["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob.  Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",
 				}),
 				ach(13713),		-- Nothing to Scry About
 				ach(13707),		-- Mrrl's Secret Stash
