@@ -17,7 +17,21 @@ _.Zones =
 				}),
 				q(41916),	-- A Better Future
 				q(42841),	-- A Big Score
-				q(43485),	-- A Burning Distraction
+				q(43470, {  -- Pruning the Garden
+					["classes"] = { 4 }
+				}),
+				q(43469, {  -- Where In the World is Mathias?
+					["sourceQuest"] = 43470,  -- Source Quest: Pruning the Garden
+					["classes"] = { 4 }
+				}),
+				q(43479, {  -- The World is Not Enough
+					["sourceQuest"] = 43470,  -- Source Quest: Pruning the Garden
+					["classes"] = { 4 }
+				}),
+				q(43485, {	-- A Burning Distraction
+					["sourceQuests"] = { 43469, 43479 },
+					["classes"] = { 4 }
+				}),
 				q(44919),	-- A Challenge From Our Enemies
 				q(43502),	-- A Change of Seasons
 				q(44876),	-- A Dance With Dragons
@@ -29,14 +43,20 @@ _.Zones =
 				q(44918),	-- A Message From Our Enemies
 				q(42728),	-- A Mlrglrmg For Grlmrgl
 				q(41149),	-- A Re-Warding Effort
-				q(38798),	-- A Shred of Your Humanity
+				q(38798, {	-- A Shred of Your Humanity
+					["requireSkill"] = 186, -- Mining
+				}),
 				q(45269),	-- A Taste of Freedom
-				q(42520),	-- A Terrible Loss
+				q(42520, {	-- A Terrible Loss
+					["classes"] = { 8 }
+				}),
 				q(40749),	-- A Token of Remembrance
 				q(43526),	-- A True Test
 				q(45266),	-- A United Front
 				q(40401),	-- A Way Back In
-				q(41183),	-- Academic Exploration
+				q(41183, {	-- Academic Exploration
+					["requireSkill"] = 794, -- Archaeology
+				}),
 				q(41426),	-- Against Their Will
 				q(40727),	-- All Along the Waterways
 				q(43567),	-- All In
@@ -45,7 +65,9 @@ _.Zones =
 				q(40744),	-- An Ancient Recipe
 				q(41123),	-- An Artisan's Mark
 				q(40012),	-- An Old Ally
-				q(40157),	-- An Unseemly Task
+				q(40157, {	-- An Unseemly Task
+					["requireSkill"] = 186, -- Mining
+				}),
 				q(43954),	-- Anax
 				q(44672, {	-- Ancient Mana
 					["sourceQuest"] = 42229,	-- Source Quest: Shal'Aran
@@ -61,8 +83,9 @@ _.Zones =
 				q(41231),	-- Apex Predator
 				q(43568),	-- Arcan'dor, Gift of the Ancient Magi
 				q(40324),	-- Arcane Communion
-				q(40009),	-- Arcane Thirst
-				q(45482),	-- Arcane: Fate of the Tideskorn
+				q(45482, {	-- Arcane: Fate of the Tideskorn
+					["classes"] = { 8 }
+				}),
 				q(40725),	-- Arganax
 				q(42649),	-- Arluin Bribe Tracker 2
 				q(40975),	-- Arluin Bribe Tracking
@@ -70,14 +93,14 @@ _.Zones =
 				q(43569),	-- Arluin's Request
 				qh(44862),	-- Arming the Rebels
 				qa(44861),	-- Arming the Rebels
-				q(47051),	-- Assassination: Fate of the Tideskorn
+				q(47051, {	-- Assassination: Fate of the Tideskorn
+					["classes"] = { 4 }
+				}),
 				q(43352),	-- Asset Security
-				q(42404),	-- Assisting the Archmage
 				q(40412),	-- Azoran Must Die
 				q(41107),	-- Bad Apples
 				q(40227),	-- Bad Intentions
 				q(43533),	-- Balance of Power
-				q(42837),	-- Balance to Spare
 				q(40320),	-- Band of Blood Brothers
 				q(40332),	-- Beach Bonfire
 				q(45267),	-- Before the Siege
@@ -108,7 +131,6 @@ _.Zones =
 				q(38695),	-- Crackdown
 				q(40973),	-- Creating Time
 				qa(44843),	-- Crystal Clearing
-				q(45239),	-- Cubic Coalescing
 				q(45160),	-- Cubic Currents
 				q(41166),	-- Dark Secrets
 				q(40158),	-- Darkheart Thicket: Demons Be Different
@@ -157,7 +179,6 @@ _.Zones =
 				q(43106),	-- Feed Oculeth
 				q(43994),	-- Feed Thalyssra
 				q(43995),	-- Feed Valtrois
-				q(41138),	-- Feeding Shal'Aran
 				q(45265),	-- Feeding the Rebellion
 				q(40919),	-- Fel Bent for Leather
 				q(41167),	-- Fel Fragments
@@ -181,7 +202,6 @@ _.Zones =
 				q(41158),	-- Fragments of the Fjords
 				q(40898),	-- Fresh Meat
 				q(44080),	-- Friend of the Animals
-				q(42722),	-- Friends in Cages
 				q(42487),	-- Friends On the Outside
 				q(44053),	-- Friends With Benefits
 				q(41258),	-- Fruit of the Doom
@@ -218,7 +238,6 @@ _.Zones =
 				qh(44614),	-- Honor the Flame
 				q(44725),	-- Hostage Situation
 				q(40213),	-- Hounds Abound
-				q(42833),	-- How It's Made: Arcwine
 				q(44691),	-- Hungry Work
 				q(44964),	-- I'll Just Leave This Here
 				q(42840),	-- If Words Don't Work...
@@ -287,15 +306,39 @@ _.Zones =
 				q(40160),	-- Magic Clams
 				q(39986),	-- Magic Message
 				q(42829),	-- Make an Entrance
-				q(42792),	-- Make Your Mark
 				q(41480),	-- Managazer
 				q(41309),	-- Mangelrath
 				q(42079),	-- Masquerade
 				q(38969),	-- Master of Silkweave
-				q(41143),	-- Mglrgrs Of Our Grmlgrlr
 				q(43793),	-- Miasu
 				q(41463),	-- Missing Along the Way
-				q(42400),	-- Missing Mages
+				q(42399, {  -- Ready to Work
+					["classes"] = { 3 }
+				}),
+				q(42400, {	-- Missing Mages
+					["sourceQuest"] = 42399,  -- Ready to Work
+					["classes"] = { 3 }
+				}),
+				q(42401, {	-- The Scent of Magic
+					["sourceQuest"] = 42400,  -- Missing Mages
+					["classes"] = { 3 }
+				}),
+				q(42404, {	-- Assisting the Archmage
+					["sourceQuest"] = 42401,  -- The Scent of Magic
+					["classes"] = { 3 }
+				}),
+				q(42689, {	-- Knowing Our Enemy
+					["sourceQuest"] = 42404,  -- Assisting the Archmage
+					["classes"] = { 3 }
+				}),
+				q(42691, {	-- Leyworm Lure
+					["sourceQuest"] = 42689,  -- Knowing Our Enemy
+					["classes"] = { 3 }
+				}),
+				q(42406, {	-- To Tame the Beast
+					["sourceQuest"] = 42691,  -- Leyworm Lure
+					["classes"] = { 3 }
+				}),				
 				q(44724),	-- Missing Persons
 				q(43808),	-- Moon Guard Teleporter Online!
 				q(42226),	-- Moonshade Holdout
@@ -435,7 +478,6 @@ _.Zones =
 				q(45067),	-- Telemantic Expanse
 				q(44822),	-- Temporal Investigations
 				q(41034),	-- Testing the Waters
-				q(42488),	-- Thalyssra's Abode
 				q(42489),	-- Thalyssra's Drawers
 				q(45268),	-- The Advisor and the Arcanist
 				q(41163),	-- The Apocalypse Bringer
@@ -485,11 +527,9 @@ _.Zones =
 				q(45486),	-- The Reluctant Queen
 				q(40964),	-- The Rift Between
 				q(40657),	-- The Road to Fel
-				q(42401),	-- The Scent of Magic
 				q(44833),	-- The Seal's Power
 				q(41618),	-- The Seawarden
 				q(43360),	-- The Shardmaidens
-				q(42230),	-- The Valewalker's Burden
 				q(42889),	-- The Way Back Home
 				q(41215),	-- They Become The Hunted
 				q(43312),	-- Thinly Veiled Threats
@@ -516,7 +556,6 @@ _.Zones =
 				q(44084),	-- Vengeance for Margaux
 				q(44669),	-- Vicious Whale Shark
 				q(44955),	-- Visitor in Shal'Aran
-				q(44058),	-- Volpin the Elusive
 				q(44040),	-- Vote of Confidence
 				q(41109),	-- Waiting for Revenge
 				q(41110),	-- Waiting for Revenge
@@ -529,7 +568,6 @@ _.Zones =
 				q(43566),	-- Withered Progress
 				q(41174),	-- Worth Its Weight
 				q(41702),	-- Written in Stone
-				q(41197),	-- You've Got to Be Kitten Me Right Meow
 				q(40762),	-- Zealot's Dues
 				q(40009,  {  -- Arcane Thirst
 					i(121804),
@@ -539,9 +577,6 @@ _.Zones =
 				}),
 				q(45239,  {  -- Cubic Coalescing
 					i(142536),	-- Memory Cube
-				}),
-				q(45372,  {  -- Fate of the Nightborn
-					i(142436),	-- Arcanist's Manasaber
 				}),
 				q(42722,  {  -- Friends in Cages
 					i(130209),	-- Never Ending Toy Chest
