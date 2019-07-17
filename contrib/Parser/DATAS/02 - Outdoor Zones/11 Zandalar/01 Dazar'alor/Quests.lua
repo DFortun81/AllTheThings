@@ -559,6 +559,12 @@ _.Zones =
 						["sourceQuests"] = { 54118 },	-- Every Little Death Helps
 						["classes"] = { 5 },	-- Priest
 					}),
+					i(169765, {	-- Worldvein Intelligence Reports
+						["questID"] = 56534,	-- Worldvein Rumors
+						["g"] = {
+							spell(302239),	-- Investigating the Rumors
+						},
+					}),	
 				}),
 			}),
 		}),
