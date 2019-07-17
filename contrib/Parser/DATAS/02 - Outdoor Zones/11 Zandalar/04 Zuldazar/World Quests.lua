@@ -521,10 +521,18 @@ _.Zones =
 				i(158117),	-- Salt Coast Knuckles
 				i(158134),	-- Salt Coast Piercers
 				i(158122),	-- Spirit Bog Scepter
-				i(158108),	-- Whisperfen Chopper
-				i(158111),	-- Whisperfen Hewer
-				i(158128),	-- Whisperfen Polearm
-				i(158131),	-- Whisperfen Staff
+				i(158108, {	-- Whisperfen Chopper
+					["races"] = HORDE_ONLY,
+				}),
+				i(158111, {	-- Whisperfen Hewer
+					["races"] = HORDE_ONLY,
+				}),
+				i(158128, {	-- Whisperfen Polearm
+					["races"] = HORDE_ONLY,
+				}),
+				i(158131, {	-- Whisperfen Staff
+					["races"] = HORDE_ONLY,
+				}),
 				i(158112),	-- Zandalari Greatbow
 				i(158133),	-- Zandalari Machete
 				i(158129),	-- Zandalari Warstaff
