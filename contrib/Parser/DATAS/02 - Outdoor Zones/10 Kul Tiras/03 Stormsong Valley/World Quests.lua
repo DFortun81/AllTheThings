@@ -203,6 +203,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(52463, {	-- Haegol the Hammer
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54132, {	-- Horde of Heroes (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,

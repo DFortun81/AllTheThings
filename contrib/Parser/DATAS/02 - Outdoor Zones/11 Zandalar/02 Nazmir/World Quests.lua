@@ -50,6 +50,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51411, {	-- Azerite Mining
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51064, {	-- Azerite Wounds
 						["lvl"] = 120,
 						["collectible"] = false,

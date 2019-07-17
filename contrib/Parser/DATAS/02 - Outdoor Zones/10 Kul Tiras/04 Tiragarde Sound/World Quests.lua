@@ -259,6 +259,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51659, {	-- Merianae
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54112, {	-- Mistweaver Nian (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,

@@ -35,9 +35,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			n(-34, {	-- World Quests
 				q(49800, {	--  Atal'Dazar: Spiders!
-					["repeatable"] = true,
-					["isDaily"] = true, 	-- Would like to swap it to WQ below
-					["lvl"] = 120,			-- WQ is 120+ only
+					["lvl"] = 120,
+					["collectible"] = false,
 				}),
 			}),
 			d(1, {	-- Normal

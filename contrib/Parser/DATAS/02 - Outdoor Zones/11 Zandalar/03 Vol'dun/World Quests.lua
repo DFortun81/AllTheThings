@@ -377,6 +377,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51119, {	-- Vathikur
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54415, {	-- Vulpera for a Day (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
