@@ -14,6 +14,7 @@ _.Zones =
 				]]--
 				i(169591, {	-- Cracked Numeric Cylinder
 				["g"] = {
+					["isDaily"] = true,
 					q(56421),	-- Cracked Numeric Cylinder
 				},
 			}),
