@@ -75,6 +75,9 @@ _.Zones =
 						ach(13744),	-- Seasoned: Bladesman Inowari
 						ach(13745),	-- Seasoned: Farseer Ori
 						ach(13743),	-- Seasoned: Hunter Akana
+						ach(13754),	-- Veteran: Bladesman Inowari
+						ach(13755),	-- Veteran: Farseer Ori
+						ach(13753),	-- Veteran: Hunter Akana
 						ach(13704, {	-- Nautical Battlefield Training
 							["description"] = "Requires hitting Rank 20 with each bodyguard.",
 						}),
@@ -89,6 +92,9 @@ _.Zones =
 						ach(13746),	-- Seasoned: Neri Sharpfin
 						ach(13747),	-- Seasoned: Poen Gillbrack
 						ach(13748),	-- Seasoned: Vim Brineheart
+						ach(13749),	-- Veteran: Neri Sharpfin
+						ach(13751),	-- Veteran: Poen Gillbrack
+						ach(13752),	-- Veteran: Vim Brineheart
 						ach(13645, {	-- Nautical Battlefield Training
 							["description"] = "Requires hitting Rank 20 with each bodyguard.",
 						}),
