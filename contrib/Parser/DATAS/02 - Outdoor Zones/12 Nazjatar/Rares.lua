@@ -95,6 +95,7 @@ _.Zones =
 				["questID"] = 55584,
 				["isDaily"] = true,
 				["coord"] = { 36.9, 11.2, 1355 },
+				["crs"] = { 150248 },	-- Brinestone Deposit
 				["g"] = {
 					i(169373, {	-- Brinestone Algan (PET!)
 						crit(13, {	-- Brinestone Algan

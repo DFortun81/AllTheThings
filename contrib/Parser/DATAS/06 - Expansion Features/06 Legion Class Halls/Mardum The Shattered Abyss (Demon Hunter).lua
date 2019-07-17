@@ -53,6 +53,15 @@ _.ExpansionFeatures =
 						["coord"] = { 59.7, 50.3, 720 },
 						["qg"] = 98632,  -- Matron Mother Malevolence
 					}),
+					q(40247, {	-- Asking a Favor
+						["sourceQuests"] = {
+							40814,	-- The Power to Survive (if chosen first)
+							44383,	-- In Pursuit of Power (if chosen second)
+						},
+						["classes"] = { 12 },	-- Demon Hunter
+						["coord"] = { 58.6, 56.5, 720 },
+						["qgs"] = { 99247, 108572 },	-- Kayn Sunfury (2 versions)
+					}),
 					q(42801, {	-- Back in Black
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
 						["coord"] = { 57.0, 53.1, 720 },
@@ -292,7 +301,6 @@ _.ExpansionFeatures =
 					q(46159),	-- An Urgent Message
 					q(45993),	-- An Urgent Warning
 					q(41803),	-- Asking a Favor
-					q(40247),	-- Asking a Favor
 					q(44223),	-- Champion Armaments
 					q(42653, {	-- Champion: Akama
 						["qg"] = 108239,	-- Akama
@@ -411,8 +419,6 @@ _.ExpansionFeatures =
 					q(43556),	-- Vault of the Wardens
 					q(42752),	-- Vault of the Wardens: Vault Break-In
 					q(42753),	-- Vault of the Wardens: Vault Break-In
-					q(40249),	-- Vengeance Will Be Ours
-					q(41863),	-- Vengeance Will Be Ours
 					q(44258),	-- Violet Hold
 					q(44259),	-- Violet Hold
 					q(43557, {	-- Violet Hold

@@ -219,24 +219,60 @@ _.NeverImplemented =
 		-------------------
 		--    Legion     --
 		-------------------
+	--	Various tracking quests
 		q(45533),	-- Legion Dungeon Reward Quest
+		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
+		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
+		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
+		q(37526),	-- Farondis Murder Flag — triggers between turning in "The Tidestone: Shattered" and starting "Save Yourself" in Azsuna
+		q(41891),	-- Tainted Growth — got credit for this when turning in 38684, "Reading the Leaves"
+		q(38994),	-- TRACKING Encounter Botanist — this quest and the one below are during/after doing the "To Old Friends" quest in Val'sharah
+		q(38596),	-- TRACKING Nightmare 02
+		q(44638),	-- Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — think this is somewhere around "Immortal Soul" / "Leader of the Illidari" in the DH class hall
+		q(42116),	-- Tracking Quest: Chapter 2 Completed — think this is for "Unexpected Visitors" for the DH class campaign, which was the completion of the first order campaign effort for the "Fighting With Style: Classic" achievement
+		q(44597),	-- Tracking Quest: Working with the Wardens 1 — these next quests are all part of DH quest 42731, "Working With the Wardens"
+		q(44598),	-- Tracking Quest: Working with the Wardens 2
+		q(44599),	-- Tracking Quest: Working with the Wardens 3
+		q(44600),	-- Tracking Quest: Working with the Wardens 4
+		q(44601),	-- Tracking Quest: Working with the Wardens 5
+		q(44382),	-- Vengeance Chosen — chose to pursue Vengeance artifact while on quest 44383, "In Pursuit of Power"
+		
+	--	Treasures
+		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
 		q(38365),	-- Azsuna - Treasure 015 - Giblin Treasure — looted Disputed Treasure near Shackle's Den
 		q(38367),	-- Azsuna - Treasure 016 - Cask of Special Reserve — looted Glimmering Treasure Chest in Challiane Vineyards
 		q(42278),	-- Azsuna - Treasure 024 - Gloombound Barrow 02 - Small — looted Small Treasure Chest in Gloombound Barrow while on "This IS In My Contract."
 		q(42285),	-- Azsuna - Treasure 029 - Nar'thalas 05 - Small — opened a treasure in Nar'thalas Academy near the Tidestone
 		q(42291),	-- Azsuna - Treasure 033 - Oceanus Cove 02 - Small — looted Small Treasure Chest inside Oceanus Cove
 		q(42297),	-- Azsuna - Treasure 039 (Large) - Mountain Top — looted treasure chest near Felwing encounter
-		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
-		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
-		q(37526),	-- Farondis Murder Flag — triggers between turning in "The Tidestone: Shattered" and starting "Save Yourself" in Azsuna
-		q(44638),	-- Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — think this is somewhere around "Immortal Soul" / "Leader of the Illidari" in the DH class hall
-		q(42116),	-- Tracking Quest: Chapter 2 Completed — think this is for "Unexpected Visitors" for the DH class campaign, which was the completion of the first order campaign effort for the "Fighting With Style: Classic" achievement
+		q(38369),	-- 7.0 Val'sharah - Treasure 006 - Ravencourt - twh — Small Treasure Chest (39.9, 54.6)
+		q(39080),	-- 7.0 Val'sharah - Treasure 032 - Heathrow Manor - twh — Small Treasure Chest inside the cellar of Heathrow Manor
 		
-		q(37965),	-- A Tainted Vintage — bonus objective in Azsuna, unavailable after 110
-		q(37495),	-- Plunder the Cove — bonus objective in Azsuna, unavailable after 110
-		q(36811),	-- Retake Faronaar — bonus objective in Azsuna, unavailable after 110
-		q(37466),	-- The Broken Academy — bonus objective in Azsuna, unavailable after 110
-		q(37779),	-- Tip the Scales — bonus objective in Azsuna, unavailable after 110
+	--	putting bonus objectives here because it'd be impossible to do them all unless you locked your XP and did all the quests in every legion zone.
+	--	they aren't automatically up as soon as you're 100; most of them are locked behind specific questlines, and then they all disappear as soon as you hit 110.
+	
+	--	Azsuna bonus objectives
+		q(37965),	-- A Tainted Vintage
+		q(42020),	-- Bonus Objective: Hatecoil Warcamp
+		q(37495),	-- Plunder the Cove
+		q(36811),	-- Retake Faronaar
+		q(37466),	-- The Broken Academy
+		q(37779),	-- Tip the Scales
+		
+	--	Highmountain bonus objectives
+		q(40316),	-- The Screeching Crag
+		q(39371),	-- Witches of the Sky
+		
+	--	Val'sharah bonus objectives
+		q(38716),	-- Black Rook Hold
+		q(39029),	-- Defend the Temple
+		q(38842),	-- Faerie Fracas
+		q(43241),	-- Flow of the Nightmare
+		q(39393),	-- Moonclaw Vale
+		q(38748),	-- Ruins of Shala'nir
+		q(38372),	-- Wretched Sisters
+	
+	--	Various non-zone bonus objectives
 		q(43483),	-- Fel Annihilation — bonus objective in "In Defense of the Exodar" scenario, unavailable afterwards
 		
 		-------------------

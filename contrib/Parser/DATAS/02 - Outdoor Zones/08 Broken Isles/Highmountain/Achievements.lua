@@ -8,23 +8,29 @@ _.Zones =
 			n(-4,   {	-- Achievement
 				ach(10994, {	-- A Glorious Campaign
 					cl(2, {	-- Paladin
-						q(45561),	-- Seek Me Out
-						q(45562),	-- Kneel and Be Squired!
-						q(45565),	-- Further Training
-						q(45566),	-- A Knight's Belongings
-						q(45567),	-- My Kingdom for a Horse
-						q(45568),	-- They Stole Excaliberto!
-						q(45644),	-- Oh Doloria, My Sweet Doloria
-						q(45645),	-- A Fool's Errand
+						["classes"] = { 2 },	-- Paladin
+						["g"] = {
+							q(45561),	-- Seek Me Out
+							q(45562),	-- Kneel and Be Squired!
+							q(45565),	-- Further Training
+							q(45566),	-- A Knight's Belongings
+							q(45567),	-- My Kingdom for a Horse
+							q(45568),	-- They Stole Excaliberto!
+							q(45644),	-- Oh Doloria, My Sweet Doloria
+							q(45645),	-- A Fool's Errand
+						},
 					}),
 					cl(5, {	-- Priest
-						q(45343),	-- A Curious Contagion
-						q(45344),	-- Sampling the Source
-						q(45346),	-- Shambling Specimens
-						q(45345),	-- Mischievous Sprites
-						q(45347),	-- Crafting a Cure
-						q(45348),	-- Safekeeping
-						q(45342),	-- Administering Aid
+						["classes"] = { 5 },	-- Priest
+						["g"] = {
+							q(45343),	-- A Curious Contagion
+							q(45344),	-- Sampling the Source
+							q(45346),	-- Shambling Specimens
+							q(45345),	-- Mischievous Sprites
+							q(45347),	-- Crafting a Cure
+							q(45348),	-- Safekeeping
+							q(45342),	-- Administering Aid
+						},
 					}),
 				}),
 				ach(10059, {	-- Ain't No Mountain High Enough

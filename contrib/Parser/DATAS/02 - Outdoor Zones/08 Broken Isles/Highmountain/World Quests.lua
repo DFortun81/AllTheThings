@@ -25,7 +25,6 @@ _.Zones =
 				q(41526),	-- Bushy Foxflower
 				q(41238),	-- Calcified Wormscales
 				q(41623),	-- Champions of Highmountain
-				q(46196),	-- Class Dismissed
 				q(41201),	-- Coarse Leystone Outcropping
 				q(46183),	-- Commander Zarthak
 				q(41699),	-- Crabby Crunchies
@@ -57,7 +56,6 @@ _.Zones =
 				q(41243),	-- Huge Highmountain Salmon
 				q(46185),	-- Iroxus
 				q(46186),	-- Ix'dreloth
-				q(46187),	-- Larthogg
 				q(41196),	-- Leystone Basilisks
 				q(41198),	-- Leystone Basilisks
 				q(41199),	-- Leystone Rumblers
@@ -72,8 +70,6 @@ _.Zones =
 				q(41253),	-- Migrating Highmountain Salmon
 				q(41122),	-- Mists Take You
 				q(41076),	-- Munitions Testing
-				q(41078),	-- Munitions Testing
-				q(46188),	-- Orgrokk
 				q(41057),	-- Primal Payback
 				q(41055),	-- Primal Payback
 				q(41144),	-- Return to the River
@@ -103,7 +99,6 @@ _.Zones =
 				q(44290),	-- WANTED: Bristlemaul
 				q(41826),	-- WANTED: Crawshuk the Hungry
 				q(44291),	-- WANTED: Crawshuk the Hungry
-				q(43455),	-- WANTED: Devouring Darkness
 				q(43617),	-- WANTED: Devouring Darkness
 				q(41818),	-- WANTED: Majestic Elderhorn
 				q(44292),	-- WANTED: Majestic Elderhorn
@@ -112,7 +107,6 @@ _.Zones =
 				q(41821),	-- WANTED: Shara Felbreath
 				q(43619),	-- WANTED: Shara Felbreath
 				q(41838),	-- WANTED: Slumber
-				q(41227),	-- Warden Tower Assault: Cordana's Apex
 				q(41257),	-- Warden Tower Assault: Cordana's Apex
 				q(41420),	-- Warden Tower Assault: Nightwatcher's Perch
 				q(41205),	-- Warm Leystone Deposits
@@ -124,7 +118,6 @@ _.Zones =
 				q(41206),	-- Work Order: Leystone
 				q(41647),	-- Work Order: Silkweave Robe
 				q(41235),	-- Work Order: Stonehide Leather
-				q(46192),	-- Zar'vok
 				q(46279),	-- Zargrom
 --]]
 				q(41705, {	-- Assault on Thunder Totem
@@ -142,6 +135,10 @@ _.Zones =
 				q(41706, {	-- Briny Waters	
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(46196, {	-- Class Dismissed (Invasion WQ)
+					["collectible"] = false,
+					["lvl"] = 98,
 				}),
 				q(41622, {	-- Crawliac's Legacy
 					["lvl"] = 110,
@@ -196,6 +193,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(46187, {	-- Larthogg (Invasion WQ)
+					["collectible"] = false,
+					["lvl"] = 98,
+				}),
 				q(43764, {	-- Ley Race
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -204,6 +205,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41078, {	-- Munitions Testing
+					["collectible"] = false,
+					["lvl"] = 110,
+				}),
 				q(41866, {	-- Neltharion's Lair: Blighted Bat
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -211,6 +216,10 @@ _.Zones =
 				q(41865, {	-- Neltharion's Lair: Mother of Stone
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(46188, {	-- Orgrokk (Invasion WQ)
+					["collectible"] = false,
+					["lvl"] = 98,
 				}),
 				q(39462, {	-- Primal Payback
 					["lvl"] = 110,
@@ -241,6 +250,10 @@ _.Zones =
 				q(41691, {	-- Sea of Feathers
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41234, {	-- Shaggy Saber Hide
+					["collectible"] = false,
+					["lvl"] = 110,
 				}),
 				q(46189, {	-- Shel'zuul (Invasion WQ)
 					["lvl"] = 98,
@@ -304,6 +317,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43455, {	-- WANTED: Devouring Darkness
+					["collectible"] = false,
+					["lvl"] = 110,
+				}),
 				q(41819, {	-- WANTED: Gurbog da Basher
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -320,6 +337,11 @@ _.Zones =
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
+				}),
+				q(41227, {	-- Warden Tower Assault: Cordana's Apex (H)
+					["collectible"] = false,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 110,
 				}),
 				q(41421, {	-- Warden Tower Assault: Nightwatcher's Perch [A]
 					["lvl"] = 110,
@@ -384,6 +406,10 @@ _.Zones =
 					["groups"] = {
 						i(128604),	-- Formula: Enchant Cloak - Word of Strength (Rank 3)
 					},
+				}),
+				q(46192, {	-- Zar'vok (Invasion WQ)
+					["collectible"] = false,
+					["lvl"] = 98,
 				}),
 				n(-322,  {	-- Cloak
 					i(134158),	-- Trembling Mightstone Drape

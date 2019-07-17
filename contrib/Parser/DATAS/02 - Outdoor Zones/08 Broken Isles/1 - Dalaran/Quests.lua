@@ -282,16 +282,30 @@ _.Zones =
 					["qgs"] = { 105081, 115467 },	-- Archmage Kalec (2 versions)
 				}),
 				q(41804,  {	-- Ask and You Shall Receive
+					["sourceQuests"] = {
+						41803,	-- Asking a Favor (Altruis)
+						40247,	-- Asking a Favor (Kayn)
+					},
 					["classes"] = { 12 },
+					["coord"] = { 28.8, 48.6, 627 },
 					["qg"] = 90417,	-- Archmage Khadgar
 				}),
-				q(40247,  {	-- Asking a Favor
-					["classes"] = { 12 },
-					["qgs"] = { 99247, 108572 },	-- Kayn Sunfury (2 versions)
-				}),
-				q(41803,  {	-- Asking a Favor
-					["classes"] = { 12 },
+				q(41803,  {	-- Asking a Favor (Altruis)
+					["sourceQuests"] = {
+						40814,	-- The Power to Survive (if chosen first)
+						44383,	-- In Pursuit of Power (if chosen second)
+					},
+					["classes"] = { 12 },	-- Demon Hunter
 					["qgs"] = { 99254, 108571 },	-- Altruis the Sufferer
+				}),
+				q(40247,  {	-- Asking a Favor (Kayn)
+					["sourceQuests"] = {
+						40814,	-- The Power to Survive (if chosen first)
+						44383,	-- In Pursuit of Power (if chosen second)
+					},
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 74.5, 48.7, 627 },
+					["qgs"] = { 99247, 108572 },	-- Kayn Sunfury (2 versions)
 				}),
 				q(47051,  {	-- Assassination: Fate of the Tideskorn
 					["classes"] = { 4 },
@@ -568,7 +582,9 @@ _.Zones =
 					["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
 				}),
 				q(41807,  {	-- Establishing a Connection
+					["sourceQuests"] = { 41806 },	-- Return to Jace
 					["classes"] = { 12 },
+					["coord"] = { 74.0, 50.5, 627 },
 					["qg"] = 99262,	-- Jace Darkweaver
 				}),
 				q(42869,  {	-- Eternal Vigil
@@ -819,6 +835,9 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 101513,	-- Lord Jorach Ravenholdt
 				}),
+				q(44547, {	-- Isle Hopping
+					["isBreadcrumb"] = true,
+				}),
 				qa(45906, {	-- Jarod's Gift
 					["sourceQuests"] = { 46035 },	-- End of the Risen Threat
 					["classes"] = { 2, 5, 7, 11 },
@@ -877,7 +896,10 @@ _.Zones =
 					["qg"] = 90417,	-- Archmage Khadgar
 				}),
 				q(40819,  {	-- Making Arrangements
-					["sourceQuests"] = { 40814 },	-- The Power to Survive
+					["sourceQuests"] = {
+						40814,	-- The Power to Survive (if chosen first)
+						44383,	-- In Pursuit of Power (if chosen second)
+					},
 					["classes"] = { 12 },	-- Demon Hunter
 					["coord"] = { 74.5, 48.7, 627 },
 					["qgs"] = { 99247, 108572 },	-- Kayn Sunfury
@@ -1083,7 +1105,9 @@ _.Zones =
 					["qg"] = 118242,	-- Aethas Sunreaver
 				}),
 				q(41806,  {	-- Return to Jace
-					["classes"] = { 12 },
+					["sourceQuests"] = { 41804 },	-- Ask and You Shall Receive
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 28.8, 48.6, 627 },
 					["qg"] = 90417,	-- Archmage Khadgar
 				}),
 				q(45238,  {	-- Return to Karazhan: Cubic Cynosure
@@ -1600,13 +1624,17 @@ _.Zones =
 			--	q(43556),	-- Vault of the Wardens -- granted by mission board
 			--	q(44260),	-- Vault of the Wardens -- granted by mission board
 			--	q(44261),	-- Vault of the Wardens -- granted by mission board
-				q(40249,  {	-- Vengeance Will Be Ours
-					["classes"] = { 12 },
-					["qg"] = 99247,	-- Kayn Sunfury
-				}),
-				q(41863,  {	-- Vengeance Will Be Ours
-					["classes"] = { 12 },
+				q(41863,  {	-- Vengeance Will Be Ours (Altruis)
+					["sourceQuests"] = { 41807 },	-- Establishing a Connection
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 74.6, 48.6, 210 },
 					["qg"] = 99254,	-- Altruis the Sufferer
+				}),
+				q(40249,  {	-- Vengeance Will Be Ours (Kayn)
+					["sourceQuests"] = { 41807 },	-- Establishing a Connection
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 74.6, 48.6, 210 },
+					["qg"] = 99247,	-- Kayn Sunfury
 				}),
 				qa(46314, {	-- Vengeance: Seeking Kor'vas
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration

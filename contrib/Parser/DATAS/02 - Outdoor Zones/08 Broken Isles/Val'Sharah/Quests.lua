@@ -181,9 +181,6 @@ _.Zones =
 					["coord"] = { 59.4, 81.9, 641 },
 					["qg"] = 108358,	-- Leirana
 				}),
-				q(43241,  {	-- Flow of the Nightmare
-					["coord"] = { 64.0, 47.1, 641 },
-				}),
 				q(38647,  {	-- For the Corn!
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["coord"] = { 38.9, 61.4, 641 },
