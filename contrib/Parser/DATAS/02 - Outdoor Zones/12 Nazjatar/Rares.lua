@@ -832,7 +832,9 @@ _.Zones =
 					}),
 				},
 			}),
-			n(151719, {	-- Voice in the Deeps -- TODO:: add description on how to actually release it
+			n(151719, {	-- Voice in the Deeps
+				["description"] = "When the rare is available, you can see its nameplate while hovering over the rocks inside the small building at the coordinates listed.\n\nWhen you're sure it's up, find a |cFF1EFF00Molted Shell|r on the ground and ride it into the rocks to break them.  The rare will immediately attack, so be ready to click off the buff!",
+				["questID"] = 56583,	-- also 56300, not sure which is first kill
 				["coord"] = { 67.5, 34.6, 1355 },
 				["isDaily"] = true,
 				["g"] = {
