@@ -29,6 +29,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(17, {	-- LFR
+				n(-1, {	-- Common Boss Drops
+					i(169329),	-- Eternal Ornament
+					i(168625),	-- Vantus Rune Technique: The Eternal Palace (Rank 1)
+				}),
 				n(0, {	-- Zone Drops
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
@@ -220,6 +224,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			d(14, {	-- Normal
 				n(-1, {	-- Common Boss Drops
 					i(169329),	-- Eternal Ornament
+					i(168625),	-- Vantus Rune Technique: The Eternal Palace (Rank 1)
 				}),
 				n(0, {	-- Zone Drops
 					i(169930),	-- Handwraps of Unhindered Resonance
@@ -443,6 +448,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			d(15, {	-- Heroic
 				n(-1, {	-- Common Boss Drops
 					i(169329),	-- Eternal Ornament
+					i(168625),	-- Vantus Rune Technique: The Eternal Palace (Rank 1)
 				}),
 				n(0, {	-- Zone Drops
 					i(169930),	-- Handwraps of Unhindered Resonance
@@ -667,6 +673,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			d(16, {	-- Mythic
 				n(-1, {	-- Common Boss Drops
 					i(169329),	-- Eternal Ornament
+					i(168625),	-- Vantus Rune Technique: The Eternal Palace (Rank 1)
 				}),
 				n(0, {	-- Zone Drops
 					i(169930),	-- Handwraps of Unhindered Resonance
