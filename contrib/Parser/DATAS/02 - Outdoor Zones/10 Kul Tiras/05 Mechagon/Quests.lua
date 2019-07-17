@@ -12,6 +12,11 @@ _.Zones =
 					Scrappy can be found at (70.5,30.5) and requires an energy cell to revive him
 					R33-DR - 63.4, 57.0 interactive "data analyzer" npc. Possibly part of a puzzle?
 				]]--
+				i(169591, {	-- Cracked Numeric Cylinder
+				["g"] = {
+					q(56421),	-- Cracked Numeric Cylinder
+				},
+			}),
 				q(56493, {	-- A Direct Approach
 					["qg"] = 155188,	-- Scrollsage Nola
 					["coord"] = { 72.2, 37.2, 862 },
