@@ -331,6 +331,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51104, {	-- Skycaller Teskris
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51116, {	-- Skycarver Krakit
 						["lvl"] = 120,
 						["collectible"] = false,

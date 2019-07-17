@@ -67,13 +67,17 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(51638, {	-- Beachhead [AH]
+					q(51638, {	-- Beachhead
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(54182, {	-- Bilgewater Bash Brothers (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51669, {	-- Black-Eyed Bart
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51841, {	-- Blackthorne

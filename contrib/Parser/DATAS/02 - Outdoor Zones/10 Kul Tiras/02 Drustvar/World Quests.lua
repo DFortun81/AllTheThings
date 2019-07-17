@@ -412,6 +412,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51672, {	-- Tangled Webs
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(54187, {	-- Tea for Two
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

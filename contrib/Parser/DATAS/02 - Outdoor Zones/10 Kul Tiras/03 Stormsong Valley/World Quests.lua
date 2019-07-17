@@ -504,6 +504,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51817, {	-- Trapped Tortollans
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52209, {	-- Turtle Tactics
 						["lvl"] = 120,
 						["collectible"] = false,
