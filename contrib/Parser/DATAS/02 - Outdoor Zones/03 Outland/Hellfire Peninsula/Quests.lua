@@ -389,7 +389,12 @@ _.Zones =
 						}),
 					}),
 				})),
-				qh(9442),	-- A Debilitating Sickness
+				q(9442,  {	-- A Debilitating Sickness
+					["u"] = 40,
+					["sourceQuest"] = 9441,	-- Envoy to the Mag'har
+					["qg"] = 17123,	-- Earthcaller Ryga
+					["races"] = HORDE_ONLY,
+				}),
 				qa(9355, {	-- A Job for an Intelligent Man
 					i(25785),	-- Adept's Band
 					i(25784),	-- Imbued Chain
@@ -400,6 +405,18 @@ _.Zones =
 					i(25782),	-- Sunstrider Legguards
 				}),
 				q(10367),	-- A Traitor Among Us
+				q(9447,  {	-- Administering the Salve
+					["u"] = 40,
+					["sourceQuest"] = 9442,	-- A Debilitating Sickness
+					["qg"] = 17123,	-- Earthcaller Ryga
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						un(2, i(25492)),	-- Earthcaller's Mace
+						un(2, i(25496)),	-- Mag'har Bow
+						un(2, i(25494)),	-- Totemic Staff
+						un(2, i(25495)),	-- Wolfrider's Dagger
+					},
+				}),
 				qa(29689),	-- Advancing the Campaign
 				qh(29688),	-- Advancing the Campaign
 				qa(9383),	-- An Ambitious Plan
@@ -434,16 +451,24 @@ _.Zones =
 				qh(9397),	-- Birds of a Feather
 				q(11516),	-- Blast the Gateway
 				q(11515),	-- Blood for Blood
-				un(40, qa(47025)),	-- Blood: Aid of the Illidari
+				q(47025, {	-- Blood: Aid of the Illidari
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				qh(10250),	-- Bloody Vengeance
-				un(40, qa(47024)),	-- Brewmaster: Aid of the Illidari
+				q(47024, {	-- Brewmaster: Aid of the Illidari
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				qh(10391),	-- Cannons of Rage
 				qa(9427, {  -- Cleansing the Waters
 					i(25485),	-- Amaan's Signet
 					i(25486), 	-- Demonslayer's Wristguards
 					i(25484),	-- Telhamat Pendant
 				}),
-				un(40, q(45414)),	-- Confirming Suspicions
+				q(45414, {	-- Confirming Suspicions
+					["u"] = 40,
+				}),
 				qa(9399),	-- Cruel Taskmasters
 				qh(10136, {	-- Cruel's Intentions
 					i(28041),	-- Bladefist's Breadth
@@ -451,9 +476,25 @@ _.Zones =
 					i(28040),	-- Vengeance of the Illidari
 				}),
 				qa(10484),	-- Cursed Talismans
+				q(45843, {	-- Dark Omens
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				qa(9398),	-- Deadly Predators
 				qh(10229),	-- Decipher the Tome
 				qa(10916),	-- Digging for Prayer Beads
+				q(10139, {	-- Dispatching the Commander
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(28057),	-- Bonechewer Berserker's Vest
+						un(1, i(28054)),	-- Fleshripper's Bladed Chestplate
+						i(28055),	-- Gilded Crimson Chestplate
+						i(28052),	-- Goldweave Tunic
+						i(28051),	-- Jerkin of the Untamed Spirit
+						i(28050),	-- Sacred Feather Vest
+					},
+				}),
 				qa(10394),	-- Disruption - Forge Camp: Mageddon
 				qh(10392),	-- Doorway to the Abyss
 				qa(10937,  {  -- Drill the Drillmaster
@@ -465,6 +506,12 @@ _.Zones =
 --							qa(10763),	-- Dumphry's Request (removed, old BT key questline)
 				qa(10396),	-- Enemy of my Enemy...
 				qa(10754),	-- Entry Into the Citadel
+				q(9441,  {	-- Envoy to the Mag'har
+					["u"] = 40,
+					["sourceQuest"] = 9438,	-- Messenger to Thrall
+					["qg"] = 4949,	-- Thrall
+					["races"] = HORDE_ONLY
+				}),
 				qa(10143),	-- Expedition Point
 				q(9498, {	-- Falcon Watch
 					["qg"] = 21256,	-- Vurtok Axebreaker
@@ -491,7 +538,9 @@ _.Zones =
 					i(29399),	-- Rod of the Void Caller
 				}),
 				qa(9563),	-- Gaining Mirren's Trust
-				un(40, q(45413)),	-- Gathering Information
+				q(45413, {	-- Gathering Information
+					["u"] = 40,
+				}),
 				qa(10382),	-- Go to the Front
 --							qa(10762),	-- Grand Master Dumphry (removed, old BT key questline)
 				qh(10834,  {  -- Grillok "Darkeye"
@@ -501,7 +550,10 @@ _.Zones =
 					i(28051),	-- Jerkin of the Untamed Spirit
 					i(28050),	-- Sacred Feather Vest
 				}),
-				un(40, qa(47023)),	-- Guardian: Aid of the Illidari
+				q(47023, {	-- Guardian: Aid of the Illidari
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(9361),	-- Helboar, the Other White Meat
 				qa(10106),	-- Hellfire Fortifications
 				qa(13410),	-- Hellfire Fortifications
@@ -527,9 +579,7 @@ _.Zones =
 					i(29108),	-- Blade of the Unyielding
 					i(29109),	-- Rod of the Unyielding
 				}),
-				un(21, qa(11818)),	-- Honor the Flame
-				un(21, qh(11851)),	-- Honor the Flame
---							qa(10764),	-- Hotter than Hell (removed, old BT key questline)
+--				qa(10764),	-- Hotter than Hell (removed, old BT key questline)
 				q(10161,  {  -- In Case of Emergency...
 					i(25980),	-- Aerodynamic Scaled Vest
 					i(25981),	-- Dirigible Crash Helmet
@@ -568,6 +618,12 @@ _.Zones =
 					i(25502),	-- Lightbearer's Gauntlets
 					i(25504),	-- Pilgrim's Belt
 				}),
+				q(9438,  {	-- Messenger to Thrall
+					["u"] = 40,
+					["sourceQuest"] = 9406,	-- The Mag'har
+					["qg"] = 3230,	-- Nazgrel
+					["races"] = HORDE_ONLY,
+				}),
 				q(9373),	-- Missing Missive
 				qa(10163, {	-- Mission: The Abyssal Shelf
 					["qg"] = 20232,	-- Wing Commander Gryphongar
@@ -601,8 +657,14 @@ _.Zones =
 				qh(9345,{	-- Preparing the Salve
 					["qg"] = 16858,	-- Grelag
 				}),
-				un(40, qa(45412)),	-- Protection: Aid of the Illidari
-				un(40, qa(47022)),	-- Protection: Aid of the Illidari
+				q(45412, {	-- Protection: Aid of the Illidari
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(47022, {	-- Protection: Aid of the Illidari
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				qa(9385),	-- Rampaging Ravagers
 				q(9349),	-- Ravager Egg Roundup
 				qh(10291),	-- Report to Nazgrel
@@ -714,7 +776,10 @@ _.Zones =
 				qa(10936),	-- Trollbane is Looking for You
 				qh(9381),	-- Trueflight Arrows
 				qa(10050),	-- Unyielding Souls
-				un(40, qa(46314)),	-- Vengeance: Seeking Kor'vas
+				q(46314, {	-- Vengeance: Seeking Kor'vas
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				qh(10393),	-- Vile Plans
 				qh(10294),	-- Void Ridge
 				q(9351, {	-- Voidwalkers Gone Wild

@@ -10,105 +10,138 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 616,
 		["maps"] = { 617, 618 },
 		["coord"] = { 78.94, 33.62, 33 },	-- Blackrock Spire, Eastern Kingdoms
-		["groups"] = {
+		["g"] = {
 			n(-40, {	-- Legacy
 				un(2, ach(2188)),	-- Leeeeeeeeeeeeeroy!
 				n(-17, {	-- Quests (Legacy)
-					un(40, qh(6602, {	-- Blood of the Black Dragon Champion
-						un(2, i(16309)),	-- Drakefire Amulet
-					})),
-					un(40, qa(4765, {	-- Delivery to Ridgewell
-						un(2, i(15860)),	-- Blinkstrike Armguards
-						un(2, i(15861)),	-- Swiftfoot Treads
-					})),
-					un(40, qa(6502, {	-- Drakefire Amulet
-						un(2, i(16309)),	-- Drakefire Amulet
-					})),
-					un(40, qh(4974, {	-- For The Horde!
-						un(2, i(13965)),	-- Blackhand's Breadth
-						un(2, i(13968)),	-- Eye of the Beast
-						un(2, i(13966)),	-- Mark of Tyranny
-					})),
-					un(40, qa(6102, {	-- General Drakkisath's Demise
-						un(2, i(13965)),	-- Blackhand's Breadth
-						un(2, i(13968)),	-- Eye of the Beast
-						un(2, i(13966)),	-- Mark of Tyranny
-					})),
-					un(40, q(27445, { 	-- General Drakkisath, Hand of Nefarian
-						un(2, i(66001)), 	-- Aeyla's Staff
-						un(2, i(65934)), 	-- Staff of the Second Orb
-						un(2, i(65982)), 	-- Sword of Nefarian's Hand
-						un(2, i(65958)), 	-- Vaelan's Claw
-					})),
-					un(40, q(4866, {	-- Mother's Milk
-						un(2, i(15873)),	-- Ragged John's Neverending Cup
-					})),
-					un(40, q(4743, {	-- Seal of Ascension
-						un(2, i(12344)),	-- Seal of Ascension
-					})),
-					un(40, q(4768, {	-- The Darkstone Tablet
-						un(2, i(15860)),	-- Blinkstrike Armguards
-						un(2, i(15861)),	-- Swiftfoot Treads
-					})),
-					un(40, q(4867, { 	-- Urok Doomhowl
-						un(2, i(15867)),	-- Prismcharm
-					})),
-					q(8996, {	-- Return to Bodley
-						["qg"] = 16073,	-- Spirit of Lord Valthalak
-						["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
-						["lvl"] = 58,
+					q(6602, {	-- Blood of the Black Dragon Champion
 						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							un(2, i(16309)),	-- Drakefire Amulet
+						},
+					}),
+					q(4765, {	-- Delivery to Ridgewell
+						["u"] = 40,
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							un(2, i(15860)),	-- Blinkstrike Armguards
+							un(2, i(15861)),	-- Swiftfoot Treads
+						},
+					}),
+					q(6502, {	-- Drakefire Amulet
+						["u"] = 40,
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							un(2, i(16309)),	-- Drakefire Amulet
+						},
+					}),
+					q(4974, {	-- For The Horde!
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							un(2, i(13965)),	-- Blackhand's Breadth
+							un(2, i(13968)),	-- Eye of the Beast
+							un(2, i(13966)),	-- Mark of Tyranny
+						},
+					}),
+					q(6102, {	-- General Drakkisath's Demise
+						["u"] = 40,
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							un(2, i(13965)),	-- Blackhand's Breadth
+							un(2, i(13968)),	-- Eye of the Beast
+							un(2, i(13966)),	-- Mark of Tyranny
+						},
+					}),
+					q(27445, { 	-- General Drakkisath, Hand of Nefarian
+						["u"] = 40,
+						["g"] = {
+							un(2, i(66001)), 	-- Aeyla's Staff
+							un(2, i(65934)), 	-- Staff of the Second Orb
+							un(2, i(65982)), 	-- Sword of Nefarian's Hand
+							un(2, i(65958)), 	-- Vaelan's Claw
+						},
+					}),
+					q(4866, {	-- Mother's Milk
+						["u"] = 40,
+						["g"] = {
+							un(2, i(15873)),	-- Ragged John's Neverending Cup
+						},
+					}),
+					q(4743, {	-- Seal of Ascension
+						["u"] = 40,
+						["g"] = {
+							un(2, i(12344)),	-- Seal of Ascension
+						},
+					}),
+					q(4768, {	-- The Darkstone Tablet
+						["u"] = 40,
+						["g"] = {
+							un(2, i(15860)),	-- Blinkstrike Armguards
+							un(2, i(15861)),	-- Swiftfoot Treads
+						},
+					}),
+					q(4867, { 	-- Urok Doomhowl
+						["u"] = 40,
+						["g"] = {
+							un(2, i(15867)),	-- Prismcharm
+						},
+					}),
+					q(8996, {	-- Return to Bodley
+						["u"] = 40,
+						["qg"] = 16073,	-- Spirit of Lord Valthalak
+						["lvl"] = 58,
+						["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
 					}),
 				}),
 				n(0, {	-- Zone Drop (Legacy)
-					["groups"] = {
-						n(10318, {	-- Blackhand Assassin
-							un(7, i(15774)),	-- Pattern: Heavy Scorpid Shoulders
-							un(7, i(16713)),	-- Shadowcraft Belt
-						}),
-						n(9817, { 	-- Blackhand Dreadweaver
-							un(7, i(16703)),	-- Dreadmist Bracers
-							un(2, i(13371)),	-- Father Flame
-						}),
-						n(10317, { 	-- Blackhand Elite
-							un(7, i(16247)),	-- Formula: Enchant 2H Weapon - Superior Impact
-						}),
-						n(10319, { 	-- Blackhand Iron Guard
-							un(7, i(16735)),	-- Bracers of Valor
-						}),
-						n(9818, { 	-- Blackhand Summoner
-							un(7, i(16696)),	-- Devout Belt
-						}),
-						n(	9819, {	-- Blackhand Veteran
-							un(2, i(13371)),	-- Father Flame
-						}),
-						n(10366, { 	-- Rage Talon Dragon Guard
-							un(7, i(16680)), 	-- Beaststalker's Belt
-						}),
-						n(9096, { 	-- Rage Talon Dragonspawn
-							un(7, i(16681)),	-- Beaststalker's Bindings
-							un(2, i(13371)),	-- Father Flame
-						}),
-						n(10372, { 	-- Rage Talon Fire Tongue
-							un(7, i(16683)),	-- Magister's Bindings
-						}),
-						n(10083, {	-- Rage Talon Flamescale
-							un(7, i(16673)), 	-- Cord of Elements
-							un(2, i(13371)),	-- Father Flame
-						}),
-						n(10258, {	-- Rookery Guardian
-							un(2, i(13371)),	-- Father Flame
-						}),
-						n(10683, {	-- Rookery Hatcher
-							un(2, i(13371)),	-- Father Flame
-						}),
-						n(10161, {	-- Rookery Whelp
-							un(2, i(13371)),	-- Father Flame
-						}),
-						i(17683, {	-- Book: Gift of the Wild Rank 2
-						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
-						}),
-					},
+					n(10318, {	-- Blackhand Assassin
+						un(7, i(15774)),	-- Pattern: Heavy Scorpid Shoulders
+						un(7, i(16713)),	-- Shadowcraft Belt
+					}),
+					n(9817, { 	-- Blackhand Dreadweaver
+						un(7, i(16703)),	-- Dreadmist Bracers
+						un(2, i(13371)),	-- Father Flame
+					}),
+					n(10317, { 	-- Blackhand Elite
+						un(7, i(16247)),	-- Formula: Enchant 2H Weapon - Superior Impact
+					}),
+					n(10319, { 	-- Blackhand Iron Guard
+						un(7, i(16735)),	-- Bracers of Valor
+					}),
+					n(9818, { 	-- Blackhand Summoner
+						un(7, i(16696)),	-- Devout Belt
+					}),
+					n(	9819, {	-- Blackhand Veteran
+						un(2, i(13371)),	-- Father Flame
+					}),
+					n(10366, { 	-- Rage Talon Dragon Guard
+						un(7, i(16680)), 	-- Beaststalker's Belt
+					}),
+					n(9096, { 	-- Rage Talon Dragonspawn
+						un(7, i(16681)),	-- Beaststalker's Bindings
+						un(2, i(13371)),	-- Father Flame
+					}),
+					n(10372, { 	-- Rage Talon Fire Tongue
+						un(7, i(16683)),	-- Magister's Bindings
+					}),
+					n(10083, {	-- Rage Talon Flamescale
+						un(7, i(16673)), 	-- Cord of Elements
+						un(2, i(13371)),	-- Father Flame
+					}),
+					n(10258, {	-- Rookery Guardian
+						un(2, i(13371)),	-- Father Flame
+					}),
+					n(10683, {	-- Rookery Hatcher
+						un(2, i(13371)),	-- Father Flame
+					}),
+					n(10161, {	-- Rookery Whelp
+						un(2, i(13371)),	-- Father Flame
+					}),
+					i(17683, {	-- Book: Gift of the Wild Rank 2
+					--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+					}),
 				}),
 				n(9816, { 	-- Pyroguard Emberseer
 					un(2, i(12929)),	-- Emberfury Talisman
@@ -127,19 +160,18 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				n(10509, { 	-- Jed Runewatcher
 					["description"] = "This is a rare that is not always present.",
-					["groups"] = {
+					["g"] = {
 						un(2, i(12605)),	-- Serpentine Skuller
 						un(2, i(12604)),	-- Starfire Tiara
 						un(2, i(12930)),	-- Briarwood Reed
 					},
 				}),
-				{	-- Goraluk Anvilcrack
-					["npcID"] = 10899,	-- Goraluk Anvilcrack
+				n(10899, {	-- Goraluk Anvilcrack
 					["u"] = 12,	-- Legacy Boss
 					["g"] = {
 						i(18779, { 	-- Bottom Half of Advanced Armorsmithing: Volume 1
 							["description"] = "Combine with the Top Half of Advanced Armorsmithing: Volume 1",
-							["groups"] = {
+							["g"] = {
 								i(18769, { 	-- Enchanted Thorium Platemail [Item was removed from the game and turned into gray item Torn Scroll]
 									q(7649, { 	-- Enchanted Thorium Platemail: Volume 1
 										un(2, i(12727)),	-- Plans: Enchanted Thorium Breastplate
@@ -147,21 +179,18 @@ _.Instances = { tier(1, {	-- Classic
 								}),
 							},
 						}),
-						{	-- Plans: Arcanite Champion
-							["itemID"] = 12834,	-- Plans: Arcanite Champion
+						i(12834, {	-- Plans: Arcanite Champion
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 							["u"] = 7,
-						},
-						{	-- Plans: Invulnerable Mail
-							["itemID"] = 12728,	-- Plans: Invulnerable Mail **Still in game as a general world drop now**
-						},
+						}),
+						i(12728),	-- Plans: Invulnerable Mail **Still in game as a general world drop now**
 						un(2, i(12837)),	-- Plans: Masterwork Stormhammer
 						un(2, i(18048)), 	-- Mastersmith's Hammer
 						un(2, i(13502)), 	-- Handcrafted Mastersmith Girdle
 						un(2, i(13498)), 	-- Handcrafted Mastersmith Leggings
 						un(2, i(18047)), 	-- Flame Walkers
 					},
-				},
+				}),
 				n(10339, { 	-- Gyth
 					un(7, i(13522)),	-- Recipe: Flask of Chromatic Resistance
 					un(2, i(12871, { 	-- Chromatic Carapace
@@ -195,11 +224,10 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(18103)),	-- Band of Rumination
 				}),
 				n(10430, { 	-- The Beast
-					{	-- Pristine Hide of the Beast
-						["itemID"] = 12731,	-- Pristine Hide of the Beast
+					i(12731, {	-- Pristine Hide of the Beast
 						["u"] = 2,			-- Removed in UBRS Revamp
 						["description"] = "This item was skinned off of The Beast with a skinning skill of 310. Prior to BC, this could only be accomplished with the Zulian Slicer or Finkle's Skinner.",
-						["groups"] = {
+						["g"] = {
 							q(5068, { 	-- Breastplate of Bloodthirst
 								un(2, i(12757)), 	-- Breastplate of Bloodthirst
 							}),
@@ -210,7 +238,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(12756)),	-- Leggings of Arcana
 							}),
 						},
-					},
+					}),
 					un(2, i(12709)),	-- Finkle's Skinner
 					un(2, i(12969)), 	-- Seeping Willow
 					un(2, i(12967)),	-- Bloodmoon Cloak
@@ -224,7 +252,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				n(16042, { 	-- Lord Valthalak
 					["description"] = "This boss could be summoned using the Brazier of Invocation.",
-					["groups"] = {
+					["g"] = {
 						un(2, i(22336)), 	-- Draconian Aegis of the Legion
 						un(2, i(22335)), 	-- Lord Valthalak's Staff of Command
 						un(2, i(22302)),	-- Ironweave Cowl

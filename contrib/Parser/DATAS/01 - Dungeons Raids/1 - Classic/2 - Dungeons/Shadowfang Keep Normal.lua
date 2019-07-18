@@ -10,20 +10,24 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			d(1, {		-- Normal
 				n(-17, {	-- Quests
-					qa(27917, { 	-- Sniffing Them Out
+					q(27917, { 	-- Sniffing Them Out
 						["qg"] = 47706,	-- Packleader Ivar Bloodfang
+						["races"] = ALLIANCE_ONLY,
 					}),
-					qa(27920, { 	-- Armored to the Teeth
+					q(27920, { 	-- Armored to the Teeth
 						["sourceQuests"] = { 27917 },	-- Sniffing Them Out
 						["qg"] = 47706,	-- Packleader Ivar Bloodfang
+						["races"] = ALLIANCE_ONLY,
 					}),
-					qa(27921, { 	-- Fighting Tooth and Claw
+					q(27921, { 	-- Fighting Tooth and Claw
 						["sourceQuests"] = { 27920 },	-- Armored to the Teeth
 						["qg"] = 47706,	-- Packleader Ivar Bloodfang
+						["races"] = ALLIANCE_ONLY,
 					}),
-					qa(27968, { 	-- Fury of the Pack
+					q(27968, { 	-- Fury of the Pack
 						["sourceQuests"] = { 27921 },	-- Fighting Tooth and Claw
 						["qg"] = 47706,	-- Packleader Ivar Bloodfang
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(65984), 	-- Breastplate of the Terrible Price
 							i(66002), 	-- Packleader's Pauldrons
@@ -34,20 +38,24 @@ _.Instances = { tier(1, {	-- Classic
 							i(131685), 	-- Boots of Painful Cost
 						},
 					}),
-					qh(27974, { 	-- This Land is Our Land
+					q(27974, { 	-- This Land is Our Land
 						["qg"] = 47293,	-- Deathstalker Commander Belmont
+						["races"] = HORDE_ONLY,
 					}),
-					qh(27988, { 	-- Plague...Plague Everywhere!
+					q(27988, { 	-- Plague...Plague Everywhere!
 						["sourceQuests"] = { 27974 },	-- This Land is Our Land
 						["qg"] = 47293,	-- Deathstalker Commander Belmont
+						["races"] = HORDE_ONLY,
 					}),
-					qh(27996, { 	-- Orders Are For the Living
+					q(27996, { 	-- Orders Are For the Living
 						["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
 						["qg"] = 47293,	-- Deathstalker Commander Belmont
+						["races"] = HORDE_ONLY,
 					}),
-					qh(27998, { 	-- Sweet, Merciless Revenge
+					q(27998, { 	-- Sweet, Merciless Revenge
 						["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
 						["qg"] = 47293,	-- Deathstalker Commander Belmont
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(66038), 	-- Breastplate of the Terrible Price
 							i(66044), 	-- Deathstalker Pauldrons
@@ -278,50 +286,70 @@ _.Instances = { tier(1, {	-- Classic
 				["description"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
 				["g"] = {
 					n(-17, { 		-- Legacy Quests
-						un(40, qh(1014, {	-- Arugal Must Die
-							un(2, i(6414)),	-- Seal of Sylvanas
-						})),
-						un(40, qh(1098, {	-- Deathstalkers in Shadowfang
-							un(2, i(3324)),	-- Ghostly Mantle
-						})),
-						un(40, qh(1013, {	-- The Book of Ur
-							un(2, i(6335)),	-- Grizzled Boots
-							un(2, i(4534)),	-- Steel-Clasped Bracers
-						})),
-						un(40, q(1740, {	-- The Orb of Soran'ruk
+						q(1014, {	-- Arugal Must Die
+							["u"] = 40,
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								un(2, i(6414)),	-- Seal of Sylvanas
+							},
+						}),
+						q(1098, {	-- Deathstalkers in Shadowfang
+							["u"] = 40,
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								un(2, i(3324)),	-- Ghostly Mantle
+							},
+						}),
+						q(1013, {	-- The Book of Ur
+							["u"] = 40,
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								un(2, i(6335)),	-- Grizzled Boots
+								un(2, i(4534)),	-- Steel-Clasped Bracers
+							},
+						}),
+						q(1740, {	-- The Orb of Soran'ruk
+							["u"] = 40,
 							["classes"] = { 9 },
 							["g"] = {
 								un(2, i(6898)),	-- Orb of Soran'ruk
 								un(2, i(15109)),	-- Staff of Soran'ruk
 							},
-						})),
-						un(40, qh(9692, {	-- The Path of the Adept
+						}),
+						q(9692, {	-- The Path of the Adept
+							["u"] = 40,
+							["races"] = HORDE_ONLY,
 							["classes"] = { 2 },
 							["g"] = {
-								un(40, q(9707, {	-- Forging the Weapon
+								q(9707, {	-- Forging the Weapon
+									["u"] = 40,
 									["classes"] = { 2 },
 									["g"] = {
-										un(40, q(9710, {	-- The Blood-Tempered Ranseur
+										q(9710, {	-- The Blood-Tempered Ranseur
+											["u"] = 40,
 											["classes"] = { 2 },
 											["g"] = {
 												un(2, i(25464)),	-- Blood-Tempered Ranseur
 											},
-										})),
+										}),
 									},
-								})),
+								}),
 							},
-						})),
-						un(40, qa(1654, {	-- The Test of Righteousness
+						}),
+						q(1654, {	-- The Test of Righteousness
+							["u"] = 40,
+							["races"] = ALLIANCE_ONLY,
 							["classes"] = { 2 },
 							["g"] = {
-								un(40, q(1806, {	-- The Test of Righteousness
+								q(1806, {	-- The Test of Righteousness
+									["u"] = 40,
 									["classes"] = { 2 },
 									["g"] = {
 										un(2, i(6953)),	-- Verigan's Fist
 									},
-								})),
+								}),
 							},
-						})),
+						}),
 					}),
 					un(43, n(3886, {	-- Razorclaw the Butcher
 						un(2, i(6226)),	-- Bloody Apron

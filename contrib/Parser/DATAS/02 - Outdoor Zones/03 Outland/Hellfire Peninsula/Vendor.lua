@@ -96,6 +96,56 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
+				n(18751, {	-- Kalaen <Jewelcrafting Trainer>
+					["races"] = HORDE_ONLY,
+					["description"] = "This vendor's designs have been removed but recipes are still available at trainer.",
+					["g"] = {
+						i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23130, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23148, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(28596, {	-- Design: Delicate Blood Garnet (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23137, {	-- Design: Glinting Shadow Draenite (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23135, {	-- Design: Inscribed Flame Spessarite (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23141, {	-- Design: Jagged Deep Peridot (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23140, {	-- Design: Radiant Deep Peridot (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23152, {	-- Design: Solid Azure Moonstone (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23147, {	-- Design: Sovereign Shadow Draenite (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23144, {	-- Design: Timeless Shadow Draenite (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+					},
+				}),
 				n(18775, {	-- Lebowski <Engineering Trainer>
 					["coord"] = { 55.6, 65.6, 100 },
 					["races"] = ALLIANCE_ONLY,
@@ -218,6 +268,56 @@ _.Zones =
 					["g"] = {
 						i(30753),	-- Warphorn Spear
 						i(30755),	-- Mag'hari Fighting Claw
+					},
+				}),
+				n(18774, {	-- Tatiana <Jewelcrafting Trainer>
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "This vendor's designs have been removed but recipes are still available at trainer.",
+					["g"] = {
+						i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23130, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23148, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(28596, {	-- Design: Delicate Blood Garnet (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23137, {	-- Design: Glinting Shadow Draenite (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23135, {	-- Design: Inscribed Flame Spessarite (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23141, {	-- Design: Jagged Deep Peridot (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23140, {	-- Design: Radiant Deep Peridot (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23152, {	-- Design: Solid Azure Moonstone (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23147, {	-- Design: Sovereign Shadow Draenite (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(23144, {	-- Design: Timeless Shadow Draenite (Removed and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
 					},
 				}),
 				n(18266, {	-- Warrant Officer Tracy Proudwell

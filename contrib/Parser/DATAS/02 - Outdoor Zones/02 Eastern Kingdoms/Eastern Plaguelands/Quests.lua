@@ -582,137 +582,94 @@ _.Zones =
 				q(27521, {	-- Wretched Hive of Scum and Villainy
 					["qg"] = 45826,	-- Kirkian Dawnshield
 				}),
-										--[[
-					Exploration Achievement: 771
-				1	Thondroril River
-				2	The Marris Stead
-				3	The Undercroft
-				4	Crown Guard Tower
-				5	The Fungal Vale
-				6	Darrowshire
-				7	Pestilent Scar
-				8	Corin's Crossing
-				9	Lake Mereldar
-				10	Tyr's Hand
-				11	Light's Hope Chapel
-				12	The Infectis Scar
-				13	The Noxious Glade
-				14	Eastwall Tower
-				15	Blackwood Lake
-				16	Northdale
-				17	Zul'Mashar
-				18	Northpass Tower
-				19	Quel'Lithien Lodge
-				20	Terrordale
-				21	Plaguewood
-				22	Stratholme
-				23	Ruins of the Scarlet Enclave
-				--]]
 				--[[
 				Fiona's Caravan Repeatable Quests (for a zone-wide buff)
 				q(27560, {	-- Argus' Journal
-					["qg"] = 45400,	-- 
+					["qg"] = 45400,	--
 					["repeatable"] = true,
 				}),
 				q(27562, {	-- Beezil's Cog
-					["qg"] = 45400,	-- 
+					["qg"] = 45400,	--
 					["repeatable"] = true,
 				}),
 				q(27555, {	-- Fiona's Lucky Charm
-					["qg"] = 45400,	-- 
+					["qg"] = 45400,	--
 					["repeatable"] = true,
 				}),
 				q(27556, {	-- Gidwin's Weapon Oil
-					["qg"] = 45400,	-- 
+					["qg"] = 45400,	--
 					["repeatable"] = true,
 				}),
 				q(27558, {	-- Pamela's Doll
-					["qg"] = 45400,	-- 
+					["qg"] = 45400,	--
 					["repeatable"] = true,
 				}),
 				q(27561, {	-- Rimblat's Stone
-					["qg"] = 45400,	-- 
+					["qg"] = 45400,	--
 					["repeatable"] = true,
 				}),
 				q(27557, {	-- Tarenar's Talisman
-					["qg"] = 45400,	-- 
+					["qg"] = 45400,	--
 					["repeatable"] = true,
 				}),
 				q(27559, {	-- Vex'tul's Armbands
-					["qg"] = 45400,	-- 
+					["qg"] = 45400,	--
 					["repeatable"] = true,
 				}),
 				--]]
 				--[[
 				Class Hall Quests
 				q(43797, {	-- Aiding the Conclave (QG in Paladin order hall?)
-					["qg"] = 111616,	-- 
+					["qg"] = 111616,	--
 					["classes"] = {5},	-- Priest
 				})),
 				q(43491, {	-- Allies of the Light (in scenario?)
-					["qg"] = 110969,	-- 
+					["qg"] = 110969,	--
 				}),
 				q(42919, {	-- The Scion's Legacy
-					["qg"] = 90259,	-- 
+					["qg"] = 90259,	--
 				}),
 				--]]
 --[[
 				q(13189, {	-- Saurfang's Blessing
-					["qg"] = 31084,	-- 
+					["qg"] = 31084,	--
 					["races"] = HORDE_ONLY,
 				}),
 				q(13166, {	-- The Battle For The Ebon Hold
-					["qg"] = 31084,	-- 
+					["qg"] = 31084,	--
 					["classes"] = {6},	-- Death Knight
 				})),
 				q(13188, {	-- Where Kings Walk
-					["qg"] = 31084,	-- 
+					["qg"] = 31084,	--
 					["races"] = ALLIANCE_ONLY,
 				}),
 --]]
-				{	-- Corrupter's Scourgestones
-					["questID"] = 5408,	-- Corruptor's Scourgestones
+				q(5408, {	-- Corruptor's Scourgestones
 					["qg"] = 11039,		-- Duke Nicholas Zverenhoff
-					["u"] = 2,			-- Removed in Patch 4.0.3
-					["coords"] = {
-						{ 75.76, 53.81, 23 },
-					},
+					["u"] = 40,			-- Removed in Patch 4.0.3
+					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
-						{	-- Argent Dawn Valor Token
-							["itemID"] = 12844,	-- Argent Dawn Valor Token
-							["u"] = 2,			-- Removed in Patch 4.0.3
-						},
+						un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
-				},
-				{	-- Invader's Scourgestones
-					["questID"] = 5509,	-- Corruptor's Scourgestones
+				}),
+				q(5509, {	-- Invader's Scourgestones
 					["qg"] = 11039,		-- Duke Nicholas Zverenhoff
-					["u"] = 2,			-- Removed in Patch 4.0.3
-					["coords"] = {
-						{ 75.76, 53.81, 23 },
-					},
+					["u"] = 40,			-- Removed in Patch 4.0.3
+					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
-						{	-- Argent Dawn Valor Token
-							["itemID"] = 12844,	-- Argent Dawn Valor Token
-							["u"] = 2,			-- Removed in Patch 4.0.3
-						},
+						un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
-				},
-				{	-- Minion's Scourgestones
-					["questID"] = 5510,	-- Corruptor's Scourgestones
+				}),
+				q(5510, {	-- Minion's Scourgestones
 					["qg"] = 11039,		-- Duke Nicholas Zverenhoff
-					["u"] = 2,			-- Removed in Patch 4.0.3
-					["coords"] = {
-						{ 75.76, 53.81, 23 },
-					},
+					["u"] = 40,			-- Removed in Patch 4.0.3
+					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
-						{	-- Argent Dawn Valor Token
-							["itemID"] = 12844,	-- Argent Dawn Valor Token
-							["u"] = 2,			-- Removed in Patch 4.0.3
-						},
+						un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
-				},
-				un(40, q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
+				}),
+				q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
+					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
 						un(2, i(22657)),	-- Amulet of the Dawn
@@ -722,8 +679,9 @@ _.Zones =
 						un(2, i(22678)),	-- Talisman of Ascendance
 						un(2, i(22656)),	-- The Purifier
 					},
-				})),
-				un(40, q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
+				}),
+				q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
+					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
 						un(2, i(22657)),	-- Amulet of the Dawn
@@ -733,8 +691,9 @@ _.Zones =
 						un(2, i(22678)),	-- Talisman of Ascendance
 						un(2, i(22656)),	-- The Purifier
 					},
-				})),
-				un(40, q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
+				}),
+				q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
+					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
 						un(2, i(22657)),	-- Amulet of the Dawn
@@ -744,8 +703,9 @@ _.Zones =
 						un(2, i(22678)),	-- Talisman of Ascendance
 						un(2, i(22656)),	-- The Purifier
 					},
-				})),
-				un(40, q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
+				}),
+				q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
+					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
 						un(2, i(22657)),	-- Amulet of the Dawn
@@ -755,8 +715,9 @@ _.Zones =
 						un(2, i(22678)),	-- Talisman of Ascendance
 						un(2, i(22656)),	-- The Purifier
 					},
-				})),
-				un(40, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
+				}),
+				q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
+					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
 						un(2, i(22681)),	-- Band of Piety
@@ -765,8 +726,9 @@ _.Zones =
 						un(2, i(22690)),	-- Leggings of the Plague Hunter
 						un(2, i(22689)),	-- Sanctified Leather Helm
 					},
-				})),
-				un(40, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
+				}),
+				q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
+					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
 						un(2, i(22681)),	-- Band of Piety
@@ -775,8 +737,9 @@ _.Zones =
 						un(2, i(22690)),	-- Leggings of the Plague Hunter
 						un(2, i(22689)),	-- Sanctified Leather Helm
 					},
-				})),
-				un(40, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
+				}),
+				q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
+					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
 						un(2, i(22681)),	-- Band of Piety
@@ -785,8 +748,9 @@ _.Zones =
 						un(2, i(22690)),	-- Leggings of the Plague Hunter
 						un(2, i(22689)),	-- Sanctified Leather Helm
 					},
-				})),
-				un(40, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
+				}),
+				q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
+					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
 						un(2, i(22681)),	-- Band of Piety
@@ -795,70 +759,110 @@ _.Zones =
 						un(2, i(22690)),	-- Leggings of the Plague Hunter
 						un(2, i(22689)),	-- Sanctified Leather Helm
 					},
-				})),
-				un(40, q(4971, {	-- A Matter of Time
-					un(2, i(15813)),	-- Gold Link Belt
-					un(2, i(15812)),	-- Orchid Amice
-				})),
-				un(40, qh(6135, {	-- Duskwing, Oh How I Hate Thee...
-					un(2, i(16994)),	-- Duskwing Gloves
-					un(2, i(16995)),	-- Duskwing Mantle
-				})),
-				un(40, q(9237, {	-- Glacial Cloak [Quest]
-					["qg"] = 16376,	-- 
+				}),
+				q(4971, {	-- A Matter of Time
+					["u"] = 40,
+					["g"] = {
+						un(2, i(15813)),	-- Gold Link Belt
+						un(2, i(15812)),	-- Orchid Amice
+					},
+				}),
+				q(6135, {	-- Duskwing, Oh How I Hate Thee...
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(16994)),	-- Duskwing Gloves
+						un(2, i(16995)),	-- Duskwing Mantle
+					},
+				}),
+				q(9237, {	-- Glacial Cloak [Quest]
+					["u"] = 40,
+					["qg"] = 16376,	--
 					["g"] = {
 						un(8, i(22658)),	-- Glacial Cloak
 					},
-				})),
-				un(40, q(6024, {	-- Hameya's Plea
-					un(2, i(15815)),	-- Hameya's Cloak
-					un(2, i(15814)),	-- Hameya's Slayer
-				})),
-				un(40, q(5942, {	-- Hidden Treasures
-					un(2, i(15856)),	-- Archlight Talisman
-					un(2, i(15857)),	-- Magebane Scion
-					un(2, i(15855)),	-- Ring of Protection
-				})),
-				un(40, {		-- Houses of the Holy
-					["questID"] = 5243,	-- Houses of the Holy
+				}),
+				q(6024, {	-- Hameya's Plea
+					["u"] = 40,
+					["g"] = {
+						un(2, i(15815)),	-- Hameya's Cloak
+						un(2, i(15814)),	-- Hameya's Slayer
+					},
+				}),
+				q(5942, {	-- Hidden Treasures
+					["u"] = 40,
+					["g"] = {
+						un(2, i(15856)),	-- Archlight Talisman
+						un(2, i(15857)),	-- Magebane Scion
+						un(2, i(15855)),	-- Ring of Protection
+					},
+				}),
+				q(5243, {	-- Houses of the Holy
+					["u"] = 40,
 					["qg"]	= 11036,	-- Leonid Barthalomew the Revered
 					["g"] = {
 						un(2, i(13217)),	-- Band of the Penitent
 						un(2, i(13216)),	-- Crown of the Penitent
 					},
 				}),
-				un(40, qh(6163, {	-- Ramstein
-					un(2, i(17001)),	-- Elemental Circle
-					un(2, i(18022)),	-- Royal Seal of Alexis
-				})),
-				un(40, q(5213, {	-- The Active Agent
-					un(2, i(19812)),	-- Rune of the Dawn
-					un(2, i(13209)),	-- Seal of the Dawn
-				})),
-				un(40, q(5265, {	-- The Argent Hold
-					un(2, i(13246)),	-- Argent Avenger
-					un(2, i(13249)),	-- Argent Crusader
-					un(2, i(13243)),	-- Argent Defender
-				})),
-				un(40, qh(6136, {	-- The Corpulent One
-					un(2, i(17002)),	-- Ichor Spitter
-					un(2, i(17004)),	-- Sarah's Guide
-					un(2, i(17003)),	-- Skullstone Hammer
-				})),
-				un(40, q(5214, {	-- The Great Fras Siabi
-					un(2, i(13171)),	-- Smokey's Lighter
-				})),
-				un(40, q(9211, {	-- The Ice Guard
-					un(2, i(22636)),	-- Ice Guard
-				})),
-				un(40, q(9213, {	-- The Shadow Guard
-					un(2, i(22638)),	-- Shadow Guard
-				})),
-				un(40, q(6041, {	-- When Smokey Sings, I Get Violent
-					un(2, i(17523)),	-- Smokey's Drape
-					un(2, i(16992)),	-- Smokey's Explosive Launcher
-					un(2, i(16993)),	-- Smokey's Fireshooter
-				})),
+				q(6163, {	-- Ramstein
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(17001)),	-- Elemental Circle
+						un(2, i(18022)),	-- Royal Seal of Alexis
+					},
+				}),
+				q(5213, {	-- The Active Agent
+					["u"] = 40,
+					["g"] = {
+						un(2, i(19812)),	-- Rune of the Dawn
+						un(2, i(13209)),	-- Seal of the Dawn
+					},
+				}),
+				q(5265, {	-- The Argent Hold
+					["u"] = 40,
+					["g"] = {
+						un(2, i(13246)),	-- Argent Avenger
+						un(2, i(13249)),	-- Argent Crusader
+						un(2, i(13243)),	-- Argent Defender
+					},
+				}),
+				q(6136, {	-- The Corpulent One
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(17002)),	-- Ichor Spitter
+						un(2, i(17004)),	-- Sarah's Guide
+						un(2, i(17003)),	-- Skullstone Hammer
+					},
+				}),
+				q(5214, {	-- The Great Fras Siabi
+					["u"] = 40,
+					["g"] = {
+						un(2, i(13171)),	-- Smokey's Lighter
+					},
+				}),
+				q(9211, {	-- The Ice Guard
+					["u"] = 40,
+					["g"] = {
+						un(2, i(22636)),	-- Ice Guard
+					},
+				}),
+				q(9213, {	-- The Shadow Guard
+					["u"] = 40,
+					["g"] = {
+						un(2, i(22638)),	-- Shadow Guard
+					},
+				}),
+				q(6041, {	-- When Smokey Sings, I Get Violent
+					["u"] = 40,
+					["g"] = {
+						un(2, i(17523)),	-- Smokey's Drape
+						un(2, i(16992)),	-- Smokey's Explosive Launcher
+						un(2, i(16993)),	-- Smokey's Fireshooter
+					},
+				}),
 				-- Part of the Dungeon 2 Set Questline
 				q(8945, {	-- Dead Man's Plea
 					["qg"] = 16016,	-- Anthion Harmon
@@ -869,7 +873,7 @@ _.Zones =
 					},
 					["lvl"] = 58,
 					["u"] = 40,
-				}),					
+				}),
 				q(8947, {	-- Anthion's Strange Request
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
@@ -888,7 +892,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = ALLIANCE_ONLY,						
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 58,
 					["u"] = 40,
@@ -902,7 +906,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = ALLIANCE_ONLY,						
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 58,
 					["u"] = 40,
@@ -916,7 +920,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = ALLIANCE_ONLY,						
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 58,
 					["u"] = 40,
@@ -930,7 +934,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = ALLIANCE_ONLY,						
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 58,
 					["u"] = 40,
@@ -944,7 +948,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = ALLIANCE_ONLY,						
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 58,
 					["u"] = 40,
@@ -958,7 +962,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = ALLIANCE_ONLY,						
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 58,
 					["u"] = 40,
@@ -972,7 +976,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = ALLIANCE_ONLY,						
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 58,
 					["u"] = 40,
@@ -986,7 +990,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = ALLIANCE_ONLY,						
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1000,7 +1004,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = ALLIANCE_ONLY,						
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1014,7 +1018,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1028,7 +1032,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1042,7 +1046,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1056,7 +1060,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1070,7 +1074,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1084,7 +1088,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1098,7 +1102,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1112,7 +1116,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 58,
 					["u"] = 40,
@@ -1126,7 +1130,7 @@ _.Zones =
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
-					["races"] = HORDE_ONLY,						
+					["races"] = HORDE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 58,
 					["u"] = 40,

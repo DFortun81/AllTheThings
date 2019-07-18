@@ -15,16 +15,18 @@ _.Zones =
 					["coord"] = { 54.7, 44.3, 111 },
 					["sourceQuests"] = 10210,	-- A'dal
 				}),
-				qh(10167, {	-- Auchindoun...
+				q(10167, {	-- Auchindoun...
 					["qg"] = 18481,	-- A'dal
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
 				}),
 				q(10180, {	-- Can't Stay Away
 					["qg"] = 19045,	-- Oloraak
 					["isBreadcrumb"] = true,
 				}),
-				qh(11046, {	-- Chief Apothecary Hildagard
+				q(11046, {	-- Chief Apothecary Hildagard
 					["qg"] = 19678,	-- Fantei
+					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
 				}),
 				q(44863, {	-- Clearing the Air
@@ -266,8 +268,9 @@ _.Zones =
 					["qg"] = 19715,	-- Ezekiel
 					["sourceQuests"] = { 10228 },	-- Ezekiel *UNTESTED*
 				}),
-				qa(11045, {	-- Zorus the Judicator
+				q(11045, {	-- Zorus the Judicator
 					["qg"] = 19678,	-- Fantei
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "A Ghost in the Machine" in SMV, mutually exclusive w/other bcrumbs
 				}),
 			}),

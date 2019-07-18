@@ -9,11 +9,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["mapID"] = 598,
 		["maps"] = { 596, 597, 599, 600 },
 		["coord"] = { 51.55, 27.23, 543 },	-- Gorgrond, Draenor
-		["groups"] = {
+		["g"] = {
 			d(17, {		-- LFR
 				n(0, {	-- Zone Drop
 					un(40, i(115510, {	-- Elemental Rune
-						["groups"] = {
+						["g"] = {
 							un(40, i(115509)),	-- Elemental Tablet
 						},
 						["crs"] = {
@@ -34,7 +34,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
-					["groups"] = {
+					["g"] = {
 						cr(77182, e(1202, {	-- Oregorger
 							{
 								["achievementID"] = 8989,	-- Slagworks
@@ -95,7 +95,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
-					["groups"] = {
+					["g"] = {
 						cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 							{
 								["achievementID"] = 8990,	-- Black Forge
@@ -160,7 +160,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
-					["groups"] = {
+					["g"] = {
 						cr(76865, e(1122, {	-- Beastlord Darmac
 							{
 								["achievementID"] = 8991,	-- Iron Assembly
@@ -232,7 +232,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
-					["groups"] = {
+					["g"] = {
 						cr(77325, e(959, {	-- Blackhand
 							i(116391),	-- Blackhand Forgehammer
 							i(116393),	-- Dagger of the Shattered Crucible
@@ -273,7 +273,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(119340),	-- Iron-Flecked Sandals
 					i(119339),	-- Treads of the Veteran Smith
 					un(40, i(115510, {	-- Elemental Rune
-						["groups"] = {
+						["g"] = {
 							un(40, i(115509)),	-- Elemental Tablet
 						},
 						["crs"] = {
@@ -478,7 +478,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(76865, e(1122, {	-- Beastlord Darmac
 					{
 						["achievementID"] = 8981,	-- Fain Would Lie Down
-						["groups"] = {
+						["g"] = {
 							{
 								["criteriaID"] = 1,	-- Dreadwing Mounted First
 								["creatureID"] = 76874,	-- Dreadwing
@@ -603,9 +603,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible
 					i(120277, {	-- Essence of the Iron Conqueror
-						qa(37553, {	-- Essence of the Iron Conqueror
+						q(37553, {	-- Essence of the Iron Conqueror
+							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120215, {	-- Helm of the Iron Conqueror
 									i(115568),	--
 									i(115586),	--
@@ -635,9 +636,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(119310, {	-- Essence of the Iron Conqueror
-						qh(37540, {	-- Essence of the Iron Conqueror
+						q(37540, {	-- Essence of the Iron Conqueror
+							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120215, {	-- Helm of the Iron Conqueror
 									i(115568),	--
 									i(115586),	--
@@ -667,9 +669,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(120279, {	-- Essence of the Iron Protector
-						qa(37555, {	-- Essence of the Iron Protector
+						q(37555, {	-- Essence of the Iron Protector
+							["races"] = ALLIANCEE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120225, {	-- Helm of the Iron Protector
 									i(115584),	--
 									i(115556),	--
@@ -704,9 +707,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(119323, {	-- Essence of the Iron Protector
-						qh(37543, {	-- Essence of the Iron Protector
+						q(37543, {	-- Essence of the Iron Protector
+							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120225, {	-- Helm of the Iron Protector
 									i(115584),	--
 									i(115556),	--
@@ -741,9 +745,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(120278, {	-- Essence of the Iron Vanquisher
-						qa(37554, {	-- Essence of the Iron Vanquisher
+						q(37554, {	-- Essence of the Iron Vanquisher
+							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120218, {	-- Helm of the Iron Vanquisher
 									i(115553),	--
 									i(115542),	--
@@ -778,9 +783,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(119316, {	-- Essence of the Iron Vanquisher
-						qh(37541, {	-- Essence of the Iron Vanquisher
+						q(37541, {	-- Essence of the Iron Vanquisher
+							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120218, {	-- Helm of the Iron Vanquisher
 									i(115553),	--
 									i(115542),	--
@@ -833,10 +839,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(15, {		-- Heroic
 				n(-17, {	-- Quests
-					{
-						["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
+					q(37030, {	-- Sigil of the Black Hand (Heroic)
 						["qg"] = 87225,	-- Goraluk Anvilcrack
-					},
+					}),
 				}),
 				n(0, {		-- Zone Drop
 					i(119334),	-- Bracers of Callous Disregard
@@ -848,7 +853,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(119340),	-- Iron-Flecked Sandals
 					i(119339),	-- Treads of the Veteran Smith
 					un(40, i(115510, {	-- Elemental Rune
-						["groups"] = {
+						["g"] = {
 							un(40, i(115509)),	-- Elemental Tablet
 						},
 						["crs"] = {
@@ -929,10 +934,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115535),	-- Ogreskull Boneplate Greaves
 						i(115573),	-- Poisoner's Legguards
 					}),
-					{
-						["itemID"] = 118387,	-- Ember of the Mountain (Heroic)
+					i(118387, {	-- Ember of the Mountain (Heroic)
 						["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
-					},
+					}),
 					i(113886),	-- Crescent of Living Magma
 					i(113885),	-- Mouth of The Fury
 					i(113891),	-- Blast-Proof Cowl
@@ -1032,10 +1036,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115539),	-- Ogreskull Boneplate Greathelm
 						i(115572),	-- Poisoner's Helmet
 					}),
-					{
-						["itemID"] = 118386,	-- Heart of Stone (Heroic)
+					i(118386, {	-- Heart of Stone (Heroic)
 						["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
-					},
+					}),
 					i(113934),	-- Fang of the Earth
 					i(113927),	-- Kromog's Brutal Fist
 					i(113926),	-- Kromog's Protecting Palm
@@ -1053,7 +1056,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(76865, e(1122, {	-- Beastlord Darmac
 					{
 						["achievementID"] = 8981,	-- Fain Would Lie Down
-						["groups"] = {
+						["g"] = {
 							{
 								["criteriaID"] = 1,	-- Dreadwing Mounted First
 								["creatureID"] = 76874,	-- Dreadwing
@@ -1153,10 +1156,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(115538),	-- Ogreskull Boneplate Gauntlets
 							i(115571),	-- Poisoner's Gloves
 						}),
-						{
-							["itemID"] = 118385,	-- Sliver of Iron (Heroic)
+						i(118385, {	-- Sliver of Iron (Heroic)
 							["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
-						},
+						}),
 						i(113966),	-- Gar'an's Brutal Spearlauncher
 						i(113973),	-- Koloch Na, the Blood Feast
 						i(113965),	-- Sorka's Chainfist
@@ -1175,16 +1177,16 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				cr(77325, e(959, {	-- Blackhand
-					{
-						["achievementID"] = 9444,	-- Ahead of the Curve: Blackhand's Crucible
+					ach(9444, {	-- Ahead of the Curve: Blackhand's Crucible
 						["u"] = 2,	-- Legacy Achievement
-					},
+					}),
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible
 					i(120280, {	-- Essence of the Iron Conqueror
-						qa(37557, {	-- Essence of the Iron Conqueror
+						q(37557, {	-- Essence of the Iron Conqueror
+							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120230, {	-- Helm of the Iron Conqueror
 									i(115568),
 									i(115586),
@@ -1214,9 +1216,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(120206, {	-- Essence of the Iron Conqueror
-						qh(37551, {	-- Essence of the Iron Conqueror
+						q(37551, {	-- Essence of the Iron Conqueror
+							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120230, {	-- Helm of the Iron Conqueror
 									i(115568),
 									i(115586),
@@ -1246,9 +1249,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(120281, {	-- Essence of the Iron Protector
-						qa(37559, {	-- Essence of the Iron Protector
+						q(37559, {	-- Essence of the Iron Protector
+							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120240, {	-- Helm of the Iron Protector
 									i(115584),
 									i(115556),
@@ -1283,9 +1287,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(120207, {	-- Essence of the Iron Protector
-						qh(37547, {	-- Essence of the Iron Protector
+						q(37547, {	-- Essence of the Iron Protector
+							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120240, {	-- Helm of the Iron Protector
 									i(115584),
 									i(115556),
@@ -1320,9 +1325,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(120282, {	-- Essence of the Iron Vanquisher
-						qa(37558, {	-- Essence of the Iron Vanquisher
+						q(37558, {	-- Essence of the Iron Vanquisher
+							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120233, {	-- Helm of the Iron Vanquisher
 									i(115553),
 									i(115542),
@@ -1357,9 +1363,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					}),
 					i(120208, {	-- Essence of the Iron Vanquisher
-						qh(37549, {	-- Essence of the Iron Vanquisher
+						q(37549, {	-- Essence of the Iron Vanquisher
+							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(120233, {	-- Helm of the Iron Vanquisher
 									i(115553),
 									i(115542),
@@ -1412,11 +1419,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(16, {		-- Mythic
 				n(-17, {	-- Quests
-					{
-						["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
+					q(37031, {	-- Sigil of the Black Hand (Mythic)
 						["qg"] = 87225,	-- Goraluk Anvilcrack
 						["description"] = "The quest giver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic Difficulty each week.",
-					},
+					}),
 				}),
 				n(0, {		-- Zone Drop
 					i(119334),	-- Bracers of Callous Disregard
@@ -1428,7 +1434,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(119340),	-- Iron-Flecked Sandals
 					i(119339),	-- Treads of the Veteran Smith
 					un(40, i(115510, {	-- Elemental Rune
-						["groups"] = {
+						["g"] = {
 							un(40, i(115509)),	-- Elemental Tablet
 						},
 						["crs"] = {
@@ -1512,10 +1518,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115535),	-- Ogreskull Boneplate Greaves
 						i(115573),	-- Poisoner's Legguards
 					}),
-					{
-						["itemID"] = 118390,	-- Ember of the Mountain (Mythic)
+					i(118390, {	-- Ember of the Mountain (Mythic)
 						["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
-					},
+					}),
 					i(113886),	-- Crescent of Living Magma
 					i(113885),	-- Mouth of The Fury
 					i(113891),	-- Blast-Proof Cowl
@@ -1618,10 +1623,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115539),	-- Ogreskull Boneplate Greathelm
 						i(115572),	-- Poisoner's Helmet
 					}),
-					{
-						["itemID"] = 118389,	-- Heart of Stone (Mythic)
+					i(118389, {	-- Heart of Stone (Mythic)
 						["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
-					},
+					}),
 					i(113934),	-- Fang of the Earth
 					i(113927),	-- Kromog's Brutal Fist
 					i(113926),	-- Kromog's Protecting Palm
@@ -1639,7 +1643,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(76865, e(1122, {	-- Beastlord Darmac
 					{
 						["achievementID"] = 8981,	-- Fain Would Lie Down
-						["groups"] = {
+						["g"] = {
 							{
 								["criteriaID"] = 1,	-- Dreadwing Mounted First
 								["creatureID"] = 76874,	-- Dreadwing
@@ -1742,10 +1746,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(115538),	-- Ogreskull Boneplate Gauntlets
 							i(115571),	-- Poisoner's Gloves
 						}),
-						{
-							["itemID"] = 118388,	-- Sliver of Iron (Mythic)
+						i(118388, {	-- Sliver of Iron (Mythic)
 							["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
-						},
+						}),
 						i(113966),	-- Gar'an's Brutal Spearlauncher
 						i(113973),	-- Koloch Na, the Blood Feast
 						i(113965),	-- Sorka's Chainfist
@@ -1764,14 +1767,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				cr(77325, e(959, {	-- Blackhand
-					{
-						["achievementID"] = 9444,	-- Ahead of the Curve: Blackhand's Crucible
-						["u"] = 2,	-- Legacy Achievement
-					},
-					{
-						["achievementID"] = 9443,	-- Cutting Edge: Blackhand's Crucible
-						["u"] = 2,	-- Legacy Achievement
-					},
+					ach(9444, {	-- Ahead of the Curve: Blackhand's Crucible
+						["u"] = 2,
+					}),
+					ach(9443, {	-- Cutting Edge: Blackhand's Crucible
+						["u"] = 2,
+					}),
 					--[[{
 						["achievementID"] = 9399,	-- Realm First! Warlord Blackhand
 						["u"] = 2,	-- Legacy Achievement
@@ -1781,8 +1782,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					ach(8973, {	-- Mythic: Blackhand's Crucible
 						title(301),	-- Ironbane
 					}),
-					{	-- Essence of the Iron Conqueror [Alliance]
-						["itemID"] = 120283,	-- Essence of the Iron Conqueror
+					i(120283, {	-- Essence of the Iron Conqueror
 						["questID"] = 37560,	-- Essence of the Iron Conqueror
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
@@ -1813,9 +1813,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 								i(115564),
 							}),
 						},
-					},
-					{	-- Essence of the Iron Conqueror [Horde]
-						["itemID"] = 120209, 	-- Essence of the Iron Conqueror
+					}),
+					i(120209, { 	-- Essence of the Iron Conqueror
 						["questID"] = 37552,	-- Essence of the Iron Conqueror
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
@@ -1846,9 +1845,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 								i(115564),
 							}),
 						},
-					},
-                    {	-- Essence of the Iron Protector [Alliance]
-						["itemID"] = 120284, 	-- Essence of the Iron Protector
+					}),
+                    i(120284, { 	-- Essence of the Iron Protector
 						["questID"] = 37562, 	-- Essence of the Iron Protector
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -1884,9 +1882,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 								i(115575),	-- Windspeaker's Legwraps
 							}),
 						},
-					},
-					{	-- Essence of the Iron Protector [Horde]
-						["itemID"] = 120210, 	-- Essence of the Iron Protector
+					}),
+					i(120210, { 	-- Essence of the Iron Protector
 						["questID"] = 37548, 	-- Essence of the Iron Protector
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
@@ -1922,9 +1919,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 								i(115575),	-- Windspeaker's Legwraps
 							}),
 						},
-					},
-					{	-- Essence of the Iron Vanquisher [Alliance]
-						["itemID"] = 120285, 	-- Essence of the Iron Vanquisher
+					}),
+					i(120285, { 	-- Essence of the Iron Vanquisher
 						["questID"] = 37561, 	-- Essence of the Iron Vanquisher
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -1960,9 +1956,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 								i(115573),
 							}),
 						},
-					},
-					{	-- Essence of the Iron Vanquisher [Horde]
-						["itemID"] = 120211, 	-- Essence of the Iron Vanquisher
+					}),
+					i(120211, { 	-- Essence of the Iron Vanquisher
 						["questID"] = 37550, 	-- Essence of the Iron Vanquisher
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
@@ -1998,7 +1993,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 								i(115573),
 							}),
 						},
-					},
+					}),
 					i(116660),	-- Ironhoof Destroyer
 					i(138809),	-- Illusion: Mark of Blackrock
 					i(122200),	-- Music Roll: A Siege of Worlds

@@ -170,20 +170,28 @@ _.Instances = { tier(1, {	-- Classic
 				n(-40, {	-- Legacy
 					n(-85, {	-- Graveyard
 						n(-17, {	-- Quests (Legacy)
-							un(40, qa(26972, {	-- The Dark Side of the Light
-								un(2, i(65964)),	-- Gloves of the "Pure"
-								un(2, i(65988)),	-- Helm of the Awakened
-								un(2, i(66005)),	-- Interrogator's Shackles
-								un(2, i(65940)),	-- Strapping Belt
-								un(2, i(65914)),	-- Vishas' Hood
-							})),
-							un(40, qh(26950, {	-- The Dark Side of the Light
-								un(2, i(66032)),	-- Gloves of the "Pure"
-								un(2, i(66046)),	-- Interrogator's Shackles
-								un(2, i(66041)),	-- Scarlet Zealot's Helm
-								un(2, i(66023)),	-- Strapping Belt
-								un(2, i(66014)),	-- Vishas' Hood
-							})),
+							q(26972, {	-- The Dark Side of the Light
+								["u"] = 40,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									un(2, i(65964)),	-- Gloves of the "Pure"
+									un(2, i(65988)),	-- Helm of the Awakened
+									un(2, i(66005)),	-- Interrogator's Shackles
+									un(2, i(65940)),	-- Strapping Belt
+									un(2, i(65914)),	-- Vishas' Hood
+								},
+							}),
+							q(26950, {	-- The Dark Side of the Light
+								["u"] = 40,
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									un(2, i(66032)),	-- Gloves of the "Pure"
+									un(2, i(66046)),	-- Interrogator's Shackles
+									un(2, i(66041)),	-- Scarlet Zealot's Helm
+									un(2, i(66023)),	-- Strapping Belt
+									un(2, i(66014)),	-- Vishas' Hood
+								},
+							}),
 						}),
 						n(-16, {	-- Rares (Legacy)
 							un(43, n(6488, {	-- Fallen Champion
@@ -221,16 +229,24 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(-86, {	-- Library
 						n(-17, {	-- Quests (Legacy)
-							un(40, qh(26959, {	-- Stripping Their Defenses
-								un(2, i(66033)),	-- Band of the Arcanist
-								un(2, i(66015)), 	-- Houndmaster's Belt
-								un(2, i(66024)), 	-- Shield of Comrades
-							})),
-							un(40, qa(26973, {	-- The Only True Path
-								un(2, i(65966)),	-- Band of the Arcanist
-								un(2, i(65916)), 	-- Houndmaster's Belt
-								un(2, i(65942)), 	-- Shield of the Righteous Cause
-							})),
+							q(26959, {	-- Stripping Their Defenses
+								["u"] = 40,
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									un(2, i(66033)),	-- Band of the Arcanist
+									un(2, i(66015)), 	-- Houndmaster's Belt
+									un(2, i(66024)), 	-- Shield of Comrades
+								},
+							}),
+							q(26973, {	-- The Only True Path
+								["u"] = 40,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									un(2, i(65966)),	-- Band of the Arcanist
+									un(2, i(65916)), 	-- Houndmaster's Belt
+									un(2, i(65942)), 	-- Shield of the Righteous Cause
+								},
+							}),
 						}),
 						un(43, n(3974, {	-- Houndmaster Loksey
 							un(2, i(7756)),	-- Dog Training Gloves
@@ -247,20 +263,28 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(-87, {	-- Armory
 						n(-17, {	-- Quests (Legacy)
-							un(40, qh(26962, {	-- Stripping Their Offense
-								un(2, i(66034)), 	-- Breastplate of the Scarlet Monastery
-								un(2, i(66047)),	-- Herod's Medallion
-								un(2, i(66016)), 	-- Monk's Leggings
-								un(2, i(66025)), 	-- Spaulder of the Untrained
-								un(2, i(66042)), 	-- Velonara's Cloak
-							})),
-							un(40, qa(26974, {	-- The False Champion
-								un(2, i(65967)), 	-- Breastplate of the Scarlet Monastery
-								un(2, i(65990)), 	-- Cloak of the False Champion
-								un(2, i(66006)),	-- Herod's Medallion
-								un(2, i(65917)), 	-- Monk's Leggings
-								un(2, i(65943)), 	-- Shrug of the Crazed
-							})),
+							q(26962, {	-- Stripping Their Offense
+								["u"] = 40,
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									un(2, i(66034)), 	-- Breastplate of the Scarlet Monastery
+									un(2, i(66047)),	-- Herod's Medallion
+									un(2, i(66016)), 	-- Monk's Leggings
+									un(2, i(66025)), 	-- Spaulder of the Untrained
+									un(2, i(66042)), 	-- Velonara's Cloak
+								},
+							}),
+							q(26974, {	-- The False Champion
+								["u"] = 40,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									un(2, i(65967)), 	-- Breastplate of the Scarlet Monastery
+									un(2, i(65990)), 	-- Cloak of the False Champion
+									un(2, i(66006)),	-- Herod's Medallion
+									un(2, i(65917)), 	-- Monk's Leggings
+									un(2, i(65943)), 	-- Shrug of the Crazed
+								},
+							}),
 						}),
 						un(43, n(3975, {	-- Herod
 							un(2, i(7718)),	-- Herod's Shoulder
@@ -271,16 +295,24 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(-88, {	-- Cathedral
 						n(-17, {	-- Quests (Legacy)
-							un(40, qa(26976, {	-- Battle for the Scarlet Monastery
-								un(2, i(65970)),	-- Band of Grandiose Delusions
-								un(2, i(65920)), 	-- Grasps of the Insane
-								un(2, i(65946)),	-- Scarlet Necklace of Paradise
-							})),
-							un(40, qh(26967, {	-- Battle for the Scarlet Monastery
-								un(2, i(66035)),	-- Band of Wrath
-								un(2, i(66026)),	-- Gift of the Banshee Queen
-								un(2, i(66017)), 	-- Grasps of the Forsaken
-							})),
+							q(26976, {	-- Battle for the Scarlet Monastery
+								["u"] = 40,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									un(2, i(65970)),	-- Band of Grandiose Delusions
+									un(2, i(65920)), 	-- Grasps of the Insane
+									un(2, i(65946)),	-- Scarlet Necklace of Paradise
+								},
+							}),
+							q(26967, {	-- Battle for the Scarlet Monastery
+								["u"] = 40,
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									un(2, i(66035)),	-- Band of Wrath
+									un(2, i(66026)),	-- Gift of the Banshee Queen
+									un(2, i(66017)), 	-- Grasps of the Forsaken
+								},
+							}),
 						}),
 						n(4542, {	-- High Inquisitor Fairbanks
 							un(2, i(19508)),	-- Branded Leather Bracers

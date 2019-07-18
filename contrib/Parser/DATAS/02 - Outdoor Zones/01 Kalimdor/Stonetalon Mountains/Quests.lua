@@ -599,11 +599,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 				},
---[[ 				n(41937,	-- Marshal Paltrow
-					i(56474,	-- Orders from Base Camp
-						qh(26016),	-- Orders from Base Camp (I didn't receive this while questing - Wholly has it marked as REMOVED)
-					}),
-				}), --]]
 				{	-- On Guard in Stonetalon
 					["questID"] = 1085,
 					["u"] = 40,
@@ -611,6 +606,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1070,	-- On Guard in Stonetalon
 				},
+				i(56474, {	-- Orders from Base Camp
+					["u"] = 2,
+					["crs"] = { 41937 },	-- Marshal Paltrow
+					["g"] = {
+						q(26016, {	-- Orders from Base Camp (I didn't receive this while questing - Wholly has it marked as REMOVED)
+							["u"] = 40,
+							["races"] = HORDE_ONLY,
+						}),
+					},
+				}),
 				{	-- Orders from High Command
 					["questID"] = 25650,
 					["qg"] = 40881,	-- Minx
@@ -826,7 +831,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25844,	-- Sating the Savage Beast
 				},
-				q(1154, {	-- Test of Lore	
+				q(1154, {	-- Test of Lore
 					["qg"] = 4489,	-- Braug Dimspirit
 					["coord"] = { 78.6, 45.6, 65 },
 					["sourceQuest"] = 1152,	-- Test of Lore
@@ -834,7 +839,7 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
-				q(6627, {	-- Test of Lore	
+				q(6627, {	-- Test of Lore
 					["qg"] = 4489,	-- Braug Dimspirit
 					["coord"] = { 78.6, 45.6, 65 },
 					["sourceQuest"] = 1154,	-- Test of Lore
@@ -842,7 +847,7 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
-				q(1159, {	-- Test of Lore	
+				q(1159, {	-- Test of Lore
 					["qg"] = 4489,	-- Braug Dimspirit
 					["coord"] = { 78.6, 45.6, 65 },
 					["sourceQuest"] = 6627,	-- Test of Lore
@@ -1016,7 +1021,7 @@ _.Zones =
 					["qg"] = 41664,	-- Salsbury the "Help"
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
-				},			
+				},
 			}),
 		}),
 	}),
