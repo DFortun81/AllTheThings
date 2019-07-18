@@ -1483,7 +1483,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if layer < 2 and group.g and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) then
+				if layer < 2 and group.g and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
@@ -2073,6 +2073,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				for i,o in ipairs(merged) do
 					local symbolicLink = ResolveSymbolicLink(o);
 					if symbolicLink then
+						o.symbolized = true;
 						if o.g and #o.g >= 0 then
 							for j,k in ipairs(o.g) do
 								MergeObject(symbolicLink, CreateObject(k));

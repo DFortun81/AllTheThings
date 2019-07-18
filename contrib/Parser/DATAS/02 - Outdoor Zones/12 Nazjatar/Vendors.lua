@@ -479,7 +479,7 @@ _.Zones =
 							i(169894),	-- Shirakess Sandals
 							i(170371),	-- Shirakess Slippers
 							i(167776),	-- Zanj'ir Scaleguard Stompers
-							i(170144),	-- Zanj'ir Scaleguard Waders
+							i(170374),	-- Zanj'ir Scaleguard Waders
 							i(169891),	-- Zanj'ir Scaleguard Warboots
 						}),
 					}),
