@@ -5,14 +5,11 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		q(55121, {	-- The Laboratory of Mardivas -- 55145, 56481, 56725, 56891, 56892 also popped, 2nd run is 56428,56476,56724,56891 and 56892
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (Alliance)
-				55500,	-- Save A Friend (Horde)
-			},
+			["sourceQuests"] = { 57086 },	-- Legacy of the Mad Mage
 			["description"] = "For this weekly quest, combine reagents scavenged from Nazjatar (|cFF0070ddStrange Mineralized Water|r, |cFF0070ddStrange Oceanic Sediment|r, and |cFF0070ddStrange Volcanic Rock|r) to create various elemental amalgamations.\n\nKill each one to fulfill the requirements for |cFFFFFF00Periodic Destruction|r, part of the |cFFFFFF00Undersea Usurper|r achievement, or target specific ones to collect their unique drops!\n\nHover over the name of the mob you want to summon for a description that outlines which Arcanocrystals to activate.",
 			["isWeekly"] = true,
 		--	["objectID"] = 322533,	-- Mardivas's Tome of the Elements
-			["coord"] = { 60.6, 33.2, 1355 },
+			["coord"] = { 60.7, 32.4, 1355 },
 			["icon"] = "Interface\\Icons\\inv_crystallized_water",	-- icon for Strange Mineralized Water
 			["g"] = {
 				crit(6, {	-- Defeat one of Mardivas's Laboratory creations

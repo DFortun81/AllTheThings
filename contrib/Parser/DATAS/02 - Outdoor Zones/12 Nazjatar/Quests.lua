@@ -1070,6 +1070,18 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 153617,	-- Shandris Feathermoon
 			}),
+			q(56780, {	-- Hidden, But Dangerous
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 9.",
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 151626,	-- Hunter Akana
+				["g"] = {
+					i(169911, {	-- Liberated Naga Cache
+						currency(1721),	-- Prismatic Manapearl x10
+						i(168185),	-- Osmenite Ore x11
+					}),
+				},
+			}),
 			q(56643, {	-- In Deep
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
 				["races"] = ALLIANCE_ONLY,
@@ -1139,9 +1151,12 @@ _.Zones =
 					55500,	-- Save A Friend
 				},
 			}),
-			i(170512, {	-- Lesser Benthic Arcanocrystal -- TODO:: verify if breadcrumb/weekly?
+			q(57086, {	-- Legacy of the Mad Mage
+				["description"] = "Loot the Arcane Chest at the provided coordinates to get the item that starts this quest.",
+			--	["itemID"] = 170512,	-- Lesser Benthic Arcanocrystal
+				["coord"] = { 79.4, 27.2, 1355 },
 				["g"] = {
-					q(57086),	-- Legacy of the Mad Mage
+					currency(1721),	-- Prismatic Manapearls x7
 				},
 			}),
 			q(55861, {	-- Let the Residue Lead You (A)
@@ -1979,14 +1994,15 @@ _.Zones =
 			}),
 			q(56785, {	-- The Mystic Chest
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
-				["description"] = "Your Ankoan friend will offer this quest upon reaching Rank 9.",
+				["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 9.",
 				["races"] = ALLIANCE_ONLY,
 				["qgs"] = {	-- add other two bodyguards/friends/whatever
 					154304,	-- Farseer Ori
 				},
 				["g"] = {
 					i(169911, {	-- Liberated Naga Cache
-						currency(1721),	-- Prismatic Manapearl x10 (also contained 11 Osmenite Ore, but not sure if this is a static reward)
+						currency(1721),	-- Prismatic Manapearl x10
+						i(168185),	-- Osmenite Ore x11
 					}),
 				},
 			}),
