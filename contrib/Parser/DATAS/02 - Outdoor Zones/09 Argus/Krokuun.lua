@@ -1109,6 +1109,11 @@ _.Zones =
 					}),
 				}),
 				n(-34, {	-- World Quests
+					q(49043, {	-- Baneglow
+						["lvl"] = 110,
+						["filterID"] = 101,	-- Battle Pet
+						["collectible"] = false,
+					}),
 					q(47724, {	-- Besieged
 						["lvl"] = 110,
 						["collectible"] = false,

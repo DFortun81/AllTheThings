@@ -349,6 +349,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51106, {	-- Songstress Nahjeen
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51558, {	-- Spider Scorching
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,

@@ -990,7 +990,6 @@ _.Zones =
 						q(48783),	-- Nobody Expects Them
 						q(49058),	-- One-of-Many
 						q(49056),	-- Pilfer
-						q(48691),	-- Soul Chain
 						q(48870),	-- The Many-Faced Devourer
 						q(48827),	-- Varga
 						q(48836),	-- Watcher Aival
@@ -1000,7 +999,6 @@ _.Zones =
 						q(48363),	-- Work Order: Florid Malachite
 						q(48364),	-- Work Order: Hasselian
 						q(48373),	-- Work Order: Lightweave Cloth
-						q(48834),	-- Worldsplitter Skuul
 					}),
 --]]				
 					q(48832, {	-- Admiral Rel'var
@@ -1092,6 +1090,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48691, {	-- Soul Chain
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48358, {	-- Supplies Needed: Empyrium
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1125,6 +1127,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(49053, {	-- Watcher
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48834, {	-- Worldsplitter Skuul
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

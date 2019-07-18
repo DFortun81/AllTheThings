@@ -29,7 +29,6 @@ _.Zones =
 					q(46288),	-- Everyone to the Front
 					q(46126),	-- Fel-Corrupted Feathers
 					q(46077),	-- Felbound Spirits
-					
 					q(46212),	-- Get Them Up
 					q(40390),	-- Hallowed Ground
 					q(45985),	-- Hellish Scavengers
@@ -43,7 +42,7 @@ _.Zones =
 					q(46046),	-- Life's a Lich
 					q(46754),	-- Magical Beasts
 					q(46948),	-- Malificus
-					q(46756),	-- Mission: Felrage Destruction
+					
 					q(46755),	-- Mission: Felraging
 					q(46822),	-- Natural Selection
 					q(46833),	-- Nature Unshackled
@@ -61,7 +60,6 @@ _.Zones =
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
 					q(46942),	-- The Cost of Power
-					
 					q(46032),	-- The Tormented Return
 					q(46325),	-- The United Front
 					q(46063),	-- The Wailing Dead
@@ -157,6 +155,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46707, {	-- Minion! Kill That One Too!
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46756, {	-- Mission: Felrage Destruction
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -68,7 +68,6 @@ _.Zones =
 				q(41433),	-- Massive Leystone Deposits
 				q(41253),	-- Migrating Highmountain Salmon
 				q(41122),	-- Mists Take You
-				q(41076),	-- Munitions Testing
 				q(41057),	-- Primal Payback
 				q(41055),	-- Primal Payback
 				q(41144),	-- Return to the River
@@ -84,7 +83,6 @@ _.Zones =
 				q(41224),	-- Supplies Needed: Foxflower
 				q(41207),	-- Supplies Needed: Leystone
 				q(41237),	-- Supplies Needed: Stonehide Leather
-				q(42086),	-- The Feltotem
 				q(43448),	-- The Frozen King
 				q(41232),	-- Thick Ironhorn Hide
 				q(40896),	-- Threnody of Chieftains
@@ -211,6 +209,10 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
+				q(41076, {	-- Munitions Testing
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41866, {	-- Neltharion's Lair: Blighted Bat
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -285,6 +287,10 @@ _.Zones =
 				}),
 				q(46195, {	-- Swarming Skies (Invasion WQ)
 					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(42086, {	-- The Feltotem
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(43766, {	-- The Magic of Flight

@@ -236,6 +236,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(52230, {	-- Loose Change
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51633, {	-- Make Loh Go
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -304,6 +309,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52474, {	-- Poacher Zane
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51774, {	-- Ragna
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

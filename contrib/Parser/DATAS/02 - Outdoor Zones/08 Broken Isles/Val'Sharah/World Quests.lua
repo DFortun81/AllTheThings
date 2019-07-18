@@ -30,6 +30,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41273, {	-- Buoy Fishing
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
 				q(42174, {	-- Champions of Elune
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -82,6 +87,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43753, {	-- Ley Race
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45047, {	-- Like the Wind
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -195,7 +204,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44304, {	-- WANTED: Darkshade
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43458, {	-- WANTED: Perrexx
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43630, {	-- WANTED: Perrexx
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

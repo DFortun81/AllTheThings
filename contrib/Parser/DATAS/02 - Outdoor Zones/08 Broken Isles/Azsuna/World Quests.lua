@@ -69,7 +69,6 @@ _.Zones =
 				q(41500),	-- Leyworms
 				q(45046),	-- Like the Wind
 				q(41527),	-- Lively Aethril
-				q(41599),	-- Lively Cursed Queenfish
 				q(41264),	-- Lively Cursed Queenfish
 				q(41454),	-- Luminous Leystone Outcropping
 				q(42105),	-- Mixology Mix-up
@@ -232,6 +231,11 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41598, {	-- Lively Cursed Queenfish
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41599, {	-- Lively Cursed Queenfish
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing

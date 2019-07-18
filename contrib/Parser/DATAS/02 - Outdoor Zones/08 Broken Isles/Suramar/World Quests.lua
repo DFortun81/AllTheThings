@@ -15,7 +15,6 @@ _.Zones =
 				q(41492),	-- Brimstone Destroyer
 				q(41491),	-- Brimstone Destroyer
 				q(41447),	-- Burning Felslate Deposits
-				q(44867),	-- Contain their Advance
 				q(41195),	-- Culling Ambervale
 				q(44113),	-- DANGER: Achronos
 				q(44118),	-- DANGER: Auditor Esiel
@@ -81,7 +80,6 @@ _.Zones =
 				q(44021),	-- WANTED: Hertha Grimdottir
 				q(44029),	-- WANTED: Hertha Grimdottir
 				q(44019),	-- WANTED: Lieutenant Strathmar
-				q(44018),	-- WANTED: Magister Phaedris
 				q(44027),	-- WANTED: Magister Phaedris
 				q(44015),	-- WANTED: Mal'Dreth the Corruptor
 				q(44026),	-- WANTED: Mal'Dreth the Corruptor
@@ -148,6 +146,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44067, {	-- Consolidating Power
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44867, {	-- Contain their Advance
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -332,6 +334,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44028, {	-- WANTED: Lieutenant Strathmar
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44018, {	-- WANTED: Magister Phaedris
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
