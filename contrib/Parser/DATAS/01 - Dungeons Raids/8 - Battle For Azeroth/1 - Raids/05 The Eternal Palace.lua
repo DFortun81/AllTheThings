@@ -629,6 +629,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(169362),	-- Nameless Octopode
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
+						i(168868),	-- Pauldrons of Za'qul
 						i(168349),	-- Shroud of Unmooring Whispers
 						i(169588),	-- Gardbrace of Fractured Reality
 						i(168391),	-- Cloak of Ill Tidings
@@ -861,6 +862,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(169362),	-- Nameless Octopode
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
+						i(168868),	-- Pauldrons of Za'qul
 						i(168349),	-- Shroud of Unmooring Whispers
 						i(169588),	-- Gardbrace of Fractured Reality
 						i(168391),	-- Cloak of Ill Tidings
