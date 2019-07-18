@@ -985,14 +985,12 @@ _.Zones =
 --[[
 					n(-34, {	-- World Quests
 						q(48837),	-- All-Seer Xanarian
-						q(48831),	-- Commander Texlaz
 						q(49055),	-- Earseeker
 						q(49057),	-- Minixis
 						q(48783),	-- Nobody Expects Them
 						q(49058),	-- One-of-Many
 						q(49056),	-- Pilfer
 						q(48691),	-- Soul Chain
-						q(48640),	-- The Immortal Squadron
 						q(48870),	-- The Many-Faced Devourer
 						q(48827),	-- Varga
 						q(48836),	-- Watcher Aival
@@ -1027,6 +1025,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48637, {	-- Cleansing Fire
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48831, {	-- Commander Texlaz
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1102,7 +1104,15 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48640, {	-- The Immortal Squadron
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48952, {	-- Throw Them a Bone
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48466, {	-- Ven'orn
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

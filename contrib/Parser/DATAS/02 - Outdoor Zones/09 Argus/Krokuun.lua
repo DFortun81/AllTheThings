@@ -1109,6 +1109,10 @@ _.Zones =
 					}),
 				}),
 				n(-34, {	-- World Quests
+					q(47724, {	-- Besieged
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(47496, {	-- Bunker Buster
 						["lvl"] = 110,
 						["collectible"] = false,
@@ -1159,6 +1163,11 @@ _.Zones =
 					}),
 					q(48284, {	-- Reap the Fields
 						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(49041, {	-- Ruinhoof
+						["lvl"] = 110,
+						["filterID"] = 101,	-- Battle Pet
 						["collectible"] = false,
 					}),
 					q(47542, {	-- Siegemaster Voraan

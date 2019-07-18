@@ -107,6 +107,20 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
+			n(-34, {	-- World Quests
+				q(48953, {	-- Seat of the Triumvirate: Darkcaller
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(48985, {	-- Seat of the Triumvirate: Twilight-Harbinger Tharuul
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(48957, {	-- Seat of the Triumvirate: Void-Blade Zedaat
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(2, {	-- Heroic
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter

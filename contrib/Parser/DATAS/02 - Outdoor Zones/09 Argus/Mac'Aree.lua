@@ -1091,7 +1091,6 @@ _.Zones =
 				n(-34, {	-- World Quests
 --[[
 					n(-34, {	-- World Quests
-						q(48701),	-- Baruut the Bloodthirsty
 						q(49047),	-- Bucky
 						q(48727),	-- Captain Faruq
 						q(49051),	-- Corrupted Blood of Argus
@@ -1099,7 +1098,6 @@ _.Zones =
 						q(48731),	-- Herald of Chaos
 						q(48737),	-- Instructor Tarahna
 						q(48733),	-- Jed'hin Champion Vorusk
-						
 						q(48102),	-- Scale Samples
 						q(47858),	-- Security: Engaged
 						q(49050),	-- Shadeflicker
@@ -1107,6 +1105,10 @@ _.Zones =
 					}),
 --]]				
 					q(48729, {	-- Ataxon
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48701, {	-- Baruut the Bloodthirsty
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
@@ -1205,14 +1207,6 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48732, {	-- Sabuul
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(48953, {	-- Seat of the Triumvirate: Darkcaller
-						["lvl"] = 110,
-						["collectible"] = false,
-					}),
-					q(48957, {	-- Seat of the Triumvirate: Void-Blade Zedaat
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
