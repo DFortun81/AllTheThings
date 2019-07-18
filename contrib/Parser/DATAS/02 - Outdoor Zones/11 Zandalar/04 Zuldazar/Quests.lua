@@ -623,8 +623,9 @@ _.Zones =
 					["qg"] = 135775,	-- Scouting Map
 					-- ["sourceQuests"] = { 52131 },	-- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievement because they can't pick anything up regardless and less spammy in Quest Chain window
 				}),
-				qh(48581, {	-- A Good Spanking
+				q(48581, {	-- A Good Spanking
 					["qg"] = 122009,	-- Kraal Master B'khor
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(158411),	-- Jambani Girdle
 						i(158434),	-- Jambani Legwraps
@@ -647,9 +648,10 @@ _.Zones =
 						i(157539),	-- Scroll of Storm Control
 					},
 				}),
-				qh(51516, {	-- Atal'Dazr: Ashes of a Warchief
+				q(51516, {	-- Atal'Dazr: Ashes of a Warchief
 					["qg"] = 138138,	-- Princess Telanji
 					["coord"] = { 43.7, 39.5 },
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
 				}),
 				q(48026, {	-- Beneath the Waves
@@ -659,8 +661,9 @@ _.Zones =
 						i(155308),	-- Whispering Seawitch's Ring
 					},
 				}),
-				qh(48400, {	-- Grand Theft Telemancy
+				q(48400, {	-- Grand Theft Telemancy
 					["qg"] = 131580,	-- Apprentice Telemancer Astrandis
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155310),	-- Reliquary Explorer's Drape
 						i(158419),	-- Rastari Treads
@@ -715,7 +718,8 @@ _.Zones =
 						i(158425),	-- Zanchuli Gloves
 					},
 				}),
-				qh(49884, {	-- Hope's Blue Light
+				q(49884, {	-- Hope's Blue Light
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159152),	-- Torcalin Grips
 						i(159153),	-- zanchuli Grips
@@ -725,14 +729,16 @@ _.Zones =
 						i(159124),	-- Golden Fleet Buckler
 					},
 				}),
-				qh(49775, {	-- Key to the Brig
+				q(49775, {	-- Key to the Brig
 					["qg"] = 135576,	-- Bo'tzun Maset
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159942),	-- Zul Adherent's Band
 					},
 				}),
-				qh(48527, {	-- Ravenous Landsharks
+				q(48527, {	-- Ravenous Landsharks
 					["qg"] = 121706,	-- Beastlord L'kala
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159764),	-- Enraged Diemetradon Fin
 						i(158390),	-- Jambani Striders
@@ -741,19 +747,19 @@ _.Zones =
 						i(158388),	-- Zanchuli Sandals
 					},
 				}),
-				qh(49680, {	-- Skycaller Soltok
+				q(49680, {	-- Skycaller Soltok
 					["qg"] = 130450,	-- Bladeguard Sonji
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155311),	-- Soltok's Drape
 						i(155309),	-- Lightning Caller's Band
 					},
 				}),
-				{	-- The Dark Lady Calls
-					["questID"] = 54097,
+				q(54097, {	-- The Dark Lady Calls
 					["qg"] = 146013,	-- Dark Ranger Alina
 					["coord"] = { 58.4, 62.7 },
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
@@ -764,8 +770,9 @@ _.Zones =
 						i(163865),	-- Bartered Vrykul Warhelm
 					},
 				}),
-				qh(50297, {	-- The Head of Her Enemy
+				q(50297, {	-- The Head of Her Enemy
 					["qg"] = 130929,	-- Witch Doctor Jangalar
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159147),	-- Jambani Walkers
 						i(159149),	-- Zanchuli Footies
@@ -818,9 +825,10 @@ _.Zones =
 					["coord"] = { 70.2, 65.0 },
 					["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers? (Horde) - NEEDS VERIFICATION, per wowhead comment.  Also need to make sure Alliance side has no prereqs.
 				}),
-				qh(52113, {	-- Vol'jin, Son of Sen'jin
+				q(52113, {	-- Vol'jin, Son of Sen'jin
 					["qg"] = 137878,	-- Master Gadrin
 					["coord"] = { 45.5, 35.8 },
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 52114 },	-- Honoring a True Leader
 				}),
 				{	-- A Loa Without a Temple

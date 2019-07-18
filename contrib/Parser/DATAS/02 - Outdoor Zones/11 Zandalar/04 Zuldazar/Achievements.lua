@@ -138,111 +138,128 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- Nature Versus Nurture
+							["description"] = "Must complete ~7 days worth of daily quests to fill Kua'fon's experience bar.",
 							["g"] = {
-								qh(50394, {	-- Your Problem Now
+								q(50394, {	-- Your Problem Now
 									["qg"] = 127377,	-- Pa'ku
 									["coord"] = { 71.4, 49.2 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50393,	-- A Child of Pa'ku
 								}),
-								qh(50402, {	-- SKREEEEE!
+								q(50402, {	-- SKREEEEE!
 									["qg"] = 133678,	-- Kua'fon
 									["coord"] = { 70.8, 50.9 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50394,	-- Your Problem Now
 								}),
-								qh(52305, {	-- Nature vs Nurture
+								q(52305, {	-- Nature vs Nurture
 									["qg"] = 135308,	-- Wingminder Goja
 									["coord"] = { 70.8, 50.9 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50402,	-- SKREEEE!
 								}),
 							},
-							["description"] = "Must complete ~7 days worth of daily quests to fill Kua'fon's experience bar.",
 						}),
 						crit(2, {	-- Room to Grow
+							["description"] = "Must complete ~14 days worth of daily quests to fill Kua'fon's experience bar.",
 							["g"] = {
-								qh(50395, {	-- The Call of the Skies
+								q(50395, {	-- The Call of the Skies
 									["qg"] = 133678,	-- Kua'fon
 									["coord"] = { 70.8, 50.9 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 52305,	-- Nature vs Nurture
 								}),
-								qh(50401, {	-- Fear of Falling
+								q(50401, {	-- Fear of Falling
 									["qg"] = 127377,	-- Pa'ku
 									["coord"] = { 70.9, 50.8 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 50395,	-- The Call of the Skies
 									["g"] = {
 										i(158885),	-- Shimmerfin Flesh
 									},
-									["sourceQuest"] = 50395,	-- The Call of the Skies
 								}),
-								qh(50412, {	-- Back to the Nest
+								q(50412, {	-- Back to the Nest
 									["qg"] = 133678,	-- Kua'fon
 									["coord"] = { 74.3, 51.9 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50401,	-- Fear of Falling
 								}),
-								qh(52447, {	-- Room to Grow
+								q(52447, {	-- Room to Grow
 									["qg"] = 135308,	-- Wingminder Goja
 									["coord"] = { 70.8, 50.9 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50412,	-- Back to the Nest
 								}),
 							},
-							["description"] = "Must complete ~14 days worth of daily quests to fill Kua'fon's experience bar.",
 						}),
 						crit(3, {	-- Eyes on the Skies
+							["description"] = "Must complete 4-7 days worth of daily quests to fill Kua'fon's experience bar.",
 							["g"] = {
-								qh(50396, {	-- A Pterrible Fate
+								q(50396, {	-- A Pterrible Fate
 									["qg"] = 133679,	-- Kua'fon
 									["coord"] = { 70.6, 51.0 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 52447,	-- Room to Grow
 								}),
-								qh(50886, {	-- Surrogate Wings
+								q(50886, {	-- Surrogate Wings
 									["qg"] = 127377,	-- Pa'ku
 									["coord"] = { 71.4, 49.2 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50396,	-- A Pterrible Fate
 								}),
-								qh(50887, {	-- Ptrust Fall
+								q(50887, {	-- Ptrust Fall
 									["qg"] = 135308,	-- Wingminder Goja
 									["coord"] = { 70.8, 51.0 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50886,	-- Surrogate Wings
 								}),
-								qh(50900, {	-- Maybe When You're Older
+								q(50900, {	-- Maybe When You're Older
 									["qg"] = 135595,	-- Pa'ku
 									["coord"] = { 72.4, 57.0 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50887,	-- Ptrust Fall
 								}),
-								qh(52748, {	-- Eyes on the Skies
+								q(52748, {	-- Eyes on the Skies
 									["qg"] = 135308,	-- Wingminder Goja
 									["coord"] = { 70.8, 51.0 },
+									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50900,	-- Maybe When You're Older
 								}),
 							},
-							["description"] = "Must complete 4-7 days worth of daily quests to fill Kua'fon's experience bar.",
 						}),
 						crit(4, {	-- Down, But Not Out
-							qh(50397, {	-- Aerial Aspirations
+							q(50397, {	-- Aerial Aspirations
 								["qg"] = 133682,	-- Kua'fon
 								["coord"] = { 75.2, 49.4 },
+								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 52748,	-- Eyes on the Skies
 							}),
-							qh(50940, {	-- Wisdom of the Wingless
+							q(50940, {	-- Wisdom of the Wingless
 								["qg"] = 133682,	-- Kua'fon
 								["coord"] = { 75.2, 49.4 },
+								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50397,	-- Aerial Aspirations
 							}),
-							qh(50942, {	-- Dress for the Slide, Not the Ride
+							q(50942, {	-- Dress for the Slide, Not the Ride
 								["qg"] = 135801,	-- Hexlord Raal
 								["coord"] = { 70.6, 50.6 },
+								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50940,	-- Wisdom of the Wingless
 							}),
-							qh(50943, {	-- The Joy of Flight
+							q(50943, {	-- The Joy of Flight
 								["qg"] = 135801,	-- Hexlord Raal
 								["coord"] = { 70.6, 50.6 },
+								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50942,	-- Dress for the Slide, Not the Ride
 							}),
-							qh(50944, {	-- Down, But Not Out
+							q(50944, {	-- Down, But Not Out
+								["qg"] = 135744,	-- Kua'fon
+								["coord"] = { 70.6, 50.6 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 50943,	-- The Joy of Flight
 								["g"] = {
 									i(159146),	-- Kua'fon's Harness
 								},
-								["qg"] = 135744,	-- Kua'fon
-								["coord"] = { 70.6, 50.6 },
-								["sourceQuest"] = 50943,	-- The Joy of Flight
 							}),
 						}),
 					},

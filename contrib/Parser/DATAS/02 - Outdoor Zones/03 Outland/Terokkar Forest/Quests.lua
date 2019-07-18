@@ -8,9 +8,10 @@ _.Zones =
 			n(-17, { 	-- Quests
 				a(ach(1191, {	-- Terror of Terokkar (Alliance)
 					crit(1, {	-- The Skettis Offensive
-						qa(10863, {	-- Secrets of the Arakkoa
+						q(10863, {	-- Secrets of the Arakkoa
 							["qg"] = 15991,	-- Lady Dena Kennedy
 							["coord"] = { 57.6, 56.0, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(10847, {	-- The Eyes of Skettis
@@ -296,24 +297,28 @@ _.Zones =
 							["coord"] = { 72.2, 30.7, 111 },
 							["sourceQuest"] = 10112,	-- A Personal Favor
 						}),
-						qa(9994, {	-- What Are These Things?
+						q(9994, {	-- What Are These Things?
 							["qg"] = 18446,	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9990,	-- Investigate Tuurem
 						}),
-						qa(10444, {	-- Report to the Allerian Post
+						q(10444, {	-- Report to the Allerian Post
 							["qg"] = 18459,	-- Jenai Starwhisper
 							["coord"] = { 57.0, 53.6, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9994,	-- What Are These Things?
 						}),					
-						qa(9996, {	-- Attack on Firewing Point
+						q(9996, {	-- Attack on Firewing Point
 							["qg"] = 21006,	-- Lieutenant Meridian
 							["coord"] = { 69.6, 44.6, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10444,	-- Report to the Allerian Post
 						}),
-						qa(10446, {	-- The Final Code
+						q(10446, {	-- The Final Code
 							["qg"] = 21006,	-- Lieutenant Meridian
 							["coord"] = { 69.6, 44.6, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9996,	-- Attack on Firewing Point
 							["groups"] = {
 								i(31784),	-- Ancient Terokkar Hood
@@ -322,9 +327,10 @@ _.Zones =
 								i(31782),	-- Warpstalker Breastplate
 							},
 						}),
-						qa(10005,  {  -- Letting Earthbinder Tavgren Know
+						q(10005,  {  -- Letting Earthbinder Tavgren Know
 							["qg"] = 21006,	-- Lieutenant Meridian
 							["coord"] = { 69.6, 44.6, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10446,	-- The Final Code
 							["groups"] = {
 								i(25931),	-- Cenarion Thicket Circlet
@@ -335,43 +341,51 @@ _.Zones =
 						}),
 					}),
 					crit(5, {	-- Allerian Stronghold
-						qa(10026, {	-- Magical Disturbances
+						q(10026, {	-- Magical Disturbances
 							["qg"] = 18252,	-- Andarl
 							["coord"] = { 58.4, 53.6, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								9793,	-- The Fate of Tuurem
 								10104,	-- Concerns About Tuurem
 							},
 						}),
-						qa(9992, {	-- Olemba Seeds
+						q(9992, {	-- Olemba Seeds
 							["qg"] = 18390,	-- Ros'eleth
 							["coord"] = { 57.4, 55.4, 108 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qa(10028, {	-- Vessels of Power
+						q(10028, {	-- Vessels of Power
 							["qg"] = 18390,	-- Ros'eleth
 							["coord"] = { 57.4, 55.4, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9992,	-- Olemba Seeds
 						}),
-						qa(9986, {	-- Stymying the Arakkoa
+						q(9986, {	-- Stymying the Arakkoa
 							["qg"] = 18389,	-- Thander
 							["coord"] = { 57.8, 54.2, 108 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qa(10869, {	-- Thin the Flock
+						q(10869, {	-- Thin the Flock
 							["qg"] = 18713,	-- Lieutenant Gravelhammer
 							["coord"] = { 57.6, 55.6, 108 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qa(9998, {	-- Unruly Neighbors
+						q(9998, {	-- Unruly Neighbors
 							["qg"] = 18387,	-- Bertelm
 							["coord"] = { 58.2, 54.8, 108 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qa(10002, {	-- The Firewing Liaison
+						q(10002, {	-- The Firewing Liaison
 							["qg"] = 18565,	-- Theloria Shadecloak
 							["coord"] = { 69.6, 44.2, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9998,	-- Unruly Neighbors
 						}),
-						qa(10007,  {  -- Thinning the Ranks
+						q(10007,  {  -- Thinning the Ranks
 							["qg"] = 18565,	-- Theloria Shadecloak
 							["coord"] = { 69.6, 44.2, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9998,	-- Unruly Neighbors
 							["groups"] = {
 								i(25973),	-- Dark Augur's Wand
@@ -380,18 +394,21 @@ _.Zones =
 							},
 						}),
 						o(182549, {	-- Fel Orc Plans
-							qa(10012, {	-- Fel Orc Plans
+							q(10012, {	-- Fel Orc Plans
 								["coord"] = { 63.4, 42.7, 108 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 9998,	-- Unruly Neighbors
 							}),
 						}),
-						qa(10016, {	-- Timber Worg Tails
+						q(10016, {	-- Timber Worg Tails
 							["qg"] = 18387,	-- Bertelm
+							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 58.2, 54.8, 108 },
 						}),
-						qa(10022,  {  -- The Elusive Ironjaw
+						q(10022,  {  -- The Elusive Ironjaw
 							["qg"] = 18387,	-- Bertelm
 							["coord"] = { 58.2, 54.8, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10016,	-- Timber Worg Tails
 							["groups"] = {
 								i(25974),	-- Helm of Lupine Cunning
@@ -401,31 +418,36 @@ _.Zones =
 							},
 						}),
 						o(182587, {	-- Wanted Poster
-							qa(10033, {	-- WANTED: Bonelashers Dead!
+							q(10033, {	-- WANTED: Bonelashers Dead!
 								["coord"] = { 57.6, 54.7, 108 },
+								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
-						qa(10035, {	-- Torgos!
+						q(10035, {	-- Torgos!
 							["qg"] = 18704,	-- Taela Everstride
 							["coord"] = { 58.0, 53.4, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10033,	-- WANTED: Bonelashers Dead!
 							["groups"] = {
 								i(25937),	-- Terokkar Tablet of Precision
 								i(25936),	-- Terokkar Tablet of Vim
 							},
 						}),
-						qa(10038, {	-- Speak with Private Weeks
+						q(10038, {	-- Speak with Private Weeks
 							["qg"] = 18713,	-- Lieutenant Gravelhammer
 							["coord"] = { 57.6, 55.6, 108 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qa(10040, {	-- Who Are They?
+						q(10040, {	-- Who Are They?
 							["qg"] = 18715,	-- Private Weeks
 							["coord"] = { 40.4, 36.0, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10038,	-- Speak with Private Weeks
 						}),
-						qa(10042,  {  -- Kill the Shadow Council!
+						q(10042,  {  -- Kill the Shadow Council!
 							["qg"] = 18715,	-- Private Weeks
 							["coord"] = { 40.4, 36.0, 108 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10023,	-- Patriarch Ironjaw
 							["groups"] = {
 								i(25933),	-- Extra Sharp Blade
@@ -437,9 +459,10 @@ _.Zones =
 				})),
 				h(ach(1272, {	-- Terror of Terokkar (Horde)
 					crit(1, {	-- The Skettis Offensive
-						qh(10862, {	-- Surrender to the Horde
+						q(10862, {	-- Surrender to the Horde
 							["qg"] = 18386,	-- Rokag
 							["coord"] = { 49.0, 44.6, 108 },
+							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(10847, {	-- The Eyes of Skettis
@@ -725,24 +748,28 @@ _.Zones =
 							["coord"] = { 72.2, 30.7, 111 },
 							["sourceQuest"] = 10112,	-- A Personal Favor
 						}),
-						qh(9995, {	-- What Are These Things?
+						q(9995, {	-- What Are These Things?
 							["qg"] = 18446,	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 9990,	-- Investigate Tuurem
 						}),
-						qh(10448, {	-- Report to Stonebreaker Camp
+						q(10448, {	-- Report to Stonebreaker Camp
 							["qg"] = 18447,	-- Tooki
 							["coord"] = { 50.0, 45.9, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 9995,	-- What Are These Things?
 						}),
-						qh(9997, {	-- Attack on Firewing Point
+						q(9997, {	-- Attack on Firewing Point
 							["qg"] = 21007,	-- Sergeant Chawni
 							["coord"] = { 50.0, 45.9, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10448,	-- Report to Stonebreaker Camp
 						}),
-						qh(10447,  {  -- The Final Code
+						q(10447,  {  -- The Final Code
 							["qg"] = 21007,	-- Sergeant Chawni
 							["coord"] = { 50.0, 45.9, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 9997,	-- Attack on Firewing Point
 							["groups"] = {
 								i(31784),	-- Ancient Terokkar Hood
@@ -751,9 +778,10 @@ _.Zones =
 								i(31782),	-- Warpstalker Breastplate
 							},
 						}),
-						qh(10006,  {  -- Letting Earthbinder Tavgren Know
+						q(10006,  {  -- Letting Earthbinder Tavgren Know
 							["qg"] = 18447,	-- Tooki
 							["coord"] = { 50.0, 45.9, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10447,	-- The Final Code
 							["groups"] = {
 								i(25931),	-- Cenarion Thicket Circlet
@@ -764,39 +792,46 @@ _.Zones =
 						}),					
 					}),
 					crit(5, {	-- Stonebreaker Hold
-						qh(9993, {	-- Olemba Seed Oil
+						q(9993, {	-- Olemba Seed Oil
 							["qg"] = 18358,	-- Rakoria
 							["coord"] = { 50.1, 44.9, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 
 								10105,	-- News for Rakoria
 								9796,	-- News from Zangarmarsh
 							},
 						}),
-						qh(10201, {	-- And Now, the Moment of Truth
+						q(10201, {	-- And Now, the Moment of Truth
 							["qg"] = 18358,	-- Rakoria
 							["coord"] = { 50.1, 44.9, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 9993,	-- Olemba Seed Oil
 						}),
-						qh(10868, {	-- Arakkoa War Path
+						q(10868, {	-- Arakkoa War Path
 							["qg"] = 18712,	-- Advisor Faila
 							["coord"] = { 48.9, 44.6, 108 },
+							["races"] = HORDE_ONLY,
 						}),
-						qh(9987, {	-- Stymying the Arakkoa
+						q(9987, {	-- Stymying the Arakkoa
 							["qg"] = 18386,	-- Rokag
 							["coord"] = { 49.0, 44.6, 108 },
+							["races"] = HORDE_ONLY,
 						}),
-						qh(10000, {	-- An Unwelcome Presence
+						q(10000, {	-- An Unwelcome Presence
 							["qg"] = 18383,	-- Kurgatok
 							["coord"] = { 48.8, 45.7, 108 },
+							["races"] = HORDE_ONLY,
 						}),
-						qh(10003, {	-- The Firewing Liaison
+						q(10003, {	-- The Firewing Liaison
 							["qg"] = 18566,	-- Shadowstalker Kaide
 							["coord"] = { 63.4, 42.7, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10000,	-- An Unwelcome Presence
 						}),
-						qh(10008,  {  -- What Happens in Terokkar Stays in Terokkar
+						q(10008,  {  -- What Happens in Terokkar Stays in Terokkar
 							["qg"] = 18566,	-- Shadowstalker Kaide
 							["coord"] = { 63.4, 42.7, 108 },
+							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(25973),	-- Dark Augur's Wand
 								i(25972),	-- Deadeye's Piece
@@ -804,23 +839,27 @@ _.Zones =
 							},
 						}),
 						o(182549, {	-- Fel Orc Plans
-							qh(10013, {	-- An Unseen Hand
+							q(10013, {	-- An Unseen Hand
 								["coord"] = { 63.4, 42.7, 108 },
+								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 10000,	-- An Unwelcome Presence
 							}),
 						}),
-						qh(10018, {	-- Vestments of the Wolf Spirit
+						q(10018, {	-- Vestments of the Wolf Spirit
 							["qg"] = 18384,	-- Malukaz
 							["coord"] = { 50.2, 46.4, 108 },
+							["races"] = HORDE_ONLY,
 						}),
-						qh(10023, {	-- Patriarch Ironjaw
+						q(10023, {	-- Patriarch Ironjaw
 							["qg"] = 18384,	-- Malukaz
 							["coord"] = { 50.2, 46.4, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10018,	-- Vestments of the Wolf Spirit
 						}),
-						qh(10791,  {  -- Welcoming the Wolf Spirit
+						q(10791,  {  -- Welcoming the Wolf Spirit
 							["qg"] = 18384,	-- Malukaz
 							["coord"] = { 50.2, 46.4, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10023,	-- Patriarch Ironjaw
 							["groups"] = {
 								i(25974),	-- Helm of Lupine Cunning
@@ -830,31 +869,36 @@ _.Zones =
 							},
 						}),
 						o(182588, {	-- Wanted Poster
-							qh(10034, {	-- WANTED: Bonelashers Dead!
+							q(10034, {	-- WANTED: Bonelashers Dead!
 								["coord"] = { 49.8, 45.3, 108 },
+								["races"] = HORDE_ONLY,
 							}),
 						}),
-						qh(10036, {	-- Torgos!
+						q(10036, {	-- Torgos!
 							["qg"] = 18705,	-- Mawg Grimshot
 							["coord"] = { 49.2, 45.9, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10034,	-- WANTED: Bonelashers Dead!
 							["groups"] = {
 								i(25937),	-- Terokkar Tablet of Precision
 								i(25936),	-- Terokkar Tablet of Vim
 							},
 						}),
-						qh(10039, {	-- Speak with Scout Neftis
+						q(10039, {	-- Speak with Scout Neftis
 							["qg"] = 18712,	-- Advisor Faila
 							["coord"] = { 48.9, 44.6, 108 },
+							["races"] = HORDE_ONLY,
 						}),
-						qh(10041, {	-- Who Are They?
+						q(10041, {	-- Who Are They?
 							["qg"] = 18712,	-- Advisor Faila
 							["coord"] = { 48.9, 44.6, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10039,	-- Speak with Scout Neftis
 						}),
-						qh(10043,  {  -- Kill the Shadow Council
+						q(10043,  {  -- Kill the Shadow Council
 							["qg"] = 18712,	-- Advisor Faila
 							["coord"] = { 48.9, 44.6, 108 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10041,	-- Who Are They?
 							["groups"] = {
 								i(25933),	-- Extra Sharp Blade
@@ -865,27 +909,30 @@ _.Zones =
 					}),
 				})),				
 				n(-168,  {	-- Other Quests
-					qh(10052,  {  -- Escape from Firewing Point!
+					q(10052,  {  -- Escape from Firewing Point!
 						["qg"] = 18760,	-- Isla Starmane
 						["coord"] = { 73.9, 35.2, 108 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(25918),	-- Blood-Guided Knife
 							i(25917),	-- Healer's Staff of the Forest
 							i(25916),	-- Terokkar Axe
 						},
 					}),
-					qa(10051,  {  -- Escape from Firewing Point!
+					q(10051,  {  -- Escape from Firewing Point!
 						["qg"] = 18760,	-- Isla Starmane
 						["coord"] = { 73.9, 35.2, 108 },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25918),	-- Blood-Guided Knife
 							i(25917),	-- Healer's Staff of the Forest
 							i(25916),	-- Terokkar Axe
 						},
 					}),
-					qh(10027, {	-- Magical Disturbances
+					q(10027, {	-- Magical Disturbances
 						["qg"] = 18383,	-- Kurgatok
 						["coord"] = { 48.8, 45.7, 108 },
+						["races"] = HORDE_ONLY,
 					}),
 					q(10908, {	-- Speak with Rilak the Redeemed
 						["qg"] = 22272,	-- Kirrik the Awakened
@@ -906,35 +953,41 @@ _.Zones =
 							i(31760),	-- Miniwing (PET!)
 						},	
 					}),
-					qa(9961, {	-- What's Wrong at Cenarion Thicket?
+					q(9961, {	-- What's Wrong at Cenarion Thicket?
 						["qg"] = 18459,	-- Jenai Starwhisper
 						["coord"] = { 57.0, 53.6, 102 },
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-					qh(9960, {	-- What's Wrong at Cenarion Thicket?
+					q(9960, {	-- What's Wrong at Cenarion Thicket?
 						["qg"] = 18447,	-- Tooki
 						["coord"] = { 50.0, 45.8, 102 },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-					qh(11506, {	-- Spirits of Auchindoun
+					q(11506, {	-- Spirits of Auchindoun
 						["qg"] = 24886,	-- Exorcist Vaisha
 						["coord"] = { 49.8, 46.6, 108 },
+						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
-					qa(11505, {	-- Spirits of Auchindoun
+					q(11505, {	-- Spirits of Auchindoun
 						["qg"] = 24885,	-- Exorcist Sullivan
 						["coord"] = { 55.8, 53.8, 108 },
+						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					-- DUNGEON QUESTS
-					qh(29582, {	-- Grek's Crazy Night
+					q(29582, {	-- Grek's Crazy Night
 						["qg"] = 19606,	-- Grek
 						["coord"] = { 49.8, 45.3, 108 },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-					qa(29583, {	-- Eckert the Mad
+					q(29583, {	-- Eckert the Mad
 						["qg"] = 21400,	-- Eckert
 						["coord"] = { 57.6, 53.6, 108 },
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(29595, {	-- Everything Will Be Alright

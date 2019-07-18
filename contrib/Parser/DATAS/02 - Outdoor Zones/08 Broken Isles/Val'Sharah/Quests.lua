@@ -92,8 +92,9 @@ _.Zones =
 					["coord"] = { 42.4, 58.9, 641 },
 					["qg"] = 92620,	-- Commander Jarod Shadowsong
 				}),
-				qa(38687, {	-- Close Enough to Touch (Alliance)
+				q(38687, {	-- Close Enough to Touch (Alliance)
 					["sourceQuests"] = { 43702 },	-- Softening the Target
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 63.2, 42.1, 641 },
 					["qg"] = 104728,	-- Tyrande Whisperwind
 					["groups"] = {
@@ -115,8 +116,9 @@ _.Zones =
 						i(132323),	-- Varethos' Last Breath
 					},
 				}),
-				qh(41763, {	-- Close Enough to Touch (Horde)
+				q(41763, {	-- Close Enough to Touch (Horde)
 					["sourceQuests"] = { 43702 },	-- Softening the Target
+					["races"] = HORDE_ONLY,
 					["coord"] = { 63.2, 42.1, 641 },
 					["qg"] = 104728,	-- Tyrande Whisperwind
 					["groups"] = {
@@ -149,13 +151,15 @@ _.Zones =
 						i(141549),	-- Treads of the Receding Nightmare
 					},
 				}),
-				qa(41708, {	-- Dark Side of the Moon (Alliance)
+				q(41708, {	-- Dark Side of the Moon (Alliance)
 					["sourceQuests"] = { 41056 },	-- Love Lost (Alliance)
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 69.5, 49.4, 641 },
 					["qg"] = 103022,	-- Tyrande Whisperwind
 				}),
-				qh(41890, {	-- Dark Side of the Moon (Horde)
+				q(41890, {	-- Dark Side of the Moon (Horde)
 					["sourceQuests"] = { 41054 },	-- Love Lost (Horde)
+					["races"] = HORDE_ONLY,
 					["coord"] = { 69.5, 49.4, 641 },
 					["qg"] = 103022,	-- Tyrande Whisperwind
 				}),
@@ -213,13 +217,15 @@ _.Zones =
 					["coord"] = { 49.0, 82.2, 641 },
 					["qg"] = 73426,	-- Rylissa Bearsong
 				}),
-				qa(41893, {	-- Given to Corruption (Alliance)
+				q(41893, {	-- Given to Corruption (Alliance)
 					["sourceQuests"] = { 41724 },	-- Heart of the Nightmare (Alliance)
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 66.1, 44.6, 641 },
 					["qg"] = 92783,	-- Elothir
 				}),
-				qh(41749, {	-- Given to Corruption (Horde)
+				q(41749, {	-- Given to Corruption (Horde)
 					["sourceQuests"] = { 38675 },	-- Heart of the Nightmare (Horde)
+					["races"] = HORDE_ONLY,
 					["coord"] = { 66.1, 44.6, 641 },
 					["qg"] = 92783,	-- Elothir
 				}),
@@ -231,12 +237,11 @@ _.Zones =
 					["coord"] = { 66.6, 77.1, 641 },
 					["qg"] = 109631,	-- Old Grizzleback
 				}),
-				{	-- Grotesque Remains
+				i(138441, {	-- Grotesque Remains
 					-- Not sure if you have to be on Where the Wildkin Are and/or Emerald Sisters to pick up this quest.
 					["questID"] = 42786,	-- Grotesque Remains
-					["itemID"] = 138441,	-- Grotesque Remains
-					["qg"] = 108327,	-- Undulating Boneslime
-				},
+					["crs"] = { 108327 },	-- Undulating Boneslime
+				}),
 				q(39015,  {	-- Grumpy
 					-- not sure if there are prereqs for this.
 					["coord"] = { 38.6, 65.6, 641 },
@@ -244,13 +249,15 @@ _.Zones =
 						i(128354),	-- Grumpy's Leash (PET!)
 					},
 				}),
-				qa(41724, {	-- Heart of the Nightmare (Alliance)
+				q(41724, {	-- Heart of the Nightmare (Alliance)
 					["sourceQuests"] = { 43576 },	-- Regroup at the Refuge
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 69.4, 49.4, 641 },
 					["qg"] = 103022,	-- Tyrande Whisperwind
 				}),
-				qh(38675, {	-- Heart of the Nightmare (Horde)
+				q(38675, {	-- Heart of the Nightmare (Horde)
 					["sourceQuests"] = { 43576 },	-- Regroup at the Refuge
+					["races"] = HORDE_ONLY,
 					["coord"] = { 69.4, 49.4, 641 },
 					["qg"] = 103022,	-- Tyrande Whisperwind
 				}),
@@ -323,13 +330,15 @@ _.Zones =
 					["coord"] = { 69.5, 49.4, 641 },
 					["qg"] = 94863,	-- Mender Onelle
 				}),
-				qa(41056, {	-- Love Lost (Alliance)
+				q(41056, {	-- Love Lost (Alliance)
 					["sourceQuests"] = { 38753 },	-- The Demon's Trail
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 67.4, 56.1, 641 },
 					["qg"] = 102938,	-- Tyrande Whisperwind
 				}),
-				qh(41054, {	-- Love Lost (Horde)
+				q(41054, {	-- Love Lost (Horde)
 					["sourceQuests"] = { 38753 },	-- The Demon's Trail
+					["races"] = HORDE_ONLY,
 					["coord"] = { 67.4, 56.1, 641 },
 					["qg"] = 102938,	-- Tyrande Whisperwind
 				}),

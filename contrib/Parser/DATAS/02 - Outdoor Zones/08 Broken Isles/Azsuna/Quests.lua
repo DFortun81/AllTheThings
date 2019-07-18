@@ -879,8 +879,12 @@ _.Zones =
 				q(45174),	-- The Hunt for Illidan Stormrage
 				q(41185),	-- The Keys to Success
 				q(42407),	-- The Nature of the Beast
-				qh(46322),	-- The Pirate's Bay
-				qa(45833),	-- The Pirate's Bay
+				q(46322, {	-- The Pirate's Bay
+					["races"] = HORDE_ONLY,
+				}),
+				q(45833, {	-- The Pirate's Bay
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(43501),	-- The Power Within
 				q(43505),	-- The Power Within
 				q(43503),	-- The Power Within
@@ -914,8 +918,12 @@ _.Zones =
 				q(40130),	-- Washed Clean					
 				q(42166),	-- What Is Going On Here?
 				q(41179),	-- What Once Was Lost
-				qa(44758),	-- What's the Cache?
-				qh(46323),	-- What's the Cache?
+				q(44758, {	-- What's the Cache?
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(46323, {	-- What's the Cache?
+					["races"] = HORDE_ONLY,
+				}),
 				q(37930),	-- Whelp? That Happened.
 				q(38956),	-- Where's Lyndras Again?
 				q(38954),	-- Where's Lyndras?

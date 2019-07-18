@@ -338,9 +338,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 122320,	-- Bladeguard Kaja
 				}),
-				qh(53435, {	-- Azerite for the Horde
+				q(53435, {	-- Azerite for the Horde
 					["repeatable"] = true,
 					["isWeekly"] = true,
+					["races"] = HORDE_ONLY,
 					["coord"] = { 44.60, 95.40, 1163 },
 					["qg"] = 123000,	-- Captain Rez'okun
 					["g"] = {
@@ -348,18 +349,9 @@ _.Zones =
 						i(166999),	-- Treasure Map
 					},
 				}),
-				qh(54439, {	-- Crucible of Storms: Relics of Shadow
-					["qgs"] = {
-						146335,	-- Queen Talanji
-						133050,	-- Princess Talanji
-					},
-					["coords"] = {
-						{ 49.9, 46.6, 1165 },
-						{ 41.7, 66.7, 1163 },
-					},
+				q(54439, {	-- Crucible of Storms: Relics of Shadow
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53763 },	-- Twist the Knife
-				}),
-				qh(53766, {	-- His Eye Upon You
 					["qgs"] = {
 						146335,	-- Queen Talanji
 						133050,	-- Princess Talanji
@@ -368,25 +360,42 @@ _.Zones =
 						{ 49.9, 46.6, 1165 },
 						{ 41.7, 66.7, 1163 },
 					},
+				}),
+				q(53766, {	-- His Eye Upon You
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53763 },	-- Twist the Knife
 					["description"]	= "You just get the Toy if you choose to cleanse the gift.",
+					["qgs"] = {
+						146335,	-- Queen Talanji
+						133050,	-- Princess Talanji
+					},
+					["coords"] = {
+						{ 49.9, 46.6, 1165 },
+						{ 41.7, 66.7, 1163 },
+					},
 					["g"] = {
 						i(168123),	-- Twitching Eyeball
 					},
 				}),
-				qh(47103, {	-- Journey to Nazmir
+				q(47103, {	-- Journey to Nazmir
 					["qg"] = 133050,
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 47512 },	-- Nazmir
 				}),
-				qh(47512, {	-- Nazmir
+				q(47512, {	-- Nazmir
 					["qg"] = 133050,
+					["races"] = HORDE_ONLY,
 					-- ["sourceQuests"] = { 52131 },	-- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievemnt because they can't pick anything up regardless and less spammy in Quest Chain window
 				}),
-				qh(48535, {	-- Nazmir, the Forbidden Swamp
+				q(48535, {	-- Nazmir, the Forbidden Swamp
 					["qg"] = 126549,
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 47103 },	-- Journey to Nazmir
 				}),
-				qh(47433, {	-- Offensively Defensive
+				q(47433, {	-- Offensively Defensive
+					["qg"] = 126564,	-- Hexlord Raal
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 47423 },	-- Forbidden Practices
 					["g"] = {
 						i(155246),	-- Jambani Grips
 						i(155247),	-- Rastari Gauntlets
@@ -397,43 +406,31 @@ _.Zones =
 						i(155265),	-- Torcalin Girdle
 						i(155266),	-- Jambani Waistwrap
 					},
-					["qg"] = 126564,	-- Hexlord Raal
-					["sourceQuests"] = { 47423 },	-- Forbidden Practices
 				}),
-				{	-- Only the Best Will Do
-					["questID"] = 55650,
+				q(55650, {	-- Only the Best Will Do
 					["qg"] = 152505,	-- Skaggit
 					["coord"] = { 42.1, 87.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55649,	-- Machinations for Mechagon
-				},
-				qh(54174, {	-- Orders from Azshara
+				}),
+				q(54174, {	-- Orders from Azshara
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
-					["classes"] = {
-						1,	-- Warrior
-						2,	-- Paladin
-						3,	-- Hunter
-						4,	-- Rogue
-						6,	-- Deathknight
-						7,	-- Shaman
-						8,	-- Mage
-						9,	-- Warlock
-						10,	-- Monk
-						11,	-- Druid
-						12,	-- Demonhunter
-					},
+					["races"] = HORDE_ONLY,
 					["coord"] = { 71.4, 30.2, 862 },
 					["lvl"] = 120,
 					["qg"] = 134345,	-- Collector Kojo
+					["classes"] = exclude({ 5 }, ALL_CLASSES),	-- All except priest
 				}),
-				qh(54433, {	-- Orders from Azshara
+				q(54433, {	-- Orders from Azshara
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 					["classes"] = { 5 },	-- Priest
+					["races"] = HORDE_ONLY,
 					["coord"] = { 71.4, 30.2, 862 },
 					["qg"] = 134345,	-- Collector Kojo
 				}),
-				qh(55124, {	-- Righting Wrongs
+				q(55124, {	-- Righting Wrongs
 					["coord"] = { 49.8, 95.9, 1165 },
+					["races"] = HORDE_ONLY,
 					["qg"] = 150433,	-- Bluffwatcher Proudscar
 				}),
 				q(54166, {	-- Set Sail
@@ -442,9 +439,10 @@ _.Zones =
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				h(i(165668, {	-- The Azsharan Medallion
+				i(165668, {	-- The Azsharan Medallion
 					["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
 					["lvl"] = 120,
+					["races"] = HORDE_ONLY,
 					["crs"] = {
 						144778,	-- Darktide Champion
 						144769,	-- Darktide Sorceress
@@ -454,10 +452,11 @@ _.Zones =
 						144780,	-- Darktide Brute
 					},
 					["g"] = {
-						qh(54172),	-- The Azsharan Medallion
+						q(54172, {	-- The Azsharan Medallion
+							["races"] = HORDE_ONLY,
+						}),
 					},
-				})),
-				
+				}),
 				q(55646, {	-- The Legend of Mechagon
 					["qg"] = 152522,	-- Gazlowe
 					["coord"] = { 53.0, 43.2, 1165 },
@@ -487,13 +486,15 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55650,	-- Only the Best Will Do
 				}),
-				qh(54276, {	-- Trouble in Gnomeregan
+				q(54276, {	-- Trouble in Gnomeregan
 					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
 					["qg"] = 147641,	-- Radek Fuselock
 				}),
-				qh(53763, {	-- Twist the Knife
+				q(53763, {	-- Twist the Knife
 					["qg"] = 146384,	-- Xal'atath
 					["coord"] = { 53.0, 13.6, 864 },
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53762 },	-- The Tempest Crown
 				}),
 				q(53817, {	-- Whatever Happened to Grizzek Fizzwrench?

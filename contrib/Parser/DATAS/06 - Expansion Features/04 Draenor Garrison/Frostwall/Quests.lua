@@ -4,7 +4,8 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		h(m(590, {	-- Frostwall
+		m(590, {	-- Frostwall
+			["races"] = HORDE_ONLY,
 			["g"] = {
 				n(-17, { 	-- Quests
 					prof(794, {	-- Archaeology
@@ -2300,121 +2301,141 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
-							qh(37757, {	-- Arcane Sanctum: Ko'ragh
+							q(37757, {	-- Arcane Sanctum: Ko'ragh
+								["races"] = HORDE_ONLY,
 								["isWeekly"] = true,
 								["g"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							qh(37780, {	-- Auchindoun
+							q(37780, {	-- Auchindoun
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(824),	-- Garrison Resources x175
 								},
 							}),
-							qh(37765, {	-- Blackhand's Crucible: Blackhand
+							q(37765, {	-- Blackhand's Crucible: Blackhand
+								["races"] = HORDE_ONLY,
 								["isWeekly"] = true,
 								["g"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							qh(37781, {	-- Bloodmaul Slag Mines
+							q(37781, {	-- Bloodmaul Slag Mines
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(824),	-- Garrison Resources x175
 								},
 							}),
-							qh(39231, {	-- Destructor's Rise
+							q(39231, {	-- Destructor's Rise
+								["races"] = HORDE_ONLY,
 								["isWeekly"] = true,
 								["g"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
 							}),
-							qh(37782, {	-- Grimrail Depot
+							q(37782, {	-- Grimrail Depot
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(824),	-- Garrison Resources x175
 								},
 							}),
-							qh(37758, {	-- Imperator's Rise: Imperator Mar'gok
+							q(37758, {	-- Imperator's Rise: Imperator Mar'gok
+								["races"] = HORDE_ONLY,
 								["isWeekly"] = true,
 								["g"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							qh(37764, {	-- Iron Assembly: Admiral Gar'an
+							q(37764, {	-- Iron Assembly: Admiral Gar'an
+								["races"] = HORDE_ONLY,
 								["isWeekly"] = true,
 								["g"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							qh(37783, {	-- Iron Docks
+							q(37783, {	-- Iron Docks
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(824),	-- Garrison Resources x175
 								},
 							}),
-							qh(39225, {	-- Maw of Souls
+							q(39225, {	-- Maw of Souls
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
 							}),
-							qh(39221, {	-- Pits of Mannoroth
+							q(39221, {	-- Pits of Mannoroth
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
 							}),
-							qh(37784, {	-- Shadowmoon Burial Grounds
+							q(37784, {	-- Shadowmoon Burial Grounds
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(824),	-- Garrison Resources x175
 								},
 							}),
-							qh(37785, {	-- Skyreach
+							q(37785, {	-- Skyreach
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(824),	-- Garrison Resources x175
 								},
 							}),
-							qh(37762, {	-- Slagworks: Heart of the Mountain
+							q(37762, {	-- Slagworks: Heart of the Mountain
+								["races"] = HORDE_ONLY,
 								["isWeekly"] = true,
 								["g"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							qh(39228, {	-- Temple of Tyranny
+							q(39228, {	-- Temple of Tyranny
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
 							}),
-							qh(37763, {	-- The Black Forge: Kromog
+							q(37763, {	-- The Black Forge: Kromog
+								["races"] = HORDE_ONLY,
 								["isWeekly"] = true,
 								["g"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							qh(39232, {	-- The Black Gate
+							q(39232, {	-- The Black Gate
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
 							}),
-							qh(37786, {	-- The Everbloom
+							q(37786, {	-- The Everbloom
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(824),	-- Garrison Resources x175
 								},
 							}),
-							qh(37787, {	-- Upper Blackrock Spire
+							q(37787, {	-- Upper Blackrock Spire
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["g"] = {
 									currency(824),	-- Garrison Resources x175
 								},
 							}),
-							qh(37756, {	-- Walled City: Brackenspore
+							q(37756, {	-- Walled City: Brackenspore
+								["races"] = HORDE_ONLY,
 								["isWeekly"] = true,
 								["g"] = {
 									i(123975),	-- Greater Bounty Spoils
@@ -2803,6 +2824,6 @@ _.ExpansionFeatures =
 					},
 				}),			
 			},
-		})),	
+		}),	
 	}),
 };

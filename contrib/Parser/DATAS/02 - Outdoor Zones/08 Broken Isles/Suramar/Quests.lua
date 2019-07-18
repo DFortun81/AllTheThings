@@ -81,8 +81,12 @@ _.Zones =
 				q(40975),	-- Arluin Bribe Tracking
 				q(42443),	-- Arluin Wants In (Tracking Quest)
 				q(43569),	-- Arluin's Request
-				qh(44862),	-- Arming the Rebels
-				qa(44861),	-- Arming the Rebels
+				q(44862, {	-- Arming the Rebels
+					["races"] = HORDE_ONLY,
+				}),
+				q(44861, {	-- Arming the Rebels
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(47051, {	-- Assassination: Fate of the Tideskorn
 					["classes"] = { 4 },
 				}),
@@ -122,7 +126,9 @@ _.Zones =
 				q(43524),	-- Court of Stars: Literary Perfection
 				q(38695),	-- Crackdown
 				q(40973),	-- Creating Time
-				qa(44843),	-- Crystal Clearing
+				q(44843, {	-- Crystal Clearing
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(45160),	-- Cubic Currents
 				q(41166),	-- Dark Secrets
 				q(40158),	-- Darkheart Thicket: Demons Be Different
@@ -138,8 +144,12 @@ _.Zones =
 				q(44722),	-- Disillusioned Defector
 				q(41148),	-- Dispensing Compassion
 				q(42396),	-- Do The Thing!
-				qh(43812),	-- Down to Business
-				qa(43810),	-- Down to Business
+				q(43812, {	-- Down to Business
+					["races"] = HORDE_ONLY,
+				}),
+				q(43810, {	-- Down to Business
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(44455),	-- Downfall Tracking
 				q(41410),	-- Dry Powder
 				q(45263),	-- Eating Before the Meeting
@@ -185,7 +195,9 @@ _.Zones =
 				q(40334),	-- Fisherman's Tonic
 				q(41175),	-- Fit for an Elven Queen
 				q(43564),	-- Flow Control
-				qh(43938),	-- Focusing Our Efforts
+				q(43938, {	-- Focusing Our Efforts
+					["races"] = HORDE_ONLY,
+				}),
 				q(41031),	-- For the People
 				q(43361),	-- Fragments of Disaster
 				q(40308),	-- Fragments of Memory
@@ -233,7 +245,9 @@ _.Zones =
 				q(42493),	-- Impending Dooooooom!
 				q(43317),	-- In the Bag
 				q(44726),	-- In the Business of Souls
-				qa(11964),	-- Incense for the Summer Scorchlings
+				q(11964, {	-- Incense for the Summer Scorchlings
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(44569),	-- Inquisitor Volitix
 				q(45271),	-- Insurrection
 				q(45278),	-- Insurrection: An Elven Problem
@@ -279,7 +293,9 @@ _.Zones =
 				q(43590),	-- Leyline Feed: Ley Station Moonfall
 				q(44495),	-- Leyline Master
 				q(44493),	-- Leyline Proficiency
-				qh(44859),	-- Liadrin's Command
+				q(44859, {	-- Liadrin's Command
+					["races"] = HORDE_ONLY,
+				}),
 				q(40905),	-- Lieutenant Strathmar
 				q(40796),	-- Lingering on the Edge
 				q(42486),	-- Little One Lost
@@ -331,7 +347,9 @@ _.Zones =
 				q(42508),	-- Not A Toothless Dragon
 				q(41464),	-- Not Here, Not Now, Not Ever
 				q(40949),	-- Not Their Last Stand
-				qh(44834),	-- Nullified
+				q(44834, {	-- Nullified
+					["races"] = HORDE_ONLY,
+				}),
 				q(44768),	-- Nyell's Workshop
 				q(44873),	-- Oculeth Ex Machina
 				q(40011),	-- Oculeth's Workshop
@@ -355,7 +373,9 @@ _.Zones =
 				q(43528),	-- Planning the Assault
 				q(41028),	-- Power Grid
 				q(40642),	-- Power! Get The Power!
-				qa(44844),	-- Powering Down the Portal
+				q(44844, {	-- Powering Down the Portal
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(40967),	-- Precious Little Left
 				q(43898),	-- Preparing to Move
 				q(41159),	-- Process of Elimination
@@ -365,7 +385,9 @@ _.Zones =
 				q(41320),	-- Pry It From Their Cold, Feral Claws
 				q(40370),	-- Purge the Unclean
 				q(40470),	-- Quality of Life
-				qa(41108),	-- Rain Death Upon Them
+				q(41108, {	-- Rain Death Upon Them
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(41111),	-- Rain Death Upon Them
 				q(44739),	-- Ready for Battle
 				q(45556),	-- Ready to Strike
@@ -410,7 +432,9 @@ _.Zones =
 				q(41098),	-- Shard of Kozak
 				q(41097),	-- Shard of Vorgos
 				q(41001),	-- Shatter the Sashj'tar
-				qh(44842),	-- Shield, Meet Spell
+				q(44842, {	-- Shield, Meet Spell
+					["races"] = HORDE_ONLY,
+				}),
 				q(40745),	-- Shift Change
 				q(41176),	-- Sifting Through the Rubble
 				q(41030),	-- Sigil Reclamation
@@ -439,11 +463,19 @@ _.Zones =
 				q(40929),	-- Symbols of Power
 				q(41762),	-- Sympathizers Among the Shal'dorei
 				q(40765),	-- Syrana Tracker
-				qh(40632),	-- Take Me To Your Leader
-				qa(40391),	-- Take Me To Your Leader
+				q(40632, {	-- Take Me To Your Leader
+					["races"] = HORDE_ONLY,
+				}),
+				q(40391, {	-- Take Me To Your Leader
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(40963),	-- Take Them in Claw
-				qh(41607),	-- Taking a Promenade
-				qa(44831),	-- Taking a Promenade
+				q(41607, {	-- Taking a Promenade
+					["races"] = HORDE_ONLY,
+				}),
+				q(44831, {	-- Taking a Promenade
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(45554),	-- Taking Control
 				q(40010),	-- Tapping the Leylines
 				q(40161),	-- Tapping the Underground
@@ -515,14 +547,20 @@ _.Zones =
 				q(41230),	-- Trapping Evolved
 				q(44790),	-- Trial by Demonfire
 				q(41184),	-- Tried and True
-				qa(44858),	-- Trolling Them
-				qh(44860),	-- Trolling Them
+				q(44858, {	-- Trolling Them
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(44860, {	-- Trolling Them
+					["races"] = HORDE_ONLY,
+				}),
 				q(41462),	-- Trouble Has Huge Feet
 				q(40617),	-- Turn Around, Nighteyes
 				q(40336),	-- Turning the Tidemistress
 				q(40368),	-- Turtle Powered
 				q(40678),	-- Twisted Power
-				qa(44743),	-- Tyrande's Command
+				q(44743, {	-- Tyrande's Command
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(45525),	-- Unanswered Questions
 				q(41182),	-- Uncovering the Orb of Sciallax
 				q(41180),	-- Unspeakable Power
