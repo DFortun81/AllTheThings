@@ -687,7 +687,6 @@ _.Instances =
 					},
 					{	-- Codex: Prayer of Shadow Protection
 						["itemID"] = 31837,	-- Codex: Prayer of Shadow Protection
-						["u"] = 2,			-- Removed in Patch 3.0
 						["crs"] = {
 							26800,	-- Alliance Berserker
 							26805,	-- Alliance Cleric
