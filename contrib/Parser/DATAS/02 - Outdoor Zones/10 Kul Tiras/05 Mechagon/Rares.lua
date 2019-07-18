@@ -84,7 +84,10 @@ _.Zones =
 				}),
 				n(154739, {	-- Caustic Mechaslime
 					["questID"] = 56368,
-					["coord"] = { 51.3, 47.8, 1462 },
+					["coords"] = {
+						{ 66.5, 58.9, 1462 },	-- Cave Entrance
+						--{ 51.3, 47.8, 1462 },
+					},
 					["isDaily"] = true,
 					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
@@ -163,7 +166,7 @@ _.Zones =
 				}),
 				n(154153, {	-- Enforcer KX-T57
 					["questID"] = 56207,
-					["coord"] = { 63.8, 24.5, 1462 },
+					["coord"] = { 55.4, 55.0, 1462 },
 					["isDaily"] = true,
 					["g"] = {
 						crit(31, {	-- Enforcer KX-T57
@@ -232,7 +235,10 @@ _.Zones =
 					},
 				}),
 				n(154701, {	-- Gorged Gear-Cruncher
-					["coord"] = { 73.2, 54.2, 1462 },
+					["coords"] = {
+						{ 73.2, 54.2, 1462 },	-- Cave Entrance
+						--{ 51.3, 47.8, 1462 },
+					},
 					["questID"] = 56367,
 					["isDaily"] = true,
 					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
@@ -261,7 +267,10 @@ _.Zones =
 				}),
 				n(152007, {	-- Killsaw
 					["questID"] = 55369,
-					["coord"] = { 42.6, 48.7, 1462 },
+					["coords"] = {
+						{ 42.6, 48.7, 1462 },
+						{ 41.0, 28.0, 1462 },
+					},
 					["isDaily"] = true,
 					["g"] = {
 						crit(8, {	-- Killsaw
@@ -346,6 +355,7 @@ _.Zones =
 					},
 				}),
 				n(151296, {	-- OOX-Avenger/MG
+					["coord"] = { 57.0, 39.8, 1462 },
 					["isDaily"] = true,
 					["g"] = {
 						crit(12, {	-- OOX-Avenger/MG
@@ -357,6 +367,7 @@ _.Zones =
 					},
 				}),
 				n(152764, {	-- Oxidized Leachbeast
+					["coord"] = { 55.8, 60.6, 1462 },
 					["questID"] = 55856,
 					["isDaily"] = true,
 					["g"] = {
@@ -468,7 +479,10 @@ _.Zones =
 				}),
 				n(152113, {	-- The Kleptoboss
 					["questID"] = 55858,
-					["coord"] = { 51.3, 47.7, 1462 },
+					["coords"] = {
+						{ 68.0, 48.0, 1462 },	-- Cave Entrance
+						--{ 51.3, 47.8, 1462 },
+					},
 					["isDaily"] = true,
 					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
