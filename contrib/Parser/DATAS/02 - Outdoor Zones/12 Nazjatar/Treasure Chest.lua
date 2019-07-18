@@ -151,7 +151,7 @@ _.Zones =
 						i(168161),	-- Molted Shell
 						i(170189),	-- Blind Eye
 						i(170079),	-- Abyssal Conch
-						i(170081),	-- Abyssal COnch (A)
+						i(170081),	-- Abyssal Conch (A)
 						i(169945),	-- Naga Deployment Orders
 						i(170472),	-- Encrusted Coin
 						i(170191),	-- Skeletal Hand
@@ -264,16 +264,16 @@ _.Zones =
 							i(170140),	-- Akana's Reefstrider Soles
 							i(170142),	-- Akana's Reefstrider Treads
 							i(169892),	-- Azsh'iri Stormsurger Boots
-							i(170142),	-- Azsh'iri Stormsurger Striders
+							i(170373),	-- Azsh'iri Stormsurger Striders
 							i(167768),	-- Azsh'iri Stormsurger Treads
 							i(169893),	-- Fathomstalker Boots
 							i(167760),	-- Fathomstalker Footpads
 							i(170372),	-- Fathomstalker Footwraps
 							i(167752),	-- Shirakess Footwraps
 							i(169894),	-- Shirakess Sandals
-							i(170140),	-- Shirakess Slippers
+							i(170371),	-- Shirakess Slippers
 							i(167776),	-- Zanj'ir Scaleguard Stompers
-							i(170143),	-- Zanj'ir Scaleguard Waders
+							i(170374),	-- Zanj'ir Scaleguard Waders
 							i(169891),	-- Zanj'ir Scaleguard Warboots
 						}),
 					}),

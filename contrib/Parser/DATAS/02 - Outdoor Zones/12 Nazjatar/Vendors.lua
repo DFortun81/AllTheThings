@@ -470,16 +470,16 @@ _.Zones =
 							i(170140),	-- Akana's Reefstrider Soles
 							i(170142),	-- Akana's Reefstrider Treads
 							i(169892),	-- Azsh'iri Stormsurger Boots
-							i(170142),	-- Azsh'iri Stormsurger Striders
+							i(170373),	-- Azsh'iri Stormsurger Striders
 							i(167768),	-- Azsh'iri Stormsurger Treads
 							i(169893),	-- Fathomstalker Boots
 							i(167760),	-- Fathomstalker Footpads
 							i(170372),	-- Fathomstalker Footwraps
 							i(167752),	-- Shirakess Footwraps
 							i(169894),	-- Shirakess Sandals
-							i(170140),	-- Shirakess Slippers
+							i(170371),	-- Shirakess Slippers
 							i(167776),	-- Zanj'ir Scaleguard Stompers
-							i(170143),	-- Zanj'ir Scaleguard Waders
+							i(170144),	-- Zanj'ir Scaleguard Waders
 							i(169891),	-- Zanj'ir Scaleguard Warboots
 						}),
 					}),
