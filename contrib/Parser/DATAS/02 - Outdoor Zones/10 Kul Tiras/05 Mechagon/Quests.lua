@@ -257,6 +257,13 @@ _.Zones =
 						}),
 					},
 				}),
+				q(55079, {	-- Blueprint MicroBot XD
+					["g"] = {
+						crit(31, {	-- Microbot XD
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
 				q(55075, {	-- Blueprint: Orange Spraybot
 					["g"] = {
 						crit(27, {	-- Orange Spraybot
@@ -296,6 +303,13 @@ _.Zones =
 				q(55082, {	-- Blueprint: Rustbolt Pocket Turret
 					["g"] = {
 						crit(34, {	-- Rustbolt Pocket Turret
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
+				q(55073, {	-- Blueprint Rustbolt Resistance Insignia
+					["g"] = {
+						crit(19, {	-- Blueprint Rustbolt Resistance Insignia
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},

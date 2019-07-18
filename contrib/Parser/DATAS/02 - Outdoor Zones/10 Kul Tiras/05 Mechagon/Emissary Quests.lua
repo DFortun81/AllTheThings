@@ -13,11 +13,15 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(170061, {	-- Rustbolt Supplies
-							i(168494, {	-- Blueprint RUstbolt Resistance Insignia
-								["questID"] = 55073,
+							i(168494, {	-- Blueprint Rustbolt Resistance Insignia
+								crit(19, {	-- Rustbolt Resistance Insignia
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
 							}),
 							i(169171, {	-- Blueprint MicroBot XD
-								["questID"] = 55079,
+								crit(31, {	-- Microbot XD
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
 							}),
 						}),
 					},
