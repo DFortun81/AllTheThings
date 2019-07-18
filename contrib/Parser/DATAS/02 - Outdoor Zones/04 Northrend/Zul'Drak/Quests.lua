@@ -35,8 +35,6 @@ _.Zones =
 				q(12684),	-- Blood of a Dead God
 				q(12627),	-- Breaking Through Jin'Alai
 				q(12632),	-- But First My Offspring
-				q(12940),	-- Candy Bucket
-				q(12941),	-- Candy Bucket
 				q(12610),	-- Clipping Their Wings
 				q(12638),	-- Close Call
 				q(12606),	-- Cocooned!
@@ -48,16 +46,6 @@ _.Zones =
 				q(12633),	-- Darkness Calling
 				q(12552),	-- Death to the Necromagi
 				q(12503),	-- Defend the Stand
-				qa(11755),	-- Desecrate this Fire!
-				qh(13449),	-- Desecrate this Fire!
-				qa(11766),	-- Desecrate this Fire!
-				qh(11749),	-- Desecrate this Fire!
-				qa(11732),	-- Desecrate this Fire!
-				qh(11745),	-- Desecrate this Fire!
-				qa(11580),	-- Desecrate this Fire!
-				qh(11581),	-- Desecrate this Fire!
-				qa(13458),	-- Desecrate this Fire!
-				qa(11786),	-- Desecrate this Fire!
 				q(12710),	-- Disclosure
 				q(12648),	-- Dressing Down
 				q(13556),	-- Eggs for Dubra'Jin
@@ -72,8 +60,6 @@ _.Zones =
 				q(12677),	-- Hazardous Materials
 				q(12674),	-- Hell Hath a Fury
 				q(12709),	-- Hexed Caches
-				qh(13500),	-- Honor the Flame
-				qa(13492),	-- Honor the Flame
 				q(12665),	-- I Sense a Disturbance
 				q(12902),	-- In Search Of Answers
 					["sourceQuests"] = {
@@ -100,13 +86,17 @@ _.Zones =
 				q(12916),	-- Our Only Hope
 				q(12596),	-- Pa'Troll
 				q(12740),	-- Parachutes for the Argent Crusade
-				qa(11882),	-- Playing with Fire
+				q(11882, {	-- Playing with Fire
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(12650),	-- Plundering Their Own
 				q(12510),	-- Precious Elemental Fluids
 				q(12666),	-- Preparations for the Underworld
 				q(12584),	-- Pure Evil
 				q(12721),	-- Rampage
-				qa(12770),	-- Reallocating Resources
+				q(12770, {	-- Reallocating Resources
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(12635),	-- Relics of the Snow Leopard Goddess
 				q(12663),	-- Reunited
 				q(12676),	-- Sabotage
@@ -114,7 +104,9 @@ _.Zones =
 				q(12640),	-- Sealing the Rifts
 				q(12667),	-- Seek the Wind Serpent Goddess
 				q(12672),	-- Setting the Stage
-				qh(12763),	-- Shifting Priorities
+				q(12763, {	-- Shifting Priorities
+					["races"] = HORDE_ONLY,
+				}),
 				q(12643),	-- Silver Lining
 				q(12799),	-- Siphoning the Spirits
 				q(12553),	-- Skimmer Spinnerets

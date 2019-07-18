@@ -846,9 +846,6 @@ _.Zones =
 							qa(25916),	-- Breaking Through
 							q(25658),	-- Built to Last
 							q(25858),	-- By Her Lady's Word
-							qa(28983),	-- Candy Bucket
-							qh(28984),	-- Candy Bucket
-							q(28982),	-- Candy Bucket
 							qh(25989),	-- Capture the Crab
 							qa(25909),	-- Capture the Crab
 							qa(25579),	-- Caught Off-Guard
@@ -924,8 +921,6 @@ _.Zones =
 							q(25629),	-- Her Lady's Hand
 							qh(25972),	-- Honor and Privilege
 							qa(25898),	-- Honor and Privilege
-							q(29030),	-- Honor the Flame
-							q(29031),	-- Honor the Flame
 --]]
 							qa(25918, {	-- Hopelessly Gearless
 								["qg"] = 41541,	-- 

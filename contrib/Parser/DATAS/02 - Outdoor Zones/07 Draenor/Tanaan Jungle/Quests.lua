@@ -12,24 +12,44 @@ _.Zones =
 				q(38223),	-- Dark Ascension
 				q(38270),	-- Finding the Killer
 				q(38271),	-- Following the Bloody Path
-				qa(38267),	-- Friends Above
-				qh(38269),	-- Friends Above
-				qa(37687),	-- Garrison Campaign: In the Shadows
-				qh(37688),	-- Garrison Campaign: In the Shadows
+				q(38267, {	-- Friends Above
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(38269, {	-- Friends Above
+					["races"] = HORDE_ONLY,
+				}),
+				q(37687, {	-- Garrison Campaign: In the Shadows
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(37688, {	-- Garrison Campaign: In the Shadows
+					["races"] = HORDE_ONLY,
+				}),
 				q(38421, {	-- Garrison Campaign: Onslaught at Auchindoun
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38415, {	-- Garrison Campaign: Onslaught at Auchindoun
 					["races"] = HORDE_ONLY,
 				}),
-				qh(38453),	-- Garrison Campaign: The Bane of the Bleeding Hollow
-				qa(38560),	-- Garrison Campaign: The Bane of the Bleeding Hollow
-				qa(38561),	-- Garrison Campaign: The Warlock
-				qh(38458),	-- Garrison Campaign: The Warlock
+				q(38453, {	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					["races"] = HORDE_ONLY,
+				}),
+				q(38560, {	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(38561, {	-- Garrison Campaign: The Warlock
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(38458, {	-- Garrison Campaign: The Warlock
+					["races"] = HORDE_ONLY,
+				}),
 				q(38213),	-- Get a Clue
 				q(39129),	-- Ill Tempered
-				qh(38599),	-- Infrastructure Improvements
-				qa(37839),	-- Light Be With You
+				q(38599, {	-- Infrastructure Improvements
+					["races"] = HORDE_ONLY,
+				}),
+				q(37839, {	-- Light Be With You
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(39176),	-- Mastery Of Taladite
 				q(39395),	-- Oronok's Offer
 				q(39177),	-- Ruined Construct
@@ -37,10 +57,16 @@ _.Zones =
 				q(34366),	-- Tanaan 01: Front of the Portal
 				q(38272),	-- The Bleeding Hollow
 				q(38274),	-- The Eye of Kilrogg
-				qh(35058),	-- The Mysterious Flask
+				q(35058, {	-- The Mysterious Flask
+					["races"] = HORDE_ONLY,
+				}),
 				q(40237),	-- Work Work Stoppage
-				qh(38989),	-- Your Orders, General?
-				qa(38996),	-- Your Orders, General?
+				q(38989, {	-- Your Orders, General?
+					["races"] = HORDE_ONLY,
+				}),
+				q(38996, {	-- Your Orders, General?
+					["races"] = ALLIANCE_ONLY,
+				}),
 --]]
 				q(39510, {	-- A Little Wetwork
 					["qg"] = 96014,	-- Shadow Hunter Denjai

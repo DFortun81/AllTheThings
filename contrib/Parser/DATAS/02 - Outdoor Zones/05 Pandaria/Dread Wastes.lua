@@ -283,8 +283,6 @@ _.Zones =
 							31088,	-- Crime and Punishment
 						},
 					}),
-					--q(32024),	-- Candy Bucket
-					--q(32023),	-- Candy Bucket
 					q(31107, {	-- Citizens of a New Empire
 						["qg"] = 62774,	-- Malik the Unscathed
 					}),
@@ -461,7 +459,6 @@ _.Zones =
 						["qg"] = 67138,	-- Chen Stormstout
 						["sourceQuests"] = { 31077 },	-- Evie Stormstout
 					}),
-					--q(32497),	-- Honor the Flame
 					q(31071, {	-- I Bring Us Great Shame
 						["qg"] = 62859,	-- Thirsty Missho
 					}),

@@ -1643,8 +1643,6 @@ _.Zones =
 					qh(27783),	-- Garona Needs You
 					qh(27658),	-- Help from the Earthcaller
 					qh(28594),	-- Highbank, Crybank
-					qa(28945),	-- Honor the Flame
-					qh(28946),	-- Honor the Flame
 					qh(28874),	-- Hook 'em High
 					qh(28043),	-- How to Maim Your Dragon
 					qh(28092),	-- If The Key Fits

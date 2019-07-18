@@ -17,25 +17,40 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 --[[
-					qh(32352),	-- A Gathering Storm
-					qh(31511),	-- A Witness to History
---]]
---[[ CHALLENGE MODE DAILIES -- REMOVED?
-					qh(31528, {	-- A Worthy Challenge: Darkmaster Gandling
-						i(98134),	-- Heroic Cache of Treasures
+					q(32352, {	-- A Gathering Storm
+						["races"] = HORDE_ONLY,
 					}),
-					qh(31526, {	-- A Worthy Challenge: Durand
-						i(98134),	-- Heroic Cache of Treasures
+					q(31511, {	-- A Witness to History
+						["races"] = HORDE_ONLY,
 					}),
-					qh(31527, {	-- A Worthy Challenge: Flameweaver Koegler
-						i(98134),	-- Heroic Cache of Treasures
+					q(31528, {	-- A Worthy Challenge: Darkmaster Gandling
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(98134),	-- Heroic Cache of Treasures
+						},
 					}),
---]]
---[[
-					qh(32242),	-- Buried Secrets
+					q(31526, {	-- A Worthy Challenge: Durand
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(98134),	-- Heroic Cache of Treasures
+						},
+					}),
+					q(31527, {	-- A Worthy Challenge: Flameweaver Koegler
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(98134),	-- Heroic Cache of Treasures
+						},
+					}),
+					q(32242, {	-- Buried Secrets
+						["races"] = HORDE_ONLY,
+					}),
 					q(31279),	-- Everything I Know About Cooking
 --]]
-					qh(32901, {	-- Heroic Deeds
+					q(32901, {	-- Heroic Deeds
+						["races"] = HORDE_ONLY,
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 						["g"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
@@ -160,10 +175,18 @@ _.Zones =
 						["requireSkill"] = 164,	-- Blacksmithing
 					}),
 --[[
-					qh(33249),	-- Proving Grounds
-					qh(32256),	-- Rise Of An Empire
-					qh(32726),	-- So You Want to Be a Blacksmith...
-					qh(31391),	-- The Klaxxi
+					q(33249, {	-- Proving Grounds
+						["races"] = HORDE_ONLY,
+					}),
+					q(32256, {	-- Rise Of An Empire
+						["races"] = HORDE_ONLY,
+					}),
+					q(32726, {	-- So You Want to Be a Blacksmith...
+						["races"] = HORDE_ONLY,
+					}),
+					q(31391, {	-- The Klaxxi
+						["races"] = HORDE_ONLY,
+					}),
 --]]
 					q(31375, {	-- The Order of the Cloud Serpent
 					--	possibly removed, maybe gated behind completion of a specific quest/questline
@@ -172,7 +195,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["qg"] = 64533,	-- Wei Lakebreeze
 					}),
---					qh(31388),	-- The Shado-Pan Offensive
+					--[[
+					q(31388, {	-- The Shado-Pan Offensive
+						["races"] = HORDE_ONLY,
+					}),
+					]]--
 				}),
 				n(-2, {	-- Vendors
 					n(64067, {	-- Barleyflower <Cooking Supplies>

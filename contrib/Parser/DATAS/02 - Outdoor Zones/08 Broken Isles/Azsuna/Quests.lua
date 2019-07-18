@@ -801,7 +801,6 @@ _.Zones =
 				q(40875),	-- Going to Waste
 				q(38948),	-- Hard Times
 				q(39876),	-- Helping the Hunters
-				q(44574),	-- Honor the Flame
 				q(43561),	-- I Believe I Can Fly!
 				q(40874),	-- I'd Do It Myself, But...
 				q(39877),	-- In the Loop

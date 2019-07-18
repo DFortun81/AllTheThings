@@ -107,32 +107,39 @@ _.Zones =
 					["classes"] = { 2 },
 					["qg"] = 117438,	-- Doloria
 				}),
-				qa(45865, {	-- A Gift From the Six
+				q(45865, {	-- A Gift From the Six
 					["classes"] = { 1, 3, 4, 6, 12 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90418,	-- Archmage Modera
 				}),
-				qa(45864, {	-- A Gift From the Six
+				q(45864, {	-- A Gift From the Six
 					["classes"] = { 2, 5, 7, 10, 11 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90418,	-- Archmage Modera
 				}),
-				qa(45862, {	-- A Gift From the Six
+				q(45862, {	-- A Gift From the Six
 					["classes"] = { 2, 4, 7, 8, 9 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90418,	-- Archmage Modera
 				}),
-				qa(45842, {	-- A Gift From the Six
+				q(45842, {	-- A Gift From the Six
 				--	["classes"] = {},	-- need info
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90418,	-- Archmage Modera
 				}),
-				qa(45866, {	-- A Gift From the Six
+				q(45866, {	-- A Gift From the Six
 					["classes"] = { 3, 5, 8, 9, 11 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90418,	-- Archmage Modera
 				}),
-				qa(45861, {	-- A Gift From the Six
+				q(45861, {	-- A Gift From the Six
 					["classes"] = { 1, 4, 6, 7, 8, 11 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90418,	-- Archmage Modera
 				}),
-				qa(45863, {	-- A Gift From the Six
+				q(45863, {	-- A Gift From the Six
 					["classes"] = { 1, 4, 6, 7, 8, 11,},
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90418,	-- Archmage Modera
 				}),
 				q(41632,  {	-- A Gift of Time
@@ -173,13 +180,15 @@ _.Zones =
 				q(46177,  {	-- A Portal Away
 					["qg"] = 116048,
 				}),
-				qh(39746, {	-- A Ring Unbroken
+				q(39746, {	-- A Ring Unbroken
 					["classes"] = { 7 },
+					["races"] = HORDE_ONLY,
 					["qg"] = 91731,	-- Thrall
 				}),
-				qa(38035, {	-- A Royal Summons
+				q(38035, {	-- A Royal Summons
 					["sourceQuests"] = { 39735, 44700 },	-- Stormheim (2 versions)
 					["coord"] = { 29.2, 47.2, 627 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 96644,	-- Sky Admiral Rogers
 				}),
 				q(43441,  {	-- A Second Weapon
@@ -217,8 +226,9 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 101513,	-- Lord Jorach Ravenholdt
 				}),
-				qa(47041, {	-- Affliction: The Twisted Twin
+				q(47041, {	-- Affliction: The Twisted Twin
 					["classes"] = { 9 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 				}),
 				q(44406,  {	-- Aggra's Guidance
@@ -229,12 +239,14 @@ _.Zones =
 					["classes"] = { 8 },
 					["qg"] = 102700,	-- Meryl Felstorm
 				}),
-				qa(42814, {	-- An Important Mission
+				q(42814, {	-- An Important Mission
 					["classes"] = { 1 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 108961,	-- Sergeant Dalton
 				}),
-				qa(46065, {	-- An Impossible Foe
+				q(46065, {	-- An Impossible Foe
 					["classes"] = { 1, 4, 6, 7, 8, 11 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 117871,	-- War Councilor Victoria
 					["u"] = 40,
 				}),
@@ -264,8 +276,9 @@ _.Zones =
 					["classes"] = { 8 },
 					["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
 				}),
-				qa(42423, {	-- Archmage Vargoth's Retreat
+				q(42423, {	-- Archmage Vargoth's Retreat
 					["sourceQuests"] = { 42416 },	-- The Council is in Session
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90431,	-- Archmage Ansirem Runeweaver
 				}),
 				q(46730,  {	-- Armies of Legionfall
@@ -332,7 +345,7 @@ _.Zones =
 					["classes"] = { 2 },
 					["qg"] = 110571,	-- Delas Moonfang
 				}),
-				qa(44782, {	-- Away From Prying Eyes
+				q(44782, {	-- Away From Prying Eyes
 					["sourceQuests"] = {
 						44781,	-- The Council's Call
 						45050,	-- Infiltration Plans
@@ -344,6 +357,7 @@ _.Zones =
 						45061,	-- Scrolls of the Faldrottin
 						47000,	-- The Council's Call
 					},
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90417,	-- Archmage Khadgar
 				}),
 				q(44766,  {	-- Backup Plan
@@ -351,15 +365,18 @@ _.Zones =
 					["classes"] = { 8 },
 					["qg"] = 118242,	-- Aethas Sunreaver
 				}),
-				qa(47037, {	-- Balance: The Twisted Twin
+				q(47037, {	-- Balance: The Twisted Twin
 					["classes"] = { 11 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 				}),
-				qa(46327, {	-- Bargaining with Shadows
+				q(46327, {	-- Bargaining with Shadows
 					["qg"] = 90418,	-- Archmage Modera
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(47018, {	-- Beast Mastery: Rumblings Near Feltotem
+				q(47018, {	-- Beast Mastery: Rumblings Near Feltotem
 					["classes"] = { 3 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
 				q(45415,  {	-- Between Worlds
@@ -391,15 +408,17 @@ _.Zones =
 				q(44760,  {	-- Blood On Your Hands
 					["qg"] = 115264,	-- Illnea Bloodthorn
 				}),
-				qa(47025, {	-- Blood: Aid of the Illidari
+				q(47025, {	-- Blood: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
 					["classes"] = { 6 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 					["u"] = 40,
 				}),
-				qa(47024, {	-- Brewmaster: Aid of the Illidari
+				q(47024, {	-- Brewmaster: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
 					["classes"] = { 10 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 					["u"] = 40,
 				}),
@@ -447,12 +466,13 @@ _.Zones =
 						["classes"] = { 4 },
 					}),
 				}),
-				qh(42503, {	-- Codebreaker
+				q(42503, {	-- Codebreaker
 					["sourceQuests"] = {
 						42501,	-- Finishing the Job
 						42502,	-- No Sanctuary
 					},
 					["classes"] = { 4 },
+					["races"] = HORDE_ONLY,
 					["qg"] = 94138,	-- Princess Tess Greymane
 				}),
 				q(47605,  {	-- Coins of Air
@@ -498,8 +518,9 @@ _.Zones =
 					["classes"] = { 8 },
 					["qgs"] = { 102700, 109222 },	-- Meryl Felstorm (2 versions)
 				}),
-				qa(45843, {	-- Dark Omens
+				q(45843, {	-- Dark Omens
 					["qg"] = 116880,	-- Kor'vas Bloodthorn
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42125,  {	-- Dark Whispers
 					["sourceQuests"] = {
@@ -531,19 +552,21 @@ _.Zones =
 					["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
 				}),
 			--	q(45173)	-- Desperate Times -- mission board
-				qa(45560, {	-- Destruction: Rumblings Near Feltotem
+				q(45560, {	-- Destruction: Rumblings Near Feltotem
 					["sourceQuests"] = {
 						47031,	-- Legion Threat: Highmountain
 						47035,	-- Legion Threat: The Missing Mage
 					},
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 9 },
 					["qg"] = 90418,	-- Archmage Modera
 				}),
-				qa(47020, {	-- Discipline: Rumblings Near Feltotem
+				q(47020, {	-- Discipline: Rumblings Near Feltotem
 					["sourceQuests"] = {
 						47031,	-- Legion Threat: Highmountain
 						47035,	-- Legion Threat: The Missing Mage
 					},
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 5 },
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera
 				}),
@@ -567,8 +590,9 @@ _.Zones =
 				q(42911,  {	-- Drowned Mana
 					["qg"] = 108825,	-- Conjurer Margoss
 				}),
-				qa(45123, {	-- Elemental: The Folly of Levia Laurence
+				q(45123, {	-- Elemental: The Folly of Levia Laurence
 					["classes"] = { 7 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
 				q(44412,  {	-- Enemies Everywhere
@@ -635,8 +659,9 @@ _.Zones =
 				q(41035,  {	-- Felstorm's Plea
 					["classes"] = { 8 },
 				}),
-				qa(47059, {	-- Feral: The Folly of Levia Laurence
+				q(47059, {	-- Feral: The Folly of Levia Laurence
 					["classes"] = { 11 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
 				q(45615,  {	-- Finders Keepers
@@ -661,12 +686,14 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 94138,	-- Princess Tess Greymane
 				}),
-				qa(47055, {	-- Fire: The Folly of Levia Laurence
+				q(47055, {	-- Fire: The Folly of Levia Laurence
 					["classes"] = { 8 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
-				qa(41778, {	-- Firing Up the Forge
+				q(41778, {	-- Firing Up the Forge
 					["qg"] = 90463,	-- Archmage Karlain
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42424,  {	-- Following In His Footsteps
 					["sourceQuests"] = { 42423 },	-- Archmage Vargoth's Retreat
@@ -677,13 +704,15 @@ _.Zones =
 					["classes"] = { 1, 4, 6, 7, 11 },
 					["qg"] = 116714,	-- Ritssyn Flamescowl
 				}),
-				qh(44203, {	-- For the Cause
+				q(44203, {	-- For the Cause
 					["classes"] = { 4 },
+					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["qg"] = 113213,	-- Master Mathias Shaw
 				}),
-				qa(44202, {	-- For the Cause
+				q(44202, {	-- For the Cause
 					["classes"] = { 4 },
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["qg"] = 113213,	-- Master Mathias Shaw
 				}),
@@ -697,16 +726,18 @@ _.Zones =
 					["classes"] = { 6 },
 					["qgs"] = { 115467, 105081 },	-- Archmage Kalec (2 versions)
 				}),
-				qa(45182, {	-- Frost: The Twisted Twin
+				q(45182, {	-- Frost: The Twisted Twin
 					["classes"] = { 8 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 				}),
 				q(46779,  {	-- Further Advancement
 					["classes"] = { 4 },
 					["qg"] = 98092,	-- Nikki the Gossip
 				}),
-				qa(47056, {	-- Fury: The Folly of Levia Laurence
+				q(47056, {	-- Fury: The Folly of Levia Laurence
 					["classes"] = { 1 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
 				q(45413,  {	-- Gathering Information
@@ -736,9 +767,10 @@ _.Zones =
 					["classes"] = { 8 },
 					["qg"] = 112688,	-- Meryl Felstorm
 				}),
-				qa(47023, {	-- Guardian: Aid of the Illidari
+				q(47023, {	-- Guardian: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
 					["classes"] = { 11 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 					["u"] = 40,
 				}),
@@ -746,16 +778,18 @@ _.Zones =
 					["qgs"] = { 115467, 105081 },	-- Archmage Kalec (2 versions)
 					["classes"] = { 12 },
 				}),
-				qh(46178, {	-- Hiding In Plain Sight
+				q(46178, {	-- Hiding In Plain Sight
 					["classes"] = { 4 },
+					["races"] = HORDE_ONLY,
 					["qg"] = 98099,	-- Lilian Voss
 					["g"] = {
 						-- rewards spell 240982 (mount: shadowblade's murderous omen)
 					},
 				}),
-				qa(46089, {	-- Hiding In Plain Sight
+				q(46089, {	-- Hiding In Plain Sight
 					["classes"] = { 4 },
 					["qg"] = 98099,	-- Lilian Voss
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						-- rewards spell 240982 (mount: shadowblade's murderous omen)
 					},
@@ -764,14 +798,16 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 123087,	-- Al'Abas
 				}),
-				qa(47006, {	-- Holy: The Bradensbrook Investigation
+				q(47006, {	-- Holy: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
 					["classes"] = { 2 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
-				qa(46078, {	-- Holy: The Bradensbrook Investigation
+				q(46078, {	-- Holy: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
 					["classes"] = { 5 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
 				q(40950,  {	-- Honoring Success
@@ -803,8 +839,9 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 103792,	-- Griftah
 				}),
-				qa(44821, {	-- In Dire Need
+				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 115465,	-- Archmage Modera
 				}),
 				q(44184,  {	-- In the Blink of an Eye
@@ -838,9 +875,10 @@ _.Zones =
 				q(44547, {	-- Isle Hopping
 					["isBreadcrumb"] = true,
 				}),
-				qa(45906, {	-- Jarod's Gift
+				q(45906, {	-- Jarod's Gift
 					["sourceQuests"] = { 46035 },	-- End of the Risen Threat
 					["classes"] = { 2, 5, 7, 11 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90418,	-- Archmage Modera
 					["u"] = 40,
 				}),
@@ -855,8 +893,9 @@ _.Zones =
 				q(39985,  {	-- Khadgar's Discovery
 					["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";
 				}),
-				qa(45905, {	-- Kruul's Gift
+				q(45905, {	-- Kruul's Gift
 					["sourceQuests"] = { 45416 },	-- The Highlord's Return
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90431,	-- Archmage Ansirem Runeweaver
 					["u"] = 40,
 				}),
@@ -908,8 +947,9 @@ _.Zones =
 					["classes"] = { 12 },
 					["qgs"] = { 99254, 108571 },	-- Altruis  the Sufferer
 				}),
-				qa(47039, {	-- Marksmanship: The Twisted Twin
+				q(47039, {	-- Marksmanship: The Twisted Twin
 					["classes"] = { 3 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 				}),
 				q(48376,  {	-- Mass Primal Obliterum
@@ -925,20 +965,22 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 98102,	-- Valeera Sanguinar
 				}),
-				qa(46260, {	-- Meld Into the Shadows
+				q(46260, {	-- Meld Into the Shadows
 					["sourceQuests"] = {
 						45628,	-- This Time, Leave a Trail
 						45629,	-- This Time, Leave a Trail
 					},
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },
 					["qg"] = 117259,	-- Lord Jorach Ravenholdt
 				}),
 				q(45185,  {	-- Message from the Shadows
 					["qg"] = 116175,	-- Karam Magespear
 				}),
-				qa(47005, {	-- Mistweaver: The Bradensbrook Investigation
+				q(47005, {	-- Mistweaver: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
 					["classes"] = { 10 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera
 				}),
 				q(42594,  {	-- Move Like No Other
@@ -951,9 +993,10 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 101513,	-- Lord Jorach Ravenholdt
 				}),
-				qa(45909, {	-- Navarrogg's Gift
+				q(45909, {	-- Navarrogg's Gift
 					["sourceQuests"] = { 45627 },	-- Feltotem's Fall
 					["qg"] = 90418,	-- Archmage Modera
+					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,
 				}),
 				q(40384,  {	-- Needs of the Hunters
@@ -1012,8 +1055,9 @@ _.Zones =
 					["classes"] = { 5 },
 					["qg"] = 105603,	-- Defender Barrem
 				}),
-				qa(47058, {	-- Outlaw: The Folly of Levia Laurence
+				q(47058, {	-- Outlaw: The Folly of Levia Laurence
 					["classes"] = { 4 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
 				q(37666,  {	-- Picking a Fight
@@ -1043,15 +1087,17 @@ _.Zones =
 					["lvl"] = 101,
 					["qg"] = 112695,	-- Hooded Priest
 				}),
-				qa(47022, {	-- Protection: Aid of the Illidari
+				q(47022, {	-- Protection: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
 					["classes"] = { 2 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 					["u"] = 40,
 				}),
-				qa(45412, {	-- Protection: Aid of the Illidari
+				q(45412, {	-- Protection: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
 					["classes"] = { 1 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 					["u"] = 40,
 				}),
@@ -1059,8 +1105,9 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 98100,	-- Taoshi
 				}),
-				qa(45910, {	-- Raest's Gift
+				q(45910, {	-- Raest's Gift
 					["sourceQuests"] = { 46127 },	-- Thwarting the Twins
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90463,	-- Archmage Karlain
 					["u"] = 40,
 				}),
@@ -1085,14 +1132,16 @@ _.Zones =
 					["classes"] = { 3 },
 					["qg"] = 100190,	-- Vareesa Windrunner
 				}),
-				qa(47004, {	-- Restoration: The Bradensbrook Investigation
+				q(47004, {	-- Restoration: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
 					["classes"] = { 11 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera
 				}),
-				qa(47003, {	-- Restoration: The Bradensbrook Investigation
+				q(47003, {	-- Restoration: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
 					["classes"] = { 7 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera
 				}),
 				q(47052,  {	-- Retribution: Fate of the Tideskorn
@@ -1125,14 +1174,16 @@ _.Zones =
 					["classes"] = { 12 },
 					["qg"] = 109295,	-- Matron Mother Malevolence
 				}),
-				qa(42815, {	-- Return to the Broken Shore
+				q(42815, {	-- Return to the Broken Shore
 					["sourceQuests"] = { 42814 },	-- An Important Mission
 					["classes"] = { 1 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 96183,	-- Danath Trollbane
 				}),
-				qh(38904, {	-- Return to the Broken Shore
+				q(38904, {	-- Return to the Broken Shore
 					["sourceQuests"] = { 41052 },	-- A Desperate Plea
 					["classes"] = { 1 },
+					["races"] = HORDE_ONLY,
 					["qg"] = 93773,	-- High Overlord Saurfang
 				}),
 				q(43007,  {	-- Return to the Chamber of Shadows
@@ -1241,8 +1292,9 @@ _.Zones =
 					["classes"] = { 8 },
 					["qg"] = 103092,	-- The Great Akazamzarak
 				}),
-				qa(47042, {	-- Shadow: The Twisted Twin
+				q(47042, {	-- Shadow: The Twisted Twin
 					["classes"] = { 5 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90463, 115468 },	-- Archmage Karlain
 				}),
 				q(47592,  {	-- Shine Bright Like a Diamond
@@ -1316,9 +1368,10 @@ _.Zones =
 				q(41114,  {	-- The Champion's Return -- no qg info
 					["classes"] = { 8 },
 				}),
-				qa(42416, {	-- The Council is in Session
+				q(42416, {	-- The Council is in Session
 					["sourceQuests"] = { 42222 },	-- Empyrean Society Report
 					["classes"] = { 8 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 107351,	-- Archmage Khadgar
 				}),
 				i(154880, {	-- Cursed Shard
@@ -1394,8 +1447,9 @@ _.Zones =
 					["classes"] = { 3 },
 					["qg"] = 102478,	-- Emmarel Shadewarden
 				}),
-				qa(45902, {	-- The Imp Mother's Gift
+				q(45902, {	-- The Imp Mother's Gift
 					["classes"] = { 1, 4, 6, 7, 8, 11, },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 90418,	-- Archmage Modera
 					["u"] = 40,
 				}),
@@ -1424,8 +1478,9 @@ _.Zones =
 						i(135479),	-- Lost Mail
 					}),
 				}),
-				qa(46200, {	-- The Matter Resolved... For Now...
+				q(46200, {	-- The Matter Resolved... For Now...
 					["qg"] = 118954,	-- Night Elf Warrior
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42231,  {	-- The Mysterious Paladin
 					["classes"] = { 2 },
@@ -1459,12 +1514,14 @@ _.Zones =
 					["classes"] = { 8 },
 					["qg"] = 103092,	-- The Great Akazamzarak
 				}),
-				qh(46322, {	-- The Pirate's Bay
+				q(46322, {	-- The Pirate's Bay
 					["classes"] = { 4 },
+					["races"] = HORDE_ONLY,
 					["qg"] = 101513,	-- Lord Jorach Ravenholdt
 				}),
-				qa(45833, {	-- The Pirate's Bay
+				q(45833, {	-- The Pirate's Bay
 					["classes"] = { 4 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 101513,	-- Lord Jorach Ravenholdt
 				}),
 				q(40816,  {	-- The Power to Survive
@@ -1517,16 +1574,18 @@ _.Zones =
 					["qg"] = 101097,	-- Calydus
 				}),
 			--	q(39731),	-- The Tranquil Forest -- granted by scouting map
-				qh(38307, {	-- The Warchief Beckons
+				q(38307, {	-- The Warchief Beckons
 					["sourceQuests"] = {
 						39864,	-- Stormheim
 						44701,	-- Stormheim
 					},
+					["races"] = HORDE_ONLY,
 					["coord"] = { 29.4, 47.1, 627 },
 					["qg"] = 96683,	-- Nathanos Blightcaller
 				}),
-				qa(45188, {	-- The Wisdom of the Council
+				q(45188, {	-- The Wisdom of the Council
 					["qg"] = 116308,	-- Karam Magespear
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(44175,  {	-- The World Awaits
 					["isWeekly"] = true,
@@ -1571,8 +1630,12 @@ _.Zones =
 					["classes"] = { 2 },
 					["qg"] = 105689,	-- Orik Trueheart
 				}),
-				qa(46810),	-- To the Forge It Goes...
-				qh(46946),	-- To the Forge It Goes...
+				q(46810, {	-- To the Forge It Goes...
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(46946, {	-- To the Forge It Goes...
+					["races"] = HORDE_ONLY,
+				}),
 				q(39987,  {	-- Trail of Echoes
 					["sourceQuests"] = { 39986 },	-- Magic Message
 					["qg"] = 90417,	-- Archmage Khadgar
@@ -1605,8 +1668,9 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 98100,	-- Taoshi
 				}),
-				qa(47057, {	-- Unholy: The Folly of Levia Laurence
+				q(47057, {	-- Unholy: The Folly of Levia Laurence
 					["classes"] = { 6 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera
 				}),
 				q(43341,  {	-- Uniting the Isles
@@ -1636,9 +1700,10 @@ _.Zones =
 					["coord"] = { 74.6, 48.6, 210 },
 					["qg"] = 99247,	-- Kayn Sunfury
 				}),
-				qa(46314, {	-- Vengeance: Seeking Kor'vas
+				q(46314, {	-- Vengeance: Seeking Kor'vas
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
 					["classes"] = { 12 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver
 					["u"] = 40,
 				}),
@@ -1683,8 +1748,9 @@ _.Zones =
 					["classes"] = { 4 },
 					["qg"] = 98100,	-- Taoshi
 				}),
-				qa(45190, {	-- Where it's Thinnest
+				q(45190, {	-- Where it's Thinnest
 					["qg"] = 90463,	-- Archmage Karlain
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(46206,  {	-- Whispers of a Frightened World
 					["description"] = "Automatically given to you by Magni Bronzebeard in Dalaran.",
@@ -1693,12 +1759,13 @@ _.Zones =
 					["qg"] = 90417,	-- Archmage Khadgar
 				}),
 			--	q(45179),	-- Win the Crowd -- granted by mission board
-				qa(47019, {	-- Windwalker: Rumblings Near Feltotem
+				q(47019, {	-- Windwalker: Rumblings Near Feltotem
 					["sourceQuests"] = {
 						47031,	-- Legion Threat: Highmountain
 						47035,	-- Legion Threat: The Missing Mage
 					},
 					["classes"] = { 10 },
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera
 				}),
 				q(44195,  {	-- Workorders for Armaments

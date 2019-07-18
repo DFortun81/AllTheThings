@@ -1040,7 +1040,6 @@ _.Zones =
 				q(40615),	-- Halls of Valor: Odyn's Blessing
 				q(44721),	-- Helya's Conquest
 				q(42393),	-- Homecoming
-				q(44577),	-- Honor the Flame
 				q(38625),	-- Hook & Sinker
 				q(38630),	-- Horde Kill Squad (Alliance Only)
 				q(38712),	-- Houndmaster Ely

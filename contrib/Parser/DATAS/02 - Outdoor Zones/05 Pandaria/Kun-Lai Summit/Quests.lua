@@ -9,7 +9,7 @@ _.Zones =
 				q(30581, {	-- ... and the Pot, Too!
 					["qg"] = 59636,	-- Uyen Chow
 					["coord"] = { 60.2, 85.9, 379 },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30569,	-- Trouble on the Farmstead (A)
 						30570,	-- Trouble on the Farmstead (H)
 					},
@@ -63,7 +63,7 @@ _.Zones =
 					["qg"] = 59076,	-- Commander Hsieh
 					["coord"] = { 70.8, 90.4, 379 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30459,	-- All of the Arrows
 						30457,	-- Call Out Their Leader
 						30460,	-- Hit Medicine
@@ -73,7 +73,7 @@ _.Zones =
 					["qg"] = 59073,	-- Mayor Bramblestaff
 					["coord"] = { 72.2, 91.8, 379 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30459,	-- All of the Arrows
 						30457,	-- Call Out Their Leader
 						30460,	-- Hit Medicine
@@ -83,7 +83,7 @@ _.Zones =
 					["qg"] = 59077,	-- Apothecary Cheng
 					["coord"] = { 71.6, 92.8, 379 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30459,	-- All of the Arrows
 						30457,	-- Call Out Their Leader
 						30460,	-- Hit Medicine
@@ -124,7 +124,7 @@ _.Zones =
 					["qg"] = 59573,	-- Farmer Chow
 					["coord"] = { 60.2, 85.8, 379 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30581,	-- ... and the Pot, Too!
 						30571,	-- Farmhand Freedom
 					},
@@ -133,7 +133,7 @@ _.Zones =
 					["qg"] = 59573,	-- Farmer Chow
 					["coord"] = { 60.2, 85.8, 379 },
 					["races"] = ALlIANCE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30581,	-- ... and the Pot, Too!
 						30571,	-- Farmhand Freedom
 					},
@@ -233,7 +233,7 @@ _.Zones =
 					["qg"] = 59449,	-- Shademaster Kiryn
 					["coord"] = { 62.7, 80.7, 379 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30656,	-- Barrels of Fun
 						30650,	-- Pandaren Prisoners
 						30661,	-- The Ordo Warbringer
@@ -278,7 +278,7 @@ _.Zones =
 					["qg"] = 59442,	-- General Nazgrim
 					["coord"] = { 71.6, 93.1, 379 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30509,	-- General Nazgrim has Awakened
 						30510,	-- General Nazgrim has Awakened
 						30511,	-- General Nazgrim has Awakened
@@ -312,7 +312,7 @@ _.Zones =
 				q(30571, {	-- Farmhand Freedom
 					["qg"] = 59573,	-- Farmer Chow
 					["coord"] = { 60.2, 85.8, 379 },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30569,	-- Trouble on the Farmstead (A)
 						30570,	-- Trouble on the Farmstead (H)
 					},
@@ -339,7 +339,7 @@ _.Zones =
 					["qg"] = 59076,	-- Commander Hsieh
 					["coord"] = { 70.8, 90.4, 379 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30459,	-- All of the Arrows
 						30457,	-- Call Out Their Leader
 						30460,	-- Hit Medicine
@@ -349,7 +349,7 @@ _.Zones =
 					["qg"] = 59073,	-- Mayor Bramblestaff
 					["coord"] = { 72.2, 91.8, 379 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30459,	-- All of the Arrows
 						30457,	-- Call Out Their Leader
 						30460,	-- Hit Medicine
@@ -359,7 +359,7 @@ _.Zones =
 					["qg"] = 59077,	-- Apothecary Cheng
 					["coord"] = { 71.6, 92.8, 379 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30459,	-- All of the Arrows
 						30457,	-- Call Out Their Leader
 						30460,	-- Hit Medicine
@@ -391,8 +391,6 @@ _.Zones =
 						i(88579),	-- Jin Warmkeg's Brew
 					},
 				}),
-				--q(32500),	-- Honor the Flame
-				--q(32497),	-- Honor the Flame
 				--q(30723),	-- Honor, Even in Death
 				--q(30607),	-- Hozen Love Their Keys
 				q(30652, {	-- In Tents Channeling (A)
@@ -458,7 +456,7 @@ _.Zones =
 						i(82495),	-- Wallwatcher Helm
 						i(82487),	-- Waterfall Hood
 						i(82493),	-- Yak Herder Helm
-					},				
+					},
 				}),
 				q(30620, {	-- Mogu?! Oh No-gu! (H)
 					["qg"] = 63535,	-- Elder Shiao
@@ -475,7 +473,7 @@ _.Zones =
 						i(82495),	-- Wallwatcher Helm
 						i(82487),	-- Waterfall Hood
 						i(82493),	-- Yak Herder Helm
-					},				
+					},
 				}),
 				q(31456, {	-- Muskpaw Ranch (A)
 					["races"] = ALLIANCE_ONLY,
@@ -484,7 +482,7 @@ _.Zones =
 					["qg"] = 63751,	-- Farmhand Ko
 					["coord"] = { 62.6, 79.5, 379 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30656,	-- Barrels of Fun
 						30650,	-- Pandaren Prisoners
 						30661,	-- The Ordo Warbringer
@@ -579,7 +577,11 @@ _.Zones =
 				}),
 				--q(30710),	-- Provoking the Trolls
 				--q(30765),	-- Regaining Honor
-				--qh(32318),	-- Regeneration Takes Time
+				--[[
+				q(32318, {	-- Regeneration Takes Time
+					["races"] = HORDE_ONLY,
+				}),
+				]]--
 				q(30618, {	-- Resupplying One Keg
 					["g"] = {
 						i(88070),
@@ -618,7 +620,7 @@ _.Zones =
 						i(84509),	-- Kafa Satin Mantle
 						i(84513),	-- Kafa Silk Amice
 						i(84515),	-- Yak Herder Monnion
-					},				
+					},
 				}),
 				q(31256, {	-- Round 'Em Up (H)
 					["qg"] = 59442,	-- General Nazgrim
@@ -635,7 +637,7 @@ _.Zones =
 						i(84509),	-- Kafa Satin Mantle
 						i(84513),	-- Kafa Silk Amice
 						i(84515),	-- Yak Herder Monnion
-					},				
+					},
 				}),
 				--q(30879),	-- Round 1: Brewmaster Chani
 				--q(30880),	-- Round 1: The Streetfighter
@@ -740,7 +742,7 @@ _.Zones =
 						i(82558),	-- Wallwatcher Bracers
 						i(82550),	-- Waterfall Cuffs
 						i(82556),	-- Yak Herder Wristguards
-					},				
+					},
 				}),
 				q(30804, {	-- The Fearmaster
 					["qg"] = 59353,	-- Lao Muskpaw
@@ -795,8 +797,14 @@ _.Zones =
 						i(82549),
 					},
 				}),
-				--qa(31452),	-- The Missing Merchant
-				--qh(31451),	-- The Missing Merchant
+				--[[
+				q(31452, {	-- The Missing Merchant
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31451, {	-- The Missing Merchant
+					["races"] = HORDE_ONLY,
+				}),
+				]]--
 				q(30488, {	-- The Missing Muskpaw
 					["qg"] = 59353,	-- Lao Muskpaw
 					["coord"] = { 71.8, 70.2, 379 },
@@ -805,7 +813,11 @@ _.Zones =
 						31457,	-- Muskpaw Ranch (H)
 					},
 				}),
-				--qa(32321),	-- The Monkey King
+				--[[
+				q(32321, {	-- The Monkey King
+					["races"] = ALLIANCE_ONLY,
+				}),
+				]]--
 				q(30660, {	-- The Ordo Warbringer (A)
 					["sourceQuest"] = 30652,	-- In Tents Channeling
 					["races"] = ALLIANCE_ONLY,
@@ -849,7 +861,7 @@ _.Zones =
 				q(30480, {	-- The Ritual
 					["qg"] = 60973,	-- Waterspeaker Gorai
 					["coord"] = { 75.1, 88.0, 379 },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30967,	-- Free the Dissenters
 						30496,	-- The Waterspeaker's Staff
 					},
@@ -874,7 +886,7 @@ _.Zones =
 					["qg"] = 59442,	-- General Nazgrim
 					["coord"] = { 62.2, 79.9, 379 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30656,	-- Barrels of Fun
 						30650,	-- Pandaren Prisoners
 						30661,	-- The Ordo Warbringer
@@ -935,7 +947,7 @@ _.Zones =
 					["qg"] = 59441,	-- Admiral Taylor
 					["coord"] = { 71.6, 93.0, 379 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30506,	-- General Nazgrim has Awakened
 						30507,	-- General Nazgrim has Awakened
 						30508,	-- General Nazgrim has Awakened
@@ -948,12 +960,6 @@ _.Zones =
 					["sourceQuest"] = 30491,	-- At the Yak Wash
 				}),
 			--[[
-				q(32041),	-- Candy Bucket
-				qh(32040),	-- Candy Bucket
-				q(32051),	-- Candy Bucket
-				qa(32042),	-- Candy Bucket
-				q(32037),	-- Candy Bucket
-				q(32039),	-- Candy Bucket
 				q(31856),	-- The Peak of Serenity - Begin Your Training
 				q(31989),	-- The Peak of Serenity - Complete Your Training
 				q(31859),	-- The Peak of Serenity - Continue Your Training
@@ -964,19 +970,35 @@ _.Zones =
 				q(31858),	-- The Peak of Serenity - Continue Your Training
 				q(30602),	-- The Rabbitsfoot
 				q(46348),	-- The River to Ban-Lu
-				qh(31255),	-- The Road to Kun-Lai
+				q(31255, {	-- The Road to Kun-Lai
+					["races"] = HORDE_ONLY,
+				}),
 				q(38936),	-- The Road to Kun-Lai
-				qa(31254),	-- The Road to Kun-Lai
-				qa(32393),	-- The Ruins of Korune
-				qh(32391),	-- The Ruins of Korune
+				q(31254, {	-- The Road to Kun-Lai
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32393, {	-- The Ruins of Korune
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32391, {	-- The Ruins of Korune
+					["races"] = HORDE_ONLY,
+				}),
 				q(30806),	-- The Scent of Life
-				qa(32333),	-- The Second Riddle: Fellowship
+				q(32333, {	-- The Second Riddle: Fellowship
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(46346),	-- The Shadow of Ban-Lu
-				qa(32455),	-- The Silence
+				q(32455, {	-- The Silence
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(30608),	-- The Snackrifice
-				qa(32243),	-- The Source of Korune Power
+				q(32243, {	-- The Source of Korune Power
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(31285),	-- The Spring Drifter
-				qa(32334),	-- The Third Riddle: Strength
+				q(32334, {	-- The Third Riddle: Strength
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(30799),	-- The Tomb of Shadows
 				q(30829),	-- The Tongue of Ba-Shon
 				q(31492),	-- The Torch of Strength
@@ -986,15 +1008,29 @@ _.Zones =
 				q(30621),	-- They Stole My Luck!
 				q(30606),	-- Thumping Knucklethump
 				q(32441),	-- Thundering Pandaren Spirit
-				qh(32448),	-- Ties with the Past
-				qa(32193),	-- To Mogujia
-				qh(32190),	-- To Mogujia
-				qh(32376),	-- To the Valley!
+				q(32448, {	-- Ties with the Past
+					["races"] = HORDE_ONLY,
+				}),
+				q(32193, {	-- To Mogujia
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32190, {	-- To Mogujia
+					["races"] = HORDE_ONLY,
+				}),
+				q(32376, {	-- To the Valley!
+					["races"] = HORDE_ONLY,
+				}),
 				q(30724),	-- To the Wall!
 				q(30699),	-- To Winter's Blossom
-				qh(32384),	-- Trapping the Leader
-				qa(31380),	-- Trial At The Temple of the White Tiger
-				qh(31381),	-- Trial At The Temple of the White Tiger
+				q(32384, {	-- Trapping the Leader
+					["races"] = HORDE_ONLY,
+				}),
+				q(31380, {	-- Trial At The Temple of the White Tiger
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31381, {	-- Trial At The Temple of the White Tiger
+					["races"] = HORDE_ONLY,
+				}),
 				q(30826),	-- Trouble Brewing
 				q(30745),	-- Trouble Brewing
 				q(30670),	-- Turnabout
@@ -1006,53 +1042,41 @@ _.Zones =
 --]]
 
 				spell(229385, {	-- Ban-Lu, Grandmaster's Companion
-					["groups"] = {
-						q(46343, {	-- The Trail of Ban-Lu	
-							["groups"] = {
-							},
-							["qgs"] = 120722,	-- Master Bu
-							["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
-						}),	
-						q(46344, {	-- Smelly's Luckydo	
-							["groups"] = {
-							},
-							["qgs"] = 120744,	-- Smelly Mountaintop
-							["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
-						}),	
-						q(46346, {	-- The Shadow of Ban-Lu	
-							["groups"] = {
-							},
-							["qgs"] = 120722,	-- Master Bu
-							["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
-						}),	
-						q(46347, {	-- Clean-up on Aisle Sha	
-							["groups"] = {
-							},
-							["qgs"] = 120722,	-- Master Bu
-							["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
-						}),	
-						q(46348, {	-- The River to Ban-Lu	
-							["groups"] = {
-							},
-							["qgs"] = 120722,	-- Master Bu
-							["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
-						}),	
-						q(46349, {	-- Lilies for Ryuli	
-							["groups"] = {
-							},
-							["qgs"] = 120726,	-- Waterspeaker Ryuli
-							["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
-						}),	
-						q(46350, {	-- The Trial of Ban-Lu	
-							["groups"] = {
-								i(142225),	-- Ban-Lu, Grandmaster's Companion
-							},
-							["qgs"] = 120726,	-- Waterspeaker Ryuli
-							["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
-						}),	
-					},
 					["classes"] = { 10 },	-- Monk
 					["lvl"] = 110,
+					["g"] = {
+						q(46343, {	-- The Trail of Ban-Lu
+							["qgs"] = 120722,	-- Master Bu
+							["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
+						}),
+						q(46344, {	-- Smelly's Luckydo
+							["qgs"] = 120744,	-- Smelly Mountaintop
+							["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
+						}),
+						q(46346, {	-- The Shadow of Ban-Lu
+							["qgs"] = 120722,	-- Master Bu
+							["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
+						}),
+						q(46347, {	-- Clean-up on Aisle Sha
+							["qgs"] = 120722,	-- Master Bu
+							["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
+						}),
+						q(46348, {	-- The River to Ban-Lu
+							["qgs"] = 120722,	-- Master Bu
+							["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
+						}),
+						q(46349, {	-- Lilies for Ryuli
+							["qgs"] = 120726,	-- Waterspeaker Ryuli
+							["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
+						}),
+						q(46350, {	-- The Trial of Ban-Lu
+							["qgs"] = 120726,	-- Waterspeaker Ryuli
+							["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
+							["g"] = {
+								i(142225),	-- Ban-Lu, Grandmaster's Companion
+							},
+						}),
+					},
 				}),
 			}),
 		}),

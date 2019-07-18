@@ -21,11 +21,13 @@ _.Zones =
 					q(39349, {	-- Black Rook Hold: Heavy, But Helpful
 						["qg"] = 92183,	-- Alard Schmied
 					}),
-					qa(39645, {	-- Calibration Experts
+					q(39645, {	-- Calibration Experts
 						["qg"] = 92458,	-- Deucus Valdera
+						["races"] = ALLIANCE_ONLY,
 					}),
-					qh(39345, {	-- Calibration Experts
+					q(39345, {	-- Calibration Experts
 						["qg"] = 92458,	-- Deucus Valdera
+						["races"] = HORDE_ONLY,
 					}),
 					q(39347, {	-- Channeling Our Efforts
 						["qg"] = 92458,	-- Deucus Valdera
@@ -95,8 +97,9 @@ _.Zones =
 						["requireSkill"] = 171,	-- Alchemy
 						["qg"] = 101492,	-- Ms. Xiulan
 					}),
-					qa(39566, {	-- The Search for Knowledge
+					q(39566, {	-- The Search for Knowledge
 						["qg"] = 92458,	-- Deucus Valdera
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(39327, {	-- There's a Scribe for That
 						["sourceQuests"] = { 39390 },	-- A Mysterious Text
@@ -186,15 +189,17 @@ _.Zones =
 							i(123900),	-- Recipe: Leystone Waistguard (Rank 1)
 						},
 					}),
-					qa(48053, {	-- Weigh Anchor
+					q(48053, {	-- Weigh Anchor
 						["qg"] = 92183,	-- Alard Schmied
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 38499,	-- Strange New Ores
 						["g"] = {
 							i(151709),	-- Recipe: Felslate Anchor
 						},
 					}),
-					qh(48054, {	-- Weigh Anchor
+					q(48054, {	-- Weigh Anchor
 						["qg"] = 106655,	-- Arcanomancer Vridiel
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 38499,	-- Strange New Ores
 						["g"] = {
 							i(151709),	-- Recipe: Felslate Anchor
@@ -929,8 +934,9 @@ _.Zones =
 							recipe(192981),	--
 						},]]--
 					}),
-					qa(43726, {	-- Tales of the Broken Isles
+					q(43726, {	-- Tales of the Broken Isles
 						["qg"] = 97362,	-- Dazzik "Proudmoore"
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(39933,  {	-- The Card Shark
 						["sourceQuests"] = { 39932 },	-- Fish Ink
@@ -948,9 +954,10 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 					}),
-					qa(39955, {	-- The Plot Thickens
+					q(39955, {	-- The Plot Thickens
 						["isBreadcrumb"] = true,
 						["qg"] = 92195,	-- Professor Pallin
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(43929,  {	-- Vantus Mastery
 						["qg"] = 90417,	-- Archmage Khadgar
@@ -1078,11 +1085,13 @@ _.Zones =
 					q(40196,  {	-- Adventuring Anxieties
 						["qg"] = 93523,	-- Namha Moonwater
 					}),
-					qh(40241, {	-- Battle Bonds
+					q(40241, {	-- Battle Bonds
 						["qg"] = 93523,	-- Namha Moonwater
+						["races"] = HORDE_ONLY,
 					}),
-					qa(40200, {	-- Battle Bonds
+					q(40200, {	-- Battle Bonds
 						["qg"] = 93523,	-- Namha Moonwater
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(40181,  {	-- Black Rook Bandit
 						["qg"] = 98931,	-- Thanid Glowergold
@@ -1417,8 +1426,9 @@ _.Zones =
 							["sourceQuests"] = { 39605 },	-- Where's Lyndras: Downward Spiral
 						}),
 					}),
-					qh(39602, {	-- Where's Lyndras: Sewer Sleuthing
+					q(39602, {	-- Where's Lyndras: Sewer Sleuthing
 						["sourceQuests"] = { 38964 },	-- Where's Lyndras Now?
+						["races"] = HORDE_ONLY,
 						["qg"] = 93542,	-- Tanithria
 					}),
 					q(38954,  {	-- Where's Lyndras?

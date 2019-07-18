@@ -753,13 +753,15 @@ _.Zones =
 					["coord"] = { 36.0, 69.1, 376 },
 					["qg"] = 56133,	-- Chen Stormstout
 				}),
-				qh(30653, {	-- It Does You No Good In The Keg
+				q(30653, {	-- It Does You No Good In The Keg
 					["sourceQuests"] = { 29990 },	-- Training and Discipline
+					["races"] = HORDE_ONLY,
 					["coord"] = { 18.1, 55.7, 376 },
 					["qg"] = 56474,	-- Mudmug
 				}),
-				qa(30624, {	-- It Does You No Good In The Keg
+				q(30624, {	-- It Does You No Good In The Keg
 					["sourceQuests"] = { 29990 },	-- Training and Discipline
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 18.1, 55.7, 376 },
 					["qg"] = 56474,	-- Mudmug
 				}),
@@ -772,11 +774,13 @@ _.Zones =
 					["sourceQuests"] = { 31312 },	-- The Old Map
 					["qg"] = 58705,	-- Fish Fellreed
 				}),
-				qa(29874, {	-- Kang Bramblestaff
+				q(29874, {	-- Kang Bramblestaff
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["qg"] = 56110,	-- Xiao
 				}),
-				qh(29875, {	-- Kang Bramblestaff
+				q(29875, {	-- Kang Bramblestaff
+					["races"] = HORDE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["qg"] = 56110,	-- Xiao
 				}),
@@ -1228,11 +1232,13 @@ _.Zones =
 						},
 					}),
 				}),
-				qa(31392, {	-- Temple of the White Tiger
+				q(31392, {	-- Temple of the White Tiger
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 55.8, 51.8, 376 },
 					["qg"] = 64448,	-- Hopsmaster Chang
 				}),
-				qh(31393, {	-- Temple of the White Tiger
+				q(31393, {	-- Temple of the White Tiger
+					["races"] = HORDE_ONLY,
 					["coord"] = { 55.8, 51.8, 376 },
 					["qg"] = 64448,	-- Hopsmaster Chang
 				}),
@@ -1390,13 +1396,15 @@ _.Zones =
 						i(81795),	-- Sunsong Armored Girdle
 					},
 				}),
-				qh(31255, {	-- The Road to Kun-Lai
+				q(31255, {	-- The Road to Kun-Lai
 					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
+					["races"] = HORDE_ONLY,
 					["coord"] = { 70.0, 23.6, 376 },
 					["qg"] = 63778,	-- Messenger Grummle
 				}),
-				qa(31254, {	-- The Road to Kun-Lai
+				q(31254, {	-- The Road to Kun-Lai
 					["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 70.0, 23.6, 376 },
 					["qg"] = 63778,	-- Messenger Grummle
 				}),
@@ -1561,20 +1569,24 @@ _.Zones =
 				o(218750, {	-- Work Orders
 					["description"] = "All work order quests are available after completing \"Inherit the Earth\".",
 					["g"] = {
-						qh(32642, {	-- Work Order: Dominance Offensive I
+						q(32642, {	-- Work Order: Dominance Offensive I
 							["sourceQuests"] = { 32682 },	-- Inherit the Earth
+							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
-						qh(32643, {	-- Work Order: Dominance Offensive II
+						q(32643, {	-- Work Order: Dominance Offensive II
 							["sourceQuests"] = { 32642 },	-- Work Order: Dominance Offensive I
+							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
-						qa(32944, {	-- Work Order: Kirin Tor Offensive I
+						q(32944, {	-- Work Order: Kirin Tor Offensive I
 							["sourceQuests"] = { 32682 },	-- Inherit the Earth
+							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
-						qa(32945, {	-- Work Order: Kirin Tor Offensive II
+						q(32945, {	-- Work Order: Kirin Tor Offensive II
 							["sourceQuests"] = { 32944 },	-- Work Order: Kirin Tor Offensive I
+							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(32647, {	-- Work Order: Golden Lotus I
@@ -1585,12 +1597,14 @@ _.Zones =
 							["sourceQuests"] = { 32647 },	-- Work Order: Golden Lotus I
 							["isDaily"] = true,
 						}),
-						qa(32645, {	-- Work Order: Operation: Shieldwall I
+						q(32645, {	-- Work Order: Operation: Shieldwall I
 							["sourceQuests"] = { 32682 },	-- Inherit the Earth
+							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
-						qa(32646, {	-- Work Order: Operation: Shieldwall II
+						q(32646, {	-- Work Order: Operation: Shieldwall II
 							["sourceQuests"] = { 32645 },	-- Work Order: Operation: Shieldwall I
+							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(32649, {	-- Work Order: Shado-Pan I
@@ -1601,12 +1615,14 @@ _.Zones =
 							["sourceQuests"] = { 32649 },	-- Work Order: Shado-Pan I
 							["isDaily"] = true,
 						}),
-						qh(32942, {	-- Work Order: Sunreaver Onslaught I
+						q(32942, {	-- Work Order: Sunreaver Onslaught I
 							["sourceQuests"] = { 32682 },	-- Inherit the Earth
+							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
-						qh(32943, {	-- Work Order: Sunreaver Onslaught II
+						q(32943, {	-- Work Order: Sunreaver Onslaught II
 							["sourceQuests"] = { 32942 },	-- Work Order: Sunreaver Onslaught I
+							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(32653, {	-- Work Order: The August Celestials I

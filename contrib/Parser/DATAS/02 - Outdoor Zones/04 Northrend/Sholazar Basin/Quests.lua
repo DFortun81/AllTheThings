@@ -28,7 +28,6 @@ _.Zones =
 				q(12574),	-- Back So Soon?
 				q(12797),	-- Back Through the Waygate
 				q(12683),	-- Burning to Help
-				q(12950),	-- Candy Bucket
 				q(12569),	-- Crocolisk Mastery: The Ambush
 				q(12560),	-- Crocolisk Mastery: The Plan
 				q(12551),	-- Crocolisk Mastery: The Trial

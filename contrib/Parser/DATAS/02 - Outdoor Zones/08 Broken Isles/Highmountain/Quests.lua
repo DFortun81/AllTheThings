@@ -955,7 +955,6 @@ _.Zones =
 				q(41186),	-- History of Highmountain
 				q(45572),	-- Holding Our Ground
 				q(42393),	-- Homecoming
-				q(44576),	-- Honor the Flame
 				q(42286),	-- Houndmaster Stroxis
 				q(40136),	-- Immaculate Stonehide Leather
 				q(42659),	-- In Defense of Dalaran

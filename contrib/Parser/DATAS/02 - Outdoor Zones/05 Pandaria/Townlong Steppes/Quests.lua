@@ -15,11 +15,6 @@ _.Zones =
 					crit(5),		-- Tai Ho's Investigation
 				}),
 ]]--
---[[
-				--q(32043),	-- Candy Bucket
-				--q(32497),	-- Honor the Flame
-				--q(32501),	-- Honor the Flame
-]]--
 				q(31895, {	-- Better Off Dread
 					["qg"] = 61584,	-- Sentinel Commander Qipan
 					["isBreadcrumb"] = true,

@@ -12,82 +12,109 @@ _.Zones =
 			["u"] = 12,	-- Instance removed in 8.0.1 [BfA Pre-Patch]
 			["g"] = {
 				n(-17, {	-- Quests
-					qa(35872, {	-- A Bunch of Artifact Fragments
+					q(35872, {	-- A Bunch of Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36064, {	-- A Bunch of Artifact Fragments
+					q(36064, {	-- A Bunch of Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35690, {	-- A Bunch of Artifact Fragments
+					q(35690, {	-- A Bunch of Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36067, {	-- A Bunch of Artifact Fragments
+					q(36067, {	-- A Bunch of Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36031, {	-- A Bunch of Artifact Fragments
+					q(36031, {	-- A Bunch of Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35264, {	-- A Bunch of Artifact Fragments
+					q(35264, {	-- A Bunch of Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35868, {	-- A Bunch of Artifact Fragments
+					q(35868, {	-- A Bunch of Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36026, {	-- A Bunch of Artifact Fragments
+					q(36026, {	-- A Bunch of Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35638, {	-- A Few Artifact Fragments
+					q(35638, {	-- A Few Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36063, {	-- A Few Artifact Fragments
+					q(36063, {	-- A Few Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35867, {	-- A Few Artifact Fragments
+					q(35867, {	-- A Few Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35871, {	-- A Few Artifact Fragments
+					q(35871, {	-- A Few Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35689, {	-- A Few Artifact Fragments
+					q(35689, {	-- A Few Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36030, {	-- A Few Artifact Fragments
+					q(36030, {	-- A Few Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36024, {	-- A Few Artifact Fragments
+					q(36024, {	-- A Few Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36066, {	-- A Few Artifact Fragments
+					q(36066, {	-- A Few Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(36630, {	-- A Surly Dwarf
+					q(36630, {	-- A Surly Dwarf
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 36629,	-- Inspiring Ashran
 					}),
-					qh(36025, {	-- A TON of Artifact Fragments
+					q(36025, {	-- A TON of Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35873, {	-- A TON of Artifact Fragments
+					q(35873, {	-- A TON of Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36068, {	-- A TON of Artifact Fragments
+					q(36068, {	-- A TON of Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36032, {	-- A TON of Artifact Fragments
+					q(36032, {	-- A TON of Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35639, {	-- A TON of Artifact Fragments
+					q(35639, {	-- A TON of Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35691, {	-- A TON of Artifact Fragments
+					q(35691, {	-- A TON of Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qh(36065, {	-- A TON of Artifact Fragments
+					q(36065, {	-- A TON of Artifact Fragments
+						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(35869, {	-- A TON of Artifact Fragments
+					q(35869, {	-- A TON of Artifact Fragments
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
-					qa(38925, {	-- Ashran Dominance
+					q(38925, {	-- Ashran Dominance
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["g"] = {
@@ -125,9 +152,10 @@ _.Zones =
 								},
 							}),
 						},
-						["repeatable"] = true,
 					}),
-					qh(38923, {	-- Ashran Dominance
+					q(38923, {	-- Ashran Dominance
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["g"] = {
@@ -165,15 +193,18 @@ _.Zones =
 								},
 							}),
 						},
-						["repeatable"] = true,
 					}),
-					qa(36626, {	-- Host Howell
+					q(36626, {	-- Host Howell
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 36624,	-- Ashran Appearance
 					}),
-					qa(36629, {	-- Inspiring Ashran
+					q(36629, {	-- Inspiring Ashran
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 36626,	-- Host Howell
 					}),
-					qa(39096, {	-- Slay Them All!
+					q(39096, {	-- Slay Them All!
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["g"] = {
@@ -211,9 +242,10 @@ _.Zones =
 								},
 							}),
 						},
-						["repeatable"] = true,
 					}),
-					qh(39090, {	-- Slay Them All!
+					q(39090, {	-- Slay Them All!
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["g"] = {
@@ -251,7 +283,6 @@ _.Zones =
 								},
 							}),
 						},
-						["repeatable"] = true,
 					}),
 					i(112128, {	-- Blood Elf Ear
 	--[[				["g"] = {

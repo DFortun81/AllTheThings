@@ -133,8 +133,6 @@ _.Zones =
 				q(43792),	-- Degren
 				q(40211),	-- Demon Flesh
 				q(47049),	-- Demonology: Fate of the Tideskorn
-				qh(44624),	-- Desecrate this Fire!
-				qa(44627),	-- Desecrate this Fire!
 				q(45551),	-- Devastating Effects
 				q(40683),	-- Discovery Requires Experimentation
 				q(44722),	-- Disillusioned Defector
@@ -226,8 +224,6 @@ _.Zones =
 				q(43993),	-- Hertha Grimdottir
 				q(43969),	-- Hired Help
 				q(41453),	-- Homeward Bounding
-				qa(44613),	-- Honor the Flame
-				qh(44614),	-- Honor the Flame
 				q(44725),	-- Hostage Situation
 				q(40213),	-- Hounds Abound
 				q(44691),	-- Hungry Work
