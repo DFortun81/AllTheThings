@@ -17,20 +17,10 @@ _.Zones =
 				}),
 				q(41916),	-- A Better Future
 				q(42841),	-- A Big Score
-				q(43470, {  -- Pruning the Garden
-					["classes"] = { 4 }
-				}),
-				q(43469, {  -- Where In the World is Mathias?
-					["sourceQuest"] = 43470,  -- Source Quest: Pruning the Garden
-					["classes"] = { 4 }
-				}),
-				q(43479, {  -- The World is Not Enough
-					["sourceQuest"] = 43470,  -- Source Quest: Pruning the Garden
-					["classes"] = { 4 }
-				}),
 				q(43485, {	-- A Burning Distraction
 					["sourceQuests"] = { 43469, 43479 },
-					["classes"] = { 4 }
+					["classes"] = { 4 },
+					["qg"] = 98100,	-- Taoshi
 				}),
 				q(44919),	-- A Challenge From Our Enemies
 				q(43502),	-- A Change of Seasons
@@ -48,7 +38,7 @@ _.Zones =
 				}),
 				q(45269),	-- A Taste of Freedom
 				q(42520, {	-- A Terrible Loss
-					["classes"] = { 8 }
+					["classes"] = { 8 },
 				}),
 				q(40749),	-- A Token of Remembrance
 				q(43526),	-- A True Test
@@ -84,7 +74,7 @@ _.Zones =
 				q(43568),	-- Arcan'dor, Gift of the Ancient Magi
 				q(40324),	-- Arcane Communion
 				q(45482, {	-- Arcane: Fate of the Tideskorn
-					["classes"] = { 8 }
+					["classes"] = { 8 },
 				}),
 				q(40725),	-- Arganax
 				q(42649),	-- Arluin Bribe Tracker 2
@@ -94,7 +84,7 @@ _.Zones =
 				qh(44862),	-- Arming the Rebels
 				qa(44861),	-- Arming the Rebels
 				q(47051, {	-- Assassination: Fate of the Tideskorn
-					["classes"] = { 4 }
+					["classes"] = { 4 },
 				}),
 				q(43352),	-- Asset Security
 				q(40412),	-- Azoran Must Die
@@ -105,7 +95,9 @@ _.Zones =
 				q(40332),	-- Beach Bonfire
 				q(45267),	-- Before the Siege
 				q(40331),	-- Bite of the Sashj'tar
-				q(40857),	-- Bits and Pieces
+				q(40857, {	-- Bits and Pieces
+					["requireSkill"] = 794, -- Archaeology
+				}),
 				q(41256),	-- Blast of Spice Fish
 				q(41989),	-- Blood of My Blood
 				q(40125),	-- Branch of the Arcan'dor
@@ -312,33 +304,19 @@ _.Zones =
 				q(38969),	-- Master of Silkweave
 				q(43793),	-- Miasu
 				q(41463),	-- Missing Along the Way
-				q(42399, {  -- Ready to Work
-					["classes"] = { 3 }
-				}),
 				q(42400, {	-- Missing Mages
 					["sourceQuest"] = 42399,  -- Ready to Work
-					["classes"] = { 3 }
+					["classes"] = { 3 },
+					
 				}),
 				q(42401, {	-- The Scent of Magic
 					["sourceQuest"] = 42400,  -- Missing Mages
-					["classes"] = { 3 }
+					["classes"] = { 3 },
 				}),
 				q(42404, {	-- Assisting the Archmage
 					["sourceQuest"] = 42401,  -- The Scent of Magic
-					["classes"] = { 3 }
-				}),
-				q(42689, {	-- Knowing Our Enemy
-					["sourceQuest"] = 42404,  -- Assisting the Archmage
-					["classes"] = { 3 }
-				}),
-				q(42691, {	-- Leyworm Lure
-					["sourceQuest"] = 42689,  -- Knowing Our Enemy
-					["classes"] = { 3 }
-				}),
-				q(42406, {	-- To Tame the Beast
-					["sourceQuest"] = 42691,  -- Leyworm Lure
-					["classes"] = { 3 }
-				}),				
+					["classes"] = { 3 },
+				}),			
 				q(44724),	-- Missing Persons
 				q(43808),	-- Moon Guard Teleporter Online!
 				q(42226),	-- Moonshade Holdout
