@@ -535,6 +535,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(52891, {	-- Wendigo to Sleep
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(53983, {	-- Wet Work: Fort Knight (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,

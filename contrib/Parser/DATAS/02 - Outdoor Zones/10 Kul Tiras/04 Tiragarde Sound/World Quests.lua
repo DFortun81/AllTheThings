@@ -373,6 +373,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50421, {	-- Sparring on the Spar
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51651, {	-- Squacks
 						["lvl"] = 120,
 						["collectible"] = false,

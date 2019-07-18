@@ -371,6 +371,12 @@ _.Zones =
 					}),
 					q(52248, {	-- The Shores of Xibala
 						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52249, {	-- The Shores of Xibala
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(54685, {	-- They Love Iron (Faction Assault WQ)

@@ -501,6 +501,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51686, {	-- Where My Witches at?
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51682, {	-- Witches by the Dozen
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
