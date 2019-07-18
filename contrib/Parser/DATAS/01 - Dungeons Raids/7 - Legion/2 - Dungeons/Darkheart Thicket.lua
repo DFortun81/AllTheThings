@@ -8,6 +8,12 @@ _.Instances = { tier(7, {	-- Legion
 		["coord"] = { 59.0, 31.3, 641 },
 		["lvl"] = 98,
 		["g"] = {
+			n(-34, {	-- World Quests
+				q(42744, {	-- Darkheart Thicket: Preserving the Preservers
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(1, {	-- Normal
 				cr(96512, e(1654, {	-- Archdruid Glaidalis
 					i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)

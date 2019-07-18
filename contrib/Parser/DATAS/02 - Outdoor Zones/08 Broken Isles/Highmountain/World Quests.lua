@@ -16,7 +16,6 @@ _.Zones =
 				q(40951),	-- Bitestone Bazaar
 				q(40980),	-- Boilback Plague
 				q(41310),	-- Border Reinforcements
-				q(41308),	-- Border Reinforcements
 				q(41203),	-- Bright Leystone Deposits
 				q(41208),	-- Brimstone Destroyer
 				q(41209),	-- Brimstone Destroyer
@@ -74,7 +73,6 @@ _.Zones =
 				q(41055),	-- Primal Payback
 				q(41144),	-- Return to the River
 				q(40985),	-- Rimescale Naga Incursion: Highmountain
-				q(41025),	-- Rise of the Fallen
 				q(40966),	-- Ritualists in Our Midsts
 				q(41200),	-- Rough Leystone Outcropping
 				q(46262),	-- Save the Tadpoles!
@@ -125,6 +123,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(40925, {	-- Bitestone Burglary
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41308, {	-- Border Reinforcements
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -234,6 +236,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41789, {	-- Return to the Crag
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41025, {	-- Rise of the Fallen
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

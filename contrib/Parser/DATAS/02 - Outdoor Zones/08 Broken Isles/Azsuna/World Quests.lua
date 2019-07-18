@@ -58,14 +58,12 @@ _.Zones =
 				q(41455),	-- Gleaming Leystone Outcropping
 				q(41434),	-- Glowing Leystone Deposits
 				q(43804),	-- Hate the Hatecoil
-				q(42624),	-- Heads of the Fleet
 				q(41610),	-- Huge Cursed Queenfish
 				q(41265),	-- Huge Cursed Queenfish
 				q(42277),	-- Interlopers!
 				q(41528),	-- Iridescent Aethril
 				q(42101),	-- Language of the Lost
 				q(43325),	-- Ley Race
-				q(42172),	-- Leyhollow Infestation
 				q(41498),	-- Leystone Basilisks
 				q(41501),	-- Leystone Basilisks
 				q(41500),	-- Leyworms
@@ -75,7 +73,6 @@ _.Zones =
 				q(41264),	-- Lively Cursed Queenfish
 				q(41454),	-- Luminous Leystone Outcropping
 				q(42105),	-- Mixology Mix-up
-				q(44048),	-- Nagana Happen
 				q(42623),	-- Piracy Doesn't Pay
 				q(41268),	-- Queen Queenfish
 				q(41266),	-- Raft Fishing
@@ -89,7 +86,6 @@ _.Zones =
 				q(41552),	-- Slab of Bacon
 				q(41435),	-- Smooth Leystone Deposits
 				q(41582),	-- Smooth Sunrunner Hide
-				q(44847),	-- Straight From the Source
 				q(46162),	-- Subjugator Val'rek
 				q(46163),	-- Thaz'gul
 				q(46146),	-- The Burning Shores
@@ -113,7 +109,6 @@ _.Zones =
 				q(43611),	-- WANTED: Inquisitor Tivos
 				q(43432),	-- WANTED: Normantis the Deposed
 				q(43612),	-- WANTED: Normantis the Deposed
-				q(43613),	-- WANTED: Syphonus
 				q(42633),	-- WANTED: Vorthax
 				q(43614),	-- WANTED: Vorthax
 				q(43615),	-- WANTED: Warbringer Mox'na
@@ -123,7 +118,6 @@ _.Zones =
 				q(41657),	-- Work Order: Draughts of Raw Magic
 				q(41311),	-- Work Order: Leystone
 				q(41326),	-- Work Order: Stormscales
-				q(44788),	-- Work Study: Bestiaries of Azsuna
 --]]
 				q(42014, {	-- A Tainted Vintage
 					["lvl"] = 110,
@@ -194,6 +188,10 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
+				q(42624, {	-- Heads of the Fleet
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44737, {	-- Helarjar Landing: Grey Shoals
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -229,6 +227,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42172, {	-- Leyhollow Infestation
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41598, {	-- Lively Cursed Queenfish
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -239,6 +241,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44786, {	-- Midterm: Rune Aptitude
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44048, {	-- Nagana Happen
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -271,6 +277,10 @@ _.Zones =
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(44847, {	-- Straight From the Source
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(46170, {	-- Thar'gokk (Invasion WQ)
 					["lvl"] = 98,
@@ -340,6 +350,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43613, {	-- WANTED: Syphonus
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43431, {	-- WANTED: Warbringer Mox'na
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -393,6 +407,10 @@ _.Zones =
 					["groups"] = {
 						i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)
 					},
+				}),
+				q(44788, {	-- Work Study: Bestiaries of Azsuna
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				n(-322,  {	-- Cloak
 					i(134334),	-- Disgraced Court Cloak

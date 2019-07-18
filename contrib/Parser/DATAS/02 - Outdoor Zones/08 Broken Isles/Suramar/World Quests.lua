@@ -15,7 +15,6 @@ _.Zones =
 				q(41492),	-- Brimstone Destroyer
 				q(41491),	-- Brimstone Destroyer
 				q(41447),	-- Burning Felslate Deposits
-				
 				q(44867),	-- Contain their Advance
 				q(41195),	-- Culling Ambervale
 				q(44113),	-- DANGER: Achronos
@@ -42,12 +41,10 @@ _.Zones =
 				q(41304),	-- Flourishing Starlight Roses
 				q(43932),	-- Forces of Oppression
 				q(41448),	-- Heavy Felslate Deposits
-				q(44811),	-- Help on the Way
 				q(41616),	-- Huge Runescale Koi
 				q(41280),	-- Huge Runescale Koi
 				q(41617),	-- Huge Runescale Koi
 				q(41538),	-- Iridescent Starlight Roses
-				q(44813),	-- Ley Line Interference
 				q(43583),	-- Life Finds a Way
 				q(45032),	-- Like the Wind
 				q(41605),	-- Lively Runescale Koi
@@ -84,7 +81,6 @@ _.Zones =
 				q(44021),	-- WANTED: Hertha Grimdottir
 				q(44029),	-- WANTED: Hertha Grimdottir
 				q(44019),	-- WANTED: Lieutenant Strathmar
-				q(44028),	-- WANTED: Lieutenant Strathmar
 				q(44018),	-- WANTED: Magister Phaedris
 				q(44027),	-- WANTED: Magister Phaedris
 				q(44015),	-- WANTED: Mal'Dreth the Corruptor
@@ -97,7 +93,6 @@ _.Zones =
 				q(44024),	-- WANTED: Shal'an
 				q(44012),	-- WANTED: Siegemaster Aedrin
 				q(44023),	-- WANTED: Siegemaster Aedrin
-				
 				q(41314),	-- Work Order: Felslate
 				q(41282),	-- Work Order: Runescale Koi
 				q(41661),	-- Work Order: Skystep Potions
@@ -194,6 +189,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44811, {	-- Help on the Way
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42071, {	-- Honoring the Past
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -203,6 +202,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(42169, {	-- Left for Dead
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44813, {	-- Ley Line Interference
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -325,6 +328,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44013, {	-- WANTED: Guardian Thor'el
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44028, {	-- WANTED: Lieutenant Strathmar
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

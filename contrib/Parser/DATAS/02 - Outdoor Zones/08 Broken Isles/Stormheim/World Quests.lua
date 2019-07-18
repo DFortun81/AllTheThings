@@ -76,13 +76,11 @@ _.Zones =
 						q(41317),	-- Supplies Needed: Leystone
 						q(41345),	-- Supplies Needed: Stormscales
 						q(43721),	-- The Helarjar Have Surfaced
-						q(43771),	-- The Magic of Flight
 						q(42269),	-- The Soultakers
 						q(46264),	-- Their Eyes Are Upon Us
 						q(46021),	-- Thel'draz
 						q(41342),	-- Thick Bear Hide
 						q(42182),	-- To Battle!
-						q(42183),	-- To Battle!
 						q(43454),	-- WANTED: Egyl the Enduring
 						q(43620),	-- WANTED: Egyl the Enduring
 						q(43434),	-- WANTED: Fathnyr
@@ -312,6 +310,15 @@ _.Zones =
 				}),
 				q(42013, {	-- The Helmouth
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43771, {	-- The Magic of Flight
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42183, {	-- To Battle!
+					["lvl"] = 110,
+					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 				}),
 				q(41930, {	-- Valor Calls

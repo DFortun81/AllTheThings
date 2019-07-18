@@ -64,6 +64,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41517, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(42087, {	-- Green Horror
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -79,6 +84,11 @@ _.Zones =
 				q(43753, {	-- Ley Race
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41269, {	-- Lively Mosgill Perch
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(44011, {	-- Lost Wisp
 					["lvl"] = 110,
@@ -146,6 +156,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43755, {	-- The Magic of Flight
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(40279, {	-- Training with Durian
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -189,7 +203,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43456, {	-- WANTED: Skul'vrax
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43457, {	-- WANTED: Theryssia
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43459, {	-- WANTED: Thondrax
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
