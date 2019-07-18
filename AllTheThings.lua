@@ -3258,53 +3258,8 @@ end
 		end
 	end
 	]]--
-end)();
-
--- Paragon Hook
-hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
-	-- Source: //Interface//FrameXML//ReputationFrame.lua Line 360
-	-- Using hooksecurefunc because of how Blizzard coded the frame.  Couldn't get GameTooltip to work like the above ones.
-	-- //Interface//FrameXML//ReputationFrame.lua Segment code
-	--[[
-		function ReputationParagonFrame_SetupParagonTooltip(frame)
-			EmbeddedItemTooltip.owner = frame;
-			EmbeddedItemTooltip.factionID = frame.factionID;
-
-			local factionName, _, standingID = GetFactionInfoByID(frame.factionID);
-			local gender = UnitSex("player");
-			local factionStandingtext = GetText("FACTION_STANDING_LABEL"..standingID, gender);
-			local currentValue, threshold, rewardQuestID, hasRewardPending, tooLowLevelForParagon = C_Reputation.GetFactionParagonInfo(frame.factionID);
-
-			if ( tooLowLevelForParagon ) then
-				EmbeddedItemTooltip:SetText(PARAGON_REPUTATION_TOOLTIP_TEXT_LOW_LEVEL);
-			else
-				EmbeddedItemTooltip:SetText(factionStandingtext);
-				local description = PARAGON_REPUTATION_TOOLTIP_TEXT:format(factionName);
-				if ( hasRewardPending ) then
-					local questIndex = GetQuestLogIndexByID(rewardQuestID);
-					local text = GetQuestLogCompletionText(questIndex);
-					if ( text and text ~= "" ) then
-						description = text;
-					end
-				end
-				EmbeddedItemTooltip:AddLine(description, HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1);
-				if ( not hasRewardPending ) then
-					local value = mod(currentValue, threshold);
-					-- show overflow if reward is pending
-					if ( hasRewardPending ) then
-						value = value + threshold;
-					end
-					GameTooltip_ShowProgressBar(EmbeddedItemTooltip, 0, threshold, value, REPUTATION_PROGRESS_FORMAT:format(value, threshold));
-				end
-				GameTooltip_AddQuestRewardsToTooltip(EmbeddedItemTooltip, rewardQuestID);
-			end
-			EmbeddedItemTooltip:Show();
-		end
-	--]]
-	local currentValue, threshold, paragonQuestID, hasRewardPending, tooLowLevelForParagon = C_Reputation.GetFactionParagonInfo(frame.factionID)
-	-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
-	if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
-		
+	
+	-- Paragon Hook
 	local paragonCacheID = {
 		-- Paragon Cache Rewards
 		-- [QuestID] = [ItemCacheID"]	-- Faction // Quest Title
@@ -3331,27 +3286,69 @@ hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 		[53982] = 169940,	-- Unshackled // Supplies From The Unshackled
 		[55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
 	};
-	
-	-- Grab Item Link Info
-	local iName, sLink, iRarity, iLevel, iMinLevel, sType, sSubType, iStackCount = GetItemInfo(paragonCacheID[paragonQuestID])
-		if sLink ~= nil then
-			-- Attach tooltip to the Paragon Frame
-			GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
-			-- Using TOPRIGHT for now so that it hooks slightly better into other addon's that take up a lot of the vertical distance.  As well as when you scroll towards the bottom of the frame it doesn't cause potential cutoffs.	
-			GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT")
-			-- TOP/BOTTOM + LEFT/RIGHT attaches it to that particular spot of the corresponding paragon tooltip
-			-- Populate Tooltip with the Paragon Cache Rewards
-			GameTooltip:SetHyperlink(sLink)
-		end
-	end
-end
-);
+	hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
+		-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
+		if app.Settings:GetTooltipSetting("Enabled") and (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) then
+			-- Source: //Interface//FrameXML//ReputationFrame.lua Line 360
+			-- Using hooksecurefunc because of how Blizzard coded the frame.  Couldn't get GameTooltip to work like the above ones.
+			-- //Interface//FrameXML//ReputationFrame.lua Segment code
+			--[[
+				function ReputationParagonFrame_SetupParagonTooltip(frame)
+					EmbeddedItemTooltip.owner = frame;
+					EmbeddedItemTooltip.factionID = frame.factionID;
 
--- Hide Paragon Tooltip when cleared
-hooksecurefunc("ReputationParagonFrame_OnLeave",function(self)
-	GameTooltip:Hide();
-end
-);
+					local factionName, _, standingID = GetFactionInfoByID(frame.factionID);
+					local gender = UnitSex("player");
+					local factionStandingtext = GetText("FACTION_STANDING_LABEL"..standingID, gender);
+					local currentValue, threshold, rewardQuestID, hasRewardPending, tooLowLevelForParagon = C_Reputation.GetFactionParagonInfo(frame.factionID);
+
+					if ( tooLowLevelForParagon ) then
+						EmbeddedItemTooltip:SetText(PARAGON_REPUTATION_TOOLTIP_TEXT_LOW_LEVEL);
+					else
+						EmbeddedItemTooltip:SetText(factionStandingtext);
+						local description = PARAGON_REPUTATION_TOOLTIP_TEXT:format(factionName);
+						if ( hasRewardPending ) then
+							local questIndex = GetQuestLogIndexByID(rewardQuestID);
+							local text = GetQuestLogCompletionText(questIndex);
+							if ( text and text ~= "" ) then
+								description = text;
+							end
+						end
+						EmbeddedItemTooltip:AddLine(description, HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1);
+						if ( not hasRewardPending ) then
+							local value = mod(currentValue, threshold);
+							-- show overflow if reward is pending
+							if ( hasRewardPending ) then
+								value = value + threshold;
+							end
+							GameTooltip_ShowProgressBar(EmbeddedItemTooltip, 0, threshold, value, REPUTATION_PROGRESS_FORMAT:format(value, threshold));
+						end
+						GameTooltip_AddQuestRewardsToTooltip(EmbeddedItemTooltip, rewardQuestID);
+					end
+					EmbeddedItemTooltip:Show();
+				end
+			--]]
+			local paragonQuestID = select(3, C_Reputation.GetFactionParagonInfo(frame.factionID));
+			if paragonQuestID then
+				local itemID = paragonCacheID[paragonQuestID];
+				if itemID then
+					local link = select(2, GetItemInfo(itemID));
+					if link then
+						-- Attach tooltip to the Paragon Frame
+						GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
+						GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT");
+						GameTooltip:SetHyperlink(link);
+					end
+				end
+			end
+		end
+	end);
+
+	-- Hide Paragon Tooltip when cleared
+	hooksecurefunc("ReputationParagonFrame_OnLeave",function(self)
+		GameTooltip:Hide();
+	end);
+end)();
 
 -- Achievement Lib
 app.AchievementFilter = 4;
