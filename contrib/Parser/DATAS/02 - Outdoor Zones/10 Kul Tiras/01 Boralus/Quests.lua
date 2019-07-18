@@ -112,6 +112,7 @@ _.Zones =
 				}),
 				q(50789, {	-- Clear the Air
 					["sourceQuests"] = { 50787 },	-- Make Our Case
+					["coord"] = { 49.9, 87.3, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 135259,	-- Taelia
 				}),
@@ -134,6 +135,7 @@ _.Zones =
 				}),
 				q(50788, {	-- Enemies Within
 					["sourceQuests"] = { 50787 },	-- Make Our Case
+					["coord"] = { 49.9, 87.3, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 135259,	-- Taelia
 				}),
@@ -153,7 +155,10 @@ _.Zones =
 					},
 				}),
 				q(50790, {	-- Hot Pursuit
-					["sourceQuests"] = { 50789, 50788 },	-- Clear the Air / Enemies Within
+					["sourceQuests"] = {
+						50789,	-- Clear the Air
+						50788,	-- Enemies Within
+					},
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 135259,	-- Taelia
 				}),
@@ -178,16 +183,20 @@ _.Zones =
 				}),
 				q(50795, {	-- Prepare for Trouble
 					["sourceQuests"] = { 50110 },	-- Bearers of Bad News
+					["coord"] = { 48.9, 75.5, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 135259,	-- Taelia
 				}),
 				q(50972, {	-- Proudmoore's Parley
 					["sourceQuests"] = { 50790 },	-- Hot Pursuit
+					["coord"] = { 48.2, 80.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 135259,	-- Taelia
 					["g"] = {
 						i(155034),	-- Freebooter Cowl
 						i(155022),	-- Freebooter Tunic
+						i(155039),	-- Navigator's Robes
+						i(155032),	-- Navigator's Circlet
 						i(155031),	-- Sea Raider's Greathelm
 						i(155020),	-- Sea Raider's Breastplate
 					},

@@ -7,6 +7,24 @@ _.Zones =
 		m(895, {	-- Tiragarde Sound
 			n(-17, {	-- Quests
 		--	!! LEATHER/MAIL REWARDS NEEDED FOR QUEST 49404, "FAIRWIND'S 'FRIENDS'" !! — leather needs to be confirmed and mail is missing completely
+		--	!! MAIL REWARDS NEEDED FOR QUEST 50972, "PROUDMOORE'S PARLEY" !! — quest is actually in boralus, but pop out "A Sound Plan" crit 4 to guide you to the correct quest
+				q(48352, {	-- A Cure from the Sea
+					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
+					["coord"] = { 42.2, 29.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160097),	-- Navigator's Wristwraps
+						i(160098),	-- Freebooter Bands
+						i(160099),	-- Outrigger Bands
+						i(160100),	-- Sea Raider's Shackles
+						i(158260),	-- Navigator's Grips
+						i(158258),	-- Freebooter Handwraps
+						i(158261),	-- Outrigger Handguards
+						i(158259),	-- Sea Raider's Handguards
+					},
+				}),
+				
+				
 				q(49869, {	-- A Desperate Defense
 					["sourceQuests"] = { 52431 },	-- No-Landing Zone
 					["coord"] = { 60.9, 59.1, 895 },
@@ -66,6 +84,18 @@ _.Zones =
 				}),
 				
 				
+				q(49292, {	-- Algae Shakes
+					["sourceQuests"] = {
+						48352,	-- A Cure from the Sea
+						49268,	-- Sharks in the Water
+						48348,	-- Stinging Barbs
+					},
+					["coord"] = { 42.2, 29.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125922,	-- Brother Therold
+				}),
+				
+				
 				q(49234, {	-- A Marine Out of Water
 					["sourceQuests"] = { 50700 },	-- Drust in Time
 					["coord"] = { 62.9, 29.8, 895 },
@@ -122,6 +152,25 @@ _.Zones =
 				}),
 				
 				
+				q(50110, {	-- Bearers of Bad News
+					["sourceQuests"] = { 49741 },	-- Righteous Retribution
+					["coord"] = { 56.5, 61.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 142393,	-- Taelia
+				}),
+				
+				
+				q(48009, {	-- Betrayal of the Guard
+					["sourceQuests"] = {
+						48355,	-- Evacuate the Premises
+						48354,	-- Tainted Shipments
+					},
+					["coord"] = { 39.5, 26.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126308,	-- Keegan Alby
+				}),
+				
+				
 				q(48421, { 	-- Blood in the Tides
 					["sourceQuests"] = { 47489 }, 	-- Stow and Go
 					["coord"] = { 85.61, 76.61, 895 },
@@ -142,6 +191,25 @@ _.Zones =
 					["coord"] = { 55.4, 24.6, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 125398,	-- Harold Beckett
+				}),
+				
+				
+				q(49757, {	-- Cat on a Hot Copper Roof
+					["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
+					["coord"] = { 58.5, 61.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131654,	-- Meredith
+					["g"] = {
+						i(163036),	-- Polished Pet Charm x10
+					},
+				}),
+				
+				
+				q(49740, {	-- Cease Fire!
+					["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
+					["coord"] = { 56.6, 61.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131048,	-- Lieutenant Tarenfold
 				}),
 				
 				
@@ -171,6 +239,22 @@ _.Zones =
 				}),
 				
 				
+				q(48370, {	-- Death in the Depths
+					["sourceQuests"] = { 48366 },	-- Paddle to Safety
+					["coord"] = { 35.2, 24.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126308,	-- Keegan Alby
+				}),
+				
+				
+				q(48368, {	-- Deep Sea Defilement
+					["sourceQuests"] = { 48366 },	-- Paddle to Safety
+					["coord"] = { 35.2, 24.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125922,	-- Brother Therold
+				}),
+				
+				
 				q(49239, {	-- Dress to Impress
 					["sourceQuests"] = {
 						48773,	-- Papers, Please
@@ -190,6 +274,14 @@ _.Zones =
 				}),
 				
 				
+				q(48372, {	-- Eldritch Invocations
+					["sourceQuests"] = { 48366 },	-- Paddle to Safety
+					["coord"] = { 35.2, 24.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126298,	-- Brannon Stormsong
+				}),
+				
+				
 				q(49299, {	-- Enemy Within
 					["coord"] = { 37.6, 29.5, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -204,6 +296,17 @@ _.Zones =
 						i(160095),	-- Outrigger Waistwrap
 						i(160096),	-- Sea Raider's Cinch
 					},
+				}),
+				
+				
+				q(48355, {	-- Evacuate the Premises
+					["sourceQuests"] = {
+						49292,	-- Algae Shakes
+						48353,	-- Pulse of the Wharf
+					},
+					["coord"] = { 41.2, 27.0, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125922,	-- Brother Therold
 				}),
 				
 				
@@ -242,11 +345,34 @@ _.Zones =
 				}),
 				
 				
+				q(49736, {	-- For Kul Tiras!
+					["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
+					["coord"] = { 56.6, 61.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131048,	-- Lieutenant Tarenfold
+					["g"] = {
+						i(155085),	-- Standard Bearer's Band
+						i(158235),	-- Navigator's Shoes
+						i(158237),	-- Freebooter Walkers
+						i(158236),	-- Outrigger Walkers
+						i(158234),	-- Sea Raider's Stompers
+					},
+				}),
+				
+				
 				q(48539, {	-- Freehold
 					["sourceQuests"] = { 48505 },	-- Lovesick and Lost
 					["coord"] = { 80.2, 75.2, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 126158,	-- Flynn Fairwind
+				}),
+				
+				
+				q(52148, {	-- Freehold: A Pirate's End
+					["sourceQuests"] = { 49741 },	-- Righteous Retribution (must have completed objectives)
+					["coord"] = { 56.4, 61.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 121239,	-- Flynn Fairwind
 				}),
 				
 				
@@ -263,6 +389,24 @@ _.Zones =
 					["objectID"] = 277373,	-- Glimmering Seaweed
 					["coord"] = { 88.0, 74.9, 895 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(49738, {	-- Hands Off My Booty!
+					["sourceQuests"] = {
+						49737,	-- Air Raid
+						52750,	-- Farmers Who Fight
+					},
+					["coord"] = { 56.6, 61.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131048,	-- Lieutenant Tarenfold
+					["g"] = {
+						i(155092),	-- Master Cannoneer's Cloak
+						i(158268),	-- Navigator's Bracers
+						i(158271),	-- Freebooter Armbands
+						i(158270),	-- Outrigger Armguards
+						i(158269),	-- Sea Raider's Vambraces
+					},
 				}),
 				
 				
@@ -438,6 +582,18 @@ _.Zones =
 				}),
 				
 				
+				q(48366, {	-- Paddle to Safety
+					["sourceQuests"] = {
+						48009,	-- Betrayal of the Guard
+						48356,	-- Possessive Headgear
+						48365,	-- The Young Lord Stormsong
+					},
+					["coord"] = { 39.5, 26.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126298,	-- Brannon Stormsong
+				}),
+				
+				
 				q(48773, {	-- Papers, Please
 					["sourceQuests"] = { 48539 },	-- Freehold
 					["coord"] = { 80.2, 75.2, 895 },
@@ -467,6 +623,29 @@ _.Zones =
 					["coord"] = { 78.1, 55.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 133552,	-- Head Chemist Walters
+				}),
+				
+				
+				q(48356, {	-- Possessive Headgear
+					["sourceQuests"] = {
+						48355,	-- Evacuate the Premises
+						48354,	-- Tainted Shipments
+					},
+					["coord"] = { 39.5, 26.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125922,	-- Brother Therold
+				}),
+				
+				
+				q(48353, {	-- Pulse of the Wharf
+					["sourceQuests"] = {
+						48352,	-- A Cure from the Sea
+						49268,	-- Sharks in the Water
+						48348,	-- Stinging Barbs
+					},
+					["coord"] = { 42.2, 29.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125922,	-- Brother Therold
 				}),
 				
 				
@@ -501,6 +680,14 @@ _.Zones =
 					["coord"] = { 65.0, 60.6, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 137694,	-- Parin Tinklocket
+				}),
+				
+				
+				q(49741, {	-- Righteous Retribution
+					["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
+					["coord"] = { 56.4, 61.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 142393,	-- Taelia
 				}),
 				
 				
@@ -556,6 +743,13 @@ _.Zones =
 				}),
 				
 				
+				q(49268, {	-- Sharks in the Water
+					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
+					["coord"] = { 42.2, 29.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(52258, {	-- She Sells Seashells
 					["coord"] = { 60.9, 30.8, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -587,6 +781,13 @@ _.Zones =
 				}),
 				
 				
+				q(48348, {	-- Stinging Barbs
+					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
+					["coord"] = { 42.2, 29.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(48778, {	-- Stone Soup
 				--	["objectID"] = 276837,	-- Recipe Rock
 					["coord"] = { 56.1, 17.9, 895 },
@@ -607,6 +808,17 @@ _.Zones =
 					["coord"] = { 76.7, 43.4, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 122671,	-- Cagney
+				}),
+				
+				
+				q(48354, {	-- Tainted Shipments
+					["sourceQuests"] = {
+						49292,	-- Algae Shakes
+						48353,	-- Pulse of the Wharf
+					},
+					["coord"] = { 41.2, 27.0, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125922,	-- Brother Therold
 				}),
 				
 				
@@ -733,6 +945,25 @@ _.Zones =
 						i(158278),	-- Outrigger Bindings
 						i(158277),	-- Sea Raider's Wristguards
 					},
+				}),
+				
+				
+				q(48365, {	-- The Young Lord Stormsong
+					["sourceQuests"] = {
+						48355,	-- Evacuate the Premises
+						48354,	-- Tainted Shipments
+					},
+					["coord"] = { 39.5, 26.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126308,	-- Keegan Alby
+				}),
+				
+				
+				q(48367, {	-- Those Aren't Fish Eggs
+					["sourceQuests"] = { 48366 },	-- Paddle to Safety
+					["coord"] = { 35.0, 24.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128679,	-- Rosaline Madison
 				}),
 				
 				
@@ -913,53 +1144,7 @@ _.Zones =
 					-- Daelin's Gate / Old Drust Road
 					--------------------------------------
 					-- Defenders of Dealin's Gate
-					a(q(50110, {	-- Bearers of Bad News
-						["qg"] = 142393,	-- Taelia
-						["sourceQuests"] = { 49741 },	-- Righteous Retribution
-						["isBreadcrumb"] = true,
-					})),
-					a(q(49757, {	-- Cat on a Hot Copper Roof
-						["qg"] = 131654,	-- Meredith
-						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
-						["g"] = {
-							-- i(163036),	-- Polished Pet Charm [REMOVING THIS FOR NOW BECAUSE BUBBLE DOWN MAKES IT ALLIANCE ONLY.  BAD BUBBLEDOWN!!!!]
-						},
-					})),
-					a(q(49740, {	-- Cease Fire!
-						["qg"] = 131048,	-- Lieutenant Tarenfold
-						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
-					})),
 					a(q(49739, {	-- Enemies at the Gate (Objective)
-						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
-					})),
-					a(q(49736, {	-- For Kul Tiras!
-						["qg"] = 131048,	-- Lieutenant Tarenfold
-						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
-						["g"] = {
-							i(155085),	-- Standard Bearer's Band
-							i(158235),	-- Navigator's Shoes
-							i(158237),	-- Freebooter Walkers
-							i(158236),	-- Outrigger Walkers
-							i(158234),	-- Sea Raider's Stompers
-						},
-					})),
-					a(q(52148, {	-- Freehold: A Pirate's End
-						["qg"] = 121239,	-- Flynn Fairwind
-						["sourceQuests"] = { 49741 },	-- Righteous Retribution
-					})),
-					a(q(49738, {	-- Hands Off My Booty!
-						["qg"] = 131048,	-- Lieutenant Tarenfold
-						["sourceQuests"] = { 49737, 52750 },	-- Air Raid / Farmers Who Fight
-						["g"] = {
-							i(158268),	-- Navigator's Bracers
-							i(158271),	-- Freebooter Armbands
-							i(158270),	-- Outrigger Armguards
-							i(158269),	-- Sea Raider's Vambraces
-							i(155092),	-- Master Cannoneer's Cloak
-						},
-					})),
-					a(q(49741, {	-- Righteous Retribution
-						["qg"] = 142393,	-- Taelia
 						["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
 					})),
 
@@ -1028,16 +1213,6 @@ _.Zones =
 						i(158238),	-- Sea Raider's Footguards
 						i(158228),	-- Gryphon Rider's Ring
 
-					}),
-					q(48352, {	-- A Cure from the Sea
-						i(160097),	-- Navigator's Wristwraps
-						i(160098),	-- Freebooter Bands
-						i(160099),	-- Outrigger Bands
-						i(160100),	-- Sea Raider's Shackles
-						i(158260),	-- Navigator's Grips
-						i(158258),	-- Freebooter Handwraps
-						i(158261),	-- Outrigger Handguards
-						i(158259),	-- Sea Raider's Handguards
 					}),
 					q(49302, {	-- The Deadliest Catch
 						i(155053),	-- Scaleterror Slicer

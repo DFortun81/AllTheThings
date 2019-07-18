@@ -16,7 +16,10 @@ _.Zones =
 							["sourceQuests"] = { 49404 },	-- Fairwind's "Friends"
 						}),
 						crit(3, {	-- Defenders of Daelin's Gate
-							["sourceQuests"] = { 49740 },	-- Cease Fire!
+							["sourceQuests"] = {
+								49740,	-- Cease Fire!
+								49736,	-- For Kul Tiras!
+							},
 						}),
 						crit(4, {	-- Enemies Within
 							["sourceQuests"] = { 50972 },	-- Proudmoore's Parley

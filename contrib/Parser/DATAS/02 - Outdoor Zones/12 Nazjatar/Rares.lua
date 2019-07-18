@@ -288,6 +288,7 @@ _.Zones =
 				["coords"] = {
 					{ 31.6, 35.5, 1355 },
 					{ 36.2, 44.9, 1355 },
+					{ 36.6, 40.1, 1355 },
 					{ 37.1, 47.5, 1355 },
 					{ 37.3, 40.3, 1355 },
 					{ 39.0, 57.0, 1355 },
@@ -834,7 +835,7 @@ _.Zones =
 			}),
 			n(151719, {	-- Voice in the Deeps
 				["description"] = "When the rare is available, you can see its nameplate while hovering over the rocks inside the small building at the coordinates listed.\n\nWhen you're sure it's up, find a |cFF1EFF00Molted Shell|r on the ground and ride it into the rocks to break them.  The rare will immediately attack, so be ready to click off the buff!",
-				["questID"] = 56583,	-- also 56300, not sure which is first kill
+				["questID"] = 56300,	-- also 56583
 				["coord"] = { 67.5, 34.6, 1355 },
 				["isDaily"] = true,
 				["g"] = {

@@ -563,6 +563,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(55772, {	-- WANTED: Lady Narjiss
+						["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
