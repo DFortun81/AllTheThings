@@ -8,6 +8,12 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 845, 846, 847, 848, 849 },
 		["lvl"] = 110,
 		["g"] = {
+			n(-34, {	-- World Quests
+				q(46865, {	-- Cathedral of Eternal Night: Mother of Flame
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(2, {	-- Heroic
 				n(0, {	-- Zone Drops
 					i(147117, {	-- Orb of the Fel Temptress

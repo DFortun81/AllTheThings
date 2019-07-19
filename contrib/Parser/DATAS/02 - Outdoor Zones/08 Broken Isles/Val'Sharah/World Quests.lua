@@ -205,6 +205,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44305, {	-- WANTED: Bahagar
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44299, {	-- WANTED: Darkshade
 					["lvl"] = 110,
 					["collectible"] = false,

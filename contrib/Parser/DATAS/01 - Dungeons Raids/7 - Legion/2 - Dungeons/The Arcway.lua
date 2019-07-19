@@ -7,6 +7,16 @@ _.Instances = { tier(7, {	-- Legion
 		["lvl"] = 110,
 		["mapID"] = 749,
 		["groups"] = {
+			n(-34, {	-- World Quests
+				q(43640, {	-- The Arcway: Creeping Suspicions
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43641, {	-- The Arcway: Wandering Plague
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			n(111057, {	-- The Rat King
 				["description"] = "This rare is only available during the WQ The Arcway: Wandering Plague.",
 				["g"] = {

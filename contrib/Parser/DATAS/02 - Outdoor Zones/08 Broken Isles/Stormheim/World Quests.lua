@@ -199,14 +199,6 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(42243, {	-- Halls of Valor: Deeds of the Past
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
-				q(42240, {	-- Halls of Valor: Ponderous Poaching
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
 				q(44923, {	-- Helarjar Landing: Vrekt
 					["lvl"] = 110,
 					["collectible"] = false,

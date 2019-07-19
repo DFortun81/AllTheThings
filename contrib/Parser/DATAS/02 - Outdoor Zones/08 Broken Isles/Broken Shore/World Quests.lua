@@ -23,11 +23,9 @@ _.Zones =
 					q(45358),	-- Contagion Containment
 					q(45837),	-- Creeping Fel
 					q(45531),	-- Creeping Fel
-					q(46821),	-- Creepy Crawlies
 					q(45969),	-- Defense of the Ancient
 					q(46829),	-- Elemental Abuse
 					q(46288),	-- Everyone to the Front
-					
 					q(46077),	-- Felbound Spirits
 					q(46212),	-- Get Them Up
 					q(40390),	-- Hallowed Ground
@@ -62,7 +60,6 @@ _.Zones =
 					q(46325),	-- The United Front
 					q(46063),	-- The Wailing Dead
 					q(45791),	-- War Materiel
-					q(45977),	-- Where There is a Whip...
 				}),
 ]]--
 				q(45473, {	-- A Giant Problem
@@ -97,7 +94,7 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(46865, {	-- Cathedral of Eternal Night: Mother of Flame
+				q(46821, {	-- Creepy Crawlies
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -230,6 +227,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(45930, {	-- We Didn't Start the Fire
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45977, {	-- Where There is a Whip...
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

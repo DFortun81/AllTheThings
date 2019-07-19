@@ -985,7 +985,6 @@ _.Zones =
 --[[
 					n(-34, {	-- World Quests
 						q(48837),	-- All-Seer Xanarian
-						q(49055),	-- Earseeker
 						q(49057),	-- Minixis
 						q(49058),	-- One-of-Many
 						q(49056),	-- Pilfer
@@ -1031,6 +1030,11 @@ _.Zones =
 					}),
 					q(48777, {	-- Den of Fiends
 						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(49055, {	-- Earseeker
+						["lvl"] = 110,
+						["filterID"] = 101,	-- Battle Pet
 						["collectible"] = false,
 					}),
 					q(47566, {	-- Gar'zoth

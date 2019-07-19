@@ -1146,6 +1146,10 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48287, {	-- Harvesters of Sorrow
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(48282, {	-- Imp Mother Laglath
 						["lvl"] = 110,
 						["collectible"] = false,

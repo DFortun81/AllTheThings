@@ -20,6 +20,20 @@ _.Instances = { tier(7, {	-- Legion
 					}),
 				}),
 			}),
+			n(-34, {	-- World Quests
+				q(42243, {	-- Halls of Valor: Deeds of the Past
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42240, {	-- Halls of Valor: Ponderous Poaching
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42239, {	-- Halls of Valor: The Bear King
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(1,  {	-- Normal
 				n(0, { 		-- Zone Drop
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)

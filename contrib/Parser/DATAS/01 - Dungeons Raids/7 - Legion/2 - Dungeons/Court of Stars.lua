@@ -7,6 +7,16 @@ _.Instances = { tier(7, {	-- Legion
 		["lvl"] = 110,
 		["maps"] = { 761, 762, 763 },
 		["groups"] = {
+			n(-34, {	-- World Quests
+				q(42769, {	-- Court of Stars: Bring Me the Eyes
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42764, {	-- Court of Stars: Wraith in the Machine
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(2, {	-- Heroic
 				cr(104215, e(1718, {	-- Patrol Captain Gerdo
 					i(134268),	-- Arcane Defender's Gauntlets

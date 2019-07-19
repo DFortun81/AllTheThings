@@ -9,6 +9,10 @@ _.Instances = { tier(7, {	-- Legion
 		["lvl"] = 98,
 		["g"] = {
 			n(-34, {	-- World Quests
+				q(42745, {	-- Darkheart Thicket: A Burden to Bear
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42744, {	-- Darkheart Thicket: Preserving the Preservers
 					["lvl"] = 110,
 					["collectible"] = false,

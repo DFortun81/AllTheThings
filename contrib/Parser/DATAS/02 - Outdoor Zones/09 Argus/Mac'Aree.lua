@@ -1099,7 +1099,6 @@ _.Zones =
 						q(48737),	-- Instructor Tarahna
 						q(48733),	-- Jed'hin Champion Vorusk
 						q(48102),	-- Scale Samples
-						q(47858),	-- Security: Engaged
 						q(49050),	-- Shadeflicker
 						q(48730),	-- Sorolis the Ill-Fated
 					}),
@@ -1207,6 +1206,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48732, {	-- Sabuul
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(47858, {	-- Security: Engaged
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

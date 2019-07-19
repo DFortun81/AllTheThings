@@ -222,6 +222,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50509, {	-- Lo'kuno
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(53321, {	-- Luminous Monelite
 						["lvl"] = 120,
 						["collectible"] = false,

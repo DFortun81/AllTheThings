@@ -244,6 +244,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51884, {	-- Haywire Golem
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51604, {	-- Hunters Hunted
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

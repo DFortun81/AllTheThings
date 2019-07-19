@@ -84,6 +84,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54609, {	-- Beastlord Drakara (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51097, {	-- Bloated Krolusk
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -288,6 +293,11 @@ _.Zones =
 					}),
 					q(51124, {	-- Relic Hunter Hazaak
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(54127, {	-- Rocket Hop (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(54636, {	-- Sandbinder Sodir (Faction Assault WQ)

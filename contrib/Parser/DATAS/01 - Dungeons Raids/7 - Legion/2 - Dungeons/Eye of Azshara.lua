@@ -35,7 +35,17 @@ _.Instances = { tier(7, {	-- Legion
 						i(140625),	-- Waistband of the Hatecoil Oracles
 					},
 				}),
-			}),	
+			}),
+			n(-34, {	-- World Quests
+				q(42713, {	-- Eye of Azshara: Slug It Out
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42712, {	-- Eye of Azshara: Termination Claws
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(1, {	-- Normal
 				cr(91784, e(1480, {	-- Warlord Parjesh
 					i(134240),	-- Brinewashed Leather Cowl

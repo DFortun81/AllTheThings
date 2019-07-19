@@ -21,7 +21,6 @@ _.Zones =
 				q(41482),	-- Brimstone Destroyer
 				q(41529),	-- Bushy Aethril
 				q(41438),	-- Charged Leystone Deposits
-				
 				q(43091),	-- DANGER: Arcanor Prime
 				q(44189),	-- DANGER: Bestrix
 				q(43121),	-- DANGER: Chief Treasurer Jabrill
@@ -32,7 +31,6 @@ _.Zones =
 				q(44191),	-- DANGER: Karthax
 				q(43798),	-- DANGER: Kosumoth the Hungering
 				q(44192),	-- DANGER: Lysanis Shadesoul
-				q(43027),	-- DANGER: Mortiferous
 				q(44193),	-- DANGER: Sea King Tidross
 				q(43063),	-- DANGER: Stormfeather
 				q(44194),	-- DANGER: Torrentius
@@ -50,7 +48,6 @@ _.Zones =
 				q(41562),	-- Felhide
 				q(41563),	-- Felhide
 				q(44044),	-- Felled Experiment
-				q(41514),	-- Felwort
 				q(41513),	-- Felwort
 				q(41437),	-- Fine Leystone Deposits
 				q(41289),	-- Flourishing Aethril
@@ -62,8 +59,6 @@ _.Zones =
 				q(41265),	-- Huge Cursed Queenfish
 				q(42277),	-- Interlopers!
 				q(41528),	-- Iridescent Aethril
-				q(42101),	-- Language of the Lost
-				q(43325),	-- Ley Race
 				q(41498),	-- Leystone Basilisks
 				q(41501),	-- Leystone Basilisks
 				q(41500),	-- Leyworms
@@ -86,13 +81,10 @@ _.Zones =
 				q(41435),	-- Smooth Leystone Deposits
 				q(41582),	-- Smooth Sunrunner Hide
 				q(46162),	-- Subjugator Val'rek
-				
-				
 				q(44050),	-- The Felsworn Must Fall
 				q(45134),	-- The Soul Harvesters
 				q(42112),	-- The Withered Return
 				q(42019),	-- Tip the Scales
-				q(42511),	-- Twisted Souls
 				q(41322),	-- Unscratched Hippogryph Scale
 				q(42160),	-- Unwelcome Visitors
 				q(42636),	-- WANTED: Arcanist Shal'iman
@@ -160,6 +152,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43027, {	-- DANGER: Mortiferous
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43072, {	-- DANGER: The Whisperer
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -178,15 +174,12 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(42713, {	-- Eye of Azshara: Slug It Out
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
-				q(42712, {	-- Eye of Azshara: Termination Claws
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
 				q(41515, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41514, {	-- Felwort
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
@@ -226,7 +219,15 @@ _.Zones =
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
+				q(42101, {	-- Language of the Lost
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42211, {	-- Leodrath's Kin
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43325, {	-- Ley Race
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -345,6 +346,10 @@ _.Zones =
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(42511, {	-- Twisted Souls
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(42924, {	-- Vault of the Wardens: A Grim Matter
 					["lvl"] = 110,

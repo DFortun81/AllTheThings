@@ -43,8 +43,6 @@ _.Zones =
 				q(41280),	-- Huge Runescale Koi
 				q(41617),	-- Huge Runescale Koi
 				q(41538),	-- Iridescent Starlight Roses
-				q(43583),	-- Life Finds a Way
-				q(45032),	-- Like the Wind
 				q(41605),	-- Lively Runescale Koi
 				q(41279),	-- Lively Runescale Koi
 				q(41604),	-- Lively Runescale Koi
@@ -156,14 +154,6 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(42769, {	-- Court of Stars: Bring Me the Eyes
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
-				q(42764, {	-- Court of Stars: Wraith in the Machine
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
 				q(44856, {	-- Cut the Cattitude
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -218,7 +208,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43583, {	-- Life Finds a Way
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44744, {	-- Lifelines
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45032, {	-- Like the Wind
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -277,14 +275,6 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41351, {	-- Supplies Needed: Stonehide Leather
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
-				q(43640, {	-- The Arcway: Creeping Suspicions
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
-				q(43641, {	-- The Arcway: Wandering Plague
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
