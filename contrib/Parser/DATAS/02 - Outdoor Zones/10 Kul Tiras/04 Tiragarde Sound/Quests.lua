@@ -8,6 +8,24 @@ _.Zones =
 			n(-17, {	-- Quests
 		--	!! LEATHER/MAIL REWARDS NEEDED FOR QUEST 49404, "FAIRWIND'S 'FRIENDS'" !! — leather needs to be confirmed and mail is missing completely
 		--	!! MAIL REWARDS NEEDED FOR QUEST 50972, "PROUDMOORE'S PARLEY" !! — quest is actually in boralus, but pop out "A Sound Plan" crit 4 to guide you to the correct quest
+				q(49523, {	-- A Bad Deal
+					["sourceQuests"] = { 49522 },	-- Carentan's Payment
+					["coord"] = { 76.8, 85.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+					
+					
+				q(50249, {	-- A Boralus Triple Threat
+					["sourceQuests"] = {
+						51226,	-- Death From Two Sides
+						49733,	-- Patching Up the Rear
+					},
+					["coord"] = { 81.0, 42.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133035,	-- Officer Jovan
+				}),
+				
+				
 				q(48352, {	-- A Cure from the Sea
 					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
 					["coord"] = { 42.2, 29.3, 895 },
@@ -73,6 +91,17 @@ _.Zones =
 					["coord"] = { 56.7, 61.1, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 131048,	-- Lieutenant Tarenfold
+				}),
+				
+				
+				q(49716, {	-- A Lesson on Trust
+					["sourceQuests"] = {
+						51226,	-- Death From Two Sides
+						49733,	-- Patching Up the Rear
+					},
+					["coord"] = { 81.0, 42.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130375,	-- Tallis Skyheart
 				}),
 				
 				
@@ -207,6 +236,14 @@ _.Zones =
 					["coord"] = { 55.4, 24.6, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 125398,	-- Harold Beckett
+				}),
+				
+				
+				q(49522, {	-- Carentan's Payment
+					["sourceQuests"] = { 49407 },	-- Trixie Business
+					["coord"] = { 76.9, 86.0, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128903,	-- Carentan
 				}),
 				
 				
@@ -389,6 +426,17 @@ _.Zones =
 						i(158236),	-- Outrigger Walkers
 						i(158234),	-- Sea Raider's Stompers
 					},
+				}),
+				
+				
+				q(49720, {	-- Free Bird
+					["sourceQuests"] = {
+						51226,	-- Death From Two Sides
+						49733,	-- Patching Up the Rear
+					},
+					["coord"] = { 80.6, 42.0, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 132720,	-- Hawkmaster Lloyd
 				}),
 				
 				
@@ -758,6 +806,28 @@ _.Zones =
 				}),
 				
 				
+				q(50356, {	-- Rock Meet Dynamite
+					["sourceQuests"] = {
+						50351,	-- Miner Operation
+						50352,	-- Pinch of Azerite
+					},
+					["coord"] = { 75.5, 59.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 134628,	-- Civil Technician Alena
+				}),
+				
+				
+				q(49403, {	-- Rodrigo's Revenge
+					["sourceQuests"] = { 49402 },	-- Flew the Coop
+					["coord"] = { 77.0, 82.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129098,	-- Rodrigo <Flight Master>
+					["g"] = {
+						i(163036),	-- Polished Pet Charm x10
+					},
+				}),
+				
+				
 				q(49401, {	-- Rodrigo's Roost
 					["sourceQuests"] = { 49239 },	-- Dress to Impress
 					["coord"] = { 77.3, 83.9, 895 },
@@ -906,6 +976,22 @@ _.Zones =
 					["coord"] = { 41.2, 27.0, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 125922,	-- Brother Therold
+				}),
+				
+				
+				q(49734, {	-- Targeting a Turncoat
+					["sourceQuests"] = {
+						51226,	-- Death From Two Sides
+						49733,	-- Patching Up the Rear
+					},
+					["coord"] = { 81.0, 42.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130375,	-- Tallis Skyheart
+					["g"] = {
+						i(155090),	-- Lieutenant Fernn's Ring
+						i(158266),	-- Southport Searchlight
+						i(158330),	-- Proudmoore Marine's Crest
+					},
 				}),
 				
 				
@@ -1104,6 +1190,14 @@ _.Zones =
 				}),
 				
 				
+				q(49407, {	-- Trixie Business
+					["sourceQuests"] = { 49290 },	-- Aged to Perfection
+					["coord"] = { 76.9, 86.0, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128903,	-- Carentan
+				}),
+				
+				
 				q(48195, {	-- Troublesome Troglodytes
 					["sourceQuests"] = { 48670 },	-- Runaway Rider
 					["coord"] = { 54.4, 19.4, 895 },
@@ -1167,6 +1261,18 @@ _.Zones =
 				--	["objectID"] = 289313,	-- WANTED: The Hornet
 					["coord"] = { 42.2, 22.9, 895 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(49072, {	-- Westward Noble
+					["sourceQuests"] = {
+						48873,	-- A Grizzly End
+						48879,	-- A Hunt for Hawk Eggs
+						48874,	-- Pardon Our Rust
+					},
+					["coord"] = { 75.8, 65.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127161,	-- Alanna Holton
 				}),
 				
 				
@@ -1242,32 +1348,12 @@ _.Zones =
 					--------------------------------------
 					-- Freehold
 					--------------------------------------
-					-- crit(2),		-- Freehold
-					a(q(49522, {	-- A Bad Deal
-						["qg"] = 128903,	-- Carentan
-						["sourceQuests"] = { 49522 },	-- Carentan's Payment
-					})),
-					a(q(49522, {	-- Carentan's Payment
-						["qg"] = 128903,	-- Carentan
-						["sourceQuests"] = { 49407 },	-- Trixie Business
-					})),
 					q(49405, {	-- Defenders of Daelin's Gate
 						["sourceQuests"] = { 49404 },	-- Fairwind's "Friends"
 						["coord"] = { 77.1, 82.9, 895 },
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 128927,	-- Taelia
 					}),
-					a(q(49403, {	-- Rodrigo's Revenge
-						["qg"] = 129098,	-- Rodrigo <Flight Master>
-						["sourceQuests"] = { 49402 },	-- Flew the Coop
-						["g"] = {
-							-- i(163036),	-- Polished Pet Charm [REMOVING THIS FOR NOW BECAUSE BUBBLE DOWN MAKES IT ALLIANCE ONLY.  BAD BUBBLEDOWN!!!!]
-						},
-					})),
-					a(q(49407, {	-- Trixie Business
-						["qg"] = 128903,	-- Carentan
-						["sourceQuests"] = { 49290 },	-- Aged to Perfection
-					})),
 
 					------------------------------------------------------------------
 					--------------------------------------
@@ -1309,11 +1395,6 @@ _.Zones =
 						i(158229),	-- Lucktail Riding Cloak
 						i(158267),	-- Tortollan Traveling Lantern
 						i(155082),	-- Durable Seashell Barrier
-					}),
-					q(49734, {	-- Targeting a Turncoat
-						i(155090),	-- Lieutenant Fernn's Ring
-						i(158266),	-- Southport Searchlight
-						i(158330),	-- Proudmoore Marine's Crest
 					}),
 					q(49431, {	-- Warm and Cozy
 						i(158289),	-- Navigator's Cinch

@@ -261,6 +261,53 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(393, {	-- Skinning
+					q(52228, {	-- Atal'Dazar: An Unbreakable Bone Needle
+						["description"] = "Requires 150 Kul Tiran Skinning.",
+						["coord"] = { 75.8, 13.1, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 136061,	-- Camilla Darksky
+						["g"] = {
+							recipe(257154),	-- Skinning Technique: Bone Gathering (Rank 3)
+						},
+					}),
+					q(52227, {	-- Bone Needle
+						["description"] = "Requires 50 Kul Tiran Skinning.",
+						["coord"] = { 75.8, 13.1, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 136061,	-- Camilla Darksky
+						["g"] = {
+							recipe(257153),	-- Skinning Technique: Bone Gathering (Rank 2)
+						},
+					}),
+					q(52223, {	-- Brinepinch
+						["description"] = "Requires 50 Kul Tiran Skinning.",
+						["coord"] = { 75.8, 13.1, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 136061,	-- Camilla Darksky
+						["g"] = {
+							recipe(257147),	-- Skinning Technique: Leather Gathering (Rank 2)
+						},
+					}),
+					q(52225, {	-- In Pursuit of Fashion
+						["description"] = "Requires 50 Kul Tiran Skinning.",
+						["coord"] = { 75.8, 13.1, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 136061,	-- Camilla Darksky
+						["g"] = {
+							recipe(257150),	-- Skinning Technique: Scale Gathering (Rank 2)
+						},
+					}),
+					q(52226, {	-- Turtle Soup
+						["description"] = "Requires 150 Kul Tiran Skinning.",
+						["coord"] = { 75.8, 13.1, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 136061,	-- Camilla Darksky
+						["g"] = {
+							recipe(257151),	-- Skinning Technique: Scale Gathering (Rank 3)
+						},
+					}),
+				}),
 				prof(197, {	-- Tailoring
 					-- Tools of Trade Questline
 					q(53805, {	-- A Friend in Needle
