@@ -128,6 +128,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 132332,	-- Princess Talanji
 				}),
+
 				
 				
 				
@@ -378,6 +379,147 @@ _.Zones =
 						47742,	-- Zul's Mutiny
 					},
 				}),
+				-- Start How to Train Your Direhorn Achievment
+				-- Start How to Train Your Direhorn Crit 1
+				q(47310, {	-- Naptime
+					["races"] = HORDE_ONLY,
+					["qg"] = 121706,	-- Beastlord L'kala
+					["g"] = {
+						crit(1, {	-- Naptime
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
+					},
+				}),
+				-- End How to Train Your Direhorn Crit 1
+				-- Start How to Train Your Direhorn Crit 2
+				q(52857, {	-- Held For Observation
+					["races"] = HORDE_ONLY,
+					["qg"] = 122129,	-- Trader Alexxi Cruzpot
+					["sourceQuest"] = 47310,	-- Naptime
+					["g"] = {
+						crit(2, {	-- Held For Observation
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
+					},
+				}),
+				-- End How to Train Your Direhorn Crit 2
+				-- Start How to Train Your Direhorn Crit 3
+				{	-- An Unending Sleep
+					["questID"] = 55254,
+					["qg"] = 151283,	-- Direhorn Hatchling
+					["coord"] = { 68.1, 41.7, 862 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 52857,	-- Held For Observation
+				},
+				{	-- A Loa Without a Temple
+					["questID"] = 55252,
+					["qg"] = 121706,	-- Beastlord L'kala
+					["coord"] = { 66.8, 42.5, 862 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55254,	-- An Unending Sleep
+				},
+				{	-- A Show of Faith
+					["questID"] = 55253,
+					["qg"] = 151257,	-- Torcali
+					["coord"] = { 68.3, 29.6, 862 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55252,	-- A Loa Without a Temple
+				},
+				{	-- Sleep, Eat, Repeat
+					["questID"] = 55258, -- also triggered 55259. I suspect 55259 is a daily questID
+					["qg"] = 151286,	-- Child of Torcali
+					["coord"] = { 68.1, 41.7, 862 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55253,	-- A Show of Faith
+					["g"] = {
+						{	-- How To Train Your Direhorn (Sleep, Eat, Repeat)
+							["achievementID"] = 13542,
+							["criteriaID"] = 3,
+						},
+					},
+				},
+				-- End How to Train Your Direhorn Crit 3
+				-- Start How to Train Your Direhorn Crit 4
+				q(55462, { 	-- The Wanderer's Call
+					["races"] = HORDE_ONLY,
+					["qg"] = 151999,	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
+					["coord"] = { 68.2, 41.6 },
+					["sourceQuest"] = 55258,	-- Sleep, Eat, Repeat
+				}),
+				q(55504, { 	-- Wayshrines of Zuldazar
+					["races"] = HORDE_ONLY,
+					["qg"] = 151257,	-- Torcali <Loa of Wanderers>
+					["coord"] = { 68.2, 29.6 },
+					["sourceQuest"] = 55462,	-- The Wanderer's Call
+				}),
+				q(55503, { 	-- The Direhorn and the Saurid
+					["races"] = HORDE_ONLY,
+					["qg"] = 154607,	-- Image of Torcali
+					["coord"] = { 52.4, 23.2 },
+					["sourceQuest"] = 55504,	-- Wayshrines of Zuldazar
+				}),
+				q(55506, { 	-- One Road Ends
+					["races"] = HORDE_ONLY,
+					["qg"] = 154607,	-- Image of Torcali
+					["coord"] = { 52.4, 23.2 },
+					["sourceQuest"] = 55503,	-- The Direhorn and the Saurid
+				}),
+				q(55505, { 	-- Roo'li's Memory
+					["races"] = HORDE_ONLY,
+					["qg"] = 154607,	-- Image of Torcali
+					["coord"] = { 62.0, 49.6 },
+					["sourceQuest"] = 55506,	-- One Road Ends
+				}),
+				q(55507, { 	-- Torcali's Blessing
+					["races"] = HORDE_ONLY,
+					["qg"] = 151257,	-- Torcali <Loa of Wanderers>
+					["coord"] = { 68.2, 29.4 },
+					["sourceQuest"] = 55505,	-- Roo'li's Memory
+					["g"] = {
+						crit(4, {	-- Torcali's Blessing
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
+					},
+				}),
+				-- End How to Train Your Direhorn Crit 4
+				-- Start How to Train Your Direhorn Crit 5
+				q(55247, {	-- The Trust You've Earned
+					["sourceQuest"] = 55507,	-- Torcali's Blessing 
+					--["coord"] = { 862 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 151319,	-- Li'zal <Priestess of Torcali>
+				}),
+				q(55795, {	-- Mountain On the Move
+					["sourceQuest"] = 55247,	-- The Trust You've Earned
+					--["coord"] = { 862 },
+					["races"] = HORDE_ONLY,
+					--["qg"] = 151319,	-- Li'zal <Priestess of Torcali>
+				}),
+				q(55796, {	-- Heresy at the Crossroad
+					["sourceQuest"] = 55795,	-- Mountain On the Move
+					--["coord"] = { 862 },
+					["races"] = HORDE_ONLY,
+					--["qg"] = 151319,	-- Li'zal <Priestess of Torcali>
+				}),
+				q(55797, {	-- The Direhorn Mother's Fury
+					["sourceQuest"] = 55796,	-- Heresy at the Crossroad
+					--["coord"] = { 862 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 151999,	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
+				}),
+				q(55798, {	-- Wander Not Alone
+					["sourceQuest"] = 55797,	-- The Direhorn Mother's Fury
+					--["coord"] = { 862 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 151999,	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
+					["g"] = {
+						crit(5, {	-- Wander Not Alone
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
+					},
+				}),
+				-- End How to Train Your Direhorn Crit 5
+				-- End How to Train Your Direhorn Achievment
 				q(51101, {	-- The Wounded King
 					["races"] = HORDE_ONLY,
 					["qg"] = 141555	-- Baine Bloodhoof
@@ -782,41 +924,6 @@ _.Zones =
 						i(159123),	-- Jambani Barrier
 					},
 				}),
-				q(55462, { 	-- The Wanderer's Call
-					["races"] = HORDE_ONLY,
-					["qg"] = 151999,	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
-					["coord"] = { 68.2, 41.6 },
-				}),
-				q(55504, { 	-- Wayshrines of Zuldazar
-					["races"] = HORDE_ONLY,
-					["qg"] = 151257,	-- Torcali <Loa of Wanderers>
-					["coord"] = { 68.2, 29.6 },
-					["sourceQuests"] = { 55462 },	-- The Wanderer's Call
-				}),
-				q(55503, { 	-- The Direhorn and the Saurid
-					["races"] = HORDE_ONLY,
-					["qg"] = 154607,	-- Image of Torcali
-					["coord"] = { 52.4, 23.2 },
-					["sourceQuests"] = { 55504 },	-- Wayshrines of Zuldazar
-				}),
-				q(55506, { 	-- One Road Ends
-					["races"] = HORDE_ONLY,
-					["qg"] = 154607,	-- Image of Torcali
-					["coord"] = { 52.4, 23.2 },
-					["sourceQuests"] = { 55503 },	-- The Direhorn and the Saurid
-				}),
-				q(55505, { 	-- Roo'li's Memory
-					["races"] = HORDE_ONLY,
-					["qg"] = 154607,	-- Image of Torcali
-					["coord"] = { 62.0, 49.6 },
-					["sourceQuests"] = { 55506 },	-- One Road Ends
-				}),
-				q(55507, { 	-- Torcali's Blessing
-					["races"] = HORDE_ONLY,
-					["qg"] = 151257,	-- Torcali <Loa of Wanderers>
-					["coord"] = { 68.2, 29.4 },
-					["sourceQuests"] = { 55505 },	-- Roo'li's Memory
-				}),
 				q(49285, {	-- Tiny Treasures
 					["g"] = {
 						i(156871),	-- Spitzy (TOY!)
@@ -831,39 +938,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 52114 },	-- Honoring a True Leader
 				}),
-				{	-- A Loa Without a Temple
-					["questID"] = 55252,
-					["qg"] = 121706,	-- Beastlord L'kala
-					["coord"] = { 66.8, 42.5, 862 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55254,	-- An Unending Sleep
-				},
-				{	-- A Show of Faith
-					["questID"] = 55253,
-					["qg"] = 151257,	-- Torcali
-					["coord"] = { 68.3, 29.6, 862 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55252,	-- A Loa Without a Temple
-				},
-				{	-- An Unending Sleep
-					["questID"] = 55254,
-					["qg"] = 151283,	-- Direhorn Hatchling
-					["coord"] = { 68.1, 41.7, 862 },
-					["races"] = HORDE_ONLY,
-				},
-				{	-- Sleep, Eat, Repeat
-					["questID"] = 55258, -- also triggered 55259. I suspect 55259 is a daily questID
-					["qg"] = 151286,	-- Child of Torcali
-					["coord"] = { 68.1, 41.7, 862 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55253,	-- A Show of Faith
-					["g"] = {
-						{	-- How To Train Your Direhorn (Sleep, Eat, Repeat)
-							["achievementID"] = 13542,
-							["criteriaID"] = 3,
-						},
-					},
-				},
 				q(55248, {	-- Greener Pastures
 					["qg"] = 151319,	-- Li'zal
 					["coord"] = { 68.1, 41.7, 862 },
