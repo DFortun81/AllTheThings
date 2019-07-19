@@ -9,7 +9,7 @@ _.WorldEvents =
 			tier(4, { 	-- Catacylsm
 				{	-- Smoldering Timewarped Ember [Alliance]
 					["itemID"] = 133378,	-- Smoldering Timewarped Ember [Alliance]
-					["questID"] = 40787,	-- The Smoldering Ember
+					["questID"] = 40786,	-- The Smoldering Ember
 					["qg"] = 101759,	-- Kiatke
 					["repeatable"] = true,
 					["isWeekly"] = true,

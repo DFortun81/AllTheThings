@@ -186,10 +186,13 @@ _.Zones =
 					["qg"] = 91731,	-- Thrall
 				}),
 				q(38035, {	-- A Royal Summons
-					["sourceQuests"] = { 39735, 44700 },	-- Stormheim (2 versions)
-					["coord"] = { 29.2, 47.2, 627 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 96644,	-- Sky Admiral Rogers
+					["coord"] = { 29.2, 47.2, 627 },
+					["sourceQuests"] = {
+						39735,	-- Stormheim
+						44700,	-- Stormheim
+					},
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(43441,  {	-- A Second Weapon
 					["classes"] = { 8 },
@@ -1453,6 +1456,17 @@ _.Zones =
 					["qg"] = 90418,	-- Archmage Modera
 					["u"] = 40,
 				}),
+				q(37689, {	-- The Imposter
+					["qg"] = 111049,	-- Master Mathias Shaw
+					["coord"] = { 35.6, 60.0, 84 },
+					["sourceQuest"] = 37494,	-- Under Cover of Darkness
+					["classes"] = { 4 },	-- Rogue
+					["maps"] = { 84 },	 -- Stormwind City
+					["lvl"] = 98,
+					["g"] = {
+						i(139739),	-- Chestguard of the Uncrowned
+					},
+				}),
 				q(40938,  {	-- The Light and the Void
 					["sourceQuests"] = { 40710 },	-- Blade in Twilight
 					["classes"] = { 5 },	-- Priest
@@ -1780,6 +1794,12 @@ _.Zones =
 					["classes"] = { 7 },
 					["qg"] = 99531,	-- Aggra
 				}),
+--[[			Need to be added
+				q(47221)),	-- The Hand of Fate (A)
+				q(48506)),	-- The Hand of Fate (A)
+				q(47835)),	-- The Hand of Fate (H)
+				q(48507)),	-- The Hand of Fate (H)
+]]--
 --[[
 				The following quests have been removed from the game:
 				q(49472)	-- A Titanic Effort

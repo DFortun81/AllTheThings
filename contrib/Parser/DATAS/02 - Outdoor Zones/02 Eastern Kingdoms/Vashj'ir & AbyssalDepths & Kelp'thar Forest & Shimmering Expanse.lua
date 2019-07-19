@@ -538,11 +538,19 @@ _.Zones =
 								["coord"] = { 57.1, 28.7, 201 },
 								["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
 							}),
---[[
-							qh(27668),	-- Pay Attention!
-							qa(25281),	-- Pay It Forward
-							qh(25936),	-- Pay It Forward
---]]							
+--							qh(27668),	-- Pay Attention!
+							q(25281, {	-- Pay It Forward
+								["qg"] = 36915,	-- Erunak Stonespeaker
+								["coord"] = { 45.0, 23.2, 201 },
+								["sourceQuest"] = 24432,	-- Sea Legs
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25936, {	-- Pay It Forward
+								["qg"] = 41618,	-- Erunak Stonespeaker
+								["coord"] = { 38.8, 31.6, 201 },
+								["sourceQuest"] = 25929,	-- Sea Legs
+								["races"] = HORDE_ONLY,
+							}),
 --[[
 							q(25384, {	-- Raw Materials				\
 								i(59797),	-- Abalone-Linked Robes      \
@@ -550,12 +558,30 @@ _.Zones =
 								i(59796),	-- Tread of Decapod Death    /
 							}),                                         / 
 --]]
---[[
-							qa(25405),	-- Rest For the Weary
-							qh(25941),	-- Rest For the Weary
-							qa(24432),	-- Sea Legs
-							qh(25929),	-- Sea Legs
---]]
+							q(25405, {	-- Rest For the Weary
+								["qg"] = 36915,	-- Erunak Stonespeaker
+								["coord"] = { 45.0, 23.2, 201 },
+								["sourceQuest"] = 25281,	-- Pay It Forward
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25941, {	-- Rest For the Weary
+								["qg"] = 41618,	-- Erunak Stonespeaker
+								["coord"] = { 38.8, 31.6, 201 },
+								["sourceQuest"] = 25936,	-- Pay It Forward
+								["races"] = HORDE_ONLY,
+							}),
+							q(24432, {	-- Sea Legs
+								["qg"] = 36915,	-- Erunak Stonespeaker
+								["coord"] = { 45.0, 23.2, 201 },
+								["sourceQuest"] = 14482,	-- Call of Duty
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25929, {	-- Sea Legs
+								["qg"] = 41618,	-- Erunak Stonespeaker
+								["coord"] = { 38.8, 31.6, 201 },
+								["sourceQuest"] = 25924,	-- Call of Duty
+								["races"] = HORDE_ONLY,
+							}),
 --							q(35738),	-- Shallow End of the Gene Pool (In beta never added to game.)
 --							q(25498),	-- Shark Bait (In beta never added to game.)
 							q(27699, {	-- Shark Weak
@@ -1117,6 +1143,7 @@ _.Zones =
 							q(25441),	-- Vortex
 							qa(25922),	-- Waking the Beast
 							qh(25996),	-- Waking the Beast
+							qa(27443)),	-- The War Has Many Fronts
 							q(43645),	-- Wavespeaker's Trail
 							qa(25917),	-- We Are Not Alone
 							qh(25991),	-- We Are Not Alone

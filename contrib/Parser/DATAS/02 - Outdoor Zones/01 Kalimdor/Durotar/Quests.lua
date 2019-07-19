@@ -407,12 +407,13 @@ _.Zones =
 					["sourceQuest"] = 25194,	-- Unbidden Visitors
 				}),
 				q(40518, {	-- The Battle for Broken Shore
-					["altQuestID"] = 44543,	-- auto-granted
 					["qg"] = 113547,	-- Stone Guard Mukar
-					["lvl"] = 98,
-					["races"] = HORDE_ONLY,
+					["coord"] = { 55.6, 11.0, 1 },
 					["sourceQuest"] = 44281,	-- To Be Prepared
+				--	["altQuest"] = 44543,	-- Scenario Skip (H)
 					["description"] = "Legion expansion introduction quest.|r",
+					["races"] = HORDE_ONLY,
+					["lvl"] = 98,
 					["g"] = {
 						i(136582),	-- Bonegrinder of the Horde Vanguard
 						i(136583),	-- Longbow of the Horde Vanguard

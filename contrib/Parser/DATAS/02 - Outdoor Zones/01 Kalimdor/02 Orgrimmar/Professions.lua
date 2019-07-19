@@ -369,6 +369,9 @@ _.Zones =
 							["requireSkill"] = 755,	-- Jewelcrafting
 							["isDaily"] = true,
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								currency(361),	-- Illustrious Jewelcrafter's Token
+							},
 						}),
 						q(25162, {	-- Elemental Goo
 							["qg"] = 50482,	-- Marith Lazuria
@@ -376,13 +379,19 @@ _.Zones =
 							["requireSkill"] = 755,	-- Jewelcrafting
 							["isDaily"] = true,
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								currency(361),	-- Illustrious Jewelcrafter's Token
+							},
 						}),
 						q(25158, {	-- Nibbler! No!
 							["qg"] = 50482,	-- Marith Lazuria
 							["coord"] = { 72.4, 34.4, 85 },
 							["requireSkill"] = 755,	-- Jewelcrafting
 							["isDaily"] = true,
-							["races"] = HORDE_ONLY,	
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								currency(361),	-- Illustrious Jewelcrafter's Token
+							},
 						}),
 						q(25159, {	-- The Latest Fashion!
 							["qg"] = 50482,	-- Marith Lazuria

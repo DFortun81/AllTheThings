@@ -338,9 +338,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42708),	-- A Personal Request
+]]--				
 				q(47097, {	-- A Walk to Remember
+					["qg"] = 121224,	-- Anduin Wrynn
+					["coord"] = { 41.4, 59.4, 646 },
+					["sourceQuest"] = 47202,	-- A Personal Message
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
+--[[
 				q(44401),	-- A Weapon For Every Occasion
 				q(46832),	-- Aalgen Point
 				q(45342),	-- Administering Aid
@@ -415,9 +421,6 @@ _.Zones =
 				q(41921),	-- Closing In
 				q(44925),	-- Closing the Eye
 				q(45769),	-- Conflagration
-				q(46274, {	-- Consoling the King
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(45350),	-- Countering the Contagion
 				q(44275),	-- Court of Stars
 				q(45347),	-- Crafting a Cure
@@ -494,9 +497,15 @@ _.Zones =
 				q(46688),	-- Leather of the Ancients
 				q(46286),	-- Legionfall Supplies
 				q(46333),	-- Livin' on the Ledge
+]]--
 				q(47112, {	-- Lost Souls
+					["qg"] = 121226,	-- Anduin Wrynn
+					["coord"] = { 52.6, 48.4, 646 },
+					["sourceQuest"] = 47097,	-- A Walk to Remember
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
+--[[
 				q(38804),	-- Lyrelle
 				q(45817),	-- Mage
 				q(46694),	-- Mail of the Ancients
@@ -594,9 +603,15 @@ _.Zones =
 				q(46145),	-- Sterile Surroundings
 				q(45459),	-- Storming the Legion
 				q(46246),	-- Strike Them Down
-				q(46272, {,	-- Summons to the Keep
+]]--
+				q(46272, {	-- Summons to the Keep
+					["qg"] = 120281,	-- Captain Shwayder
+					["coord"] = { 41.6, 59.6, 646 },
+				--	["sourceQuest"] = 40755,	-- Hiding in the Stacks		-- Need to be confirmed
 					["races"] = ALLIANCE_ONLY,
-				})
+					["lvl"] = 110,
+				}),
+--[[
 				q(46250),	-- Take Out the Head...
 				q(45554),	-- Taking Control
 				q(46317),	-- Talon's Call
@@ -631,9 +646,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42537),	-- The King Rises
+]]--
 				q(46282, {	-- The King's Path
+					["qg"] = 121237,	-- Anduin Wrynn
+					["coord"] = { 58.2, 26.6, 646 },
+					["sourceQuest"] = 47112,	-- Lost Souls
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
+--[[
 				q(46684),	-- The Legend of the Elderhide
 				q(46696),	-- The Legend of the Four Hammers
 				q(46678),	-- The Legend of the Threads

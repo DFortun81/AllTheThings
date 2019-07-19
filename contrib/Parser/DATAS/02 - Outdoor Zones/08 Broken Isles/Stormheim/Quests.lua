@@ -202,10 +202,11 @@ _.Zones =
 						108283,	-- Mightstone Savage
 					},
 				}),
-				qa(38052, {	-- Boarded!
-					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
-					["coord"] = { 33.7, 50.9, 634 },
+				q(38052, {	-- Boarded!
 					["qg"] = 90749,	-- Sky Admiral Rogers
+					["coord"] = { 33.7, 50.9, 634 },
+					["sourceQuest"] = 39800,	-- Greymane's Gambit
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38816,  {	-- Breaking the Bonespeakers
 					["qg"] = 93446,	-- Shieldmaiden Iounn

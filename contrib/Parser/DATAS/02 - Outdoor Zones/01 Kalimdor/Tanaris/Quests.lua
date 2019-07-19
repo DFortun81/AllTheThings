@@ -428,7 +428,7 @@ _.Zones =
 						28558,	-- Hero's Call: Uldum!
 						28295,	-- Meetup with the Caravan
 						28296,	-- Meetup with the Caravan
-						28557,	-- Warchief's COmmand: Uldum!
+						28557,	-- Warchief's Command: Uldum!
 					},
 				}),
 				{	-- Filling Our Pockets

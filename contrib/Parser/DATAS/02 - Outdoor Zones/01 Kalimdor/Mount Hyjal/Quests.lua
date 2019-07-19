@@ -1271,11 +1271,14 @@ _.Zones =
 					["qg"] = 40093,	-- Subjugated Inferno Lord
 					["sourceQuest"] = 25411,	-- A New Master
 				},
-				{	-- The Nordrassil Summit
-					["questID"] = 29326,
+				q(29326, {	-- The Nordrassil Summit
 					["qg"] = 54313,	-- Thrall
 					["coord"] = { 60.6, 31.4, 198 },
-				},
+					["sourceQuests"] = {
+						29439,	-- The Call of the World-Shaman (A)
+						29440,	-- The Call of the World-Shaman (H)
+					},
+				}),
 				{	-- The Power of Malorne
 					["questID"] = 29126,
 					["qg"] = 52669,	-- Matoclaw

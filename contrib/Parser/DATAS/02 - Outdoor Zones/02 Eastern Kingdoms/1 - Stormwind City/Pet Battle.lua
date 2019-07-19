@@ -35,6 +35,35 @@ _.Zones =
 						}),
 					},
 				}),
+				n(-17, { -- Quests
+					q(31591, {	-- Learning the Ropes
+						["qg"] = 63596,	-- Audrey Burnhep
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 1,
+					}),
+					q(31592, {	-- On The Mend
+						["qg"] = 63596,	-- Audrey Burnhep
+						["coord"] = { 69.2, 25.0, 84 },
+						["sourceQuest"] = 31591,	-- Learning the Ropes
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 1,
+					}),
+					q(31821, {	-- Level Up!
+						["qg"] = 63596,	-- Audrey Burnhep
+						["coord"] = { 69.2, 25.0, 84 },
+						["sourceQuest"] = 31592,	-- On The Mend
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 1,
+					}),
+					q(31593, {	-- Got one!
+						["qg"] = 63596,	-- Audrey Burnhep
+						["coord"] = { 69.2, 25.0, 84 },
+						["sourceQuest"] = 31821,	-- Level Up!
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 1,
+					}),
+				}),
 				--[[
 				--Note!! Commented out for now.  Need to re-evaluate this entire section.
 				--What purpose is it serving?  Are these only available in Stormwind only?  Why are some missing?  Why is Aubrey quests saying not completed and not available?
@@ -105,6 +134,10 @@ _.Zones =
 						i(98095),	-- Brawler's Pet Supplies
 					},
 				}),
+				qa(31975)),	-- The Returning Champion
+				qa(31976)),	-- The Returning Champion
+				qa(31985)),	-- The Triumphant Return
+				q(32863),	-- What We've Been Training For
 				--]]
 			}),
 		}),

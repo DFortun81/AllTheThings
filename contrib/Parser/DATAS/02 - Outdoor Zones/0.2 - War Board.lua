@@ -15,12 +15,6 @@ _.Zones =
 					Thunder Bluff: 207323
 					Undercity: 207324
 			]]--
-			q(28790, {	-- A Personal Summons
-				["races"] = HORDE_ONLY,
-			}),
-			q(28825, {	-- A Personal Summons
-				["races"] = ALLIANCE_ONLY,
-			}),
 			q(29390),	-- Guardians of Hyjal: Call of the Ancients
 			q(29388),	-- Guardians of Hyjal: Firelands Invasion!
 			un(40, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
@@ -37,6 +31,8 @@ _.Zones =
 			q(43926, {	-- The Legion Returns
 				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
 			}),
+			q(28790),	-- A Personal Summons (Vashj'ir Starter Quest)
+			q(36499),	-- Iron Horde Invasion
 			q(29157),	-- The Zandalari Menace
 			q(28572),	-- Warchief's Command: Arathi Highlands!
 			q(28493),	-- Warchief's Command: Ashenvale!
@@ -94,9 +90,11 @@ _.Zones =
 			--[[
 				Warboard quests should be listed beneath this note. [Pr3vention]
 				ObjectID sources:
+					Stormwind City: 206111
 					Darnasses: 207321
 					Ironforge: 207320
 			]]--
+			q(28825),	-- A Personal Summons (Vashj'ir Starter Quest)
 			q(29391),	-- Guardians of Hyjal: Call of the Ancients
 			q(29387),	-- Guardians of Hyjal: Firelands Invasion!
 			q(28573),	-- Hero's Call: Arathi Highlands!
@@ -140,15 +138,16 @@ _.Zones =
 			q(26542),	-- Hero's Call: The Hinterlands!
 			q(28503),	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
 			q(28716),	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
-			q(28558),	-- Hero's Call: Uldum! (breadcrumb quest for 27003, not available if 28295 is completed) (max level 100)
+			q(28558),	-- Hero's Call: Uldum!
 			q(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
-			q(27724),	-- Hero's Call: Vashj'ir! (breadcrumb quest for 14482, not available if 28827,14481 are completed) (max level 100)
+			q(27724),	-- Hero's Call: Vashj'ir!
 			q(28576),	-- Hero's Call: Western Plaguelands!
 			q(28562),	-- Hero's Call: Westfall!
 			q(28565),	-- Hero's Call: Wetlands!
 			q(28544),	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
 			q(39181),	-- Hero's Call: Zangarmarsh!
 			q(49552),	-- Hero's Call: Zul'Drak!
+			q(36498),	-- Iron Horde Invasion
 			q(29156),	-- The Troll Incursion
 			--
 			q(26365, {	-- Hero's Call: Redridge Mountains!

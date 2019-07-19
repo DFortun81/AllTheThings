@@ -696,15 +696,17 @@ _.Zones =
 					["qg"] = 42684,	-- Stormcaller Mylra
 					["sourceQuests"] = {26248},
 				}),
-				q(28292, {	--  That's No Pyramid! [Alliance]
+				q(28292, {	--  That's No Pyramid! (A)
 					["qg"] = 44799,	-- Explorer Mowi
+					["coord"] = { 47.4, 51.4, 207 },
+					["sourceQuest"] = 27058,	-- The Wrong Sequence (A)
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {27058},
 				}),
-				q(28293, {	--  That's No Pyramid! [Horde]
+				q(28293, {	--  That's No Pyramid! (H)
 					["qg"] = 44823,	-- Examiner Rowe
+					["coord"] = { 51.2, 50.0, 207 },
+					["sourceQuest"] = 27059,	-- The Wrong Sequence (H)
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {27059},
 				}),
 				q(26249, {	--  The Admiral's Cabin
 					["qg"] = 42684,	-- Stormcaller Mylra

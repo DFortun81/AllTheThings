@@ -135,8 +135,9 @@ _.Zones =
 								}),
 								q(31732, {	-- Unleash Hell
 									["qg"] = 66292,	--  Sky Admiral Rogers
-									["sourceQuests"] = { 29548 },	-- The Mission
-									["groups"] = {
+									["coord"] = { 42.0, 92.8, 371 },
+									["sourceQuest"] = 29548,	-- The Mission
+									["g"] = {
 										i(90375),	-- Airship marine's Sharpshooter
 										i(90376),	-- Barricade-Breaker Cidgel
 										i(90382),	-- Captain Roger's Polite Knocking Stick
@@ -1635,10 +1636,7 @@ _.Zones =
 					["qg"] = 56782,	-- Elder Sage Rain-Zhu
 					["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
 				}),
-				qa(29548, {	-- The Mission
-					["qg"] = 55789,	-- Rell Nightwind
-					["sourceQuests"] = { 49556, 49866 },	-- Hero's Call: Jade Forest!, To Pandaria!
-				}),
+				
 				q(42868, {	-- The Monkey King's Challenge
 					["qg"] = 109187,	-- The Monkey King
 					["sourceQuests"] = { 42957 },	-- Journey to the East

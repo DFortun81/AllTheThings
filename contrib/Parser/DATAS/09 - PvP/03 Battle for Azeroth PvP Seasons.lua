@@ -2502,8 +2502,9 @@ _.PVP =
 			},
 		}),
 		i(163827, {	-- Quartermaster's Coin
-		 ["u"] = 2,
+			["u"] = 2,
 		}),
+		i(171198),	-- Quartermaster's Prize
 		i(163826),	-- Raider's Supply Cache
 	}),
 };

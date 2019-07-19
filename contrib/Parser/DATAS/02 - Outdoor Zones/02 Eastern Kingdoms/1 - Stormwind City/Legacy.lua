@@ -194,16 +194,6 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["requireSkill"] = 164,	-- Blacksmithing
 					},
-					{	-- You Have Served Us Well
-						["questID"] = 397,
-						["groups"] = {
-							un(2, i(3556)),	-- Dread Mage Hat
-						},
-						["u"] = 40,
-						["qg"] = 1435,	-- Zardeth of the Black Claw
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 9 },	-- Warlock
-					},
 				}),
 				n(-16, {	-- Rares
 					n(112527, {	-- Doomsayer

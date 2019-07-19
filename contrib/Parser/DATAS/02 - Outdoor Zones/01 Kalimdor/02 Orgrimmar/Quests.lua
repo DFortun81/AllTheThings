@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(85, {	-- Orgrimmar
 			n(-17, {	-- Quests
-				gsh(1522, {	-- Allied Races 	-- This belongs to black rock depths where this quest line takes place, but I at least wanted to get this in first.
+				gsh(1522, {	-- Allied Races
 					["icon"] = "Interface\\Icons\\FactionChange",
 					["g"] = {
 						q(50242, {	-- A Choice for Allies
@@ -591,6 +591,7 @@ _.Zones =
 				q(32309, {	-- A Tale of Six Masters
 					["qg"] = 88705,	-- Kranosh
 					["coord"] = { 53.8, 35.8, 85 },
+					["sourceQuest"] = 32307,	-- Reader for the Dead Tongue
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 90,
@@ -844,11 +845,11 @@ _.Zones =
 				}),
 				q(32468, {	-- Crystal Clarity
 					["qg"] = 16926,	-- Vivica Starshot
-					["lvl"] = 15,
 					["coord"] = { 34.5, 70.8, 85 },
-					["races"] = HORDE_ONLY,
-					["collectible"] = false,
 					["sourceQuest"] = 32471,	-- Light Camera Action
+					["collectible"] = false,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
 							i(122674),	-- S.E.L.F.I.E. Camera MkII
@@ -860,10 +861,10 @@ _.Zones =
 					["coord"] = { 53.5, 78.7, 85 },
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
 					["races"] = {
-							2,	-- Orc
-							8,	-- Troll
-							36,	-- Mag'har
-						},
+						2,	-- Orc
+						8,	-- Troll
+						36,	-- Mag'har
+					},
 					["lvl"] = 5,
 				}),
 				q(13842, {	-- Dread Head Redemption
@@ -1212,6 +1213,13 @@ _.Zones =
 					["lvl"] = 98,
 					["u"] = 40,
 				}),
+				q(32307, {	-- Reader for the Dead Tongue
+					["qg"] = 88705,	-- Kranosh (Orgrimmar)
+					["coord"] = { 53.8, 35.8, 85 },	-- Kranosh (Orgrimmar)
+					["isBreadcrumb"] = true,
+					["classes"] = { 9 },	-- Warlock
+					["lvl"] = 90,
+				}),
 				q(25275, {	-- Report to the Labor Captain
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
@@ -1500,8 +1508,9 @@ _.Zones =
 				}),
 				q(7926, {	-- The Darkmoon Faire
 					["qg"] = 55382,	-- Darkmoon Faire Mystic Mage
-
+					["coord"] = { 48.0, 62.0, 85 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 1,
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
 					},

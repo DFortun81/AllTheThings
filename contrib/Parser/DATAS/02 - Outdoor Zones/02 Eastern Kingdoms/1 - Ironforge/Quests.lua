@@ -55,6 +55,13 @@ _.Zones =
 						i(12051),	-- Brazen Gauntlets
 					},
 				}),
+				q(32310, {	-- A Tale of Six Masters
+					["qg"] = 5173,	-- Alexander Calder (Ironfoge)
+					["coord"] = { 50.2, 6.8, 87 },	-- Alexander Calder (Ironfoge)
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["lvl"] = 90,
+				}),
 				q(762, {	-- An Ambassador of Evil
 					["qg"] = 2916,	-- Historian Karnik
 					["coord"] = { 77.4, 11.6, 87 },
@@ -792,6 +799,9 @@ _.Zones =
 					["races"] = { 3 },	-- Dwarf
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 12,
+					["g"] = {
+						un(2, i(6866)),	-- Symbol of Life
+					},
 				}),
 				q(27269, {	-- The Temple of the Moon
 					["qg"] = 11406,	-- High Priest Rohan

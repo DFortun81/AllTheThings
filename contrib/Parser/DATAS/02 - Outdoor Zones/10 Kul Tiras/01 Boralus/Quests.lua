@@ -144,6 +144,12 @@ _.Zones =
 					["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 					["coord"] = { 68.0, 21.9, 1161 },
 				}),
+				q(55142, {	-- For the Alliance
+					["qg"] = 150941,	-- Katherine Proudmoore
+					["coord"] = { 67.8, 21.8, 1161 },
+					["races"] = { 32 },	-- Kul Tiran
+					["lvl"] = 20,
+				}),
 				q(53765, {	-- His Eye Upon You
 					["sourceQuest"] = 54126,	-- Twist the Knife [Alliance]
 					["description"]	= "You only get the toy if you choose to cleanse the gift.",

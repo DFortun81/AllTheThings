@@ -13,6 +13,7 @@ _.PVP =
 					q(56256, {	-- The Battle for Alterac (A)
 						["qg"] = 154478,	-- Prospector Stonehewer
 					--	["coord"] = { , 91 },
+						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(7282, {	-- Brotherly Love (A)
@@ -23,6 +24,7 @@ _.PVP =
 					q(56258, {	-- Ivus the Forest Lord 
 						["qg"] = 154476,	-- Archdruid Renferal
 					--	["coord"] = { , 91 },
+						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(6881, {	-- Ivus the Forest Lord
@@ -77,6 +79,7 @@ _.PVP =
 					q(56257, {	-- The Battle for Alterac (H)
 						["qg"] = 154473,	-- Voggah Deathgrip
 						["coord"] = { 55.0, 87.2, 91 },
+						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(7281, {	-- Brotherly Love (H)
@@ -87,6 +90,7 @@ _.PVP =
 					q(56259, {	-- Lokholar the Ice Lord
 						["qg"] = 154474,	-- Primalist Thurloga
 						["coord"] = { 55.0, 87.2, 91 },
+						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(6801, {	-- Lokholar the Ice Lord
