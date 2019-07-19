@@ -201,6 +201,9 @@ _.Zones =
 					i(170532),  -- Honorbound Outrider's Headpiece
 					i(170531),  -- Honorbound Outrider's Shoulderguards
 					i(170518),  -- Honorbound Outrider's Tunic
+					i(170517),	-- Honorbound Vanguard's Chainmail
+					i(170533),	-- Honorbound Vanguard's Shoulderguards
+					i(170534),	-- Honorbound Vanguard's Skullguard
 				},
 			}),
 			q(57006, {	-- A Worthy Ally
