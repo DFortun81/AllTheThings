@@ -196,6 +196,7 @@ _.Zones =
 						i(155468),	-- Anglin' Art's Treads
 						i(155476),	-- Anglin' Art's Waders
 						i(155484),	-- Anglin' Art's Stompers
+						i(160578),	-- Anglin' Art's Bag o' Fish
 					},
 					["qg"] = 127558,	-- Art Hughie
 					["coord"] = { 71.7, 50.4, 896 },
@@ -1042,6 +1043,11 @@ _.Zones =
 					qa(48881, {	-- The Reel Deal
 						["coord"] = { 71.1, 52.3, 896 },
 						["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
+						["groups"] = {
+							i(152868, {	-- Anglin' Art's Mudfish Bait
+								i(7307),	-- Flesh Eating Worm
+							}),
+						},
 					}),
 				}),
 				qa(49926, {	-- The Road to Corlain
