@@ -20,6 +20,8 @@ _.Zones =
 						recipe(298144),	-- Herbalism Technique: Zin'anthid (Rank 3)
 					},
 				}),
+			}),
+			prof(186, {	-- Mining
 				q(56103, {	-- Ounces of Osmenite (A)
 					["itemID"] = 168939,	-- Osmenite Shards
 					["races"] = ALLIANCE_ONLY,
