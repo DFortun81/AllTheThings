@@ -160,6 +160,22 @@ _.Zones =
 				}),
 				
 				
+				q(48004, {	-- Beginner Equitation
+					["sourceQuests"] = { 48005 },	-- Be Our Guest
+					["coord"] = { 51.6, 27.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 124802,	-- Lord Aldruis Norwington
+				}),
+				
+				
+				q(48005, {	-- Be Our Guest
+					["sourceQuests"] = { 48003 },	-- The Lord's Behest
+					["coord"] = { 51.6, 27.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 124802,	-- Lord Aldruis Norwington
+				}),
+				
+				
 				q(48009, {	-- Betrayal of the Guard
 					["sourceQuests"] = {
 						48355,	-- Evacuate the Premises
@@ -299,6 +315,14 @@ _.Zones =
 				}),
 				
 				
+				q(48087, {	-- Equine Retrieval
+					["sourceQuests"] = { 48939 },	-- Show Me What You've Got
+					["coord"] = { 51.6, 27.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 124802,	-- Lord Aldruis Norwington
+				}),
+				
+				
 				q(48355, {	-- Evacuate the Premises
 					["sourceQuests"] = {
 						49292,	-- Algae Shakes
@@ -342,6 +366,14 @@ _.Zones =
 					["coord"] = { 77.0, 82.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 129098,	-- Rodrigo <Flight Master>
+				}),
+				
+				
+				q(48196, {	-- Following Eddie's Trail
+					["sourceQuests"] = { 48670 },	-- Runaway Rider
+					["coord"] = { 54.4, 19.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127144,	-- Melissa Kenny
 				}),
 				
 				
@@ -558,6 +590,14 @@ _.Zones =
 				}),
 				
 				
+				q(48089, {	-- Mountain Sounds
+					["sourceQuests"] = { 48087 },	-- Equine Retrieval
+					["coord"] = { 52.5, 28.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 125042,	-- Gora Layton
+				}),
+				
+				
 				q(49178, { 	-- My Favorite Things
 					["sourceQuests"] = { 49218 },	-- The Castaways
 					["coord"] = { 85.4, 80.8, 895 },
@@ -571,6 +611,25 @@ _.Zones =
 					["coord"] = { 60.9, 59.1, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 141078,	-- Vigil Hill Refugee
+				}),
+				
+				
+				q(48088, {	-- No Party Like a Trogg Party
+					["sourceQuests"] = { 48087 },	-- Equine Retrieval
+					["coord"] = { 52.5, 28.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127559,	-- Lord Aldrius Norwington
+					["g"] = {
+						i(155065),	-- Trogg Thumper
+						i(155068),	-- Grimestone Pounder
+						i(155075),	-- Lord Aldrus' Greatstaff
+						i(155054),	-- Reveler's Edge
+						i(155070),	-- Norwington's Poleaxe
+						i(155062),	-- Stoat-Trapper's Spikefist
+						i(155076),	-- Roughneck Rider Handaxe
+						i(158297),	-- Equestrian's Saddle Knife
+						i(158294),	-- Hollowbeak Hunting Rifle
+					},
 				}),
 				
 				
@@ -707,6 +766,18 @@ _.Zones =
 				}),
 				
 				
+				q(48670, {	-- Runaway Rider
+					["sourceQuests"] = {
+						48080,	-- An Element of Danger
+						48616,	-- Bolas and Birds
+						48077,	-- The Stoat Hunt
+					},
+					["coord"] = { 55.5, 24.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127006,	-- Melissa Kenny
+				}),
+				
+				
 				q(48899, {	-- Safety First
 					["coord"] = { 51.2, 25.9, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -726,6 +797,14 @@ _.Zones =
 					["coord"] = { 75.85, 49.08, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 121239,	-- Flynn Fairwind
+				}),
+				
+				
+				q(48597, {	-- Saurolisk Escape
+					["sourceQuests"] = { 48670 },	-- Runaway Rider
+					["coord"] = { 55.9, 17.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 126804,	-- Trapped Saurolisk
 				}),
 				
 				
@@ -754,6 +833,14 @@ _.Zones =
 					["coord"] = { 60.9, 30.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 140752,	-- Jenny Swiftbrook
+				}),
+				
+				
+				q(48939, {	-- Show Me What You've Got
+					["sourceQuests"] = { 48004 },	-- Beginner Equitation
+					["coord"] = { 51.6, 27.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 124802,	-- Lord Aldruis Norwington
 				}),
 				
 				
@@ -860,6 +947,29 @@ _.Zones =
 				}),
 				
 				
+				q(49302, {	-- The Deadliest Catch
+					["sourceQuests"] = {
+						48370,	-- Death in the Depths
+						48368,	-- Deep Sea Defilement
+						48372,	-- Eldritch Invocations
+						48367,	-- Those Aren't Fish Eggs
+					},
+					["coord"] = { 35.0, 24.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(155053),	-- Scaleterror Slicer
+						i(155079),	-- Thrashneck Gladius
+						i(155072),	-- Wavetamer Trident
+						i(155059),	-- Sea Priest's Spellblade
+						i(158298),	-- Fishmonger's Gutter
+						i(155057),	-- Anglepoint Repeater
+						i(158296),	-- Angler's Longstaff
+						i(158295),	-- Shark-Hunter Glaive
+						i(155064),	-- Wharf-Porter Cudgel
+					},
+				}),
+				
+				
 				q(51199, {	-- The Glory of the Hunt
 					["isBreadcrumb"] = true,	-- you get credit for this when turning in The Norwington Festival
 					["coord"] = { 51.6, 27.2, 895 },
@@ -904,6 +1014,18 @@ _.Zones =
 							i(155073),	-- Waverider Warstaff
 							i(155052),	-- Port-Ruffian's Cleaver
 						},
+				}),
+				
+				
+				q(48003, {	-- The Lord's Behest
+					["sourceQuests"] = {
+						48196,	-- Following Eddie's Trail
+						48597,	-- Saurolisk Escape
+						48195,	-- Troublesome Troglodytes
+					},
+					["coord"] = { 54.5, 19.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127144,	-- Melissa Kenny
 				}),
 				
 				
@@ -979,6 +1101,14 @@ _.Zones =
 					["coord"] = { 82.7, 72.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 126511,	-- Skinner MacGuff
+				}),
+				
+				
+				q(48195, {	-- Troublesome Troglodytes
+					["sourceQuests"] = { 48670 },	-- Runaway Rider
+					["coord"] = { 54.4, 19.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127144,	-- Melissa Kenny
 				}),
 				
 				
@@ -1213,28 +1343,6 @@ _.Zones =
 						i(158238),	-- Sea Raider's Footguards
 						i(158228),	-- Gryphon Rider's Ring
 
-					}),
-					q(49302, {	-- The Deadliest Catch
-						i(155053),	-- Scaleterror Slicer
-						i(155079),	-- Thrashneck Gladius
-						i(155072),	-- Wavetamer Trident
-						i(155059),	-- Sea Priest's Spellblade
-						i(158298),	-- Fishmonger's Gutter
-						i(155057),	-- Anglepoint Repeater
-						i(158296),	-- Angler's Longstaff
-						i(158295),	-- Shark-Hunter Glaive
-						i(155064),	-- Wharf-Porter Cudgel
-					}),
-					q(48088, {	-- No Party Like a Trogg Party
-						i(155065),	-- Trogg Thumper
-						i(155068),	-- Grimestone Pounder
-						i(155075),	-- Lord Aldrus' Greatstaff
-						i(155054),	-- Reveler's Edge
-						i(155070),	-- Norwington's Poleaxe
-						i(155062),	-- Stoat-Trapper's Spikefist
-						i(155076),	-- Roughneck Rider Handaxe
-						i(158297),	-- Equestrian's Saddle Knife
-						i(158294),	-- Hollowbeak Hunting Rifle
 					}),
 				}),
 			}),

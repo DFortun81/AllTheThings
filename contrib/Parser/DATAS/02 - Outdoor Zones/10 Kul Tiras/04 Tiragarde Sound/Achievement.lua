@@ -28,7 +28,10 @@ _.Zones =
 							["sourceQuests"] = { 49302 },	-- The Deadliest Catch
 						}),
 						crit(6, {	-- The Norwington Estate
-							["sourceQuests"] = { 48089 },	-- Mountain Sounds
+							["sourceQuests"] = {
+								48089,	-- Mountain Sounds
+								48088,	-- No Party Like a Trogg Party
+							},
 						}),
 						crit(7, {	-- Castaways and Cutouts
 							["sourceQuests"] = { 	-- not sure if the commented-out ones are required, since i turned in 'blood in the tides' last.  'toxic community' and 'glimmering locket' definitely aren't.
