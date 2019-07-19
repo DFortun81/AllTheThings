@@ -46,7 +46,6 @@ _.NeverImplemented =
 		q(35566),	-- The Blood Furnace Reward Quest (Triggered by completing The Blood Furnace)
 		q(32747),	-- Tortos Dead (killed Tortos on heroic in ToT)
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
-		q(37316),	-- Trading Post (after choosing the Smuggling Run in Spires of Arak — Alliance-only?)
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
 		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
 		q(35307),	-- Wailing Caverns: bonus objective complete
@@ -70,7 +69,6 @@ _.NeverImplemented =
 		q(35253),	-- triggered during "Onslaught's End" when door to Teron'gor was opened
 		q(35297),	-- triggered during "Blazing of Glory" when you approach Khadgar around 67.6,60.5
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
-		q(36793),	-- Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
 		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking herbs
 		q(33964),	-- Arak Flowerpicker
 		q(36636),	-- Blueprint Read
@@ -113,9 +111,25 @@ _.NeverImplemented =
 		q(39376),	-- Short-Supply Reward
 		q(39377),	-- Short-Supply Reward
 		q(39378),	-- Short-Supply Reward
-		q(34857),	-- Tracking Flag: Orcs Kicked Out of Cave),	-- triggers when going to turn in "Old Friends, New Enemies"
+		q(39128),	-- Tanaan Vignette
 		
+		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
 
+		q(36249),	-- Gorgrond - Active Choice: Lumbermill - trigger if the lumbermill is currently active
+		q(36250),	-- Gorgrond - Active Choice: Lumbermill - see 36249
+		q(36251),	-- Gorgrond - Active Choice: Sparring Arena - triggers if the sparring arena is currently active
+		q(36252),	-- Gorgrond - Active Choice: Sparring Arena - see 36251
+		q(39309),	-- Gorgrond - Arcane Orb
+		q(39310),	-- Gorgrond - Artillery Strike
+		q(39308),	-- Gorgrond - Bodyguard
+		q(34992),	-- Gorgrond - Lumber Mill
+		q(35049),	-- Gorgrond - Lumber Mill
+		q(39307),	-- Gorgrond - Mechasuit
+		q(35946),	-- Gorgrond - Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the sparring arena active
+		q(35064),	-- Gorgrond - Sparring Arena
+		q(35149),	-- Gorgrond - Sparring Arena - triggers if you choose to build the sparring arena for the first time
+
+					
 		q(34679),	-- Nagrand - Alliance Stables Tracking Event
 		q(34680),	-- Nagrand - Alliance Workshop Tracking Event
 		q(37202),	-- Nagrand - Hemet Nesingwary Visitor Tracking Event
@@ -191,6 +205,7 @@ _.NeverImplemented =
 		q(33732),	-- Talador - Sabotage Siege Weapons
 		q(34969),	-- Talador - Serena Summoned. Triggers when approaching Gordal Fortress and Serena ports in
 		q(33931),	-- Talador - This Is Not a Quest,	-- triggers when you loot Deceptia's Smoldering Boots. Supposedly it shows the map indicator but is silently completed when the explosion happens?
+		q(34857),	-- Talador - Tracking Flag: Orcs Kicked Out of Cave),	-- triggers when going to turn in "Old Friends, New Enemies"
 		q(33645),	-- Talador - Tracking Quest,	-- Iskar's Hired Hand
 		q(34562),	-- Talador - Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
 		q(34574),	-- Talador - Unused. Triggered when choosing the Arcane Sanctum
