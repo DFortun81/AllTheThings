@@ -144,12 +144,6 @@ _.Zones =
 					["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 					["coord"] = { 68.0, 21.9, 1161 },
 				}),
-				q(55142, {	-- For the Alliance
-					["qg"] = 150941,	-- Katherine Proudmoore
-					["coord"] = { 67.8, 21.8, 1161 },
-					["races"] = { 32 },	-- Kul Tiran
-					["lvl"] = 20,
-				}),
 				q(53765, {	-- His Eye Upon You
 					["sourceQuest"] = 54126,	-- Twist the Knife [Alliance]
 					["description"]	= "You only get the toy if you choose to cleanse the gift.",
@@ -323,6 +317,13 @@ _.Zones =
 					["coord"] = { 68.3, 22.1, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 139522,	-- Scouting Map
+				}),
+				q(52800, {	-- Tol Dagor: The Ashvane Overseer
+					["sourceQuests"] = { 50972 },	-- Proudmoore's Parley
+					["coord"] = { 67.9, 22.0, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 115,	-- wowhead says 110.  it's wrong.  tol dagor doesn't unlock until 115, and that's the other requirement to make this quest available.
+					["qg"] = 122370,	-- Cyrus Crestfall
 				}),
 				q(49715, {	-- Trouble at Greystone Keep
 					["sourceQuests"] = { 50790 },	-- Hot Pursuit 

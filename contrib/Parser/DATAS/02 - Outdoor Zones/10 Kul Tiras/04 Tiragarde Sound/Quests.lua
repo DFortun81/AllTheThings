@@ -335,6 +335,14 @@ _.Zones =
 				}),
 				
 				
+				q(49066, {	-- Encase of Emergency
+					["sourceQuests"] = { 49039 },	-- The Start of a Monster Hunt
+					["coord"] = { 70.8, 61.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qgs"] = { 127481, 127709 },	-- Lord Kennings (2 versions)
+				}),
+				
+				
 				q(49299, {	-- Enemy Within
 					["coord"] = { 37.6, 29.5, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -651,6 +659,21 @@ _.Zones =
 					["coord"] = { 85.4, 80.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 128229,	-- Stabby Jane
+				}),
+				
+				
+				q(48909, {	-- Noble Responsibilities
+					["sourceQuests"] = { 49039 },	-- The Start of a Monster Hunt
+					["coord"] = { 70.8, 61.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qgs"] = { 127481, 127709 },	-- Lord Kennings (2 versions)
+					["g"] = {
+						i(155089),	-- Lord Kenning's Signet
+						i(158281),	-- Navigator's Cord
+						i(158283),	-- Freebooter Cinch
+						i(158282),	-- Outrigger Chain
+						i(158280),	-- Sea Raider's Belt
+					},
 				}),
 				
 				
@@ -1138,6 +1161,14 @@ _.Zones =
 				}),
 				
 				
+				q(49039, {	-- The Start of a Monster Hunt
+					["sourceQuests"] = { 49072 },	-- Westward Noble
+					["coord"] = { 70.8, 61.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127481,	-- Lord Kennings
+				}),
+				
+				
 				q(48077, {	-- The Stoat Hunt
 					["sourceQuests"] = { 48070 },	-- The Norwington Festival
 					["coord"] = { 55.4, 24.6, 895 },
@@ -1402,13 +1433,6 @@ _.Zones =
 						i(158290),	-- Outrigger Cincture
 						i(158288),	-- Sea Raider's Buckle
 						i(160082),	-- Griddon's Satin Towel
-					}),
-					q(48909, {	-- Noble Responsibilities
-						i(155089),	-- Lord Kenning's Signet
-						i(158281),	-- Navigator's Cord
-						i(158283),	-- Freebooter Cinch
-						i(158282),	-- Outrigger Chain
-						i(158280),	-- Sea Raider's Belt
 					}),
 					q(50005, {	-- Hold My Hand
 						i(158264),	-- Navigator's Handwraps
