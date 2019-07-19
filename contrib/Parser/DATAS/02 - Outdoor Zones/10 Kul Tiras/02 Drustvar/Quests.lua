@@ -92,9 +92,10 @@ _.Zones =
 				}),
 				qa(49807, {	-- A New Order
 					["g"] = {
-						i(160888),	-- Banisher Jerkin
 						i(155107),	-- Banisher Cowl
-						-- Assuming there are additional rewards, but wowhead only lists "Inquisitor's Regalia" and azerite.  Non-leather rewards need confirmation.
+						i(155104),	-- Waycrest Militia Helmet
+						i(160888),	-- Banisher Jerkin
+						i(160890),	-- Waycrest Militia Battleplate
 					},
 					["qg"] = 129642,	-- Lucille Waycrest
 					["coord"] = { 36.8, 50.1, 896 },
