@@ -84,6 +84,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51097, {	-- Bloated Krolusk
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51118, {	-- Bloodwing Bonepicker
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -370,6 +374,16 @@ _.Zones =
 					q(54786, {	-- Stop the Shipments (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52059, {	-- Thar She Sinks
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51997, {	-- Thar She Sinks
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(55303, {	-- The Cycle of Life

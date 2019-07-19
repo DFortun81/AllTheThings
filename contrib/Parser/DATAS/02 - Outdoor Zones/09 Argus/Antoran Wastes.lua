@@ -987,7 +987,6 @@ _.Zones =
 						q(48837),	-- All-Seer Xanarian
 						q(49055),	-- Earseeker
 						q(49057),	-- Minixis
-						q(48783),	-- Nobody Expects Them
 						q(49058),	-- One-of-Many
 						q(49056),	-- Pilfer
 						q(48870),	-- The Many-Faced Devourer
@@ -1063,6 +1062,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48875, {	-- Mix It Up
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48783, {	-- Nobody Expects Them
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

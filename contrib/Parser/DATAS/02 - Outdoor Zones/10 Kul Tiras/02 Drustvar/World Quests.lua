@@ -37,6 +37,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51541, {	-- Arclight
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51466, {	-- Arvon the Betrayed
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -502,6 +506,11 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51686, {	-- Where My Witches at?
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51694, {	-- Which Witch?
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,

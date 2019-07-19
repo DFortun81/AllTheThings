@@ -43,7 +43,6 @@ _.Zones =
 						q(41547),	-- Fjarnskaggl Cluster
 						q(41299),	-- Flourishing Fjarnskaggl
 						q(46014),	-- Gelthrog
-						q(42004),	-- Ghostship
 						q(41614),	-- Huge Stormrays
 						q(41275),	-- Huge Stormrays
 						q(41615),	-- Huge Stormrays
@@ -193,6 +192,10 @@ _.Zones =
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41427, {	-- Get Vrekt
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42004, {	-- Ghostship
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

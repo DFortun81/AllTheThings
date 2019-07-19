@@ -38,7 +38,6 @@ _.Zones =
 				q(41522),	-- Felwort
 				q(43930),	-- Fiends of Tel'anor
 				q(41304),	-- Flourishing Starlight Roses
-				q(43932),	-- Forces of Oppression
 				q(41448),	-- Heavy Felslate Deposits
 				q(41616),	-- Huge Runescale Koi
 				q(41280),	-- Huge Runescale Koi
@@ -186,6 +185,10 @@ _.Zones =
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(43932, {	-- Forces of Oppression
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(42209, {	-- Freeing the Taken
 					["lvl"] = 110,

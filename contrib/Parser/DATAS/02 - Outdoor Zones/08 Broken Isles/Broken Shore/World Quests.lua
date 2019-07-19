@@ -27,7 +27,7 @@ _.Zones =
 					q(45969),	-- Defense of the Ancient
 					q(46829),	-- Elemental Abuse
 					q(46288),	-- Everyone to the Front
-					q(46126),	-- Fel-Corrupted Feathers
+					
 					q(46077),	-- Felbound Spirits
 					q(46212),	-- Get Them Up
 					q(40390),	-- Hallowed Ground
@@ -42,14 +42,12 @@ _.Zones =
 					q(46046),	-- Life's a Lich
 					q(46754),	-- Magical Beasts
 					q(46948),	-- Malificus
-					
 					q(46755),	-- Mission: Felraging
 					q(46822),	-- Natural Selection
 					q(46833),	-- Nature Unshackled
 					q(45793),	-- Occultist Onslaught
 					q(46752),	-- On Borrowed Wings
 					q(45797),	-- Playing with Green Fire
-					q(46180),	-- Power of Our Enemy
 					q(45929),	-- Purging the Flames
 					q(46075),	-- Relic Hunting
 					q(46001),	-- Rules of the Hunt
@@ -119,6 +117,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46126, {	-- Fel-Corrupted Feathers
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46933, {	-- Felrglrglrglrgl
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -171,6 +173,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(45792, {	-- Occultist Onslaught
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46180, {	-- Power of Our Enemy
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

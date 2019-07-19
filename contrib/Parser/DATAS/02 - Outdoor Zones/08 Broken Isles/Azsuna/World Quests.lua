@@ -21,7 +21,7 @@ _.Zones =
 				q(41482),	-- Brimstone Destroyer
 				q(41529),	-- Bushy Aethril
 				q(41438),	-- Charged Leystone Deposits
-				q(46168),	-- Commander Vorlax
+				
 				q(43091),	-- DANGER: Arcanor Prime
 				q(44189),	-- DANGER: Bestrix
 				q(43121),	-- DANGER: Chief Treasurer Jabrill
@@ -86,8 +86,8 @@ _.Zones =
 				q(41435),	-- Smooth Leystone Deposits
 				q(41582),	-- Smooth Sunrunner Hide
 				q(46162),	-- Subjugator Val'rek
-				q(46163),	-- Thaz'gul
-				q(46146),	-- The Burning Shores
+				
+				
 				q(44050),	-- The Felsworn Must Fall
 				q(45134),	-- The Soul Harvesters
 				q(42112),	-- The Withered Return
@@ -146,6 +146,10 @@ _.Zones =
 				}),
 				q(44894, {	-- Bloodgazer Swarm!
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46168, {	-- Commander Vorlax (Invasion WQ)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(43175, {	-- DANGER: Deepclaw
@@ -290,8 +294,16 @@ _.Zones =
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
+				q(46163, {	-- Thaz'gul (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(42022, {	-- The Broken Academy
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46146, {	-- The Burning Shores (Invasion WQ)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(42711, {	-- The Eternal Mages

@@ -185,6 +185,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51662, {	-- Foxhollow Skyterror
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(53188, {	-- Frozen Freestyle
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

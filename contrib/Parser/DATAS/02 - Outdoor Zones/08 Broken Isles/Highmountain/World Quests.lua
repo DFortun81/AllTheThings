@@ -66,7 +66,6 @@ _.Zones =
 				q(41090),	-- Lords of the Hills
 				q(41089),	-- Lords of the Hills
 				q(41433),	-- Massive Leystone Deposits
-				q(41253),	-- Migrating Highmountain Salmon
 				q(41122),	-- Mists Take You
 				q(41057),	-- Primal Payback
 				q(41055),	-- Primal Payback
@@ -80,7 +79,6 @@ _.Zones =
 				q(41549),	-- Slab of Bacon
 				q(41550),	-- Slab of Bacon
 				q(40920),	-- Stonebinder Bounty
-				q(41224),	-- Supplies Needed: Foxflower
 				q(41207),	-- Supplies Needed: Leystone
 				q(41237),	-- Supplies Needed: Stonehide Leather
 				q(43448),	-- The Frozen King
@@ -91,7 +89,6 @@ _.Zones =
 				q(41428),	-- Unstable Portal
 				q(41836),	-- WANTED: Bodash the Hoarder
 				q(43616),	-- WANTED: Bodash the Hoarder
-				q(41828),	-- WANTED: Bristlemaul
 				q(44290),	-- WANTED: Bristlemaul
 				q(41826),	-- WANTED: Crawshuk the Hungry
 				q(44291),	-- WANTED: Crawshuk the Hungry
@@ -201,6 +198,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41253, {	-- Migrating Highmountain Salmon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
 				q(41077, {	-- Munitions Testing
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -285,6 +287,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41224, {	-- Supplies Needed: Foxflower
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46195, {	-- Swarming Skies (Invasion WQ)
 					["lvl"] = 98,
 					["collectible"] = false,
@@ -326,6 +332,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41824, {	-- WANTED: Arru
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41828, {	-- WANTED: Bristlemaul
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

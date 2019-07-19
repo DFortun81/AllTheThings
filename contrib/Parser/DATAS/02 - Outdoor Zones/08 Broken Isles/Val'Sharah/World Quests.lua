@@ -65,6 +65,11 @@ _.Zones =
 						}),
 					},
 				}),
+				q(41546, {	-- Dreamleaf Cluster
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(43756, {	-- Enigmatic
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -205,6 +210,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44304, {	-- WANTED: Darkshade
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44298, {	-- WANTED: Dreadbog
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
