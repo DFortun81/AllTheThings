@@ -383,6 +383,7 @@ _.Zones =
 					["coord"] = { 55.0, 48.8, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9151 },	-- The Sanctum of the Sun
+					["isBreadcrumb"] = true,
 				}),
 				q(9327, {	-- The Forsaken
 					["qg"] = 16197,	-- Arcanist Vandril
