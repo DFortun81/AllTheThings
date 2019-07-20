@@ -23,6 +23,9 @@ _.Zones =
 									["achievementID"] = 13479,	-- Junkyard Architect
 								}),
 							}),
+							i(168935),	-- Existence Vibrancy Display
+							i(168569),	-- Null Force Visualizer
+							i(168861),	-- Ultimate Purification Protocols
 						}),
 					},
 				}),
