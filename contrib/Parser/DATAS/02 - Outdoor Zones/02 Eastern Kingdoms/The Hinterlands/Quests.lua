@@ -497,6 +497,7 @@ _.Zones =
 					["qg"] = 42613,	-- Elder Torntusk
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26267, 26268 },	-- Skulk Rock Clean-Up & Skulk Rock Supplies
+					["isBreadcrumb"] = true,
 				}),
 				q(26529, {	-- The Fang of Shadra (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
