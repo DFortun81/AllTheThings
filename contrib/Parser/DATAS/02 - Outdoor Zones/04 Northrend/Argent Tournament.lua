@@ -2152,6 +2152,10 @@ _.Zones =
 					}),
 					n(35578, {	-- Valiant Bressia <Triumphant Armor Vendor>
 						["coord"] = { 75.4, 22.0, 118 },
+						["maps"] = {
+							172,
+							173,
+						},
 						["races"] = HORDE_ONLY,
 						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
 							i(47242, {	-- Trophy of the Crusade
@@ -2286,6 +2290,10 @@ _.Zones =
 					n(35577, {	-- Valiant Laradia <Triumphant Armor Vendor>
 						["coord"] = { 75.4, 21.6, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["maps"] = {
+							172,
+							173,
+						},
 						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
 							i(47242, {	-- Trophy of the Crusade
 								-- Priest
