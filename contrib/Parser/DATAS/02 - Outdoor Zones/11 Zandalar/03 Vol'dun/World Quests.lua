@@ -536,9 +536,6 @@ _.Zones =
 				i(158128, {	-- Whisperfen Polearm
 					["races"] = HORDE_ONLY,
 				}),
-				i(158131, {	-- Whisperfen Staff
-					["races"] = HORDE_ONLY,
-				}),
 				i(158112),	-- Zandalari Greatbow
 				i(158133),	-- Zandalari Machete
 				i(158129),	-- Zandalari Warstaff

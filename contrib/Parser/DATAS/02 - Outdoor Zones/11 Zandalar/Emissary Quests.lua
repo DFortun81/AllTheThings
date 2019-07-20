@@ -11,9 +11,6 @@ _.Zones =
 				["repeatable"] = true,
 				["g"] = {
 					i(158131),	-- Whisperfen Staff
-					i(158108),	-- Whisperfen Chopper
-					i(158111),	-- Whisperfen Hewer
-					i(158128),	-- Whisperfen Polearm
 				},
 			}),
 		}),
