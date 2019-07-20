@@ -2250,14 +2250,14 @@ _.PVP =
 					i(169707),	-- Notorious Gladiator's Warglaive (H)
 				}),
 				n(-322, {	-- Back
-					i(167382),	-- Notorious Gladiator's Cloak (A)
 					i(167373),	-- Notorious Gladiator's Cape (A)
 					i(167372),	-- Notorious Gladiator's Drape (A)
 					i(167370),	-- Notorious Gladiator's Shawl (A)
-					i(167381),	-- Notorious Gladiator's Cloak (H)
+					i(167371),	-- Notorious Gladiator's Greatcloak (A)
 					i(167369),	-- Notorious Gladiator's Cape (H)
 					i(167368),	-- Notorious Gladiator's Drape (H)
 					i(167366),	-- Notorious Gladiator's Shawl (H)
+					i(167367),	-- Notorious Gladiator's Greatcloak (H)
 				}),
 				n(-43, {	-- Cloth
 					i(167352),	-- Notorious Gladiator's Silk Amice (A)
@@ -2486,6 +2486,11 @@ _.PVP =
 			i(171097),	-- Warlord's Trophy Notorious Rival
 			i(171098),	-- Warlord's Trophy Notorious Duelist
 			i(171099),	-- Warlord's Trophy Notorious Elite
+			i(168316),	-- Battleborn Sigil Notorious Combatant
+			i(171090),	-- Battleborn Sigil Notorious Challenger
+			i(171091),	-- Battleborn Sigil Notorious Rival
+			i(171092),	-- Battleborn Sigil Notorious Duelist
+			i(171093),	-- Battleborn Sigil Notorious Elite
 			{	-- Mounts
 				["filter"] = 100,	-- Mounts
 				["g"] = {

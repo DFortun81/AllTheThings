@@ -1699,6 +1699,7 @@ _.NeverImplemented =
 			},
 			["u"] = 1,
 		}))),
+		un(1, i(168673)),	-- keys to the silver mono-wheel (no mount in yet)
 		un(1, spell(215545)),	-- Fel Bat (Test) (Actual name of the Item)
 		un(1, model(17890, i(25596))), 	-- Peep's Whistle	 					(Never added in Game)
 		un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)

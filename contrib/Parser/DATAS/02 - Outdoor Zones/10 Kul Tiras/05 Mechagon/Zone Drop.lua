@@ -37,6 +37,9 @@ _.Zones =
 						i(169879),	-- Melted Irradiated Undercoat
 					},
 				}),
+				i(169593),	-- Large Storage Fragment
+				i(169594),	-- Rust Covered Disc
+				i(169595),	-- Scorched Data Disc
 				i(159475),	-- Shipwrecker Axe
 				i(159590),	-- Shipwrecker Blade
 				i(159504),	-- Shipwrecker Crescents
