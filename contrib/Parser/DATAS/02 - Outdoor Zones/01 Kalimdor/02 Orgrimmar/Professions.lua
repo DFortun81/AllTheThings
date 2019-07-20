@@ -420,9 +420,10 @@ _.Zones =
 						q(7493, {	-- The Journey Has Just Begun
 							["qg"] = 14392,	-- Overlord Natoj
 							["coord"] = { 51.3, 83.2, 85 },
-							["sourceQuest"] = 24429, --A Most Puzzling Circumstance
+							["sourceQuest"] = 24429, -- A Most Puzzling Circumstance (H)
 							["requireSkill"] = 165,	-- Leatherworking
 							["races"] = HORDE_ONLY,
+							["lvl"] = 60,
 							["g"] = {
 								recipe(19093),		-- Onyxia Scale Cloak
 								un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak

@@ -56,21 +56,27 @@ _.Zones =
 					n(-17, {	-- Quests
 						q(2759, {	-- In Search of Galvan
 							["qg"] = 7798,	-- Hank the Hammer
-							["coord"] = { 63.0, 36.8, 84 },
+							["coord"] = { 56.0, 16.0, 84 },
 							["sourceQuest"] = 2758,	-- The Origins of Smithing
 							["requireSkill"] = 164,	-- Blacksmithing
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["u"] = 40,
+							["g"] = {
+								un(2, i(8663)),	-- Mithril Insignia
+							},
 						}),
 						q(2758, {	-- The Origins of Smithing
 							["qg"] = 7798,	-- Hank the Hammer
-							["coord"] = { 63.0, 36.8, 84 },
+							["coord"] = { 56.0, 16.0, 84 },
 							["requireSkill"] = 164,	-- Blacksmithing
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["u"] = 40,
-						}),
+							["g"] = {
+								un(2, i(9367)),	-- Plans: Golden Scale Gauntlets
+							},
+						}),	
 					}),
 				}),
 				prof(185, {	-- Cooking
@@ -303,7 +309,7 @@ _.Zones =
 						q(7497, {	-- The Journey Has Just Begun
 							["qg"] = 14394,	-- Major Mattingly
 							["coord"] = { 67.2, 85.1, 84 },
-							["sourceQuest"] = 24428, -- A Most Puzzling Circumstance
+							["sourceQuest"] = 24428, -- A Most Puzzling Circumstance (A)
 							["requireSkill"] = 165,	-- Leatherworking
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 60,

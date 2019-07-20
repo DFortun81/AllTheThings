@@ -9,87 +9,98 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 60,
 		["mapID"] = 248,
 		["coord"] = { 52.15, 75.77, 70 },	-- Onyxia's Lair, Kalimdor [Dustwallow Marsh]
-		["groups"] = {
+		["g"] = {
 			d(9, {	-- 40 Player (Legacy)
 				["ignoreBonus"] = true,
 				["u"] = 12,
-				["groups"] = {
+				["g"] = {
 					e(1651, {	-- Onyxia (Legacy)
+						["crs"] = { 10184 },	-- Onyxia
 						["u"] = 43,
-						["creatureID"] = 10184,
-						["groups"] = {
+						["g"] = {
 							un(2, ach(684)),	-- Onyxia's Lair (Level 60)
-							a({
-								["itemID"] = 18423,		-- Head of Onyxia [Alliance]
-								["questID"] = 7495,		-- Victory for the Alliance
-								["u"] = 2,				-- Unobtainable
-								["groups"] = {
-									{
-										["questID"] = 7496,	-- Celebrating Good Times [Alliance]
-										["qg"] = 14394,		-- Quest Giver: Major Mattingly
-										["sourceQuest"] = 7495,	-- Source Quest: Victory for the Alliance
-										["u"] = 2,				-- Unobtainable
-										["groups"] = {
-											un(2, i(18403)),		-- Dragonslayer's Signet
-											un(2, i(18404)),		-- Onyxia Tooth Pendant
-											un(2, i(18406)),		-- Onyxia Blood Talisman
-											un(2, i(49313)),		-- Polished Dragonslayer's Signet
+							i(18423, {	-- Head of Onyxia (A)
+								["questID"] = 7495,	-- Victory for the Alliance
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 60,
+								["u"] = 40,
+								["g"] = {
+									q(7496, {	-- Celebrating Good Times
+										["qgs"] = {
+											1748,	-- Highlord Bolvar Fordragon
+											29611,	-- King Varian Wrynn
 										},
-									},
-									{
-										["questID"] = 7497,	-- The Journey Has Just Begun [Alliance]
-										["qg"] = 14394,		-- Quest Giver: Major Mattingly
-										["sourceQuest"] = 7496,	-- Source Quest: Celebrating Good Times
+										["coord"] = { 85.6, 31.8, 84 },
+										["sourceQuest"] = 7495,	-- Victory for the Alliance
+										["races"] = ALLIANCE_ONLY,
+										["lvl"] = 60,
+										["u"] = 40,
+										["g"] = {
+											un(2, i(18403)),	-- Dragonslayer's Signet
+											un(2, i(18406)),	-- Onyxia Blood Talisman
+											un(2, i(18404)),	-- Onyxia Tooth Pendant
+										},
+									}),
+									q(7497, {	-- The Journey Has Just Begun
+										["qg"] = 14394,	-- Major Mattingly
+										["coord"] = { 67.2, 85.1, 84 },
+									--	["sourceQuest"] = 7496,	-- Celebrating Good Times	-- Legacy sourceQuest
 										["requireSkill"] = 165,	-- Leatherworking
-										["groups"] = {
-											{
-												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-											},
+										["races"] = ALLIANCE_ONLY,
+										["lvl"] = 60,
+										["g"] = {
+											recipe(19093),		-- Onyxia Scale Cloak
+											un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
 										},
-									},
+									}),
 								},
 							}),
-							h({
-								["itemID"] = 18422,		-- Head of Onyxia [Horde]
+							i(18422, {	-- Head of Onyxia (H)
 								["questID"] = 7490,		-- Victory for the Horde
-								["u"] = 2,				-- Unobtainable
-								["groups"] = {
-									{
-										["questID"] = 7784,	-- The Lord of Blackrock [Horde]
-										["qg"] = 14392,		-- Quest Giver: Overlord Natoj
-										["sourceQuest"] = 7490,	-- Source Quest: Victory for the Horde
-										["u"] = 2,				-- Unobtainable
-										["groups"] = {
-											un(2, i(18403)),		-- Dragonslayer's Signet
-											un(2, i(18404)),		-- Onyxia Tooth Pendant
-											un(2, i(18406)),		-- Onyxia Blood Talisman
-											un(2, i(49313)),		-- Polished Dragonslayer's Signet
+								["races"] = HORDE_ONLY,
+								["lvl"] = 60,
+								["u"] = 40,
+								["g"] = {
+									q(7491, {	-- For All To See
+										["qg"] = 4949,	-- Thrall
+										["coord"] = { 32.0, 37.8, 84 },
+										["sourceQuest"] = 7490,	-- Victory for the Horde
+										["races"] = HORDE_ONLY,
+										["lvl"] = 60,
+										["u"] = 40,
+										["g"] = {
+											un(2, i(18403)),	-- Dragonslayer's Signet
+											un(2, i(18404)),	-- Onyxia Tooth Pendant
+											un(2, i(18406)),	-- Onyxia Blood Talisman
+											un(2, i(49313)),	-- Polished Dragonslayer's Signet
 										},
-									},
-									{
-										["questID"] = 7493,	-- The Journey Has Just Begun [Horde]
-										["qg"] = 14392,		-- Quest Giver: Overlord Natoj
-										["sourceQuest"] = 7784,	-- Source Quest: The Lord of Blackrock
+									}),
+									q(7493, {	-- The Journey Has Just Begun (H)
+										["qg"] = 14392,		-- Overlord Runthak
+										["coord"] = { 52.2, 75.8, 84 },
+									--	["sourceQuest"] = 7491,	-- For All To See	-- Legacy sourceQuest
 										["requireSkill"] = 165,	-- Leatherworking
-										["groups"] = {
-											{
-												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-											},
+										["races"] = HORDE_ONLY,
+										["lvl"] = 60,
+										["g"] = {
+											recipe(19093),	-- Onyxia Scale Cloak
+											un(1, i(15769)),	-- Pattern: Onyxia Scale Cloak
 										},
-									},
+									}),
 								},
 							}),
-							{
-								["itemID"] = 18705,		-- Mature Black Dragon Sinew
-								["questID"] = 7635,		-- A Proper String
-								["u"] = 2,				-- Unobtainable
-								["groups"] = {
+							i(18705, {	-- Mature Black Dragon Sinew
+								["questID"] = 7635,	-- A Proper String
+								["classes"] = { 3 },	-- Hunter
+								["lvl"] = 60,
+								["u"] = 40,
+								["g"] = {
 									un(2, i(18715)),	-- Lok'delar, Stave of the Ancient Keepers
 									un(2, i(18707, {	-- Ancient Rune Etched Stave
 										un(2, i(18713)),	-- Rhok'delar, Longbow of the Ancient Keepers
 									})),
 								},
-							},
+							}),
 							un(2, i(17966)),	-- Onyxia Hide Backpack (Bag)
 							un(2, i(17068)),	-- Deathbringer
 							un(2, i(17075)),	-- Vis'kag the Bloodletter
@@ -113,53 +124,56 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			d(3, {	-- 10 Player
 				["lvl"] = 80,
-				["groups"] = {
+				["g"] = {
 					e(1651, {	-- Onyxia
-						["creatureID"] = 10184,
-						["groups"] = {
+						["crs"] = { 10184 },	-- Onyxia
+						["g"] = {
 							ach(4403),	-- Many Whelps! Handle It! (10 player)
 							ach(4402),	-- More Dots! (10 player)
 							ach(4396),	-- Onyxia's Lair (10 player)
 							ach(4404),	-- She Deep Breaths More (10 player)
-							a({
-								["itemID"] = 49644,		-- Head of Onyxia [Alliance]
-								["questID"] = 24428,	-- A Most Puzzling Circumstance
-								["groups"] = {
-									i(49486),		-- Polished Dragonslayer's Signet
-									i(49485),		-- Sparkling Onyxia Tooth Pendant
-									i(49487),		-- Purified Onyxia Blood Talisman
-									{
-										["questID"] = 7497,	-- The Journey Has Just Begun [Alliance]
-										["qg"] = 14394,		-- Quest Giver: Major Mattingly
-										["sourceQuest"] = 7496,	-- Source Quest: Celebrating Good Times
+							i(49644, {		-- Head of Onyxia (A)
+								["questID"] = 24428,	-- A Most Puzzling Circumstance (A)
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 80,
+								["g"] = {
+									i(49486),	-- Polished Dragonslayer's Signet
+									i(49485),	-- Sparkling Onyxia Tooth Pendant
+									i(49487),	-- Purified Onyxia Blood Talisman
+									q(7497, {	-- The Journey Has Just Begun
+										["qg"] = 14394,	-- Major Mattingly
+										["coord"] = { 67.2, 85.1, 84 },
+										["sourceQuest"] = 24428,	-- A Most Puzzling Circumstance (A)
 										["requireSkill"] = 165,	-- Leatherworking
-										["u"] = 2,				-- Unobtainable
-										["groups"] = {
-											{	-- Onyxia Scale Cloak (Recipe)
-												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-											},
+										["races"] = ALLIANCE_ONLY,
+										["lvl"] = 60,
+										["g"] = {
+											recipe(19093),		-- Onyxia Scale Cloak
+											un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
 										},
-									},
+									}),
 								},
 							}),
-							h({
-								["itemID"] = 49643,		-- Head of Onyxia [Horde]
-								["questID"] = 24429,	-- A Most Puzzling Circumstance
-								["groups"] = {
+							i(49643, {	-- Head of Onyxia (H)
+								["questID"] = 24429,	-- A Most Puzzling Circumstance (H)
+								["races"] = HORDE_ONLY,
+								["lvl"] = 80,
+								["g"] = {
 									i(49486),		-- Polished Dragonslayer's Signet
 									i(49485),		-- Sparkling Onyxia Tooth Pendant
 									i(49487),		-- Purified Onyxia Blood Talisman
-									{
-										["questID"] = 7493,	-- The Journey Has Just Begun [Horde]
-										["qg"] = 14392,		-- Quest Giver: Overlord Natoj
-										["sourceQuest"] = 7784,	-- Source Quest: The Lord of Blackrock
+									q(7493, {	-- The Journey Has Just Begun (H)
+										["qg"] = 14392,	-- Overlord Natoj
+										["coord"] = { 52.2, 75.8, 84 },
+										["sourceQuest"] = 24429,	-- A Most Puzzling Circumstance (H)
 										["requireSkill"] = 165,	-- Leatherworking
-										["groups"] = {
-											{
-												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-											},
+										["races"] = HORDE_ONLY,
+										["lvl"] = 60,
+										["g"] = {
+											recipe(19093),	-- Onyxia Scale Cloak
+											un(1, i(15769)),	-- Pattern: Onyxia Scale Cloak
 										},
-									},
+									}),
 								},
 							}),
 							i(49636),	-- Reins of the Onyxian Drake (Mount)
@@ -206,53 +220,56 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			d(4, {	-- 25 Player
 				["lvl"] = 80,
-				["groups"] = {
+				["g"] = {
 					e(1651, {	-- Onyxia
-						["creatureID"] = 10184,
-						["groups"] = {
+						["crs"] = { 10184 },	-- Onyxia
+						["g"] = {
 							ach(4406),	-- Many Whelps! Handle It! (25 player)
 							ach(4405),	-- More Dots! (25 player)
 							ach(4397),	-- Onyxia's Lair (25 player)
 							ach(4407),	-- She Deep Breaths More (25 player)
-							a({
-								["itemID"] = 49644,		-- Head of Onyxia [Alliance]
-								["questID"] = 24428,	-- A Most Puzzling Circumstance
-								["groups"] = {
-									i(49486),		-- Polished Dragonslayer's Signet
-									i(49485),		-- Sparkling Onyxia Tooth Pendant
-									i(49487),		-- Purified Onyxia Blood Talisman
-									{
-										["questID"] = 7497,	-- The Journey Has Just Begun [Alliance]
-										["qg"] = 14394,		-- Quest Giver: Major Mattingly
-										["sourceQuest"] = 7496,	-- Source Quest: Celebrating Good Times
+							i(49644, {		-- Head of Onyxia (A)
+								["questID"] = 24428,	-- A Most Puzzling Circumstance (A)
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 80,
+								["g"] = {
+									i(49486),	-- Polished Dragonslayer's Signet
+									i(49485),	-- Sparkling Onyxia Tooth Pendant
+									i(49487),	-- Purified Onyxia Blood Talisman
+									q(7497, {	-- The Journey Has Just Begun
+										["qg"] = 14394,	-- Major Mattingly
+										["coord"] = { 67.2, 85.1, 84 },
+										["sourceQuest"] = 24428,	-- A Most Puzzling Circumstance (A)
 										["requireSkill"] = 165,	-- Leatherworking
-										["u"] = 2,				-- Unobtainable
-										["groups"] = {
-											{	-- Onyxia Scale Cloak (Recipe
-												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-											},
+										["races"] = ALLIANCE_ONLY,
+										["lvl"] = 60,
+										["g"] = {
+											recipe(19093),		-- Onyxia Scale Cloak
+											un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
 										},
-									},
+									}),
 								},
 							}),
-							h({
-								["itemID"] = 49643,		-- Head of Onyxia [Horde]
-								["questID"] = 24429,	-- A Most Puzzling Circumstance
-								["groups"] = {
+							i(49643, {	-- Head of Onyxia (H)
+								["questID"] = 24429,	-- A Most Puzzling Circumstance (H)
+								["races"] = HORDE_ONLY,
+								["lvl"] = 80,
+								["g"] = {
 									i(49486),		-- Polished Dragonslayer's Signet
 									i(49485),		-- Sparkling Onyxia Tooth Pendant
 									i(49487),		-- Purified Onyxia Blood Talisman
-									{
-										["questID"] = 7493,	-- The Journey Has Just Begun [Horde]
-										["qg"] = 14392,		-- Quest Giver: Overlord Natoj
-										["sourceQuest"] = 7784,	-- Source Quest: The Lord of Blackrock
+									q(7493, {	-- The Journey Has Just Begun (H)
+										["qg"] = 14392,	-- Overlord Natoj
+										["coord"] = { 52.2, 75.8, 84 },
+										["sourceQuest"] = 24429,	-- A Most Puzzling Circumstance (H)
 										["requireSkill"] = 165,	-- Leatherworking
-										["groups"] = {
-											{
-												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-											},
+										["races"] = HORDE_ONLY,
+										["lvl"] = 60,
+										["g"] = {
+											recipe(19093),	-- Onyxia Scale Cloak
+											un(1, i(15769)),	-- Pattern: Onyxia Scale Cloak
 										},
-									},
+									}),
 								},
 							}),
 							i(49636),	-- Reins of the Onyxian Drake (Mount)

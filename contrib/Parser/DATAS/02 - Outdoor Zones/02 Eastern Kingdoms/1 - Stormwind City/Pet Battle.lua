@@ -6,34 +6,14 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
 			filter(101, {	-- Pet Battle
-				p(378),	-- Rabbit
-				p(379),	-- Squirrel
-				p(675),	-- Stormwind Rat
-				n(63596, {  -- Audrey Burnhep
-					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
-					["g"] = {
-						p(138, {	-- Blue Moth
-							["races"] = { 11 },	-- Draenei
-						}),
-						p(630, {	-- Gilnean Raven
-							["races"] = { 22 },	-- Worgan
-						}),
-						p(68, {		-- Great Horned Owl
-							["races"] = { 4 },	-- Night Elf
-						}),
-						i(88148, {	-- Jade Crane Chick
-							["races"] = { 26 },	-- Pandaren
-							["g"] = {
-								p(792),	-- Jade Crane Chick
-							},
-						}),
-						p(43, {		-- Orange Tabby Cat
-							["races"] = { 1 },	-- Human
-						}),
-						p(72, {      -- Snowshoe Rabbit
-							["races"] = { 3, 7 },	-- Gnome, Dwarf
-						}),
-					},
+				p(378, {	-- Rabbit
+					["crs"] = { 61080 },	-- Rabbit
+				}),
+				p(379, {	-- Squirrel
+					["crs"] = { 61081 },	-- Squirrel
+				}),
+				p(675, {	-- Stormwind Rat
+					["crs"] = { 62954 },	-- Stormwind Rat
 				}),
 				n(-17, { -- Quests
 					q(31591, {	-- Learning the Ropes
@@ -62,6 +42,35 @@ _.Zones =
 						["sourceQuest"] = 31821,	-- Level Up!
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 1,
+					}),
+				}),
+				n(-2, {	-- Vendors
+					n(63596, {  -- Audrey Burnhep
+						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							p(138, {	-- Blue Moth
+								["races"] = { 11 },	-- Draenei
+							}),
+							p(630, {	-- Gilnean Raven
+								["races"] = { 22 },	-- Worgan
+							}),
+							p(68, {	-- Great Horned Owl
+								["races"] = { 4 },	-- Night Elf
+							}),
+							i(88148, {	-- Jade Crane Chick
+								["races"] = { 26 },	-- Pandaren
+								["g"] = {
+									p(792),	-- Jade Crane Chick
+								},
+							}),
+							p(43, {	-- Orange Tabby Cat
+								["races"] = { 1 },	-- Human
+							}),
+							p(72, {	-- Snowshoe Rabbit
+								["races"] = { 3, 7 },	-- Gnome, Dwarf
+							}),
+						},
 					}),
 				}),
 				--[[

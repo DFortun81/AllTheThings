@@ -423,6 +423,20 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 90,
 				}),
+				q(27106, {	-- A Villain Unmasked
+					["objectID"] = 205198,	-- Pile of Explosives
+					["coord"] = { 50.4, 42.4, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 84,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(63919)),	-- Corruption-Seeking Chestguard
+						un(2, i(63918)),	-- Detective's Shoulderplates
+						un(2, i(63920)),	-- Treads of Revelation
+						un(2, i(63921)),	-- Truth-Seeker Belt
+						un(2, i(63917)),	-- Truthbreaker Shield
+					},
+				}),
 				q(44473, {	-- A Weapon of the Alliance
 					["qg"] = 100973,	-- Anduin Wrynn
 					["coord"] = { 85.6, 31.8, 84 },
@@ -448,6 +462,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 62,
 				}),
+				q(396, {	-- An Audience with the King
+					["qg"] = 1646,	-- Baros Alexston
+					["coord"] = { 57.6, 47.8, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(2933)),	-- Seal of Wrynn
+					},
+				}),
 				q(27273, {	-- An Invitation from Moonglade
 					["qgs"] = {
 						5504,	-- Sheldras Moontree (Stormwind)
@@ -468,6 +492,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["u"] = 40,
+				}),
+				q(1942, {	-- Astral Knot Garment
+					["qg"] = 1309,	-- Wynne Larson
+					["coord"] = { 41.6, 76.6, 84 },
+					["sourceQuest"] = 1940,	-- Pristine Spider Silk
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 26,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(9516)),	-- Astral Knot Blouse
+						un(2, i(7511)),	-- Astral Knot Robe
+					},
 				}),
 				q(27353, {	-- Blessings of the Elements
 					["qg"] = 20407,	-- Farseer Umbrua
@@ -521,6 +558,17 @@ _.Zones =
 					["coord"] = { 41.4, 47.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
+				}),
+				q(168, {	-- Collecting Memories
+					["qg"] = 656,	-- Wilder Thistlenettle
+					["coord"] = { 65.2, 21.2, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 14,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(2036)),	-- Dusty Mining Gloves
+						un(2, i(2037)),	-- Tunneler's Boots
+					},
 				}),
 				q(46274, {	-- Consoling the King
 					["qg"] = 119338,	-- Genn Greymane
@@ -662,7 +710,15 @@ _.Zones =
 					["coord"] = { 62.2, 67.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
-				}),						
+				}),
+				q(1939, {	-- High Sorcerer Andromath
+					["qg"] = 5497,	-- Jennea Cannon
+					["coord"] = { 38.6, 79.6, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 26,
+					["u"] = 40,
+				}),
 				q(53370, {	-- Hour of Reckoning
 					["qg"] = 144095,	-- Master Mathias Shaw
 					["description"] = "This quest is automatically offered when you reach level 110.",
@@ -749,6 +805,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 98,
 				}),
+				q(1941, {	-- Manaweave Robe
+					["qg"] = 1309,	-- Wynne Larson
+					["coord"] = { 41.8, 76.4, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 15,
+					["u"] = 40,
+					["g"] = {
+						i(7509),	-- Manaweave Robe	-- NOTE: Item still available
+					},
+				}),
 				q(27354, {	-- Mastering the Arcane
 					["qg"] = 331,	-- Maginor Dumas
 					["coord"] = { 49.2, 87.6, 84 },
@@ -769,6 +836,17 @@ _.Zones =
 					["lvl"] = 22,
 					["u"] = 40,
 				}),
+				q(1364, {	-- Mazen's Behest
+					["qg"] = 5386,	-- Acolyte Dellis
+					["coord"] = { 51.6, 73.8, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(10747)),	-- Teacher's Sash
+						un(2, i(10748)),	-- Wanderlust Boots
+					},
+				}),
 				q(28295, {	-- Meetup with the Caravan
 					["qg"] = 44238,	-- Harrison Jones
 					["coord"] = { 85.6, 25.8, 84 },
@@ -777,6 +855,30 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 83,
 				}),
+				q(1861, {	-- Mirror Lake
+					["qg"] = 5497,	-- Jennea Cannon
+					["coord"] = { 49.6, 86.6, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 10,
+					["u"] = 40,
+					["g"] = {
+						i(7508),	-- Ley Orb		-- NOTE: Item still available
+						i(9513),	-- Ley Staff	-- NOTE: Item still available
+					},
+				}),
+				q(27038, {	-- Missing Parts
+					["qg"] = 44749,	-- Supply Sergeant Graves
+					["coord"] = { 33.2, 39.4, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 84,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(63927)),	-- Machine-Linker Girdle
+						un(2, i(63926)),	-- Reconstructing Hauberk
+						un(2, i(63925)),	-- Scavenger Bracers
+					},
+				}),
 				q(28289, {	-- Moonglade Calls
 					["qg"] = 44395,	-- Celestine of the Harvest
 					["coords"] = { 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind City)
@@ -784,12 +886,46 @@ _.Zones =
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 50,
 				}),
+				q(167, {	-- Oh Brother...
+					["qg"] = 656,	-- Wilder Thistlenettle
+					["coord"] = { 66.8, 43.8, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(1893)),	-- Miner's Revenge
+					},
+				}),
+				q(6187, {	-- Order Must Be Restored
+					["qgs"] = {
+						1748,	-- Highlord Bolvar Fordragon
+						29611,	-- King Varian Wrynn
+					},
+					["coord"] = { 85.6, 31.8, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 56,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(16996)),	-- Gorewood Bow
+						un(2, i(16998)),	-- Sacred Protector
+						un(2, i(16997)),	-- Stormrager
+					},
+				}),
 				q(334, {	-- Package for Thurman
 					["qg"] = 1428,	-- Rema Schneider
 					["coord"] = { 58.0, 67.2, 84 },
 					["sourceQuest"] = 333,	-- Harlan Needs a Resupply
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
+				}),
+				q(1940, {	-- Pristine Spider Silk
+					["qg"] = 5694,	-- High Sorcerer Andromath
+					["coord"] = { 37.6, 81.6, 84 },
+					["sourceQuest"] = 1938,	-- Ur's Treatise on Shadow Magic
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 26,
+					["u"] = 40,
 				}),
 				q(40661, {	-- Protect the Home Front
 					["qg"] = 101004,	-- Elerion Bladedancer
@@ -804,6 +940,16 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 90,
+				}),
+				q(1078, {	-- Retrieval for Mauren
+					["qg"] = 4078,	-- Collin Mauren
+					["coord"] = { 52.8, 86.6, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(6677)),	-- Spellcrafter Wand
+					},
 				}),
 				q(26396, {	-- Return to Argus
 					["qg"] = 352,	-- Dungar Longdrink
@@ -841,6 +987,15 @@ _.Zones =
 					["classes"] = { 12 },	-- Demon Hunter
 					["lvl"] = 98,
 				}),
+				q(1798, {	-- Seeking Strahad
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["coord"] = { 39.6, 84.6, 84 },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["lvl"] = 30,
+					["u"] = 40,
+				}),
 				q(32317, {	-- Seeking the Soulstones
 					["qg"] = 5496,	-- Sandahl
 					["coord"] = { 39.8, 85.4, 84 },
@@ -858,6 +1013,17 @@ _.Zones =
 					["g"] = {
 						i(65640), 		-- Mask of the Farseer
 						i(65622), 		-- Headcover of the Farseer
+					},
+				}),
+				q(2206, { 	-- Snatch and Grab
+					["qg"] = 332,	-- Master Mathias Shaw
+					["coord"] = { 81.2, 63.2, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["lvl"] = 10,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(7298)),	-- Blade of Cunning
 					},
 				}),
 				q(28399, {	-- Stones of Binding
@@ -1139,12 +1305,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 84,
 				}),
-				q(1698, {	-- Yorus Barleybrew
-					["qg"] = 5479,	-- Wu Shen
-					["coord"] = { 78.8, 45.4, 84 },
-					["races"] = exclude(11, ALLIANCE_ONLY),	-- All alliance races exception Draenei
-					["classes"] = { 1 },	-- Warrior
-					["lvl"] = 20,
+				q(1938, {	-- Ur's Treatise on Shadow Magic
+					["qg"] = 5694,	-- High Sorcerer Andromath
+					["coord"] = { 37.6, 81.6, 84 },
+					["sourceQuest"] = 1939,	-- High Sorcerer Andromath
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 26,
 					["u"] = 40,
 				}),
 				q(28405, {	-- Weapons of Darkness
@@ -1173,7 +1340,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 					["u"] = 40,
-				}),	
+				}),
+				q(1698, {	-- Yorus Barleybrew
+					["qg"] = 5479,	-- Wu Shen
+					["coord"] = { 78.8, 45.4, 84 },
+					["races"] = exclude(11, ALLIANCE_ONLY),	-- All alliance races exception Draenei
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 20,
+					["u"] = 40,
+				}),
 				q(397, {	-- You Have Served Us Well
 					["qg"] = 1435,	-- Zardeth of the Black Claw
 					["coord"] = { 26.4, 78.7, 84 },
