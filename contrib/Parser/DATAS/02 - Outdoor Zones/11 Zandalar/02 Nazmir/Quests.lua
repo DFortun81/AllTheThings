@@ -689,6 +689,7 @@ _.Zones =
 				{	-- A One-Way Ticket to the Heart
 					["questID"] = 54964,
 					["qg"] = 149823,	-- Magni Bronzebeard
+					["u"] = 40,	-- Retired with the implementation of 8.2
 					["coord"] = { 52.3, 68.6, 1382 },
 					["sourceQuest"] = 54940,	-- Necessity is the MOTHER
 				},
@@ -891,6 +892,7 @@ _.Zones =
 				},
 				{	-- Mawfiend Extermination
 					["questID"] = 47996,
+					["description"] = "Bonus objective, only available until level 119.",
 					["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 				},
 				q(53782, {	-- Mysteries of Death
@@ -906,6 +908,7 @@ _.Zones =
 				{	-- Necessity is the MOTHER
 					["questID"] = 54940,
 					["qg"] = 149823,
+					["u"] = 40,	-- Retired with the implementation of 8.2
 					["coord"] = { 47.6, 16.2, 1381, },
 					["sourceQuest"] = 54939,	-- Stubborn as a Bronzebeard
 				},
@@ -988,6 +991,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 48854,	-- Offer of Power
 				},
+				{	-- Purge the Infection
+					["questID"] = 48588,	-- Objective [Primal Wetlands]
+					["description"] = "Bonus objective, only available until level 119.",
+					["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
+				},
 				{	-- Recovering Ancient Fire
 					["questID"] = 49780,
 					["qg"] = 131231,	-- Jin'Tiki
@@ -1039,14 +1047,31 @@ _.Zones =
 					["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
 					["sourceQuest"] = 47924,	-- Profanity Filter
 					["g"] = {
-						i(158957),	-- Death-Pledged Greaves
-						i(158966),	-- Death-Pledged Links
-						i(158956),	-- Loa Speaker's Pants
-						i(158965),	-- Loa Speaker's Sash
-						i(158955),	-- Nazmani Warplate Legguards
-						i(158964),	-- Nazmani Warplate Waistplate
-						i(158958),	-- Ritual Flayer's Trousers
-						i(158967),	-- Ritual Flayer's Waistband
+						-- Quest can be completed by both factions but rewards are Horde only
+						i(158957, {	-- Death-Pledged Greaves
+							["races"] = HORDE_ONLY,
+						}),
+						i(158966, {	-- Death-Pledged Links
+							["races"] = HORDE_ONLY,
+						}),
+						i(158956, {	-- Loa Speaker's Pants
+							["races"] = HORDE_ONLY,
+						}),
+						i(158965, {	-- Loa Speaker's Sash
+							["races"] = HORDE_ONLY,
+						}),
+						i(158955, {	-- Nazmani Warplate Legguards
+							["races"] = HORDE_ONLY,
+						}),
+						i(158964, {	-- Nazmani Warplate Waistplate
+							["races"] = HORDE_ONLY,
+						}),
+						i(158958, {	-- Ritual Flayer's Trousers
+							["races"] = HORDE_ONLY,
+						}),
+						i(158967, {	-- Ritual Flayer's Waistband
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				},
 				{	-- Show of Force
@@ -1058,10 +1083,13 @@ _.Zones =
 				{	-- Stopping Zardrax
 					["questID"] = 48852,
 					["sourceQuest"] = 48854,	-- Offer of Power
+					["description"] = "Bonus objective, only available until level 119.",
+					["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 				},
 				{	-- Stubborn as a Bronzebeard
 					["questID"] = 54939,
 					["qg"] = 149867,	-- Magni Bronzebeard
+					["u"] = 40,	-- Retired with the implementation of 8.2
 					["coord"] = { 57.8, 50.4, 863 },
 					["sourceQuest"] = 54938,	-- A Brother's Help
 				},
@@ -1098,8 +1126,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 51244,	-- What Rots Beneath
 				},
+				{	-- There's No Eye in Skyterror
+					["questID"] = 48578,	-- There's No Eye in Skyterror
+					["qg"] = 126713, -- Sur'jan
+					["coord"] = { 34, 78.6, 863 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 48573, 48574 },	-- Crocolisk Life, Pulling Fangs
+					["g"] = {
+						i(155377),	-- Drained Bone Band [Ring]
+						i(159074),	-- Jarkadiax's Other Eye [Trinket]
+					},
+				},
 				{	-- Vial of Antidote
 					["objectID"] = 278197,
+					["races"] = HORDE_ONLY, -- Quest is Horde only and object does not appear for Alliance
 					["coord"] = { 64.0, 50.3, 863 },
 					["g"] = {
 						{	-- Aid the Wounded
@@ -1132,16 +1172,6 @@ _.Zones =
 				},
 				{
 					["questID"] = 50888,	-- Urn of Ugussu [Terrace of Sorrows]
-				},
-				{
-					["questID"] = 48578,	-- There's No Eye in Skyterror
-					["g"] = {
-						i(155377),	-- Drained Bone Band [Ring]
-						i(159074),	-- Jarkadiax's Other Eye [Trinket]
-					},
-				},
-				{
-					["questID"] = 48588,	-- Objective [Primal Wetlands]
 				},
 			}),
 		}),

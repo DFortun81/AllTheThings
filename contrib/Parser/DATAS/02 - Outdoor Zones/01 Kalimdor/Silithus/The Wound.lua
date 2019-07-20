@@ -19,6 +19,7 @@ _.Zones =
 							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
 							["qg"] = 130216,	-- Magni Bronzebeard
 							["lvl"] = 120,
+							["u"] = 40,	-- Retired with the implementation of 8.2
 						}),
 						q(50373, {	-- A Recent Arrival
 							["sourceQuest"] = 50228,	-- The Twilight Survivor
@@ -96,6 +97,7 @@ _.Zones =
 							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
 							["lvl"] = 120,
 							["qg"] = 130216,	-- Magni Bronzebeard
+							["u"] = 40,	-- Retired with the implementation of 8.2
 						}),
 						q(51211, {	-- The Heart of Azeroth
 							["sourceQuests"] = {
@@ -114,6 +116,7 @@ _.Zones =
 							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
 							["lvl"] = 120,
 							["qg"] = 130216,	-- Magni Bronzebeard
+							["u"] = 40,	-- Retired with the implementation of 8.2
 						}),
 						q(50057, {	-- The Power in Our Hands
 							["sourceQuests"] = {
@@ -174,6 +177,7 @@ _.Zones =
 							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
 							["lvl"] = 120,
 							["qg"] = 130216,	-- Magni Bronzebeard
+							["u"] = 40,	-- Retired with the implementation of 8.2
 						}),
 					}),
 					n(-16, {	-- Rares
