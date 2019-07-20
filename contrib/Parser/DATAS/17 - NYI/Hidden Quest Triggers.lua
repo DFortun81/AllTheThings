@@ -117,17 +117,17 @@ _.NeverImplemented =
 
 		q(36249),	-- Gorgrond - Active Choice: Lumbermill - trigger if the lumbermill is currently active
 		q(36250),	-- Gorgrond - Active Choice: Lumbermill - see 36249
+		q(35064),	-- Gorgrond - Sparring Arena
 		q(36251),	-- Gorgrond - Active Choice: Sparring Arena - triggers if the sparring arena is currently active
 		q(36252),	-- Gorgrond - Active Choice: Sparring Arena - see 36251
+		q(35149),	-- Gorgrond - Sparring Arena - triggers if you choose to build the sparring arena for the first time
 		q(39309),	-- Gorgrond - Arcane Orb
 		q(39310),	-- Gorgrond - Artillery Strike
 		q(39308),	-- Gorgrond - Bodyguard
 		q(34992),	-- Gorgrond - Lumber Mill
 		q(35049),	-- Gorgrond - Lumber Mill
 		q(39307),	-- Gorgrond - Mechasuit
-		q(35946),	-- Gorgrond - Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the sparring arena active
-		q(35064),	-- Gorgrond - Sparring Arena
-		q(35149),	-- Gorgrond - Sparring Arena - triggers if you choose to build the sparring arena for the first time
+		q(35946),	-- Gorgrond - Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the sparring arena active (37.3, 70.7)
 
 					
 		q(34679),	-- Nagrand - Alliance Stables Tracking Event

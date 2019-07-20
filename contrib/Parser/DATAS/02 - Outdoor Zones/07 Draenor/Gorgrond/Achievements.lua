@@ -19,23 +19,41 @@ _.Zones =
 				}),
 				ach(9667),		-- Burn It to the Ground (Everbloom Wilds)
 				ach(9400,  {	-- Gorgrond Monster Hunter
-					crit(1),	-- Biolante
-					crit(2),	-- Roardan the Sky Terror
-					crit(3),	-- Crater Lord Igneous
-					crit(4),	-- Dessicus of the Dead Pools
-					crit(5),	-- Khargax the Devourer
-					crit(6),	-- Erosian the Violent
-					crit(7),	-- Charl Doomwing
-					crit(8),	-- Fungal Praetorian
+					crit(1, {	-- Biolante
+						["crs"] = { 75207 }
+					}),
+					crit(2, {	-- Roardan the Sky Terror
+						["crs"] = { 77093 }
+					}),
+					crit(3, {	-- Crater Lord Igneous
+						["crs"] = { 81528 }
+					}),
+					crit(4, {	-- Dessicus of the Dead Pools
+						["crs"] = { 81529 }
+					}),
+					crit(5, {	-- Khargax the Devourer
+						["crs"] = { 81537 }
+					}),
+					crit(6, {	-- Erosian the Violent
+						["crs"] = { 81540 }
+					}),
+					crit(7, {	-- Charl Doomwing
+						["crs"] = { 84151 }
+					}),
+					crit(8, {	-- Fungal Praetorian
+						["crs"] = { 80785 }
+					}),
 				}),
 				ach(10053, {	-- I Found Pepe!
 					["collectible"] = false,
 					["g"] = {
-						{	-- Ninja Pepe
-							["achievementID"] = 10053,	-- I Found Pepe!
-							["criteriaID"] = 4,	-- Ninja Pepe
-							["coord"] = { 47.51, 41.31, 543 },
-						},
+						i(127867, {	-- A Tiny Ninja Shroud
+							["questID"] = 39267,
+							["coord"] = { 47.5, 41.3, 543 },
+							["g"] = {
+								crit(4),	-- Ninja Pepe
+							},
+						}),
 					},
 				}),
 				ach(9656,  {	-- In Plain Sight (The Pit)
@@ -69,19 +87,19 @@ _.Zones =
 					crit(7, {	-- South Gronn Canyon or Evermorn Springs
 						["sourceQuests"] = {
 							36476,	-- South Gronn Canyon (Lumber Yard)
-							36504,	-- Evermorn Springs
+							36504,	-- Evermorn Springs (Sparring Arena)
 						},
 					}),
 					crit(8, {	-- Stonemaul Arena or Tangleheart
 						["sourceQuests"] = {
 							36566,	-- Stonemaul Arena (Lumber Yard)
-							36564,	-- Tangleheart
+							36564,	-- Tangleheart (Sparring Arena)
 						},
 					}),
 					crit(9, {	-- Affliction Ridge or The Razorbloom
 						["sourceQuests"] = {
 							36473,	-- Affliction Ridge (Lumber Yard)
-							36500,	-- The Razorbloom
+							36500,	-- The Razorbloom (Sparring Arena)
 						},
 					}),
 				}),
@@ -126,7 +144,9 @@ _.Zones =
 				ach(8923, {	-- Putting the Gore in Gorgrond (Alliance) (unlocks ability to buy Gorgrond Treasure Map from Grakis in Stormshield)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- We Need An Outpost
+						crit(1, {	-- We Need An Outpost
+							["sourceQuest"] = 35063,	-- We Need an Outpost
+						}),
 						crit(2, {	-- Supporting Your Garrison
 							["sourceQuests"] = {
 								35508,	-- Chapter I: Plant Food (Lumber Yard)

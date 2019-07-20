@@ -337,43 +337,124 @@ _.Zones =
 					}),
 				}),
 				n(-357,  { 	-- Sparring Arena
-					q(34697,  {	-- A Rediscovered Legend
+					q(35210, {	-- A Great Escape
+						--["objectID"] = 236140,	-- Goren Tunnel
+						["coord"] = { 34.7, 66.9, 547 },
+						["description"] = "Available once you complete the objectives for |cFFFFD700Fair Warning|r and |cFFFFD700Leave Every Solder Behind|r.",
+						["isBreadcrumb"] = true,	-- unavailable once you turn in "Leave Every Soldier Behind"
+						["sourceQuests"] = {
+							36209,	-- What's under There?
+							35041,	-- Xuk It!
+						},
+					}),
+					q(35693,  {	-- A Harsh Reminder (A)
+						["qg"] = 82610,	-- Rangari Erdanii
+						["coord"] = { 46.2, 66.6, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 35686,	-- Rage and Wisdom
+						["g"] = {
+							i(112612),	-- Foundry-Fired Plate Girdle
+							i(112615),	-- Overgrowth Cutter Belt
+							i(112613),	-- Steamburst Cord
+							i(112614),	-- Wildwood Wrangler Belt
+						},
+					}),
+					q(35248, {	-- A Harsh Reminder (H)
+						["qg"] = 81202,	-- Bony Xuk
+						["coord"] = { 43.5, 65.0, 543 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35880,	-- Rage and Wisdom
+						["g"] = {
+							i(112612),	-- Foundry-Fired Plate Girdle
+							i(112615),	-- Overgrowth Cutter Belt
+							i(112613),	-- Steamburst Cord
+							i(112614),	-- Wildwood Wrangler Belt
+						},
+					}),
+					q(34704,  {	-- A Rediscovered Legend (A)
+						["qg"] = 81076,	-- Rangari Jonaa
+						["coord"] = { 52.8, 59.8, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 35063,	-- We Need an Outpost
+					}),
+					q(34697,  {	-- A Rediscovered Legend (H)
 						["qg"] = 76688,	-- Limbflayer
 						["coord"] = { 46.3, 69.7, 543 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					}),
-					q(34704,  {	-- A Rediscovered Legend
-						["qg"] = 81076,	-- Rangari Jonaa
+					q(35037, {	-- Bad at Breaking
+						["qg"] = 80856,	-- Rexxar
+						["coord"] = { 46.0, 54.7, 543 },
+						["sourceQuests"] = {
+							36508,	-- Is This One of Yours? (A)
+							35036,	-- Is This One of Yours? (H)
+						},
+						["g"] = {
+							i(112591),	-- Foundry-Fired Plate Warboots
+							i(112594),	-- Overgrowth Cutter Boots
+							i(112592),	-- Steamburst Treads
+							i(112593),	-- Wildwood Wrangler Sabatons
+						},
+					}),
+					q(35870, {	-- Basilisk Butcher
+						["qg"] = 82832,	-- Rexxar
+						["coord"] = { 44.2, 61.6, 543 },
+						["sourceQuest"] = 35730,	-- Cauterizing Wounds
+					}),
+					q(35730, {	-- Cauterizing Wounds
+						["qg"] = 82832,	-- Rexxar
+						["coord"] = { 44.2, 61.6, 543 },
+						["sourceQuests"] = {
+							35665,	-- We Have Company (A)
+							35025,	-- We Have Company (H)
+						},
+					}),
+					q(35702, {	-- Chains of Iron
+						["qg"] = 84131,	-- Rexxar
+						["coord"] = { 43.9, 48.8, 543 },
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(34702,  {	-- Krav'ogra
-						["qg"] = 79331,	-- Beatface
-						["coord"] = { 42.6, 63.0, 543 },
-						["sourceQuests"] = {
-							34697,	-- A Rediscovered Legend
-							34704,	-- A Rediscovered Legend
+						["sourceQuest"] = 35139,	-- Eye in the Sky
+						["g"] = {
+							i(112588),	-- Foundry-Fired Plate Chestplate
+							i(112590),	-- Overgrowth Cutter Vest
+							i(112607),	-- Steamburst Robe
+							i(112589),	-- Wildwood Wrangler Vest
 						},
 					}),
-					q(34700,  {	-- Nazgrel
-						["qg"] = 79320,	-- Kash'drakor
-						["coord"] = { 42.7, 63.0, 543 },
+					q(35139, {	-- Eye in the Sky
+						["qg"] = 84131,	-- Rexxar
+						["coord"] = { 43.9, 48.8, 543 },
 						["sourceQuests"] = {
-							34697,	-- A Rediscovered Legend
-							34704,	-- A Rediscovered Legend
+							35210,	-- A Great Escape
+							35128,	-- Fair Warning
+							35129,	-- Leave Every Soldier Behind
 						},
 					}),
-					q(34012,  {	-- Need More Teeth
-						["qg"] = 75008,	-- Prowler Sasha
-						["coord"] = { 41.4, 66.1, 543 },
-						["sourceQuest"] = 35151,	-- Your Base, Your Choice
+					q(35128, {	-- Fair Warning
+						["qg"] = 80856,	-- Rexxar
+						["coord"] = { 46.0, 54.7, 543 },
+						["sourceQuests"] = {
+							35041,	-- Xuk It!
+							36209,	-- What's Under There?
+						},
+						["g"] = {
+							i(118025),	-- Ogron Slayer's Ankleslicer
+							i(118022),	-- Ogron Slayer's Axe
+							i(118029),	-- Ogron Slayer's Club
+							i(118024),	-- Ogron Slayer's Eye-Poker
+							i(118026),	-- Ogron Slayer's Eyebruiser
+							i(118027),	-- Ogron Slayer's Eyegouger
+							i(118023),	-- Ogron Slayer's Greataxe
+							i(118028),	-- Ogron Slayer's Greatstaff
+						},
 					}),
 					q(34699,  {	-- Getting Gladiators
 						["qg"] = 79322,	-- Gladiator Akaani
 						["coord"] = { 42.7, 62.9, 543 },
 						["sourceQuests"] = {
-							34697,	-- A Rediscovered Legend
-							34704,	-- A Rediscovered Legend
+							34704,	-- A Rediscovered Legend (A)
+							34697,	-- A Rediscovered Legend (H)
 						},
 						["g"] = {
 							i(112617),	-- Foundry-Fired Plate Wristwraps
@@ -382,12 +463,150 @@ _.Zones =
 							i(112618),	-- Wildwood Wrangler Wristwraps
 						},
 					}),
+					q(36210, {	-- Hard Shell
+						["qg"] = 82610,	-- Rangari Erdanii
+						["coord"] = { 46.1, 55.0, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 36508,	-- Is This One of Yours?
+					}),
+					q(35218, {	-- Iron Horde Orders
+						["qg"] = 80856,	-- Rexxar
+						["coord"] = { 46.0, 54.7, 543 },
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = {
+							35037,	-- Bad at Breaking
+							35934,	-- Nisha's Vengeance
+						},
+					}),
+					q(36508, {	-- Is This One of Yours? (A)
+						["qg"] = 83569,	-- Rexxar
+						["coord"] = { 46.0, 54.7, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 35730,	-- Cauterizing Wounds
+					}),
+					q(35036, {	-- Is This One of Yours? (H)
+						["qg"] = 83569,	-- Rexxar
+						["coord"] = { 46.0, 54.7, 543 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35730,	-- Cauterizing Wounds
+					}),
+					q(34702,  {	-- Krav'ogra
+						["qg"] = 79331,	-- Beatface
+						["coord"] = { 42.6, 63.0, 543 },
+						["sourceQuests"] = {
+							34704,	-- A Rediscovered Legend (A)
+							34697,	-- A Rediscovered Legend (H)
+						},
+					}),
+					q(36223, {	-- Leave Every Soldier Behind (A)
+						["qg"] = 82610,	-- Rangari Erdanii
+						["coord"] = { 46.1, 55.0, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 36209,	-- What's Under There?
+					}),
+					q(35129, {	-- Leave Every Soldier Behind (H)
+						["qg"] = 80856,	-- Rexxar
+						["coord"] = { 46.0, 54.7, 543 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35041,	-- Xuk It!
+					}),
+					q(36833, {	-- May I Be of Service?
+						["qg"] = 85278,	-- Rangari Erdanii
+						["coord"] = { 53.3, 59.7, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 35702,	-- Chains of Iron
+						["g"] = {
+							follower(212),	-- Rangari Erdanii
+						},
+					}),
+					q(34700,  {	-- Nazgrel
+						["qg"] = 79320,	-- Kash'drakor
+						["coord"] = { 42.7, 63.0, 543 },
+						["sourceQuests"] = {
+							34704,	-- A Rediscovered Legend (A)
+							34697,	-- A Rediscovered Legend (H)
+						},
+					}),
+					q(34012,  {	-- Need More Teeth
+						["qg"] = 75008,	-- Prowler Sasha
+						["coord"] = { 41.4, 66.1, 543 },
+						["sourceQuests"] = {
+							34704,	-- A Rediscovered Legend (A)
+							34697,	-- A Rediscovered Legend (H)
+						},
+					}),
+					q(35934, {	-- Nisha's Vengeance
+						["qg"] = 80856,	-- Rexxar
+						["coord"] = { 46.0, 54.7, 543 },
+						["sourceQuests"] = {
+							36508,	-- Is This One of Yours? (A)
+							35036,	-- Is This One of Yours? (H)
+						},
+					}),
+					q(35026, {	-- On the Mend
+						["qg"] = 82832,	-- Rexxar
+						["coord"] = { 44.2, 61.6, 543 },
+						["sourceQuest"] = 35730,	-- Cauterizing Wounds
+						["g"] = {
+							i(119064),	-- Steamfury Band
+							i(118039),	-- Steamfury Loop
+							i(119072),	-- Steamfury Ring
+							i(118040),	-- Steamfury Seal
+							i(118038),	-- Steamfury Signet
+						},
+					}),
+					q(35686,  {	-- Rage and Wisdom (A)
+						["qg"] = 75127,	-- Vindicator Maraad
+						["coord"] = { 52.8, 59.6, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 35063,	-- We Need an Outpost
+					}),
+					q(35880,  {	-- Rage and Wisdom (H)
+						["qg"] = 74594,	-- Durotan
+						["coord"] = { 46.0, 70.1, 543 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35151,	-- Your Base, Your Choice
+					}),
+					q(35664, {	-- Seedbearers of Bad News (A)
+						["qg"] = 82610,	-- Rangari Erdanii
+						["coord"] = { 46.2, 66.6, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 35686,	-- Rage and Wisdom
+					}),
+					q(35035, {	-- Seedbearers of Bad News (H)
+						["qg"] = 81202,	-- Bony Xuk
+						["coord"] = { 43.5, 65.0, 543 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35880,	-- Rage and Wisdom
+					}),
 					q(34698,  {	-- Slave Hunters
 						["qg"] = 79320,	-- Kash'drakor
 						["coord"] = { 42.7, 63.0, 543 },
 						["sourceQuests"] = {
-							34697,	-- A Rediscovered Legend
-							34704,	-- A Rediscovered Legend
+							34704,	-- A Rediscovered Legend (A)
+							34697,	-- A Rediscovered Legend (H)
+						},
+					}),
+					q(36576, {	-- Strike While the Iron is Hot (A)
+						["qg"] = 75127,	-- Vindicator Maraad
+						["coord"] = { 52.8, 59.6, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 35702,	-- Chains of Iron
+						["g"] = {
+							i(112885),	-- Commander Gar's Iron Insignia
+							i(112889),	-- Genesaur's Greatness
+							i(112887),	-- Goc's Trophy
+						},
+					}),
+					q(36573,  {	-- Strike While the Iron is Hot (H)
+						["qg"] = 74594,	-- Durotan
+						["coord"] = { 46.1, 70.1, 543 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35136,	-- Chains of Iron
+						["g"] = {
+							i(112885),	-- Commander Gar's Iron Insignia
+							i(112889),	-- Genesaur's Greatness
+							i(112887),	-- Goc's Trophy
 						},
 					}),
 					q(34703,  {	-- The Axe of Kor'gall
@@ -400,6 +619,19 @@ _.Zones =
 							i(112884),	-- Might of Kor'gall
 						},
 					}),
+					q(36208, {	-- The Crystal Shard
+						["qg"] = 82610,	-- Rangari Erdanii
+						["coord"] = { 46.1, 55.0, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 36508,	-- Is This One of Yours?
+						["g"] = {
+							i(112864),	-- Laughing Skull Trophy Necklace
+							i(119085),	-- Xuk's Bad Xuk Charm
+							i(119076),	-- Xuk's Fingerbone Pouch
+							i(112863),	-- Xuk's Good Xuk Charm
+							i(112865),	-- Xuk's Spirit-Speaking Chain
+						},
+					}),
 					q(35883,  {	-- The Fists of Vaandaam
 						["qg"] = 79337,	-- Pitfighter Vaandaam
 						["coord"] = { 42.8, 63.0, 543 },
@@ -407,6 +639,15 @@ _.Zones =
 						["sourceQuest"] = 34703,	-- The Axe of Kor'gall
 						["g"] = {
 							follower(176),	-- Pitfighter Vaandaam
+						},
+					}),
+					q(35925, {	-- The Gronn Strategy
+						--["objectID"] = 233391,	-- Weaponization Orders
+						["icon"] = "Interface\\Icons\\inv_letter_07",
+						["coord"] = { 47.7, 52.0, 543 },
+						["sourceQuests"] = {
+							35218,	-- Iron Horde Orders
+							35730,	-- Cauterizing Wounds
 						},
 					}),
 					q(35882,  {	-- The Interest of Bruto
@@ -418,202 +659,46 @@ _.Zones =
 							follower(176),	-- Bruto
 						},
 					}),
-					q(35152,  {	-- The Sparring Arena
-						["qg"] = 79320,	-- Kash'drakor
-						["coord"] = { 42.7, 63.0, 543 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34703,	-- The Axe of Kor'gall
-					}),
-					q(35137,  {	-- The Sparring Arena
+					q(35137,  {	-- The Sparring Arena (A)
 						["qg"] = 79322,	-- Gladiator Akaani
 						["coord"] = { 42.8, 63.0, 543 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34703,	-- The Axe of Kor'gall
-					}),
-					---
-					q(35693,  {	-- A Harsh Reminder
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(112612),	-- Foundry-Fired Plate Girdle
-							i(112615),	-- Overgrowth Cutter Belt
-							i(112613),	-- Steamburst Cord
-							i(112614),	-- Wildwood Wrangler Belt
+						["sourceQuests"] = {
+							34702,	-- Krav'ogra
+							34700,	-- Nazgrel
+							34698,	-- Slave Hunters
+							34703,	-- The Axe of Kor'gall
 						},
 					}),
-					i(114030, {	-- Ancient Branch
-						["questID"] = 36094,	-- Proof of Strength: Ancient Branch
+					q(35152,  {	-- The Sparring Arena (H)
+						["qg"] = 79320,	-- Kash'drakor
+						["coord"] = { 42.7, 63.0, 543 },
 						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81630,	-- Bloom Defender
-							81005,	-- Silent Watcher
+						["sourceQuests"] = {
+							34702,	-- Krav'ogra
+							34700,	-- Nazgrel
+							34698,	-- Slave Hunters
+							34703,	-- The Axe of Kor'gall
 						},
 					}),
-					i(114029, {	-- Ancient Branch
-						["questID"] = 36092,	-- Proof of Strength: Ancient Branch
+					q(36107,  {	-- Trophy Hunter of Gorgrond (A)
+						["qg"] = 81076,	-- Rangari Jonaa
 						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81630,	-- Bloom Defender
-							81005,	-- Silent Watcher
+						["sourceQuests"] = {
+							36092,	-- Proof of Strength: Ancient Branch
+							36103,	-- Proof of Strength: Basilisk Scale
+							36084,	-- Proof of Strength: Botani Bloom
+							36105,	-- Proof of Strength: Elemental Crystal
+							35944,	-- Proof of Strength: Goren Tooth
+							36081,	-- Proof of Strength: Gronn Eye
+							36078,	-- Proof of Strength: Gronnling Scale
+							36075,	-- Proof of Strength: Ogron Horn
+							36090,	-- Proof of Strength: Orc Thorn
+							36096,	-- Proof of Strength: Ravager Claw
+							36098,	-- Proof of Strength: Wasp Stinger
 						},
 					}),
-					i(114036, {	-- Basilisk Scale
-						["questID"] = 36104,	-- Proof of Strength: Basilisk Scale
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							85694,	-- Mire Basilisk
-							74962,	-- Stoneshamble Basilisk
-						},
-					}),
-					i(114035, {	-- Basilisk Scale
-						["questID"] = 36103,	-- Proof of Strength: Basilisk Scale
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							85694,	-- Mire Basilisk
-							74962,	-- Stoneshamble Basilisk
-						},
-					}),
-					i(114025, {	-- Botani Bloom
-						["questID"] = 36086,	-- Proof of Strength: Botani Bloom
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							80696,	-- Botani Greensworn
-							81631,	-- Botani Grovetender
-							81575,	-- Bloom Weaver
-							81721,	-- Dionar Seedpriest
-							83826,	-- Tarlna Thorncaster
-							81634,	-- Voice of Iyu
-						},
-					}),
-					i(114024, {	-- Botani Bloom
-						["questID"] = 36084,	-- Proof of Strength: Botani Bloom
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							80696,	-- Botani Greensworn
-							81631,	-- Botani Grovetender
-							81575,	-- Bloom Weaver
-							81721,	-- Dionar Seedpriest
-							83826,	-- Tarlna Thorncaster
-							81634,	-- Voice of Iyu
-						},
-					}),
-					i(114038, {	-- Elemental Crystal
-						["questID"] = 36106,	-- Proof of Strength: Elemental Crystal
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							78257,	-- Abyssal Earthwarden
-							86439,	-- Earthen Fury
-							85924,	-- Lesser Brimfury
-							83458,	-- Rippling Steamfury
-							81685,	-- Turbulent Steamfury
-						},
-					}),
-					i(114037, {	-- Elemental Crystal
-						["questID"] = 36105,	-- Proof of Strength: Elemental Crystal
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							78257,	-- Abyssal Earthwarden
-							86439,	-- Earthen Fury
-							85924,	-- Lesser Brimfury
-							83458,	-- Rippling Steamfury
-							81685,	-- Turbulent Steamfury
-						},
-					}),
-					i(113590, {	-- Goren Tooth
-						["questID"] = 35948,	-- Proof of Strength: Goren Tooth
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81729,	-- Enraged Gembiter
-							80690,	-- Goren Gouger
-							81775,	-- Goren Nibbler
-						},
-					}),
-					i(113586, {	-- Goren Tooth
-						["questID"] = 35944,	-- Proof of Strength: Goren Tooth
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81729,	-- Enraged Gembiter
-							80690,	-- Goren Gouger
-							81775,	-- Goren Nibbler
-						},
-					}),
-					i(114023, {	-- Gronn Eye
-						["questID"] = 36083,	-- Proof of Strength: Gronn Eye
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81246,	-- Canyon Boulderbreaker
-							80689,	-- Gronn Rockthrower
-							85988,	-- Mangled Boulderbreaker
-						},
-					}),
-					i(114022, {	-- Gronn Eye
-						["questID"] = 36081,	-- Proof of Strength: Gronn Eye
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81246,	-- Canyon Boulderbreaker
-							80689,	-- Gronn Rockthrower
-							85988,	-- Mangled Boulderbreaker
-						},
-					}),
-					i(114021, {	-- Gronnling Scale
-						["questID"] = 36080,-- Proof of Strength: Gronnling Scale
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81207,	-- Drywind Bonepicker
-							80685,	-- Gronnling Bonebreaker
-						},
-					}),
-					i(114020, {	-- Gronnling Scale
-						["questID"] = 36078,	-- Proof of Strength: Gronnling Scale
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81207,	-- Drywind Bonepicker
-							80685,	-- Gronnling Bonebreaker
-						},
-					}),
-					i(114027, {	-- Orc Thorn
-						["questID"] = 36091,	-- Proof of Strength: Orc Thorn
-						["crs"] = { 81617 },	-- Infested Orc
-						["races"] = HORDE_ONLY,
-					}),
-					i(114026, {	-- Orc Thorn
-						["questID"] = 36090,	-- Proof of Strength: Orc Thorn
-						["crs"] = { 81617 },	-- Infested Orc
-						["races"] = ALLIANCE_ONLY,
-					}),
-					i(114032, {	-- Ravager Claw
-						["questID"] = 36097,	-- Proof of Strength: Ravager Claw
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							85516,	-- Cliffscar Ravager
-							83517,	-- Stoneshard Ravager
-							81561,	-- Thicket Ravager
-							86263,	-- Venomous Ravager
-							85779,	-- Verdant Ravager
-						},
-					}),
-					i(114031, {	-- Ravager Claw
-						["questID"] = 36096,	-- Proof of Strength: Ravager Claw
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							85516,	-- Cliffscar Ravager
-							83517,	-- Stoneshard Ravager
-							81561,	-- Thicket Ravager
-							86263,	-- Venomous Ravager
-							85779,	-- Verdant Ravager
-						},
-					}),
-					q(36573,  {	-- Strike While the Iron is Hot
-						["qg"] = 74594,	-- Durotan
-						["coord"] = { 46.1, 70.1, 543 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35136,	-- Chains of Iron
-						["g"] = {
-							i(112885),	-- Commander Gar's Iron Insignia
-							i(112889),	-- Genesaur's Greatness
-							i(112887),	-- Goc's Trophy
-						},
-					}),
-					q(36108,  {	-- Trophy Hunter of Gorgrond
+					q(36108,  {	-- Trophy Hunter of Gorgrond (H)
 						["qg"] = 76688,	-- Limbflayer
 						["coord"] = { 46.3, 69.7, 543 },
 						["races"] = HORDE_ONLY,
@@ -631,24 +716,197 @@ _.Zones =
 							36101,	-- Proof of Strength: Wasp Stinger
 						},
 					}),
-					q(36107,  {	-- Trophy Hunter of Gorgrond
-						["qg"] = 81076,	-- Rangari Jonaa
+					q(35665, {	-- We Have Company (A)
+						["qg"] = 82610,	-- Rangari Erdanii
+						["coord"] = { 44.9, 63.9, 543 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
-							36092,	-- Proof of Strength: Ancient Branch
-							36103,	-- Proof of Strength: Basilisk Scale
-							36084,	-- Proof of Strength: Botani Bloom
-							36105,	-- Proof of Strength: Elemental Crystal
-							35944,	-- Proof of Strength: Goren Tooth
-							36081,	-- Proof of Strength: Gronn Eye
-							36078,	-- Proof of Strength: Gronnling Scale
-							36075,	-- Proof of Strength: Ogron Horn
-							36090,	-- Proof of Strength: Orc Thorn
-							36096,	-- Proof of Strength: Ravager Claw
-							36098,	-- Proof of Strength: Wasp Stinger
+							35693,	-- A Harsh Reminder
+							35664,	-- Seedbearers of Bad News
 						},
 					}),
-					i(114033, {	-- Wasp Stinger
+					q(35025, {	-- We Have Company (H)
+						["qg"] = 81202,	-- Bony Xuk
+						["coord"] = { 43.5, 65.0, 543 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							35248,	-- A Harsh Reminder
+							35035,	-- Seedbearers of Bad News
+						},
+					}),
+					q(36209, {	-- What's Under There?
+						["qg"] = 82610,	-- Rangari Erdanii
+						["coord"] = { 46.1, 55.0, 543 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							36210,	-- Hard Shell
+							36208,	-- The Crystal Shard
+						},
+					}),
+					---
+					i(114029, {	-- Ancient Branch (A)
+						["questID"] = 36092,	-- Proof of Strength: Ancient Branch
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81630,	-- Bloom Defender
+							81005,	-- Silent Watcher
+						},
+					}),
+					i(114030, {	-- Ancient Branch (H)
+						["questID"] = 36094,	-- Proof of Strength: Ancient Branch
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81630,	-- Bloom Defender
+							81005,	-- Silent Watcher
+						},
+					}),
+					i(114035, {	-- Basilisk Scale (A)
+						["questID"] = 36103,	-- Proof of Strength: Basilisk Scale
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							85694,	-- Mire Basilisk
+							74962,	-- Stoneshamble Basilisk
+						},
+					}),
+					i(114036, {	-- Basilisk Scale (H)
+						["questID"] = 36104,	-- Proof of Strength: Basilisk Scale
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							85694,	-- Mire Basilisk
+							74962,	-- Stoneshamble Basilisk
+						},
+					}),
+					i(114024, {	-- Botani Bloom (A)
+						["questID"] = 36084,	-- Proof of Strength: Botani Bloom
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							80696,	-- Botani Greensworn
+							81631,	-- Botani Grovetender
+							81575,	-- Bloom Weaver
+							81721,	-- Dionar Seedpriest
+							83826,	-- Tarlna Thorncaster
+							81634,	-- Voice of Iyu
+						},
+					}),
+					i(114025, {	-- Botani Bloom (H)
+						["questID"] = 36086,	-- Proof of Strength: Botani Bloom
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							80696,	-- Botani Greensworn
+							81631,	-- Botani Grovetender
+							81575,	-- Bloom Weaver
+							81721,	-- Dionar Seedpriest
+							83826,	-- Tarlna Thorncaster
+							81634,	-- Voice of Iyu
+						},
+					}),
+					i(114037, {	-- Elemental Crystal (A)
+						["questID"] = 36105,	-- Proof of Strength: Elemental Crystal
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							78257,	-- Abyssal Earthwarden
+							86439,	-- Earthen Fury
+							85924,	-- Lesser Brimfury
+							83458,	-- Rippling Steamfury
+							81685,	-- Turbulent Steamfury
+						},
+					}),
+					i(114038, {	-- Elemental Crystal (H)
+						["questID"] = 36106,	-- Proof of Strength: Elemental Crystal
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							78257,	-- Abyssal Earthwarden
+							86439,	-- Earthen Fury
+							85924,	-- Lesser Brimfury
+							83458,	-- Rippling Steamfury
+							81685,	-- Turbulent Steamfury
+						},
+					}),
+					i(113586, {	-- Goren Tooth (A)
+						["questID"] = 35944,	-- Proof of Strength: Goren Tooth
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81729,	-- Enraged Gembiter
+							80690,	-- Goren Gouger
+							81775,	-- Goren Nibbler
+						},
+					}),
+					i(113590, {	-- Goren Tooth (H)
+						["questID"] = 35948,	-- Proof of Strength: Goren Tooth
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81729,	-- Enraged Gembiter
+							80690,	-- Goren Gouger
+							81775,	-- Goren Nibbler
+						},
+					}),
+					i(114022, {	-- Gronn Eye (A)
+						["questID"] = 36081,	-- Proof of Strength: Gronn Eye
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81246,	-- Canyon Boulderbreaker
+							80689,	-- Gronn Rockthrower
+							85988,	-- Mangled Boulderbreaker
+						},
+					}),
+					i(114023, {	-- Gronn Eye (H)
+						["questID"] = 36083,	-- Proof of Strength: Gronn Eye
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81246,	-- Canyon Boulderbreaker
+							80689,	-- Gronn Rockthrower
+							85988,	-- Mangled Boulderbreaker
+						},
+					}),
+					i(114020, {	-- Gronnling Scale (A)
+						["questID"] = 36078,	-- Proof of Strength: Gronnling Scale
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81207,	-- Drywind Bonepicker
+							80685,	-- Gronnling Bonebreaker
+						},
+					}),
+					i(114021, {	-- Gronnling Scale (H)
+						["questID"] = 36080,-- Proof of Strength: Gronnling Scale
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81207,	-- Drywind Bonepicker
+							80685,	-- Gronnling Bonebreaker
+						},
+					}),
+					i(114026, {	-- Orc Thorn (A)
+						["questID"] = 36090,	-- Proof of Strength: Orc Thorn
+						["crs"] = { 81617 },	-- Infested Orc
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(114027, {	-- Orc Thorn (H)
+						["questID"] = 36091,	-- Proof of Strength: Orc Thorn
+						["crs"] = { 81617 },	-- Infested Orc
+						["races"] = HORDE_ONLY,
+					}),
+					i(114031, {	-- Ravager Claw (A)
+						["questID"] = 36096,	-- Proof of Strength: Ravager Claw
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							85516,	-- Cliffscar Ravager
+							83517,	-- Stoneshard Ravager
+							81561,	-- Thicket Ravager
+							86263,	-- Venomous Ravager
+							85779,	-- Verdant Ravager
+						},
+					}),
+					i(114032, {	-- Ravager Claw (H)
+						["questID"] = 36097,	-- Proof of Strength: Ravager Claw
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							85516,	-- Cliffscar Ravager
+							83517,	-- Stoneshard Ravager
+							81561,	-- Thicket Ravager
+							86263,	-- Venomous Ravager
+							85779,	-- Verdant Ravager
+						},
+					}),
+					i(114033, {	-- Wasp Stinger (A)
 						["questID"] = 36098,	-- Proof of Strength: Wasp Stinger
 						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
@@ -657,7 +915,7 @@ _.Zones =
 							83520,	-- Stoneshard Hunter
 						},
 					}),
-					i(114034, {	-- Wasp Stinger
+					i(114034, {	-- Wasp Stinger (H)
 						["questID"] = 36101,	-- Proof of Strength: Wasp Stinger
 						["races"] = HORDE_ONLY,
 						["crs"] = {
@@ -666,18 +924,19 @@ _.Zones =
 							83520,	-- Stoneshard Hunter
 						},
 					}),
-					i(114018, {	-- Worn Ogron Horn
+					i(114018, {	-- Worn Ogron Horn (A)
 						["questID"] = 36075,	-- Proof of Strength: Ogron Horn
 						["crs"] = { 81240 },	-- Ogron Spinecrusher
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(114019, {	-- Worn Ogron Horn
+					i(114019, {	-- Worn Ogron Horn (H)
 						["questID"] = 36076,	-- Proof of Strength: Ogron Horn
 						["crs"] = { 81240 },	-- Ogron Spinecrusher
 						["races"] = HORDE_ONLY,
 					}),
 				}),
 				q(36037, {	-- A Centurion Without a Cause
+					["qg"] = 83820,	-- High Centurion Tormmok
 					["coord"] = { 44.9, 86.9, 543 },
 					["description"] = "You must defend Tormmok against a few waves of enemies before he will become your follower.",
 					["g"] = {
@@ -710,18 +969,6 @@ _.Zones =
 				q(35647, {	-- A Grim Harvest
 					["qg"] = 82476,	-- Khaano
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(35248, {	-- A Harsh Reminder
-					["qg"] = 81202,	-- Bony Xuk
-					["coord"] = { 43.5, 65.0, 543 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35880,	-- Rage and Wisdom
-					["g"] = {
-						i(112612),	-- Foundry-Fired Plate Girdle
-						i(112615),	-- Overgrowth Cutter Belt
-						i(112613),	-- Steamburst Cord
-						i(112614),	-- Wildwood Wrangler Belt
-					},
 				}),
 				q(35065, {	-- A Harvester Has Come
 					["qg"] = 80921,	-- Rangari D'kaan
@@ -766,30 +1013,11 @@ _.Zones =
 						34335,	-- Garrison Campaign: Crows In The Field
 					},
 				}),
-				q(35037, {	-- Bad at Breaking -- also requires On The Mend and Basilisk Butcher?
-					["qg"] = 80856,	-- Rexxar
-					["coord"] = { 46.0, 54.7, 543 },
-					["sourceQuests"] = {
-						35036,	-- Is This One of Yours?
-						36508,	-- Is This One of Yours?
-					},
-					["g"] = {
-						i(112591),	-- Foundry-Fired Plate Warboots
-						i(112594),	-- Overgrowth Cutter Boots
-						i(112592),	-- Steamburst Treads
-						i(112593),	-- Wildwood Wrangler Sabatons
-					},
-				}),
 				q(35016, {	-- Basic Skulltaking
 					["qg"] = 81218,	-- Grulkor
 					["coord"] = { 54.4, 66.6, 543 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35667,	-- Skulltakers in Crimson Fen
-				}),
-				q(35870, {	-- Basilisk Butcher
-					["qg"] = 82832,	-- Rexxar
-					["coord"] = { 44.2, 61.6, 543 },
-					["sourceQuest"] = 35730,	-- Cauterizing Wounds
 				}),
 				q(33662, {	-- Beatface vs. Boulder
 					["qg"] = 85089,	-- Rakthoth
@@ -821,25 +1049,11 @@ _.Zones =
 					["qg"] = 81601,	-- Burrian Coalpart
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(35730, {	-- Cauterizing Wounds
-					["qg"] = 82832,	-- Rexxar
-					["coord"] = { 44.2, 61.6, 543 },
-					["sourceQuest"] = 35025,	-- We Have Company
-				}),
 				q(35136, {	-- Chains of Iron
 					["qg"] = 84131,	-- Rexxar
 					["coord"] = { 43.9, 48.8, 543 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35139,	-- Eye in the Sky
-					["g"] = {
-						i(112588),	-- Foundry-Fired Plate Chestplate
-						i(112590),	-- Overgrowth Cutter Vest
-						i(112607),	-- Steamburst Robe
-						i(112589),	-- Wildwood Wrangler Vest
-					},
-				}),
-				q(35702, {	-- Chains of Iron
-					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(112588),	-- Foundry-Fired Plate Chestplate
 						i(112590),	-- Overgrowth Cutter Vest
@@ -860,19 +1074,21 @@ _.Zones =
 					["qg"] = 82569,	-- Frenna
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(113448, {	-- Chunk of Crater Lord
-					["questID"] = 35811,	-- Trophy of Glory: Crater Lord Igneous
+				i(113449, {	-- Chunk of Crater Lord (A)
+					["questID"] = 35812,	-- Trophy of Glory: Crater Lord Igneous
 					["crs"] = { 81528 },	-- Crater Lord Igneous
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
 					["coords"] = {
 						{ 42.9, 59.3, 543 },
 						{ 43.9, 59.8, 543 },
 					},
 				}),
-				i(113449, {	-- Chunk of Crater Lord
-					["questID"] = 35812,	-- Trophy of Glory: Crater Lord Igneous
+				i(113448, {	-- Chunk of Crater Lord (H)
+					["questID"] = 35811,	-- Trophy of Glory: Crater Lord Igneous
 					["crs"] = { 81528 },	-- Crater Lord Igneous
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					["coords"] = {
 						{ 42.9, 59.3, 543 },
 						{ 43.9, 59.8, 543 },
@@ -908,17 +1124,19 @@ _.Zones =
 					["qg"] = 81601,	-- Burrian Coalpart
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(113444, {	-- Crystalized Steam
-					["questID"] = 35807,	-- Trophy of Glory: Erosian
-					["coord"] = { 51.8, 41.6, 543 },
-					["races"] = HORDE_ONLY,
-					["crs"] = { 81540 },	-- Erosian the Violent
-				}),
-				i(113445, {	-- Crystalized Steam
+				i(113445, {	-- Crystalized Steam (A)
 					["questID"] = 35808,	-- Trophy of Glory: Erosian
 					["coord"] = { 51.8, 41.6, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 81540 },	-- Erosian the Violent
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+				}),
+				i(113444, {	-- Crystalized Steam (H)
+					["questID"] = 35807,	-- Trophy of Glory: Erosian
+					["coord"] = { 51.8, 41.6, 543 },
+					["races"] = HORDE_ONLY,
+					["crs"] = { 81540 },	-- Erosian the Violent
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
 				q(35208, {	-- Dark Iron Down
 					["qg"] = 81588,	-- Thaelin Darkanvil
@@ -942,20 +1160,22 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38568,	-- We Need a Shipwright
 				}),
-				i(113459, {	-- Ebony Feather
-					["questID"] = 35818,	-- Trophy of Glory: Roardan the Sky Terror
-					["races"] = HORDE_ONLY,
+				i(113458, {	-- Ebony Feather (A)
+					["questID"] = 35817,	-- Trophy of Glory: Roardan the Sky Terror
+					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 77093 },	-- Roardan the Sky Terror
+					["sourceQuest"] = 35063,	-- We Need an Outpost
 					["coords"] = {
 						{ 61.7, 61.7, 543 },
 						{ 53.0, 63.1, 543 },
 						{ 50.8, 67.6, 543 },
 					},
 				}),
-				i(113458, {	-- Ebony Feather
-					["questID"] = 35817,	-- Trophy of Glory: Roardan the Sky Terror
-					["races"] = ALLIANCE_ONLY,
+				i(113459, {	-- Ebony Feather (H)
+					["questID"] = 35818,	-- Trophy of Glory: Roardan the Sky Terror
+					["races"] = HORDE_ONLY,
 					["crs"] = { 77093 },	-- Roardan the Sky Terror
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					["coords"] = {
 						{ 61.7, 61.7, 543 },
 						{ 53.0, 63.1, 543 },
@@ -963,6 +1183,7 @@ _.Zones =
 					},
 				}),
 				q(36504, {	-- Evermorn Springs (bonus objective)
+					["coord"] = { 43.0, 79.9, 543 },
 					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
 				q(33563, {	-- Eye Candy
@@ -977,44 +1198,22 @@ _.Zones =
 						i(118033),	-- Wildwood Wrangler Gloves
 					},
 				}),
-				q(35139, {	-- Eye in the Sky
-					["qg"] = 84131,	-- Rexxar
-					["coord"] = { 43.9, 48.8, 543 },
-					["sourceQuests"] = {
-						35210,	-- A Great Escape
-						35128,	-- Fair Warning
-						35129,	-- Leave Every Soldier Behind
-					},
-				}),
-				q(35128, {	-- Fair Warning
-					["qg"] = 80856,	-- Rexxar
-					["coord"] = { 46.0, 54.7, 543 },
-					["sourceQuest"] = 35041,	-- Xuk It!
-					["g"] = {
-						i(118025),	-- Ogron Slayer's Ankleslicer
-						i(118022),	-- Ogron Slayer's Axe
-						i(118029),	-- Ogron Slayer's Club
-						i(118024),	-- Ogron Slayer's Eye-Poker
-						i(118026),	-- Ogron Slayer's Eyebruiser
-						i(118027),	-- Ogron Slayer's Eyegouger
-						i(118023),	-- Ogron Slayer's Greataxe
-						i(118028),	-- Ogron Slayer's Greatstaff
-					},
-				}),
-				i(113456, {	-- Fang of the Doomwing
-					["questID"] = 35815,	-- Trophy of Glory: Charl Doomwing
+				i(113457, {	-- Fang of the Doomwing (A)
+					["questID"] = 35816,	-- Trophy of Glory: Charl Doomwing
 					["crs"] = { 81548 },	-- Charl Doomwing
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
 					["coords"] = {
 						{ 47.9, 46.3, 543 },
 						{ 46.1, 46.8, 543 },
 						{ 45.2, 51.9, 543 },
 					},
 				}),
-				i(113457, {	-- Fang of the Doomwing
-					["questID"] = 35816,	-- Trophy of Glory: Charl Doomwing
+				i(113456, {	-- Fang of the Doomwing (H)
+					["questID"] = 35815,	-- Trophy of Glory: Charl Doomwing
 					["crs"] = { 81548 },	-- Charl Doomwing
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					["coords"] = {
 						{ 47.9, 46.3, 543 },
 						{ 46.1, 46.8, 543 },
@@ -1034,17 +1233,19 @@ _.Zones =
 						follower(212),	-- Spirit of Bony Xuk
 					},
 				}),
-				i(113446, {	-- Globe of Dead Water
+				i(113446, {	-- Globe of Dead Water (A)
 					["questID"] = 35809,	-- Trophy of Glory: Dessicus
 					["coord"] = { 38.8, 51.1, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 81529 },	-- Dessicus
+					["sourceQuest"] = 35063,	-- We Need an Outpost
 				}),
-				i(113447, {	-- Globe of Dead Water
+				i(113447, {	-- Globe of Dead Water (H)
 					["questID"] = 35810,	-- Trophy of Glory: Dessicus
 					["coord"] = { 38.8, 51.1, 543 },
 					["races"] = HORDE_ONLY,
 					["crs"] = { 81529 },	-- Dessicus
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
 				i(113260, {	-- Glowing Red Pod
 					["questID"] = 35642,	-- Mysterious Pod
@@ -1061,19 +1262,6 @@ _.Zones =
 					["coord"] = { 38.7, 73.6, 543 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33543,	-- The Laughing Skull
-				}),
-				o(236140, {	-- Goren Tunnel
-					["coord"] = { 34.7, 66.9, 547 },
-					["g"] = {
-						q(35210, {	-- A Great Escape
-							["sourceQuest"] = 35041,	-- Xuk It!
-							["description"] = "Available once you complete the objectives for \"Fair Warning\" and \"Leave EVery Solder Behind\"",
-						}),
-					},
-				}),
-				q(36210, {	-- Hard Shell
-					["qg"] = 82610,	-- Rangari Erdanii
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36595, {	-- He Drew Aggro...culture (TODO: determine sourceQuest)
 					["qg"] = 75146,	-- Rangari D'kaan
@@ -1133,20 +1321,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35033,	-- Welcome to Gorgrond
 				}),
-				q(35218, {	-- Iron Horde Orders -- sources Bad at Breaking and Nisha's Vengeance?
-					["qg"] = 80856,	-- Rexxar
-					["isBreadcrumb"] = true,
-				}),
-				q(36508, {	-- Is This One of Yours?
-					["qg"] = 83569,	-- Rexxar
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(35036, {	-- Is This One of Yours?
-					["qg"] = 83569,	-- Rexxar
-					["coord"] = { 46.0, 54.7, 543 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35730,	-- Cauterizing Wounds
-				}),
 				q(36571, {	-- Iyun Weald (bonus objective) -- aa
 					["coord"] = { 61.9, 54.4, 543 },
 				}),
@@ -1190,16 +1364,6 @@ _.Zones =
 						i(112960),	-- Wisdom of Dionor
 					},
 				}),
-				q(36223, {	-- Leave Every Soldier Behind
-					["qg"] = 82610,	-- Rangari Erdanii
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(35129, {	-- Leave Every Soldier Behind
-					["qg"] = 80856,	-- Rexxar
-					["coord"] = { 46.0, 54.7, 543 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35041,	-- Xuk It!
-				}),
 				q(35055, {	-- Lost Mole Machines
 					["qg"] = 75136,	-- Thaelin Darkanvil
 					["coord"] = { 63.1, 52.4, 543 },
@@ -1220,13 +1384,6 @@ _.Zones =
 				}),
 				q(34413, {	-- Lumberstruck	-- never made it live
 					["u"] = 1,
-				}),
-				q(36833, {	-- May I Be of Service?
-					["qg"] = 85278,	-- Rangari Erdanii
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						follower(212),	-- Rangari Erdanii
-					},
 				}),
 				q(35644, {	-- Mercy for the Living
 					["qg"] = 82476,	-- Khaano
@@ -1259,13 +1416,6 @@ _.Zones =
 						{ 46.0, 70.1, 543 },
 					},
 				}),
-				q(35934, {	-- Nisha's Vengeance
-					["qg"] = 80856,	-- Rexxar
-					["coord"] = { 46.0, 54.7, 543 },
-					["sourceQuests"] = {
-						35036,	-- Is This One of Yours?
-					},
-				}),
 				q(38573, {	-- Nothing Remains
 					["qg"] = 91242,	-- Solog Roark
 					["coord"] = { 50.6, 16.6, 543 },
@@ -1277,18 +1427,6 @@ _.Zones =
 					["coord"] = { 50.6, 16.6, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38256,	-- Hook, Line, and... Sink Him!
-				}),
-				q(35026, {	-- On the Mend
-					["qg"] = 82832,	-- Rexxar
-					["coord"] = { 44.2, 61.6, 543 },
-					["sourceQuest"] = 35730,	-- Cauterizing Wounds
-					["g"] = {
-						i(119064),	-- Steamfury Band
-						i(118039),	-- Steamfury Loop
-						i(119072),	-- Steamfury Ring
-						i(118040),	-- Steamfury Seal
-						i(118038),	-- Steamfury Signet
-					},
 				}),
 				q(36434, {	-- Penny From Heaven
 					["qg"] = 74594,	-- Durotan
@@ -1332,17 +1470,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35235,	-- Iyu
 				}),
-				i(113454, {	-- Precious Mushroom
-					["questID"] = 35814,	-- Trophy of Glory: Fungal Praetorian
-					["coord"] = { 58.0, 63.7, 543 },
-					["races"] = HORDE_ONLY,
-					["crs"] = { 80785 },	-- Fungal Praetorian
-				}),
-				i(113453, {	-- Precious Mushroom
+				i(113453, {	-- Precious Mushroom (A)
 					["questID"] = 35813,	-- Trophy of Glory: Fungal Praetorian
 					["coord"] = { 58.0, 63.7, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 80785 },	-- Fungal Praetorian
+					["sourceQuest"] = 35063,	-- We Need an Outpost
+				}),
+				i(113454, {	-- Precious Mushroom (H)
+					["questID"] = 35814,	-- Trophy of Glory: Fungal Praetorian
+					["coord"] = { 58.0, 63.7, 543 },
+					["races"] = HORDE_ONLY,
+					["crs"] = { 80785 },	-- Fungal Praetorian
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
 				q(36342, {	-- Primal Fury
 					["qg"] = 88530,	-- Choluna
@@ -1354,19 +1494,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 36134,	-- Garrison Campaign: Awakening
 				}),
-				q(35686, {	-- Rage and Wisdom
-					["qg"] = 75127,	-- Vindicator Maraad
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(35880, {	-- Rage and Wisdom
-					["qg"] = 74594,	-- Durotan
-					["coord"] = { 46.0, 70.1, 543 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
-				}),
 				q(35666, {	-- Rangari in the Red
 					["qg"] = 75146,	-- Rangari D'kaan
+					["coord"] = { 53.3, 59.8, 543 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
 				}),
 				o(231903, {	-- Razzlebeard's Report
 					["races"] = ALLIANCE_ONLY,
@@ -1440,19 +1572,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35666,	-- Rangari in the Red
 				}),
-				q(35664, {	-- Seedbearers of Bad News
-					["qg"] = 82610,	-- Rangari Erdanii
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(35035, {	-- Seedbearers of Bad News
-					["qg"] = 81202,	-- Bony Xuk
-					["coord"] = { 43.5, 65.0, 543 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35880,	-- Rage and Wisdom
-				}),
 				q(36432, {	-- Seeking the Scout
 					["qg"] = 75146,	-- Rangari D'kaan
+					["coord"] = { 53.3, 59.8, 543 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
 				}),
 				q(35262, {	-- Service of Rangari Kaalya
 					["qg"] = 81772,	-- Rangari Kaalya
@@ -1461,10 +1585,11 @@ _.Zones =
 						follower(159),	-- Rangari Kaalya
 					},
 				}),
-				i(113460, {	-- Shimmering Scale
-					["questID"] = 35819,	-- Trophy of Glory: Khargax the Devourer
-					["races"] = HORDE_ONLY,
+				i(113461, {	-- Shimmering Scale (A)
+					["questID"] = 35820,	-- Trophy of Glory: Khargax the Devourer
 					["crs"] = { 81537 },	-- Khargax the Devourer
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
 					["coords"] = {
 						{ 52.3, 67.9, 543 },
 						{ 51.5, 67.1, 543 },
@@ -1475,10 +1600,11 @@ _.Zones =
 						{ 52.6, 68.0, 543 },
 					},
 				}),
-				i(113461, {	-- Shimmering Scale
-					["questID"] = 35820,	-- Trophy of Glory: Khargax the Devourer
+				i(113460, {	-- Shimmering Scale (H)
+					["questID"] = 35819,	-- Trophy of Glory: Khargax the Devourer
 					["crs"] = { 81537 },	-- Khargax the Devourer
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					["coords"] = {
 						{ 52.3, 67.9, 543 },
 						{ 51.5, 67.1, 543 },
@@ -1530,20 +1656,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35255,	-- Power of the Genesaur
 					["g"] = {
-						{
-							["achievementID"] = 8923,	-- Putting the Gore in Gorgrond
-							["criteriaID"] = 4,	-- The Iron Approach
-						},
-						i(112885),	-- Commander Gar's Iron Insignia
-						i(112889),	-- Genesaur's Greatness
-						i(112887),	-- Goc's Trophy
-					},
-				}),
-				q(36576, {	-- Strike While the Iron is Hot
-					["qg"] = 75127,	-- Vindicator Maraad
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35702,	-- Chains of Iron
-					["g"] = {
 						i(112885),	-- Commander Gar's Iron Insignia
 						i(112889),	-- Genesaur's Greatness
 						i(112887),	-- Goc's Trophy
@@ -1569,7 +1681,8 @@ _.Zones =
 					["qg"] = 85119,	-- Glirin
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(36564, {	-- Tangleheart
+				q(36564, {	-- Tangleheart (bonus objective)
+					["coord"] = { 60.2, 67.6, 543 },
 					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
 				q(34410, {	-- The Beating Heart
@@ -1579,17 +1692,6 @@ _.Zones =
 						34339,	-- A Goren's Feast
 						34340,	-- Heating Up
 						34338,	-- The Descent
-					},
-				}),
-				q(36208, {	-- The Crystal Shard
-					["qg"] = 82610,	-- Rangari Erdanii
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(112864),	-- Laughing Skull Trophy Necklace
-						i(119085),	-- Xuk's Bad Xuk Charm
-						i(119076),	-- Xuk's Fingerbone Pouch
-						i(112863),	-- Xuk's Good Xuk Charm
-						i(112865),	-- Xuk's Spirit-Speaking Chain
 					},
 				}),
 				q(34338, {	-- The Descent
@@ -1656,6 +1758,7 @@ _.Zones =
 					["sourceQuest"] = 34028,	-- These Look Familiar
 				}),
 				q(36500, {	-- The Razorbloom (bonus objective)
+					["coord"] = { 47.8, 72.8, 543 },
 					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
 				q(35029, {	-- The Secret of the Fungus
@@ -1745,37 +1848,13 @@ _.Zones =
 						i(112611),	-- Wildwood Wrangler Monnion
 					},
 				}),
-				q(35665, {	-- We Have Company
-					["qg"] = 82610,	-- Rangari Erdanii
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {
-						35693,	-- A Harsh Reminder
-						35664,	-- Seedbearers of Bad News
-					},
-				}),
-				q(35025, {	-- We Have Company
-					["qg"] = 81202,	-- Bony Xuk
-					["coord"] = { 43.5, 65.0, 543 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						35248,	-- A Harsh Reminder
-						35035,	-- Seedbearers of Bad News
-					},
-				}),
 				q(35063, {	-- We Need An Outpost
 					["qg"] = 75136,	-- Thaelin Darkanvil
+					["coord"] = { 53.4, 60.3, 543 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35055,	-- Lost Mole Machines
-				}),
-				o(233391, {	-- Weaponization Orders
-					["coord"] = { 47.7, 52.0, 543 },
-					["g"] = {
-						q(35925, {	-- The Gronn Strategy
-							["sourceQuests"] = {
-								35218,	-- Iron Horde Orders
-								35036,	-- Is This One of Yours?
-							},
-						}),
+					["sourceQuests"] = {
+						35055,	-- Lost Mole Machines
+						35050,	-- Rescue Rangari
 					},
 				}),
 				q(35033, {	-- Welcome to Gorgrond -- aa
@@ -1802,10 +1881,6 @@ _.Zones =
 						i(112865),	-- Xuk's Spirit-Speaking Chain
 					},
 				}),
-				q(36209, {	-- What's Under There?
-					["qg"] = 82610,	-- Rangari Erdanii
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(35234, {	-- Will of the Genesaur
 					["qg"] = 75710,	-- Hansel Heavyhands
 					["races"] = ALLIANCE_ONLY,
@@ -1814,10 +1889,11 @@ _.Zones =
 				q(35653, {	-- Wood is Wood -- never went live
 					["u"] = 1,
 				}),
-				i(116160, {	-- Writhing Green Tendril
-					["questID"] = 36503,	-- Trophy of Glory: Biolante
-					["races"] = HORDE_ONLY,
+				i(116159, {	-- Writhing Green Tendril (A)
+					["questID"] = 36502,	-- Trophy of Glory: Biolante
 					["crs"] = { 75207 },	-- Biolante
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
 					["coords"] = {
 						{ 60.5, 54.4, 543 },
 						{ 61.4, 53.0, 543 },
@@ -1825,10 +1901,11 @@ _.Zones =
 						{ 63.1, 54.4, 543 },
 					},
 				}),
-				i(116159, {	-- Writhing Green Tendril
-					["questID"] = 36502,	-- Trophy of Glory: Biolante
-					["races"] = ALLIANCE_ONLY,
+				i(116160, {	-- Writhing Green Tendril (H)
+					["questID"] = 36503,	-- Trophy of Glory: Biolante
 					["crs"] = { 75207 },	-- Biolante
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					["coords"] = {
 						{ 60.5, 54.4, 543 },
 						{ 61.4, 53.0, 543 },
