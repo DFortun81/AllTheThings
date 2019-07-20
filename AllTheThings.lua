@@ -1322,7 +1322,7 @@ local function ReapplyExpand(g, g2)
 end
 local function ResolveSymbolicLink(o)
 	if o.sym then
-		local searchResults = {};
+		local searchResults, finalized = {}, {};
 		-- {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
@@ -1417,12 +1417,26 @@ local function ResolveSymbolicLink(o)
 						table.remove(searchResults, k);
 					end
 				end
+			elseif cmd == "finalize" then
+				-- Instruction to finalize the current search results and prevent additional queries from affecting this selection.
+				for k,s in ipairs(searchResults) do
+					table.insert(finalized, s);
+				end
+				wipe(searchResults);
 			end
 		end
 		
+		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
 		if #searchResults > 0 then
-			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #searchResults, " values after filtering.");
-			return searchResults;
+			for k,s in ipairs(searchResults) do
+				table.insert(finalized, s);
+			end
+		end
+		
+		-- If we had any finalized search results, then return it.
+		if #finalized > 0 then
+			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #finalized, " values after filtering.");
+			return finalized;
 		else
 			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contained no values after filtering.");
 		end
