@@ -76,6 +76,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50296, {	-- Billy Goat Barber
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51669, {	-- Black-Eyed Bart
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -101,6 +106,10 @@ _.Zones =
 					q(52755, {	-- Bringing the Heat
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51665, {	-- Broodmother Razora
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(55340, {	-- Calligraphy

@@ -29,7 +29,6 @@ _.Zones =
 					q(46077),	-- Felbound Spirits
 					q(46212),	-- Get Them Up
 					q(40390),	-- Hallowed Ground
-					q(45985),	-- Hellish Scavengers
 					q(45541),	-- How Do YOU Like It?!
 					q(46066),	-- I Fel Bat For You
 					q(46817),	-- Infernal Downfall
@@ -131,6 +130,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46198, {	-- Gems of Destruction
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45985, {	-- Hellish Scavengers
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

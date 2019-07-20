@@ -335,6 +335,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51908, {	-- Nevermore
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52218, {	-- Night Horrors
 						["qg"] = 140461,	-- Dilbert McClint
 						["lvl"] = 120,

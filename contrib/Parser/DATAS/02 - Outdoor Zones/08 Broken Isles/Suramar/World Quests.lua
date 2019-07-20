@@ -8,8 +8,6 @@ _.Zones =
 			n(-34, {	-- World Quests
 --[[
 				q(42969),	-- A Spy in Our Midst
-				q(42111),	-- Aggressive Reconnaisance
-				q(43512),	-- Ana-Mouz
 				q(45068),	-- Barrels o' Fun
 				q(41493),	-- Brimstone Destroyer
 				q(41492),	-- Brimstone Destroyer
@@ -95,6 +93,10 @@ _.Zones =
 				q(41350),	-- Work Order: Stonehide Leather
 --]]
 				q(42859, {	-- A Draught of Hope
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42111, {	-- Aggressive Reconnaisance
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -9,7 +9,6 @@ _.Zones =
 --[[				n(-34, {	-- World Quests
 						q(45439),	-- An Invasion of... Murlocs?
 						q(41443),	-- Ancient Leystone Deposits
-						q(41451),	-- Assault on Hrydshal
 						q(45839),	-- Assault on Stormheim
 						q(46008),	-- Balnazoth
 						q(45072),	-- Barrels o' Fun
@@ -82,7 +81,6 @@ _.Zones =
 						q(42182),	-- To Battle!
 						q(43454),	-- WANTED: Egyl the Enduring
 						q(43620),	-- WANTED: Egyl the Enduring
-						q(43434),	-- WANTED: Fathnyr
 						q(43621),	-- WANTED: Fathnyr
 						q(43436),	-- WANTED: Glimar Ironfist
 						q(43622),	-- WANTED: Glimar Ironfist
@@ -92,7 +90,6 @@ _.Zones =
 						q(43625),	-- WANTED: Nameless King
 						q(43626),	-- WANTED: Thane Irglov
 						q(43450),	-- WANTED: Tiptog the Lost
-						q(43627),	-- WANTED: Tiptog the Lost
 						q(43628),	-- WANTED: Urgev the Flayer
 						q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
 						q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
@@ -129,6 +126,10 @@ _.Zones =
 					},
 				}),
 				q(43951, {	-- An Overdue Debt
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41451, {	-- Assault on Hrydshal
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -324,6 +325,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43434, {	-- WANTED: Fathnyr
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43453, {	-- WANTED: Hannval the Butcher
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -333,6 +338,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43437, {	-- WANTED: Thane Irglov
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43627, {	-- WANTED: Tiptog the Lost
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -41,7 +41,6 @@ _.Zones =
 				q(43328),	-- Enigmatic
 				q(44049),	-- Evil Has Many Legs
 				q(42027),	-- Faronaar in Chaos
-				q(42026),	-- Faronaar in Ruin
 				q(41323),	-- Fatty Lion Seal Skin
 				q(46161),	-- Felcaller Thalezra
 				q(41564),	-- Felhide
@@ -67,7 +66,6 @@ _.Zones =
 				q(41264),	-- Lively Cursed Queenfish
 				q(41454),	-- Luminous Leystone Outcropping
 				q(42105),	-- Mixology Mix-up
-				q(42623),	-- Piracy Doesn't Pay
 				q(41268),	-- Queen Queenfish
 				q(41266),	-- Raft Fishing
 				q(42123),	-- Reclaiming Llothien
@@ -84,9 +82,7 @@ _.Zones =
 				q(44050),	-- The Felsworn Must Fall
 				q(45134),	-- The Soul Harvesters
 				q(42112),	-- The Withered Return
-				q(42019),	-- Tip the Scales
 				q(41322),	-- Unscratched Hippogryph Scale
-				q(42160),	-- Unwelcome Visitors
 				q(42636),	-- WANTED: Arcanist Shal'iman
 				q(42620),	-- WANTED: Arcavellus
 				q(43606),	-- WANTED: Arcavellus
@@ -97,7 +93,6 @@ _.Zones =
 				q(43609),	-- WANTED: Doomlord Kazrok
 				q(43610),	-- WANTED: Infernal Lord
 				q(42631),	-- WANTED: Inquisitor Tivos
-				q(43611),	-- WANTED: Inquisitor Tivos
 				q(43432),	-- WANTED: Normantis the Deposed
 				q(43612),	-- WANTED: Normantis the Deposed
 				q(42633),	-- WANTED: Vorthax
@@ -171,6 +166,10 @@ _.Zones =
 					},
 				}),
 				q(42276, {	-- Disgusting, but Useful
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42026, {	-- Faronaar in Ruin
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -269,6 +268,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42623, {	-- Piracy Doesn't Pay
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42108, {	-- Rally the Nightwatchers
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -333,6 +336,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42019, {	-- Tip the Scales
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42506, {	-- Tomes of Yore
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -351,6 +358,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42160, {	-- Unwelcome Visitors
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42924, {	-- Vault of the Wardens: A Grim Matter
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -364,6 +375,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43427, {	-- WANTED: Infernal Lord
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43611, {	-- WANTED: Inquisitor Tivos
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

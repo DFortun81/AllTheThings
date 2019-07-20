@@ -221,6 +221,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51100, {	-- Jumbo Sandsnapper
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51125, {	-- Jungleweb Hunter
 						["lvl"] = 120,
 						["collectible"] = false,

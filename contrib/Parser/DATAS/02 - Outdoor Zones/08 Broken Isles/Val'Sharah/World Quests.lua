@@ -91,6 +91,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42028, {	-- Into the Nightmare
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43753, {	-- Ley Race
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -170,6 +174,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41980, {	-- Temple Defense
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43755, {	-- The Magic of Flight
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -221,6 +229,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43460, {	-- WANTED: Kiranys Duskwhisper
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43458, {	-- WANTED: Perrexx
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -253,6 +265,10 @@ _.Zones =
 				q(43183, {	-- Warden Tower Assault: Starstalker's Point [A]
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
+					["collectible"] = false,
+				}),
+				q(43784, {	-- What a Nightmare
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(43758, {	-- Wherever I May Gloam
