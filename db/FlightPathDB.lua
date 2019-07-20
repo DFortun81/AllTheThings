@@ -1029,6 +1029,8 @@ AllTheThings.FlightPathDB = {
 	[646] = {
 		name="Forsaken Forward Command, Gilneas",
 		faction=1,
+		["collectible"] = false,
+		["description"] = "Becomes available during |cFFFFD700To Forsaken Forward Command|r and is no longer available after |cFFFFD700The Great Escape|r.",
 	},
 	[2066] = {
 		name="Atal'Gral, Zuldazar",
