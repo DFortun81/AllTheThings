@@ -1423,6 +1423,13 @@ local function ResolveSymbolicLink(o)
 					table.insert(finalized, s);
 				end
 				wipe(searchResults);
+			elseif cmd == "postprocess" then
+				-- Instruction to take all of the the finalized and non-finalized search results and merge them back in for post-processing.
+				for k,s in ipairs(searchResults) do
+					table.insert(finalized, s);
+				end
+				searchResults = finalized;
+				finalized = {};
 			end
 		end
 		
