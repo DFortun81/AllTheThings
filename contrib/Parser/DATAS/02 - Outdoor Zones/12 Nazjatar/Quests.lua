@@ -28,7 +28,7 @@ _.Zones =
 			56521 popped randomly. possibly a progress flag for 55663?
 			56325 - alliance end to the zone, completed after turning in The Tide Turns (55799)
 			]]--
-			q(55558, {	-- A Bolt Hole (not actually sure if this is from the SQ or if it's from getting Revered with the Ankoan -- both happened at the same time for me)
+			q(55558, {	-- A Bolt Hole
 				["sourceQuests"] = { 56234 },	-- Friends in Need
 				["coord"] = { 40.2, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,

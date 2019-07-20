@@ -33,6 +33,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = { 154794 },
 				}),
 			}),
+			n(-17, {	-- Quests
+				q(55609, {	-- Operation: Mechagon - The Mechoriginator
+					["sourceQuests"] = { 55736 },	-- Welcome to the Resistance
+					["qg"] = 149816,	-- Prince Erazmin
+				}),
+			}),
 			d(23,  {	-- Mythic
 				["g"] = {
 					e(2357, {	-- King Gobbamak

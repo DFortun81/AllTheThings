@@ -26,7 +26,10 @@ _.Zones =
 			}),
 			n(152416, {	-- Allseer Oma'kil
 				["questID"] = 56280,
-				["coord"] = { 65.4, 36.5, 1355 },
+				["coords"] = {
+					{ 65.4, 36.5, 1355 },
+					{ 70.7, 34.2, 1355 },
+				},
 				["isDaily"] = true,
 				["g"] = {
 					crit(2, {	-- I Thought You Said They'd Be Rare?
@@ -306,8 +309,18 @@ _.Zones =
 				},
 			}),
 			n(152448, {	-- Iridescent Glimmershell
+				["description"] = "This rare shares spawns with |cFFe6b300Glimmershell Hulks|r.",
 				["questID"] = 56286,
-				["coord"] = { 45.3, 56.2, 1355 },
+				["coords"] = {
+					{ 40.6, 49.0, 1355 },
+					{ 42.8, 47.8, 1355 },
+					{ 43.6, 54.2, 1355 },
+					{ 45.3, 56.2, 1355 },
+					{ 45.6, 55.8, 1355 },
+					{ 47.0, 51.6, 1355 },
+					{ 47.2, 55.4, 1355 },
+					{ 49.4, 51.4, 1355 },
+				},
 				["isDaily"] = true,
 				["g"] = {
 					crit(14, {	-- I Thought You Said They'd Be Rare?
@@ -352,8 +365,8 @@ _.Zones =
 				},
 			}),
 			n(152323, {	-- King Gakula
-				["allianceQuestID"] = 55671,
-				["hordeQuestID"] = 55671,
+				["description"] = "Whenever a player shoos a |cFF00991aBloodfin Tadpole|r, it fills an invisible progress bar for Gakula's spawn.  He will yell a total of four times, spawning with the last one.\n\nGakula's yells:\n1. |cFFff4040Mgrlgl? Gmrgurgl?|r\n2. |cFFff4040Murrrglurg? Murgglugrg!|r\n3. |cFFff4040Mrrglgl! Murgglagk!|r\n4. |cFFff4040Gak! Mugllglgll Gak!|r",
+				["questID"] = 55671,
 				["isDaily"] = true,
 				["coord"] = { 28.8, 29.0, 1355 },
 				["g"] = {

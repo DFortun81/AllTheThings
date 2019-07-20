@@ -54,6 +54,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 55373,	-- Knock 'Em Out The Box
+					["g"] = {
+						crit(5, {	-- A Little Leg Work
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(56557, {	-- A Little Side Action
 					["qg"] = 155355,	-- Usha Eyegouge
@@ -474,7 +479,9 @@ _.Zones =
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 55753,	-- Knock His Bot Off
 					["g"] = {
-						ach(13791),	-- Making The Mount
+						crit(12, {	-- Drive it Away Today
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
 						i(168827),	-- Scrapforged Mechaspider
 					},
 				}),
@@ -482,6 +489,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 54083,	-- Grease The Wheels
+					["g"] = {
+						crit(9, {	-- Emission Free
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(55213, {	-- Energy Cells for Everyone
 					["qg"] = 150631,	-- Pristy Quickcharge
@@ -492,6 +504,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 54922,	-- The Nuts and Bolts of it
+					["g"] = {
+						crit(7, {	-- Factory Refurbished
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(55707, {	-- First One's Free
 					["qg"] = 152747,	-- Christy Punchcog
@@ -511,6 +528,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 56168,	-- Factory Refurbished
+					["g"] = {
+						crit(8, {	-- Grease the Wheels
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(56380, {	-- Grounded -- also popped 56330
 					["qg"] = 154906,	-- Brian Pitchspark
@@ -546,11 +568,21 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 54929,	-- Ready to Rumble
+					["g"] = {
+						crit(4, {	-- Knock 'Em Out The Box
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(55753, {	-- Knock His Bot Off
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 55696,	-- Test Drive
+					["g"] = {
+						crit(11, {	-- Knock His Bot Off
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(56305, {	-- Let's Fish!
 					["qg"] = 151462,	-- Danielle Anglers
@@ -631,9 +663,9 @@ _.Zones =
 					},
 				}),
 				q(55609, {	-- Operation: Mechagon - The Mechoriginator
-					--["qg"] = 
-					--["coord"] = { 1462 },
-					--["sourceQuest"] = 
+					["sourceQuests"] = { 55736 },	-- Welcome to the Resistance
+					["coord"] = { 74.0, 36.8, 1462 },
+					["qg"] = 149816,	-- Prince Erazmin
 				}),
 				q(56173, {	-- Other Interests
 					["qg"] = 152575,	-- Steelsage Gao
@@ -736,6 +768,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 54086,	-- Right Bot for the Job
+					["g"] = {
+						crit(3, {	-- Ready to Rumble
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(56326, {	-- Ravenous Rescue
 					["qg"] = 154568,	-- Pedram Mechanotrax
@@ -862,6 +899,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 55608,	-- Shop Project
+					["g"] = {
+						crit(2, {	-- Right Bot for the Job
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(56751, {	-- Rustbolt Requisitions: Calcified Bone (A)
 					["isDaily"] = true,
@@ -1019,6 +1061,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
 					["sourceQuest"] = 55736,	-- Welcome to the Resistance
+					["g"] = {
+						crit(1, {	-- Shop Project
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(56740, {	-- S.P.A.R.E. Crates
 					["qg"] = 152295,	-- Pascal
@@ -1082,6 +1129,11 @@ _.Zones =
 					["qg"] = 150573,	-- Recycler Kerchunk
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 56175,	-- Emission Free
+					["g"] = {
+						crit(10, {	-- Test Drive
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(55695, {	-- That New Mount Smell
 					["qg"] = 152321,	-- Cork Stuttguard
@@ -1092,6 +1144,11 @@ _.Zones =
 					["qg"] = 150573,	-- 2r Kerchunk
 					["coord"] = { 71.5, 38.7, 1355 },
 					["sourceQuest"] = 55697,	-- A Little Leg Work
+					["g"] = {
+						crit(6, {	-- The Nuts and Bolts of It
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
 				}),
 				q(55816, {	-- The Other Place
 					["qg"] = 153993,	-- Chromie
@@ -1239,11 +1296,6 @@ _.Zones =
 					["qg"] = 151947,	-- Prince Erazmin
 					["coord"] = { 71.2, 35.8, 1462 },
 					["sourceQuest"] = 55096,	-- Send My Father a Message
-					["g"] = {
-						ach(13700, {	-- The Mechagonian Threat
-							["races"] = HORDE_ONLY,
-						}),
-					},
 				}),
 				q(56320, {	-- Your First Charge is Free!
 					["qg"] = 150630,	-- Flip Quickcharge
