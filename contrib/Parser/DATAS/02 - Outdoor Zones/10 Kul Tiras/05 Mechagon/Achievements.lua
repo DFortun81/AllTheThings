@@ -13,16 +13,7 @@ _.Zones =
 					crit(4),	-- Supercollider
 					crit(5),	-- Boltspitter
 				}),
-				ach(13513, {	-- Available in Eight Colors
-				-- the only one sourced is crit 3, Mechagon Gold.  are the other random drops or do they come from specific mobs?
-					crit(1),	-- Big-ol Bronze
-					crit(2),	-- Fel Mint Green
-					crit(3),	-- Mechagon Gold
-					crit(4),	-- Copper Trim
-					crit(5),	-- Lemonade Steel
-					crit(6),	-- Fireball Red
-					crit(7),	-- Overload Orange
-				}),
+				ach(13513),		-- Available in Eight Colors
 				ach(13473, {	-- Diversed Investments
 					crit(1),	-- Flame Turret
 					crit(2),	-- Drill Rig
@@ -107,6 +98,7 @@ _.Zones =
 					crit(9),	-- Making the Mount
 					crit(10),	-- Armed for Action
 				}),
+				ach(13708),		-- Most Minis Wins
 				ach(13556, {	-- Outside Influences
 					crit(1),	-- Aid From Nordrassil
 					crit(2),	-- One Gnome's Trash

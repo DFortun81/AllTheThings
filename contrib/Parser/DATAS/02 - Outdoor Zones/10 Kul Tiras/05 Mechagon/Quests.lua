@@ -667,6 +667,11 @@ _.Zones =
 					["coord"] = { 74.0, 36.8, 1462 },
 					["qg"] = 149816,	-- Prince Erazmin
 				}),
+				q(55815, {	-- Other Interests
+					["qg"] = 152575,	-- Steelsage Gao
+					["coord"] = { 73.6, 34.3, 1462 },
+					["isDaily"] = true,
+				}),
 				q(56173, {	-- Other Interests
 					["qg"] = 152575,	-- Steelsage Gao
 					["coord"] = { 73.6, 34.3, 1462 },
@@ -1209,6 +1214,11 @@ _.Zones =
 						i(169838, {	-- Azeroth Mini: Starter Pack
 							i(169796, {	-- Azeroth Mini Collection: Mechagon
 								["questID"] = 56426,
+							}),
+							i(169841, {	-- Azeroth Mini: Erazmin
+								crit(5, {	-- Prince Erazmin
+									["achievementID"] = 13708,	-- Most Minis Wins
+								}),
 							}),
 							i(169794, {	-- Azeroth Mini: Izira Gearsworn
 								crit(1, {	-- Izira Gearsworn

@@ -104,6 +104,10 @@ _.Zones =
 					["coord"] = { 82.3, 21.0, 1462 },
 					["isDaily"] = true,
 					["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
+					["crs"] = {
+						149847,	-- Crazed Trogg
+						152570,	-- Crazed Trogg
+					},
 					["g"] = {
 						crit(20, {	-- Crazed Trogg
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -111,6 +115,11 @@ _.Zones =
 						i(169674),	-- Green Paint Filled Bladder
 						i(167792, {	-- Paint Vial: Fel Mint Green
 							["questID"] = 55452, -- Paint Vial: Fel Mint Green
+							["g"] = {
+								crit(2, {	-- Fel Mint Green
+									["achievementID"] = 13513,	-- Available in Eight Colors
+								}),
+							},
 						}),
 						i(169168, {  -- Blueprint: Green Spraybot
 							["questID"] = 55076,
@@ -207,6 +216,11 @@ _.Zones =
 						i(169379),	-- Snowsoft Nibbler
 						i(167793, {  -- Paint Vial: Overload Orange
 							["questID"] = 55457,
+							["g"] = {
+								crit(7, {	-- Overload Orange
+									["achievementID"] = 13513,	-- Available in Eight Colors
+								}),
+							},
 						}),
 					},
 				}),
@@ -290,11 +304,31 @@ _.Zones =
 						}),
 						i(169382),	-- Lost Robogrip
 						i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-							i(169843),	-- Azeroth Mini: Cork Stuttguard
-							i(169842),	-- Azeroth Mini: Roadtrogg
-							i(169840),	-- Azeroth Mini: Gazlowe
-							i(169795),	-- Azeroth Mini: Bondo Bigblock
-							i(169849),	-- Azeroth Mini: Naeno Megacrash
+							i(169843, {	-- Azeroth Mini: Cork Stuttguard
+								crit(7, {	-- Cork Stuttguard
+									["achievementID"] = 13708,	-- Most Minis Wins
+								}),
+							}),
+							i(169842, {	-- Azeroth Mini: Roadtrogg
+								crit(8, {	-- Roadtrogg
+									["achievementID"] = 13708,	-- Most Minis Wins
+								}),
+							}),
+							i(169840, {	-- Azeroth Mini: Gazlowe
+								crit(3, {	-- Gazlowe
+									["achievementID"] = 13708,	-- Most Minis Wins
+								}),
+							}),
+							i(169795, {	-- Azeroth Mini: Bondo Bigblock
+								crit(6, {	-- Bondo Bigblock
+									["achievementID"] = 13708,	-- Most Minis Wins
+								}),
+							}),
+							i(169849, {	-- Azeroth Mini: Naeno Megacrash
+								crit(9, {	-- Naeno Megacrash
+									["achievementID"] = 13708,	-- Most Minis Wins
+								}),
+							}),
 						}),
 					},
 				}),
@@ -377,6 +411,11 @@ _.Zones =
 						i(170273),	-- Oxidizied Refuse Remover
 						i(167794, {	-- Paint Vial: Lemonade Steel
 							["questID"] = 55454, -- Paint Vial: Lemonade Steel
+							["g"] = {
+								crit(5, {	-- Lemonade Steel
+									["achievementID"] = 13513,	-- Available in Eight Colors
+								}),
+							},
 						}),
 					},
 				}),
@@ -401,6 +440,11 @@ _.Zones =
 						}),
 						i(168001, {	-- Paint Vial: Big-ol Bronze
 							["questID"] = 55517, -- Paint Vial: Big-ol Bronze
+							["g"] = {
+								crit(1, {	-- Big-ol Bronze
+									["achievementID"] = 13513,	-- Available in Eight Colors
+								}),
+							},
 						}),
 					},
 				}),
