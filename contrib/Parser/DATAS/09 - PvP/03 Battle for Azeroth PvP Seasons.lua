@@ -2253,12 +2253,10 @@ _.PVP =
 					i(167382),	-- Notorious Gladiator's Cloak (A)
 					i(167373),	-- Notorious Gladiator's Cape (A)
 					i(167372),	-- Notorious Gladiator's Drape (A)
-					i(167371),	-- Notorious Gladiator's Greatcloak (A)
 					i(167370),	-- Notorious Gladiator's Shawl (A)
 					i(167381),	-- Notorious Gladiator's Cloak (H)
 					i(167369),	-- Notorious Gladiator's Cape (H)
 					i(167368),	-- Notorious Gladiator's Drape (H)
-					i(167367),	-- Notorious Gladiator's Greatcloak (H)
 					i(167366),	-- Notorious Gladiator's Shawl (H)
 				}),
 				n(-43, {	-- Cloth
