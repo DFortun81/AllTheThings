@@ -570,7 +570,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
-					i(170075),	-- Recipe: Unagi Skewer
 				},
 			}),
 			o(327585, {	-- Bounty Board

@@ -422,6 +422,8 @@ _.NeverImplemented =
 		q(56975),	-- Triggers when receiving "Mardivas's Rentention Dimension Invention (itemID 170475) from a Glowing Arcane Trunk
 		q(56976),	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
 		q(56977),	-- Triggers when receiving "Mardivas's Universally Lauded Tote" (itemID 170477) from a Glowing Arcane Trunk
+		q(57191),	-- Glimmering Chest — Prismatic Manapearls
+		q(57192),	-- Glimmering Chest — Prismatic Manapearls
 		q(55427),	-- Ravenous Slime fed (55.1, 48.8)
 		q(55470),	-- Ravenous SLime fed 5x to spawn the Slimy Cocoon(55.1, 48.8)
 		q(55475),	-- Slimy Cocoon opened (55.1, 48.8)
@@ -441,6 +443,7 @@ _.NeverImplemented =
 		q(56615),	-- Amethyst Spireshell first kill
 		q(56614),	-- Blightlight first kill
 		q(56887),	-- Carnivorous Lasher first kill
+		q(57186),	-- Carnivorous Lasher, Azerite
 		q(56600),	-- Caverndark Terror first kill
 		q(56613),	-- Chasm Haunter first kill
 		q(56612),	-- Daggertooth Terror first kill

@@ -703,6 +703,7 @@ _.Zones =
 						["isDaily"] = true,
 						["groups"] = {
 							i(153276),	-- Forgotten Conservatory Amice*
+							i(153270),	-- Forgotten Conservatory Sash* — confirmed on Discord
 							i(153275),	-- Forgotten Conservatory Slippers
 							i(153334),	-- Mac'Aree Lightseeker's Spaulders
 							i(153335),	-- Mac'Aree Lightseeker's Handguards
