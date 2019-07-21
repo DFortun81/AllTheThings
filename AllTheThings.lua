@@ -1329,7 +1329,14 @@ local function ResolveSymbolicLink(o)
 			if cmd == "select" then
 				-- Instruction to search the full database for something.
 				for k,s in ipairs(app.SearchForField(sym[2], sym[3])) do
-					table.insert(searchResults, s);
+					local ref = ResolveSymbolicLink(s);
+					if ref then
+						for i,o in ipairs(ref) do
+							table.insert(searchResults, o);
+						end
+					else
+						table.insert(searchResults, s);
+					end
 				end
 			elseif cmd == "pop" then
 				-- Instruction to "pop" all of the group values up one level.
@@ -7451,6 +7458,13 @@ local function CreateMiniListForGroup(group)
 				["g"] = g,
 				["hideText"] = true
 			};
+		elseif group.sym then
+			popout.data = CloneData(group);
+			popout.data.collectible = true;
+			popout.data.visible = true;
+			popout.data.progress = 0;
+			popout.data.total = 0;
+			popout.data.g = ResolveSymbolicLink(group);
 		elseif group.g then
 			-- This is already a container with accurate numbers.
 			popout.data = group;
