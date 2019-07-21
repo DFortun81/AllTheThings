@@ -36,6 +36,20 @@ _.Zones =
 						recipe(296147),	-- Mining Technique: Osmenite Deposit (Rank 3)
 					},
 				}),
+				q(56126, {	-- Seams to be a Problem (A)
+					["itemID"] = 168954,	-- Osmenite Dust
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						recipe(296143),	-- Mining Technique: Osmenite Seam (Rank 3)
+					},
+				}),
+				q(56432, {	-- Seams to be a Problem (H)
+					["itemID"] = 169598,	-- Osmenite Dust
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						recipe(296143),	-- Mining Technique: Osmenite Seam (Rank 3)
+					},
+				}),
 			}),
 		}),
 	}),

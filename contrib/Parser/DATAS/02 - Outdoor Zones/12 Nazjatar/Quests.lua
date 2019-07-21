@@ -2205,6 +2205,14 @@ _.Zones =
 				["coord"] = { 39.2, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
+			q(55775, {	-- WANTED: Haggronar
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			--	["objectID"] = 326140,	-- Bounty Board
+				["isDaily"] = true,
+				["coord"] = { 39.2, 54.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(55774, {	-- WANTED: Inquisitor Ithriza
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
