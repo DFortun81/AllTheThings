@@ -10,16 +10,35 @@ _.WorldEvents =
 			{
 				["vignetteID"] = 47063,
 				["qgs"] = {
-					118180,	-- Dread Vizier Gra'tork <Legion Commander
+					118180,	-- Dread Vizier Gra'tork <Legion Commander>
 					119579,	-- Fel Commander Erixtol
 					118840,	-- Lord Commander Alexius
 					118975,	-- Xeritas
 				},
-				["collectible"] = false,
+				["repeatable"] = true,
 				["maps"] = {
 					619,	-- Stormheim Invasion Scenario
 					865,	-- Stormheim Invasion Scenario: Upper Ship Floor
 					866,	-- Stormheim Invasion Scenario: Lower Ship Floor
+				},
+				["sym"] = {
+					{"select", "npcID", -543},	-- Select Legion Invasions
+					{"pop"},	-- Push all of the groups contained to the processing layer.
+					{"where", "npcID", -34 },	-- Select the World Quest header.
+					{"pop"},	-- Push all of the groups contained to the processing layer.
+					{"select", "itemID", 147216},	-- Dauntless Hood
+					{"select", "itemID", 147221},	-- Dauntless Choker
+					{"select", "itemID", 147218},	-- Dauntless Spaulders
+					{"select", "itemID", 147222},	-- Dauntless Cloak
+					{"select", "itemID", 147213},	-- Dauntless Tunic
+					{"select", "itemID", 147212},	-- Dauntless Bracers
+					{"select", "itemID", 147215},	-- Dauntless Gauntlets
+					{"select", "itemID", 147219},	-- Dauntless Girdle
+					{"select", "itemID", 147217},	-- Dauntless Leggings
+					{"select", "itemID", 147214},	-- Dauntless Treads
+					{"select", "itemID", 147220},	-- Dauntless Ring
+					{"select", "itemID", 147223},	-- Dauntless Trinket
+					{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 				},
 				["groups"] = {
 					i(139158),	-- Battle Mace of the Niskaran Guard
@@ -35,91 +54,6 @@ _.WorldEvents =
 					i(139164),	-- Wrathblade
 					i(139165),	-- Bloodseeker's Bulwark
 					i(139166),	-- Soulstealer's Barrier
-					i(146766),  -- Nethercaller Cloak
-					i(146767),	-- Portal Keeper's Seal
-					i(146786),	-- Vileweave Cap
-					i(146791),	-- Vileweave Amice
-					i(146789),	-- Vileweave Robes
-					i(146792),	-- Vileweave Cuffs
-					i(146787),	-- Vileweave Mitts
-					i(146785),	-- Vileweave Sash
-					i(146788),	-- Vileweave Leggings
-					i(146790),	-- Vileweave Slippers
-					i(146772),	-- Netherfiend Headgear
-					i(146774),	-- Netherfiend Mantle
-					i(146773),	-- Netherfiend Chestpiece
-					i(146768),	-- Netherfiend Armbands
-					i(146771),	-- Netherfiend Grips
-					i(146775),	-- Netherfiend Belt
-					i(146770),	-- Netherfiend Trousers
-					i(146769),	-- Netherfiend Treads
-					i(146781),	-- Ered'ruin Coif
-					i(146783),	-- Ered'ruin Spaulders
-					i(146784),	-- Ered'ruin Chestguard
-					i(146778),	-- Ered'ruin Bracers
-					i(146779),	-- Ered'ruin Gloves
-					i(146777),	-- Ered'ruin Girdle
-					i(146782),	-- Ered'ruin Legguards
-					i(146780),	-- Ered'ruin Boots
-					i(146761),	-- Xorothian Helmet
-					i(146763),	-- Xorothian Pauldrons
-					i(146758),	-- Xorothian Breastplate
-					i(146765),	-- Xorothian Vambraces
-					i(146759),	-- Xorothian Gauntlets
-					i(146760),	-- Xorothian Waistplate
-					i(146762),	-- Xorothian Greaves
-					i(146764),	-- Xorothian Sabatons
-					i(147216, {	-- Dauntless Hood
-						i(147241),	-- Cloth
-						i(147242),	-- Leather
-						i(147243),	-- Mail
-						i(147244),	-- Plate
-					}),
-					i(147218, {	-- Dauntless Spaulders
-						i(147249),	-- Cloth
-						i(147250),	-- Leather
-						i(147251),	-- Mail
-						i(147252),	-- Plate
-					}),
-					i(147222, {	-- Dauntless Cloak
-						i(147269) -- Cloak
-					}),
-					i(147213, {	-- Dauntless Tunic
-						i(147232),	-- Cloth
-						i(147229),	-- Leather
-						i(147230),	-- Mail
-						i(147231),	-- Plate
-					}),
-					i(147212, {	-- Dauntless Bracers
-						i(147225),	-- Cloth
-						i(147226),	-- Leather
-						i(147227),	-- Mail
-						i(147228),	-- Plate
-					}),
-					i(147215, {	-- Dauntless Gauntlets
-						i(147237),	-- Cloth
-						i(147238),	-- Leather
-						i(147239),	-- Mail
-						i(147240),	-- Plate
-					}),
-					i(147219, {	-- Dauntless Girdle
-						i(147253),	-- Cloth
-						i(147254),	-- Leather
-						i(147255),	-- Mail
-						i(147256),	-- Plate
-					}),
-					i(147217, {	-- Dauntless Leggings
-						i(147245),	-- Cloth
-						i(147246),	-- Leather
-						i(147247),	-- Mail
-						i(147248),	-- Plate
-					}),
-					i(147214, {	-- Dauntless Treads
-						i(147233),	-- Cloth
-						i(147234),	-- Leather
-						i(147235),	-- Mail
-						i(147236),	-- Plate
-					}),
 				},
 			},
 			n(-34, { 	-- World Quests
@@ -156,6 +90,7 @@ _.WorldEvents =
 				i(146760),	-- Xorothian Waistplate
 				i(146762),	-- Xorothian Greaves
 				i(146764),	-- Xorothian Sabatons
+				i(146767),	-- Portal Keeper's Seal
 			}),
 		},
 	}),
