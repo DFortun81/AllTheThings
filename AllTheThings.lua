@@ -1423,13 +1423,31 @@ local function ResolveSymbolicLink(o)
 					table.insert(finalized, s);
 				end
 				wipe(searchResults);
-			elseif cmd == "postprocess" then
-				-- Instruction to take all of the the finalized and non-finalized search results and merge them back in for post-processing.
+			elseif cmd == "merge" then
+				-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue.
 				for k,s in ipairs(searchResults) do
 					table.insert(finalized, s);
 				end
 				searchResults = finalized;
 				finalized = {};
+			elseif cmd == "postprocess" then
+				-- Instruction to take all of the current search results and ensure that there are no duplicated primary keys.
+				local uniques = {};
+				for k,s in ipairs(searchResults) do
+					MergeObject(uniques, s);
+				end
+				searchResults = uniques;
+			elseif cmd == "itemslot" then
+				-- Instruction to include only search results where an item is of a specific item slot.
+				local slots = {unpack(sym)};
+				table.remove(slots, 1);
+				table.remove(slots, 1);
+				for k=#searchResults,1,-1 do
+					local s = searchResults[k];
+					if s.itemID and not contains(slots, select(4, GetItemInfoInstant(s.itemID))) then
+						table.remove(searchResults, k);
+					end
+				end
 			end
 		end
 		

@@ -66,6 +66,11 @@ profession(185, {	-- Cooking
 	},
 	n(101846, {	-- Nomi
 		["description"] = "Takes various meat, fish, and animal byproducts for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
+		["maps"] = { -- Do not include 626 as that is Rogue Class Hall
+			627,	-- Dalaran (Broken Isles)
+			628,	-- The Underbelly,
+			629,	-- Aegwynn's Gallery [May separate out later]
+		},
 		["groups"] = {
 			i(124119, {	-- Big Gamy Ribs
 				i(133835),	-- Recipe: Spiced Rib Roast [Rank 2]
