@@ -77,14 +77,7 @@ _.Zones =
 					ach(13477),		-- Junkyard Apprentice
 					ach(13474),		-- Junkyard Machinist
 					ach(13513),		-- Available in Eight Colors
-					ach(13686, {	-- Junkyard Melomanic
-						crit(1),	-- Ode to Tinkertown
-						crit(2),	-- Gnomeregan Forever
-						crit(3),	-- Mimiron's Brainstorm
-						crit(4),	-- Battle of Gnomeregan
-						crit(5),	-- Depths of Ulduar
-						crit(6),	-- Triumph of Gnomeregan
-					}),
+					ach(13686),		-- Junkyard Melomanic
 					ach(13791),		-- Making the Mount
 					ach(13790, {	-- Armed for Action
 						["description"] = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",

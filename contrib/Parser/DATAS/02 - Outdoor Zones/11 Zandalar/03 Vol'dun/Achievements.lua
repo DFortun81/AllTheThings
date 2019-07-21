@@ -29,6 +29,7 @@ _.Zones =
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
 						i(162628, {	-- Tales of de Loa: Akunda
+							["questID"] = 53532,
 							["coord"] = { 42.22, 62.11, 864 },
 							["g"] = {
 								crit(1),	--  Tales of de Loa: Akunda
@@ -41,6 +42,7 @@ _.Zones =
 							},
 						}),
 						i(163333, {	-- Tales of de Loa: Sethraliss
+							["questID"] = 53543,
 							["coord"] = { 49.57, 24.43, 864 },
 							["g"] = {
 								crit(11),	--  Tales of de Loa: Sethraliss
@@ -199,10 +201,15 @@ _.Zones =
 					},
 				}),
 				ach(13027, {	-- Mushroom Harvest
-					n(143313, {	-- Portakillo
-						--["questID"] = ,	-- did not trigger a quest completion upon death
-						["criteriaID"] = 3,	-- Portakillo
-					}),
+					["collectible"] = false,    -- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+                    ["g"] = {
+                        n(143313, {    -- Portakillo
+                            ["coord"] = { 61.2, 18.0, 864 },
+                            ["g"] = {
+                                crit(3),    -- Portakillo
+                            },
+                        }),
+                    },
 				}),
 				ach(13016, {	-- Scavenger of the Sands
 					crit(1, {	-- Jason's Rusty Blade
