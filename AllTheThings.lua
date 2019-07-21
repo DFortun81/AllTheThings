@@ -1331,6 +1331,11 @@ local function ResolveSymbolicLink(o)
 				for k,s in ipairs(app.SearchForField(sym[2], sym[3])) do
 					local ref = ResolveSymbolicLink(s);
 					if ref then
+						if s.g then
+							for i,o in ipairs(s.g) do
+								table.insert(searchResults, o);
+							end
+						end
 						for i,o in ipairs(ref) do
 							table.insert(searchResults, o);
 						end
@@ -7464,7 +7469,16 @@ local function CreateMiniListForGroup(group)
 			popout.data.visible = true;
 			popout.data.progress = 0;
 			popout.data.total = 0;
-			popout.data.g = ResolveSymbolicLink(group);
+			if not popout.data.g then
+				popout.data.g = ResolveSymbolicLink(group);
+			else
+				local resolved = ResolveSymbolicLink(group);
+				if resolved then
+					for i,o in ipairs(resolved) do
+						MergeObject(popout.data.g, o);
+					end
+				end
+			end
 		elseif group.g then
 			-- This is already a container with accurate numbers.
 			popout.data = group;
