@@ -124,6 +124,13 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
+			q(55662, {	-- Arcane Cache
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			--	["objectID"] = ,	-- Arcane Cache — unknown, not linked to quest
+				["coord"] = { 53.1, 28.3, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(55983, {	-- A Safer Place (A)
 				["qg"] = 152084,	-- Mrrl
 				["coord"] = { 48.1, 45.3, 1355 },
@@ -2134,6 +2141,14 @@ _.Zones =
 				["coord"] = { 48.5, 62.1, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56236,	-- Down But Not Out
+			}),
+			q(56781, {	-- Treasure in the Deep
+				["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 150202,	-- Hunter Akana
+				["g"] = {
+					i(169917),	-- Mysterious Azshari Cache
+				},
 			}),
 			q(56790, {	-- Treasure to Find
 				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 9.",
