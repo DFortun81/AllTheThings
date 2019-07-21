@@ -6,17 +6,11 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(14, {	-- Arathi Highlands
 			n(-17, {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-				ach(4896, {		-- Arathi Highlands Quests
-					crit(1),		-- Faldir's Cove
-					crit(2),		-- Refuge Pointe / Galen's Fall
-					crit(3),		-- Myzrael's Tale / Hammerfall
-				}),
-]]--
-				q(26081, {	-- Alina's Reward (awarded "Galen's Fall" criteria)
+				q(26081, {	-- Alina's Reward
 					["qg"] = 41944,	-- Galen Trollbane
+					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26033 },	-- Trol'kalar
+					["sourceQuest"] = 26033,	-- Trol'kalar
 					["g"] = {
 						i(59194),	-- Sandals of Satisfaction
 						i(59195),	-- Bracers of Sensations
@@ -26,21 +20,6 @@ _.Zones =
 						i(131480),	-- Grips of the Forsaken
 					},
 				}),
-				qpvp(q(8262, {	-- Arathor Advanced Care Package
-					["qg"] = 15127,	-- Samuel Hawke
-					["races"] = ALLIANCE_ONLY,
-					["description"] = "To get this quest, you must be Friendly with The League of Arathor.",
-				})),
-				qpvp(q(8260, {	-- Arathor Basic Care Package
-					["qg"] = 15127,	-- Samuel Hawke
-					["races"] = ALLIANCE_ONLY,
---						["description"] = "To get this quest, you must be ??? with The League of Arathor.",
-				})),
-				qpvp(q(8261, {	-- Arathor Standard Care Package
-					["qg"] = 15127,	-- Samuel Hawke
-					["races"] = ALLIANCE_ONLY,
---						["description"] = "To get this quest, you must be ??? with The League of Arathor.",
-				})),
 				q(26038, {	-- Attack on the Tower (awarded "Refuge Pointe" criteria)
 					["qg"] = 41983,	-- Apprentice Kryten
 					["races"] = ALLIANCE_ONLY,
@@ -54,6 +33,12 @@ _.Zones =
 						i(131470),	-- Refuge Cinch
 					},
 				}),
+				q(26042, {	-- Breaking the Keystone
+					--["objectID"] = 2702,	-- Stone of Inner Binding
+					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
+					["coord"] = { 30.0, 59.0, 14 },
+					["sourceQuest"] = 26041,	-- Stones of Binding
+				}),
 				q(679, {	-- Call to Arms
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -64,8 +49,9 @@ _.Zones =
 				}),
 				q(26027, {	-- Call to Arms
 					["qg"] = 41966,	-- Deathstalker Maudria
+					["coord"] = { 13.3, 33.9, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26053 },	-- Clearing the Highlands
+					["sourceQuest"] = 26053,	-- Clearing the Highlands
 					["g"] = {
 						i(59178),	-- Ramshackle Bracers
 						i(59179),	-- Extra Credit Boots
@@ -75,8 +61,9 @@ _.Zones =
 						i(131468),	-- Chain of Ogre Ruin
 					},
 				}),
-				q(26053, {	-- Clearing the Highlands
+				q(26053, {	-- Clearing the Highlands -- aa
 					["qg"] = 41966,	-- Deathstalker Maudria
+					["coord"] = { 13.3, 34.3, 14 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(8115, {	-- Control Five Bases (pvp)
@@ -91,7 +78,9 @@ _.Zones =
 				}),
 				q(26429, {	-- Crush the Witherbark
 					["qg"] = 2771,	-- Drum Fel
+					["coord"] = { 69.0, 34.8, 14 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
 				}),
 				q(42535, {	-- Death... and Decay
 					["qg"] = 107806,	-- Prince Galen Trollbane
@@ -105,9 +94,10 @@ _.Zones =
 						un(2, i(4549)),	-- Seafire Band
 					},
 				}),
-				q(26628, {	-- Death From Below (awarded "Faldir's Cover" criteria)
+				q(26628, {	-- Death From Below
 					["qg"] = 2610,	-- Shakes O'Breen
-					["sourceQuests"] = { 26052 },	-- Speak to Shakes
+					["coord"] = { 25.9, 83.8, 14 },
+					["sourceQuest"] = 26052,	-- Speak to Shakes
 					["g"] = {
 						i(59212),	-- O'Breen's Dress Robes
 						i(59213),	-- Faldir's Leggings
@@ -123,30 +113,15 @@ _.Zones =
 						un(2, i(4511)),	-- Black Water Hammer
 					},
 				}),
-				qpvp(q(8265, {	-- Defiler's Advanced Care Package
-					["qg"] = 15126,	-- Rutherford Twing
-					["races"] = HORDE_ONLY,
-					["description"] = "To get this quest, you must be Friendly with The Defilers.",
-				})),
-				qpvp(q(8263, {	-- Defiler's Basic Care Package
-					["qg"] = 15126,	-- Rutherford Twing
-					["races"] = HORDE_ONLY,
---						["description"] = "To get this quest, you must be ??? with The Defilers.",
-				})),
-				qpvp(q(8264, {	-- Defiler's Standard Care Package
-					["qg"] = 15126,	-- Rutherford Twing
-					["races"] = HORDE_ONLY,
---						["description"] = "To get this quest, you must be ??? with The Defilers.",
-				})),
 				q(664, {	-- Drowned Sorrows
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4509)),	-- Seawolf Gloves
 					},
 				}),
-				q(26055, {	-- Drowned Sorrows
+				q(26055, {	-- Drowned Sorrows -- aa
 					["qg"] = 2769,	-- Captain Steelgut
-					["sourceQuests"] = { 26083 },	-- Hello Lolo
+					["coord"] = { 27.7, 83.2, 14 },
 					["g"] = {
 						i(59205),	-- Folly's Spar
 						i(59206),	-- Steelgut Vest
@@ -154,8 +129,9 @@ _.Zones =
 						i(131475),	-- Steelgut's Undermail
 					},
 				}),
-				q(26022, {	-- First Blood
+				q(26022, {	-- First Blood -- aa
 					["qg"] = 41949,	-- Dark Ranger Alina
+					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28619 },	-- Warchief's Command: Arathi Highlands!
 				}),
@@ -178,14 +154,15 @@ _.Zones =
 						un(2, i(4543)),	-- White Drakeskin Cap
 					},
 				}),
-				q(26050, {	-- Goggle Boggle
+				q(26050, {	-- Goggle Boggle -- aa
 					["qg"] = 2768,	-- Professor Phizzlethorpe
-					["sourceQuests"] = { 26083 },	-- Hello Lolo
+					["coord"] = { 27.5, 83.0, 14 },
 				}),
 				q(26108, {	-- Guile of the Raptor
 					["qg"] = 42130,	-- Gor'mul
+					["coord"] = { 67.7, 34.7, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26107 },	-- Raising Spirits
+					["sourceQuest"] = 26107,	-- Raising Spirits
 					["g"] = {
 						i(59203),	-- Hammerfall Gloves
 						i(59204),	-- Hammerfall Mace
@@ -196,13 +173,15 @@ _.Zones =
 				}),
 				q(26084, {	-- Hammerfall
 					["qg"] = 41949,	-- Dark Ranger Alina
+					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26081 },	-- Alina's Reward
+					["sourceQuest"] = 26081,	-- Alina's Reward
 				}),
 				q(26083, {	-- Hello Lolo
 					["qg"] = 42088,	-- Goutgut
+					["coord"] = { 12.8, 34.0, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26081 },	-- Alina's Reward
+					["sourceQuest"] = 26081,	-- Alina's Reward
 				}),
 				q(661, {	-- Hints of a New Plague?
 					["u"] = 40,
@@ -215,11 +194,6 @@ _.Zones =
 				q(26943, {	-- Home Sweet Gnome (mutually exclusive with 26944 "Exploring Gnomeregan")
 					["qg"] = 2789,	-- Skuerto
 					["races"] = ALLIANCE_ONLY,
-				}),
-				o(2701, {	-- Iridescent Shards
-					q(26041, {	-- Stones of Binding
-						["sourceQuests"] = { 26039 },	-- The Princess Trapped
-					}),
 				}),
 				q(26110, {	-- Just Like Old Times
 					["qg"] = 2712,	-- Quae
@@ -239,13 +213,27 @@ _.Zones =
 						un(2, i(15104)),	-- Wingborne Boots
 					},
 				}),
+				q(26346, {	-- Myzrael's Tale (A)
+					--["objectID"] = 2702,	-- Stone of Inner Binding
+					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
+					["coord"] = { 30.0, 58.9, 14 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26042,	-- Breaking the Keystone
+				}),
+				q(26911, {	-- Myzrael's Tale (H)
+					--["objectID"] = 2702,	-- Stone of Inner Binding
+					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
+					["coord"] = { 30.0, 58.9, 14 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26042,	-- Breaking the Keystone
+				}),
 				q(26093, {	-- Northfold Manor
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2700,	-- Captain Nials
 					["sourceQuests"] = {
 						28573,	-- Hero's Call: Arathi Highlands!
 						26139,	-- Into Arathi
 					},
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2700,	-- Captain Nials
 				}),
 				q(42534, {	-- Our Oldest Enemies
 					["qg"] = 107806,	-- Prince Galen Trollbane
@@ -261,8 +249,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26110 },	-- Just Like Old Times
 				}),
-				q(26107, {	-- Raising Spirits
+				q(26107, {	-- Raising Spirits -- aa
 					["qg"] = 42130,	-- Gor'mul
+					["coord"] = { 67.7, 34.7, 14 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(42536, {	-- Regicide
@@ -272,8 +261,10 @@ _.Zones =
 				}),
 				q(26430, {	-- Revantusk Village
 					["qg"] = 2771,	-- Drum Fel
+					["coord"] = { 69.0, 34.8, 14 },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,	-- bcrumb for The Hinterlands (not sure if mutually exclusive with Warchief's Command quest)
+					["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
+					["isBreadcrumb"] = true,
 				}),
 				q(26336, {	-- Shakes O'Breen
 					["qg"] = 2789,	-- Skuerto
@@ -281,35 +272,32 @@ _.Zones =
 				}),
 				q(26032, {	-- Sigil of Arathor
 					["qg"] = 41944,	-- Galen Trollbane
+					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26031 },	-- Sigil of Thoradin
+					["sourceQuest"] = 26031,	-- Sigil of Thoradin
 				}),
 				q(26030, {	-- Sigil of Strom
 					["qg"] = 41944,	-- Galen Trollbane
+					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26023 },	-- The Forsaken Trollbane
+					["sourceQuest"] = 26023,	-- The Forsaken Trollbane
 				}),
 				q(26031, {	-- Sigil of Thoradin
 					["qg"] = 41944,	-- Galen Trollbane
+					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26030 },	-- Sigil of Strom
+					["sourceQuest"] = 26030,	-- Sigil of Strom
 				}),
 				q(26052, {	-- Speak to Shakes
 					["qg"] = 2774,	-- Doctor Draxlegauge
-					["sourceQuests"] = { 26051 },	-- Sunken Treasure
+					["coord"] = { 27.5, 82.9, 14 },
+					["sourceQuest"] = 26051,	-- Sunken Treasure
 				}),
-				o(2702, {	-- Stone of Inner Binding
-					q(26042, {	-- Breaking the Keystone
-						["sourceQuests"] = { 26041 },	-- Stones of Binding
-					}),
-					q(26346, {	-- Myzrael's Tale
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 26042 },	-- Breaking the Keystone
-					}),
-					q(26911, {	-- Myzrael's Tale
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 26042 },	-- Breaking the Keystone
-					}),
+				q(26041, {	-- Stones of Binding
+					--["objectID"] = 2701,	-- Iridescent Shards
+					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
+					["coord"] = { 79.8, 31.6, 14 },
+					["sourceQuests"] = { 26039 },	-- The Princess Trapped
 				}),
 				q(682, {	-- Stromgarde Badges
 					["u"] = 40,
@@ -321,7 +309,7 @@ _.Zones =
 				q(26095, {	-- Stromgarde Badges
 					["qg"] = 2700,	-- Captain Nials
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26093 },	-- Northfold Manner
+					["sourceQuest"] = 26093,	-- Northfold Manner
 					["g"] = {
 						i(59190),	-- Slippers of Sorrowful Tidings
 						i(59191),	-- Yellow Ribbon Armbands
@@ -346,12 +334,13 @@ _.Zones =
 				}),
 				q(26051, {	-- Sunken Treasure
 					["qg"] = 2774,	-- Doctor Draxlegauge
-					["sourceQuests"] = { 26050 },	-- Goggle Boggle
+					["coord"] = { 27.5, 82.9, 14 },
+					["sourceQuest"] = 26050,	-- Goggle Boggle
 					["g"] = {
 						i(59199),	-- Bottom Waders
 						i(59200),	-- Decalcified Elven Spear
 						i(131474),	-- Chain Weighted Shoes
-						i(156948),	-- Waterlogged Elven Spear 
+						i(156948),	-- Waterlogged Elven Spear
 					},
 				}),
 				q(8122, {	-- Take Five Bases (pvp)
@@ -376,18 +365,20 @@ _.Zones =
 				}),
 				q(26023, {	-- The Forsaken Trollbane
 					["qg"] = 41949,	-- Dark Ranger Alina
+					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26022 },	-- First Blood
-				}),
-				o(138492, {	-- Shards of Myzrael
-					q(26039, {	-- The Princess Trapped
-						["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
-					}),
+					["sourceQuest"] = 26022,	-- First Blood
 				}),
 				q(42537, {	-- The King Rises
 					["qg"] = 108042,	-- Thassarian
 					["lvl"] = 100,
 					["classes"] = { 6 },	-- Death Knight
+				}),
+				q(26039, {	-- The Princess Trapped -- aa
+					--["objectID"] = 138492,	-- Shards of Myzrael
+					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
+					["coord"] = { 57.2, 34.5, 14 },
+					["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
 				}),
 				q(26049, {	-- The Princess Unleashed
 					["qg"] = 2789,	-- Skuerto
@@ -403,8 +394,9 @@ _.Zones =
 				}),
 				q(26912, {	-- The Princess Unleashed (awarded "Hammerfall" criteria and overall "Arathi Highlands Quests" achievement)
 					["qg"] = 2787,	-- Zaruk
+					["coord"] = { 69.6, 36.5, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26911 },	-- Myzrael's Tale
+					["sourceQuest"] = 26911,	-- Myzrael's Tale
 					["g"] = {
 						i(59208),	-- Wrap of Open Menace
 						i(59209),	-- Eldritch Gloves
@@ -423,8 +415,9 @@ _.Zones =
 				}),
 				q(26029, {	-- The Real Threat
 					["qg"] = 41966,	-- Deathstalker Maudria
+					["coord"] = { 13.3, 33.9, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26027 },	-- Call to Arms
+					["sourceQuest"] = 26027,	-- Call to Arms
 					["g"] = {
 						i(59186),	-- Skullslasher
 						i(59187),	-- Silent Huntress
@@ -437,15 +430,17 @@ _.Zones =
 					["qg"] = 2789,	-- Skuerto
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26909, {	-- The Stone Shards
+				q(26909, {	-- The Stone Shards -- aa
 					["qg"] = 2787,	-- Zaruk
+					["coord"] = { 69.6, 36.5, 14 },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,	-- for "The Princess Trapped"
+					["isBreadcrumb"] = true,
 				}),
 				q(26025, {	-- The Traitor Orc
 					["qg"] = 41949,	-- Dark Ranger Alina
+					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26022 },	-- First Blood
+					["sourceQuest"] = 26022,	-- First Blood
 					["g"] = {
 						i(59171),	-- Bloodstone-Studded Cloak
 						i(59172),	-- Drakeskin Leggings
@@ -453,8 +448,9 @@ _.Zones =
 						i(131466),	-- Highland Chain Greaves
 					},
 				}),
-				q(26428, {	-- To Steal From Thieves
+				q(26428, {	-- To Steal From Thieves -- aa
 					["qg"] = 4486,	-- Genavie Callow
+					["coord"] = { 13.7, 33.9, 14 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(59158),	-- Craig's Steel
@@ -488,8 +484,9 @@ _.Zones =
 				}),
 				q(26033, {	-- Trol'kalar
 					["qg"] = 41944,	-- Galen Trollbane
+					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26032 },	-- Sigil of Arathor
+					["sourceQuest"] = 26032,	-- Sigil of Arathor
 				}),
 				q(26036, {	-- Wand over Fist
 					["qg"] = 2789,	-- Skuerto

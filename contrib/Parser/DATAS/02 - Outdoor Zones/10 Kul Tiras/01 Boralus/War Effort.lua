@@ -12,6 +12,7 @@ _.Zones =
 						q(53194, {	-- To The Front
 							["qg"] = 142721,		-- Ralston Karn
 							["coord"] = { 65.89, 26.03, 1161 },
+							["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
 						}),
 						q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
 							["qg"] = 142721,	-- Ralston Karn <Recruitment Officer>

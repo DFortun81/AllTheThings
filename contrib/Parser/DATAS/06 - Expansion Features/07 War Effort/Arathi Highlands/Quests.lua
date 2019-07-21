@@ -11,6 +11,8 @@ _.ExpansionFeatures =
 					["sourceQuest"] = 53197,	-- Touring the Front
 					["coord"] = { 19.26, 61.77, 14 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
 					["g"] = {
 						n(-234, {	-- Warfront: The Battle for Stromgarde
 							q(53206),	-- Unlock
@@ -22,31 +24,13 @@ _.ExpansionFeatures =
 					["sourceQuest"] = 53210,	-- Touring the Front
 					["coord"] = { 26.11, 35.59, 14 },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
 					["g"] = {
 						n(-233, {	-- Warfront: The Battle for Stromgarde
 							q(53220),	-- Unlock
 						}),
 					},
-				}),
-				q(53146, { 	-- Boulderfist Beatdown
-					["repeatable"] = true,
-					["sourceQuest"] = 53198,	-- Back to Boralus
-					["coord"]  = { 21.71, 64.88, 14 },
-					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						143172,	-- Yvera Dawnwing [Arathi Highlands Location]
-						143380,	-- Yvera Dawnwing [Boralus Location]
-					},
-					["g"] = {
-						currency(1560),	-- War Resources
-					},
-				}),
-				q(53148, {	-- Boulderfist Beatdown [Horde]
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["groups"] = {
-						currency(1560),
-					}
 				}),
 				q(53153, { 	-- Death to the Defilers
 					["u"] = 2,
@@ -117,76 +101,19 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				q(53179, { 	-- Executing Exorcisms
-					["repeatable"] = true,
-					["sourceQuest"] = 53198,	-- Back to Boralus
-					["coords"]  = { 21.71, 64.88, 14 },
+				q(53197, {	-- Touring the Front (A)
+					["qg"] = 143018,		-- Captain Roderick Brewston
+					["coord"] = { 19.26, 61.77, 14 },
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						143172,	-- Yvera Dawnwing [Arathi Highlands Location]
-						143380,	-- Yvera Dawnwing [Boralus Location]
-					},
-					["g"] = {
-						currency(1553),	-- Glowing Azerite
-					},
+					["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
+					["sourceQuest"] = 53194,	-- To The Front
 				}),
-				q(53179, {	-- Executing Exorcisms [Horde]
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["groups"] = {
-						currency(1553),
-					},
-				}),
-				q(53162, { 	-- Sins of the Syndicate
-					["repeatable"] = true,
-					["sourceQuest"] = 53198,	-- Back to Boralus
-					["coord"]  = { 21.71, 64.88, 14 },
-					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						143172,	-- Yvera Dawnwing [Arathi Highlands Location]
-						143380,	-- Yvera Dawnwing [Boralus Location]
-					},
-					["g"] = {
-						currency(1560),	-- War Resources
-					},
-				}),
-				q(53173, {	-- Sins of the Syndicate [Horde]
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["groups"] = {
-						currency(1560),
-					},
-				}),
-				q(53210, {	-- Touring the Front [Horde]
-					["sourceQuests"] = { 53208 },	-- To The Front
+				q(53210, {	-- Touring the Front (H)
 					["qg"] = 143019,	-- Wistel Sliversnitch
 					["races"] = HORDE_ONLY,
 					["coord"] = { 26.11, 35.59, 14 },
-				}),
-				q(53197, {	-- Touring the Front
-					["qg"] = 143018,		-- Captain Roderick Brewston
-					["sourceQuest"] = 53194,	-- To The Front
-					["coord"] = { 19.26, 61.77, 14 },
-				}),
-				q(53192, { 	-- Twice-Exiled
-					["repeatable"] = true,
-					["sourceQuest"] = 53198,	-- Back to Boralus
-					["coord"]  = { 21.71, 64.88, 14 },
-					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						143172,	-- Yvera Dawnwing [Arathi Highlands Location]
-						143380,	-- Yvera Dawnwing [Boralus Location]
-					},
-					["g"] = {
-						currency(1560),	-- War Resources
-					},
-				}),
-				q(53192, {	-- Twice-Exiled [Horde]
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["groups"] = {
-						currency(1560),
-					},
+					["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
+					["sourceQuest"] = 53208,	-- To The Front
 				}),
 				q(53154, { 	-- The League Will Lose [Horde]
 					["u"] = 2,
@@ -248,26 +175,6 @@ _.ExpansionFeatures =
 								i(163460),	-- Honorbound Centurion's Greaves
 							}),
 						}),
-					},
-				}),
-				q(53149, { 	-- Wiping Out the Winterbark
-					["repeatable"] = true,
-					["sourceQuest"] = 53198,	-- Back to Boralus
-					["coord"]  = { 21.71, 64.88, 14 },
-					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						143172,	-- Yvera Dawnwing [Arathi Highlands Location]
-						143380,	-- Yvera Dawnwing [Boralus Location]
-					},
-					["g"] = {
-						currency(1560),	-- War Resources
-					},
-				}),
-				q(53150, {	-- Wiping Out the Winterbark [Horde]
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["groups"] = {
-						currency(1560),
 					},
 				}),
 			}),

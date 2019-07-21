@@ -32,7 +32,7 @@ _.Zones =
 						i(9807),	-- Superior Shoulders
 						i(7419),	-- Phalanx Cloak
 					},
-				}), 
+				}),
 				n(50337, { 	-- Cackle
 					["coord"] = { 21.6, 88.6, 14 },
 					["g"] = {
@@ -62,7 +62,7 @@ _.Zones =
 						i(4715),	-- Emblazoned Cloak
 						i(6603),	-- Dervish Tunic
 					},
-				}), 
+				}),
 				n(2598, { 	-- Darbel Montrose
 					["coord"] = { 19.6, 64.2, 14 },
 					["g"] = {
@@ -92,7 +92,7 @@ _.Zones =
 						i(9810),	-- Fortified Boots
 						i(9792),	-- Ivycloth Boots
 					},
-				}), 
+				}),
 				n(2601, { 	-- Foulbelly
 					["coord"] = { 15.2, 68.2, 14 },
 					["g"] = {
@@ -130,7 +130,7 @@ _.Zones =
 						i(7415),	-- Dervish Spaulders
 						i(6611),	-- Sage's Sash
 					},
-				}), 
+				}),
 				n(2609, { 	-- Geomancer Flintdagger
 					["coord"] = { 79.6, 29.6, 14 },
 					["g"] = {
@@ -170,7 +170,7 @@ _.Zones =
 						un(7, i(5742)),	-- Gemstone Dagger
 						i(5743),	-- Prismstone Ring
 					},
-				}), 
+				}),
 				n(51067, { 	-- Glint
 					["coord"] = { 30.6, 61.4, 14 },
 					["g"] = {
@@ -236,7 +236,7 @@ _.Zones =
 						i(6605),	-- Dervish Gloves
 						un(7, i(5256)),	-- Kovork's Rattle
 					},
-				}), 
+				}),
 				n(2604, { 	-- Molok the Crusher
 					["coord"] = { 48.0, 76.2, 14 },
 					["g"] = {
@@ -272,7 +272,7 @@ _.Zones =
 						i(6569),	-- Shimmering Robe
 						i(6594),	-- Battleforge Girdle
 					},
-				}), 
+				}),
 				n(2606, { 	-- Nimar the Slayer
 					["coord"] = { 68.6, 66.7, 14 },
 					["g"] = {
@@ -312,7 +312,7 @@ _.Zones =
 						un(7, i(5257)),	-- Dark Hooded Cape
 						un(7, i(2622)),	-- Nimar's Tribal Headdress
 					},
-				}), 
+				}),
 				n(2779, { 	-- Prince Nazjak
 					["coords"] = {
 						{ 14.2, 86.1, 14 },
@@ -348,7 +348,7 @@ _.Zones =
 						i(6597),	-- Battleforge Shoulderguards
 						i(9831),	-- Scaled Cloak
 					},
-				}), 
+				}),
 				n(51063, { 	-- Phalanax
 					["coord"] = { 48.2, 81.4, 14 },
 					["g"] = {
@@ -372,7 +372,7 @@ _.Zones =
 						i(9807),	-- Superior Shoulders
 						i(9794),	-- Ivycloth Cloak
 					},
-				}), 
+				}),
 				n(50804, { 	-- Ripwing
 					["coord"] = { 36.5, 62.1, 14 },
 					["g"] = {
@@ -398,7 +398,7 @@ _.Zones =
 						i(6605),	-- Dervish Gloves
 						i(9797),	-- Ivycloth Pants
 					},
-				}), 
+				}),
 				n(2602, { 	-- Ruul Onestone
 					["coord"] = { 19.6, 30.6, 14 },
 					["g"] = {
@@ -440,7 +440,7 @@ _.Zones =
 						i(7410),	-- Infiltrator Bracers
 						i(10288),	-- Sage's Circlet
 					},
-				}), 
+				}),
 				n(50865, { 	-- Saurix
 					["coord"] = { 42.2, 35.8, 14 },
 					["g"] = {
@@ -471,7 +471,7 @@ _.Zones =
 						i(6614),	-- Sage's Cloak
 						i(6602),	-- Dervish Bracers
 					},
-				}), 
+				}),
 				n(2600, { 	-- Singer
 					["coord"] = { 27.4, 27.8, 14 },
 					["g"] = {
@@ -510,7 +510,7 @@ _.Zones =
 						i(5180),	-- Necklace of Harmony
 						un(7, i(5181)), 	-- Vibrant Silk Cape
 					},
-				}), 
+				}),
 				n(51040, { 	-- Snuffles
 					["coord"] = { 26.2, 27.6, 14 },
 					["g"] = {
@@ -543,7 +543,7 @@ _.Zones =
 						i(6614),	-- Sage's Cloak
 						i(9805),	-- Superior Cloak
 					},
-				}), 
+				}),
 				n(50940, { 	-- Swee
 					["coord"] = { 56.4, 56.4, 14 },
 					["g"] = {
@@ -569,7 +569,7 @@ _.Zones =
 						i(6612),	-- Sage's Boots
 						i(6394),	-- Silver-Thread Boots
 					},
-				}), 
+				}),
 				n(2605, { 	-- Zalas Witherbark
 					["coord"] = { 62.8, 81.0, 14 },
 					["g"] = {
@@ -601,7 +601,7 @@ _.Zones =
 						i(6617),	-- Sage's Mantle
 						i(13011),	-- Silver-Lined Belt
 					},
-				}), 
+				}),
 				n(50770, { 	-- Zorn
 					["coord"] = { 14.0, 22.0, 14 },
 					["g"] = {

@@ -161,24 +161,18 @@ _.Zones =
 							}),
 							q(53335, {	-- Wartime Donation: War Resources
 								["qg"] = 142158,	-- Quartermaster Rauka
-								["coords"] = {
-									{ 51.71, 95.07, 1165 },
-								},
-								["repeatable"] = true,
+								["coord"] = { 51.71, 95.07, 1165 },
 								["isWeekly"] = true,
 							}),
 							q(53208, {	-- To The Front
 								["sourceQuests"] = { 138949 },	-- The Warfront Looms
 								["qg"] = 138949,	-- Throk <Recruitment Officer>
-								["coords"] = {
-									{ 52.97, 94.35, 1165 },
-								},
+								["coord"] = { 52.97, 94.35, 1165 },
+								["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag
 							}),
 							q(53209, {	-- Warfront Contribution
 								["qg"] = 138949,	-- Throk <Recruitment Officer>
-								["coords"] = {
-									{ 52.97, 94.35, 1165 },
-								},
+								["coord"] = { 52.97, 94.35, 1165 },
 							}),
 							q(53207, {	-- The Warfront Looms
 								["qg"] = 138949,	-- Throk <Recruitment Officer>
