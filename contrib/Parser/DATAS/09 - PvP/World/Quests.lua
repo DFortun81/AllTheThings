@@ -9,14 +9,14 @@ _.PVP =
 				["races"] = HORDE_ONLY,
 				["g"] =	{
 					ach(12568),	-- The Alliance Slayer
-					title(626),	-- <Name>, the Alliance Slayer
+					title(376),	-- <Name>, the Alliance Slayer
 				},
 			}),
 			q(52784, {	-- The Horde Slayer
 				["races"] = ALLIANCE_ONLY,
 				["g"] =	{
 					ach(12567),	-- The Horde Slayer
-					title(625),	-- <Name>, the Horde Slayer
+					title(375),	-- <Name>, the Horde Slayer
 				},
 			}),
 		}),

@@ -375,7 +375,7 @@ _.Zones =
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
 						n(-4178, {	-- Season 10 (need new Header)
-							n(-660, {	-- Elite PvP Gear
+							n(-662, {	-- Elite PvP Gear
 								n(-319, {	-- Weapons
 									un(2, i(70178)),	-- Ruthless Gladiator's Greatsword
 									un(2, i(70179)),	-- Ruthless Gladiator's Staff

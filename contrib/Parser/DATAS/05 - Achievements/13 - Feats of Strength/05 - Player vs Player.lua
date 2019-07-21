@@ -8,7 +8,7 @@ _.Achievements =
 		["groups"] = {
 			n(-9958, {	-- Player vs Player
 				["groups"] = {
-					n(-664, {	-- Dread Gladiator: Battle for Azeroth Season 1
+					n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 						ach(12959, {	-- Challenger: Battle for Azeroth Season 1
 							["u"] = 4,
 							["g"] = {
@@ -76,7 +76,7 @@ _.Achievements =
 							},
 						}),
 					}),
-					n(-665,{	-- Sinister Gladiator: Battle for Azeroth Season 2
+					n(-690,{	-- Sinister Gladiator: Battle for Azeroth Season 2
 						ach(13203, {	-- Challenger: Battle for Azeroth Season 2
 							["u"] = 4,
 							["g"] = {
@@ -146,7 +146,7 @@ _.Achievements =
 							},
 						}),
 					}),
-					n(-666, {	-- Notorious Gladiator: Battle for Azeroth Season 3
+					n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 						ach(13634, {	-- Challenger: Battle for Azeroth Season 3
 						--	["u"] = 4, S3
 							["g"] = {

@@ -9,11 +9,11 @@ _.PVP =
 	---- for a total of 22 sources or a total of around 
 	---- 10000 Items.
 	n(-9981, {	-- Draenor
-		n(-661, {	-- Primal Gladiator: Warlords Season 1
+		n(-679, {	-- Primal Gladiator: Warlords Season 1
 			un(2, i(111600)),	-- Bronze Strongbox
 			un(2, i(111599)),	-- Silver Strongbox
 			un(2, i(111598)),	-- Gold Strongbox
-			n(-658, {	-- Aspirant / Combatant PvP Gear
+			n(-660, {	-- Aspirant / Combatant PvP Gear
 				cl(6, {	-- Death Knight
 					un(2, i(115197)), -- Primal Aspirant's Dreadplate Chestpiece (A)
 					un(2, i(115198)), -- Primal Aspirant's Dreadplate Gauntlets (A)
@@ -214,11 +214,11 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(-662, {	-- Wild Gladiator: Warlords Season 2
+		n(-680, {	-- Wild Gladiator: Warlords Season 2
 			un(2, i(120356)),	-- Bronze Strongbox
 			un(2, i(120355)),	-- Silver Strongbox
 			un(2, i(120354)),	-- Gold Strongbox
-			n(-658, {	-- Aspirant / Combatant PvP Gear
+			n(-660, {	-- Aspirant / Combatant PvP Gear
 				cl(6, {	-- Death Knight
 					un(2, i(125070)), -- Wild Aspirant's Dreadplate Chestpiece (A)
 					un(2, i(125071)), -- Wild Aspirant's Dreadplate Gauntlets (A)
@@ -441,11 +441,11 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(-663, {	-- Warmongering Gladiator: Warlords Season 3
+		n(-681, {	-- Warmongering Gladiator: Warlords Season 3
 			un(2, i(120356)),	-- Bronze Strongbox
 			un(2, i(120355)),	-- Silver Strongbox
 			un(2, i(120354)),	-- Gold Strongbox
-			n(-658, {	-- Aspirant / Combatant PvP Gear
+			n(-660, {	-- Aspirant / Combatant PvP Gear
 				cl(6, {	-- Death Knight
 					i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece (A)
 					i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets (A)

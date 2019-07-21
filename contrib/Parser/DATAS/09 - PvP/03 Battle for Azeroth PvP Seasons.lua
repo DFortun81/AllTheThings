@@ -4,8 +4,8 @@
 _.PVP =
 {
 	n(-10052, {	-- Battle for Azeroth
-		n(-664, {	-- Dread Gladiator: Battle for Azeroth Season 1
-			n(-658, {	-- Aspirant PvP Gear
+		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
+			n(-660, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
 					i(162885, {	-- Dread Aspirant's Barrier (A)
 						["u"] = 2,
@@ -365,7 +365,7 @@ _.PVP =
 					}),
 				}),
 			}),
-			n(-659, {	-- Gladiator PvP Gear
+			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(161698, {	-- Dread Gladiator's Barrier (A)
 						["u"] = 2,
@@ -961,8 +961,8 @@ _.PVP =
 				},
 			},
 		}),
-		n(-665,{	-- Sinister Gladiator: Battle for Azeroth Season 2
-			n(-658, {	-- Aspirant PvP Gear
+		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
+			n(-660, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
 					i(165206, {	-- Sinister Aspirant's Bonecracker (A)
 						["u"] = 2,
@@ -1286,7 +1286,7 @@ _.PVP =
 					}),
 				}),
 			}),
-			n(-659, {	-- Gladiator PvP Gear
+			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(166900, {	-- Sinister Gladiator's Bonecracker (A)
 						["u"] = 2,
@@ -2079,8 +2079,8 @@ _.PVP =
 				},
 			},
 		}),
-		n(-666, {	-- Notorious Gladiator: Battle for Azeroth Season 3
-			n(-658, {	-- Aspirant PvP Gear
+		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
+			n(-660, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
 					i(169756),	-- Notorious Aspirant's Blade (A)
 					i(169754),	-- Notorious Aspirant's Cutter (A)
@@ -2208,7 +2208,7 @@ _.PVP =
 					i(167525),	-- Notorious Aspirant's Medallion
 				}),
 			}),
-			n(-659, {	-- Gladiator PvP Gear
+			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(169720),	-- Notorious Gladiator's Bonegrinder (A)
 					i(169725),	-- Notorious Gladiator's Bonegrinder (A)

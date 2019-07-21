@@ -1885,7 +1885,7 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
-							n(-661, {	-- Primal Gladiator: Warlords Season 1
+							n(-679, {	-- Primal Gladiator: Warlords Season 1
 								cl(6, {	-- Death Knight
 									un(2, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
 									un(2, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
@@ -2035,7 +2035,7 @@ _.Zones =
 									un(2, i(115908)),	-- Primal Gladiator's Plate Warboots
 								}),
 							}),
-							n(-662, {	-- Wild Gladiator: Warlords Season 2
+							n(-680, {	-- Wild Gladiator: Warlords Season 2
 								cl(6, {	-- Death Knight
 									un(2, i(125651)), -- Wild Gladiator's Dreadplate Chestpiece
 									un(2, i(125652)), -- Wild Gladiator's Dreadplate Gauntlets
@@ -2182,7 +2182,7 @@ _.Zones =
 									un(2, i(125779)), -- Wild Gladiator's Plate Shoulders
 								}),
 							}),
-							n(-663, {	-- Warmongering Gladiator: Warlords Season 3
+							n(-681, {	-- Warmongering Gladiator: Warlords Season 3
 								cl(6, {	-- Death Knight
 									un(2, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
 									un(2, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets
@@ -2452,7 +2452,7 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
-							n(-661, {	-- Primal Gladiator: Warlords Season 1
+							n(-679, {	-- Primal Gladiator: Warlords Season 1
 								cl(6, {	-- Death Knight
 									un(2, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
 									un(2, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
@@ -2602,7 +2602,7 @@ _.Zones =
 									un(2, i(115908)),	-- Primal Gladiator's Plate Warboots
 								}),
 							}),
-							n(-662, {	-- Wild Gladiator: Warlords Season 2
+							n(-680, {	-- Wild Gladiator: Warlords Season 2
 								cl(6, {	-- Death Knight
 									un(2, i(125651)), -- Wild Gladiator's Dreadplate Chestpiece
 									un(2, i(125652)), -- Wild Gladiator's Dreadplate Gauntlets
@@ -2749,7 +2749,7 @@ _.Zones =
 									un(2, i(125779)), -- Wild Gladiator's Plate Shoulders
 								}),
 							}),
-							n(-663, {	-- Warmongering Gladiator: Warlords Season 3
+							n(-681, {	-- Warmongering Gladiator: Warlords Season 3
 								cl(6, {	-- Death Knight
 									un(2, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
 									un(2, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets

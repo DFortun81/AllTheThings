@@ -484,7 +484,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						n(-659, {	-- Gladiator
+						n(-661, {	-- Gladiator
 							n(-319, {	-- Weapons
 								un(2, i(100227)), -- Grievous Gladiator's Spellblade (Alliance)
 								un(2, i(100498)), -- Grievous Gladiator's Slicer (Alliance)
@@ -686,7 +686,7 @@ _.Zones =
 								un(2, i(100340)), -- Grievous Gladiator's Boots of Alacrity (Alliance)
 							}),
 						}),
-						n(-660, {	-- Elite
+						n(-662, {	-- Elite
 							n(-319, {	-- Weapons
 								un(2, i(100184)),	-- Grievous Gladiator's Decapitator
 								un(2, i(100194)),	-- Grievous Gladiator's Quick blade

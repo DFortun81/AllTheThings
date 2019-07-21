@@ -4,7 +4,7 @@
 _.PVP =
 {
 	n(-9982, {	-- Legion
-		n(-651, {	-- Vindictive Gladiator: Legion Season 1
+		n(-682, {	-- Vindictive Gladiator: Legion Season 1
 			n(-384,	{	-- Neck
 				-- Elite
 				un(2, i(136133)),	-- Vindictive Gladiator's Necklace a
@@ -135,7 +135,7 @@ _.PVP =
 				un(2, i(136042)),	-- Vindictive Combatant's Badge of Adaptation (Horde)
 			}),	
 		}),
-		n(-652, {	-- Fearless Gladiator: Legion Season 2
+		n(-683, {	-- Fearless Gladiator: Legion Season 2
 			n(-384,	{	-- Neck
 				-- Elite
 				un(2, i(143102)),	-- Fearless Gladiator's Necklace a
@@ -266,7 +266,7 @@ _.PVP =
 				un(2, i(143011)),	-- Fearless Combatant's Badge of Adaptation (Horde)
 			}),
 		}),
-		n(-653, {	-- Cruel Gladiator: Legion Season 3
+		n(-684, {	-- Cruel Gladiator: Legion Season 3
 			n(-384,	{	-- Neck
 				-- Elite
 				un(2, i(144900)),	-- Cruel Gladiator's Necklace a
@@ -373,7 +373,7 @@ _.PVP =
 				un(2, i(145239)),	-- Cruel Combatant's Insignia of Victory (Horde)
 			}),
 		}),
-		n(-654, {	-- Ferocious Gladiator: Legion Season 4
+		n(-685, {	-- Ferocious Gladiator: Legion Season 4
 			n(-384,	{	-- Neck
 				-- Elite
 				un(2, i(145742)),	-- Ferocious Gladiator's Necklace a
@@ -480,7 +480,7 @@ _.PVP =
 				un(2, i(146065)), -- Ferocious Combatant's Badge of Conquest (Horde)
 			}),
 		}),
-		n(-655, {	-- Fierce Gladiator: Legion Season 5
+		n(-686, {	-- Fierce Gladiator: Legion Season 5
 			n(-384,	{	-- Neck
 				-- Elite
 				un(2, i(148275)),	-- Fierce Gladiator's Necklace a
@@ -587,7 +587,7 @@ _.PVP =
 				un(2, i(149719)), -- Fierce Combatant's Insignia of Victory (Horde)
 			}),
 		}),
-		n(-656, {	-- Dominant Gladiator: Legion Season 6
+		n(-687, {	-- Dominant Gladiator: Legion Season 6
 			n(-384,	{	-- Neck
 				-- Elite
 				un(2, i(148768)), -- Dominant Gladiator's Necklace (Alliance)
@@ -694,7 +694,7 @@ _.PVP =
 				un(2, i(149969)), -- Dominant Combatant's Insignia of Victory (Horde)
 			}),
 		}),
-		n(-657, {	-- Demonic Gladiator: Legion Season 7
+		n(-688, {	-- Demonic Gladiator: Legion Season 7
 			n(-384,	{	-- Neck
 				-- Elite
 				un(2, i(149260)), -- Demonic Gladiator's Necklace (Alliance)

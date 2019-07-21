@@ -582,20 +582,39 @@ AllTheThings.L = {
 		[-593] = "Interface\\Icons\\70_inscription_deck_Hellfire",					-- Kill Credit 1
 		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",				-- Kill Credit 2
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",				-- Kill Credit 3
-		[-650] = "Interface\\Icons\\inv_misc_questionmark",							-- Quest Items
-		[-651] = "Interface\\Icons\\inv_stormdragonmount2",							-- Vindictive Gladiator: Legion Season 1
-		[-652] = "Interface\\Icons\\inv_stormdragonmount2blue",						-- Fearless Gladiator: Legion Season 2
-		[-653] = "Interface\\Icons\\inv_stormdragonmount2dark",						-- Cruel Gladiator: Legion Season 3
-		[-654] = "Interface\\Icons\\inv_stormdragonmount2green",					-- Ferocious Gladiator: Legion Season 4
-		[-655] = "Interface\\Icons\\inv_stormdragonmount2light",					-- Fierce Gladiator: Legion Season 5
-		[-656] = "Interface\\Icons\\inv_stormdragonmount2yellow",					-- Dominant Gladiator: Legion Season 6
-		[-657] = "Interface\\Icons\\inv_stormdragonmount2_fel",						-- Demonic Gladiator: Legion Season 7
-		[-658] = "Interface\\Worldmap\\GlowSkull_64Blue",							-- Combatant PvP Gear
-		[-659] = "Interface\\Worldmap\\GlowSkull_64Purple",							-- Gladator PvP Gear
-		[-660] = "Interface\\Worldmap\\GlowSkull_64Red",							-- Elite PvP Gear
-		[-664] = "Interface\\Icons\\ability_mount_protodrakegladiatormount",		-- Dread Gladiator: Battle for Azeroth Season 1
-		[-665] = "Interface\\Icons\\inv_misc_tabard_forsaken",						-- Sinister Gladiator: Battle for Azeroth Season 2
-		[-666] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",			-- Notorious Gladiator: Battle for Azeroth Season 3
+		[-650] = "Interface\\Icons\\inv_misc_questionmark",							-- Quest Item	
+		[-660] = "Interface\\Worldmap\\GlowSkull_64Blue",							-- Combatant PvP Gear
+		[-661] = "Interface\\Worldmap\\GlowSkull_64Purple",							-- Gladator PvP Gear
+		[-662] = "Interface\\Worldmap\\GlowSkull_64Red",							-- Elite PvP Gear
+	--	[-663] = "Interface\\Icons\\",												-- Classic Pre-Season PvP Gear (Placeholder)
+		[-664] = "Interface\\Icons\\achievement_featsofstrength_gladiator_00",		-- Gladiator: Season 1 
+		[-665] = "Interface\\Icons\\achievement_featsofstrength_gladiator_01",		-- Merciless Gladiator: Season 2
+		[-666] = "Interface\\Icons\\achievement_featsofstrength_gladiator_02",		-- Vengeful Gladiator: Season 3
+		[-667] = "Interface\\Icons\\achievement_featsofstrength_gladiator_03",		-- Brutal Gladiator: Season 4
+		[-668] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",					-- Deadly Gladiator: Season 5
+		[-669] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",					-- Furious Gladiator: Season 6
+		[-670] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",					-- Relentless Gladiator: Season 7
+		[-671] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",					-- Wrathful Gladiator: Season 8
+		[-672] = "Interface\\Icons\\ability_mount_drake_twilight",					-- Vicious Gladiator: Season 9
+		[-673] = "Interface\\Icons\\ability_mount_drake_twilight",					-- Ruthless Gladiator: Season 10
+		[-674] = "Interface\\Icons\\ability_mount_drake_twilight",					-- Cataclysmic Gladiator: Season 11
+		[-675] = "Interface\\Icons\\inv_pandarenserpentmount_white",				-- Malevolent Gladiator: Season 12
+		[-676] = "Interface\\Icons\\inv_pandarenserpentmount_white",				-- Tyrannical Gladiator: Season 13
+		[-677] = "Interface\\Icons\\inv_pandarenserpentmount_white",				-- Grievous Gladiator: Season 14
+		[-678] = "Interface\\Icons\\inv_pandarenserpentmount_white",				-- Prideful Gladiator: Season 15
+		[-679] = "Interface\\Icons\\inv_fellessergronnmount",						-- Primal Gladiator: Warlords Season 1
+		[-680] = "Interface\\Icons\\inv_fellessergronnmount_pale",					-- Wild Gladiator: Warlords Season 2
+		[-681] = "Interface\\Icons\\inv_fellessergronnmount_dark",					-- Warmongering Gladiator: Warlords Season 3
+		[-682] = "Interface\\Icons\\inv_stormdragonmount2",							-- Vindictive Gladiator: Legion Season 1
+		[-683] = "Interface\\Icons\\inv_stormdragonmount2blue",						-- Fearless Gladiator: Legion Season 2
+		[-684] = "Interface\\Icons\\inv_stormdragonmount2dark",						-- Cruel Gladiator: Legion Season 3
+		[-685] = "Interface\\Icons\\inv_stormdragonmount2green",					-- Ferocious Gladiator: Legion Season 4
+		[-686] = "Interface\\Icons\\inv_stormdragonmount2light",					-- Fierce Gladiator: Legion Season 5
+		[-687] = "Interface\\Icons\\inv_stormdragonmount2yellow",					-- Dominant Gladiator: Legion Season 6
+		[-688] = "Interface\\Icons\\inv_stormdragonmount2_fel",						-- Demonic Gladiator: Legion Season 7
+		[-689] = "Interface\\Icons\\ability_mount_protodrakegladiatormount",		-- Dread Gladiator: Battle for Azeroth Season 1
+		[-690] = "Interface\\Icons\\inv_misc_tabard_forsaken",						-- Sinister Gladiator: Battle for Azeroth Season 2
+		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",			-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",				-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",					-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",			-- Tier 3.5
@@ -1247,29 +1266,57 @@ AllTheThings.L = {
 		[-601] = GetSpellInfo(262971),											-- Communing with Jani [Snapjaw Tail]
 		[-650] = "Quest Items",													-- Quest Items
 		
--- Legion Pvp Seasons
-		[-651] = select(2, GetAchievementInfo(11012)),							-- Vindictive Gladiator: Legion Season 1
-		[-652] = select(2, GetAchievementInfo(11014)),							-- Fearless Gladiator: Legion Season 2
-		[-653] = select(2, GetAchievementInfo(11037)),							-- Cruel Gladiator: Legion Season 3
-		[-654] = select(2, GetAchievementInfo(11062)),							-- Ferocious Gladiator: Legion Season 4
-		[-655] = select(2, GetAchievementInfo(12010)),							-- Fierce Gladiator: Legion Season 5
-		[-656] = select(2, GetAchievementInfo(12134)),							-- Dominant Gladiator: Legion Season 6
-		[-657] = select(2, GetAchievementInfo(12185)),							-- Demonic Gladiator: Legion Season 7
+-- PvP Header
 		
 -- PvP Set Names
-		[-658] = "Aspirant / Combatant Gear",									-- Aspirant (WoD) / Combatant (Legion) PvP Gear
-		[-659] = "Gladiator Gear",												-- Gladiator PvP Gear
-		[-660] = "Elite Gear",													-- Elite PvP Gear
+		[-660] = "Aspirant / Combatant Gear",									-- Aspirant (WoD, BfA) / Combatant (WoD, Legion) PvP Gear
+		[-661] = "Gladiator Gear",												-- Gladiator PvP Gear
+		[-662] = "Elite Gear",													-- Elite PvP Gear
+
+-- Classic PvP Seasons
+		[-663] = "Classic Pre-Season Gear",										-- Classic Pre-Season PvP Gear (need a icon)
 		
--- Warlords Pvp Seasons
-		[-661] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
-		[-662] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
-		[-663] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
+-- The Burning Crusade PvP Seasons
+		[-664] = "Gladiator: Season 1",											-- Gladiator: Season 1 
+		[-665] = "Merciless Gladiator: Season 2",								-- Merciless Gladiator: Season 2
+		[-666] = "Vengeful Gladiator: Season 3",								-- Vengeful Gladiator: Season 3
+		[-667] = "Brutal Gladiator: Season 4",									-- Brutal Gladiator: Season 4
+		
+-- Wrath of the Lichking PvP Seasons
+		[-668] = "Deadly Gladiator: Season 5",									-- Deadly Gladiator: Season 5
+		[-669] = "Furious Gladiator: Season 6",									-- Furious Gladiator: Season 6
+		[-670] = "Relentless Gladiator: Season 7",								-- Relentless Gladiator: Season 7
+		[-671] = "Wrathful Gladiator: Season 8",								-- Wrathful Gladiator: Season 8
+		
+-- Cataclysm PvP Seasons
+		[-672] = "Vicious Gladiator: Season 9",									-- Vicious Gladiator: Season 9
+		[-673] = "Ruthless Gladiator: Season 10",								-- Ruthless Gladiator: Season 10
+		[-674] = "Cataclysmic Gladiator: Season 11",							-- Cataclysmic Gladiator: Season 11
+		
+-- Mists of Pandaria PvP Seasons
+		[-675] = "Season 12: Malevolent Gladiator",								-- Malevolent Gladiator: Season 12
+		[-676] = "Season 13: Tyrannical Gladiator",								-- Tyrannical Gladiator: Season 13
+		[-677] = select(2, GetAchievementInfo(8643)),							-- Grievous Gladiator: Season 14
+		[-678] = select(2, GetAchievementInfo(8666)),							-- Prideful Gladiator: Season 15
+		
+-- Warlords of Dreanor PvP Seasons
+		[-679] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
+		[-680] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
+		[-681] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
+		
+-- Legion PvP Seasons
+		[-682] = select(2, GetAchievementInfo(11012)),							-- Vindictive Gladiator: Legion Season 1
+		[-683] = select(2, GetAchievementInfo(11014)),							-- Fearless Gladiator: Legion Season 2
+		[-684] = select(2, GetAchievementInfo(11037)),							-- Cruel Gladiator: Legion Season 3
+		[-685] = select(2, GetAchievementInfo(11062)),							-- Ferocious Gladiator: Legion Season 4
+		[-686] = select(2, GetAchievementInfo(12010)),							-- Fierce Gladiator: Legion Season 5
+		[-687] = select(2, GetAchievementInfo(12134)),							-- Dominant Gladiator: Legion Season 6
+		[-688] = select(2, GetAchievementInfo(12185)),							-- Demonic Gladiator: Legion Season 7
 		
 -- Battle for Azeroth PvP Seasons
-		[-664] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
-		[-665] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
-		[-666] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
+		[-689] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
+		[-690] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
+		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
 		
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
@@ -1488,25 +1535,6 @@ AllTheThings.L = {
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4168] = "The Scale's Embrace",
 		[-4169] = "Embrace of the Viper",
-		[-4170] = "Warlords Season 3",
-		[-4171] = "Warlords Season 2",
-		[-4172] = "Warlords Season 1",
-		[-4173] = "Season 16",
-		[-4174] = "Season 15",
-		[-4175] = "Season 14",
-		[-4176] = "Season 13",
-		[-4177] = "Season 12",
-		[-4178] = "Season 10",
-		[-4179] = "Season 9",
-		[-4180] = "Season 8",
-		[-4181] = "Season 7",
-		[-4182] = "Season 6",
-		[-4183] = "Season 5",
-		[-4184] = "Season 4",
-		[-4185] = "Season 3",
-		[-4186] = "Season 2",
-		[-4187] = "Season 1",
-		[-4188] = "Legacy Sets",
 		[-4189] = CALENDAR_TYPE_PVP.." "..LOOT_JOURNAL_ITEM_SETS, 					-- Instance Item Sets, PvP
 		[-4190] = "Pre-Season",
 		[-4191] = "Tournament",
