@@ -11,7 +11,11 @@ _.Zones =
 					["g"] = {
 						i(168115),	-- Mechanobot Ignition
 						i(168806),	-- Mechanocat and Rider
-						i(167787),	-- Blueprint: Mechanocat Laser Pointer
+						i(167787, {	-- Blueprint: Mechanocat Laser Pointer
+							crit(4, {	-- Mechanocat Laser Pointer
+								["achievementID"] = 13479,	-- Junkyard Architect
+							}),
+						}),
 						i(168327),	-- Chain Ignitercoil
 					},
 				}),
@@ -87,16 +91,31 @@ _.Zones =
 						i(167693),	-- Neural Autonomy
 						i(169112, {	-- Blueprint: Advanced Adventurer Augment
 							["questID"] = 56145,
+							["g"] = {
+								crit(23, {	-- Advanced Adventurer Augment
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
 						}),
 						i(167672),	-- Cyclotronic Blast
 						i(169108),	-- Rustbolt Banner
 						i(169107),	-- T.A.R.G.E.T. Device
 						i(169134, {	-- Blueprint: Extraordinary Adventurer Augment
 							["questID"] = 56165,
+							["g"] = {
+								crit(24, {	-- Extraordinary Adventurer Augment
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
 						}),
 						i(168619),	-- Rustbolt Resistance Tabard
 						i(168493, {	-- Blueprint: Battle Box
 							["questID"] = 55072,
+							["g"] = {
+								crit(18, {	-- Battle Box
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
 						}),
 						i(169547),	-- Recipe: Contract: Rustbolt Resistance
 						i(168660),	-- Schematic: Blingtron 7000

@@ -7,6 +7,18 @@ _.Zones =
 		m(1462, {	-- Mechagon
 			n(0, {	-- Zone Drop
 				i(159164),  -- Ashvane Company Sabatons
+				i(168491, {	-- Blueprint: Personal Time Displacer
+					["questID"] = 55070,
+					["description"] = "Drops from normal mobs during the |cFFFFD700The Other Place|r quest.",
+					["crs"] = {
+						153991,	-- Clockwork Giant
+					},
+					["g"] = {
+						crit(26, {	-- Personal Time Displacer
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
+					},
+				}),
 				i(168394, {	-- Box of Assorted Parts
 					["description"] = "Drop from Reclamation Rig event",
 					["g"] = {
@@ -21,9 +33,13 @@ _.Zones =
 					},
 				}),
 				i(168395, {	-- Irradiated Box of Assorted Parts
-					["description"] = "Drop from Reclamation Rig event after using Supercollider on all Irradiated Elementals and defeating Unstable Irradiated Golems",
+					["description"] = "During the Reclamation Rig event, use the Supercollider on each Irradiated Elemental to make them unstable.  If you complete the hardmode event correctly, you'll face three Unstable Irradiated Golems at the end of the encounter.",
 					["g"] = {
-						i(168495),	-- Blueprint: Rustbolt Requisitions
+						i(168495, {	-- Blueprint: Rustbolt Requisitions
+							crit(20, {	-- Rustbolt Requisitions
+								["achievementID"] = 13479,	-- Junkyard Architect
+							}),
+						}),
 						i(169396),	-- Echoing Oozeling
 					},
 				}),

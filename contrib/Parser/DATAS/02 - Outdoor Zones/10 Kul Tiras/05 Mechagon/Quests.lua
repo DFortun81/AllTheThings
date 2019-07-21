@@ -136,203 +136,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(56145, {	-- Blueprint: Advanced Adventurer Augment
-					["g"] = {
-					--	i(169112),	-- Blueprint: Advanced Adventurer Augment
-						crit(23, {	-- Advanced Adventurer Augment
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55083, {	-- Blueprint: Annoy-o-Tron Gang
-					["g"] = {
-					--	i(169175),	-- Blueprint: Annoy-o-Tron Gang
-						ach(13479, crit(35)),	-- Junkyard Architect / Annoy-o-Tron Gang
-					},
-				}),
-				q(55081, {	-- Blueprint: Anti-Gravity Pack
-				--	["crs"] = {
-				--		152182,	-- Rustfeather
-				--	},
-					["g"] = {
-					--	i(169173),	--
-						crit(33, {	-- Anti-Gravity Pack
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55068, {	-- Blueprint: BAWLD-371
-				--	["crs"] = {
-				--		151627,	-- Mr. Fixthis
-				--	},
-					["g"] = {
-					--	i(168248),	-- Blueprint: BAWLD-371
-						crit(15, {	-- BAWLD-371
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55077, {	-- Blueprint: Blue Spraybot
-				--	["crs"] = {
-				--		152569,	-- Crazed Trogg
-				--	},
-					["g"] = {
-					--	i(169169),	-- Blueprint: Blue Spraybot
-						crit(29, {	-- Blue Spraybot
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55057, {	-- Blueprint: Canned Minnows
-				--	["crs"] = { 151569 },	-- Deepwater Maw
-					["g"] = {
-					--	i(167836),	-- Blueprint: Canned Minnows
-						crit(5, {	-- Canned Minnows
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55059, {	-- Blueprint: Emergency Repair Kit
-					["g"] = {
-					--	i(167844),	-- Blueprint: Emergency Repair Kit
-						crit(7, {	-- Emergency Repair Kit
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55060, {	-- Blueprint: Emergency Powerpack
-					["g"] = {
-					--	i(167845),	-- Blueprint: Emergency Powerpack
-						crit(8, {	-- Emergency Powerpack
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(56087, {	-- Blueprint: Experimental Adventurer Augmentt
-				--	["crs"] = {
-				--		151934,	-- Arachnoid Harvester
-				--		151684,	-- Jawbreaker
-				--	},
-					["g"] = {
-					--	i(168908),	-- Blueprint: Experimental Adventurer Augment
-						crit(22, {	-- Experimental Adventurer Augment
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55076, {	-- Blueprint: Green Spraybot -- also triggered 55161
-					--["crs"] = {
-					--	152569,	-- Crazed Trogg
-					--},
-					["g"] = {
-					--	i(169168),	-- Blueprint: Green Spraybot
-						crit(28, {	-- Green Spraybot
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55063, {	-- Blueprint: G99.99 Landshark
-					["coord"] = { 65.6, 51.5, 1462 },
-				--	["crs"] = {
-				--		151202,	-- Foul Manifestation
-				--	},
-					["g"] = {
-					--	i(167871),	-- Blueprint: G99.99 Landshark
-						crit(11, {	-- G99.99 Landshark
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55056, {	-- Blueprint: Mechanocat Laser Pointer
-					["coord"] = { 63.3, 42.9, 1462 },
-					["g"] = {
-					--	i(167787),	-- Blueprint: Mechanocat Laser Pointer
-						crit(4, {	-- Mechanocat Laser Pointer
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55061, {	-- Blueprint: Mechano-Treat
-				--	["crs"] = {
-				--		151625,	-- The Scrap King
-				--	},
-					["g"] = {
-						crit(9, {	-- Mechano-Treat
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55079, {	-- Blueprint MicroBot XD
-					["g"] = {
-						crit(31, {	-- Microbot XD
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55075, {	-- Blueprint: Orange Spraybot
-					["g"] = {
-						crit(27, {	-- Orange Spraybot
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				i(168491, {	-- Blueprint: Personal Time Displacer
-					["questID"] = 55070,
-					["description"] = "Can only be found during the |cFFFFD700The Other Place|r world quest.",
-					["crs"] = {
-						153991,	-- Clockwork Giant
-					},
-					["g"] = {
-						crit(26, {	-- Personal Time Displacer
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55069, {	-- Blueprint: Protocol Transference Device
-					["g"] = {
-						ach(13479, crit(16)),	-- Junkyard Architect / Protocol Transference Device
-					},
-				}),
-				q(55064, {	-- Blueprint: Rustbolt Gramophone
-					["g"] = {
-						crit(12, {	-- Rustbolt Gramophone
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55065, {	-- Blueprint: Rustbolt Kegerator
-					["g"] = {
-						ach(13479, crit(13)),	-- Junkyard Architect / Rustbolt Kegerator
-					},
-				}),
-				q(55082, {	-- Blueprint: Rustbolt Pocket Turret
-					["g"] = {
-						crit(34, {	-- Rustbolt Pocket Turret
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55073, {	-- Blueprint Rustbolt Resistance Insignia
-					["g"] = {
-						crit(19, {	-- Blueprint Rustbolt Resistance Insignia
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55030, {	-- Blueprint: Scrap Trap
-					["g"] = {
-						crit(2, {	-- Scrap Trap
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
-				q(55058, {	-- Blueprint: Vaultbot Key
-					["g"] = {
-						crit(6, {	-- Vaultbot Key
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
 				q(56082, {	-- Bot Rampage
 				--	don't know if there are SQs or a reputation requirement.  i was at 2,500 Honored and this quest was up as a daily when i flew to the island.
 					["isDaily"] = true,
@@ -401,8 +204,16 @@ _.Zones =
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
 						i(169471, {	-- Cogfrenzy's Construction Toolkit
-							i(167845),	-- Blueprint: Emergency Powerpack
-							i(167844),	-- Blueprint: Emergency Repair Kit
+							i(167845, {	-- Blueprint: Emergency Powerpack
+								crit(8, {	-- Emergency Powerpack
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							}),
+							i(167844, {	-- Blueprint: Emergency Repair Kit
+								crit(7, {	-- Emergency Repair Kit
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							}),
 							i(169470),	-- Pressure Relief Valve
 						}),
 					},
@@ -443,14 +254,24 @@ _.Zones =
 					["g"] = {
 						n(152961, {	-- Data Anomaly Balnazzar
 							i(168631),	-- Metal Detector
-							i(169169, { -- Blueprint: Blue Spraybot (any)
-								["questID"] = 55077,	-- Blueprint: Blue Spraybot
+							i(169169, {	-- Blueprint: Blue Spraybot (any)
+								["questID"] = 55077,
+								["g"] = {
+									crit(29, {	-- Blue Spraybot
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								},
 							}),
 							i(169690),	-- Vinyl: Battle of Gnomeregan (any)
 							i(18507),	-- Boots of the Full Moon
 							i(16844),	-- Earthfury Epaulets (Geddon?)
 							i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
 								["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+								["g"] = {
+									crit(25, {	-- Holographic Digitalization Relay
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								},
 							}),
 							i(13348),	-- Demonshear (Balnazaar?)
 							i(11764),	-- Cinderhide Armsplints
@@ -671,11 +492,61 @@ _.Zones =
 					["qg"] = 152575,	-- Steelsage Gao
 					["coord"] = { 73.6, 34.3, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						i(169176, {	-- Blueprint: Encrypted Black Market Radio
+						--	["questID"] = ,	-- 
+							["g"] = {
+								crit(36, {	-- Encrypted Black Market Radio
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
+						}),
+					},
+				}),
+				q(56172, {	-- Other Interests
+					["qg"] = 152575,	-- Steelsage Gao
+					["coord"] = { 73.6, 34.3, 1462 },
+					["isDaily"] = true,
+					["g"] = {
+						i(169176, {	-- Blueprint: Encrypted Black Market Radio
+						--	["questID"] = ,	-- 
+							["g"] = {
+								crit(36, {	-- Encrypted Black Market Radio
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
+						}),
+					},
 				}),
 				q(56173, {	-- Other Interests
 					["qg"] = 152575,	-- Steelsage Gao
 					["coord"] = { 73.6, 34.3, 1462 },
 					["isDaily"] = true,
+					["g"] = {
+						i(169176, {	-- Blueprint: Encrypted Black Market Radio
+						--	["questID"] = ,	-- 
+							["g"] = {
+								crit(36, {	-- Encrypted Black Market Radio
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
+						}),
+					},
+				}),
+				q(56174, {	-- Other Interests
+					["qg"] = 152575,	-- Steelsage Gao
+					["coord"] = { 73.6, 34.3, 1462 },
+					["isDaily"] = true,
+					["g"] = {
+						i(169176, {	-- Blueprint: Encrypted Black Market Radio
+						--	["questID"] = ,	-- 
+							["g"] = {
+								crit(36, {	-- Encrypted Black Market Radio
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
+						}),
+					},
 				}),
 				q(56746, {	-- Our Direct Line
 					["qg"] = 152575,	-- Steelsage Gao
@@ -832,7 +703,11 @@ _.Zones =
 						["groups"] = {
 							i(168264, {	-- Recycling Requisition(Green)
 								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
+								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+									crit(37, {	-- Re-Procedurally Genereated Punchcard
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								}),
 								i(167795, {	-- Paint Vial: Copper Trim
 									crit(4, {	-- Copper Trim
 										["achievementID"] = 13513,	-- Available in Eight Colors
@@ -842,10 +717,18 @@ _.Zones =
 							}),
 							i(168266, {	-- Strange Recycling Requisiton(Epic)
 								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
-								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
+								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+									crit(37, {	-- Re-Procedurally Genereated Punchcard
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								}),
 								i(167795),	-- Paint Vial: Copper Trim
 								i(169689),	-- Vinyl: Mimiron's Brainstorm
-								i(169175),	-- Blueprint: Annoy-o-Tron Gang
+								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
+									crit(35, {	-- Annoy-o-Tron Gang
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								}),
 								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
 						},
@@ -862,7 +745,11 @@ _.Zones =
 						["groups"] = {
 							i(168264, {	-- Recycling Requisition(Green)
 								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
+								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+									crit(37, {	-- Re-Procedurally Genereated Punchcard
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								}),
 								i(167795, {	-- Paint Vial: Copper Trim
 									crit(4, {	-- Copper Trim
 										["achievementID"] = 13513,	-- Available in Eight Colors
@@ -872,14 +759,22 @@ _.Zones =
 							}),
 							i(168266, {	-- Strange Recycling Requisiton(Epic)
 								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
-								i(168220),	-- Blueprint: Re-Procedurally Genereated Punchcard
+								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+									crit(37, {	-- Re-Procedurally Genereated Punchcard
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								}),
 								i(167795, {	-- Paint Vial: Copper Trim
 									crit(4, {	-- Copper Trim
 										["achievementID"] = 13513,	-- Available in Eight Colors
 									}),
 								}),
 								i(169689),	-- Vinyl: Mimiron's Brainstorm
-								i(169175),	-- Blueprint: Annoy-o-Tron Gang
+								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
+									crit(35, {	-- Annoy-o-Tron Gang
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								}),
 								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
 						},
@@ -1042,17 +937,6 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(56181, {	-- Scrapmaster's Blowtorch
-					["qg"] = 152295,	-- Pascal
-					["coord"] = { 71.2, 32.5, 1462 },
-					["minReputation"] = HONORED,
-					["g"] = {
-						spell(300122),	-- Scrapmaster's Blowtorch
-						crit(21, {	-- Scrapmaster's Blowtorch
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
-				}),
 				q(55096, {	-- Send My Father a Message
 					["qg"] = 153670,	-- Rustbolt Resistance Fighter (Prinze Erazmin)
 					["coord"] = { 55.6, 60.1, 1462 },
@@ -1109,6 +993,16 @@ _.Zones =
 						}),
 					},
 				}),
+				q(55696, {	-- Test Drive
+					["qg"] = 150573,	-- Recycler Kerchunk
+					["coord"] = { 71.5, 38.7, 1355 },
+					["sourceQuest"] = 56175,	-- Emission Free
+					["g"] = {
+						crit(10, {	-- Test Drive
+							["achievementID"] = 13791,	-- Making the Mount
+						}),
+					},
+				}),
 				q(56306, {	-- The Family Jewels
 					["qg"] = 154511,	-- Sneaky Pete
 					["coord"] = { 24.2, 75.3, 1462 },
@@ -1127,16 +1021,6 @@ _.Zones =
 					["g"] = {
 						crit(13, {	-- The Final Act
 							["achievementID"] = 13556,	-- Outside Influences
-						}),
-					},
-				}),
-				q(55696, {	-- Test Drive
-					["qg"] = 150573,	-- Recycler Kerchunk
-					["coord"] = { 71.5, 38.7, 1355 },
-					["sourceQuest"] = 56175,	-- Emission Free
-					["g"] = {
-						crit(10, {	-- Test Drive
-							["achievementID"] = 13791,	-- Making the Mount
 						}),
 					},
 				}),
@@ -1176,6 +1060,17 @@ _.Zones =
 					["sourceQuests"] = {
 						55645,	-- Princely Visit
 						55685,	-- We Come in Peace... and Profit
+					},
+				}),
+				q(56181, {	-- This One's On Me
+					["qg"] = 152295,	-- Pascal
+					["coord"] = { 71.2, 32.5, 1462 },
+					["minReputation"] = HONORED,
+					["g"] = {
+						spell(300122),	-- Scrapmaster's Blowtorch
+						crit(21, {	-- Scrapmaster's Blowtorch
+							["achievementID"] = 13479,	-- Junkyard Architect
+						}),
 					},
 				}),
 				q(55339, {	-- Tidying Up
