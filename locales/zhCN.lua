@@ -255,13 +255,16 @@ for key, value in pairs({
 		
 		[-650] = "任务物品",
 		
-		[-658] = "Aspirant / Combatant Gear",									-- Aspirant (WoD) / Combatant (Legion) PvP Gear
-		[-659] = "Gladiator Gear",												-- Gladiator PvP Gear
-		[-660] = "Elite Gear",
+-- PvP Set Names
+		[-660] = "Aspirant / Combatant Gear",									-- Aspirant (WoD, BfA) / Combatant (WoD, Legion) PvP Gear
+		[-661] = "Gladiator Gear",												-- Gladiator PvP Gear
+		[-662] = "Elite Gear",													-- Elite PvP Gear
 		
+-- Pet Battles		
 		[-700] = "天神比武大会",
-		
-		[-850] = "机械化的宝箱",											-- Mechanized Chest
+
+-- Mechagon		
+		[-850] = "机械化的宝箱",													-- Mechanized Chest
 		[-1001] = "The Black Vault",
 		
 		[-3159] = "T6.5套装",
@@ -468,25 +471,6 @@ for key, value in pairs({
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4168] = "The Scale's Embrace",
 		[-4169] = "Embrace of the Viper",
-		[-4170] = "Warlords Season 3",
-		[-4171] = "Warlords Season 2",
-		[-4172] = "Warlords Season 1",
-		[-4173] = "第16赛季",
-		[-4174] = "第15赛季",
-		[-4175] = "第14赛季",
-		[-4176] = "第13赛季",
-		[-4177] = "第12赛季",
-		[-4178] = "第10赛季",
-		[-4179] = "第9赛季",
-		[-4180] = "第8赛季",
-		[-4181] = "第7赛季",
-		[-4182] = "第6赛季",
-		[-4183] = "第5赛季",
-		[-4184] = "第4赛季",
-		[-4185] = "第3赛季",
-		[-4186] = "第2赛季",
-		[-4187] = "第1赛季",
-		[-4188] = "Legacy Sets",
 		[-4189] = CALENDAR_TYPE_PVP.." "..LOOT_JOURNAL_ITEM_SETS, 					-- Instance Item Sets, PvP
 		[-4190] = "Pre-Season",
 		[-4191] = "Tournament",
