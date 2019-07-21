@@ -1887,6 +1887,18 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56809, {	-- Super Friends
+				["qg"] = 151310,	-- Kelfin Scout (Poen Gillbrack)
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches Rank 5.",
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					ach(13635, crit(5)),	-- Tour of the Depths / Level a Nazjatar Ally to Level 5.
+					i(169909, {	-- Poen's Neat Things
+						i(169942),	-- Vibrant Sea Blossom
+					}),
+				},
+			}),
 			q(56817, {	-- Thank You For Being A Friend
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
 				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 13.",
@@ -1960,6 +1972,14 @@ _.Zones =
 					55486,	-- Secrets of Telemancy
 					55488,	-- Speak with the Dead
 				},
+			}),
+			q(55751, {	-- The Heart of the Water
+				["qg"] = 153685,	-- Mari Lazarfin
+				["coord"] = { 60.8, 30.9, 1355 },
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+				["isDaily"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 			q(56304, {	-- The High Life
 				["qg"] = 154574,	-- Kelya Moonfall
@@ -2358,6 +2378,18 @@ _.Zones =
 				["description"] = "Offered when |nFFFFD700Neri Sharpfin|r reaches rank 7.",
 				["g"] = {
 					i(169919),	-- Unshackled Commendation Crate
+				},
+			}),
+			q(56804, {	-- With Friends Like You, Who Needs Anemones?
+				["qg"] = 151310,	-- Kelfin Scout (Vim Brineheart)
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					ach(13635, crit(5)),	-- Tour of the Depths / Level a Nazjatar Ally to Level 5.
+					i(169910, {	-- Vim's Scavenged Supplies
+						i(169942),	-- Vibrant Sea Blossom
+					}),
 				},
 			}),
 			q(56038, {	-- Working with Purpose (A)
