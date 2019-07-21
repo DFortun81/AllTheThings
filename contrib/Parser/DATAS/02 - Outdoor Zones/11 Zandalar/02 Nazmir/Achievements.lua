@@ -223,7 +223,7 @@ _.Zones =
 					},
 				}),
 				ach(13027, {	-- Mushroom Harvest
-					["collectible"] = false,
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
 						n(143316, {	-- Skullcap
 							["coord"] = { 52.6, 70.0, 863 },

@@ -88,6 +88,7 @@ _.Zones =
 					}),
 				}),
 				n(129954, {	-- Gahz'ralka
+					["questID"] = 50439,
 					["coord"] = { 64.0, 33.0, 862 },
 					["g"] = {
 						i(161043, {	-- Relentless Hydra Legguards
@@ -133,8 +134,7 @@ _.Zones =
 					}),
 				}),
 				n(134637, {	-- Headhunter Lee'za
-					["repeatable"] = true,	-- temp
-					["questID"] = 50661,	-- WQ ID is 50846
+					["questID"] = 50661,
 					["coord"] = { 63.0, 14.0, 862 },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(161117),	-- Berserker's Juju
@@ -240,7 +240,6 @@ _.Zones =
 					}),
 				}),
 				n(130643, {	-- Twisted Child of Rezan [MCLQ]
-					["repeatable"] = true,	-- temp
 					["questID"] = 50847,
 					["coord"] = { 76.4, 27.1, 862 },
 					["g"] = { -- Level 120 mob which means no gear scaling
@@ -259,8 +258,7 @@ _.Zones =
 					}),
 				}),
 				n(134717, {	-- Umbra'rix [MCMLQ]
-					["repeatable"] = true,	-- temp
-					["questID"] = 50673,
+					["questID"] = 50673,	-- This is the WQ ID need to find the normal kill ID
 					["coord"] = { 49.0, 29.2, 862 },
 					["g"] = {
 						i(162617),	-- Shadraspawn Shoulderpads

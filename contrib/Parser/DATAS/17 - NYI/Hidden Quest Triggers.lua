@@ -388,6 +388,9 @@ _.NeverImplemented =
 		q(54991),	-- Khaz'gorian Smithing Hammer - Anvil created
 		q(53111),	-- triggered when leaving the mob area of Mildenhall Meadery in Stormsong Valley after completing Bumbles the Bee and first daily of Let's Bee Friends
 		q(53200),	-- triggered when leaving the mob area of Mildenhall Meadery in Stormsong Valley after completing Bumbles the Bee and first daily of Let's Bee Friends
+		q(50950),	-- for using the Incense prior to opening Gift of the Brokenhearted for achievement Treasures of Zuldazar
+		q(50311),	-- for giving Jani the Golden Ravasaur Egg in Zuldazar as part of the Get Hek'd achievement
+		q(50340),	-- for giving Jani the Feathered Viper Scale in Zuldazar as part of the Get Hek'd achievement
 		
 		-- Nazjatar
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance

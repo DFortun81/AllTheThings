@@ -397,6 +397,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50847, {	-- Twisted Child of Rezan
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50853, {	-- Umbra'rix
 						["lvl"] = 120,
 						["collectible"] = false,

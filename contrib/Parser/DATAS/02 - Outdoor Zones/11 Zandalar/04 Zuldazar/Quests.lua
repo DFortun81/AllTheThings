@@ -97,8 +97,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 130706,	-- Izita's Spirit
 				}),
-				
-				
 				q(49489, {	-- Needs a Little Body
 					["sourceQuests"] = { 49488 },	-- Tal'gurub
 					["coord"] = { 62.8, 32.5, 862 },
@@ -112,43 +110,25 @@ _.Zones =
 						i(155256),	-- Jambani Breeches
 					},
 				}),
-				
-				
 				q(49490, {	-- The Urn of Voices
 					["sourceQuests"] = { 49488 },	-- Tal'gurub
 					["coord"] = { 62.8, 32.5, 862 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 129907,	-- Zul the Prophet
 				}),
-				
-				
 				q(46957, {	-- Welcome to Zuldazar
 					["sourceQuests"] = { 50769 },  -- The Stormwind Extraction
 					["coord"] = { 57.9, 62.4, 862 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 132332,	-- Princess Talanji
 				}),
-
-				
-				
-				
-				
-				
-				
-				
 		--[[		["sourceQuests"] = {  },	-- 
 					["coord"] = { , , 862 },
 					["races"] = HORDE_ONLY,
 					["qg"] = ,	-- 
 				}),
 				
-						--]]
-								
-								
-								
-								
-								
-				
+		--]]
 				
 			--	unsorted
 
@@ -899,7 +879,7 @@ _.Zones =
 				}),
 				q(54097, {	-- The Dark Lady Calls
 					["qg"] = 146013,	-- Dark Ranger Alina
-					["coord"] = { 58.4, 62.7 },
+					["coord"] = { 58.4, 62.7, 862 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(53476, {	-- The Great Sea Scrolls
@@ -929,7 +909,7 @@ _.Zones =
 						i(156871),	-- Spitzy (TOY!)
 					},
 					["qg"] = 128888,	-- Koba
-					["coord"] = { 70.2, 65.0 },
+					["coord"] = { 70.2, 65.0, 862 },
 					["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers? (Horde) - NEEDS VERIFICATION, per wowhead comment.  Also need to make sure Alliance side has no prereqs.
 				}),
 				q(52113, {	-- Vol'jin, Son of Sen'jin
@@ -951,6 +931,24 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 55253,	-- A Show of Faith
+				}),
+				o(287189, {	-- Wanted: Dangerous Beasts
+					q(51072, {	-- WANTED: Prime Thumpknuckle
+						["races"] = HORDE_ONLY,
+						["coord"] = { 51.62, 45.44, 862 },
+					}),
+					q(53337, {	-- WANTED: Prime Thumpknuckle
+						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 51.62, 45.44, 862 },
+					}),
+					q(51071, {	-- WANTED: Sabertusk Empress
+						["races"] = HORDE_ONLY,
+						["coord"] = { 51.62, 45.44, 862 },
+					}),
+					q(53336, {	-- WANTED: Sabertusk Empress
+						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 51.62, 45.44, 862 },
+					}),
 				}),
 			}),
 		}),

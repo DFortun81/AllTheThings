@@ -82,6 +82,7 @@ _.Zones =
 				}),
 				ach(12944),		-- Adventurer of Zuldazar
 				ach(12482, {	-- Get Hek'd
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
 					["g"] = {
 						{	-- Big Hunter Mon
@@ -97,7 +98,7 @@ _.Zones =
 						{	-- Golden Ravasaur Egg
 							["coord"] = { 71.69, 41.28 },	-- Trashpile turn-in
 							["itemID"] = 156963,	-- Golden Ravasaur Egg
-							["questID"] = 50308,	-- 50311 for giving her the actual item
+							["questID"] = 50308,
 							["criteriaID"] = 1,	-- Golden Ravasaur Egg
 							["crs"] = {
 								131560,	-- Feral Ravasaur
@@ -121,7 +122,7 @@ _.Zones =
 						{	-- Feathered Viper Scale
 							["coord"] = { 62.73, 20.58 },	-- Trashpile turn-in
 							["itemID"] = 157794,	-- Feathered Viper Scale
-							["questID"] = 50431,	-- 50430 for giving Jani the item
+							["questID"] = 50431,
 							["criteriaID"] = 10,	-- Feathered Viper Scale
 							["crs"] = {
 								132410,	-- Feathered Viper
@@ -265,12 +266,15 @@ _.Zones =
 					},
 				}),
 				ach(13027, {	-- Mushroom Harvest
-					n(143314, {	-- Bane of the Woods
-						["coord"] = { 45.6, 79.0, 862 },
-						["g"] = {
-							crit(2),	-- Bane of the Woods
-						},
-					}),
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["g"] = {
+						n(143314, {	-- Bane of the Woods
+							["coord"] = { 45.6, 79.0, 862 },
+							["g"] = {
+								crit(2),	-- Bane of the Woods
+							},
+						}),
+					},
 				}),
 				ach(12481, {	-- The Final Seal
 					["sourceQuests"] = { 50954 },	-- Zandalar Forever!
