@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		n(-169, {	-- Emissary Quests
-			q(55976, {	-- Supplies From The Unshackled
+			q(53982, {	-- Supplies From The Unshackled
 				["qg"] = 154002,	-- Atolia Seapearl
 				["lvl"] = 120,
 				["races"] = HORDE_ONLY,
