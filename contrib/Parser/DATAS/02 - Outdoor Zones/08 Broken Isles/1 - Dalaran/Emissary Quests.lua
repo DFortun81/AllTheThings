@@ -8,6 +8,7 @@ _.Zones =
 			n(-169, {	-- Emissary Quests
 				q(43179, {	-- The Kirin Tor of Dalaran
 					["repeatable"] = true,
+					["qg"] = 32725,	-- Warmage Silva
 					["g"]  = {
 						i(157828, {	-- Kirin Tor Chest
 							i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
