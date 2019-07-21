@@ -51,121 +51,15 @@ _.Zones =
 --]]
 					q(32901, {	-- Heroic Deeds
 						["races"] = HORDE_ONLY,
+						["qg"] = 66998,	-- Jinho the Wind Breaker
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
+						["lvl"] = 90,
 						["g"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
-								i(98209),	-- Druid B,R - Monk M
-								i(98203),	-- Druid B,R - Monk M
-								i(98206),	-- Druid B,R - Monk M
-								i(98204),	-- Druid B,R - Monk M
-								i(98205),	-- Druid B,R - Monk M
-								i(98202),	-- Druid B,R - Monk M
-								i(98207),	-- Druid B,R - Monk M
-								i(98208),	-- Druid B,R - Monk M
-								i(98239),	-- Pal R,P - War - DK
-								i(98237),	-- Pal R,P - War - DK
-								i(98241),	-- Pal R,P - War - DK
-								i(98245),	-- Pal R,P - War - DK
-								i(98242),	-- Pal R,P - War - DK
-								i(98243),	-- Pal R,P - War - DK
-								i(98244),	-- Pal R,P - War - DK
-								i(98240),	-- Pal R,P - War - DK
-								i(98246),	-- Pal R,P - War - DK
-								i(98250),	-- Pal R,P - War - DK
-								i(98248),	-- Pal R,P - War - DK
-								i(98252),	-- Pal R,P - War - DK
-								i(98256),	-- Pal R,P - War - DK
-								i(98253),	-- Pal R,P - War - DK
-								i(98254),	-- Pal R,P - War - DK
-								i(98255),	-- Pal R,P - War - DK
-								i(98251),	-- Pal R,P - War - DK
-								i(98257),	-- Pal R,P - War - DK
-								i(98233),	-- Mage - Priest - Lock
-								i(98230),	-- Mage - Priest - Lock
-								i(98229),	-- Mage - Priest - Lock
-								i(98231),	-- Mage - Priest - Lock
-								i(98227),	-- Mage - Priest - Lock
-								i(98228),	-- Mage - Priest - Lock
-								i(98232),	-- Mage - Priest - Lock
-								i(98234),	-- Mage - Priest - Lock
-								i(98268),	-- Mage - Priest - Lock
-								i(98320),	-- Mage - Priest - Lock
-								i(98198),	-- Mage - Priest - Lock
-								i(98195),	-- Mage - Priest - Lock
-								i(98194),	-- Mage - Priest - Lock
-								i(98196),	-- Mage - Priest - Lock
-								i(98192),	-- Mage - Priest - Lock
-								i(98193),	-- Mage - Priest - Lock
-								i(98197),	-- Mage - Priest - Lock
-								i(98199),	-- Mage - Priest - Lock
-								i(98278),	-- Pal P - War P - DK F
-								i(98318),	-- Pal P - War P - DK F
-								i(98265),	-- Pal R - War A,F - DK B,U
-								i(98314),	-- Pal R - War A,F - DK B,U
-								i(98262),	-- Pal R - War A,F - DK B,U
-								i(98312),	-- Pal R - War A,F - DK B,U
-								i(98263),	-- Pal R - War A,F - DK B,U
-								i(98313),	-- Pal R - War A,F - DK B,U
-								i(98274),	-- Pal P - War P - DK F
-								i(98266),	-- Pal R - War A,F - DK B,U
-								i(98315),	-- Pal R - War A,F - DK B,U
-								i(98273),	-- Pal P - War P - DK F
-								i(98316),	-- Pal P - War P - DK F
-								i(98218),	-- Pal H
-								i(98220),	-- Pal H
-								i(98224),	-- Pal H
-								i(98221),	-- Pal H
-								i(98222),	-- Pal H
-								i(98223),	-- Pal H
-								i(98219),	-- Pal H
-								i(98225),	-- Pal H
-								i(98216),	-- Shaman Ele,R
-								i(98217),	-- Shaman Ele,R
-								i(98212),	-- Shaman Ele,R
-								i(98211),	-- Shaman Ele,R
-								i(98213),	-- Shaman Ele,R
-								i(98214),	-- Shaman Ele,R
-								i(98215),	-- Shaman Ele,R
-								i(98210),	-- Shaman Ele,R
-								i(98187),	-- Hunter - Shaman Enh
-								i(98188),	-- Hunter - Shaman Enh
-								i(98183),	-- Hunter - Shaman Enh
-								i(98182),	-- Hunter - Shaman Enh
-								i(98184),	-- Hunter - Shaman Enh
-								i(98185),	-- Hunter - Shaman Enh
-								i(98186),	-- Hunter - Shaman Enh
-								i(98181),	-- Hunter - Shaman Enh
-								i(98180),	-- Druid F,G - Rogue - Monk B,W - DH
-								i(98174),	-- Druid F,G - Rogue - Monk B,W - DH
-								i(98177),	-- Druid F,G - Rogue - Monk B,W - DH
-								i(98175),	-- Druid F,G - Rogue - Monk B,W - DH
-								i(98176),	-- Druid F,G - Rogue - Monk B,W - DH
-								i(98173),	-- Tidesplitter Jerkin*
-								i(98178),	-- Druid F,G - Rogue - Monk B,W - DH
-								i(98179),	-- Druid F,G - Rogue - Monk B,W - DH
-								i(98226),	-- Mage - Pal H - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-								i(98191),	-- Mage - Pal H - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-								i(98325),	-- Mage - Pal H - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-								i(98279),	-- Rogue O - Shaman Enh - Monk W - DH
-								i(98280),	-- Rogue O - Shaman Enh - Monk W - DH
-								i(98324),	-- Druid B,R - Priest
-								i(98267),	-- Hunter B,M
-								i(98269),	-- Hunter B,M
-								i(98275),	-- Rogue A,S
-								i(98277),	-- War P
-								i(98317),	-- War P
-								i(98271),	-- Rogue O - Shaman Enh - Monk W
-								i(98323),	-- Pal P - War P
-								i(98276),	-- Pal H - Druid B,R - Priest - Shaman Ele, R - Monk M
-								i(98322),	-- Pal H - Shaman Ele,R
-								i(98260),	-- Druid F,G - Hunter S - Monk B
-								i(98264),	-- Druid F,G - Hunter S - Monk B
-								i(98270),	-- Mage - Druid B,R - Priest - Shaman Ele,R - Lock
-								i(98321),	-- Mage - Druid B,R - Priest - Shaman Ele,R - Lock
-								i(98261),	-- Mage - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-								i(98319),	-- Mage - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-								i(98272),	-- Rogue O - Monk W - DH
-								i(98172),	-- Druid F,G - Hunter - Rogue - Shaman Enh - Monk B,W - DH
+								["sym"] = {
+									{"select", "itemID", 98134},	-- Heroic Cache of Treasures
+									{"pop"},
+								},
 							}),
 						},
 					}),

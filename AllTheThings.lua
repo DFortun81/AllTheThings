@@ -11875,6 +11875,52 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					end
 				end
 				
+				-- Heroic Deeds
+				if not (CompletedQuests[32900] or CompletedQuests[32901]) then
+					local mapObject = { mapID=424,g={},progress=0,total=0};
+					local cache = fieldCache["mapID"][424];
+					if cache then
+						for _,data in ipairs(cache) do
+							if data.mapID and data.icon then
+								mapObject.icon = data.icon;
+								mapObject.lvl = data.lvl;
+								mapObject.description = data.description;
+								break;
+							end
+						end
+					end
+					cache = fieldCache["questID"][app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901];
+					if cache then
+						for _,data in ipairs(cache) do
+							data = CreateObject(data);
+							--[[
+							if data.g then
+								for _,entry in ipairs(data.g) do
+									MergeObject(mapObject.g, entry);
+								end
+							end
+							]]--
+							if data.g then
+								for _,entry in ipairs(data.g) do
+									local resolved = ResolveSymbolicLink(entry);
+									if resolved then
+										entry = CreateObject(entry);
+										if not entry.g then entry.g = {}; end
+										for i,o in ipairs(resolved) do
+											MergeObject(entry.g, o);
+										end
+									end
+									MergeObject(data.g, entry);
+								end
+							end
+							MergeObject(mapObject.g, data);
+						end
+					end
+					if #mapObject.g > 0 then
+						MergeObject(temp, mapObject);
+					end
+				end
+				
 				-- Get the LFG Rewards Available at this level
 				local numRandomDungeons = GetNumRandomDungeons();
 				if numRandomDungeons > 0 then
