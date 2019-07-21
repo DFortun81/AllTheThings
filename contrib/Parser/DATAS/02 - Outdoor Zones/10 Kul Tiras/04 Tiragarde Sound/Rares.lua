@@ -33,7 +33,7 @@ _.Zones =
 					}),
 				}),		
 				n(132068, {	-- Bashmu
-					["questID"] = 50994,
+					["questID"] = 50094,
 					["coord"] = { 34.6, 30.2, 895 },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160467),	-- Hydra-Hunter Legguards
