@@ -628,92 +628,54 @@ _.GroupFinder =
 		}),
 		i(69903, {	-- Satchel of Exotic Mysteries
 			["u"] = 2,
-			["g"] = {
-				i(13335),	-- Deathcharger's Reins
-				i(43953),	-- Reins of the Blue Drake
-				i(44151),	-- Reins of the Blue Proto-Drake
-				i(44707),	-- Reins of the Green Proto-Drake
-				i(32768),	-- Reins of the Raven Lord
-				i(43962),	-- Reins of the White Polar Bear
-				i(35513),	-- Swift White Hawkstrider
-				i(44984),	-- Ammen Vale Lashling
-				i(34535),	-- Azure Whelpling
-				i(54436),	-- Blue Clockwork Rocket Bot
-				i(29901),	-- Blue Moth Egg
-				i(29960),	-- Captured Firefly
-				i(8485),	-- Cat Carrier (Bombay)
-				i(46398),	-- Cat Carrier (Calico Cat)
-				i(8486),	-- Cat Carrier (Cornish Rex)
-				i(8490),	-- Cat Carrier (Siamese)
-				i(8488),	-- Cat Carrier (Silver Tabby)
-				i(8489),	-- Cat Carrier (White Kitten)
-				i(10392),	-- Crimson Snake
-				i(48114),	-- Deviate Hatchling
-				i(44970),	-- Dun Morogh Cub
-				i(44973),	-- Durotaur Scoprion
-				i(44974),	-- Elwynn Lamb
-				i(44982),	-- Enchanted Broom
-				i(43698),	-- Giant Sewer Rat
-				i(45002),	-- Mechanopeep
-				i(44980),	-- Mulgore Hatchling
-				i(48120),	-- Obsidian Hatchling
-				i(8496),	-- Parrot Cage (Cockatiel)
-				i(8495),	-- Parrot Cage (Senegal)
-				i(35504),	-- Phoenix Hatchling
-				i(10394),	-- Prairie Dog Whistle
-				i(44721),	-- Proto-Drake Whelp
-				i(48126),	-- Razzashi Hatchling
-				i(45606),	-- Sen'jin Fetish
-				i(69992),	-- Shimmering Wyrmling
-				i(44965),	-- Teldrassil Sproutling
-				i(8499),	-- Tiny Crimson Whelpling
-				i(44971),	-- Tirisfal Batling
-				i(29903),	-- Yellow Moth Egg
+			["sym"] = {
+				{"select", "itemID", 13335},	-- Deathcharger's Reins
+				{"select", "itemID", 43953},	-- Reins of the Blue Drake
+				{"select", "itemID", 44151},	-- Reins of the Blue Proto-Drake
+				{"select", "itemID", 44707},	-- Reins of the Green Proto-Drake
+				{"select", "itemID", 32768},	-- Reins of the Raven Lord
+				{"select", "itemID", 43962},	-- Reins of the White Polar Bear
+				{"select", "itemID", 35513},	-- Swift White Hawkstrider
+				{"select", "itemID", 44984},	-- Ammen Vale Lashling
+				{"select", "itemID", 34535},	-- Azure Whelpling
+				{"select", "itemID", 54436},	-- Blue Clockwork Rocket Bot
+				{"select", "itemID", 29901},	-- Blue Moth Egg
+				{"select", "itemID", 29960},	-- Captured Firefly
+				{"select", "itemID", 8485},	-- Cat Carrier (Bombay)
+				{"select", "itemID", 46398},	-- Cat Carrier (Calico Cat)
+				{"select", "itemID", 8486},	-- Cat Carrier (Cornish Rex)
+				{"select", "itemID", 8490},	-- Cat Carrier (Siamese)
+				{"select", "itemID", 8488},	-- Cat Carrier (Silver Tabby)
+				{"select", "itemID", 8489},	-- Cat Carrier (White Kitten)
+				{"select", "itemID", 10392},	-- Crimson Snake
+				{"select", "itemID", 48114},	-- Deviate Hatchling
+				{"select", "itemID", 44970},	-- Dun Morogh Cub
+				{"select", "itemID", 44973},	-- Durotaur Scoprion
+				{"select", "itemID", 44974},	-- Elwynn Lamb
+				{"select", "itemID", 44982},	-- Enchanted Broom
+				{"select", "itemID", 43698},	-- Giant Sewer Rat
+				{"select", "itemID", 45002},	-- Mechanopeep
+				{"select", "itemID", 44980},	-- Mulgore Hatchling
+				{"select", "itemID", 48120},	-- Obsidian Hatchling
+				{"select", "itemID", 8496},	-- Parrot Cage (Cockatiel)
+				{"select", "itemID", 8495},	-- Parrot Cage (Senegal)
+				{"select", "itemID", 35504},	-- Phoenix Hatchling
+				{"select", "itemID", 10394},	-- Prairie Dog Whistle
+				{"select", "itemID", 44721},	-- Proto-Drake Whelp
+				{"select", "itemID", 48126},	-- Razzashi Hatchling
+				{"select", "itemID", 45606},	-- Sen'jin Fetish
+				{"select", "itemID", 69992},	-- Shimmering Wyrmling
+				{"select", "itemID", 44965},	-- Teldrassil Sproutling
+				{"select", "itemID", 8499},	-- Tiny Crimson Whelpling
+				{"select", "itemID", 44971},	-- Tirisfal Batling
+				{"select", "itemID", 29903},	-- Yellow Moth Egg
+				{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 			},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries
 			["u"] = 2,
-			["g"] = {
-				i(13335),	-- Deathcharger's Reins
-				i(43953),	-- Reins of the Blue Drake
-				i(44151),	-- Reins of the Blue Proto-Drake
-				i(44707),	-- Reins of the Green Proto-Drake
-				i(32768),	-- Reins of the Raven Lord
-				i(43962),	-- Reins of the White Polar Bear
-				i(35513),	-- Swift White Hawkstrider
-				i(44984),	-- Ammen Vale Lashling
-				i(34535),	-- Azure Whelpling
-				i(54436),	-- Blue Clockwork Rocket Bot
-				i(29901),	-- Blue Moth Egg
-				i(29960),	-- Captured Firefly
-				i(8485),	-- Cat Carrier (Bombay)
-				i(46398),	-- Cat Carrier (Calico Cat)
-				i(8486),	-- Cat Carrier (Cornish Rex)
-				i(8490),	-- Cat Carrier (Siamese)
-				i(8488),	-- Cat Carrier (Silver Tabby)
-				i(8489),	-- Cat Carrier (White Kitten)
-				i(10392),	-- Crimson Snake
-				i(48114),	-- Deviate Hatchling
-				i(44970),	-- Dun Morogh Cub
-				i(44973),	-- Durotaur Scoprion
-				i(44974),	-- Elwynn Lamb
-				i(44982),	-- Enchanted Broom
-				i(43698),	-- Giant Sewer Rat
-				i(45002),	-- Mechanopeep
-				i(44980),	-- Mulgore Hatchling
-				i(48120),	-- Obsidian Hatchling
-				i(8496),	-- Parrot Cage (Cockatiel)
-				i(8495),	-- Parrot Cage (Senegal)
-				i(35504),	-- Phoenix Hatchling
-				i(10394),	-- Prairie Dog Whistle
-				i(44721),	-- Proto-Drake Whelp
-				i(48126),	-- Razzashi Hatchling
-				i(45606),	-- Sen'jin Fetish
-				i(69992),	-- Shimmering Wyrmling
-				i(44965),	-- Teldrassil Sproutling
-				i(8499),	-- Tiny Crimson Whelpling
-				i(44971),	-- Tirisfal Batling
-				i(29903),	-- Yellow Moth Egg
+			["sym"] = {
+				{"select", "itemID", 69903},	-- Satchel of Exotic Mysteries
 			},
 		}),
 	}),
