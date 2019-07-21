@@ -181,6 +181,14 @@ _.Zones =
 				}),
 				
 				
+				q(49260, {	-- Backup While I Pack Up
+					["sourceQuests"] = { 49225 },	-- Chasing the Leader
+					["coord"] = { 59.3, 38.9, 1171 },	-- Gol Thovas
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 128349,	-- Hilde Firebreaker
+				}),
+				
+				
 				q(50110, {	-- Bearers of Bad News
 					["sourceQuests"] = { 49741 },	-- Righteous Retribution
 					["coord"] = { 56.5, 61.3, 895 },
@@ -202,6 +210,20 @@ _.Zones =
 					["coord"] = { 51.6, 27.3, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 124802,	-- Lord Aldruis Norwington
+				}),
+				
+				
+				q(49036, {	-- Best in Show
+					["sourceQuests"] = {
+						48089,	-- Mountain Sounds
+						48088,	-- No Party Like a Trogg Party
+					},
+					["coord"] = { 51.6, 27.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 124802,	-- Lord Aldrius Norwington
+					["g"] = {
+						i(158220),	-- Cooper's Horseshoe
+					},
 				}),
 				
 				
@@ -332,6 +354,18 @@ _.Zones =
 					["coord"] = { 35.2, 24.2, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 126298,	-- Brannon Stormsong
+				}),
+				
+				
+				q(48369, {	-- Emergent Strategy
+					["sourceQuests"] = {
+						49452,	-- Inventory Deficit
+						49451,	-- Maximizing Resources
+						49465,	-- Time Off Requests
+					},
+					["coord"] = { 68.9, 20.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129613,	-- Maynard Algerson
 				}),
 				
 				
@@ -502,6 +536,14 @@ _.Zones =
 					["coord"] = { 50.8, 69.4, 1171 },	-- Gol Thovas
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 128349,	-- Hilde Firebreaker
+				}),
+				
+				
+				q(49450, {	-- Incident Reports
+					["sourceQuests"] = { 48369 },	-- Emergent Strategy
+					["coord"] = { 70.0, 18.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129669,	-- Benjamin Algerson
 				}),
 				
 				
@@ -748,6 +790,14 @@ _.Zones =
 				}),
 				
 				
+				q(49454, {	-- Pest Prevention
+					["sourceQuests"] = { 48369 },	-- Emergent Strategy
+					["coord"] = { 70.0, 18.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129669,	-- Benjamin Algerson
+				}),
+				
+				
 				q(50352, {	-- Pinch of Azerite
 					["sourceQuests"] = { 50349 },	-- An Overrun Mine
 					["coord"] = { 78.1, 55.9, 895 },
@@ -803,6 +853,14 @@ _.Zones =
 							i(158286),	-- Outrigger Cinch
 							i(158284),	-- Sea Raider's Greatbelt
 						},
+				}),
+				
+				
+				q(49468, {	-- Required Webinar
+					["sourceQuests"] = { 48369 },	-- Emergent Strategy
+					["coord"] = { 70.0, 18.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129669,	-- Benjamin Algerson
 				}),
 				
 				
@@ -1146,6 +1204,23 @@ _.Zones =
 				}),
 				
 				
+				q(48903, {	-- The Perfect Horse, of Course
+					["sourceQuests"] = {
+						48898,	-- Lucky Charm
+						48902,	-- Monstrous Energy
+						48899,	-- Safety First
+					},
+					["coord"] = { 51.2, 25.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 127492,	-- Majo
+					["g"] = {
+						i(158229),	-- Lucktail Riding Cloak
+						i(158267),	-- Tortollan Traveling Lantern
+						i(155082),	-- Durable Seashell Barrier
+					},
+				}),
+				
+				
 				q(49393, {	-- The Roughnecks
 				--	["objectID"] = 278252,	-- Job Flyer
 					["coord"] = { 42.4, 27.2, 895 },
@@ -1184,6 +1259,14 @@ _.Zones =
 						i(158278),	-- Outrigger Bindings
 						i(158277),	-- Sea Raider's Wristguards
 					},
+				}),
+				
+				
+				q(50058, {	-- The Witch's Pet
+					["sourceQuests"] = { 48369 },	-- Emergent Strategy
+					["coord"] = { 72.9, 17.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 134325,	-- Terrence Foster
 				}),
 				
 				
@@ -1307,6 +1390,21 @@ _.Zones =
 				}),
 				
 				
+				q(49467, {	-- Witch of the Woods
+					["sourceQuests"] = {
+						49450,	-- Incident Reports
+						49454,	-- Pest Prevention
+						49468,	-- Required Webinar
+						50058,	-- The Witch's Pet
+					},
+					["coord"] = { 70.0, 18.5, 895 },
+					["qg"] = 129669,	-- Benjamin Algerson
+					["g"] = {
+						i(158219),	-- Petula's Locket
+					},
+				}),
+				
+				
 				q(50699, {	-- Worker's Rights
 					["isBreadcrumb"] = true,
 					["coord"] = { 67.4, 24.0, 895 },
@@ -1328,53 +1426,6 @@ _.Zones =
 			
 			n(-17, {	-- Quests [Alliance]
 				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
-					--------------------------------------
-					-- Hatherford
-					--------------------------------------
-					a(q(48369, {	-- Emergent Strategy
-						["qg"] = 129613,	-- Maynard Algerson
-						["sourceQuests"] = { 49452, 49451, 49465  },	-- Inventory Deficit / Maximizing Resources / Time Off Requests
-					})),
-					a(q(49450, {	-- Incident Reports
-						["qg"] = 129669,	-- Benjamin Algerson
-						["sourceQuests"] = { 48369  },	-- Emergent Strategy
-					})),
-					a(q(49454, {	-- Pest Prevention
-						["qg"] = 129669,	-- Benjamin Algerson
-						["sourceQuests"] = { 48369  },	-- Emergent Strategy
-					})),
-					a(q(49468, {	-- Required Webinar
-						["qg"] = 129669,	-- Benjamin Algerson
-						["sourceQuests"] = { 48369  },	-- Emergent Strategy
-					})),
-					a(q(50058, {	-- The Witch's Pet
-						["qg"] = 134325,	-- Terrence Foster
-						["sourceQuests"] = { 48369  },	-- Emergent Strategy
-					})),
-					a(q(49467, {	-- Witch of the Woods
-						["qg"] = 129669,	-- Benjamin Algerson
-						["sourceQuests"] = { 50058  },	-- The Witch's Pet
-						["g"] = {
-							i(158219),	-- Petula's Locket
-						},
-					})),
-
-					--------------------------------------
-					-- Gol Thovas
-					--------------------------------------
-
-					{	-- Gol Thovas
-						["mapID"] = 1171,	-- Gol Thovas
-						["icon"] = "Interface\\Icons\\inv_tiragardesound",
-						["g"] = {
-							{	-- Backup While I Pack Up
-								["questID"] = 49260,	-- Backup While I Pack Up
-								["qg"] = 128349,	-- Hilde Firebreaker
-								["races"] = ALLIANCE_ONLY,
-								["sourceQuests"] = { 49225 },	-- Chasing the Leader	NOTE: You need to do this quest or else it won't spawn
-							},
-						},
-					},
 
 					--------------------------------------
 					-- Freehold
@@ -1422,11 +1473,6 @@ _.Zones =
 					}),
 
 
-					q(48903, {	-- The Perfect Horse, of Course
-						i(158229),	-- Lucktail Riding Cloak
-						i(158267),	-- Tortollan Traveling Lantern
-						i(155082),	-- Durable Seashell Barrier
-					}),
 					q(49431, {	-- Warm and Cozy
 						i(158289),	-- Navigator's Cinch
 						i(158291),	-- Freebooter Waistwrap
