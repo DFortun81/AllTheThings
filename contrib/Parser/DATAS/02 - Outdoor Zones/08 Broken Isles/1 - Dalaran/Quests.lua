@@ -598,12 +598,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 				}),
-				q(44412,  {	-- Enemies Everywhere
-					["qg"] = 90417,	-- Archmage Khadgar
-					["g"] = {
-						i(141348),	-- Wondrous Wisdomball
-					},
-				}),
 				q(47050,  {	-- Enhancement: Fate of the Tideskorn
 					["classes"] = { 7 },
 					["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)

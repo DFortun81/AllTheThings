@@ -12,38 +12,37 @@ _.Zones =
 						i(157828, {	-- Kirin Tor Chest
 							i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 							i(141349, {	-- Strange Humming Crystal
-								q(44412, {	-- Enemies Everywhere
-									i(141348),	-- Wondrous Wisdomball
+								q(44412,  {	-- Enemies Everywhere
+									["qg"] = 90417,	-- Archmage Khadgar
+									["g"] = {
+										i(141348),	-- Wondrous Wisdomball
+									},
 								}),
 							}),
 						}),
 						un(2, i(154909, {	-- Kirin Tor Chest
-							i(141349, {	-- Strange Humming Crystal
-								q(44412, {	-- Enemies Everywhere
-									i(141348),	-- Wondrous Wisdomball
-								}),
-							}),
+							["sym"] = {
+								{"select", "itemID", 157828},	-- Kirin Tor Chest
+								{"pop"},
+							},
 						})),
 						un(2, i(151470, {	-- Kirin Tor Chest
-							i(141349, {	-- Strange Humming Crystal
-								q(44412, {	-- Enemies Everywhere
-									i(141348),	-- Wondrous Wisdomball
-								}),
-							}),
+							["sym"] = {
+								{"select", "itemID", 157828},	-- Kirin Tor Chest
+								{"pop"},
+							},
 						})),
 						un(2, i(146753, {	-- Kirin Tor Chest
-							i(141349, {	-- Strange Humming Crystal
-								q(44412, {	-- Enemies Everywhere
-									i(141348),	-- Wondrous Wisdomball
-								}),
-							}),
+							["sym"] = {
+								{"select", "itemID", 157828},	-- Kirin Tor Chest
+								{"pop"},
+							},
 						})),
 						un(2, i(141350, {	-- Kirin Tor Chest
-							i(141349, {	-- Strange Humming Crystal
-								q(44412, {	-- Enemies Everywhere
-									i(141348),	-- Wondrous Wisdomball
-								}),
-							}),
+							["sym"] = {
+								{"select", "itemID", 157828},	-- Kirin Tor Chest
+								{"pop"},
+							},
 						})),
 					},
 				}),
