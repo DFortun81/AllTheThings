@@ -391,6 +391,7 @@ _.NeverImplemented =
 		q(50950),	-- for using the Incense prior to opening Gift of the Brokenhearted for achievement Treasures of Zuldazar
 		q(50311),	-- for giving Jani the Golden Ravasaur Egg in Zuldazar as part of the Get Hek'd achievement
 		q(50340),	-- for giving Jani the Feathered Viper Scale in Zuldazar as part of the Get Hek'd achievement
+		q(51094),	-- for clicking on object 287238 Ancient Altar in Vol'dun as part of the Treasures of Vol'dun achievement for Grayal's Last Offering
 		
 		-- Nazjatar
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance

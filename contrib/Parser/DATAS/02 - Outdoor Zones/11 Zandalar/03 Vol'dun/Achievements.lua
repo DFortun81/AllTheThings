@@ -265,7 +265,7 @@ _.Zones =
 						["coord"] = { 45.2, 91.1, 864 },
 					}),
 					crit(14, {	-- Kurt's Ornate Key
-						-- ["questID"] = ,
+						["questID"] = 53145,
 						["coord"] = { 62.9, 22.7, 864 },
 					}),
 				}),
@@ -293,9 +293,9 @@ _.Zones =
 						["coord"] = { 57.68, 64.68, 864 },
 					}),
 					o(287239, {	-- Grayal's Last Offering
-						-- Have to interact with object 287238 first to access the chest.
-						["questID"] = 51093,	-- quest for object is 51094
+						["questID"] = 51093,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 48.21, 64.70, 864 },
 					}),
 					o(287304, {	-- Lost Explorer's Bounty [D]
 						["questID"] = 51132,
