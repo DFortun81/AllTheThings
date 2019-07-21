@@ -26,11 +26,7 @@ _.Zones =
 							q(55535),	-- The Tipsy Tinkerer
 						}),
 						i(167069, {	-- Rustbolt Gramophone
-							q(55534,{	-- Rustbolt Gramophone
-								crit(1, {	-- Ode to Tinkertown
-									["achievementID"] = 13686,	-- Junkyard Melomanic
-								}),
-							}),
+							q(55534),	-- Rustbolt Gramophone
 						}),
 						i(169113, {	-- Advanced Adventurer Augmentation
 							i(169002),	-- Calibrated Hefty Cog
