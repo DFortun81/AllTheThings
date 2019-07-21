@@ -75,6 +75,14 @@ _.Zones =
 								}),
 							},
 						}),
+						i(169691, {	-- Vinyl: Depths of Ulduar
+							["questID"] = 56518, -- Vinyl: Depths of Ulduar
+							["g"] = {
+								crit(5, {	-- Depths of Ulduar
+									["achievementID"] = 13686,	-- Junkyard Melomanic
+								}),
+							},
+						}),
 					},
 				}),
 				n(151308, {	-- Boggac Skullbash
@@ -167,7 +175,7 @@ _.Zones =
 							},
 						}),
 						i(169167, {	-- Blueprint: Orange Spraybot
-						--	["questID"] = ,	-- ???
+							["questID"] = 55075,
 							["g"] = {
 								crit(27, {	-- Orange Spraybot
 									["achievementID"] = 13479,	-- Junkyard Architect
@@ -318,6 +326,14 @@ _.Zones =
 						crit(23, {	-- Gemicide
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
+						i(169691, {	-- Vinyl: Depths of Ulduar
+							["questID"] = 56518, -- Vinyl: Depths of Ulduar
+							["g"] = {
+								crit(5, {	-- Depths of Ulduar
+									["achievementID"] = 13686,	-- Junkyard Melomanic
+								}),
+							},
+						}),
 					},
 				}),
 				n(154701, {	-- Gorged Gear-Cruncher
@@ -424,6 +440,11 @@ _.Zones =
 						}),
 						i(169688, {	-- Vinyl: Gnomeragan Forever
 							["questID"] = 56515,
+							["g"] = {
+								crit(2, {	-- Gnomeregan Forever
+									["achievementID"] = 13686,	-- Junkyard Melomanic
+								}),
+							},
 						}),
 					},
 				}),
@@ -476,6 +497,11 @@ _.Zones =
 						}),
 						i(169691, {	-- Vinyl: Depths of Ulduar
 							["questID"] = 56518, -- Vinyl: Depths of Ulduar
+							["g"] = {
+								crit(5, {	-- Depths of Ulduar
+									["achievementID"] = 13686,	-- Junkyard Melomanic
+								}),
+							},
 						}),
 						i(170466),  -- Junkyard Motivator
 					},
@@ -629,14 +655,29 @@ _.Zones =
 								}),
 							},
 						}),
-						i(169691, {	-- Vinyl: Depths of Ulduar
-							["questID"] = 56518,	-- Vinyl: Depths of Ulduar
+						i(169689, {	-- Vinyl: Mimiron's Brainstorm
+							["questID"] = 56516,	-- Vinyl: Mimiron's Brainstorm
+							["g"] = {
+								crit(3, {	-- Mimiron's Brainstorm
+									["achievementID"] = 13686,	-- Junkyard Melomanic
+								}),
+							},
 						}),
 						i(169692, {	-- Vinyl: Triumph of Gnomeregan
 							["questID"] = 56519,	-- Triumph of Gnomeregan
+							["g"] = {
+								crit(6, {	-- Triumph of Gnomeregan
+									["achievementID"] = 13686,	-- Junkyard Melomanic
+								}),
+							},
 						}),
 						i(169690, {	-- Vinyl: Battle of Gnomeregan
 							["questID"] = 56517,	-- Vinyl: Battle of Gnomeregan
+							["g"] = {
+								crit(4, {	-- Battle of Gnomeregan
+									["achievementID"] = 13686,	-- Junkyard Melomanic
+								}),
+							},
 						}),
 					},
 				}),
