@@ -433,6 +433,7 @@ _.Zones =
 					i(134290),	-- Nightborne Noble's Cloak
 				}),
 				n(-3243, {	-- Manawracker Set
+					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 					["groups"] = {
 						i(134304),	-- Manawracker Crown
 						i(134309),	-- Manawracker Shoulders
@@ -443,9 +444,9 @@ _.Zones =
 						i(134306),	-- Manawracker Pants
 						i(134308),	-- Manawracker Sandals
 					},
-					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 				}),
 				n(-3262, {	-- Swordsinger Set
+					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 					["groups"] = {
 						i(134284),	-- Swordsinger's Hood
 						i(134286),	-- Swordsinger's Shoulders
@@ -456,9 +457,9 @@ _.Zones =
 						i(134282),	-- Swordsinger's Leggings
 						i(134281),	-- Swordsinger's Footpads
 					},
-					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 				}),
 				n(-3274, {	-- Ley Dragoon Set
+					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 					["groups"] = {
 						i(134299),	-- Ley Dragoon's Headgear
 						i(134301),	-- Ley Dragoon's Spaulders
@@ -469,9 +470,9 @@ _.Zones =
 						i(134300),	-- Ley Dragoon's Legguards
 						i(134298),	-- Ley Dragoon's Stompers
 					},
-					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 				}),
 				n(-3299, {	-- Arcane Defender Set
+					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					["groups"] = {
 						i(134270),	-- Arcane Defender's Helm
 						i(134272),	-- Arcane Defender's Pauldrons
@@ -482,7 +483,6 @@ _.Zones =
 						i(134271),	-- Arcane Defender's Pants
 						i(134273),	-- Arcane Defender's Boots
 					},
-					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 				}),
 			}),
 		}),

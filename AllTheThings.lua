@@ -11661,7 +11661,15 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									end
 									if data.g then
 										for _,entry in ipairs(data.g) do
-											tinsert(questObject.g, entry);
+											local resolved = ResolveSymbolicLink(entry);
+											if resolved then
+												entry = CreateObject(entry);
+												if not entry.g then entry.g = {}; end
+												for i,o in ipairs(resolved) do
+													MergeObject(entry.g, o);
+												end
+											end
+											MergeObject(questObject.g, entry);
 										end
 									end
 								end
@@ -11726,7 +11734,20 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									end
 									if data.g then
 										for _,entry in ipairs(data.g) do
-											tinsert(questObject.g, entry);
+											MergeObject(questObject.g, entry);
+										end
+									end
+									if data.g then
+										for _,entry in ipairs(data.g) do
+											local resolved = ResolveSymbolicLink(entry);
+											if resolved then
+												entry = CreateObject(entry);
+												if not entry.g then entry.g = {}; end
+												for i,o in ipairs(resolved) do
+													MergeObject(entry.g, o);
+												end
+											end
+											MergeObject(questObject.g, entry);
 										end
 									end
 								end
