@@ -968,7 +968,12 @@ _.Zones =
 				}),
 				q(35647, {	-- A Grim Harvest
 					["qg"] = 82476,	-- Khaano
+					["coord"] = { 58.2, 59.9, 543 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						35644,	-- Mercy for the Living
+						35645,	-- The Secret of the Fungus
+					},
 				}),
 				q(35065, {	-- A Harvester Has Come
 					["qg"] = 80921,	-- Rangari D'kaan
@@ -987,7 +992,12 @@ _.Zones =
 				}),
 				q(35656, {	-- A Heartfelt Search
 					["qg"] = 82476,	-- Khaano
+					["coord"] = { 58.2, 59.9, 543 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						35644,	-- Mercy for the Living
+						35645,	-- The Secret of the Fungus
+					},
 				}),
 				q(35225, {	-- A Heavy Helping Hand
 					["qg"] = 81588,	-- Thaelin Darkanvil
@@ -1247,12 +1257,13 @@ _.Zones =
 					["crs"] = { 81529 },	-- Dessicus
 					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
-				i(113260, {	-- Glowing Red Pod
+				i(113260, {	-- Glowing Red Pod (A)
 					["questID"] = 35642,	-- Mysterious Pod
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 80714 },	-- Fungal Lurcher
+					["description"] = "Must have accepted |cFFFFD700Scout Forensics|r for this to drop.",
 				}),
-				i(112378, {	-- Glowing Red Pod
+				i(112378, {	-- Glowing Red Pod (H)
 					["questID"] = 35021,	-- Mysterious Pod
 					["races"] = HORDE_ONLY,
 					["crs"] = { 80714 },	-- Fungal Lurcher
@@ -1269,9 +1280,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(35659, {	-- Heart of the Fen
+				q(35659, {	-- Heart of the Fen (A)
 					["qg"] = 82477,	-- Khaano
+					["coord"] = { 58.9, 62.5, 543 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						35647,	-- A Grim Harvest
+						35656,	-- A Heartfelt Search
+					},
 					["g"] = {
 						i(112603),	-- Foundry-Fired Plate Legguards
 						i(112606),	-- Overgrowth Cutter Breeches
@@ -1279,7 +1295,7 @@ _.Zones =
 						i(112605),	-- Wildwood Wrangler Leggings
 					},
 				}),
-				q(35040, {	-- Heart of the Fen
+				q(35040, {	-- Heart of the Fen (H)
 					["qg"] = 80757,	-- Grulkor
 					["coord"] = { 57.2, 61.9, 543 },
 					["races"] = HORDE_ONLY,
@@ -1387,7 +1403,13 @@ _.Zones =
 				}),
 				q(35644, {	-- Mercy for the Living
 					["qg"] = 82476,	-- Khaano
+					["coord"] = { 58.2, 59.9, 543 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						35642,	-- Mysterious Pod
+						35633,	-- Scout Forensics
+						35640,	-- Vengeance for the Fallen
+					},
 					["g"] = {
 						i(112596),	-- Foundry-Fired Plate Gauntlets
 						i(112595),	-- Overgrowth Cutter Gloves
@@ -1499,6 +1521,7 @@ _.Zones =
 					["coord"] = { 53.3, 59.8, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35063,	-- We Need an Outpost
+					["isBreadcrumb"] = true,
 				}),
 				o(231903, {	-- Razzlebeard's Report
 					["races"] = ALLIANCE_ONLY,
@@ -1569,6 +1592,7 @@ _.Zones =
 				}),
 				q(35633, {	-- Scout Forensics
 					["qg"] = 80762,	-- Khaano
+					["coord"] = { 59.3, 56.3, 543 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35666,	-- Rangari in the Red
 				}),
@@ -1773,7 +1797,13 @@ _.Zones =
 				}),
 				q(35645, {	-- The Secret of the Fungus
 					["qg"] = 82476,	-- Khaano
+					["coord"] = { 58.2, 59.9, 543 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						35642,	-- Mysterious Pod
+						35633,	-- Scout Forensics
+						35640,	-- Vengeance for the Fallen
+					},
 				}),
 				q(36632, {	-- The Secrets of Gorgrond
 					["qg"] = 86088,	-- Rangari Kolaan
@@ -1816,7 +1846,9 @@ _.Zones =
 				}),
 				q(35640, {	-- Vengeance for the Fallen
 					["qg"] = 82499,	-- Dying Rangari
+					["coord"] = { 59.5, 57.9, 543 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35063,	-- We Need an Outpost
 				}),
 				q(35834, {	-- Wake of the Genesaur
 					["qg"] = 80922,	-- Rangari Kaalya
