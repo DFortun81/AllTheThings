@@ -87,6 +87,7 @@ _.Zones =
 			i(170472, {	-- Encrusted Coin (possibly part of a secret?)
 				["description"] = "This item can drop from mobs, chests, or Mardivas's Universally Lauded Tote.  Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
 				["questID"] = 57141,
+				["repeatable"] = true,
 				["coord"] = { 38.0, 59.2, 1355 },
 				["g"] = {
 					i(170473),	-- Jingling Sack

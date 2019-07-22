@@ -360,6 +360,13 @@ _.Zones =
 						4492,	-- Lost Pre Cata Version
 					},
 				},
+				{	-- Lost!
+					["questID"] = 4492,
+					["u"] = 40,
+					["qg"] = 9997,	-- Spraggle Frock
+				--	["coord"] = { 54.9, 62.6, 78 },
+				--	["sourceQuest"] = 24794,	-- Speak with Spraggle
+				},
 				{	-- Marshal's Refuse
 					["questID"] = 24701,
 					["qg"] = 38277,	-- Doreen
