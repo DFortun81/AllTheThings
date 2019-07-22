@@ -646,7 +646,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
 					["g"] = {
-						n(-4178, {	-- Season 10 (need new Header)
+						n(-673, {	-- Ruthless Gladiator: Season 10
 							n(-319, {	-- Weapons
 								i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 									i(70242),	-- Ruthless Gladiator's Barrier

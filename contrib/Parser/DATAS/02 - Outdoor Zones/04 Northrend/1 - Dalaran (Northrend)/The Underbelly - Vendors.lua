@@ -1784,7 +1784,7 @@ _.Zones =
 					n(54651, {	-- Zom Bocom (Same name, different npc)
 						["u"] = 43,	-- Vendor no longer exists
 						["g"] = {
-							n(-4178, {	-- Season 10 (need new Header)
+							n(-673, {	-- Ruthless Gladiator: Season 10
 								n(-319, {	-- Weapons
 									i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 										i(70242),	-- Ruthless Gladiator's Barrier

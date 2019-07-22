@@ -1277,25 +1277,25 @@ AllTheThings.L = {
 		[-663] = "Classic Pre-Season Gear",										-- Classic Pre-Season PvP Gear (need a icon)
 		
 -- The Burning Crusade PvP Seasons
-		[-664] = "Gladiator: Season 1",											-- Gladiator: Season 1 
-		[-665] = "Merciless Gladiator: Season 2",								-- Merciless Gladiator: Season 2
-		[-666] = "Vengeful Gladiator: Season 3",								-- Vengeful Gladiator: Season 3
-		[-667] = "Brutal Gladiator: Season 4",									-- Brutal Gladiator: Season 4
+		[-664] = select(2, GetAchievementInfo(2091))..": Season 1",				-- Gladiator: Season 1
+		[-665] = select(2, GetAchievementInfo(418))..": Season 2",				-- Merciless Gladiator: Season 2
+		[-666] = select(2, GetAchievementInfo(419))..": Season 3",				-- Vengeful Gladiator: Season 3
+		[-667] = select(2, GetAchievementInfo(420))..": Season 4",				-- Brutal Gladiator: Season 4
 		
 -- Wrath of the Lichking PvP Seasons
-		[-668] = "Deadly Gladiator: Season 5",									-- Deadly Gladiator: Season 5
-		[-669] = "Furious Gladiator: Season 6",									-- Furious Gladiator: Season 6
-		[-670] = "Relentless Gladiator: Season 7",								-- Relentless Gladiator: Season 7
-		[-671] = "Wrathful Gladiator: Season 8",								-- Wrathful Gladiator: Season 8
+		[-668] = select(2, GetAchievementInfo(3336))..": Season 5",				-- Deadly Gladiator: Season 5
+		[-669] = select(2, GetAchievementInfo(3436))..": Season 6",				-- Furious Gladiator: Season 6
+		[-670] = select(2, GetAchievementInfo(3758))..": Season 7",				-- Relentless Gladiator: Season 7
+		[-671] = select(2, GetAchievementInfo(4599))..": Season 8",				-- Wrathful Gladiator: Season 8
 		
 -- Cataclysm PvP Seasons
-		[-672] = "Vicious Gladiator: Season 9",									-- Vicious Gladiator: Season 9
-		[-673] = "Ruthless Gladiator: Season 10",								-- Ruthless Gladiator: Season 10
-		[-674] = "Cataclysmic Gladiator: Season 11",							-- Cataclysmic Gladiator: Season 11
+		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
+		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
+		[-674] = select(2, GetAchievementInfo(6938))..": Season 11",			-- Cataclysmic Gladiator: Season 11
 		
 -- Mists of Pandaria PvP Seasons
-		[-675] = "Season 12: Malevolent Gladiator",								-- Malevolent Gladiator: Season 12
-		[-676] = "Season 13: Tyrannical Gladiator",								-- Tyrannical Gladiator: Season 13
+		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12
+		[-676] = select(2, GetAchievementInfo(8791))..": Season 13",			-- Tyrannical Gladiator: Season 13
 		[-677] = select(2, GetAchievementInfo(8643)),							-- Grievous Gladiator: Season 14
 		[-678] = select(2, GetAchievementInfo(8666)),							-- Prideful Gladiator: Season 15
 		

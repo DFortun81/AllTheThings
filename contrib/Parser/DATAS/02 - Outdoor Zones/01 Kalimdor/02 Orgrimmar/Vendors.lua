@@ -39,7 +39,7 @@ _.Zones =
 					["coord"] = { 38.6, 70.0, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-4178, {	-- Season 10 (need new Header)
+						n(-673, {	-- Ruthless Gladiator: Season 10
 							n(-319, {	-- Weapons
 								i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 									i(70242),	-- Ruthless Gladiator's Barrier
@@ -374,7 +374,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						n(-4178, {	-- Season 10 (need new Header)
+						n(-673, {	-- Ruthless Gladiator: Season 10
 							n(-662, {	-- Elite PvP Gear
 								n(-319, {	-- Weapons
 									un(2, i(70178)),	-- Ruthless Gladiator's Greatsword
