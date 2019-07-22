@@ -151,6 +151,33 @@ _.Zones =
 						["criteriaID"] = 10,
 					}),
 				}),
+				ach(13082, {	-- Everything Old Is New Again
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "Turn in all items at 44.90, 27.41.",
+					["coord"] = { 44.90, 27.41, 896 },
+					["g"] = {
+						o(297939, {	-- Order Of Embers Crossbow
+							["questID"] = 53430,
+							["coord"] = { 35.53, 51.88, 896 },
+							["criteriaID"] = 1,	-- Crossbow
+						}),
+						o(297942, {	-- Order Of Embers Flask
+							["questID"] = 53431,
+							["coord"] = { 64.86, 67.80, 896 },
+							["criteriaID"] = 2,	-- Flask
+						}),
+						o(297941, {	-- Order Of Embers Hat
+							["questID"] = 53433,
+							["coord"] = { 55.44, 27.13, 896 },
+							["criteriaID"] = 3,	-- Hat
+						}),
+						o(297940, {	-- Order Of Embers Knife
+							["questID"] = 53432,
+							["coord"] = { 32.57, 58.90, 896 },
+							["criteriaID"] = 4,	-- Knife
+						}),
+					},
+				}),
 				ach(13087, {	-- Sausage Sampler
 					["description"] = "Can be completed as Horde by purchasing items on the AH.",
 					["g"] = {
