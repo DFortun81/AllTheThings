@@ -45,6 +45,25 @@ _.Zones =
 					},
 				}),
 				ach(12939),		-- Adventurer of Tiragarde Sound
+				ach(13057, {	-- Shanty Raid
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["g"] = {
+						o(297933, {	-- Dusty Songbook
+							["questID"] = 53410,	-- Shanty of Fruit Counting [Criteria]
+							["coord"] = { 43.50, 25.59, 895 },
+							["g"] = {
+								i(163715),	-- Forbidden Sea Shanty of Fruit Counting
+							},
+						}),
+						o(297934, {	-- Scoundrel's Songbook
+							["questID"] = 53411,	-- Shanty of the Horse [Criteria]
+							["coord"] = { 73.20, 84.13, 895 },
+							["g"] = {
+								i(163719),	-- Forbidden Sea Shanty of the Horse
+							},
+						}),
+					},
+				}),
 				ach(12852, {	-- Treasures of Tiragarde Sound
 					o(279750, {	-- Hay Covered Chest [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",

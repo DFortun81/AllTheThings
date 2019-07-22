@@ -35,6 +35,25 @@ _.Zones =
 						crit(3),	-- Stormsong and Dance
 					},
 				}),
+				ach(13057, {	-- Shanty Raid
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["g"] = {
+						o(297905, {	-- Jay's Songbook
+							["questID"] = 53407,	-- Shanty of Inebriation [Criteria]
+							["coord"] = { 53.01, 17.60, 1161 },
+							["g"] = {
+								i(163716),	-- Forbidden Sea Shanty of Inebriation
+							},
+						}),
+						o(297906, {	-- Russel's Songbook
+							["questID"] = 53408,	-- Shanty of the Lively Men [Criteria]
+							["coord"] = { 72.48, 69.24, 1161 },
+							["g"] = {
+								i(163714),	-- Forbidden Sea Shanty of the Lively Men
+							},
+						}),
+					},
+				}),
 				ach(12997, {	-- The Pride of Kul Tiras
 					["races"] = ALLIANCE_ONLY,
 				}),
