@@ -431,7 +431,7 @@ _.GearSets =
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"where", "npcID", -319 },	-- Select the "Weapons" header.
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"is", "itemID"}
+								{"is", "itemID"},
 								{"not", "itemID", 146640 }, -- Don't use the Arsenal / Ensamble itself
 							},
 						}),
