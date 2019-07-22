@@ -10,101 +10,64 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },
 		["coord"] = { 45.56, 53.61, 534 },	-- Tanaan Jungle, Draenor
 		["groups"] = {
-			n(-4, {		-- Achievements
+			n(-4, {	-- Achievements
 				ach(10149, {	-- Glory of the Hellfire Raider
-					["g"] = {
-						i(127140),	-- Infernal Direwolf
-						{	-- Nearly Indestructible
-							["achievementID"] = 10026,
-							["crs"] = {
-								95068,	-- Hellfire Assault
-							},
+					i(127140),	-- Infernal Direwolf
+					ach(10026, {	-- Nearly Indestructible
+						["crs"] = { 95068 },	-- Hellfire Assault
+					}),
+					ach(10057, {	-- Turning the Tide
+						["description"] = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at 120.",
+						["crs"] = { 90284 },	-- Iron Reaver
+					}),
+					ach(10013, {	-- Waves Came Crashing Down All Around
+						["crs"] = { 90435 },	-- Kormrok
+					}),
+					ach(10054, {	-- Don't Fear the Reaper
+						["crs"] = {
+							-- Hellfire High Council
+							92142,	-- Blademaster Jubei'thos
+							92144,	-- Dia Darkwhisper
+							92146,	-- Gurtogg Bloodboil
 						},
-						{	-- Turning the Tide
-							["achievementID"] = 10057,
-							["description"] = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at 120.",
-							["crs"] = {
-								90284,	-- Iron Reaver
-							},
+					}),
+					ach(9972, {	-- A Race Against Slime
+						["crs"] = {
+							90378,	-- Kilrogg
+							90980,	-- Ariok
 						},
-						{	-- Waves Came Crashing Down All Around
-							["achievementID"] = 10013,
-							["crs"] = {
-								90435,	-- Kormrok
-							},
+						["g"] = {
+							follower(474),	-- Ariok
 						},
-						{	-- Don't Fear the Reaper
-							["achievementID"] = 10054,
-							["crs"] = {
-								-- Hellfire High Council
-								92142,	-- Blademaster Jubei'thos
-								92144,	-- Dia Darkwhisper
-								92146,	-- Gurtogg Bloodboil
-							},
-						},
-						{	-- A Race Against Slime
-							["achievementID"] = 9972,
-							["crs"] = {
-								90378,	-- Kilrogg
-								90980,	-- Ariok
-							},
-							["g"] = {
-								follower(474),	-- Ariok
-							},
-						},
-						{	-- Get In My Belly!
-							["achievementID"] = 9979,
-							["crs"] = {
-								90199,	-- Gorefiend
-							},
-						},
-						{	-- Pro Toss
-							["achievementID"] = 9988,
-							["description"] = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
-							["crs"] = {
-								90316,	-- Shadow-Lord Iskar
-							},
-						},
-						{	-- I'm a Soul Man
-							["achievementID"] = 10086,
-							["crs"] = {
-								92330,	-- Socrethar
-							},
-						},
-						{	-- This Land Was Green and Good Until...
-							["achievementID"] = 10012,
-							["crs"] = {
-								89890,	-- Fel Lord Zakuun
-							},
-						},
-						{	-- You Gotta Keep 'em Separated
-							["achievementID"] = 10087,
-							["crs"] = {
-								93068,	-- Xhul'horac
-							},
-						},
-						{	-- Non-Lethal Enforcer
-							["achievementID"] = 9989,
-							["crs"] = {
-								90269,	-- Tyrant Velhari
-							},
-						},
-						{	-- Bad Manner(oth)
-							["achievementID"] = 10030,
-							["crs"] = {
-								91349,	-- Mannoroth
-							},
-						},
-						{	-- Echoes of Doomfire
-							["achievementID"] = 10073,
-							["crs"] = {
-								91331,	-- Archimonde
-							},
-						},
-					},
+					}),
+					ach(9979, {	-- Get In My Belly!
+						["crs"] = { 90199 },	-- Gorefiend
+					}),
+					ach(9988, {	-- Pro Toss
+						["description"] = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
+						["crs"] = { 90316 },	-- Shadow-Lord Iskar
+					}),
+					ach(10086, {	-- I'm a Soul Man
+						["crs"] = { 92330 },	-- Socrethar
+					}),
+					ach(10012, {	-- This Land Was Green and Good Until...
+						["crs"] = { 89890 },	-- Fel Lord Zakuun
+					}),
+					ach(10087, {	-- You Gotta Keep 'em Separated
+						["crs"] = { 93068 },	-- Xhul'horac
+					}),
+					ach(9989, {	-- Non-Lethal Enforcer
+						["crs"] = { 90269 },	-- Tyrant Velhari
+					}),
+					ach(10030, {	-- Bad Manner(oth)
+						["crs"] = { 91349 },	-- Mannoroth
+					}),
+					ach(10073, {	-- Echoes of Doomfire
+						["crs"] = { 91331 },	-- Archimonde
+					}),
 				}),
 			}),
-			d(17, {		-- LFR
+			d(17, {	-- LFR
 				n(0, {	-- Zone Drop
 					un(40, i(127115, {	-- Tome of Chaos
 						["crs"] = {
@@ -365,18 +328,24 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 			}),
-			d(14, {		-- Normal
+			d(14, {	-- Normal
 				n(-17, {	-- Quests
-					{
-						["questID"] = 39502,	-- The Fel Spire
+					q(39502, {	-- The Fel Spire
 						["qg"] = 95659,	-- Archmage Khadgar
-					},
-					{
-						["questID"] = 39499,	-- Well of Souls
+						["altQuests"] = {
+							39504,	-- The Fel Spire [Heroic]
+							39505,	-- The Fel Spire [Mythic]
+						},
+					}),
+					q(39499, {	-- Well of Souls
 						["qg"] = 95659,	-- Archmage Khadgar
-					},
+						["altQuests"] = {
+							39500,	-- Well of Souls [Heroic]
+							39501,	-- Well of Souls [Mythic]
+						},
+					}),
 				}),
-				n(0, {				-- Zone Drop
+				n(0, {	-- Zone Drop
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -760,16 +729,16 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(15, {		-- Heroic
 				n(-17, {	-- Quests
-					{
-						["questID"] = 39504,	-- The Fel Spire [Heroic]
+					q(39504, {	-- The Fel Spire [Heroic]
 						["qg"] = 95659,	-- Archmage Khadgar
-					},
-					{
-						["questID"] = 39500,	-- Well of Souls [Heroic]
+						["altQuests"] = { 39505 },	-- The Fel Spire [Mythic]
+					}),
+					q(39500, {	-- Well of Souls [Heroic]
 						["qg"] = 95659,	-- Archmage Khadgar
-					},
+						["altQuests"] = { 39501 },	-- Well of Souls [Mythic]
+					}),
 				}),
-				n(0, {				-- Zone Drop
+				n(0, {	-- Zone Drop
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -1158,16 +1127,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(16, {		-- Mythic
 				n(-17, {	-- Quests
-					{
-						["questID"] = 39505,	-- The Fel Spire [Mythic]
+					q(39505, {	-- The Fel Spire [Mythic]
 						["qg"] = 95659,	-- Archmage Khadgar
-					},
-					{
-						["questID"] = 39501,	-- Well of Souls [Mythic]
+					}),
+					q(39501, {	-- Well of Souls [Mythic]
 						["qg"] = 95659,	-- Archmage Khadgar
-					},
+					}),
 				}),
-				n(0, {				-- Zone Drop
+				n(0, {	-- Zone Drop
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt

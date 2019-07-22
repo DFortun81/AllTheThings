@@ -257,11 +257,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(14, {		-- Normal
 				n(-17, {	-- Quests
-					{
-						["questID"] = 37029,	-- Sigil of the Black Hand
+					q(37029, {	-- Sigil of the Black Hand
 						["qg"] = 87225,	-- Goraluk Anvilcrack
 						["description"] = "The quest giver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal Difficulty each week.",
-					},
+						["altQuests"] = { 
+							37030,	-- Sigil of the Black Hand [Heroic]
+							37031,	-- Sigil of the Black Hand [Mythic]
+						},
+					}),
 				}),
 				n(0, {		-- Zone Drop
 					i(119332),	-- Bracers of Darkened Skies
@@ -839,8 +842,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(15, {		-- Heroic
 				n(-17, {	-- Quests
-					q(37030, {	-- Sigil of the Black Hand (Heroic)
+					q(37030, {	-- Sigil of the Black Hand [Heroic]
 						["qg"] = 87225,	-- Goraluk Anvilcrack
+						["altQuests"] = { 37031 },	-- Sigil of the Black Hand [Mythic]
 					}),
 				}),
 				n(0, {		-- Zone Drop
@@ -1419,7 +1423,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(16, {		-- Mythic
 				n(-17, {	-- Quests
-					q(37031, {	-- Sigil of the Black Hand (Mythic)
+					q(37031, {	-- Sigil of the Black Hand [Mythic]
 						["qg"] = 87225,	-- Goraluk Anvilcrack
 						["description"] = "The quest giver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic Difficulty each week.",
 					}),
