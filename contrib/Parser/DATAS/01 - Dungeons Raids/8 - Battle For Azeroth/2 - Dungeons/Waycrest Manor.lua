@@ -66,9 +66,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						136541,	-- Bile Oozing
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-						i(163833, {	-- Recipe: Heartsbane Hexwurst
-							["spellID"] = 280282,
-						}),
+						i(163833),	-- Recipe: Heartsbane Hexwurst
 						i(159660),	-- Servant Splitter
 						i(159294),	-- Raal's Bib
 						i(159397),	-- Slaughterhouse-Chain Bracers
@@ -152,9 +150,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							136541,	-- Bile Oozing
 						},
 						["g"] = {
-							i(163833, {	-- Recipe: Heartsbane Hexwurst
-								["spellID"] = 280282,
-							}),
+							i(163833),	-- Recipe: Heartsbane Hexwurst
 							i(159660),	-- Servant Splitter
 							i(159294),	-- Raal's Bib
 							i(159397),	-- Slaughterhouse-Chain Bracers
@@ -257,9 +253,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							136541,	-- Bile Oozing
 						},
 						["g"] = {
-							i(163833, {	-- Recipe: Heartsbane Hexwurst
-								["spellID"] = 280282,
-							}),
+							i(163833),	-- Recipe: Heartsbane Hexwurst
 							i(159660),	-- Servant Splitter
 							i(159294),	-- Raal's Bib
 							i(159397),	-- Slaughterhouse-Chain Bracers

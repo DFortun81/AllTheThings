@@ -8,6 +8,33 @@ _.Zones =
 		m(896, {	-- Drustvar
 			n(-4, {	-- Achievement
 				ach(12941),		-- Adventurer of Drustvar
+				ach(13083, {		-- Better, Faster, Stronger
+					["description"] = "Collect and have active Witch's Boons: Excellence, Extra Pep, Rage, and Fortitude which are on a 5 minute timer and the debuff Witch's Curse: Newt. Debuffs can remove one of your buffs. Coords are possible brew spawn points.",
+					["coords"] = {
+						{ 25.00, 53.35, 896 },
+						{ 22.64, 54.18, 896 },
+						{ 25.36, 55.57, 896 },
+						{ 24.73, 59.22, 896 },
+						{ 21.93, 59.37, 896 },
+						{ 22.98, 49.57, 896 },
+						{ 23.04, 55.62, 896 },
+						{ 20.43, 55.32, 896 },
+						{ 27.30, 53.21, 896 },
+						{ 26.10, 54.56, 896 },
+						{ 21.94, 59.36, 896 },
+						{ 21.17, 57.45, 896 },
+						{ 19.98, 55.15, 896 },
+						{ 19.97, 54.62, 896 },
+						{ 27.13, 58.16, 896 },
+						{ 18.83, 56.81, 896 },
+						{ 24.56, 49.35, 896 },
+						{ 25.78, 50.19, 896 },
+						{ 18.98, 53.61, 896 },
+						{ 19.19, 54.19, 896 },
+						{ 23.76, 60.86, 896 },
+						{ 19.00, 58.29, 896 },
+					},
+				}),
 				ach(13094, {	-- Cursed Game Hunter
 					crit(1, {	-- Goats
 						["crs"] = { 143929 },	-- Hexed Craghopper
@@ -123,6 +150,50 @@ _.Zones =
 						["coord"] = { 44.6, 45.7, 896 },
 						["criteriaID"] = 10,
 					}),
+				}),
+				ach(13087, {	-- Sausage Sampler
+					["description"] = "Can be completed as Horde by purchasing items on the AH.",
+					["g"] = {
+						i(163110, {	-- Fried Boar Sausage
+							["coord"] = { 26.7, 72.5, 896 },
+							["criteriaID"] = 1,
+							["crs"] = {
+								136655,	-- Alisha Darkwater
+							},
+						}),
+						i(155812, {	-- Goldshire Farms Smoked Sausage
+							["coord"] = { 55.6, 34.8, 896 },
+							["criteriaID"] = 2,
+							["crs"] = {
+								128467,	-- Elijah Eggleton <Sausages>
+							},
+						}),
+						i(163781, {	-- Heartsbane Hexenwurst
+							["description"] = "Recipte for cooks is dropped by Raal the Gluttonous in Waycrest Manor or buy the sausage off the AH.",
+							["criteriaID"] = 3,
+						}),
+						i(155811, {	-- Roland's Famous Frankfurter
+							["coord"] = { 55.6, 34.8, 896 },
+							["criteriaID"] = 4,
+							["crs"] = {
+								128467,	-- Elijah Eggleton <Sausages>
+							},
+						}),
+						i(155813, {	-- Rosco Fryer's Mostly-Meat Brat
+							["coord"] = { 55.6, 34.8, 896 },
+							["criteriaID"] = 5,
+							["crs"] = {
+								128467,	-- Elijah Eggleton <Sausages>
+							},
+						}),
+						i(155814, {	-- Timmy Gene Sunrise Pork
+							["coord"] = { 55.6, 34.8, 896 },
+							["criteriaID"] = 6,
+							["crs"] = {
+								128467,	-- Elijah Eggleton <Sausages>
+							},
+						}),
+					},
 				}),
 				ach(12995, {	-- Treasures of Drustvar
 					o(297879, {	-- Bespelled Chest

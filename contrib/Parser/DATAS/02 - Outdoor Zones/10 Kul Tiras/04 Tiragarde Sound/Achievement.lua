@@ -44,7 +44,10 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(12939),		-- Adventurer of Tiragarde Sound
+				ach(12939),	-- Adventurer of Tiragarde Sound
+				ach(13058, {	-- Kul Tiran Up the Dance Floor
+					["coord"] = { 50.53, 24.33, 895 },
+				}),
 				ach(13057, {	-- Shanty Raid
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
