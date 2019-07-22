@@ -124,12 +124,18 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
-			q(55662, {	-- Arcane Cache
+			q(55662, {	-- Arcane Cache (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
 			--	["objectID"] = ,	-- Arcane Cache — unknown, not linked to quest
 				["coord"] = { 53.1, 28.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56233, {	-- Arcane Cache (H)
+				["coord"] = { 53.1, 28.3, 1355 },
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",	
+				["races"] = HORDE_ONLY,
 			}),
 			q(55983, {	-- A Safer Place (A)
 				["qg"] = 152084,	-- Mrrl
@@ -1818,6 +1824,12 @@ _.Zones =
 				["coord"] = { 49.7, 64.6, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55481,	-- Scouting the Palace
+			}),
+			q(55766, {	-- She Sells These Shells
+				["qg"] = 153006,	-- Bren Inkfin
+				["coord"] = { 38.0, 48.6, 1355 },
+				["sourceQuest"] = 55500,	-- Save A Friend
+				["races"] = HORDE_ONLY,
 			}),
 			q(55565, {	-- Shoring Up Mana Reserves
 				["sourceQuests"] = { 55561 },	-- What Remains of Zin-Azshari

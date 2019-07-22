@@ -93,7 +93,7 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5475, crit(1)),	-- Let's Do Lunch: Orgrimmar / A Fisherman's Feast 
+								ach(5474, crit(1)),	-- Let's Do Lunch: Stormwind / A Fisherman's Feast 
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -104,7 +104,7 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5475, crit(2)),	-- Let's Do Lunch: Orgrimmar / Feeling Crabby?
+								ach(5474, crit(2)),	-- Let's Do Lunch: Stormwind / Feeling Crabby?
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -115,7 +115,7 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5475, crit(3)),	-- Let's Do Lunch: Orgrimmar / Orphans Like Cookies Too!
+								ach(5474, crit(3)),	-- Let's Do Lunch: Stormwind / Orphans Like Cookies Too!
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -126,7 +126,7 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5475, crit(4)),	-- Let's Do Lunch: Orgrimmar / Penny's Pumpkin Pancakes
+								ach(5474, crit(4)),	-- Let's Do Lunch: Stormwind / Penny's Pumpkin Pancakes
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -137,7 +137,7 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5475, crit(5)),	-- Let's Do Lunch: Orgrimmar / The King's Cider
+								ach(5474, crit(5)),	-- Let's Do Lunch: Stormwind / The King's Cider
 								currency(81),	-- Epicurean's Award
 							},
 						}),
