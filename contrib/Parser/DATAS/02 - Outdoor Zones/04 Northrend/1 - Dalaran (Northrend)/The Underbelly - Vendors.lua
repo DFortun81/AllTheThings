@@ -1787,37 +1787,18 @@ _.Zones =
 							n(-673, {	-- Ruthless Gladiator: Season 10
 								n(-319, {	-- Weapons
 									i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
-										i(70242),	-- Ruthless Gladiator's Barrier
-										i(70235),	-- Ruthless Gladiator's Baton of Light
-										i(70226),	-- Ruthless Gladiator's Battle Staff
-										i(70222),	-- Ruthless Gladiator's Bonecracker
-										i(70224),	-- Ruthless Gladiator's Bonegrinder
-										i(70211),	-- Ruthless Gladiator's Cleaver
-										i(70213),	-- Ruthless Gladiator's Decapitator
-										i(70239),	-- Ruthless Gladiator's Endgame
-										i(70227),	-- Ruthless Gladiator's Energy Staff
-										i(70218),	-- Ruthless Gladiator's Fleshslicer
-										i(70223),	-- Ruthless Gladiator's Gavel
-										i(70231),	-- Ruthless Gladiator's Greatsword
-										i(70212),	-- Ruthless Gladiator's Hacker
-										i(70238),	-- Ruthless Gladiator's Heavy Crossbow
-										i(70236),	-- Ruthless Gladiator's Longbow
-										i(70225),	-- Ruthless Gladiator's Pike
-										i(70221),	-- Ruthless Gladiator's Pummeler
-										i(70230),	-- Ruthless Gladiator's Quickblade
-										i(70243),	-- Ruthless Gladiator's Redoubt
-										i(70240),	-- Ruthless Gladiator's Reprieve
-										i(70237),	-- Ruthless Gladiator's Rifle
-										i(70220),	-- Ruthless Gladiator's Right Render
-										i(70217),	-- Ruthless Gladiator's Ripper
-										i(70214),	-- Ruthless Gladiator's Shanker
-										i(70241),	-- Ruthless Gladiator's Shield Wall
-										i(70215),	-- Ruthless Gladiator's Shiv
-										i(70219),	-- Ruthless Gladiator's Slasher
-										i(70229),	-- Ruthless Gladiator's Slicer
-										i(70216),	-- Ruthless Gladiator's Spellblade
-										i(70228),	-- Ruthless Gladiator's Staff
-										i(70234),	-- Ruthless Gladiator's Touch of Defeat
+										["sym"] = {
+											{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
+											{"pop"},	-- Push all of the groups contained to the processing layer.
+											{"where", "npcID", -673 },	-- Select the "Ruthless Gladiator: Season 10" header
+											{"pop"},	-- Push all of the groups contained to the processing layer.
+											{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header.
+											{"pop"},	-- Push all of the groups contained to the processing layer.
+											{"where", "npcID", -319 },	-- Select the "Weapons" header.
+											{"pop"},	-- Push all of the groups contained to the processing layer.
+											{"is", "itemID"}
+											{"not", "itemID", 146640 }, -- Don't use the Arsenal / Ensamble itself
+										},
 									}),
 									i(70242),	-- Ruthless Gladiator's Barrier
 									i(70235),	-- Ruthless Gladiator's Baton of Light
