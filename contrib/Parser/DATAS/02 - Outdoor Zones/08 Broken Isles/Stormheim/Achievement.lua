@@ -185,6 +185,9 @@ _.Zones =
 						})),
 					},
 				})),
+				ach(11232, {	-- Lock, Stock and Two Smoking Goblins
+					["sourceQuests"] = { 43331 },	-- Time to Collect
+				}),
 				ach(10877, {	-- Pillars of Creation
 					["collectible"] = false,
 					["groups"] = {
@@ -227,6 +230,9 @@ _.Zones =
 					crit(8, {	-- The Champion of Stormheim
 						["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
 					}),
+				}),
+				ach(10793, {	-- What a Ripoff!
+					["sourceQuests"] = { 42483 },	-- Put it All on Red
 				}),
 			}),
 		}),	

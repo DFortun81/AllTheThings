@@ -69,47 +69,54 @@ _.Zones =
 				--]]
 				prof(171, {	-- Alchemy
 					-- Tools of Trade Questline
-					qh(50112, {	-- Casting the First Stone
+					q(50112, {	-- Casting the First Stone
 						["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
 						["coord"] = { 42.2, 38.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 171,	-- Alchemy
 					}),
-					qh(50113, {	-- Ocular Extracts
+					q(50113, {	-- Ocular Extracts
 						["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
 						["coord"] = { 42.2, 38.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50112,	-- Casting the First Stone
 						["requireSkill"] = 171,	-- Alchemy
 					}),
-					qh(50115, {	-- Changing the Scenery
+					q(50115, {	-- Changing the Scenery
 						["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
 						["coord"] = { 42.2, 38.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50112,	-- Casting the First Stone
 						["requireSkill"] = 171,	-- Alchemy
 					}),
-					qh(50116, {	-- A Possible Solution
+					q(50116, {	-- A Possible Solution
 						["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
 						["coord"] = { 42.2, 38.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							50115,	-- Changing the Scenery
 							50113,	-- Ocular Extracts
 						},
 						["requireSkill"] = 171,	-- Alchemy
 					}),
-					qh(50117, {	-- A Deathly Draught
+					q(50117, {	-- A Deathly Draught
 						["qg"] = 132680,	-- Zukashi <Master of Transmutations>
 						["coord"] = { 65.2, 36.9, 863 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50116,	-- A Possible Solution
 						["requireSkill"] = 171,	-- Alchemy
 					}),
-					qh(50118, {	-- A Stone's Throw
+					q(50118, {	-- A Stone's Throw
 						["qg"] = 132680,	-- Zukashi <Master of Transmutations>
 						["coord"] = { 65.2, 36.9, 863 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50116,	-- A Possible Solution
 						["requireSkill"] = 171,	-- Alchemy
 					}),
-					qh(50119, {	-- Chemically Compounded
+					q(50119, {	-- Chemically Compounded
 						["qg"] = 132680,	-- Zukashi <Master of Transmutations>
 						["coord"] = { 65.2, 36.9, 863 },
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							50117,	-- A Deathly Draught
 							50118,	-- A Stone's Throw
@@ -117,8 +124,9 @@ _.Zones =
 						["requireSkill"] = 171,	-- Alchemy
 					}),
 					o(280957, {	-- Zukashi's Satchel
-						qh(50120, {	-- A Recipe for Success
+						q(50120, {	-- A Recipe for Success
 							["coord"] = { 62.9, 28.9, 863 },
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 50119,	-- Chemically Compounded
 							["requireSkill"] = 171,	-- Alchemy
 							["g"] = {
@@ -163,78 +171,87 @@ _.Zones =
 					}),
 				}),
 				prof(186, {	-- Mining
-					qh(51962, {	-- Lumbering Away
+					q(51962, {	-- Lumbering Away
 						["qg"] = 122694,	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 50 Zandalari Mining",
 						["g"] = {
 							recipe(253334),	-- Monelite Deposit Rank 2
 						},
 					}),
-					qh(51964, {	-- Insufferable Bloodsuckers
+					q(51964, {	-- Insufferable Bloodsuckers
 						["qg"] = 122694,	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 130 Zandalari Mining",
 						["g"] = {
 							recipe(253335),	-- Monelite Deposit Rank 2
 						},
 					}),
-					qh(51965, {	-- Lending a Hand
+					q(51965, {	-- Lending a Hand
 						["qg"] = 122694,	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 50 Zandalari Mining",
 						["g"] = {
 							recipe(253343),	-- Monelite Seam Rank 2
 						},
 					}),
-					qh(51971, {	-- An Exquisite Brooch
+					q(51971, {	-- An Exquisite Brooch
 						["qg"] = 122694,	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 150 Zandalari Mining",
 						["g"] = {
 							recipe(253344),	-- Monelite Seam Rank 3
 						},
 					}),
-					qh(52014, {	-- Ritualistic Prepartions
+					q(52014, {	-- Ritualistic Prepartions
 						["qg"] = 122694,	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 50 Zandalari Mining",
 						["g"] = {
 							recipe(253337),	-- Storm Silver Deposit Rank 2
 						},
 					}),
-					qh(52015, {	-- Brined Justice
+					q(52015, {	-- Brined Justice
 						["qg"] = 122694,	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 135 Zandalari Mining",
 						["g"] = {
 							recipe(253338),	-- Storm Silver Deposit Rank 3
 						},
 					}),
-					qh(52016, {	-- Three Sheets to the Wind
+					q(52016, {	-- Three Sheets to the Wind
 						["qg"] = 122694,	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 125 Zandalari Mining",
 						["g"] = {
 							recipe(253346),	-- Storm Silver Seam Rank 2
 						},
 					}),
-					qh(52017, {	-- Back to Biru
+					q(52017, {	-- Back to Biru
 						["qg"] = 122694,	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 150 Zandalari Mining",
 					}),
-					qh(52043, {	-- The Wrath of Grapes
+					q(52043, {	-- The Wrath of Grapes
 						["qg"] = 139634,	-- Biru The Drunk
 						["coord"] = { 52.7, 84.3, 1165 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 52017,	-- Back to Biru
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 150 Zandalari Mining",
@@ -243,7 +260,8 @@ _.Zones =
 						},
 					}),
 					i(161079, {	-- Exceptional Platinum Shard
-						qh(52046, {	-- An Exceptional Platinum Shard
+						q(52046, {	-- An Exceptional Platinum Shard
+							["races"] = HORDE_ONLY,
 							["requireSkill"] = 186,	--  Mining
 							["description"] = "Requires 130 Zandalari Mining",
 							["g"] = {
@@ -254,19 +272,22 @@ _.Zones =
 				}),
 				prof(197, {	-- Tailoring
 					-- Tools of Trade Questline
-					qh(53938, {	-- A Friend in Needle
+					q(53938, {	-- A Friend in Needle
 						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 43.5, 34.8, 1165 },
+						["races"] = HORDE_ONLY,
 						["requireSkill"] = 197,
 					}),
-					qh(53940, {	-- A Stitch in Time
+					q(53940, {	-- A Stitch in Time
 						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 43.5, 34.8, 1165 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53938,	-- A Friend in Needle
 						["requireSkill"] = 197,
 					}),
-					qh(55188, {	-- Tearing at the Seams
+					q(55188, {	-- Tearing at the Seams
 						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53940,	-- A Stitch in Time
 						["requireSkill"] = 197,
 					}),
@@ -321,9 +342,10 @@ _.Zones =
 						["sourceQuest"] = 53868,	-- Saving Nine
 						["requireSkill"] = 197,
 					}),
-					qh(53962, {	-- Cut from the Same Cloth
+					q(53962, {	-- Cut from the Same Cloth
 						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 71.6, 39.8, 115 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53869,	-- Killing Time
 						["requireSkill"] = 197,
 						["g"] = {

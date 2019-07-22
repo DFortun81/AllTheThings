@@ -73,16 +73,19 @@ _.Zones =
 								i(63180),	-- Blam Blam Gun
 							},
 						}),
-						qa(27791, {	-- Dustwind Dig
+						q(27791, {	-- Dustwind Dig
 							["qg"] = 46664,	-- Dr. Hieronymus Blam
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27789 },	-- Troggish Troubles
 						}),
-						qh(27881, {	-- Bloodwatcher Point
+						q(27881, {	-- Bloodwatcher Point
 							["qg"] = 46664,	-- Dr. Hieronymus Blam
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27789 },	-- Troggish Troubles
 						}),
-						qa(27792, {	-- All's Fair in Love, War, and Archaeology
+						q(27792, {	-- All's Fair in Love, War, and Archaeology
 							["qg"] = 46760,	-- Lead Prospector Durdin
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27791 },	-- Dustwind Dig
 							["g"] = {
 								i(63186),	-- Upstart's Breastplate
@@ -91,8 +94,9 @@ _.Zones =
 								i(63183),	-- Hooligan's Pantaloons
 							},
 						}),
-						qh(27882, {	-- It's Not About History, It's About Power
+						q(27882, {	-- It's Not About History, It's About Power
 							["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27881 },	-- Bloodwatcher Point
 							["g"] = {
 								i(63190),	-- Upstart's Breastplate
@@ -101,52 +105,65 @@ _.Zones =
 								i(63187),	-- Hooligan's Pantaloons
 							},
 						}),
-						qa(27797, {	-- The Sentinel's Pawn
+						q(27797, {	-- The Sentinel's Pawn
 							["qg"] = 46760,	-- Lead Prospector Durdin
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
 						}),
-						qh(27884, {	-- The Sentinel's Pawn
+						q(27884, {	-- The Sentinel's Pawn
 							["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
 						}),
 						o(206336, {	-- Marble Slab
-							qa(27709, {	-- The Sentinel's Game
+							q(27709, {	-- The Sentinel's Game
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 27797 },	-- The Sentinel's Pawn
 							}),
-							qh(27886, {	-- The Sentinel's Game
+							q(27886, {	-- The Sentinel's Game
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 27884 },	-- The Sentinel's Pawn
 							}),
 						}),
-						qa(27796, {	-- The Warden's Pawn
+						q(27796, {	-- The Warden's Pawn
 							["qg"] = 46760,	-- Lead Prospector Durdin
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
 						}),
-						qh(27883, {	-- The Warden's Pawn
+						q(27883, {	-- The Warden's Pawn
 							["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
 						}),
 						o(206335, {	-- Stone Slab
-							qa(27693, {	-- The Warden's Game
+							q(27693, {	-- The Warden's Game
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 27796 },	-- The Warden's Pawn
 							}),
-							qh(27885, {	-- The Warden's Game
+							q(27885, {	-- The Warden's Game
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 27883 },	-- The Warden's Pawn
 							}),
 						}),
-						qa(27793, {	-- Ancient Protectors
+						q(27793, {	-- Ancient Protectors
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27709, 27693 },	-- The Sentinel's Game & The Warden's Game
 						}),
-						qh(27887, {	-- Ancient Protectors
+						q(27887, {	-- Ancient Protectors
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27885 },	-- The Warden's Game
 						}),
-						qa(27912, {	-- The Titans' Trove
+						q(27912, {	-- The Titans' Trove
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27793 },	-- Ancient Protectors
 						}),
-						qh(27913, {	-- The Titans' Trove
+						q(27913, {	-- The Titans' Trove
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27887 },	-- Ancient Protectors
 						}),
 						o(206374, {	-- Trove of the Watchers
-							qa(27794, {	-- Return to Blam
+							q(27794, {	-- Return to Blam
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 27912 },	-- The Titans' Trove
 								["g"] = {
 									i(63176),	-- Well Cushioned Boots
@@ -155,7 +172,8 @@ _.Zones =
 									i(157008),	-- Blam-Hatchet
 								},
 							}),
-							qh(27888, {	-- Return to Blam
+							q(27888, {	-- Return to Blam
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 27913 },	-- The Titans' Trove
 								["g"] = {
 									i(63179),	-- Well Cushioned Boots
@@ -171,41 +189,51 @@ _.Zones =
 					to not work properly.
 					--]]
 					a(crit(2, { --	The Fate of a Dragonflight
-						qa(27826, {	-- Into the Dragon's Mouth
+						q(27826, {	-- Into the Dragon's Mouth
 							["qg"] = 46664,	-- Dr. Hieronymus Blam
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27794 },	-- Return to Blam
 						}),
-						qa(27827, {	-- The Swift, the Fierce, and the Stout
+						q(27827, {	-- The Swift, the Fierce, and the Stout
 							["qg"] = 46654,	-- Rhea
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27826 },	-- Into the Dragon's Mouth
 						}),
-						qa(27828, {	-- Eric, the Utility Dwarf
+						q(27828, {	-- Eric, the Utility Dwarf
 							["qgs"] = { 46852, 46855 },	-- Eric "The Swift"
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 						}),
-						qa(27835, {	-- Olaf, the Big Fella' (secondary QG ID 46857)
+						q(27835, {	-- Olaf, the Big Fella' (secondary QG ID 46857)
 							["qgs"] = { 46854, 46857 },	-- Olaf
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 						}),
-						qa(27834, {	-- Baelog, the Glass Cannon
+						q(27834, {	-- Baelog, the Glass Cannon
 							["qgs"] = { 46853, 46856 },	-- Baelog
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 						}),
-						qa(27829, {	-- The Wrath of a Dragonflight
+						q(27829, {	-- The Wrath of a Dragonflight
 							["qgs"] = { 46856, 46855, 46857 },	-- Baelog, Eric "The Swift," & Olaf
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27834, 27828, 27835 },	-- Baelog, the Glass Cannon; Eric, the Utility Dwarf; & Olaf, the Big Fella
 						}),
-						qa(27830, {	-- Their Hunt Continues
+						q(27830, {	-- Their Hunt Continues
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27829 },	-- The Wrath of a Dragonflight
 						}),
-						qa(27831, {	-- The Sorrow and the Fury
+						q(27831, {	-- The Sorrow and the Fury
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27830 },	-- Their Hunt Continues
 						}),
-						qa(27832, {	-- The Hidden Clutch
+						q(27832, {	-- The Hidden Clutch
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27831 },	-- The Sorrow and the Fury
 						}),
-						qa(27858, {	-- Rheastrasza's Gift
+						q(27858, {	-- Rheastrasza's Gift
 							["qg"] = 46654,	-- Rhea
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 27832 },	-- The Hidden Clutch
 						}),
 						q(27930, {	-- Devastation
@@ -220,41 +248,51 @@ _.Zones =
 						}),
 					})),
 					h(crit(2, {	--  The Fate of a Dragonflight
-						qh(27889, {	-- New Kargath
+						q(27889, {	-- New Kargath
 							["qg"] = 46664,	-- Dr. Hieronymus Blam
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27888 },	-- Return to Blam
 						}),
-						qh(27890, {	-- The Bad Dogs
+						q(27890, {	-- The Bad Dogs
 							["qg"] = 46654,	-- Rhea
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27889 },	-- New Kargath
 						}),
-						qh(27891, {	-- Amakkar, Jack of All Trades
+						q(27891, {	-- Amakkar, Jack of All Trades
 							["qgs"] = { 47011, 47021 },	-- Amakkar (same QG, different IDs)
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27890 },	-- The Bad Dogs
 						}),
-						qh(27893, {	-- Gargal, the Behemoth
+						q(27893, {	-- Gargal, the Behemoth
 							["qgs"] = { 47013, 47022 },	-- Gargal (same QG, different IDs)
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27890 },	-- The Bad Dogs
 						}),
-						qh(27892, {	-- Jurrix the Striker (secondary QG ID 47024)
+						q(27892, {	-- Jurrix the Striker (secondary QG ID 47024)
 							["qgs"] = { 47018, 47024 },	-- Jurrix Whitemane
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27890 },	-- The Bad Dogs
 						}),
-						qh(27894, {	-- The Wrath of a Dragonflight
+						q(27894, {	-- The Wrath of a Dragonflight
 							["qgs"] = { 47021, 47022, 47024 },	-- Amakkar, Gargal, & Jurrix Whitemane
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27891, 27893, 27892 },	-- Amakkar, Jack of All Trades; Gargal, the Behemoth; & Jurrix the Striker
 						}),
-						qh(27895, {	-- Their Hunt Continues
+						q(27895, {	-- Their Hunt Continues
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27894 },	-- The Wrath of a Dragonflight
 						}),
-						qh(27896, {	-- The Sorrow and the Fury
+						q(27896, {	-- The Sorrow and the Fury
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27895 },	-- Their Hunt Continues
 						}),
-						qh(27897, {	-- The Hidden Clutch
+						q(27897, {	-- The Hidden Clutch
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
 						}),
-						qh(27898, {	-- Rheastrasza's Gift
+						q(27898, {	-- Rheastrasza's Gift
 							["qg"] = 46654,	-- Rhea
+							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 27897 },	-- The Hidden Clutch
 						}),
 						q(27930, {	-- Devastation
@@ -292,31 +330,47 @@ _.Zones =
 						}),
 					}),
 				}),
-				un(40, qa(719, {	-- A Dwarf and His Tools
-					un(2, i(4978)),	-- Ryedol's Hammer
-				})),
-				qa(27823, {	-- A Dwarf's Got Needs
-					["qg"] = 2860,	-- Sigrun Ironhew
+				q(719, {	-- A Dwarf and His Tools
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4978)),	-- Ryedol's Hammer
+					},
 				}),
-				un(40, qh(2258, {	-- Badlands Reagent Run II
+				q(27823, {	-- A Dwarf's Got Needs
+					["qg"] = 2860,	-- Sigrun Ironhew
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(2258, {	-- Badlands Reagent Run II
+					["u"] = 40,
 					["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 2202 },	-- Source Quest: Uldaman Reagent Run
 					["g"] = {
 						un(2, recipe(11452)),	-- Restorative Potion
 					},
-				})),
-				un(40, qh(4983, {	-- Bijou's Reconnaissance Report (may only have been both factions)
-					un(2, i(15858)),	-- Freewind Gloves
-					un(2, i(15859)),	-- Seapost Girdle
-				})),
-				un(40, qh(793, {	-- Broken Alliances
-					un(2, i(11193)),	-- Blazewind Breastplate
-					un(2, i(11196)),	-- Mindburst Medallion
-					un(2, i(11194)),	-- Prismscale Hauberk
-					un(2, i(11195)),	-- Warforged Chestplate
-				})),
-				qh(27878, {	-- Forcible Acquisition
+				}),
+				q(4983, {	-- Bijou's Reconnaissance Report (may only have been both factions)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(15858)),	-- Freewind Gloves
+						un(2, i(15859)),	-- Seapost Girdle
+					},
+				}),
+				q(793, {	-- Broken Alliances
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(11193)),	-- Blazewind Breastplate
+						un(2, i(11196)),	-- Mindburst Medallion
+						un(2, i(11194)),	-- Prismscale Hauberk
+						un(2, i(11195)),	-- Warforged Chestplate
+					},
+				}),
+				q(27878, {	-- Forcible Acquisition
 					["qg"] = 46758,	-- Aoren Sunglow
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(63173),	-- Ironhew Cloak
 						i(63172),	-- Angor Pauldrons
@@ -325,8 +379,9 @@ _.Zones =
 						i(63169),	-- Sunglow Cowl
 					},
 				}),
-				qa(27833, {	-- Half-Ton Holdouts
+				q(27833, {	-- Half-Ton Holdouts
 					["qg"] = 46972,	-- Terrance Storm
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(63199),	-- Storm's Bow
 						i(63198),	-- Half-Ton Pauldrons
@@ -335,8 +390,9 @@ _.Zones =
 						i(63195),	-- Cloak of Passion
 					},
 				}),
-				qh(27880, {	-- Half-Ton Holdouts
+				q(27880, {	-- Half-Ton Holdouts
 					["qg"] = 1068,	-- Gorn
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(63204),	-- Bow of Kargath
 						i(63203),	-- Half-Ton Pauldrons
@@ -349,42 +405,72 @@ _.Zones =
 					["qg"] = 46653,	-- Garyanne Fleezlebop
 					["sourceQuests"] = { 27775 },	-- When the Going Gets Tough, Cheat
 				}),
-				un(40, q(715, {	-- Liquid Stone
+				q(715, {	-- Liquid Stone
+					["u"] = 40,
 					["qg"] = 2920,	-- Quest Giver: Lucien Tosselwrench
 					["g"] = {
 						un(7, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
 					},
-				})),
-				un(40, qh(4134, {	-- Lost Thunderbrew Recipe
-					un(2, i(12000)),	-- Limb Cleaver
-					un(2, i(11964)),	-- Swiftstrike Cudgel
-				})),
-				un(40, qa(739, {	-- Murdaloc
-					un(2, i(4983)),	-- Rock Pulverizer
-				})),
-				un(40, q(1137, {	-- News for Fizzle
-					un(2, i(6729)),	-- Fizzle's Zippy Lighter
-					un(2, i(6732)),	-- Gnomish Mechanic's Gloves
-				})),
-				un(40, qh(2341, {	-- Necklace Recovery, Take 3
-					un(2, i(7888)),		-- Jarkal's Enhancing Necklace
-				})),
-				un(40, q(705, {	-- Pearl Diving
-					un(2, i(4086)),	-- Flash Rifle
-					un(2, i(5248)),	-- Flash Wand
-				})),
-				un(40, q(2418, {	-- Power Stones
-					un(2, i(10358)),	-- Duracin Bracers
-					un(2, i(9522)),	-- Energized Stone Circle
-					un(2, i(10359)),	-- Everlast Boots
-				})),
-				un(40, qa(2361, {	-- Restoring the Necklace
-					un(2, i(7673)),		-- Talvash's Enhancing Necklace
-				})),
-				un(40, qa(733, {	-- Scrounging
-					un(2, i(4653)),	-- Ironheel Boots
-					un(2, i(4652)),	-- Salbac Shield
-				})),
+				}),
+				q(4134, {	-- Lost Thunderbrew Recipe
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(12000)),	-- Limb Cleaver
+						un(2, i(11964)),	-- Swiftstrike Cudgel
+					},
+				}),
+				q(739, {	-- Murdaloc
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4983)),	-- Rock Pulverizer
+					},
+				}),
+				q(1137, {	-- News for Fizzle
+					["u"] = 40,
+					["g"] = {
+						un(2, i(6729)),	-- Fizzle's Zippy Lighter
+						un(2, i(6732)),	-- Gnomish Mechanic's Gloves
+					},
+				}),
+				q(2341, {	-- Necklace Recovery, Take 3
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(7888)),		-- Jarkal's Enhancing Necklace
+					},
+				}),
+				q(705, {	-- Pearl Diving
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4086)),	-- Flash Rifle
+						un(2, i(5248)),	-- Flash Wand
+					},
+				}),
+				q(2418, {	-- Power Stones
+					["u"] = 40,
+					["g"] = {
+						un(2, i(10358)),	-- Duracin Bracers
+						un(2, i(9522)),	-- Energized Stone Circle
+						un(2, i(10359)),	-- Everlast Boots
+					},
+				}),
+				q(2361, {	-- Restoring the Necklace
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(7673)),		-- Talvash's Enhancing Necklace
+					},
+				}),
+				q(733, {	-- Scrounging
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4653)),	-- Ironheel Boots
+						un(2, i(4652)),	-- Salbac Shield
+					},
+				}),
 				q(709, {	-- Solution to Doom
 					["qg"] = 2785,	-- Theldurin the Lost
 					["coord"] = { 51.6, 76.6, 15 },
@@ -394,17 +480,23 @@ _.Zones =
 						un2, i(4746),	-- Doomsayer's Robe
 					},
 				}),
-				un(40, q(716, {	-- Stone Is Better than Cloth
-					un(2, i(4979)),	-- Enchanted Stonecloth Bracers
-				})),
-				qa(27825, {	-- Survival of the Fattest
+				q(716, {	-- Stone Is Better than Cloth
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4979)),	-- Enchanted Stonecloth Bracers
+					},
+				}),
+				q(27825, {	-- Survival of the Fattest
 					["qg"] = 46930,	-- Victoria Delen
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(27879, {	-- Survival of the Fattest
+				q(27879, {	-- Survival of the Fattest
 					["qg"] = 46660,	-- Aidan Summerwind
+					["races"] = HORDE_ONLY,
 				}),
-				qa(27824, {	-- The Good Stuff
+				q(27824, {	-- The Good Stuff
 					["qg"] = 2860,	-- Sigrun Ironhew
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27823 },	-- A Dwarf's Got Needs
 					["g"] = {
 						i(63168),	-- Ironhew Cloak
@@ -414,26 +506,42 @@ _.Zones =
 						i(63164),	-- Dustwind Cowl
 					},
 				}),
-				un(40, qa(1139, {	-- The Lost Tablets of Will
-					un(2, i(6723)),		-- Medal of Courage
-				})),
-				qh(27877, {	-- The Morons' League
-					["qg"] = 46759,	-- Lidia Sunglow
+				q(1139, {	-- The Lost Tablets of Will
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(6723)),		-- Medal of Courage
+					},
 				}),
-				un(40, qh(4724, {	-- The Pack Mistress
-					un(2, i(15824)),	-- Astoria Robes
-					un(2, i(15827)),	-- Jadescale Breastplate
-					un(2, i(15825)),	-- Traphook Jerkin
-				})),
-				un(40, qh(4063, {	-- The Rise of the Machines
-					un(2, i(12109)),	-- Azure Moon Amice
-					un(2, i(12108)),	-- Basaltscale Armor
-					un(2, i(12111)),	-- Lavaplate Gauntlets
-					un(2, i(12110)),	-- Raincaster Drape
-				})),
-				un(40, q(778, {	-- This Is Going to Be Hard
-					un(2, i(2820)),	-- Nifty Stopwatch
-				})),
+				q(27877, {	-- The Morons' League
+					["qg"] = 46759,	-- Lidia Sunglow
+					["races"] = HORDE_ONLY,
+				}),
+				q(4724, {	-- The Pack Mistress
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(15824)),	-- Astoria Robes
+						un(2, i(15827)),	-- Jadescale Breastplate
+						un(2, i(15825)),	-- Traphook Jerkin
+					},
+				}),
+				q(4063, {	-- The Rise of the Machines
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(12109)),	-- Azure Moon Amice
+						un(2, i(12108)),	-- Basaltscale Armor
+						un(2, i(12111)),	-- Lavaplate Gauntlets
+						un(2, i(12110)),	-- Raincaster Drape
+					},
+				}),
+				q(778, {	-- This Is Going to Be Hard
+					["u"] = 40,
+					["g"] = {
+						un(2, i(2820)),	-- Nifty Stopwatch
+					},
+				}),
 				q(28512, {	-- To the Aid of the Thorium Brotherhood
 					["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
 					["isBreadcrumb"] = true,	-- for "A New Master... But Who?" in Searing Gorge, mutually exclusive with other bcrumb quests for SG
@@ -454,18 +562,21 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
-				un(40, qa(717, {	-- Tremors of the Earth
-					un(2, i(11193)),	-- Blazewind Breastplate
-					un(2, i(11196)),	-- Mindburst Medallion
-					un(2, i(11194)),	-- Prismscale Hauberk
-					un(2, i(11195)),	-- Warforged Chestplate
-				})),
-				{		-- Uldaman Reagent Run
-					["questID"] = 2202,	-- Uldaman Reagent Run
+				q(717, {	-- Tremors of the Earth
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(11193)),	-- Blazewind Breastplate
+						un(2, i(11196)),	-- Mindburst Medallion
+						un(2, i(11194)),	-- Prismscale Hauberk
+						un(2, i(11195)),	-- Warforged Chestplate
+					},
+				}),
+				q(2202, {	-- Uldaman Reagent Run
 					["u"] = 40,
 					["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
 					["sourceQuests"] = { 2258 },	-- Source Quest: Badlands Reagent Run
-				},
+				}),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["qg"] = 46653,	-- Garyanne Fleezlebop
 					["g"] = {
