@@ -506,10 +506,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124267),	-- Oathclaw Leggings (Druid)
 						i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
 					}),
-					{
-						["itemID"] = 128416,	-- Soul Remnant
+					i(128416, {	-- Soul Remnant
 						["questID"] = 39499,	-- Well of Souls
-					},
+						["altQuests"] = {
+							39500,	-- Well of Souls [Heroic]
+							39501,	-- Well of Souls [Mythic]
+						},
+					}),
 					i(124380),	-- Spur of the Great Devourer
 					i(124359),	-- Voracious Souleater
 					i(124205),	-- Gibbering Madness
@@ -672,10 +675,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124246),	-- Oathclaw Vestment (Druid)
 						i(124171),	-- Robe of the Arcanic Conclave (Mage)
 					}),
-					{
-						["itemID"] = 128419,	-- Fel Essence
+					i(128419, {	-- Fel Essence
 						["questID"] = 39502,	-- The Fel Spire
-					},
+						["altQuests"] = {
+							39500,	-- Well of Souls [Heroic]
+							39501,	-- Well of Souls [Mythic]
+						},
+					}),
 					i(124378),	-- Xu'tenash, Glaive of Ruin
 					i(124367),	-- Fang of the Pit
 					i(124361),	-- Cursed Demonbone Longbow
@@ -899,10 +905,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124267),	-- Oathclaw Leggings (Druid)
 						i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
 					}),
-					{
-						["itemID"] = 128417,	-- Soul Remnant [Heroic]
+					i(128417, {	-- Soul Remnant [Heroic]
 						["questID"] = 39500,	-- Well of Souls [Heroic]
-					},
+						["altQuests"] = { 39505 },	-- The Fel Spire [Mythic]
+					}),
 					i(124380),	-- Spur of the Great Devourer
 					i(124359),	-- Voracious Souleater
 					i(124205),	-- Gibbering Madness
@@ -1065,10 +1071,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124246),	-- Oathclaw Vestment (Druid)
 						i(124171),	-- Robe of the Arcanic Conclave (Mage)
 					}),
-					{
-						["itemID"] = 128420,	-- Fel Essence [Heroic]
+					i(128420, {	-- Fel Essence [Heroic]
 						["questID"] = 39504,	-- The Fel Spire [Heroic]
-					},
+						["altQuests"] = { 39505 },	-- The Fel Spire [Mythic]
+					}),
 					i(124378),	-- Xu'tenash, Glaive of Ruin
 					i(124367),	-- Fang of the Pit
 					i(124361),	-- Cursed Demonbone Longbow

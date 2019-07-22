@@ -295,10 +295,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 				cr(77182, e(1202, {	-- Oregorger
 					ach(8979),	-- He Shoots, He Ores
-					{
-						["achievementID"] = 8989,	-- Slagworks
-						["criteriaID"] = 2,			-- Oregorger
-					},
+					ach(8989, crit(2)),	-- Slagworks / Oregorger
 					i(119448),	-- Head-Lopper Skullscythe
 					i(113874),	-- Oregorger's Acid-Etched Gutripper
 					i(113879),	-- Caged Living Ooze
@@ -315,10 +312,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(76877, e(1161, {	-- Gruul
 					ach(8978),	-- The Iron Price
-					{
-						["achievementID"] = 8989,	-- Slagworks
-						["criteriaID"] = 1,			-- Gruul
-					},
+					ach(8989, crit(1)),	-- Slagworks / Gruul
 					i(113869),	-- Inferno-Flame Staff
 					i(113862),	-- Taner's Terrible Spine
 					i(113868),	-- Flare-Eyed Hood
@@ -336,10 +330,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(76806, e(1154, {	-- The Blast Furnace
 					ach(8930),	-- Ya, We've Got Time...
-					{
-						["achievementID"] = 8989,	-- Slagworks
-						["criteriaID"] = 3,			-- Blast Furnace
-					},
+					ach(8989, crit(3)),	-- Slagworks / Blast Furnace
 					i(119307, {	-- Leggings of the Iron Conqueror
 						i(115569),	-- Legplates of Guiding Light
 						i(115587),	-- Shadow Council's Leggings
@@ -357,10 +348,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115535),	-- Ogreskull Boneplate Greaves
 						i(115573),	-- Poisoner's Legguards
 					}),
-					{
-						["itemID"] = 118382,	-- Ember of the Mountain
+					i(118382, {	-- Ember of the Mountain
 						["questID"] = 37029,	-- Sigil of the Black Hand
-					},
+						["altQuests"] = { 
+							37030,	-- Sigil of the Black Hand [Heroic]
+							37031,	-- Sigil of the Black Hand [Mythic]
+						},
+					}),
 					i(113886),	-- Crescent of Living Magma
 					i(113885),	-- Mouth of The Fury
 					i(113891),	-- Blast-Proof Cowl
@@ -377,10 +371,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 					ach(8980),	-- Stamp Stamp Revolution
-					{
-						["achievementID"] = 8990,	-- Black Forge
-						["criteriaID"] = 1,			-- Hans'gar and Franzok
-					},
+					ach(8990, crit(1)),	-- Black Forge / Hans'gar and Franzok
 					i(113904),	-- Franzok's Headsmasher
 					i(113897),	-- Hans'gar's Forgehammer
 					i(113910),	-- Hardened Greathelm
@@ -399,10 +390,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					ach(8929, {	-- The Steel Has Been Brought
 						follower(225),	-- Aknor Steelbringer
 					}),
-					{
-						["achievementID"] = 8990,	-- Black Forge
-						["criteriaID"] = 2,			-- Flamebender Ka'graz
-					},
+					ach(8990, crit(2)),	-- Black Forge / Flamebender Ka'graz
 					i(119305, {	-- Chest of the Iron Conqueror
 						i(115566),	-- Battleplate of Guiding Light
 						i(115588),	-- Shadow Council's Robes
@@ -439,10 +427,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 					ach(8983),	-- Would You Give Me a Hand?
-					{
-						["achievementID"] = 8990,	-- Black Forge
-						["criteriaID"] = 3,			-- Kromog
-					},
+					ach(8990, crit(3)),	-- Black Forge / Kromog
 					i(119308, {	-- Helm of the Iron Conqueror
 						i(115568),	-- Helmet of Guiding Light
 						i(115586),	-- Shadow Council's Hood
@@ -460,10 +445,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115539),	-- Ogreskull Boneplate Greathelm
 						i(115572),	-- Poisoner's Helmet
 					}),
-					{
-						["itemID"] = 118383,	-- Heart of Stone
+					i(118383, {	-- Heart of Stone
 						["questID"] = 37029,	-- Sigil of the Black Hand
-					},
+						["altQuests"] = { 
+							37030,	-- Sigil of the Black Hand [Heroic]
+							37031,	-- Sigil of the Black Hand [Mythic]
+						},
+					}),
 					i(113934),	-- Fang of the Earth
 					i(113927),	-- Kromog's Brutal Fist
 					i(113926),	-- Kromog's Protecting Palm
@@ -479,27 +467,18 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113931),	-- Beating Heart of the Mountain
 				})),
 				cr(76865, e(1122, {	-- Beastlord Darmac
-					{
-						["achievementID"] = 8981,	-- Fain Would Lie Down
-						["g"] = {
-							{
-								["criteriaID"] = 1,	-- Dreadwing Mounted First
-								["creatureID"] = 76874,	-- Dreadwing
-							},
-							{
-								["criteriaID"] = 2,	-- Ironcrusher Mounted First
-								["creatureID"] = 76945,	-- Ironcrusher
-							},
-							{
-								["criteriaID"] = 3,	-- Cruelfang Mounted First
-								["creatureID"] = 76884,	-- Cruelfang
-							},
-						},
-					},
-					{
-						["achievementID"] = 8991,	-- Iron Assembly
-						["criteriaID"] = 1,			-- Beastlord Darmac
-					},
+					ach(8981, {	-- Fain Would Lie Down
+						crit(1, {	-- Dreadwing Mounted First
+							["creatureID"] = 76874,	-- Dreadwing
+						}),
+						crit(2, {	-- Ironcrusher Mounted First
+							["creatureID"] = 76945,	-- Ironcrusher
+						}),
+						crit(3, {	-- Cruelfang Mounted First
+							["creatureID"] = 76884,	-- Cruelfang
+						}),
+					}),
+					ach(8991, crit(1)),	-- Iron Assembly / Beastlord Darmac
 					i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 					i(113946),	-- Heart of the Clefthoof
 					i(113952),	-- Choker of Bestial Force
@@ -518,10 +497,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(76906, e(1147, {	-- Operator Thogar
 					ach(8982),	-- There's Always a Bigger Train
-					{
-						["achievementID"] = 8991,	-- Iron Assembly
-						["criteriaID"] = 2,			-- Operator Thogar
-					},
+					ach(8991, crit(2)),	-- Iron Assembly / Operator Thogar
 					i(119309, {	-- Shoulders of the Iron Conqueror
 						i(115565),	-- Pauldrons of Guiding Light
 						i(115589),	-- Shadow Council's Mantle
@@ -560,10 +536,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 					["g"] = {
 						ach(8984),	-- Be Quick or Be Dead
-						{
-							["achievementID"] = 8991,	-- Iron Assembly
-							["criteriaID"] = 3,			-- The Iron Maidens
-						},
+						ach(8991, crit(3)),	-- Iron Assembly / The Iron Maidens
 						i(119306, {	-- Gauntlets of the Iron Conqueror
 							i(115567),	-- Gauntlets of Guiding Light
 							i(115585),	-- Shadow Council's Gloves
@@ -581,10 +554,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(115538),	-- Ogreskull Boneplate Gauntlets
 							i(115571),	-- Poisoner's Gloves
 						}),
-						{
-							["itemID"] = 118384,	-- Sliver of Iron
+						i(118384, {	-- Sliver of Iron
 							["questID"] = 37029,	-- Sigil of the Black Hand
-						},
+							["altQuests"] = { 
+								37030,	-- Sigil of the Black Hand [Heroic]
+								37031,	-- Sigil of the Black Hand [Mythic]
+							},
+						}),
 						i(113966),	-- Gar'an's Brutal Spearlauncher
 						i(113973),	-- Koloch Na, the Blood Feast
 						i(113965),	-- Sorka's Chainfist
@@ -876,10 +852,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 				cr(77182, e(1202, {	-- Oregorger
 					ach(8979),	-- He Shoots, He Ores
-					{
-						["achievementID"] = 8989,	-- Slagworks
-						["criteriaID"] = 2,			-- Oregorger
-					},
+					ach(8989, crit(2)),	-- Slagworks / Oregorger
 					i(119448),	-- Head-Lopper Skullscythe
 					i(113874),	-- Oregorger's Acid-Etched Gutripper
 					i(113879),	-- Caged Living Ooze
@@ -896,10 +869,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(76877, e(1161, {	-- Gruul
 					ach(8978),	-- The Iron Price
-					{
-						["achievementID"] = 8989,	-- Slagworks
-						["criteriaID"] = 1,			-- Gruul
-					},
+					ach(8989, crit(1)),	-- Slagworks / Gruul
 					i(113869),	-- Inferno-Flame Staff
 					i(113862),	-- Taner's Terrible Spine
 					i(113868),	-- Flare-Eyed Hood
@@ -917,10 +887,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(76806, e(1154, {	-- The Blast Furnace
 					ach(8930),	-- Ya, We've Got Time...
-					{
-						["achievementID"] = 8989,	-- Slagworks
-						["criteriaID"] = 3,			-- Blast Furnace
-					},
+					ach(8989, crit(3)),	-- Slagworks / Blast Furnace
 					i(119307, {	-- Leggings of the Iron Conqueror
 						i(115569),	-- Legplates of Guiding Light
 						i(115587),	-- Shadow Council's Leggings
@@ -939,7 +906,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115573),	-- Poisoner's Legguards
 					}),
 					i(118387, {	-- Ember of the Mountain (Heroic)
-						["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
+						["questID"] = 37030,	-- Sigil of the Black Hand [Heroic]
+						["altQuests"] = { 37031 },	-- Sigil of the Black Hand [Mythic]
 					}),
 					i(113886),	-- Crescent of Living Magma
 					i(113885),	-- Mouth of The Fury
@@ -957,10 +925,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 					ach(8980),	-- Stamp Stamp Revolution
-					{
-						["achievementID"] = 8990,	-- Black Forge
-						["criteriaID"] = 1,			-- Hans'gar and Franzok
-					},
+					ach(8990, crit(1)),	-- Black Forge / Hans'gar and Franzok
 					i(113904),	-- Franzok's Headsmasher
 					i(113897),	-- Hans'gar's Forgehammer
 					i(113910),	-- Hardened Greathelm
@@ -979,10 +944,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					ach(8929, {	-- The Steel Has Been Brought
 						follower(225),	-- Aknor Steelbringer
 					}),
-					{
-						["achievementID"] = 8990,	-- Black Forge
-						["criteriaID"] = 2,			-- Flamebender Ka'graz
-					},
+					ach(8990, crit(2)),	-- Black Forge / Flamebender Ka'graz
 					i(119305, {	-- Chest of the Iron Conqueror
 						i(115566),	-- Battleplate of Guiding Light
 						i(115588),	-- Shadow Council's Robes
@@ -1019,10 +981,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 					ach(8983),	-- Would You Give Me a Hand?
-					{
-						["achievementID"] = 8990,	-- Black Forge
-						["criteriaID"] = 3,			-- Kromog
-					},
+					ach(8990, crit(3)),	-- Black Forge / Kromog
 					i(119308, {	-- Helm of the Iron Conqueror
 						i(115568),	-- Helmet of Guiding Light
 						i(115586),	-- Shadow Council's Hood
@@ -1041,7 +1000,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115572),	-- Poisoner's Helmet
 					}),
 					i(118386, {	-- Heart of Stone (Heroic)
-						["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
+						["questID"] = 37030,	-- Sigil of the Black Hand [Heroic]
+						["altQuests"] = { 37031 },	-- Sigil of the Black Hand [Mythic]
 					}),
 					i(113934),	-- Fang of the Earth
 					i(113927),	-- Kromog's Brutal Fist
@@ -1058,27 +1018,18 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113931),	-- Beating Heart of the Mountain
 				})),
 				cr(76865, e(1122, {	-- Beastlord Darmac
-					{
-						["achievementID"] = 8981,	-- Fain Would Lie Down
-						["g"] = {
-							{
-								["criteriaID"] = 1,	-- Dreadwing Mounted First
-								["creatureID"] = 76874,	-- Dreadwing
-							},
-							{
-								["criteriaID"] = 2,	-- Ironcrusher Mounted First
-								["creatureID"] = 76945,	-- Ironcrusher
-							},
-							{
-								["criteriaID"] = 3,	-- Cruelfang Mounted First
-								["creatureID"] = 76884,	-- Cruelfang
-							},
-						},
-					},
-					{
-						["achievementID"] = 8991,	-- Iron Assembly
-						["criteriaID"] = 1,			-- Beastlord Darmac
-					},
+					ach(8981, {	-- Fain Would Lie Down
+						crit(1, {	-- Dreadwing Mounted First
+							["creatureID"] = 76874,	-- Dreadwing
+						}),
+						crit(2, {	-- Ironcrusher Mounted First
+							["creatureID"] = 76945,	-- Ironcrusher
+						}),
+						crit(3, {	-- Cruelfang Mounted First
+							["creatureID"] = 76884,	-- Cruelfang
+						}),
+					}),
+					ach(8991, crit(1)),	-- Iron Assembly / Beastlord Darmac
 					i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 					i(113946),	-- Heart of the Clefthoof
 					i(113952),	-- Choker of Bestial Force
@@ -1097,10 +1048,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(76906, e(1147, {	-- Operator Thogar
 					ach(8982),	-- There's Always a Bigger Train
-					{
-						["achievementID"] = 8991,	-- Iron Assembly
-						["criteriaID"] = 2,			-- Operator Thogar
-					},
+					ach(8991, crit(2)),	-- Iron Assembly / Operator Thogar
 					i(119309, {	-- Shoulders of the Iron Conqueror
 						i(115565),	-- Pauldrons of Guiding Light
 						i(115589),	-- Shadow Council's Mantle
@@ -1139,10 +1087,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 					["g"] = {
 						ach(8984),	-- Be Quick or Be Dead
-						{
-							["achievementID"] = 8991,	-- Iron Assembly
-							["criteriaID"] = 3,			-- The Iron Maidens
-						},
+						ach(8991, crit(3)),	-- Iron Assembly / The Iron Maidens
 						i(119306, {	-- Gauntlets of the Iron Conqueror
 							i(115567),	-- Gauntlets of Guiding Light
 							i(115585),	-- Shadow Council's Gloves
@@ -1161,7 +1106,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(115571),	-- Poisoner's Gloves
 						}),
 						i(118385, {	-- Sliver of Iron (Heroic)
-							["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
+							["questID"] = 37030,	-- Sigil of the Black Hand [Heroic]
+							["altQuests"] = { 37031 },	-- Sigil of the Black Hand [Mythic]
 						}),
 						i(113966),	-- Gar'an's Brutal Spearlauncher
 						i(113973),	-- Koloch Na, the Blood Feast
@@ -1458,10 +1404,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(77182, e(1202, {	-- Oregorger
 					ach(8979),	-- He Shoots, He Ores
 					ach(8967),	-- Mythic: Oregorger
-					{
-						["achievementID"] = 8989,	-- Slagworks
-						["criteriaID"] = 2,			-- Oregorger
-					},
+					ach(8989, crit(2)),	-- Slagworks / Oregorger
 					i(119448),	-- Head-Lopper Skullscythe
 					i(113874),	-- Oregorger's Acid-Etched Gutripper
 					i(113879),	-- Caged Living Ooze
@@ -1479,10 +1422,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(76877, e(1161, {	-- Gruul
 					ach(8978),	-- The Iron Price
 					ach(8966),	-- Mythic: Gruul
-					{
-						["achievementID"] = 8989,	-- Slagworks
-						["criteriaID"] = 1,			-- Gruul
-					},
+					ach(8989, crit(1)),	-- Slagworks / Gruul
 					i(113869),	-- Inferno-Flame Staff
 					i(113862),	-- Taner's Terrible Spine
 					i(113868),	-- Flare-Eyed Hood
@@ -1501,10 +1441,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(76806, e(1154, {	-- The Blast Furnace
 					ach(8930),	-- Ya, We've Got Time...
 					ach(8970),	-- Mythic: Blast Furnace
-					{
-						["achievementID"] = 8989,	-- Slagworks
-						["criteriaID"] = 3,			-- Blast Furnace
-					},
+					ach(8989, crit(3)),	-- Slagworks / Blast Furnace
 					i(119307, {	-- Leggings of the Iron Conqueror
 						i(115569),	-- Legplates of Guiding Light
 						i(115587),	-- Shadow Council's Leggings
@@ -1542,10 +1479,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 					ach(8980),	-- Stamp Stamp Revolution
 					ach(8968),	-- Mythic: Hans'gar and Franzok
-					{
-						["achievementID"] = 8990,	-- Black Forge
-						["criteriaID"] = 1,			-- Hans'gar and Franzok
-					},
+					ach(8990, crit(1)),	-- Black Forge / Hans'gar and Franzok
 					i(113904),	-- Franzok's Headsmasher
 					i(113897),	-- Hans'gar's Forgehammer
 					i(113910),	-- Hardened Greathelm
@@ -1565,10 +1499,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						follower(225),	-- Aknor Steelbringer
 					}),
 					ach(8932),	-- Mythic: Flamebender Ka'graz
-					{
-						["achievementID"] = 8990,	-- Black Forge
-						["criteriaID"] = 2,			-- Flamebender Ka'graz
-					},
+					ach(8990, crit(2)),	-- Black Forge / Flamebender Ka'graz
 					i(119305, {	-- Chest of the Iron Conqueror
 						i(115566),	-- Battleplate of Guiding Light
 						i(115588),	-- Shadow Council's Robes
@@ -1606,10 +1537,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 					ach(8983),	-- Would You Give Me a Hand?
 					ach(8971),	-- Mythic: Kromog
-					{
-						["achievementID"] = 8990,	-- Black Forge
-						["criteriaID"] = 3,			-- Kromog
-					},
+					ach(8990, crit(3)),	-- Black Forge / Kromog
 					i(119308, {	-- Helm of the Iron Conqueror
 						i(115568),	-- Helmet of Guiding Light
 						i(115586),	-- Shadow Council's Hood
@@ -1645,28 +1573,19 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113931),	-- Beating Heart of the Mountain
 				})),
 				cr(76865, e(1122, {	-- Beastlord Darmac
-					{
-						["achievementID"] = 8981,	-- Fain Would Lie Down
-						["g"] = {
-							{
-								["criteriaID"] = 1,	-- Dreadwing Mounted First
-								["creatureID"] = 76874,	-- Dreadwing
-							},
-							{
-								["criteriaID"] = 2,	-- Ironcrusher Mounted First
-								["creatureID"] = 76945,	-- Ironcrusher
-							},
-							{
-								["criteriaID"] = 3,	-- Cruelfang Mounted First
-								["creatureID"] = 76884,	-- Cruelfang
-							},
-						},
-					},
+					ach(8981, {	-- Fain Would Lie Down
+						crit(1, {	-- Dreadwing Mounted First
+							["creatureID"] = 76874,	-- Dreadwing
+						}),
+						crit(2, {	-- Ironcrusher Mounted First
+							["creatureID"] = 76945,	-- Ironcrusher
+						}),
+						crit(3, {	-- Cruelfang Mounted First
+							["creatureID"] = 76884,	-- Cruelfang
+						}),
+					}),
 					ach(8956),	-- Mythic: Beastlord Darmac
-					{
-						["achievementID"] = 8991,	-- Iron Assembly
-						["criteriaID"] = 1,			-- Beastlord Darmac
-					},
+					ach(8991, crit(1)),	-- Iron Assembly / Beastlord Darmac
 					i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 					i(113946),	-- Heart of the Clefthoof
 					i(113952),	-- Choker of Bestial Force
@@ -1686,10 +1605,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(76906, e(1147, {	-- Operator Thogar
 					ach(8982),	-- There's Always a Bigger Train
 					ach(8969),	-- Mythic: Operator Thogar
-					{
-						["achievementID"] = 8991,	-- Iron Assembly
-						["criteriaID"] = 2,			-- Operator Thogar
-					},
+					ach(8991, crit(2)),	-- Iron Assembly / Operator Thogar
 					i(119309, {	-- Shoulders of the Iron Conqueror
 						i(115565),	-- Pauldrons of Guiding Light
 						i(115589),	-- Shadow Council's Mantle
@@ -1729,10 +1645,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["g"] = {
 						ach(8984),	-- Be Quick or Be Dead
 						ach(8972),	-- Mythic: Iron Maidens
-						{
-							["achievementID"] = 8991,	-- Iron Assembly
-							["criteriaID"] = 3,			-- The Iron Maidens
-						},
+						ach(8991, crit(3)),	-- Iron Assembly / The Iron Maidens
 						i(119306, {	-- Gauntlets of the Iron Conqueror
 							i(115567),	-- Gauntlets of Guiding Light
 							i(115585),	-- Shadow Council's Gloves
