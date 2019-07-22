@@ -356,6 +356,9 @@ _.Zones =
 					["qg"] = 9997,	-- Spraggle Frock
 					["coord"] = { 54.9, 62.6, 78 },
 					["sourceQuest"] = 24794,	-- Speak with Spraggle
+					["altQuests"] = {
+						4492,	-- Lost Pre Cata Version
+					},
 				},
 				{	-- Marshal's Refuse
 					["questID"] = 24701,
