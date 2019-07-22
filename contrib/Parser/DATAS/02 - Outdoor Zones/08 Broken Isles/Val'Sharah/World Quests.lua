@@ -95,6 +95,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41531, {	-- Iridescent Dreamleaf
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(43753, {	-- Ley Race
 					["lvl"] = 110,
 					["collectible"] = false,

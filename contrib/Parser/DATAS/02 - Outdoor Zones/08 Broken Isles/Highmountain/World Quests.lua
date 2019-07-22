@@ -12,7 +12,6 @@ _.Zones =
 				q(41026),	-- Back to the Shadows
 				q(46191),	-- Balinar
 				q(45071),	-- Barrels o' Fun
-				q(40951),	-- Bitestone Bazaar
 				q(40980),	-- Boilback Plague
 				q(41310),	-- Border Reinforcements
 				q(41203),	-- Bright Leystone Deposits
@@ -41,7 +40,6 @@ _.Zones =
 				q(41561),	-- Felhide
 				q(41560),	-- Felhide
 				q(41239),	-- Felhide
-				q(41511),	-- Felwort
 				q(41432),	-- Fiery Leystone Deposits
 				q(41219),	-- Flourishing Foxflower
 				q(41228),	-- Foxflower Cluster
@@ -87,13 +85,11 @@ _.Zones =
 				q(41428),	-- Unstable Portal
 				q(41836),	-- WANTED: Bodash the Hoarder
 				q(43616),	-- WANTED: Bodash the Hoarder
-				q(44290),	-- WANTED: Bristlemaul
 				q(41826),	-- WANTED: Crawshuk the Hungry
 				q(44291),	-- WANTED: Crawshuk the Hungry
 				q(43617),	-- WANTED: Devouring Darkness
 				q(41818),	-- WANTED: Majestic Elderhorn
 				q(44292),	-- WANTED: Majestic Elderhorn
-				q(41844),	-- WANTED: Sekhan
 				q(44294),	-- WANTED: Sekhan
 				q(43619),	-- WANTED: Shara Felbreath
 				q(41838),	-- WANTED: Slumber
@@ -114,6 +110,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(40978, {	-- Bears Behaving Badly
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(40951, {	-- Bitestone Bazaar
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -152,6 +152,11 @@ _.Zones =
 				q(43767, {	-- Enigmatic
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41511, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41512, {	-- Felwort
 					["lvl"] = 110,
@@ -335,6 +340,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44290, {	-- WANTED: Bristlemaul
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43455, {	-- WANTED: Devouring Darkness
 					["collectible"] = false,
 					["lvl"] = 110,
@@ -344,6 +353,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43618, {	-- WANTED: Gurbog da Basher
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41844, {	-- WANTED: Sekhan
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

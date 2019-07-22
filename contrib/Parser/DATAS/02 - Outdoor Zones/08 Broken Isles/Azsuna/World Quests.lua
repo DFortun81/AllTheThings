@@ -95,7 +95,6 @@ _.Zones =
 				q(43614),	-- WANTED: Vorthax
 				q(43615),	-- WANTED: Warbringer Mox'na
 				q(43802),	-- Watery Graves
-				q(41287),	-- Work Order: Aethril
 				q(41267),	-- Work Order: Cursed Queenfish
 				q(41657),	-- Work Order: Draughts of Raw Magic
 				q(41311),	-- Work Order: Leystone
@@ -417,6 +416,11 @@ _.Zones =
 				q(42274, {	-- Won't Anyone Think of the Whelps?
 					["lvl"] = 98,
 					["collectible"] = false,
+				}),
+				q(41287, {	-- Work Order: Aethril
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41651, {	-- Work Order: Azsunite Pendant
 					["requireSkill"] = 755,	-- Jewelcrafting
