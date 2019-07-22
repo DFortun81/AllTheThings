@@ -31,14 +31,11 @@ _.Zones =
 				q(44191),	-- DANGER: Karthax
 				q(43798),	-- DANGER: Kosumoth the Hungering
 				q(44192),	-- DANGER: Lysanis Shadesoul
-				q(44193),	-- DANGER: Sea King Tidross
 				q(43063),	-- DANGER: Stormfeather
 				q(44194),	-- DANGER: Torrentius
-				q(43040),	-- DANGER: Valakar the Thirsty
 				q(44287),	-- DEADLY: Withered J'im
 				q(44054),	-- Demonicide
 				q(46169),	-- Dro'zek
-				q(43328),	-- Enigmatic
 				q(44049),	-- Evil Has Many Legs
 				q(42027),	-- Faronaar in Chaos
 				q(41323),	-- Fatty Lion Seal Skin
@@ -85,7 +82,6 @@ _.Zones =
 				q(41322),	-- Unscratched Hippogryph Scale
 				q(42636),	-- WANTED: Arcanist Shal'iman
 				q(42620),	-- WANTED: Arcavellus
-				q(43606),	-- WANTED: Arcavellus
 				q(43426),	-- WANTED: Brogozog
 				q(43607),	-- WANTED: Brogozog
 				q(43608),	-- WANTED: Captain Volo'ren
@@ -151,7 +147,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44193, {	-- DANGER: Sea King Tidross
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43072, {	-- DANGER: The Whisperer
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43040, {	-- DANGER: Valakar the Thirsty
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -166,6 +170,10 @@ _.Zones =
 					},
 				}),
 				q(42276, {	-- Disgusting, but Useful
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43328, {	-- Enigmatic
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -294,6 +302,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41315, {	-- Supplies Needed: Leystone
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46170, {	-- Thar'gokk (Invasion WQ)
 					["lvl"] = 98,
 					["collectible"] = false,
@@ -367,6 +379,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43605, {	-- WANTED: Arcanist Shal'iman
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43606, {	-- WANTED: Arcavellus
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -19,7 +19,7 @@ _.Zones =
 					q(46068),	-- Brute Wrangling
 					q(46814),	-- Call of the Frostwyrm
 					q(44846),	-- Clearing the Path
-					q(45178),	-- Contagion Containment
+					
 					q(45358),	-- Contagion Containment
 					q(45837),	-- Creeping Fel
 					q(45531),	-- Creeping Fel
@@ -27,7 +27,6 @@ _.Zones =
 					q(46829),	-- Elemental Abuse
 					q(46288),	-- Everyone to the Front
 					q(46077),	-- Felbound Spirits
-					q(46212),	-- Get Them Up
 					q(40390),	-- Hallowed Ground
 					q(45541),	-- How Do YOU Like It?!
 					q(46066),	-- I Fel Bat For You
@@ -46,7 +45,6 @@ _.Zones =
 					q(46752),	-- On Borrowed Wings
 					q(45797),	-- Playing with Green Fire
 					q(45929),	-- Purging the Flames
-					q(46075),	-- Relic Hunting
 					q(46001),	-- Rules of the Hunt
 					q(45549),	-- Salving the Corruption
 					q(45626),	-- Set You Up the Bomb!
@@ -93,6 +91,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(45178, {	-- Contagion Containment
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46821, {	-- Creepy Crawlies
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -130,6 +132,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46198, {	-- Gems of Destruction
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46212, {	-- Get Them Up
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -177,6 +183,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46180, {	-- Power of Our Enemy
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46075, {	-- Relic Hunting
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

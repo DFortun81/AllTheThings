@@ -12,7 +12,6 @@ _.Zones =
 				q(41026),	-- Back to the Shadows
 				q(46191),	-- Balinar
 				q(45071),	-- Barrels o' Fun
-				q(40978),	-- Bears Behaving Badly
 				q(40951),	-- Bitestone Bazaar
 				q(40980),	-- Boilback Plague
 				q(41310),	-- Border Reinforcements
@@ -54,7 +53,6 @@ _.Zones =
 				q(41204),	-- Hard Leystone Deposits
 				q(41243),	-- Huge Highmountain Salmon
 				q(46185),	-- Iroxus
-				q(46186),	-- Ix'dreloth
 				q(41196),	-- Leystone Basilisks
 				q(41198),	-- Leystone Basilisks
 				q(41199),	-- Leystone Rumblers
@@ -97,7 +95,6 @@ _.Zones =
 				q(44292),	-- WANTED: Majestic Elderhorn
 				q(41844),	-- WANTED: Sekhan
 				q(44294),	-- WANTED: Sekhan
-				q(41821),	-- WANTED: Shara Felbreath
 				q(43619),	-- WANTED: Shara Felbreath
 				q(41838),	-- WANTED: Slumber
 				q(41257),	-- Warden Tower Assault: Cordana's Apex
@@ -111,9 +108,12 @@ _.Zones =
 				q(41206),	-- Work Order: Leystone
 				q(41647),	-- Work Order: Silkweave Robe
 				q(41235),	-- Work Order: Stonehide Leather
-				q(46279),	-- Zargrom
 --]]
 				q(41705, {	-- Assault on Thunder Totem
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(40978, {	-- Bears Behaving Badly
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -190,6 +190,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(46186, {	-- Ix'dreloth (Invasion WQ)
+					["collectible"] = false,
+					["lvl"] = 98,
+				}),
 				q(46187, {	-- Larthogg (Invasion WQ)
 					["collectible"] = false,
 					["lvl"] = 98,
@@ -212,14 +216,6 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(41076, {	-- Munitions Testing
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
-				q(41866, {	-- Neltharion's Lair: Blighted Bat
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
-				q(41865, {	-- Neltharion's Lair: Mother of Stone
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -351,6 +347,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41821, {	-- WANTED: Shara Felbreath
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44293, {	-- WANTED: Slumber
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -428,6 +428,10 @@ _.Zones =
 					["groups"] = {
 						i(128604),	-- Formula: Enchant Cloak - Word of Strength (Rank 3)
 					},
+				}),
+				q(46279, {	-- Zargrom (Invasion WQ)
+					["collectible"] = false,
+					["lvl"] = 98,
 				}),
 				q(46192, {	-- Zar'vok (Invasion WQ)
 					["collectible"] = false,

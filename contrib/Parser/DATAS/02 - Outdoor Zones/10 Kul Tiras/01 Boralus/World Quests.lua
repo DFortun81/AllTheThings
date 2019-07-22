@@ -12,6 +12,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51225, {	-- Albatrocity
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(53808, {	-- Crawl To Victory (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,

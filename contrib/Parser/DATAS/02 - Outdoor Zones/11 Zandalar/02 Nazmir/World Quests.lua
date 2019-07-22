@@ -307,6 +307,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50501, {	-- Queen Tzxi'kik
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50786, {	-- Revenge of Krag'wa
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,

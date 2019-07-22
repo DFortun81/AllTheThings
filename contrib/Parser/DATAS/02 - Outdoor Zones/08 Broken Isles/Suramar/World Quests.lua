@@ -38,13 +38,11 @@ _.Zones =
 				q(41304),	-- Flourishing Starlight Roses
 				q(41448),	-- Heavy Felslate Deposits
 				q(41616),	-- Huge Runescale Koi
-				q(41280),	-- Huge Runescale Koi
 				q(41617),	-- Huge Runescale Koi
 				q(41538),	-- Iridescent Starlight Roses
 				q(41605),	-- Lively Runescale Koi
 				q(41279),	-- Lively Runescale Koi
 				q(41604),	-- Lively Runescale Koi
-				q(41537),	-- Lively Starlight Roses
 				q(41461),	-- Malevolent Felslate Outcropping
 				q(43513),	-- Na'zak the Fiend
 				q(41305),	-- Nightborne Herb Trader
@@ -194,6 +192,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41280, {	-- Huge Runescale Koi
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
 				q(44805, {	-- In the Thick of It
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -221,6 +224,11 @@ _.Zones =
 				q(45032, {	-- Like the Wind
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41537, {	-- Lively Starlight Roses
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41931, {	-- Mana Tap
 					["collectible"] = false,

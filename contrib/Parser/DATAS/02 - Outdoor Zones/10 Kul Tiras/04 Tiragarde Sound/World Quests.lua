@@ -222,6 +222,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50299, {	-- Gryphon Wranglin'
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51844, {	-- Gulliver
 						["lvl"] = 120,
 						["collectible"] = false,

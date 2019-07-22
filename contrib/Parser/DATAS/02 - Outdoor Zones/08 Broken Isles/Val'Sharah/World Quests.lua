@@ -112,6 +112,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41965, {	-- Lunarwing Liberation
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41861, {	-- Meet The Maw
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -171,6 +175,10 @@ _.Zones =
 					},
 				}),
 				q(41316, {	-- Supplies Needed: Leystone
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41996, {	-- Tangeld Nightmare
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

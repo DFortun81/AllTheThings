@@ -55,7 +55,7 @@ _.Zones =
 						q(46016),	-- Magdrezoth
 						q(43752),	-- Oh, Ship!
 						q(41340),	-- Perfect Storm Drake Scale
-						q(41535),	-- Prickly Fjarnskaggl
+						
 						q(41460),	-- Primal Leystone Outcropping
 						q(41536),	-- Pungent Fjarnskaggl
 						q(41276),	-- Rocket Boot Fishing
@@ -97,7 +97,7 @@ _.Zones =
 						q(41297),	-- Work Order: Fjarnskaggl
 						q(41313),	-- Work Order: Leystone
 						q(41660),	-- Work Order: Skaggldrynk
-						q(41277),	-- Work Order: Stormrays
+						
 						q(41344),	-- Work Order: Stormscales
 					}),
 --]]				
@@ -263,6 +263,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41535, {	-- Prickly Fjarnskaggl
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(41925, {	-- Razing Hel
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -374,6 +379,11 @@ _.Zones =
 					["groups"] = {
 						i(137961),	-- Pattern: Silkweave Bracers (Rank 3)
 					},
+				}),
+				q(41277, {	-- Work Order: Stormrays
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41642, {	-- Work Order: Warhide Footpads
 					["requireSkill"] = 165,	-- Leatherworking

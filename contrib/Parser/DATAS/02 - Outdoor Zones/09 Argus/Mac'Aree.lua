@@ -1099,9 +1099,6 @@ _.Zones =
 						q(48731),	-- Herald of Chaos
 						q(48737),	-- Instructor Tarahna
 						q(48733),	-- Jed'hin Champion Vorusk
-						q(48102),	-- Scale Samples
-						q(49050),	-- Shadeflicker
-						q(48730),	-- Sorolis the Ill-Fated
 					}),
 --]]				
 					q(48729, {	-- Ataxon
@@ -1210,8 +1207,17 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(48102, {	-- Scale Samples
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
 					q(47858, {	-- Security: Engaged
 						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(49050, {	-- Shadeflicker
+						["lvl"] = 110,
+						["filterID"] = 101,	-- Battle Pet
 						["collectible"] = false,
 					}),
 					q(47833, {	-- Shadowcaster Voruun
@@ -1227,6 +1233,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(49048, {	-- Snozz
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48730, {	-- Sorolis the Ill-Fated
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

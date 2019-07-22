@@ -864,7 +864,6 @@ _.Zones =
 				q(40141),	-- Stormscale Sample
 				q(40048),	-- Strings of the Puppet Masters
 				q(41288),	-- Supplies Needed: Aethril
-				q(41315),	-- Supplies Needed: Leystone
 				q(41327),	-- Supplies Needed: Stormscales
 				q(38957),	-- Taking Inspiration
 				q(43518),	-- Tempering Darkness

@@ -68,6 +68,20 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
+			n(-34, {	-- World Quests
+				q(41866, {	-- Neltharion's Lair: Blighted Bat
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41864, {	-- Neltharion's Lair: Crystalline Crusher
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41865, {	-- Neltharion's Lair: Mother of Stone
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(1,  {		-- Normal
 				cr(91003, e(1662, {	-- Rokmora
 					i(134481),	-- Boulderbuckle Strap

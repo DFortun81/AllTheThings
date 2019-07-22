@@ -12,6 +12,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(52935, {	-- A New Era
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51855, {	-- A Pirate's Life For Me
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -308,6 +313,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51886, {	-- Pinku'shon
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52474, {	-- Poacher Zane
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -319,6 +328,10 @@ _.Zones =
 					q(52211, {	-- Red Sunrise
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51905, {	-- Reinforced Hullbreaker
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(52142, {	-- Restocking

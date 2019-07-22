@@ -1142,6 +1142,11 @@ _.Zones =
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
+					q(49045, {	-- Deathscreech
+						["lvl"] = 110,
+						["filterID"] = 101,	-- Battle Pet
+						["collectible"] = false,
+					}),
 					q(47720, {	-- Eternal Vengeance
 						["lvl"] = 110,
 						["collectible"] = false,
