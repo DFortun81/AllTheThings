@@ -83,7 +83,7 @@ _.Zones =
 						},
 					}),
 					i(170183, {	-- Reefwalker Bark
-						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation.",
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
 						["repeatable"] = true,
 						["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
 						["g"] = {
@@ -157,7 +157,8 @@ _.Zones =
 					}),
 				},
 			}),
-			n(149653, {	-- Carnivorous Lasher -- to spawn him, it procs quest 55366? verify IDs
+			n(149653, {	-- Carnivorous Lasher
+			--	i used seed, did final feed + well fed & herb buff — triggered 55366, 56888, and 57188.  no quests procced until the rare died, though
 				["questID"] = 55366,
 				["coord"] = { 54.7, 41.7, 1355 },
 				["isDaily"] = true,
@@ -354,7 +355,7 @@ _.Zones =
 						},
 					}),
 					i(170183, {	-- Reefwalker Bark
-						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation.",
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
 						["repeatable"] = true,
 						["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
 						["g"] = {
@@ -477,7 +478,7 @@ _.Zones =
 						},
 					}),
 					i(170183, {	-- Reefwalker Bark
-						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation.",
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
 						["repeatable"] = true,
 						["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
 						["g"] = {
@@ -837,7 +838,7 @@ _.Zones =
 						},
 					}),
 					i(170183, {	-- Reefwalker Bark
-						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation.",
+						["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
 						["repeatable"] = true,
 						["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
 						["g"] = {
