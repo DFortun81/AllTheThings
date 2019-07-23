@@ -1449,14 +1449,13 @@ local function ResolveSymbolicLink(o)
 					MergeObject(uniques, s);
 				end
 				searchResults = uniques;
-			elseif cmd == "itemslot" then
-				-- Instruction to include only search results where an item is of a specific item slot.
-				local slots = {unpack(sym)};
-				table.remove(slots, 1);
-				table.remove(slots, 1);
+			elseif cmd == "invtype" then
+				-- Instruction to include only search results where an item is of a specific inventory type.
+				local types = {unpack(sym)};
+				table.remove(types, 1);
 				for k=#searchResults,1,-1 do
 					local s = searchResults[k];
-					if s.itemID and not contains(slots, select(4, GetItemInfoInstant(s.itemID))) then
+					if s.itemID and not contains(types, select(4, GetItemInfoInstant(s.itemID))) then
 						table.remove(searchResults, k);
 					end
 				end
