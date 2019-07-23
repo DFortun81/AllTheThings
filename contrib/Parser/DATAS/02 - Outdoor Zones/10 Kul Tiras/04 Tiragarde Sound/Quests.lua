@@ -166,6 +166,14 @@ _.Zones =
 				}),
 				
 				
+				q(49710, {	-- An Offering of Eggs
+					["sourceQuests"] = { 49394 },	-- Hold Still
+					["coord"] = { 42.4, 22.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129170,	-- Rulf
+				}),
+				
+				
 				q(50349, {	-- An Overrun Mine
 					["isBreadcrumb"] = true,
 					["coord"] = { 75.6, 50.6, 895 },
@@ -178,6 +186,14 @@ _.Zones =
 				--	["objectID"] = 277199,	-- Weathered Job List
 					["coord"] = { 76.1, 65.4, 895 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(50002, {	-- A Very Precious Cargo
+					["sourceQuests"] = { 50026 },	-- Save Our Shipmates
+					["coord"] = { 50.2, 37.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 123415,	-- Henry Hardwick
 				}),
 				
 				
@@ -238,6 +254,14 @@ _.Zones =
 				}),
 				
 				
+				q(49418, {	-- Big Boss
+					["sourceQuests"] = { 49417 },	-- Roughneck Riders
+					["coord"] = { 42.4, 22.3, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129003,	-- Tagart
+				}),
+				
+				
 				q(48421, { 	-- Blood in the Tides
 					["sourceQuests"] = { 47489 }, 	-- Stow and Go
 					["coord"] = { 85.61, 76.61, 895 },
@@ -258,6 +282,30 @@ _.Zones =
 					["coord"] = { 55.4, 24.6, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 125398,	-- Harold Beckett
+				}),
+				
+				
+				q(49439, {	-- Boss' Revenge
+					["sourceQuests"] = { 49435 },	-- Where'd They Go?
+					["coord"] = { 39.7, 13.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129655,	-- Boss Tak
+				}),
+				
+				
+				q(50059, {	-- Can't Hear a Things
+					["sourceQuests"] = { 50026 },	-- Save Our Shipmates
+					["coord"] = { 51.1, 35.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131775,	-- Earless Joe
+				}),
+				
+				
+				q(47755, {	-- Captured and Enraptured
+					["sourceQuests"] = { 50026 },	-- Save Our Shipmates
+					["coord"] = { 50.2, 37.1, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 123415,	-- Henry Hardwick
 				}),
 				
 				
@@ -498,6 +546,16 @@ _.Zones =
 				}),
 				
 				
+				q(49719, {	-- Getting Paid
+					["sourceQuests"] = {
+						49439,	-- Boss' Revenge
+						49433,	-- Wendies
+					},
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129655,	-- Boss Tak
+				}),
+				
+				
 				q(49453, {	-- Give a Dam
 					["sourceQuests"] = { 50699 },	-- Worker's Rights
 					["coord"] = { 66.6, 17.2, 895 },
@@ -529,6 +587,37 @@ _.Zones =
 						i(158270),	-- Outrigger Armguards
 						i(158269),	-- Sea Raider's Vambraces
 					},
+				}),
+				
+				
+				q(49412, {	-- Helping Henry
+					["sourceQuests"] = { 49393 },	-- The Roughnecks
+					["coord"] = { 47.7, 17.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129392,	-- "Helpless" Henry
+				}),
+				
+				
+				q(50005, {	-- Hold My Hand
+					["sourceQuests"] = { 50002 },	-- A Very Precious Cargo
+					["coord"] = { 55.4, 35.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131684,	-- Penny "Precious" Hardwick
+					["g"] = {
+						i(158264),	-- Navigator's Handwraps
+						i(158262),	-- Freebooter Mitts
+						i(158265),	-- Outrigger Grips
+						i(158263),	-- Sea Raider's Gloves
+						i(160087),	-- Penny's Friendship Ring
+					},
+				}),
+				
+				
+				q(49394, {	-- Hold Still
+					["sourceQuests"] = { 49393 },	-- The Roughnecks
+					["coord"] = { 42.4, 22.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129003,	-- Tagart
 				}),
 				
 				
@@ -817,6 +906,14 @@ _.Zones =
 				}),
 				
 				
+				q(49735, {	-- Protect the Nest
+					["sourceQuests"] = { 49394 },	-- Hold Still
+					["coord"] = { 42.4, 22.6, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129170,	-- Rulf
+				}),
+				
+				
 				q(48353, {	-- Pulse of the Wharf
 					["sourceQuests"] = {
 						48352,	-- A Cure from the Sea
@@ -914,6 +1011,24 @@ _.Zones =
 					["coord"] = { 77.3, 83.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 126158,	-- Flynn Fairwind
+				}),
+				
+				
+				q(49417, {	-- Roughneck Riders
+					["sourceQuests"] = {
+						49710,	-- An Offering of Eggs
+						49735,	-- Protect the Nest
+					},
+					["coord"] = { 47.8, 16.4, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129578,	-- Shawn McClinter
+					["g"] = {
+						i(158239),	-- Navigator's Walkers
+						i(158241),	-- Freebooter Striders
+						i(158240),	-- Outrigger Striders
+						i(158238),	-- Sea Raider's Footguards
+						i(158228),	-- Gryphon Rider's Ring
+					},
 				}),
 				
 				
@@ -1073,6 +1188,14 @@ _.Zones =
 						i(158266),	-- Southport Searchlight
 						i(158330),	-- Proudmoore Marine's Crest
 					},
+				}),
+				
+				
+				q(49395, {	-- The Bears and the Bees
+					["sourceQuests"] = { 49393 },	-- The Roughnecks
+					["coord"] = { 42.4, 22.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129003,	-- Tagart
 				}),
 				
 				
@@ -1378,6 +1501,29 @@ _.Zones =
 				}),
 				
 				
+				q(49431, {	-- Warm and Cozy
+					["sourceQuests"] = { 49418 },	-- Big Boss
+					["coord"] = { 44.8, 15.5, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130478,	-- Griddon
+					["g"] = {
+						i(158289),	-- Navigator's Cinch
+						i(158291),	-- Freebooter Waistwrap
+						i(158290),	-- Outrigger Cincture
+						i(158288),	-- Sea Raider's Buckle
+						i(160082),	-- Griddon's Satin Towel
+					},
+				}),
+				
+				
+				q(49433, {	-- Wendies
+					["sourceQuests"] = { 49418 },	-- Big Boss
+					["coord"] = { 42.0, 16.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129291,	-- Boss Tak
+				}),
+				
+				
 				q(49072, {	-- Westward Noble
 					["sourceQuests"] = {
 						48873,	-- A Grizzly End
@@ -1387,6 +1533,14 @@ _.Zones =
 					["coord"] = { 75.8, 65.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 127161,	-- Alanna Holton
+				}),
+				
+				
+				q(49435, {	-- Where'd They Go?
+					["sourceQuests"] = { 49418 },	-- Big Boss
+					["coord"] = { 42.0, 16.7, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129291,	-- Boss Tak
 				}),
 				
 				
@@ -1470,30 +1624,6 @@ _.Zones =
 						["coord"] = { 65.8, 66.3, 895 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54945 },	-- Let's Get It Started
-					}),
-
-
-					q(49431, {	-- Warm and Cozy
-						i(158289),	-- Navigator's Cinch
-						i(158291),	-- Freebooter Waistwrap
-						i(158290),	-- Outrigger Cincture
-						i(158288),	-- Sea Raider's Buckle
-						i(160082),	-- Griddon's Satin Towel
-					}),
-					q(50005, {	-- Hold My Hand
-						i(158264),	-- Navigator's Handwraps
-						i(158262),	-- Freebooter Mitts
-						i(158265),	-- Outrigger Grips
-						i(158263),	-- Sea Raider's Gloves
-						i(160087),	-- Penny's Friendship Ring
-					}),
-					q(49417, {	-- Roughneck Riders
-						i(158239),	-- Navigator's Walkers
-						i(158241),	-- Freebooter Striders
-						i(158240),	-- Outrigger Striders
-						i(158238),	-- Sea Raider's Footguards
-						i(158228),	-- Gryphon Rider's Ring
-
 					}),
 				}),
 			}),

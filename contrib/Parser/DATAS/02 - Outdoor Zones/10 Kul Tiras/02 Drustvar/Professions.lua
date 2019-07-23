@@ -155,6 +155,16 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				prof(393, {	-- Skinning
+					q(52224, {	-- Ivory Handled Dagger
+						["sourceQuests"] = { 52223 },	-- Brinepinch
+						["description"] = "Requires 150 Kul Tiran Skinning.",
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
+						},
+					}),
+				}),
 			}),
 		}),
 	}),
