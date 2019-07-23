@@ -430,9 +430,10 @@ _.Zones =
 				["coords"] = {
 					{ 47.0, 30.6, 1355 },
 					{ 48.7, 26.2, 1355 },
+					{ 50.2, 19.1, 1355 },
 					{ 56.1, 11.0, 1355 },	-- cave entrance, putting this instead of actual coord because it's very close and kind of hard to find without the entrance
 					{ 57.0, 20.8, 1355 },
-					{ 50.2, 19.1, 1355 },
+					{ 70.6, 24.7, 1355 },
 				},
 				["g"] = {
 					crit(18, {	-- I Thought You Said They'd Be Rare?
