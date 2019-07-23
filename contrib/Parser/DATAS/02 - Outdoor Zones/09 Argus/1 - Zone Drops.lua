@@ -114,6 +114,9 @@ _.Zones =
 					i(152743, {	-- Unsullied Plate Sabatons	
 						i(152753),	-- Praetorium Guard's Sabatons
 					}),
+					i(152736, {	-- Unsullied Necklace
+						i(152780),	-- Ancient Augari Pendant
+					}),
 					i(152735, {	-- Unsullied Ring
 						i(152779),	-- Jed'hin Aspirant's Ring
 					}),

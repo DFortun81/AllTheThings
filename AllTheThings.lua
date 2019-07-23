@@ -1323,9 +1323,18 @@ end
 
 local ResolveSymbolicLink;
 (function()
-local subroutines = {
-	["legion_relinquished"] = function(invtypes, ...)
+local subroutines;
+subroutines = {
+	["legion_relinquished_base"] = function()
 		return {
+			-- Legion Legendaries
+			--[[
+			{"select", "npcID", 106655},	-- Arcanomancer Vridiel
+			{"pop"},	-- Remove Arcanomancer Vridiel and push his children into the processing queue.
+			{"pop"},	-- Remove the Legendary Tokens and push the children into the processing queue.
+			{"finalize"},	-- Push the Unsullied items to the finalized list.
+			]]--
+			
 			-- PVP Gear
 			-- TODO: Add PVP Gear
 			-- Demonic Combatant & Gladiator Season 7 Gear
@@ -1364,11 +1373,11 @@ local subroutines = {
 			{"select", "itemID", 153140},	-- Unsullied Plate Waistplate
 			{"select", "itemID", 153146},	-- Unsullied Plate Greaves
 			{"select", "itemID", 152743},	-- Unsullied Plate Sabatons
+			{"select", "itemID", 152736},	-- Unsullied Necklace
 			{"select", "itemID", 152735},	-- Unsullied Ring
 			{"select", "itemID", 152733},	-- Unsullied Trinket
 			{"select", "itemID", 152799},	-- Unsullied Relic
 			{"pop"},	-- Remove the Unsullied Tokens and push the children into the processing queue.
-			{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 			{"finalize"},	-- Push the Unsullied items to the finalized list.
 			
 			-- World Bosses
@@ -1443,11 +1452,25 @@ local subroutines = {
 			{"finalize"},	-- Push the unprocessed Items to the finalized list.
 			
 			{"merge"},	-- Merge the finalized items back into the processing queue.
-			{"contains", "f", ... },	-- Specific filterIDs only!
-			{"invtype", unpack(invtypes)},	-- Only pay attention to items equipped in the slots.
-			{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
-			{"modID", 43},	-- Reassign the ModID to 43.
+			{"is", "itemID"},	-- Only Items!
 		};
+	end,
+	["legion_relinquished"] = function(invtypes, ...)
+		local f = {...};
+		local commands = subroutines["legion_relinquished_base"]();
+		if type(invtypes) == 'number' then tinsert(f, invtypes); end
+		if #f > 0 then tinsert(commands, {"contains", "f", unpack(f) }); end	-- Specific filterIDs only!
+		if type(invtypes) == 'table' then tinsert(commands, {"invtype", unpack(invtypes)}); end	-- Only pay attention to items equipped in the slots.
+		tinsert(commands, {"postprocess"});	-- Post Process the search results to ensure no duplicate keys exist.
+		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
+		return commands;
+	end,
+	["legion_relinquished_relic"] = function(relictype)
+		local commands = subroutines["legion_relinquished_base"]();
+		if relictype then tinsert(commands, {"relictype", relictype}); end	-- Only pay attention to relics of a certain kind
+		tinsert(commands, {"postprocess"});	-- Post Process the search results to ensure no duplicate keys exist.
+		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
+		return commands;
 	end
 };
 ResolveSymbolicLink = function(o)
@@ -1557,9 +1580,21 @@ ResolveSymbolicLink = function(o)
 				local clone = {unpack(sym)};
 				table.remove(clone, 1);
 				table.remove(clone, 1);
+				if #clone > 0 then
+					for k=#searchResults,1,-1 do
+						local s = searchResults[k];
+						if not s[key] or not contains(clone, s[key]) then
+							table.remove(searchResults, k);
+						end
+					end
+				end
+			elseif cmd == "isrelic" then
+				-- Instruction to include only search results where an item is a relic.
 				for k=#searchResults,1,-1 do
 					local s = searchResults[k];
-					if not s[key] or not contains(clone, s[key]) then
+					if s.itemID and IsArtifactRelicItem(s.itemID) then
+						-- We're good.
+					else
 						table.remove(searchResults, k);
 					end
 				end
@@ -1587,10 +1622,42 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to include only search results where an item is of a specific inventory type.
 				local types = {unpack(sym)};
 				table.remove(types, 1);
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if s.itemID and not contains(types, select(4, GetItemInfoInstant(s.itemID))) then
-						table.remove(searchResults, k);
+				if #types > 0 then
+					for k=#searchResults,1,-1 do
+						local s = searchResults[k];
+						if s.itemID and not contains(types, select(4, GetItemInfoInstant(s.itemID))) then
+							table.remove(searchResults, k);
+						end
+					end
+				end
+			elseif cmd == "relictype" then
+				-- Instruction to include only search results where an item is of a specific relic type.
+				local types = {unpack(sym)};
+				table.remove(types, 1);
+				if #types > 0 then
+					--[[
+					RELIC_SLOT_TYPE_ARCANE = "Arcane";
+					RELIC_SLOT_TYPE_BLOOD = "Blood";
+					RELIC_SLOT_TYPE_FEL = "Fel";
+					RELIC_SLOT_TYPE_FIRE = "Fire";
+					RELIC_SLOT_TYPE_FROST = "Frost";
+					RELIC_SLOT_TYPE_HOLY = "Holy";
+					RELIC_SLOT_TYPE_IRON = "Iron";
+					RELIC_SLOT_TYPE_LIFE = "Life";
+					RELIC_SLOT_TYPE_SHADOW = "Shadow";
+					RELIC_SLOT_TYPE_WATER = "Water";
+					RELIC_SLOT_TYPE_WIND = "Storm";
+					]]--
+					for i=#types,1,-1 do
+						types[i] = _G["RELIC_SLOT_TYPE_" .. types[i]];
+					end
+					for k=#searchResults,1,-1 do
+						local s = searchResults[k];
+						if s.itemID and IsArtifactRelicItem(s.itemID) and contains(types, select(3, C_ArtifactUI.GetRelicInfoByItemID(s.itemID))) then
+							-- We're good.
+						else
+							table.remove(searchResults, k);
+						end
 					end
 				end
 			elseif cmd == "modID" then
@@ -1610,8 +1677,10 @@ ResolveSymbolicLink = function(o)
 					local commands = subroutine(unpack(args));
 					if commands then
 						local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
-						for k,s in ipairs(results) do
-							table.insert(searchResults, s);
+						if results then
+							for k,s in ipairs(results) do
+								table.insert(searchResults, s);
+							end
 						end
 					end
 				else
@@ -2272,11 +2341,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local symbolicLink = ResolveSymbolicLink(group);
 				if symbolicLink then
 					if group.g and #group.g >= 0 then
-						for i,o in ipairs(group.g) do
-							MergeObject(symbolicLink, CreateObject(o));
+						for j=1,#symbolicLink,1 do
+							MergeObject(group.g, CreateObject(symbolicLink[j]));
 						end
+					else
+						for j=#symbolicLink,1,-1 do
+							symbolicLink[j] = CreateObject(symbolicLink[j]);
+						end
+						group.g = symbolicLink;
 					end
-					group.g = symbolicLink;
 				end
 			else
 				for i,o in ipairs(merged) do
@@ -2284,11 +2357,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if symbolicLink then
 						o.symbolized = true;
 						if o.g and #o.g >= 0 then
-							for j,k in ipairs(o.g) do
-								MergeObject(symbolicLink, CreateObject(k));
+							for j=1,#symbolicLink,1 do
+								MergeObject(o.g, CreateObject(symbolicLink[j]));
 							end
+						else
+							for j=#symbolicLink,1,-1 do
+								symbolicLink[j] = CreateObject(symbolicLink[j]);
+							end
+							o.g = symbolicLink;
 						end
-						o.g = symbolicLink;
 					end
 				end
 				group = CreateObject({ [paramA] = paramB });
@@ -7628,12 +7705,18 @@ local function CreateMiniListForGroup(group)
 			popout.data.progress = 0;
 			popout.data.total = 0;
 			if not popout.data.g then
-				popout.data.g = ResolveSymbolicLink(group);
+				local resolved = ResolveSymbolicLink(group);
+				if resolved then
+					for i=#resolved,1,-1 do
+						resolved[i] = CreateObject(o);
+					end
+				end
+				popout.data.g = resolved;
 			else
 				local resolved = ResolveSymbolicLink(group);
 				if resolved then
 					for i,o in ipairs(resolved) do
-						MergeObject(popout.data.g, o);
+						MergeObject(popout.data.g, CreateObject(o));
 					end
 				end
 			end
