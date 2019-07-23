@@ -500,6 +500,18 @@ _.Zones =
 				}),
 				-- End How to Train Your Direhorn Crit 5
 				-- End How to Train Your Direhorn Achievment
+				q(55245, {	-- Eat Like a Direhorn
+					["races"] = HORDE_ONLY,
+					["qg"] = 152258,	-- Child of Torcali
+					["coord"] = { 68.2, 41.8, 862 },
+					["isDaily"] = true,
+				}),
+				q(55243, {	-- A Daughter of Torcali
+					["races"] = HORDE_ONLY,
+					["qg"] = 151319,	-- Li'zal <Priestess of Torcali>
+					["coord"] = { 68.2, 41.8, 862 },
+					["isDaily"] = true,
+				}),
 				q(51101, {	-- The Wounded King
 					["races"] = HORDE_ONLY,
 					["qg"] = 141555	-- Baine Bloodhoof
