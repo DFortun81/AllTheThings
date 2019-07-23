@@ -65,7 +65,6 @@ _.Zones =
 				q(42105),	-- Mixology Mix-up
 				q(41268),	-- Queen Queenfish
 				q(41266),	-- Raft Fishing
-				q(42123),	-- Reclaiming Llothien
 				q(43776),	-- Scouting
 				q(43765),	-- Scouting
 				q(43801),	-- Shell Out Some Pain
@@ -280,6 +279,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(42108, {	-- Rally the Nightwatchers
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42123, {	-- Reclaiming Llothien
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

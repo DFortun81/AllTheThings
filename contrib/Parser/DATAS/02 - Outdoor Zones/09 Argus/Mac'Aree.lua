@@ -1097,7 +1097,7 @@ _.Zones =
 						q(49051),	-- Corrupted Blood of Argus
 						q(49049),	-- Gloamwing
 						q(48731),	-- Herald of Chaos
-						q(48737),	-- Instructor Tarahna
+						
 						q(48733),	-- Jed'hin Champion Vorusk
 					}),
 --]]				
@@ -1159,6 +1159,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48099, {	-- Hostile Echology
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48737, {	-- Instructor Tarahna
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

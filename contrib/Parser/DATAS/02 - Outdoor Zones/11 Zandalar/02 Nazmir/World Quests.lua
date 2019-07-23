@@ -127,6 +127,10 @@ _.Zones =
 							ach(13426),	-- Come On and Slam
 						},
 					}),
+					q(50491, {	-- Corpse Bringer Yal'kar
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52779, {	-- Crawg in the Bog
 						["lvl"] = 120,
 						["collectible"] = false,

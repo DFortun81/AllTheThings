@@ -165,6 +165,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51706, { 	-- Deadwood
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51461, { 	-- Deathcap
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -237,6 +242,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51507, {	-- Gorehorn
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51874, {	-- Gorged Boar
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

@@ -65,9 +65,7 @@ _.Zones =
 				q(41122),	-- Mists Take You
 				q(41057),	-- Primal Payback
 				q(41055),	-- Primal Payback
-				q(41144),	-- Return to the River
 				q(40985),	-- Rimescale Naga Incursion: Highmountain
-				q(40966),	-- Ritualists in Our Midsts
 				q(41200),	-- Rough Leystone Outcropping
 				q(46262),	-- Save the Tadpoles!
 				q(41234),	-- Shaggy Saber Hide
@@ -244,7 +242,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41144, {	-- Return to the River
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41025, {	-- Rise of the Fallen
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(40966, {	-- Ritualists in Our Midsts
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

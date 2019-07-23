@@ -169,6 +169,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51981, {	-- Earthcaller's Abode
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52179, {	-- Fortified Resistance
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

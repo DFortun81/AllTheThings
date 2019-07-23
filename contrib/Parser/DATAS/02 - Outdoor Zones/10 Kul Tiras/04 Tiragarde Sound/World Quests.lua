@@ -312,6 +312,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51660, {	-- Pack Leader Asenya
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50324, {	-- Picturesque Fizzsprings Resort
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

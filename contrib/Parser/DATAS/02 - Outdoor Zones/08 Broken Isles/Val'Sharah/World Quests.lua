@@ -6,6 +6,10 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
 			n(-34,  {	-- World Quests
+				q(45924, {	-- Abyssal Monstrosity (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(44033, {	-- Aw, Nuts!
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -64,6 +68,10 @@ _.Zones =
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(44884, {	-- Defense of Emerald Bay (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
 				}),
 				q(41546, {	-- Dreamleaf Cluster
 					["lvl"] = 110,
@@ -157,6 +165,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44730, {	-- Ravaged Dreams (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(43709, {	-- Seal Clubbing
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -193,6 +205,14 @@ _.Zones =
 				}),
 				q(43755, {	-- The Magic of Flight
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46261, {	-- The Taste of Corruption (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(44759, {	-- The Vale of Dread (Invasion WQ)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(40279, {	-- Training with Durian
@@ -335,6 +355,10 @@ _.Zones =
 					["groups"] = {
 						i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
 					},
+				}),
+				q(45926, {	-- Zar'teth (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
 				}),
 				n(-322,  {	-- Cloak
 					i(139074),	-- Dreamwalker's Cloak

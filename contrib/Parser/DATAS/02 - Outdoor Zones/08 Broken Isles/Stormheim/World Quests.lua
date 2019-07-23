@@ -55,7 +55,6 @@ _.Zones =
 						q(46016),	-- Magdrezoth
 						q(43752),	-- Oh, Ship!
 						q(41340),	-- Perfect Storm Drake Scale
-						
 						q(41460),	-- Primal Leystone Outcropping
 						q(41536),	-- Pungent Fjarnskaggl
 						q(41276),	-- Rocket Boot Fishing
@@ -79,10 +78,8 @@ _.Zones =
 						q(46021),	-- Thel'draz
 						q(41342),	-- Thick Bear Hide
 						q(42182),	-- To Battle!
-						q(43454),	-- WANTED: Egyl the Enduring
 						q(43620),	-- WANTED: Egyl the Enduring
 						q(43621),	-- WANTED: Fathnyr
-						q(43436),	-- WANTED: Glimar Ironfist
 						q(43622),	-- WANTED: Glimar Ironfist
 						q(43623),	-- WANTED: Hannval the Butcher
 						q(43624),	-- WANTED: Isel the Hammer
@@ -97,7 +94,6 @@ _.Zones =
 						q(41297),	-- Work Order: Fjarnskaggl
 						q(41313),	-- Work Order: Leystone
 						q(41660),	-- Work Order: Skaggldrynk
-						
 						q(41344),	-- Work Order: Stormscales
 					}),
 --]]				
@@ -330,7 +326,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43454, {	-- WANTED: Egyl the Enduring
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43434, {	-- WANTED: Fathnyr
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43436, {	-- WANTED: Glimar Ironfist
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

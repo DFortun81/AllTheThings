@@ -19,7 +19,6 @@ _.Zones =
 					q(46068),	-- Brute Wrangling
 					q(46814),	-- Call of the Frostwyrm
 					q(44846),	-- Clearing the Path
-					
 					q(45358),	-- Contagion Containment
 					q(45837),	-- Creeping Fel
 					q(45531),	-- Creeping Fel
@@ -49,10 +48,8 @@ _.Zones =
 					q(45549),	-- Salving the Corruption
 					q(45626),	-- Set You Up the Bomb!
 					q(46945),	-- Si'vash
-					q(46360),	-- Simply Stunning
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
-					q(46942),	-- The Cost of Power
 					q(46032),	-- The Tormented Return
 					q(46325),	-- The United Front
 					q(46063),	-- The Wailing Dead
@@ -207,6 +204,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46360, {	-- Simply Stunning
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46109, {	-- Stand!
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -220,6 +221,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(45035, {	-- The Call of Battle
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46942, {	-- The Cost of Power
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

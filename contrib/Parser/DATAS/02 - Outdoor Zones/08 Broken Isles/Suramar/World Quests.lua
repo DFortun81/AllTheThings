@@ -7,7 +7,6 @@ _.Zones =
 		m(680, {	-- Suramar
 			n(-34, {	-- World Quests
 --[[
-				q(42969),	-- A Spy in Our Midst
 				q(45068),	-- Barrels o' Fun
 				q(41493),	-- Brimstone Destroyer
 				q(41492),	-- Brimstone Destroyer
@@ -78,7 +77,6 @@ _.Zones =
 				q(44026),	-- WANTED: Mal'Dreth the Corruptor
 				q(44010),	-- WANTED: Oreth the Vile
 				q(44025),	-- WANTED: Oreth the Vile
-				q(42795),	-- WANTED: Sanaar
 				q(44185),	-- WANTED: Sanaar
 				q(44022),	-- WANTED: Shal'an
 				q(44024),	-- WANTED: Shal'an
@@ -91,6 +89,10 @@ _.Zones =
 				q(41350),	-- Work Order: Stonehide Leather
 --]]
 				q(42859, {	-- A Draught of Hope
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42969, {	-- A Spy in Our Midst
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -341,6 +343,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44018, {	-- WANTED: Magister Phaedris
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42795, {	-- WANTED: Sanaar
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

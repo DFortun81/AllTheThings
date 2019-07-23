@@ -990,7 +990,7 @@ _.Zones =
 						q(49056),	-- Pilfer
 						q(48870),	-- The Many-Faced Devourer
 						q(48827),	-- Varga
-						q(48836),	-- Watcher Aival
+						
 						q(48624),	-- Who Let The Dogs Out?
 						q(48349),	-- Work Order: Empyrium
 						q(48359),	-- Work Order: Fiendish Leather
@@ -1134,6 +1134,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(49053, {	-- Watcher
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48836, {	-- Watcher Aival
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),
