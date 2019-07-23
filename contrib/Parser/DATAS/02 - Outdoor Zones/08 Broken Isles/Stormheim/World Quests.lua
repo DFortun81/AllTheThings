@@ -51,7 +51,7 @@ _.Zones =
 						q(41507),	-- Leystone Basilisks
 						q(41274),	-- Lively Stormrays
 						q(41603),	-- Lively Stormrays
-						q(41602),	-- Lively Stormrays
+						
 						q(46016),	-- Magdrezoth
 						q(43752),	-- Oh, Ship!
 						q(41340),	-- Perfect Storm Drake Scale
@@ -217,6 +217,11 @@ _.Zones =
 				q(45049, {	-- Like the Wind
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41602, {	-- Lively Stormrays
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(42757, {	-- Maw of Souls: Menace of the Seas
 					["lvl"] = 110,

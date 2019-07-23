@@ -37,6 +37,10 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			n(-34, {	-- World Quests
+				q(42723, {	-- Eye of Azshara: A Tough Shell
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42713, {	-- Eye of Azshara: Slug It Out
 					["lvl"] = 110,
 					["collectible"] = false,

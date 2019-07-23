@@ -44,7 +44,7 @@ _.Zones =
 					q(46752),	-- On Borrowed Wings
 					q(45797),	-- Playing with Green Fire
 					q(45929),	-- Purging the Flames
-					q(46001),	-- Rules of the Hunt
+					
 					q(45549),	-- Salving the Corruption
 					q(45626),	-- Set You Up the Bomb!
 					q(46945),	-- Si'vash
@@ -199,6 +199,10 @@ _.Zones =
 							["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
 						}),
 					},
+				}),
+				q(46001, {	-- Rules of the Hunt
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(45550, {	-- Salving the Corruption
 					["lvl"] = 110,

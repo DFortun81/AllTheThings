@@ -989,8 +989,6 @@ _.Zones =
 						q(49058),	-- One-of-Many
 						q(49056),	-- Pilfer
 						q(48870),	-- The Many-Faced Devourer
-						q(48827),	-- Varga
-						
 						q(48624),	-- Who Let The Dogs Out?
 						q(48349),	-- Work Order: Empyrium
 						q(48359),	-- Work Order: Fiendish Leather
@@ -1118,6 +1116,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(48952, {	-- Throw Them a Bone
+						["lvl"] = 110,
+						["collectible"] = false,
+					}),
+					q(48827, {	-- Varga
 						["lvl"] = 110,
 						["collectible"] = false,
 					}),

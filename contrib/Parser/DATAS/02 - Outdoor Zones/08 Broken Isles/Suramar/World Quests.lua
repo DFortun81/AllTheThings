@@ -17,7 +17,7 @@ _.Zones =
 				q(44118),	-- DANGER: Auditor Esiel
 				q(44121),	-- DANGER: Az'jatar
 				q(41697),	-- DANGER: Colerian, Alteria, and Selenyi
-				q(44114),	-- DANGER: Magistrix Vilessa
+				
 				q(42799),	-- DANGER: Oglok the Furious
 				q(44122),	-- DANGER: Sorallus
 				q(44119),	-- DANGER: Volshax, Breaker of Will
@@ -161,6 +161,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(42797, {	-- DANGER: Scythemaster Cil'raman
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44114, {	-- DANGER: Magistrix Vilessa
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

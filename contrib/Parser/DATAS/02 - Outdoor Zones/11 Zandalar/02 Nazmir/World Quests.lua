@@ -524,6 +524,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50519, {	-- Za'amar
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50461, {	-- Zujothgul
 						["lvl"] = 120,
 						["collectible"] = false,

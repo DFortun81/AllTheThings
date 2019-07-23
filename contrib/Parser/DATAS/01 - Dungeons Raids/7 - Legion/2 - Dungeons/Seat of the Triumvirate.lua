@@ -108,6 +108,10 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			n(-34, {	-- World Quests
+				q(48959, {	-- Seat of the Triumvirate: Dark Fissures
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(48953, {	-- Seat of the Triumvirate: Darkcaller
 					["lvl"] = 110,
 					["collectible"] = false,

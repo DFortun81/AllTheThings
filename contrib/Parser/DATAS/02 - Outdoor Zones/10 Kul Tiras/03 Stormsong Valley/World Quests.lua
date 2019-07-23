@@ -105,6 +105,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(52071, {	-- Briarback Mountain
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(55341, {	-- Calligraphy
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

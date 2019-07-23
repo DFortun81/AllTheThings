@@ -34,6 +34,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42075, {	-- Botanical Backlash
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41273, {	-- Buoy Fishing
 					["lvl"] = 110,
 					["collectible"] = false,
