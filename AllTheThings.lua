@@ -1328,20 +1328,25 @@ local function ResolveSymbolicLink(o)
 			local cmd = sym[1];
 			if cmd == "select" then
 				-- Instruction to search the full database for something.
-				for k,s in ipairs(app.SearchForField(sym[2], sym[3])) do
-					local ref = ResolveSymbolicLink(s);
-					if ref then
-						if s.g then
-							for i,o in ipairs(s.g) do
+				local cache = app.SearchForField(sym[2], sym[3]);
+				if cache then
+					for k,s in ipairs(cache) do
+						local ref = ResolveSymbolicLink(s);
+						if ref then
+							if s.g then
+								for i,o in ipairs(s.g) do
+									table.insert(searchResults, o);
+								end
+							end
+							for i,o in ipairs(ref) do
 								table.insert(searchResults, o);
 							end
+						else
+							table.insert(searchResults, s);
 						end
-						for i,o in ipairs(ref) do
-							table.insert(searchResults, o);
-						end
-					else
-						table.insert(searchResults, s);
 					end
+				else
+					print("Failed to select ", sym[2], sym[3]);
 				end
 			elseif cmd == "pop" then
 				-- Instruction to "pop" all of the group values up one level.
@@ -1457,6 +1462,14 @@ local function ResolveSymbolicLink(o)
 					local s = searchResults[k];
 					if s.itemID and not contains(types, select(4, GetItemInfoInstant(s.itemID))) then
 						table.remove(searchResults, k);
+					end
+				end
+			elseif cmd == "modID" then
+				local modID = sym[2];
+				for k=#searchResults,1,-1 do
+					local s = searchResults[k];
+					if s.itemID then
+						s.modID = modID;
 					end
 				end
 			end

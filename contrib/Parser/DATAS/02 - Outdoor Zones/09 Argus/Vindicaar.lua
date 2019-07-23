@@ -1204,10 +1204,85 @@ _.Zones =
 										{"select", "itemID", 153136},	-- Unsullied Leather Treads
 										{"select", "itemID", 153152},	-- Unsullied Mail Boots
 										{"select", "itemID", 152743},	-- Unsullied Plate Sabatons
-										{"pop"},	-- Remove the parent objects and push the children into the processing queue.
+										{"pop"},	-- Remove the Unsullied Tokens and push the children into the processing queue.
 										{"finalize"},	-- Push the Unsullied items to the finalized list.
+										
+										-- World Bosses
+										{"select", "encounterID", 1790},	-- Ana-Mouz
+										{"select", "encounterID", 1956},	-- Apocron
+										{"select", "encounterID", 1883},	-- Brutallus
+										{"select", "encounterID", 1774},	-- Calamir
+										{"select", "encounterID", 1789},	-- Drugon the Frostblood
+										{"select", "encounterID", 1795},	-- Flotsam
+										{"select", "encounterID", 1770},	-- Humongris
+										{"select", "encounterID", 1769},	-- Levantus
+										{"select", "encounterID", 1884},	-- Malificus
+										{"select", "encounterID", 1783},	-- Na'zak the Fiend
+										{"select", "encounterID", 1749},	-- Nithogg
+										{"select", "encounterID", 1763},	-- Shar'thos
+										{"select", "encounterID", 1885},	-- Si'vash
+										{"select", "encounterID", 1756},	-- The Soultakers
+										{"select", "encounterID", 1796},	-- Withered J'im
+										{"pop"},	-- Remove the World Bosses and push the children into the processing queue.
+										{"finalize"},	-- Push the unprocessed Items to the finalized list.
+										
+										-- Raids
+										{"select", "instanceID", 768},	-- Emerald Nightmare
+										{"select", "instanceID", 861},	-- Trial of Valor
+										{"select", "instanceID", 786},	-- The Nighthold
+										{"select", "instanceID", 875},	-- Tomb of Sargeras
+										
+										-- Process the Dungeons, Normal Mode Only Loot for boots.
+										{"pop"},	-- Discard the Instance Headers and acquire all of their children.
+										{"where", "difficultyID", 14},	-- Select only the Normal Difficulty Headers.
+										{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
+										{"is", "encounterID"},	-- Only use the encounters themselves, no zone drops.
+										{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
+										{"finalize"},	-- Push the unprocessed Items to the finalized list.
+										
+										-- Dungeons
+										{"select", "instanceID", 777},	-- Assault on Violet Hold
+										{"select", "instanceID", 740},	-- Blackrook Hold
+										{"select", "instanceID", 900},	-- Cathedral of Eternal Night
+										{"select", "instanceID", 800},	-- Court of Stars
+										{"select", "instanceID", 762},	-- Darkheart Thicket
+										{"select", "instanceID", 716},	-- Eye of Azshara
+										{"select", "instanceID", 721},	-- Halls of Valor
+										{"select", "instanceID", 727},	-- Maw of Souls
+										{"select", "instanceID", 767},	-- Neltharion's Lair
+										{"select", "instanceID", 860},	-- Return to Karazhan
+										{"select", "instanceID", 945},	-- Seat of the Triumvirate
+										{"select", "instanceID", 749},	-- The Arcway
+										{"select", "instanceID", 707},	-- Vault of the Wardens
+										
+										-- Process the Dungeons, Mythic Mode Only Loot for boots.
+										{"pop"},	-- Discard the Instance Headers and acquire all of their children.
+										{"where", "difficultyID", 23},	-- Select only the Mythic Difficulty Headers.
+										{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
+										{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
+										{"finalize"},	-- Push the unprocessed Items to the finalized list.
+										
+										-- World Quest Rewards
+										{"select", "mapID", 630},	-- Azsuna
+										{"select", "mapID", 646},	-- Broken Shore
+										{"select", "mapID", 650},	-- Highmountain
+										{"select", "mapID", 634},	-- Stormheim
+										{"select", "mapID", 680},	-- Suramar
+										{"select", "mapID", 641},	-- Val'sharah
+										
+										-- Process the World Quest Rewards
+										{"pop"},	-- Discard the Map Headers and acquire all of their children.
+										{"where", "npcID", -34},	-- Select only the World Quest Headers
+										{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
+										{"is", "npcID"},	-- Only use the item sets themselves, no zone drops.
+										{"pop"},	-- Discard the item set Headers and acquire all of their children.
+										{"finalize"},	-- Push the unprocessed Items to the finalized list.
+										
 										{"merge"},	-- Merge the finalized items back into the processing queue.
+										{"contains", "f", 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
+										{"invtype", "INVTYPE_FEET"},	-- Only pay attention to items equipped in the feet slot.
 										{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+										{"modID", 43},	-- Reassign the ModID to 43.
 									},
 									--[[
 									["groups"] = {
