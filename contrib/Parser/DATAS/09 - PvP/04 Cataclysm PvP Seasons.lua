@@ -812,7 +812,6 @@ _.PVP =
 					un(2, i(70188)),	-- Ruthless Gladiator's Spellblade
 					un(2, i(70179)),	-- Ruthless Gladiator's Staff
 					un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
-
 				}),
 				cl(6, {	-- Death Knight
 					un(2, i(70490)),	-- Ruthless Gladiator's Dreadplate Shoulders

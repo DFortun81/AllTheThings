@@ -67,6 +67,14 @@ _.Zones =
 					i(169903),	-- Nazjatar Survival Pack
 				},
 			}),
+			q(56810, {	-- A Friend Indeed
+				["qg"] = 151310,	-- Kelfin Scout (Poen Gillbrack)
+				["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 7.",
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(169919),	-- Unshackled Commendation Crate
+				},
+			}),
 			q(56777, {	-- A Gift From The Clan
 				["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
 				["races"] = ALLIANCE_ONLY,
@@ -1948,6 +1956,14 @@ _.Zones =
 				["coord"] = { 64.2, 52.0, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55482,	-- Making the Connection
+			}),
+			q(55665, {	-- The Dark Garden
+				["qg"] = 152787,	-- Moris Criz
+				["coord"] = { 56.0, 18.4, 1355 },
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+				["isDaily"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 			q(56358, {	-- The Eternal Palace: Queen's Gambit (A)
 				["sourceQuests"] = { 56325 },	-- Changing Tides
