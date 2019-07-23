@@ -1331,11 +1331,44 @@ local subroutines = {
 			-- Demonic Combatant & Gladiator Season 7 Gear
 			
 			-- Unsullied Gear
+			{"select", "itemID", 152740},	-- Unsullied Cloak
+			{"select", "itemID", 152738},	-- Unsullied Cloth Cap
+			{"select", "itemID", 152734},	-- Unsullied Cloth Mantle
+			{"select", "itemID", 153135},	-- Unsullied Cloth Robes
+			{"select", "itemID", 152742},	-- Unsullied Cloth Cuffs
+			{"select", "itemID", 153141},	-- Unsullied Cloth Mitts
+			{"select", "itemID", 153156},	-- Unsullied Cloth Sash
+			{"select", "itemID", 153154},	-- Unsullied Cloth Leggings
 			{"select", "itemID", 153144},	-- Unsullied Cloth Slippers
+			{"select", "itemID", 153139},	-- Unsullied Leather Headgear
+			{"select", "itemID", 153145},	-- Unsullied Leather Spaulders
+			{"select", "itemID", 153151},	-- Unsullied Leather Tunic
+			{"select", "itemID", 153142},	-- Unsullied Leather Armbands
+			{"select", "itemID", 152739},	-- Unsullied Leather Grips
+			{"select", "itemID", 153148},	-- Unsullied Leather Belt
+			{"select", "itemID", 152737},	-- Unsullied Leather Trousers
 			{"select", "itemID", 153136},	-- Unsullied Leather Treads
+			{"select", "itemID", 153147},	-- Unsullied Mail Coif
+			{"select", "itemID", 153137},	-- Unsullied Mail Spaulders
+			{"select", "itemID", 152741},	-- Unsullied Mail Chestguard
+			{"select", "itemID", 153158},	-- Unsullied Mail Bracers
+			{"select", "itemID", 153149},	-- Unsullied Mail Gloves
+			{"select", "itemID", 152744},	-- Unsullied Mail Girdle
+			{"select", "itemID", 153138},	-- Unsullied Mail Legguards
 			{"select", "itemID", 153152},	-- Unsullied Mail Boots
+			{"select", "itemID", 153155},	-- Unsullied Plate Helmet
+			{"select", "itemID", 153153},	-- Unsullied Plate Pauldrons
+			{"select", "itemID", 153143},	-- Unsullied Plate Breasplate
+			{"select", "itemID", 153150},	-- Unsullied Plate Vambraces
+			{"select", "itemID", 153157},	-- Unsullied Plate Gauntlets	
+			{"select", "itemID", 153140},	-- Unsullied Plate Waistplate
+			{"select", "itemID", 153146},	-- Unsullied Plate Greaves
 			{"select", "itemID", 152743},	-- Unsullied Plate Sabatons
+			{"select", "itemID", 152735},	-- Unsullied Ring
+			{"select", "itemID", 152733},	-- Unsullied Trinket
+			{"select", "itemID", 152799},	-- Unsullied Relic
 			{"pop"},	-- Remove the Unsullied Tokens and push the children into the processing queue.
+			{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 			{"finalize"},	-- Push the Unsullied items to the finalized list.
 			
 			-- World Bosses

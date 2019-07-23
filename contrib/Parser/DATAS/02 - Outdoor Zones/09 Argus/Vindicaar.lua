@@ -58,6 +58,9 @@ _.Zones =
 									{"select", "itemID", 153140},	-- Unsullied Plate Waistplate
 									{"select", "itemID", 153146},	-- Unsullied Plate Greaves
 									{"select", "itemID", 152743},	-- Unsullied Plate Sabatons
+									{"select", "itemID", 152735},	-- Unsullied Ring
+									{"select", "itemID", 152733},	-- Unsullied Trinket
+									{"select", "itemID", 152799},	-- Unsullied Relic
 									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 								},
 							}),
