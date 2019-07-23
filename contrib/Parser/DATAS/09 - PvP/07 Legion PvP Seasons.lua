@@ -698,49 +698,157 @@ _.PVP =
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
 					cl(6, {	-- Death Knight
+						i(150002),	-- Demonic Combatant's Dreadcloak (A)
+						i(150026),	-- Demonic Combatant's Dreadplate Chestpiece (A)
+						i(150030),	-- Demonic Combatant's Dreadplate Gauntlets (A)
+						i(150038),	-- Demonic Combatant's Dreadplate Girdle (A)
+						i(150032),	-- Demonic Combatant's Dreadplate Helm (A)
+						i(150034),	-- Demonic Combatant's Dreadplate Legguards (A)
+						i(150028),	-- Demonic Combatant's Dreadplate Sabatons (A)
+						i(150036),	-- Demonic Combatant's Dreadplate Shoulders (A)
+						i(150040),	-- Demonic Combatant's Dreadplate Wristplates (A)
 					}),
 					cl(12, {	-- Demon Hunter
+						i(150004),	-- Demonic Combatant's Demonthread Cloak (A)
+						i(150054),	-- Demonic Combatant's Felskin Belt (A)
+						i(150044),	-- Demonic Combatant's Felskin Boots (A)
+						i(150046),	-- Demonic Combatant's Felskin Gloves (A)
+						i(150048),	-- Demonic Combatant's Felskin Helm (A)
+						i(150050),	-- Demonic Combatant's Felskin Legguards (A)
+						i(150052),	-- Demonic Combatant's Felskin Spaulders (A)
+						i(150042),	-- Demonic Combatant's Felskin Tunic (A)
+						i(150056),	-- Demonic Combatant's Felskin Wristguards (A)
 					}),
 					cl(11, {	-- Druid
+						i(150070),	-- Demonic Combatant's Dragonhide Belt (A)
+						i(150006),	-- Demonic Combatant's Dragonhide Cloak (A)
+						i(150062),	-- Demonic Combatant's Dragonhide Gloves (A)
+						i(150064),	-- Demonic Combatant's Dragonhide Helm (A)
+						i(150066),	-- Demonic Combatant's Dragonhide Legguards (A)
+						i(150060),	-- Demonic Combatant's Dragonhide Moccasins (A)
+						i(150068),	-- Demonic Combatant's Dragonhide Spaulders (A)
+						i(150058),	-- Demonic Combatant's Dragonhide Tunic (A)
+						i(150072),	-- Demonic Combatant's Dragonhide Wristguards (A)
 					}),
 					cl(3, {	-- Hunter
+						i(150088),	-- Demonic Combatant's Chain Armband (A)
+						i(150074),	-- Demonic Combatant's Chain Armor (A)
+						i(150086),	-- Demonic Combatant's Chain Clasp (A)
+						i(150078),	-- Demonic Combatant's Chain Gauntlets (A)
+						i(150080),	-- Demonic Combatant's Chain Helm (A)
+						i(150082),	-- Demonic Combatant's Chain Leggings (A)
+						i(150084),	-- Demonic Combatant's Chain Spaulders (A)
+						i(150076),	-- Demonic Combatant's Chain Treads (A)
+						i(150008),	-- Demonic Combatant's Drape of the Tracker (A)
 					}),
 					cl(8, {	-- Mage
+						i(150100),	-- Demonic Combatant's Silk Amice (A)
+						i(150104),	-- Demonic Combatant's Silk Bracers (A)
+						i(150102),	-- Demonic Combatant's Silk Cord (A)
+						i(150094),	-- Demonic Combatant's Silk Cowl (A)
+						i(150092),	-- Demonic Combatant's Silk Handguards (A)
+						i(150098),	-- Demonic Combatant's Silk Robe (A)
+						i(150090),	-- Demonic Combatant's Silk Treads (A)
+						i(150096),	-- Demonic Combatant's Silk Trousers (A)
+						i(150010),	-- Demonic Combatant's Silken Shawl (A)
 					}),
 					cl(10, {	-- Monk
+						i(150118),	-- Demonic Combatant's Ironskin Belt (A)
+						i(150012),	-- Demonic Combatant's Ironskin Cloak (A)
+						i(150108),	-- Demonic Combatant's Ironskin Gloves (A)
+						i(150110),	-- Demonic Combatant's Ironskin Helm (A)
+						i(150112),	-- Demonic Combatant's Ironskin Legguards (A)
+						i(150106),	-- Demonic Combatant's Ironskin Slippers (A)
+						i(150114),	-- Demonic Combatant's Ironskin Spaulders (A)
+						i(150116),	-- Demonic Combatant's Ironskin Tunic (A)
+						i(150120),	-- Demonic Combatant's Ironskin Wristguards (A)
 					}),
 					cl(2, {	-- Paladin
+						i(150014),	-- Demonic Combatant's Greatcloak of Faith (A)
+						i(150128),	-- Demonic Combatant's Scaled Chestpiece (A)
+						i(150132),	-- Demonic Combatant's Scaled Gauntlets (A)
+						i(150140),	-- Demonic Combatant's Scaled Girdle (A)
+						i(150134),	-- Demonic Combatant's Scaled Helm (A)
+						i(150136),	-- Demonic Combatant's Scaled Legguards (A)
+						i(150130),	-- Demonic Combatant's Scaled Sabatons (A)
+						i(150138),	-- Demonic Combatant's Scaled Shoulders (A)
+						i(150142),	-- Demonic Combatant's Scaled Wristplates (A)
 					}),
 					cl(5, {	-- Priest
+						i(150016),	-- Demonic Combatant's Drape of Piety (A)
+						i(150158),	-- Demonic Combatant's Satin Bracers (A)
+						i(150156),	-- Demonic Combatant's Satin Cord (A)
+						i(150146),	-- Demonic Combatant's Satin Gloves (A)
+						i(150148),	-- Demonic Combatant's Satin Hood (A)
+						i(150150),	-- Demonic Combatant's Satin Leggings (A)
+						i(150154),	-- Demonic Combatant's Satin Mantle (A)
+						i(150152),	-- Demonic Combatant's Satin Robe (A)
+						i(150144),	-- Demonic Combatant's Satin Treads (A)
 					}),
 					cl(4, {	-- Rogue
+						i(150178),	-- Demonic Combatant's Leather Belt (A)
+						i(150170),	-- Demonic Combatant's Leather Gloves (A)
+						i(150172),	-- Demonic Combatant's Leather Helm (A)
+						i(150174),	-- Demonic Combatant's Leather Legguards (A)
+						i(150168),	-- Demonic Combatant's Leather Slippers (A)
+						i(150176),	-- Demonic Combatant's Leather Spaulders (A)
+						i(150166),	-- Demonic Combatant's Leather Tunic (A)
+						i(150180),	-- Demonic Combatant's Leather Wristguards (A)
+						i(150018),	-- Demonic Combatant's Shadowcape (A)
 					}),
 					cl(7, {	-- Shaman
+						i(150196),	-- Demonic Combatant's Ringmail Armband (A)
+						i(150182),	-- Demonic Combatant's Ringmail Armor (A)
+						i(150184),	-- Demonic Combatant's Ringmail Boots (A)
+						i(150194),	-- Demonic Combatant's Ringmail Clasp (A)
+						i(150186),	-- Demonic Combatant's Ringmail Gauntlets (A)
+						i(150188),	-- Demonic Combatant's Ringmail Helm (A)
+						i(150190),	-- Demonic Combatant's Ringmail Leggings (A)
+						i(150192),	-- Demonic Combatant's Ringmail Spaulders (A)
+						i(150020),	-- Demonic Combatant's Totemic Cloak (A)
 					}),
 					cl(9, {	-- Warlock
+						i(150226),	-- Demonic Combatant's Felweave Amice (A)
+						i(150230),	-- Demonic Combatant's Felweave Bracers (A)
+						i(150022),	-- Demonic Combatant's Felweave Cloak (A)
+						i(150228),	-- Demonic Combatant's Felweave Cord (A)
+						i(150220),	-- Demonic Combatant's Felweave Cowl (A)
+						i(150218),	-- Demonic Combatant's Felweave Handguards (A)
+						i(150224),	-- Demonic Combatant's Felweave Raiment (A)
+						i(150216),	-- Demonic Combatant's Felweave Treads (A)
+						i(150222),	-- Demonic Combatant's Felweave Trousers (A)
 					}),
 					cl(1, {	-- Warrior
+						i(150024),	-- Demonic Combatant's Cloak of Battle (A)
+						i(150232),	-- Demonic Combatant's Plate Chestpiece (A)
+						i(150236),	-- Demonic Combatant's Plate Gauntlets (A)
+						i(150244),	-- Demonic Combatant's Plate Girdle (A)
+						i(150238),	-- Demonic Combatant's Plate Helm (A)
+						i(150240),	-- Demonic Combatant's Plate Legguards (A)
+						i(150242),	-- Demonic Combatant's Plate Shoulders (A)
+						i(150234),	-- Demonic Combatant's Plate Warboots (A)
+						i(150246),	-- Demonic Combatant's Plate Wristplates (A)
 					}),
 					n(-384,	{	-- Neck
-						i(150122), -- Demonic Combatant's Necklace (A)
-						i(150124), -- Demonic Combatant's Pendant (A)
-						i(150126), -- Demonic Combatant's Choker (A)
+						i(150122),	-- Demonic Combatant's Necklace (A)
+						i(150124),	-- Demonic Combatant's Pendant (A)
+						i(150126),	-- Demonic Combatant's Choker (A)
 					}),
 					n(-385,	{	-- Finger
-						i(150160), -- Demonic Combatant's Ring (A)
-						i(150162), -- Demonic Combatant's Band (A)
-						i(150164), -- Demonic Combatant's Signet (A)
+						i(150160),	-- Demonic Combatant's Ring (A)
+						i(150162),	-- Demonic Combatant's Band (A)
+						i(150164),	-- Demonic Combatant's Signet (A)
 					}),
 					n(-386,	{	-- Trinket
-						i(150198), -- Demonic Combatant's Badge of Conquest (A)
-						i(150200), -- Demonic Combatant's Accolade of Conquest (A)
-						i(150202), -- Demonic Combatant's Insignia of Conquest (A)
-						i(150204), -- Demonic Combatant's Badge of Dominance (A)
-						i(150206), -- Demonic Combatant's Accolade of Dominance (A)
-						i(150208), -- Demonic Combatant's Insignia of Dominance (A)
-						i(150210), -- Demonic Combatant's Badge of Victory (A)
-						i(150212), -- Demonic Combatant's Accolade of Victory (A)
-						i(150214), -- Demonic Combatant's Insignia of Victory (A)
+						i(150198),	-- Demonic Combatant's Badge of Conquest (A)
+						i(150200),	-- Demonic Combatant's Accolade of Conquest (A)
+						i(150202),	-- Demonic Combatant's Insignia of Conquest (A)
+						i(150204),	-- Demonic Combatant's Badge of Dominance (A)
+						i(150206),	-- Demonic Combatant's Accolade of Dominance (A)
+						i(150208),	-- Demonic Combatant's Insignia of Dominance (A)
+						i(150210),	-- Demonic Combatant's Badge of Victory (A)
+						i(150212),	-- Demonic Combatant's Accolade of Victory (A)
+						i(150214),	-- Demonic Combatant's Insignia of Victory (A)
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
@@ -900,28 +1008,136 @@ _.PVP =
 				}),
 				n(-662, {	-- Elite PvP Gear
 					cl(6, {	-- Death Knight
+						un(14, i(149140)),	-- Demonic Gladiator's Dreadcloak
+						un(14, i(149164)),	-- Demonic Gladiator's Dreadplate Chestpiece
+						un(14, i(149168)),	-- Demonic Gladiator's Dreadplate Gauntlets
+						un(14, i(149176)),	-- Demonic Gladiator's Dreadplate Girdle
+						un(14, i(149170)),	-- Demonic Gladiator's Dreadplate Helm
+						un(14, i(149172)),	-- Demonic Gladiator's Dreadplate Legguards
+						un(14, i(149166)),	-- Demonic Gladiator's Dreadplate Sabatons
+						un(14, i(149174)),	-- Demonic Gladiator's Dreadplate Shoulders
+						un(14, i(149178)),	-- Demonic Gladiator's Dreadplate Wristplates
 					}),
 					cl(12, {	-- Demon Hunter
+						un(14, i(149142)),	-- Demonic Gladiator's Demonthread Cloak
+						un(14, i(149192)),	-- Demonic Gladiator's Felskin Belt
+						un(14, i(149182)),	-- Demonic Gladiator's Felskin Boots
+						un(14, i(149184)),	-- Demonic Gladiator's Felskin Gloves
+						un(14, i(149186)),	-- Demonic Gladiator's Felskin Helm
+						un(14, i(149188)),	-- Demonic Gladiator's Felskin Legguards
+						un(14, i(149190)),	-- Demonic Gladiator's Felskin Spaulders
+						un(14, i(149180)),	-- Demonic Gladiator's Felskin Tunic
+						un(14, i(149194)),	-- Demonic Gladiator's Felskin Wristguards
 					}),
 					cl(11, {	-- Druid
+						un(14, i(149208)),	-- Demonic Gladiator's Dragonhide Belt
+						un(14, i(149144)),	-- Demonic Gladiator's Dragonhide Cloak
+						un(14, i(149200)),	-- Demonic Gladiator's Dragonhide Gloves
+						un(14, i(149202)),	-- Demonic Gladiator's Dragonhide Helm
+						un(14, i(149204)),	-- Demonic Gladiator's Dragonhide Legguards
+						un(14, i(149198)),	-- Demonic Gladiator's Dragonhide Moccasins
+						un(14, i(149206)),	-- Demonic Gladiator's Dragonhide Spaulders
+						un(14, i(149196)),	-- Demonic Gladiator's Dragonhide Vest
+						un(14, i(149210)),	-- Demonic Gladiator's Dragonhide Wristguards
 					}),
 					cl(3, {	-- Hunter
+						un(14, i(149146)),	-- Demonic Gladiator's Drape of the Tracker
+						un(14, i(149226)),	-- Demonic Gladiator's Chain Armband
+						un(14, i(149212)),	-- Demonic Gladiator's Chain Armor
+						un(14, i(149224)),	-- Demonic Gladiator's Chain Clasp
+						un(14, i(149216)),	-- Demonic Gladiator's Chain Gauntlets
+						un(14, i(149218)),	-- Demonic Gladiator's Chain Helm
+						un(14, i(149220)),	-- Demonic Gladiator's Chain Leggings
+						un(14, i(149222)),	-- Demonic Gladiator's Chain Spaulders
+						un(14, i(149214)),	-- Demonic Gladiator's Chain Treads
 					}),
 					cl(8, {	-- Mage
+						un(14, i(149238)),	-- Demonic Gladiator's Silk Amice
+						un(14, i(149242)),	-- Demonic Gladiator's Silk Bracers
+						un(14, i(149240)),	-- Demonic Gladiator's Silk Cord
+						un(14, i(149232)),	-- Demonic Gladiator's Silk Cowl
+						un(14, i(149230)),	-- Demonic Gladiator's Silk Handguards
+						un(14, i(149228)),	-- Demonic Gladiator's Silk Treads
+						un(14, i(149234)),	-- Demonic Gladiator's Silk Trousers
+						un(14, i(149236)),	-- Demonic Gladiator's Silk Tunic
+						un(14, i(149148)),	-- Demonic Gladiator's Silken Shawl
 					}),
 					cl(10, {	-- Monk
+						un(14, i(149256)),	-- Demonic Gladiator's Ironskin Belt
+						un(14, i(149150)),	-- Demonic Gladiator's Ironskin Cloak
+						un(14, i(149246)),	-- Demonic Gladiator's Ironskin Gloves
+						un(14, i(149248)),	-- Demonic Gladiator's Ironskin Helm
+						un(14, i(149250)),	-- Demonic Gladiator's Ironskin Legguards
+						un(14, i(149244)),	-- Demonic Gladiator's Ironskin Slippers
+						un(14, i(149252)),	-- Demonic Gladiator's Ironskin Spaulders
+						un(14, i(149254)),	-- Demonic Gladiator's Ironskin Tunic
+						un(14, i(149258)),	-- Demonic Gladiator's Ironskin Wristguards
 					}),
 					cl(2, {	-- Paladin
+						un(14, i(149152)),	-- Demonic Gladiator's Greatcloak of Faith
+						un(14, i(149266)),	-- Demonic Gladiator's Scaled Breastplate
+						un(14, i(149270)),	-- Demonic Gladiator's Scaled Gauntlets
+						un(14, i(149278)),	-- Demonic Gladiator's Scaled Girdle
+						un(14, i(149272)),	-- Demonic Gladiator's Scaled Helm
+						un(14, i(149274)),	-- Demonic Gladiator's Scaled Legguards
+						un(14, i(149268)),	-- Demonic Gladiator's Scaled Sabatons
+						un(14, i(149276)),	-- Demonic Gladiator's Scaled Shoulders
+						un(14, i(149280)),	-- Demonic Gladiator's Scaled Wristplates
 					}),
 					cl(5, {	-- Priest
+						un(14, i(149154)),	-- Demonic Gladiator's Drape of Piety
+						un(14, i(149296)),	-- Demonic Gladiator's Satin Bracers
+						un(14, i(149294)),	-- Demonic Gladiator's Satin Cord
+						un(14, i(149284)),	-- Demonic Gladiator's Satin Gloves
+						un(14, i(149286)),	-- Demonic Gladiator's Satin Hood
+						un(14, i(149288)),	-- Demonic Gladiator's Satin Leggings
+						un(14, i(149292)),	-- Demonic Gladiator's Satin Mantle
+						un(14, i(149290)),	-- Demonic Gladiator's Satin Robe
+						un(14, i(149282)),	-- Demonic Gladiator's Satin Treads
 					}),
 					cl(4, {	-- Rogue
+						un(14, i(149316)),	-- Demonic Gladiator's Leather Belt
+						un(14, i(149308)),	-- Demonic Gladiator's Leather Gloves
+						un(14, i(149310)),	-- Demonic Gladiator's Leather Helm
+						un(14, i(149312)),	-- Demonic Gladiator's Leather Legguards
+						un(14, i(149306)),	-- Demonic Gladiator's Leather Slippers
+						un(14, i(149314)),	-- Demonic Gladiator's Leather Spaulders
+						un(14, i(149304)),	-- Demonic Gladiator's Leather Tunic
+						un(14, i(149318)),	-- Demonic Gladiator's Leather Wristguards
+						un(14, i(149156)),	-- Demonic Gladiator's Shadowcape
 					}),
 					cl(7, {	-- Shaman
+						un(14, i(149334)),	-- Demonic Gladiator's Ringmail Armband
+						un(14, i(149320)),	-- Demonic Gladiator's Ringmail Armor
+						un(14, i(149322)),	-- Demonic Gladiator's Ringmail Boots
+						un(14, i(149332)),	-- Demonic Gladiator's Ringmail Clasp
+						un(14, i(149324)),	-- Demonic Gladiator's Ringmail Gauntlets
+						un(14, i(149326)),	-- Demonic Gladiator's Ringmail Helm
+						un(14, i(149328)),	-- Demonic Gladiator's Ringmail Leggings
+						un(14, i(149330)),	-- Demonic Gladiator's Ringmail Spaulders
+						un(14, i(149158)),	-- Demonic Gladiator's Totemic Cloak
 					}),
 					cl(9, {	-- Warlock
+						un(14, i(149364)),	-- Demonic Gladiator's Felweave Amice
+						un(14, i(149368)),	-- Demonic Gladiator's Felweave Bracers
+						un(14, i(149160)),	-- Demonic Gladiator's Felweave Cloak
+						un(14, i(149366)),	-- Demonic Gladiator's Felweave Cord
+						un(14, i(149358)),	-- Demonic Gladiator's Felweave Cowl
+						un(14, i(149356)),	-- Demonic Gladiator's Felweave Handguards
+						un(14, i(149362)),	-- Demonic Gladiator's Felweave Raiment
+						un(14, i(149354)),	-- Demonic Gladiator's Felweave Treads
+						un(14, i(149360)),	-- Demonic Gladiator's Felweave Trousers
 					}),
 					cl(1, {	-- Warrior
+						un(14, i(149162)),	-- Demonic Gladiator's Cloak of Battle
+						un(14, i(149370)),	-- Demonic Gladiator's Plate Chestpiece
+						un(14, i(149374)),	-- Demonic Gladiator's Plate Gauntlets
+						un(14, i(149382)),	-- Demonic Gladiator's Plate Girdle
+						un(14, i(149376)),	-- Demonic Gladiator's Plate Helm
+						un(14, i(149378)),	-- Demonic Gladiator's Plate Legguards
+						un(14, i(149380)),	-- Demonic Gladiator's Plate Shoulders
+						un(14, i(149372)),	-- Demonic Gladiator's Plate Warboots
+						un(14, i(149384)),	-- Demonic Gladiator's Plate Wristplates
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(149260)), -- Demonic Gladiator's Necklace (A)
@@ -949,49 +1165,156 @@ _.PVP =
 			n(-9913, {	-- Horde
 				n(-660, {	-- Aspirant / Combatant PvP Gear
 					cl(6, {	-- Death Knight
+						i(150003),	-- Demonic Combatant's Dreadcloak (H)
+						i(150027),	-- Demonic Combatant's Dreadplate Chestpiece (H)
+						i(150031),	-- Demonic Combatant's Dreadplate Gauntlets (H)
+						i(150039),	-- Demonic Combatant's Dreadplate Girdle (H)
+						i(150033),	-- Demonic Combatant's Dreadplate Helm (H)
+						i(150035),	-- Demonic Combatant's Dreadplate Legguards (H)
+						i(150029),	-- Demonic Combatant's Dreadplate Sabatons (H)
+						i(150037),	-- Demonic Combatant's Dreadplate Shoulders (H)
+						i(150041),	-- Demonic Combatant's Dreadplate Wristplates (H)
 					}),
 					cl(12, {	-- Demon Hunter
+						i(150005),	-- Demonic Combatant's Demonthread Cloak (H)
+						i(150055),	-- Demonic Combatant's Felskin Belt (H)
+						i(150045),	-- Demonic Combatant's Felskin Boots (H)
+						i(150047),	-- Demonic Combatant's Felskin Gloves (H)
+						i(150049),	-- Demonic Combatant's Felskin Helm (H)
+						i(150051),	-- Demonic Combatant's Felskin Legguards (H)
+						i(150053),	-- Demonic Combatant's Felskin Spaulders (H)
+						i(150043),	-- Demonic Combatant's Felskin Tunic (H)
+						i(150057),	-- Demonic Combatant's Felskin Wristguards (H)
 					}),
 					cl(11, {	-- Druid
+						i(150071),	-- Demonic Combatant's Dragonhide Belt (H)
+						i(150007),	-- Demonic Combatant's Dragonhide Cloak (H)
+						i(150063),	-- Demonic Combatant's Dragonhide Gloves (H)
+						i(150065),	-- Demonic Combatant's Dragonhide Helm (H)
+						i(150067),	-- Demonic Combatant's Dragonhide Legguards (H)
+						i(150061),	-- Demonic Combatant's Dragonhide Moccasins (H)
+						i(150069),	-- Demonic Combatant's Dragonhide Spaulders (H)
+						i(150059),	-- Demonic Combatant's Dragonhide Tunic (H)
+						i(150073),	-- Demonic Combatant's Dragonhide Wristguards (H)	
 					}),
 					cl(3, {	-- Hunter
+						i(150089),	-- Demonic Combatant's Chain Armband (H)
+						i(150075),	-- Demonic Combatant's Chain Armor (H)
+						i(150087),	-- Demonic Combatant's Chain Clasp (H)
+						i(150079),	-- Demonic Combatant's Chain Gauntlets (H)
+						i(150081),	-- Demonic Combatant's Chain Helm (H)
+						i(150083),	-- Demonic Combatant's Chain Leggings (H)
+						i(150085),	-- Demonic Combatant's Chain Spaulders (H)
+						i(150077),	-- Demonic Combatant's Chain Treads (H)
+						i(150009),	-- Demonic Combatant's Drape of the Tracker (H)
 					}),
 					cl(8, {	-- Mage
+						i(150101),	-- Demonic Combatant's Silk Amice (H)
+						i(150103),	-- Demonic Combatant's Silk Cord (H)
+						i(150095),	-- Demonic Combatant's Silk Cowl (H)
+						i(150093),	-- Demonic Combatant's Silk Handguards (H)
+						i(150099),	-- Demonic Combatant's Silk Robe (H)
+						i(150091),	-- Demonic Combatant's Silk Treads (H)
+						i(150097),	-- Demonic Combatant's Silk Trousers (H)
+						i(150011),	-- Demonic Combatant's Silken Shawl (H)
 					}),
 					cl(10, {	-- Monk
+						i(150119),	-- Demonic Combatant's Ironskin Belt (H)
+						i(150013),	-- Demonic Combatant's Ironskin Cloak (H)
+						i(150109),	-- Demonic Combatant's Ironskin Gloves (H)
+						i(150111),	-- Demonic Combatant's Ironskin Helm (H)
+						i(150113),	-- Demonic Combatant's Ironskin Legguards (H)
+						i(150107),	-- Demonic Combatant's Ironskin Slippers (H)
+						i(150115),	-- Demonic Combatant's Ironskin Spaulders (H)
+						i(150117),	-- Demonic Combatant's Ironskin Tunic (H)
+						i(150121),	-- Demonic Combatant's Ironskin Wristguards (H)
 					}),
 					cl(2, {	-- Paladin
+						i(150015),	-- Demonic Combatant's Greatcloak of Faith (H)
+						i(150129),	-- Demonic Combatant's Scaled Chestpiece (H)
+						i(150133),	-- Demonic Combatant's Scaled Gauntlets (H)
+						i(150141),	-- Demonic Combatant's Scaled Girdle (H)
+						i(150135),	-- Demonic Combatant's Scaled Helm (H)
+						i(150137),	-- Demonic Combatant's Scaled Legguards (H)
+						i(150131),	-- Demonic Combatant's Scaled Sabatons (H)
+						i(150139),	-- Demonic Combatant's Scaled Shoulders (H)
+						i(150143),	-- Demonic Combatant's Scaled Wristplates (H)
 					}),
 					cl(5, {	-- Priest
+						i(150017),	-- Demonic Combatant's Drape of Piety (H)
+						i(150159),	-- Demonic Combatant's Satin Bracers (H)
+						i(150157),	-- Demonic Combatant's Satin Cord (H)
+						i(150147),	-- Demonic Combatant's Satin Gloves (H)
+						i(150149),	-- Demonic Combatant's Satin Hood (H)
+						i(150151),	-- Demonic Combatant's Satin Leggings (H)
+						i(150155),	-- Demonic Combatant's Satin Mantle (H)
+						i(150153),	-- Demonic Combatant's Satin Robe (H)
+						i(150145),	-- Demonic Combatant's Satin Treads (H)
 					}),
 					cl(4, {	-- Rogue
+						i(150179),	-- Demonic Combatant's Leather Belt (H)
+						i(150171),	-- Demonic Combatant's Leather Gloves (H)
+						i(150173),	-- Demonic Combatant's Leather Helm (H)
+						i(150175),	-- Demonic Combatant's Leather Legguards (H)
+						i(150169),	-- Demonic Combatant's Leather Slippers (H)
+						i(150177),	-- Demonic Combatant's Leather Spaulders (H)
+						i(150167),	-- Demonic Combatant's Leather Tunic (H)
+						i(150181),	-- Demonic Combatant's Leather Wristguards (H)
+						i(150019),	-- Demonic Combatant's Shadowcape (H)
 					}),
 					cl(7, {	-- Shaman
+						i(150197),	-- Demonic Combatant's Ringmail Armband (H)
+						i(150183),	-- Demonic Combatant's Ringmail Armor (H)
+						i(150185),	-- Demonic Combatant's Ringmail Boots (H)
+						i(150195),	-- Demonic Combatant's Ringmail Clasp (H)
+						i(150187),	-- Demonic Combatant's Ringmail Gauntlets (H)
+						i(150189),	-- Demonic Combatant's Ringmail Helm (H)
+						i(150191),	-- Demonic Combatant's Ringmail Leggings (H)
+						i(150193),	-- Demonic Combatant's Ringmail Spaulders (H)
+						i(150021),	-- Demonic Combatant's Totemic Cloak (H)
 					}),
 					cl(9, {	-- Warlock
+						i(150227),	-- Demonic Combatant's Felweave Amice (H)
+						i(150231),	-- Demonic Combatant's Felweave Bracers (H)
+						i(150023),	-- Demonic Combatant's Felweave Cloak (H)
+						i(150229),	-- Demonic Combatant's Felweave Cord (H)
+						i(150221),	-- Demonic Combatant's Felweave Cowl (H)
+						i(150219),	-- Demonic Combatant's Felweave Handguards (H)
+						i(150225),	-- Demonic Combatant's Felweave Raiment (H)
+						i(150217),	-- Demonic Combatant's Felweave Treads (H)
+						i(150223),	-- Demonic Combatant's Felweave Trousers (H)
 					}),
 					cl(1, {	-- Warrior
+						i(150025),	-- Demonic Combatant's Cloak of Battle (H)
+						i(150233),	-- Demonic Combatant's Plate Chestpiece (H)
+						i(150237),	-- Demonic Combatant's Plate Gauntlets (H)
+						i(150245),	-- Demonic Combatant's Plate Girdle (H)
+						i(150239),	-- Demonic Combatant's Plate Helm (H)
+						i(150241),	-- Demonic Combatant's Plate Legguards (H)
+						i(150243),	-- Demonic Combatant's Plate Shoulders (H)
+						i(150235),	-- Demonic Combatant's Plate Warboots (H)
+						i(150247),	-- Demonic Combatant's Plate Wristplates (H)
 					}),
 					n(-384,	{	-- Neck
-						i(150123), -- Demonic Combatant's Necklace (H)
-						i(150125), -- Demonic Combatant's Pendant (H)
-						i(150127), -- Demonic Combatant's Choker (H)
+						i(150123),	-- Demonic Combatant's Necklace (H)
+						i(150125),	-- Demonic Combatant's Pendant (H)
+						i(150127),	-- Demonic Combatant's Choker (H)
 					}),
 					n(-385,	{	-- Finger
-						i(150161), -- Demonic Combatant's Ring (H)
-						i(150163), -- Demonic Combatant's Band (H)
-						i(150165), -- Demonic Combatant's Signet (H)
+						i(150161),	-- Demonic Combatant's Ring (H)
+						i(150163),	-- Demonic Combatant's Band (H)
+						i(150165),	-- Demonic Combatant's Signet (H)
 					}),
 					n(-386,	{	-- Trinket
-						i(150199), -- Demonic Combatant's Badge of Conquest (H)
-						i(150201), -- Demonic Combatant's Accolade of Conquest (H)
-						i(150203), -- Demonic Combatant's Insignia of Conquest (H)
-						i(150205), -- Demonic Combatant's Badge of Dominance (H)
-						i(150207), -- Demonic Combatant's Accolade of Dominance (H)
-						i(150209), -- Demonic Combatant's Insignia of Dominance (H)
-						i(150211), -- Demonic Combatant's Badge of Victory (H)
-						i(150213), -- Demonic Combatant's Accolade of Victory (H)
-						i(150215), -- Demonic Combatant's Insignia of Victory (H)
+						i(150199),	-- Demonic Combatant's Badge of Conquest (H)
+						i(150201),	-- Demonic Combatant's Accolade of Conquest (H)
+						i(150203),	-- Demonic Combatant's Insignia of Conquest (H)
+						i(150205),	-- Demonic Combatant's Badge of Dominance (H)
+						i(150207),	-- Demonic Combatant's Accolade of Dominance (H)
+						i(150209),	-- Demonic Combatant's Insignia of Dominance (H)
+						i(150211),	-- Demonic Combatant's Badge of Victory (H)
+						i(150213),	-- Demonic Combatant's Accolade of Victory (H)
+						i(150215),	-- Demonic Combatant's Insignia of Victory (H)
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
@@ -1151,28 +1474,136 @@ _.PVP =
 				}),
 				n(-662, {	-- Elite PvP Gear
 					cl(6, {	-- Death Knight
+						un(14, i(149141)),	-- Demonic Gladiator's Dreadcloak
+						un(14, i(149165)),	-- Demonic Gladiator's Dreadplate Chestpiece
+						un(14, i(149169)),	-- Demonic Gladiator's Dreadplate Gauntlets
+						un(14, i(149177)),	-- Demonic Gladiator's Dreadplate Girdle
+						un(14, i(149171)),	-- Demonic Gladiator's Dreadplate Helm
+						un(14, i(149173)),	-- Demonic Gladiator's Dreadplate Legguards
+						un(14, i(149167)),	-- Demonic Gladiator's Dreadplate Sabatons
+						un(14, i(149175)),	-- Demonic Gladiator's Dreadplate Shoulders
+						un(14, i(149179)),	-- Demonic Gladiator's Dreadplate Wristplates
 					}),
 					cl(12, {	-- Demon Hunter
+						un(14, i(149143)),	-- Demonic Gladiator's Demonthread Cloak
+						un(14, i(149193)),	-- Demonic Gladiator's Felskin Belt
+						un(14, i(149183)),	-- Demonic Gladiator's Felskin Boots
+						un(14, i(149185)),	-- Demonic Gladiator's Felskin Gloves
+						un(14, i(149187)),	-- Demonic Gladiator's Felskin Helm
+						un(14, i(149189)),	-- Demonic Gladiator's Felskin Legguards
+						un(14, i(149191)),	-- Demonic Gladiator's Felskin Spaulders
+						un(14, i(149181)),	-- Demonic Gladiator's Felskin Tunic
+						un(14, i(149195)),	-- Demonic Gladiator's Felskin Wristguards
 					}),
 					cl(11, {	-- Druid
+						un(14, i(149209)),	-- Demonic Gladiator's Dragonhide Belt
+						un(14, i(149145)),	-- Demonic Gladiator's Dragonhide Cloak
+						un(14, i(149201)),	-- Demonic Gladiator's Dragonhide Gloves
+						un(14, i(149203)),	-- Demonic Gladiator's Dragonhide Helm
+						un(14, i(149205)),	-- Demonic Gladiator's Dragonhide Legguards
+						un(14, i(149199)),	-- Demonic Gladiator's Dragonhide Moccasins
+						un(14, i(149207)),	-- Demonic Gladiator's Dragonhide Spaulders
+						un(14, i(149197)),	-- Demonic Gladiator's Dragonhide Vest
+						un(14, i(149211)),	-- Demonic Gladiator's Dragonhide Wristguards
 					}),
 					cl(3, {	-- Hunter
+						un(14, i(149147)),	-- Demonic Gladiator's Drape of the Tracker
+						un(14, i(149227)),	-- Demonic Gladiator's Chain Armband
+						un(14, i(149213)),	-- Demonic Gladiator's Chain Armor
+						un(14, i(149225)),	-- Demonic Gladiator's Chain Clasp
+						un(14, i(149217)),	-- Demonic Gladiator's Chain Gauntlets
+						un(14, i(149219)),	-- Demonic Gladiator's Chain Helm
+						un(14, i(149221)),	-- Demonic Gladiator's Chain Leggings
+						un(14, i(149223)),	-- Demonic Gladiator's Chain Spaulders
+						un(14, i(149215)),	-- Demonic Gladiator's Chain Treads
 					}),
 					cl(8, {	-- Mage
+						un(14, i(149239)),	-- Demonic Gladiator's Silk Amice
+						un(14, i(149243)),	-- Demonic Gladiator's Silk Bracers
+						un(14, i(149241)),	-- Demonic Gladiator's Silk Cord
+						un(14, i(149233)),	-- Demonic Gladiator's Silk Cowl
+						un(14, i(149231)),	-- Demonic Gladiator's Silk Handguards
+						un(14, i(149229)),	-- Demonic Gladiator's Silk Treads
+						un(14, i(149235)),	-- Demonic Gladiator's Silk Trousers
+						un(14, i(149237)),	-- Demonic Gladiator's Silk Tunic
+						un(14, i(149149)),	-- Demonic Gladiator's Silken Shawl
 					}),
 					cl(10, {	-- Monk
+						un(14, i(149257)),	-- Demonic Gladiator's Ironskin Belt
+						un(14, i(149151)),	-- Demonic Gladiator's Ironskin Cloak
+						un(14, i(149247)),	-- Demonic Gladiator's Ironskin Gloves
+						un(14, i(149249)),	-- Demonic Gladiator's Ironskin Helm
+						un(14, i(149251)),	-- Demonic Gladiator's Ironskin Legguards
+						un(14, i(149245)),	-- Demonic Gladiator's Ironskin Slippers
+						un(14, i(149253)),	-- Demonic Gladiator's Ironskin Spaulders
+						un(14, i(149255)),	-- Demonic Gladiator's Ironskin Tunic
+						un(14, i(149259)),	-- Demonic Gladiator's Ironskin Wristguards
 					}),
 					cl(2, {	-- Paladin
+						un(14, i(149153)),	-- Demonic Gladiator's Greatcloak of Faith
+						un(14, i(149267)),	-- Demonic Gladiator's Scaled Breastplate
+						un(14, i(149271)),	-- Demonic Gladiator's Scaled Gauntlets
+						un(14, i(149279)),	-- Demonic Gladiator's Scaled Girdle
+						un(14, i(149273)),	-- Demonic Gladiator's Scaled Helm
+						un(14, i(149275)),	-- Demonic Gladiator's Scaled Legguards
+						un(14, i(149269)),	-- Demonic Gladiator's Scaled Sabatons
+						un(14, i(149277)),	-- Demonic Gladiator's Scaled Shoulders
+						un(14, i(149281)),	-- Demonic Gladiator's Scaled Wristplates
 					}),
 					cl(5, {	-- Priest
+						un(14, i(149155)),	-- Demonic Gladiator's Drape of Piety
+						un(14, i(149297)),	-- Demonic Gladiator's Satin Bracers
+						un(14, i(149295)),	-- Demonic Gladiator's Satin Cord
+						un(14, i(149285)),	-- Demonic Gladiator's Satin Gloves
+						un(14, i(149287)),	-- Demonic Gladiator's Satin Hood
+						un(14, i(149289)),	-- Demonic Gladiator's Satin Leggings
+						un(14, i(149293)),	-- Demonic Gladiator's Satin Mantle
+						un(14, i(149291)),	-- Demonic Gladiator's Satin Robe
+						un(14, i(149283)),	-- Demonic Gladiator's Satin Treads
 					}),
 					cl(4, {	-- Rogue
+						un(14, i(149317)),	-- Demonic Gladiator's Leather Belt
+						un(14, i(149309)),	-- Demonic Gladiator's Leather Gloves
+						un(14, i(149311)),	-- Demonic Gladiator's Leather Helm
+						un(14, i(149313)),	-- Demonic Gladiator's Leather Legguards
+						un(14, i(149307)),	-- Demonic Gladiator's Leather Slippers
+						un(14, i(149315)),	-- Demonic Gladiator's Leather Spaulders
+						un(14, i(149305)),	-- Demonic Gladiator's Leather Tunic
+						un(14, i(149319)),	-- Demonic Gladiator's Leather Wristguards
+						un(14, i(149157)),	-- Demonic Gladiator's Shadowcape
 					}),
 					cl(7, {	-- Shaman
+						un(14, i(149335)),	-- Demonic Gladiator's Ringmail Armband
+						un(14, i(149321)),	-- Demonic Gladiator's Ringmail Armor
+						un(14, i(149323)),	-- Demonic Gladiator's Ringmail Boots
+						un(14, i(149333)),	-- Demonic Gladiator's Ringmail Clasp
+						un(14, i(149325)),	-- Demonic Gladiator's Ringmail Gauntlets
+						un(14, i(149327)),	-- Demonic Gladiator's Ringmail Helm
+						un(14, i(149329)),	-- Demonic Gladiator's Ringmail Leggings
+						un(14, i(149331)),	-- Demonic Gladiator's Ringmail Spaulders
+						un(14, i(149159)),	-- Demonic Gladiator's Totemic Cloak
 					}),
 					cl(9, {	-- Warlock
+						un(14, i(149365)),	-- Demonic Gladiator's Felweave Amice
+						un(14, i(149369)),	-- Demonic Gladiator's Felweave Bracers
+						un(14, i(149161)),	-- Demonic Gladiator's Felweave Cloak
+						un(14, i(149367)),	-- Demonic Gladiator's Felweave Cord
+						un(14, i(149359)),	-- Demonic Gladiator's Felweave Cowl
+						un(14, i(149357)),	-- Demonic Gladiator's Felweave Handguards
+						un(14, i(149363)),	-- Demonic Gladiator's Felweave Raiment
+						un(14, i(149355)),	-- Demonic Gladiator's Felweave Treads
+						un(14, i(149361)),	-- Demonic Gladiator's Felweave Trousers
 					}),
 					cl(1, {	-- Warrior
+						un(14, i(149163)),	-- Demonic Gladiator's Cloak of Battle
+						un(14, i(149371)),	-- Demonic Gladiator's Plate Chestpiece
+						un(14, i(149375)),	-- Demonic Gladiator's Plate Gauntlets
+						un(14, i(149383)),	-- Demonic Gladiator's Plate Girdle
+						un(14, i(149377)),	-- Demonic Gladiator's Plate Helm
+						un(14, i(149379)),	-- Demonic Gladiator's Plate Legguards
+						un(14, i(149381)),	-- Demonic Gladiator's Plate Shoulders
+						un(14, i(149373)),	-- Demonic Gladiator's Plate Warboots
+						un(14, i(149385)),	-- Demonic Gladiator's Plate Wristplates
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(149261)), -- Demonic Gladiator's Necklace (H)
