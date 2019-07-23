@@ -512,6 +512,12 @@ _.Zones =
 					["coord"] = { 68.2, 41.8, 862 },
 					["isDaily"] = true,
 				}),
+				q(55244, {	-- Away From the Herd
+					["races"] = HORDE_ONLY,
+					["qg"] = 152258,	-- Child of Torcali
+					["coord"] = { 68.2, 41.8, 862 },
+					["isDaily"] = true,
+				}),
 				q(51101, {	-- The Wounded King
 					["races"] = HORDE_ONLY,
 					["qg"] = 141555	-- Baine Bloodhoof

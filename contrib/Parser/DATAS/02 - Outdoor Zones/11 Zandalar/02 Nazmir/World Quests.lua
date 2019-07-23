@@ -7,6 +7,11 @@ _.Zones =
 		m(863, {	-- Nazmir
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
+					q(55664, {	-- A Blow to Morale
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51131, {	-- Absolutely Barbaric
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

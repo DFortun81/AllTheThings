@@ -1034,6 +1034,12 @@ _.Zones =
 					i(168847),	-- Pearl of Manifest Ambitions (Rank 2)
 				},
 			}),
+			q(56806, {	-- Friends Through Eternity
+				["qg"] = 151309,	-- Kelfin Scout(but which one?)
+				--["coord"] = { 76.4, 29.8, 1355 },
+				["races"] = HORDE_ONLY,
+				--["sourceQuest"] = 55485,	-- Terrors in the Deep
+			}),
 			q(55871, {	-- Gather Friends -- also triggered 56544, 56682
 				["qg"] = 151311,	-- Narm
 				["coord"] = { 26.6, 42.3, 1355 },
@@ -1338,6 +1344,14 @@ _.Zones =
 				["sourceQuest"] = 56156,	-- A Tempered Blade  (maybe add 57041 for selecting Farseer Ori for the day?)
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
+			q(55874, {	-- Plug the Geysers
+				["qg"] = 153524,	-- Scout Kleda
+				["coord"] = { 60.6, 52.8, 1355 },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			}),
 			q(55875, {	-- Plug the Geysers -- also triggered 56700
 				["qg"] = 153834,	-- Scout Tambrine
 				["coord"] = { 33.5, 47.9, 1355 },
@@ -1388,6 +1402,10 @@ _.Zones =
 				["coord"] = { 74.2, 40.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 153617,	-- Shandris Feathermoon
+			}),
+			q(56050, {	-- PvP Event: Battle for Nazjatar
+				["isWeekly"] = true,
+				["description"] = "500 rep with your Nazjatar faction",
 			}),
 			q(56807, {	-- Real Friends Help Hide Bodies — NEEDS CONFIRMATION.  i got credit for this when i turned in the Rank 13 quest for Farseer Ori on Alliance
 				["sourceQuests"] = { 55500 },	-- Save a Friend
@@ -2274,6 +2292,14 @@ _.Zones =
 				["isDaily"] = true,
 				["coord"] = { 39.1, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56222, {	-- WANTED: Lady Naz'jess
+				--["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				--["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+				--["objectID"] = 326142,	-- Bounty Board
+				["isDaily"] = true,
+				["coord"] = { 48.0, 61.5, 1355 },
+				["races"] = HORDE_ONLY,
 			}),
 			q(55771, {	-- WANTED: Lord Ha'kass
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade

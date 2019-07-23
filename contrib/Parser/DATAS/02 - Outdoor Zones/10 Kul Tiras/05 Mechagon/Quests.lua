@@ -805,6 +805,18 @@ _.Zones =
 						}),
 					},
 				}),
+				q(56747, {	-- Rustbolt Requisitions: Akunda's Bite (A)
+					["isDaily"] = true,
+					["coord"] = { 77.7, 40.3, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 149813,	-- Gila Crosswires
+				}),
+				q(56749, {	-- Rustbolt Requisitions: Akunda's Bite (H)
+					["qg"] = 150563,	-- Skaggit
+					["coord"] = { 73.8, 26.0, 1462 },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
 				q(56751, {	-- Rustbolt Requisitions: Calcified Bone (A)
 					["isDaily"] = true,
 					["coord"] = { 77.7, 40.3, 1462 },
