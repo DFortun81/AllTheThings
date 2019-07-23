@@ -64,8 +64,26 @@ _.PVP =
 			title(369),	-- %s the Tactician
 		}),
 		ach(12916, { 	-- Honor Level 400
-			h(i(163974)),	-- Bucketshell
-			a(i(163975)),	-- Sir Snips
+			["g"] = {
+				i(163974, {	-- Bucketshell
+					["itemID"] = 163974, 	-- Bucketshell
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						119272,	-- Sarah the Savage (Horde / Dalaran)
+						145837,	-- Violet Shadowmend (Horde / Zuldazar)
+						146626,	-- Legionaire Voladis (Horde / OG)
+					},
+				}),
+				i(163975, {	-- Sir Snips
+					["itemID"] = 163975, 	-- Sir Snips
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						119484,	-- Captain Roberts (Ally / Dalaran)
+						146633,	-- Knight-Captain Jessica (Ally / SW)
+						145838,	-- Marshal Frazer (Ally / Boralus)
+					},
+				}),
+			},
 		}),
 		ach(12917, {	-- Honor Level 500
 			i(164250),	-- Prestigious Bloodforged Courser

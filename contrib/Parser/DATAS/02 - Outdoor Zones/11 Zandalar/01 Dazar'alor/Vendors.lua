@@ -542,7 +542,7 @@ _.Zones =
 					["coord"] = { 51.64, 57.81, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(163974),	-- Bucketshell
+					--	i(163974),	-- Bucketshell  -- Listed under PvP w/ CRS
 						i(142380),	-- Dutiful Squire
 						i(139776),	-- Horde Fanatic
 					},

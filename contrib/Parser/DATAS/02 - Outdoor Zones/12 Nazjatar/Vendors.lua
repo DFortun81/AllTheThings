@@ -504,7 +504,7 @@ _.Zones =
 				["g"] = {
 					i(139775),	-- Alliance Enthusiast
 					i(142379),	-- Dutiful Squire
-					i(163975),	-- Sir Snips
+				--	i(163975),	-- Sir Snips -- Listed under PvP w/ CRS
 				},
 			}),
 			n(152084, {	-- Mrrl
@@ -575,7 +575,7 @@ _.Zones =
 				["g"] = {
 					i(139776),	-- Horde Fanatic
 					i(142380),	-- Dutiful Gruntling
-					i(163974),	-- Bucketshell
+				-- 	i(163974),	-- Bucketshell -- Listed under PvP w/ CRS
 				},
 			}),
 		}),
