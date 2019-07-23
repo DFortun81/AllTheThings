@@ -238,7 +238,7 @@ _.Zones =
 					i(170176, {	-- Fathom Ray Wing
 						["allianceQuestID"] = 57247,	-- Fathom Ray Wing
 						["hordeQuestID"] = 56972,	-- Fathom Ray Wing
-						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation.",
+						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
 						["repeatable"] = true,
 						["g"] = {
 							crit(46, {	-- Fathom Ray Wing
@@ -732,7 +732,7 @@ _.Zones =
 					i(170176, {	-- Fathom Ray Wing
 						["allianceQuestID"] = 57247,	-- Fathom Ray Wing
 						["hordeQuestID"] = 56972,	-- Fathom Ray Wing
-						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation.",
+						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
 						["repeatable"] = true,
 						["g"] = {
 							crit(46, {	-- Fathom Ray Wing

@@ -1151,12 +1151,12 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save A Friend
 			}),
 			q(56216, {	--	Last Heirloom
-				["qg"] = 154304,	-- Farseer Ori			-- npcID need to be confirmed
+				["qg"] = 154304,	-- Farseer Ori
 				["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches rank 20.",
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
-					i(170155),	-- Carved Ankoan Charm
+					i(170155),	-- Carved Ankoan Charm (TOY!)
 				},
 			}),
 			q(56095, {	-- Legacy of Nar'anan

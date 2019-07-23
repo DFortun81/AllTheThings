@@ -9,6 +9,7 @@ _.ExpansionFeatures =
 		n(-236, {	-- Alliance War Campaign
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
+		--	!! NEED LEATHER/PLATE REWARDS FOR "MISCHIEF MANAGED" QUEST.
 				ach(12510, {	-- Ready for War
 					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
@@ -996,15 +997,19 @@ _.ExpansionFeatures =
 						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 						["sourceQuests"] = { 54171 },	-- The Abyssal Scepter
 					}),
-					qa(54510, {	-- Mischief Managed
-						["qg"] = 146982,	-- Lady Jaina Proudmoore
-						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+					q(54510, {	-- Mischief Managed
 						["sourceQuests"] = { 54169 },	-- The Treasury Heist
+						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 146982,	-- Lady Jaina Proudmoore
 						["g"] = {
+							i(163339),	-- 7th Legionnaire's Hood
+							i(163337),	-- 7th Legionnaire's Amice
+							i(163248),	-- 7th Legionnaire's Robes
 							i(163394),	-- 7th Legionnaire's Helm
 							i(163389),	-- 7th Legionnaire's Monnion
 							i(163398),	-- 7th Legionnaire's Chainmail
-							-- Need to do this criteria on cloth, leather, and plate to get other rewards
+							-- Need to do this criteria on leather and plate to get other rewards
 						},
 					}),
 				--	BETWEEN MISCHIEF MANAGED AND HE WHO WALKS IN THE LIGHT
