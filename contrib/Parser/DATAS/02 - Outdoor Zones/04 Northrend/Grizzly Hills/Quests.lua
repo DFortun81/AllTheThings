@@ -804,11 +804,6 @@ _.Zones =
 						i(38757),
 					},
 				}),
-				
-				
-				
-				
-				
 			
 				--[[
 				h(ach(1357, {	-- Fo' Grizzle My Shizzle [Horde]
@@ -827,54 +822,149 @@ _.Zones =
 					crit(7, {	--Eons of Misery
 					}),
 				})),
+				q(12198, {	-- ... Or Maybe We Don't
+					["races"] = HORDE_ONLY,
+				}),
+				q(12257, {	-- A Show of Strength
+					["races"] = HORDE_ONLY,
+				}),
+				q(12434, {	-- Always Seeking Solvent -- i(37664),	-- Element 115
+					["races"] = HORDE_ONLY,
+				}),
+				q(12074, {	-- An Expedient Ally
+					["races"] = HORDE_ONLY,
+				}),
+				q(12165, {	-- An Intriguing Plan
+					["races"] = HORDE_ONLY,
+				}),
+				q(12170, {	-- Blackriver Brawl
+					["races"] = HORDE_ONLY,
+				}),
+				q(12315, {	-- Crush Captain Brightwater!
+					["races"] = HORDE_ONLY,
+				}),
+				q(12202, {	-- Cultivating an Image
+					["races"] = HORDE_ONLY,
+				}),
+				q(12054, {	-- Deciphering the Journal
+					["races"] = HORDE_ONLY,
+				}),
+				q(12178, {	-- Delivery to Krenna
+					["races"] = HORDE_ONLY,
+				}),
+				q(12241, {	-- Destroy the Sapling
+					["races"] = HORDE_ONLY,
+				}),
+				q(12196, {	-- From the Ground Up
+					["races"] = HORDE_ONLY,
+				}),
+				q(12208, {	-- Good Troll Hunting
+					["races"] = HORDE_ONLY,
+				}),
+				q(12424, {	-- Gorgonna
+					["races"] = HORDE_ONLY,
+				}),
+				q(12204, {	-- In the Name of Loken
+					["races"] = HORDE_ONLY,
+				}),
+				q(12177, {	-- Jun'ik's Coverup
+					["races"] = HORDE_ONLY,
+				}),
+				q(12284, {	-- Keep 'Em on Their Heels
+					["races"] = HORDE_ONLY,
+				}),
+				q(12317, {	-- Keep Them at Bay
+					["races"] = HORDE_ONLY,
+				}),
+				q(12203, {	-- Loken's Orders
+					["races"] = HORDE_ONLY,
+				}),
+				q(12280, {	-- Making Repairs
+					["races"] = HORDE_ONLY,
+				}),
+				q(12423, {	-- Mikhail's Journal
+					["races"] = HORDE_ONLY,
+				}),
+				q(12288, {	-- Overwhelmed!
+					["races"] = HORDE_ONLY,
+				}),
+				q(12073, {	-- Pounding the Iron
+					["races"] = HORDE_ONLY,
+				}),
+				q(12432, {	-- Riding the Red Rocket
+					["races"] = HORDE_ONLY,
+				}),
+				q(12425, {	-- Ruuna the Blind
+					["races"] = HORDE_ONLY,
+				}),
+				q(12433, {	-- Seeking Solvent -- i(37664),	-- Element 115
+					["races"] = HORDE_ONLY,
+				}),
+				q(12436, {	-- Supplemental Income
+					["races"] = HORDE_ONLY,
+				}),
+				q(12451, {	-- Onward to Camp Oneqwah
+					["races"] = HORDE_ONLY,
+				}),
+				q(12763, {	-- Shifting Priorities
+					["races"] = HORDE_ONLY,
+				}),
+				q(12270, {	-- Shred the Alliance
+					["races"] = HORDE_ONLY,
+				}),
+				q(12324, {	-- Smoke 'Em Out
+					["races"] = HORDE_ONLY,
+				}),
+				q(12422, {	-- Tactical Clemency
+					["races"] = HORDE_ONLY,
+				}),
+				q(12231, {	-- The Bear God's Offspring
+					["races"] = HORDE_ONLY,
+				}),
+				q(12468, {	-- The Conqueror's Task
+					["races"] = HORDE_ONLY,
+					["Sourecequest"] = { 39206 }	-- Warchief's Command: Grizzly Hills!
+				}),
+				q(12487, {	-- To Conquest Hold, But Be Careful!
+					["races"] = HORDE_ONLY,
+				}),
+				q(12427, {	-- The Conquest Pit: Bear Wrestling!
+					["races"] = HORDE_ONLY,
+				}),
+				q(12429, {	-- The Conquest Pit: Blood and Metal
+					["races"] = HORDE_ONLY,
+				}),
+				q(12430, {	-- The Conquest Pit: Death Is Likely
+					["races"] = HORDE_ONLY,
+				}),
+				q(12428, {	-- The Conquest Pit: Mad Furbolg Fighting
+					["races"] = HORDE_ONLY,
+				}),
+				q(12026, {	-- The Damaged Journal
+					["races"] = HORDE_ONLY,
+				}),
+				q(12213, {	-- The Darkness Beneath
+					["races"] = HORDE_ONLY,
+				}),
+				q(12256, {	-- The Flamebinders' Secrets
+					["races"] = HORDE_ONLY,
+				}),
+				q(12415, {	-- The Horse Hollerer
+					["races"] = HORDE_ONLY,
+				}),
+				q(12201, {	-- The Overseer's Shadow
+					["races"] = HORDE_ONLY,
+				}),
+				q(12195, {	-- The Unexpected 'Guest'
+					["races"] = HORDE_ONLY,
+				}),
+				q(39206, {	-- Warchief's Command: Grizzly Hills
+					["races"] = HORDE_ONLY,
+				}),
+				q(12197, {	-- We Have the Power
+					["races"] = HORDE_ONLY,
+				}),
 				]]--
-				-- qh(12026),	-- The Damaged Journal
-				-- qh(12054),	-- Deciphering the Journal
-				-- qh(12073),	-- Pounding the Iron
-				-- qh(12074),	-- An Expedient Ally
-				-- qh(12165),	-- An Intriguing Plan
-				-- qh(12170),	-- Blackriver Brawl
-				-- qh(12177),	-- Jun'ik's Coverup
-				-- qh(12178),	-- Delivery to Krenna
-				-- qh(12195),	-- The Unexpected 'Guest'
-				-- qh(12196),	-- From the Ground Up
-				-- qh(12197),	-- We Have the Power
-				-- qh(12198),	-- ... Or Maybe We Don't
-				-- qh(12201),	-- The Overseer's Shadow
-				-- qh(12202),	-- Cultivating an Image
-				-- qh(12203),	-- Loken's Orders
-				-- qh(12204),	-- In the Name of Loken
-				-- qh(12208),	-- Good Troll Hunting
-				-- qh(12213),	-- The Darkness Beneath
-				-- qh(12231),	-- The Bear God's Offspring
-				-- qh(12241),	-- Destroy the Sapling
-				-- qh(12256),	-- The Flamebinders' Secrets
-				-- qh(12257),	-- A Show of Strength
-				-- qh(12270),	-- Shred the Alliance
-				-- qh(12280),	-- Making Repairs
-				-- qh(12284),	-- Keep 'Em on Their Heels
-				-- qh(12288),	-- Overwhelmed!
-				-- qh(12315),	-- Crush Captain Brightwater!
-				-- qh(12317),	-- Keep Them at Bay
-				-- qh(12324),	-- Smoke 'Em Out
-				-- qh(12415),	-- The Horse Hollerer
-				-- qh(12422),	-- Tactical Clemency
-				-- qh(12423),	-- Mikhail's Journal
-				-- qh(12424),	-- Gorgonna
-				-- qh(12425),	-- Ruuna the Blind
-				-- qh(12427),	-- The Conquest Pit: Bear Wrestling!
-				-- qh(12428),	-- The Conquest Pit: Mad Furbolg Fighting
-				-- qh(12429),	-- The Conquest Pit: Blood and Metal
-				-- qh(12430),	-- The Conquest Pit: Death Is Likely
-				-- qh(12432),	-- Riding the Red Rocket
-				-- qh(12433),	-- Seeking Solvent -- i(37664),	-- Element 115
-				-- qh(12434),	--  Always Seeking Solvent -- i(37664),	-- Element 115
-				-- qh(12436),	-- Supplemental Income
-				-- qh(12451),	-- Onward to Camp Oneqwah
-				-- qh(12468),	-- The Conqueror's Task ["Sourecequest"] = { 39206 }	-- Warchief's Command: Grizzly Hills!
-				-- qh(12487),	-- To Conquest Hold, But Be Careful!
-				-- qh(12763),	-- Shifting Priorities
-				-- qh(39206),	-- Warchief's Command: Grizzly Hills
 			}),
 		}),
 	}),
