@@ -346,6 +346,7 @@ _.Instances = { tier(7, {	-- Legion
 						e(1983, {	-- Varimathras
 							["crs"] = { 122366 },	-- Varimathras
 							["g"] = {
+								i(151966),	-- Riveted Choker of Delirium
 								i(151995),	-- Robes of the Forsaken Dreadlord
 								i(151979),	-- Vest of Unfathomable Anguish
 								i(151954),	-- Blood-Drenched Bindings
@@ -354,7 +355,12 @@ _.Instances = { tier(7, {	-- Legion
 								i(151942),	-- Cord of Surging Hysteria
 								i(152015),	-- Greaves of Mercurial Alliegance
 								i(151997),	-- Nathrezim Shade-Walkers
-								i(151966),	-- Riveted Choker of Delirium
+								i(151960),	-- Carafe of Searing Light
+								i(151964),	-- Seeping Scourgewing
+								i(152092),	-- Nathrezim Incisor
+								i(152060),	-- Neuroshock Electrode
+								i(152025),	-- Thu'rayan Lash
+								i(152037),	-- Tormentor's Brand
 							},
 						}),
 						e(1986, {	-- The Coven of Shivarra
@@ -701,6 +707,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1983, {	-- Varimathras
 					["crs"] = { 122366 },	-- Varimathras
 					["g"] = {
+						i(151966),	-- Riveted Choker of Delirium
 						i(151995),	-- Robes of the Forsaken Dreadlord
 						i(151979),	-- Vest of Unfathomable Anguish
 						i(151954),	-- Blood-Drenched Bindings
@@ -709,7 +716,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(151942),	-- Cord of Surging Hysteria
 						i(152015),	-- Greaves of Mercurial Alliegance
 						i(151997),	-- Nathrezim Shade-Walkers
-						i(151966),	-- Riveted Choker of Delirium
+						i(151960),	-- Carafe of Searing Light
+						i(151964),	-- Seeping Scourgewing
+						i(152092),	-- Nathrezim Incisor
+						i(152060),	-- Neuroshock Electrode
+						i(152025),	-- Thu'rayan Lash
+						i(152037),	-- Tormentor's Brand
 					},
 				}),
 				e(1986, {	-- The Coven of Shivarra
@@ -1056,6 +1068,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1983, {	-- Varimathras
 					["crs"] = { 122366 },	-- Varimathras
 					["g"] = {
+						i(151966),	-- Riveted Choker of Delirium
 						i(151995),	-- Robes of the Forsaken Dreadlord
 						i(151979),	-- Vest of Unfathomable Anguish
 						i(151954),	-- Blood-Drenched Bindings
@@ -1064,7 +1077,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(151942),	-- Cord of Surging Hysteria
 						i(152015),	-- Greaves of Mercurial Alliegance
 						i(151997),	-- Nathrezim Shade-Walkers
-						i(151966),	-- Riveted Choker of Delirium
+						i(151960),	-- Carafe of Searing Light
+						i(151964),	-- Seeping Scourgewing
+						i(152092),	-- Nathrezim Incisor
+						i(152060),	-- Neuroshock Electrode
+						i(152025),	-- Thu'rayan Lash
+						i(152037),	-- Tormentor's Brand
 					},
 				}),
 				e(1986, {	-- The Coven of Shivarra
@@ -1415,6 +1433,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1983, {	-- Varimathras
 					["crs"] = { 122366 },	-- Varimathras
 					["g"] = {
+						i(151966),	-- Riveted Choker of Delirium
 						i(151995),	-- Robes of the Forsaken Dreadlord
 						i(151979),	-- Vest of Unfathomable Anguish
 						i(151954),	-- Blood-Drenched Bindings
@@ -1423,6 +1442,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(151942),	-- Cord of Surging Hysteria
 						i(152015),	-- Greaves of Mercurial Alliegance
 						i(151997),	-- Nathrezim Shade-Walkers
+						i(151960),	-- Carafe of Searing Light
+						i(151964),	-- Seeping Scourgewing
+						i(152092),	-- Nathrezim Incisor
+						i(152060),	-- Neuroshock Electrode
+						i(152025),	-- Thu'rayan Lash
+						i(152037),	-- Tormentor's Brand
 					},
 				}),
 				e(1986, {	-- The Coven of Shivarra
