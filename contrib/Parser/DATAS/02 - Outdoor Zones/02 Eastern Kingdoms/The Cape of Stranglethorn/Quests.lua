@@ -25,6 +25,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44082,	-- Bronwyn Hewstrike
 				}),
+				q(617, {	-- Akiris by the Bundle
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4117)),	-- Scorching Sash
+					},
+				}),
 				q(26819, {	-- Akiris by the Bundle
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
 					["coord"] = { 55.3, 42.1, 210 },
@@ -92,6 +98,13 @@ _.Zones =
 					["coord"] = { 44.5, 92.8, 210 },
 					["qg"] = 2545,	-- "Pretty Boy" Duncan
 				}),
+				q(613, {	-- Cracking Maury's Foot
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4129)),	-- Collection Plate
+					},
+				}),
 				q(26826, {	-- Dask "The Flask" Gobfizzle
 					["sourceQuests"] = { 28702 },	-- Hero's Call: The Cape of Stranglethorn
 					["description"] = "This quest is only available if you DID NOT complete [The Source of the Corruption] and [The Mosh'Ogg Bounty] in Northern Stranglethorn.",
@@ -139,6 +152,27 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44084,
 				}),
+				q(628, {	-- Excelsior
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4109)),	-- Excelsior Boots
+					},
+				}),
+				q(618, {	-- Facing Negolash
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
+					},
+				}),
+				q(8554, {	-- Facing Negolash
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
+					},
+				}),
 				q(26624, {	-- Getting In With the Bloodsail
 					["sourceQuests"] = { 26612 },	-- Details of the Attack
 					["coord"] = { 41.1, 73.1, 210 },
@@ -160,6 +194,12 @@ _.Zones =
 					["coord"] = { 59.3, 79.2, 210 },
 					["qg"] = 2634,	-- Princess Poobah
 				}),
+				q(213, {	-- Hostile Takeover
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4121)),	-- Gemmed Gloves
+					},
+				}),
 				q(26820, {	-- If They're Just Going to Leave Them Lying Around...
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
 					["coord"] = { 55.3, 42.1, 210 },
@@ -168,6 +208,13 @@ _.Zones =
 					["g"] = {
 						i(61521),	-- Amulet of Brilliant Talent
 						i(61522),	-- Helm of Secrets
+					},
+				}),
+				q(576, {	-- Keep An Eye Out
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(4114),	-- Darktide Cape NOTE: Awarded from new version of quest 26614
 					},
 				}),
 				q(26614, {	-- Keep An Eye Out
@@ -212,6 +259,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44083,	-- Linzi Hewstrike
 				}),
+				q(630, {		-- Message in a Bottle
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4118)),	-- Poobah's Nose Ring
+					},
+				}),
 				q(26603, {	-- Message in a Bottle
 				--	["objectID"] = 204406,	-- Half-Buried Bottle
 					["coord"] = { 62.4, 46.7, 210 },
@@ -227,6 +280,13 @@ _.Zones =
 						i(61566),	-- Landlubber Headband
 						i(61568),	-- Sea Legs
 						i(131561),	-- Landlubber Helm
+					},
+				}),
+				q(573, {	-- Mok'thardin's Enchantment
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(4112)),	-- Choker of the High Shaman
 					},
 				}),
 				q(26606, {	-- Mukla's Demise
@@ -335,6 +395,12 @@ _.Zones =
 				--	["objectID"] = 204450,	-- Captain Stillwater's Charts
 					["coord"] = { 50.3, 91.5, 210 },
 				}),
+				q(348, {	-- Stranglethorn Fever
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4113)),	-- Medicine Blanket
+					},
+				}),
 				q(26597, {	-- Stranglethorn Fever
 					["coord"] = { 41.9, 72.8, 210 },
 					["qg"] = 2486,	-- Fin Fizracket
@@ -374,6 +440,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 49635,	-- War-Mage Erallier
 				}),
+				q(608, {	-- The Bloodsail Buccaneers
+					["u"] = 40,
+					["g"] = {
+						un(2,  i(4138)),	-- Blackwater Tunic
+					},
+				}),
 				q(26609, {	-- The Bloodsail Buccaneers
 					["sourceQuests"] = {
 						26595,	-- Kill-Collect
@@ -395,12 +467,41 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48808,
 				}),
+				q(614, {	-- The Captain's Chest
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(11469),	-- Bloodband Bracers NOTE: Awarded from new version of quest 26599
+					},
+				}),
+				q(8551, {	-- The Captain's Chest
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(11469),	-- Bloodband Bracers NOTE: Awarded from new version of quest 26599
+					},
+				}),
 				q(26599, {	-- The Captain's Chest
 					["coord"] = { 40.2, 67.7, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
 					["g"] = {
-						i(11469),	-- Bloodband Bracers 
+						i(11469),	-- Bloodband Bracers
+					},
+				}),
+				q(1041, {	-- The Caravan Road
+					["qg"] = 3945,	-- Caravaneer Ruzzgot
+					["coord"] = { 27.4, 74.2, 210 },
+					["sourceQuests"] = 1040,	-- The Passage to Booty Bay
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
+				}),
+				q(611, {	-- The Curse of the Tides
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4120)),	-- Robe of Crystal Waters
 					},
 				}),
 				q(26700, {	-- The Damsel's (Bad) Luck
@@ -433,6 +534,16 @@ _.Zones =
 					["coord"] = { 54.1, 46.5, 210 },
 					["qg"] = 1449,	-- Witch Doctor Unbagwa
 				}),
+				q(2760, {	-- The Mithril Order
+					["u"] = 40,
+					["qg"] = 7794,	-- McGavan
+					["coord"] = { 43.8, 70.7, 210 },
+					["requireSkill"] = 164,	-- Blacksmithing
+					["sourceQuests"] = {
+						2757,	-- Booty Bay or Bust!
+						2759,	-- In Search of Galvan
+					},
+				}),
 				q(26811, {	-- Through the Troll Hole
 					["sourceQuests"] = { 26810 },	-- Eliminate the Outcast
 					["coord"] = { 61.2, 44.3, 210 },
@@ -460,6 +571,13 @@ _.Zones =
 					["coord"] = { 40.7, 73.8, 210 },
 					["qg"] = 2488,	-- Deeg
 				}),
+				q(600, {	-- Venture Company Mining
+					["u"] = 40,
+					["g"] = {
+						un(2, i(5253)),	-- Goblin Igniter
+						un(2, i(4128)),	-- Silver Spade
+					},
+				}),
 				q(26631, {	-- Your First Day as a Pirate
 					["sourceQuests"] = {
 						26630,	-- Looks Like a Tauren Pirate to Me
@@ -467,6 +585,13 @@ _.Zones =
 					},
 					["coord"] = { 43.8, 56.4, 210 },
 					["qg"] = 43504,	-- Yancey Grillsen
+				}),
+				q(621, {	-- Zanzil's Secret
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4131)),	-- Belt of Corruption
+					},
 				}),
 				q(26815, {	-- Zanzil's Secret
 					["sourceQuests"] = { 26817 },	-- Perfectly Pure
@@ -476,8 +601,9 @@ _.Zones =
 				}),
 
 			--	UNSORTED BELOW THIS POINT.
-				qh(26487, {	-- Akiris by the Bundle
+				q(26487, {	-- Akiris by the Bundle
 					["qg"] = 43095,	-- Sassy Hardwrench
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {26404,28704},
 				}),
 				q(3721,  {	-- An OOX of Your Own -- TODO:: These quests should be put in their respective zones
@@ -549,9 +675,10 @@ _.Zones =
 				q(1036,  {	-- Avast Ye, Scallywag
 					["qg"] = 2545,	-- "Pretty Boy" Duncan
 				}),
-				qh(26550, {	-- Backdoor Dealings
+				q(26550, {	-- Backdoor Dealings
 					["sourceQuests"] = {26495},
 					["qg"] = 43098,	-- Chabal
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61534),	-- Veil of the Silent Listener
 						i(61535),	-- Monnion of the Bat
@@ -566,19 +693,23 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29150 },	-- Voodoo Zombies
 				}),
-				qh(26495, {	-- Chabal
+				q(26495, {	-- Chabal
 					["qg"] = 43095,	-- Sassy Hardwrench
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {26493},
 				}),
-				qh(26551, {	-- Eliminate the Outcast
+				q(26551, {	-- Eliminate the Outcast
 					["qg"] = 43098,	-- Chabal
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {26550},
 				}),
-				qh(26553, {	-- High Priestess Jeklik
+				q(26553, {	-- High Priestess Jeklik
 					["sourceQuests"] = {26552},
+					["races"] = HORDE_ONLY,
 				}),
-				qh(26555, {	-- High Priest Venoxis
+				q(26555, {	-- High Priest Venoxis
 					["sourceQuests"] = {26554},
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61552),	-- Chabal's Favorite Ring
 						i(61553),	-- Boots of the Foolhardy
@@ -586,8 +717,9 @@ _.Zones =
 						i(131555),	-- Treads of the Foolhardy
 					},
 				}),
-				qh(26450, {	-- If They're Just Going to Leave Them Lying Around...
+				q(26450, {	-- If They're Just Going to Leave Them Lying Around...
 					["qg"] = 43095,	-- Sassy Hardwrench
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61517),	-- Sassy Pantaloons
 						i(61518),	-- Iconic Vest
@@ -610,19 +742,22 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29151 },	-- Bad Supplies
 				}),
-				qh(26554, {	-- Plunging Into Zul'Gurub
+				q(26554, {	-- Plunging Into Zul'Gurub
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {26553},
 				}),
-				qh(26434, {	-- Primal Reagents of Power
+				q(26434, {	-- Primal Reagents of Power
 					["qg"] = 43096,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61529),
 						i(61530),
 						i(131529),
 					},
 				}),
-				qh(26535, {	-- Recipe for Disaster
+				q(26535, {	-- Recipe for Disaster
 					["qg"] = 43097,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61546),
 						i(61547),
@@ -630,22 +765,26 @@ _.Zones =
 						i(131551),
 					},
 				}),
-				qh(28750, {	-- The Battle for Andorhal
+				q(28750, {	-- The Battle for Andorhal
 					["qg"] = 49636,	-- Arcanist Arman
+					["races"] = HORDE_ONLY,
 				}),
-				qh(26696, {	-- The Call of Kalimdor
+				q(26696, {	-- The Call of Kalimdor
 					["qg"] = 48797,
+					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				qh(26493, {	-- There's Somebody Out There Who Wants It
+				q(26493, {	-- There's Somebody Out There Who Wants It
 					["sourceQuests"] = {26487,26489,26450},
 					["qg"] = 43095,	-- Sassy Hardwrench
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61523),	-- Basilisk Scale Necklace
 						i(61524),	-- Helm of Secrets
 					},
 				}),
-				qh(26552, {	-- Through the Troll Hole
+				q(26552, {	-- Through the Troll Hole
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {26551},
 				}),
 				q(29150, {	-- Voodoo Zombies
@@ -656,114 +795,82 @@ _.Zones =
 					["sourceQuests"] = { 29133 },	-- To the Digsite
 				}),
 			--	q(8194),	-- Apprentice Angler
---[[			q(31851)	-- Bill Buckler
-				q(31728)	-- Bill Buckler
-				qh(29252)	-- Booty Bay's Interests
-				qh(29251)	-- Booty Bay's Interests
-				qa(29153)	-- Booty Bay's Interests
-				qa(29154)	-- Booty Bay's Interests
-				q(26718)	-- Breadcrumb to Badlands
-				qh(26592)	-- Diffractory Chromascope
-				q(9272)	-- Dressing the Part
-				q(38399)	-- Fencing the Rose
-				q(26839)	-- Get Away From It All!
-				q(8193)	-- Grand Prize
-				q(26452)	-- Gurubashi Challenge
-				q(26451)	-- Gurubashi Challenge: Free-For-All Arena Combat
-				qh(26435)	-- I'm A Huge Liar and a Fraud
-				qh(26534)	-- Let's See What You've Got, Zanzil
-				q(26630)	-- Looks Like a Tauren Pirate to Me
-				qh(29250)	-- Making Contact
-				qh(11357)	-- Masked Orphan Matron
-				qh(26494)	-- Mixmaster Jasper
-				q(8225)	-- Rare Fish - Brownell's Blue Striped Racer
-				q(8224)	-- Rare Fish - Dezian Queenfish
-				q(8221)	-- Rare Fish - Keefer's Angelfish
-				q(32435)	-- Second Place
-				q(44765)	-- Stranglethorn Fishing Extravaganza
-				q(40849)	-- The Dreadblades
+--[[			q(31851),	-- Bill Buckler
+				q(31728),	-- Bill Buckler
+				q(29252, {	-- Booty Bay's Interests
+					["races"] = HORDE_ONLY,
+				}),
+				q(29251, {	-- Booty Bay's Interests
+					["races"] = HORDE_ONLY,
+				}),
+				q(29153, {	-- Booty Bay's Interests
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29154, {	-- Booty Bay's Interests
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(26718),	-- Breadcrumb to Badlands
+				q(26592, {	-- Diffractory Chromascope
+					["races"] = HORDE_ONLY,
+				}),
+				q(9272),	-- Dressing the Part
+				q(38399),	-- Fencing the Rose
+				q(26839),	-- Get Away From It All!
+				q(8193),	-- Grand Prize
+				q(26452),	-- Gurubashi Challenge
+				q(26451),	-- Gurubashi Challenge: Free-For-All Arena Combat
+				q(26435, {	-- I'm A Huge Liar and a Fraud
+					["races"] = HORDE_ONLY,
+				}),
+				q(26534, {	-- Let's See What You've Got, Zanzil
+					["races"] = HORDE_ONLY,
+				}),
+				q(26630),	-- Looks Like a Tauren Pirate to Me
+				q(29250, {	-- Making Contact
+					["races"] = HORDE_ONLY,
+				}),
+				q(11357, {	-- Masked Orphan Matron
+					["races"] = HORDE_ONLY,
+				}),
+				q(26494, {	-- Mixmaster Jasper
+					["races"] = HORDE_ONLY,
+				}),
+				q(8225),	-- Rare Fish - Brownell's Blue Striped Racer
+				q(8224),	-- Rare Fish - Dezian Queenfish
+				q(8221),	-- Rare Fish - Keefer's Angelfish
+				q(32435),	-- Second Place
+				q(44765),	-- Stranglethorn Fishing Extravaganza
+				q(40849),	-- The Dreadblades
 				q(26837),	-- The Explorers' League Digsite //REMOVED
-				qa(47709),	-- The Great Gnomeregan Race
-				qh(26590),	-- The Holy Water of Clarity
-				qh(26433),	-- The Holy Water of Clarity
-				qa(11970),	-- The Master of Summer Lore
-				qh(11971),	-- The Spinner of Summer Tales
+				q(47709, {	-- The Great Gnomeregan Race
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(26590, {	-- The Holy Water of Clarity
+					["races"] = HORDE_ONLY,
+				}),
+				q(26433, {	-- The Holy Water of Clarity
+					["races"] = HORDE_ONLY,
+				}),
+				q(11970, {	-- The Master of Summer Lore
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11971, {	-- The Spinner of Summer Tales
+					["races"] = HORDE_ONLY,
+				}),
 				q(32436),	-- Third Place
-				qa(26805),	-- To the Cape! //Starts in Northern Stranglethorn
+				q(26805, {	-- To the Cape! //Starts in Northern Stranglethorn
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(9259),	-- Traitor to the Bloodsail
-				qh(28704),	-- Warchief's Command: The Cape of Stranglethorn!
+				q(28704, {	-- Warchief's Command: The Cape of Stranglethorn!
+					["races"] = HORDE_ONLY,
+				}),
 				q(8674),	-- Winterhoof the Elder
 				q(42758),	-- You're Gonna Need A Bigger Boat!
-				qh(26533),	-- Zanzil's Secret	
+				q(26533, {	-- Zanzil's Secret
+					["races"] = HORDE_ONLY,
+				}),
 --]]
--- Quests from old legacy section, just moved during file splits and not sorted into existing quests
-				un(40, q(617, {	-- Akiris by the Bundle
-					un(2, i(4117)),	-- Scorching Sash
-				})),
-				q(1041, {	-- The Caravan Road
-					["qg"] = 3945,	-- Caravaneer Ruzzgot
-					["coord"] = { 27.4, 74.2, 210 },
-					["sourceQuests"] = 1040,	-- The Passage to Booty Bay
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-					["u"] = 40,
-				}),
-				un(40, qa(613, {	-- Cracking Maury's Foot
-					un(2, i(4129)),	-- Collection Plate
-				})),
-				un(40, qa(628, {	-- Excelsior
-					un(2, i(4109)),	-- Excelsior Boots
-				})),
-				un(40, qa(618, {	-- Facing Negolash
-					i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
-				})),
-				un(40, qh(8554, {	-- Facing Negolash
-					i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
-				})),
-				un(40, q(213, {	-- Hostile Takeover
-					un(2, i(4121)),	-- Gemmed Gloves
-				})),
-				un(40, qa(576, {	-- Keep An Eye Out
-					i(4114),	-- Darktide Cape NOTE: Awarded from new version of quest 26614
-				})),
-				un(40, q(630, {		-- Message in a Bottle
-					un(2, i(4118)),	-- Poobah's Nose Ring
-				})),
-				un(40, qh(573, {	-- Mok'thardin's Enchantment
-					un(2, i(4112)),	-- Choker of the High Shaman
-				})),
-				un(40, q(348, {	-- Stranglethorn Fever
-					un(2, i(4113)),	-- Medicine Blanket
-				})),
-				un(40, q(608, {		-- The Bloodsail Buccaneers
-					un(2,  i(4138)),	-- Blackwater Tunic
-				})),
-				un(40, qa(614, {	-- The Captain's Chest
-					i(11469),	-- Bloodband Bracers NOTE: Awarded from new version of quest 26599
-				})),
-				un(40, qh(8551, {	-- The Captain's Chest
-					i(11469),	-- Bloodband Bracers NOTE: Awarded from new version of quest 26599
-				})),
-				un(40, qa(611, {	-- The Curse of the Tides
-					un(2, i(4120)),	-- Robe of Crystal Waters
-				})),
-				q(2760, {	-- The Mithril Order
-					["qg"] = 7794,	-- McGavan
-					["coord"] = { 43.8, 70.7, 210 },
-					["sourceQuests"] = {
-						2757,	-- Booty Bay or Bust!
-						2759,	-- In Search of Galvan
-					},
-					["requireSkill"] = 164,	-- Blacksmithing
-					["u"] = 40,
-				}),
-				un(40, q(600, {	-- Venture Company Mining
-					un(2, i(5253)),	-- Goblin Igniter
-					un(2, i(4128)),	-- Silver Spade
-				})),
-				un(40, qa(621, {	-- Zanzil's Secret
-					un(2, i(4131)),	-- Belt of Corruption
-				})),
 			}),
 		}),
 	}),
