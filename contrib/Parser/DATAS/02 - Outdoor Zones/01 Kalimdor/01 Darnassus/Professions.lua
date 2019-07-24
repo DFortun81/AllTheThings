@@ -13,6 +13,7 @@ _.Zones =
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
+							["races"] = ALLIANCE_ONLY,
 							["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
@@ -27,6 +28,7 @@ _.Zones =
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
+							["races"] = ALLIANCE_ONLY,
 							["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
@@ -41,6 +43,7 @@ _.Zones =
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
+							["races"] = ALLIANCE_ONLY,
 							["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
