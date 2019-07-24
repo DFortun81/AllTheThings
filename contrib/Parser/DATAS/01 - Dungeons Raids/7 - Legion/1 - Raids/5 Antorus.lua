@@ -435,8 +435,9 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						}),
 						cr(124828, e(2031, {	-- Argus the Unmaker
-							i(153115),	-- Scythe of the Unmaker (not in DJ)
+							i(153115),	-- Scythe of the Unmaker [BLUE]
 							i(152423),	-- Helm of the Awakened Soul
+							i(152283),	-- Chain of the Unmaker
 							i(152005),	-- Pauldrons of Colossal Burden
 							i(152679),	-- Gambeson of Sargeras' Corruption
 							i(151982),	-- Vest of Waning Life
@@ -444,6 +445,17 @@ _.Instances = { tier(7, {	-- Legion
 							i(152686),	-- Nascent Deathbringer's Clutches
 							i(151986),	-- Death-Enveloping Cincture
 							i(152016),	-- Cosmos-Culling Legplates
+							i(151972),	-- Sullied Seal of the Pantheon
+							i(155853),	-- Conch of the Thunderer
+							i(155848),	-- Condensed Blight Orb
+							i(155847),	-- Cruor of the Avenger
+							i(155849),	-- Flickering Ember of Rage
+							i(155846),	-- Miniaturized Cosmic Beacon
+							i(155855),	-- Mote of the Forgemaster
+							i(155851),	-- Reorigination Spark
+							i(155850),	-- Rime of the Spirit Realm
+							i(155854),	-- Root of the Lifebinder
+							i(155852),	-- Volatile Soul Fragment
 						})),
 					},
 				}),
@@ -805,8 +817,9 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
-					i(153115),	-- Scythe of the Unmaker (not in DJ)
+					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
+					i(152283),	-- Chain of the Unmaker
 					i(152005),	-- Pauldrons of Colossal Burden
 					i(152679),	-- Gambeson of Sargeras' Corruption
 					i(151982),	-- Vest of Waning Life
@@ -814,6 +827,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(152686),	-- Nascent Deathbringer's Clutches
 					i(151986),	-- Death-Enveloping Cincture
 					i(152016),	-- Cosmos-Culling Legplates
+					i(151972),	-- Sullied Seal of the Pantheon
 					i(154172),	-- Aman'Thul's Vision
 					i(154173),	-- Aggramar's Conviction
 					i(154175),	-- Eonar's Compassion
@@ -821,6 +835,16 @@ _.Instances = { tier(7, {	-- Legion
 					i(154176),	-- Khaz'goroth's Courage
 					i(154177),	-- Norgannon's Prowess
 					i(155831),	-- Pantheon's Blessing
+					i(155853),	-- Conch of the Thunderer
+					i(155848),	-- Condensed Blight Orb
+					i(155847),	-- Cruor of the Avenger
+					i(155849),	-- Flickering Ember of Rage
+					i(155846),	-- Miniaturized Cosmic Beacon
+					i(155855),	-- Mote of the Forgemaster
+					i(155851),	-- Reorigination Spark
+					i(155850),	-- Rime of the Spirit Realm
+					i(155854),	-- Root of the Lifebinder
+					i(155852),	-- Volatile Soul Fragment
 				})),
 			}),
 			d(15, {	-- Heroic
@@ -1185,8 +1209,9 @@ _.Instances = { tier(7, {	-- Legion
 							un(2, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
 						}),
 					})),
-					i(153115),	-- Scythe of the Unmaker (not in DJ)
+					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
+					i(152283),	-- Chain of the Unmaker
 					i(152005),	-- Pauldrons of Colossal Burden
 					i(152679),	-- Gambeson of Sargeras' Corruption
 					i(151982),	-- Vest of Waning Life
@@ -1194,6 +1219,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(152686),	-- Nascent Deathbringer's Clutches
 					i(151986),	-- Death-Enveloping Cincture
 					i(152016),	-- Cosmos-Culling Legplates
+					i(151972),	-- Sullied Seal of the Pantheon
 					i(154172),	-- Aman'Thul's Vision
 					i(154173),	-- Aggramar's Conviction
 					i(154175),	-- Eonar's Compassion
@@ -1201,6 +1227,16 @@ _.Instances = { tier(7, {	-- Legion
 					i(154176),	-- Khaz'goroth's Courage
 					i(154177),	-- Norgannon's Prowess
 					i(155831),	-- Pantheon's Blessing
+					i(155853),	-- Conch of the Thunderer
+					i(155848),	-- Condensed Blight Orb
+					i(155847),	-- Cruor of the Avenger
+					i(155849),	-- Flickering Ember of Rage
+					i(155846),	-- Miniaturized Cosmic Beacon
+					i(155855),	-- Mote of the Forgemaster
+					i(155851),	-- Reorigination Spark
+					i(155850),	-- Rime of the Spirit Realm
+					i(155854),	-- Root of the Lifebinder
+					i(155852),	-- Volatile Soul Fragment
 				})),
 			}),
 			d(16, {	-- Mythic
@@ -1584,10 +1620,11 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						},
 					},
-					i(152789),	-- Shackled Ur'zul (MOUNT! MYTHIC ONLY)
-					i(155880),	-- Scythe of the Unmaker [RED] (not in DJ)
-					i(153115),	-- Scythe of the Unmaker [BLUE] (not in DJ)
+					i(152789),	-- Shackled Ur'zul (MOUNT!)
+					i(155880),	-- Scythe of the Unmaker [RED]
+					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
+					i(152283),	-- Chain of the Unmaker
 					i(152005),	-- Pauldrons of Colossal Burden
 					i(152679),	-- Gambeson of Sargeras' Corruption
 					i(151982),	-- Vest of Waning Life
@@ -1595,6 +1632,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(152686),	-- Nascent Deathbringer's Clutches
 					i(151986),	-- Death-Enveloping Cincture
 					i(152016),	-- Cosmos-Culling Legplates
+					i(151972),	-- Sullied Seal of the Pantheon
 					i(154172),	-- Aman'Thul's Vision
 					i(154173),	-- Aggramar's Conviction
 					i(154175),	-- Eonar's Compassion
@@ -1602,6 +1640,16 @@ _.Instances = { tier(7, {	-- Legion
 					i(154176),	-- Khaz'goroth's Courage
 					i(154177),	-- Norgannon's Prowess
 					i(155831),	-- Pantheon's Blessing
+					i(155853),	-- Conch of the Thunderer
+					i(155848),	-- Condensed Blight Orb
+					i(155847),	-- Cruor of the Avenger
+					i(155849),	-- Flickering Ember of Rage
+					i(155846),	-- Miniaturized Cosmic Beacon
+					i(155855),	-- Mote of the Forgemaster
+					i(155851),	-- Reorigination Spark
+					i(155850),	-- Rime of the Spirit Realm
+					i(155854),	-- Root of the Lifebinder
+					i(155852),	-- Volatile Soul Fragment
 				})),
 			}),
 		},
