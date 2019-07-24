@@ -333,6 +333,14 @@ _.Instances = { tier(7, {	-- Legion
 								i(152137),	-- Runebound Gloves
 								i(152132),	-- Serpentstalker Grips
 								i(152412),	-- Depraved Machinist's Footpads
+								i(152064),	-- Band of the Sargerite Smith
+								i(151955),	-- Acrid Catalyst Injector
+								i(151975),	-- Apocalypse Drive
+								i(151963),	-- Forgefiend's Fabricator
+								i(152048),	-- Decimator Crankshaft
+								i(152051),	-- Eidolon of Life
+								i(152055),	-- Kin'garoth's Oil-Sump
+								i(152034),	-- Obliterator Propellant
 							},
 						}),
 						e(1983, {	-- Varimathras
@@ -680,6 +688,14 @@ _.Instances = { tier(7, {	-- Legion
 						i(152137),	-- Runebound Gloves
 						i(152132),	-- Serpentstalker Grips
 						i(152412),	-- Depraved Machinist's Footpads
+						i(152064),	-- Band of the Sargerite Smith
+						i(151955),	-- Acrid Catalyst Injector
+						i(151975),	-- Apocalypse Drive
+						i(151963),	-- Forgefiend's Fabricator
+						i(152048),	-- Decimator Crankshaft
+						i(152051),	-- Eidolon of Life
+						i(152055),	-- Kin'garoth's Oil-Sump
+						i(152034),	-- Obliterator Propellant
 					},
 				}),
 				e(1983, {	-- Varimathras
@@ -1027,6 +1043,14 @@ _.Instances = { tier(7, {	-- Legion
 						i(152137),	-- Runebound Gloves
 						i(152132),	-- Serpentstalker Grips
 						i(152412),	-- Depraved Machinist's Footpads
+						i(152064),	-- Band of the Sargerite Smith
+						i(151955),	-- Acrid Catalyst Injector
+						i(151975),	-- Apocalypse Drive
+						i(151963),	-- Forgefiend's Fabricator
+						i(152048),	-- Decimator Crankshaft
+						i(152051),	-- Eidolon of Life
+						i(152055),	-- Kin'garoth's Oil-Sump
+						i(152034),	-- Obliterator Propellant
 					},
 				}),
 				e(1983, {	-- Varimathras
@@ -1378,6 +1402,14 @@ _.Instances = { tier(7, {	-- Legion
 						i(152137),	-- Runebound Gloves
 						i(152132),	-- Serpentstalker Grips
 						i(152412),	-- Depraved Machinist's Footpads
+						i(152064),	-- Band of the Sargerite Smith
+						i(151955),	-- Acrid Catalyst Injector
+						i(151975),	-- Apocalypse Drive
+						i(151963),	-- Forgefiend's Fabricator
+						i(152048),	-- Decimator Crankshaft
+						i(152051),	-- Eidolon of Life
+						i(152055),	-- Kin'garoth's Oil-Sump
+						i(152034),	-- Obliterator Propellant
 					},
 				}),
 				e(1983, {	-- Varimathras
