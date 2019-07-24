@@ -254,32 +254,45 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						n(152961, {	-- Data Anomaly Balnazzar
-							i(168631),	-- Metal Detector
-							i(169169, {	-- Blueprint: Blue Spraybot (any)
-								["questID"] = 55077,
-								["g"] = {
-									crit(29, {	-- Blue Spraybot
-										["achievementID"] = 13479,	-- Junkyard Architect
-									}),
-								},
-							}),
-							i(169690),	-- Vinyl: Battle of Gnomeregan (any)
-							i(18507),	-- Boots of the Full Moon
-							i(16844),	-- Earthfury Epaulets (Geddon?)
-							i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
-								["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
-								["g"] = {
-									crit(25, {	-- Holographic Digitalization Relay
-										["achievementID"] = 13479,	-- Junkyard Architect
-									}),
-								},
-							}),
-							i(13348),	-- Demonshear (Balnazaar?)
-							i(11764),	-- Cinderhide Armsplints
-							i(37081),	-- Meathook's SLicer
-							i(151451),	-- Strip-Thorn Gauntlets (Razorlash)?
-							i(6341),	-- Eerie-Stable Lantern
-							i(1292),    -- Butcher's Cleaver
+							["crs"] = {
+								153486,	-- Data Anomaly Baron Gedden
+								152979,	-- Data Anomaly Baron Kazum
+								152922,	-- Data Anomaly Captain Kromcrush
+								152983,	-- Data Anomaly Crowd Pummeler 9-60
+								152959,	-- Data Anomaly Hogger
+								152964,	-- Data Anomaly Lord Incendius
+								152976,	-- Data Anomaly Meathook
+								152923,	-- Data Anomaly Razorclaw the Butcher
+								152969,	-- Data Anomaly Razorlash
+							},
+							["g"] = {
+								i(168631),	-- Metal Detector
+								i(169169, {	-- Blueprint: Blue Spraybot (any)
+									["questID"] = 55077,
+									["g"] = {
+										crit(29, {	-- Blue Spraybot
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
+								i(169690),	-- Vinyl: Battle of Gnomeregan (any)
+								i(18507),	-- Boots of the Full Moon
+								i(16844),	-- Earthfury Epaulets (Geddon?)
+								i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
+									["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+									["g"] = {
+										crit(25, {	-- Holographic Digitalization Relay
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
+								i(13348),	-- Demonshear (Balnazaar?)
+								i(11764),	-- Cinderhide Armsplints
+								i(37081),	-- Meathook's SLicer
+								i(151451),	-- Strip-Thorn Gauntlets (Razorlash)?
+								i(6341),	-- Eerie-Stable Lantern
+								i(1292),    -- Butcher's Cleaver
+							},
 						}),
 						crit(26, {	-- Discs of Norgannon
 							["achievementID"] = 13556,	-- Outside Influences
@@ -405,6 +418,10 @@ _.Zones =
 							["achievementID"] = 13791,	-- Making the Mount
 						}),
 					},
+				}),
+				q(56423, {	-- Large Storage Fragment
+				--	one-time?  repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies
+					["itemID"] = 169593,	-- Large Storage Fragment
 				}),
 				q(56305, {	-- Let's Fish!
 					["qg"] = 151462,	-- Danielle Anglers

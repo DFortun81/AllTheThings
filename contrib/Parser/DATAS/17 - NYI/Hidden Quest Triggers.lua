@@ -370,11 +370,11 @@ _.NeverImplemented =
 		q(50728),	-- Zuldazar repeatable random chest
 		q(51346),	-- Zuldazar repeatable random chest
 		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
-		q(54872),	-- Opening a darkshore chest
-		q(54877),	-- Opening a darkshore chest
-		q(54879),	-- Opening a darkshore chest
-		q(54880),	-- Opening a darkshore chest
-		q(54881),	-- Opening a darkshore chest
+		q(54872),	-- Opening a Darkshore chest
+		q(54877),	-- Opening a Darkshore chest
+		q(54879),	-- Opening a Darkshore chest
+		q(54880),	-- Opening a Darkshore chest
+		q(54881),	-- Opening a Darkshore chest
 		
 		q(53534),	-- when entering The Necropolis for the first time during "The Necropolis"
 		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
@@ -402,6 +402,7 @@ _.NeverImplemented =
 		q(53421),	-- for clicking on Lost Spawn of Krag'wa at { 33.46, 61.54, 863 }, in Nazmir
 		q(53426),	-- for clicking on Lost Spawn of Krag'wa at { 25.68, 40.57, 863 }, in Nazmir
 		q(53423),	-- for clicking on Lost Spawn of Krag'wa at { 28.89, 83.16, 863 }, in Nazmir
+		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley		
 		
 		-- Nazjatar
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
