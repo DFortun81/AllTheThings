@@ -149,6 +149,12 @@ _.Instances = { tier(7, {	-- Legion
 								i(152002),	-- Battalion-Shattering Leggings
 								i(151987),	-- Breach-Blocker Legguards
 								i(152009),	-- Doomwalker Warboots
+								i(151956),	-- Garothi Feedback Conduit
+								i(151962),	-- Prototype Personnel Decimator
+								i(152031),	-- Doomfire Dynamo
+								i(152036),	-- Hellfire Ignition Switch
+								i(152028),	-- Spurting Reaver Heart
+								i(152039),	-- Viscous Reaver-Coolant
 							},
 						}),
 						e(1987, {	-- Felhounds of Sargeras
@@ -163,13 +169,20 @@ _.Instances = { tier(7, {	-- Legion
 								i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
 								i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 								i(152000),	-- Shadowfused Chain Coif
+								i(151973),	-- Collar of Null-Flame
 								i(152004),	-- Pauldrons of the Soulburner
 								i(151949),	-- Soul-Siphon Mantle
-								i(151980),	-- Harness of Oppressing Dark									
+								i(151980),	-- Harness of Oppressing Dark
 								i(151947),	-- Vestments of Enflamed Blight
 								i(152012),	-- Molten Bite Handguards
 								i(152021),	-- Flamelicked Girdle
 								i(151983),	-- Vicious Flamepaws
+								i(153544),	-- Eye of F'Harg
+								i(152645),	-- Eye of Shatug
+								i(151968),	-- Shadow-Singed Fang
+								i(152056),	-- Corrupting Dewclaw
+								i(152291),	-- Fraternal Fervor
+								i(152027),	-- Gravitational Condensate
 							},
 						}),
 						e(1997, {	-- Antoran High Command
@@ -179,7 +192,6 @@ _.Instances = { tier(7, {	-- Legion
 								122333,	-- General Erodus
 							},
 							["g"] = {
-								-- Start Tier Cloaks
 								i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
 								i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
 								i(151985),	-- General Erodus' Tricorne
@@ -189,7 +201,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(152161),	-- Cloak of the Dashing Scoundrel
 								i(152167),	-- Drape of Venerated Spirits
 								i(152113),	-- Dreadwake Greatcloak
-								i(152119),	-- Felreaper Drape									
+								i(152119),	-- Felreaper Drape
 								i(152154),	-- Gilded Seraph's Drape
 								i(152172),	-- Grim Inquisitor's Cloak
 								i(152179),	-- Juggernaut Cloak
@@ -202,6 +214,12 @@ _.Instances = { tier(7, {	-- Legion
 								i(152006),	-- Depraved Tactician's Waistguard
 								i(152424),	-- Legwraps of the Seasoned Exterminator
 								i(152011),	-- Eredar Warcouncil Sabatons
+								i(151957),	-- Ishkar's Felshield Emitter
+								i(151969),	-- Terminus Signaling Beacon
+								i(152293),	-- Fasces of the Endless Legions
+								i(152043),	-- Lightshield Amplifier
+								i(152295),	-- Svirax's Grim Trophy
+								i(152032),	-- Twisted Engineer's Fel-Infuser
 							},
 						}),
 					},
@@ -215,7 +233,8 @@ _.Instances = { tier(7, {	-- Legion
 								124445,	-- The Paraxis
 							},
 							["g"] = {
-								-- Start Tier Chest
+								i(152681),	-- Headdress of Living Brambles
+								i(152013),	-- Helmet of the Hidden Sanctuary
 								i(152124),	-- Bearmantle Harness
 								i(152112),	-- Dreadwake Bonecage
 								i(152118),	-- Felreaper Vest
@@ -228,13 +247,16 @@ _.Instances = { tier(7, {	-- Legion
 								i(152130),	-- Serpentstalker Tunic
 								i(152142),	-- Tunic of Chi'Ji
 								i(152160),	-- Vest of the Dashing Scoundrel
-								-- End Tier Chest
-								i(152681),	-- Headdress of Living Brambles
-								i(152013),	-- Helmet of  the Hidden Sanctuary
 								i(152023),	-- Vambraces of  Life's Assurance
 								i(151952),	-- Cord of Blossoming Petals
 								i(152007),	-- Sash of the Gilded Rose
 								i(151981),	-- Life-Bearing Footpads
+								i(152688),	-- Loop of the Life-Binder
+								i(151970),	-- Vitality Resonator
+								i(152061),	-- Droplets of the Cleansing Storm
+								i(152047),	-- Ironvine Thorn
+								i(152044),	-- Spark of Everburning Light
+								i(152054),	-- Unwavering Soul Essence
 							},
 						}),
 						e(1985, {	-- Portal Keeper Hasabel
@@ -472,6 +494,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152002),	-- Battalion-Shattering Leggings
 						i(151987),	-- Breach-Blocker Legguards
 						i(152009),	-- Doomwalker Warboots
+						i(151956),	-- Garothi Feedback Conduit
+						i(151962),	-- Prototype Personnel Decimator
+						i(152031),	-- Doomfire Dynamo
+						i(152036),	-- Hellfire Ignition Switch
+						i(152028),	-- Spurting Reaver Heart
+						i(152039),	-- Viscous Reaver-Coolant
 					},
 				}),
 				e(1987, {	-- Felhounds of Sargeras
@@ -485,14 +513,21 @@ _.Instances = { tier(7, {	-- Legion
 						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
 						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
 						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
-						i(152000), 	-- Shadowfused Chain Coif
-						i(152004), 	-- Pauldrons of the Soulburner
-						i(151949), 	-- Soul-Siphon Mantle
-						i(151980), 	-- Harness of Oppressing Dark
-						i(151947), 	-- Vestments of Enflamed Blight
-						i(152012), 	-- Molten Bite Handguards
-						i(152021), 	-- Flamelicked Girdle
-						i(151983), 	-- Vicious Flamepaws
+						i(152000),	-- Shadowfused Chain Coif
+						i(151973),	-- Collar of Null-Flame
+						i(152004),	-- Pauldrons of the Soulburner
+						i(151949),	-- Soul-Siphon Mantle
+						i(151980),	-- Harness of Oppressing Dark
+						i(151947),	-- Vestments of Enflamed Blight
+						i(152012),	-- Molten Bite Handguards
+						i(152021),	-- Flamelicked Girdle
+						i(151983),	-- Vicious Flamepaws
+						i(153544),	-- Eye of F'Harg
+						i(152645),	-- Eye of Shatug
+						i(151968),	-- Shadow-Singed Fang
+						i(152056),	-- Corrupting Dewclaw
+						i(152291),	-- Fraternal Fervor
+						i(152027),	-- Gravitational Condensate
 					},
 				}),
 				e(1997, {	-- Antoran High Command
@@ -524,6 +559,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152006),	-- Depraved Tactician's Waistguard
 						i(152424),	-- Legwraps of the Seasoned Exterminator
 						i(152011),	-- Eredar Warcouncil Sabatons
+						i(151957),	-- Ishkar's Felshield Emitter
+						i(151969),	-- Terminus Signaling Beacon
+						i(152293),	-- Fasces of the Endless Legions
+						i(152043),	-- Lightshield Amplifier
+						i(152295),	-- Svirax's Grim Trophy
+						i(152032),	-- Twisted Engineer's Fel-Infuser
 					},
 				}),
 				e(2025, {	-- Eonar the Life-Bender
@@ -533,7 +574,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["g"] = {
 						i(152681),	-- Headdress of Living Brambles
-						i(152013),	-- Helmet of  the Hidden Sanctuary
+						i(152013),	-- Helmet of the Hidden Sanctuary
 						i(152124),	-- Bearmantle Harness
 						i(152112),	-- Dreadwake Bonecage
 						i(152118),	-- Felreaper Vest
@@ -550,6 +591,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(151952),	-- Cord of Blossoming Petals
 						i(152007),	-- Sash of the Gilded Rose
 						i(151981),	-- Life-Bearing Footpads
+						i(152688),	-- Loop of the Life-Binder
+						i(151970),	-- Vitality Resonator
+						i(152061),	-- Droplets of the Cleansing Storm
+						i(152047),	-- Ironvine Thorn
+						i(152044),	-- Spark of Everburning Light
+						i(152054),	-- Unwavering Soul Essence
 					},
 				}),
 				e(1985, {	-- Portal Keeper Hasabel
@@ -782,6 +829,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152002),	-- Battalion-Shattering Leggings
 						i(151987),	-- Breach-Blocker Legguards
 						i(152009),	-- Doomwalker Warboots
+						i(151956),	-- Garothi Feedback Conduit
+						i(151962),	-- Prototype Personnel Decimator
+						i(152031),	-- Doomfire Dynamo
+						i(152036),	-- Hellfire Ignition Switch
+						i(152028),	-- Spurting Reaver Heart
+						i(152039),	-- Viscous Reaver-Coolant
 					},
 				}),
 				e(1987, {	-- Felhounds of Sargeras
@@ -796,6 +849,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
 						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 						i(152000),	-- Shadowfused Chain Coif
+						i(151973),	-- Collar of Null-Flame
 						i(152004),	-- Pauldrons of the Soulburner
 						i(151949),	-- Soul-Siphon Mantle
 						i(151980),	-- Harness of Oppressing Dark
@@ -803,6 +857,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152012),	-- Molten Bite Handguards
 						i(152021),	-- Flamelicked Girdle
 						i(151983),	-- Vicious Flamepaws
+						i(153544),	-- Eye of F'Harg
+						i(152645),	-- Eye of Shatug
+						i(151968),	-- Shadow-Singed Fang
+						i(152056),	-- Corrupting Dewclaw
+						i(152291),	-- Fraternal Fervor
+						i(152027),	-- Gravitational Condensate
 					},
 				}),
 				e(1997, {	-- Antoran High Command
@@ -834,6 +894,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152006),	-- Depraved Tactician's Waistguard
 						i(152424),	-- Legwraps of the Seasoned Exterminator
 						i(152011),	-- Eredar Warcouncil Sabatons
+						i(151957),	-- Ishkar's Felshield Emitter
+						i(151969),	-- Terminus Signaling Beacon
+						i(152293),	-- Fasces of the Endless Legions
+						i(152043),	-- Lightshield Amplifier
+						i(152295),	-- Svirax's Grim Trophy
+						i(152032),	-- Twisted Engineer's Fel-Infuser
 					},
 				}),
 				e(2025, {	-- Eonar the Life-Bender
@@ -843,7 +909,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["g"] = {
 						i(152681),	-- Headdress of Living Brambles
-						i(152013),	-- Helmet of  the Hidden Sanctuary
+						i(152013),	-- Helmet of the Hidden Sanctuary
 						i(152124),	-- Bearmantle Harness
 						i(152112),	-- Dreadwake Bonecage
 						i(152118),	-- Felreaper Vest
@@ -860,6 +926,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(151952),	-- Cord of Blossoming Petals
 						i(152007),	-- Sash of the Gilded Rose
 						i(151981),	-- Life-Bearing Footpads
+						i(152688),	-- Loop of the Life-Binder
+						i(151970),	-- Vitality Resonator
+						i(152061),	-- Droplets of the Cleansing Storm
+						i(152047),	-- Ironvine Thorn
+						i(152044),	-- Spark of Everburning Light
+						i(152054),	-- Unwavering Soul Essence
 					},
 				}),
 				e(1985, {	-- Portal Keeper Hasabel
@@ -1096,6 +1168,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152002),	-- Battalion-Shattering Leggings
 						i(151987),	-- Breach-Blocker Legguards
 						i(152009),	-- Doomwalker Warboots
+						i(151956),	-- Garothi Feedback Conduit
+						i(151962),	-- Prototype Personnel Decimator
+						i(152031),	-- Doomfire Dynamo
+						i(152036),	-- Hellfire Ignition Switch
+						i(152028),	-- Spurting Reaver Heart
+						i(152039),	-- Viscous Reaver-Coolant
 					},
 				}),
 				e(1987, {	-- Felhounds of Sargeras
@@ -1110,6 +1188,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
 						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 						i(152000),	-- Shadowfused Chain Coif
+						i(151973),	-- Collar of Null-Flame
 						i(152004),	-- Pauldrons of the Soulburner
 						i(151949),	-- Soul-Siphon Mantle
 						i(151980),	-- Harness of Oppressing Dark
@@ -1117,6 +1196,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152012),	-- Molten Bite Handguards
 						i(152021),	-- Flamelicked Girdle
 						i(151983),	-- Vicious Flamepaws
+						i(153544),	-- Eye of F'Harg
+						i(152645),	-- Eye of Shatug
+						i(151968),	-- Shadow-Singed Fang
+						i(152056),	-- Corrupting Dewclaw
+						i(152291),	-- Fraternal Fervor
+						i(152027),	-- Gravitational Condensate
 					},
 				}),
 				e(1997, {	-- Antoran High Command
@@ -1148,6 +1233,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152006),	-- Depraved Tactician's Waistguard
 						i(152424),	-- Legwraps of the Seasoned Exterminator
 						i(152011),	-- Eredar Warcouncil Sabatons
+						i(151957),	-- Ishkar's Felshield Emitter
+						i(151969),	-- Terminus Signaling Beacon
+						i(152293),	-- Fasces of the Endless Legions
+						i(152043),	-- Lightshield Amplifier
+						i(152295),	-- Svirax's Grim Trophy
+						i(152032),	-- Twisted Engineer's Fel-Infuser
 					},
 				}),
 				e(2025, {	-- Eonar the Life-Bender
@@ -1157,7 +1248,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["g"] = {
 						i(152681),	-- Headdress of Living Brambles
-						i(152013),	-- Helmet of  the Hidden Sanctuary
+						i(152013),	-- Helmet of the Hidden Sanctuary
 						i(152124),	-- Bearmantle Harness
 						i(152112),	-- Dreadwake Bonecage
 						i(152118),	-- Felreaper Vest
@@ -1174,6 +1265,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(151952),	-- Cord of Blossoming Petals
 						i(152007),	-- Sash of the Gilded Rose
 						i(151981),	-- Life-Bearing Footpads
+						i(152688),	-- Loop of the Life-Binder
+						i(151970),	-- Vitality Resonator
+						i(152061),	-- Droplets of the Cleansing Storm
+						i(152047),	-- Ironvine Thorn
+						i(152044),	-- Spark of Everburning Light
+						i(152054),	-- Unwavering Soul Essence
 					},
 				}),
 				e(1985, {	-- Portal Keeper Hasabel
