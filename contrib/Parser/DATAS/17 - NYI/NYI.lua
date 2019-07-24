@@ -1421,6 +1421,7 @@ _.NeverImplemented =
 			un(1, i(60655)),	-- Unknown
 			un(1, i(60656)),	-- Unknown
 			un(1, i(60657)),	-- Unknown
+			un(1, i(60666)),	-- Vicious Gladiator's Pendant of Conquest
 		}),
 		n(-386, {	-- Trinket
 			un(1, i(12805)),	-- Orb of Fire

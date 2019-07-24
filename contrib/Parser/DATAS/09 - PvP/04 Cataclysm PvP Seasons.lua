@@ -18,7 +18,7 @@ _.PVP =
 							{"where", "npcID", -319 },	-- Select the "Weapons" header.
 							{"pop"},	-- Push all of the groups contained to the processing layer.
 							{"is", "itemID"},
-							{"not", "itemID", 146640 }, -- Don't use the Arsenal / Ensamble itself
+							{"exclude", "itemID", 146640 }, -- Don't use the Arsenal / Ensamble itself
 						},
 					}),
 					i(61360),	-- Vicious Gladiator's Barrier
@@ -313,6 +313,39 @@ _.PVP =
 					i(60636),	-- Vicious Gladiator's Treads of Meditation
 					i(60513),	-- Vicious Gladiator's Warboots of Alacrity
 					i(60509),	-- Vicious Gladiator's Warboots of Cruelty-
+				}),
+				n(-384,	{	-- Neck	
+					i(60673),	-- Vicious Gladiator's Choker of Accuracy
+					i(60670),	-- Vicious Gladiator's Choker of Proficiency
+					i(60669),	-- Vicious Gladiator's Necklace of Proficiency
+					i(60668),	-- Vicious Gladiator's Necklace of Prowess
+					i(60662),	-- Vicious Gladiator's Pendant of Alacrity
+					i(60661),	-- Vicious Gladiator's Pendant of Diffusion
+					i(60664),	-- Vicious Gladiator's Pendant of Meditation
+				}),
+				n(-385,	{	-- Finger
+					i(60647),	-- Vicious Gladiator's Band of Accuracy
+					i(60645),	-- Vicious Gladiator's Band of Cruelty
+					i(60649),	-- Vicious Gladiator's Band of Meditation
+					i(60658),	-- Vicious Gladiator's Ring of Accuracy
+					i(60659),	-- Vicious Gladiator's Ring of Cruelty
+					i(60651),	-- Vicious Gladiator's Signet of Accuracy
+					i(60650),	-- Vicious Gladiator's Signet of Cruelty
+				}),
+				n(-386,	{	-- Trinket
+					i(61033),	-- Vicious Gladiator's Badge of Conquest
+					i(61026),	-- Vicious Gladiator's Emblem of Cruelty
+					i(61031),	-- Vicious Gladiator's Emblem of Meditation
+					i(61032),	-- Vicious Gladiator's Emblem of Tenacity
+					i(61047),	-- Vicious Gladiator's Insignia of Conquest
+					i(61045),	-- Vicious Gladiator's Insignia of Dominance
+					i(61046),	-- Vicious Gladiator's Insignia of Victory
+					i(60794),	-- Vicious Gladiator's Medallion of Cruelty (A)
+					i(60799),	-- Vicious Gladiator's Medallion of Meditation (A)
+					i(60800),	-- Vicious Gladiator's Medallion of Tenacity (A)
+					i(60801),	-- Vicious Gladiator's Medallion of Cruelty (H)
+					i(60806),	-- Vicious Gladiator's Medallion of Meditation (H)
+					i(60807),	-- Vicious Gladiator's Medallion of Tenacity (H)
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
