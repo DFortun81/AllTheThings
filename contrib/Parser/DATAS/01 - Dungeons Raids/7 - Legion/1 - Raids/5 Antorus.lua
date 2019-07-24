@@ -405,7 +405,7 @@ _.Instances = { tier(7, {	-- Legion
 						e(1984, {	-- Aggramar
 							["crs"] = { 121975 },	-- Aggramar
 							["g"] = {
-								i(152094),	-- Taeshalach (not in DJ)
+								i(152094),	-- Taeshalach
 								i(152127),	-- Bearmantle Headdress
 								i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 								i(152145),	-- Douli of Chi'Ji
@@ -426,6 +426,12 @@ _.Instances = { tier(7, {	-- Legion
 								i(152282),	-- Caustic Titanspite Legguards
 								i(152684),	-- Greatboots of the Searing Tempest
 								i(151940),	-- Sandals of the Reborn Colossus
+								i(152093),	-- Gorshalach's Legacy
+								i(151978),	-- Smoldering Titanguard
+								i(152026),	-- Prototype Titan-Disc
+								i(152038),	-- Pyretic Bronze Clasp
+								i(152033),	-- Sliver of Corruption
+								i(152052),	-- Sporemound Seedling
 							},
 						}),
 						cr(124828, e(2031, {	-- Argus the Unmaker
@@ -769,7 +775,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1984, {	-- Aggramar
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
-						i(152094),	-- Taeshalach (not in DJ)
+						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 						i(152145),	-- Douli of Chi'Ji
@@ -790,6 +796,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152282),	-- Caustic Titanspite Legguards
 						i(152684),	-- Greatboots of the Searing Tempest
 						i(151940),	-- Sandals of the Reborn Colossus
+						i(152093),	-- Gorshalach's Legacy
+						i(151978),	-- Smoldering Titanguard
+						i(152026),	-- Prototype Titan-Disc
+						i(152038),	-- Pyretic Bronze Clasp
+						i(152033),	-- Sliver of Corruption
+						i(152052),	-- Sporemound Seedling
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
@@ -1138,7 +1150,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1984, {	-- Aggramar
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
-						i(152094),	-- Taeshalach (not in DJ)
+						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 						i(152145),	-- Douli of Chi'Ji
@@ -1159,6 +1171,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152282),	-- Caustic Titanspite Legguards
 						i(152684),	-- Greatboots of the Searing Tempest
 						i(151940),	-- Sandals of the Reborn Colossus
+						i(152093),	-- Gorshalach's Legacy
+						i(151978),	-- Smoldering Titanguard
+						i(152026),	-- Prototype Titan-Disc
+						i(152038),	-- Pyretic Bronze Clasp
+						i(152033),	-- Sliver of Corruption
+						i(152052),	-- Sporemound Seedling
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
@@ -1511,7 +1529,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1984, {	-- Aggramar
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
-						i(152094),	-- Taeshalach (not in DJ)
+						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 						i(152145),	-- Douli of Chi'Ji
@@ -1532,6 +1550,12 @@ _.Instances = { tier(7, {	-- Legion
 						i(152282),	-- Caustic Titanspite Legguards
 						i(152684),	-- Greatboots of the Searing Tempest
 						i(151940),	-- Sandals of the Reborn Colossus
+						i(152093),	-- Gorshalach's Legacy
+						i(151978),	-- Smoldering Titanguard
+						i(152026),	-- Prototype Titan-Disc
+						i(152038),	-- Pyretic Bronze Clasp
+						i(152033),	-- Sliver of Corruption
+						i(152052),	-- Sporemound Seedling
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
