@@ -223,6 +223,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51621, {	-- Tidal Teachings
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50958, {	-- Watch Your Wallets
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

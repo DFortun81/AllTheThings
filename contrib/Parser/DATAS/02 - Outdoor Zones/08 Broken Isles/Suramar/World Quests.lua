@@ -7,7 +7,6 @@ _.Zones =
 		m(680, {	-- Suramar
 			n(-34, {	-- World Quests
 --[[
-				q(45068),	-- Barrels o' Fun
 				q(41493),	-- Brimstone Destroyer
 				q(41492),	-- Brimstone Destroyer
 				q(41491),	-- Brimstone Destroyer
@@ -17,7 +16,6 @@ _.Zones =
 				q(44118),	-- DANGER: Auditor Esiel
 				q(44121),	-- DANGER: Az'jatar
 				q(41697),	-- DANGER: Colerian, Alteria, and Selenyi
-				
 				q(42799),	-- DANGER: Oglok the Furious
 				q(44122),	-- DANGER: Sorallus
 				q(44119),	-- DANGER: Volshax, Breaker of Will
@@ -54,7 +52,6 @@ _.Zones =
 				q(41557),	-- Slab of Bacon
 				q(41262),	-- Slab of Bacon
 				q(41539),	-- Sparkling Starlight Roses
-				q(41548),	-- Starlight Rose Cluster
 				q(41301),	-- Starlight Rose Cluster
 				q(41318),	-- Supplies Needed: Felslate
 				q(41303),	-- Supplies Needed: Starlight Roses
@@ -113,6 +110,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44780, {	-- Backlash
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45068, {	-- Barrels o' Fun
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -285,6 +286,11 @@ _.Zones =
 				q(43959, {	-- Stelleris Shakedown
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41548, {	-- Starlight Rose Cluster
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(44817, {	-- Stirring the Swarm
 					["lvl"] = 110,

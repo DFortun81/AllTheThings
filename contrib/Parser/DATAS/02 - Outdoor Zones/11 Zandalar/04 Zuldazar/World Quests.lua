@@ -216,6 +216,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50885, { 	-- Lei-zhi
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51636, {	-- Make Loh Go
 						["lvl"] = 120,
 						["collectible"] = false,

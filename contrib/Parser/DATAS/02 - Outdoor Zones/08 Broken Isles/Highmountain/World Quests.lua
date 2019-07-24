@@ -90,7 +90,6 @@ _.Zones =
 				q(44292),	-- WANTED: Majestic Elderhorn
 				q(44294),	-- WANTED: Sekhan
 				q(43619),	-- WANTED: Shara Felbreath
-				q(41838),	-- WANTED: Slumber
 				q(41257),	-- Warden Tower Assault: Cordana's Apex
 				q(41420),	-- Warden Tower Assault: Nightwatcher's Perch
 				q(41205),	-- Warm Leystone Deposits
@@ -371,6 +370,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44293, {	-- WANTED: Slumber
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41838, {	-- WANTED: Slumber
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

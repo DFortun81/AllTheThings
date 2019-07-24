@@ -8,7 +8,6 @@ _.Zones =
 			n(-34, {	-- World Quests
 --[[
 				n(-34, {	-- World Quests
-					q(48837),	-- All-Seer Xanarian
 					q(49057),	-- Minixis
 					q(49058),	-- One-of-Many
 					q(49056),	-- Pilfer
@@ -22,6 +21,10 @@ _.Zones =
 				}),
 --]]				
 				q(48832, {	-- Admiral Rel'var
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(48837, {	-- All-Seer Xanarian
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -408,6 +408,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(52309, {	-- SandFang
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52316, {	-- Sea Creatures Are Weird
 						["qg"] = 141002,	-- Ellie Vern
 						["lvl"] = 120,

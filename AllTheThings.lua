@@ -11871,7 +11871,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				830,	-- Krokuun
 				882,	-- Mac'Aree
 				1355,	-- Nazjatar
-				1462,	-- Mechagon
+				-- 1462,	-- Mechagon does not need to be included as a separate mapID as it is contained in the the Kul Tiras mapID
 			};
 			local OnUpdateForItem = function(self)
 				for i,o in ipairs(self.g) do

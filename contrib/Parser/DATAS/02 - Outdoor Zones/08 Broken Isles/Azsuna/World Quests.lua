@@ -53,7 +53,7 @@ _.Zones =
 				q(43804),	-- Hate the Hatecoil
 				q(41610),	-- Huge Cursed Queenfish
 				q(41265),	-- Huge Cursed Queenfish
-				q(42277),	-- Interlopers!
+				
 				q(41528),	-- Iridescent Aethril
 				q(41498),	-- Leystone Basilisks
 				q(41501),	-- Leystone Basilisks
@@ -80,7 +80,6 @@ _.Zones =
 				q(42112),	-- The Withered Return
 				q(41322),	-- Unscratched Hippogryph Scale
 				q(42636),	-- WANTED: Arcanist Shal'iman
-				q(42620),	-- WANTED: Arcavellus
 				q(43426),	-- WANTED: Brogozog
 				q(43607),	-- WANTED: Brogozog
 				q(43608),	-- WANTED: Captain Volo'ren
@@ -211,6 +210,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(42277, {	-- Interlopers!
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(42021, {	-- Investigation at Mak'rana
 					["lvl"] = 110,
@@ -385,6 +388,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43606, {	-- WANTED: Arcavellus
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42620, {	-- WANTED: Arcavellus
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
