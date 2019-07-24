@@ -12,11 +12,6 @@ _.Zones =
 					Scrappy can be found at (70.5,30.5) and requires an energy cell to revive him
 					R33-DR - 63.4, 57.0 interactive "data analyzer" npc. Possibly part of a puzzle?
 				]]--
-				i(169591, {	-- Cracked Numeric Cylinder
-					q(56421, {	-- Cracked Numeric Cylinder
-						["isDaily"] = true,
-					}),
-				}),
 				q(56493, {	-- A Direct Approach
 					["qg"] = 155188,	-- Scrollsage Nola
 					["coord"] = { 72.2, 37.2, 862 },
@@ -223,6 +218,12 @@ _.Zones =
 					["coord"] = { 73.1, 33.3, 1462 },
 					["sourceQuest"] = 55707,	-- First One's Free
 				}),
+				{
+					["itemID"] = 169591,	-- Cracked Numeric Cylinder
+					["questID"] = 56421,	-- Cracked Numeric Cylinder
+					["sourceQuest"] = 56410,	-- Discs of Norgannon
+					["isDaily"] = true,
+				},
 				q(56049, {	-- Deck 'Em -- only available during "Time for Heroics" ?
 					["qg"] = 153538,	-- Adalin Halfheight
 					["coord"] = { 75.2, 69.8, 862 },
