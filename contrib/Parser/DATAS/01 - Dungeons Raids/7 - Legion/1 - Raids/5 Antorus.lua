@@ -264,12 +264,20 @@ _.Instances = { tier(7, {	-- Legion
 							["g"] = {
 								i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 								i(152001),	-- Nexus Conductor's Headgear
+								i(151965),	-- Vulcanarcore Pendant
 								i(152008),	-- Reality-Splitting Wristguards
 								i(151941),	-- Aranasi Shadow-Weaver's Gloves
 								i(152086),	-- Grips of Hungering Shadows
 								i(152020),	-- Nathrezim Battle Girdle
 								i(151990),	-- Portal Keeper's Cincture
 								i(151945),	-- Lady Dacidion's Silk Slippers
+								i(152063),	-- Seal of the Portalmaster
+								i(151976),	-- Riftworld Codex
+								i(151958),	-- Tarratus Keystone
+								i(152035),	-- Blazing Dreadsteed Horseshoe
+								i(152057),	-- Crepuscular Skitterer Egg
+								i(152049),	-- Fel-Engraved Handbell
+								i(152041),	-- Sublimating Portal Frost
 							},
 						}),
 						e(2009, {	-- Imonar the Soulhunter
@@ -604,12 +612,20 @@ _.Instances = { tier(7, {	-- Legion
 					["g"] = {
 						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
+						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
 						i(151941),	-- Aranasi Shadow-Weaver's Gloves
 						i(152086),	-- Grips of Hungering Shadows
 						i(152020),	-- Nathrezim Battle Girdle
 						i(151990),	-- Portal Keeper's Cincture
 						i(151945),	-- Lady Dacidion's Silk Slippers
+						i(152063),	-- Seal of the Portalmaster
+						i(151976),	-- Riftworld Codex
+						i(151958),	-- Tarratus Keystone
+						i(152035),	-- Blazing Dreadsteed Horseshoe
+						i(152057),	-- Crepuscular Skitterer Egg
+						i(152049),	-- Fel-Engraved Handbell
+						i(152041),	-- Sublimating Portal Frost
 					},
 				}),
 				e(2009, {	-- Imonar the Soulhunter
@@ -939,12 +955,20 @@ _.Instances = { tier(7, {	-- Legion
 					["g"] = {
 						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
+						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
 						i(151941),	-- Aranasi Shadow-Weaver's Gloves
 						i(152086),	-- Grips of Hungering Shadows
 						i(152020),	-- Nathrezim Battle Girdle
 						i(151990),	-- Portal Keeper's Cincture
 						i(151945),	-- Lady Dacidion's Silk Slippers
+						i(152063),	-- Seal of the Portalmaster
+						i(151976),	-- Riftworld Codex
+						i(151958),	-- Tarratus Keystone
+						i(152035),	-- Blazing Dreadsteed Horseshoe
+						i(152057),	-- Crepuscular Skitterer Egg
+						i(152049),	-- Fel-Engraved Handbell
+						i(152041),	-- Sublimating Portal Frost
 					},
 				}),
 				e(2009, {	-- Imonar the Soulhunter
@@ -1278,12 +1302,20 @@ _.Instances = { tier(7, {	-- Legion
 					["g"] = {
 						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
+						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
 						i(151941),	-- Aranasi Shadow-Weaver's Gloves
 						i(152086),	-- Grips of Hungering Shadows
 						i(152020),	-- Nathrezim Battle Girdle
 						i(151990),	-- Portal Keeper's Cincture
 						i(151945),	-- Lady Dacidion's Silk Slippers
+						i(152063),	-- Seal of the Portalmaster
+						i(151976),	-- Riftworld Codex
+						i(151958),	-- Tarratus Keystone
+						i(152035),	-- Blazing Dreadsteed Horseshoe
+						i(152057),	-- Crepuscular Skitterer Egg
+						i(152049),	-- Fel-Engraved Handbell
+						i(152041),	-- Sublimating Portal Frost
 					},
 				}),
 				e(2009, {	-- Imonar the Soulhunter
