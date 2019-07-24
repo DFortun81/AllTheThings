@@ -1328,16 +1328,20 @@ subroutines = {
 	["legion_relinquished_base"] = function()
 		return {
 			-- Legion Legendaries
-			--[[
 			{"select", "npcID", 106655},	-- Arcanomancer Vridiel
 			{"pop"},	-- Remove Arcanomancer Vridiel and push his children into the processing queue.
 			{"pop"},	-- Remove the Legendary Tokens and push the children into the processing queue.
-			{"finalize"},	-- Push the Unsullied items to the finalized list.
-			]]--
+			{"finalize"},	-- Push the items to the finalized list.
 			
 			-- PVP Gear
-			-- TODO: Add PVP Gear
 			-- Demonic Combatant & Gladiator Season 7 Gear
+			{"select", "npcID", -688},	-- Demonic Gladiator Season 7
+			{"pop"},	-- Remove Season Header and push the children into the processing queue.
+			{"pop"},	-- Remove Faction Header and push the children into the processing queue.
+			{"where", "npcID", -660},	-- Select only the Aspirant / Combatant Gear Headers.
+			{"pop"},	-- Remove Aspirant / Combatant Gear Header and push the children into the processing queue.
+			{"pop"},	-- Remove Class / Armor Header and push the children into the processing queue.
+			{"finalize"},	-- Push the items to the finalized list.
 			
 			-- Unsullied Gear
 			{"select", "itemID", 152740},	-- Unsullied Cloak
