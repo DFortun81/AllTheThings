@@ -140,141 +140,147 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			ach(12026, {	-- Invasion Obliteration
-				["g"] = {
-					e(2010, {	-- Matron Folnuna
-						["questID"] = 49169,
-						["mapID"] = 929,
-						["modelScale"] = 0.65,
-						["creatureID"] = 124514,
-						["isRaid"] = true,
-						["crs"] = { 127528 },	-- Greater Invasion Point: Matron Folnuna
-						["g"] = {
-							i(152376),	-- Crown of Burning Resolve
-							i(152354),	-- Accursed Defiler's Mantle
-							i(152356),	-- Fel-Absorbant Wristbands
-							i(152349),	-- Nefarious Light-Step Slippers
-							i(152358),	-- Imp-Overseer's Vest
-							i(152360),	-- Gloves of Barbarous Feats
-							i(152359),	-- Vile Drifter's Footpads
-							i(152369),	-- Helm of the Vigilant Eye
-							i(152371),	-- Shoulderguards of Despondent Masses
-							i(152372),	-- Waistguard of Devilish Deeds
-							i(152375),	-- Gauntlets of Barbaric Cruelty
-							i(152380),	-- Waistguard of Fel Magics
-							i(152053),	-- Essence of the Burgeoning Brood
-							i(152346),	-- Frigid Earring
-						},
-					}),
-					e(2011, {	-- Mistress Alluradel
-						["mapID"] = 928,
-						["questID"] = 49167,
-						["modelScale"] = 0.95,
-						["creatureID"] = 124625,
-						["isRaid"] = true,
-						["crs"] = { 127536 },	-- Greater Invasion Point: Mistress Alluradel
-						["g"] = {
-							i(152351),	-- Mesmerizing Soul Hood
-							i(152354),	-- Accursed Defiler's Mantle
-							i(152349),	-- Nefarious Light-Step Slippers
-							i(152363),	-- Fel-Spike Shoulderpads
-							i(152364),	-- Cinch of Detestable Guile
-							i(152362),	-- Leggings of Heinous Acts
-							i(152366),	-- Enthralling Chain Armor
-							i(152373),	-- Poison-Barbed Bracers
-							i(152372),	-- Waistguard of Devlish Deeds
-							i(152379),	-- Spaulders of Vile Determination
-							i(152378),	-- Breastplate of Terminal End
-							i(152374),	-- Soul Crushing Stompers
-						},
-					}),
-					e(2012, {	-- Inquisitor Meto
-						["questID"]  = 49166,
-						["mapID"] = 930,
-						["modelScale"] = 0.85,
-						["creatureID"] = 124592,
-						["isRaid"] = true,
-						["crs"] = { 127535 },	-- Greater Invasion Point: Inquisitor Meto
-						["g"] = {
-							i(152353),	-- Robes of Demonic Purpose
-							i(152350),	-- Gloves of Grim Direction
-							i(152349),	-- Nefarious Light-Step Slippers
-							i(152361),	-- Horned Hood of Retaliation
-							i(152364),	-- Cinch of Detestable Guile
-							i(152359),	-- Vile Drifter's Footpads
-							i(152371),	-- Shoulderguards of Despondent Masses
-							i(152368),	-- Fel-Linked Crushers
-							i(152370),	-- Legguards of Doomed Chattel
-							i(152378),	-- Breastplate of Terminal End
-							i(152381),	-- Tainted Corruptor's Vambraces
-							i(152380),	-- Waistguard of Fel Magics
-						},
-					}),
-					e(2013, {	-- Occularus
-						["questID"] = 49170,
-						["mapID"] = 932,
-						["modelScale"] = 0.50,
-						["creatureID"] = 124492,
-						["isRaid"] = true,
-						["crs"] = { 127533 },	-- Greater Invasion Point: Occularus
-						["g"] = {
-							i(152351),	-- Mesmerizing Soul Hood
-							i(152354),	-- Accursed Defiler's Mantle
-							i(152355),	-- Sash of Diabolic Preparation
-							i(152358),	-- Imp-Overseer's Vest
-							i(152360),	-- Gloves of Barbarous Feats
-							i(152369),	-- Helm of the Vigilant Eye
-							i(152373),	-- Poison-Barbed Bracers
-							i(152367),	-- Sabatons of Ceaseless Assault
-							i(152381),	-- Tainted Corruptor's Vambraces
-							i(152377),	-- Gore-Soaked Legplates
-							i(152374),	-- Soul Crushing Stompers
-						},
-					}),
-					e(2014, {	-- Sotanathor
-						["questID"] = 49171,
-						["mapID"] = 931,
-						["modelScale"] = 0.75,
-						["creatureID"] = 124555,
-						["isRaid"] = true,
-						["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
-						["g"] = {
-							i(152353),	-- Robes of Demonic Purpose
-							i(152350),	-- Gloves of Grim Direction
-							i(152352),	-- Subjugated Drudge's Leggings
-							i(152361),	-- Horned Hood of Retaliation
-							i(152362),	-- Leggings of Heinous Acts
-							i(152365),	-- Bracers of Diabolic Fury
-							i(152366),	-- Enthralling Chain Armor
-							i(152368),	-- Fel-Linked Crushers
-							i(152372),	-- Waistguard of Devlish Deeds
-							i(152379),	-- Spaulders of Vile Determination
-							i(152375),	-- Gauntlets of Barbaric Cruelty
-							i(152377),	-- Gore-Soaked Legplates
-						},
-					}),
-					e(2015, {	-- Pit Lord Vilemus
-						["questID"] = 49168,
-						["mapID"] = 927,
-						["modelScale"] = 1.15,
-						["creatureID"] = 124719,
-						["isRaid"] = true,
-						["crs"] = { 127531 },	-- Greater Invasion Point: Pit Lord Vilemus
-						["g"] = {
-							i(152356),	-- Fel-Absorbant Wristbands
-							i(152355),	-- Sash of Diabolic Preparation
-							i(152352),	-- Subjugated Drudge's Leggings
-							i(152363),	-- Fel-Spike Shoulderpads
-							i(152365),	-- Bracers of Diabolic Fury
-							i(152360),	-- Gloves of Barbarous Feats
-							i(152368),	-- Fel-Linked Crushers
-							i(152370),	-- Legguards of Doomed Chattel
-							i(152367),	-- Sabatons of Ceaseless Assault
-							i(152376),	-- Crown of Burning Resolve
-							i(152378),	-- Breastplate of Terminal End
-							i(152374),	-- Soul Crushing Stompers
-						},
-					}),
-				},
+				e(2010, {	-- Matron Folnuna
+					["questID"] = 49169,
+					["mapID"] = 929,
+					["modelScale"] = 0.65,
+					["creatureID"] = 124514,
+					["isRaid"] = true,
+					["crs"] = { 127528 },	-- Greater Invasion Point: Matron Folnuna
+					["g"] = {
+						i(152376),	-- Crown of Burning Resolve
+						i(152369),	-- Helm of the Vigilant Eye
+						i(152354),	-- Accursed Defiler's Mantle
+						i(152371),	-- Shoulderguards of Despondent Masses
+						i(152358),	-- Imp-Overseer's Vest
+						i(152356),	-- Fel-Absorbant Wristbands
+						i(152375),	-- Gauntlets of Barbaric Cruelty
+						i(152360),	-- Gloves of Barbarous Feats
+						i(152372),	-- Waistguard of Devilish Deeds
+						i(152380),	-- Waistguard of Fel Magics
+						i(152349),	-- Nefarious Light-Step Slippers
+						i(152359),	-- Vile Drifter's Footpads
+						i(152053),	-- Essence of the Burgeoning Brood
+						i(152346),	-- Frigid Earring
+					},
+				}),
+				e(2011, {	-- Mistress Alluradel
+					["mapID"] = 928,
+					["questID"] = 49167,
+					["modelScale"] = 0.95,
+					["creatureID"] = 124625,
+					["isRaid"] = true,
+					["crs"] = { 127536 },	-- Greater Invasion Point: Mistress Alluradel
+					["g"] = {
+						i(152351),	-- Mesmerizing Soul Hood
+						i(152354),	-- Accursed Defiler's Mantle
+						i(152363),	-- Fel-Spike Shoulderpads
+						i(152379),	-- Spaulders of Vile Determination
+						i(152378),	-- Breastplate of Terminal End
+						i(152366),	-- Enthralling Chain Armor
+						i(152373),	-- Poison-Barbed Bracers
+						i(152364),	-- Cinch of Detestable Guile
+						i(152372),	-- Waistguard of Devlish Deeds
+						i(152362),	-- Leggings of Heinous Acts
+						i(152349),	-- Nefarious Light-Step Slippers
+						i(152374),	-- Soul Crushing Stompers
+						i(152294),	-- Fel Mistress' Brand
+						i(152030),	-- Scourge of Perverse Desire
+					},
+				}),
+				e(2012, {	-- Inquisitor Meto
+					["questID"]  = 49166,
+					["mapID"] = 930,
+					["modelScale"] = 0.85,
+					["creatureID"] = 124592,
+					["isRaid"] = true,
+					["crs"] = { 127535 },	-- Greater Invasion Point: Inquisitor Meto
+					["g"] = {
+						i(152361),	-- Horned Hood of Retaliation
+						i(152371),	-- Shoulderguards of Despondent Masses
+						i(152378),	-- Breastplate of Terminal End
+						i(152353),	-- Robes of Demonic Purpose
+						i(152381),	-- Tainted Corruptor's Vambraces
+						i(152368),	-- Fel-Linked Crushers
+						i(152350),	-- Gloves of Grim Direction
+						i(152364),	-- Cinch of Detestable Guile
+						i(152380),	-- Waistguard of Fel Magics
+						i(152370),	-- Legguards of Doomed Chattel
+						i(152349),	-- Nefarious Light-Step Slippers
+						i(152359),	-- Vile Drifter's Footpads
+						i(152290),	-- Censer of Dark Intent
+						i(152344),	-- Meto's Orb of Entropy
+					},
+				}),
+				e(2013, {	-- Occularus
+					["questID"] = 49170,
+					["mapID"] = 932,
+					["modelScale"] = 0.50,
+					["creatureID"] = 124492,
+					["isRaid"] = true,
+					["crs"] = { 127533 },	-- Greater Invasion Point: Occularus
+					["g"] = {
+						i(152369),	-- Helm of the Vigilant Eye
+						i(152351),	-- Mesmerizing Soul Hood
+						i(152354),	-- Accursed Defiler's Mantle
+						i(152358),	-- Imp-Overseer's Vest
+						i(152373),	-- Poison-Barbed Bracers
+						i(152381),	-- Tainted Corruptor's Vambraces
+						i(152360),	-- Gloves of Barbarous Feats
+						i(152355),	-- Sash of Diabolic Preparation
+						i(152377),	-- Gore-Soaked Legplates
+						i(152367),	-- Sabatons of Ceaseless Assault
+						i(152374),	-- Soul Crushing Stompers
+						i(152347),	-- Occularus' Unblemished Lens
+					},
+				}),
+				e(2014, {	-- Sotanathor
+					["questID"] = 49171,
+					["mapID"] = 931,
+					["modelScale"] = 0.75,
+					["creatureID"] = 124555,
+					["isRaid"] = true,
+					["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
+					["g"] = {
+						i(152361),	-- Horned Hood of Retaliation
+						i(152379),	-- Spaulders of Vile Determination
+						i(152366),	-- Enthralling Chain Armor
+						i(152353),	-- Robes of Demonic Purpose
+						i(152365),	-- Bracers of Diabolic Fury
+						i(152368),	-- Fel-Linked Crushers
+						i(152375),	-- Gauntlets of Barbaric Cruelty
+						i(152350),	-- Gloves of Grim Direction
+						i(152372),	-- Waistguard of Devlish Deeds
+						i(152377),	-- Gore-Soaked Legplates
+						i(152362),	-- Leggings of Heinous Acts
+						i(152352),	-- Subjugated Drudge's Leggings
+						i(152348),	-- Sotanathor's Thundering Hoof
+						i(152292),	-- Spike of Immortal Command
+					},
+				}),
+				e(2015, {	-- Pit Lord Vilemus
+					["questID"] = 49168,
+					["mapID"] = 927,
+					["modelScale"] = 1.15,
+					["creatureID"] = 124719,
+					["isRaid"] = true,
+					["crs"] = { 127531 },	-- Greater Invasion Point: Pit Lord Vilemus
+					["g"] = {
+						i(152376),	-- Crown of Burning Resolve
+						i(152363),	-- Fel-Spike Shoulderpads
+						i(152378),	-- Breastplate of Terminal End
+						i(152365),	-- Bracers of Diabolic Fury
+						i(152356),	-- Fel-Absorbant Wristbands
+						i(152368),	-- Fel-Linked Crushers
+						i(152360),	-- Gloves of Barbarous Feats
+						i(152355),	-- Sash of Diabolic Preparation
+						i(152370),	-- Legguards of Doomed Chattel
+						i(152352),	-- Subjugated Drudge's Leggings
+						i(152367),	-- Sabatons of Ceaseless Assault
+						i(152374),	-- Soul Crushing Stompers
+						i(152345),	-- Vilemus' Bile
+					},
+				}),
 			}),
 		},
 	}),
