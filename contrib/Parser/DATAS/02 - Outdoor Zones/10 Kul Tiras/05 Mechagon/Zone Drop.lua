@@ -41,14 +41,14 @@ _.Zones =
 							}),
 						}),
 						i(169396),	-- Echoing Oozeling
-						i(169690, {    -- Vinyl: Battle of Gnomeregan
-                            ["questID"] = 56517,    -- Vinyl: Battle of Gnomeregan
+						i(169692, {    -- Vinyl: Triumph of Gnomeregan
+                            ["questID"] = 56519,    -- Triumph of Gnomeregan
                             ["g"] = {
-                                crit(4, {    -- Battle of Gnomeregan
+                                crit(6, {    -- Triumph of Gnomeregan
                                     ["achievementID"] = 13686,    -- Junkyard Melomanic
                                 }),
                             },
-						}),
+                        }),
 					},
 				}),
 				i(159228),  -- Freehold Cape
