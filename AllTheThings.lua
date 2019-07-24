@@ -1588,6 +1588,20 @@ ResolveSymbolicLink = function(o)
 						end
 					end
 				end
+			elseif cmd == "exclude" then
+				-- Instruction to exclude search results where a key value contains a value.
+				local key = sym[2];
+				local clone = {unpack(sym)};
+				table.remove(clone, 1);
+				table.remove(clone, 1);
+				if #clone > 0 then
+					for k=#searchResults,1,-1 do
+						local s = searchResults[k];
+						if s[key] and contains(clone, s[key]) then
+							table.remove(searchResults, k);
+						end
+					end
+				end
 			elseif cmd == "isrelic" then
 				-- Instruction to include only search results where an item is a relic.
 				for k=#searchResults,1,-1 do
@@ -7708,7 +7722,7 @@ local function CreateMiniListForGroup(group)
 				local resolved = ResolveSymbolicLink(group);
 				if resolved then
 					for i=#resolved,1,-1 do
-						resolved[i] = CreateObject(o);
+						resolved[i] = CreateObject(resolved[i]);
 					end
 				end
 				popout.data.g = resolved;

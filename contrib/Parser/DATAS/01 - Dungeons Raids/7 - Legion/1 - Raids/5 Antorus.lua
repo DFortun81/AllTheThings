@@ -68,161 +68,21 @@ _.Instances = { tier(7, {	-- Legion
 				n(-17, { 	-- Quests
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
-						i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
-							i(151955),	-- Acrid Catalyst Injector
-							i(151975),	-- Apocalypse Drive
-							i(151941),	-- Aranasi Shadow-Weaver's Gloves
-							i(152064),	-- Band of the Sargerite Smith
-							i(152002),	-- Battalion-Shattering Leggings
-							i(151991),	-- Belt of Fractured Sanity
-							i(152035),	-- Blazing Dreadsteed Horseshoe
-							i(151954),	-- Blood-Drenched Bindings
-							i(152414),	-- Bracers of Wanton Morality
-							i(151987),	-- Breach-Blocker Legguards
-							i(152018),	-- Breastplate of Molten Rebirth
-							i(152010),	-- Burning Coven Sabatons
-							i(151960),	-- Carafe of Searing Light
-							i(152282),	-- Caustic Titanspike Legguards
-							i(152283),	-- Chain of the Unmaker
-							i(151937),	-- Cloak of the Burning Vanguard
-							i(151973),	-- Collar of Null-Flame
-							i(155853),	-- Conch of the Thunderer
-							i(155848),	-- Condensed Blight Orb
-							i(151952),	-- Cord of Blossoming Petals
-							i(151942),	-- Cord of Surging Hysteria
-							i(152056),	-- Corrupting Dewclaw
-							i(152016),	-- Cosmos-Culling Legplates
-							i(152046),	-- Coven Prayer Bead
-							i(152057),	-- Crepuscular Skitterer Egg
-							i(151943),	-- Crown of Relentless Annihilation
-							i(155847),	-- Cruor of the Avenger
-							i(151986),	-- Death-Enveloping Cincture
-							i(152048),	-- Decimator Crankshaft
-							i(151996),	-- Deft Soulhunter's Sabatons
-							i(152412),	-- Depraved Machinist's Footpads
-							i(152006),	-- Depraved Tactician's Waistguard
-							i(151977),	-- Diima's Glacial Aegis
-							i(152031),	-- Doomfire Dynamo
-							i(152009),	-- Doomwalker Warboots
-							i(151938),	-- Drape of the Spirited Hunt
-							i(152061),	-- Droplets of the Cleansing Storm
-							i(152051),	-- Eidolon of Life
-							i(151951),	-- Enhanced Worldscorcher Cinch
-							i(152011),	-- Eredar Warcouncil Sabatons
-							i(151974),	-- Eye of Shatug
-							i(151950),	-- Fallen Avenger's Amice
-							i(152024),	-- Fallen Magi's Seerstone
-							i(152293),	-- Fasces of the Endless Legions
-							i(152049),	-- Fel-Engraved Handbell
-							i(151946),	-- Fervent Twilight Legwraps
-							i(151992),	-- Fiendish Logistician's Wristwraps
-							i(152021),	-- Flamelicked Girdle
-							i(151994),	-- Fleet Commander's Hauberk
-							i(155849),	-- Flickering Ember of Rage
-							i(151963),	-- Forgefiend's Fabricator
-							i(152291),	-- Fraternal Fervor
-							i(152040),	-- Frigid Gloomstone
-							i(152679),	-- Gambeson of Sargeras' Corruption
-							i(151956),	-- Garothi Feedback Conduit
-							i(151985),	-- General Erodus' Tricorne
-							i(152093),	-- Gorshalach's Legacy
-							i(152027),	-- Gravitational Condensate
-							i(152684),	-- Greatboots of the Searing Tempest
-							i(152062),	-- Greatcloak of the Dark Pantheon
-							i(152015),	-- Greaves of Mercurial Allegiance
-							i(152086),	-- Grips of Hungering Shadows
-							i(152022),	-- Grond-Father Girdle
-							i(152680),	-- Handwraps of Inevitable Doom
-							i(151980),	-- Harness of Oppressing Dark
-							i(152681),	-- Headdress of Living Brambles
-							i(151998),	-- Heedless Eradication Gauntlets
-							i(152036),	-- Hellfire Ignition Switch
-							i(152423),	-- Helm of the Awakened Soul
-							i(152013),	-- Helmet of the Hidden Sanctuary
-							i(152289),	-- Highfather's Machination
-							i(152042),	-- Hoarfrost-Beast Talon
-							i(152687),	-- Imonar's Demi-Gauntlets
-							i(152047),	-- Ironvine Thorn
-							i(151957),	-- Ishkar's Felshield Emitter
-							i(152055),	-- Kin'garoth's Oil-Sump
-							i(151945),	-- Lady Dacidion's Silk Slippers
-							i(152003),	-- Legguards of Numbing Gloom
-							i(152424),	-- Legwraps of the Seasoned Exterminator
-							i(151981),	-- Life-Bearing Footpads
-							i(152043),	-- Lightshield Amplifier
-							i(152688),	-- Loop of the Life-Binder
-							i(151984),	-- Lurid Grips of the Obscene
-							i(151948),	-- Magma-Spattered Smock
-							i(151953),	-- Man'ari Pyromancer Cuffs
-							i(155846),	-- Miniaturized Cosmic Beacon
-							i(152012),	-- Molten Bite Handguards
-							i(155855),	-- Mote of the Forgemaster
-							i(152050),	-- Mysterious Petrified Egg
-							i(152686),	-- Nascent Deathbringer's Clutches
-							i(152020),	-- Nathrezim Battle Girdle
-							i(152092),	-- Nathrezim Incisor
-							i(151997),	-- Nathrezim Shade-Walkers
-							i(152060),	-- Neuroshock Electrode
-							i(152001),	-- Nexus Conductor's Headgear
-							i(152034),	-- Obliterator Propellant
-							i(152005),	-- Pauldrons of Colossal Burden
-							i(152019),	-- Pauldrons of the Eternal Offensive
-							i(152004),	-- Pauldrons of the Soulburner
-							i(151990),	-- Portal Keeper's Cincture
-							i(151999),	-- Preysnare Vicegrips
-							i(151962),	-- Prototype Personnel Decimator
-							i(152026),	-- Prototype Titan-Disc
-							i(152038),	-- Pyretic Bronze Clasp
-							i(152008),	-- Reality-Splitting Wristguards
-							i(151976),	-- Riftworld Codex
-							i(155850),	-- Rime of the Spirit Realm
-							i(151966),	-- Riveted Choker of Delirium
-							i(151995),	-- Robes of the Forsaken Dreadlord
-							i(155854),	-- Root of the Lifebinder
-							i(151940),	-- Sandals of the Reborn Colossus
-							i(152007),	-- Sash of the Gilded Rose
-							i(152280),	-- Scalding Shatterguards
-							i(152063),	-- Seal of the Portalmaster
-							i(151964),	-- Seeping Scourgewing
-							i(152000),	-- Shadowfused Chain Coif
-							i(151968),	-- Shadow-Singed Fang
-							i(151971),	-- Sheath of Asara
-							i(152029),	-- Shivarran Cachabon
-							i(152416),	-- Shoulderguards of Indomitable Purpose
-							i(151988),	-- Shoulderpads of the Demonic Blitz
-							i(151978),	-- Smoldering Titanguard
-							i(151944),	-- Soulhunter's Cowl
-							i(151949),	-- Soul-Siphon Mantle
-							i(152017),	-- Soul-Tempered Chestplate
-							i(151989),	-- Spaulders of the Relentless Tracker
-							i(152052),	-- Sporemound Seedling
-							i(152028),	-- Spurting Reaver Heart
-							i(152058),	-- Stormcaller's Fury
-							i(152041),	-- Sublimating Portal Frost
-							i(151972),	-- Sullied Seal of the Pantheon
-							i(152295),	-- Svirax's Grim Trophy
-							i(151969),	-- Terminus Signaling Beacon
-							i(152025),	-- Thu'rayan Lash
-							i(152014),	-- Titan-Subjugator's Visage
-							i(152037),	-- Tormentor's Brand
-							i(152032),	-- Twisted Engineer's Fel-Infuser
-							i(152054),	-- Unwavering Soul Essence
-							i(152023),	-- Vambraces of Life's Assurance
-							i(152281),	-- Varimathras' Shattered Manacles
-							i(152045),	-- Venerated Puresoul Idol
-							i(151979),	-- Vest of Unfathomable Anguish
-							i(151982),	-- Vest of Waning Life
-							i(151947),	-- Vestments of Enflamed Blight
-							i(151983),	-- Vicious Flamepaws
-							i(152039),	-- Viscous Reaver-Coolant
-							i(151970),	-- Vitality Resonator
-							i(155852),	-- Volatile Soul Fragment
-							i(151965),	-- Vulcanarcore Pendant
-							i(151939),	-- Whisperstep Runners
-							i(152059),	-- Whistling Ulna
-							i(152683),	-- World-Ravager Waistguard
-							i(152284),	-- Zealous Tormentor's Ring
-						}),
+						{
+							["itemID"] = 153502,	-- Cache of Antoran Treasures [Looking For Raid]
+							["sym"] = {
+								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+								{"pop"},	-- Discard the Instance Header and acquire the children.
+								{"where", "difficultyID", 17 },	-- Select the Looking For Raid difficulty.
+								{"pop"},	-- Discard the Difficulty Header and acquire the children.
+								{"pop"},	-- Discard the Achievement Headers and acquire the children.
+								{"is","encounterID"},	-- Select only Encounter Headers
+								{"pop"},	-- Discard the Encounter Headers and acquire the children.
+								{"isnt", "c"},	-- Exclude Tier Set Pieces
+								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+								{"exclude", "itemID", 152094, 153115 },	-- Exclude Taeshalach and Scythe of the Unmaker
+							},
+						},
 						{	-- Antoran High Command [Raid Finder]
 							["itemID"] = 152313,	-- Azeroth Invasion Plans [Raid Finder]
 							["questID"] = 48288,	-- Antoran High Command [Raid Finder]
@@ -530,161 +390,24 @@ _.Instances = { tier(7, {	-- Legion
 				n(-17, { 	-- Quests
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
-						i(153504, {	-- Cache of Antoran Treasures [Normal]
-							i(151955),	-- Acrid Catalyst Injector
-							i(151975),	-- Apocalypse Drive
-							i(151941),	-- Aranasi Shadow-Weaver's Gloves
-							i(152064),	-- Band of the Sargerite Smith
-							i(152002),	-- Battalion-Shattering Leggings
-							i(151991),	-- Belt of Fractured Sanity
-							i(152035),	-- Blazing Dreadsteed Horseshoe
-							i(151954),	-- Blood-Drenched Bindings
-							i(152414),	-- Bracers of Wanton Morality
-							i(151987),	-- Breach-Blocker Legguards
-							i(152018),	-- Breastplate of Molten Rebirth
-							i(152010),	-- Burning Coven Sabatons
-							i(151960),	-- Carafe of Searing Light
-							i(152282),	-- Caustic Titanspike Legguards
-							i(152283),	-- Chain of the Unmaker
-							i(151937),	-- Cloak of the Burning Vanguard
-							i(151973),	-- Collar of Null-Flame
-							i(155853),	-- Conch of the Thunderer
-							i(155848),	-- Condensed Blight Orb
-							i(151952),	-- Cord of Blossoming Petals
-							i(151942),	-- Cord of Surging Hysteria
-							i(152056),	-- Corrupting Dewclaw
-							i(152016),	-- Cosmos-Culling Legplates
-							i(152046),	-- Coven Prayer Bead
-							i(152057),	-- Crepuscular Skitterer Egg
-							i(151943),	-- Crown of Relentless Annihilation
-							i(155847),	-- Cruor of the Avenger
-							i(151986),	-- Death-Enveloping Cincture
-							i(152048),	-- Decimator Crankshaft
-							i(151996),	-- Deft Soulhunter's Sabatons
-							i(152412),	-- Depraved Machinist's Footpads
-							i(152006),	-- Depraved Tactician's Waistguard
-							i(151977),	-- Diima's Glacial Aegis
-							i(152031),	-- Doomfire Dynamo
-							i(152009),	-- Doomwalker Warboots
-							i(151938),	-- Drape of the Spirited Hunt
-							i(152061),	-- Droplets of the Cleansing Storm
-							i(152051),	-- Eidolon of Life
-							i(151951),	-- Enhanced Worldscorcher Cinch
-							i(152011),	-- Eredar Warcouncil Sabatons
-							i(151974),	-- Eye of Shatug
-							i(151950),	-- Fallen Avenger's Amice
-							i(152024),	-- Fallen Magi's Seerstone
-							i(152293),	-- Fasces of the Endless Legions
-							i(152049),	-- Fel-Engraved Handbell
-							i(151946),	-- Fervent Twilight Legwraps
-							i(151992),	-- Fiendish Logistician's Wristwraps
-							i(152021),	-- Flamelicked Girdle
-							i(151994),	-- Fleet Commander's Hauberk
-							i(155849),	-- Flickering Ember of Rage
-							i(151963),	-- Forgefiend's Fabricator
-							i(152291),	-- Fraternal Fervor
-							i(152040),	-- Frigid Gloomstone
-							i(152679),	-- Gambeson of Sargeras' Corruption
-							i(151956),	-- Garothi Feedback Conduit
-							i(151985),	-- General Erodus' Tricorne
-							i(152093),	-- Gorshalach's Legacy
-							i(152027),	-- Gravitational Condensate
-							i(152684),	-- Greatboots of the Searing Tempest
-							i(152062),	-- Greatcloak of the Dark Pantheon
-							i(152015),	-- Greaves of Mercurial Allegiance
-							i(152086),	-- Grips of Hungering Shadows
-							i(152022),	-- Grond-Father Girdle
-							i(152680),	-- Handwraps of Inevitable Doom
-							i(151980),	-- Harness of Oppressing Dark
-							i(152681),	-- Headdress of Living Brambles
-							i(151998),	-- Heedless Eradication Gauntlets
-							i(152036),	-- Hellfire Ignition Switch
-							i(152423),	-- Helm of the Awakened Soul
-							i(152013),	-- Helmet of the Hidden Sanctuary
-							i(152289),	-- Highfather's Machination
-							i(152042),	-- Hoarfrost-Beast Talon
-							i(152687),	-- Imonar's Demi-Gauntlets
-							i(152047),	-- Ironvine Thorn
-							i(151957),	-- Ishkar's Felshield Emitter
-							i(152055),	-- Kin'garoth's Oil-Sump
-							i(151945),	-- Lady Dacidion's Silk Slippers
-							i(152003),	-- Legguards of Numbing Gloom
-							i(152424),	-- Legwraps of the { Legion Seasoned Exterminator
-							i(151981),	-- Life-Bearing Footpads
-							i(152043),	-- Lightshield Amplifier
-							i(152688),	-- Loop of the Life-Binder
-							i(151984),	-- Lurid Grips of the Obscene
-							i(151948),	-- Magma-Spattered Smock
-							i(151953),	-- Man'ari Pyromancer Cuffs
-							i(155846),	-- Miniaturized Cosmic Beacon
-							i(152012),	-- Molten Bite Handguards
-							i(155855),	-- Mote of the Forgemaster
-							i(152050),	-- Mysterious Petrified Egg
-							i(152686),	-- Nascent Deathbringer's Clutches
-							i(152020),	-- Nathrezim Battle Girdle
-							i(152092),	-- Nathrezim Incisor
-							i(151997),	-- Nathrezim Shade-Walkers
-							i(152060),	-- Neuroshock Electrode
-							i(152001),	-- Nexus Conductor's Headgear
-							i(152034),	-- Obliterator Propellant
-							i(152005),	-- Pauldrons of Colossal Burden
-							i(152019),	-- Pauldrons of the Eternal Offensive
-							i(152004),	-- Pauldrons of the Soulburner
-							i(151990),	-- Portal Keeper's Cincture
-							i(151999),	-- Preysnare Vicegrips
-							i(151962),	-- Prototype Personnel Decimator
-							i(152026),	-- Prototype Titan-Disc
-							i(152038),	-- Pyretic Bronze Clasp
-							i(152008),	-- Reality-Splitting Wristguards
-							i(151976),	-- Riftworld Codex
-							i(155850),	-- Rime of the Spirit Realm
-							i(151966),	-- Riveted Choker of Delirium
-							i(151995),	-- Robes of the Forsaken Dreadlord
-							i(155854),	-- Root of the Lifebinder
-							i(151940),	-- Sandals of the Reborn Colossus
-							i(152007),	-- Sash of the Gilded Rose
-							i(152280),	-- Scalding Shatterguards
-							i(152063),	-- Seal of the Portalmaster
-							i(151964),	-- Seeping Scourgewing
-							i(152000),	-- Shadowfused Chain Coif
-							i(151968),	-- Shadow-Singed Fang
-							i(151971),	-- Sheath of Asara
-							i(152029),	-- Shivarran Cachabon
-							i(152416),	-- Shoulderguards of Indomitable Purpose
-							i(151988),	-- Shoulderpads of the Demonic Blitz
-							i(151978),	-- Smoldering Titanguard
-							i(151944),	-- Soulhunter's Cowl
-							i(151949),	-- Soul-Siphon Mantle
-							i(152017),	-- Soul-Tempered Chestplate
-							i(151989),	-- Spaulders of the Relentless Tracker
-							i(152052),	-- Sporemound Seedling
-							i(152028),	-- Spurting Reaver Heart
-							i(152058),	-- Stormcaller's Fury
-							i(152041),	-- Sublimating Portal Frost
-							i(151972),	-- Sullied Seal of the Pantheon
-							i(152295),	-- Svirax's Grim Trophy
-							i(151969),	-- Terminus Signaling Beacon
-							i(152025),	-- Thu'rayan Lash
-							i(152014),	-- Titan-Subjugator's Visage
-							i(152037),	-- Tormentor's Brand
-							i(152032),	-- Twisted Engineer's Fel-Infuser
-							i(152054),	-- Unwavering Soul Essence
-							i(152023),	-- Vambraces of Life's Assurance
-							i(152281),	-- Varimathras' Shattered Manacles
-							i(152045),	-- Venerated Puresoul Idol
-							i(151979),	-- Vest of Unfathomable Anguish
-							i(151982),	-- Vest of Waning Life
-							i(151947),	-- Vestments of Enflamed Blight
-							i(151983),	-- Vicious Flamepaws
-							i(152039),	-- Viscous Reaver-Coolant
-							i(151970),	-- Vitality Resonator
-							i(155852),	-- Volatile Soul Fragment
-							i(151965),	-- Vulcanarcore Pendant
-							i(151939),	-- Whisperstep Runners
-							i(152059),	-- Whistling Ulna
-							i(152683),	-- World-Ravager Waistguard
-							i(152284),	-- Zealous Tormentor's Ring
-						}),
+						{
+							["itemID"] = 153504,	-- Cache of Antoran Treasures [Normal]
+							["sym"] = {
+								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+								{"pop"},	-- Discard the Instance Header and acquire the children.
+								{"where", "difficultyID", 14 },	-- Select the Normal difficulty.
+								{"pop"},	-- Discard the Difficulty Header and acquire the children.
+								{"is","encounterID"},	-- Select only Encounter Headers
+								{"pop"},	-- Discard the Encounter Headers and acquire the children.
+								{"isnt", "c"},	-- Exclude Tier Set Pieces
+								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+								{"exclude", "itemID", 
+									152094, 153115, 	-- Exclude Taeshalach, Scythe of the Unmaker
+									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+									155831,	-- Pantheon's Blessing
+								},
+							},
+						},
 						{
 							["itemID"] = 152314,	-- Azeroth Invasion Plans [Normal]
 							["questID"] = 48295,	-- Antoran High Command [Normal]
@@ -977,161 +700,24 @@ _.Instances = { tier(7, {	-- Legion
 				n(-17, { 	-- Quests
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
-						i(153501, {	-- Cache of Antoran Treasures [Heroic]
-							i(151955),	-- Acrid Catalyst Injector
-							i(151975),	-- Apocalypse Drive
-							i(151941),	-- Aranasi Shadow-Weaver's Gloves
-							i(152064),	-- Band of the Sargerite Smith
-							i(152002),	-- Battalion-Shattering Leggings
-							i(151991),	-- Belt of Fractured Sanity
-							i(152035),	-- Blazing Dreadsteed Horseshoe
-							i(151954),	-- Blood-Drenched Bindings
-							i(152414),	-- Bracers of Wanton Morality
-							i(151987),	-- Breach-Blocker Legguards
-							i(152018),	-- Breastplate of Molten Rebirth
-							i(152010),	-- Burning Coven Sabatons
-							i(151960),	-- Carafe of Searing Light
-							i(152282),	-- Caustic Titanspike Legguards
-							i(152283),	-- Chain of the Unmaker
-							i(151937),	-- Cloak of the Burning Vanguard
-							i(151973),	-- Collar of Null-Flame
-							i(155853),	-- Conch of the Thunderer
-							i(155848),	-- Condensed Blight Orb
-							i(151952),	-- Cord of Blossoming Petals
-							i(151942),	-- Cord of Surging Hysteria
-							i(152056),	-- Corrupting Dewclaw
-							i(152016),	-- Cosmos-Culling Legplates
-							i(152046),	-- Coven Prayer Bead
-							i(152057),	-- Crepuscular Skitterer Egg
-							i(151943),	-- Crown of Relentless Annihilation
-							i(155847),	-- Cruor of the Avenger
-							i(151986),	-- Death-Enveloping Cincture
-							i(152048),	-- Decimator Crankshaft
-							i(151996),	-- Deft Soulhunter's Sabatons
-							i(152412),	-- Depraved Machinist's Footpads
-							i(152006),	-- Depraved Tactician's Waistguard
-							i(151977),	-- Diima's Glacial Aegis
-							i(152031),	-- Doomfire Dynamo
-							i(152009),	-- Doomwalker Warboots
-							i(151938),	-- Drape of the Spirited Hunt
-							i(152061),	-- Droplets of the Cleansing Storm
-							i(152051),	-- Eidolon of Life
-							i(151951),	-- Enhanced Worldscorcher Cinch
-							i(152011),	-- Eredar Warcouncil Sabatons
-							i(151974),	-- Eye of Shatug
-							i(151950),	-- Fallen Avenger's Amice
-							i(152024),	-- Fallen Magi's Seerstone
-							i(152293),	-- Fasces of the Endless Legions
-							i(152049),	-- Fel-Engraved Handbell
-							i(151946),	-- Fervent Twilight Legwraps
-							i(151992),	-- Fiendish Logistician's Wristwraps
-							i(152021),	-- Flamelicked Girdle
-							i(151994),	-- Fleet Commander's Hauberk
-							i(155849),	-- Flickering Ember of Rage
-							i(151963),	-- Forgefiend's Fabricator
-							i(152291),	-- Fraternal Fervor
-							i(152040),	-- Frigid Gloomstone
-							i(152679),	-- Gambeson of Sargeras' Corruption
-							i(151956),	-- Garothi Feedback Conduit
-							i(151985),	-- General Erodus' Tricorne
-							i(152093),	-- Gorshalach's Legacy
-							i(152027),	-- Gravitational Condensate
-							i(152684),	-- Greatboots of the Searing Tempest
-							i(152062),	-- Greatcloak of the Dark Pantheon
-							i(152015),	-- Greaves of Mercurial Allegiance
-							i(152086),	-- Grips of Hungering Shadows
-							i(152022),	-- Grond-Father Girdle
-							i(152680),	-- Handwraps of Inevitable Doom
-							i(151980),	-- Harness of Oppressing Dark
-							i(152681),	-- Headdress of Living Brambles
-							i(151998),	-- Heedless Eradication Gauntlets
-							i(152036),	-- Hellfire Ignition Switch
-							i(152423),	-- Helm of the Awakened Soul
-							i(152013),	-- Helmet of the Hidden Sanctuary
-							i(152289),	-- Highfather's Machination
-							i(152042),	-- Hoarfrost-Beast Talon
-							i(152687),	-- Imonar's Demi-Gauntlets
-							i(152047),	-- Ironvine Thorn
-							i(151957),	-- Ishkar's Felshield Emitter
-							i(152055),	-- Kin'garoth's Oil-Sump
-							i(151945),	-- Lady Dacidion's Silk Slippers
-							i(152003),	-- Legguards of Numbing Gloom
-							i(152424),	-- Legwraps of the { Legion Seasoned Exterminator
-							i(151981),	-- Life-Bearing Footpads
-							i(152043),	-- Lightshield Amplifier
-							i(152688),	-- Loop of the Life-Binder
-							i(151984),	-- Lurid Grips of the Obscene
-							i(151948),	-- Magma-Spattered Smock
-							i(151953),	-- Man'ari Pyromancer Cuffs
-							i(155846),	-- Miniaturized Cosmic Beacon
-							i(152012),	-- Molten Bite Handguards
-							i(155855),	-- Mote of the Forgemaster
-							i(152050),	-- Mysterious Petrified Egg
-							i(152686),	-- Nascent Deathbringer's Clutches
-							i(152020),	-- Nathrezim Battle Girdle
-							i(152092),	-- Nathrezim Incisor
-							i(151997),	-- Nathrezim Shade-Walkers
-							i(152060),	-- Neuroshock Electrode
-							i(152001),	-- Nexus Conductor's Headgear
-							i(152034),	-- Obliterator Propellant
-							i(152005),	-- Pauldrons of Colossal Burden
-							i(152019),	-- Pauldrons of the Eternal Offensive
-							i(152004),	-- Pauldrons of the Soulburner
-							i(151990),	-- Portal Keeper's Cincture
-							i(151999),	-- Preysnare Vicegrips
-							i(151962),	-- Prototype Personnel Decimator
-							i(152026),	-- Prototype Titan-Disc
-							i(152038),	-- Pyretic Bronze Clasp
-							i(152008),	-- Reality-Splitting Wristguards
-							i(151976),	-- Riftworld Codex
-							i(155850),	-- Rime of the Spirit Realm
-							i(151966),	-- Riveted Choker of Delirium
-							i(151995),	-- Robes of the Forsaken Dreadlord
-							i(155854),	-- Root of the Lifebinder
-							i(151940),	-- Sandals of the Reborn Colossus
-							i(152007),	-- Sash of the Gilded Rose
-							i(152280),	-- Scalding Shatterguards
-							i(152063),	-- Seal of the Portalmaster
-							i(151964),	-- Seeping Scourgewing
-							i(152000),	-- Shadowfused Chain Coif
-							i(151968),	-- Shadow-Singed Fang
-							i(151971),	-- Sheath of Asara
-							i(152029),	-- Shivarran Cachabon
-							i(152416),	-- Shoulderguards of Indomitable Purpose
-							i(151988),	-- Shoulderpads of the Demonic Blitz
-							i(151978),	-- Smoldering Titanguard
-							i(151944),	-- Soulhunter's Cowl
-							i(151949),	-- Soul-Siphon Mantle
-							i(152017),	-- Soul-Tempered Chestplate
-							i(151989),	-- Spaulders of the Relentless Tracker
-							i(152052),	-- Sporemound Seedling
-							i(152028),	-- Spurting Reaver Heart
-							i(152058),	-- Stormcaller's Fury
-							i(152041),	-- Sublimating Portal Frost
-							i(151972),	-- Sullied Seal of the Pantheon
-							i(152295),	-- Svirax's Grim Trophy
-							i(151969),	-- Terminus Signaling Beacon
-							i(152025),	-- Thu'rayan Lash
-							i(152014),	-- Titan-Subjugator's Visage
-							i(152037),	-- Tormentor's Brand
-							i(152032),	-- Twisted Engineer's Fel-Infuser
-							i(152054),	-- Unwavering Soul Essence
-							i(152023),	-- Vambraces of Life's Assurance
-							i(152281),	-- Varimathras' Shattered Manacles
-							i(152045),	-- Venerated Puresoul Idol
-							i(151979),	-- Vest of Unfathomable Anguish
-							i(151982),	-- Vest of Waning Life
-							i(151947),	-- Vestments of Enflamed Blight
-							i(151983),	-- Vicious Flamepaws
-							i(152039),	-- Viscous Reaver-Coolant
-							i(151970),	-- Vitality Resonator
-							i(155852),	-- Volatile Soul Fragment
-							i(151965),	-- Vulcanarcore Pendant
-							i(151939),	-- Whisperstep Runners
-							i(152059),	-- Whistling Ulna
-							i(152683),	-- World-Ravager Waistguard
-							i(152284),	-- Zealous Tormentor's Ring
-						}),
+						{
+							["itemID"] = 153501,	-- Cache of Antoran Treasures [Heroic]
+							["sym"] = {
+								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+								{"pop"},	-- Discard the Instance Header and acquire the children.
+								{"where", "difficultyID", 15 },	-- Select the Heroic difficulty.
+								{"pop"},	-- Discard the Difficulty Header and acquire the children.
+								{"is","encounterID"},	-- Select only Encounter Headers
+								{"pop"},	-- Discard the Encounter Headers and acquire the children.
+								{"isnt", "c"},	-- Exclude Tier Set Pieces
+								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+								{"exclude", "itemID", 
+									152094, 153115, 	-- Exclude Taeshalach, Scythe of the Unmaker
+									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+									155831,	-- Pantheon's Blessing
+								},
+							},
+						},
 						{
 							["itemID"] = 152315,	-- Azeroth Invasion Plans [Heroic]
 							["questID"] = 48299,	-- Antoran High Command [Heroic]
@@ -1429,161 +1015,24 @@ _.Instances = { tier(7, {	-- Legion
 				n(-17, { 	-- Quests
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
-						i(153503, {	-- Cache of Antoran Treasures [Mythic]
-							i(151955),	-- Acrid Catalyst Injector
-							i(151975),	-- Apocalypse Drive
-							i(151941),	-- Aranasi Shadow-Weaver's Gloves
-							i(152064),	-- Band of the Sargerite Smith
-							i(152002),	-- Battalion-Shattering Leggings
-							i(151991),	-- Belt of Fractured Sanity
-							i(152035),	-- Blazing Dreadsteed Horseshoe
-							i(151954),	-- Blood-Drenched Bindings
-							i(152414),	-- Bracers of Wanton Morality
-							i(151987),	-- Breach-Blocker Legguards
-							i(152018),	-- Breastplate of Molten Rebirth
-							i(152010),	-- Burning Coven Sabatons
-							i(151960),	-- Carafe of Searing Light
-							i(152282),	-- Caustic Titanspike Legguards
-							i(152283),	-- Chain of the Unmaker
-							i(151937),	-- Cloak of the Burning Vanguard
-							i(151973),	-- Collar of Null-Flame
-							i(155853),	-- Conch of the Thunderer
-							i(155848),	-- Condensed Blight Orb
-							i(151952),	-- Cord of Blossoming Petals
-							i(151942),	-- Cord of Surging Hysteria
-							i(152056),	-- Corrupting Dewclaw
-							i(152016),	-- Cosmos-Culling Legplates
-							i(152046),	-- Coven Prayer Bead
-							i(152057),	-- Crepuscular Skitterer Egg
-							i(151943),	-- Crown of Relentless Annihilation
-							i(155847),	-- Cruor of the Avenger
-							i(151986),	-- Death-Enveloping Cincture
-							i(152048),	-- Decimator Crankshaft
-							i(151996),	-- Deft Soulhunter's Sabatons
-							i(152412),	-- Depraved Machinist's Footpads
-							i(152006),	-- Depraved Tactician's Waistguard
-							i(151977),	-- Diima's Glacial Aegis
-							i(152031),	-- Doomfire Dynamo
-							i(152009),	-- Doomwalker Warboots
-							i(151938),	-- Drape of the Spirited Hunt
-							i(152061),	-- Droplets of the Cleansing Storm
-							i(152051),	-- Eidolon of Life
-							i(151951),	-- Enhanced Worldscorcher Cinch
-							i(152011),	-- Eredar Warcouncil Sabatons
-							i(151974),	-- Eye of Shatug
-							i(151950),	-- Fallen Avenger's Amice
-							i(152024),	-- Fallen Magi's Seerstone
-							i(152293),	-- Fasces of the Endless Legions
-							i(152049),	-- Fel-Engraved Handbell
-							i(151946),	-- Fervent Twilight Legwraps
-							i(151992),	-- Fiendish Logistician's Wristwraps
-							i(152021),	-- Flamelicked Girdle
-							i(151994),	-- Fleet Commander's Hauberk
-							i(155849),	-- Flickering Ember of Rage
-							i(151963),	-- Forgefiend's Fabricator
-							i(152291),	-- Fraternal Fervor
-							i(152040),	-- Frigid Gloomstone
-							i(152679),	-- Gambeson of Sargeras' Corruption
-							i(151956),	-- Garothi Feedback Conduit
-							i(151985),	-- General Erodus' Tricorne
-							i(152093),	-- Gorshalach's Legacy
-							i(152027),	-- Gravitational Condensate
-							i(152684),	-- Greatboots of the Searing Tempest
-							i(152062),	-- Greatcloak of the Dark Pantheon
-							i(152015),	-- Greaves of Mercurial Allegiance
-							i(152086),	-- Grips of Hungering Shadows
-							i(152022),	-- Grond-Father Girdle
-							i(152680),	-- Handwraps of Inevitable Doom
-							i(151980),	-- Harness of Oppressing Dark
-							i(152681),	-- Headdress of Living Brambles
-							i(151998),	-- Heedless Eradication Gauntlets
-							i(152036),	-- Hellfire Ignition Switch
-							i(152423),	-- Helm of the Awakened Soul
-							i(152013),	-- Helmet of the Hidden Sanctuary
-							i(152289),	-- Highfather's Machination
-							i(152042),	-- Hoarfrost-Beast Talon
-							i(152687),	-- Imonar's Demi-Gauntlets
-							i(152047),	-- Ironvine Thorn
-							i(151957),	-- Ishkar's Felshield Emitter
-							i(152055),	-- Kin'garoth's Oil-Sump
-							i(151945),	-- Lady Dacidion's Silk Slippers
-							i(152003),	-- Legguards of Numbing Gloom
-							i(152424),	-- Legwraps of the Seasoned Exterminator
-							i(151981),	-- Life-Bearing Footpads
-							i(152043),	-- Lightshield Amplifier
-							i(152688),	-- Loop of the Life-Binder
-							i(151984),	-- Lurid Grips of the Obscene
-							i(151948),	-- Magma-Spattered Smock
-							i(151953),	-- Man'ari Pyromancer Cuffs
-							i(155846),	-- Miniaturized Cosmic Beacon
-							i(152012),	-- Molten Bite Handguards
-							i(155855),	-- Mote of the Forgemaster
-							i(152050),	-- Mysterious Petrified Egg
-							i(152686),	-- Nascent Deathbringer's Clutches
-							i(152020),	-- Nathrezim Battle Girdle
-							i(152092),	-- Nathrezim Incisor
-							i(151997),	-- Nathrezim Shade-Walkers
-							i(152060),	-- Neuroshock Electrode
-							i(152001),	-- Nexus Conductor's Headgear
-							i(152034),	-- Obliterator Propellant
-							i(152005),	-- Pauldrons of Colossal Burden
-							i(152019),	-- Pauldrons of the Eternal Offensive
-							i(152004),	-- Pauldrons of the Soulburner
-							i(151990),	-- Portal Keeper's Cincture
-							i(151999),	-- Preysnare Vicegrips
-							i(151962),	-- Prototype Personnel Decimator
-							i(152026),	-- Prototype Titan-Disc
-							i(152038),	-- Pyretic Bronze Clasp
-							i(152008),	-- Reality-Splitting Wristguards
-							i(151976),	-- Riftworld Codex
-							i(155850),	-- Rime of the Spirit Realm
-							i(151966),	-- Riveted Choker of Delirium
-							i(151995),	-- Robes of the Forsaken Dreadlord
-							i(155854),	-- Root of the Lifebinder
-							i(151940),	-- Sandals of the Reborn Colossus
-							i(152007),	-- Sash of the Gilded Rose
-							i(152280),	-- Scalding Shatterguards
-							i(152063),	-- Seal of the Portalmaster
-							i(151964),	-- Seeping Scourgewing
-							i(152000),	-- Shadowfused Chain Coif
-							i(151968),	-- Shadow-Singed Fang
-							i(151971),	-- Sheath of Asara
-							i(152029),	-- Shivarran Cachabon
-							i(152416),	-- Shoulderguards of Indomitable Purpose
-							i(151988),	-- Shoulderpads of the Demonic Blitz
-							i(151978),	-- Smoldering Titanguard
-							i(151944),	-- Soulhunter's Cowl
-							i(151949),	-- Soul-Siphon Mantle
-							i(152017),	-- Soul-Tempered Chestplate
-							i(151989),	-- Spaulders of the Relentless Tracker
-							i(152052),	-- Sporemound Seedling
-							i(152028),	-- Spurting Reaver Heart
-							i(152058),	-- Stormcaller's Fury
-							i(152041),	-- Sublimating Portal Frost
-							i(151972),	-- Sullied Seal of the Pantheon
-							i(152295),	-- Svirax's Grim Trophy
-							i(151969),	-- Terminus Signaling Beacon
-							i(152025),	-- Thu'rayan Lash
-							i(152014),	-- Titan-Subjugator's Visage
-							i(152037),	-- Tormentor's Brand
-							i(152032),	-- Twisted Engineer's Fel-Infuser
-							i(152054),	-- Unwavering Soul Essence
-							i(152023),	-- Vambraces of Life's Assurance
-							i(152281),	-- Varimathras' Shattered Manacles
-							i(152045),	-- Venerated Puresoul Idol
-							i(151979),	-- Vest of Unfathomable Anguish
-							i(151982),	-- Vest of Waning Life
-							i(151947),	-- Vestments of Enflamed Blight
-							i(151983),	-- Vicious Flamepaws
-							i(152039),	-- Viscous Reaver-Coolant
-							i(151970),	-- Vitality Resonator
-							i(155852),	-- Volatile Soul Fragment
-							i(151965),	-- Vulcanarcore Pendant
-							i(151939),	-- Whisperstep Runners
-							i(152059),	-- Whistling Ulna
-							i(152683),	-- World-Ravager Waistguard
-							i(152284),	-- Zealous Tormentor's Ring
-						}),
+						{
+							["itemID"] = 153503,	-- Cache of Antoran Treasures [Mythic]
+							["sym"] = {
+								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+								{"pop"},	-- Discard the Instance Header and acquire the children.
+								{"where", "difficultyID", 16 },	-- Select the Mythic difficulty.
+								{"pop"},	-- Discard the Difficulty Header and acquire the children.
+								{"is","encounterID"},	-- Select only Encounter Headers
+								{"pop"},	-- Discard the Encounter Headers and acquire the children.
+								{"isnt", "c"},	-- Exclude Tier Set Pieces
+								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+								{"exclude", "itemID", 
+									152094, 153115, 155880, 	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
+									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+									155831,	-- Pantheon's Blessing
+								},
+							},
+						},
 						{
 							["itemID"] = 152316,	-- Azeroth Invasion Plans [Mythic]
 							["questID"] = 48303,	-- Antoran High Command [Mythic]
