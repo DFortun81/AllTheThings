@@ -387,6 +387,14 @@ _.Instances = { tier(7, {	-- Legion
 								i(151946),	-- Fervent Twilight Legwraps
 								i(152003),	-- Legguards of Numbing Glooom
 								i(152010),	-- Burning Coven Sabatons
+								i(152284),	-- Zealous Tormentor's Ring
+								i(151977),	-- Dilma's Glacial Aegis
+								i(152289),	-- Highfather's Machination
+								i(151971),	-- Sheath of Asara
+								i(152046),	-- Coven Prayer Bead
+								i(152040),	-- Frigid Gloomstone
+								i(152029),	-- Shivarran Cachabon
+								i(152058),	-- Stormcaller's Fury
 							},
 						}),
 					},
@@ -748,6 +756,14 @@ _.Instances = { tier(7, {	-- Legion
 						i(151946),	-- Fervent Twilight Legwraps
 						i(152003),	-- Legguards of Numbing Glooom
 						i(152010),	-- Burning Coven Sabatons
+						i(152284),	-- Zealous Tormentor's Ring
+						i(151977),	-- Dilma's Glacial Aegis
+						i(152289),	-- Highfather's Machination
+						i(151971),	-- Sheath of Asara
+						i(152046),	-- Coven Prayer Bead
+						i(152040),	-- Frigid Gloomstone
+						i(152029),	-- Shivarran Cachabon
+						i(152058),	-- Stormcaller's Fury
 					},
 				}),
 				e(1984, {	-- Aggramar
@@ -1109,6 +1125,14 @@ _.Instances = { tier(7, {	-- Legion
 						i(151946),	-- Fervent Twilight Legwraps
 						i(152003),	-- Legguards of Numbing Glooom
 						i(152010),	-- Burning Coven Sabatons
+						i(152284),	-- Zealous Tormentor's Ring
+						i(151977),	-- Dilma's Glacial Aegis
+						i(152289),	-- Highfather's Machination
+						i(151971),	-- Sheath of Asara
+						i(152046),	-- Coven Prayer Bead
+						i(152040),	-- Frigid Gloomstone
+						i(152029),	-- Shivarran Cachabon
+						i(152058),	-- Stormcaller's Fury
 					},
 				}),
 				e(1984, {	-- Aggramar
@@ -1474,6 +1498,14 @@ _.Instances = { tier(7, {	-- Legion
 						i(151946),	-- Fervent Twilight Legwraps
 						i(152003),	-- Legguards of Numbing Glooom
 						i(152010),	-- Burning Coven Sabatons
+						i(152284),	-- Zealous Tormentor's Ring
+						i(151977),	-- Dilma's Glacial Aegis
+						i(152289),	-- Highfather's Machination
+						i(151971),	-- Sheath of Asara
+						i(152046),	-- Coven Prayer Bead
+						i(152040),	-- Frigid Gloomstone
+						i(152029),	-- Shivarran Cachabon
+						i(152058),	-- Stormcaller's Fury
 					},
 				}),
 				e(1984, {	-- Aggramar
