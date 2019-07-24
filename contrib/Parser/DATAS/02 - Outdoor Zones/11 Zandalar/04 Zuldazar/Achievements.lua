@@ -81,6 +81,21 @@ _.Zones =
 					},
 				}),
 				ach(12944),		-- Adventurer of Zuldazar
+				ach(13029, {	-- Eating Out of the Palm of My Tiny Hand
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["g"] = {
+						n(130922, {	-- Irritable Maka'fon
+							["coords"] = {
+								{ 64.0, 39.2, 862 },	-- Irritable Maka'fon
+								{ 71.2, 29.6, 862 },	-- Golkada
+							},
+							["description"] = "Buy Extra-Dry Fruitcakce from Golkada at 71.2, 29.6 first.",
+							["g"] = {
+								crit(3),		-- Brutosaur of Zuldazar Fed
+							},
+						}),
+					},
+				}),
 				ach(12482, {	-- Get Hek'd
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",

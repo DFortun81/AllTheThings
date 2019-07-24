@@ -126,6 +126,21 @@ _.Zones =
 						},
 					}),
 				}),
+				ach(13029, {	-- Eating Out of the Palm of My Tiny Hand
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["g"] = {
+						n(143644, {	-- Goramor
+							["coords"] = { 
+								{ 32.2, 35.6, 863 },	-- Goramor
+								{ 25.4, 55.2, 863 },	-- Blind Wunja
+							},
+							["description"] = "Buy Primative Watermelon from Blind Wunja at 35.4, 55.2 first.",
+							["g"] = {
+								crit(1),		-- Brutosaur of Nazmir Fed
+							},
+						}),
+					},
+				}),
 				ach(12482, {	-- Get Hek'd
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
@@ -220,6 +235,20 @@ _.Zones =
 								crit(2),	-- Vilescale Parl
 							},
 						},
+					},
+				}),
+				ach(13028, {		-- Hoppin' Sad
+					["coords"] = {
+						{ 44.62, 92.78, 863 },	-- q(53422),
+						{ 28.89, 83.16, 863 },	-- q(53423),
+						{ 24.17, 91.72, 863 },	-- q(53424),
+						{ 21.86, 69.34, 863 },	-- q(53425),
+						{ 25.68, 40.57, 863 },	-- q(53426),
+						{ 52.83, 42.85, 863 },	-- q(53420),
+						{ 56.02, 65.06, 863 },	-- q(53419),
+						{ 69.57, 58.66, 863 },	-- q(53417),
+						{ 65.57, 50.93, 863 },	-- q(53418),
+						{ 33.46, 61.54, 863 },	-- q(53421),
 					},
 				}),
 				ach(13027, {	-- Mushroom Harvest

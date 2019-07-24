@@ -60,6 +60,21 @@ _.Zones =
 					["npcID"] = 143255
 					]]--
 				}),
+				ach(13029, {	-- Eating Out of the Palm of My Tiny Hand
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["g"] = {
+						n(143332, {	-- Ol' Stompy
+							["coords"] = {
+								{ 62.0, 9.2, 864 },		-- Ol' Stompy
+								{ 40.4, 55.4, 864 },	-- Rikati
+							},
+							["description"] = "Buy Snake on a Stick from Rikati at 40.4, 55.4 first.",
+							["g"] = {
+								crit(2),		-- Brutosaur of Vol'dun Fed
+							},
+						}),
+					},
+				}),
 				ach(12482, {	-- Get Hek'd
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
