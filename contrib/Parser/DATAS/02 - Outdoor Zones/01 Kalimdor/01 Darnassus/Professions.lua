@@ -8,12 +8,11 @@ _.Zones =
 			n(-38, {	-- Professions
 				prof(171, {	-- Alchemy
 					n(-17, {	-- Quests
-						q(29481, {	-- Elixir Master
+						qa(29481, {	-- Elixir Master
 							["qg"] = 4160,	-- Ainethil (Darnassus)
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["races"] = ALLIANCE_ONLY,
 							["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
@@ -23,12 +22,11 @@ _.Zones =
 								10899,	-- Transmutation Master (Removed)
 							},								
 						}),
-						q(29067, {	-- Potion Master
+						qa(29067, {	-- Potion Master
 							["qg"] = 4160,	-- Ainethil (Darnassus)
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["races"] = ALLIANCE_ONLY,
 							["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
@@ -38,12 +36,11 @@ _.Zones =
 								10899,	-- Transmutation Master (Removed)
 							},	
 						}),
-						q(29482, {	-- Transmutation Master
+						qa(29482, {	-- Transmutation Master
 							["qg"] = 4160,	-- Ainethil (Darnassus)
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["races"] = ALLIANCE_ONLY,
 							["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
