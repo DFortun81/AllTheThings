@@ -285,24 +285,28 @@ _.Instances = { tier(7, {	-- Legion
 							["g"] = {
 								i(151944),	-- Soulhunter's Cowl
 								i(152416),	-- Shoulderguards of Indomitable Purpose
-								i(151989),	-- Spaulders of the Relentless Tracker									
+								i(151989),	-- Spaulders of the Relentless Tracker
 								i(151938),	-- Drape of the Spirited Hunt
 								i(152687),	-- Imonar's Demi-Gauntlets
 								i(151999),	-- Preysnare Vicegrips
 								i(152128),	-- Bearmantle Legguards
 								i(152116),	-- Dreadwake Legplates
-								i(152122),	-- Felreaper Leggings									
+								i(152122),	-- Felreaper Leggings
 								i(152157),	-- Gilded  Seraph's Leggings
 								i(152175),	-- Grim Inquisitor's Leggings
 								i(152182),	-- Juggernaut Legplates
 								i(152146),	-- Leggings of Chi'Ji
 								i(152170),	-- Leggings of Venerated Spirits
 								i(152152),	-- Light's Vanguard Legplates
-								i(152164),	-- Pants of the Dashing Scoundrel									
+								i(152164),	-- Pants of the Dashing Scoundrel
 								i(152139),	-- Runebound Leggings
 								i(152134),	-- Serpentstalker Legguards
-								i(151996),	-- Deft Soulhunter's Sabatons									
+								i(151996),	-- Deft Soulhunter's Sabatons
 								i(151939),	-- Whisperstep Runners
+								i(152024),	-- Fallen Magi's Seerstone
+								i(152042),	-- Hoarfrost-Beast Talon
+								i(152050),	-- Mysterious Petrified Egg
+								i(152045),	-- Venerated Puresoul Idol
 							},
 						}),
 					},
@@ -651,6 +655,10 @@ _.Instances = { tier(7, {	-- Legion
 						i(152134),	-- Serpentstalker Legguards
 						i(151996),	-- Deft Soulhunter's Sabatons
 						i(151939),	-- Whisperstep Runners
+						i(152024),	-- Fallen Magi's Seerstone
+						i(152042),	-- Hoarfrost-Beast Talon
+						i(152050),	-- Mysterious Petrified Egg
+						i(152045),	-- Venerated Puresoul Idol
 					},
 				}),
 				e(2004, {	-- Kin'garoth
@@ -994,6 +1002,10 @@ _.Instances = { tier(7, {	-- Legion
 						i(152134),	-- Serpentstalker Legguards
 						i(151996),	-- Deft Soulhunter's Sabatons
 						i(151939),	-- Whisperstep Runners
+						i(152024),	-- Fallen Magi's Seerstone
+						i(152042),	-- Hoarfrost-Beast Talon
+						i(152050),	-- Mysterious Petrified Egg
+						i(152045),	-- Venerated Puresoul Idol
 					},
 				}),
 				e(2004, {	-- Kin'garoth
@@ -1341,6 +1353,10 @@ _.Instances = { tier(7, {	-- Legion
 						i(152134),	-- Serpentstalker Legguards
 						i(151996),	-- Deft Soulhunter's Sabatons
 						i(151939),	-- Whisperstep Runners
+						i(152024),	-- Fallen Magi's Seerstone
+						i(152042),	-- Hoarfrost-Beast Talon
+						i(152050),	-- Mysterious Petrified Egg
+						i(152045),	-- Venerated Puresoul Idol
 					},
 				}),
 				e(2004, {	-- Kin'garoth
