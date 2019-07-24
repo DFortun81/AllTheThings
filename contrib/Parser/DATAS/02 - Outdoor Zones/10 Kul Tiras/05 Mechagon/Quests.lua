@@ -671,7 +671,8 @@ _.Zones =
 				}),
 				q(55847, {	-- Reclamation Rig
 					["coord"] = { 70.0, 62.0, 1462 },
-					["isDaily"] = true,
+					["repeatable"] = true,
+					["qg"] = 150448,	-- Reclamation Rig
 					["g"] = {
 						i(168394),	-- Box of Assorted Parts
 						i(168264),	-- Recycling Requisition(Green)
@@ -681,9 +682,15 @@ _.Zones =
 				q(55148, {	-- Reclamation Rig
 					["coord"] = { 70.0, 62.0, 1462 },
 					["repeatable"] = true,
+					["qg"] = 150448,	-- Reclamation Rig
 					["g"] = {
 						i(168264),	-- Recycling Requisition(Green)
 					},
+				}),
+				q(55849, {	-- Reclamation Rig
+					["coord"] = { 70.0, 62.0, 1462 },
+					["repeatable"] = true,
+					["qg"] = 150448,	-- Reclamation Rig
 				}),
 				q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued -- horde only?  didn't pop on alliance on live)
 					["qg"] = 152820,	-- Prince Erazmin

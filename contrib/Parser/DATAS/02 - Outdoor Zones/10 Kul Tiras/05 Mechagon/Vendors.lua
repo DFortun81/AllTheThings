@@ -45,7 +45,10 @@ _.Zones =
 							i(161382),	-- Wind-Up Utility Pylon
 						}),
 						i(167062, {	-- Armored Vaultbot Key
-							i(170072),	-- Armored Vaultbot
+							["description"] = "This key can ONLY be used on the Armored Vaultbot when it spawns inside Chromie's version of Mechagon. In this version, the Vaultbot cannot be moved, but instead remains stationary at its spawning point. The Key will allow you to open the vault and loot it.",
+							["groups"] = {
+								i(170072),	-- Armored Vaultbot
+							},
 						}),
 						i(168833, {	-- Experimental Adventurer Augmentation
 							i(169002),	-- Calibrated Hefty Cog
