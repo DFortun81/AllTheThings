@@ -86,7 +86,9 @@ _.ExpansionFeatures =
 					["description"] = "You'll be offered these rewards at the end of your first foothold.",
 					["g"] = {
 						-- Cloth
-						
+						i(163664),	-- Honorbound Artificer's Robes
+						i(163666),	-- Honorbound Artificer's Mantle
+						i(163667),	-- Honorbound Artificer's Skullcap
 						
 						-- Leather
 						

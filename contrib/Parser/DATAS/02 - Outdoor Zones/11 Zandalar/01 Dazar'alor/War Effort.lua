@@ -20,7 +20,7 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 							["g"] = {
-								i(166369, {	-- Sentinel Equipment Cache
+								i(166369, {	-- Deathguard Equipment Cache
 									["g"] = bubbleDown({["modID"] = 6}, {
 													-- HORDE SET --
 										i(165614),	-- Apothecary Spellstaff
