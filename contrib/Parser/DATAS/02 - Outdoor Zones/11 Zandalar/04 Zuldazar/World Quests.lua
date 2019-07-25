@@ -212,6 +212,10 @@ _.Zones =
 							ach(13035),	-- By de Power of de Loa!
 						},
 					}),
+					q(50859, { 	-- Kandak
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50869, { 	-- Kiboku
 						["lvl"] = 120,
 						["collectible"] = false,

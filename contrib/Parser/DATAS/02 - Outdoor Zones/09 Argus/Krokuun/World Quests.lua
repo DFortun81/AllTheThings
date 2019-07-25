@@ -76,6 +76,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(47646, {	-- Rope Around
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(49041, {	-- Ruinhoof
 					["lvl"] = 110,
 					["filterID"] = 101,	-- Battle Pet

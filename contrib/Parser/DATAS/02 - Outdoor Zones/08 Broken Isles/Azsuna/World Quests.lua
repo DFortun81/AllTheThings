@@ -35,11 +35,9 @@ _.Zones =
 				q(44194),	-- DANGER: Torrentius
 				q(44287),	-- DEADLY: Withered J'im
 				q(44054),	-- Demonicide
-				q(46169),	-- Dro'zek
 				q(44049),	-- Evil Has Many Legs
 				q(42027),	-- Faronaar in Chaos
 				q(41323),	-- Fatty Lion Seal Skin
-				q(46161),	-- Felcaller Thalezra
 				q(41564),	-- Felhide
 				q(41562),	-- Felhide
 				q(41563),	-- Felhide
@@ -53,7 +51,6 @@ _.Zones =
 				q(43804),	-- Hate the Hatecoil
 				q(41610),	-- Huge Cursed Queenfish
 				q(41265),	-- Huge Cursed Queenfish
-				
 				q(41528),	-- Iridescent Aethril
 				q(41498),	-- Leystone Basilisks
 				q(41501),	-- Leystone Basilisks
@@ -76,14 +73,12 @@ _.Zones =
 				q(41582),	-- Smooth Sunrunner Hide
 				q(46162),	-- Subjugator Val'rek
 				q(44050),	-- The Felsworn Must Fall
-				q(45134),	-- The Soul Harvesters
 				q(42112),	-- The Withered Return
 				q(41322),	-- Unscratched Hippogryph Scale
 				q(42636),	-- WANTED: Arcanist Shal'iman
 				q(43426),	-- WANTED: Brogozog
 				q(43607),	-- WANTED: Brogozog
 				q(43608),	-- WANTED: Captain Volo'ren
-				q(43428),	-- WANTED: Doomlord Kazrok
 				q(43609),	-- WANTED: Doomlord Kazrok
 				q(43610),	-- WANTED: Infernal Lord
 				q(42631),	-- WANTED: Inquisitor Tivos
@@ -170,12 +165,20 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46169, {	-- Dro'zek (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(43328, {	-- Enigmatic
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(42026, {	-- Faronaar in Ruin
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46161, {	-- Felcaller Thalezra (Invasion WQ)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(41515, {	-- Felwort
@@ -335,6 +338,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(45134, {	-- The Soul Harvesters (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(42148, {	-- The Wine's Gone Bad
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -396,6 +403,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43430, {	-- WANTED: Captain Volo'ren
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43428, {	-- WANTED: Doomlord Kazrok
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

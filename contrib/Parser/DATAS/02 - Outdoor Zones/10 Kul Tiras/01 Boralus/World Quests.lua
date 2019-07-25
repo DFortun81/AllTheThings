@@ -58,6 +58,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51092, {	-- Picturesque Boralus
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51893, {	-- Sawtooth
 						["lvl"] = 120,
 						["collectible"] = false,

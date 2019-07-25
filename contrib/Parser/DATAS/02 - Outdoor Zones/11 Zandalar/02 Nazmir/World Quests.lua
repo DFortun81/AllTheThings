@@ -226,6 +226,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50507, {	-- Krubbs
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54697, {	-- Lightforged Warframe (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
@@ -350,6 +354,10 @@ _.Zones =
 					q(51109, {	-- Scorched Earth [A]
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50512, {	-- Scout Skrasniss
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(53886, {	-- Self Guided Tour (Faction Assault WQ)

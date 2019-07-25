@@ -151,6 +151,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51528, {	-- Captain Leadfist
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51920, {	-- Cottontail Matron
 						["lvl"] = 120,
 						["collectible"] = false,

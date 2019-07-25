@@ -44,7 +44,7 @@ _.Zones =
 				q(41219),	-- Flourishing Foxflower
 				q(41228),	-- Foxflower Cluster
 				q(41544),	-- Foxflower Cluster
-				q(41014),	-- Fury Road
+				
 				q(46184),	-- Gelgothar
 				q(41701),	-- Gettin' Tuffer
 				q(41882),	-- Grey Idols
@@ -167,6 +167,10 @@ _.Zones =
 				}),
 				q(46197, {	-- From the Skies They Fel (Invasion WQ)
 					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41014, {	-- Fury Road
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(41127, {	-- Gunksnout Infestation

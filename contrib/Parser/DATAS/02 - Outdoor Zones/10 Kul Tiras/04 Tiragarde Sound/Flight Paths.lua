@@ -8,6 +8,7 @@ _.Zones =
 			n(-228, {	-- Flight Paths
 				fp(2052, {	-- Anglepoint Wharf, Tiragarde Sound (Ferry) [Alliance]
 					["coord"] = { 42.0, 30.6, 895 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(2074, {	-- Bridgeport, Tiragarde Sound [Alliance]
 					["coord"] = { 75.8, 48.6, 895 },
@@ -17,9 +18,11 @@ _.Zones =
 				}),
 				fp(2104, {	-- Eastpoint Station, Tiragarde Sound (Ferry) [Alliance]
 					["coord"] = { 74.2, 44.2, 895 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(2054, {	-- Firebreaker Expedition, Tiragarde Sound (Ferry) [Alliance]
 					["coord"] = { 63.8, 30.2, 895 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(2023, {	-- Freehold, Tiragarde Sound [N]
 					["coord"] = { 77.0, 82.9, 895 },
@@ -35,6 +38,7 @@ _.Zones =
 				}),
 				fp(2053, {	-- Old Drust Road, Tiragarde Sound (Ferry) [Alliance]
 					["coord"] = { 54.0, 53.2, 895 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(2087, {	-- Outrigger Post, Tiragarde Sound [Alliance]
 					["coord"] = { 35.55, 24.9, 895 },
@@ -49,6 +53,7 @@ _.Zones =
 				}),
 				fp(2055, {	-- Southwind Station, Tiragarde Sound (Ferry) [Alliance]
 					["coord"] = { 66.6, 49.8, 895 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(2279, {	-- Stonefist Watch, Tiragarde Sound [Horde]
 					["description"] = "Stonefist Watch, Tiragarde Sound \n\nRequires completion of Mission Report: Stonefist Watch and related quest line to unlock.",

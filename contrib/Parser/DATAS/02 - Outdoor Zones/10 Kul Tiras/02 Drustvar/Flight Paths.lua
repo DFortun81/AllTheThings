@@ -26,7 +26,7 @@ _.Zones =
 				fp(2056, {	-- Fallhaven, Drustvar (Ferry) [Alliance]
 					["description"] = "Fallhaven, Drustvar (Ferry)",
 					["coord"] = { 61.6, 36.6, 896 },
-				--	["races"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(2033, {	-- Fallhaven, Drustvar [Alliance]
 					["description"] = "Fallhaven, Drustvar",
@@ -35,7 +35,7 @@ _.Zones =
 				fp(2057, {	-- Fletcher's Hollow, Drustvar (Ferry) [Alliance]
 					["description"] = "Fletcher's Hollow, Drustvar (Ferry)",
 					["coord"] = { 69.4, 57.2, 896 },
-				--	["races"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(2035, {	-- Fletcher's Hollow, Drustvar [Alliance]
 					["description"] = "Fletcher's Hollow, Drustvar",

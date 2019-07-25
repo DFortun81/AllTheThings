@@ -408,6 +408,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51388, {	-- Stopping the Infestation
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52751, {	-- Strange Looking Dogs
 						["qg"] = 141479,	-- Burly
 						["lvl"] = 120,
@@ -437,6 +442,10 @@ _.Zones =
 						},
 					}),
 					q(51849, {	-- Tempestria
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51655, {	-- Teres
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

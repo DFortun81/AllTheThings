@@ -59,6 +59,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43344, {	-- DANGER: Aodh Witherpetal
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43101, {	-- DANGER: Witchdoctor Grgl-Brgl
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -111,6 +115,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(42150, {	-- Kal'delar Naga Incursion
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(43753, {	-- Ley Race
 					["lvl"] = 110,
