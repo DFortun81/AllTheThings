@@ -609,6 +609,26 @@ _.Zones =
 						["collectible"] = false,
 					}),
 				}),
+				{
+					["itemID"] = 165870,	-- Order of Embers Equipment Cache
+					["sym"] = {
+						-- Include the two extras.
+						{"select", "itemID", 166671},	-- Waycrest Guard's Cloak
+						{"finalize"},	-- Push the items to the finalized list.
+						
+						{"select", "mapID", 896},	-- Drustvar
+						{"pop"},	-- Discard the Map Header and acquire the children.
+						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"pop"},	-- Discard the World Quests Header and acquire the children.
+						{"is", "npcID" },	-- Select the Item Set Headers.
+						{"pop"},	-- Discard the Item Set Header and acquire the children.
+						{"is", "itemID" },	-- Select the Items.
+						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
+						
+						{"merge"},	-- Merge the finalized items back into the processing queue.
+						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+					},
+				},
 				i(158092),	-- Colscale Cudgel
 				i(159819),	-- Coldscale Lantern
 				i(158098),	-- Coralshell Halberd
@@ -683,7 +703,6 @@ _.Zones =
 					i(158027),	-- Bleakweald Legguards
 					i(158023),	-- Bleakweald Stompers
 				}),
-				i(163857),	-- Azerite Armor Cache
 			}),
 		}),
 	}),
