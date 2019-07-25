@@ -109,6 +109,25 @@ _.Zones =
 								}),
 							},
 						}),
+						q(56136, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
+							["qg"] = 142721,	-- Ralston Karn <Recruitment Officer>
+							["coord"] = { 66.01, 26.01, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(169197, {	-- Warfronts Equipment Cache
+									["sym"] = {
+										{"select", "npcID", -10057},	-- War Effort
+										{"pop"},	-- Discard the War Effort Header and acquire the children.
+										{"where", "mapID", 14},	-- Arathi Highlands
+										{"pop"},	-- Discard the Map Header and acquire the children.
+										{"where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+										{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
+										{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+										{"modID", 23},	-- iLvl 430
+									},
+								}),
+							},
+						}),
 						-- INCURSIONS INFO STARTS HERE
 						i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
 							["description"] = "This cache is awarded for completing any incursion on an Alliance character.",

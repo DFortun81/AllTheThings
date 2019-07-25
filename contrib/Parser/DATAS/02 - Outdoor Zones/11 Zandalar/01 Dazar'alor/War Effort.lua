@@ -110,6 +110,28 @@ _.Zones =
 								}),
 							},
 						}),
+						q(56137, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
+							["sourceQuests"] = { 53212 },	-- Back to Zuldazar
+							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["coords"] = {
+								{ 52.97, 94.35, 1165 },
+							},
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(169196, {	-- Warfronts Equipment Cache
+									["sym"] = {
+										{"select", "npcID", -10057},	-- War Effort
+										{"pop"},	-- Discard the War Effort Header and acquire the children.
+										{"where", "mapID", 14},	-- Arathi Highlands
+										{"pop"},	-- Discard the Map Header and acquire the children.
+										{"where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+										{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
+										{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+										{"modID", 23},	-- iLvl 430
+									},
+								}),
+							},
+						}),
 						q(52930, {	-- Wartime Donation: Gold
 							["qg"] = 142157,	-- Paymaster Grintooth
 							["coords"] = {
