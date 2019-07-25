@@ -553,6 +553,27 @@ _.Zones =
 						["collectible"] = false,
 					}),
 				}),
+				{
+					["itemID"] = 165869,	-- Proudmoore Admiralty Equipment Cache
+					["sym"] = {
+						-- Include the two extras.
+						{"select", "itemID", 158159},	-- Boralus Sailor's Cloak
+						{"select", "itemID", 157996},	-- Harbormaster Pauldrons
+						{"finalize"},	-- Push the items to the finalized list.
+						
+						{"select", "mapID", 895},	-- Tiragarde Sound
+						{"pop"},	-- Discard the Map Header and acquire the children.
+						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"pop"},	-- Discard the World Quests Header and acquire the children.
+						{"is", "npcID" },	-- Select the Item Set Headers.
+						{"pop"},	-- Discard the Item Set Header and acquire the children.
+						{"is", "itemID" },	-- Select the Items.
+						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
+						
+						{"merge"},	-- Merge the finalized items back into the processing queue.
+						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+					},
+				},
 				i(158092),	-- Colscale Cudgel
 				i(159819),	-- Coldscale Lantern
 				i(158098),	-- Coralshell Halberd
