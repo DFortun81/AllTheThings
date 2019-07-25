@@ -15,7 +15,7 @@ _.WorldEvents =
 				["npcID"] = -297,	-- Mailbox
 				["g"] = {
 					{	-- Celebration Package
-						["itemID"] = 107224,	-- -- Celebration Package
+						["itemID"] = 107224,	-- Celebration Package
 						["u"] = 36,				-- WoW Anniversary Filter
 					},
 					{	-- Molten Corgi

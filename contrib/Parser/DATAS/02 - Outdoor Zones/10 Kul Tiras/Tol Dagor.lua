@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
-		m(1169, {	-- -- Tol Dagor
+		m(1169, {	-- Tol Dagor
 			["groups"] = {
 				n(-228, {	-- Flight Paths
 					fp(2096, {	-- Tol Dagor, Tiragarde Sound [Alliance]

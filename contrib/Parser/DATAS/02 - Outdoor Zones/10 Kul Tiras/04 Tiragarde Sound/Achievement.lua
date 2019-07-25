@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
-		m(895, {	-- -- Tiragarde Sound
+		m(895, {	-- Tiragarde Sound
 			n(-4, {	-- Achievement
 				ach(12473, {	-- A Sound Plan
 					["races"] = ALLIANCE_ONLY,

@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
-		m(895, {	-- -- Tiragarde Sound
+		m(895, {	-- Tiragarde Sound
 			n(-16, {	-- Rares
 				n(132182, {	-- Auditor Dolp
 					["questID"] = 50156,

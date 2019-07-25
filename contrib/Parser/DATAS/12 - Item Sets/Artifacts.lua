@@ -1131,7 +1131,7 @@ _.GearSets =
 							i(139568, {	-- Staff of the Lightborn
 								i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 								i(140656),	-- Rod of the Ascended - Priest Artifact Appearance item
-								artifact(910),	-- -- Find Hidden Artifact Skin
+								artifact(910),	-- Find Hidden Artifact Skin
 							}),
 							artifact(909),	-- Complete 30 Legion Dungeons Hidden
 							artifact(911),	-- Complete 200 WQ Hidden

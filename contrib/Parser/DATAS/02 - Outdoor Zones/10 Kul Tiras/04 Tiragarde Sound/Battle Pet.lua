@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
-		m(895, {	-- -- Tiragarde Sound
+		m(895, {	-- Tiragarde Sound
 			filter(101, { 	-- Pet Battle
 				ach(13279, {	-- Family Battler
 					["collectible"] = false,

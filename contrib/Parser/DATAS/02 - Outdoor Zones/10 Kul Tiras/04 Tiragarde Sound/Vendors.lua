@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
-		m(895, {	-- -- Tiragarde Sound
+		m(895, {	-- Tiragarde Sound
 			n(-2, {	-- Vendors
 			--[[ Only valid vendor version of Kojo appear to be 134345 (Scaletrader Post - Zuldazar) and 135793 (Seekers Vista - Stormsong Valley), rest seem to be just for the Tortollan WQs and do not sell anything
 				n(144353, {	-- Collector Kojo <Tortollan Seekers Emissary> [NOTE: Will need correct npcID when located]

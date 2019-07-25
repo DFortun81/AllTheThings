@@ -525,7 +525,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 969,		-- Tricks and Treats of Outlands
-						["races"] = ALLIANCE_ONLY,		-- -- Note!! We are marking this as Alliance only at the meta level only
+						["races"] = ALLIANCE_ONLY,		-- Note!! We are marking this as Alliance only at the meta level only
 						["g"] = {
 						},
 					},

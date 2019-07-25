@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
-		m(895, {	-- -- Tiragarde Sound
+		m(895, {	-- Tiragarde Sound
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
 					q(53812, {	-- A Carefully Laid Trap (Faction Assault WQ)

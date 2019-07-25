@@ -1878,7 +1878,7 @@ _.NeverImplemented =
 				["u"] = 1,
 			},
 			{	-- Plans: Ironforge Chain
-				["itemID"] = 6734,	-- -- Plans: Ironforge Chain
+				["itemID"] = 6734,	-- Plans: Ironforge Chain
 				["u"] = 1,	-- Never implemented
 			},
 			{	-- Ironforge Chain

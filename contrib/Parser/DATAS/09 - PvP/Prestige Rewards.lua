@@ -30,7 +30,7 @@ _.PVP =
 				["sourceQuest"] = 42985,	-- A Royal Audience [Horde]
 			}),
 			{
-				["allianceAchievementID"] = 10749,	-- -- Fighting with Style: War-torn [Alliance]
+				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 1,	-- The Prestige
 				["sourceQuests"] = {
@@ -52,7 +52,7 @@ _.PVP =
 		})),
 		un(2, ach(11469, {	-- The River Six [6]
 			{
-				["allianceAchievementID"] = 10749,	-- -- Fighting with Style: War-torn [Alliance]
+				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 2,	-- Crest of Heroism
 				["sym"] = {{"select", "npcID", -5203}, {"index", 2}},
@@ -74,7 +74,7 @@ _.PVP =
 		})),
 		un(2, ach(11686, {	-- These Go To Eleven [11]
 			{
-				["allianceAchievementID"] = 10749,	-- -- Fighting with Style: War-torn [Alliance]
+				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 3,	-- Crest of Carnage
 				["sym"] = {{"select", "npcID", -5203}, {"index", 3}},
@@ -92,7 +92,7 @@ _.PVP =
 		})),
 		un(2, ach(11690, {	-- When You're Fifteen [15]
 			{
-				["allianceAchievementID"] = 10749,	-- -- Fighting with Style: War-torn [Alliance]
+				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 4,	-- Crest of Devastation
 				["sym"] = {{"select", "npcID", -5203}, {"index", 4}},

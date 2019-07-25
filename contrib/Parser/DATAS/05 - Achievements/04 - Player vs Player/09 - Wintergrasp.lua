@@ -14,10 +14,10 @@ _.Achievements =
 						},
 						["g"] = {
 							{	-- Archavon the Stone Watcher [10 Man]
-								["achievementID"] = 1722,	-- -- Archavon the Stone Watcher [10 Man]
+								["achievementID"] = 1722,	-- Archavon the Stone Watcher [10 Man]
 							},
 							{	-- Archavon the Stone Watcher [25 Man]
-								["achievementID"] = 1721,	-- -- Archavon the Stone Watcher [25 Man]
+								["achievementID"] = 1721,	-- Archavon the Stone Watcher [25 Man]
 							},
 							{	-- Black War Mammoth
 								["achievementID"] = 2080,	-- Black War Mammoth
