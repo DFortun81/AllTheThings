@@ -84,7 +84,6 @@ _.ExpansionFeatures =
 				}),
 				n(-6015, {	-- Rewards
 					["description"] = "You'll be offered these rewards at the end of your first foothold.",
-					["modID"] = 25,
 					["g"] = {
 						-- Cloth
 						
