@@ -495,16 +495,6 @@ _.NeverImplemented =
 		q(56890),	-- Theurgist Nitara
 		q(56893),	-- Warlord Zalzjar
 		-- Mechagon
-		q(55547),	-- Mechanized Chest. Chests spawn randomly
-		q(55548),	-- Mechanized Chest. Chests spawn randomly
-		q(55549),	-- Mechanized Chest. Chests spawn randomly
-		q(55550),	-- Mechanized Chest. Chests spawn randomly
-		q(55551),	-- Mechanized Chest. Chests spawn randomly
-		q(55552),	-- Mechanized Chest. Chests spawn randomly
-		q(55553),	-- Mechanized Chest. Chests spawn randomly
-		q(55554),	-- Mechanized Chest. Chests spawn randomly
-		q(55555),	-- Mechanized Chest. Chests spawn randomly
-		q(55556),	-- Mechanized Chest. Chests spawn randomly
 		q(55919),	-- Bonepicker first kill
 		q(55927),	-- Crazed Trogg first kill
 		q(55917),	-- Deepwater Maw first kill

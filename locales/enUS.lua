@@ -2218,6 +2218,16 @@ AllTheThings.L = {
 		[297933] = "Interface\\Icons\\INV_Misc_ScrollRolled02b",
 		[297934] = "Interface\\Icons\\INV_Misc_ScrollRolled02b",
 		[311218] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_01",
+		[325659] = "Interface\\Icons\\INV_Eng_Crate2", 
+		[325660] = "Interface\\Icons\\INV_Eng_Crate2",
+		[325661] = "Interface\\Icons\\INV_Eng_Crate2",
+		[325662] = "Interface\\Icons\\INV_Eng_Crate2",
+		[325663] = "Interface\\Icons\\INV_Eng_Crate2",
+		[325664] = "Interface\\Icons\\INV_Eng_Crate2",
+		[325665] = "Interface\\Icons\\INV_Eng_Crate2",
+		[325666] = "Interface\\Icons\\INV_Eng_Crate2",
+		[325667] = "Interface\\Icons\\INV_Eng_Crate2",
+		[325668] = "Interface\\Icons\\INV_Eng_Crate2",
 		[9999990] = "Interface\\Icons\\Garrison_SilverChest",
 		[9999989] = "Interface\\Icons\\Garrison_SilverChest",
 		[9999988] = "Interface\\Icons\\Garrison_SilverChest",
@@ -3292,6 +3302,7 @@ AllTheThings.L = {
 		[329641] = "Wanted: Junkbrat and Roadtrogg",
 		[329783] = "Glowing Arcane Trunk",
 		[329805] = "Strange Crystal",
+		
 		
 		[9999990] = "Treasure Chest",	-- Use these until objectID is found
 		[9999989] = "Treasure Chest",	-- Use these until objectID is found
