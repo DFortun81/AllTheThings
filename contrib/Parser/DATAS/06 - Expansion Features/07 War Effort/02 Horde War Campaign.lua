@@ -91,7 +91,9 @@ _.ExpansionFeatures =
 						i(163667),	-- Honorbound Artificer's Skullcap
 						
 						-- Leather
-						
+						i(163668),	-- Honorbound Outrider's Mantle
+						i(163669),	-- Honorbound Outrider's Faceguard
+						i(163671),	-- Honorbound Outrider's Vestments	
 						
 						-- Mail
 						
