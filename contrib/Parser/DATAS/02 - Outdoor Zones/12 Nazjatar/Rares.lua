@@ -158,7 +158,6 @@ _.Zones =
 				},
 			}),
 			n(149653, {	-- Carnivorous Lasher
-			--	i used seed, did final feed + well fed & herb buff — triggered 55366, 56888, and 57188.  no quests procced until the rare died, though
 				["questID"] = 55366,
 				["coord"] = { 54.7, 41.7, 1355 },
 				["isDaily"] = true,
