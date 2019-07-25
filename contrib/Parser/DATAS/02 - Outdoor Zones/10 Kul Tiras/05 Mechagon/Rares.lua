@@ -208,8 +208,8 @@ _.Zones =
 					},
 				}),
 				n(155060, {	-- Doppel Ganger
-					--["questID"] = 56419,	-- Needs confirmation(missing in att)
-					["questID"] = 55544,	-- Needs confirmation
+					["questID"] = 56419,	-- Needs confirmation
+					-- ["questID"] = 55544,	-- Needs confirmation [Crieve says: Who wrote this one? It checks off every day despite not killing it...]
 					["coord"] = { 81.0, 20.2, 1462 },
 					["isDaily"] = true,
 					["g"] = {
