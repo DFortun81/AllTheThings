@@ -45,8 +45,9 @@ _.NeverImplemented =
 		{
 			-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
 			["itemID"] = 163255,	-- 7th Legionnaire's Treads
+			["modID"] = 5,
 			["u"] = 1,	-- Never Implemented
-			["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.",
+			["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
 		},
 		
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
