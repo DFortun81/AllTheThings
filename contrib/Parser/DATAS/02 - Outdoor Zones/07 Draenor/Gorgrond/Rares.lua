@@ -299,7 +299,7 @@ _.Zones =
 					},						
 				}),
 				n(50985, {	-- Poundfist
-					["coords"] = {	-- **Coords uncofirmed, relied on wowhead**
+					["coords"] = {
 						{ 42.0, 25.0, 543 },
 						{ 51.4, 43.1, 543 },
 						{ 45.4, 47.5, 543 },

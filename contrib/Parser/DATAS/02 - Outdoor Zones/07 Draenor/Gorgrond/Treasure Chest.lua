@@ -213,7 +213,7 @@ _.Zones =
 						},
 					}),
 					o(236267, {	-- Ancient Titan Chest
-						["questID"] = 35701,	-- also triggers 36712
+						["questID"] = 35701,
 						["coord"] = { 53.4, 46.8, 543 },
 						["g"] = {
 							currency(824),	-- Garrison Resources

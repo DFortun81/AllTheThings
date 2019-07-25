@@ -126,9 +126,12 @@ _.NeverImplemented =
 		q(39308),	-- Gorgrond - Bodyguard
 		q(34992),	-- Gorgrond - Lumber Mill
 		q(35049),	-- Gorgrond - Lumber Mill
+		q(36619),	-- Gorgrond - Lumber Mill
 		q(39307),	-- Gorgrond - Mechasuit
+		q(36712),	-- Gorgrond - Mill Treasure 1 - triggers when looting the ancient titan chest questID 35701
 		q(35946),	-- Gorgrond - Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the sparring arena active (37.3, 70.7)
 
+		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
 					
 		q(34679),	-- Nagrand - Alliance Stables Tracking Event
 		q(34680),	-- Nagrand - Alliance Workshop Tracking Event

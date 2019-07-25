@@ -162,7 +162,7 @@ _.Zones =
 						crit(4, {	-- The Iron Approach
 							["sourceQuests"] = {
 								36575,	-- Strike While the Iron is Hot
-								36576,	-- Strike While the Iron is Hot
+								36576,	-- Strike While the Iron is Hot (Sparring Arena)
 							},
 						}),
 					},
