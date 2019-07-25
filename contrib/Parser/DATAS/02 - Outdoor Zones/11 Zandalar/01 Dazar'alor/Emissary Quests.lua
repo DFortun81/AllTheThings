@@ -14,7 +14,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["g"] = bubbleDown({["modID"] = 5}, {
-						i(163857),	-- Azerite Armor Cache
 						i(163878),	-- Honorbound Barrier
 						i(163870),	-- Honorbound Bonebreaker
 						i(163868),	-- Honorbound Dagger
@@ -99,9 +98,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 67.07, 71.44, 1164 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(163857),	-- Azerite Armor Cache
-					},
 				}),
 			}),
 		}),

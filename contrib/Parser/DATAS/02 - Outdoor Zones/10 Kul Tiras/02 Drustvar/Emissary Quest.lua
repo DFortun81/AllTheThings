@@ -12,9 +12,6 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["g"] = {
-						i(163857),	-- Azerite Armor Cache
-					},
 				}),
 				q(54456, {	-- Supplies from the Order of Embers
 					["qg"] = 135815,	-- Quartermaster Alcorn

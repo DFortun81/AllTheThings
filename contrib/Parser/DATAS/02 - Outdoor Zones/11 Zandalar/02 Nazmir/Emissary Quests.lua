@@ -25,9 +25,6 @@ _.Zones =
 					["coord"] = { 39.11, 79.47, 863 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["g"] = {
-						i(163857),	-- Azerite Armor Cache
-					},
 				}),
 			}),
 		}),

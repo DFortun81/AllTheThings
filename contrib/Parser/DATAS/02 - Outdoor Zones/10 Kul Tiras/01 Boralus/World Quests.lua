@@ -302,7 +302,6 @@ _.Zones =
 						},
 					}),
 				}),
-				i(163857),	-- Azerite Armor Cache
 				i(158159),	-- Boralus Sailor's Cloak
 			}),
 		}),

@@ -14,7 +14,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["g"] = bubbleDown({["modID"] = 5}, {
-						i(163857),	-- Azerite Armor Cache
 						i(163891),	-- 7th Legionnaire's Aegis
 						i(163884),	-- 7th Legionnaire's Battle Hammer
 						i(163892),	-- 7th Legionnaire's Censer
@@ -77,9 +76,6 @@ _.Zones =
 					["coord"] = { 67.52, 21.56, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["g"] = {
-						i(163857),	-- Azerite Armor Cache
-					},
 				}),
 				q(54454, {	-- Supplies from the 7th Legion
 					["qg"] = 135446,	-- Vindicator Jaelaana

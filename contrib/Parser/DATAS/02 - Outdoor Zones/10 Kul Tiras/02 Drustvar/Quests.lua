@@ -23,11 +23,9 @@ _.Zones =
 				q(53701, {	-- A Drust Cause
 					["coord"] = { 37.03, 51.35, 896 },	-- Waycrest Gryphon Start
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["crs"] = { 144984 },	-- Waycrest Gryphon
 					["qg"] = 135815,	-- Quartermaster Alcorn
-					["g"] = {
-						i(163857),	-- Azerite Armor Cache
-					},
 				}),
 				q(49443, {	-- A Lesson in Witch Hunting
 					["sourceQuests"] = { 48986 },	-- Take the High Road

@@ -592,7 +592,6 @@ _.Zones =
 					i(157959),	-- Dunecrawler Footguards
 					i(161036),	-- Sand-Smoothed Wristguards
 				}),
-				i(163857),	-- Azerite Armor Cache
 			}),
 		}),
 	}),

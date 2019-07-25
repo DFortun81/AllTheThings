@@ -27,9 +27,6 @@ _.Zones =
 					["coord"] = { 59.29, 69.33, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["g"] = {
-						i(163857),	-- Azerite Armor Cache
-					},
 				}),
 				q(54457, {	-- Supplies from Storm's Wake
 					["qg"] = 135800,	-- Sister Lilyana

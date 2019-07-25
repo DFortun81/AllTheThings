@@ -616,7 +616,6 @@ _.Zones =
 					i(157895),	-- Bone-Fetished Stompers
 					i(161041),	-- Gutrip's Tramplers
 				}),
-				i(163857),	-- Azerite Armor Cache
 			}),
 		}),
 	}),

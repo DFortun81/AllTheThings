@@ -25,9 +25,6 @@ _.Zones =
 					["coord"] = { 56.68, 49.74, 864 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["g"] = {
-						i(163857),	-- Azerite Armor Cache
-					},
 				}),
 				q(53113, {	-- Shimmering Shell
 					["qg"] = 135804,	-- Hoarder Jena

@@ -264,7 +264,6 @@ _.Zones =
 						["requireSkill"] = 773,	-- Inscription
 					}),
 				}),
-				i(163857),	-- Azerite Armor Cache
 			}),
 		}),
 	}),
