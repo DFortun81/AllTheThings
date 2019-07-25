@@ -614,8 +614,6 @@ _.Zones =
 								["itemID"] = 158054,	-- Shoalbreach Breastplate
 							},
 						},
-						["ilvl"] = 325,
-						["bonusID"] = 4818,
 					},
 				},
 			}),
