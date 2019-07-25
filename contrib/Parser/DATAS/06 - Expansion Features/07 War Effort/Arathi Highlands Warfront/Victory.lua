@@ -13,7 +13,7 @@ _.ExpansionFeatures =
 				["sym"] = {
 					{"select", "npcID", -10057},	-- War Effort
 					{"pop"},	-- Discard the War Effort Header and acquire the children.
-					{"select", "mapID", 14},	-- Arathi Highlands
+					{"where", "mapID", 14},	-- Arathi Highlands
 					{"pop"},	-- Discard the Map Header and acquire the children.
 					{"where", "npcID", -1 },	-- Select the Common Boss Drop Header.
 					{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
