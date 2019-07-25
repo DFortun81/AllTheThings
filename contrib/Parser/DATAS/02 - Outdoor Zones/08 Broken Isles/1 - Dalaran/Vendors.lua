@@ -1253,7 +1253,7 @@ _.Zones =
 										i(148545),	-- Dominant Gladiator's Satin Treads
 										i(149041),	-- Demonic Gladiator's Satin Hood
 										i(149047),	-- Demonic Gladiator's Satin Mantle
-										i(148908),	-- Demonic Gladiator's Drape of Piety
+										i(148909),	-- Demonic Gladiator's Drape of Piety
 										i(149045),	-- Demonic Gladiator's Satin Robe
 										i(149051),	-- Demonic Gladiator's Satin Bracers
 										i(149039),	-- Demonic Gladiator's Satin Gloves

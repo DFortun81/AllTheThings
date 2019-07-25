@@ -1658,6 +1658,15 @@ _.PVP =
 					cl(12, {	-- Demon Hunter
 					}),
 					cl(11, {	-- Druid
+						i(147978),	-- Fierce Gladiator's Dragonhide Belt (H)
+						i(147914),	-- Fierce Gladiator's Dragonhide Cloak (H)
+						i(147970),	-- Fierce Gladiator's Dragonhide Gloves (H)
+						i(147972),	-- Fierce Gladiator's Dragonhide Helm (H)
+						i(147974),	-- Fierce Gladiator's Dragonhide Legguards (H)
+						i(147968),	-- Fierce Gladiator's Dragonhide Moccasins (H)
+						i(147976),	-- Fierce Gladiator's Dragonhide Spaulders (H)
+						i(147966),	-- Fierce Gladiator's Dragonhide Vest (H)
+						i(147980),	-- Fierce Gladiator's Dragonhide Wristguards (H)
 					}),
 					cl(3, {	-- Hunter
 					}),
@@ -1668,6 +1677,15 @@ _.PVP =
 					cl(2, {	-- Paladin
 					}),
 					cl(5, {	-- Priest
+						i(147924),	-- Fierce Gladiator's Drape of Piety (H)
+						i(148066),	-- Fierce Gladiator's Satin Bracers (H)
+						i(148064),	-- Fierce Gladiator's Satin Cord (H)
+						i(148054),	-- Fierce Gladiator's Satin Gloves (H)
+						i(148056),	-- Fierce Gladiator's Satin Hood (H)
+						i(148058),	-- Fierce Gladiator's Satin Leggings (H)
+						i(148062),	-- Fierce Gladiator's Satin Mantle (H)
+						i(148060),	-- Fierce Gladiator's Satin Robe (H)
+						i(148052),	-- Fierce Gladiator's Satin Treads (H)
 					}),
 					cl(4, {	-- Rogue
 					}),
@@ -1752,28 +1770,136 @@ _.PVP =
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
 					cl(6, {	-- Death Knight
+						i(149756),	-- Dominant Combatant's Dreadcloak (A)
+						i(149780),	-- Dominant Combatant's Dreadplate Chestpiece (A)
+						i(149784),	-- Dominant Combatant's Dreadplate Gauntlets (A)
+						i(149792),	-- Dominant Combatant's Dreadplate Girdle (A)
+						i(149786),	-- Dominant Combatant's Dreadplate Helm (A)
+						i(149788),	-- Dominant Combatant's Dreadplate Legguards (A)
+						i(149782),	-- Dominant Combatant's Dreadplate Sabatons (A)
+						i(149790),	-- Dominant Combatant's Dreadplate Shoulders (A)
+						i(149794),	-- Dominant Combatant's Dreadplate Wristplates (A)
 					}),
 					cl(12, {	-- Demon Hunter
+						i(149758),	-- Dominant Combatant's Demonthread Cloak (A)
+						i(149808),	-- Dominant Combatant's Felskin Belt (A)
+						i(149798),	-- Dominant Combatant's Felskin Boots (A)
+						i(149800),	-- Dominant Combatant's Felskin Gloves (A)
+						i(149802),	-- Dominant Combatant's Felskin Helm (A)
+						i(149804),	-- Dominant Combatant's Felskin Legguards (A)
+						i(149806),	-- Dominant Combatant's Felskin Spaulders (A)
+						i(149796),	-- Dominant Combatant's Felskin Tunic (A)
+						i(149810),	-- Dominant Combatant's Felskin Wristguards (A)
 					}),
 					cl(11, {	-- Druid
+						i(149824),	-- Dominant Combatant's Dragonhide Belt (A)
+						i(149760),	-- Dominant Combatant's Dragonhide Cloak (A)
+						i(149816),	-- Dominant Combatant's Dragonhide Gloves (A)
+						i(149818),	-- Dominant Combatant's Dragonhide Helm (A)
+						i(149820),	-- Dominant Combatant's Dragonhide Legguards (A)
+						i(149814),	-- Dominant Combatant's Dragonhide Moccasins (A)
+						i(149822),	-- Dominant Combatant's Dragonhide Spaulders (A)
+						i(149812),	-- Dominant Combatant's Dragonhide Tunic (A)
+						i(149826),	-- Dominant Combatant's Dragonhide Wristguards (A)
 					}),
 					cl(3, {	-- Hunter
+						i(149762),	-- Dominant Combatant's Drape of the Tracker (A)
+						i(149842),	-- Dominant Combatant's Chain Armband (A)
+						i(149828),	-- Dominant Combatant's Chain Armor (A)
+						i(149840),	-- Dominant Combatant's Chain Clasp (A)
+						i(149832),	-- Dominant Combatant's Chain Gauntlets (A)
+						i(149834),	-- Dominant Combatant's Chain Helm (A)
+						i(149836),	-- Dominant Combatant's Chain Leggings (A)
+						i(149838),	-- Dominant Combatant's Chain Spaulders (A)
+						i(149830),	-- Dominant Combatant's Chain Treads (A)
 					}),
 					cl(8, {	-- Mage
+						i(149854),	-- Dominant Combatant's Silk Amice (A)
+						i(149858),	-- Dominant Combatant's Silk Bracers (A)
+						i(149856),	-- Dominant Combatant's Silk Cord (A)
+						i(149848),	-- Dominant Combatant's Silk Cowl (A)
+						i(149846),	-- Dominant Combatant's Silk Handguards (A)
+						i(149852),	-- Dominant Combatant's Silk Robe (A)
+						i(149844),	-- Dominant Combatant's Silk Treads (A)
+						i(149850),	-- Dominant Combatant's Silk Trousers (A)
+						i(149764),	-- Dominant Combatant's Silken Shawl (A)
 					}),
 					cl(10, {	-- Monk
+						i(149872),	-- Dominant Combatant's Ironskin Belt (A)
+						i(149766),	-- Dominant Combatant's Ironskin Cloak (A)
+						i(149862),	-- Dominant Combatant's Ironskin Gloves (A)
+						i(149864),	-- Dominant Combatant's Ironskin Helm (A)
+						i(149866),	-- Dominant Combatant's Ironskin Legguards (A)
+						i(149860),	-- Dominant Combatant's Ironskin Slippers (A)
+						i(149868),	-- Dominant Combatant's Ironskin Spaulders (A)
+						i(149870),	-- Dominant Combatant's Ironskin Tunic (A)
+						i(149874),	-- Dominant Combatant's Ironskin Wristguards (A)
 					}),
 					cl(2, {	-- Paladin
+						i(149768),	-- Dominant Combatant's Greatcloak of Faith (A)
+						i(149882),	-- Dominant Combatant's Scaled Chestpiece (A)
+						i(149886),	-- Dominant Combatant's Scaled Gauntlets (A)
+						i(149894),	-- Dominant Combatant's Scaled Girdle (A)
+						i(149888),	-- Dominant Combatant's Scaled Helm (A)
+						i(149890),	-- Dominant Combatant's Scaled Legguards (A)
+						i(149884),	-- Dominant Combatant's Scaled Sabatons (A)
+						i(149892),	-- Dominant Combatant's Scaled Shoulders (A)
+						i(149896),	-- Dominant Combatant's Scaled Wristplates (A)
 					}),
 					cl(5, {	-- Priest
+						i(149770),	-- Dominant Combatant's Drape of Piety (A)
+						i(149912),	-- Dominant Combatant's Satin Bracers (A)
+						i(149910),	-- Dominant Combatant's Satin Cord (A)
+						i(149900),	-- Dominant Combatant's Satin Gloves (A)
+						i(149902),	-- Dominant Combatant's Satin Hood (A)
+						i(149904),	-- Dominant Combatant's Satin Leggings (A)
+						i(149908),	-- Dominant Combatant's Satin Mantle (A)
+						i(149906),	-- Dominant Combatant's Satin Robe (A)
+						i(149898),	-- Dominant Combatant's Satin Treads (A)
 					}),
 					cl(4, {	-- Rogue
+						i(149932),	-- Dominant Combatant's Leather Belt (A)
+						i(149924),	-- Dominant Combatant's Leather Gloves (A)
+						i(149926),	-- Dominant Combatant's Leather Helm (A)
+						i(149928),	-- Dominant Combatant's Leather Legguards (A)
+						i(149922),	-- Dominant Combatant's Leather Slippers (A)
+						i(149930),	-- Dominant Combatant's Leather Spaulders (A)
+						i(149920),	-- Dominant Combatant's Leather Tunic (A)
+						i(149934),	-- Dominant Combatant's Leather Wristguards (A)
+						i(149772),	-- Dominant Combatant's Shadowcape (A)
 					}),
 					cl(7, {	-- Shaman
+						i(149950),	-- Dominant Combatant's Ringmail Armband (A)
+						i(149936),	-- Dominant Combatant's Ringmail Armor (A)
+						i(149938),	-- Dominant Combatant's Ringmail Boots (A)
+						i(149948),	-- Dominant Combatant's Ringmail Clasp (A)
+						i(149940),	-- Dominant Combatant's Ringmail Gauntlets (A)
+						i(149942),	-- Dominant Combatant's Ringmail Helm (A)
+						i(149944),	-- Dominant Combatant's Ringmail Leggings (A)
+						i(149946),	-- Dominant Combatant's Ringmail Spaulders (A)
+						i(149774),	-- Dominant Combatant's Totemic Cloak (A)
 					}),
 					cl(9, {	-- Warlock
+						i(149980),	-- Dominant Combatant's Felweave Amice (A)
+						i(149984),	-- Dominant Combatant's Felweave Bracers (A)
+						i(149776),	-- Dominant Combatant's Felweave Cloak (A)
+						i(149982),	-- Dominant Combatant's Felweave Cord (A)
+						i(149974),	-- Dominant Combatant's Felweave Cowl (A)
+						i(149972),	-- Dominant Combatant's Felweave Handguards (A)
+						i(149978),	-- Dominant Combatant's Felweave Raiment (A)
+						i(149970),	-- Dominant Combatant's Felweave Treads (A)
+						i(149976),	-- Dominant Combatant's Felweave Trousers (A)
 					}),
 					cl(1, {	-- Warrior
+						i(149990),	-- Dominant Combatant's Plate Gauntlets (A)
+						i(149986),	-- Dominant Combatant's Plate Chestpiece (A)
+						i(149988),	-- Dominant Combatant's Plate Warboots (A)
+						i(149992),	-- Dominant Combatant's Plate Helm (A)
+						i(149994),	-- Dominant Combatant's Plate Legguards (A)
+						i(149996),	-- Dominant Combatant's Plate Shoulders (A)
+						i(149998),	-- Dominant Combatant's Plate Girdle (A)
+						i(150000),	-- Dominant Combatant's Plate Wristplates (A)
+						i(149778),	-- Dominant Combatant's Cloak of Battle (A)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(149876)), -- Dominant Combatant's Necklace (A)
@@ -1831,28 +1957,136 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(6, {	-- Death Knight
+						i(148402),	-- Dominant Gladiator's Dreadcloak (A)
+						i(148426),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
+						i(148430),	-- Dominant Gladiator's Dreadplate Gauntlets (A)
+						i(148438),	-- Dominant Gladiator's Dreadplate Girdle (A)
+						i(148432),	-- Dominant Gladiator's Dreadplate Helm (A)
+						i(148434),	-- Dominant Gladiator's Dreadplate Legguards (A)
+						i(148428),	-- Dominant Gladiator's Dreadplate Sabatons (A)
+						i(148436),	-- Dominant Gladiator's Dreadplate Shoulders (A)
+						i(148440),	-- Dominant Gladiator's Dreadplate Wristplates (A)
 					}),
 					cl(12, {	-- Demon Hunter
+						i(148404),	-- Dominant Gladiator's Demonthread Cloak (A)
+						i(148454),	-- Dominant Gladiator's Felskin Belt (A)
+						i(148444),	-- Dominant Gladiator's Felskin Boots (A)
+						i(148446),	-- Dominant Gladiator's Felskin Gloves (A)
+						i(148448),	-- Dominant Gladiator's Felskin Helm (A)
+						i(148450),	-- Dominant Gladiator's Felskin Legguards (A)
+						i(148452),	-- Dominant Gladiator's Felskin Spaulders (A)
+						i(148442),	-- Dominant Gladiator's Felskin Tunic (A)
+						i(148456),	-- Dominant Gladiator's Felskin Wristguards (A)
 					}),
 					cl(11, {	-- Druid
+						i(148470),	-- Dominant Gladiator's Dragonhide Belt (A)
+						i(148406),	-- Dominant Gladiator's Dragonhide Cloak (A)
+						i(148462),	-- Dominant Gladiator's Dragonhide Gloves (A)
+						i(148464),	-- Dominant Gladiator's Dragonhide Helm (A)
+						i(148466),	-- Dominant Gladiator's Dragonhide Legguards (A)
+						i(148460),	-- Dominant Gladiator's Dragonhide Moccasins (A)
+						i(148468),	-- Dominant Gladiator's Dragonhide Spaulders (A)
+						i(148458),	-- Dominant Gladiator's Dragonhide Vest (A)
+						i(148472),	-- Dominant Gladiator's Dragonhide Wristguards (A)
 					}),
 					cl(3, {	-- Hunter
+						i(148408),	-- Dominant Gladiator's Drape of the Tracker (A)
+						i(148488),	-- Dominant Gladiator's Chain Armband (A)
+						i(148474),	-- Dominant Gladiator's Chain Armor (A)
+						i(148486),	-- Dominant Gladiator's Chain Clasp (A)
+						i(148478),	-- Dominant Gladiator's Chain Gauntlets (A)
+						i(148480),	-- Dominant Gladiator's Chain Helm (A)
+						i(148482),	-- Dominant Gladiator's Chain Leggings (A)
+						i(148484),	-- Dominant Gladiator's Chain Spaulders (A)
+						i(148476),	-- Dominant Gladiator's Chain Treads (A)
 					}),
 					cl(8, {	-- Mage
+						i(148500),	-- Dominant Gladiator's Silk Amice (A)
+						i(148504),	-- Dominant Gladiator's Silk Bracers (A)
+						i(148502),	-- Dominant Gladiator's Silk Cord (A)
+						i(148494),	-- Dominant Gladiator's Silk Cowl (A)
+						i(148492),	-- Dominant Gladiator's Silk Handguards (A)
+						i(148490),	-- Dominant Gladiator's Silk Treads (A)
+						i(148496),	-- Dominant Gladiator's Silk Trousers (A)
+						i(148498),	-- Dominant Gladiator's Silk Tunic (A)
+						i(148410),	-- Dominant Gladiator's Silken Shawl (A)
 					}),
 					cl(10, {	-- Monk
+						i(148518),	-- Dominant Gladiator's Ironskin Belt (A)
+						i(148412),	-- Dominant Gladiator's Ironskin Cloak (A)
+						i(148508),	-- Dominant Gladiator's Ironskin Gloves (A)
+						i(148510),	-- Dominant Gladiator's Ironskin Helm (A)
+						i(148512),	-- Dominant Gladiator's Ironskin Legguards (A)
+						i(148506),	-- Dominant Gladiator's Ironskin Slippers (A)
+						i(148514),	-- Dominant Gladiator's Ironskin Spaulders (A)
+						i(148516),	-- Dominant Gladiator's Ironskin Tunic (A)
+						i(148520),	-- Dominant Gladiator's Ironskin Wristguards (A)
 					}),
 					cl(2, {	-- Paladin
+						i(148414),	-- Dominant Gladiator's Greatcloak of Faith (A)
+						i(148537),	-- Dominant Gladiator's Scaled Breastplate (A)
+						i(148531),	-- Dominant Gladiator's Scaled Gauntlets (A)
+						i(148540),	-- Dominant Gladiator's Scaled Girdle (A)
+						i(148533),	-- Dominant Gladiator's Scaled Helm (A)
+						i(148535),	-- Dominant Gladiator's Scaled Legguards (A)
+						i(148529),	-- Dominant Gladiator's Scaled Sabatons (A)
+						i(148538),	-- Dominant Gladiator's Scaled Shoulders (A)
+						i(148542),	-- Dominant Gladiator's Scaled Wristplates (A)
 					}),
 					cl(5, {	-- Priest
+						i(148416),	-- Dominant Gladiator's Drape of Piety (A)
+						i(148558),	-- Dominant Gladiator's Satin Bracers (A)
+						i(148556),	-- Dominant Gladiator's Satin Cord (A)
+						i(148546),	-- Dominant Gladiator's Satin Gloves (A)
+						i(148548),	-- Dominant Gladiator's Satin Hood (A)
+						i(148550),	-- Dominant Gladiator's Satin Leggings (A)
+						i(148554),	-- Dominant Gladiator's Satin Mantle (A)
+						i(148552),	-- Dominant Gladiator's Satin Robe (A)
+						i(148544),	-- Dominant Gladiator's Satin Treads (A)
 					}),
 					cl(4, {	-- Rogue
+						i(148578),	-- Dominant Gladiator's Leather Belt (A)
+						i(148570),	-- Dominant Gladiator's Leather Gloves (A)
+						i(148572),	-- Dominant Gladiator's Leather Helm (A)
+						i(148574),	-- Dominant Gladiator's Leather Legguards (A)
+						i(148568),	-- Dominant Gladiator's Leather Slippers (A)
+						i(148576),	-- Dominant Gladiator's Leather Spaulders (A)
+						i(148566),	-- Dominant Gladiator's Leather Tunic (A)
+						i(148580),	-- Dominant Gladiator's Leather Wristguards (A)
+						i(148418),	-- Dominant Gladiator's Shadowcape (A)
 					}),
 					cl(7, {	-- Shaman
+						i(148596),	-- Dominant Gladiator's Ringmail Armband (A)
+						i(148582),	-- Dominant Gladiator's Ringmail Armor (A)
+						i(148584),	-- Dominant Gladiator's Ringmail Boots (A)
+						i(148594),	-- Dominant Gladiator's Ringmail Clasp (A)
+						i(148586),	-- Dominant Gladiator's Ringmail Gauntlets (A)
+						i(148588),	-- Dominant Gladiator's Ringmail Helm (A)
+						i(148590),	-- Dominant Gladiator's Ringmail Leggings (A)
+						i(148592),	-- Dominant Gladiator's Ringmail Spaulders (A)
+						i(148420),	-- Dominant Gladiator's Totemic Cloak (A)
 					}),
 					cl(9, {	-- Warlock
+						i(148626),	-- Dominant Gladiator's Felweave Amice (A)
+						i(148630),	-- Dominant Gladiator's Felweave Bracers (A)
+						i(148422),	-- Dominant Gladiator's Felweave Cloak (A)
+						i(148628),	-- Dominant Gladiator's Felweave Cord (A)
+						i(148620),	-- Dominant Gladiator's Felweave Cowl (A)
+						i(148618),	-- Dominant Gladiator's Felweave Handguards (A)
+						i(148624),	-- Dominant Gladiator's Felweave Raiment (A)
+						i(148616),	-- Dominant Gladiator's Felweave Treads (A)
+						i(148622),	-- Dominant Gladiator's Felweave Trousers (A)
 					}),
 					cl(1, {	-- Warrior
+						i(148424),	-- Dominant Gladiator's Cloak of Battle (A)
+						i(148632),	-- Dominant Gladiator's Plate Chestpiece (A)
+						i(148636),	-- Dominant Gladiator's Plate Gauntlets (A)
+						i(148644),	-- Dominant Gladiator's Plate Girdle (A)
+						i(148638),	-- Dominant Gladiator's Plate Helm (A)
+						i(148640),	-- Dominant Gladiator's Plate Legguards (A)
+						i(148642),	-- Dominant Gladiator's Plate Shoulders (A)
+						i(148634),	-- Dominant Gladiator's Plate Warboots (A)
+						i(148646),	-- Dominant Gladiator's Plate Wristplates (A)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(148522)), -- Dominant Gladiator's Necklace (A)
@@ -1910,28 +2144,136 @@ _.PVP =
 				}),
 				n(-662, {	-- Elite PvP Gear
 					cl(6, {	-- Death Knight
+						un(14, i(148648)),	-- Dominant Gladiator's Dreadcloak (A)
+						un(14, i(148672)),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
+						un(14, i(148676)),	-- Dominant Gladiator's Dreadplate Gauntlets (A)
+						un(14, i(148684)),	-- Dominant Gladiator's Dreadplate Girdle (A)
+						un(14, i(148678)),	-- Dominant Gladiator's Dreadplate Helm (A)
+						un(14, i(148680)),	-- Dominant Gladiator's Dreadplate Legguards (A)
+						un(14, i(148674)),	-- Dominant Gladiator's Dreadplate Sabatons (A)
+						un(14, i(148682)),	-- Dominant Gladiator's Dreadplate Shoulders (A)
+						un(14, i(148686)),	-- Dominant Gladiator's Dreadplate Wristplates (A)
 					}),
 					cl(12, {	-- Demon Hunter
+						un(14, i(148650)),	-- Dominant Gladiator's Demonthread Cloak (A)
+						un(14, i(148700)),	-- Dominant Gladiator's Felskin Belt (A)
+						un(14, i(148690)),	-- Dominant Gladiator's Felskin Boots (A)
+						un(14, i(148692)),	-- Dominant Gladiator's Felskin Gloves (A)
+						un(14, i(148694)),	-- Dominant Gladiator's Felskin Helm (A)
+						un(14, i(148696)),	-- Dominant Gladiator's Felskin Legguards (A)
+						un(14, i(148698)),	-- Dominant Gladiator's Felskin Spaulders (A)
+						un(14, i(148688)),	-- Dominant Gladiator's Felskin Tunic (A)
+						un(14, i(148702)),	-- Dominant Gladiator's Felskin Wristguards (A)
 					}),
 					cl(11, {	-- Druid
+						un(14, i(148716)),	-- Dominant Gladiator's Dragonhide Belt (A)
+						un(14, i(148652)),	-- Dominant Gladiator's Dragonhide Cloak (A)
+						un(14, i(148708)),	-- Dominant Gladiator's Dragonhide Gloves (A)
+						un(14, i(148710)),	-- Dominant Gladiator's Dragonhide Helm (A)
+						un(14, i(148712)),	-- Dominant Gladiator's Dragonhide Legguards (A)
+						un(14, i(148706)),	-- Dominant Gladiator's Dragonhide Moccasins (A)
+						un(14, i(148714)),	-- Dominant Gladiator's Dragonhide Spaulders (A)
+						un(14, i(148704)),	-- Dominant Gladiator's Dragonhide Vest (A)
+						un(14, i(148718)),	-- Dominant Gladiator's Dragonhide Wristguards (A)
 					}),
 					cl(3, {	-- Hunter
+						un(14, i(148654)),	-- Dominant Gladiator's Drape of the Tracker (A)
+						un(14, i(148734)),	-- Dominant Gladiator's Chain Armband (A)
+						un(14, i(148720)),	-- Dominant Gladiator's Chain Armor (A)
+						un(14, i(148732)),	-- Dominant Gladiator's Chain Clasp (A)
+						un(14, i(148724)),	-- Dominant Gladiator's Chain Gauntlets (A)
+						un(14, i(148726)),	-- Dominant Gladiator's Chain Helm (A)
+						un(14, i(148728)),	-- Dominant Gladiator's Chain Leggings (A)
+						un(14, i(148730)),	-- Dominant Gladiator's Chain Spaulders (A)
+						un(14, i(148722)),	-- Dominant Gladiator's Chain Treads (A)
 					}),
 					cl(8, {	-- Mage
+						un(14, i(148746)),	-- Dominant Gladiator's Silk Amice (A)
+						un(14, i(148750)),	-- Dominant Gladiator's Silk Bracers (A)
+						un(14, i(148748)),	-- Dominant Gladiator's Silk Cord (A)
+						un(14, i(148740)),	-- Dominant Gladiator's Silk Cowl (A)
+						un(14, i(148738)),	-- Dominant Gladiator's Silk Handguards (A)
+						un(14, i(148736)),	-- Dominant Gladiator's Silk Treads (A)
+						un(14, i(148742)),	-- Dominant Gladiator's Silk Trousers (A)
+						un(14, i(148744)),	-- Dominant Gladiator's Silk Tunic (A)
+						un(14, i(148656)),	-- Dominant Gladiator's Silken Shawl (A)
 					}),
 					cl(10, {	-- Monk
+						un(14, i(148764)),	-- Dominant Gladiator's Ironskin Belt (A)
+						un(14, i(148658)),	-- Dominant Gladiator's Ironskin Cloak (A)
+						un(14, i(148754)),	-- Dominant Gladiator's Ironskin Gloves (A)
+						un(14, i(148756)),	-- Dominant Gladiator's Ironskin Helm (A)
+						un(14, i(148758)),	-- Dominant Gladiator's Ironskin Legguards (A)
+						un(14, i(148752)),	-- Dominant Gladiator's Ironskin Slippers (A)
+						un(14, i(148760)),	-- Dominant Gladiator's Ironskin Spaulders (A)
+						un(14, i(148762)),	-- Dominant Gladiator's Ironskin Tunic (A)
+						un(14, i(148766)),	-- Dominant Gladiator's Ironskin Wristguards (A)
 					}),
 					cl(2, {	-- Paladin
+						un(14, i(148660)),	-- Dominant Gladiator's Greatcloak of Faith (A)
+						un(14, i(148774)),	-- Dominant Gladiator's Scaled Breastplate (A)
+						un(14, i(148778)),	-- Dominant Gladiator's Scaled Gauntlets (A)
+						un(14, i(148786)),	-- Dominant Gladiator's Scaled Girdle (A)
+						un(14, i(148780)),	-- Dominant Gladiator's Scaled Helm (A)
+						un(14, i(148782)),	-- Dominant Gladiator's Scaled Legguards (A)
+						un(14, i(148776)),	-- Dominant Gladiator's Scaled Sabatons (A)
+						un(14, i(148784)),	-- Dominant Gladiator's Scaled Shoulders (A)
+						un(14, i(148788)),	-- Dominant Gladiator's Scaled Wristplates (A)
 					}),
 					cl(5, {	-- Priest
+						un(14, i(148662)),	-- Dominant Gladiator's Drape of Piety (A)
+						un(14, i(148804)),	-- Dominant Gladiator's Satin Bracers (A)
+						un(14, i(148802)),	-- Dominant Gladiator's Satin Cord (A)
+						un(14, i(148792)),	-- Dominant Gladiator's Satin Gloves (A)
+						un(14, i(148794)),	-- Dominant Gladiator's Satin Hood (A)
+						un(14, i(148796)),	-- Dominant Gladiator's Satin Leggings (A)
+						un(14, i(148800)),	-- Dominant Gladiator's Satin Mantle (A)
+						un(14, i(148798)),	-- Dominant Gladiator's Satin Robe (A)
+						un(14, i(148790)),	-- Dominant Gladiator's Satin Treads (A)
 					}),
 					cl(4, {	-- Rogue
+						un(14, i(148824)),	-- Dominant Gladiator's Leather Belt (A)
+						un(14, i(148816)),	-- Dominant Gladiator's Leather Gloves (A)
+						un(14, i(148818)),	-- Dominant Gladiator's Leather Helm (A)
+						un(14, i(148820)),	-- Dominant Gladiator's Leather Legguards (A)
+						un(14, i(148814)),	-- Dominant Gladiator's Leather Slippers (A)
+						un(14, i(148822)),	-- Dominant Gladiator's Leather Spaulders (A)
+						un(14, i(148812)),	-- Dominant Gladiator's Leather Tunic (A)
+						un(14, i(148826)),	-- Dominant Gladiator's Leather Wristguards (A)
+						un(14, i(148664)),	-- Dominant Gladiator's Shadowcape (A)
 					}),
 					cl(7, {	-- Shaman
+						un(14, i(148842)),	-- Dominant Gladiator's Ringmail Armband (A)
+						un(14, i(148828)),	-- Dominant Gladiator's Ringmail Armor (A)
+						un(14, i(148830)),	-- Dominant Gladiator's Ringmail Boots (A)
+						un(14, i(148840)),	-- Dominant Gladiator's Ringmail Clasp (A)
+						un(14, i(148832)),	-- Dominant Gladiator's Ringmail Gauntlets (A)
+						un(14, i(148834)),	-- Dominant Gladiator's Ringmail Helm (A)
+						un(14, i(148836)),	-- Dominant Gladiator's Ringmail Leggings (A)
+						un(14, i(148838)),	-- Dominant Gladiator's Ringmail Spaulders (A)
+						un(14, i(148666)),	-- Dominant Gladiator's Totemic Cloak (A)
 					}),
 					cl(9, {	-- Warlock
+						un(14, i(148872)),	-- Dominant Gladiator's Felweave Amice (A)
+						un(14, i(148876)),	-- Dominant Gladiator's Felweave Bracers (A)
+						un(14, i(148668)),	-- Dominant Gladiator's Felweave Cloak (A)
+						un(14, i(148874)),	-- Dominant Gladiator's Felweave Cord (A)
+						un(14, i(148866)),	-- Dominant Gladiator's Felweave Cowl (A)
+						un(14, i(148864)),	-- Dominant Gladiator's Felweave Handguards (A)
+						un(14, i(148870)),	-- Dominant Gladiator's Felweave Raiment (A)
+						un(14, i(148862)),	-- Dominant Gladiator's Felweave Treads (A)
+						un(14, i(148868)),	-- Dominant Gladiator's Felweave Trousers (A)
 					}),
 					cl(1, {	-- Warrior
+						un(14, i(148670)),	-- Dominant Gladiator's Cloak of Battle (A)
+						un(14, i(148878)),	-- Dominant Gladiator's Plate Chestpiece (A)
+						un(14, i(148882)),	-- Dominant Gladiator's Plate Gauntlets (A)
+						un(14, i(148890)),	-- Dominant Gladiator's Plate Girdle (A)
+						un(14, i(148884)),	-- Dominant Gladiator's Plate Helm (A)
+						un(14, i(148886)),	-- Dominant Gladiator's Plate Legguards (A)
+						un(14, i(148888)),	-- Dominant Gladiator's Plate Shoulders (A)
+						un(14, i(148880)),	-- Dominant Gladiator's Plate Warboots (A)
+						un(14, i(148892)),	-- Dominant Gladiator's Plate Wristplates (A)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(148768)), -- Dominant Gladiator's Necklace (A)
@@ -1991,28 +2333,136 @@ _.PVP =
 			n(-9913, {	-- Horde
 				n(-660, {	-- Aspirant / Combatant PvP Gear
 					cl(6, {	-- Death Knight
+						i(149757),	-- Dominant Combatant's Dreadcloak (H)
+						i(149781),	-- Dominant Combatant's Dreadplate Chestpiece (H)
+						i(149785),	-- Dominant Combatant's Dreadplate Gauntlets (H)
+						i(149793),	-- Dominant Combatant's Dreadplate Girdle (H)
+						i(149787),	-- Dominant Combatant's Dreadplate Helm (H)
+						i(149789),	-- Dominant Combatant's Dreadplate Legguards (H)
+						i(149783),	-- Dominant Combatant's Dreadplate Sabatons (H)
+						i(149791),	-- Dominant Combatant's Dreadplate Shoulders (H)
+						i(149795),	-- Dominant Combatant's Dreadplate Wristplates (H)
 					}),
 					cl(12, {	-- Demon Hunter
+						i(149759),	-- Dominant Combatant's Demonthread Cloak (H)
+						i(149809),	-- Dominant Combatant's Felskin Belt (H)
+						i(149799),	-- Dominant Combatant's Felskin Boots (H)
+						i(149801),	-- Dominant Combatant's Felskin Gloves (H)
+						i(149803),	-- Dominant Combatant's Felskin Helm (H)
+						i(149805),	-- Dominant Combatant's Felskin Legguards (H)
+						i(149807),	-- Dominant Combatant's Felskin Spaulders (H)
+						i(149797),	-- Dominant Combatant's Felskin Tunic (H)
+						i(149811),	-- Dominant Combatant's Felskin Wristguards (H)
 					}),
 					cl(11, {	-- Druid
+						i(149825),	-- Dominant Combatant's Dragonhide Belt (H)
+						i(149761),	-- Dominant Combatant's Dragonhide Cloak (H)
+						i(149817),	-- Dominant Combatant's Dragonhide Gloves (H)
+						i(149819),	-- Dominant Combatant's Dragonhide Helm (H)
+						i(149821),	-- Dominant Combatant's Dragonhide Legguards (H)
+						i(149815),	-- Dominant Combatant's Dragonhide Moccasins (H)
+						i(149823),	-- Dominant Combatant's Dragonhide Spaulders (H)
+						i(149813),	-- Dominant Combatant's Dragonhide Tunic (H)
+						i(149827),	-- Dominant Combatant's Dragonhide Wristguards (H)
 					}),
 					cl(3, {	-- Hunter
+						i(149763),	-- Dominant Combatant's Drape of the Tracker (H)
+						i(149843),	-- Dominant Combatant's Chain Armband (H)
+						i(149829),	-- Dominant Combatant's Chain Armor (H)
+						i(149841),	-- Dominant Combatant's Chain Clasp (H)
+						i(149833),	-- Dominant Combatant's Chain Gauntlets (H)
+						i(149835),	-- Dominant Combatant's Chain Helm (H)
+						i(149837),	-- Dominant Combatant's Chain Leggings (H)
+						i(149839),	-- Dominant Combatant's Chain Spaulders (H)
+						i(149831),	-- Dominant Combatant's Chain Treads (H)
 					}),
 					cl(8, {	-- Mage
+						i(149855),	-- Dominant Combatant's Silk Amice (H)
+						i(149859),	-- Dominant Combatant's Silk Bracers (H)
+						i(149857),	-- Dominant Combatant's Silk Cord (H)
+						i(149849),	-- Dominant Combatant's Silk Cowl (H)
+						i(149847),	-- Dominant Combatant's Silk Handguards (H)
+						i(149853),	-- Dominant Combatant's Silk Robe (H)
+						i(149845),	-- Dominant Combatant's Silk Treads (H)
+						i(149851),	-- Dominant Combatant's Silk Trousers (H)
+						i(149765),	-- Dominant Combatant's Silken Shawl (H)
 					}),
 					cl(10, {	-- Monk
+						i(149873),	-- Dominant Combatant's Ironskin Belt (H)
+						i(149767),	-- Dominant Combatant's Ironskin Cloak (H)
+						i(149863),	-- Dominant Combatant's Ironskin Gloves (H)
+						i(149865),	-- Dominant Combatant's Ironskin Helm (H)
+						i(149867),	-- Dominant Combatant's Ironskin Legguards (H)
+						i(149861),	-- Dominant Combatant's Ironskin Slippers (H)
+						i(149869),	-- Dominant Combatant's Ironskin Spaulders (H)
+						i(149871),	-- Dominant Combatant's Ironskin Tunic (H)
+						i(149875),	-- Dominant Combatant's Ironskin Wristguards (H)
 					}),
 					cl(2, {	-- Paladin
+						i(149769),	-- Dominant Combatant's Greatcloak of Faith (H)
+						i(149883),	-- Dominant Combatant's Scaled Chestpiece (H)
+						i(149887),	-- Dominant Combatant's Scaled Gauntlets (H)
+						i(149895),	-- Dominant Combatant's Scaled Girdle (H)
+						i(149889),	-- Dominant Combatant's Scaled Helm (H)
+						i(149891),	-- Dominant Combatant's Scaled Legguards (H)
+						i(149885),	-- Dominant Combatant's Scaled Sabatons (H)
+						i(149893),	-- Dominant Combatant's Scaled Shoulders (H)
+						i(149897),	-- Dominant Combatant's Scaled Wristplates (H)
 					}),
 					cl(5, {	-- Priest
+						i(149771),	-- Dominant Combatant's Drape of Piety (H)
+						i(149913),	-- Dominant Combatant's Satin Bracers (H)
+						i(149911),	-- Dominant Combatant's Satin Cord (H)
+						i(149901),	-- Dominant Combatant's Satin Gloves (H)
+						i(149903),	-- Dominant Combatant's Satin Hood (H)
+						i(149905),	-- Dominant Combatant's Satin Leggings (H)
+						i(149909),	-- Dominant Combatant's Satin Mantle (H)
+						i(149907),	-- Dominant Combatant's Satin Robe (H)
+						i(149899),	-- Dominant Combatant's Satin Treads (H)
 					}),
 					cl(4, {	-- Rogue
+						i(149933),	-- Dominant Combatant's Leather Belt (H)
+						i(149925),	-- Dominant Combatant's Leather Gloves (H)
+						i(149927),	-- Dominant Combatant's Leather Helm (H)
+						i(149929),	-- Dominant Combatant's Leather Legguards (H)
+						i(149923),	-- Dominant Combatant's Leather Slippers (H)
+						i(149931),	-- Dominant Combatant's Leather Spaulders (H)
+						i(149921),	-- Dominant Combatant's Leather Tunic (H)
+						i(149935),	-- Dominant Combatant's Leather Wristguards (H)
+						i(149773),	-- Dominant Combatant's Shadowcape (H)
 					}),
 					cl(7, {	-- Shaman
+						i(149951),	-- Dominant Combatant's Ringmail Armband (H)
+						i(149937),	-- Dominant Combatant's Ringmail Armor (H)
+						i(149939),	-- Dominant Combatant's Ringmail Boots (H)
+						i(149949),	-- Dominant Combatant's Ringmail Clasp (H)
+						i(149941),	-- Dominant Combatant's Ringmail Gauntlets (H)
+						i(149943),	-- Dominant Combatant's Ringmail Helm (H)
+						i(149945),	-- Dominant Combatant's Ringmail Leggings (H)
+						i(149947),	-- Dominant Combatant's Ringmail Spaulders (H)
+						i(149775),	-- Dominant Combatant's Totemic Cloak (H)
 					}),
 					cl(9, {	-- Warlock
+						i(149981),	-- Dominant Combatant's Felweave Amice (H)
+						i(149985),	-- Dominant Combatant's Felweave Bracers (H)
+						i(149777),	-- Dominant Combatant's Felweave Cloak (H)
+						i(149983),	-- Dominant Combatant's Felweave Cord (H)
+						i(149975),	-- Dominant Combatant's Felweave Cowl (H)
+						i(149973),	-- Dominant Combatant's Felweave Handguards (H)
+						i(149979),	-- Dominant Combatant's Felweave Raiment (H)
+						i(149971),	-- Dominant Combatant's Felweave Treads (H)
+						i(149977),	-- Dominant Combatant's Felweave Trousers (H)
 					}),
 					cl(1, {	-- Warrior
+						i(149779),	-- Dominant Combatant's Cloak of Battle (H)
+						i(149987),	-- Dominant Combatant's Plate Chestpiece (H)
+						i(149991),	-- Dominant Combatant's Plate Gauntlets (H)
+						i(149999),	-- Dominant Combatant's Plate Girdle (H)
+						i(149993),	-- Dominant Combatant's Plate Helm (H)
+						i(149995),	-- Dominant Combatant's Plate Legguards (H)
+						i(149997),	-- Dominant Combatant's Plate Shoulders (H)
+						i(149989),	-- Dominant Combatant's Plate Warboots (H)
+						i(150001),	-- Dominant Combatant's Plate Wristplates (H)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(149877)), -- Dominant Combatant's Necklace (H)
@@ -2070,28 +2520,136 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(6, {	-- Death Knight
+						i(148403),	-- Dominant Gladiator's Dreadcloak (H)
+						i(148427),	-- Dominant Gladiator's Dreadplate Chestpiece (H)
+						i(148431),	-- Dominant Gladiator's Dreadplate Gauntlets (H)
+						i(148439),	-- Dominant Gladiator's Dreadplate Girdle (H)
+						i(148433),	-- Dominant Gladiator's Dreadplate Helm (H)
+						i(148435),	-- Dominant Gladiator's Dreadplate Legguards (H)
+						i(148429),	-- Dominant Gladiator's Dreadplate Sabatons (H)
+						i(148437),	-- Dominant Gladiator's Dreadplate Shoulders (H)
+						i(148441),	-- Dominant Gladiator's Dreadplate Wristplates (H)
 					}),
 					cl(12, {	-- Demon Hunter
+						i(148405),	-- Dominant Gladiator's Demonthread Cloak (H)
+						i(148455),	-- Dominant Gladiator's Felskin Belt (H)
+						i(148445),	-- Dominant Gladiator's Felskin Boots (H)
+						i(148447),	-- Dominant Gladiator's Felskin Gloves (H)
+						i(148449),	-- Dominant Gladiator's Felskin Helm (H)
+						i(148451),	-- Dominant Gladiator's Felskin Legguards (H)
+						i(148453),	-- Dominant Gladiator's Felskin Spaulders (H)
+						i(148443),	-- Dominant Gladiator's Felskin Tunic (H)
+						i(148457),	-- Dominant Gladiator's Felskin Wristguards (H)
 					}),
 					cl(11, {	-- Druid
+						i(148471),	-- Dominant Gladiator's Dragonhide Belt (H)
+						i(148407),	-- Dominant Gladiator's Dragonhide Cloak (H)
+						i(148463),	-- Dominant Gladiator's Dragonhide Gloves (H)
+						i(148465),	-- Dominant Gladiator's Dragonhide Helm (H)
+						i(148467),	-- Dominant Gladiator's Dragonhide Legguards (H)
+						i(148461),	-- Dominant Gladiator's Dragonhide Moccasins (H)
+						i(148469),	-- Dominant Gladiator's Dragonhide Spaulders (H)
+						i(148459),	-- Dominant Gladiator's Dragonhide Vest (H)
+						i(148473),	-- Dominant Gladiator's Dragonhide Wristguards (H)
 					}),
 					cl(3, {	-- Hunter
+						i(148489),	-- Dominant Gladiator's Chain Armband (H)
+						i(148475),	-- Dominant Gladiator's Chain Armor (H)
+						i(148487),	-- Dominant Gladiator's Chain Clasp (H)
+						i(148479),	-- Dominant Gladiator's Chain Gauntlets (H)
+						i(148481),	-- Dominant Gladiator's Chain Helm (H)
+						i(148483),	-- Dominant Gladiator's Chain Leggings (H)
+						i(148485),	-- Dominant Gladiator's Chain Spaulders (H)
+						i(148477),	-- Dominant Gladiator's Chain Treads (H)
+						i(148409),	-- Dominant Gladiator's Drape of the Tracker (H)
 					}),
 					cl(8, {	-- Mage
+						i(148501),	-- Dominant Gladiator's Silk Amice (H)
+						i(148505),	-- Dominant Gladiator's Silk Bracers (H)
+						i(148503),	-- Dominant Gladiator's Silk Cord (H)
+						i(148495),	-- Dominant Gladiator's Silk Cowl (H)
+						i(148493),	-- Dominant Gladiator's Silk Handguards (H)
+						i(148491),	-- Dominant Gladiator's Silk Treads (H)
+						i(148497),	-- Dominant Gladiator's Silk Trousers (H)
+						i(148499),	-- Dominant Gladiator's Silk Tunic (H)
+						i(148411),	-- Dominant Gladiator's Silken Shawl (H)
 					}),
 					cl(10, {	-- Monk
+						i(148519),	-- Dominant Gladiator's Ironskin Belt (H)
+						i(148413),	-- Dominant Gladiator's Ironskin Cloak (H)
+						i(148509),	-- Dominant Gladiator's Ironskin Gloves (H)
+						i(148511),	-- Dominant Gladiator's Ironskin Helm (H)
+						i(148513),	-- Dominant Gladiator's Ironskin Legguards (H)
+						i(148507),	-- Dominant Gladiator's Ironskin Slippers (H)
+						i(148515),	-- Dominant Gladiator's Ironskin Spaulders (H)
+						i(148517),	-- Dominant Gladiator's Ironskin Tunic (H)
+						i(148521),	-- Dominant Gladiator's Ironskin Wristguards (H)
 					}),
 					cl(2, {	-- Paladin
+						i(148415),	-- Dominant Gladiator's Greatcloak of Faith (H)
+						i(148528),	-- Dominant Gladiator's Scaled Breastplate (H)
+						i(148532),	-- Dominant Gladiator's Scaled Gauntlets (H)
+						i(148541),	-- Dominant Gladiator's Scaled Girdle (H)
+						i(148534),	-- Dominant Gladiator's Scaled Helm (H)
+						i(148536),	-- Dominant Gladiator's Scaled Legguards (H)
+						i(148530),	-- Dominant Gladiator's Scaled Sabatons (H)
+						i(148539),	-- Dominant Gladiator's Scaled Shoulders (H)
+						i(148543),	-- Dominant Gladiator's Scaled Wristplates (H)
 					}),
 					cl(5, {	-- Priest
+						i(148417),	-- Dominant Gladiator's Drape of Piety (H)
+						i(148559),	-- Dominant Gladiator's Satin Bracers (H)
+						i(148557),	-- Dominant Gladiator's Satin Cord (H)
+						i(148547),	-- Dominant Gladiator's Satin Gloves (H)
+						i(148549),	-- Dominant Gladiator's Satin Hood (H)
+						i(148551),	-- Dominant Gladiator's Satin Leggings (H)
+						i(148555),	-- Dominant Gladiator's Satin Mantle (H)
+						i(148553),	-- Dominant Gladiator's Satin Robe (H)
+						i(148545),	-- Dominant Gladiator's Satin Treads (H)
 					}),
 					cl(4, {	-- Rogue
+						i(148579),	-- Dominant Gladiator's Leather Belt (H)
+						i(148571),	-- Dominant Gladiator's Leather Gloves (H)
+						i(148573),	-- Dominant Gladiator's Leather Helm (H)
+						i(148575),	-- Dominant Gladiator's Leather Legguards (H)
+						i(148569),	-- Dominant Gladiator's Leather Slippers (H)
+						i(148577),	-- Dominant Gladiator's Leather Spaulders (H)
+						i(148567),	-- Dominant Gladiator's Leather Tunic (H)
+						i(148581),	-- Dominant Gladiator's Leather Wristguards (H)
+						i(148419),	-- Dominant Gladiator's Shadowcape (H)
 					}),
 					cl(7, {	-- Shaman
+						i(148597),	-- Dominant Gladiator's Ringmail Armband (H)
+						i(148583),	-- Dominant Gladiator's Ringmail Armor (H)
+						i(148585),	-- Dominant Gladiator's Ringmail Boots (H)
+						i(148595),	-- Dominant Gladiator's Ringmail Clasp (H)
+						i(148587),	-- Dominant Gladiator's Ringmail Gauntlets (H)
+						i(148589),	-- Dominant Gladiator's Ringmail Helm (H)
+						i(148591),	-- Dominant Gladiator's Ringmail Leggings (H)
+						i(148593),	-- Dominant Gladiator's Ringmail Spaulders (H)
+						i(148421),	-- Dominant Gladiator's Totemic Cloak (H)
 					}),
 					cl(9, {	-- Warlock
+						i(148627),	-- Dominant Gladiator's Felweave Amice (H)
+						i(148631),	-- Dominant Gladiator's Felweave Bracers (H)
+						i(148423),	-- Dominant Gladiator's Felweave Cloak (H)
+						i(148629),	-- Dominant Gladiator's Felweave Cord (H)
+						i(148621),	-- Dominant Gladiator's Felweave Cowl (H)
+						i(148619),	-- Dominant Gladiator's Felweave Handguards (H)
+						i(148625),	-- Dominant Gladiator's Felweave Raiment (H)
+						i(148617),	-- Dominant Gladiator's Felweave Treads (H)
+						i(148623),	-- Dominant Gladiator's Felweave Trousers (H)
 					}),
 					cl(1, {	-- Warrior
+						i(148425),	-- Dominant Gladiator's Cloak of Battle (H)
+						i(148633),	-- Dominant Gladiator's Plate Chestpiece (H)
+						i(148637),	-- Dominant Gladiator's Plate Gauntlets (H)
+						i(148645),	-- Dominant Gladiator's Plate Girdle (H)
+						i(148639),	-- Dominant Gladiator's Plate Helm (H)
+						i(148641),	-- Dominant Gladiator's Plate Legguards (H)
+						i(148643),	-- Dominant Gladiator's Plate Shoulders (H)
+						i(148635),	-- Dominant Gladiator's Plate Warboots (H)
+						i(148647),	-- Dominant Gladiator's Plate Wristplates (H)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(148523)), -- Dominant Gladiator's Necklace (H)
@@ -2149,28 +2707,136 @@ _.PVP =
 				}),
 				n(-662, {	-- Elite PvP Gear
 					cl(6, {	-- Death Knight
+						un(14, i(148649)),	-- Dominant Gladiator's Dreadcloak (H)
+						un(14, i(148673)),	-- Dominant Gladiator's Dreadplate Chestpiece (H)
+						un(14, i(148677)),	-- Dominant Gladiator's Dreadplate Gauntlets (H)
+						un(14, i(148685)),	-- Dominant Gladiator's Dreadplate Girdle (H)
+						un(14, i(148679)),	-- Dominant Gladiator's Dreadplate Helm (H)
+						un(14, i(148681)),	-- Dominant Gladiator's Dreadplate Legguards (H)
+						un(14, i(148675)),	-- Dominant Gladiator's Dreadplate Sabatons (H)
+						un(14, i(148683)),	-- Dominant Gladiator's Dreadplate Shoulders (H)
+						un(14, i(148687)),	-- Dominant Gladiator's Dreadplate Wristplates (H)
 					}),
 					cl(12, {	-- Demon Hunter
+						un(14, i(148651)),	-- Dominant Gladiator's Demonthread Cloak (H)
+						un(14, i(148701)),	-- Dominant Gladiator's Felskin Belt (H)
+						un(14, i(148691)),	-- Dominant Gladiator's Felskin Boots (H)
+						un(14, i(148693)),	-- Dominant Gladiator's Felskin Gloves (H)
+						un(14, i(148695)),	-- Dominant Gladiator's Felskin Helm (H)
+						un(14, i(148697)),	-- Dominant Gladiator's Felskin Legguards (H)
+						un(14, i(148699)),	-- Dominant Gladiator's Felskin Spaulders (H)
+						un(14, i(148689)),	-- Dominant Gladiator's Felskin Tunic (H)
+						un(14, i(148703)),	-- Dominant Gladiator's Felskin Wristguards (H)
 					}),
 					cl(11, {	-- Druid
+						un(14, i(148717)),	-- Dominant Gladiator's Dragonhide Belt (H)
+						un(14, i(148653)),	-- Dominant Gladiator's Dragonhide Cloak (H)
+						un(14, i(148709)),	-- Dominant Gladiator's Dragonhide Gloves (H)
+						un(14, i(148711)),	-- Dominant Gladiator's Dragonhide Helm (H)
+						un(14, i(148713)),	-- Dominant Gladiator's Dragonhide Legguards (H)
+						un(14, i(148707)),	-- Dominant Gladiator's Dragonhide Moccasins (H)
+						un(14, i(148715)),	-- Dominant Gladiator's Dragonhide Spaulders (H)
+						un(14, i(148705)),	-- Dominant Gladiator's Dragonhide Vest (H)
+						un(14, i(148719)),	-- Dominant Gladiator's Dragonhide Wristguards (H)
 					}),
 					cl(3, {	-- Hunter
+						un(14, i(148735)),	-- Dominant Gladiator's Chain Armband (H)
+						un(14, i(148721)),	-- Dominant Gladiator's Chain Armor (H)
+						un(14, i(148733)),	-- Dominant Gladiator's Chain Clasp (H)
+						un(14, i(148725)),	-- Dominant Gladiator's Chain Gauntlets (H)
+						un(14, i(148727)),	-- Dominant Gladiator's Chain Helm (H)
+						un(14, i(148729)),	-- Dominant Gladiator's Chain Leggings (H)
+						un(14, i(148731)),	-- Dominant Gladiator's Chain Spaulders (H)
+						un(14, i(148723)),	-- Dominant Gladiator's Chain Treads (H)
+						un(14, i(148655)),	-- Dominant Gladiator's Drape of the Tracker (H)
 					}),
 					cl(8, {	-- Mage
+						un(14, i(148747)),	-- Dominant Gladiator's Silk Amice (H)
+						un(14, i(148751)),	-- Dominant Gladiator's Silk Bracers (H)
+						un(14, i(148749)),	-- Dominant Gladiator's Silk Cord (H)
+						un(14, i(148741)),	-- Dominant Gladiator's Silk Cowl (H)
+						un(14, i(148739)),	-- Dominant Gladiator's Silk Handguards (H)
+						un(14, i(148737)),	-- Dominant Gladiator's Silk Treads (H)
+						un(14, i(148743)),	-- Dominant Gladiator's Silk Trousers (H)
+						un(14, i(148745)),	-- Dominant Gladiator's Silk Tunic (H)
+						un(14, i(148657)),	-- Dominant Gladiator's Silken Shawl (H)
 					}),
 					cl(10, {	-- Monk
+						un(14, i(148765)),	-- Dominant Gladiator's Ironskin Belt (H)
+						un(14, i(148659)),	-- Dominant Gladiator's Ironskin Cloak (H)
+						un(14, i(148755)),	-- Dominant Gladiator's Ironskin Gloves (H)
+						un(14, i(148757)),	-- Dominant Gladiator's Ironskin Helm (H)
+						un(14, i(148759)),	-- Dominant Gladiator's Ironskin Legguards (H)
+						un(14, i(148753)),	-- Dominant Gladiator's Ironskin Slippers (H)
+						un(14, i(148761)),	-- Dominant Gladiator's Ironskin Spaulders (H)
+						un(14, i(148763)),	-- Dominant Gladiator's Ironskin Tunic (H)
+						un(14, i(148767)),	-- Dominant Gladiator's Ironskin Wristguards (H)
 					}),
 					cl(2, {	-- Paladin
+						un(14, i(148661)),	-- Dominant Gladiator's Greatcloak of Faith (H)
+						un(14, i(148775)),	-- Dominant Gladiator's Scaled Breastplate (H)
+						un(14, i(148779)),	-- Dominant Gladiator's Scaled Gauntlets (H)
+						un(14, i(148787)),	-- Dominant Gladiator's Scaled Girdle (H)
+						un(14, i(148781)),	-- Dominant Gladiator's Scaled Helm (H)
+						un(14, i(148783)),	-- Dominant Gladiator's Scaled Legguards (H)
+						un(14, i(148777)),	-- Dominant Gladiator's Scaled Sabatons (H)
+						un(14, i(148785)),	-- Dominant Gladiator's Scaled Shoulders (H)
+						un(14, i(148789)),	-- Dominant Gladiator's Scaled Wristplates (H)
 					}),
 					cl(5, {	-- Priest
+						un(14, i(148663)),	-- Dominant Gladiator's Drape of Piety (H)
+						un(14, i(148805)),	-- Dominant Gladiator's Satin Bracers (H)
+						un(14, i(148803)),	-- Dominant Gladiator's Satin Cord (H)
+						un(14, i(148793)),	-- Dominant Gladiator's Satin Gloves (H)
+						un(14, i(148795)),	-- Dominant Gladiator's Satin Hood (H)
+						un(14, i(148797)),	-- Dominant Gladiator's Satin Leggings (H)
+						un(14, i(148801)),	-- Dominant Gladiator's Satin Mantle (H)
+						un(14, i(148799)),	-- Dominant Gladiator's Satin Robe (H)
+						un(14, i(148791)),	-- Dominant Gladiator's Satin Treads (H)
 					}),
 					cl(4, {	-- Rogue
+						un(14, i(148825)),	-- Dominant Gladiator's Leather Belt (H)
+						un(14, i(148817)),	-- Dominant Gladiator's Leather Gloves (H)
+						un(14, i(148819)),	-- Dominant Gladiator's Leather Helm (H)
+						un(14, i(148821)),	-- Dominant Gladiator's Leather Legguards (H)
+						un(14, i(148815)),	-- Dominant Gladiator's Leather Slippers (H)
+						un(14, i(148823)),	-- Dominant Gladiator's Leather Spaulders (H)
+						un(14, i(148813)),	-- Dominant Gladiator's Leather Tunic (H)
+						un(14, i(148827)),	-- Dominant Gladiator's Leather Wristguards (H)
+						un(14, i(148665)),	-- Dominant Gladiator's Shadowcape (H)
 					}),
 					cl(7, {	-- Shaman
+						un(14, i(148843)),	-- Dominant Gladiator's Ringmail Armband (H)
+						un(14, i(148829)),	-- Dominant Gladiator's Ringmail Armor (H)
+						un(14, i(148831)),	-- Dominant Gladiator's Ringmail Boots (H)
+						un(14, i(148841)),	-- Dominant Gladiator's Ringmail Clasp (H)
+						un(14, i(148833)),	-- Dominant Gladiator's Ringmail Gauntlets (H)
+						un(14, i(148835)),	-- Dominant Gladiator's Ringmail Helm (H)
+						un(14, i(148837)),	-- Dominant Gladiator's Ringmail Leggings (H)
+						un(14, i(148839)),	-- Dominant Gladiator's Ringmail Spaulders (H)
+						un(14, i(148667)),	-- Dominant Gladiator's Totemic Cloak (H)
 					}),
 					cl(9, {	-- Warlock
+						un(14, i(148873)),	-- Dominant Gladiator's Felweave Amice (H)
+						un(14, i(148877)),	-- Dominant Gladiator's Felweave Bracers (H)
+						un(14, i(148669)),	-- Dominant Gladiator's Felweave Cloak (H)
+						un(14, i(148875)),	-- Dominant Gladiator's Felweave Cord (H)
+						un(14, i(148867)),	-- Dominant Gladiator's Felweave Cowl (H)
+						un(14, i(148865)),	-- Dominant Gladiator's Felweave Handguards (H)
+						un(14, i(148871)),	-- Dominant Gladiator's Felweave Raiment (H)
+						un(14, i(148863)),	-- Dominant Gladiator's Felweave Treads (H)
+						un(14, i(148869)),	-- Dominant Gladiator's Felweave Trousers (H)
 					}),
 					cl(1, {	-- Warrior
+						un(14, i(148671)),	-- Dominant Gladiator's Cloak of Battle (H)
+						un(14, i(148879)),	-- Dominant Gladiator's Plate Chestpiece (H)
+						un(14, i(148883)),	-- Dominant Gladiator's Plate Gauntlets (H)
+						un(14, i(148891)),	-- Dominant Gladiator's Plate Girdle (H)
+						un(14, i(148885)),	-- Dominant Gladiator's Plate Helm (H)
+						un(14, i(148887)),	-- Dominant Gladiator's Plate Legguards (H)
+						un(14, i(148889)),	-- Dominant Gladiator's Plate Shoulders (H)
+						un(14, i(148881)),	-- Dominant Gladiator's Plate Warboots (H)
+						un(14, i(148893)),	-- Dominant Gladiator's Plate Wristplates (H)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(148769)), -- Dominant Gladiator's Necklace (H)
@@ -2419,114 +3085,114 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(6, {	-- Death Knight
-						i(148894),	-- Demonic Gladiator's Dreadcloak
-						i(148918),	-- Demonic Gladiator's Dreadplate Chestpiece
-						i(148922),	-- Demonic Gladiator's Dreadplate Gauntlets
-						i(148930),	-- Demonic Gladiator's Dreadplate Girdle
-						i(148924),	-- Demonic Gladiator's Dreadplate Helm
-						i(148926),	-- Demonic Gladiator's Dreadplate Legguards
-						i(148920),	-- Demonic Gladiator's Dreadplate Sabatons
-						i(148928),	-- Demonic Gladiator's Dreadplate Shoulders
-						i(148932),	-- Demonic Gladiator's Dreadplate Wristplates
+						i(148894),	-- Demonic Gladiator's Dreadcloak (A)
+						i(148918),	-- Demonic Gladiator's Dreadplate Chestpiece (A)
+						i(148922),	-- Demonic Gladiator's Dreadplate Gauntlets (A)
+						i(148930),	-- Demonic Gladiator's Dreadplate Girdle (A)
+						i(148924),	-- Demonic Gladiator's Dreadplate Helm (A)
+						i(148926),	-- Demonic Gladiator's Dreadplate Legguards (A)
+						i(148920),	-- Demonic Gladiator's Dreadplate Sabatons (A)
+						i(148928),	-- Demonic Gladiator's Dreadplate Shoulders (A)
+						i(148932),	-- Demonic Gladiator's Dreadplate Wristplates (A)
 					}),
 					cl(12, {	-- Demon Hunter
-						i(148896),	-- Demonic Gladiator's Demonthread Cloak
-						i(148946),	-- Demonic Gladiator's Felskin Belt
-						i(148936),	-- Demonic Gladiator's Felskin Boots
-						i(148938),	-- Demonic Gladiator's Felskin Gloves
-						i(148940),	-- Demonic Gladiator's Felskin Helm
-						i(148942),	-- Demonic Gladiator's Felskin Legguards
-						i(148944),	-- Demonic Gladiator's Felskin Spaulders
-						i(148934),	-- Demonic Gladiator's Felskin Tunic
-						i(148948),	-- Demonic Gladiator's Felskin Wristguards
+						i(148896),	-- Demonic Gladiator's Demonthread Cloak (A)
+						i(148946),	-- Demonic Gladiator's Felskin Belt (A)
+						i(148936),	-- Demonic Gladiator's Felskin Boots (A)
+						i(148938),	-- Demonic Gladiator's Felskin Gloves (A)
+						i(148940),	-- Demonic Gladiator's Felskin Helm (A)
+						i(148942),	-- Demonic Gladiator's Felskin Legguards (A)
+						i(148944),	-- Demonic Gladiator's Felskin Spaulders (A)
+						i(148934),	-- Demonic Gladiator's Felskin Tunic (A)
+						i(148948),	-- Demonic Gladiator's Felskin Wristguards (A)
 					}),
 					cl(11, {	-- Druid
-						i(148962),	-- Demonic Gladiator's Dragonhide Belt
-						i(148898),	-- Demonic Gladiator's Dragonhide Cloak
-						i(148954),	-- Demonic Gladiator's Dragonhide Gloves
-						i(148956),	-- Demonic Gladiator's Dragonhide Helm
-						i(148958),	-- Demonic Gladiator's Dragonhide Legguards
-						i(148952),	-- Demonic Gladiator's Dragonhide Moccasins
-						i(148960),	-- Demonic Gladiator's Dragonhide Spaulders
-						i(148950),	-- Demonic Gladiator's Dragonhide Vest
-						i(148964),	-- Demonic Gladiator's Dragonhide Wristguards
+						i(148962),	-- Demonic Gladiator's Dragonhide Belt (A)
+						i(148898),	-- Demonic Gladiator's Dragonhide Cloak (A)
+						i(148954),	-- Demonic Gladiator's Dragonhide Gloves (A)
+						i(148956),	-- Demonic Gladiator's Dragonhide Helm (A)
+						i(148958),	-- Demonic Gladiator's Dragonhide Legguards (A)
+						i(148952),	-- Demonic Gladiator's Dragonhide Moccasins (A)
+						i(148960),	-- Demonic Gladiator's Dragonhide Spaulders (A)
+						i(148950),	-- Demonic Gladiator's Dragonhide Vest (A)
+						i(148964),	-- Demonic Gladiator's Dragonhide Wristguards (A)
 					}),
 					cl(3, {	-- Hunter
-						i(148900),	-- Demonic Gladiator's Drape of the Tracker
-						i(148980),	-- Demonic Gladiator's Chain Armband
-						i(148966),	-- Demonic Gladiator's Chain Armor
-						i(148978),	-- Demonic Gladiator's Chain Clasp
-						i(148970),	-- Demonic Gladiator's Chain Gauntlets
-						i(148972),	-- Demonic Gladiator's Chain Helm
-						i(148974),	-- Demonic Gladiator's Chain Leggings
-						i(148976),	-- Demonic Gladiator's Chain Spaulders
-						i(148968),	-- Demonic Gladiator's Chain Treads
+						i(148900),	-- Demonic Gladiator's Drape of the Tracker (A)
+						i(148980),	-- Demonic Gladiator's Chain Armband (A)
+						i(148966),	-- Demonic Gladiator's Chain Armor (A)
+						i(148978),	-- Demonic Gladiator's Chain Clasp (A)
+						i(148970),	-- Demonic Gladiator's Chain Gauntlets (A)
+						i(148972),	-- Demonic Gladiator's Chain Helm (A)
+						i(148974),	-- Demonic Gladiator's Chain Leggings (A)
+						i(148976),	-- Demonic Gladiator's Chain Spaulders (A)
+						i(148968),	-- Demonic Gladiator's Chain Treads (A)
 					}),
 					cl(8, {	-- Mage
-						i(148992),	-- Demonic Gladiator's Silk Amice
-						i(148996),	-- Demonic Gladiator's Silk Bracers
-						i(148994),	-- Demonic Gladiator's Silk Cord
-						i(148986),	-- Demonic Gladiator's Silk Cowl
-						i(148984),	-- Demonic Gladiator's Silk Handguards
-						i(148982),	-- Demonic Gladiator's Silk Treads
-						i(148988),	-- Demonic Gladiator's Silk Trousers
-						i(148990),	-- Demonic Gladiator's Silk Tunic
-						i(148902),	-- Demonic Gladiator's Silken Shawl
+						i(148992),	-- Demonic Gladiator's Silk Amice (A)
+						i(148996),	-- Demonic Gladiator's Silk Bracers (A)
+						i(148994),	-- Demonic Gladiator's Silk Cord (A)
+						i(148986),	-- Demonic Gladiator's Silk Cowl (A)
+						i(148984),	-- Demonic Gladiator's Silk Handguards (A)
+						i(148982),	-- Demonic Gladiator's Silk Treads (A)
+						i(148988),	-- Demonic Gladiator's Silk Trousers (A)
+						i(148990),	-- Demonic Gladiator's Silk Tunic (A)
+						i(148902),	-- Demonic Gladiator's Silken Shawl (A)
 					}),
 					cl(10, {	-- Monk
-						i(149010),	-- Demonic Gladiator's Ironskin Belt
-						i(148904),	-- Demonic Gladiator's Ironskin Cloak
-						i(149000),	-- Demonic Gladiator's Ironskin Gloves
-						i(149002),	-- Demonic Gladiator's Ironskin Helm
-						i(149004),	-- Demonic Gladiator's Ironskin Legguards
-						i(148998),	-- Demonic Gladiator's Ironskin Slippers
-						i(149006),	-- Demonic Gladiator's Ironskin Spaulders
-						i(149008),	-- Demonic Gladiator's Ironskin Tunic
-						i(149012),	-- Demonic Gladiator's Ironskin Wristguards
+						i(149010),	-- Demonic Gladiator's Ironskin Belt (A)
+						i(148904),	-- Demonic Gladiator's Ironskin Cloak (A)
+						i(149000),	-- Demonic Gladiator's Ironskin Gloves (A)
+						i(149002),	-- Demonic Gladiator's Ironskin Helm (A)
+						i(149004),	-- Demonic Gladiator's Ironskin Legguards (A)
+						i(148998),	-- Demonic Gladiator's Ironskin Slippers (A)
+						i(149006),	-- Demonic Gladiator's Ironskin Spaulders (A)
+						i(149008),	-- Demonic Gladiator's Ironskin Tunic (A)
+						i(149012),	-- Demonic Gladiator's Ironskin Wristguards (A)
 					}),
 					cl(2, {	-- Paladin
-						i(148906),	-- Demonic Gladiator's Greatcloak of Faith
-						i(149029),	-- Demonic Gladiator's Scaled Breastplate
-						i(149023),	-- Demonic Gladiator's Scaled Gauntlets
-						i(149032),	-- Demonic Gladiator's Scaled Girdle
-						i(149025),	-- Demonic Gladiator's Scaled Helm
-						i(149027),	-- Demonic Gladiator's Scaled Legguards
-						i(149021),	-- Demonic Gladiator's Scaled Sabatons
-						i(149030),	-- Demonic Gladiator's Scaled Shoulders
-						i(149034),	-- Demonic Gladiator's Scaled Wristplates
+						i(148906),	-- Demonic Gladiator's Greatcloak of Faith (A)
+						i(149029),	-- Demonic Gladiator's Scaled Breastplate (A)
+						i(149023),	-- Demonic Gladiator's Scaled Gauntlets (A)
+						i(149032),	-- Demonic Gladiator's Scaled Girdle (A)
+						i(149025),	-- Demonic Gladiator's Scaled Helm (A)
+						i(149027),	-- Demonic Gladiator's Scaled Legguards (A)
+						i(149021),	-- Demonic Gladiator's Scaled Sabatons (A)
+						i(149030),	-- Demonic Gladiator's Scaled Shoulders (A)
+						i(149034),	-- Demonic Gladiator's Scaled Wristplates (A)
 					}),
 					cl(5, {	-- Priest
-						i(148908),	-- Demonic Gladiator's Drape of Piety
-						i(149050),	-- Demonic Gladiator's Satin Bracers
-						i(149048),	-- Demonic Gladiator's Satin Cord
-						i(149038),	-- Demonic Gladiator's Satin Gloves
-						i(149040),	-- Demonic Gladiator's Satin Hood
-						i(149042),	-- Demonic Gladiator's Satin Leggings
-						i(149046),	-- Demonic Gladiator's Satin Mantle
-						i(149044),	-- Demonic Gladiator's Satin Robe
-						i(149036),	-- Demonic Gladiator's Satin Treads
+						i(148908),	-- Demonic Gladiator's Drape of Piety (A)
+						i(149050),	-- Demonic Gladiator's Satin Bracers (A)
+						i(149048),	-- Demonic Gladiator's Satin Cord (A)
+						i(149038),	-- Demonic Gladiator's Satin Gloves (A)
+						i(149040),	-- Demonic Gladiator's Satin Hood (A)
+						i(149042),	-- Demonic Gladiator's Satin Leggings (A)
+						i(149046),	-- Demonic Gladiator's Satin Mantle (A)
+						i(149044),	-- Demonic Gladiator's Satin Robe (A)
+						i(149036),	-- Demonic Gladiator's Satin Treads (A)
 					}),
 					cl(4, {	-- Rogue
-						i(149070),	-- Demonic Gladiator's Leather Belt
-						i(149062),	-- Demonic Gladiator's Leather Gloves
-						i(149064),	-- Demonic Gladiator's Leather Helm
-						i(149066),	-- Demonic Gladiator's Leather Legguards
-						i(149060),	-- Demonic Gladiator's Leather Slippers
-						i(149068),	-- Demonic Gladiator's Leather Spaulders
-						i(149058),	-- Demonic Gladiator's Leather Tunic
-						i(149072),	-- Demonic Gladiator's Leather Wristguards
-						i(148910),	-- Demonic Gladiator's Shadowcape
+						i(149070),	-- Demonic Gladiator's Leather Belt (A)
+						i(149062),	-- Demonic Gladiator's Leather Gloves (A)
+						i(149064),	-- Demonic Gladiator's Leather Helm (A)
+						i(149066),	-- Demonic Gladiator's Leather Legguards (A)
+						i(149060),	-- Demonic Gladiator's Leather Slippers (A)
+						i(149068),	-- Demonic Gladiator's Leather Spaulders (A)
+						i(149058),	-- Demonic Gladiator's Leather Tunic (A)
+						i(149072),	-- Demonic Gladiator's Leather Wristguards (A)
+						i(148910),	-- Demonic Gladiator's Shadowcape (A)
 					}),
 					cl(7, {	-- Shaman
-						i(149088),	-- Demonic Gladiator's Ringmail Armband
-						i(149074),	-- Demonic Gladiator's Ringmail Armor
-						i(149076),	-- Demonic Gladiator's Ringmail Boots
-						i(149086),	-- Demonic Gladiator's Ringmail Clasp
-						i(149078),	-- Demonic Gladiator's Ringmail Gauntlets
-						i(149080),	-- Demonic Gladiator's Ringmail Helm
-						i(149082),	-- Demonic Gladiator's Ringmail Leggings
-						i(149084),	-- Demonic Gladiator's Ringmail Spaulders
-						i(148912),	-- Demonic Gladiator's Totemic Cloak
+						i(149088),	-- Demonic Gladiator's Ringmail Armband (A)
+						i(149074),	-- Demonic Gladiator's Ringmail Armor (A)
+						i(149076),	-- Demonic Gladiator's Ringmail Boots (A)
+						i(149086),	-- Demonic Gladiator's Ringmail Clasp (A)
+						i(149078),	-- Demonic Gladiator's Ringmail Gauntlets (A)
+						i(149080),	-- Demonic Gladiator's Ringmail Helm (A)
+						i(149082),	-- Demonic Gladiator's Ringmail Leggings (A)
+						i(149084),	-- Demonic Gladiator's Ringmail Spaulders (A)
+						i(148912),	-- Demonic Gladiator's Totemic Cloak (A)
 					}),
 					cl(9, {	-- Warlock
 						i(149118),	-- Demonic Gladiator's Felweave Amice
@@ -2981,136 +3647,136 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(6, {	-- Death Knight
-						i(148894),	-- Demonic Gladiator's Dreadcloak
-						i(148918),	-- Demonic Gladiator's Dreadplate Chestpiece
-						i(148922),	-- Demonic Gladiator's Dreadplate Gauntlets
-						i(148930),	-- Demonic Gladiator's Dreadplate Girdle
-						i(148924),	-- Demonic Gladiator's Dreadplate Helm
-						i(148926),	-- Demonic Gladiator's Dreadplate Legguards
-						i(148920),	-- Demonic Gladiator's Dreadplate Sabatons
-						i(148928),	-- Demonic Gladiator's Dreadplate Shoulders
-						i(148932),	-- Demonic Gladiator's Dreadplate Wristplates
+						i(148895),	-- Demonic Gladiator's Dreadcloak (H)
+						i(148919),	-- Demonic Gladiator's Dreadplate Chestpiece (H)
+						i(148923),	-- Demonic Gladiator's Dreadplate Gauntlets (H)
+						i(148931),	-- Demonic Gladiator's Dreadplate Girdle (H)
+						i(148925),	-- Demonic Gladiator's Dreadplate Helm (H)
+						i(148927),	-- Demonic Gladiator's Dreadplate Legguards (H)
+						i(148921),	-- Demonic Gladiator's Dreadplate Sabatons (H)
+						i(148929),	-- Demonic Gladiator's Dreadplate Shoulders (H)
+						i(148933),	-- Demonic Gladiator's Dreadplate Wristplates (H)
 					}),
 					cl(12, {	-- Demon Hunter
-						i(148896),	-- Demonic Gladiator's Demonthread Cloak
-						i(148946),	-- Demonic Gladiator's Felskin Belt
-						i(148936),	-- Demonic Gladiator's Felskin Boots
-						i(148938),	-- Demonic Gladiator's Felskin Gloves
-						i(148940),	-- Demonic Gladiator's Felskin Helm
-						i(148942),	-- Demonic Gladiator's Felskin Legguards
-						i(148944),	-- Demonic Gladiator's Felskin Spaulders
-						i(148934),	-- Demonic Gladiator's Felskin Tunic
-						i(148948),	-- Demonic Gladiator's Felskin Wristguards
+						i(148897),	-- Demonic Gladiator's Demonthread Cloak (H)
+						i(148947),	-- Demonic Gladiator's Felskin Belt (H)
+						i(148937),	-- Demonic Gladiator's Felskin Boots (H)
+						i(148939),	-- Demonic Gladiator's Felskin Gloves (H)
+						i(148941),	-- Demonic Gladiator's Felskin Helm (H)
+						i(148943),	-- Demonic Gladiator's Felskin Legguards (H)
+						i(148945),	-- Demonic Gladiator's Felskin Spaulders (H)
+						i(148935),	-- Demonic Gladiator's Felskin Tunic (H)
+						i(148949),	-- Demonic Gladiator's Felskin Wristguards (H)
 					}),
 					cl(11, {	-- Druid
-						i(148962),	-- Demonic Gladiator's Dragonhide Belt
-						i(148898),	-- Demonic Gladiator's Dragonhide Cloak
-						i(148954),	-- Demonic Gladiator's Dragonhide Gloves
-						i(148956),	-- Demonic Gladiator's Dragonhide Helm
-						i(148958),	-- Demonic Gladiator's Dragonhide Legguards
-						i(148952),	-- Demonic Gladiator's Dragonhide Moccasins
-						i(148960),	-- Demonic Gladiator's Dragonhide Spaulders
-						i(148950),	-- Demonic Gladiator's Dragonhide Vest
-						i(148964),	-- Demonic Gladiator's Dragonhide Wristguards
+						i(148963),	-- Demonic Gladiator's Dragonhide Belt (H)
+						i(148899),	-- Demonic Gladiator's Dragonhide Cloak (H)
+						i(148955),	-- Demonic Gladiator's Dragonhide Gloves (H)
+						i(148957),	-- Demonic Gladiator's Dragonhide Helm (H)
+						i(148959),	-- Demonic Gladiator's Dragonhide Legguards (H)
+						i(148953),	-- Demonic Gladiator's Dragonhide Moccasins (H)
+						i(148961),	-- Demonic Gladiator's Dragonhide Spaulders (H)
+						i(148951),	-- Demonic Gladiator's Dragonhide Vest (H)
+						i(148965),	-- Demonic Gladiator's Dragonhide Wristguards (H)
 					}),
 					cl(3, {	-- Hunter
-						i(148900),	-- Demonic Gladiator's Drape of the Tracker
-						i(148980),	-- Demonic Gladiator's Chain Armband
-						i(148966),	-- Demonic Gladiator's Chain Armor
-						i(148978),	-- Demonic Gladiator's Chain Clasp
-						i(148970),	-- Demonic Gladiator's Chain Gauntlets
-						i(148972),	-- Demonic Gladiator's Chain Helm
-						i(148974),	-- Demonic Gladiator's Chain Leggings
-						i(148976),	-- Demonic Gladiator's Chain Spaulders
-						i(148968),	-- Demonic Gladiator's Chain Treads
+						i(148981),	-- Demonic Gladiator's Chain Armband (H)
+						i(148967),	-- Demonic Gladiator's Chain Armor (H)
+						i(148979),	-- Demonic Gladiator's Chain Clasp (H)
+						i(148971),	-- Demonic Gladiator's Chain Gauntlets (H)
+						i(148973),	-- Demonic Gladiator's Chain Helm (H)
+						i(148975),	-- Demonic Gladiator's Chain Leggings (H)
+						i(148977),	-- Demonic Gladiator's Chain Spaulders (H)
+						i(148969),	-- Demonic Gladiator's Chain Treads (H)
+						i(148901),	-- Demonic Gladiator's Drape of the Tracker (H)
 					}),
 					cl(8, {	-- Mage
-						i(148992),	-- Demonic Gladiator's Silk Amice
-						i(148996),	-- Demonic Gladiator's Silk Bracers
-						i(148994),	-- Demonic Gladiator's Silk Cord
-						i(148986),	-- Demonic Gladiator's Silk Cowl
-						i(148984),	-- Demonic Gladiator's Silk Handguards
-						i(148982),	-- Demonic Gladiator's Silk Treads
-						i(148988),	-- Demonic Gladiator's Silk Trousers
-						i(148990),	-- Demonic Gladiator's Silk Tunic
-						i(148902),	-- Demonic Gladiator's Silken Shawl
+						i(148993),	-- Demonic Gladiator's Silk Amice (H)
+						i(148997),	-- Demonic Gladiator's Silk Bracers (H)
+						i(148995),	-- Demonic Gladiator's Silk Cord (H)
+						i(148987),	-- Demonic Gladiator's Silk Cowl (H)
+						i(148985),	-- Demonic Gladiator's Silk Handguards (H)
+						i(148983),	-- Demonic Gladiator's Silk Treads (H)
+						i(148989),	-- Demonic Gladiator's Silk Trousers (H)
+						i(148991),	-- Demonic Gladiator's Silk Tunic (H)
+						i(148903),	-- Demonic Gladiator's Silken Shawl (H)
 					}),
 					cl(10, {	-- Monk
-						i(149010),	-- Demonic Gladiator's Ironskin Belt
-						i(148904),	-- Demonic Gladiator's Ironskin Cloak
-						i(149000),	-- Demonic Gladiator's Ironskin Gloves
-						i(149002),	-- Demonic Gladiator's Ironskin Helm
-						i(149004),	-- Demonic Gladiator's Ironskin Legguards
-						i(148998),	-- Demonic Gladiator's Ironskin Slippers
-						i(149006),	-- Demonic Gladiator's Ironskin Spaulders
-						i(149008),	-- Demonic Gladiator's Ironskin Tunic
-						i(149012),	-- Demonic Gladiator's Ironskin Wristguards
+						i(149011),	-- Demonic Gladiator's Ironskin Belt (H)
+						i(148905),	-- Demonic Gladiator's Ironskin Cloak (H)
+						i(149001),	-- Demonic Gladiator's Ironskin Gloves (H)
+						i(149003),	-- Demonic Gladiator's Ironskin Helm (H)
+						i(149005),	-- Demonic Gladiator's Ironskin Legguards (H)
+						i(148999),	-- Demonic Gladiator's Ironskin Slippers (H)
+						i(149007),	-- Demonic Gladiator's Ironskin Spaulders (H)
+						i(149009),	-- Demonic Gladiator's Ironskin Tunic (H)
+						i(149013),	-- Demonic Gladiator's Ironskin Wristguards (H)
 					}),
 					cl(2, {	-- Paladin
-						i(148906),	-- Demonic Gladiator's Greatcloak of Faith
-						i(149029),	-- Demonic Gladiator's Scaled Breastplate
-						i(149023),	-- Demonic Gladiator's Scaled Gauntlets
-						i(149032),	-- Demonic Gladiator's Scaled Girdle
-						i(149025),	-- Demonic Gladiator's Scaled Helm
-						i(149027),	-- Demonic Gladiator's Scaled Legguards
-						i(149021),	-- Demonic Gladiator's Scaled Sabatons
-						i(149030),	-- Demonic Gladiator's Scaled Shoulders
-						i(149034),	-- Demonic Gladiator's Scaled Wristplates
+						i(148907),	-- Demonic Gladiator's Greatcloak of Faith (H)
+						i(149020),	-- Demonic Gladiator's Scaled Breastplate (H)
+						i(149024),	-- Demonic Gladiator's Scaled Gauntlets (H)
+						i(149033),	-- Demonic Gladiator's Scaled Girdle (H)
+						i(149026),	-- Demonic Gladiator's Scaled Helm (H)
+						i(149028),	-- Demonic Gladiator's Scaled Legguards (H)
+						i(149022),	-- Demonic Gladiator's Scaled Sabatons (H)
+						i(149031),	-- Demonic Gladiator's Scaled Shoulders (H)
+						i(149035),	-- Demonic Gladiator's Scaled Wristplates (H)
 					}),
 					cl(5, {	-- Priest
-						i(148908),	-- Demonic Gladiator's Drape of Piety
-						i(149050),	-- Demonic Gladiator's Satin Bracers
-						i(149048),	-- Demonic Gladiator's Satin Cord
-						i(149038),	-- Demonic Gladiator's Satin Gloves
-						i(149040),	-- Demonic Gladiator's Satin Hood
-						i(149042),	-- Demonic Gladiator's Satin Leggings
-						i(149046),	-- Demonic Gladiator's Satin Mantle
-						i(149044),	-- Demonic Gladiator's Satin Robe
-						i(149036),	-- Demonic Gladiator's Satin Treads
+						i(148909),	-- Demonic Gladiator's Drape of Piety (H)
+						i(149051),	-- Demonic Gladiator's Satin Bracers (H)
+						i(149049),	-- Demonic Gladiator's Satin Cord (H)
+						i(149039),	-- Demonic Gladiator's Satin Gloves (H)
+						i(149041),	-- Demonic Gladiator's Satin Hood (H)
+						i(149043),	-- Demonic Gladiator's Satin Leggings (H)
+						i(149047),	-- Demonic Gladiator's Satin Mantle (H)
+						i(149045),	-- Demonic Gladiator's Satin Robe (H)
+						i(149037),	-- Demonic Gladiator's Satin Treads (H)
 					}),
 					cl(4, {	-- Rogue
-						i(149070),	-- Demonic Gladiator's Leather Belt
-						i(149062),	-- Demonic Gladiator's Leather Gloves
-						i(149064),	-- Demonic Gladiator's Leather Helm
-						i(149066),	-- Demonic Gladiator's Leather Legguards
-						i(149060),	-- Demonic Gladiator's Leather Slippers
-						i(149068),	-- Demonic Gladiator's Leather Spaulders
-						i(149058),	-- Demonic Gladiator's Leather Tunic
-						i(149072),	-- Demonic Gladiator's Leather Wristguards
-						i(148910),	-- Demonic Gladiator's Shadowcape
+						i(149071),	-- Demonic Gladiator's Leather Belt (H)
+						i(149063),	-- Demonic Gladiator's Leather Gloves (H)
+						i(149065),	-- Demonic Gladiator's Leather Helm (H)
+						i(149067),	-- Demonic Gladiator's Leather Legguards (H)
+						i(149061),	-- Demonic Gladiator's Leather Slippers (H)
+						i(149069),	-- Demonic Gladiator's Leather Spaulders (H)
+						i(149059),	-- Demonic Gladiator's Leather Tunic (H)
+						i(149073),	-- Demonic Gladiator's Leather Wristguards (H)
+						i(148911),	-- Demonic Gladiator's Shadowcape (H)
 					}),
 					cl(7, {	-- Shaman
-						i(149088),	-- Demonic Gladiator's Ringmail Armband
-						i(149074),	-- Demonic Gladiator's Ringmail Armor
-						i(149076),	-- Demonic Gladiator's Ringmail Boots
-						i(149086),	-- Demonic Gladiator's Ringmail Clasp
-						i(149078),	-- Demonic Gladiator's Ringmail Gauntlets
-						i(149080),	-- Demonic Gladiator's Ringmail Helm
-						i(149082),	-- Demonic Gladiator's Ringmail Leggings
-						i(149084),	-- Demonic Gladiator's Ringmail Spaulders
-						i(148912),	-- Demonic Gladiator's Totemic Cloak
+						i(148913),	-- Demonic Gladiator's Totemic Cloak (H)
+						i(149089),	-- Demonic Gladiator's Ringmail Armband (H)
+						i(149087),	-- Demonic Gladiator's Ringmail Clasp (H)
+						i(149085),	-- Demonic Gladiator's Ringmail Spaulders (H)
+						i(149083),	-- Demonic Gladiator's Ringmail Leggings (H)
+						i(149081),	-- Demonic Gladiator's Ringmail Helm (H)
+						i(149079),	-- Demonic Gladiator's Ringmail Gauntlets (H)
+						i(149077),	-- Demonic Gladiator's Ringmail Boots (H)
+						i(149075),	-- Demonic Gladiator's Ringmail Armor (H)
 					}),
 					cl(9, {	-- Warlock
-						i(149118),	-- Demonic Gladiator's Felweave Amice
-						i(149122),	-- Demonic Gladiator's Felweave Bracers
-						i(148914),	-- Demonic Gladiator's Felweave Cloak
-						i(149120),	-- Demonic Gladiator's Felweave Cord
-						i(149112),	-- Demonic Gladiator's Felweave Cowl
-						i(149110),	-- Demonic Gladiator's Felweave Handguards
-						i(149116),	-- Demonic Gladiator's Felweave Raiment
-						i(149108),	-- Demonic Gladiator's Felweave Treads
-						i(149114),	-- Demonic Gladiator's Felweave Trousers
+						i(149119),	-- Demonic Gladiator's Felweave Amice (H)
+						i(149123),	-- Demonic Gladiator's Felweave Bracers (H)
+						i(148915),	-- Demonic Gladiator's Felweave Cloak (H)
+						i(149121),	-- Demonic Gladiator's Felweave Cord (H)
+						i(149113),	-- Demonic Gladiator's Felweave Cowl (H)
+						i(149111),	-- Demonic Gladiator's Felweave Handguards (H)
+						i(149117),	-- Demonic Gladiator's Felweave Raiment (H)
+						i(149109),	-- Demonic Gladiator's Felweave Treads (H)
+						i(149115),	-- Demonic Gladiator's Felweave Trousers (H)
 					}),
 					cl(1, {	-- Warrior
-						i(148916),	-- Demonic Gladiator's Cloak of Battle
-						i(149124),	-- Demonic Gladiator's Plate Chestpiece
-						i(149128),	-- Demonic Gladiator's Plate Gauntlets
-						i(149136),	-- Demonic Gladiator's Plate Girdle
-						i(149130),	-- Demonic Gladiator's Plate Helm
-						i(149132),	-- Demonic Gladiator's Plate Legguards
-						i(149134),	-- Demonic Gladiator's Plate Shoulders
-						i(149126),	-- Demonic Gladiator's Plate Warboots
-						i(149138),	-- Demonic Gladiator's Plate Wristplates
+						i(148917),	-- Demonic Gladiator's Cloak of Battle (H)
+						i(149125),	-- Demonic Gladiator's Plate Chestpiece (H)
+						i(149129),	-- Demonic Gladiator's Plate Gauntlets (H)
+						i(149137),	-- Demonic Gladiator's Plate Girdle (H)
+						i(149131),	-- Demonic Gladiator's Plate Helm (H)
+						i(149133),	-- Demonic Gladiator's Plate Legguards (H)
+						i(149135),	-- Demonic Gladiator's Plate Shoulders (H)
+						i(149127),	-- Demonic Gladiator's Plate Warboots (H)
+						i(149139),	-- Demonic Gladiator's Plate Wristplates (H)
 					}),
 					n(-384,	{	-- Neck
 						i(149015), -- Demonic Gladiator's Necklace (H)

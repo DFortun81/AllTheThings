@@ -60,7 +60,6 @@ pet(163859, 2477);	-- Baby Crawg
 pet(136919, 1884); 	-- Baby Elderhorn
 pet(166486, 2551);	-- Baby Stonehide
 pet(134047, 1828);	-- Baby Winston
-pet(148517, 2537);	-- Baby Zandalari Raptor
 pet(32588, 156); 	-- Banana Charm (Bananas)
 pet(90177, 903);	-- Baneling
 pet(147542, 2047); 	-- Ban-Fu, Cub of Ban-Lu
