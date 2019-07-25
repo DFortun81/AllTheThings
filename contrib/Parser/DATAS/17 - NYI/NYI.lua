@@ -42,6 +42,31 @@ _.NeverImplemented =
 		un(1, i(166952)),	-- Dread Gladiator's leather belt
 		un(1, i(166953)),	-- Dread Gladiator's leather bindings
 		
+		-- Plate Blue Warfront Pieces
+		un(1, i(163412)),	-- 7th Legionnaire's Helmet
+		un(1, i(163406)),	-- 7th Legionnaire's Shoulderplates
+		un(1, i(163413)),	-- 7th Legionnaire's Strikers
+		un(1, i(163423)),	-- 7th Legionnaire's Girdle
+		un(1, i(163408)),	-- 7th Legionnaire's Legplates
+		un(1, i(163420)),	-- 7th Legionnaire's Stompers
+		un(1, i(163457)),	-- Honorbound Centurion's Helmet
+		un(1, i(163454)),	-- Honorbound Centurion's Pauldrons
+		un(1, i(163462)),	-- Honorbound Centurion's Girdle
+		
+		-- Mail Blue Warfront Pieces
+		un(1, i(163396)),	-- 7th Legionnaire's Skullcap
+		un(1, i(163390)),	-- 7th Legionnaire's Spaulders
+		un(1, i(163402)),	-- 7th Legionnaire's Chain Belt
+		un(1, i(163447)),	-- Honorbound Vanguard's Helm
+		un(1, i(163442)),	-- Honorbound Vanguard's Pauldrons
+		un(1, i(163452)),	-- Honorbound Vanguard's Chain Belt
+		
+		-- Leather Blue Warfront Pieces
+		un(1, i(163381)),	-- 7th Legionnaire's Mask
+		un(1, i(163378)),	-- 7th Legionnaire's Shoulderpads
+		un(1, i(163382)),	-- 7th Legionnaire's Tunic
+		un(1, i(163385)),	-- 7th Legionnaire's Belt
+		un(1, i(163379)),	-- 7th Legionnaire's Pants
 		{
 			-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
 			["itemID"] = 163255,	-- 7th Legionnaire's Treads
@@ -49,6 +74,17 @@ _.NeverImplemented =
 			["u"] = 1,	-- Never Implemented
 			["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
 		},
+		un(1, i(163436)),	-- Honorbound Outrider's Faceguard
+		un(1, i(163433)),	-- Honorbound Outrider's Mantle
+		un(1, i(163440)),	-- Honorbound Outrider's Belt
+		
+		-- Cloth Blue Warfront Pieces
+		un(1, i(163340)),	-- 7th Legionnaire's Circlet
+		un(1, i(163269)),	-- 7th Legionnaire's Mantle
+		un(1, i(163343)),	-- 7th Legionnaire's Sash
+		un(1, i(163427)),	-- Honorbound Artificer's Skullcap
+		un(1, i(163425)),	-- Honorbound Artificer's Mantle
+		un(1, i(163431)),	-- Honorbound Artificer's Sash
 		
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(166405)),	-- Blindside (TW Vendor?)

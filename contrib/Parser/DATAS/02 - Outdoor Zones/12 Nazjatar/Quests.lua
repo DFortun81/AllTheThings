@@ -191,20 +191,25 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55175,	-- Where the Road Leads
 				["g"] = {
+					-- Cloth
 					i(170520),	-- 7th Legionnaire's Hood
 					i(170519),	-- 7th Legionnaire's Amice
 					i(170514),	-- 7th Legionnaire's Robes
+					
+					-- Leather
+					i(170522),	-- 7th Legionnaire's Visage
+					i(170521),	-- 7th Legionnaire's Mantle
+					i(170515),	-- 7th Legionnaire's Vest
+					
+					-- Mail
+					i(170524),	-- 7th Legionnaire's Helm
+					i(170523),	-- 7th Legionnaire's Monnion
+					i(170525),	-- 7th Legionnaire's Chainmail
+					
+					-- Plate
 					i(170527),	-- 7th Legionnaire's Headpiece
 					i(170526),	-- 7th Legionnaire's Shoulderplates
 					i(170528),	-- 7th Legionnaire's Chestguard
-					i(170521),	-- 7th Legionnaire's Mantle
-					i(170515),	-- 7th Legionnaire's Vest
-					i(170522),	-- 7th Legionnaire's Visage
-					
-					-- Crieve NOTE: Likely changed them all to new itemIDs like they did for Plate.
-					--i(163410),	-- 7th Legionnaire's Headpiece
-					--i(163405),	-- 7th Legionnaire's Shoulderplates
-					--i(163418),	-- 7th Legionnaire's Chestguard
 				},
 			}),
 			q(55053, {	-- A Way Home

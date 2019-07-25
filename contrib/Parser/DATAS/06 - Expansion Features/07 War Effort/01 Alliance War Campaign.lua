@@ -65,43 +65,27 @@ _.ExpansionFeatures =
 				}),
 				n(-6015, {	-- Rewards
 					["description"] = "You'll be offered these rewards at the end of your first foothold.",
+					["modID"] = 25,
 					["g"] = {
-						i(163654, {	-- 7th Legionnaire's Circlet
-							["modID"] = 25,
-						}),
-						i(163655, {	-- 7th Legionnaire's Shoulderpads
-							["modID"] = 25,
-						}),
-						i(163676, {	-- 7th Legionnaire's Raiment
-							["modID"] = 25,
-						}),
-						i(163656, {	-- 7th Legionnaire's Mask
-							["modID"] = 25,
-						}),
-						i(163655, {	-- 7th Legionnaire's Shoulderpads
-							["modID"] = 25,
-						}),
-						i(163657, {	-- 7th Legionnaire's Tunic
-							["modID"] = 25,
-						}),
-						i(163659, {	-- 7th Legionnaire's Skullcap
-							["modID"] = 25,
-						}),
-						i(163655, {	-- 7th Legionnaire's Spaulders
-							["modID"] = 25,
-						}),
-						i(163660, {	-- 7th Legionnaire's Chainmail
-							["modID"] = 25,
-						}),
-						i(163662, {	-- 7th Legionnaire's Helmet
-							["modID"] = 25,
-						}),
-						i(163661, {	-- 7th Legionnaire's Pauldrons
-							["modID"] = 25,
-						}),
-						i(163663, {	-- 7th Legionnaire's Breastplate
-							["modID"] = 25,
-						}),
+						-- Cloth
+						i(163654),	-- 7th Legionnaire's Circlet
+						i(163653),	-- 7th Legionnaire's Mantle
+						i(163676),	-- 7th Legionnaire's Raiment
+						
+						-- Leather
+						i(163656),	-- 7th Legionnaire's Mask
+						i(163655),	-- 7th Legionnaire's Shoulderpads
+						i(163657),	-- 7th Legionnaire's Tunic
+						
+						-- Mail
+						i(163659),	-- 7th Legionnaire's Skullcap
+						i(163658),	-- 7th Legionnaire's Spaulders
+						i(163660),	-- 7th Legionnaire's Chainmail
+						
+						-- Plate
+						i(163662),	-- 7th Legionnaire's Helmet
+						i(163661),	-- 7th Legionnaire's Pauldrons
+						i(163663),	-- 7th Legionnaire's Breastplate
 					},
 				}),
 				n(-17, {	-- Quests

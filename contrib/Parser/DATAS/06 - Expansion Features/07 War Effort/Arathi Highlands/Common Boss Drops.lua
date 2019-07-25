@@ -8,8 +8,40 @@ _.ExpansionFeatures =
 			["mapID"] = 14,	-- Arathi Highlands
 			["g"] = {
 				n(-1, {	-- Common Boss Drop [Tier 2]
-					["groups"] = bubbleDown({["modID"] = 5}, {
-									-- ALLIANCE SET --
+					["description"] = "These items can drop off any rare in the zone and in the warfront.",
+					["crs"] = {
+						142709,	-- Beastrider Kama
+						142508,	-- Branchlord Aldrus
+						141615,	-- Burning Goliath
+						141618,	-- Cresting Goliath
+						142688,	-- Darbel Montrose
+						142741,	-- Doomrider Helgrim
+						141668,	-- Echo of Myzrael
+						142686,	-- Foulbelly
+						142433,	-- Fozruk
+						142662,	-- Geomancer Flintdagger
+						142725,	-- Horrific Apparition
+						142739,	-- Knight-Captaian Aldrin
+						142112,	-- Kor'gresh Coldrage
+						142684,	-- Kovork
+						142716,	-- Man-Hunter Rog
+						141942,	-- Molok the Crusher
+						142692,	-- Nimar the Slayer
+						142423,	-- Overseer Krix
+						142435,	-- Plaguefeather
+						142436,	-- Ragebeak
+						141620,	-- Rumbling Goliatah
+						142683,	-- Ruul Onestone
+						142690,	-- Singer
+						142437,	-- Skullripper
+						141616,	-- Thundering Goliath
+						142438,	-- Venomarus
+						142440,	-- Yogursa
+						142682,	-- Zalas Witherbark <Warband Leader>
+					},
+					["modID"] = 5,	-- This will inherently apply to all items within.
+					["groups"] = {
+						-- ALLIANCE SET --
 						i(163891),	-- 7th Legionnaire's Aegis
 						i(163884),	-- 7th Legionnaire's Battle Hammer
 						i(163892),	-- 7th Legionnaire's Censer
@@ -89,7 +121,8 @@ _.ExpansionFeatures =
 						i(163422),	-- 7th Legionnaire's Greatbelt
 						i(163409),	-- 7th Legionnaire's Legguards
 						i(163421),	-- 7th Legionnaire's Greaves
-									-- HORDE SET --
+						
+						-- HORDE SET --
 						i(163878),	-- Honorbound Barrier
 						i(163870),	-- Honorbound Bonebreaker
 						i(163868),	-- Honorbound Dagger
@@ -169,46 +202,7 @@ _.ExpansionFeatures =
 						i(163461),	-- Honorbound Centurion's Greatbelt
 						i(163455),	-- Honorbound Centurion's Legplates
 						i(163460),	-- Honorbound Centurion's Greaves
-					}),
-					["crs"] = {
-						142709,	-- Beastrider Kama
-						142508,	-- Branchlord Aldrus
-						141615,	-- Burning Goliath
-						141618,	-- Cresting Goliath
-						142688,	-- Darbel Montrose
-						138122,	-- Doom's Howl
-						--143598,	-- Doom's Howl Engineer
-						--143597,	-- Doom's Howl Dreadshield
-						--143599,	-- Doom's Howl Warcaster
-						142741,	-- Doomrider Helgrim
-						141668,	-- Echo of Myzrael
-						142686,	-- Foulbelly
-						142433,	-- Fozruk
-						142662,	-- Geomancer Flintdagger
-						142725,	-- Horrific Apparition
-						142739,	-- Knight-Captaian Aldrin
-						142112,	-- Kor'gresh Coldrage
-						142684,	-- Kovork
-						142716,	-- Man-Hunter Rog
-						141942,	-- Molok the Crusher
-						142692,	-- Nimar the Slayer
-						142423,	-- Overseer Krix
-						142435,	-- Plaguefeather
-						142436,	-- Ragebeak
-						141620,	-- Rumbling Goliatah
-						142683,	-- Ruul Onestone
-						142690,	-- Singer
-						142437,	-- Skullripper
-						141616,	-- Thundering Goliath
-						137374,	-- The Lion's Roar
-						--143600,	-- Lion's Engineer
-						--143601,	-- Lion's Shieldbearer
-						--143602,	-- Lion's Warcaster
-						142438,	-- Venomarus
-						142440,	-- Yogursa
-						142682,	-- Zalas Witherbark <Warband Leader>
 					},
-					["description"] = "These can drop off any rare or world boss in the zone.",
 				}),
 			},
 		},

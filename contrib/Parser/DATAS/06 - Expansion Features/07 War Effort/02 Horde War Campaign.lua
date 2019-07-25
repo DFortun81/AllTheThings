@@ -82,13 +82,25 @@ _.ExpansionFeatures =
 						},
 					},
 				}),
-		--[[	n(-6015, {	-- Rewards
+				n(-6015, {	-- Rewards
 					["description"] = "You'll be offered these rewards at the end of your first foothold.",
-					["races"] = HORDE_ONLY,
+					["modID"] = 25,
 					["g"] = {
+						-- Cloth
 						
+						
+						-- Leather
+						
+						
+						-- Mail
+						
+						
+						-- Plate
+						i(163675),	-- Honorbound Centurion's Breastplate
+						i(163674),	-- Honorbound Centurion's Helmet
+						i(163673),	-- Honorbound Centurion's Pauldrons
 					},
-				}),	--]]
+				}),
 				n(-17, {	-- Quests
 					q(52749, {	-- The War Campaign
 						["qg"] = 120170,	-- Nathanos Blightcaller
@@ -204,12 +216,6 @@ _.ExpansionFeatures =
 						["coord"] = { 37.2, 27.0, 896 },
 						["sourceQuest"] = 51987,	-- Champion: Hobart Grapplehammer
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(163675),	-- Honorbound Centurion's Breastplate
-							i(163674),	-- Honorbound Centurion's Helmet
-							i(163673),	-- Honorbound Centurion's Pauldrons
-							-- TODO: Add non-plate rewards
-						},
 					}),
 					q(51753, {	-- Champion: Rexxar
 						["qg"] = 138876,	-- Rexxar
@@ -225,12 +231,6 @@ _.ExpansionFeatures =
 						["coord"] = { 52.0, 33.6, 942 },
 						["sourceQuest"] = 51753,	-- Champion: Rexxar
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(163675),	-- Honorbound Centurion's Breastplate
-							i(163674),	-- Honorbound Centurion's Helmet
-							i(163673),	-- Honorbound Centurion's Pauldrons
-							-- TODO: Add non-plate rewards
-						},
 					}),
 					q(51975, {	-- Champion: Shadow Hunter Ty'jin
 						["qg"] = 137742,	-- Shadow Hunter Ty'jin
@@ -246,12 +246,6 @@ _.ExpansionFeatures =
 						["coord"] = { 87.2, 50.0, 895 },
 						["sourceQuest"] = 51975,	-- Champion: Shadow Hunter Ty'jin
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(163675),	-- Honorbound Centurion's Breastplate
-							i(163674),	-- Honorbound Centurion's Helmet
-							i(163673),	-- Honorbound Centurion's Pauldrons
-							-- TODO: Add non-plate rewards
-						},
 					}),
 					q(52861, {	-- Champion: Lilian Voss
 						["qg"] = 141961,	-- Lilian Voss
