@@ -692,7 +692,7 @@ _.Zones =
 				}),
 				q(55847, {	-- Reclamation Rig
 					["coord"] = { 70.0, 62.0, 1462 },
-					["repeatable"] = true,
+					["isDaily"] = true,  -- This version isDaily as it rewards extra items once a day
 					["qg"] = 150448,	-- Reclamation Rig
 					["g"] = {
 						i(168394),	-- Box of Assorted Parts

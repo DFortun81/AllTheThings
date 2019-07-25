@@ -507,6 +507,7 @@ _.NeverImplemented =
 		q(55919),	-- Bonepicker first kill
 		q(55927),	-- Crazed Trogg first kill
 		q(55917),	-- Deepwater Maw first kill
+		q(55544),	-- Doppel Ganger first kill
 		q(56994),	-- Enforcer KX-T57 first kill
 		q(55916),	-- Foul Manifestation first kill
 		q(55910),	-- Jawbreaker first kill

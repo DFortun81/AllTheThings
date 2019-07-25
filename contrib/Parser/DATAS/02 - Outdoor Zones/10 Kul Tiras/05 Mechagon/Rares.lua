@@ -6,7 +6,7 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
 			n(-16,  {	-- Rares
-				-- TODO:: Verify all kill questIDs(Most of these are done by Gaulish 6/27/19 Remaining Dopple Ganger, OOX-Avenger/MG, Sparkqueen P'Emp
+				-- TODO:: Verify all kill questIDs(Most of these are done by Gaulish 6/27/19 Remaining OOX-Avenger/MG, Sparkqueen P'Emp First kill id's)
 				i(168908, {	-- Blueprint: Experimental Adventurer Augment
 					["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
 					["questID"] = 56087,
@@ -30,7 +30,7 @@ _.Zones =
 				n(150394, {	-- Armored Vaultbot	-- possibly 154968
 					["questID"] = 55546,
 					["isDaily"] = true,
-					["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it.",
+					["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat",
 					["coords"] = {
 						{ 53.6, 46.4, 1462 },
 						{ 53.8, 49.4, 1462 },
@@ -208,8 +208,7 @@ _.Zones =
 					},
 				}),
 				n(155060, {	-- Doppel Ganger
-					["questID"] = 56419,	-- Needs confirmation
-					-- ["questID"] = 55544,	-- Needs confirmation [Crieve says: Who wrote this one? It checks off every day despite not killing it...]
+					["questID"] = 56419,	
 					["coord"] = { 81.0, 20.2, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -507,6 +506,7 @@ _.Zones =
 					},
 				}),
 				n(151296, {	-- OOX-Avenger/MG
+					["questID"] = 55515,
 					["coord"] = { 57.0, 39.8, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -630,7 +630,7 @@ _.Zones =
 					},
 				}),
 				n(153000, {	-- Sparkqueen P'Emp
-					--["questID"] =
+					["questID"] = 55810,
 					["coord"] = { 83.8, 22.0, 1462 },
 					["isDaily"] = true,
 					["g"] = {
