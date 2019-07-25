@@ -683,7 +683,6 @@ _.Zones =
 				i(158107),	-- Deepwarden Baton
 				i(158089),	-- Deepwarden Fangs
 				i(158091),	-- Dockyard Mace
-				i(155545),	-- Drustwrought Spellstaff
 				i(159798),	-- Gnarlwood Barrier
 				i(158104),	-- Gnarlwood Cutlass
 				i(158086),	-- Gnarlwood Dagger

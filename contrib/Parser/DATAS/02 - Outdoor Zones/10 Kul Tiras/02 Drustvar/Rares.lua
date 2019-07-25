@@ -19,6 +19,7 @@ _.Zones =
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
 							["criteriaID"] = 8,	-- Ancient Sarcophagus
 						},
+						i(155545),	-- Drustwrought Spellstaff
 					},
 				}),
 				n(137824, {	-- Arclight

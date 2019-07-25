@@ -554,6 +554,18 @@ _.Zones =
 					}),
 				}),
 				{
+					["itemID"] = 165867,	-- Kul Tiran Weapons Cache
+					["sym"] = {
+						{"select", "mapID", 895},	-- Tiragarde Sound
+						{"pop"},	-- Discard the Map Header and acquire the children.
+						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"pop"},	-- Discard the World Quests Header and acquire the children.
+						{"is", "itemID" },	-- Select the Items.
+						{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
+						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+					},
+				},
+				{
 					["itemID"] = 165869,	-- Proudmoore Admiralty Equipment Cache
 					["sym"] = {
 						-- Include the two extras.
@@ -581,7 +593,6 @@ _.Zones =
 				i(158107),	-- Deepwarden Baton
 				i(158089),	-- Deepwarden Fangs
 				i(158091),	-- Dockyard Mace
-				i(155545),	-- Drustwrought Spellstaff
 				i(159798),	-- Gnarlwood Barrier
 				i(158104),	-- Gnarlwood Cutlass
 				i(158086),	-- Gnarlwood Dagger
@@ -606,7 +617,6 @@ _.Zones =
 				i(158088),	-- Wintersail Striker
 				i(166668),	-- Battalion Veteran's Greatcloak
 				i(158159),	-- Boralus Sailor's Cloak
-				i(158650),	-- Sea-Scourge Greatblade
 				i(158160),	-- Smuggler's Cove Ring
 				i(158161),	-- Spearfisheer's Ban
 				i(158163),	-- First Mate's Spyglass
