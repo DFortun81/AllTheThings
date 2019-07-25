@@ -36,9 +36,12 @@ _.Zones =
 					["description"] = "During the Reclamation Rig event, use the Supercollider on each Irradiated Elemental to make them unstable.  If you complete the hardmode event correctly, you'll face three Unstable Irradiated Golems at the end of the encounter.",
 					["g"] = {
 						i(168495, {	-- Blueprint: Rustbolt Requisitions
-							crit(20, {	-- Rustbolt Requisitions
-								["achievementID"] = 13479,	-- Junkyard Architect
-							}),
+							["questID"] = 55074,
+							["g"] = {
+								crit(20, {	-- Rustbolt Requisitions
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
 						}),
 						i(169396),	-- Echoing Oozeling
 						i(169692, {    -- Vinyl: Triumph of Gnomeregan

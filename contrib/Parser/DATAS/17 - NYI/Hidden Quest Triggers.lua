@@ -455,6 +455,7 @@ _.NeverImplemented =
 		q(56615),	-- Amethyst Spireshell first kill
 		q(56614),	-- Blightlight first kill
 		q(56887),	-- Carnivorous Lasher first kill
+		q(57188),	-- Carnivorous Lasher, Germinating Seafly buff (drops herbs)
 		q(57186),	-- Carnivorous Lasher, Radiant Seafly buff (drops Azerite)
 		q(56600),	-- Caverndark Terror first kill
 		q(56613),	-- Chasm Haunter first kill

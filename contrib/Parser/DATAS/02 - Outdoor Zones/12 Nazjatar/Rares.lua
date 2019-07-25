@@ -525,8 +525,7 @@ _.Zones =
 				},
 			}),
 			n(150583, {	-- Rockweed Shambler
-				["allianceQuestID"] = 56291,
-				["hordeQuestID"] = 56291,
+				["questID"] = 56291,	-- first kill also triggered 56592 and 56917.  assuming 1 of these is the first kill questID and one is a secondary questID similar to to Wayward/Lost Algan for getting Benthic or Manapearls	
 				["isDaily"] = true,
 				["coords"] = {
 					{ 76.4, 24.4, 1355 },
@@ -779,7 +778,7 @@ _.Zones =
 				["questID"] = 56106,
 				["coord"] = { 65.9, 22.9, 1355 },
 				["isDaily"] = true,
-				["description"] = "Pop 3 |cFFFFD700Undisturbed Specimens|r to spawn her.",
+				["description"] = "Clusters of purple, void-tinged sacs grow around the area where the rare spawns.  Look for ones you can interact with called |cFFFFD700Undisturbed Specimens|r — 5 of these need to be popped to spawn the rare, but they don't all have to be destroyed by one person.",
 				["g"] = {
 					crit(34, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,

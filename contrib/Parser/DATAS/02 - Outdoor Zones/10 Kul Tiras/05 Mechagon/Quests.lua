@@ -200,9 +200,12 @@ _.Zones =
 						}),
 						i(169471, {	-- Cogfrenzy's Construction Toolkit
 							i(167845, {	-- Blueprint: Emergency Powerpack
-								crit(8, {	-- Emergency Powerpack
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
+								["questID"] = 55060,
+								["g"] = {
+									crit(8, {	-- Emergency Powerpack
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								},
 							}),
 							i(167844, {	-- Blueprint: Emergency Repair Kit
 								crit(7, {	-- Emergency Repair Kit
