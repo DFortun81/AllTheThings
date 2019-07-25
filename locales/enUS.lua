@@ -3302,8 +3302,6 @@ AllTheThings.L = {
 		[329641] = "Wanted: Junkbrat and Roadtrogg",
 		[329783] = "Glowing Arcane Trunk",
 		[329805] = "Strange Crystal",
-		
-		
 		[9999990] = "Treasure Chest",	-- Use these until objectID is found
 		[9999989] = "Treasure Chest",	-- Use these until objectID is found
 		[9999988] = "Treasure Chest",	-- Use these until objectID is found
