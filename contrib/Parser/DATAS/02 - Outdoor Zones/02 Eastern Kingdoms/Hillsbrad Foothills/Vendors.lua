@@ -90,6 +90,23 @@ _.Zones =
 						i(6401),	-- Pattern: Dark Silk Shirt
 					},
 				}),
+				n(2381, {	-- Micha Yance <Trade Goods>
+					["u"] = 43,
+					["g"] = {
+						i(20973, {	-- Design: Blazing Citrine Ring (Removed in Cata and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 7,
+						}),
+						i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge (Removed in Cata and available through trainer now)
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+					},
+				}),
 				n(3539,  {	-- Ott <Weaponsmith>
 					["races"] = HORDE_ONLY,
 					["g"] = {
