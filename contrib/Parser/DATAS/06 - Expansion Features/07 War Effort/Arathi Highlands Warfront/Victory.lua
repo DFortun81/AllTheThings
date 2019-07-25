@@ -46,13 +46,7 @@ _.ExpansionFeatures =
 							i(163256),	-- 7th Legionnaire's Gloves
 							i(163384),	-- 7th Legionnaire's Buckle
 							i(163266),	-- 7th Legionnaire's Britches
-							{	-- 7th Legionnaire's Treads
-								["itemID"] = 163255,	-- 7th Legionnaire's Treads
-								["races"] = ALLIANCE_ONLY,	-- Leather		Note!! This item doesn't filter with default db'
-							},
-							{	-- 7th Legionnaire's Helm
-								["itemID"] = 163394, 		-- 7th Legionnaire's Helm
-							},
+							i(163394),	-- 7th Legionnaire's Helm
 							i(163389),	-- 7th Legionnaire's Monnion
 							i(163398),	-- 7th Legionnaire's Chainmail
 							i(163277),	-- 7th Legionnaire's Bindings

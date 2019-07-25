@@ -72,10 +72,7 @@ _.ExpansionFeatures =
 						i(163256),	-- 7th Legionnaire's Gloves
 						i(163384),	-- 7th Legionnaire's Buckle
 						i(163266),	-- 7th Legionnaire's Britches
-						--i(163255),	-- 7th Legionnaire's Treads
-						i(163383, {	-- 7th Legionnaire's Boots
-							["modID"] = 3,
-						}),
+						i(163383),	-- 7th Legionnaire's Boots
 						i(163394),	-- 7th Legionnaire's Helm
 						i(163389),	-- 7th Legionnaire's Monnion
 						i(163398),	-- 7th Legionnaire's Chainmail
