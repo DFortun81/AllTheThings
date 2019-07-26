@@ -13,7 +13,7 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Bwonsamdi respected
 							["npcID"] = 122688,	-- Bwonsamdi
-							["coord"] = { 9.42, 24.74, 863 },
+							["coord"] = { 39.42, 24.74, 863 },
 						}),
 						crit(2, {	-- Krag'wa respected
 							["npcID"] = 120551,	-- Krag'wa
@@ -131,8 +131,8 @@ _.Zones =
 					["g"] = {
 						n(143644, {	-- Goramor
 							["coords"] = { 
-								{ 32.2, 35.6, 863 },	-- Goramor
-								{ 25.4, 55.2, 863 },	-- Blind Wunja
+								{ 32.35, 35.37, 863 },	-- Goramor
+								{ 35.4, 55.2, 863 },	-- Blind Wunja
 							},
 							["description"] = "Buy Primative Watermelon from Blind Wunja at 35.4, 55.2 first.",
 							["g"] = {
