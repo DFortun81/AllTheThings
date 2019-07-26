@@ -149,6 +149,9 @@ _.Zones =
 					["coord"] = { 81.4, 52.4, 49 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54106,	-- Tracking Tipoff
+					["altQuests"] = {
+						54754,  -- For the Queen
+					},
 				}),
 				q(26728, {	-- Hero's Call: Duskwood!
 					["qg"] = 900,	-- Bailiff Conacher
