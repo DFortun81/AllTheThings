@@ -11,38 +11,42 @@ _.Zones =
 			["g"] = {
 				n(-4,  {	-- Achievements
 					ach(5318, 5319),	-- 20,000 Leagues Under the Sea(Vashj'ir) [A] / [H]
-					--a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
-					--h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)
-					a(ach(4869, {	-- Sinking into Vashj'ir (Alliance)
-						crit(1),	-- Defense of The Briny Cutter
-						crit(2),	-- Smuggler's Scar
-						crit(3),	-- A Budding Treasure Hunter
-						crit(4),	-- The Clutch
-						crit(5),	-- Silver Tide Hollow
-						crit(6),	-- Nespirah
-						crit(7),	-- Visions of the Past
-						crit(8),	-- The Merciless One
-						crit(9),	-- L'ghorek
-						crit(10),	-- The Tidehunter
-					})),
-					h(ach(4982, {	-- Sinking into Vashj'ir (Horde)
-						crit(1),	-- Defense of The Immortal Coil
-						crit(2),	-- Smuggler's Scar
-						crit(3),	-- A Budding Treasure Hunter
-						crit(4),	-- The Clutch
-						crit(5),	-- Silver Tide Hollow
-						crit(6),	-- Nespirah
-						crit(7),	-- Visions of the Past
-						crit(8),	-- The Merciless One
-						crit(9),	-- L'ghorek
-						crit(10),	-- The Tidehunter
-					})),
+					ach(4869, {	-- Sinking into Vashj'ir (Alliance)
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							crit(1),	-- Defense of The Briny Cutter
+							crit(2),	-- Smuggler's Scar
+							crit(3),	-- A Budding Treasure Hunter
+							crit(4),	-- The Clutch
+							crit(5),	-- Silver Tide Hollow
+							crit(6),	-- Nespirah
+							crit(7),	-- Visions of the Past
+							crit(8),	-- The Merciless One
+							crit(9),	-- L'ghorek
+							crit(10),	-- The Tidehunter
+						},
+					}),
+					ach(4982, {	-- Sinking into Vashj'ir (Horde)
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							crit(1),	-- Defense of The Immortal Coil
+							crit(2),	-- Smuggler's Scar
+							crit(3),	-- A Budding Treasure Hunter
+							crit(4),	-- The Clutch
+							crit(5),	-- Silver Tide Hollow
+							crit(6),	-- Nespirah
+							crit(7),	-- Visions of the Past
+							crit(8),	-- The Merciless One
+							crit(9),	-- L'ghorek
+							crit(10),	-- The Tidehunter
+						},
+					}),
 					ach(5452),		-- Visions of Vashj'ir Past
 				}),
 				m(204, {	-- Abyssal Depths
 					["description"] = "|cff66ccffAbyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.|r",
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
-					["g"] = {			
+					["g"] = {
 						n(-228, {	-- Flight Paths
 							fp(524, {	-- Daybreak Cove, Vashj'ir
 								["coord"]	= { 56.8, 75.4, 204 },
@@ -51,177 +55,239 @@ _.Zones =
 								["coord"]	= { 53.8, 59.6, 204 },
 							}),
 						}),
-						n(-17,  {	-- Quests					
---							qa(26017),	-- A Lure
-							qa(25977, {	-- A Standard Day for Azrajar
-								["qg"] = 41667,	-- 
+						n(-17,  {	-- Quests
+						--[[
+							q(26017, {	-- A Lure
+								["races"] = ALLIANCE_ONLY,
+							}),
+						]]--
+							q(25977, {	-- A Standard Day for Azrajar
+								["qg"] = 41667,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59639),	-- 
+									i(59639),	--
 									i(59638),	-- Necklace of the Furious Standard
 								},
 							}),
-							qh(25980, {	-- A Standard Day for Azrajar
-								["qg"] = 41670,	-- 
+							q(25980, {	-- A Standard Day for Azrajar
+								["qg"] = 41670,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59636),	-- 
+									i(59636),	--
 									i(59635),	-- Necklace of the Furious Standard
 								},
 							}),
 							q(26143, {	-- All that Rises
-								["qg"] = 42197,	-- 
+								["qg"] = 42197,	--
 								["g"] = {
-									i(59609),	-- 
-									i(59608),	-- 
-									i(59610),	-- 
+									i(59609),	--
+									i(59608),	--
+									i(59610),	--
 									i(59607),	-- Hallazeal's Demise
 								},
 							}),
 --[[
 							q(26142),	-- Ascend No More!
-							qa(26181),	-- Back to Darkbreak Cove
-							qh(26182),	-- Back to Tenebrous Cavern
-							qa(26103),	-- Bio-Fuel
-							qa(26105),	-- Claim Korthun's End (Drop-Quest - Hellscream Seadog 42115)
-							qa(26121),	-- Claim Korthun's End (given by questgiver	-- either or shared with quest of same name???)
+							q(26181, {	-- Back to Darkbreak Cove
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(26182, {	-- Back to Tenebrous Cavern
+								["races"] = HORDE_ONLY,
+							}),
+							q(26103, {	-- Bio-Fuel
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(26105, {	-- Claim Korthun's End (Drop-Quest - Hellscream Seadog 42115)
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(26121, {	-- Claim Korthun's End (given by questgiver	-- either or shared with quest of same name???)
+								["races"] = ALLIANCE_ONLY,
+							}),
 -]]
-							qa(26070, {	-- Clearing the Defiled
-								["qg"] = 41598,	-- 
+							q(26070, {	-- Clearing the Defiled
+								["qg"] = 41598,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59624),	-- 
-									i(59625),	-- 
-									i(59623),	-- 
+									i(59624),	--
+									i(59625),	--
+									i(59623),	--
 								},
 							}),
-							qh(26071, {	-- Clearing the Defiled
-								["qg"] = 41636,	-- 
+							q(26071, {	-- Clearing the Defiled
+								["qg"] = 41636,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59621),	-- 
-									i(59622),	-- 
-									i(59620),	-- 
+									i(59621),	--
+									i(59622),	--
+									i(59620),	--
 								},
 							}),
---[[							
-							qa(26018),	-- Coldlights Out
+--[[
+							q(26018, {	-- Coldlights Out
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(26140),	-- Communing with the Ancient
 --]]
-							qa(26193, {	-- Defending the Rift
+							q(26193, {	-- Defending the Rift
 								["qg"] = 41600,	-- Erunak Stonespeaker
 								["coord"] = { 42.6, 37.8, 204 },
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(59604),	-- Submariner's Weighted Treads
 									i(59605),	-- Signet of the Lookout
 									i(59606),	-- Drape of the Helmsman
 								},
 							}),
-							qh(26194, {	-- Defending the Rift
-								["qg"] = 41600,	-- 
+							q(26194, {	-- Defending the Rift
+								["qg"] = 41600,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59601),	-- 
-									i(59603),	-- 
+									i(59601),	--
+									i(59603),	--
 									i(59602),	-- Signet of the Lookout
 								},
 							}),
 --[[
-							qh(26089),	-- Die Fisherman Die
-							qa(26019),	-- Enormous Eel Egg
-							qh(26122),	-- Environmental Awareness
-							qa(26132),	-- Fiends from the Netherworld
-							qh(26133),	-- Fiends from the Netherworld
+							q(26089, {	-- Die Fisherman Die
+								["races"] = HORDE_ONLY,
+							}),
+							q(26019, {	-- Enormous Eel Egg
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(26122, {	-- Environmental Awareness
+								["races"] = HORDE_ONLY,
+							}),
+							q(26132, {	-- Fiends from the Netherworld
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(26133, {	-- Fiends from the Netherworld
+								["races"] = HORDE_ONLY,
+							}),
 --]]
 							q(26065,  {	-- Free Wil'hai
-								["qg"] = 41640,	-- 
+								["qg"] = 41640,	--
 								["g"] = {
-									i(59628),	-- 
-									i(59627),	-- 
+									i(59628),	--
+									i(59627),	--
 								},
 							}),
-							qa(26106, {	-- Fuel-ology 101
-								["qg"] = 41666,	-- 
+							q(26106, {	-- Fuel-ology 101
+								["qg"] = 41666,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59646),	-- 
-									i(59645),	-- 
-									i(59644),	-- 
+									i(59646),	--
+									i(59645),	--
+									i(59644),	--
 								},
 							}),
 --[[
-							qh(26087),	-- "Glow-Juice"
-							qh(26088),	-- Here Fishie Fishie
+							q(26087, {	-- "Glow-Juice"
+								["races"] = HORDE_ONLY,
+							}),
+							q(26088, {	-- Here Fishie Fishie
+								["races"] = HORDE_ONLY,
+							}),
 --]]
-							qh(26091, {	-- Here Fishie Fishie 2: Eel-Egg-Trick Boogaloo
-								["qg"] = 41908,	-- 
+							q(26091, {	-- Here Fishie Fishie 2: Eel-Egg-Trick Boogaloo
+								["qg"] = 41908,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59654),	-- 
-									i(59653),	-- 
-									i(59655),	-- 
+									i(59654),	--
+									i(59653),	--
+									i(59655),	--
 								},
 							}),
 --[[
-							qh(26090),	-- I Brought You This Egg
+							q(26090, {	-- I Brought You This Egg
+								["races"] = HORDE_ONLY,
+							}),
 							q(26072),	-- Into the Totem
 --]]
 							q(26111, {	-- ... It Will Come
-								["qg"] = 41600,	-- 
+								["qg"] = 41600,	--
 								["g"] = {
-									i(59618),	-- 
+									i(59618),	--
 									i(59617),	-- Mentalist's Protective Bottle
 									i(59619),	-- Brain-Connector Chain
 								},
 							}),
-							qa(26080, {	-- One Last Favor
-								["qg"] = 41910,	-- 
+							q(26080, {	-- One Last Favor
+								["qg"] = 41910,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59652),	-- 
-									i(59651),	-- 
-									i(59650),	-- 
+									i(59652),	--
+									i(59651),	--
+									i(59650),	--
 								},
 							}),
---							qh(26086),	-- Orako
-							qh(26092, {	-- Orako's Report
-								["qg"] = 41908,	-- 
+							--[[
+							q(26086, {	-- Orako
+								["races"] = HORDE_ONLY,
+							}),
+							]]--
+							q(26092, {	-- Orako's Report
+								["qg"] = 41908,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59649),	-- 
-									i(59648),	-- 
-									i(59647),	-- 
+									i(59649),	--
+									i(59648),	--
+									i(59647),	--
 								}
 							}),
---							qa(26015),	-- Phosphora Hunting
+							--[[
+							q(26015, {	-- Phosphora Hunting
+								["races"] = ALLIANCE_ONLY,
+							}),
+							]]--
 							n(41652, {	-- Twilight Champion
 								i(57102, {	-- Twilight Cage Key
 									["description"] = "Only drops while on the Ascend No More! quest",
 									["groups"] = {
-										qa(26144, {	-- Prisoners
-											i(59615),
-											i(59616),
-											i(59614),
+										q(26144, {	-- Prisoners
+											["races"] = ALLIANCE_ONLY,
+											["g"] = {
+												i(59615),
+												i(59616),
+												i(59614),
+											},
 										}),
 									},
 								}),
 								i(57118,  {	-- Twilight Cage Key
 									["description"] = "Only drops while on the Ascend No More! quest",
 									["groups"] = {
-										qh(26149, {	-- Prisoners
-											i(59612),
-											i(59613),
-											i(59611),
+										q(26149, {	-- Prisoners
+											["races"] = HORDE_ONLY,
+											["g"] = {
+												i(59612),
+												i(59613),
+												i(59611),
+											},
 										}),
 									},
 								}),
 							}),
 --[[
-							qa(25983),	-- Promontory Point
-							qh(25984),	-- Promontory Point
+							q(25983, {	-- Promontory Point
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25984, {	-- Promontory Point
+								["races"] = HORDE_ONLY,
+							}),
 --]]
-							qa(25987, {	-- Put It On
-								["qg"] = 41666,	-- 
+							q(25987, {	-- Put It On
+								["qg"] = 41666,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59632),	-- 
+									i(59632),	--
 									i(59633),	-- Severed Visionary Tentacle
 								},
 							}),
-							qh(25988, {	-- Put It On
-								["qg"] = 41669,	-- 
+							q(25988, {	-- Put It On
+								["qg"] = 41669,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59629),	-- 
+									i(59629),	--
 									i(59630),	-- Severed Visionary Tentacle
 								},
 							}),
@@ -230,34 +296,54 @@ _.Zones =
 							q(26096),	-- Scalding Shrooms
 							q(26124),	-- Secure Seabrush (Drop-Quest - Alliance Sea-Scout - 42114)
 							q(26125), 	-- Secure Seabrush (given by questgiver	-- either or with quest with same name????)
-							qa(25950),	-- Sira'Kess Slaying
-							qh(25974),	-- Sira'Kess Slaying
-							qa(26014),	-- The Brothers Digsong
+							q(25950, {	-- Sira'Kess Slaying
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25974, {	-- Sira'Kess Slaying
+								["races"] = HORDE_ONLY,
+							}),
+							q(26014, {	-- The Brothers Digsong
+								["races"] = ALLIANCE_ONLY,
+							}),
 --]]
-							qa(26021, {	-- The Brothers Digsong 2: Ell-Egg-Trick Boogaloo
-								["qg"] = 41910,	-- 
+							q(26021, {	-- The Brothers Digsong 2: Ell-Egg-Trick Boogaloo
+								["qg"] = 41910,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59657),	-- 
-									i(59656),	-- 
-									i(59658),	-- 
+									i(59657),	--
+									i(59656),	--
+									i(59658),	--
 								},
 							}),
-							qh(26126, {	-- The Perfect Fuel
-								["qg"] = 41669,	-- 
+							q(26126, {	-- The Perfect Fuel
+								["qg"] = 41669,	--
+								["races"] = HORDE_ONLY,
 								["description"] = "2 Remora, 3 Hammerhead",
 								["g"] = {
-									i(59643),	-- 
-									i(59642),	-- 
-									i(59641),	-- 
+									i(59643),	--
+									i(59642),	--
+									i(59641),	--
 								},
 							}),
 --[[
-							qa(26056),	-- The Wavespeaker
-							qh(26057),	-- The Wavespeaker
-							qa(25981),	-- Those Aren't Masks
-							qh(25982),	-- Those Aren't Masks
-							qa(25975),	-- Treasure Reclamation
-							qh(25976),	-- Treasure Reclamation
+							q(26056, {	-- The Wavespeaker
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(26057, {	-- The Wavespeaker
+								["races"] = HORDE_ONLY,
+							}),
+							q(25981, {	-- Those Aren't Masks
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25982, {	-- Those Aren't Masks
+								["races"] = HORDE_ONLY,
+							}),
+							q(25975, {	-- Treasure Reclamation
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25976, {	-- Treasure Reclamation
+								["races"] = HORDE_ONLY,
+							}),
 							q(26154),	-- Twilight Extermination
 							q(26130),	-- Unplug L'ghorek
 --]]
@@ -281,7 +367,7 @@ _.Zones =
 								i(67134),	-- Dory's Finery
 								i(67129),	-- Signet of High Arcanist Savor
 								i(67130),	-- Dorian's Lost Necklace
-							}), 
+							}),
 							n(50050, {	-- Shok'sharak
 								i(67233)	-- Sussurating Treads of Shok'sharak
 							}),
@@ -354,9 +440,10 @@ _.Zones =
 								["coord"] = { 57.1, 28.8, 201 },
 								["sourceQuests"] = { 25587 },	-- Gimme Shelter
 							}),
-							qa(25558, {	-- All or Nothing
+							q(25558, {	-- All or Nothing
 								["qg"] = 40690,	-- Captain Taylor
 								["coord"] = { 45.0, 23.5 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 25547 },	-- On Our Own Terms
 								["g"] = {
 									i(59804),	-- Cowl of the Lost Cutter
@@ -374,7 +461,10 @@ _.Zones =
 								["itemID"] = 62138,	-- Gnash's Head
 								["questID"] = 27687,	-- An Opened Can of Whoop Gnash
 							},
---							qa(25497),	-- Back in the Saddle (In beta never added to game)
+							q(25497, {	-- Back in the Saddle (In beta never added to game)
+								["u"] = 1,
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(25477, {	-- Better Late Than Dead
 								["qg"] = 41248,	-- Moanah Stormhoof
 								["coord"] = { 46.0, 46.8, 201 },
@@ -391,20 +481,30 @@ _.Zones =
 									i(59779),	-- Girdle of Calcified Blackfin
 								},
 							},
-							qh(25949, {	-- Blood and Thunder! (secondary QG IDs 41769 and 41793)
-								["qg"] = 41750,	-- 
+							q(25949, {	-- Blood and Thunder! (secondary QG IDs 41769 and 41793)
+								["qg"] = 41750,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59801),	-- 
-									i(59800),	-- 
-									i(59799),	-- 
+									i(59801),	--
+									i(59800),	--
+									i(59799),	--
 								},
 							}),
---							qh(25948),	-- Bring It On!
-							qa(25357, {	-- Buy Us Some Time
+							--[[
+							q(25948, {	-- Bring It On!
+								["races"] = HORDE_ONLY,
+							}),
+							]]--
+							q(25357, {	-- Buy Us Some Time
 								["qg"] = 39887,	-- Captain Taylor
 								["coord"] = { 44.7, 22.5, 201 },
+								["races"] = ALLIANCE_ONLY,
 							}),
---							qh(25942),	-- Buy Us Some Time
+							--[[
+							q(25942, {	-- Buy Us Some Time
+								["races"] = HORDE_ONLY,
+							}),
+							]]--
 							q(25602, {	-- Can't Start a Fire Without a Spark
 								["qg"] = 39884,	-- Captain Samir
 								["coord"] = { 57.3, 28.9, 201 },
@@ -426,12 +526,17 @@ _.Zones =
 								["coord"] = { 55.2, 38.8, 201 },
 								["sourceQuests"] = { 25651 },	-- Oh, the Insanity!
 							}),
-							qa(25824, {	-- Debriefing
+							q(25824, {	-- Debriefing
 								["qg"] = 41341,	-- Erunak Stonespeaker
 								["coord"] = { 63.8, 59.9, 201 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 25812 },	-- Spelunking
 							}),
---							qh(26007),	-- Debriefing
+							--[[
+--							q(26007, {	-- Debriefing
+								["races"] = HORDE_ONLY,
+							}),
+							]]--
 							q(25743, {	-- Decisions, Decisions
 								["qg"] = 46458,	-- Budd
 								["coord"] = { 58.3, 48.6, 201 },
@@ -442,9 +547,10 @@ _.Zones =
 									i(59785),	-- Pounded Pewter Links
 								},
 							}),
-							qa(25888, {	-- Decompression
+							q(25888, {	-- Decompression
 								["qg"] = 41347,	-- Moanah Stormhoof
 								["coord"] = { 63.8, 59.3, 201 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 25887 },	-- Wake of Destruction
 								["g"] = {
 									i(59774),	-- Cone-Snail Cinch
@@ -452,12 +558,13 @@ _.Zones =
 									i(59775),	-- Breathstone-Infused Longbow
 								},
 							}),
-							qh(26008, {	-- Decompression
-								["qg"] = 41347,	-- 
+							q(26008, {	-- Decompression
+								["qg"] = 41347,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59770),	-- 
-									i(59769),	-- 
-									i(59771),	-- 
+									i(59770),	--
+									i(59769),	--
+									i(59771),	--
 								},
 							}),
 							q(25670, {	-- DUN-dun-DUN-dun-DUN-dun
@@ -465,19 +572,26 @@ _.Zones =
 								["coord"] = { 55.2, 38.8, 201 },
 								["sourceQuests"] = { 27699 },	-- Shark Weak
 							}),
---							qh(25947),	-- Finders, Keepers
---							q(25666),	-- Getting Your Hands Dirty (In beta never added to game)
+							--[[
+							q(25947, {	-- Finders, Keepers
+								["races"] = HORDE_ONLY,
+							}),
+							]]--
+							q(25666, {	-- Getting Your Hands Dirty (In beta never added to game)
+								["u"] = 1,
+							}),
 							q(25587, {	-- Gimme Shelter
 								["qg"] = 39667,	-- Adarrah
 								["coord"] = { 53.4, 43.0, 201 },
 								["sourceQuests"] = { 27685 },	-- Good Deed Left Undone
 							}),
-							qh(25944, {	-- Girding Our Loins
-								["qg"] = 41711,	-- 
+							q(25944, {	-- Girding Our Loins
+								["qg"] = 41711,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59806),	-- 
-									i(59805),	-- 
-									i(59807),	-- 
+									i(59806),	--
+									i(59805),	--
+									i(59807),	--
 								},
 							}),
 							q(27685, {	-- Good Deed Left Undone
@@ -486,7 +600,9 @@ _.Zones =
 								["isBreadcrumb"] = true,
 							}),
 --[[
-							qh(25946),	-- Helm's Deep
+							q(25946, {	-- Helm's Deep
+								["races"] = HORDE_ONLY,
+							}),
 							q(25883),	-- How Disarming
 --]]
 							n(40276, {	-- Sabreclaw Skitterer
@@ -538,7 +654,11 @@ _.Zones =
 								["coord"] = { 57.1, 28.7, 201 },
 								["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
 							}),
---							qh(27668),	-- Pay Attention!
+							--[[
+							q(27668, {	-- Pay Attention!
+								["races"] = HORDE_ONLY,
+							}),
+							]]--
 							q(25281, {	-- Pay It Forward
 								["qg"] = 36915,	-- Erunak Stonespeaker
 								["coord"] = { 45.0, 23.2, 201 },
@@ -556,7 +676,7 @@ _.Zones =
 								i(59797),	-- Abalone-Linked Robes      \
 								i(59795),	-- Harp Shell Shoulderpads    > ---- In beta never added to game.
 								i(59796),	-- Tread of Decapod Death    /
-							}),                                         / 
+							}),                                         /
 --]]
 							q(25405, {	-- Rest For the Weary
 								["qg"] = 36915,	-- Erunak Stonespeaker
@@ -582,22 +702,34 @@ _.Zones =
 								["sourceQuest"] = 25924,	-- Call of Duty
 								["races"] = HORDE_ONLY,
 							}),
---							q(35738),	-- Shallow End of the Gene Pool (In beta never added to game.)
---							q(25498),	-- Shark Bait (In beta never added to game.)
+							q(35738, {	-- Shallow End of the Gene Pool (In beta never added to game.)
+								["u"] = 1,
+							}),
+							q(25498, {	-- Shark Bait (In beta never added to game.)
+								["u"] = 1,
+							}),
 							q(27699, {	-- Shark Weak
 								["sourceQuests"] = { 25657 },	-- Dah, Nunt.. Dah, Nunt...
 								-- Quest is automatically offered upon completion of SQ
 							}),
-							qa(25812, {	-- Spelunking
+							q(25812, {	-- Spelunking
 								["qg"] = 40105,	-- Erunak Stonespeaker
 								["coord"] = { 46.3, 46.8, 201 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 25794 },	-- Undersea Sanctuary
 							}),
---							qh(26000),	-- Spelunking
---							q(25636),	-- Starve a Fever, Feed a Cold (In beta never added to game.)
-							qa(25564, {	-- Stormwind Elite Aquatic and Land Forces
+							--[[
+							q(26000, {	-- Spelunking
+								["races"] = HORDE_ONLY,
+							}),
+							]]--
+							q(25636, {	-- Starve a Fever, Feed a Cold (In beta never added to game.)
+								["u"] = 1,
+							}),
+							q(25564, {	-- Stormwind Elite Aquatic and Land Forces
 								["qg"] = 39887,	-- Captain Taylor
 								["coord"] = { 44.7, 22.5, 201 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {
 									25357,	-- Buy Us Some Time
 									25546,	-- Traveling on Our Stomachs
@@ -621,11 +753,12 @@ _.Zones =
 							}),
 							q(27708, {	-- The Warden's Time
 								["sourceQuests"] = { 25884 },	-- Come Hell or High Water
-								-- Quest automatically offered when 
+								-- Quest automatically offered when
 							}),
-							qa(25545, {	-- To Arms!
+							q(25545, {	-- To Arms!
 								["qg"] = 39887,	-- Captain Taylor
 								["coord"] = { 44.7, 22.5, 201 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {
 									25357,	-- Buy Us Some Time
 									25546,	-- Traveling on Our Stomachs
@@ -636,11 +769,16 @@ _.Zones =
 									i(59810),	-- Captain Taylor's Chopper
 								},
 							}),
-							qa(25546, {	-- Traveling on Our Stomachs
+							q(25546, {	-- Traveling on Our Stomachs
 								["qg"] = 39887,	-- Captain Taylor
 								["coord"] = { 44.7, 22.5, 201 },
+								["races"] = ALLIANCE_ONLY,
 							}),
---							qh(25943),	-- Traveling on Our Stomachs
+							--[[
+							q(25943, {	-- Traveling on Our Stomachs
+								["races"] = HORDE_ONLY,
+							}),
+							]]--
 							q(25794, {	-- Undersea Sanctuary
 								["qg"] = 40105,	-- Erunak Stonespeaker
 								["coord"] = { 46.3, 46.8, 201 },
@@ -652,12 +790,17 @@ _.Zones =
 								["sourceQuests"] = { 25824 },	-- Debriefing
 							}),
 --							q(25742),	-- What? This Old Thing? (In beta never added to game.)
-							qa(25885, {	-- What? What? In My Gut...?
+							q(25885, {	-- What? What? In My Gut...?
 								["qg"] = 41340,	-- Private Pollard
 								["coord"] = { 63.9, 59.8, 201 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 25887 },	-- Wake of Destruction
 							}),
---							qh(26040),	-- What? What? In My Gut...?
+							--[[
+							q(26040, {	-- What? What? In My Gut...?
+								["races"] = HORDE_ONLY,
+							}),
+							]]--
 						}),
 						n(-16,  {	-- Rares
 							n(49913, {	-- Lady La-La
@@ -713,9 +856,10 @@ _.Zones =
 									i(59762), 	-- Wentletrap Legplates
 								},
 							}),
-							qa(25537, {	-- Art of Attraction
+							q(25537, {	-- Art of Attraction
 								["qg"] = 40639,	-- Engineer Hexascrub
 								["coord"] = { 48.9, 49.2, 205 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 25535 },	-- A Powerful Need to Eat
 							}),
 							q(25164, {	-- Backed Into a Corner
@@ -733,9 +877,10 @@ _.Zones =
 								["coord"] = { 41.3, 34.2, 205 },
 								["sourceQuests"] = { 25217 },	-- Totem Modification
 							}),
-							qa(25540, {	-- Bellies Await
+							q(25540, {	-- Bellies Await
 								["qg"] = 40641,	-- Divemaster Birmingham
 								["coord"] = { 48.9, 49.1, 205 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 25538 },	-- Odor Coater
 								["g"] = {
 									i(59727),	-- Queen Conch Chestguard
@@ -743,9 +888,10 @@ _.Zones =
 									i(59728),	-- Clam Shucker
 								},
 							}),
-							qa(25539, {	-- Clamming Up
+							q(25539, {	-- Clamming Up
 								["qg"] = 40641,	-- Divemaster Birmingham
 								["coord"] = { 48.9, 49.1, 205 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 25535 },	-- A Powerful Need to Eat
 							}),
 							q(25219, {	-- Don't be Shellfish
@@ -753,9 +899,10 @@ _.Zones =
 								["coord"] = { 49.2, 42.5, 205 },
 								["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
 							}),
-							qa(25538, {	-- Odor Coater
+							q(25538, {	-- Odor Coater
 								["qg"] = 40639,	-- Engineer Hexascrub
 								["coord"] = { 48.9, 49.2, 205 },
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 25537 },	-- Art of Attraction
 								["g"] = {
 									i(59734),	-- Gloves of Piscine Attraction
@@ -763,34 +910,32 @@ _.Zones =
 									i(59732),	-- Prototype Chemical Applicator
 								},
 							}),
-							{	-- Piece of the Past (A)
-								["questID"] = 27716,	-- Piece of the Past (A)
+							q(27716, {	-- Piece of the Past (A)
+								["races"] = ALLIANCE_ONLY,
 								["crs"] = {
 									41227,	-- Azsh'ir Infantry
 									39638,	-- Azsh'ir Patroller
 								},
-								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(59697),	-- Keenstone Helm
 									i(59696),	-- Gloves of Transcription
 									i(59698),	-- Scribe's Quill
 								},
 								-- SQs unknown, if any
-							},
-							{	-- Piece of the Past (H)
+							}),
+							q(27717, {	-- Piece of the Past (H)
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									41227,	-- Azsh'ir Infantry
+									39638,	-- Azsh'ir Patroller
+								},
 								["g"] = {
 									i(59694),	-- Keenstone Helm
 									i(59693),	-- Gloves of Transcription
 									i(59695),	-- Scribe's Quill
 								},
-								["crs"] = {
-									41227,	-- Azsh'ir Infantry
-									39638,	-- Azsh'ir Patroller
-								},
-								["races"] = HORDE_ONLY,
-								["questID"] = 27717,	-- Piece of the Past (H)
 								-- SQs unknown, if any
-							},
+							}),
 							q(25221, {	-- Rundown
 								["qg"] = 39877,	-- Toshe Chaosrender
 								["coord"] = { 55.5, 12.5, 205 },
@@ -831,13 +976,21 @@ _.Zones =
 								["coord"] = { 41.3, 34.2, 205 },
 								["sourceQuests"] = { 25216 },	-- The Great Sambino
 							}),
---[[						
-							qa(25582),	-- A Better Vantage
-							qh(25955),	-- A Better Vantage
-							qa(26005),	-- A Breath of Fresh Air
-							qh(26006),	-- A Breath of Fresh Air
+--[[
+							q(25582, {	-- A Better Vantage
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25955, {	-- A Better Vantage
+								["races"] = HORDE_ONLY,
+							}),
+							q(26005, {	-- A Breath of Fresh Air
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(26006, {	-- A Breath of Fresh Air
+								["races"] = HORDE_ONLY,
+							}),
 --]]
-							
+
 							n(40510, {	-- Fathom-Lord Zin'jatar
 								i(54614, {	-- Luminescent Pearl
 									q(25442, {	-- A Pearl of Wisdom
@@ -847,257 +1000,354 @@ _.Zones =
 									}),
 								}),
 							}),
---							qa(25535),	-- A Powerful Need To Eat
-							qa(25581, {	-- An Occupation of Time
-								["qg"] = 40644,	-- 
+							--[[
+							q(25535, {	-- A Powerful Need To Eat
+								["races"] = ALLIANCE_ONLY,
+							}),
+							]]--
+							q(25581, {	-- An Occupation of Time
+								["qg"] = 40644,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59716),	-- 
-									i(59715),	-- 
-									i(59714),	-- 
+									i(59716),	--
+									i(59715),	--
+									i(59714),	--
 								},
 							}),
-							qh(25954, {	-- An Occupation of Time
-								["qg"] = 40920,	-- 
+							q(25954, {	-- An Occupation of Time
+								["qg"] = 40920,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59713),	-- 
-									i(59712),	-- 
-									i(59711),	-- 
+									i(59713),	--
+									i(59712),	--
+									i(59711),	--
 								},
 							}),
 --[[
 							q(25860),	-- At All Costs
-							qh(25993),	-- Body Blows
-							qa(25919),	-- Body Blows
-							qh(25990),	-- Breaking Through
-							qa(25916),	-- Breaking Through
+							q(25993, {	-- Body Blows
+								["races"] = HORDE_ONLY,
+							}),
+							q(25919, {	-- Body Blows
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25990, {	-- Breaking Through
+								["races"] = HORDE_ONLY,
+							}),
+							q(25916, {	-- Breaking Through
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(25658),	-- Built to Last
 							q(25858),	-- By Her Lady's Word
-							qh(25989),	-- Capture the Crab
-							qa(25909),	-- Capture the Crab
-							qa(25579),	-- Caught Off-Guard
-							qh(25952),	-- Caught Off-Guard
+							q(25989, {	-- Capture the Crab
+								["races"] = HORDE_ONLY,
+							}),
+							q(25909, {	-- Capture the Crab
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25579, {	-- Caught Off-Guard
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25952, {	-- Caught Off-Guard
+								["races"] = HORDE_ONLY,
+							}),
 							q(25863),	-- Chosen Burden
-							qa(25748),	-- Clear Goals
-							qh(25959),	-- Clear Goals
+							q(25748, {	-- Clear Goals
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25959, {	-- Clear Goals
+								["races"] = HORDE_ONLY,
+							}),
 --]]
-							qa(25536, {	-- Cold Welcome
+							q(25536, {	-- Cold Welcome
 								["qg"] = 42411,	-- Captain Taylor
 								["coord"] = { 56.9, 75.8, 205 },
+								["races"] = ALLIANCE_ONLY,
 							}),
-							qh(25970, {	-- Come Prepared
-								["qg"] = 41770,	-- 
+							q(25970, {	-- Come Prepared
+								["qg"] = 41770,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59680),	-- 
-									i(59679),	-- 
-									i(59681),	-- 
+									i(59680),	--
+									i(59679),	--
+									i(59681),	--
 								},
 							}),
-							qa(25895, {	-- Come Prepared
-								["qg"] = 41535,	-- 
+							q(25895, {	-- Come Prepared
+								["qg"] = 41535,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59683),	-- 
-									i(59682),	-- 
-									i(59684),	-- 
+									i(59683),	--
+									i(59682),	--
+									i(59684),	--
 								},
 							}),
 							q(25360, {	-- Crabby Patrons
-								["qg"] = 40227,	-- 
+								["qg"] = 40227,	--
 								["g"] = {
-									i(59761),	-- 
-									i(59760),	-- 
-									i(59759),	-- 
+									i(59761),	--
+									i(59760),	--
+									i(59759),	--
 								},
 							}),
-							qh(25594, {	-- Crafty Crabs
-								["qg"] = 40918,	-- 
+							q(25594, {	-- Crafty Crabs
+								["qg"] = 40918,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59731),	-- 
-									i(59730),	-- 
-									i(59729),	-- 
+									i(59731),	--
+									i(59730),	--
+									i(59729),	--
 								},
 							}),
-							{	-- Elemental Bonds: Desire
-								["questID"] = 29328,
+							q(29328, {	-- Elemental Bonds: Desire
 								["qg"] = 53652,	-- Aggra
 								["coord"] = { 69.8, 34.2, 204 },
 								["sourceQuest"] = 29336,	-- Into Coaxing Tides
-							},
+							}),
 --[[
-							qh(25592),	-- Deep Attraction
-							qa(25893),	-- Desperate Plan
-							qh(25968),	-- Desperate Plan
+							q(25592, {	-- Deep Attraction
+								["races"] = HORDE_ONLY,
+							}),
+							q(25893, {	-- Desperate Plan
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25968, {	-- Desperate Plan
+								["races"] = HORDE_ONLY,
+							}),
 							q(25896),	-- Devout Assembly
-							qh(25964),	-- Fallen But Not Forgotten
-							qa(25753),	-- Fallen But Not Forgotten
+							q(25964, {	-- Fallen But Not Forgotten
+								["races"] = HORDE_ONLY,
+							}),
+							q(25753, {	-- Fallen But Not Forgotten
+								["races"] = ALLIANCE_ONLY,
+							}),
 --]]
 							q(25440, {	-- Fathom-Lord Zin'jatar
-								["qg"] = 40221,	-- 
+								["qg"] = 40221,	--
 								["g"] = {
-									i(59755),	-- 
-									i(59754),	-- 
-									i(59753),	-- 
+									i(59755),	--
+									i(59754),	--
+									i(59753),	--
 								},
 							}),
 --[[
 							q(25951),	-- Final Judgment
-							qa(26219),	-- Full Circle
-							qh(26221),	-- Full Circle
-							qa(25754),	-- Gauging Success
-							qh(25965),	-- Gauging Success
+							q(26219, {	-- Full Circle
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(26221, {	-- Full Circle
+								["races"] = HORDE_ONLY,
+							}),
+							q(25754, {	-- Gauging Success
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25965, {	-- Gauging Success
+								["races"] = HORDE_ONLY,
+							}),
 							q(25629),	-- Her Lady's Hand
-							qh(25972),	-- Honor and Privilege
-							qa(25898),	-- Honor and Privilege
+							q(25972, {	-- Honor and Privilege
+								["races"] = HORDE_ONLY,
+							}),
+							q(25898, {	-- Honor and Privilege
+								["races"] = ALLIANCE_ONLY,
+							}),
 --]]
-							qa(25918, {	-- Hopelessly Gearless
-								["qg"] = 41541,	-- 
+							q(25918, {	-- Hopelessly Gearless
+								["qg"] = 41541,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59746),	-- 
-									i(59744),	-- 
+									i(59746),	--
+									i(59744),	--
 									i(59745),	-- Dusky Pearl Ring
 								},
 							}),
-							qh(25992, {	-- Hopelessly Gearless
-								["qg"] = 41811,	-- 
+							q(25992, {	-- Hopelessly Gearless
+								["qg"] = 41811,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59743),	-- 
-									i(59741),	-- 
+									i(59743),	--
+									i(59741),	--
 									i(59742),	-- Dusky Pearl Ring
 								},
 							}),
-							{	-- Into Constant Earth
-								["questID"] = 29337,
+							q(29337, {	-- Into Constant Earth
 								["qg"] = 53652,	-- Aggra
 								["coord"] = { 69.8, 34.2, 204 },
 								["sourceQuest"] = 29328,	-- Elemental Bonds: Desire
-							},
+							}),
 --[[
-							qh(25969),	-- Hostile Waters
-							qa(25894),	-- Hostile Waters
-							qh(25958),	-- Looking Forward
-							qa(25747),	-- Looking Forward
-							qa(25892),	-- Losing Ground
-							qh(25967),	-- Losing Ground
+							q(25969, {	-- Hostile Waters
+								["races"] = HORDE_ONLY,
+							}),
+							q(25894, {	-- Hostile Waters
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25958, {	-- Looking Forward
+								["races"] = HORDE_ONLY,
+							}),
+							q(25747, {	-- Looking Forward
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25892, {	-- Losing Ground
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25967, {	-- Losing Ground
+								["races"] = HORDE_ONLY,
+							}),
 							q(25900),	-- Making Contact
 							q(29738),	-- Moonlance the Elder
 							q(25890),	-- Nespirah
 							q(25859),	-- No Trespass Forgiven
 --]]
-							qa(25749, {	-- Not Entirely Unprepared
-								["qg"] = 40642,	-- 
+							q(25749, {	-- Not Entirely Unprepared
+								["qg"] = 40642,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59704),	-- 
-									i(59703),	-- 
-									i(59702),	-- 
+									i(59704),	--
+									i(59703),	--
+									i(59702),	--
 								},
 							}),
-							qh(25960, {	-- Not Entirely Unprepared
-								["qg"] = 40917,	-- 
+							q(25960, {	-- Not Entirely Unprepared
+								["qg"] = 40917,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59701),	-- 
-									i(59700),	-- 
-									i(59699),	-- 
+									i(59701),	--
+									i(59700),	--
+									i(59699),	--
 								},
 							}),
 --							q(25659),	-- Not Soon Forgotten
-							qa(25921, {	-- Overseer Idra'kess
-								["qg"] = 41540,	-- 
+							q(25921, {	-- Overseer Idra'kess
+								["qg"] = 41540,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59740),	-- 
-									i(59739),	-- 
-									i(59738),	-- 
+									i(59740),	--
+									i(59739),	--
+									i(59738),	--
 								},
 							}),
-							qh(25995, {	-- Overseer Idra'kess
-								["qg"] = 41810,	-- 
+							q(25995, {	-- Overseer Idra'kess
+								["qg"] = 41810,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59737),	-- 
-									i(59736),	-- 
-									i(59735),	-- 
+									i(59737),	--
+									i(59736),	--
+									i(59735),	--
 								},
 							}),
 --[[
-							qh(25962),	-- Properly Inspired
-							qa(25751),	-- Properly Inspired
+							q(25962, {	-- Properly Inspired
+								["races"] = HORDE_ONLY,
+							}),
+							q(25751, {	-- Properly Inspired
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(25619),	-- Reoccupation
 							q(25861),	-- Setting An Example
-							qh(25593),	-- Shelled Salvation
+							q(25593, {	-- Shelled Salvation
+								["races"] = HORDE_ONLY,
+							}),
 							q(25907),	-- Slave Labor
 --]]
-							qh(25595, {	-- Something Edible
-								["qg"] = 40919,	-- 
+							q(25595, {	-- Something Edible
+								["qg"] = 40919,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59724),	-- 
-									i(59723),	-- 
-									i(59725),	-- 
+									i(59724),	--
+									i(59723),	--
+									i(59725),	--
 								},
 							}),
 							q(25908, {	-- Stick it to Them
-								["qg"] = 41531,	-- 
+								["qg"] = 41531,	--
 								["g"] = {
-									i(59748),	-- 
-									i(59747),	-- 
-									i(59749),	-- 
+									i(59748),	--
+									i(59747),	--
+									i(59749),	--
 								},
 							}),
 --[[
-							qh(25994),	-- Still Valuable
-							qa(25920),	-- Still Valuable
+							q(25994, {	-- Still Valuable
+								["races"] = HORDE_ONLY,
+							}),
+							q(25920, {	-- Still Valuable
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(25862),	-- Stolen Property
 --]]
-							qa(25752, {	-- Swift Action
-								["qg"] = 40643,	-- 
+							q(25752, {	-- Swift Action
+								["qg"] = 40643,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59663),	-- 
-									i(59662),	-- 
+									i(59663),	--
+									i(59662),	--
 									i(59664),	-- Pelagic Prism
 								},
 							}),
-							qh(25963, {	-- Swift Action
-								["qg"] = 40916,	-- 
+							q(25963, {	-- Swift Action
+								["qg"] = 40916,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59660),	-- 
-									i(59659),	-- 
+									i(59660),	--
+									i(59659),	--
 									i(59661),	-- Pelagic Prism
 								},
 							}),
-							qh(25953, {	-- Swift Approach
-								["qg"] = 40917,	-- 
+							q(25953, {	-- Swift Approach
+								["qg"] = 40917,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59718),	-- 
-									i(59717),	-- 
+									i(59718),	--
+									i(59717),	--
 								},
 							}),
-							qa(25580, {	-- Swift Approach
-								["qg"] = 40642,	-- 
+							q(25580, {	-- Swift Approach
+								["qg"] = 40642,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59721),	-- 
-									i(59720),	-- 
+									i(59721),	--
+									i(59720),	--
 									i(59722),	-- Cowry-Shell Pendant
 								},
 							}),
 --[[
-							qh(27394),	-- The Call of the Blade
-							qa(27393),	-- The Call of the Blade
+							q(27394, {	-- The Call of the Blade
+								["races"] = HORDE_ONLY,
+							}),
+							q(27393, {	-- The Call of the Blade
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(26191),	-- The Culmination of Our Efforts
 							q(25620),	-- The Revered Lady
 							q(43644),	-- To the Deeps
 							q(25637),	-- To the Fathom-Lord's Call
 							q(25359),	-- Toshe's Vengeance
-							qh(25971),	-- Unfurling Plan
-							qa(25897),	-- Unfurling Plan
-							qa(25583),	-- Upon the Scene of Battle
-							qh(25956),	-- Upon the Scene of Battle
+							q(25971, {	-- Unfurling Plan
+								["races"] = HORDE_ONLY,
+							}),
+							q(25897, {	-- Unfurling Plan
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25583, {	-- Upon the Scene of Battle
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25956, {	-- Upon the Scene of Battle
+								["races"] = HORDE_ONLY,
+							}),
 							q(25439),	-- Vengeful Heart
 --]]
-							qh(26135, {	-- Visions of the Past: Rise from the Deep
-								["qg"] = 40919,	-- 
+							q(26135, {	-- Visions of the Past: Rise from the Deep
+								["qg"] = 40919,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59667),	-- 
-									i(59666),	-- 
+									i(59667),	--
+									i(59666),	--
 								},
 							}),
-							qa(25626, {	-- Visions of the Past: Rise from the Deep
-								["qg"] = 39881,	-- 
+							q(25626, {	-- Visions of the Past: Rise from the Deep
+								["qg"] = 39881,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(59671),	-- Pearlescent Spaulders
 									i(59670),	-- Volaran's Handguards
@@ -1105,63 +1355,79 @@ _.Zones =
 									i(59669),	-- Emerald Dragonet Choker
 								},
 							}),
-							qa(25760, {	-- Visions of the Past: Invasion of Vashj'ir
-								["qg"] = 39881,	-- 
+							q(25760, {	-- Visions of the Past: Invasion of Vashj'ir
+								["qg"] = 39881,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59709),	-- 
+									i(59709),	--
 									i(59708),	--
 									i(59710),	-- Wavespeaker's Focus
 								},
 							}),
-							qh(25957, {	-- Visions of the Past: Invasion of Vashj'ir
-								["qg"] = 40919,	-- 
+							q(25957, {	-- Visions of the Past: Invasion of Vashj'ir
+								["qg"] = 40919,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59706),	-- 
-									i(59705),	-- 
+									i(59706),	--
+									i(59705),	--
 									i(59707),	-- Wavespeaker's Focus
 								},
 							}),
-							qa(25755, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
-								["qg"] = 39881,	-- 
+							q(25755, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
+								["qg"] = 39881,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59691),	-- 
-									i(59690),	-- 
+									i(59691),	--
+									i(59690),	--
 									i(59692),	--
 									i(59689),	-- Kvaldir Battle Standard
 								},
 							}),
-							qh(25966, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
-								["qg"] = 40919,	-- 
+							q(25966, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
+								["qg"] = 40919,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59687),	-- 
-									i(59686),	-- 
-									i(59688),	-- 
+									i(59687),	--
+									i(59686),	--
+									i(59688),	--
 									i(59685),	-- Kvaldir Battle Standard
 								},
 							}),
 --[[
 							q(25441),	-- Vortex
-							qa(25922),	-- Waking the Beast
-							qh(25996),	-- Waking the Beast
-							qa(27443)),	-- The War Has Many Fronts
+							q(25922, {	-- Waking the Beast
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25996, {	-- Waking the Beast
+								["races"] = HORDE_ONLY,
+							}),
+							q(27443, {	-- The War Has Many Fronts
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(43645),	-- Wavespeaker's Trail
-							qa(25917),	-- We Are Not Alone
-							qh(25991),	-- We Are Not Alone
+							q(25917, {	-- We Are Not Alone
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25991, {	-- We Are Not Alone
+								["races"] = HORDE_ONLY,
+							}),
 --]]
-							qa(25911, {	-- Welcome News
-								["qg"] = 40645,	-- 
+							q(25911, {	-- Welcome News
+								["qg"] = 40645,	--
+								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(59678),	-- 
-									i(59677),	-- 
-									i(59676),	-- 
+									i(59678),	--
+									i(59677),	--
+									i(59676),	--
 								},
 							}),
-							qh(25973, {	-- Welcome News
-								["qg"] = 40921,	-- 
+							q(25973, {	-- Welcome News
+								["qg"] = 40921,	--
+								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(59675),	-- 
-									i(59674),	-- 
-									i(59673),	-- 
+									i(59675),	--
+									i(59674),	--
+									i(59673),	--
 								},
 							}),
 						}),
@@ -1184,10 +1450,10 @@ _.Zones =
 								i(67134),	-- Dory's Finery
 								i(67129),	-- Signet of High Arcanist Savor
 								i(67130),	-- Dorian's Lost Necklace
-							}), 
+							}),
 							n(50052, {	-- Burgy Blackheart
 								i(134022)	-- Burgy Blackheart's Handsome Hat
-							}), 
+							}),
 							--[[
 							n(51071, {	-- Captain Florence: Does not drop collectible loot.
 							}),
@@ -1197,6 +1463,7 @@ _.Zones =
 						}),
 						n(-2,   {	-- Vendors
 							n(50324, {	-- Provisioner Arok <Earthen Ring Quartermaster>
+								["coord"] = { 49.1, 42.1, 205 },
 								["g"] = {
 									i(62363),	-- Earthmender's Boots
 									i(62364),	-- Flamebloom Gloves
@@ -1212,16 +1479,13 @@ _.Zones =
 									i(62354),	-- Pendant of Elemental Balance
 									i(62362),	-- Signet of the Elder Council
 								},
-								["coord"] = { 49.1, 42.1, 205 },
 							}),
 						}),
 						n(0,    {	-- Zone Drop
-							{	-- Technique: Origami Slime
-								["itemID"] = 65649,	--	-- Technique: Origami Slime
-							},
+							i(65649),	--	-- Technique: Origami Slime
 						}),
 					},
-				}),	
+				}),
 			},
 		}),
 	}),
