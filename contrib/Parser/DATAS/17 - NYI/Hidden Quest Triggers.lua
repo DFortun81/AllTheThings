@@ -495,25 +495,43 @@ _.NeverImplemented =
 		q(56890),	-- Theurgist Nitara
 		q(56893),	-- Warlord Zalzjar
 		-- Mechagon
+					-- Arachnoid Harvester first kill
+					-- Armored Vaultbot first kill
+					-- Boilburn first kill  -- No first kill id
+					-- Boggac Skullbash first kill
 		q(55919),	-- Bonepicker first kill
+					-- Caustic Mechaslime first kill
 		q(55927),	-- Crazed Trogg first kill
 		q(55917),	-- Deepwater Maw first kill
 		q(55544),	-- Doppel Ganger first kill
+		q(55932),	-- Earthbreaker Gulroc first kill
 		q(56994),	-- Enforcer KX-T57 first kill
 		q(55916),	-- Foul Manifestation first kill
+					-- Gear Checker Cogstar first kill
+		q(55929),	-- Gemicide first kill
+					-- Gorged Gear-Cruncher first kill
 		q(55910),	-- Jawbreaker first kill
 		q(55914),	-- Killsaw first kill
 		q(55926),	-- Malfunctioning Beastbot first kill
+		q(55907),	-- Mechagonian Nullifier first kill
 		q(55909),	-- Mecharantula first kill
 		q(55935),	-- Mr. Fixthis first kill
 		q(55928),	-- Ol' Big Tusk first kill
+					-- OOX-Avenger/MG first kill
+		q(55936),	-- Oxidized Leachbest first kill
 		q(55911),	-- Paol Pondwader first kill
 		q(55912),	-- Rumblerocks first kill
 		q(55924),	-- Rustfeather first kill
+					-- Scrapclaw first kill  -- 56100 and 57084 both (Missing in ATT) triggered
 		q(55922),	-- Seaspit first kill
+					-- Sparkqueen P'Emp first kill
 		q(55933),	-- Steel Singer Freza first kill
+					-- The Kleptoboss first kill
+					-- The Rusty Prince first kill
 		q(55908),	-- The Scrap King first kill
 		q(55921),	-- Uncle T'Rogg first kill
+		q(57081),	-- First Mechanized Chest of the week(Minipack: Mechagon)
+		q(57133),	-- First Mechanized Chest of the week(Minipack: Mechagon)
 		q(56004),	-- looting Energy Cell while on the quest "We Can Fix It"
 		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"
 	}),

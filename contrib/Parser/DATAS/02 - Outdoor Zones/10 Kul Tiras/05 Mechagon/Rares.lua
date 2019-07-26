@@ -6,7 +6,7 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
 			n(-16,  {	-- Rares
-				-- TODO:: Verify all kill questIDs(Most of these are done by Gaulish 6/27/19 Remaining OOX-Avenger/MG, Sparkqueen P'Emp First kill id's)
+				-- TODO:: See Hidden Quest Triggers.lua for remaining first kill id's needed
 				i(168908, {	-- Blueprint: Experimental Adventurer Augment
 					["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
 					["questID"] = 56087,
@@ -301,6 +301,7 @@ _.Zones =
 				n(153228, {	-- Gear Checker Cogstar -- possibly 154184?
 					["questID"] = 55852,
 					["isDaily"] = true,
+					["description"] = "Random spawn when you kill |cFFFFD700Upgraded Sentries|r.",
 					["g"] = {
 						crit(28, {	-- Gear Checker Cogstar
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -336,11 +337,11 @@ _.Zones =
 					},
 				}),
 				n(154701, {	-- Gorged Gear-Cruncher
+					["questID"] = 56367,
 					["coords"] = {
 						{ 73.2, 54.2, 1462 },	-- Cave Entrance
 						--{ 51.3, 47.8, 1462 },
 					},
-					["questID"] = 56367,
 					["isDaily"] = true,
 					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 					["g"] = {
