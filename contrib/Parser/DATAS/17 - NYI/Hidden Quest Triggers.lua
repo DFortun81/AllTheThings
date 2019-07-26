@@ -495,7 +495,7 @@ _.NeverImplemented =
 		q(56890),	-- Theurgist Nitara
 		q(56893),	-- Warlord Zalzjar
 		-- Mechagon
-					-- Arachnoid Harvester first kill
+					-- Arachnoid Harvester first kill	-- 55913 and 56506 both (Missing in ATT) triggered
 					-- Armored Vaultbot first kill
 					-- Boilburn first kill  -- No first kill id
 					-- Boggac Skullbash first kill
