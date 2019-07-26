@@ -12,6 +12,22 @@ _.Zones =
 					Scrappy can be found at (70.5,30.5) and requires an energy cell to revive him
 					R33-DR - 63.4, 57.0 interactive "data analyzer" npc. Possibly part of a puzzle?
 				]]--
+				q(55575, {	-- One Gnome's Trash
+					["qg"] = 152499,	-- Moxie Lockspinner
+					["coord"] = { 73.6, 34.6, 1462 },
+					["isDaily"] = true,
+					["g"] = {
+						i(168204, {	-- Small Metal Box
+								["description"] = "Small Metal Boxes can be collected when using the Rare Metal Collector",
+								["g"] = {
+									i(170148, {	-- Paint Bottle: Electric Blue
+										["questID"] = 56909,
+										
+									}),
+								},
+						}),
+					},
+				}),
 				q(56493, {	-- A Direct Approach
 					["qg"] = 155188,	-- Scrollsage Nola
 					["coord"] = { 72.2, 37.2, 862 },
