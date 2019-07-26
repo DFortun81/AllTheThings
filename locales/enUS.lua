@@ -3331,16 +3331,16 @@ AllTheThings.L = {
 		[9999974] = "Treasure Chest",	-- Use these until objectID is found
 		[9999973] = "Treasure Chest",	-- Use these until objectID is found
 		[9999972] = "Treasure Chest",	-- Use these until objectID is found
-		[9999970] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
-		[9999969] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
-		[9999968] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
-		[9999967] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
-		[9999966] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
-		[9999965] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
-		[9999964] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
-		[9999963] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
-		[9999962] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
-		[9999961] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999970] = "Crystalline Cat Figurine I",	-- these don't have actual objectIDs
+		[9999969] = "Crystalline Cat Figurine II",	-- these don't have actual objectIDs
+		[9999968] = "Crystalline Cat Figurine III",	-- these don't have actual objectIDs
+		[9999967] = "Crystalline Cat Figurine IV",	-- these don't have actual objectIDs
+		[9999966] = "Crystalline Cat Figurine V",	-- these don't have actual objectIDs
+		[9999965] = "Crystalline Cat Figurine VI",	-- these don't have actual objectIDs
+		[9999964] = "Crystalline Cat Figurine VII",	-- these don't have actual objectIDs
+		[9999963] = "Crystalline Cat Figurine VIII",	-- these don't have actual objectIDs
+		[9999962] = "Crystalline Cat Figurine IX",	-- these don't have actual objectIDs
+		[9999961] = "Crystalline Cat Figurine X",	-- these don't have actual objectIDs
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
