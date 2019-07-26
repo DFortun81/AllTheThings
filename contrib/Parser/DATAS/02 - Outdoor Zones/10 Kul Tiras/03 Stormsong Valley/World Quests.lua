@@ -327,6 +327,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(53107, {	-- Plunder and Provisions
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(52474, {	-- Poacher Zane
 						["lvl"] = 120,
 						["collectible"] = false,

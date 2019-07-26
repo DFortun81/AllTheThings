@@ -386,6 +386,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51505, {	-- Quillrat Matriarch
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51585, {	-- Quit Your Witchin'
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

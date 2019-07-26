@@ -10,7 +10,6 @@ _.Zones =
 						q(45439),	-- An Invasion of... Murlocs?
 						q(41443),	-- Ancient Leystone Deposits
 						q(45839),	-- Assault on Stormheim
-						q(46008),	-- Balnazoth
 						q(45072),	-- Barrels o' Fun
 						q(46010),	-- Bonecrusher Korgolath
 						q(41534),	-- Brambly Fjarnskaggl
@@ -18,8 +17,6 @@ _.Zones =
 						q(41489),	-- Brimstone Destroyer
 						q(41488),	-- Brimstone Destroyer
 						q(46011),	-- Colossal Infernal
-						q(46216),	-- Congealed Corruption
-						q(46179),	-- Crushing the Legion
 						q(43745),	-- Culling the Storm
 						q(42820),	-- DANGER: Aegir Wavecrusher
 						q(42806),	-- DANGER: Fjorlag, the Grave's Chill
@@ -30,18 +27,15 @@ _.Zones =
 						q(42953),	-- DANGER: Soulbinder Halldora
 						q(41444),	-- Dark Leystone Deposits
 						q(41459),	-- Dense Leystone Outcropping
-						q(45786),	-- Feast of the Hounds
 						q(46012),	-- Fel Commander Urgoz
 						q(41570),	-- Felhide
 						q(41569),	-- Felhide
 						q(41568),	-- Felhide
-						q(41520),	-- Felwort					
 						q(41519),	-- Felwort
 						q(46013),	-- Firecaller Rok'duun
 						q(41296),	-- Fjarnskaggl Cluster
 						q(41547),	-- Fjarnskaggl Cluster
 						q(41299),	-- Flourishing Fjarnskaggl
-						q(46014),	-- Gelthrog
 						q(41614),	-- Huge Stormrays
 						q(41275),	-- Huge Stormrays
 						q(41615),	-- Huge Stormrays
@@ -51,7 +45,6 @@ _.Zones =
 						q(41507),	-- Leystone Basilisks
 						q(41274),	-- Lively Stormrays
 						q(41603),	-- Lively Stormrays
-						
 						q(46016),	-- Magdrezoth
 						q(43752),	-- Oh, Ship!
 						q(41340),	-- Perfect Storm Drake Scale
@@ -66,7 +59,6 @@ _.Zones =
 						q(41556),	-- Slab of Bacon
 						q(41261),	-- Slab of Bacon
 						q(41343),	-- Solid Crabshell Fragment
-						q(45390),	-- Souls of the Vrykul
 						q(41445),	-- Stormy Leystone Deposits
 						q(41442),	-- Striking Leystone Deposits
 						q(41298),	-- Supplies Needed: Fjarnskaggl
@@ -129,6 +121,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46008 ,{	-- Balnazoth (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(42025, {	-- Bareback Brawl
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -147,8 +143,16 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46216, {	-- Congealed Corruption (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(41950, {	-- Cry More Thunder!
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46179, {	-- Crushing the Legion (Invasion WQ)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(42861, {	-- DANGER: Boulderfall, the Eroded
@@ -183,10 +187,23 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(45786, {	-- Feast of the Hounds (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41520, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(41521, {	-- Felwort
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(46014, {	-- Gelthrog (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
 				}),
 				q(41427, {	-- Get Vrekt
 					["lvl"] = 110,
@@ -297,6 +314,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(45390, {	-- Souls of the Vrykul (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
 				}),
 				q(43827, {	-- Stormwing the Portals
 					["lvl"] = 110,

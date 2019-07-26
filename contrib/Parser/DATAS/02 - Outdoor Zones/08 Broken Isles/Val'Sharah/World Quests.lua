@@ -47,6 +47,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43738, {	-- Coastal Glooom
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42927, {	-- DANGER: Malisandra
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -166,6 +170,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41956, {	-- Petrified Acolytes
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41964, {	-- Poisoned Waters
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

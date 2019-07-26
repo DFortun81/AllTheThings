@@ -7,7 +7,6 @@ _.Zones =
 		m(630, {	-- Azsuna
 			n(-34, {	-- World Quests
 --[[					
-				q(42119),	-- A Cleansing Cocktail
 				q(42024),	-- A Friend of My Enemy
 				q(43803),	-- A Giant Murloc Problem
 				q(44784),	-- Advanced Wanding
@@ -36,7 +35,6 @@ _.Zones =
 				q(44287),	-- DEADLY: Withered J'im
 				q(44054),	-- Demonicide
 				q(44049),	-- Evil Has Many Legs
-				q(42027),	-- Faronaar in Chaos
 				q(41323),	-- Fatty Lion Seal Skin
 				q(41564),	-- Felhide
 				q(41562),	-- Felhide
@@ -56,7 +54,6 @@ _.Zones =
 				q(41501),	-- Leystone Basilisks
 				q(41500),	-- Leyworms
 				q(45046),	-- Like the Wind
-				q(41527),	-- Lively Aethril
 				q(41264),	-- Lively Cursed Queenfish
 				q(41454),	-- Luminous Leystone Outcropping
 				q(42105),	-- Mixology Mix-up
@@ -82,7 +79,6 @@ _.Zones =
 				q(43609),	-- WANTED: Doomlord Kazrok
 				q(43610),	-- WANTED: Infernal Lord
 				q(42631),	-- WANTED: Inquisitor Tivos
-				q(43432),	-- WANTED: Normantis the Deposed
 				q(43612),	-- WANTED: Normantis the Deposed
 				q(42633),	-- WANTED: Vorthax
 				q(43614),	-- WANTED: Vorthax
@@ -93,6 +89,10 @@ _.Zones =
 				q(41311),	-- Work Order: Leystone
 				q(41326),	-- Work Order: Stormscales
 --]]
+				q(42119, {	-- A Cleansing Cocktail
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42014, {	-- A Tainted Vintage
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -173,6 +173,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42027, {	-- Faronaar in Chaos
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42026, {	-- Faronaar in Ruin
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -245,6 +249,11 @@ _.Zones =
 				q(42172, {	-- Leyhollow Infestation
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41527, {	-- Lively Aethril
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41598, {	-- Lively Cursed Queenfish
 					["lvl"] = 110,
@@ -415,6 +424,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43611, {	-- WANTED: Inquisitor Tivos
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43432, {	-- WANTED: Normantis the Deposed
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

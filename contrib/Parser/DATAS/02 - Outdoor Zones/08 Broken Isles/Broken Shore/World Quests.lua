@@ -17,7 +17,6 @@ _.Zones =
 					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
 					q(46068),	-- Brute Wrangling
-					q(46814),	-- Call of the Frostwyrm
 					q(44846),	-- Clearing the Path
 					q(45358),	-- Contagion Containment
 					q(45837),	-- Creeping Fel
@@ -44,7 +43,6 @@ _.Zones =
 					q(46752),	-- On Borrowed Wings
 					q(45797),	-- Playing with Green Fire
 					q(45929),	-- Purging the Flames
-					
 					q(45549),	-- Salving the Corruption
 					q(45626),	-- Set You Up the Bomb!
 					q(46945),	-- Si'vash
@@ -85,6 +83,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46201, {	-- By Water Be Purged
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46814, {	-- Call of the Frostwyrm
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

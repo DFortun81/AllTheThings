@@ -35,7 +35,6 @@ _.Zones =
 				q(41816),	-- DANGER: Oubdob da Smasher
 				q(41884),	-- Dark Tales
 				q(41835),	-- Deworming
-				q(41024),	-- Dirge of the Dead
 				q(39424),	-- Everything!
 				q(41561),	-- Felhide
 				q(41560),	-- Felhide
@@ -44,7 +43,6 @@ _.Zones =
 				q(41219),	-- Flourishing Foxflower
 				q(41228),	-- Foxflower Cluster
 				q(41544),	-- Foxflower Cluster
-				
 				q(46184),	-- Gelgothar
 				q(41701),	-- Gettin' Tuffer
 				q(41882),	-- Grey Idols
@@ -58,7 +56,6 @@ _.Zones =
 				q(41596),	-- Lively Highmountain Salmon
 				q(41244),	-- Lively Highmountain Salmon
 				q(41597),	-- Lively Highmountain Salmon
-				q(41091),	-- Lords of the Hills
 				q(41090),	-- Lords of the Hills
 				q(41089),	-- Lords of the Hills
 				q(41433),	-- Massive Leystone Deposits
@@ -86,7 +83,6 @@ _.Zones =
 				q(41826),	-- WANTED: Crawshuk the Hungry
 				q(44291),	-- WANTED: Crawshuk the Hungry
 				q(43617),	-- WANTED: Devouring Darkness
-				q(41818),	-- WANTED: Majestic Elderhorn
 				q(44292),	-- WANTED: Majestic Elderhorn
 				q(44294),	-- WANTED: Sekhan
 				q(43619),	-- WANTED: Shara Felbreath
@@ -143,6 +139,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41013, {	-- Darkbrul Arena
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41024, {	-- Dirge of the Dead
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -205,6 +205,10 @@ _.Zones =
 					["lvl"] = 98,
 				}),
 				q(43764, {	-- Ley Race
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41091, {	-- Lords of the Hills
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -362,6 +366,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43618, {	-- WANTED: Gurbog da Basher
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41818, {	-- WANTED: Majestic Elderhorn
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

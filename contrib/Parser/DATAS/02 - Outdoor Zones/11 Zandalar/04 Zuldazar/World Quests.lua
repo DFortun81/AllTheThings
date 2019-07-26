@@ -228,6 +228,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50876, {	-- Murderbeak
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54051, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,

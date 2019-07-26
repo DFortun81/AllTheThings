@@ -8,6 +8,12 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 706, 707, 708 },
 		["coord"] = { 52.5, 45.3, 634 },	-- Maw of Souls, Stormheim
 		["groups"] = {
+			n(-34, {	-- World Quests
+				q(42780, {	-- Maw of Souls: From Hell's Mouth
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(1, {		-- Normal
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					i(134199),	-- Biornskin Belt

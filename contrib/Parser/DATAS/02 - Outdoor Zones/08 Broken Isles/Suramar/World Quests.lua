@@ -64,10 +64,8 @@ _.Zones =
 				q(42796),	-- WANTED: Broodmother Shu'malis
 				q(44186),	-- WANTED: Broodmother Shu'malis
 				q(44016),	-- WANTED: Cadraeus
-				q(44031),	-- WANTED: Cadraeus
 				q(44030),	-- WANTED: Guardian Thor'el
 				q(44021),	-- WANTED: Hertha Grimdottir
-				q(44029),	-- WANTED: Hertha Grimdottir
 				q(44019),	-- WANTED: Lieutenant Strathmar
 				q(44027),	-- WANTED: Magister Phaedris
 				q(44015),	-- WANTED: Mal'Dreth the Corruptor
@@ -344,7 +342,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44031, {	-- WANTED: Cadraeus
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44013, {	-- WANTED: Guardian Thor'el
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44029, {	-- WANTED: Hertha Grimdottir
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -616,6 +616,7 @@ AllTheThings.L = {
 		[-690] = "Interface\\Icons\\inv_misc_tabard_forsaken",						-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",			-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-850] = "Interface\\Icons\\INV_Eng_Crate2",								-- Mechanized Chest
+		[-851] = "Interface\\Icons\\INV_Eng_Crate2",								-- Irontide Chest
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",				-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",					-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",			-- Tier 3.5
@@ -1324,6 +1325,7 @@ AllTheThings.L = {
 		
 -- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
+		[-851] = "Irontide Chest",												-- Irontide Chest
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
