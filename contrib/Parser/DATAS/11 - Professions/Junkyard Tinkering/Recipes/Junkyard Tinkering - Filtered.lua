@@ -10,6 +10,15 @@ profession(2720, {	-- Junkyard Tinkering
 					["g"] = {
 					}
 				},
+				{	-- Robots
+					["categoryID"] = 1291,
+					["g"] = {
+						{	-- Sapphronetta Flivvers Action Figure	-- Removed once you craft the Mini.
+							["recipeID"] = 303000,	-- Sapphronetta Flivvers Action Figure
+							["u"] = 15,				-- Profession Training Recipe
+						},
+					},
+				},
 				{	-- Components & Tools
 					["categoryID"] = 1259,
 					["g"] = {

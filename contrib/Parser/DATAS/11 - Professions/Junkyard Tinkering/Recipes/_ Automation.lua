@@ -154,7 +154,11 @@ profession(2720, {	-- Junkyard Tinkering
 						{
 							["name"] = "Utility Mechanoclaw",
 							["recipeID"] = 300269
-						}
+						},
+						{
+							["name"] = "Sapphronetta Flivvers Action Figure",
+							["recipeID"] = 303000
+						},
 					}
 				},
 				{
