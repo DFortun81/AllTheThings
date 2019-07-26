@@ -39,6 +39,9 @@ _.Zones =
 					["coord"] = { 79.7, 74.7, 51 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54107,	-- Grim Tidings
+					["altQuests"] = {
+						54754,  -- For the Queen
+					},
 				}),
 				q(27849, {	-- Assault on Stonard
 					["qg"] = 46676,	-- Joanna Blueheart
@@ -303,6 +306,9 @@ _.Zones =
 					["coord"] = { 80.8, 78.7, 51 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54108,	-- A Warrior's Death
+					["altQuests"] = {
+						54754,  -- For the Queen
+					},
 				}),
 				q(27843, {	-- Reinforcements Denied
 					["qg"] = 46676,	-- Joanna Blueheart
