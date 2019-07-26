@@ -40,7 +40,6 @@ _.Zones =
 					o(325659, {	-- Mechanized Chest.
 						["questID"] = 55547,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["coords"] = {
 							{ 49.1, 30.2, 1462 },
 							{ 53.2, 41.7, 1462 },
@@ -52,7 +51,6 @@ _.Zones =
 					o(325660, {	-- Mechanized Chest.
 						["questID"] = 55548,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["coords"] = {
 							{ 35.7, 38.5, 1462 },
 							{ 30.9, 51.7, 1462 },
@@ -63,7 +61,6 @@ _.Zones =
 					o(325661, {	-- Mechanized Chest.
 						["questID"] = 55549,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["coords"] = {
 							{ 60.1, 63.6, 1462 },
 							{ 65.8, 64.5, 1462 },
@@ -75,7 +72,6 @@ _.Zones =
 					o(325662, {	-- Mechanized Chest.
 						["questID"] = 55550,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["coords"] = {
 							{ 65.5, 53.5, 1462 },
 							{ 72.7, 47.2, 1462 },
@@ -87,7 +83,6 @@ _.Zones =
 					o(325663, {	-- Mechanized Chest.
 						["questID"] = 55551,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["description"] = "Spawns in the future version of Mechagon",
 						["coords"] = {
 							{ 61.6, 32.5, 1462 },
@@ -100,7 +95,6 @@ _.Zones =
 					o(325664, {	-- Mechanized Chest.
 						["questID"] = 55552,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["coords"] = {
 							{ 50.8, 28.6, 1462 },
 							{ 56.6, 29.5, 1462 },
@@ -113,7 +107,6 @@ _.Zones =
 					o(325665, {	-- Mechanized Chest.
 						["questID"] = 55553,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["coords"] = {
 							{ 80.8, 18.7, 1462 },
 							{ 85.6, 28.5, 1462 },
@@ -125,7 +118,6 @@ _.Zones =
 					o(325666, {	-- Mechanized Chest.
 						["questID"] = 55554,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["coords"] = {
 							{ 48.5, 75.9, 1462 },
 							{ 57.5, 82.2, 1462 },
@@ -136,7 +128,6 @@ _.Zones =
 					o(325667, {	-- Mechanized Chest.
 						["questID"] = 55555,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["coords"] = {
 							{ 63.6, 67.5, 1462 },
 							{ 72.3, 65.5, 1462 },
@@ -148,7 +139,6 @@ _.Zones =
 					o(325668, {	-- Mechanized Chest.
 						["questID"] = 55556,
 						["isDaily"] = true,
-						["collectible"] = false,
 						["coords"] = {
 							{ 24.8, 65.5, 1462 },
 							{ 20.6, 77.0, 1462 },
