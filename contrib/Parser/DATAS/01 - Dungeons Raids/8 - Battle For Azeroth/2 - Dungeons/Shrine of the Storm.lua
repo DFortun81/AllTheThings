@@ -14,6 +14,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["lvl"] = 120,
 					["collectible"] = false,
 				}),
+				q(51456, {	-- Shrine of the Storm: Crawling Corruption
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
 			}),
 			d(1, {	-- Normal
 				e(2153, {	-- Aqu'sirr

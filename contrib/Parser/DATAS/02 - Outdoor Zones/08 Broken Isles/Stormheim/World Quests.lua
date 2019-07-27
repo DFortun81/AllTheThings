@@ -10,7 +10,6 @@ _.Zones =
 						q(45439),	-- An Invasion of... Murlocs?
 						q(41443),	-- Ancient Leystone Deposits
 						q(45839),	-- Assault on Stormheim
-						q(45072),	-- Barrels o' Fun
 						q(46010),	-- Bonecrusher Korgolath
 						q(41534),	-- Brambly Fjarnskaggl
 						q(41490),	-- Brimstone Destroyer
@@ -126,6 +125,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(42025, {	-- Bareback Brawl
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45072, {	-- Barrels o' Fun
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

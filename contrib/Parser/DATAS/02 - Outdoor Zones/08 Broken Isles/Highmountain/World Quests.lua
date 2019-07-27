@@ -77,7 +77,6 @@ _.Zones =
 				q(40896),	-- Threnody of Chieftains
 				q(44823),	-- Thunder Totem Cleanup Detail
 				q(41011),	-- Umbralshard Rituals
-				q(41428),	-- Unstable Portal
 				q(41836),	-- WANTED: Bodash the Hoarder
 				q(43616),	-- WANTED: Bodash the Hoarder
 				q(41826),	-- WANTED: Crawshuk the Hungry
@@ -339,6 +338,10 @@ _.Zones =
 				}),
 				q(46190, {	-- Ulgrom (Invasion WQ)
 					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41428, {	-- Unstable Portal
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(44289, {	-- WANTED: Arru

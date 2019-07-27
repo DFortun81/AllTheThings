@@ -2481,40 +2481,7 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52391, {	-- Work Order: Contract: Storm's Wake
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52367, {	-- Work Order: Electroshock Mount Motivator
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52353, {	-- Work Order: Enchant Ring - Seal of Haste
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52354, {	-- Work Order: Enchant Ring - Seal of Mastery
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52347, {	-- Work Order: Honey-Glazed Haunches
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52344, {	-- Work Order: Kul Tiramisu
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(52400, {	-- Work Order: Kyanite
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52332, {	-- Work Order: Lightfoot Potion
 					["collectible"] = false,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
@@ -2527,20 +2494,6 @@ _.Zones =
 				q(52345, {	-- Work Order: Ravenberry Tarts
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(50981, {	-- Work Order: Riverbud
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52346, {	-- Work Order: Sailor's Pie
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50982, {	-- Work Order: Star Moss
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50989, {	-- Work Order: Storm Silver Ore
 					["collectible"] = false,
@@ -2565,10 +2518,6 @@ _.Zones =
 				}),
 				q(50773, {	-- You're a Shark
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52352, {	-- Zeritarj
-					["collectible"] = false,
-					["lvl"] = 120,
 				}),
 		--]]
 		

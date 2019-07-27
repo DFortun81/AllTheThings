@@ -12,7 +12,6 @@ _.Zones =
 					q(46932),	-- A Tad More Corruption
 					q(45988),	-- Ancient Bones
 					q(47061),	-- Apocron
-					q(45694),	-- Arachnicide
 					q(46104),	-- Arachnid Toxicity
 					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
@@ -27,7 +26,6 @@ _.Zones =
 					q(46077),	-- Felbound Spirits
 					q(40390),	-- Hallowed Ground
 					q(45541),	-- How Do YOU Like It?!
-					q(46066),	-- I Fel Bat For You
 					q(46817),	-- Infernal Downfall
 					q(45743),	-- Judgment of Odyn
 					q(45776),	-- Keys are a Crutch
@@ -59,6 +57,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46105, {	-- Arachnid Superiority
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45694, {	-- Arachnicide
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -139,6 +141,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(45985, {	-- Hellish Scavengers
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46066, {	-- I Fel Bat For You
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

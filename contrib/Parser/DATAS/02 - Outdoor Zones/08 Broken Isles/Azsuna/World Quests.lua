@@ -56,7 +56,6 @@ _.Zones =
 				q(45046),	-- Like the Wind
 				q(41264),	-- Lively Cursed Queenfish
 				q(41454),	-- Luminous Leystone Outcropping
-				q(42105),	-- Mixology Mix-up
 				q(41268),	-- Queen Queenfish
 				q(41266),	-- Raft Fishing
 				q(43776),	-- Scouting
@@ -270,6 +269,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44786, {	-- Midterm: Rune Aptitude
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42105, {	-- Mixology Mix-up
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

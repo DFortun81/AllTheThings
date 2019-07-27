@@ -12,7 +12,6 @@ _.Zones =
 					q(48727),	-- Captain Faruq
 					q(49051),	-- Corrupted Blood of Argus
 					q(49049),	-- Gloamwing
-					q(48731),	-- Herald of Chaos
 				}),
 --]]				
 				q(48729, {	-- Ataxon
@@ -65,6 +64,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(48103, {	-- Gatekeeper's Review: Tenacity
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(48731, {	-- Herald of Chaos
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

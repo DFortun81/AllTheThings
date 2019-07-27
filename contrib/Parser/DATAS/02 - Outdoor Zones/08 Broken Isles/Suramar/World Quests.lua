@@ -20,7 +20,6 @@ _.Zones =
 				q(44122),	-- DANGER: Sorallus
 				q(44119),	-- DANGER: Volshax, Breaker of Will
 				q(41446),	-- Darkened Felslate Deposits
-				q(43778),	-- Enigmatic
 				q(41347),	-- Extra-Rancid Felhound Hide
 				q(41572),	-- Felhide
 				q(41573),	-- Felhide
@@ -34,7 +33,6 @@ _.Zones =
 				q(43930),	-- Fiends of Tel'anor
 				q(41304),	-- Flourishing Starlight Roses
 				q(41448),	-- Heavy Felslate Deposits
-				q(41616),	-- Huge Runescale Koi
 				q(41617),	-- Huge Runescale Koi
 				q(41538),	-- Iridescent Starlight Roses
 				q(41605),	-- Lively Runescale Koi
@@ -57,7 +55,6 @@ _.Zones =
 				q(41303),	-- Supplies Needed: Starlight Roses
 				q(41283),	-- The Angler Mangler
 				q(43435),	-- The Battle Rages On
-				q(42089),	-- The Fallen Ones
 				q(42082),	-- The Shattered Locus
 				q(41346),	-- Velvety Stalker Hide
 				q(44032),	-- WANTED: Apothecary Faldren
@@ -171,6 +168,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43778, {	-- Enigmatic
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(40337, {	-- Flummoxed
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -198,6 +199,11 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41280, {	-- Huge Runescale Koi
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41616, {	-- Huge Runescale Koi
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
@@ -295,6 +301,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41351, {	-- Supplies Needed: Stonehide Leather
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42089, {	-- The Fallen Ones
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

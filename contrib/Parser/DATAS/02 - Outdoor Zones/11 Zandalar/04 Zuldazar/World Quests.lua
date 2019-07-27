@@ -127,6 +127,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51084, {	-- Dark Chronicler
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50875, {	-- Darkspeaker Jo'la
 						["lvl"] = 120,
 						["collectible"] = false,

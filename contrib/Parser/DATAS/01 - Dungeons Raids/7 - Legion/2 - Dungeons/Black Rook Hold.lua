@@ -38,6 +38,12 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
+			n(-34, {	-- World Quests
+				q(43762, {	-- Black Rook Hold: Traitor's Demise
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(1, {	-- Normal
 				cr(98542, e(1518, {	-- Amalgam of Souls
 					i(136714),	-- Amalgam's Seventh Spine
