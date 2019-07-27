@@ -337,6 +337,10 @@ _.Zones =
 					["coord"] = { 51.0, 88.8 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 154465,	-- Earthen Guardian <Messenger of the Speaker>
+					["description"] = "You can skip directly to the next quest 'A fresh trauma' which is available in the Chamber of Heart",
+					["altQuests"] = {
+						55519,	-- A Fresh Trauma
+					},
 				}),
 				q(47315, {	-- Into the Dunes
 					["sourceQuests"] = { 47314 },	-- Rumors of Exile
@@ -438,6 +442,17 @@ _.Zones =
 					["coord"] = { 49.8, 95.9, 1165 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 150433,	-- Bluffwatcher Proudscar
+					["altQuests"] = {
+						54961,	-- Righting Wrongs
+					},
+				}),
+				q(54961, {	-- Righting Wrongs
+					["coord"] = { 49.8, 95.9, 1165 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 150433,	-- Bluffwatcher Proudscar
+					["altQuests"] = {
+						55124,	-- Righting Wrongs
+					},
 				}),
 				q(54166, {	-- Set Sail
 					["u"] = 40,
