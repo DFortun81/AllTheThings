@@ -1302,7 +1302,7 @@ _.Zones =
 						34335,	-- Garrison Campaign: Crows In The Field
 					},
 				}),
-				q(36603, {	-- Brimstone Springs (bonus objectives) -- aa
+				q(36603, {	-- Brimstone Springs (bonus objectives)
 					["coord"] = { 40.4, 54.6, 543 },
 				}),
 				i(113449, {	-- Chunk of Crater Lord (A)
@@ -1547,7 +1547,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35033,	-- Welcome to Gorgrond
 				}),
-				q(36571, {	-- Iyun Weald (bonus objective) -- aa
+				q(36571, {	-- Iyun Weald (bonus objective)
 					["coord"] = { 61.9, 54.4, 543 },
 				}),
 				q(36460, {	-- Just Another Stick in the Wall
@@ -1619,10 +1619,10 @@ _.Zones =
 						i(112598),	-- Wildwood Wrangler Gauntlets
 					},
 				}),
-				q(36563, {	-- Mistcreep Mire (bonus objective) -- aa
+				q(36563, {	-- Mistcreep Mire (bonus objective)
 					["coord"] = { 51.9, 66.6, 543 },
 				}),
-				q(34463, {	-- Mysterious Ring -- aa
+				q(34463, {	-- Mysterious Ring
 					--["objectID"] = 229330,	-- Mysterious Ring
 					["coord"] = { 39.6, 39.9, 543 },
 					["icon"] = "Interface\\Icons\\inv_jewelry_ring_10",
@@ -1746,11 +1746,11 @@ _.Zones =
 						i(118033),	-- Wildwood Wrangler Gloves
 					},
 				}),
-				q(33633, {	-- Rooter the Ravenous -- aa
+				q(33633, {	-- Rooter the Ravenous
 					["qg"] = 75593,	-- Rooter
 					["coord"] = { 42.6, 37.8, 543 },
 				}),
-				q(35881, {	-- Ruins of the First Bastion (bonus objective) -- aa
+				q(35881, {	-- Ruins of the First Bastion (bonus objective)
 					["coord"] = { 49.9, 79.5, 543 },
 				}),
 				q(36440, {	-- Saberon Population Reduction
@@ -1853,7 +1853,7 @@ _.Zones =
 						i(118005),	-- Steamscar Vessel
 					},
 				}),
-				q(36520, {	-- Tailthrasher Basin (bonus objective, not related to achievements) -- aa
+				q(36520, {	-- Tailthrasher Basin (bonus objective, not related to achievements)
 					["coord"] = { 45.1, 91.2, 543 },
 				}),
 				q(36442, {	-- Taking the Death Bloom (A)
@@ -1888,7 +1888,7 @@ _.Zones =
 					["qg"] = 78251,	-- Thisalee Crow
 					["sourceQuest"] = 34337,	-- The Giant Cauldron
 				}),
-				q(34724, {	-- The Forgotten Caves (bonus objective) -- aa
+				q(34724, {	-- The Forgotten Caves (bonus objective)
 					["coord"] = { 51.4, 77.8, 543 },
 				}),
 				q(34337, {	-- The Giant Cauldron
@@ -1976,7 +1976,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38570,	-- Derailment
 				}),
-				q(36480, {	-- Valley of Destruction (bonus objective) -- aa
+				q(36480, {	-- Valley of Destruction (bonus objective)
 					["coord"] = { 46.4, 47.2, 543 },
 				}),
 				q(35640, {	-- Vengeance for the Fallen
@@ -2024,7 +2024,7 @@ _.Zones =
 						35050,	-- Rescue Rangari
 					},
 				}),
-				q(35033, {	-- Welcome to Gorgrond -- aa
+				q(35033, {	-- Welcome to Gorgrond
 					["qg"] = 80978,	-- Yrel
 					["coord"] = { 63.9, 57.1, 543 },
 					["races"] = ALLIANCE_ONLY,
