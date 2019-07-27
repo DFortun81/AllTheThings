@@ -8603,6 +8603,9 @@ local function RowOnEnter(self)
 		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
 		if reference.isYearly then GameTooltip:AddLine("This can be completed yearly."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
+			if app.Settings:GetTooltipSetting("iconPath") then
+				GameTooltip:AddDoubleLine("Icon", reference.icon);
+			end
 			GameTooltipIcon:SetSize(72,72);
 			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
 			local texcoord = reference.previewtexcoord or reference.texcoord;

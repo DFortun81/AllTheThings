@@ -2575,6 +2575,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["fileID"] = "File ID",
 	["flightPathID"] = "Flight Path ID",
 	["followerID"] = "Follower ID",
+	["iconPath"] = "Icon Path",
 	["illusionID"] = "Illusion ID",
 	["instanceID"] = "Instance ID",
 	["itemID"] = "Item ID",
@@ -2592,7 +2593,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["visualID"] = "Visual ID",
 };
 local last = nil;
-for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","flightPathID","followerID"}) do
+for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","flightPathID","followerID","iconPath"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2629,7 +2630,7 @@ end
 -- This creates the "Main List Scale" slider.
 local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", settings, "OptionsSliderTemplate");
 MainListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MainListScaleSlider:SetPoint("TOP", ShowSpecializationRequirementsCheckBox, "BOTTOM", 0, 0);
+MainListScaleSlider:SetPoint("TOP", ShowSpecializationRequirementsCheckBox, "BOTTOM", 0, -4);
 table.insert(settings.MostRecentTab.objects, MainListScaleSlider);
 settings.MainListScaleSlider = MainListScaleSlider;
 MainListScaleSlider.tooltipText = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
@@ -2657,7 +2658,7 @@ end);
 -- This creates the "Mini List Scale" slider.
 local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", settings, "OptionsSliderTemplate");
 MiniListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -32);
+MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -20);
 table.insert(settings.MostRecentTab.objects, MiniListScaleSlider);
 settings.MiniListScaleSlider = MiniListScaleSlider;
 MiniListScaleSlider.tooltipText = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
@@ -2689,7 +2690,7 @@ end);
 -- This creates the "Locations" slider.
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
 LocationsSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-LocationsSlider:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -32);
+LocationsSlider:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -20);
 table.insert(settings.MostRecentTab.objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
 LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
