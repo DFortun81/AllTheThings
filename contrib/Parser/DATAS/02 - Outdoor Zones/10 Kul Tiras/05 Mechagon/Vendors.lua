@@ -26,11 +26,12 @@ _.Zones =
 							q(55535),	-- The Tipsy Tinkerer
 						}),
 						i(167069, {	-- Rustbolt Gramophone
-							q(55534,{    -- Rustbolt Gramophone
+							["questID"] = 55534,    -- Rustbolt Gramophone
+							["g"] = {
                                 crit(1, {    -- Ode to Tinkertown
                                     ["achievementID"] = 13686,    -- Junkyard Melomanic
                                 }),
-                            }),
+                            },
 						}),
 						i(169113, {	-- Advanced Adventurer Augmentation
 							i(169002),	-- Calibrated Hefty Cog
@@ -45,7 +46,7 @@ _.Zones =
 							i(161382),	-- Wind-Up Utility Pylon
 						}),
 						i(167062, {	-- Armored Vaultbot Key
-							["description"] = "To use this key the Armored Vaultbot must not be in engaged in combat",
+							["description"] = "To use this key the Armored Vaultbot must not be in engaged in combat.",
 							["groups"] = {
 								i(170072),	-- Armored Vaultbot
 							},
@@ -128,13 +129,13 @@ _.Zones =
 						i(168660),	-- Schematic: Blingtron 7000
 						i(168369),	-- Recipe: Famine Evaluator And Snack Table (Rank 2)
 						i(168533, {	-- Schematic: Ub3r-Module: P.O.G.O.
-							["description"] = "Must be an engineer with a crafted Ub3r-Spanner and having completed the Iteration Is Key quest, for this to show up on vendor",
+							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 						}),
 						i(168535, {	-- Schematic: Ub3r-Module: Scrap Cannon
-							["description"] = "Must be an engineer with a crafted Ub3r-Spanner and having completed the Iteration Is Key quest, for this to show up on vendor",
+							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 						}),
 						i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil
-							["description"] = "Must be an engineer with a crafted Ub3r-Spanner and having completed the Iteration Is Key quest, for this to show up on vendor",
+							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 						}),
 					},
 				}),
