@@ -7762,14 +7762,10 @@ local function CreateMiniListForGroup(group)
 		UpdateGroups(popout.data, popout.data.g);
 		table.insert(app.RawData, popout.data);
 	end
-	if IsAltKeyDown() then
-		AddTomTomWaypoint(popout.data, false);
-	else
-		if not popout.data.expanded then
-			ExpandGroupsRecursively(popout.data, true, true);
-		end
-		popout:Toggle(true);
+	if not popout.data.expanded then
+		ExpandGroupsRecursively(popout.data, true, true);
 	end
+	popout:Toggle(true);
 end
 local function ClearRowData(self)
 	self.ref = nil;
@@ -8205,15 +8201,19 @@ local function RowOnClick(self, button)
 		
 		-- All non-Shift Right Clicks open a mini list or the settings.
 		if button == "RightButton" then
-			if self.index > 0 then
-				CreateMiniListForGroup(self.ref);
+			if IsAltKeyDown() then
+				AddTomTomWaypoint(reference, false);
 			else
-				-- Open the Settings Menu
-				if InterfaceOptionsFrame:IsVisible() then
-					InterfaceOptionsFrame_Show();
+				if self.index > 0 then
+					CreateMiniListForGroup(reference);
 				else
-					InterfaceOptionsFrame_OpenToCategory(app:GetName());
-					InterfaceOptionsFrame_OpenToCategory(app:GetName());
+					-- Open the Settings Menu
+					if InterfaceOptionsFrame:IsVisible() then
+						InterfaceOptionsFrame_Show();
+					else
+						InterfaceOptionsFrame_OpenToCategory(app:GetName());
+						InterfaceOptionsFrame_OpenToCategory(app:GetName());
+					end
 				end
 			end
 		elseif self.index > 0 then
