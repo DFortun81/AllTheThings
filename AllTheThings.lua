@@ -12075,6 +12075,22 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								end
 							end
 							
+							
+							local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
+							if timeRemaining and timeRemaining > 0 then
+								local description = "Ends " .. date("%H:%M", time() + (timeRemaining * 60));
+								if timeRemaining < 30 then
+									description = "|cFFFF0000" .. description .. "|r";
+								elseif timeRemaining < 60 then
+									description = "|cFFFFFF00" .. description .. "|r";
+								end
+								if not questObject.description then
+									questObject.description = description;
+								else
+									questObject.description = questObject.description .. "\n\n" .. description;
+								end
+							end
+							
 							if showCurrencies then
 								local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
 								if numCurrencies > 0 then
