@@ -897,11 +897,23 @@ _.Zones =
 				},
 			}),
 			q(56001, {	-- Drunk Angry Murlocs
+				["qg"] = 153884,	-- King Mrgl-Mrgl
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.  Your cooking may also need to be at a certain level to receive the recipe as a reward.  I saw it at Cooking 168. — slumber",
 				["isDaily"] = true,
 				["coord"] = { 25.5, 26.5, 1355 },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(170075),	-- Recipe: Unagi Skewer
+				},
+			}),
+			q(56265, {	-- Drunk Angry Murlocs
+				["qg"] = 153884,	-- King Mrgl-Mrgl
+				["coord"] = { 25.5, 26.5, 1355 },
+				["sourceQuest"] = 55500,	-- Save A Friend
+				["description"] = "Requires |cFFFFD700Poen Gillbrack||r as your friend.  The recipe reward is maybe bugged please report in the ATT Discord if you get the recipe.",
+				["isDaily"] = true,
+				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(170075),	-- Recipe: Unagi Skewer
 				},
@@ -2477,6 +2489,15 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55866,	-- Scouting Undercover
 			}),
+			q(56811, {	-- You've Got A Friend In Me
+				["qg"] = 151310,	-- Kelfin Scout (Poen Gillbrac)
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Offered when |cFFFFD700Poen Gillbract|r reaches Rank 9.",
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(169915),	-- Poen's Stashed Supplies
+				},
+			}),					
 		}),
 	}),
 };

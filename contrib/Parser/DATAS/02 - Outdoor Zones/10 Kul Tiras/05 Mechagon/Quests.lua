@@ -615,15 +615,17 @@ _.Zones =
 						}),
 					},
 				}),
-				q(56469, {	-- Pirates? I Hate Those Guys!
-				--	not sure if there are any SQs or anything else that needs to be added here.
-					["crs"] = { 150698 },	-- Congealed Oil (not sure if it drops from anything else)
-					["isDaily"] = true,
+				i(169864, {	-- Old Pirate Hat
+					["description"] = "You need to be on one of the following quests \"A Growing Mytery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get the item.",
+					["crs"] = { 150698 },	-- Congealed Oil
 					["g"] = {
-						crit(10, {	-- Pirates? I Hate Those Guys!
-							["achievementID"] = 13556,	-- Outside Influences
+						q(56469, {	-- Pirates? I Hate Those Guys!
+							["isDaily"] = true,
+							["g"] = {
+								ach(13556, crit(10)),	-- Outside Influences / Pirates? I Hate Those Guys!
+							},
 						}),
-					},
+					}
 				}),
 				q(56184, {	-- Pirates, Sea Monsters, Robots
 					["qg"] = 154335,	-- Dread Captain DeMeza
@@ -1023,14 +1025,16 @@ _.Zones =
 					},
 				}),
 				i(168256, {	-- Night Elf Ring
-					q(55718, {	-- Strange Discovery
-						["isDaily"] = true,
-						["g"] = {
-							crit(7, {	-- Strange Discovery
-								["achievementID"] = 13556,	-- Outside Influences
-							}),
-						},
-					}),
+					["description"] = "You need to be on one of the following quests \"A Growing Mytery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get the item.",
+					["crs"] = { 152653 },	-- Toxic Lurker
+					["g"] = {
+						q(55718, {	-- Strange Discovery
+							["isDaily"] = true,
+							["g"] = {
+								ach(12556, crit(7)),	-- Outside Influences / Strange Discovery
+							},
+						}),
+					},
 				}),
 				q(56501, {	-- Taking the Air Out	— TO DO: figure out if you need to be on "A Direct Approach" to get this -- this quest wasn't offered my second time doing "A Direct Approach, but "Waste Not" was.  maybe they cycle?
 					["isDaily"] = true,

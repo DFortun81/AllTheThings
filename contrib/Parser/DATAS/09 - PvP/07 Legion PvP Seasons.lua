@@ -3506,6 +3506,7 @@ _.PVP =
 					}),
 					cl(8, {	-- Mage
 						i(150101),	-- Demonic Combatant's Silk Amice (H)
+						i(150105),	-- Demonic Combatant's Silk Bracers (H)
 						i(150103),	-- Demonic Combatant's Silk Cord (H)
 						i(150095),	-- Demonic Combatant's Silk Cowl (H)
 						i(150093),	-- Demonic Combatant's Silk Handguards (H)
