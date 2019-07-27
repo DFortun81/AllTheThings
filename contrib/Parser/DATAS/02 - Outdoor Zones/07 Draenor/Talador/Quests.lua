@@ -529,6 +529,7 @@ _.Zones =
 						34676,	-- The Critical Path (board)
 						37183,	-- The Critical Path (bodrick grey)
 						49565,	-- Hero's Call: Talador!
+						36495,	-- News From Talador
 					},
 				}),
 				q(34566, {	-- At Your Command
