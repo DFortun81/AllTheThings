@@ -11145,6 +11145,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
 			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
+			self:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
 			self:RegisterEvent("CHAT_MSG_SYSTEM");
 			self:RegisterEvent("SCENARIO_UPDATE");
@@ -13132,6 +13133,7 @@ app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
 app:RegisterEvent("NEW_PET_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
+app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 app:RegisterEvent("HEIRLOOMS_UPDATED");
@@ -13610,6 +13612,9 @@ app.events.PET_BATTLE_CLOSE = function(...)
 		app:ToggleMainList() 
 		app.mainVis = false;
 	end
+end
+app.events.PLAYER_DIFFICULTY_CHANGED = function()
+	wipe(searchCache);
 end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not GetDataSubMember("CollectedToys", itemID) then
