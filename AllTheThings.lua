@@ -1475,7 +1475,80 @@ subroutines = {
 		tinsert(commands, {"postprocess"});	-- Post Process the search results to ensure no duplicate keys exist.
 		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
 		return commands;
-	end
+	end,
+	["bfa_azerite_armor_chest_dungeons"] = function()
+		return {
+			-- Dungeons
+			{"select", "instanceID", 968},	-- Atal'Dazar
+			{"select", "instanceID", 1001},	-- Freehold
+			{"select", "instanceID", 1041},	-- King's Rest
+			{"select", "instanceID", 1178},	-- Operation: Mechagon ??
+			{"select", "instanceID", 1036},	-- Shrine of the Storm
+			{"select", "instanceID", 1023},	-- Siege of Boralus
+			{"select", "instanceID", 1030},	-- Temple of Sethraliss
+			{"select", "instanceID", 1012},	-- The MOTHERLODE!!
+			{"select", "instanceID", 1022},	-- The Underrot
+			{"select", "instanceID", 1002},	-- Tol Dagor
+			{"select", "instanceID", 1021},	-- Waycrest Manor
+			
+			-- Process the Dungeons, Heroic Mode Only Loot for the azerite pieces.
+			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
+			{"where", "difficultyID", 2},	-- Select only the Heroic Difficulty Headers.
+			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
+			{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
+			{"is", "itemID"},	-- Only Items!
+			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
+			{"modID", 2},	-- Heroic
+		};
+	end,
+	["bfa_azerite_armor_chest_warfront"] = function()
+		return {
+			{"select", "npcID", -10057},	-- War Effort
+			{"pop"},	-- Discard the War Effort Header and acquire the children.
+			{"where", "mapID", 14},	-- Arathi Highlands
+			{"pop"},	-- Discard the Map Header and acquire the children.
+			{"where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+			{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
+			{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+			{"is", "itemID"},	-- Only Items!
+			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
+			{"modID", 5},	-- iLvl 340
+		}
+	end,
+	["bfa_azerite_armor_chest_zonedrops"] = function()
+		return {
+			-- World Quest Rewards
+			{"select", "mapID", 896},	-- Drustvar
+			{"select", "mapID", 942},	-- Stormsong Valley
+			{"select", "mapID", 895},	-- Tiragarde Sound
+			{"select", "mapID", 863},	-- Nazmir
+			{"select", "mapID", 864},	-- Vol'dun
+			{"select", "mapID", 862},	-- Zuldazar
+			
+			-- Process the World Quest Rewards
+			{"pop"},	-- Discard the Map Headers and acquire all of their children.
+			{"where", "npcID", -34},	-- Select only the World Quest Headers
+			{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
+			{"is", "npcID"},	-- Only use the item sets themselves, no zone drops.
+			{"pop"},	-- Discard the item set Headers and acquire all of their children.
+			
+			-- Process the the headers for the Azerite Armor pieces.
+			{"is", "itemID"},	-- Only Items!
+			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
+			{"myModID"},
+		};
+	end,
+	["bfa_azerite_armor_chest"] = function()
+		return {
+			{ "subif", "bfa_azerite_armor_chest_dungeons", function(o) return (not o.modID) or o.modID == 1 or o.modID == 2; end },
+			{ "finalize" },
+			{ "subif", "bfa_azerite_armor_chest_warfront", function(o) return (not o.modID) or o.modID == 1 or o.modID == 5; end },
+			{ "finalize" },
+			{ "subif", "bfa_azerite_armor_chest_zonedrops", function(o) return (not o.modID) or (o.modID ~= 2 and o.modID ~= 5); end },
+			{ "merge" },
+			{ "postprocess" },
+		};
+	end,
 };
 ResolveSymbolicLink = function(o)
 	if o and o.sym then
@@ -1686,6 +1759,16 @@ ResolveSymbolicLink = function(o)
 						s.modID = modID;
 					end
 				end
+			elseif cmd == "myModID" then
+				local modID = o.modID;
+				if modID then
+					for k=#searchResults,1,-1 do
+						local s = searchResults[k];
+						if s.itemID then
+							s.modID = modID;
+						end
+					end
+				end
 			elseif cmd == "sub" then
 				local subroutine = subroutines[sym[2]];
 				if subroutine then
@@ -1702,7 +1785,30 @@ ResolveSymbolicLink = function(o)
 						end
 					end
 				else
-					print("Could not fine subroutine", sym[2]);
+					print("Could not find subroutine", sym[2]);
+				end
+			elseif cmd == "subif" then
+				-- Instruction to perform a set of commands if a conditional is returned true.
+				local subroutine = subroutines[sym[2]];
+				if subroutine then
+					-- If the subroutine's conditional was successful.
+					if sym[3] and (sym[3])(o) then
+						local args = {unpack(sym)};
+						table.remove(args, 1);
+						table.remove(args, 1);
+						table.remove(args, 1);
+						local commands = subroutine(unpack(args));
+						if commands then
+							local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
+							if results then
+								for k,s in ipairs(results) do
+									table.insert(searchResults, s);
+								end
+							end
+						end
+					end
+				else
+					print("Could not find subroutine", sym[2]);
 				end
 			end
 		end
@@ -2761,6 +2867,14 @@ local function SearchForLink(link)
 					end
 					if #onlyMatchingModIDs > 0 then
 						return onlyMatchingModIDs;
+					else
+						local g = {};
+						for i,o in ipairs(_) do
+							o = CreateObject(o);
+							o.modID = modID;
+							MergeObject(g, CreateObject(o));
+						end
+						return g;
 					end
 				end
 				return _;
@@ -12036,11 +12150,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											cache = SearchForLink(link);
 											if cache and #cache > 0 then
 												local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
-												for _,data in ipairs(cache) do
-													data = CreateObject(data);
-													data.link = link;
-													if modID then data.modID = modID; end
-													MergeObject(questObject.g, data);
+												for _,item in ipairs(cache) do
+													item = CreateObject(item);
+													item.link = link;
+													if modID then item.modID = tonumber(modID); end
+													MergeObject(questObject.g, item);
 												end
 											end
 										else
@@ -12076,7 +12190,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 															item.g = {};
 															item.progress = 0;
 															item.total = 0;
-															item.OnUpdate = OnUpdateForItem;
 														end
 														for __,subdata in ipairs(data.g) do
 															MergeObject(item.g, subdata);
@@ -12094,7 +12207,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									return true;
 								end
 							end
-							
 							
 							local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
 							if timeRemaining and timeRemaining > 0 then
@@ -12150,6 +12262,20 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									end
 								end
 							end
+							
+							-- Resolve all symbolic links
+							if questObject.g and #questObject.g > 0 then
+								for j,item in ipairs(questObject.g) do
+									local resolved = ResolveSymbolicLink(item);
+									if resolved then
+										if not item.g then item.g = {}; end
+										for i,o in ipairs(resolved) do
+											MergeObject(item.g, o);
+										end
+									end
+								end
+							end
+							
 							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID, timeRemaining);
 							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
 							if poi.mapID ~= mapID then

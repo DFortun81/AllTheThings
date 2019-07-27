@@ -7,6 +7,10 @@ _.Zones =
 		n(-34,  {	-- World Quests
 			i(158151),	-- Zandalari Band
 			i(163857, {	-- Azerite Armor Cache
+				["sym"] = {
+					{"sub", "bfa_azerite_armor_chest" },
+				},
+				--[[
 				["g"] = {
 						-- PvP Items
 					{	-- 7th Legionnaire's Hood
@@ -612,6 +616,7 @@ _.Zones =
 						["itemID"] = 158054,	-- Shoalbreach Breastplate
 					},
 				},
+				]]--
 			}),
 	--[[	need to figure out modID/bonusID shit so the correct version of the weapon gets displayed
 			i(165863, {	-- Zandalari Weapons Cache
