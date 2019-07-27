@@ -91,6 +91,10 @@ _.Zones =
 					}),
 				}),
 				ach(13708),		-- Most Minis Wins
+				ach(13696, {	-- Scrappy's Best Friend
+					["description"] = "When you find Scrappy, use an |Cff0070ddEnergy Cell|r to revive him and then feed him two |CffffffffMechano-Treats|r.  He runs around after being revived, so if you can't find him try using a /tar macro in the general Rustbolt area.",
+					["coord"] = { 70.7, 36.3, 1462 },
+				}),
 				ach(13489, {	-- Secret Fish of Mechagon
 					i(167698),	-- Secret Fish Goggles
 					crit(1),	-- Bottom Feeding Stinkfish

@@ -208,7 +208,8 @@ _.Zones =
 					},
 				}),
 				n(155060, {	-- Doppel Ganger
-					["questID"] = 56419,	
+					["description"] = "This rare only spawns when the |cFFFFD700Cogfrenzy's Construction Frenzy|r quest is active and requires three |cFF0070ddPressure Relief Valves|r to summon.",
+					["questID"] = 56419,
 					["coord"] = { 81.0, 20.2, 1462 },
 					["isDaily"] = true,
 					["g"] = {
@@ -631,6 +632,7 @@ _.Zones =
 					},
 				}),
 				n(153000, {	-- Sparkqueen P'Emp
+					["description"] = "This rare only spawns when the |cFFFFD700Bugs, Lots of 'Em!|r quest is active.  When it spawns, Razak Ironsides will yell, \"|cFFff4040Wait till that bug gets close, then blow it to pieces!  I want nothing left.|r  Kill it before it gets close to Razak, or he'll kill it and you won't get loot or credit.",
 					["questID"] = 55810,
 					["coord"] = { 83.8, 22.0, 1462 },
 					["isDaily"] = true,
