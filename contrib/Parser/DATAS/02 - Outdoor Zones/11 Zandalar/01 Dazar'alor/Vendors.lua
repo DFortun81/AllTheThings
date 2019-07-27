@@ -8,6 +8,7 @@ _.Zones =
 		m(1163, {	-- Dazar'alor
 			n(-2, {  -- Vendors
 				n(149045, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
+					["currencyID"] = 1718,	-- Titan Residuum
 					["coord"] = { 53.90, 88.90, 1165 },
 					["g"] = bubbleDown({["modID"] = 23 }, {
 						i(155860), -- Spymaster's Wrap
