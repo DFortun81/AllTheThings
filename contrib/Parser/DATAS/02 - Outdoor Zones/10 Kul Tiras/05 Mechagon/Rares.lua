@@ -701,6 +701,7 @@ _.Zones =
 					["questID"] = 56182,
 					["coord"] = { 57.2, 58.6, 1462 },
 					["isDaily"] = true,
+					["description"] = "Must have the daily quest The Other Place or the Personal Time Displacer to access Alt Time.",
 					["g"] = {
 						crit(32, {	-- The Rusty Prince
 							["achievementID"] = 13470,	-- Rest in Pistons
