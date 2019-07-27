@@ -9689,17 +9689,7 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 					},
 				}),
 				app.CreateInstance(277, { 	-- Halls of Stone
-					['description'] = "The reward chest for completing the Tribunal of Ages Event in Halls of Stone is currently not interactable since 8.2. All items found within it are now considered Unobtainable.",
-					['g'] = {
-						app.CreateItemSource(17928, 37653),	-- Sword of Justice
-						app.CreateItemSource(17930, 37655),	-- Mantle of the Tribunal
-						app.CreateItemSource(16594, 35677),	-- Cosmos Vestments
-						app.CreateItemSource(16592, 35675),	-- Linked Armor of the Sphere
-						app.CreateItemSource(93759, 157564), 	-- Marbled Bracers
-						app.CreateItemSource(17931, 37656),	-- Raging Construct Bands
-						app.CreateItemSource(16593, 35676),	-- Constellation Leggings
-						app.CreateItemSource(17929, 37654),	-- Sabaton of the Ages
-					},
+					['description'] = "The reward chest for completing the Tribunal of Ages Event in Halls of Stone appears to be fixed! Please let us know if this is still a problem!",
 				}),
 			},
 		};
