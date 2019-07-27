@@ -1761,21 +1761,9 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				-- If this group has a droprate, add it to the display.
 				if group.dr then right = "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r " .. right; end
 				
-				-- If this group has specialization requirements, let's attempt to show the specialization icons.
-				local specs = group.specs;
-				if specs and #specs > 0 then
-					table.sort(specs);
-					for i,spec in ipairs(specs) do
-						local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-						if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
-					end
-				end
-				
 				-- Insert into the display.
-				local o = { prefix = indent, left = group.text or RETRIEVING_DATA, right = right };
-				if o.left == RETRIEVING_DATA or o.left:find("%[]") then o.working = true; end
-				if group.u then o.left = o.left .. " |T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group.u][1]] .. ":0|t"; end
-				if group.icon then o.prefix = o.prefix .. "|T" .. group.icon .. ":0|t "; end
+				local o = { prefix = indent, group = group, right = right };
+				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group.u][1]] .. ":0|t "; end
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
@@ -2414,20 +2402,46 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				local entries = {};
+				local entries, left, right = {};
 				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
 					tinsert(info, { left = "Contains:" });
 					if #entries < 25 then
 						for i,item in ipairs(entries) do
-							tinsert(info, { left = item.prefix .. item.left, right = item.right });
-							if item.working then working = true; end
+							left = item.group.text or RETRIEVING_DATA;
+							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							
+							-- If this group has specialization requirements, let's attempt to show the specialization icons.
+							right = item.right;
+							local specs = item.group.specs;
+							if specs and #specs > 0 then
+								table.sort(specs);
+								for i,spec in ipairs(specs) do
+									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+								end
+							end
+							tinsert(info, { left = item.prefix .. left, right = right });
 						end
 					else
 						for i=1,math.min(25, #entries) do
 							local item = entries[i];
-							tinsert(info, { left = item.prefix .. item.left, right = item.right });
-							if item.working then working = true; end
+							left = item.group.text or RETRIEVING_DATA;
+							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							
+							-- If this group has specialization requirements, let's attempt to show the specialization icons.
+							right = item.right;
+							local specs = item.group.specs;
+							if specs and #specs > 0 then
+								table.sort(specs);
+								for i,spec in ipairs(specs) do
+									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+								end
+							end
+							tinsert(info, { left = item.prefix .. left, right = right });
 						end
 						local more = #entries - 25;
 						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
@@ -3249,20 +3263,23 @@ local function AttachTooltipRawSearchResults(self, group)
 	if group then
 		-- If there was info text generated for this search result, then display that first.
 		if group.info then
+			local left, right;
 			for i,entry in ipairs(group.info) do
-				if entry.right then
-					self:AddDoubleLine(entry.left or " ", entry.right);
+				left = entry.left;
+				right = entry.right;
+				if right then
+					self:AddDoubleLine(left or " ", right);
 				elseif entry.r then
 					if entry.wrap then
-						self:AddLine(entry.left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
+						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
 					else
-						self:AddLine(entry.left, entry.r / 255, entry.g / 255, entry.b / 255);
+						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255);
 					end
 				else
 					if entry.wrap then
-						self:AddLine(entry.left, nil, nil, nil, 1);
+						self:AddLine(left, nil, nil, nil, 1);
 					else
-						self:AddLine(entry.left);
+						self:AddLine(left);
 					end
 				end
 			end
