@@ -10,7 +10,6 @@ _.Zones =
 				n(-34, {	-- World Quests
 					q(46209),	-- A Flare In The Dark
 					q(46932),	-- A Tad More Corruption
-					q(45988),	-- Ancient Bones
 					q(47061),	-- Apocron
 					q(46104),	-- Arachnid Toxicity
 					q(46761),	-- Brew Bandits
@@ -49,10 +48,13 @@ _.Zones =
 					q(46032),	-- The Tormented Return
 					q(46325),	-- The United Front
 					q(46063),	-- The Wailing Dead
-					q(45791),	-- War Materiel
 				}),
 ]]--
 				q(45473, {	-- A Giant Problem
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45988, {	-- Ancient Bones
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -253,6 +255,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(45973, {	-- Unchecked Power
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45791, {	-- War Materiel
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -13,6 +13,14 @@ _.Instances = { tier(7, {	-- Legion
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42757, {	-- Maw of Souls: Menace of the Seas
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42788, {	-- Maw of Souls: Return of the Beast
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 			}),
 			d(1, {		-- Normal
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King

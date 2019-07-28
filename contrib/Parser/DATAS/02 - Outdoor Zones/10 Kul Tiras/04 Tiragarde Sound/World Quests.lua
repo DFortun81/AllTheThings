@@ -528,11 +528,7 @@ _.Zones =
 						["collectible"] = false,
 						["lvl"] = 120,
 					}),
-					q(51317, {	-- Grounding the Grimestone
-						["collectible"] = false,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
+					
 					q(50299, {	-- Gryphon Wranglin'
 						["collectible"] = false,
 						["lvl"] = 120,
@@ -1167,10 +1163,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51891, {	-- Sythian the Swift
-						["collectible"] = false,
-						["lvl"] = 120,
-					}),
+					
 					q(48354, {	-- Tainted Shipments
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1778,6 +1771,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51317, {	-- Grounding the Grimestone
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(50299, {	-- Gryphon Wranglin'
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -1996,6 +1994,10 @@ _.Zones =
 								crit(4),	-- Blacktooth Brew
 							}),
 						},
+					}),
+					q(51891, {	-- Sythian the Swift
+						["collectible"] = false,
+						["lvl"] = 120,
 					}),
 					q(51849, {	-- Tempestria
 						["lvl"] = 120,

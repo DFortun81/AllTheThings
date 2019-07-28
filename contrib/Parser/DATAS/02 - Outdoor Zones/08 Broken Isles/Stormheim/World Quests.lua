@@ -6,87 +6,86 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
 			n(-34,    {	-- World Quests
---[[				n(-34, {	-- World Quests
-						q(45439),	-- An Invasion of... Murlocs?
-						q(41443),	-- Ancient Leystone Deposits
-						q(45839),	-- Assault on Stormheim
-						q(46010),	-- Bonecrusher Korgolath
-						q(41534),	-- Brambly Fjarnskaggl
-						q(41490),	-- Brimstone Destroyer
-						q(41489),	-- Brimstone Destroyer
-						q(41488),	-- Brimstone Destroyer
-						q(46011),	-- Colossal Infernal
-						q(43745),	-- Culling the Storm
-						q(42820),	-- DANGER: Aegir Wavecrusher
-						q(42806),	-- DANGER: Fjorlag, the Grave's Chill
-						q(42798),	-- DANGER: Huntress Estrid
-						q(42964),	-- DANGER: Lagertha
-						q(42963),	-- DANGER: Rulf Bonesnapper
-						q(42991),	-- DANGER: Runeseer Sigvid
-						q(42953),	-- DANGER: Soulbinder Halldora
-						q(41444),	-- Dark Leystone Deposits
-						q(41459),	-- Dense Leystone Outcropping
-						q(46012),	-- Fel Commander Urgoz
-						q(41570),	-- Felhide
-						q(41569),	-- Felhide
-						q(41568),	-- Felhide
-						q(41519),	-- Felwort
-						q(46013),	-- Firecaller Rok'duun
-						q(41296),	-- Fjarnskaggl Cluster
-						q(41547),	-- Fjarnskaggl Cluster
-						q(41299),	-- Flourishing Fjarnskaggl
-						q(41614),	-- Huge Stormrays
-						q(41275),	-- Huge Stormrays
-						q(41615),	-- Huge Stormrays
-						q(46015),	-- Idra'zuul
-						q(41505),	-- Leystone Basilisks
-						q(41506),	-- Leystone Basilisks
-						q(41507),	-- Leystone Basilisks
-						q(41274),	-- Lively Stormrays
-						q(41603),	-- Lively Stormrays
-						q(46016),	-- Magdrezoth
-						q(43752),	-- Oh, Ship!
-						q(41340),	-- Perfect Storm Drake Scale
-						q(41460),	-- Primal Leystone Outcropping
-						q(41536),	-- Pungent Fjarnskaggl
-						q(41276),	-- Rocket Boot Fishing
-						q(43722),	-- Sacred Bones
-						q(42270),	-- Scourge of the Skies
-						q(46017),	-- Shel'drozul
-						q(41300),	-- Singed Fjarnskaggl
-						q(41555),	-- Slab of Bacon
-						q(41556),	-- Slab of Bacon
-						q(41261),	-- Slab of Bacon
-						q(41343),	-- Solid Crabshell Fragment
-						q(41445),	-- Stormy Leystone Deposits
-						q(41442),	-- Striking Leystone Deposits
-						q(41298),	-- Supplies Needed: Fjarnskaggl
-						q(41317),	-- Supplies Needed: Leystone
-						q(41345),	-- Supplies Needed: Stormscales
-						q(43721),	-- The Helarjar Have Surfaced
-						q(42269),	-- The Soultakers
-						q(46264),	-- Their Eyes Are Upon Us
-						q(46021),	-- Thel'draz
-						q(41342),	-- Thick Bear Hide
-						q(42182),	-- To Battle!
-						q(43620),	-- WANTED: Egyl the Enduring
-						q(43621),	-- WANTED: Fathnyr
-						q(43622),	-- WANTED: Glimar Ironfist
-						q(43623),	-- WANTED: Hannval the Butcher
-						q(43624),	-- WANTED: Isel the Hammer
-						q(43438),	-- WANTED: Nameless King
-						q(43625),	-- WANTED: Nameless King
-						q(43626),	-- WANTED: Thane Irglov
-						q(43450),	-- WANTED: Tiptog the Lost
-						q(43628),	-- WANTED: Urgev the Flayer
-						q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
-						q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
-						q(41497),	-- Wild Leystone Seams
-						q(41297),	-- Work Order: Fjarnskaggl
-						q(41313),	-- Work Order: Leystone
-						q(41660),	-- Work Order: Skaggldrynk
-						q(41344),	-- Work Order: Stormscales
-					}),
+--[[
+				q(45439),	-- An Invasion of... Murlocs?
+				q(41443),	-- Ancient Leystone Deposits
+				q(45839),	-- Assault on Stormheim
+				q(46010),	-- Bonecrusher Korgolath
+				q(41534),	-- Brambly Fjarnskaggl
+				q(41490),	-- Brimstone Destroyer
+				q(41489),	-- Brimstone Destroyer
+				q(41488),	-- Brimstone Destroyer
+				q(46011),	-- Colossal Infernal
+				q(43745),	-- Culling the Storm
+				q(42820),	-- DANGER: Aegir Wavecrusher
+				q(42806),	-- DANGER: Fjorlag, the Grave's Chill
+				q(42798),	-- DANGER: Huntress Estrid
+				q(42964),	-- DANGER: Lagertha
+				q(42963),	-- DANGER: Rulf Bonesnapper
+				q(42991),	-- DANGER: Runeseer Sigvid
+				q(42953),	-- DANGER: Soulbinder Halldora
+				q(41444),	-- Dark Leystone Deposits
+				q(41459),	-- Dense Leystone Outcropping
+				q(46012),	-- Fel Commander Urgoz
+				q(41570),	-- Felhide
+				q(41569),	-- Felhide
+				q(41568),	-- Felhide
+				q(41519),	-- Felwort
+				q(46013),	-- Firecaller Rok'duun
+				q(41296),	-- Fjarnskaggl Cluster
+				q(41547),	-- Fjarnskaggl Cluster
+				q(41299),	-- Flourishing Fjarnskaggl
+				q(41614),	-- Huge Stormrays
+				q(41275),	-- Huge Stormrays
+				q(41615),	-- Huge Stormrays
+				q(46015),	-- Idra'zuul
+				q(41505),	-- Leystone Basilisks
+				q(41506),	-- Leystone Basilisks
+				q(41507),	-- Leystone Basilisks
+				q(41274),	-- Lively Stormrays
+				q(41603),	-- Lively Stormrays
+				q(46016),	-- Magdrezoth
+				q(43752),	-- Oh, Ship!
+				q(41340),	-- Perfect Storm Drake Scale
+				q(41460),	-- Primal Leystone Outcropping
+				q(41536),	-- Pungent Fjarnskaggl
+				q(41276),	-- Rocket Boot Fishing
+				q(43722),	-- Sacred Bones
+				q(42270),	-- Scourge of the Skies
+				q(46017),	-- Shel'drozul
+				q(41300),	-- Singed Fjarnskaggl
+				q(41555),	-- Slab of Bacon
+				q(41556),	-- Slab of Bacon
+				q(41261),	-- Slab of Bacon
+				q(41343),	-- Solid Crabshell Fragment
+				q(41445),	-- Stormy Leystone Deposits
+				q(41442),	-- Striking Leystone Deposits
+				q(41298),	-- Supplies Needed: Fjarnskaggl
+				
+				q(41345),	-- Supplies Needed: Stormscales
+				q(43721),	-- The Helarjar Have Surfaced
+				q(42269),	-- The Soultakers
+				q(46264),	-- Their Eyes Are Upon Us
+				q(46021),	-- Thel'draz
+				q(41342),	-- Thick Bear Hide
+				q(42182),	-- To Battle!
+				q(43620),	-- WANTED: Egyl the Enduring
+				q(43621),	-- WANTED: Fathnyr
+				q(43622),	-- WANTED: Glimar Ironfist
+				q(43623),	-- WANTED: Hannval the Butcher
+				q(43624),	-- WANTED: Isel the Hammer
+				q(43438),	-- WANTED: Nameless King
+				q(43625),	-- WANTED: Nameless King
+				q(43626),	-- WANTED: Thane Irglov
+				q(43450),	-- WANTED: Tiptog the Lost
+				q(43628),	-- WANTED: Urgev the Flayer
+				q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
+				q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
+				q(41497),	-- Wild Leystone Seams
+				q(41297),	-- Work Order: Fjarnskaggl
+				q(41313),	-- Work Order: Leystone
+				q(41660),	-- Work Order: Skaggldrynk
+				q(41344),	-- Work Order: Stormscales
 --]]				
 				q(43964, {	-- A Jarl's Feast
 					["lvl"] = 110,
@@ -243,14 +242,6 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
-				q(42757, {	-- Maw of Souls: Menace of the Seas
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
-				q(42788, {	-- Maw of Souls: Return of the Beast
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
 				q(40278, {	-- My Beasts's Bidding
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -323,6 +314,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43827, {	-- Stormwing the Portals
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41317, {	-- Supplies Needed: Leystone
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

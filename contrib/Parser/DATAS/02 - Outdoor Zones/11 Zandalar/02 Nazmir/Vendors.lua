@@ -7,6 +7,7 @@ _.Zones =
 		m(863, {	-- Nazmir
 			n(-2,   {	-- Vendors
 				n(126833, {	-- Blind Wunja <Medicine Woman>
+					["coord"] = { 35.4, 55.2, 863 },
 					["itemID"] = 163036,	-- Polished Pet Charm
 					["g"] = {
 						i(163506, {	-- Accursed Hexxer

@@ -9,7 +9,6 @@ _.Zones =
 --[[					
 				q(42024),	-- A Friend of My Enemy
 				q(43803),	-- A Giant Murloc Problem
-				q(44784),	-- Advanced Wanding
 				q(41545),	-- Aethril Cluster
 				q(41286),	-- Aethril Cluster
 				q(41290),	-- Aqueous Aethril
@@ -67,12 +66,10 @@ _.Zones =
 				q(41552),	-- Slab of Bacon
 				q(41435),	-- Smooth Leystone Deposits
 				q(41582),	-- Smooth Sunrunner Hide
-				q(46162),	-- Subjugator Val'rek
 				q(44050),	-- The Felsworn Must Fall
 				q(42112),	-- The Withered Return
 				q(41322),	-- Unscratched Hippogryph Scale
 				q(42636),	-- WANTED: Arcanist Shal'iman
-				q(43426),	-- WANTED: Brogozog
 				q(43607),	-- WANTED: Brogozog
 				q(43608),	-- WANTED: Captain Volo'ren
 				q(43609),	-- WANTED: Doomlord Kazrok
@@ -93,6 +90,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(42014, {	-- A Tainted Vintage
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44784, {	-- Advanced Wanding
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -322,6 +323,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46162, {	-- Subjugator Val'rek (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(41315, {	-- Supplies Needed: Leystone
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -411,6 +416,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(42620, {	-- WANTED: Arcavellus
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43426 ,{	-- WANTED: Brogozog
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

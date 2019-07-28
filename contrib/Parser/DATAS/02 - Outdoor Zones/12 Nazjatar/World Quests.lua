@@ -270,7 +270,7 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					crit(19, {	-- Medium Runelocked Chest: Purple
+					crit(11, {	-- Easy Runelocked Chest: Red
 						["achievementID"] = 13764,	-- Puzzle Performer
 					}),
 				},
@@ -310,7 +310,7 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					crit(15, {	-- Medium Runelocked Chest: Blue
+					crit(15, {	-- Easy Runelocked Chest: Blue
 						["achievementID"] = 13764,	-- Puzzle Performer
 					}),
 				},
@@ -320,7 +320,7 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					crit(14, {	-- Medium Runelocked Chest: Green
+					crit(14, {	-- Easy Runelocked Chest: Green
 						["achievementID"] = 13764,	-- Puzzle Performer
 					}),
 				},
@@ -350,7 +350,7 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					crit(5, {	-- Hard Runelocked Chest: Red
+					crit(19, {	-- Medium Runelocked Chest: Red
 						["achievementID"] = 13764,	-- Puzzle Performer
 					}),
 				},
@@ -360,7 +360,7 @@ _.Zones =
 				["collectible"] = false,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
-					crit(10, {	-- Medium Runelocked Chest: Yellow
+					crit(10, {	-- Easy Runelocked Chest: Yellow
 						["achievementID"] = 13764,	-- Puzzle Performer
 					}),
 				},
@@ -371,6 +371,16 @@ _.Zones =
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(9, {	-- Hard Runelocked Chest: Blue
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
+				},
+			}),
+			q(56018, {	-- Runelocked Chest
+				["lvl"] = 120,
+				["collectible"] = false,
+				["sourceQuest"] = 56248,	-- Treasure Tale
+				["g"] = {
+					crit(8, {	-- Hard Runelocked Chest: Green
 						["achievementID"] = 13764,	-- Puzzle Performer
 					}),
 				},
@@ -395,6 +405,16 @@ _.Zones =
 					}),
 				},
 			}),
+			q(56021, {	-- Runelocked Chest
+				["lvl"] = 120,
+				["collectible"] = false,
+				["sourceQuest"] = 56248,	-- Treasure Tale
+				["g"] = {
+					crit(5, {	-- Hard Runelocked Chest: Red
+						["achievementID"] = 13764,	-- Puzzle Performer
+					}),
+				},
+			}),
 			q(56022, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["collectible"] = false,
@@ -404,18 +424,6 @@ _.Zones =
 					}),
 				},
 			}),
-			--[[ -- this one has a typo in the questID. Need to figure out what it really is
-			q(56223, {	-- Runelocked Chest
-				["lvl"] = 120,
-				["collectible"] = false,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(12, {	-- Medium Runelocked Chest: Purple
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
-			}),
-			]]--
 			q(57331, {	-- Salvage Operations
 				["collectible"] = false,
 				["lvl"] = 120,

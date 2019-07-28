@@ -966,11 +966,7 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(53724, {	-- Shadow Hunter Mutumba
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
+				
 				q(51140, {	-- Share the Wealth
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1799,6 +1795,11 @@ _.Zones =
 					q(52315, {	-- Severus the Outcast
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(53724, {	-- Shadow Hunter Mutumba
+						["collectible"] = false,
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51627, {	-- Shell Game
 						["lvl"] = 120,

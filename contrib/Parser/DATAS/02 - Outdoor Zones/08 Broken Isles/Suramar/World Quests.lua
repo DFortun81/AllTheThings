@@ -63,7 +63,6 @@ _.Zones =
 				q(44016),	-- WANTED: Cadraeus
 				q(44030),	-- WANTED: Guardian Thor'el
 				q(44021),	-- WANTED: Hertha Grimdottir
-				q(44019),	-- WANTED: Lieutenant Strathmar
 				q(44027),	-- WANTED: Magister Phaedris
 				q(44015),	-- WANTED: Mal'Dreth the Corruptor
 				q(44026),	-- WANTED: Mal'Dreth the Corruptor
@@ -365,6 +364,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44028, {	-- WANTED: Lieutenant Strathmar
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44019, {	-- WANTED: Lieutenant Strathmar
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
