@@ -555,7 +555,9 @@ _.Zones =
 					i(169504),	-- Recipe: Greater Mystical Cauldron (Rank 3)
 					i(169492),	-- Recipe: Potion of Empowered Proximity (Rank 3)
 					i(169494),	-- Recipe: Potion of Focused Resolve (Rank 3)
-					i(169493),	-- Recipe: Potion of Reconstitution (Rank 3)
+					i(169493, {	-- Recipe: Potion of Reconstitution (Rank 3)
+						["u"] = 1,	-- NYI
+					}),
 				},
 			}),
 			n(153024, {	-- Suva
