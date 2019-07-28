@@ -717,24 +717,29 @@ _.Zones =
 							}),
 							q(25089, {	-- Beyond the Graves
 								["qg"] = 2307,	-- Caretaker Caice
-								["sourceQuests"] = { 24960 },	-- The Wakening
+								["coord"] = { 45.9, 80.4, 465 },
 								["races"] = { 5 },	-- undead
+								["sourceQuests"] = { 24960 },	-- The Wakening
 							}),
 							q(28652, {	-- Caretaker Caice
 								["qg"] = 1568,	-- Undertaker Mordo
-								["sourceQuests"] = { 26799 },	-- Those That Couldn't Be Saved
+								["coord"] = { 43.4, 79.9, 465 },
 								["races"] = { 5 },	-- undead
+								["sourceQuests"] = { 26799 },	-- Those That Couldn't Be Saved
+								["isBreadcrumb"] = true,
 							}),
-							q(3096, {	-- Encrypted Scroll
+							q(3096,  {	-- Encrypted Scroll
 								["u"] = 40,
 								["qg"] = 1569,	-- Shadow Priest Sarvis
 								["races"] = { 5 },	-- undead
 								["classes"] = { 4 },	-- rogue
-							}),							q(24959, {	-- Fresh out of the Grave
+							}),
+							q(24959, {	-- Fresh out of the Grave
 								["qg"] = 49044,	-- Agatha
+								["coord"] = { 40.7, 78.4, 465 },
 								["races"] = { 5 },	-- undead
 							}),
-							q(5650, {	-- Garments of Darkness
+							q(5650,  {	-- Garments of Darkness
 								["u"] = 40,
 								["races"] =  { 5 },	-- Undead
 								["classes"] = { 5 },	-- Priest
@@ -742,14 +747,14 @@ _.Zones =
 									un(2, i(16607)),	-- Garments of Darkness
 								},
 							}),
-							q(3098, {	-- Glyphic Scroll
+							q(3098,  {	-- Glyphic Scroll
 								["u"] = 40,
 								["qg"] = 1569,	-- Shadow Priest Sarvis
 								["sourceQuests"] = { 26800 },	-- Recruitment
 								["classes"] = { 8 },	-- mage
 								["races"] = { 5 },	-- undead
 							}),
-							q(3097, {	-- Hallowed Scroll
+							q(3097,  {	-- Hallowed Scroll
 								["u"] = 40,
 								["qg"] = 1569,	-- Shadow Priest Sarvis
 								["sourceQuests"] = { 26800 },	-- Recruitment
@@ -759,7 +764,7 @@ _.Zones =
 									10,	-- Blood Elf
 								},
 							}),
-							q(1822, {	-- Heirloom Weapon
+							q(1822,  {	-- Heirloom Weapon
 								["u"] = 40,
 								["races"] = HORDE_ONLY,
 								["classes"] = { 1 },	-- Warrior
@@ -771,6 +776,7 @@ _.Zones =
 								},
 							}),
 							q(24965, {	-- Magic Training
+								["u"] = 40,
 								["qg"] = 2124,	-- Isabella
 								["sourceQuests"] = { 3098 },	-- Glyphic Scroll
 								["classes"] = { 8 },	-- Mage
@@ -795,6 +801,7 @@ _.Zones =
 								["sourceQuests"] = { 26801 },	-- Scourge on our Perimeter
 							}),
 							q(24966, {	-- Of Light and Shadows
+								["u"] = 40,
 								["qg"] = 2123,	-- Dark Cleric Duesten
 								["sourceQuests"] = { 3097 },	-- Hallowed Scroll
 								["races"] = { 5 },	-- undead
@@ -802,26 +809,30 @@ _.Zones =
 							}),
 							q(26800, {	-- Recruitment
 								["qg"] = 26800,	-- Deathguard Saltain
-								["sourceQuests"] = { 25089 },	-- Beyond the Graves
+								["coord"] = { 49.9, 56.3, 465 },
 								["races"] = { 5 },	-- undead
+								["sourceQuests"] = { 25089 },	-- Beyond the Graves
 							}),
-							q(26801, {	-- Scourge on our Perimeter
+							q(26801, {	-- Scourge on our Perimeter -- aa
 								["qg"] = 1569,	-- Shadow Priest Sarvis
 								["coord"] = { 46.6, 58.8, 465 },
 								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 28653 },	-- Shadow Priest Sarvis
 							}),
 							q(28653, {	-- Shadow Priest Sarvis
 								["qg"] = 1740,	-- Deathguard Saltain
-								["sourceQuests"] = { 26800 },	-- Recruitment
+								["coord"] = { 49.9, 56.3, 465 },
 								["races"] = { 5 },	-- undead
+								["sourceQuests"] = { 26800 },	-- Recruitment
+								["isBreadcrumb"] = true,
 							}),
-							q(3095, {	-- Simple Scroll
+							q(3095,  {	-- Simple Scroll
 								["u"] = 40,
 								["qg"] = 1569,	-- Shadow Priest Sarvis
 								["races"] = { 5 },	-- undead
 								["classes"] = { 1 },	-- warrior
 							}),
-							q(3099, {	-- Tainted Scroll
+							q(3099,  {	-- Tainted Scroll
 								["u"] = 40,
 								["qg"] = 1569,	-- Shadow Priest Sarvis
 								["races"] = { 5 },	-- undead
@@ -841,6 +852,7 @@ _.Zones =
 							}),
 							q(28608, {	-- The Shadow Grave
 								["qg"] = 1568,	-- Undertaker Mordo
+								["coord"] = { 43.4, 79.9, 465 },
 								["sourceQuests"] = { 24959 },	-- Fresh out of the Grave
 								["races"] = { 5 },	-- undead
 							}),
@@ -852,13 +864,15 @@ _.Zones =
 							}),
 							q(24960, {	-- The Wakening
 								["qg"] = 2307,	-- Caretaker Caice
-								["sourceQuests"] = { 28652 },	-- Caretaker Caice
+								["coord"] = { 45.9, 80.4, 465 },
 								["races"] = { 5 },	-- undead
+								["sourceQuests"] = { 28652 },	-- Caretaker Caice
 							}),
 							q(26799, {	-- Those That Couldn't Be Saved
 								["qg"] = 1568,	-- Undertaker Mordo
-								["sourceQuests"] = { 28608 },	-- The Shadow Grave
+								["coord"] = { 43.4, 79.9, 465 },
 								["races"] = { 5 },	-- undead
+								["sourceQuests"] = { 28608 },	-- The Shadow Grave
 							}),
 							q(24972, {	-- Vital Intelligence
 								["qg"] = 1569,	-- Shadow Priest Sarvis
