@@ -145,6 +145,7 @@ _.Zones =
 				}),
 				q(485, {	-- Find OOX-09/HL!
 					--["itemID"] = 8704
+					["icon"] = "Interface\\Icons\\inv_egg_05",
 					["description"] = "The item that starts this quest drops from any mob in The Hinterlands.",
 				}),
 				q(26210, {	-- Gammerita, Mon!
