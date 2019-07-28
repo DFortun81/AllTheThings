@@ -543,6 +543,26 @@ _.Zones =
 					un(1, q(49675)),	-- showing in /attwq as [Quest 49675] no record of the quest found on Wowhead
 					un(1, q(49695)),	-- showing in /attwq as [Quest 49695] no record of the quest found on Wowhead
 				}),
+				{
+					["itemID"] = 165869,	-- Nazmir Expeditionary Equipment Cache
+					["sym"] = {
+						-- Include the one extra.
+						{"select", "itemID", 166672},	-- Bloodhunter's Drape
+						{"finalize"},	-- Push the items to the finalized list.
+						
+						{"select", "mapID", 863},	-- Tiragarde Sound
+						{"pop"},	-- Discard the Map Header and acquire the children.
+						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"pop"},	-- Discard the World Quests Header and acquire the children.
+						{"is", "npcID" },	-- Select the Item Set Headers.
+						{"pop"},	-- Discard the Item Set Header and acquire the children.
+						{"is", "itemID" },	-- Select the Items.
+						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
+						
+						{"merge"},	-- Merge the finalized items back into the processing queue.
+						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+					},
+				},
 				i(158116),	-- Bonehex Claws
 				i(158125),	-- Bonehex Warmaul
 				i(158126),	-- Dazar'alor Polearm
@@ -622,7 +642,6 @@ _.Zones =
 					i(157901),	-- Bone-Fetished Greatbelt
 					i(157899),	-- Bone-Fetished Wargreaves
 					i(157895),	-- Bone-Fetished Stompers
-					i(161041),	-- Gutrip's Tramplers
 				}),
 			}),
 		}),

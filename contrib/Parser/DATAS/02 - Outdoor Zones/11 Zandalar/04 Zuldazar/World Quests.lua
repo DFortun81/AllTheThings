@@ -529,6 +529,38 @@ _.Zones =
 						["collectible"] = false,
 					}),
 				}),
+				{
+					["itemID"] = 165863,	-- Zandalari Weapons Cache
+					["sym"] = {
+						{"select", "mapID", 862},	-- Zuldazar
+						{"pop"},	-- Discard the Map Header and acquire the children.
+						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"pop"},	-- Discard the World Quests Header and acquire the children.
+						{"is", "itemID" },	-- Select the Items.
+						{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
+						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+					},
+				},
+				{
+					["itemID"] = 165866,	-- Zandalari Empire Equipment Cache
+					["sym"] = {
+						-- Include the one extra.
+						{"select", "itemID", 158150},	-- Loa-Pledged Drape
+						{"finalize"},	-- Push the items to the finalized list.
+						
+						{"select", "mapID", 862},	-- Zuldazar
+						{"pop"},	-- Discard the Map Header and acquire the children.
+						{"where", "npcID", -34 },	-- Select the World Quests Header.
+						{"pop"},	-- Discard the World Quests Header and acquire the children.
+						{"is", "npcID" },	-- Select the Item Set Headers.
+						{"pop"},	-- Discard the Item Set Header and acquire the children.
+						{"is", "itemID" },	-- Select the Items.
+						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
+						
+						{"merge"},	-- Merge the finalized items back into the processing queue.
+						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+					},
+				},
 				i(158116),	-- Bonehex Claws
 				i(158125),	-- Bonehex Warmaul
 				i(158126),	-- Dazar'alor Polearm
@@ -556,6 +588,7 @@ _.Zones =
 				i(158128, {	-- Whisperfen Polearm
 					["races"] = HORDE_ONLY,
 				}),
+				i(158131),	-- Whisperfen Staff
 				i(158112),	-- Zandalari Greatbow
 				i(158133),	-- Zandalari Machete
 				i(158129),	-- Zandalari Warstaff
