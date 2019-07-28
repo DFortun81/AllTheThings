@@ -39,7 +39,7 @@ _.Zones =
 				}),
 				n(51058, { 	-- Aphis
 					["description"] = "This rare is located insde the nearby cave.",
-					["coord"] = { 62.6, 35.4, 22},
+					["coord"] = { 62.6, 35.4, 22 },
 					["g"] = {
 						i(9875),	-- Sorcerer Sash
 						i(9886),	-- Huntsman's Bands
@@ -55,7 +55,7 @@ _.Zones =
 						i(7454),	-- Knight's Breastplate
 					},
 				}),
-				n(1849, { 	-- Dreadwhisper
+				n(1849,  { 	-- Dreadwhisper
 					["coord"] = { 64.0, 56.6, 22 },
 					["g"] = {
 						i(7457),	-- Knight's Gauntlets
@@ -96,7 +96,7 @@ _.Zones =
 						i(9880),	-- Sorcerer Gloves
 					},
 				}),
-				n(1847, { 	-- Foulmane
+				n(1847,  { 	-- Foulmane
 					["description"] = "This rare is located inside Sorrow Hill Crypt.",
 					["coord"] = { 54.0, 80.4, 22 },
 					["g"] = {
@@ -217,7 +217,7 @@ _.Zones =
 						i(9877),	-- Sorcerer Cloak
 					},
 				}),
-				n(1848, { 	-- Lord Maldazzar
+				n(1848,  { 	-- Lord Maldazzar
 					["coord"] = { 65.6, 47.6, 22 },
 					["g"] = {
 						i(9287),	-- Field Plate Gauntlets
@@ -337,7 +337,7 @@ _.Zones =
 						i(7494),	-- Captain's Waistguard
 					},
 				}),
-				n(1850, { 	-- Putridius
+				n(1850,  { 	-- Putridius
 					["coord"] = { 69.6, 73.2, 22 },
 					["g"] = {
 						i(7494),	-- Captain's Waistguard
@@ -370,7 +370,7 @@ _.Zones =
 						i(7484),	-- Ranger Wristguards
 					},
 				}),
-				n(1841, { 	-- Scarlet Executioner
+				n(1841,  { 	-- Scarlet Executioner
 					["coord"] = { 50.8, 40.6, 22 },
 					["groups" ]= {
 						i(7462),	-- Knight's Girdle
@@ -418,7 +418,7 @@ _.Zones =
 						i(9879),	-- Sorcerer Bracelets
 					},
 				}),
-				n(1839, { 	-- Scarlet High Clerist
+				n(1839,  { 	-- Scarlet High Clerist
 					["coord"] = { 41.6, 53.2, 22 },
 					["g"] = {
 						i(9856),	-- Archer's Boots
@@ -463,7 +463,7 @@ _.Zones =
 						i(7444),	-- Sentinel Boots
 					},
 				}),
-				n(1838, { 	-- Scarlet Interrogator
+				n(1838,  { 	-- Scarlet Interrogator
 					["coord"] = { 45.0, 52.0, 22 },
 					["g"] = {
 						i(9871),	-- Renegade Leggings
@@ -514,7 +514,7 @@ _.Zones =
 						i(9848),	-- Conjurer's Gloves
 					},
 				}),
-				n(1837, { 	-- Scarlet Judge
+				n(1837,  { 	-- Scarlet Judge
 					["coord" ] = { 69.2, 49.8, 22 },
 					["g"] = {
 						i(9854),	-- Archer's Jerkin
@@ -555,7 +555,7 @@ _.Zones =
 						i(9879),	-- Sorcerer Bracelets
 					},
 				}),
-				n(1885, { 	-- Scarlet Smith
+				n(1885,  { 	-- Scarlet Smith
 					["coord"] = { 53.8, 44.2, 22 },
 					["g"] = {
 						i(12719),	-- Plans: Runic Plate Leggings
@@ -604,7 +604,7 @@ _.Zones =
 						i(7435),	-- Twilight Mantle
 					},
 				}),
-				n(1851, { 	-- The Husk
+				n(1851,  { 	-- The Husk
 					["coord"] = { 64.0, 83.6, 22 },
 					["g"] = {
 						i(7437),	-- Twilight Cuffs

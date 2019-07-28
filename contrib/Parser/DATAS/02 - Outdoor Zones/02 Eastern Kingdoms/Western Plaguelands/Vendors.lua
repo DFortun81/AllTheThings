@@ -7,6 +7,7 @@ _.Zones =
 		m(22, {	-- Western Plaguelands
 			n(-2, {	-- Vendors
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
+					["coord"] = { 42.8, 83.8, 22 },
 					["description"] = "To view this vendor's shop, you need to be at least Honored with Argent Dawn.  Although this vendor is in an Alliance area, Horde players may still purchase from this NPC provided they have the required reputation.",
 					["g"] = {
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
@@ -28,6 +29,7 @@ _.Zones =
 					},
 				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>
+					["coord"] = { 43.1, 84.3, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(15741),	-- Pattern: Stormshroud Pants
@@ -35,6 +37,7 @@ _.Zones =
 					},
 				}),
 				n(11278,{	-- Magnus Frostwake
+					["coord"] = { 68.0, 77.6, 22 },
 					["g"] = {
 						i(8030),	-- Plans: Ebon Shiv
 						i(12823), 	-- Plans: Huge Thorium Battleaxe

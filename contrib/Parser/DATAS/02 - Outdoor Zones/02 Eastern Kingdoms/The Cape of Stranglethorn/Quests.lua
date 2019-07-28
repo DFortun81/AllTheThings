@@ -768,6 +768,7 @@ _.Zones =
 				q(28750, {	-- The Battle for Andorhal
 					["qg"] = 49636,	-- Arcanist Arman
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(26696, {	-- The Call of Kalimdor
 					["qg"] = 48797,
