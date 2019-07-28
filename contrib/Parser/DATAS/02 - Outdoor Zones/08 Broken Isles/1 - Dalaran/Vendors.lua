@@ -1493,8 +1493,13 @@ _.Zones =
 							["description"] = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
 						}),
 						i(157796, {	-- Purified Titan Essence
-							["description"] = "If you still have this item, refer to the BoA tokens to know what you can get for your class. If you already know all of the legendaries for your class, this item will give you a random BoA token instead.",
 							["u"] = 1,
+							["sym"] = {
+								{ "select", "npcID", 106655 },	-- Arcanomancer Vridiel <Blacksmithing Trainer>
+								{ "pop" },	-- Discard the header and acquire the children.
+								{ "is", "itemID" },	-- Select the Items.
+								{ "exclude", "itemID", 154879, 157796 },	-- Exclude the Purified Titan Essence and the Awoken Titan Essence
+							},
 						}),
 						i(147294, {	-- Bone-Wrought Coffer of the Damned [Death Knight]
 							i(132459),	-- Perseverance of the Ebon Martyr

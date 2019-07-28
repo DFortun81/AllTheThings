@@ -1330,6 +1330,7 @@ subroutines = {
 			-- Legion Legendaries
 			{"select", "npcID", 106655},	-- Arcanomancer Vridiel
 			{"pop"},	-- Remove Arcanomancer Vridiel and push his children into the processing queue.
+			{ "exclude", "itemID", 154879, 157796 },	-- Exclude the Purified Titan Essence and the Awoken Titan Essence
 			{"pop"},	-- Remove the Legendary Tokens and push the children into the processing queue.
 			{"finalize"},	-- Push the items to the finalized list.
 			
