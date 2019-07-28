@@ -351,15 +351,12 @@ _.Zones =
 							i(153214, {	-- Relinquished Ring
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_FINGER"} },	-- Rings Only!
-								},
-								["groups"] = {
-									-- These items are from world drops / world quests that can't be sourced perfectly... yet
-									i(150989),	-- Foul-Sadist's Seal
-									i(134367),	-- Legionnaire's Band
-									i(146858),	-- Malefic Inquisitor's Ring
-									i(134279),	-- Nightborne Signet Ring
-									i(147020),	-- Scaled Band of Servitude
-									i(121799),	-- Tel'anor Magister's Ring
+									{"select", "mapID", 619},	-- The Broken Isles
+									{"pop"},	-- Discard the Map Headers and acquire all of their children.
+									{"where", "npcID", -34},	-- Select only the World Quest Headers
+									{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
+									{"where", "npcID", -385},	-- Select only the Finger Header
+									{"pop"},	-- Discard the item set Headers and acquire all of their children.
 								},
 							}),
 							i(153216, {	-- Relinquished Trinket
@@ -394,7 +391,6 @@ _.Zones =
 									i(137406),	-- Terrorbound Nexus
 									
 									i(136750),	-- Vault Guardian's Talisman
-									i(137486),	-- Windscar Whetstone
 								},
 								]]--
 							}),

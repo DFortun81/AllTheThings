@@ -445,6 +445,7 @@ _.Zones =
 				}),
 				n(-385, {	-- Finger
 					i(134367),	-- Legionnaire's Band
+					i(146858),	-- Malefic Inquisitor's Ring
 					i(134279),	-- Nightborne Signet Ring
 					i(121799),	-- Tel'anor Magister's Ring
 				}),

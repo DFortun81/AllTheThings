@@ -58,6 +58,9 @@ _.Zones =
 					
 				}),
 				]]--
+				n(-385, {	-- Finger
+					i(150989),	-- Foul-Sadist's Seal
+				}),
 				n(-387, {	-- Relic
 					i(151009),	-- Annihilan Heart
 					i(151005),	-- Dram of Light
