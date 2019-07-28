@@ -243,6 +243,15 @@ _.Zones =
 					i(136739),	-- Shadow Stalker Boots
 				}),
 				n(-45,  {	-- Mail
+					n(-3340, {	-- Isle Watcher's Set
+						i(136757);	-- Isle Watcher's Helm
+						i(136759);	-- Isle Watcher's Spaulders
+						i(136760);	-- Isle Watcher's Hauberk
+						i(136754);	-- Isle Watcher's Bracers
+						i(136755);	-- Isle Watcher's Grips
+						i(136753);	-- Isle Watcher's Cinch
+						i(136756);	-- Isle Watcher's Boots
+					}),
 					n(-3274, {	-- Ley Dragoon Set
 						i(134299),	-- Ley Dragoon's Headgear
 						i(134301),	-- Ley Dragoon's Spaulders
@@ -264,14 +273,14 @@ _.Zones =
 						i(134342),	-- Manaburst Greaves
 					}),
 					n(-3277, {	-- Mardum Chain Set
-							i(134387),	-- Mardum Chain Helm
-							i(134389),	-- Mardum Chain Pauldrons
-							i(134390),	-- Mardum Chain Vest
-							i(134384),	-- Mardum Chain Wristclamp
-							i(134385),	-- Mardum Chain Gloves
-							i(134383),	-- Mardum Chain Waistguard
-							i(134388),	-- Mardum Chain Leggings
-							i(134386),	-- Mardum Chain Boots
+						i(134387),	-- Mardum Chain Helm
+						i(134389),	-- Mardum Chain Pauldrons
+						i(134390),	-- Mardum Chain Vest
+						i(134384),	-- Mardum Chain Wristclamp
+						i(134385),	-- Mardum Chain Gloves
+						i(134383),	-- Mardum Chain Waistguard
+						i(134388),	-- Mardum Chain Leggings
+						i(134386),	-- Mardum Chain Boots
 					}),
 					n(-3276, {	-- Sea Stalker's Set
 						i(134255),	-- Sea Stalker's Hood

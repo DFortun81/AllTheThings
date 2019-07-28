@@ -697,6 +697,7 @@ AllTheThings.L = {
 		[-3310] = "Interface\\Icons\\Achievement_Garrison_blueprint_large",			-- Garrison Architect
 		[-3311] = "Interface\\Icons\\achievement_bg_killflagcarriers_grabflag_capit", -- Call To Arms [LFD Queue]
 		[-3314] = "Interface\\Icons\\inv_plate_draenorlfr_c_01helm",				-- Storm-Tempered Set
+		[-3340] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",			-- Isle Watcher's Set
 		
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",					-- Instance Item Sets, PvP
 		[-4190] = "Interface\\Icons\\ExpansionIcon_BurningCrusade",
@@ -1533,6 +1534,8 @@ AllTheThings.L = {
 		[-3337] = "Twilight Dragon",
 		[-3338] = ISLANDS_HEADER,													-- Island Expeditions
 		[-3339] = LOOT_JOURNAL_ITEM_SETS,											-- Item Sets
+-- Additional Mail WQ Gear
+		[-3340] = "Isle Watcher's Set";
 
 -- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
