@@ -7,6 +7,163 @@ _.Zones =
 		m(1462, {	-- Mechagon
 			n(-16,  {	-- Rares
 				-- TODO:: See Hidden Quest Triggers.lua for remaining first kill id's needed
+				n(150306, {	-- Drill Rig
+					["description"] = "These rares are only available when the Drill Rig is an active construction project.  Speak to |Cff00991aWaren Gearheart|r |Cffffffff(73.0, 33.5)|r to see which construction projects are available.\r\rEach rare spawn is accompanied by a specific zonewide announcement.  Hover over each rare in the list to see its announcement.",
+					["g"] = {
+						n(153200, {	-- Boilburn
+							["questID"] = 55857, -- no second questID
+							["coord"] = { 51.1, 50.4, 1462 },
+							["isDaily"] = true,
+							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							["g"] = {
+								crit(25, {	-- Boilburn
+									["achievementID"] = 13470,	-- Rest in Pistons
+								}),
+								i(167042, {	-- Blueprint: Scrap Trap
+									["questID"] = 55030,
+									["g"] = {
+										crit(2, {	-- Scrap Trap
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
+								i(169691, {    -- Vinyl: Depths of Ulduar
+									["questID"] = 56518, -- Vinyl: Depths of Ulduar
+									["g"] = {
+										crit(5, {    -- Depths of Ulduar
+											["achievementID"] = 13686,    -- Junkyard Melomanic
+										}),
+									},
+								}),
+							},
+						}),
+						n(154739, {	-- Caustic Mechaslime
+							["questID"] = 56368,
+							["coords"] = {
+								{ 66.5, 58.9, 1462 },	-- Cave Entrance
+								--{ 51.3, 47.8, 1462 },
+							},
+							["isDaily"] = true,
+							["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							["g"] = {
+								crit(34, {	-- Caustic Mechaslime
+									["achievementID"] = 13470,	-- Rest in Pistons
+								}),
+								i(169170, {	-- Blueprint: Utility Mechanoclaw
+									["questID"] = 55078, -- Blueprint: Utility Mechanoclaw
+									["g"] = {
+										crit(30, {	-- Utility Mechanoclaw
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
+							},
+						}),
+						n(150342, {	-- Earthbreaker Gulroc
+							["questID"] = 55814,
+							["coord"] = { 63.9, 24.4, 1462 },
+							["isDaily"] = true,
+							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							["g"] = {
+								crit(21, {	-- Earthbreaker Gulroc
+									["achievementID"] = 13470,	-- Rest in Pistons
+								}),
+								i(167042, {	-- Blueprint: Scrap Trap
+									["questID"] = 55030,
+									["g"] = {
+										crit(2, {	-- Scrap Trap
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
+							},
+						}),
+						n(153205, {	-- Gemicide
+							["questID"] = 55855,
+							["coord"] = { 57.6, 69.2, 1462 },
+							["isDaily"] = true,
+							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							["g"] = {
+								crit(23, {	-- Gemicide
+									["achievementID"] = 13470,	-- Rest in Pistons
+								}),
+								i(169691, {    -- Vinyl: Depths of Ulduar
+									["questID"] = 56518, -- Vinyl: Depths of Ulduar
+									["g"] = {
+										crit(5, {    -- Depths of Ulduar
+											["achievementID"] = 13686,    -- Junkyard Melomanic
+										}),
+									},
+								}),
+							},
+						}),
+						n(154701, {	-- Gorged Gear-Cruncher
+							["questID"] = 56367,
+							["coords"] = {
+								{ 73.2, 54.2, 1462 },	-- Cave Entrance
+								--{ 51.3, 47.8, 1462 },
+							},
+							["isDaily"] = true,
+							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							["g"] = {
+								crit(33, {	-- Gorged Gear-Cruncher
+									["achievementID"] = 13470,	-- Rest in Pistons
+								}),
+								i(167846, {	-- Blueprint: Mechano-Treat
+									["questID"] = 55061,
+									["g"] = {
+										crit(9, {	-- Mechano-Treat
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
+							},
+						}),
+						n(153206, {	-- Ol' Big Tusk
+							["questID"] = 55853,
+							["coord"] = { 55.6, 39.5, 1462 },
+							["isDaily"] = true,
+							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							["g"] = {
+								crit(22, {	-- Ol' Big Tusk
+									["achievementID"] = 13470,	-- Rest In Pistons
+								}),
+								i(167846, {	-- Blueprint: Mechano-Treat
+									["questID"] = 55061,
+									["g"] = {
+										crit(9, {	-- Mechano-Treat
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
+								i(169691, {	-- Vinyl: Depths of Ulduar
+									["questID"] = 56518, -- Vinyl: Depths of Ulduar
+									["g"] = {
+										crit(5, {    -- Depths of Ulduar
+											["achievementID"] = 13686,    -- Junkyard Melomanic
+										}),
+									},
+								}),
+								i(170466),  -- Junkyard Motivator
+							},
+						}),
+						n(152113, {	-- The Kleptoboss
+							["questID"] = 55858,
+							["coords"] = {
+								{ 68.0, 48.0, 1462 },	-- Cave Entrance
+								--{ 51.3, 47.8, 1462 },
+							},
+							["isDaily"] = true,
+							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							["g"] = {
+								crit(26, {	-- The Kleptoboss
+									["achievementID"] = 13470,	-- Rest in Pistons
+								}),
+								i(169886),	-- Spraybot 0D
+							},
+						}),
+					},
+				}),
 				i(168908, {	-- Blueprint: Experimental Adventurer Augment
 					["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
 					["questID"] = 56087,
@@ -27,10 +184,11 @@ _.Zones =
 						i(168823),	-- Rusty Mechanocrawler
 					},
 				}),
-				n(150394, {	-- Armored Vaultbot	-- possibly 154968
+				n(150394, {	-- Armored Vaultbot
+					["creatureID"] = 154968,	-- future ID
 					["questID"] = 55546,
 					["isDaily"] = true,
-					["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat",
+					["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat.",
 					["coords"] = {
 						{ 53.6, 46.4, 1462 },
 						{ 53.8, 49.4, 1462 },
@@ -56,33 +214,7 @@ _.Zones =
 								}),
 							},
 						}),
-					},
-				}),
-				n(153200, {	-- Boilburn
-					["questID"] = 55857, -- no second questID
-					["coord"] = { 51.1, 50.4, 1462 },
-					["isDaily"] = true,
-					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-					["g"] = {
-						crit(25, {	-- Boilburn
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(167042, {	-- Blueprint: Scrap Trap
-							["questID"] = 55030,
-							["g"] = {
-								crit(2, {	-- Scrap Trap
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
-						i(169691, {    -- Vinyl: Depths of Ulduar
-                            ["questID"] = 56518, -- Vinyl: Depths of Ulduar
-                            ["g"] = {
-                                crit(5, {    -- Depths of Ulduar
-                                    ["achievementID"] = 13686,    -- Junkyard Melomanic
-                                }),
-                            },
-                        }),
+						i(170072),	-- Armored Vaultbot (PET!)
 					},
 				}),
 				n(151308, {	-- Boggac Skullbash
@@ -108,28 +240,6 @@ _.Zones =
 							["questID"] = 55061,
 							["g"] = {
 								crit(9, {	-- Mechano-Treat
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
-					},
-				}),
-				n(154739, {	-- Caustic Mechaslime
-					["questID"] = 56368,
-					["coords"] = {
-						{ 66.5, 58.9, 1462 },	-- Cave Entrance
-						--{ 51.3, 47.8, 1462 },
-					},
-					["isDaily"] = true,
-					["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-					["g"] = {
-						crit(34, {	-- Caustic Mechaslime
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(169170, {	-- Blueprint: Utility Mechanoclaw
-							["questID"] = 55078, -- Blueprint: Utility Mechanoclaw
-							["g"] = {
-								crit(30, {	-- Utility Mechanoclaw
 									["achievementID"] = 13479,	-- Junkyard Architect
 								}),
 							},
@@ -184,6 +294,11 @@ _.Zones =
 						}),
 						i(167793, {  -- Paint Vial: Overload Orange
 							["questID"] = 55457,
+							["g"] = {
+								crit(7, {	-- Overload Orange
+									["achievementID"] = 13513,	-- Available in Eight Colors
+								}),
+							},
 						}),
 					},
 				}),
@@ -217,25 +332,6 @@ _.Zones =
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(168631),	-- Metal Detector
-					},
-				}),
-				n(150342, {	-- Earthbreaker Gulroc
-					["questID"] = 55814,
-					["coord"] = { 63.9, 24.4, 1462 },
-					["isDaily"] = true,
-					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-					["g"] = {
-						crit(21, {	-- Earthbreaker Gulroc
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(167042, {	-- Blueprint: Scrap Trap
-							["questID"] = 55030,
-							["g"] = {
-								crit(2, {	-- Scrap Trap
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
 					},
 				}),
 				n(154153, {	-- Enforcer KX-T57
@@ -316,47 +412,6 @@ _.Zones =
 							},
 						}),
 						i(170467),	-- Whirring Chainblade
-					},
-				}),
-				n(153205, {	-- Gemicide
-					["questID"] = 55855,
-					["coord"] = { 57.6, 69.2, 1462 },
-					["isDaily"] = true,
-					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-					["g"] = {
-						crit(23, {	-- Gemicide
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(169691, {    -- Vinyl: Depths of Ulduar
-                            ["questID"] = 56518, -- Vinyl: Depths of Ulduar
-                            ["g"] = {
-                                crit(5, {    -- Depths of Ulduar
-                                    ["achievementID"] = 13686,    -- Junkyard Melomanic
-                                }),
-                            },
-                        }),
-					},
-				}),
-				n(154701, {	-- Gorged Gear-Cruncher
-					["questID"] = 56367,
-					["coords"] = {
-						{ 73.2, 54.2, 1462 },	-- Cave Entrance
-						--{ 51.3, 47.8, 1462 },
-					},
-					["isDaily"] = true,
-					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-					["g"] = {
-						crit(33, {	-- Gorged Gear-Cruncher
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(167846, {	-- Blueprint: Mechano-Treat
-							["questID"] = 55061,
-							["g"] = {
-								crit(9, {	-- Mechano-Treat
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
 					},
 				}),
 				n(151684, {	-- Jawbreaker
@@ -477,34 +532,6 @@ _.Zones =
 							},
 						}),
 						i(170467),	-- Whirring Chainblade
-					},
-				}),
-				n(153206, {	-- Ol' Big Tusk
-					["questID"] = 55853,
-					["coord"] = { 55.6, 39.5, 1462 },
-					["isDaily"] = true,
-					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-					["g"] = {
-						crit(22, {	-- Ol' Big Tusk
-							["achievementID"] = 13470,	-- Rest In Pistons
-						}),
-						i(167846, {	-- Blueprint: Mechano-Treat
-							["questID"] = 55061,
-							["g"] = {
-								crit(9, {	-- Mechano-Treat
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
-						i(169691, {	-- Vinyl: Depths of Ulduar
-							["questID"] = 56518, -- Vinyl: Depths of Ulduar
-							["g"] = {
-                                crit(5, {    -- Depths of Ulduar
-                                    ["achievementID"] = 13686,    -- Junkyard Melomanic
-                                }),
-                            },
-						}),
-						i(170466),  -- Junkyard Motivator
 					},
 				}),
 				n(151296, {	-- OOX-Avenger/MG
@@ -683,21 +710,6 @@ _.Zones =
                                 }),
                             },
 						}),
-					},
-				}),
-				n(152113, {	-- The Kleptoboss
-					["questID"] = 55858,
-					["coords"] = {
-						{ 68.0, 48.0, 1462 },	-- Cave Entrance
-						--{ 51.3, 47.8, 1462 },
-					},
-					["isDaily"] = true,
-					["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-					["g"] = {
-						crit(26, {	-- The Kleptoboss
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(169886),	-- Spraybot 0D
 					},
 				}),
 				n(154225, {	-- The Rusty Prince
