@@ -40,7 +40,7 @@ _.Zones =
 					["coord"] = { 30.0, 59.0, 14 },
 					["sourceQuest"] = 26041,	-- Stones of Binding
 				}),
-				q(679, {	-- Call to Arms
+				q(679,   {	-- Call to Arms
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -67,12 +67,12 @@ _.Zones =
 					["coord"] = { 13.3, 34.3, 14 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(8115, {	-- Control Five Bases (pvp)
+				q(8115,  {	-- Control Five Bases (pvp)
 					["u"] = 40,
 					["qg"] = 14983,	-- Field Marshal Oslight
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(8114, {	-- Control Four Bases (pvp)
+				q(8114,  {	-- Control Four Bases (pvp)
 					["u"] = 40,
 					["qg"] = 14983,	-- Field Marshal Oslight
 					["races"] = ALLIANCE_ONLY,
@@ -88,7 +88,7 @@ _.Zones =
 					["lvl"] = 100,
 					["classes"] = { 6 },	-- Death Knight
 				}),
-				q(667, {	-- Death From Below
+				q(667,   {	-- Death From Below
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4550)),	-- Coldwater Ring
@@ -108,13 +108,13 @@ _.Zones =
 						i(131566),	-- The Good Captain's Bindings
 					},
 				}),
-				q(662, {	-- Deep Sea Salvage
+				q(662,   {	-- Deep Sea Salvage
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4511)),	-- Black Water Hammer
 					},
 				}),
-				q(664, {	-- Drowned Sorrows
+				q(664,   {	-- Drowned Sorrows
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4509)),	-- Seawolf Gloves
@@ -148,7 +148,7 @@ _.Zones =
 						i(131487),	-- Stromgarde Greaves
 					},
 				}),
-				q(673, {	-- Foul Magics
+				q(673,   {	-- Foul Magics
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -185,7 +185,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26081,	-- Alina's Reward
 				}),
-				q(661, {	-- Hints of a New Plague?
+				q(661,   {	-- Hints of a New Plague?
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -212,7 +212,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26114,	-- Quae Trusts You
 				}),
-				q(697, {	-- Malin's Request
+				q(697,   {	-- Malin's Request
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -310,7 +310,7 @@ _.Zones =
 					["coord"] = { 79.8, 31.6, 14 },
 					["sourceQuests"] = { 26039 },	-- The Princess Trapped
 				}),
-				q(682, {	-- Stromgarde Badges
+				q(682,   {	-- Stromgarde Badges
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -331,13 +331,13 @@ _.Zones =
 						i(131482),	-- Grips of the Weary
 					},
 				}),
-				q(656, {	-- Summoning the Princess
+				q(656,   {	-- Summoning the Princess
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4743)),	-- Pulsating Crystalline Shard
 					},
 				}),
-				q(666, {	-- Sunken Treasure
+				q(666,   {	-- Sunken Treasure
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4547)),	-- Gnomish Zapper
@@ -355,22 +355,22 @@ _.Zones =
 						i(156948),	-- Waterlogged Elven Spear
 					},
 				}),
-				q(8122, {	-- Take Five Bases (pvp)
+				q(8122,  {	-- Take Five Bases (pvp)
 					["u"] = 40,
 					["qg"] = 15021,	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
 				}),
-				q(8121, {	-- Take Four Bases (pvp)
+				q(8121,  {	-- Take Four Bases (pvp)
 					["u"] = 40,
 					["qg"] = 15021,	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
 				}),
-				q(8105, {	-- The Battle for Arathi Basin! (pvp)
+				q(8105,  {	-- The Battle for Arathi Basin! (pvp)
 					["u"] = 40,
 					["qg"] = 14983,	-- Field Marshal Oslight
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(8120, {	-- The Battle for Arathi Basin! (pvp)
+				q(8120,  {	-- The Battle for Arathi Basin! (pvp)
 					["u"] = 40,
 					["qg"] = 15021,	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
@@ -418,7 +418,7 @@ _.Zones =
 						i(131473),	-- Mantle of the Bound
 					},
 				}),
-				q(680, {	-- The Real Threat
+				q(680,   {	-- The Real Threat
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -482,7 +482,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26036,	-- Wand Over Fist
 				}),
-				q(6622, {	-- Triage
+				q(6622,  {	-- Triage
 					["qg"] = 12920,	--	Doctor Gregory Victor
 					["coord"] = { 68.4, 37.8, 14 },
 					["sourceQuest"] = 6623,	-- Horde Trauma
@@ -491,7 +491,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 				}),
-				q(646, {	-- Trol'kalar
+				q(646,   {	-- Trol'kalar
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4508)),	-- Blood-Tinged Armor
@@ -510,7 +510,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26035,	-- Worth Its Weight in Gold
 				}),
-				q(684, {	-- Wanted! Marez Cowl
+				q(684,   {	-- Wanted! Marez Cowl
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -530,7 +530,7 @@ _.Zones =
 						i(131465),	-- Hauberk of Dire Tidings
 					},
 				}),
-				q(685, {	-- Wanted! Otto and Falconcrest
+				q(685,   {	-- Wanted! Otto and Falconcrest
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

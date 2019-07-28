@@ -12,7 +12,7 @@ _.Zones =
 					}),
 					crit(2, {	-- Refuge Pointe (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["sourceQuests"] = {
 							26038,	-- Attack on the Tower
 							26117,	-- For Southshore
 							26095,	-- Stromgarde Badges
