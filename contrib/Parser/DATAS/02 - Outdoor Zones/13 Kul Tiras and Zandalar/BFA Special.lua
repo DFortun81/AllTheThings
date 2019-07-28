@@ -7,7 +7,7 @@ _.Zones =
 		n(-77,  {	-- Special
 			["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",
 			["g"] = {
-				p(2352, {	-- Baa'l
+				p(2352, {	-- Baa'l  -- TODO: Maps?  Descriptions
 					["modelScale"] = 1.1,
 					--["modelID"] = 80456,
 					["collectible"] = false,
@@ -161,6 +161,239 @@ _.Zones =
 						}),
 					},
 				}),
+				--[[i(162690, { 	-- Waist of Time  TODO: Maps?  Verify coords and mapid's within, Icons, Questid's, Descriptions.
+					["collectible"] = false,
+					["g"] = {
+						o(294096, { 	-- Lit Orb
+							["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
+							["questID"] = 45470,
+							["sourceQuests"] = { 45470 },
+							["description"] = "Your journey continues in Spires of Arak",
+							["coords"] = {
+								{ 35.5, 32.0, },	-- Lit Orb
+							},
+						}),
+						o(294097, { 	-- Strange Seed
+							["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
+							["questID"] = 47207,
+							["sourceQuests"] = { 45470 },
+							["description"] = "Stormwind City",
+							["coords"] = {
+								{ 17.47, 56.48, },	-- Strange Seed
+							},
+						}),
+						o(294098, { 	-- Tiny Frog
+							["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
+							["questID"] = 47208,
+							["sourceQuests"] = { 47207 },
+							["description"] = "Spires of Arak",
+							["coords"] = {
+								{ 53.5, 10.7, },	-- Tiny Frog
+							},
+						}),
+						o(294099, { 	-- Brittle Bone
+							["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
+							["questID"] = 47209,
+							["sourceQuests"] = { 47208 },
+							["description"] = "Blades Edge Mountains",
+							["coords"] = {
+								{ 33.6, 58.1, },	-- Brittle Bone
+							},
+						}),
+						o(294100, { 	-- Misplaced Candle
+							["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
+							["questID"] = 47210,
+							["sourceQuests"] = { 47209 },
+							["description"] = "Spires of Arak",
+							["coords"] = {
+								{ 68.0, 41.0, },	-- Misplaced Candle
+							},
+						}),
+						o(294101, {		-- Odd Cup
+							["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
+							["questID"] = 47211,
+							["sourceQuests"] = { 47210 },
+							["description"] = "Draenor Shadowmoon Valley",
+							["coords"] = {
+								{ 45.7, 26.0, },	-- Odd Cup
+							},
+						}),
+						o(294102, { 	-- Interesting Rock
+							["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
+							["questID"] = 47212,
+							["sourceQuests"] = { 47211 },
+							["description"] = "Outland Shadowmoon Valley",
+							["coords"] = {
+								{ 51.63, 43.76, },	-- Interesting Rock
+							},
+						}),
+						o(294103, { 	-- Blooming Lily
+							["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
+							["questID"] = 47213,
+							["sourceQuests"] = { 47212 },
+							["description"] = "Swamp of Sorrows",
+							["coords"] = {
+								{ 45.9, 3.7, },	-- Blooming Lily
+							},
+						}),
+						o(294104, { 	-- Pretty Flower
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Eastern Plaguelands",
+							["coords"] = {
+								{ 24.0, 78.0, },	-- Pretty Flower
+							},
+						}),
+						o(294105, { 	-- Old Book
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Deadwind Pass",
+							["coords"] = {
+								{ 41.0, 79.0, },	-- Old Book
+							},
+						}),
+						o(294106, { 	-- Dead Fish
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Blackrock Mountain",
+							["coords"] = {
+								{ 78.14, 44.0, },	-- Dead Fish
+							},
+						}),
+						o(294107, { 	-- Scratched Board
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Duskwood",
+							["coords"] = {
+								{ 52.0, 62.0, },	-- Scratched Board
+							},
+						}),
+						o(294108, { 	-- Lost Ring
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Hillsbrad Foothills",
+							["coords"] = {
+								{ 44.6, 26.34, },	-- Lost Ring
+							},
+						}),
+						o(294109, { 	-- Spoiled Apple
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Badlands",
+							["coords"] = {
+								{ 90.0, 38.0, },	-- Spoiled Apple
+							},
+						}),
+						o(294110, { 	-- Broken tooth
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Blasted Lands",
+							["coords"] = {
+								{ 45.9, 3.7, },	-- Broken Tooth
+							},
+						}),
+						o(294111, { 	-- Worn Helm
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Burning Steppes",
+							["coords"] = {
+								{ 27.1, 47.03, },	-- Worn Helm
+							},
+						}),
+						o(294112, { 	-- Leafy Leaf
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Northrend Dalaran",
+							["coords"] = {
+								{ 42.75, 20.18, },	-- Leafy Leaf
+							},
+						}),
+						o(294113, { 	-- Musty Cloth
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Terrokar Forrest",
+							["coords"] = {
+								{ 40.21, 72.49, },	-- Musty Cloth
+							},
+						}),
+						o(294114, { 	-- Broken Tablet
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Twilight Highlands",
+							["coords"] = {
+								{ 17.05, 57.86, },	-- Broken Tablet
+							},
+						}),
+						o(294115, { 	-- Ashed Torch
+							["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Feralas",
+							["coords"] = {
+								{ 60.78, 67.78, },	-- Ashed Torch
+							},
+						}),
+						n(138578, { 	-- Grimmy
+							["questID"] = 47214,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Arathi Highlands",
+							["coords"] = {
+								{ 85.3, 73.7, },	-- Grimmy
+								{ 28.2, 90.2, },	-- Zidormi
+							},
+							["g"] = {
+								o(294703),	-- Grimmy's Rusty Lockbox
+								o(294315),	-- Grimmy's Favorite Recipe
+								o(294312),	-- Grimmy's List of Friends
+								o(294314),	-- Grimmy's List of Enemies
+							},
+						}),
+						n(47121, { 	-- Aquinastrasz <Vermillion Redoubt Flight Master>
+							["questID"] = 52822,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Arathi Highlands",
+							["coords"] = {
+								{ 28.4, 24.8, },	-- Aquinastrasz <Vermillion Redoubt Flight Master>
+							},
+						}),
+						n(36034, { 	-- Karnum Marshweaver <The Cenarion Circle>
+							["questID"] = 52823,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Desolace",
+							["coords"] = {
+								{ 57.4, 47.6, },	-- Karnum Marshweaver <The Cenarion Circle>
+							},
+						}),
+						n(28792, { 	-- Noggra <General Goods>
+							["questID"] = 52824,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Zul'drak",
+							["coords"] = {
+								{ 40.4, 68.6, },	-- Noggra <General Goods>
+							},
+						}),
+						n(62877, { 	-- Stained Mug <Innkeeper>
+							["questID"] = 52826,
+							["sourceQuests"] = { 47213 },
+							["description"] = "Kun-Lai Summit",
+							["coords"] = {
+								{ 44.4, 90.2, },	-- Stained Mug <Innkeeper>
+							},
+						}),
+						
+					},
+				}),]]
 			},
 		}),
 	}),
