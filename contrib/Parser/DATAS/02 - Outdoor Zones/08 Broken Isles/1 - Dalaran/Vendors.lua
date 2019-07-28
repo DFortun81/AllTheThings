@@ -1493,7 +1493,7 @@ _.Zones =
 							["description"] = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
 						}),
 						i(157796, {	-- Purified Titan Essence
-							["u"] = 1,
+							["u"] = 2,
 							["sym"] = {
 								{ "select", "npcID", 106655 },	-- Arcanomancer Vridiel <Blacksmithing Trainer>
 								{ "pop" },	-- Discard the header and acquire the children.
