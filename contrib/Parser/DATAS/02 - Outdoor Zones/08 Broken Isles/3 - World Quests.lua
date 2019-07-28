@@ -440,10 +440,19 @@ _.Zones =
 					i(140009),	-- Felsword Legplates
 					i(140017),	-- Boots of the Felsword
 				}),
+				n(-384, {	-- Neck
+					
+				}),
 				n(-385, {	-- Finger
 					i(134367),	-- Legionnaire's Band
 					i(134279),	-- Nightborne Signet Ring
 					i(121799),	-- Tel'anor Magister's Ring
+				}),
+				n(-386,  {	-- Trinkets
+					i(134204),	-- Bleached Skull Talisman
+				}),
+				n(-387,  {	-- Relics
+					
 				}),
 				i(135511),	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
 				i(137212),	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily

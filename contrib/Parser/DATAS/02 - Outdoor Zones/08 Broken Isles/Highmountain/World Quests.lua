@@ -569,6 +569,17 @@ _.Zones =
 						i(134141),	-- Rockbound Sabatons
 					},
 				}),
+				n(-384, {	-- Neck
+					
+				}),
+				n(-386,  {	-- Trinkets
+					i(139114),	-- An'she's Infusion of Light
+					i(139102),	-- An'she's Invigoring Charm
+					i(139113),	-- An'she's Token of Guile
+				}),
+				n(-387,  {	-- Relics
+					
+				}),
 			}),
 		}),
 	}),

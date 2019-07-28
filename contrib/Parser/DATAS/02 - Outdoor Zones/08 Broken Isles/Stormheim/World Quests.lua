@@ -495,21 +495,20 @@ _.Zones =
 						i(134185),	-- Skoldiir Sabatons
 					},
 				}),
-				n(-3309, {	-- Wardbreaker Set
-					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-					["groups"] = {
-						i(136728),	-- Wardbreaker Helm
-						i(136730),	-- Wardbreaker Pauldrons
-						i(136725),	-- Wardbreaker Chestplate
-						i(136732),	-- Wardbreaker Vambraces
-						i(136726),	-- Wardbreaker Gauntlets
-						i(136727),	-- Wardbreaker Girdle
-						i(136729),	-- Wardbreaker Legplates
-						i(136731),	-- Wardbreaker Warboots
-					},
+				n(-384, {	-- Neck
+					i(134187),	-- Rough-Hammered Silver Necklace
+				}),
+				n(-386,  {	-- Trinkets
+					i(134190),	-- Ironrune Charm
+					i(134203),	-- Three-Toed Rabbit Foot
 				}),
 				n(-387, {	-- Relics
+					i(143687),	-- Felskorn Mania
+					i(141261),	-- Fires of Heaven
+					i(141262),	-- Rune-Etched Quill
+					i(143688),	-- Stormwing's Roar
 					i(143685),	-- Strength of the Nazjatar
+					i(143689),	-- Weight of Tradition
 				}),
 			}),
 		}),	

@@ -370,6 +370,17 @@ _.Zones =
 						i(134361),	-- Portalguard Warboots
 					},
 				}),
+				n(-384, {	-- Neck
+					i(146867),	-- Wrathguard Choker
+				}),
+				--[[
+				n(-386,  {	-- Trinkets
+					
+				}),
+				n(-387,  {	-- Relics
+					
+				}),
+				]]--
 			}),
 		}),
 	}),

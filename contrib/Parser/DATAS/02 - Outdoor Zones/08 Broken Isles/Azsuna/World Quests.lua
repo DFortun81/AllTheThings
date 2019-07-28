@@ -612,9 +612,23 @@ _.Zones =
 						i(134315),	-- Ley-Scarred Greaves
 						i(134317),	-- Ley-Scarred Sabatons
 					},		
-				}),			
+				}),
+				--[[
+				n(-384, {	-- Neck
+					
+				}),
+				]]--
+				n(-386,  {	-- Trinkets
+					i(134234),	-- Barnacled Azsharan Insignia
+					i(134248),	-- Leycoral Shard
+					i(134247),	-- Silent Seashell
+				}),
 				n(-387,  {	-- Relics
 					i(141273),	-- Echo of Eons
+					i(141257),	-- Roar of the Ocean
+					i(141259),	-- Seawitch's Foci
+					i(143684),	-- Slavemaster's Malevolence
+					i(141258),	-- Whirlpool Seed
 				}),
 			}),
 		}),

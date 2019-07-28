@@ -525,6 +525,25 @@ _.Zones =
 						i(134273),	-- Arcane Defender's Boots
 					},
 				}),
+				--[[
+				n(-384, {	-- Neck
+					
+				}),
+				]]--
+				n(-386,  {	-- Trinkets
+					i(134278),	-- Nightborne Defender's Badge
+					i(134292),	-- Nightborne Researcher's Phial
+					i(134291),	-- Nightborne's Hunting Horn
+				}),
+				n(-387,  {	-- Relics
+					i(140042),	-- Ancient Sacred Candle
+					i(140088),	-- Everblooming Sunflower
+					i(140044),	-- Felbat Heart
+					i(140045),	-- Fel-Cleansed Leystone Key
+					i(140041),	-- Shadow Dew
+					i(140043),	-- Soul Forge Ember
+					i(140047),	-- Tincture of Arcwine
+				}),
 			}),
 		}),
 	}),

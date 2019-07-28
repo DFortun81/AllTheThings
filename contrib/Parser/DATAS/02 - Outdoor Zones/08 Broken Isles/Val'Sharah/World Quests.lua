@@ -1574,7 +1574,17 @@ _.Zones =
 						i(121282),	-- Wracksoul Stompers
 					},
 				}),
+				n(-384, {	-- Neck
+					i(121284),	-- Nightmare Pendant
+				}),
+				n(-386,  {	-- Trinkets
+					i(121287),	-- Nightmare Bark
+					i(121311),	-- Nightmare Bloom
+					i(121310),	-- Nightmare Thorn
+				}),
 				n(-387,  {	-- Relics
+					i(143698),	-- Effervescent Leyblossom
+					i(141255),	-- Mockery of Life
 					i(143682),	-- Viscous Terror
 				}),
 			}),
