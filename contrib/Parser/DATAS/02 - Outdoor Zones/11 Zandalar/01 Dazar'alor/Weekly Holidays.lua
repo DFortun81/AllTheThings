@@ -51,7 +51,12 @@ _.Zones =
 						["coord"] = { 56.63, 88.61, 1165 },
 						["g"] = {
 							i(154992, {	-- Brawler's Footlocker
-								["sym"] = {{"select", "npcID", -690}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+								["sym"] = {
+								{"select", "npcID", -691},	-- BFA Season 3
+								{"pop"},	-- Discard the header and acquire the children.
+								{"where", "npcID", -661},	-- Gladiator Gear
+								{"pop"},	-- Discard the header and acquire the children.
+							},
 							}),
 						},
 					}),
