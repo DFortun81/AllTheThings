@@ -3344,6 +3344,23 @@ local function RefreshMountCollection()
 		wipe(searchCache);
 	end);
 end
+local function SortAlphabetically(group)
+	if group.g then
+		local txtA, txtB;
+		table.sort(group.g, function(a, b)
+			txtA = a.name;
+			txtB = b.name;
+			if txtA then
+				if txtB then return txtA < txtB; end
+				return true;
+			end
+			return false;
+		end);
+		for i,o in ipairs(group.g) do
+			SortAlphabetically(o);
+		end
+	end
+end
 app.GetCurrentMapID = function()
 	local uiMapID = C_Map_GetBestMapForUnit("player");
 	
@@ -8174,48 +8191,128 @@ local function RowOnClick(self, button)
 			return true;
 		end
 		
-		if IsShiftKeyDown() then
-			-- If we're at the Auction House
-			if AuctionFrame and AuctionFrame:IsShown() then
-				-- Auctionator Support
-				if Atr_SearchAH then
-					if reference.g and #reference.g > 0 then
-						local missingItems = SearchForMissingItemNames(reference);					
-						if #missingItems > 0 then
-							Atr_SelectPane(3);
-							Atr_SearchAH(L["TITLE"], missingItems, LE_ITEM_CLASS_ARMOR);
-							return true;
-						end
-						app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
+		-- All non-Shift Right Clicks open a mini list or the settings.
+		if button == "RightButton" then
+			if IsAltKeyDown() then
+				AddTomTomWaypoint(reference, false);
+			elseif IsShiftKeyDown() then
+				app.print("Sorting selection...");
+				SortAlphabetically(reference);
+				app.print("Finished Sorting.");
+			else
+				if self.index > 0 then
+					CreateMiniListForGroup(reference);
+				else
+					-- Open the Settings Menu
+					if InterfaceOptionsFrame:IsVisible() then
+						InterfaceOptionsFrame_Show();
 					else
-						local name = reference.name;
-						if name then
-							Atr_SelectPane(3);
-							--Atr_SearchAH(name, { name });
-							Atr_SetSearchText (name);
-							Atr_Search_Onclick ();
+						InterfaceOptionsFrame_OpenToCategory(app:GetName());
+						InterfaceOptionsFrame_OpenToCategory(app:GetName());
+					end
+				end
+			end
+		else
+			if IsShiftKeyDown() then
+				-- If we're at the Auction House
+				if AuctionFrame and AuctionFrame:IsShown() then
+					-- Auctionator Support
+					if Atr_SearchAH then
+						if reference.g and #reference.g > 0 then
+							local missingItems = SearchForMissingItemNames(reference);					
+							if #missingItems > 0 then
+								Atr_SelectPane(3);
+								Atr_SearchAH(L["TITLE"], missingItems, LE_ITEM_CLASS_ARMOR);
+								return true;
+							end
+							app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
+						else
+							local name = reference.name;
+							if name then
+								Atr_SelectPane(3);
+								--Atr_SearchAH(name, { name });
+								Atr_SetSearchText (name);
+								Atr_Search_Onclick ();
+								return true;
+							end
+							app.print("Only Bind on Equip items can be found using this search.");
+						end
+						return true;
+					elseif TSMAPI and TSMAPI.Auction then
+						if reference.g and #reference.g > 0 then
+							local missingItems = SearchForMissingItems(reference);					
+							if #missingItems > 0 then
+								local itemList, search = {};
+								for i,group in ipairs(missingItems) do
+									search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
+									if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
+								end
+								app:ShowPopupDialog("Running this command can potentially destroy your existing TSM settings by reassigning items to the " .. L["TITLE"] .. " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?",
+								function()
+									TSMAPI.Groups:CreatePreset(itemList);
+									app.print("Updated the preset successfully.");
+									if not TSMAPI.Operations:GetFirstByItem(search, "Shopping") then
+										print("The preset is missing a 'Shopping' Operation assignment.");
+										print("Type '/tsm operations' to create or assign one.");
+									end
+								end);
+								return true;
+							end
+							app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
+						else
+							-- Attempt to search manually with the link.
+							local link = reference.link or reference.silentLink;
+							if link and HandleModifiedItemClick(link) then
+								AuctionFrameBrowse_Search();
+								return true;
+							end
+						end
+						return true;
+					else
+						if reference.g and #reference.g > 0 and not reference.link then
+							app.print("Group-based searches are only supported using Auctionator.");
+							return true;
+						else
+							-- Attempt to search manually with the link.
+							local link = reference.link or reference.silentLink;
+							if link and HandleModifiedItemClick(link) then
+								AuctionFrameBrowse_Search();
+								return true;
+							end
+						end
+					end
+				elseif TSMAPI_FOUR and false then
+					if reference.g and #reference.g > 0 then
+						if true then
+							app.print("TSM4 not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!");
 							return true;
 						end
-						app.print("Only Bind on Equip items can be found using this search.");
-					end
-					return true;
-				elseif TSMAPI and TSMAPI.Auction then
-					if reference.g and #reference.g > 0 then
 						local missingItems = SearchForMissingItems(reference);					
 						if #missingItems > 0 then
-							local itemList, search = {};
-							for i,group in ipairs(missingItems) do
-								search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
-								if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
-							end
 							app:ShowPopupDialog("Running this command can potentially destroy your existing TSM settings by reassigning items to the " .. L["TITLE"] .. " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?",
 							function()
-								TSMAPI.Groups:CreatePreset(itemList);
-								app.print("Updated the preset successfully.");
-								if not TSMAPI.Operations:GetFirstByItem(search, "Shopping") then
-									print("The preset is missing a 'Shopping' Operation assignment.");
-									print("Type '/tsm operations' to create or assign one.");
+								local itemString, groupPath;
+								groupPath = BuildSourceTextForTSM(app:GetWindow("Prime").data, 0);
+								if TSMAPI_FOUR.Groups.Exists(groupPath) then
+									TSMAPI_FOUR.Groups.Remove(groupPath);
 								end
+								TSMAPI_FOUR.Groups.AppendOperation(groupPath, "Shopping", operation)
+								for i,group in ipairs(missingItems) do
+									if (not group.spellID and not group.achID) or group.itemID then
+										itemString = group.tsm;
+										if itemString then
+											groupPath = BuildSourceTextForTSM(group, 0);
+											TSMAPI_FOUR.Groups.Create(groupPath);
+											if TSMAPI_FOUR.Groups.IsItemInGroup(itemString) then
+												TSMAPI_FOUR.Groups.MoveItem(itemString, groupPath)
+											else
+												TSMAPI_FOUR.Groups.AddItem(itemString, groupPath)
+											end
+											if i > 10 then break; end
+										end
+									end
+								end
+								app.print("Updated the preset successfully.");
 							end);
 							return true;
 						end
@@ -8230,137 +8327,62 @@ local function RowOnClick(self, button)
 					end
 					return true;
 				else
-					if reference.g and #reference.g > 0 and not reference.link then
-						app.print("Group-based searches are only supported using Auctionator.");
-						return true;
-					else
-						-- Attempt to search manually with the link.
-						local link = reference.link or reference.silentLink;
-						if link and HandleModifiedItemClick(link) then
-							AuctionFrameBrowse_Search();
-							return true;
-						end
-					end
-				end
-			elseif TSMAPI_FOUR and false then
-				if reference.g and #reference.g > 0 then
-					if true then
-						app.print("TSM4 not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!");
-						return true;
-					end
-					local missingItems = SearchForMissingItems(reference);					
-					if #missingItems > 0 then
-						app:ShowPopupDialog("Running this command can potentially destroy your existing TSM settings by reassigning items to the " .. L["TITLE"] .. " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?",
-						function()
-							local itemString, groupPath;
-							groupPath = BuildSourceTextForTSM(app:GetWindow("Prime").data, 0);
-							if TSMAPI_FOUR.Groups.Exists(groupPath) then
-								TSMAPI_FOUR.Groups.Remove(groupPath);
-							end
-							TSMAPI_FOUR.Groups.AppendOperation(groupPath, "Shopping", operation)
-							for i,group in ipairs(missingItems) do
-								if (not group.spellID and not group.achID) or group.itemID then
-									itemString = group.tsm;
-									if itemString then
-										groupPath = BuildSourceTextForTSM(group, 0);
-										TSMAPI_FOUR.Groups.Create(groupPath);
-										if TSMAPI_FOUR.Groups.IsItemInGroup(itemString) then
-											TSMAPI_FOUR.Groups.MoveItem(itemString, groupPath)
-										else
-											TSMAPI_FOUR.Groups.AddItem(itemString, groupPath)
-										end
-										if i > 10 then break; end
-									end
-								end
-							end
-							app.print("Updated the preset successfully.");
-						end);
-						return true;
-					end
-					app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
-				else
-					-- Attempt to search manually with the link.
-					local link = reference.link or reference.silentLink;
-					if link and HandleModifiedItemClick(link) then
-						AuctionFrameBrowse_Search();
-						return true;
-					end
-				end
-				return true;
-			else
-			
-				-- Not at the Auction House
-				-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
-				local link = reference.link or reference.silentLink;
-				if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
 				
-				-- If you're looking at the Profession Window, Shift Clicking will replace the search string instead.
-				if app:GetWindow("Tradeskills"):IsShown() then
+					-- Not at the Auction House
+					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
+					local link = reference.link or reference.silentLink;
+					if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
 					
-				elseif button == "LeftButton" then
-					-- Default behaviour is to Refresh Collections.
-					RefreshCollections(reference);
-				end
-				return true;
-			end
-		end
-		
-		-- Control Click Expands the Groups
-		if IsControlKeyDown() then
-			-- Illusions are a nasty animal that need to be displayed a special way.
-			if reference.illusionID then
-				DressUpVisual(DressUpOutfitMixin:GetSlotSourceID("MAINHANDSLOT", LE_TRANSMOG_TYPE_APPEARANCE), 16, reference.illusionID);
-			else
-				-- If this reference has a link, then attempt to preview the appearance.
-				local link = reference.link or reference.silentLink;
-				if link and HandleModifiedItemClick(link) then
+					-- If you're looking at the Profession Window, Shift Clicking will replace the search string instead.
+					if app:GetWindow("Tradeskills"):IsShown() then
+						
+					elseif button == "LeftButton" then
+						-- Default behaviour is to Refresh Collections.
+						RefreshCollections(reference);
+					end
 					return true;
 				end
 			end
 			
-			-- If this reference is anything else, expand the groups.
-			if reference.g then
-				if self.index < 1 and #reference.g > 0 then
-					ExpandGroupsRecursively(reference, not reference.g[1].expanded, true);
+			-- Control Click Expands the Groups
+			if IsControlKeyDown() then
+				-- Illusions are a nasty animal that need to be displayed a special way.
+				if reference.illusionID then
+					DressUpVisual(DressUpOutfitMixin:GetSlotSourceID("MAINHANDSLOT", LE_TRANSMOG_TYPE_APPEARANCE), 16, reference.illusionID);
 				else
-					ExpandGroupsRecursively(reference, not reference.expanded, true);
-				end
-				app:UpdateWindows();
-				return true;
-			end
-		end
-		
-		-- All non-Shift Right Clicks open a mini list or the settings.
-		if button == "RightButton" then
-			if IsAltKeyDown() then
-				AddTomTomWaypoint(reference, false);
-			else
-				if self.index > 0 then
-					CreateMiniListForGroup(reference);
-				else
-					-- Open the Settings Menu
-					if InterfaceOptionsFrame:IsVisible() then
-						InterfaceOptionsFrame_Show();
-					else
-						InterfaceOptionsFrame_OpenToCategory(app:GetName());
-						InterfaceOptionsFrame_OpenToCategory(app:GetName());
+					-- If this reference has a link, then attempt to preview the appearance.
+					local link = reference.link or reference.silentLink;
+					if link and HandleModifiedItemClick(link) then
+						return true;
 					end
 				end
+				
+				-- If this reference is anything else, expand the groups.
+				if reference.g then
+					if self.index < 1 and #reference.g > 0 then
+						ExpandGroupsRecursively(reference, not reference.g[1].expanded, true);
+					else
+						ExpandGroupsRecursively(reference, not reference.expanded, true);
+					end
+					app:UpdateWindows();
+					return true;
+				end
 			end
-		elseif self.index > 0 then
-			reference.expanded = not reference.expanded;
-			self:GetParent():GetParent():Update();
-		elseif not reference.expanded then
-			reference.expanded = true;
-			self:GetParent():GetParent():Update();
-		else
-			-- Allow the First Frame to move the parent.
-			local owner = self:GetParent():GetParent();
-			self:SetScript("OnMouseUp", function(self)
-				self:SetScript("OnMouseUp", nil);
-				StopMovingOrSizing(owner);
-			end);
-			StartMovingOrSizing(owner, true);
+			if self.index > 0 then
+				reference.expanded = not reference.expanded;
+				self:GetParent():GetParent():Update();
+			elseif not reference.expanded then
+				reference.expanded = true;
+				self:GetParent():GetParent():Update();
+			else
+				-- Allow the First Frame to move the parent.
+				local owner = self:GetParent():GetParent();
+				self:SetScript("OnMouseUp", function(self)
+					self:SetScript("OnMouseUp", nil);
+					StopMovingOrSizing(owner);
+				end);
+				StartMovingOrSizing(owner, true);
+			end
 		end
 	end
 end
