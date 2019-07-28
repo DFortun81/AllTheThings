@@ -330,6 +330,7 @@ _.Zones =
 					["qg"] = 44018,	-- Wulfred Harrys
 					["coord"] = { 53.3, 66.2, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = { 26943 },	-- Home Sweet Gnome
 					["isBreadcrumb"] = true,
 				}),
 				q(26323, {	-- Favored Skull

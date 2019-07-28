@@ -11,13 +11,22 @@ _.Zones =
 						["sourceQuest"] = 26628,	-- Death From Below
 					}),
 					crit(2, {	-- Refuge Pointe (A)
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							26038,	-- Attack on the Tower
+							26117,	-- For Southshore
+							26095,	-- Stromgarde Badges
+						},
 					}),
 					crit(2, {	-- Galen's Fall (H)
-						["sourceQuests"] = {
-							26081,	-- Alina's Reward
-							26029,	-- The Real Threat
-							26025,	-- The Traitor Orc (TODO: verify if needed)
-							26428,	-- To Steal From Thieves (TODO: verify if needed)
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							["sourceQuests"] = {
+								26081,	-- Alina's Reward
+								26029,	-- The Real Threat
+								26025,	-- The Traitor Orc (TODO: verify if needed)
+								26428,	-- To Steal From Thieves (TODO: verify if needed)
+							},
 						},
 					}),
 					crit(3, {	-- Myzrael's Tale (A)

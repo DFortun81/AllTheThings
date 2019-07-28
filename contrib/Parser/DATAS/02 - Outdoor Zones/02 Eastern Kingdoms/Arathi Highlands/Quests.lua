@@ -20,10 +20,11 @@ _.Zones =
 						i(131480),	-- Grips of the Forsaken
 					},
 				}),
-				q(26038, {	-- Attack on the Tower (awarded "Refuge Pointe" criteria)
+				q(26038, {	-- Attack on the Tower
 					["qg"] = 41983,	-- Apprentice Kryten
+					["coord"] = { 13.0, 69.2, 14 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26037 },	-- Trelane's Defenses
+					["sourceQuest"] = 26037,	-- Trelane's Defenses
 					["g"] = {
 						i(59159),	-- Highland Mace
 						i(59160),	-- Trelane's Leggings
@@ -61,7 +62,7 @@ _.Zones =
 						i(131468),	-- Chain of Ogre Ruin
 					},
 				}),
-				q(26053, {	-- Clearing the Highlands -- aa
+				q(26053, {	-- Clearing the Highlands
 					["qg"] = 41966,	-- Deathstalker Maudria
 					["coord"] = { 13.3, 34.3, 14 },
 					["races"] = HORDE_ONLY,
@@ -119,7 +120,7 @@ _.Zones =
 						un(2, i(4509)),	-- Seawolf Gloves
 					},
 				}),
-				q(26055, {	-- Drowned Sorrows -- aa
+				q(26055, {	-- Drowned Sorrows
 					["qg"] = 2769,	-- Captain Steelgut
 					["coord"] = { 27.7, 83.2, 14 },
 					["g"] = {
@@ -129,7 +130,7 @@ _.Zones =
 						i(131475),	-- Steelgut's Undermail
 					},
 				}),
-				q(26022, {	-- First Blood -- aa
+				q(26022, {	-- First Blood
 					["qg"] = 41949,	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
@@ -137,8 +138,9 @@ _.Zones =
 				}),
 				q(26117, {	-- For Southshore
 					["qg"] = 2712,	-- Quae
+					["coord"] = { 54.8, 55.3, 14 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26116 },	-- Kinelory Strikes
+					["sourceQuest"] = 26116,	-- Kinelory Strikes
 					["g"] = {
 						i(59168),	-- Stromgarde Surcoat
 						i(59169),	-- Stromgarde Leggings
@@ -154,7 +156,7 @@ _.Zones =
 						un(2, i(4543)),	-- White Drakeskin Cap
 					},
 				}),
-				q(26050, {	-- Goggle Boggle -- aa
+				q(26050, {	-- Goggle Boggle
 					["qg"] = 2768,	-- Professor Phizzlethorpe
 					["coord"] = { 27.5, 83.0, 14 },
 				}),
@@ -191,19 +193,24 @@ _.Zones =
 						un(2, i(15456)),	-- Lightstep Leggings
 					},
 				}),
-				q(26943, {	-- Home Sweet Gnome (mutually exclusive with 26944 "Exploring Gnomeregan")
+				q(26943, {	-- Home Sweet Gnome
 					["qg"] = 2789,	-- Skuerto
+					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
+					["isBreadcrumb"] = true,
 				}),
 				q(26110, {	-- Just Like Old Times
 					["qg"] = 2712,	-- Quae
+					["coord"] = { 54.8, 55.3, 14 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26113 },	-- Quae and Kinelory
+					["sourceQuest"] = 26113,	-- Quae and Kinelory
 				}),
 				q(26116, {	-- Kinelory Strikes
 					["qg"] = 2713,	-- Kinelory
+					["coord"] = { 54.8, 55.4, 14 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26114 },	-- Quae Trusts You
+					["sourceQuest"] = 26114,	-- Quae Trusts You
 				}),
 				q(697, {	-- Malin's Request
 					["u"] = 40,
@@ -228,8 +235,9 @@ _.Zones =
 					["sourceQuest"] = 26042,	-- Breaking the Keystone
 				}),
 				q(26093, {	-- Northfold Manor
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2700,	-- Captain Nials
+					["coord"] = { 39.9, 48.8, 14 },
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28573,	-- Hero's Call: Arathi Highlands!
 						26139,	-- Into Arathi
@@ -242,14 +250,16 @@ _.Zones =
 				}),
 				q(26113, {	-- Quae and Kinelory
 					["qg"] = 2608,	-- Commander Amaren
+					["coord"] = { 39.6, 47.9, 14 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26114, {	-- Quae Trusts You
 					["qg"] = 2712,	-- Quae
+					["coord"] = { 54.8, 55.3, 14 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26110 },	-- Just Like Old Times
+					["sourceQuest"] = 26110,	-- Just Like Old Times
 				}),
-				q(26107, {	-- Raising Spirits -- aa
+				q(26107, {	-- Raising Spirits
 					["qg"] = 42130,	-- Gor'mul
 					["coord"] = { 67.7, 34.7, 14 },
 					["races"] = HORDE_ONLY,
@@ -268,6 +278,7 @@ _.Zones =
 				}),
 				q(26336, {	-- Shakes O'Breen
 					["qg"] = 2789,	-- Skuerto
+					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26032, {	-- Sigil of Arathor
@@ -308,6 +319,7 @@ _.Zones =
 				}),
 				q(26095, {	-- Stromgarde Badges
 					["qg"] = 2700,	-- Captain Nials
+					["coord"] = { 39.9, 48.8, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26093,	-- Northfold Manner
 					["g"] = {
@@ -374,16 +386,17 @@ _.Zones =
 					["lvl"] = 100,
 					["classes"] = { 6 },	-- Death Knight
 				}),
-				q(26039, {	-- The Princess Trapped -- aa
+				q(26039, {	-- The Princess Trapped
 					--["objectID"] = 138492,	-- Shards of Myzrael
 					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
 					["coord"] = { 57.2, 34.5, 14 },
 					["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
 				}),
-				q(26049, {	-- The Princess Unleashed
+				q(26049, {	-- The Princess Unleashed (A)
 					["qg"] = 2789,	-- Skuerto
+					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26346 },	-- Myzrael's Tale
+					["sourceQuest"] = 26346,	-- Myzrael's Tale
 					["g"] = {
 						i(59208),	-- Wrap of Open Menace
 						i(59209),	-- Eldritch Gloves
@@ -392,7 +405,7 @@ _.Zones =
 						i(131473),	-- Mantle of the Bound
 					},
 				}),
-				q(26912, {	-- The Princess Unleashed (awarded "Hammerfall" criteria and overall "Arathi Highlands Quests" achievement)
+				q(26912, {	-- The Princess Unleashed (H)
 					["qg"] = 2787,	-- Zaruk
 					["coord"] = { 69.6, 36.5, 14 },
 					["races"] = HORDE_ONLY,
@@ -428,9 +441,11 @@ _.Zones =
 				}),
 				q(26341, {	-- The Stone Shards
 					["qg"] = 2789,	-- Skuerto
+					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
-				q(26909, {	-- The Stone Shards -- aa
+				q(26909, {	-- The Stone Shards
 					["qg"] = 2787,	-- Zaruk
 					["coord"] = { 69.6, 36.5, 14 },
 					["races"] = HORDE_ONLY,
@@ -448,7 +463,7 @@ _.Zones =
 						i(131466),	-- Highland Chain Greaves
 					},
 				}),
-				q(26428, {	-- To Steal From Thieves -- aa
+				q(26428, {	-- To Steal From Thieves
 					["qg"] = 4486,	-- Genavie Callow
 					["coord"] = { 13.7, 33.9, 14 },
 					["races"] = HORDE_ONLY,
@@ -463,8 +478,9 @@ _.Zones =
 				}),
 				q(26037, {	-- Trelane's Defenses
 					["qg"] = 2789,	-- Skuerto
+					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26036 },	-- Wand Over Fist
+					["sourceQuest"] = 26036,	-- Wand Over Fist
 				}),
 				q(6622, {	-- Triage
 					["qg"] = 12920,	--	Doctor Gregory Victor
@@ -490,14 +506,28 @@ _.Zones =
 				}),
 				q(26036, {	-- Wand over Fist
 					["qg"] = 2789,	-- Skuerto
+					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26035 },	-- Worth Its Weight in Gold
+					["sourceQuest"] = 26035,	-- Worth Its Weight in Gold
 				}),
 				q(684, {	-- Wanted! Marez Cowl
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(4744)),	-- Arcane Runed Bracers
+					},
+				}),
+				q(26024, {	-- Wanted! Marez Cowl
+					--["objectID"] = 2713,	-- Wanted Board
+					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+					["coord"] = { 40.1, 49.0, 14 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(59182),	-- Syndicate Dagger
+						i(59183),	-- Silenced Rifle
+						i(59184),	-- Demon-Trafficker's Belt
+						i(59185),	-- Vest of Dark Rumors
+						i(131465),	-- Hauberk of Dire Tidings
 					},
 				}),
 				q(685, {	-- Wanted! Otto and Falconcrest
@@ -508,31 +538,23 @@ _.Zones =
 						un(2, i(4745)),	-- War Rider Bracers
 					},
 				}),
-				o(2713, {	-- Wanted Board
-					q(26024, {	-- Wanted! Marez Cowl
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(59182),	-- Syndicate Dagger
-							i(59183),	-- Silenced Rifle
-							i(59184),	-- Demon-Trafficker's Belt
-							i(59185),	-- Vest of Dark Rumors
-							i(131465),	-- Hauberk of Dire Tidings
-						},
-					}),
-					q(26079, {	-- Wanted! Otto and Falconcrest
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(59174),	-- Dustfall Bracers
-							i(59175),	-- Sandals of Sorrow
-							i(59176),	-- War Rider Belt
-							i(59177),	-- Captain Nials' Belt
-							i(131477),	-- Boots of the Refuge Captain
-							i(131478),	-- Battle Rider Belt
-						},
-					}),
+				q(26079, {	-- Wanted! Otto and Falconcrest
+					--["objectID"] = 2713,	-- Wanted Board
+					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+					["coord"] = { 40.1, 49.0, 14 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(59174),	-- Dustfall Bracers
+						i(59175),	-- Sandals of Sorrow
+						i(59176),	-- War Rider Belt
+						i(59177),	-- Captain Nials' Belt
+						i(131477),	-- Boots of the Refuge Captain
+						i(131478),	-- Battle Rider Belt
+					},
 				}),
 				q(26035, {	-- Worth Its Weight in Gold
 					["qg"] = 2789,	-- Skuerto
+					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
