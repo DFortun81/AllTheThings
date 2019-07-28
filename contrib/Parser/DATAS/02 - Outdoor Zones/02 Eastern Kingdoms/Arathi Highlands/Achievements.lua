@@ -20,13 +20,11 @@ _.Zones =
 					}),
 					crit(2, {	-- Galen's Fall (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							["sourceQuests"] = {
-								26081,	-- Alina's Reward
-								26029,	-- The Real Threat
-								26025,	-- The Traitor Orc (TODO: verify if needed)
-								26428,	-- To Steal From Thieves (TODO: verify if needed)
-							},
+						["sourceQuests"] = {
+							26081,	-- Alina's Reward
+							26029,	-- The Real Threat
+							26025,	-- The Traitor Orc (TODO: verify if needed)
+							26428,	-- To Steal From Thieves (TODO: verify if needed)
 						},
 					}),
 					crit(3, {	-- Myzrael's Tale (A)
