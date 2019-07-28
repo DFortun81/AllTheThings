@@ -2088,6 +2088,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(89763, {	-- Muradin Bronzebeard
+					["creatureID"] = 91196,	-- Muradin Bronzebeard
 					["coord"] = { 34.1, 32.6, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
