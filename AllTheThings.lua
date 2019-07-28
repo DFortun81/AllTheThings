@@ -2506,6 +2506,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		if group.g and #group.g > 0 then
+			--[[
 			if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
 				for i,j in ipairs(group.g) do
 					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
@@ -2513,6 +2514,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
+			]]--
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				local entries, left, right = {};
 				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
