@@ -1031,7 +1031,7 @@ _.Zones =
 						q(55718, {	-- Strange Discovery
 							["isDaily"] = true,
 							["g"] = {
-								ach(12556, crit(7)),	-- Outside Influences / Strange Discovery
+								ach(13556, crit(7)),	-- Outside Influences / Strange Discovery
 							},
 						}),
 					},
