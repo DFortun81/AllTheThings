@@ -12,7 +12,7 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
-				q(93146, {	-- Thundering Pandaren Spirit
+				q(32441, {	-- Thundering Pandaren Spirit
 					["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
 					["isDaily"] = true,
 					["g"] = {
