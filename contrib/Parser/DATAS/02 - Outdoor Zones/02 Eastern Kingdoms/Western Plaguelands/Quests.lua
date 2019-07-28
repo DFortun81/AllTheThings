@@ -13,6 +13,7 @@ _.Zones =
 				}),
 				q(27012, {	-- A Gnoll's Resolve
 					["qg"] = 44472,	-- Kelly Dumah
+					["coord"] = { 48.4, 31.9, 22 },
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
 					["g"] = {
 						i(62177),	-- Kelly's Booties
@@ -355,6 +356,7 @@ _.Zones =
 				}),
 				q(27011, {	-- Redpine Thievery
 					["qg"] = 44472,	-- Kelly Dumah
+					["coord"] = { 48.4, 31.9, 22 },
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
 				}),
 				q(27057, {	-- Return to the Stead
