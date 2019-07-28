@@ -1385,6 +1385,14 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			}),
+			q(55876, {	-- Plug the Geysers
+				["qg"] = 153833,	-- Scout Newly
+				["coord"] = { 48.2, 73.8, 1355 },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			}),
 			q(56151, {	-- Poen's Favorite Dish
 				["qg"] = 151635,	-- Slen Darkroe
 				["coord"] = { 50.8, 64.7, 1355 },
@@ -1460,6 +1468,14 @@ _.Zones =
 				["isDaily"] = true,
 				["coord"] = { 45.0, 22.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56231, {	-- Reinforced Cache
+				["sourceQuests"] = { 55500 },	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+				["objectID"] = 326047,	-- Reinforced Cache
+				["isDaily"] = true,
+				["coord"] = { 45.0, 22.1, 1355 },
+				["races"] = HORDE_ONLY,
 			}),
 			q(55659, {	-- Relics of the Sundering
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
