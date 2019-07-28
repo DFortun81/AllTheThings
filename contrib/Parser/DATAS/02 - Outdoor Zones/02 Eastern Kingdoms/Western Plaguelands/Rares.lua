@@ -38,7 +38,7 @@ _.Zones =
 					},
 				}),
 				n(51058, { 	-- Aphis
-					["description"] = "This rare is located insde the nearby cave.",
+					["description"] = "This rare is located inside the nearby cave.",
 					["coord"] = { 62.6, 35.4, 22 },
 					["g"] = {
 						i(9875),	-- Sorcerer Sash
