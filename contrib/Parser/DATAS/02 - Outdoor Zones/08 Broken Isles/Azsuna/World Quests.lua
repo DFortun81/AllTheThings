@@ -508,7 +508,6 @@ _.Zones =
 				n(-322,  {	-- Cloak
 					i(134334),	-- Disgraced Court Cloak
 					i(134246),	-- Herringbone Drape
-					i(136748),	-- Vault Watcher's Cloak
 				}),
 				n(-3241, {	-- Arcane Singed Set		
 					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		

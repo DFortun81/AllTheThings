@@ -471,6 +471,7 @@ _.Zones =
 				n(-322, {	-- Cloak
 					i(121798),	-- Moon Guard Drape
 					i(134290),	-- Nightborne Noble's Cloak
+					i(136748),	-- Vault Watcher's Cloak [Confirmed by Crieve, was listed in Azsuna]
 				}),
 				n(-3243, {	-- Manawracker Set
 					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
