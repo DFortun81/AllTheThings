@@ -1680,6 +1680,13 @@ _.Zones =
 						["coord"] = { 36.6, 32.4 },
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(53113, {	-- Shimmering Shell
+						["qg"] = 135804,	-- Hoarder Jena
+						["lvl"] = 120,
+						["coord"] = { 56.68, 49.74, 864 },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+					}),
 				},
 			}),
 		}),
