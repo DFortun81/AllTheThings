@@ -6,45 +6,46 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(26, {	-- The Hinterlands
 			n(-4, {	-- Achievements
-				{	-- Hinterlands Quests
-					["achievementID"] = 4897,
-					["groups"] = {
-						-- Note: there's some weird stuff going on here for Stormfeather Outpost (A) / Revantusk Village (H) where 
-						-- some people get credit for the achieve before they finish all the quests, and its not 100% clear which 
-						-- quest(s) should be listed here for the criteria.  But doing the quests that are listed here should be 
-						-- sufficient and can be used to see the quest chain.
-						{	-- Stormfeather Outpost
-							["criteriaID"] = 1,
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26490,	-- Prime Slime
+				ach(4897, {	-- Hinterlands Quests
+					crit(1, {	-- Quel'Danil Lodge
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							26532,	-- Shadra the Venom Queen
+							26643,	-- Starvation Diet
 						},
-						{	-- Jintha'Alor
-							["criteriaID"] = 2,
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26526,	-- Hunt the Keeper
+					}),
+					crit(3, {	-- Stormfeather Outpost
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							26486,	-- 99 Bottles of Booze on the Beach
+							26490,	-- Prime Slime
+							26491,	-- Skulk Rock Clean-Up
+							26492,	-- Skulk Rock Supplies
+							26485,	-- Snapjaws, Lad!
 						},
-						{	-- Quel'Danil Lodge
-							["criteriaID"] = 3,
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26532,	-- Shadra the Venom Queen
+					}),
+					crit(2, {	-- Jintha'Alor
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							26524,	-- Dark Vessels
+							26526,	-- Hunt the Keeper
+							26516,	-- It's Ours Now
+							26525,	-- Venomous Secrets
 						},
-						{	-- Jintha'Alor
-							["criteriaID"] = 1,
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 26369,	-- Hunt the Keeper
-						},
-						{	-- Hiri'watha
-							["criteriaID"] = 2,
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 26419,	-- Shadra the Venom Queen
-						},
-						{	-- Revantusk Village
-							["criteriaID"] = 3,
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 26283,	-- Prime Slime
-						},
-					},
-				},
+					}),
+					crit(1, {	-- Jintha'Alor
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 26369,	-- Hunt the Keeper
+					}),
+					crit(2, {	-- Hiri'watha
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 26419,	-- Shadra the Venom Queen
+					}),
+					crit(3, {	-- Revantusk Village
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 26283,	-- Prime Slime
+					}),
+				}),
 			}),
 		}),
 	}),

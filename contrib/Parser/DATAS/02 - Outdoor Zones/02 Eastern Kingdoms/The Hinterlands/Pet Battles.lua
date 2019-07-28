@@ -25,8 +25,9 @@ _.Zones =
 					["crs"] = { 61366 },	-- Rat
 				}),
 				q(31910, {	-- David Kosse
-					["isDaily"] = true,
 					["qg"] = 66478,	-- David Kosse
+					["coord"] = { 62.9, 54.5, 26 },
+					["isDaily"] = true,
 				}),
 			}),
 		}),
