@@ -5,6 +5,18 @@ _.PVP =
 {
 	n(-304, {	-- Battlegrounds
 		["g"] = {
+			filter(55, {	-- Consumables
+				["description"] = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",
+				["groups"] = {
+					i(138478),	-- Feast of Ribs
+					i(138727),	-- Potion of Defiance
+					i(138729),	-- Potion of Heightened Senses
+					i(138728),	-- Potion of Trivial Invisibility
+					i(138479),	-- Potato Stew Feast
+					i(138488),	-- Saltwater Potion
+					i(138486),	-- "Third Wind" Potion
+				},
+			}),
 			i(135539, {	-- Crate of Battlefield Goods 15-39
 				["description"] = "|cff66ccffRewarded for winning a random battleground in the level 15-39 range.|r",
 				["lvl"] = 15,
@@ -278,12 +290,26 @@ _.PVP =
 				},
 			}),
 			{	-- Gold Strong Box - Rated Win (A)
-				["itemID"] = 165714,	-- Gold Strong Box - Win (A)
+				["itemID"] = 165714,	-- Gold Strongbox - Win (A)
 				["races"] = ALLIANCE_ONLY,
+				["sym"] = {
+					{ "select", "npcID", -304 },	-- Battlegrounds
+					{ "pop" },	-- Discard all headers and acquire the children.
+					{ "where", "filterID", 55 },	-- Consumables
+					{ "pop" },	-- -- Discard all headers and acquire the children.
+					{ "select", "itemID", 137642 },	-- Mark of Honor
+				},
 			}, 
 			{	-- Gold Strong Box - Rated Win (H)
-				["itemID"] = 165711,	-- Gold Strong Box - Win (H)
+				["itemID"] = 165711,	-- Gold Strongbox - Win (H)
 				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{ "select", "npcID", -304 },	-- Battlegrounds
+					{ "pop" },	-- Discard all headers and acquire the children.
+					{ "where", "filterID", 55 },	-- Consumables
+					{ "pop" },	-- -- Discard all headers and acquire the children.
+					{ "select", "itemID", 137642 },	-- Mark of Honor
+				},
 			}, 
 		},
 	}),
