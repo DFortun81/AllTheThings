@@ -1440,6 +1440,7 @@ subroutines = {
 			{"finalize"},	-- Push the unprocessed Items to the finalized list.
 			
 			-- World Quest Rewards
+			{"select", "mapID", 905},	-- Argus
 			{"select", "mapID", 630},	-- Azsuna
 			{"select", "mapID", 646},	-- Broken Shore
 			{"select", "mapID", 650},	-- Highmountain
@@ -3345,7 +3346,7 @@ local function RefreshMountCollection()
 	end);
 end
 local function SortAlphabetically(group)
-	if group.g then
+	if group.visible and group.g then
 		local txtA, txtB;
 		table.sort(group.g, function(a, b)
 			txtA = a.name;
