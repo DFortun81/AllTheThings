@@ -36,9 +36,7 @@ _.Zones =
 				n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 					["coord"]= { 75.8, 54.0, 23 },
 					["g"] = {
-						i(136801, {	-- Divine Tome: Contemplation [Paladin]
-						--	["recipeID"] = 121183,	-- Contemplation
-						}),
+						i(136801),	-- Divine Tome: Contemplation [Paladin]
 						i(136928),	-- Thaumaturgist's Orb Toy - Priest only
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 						i(19447),	-- Formula: Enchant Bracer - Healing Power
