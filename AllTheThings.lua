@@ -1338,7 +1338,7 @@ subroutines = {
 			{"select", "npcID", -688},	-- Demonic Gladiator Season 7
 			{"pop"},	-- Remove Season Header and push the children into the processing queue.
 			{"pop"},	-- Remove Faction Header and push the children into the processing queue.
-			{"where", "npcID", -660},	-- Select only the Aspirant / Combatant Gear Headers.
+			{"contains", "npcID", -660, -661},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.
 			{"pop"},	-- Remove Aspirant / Combatant Gear Header and push the children into the processing queue.
 			{"pop"},	-- Remove Class / Armor Header and push the children into the processing queue.
 			{"finalize"},	-- Push the items to the finalized list.
