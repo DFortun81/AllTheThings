@@ -3352,6 +3352,7 @@ AllTheThings.L = {
 		[9999943] = "Step Six: Kun-Lai Summit",	
 		[9999944] = "Step Seven: Blackrock Mountain",	
 		[9999945] = "Step Eight: Temple of Karabor",
+		[9999946] = "Summon Baa'l",
 		[9999948] = "First Pebble",	
 		[9999949] = "Second Pebble",	
 		[9999950] = "Third Pebble",	
