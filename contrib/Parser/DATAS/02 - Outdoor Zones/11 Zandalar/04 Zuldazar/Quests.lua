@@ -679,6 +679,8 @@ _.Zones =
 						i(155250),	-- Rastari Helm
 						i(155260),	-- Rastari Pauldrons
 						i(155239),	-- Rastari Breastplate
+						i(155252),	-- Torcalin Coif
+						i(155262),	-- Torcalin Spaulders
 						-- Get rest of rewards
 					},
 					["qg"] = 127837,	-- Kaza'jin the Wavebinder

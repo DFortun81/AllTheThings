@@ -15,6 +15,16 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
+			n(-34, {	-- World Quests
+				q(42924, {	-- Vault of the Wardens: A Grim Matter
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42922, {	-- Vault of the Wardens: Startup Sequence
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+			}),
 			d(1, {	-- Normal
 				cr(95885, e(1467, {	-- Tirathon Saltheril
 					i(134369),	-- Felbat Leather Boots

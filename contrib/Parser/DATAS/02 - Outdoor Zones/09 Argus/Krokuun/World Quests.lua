@@ -52,6 +52,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(48592, {	-- Holding the Spire
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(48282, {	-- Imp Mother Laglath
 					["lvl"] = 110,
 					["collectible"] = false,

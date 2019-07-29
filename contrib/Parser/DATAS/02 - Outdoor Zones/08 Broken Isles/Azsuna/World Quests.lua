@@ -403,10 +403,6 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(42924, {	-- Vault of the Wardens: A Grim Matter
-					["lvl"] = 110,
-					["collectible"] = false,
-				}),
 				q(43605, {	-- WANTED: Arcanist Shal'iman
 					["lvl"] = 110,
 					["collectible"] = false,

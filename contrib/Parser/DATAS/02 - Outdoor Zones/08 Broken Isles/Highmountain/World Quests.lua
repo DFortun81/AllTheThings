@@ -92,7 +92,6 @@ _.Zones =
 				q(41252),	-- Wild Northern Barracuda
 				q(41659),	-- Work Order: Avalanche Elixirs
 				q(41223),	-- Work Order: Foxflower
-				q(41240),	-- Work Order: Highmountain Salmon
 				q(41206),	-- Work Order: Leystone
 				q(41647),	-- Work Order: Silkweave Robe
 				q(41235),	-- Work Order: Stonehide Leather
@@ -344,6 +343,14 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41665, {	-- Vantus Rune Work Order: Ursoc
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 773,	-- Inscription
+					["g"] = {
+						i(137767),	-- Vantus Rune Technique: Ursoc [Rank 3]
+					},
+				}),
 				q(44289, {	-- WANTED: Arru
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -457,6 +464,11 @@ _.Zones =
 					["groups"] = {
 						i(137842),	-- Design: Skystone Pendant (Rank 3)
 					},
+				}),
+				q(41240, {	-- Work Order: Highmountain Salmon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41671, {	-- Work Order: Word of Strength
 					["requireSkill"] = 333,	-- Enchanting

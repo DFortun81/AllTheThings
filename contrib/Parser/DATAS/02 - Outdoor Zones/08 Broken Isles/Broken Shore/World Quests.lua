@@ -41,7 +41,6 @@ _.Zones =
 					q(45797),	-- Playing with Green Fire
 					q(45929),	-- Purging the Flames
 					q(45549),	-- Salving the Corruption
-					q(45626),	-- Set You Up the Bomb!
 					q(46945),	-- Si'vash
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
@@ -215,6 +214,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(45550, {	-- Salving the Corruption
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45626, {	-- Set You Up the Bomb!
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

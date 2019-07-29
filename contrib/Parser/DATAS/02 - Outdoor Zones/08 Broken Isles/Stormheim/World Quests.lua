@@ -35,7 +35,6 @@ _.Zones =
 				q(41296),	-- Fjarnskaggl Cluster
 				q(41547),	-- Fjarnskaggl Cluster
 				q(41299),	-- Flourishing Fjarnskaggl
-				q(41614),	-- Huge Stormrays
 				q(41275),	-- Huge Stormrays
 				q(41615),	-- Huge Stormrays
 				q(46015),	-- Idra'zuul
@@ -61,7 +60,6 @@ _.Zones =
 				q(41445),	-- Stormy Leystone Deposits
 				q(41442),	-- Striking Leystone Deposits
 				q(41298),	-- Supplies Needed: Fjarnskaggl
-				
 				q(41345),	-- Supplies Needed: Stormscales
 				q(43721),	-- The Helarjar Have Surfaced
 				q(42269),	-- The Soultakers
@@ -218,6 +216,11 @@ _.Zones =
 				q(44923, {	-- Helarjar Landing: Vrekt
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41614, {	-- Huge Stormrays
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41944, {	-- Jarrun's Ladder
 					["collectible"] = false,

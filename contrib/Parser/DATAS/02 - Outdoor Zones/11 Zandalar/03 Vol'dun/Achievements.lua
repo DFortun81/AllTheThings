@@ -16,7 +16,7 @@ _.Zones =
 							["coord"] = { 53.18, 91.56, 864 },
 						}),
 						crit(5, {	-- Kimbul respected
-							["npcID"] = 128152,	-- Kimbul
+							["npcID"] = 123052,	-- Kimbul
 							["coord"] = { 57.00, 10.88, 864 },
 						}),
 						crit(9, {	-- Avatar of Sethraliss respected

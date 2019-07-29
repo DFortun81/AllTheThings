@@ -58,7 +58,6 @@ _.Zones =
 				q(42082),	-- The Shattered Locus
 				q(41346),	-- Velvety Stalker Hide
 				q(44032),	-- WANTED: Apothecary Faldren
-				q(42796),	-- WANTED: Broodmother Shu'malis
 				q(44186),	-- WANTED: Broodmother Shu'malis
 				q(44016),	-- WANTED: Cadraeus
 				q(44030),	-- WANTED: Guardian Thor'el
@@ -67,7 +66,6 @@ _.Zones =
 				q(44015),	-- WANTED: Mal'Dreth the Corruptor
 				q(44026),	-- WANTED: Mal'Dreth the Corruptor
 				q(44010),	-- WANTED: Oreth the Vile
-				q(44025),	-- WANTED: Oreth the Vile
 				q(44185),	-- WANTED: Sanaar
 				q(44022),	-- WANTED: Shal'an
 				q(44024),	-- WANTED: Shal'an
@@ -258,6 +256,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44025, {	-- WANTED: Oreth the Vile
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42830, {	-- Pest Management
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -348,6 +350,10 @@ _.Zones =
 					},
 				}),
 				q(44017, {	-- WANTED: Apothecary Faldren
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42796, {	-- WANTED: Broodmother Shu'malis
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

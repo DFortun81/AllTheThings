@@ -22,13 +22,6 @@ _.Zones =
 							i(137768),	-- Vantus Rune Technique: Nythendra [Rank 3]
 						},
 					}),
-					q(41665, {	-- Vantus Rune Work Order: Ursoc
-						["repeatable"] = true,
-						["qg"] = 106902,	-- Ransa Greyfeather <Highmountain Emissary>
-						["g"] = {
-							i(137767),	-- Vantus Rune Technique: Ursoc [Rank 3]
-						},
-					}),
 				}),
 				n(-322, {	-- Cloak
 					i(134334),	-- Disgraced Court Cloak

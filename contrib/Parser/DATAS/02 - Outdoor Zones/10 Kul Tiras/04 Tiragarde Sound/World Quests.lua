@@ -297,11 +297,7 @@ _.Zones =
 						["collectible"] = false,
 						["lvl"] = 120,
 					}),
-					q(51405, {	-- Corruption in the Bay
-						["collectible"] = false,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
+					
 					q(53832, {	-- Counter-Sabotage
 						["collectible"] = false,
 						["lvl"] = 110,
@@ -1683,6 +1679,11 @@ _.Zones =
 					q(51842, {	-- Carla Smirk
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(51405, {	-- Corruption in the Bay
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(53832, {	-- Counter-Sabotage (Faction Assault WQ)
 						["lvl"] = 110,

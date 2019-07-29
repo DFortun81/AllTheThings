@@ -331,10 +331,7 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
-				q(41995, {	-- Dark Corruption
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
+				
 				q(41708, {	-- Dark Side of the Moon
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -408,14 +405,6 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(41516, {	-- Felwort
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41517, {	-- Felwort
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41518, {	-- Felwort
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
@@ -1157,6 +1146,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41995, {	-- Dark Corruption
+					["collectible"] = false,
+					["lvl"] = 110,
+				}),
 				q(41860, {	-- Dealing with Satyrs
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -1181,6 +1174,11 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41517, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41518, {	-- Felwort
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism

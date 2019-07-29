@@ -234,6 +234,11 @@ _.ExpansionFeatures =
 						["coord"] = { 52.0, 33.6, 942 },
 						["sourceQuest"] = 51753,	-- Champion: Rexxar
 						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(163672),	-- Honorbound Vanguard's Helm
+							i(163670),	-- Honorbound Vanguard's Pauldrons
+							i(163665),	-- Honorbound Vanguard's Chainmail
+						},
 					}),
 					q(51975, {	-- Champion: Shadow Hunter Ty'jin
 						["qg"] = 137742,	-- Shadow Hunter Ty'jin

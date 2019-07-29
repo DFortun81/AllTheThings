@@ -776,10 +776,7 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52464, {	-- Osca the Bloodied
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
+				
 				q(53288, {	-- Overgrown Anchor Weed
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -1664,6 +1661,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+					}),
+					q(52464, {	-- Osca the Bloodied
+						["collectible"] = false,
+						["lvl"] = 120,
 					}),
 					q(54437, {	-- Owynn Graddock (Faction Assault WQ)
 						["lvl"] = 110,
