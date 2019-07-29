@@ -8,7 +8,6 @@ _.Zones =
 			n(-34, {	-- World Quests
 --[[
 				n(-34, {	-- World Quests
-					q(49047),	-- Bucky
 					q(48727),	-- Captain Faruq
 					q(49051),	-- Corrupted Blood of Argus
 					q(49049),	-- Gloamwing
@@ -24,6 +23,11 @@ _.Zones =
 				}),
 				q(47705, {	-- Behind Legion Lines
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(49047, {	-- Bucky
+					["lvl"] = 110,
+					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(48101, {	-- Bully Pulpit

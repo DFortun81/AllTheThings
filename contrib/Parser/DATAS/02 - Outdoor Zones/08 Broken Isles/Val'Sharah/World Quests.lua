@@ -976,10 +976,7 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
-				q(43633, {	-- WANTED: Thondrax
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
+				
 				q(43247, {	-- Warden Tower Assault: Darkfollow's Spire
 					["collectible"] = false,
 					["lvl"] = 110,
@@ -1393,6 +1390,10 @@ _.Zones =
 				q(43459, {	-- WANTED: Thondrax
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(43633, {	-- WANTED: Thondrax
+					["collectible"] = false,
+					["lvl"] = 110,
 				}),
 				q(43248, {	-- Warden Tower Assault: Darkfollow's Spire [A]
 					["lvl"] = 110,

@@ -28,7 +28,6 @@ _.Zones =
 				q(41202),	-- Crude Leystone Seams
 				q(41685),	-- DANGER: Ala'washte
 				q(41695),	-- DANGER: Defilia
-				q(41093),	-- DANGER: Durguth
 				q(41696),	-- DANGER: Mawat'aki
 				q(41686),	-- DANGER: Olokk the Shipbreaker
 				q(41703),	-- DANGER: Ormagrogg
@@ -133,6 +132,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41095, {	-- Critical Crops
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41093, {	-- DANGER: Durguth
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

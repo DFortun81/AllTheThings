@@ -915,11 +915,7 @@ _.Zones =
 				q(54456, {	-- Supplies from the Order of Embers
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52381, {	-- Supplies Needed: Lane Snapper
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
+				
 				q(50960, {	-- Sweete's Orders
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1719,13 +1715,18 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51431, { 	-- Soul Goliath
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51434, {	-- Stone Golem
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(51431, { 	-- Soul Goliath
-						["lvl"] = 120,
+					q(52381, {	-- Supplies Needed: Lane Snapper
 						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51529, {	-- Talon
 						["lvl"] = 120,
