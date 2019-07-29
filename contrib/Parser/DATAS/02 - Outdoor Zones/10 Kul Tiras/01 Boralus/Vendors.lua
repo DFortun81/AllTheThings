@@ -323,8 +323,8 @@ _.Zones =
 				n(145838, {	-- Marshal Frazer
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(139775),	-- Alliance Enthusiast
-						i(142379),	-- Dutiful Squire
+					--	i(139775),	-- Alliance Enthusiast
+					--	i(142379),	-- Dutiful Squire
 					},
 				}),
 				n(143560, {	-- Marshal Gabriel

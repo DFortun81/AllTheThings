@@ -5,8 +5,24 @@ _.PVP =
 {
 	n(-9983, {	-- Honor
 		ach(12893, {	-- Honor Level 5
-			a(i(142379)),	-- Dutiful Squire
-			h(i(142380)),	-- Dutiful Gruntling
+			["g"] = {
+				i(142380, {	-- Dutiful Gruntling
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						119272,	-- Sarah the Savage (Horde / Dalaran)
+						145837,	-- Violet Shadowmend (Horde / Zuldazar)
+						146626,	-- Legionaire Voladis (Horde / OG)
+					},
+				}),
+				i(142379, {	-- Dutiful Squire
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						119484,	-- Captain Roberts (Ally / Dalaran)
+						146633,	-- Knight-Captain Jessica (Ally / SW)
+						145838,	-- Marshal Frazer (Ally / Boralus)
+					},
+				}),
+			},
 		}),
 		ach(12894, {	-- Honor Level 10
 			i(134026),	-- Honorable Pennant
@@ -15,8 +31,24 @@ _.PVP =
 			i(140228),	-- Prestigious Bronze Courser
 		}),
 		ach(12900, {	-- Honor Level 20
-			a(i(139775)),	-- Alliance Enthusiast
-			h(i(139776)),	-- Horde Fanatic
+			["g"] = {
+				i(139776, {	-- Horde Fanatic
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						119272,	-- Sarah the Savage (Horde / Dalaran)
+						145837,	-- Violet Shadowmend (Horde / Zuldazar)
+						146626,	-- Legionaire Voladis (Horde / OG)
+					},
+				}),
+				i(139775, {	-- Alliance Enthusiast
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						119484,	-- Captain Roberts (Ally / Dalaran)
+						146633,	-- Knight-Captain Jessica (Ally / SW)
+						145838,	-- Marshal Frazer (Ally / Boralus)
+					},
+				}),
+			},
 		}),
 		ach(12901, {	-- Honor Level 25
 			title(321),	-- The Honorable %s
@@ -66,7 +98,6 @@ _.PVP =
 		ach(12916, { 	-- Honor Level 400
 			["g"] = {
 				i(163974, {	-- Bucketshell
-					["itemID"] = 163974, 	-- Bucketshell
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						119272,	-- Sarah the Savage (Horde / Dalaran)
@@ -75,7 +106,6 @@ _.PVP =
 					},
 				}),
 				i(163975, {	-- Sir Snips
-					["itemID"] = 163975, 	-- Sir Snips
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						119484,	-- Captain Roberts (Ally / Dalaran)

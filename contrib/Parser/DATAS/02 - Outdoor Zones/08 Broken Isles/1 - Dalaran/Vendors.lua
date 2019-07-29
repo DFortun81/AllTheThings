@@ -1926,8 +1926,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
-						i(139775),	-- Alliance Enthusiast
-						i(142379),	-- Dutiful Squire
+						--i(139775),	-- Alliance Enthusiast
+						--i(142379),	-- Dutiful Squire
 						un(14, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
 						un(14, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
 						un(14, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
@@ -4957,8 +4957,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
-						i(142380),	-- Dutiful Gruntling
-						i(139776),	-- Horde Fanatic
+					--	i(142380),	-- Dutiful Gruntling
+					--	i(139776),	-- Horde Fanatic
 						un(14, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
 						un(14, i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating]
 						un(14, i(147338)),	-- Ferocious Gladiator's Tabard [Elite Rating]

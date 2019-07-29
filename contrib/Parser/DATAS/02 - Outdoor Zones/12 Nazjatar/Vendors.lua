@@ -502,8 +502,8 @@ _.Zones =
 				["coord"] = { 38.0, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(139775),	-- Alliance Enthusiast
-					i(142379),	-- Dutiful Squire
+				--	i(139775),	-- Alliance Enthusiast
+				--	i(142379),	-- Dutiful Squire
 				--	i(163975),	-- Sir Snips -- Listed under PvP w/ CRS
 				},
 			}),
@@ -575,8 +575,8 @@ _.Zones =
 				["coord"] = { 48.6, 60.7, 1355 },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(139776),	-- Horde Fanatic
-					i(142380),	-- Dutiful Gruntling
+				--	i(139776),	-- Horde Fanatic
+				--	i(142380),	-- Dutiful Gruntling
 				-- 	i(163974),	-- Bucketshell -- Listed under PvP w/ CRS
 				},
 			}),

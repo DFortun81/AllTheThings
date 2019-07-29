@@ -544,8 +544,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 					--	i(163974),	-- Bucketshell  -- Listed under PvP w/ CRS
-						i(142380),	-- Dutiful Squire
-						i(139776),	-- Horde Fanatic
+					--	i(142380),	-- Dutiful Squire
+					--	i(139776),	-- Horde Fanatic
 					},
 				}),
 				n(122698, {	-- Xanjo <Leatherworking Trainer>
