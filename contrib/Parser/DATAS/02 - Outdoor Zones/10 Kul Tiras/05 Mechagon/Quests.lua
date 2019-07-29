@@ -771,9 +771,12 @@ _.Zones =
 								i(167795),	-- Paint Vial: Copper Trim
 								i(169689),	-- Vinyl: Mimiron's Brainstorm
 								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-									crit(35, {	-- Annoy-o-Tron Gang
-										["achievementID"] = 13479,	-- Junkyard Architect
-									}),
+									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
+									["groups"] = {
+										crit(35, {	-- Annoy-o-Tron Gang
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
 								}),
 								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
@@ -817,9 +820,12 @@ _.Zones =
 								}),
 								i(169689),	-- Vinyl: Mimiron's Brainstorm
 								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-									crit(35, {	-- Annoy-o-Tron Gang
-										["achievementID"] = 13479,	-- Junkyard Architect
-									}),
+									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
+									["groups"] = {
+										crit(35, {	-- Annoy-o-Tron Gang
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
 								}),
 								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
