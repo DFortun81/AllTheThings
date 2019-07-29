@@ -1050,6 +1050,15 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 54021,	-- The First Arcanist
 			}),
+			q(56812, {	-- Friendship Is Magic
+				["qg"] = 151310,	-- Kelfin Scout (Poen Gillbrack)
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 13.",
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(169921),	-- Spine Guarded Supplies
+				},
+			}),
 			q(56234, {	-- Friends in Need
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
 				["coord"] = { 40.3, 55.2, 1355 },
