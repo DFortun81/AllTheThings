@@ -283,7 +283,10 @@ _.Zones =
 				},
 			}),
 			q(56218, {	--	Beauty in the Deeps
-				["qg"] = 154297,	-- Bladesman Inowari	-- npcID need to be confirmed
+				["qgs"] = {
+					154297,	-- Bladesman Inowari	-- active npcID need to be confirmed
+					149803,	-- Bladesman Inowari (inactive in front of the bonfire)
+				},
 				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 20.",
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -1191,7 +1194,10 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save A Friend
 			}),
 			q(56216, {	--	Last Heirloom
-				["qg"] = 154304,	-- Farseer Ori
+				["qgs"] = {
+					154304,	-- Farseer Ori (active bodyguard ID)
+					149805,	-- (inactive in front of the bonfire)
+				},
 				["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches rank 20.",
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -2482,7 +2488,10 @@ _.Zones =
 				["qg"] = 154241,	-- Seeker Anagi
 			}),
 			q(56217, {	--	Wild Tame
-				["qg"] = 150202,	-- Hunter Akana
+				["qgs"] = {
+					150202,	-- Hunter Akana	(active bodyguard ID)
+					149804,	-- Hunter Akana (inactive in front of the bonfire)
+				},
 				["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
