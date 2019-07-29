@@ -754,9 +754,4 @@ ql = function(t)							-- Gives a quest the Legendary Description
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_odyn";
 	return t;
 end
-qpvp = function(t)						-- Gives a quest the PvP Description
-	t.description = "This quest is a PvP quest.";
-	t.icon = "Interface\\PVPFrame\\Icons\\prestige-icon-3";
-	return t;
-end
 -- End Specific Quest Types
