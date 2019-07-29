@@ -432,6 +432,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-319, {	-- Weapons
+						i(168644),	-- Converted Carrot Carbine
 						i(163927),	-- Brinebeard's Shanker
 						i(163925),	-- Old Jon's Left Hand
 						i(164337),	-- Plundered Amber Slinger

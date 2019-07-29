@@ -1321,6 +1321,9 @@ _.NeverImplemented =
 			un(1, i(142504)), 	-- Hidden Tabard
 			un(1, i(134112)), 	-- Hidden Shoulder
 			un(1, i(143539)), 	-- Hidden Belt
+			un(1, i(168659)), 	-- Hidden chestpiece
+			un(1, i(168664)), 	-- Hidden boots
+			un(1, i(168665)), 	-- Hidden bracers
 			un(1, i(48945)),	-- Gnomish THinking Cap (Mind Amplification Disk was added for it)
 			un(1, i(158329)), 	-- Hidden Gloves
 			un(1, i(162638)), 	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
