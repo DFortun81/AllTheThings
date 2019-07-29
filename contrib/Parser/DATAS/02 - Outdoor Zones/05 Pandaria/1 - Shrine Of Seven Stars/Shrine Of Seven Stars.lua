@@ -43,7 +43,11 @@ _.Zones =
 						["qg"] = 64085,	-- Cullen Hammerbrow
 						["coord"] = { 71.27, 50.52, 393 },
 					}),
---					qa(31390),	-- The Klaxxi
+					--[[
+					q(31390, {	-- The Klaxxi
+						["races"] = ALLIANCE_ONLY,
+					}),
+					]]--
 					q(31373, {	-- The Order of the Cloud Serpent
 					--	possibly removed, maybe gated behind completion of a specific quest/questline
 						["isBreadcrumb"] = true,
@@ -51,7 +55,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 64484,	-- Instructor Windspear
 					}),
---					qa(31386),	-- The Shado-Pan Offensive
+					--[[
+					q(31386, {	-- The Shado-Pan Offensive
+						["races"] = ALLIANCE_ONLY,
+					}),
+					]]--
 				}),
 				n(-2,  {	-- Vendors
 					n(74021, {	-- Clarice Chapmann <Heroic Vendor>

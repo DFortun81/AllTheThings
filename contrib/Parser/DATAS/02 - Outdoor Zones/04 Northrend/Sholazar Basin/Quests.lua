@@ -49,7 +49,9 @@ _.Zones =
 				q(12577),	-- Home Time!
 				q(12539),	-- Hoofing It
 				q(12595),	-- In Search of Bigger Game
-				qa(11964),	-- Incense for the Summer Scorchlings
+				q(11964, {	-- Incense for the Summer Scorchlings
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(12540),	-- Just Following Orders
 				q(12589),	-- Kick, What Kick?
 				q(12651),	-- Lakeside Landing

@@ -76,76 +76,118 @@ _.Zones =
 				--[[
 				--Note!! Commented out for now.  Need to re-evaluate this entire section.
 				--What purpose is it serving?  Are these only available in Stormwind only?  Why are some missing?  Why is Aubrey quests saying not completed and not available?
-				a(ach(6603, {	-- Taming Eastern Kingdoms
-					--qa(32008),	-- Audrey Burnhep
-					--Note!! This and all 4 other quests return back false even if you did it.
-					--Note!! She is NOT part of the achievement
-					qa(31316, {	-- Julia, The Pet Tamer
-						i(89125),	-- Sack of Pet Supplies
-					}),
-					qa(31724, {	-- Old MacDonald
-						i(89125),	-- Sack of Pet Supplies
-					}),
-					qa(31725, {	-- Lindsay
-						i(89125),	-- Sack of Pet Supplies
-					}),
-					qa(31726, {	-- Eric Davidson
-						i(89125),	-- Sack of Pet Supplies
-					}),
-					qa(31729, {	-- Steven Lisbane
-						i(89125),	-- Sack of Pet Supplies
-					}),
-					qa(31728, {	-- Bill Buckler
-						i(89125),	-- Sack of Pet Supplies
-					}),
-					qa(31917),	-- A Tamer's Homecoming
-					qa(31902, {	-- Battle Pet Tamers: Eastern Kingdoms
-						i(89125),	-- Sack of Pet Supplies
-					}),
-					qa(31915, {	-- Grand Master Lydia Accoste
-						i(89125),	-- Sack of Pet Supplies
-					}),
-				})),
-				qa(31889, {	-- Battle Pet Tamers: Kalimdor
-					["groups"] = {
-						i(89125),	-- Sack of Pet Supplies
+				ach(6603, {	-- Taming Eastern Kingdoms
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						q(32008, {	-- Audrey Burnhep
+							["races"] = ALLIANCE_ONLY,
+						}),
+						--Note!! This and all 4 other quests return back false even if you did it.
+						--Note!! She is NOT part of the achievement
+						q(31316, {	-- Julia, The Pet Tamer
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+						q(31724, {	-- Old MacDonald
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+						q(31725, {	-- Lindsay
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+						q(31726, {	-- Eric Davidson
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+						q(31729, {	-- Steven Lisbane
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+						q(31728, {	-- Bill Buckler
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+						q(31917, {	-- A Tamer's Homecoming
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+						q(31915, {	-- Grand Master Lydia Accoste
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
 					},
-					["description"] = "Account-Wide Quest.|r",
 				}),
-				qa(31919, {	-- Battle Pet Tamers: Outland
-					["groups"] = {
+				q(31889, {	-- Battle Pet Tamers: Kalimdor
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
-					["description"] = "Account-Wide Quest.|r",
 				}),
-				qa(31927, {	-- Battle Pet Tamers: Northrend
-					["groups"] = {
+				q(31919, {	-- Battle Pet Tamers: Outland
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
-					["description"] = "Account-Wide Quest.|r",
 				}),
-				qa(31966, {	-- Battle Pet Tamers: Cataclysm
-					["groups"] = {
+				q(31927, {	-- Battle Pet Tamers: Northrend
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
-					["description"] = "Account-Wide Quest.|r",
 				}),
-				qa(31930, {	-- Battle Pet Tamers: Pandaria
-					["groups"] = {
+				q(31966, {	-- Battle Pet Tamers: Cataclysm
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
-					["description"] = "Account-Wide Quest.|r",
+				}),
+				q(31930, {	-- Battle Pet Tamers: Pandaria
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+					["g"] = {
+						i(89125),	-- Sack of Pet Supplies
+					},
 				}),
 				q(32863, { 	-- What We've Been Training For
-					["repeatable"] = true,
-					["description"] = "Account-Wide Weekly Quest.|r",
-					["groups"] = {
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+					["g"] = {
 						i(98095),	-- Brawler's Pet Supplies
 					},
 				}),
-				qa(31975)),	-- The Returning Champion
-				qa(31976)),	-- The Returning Champion
-				qa(31985)),	-- The Triumphant Return
+				q(31975, {	-- The Returning Champion
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31976, {	-- The Returning Champion
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31985, {	-- The Triumphant Return
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(32863),	-- What We've Been Training For
 				--]]
 			}),

@@ -110,7 +110,9 @@ _.Zones =
 				q(47182),	-- Long Overdue
 				q(48074),	-- Looming Over Me
 				q(49191),	-- Many More Intact Demon Eyes
-				qa(49190),	-- More Intact Demon Eyes
+				q(49190, {	-- More Intact Demon Eyes
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(38805),	-- Ondri
 				q(48042),	-- Order of Operations
 				q(49031),	-- Out With The Inquisitors

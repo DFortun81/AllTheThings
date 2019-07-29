@@ -202,7 +202,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						}),
 					}),
 					n(-17, {	-- Quests
-						qa(29155, {	-- A Shiny Reward
+						q(29155, {	-- A Shiny Reward
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								29153,	-- Booty Bay's Interests
 								29154,	-- Booty Bay's Interests

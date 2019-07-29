@@ -89,7 +89,9 @@ _.Zones =
 						q(42890),	-- The Codex of Command
 						q(46071),	-- The Hammer of Dalaran
 						q(42885),	-- The Highlord's Command
-						qa(42967),	-- The Highlord's Command
+						q(42967, {	-- The Highlord's Command
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(42968),	-- The Highlord's Command
 						q(42966),	-- The Highlord's Command
 						q(43540),	-- The Mind of the Enemy

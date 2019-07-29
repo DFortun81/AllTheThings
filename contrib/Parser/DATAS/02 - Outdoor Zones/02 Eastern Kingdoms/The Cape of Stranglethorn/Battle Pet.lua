@@ -18,8 +18,11 @@ _.Zones =
 				p(401), 	-- Strand Crab
 				p(405), 	-- Tree Python
 				p(410), 	-- Wharf Rat
-				qa(31917),	-- A Tamer's Homecoming
-				qa(31851, {	-- Bill Buckler
+				q(31917, {	-- A Tamer's Homecoming
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31851, {	-- Bill Buckler
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 			}),

@@ -6,7 +6,9 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(504, {	-- Isle of Thunder
 			n(-17, { 	-- Quests
-				qa(32655),	-- A Bold Idea
+				q(32655, {	-- A Bold Idea
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(32571, {	-- A Wing to Fly On (A)
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
