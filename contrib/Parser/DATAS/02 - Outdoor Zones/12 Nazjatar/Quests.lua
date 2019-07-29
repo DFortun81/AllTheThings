@@ -2327,6 +2327,14 @@ _.Zones =
 				["coord"] = { 39.2, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
+			q(56226, {	-- WANTED: Gler'thogg
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+				--["objectID"] = 326142,	-- Bounty Board
+				["isDaily"] = true,
+				["coord"] = { 48.0, 61.5, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
 			q(55775, {	-- WANTED: Haggronar
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
@@ -2352,7 +2360,7 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56222, {	-- WANTED: Lady Naz'jess
-				--["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["sourceQuest"] = 55500,	-- Save a Friend
 				--["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
 				--["objectID"] = 326142,	-- Bounty Board
 				["isDaily"] = true,

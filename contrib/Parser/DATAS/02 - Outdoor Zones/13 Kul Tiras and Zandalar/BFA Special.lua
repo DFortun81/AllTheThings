@@ -352,6 +352,7 @@ _.Zones =
 					},
 				}),
 				i(162690, { 	-- Waist of Time  TODO: Maps?  @Grimmy verify coords and mapid's, Icons, Questid's, Descriptions.
+					["description"] = "You will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
 					["collectible"] = false,
 					["g"] = {
 						o(9999946, { 	-- Summon Baa'l
@@ -365,7 +366,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\Ability_TitanKeeper_CleansingOrb",
 							["questID"] = 52830,	-- Orb click
 							["sourceQuests"] = { 52829 },
-							["description"] = "Your journey continues in Spires of Arak.  You must have summoned Baa'l at least once before you can continue.  It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland. \n\nInside the small basket \n\nThe Orb Reads: \n\n\"<Something is written here.>\n\nPassive Ice Veins\"",
+							["description"] = "Your journey continues in Spires of Arak.  You must have summoned Baa'l at least once before you can continue. \n\nInside the small basket \n\nThe Orb Reads: \n\n\"<Something is written here.>\n\nPassive Ice Veins\"",
 							["coords"] = {
 								{ 35.5, 32.0, 542 },	-- Lit Orb
 							},
@@ -510,7 +511,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Misc_Herb_Fadeleaf_Petal",
 							["questID"] = 52912,
 							["sourceQuests"] = { 52911 },
-							["description"] = "Northrend Dalaran\n\nIn front of the left planter.\n\nThe Leafy Leaf reads:\n\n\"<Something is written here.>\n\nPhantasmal Hosts?\"", 
+							["description"] = "Northrend Dalaran\n\nIn front of the left planter.\n\nThe Leafy Leaf reads:\n\n\"<Something is written here.>\n\nPhantasmal Hosts?\"",  -- Punctured Pelt purchase while on this?
 							["coords"] = {
 								{ 42.75, 20.18, 125 },	-- Leafy Leaf
 							},
