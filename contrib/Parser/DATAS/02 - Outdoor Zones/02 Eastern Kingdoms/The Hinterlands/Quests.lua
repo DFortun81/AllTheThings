@@ -18,6 +18,7 @@ _.Zones =
 				}),
 				q(26310, {	-- All That Skitters (H)
 					["qg"] = 42622,	-- Eliza Darkgrin
+					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26547, {	-- A Mangy Threat
@@ -45,6 +46,7 @@ _.Zones =
 				}),
 				q(26382, {	-- Can't Make An Omelette Without... (H)
 					["qg"] = 42896,	-- Apothecary Surlis
+					["coord"] = { 31.8, 58.5, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(59298),	-- Surlis' Mantle
@@ -57,6 +59,7 @@ _.Zones =
 				}),
 				q(26384, {	-- Darkcleric Marnal
 					["qg"] = 42622,	-- Eliza Darkgrin
+					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26369 },	-- Hunt the Keeper
 				}),
@@ -78,7 +81,7 @@ _.Zones =
 						i(131545),	-- Spider Venom Legguards
 					},
 				}),
-				q(7850, {	-- Dark Vessels (H Legacy)
+				q(7850,  {	-- Dark Vessels (H Legacy)
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -87,6 +90,7 @@ _.Zones =
 				}),
 				q(26309, {	-- Dark Vessels (H)
 					["qg"] = 42622,	-- Eliza Darkgrin
+					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26310 },	-- All That Skitters
 					["g"] = {
@@ -110,6 +114,7 @@ _.Zones =
 				}),
 				q(26307, {	-- Death to the Vilebranch (H)
 					["qg"] = 42642,	-- Death to the Vilebranch
+					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26306 },	-- Start Taking Back
 				}),
@@ -137,19 +142,21 @@ _.Zones =
 				}),
 				q(26357, {	-- Faces of Evil (H)
 					["qg"] = 42624,	-- Kotonga
+					["coord"] = { 67.7, 66.2, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(59288),	-- Vile Branch
 						i(59290),	-- Jintha'Alor Axe
 					},
 				}),
-				q(485, {	-- Find OOX-09/HL!
+				q(485,   {	-- Find OOX-09/HL!
 					--["itemID"] = 8704
 					["icon"] = "Interface\\Icons\\inv_egg_05",
 					["description"] = "The item that starts this quest drops from any mob in The Hinterlands.",
 				}),
 				q(26210, {	-- Gammerita, Mon!
 					["qg"] = 14740,	-- Katoom the Angler
+					["coord"] = { 80.3, 81.5, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(59274),	-- Katoom's Mask
@@ -180,6 +187,7 @@ _.Zones =
 				}),
 				q(26366, {	-- Heads Up (H)
 					["qg"] = 42642,	-- Primal Torntusk
+					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26526, {	-- Hunt the Keeper (A)
@@ -198,6 +206,7 @@ _.Zones =
 				}),
 				q(26369, {	-- Hunt the Keeper (H)
 					["qg"] = 42642,	-- Primal Torntusk
+					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26363 },	-- Summit of Fate
 					["g"] = {
@@ -211,6 +220,7 @@ _.Zones =
 				}),
 				q(26224, {	-- Hunt the Savages
 					["qg"] = 14741,	-- Huntsman Markhor
+					["coord"] = { 79.1, 79.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26223 },	-- Stalking the Stalkers
 				}),
@@ -233,6 +243,7 @@ _.Zones =
 				}),
 				q(26308, {	-- It's Ours Now (H)
 					["qg"] = 42642,	-- Primal Torntusk
+					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
 					["g"] = {
@@ -241,14 +252,14 @@ _.Zones =
 						i(131509),	-- Soul Eater Pauldrons
 					},
 				}),
-				q(1446, {	-- Jammal'an the Prophet
+				q(1446,  {	-- Jammal'an the Prophet
 					["u"] = 40,
 					["g"] = {
 						un(2, i(11124)),	-- Helm of Exile
 						un(2, i(11123)),	-- Rainstrider Leggings
 					},
 				}),
-				q(7862, {	-- Job Opening: Guard Captain of Revantusk Village
+				q(7862,  {	-- Job Opening: Guard Captain of Revantusk Village
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -257,6 +268,7 @@ _.Zones =
 				}),
 				q(26212, {	-- Lard Lost His Lunch
 					["qg"] = 14731,	-- Lard
+					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(19035, {	-- Lard's Special Picnic Basket
@@ -276,6 +288,7 @@ _.Zones =
 				}),
 				q(26367, {	-- Ongo'longo's Revenge (H)
 					["qg"] = 42642,	-- Primal Torntusk
+					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
 				}),
@@ -306,6 +319,7 @@ _.Zones =
 				}),
 				q(26283, {	-- Prime Slime (H)
 					["qg"] = 42612,	-- Malcolm Fendelson
+					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26238,	-- The Savage Dwarves
@@ -321,6 +335,7 @@ _.Zones =
 				}),
 				q(26225, {	-- Pupellyverbos Port
 					["qg"] = 42464,	-- Grognard
+					["coord"] = { 77.3, 79.9, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27725, {	-- Quel'Danil Lodge
@@ -341,7 +356,7 @@ _.Zones =
                         i(59235),	-- Razorbeak Amulet
 					},
 				}),
-				q(836, {	-- Rescue OOX-09/HL!
+				q(836,   {	-- Rescue OOX-09/HL!
 					["qg"] = 7806,	-- Homing Robot OOX-09/HL
 					["coord"] = { 49.4, 37.7, 26 },
 					["sourceQuest"] = 485,	-- Find OOX-09/HL!
@@ -350,7 +365,7 @@ _.Zones =
 						i(9646),	-- Gnomish Water Sinking Device
 					},
 				}),
-				q(7847, {	-- Return to Primal Torntusk
+				q(7847,  {	-- Return to Primal Torntusk
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -358,7 +373,7 @@ _.Zones =
 						un(2, i(19114)),	-- Highland Bow
 					},
 				}),
-				q(2994, {	-- Saving Sharpbeak
+				q(2994,  {	-- Saving Sharpbeak
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -366,7 +381,7 @@ _.Zones =
 						un(2, i(9651)),	-- Gryphon Rider's Stormhammer
 					},
 				}),
-				q(7849, {	-- Separation Anxiety
+				q(7849,  {	-- Separation Anxiety
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -388,8 +403,9 @@ _.Zones =
 						i(131550),	-- Aerie War Cap
 					},
 				}),
-				q(26419, {	-- Shadra the Venom Queen (H) (awarded "Hiri'watha" criteria, even though I had already completed the zone achievement ???)
+				q(26419, {	-- Shadra the Venom Queen (H)
 					["qg"] = 43299,	-- Deathstalker Lookout
+					["coord"] = { 35.6, 68.4, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26558 },	-- Summoning Shadra
 					["g"] = {
@@ -412,6 +428,7 @@ _.Zones =
 				}),
 				q(26267, {	-- Skulk Rock Clean-Up (H)
 					["qg"] = 42613,	-- Elder Torntusk
+					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26238,	-- The Savage Dwarves
@@ -429,6 +446,7 @@ _.Zones =
 				}),
 				q(26268, {	-- Skulk Rock Supplies (H)
 					["qg"] = 42613,	-- Elder Torntusk
+					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26238,	-- The Savage Dwarves
@@ -443,7 +461,7 @@ _.Zones =
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
 					},
 				}),
-				q(7815, {	-- Snapjaws, Mon!
+				q(7815,  {	-- Snapjaws, Mon!
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -452,6 +470,7 @@ _.Zones =
 				}),
 				q(26211, {	-- Snapjaws, Mon!
 					["qg"] = 14740,	-- Katoom the Angler
+					["coord"] = { 80.3, 81.5, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
@@ -459,10 +478,12 @@ _.Zones =
 				}),
 				q(26223, {	-- Stalking the Stalkers
 					["qg"] = 14741,	-- Huntsman Markhor
+					["coord"] = { 79.1, 79.5, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26306, {	-- Start Taking Back
 					["qg"] = 42642,	-- Primal Torntusk
+					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26432 },	-- The Fall of Jintha'Alor
 				}),
@@ -474,11 +495,13 @@ _.Zones =
 				}),
 				q(26387, {	-- Starvation Diet (H)
 					["qg"] = 42896,	-- Apothecary Surlis
+					["coord"] = { 31.8, 58.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26382 },	-- Can't Make an Omelette Without...
 				}),
 				q(26240, {	-- Stomp To My Beat
 					["qg"] = 14739,	-- Mystic Yayo'jin
+					["coord"] = { 78.8, 78.2, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26517, {	-- Summit of Fate (A)
@@ -492,8 +515,12 @@ _.Zones =
 				}),
 				q(26363, {	-- Summit of Fate (H)
 					["qg"] = 42642,	-- Primal Torntusk
+					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26308, 26367 },	-- It's Ours Now & Ongo'longo's Revenge
+					["sourceQuests"] = {
+						26308,	-- It's Ours Now
+						26367,	-- Ongo'longo's Revenge
+					},
 				}),
 				q(26531, {	-- Summoning Shadra (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
@@ -503,6 +530,7 @@ _.Zones =
 				}),
 				q(26558, {	-- Summoning Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
+					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26418 },	-- The Shell of Shadra
 				}),
@@ -513,8 +541,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(28508, {	-- The Battle for Andorhal (H) (can't be picked up if you have "Warchief's Command: Western Plaguelands")
+				q(28508, {	-- The Battle for Andorhal (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
+					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["isBreadcrumb"] = true,
@@ -530,10 +559,12 @@ _.Zones =
 				}),
 				q(26381, {	-- The Eye of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
+					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26432, {	-- The Fall of Jintha'Alor
 					["qg"] = 42613,	-- Elder Torntusk
+					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -549,13 +580,14 @@ _.Zones =
 				}),
 				q(26406, {	-- The Fang of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
+					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26381 },	-- The Eye of Shadra
 				}),
 				q(26282, {	-- The Favor of Akil'darah
 					["u"] = 1,
 				}),
-				q(7843, {	-- The Final Message to the Wildhammer
+				q(7843,  {	-- The Final Message to the Wildhammer
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -570,6 +602,7 @@ _.Zones =
 				}),
 				q(26238, {	-- The Savage Dwarves
 					["qg"] = 42613,	-- Elder Torntusk
+					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28574 },	-- Warchief's Command: The Hinterlands!
 				}),
@@ -589,6 +622,7 @@ _.Zones =
 				}),
 				q(26418, {	-- The Shell of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
+					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26406 },	-- The Fang of Shadra
 					["g"] = {
@@ -607,6 +641,7 @@ _.Zones =
 				}),
 				q(26263, {	-- Thornar Thunderclash
 					["qg"] = 42613,	-- Elder Torntusk
+					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(59280),	-- Voice Stealer
@@ -624,6 +659,7 @@ _.Zones =
 				}),
 				q(26368, {	-- Venomous Secrets (H)
 					["qg"] = 42622,	-- Eliza Darkgrin
+					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26309 },	-- Dark Vessels
 				}),
@@ -633,7 +669,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26496 },	-- Down with the Vilebranch
 				}),
-				q(7861, {	-- Wanted: Vile Priestess Hexx and Her Minions
+				q(7861,  {	-- Wanted: Vile Priestess Hexx and Her Minions
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {

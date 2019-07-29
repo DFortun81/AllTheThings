@@ -35,15 +35,32 @@ _.Zones =
 					}),
 					crit(1, {	-- Jintha'Alor
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 26369,	-- Hunt the Keeper
+						["sourceQuests"] = {
+							26357,	-- Faces of Evil
+							26369,	-- Hunt the Keeper
+							26368,	-- Venomous Secrets
+						},
 					}),
 					crit(2, {	-- Hiri'watha
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 26419,	-- Shadra the Venom Queen
+						["sourceQuests"] = {
+							26419,	-- Shadra the Venom Queen
+							26387,	-- Starvation Diet
+						},
 					}),
 					crit(3, {	-- Revantusk Village
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 26283,	-- Prime Slime
+						["sourceQuests"] = {
+							26210,	-- Gammerita, Mon! (TODO: Verify if needed)
+							26224,	-- Hunt the Savages
+							26212,	-- Lard Lost His Lunch (TODO: Verify if needed)
+							26283,	-- Prime Slime
+							26225,	-- Pupellyverbos Port
+							26267,	-- Skulk Rock Clean-Up
+							26268,	-- Skulk Rock Supplies
+							26211,	-- Snapjaws, Mon! (TODO: Verify if needed)
+							26240,	-- Stomp To My Beat (TODO: Verify if needed)
+						},
 					}),
 				}),
 			}),
