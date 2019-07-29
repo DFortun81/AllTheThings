@@ -893,7 +893,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(56364, {	-- Rustbolt Requisitions: Frenzied Fangtooth
+				q(56363, {	-- Rustbolt Requisitions: Frenzied Fangtooth (A)
+					["isDaily"] = true,
+					["coord"] = { 77.7, 40.3, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 149813,	-- Gila Crosswires
+				}),
+				q(56364, {	-- Rustbolt Requisitions: Frenzied Fangtooth (H)
 					["qg"] = 150563,	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,

@@ -2482,12 +2482,12 @@ _.Zones =
 				["qg"] = 154241,	-- Seeker Anagi
 			}),
 			q(56217, {	--	Wild Tame
-				["qg"] = 151626,	-- Hunter Akana			-- npcID need to be confirmed
+				["qg"] = 150202,	-- Hunter Akana
 				["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
-					i(169200),	-- Deepcoral Snapdragon
+					i(169200),	-- Deepcoral Snapdragon (MOUNT!)
 				},
 			}),
 			q(56815, {	-- With A Little Help From My Friends
