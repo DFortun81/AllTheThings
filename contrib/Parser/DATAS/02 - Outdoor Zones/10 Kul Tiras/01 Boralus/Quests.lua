@@ -202,10 +202,10 @@ _.Zones =
 					},
 				}),
 				q(51487, {	-- Searching for Answers
-					["sourceQuests"] = { 47952 },	-- The Missing Fleet 
+					["sourceQuests"] = { 47952 },	-- The Missing Fleet
+					["coord"] = { 65.2, 68.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 137871,	-- Taelia
-					-- NOTE: This might have to move to a different map. - Crieve
+					["qg"] = 137866,	-- Taelia
 				}),
 				q(56043, {	-- Send the Fleet -- also triggered 56881
 					["qg"] = 153932,	-- Genn Greymane
@@ -276,7 +276,6 @@ _.Zones =
 				}),
 				q(47952, {	-- The Missing Fleet
 					["sourceQuests"] = { 47962 },	-- Stormsong Valley 
-					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 121235,	-- Taelia
 				}),
@@ -307,10 +306,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51489, {	-- Time to Leave
-					["sourceQuests"] = { 51488 },	-- Archived Knowledge 
+					["sourceQuests"] = { 51488 },	-- Archived Knowledge
+					["coord"] = { 73.6, 39.5, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 137871,	-- Taelia
-					-- NOTE: This might have to move to a different map. - Crieve
 				}),
 				q(47960, {	-- Tiragarde Sound
 					["sourceQuests"] = { 47189 },	-- A Nation Divided

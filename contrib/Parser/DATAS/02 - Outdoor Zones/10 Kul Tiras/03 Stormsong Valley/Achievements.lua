@@ -34,6 +34,32 @@ _.Zones =
 					}),
 				}),
 				ach(13054),		-- Sabertron Assemble
+				ach(12496, {	-- Stormsong and Dance
+					crit(1, {	-- The Tidesages of Stormsong
+						["sourceQuests"] = { 51401 },	-- Carry On
+					}),
+					crit(2, {	-- A House in Peril
+						["sourceQuests"] = { 49997 },	-- Storm's Judgment
+					}),
+					crit(3, {	-- The Growing Tempest
+						["sourceQuests"] = { 50611 },	-- Storm's Vengeance
+					}),
+					crit(4, {	-- At the Edge of Madness
+						["sourceQuests"] = { 50824 },	-- Storm's End
+					}),
+					crit(5, {	-- Cycle of Hatred
+						["sourceQuests"] = { 51712 },	-- Eye for an Eye
+					}),
+					crit(6, {	-- From the Depths They Come
+						["sourceQuests"] = { 49831 },	-- From the Depths
+					}),
+					crit(7, {	-- Briarback Kraul
+						["sourceQuests"] = { 50640 },	-- A Question of Quillpower
+					}),
+					crit(8, {	-- Treasure in Deadwash
+						["sourceQuests"] = { 50742 },	-- All Laid Out for Us
+					}),
+				}),
 				ach(12853, {	-- Treasures of Stormsong
 					o(293350, {	-- Carved Wooden Chest	
 						["questID"] = 52429,
