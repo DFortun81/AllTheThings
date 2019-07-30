@@ -9,6 +9,78 @@ _.ExpansionFeatures =
 				["lvl"] = 98,
 				["groups"] = {
 					n(-17, {	-- Quests
+						--[[
+						q(43424),	-- A Hero's Weapon
+						q(43700),	-- A Light in the Darkness
+						q(43934),	-- A New Path (also warrior?)
+						q(42866),	-- A Sign From The Sky
+						q(39756),	-- A Sound Plan
+						q(38566),	-- A United Force
+						q(43491),	-- Allies of the Light
+						q(38710),	-- An Urgent Gathering
+						q(45974),	-- An Urgent Warning
+						q(45890),	-- Ancestors and Enemies (also warrior?)
+						q(43493),	-- Black Rook Hold: Lord Ravencrest (also priest?)
+						q(44220, {	-- Blessing of the Order
+							["u"] = 40,
+						}),
+						q(43534),	-- Blood of Sargeras
+						q(44063),	-- Bolstering Your Arsenal
+						q(44218),	-- Champion Armaments
+						q(44370),	-- Completing Your Arsenal
+						q(43486),	-- Cracking the Codex
+						q(42847),	-- Dark Storms
+						q(43699),	-- Defenders of the World
+						q(47071, {	-- Delivering Lost Knowledge
+							["u"] = 40,
+						}),
+						q(45149),	-- Ending the Crescent Curse
+						q(44219),	-- Fate's Blessing
+						q(45147),	-- Felstone Destruction (and warrior?)
+						q(39722),	-- Forging New Strength
+						q(46151, {	-- Furthering Knowledge
+							["u"] = 40,
+						}),
+						q(42844),	-- Growing Power
+						q(42774),	-- Hope Prevails
+						q(45975),	-- Investigate the Broken Shore
+						q(45143),	-- Judgment Awaits
+						q(46074),	-- Leather to Legendary
+						q(38933),	-- Logistical Matters
+						q(43698),	-- Lumenstone
+						q(42867),	-- Meeting of the Silver Hand
+						q(45145),	-- Moonfang Family Relics
+						q(45148),	-- Oath Breaker
+						q(46070),	-- Preparations Underway
+						q(42848),	-- Recruiting the Troops
+						q(45146),	-- Runic Reading
+						q(42000),	-- Seeker of Truth
+						q(42770),	-- Seeking Guidance
+						q(42017),	-- Shrine of the Truthguard
+						q(43494),	-- Silver Hand Knights
+						q(42850),	-- Tech It Up a Notch
+						q(42846),	-- The Blood Matriarch
+						q(42890),	-- The Codex of Command
+						q(42885),	-- The Highlord's Command
+						q(42967, {	-- The Highlord's Command
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(42968),	-- The Highlord's Command
+						q(42966),	-- The Highlord's Command
+						q(43540),	-- The Mind of the Enemy
+						q(42231),	-- The Mysterious Paladin
+						q(42919),	-- The Scion's Legacy
+						q(38376),	-- The Search for the Highlord
+						q(42120),	-- The Silver Hand
+						q(42886),	-- To Faronaar
+						q(43489),	-- To Felblaze Ingress (also warrior?)
+						q(43535),	-- Translation: Danger!
+						q(38576),	-- We Meet at Light's Hope
+						q(42811),	-- We Meet at Light's Hope
+						q(40408),	-- Weapons of Legend
+						q(46069),	-- Worthy of the Title
+						q(42849),	-- Wrath and Justice
+						]]--
 						q(44250, {	-- Champion of the Light
 							i(139693),	-- Crown of the Silver Hand
 						}),

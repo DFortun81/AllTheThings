@@ -16,6 +16,10 @@ _.ExpansionFeatures =
 					["modelScale"] = 1.5,
 				}),		]]--
 				n(-17, {	-- Quests
+					--[[
+						q(43797),	-- Aiding the Conclave
+						q(43397),	-- United As One
+					]]--
 					n(-10067, {	-- Artifact Quests
 						q(40705, {	-- Priestly Matters
 							-- Quest is actually picked up in Dalaran.
