@@ -7,7 +7,7 @@ _.Secrets =
 	--n(-77,  {	-- Special  -- Seperate these into thier own files???
 		--["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",
 		--["g"] = {
-			--[[p(2136, {	-- Uuna  npcid:128396  -- Dose this belong here?  Was added in Legion?  TODO: Maps?  Verify Coords and maps within(World Tour done), Icons, Descriptions
+			--[[n(-804, {	-- Uuna  npcid:128396 p:2136 -- Dose this belong here?  Was added in Legion?  TODO: Maps?  Verify Coords and maps within(World Tour done), Icons, Descriptions
 				["modelScale"] = 1.1,
 				--["modelID"] = 80456,
 				["collectible"] = false,
@@ -209,10 +209,9 @@ _.Secrets =
 					}),
 				},
 			}),]]
-			p(2352, {	-- Baa'l  -- TODO: Descriptions
+			n(-805, {	-- Baa'l  -- TODO: Descriptions
 				["modelScale"] = 1.1,
 				--["modelID"] = 80456,
-				["collectible"] = false,
 				["description"] = "***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***",
 				["maps"] = {
 					525,
@@ -376,10 +375,10 @@ _.Secrets =
 					}),
 				},
 			}),
-			i(162690, { 	-- Waist of Time  TODO: Maps?  @Grimmy verify coords and mapid's, Icons, Questid's, Descriptions.
+			n(-806, { 	-- Waist of Time   Descriptions, figure out quest.
 				["description"] = "You will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
-				["collectible"] = false,
 				["maps"] = {
+					14,
 					15,
 					17,
 					23,
@@ -390,12 +389,15 @@ _.Secrets =
 					42,
 					47,
 					51,
+					66,
 					69,
 					104,
 					105,
 					108,
+					121,
 					125,
 					241,
+					379,
 					539,
 					542,
 				},
@@ -588,53 +590,106 @@ _.Secrets =
 							{ 60.8, 67.8, 69 },	-- Ashed Torch
 						},
 					}),
-					--[[n(138578, { 	-- Grimmy
-						["questID"] = 47214,
-						["sourceQuests"] = { 47213 },
-						["description"] = "Arathi Highlands",
+					o(294312, { 	-- Grimmy's List of Friends
+						["icon"] = "Interface\\Icons\\INV_Misc_NotePicture2c",
+						["questID"] = 52916,
+						["sourceQuests"] = { 52915 },
+						["description"] = "Head to the past version of Arathi Highlands, and click on the note on the table inside Grimmy's house.\n\nGrimmy's List of Friends reads:\n\n\"List of My Friends?\nFirst is SN, you always smelled so good\nSecond is TM, you smelled like burning\nwood\nThird is FD, though you smelled like fel\nLast is OM, I hated that fishy smell\"",
 						["coords"] = {
-							{ 85.3, 73.7, },	-- Grimmy
-							{ 28.2, 90.2, },	-- Zidormi
+							{ 38.2, 90.1, 14 },	-- Zidormi
+							{ 85.4, 73.6, 14 },	-- Grimmy's List of Friends
 						},
-						["g"] = {
-							o(294703),	-- Grimmy's Rusty Lockbox
-							o(294315),	-- Grimmy's Favorite Recipe
-							o(294312),	-- Grimmy's List of Friends
-							o(294314),	-- Grimmy's List of Enemies
+					}),
+					q(52917, { 	-- Grimmy Dialoge
+						--["icon"] = "Interface\\Icons\\INV_Torch_Unlit",
+						["qg"] = 138578,	-- Grimmy
+						["sourceQuests"] = { 52916 },
+						["description"] = "Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy.  Select his dialoge \"It's me, your friend. Got any secrets to tell me about?\"",
+						["coords"] = {
+							--{ 85.3, 73.6, 14 },	-- Grimmy Dialoge
+						},
+					}),
+					o(294314, { 	-- Grimmy's List of Enemies
+						["icon"] = "Interface\\Icons\\INV_Misc_NotePicture1c",
+						["questID"] = 52918,
+						["sourceQuests"] = { 52917 },
+						["description"] = "After selecting the Grimmy dialoge, a note appears on his bedstand.  Click it.  Grimmy's List of Enemies reads:\n\n\"You flaunted your virility, and red was\nnever to my liking\nThough I wanted to slap you, I always\nfound you striking.\n\nYou Always though you knew what was\nbest, but not everyone likes greens,\nThough I waved your way, I pictured\nyour shredded hide in my dreams.\n??\nYour bread was bad, you diseased lout,\nit made me sick.\nI woudl cheerily beat you with a stick.\n??\nLast you, I'm not eve going to think of\na rhyme for you, Mugs.\nI will dance on your grave, you were\nuniquely terrible.\"\n\nGo to each of the following npc's with Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking, and emote to them.",
+						["coords"] = {
+							--{ 85.2, 73.7, 14 },	-- Grimmy's List of Enemies
 						},
 					}),
 					n(47121, { 	-- Aquinastrasz <Vermillion Redoubt Flight Master>
 						["questID"] = 52822,
-						["sourceQuests"] = { 47213 },
-						["description"] = "Arathi Highlands",
+						["sourceQuests"] = { 52918 },
+						["description"] = "Twilight Highlands\n\n/slap",
 						["coords"] = {
-							{ 28.4, 24.8, },	-- Aquinastrasz <Vermillion Redoubt Flight Master>
+							{ 28.5, 24.9, 241 },	-- Aquinastrasz <Vermillion Redoubt Flight Master>
 						},
 					}),
 					n(36034, { 	-- Karnum Marshweaver <The Cenarion Circle>
 						["questID"] = 52823,
-						["sourceQuests"] = { 47213 },
-						["description"] = "Desolace",
+						["sourceQuests"] = { 52918 },
+						["description"] = "Desolace\n\n/wave",
 						["coords"] = {
-							{ 57.4, 47.6, },	-- Karnum Marshweaver <The Cenarion Circle>
+							{ 57.5, 47.7, 66 },	-- Karnum Marshweaver <The Cenarion Circle>
 						},
 					}),
 					n(28792, { 	-- Noggra <General Goods>
 						["questID"] = 52824,
-						["sourceQuests"] = { 47213 },
-						["description"] = "Zul'drak",
+						["sourceQuests"] = { 52918 },
+						["description"] = "Zul'drak\n\n/cheer",
 						["coords"] = {
-							{ 40.4, 68.6, },	-- Noggra <General Goods>
+							{ 40.6, 68.7, 121 },	-- Noggra <General Goods>
 						},
 					}),
 					n(62877, { 	-- Stained Mug <Innkeeper>
 						["questID"] = 52826,
-						["sourceQuests"] = { 47213 },
-						["description"] = "Kun-Lai Summit",
+						["sourceQuests"] = { 52918 },
+						["description"] = "Kun-Lai Summit\n\n/dance",
 						["coords"] = {
-							{ 44.4, 90.2, },	-- Stained Mug <Innkeeper>
+							{ 44.4, 90.3, 379 },	-- Stained Mug <Innkeeper>
 						},
-					}),]]
+					}),
+					n(138578, { 	-- Grimmy Dialoge
+						--["icon"] = "Interface\\Icons\\INV_Torch_Unlit",
+						["questID"] = 52919,
+						["sourceQuests"] = { 52826, 52824, 52823, 52822, },
+						["description"] = "Return to Grimmy and select his new dialoge\n\n\"I've sent some messages to your enemies, now about those secrets...\"",
+						["coords"] = {
+							{ 85.3, 73.6, 14 },	-- Grimmy Dialoge
+						},
+					}),
+					o(294315, { 	-- Grimmy's Favorite Recipe
+						["icon"] = "Interface\\Icons\\INV_Misc_NoteScript1c",
+						["questID"] = 52920,
+						["sourceQuests"] = { 52919 },
+						["description"] = "After selecting Grimmy's dialoge, a new note appears by the fireplace.  Click it.  Grimmy's Favorite Recipe reads:\n\n\"A pinch of turmeric and a pound of salt,\nif it comes out poorly it's your own\nfault.\n\nPay attention to the broth, and stir,stir,\nstir!\nThen add a big handful of boar fur.\n\nLast you need a little sour,\nget the kick with a little gunpowder!\"",
+						["coords"] = {
+							--{ 85.3, 74.0, 14 },	-- Grimmy's Favorite Recipe
+						},
+					}),
+					o(294335, { 	-- Rotten Potato
+						["icon"] = "Interface\\Icons\\Ability_Creature_Disease_01",
+						["questID"] = 52921,
+						["sourceQuests"] = { 52920 },
+						["description"] = "Go outside and find the Rotten Potato.  You will need to get exactly 144 stacks of Rotten Potato by clicking the potato.  After getting 144 stacks of the buff, go back and talk to Grimmy and select his new dialoge option\"How do I smell?\"\n\nGrimmy's new dialoge says:\n\n\"Oh, my, just like my mother used to after she made her famous pie.\n\nVery well, I will show you...my life's work!\n\nIt's in the chest out back, and it's all yours!\n\nI hope it was worth it!\"",
+						["coords"] = {
+							{ 88.4, 69.2, 14 },	-- Rotten Potato
+						},
+					}),
+					o(294703, { 	-- Grimmy's Rusty Lockbox
+						["icon"] = "Interface\\Icons\\INV_Box_03",
+						["questID"] = 52922,
+						["sourceQuests"] = { 52921 },
+						["description"] = "After asking Grimmy how you smell, go outside behind and above his house, and on the hill will be Grimmy's Rusty Lockbox waiting for you to open it.",
+						["coords"] = {
+							{ 85.1, 73.3, 14 },	-- Grimmy's Rusty Lockbox
+						},
+						["g"] = {
+							i(162690),	-- Waist of Time
+						},
+					}),
+					--n(138578, { 	-- Grimmy
 				},
 			}),
 		--},
