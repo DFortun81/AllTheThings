@@ -7,6 +7,7 @@ _.Zones =
 		m(94, {	-- Eversong Woods
 			n(-2, {	-- Vendors
 				n(18951, {	-- Erilia <Enchanting Vendor>
+					["coord"] = { 56.2, 54.6, 94 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -16,6 +17,7 @@ _.Zones =
 					},
 				}),
 				n(16860, {	-- Jilanne
+					["coord"] = { 44.8, 71.6, 94 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29953),	-- Golden Dragonhawk Hatchling (PET!)
@@ -24,12 +26,14 @@ _.Zones =
 					},
 				}),
 				n(16262, {	-- Landraelanis <Tradesman>
+					["coord"] = { 49.0, 47.0, 94 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(27685),	-- Recipe: Lynx Steak
 					},
 				}),
 				n(50484, {	-- Magistrix Nizara <Silvermoon City Quartermaster>
+					["coord"] = { 54.2, 50.8, 94 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(64914),	-- Shroud of Silvermoon
@@ -40,6 +44,7 @@ _.Zones =
 					},
 				}),
 				n(16264, {	-- Winaestra <Hawkstrider Breeder>
+					["coord"] = { 61.0, 54.6, 94 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(28936),	-- Swift Pink Hawkstrider (MOUNT!)
