@@ -770,7 +770,7 @@ _.Zones =
 				q(30987, {	-- Joining the Alliance
 					["qg"] = 60566,	-- Aysa Cloudsinger
 					["coord"] = { 74.2, 92.4, 84 },
-					["races"] = 24,	-- Pandaren (neutral)
+					["races"] = { 24 },	-- Pandaren (neutral)
 					["lvl"] = 5,
 				}),
 				q(1704, {	-- Klockmort Spannerspan
@@ -1190,6 +1190,7 @@ _.Zones =
 				q(29548, {	-- The Mission
 					["qg"] = 55789,	-- Rell Nightwind
 					["coord"] = { 78.8, 39.8, 84 },
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						29547,	-- The King's Command
 						49556,	-- Hero's Call: Jade Forest!
