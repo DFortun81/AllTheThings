@@ -9158,6 +9158,17 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
+		-- Secrets
+		if app.Categories.Secrets then
+			db = {};
+			db.expanded = false;
+			db.text = L["SECRETS_HEADER"];
+			db.icon = "Interface\\ICONS\\INV_Horse2Purple";
+			db.g = app.Categories.Secrets;
+			db.collectible = false;
+			table.insert(g, db);
+		end
+		
 		-- Gear Sets
 		if app.Categories.GearSets then
 			db = app.CreateAchievement(11761, app.Categories.GearSets);

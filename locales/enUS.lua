@@ -61,6 +61,7 @@ AllTheThings.L = {
 	["SPLIT"] = "Per Difficulty";
 	["REQUIRES"] = "Requires";
 	["REQUIRES_LEVEL"] = "Requires Level";
+	["SECRETS_HEADER"] = "Secrets";
 	
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";

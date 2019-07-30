@@ -93,6 +93,7 @@ namespace ATT
                     case "PVP":
                     case "Craftables":
                     case "Professions":
+                    case "Secrets":
                     case "Mounts":
                     case "NeverImplemented":
                     case "Factions":
