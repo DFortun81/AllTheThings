@@ -74,7 +74,6 @@ _.Zones =
 				q(43608),	-- WANTED: Captain Volo'ren
 				q(43609),	-- WANTED: Doomlord Kazrok
 				q(43610),	-- WANTED: Infernal Lord
-				q(42631),	-- WANTED: Inquisitor Tivos
 				q(43612),	-- WANTED: Normantis the Deposed
 				q(42633),	-- WANTED: Vorthax
 				q(43614),	-- WANTED: Vorthax
@@ -432,6 +431,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43611, {	-- WANTED: Inquisitor Tivos
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42631, {	-- WANTED: Inquisitor Tivos
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

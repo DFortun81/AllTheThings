@@ -998,11 +998,7 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
-				q(52174, {	-- Snakes in the Shallows
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
+				
 				q(52796, {	-- Sometimes Less Is More
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1828,6 +1824,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+					}),
+					q(52174, {	-- Snakes in the Shallows
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(50591, {	-- Son of a Bee
 						["lvl"] = 120,

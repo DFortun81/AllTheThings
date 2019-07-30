@@ -19,7 +19,6 @@ _.Zones =
 				q(41209),	-- Brimstone Destroyer
 				q(41210),	-- Brimstone Destroyer
 				q(41233),	-- Bristled Bear Skin
-				q(41526),	-- Bushy Foxflower
 				q(41238),	-- Calcified Wormscales
 				q(41623),	-- Champions of Highmountain
 				q(41201),	-- Coarse Leystone Outcropping
@@ -43,7 +42,6 @@ _.Zones =
 				q(41228),	-- Foxflower Cluster
 				q(41544),	-- Foxflower Cluster
 				q(46184),	-- Gelgothar
-				q(41701),	-- Gettin' Tuffer
 				q(41882),	-- Grey Idols
 				q(41204),	-- Hard Leystone Deposits
 				q(41243),	-- Huge Highmountain Salmon
@@ -73,7 +71,6 @@ _.Zones =
 				q(41237),	-- Supplies Needed: Stonehide Leather
 				q(43448),	-- The Frozen King
 				q(41232),	-- Thick Ironhorn Hide
-				q(40896),	-- Threnody of Chieftains
 				q(44823),	-- Thunder Totem Cleanup Detail
 				q(41011),	-- Umbralshard Rituals
 				q(41836),	-- WANTED: Bodash the Hoarder
@@ -123,6 +120,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41526, {	-- Bushy Foxflower
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(46196, {	-- Class Dismissed (Invasion WQ)
 					["collectible"] = false,
 					["lvl"] = 98,
@@ -171,6 +173,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41014, {	-- Fury Road
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41701, {	-- Gettin' Tuffer
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -315,6 +321,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43766, {	-- The Magic of Flight
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(40896, {	-- Threnody of Chieftains
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

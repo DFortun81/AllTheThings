@@ -274,6 +274,8 @@ _.Zones =
 					["g"] = {
 						i(155239),	-- Rastari Breastplate [was given this as reward 5/3/2019, not sure why it is listed for Prophet's Ploy also]
 						i(161143),	-- Rastari Helmet
+						i(161141),	-- Torcalin Headguard
+						i(155240),	-- Torcalin Chainmail
 					},
 				}),
 				q(49965, {	-- The Warpack
