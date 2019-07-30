@@ -75,6 +75,7 @@ _.Zones =
 				n(-17, {	-- Quests
 					q(26930, {	-- After the Crusade
 						["qg"] = 10837,	-- High Executor Derrington
+						["coord"] = { 83.2, 68.9, 18 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 26926 },	-- Victory, For Now
 					}),
@@ -103,6 +104,7 @@ _.Zones =
 					}),
 					q(26936, {	-- Lower the Boom
 						["qg"] = 10837,	-- High Executor Derrington
+						["coord"] = { 83.3, 69.0, 18 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							26978,	-- Who Needs Cauldrons?
@@ -111,6 +113,7 @@ _.Zones =
 					}),
 					q(26979, {	-- Strange New Faces
 						["qg"] = 10837,	-- High Executor Derrington
+						["coord"] = { 83.3, 69.0, 18 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 26936 },	-- Lower the Boom
 					}),

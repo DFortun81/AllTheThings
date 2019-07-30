@@ -27,9 +27,8 @@ _.Zones =
 					}),
 					crit(4, {	-- The Mender's Stead
 						["sourceQuests"] = {
-							--26999,	-- A New Era for the Plaguelands (TODO: verify if needed)
 							--27055,	-- Students of Krastinov (TODO: verify if needed)
-							--27155,	-- Turning Yourself In (TODO: verify if needed)
+							27155,	-- Turning Yourself In
 							26955,	-- Zen'Kiki and the Cultists
 						},
 					}),
