@@ -300,6 +300,8 @@ _.NeverImplemented =
 		-------------------
 		--      BFA      --
 		-------------------
+		q(56056),	-- Wekemara kill questID (secondary to WQ, which needs to be attached for /attwq)
+		q(56899),	-- Wekemara bonus roll
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
 		q(51871),	-- Drustvar repeatable random chest
 		q(51875),	-- Drustvar repeatable random chest
