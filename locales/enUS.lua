@@ -619,7 +619,7 @@ AllTheThings.L = {
 		[-800] = "Interface\\Icons\\inv_horse2purple",								-- Lucid Nightmare
 		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",						-- Riddler's Mind-Worm
 		[-802] = "Interface\\Icons\\inv_faeriedragon2_orange",						-- Sun Darter Hatchling
-		[-803] = "Interface\\Icons\\inv_fishing_lure_starfish",						-- Kosumoth the Hungering
+	--	[-803] = "Interface\\Icons\\inv_fishing_lure_starfish",						-- Kosumoth the Hungering
 		[-804] = "Interface\\Icons\\inv_misc_toy_02",								-- Uuna
 		[-805] = "Interface\\Icons\\inv_demongoat",									-- Baa'l
 		[-806] = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",				-- Waist of Time
@@ -1327,10 +1327,10 @@ AllTheThings.L = {
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
 		[-801] = GetSpellInfo(243025),											-- Riddler's Mind-Worm
 		[-802] = GetSpellInfo(231215),											-- Sun Darter Hatchling
-		[-803] = C_QuestLog.GetQuestInfo(45479),								-- Kosumoth the Hungering
+	--	[-803] = select(2, EJ_GetCreatureInfo(111573)),							-- Kosumoth the Hungering
 		[-804] = GetSpellInfo(254763),											-- Uuna
 		[-805] = GetSpellInfo(277461),											-- Baa'l
-		[-806] = GetItemInfo(162690,											-- Waist of Time
+		[-806] = select(1, GetItemInfo(162690)),								-- Waist of Time
 		
 -- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
