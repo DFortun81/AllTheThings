@@ -152,22 +152,26 @@ _.PVP =
 				n(-17, {	-- Quests
 					q(56336, {	-- Uncovering the Artifact Fragments (A)
 						["qg"] = 155283,	-- Ecilam
-					--	["coord"] = { },
+						["coord"] = { 44.6, 74.4, 1478 },
+						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(56337, {	-- Uncovering the Artifact Fragments (H)
 						["qg"] = 155286,	-- Fura
 						["coord"] = { 45.4, 27.1, 1478 },
+						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(56338, {	-- Volrath Must Die
 						["qg"] = 84173,	-- Commander Anne Dunworthy
 						["coord"] = { 44.6, 74.0, 1478 },
+						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(56339, {	-- Tremblade Must Die
 						["qg"] = 84473,	-- General Ushet Wolfbarger
 						["coord"] = { 45.0, 27.8, 1478 },
+						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(35638, {	-- A Few Artifact Fragments (A)

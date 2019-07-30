@@ -10,15 +10,15 @@ _.PVP =
 					i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
 						["sym"] = {
 							{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
-							{"pop"},	-- Push all of the groups contained to the processing layer.
+							{"pop"},	-- Discard the "Cataclysm" header and acquire the children.
 							{"where", "npcID", -672 },	-- Select the "Vicious Gladiator: Season 9" header
-							{"pop"},	-- Push all of the groups contained to the processing layer.
+							{"pop"},	-- Discard the "Vicious Gladiator: Season 9" header and acquire the children.
 							{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header
-							{"pop"},	-- Push all of the groups contained to the processing layer.
+							{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
 							{"where", "npcID", -319 },	-- Select the "Weapons" header.
-							{"pop"},	-- Push all of the groups contained to the processing layer.
+							{"pop"},	-- Discard the "Weapons" header and acquire the children.
 							{"is", "itemID"},
-							{"exclude", "itemID", 146640 }, -- Don't use the Arsenal / Ensamble itself
+							{"exclude", "itemID", 146641 }, -- Don't use the Arsenal / Ensamble itself
 						},
 					}),
 					i(61360),	-- Vicious Gladiator's Barrier
@@ -507,15 +507,15 @@ _.PVP =
 					i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 						["sym"] = {
 							{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
-							{"pop"},	-- Push all of the groups contained to the processing layer.
+							{"pop"},	-- Discard the "Cataclysm" header and acquire the children.
 							{"where", "npcID", -673 },	-- Select the "Ruthless Gladiator: Season 10" header
-							{"pop"},	-- Push all of the groups contained to the processing layer.
+							{"pop"},	-- Discard the "Ruthless Gladiator: Season 10" header and acquire the children.
 							{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header
-							{"pop"},	-- Push all of the groups contained to the processing layer.
+							{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
 							{"where", "npcID", -319 },	-- Select the "Weapons" header.
-							{"pop"},	-- Push all of the groups contained to the processing layer.
+							{"pop"},	-- Discard the "Weapons" header and acquire the children.
 							{"is", "itemID"},
-							{"not", "itemID", 146640 }, -- Don't use the Arsenal / Ensamble itself
+							{"exclude", "itemID", 146640 }, -- Don't use the Arsenal / Ensamble itself
 						},
 					}),
 					i(70242),	-- Ruthless Gladiator's Barrier
@@ -963,9 +963,542 @@ _.PVP =
 					un(2, i(70505)),	-- Ruthless Gladiator's Warboots of Alacrity
 					un(2, i(70504)),	-- Ruthless Gladiator's Warboots of Cruelty
 				}),
+				n(-384,	{	-- Neck
+					i(70382),	-- Ruthless Gladiator's Choker of Accuracy
+					i(70381),	-- Ruthless Gladiator's Choker of Proficiency
+					i(70380),	-- Ruthless Gladiator's Necklace of Proficiency
+					i(70379),	-- Ruthless Gladiator's Necklace of Prowess
+					i(70377),	-- Ruthless Gladiator's Pendant of Alacrity
+					i(70376),	-- Ruthless Gladiator's Pendant of Diffusion
+					i(70378),	-- Ruthless Gladiator's Pendant of Meditation
+				}),
+				n(-385,	{	-- Finger
+					i(70370),	-- Ruthless Gladiator's Band of Accuracy
+					i(70369),	-- Ruthless Gladiator's Band of Cruelty
+					i(70371),	-- Ruthless Gladiator's Band of Meditation
+					i(70374),	-- Ruthless Gladiator's Ring of Accuracy
+					i(70375),	-- Ruthless Gladiator's Ring of Cruelty
+					i(70373),	-- Ruthless Gladiator's Signet of Accuracy
+					i(70372),	-- Ruthless Gladiator's Signet of Cruelty
+				}),
+				n(-386,	{	-- Trinket
+					i(70399),	-- Ruthless Gladiator's Badge of Conquest
+					i(70401),	-- Ruthless Gladiator's Badge of Dominance
+					i(70400),	-- Ruthless Gladiator's Badge of Victory
+					i(70396),	-- Ruthless Gladiator's Emblem of Cruelty
+					i(70397),	-- Ruthless Gladiator's Emblem of Meditation
+					i(70398),	-- Ruthless Gladiator's Emblem of Tenacity
+					i(70404),	-- Ruthless Gladiator's Insignia of Conquest
+					i(70402),	-- Ruthless Gladiator's Insignia of Dominance
+					i(70403),	-- Ruthless Gladiator's Insignia of Victory
+					i(70390),	-- Ruthless Gladiator's Medallion of Cruelty (A)
+					i(70391),	-- Ruthless Gladiator's Medallion of Meditation (A)
+					i(70392),	-- Ruthless Gladiator's Medallion of Tenacity (A)
+					i(70393),	-- Ruthless Gladiator's Medallion of Cruelty (H)
+					i(70394),	-- Ruthless Gladiator's Medallion of Meditation (H)
+					i(70395),	-- Ruthless Gladiator's Medallion of Tenacity (H)
+				}),
 			}),
 		}),
 		n(-674, {	-- Cataclysmic Gladiator: Season 11
+			n(-661, {	-- Gladiator PvP Gear
+				n(-319, {	-- Weapons
+					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
+						["sym"] = {
+							{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
+							{"pop"},	-- Discard the "Cataclysm" header and acquire the children.
+							{"where", "npcID", -674 },	-- Select the "Cataclysmic Gladiator: Season 11" header
+							{"pop"},	-- Discard the "Cataclysmic Gladiator: Season 11" header and acquire the children.
+							{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header
+							{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
+							{"where", "npcID", -319 },	-- Select the "Weapons" header.
+							{"pop"},	-- Discard the "Weapons" header and acquire the children.
+							{"is", "itemID"},
+							{"exclude", "itemID", 146639 }, -- Don't use the Arsenal / Ensamble itself
+						},
+					}),
+					i(73468),	-- Cataclysmic Gladiator's Barrier
+					i(73450),	-- Cataclysmic Gladiator's Baton of Light
+					i(73466),	-- Cataclysmic Gladiator's Battle Staff
+					i(73448),	-- Cataclysmic Gladiator's Bonecracker
+					i(73476),	-- Cataclysmic Gladiator's Bonegrinder
+					i(73474),	-- Cataclysmic Gladiator's Cleaver
+					i(73477),	-- Cataclysmic Gladiator's Decapitator
+					i(73469),	-- Cataclysmic Gladiator's Endgame
+					i(73457),	-- Cataclysmic Gladiator's Energy Staff
+					i(73453),	-- Cataclysmic Gladiator's Fleshslicer
+					i(73459),	-- Cataclysmic Gladiator's Gavel
+					i(73475),	-- Cataclysmic Gladiator's Greatsword
+					i(73449),	-- Cataclysmic Gladiator's Hacker
+					i(73463),	-- Cataclysmic Gladiator's Heavy Crossbow
+					i(73470),	-- Cataclysmic Gladiator's Longbow
+					i(73456),	-- Cataclysmic Gladiator's Pike
+					i(73473),	-- Cataclysmic Gladiator's Pummeler
+					i(73472),	-- Cataclysmic Gladiator's Quickblade
+					i(73458),	-- Cataclysmic Gladiator's Redoubt
+					i(73465),	-- Cataclysmic Gladiator's Reprieve
+					i(73460),	-- Cataclysmic Gladiator's Rifle
+					i(73452),	-- Cataclysmic Gladiator's Right Render
+					i(73454),	-- Cataclysmic Gladiator's Ripper
+					i(73455),	-- Cataclysmic Gladiator's Shanker
+					i(73446),	-- Cataclysmic Gladiator's Shield Wall
+					i(73461),	-- Cataclysmic Gladiator's Shiv
+					i(73451),	-- Cataclysmic Gladiator's Slasher
+					i(73447),	-- Cataclysmic Gladiator's Slicer
+					i(73467),	-- Cataclysmic Gladiator's Spellblade
+					i(73462),	-- Cataclysmic Gladiator's Staff
+					i(73464),	-- Cataclysmic Gladiator's Touch of Defeat
+				}),
+				cl(6, {	-- Death Knight
+					i(146443, {	-- Ensemble: Cataclysmic Gladiator's Dreadplate Armor
+						i(73620),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
+						i(73619),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
+						i(73618),	-- Cataclysmic Gladiator's Dreadplate Helm
+						i(73617),	-- Cataclysmic Gladiator's Dreadplate Legguards
+						i(73616),	-- Cataclysmic Gladiator's Dreadplate Shoulders
+					}),
+					i(73620),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
+					i(73619),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
+					i(73618),	-- Cataclysmic Gladiator's Dreadplate Helm
+					i(73617),	-- Cataclysmic Gladiator's Dreadplate Legguards
+					i(73616),	-- Cataclysmic Gladiator's Dreadplate Shoulders
+				}),
+				cl(11, {	-- Druid
+					i(146441, {	-- Ensemble: Cataclysmic Gladiator's Dragonhide Armor
+						i(73615),	-- Cataclysmic Gladiator's Dragonhide Gloves
+						i(73614),	-- Cataclysmic Gladiator's Dragonhide Helm
+						i(73613),	-- Cataclysmic Gladiator's Dragonhide Legguards
+						i(73612),	-- Cataclysmic Gladiator's Dragonhide Robes
+						i(73611),	-- Cataclysmic Gladiator's Dragonhide Spaulders
+						i(73607),	-- Cataclysmic Gladiator's Kodohide Gloves
+						i(73606),	-- Cataclysmic Gladiator's Kodohide Helm
+						i(73605),	-- Cataclysmic Gladiator's Kodohide Legguards
+						i(73604),	-- Cataclysmic Gladiator's Kodohide Robes
+						i(73603),	-- Cataclysmic Gladiator's Kodohide Spaulders
+						i(73599),	-- Cataclysmic Gladiator's Wyrmhide Gloves
+						i(73598),	-- Cataclysmic Gladiator's Wyrmhide Helm
+						i(73597),	-- Cataclysmic Gladiator's Wyrmhide Legguards
+						i(73596),	-- Cataclysmic Gladiator's Wyrmhide Robes
+						i(73595),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+					}),
+					i(73615),	-- Cataclysmic Gladiator's Dragonhide Gloves
+					i(73614),	-- Cataclysmic Gladiator's Dragonhide Helm
+					i(73613),	-- Cataclysmic Gladiator's Dragonhide Legguards
+					i(73612),	-- Cataclysmic Gladiator's Dragonhide Robes
+					i(73611),	-- Cataclysmic Gladiator's Dragonhide Spaulders
+					i(73607),	-- Cataclysmic Gladiator's Kodohide Gloves
+					i(73606),	-- Cataclysmic Gladiator's Kodohide Helm
+					i(73605),	-- Cataclysmic Gladiator's Kodohide Legguards
+					i(73604),	-- Cataclysmic Gladiator's Kodohide Robes
+					i(73603),	-- Cataclysmic Gladiator's Kodohide Spaulders
+					i(73599),	-- Cataclysmic Gladiator's Wyrmhide Gloves
+					i(73598),	-- Cataclysmic Gladiator's Wyrmhide Helm
+					i(73597),	-- Cataclysmic Gladiator's Wyrmhide Legguards
+					i(73596),	-- Cataclysmic Gladiator's Wyrmhide Robes
+					i(73595),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+				}),
+				cl(3, {	-- Hunter
+					i(146439, {	-- Ensemble: Cataclysmic Gladiator's Chain Armor
+						i(73584),	-- Cataclysmic Gladiator's Chain Armor
+						i(73583),	-- Cataclysmic Gladiator's Chain Gauntlets
+						i(73582),	-- Cataclysmic Gladiator's Chain Helm
+						i(73581),	-- Cataclysmic Gladiator's Chain Leggings
+						i(73580),	-- Cataclysmic Gladiator's Chain Spaulders
+					}),
+					i(73584),	-- Cataclysmic Gladiator's Chain Armor
+					i(73583),	-- Cataclysmic Gladiator's Chain Gauntlets
+					i(73582),	-- Cataclysmic Gladiator's Chain Helm
+					i(73581),	-- Cataclysmic Gladiator's Chain Leggings
+					i(73580),	-- Cataclysmic Gladiator's Chain Spaulders
+				}),
+				cl(8, {	-- Mage
+					i(146457, {	-- Ensemble: Cataclysmic Gladiator's Silk Armor
+						i(73572),	-- Cataclysmic Gladiator's Silk Amice
+						i(73575),	-- Cataclysmic Gladiator's Silk Cowl
+						i(73576),	-- Cataclysmic Gladiator's Silk Handguards
+						i(73573),	-- Cataclysmic Gladiator's Silk Robe
+						i(73574),	-- Cataclysmic Gladiator's Silk Trousers
+					}),
+					i(73572),	-- Cataclysmic Gladiator's Silk Amice
+					i(73575),	-- Cataclysmic Gladiator's Silk Cowl
+					i(73576),	-- Cataclysmic Gladiator's Silk Handguards
+					i(73573),	-- Cataclysmic Gladiator's Silk Robe
+					i(73574),	-- Cataclysmic Gladiator's Silk Trousers
+				}),
+				cl(2, {	-- Paladin
+					i(146455, {	-- Ensemble: Cataclysmic Gladiator's Scaled Armor
+						i(88170),	-- Cataclysmic Gladiator's Ornamented Battlerobe
+						i(73560),	-- Cataclysmic Gladiator's Ornamented Chestguard
+						i(73559),	-- Cataclysmic Gladiator's Ornamented Gloves
+						i(73558),	-- Cataclysmic Gladiator's Ornamented Headcover
+						i(73557),	-- Cataclysmic Gladiator's Ornamented Legplates
+						i(73556),	-- Cataclysmic Gladiator's Ornamented Spaulders
+						i(73571),	-- Cataclysmic Gladiator's Scaled Chestpiece
+						i(73570),	-- Cataclysmic Gladiator's Scaled Gauntlets
+						i(73569),	-- Cataclysmic Gladiator's Scaled Helm
+						i(73568),	-- Cataclysmic Gladiator's Scaled Legguards
+						i(73567),	-- Cataclysmic Gladiator's Scaled Shoulders
+					}),
+					i(88170),	-- Cataclysmic Gladiator's Ornamented Battlerobe
+					i(73560),	-- Cataclysmic Gladiator's Ornamented Chestguard
+					i(73559),	-- Cataclysmic Gladiator's Ornamented Gloves
+					i(73558),	-- Cataclysmic Gladiator's Ornamented Headcover
+					i(73557),	-- Cataclysmic Gladiator's Ornamented Legplates
+					i(73556),	-- Cataclysmic Gladiator's Ornamented Spaulders
+					i(73571),	-- Cataclysmic Gladiator's Scaled Chestpiece
+					i(73570),	-- Cataclysmic Gladiator's Scaled Gauntlets
+					i(73569),	-- Cataclysmic Gladiator's Scaled Helm
+					i(73568),	-- Cataclysmic Gladiator's Scaled Legguards
+					i(73567),	-- Cataclysmic Gladiator's Scaled Shoulders
+				}),
+				cl(5, {	-- Priest
+					i(146453, {	-- Ensemble: Cataclysmic Gladiator's Satin Armor
+						i(73549),	-- Cataclysmic Gladiator's Mooncloth Gloves
+						i(73548),	-- Cataclysmic Gladiator's Mooncloth Helm
+						i(73547),	-- Cataclysmic Gladiator's Mooncloth Leggings
+						i(73545),	-- Cataclysmic Gladiator's Mooncloth Mantle
+						i(73546),	-- Cataclysmic Gladiator's Mooncloth Robe
+						i(73544),	-- Cataclysmic Gladiator's Satin Gloves
+						i(73543),	-- Cataclysmic Gladiator's Satin Hood
+						i(73542),	-- Cataclysmic Gladiator's Satin Leggings
+						i(73540),	-- Cataclysmic Gladiator's Satin Mantle
+						i(73541),	-- Cataclysmic Gladiator's Satin Robe
+					}),
+					i(73549),	-- Cataclysmic Gladiator's Mooncloth Gloves
+					i(73548),	-- Cataclysmic Gladiator's Mooncloth Helm
+					i(73547),	-- Cataclysmic Gladiator's Mooncloth Leggings
+					i(73545),	-- Cataclysmic Gladiator's Mooncloth Mantle
+					i(73546),	-- Cataclysmic Gladiator's Mooncloth Robe
+					i(73544),	-- Cataclysmic Gladiator's Satin Gloves
+					i(73543),	-- Cataclysmic Gladiator's Satin Hood
+					i(73542),	-- Cataclysmic Gladiator's Satin Leggings
+					i(73540),	-- Cataclysmic Gladiator's Satin Mantle
+					i(73541),	-- Cataclysmic Gladiator's Satin Robe
+				}),
+				cl(4, {	-- Rogue
+					i(146447, {	-- Ensemble: Cataclysmic Gladiator's Leather Armor
+						i(73526),	-- Cataclysmic Gladiator's Leather Gloves
+						i(73525),	-- Cataclysmic Gladiator's Leather Helm
+						i(73524),	-- Cataclysmic Gladiator's Leather Legguards
+						i(73523),	-- Cataclysmic Gladiator's Leather Spaulders
+						i(73527),	-- Cataclysmic Gladiator's Leather Tunic
+					}),
+					i(73526),	-- Cataclysmic Gladiator's Leather Gloves
+					i(73525),	-- Cataclysmic Gladiator's Leather Helm
+					i(73524),	-- Cataclysmic Gladiator's Leather Legguards
+					i(73523),	-- Cataclysmic Gladiator's Leather Spaulders
+					i(73527),	-- Cataclysmic Gladiator's Leather Tunic
+				}),
+				cl(7, {	-- Shaman
+					i(146451, {	-- Ensemble: Cataclysmic Gladiator's Ringmail Armor
+						i(73512),	-- Cataclysmic Gladiator's Linked Armor
+						i(73511),	-- Cataclysmic Gladiator's Linked Gauntlets
+						i(73510),	-- Cataclysmic Gladiator's Linked Helm
+						i(73509),	-- Cataclysmic Gladiator's Linked Leggings
+						i(73508),	-- Cataclysmic Gladiator's Linked Spaulders
+						i(73506),	-- Cataclysmic Gladiator's Mail Armor
+						i(73505),	-- Cataclysmic Gladiator's Mail Gauntlets
+						i(73504),	-- Cataclysmic Gladiator's Mail Helm
+						i(73503),	-- Cataclysmic Gladiator's Mail Leggings
+						i(73502),	-- Cataclysmic Gladiator's Mail Spaulders
+						i(73517),	-- Cataclysmic Gladiator's Ringmail Armor
+						i(73516),	-- Cataclysmic Gladiator's Ringmail Gauntlets
+						i(73515),	-- Cataclysmic Gladiator's Ringmail Helm
+						i(73514),	-- Cataclysmic Gladiator's Ringmail Leggings
+						i(73513),	-- Cataclysmic Gladiator's Ringmail Spaulders
+					}),
+					i(73512),	-- Cataclysmic Gladiator's Linked Armor
+					i(73511),	-- Cataclysmic Gladiator's Linked Gauntlets
+					i(73510),	-- Cataclysmic Gladiator's Linked Helm
+					i(73509),	-- Cataclysmic Gladiator's Linked Leggings
+					i(73508),	-- Cataclysmic Gladiator's Linked Spaulders
+					i(73506),	-- Cataclysmic Gladiator's Mail Armor
+					i(73505),	-- Cataclysmic Gladiator's Mail Gauntlets
+					i(73504),	-- Cataclysmic Gladiator's Mail Helm
+					i(73503),	-- Cataclysmic Gladiator's Mail Leggings
+					i(73502),	-- Cataclysmic Gladiator's Mail Spaulders
+					i(73517),	-- Cataclysmic Gladiator's Ringmail Armor
+					i(73516),	-- Cataclysmic Gladiator's Ringmail Gauntlets
+					i(73515),	-- Cataclysmic Gladiator's Ringmail Helm
+					i(73514),	-- Cataclysmic Gladiator's Ringmail Leggings
+					i(73513),	-- Cataclysmic Gladiator's Ringmail Spaulders
+				}),
+				cl(9, {	-- Warlock
+					i(146445, {	-- Ensemble: Cataclysmic Gladiator's Felweave Armor
+						i(73483),	-- Cataclysmic Gladiator's Felweave Amice
+						i(73486),	-- Cataclysmic Gladiator's Felweave Cowl
+						i(73487),	-- Cataclysmic Gladiator's Felweave Handguards
+						i(73484),	-- Cataclysmic Gladiator's Felweave Raiment
+						i(73485),	-- Cataclysmic Gladiator's Felweave Trousers
+					}),
+					i(73483),	-- Cataclysmic Gladiator's Felweave Amice
+					i(73486),	-- Cataclysmic Gladiator's Felweave Cowl
+					i(73487),	-- Cataclysmic Gladiator's Felweave Handguards
+					i(73484),	-- Cataclysmic Gladiator's Felweave Raiment
+					i(73485),	-- Cataclysmic Gladiator's Felweave Trousers
+				}),
+				cl(1, {	-- Warrior
+					i(146449, {	-- Ensemble: Cataclysmic Gladiator's Plate Armor
+						i(73482),	-- Cataclysmic Gladiator's Plate Chestpiece
+						i(73481),	-- Cataclysmic Gladiator's Plate Gauntlets
+						i(73480),	-- Cataclysmic Gladiator's Plate Helm
+						i(73479),	-- Cataclysmic Gladiator's Plate Legguards
+						i(73478),	-- Cataclysmic Gladiator's Plate Shoulders
+					}),
+					i(73482),	-- Cataclysmic Gladiator's Plate Chestpiece
+					i(73481),	-- Cataclysmic Gladiator's Plate Gauntlets
+					i(73480),	-- Cataclysmic Gladiator's Plate Helm
+					i(73479),	-- Cataclysmic Gladiator's Plate Legguards
+					i(73478),	-- Cataclysmic Gladiator's Plate Shoulders
+				}),
+				n(-322, {	-- Back
+					i(73647),	-- Cataclysmic Gladiator's Cape of Cruelty
+					i(73646),	-- Cataclysmic Gladiator's Cape of Prowess
+					i(73495),	-- Cataclysmic Gladiator's Cloak of Alacrity
+					i(73494),	-- Cataclysmic Gladiator's Cloak of Prowess
+					i(73629),	-- Cataclysmic Gladiator's Drape of Diffusion
+					i(73628),	-- Cataclysmic Gladiator's Drape of Meditation
+					i(73630),	-- Cataclysmic Gladiator's Drape of Prowess
+				}),
+				n(-326, {	-- Wrists
+					i(73518),	-- Cataclysmic Gladiator's Armbands of Meditation
+					i(73519),	-- Cataclysmic Gladiator's Armbands of Prowess
+					i(73550),	-- Cataclysmic Gladiator's Armplates of Alacrity
+					i(73551),	-- Cataclysmic Gladiator's Armplates of Proficiency
+					i(73528),	-- Cataclysmic Gladiator's Armwraps of Accuracy
+					i(73529),	-- Cataclysmic Gladiator's Armwraps of Alacrity
+					i(73608),	-- Cataclysmic Gladiator's Bindings of Meditation
+					i(73600),	-- Cataclysmic Gladiator's Bindings of Prowess
+					i(73561),	-- Cataclysmic Gladiator's Bracers of Meditation
+					i(73562),	-- Cataclysmic Gladiator's Bracers of Prowess
+					i(73633),	-- Cataclysmic Gladiator's Cuffs of Accuracy
+					i(73631),	-- Cataclysmic Gladiator's Cuffs of Meditation
+					i(73632),	-- Cataclysmic Gladiator's Cuffs of Prowess
+					i(73585),	-- Cataclysmic Gladiator's Wristguards of Accuracy
+					i(73586),	-- Cataclysmic Gladiator's Wristguards of Alacrity
+				}),
+				n(-328, {	-- Waist
+					i(73602),	-- Cataclysmic Gladiator's Belt of Cruelty
+					i(73610),	-- Cataclysmic Gladiator's Belt of Meditation
+					i(73566),	-- Cataclysmic Gladiator's Clasp of Cruelty
+					i(73565),	-- Cataclysmic Gladiator's Clasp of Meditation
+					i(73638),	-- Cataclysmic Gladiator's Cord of Accuracy
+					i(73639),	-- Cataclysmic Gladiator's Cord of Cruelty
+					i(73637),	-- Cataclysmic Gladiator's Cord of Meditation
+					i(73555),	-- Cataclysmic Gladiator's Girdle of Cruelty
+					i(73554),	-- Cataclysmic Gladiator's Girdle of Prowess
+					i(73589),	-- Cataclysmic Gladiator's Links of Accuracy
+					i(73590),	-- Cataclysmic Gladiator's Links of Cruelty
+					i(73532),	-- Cataclysmic Gladiator's Waistband of Accuracy
+					i(73533),	-- Cataclysmic Gladiator's Waistband of Cruelty
+					i(73507),	-- Cataclysmic Gladiator's Waistguard of Cruelty
+					i(73522),	-- Cataclysmic Gladiator's Waistguard of Meditation
+				}),
+				n(-330, {	-- Feet	
+					i(73530),	-- Cataclysmic Gladiator's Boots of Alacrity
+					i(73531),	-- Cataclysmic Gladiator's Boots of Cruelty
+					i(73601),	-- Cataclysmic Gladiator's Footguards of Alacrity
+					i(73609),	-- Cataclysmic Gladiator's Footguards of Meditation
+					i(73564),	-- Cataclysmic Gladiator's Greaves of Alacrity
+					i(73563),	-- Cataclysmic Gladiator's Greaves of Meditation	
+					i(73521),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+					i(73587),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+					i(73588),	-- Cataclysmic Gladiator's Sabatons of Cruelty
+					i(73520),	-- Cataclysmic Gladiator's Sabatons of Meditation
+					i(73635),	-- Cataclysmic Gladiator's Treads of Alacrity
+					i(73636),	-- Cataclysmic Gladiator's Treads of Cruelty
+					i(73634),	-- Cataclysmic Gladiator's Treads of Meditation	
+					i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
+					i(73553),	-- Cataclysmic Gladiator's Warboots of Cruelty
+				}),
+				n(-384,	{	-- Neck
+					i(73493),	-- Cataclysmic Gladiator's Choker of Proficiency
+					i(73492),	-- Cataclysmic Gladiator's Choker of Prowess
+					i(73645),	-- Cataclysmic Gladiator's Necklace of Proficiency
+					i(73644),	-- Cataclysmic Gladiator's Necklace of Prowess
+					i(73627),	-- Cataclysmic Gladiator's Pendant of Alacrity
+					i(73626),	-- Cataclysmic Gladiator's Pendant of Diffusion
+					i(73625),	-- Cataclysmic Gladiator's Pendant of Meditation
+				}),
+				n(-385,	{	-- Finger
+					i(73622),	-- Cataclysmic Gladiator's Band of Accuracy
+					i(73623),	-- Cataclysmic Gladiator's Band of Cruelty
+					i(73621),	-- Cataclysmic Gladiator's Band of Meditation
+					i(73640),	-- Cataclysmic Gladiator's Ring of Accuracy
+					i(73641),	-- Cataclysmic Gladiator's Ring of Cruelty
+					i(73488),	-- Cataclysmic Gladiator's Signet of Accuracy
+					i(73489),	-- Cataclysmic Gladiator's Signet of Cruelty
+				}),
+				n(-386,	{	-- Trinket
+					i(73648),	-- Cataclysmic Gladiator's Badge of Conquest
+					i(73498),	-- Cataclysmic Gladiator's Badge of Dominance
+					i(73496),	-- Cataclysmic Gladiator's Badge of Victory
+					i(73593),	-- Cataclysmic Gladiator's Emblem of Cruelty
+					i(73591),	-- Cataclysmic Gladiator's Emblem of Meditation
+					i(73592),	-- Cataclysmic Gladiator's Emblem of Tenacity
+					i(73643),	-- Cataclysmic Gladiator's Insignia of Conquest
+					i(73497),	-- Cataclysmic Gladiator's Insignia of Dominance
+					i(73491),	-- Cataclysmic Gladiator's Insignia of Victory
+					i(73539),	-- Cataclysmic Gladiator's Medallion of Cruelty (A)
+					i(73535),	-- Cataclysmic Gladiator's Medallion of Meditation (A)
+					i(73536),	-- Cataclysmic Gladiator's Medallion of Tenacity (A)
+					i(73538),	-- Cataclysmic Gladiator's Medallion of Cruelty (H)
+					i(73534),	-- Cataclysmic Gladiator's Medallion of Meditation (H)
+					i(73537),	-- Cataclysmic Gladiator's Medallion of Tenacity (H)
+				}),
+			}),
+			n(-662, {	-- Elite PvP Gear
+				n(-319, {	-- Weapons
+					un(2, i(73435)),	-- Cataclysmic Gladiator's Barrier
+					un(2, i(73417)),	-- Cataclysmic Gladiator's Baton of Light
+					un(2, i(73433)),	-- Cataclysmic Gladiator's Battle Staff
+					un(2, i(73415)),	-- Cataclysmic Gladiator's Bonebracker
+					un(2, i(73443)),	-- Cataclysmic Gladiator's Bonegrinder
+					un(2, i(73441)),	-- Cataclysmic Gladiator's Cleaver
+					un(2, i(73444)),	-- Cataclysmic Gladiator's Decapitator
+					un(2, i(73436)),	-- Cataclysmic Gladiator's Endgame
+					un(2, i(73424)),	-- Cataclysmic Gladiator's Engery Staff
+					un(2, i(73420)),	-- Cataclysmic Gladiator's Flesh Slicer
+					un(2, i(73426)),	-- Cataclysmic Gladiator's Gavel
+					un(2, i(73442)),	-- Cataclysmic Gladiator's Greatsword
+					un(2, i(73416)),	-- Cataclysmic Gladiator's Hacker
+					un(2, i(73430)),	-- Cataclysmic Gladiator's Heavy Crossbow
+					un(2, i(73437)),	-- Cataclysmic Gladiator's Longbow
+					un(2, i(73423)),	-- Cataclysmic Gladiator's Pike
+					un(2, i(73440)),	-- Cataclysmic Gladiator's Pummeler
+					un(2, i(73439)),	-- Cataclysmic Gladiator's Quickblade
+					un(2, i(73425)),	-- Cataclysmic Gladiator's Redoubt
+					un(2, i(73432)),	-- Cataclysmic Gladiator's Reprieve
+					un(2, i(73427)),	-- Cataclysmic Gladiator's Rifle
+					un(2, i(73419)),	-- Cataclysmic Gladiator's Right Render
+					un(2, i(73421)),	-- Cataclysmic Gladiator's Ripper
+					un(2, i(73422)),	-- Cataclysmic Gladiator's Shanker
+					un(2, i(73413)),	-- Cataclysmic Gladiator's Shield Wall
+					un(2, i(73428)),	-- Cataclysmic Gladiator's Shiv
+					un(2, i(73418)),	-- Cataclysmic Gladiator's Slasher
+					un(2, i(73414)),	-- Cataclysmic Gladiator's Slicer
+					un(2, i(73434)),	-- Cataclysmic Gladiator's Spellblade
+					un(2, i(73429)),	-- Cataclysmic Gladiator's Staff
+					un(2, i(73431)),	-- Cataclysmic Gladiator's Touch of Defeat
+				}),
+				cl(6, {	-- Death Knight
+					un(2, i(73742)),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
+					un(2, i(73741)),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
+					un(2, i(73740)),	-- Cataclysmic Gladiator's Dreadplate Helm
+					un(2, i(73739)),	-- Cataclysmic Gladiator's Dreadplate Legguards
+					un(2, i(73738)),	-- Cataclysmic Gladiator's Dreadplate Shoulders
+				}),
+				cl(11, {	-- Druid	
+					un(2, i(73737)),	-- Cataclysmic Gladiator's Dragonhide Gloves
+					un(2, i(73736)),	-- Cataclysmic Gladiator's Dragonhide Helm
+					un(2, i(73735)),	-- Cataclysmic Gladiator's Dragonhide Legguards
+					un(2, i(73734)),	-- Cataclysmic Gladiator's Dragonhide Robe
+					un(2, i(73733)),	-- Cataclysmic Gladiator's Dragonhide Spaulders
+					un(2, i(73731)),	-- Cataclysmic Gladiator's Kodohide Gloves
+					un(2, i(73730)),	-- Cataclysmic Gladiator's Kodohide Helm
+					un(2, i(73729)),	-- Cataclysmic Gladiator's Kodohide Legguards
+					un(2, i(73728)),	-- Cataclysmic Gladiator's Kodohide Robe
+					un(2, i(73727)),	-- Cataclysmic Gladiator's Kodohide Spaulders
+					un(2, i(73725)),	-- Cataclysmic Gladiator's Wyrmhide Gloves
+					un(2, i(73724)),	-- Cataclysmic Gladiator's Wyrmhide Helm
+					un(2, i(73723)),	-- Cataclysmic Gladiator's Wyrmhide Legguards
+					un(2, i(73722)),	-- Cataclysmic Gladiator's Wyrmhide Robe
+					un(2, i(73721)),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+				}),
+				cl(3, {	-- Hunter
+					un(2, i(73718)),	-- Cataclysmic Gladiator's Chain Armor
+					un(2, i(73717)),	-- Cataclysmic Gladiator's Chain Gauntlets
+					un(2, i(73716)),	-- Cataclysmic Gladiator's Chain Helm
+					un(2, i(73715)),	-- Cataclysmic Gladiator's Chain Leggings
+					un(2, i(73714)),	-- Cataclysmic Gladiator's Chain Spaulders
+				}),
+				cl(8, {	-- Mage
+					un(2, i(73709)),	-- Cataclysmic Gladiator's Silk Amice
+					un(2, i(73712)),	-- Cataclysmic Gladiator's Silk Cowl
+					un(2, i(73713)),	-- Cataclysmic Gladiator's Silk Handguards
+					un(2, i(73710)),	-- Cataclysmic Gladiator's Silk Robe
+					un(2, i(73711)),	-- Cataclysmic Gladiator's Silk Trousers
+				}),
+				cl(2, {	-- Paladin
+					un(2, i(73701)),	-- Cataclysmic Gladiator's Ornnamented Chestguard
+					un(2, i(73700)),	-- Cataclysmic Gladiator's Ornnamented Gloves
+					un(2, i(73699)),	-- Cataclysmic Gladiator's Ornnamented Headcover
+					un(2, i(73698)),	-- Cataclysmic Gladiator's Ornnamented Legplates
+					un(2, i(73697)),	-- Cataclysmic Gladiator's Ornnamented Spaulders
+					un(2, i(73708)),	-- Cataclysmic Gladiator's Scaled Chestpiece
+					un(2, i(73707)),	-- Cataclysmic Gladiator's Scaled Gloves
+					un(2, i(73706)),	-- Cataclysmic Gladiator's Scaled Helm
+					un(2, i(73705)),	-- Cataclysmic Gladiator's Scaled Legguards
+					un(2, i(73704)),	-- Cataclysmic Gladiator's Scaled Shoulders
+				}),
+				cl(5, {	-- Priest
+					un(2, i(73694)),	-- Cataclysmic Gladiator's Mooncloth Gloves
+					un(2, i(73693)),	-- Cataclysmic Gladiator's Mooncloth Helm
+					un(2, i(73692)),	-- Cataclysmic Gladiator's Mooncloth Leggings
+					un(2, i(73690)),	-- Cataclysmic Gladiator's Mooncloth Mantle
+					un(2, i(73691)),	-- Cataclysmic Gladiator's Mooncloth Robe
+					un(2, i(73689)),	-- Cataclysmic Gladiator's Satin Gloves
+					un(2, i(73688)),	-- Cataclysmic Gladiator's Satin Hood
+					un(2, i(73687)),	-- Cataclysmic Gladiator's Satin Leggings
+					un(2, i(73685)),	-- Cataclysmic Gladiator's Satin Mantle
+					un(2, i(73686)),	-- Cataclysmic Gladiator's Satin Robe
+				}),
+				cl(4, {	-- Rogue
+					un(2, i(73681)),	-- Cataclysmic Gladiator's Leather Gloves
+					un(2, i(73680)),	-- Cataclysmic Gladiator's Leather Helm
+					un(2, i(73679)),	-- Cataclysmic Gladiator's Leather Legguards
+					un(2, i(73678)),	-- Cataclysmic Gladiator's Leather Spaulders
+					un(2, i(73682)),	-- Cataclysmic Gladiator's Leather Tunic
+				}),
+				cl(7, {	-- Shaman
+					un(2, i(73670)),	-- Cataclysmic Gladiator's Linked Armor
+					un(2, i(73669)),	-- Cataclysmic Gladiator's Linked Gauntlets
+					un(2, i(73668)),	-- Cataclysmic Gladiator's Linked Helm
+					un(2, i(73667)),	-- Cataclysmic Gladiator's Linked Legs
+					un(2, i(73666)),	-- Cataclysmic Gladiator's Linked Spaulders
+					un(2, i(73665)),	-- Cataclysmic Gladiator's Mail Armor
+					un(2, i(73664)),	-- Cataclysmic Gladiator's Mail Gauntlets
+					un(2, i(73663)),	-- Cataclysmic Gladiator's Mail Helm
+					un(2, i(73662)),	-- Cataclysmic Gladiator's Mail Leggings
+					un(2, i(73661)),	-- Cataclysmic Gladiator's Mail Spaulders
+					un(2, i(73675)),	-- Cataclysmic Gladiator's Ringmail Armor
+					un(2, i(73674)),	-- Cataclysmic Gladiator's Ringmail Gauntlets
+					un(2, i(73673)),	-- Cataclysmic Gladiator's Ringmail Helm
+					un(2, i(73672)),	-- Cataclysmic Gladiator's Ringmail Legs
+					un(2, i(73671)),	-- Cataclysmic Gladiator's Ringmail Spaulders
+				}),
+				cl(9, {	-- Warlock
+					un(2, i(73656)),	-- Cataclysmic Gladiator's Felweave Amice
+					un(2, i(73659)),	-- Cataclysmic Gladiator's Felweave Cowl
+					un(2, i(73660)),	-- Cataclysmic Gladiator's Felweave Handguards
+					un(2, i(73657)),	-- Cataclysmic Gladiator's Felweave Rainment
+					un(2, i(73658)),	-- Cataclysmic Gladiator's Felweave Trousers
+				}),
+				cl(1, {	-- Warrior
+					un(2, i(73655)),	-- Cataclysmic Gladiator's Plate Chestpiece
+					un(2, i(73654)),	-- Cataclysmic Gladiator's Plate Gloves
+					un(2, i(73653)),	-- Cataclysmic Gladiator's Plate Helm
+					un(2, i(73652)),	-- Cataclysmic Gladiator's Plate Legguards
+					un(2, i(73651)),	-- Cataclysmic Gladiator's Plate Soulders
+				}),
+				n(-330, {	-- Feet
+					un(2, i(73683)),	-- Cataclysmic Gladiator's Boots of Alacrity
+					un(2, i(73684)),	-- Cataclysmic Gladiator's Boots of Cruelty
+					un(2, i(73726)),	-- Cataclysmic Gladiator's Footguards of Alacrity
+					un(2, i(73732)),	-- Cataclysmic Gladiator's Footguards of Meditation
+					un(2, i(73703)),	-- Cataclysmic Gladiator's Greaves of Alacrity
+					un(2, i(73702)),	-- Cataclysmic Gladiator's Greaves of Mediation
+					un(2, i(73677)),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+					un(2, i(73719)),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+					un(2, i(73720)),	-- Cataclysmic Gladiator's Sabatons of Cruelty
+					un(2, i(73676)),	-- Cataclysmic Gladiator's Sabatons of Meditation
+					un(2, i(73744)),	-- Cataclysmic Gladiator's Treads of Alacrity
+					un(2, i(73745)),	-- Cataclysmic Gladiator's Treads of Cruelty 
+					un(2, i(73743)),	-- Cataclysmic Gladiator's Treads of Meditation
+					un(2, i(73695)),	-- Cataclysmic Gladiator's Warboots of Alacrity
+					un(2, i(73696)),	-- Cataclysmic Gladiator's Warboots of Cruelty					
+				}),
+			}),
 		}),
 	}),
 };
