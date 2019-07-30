@@ -9,8 +9,7 @@ _.Zones =
 				ach(4908, {	-- Ghostlands Quests
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						{	-- Citizens of Tranquillien
-							["criteriaID"] = 1,
+						crit(1, {	-- Citizens of Tranquillien
 							["sourceQuests"] = {
 								9315,	-- Anok'suten (verify)
 								9171,	-- Culinary Crunch
@@ -25,9 +24,8 @@ _.Zones =
 								9192,	-- Trouble at the Underlight Mines
 								9156,	-- WANTED: Knucklerot and Luzran (Is this really needed? WANTED quests are generally optional)
 							},
-						},
-						{	-- Farstrider Enclave
-							["criteriaID"] = 2,
+						}),
+						crit(2, {	-- Farstrider Enclave
 							["sourceQuests"] = {
 								9275,	-- A Little Dash of Seasoning
 								9277,	-- Assault on Zeb'Nowa
@@ -39,16 +37,15 @@ _.Zones =
 								9199,	-- Troll Juju
 								9174,	-- Vanquishing Aquantion
 							},
-						},
-						{	-- Dar'Khan Drathir
-							["criteriaID"] = 3,
+						}),
+						crit(3, {	-- Dar'Khan Drathir
 							["sourceQuests"] = {
 								9164,	-- Captives at Deatholme
 								9170,	-- Dar'Khan's Lieutenants
 								9167,	-- The Traitor's Destruction
 								9220,	-- War on Deatholme
 							},
-						},
+						}),
 					},
 				}),
 				q(10372, {	-- A Discreet Inquiry
