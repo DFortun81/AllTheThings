@@ -9162,6 +9162,7 @@ function app:GetDataCache()
 		if app.Categories.Secrets then
 			db = {};
 			db.expanded = false;
+			db.description = "Naughty secrets...";
 			db.text = L["SECRETS_HEADER"];
 			db.icon = "Interface\\ICONS\\INV_Horse2Purple";
 			db.g = app.Categories.Secrets;
