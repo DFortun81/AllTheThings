@@ -121,4 +121,45 @@ _.PetBattles =
 			i(122457),	-- Ultimate Battle-Training Stone
 		},
 	}),
+	q(33137, {	-- The Celestial Tournament
+		["qg"] = 73082,	-- Master Li
+		["coord"] = { 34.8, 59.6, 554 },
+		["isWeekly"] = true,
+		["maps"] = {
+			554,	-- Timeless Isle
+			571,	-- Pet Dungeon
+		},
+		["g"] = {
+			i(101529, {	-- Celestial Coin
+				ach(8519),	-- Celestial Family
+				i(102145, {	-- Chi-Chi, Hatchling of Chi-Ji
+					ach(8519, crit(2)),	-- Celestial Family / Chi-Chi, Hatchling of Chi-Ji
+				}),
+				i(101771, {	-- Xu-Fu, Cub of Xuen
+					ach(8519, crit(1)),	-- Celestial Family / Xu-Fu, Cub of Xuen
+				}),
+				i(102147, {	-- Yu'la, Broodling of Yu'lon
+					ach(8519, crit(3)),	-- Celestial Family / Yu'la, Broodling of Yu'lon
+				}),
+				i(102146, {	-- Zao, Calfling of Niuzao
+					ach(8519, crit(4)),	-- Celestial Family / Zao, Calfling of Niuzao
+				}),
+			}),
+			currency(777),	-- Timeless Coin
+		},
+	}),
+	q(33136, {	-- The Rainy Day is Here
+		["qg"] = 73082,	-- Master Li
+		["coord"] = { 34.8, 59.6, 554 },
+		["sourceQuest"] = 33137,	-- The Celestial Tournament
+		["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
+		["lvl"] = 90,
+		["maps"] = {
+			554,	-- Timeless Isle
+			571,	-- Pet Dungeon
+		},
+		["g"] = {
+			i(101529),	-- Celestial Coin
+		},
+	}),
 };

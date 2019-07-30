@@ -180,14 +180,6 @@ _.Zones =
 					},
 				},
 				{
-					["questID"] = 33137,	-- The Celestial Tournament
-					["qg"] = 73082,			-- Master Li <Celestial Tournament Host>
-					["isWeekly"] = true,
-					["groups"] = {
-						i(101529),	-- Celestial Coin
-					},
-				},
-				{
 					["questID"] = 33336,	-- The Essence of Time
 					["sourceQuest"] = 33161,	-- A Timeless Tour
 					["qg"] = 72870,	-- Kairoz
@@ -201,15 +193,6 @@ _.Zones =
 					["questID"] = 33020,	-- The Lost Secret of the Secret Ingredient
 					["sourceQuest"] = 33018,	-- Noodle Secrets Long Forgotten
 					["qg"] = 72426,	-- Lin Chao-Wei
-				},
-				{
-					["questID"] = 33136,	-- The Rainy Day is Here
-					["sourceQuest"] = 33137,	-- The Celestial Tournament
-					["qg"] = 73082,			-- Master Li <Celestial Tournament Host>
-					["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
-					["groups"] = {
-						i(101529),	-- Celestial Coin
-					},
 				},
 				{
 					["questID"] = 33228,	-- Time In Your Hands
