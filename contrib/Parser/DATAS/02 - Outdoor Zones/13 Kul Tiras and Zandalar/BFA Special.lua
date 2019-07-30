@@ -215,14 +215,14 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52809,
 							["sourceQuests"] = { 52819 },
-							--["description"] = "|cFFFFFFFFStep 2:|r Head to |cFFFFD700The Broken Shore|r, and interact with the pebble on the table in next to |cFFFFD700Drak'Thul|r. If you can't click the pebble, interact with |cFFFFD700Drak'Thul|r so he turns away from the table, or use an |cFFFFD700invsibility potion|r.",  -- Pebble txt "<An ordinary pebble, unremarkable in every way.>"d
+							["description"] = "Broken Shore",-- |cFFFFFFFFStep 2:|r Head to |cFFFFD700The Broken Shore|r, and interact with the pebble on the table in next to |cFFFFD700Drak'Thul|r. If you can't click the pebble, interact with |cFFFFD700Drak'Thul|r so he turns away from the table, or use an |cFFFFD700invsibility potion|r.",  -- Pebble txt "<An ordinary pebble, unremarkable in every way.>
 							["coord"] = { 37.5, 71.6, 646 },
 						}),
 						o(9999949, {	-- Second Pebble	-- "Ordinary Pebble"
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52810,
 							["sourceQuests"] = { 52809 },
-							--["description"] = "",
+							["description"] = "Boralus",
 							["coords"] = {
 								{ 49.6, 40.0, 1161 },	-- Nets/Entrance
 								{ 44.7, 38.5, 1161 },	-- Ordinary Pebble
@@ -232,7 +232,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52818,
 							["sourceQuests"] = { 52810 },
-							--["description"] = "",
+							["description"] = "Zuldazar",
 							["coords"] = {
 								{ 31.5, 36.0, 862 },	-- Cave Entrance
 								{ 31.9, 35.3, 862 },	-- Ordinary Pebble
@@ -242,7 +242,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52817,
 							["sourceQuests"] = { 52818 },
-							--["description"] = "",
+							["description"] = "Drustvar",
 							["coords"] = {
 								{ 35.0, 54.9, 896 },	-- Cave Entrance
 								{ 36.3, 53.5, 896 },	-- Ordinary Pebble
@@ -252,7 +252,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52816,
 							["sourceQuests"] = { 52817 },
-							--["description"] = "",
+							["description"] = "Vol'dun",
 							["coords"] = {
 								{ 63.2, 21.3, 864 },	-- Cave Entrance
 								{ 63.0, 21.6, 864 },	-- Ordinary Pebble
@@ -262,7 +262,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52815,
 							["sourceQuests"] = { 52816 },
-							--["description"] = "",
+							["description"] = "Stormsong Valley",
 							["coords"] = {
 								{ 68.3, 10.5, 942 },	-- Cave Entrance
 								{ 67.9, 13.0, 942 },	-- Ordinary Pebble
@@ -273,7 +273,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52814,
 							["sourceQuests"] = { 52815 },
-							--["description"] = "",
+							["description"] = "Nazmir",
 							["coords"] = {
 								{ 39.8, 4.0, 863 },	-- Starting location
 								{ 54.5, 7.3, 875 },	-- Ordinary Pebble
@@ -283,7 +283,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52813,
 							["sourceQuests"] = { 52814 },
-							--["description"] = "",
+							["description"] = "Boralus",
 							["coords"] = {
 								{ 37.5, 80.3, 1161 },	-- Cellar Entrance
 								{ 37.2, 79.9, 1161 },	-- Ordinary Pebble
@@ -293,7 +293,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52812,
 							["sourceQuests"] = { 52813 },
-							--["description"] = "",
+							["description"] = "Drustvar",
 							["coords"] = {
 								{ 18.3, 7.4, 896 },	-- Path Start
 								{ 17.2, 6.5, 896 },	-- Ordinary Pebble
@@ -303,7 +303,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 53632,
 							["sourceQuests"] = { 52812 },
-							--["description"] = "",
+							["description"] = "Tiragarde Sound",
 							["coords"] = {
 								{ 75.4, 70.7, 895 },	-- Cave Entrance
 								{ 74.3, 70.9, 895 },	-- Ordinary Pebble
@@ -313,7 +313,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 53633,
 							["sourceQuests"] = { 53632 },
-							--["description"] = "",
+							["description"] = "Tiragarde Sound",
 							["coords"] = {
 								{ 80.2, 19.2, 895 },	-- Cave Entrance
 								{ 79.7, 18.0, 895 },	-- Ordinary Pebble
@@ -323,7 +323,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 53634,
 							["sourceQuests"] = { 53633 },
-							--["description"] = "",
+							["description"] = "Boralus",
 							["coords"] = {
 								{ 10.0, 82.7, 1161 },	-- Cave Entrance
 								{ 59.7, 41.8, 895 },	-- Ordinary Pebble
@@ -333,7 +333,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Stone_16",
 							["questID"] = 52827,
 							["sourceQuests"] = { 53634 },
-							["description"] = "The stone reads \n\"<Something is carved into the stone.>\n\nHeckler of the Murkiest Thugs, sheathe \nyour\nBat and remove the Keg Cork, Wot?\"",
+							["description"] = "Vol'dun, Nazmir.\n\nThe stone reads:\n\"<Something is carved into the stone.>\n\nHeckler of the Murkiest Thugs, sheathe \nyour\nBat and remove the Keg Cork, Wot?\"",
 							["coords"] = {
 								{ 45.9, 3.7, 875 },	-- Starting Point
 								{ 47.7, -3, 875 },	-- Fatigue Reset Zone
@@ -343,7 +343,7 @@ _.Zones =
 						n(141909, {
 							["questID"] = 52828,
 							["sourceQuests"] = { 52827 },
-							--["description"] = "",
+							["description"] = "Frostfire Ridge",
 							["coord"] = { 62.3, 22.9, 525 },
 							["g"] = {
 								i(162578),	-- Baa'ls Darksign
