@@ -11,6 +11,18 @@ _.Secrets =
 				["modelScale"] = 1.1,
 				--["modelID"] = 80456,
 				["collectible"] = false,
+				["maps"] = {
+					33,
+					36,
+					111,
+					115,
+					198,
+					379,
+					390,
+					539,
+					627,
+					680,
+				},
 				["g"] = {
 					o(9999926, { 	-- Step 1-4: A New Friend
 						["icon"] = "Interface\\Icons\\INV_Misc_NoteBlank1a",
@@ -197,28 +209,41 @@ _.Secrets =
 					}),
 				},
 			}),]]
-			p(2352, {	-- Baa'l  -- TODO: Maps?  Descriptions
+			p(2352, {	-- Baa'l  -- TODO: Descriptions
 				["modelScale"] = 1.1,
 				--["modelID"] = 80456,
 				["collectible"] = false,
+				["description"] = "***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***",
+				["maps"] = {
+					525,
+					646,
+					862,
+					863,
+					864,
+					875,
+					895,
+					896,
+					942,
+					1161,
+				},
 				["g"] = {
 					o(293849, { 	-- Conspicuous Note
 						["icon"] = "Interface\\Icons\\INV_Misc_NoteBlank1a",
 						["questID"] = 52819,
-						["description"] = "Your journey begins in Nazmir...  The note reads \"Begin at the beginning\" \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***",
+						["description"] = "Your journey begins in Nazmir...  The note reads: \"Begin at the beginning\"",
 						["coords"] = {
 							{ 46.3, 53.9, 863 },	-- Bridge
 							{ 51.8, 59.0, 863 },	-- Conspicuous Note
 						},
 					}),
-					o(9999948, {	-- First Pebble	-- "Ordinary Pebble"
+					o(9999948, {	-- First Pebble			-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 52809,
 						["sourceQuests"] = { 52819 },
 						["description"] = "Broken Shore",-- |cFFFFFFFFStep 2:|r Head to |cFFFFD700The Broken Shore|r, and interact with the pebble on the table in next to |cFFFFD700Drak'Thul|r. If you can't click the pebble, interact with |cFFFFD700Drak'Thul|r so he turns away from the table, or use an |cFFFFD700invsibility potion|r.",  -- Pebble txt "<An ordinary pebble, unremarkable in every way.>
 						["coord"] = { 37.5, 71.6, 646 },
 					}),
-					o(9999949, {	-- Second Pebble	-- "Ordinary Pebble"
+					o(9999949, {	-- Second Pebble		-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 52810,
 						["sourceQuests"] = { 52809 },
@@ -228,7 +253,7 @@ _.Secrets =
 							{ 44.7, 38.5, 1161 },	-- Ordinary Pebble
 						},
 					}),
-					o(9999950, {	-- Third Pebble	-- "Ordinary Pebble"
+					o(9999950, {	-- Third Pebble			-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 52818,
 						["sourceQuests"] = { 52810 },
@@ -238,7 +263,7 @@ _.Secrets =
 							{ 31.9, 35.3, 862 },	-- Ordinary Pebble
 						},
 					}),
-					o(9999951, {	-- Fourth Pebble	-- "Ordinary Pebble"
+					o(9999951, {	-- Fourth Pebble		-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 52817,
 						["sourceQuests"] = { 52818 },
@@ -248,7 +273,7 @@ _.Secrets =
 							{ 36.3, 53.5, 896 },	-- Ordinary Pebble
 						},
 					}),
-					o(9999952, {	-- Fifth Pebble	-- "Ordinary Pebble"
+					o(9999952, {	-- Fifth Pebble			-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 52816,
 						["sourceQuests"] = { 52817 },
@@ -258,7 +283,7 @@ _.Secrets =
 							{ 63.0, 21.6, 864 },	-- Ordinary Pebble
 						},
 					}),
-					o(9999953, {	-- Sixth Pebble	-- "Ordinary Pebble"
+					o(9999953, {	-- Sixth Pebble			-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 52815,
 						["sourceQuests"] = { 52816 },
@@ -269,7 +294,7 @@ _.Secrets =
 							
 						},
 					}),
-					o(9999954, {	-- Seventh Pebble	-- "Ordinary Pebble"
+					o(9999954, {	-- Seventh Pebble		-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 52814,
 						["sourceQuests"] = { 52815 },
@@ -279,7 +304,7 @@ _.Secrets =
 							{ 54.5, 7.3, 875 },	-- Ordinary Pebble
 						},
 					}),
-					o(9999955, { 	-- Eighth Pebble	-- "Ordinary Pebble"
+					o(9999955, { 	-- Eighth Pebble		-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 52813,
 						["sourceQuests"] = { 52814 },
@@ -289,7 +314,7 @@ _.Secrets =
 							{ 37.2, 79.9, 1161 },	-- Ordinary Pebble
 						},
 					}),
-					o(9999956, { 	-- Ningth Pebble	-- "Ordinar Pebble"
+					o(9999956, { 	-- Ningth Pebble		-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 52812,
 						["sourceQuests"] = { 52813 },
@@ -299,7 +324,7 @@ _.Secrets =
 							{ 17.2, 6.5, 896 },	-- Ordinary Pebble
 						},
 					}),
-					o(9999957, { 	-- Tenth Pebble	-- "Ordinary Pebble"
+					o(9999957, { 	-- Tenth Pebble			-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 53632,
 						["sourceQuests"] = { 52812 },
@@ -309,7 +334,7 @@ _.Secrets =
 							{ 74.3, 70.9, 895 },	-- Ordinary Pebble
 						}
 					}),
-					o(9999958, { 	-- Eleventh Pebble	-- "Ordinary Pebble"
+					o(9999958, { 	-- Eleventh Pebble		-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 53633,
 						["sourceQuests"] = { 53632 },
@@ -319,7 +344,7 @@ _.Secrets =
 							{ 79.7, 18.0, 895 },	-- Ordinary Pebble
 						},
 					}),
-					o(9999959, { 	-- Twelfth Pebble	-- "Ordinary Pebble"
+					o(9999959, { 	-- Twelfth Pebble		-- "Ordinary Pebble"
 						["icon"] = "Interface\\Icons\\INV_Stone_16",
 						["questID"] = 53634,
 						["sourceQuests"] = { 53633 },
@@ -340,7 +365,7 @@ _.Secrets =
 							{ 55.72, -10.21, 875 },	-- Underwater Cave
 						},
 					}),
-					n(141909, {
+					n(141909, {		-- Baa'l
 						["questID"] = 52828,
 						["sourceQuests"] = { 52827 },
 						["description"] = "Frostfire Ridge",
@@ -354,6 +379,26 @@ _.Secrets =
 			i(162690, { 	-- Waist of Time  TODO: Maps?  @Grimmy verify coords and mapid's, Icons, Questid's, Descriptions.
 				["description"] = "You will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
 				["collectible"] = false,
+				["maps"] = {
+					15,
+					17,
+					23,
+					25,
+					33,
+					36,
+					37,
+					42,
+					47,
+					51,
+					69,
+					104,
+					105,
+					108,
+					125,
+					241,
+					539,
+					542,
+				},
 				["g"] = {
 					o(9999946, { 	-- Summon Baa'l
 						["icon"] = "Interface\\Icons\\PetJournalPortrait",
@@ -489,7 +534,7 @@ _.Secrets =
 							{ 90.1, 37.9, 15 },	-- Spoiled Apple
 						},
 					}),
-					o(294110, { 	-- Broken tooth
+					o(294110, { 	-- Broken Tooth
 						["icon"] = "Interface\\Icons\\INV_Archaeology_Orcclans_Grontoothnecklace",
 						["questID"] = 52910,
 						["sourceQuests"] = { 52909 },
