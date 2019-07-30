@@ -521,7 +521,7 @@ _.NeverImplemented =
 		q(55909),	-- Mecharantula first kill
 		q(55935),	-- Mr. Fixthis first kill
 		q(55928),	-- Ol' Big Tusk first kill
-					-- OOX-Avenger/MG first kill
+		q(55918),	-- OOX-Avenger/MG first kill
 		q(55936),	-- Oxidized Leachbest first kill
 		q(55911),	-- Paol Pondwader first kill
 		q(55912),	-- Rumblerocks first kill
@@ -530,7 +530,7 @@ _.NeverImplemented =
 		q(55922),	-- Seaspit first kill
 					-- Sparkqueen P'Emp first kill
 		q(55933),	-- Steel Singer Freza first kill
-					-- The Kleptoboss first kill
+		q(55931),	-- The Kleptoboss first kill
 					-- The Rusty Prince first kill
 		q(55908),	-- The Scrap King first kill
 		q(55921),	-- Uncle T'Rogg first kill

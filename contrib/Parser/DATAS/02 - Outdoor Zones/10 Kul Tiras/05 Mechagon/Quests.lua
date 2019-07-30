@@ -224,9 +224,12 @@ _.Zones =
 								},
 							}),
 							i(167844, {	-- Blueprint: Emergency Repair Kit
-								crit(7, {	-- Emergency Repair Kit
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
+								["questID"] = 55059,
+								["g"] = {
+									crit(7, {	-- Emergency Repair Kit
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								},
 							}),
 							i(169470),	-- Pressure Relief Valve
 						}),
