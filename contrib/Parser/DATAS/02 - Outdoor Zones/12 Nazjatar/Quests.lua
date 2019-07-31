@@ -2381,6 +2381,14 @@ _.Zones =
 				["coord"] = { 39.1, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
+			q(56224, {	-- WANTED: Lord Ha'kass
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+				--["objectID"] = 326142,	-- Bounty Board
+				["isDaily"] = true,
+				["coord"] = { 48.0, 61.5, 1355 },
+				["races"] = HORDE_ONLY,
+			}),
 			q(56039, {	-- We Can't Have Dull Weapons (A)
 				["qg"] = 153936,	-- Overseer Hajeer
 				["coord"] = { 36.9, 27.0, 1355 },
@@ -2486,6 +2494,15 @@ _.Zones =
 				["coord"] = { 41.3, 58.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 154241,	-- Seeker Anagi
+			}),
+			q(55872, {	-- Where They Hide
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+				--["objectID"] = 326142,	-- Bounty Board
+				["isDaily"] = true,
+				["coord"] = { 45.6, 58.6, 1355 },
+				["races"] = HORDE_ONLY,
+				["qg"] = 153364,	-- Scout Marlin
 			}),
 			q(56217, {	--	Wild Tame
 				["qgs"] = {

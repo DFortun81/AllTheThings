@@ -528,15 +528,18 @@ _.NeverImplemented =
 		q(55924),	-- Rustfeather first kill
 					-- Scrapclaw first kill  -- 56100 and 57084 both (Missing in ATT) triggered
 		q(55922),	-- Seaspit first kill
-					-- Sparkqueen P'Emp first kill
+		q(55923),	-- Sparkqueen P'Emp first kill
 		q(55933),	-- Steel Singer Freza first kill
 		q(55931),	-- The Kleptoboss first kill
 					-- The Rusty Prince first kill
 		q(55908),	-- The Scrap King first kill
 		q(55921),	-- Uncle T'Rogg first kill
-		q(57081),	-- First Mechanized Chest of the week(Minipack: Mechagon)
-		q(57133),	-- First Mechanized Chest of the week(Minipack: Mechagon)
+		q(57081),	-- First Mechanized Chest of the week(Minipack: Mechagon)-- Still need to narrow down exact trigger
+		q(57133),	-- First Mechanized Chest of the week(Minipack: Mechagon)-- Still need to narrow down exact trigger
+		q(56100),	-- First Beastbot kill of the week(Minipack: Bondo's Yard)-- Still need to narrow down exact trigger
+		q(57135),	-- First Beastbot kill of the week(Minipack: Bondo's Yard)-- Still need to narrow down exact trigger
 		q(56004),	-- looting Energy Cell while on the quest "We Can Fix It"
 		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"
+		q(55623),	-- Seems to trigger after completion of the WQ zone daily.  Mechanized chests and Rustbolt Rebellion WQ confirmed triggering this.
 	}),
 };

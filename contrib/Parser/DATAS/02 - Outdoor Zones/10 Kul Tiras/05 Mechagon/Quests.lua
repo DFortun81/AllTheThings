@@ -603,6 +603,11 @@ _.Zones =
 						}),
 					},
 				}),
+				q(55456, {	-- Paint Vial: Copper Trim
+					crit(4, {	-- Copper Trim
+						["achievementID"] = 13513,	-- Available in Eight Colors
+					}),
+				}),
 				q(55451, {	-- Paint Vial: Fireball Red
 				--	["description"] = "This item can drop from any of the Mechanized Chests in the zone.",
 					["g"] = {
