@@ -12038,7 +12038,12 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				{ 14 },		-- Arathi Highlands
 				{ 62 },		-- Darkshore
 				{ 875 },	-- Zandalar
-				{ 876 },	-- Kul'Tiras
+				{
+					876,	-- Kul'Tiras
+					{
+						{ 895, 5896, 53939 },	-- Tiragarde Sound
+					}
+				},	
 				{ 
 					619, -- Broken Isles
 					{
@@ -12184,6 +12189,106 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											end
 										end
 									end
+									
+									local numQuestRewards = GetNumQuestLogRewards (questObject.questID);
+									for j=1,numQuestRewards,1 do
+										local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);
+										if itemID then
+											if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
+												QuestHarvester.AllTheThingsProcessing = true;
+												QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
+												QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
+												local link = select(2, QuestHarvester:GetItem());
+												QuestHarvester.AllTheThingsProcessing = false;
+												QuestHarvester:Hide();
+												if link then
+													--print("TODO: Parse Link", link);
+													cache = SearchForLink(link);
+													if cache and #cache > 0 then
+														local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
+														for _,item in ipairs(cache) do
+															item = CreateObject(item);
+															item.link = link;
+															if modID then item.modID = tonumber(modID); end
+															MergeObject(questObject.g, item);
+														end
+													end
+												else
+													-- Take the best guess at what this is... No clue.
+													local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
+													cache = fieldCache["itemID"][itemID];
+													local item = { ["itemID"] = itemID, ["expanded"] = false, };
+													if cache then
+														local ACKCHUALLY;
+														for _,data in ipairs(cache) do
+															if data.f then
+																item.f = data.f;
+															end
+															if data.s then
+																item.s = data.s;
+																if data.modID == modID then
+																	ACKCHUALLY = data.s;
+																	item.modID = modID;
+																	if tagID == 137 then
+																		local parent = data.parent;
+																		while parent do
+																			if parent.instanceID then
+																				questObject.icon = parent.icon;
+																				break;
+																			end
+																			parent = parent.parent;
+																		end
+																	end
+																end
+															end
+															if data.g and #data.g > 0 then
+																if not item.g then
+																	item.g = {};
+																	item.progress = 0;
+																	item.total = 0;
+																end
+																for __,subdata in ipairs(data.g) do
+																	MergeObject(item.g, subdata);
+																end
+															end
+														end
+														if ACKCHUALLY then
+															item.s = ACKCHUALLY;
+														end
+													end
+													MergeObject(questObject.g, item);
+												end
+											end
+										else
+											return true;
+										end
+									end
+									
+									local description = BONUS_OBJECTIVE_TIME_LEFT:format(date("%H:%M", time() + (timeLeft * 60)));
+									if timeLeft < 30 then
+										description = "|cFFFF0000" .. description .. "|r";
+									elseif timeLeft < 60 then
+										description = "|cFFFFFF00" .. description .. "|r";
+									end
+									if not questObject.description then
+										questObject.description = description;
+									else
+										questObject.description = questObject.description .. "\n\n" .. description;
+									end
+									
+									-- Resolve all symbolic links
+									if questObject.g and #questObject.g > 0 then
+										for j,item in ipairs(questObject.g) do
+											local resolved = ResolveSymbolicLink(item);
+											if resolved then
+												if not item.g then item.g = {}; end
+												for i,o in ipairs(resolved) do
+													MergeObject(item.g, o);
+												end
+											end
+										end
+									end
+									
 									MergeObject(subMapObject.g, questObject);
 									MergeObject(mapObject.g, subMapObject);
 								end
