@@ -1200,7 +1200,11 @@ local function CreateObject(t)
 			elseif t.npcID or t.creatureID then
 				t = app.CreateNPC(t.npcID or t.creatureID, t);
 			elseif t.questID then
-				t = app.CreateQuest(t.questID, t);
+				if t.isVignette then
+					t = app.CreateVignette(t.questID, t);
+				else
+					t = app.CreateQuest(t.questID, t);
+				end
 			elseif t.unit then
 				t = app.CreateUnit(t.unit, t);
 			else
@@ -6473,6 +6477,8 @@ app.BaseVignette = {
 			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompletedForObject(t);
+		elseif key == "isVignette" then
+			return true;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -12029,16 +12035,24 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				{ app.FactionID == Enum.FlightPathFaction.Horde and 875 or 876, 895 },	-- Kul'Tiras or Zandalar, Stormsong Valley
 			};
 			local worldMapIDs = {
-				14,		-- Arathi Highlands
-				62,		-- Darkshore
-				875,	-- Zandalar
-				876,	-- Kul'Tiras
-				619,	-- The Broken Isles
-				885,	-- Antoran Wastes
-				830,	-- Krokuun
-				882,	-- Mac'Aree
-				1355,	-- Nazjatar
-				-- 1462,	-- Mechagon does not need to be included as a separate mapID as it is contained in the the Kul Tiras mapID
+				{ 14 },		-- Arathi Highlands
+				{ 62 },		-- Darkshore
+				{ 875 },	-- Zandalar
+				{ 876 },	-- Kul'Tiras
+				{ 
+					619, -- Broken Isles
+					{
+						{ 630, 5175, 47063},	-- Azsuna
+						{ 650, 5177, 47063},	-- Highmountain
+						{ 634, 5178, 47063},	-- Stormheim
+						{ 641, 5210, 47063},	-- Val'Sharah
+					}
+				},
+				{ 885 },	-- Antoran Wastes
+				{ 830 },	-- Krokuun
+				{ 882 },	-- Mac'Aree
+				{ 1355 },	-- Nazjatar
+				-- { 1462 },	-- Mechagon does not need to be included as a separate mapID as it is contained in the the Kul Tiras mapID
 			};
 			local OnUpdateForItem = function(self)
 				for i,o in ipairs(self.g) do
@@ -12109,7 +12123,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				end
 				
 				-- Acquire all of the world quests.
-				for _,mapID in ipairs(worldMapIDs) do
+				for _,pair in ipairs(worldMapIDs) do
+					local mapID = pair[1];
 					local mapObject = { mapID=mapID,g={},progress=0,total=0};
 					local cache = fieldCache["mapID"][mapID];
 					if cache then
@@ -12119,6 +12134,59 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								mapObject.lvl = data.lvl;
 								mapObject.description = data.description;
 								break;
+							end
+						end
+					end
+					
+					-- Invasions
+					local mapIDPOIPairs = pair[2];
+					if mapIDPOIPairs then
+						for i,arr in ipairs(mapIDPOIPairs) do
+							local questID = arr[3];
+							if questID and not IsQuestFlaggedCompleted(questID) then
+								local timeLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft(arr[2]);
+								if timeLeft and timeLeft > 0 then
+									local mapID = arr[1];
+									local subMapObject = { mapID=mapID,g={},progress=0,total=0};
+									local cache = fieldCache["mapID"][mapID];
+									if cache then
+										for _,data in ipairs(cache) do
+											if data.mapID and data.icon then
+												subMapObject.icon = data.icon;
+												subMapObject.lvl = data.lvl;
+												subMapObject.description = data.description;
+												break;
+											end
+										end
+									end
+									local questObject = {questID=questID,g={}};
+									cache = fieldCache["questID"][questObject.questID];
+									if cache then
+										for _,data in ipairs(cache) do
+											for key,value in pairs(data) do
+												if not (key == "g" or key == "parent") then
+													questObject[key] = value;
+												end
+											end
+											if data.isVignette then questObject.isVignette = true; end
+											if data.g then
+												for _,entry in ipairs(data.g) do
+													local resolved = ResolveSymbolicLink(entry);
+													if resolved then
+														entry = CreateObject(entry);
+														if not entry.g then entry.g = {}; end
+														for i,o in ipairs(resolved) do
+															MergeObject(entry.g, o);
+														end
+													end
+													MergeObject(questObject.g, entry);
+												end
+											end
+										end
+									end
+									MergeObject(subMapObject.g, questObject);
+									MergeObject(mapObject.g, subMapObject);
+								end
 							end
 						end
 					end
