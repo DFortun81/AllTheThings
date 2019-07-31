@@ -211,7 +211,7 @@ _.Secrets =
 			}),]]
 			n(-805, {	-- Baa'l  -- TODO: Descriptions
 				["modelScale"] = 1.1,
-				--["modelID"] = 80456,
+				["modelID"] = 80456,
 				["description"] = "***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***",
 				["maps"] = {
 					525,
