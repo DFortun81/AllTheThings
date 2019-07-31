@@ -79,6 +79,16 @@ _.Zones =
 						47440,	-- Pa'ku, Master of Winds
 					},
 				}),
+				q(56249, {	-- I Am the Trashmaster
+					--["sourceQuests"] = { },
+					["coord"] = { 35.3, 7.70, 1165 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 126334,	-- Jani <Loa of Scavengers>
+					["g"] = {
+						i(169394), 	-- Richly Appointed Drape
+						title(324),	-- Trashmaster
+					},
+				}),
 				q(52472, {	-- Make Loh Go
 				--	confirm SQ when flying is implemented.
 					["sourceQuests"] = { 52131 },	-- We Need Each Other

@@ -1680,6 +1680,16 @@ _.Zones =
 						["coord"] = { 36.6, 32.4 },
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(56250, {	-- I Am the Trashmaster
+						--["sourceQuests"] = { },
+						["coord"] = { 36.2, 36.8, 864 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 136559,	-- Jani <Loa of Scavengers>
+						["g"] = {
+							i(169394), 	-- Richly Appointed Drape
+							title(324),	-- Trashmaster
+						},
+					}),
 					q(53113, {	-- Shimmering Shell
 						["qg"] = 135804,	-- Hoarder Jena
 						["lvl"] = 120,

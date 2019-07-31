@@ -138,7 +138,31 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168746),	-- Optimized Adaptable Logic Board
 							i(168745),	-- Optimized Effective Logic Board
 							i(168744),	-- Optimized Efficient Logic Board
-							i(168970),	-- Trashmaster's Mantle
+							i(168970, {	-- Trashmaster's Mantle
+								["description"] = "Equiping this cloak gives you a temporary Trashmaster title.  To get a permanant character specfic Trashmaster title take this cloak to Jani's trashpile in Dazar'alor(Horde) or Vol'dun(Alliance).",
+								["g"] = {
+									q(56250, {	-- I Am the Trashmaster
+										--["sourceQuests"] = { },
+										["coord"] = { 36.2, 36.8, 864 },
+										["races"] = ALLIANCE_ONLY,
+										["qg"] = 136559,	-- Jani <Loa of Scavengers>
+										["g"] = {
+											i(169394), 	-- Richly Appointed Drape
+											title(324),	-- Trashmaster
+										},
+									}),
+									q(56249, {	-- I Am the Trashmaster
+										--["sourceQuests"] = { },
+										["coord"] = { 35.3, 7.70, 1165 },
+										["races"] = HORDE_ONLY,
+										["qg"] = 126334,	-- Jani <Loa of Scavengers>
+										["g"] = {
+											i(169394), 	-- Richly Appointed Drape
+											title(324),	-- Trashmaster
+										},
+									}),
+								},
+							}),
 							i(168969),	-- Operator's Mitts
 							i(168971),	-- Swift Pneumatic Grips
 							i(168968),	-- Flame-Seared Leggings
