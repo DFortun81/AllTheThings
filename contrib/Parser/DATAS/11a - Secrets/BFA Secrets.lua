@@ -600,20 +600,20 @@ _.Secrets =
 							{ 85.4, 73.6, 14 },	-- Grimmy's List of Friends
 						},
 					}),
-					q(52917, { 	-- Grimmy Dialoge
+					q(52917, { 	-- Grimmy Dialogue
 						--["icon"] = "Interface\\Icons\\INV_Torch_Unlit",
 						["qg"] = 138578,	-- Grimmy
 						["sourceQuests"] = { 52916 },
-						["description"] = "Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy.  Select his dialoge \"It's me, your friend. Got any secrets to tell me about?\"",
+						["description"] = "Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy.  Select his dialogue \"It's me, your friend. Got any secrets to tell me about?\"",
 						["coords"] = {
-							--{ 85.3, 73.6, 14 },	-- Grimmy Dialoge
+							--{ 85.3, 73.6, 14 },	-- Grimmy Dialogue
 						},
 					}),
 					o(294314, { 	-- Grimmy's List of Enemies
 						["icon"] = "Interface\\Icons\\INV_Misc_NotePicture1c",
 						["questID"] = 52918,
 						["sourceQuests"] = { 52917 },
-						["description"] = "After selecting the Grimmy dialoge, a note appears on his bedstand.  Click it.  Grimmy's List of Enemies reads:\n\n\"You flaunted your virility, and red was\nnever to my liking\nThough I wanted to slap you, I always\nfound you striking.\n\nYou Always though you knew what was\nbest, but not everyone likes greens,\nThough I waved your way, I pictured\nyour shredded hide in my dreams.\n??\nYour bread was bad, you diseased lout,\nit made me sick.\nI woudl cheerily beat you with a stick.\n??\nLast you, I'm not eve going to think of\na rhyme for you, Mugs.\nI will dance on your grave, you were\nuniquely terrible.\"\n\nGo to each of the following npc's with Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking, and emote to them.",
+						["description"] = "After selecting the Grimmy dialogue, a note appears on his bedstand.  Click it.  Grimmy's List of Enemies reads:\n\n\"You flaunted your virility, and red was\nnever to my liking\nThough I wanted to slap you, I always\nfound you striking.\n\nYou Always though you knew what was\nbest, but not everyone likes greens,\nThough I waved your way, I pictured\nyour shredded hide in my dreams.\n??\nYour bread was bad, you diseased lout,\nit made me sick.\nI woudl cheerily beat you with a stick.\n??\nLast you, I'm not eve going to think of\na rhyme for you, Mugs.\nI will dance on your grave, you were\nuniquely terrible.\"\n\nGo to each of the following npc's with Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking, and emote to them.",
 						["coords"] = {
 							--{ 85.2, 73.7, 14 },	-- Grimmy's List of Enemies
 						},
@@ -650,20 +650,20 @@ _.Secrets =
 							{ 44.4, 90.3, 379 },	-- Stained Mug <Innkeeper>
 						},
 					}),
-					n(138578, { 	-- Grimmy Dialoge
+					n(138578, { 	-- Grimmy Dialogue
 						--["icon"] = "Interface\\Icons\\INV_Torch_Unlit",
 						["questID"] = 52919,
 						["sourceQuests"] = { 52826, 52824, 52823, 52822, },
-						["description"] = "Return to Grimmy and select his new dialoge\n\n\"I've sent some messages to your enemies, now about those secrets...\"",
+						["description"] = "Return to Grimmy and select his new dialogue\n\n\"I've sent some messages to your enemies, now about those secrets...\"",
 						["coords"] = {
-							{ 85.3, 73.6, 14 },	-- Grimmy Dialoge
+							{ 85.3, 73.6, 14 },	-- Grimmy Dialogue
 						},
 					}),
 					o(294315, { 	-- Grimmy's Favorite Recipe
 						["icon"] = "Interface\\Icons\\INV_Misc_NoteScript1c",
 						["questID"] = 52920,
 						["sourceQuests"] = { 52919 },
-						["description"] = "After selecting Grimmy's dialoge, a new note appears by the fireplace.  Click it.  Grimmy's Favorite Recipe reads:\n\n\"A pinch of turmeric and a pound of salt,\nif it comes out poorly it's your own\nfault.\n\nPay attention to the broth, and stir,stir,\nstir!\nThen add a big handful of boar fur.\n\nLast you need a little sour,\nget the kick with a little gunpowder!\"",
+						["description"] = "After selecting Grimmy's dialogue, a new note appears by the fireplace.  Click it.  Grimmy's Favorite Recipe reads:\n\n\"A pinch of turmeric and a pound of salt,\nif it comes out poorly it's your own\nfault.\n\nPay attention to the broth, and stir,stir,\nstir!\nThen add a big handful of boar fur.\n\nLast you need a little sour,\nget the kick with a little gunpowder!\"",
 						["coords"] = {
 							--{ 85.3, 74.0, 14 },	-- Grimmy's Favorite Recipe
 						},
@@ -672,7 +672,7 @@ _.Secrets =
 						["icon"] = "Interface\\Icons\\Ability_Creature_Disease_01",
 						["questID"] = 52921,
 						["sourceQuests"] = { 52920 },
-						["description"] = "Go outside and find the Rotten Potato.  You will need to get exactly 144 stacks of Rotten Potato by clicking the potato.  After getting 144 stacks of the buff, go back and talk to Grimmy and select his new dialoge option\"How do I smell?\"\n\nGrimmy's new dialoge says:\n\n\"Oh, my, just like my mother used to after she made her famous pie.\n\nVery well, I will show you...my life's work!\n\nIt's in the chest out back, and it's all yours!\n\nI hope it was worth it!\"",
+						["description"] = "Go outside and find the Rotten Potato.  You will need to get exactly 144 stacks of Rotten Potato by clicking the potato.  After getting 144 stacks of the buff, go back and talk to Grimmy and select his new dialogue option\"How do I smell?\"\n\nGrimmy's new dialogue says:\n\n\"Oh, my, just like my mother used to after she made her famous pie.\n\nVery well, I will show you...my life's work!\n\nIt's in the chest out back, and it's all yours!\n\nI hope it was worth it!\"",
 						["coords"] = {
 							{ 88.4, 69.2, 14 },	-- Rotten Potato
 						},
