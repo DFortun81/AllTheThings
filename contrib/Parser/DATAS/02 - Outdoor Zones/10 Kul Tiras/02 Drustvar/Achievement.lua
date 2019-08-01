@@ -196,7 +196,7 @@ _.Zones =
 							},
 						}),
 						i(163781, {	-- Heartsbane Hexenwurst
-							["description"] = "Recipte for cooks is dropped by Raal the Gluttonous in Waycrest Manor or buy the sausage off the AH.",
+							["description"] = "Recipe for cooks is dropped by Raal the Gluttonous in Waycrest Manor or buy the sausage off the AH.",
 							["criteriaID"] = 3,
 						}),
 						i(155811, {	-- Roland's Famous Frankfurter
