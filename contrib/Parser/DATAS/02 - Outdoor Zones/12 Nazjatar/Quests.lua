@@ -1298,6 +1298,15 @@ _.Zones =
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
+			q(56791, {	-- Mysterious Treasure
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 13.",
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154297,	-- Bladesman Inowari
+				["g"] = {
+					i(169917),	-- Mysterious Azshari Chest (contained 1 stranged mineralized water, 2 battle-scarred augment runes, 16 gilded seaweave, 8 prismatic manapearls, and 115 war resources.  not sure if rewards are static or just "uhhh [throws random crafting materials/currency at you]"
+				},
+			}),
 			q(56786, {	-- Naga Treasure
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 13.",
@@ -1375,6 +1384,14 @@ _.Zones =
 				["coord"] = { 44.6, 45.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 154244,	-- Apprentice Uataro
+			}),
+			q(56160, {	-- Plug the Geysers
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",	-- NOT Farseer Ori!
+				["isDaily"] = true,
+				["coord"] = { 71.5, 31.5, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 154243,	-- Apprentice Aonari
 			}),
 			q(56155, {	-- Plug the Geysers	-- similar name to another daily, but different ID across the map	-- also popped 55874. Possibly an equivalent hordeID?
 				["qg"] = 154247,	-- Apprentice Utapo
