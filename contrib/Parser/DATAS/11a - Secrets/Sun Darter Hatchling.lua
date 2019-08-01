@@ -11,7 +11,7 @@ _.Secrets =
 		["g"] = {
 			o(9999908, {	-- |cFFFFFFFFStep 1:|r Gather Consumables.
 				["icon"] = "Interface\\Icons\\INV_Misc_Map02",
-				["description"] = "|cFFFFFFFFSTEP 1:|r Gather the following quantity of consumbables:",
+				["description"] = "|cFFFFFFFFSTEP 1:|r Gather the following quantity of consumables:",
 				["g"] = {
 					i(38320, {	-- Dire Brew
 						["description"] = "Qty:1\n\nObtained from Dark Iron Brewer in BRD.\n\nWalk/fly to BRD, or use the Direbrew's Remote obtained from Brewfest. Once inside the instance, take a left threw the gate, and then right threw another gate.  Go threw the door on the left, and click the Shadowforge Lock at the back of the room.  Backtrack to the door, go up the ramp and take a left down the hallway.  Continue down the hallway, until it opens up.  Take the first right into \"The Manufactory\".  Head right and threw the door at the back of the room, over the bridge and into \"The Grim Guzzler\".  Go up the stairs on the right and in the back of the room on the left is the Dark Iron Brewer. Talk to him until he passes out, and loot the Dire Brew that spawns.",
