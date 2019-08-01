@@ -544,7 +544,7 @@ _.Zones =
 					un(1, q(49695)),	-- showing in /attwq as [Quest 49695] no record of the quest found on Wowhead
 				}),
 				{
-					["itemID"] = 165869,	-- Nazmir Expeditionary Equipment Cache
+					["itemID"] = 165865,	-- Nazmir Expeditionary Equipment Cache
 					["sym"] = {
 						-- Include the one extra.
 						{"select", "itemID", 166672},	-- Bloodhunter's Drape
