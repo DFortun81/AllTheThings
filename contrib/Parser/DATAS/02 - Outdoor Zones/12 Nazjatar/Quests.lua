@@ -1108,7 +1108,9 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
-					i(169199),	-- Snapdragon Kelpstalker
+					i(169199, {	-- Snapdragon Kelpstalker
+						["description"] = "Learning this mount also unlocks the Alliance |cFFA330C9Deepcoral Snapdragon|r mount.",
+					}),
 				},
 			}),
 			q(56784, {	-- Helpful Provisions
@@ -1202,7 +1204,9 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
-					i(170155),	-- Carved Ankoan Charm (TOY!)
+					i(170155, {	-- Carved Ankoan Charm (TOY!)
+						["description"] = "Learning this toy also unlocks the Horde |cFF0070DEBook of the Unshackled|r toy.",
+					}),
 				},
 			}),
 			q(56095, {	-- Legacy of Nar'anan
@@ -2237,7 +2241,9 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
-					i(170154),	-- Book of the Unshackled (H)
+					i(170154, {	-- Book of the Unshackled (H)
+						["description"] = "Learning this toy also unlocks the Alliance |cFF0070DECarved Ankoan Charm|r toy.",
+					}),
 				},
 			}),
 			q(55883, {	-- To Soar Like a Ray
@@ -2530,7 +2536,9 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
-					i(169200),	-- Deepcoral Snapdragon (MOUNT!)
+					i(169200, {	-- Deepcoral Snapdragon (MOUNT!)
+						["description"] = "Learning this mount also unlocks the Horde |cFFA330C9Snapdragon Kelpstalker|r mount.",
+					}),
 				},
 			}),
 			q(56815, {	-- With A Little Help From My Friends
