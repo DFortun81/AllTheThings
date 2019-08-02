@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-17,	{	-- Quests [Finalized]
-			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.  it looks the leather chest was added, but the shoulders are still missing.
+			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.  it looks like the leather chest was added, but the shoulders are still missing.
 				q(50593, {	-- A Bloody Mess
 					["sourceQuests"] = { 49998 },	-- Voices Below
 				--	["itemID"] = 158195,	-- Frothing Vial
