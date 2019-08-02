@@ -46,7 +46,7 @@ _.Zones =
 				}),
 				ach(12939),	-- Adventurer of Tiragarde Sound
 				ach(13058, {	-- Kul Tiran Up the Dance Floor
-					["coord"] = { 50.53, 24.33, 895 },
+					["coord"] = { 50.27, 25.11, 895 },
 				}),
 				ach(13057, {	-- Shanty Raid
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -70,6 +70,7 @@ _.Zones =
 				ach(12852, {	-- Treasures of Tiragarde Sound
 					o(279750, {	-- Hay Covered Chest [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 67.4, 51.7, 895 },
 						["questID"] = 49963,
 						["g"] = {
 							crit(1, {	-- Hay Covered Chest
@@ -90,6 +91,7 @@ _.Zones =
 					}),
 					o(293962, {	-- Precarious Noble Cache [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 56.0, 33.1, 895 },
 						["questID"] = 52866,
 						["g"] = {
 							crit(3, {	-- Precarious Noble Cache
@@ -109,6 +111,7 @@ _.Zones =
 					}),
 					o(293965, {	-- Scrimshaw Cache [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 72.6, 21.5, 895 },
 						["questID"] = 52870,
 						["g"] = {
 							crit(5, {	-- Scrimshaw Cache
