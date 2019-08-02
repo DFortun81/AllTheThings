@@ -65,10 +65,12 @@ _.Zones =
 					i(151009),	-- Annihilan Heart
 					i(151005),	-- Dram of Light
 					i(151013),	-- Ethereal Anchor
+					i(151014),	-- Fulminating Arcstone
 					i(151012),	-- Marsuul Egg
 					i(151010),	-- Narouan Fin
 					i(151011),	-- Stygian Munition Casing
 					i(151008),	-- Vilefiend Fang
+					i(151007),	-- Ur'zul Ichor
 				}),
 			},
 		}),

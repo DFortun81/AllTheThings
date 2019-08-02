@@ -503,6 +503,7 @@ _.Zones =
 				n(-387, {	-- Relics
 					i(143687),	-- Felskorn Mania
 					i(141261),	-- Fires of Heaven
+					i(143690),	-- Specter of Helheim
 					i(141262),	-- Rune-Etched Quill
 					i(143688),	-- Stormwing's Roar
 					i(143685),	-- Strength of the Nazjatar

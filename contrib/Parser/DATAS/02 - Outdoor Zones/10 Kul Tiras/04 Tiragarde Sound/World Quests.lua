@@ -1753,9 +1753,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 						["groups"] = {
-							ach(13060, {	-- Kul Runnings
-								crit(2),	-- Frozen Freestyle
-							}),
+							{
+								["achievementID"] = 13060,	-- Kul Runnings
+								["criteriaID"] = 2,	-- Frozen Freestyle
+							},
 						},
 					}),
 					q(53699, {	-- Gate Crashers (Faction Assault WQ)
@@ -1925,9 +1926,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 						["groups"] = {
-							ach(13060, {	-- Kul Runnings
-								crit(1),	-- Sliding with Style
-							}),
+							{
+								["achievementID"] = 13060,	-- Kul Runnings
+								["criteriaID"] = 1,	-- Sliding with Style
+							},
 						},
 					}),
 					q(53189, {	-- Slippery Slopes
@@ -1935,9 +1937,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 						["groups"] = {
-							ach(13060, {	-- Kul Runnings
-								crit(3),	-- Slippery Slopes
-							}),
+							{
+								["achievementID"] = 13060,	-- Kul Runnings
+								["criteriaID"] = 3,	-- Slippery Slopes
+							},
 						},
 					}),
 					q(52143, {	-- Smaller Haulers
