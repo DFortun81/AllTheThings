@@ -188,7 +188,7 @@ _.Zones =
 					["creatureID"] = 154968,	-- future ID
 					["questID"] = 55546,
 					["isDaily"] = true,
-					["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat.",
+					["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat.  If you've time-traveled to the future, you must use a key to unlock it.",
 					["coords"] = {
 						{ 53.6, 46.4, 1462 },
 						{ 53.8, 49.4, 1462 },

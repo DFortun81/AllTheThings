@@ -532,69 +532,29 @@ _.Zones =
 					["qg"] = 152575,	-- Steelsage Gao
 					["coord"] = { 73.6, 34.3, 1462 },
 					["isDaily"] = true,
-					["g"] = {
-						i(169176, {	-- Blueprint: Encrypted Black Market Radio
-						--	["questID"] = ,	-- 
-							["g"] = {
-								crit(36, {	-- Encrypted Black Market Radio
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
-					},
 				}),
 				q(56172, {	-- Other Interests
 					["qg"] = 152575,	-- Steelsage Gao
 					["coord"] = { 73.6, 34.3, 1462 },
 					["isDaily"] = true,
-					["g"] = {
-						i(169176, {	-- Blueprint: Encrypted Black Market Radio
-						--	["questID"] = ,	-- 
-							["g"] = {
-								crit(36, {	-- Encrypted Black Market Radio
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
-					},
 				}),
 				q(56173, {	-- Other Interests
 					["qg"] = 152575,	-- Steelsage Gao
 					["coord"] = { 73.6, 34.3, 1462 },
 					["isDaily"] = true,
-					["g"] = {
-						i(169176, {	-- Blueprint: Encrypted Black Market Radio
-						--	["questID"] = ,	-- 
-							["g"] = {
-								crit(36, {	-- Encrypted Black Market Radio
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
-					},
 				}),
 				q(56174, {	-- Other Interests
 					["qg"] = 152575,	-- Steelsage Gao
 					["coord"] = { 73.6, 34.3, 1462 },
 					["isDaily"] = true,
-					["g"] = {
-						i(169176, {	-- Blueprint: Encrypted Black Market Radio
-						--	["questID"] = ,	-- 
-							["g"] = {
-								crit(36, {	-- Encrypted Black Market Radio
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
-					},
 				}),
 				q(56746, {	-- Our Direct Line
 					["qg"] = 152575,	-- Steelsage Gao
 					["coord"] = { 73.6, 34.3, 1462 },
-					["description"] = "Quest is offered once you have completed the daily Other Interests three times",
+					["description"] = "Quest is offered once you have completed the daily |cFFFFD700Other Interests|r three times.",
 					["g"] = {
 						i(169176, {	-- Blueprint: Encrypted Black Market Radio
-							["questID"] = 55084,
+							["questID"] = 55084,	-- Blueprint: Encrypted Black Market Radio
 							["g"] = {
 								crit(36, {	-- Encrypted Black Market Radio
 									["achievementID"] = 13479,	-- Junkyard Architect
