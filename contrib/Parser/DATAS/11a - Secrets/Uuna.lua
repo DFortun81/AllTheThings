@@ -1,6 +1,6 @@
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+---------------------------------------------
+--     S E C R E T S     M O D U L E       --
+---------------------------------------------
 _.Secrets =
 {
 	--[[n(-804, {	-- Uuna  npcid:128396 p:2136 -- Dose this belong here?  Was added in Legion?  TODO: Maps?  Verify Coords and maps within(World Tour done), Icons, Descriptions
