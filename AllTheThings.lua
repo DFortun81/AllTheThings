@@ -5369,7 +5369,7 @@ local itemFields = {
 					itemLink = string.format("item:%d:::::::::::::", itemLink);
 				end
 			else
-				bonusID = rawget(t, "modID");
+				bonusID = rawget(t, "modID") or 1;
 				if bonusID then
 					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
 				end
@@ -5466,7 +5466,7 @@ local appearanceFields = {
 					itemLink = string.format("item:%d:::::::::::::", itemLink);
 				end
 			else
-				bonusID = rawget(t, "modID");
+				bonusID = rawget(t, "modID") or 1;
 				if bonusID then
 					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
 				end
