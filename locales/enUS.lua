@@ -3254,6 +3254,7 @@ AllTheThings.L = {
 		[292675] = "A Damp Scroll",
 		[292676] = "A Damp Scroll",
 		[292677] = "A Damp Scroll",
+		[292686] = "Ominous Altar",
 		[293349] = "Discarded Lunchbox",
 		[293350] = "Carved Wooden Chest",
 		[293849] = "Conspicious Note",
