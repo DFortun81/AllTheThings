@@ -43,9 +43,10 @@ _.Zones =
 				["questID"] = 56268,
 				["isDaily"] = true,
 				["coords"] = {
-					{ 72.2, 36.2, 1355 },
-					{ 60.6, 33.9, 1355 },
+					{ 36.8, 27.7, 1355 },	-- cave entrance, putting it here instead of the actual coordinate because it's easy to mistakenly go to the top level above the cave
 					{ 55.0, 29.1, 1355 },
+					{ 60.6, 33.9, 1355 },
+					{ 72.2, 36.2, 1355 },
 				},
 				["g"] = {
 					crit(3, {	-- I Thought You Said They'd Be Rare?
@@ -403,6 +404,7 @@ _.Zones =
 				["questID"] = 56274,
 				["coords"] = {
 					{ 27.1, 28.3, 1355 },
+					{ 36.9, 13.2, 1355 },
 					{ 58.2, 26.7, 1355 },
 					{ 61.0, 31.7, 1355 },
 					{ 62.5, 15.3, 1355 },
@@ -428,6 +430,7 @@ _.Zones =
 				["questID"] = 56275,
 				["isDaily"] = true,
 				["coords"] = {
+					{ 39.6, 28.1, 1355 },
 					{ 46.0, 25.2, 1355 },
 					{ 47.0, 30.6, 1355 },
 					{ 48.7, 26.2, 1355 },

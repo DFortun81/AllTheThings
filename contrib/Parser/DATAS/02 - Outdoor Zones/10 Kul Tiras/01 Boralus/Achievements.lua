@@ -93,7 +93,7 @@ _.Zones =
 							},
 						}),
 						o(292677, {	-- A Damp Scroll
-							["description"] = "Located in the building before the underwater cave in Stormsong Monasatery.",
+							["description"] = "Located in the building before the underwater cave in Stormsong Monastery.",
 							["questID"] = 52136,
 							["coord"] = { 63.03, 81.76, 1161 },
 						}),
@@ -107,15 +107,14 @@ _.Zones =
 								52137,	-- A Damp Scroll
 								52138,	-- A Damp Scroll
 							},
-							["groups"] = {
-								{
+							["g"] = {
+								crit(6, {	-- Secrets of the Deep
 									["achievementID"] = 12852,	-- Treasures of Tiragarde Sound
-									["criteriaID"] = 6,	-- Secrets of the Deep
 									["coord"] = { 62.31, 91.18, 895 },
-									["groups"] = {
+									["g"] = {
 										i(161342),	-- Gem of Acquiescence
 									},
-								},
+								}),
 							},
 						}),
 					},

@@ -6,6 +6,16 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-17,	{	-- Quests [Finalized]
+			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.  it looks the leather chest was added, but the shoulders are still missing.
+				q(50593, {	-- A Bloody Mess
+					["sourceQuests"] = { 49998 },	-- Voices Below
+				--	["itemID"] = 158195,	-- Frothing Vial
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\inv_misc_potionsetb",
+					["crs"] = { 130094 },	-- Tidesage Seacaller
+				}),
+				
+				
 				q(49725, {	-- A Risky Ploy
 					["sourceQuests"] = { 51401 },	-- Carry On
 					["coord"] = { 59.2, 69.5, 942 },
@@ -14,11 +24,40 @@ _.Zones =
 				}),
 				
 				
+				q(52795, {	-- A Saur Point
+					["sourceQuests"] = { 52793 },	-- Circle the Wagons (must be on quest)
+					["coord"] = { 64.8, 76.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 141603,	-- Mallory Hood
+				}),
+				
+				
+				q(50594, {	-- Beneath the Veil
+					["sourceQuests"] = { 49998 },	-- Voices Below
+					["coord"] = { 66.1, 47.4 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 134639,	-- Brother Pike
+					["g"] = {
+						i(155229),	-- Abyssal Beacon
+						i(155228),	-- Tideguard Bulwark
+						i(155231),	-- Purified Tideblood Band
+					},
+				}),
+				
+				
 				q(51490, {	-- Border Issues
 					["sourceQuests"] = { 51489 },	-- Time to Leave
 					["coord"] = { 57.9, 86.0, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 137866,	-- Taelia
+				}),
+				
+				
+				q(49792, {	-- Bound and Oppressed
+					["sourceQuests"] = { 49887 },	-- Forced Labor
+					["coord"] = { 64.6, 62.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130904,	-- Samuel Williams
 				}),
 				
 				
@@ -37,6 +76,78 @@ _.Zones =
 				}),
 				
 				
+				q(49995, {	-- Fabricated Fabrications
+					["sourceQuests"] = { 49975 },	-- Rest in the Depths
+					["coord"] = { 66.4, 56.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131248,	-- Samuel Williams
+				}),
+				
+				
+				q(50608, {	-- Forbidden Rites
+					["sourceQuests"] = {
+						50593,	-- A Bloody Mess
+						50594,	-- Beneath the Veil
+						50595,	-- No Quarter
+					},
+					["coord"] = { 66.1, 47.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 134639,	-- Brother Pike
+				}),
+				
+				
+				q(49887, {	-- Forced Labor
+					["sourceQuests"] = {
+						49704,	-- Haywire Harvesters
+						49706,	-- Proclamation Investigation
+						49705,	-- Unnecessary Duress
+					},
+					["coord"] = { 64.6, 62.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130904,	-- Samuel Williams
+				}),
+				
+				
+				q(50609, {	-- From the Maw of Madness
+					["sourceQuests"] = {
+						50593,	-- A Bloody Mess
+						50594,	-- Beneath the Veil
+						50595,	-- No Quarter
+					},
+					["coord"] = { 66.2, 47.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 134623,	-- Taelia
+				}),
+				
+				
+				q(50610, {	-- Gathering Storm
+					["sourceQuests"] = {
+						50593,	-- A Bloody Mess
+						50594,	-- Beneath the Veil
+						50595,	-- No Quarter
+					},
+					["coord"] = { 66.1, 47.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 134639,	-- Brother Pike
+				}),
+				
+				
+				q(49704, {	-- Haywire Harvesters
+					["sourceQuests"] = { 49703 },	-- House Stormsong
+					["coord"] = { 63.4, 64.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130715,	-- Taelia
+				}),
+				
+				
+				q(51582, {	-- Make it Mildenhall
+					["isBreadcrumb"] = true,
+				--	["objectID"] = 290537,	-- Help Wanted
+					["coord"] = { 66.3, 57.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(49703, {	-- House Stormsong
 					["sourceQuests"] = { 49725 },	-- A Risky Ploy
 					["coord"] = { 59.2, 68.6, 942 },
@@ -45,10 +156,113 @@ _.Zones =
 				}),
 				
 				
+				q(49791, {	-- Lost, Not Forgotten
+					["sourceQuests"] = {
+						49704,	-- Haywire Harvesters
+						49706,	-- Proclamation Investigation
+						49705,	-- Unnecessary Duress
+					},
+					["coord"] = { 63.4, 64.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130714,	-- Brother Pike
+				}),
+				
+				
+				q(49793, {	-- Means to an End
+					["sourceQuests"] = {
+						49704,	-- Haywire Harvesters
+						49706,	-- Proclamation Investigation
+						49705,	-- Unnecessary Duress
+					},
+					["coord"] = { 63.4, 64.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130714,	-- Brother Pike
+				}),
+				
+				
+				q(50595, {	-- No Quarter
+					["sourceQuests"] = { 49998 },	-- Voices Below
+					["coord"] = { 66.2, 47.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 134623,	-- Taelia
+				}),
+				
+				
+				q(49706, {	-- Proclamation Investigation
+					["sourceQuests"] = { 49703 },	-- House Stormsong
+					["coord"] = { 63.4, 64.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130714,	-- Brother Pike
+				}),
+				
+				
+				q(49996, {	-- Rearmament
+					["sourceQuests"] = { 49975 },	-- Rest in the Depths
+					["coord"] = { 66.4, 56.4, 942 },
+					["qg"] = 131249,	-- Taelia
+					["g"] = {
+						i(155204),	-- Brineworks Boot Knife
+						i(155214),	-- Brineworks Hullcracker
+						i(155199),	-- Great Sea Waraxe
+						i(155221),	-- Stormfused Spire
+						i(155208),	-- Stormfused Striker
+						i(155216),	-- Tideguard Harpoon
+						i(155224),	-- Tideguard Spellblade
+						i(155209),	-- Thundershot Rifle
+					},
+				}),
+				
+				
+				q(49975, {	-- Rest in the Depths
+					["sourceQuests"] = {
+						49792,	-- Bound and Oppressed
+						49791,	-- Lost, Not Forgotten
+						49793,	-- Means to an End
+						49794,	-- The Rising Tide
+					},
+					["coord"] = { 66.3, 56.6, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130714,	-- Brother Pike
+				}),
+				
+				
 				q(52796, {	-- Sometimes Less is More
 					["coord"] = { 60.2, 70.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 141769,	-- Marilyn Hood
+				}),
+				
+				
+				q(49997, {	-- Storm's Judgment
+					["sourceQuests"] = {
+						49995,	-- Fabricated Fabrications
+						49996,	-- Rearmament
+						50139,	-- The Missing Link
+					},
+					["coord"] = { 66.4, 56.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130714,	-- Brother Pike
+					["g"] = {
+						i(155168),	-- Darkwater Tunic
+						i(155166),	-- Dread Corsair Breastplate
+						i(160880),	-- Dread Corsair Pauldrons
+						i(160877),	-- Tidespeaker Amice
+						i(155185),	-- Tidespeaker Vestments
+					},
+				}),
+				
+				
+				q(51552, {	-- The Days Are Just Packed
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						49792,	-- Bound and Oppressed
+						49791,	-- Lost, Not Forgotten
+						49793,	-- Means to an End
+						49794,	-- The Rising Tide
+					},
+					["coord"] = { 66.7, 56.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130786,	-- Hobbs
 				}),
 				
 				
@@ -62,9 +276,62 @@ _.Zones =
 						i(163865),	-- Bartered Vrykul Warhelm
 					},
 				}),
-			
-			
-			
+				
+				
+				q(50139, {	-- The Missing Link
+					["sourceQuests"] = { 49975 },	-- Rest in the Depths
+				--	["objectID"] = 280727,	-- Charred Note
+					["coord"] = { 68.6, 54.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(49794, {	-- The Rising Tide
+					["sourceQuests"] = {
+						49704,	-- Haywire Harvesters
+						49706,	-- Proclamation Investigation
+						49705,	-- Unnecessary Duress
+					},
+					["coord"] = { 63.4, 64.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130715,	-- Taelia
+					["g"] = {
+						i(155193),	-- Darkwater Belt
+						i(155190),	-- Dread Corsair Girdle
+						i(155192),	-- Stormchaser Belt
+						i(155191),	-- Tidespeaker Sash
+						i(155184),	-- Darkwater Breeches
+						i(155181),	-- Dread Corsair Greaves
+						i(155183),	-- Stormchaser Legguards
+						i(155182),	-- Tidespeaker Leggings
+					},
+				}),
+				
+				
+				q(49705, {	-- Unnecessary Duress
+					["sourceQuests"] = { 49703 },	-- House Stormsong
+					["coord"] = { 63.4, 64.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130714,	-- Brother Pike
+					["g"] = {
+						i(155173),	-- Darkwater Gloves
+						i(155174),	-- Dread Corsair Gauntlets
+						i(155176),	-- Stormchaser Gloves
+						i(155175),	-- Tidespeaker Gloves
+						i(155172),	-- Darkwater Boots
+						i(155169),	-- Dread Corsair Sabatons
+						i(155171),	-- Stormchaser Boots
+						i(155170),	-- Tidespeaker Sandals
+					},
+				}),
+				
+				
+				q(49998, {	-- Voices Below
+					["sourceQuests"] = { 49997 },	-- Storm's Judgment
+					["coord"] = { 66.3, 56.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130714,	-- Brother Pike
+				}),
 			
 			--[[
 				
@@ -122,11 +389,6 @@ _.Zones =
 						},
 					},
 				})),
-				a(q(52795, {	-- A Saur Point
-					["qg"] = 141603,	-- Mallory Hood
-					["sourceQuests"] = { 51490 },	-- Border Issues
-					["coord"] = { 64.9, 76.8 },
-				})),
 				a(q(50797, {	-- A Turtle's Invitation
 					["qg"] = 135033,	-- Maokka
 					["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
@@ -151,16 +413,6 @@ _.Zones =
 						i(158558),	-- Back to the Lab
 					},
 				})),
-				a(q(50594, {	-- Beneath the Veil
-					["qg"] = 134639,	-- Brother Pike
-					["sourceQuests"] = { 49998 },	-- Voices Below
-					["coord"] = { 66.1, 47.4 },
-					["g"] = {
-						i(155229),	-- Abyssal Beacon
-						i(155228),	-- Tideguard Bulwark
-						i(155231),	-- Purified Tideblood Band
-					}
-				})),
 				a(q(50353, {	-- Boaring Company
 					["qg"] = 133953,	-- Sergeant Calvin
 					["sourceQuests"] = { 50622 },	-- Deal's Off
@@ -175,11 +427,6 @@ _.Zones =
 					["qg"] = 134882,	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["coord"] = { 44.4, 55.6 },
-				})),
-				a(q(49792, {	-- Bound and Oppressed
-					["qg"] = 130904,	-- Samuel Williams
-					["sourceQuests"] = { 49887 },	-- Forced Labor
-					["coord"] = { 64.6, 62.1 },
 				})),
 				a(o(282457, {	-- Brambleguard Totem
 					["coord"] = { 44.0, 72.4 },
@@ -198,14 +445,6 @@ _.Zones =
 					["qg"] = 135067,	-- Moxie Lockspinner
 					["sourceQuests"] = { 50774 },	-- No Bot Left Behind
 					["coord"] = { 42.6, 54.3 },
-				})),
-				a(o(280727, {	-- Charred Note
-					["g"] = {
-						a(q(50139, {	-- The Missing Link
-							["sourceQuests"] = { 49975 },	-- Rest in the Depths(needs verification)
-						})),
-					},
-					["coord"] = { 68.7, 54.4 },
 				})),
 				a(q(50158, {	-- Checking Out the Collapse
 					["qg"] = 130694,	-- Mayor Roz
@@ -283,11 +522,6 @@ _.Zones =
 					["sourceQuests"] = { 50780, 50783 },	-- Oathbound / The Abyssal Council
 					["coord"] = { 61.8, 36.2 },
 				})),
-				a(q(49995, {	-- Fabricated Fabrications
-					["qg"] = 131248,	-- Samuel Williams
-					["sourceQuests"] = { 49975 },	-- Rest in the Depths
-					["coord"] = { 66.4, 56.4 },
-				})),
 				a(q(50136, {	-- Farming Stimulator
 					["qg"] = 132118,	-- Farmer Burton
 					["sourceQuests"] = { 50134, 50135 },	-- Gadgets and Gizmos Aplenty / Stop Vining
@@ -310,16 +544,6 @@ _.Zones =
 					-- ["sourceQuests"] = {  },	--  (This didn't have a source Quest that I could tell)
 					["coord"] = { 51.0, 70.1 },
 				})),
-				a(q(50608, {	-- Forbidden Rites
-					["qg"] = 134639,	-- Brother Pike
-					["sourceQuests"] = { 50593, 50594, 50595 },	-- A Bloody Mess / Beneath the Veil / No Quarter
-					["coord"] = { 66.1, 47.4 },
-				})),
-				a(q(49887, {	-- Forced Labor
-					["qg"] = 130904,	-- Samuel Williams
-					["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress
-					["coord"] = { 64.5, 62.2 },
-				})),
 				a(i(157849, {	-- Foul Smelling Flask
 					["questID"] = 50367,	-- Anger in a Bottle
 					["qg"] = 130073,	-- Briarback Lookout
@@ -331,21 +555,6 @@ _.Zones =
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
 				})),
-				a(q(50609, {	-- From the Maw of Madness
-					["qg"] = 134623,	-- Taelia
-					["sourceQuests"] = { 50593, 50594, 50595 },	-- A Bloody Mess / Beneath the Veil / No Quarter
-					["coord"] = { 66.3, 47.0 },
-				})),
-				a(i(158195, {	-- Frothing Vial
-					["qg"] = 130094,	-- Tidesage Seacaller
-					["g"] = {
-						a(q(50593, {	-- A Bloody Mess
-							["qg"] = 130094,	-- Tidesage Seacaller
-							["sourceQuests"] = { 49998 },	-- Voices Below
-							["coord"] = { 66.3, 47.0 },
-						})),
-					},
-				})),
 				a(q(50696, {	-- Fun With Magnets
 					["qg"] = 134882,	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
@@ -355,11 +564,6 @@ _.Zones =
 					["qg"] = 132118,	-- Farmer Burton
 					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse
 					["coord"] = { 51.5, 65.9 },
-				})),
-				a(q(50610, {	-- Gathering Storm
-					["qg"] = 134639,	-- Brother Pike
-					["sourceQuests"] = { 50593, 50594, 50595 },	-- A Bloody Mess / Beneath the Veil / No Quarter
-					["coord"] = { 66.1, 47.4 },
 				})),
 				a(q(50088, {	-- Golden Fields Forever
 					["qg"] = 129808,	-- Farmer Goldfield
@@ -379,11 +583,6 @@ _.Zones =
 					},
 					["coord"] = { 54.9, 67.9 },
 				})),
-				a(q(49704, {	-- Haywire Harvesters
-					["qg"] = 130715,	-- Taelia
-					["sourceQuests"] = { 49703 },	-- House Stormsong
-					["coord"] = { 63.5, 64.8 },
-				})),
 				a(q(49755, {	-- Heavy Artillery
 					["qg"] = 130694,	-- Mayor Roz
 					["sourceQuests"] = { 49744, 49746, 49745 },	-- Bombs, Away / Dousing the Flames / You Have Their Orders
@@ -398,15 +597,6 @@ _.Zones =
 						i(158690),	-- Tidespeaker Cord
 						i(160361),	-- Tidespeaker Pants
 					},
-				})),
-				a(o(290537, {	-- Help Wanted
-					["g"] = {
-						a(q(51582, {	-- Make it Mildenhall
-							["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress(needs verification)
-							["isBreadcrumb"] = true,
-						})),
-					},
-					["coord"] = { 66.3, 57.2 },
 				})),
 				a(q(50504, {	-- Honey Glazed Sam
 					["qg"] = 132292,	-- Raimond Mildenhall
@@ -460,20 +650,10 @@ _.Zones =
 					["sourceQuests"] = { 50781 },	-- A Bridge Too Far
 					["coord"] = { 70.3, 36.1 },
 				})),
-				a(q(49791, {	-- Lost, Not Forgotten
-					["qg"] = 130714,	-- Brother Pike
-					["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress
-					["coord"] = { 63.4, 64.7 },
-				})),
 				a(q(50343, {	-- Mayhem at Mildenhall Meadery
 					["qg"] = 131793,	-- Ancel Mildenhall
 					["sourceQuests"] = { 51582 },	-- Make it Mildenhall
 					["coord"] = { 68.8, 65.1 },
-				})),
-				a(q(49793, {	-- Means to an End
-					["qg"] = 130714,	-- Brother Pike
-					["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress
-					["coord"] = { 63.4, 64.7 },
 				})),
 				a(q(50909, {	-- Never Outgunned
 					["qg"] = 135874,	-- Lea Martinel
@@ -485,11 +665,6 @@ _.Zones =
 					["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
 					["coord"] = { 42.6, 54.3 },
 				})),
-				a(q(50595, {	-- No Quarter
-					["qg"] = 134623,	-- Taelia
-					["sourceQuests"] = { 49998 },	-- Voices Below
-					["coord"] = { 66.3, 47.0 },
-				})),
 				a(q(50691, {	-- Not On Our Payroll
 					["qg"] = 134702,	-- Nedly Grinner
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
@@ -500,30 +675,10 @@ _.Zones =
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["coord"] = { 60.9, 41.3 },
 				})),
-				a(q(49706, {	-- Proclamation Investigation
-					["qg"] = 130714,	-- Brother Pike
-					["sourceQuests"] = { 49703 },	-- House Stormsong
-					["coord"] = { 63.4, 64.7 },
-				})),
 				a(q(51310, {	-- Raiders of the Lost Crop
 					["qg"] = 137094,	-- Farmer Max
 					-- ["sourceQuests"] = {  },	--  (This didn't have a source Quest that I could tell)
 					["coord"] = { 54.9, 67.9 },
-				})),
-				a(q(49996, {	-- Rearmament
-					["qg"] = 131249,	-- Taelia
-					["sourceQuests"] = { 49975 },	-- Rest in the Depths
-					["coord"] = { 66.4, 56.5 },
-					["g"] = {
-						i(155204),	-- Brineworks Boot Knife
-						i(155214),	-- Brineworks Hullcracker
-						i(155199),	-- Great Sea Waraxe
-						i(155221),	-- Stormfused Spire
-						i(155208),	-- Stormfused Striker
-						i(155216),	-- Tideguard Harpoon
-						i(155224),	-- Tideguard Spellblade
-						i(155209),	-- Thundershot Rifle
-					},
 				})),
 				a(q(50161, {	-- Recovering Raimond
 					["qg"] = 132647,	-- Ancel Mildenhall
@@ -535,11 +690,6 @@ _.Zones =
 					["sourceQuests"] = { 50909 },	-- Never Outgunned ??? (might require more??)
 					["coord"] = { 57.9, 55.5 },
 					["isBreadcrumb"] = true,
-				})),
-				a(q(49975, {	-- Rest in the Depths
-					["qg"] = 130714,	-- Brother Pike
-					["sourceQuests"] = { 49791 },	-- Lost, Not Forgotten
-					["coord"] = { 66.3, 56.5 },
 				})),
 				a(q(50168, {	-- Royal Succession
 					["qg"] = 132292,	-- Raimond Mildenhall
@@ -595,23 +745,6 @@ _.Zones =
 						i(155187),	-- Dread Corsair Shoulderplates
 					},
 					-- This gave "At the Edge of Madness" criteria achievement - Crieve
-				})),
-				a(q(49997, {	-- Storm's Judgment
-					["qg"] = 130714,	-- Brother Pike
-					["sourceQuests"] = { 49996 },	-- Rearmament
-					["coord"] = { 66.3, 56.5 },
-					["g"] = {
-						{
-							["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
-							["criteriaID"] = 2,	-- A House In Peril [Criteria]
-						},
-						i(155166),	-- Dread Corsair Breastplate
-						i(155168),	-- Darkwater Tunic
-						i(160880),	-- Dread Corsair Pauldrons
-						
-						-- TODO: Find out what the other quest rewards for this quest are, they aren't listed in WoWHead. - Crieve
-					},
-					-- This gave "A House In Peril" criteria achievement - Crieve
 				})),
 				a(q(50611, {	-- Storm's Vengeance
 					["qg"] = 134639,	-- Brother Pike
@@ -670,11 +803,6 @@ _.Zones =
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
 				})),
-				a(q(51552, {	-- The Days Are Just Packed
-					["qg"] = 130786,	-- Hobbs
-					["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress
-					["coord"] = { 66.7, 56.4 },
-				})),
 				a(q(51319, {	-- The Final Ascent
 					["qg"] = 137220,	-- Brother Pike / Awakened Tidesage
 					["sourceQuests"] = { 51278, 51320 },	-- Lost and Forgotten / Sealed Fate
@@ -684,21 +812,6 @@ _.Zones =
 					["qg"] = 134882,	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50793 },	-- Cave Commotion
 					["coord"] = { 41.1, 54.1 },
-				})),
-				a(q(49794, {	-- The Rising Tide
-					["qg"] = 130715,	-- Taelia
-					["sourceQuests"] = { 49704, 49706, 49705 },	-- Haywire Harvesters / Proclamation Investigation / Unnecessary Duress
-					["coord"] = { 63.5, 64.8 },
-					["g"] = {
-						i(155193),	-- Darkwater Belt
-						i(155190),	-- Dread Corsair Girdle
-						i(155192),	-- Stormchaser Belt
-						i(155191),	-- Tidespeaker Sash
-						i(155184),	-- Darkwater Breeches
-						i(155181),	-- Dread Corsair Greaves
-						i(155183),	-- Stormchaser Legguards
-						i(155182),	-- Tidespeaker Leggings
-					},
 				})),
 				a(q(50777, {	-- The Storm Awakens
 					["qg"] = 135534,	-- Brother Pike
@@ -731,27 +844,6 @@ _.Zones =
 					["qg"] = 134720,	-- Leo Shealds
 					["sourceQuests"] = { 51554 },	-- Reloading
 					["coord"] = { 42.9, 56.6 },
-				})),
-				a(q(49705, {	-- Unnecessary Duress
-					["qg"] = 130714,	-- Brother Pike
-					["sourceQuests"] = { 49703 },	-- House Stormsong
-					["coord"] = { 63.4, 64.7 },
-					["g"] = {
-						i(155173),	-- Darkwater Gloves
-						i(155174),	-- Dread Corsair Gauntlets
-						i(155176),	-- Stormchaser Gloves
-						i(155175),	-- Tidespeaker Gloves
-						i(155172),	-- Darkwater Boots
-						i(155169),	-- Dread Corsair Sabatons
-						i(155171),	-- Stormchaser Boots
-						i(155170),	-- Tidespeaker Sandals
-					},
-				})),
-				a(q(49998, {	-- Voices Below
-					["qg"] = 130714,	-- Brother Pike
-					["sourceQuests"] = { 49997 },	-- Storm's Judgment
-					["coord"] = { 66.3, 56.5 },
-					["isBreadcrumb"] = true,
 				})),
 				a(q(50534, {	-- Wendigo Away
 					["qg"] = 134447,	-- Lost Farmhand
@@ -1159,9 +1251,6 @@ _.Zones =
 				q(50616, {	-- A Bit of a Bind
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50593, {	-- A Bloody Mess
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50694, {	-- A Bloody Mess
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1211,10 +1300,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56112),	-- A Royal Awakening
-
-				q(52795, {	-- A Saur Point
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50705, {	-- A Snake with Three Heads
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1324,9 +1409,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(50594, {	-- Beneath the Veil
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(52865, {	-- Blockade Runner
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -1356,9 +1438,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49744, {	-- Bombs, Away
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49792, {	-- Bound and Oppressed
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50810, {	-- Break 'Em Out
@@ -1563,9 +1642,6 @@ _.Zones =
 				q(50784, {	-- Eye of the Storm
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49995, {	-- Fabricated Fabrications
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50644, {	-- Facing the Invaders
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1608,9 +1684,6 @@ _.Zones =
 				q(49886, {	-- Follow Your Nose
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50608, {	-- Forbidden Rites
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(49887, {	-- Forced Labor
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1630,9 +1703,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49831, {	-- From the Depths
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50609, {	-- From the Maw of Madness
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50696, {	-- Fun With Magnets
@@ -1657,9 +1727,6 @@ _.Zones =
 				q(51776, {	-- Galestorm
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(50610, {	-- Gathering Storm
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51726, {	-- Get Out of Here
 					["races"] = ALLIANCE_ONLY,
@@ -1705,9 +1772,6 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(51711, {	-- Having a Blast
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49704, {	-- Haywire Harvesters
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49755, {	-- Heavy Artillery
@@ -1811,9 +1875,6 @@ _.Zones =
 				q(51278, {	-- Lost and Forgotten
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49791, {	-- Lost, Not Forgotten
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51582, {	-- Make it Mildenhall
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1832,9 +1893,6 @@ _.Zones =
 				q(52924, {	-- Mead Some Help?
 					["collectible"] = false,
 					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49793, {	-- Means to an End
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51209, {	-- Mighty Grokkfist
@@ -1960,9 +2018,6 @@ _.Zones =
 				q(50698, {	-- Problem Solving with Gunpowder
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49706, {	-- Proclamation Investigation
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(53012, {	-- Put Away Your Toys
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -1997,10 +2052,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51221),	-- Response Required
-
-				q(49975, {	-- Rest in the Depths
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(52160, {	-- Restocking
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -2183,9 +2234,6 @@ _.Zones =
 				q(50824, {	-- Storm's End
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49997, {	-- Storm's Judgment
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50611, {	-- Storm's Vengeance
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2274,9 +2322,6 @@ _.Zones =
 				q(52132, {	-- The Proof of Piracy
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49794, {	-- The Rising Tide
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50635, {	-- The Shifting Tides
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2359,9 +2404,6 @@ _.Zones =
 				q(53712, {	-- Unfriendly Skies
 					["collectible"] = false,
 					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49705, {	-- Unnecessary Duress
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50690, {	-- UNUSED
