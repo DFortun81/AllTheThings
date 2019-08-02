@@ -514,17 +514,59 @@ _.Zones =
 				},
 				["g"] = {
 					i(169202),	-- Crimson Tidestallion
-					-- Mrrl sells containers of random stuff. Need way more testing to figure out what these contain
-					i(168092),	-- Curiously Warm Kelp Bundle
+					i(168092, {	-- Curiously Warm Kelp Bundle
+						["description"] = "Contains Mardivas reagent",
+					}),
+					i(168094, {	-- Faintly Humming Sea Stones
+						i(167077),	-- Scrying Stone
+					}),
+					i(168093, {	-- Grimy Manapearl Bracelet
+						["description"] = "Contains 3 Prismatic Manapearls",
+					}),
+					i(170159, {	-- Grimy Manapearl Bracelet
+						["description"] = "Contains 3 Prismatic Manapearls",
+					}),
+					i(170153, {	-- Ominous Looking Tome
+						i(169945),	-- Naga Deployment Orders(A)
+						i(170085),	-- Naga Deployment Orders(H)
+					}),
 					i(168097, {	-- Pilfered Armor Crate
+						["description"] = "Contains a piece of Benthic gear",
 						["g"] = {
 							-- probably contains other benthic items too, but this is only one confirmed so far
 							i(169477),	-- Benthic Girdle
 						},
 					}),
-					i(168091),	-- Severly Rusted Lockbox
-					i(168095),	-- Strange Coral Cluster
+					i(170101, {	-- Pilfered Armor Crate
+						["description"] = "Contains a piece of Benthic gear",
+					}),
+					i(168091, {	-- Severly Rusted Lockbox
+						i(169475),	-- Barnacled Lockbox
+					}),
+					i(170152,	{	-- Shadow-Cloaked Shell
+						["description"] = "150 rep with Nazjatar faction",
+					}),
+					i(170157, {	-- Sinister Pile of Sand
+						["description"] = "Contains Mardivas reagent",
+					}),
+					i(168095, {	-- Strange Coral Cluster
+						["description"] = "Contains 375 Azerite",
+					}),
+					i(170158, {	-- Unspeakable Pearl Idol
+						["description"] = "Contains 7 Prismatic Manapearls",
+					}),
 					i(168053),	-- Unusually Wise Hermit Crab
+					i(170161),	-- Unusually Wise Hermit Crab
+					i(168096, {	-- Waterlogged Toolbox
+						i(166888),	-- Germinating Seed
+						i(167012),	-- Brinestone Pickaxe
+						i(167059),	-- Chum
+					}),
+					i(170162, {	-- Waterlogged Toolbox
+						i(166888),	-- Germinating Seed
+						i(167012),	-- Brinestone Pickaxe
+						i(167059),	-- Chum
+					}),
 				}
 			}),
 			n(154140, {	-- Speaker Utia
