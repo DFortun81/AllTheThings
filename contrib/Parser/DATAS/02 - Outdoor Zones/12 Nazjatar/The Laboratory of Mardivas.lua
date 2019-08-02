@@ -27,6 +27,9 @@ _.Zones =
 				}),
 				n(150926, {	-- Burning Amalgamation
 					["description"] = "Activate Lesser Pyroclasmic (Red) Arcanocrystal.",
+					["crs"] = {
+						154991,	-- Lesser Pyroclasmic Arcanocrystal
+					},
 					["g"] = {
 						crit(3, {	-- Burning Amalgamation
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -36,6 +39,9 @@ _.Zones =
 				}),
 				n(150862, {	-- Dusty Amalgamation
 					["description"] = "Activate Lesser Lithic (Yellow) Arcanocrystal.",
+					["crs"] = {
+						155009,	-- Lesser Lithic Arcanocrystal
+					},
 					["g"] = {
 						crit(4, {	-- Dusty Amalgamation
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -45,6 +51,10 @@ _.Zones =
 				}),
 				n(150864, {	-- Herald of Salgos
 					["description"] = "Activate Lesser Lithic (Yellow) and Greater Lithic (Yellow) Arcanocrystals.",
+					["crs"] = {
+						155009,	-- Lesser Lithic Arcanocrystal
+						155031,	-- Greater Lithic Arcanocrystal
+					},
 					["g"] = {
 						crit(12, {	-- Herald of Salgos
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -54,6 +64,10 @@ _.Zones =
 				}),
 				n(150928, {	-- Moghiea
 					["description"] = "Activate Lesser Pyroclasmic (Red) and Greater Lithic (Yellow) Arcanocrystals.",
+					["crs"] = {
+						154991,	-- Lesser Pyroclasmic Arcanocrystal
+						155031,	-- Greater Lithic Arcanocrystal
+					},
 					["g"] = {
 						crit(8, {	-- Moghiea
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -63,6 +77,10 @@ _.Zones =
 				}),
 				n(151157, {	-- Omus
 					["description"] = "Activate Lesser Benthic (Blue) and Greater Pyroclasmic (Red) Arcanocrystals.",
+					["crs"] = {
+						154970,	-- Lesser Benthic Arcanocrystal
+						155025,	-- Greater Pyroclasmic Arcanocrystal
+					},
 					["g"] = {
 						crit(6, {	-- Omus
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -73,6 +91,10 @@ _.Zones =
 				}),
 				n(150856, {	-- Osgen <Shifter of Tides>
 					["description"] = "Activate Lesser Benthic (Blue) and Greater Benthic (Blue) Arcanocrystals.",
+					["crs"] = {
+						154970,	-- Lesser Benthic Arcanocrystal
+						154979,	-- Greater Benthic Arcanocrystal
+					},
 					["g"] = {
 						crit(7, {	-- Osgen
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -82,6 +104,10 @@ _.Zones =
 				}),
 				n(151154, {	-- Salgos the Eternal
 					["description"] = "Activate Lesser Lithic (Yellow) and Greater Pyroclasmic (Red) Arcanocrystals.",
+					["crs"] = {
+						155009,	-- Lesser Lithic Arcanocrystal
+						155025,	-- Greater Pyroclasmic Arcanocrystal
+					},
 					["g"] = {
 						crit(13, {	-- Salgos the Eternal
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -91,6 +117,10 @@ _.Zones =
 				}),
 				n(150863, {	-- Spawn of Salgos
 					["description"] = "Activate Lesser Lithic (Yellow) and Greater Benthic (Blue) Arcanocrystals.",
+					["crs"] = {
+						155009,	-- Lesser Lithic Arcanocrystal
+						154979,	-- Greater Benthic Arcanocrystal
+					},
 					["g"] = {
 						crit(11, {	-- Spawn of Salgos
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -100,6 +130,10 @@ _.Zones =
 				}),
 				n(151155, {	-- Ungormath <The Malevolent>
 					["description"] = "Activate Lesser Pyroclasmic (Red) and Greater Pyroclasmic (Red) Arcanocrystals.",
+					["crs"] = {
+						154991,	-- Lesser Pyroclasmic Arcanocrystal
+						155025,	-- Greater Pyroclasmic Arcanocrystal
+					},
 					["g"] = {
 						crit(10, {	-- Ungormath
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -109,6 +143,9 @@ _.Zones =
 				}),
 				n(150846, {	-- Watery Amalgamation
 					["description"] = "Activate Lesser Benthic (Blue) Arcanocrystal.",
+					["crs"] = {
+						154970,	-- Lesser Benthic Arcanocrystal
+					},
 					["g"] = {
 						crit(2, {	-- Watery Amalgamation
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -118,6 +155,10 @@ _.Zones =
 				}),
 				n(150927, {	-- Xue <The Cinder>
 					["description"] = "Activate Lesser Pyroclasmic (Red) and Greater Benthic (Blue) Arcanocrystals.",
+					["crs"] = {
+						154991,	-- Lesser Pyroclasmic Arcanocrystal
+						154979,	-- Greater Benthic Arcanocrystal
+					},
 					["g"] = {
 						crit(9, {	-- Xue
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -128,6 +169,10 @@ _.Zones =
 				}),
 				n(150848, {	-- Zomera
 					["description"] = "Activate Lesser Benthic (Blue) and Greater Lithic (Yellow) Arcanocrystals.",
+					["crs"] = {
+						154970,	-- Lesser Benthic Arcanocrystal
+						155031,	-- Greater Lithic Arcanocrystal
+					},
 					["g"] = {
 						crit(5, {	-- Zomera
 							["achievementID"] = 13699,	-- Periodic Destruction
