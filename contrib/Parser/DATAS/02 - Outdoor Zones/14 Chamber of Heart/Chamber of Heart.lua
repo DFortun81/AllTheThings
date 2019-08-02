@@ -135,7 +135,7 @@ _.Zones =
 						q(55390, {	-- In Darkness, I Dream
 							["qg"] = 152365,	-- Kalecgos
 							["coord"] = { 53.1, 70.9, 1473 },
-							["description"] = "Your Hearth of Azeroth need to be 54 to start the Questline.",
+							["description"] = "Your Hearth of Azeroth needs to be 54 to start the questline.",
 							["lvl"] = 120,
 						}),	
 						q(55392, {	-- Enter the Dreamway
@@ -194,6 +194,14 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 1475 },	-- The Emerald Dream
 						}),
+						o(324407, {	-- Void Roots
+							["questID"] = 55467,
+							["maps"] = { 1475 },	-- The Emerald Dream
+							["lvl"] = 120,
+							["g"] = {
+								i(167873),	-- Remnant of the Void (white item — not sure what this is used for.  mysteryyyyyyy!)
+							},
+						}),
 						q(55396, {	-- The Stuff Dreams Are Made Of
 							["qg"] = 151825,	-- Merithra of the Dream
 							["coord"] = { 46.5, 39.7, 1475 },
@@ -215,9 +223,10 @@ _.Zones =
 						}),
 						-- Hearth of Azeroth Level 55
 						q(55519, {	-- A Fresh Trauma
+							["sourceQuests"] = { 56261, 55522 },	-- Return to the Heart (A, H)
 							["qg"] = 152206,	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.2, 1473 },
-							["description"] = "Your Hearth of Azeroth need to be 55 to start the Questline.",
+							["description"] = "Your Hearth of Azeroth needs to be 55 to start the questline.",
 							["lvl"] = 120,
 						}),
 						q(55520, {	-- Healing Nordrassil

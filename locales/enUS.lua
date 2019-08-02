@@ -2288,6 +2288,7 @@ AllTheThings.L = {
 		[226469] = "Interface\\Icons\\trade_archaeology_nerubian_obelisk",		-- Spirit of the Wolf
 		[239926] = "Interface\\Icons\\trade_archaeology_nerubian_obelisk",		-- Touched By Fire
 		[230544] = "Interface\\Icons\\trade_archaeology_nerubian_obelisk",		-- Touched By Ice
+		[324407] = "Interface\\Icons\\spell_nature_thorns_nightmare",			-- Void Roots
 		[326027] = "Interface\\Icons\\INV_Mechagon_JunkyardTinkeringCrafting",
 	};
 	["OBJECT_ID_NAMES"] = {
@@ -3323,6 +3324,7 @@ AllTheThings.L = {
 		[332220] = "Glowing Arcane Trunk",
 		[322413] = "Glimmering Chest",
 		[322533] = "Mardivas's Tome of the Elements",
+		[324407] = "Void Roots",
 		[325659] = "Mechanized Chest",
 		[325660] = "Mechanized Chest",
 		[325661] = "Mechanized Chest",

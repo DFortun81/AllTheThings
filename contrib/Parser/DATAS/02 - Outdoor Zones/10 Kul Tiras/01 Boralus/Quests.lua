@@ -201,6 +201,13 @@ _.Zones =
 						i(155020),	-- Sea Raider's Breastplate
 					},
 				}),
+				q(56261, {	-- Return to the Heart
+				--	breadcrumb to send you back to the Heart Chamber to unlock your first minor slot for the azerite neck
+					["isBreadcrumb"] = true,
+					["coord"] = { 74.8, 15.2, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(51487, {	-- Searching for Answers
 					["sourceQuests"] = { 47952 },	-- The Missing Fleet
 					["coord"] = { 65.2, 68.7, 1161 },
