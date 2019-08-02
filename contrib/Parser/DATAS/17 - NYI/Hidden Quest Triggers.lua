@@ -492,6 +492,12 @@ _.NeverImplemented =
 		q(56605),	-- Toxigore the Alpha first kill
 		q(56584),	-- Urduu first kill
 		q(57083),	-- Wayward Algan Benthic loot
+		-- The Laboratory of Mardivas
+		q(56708),	-- Lesser Lithic Arcanocrystal Selection	-- Needs confirmation
+		q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
+		q(56488),	-- Triggered after killing Herald of Salgos
+		q(55891),	-- Triggered after killing Herald of Salgos
+		q(56892),	-- Triggered after killing Herald of Salgos
 		--	Naga Commanders
 		q(56882),	-- Commander Minezra
 		q(56895),	-- Incantatrix Vazina
