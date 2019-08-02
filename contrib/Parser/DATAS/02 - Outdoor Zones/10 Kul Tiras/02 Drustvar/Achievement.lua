@@ -38,6 +38,7 @@ _.Zones =
 				ach(13094, {	-- Cursed Game Hunter
 					crit(1, {	-- Goats
 						["crs"] = { 143929 },	-- Hexed Craghopper
+						["coord"] = { 54.4, 21.8, 896 },
 					}),
 					crit(2, {	-- Deer
 						["crs"] = {
@@ -45,12 +46,14 @@ _.Zones =
 							129764,	-- Hexcrazed Doe
 							128361,	-- Hexcrazed Greatstag
 						},
+						["coord"] = { 55.8, 44.0, 896 },
 					}),
 					crit(3, {	-- Pigs
 						["crs"] = {
 							124548,	-- Betsy
 							124170,	-- Fallhaven Pig
 						},
+						["coord"] = { 58.8, 34.6, 896 },
 					}),
 					crit(4, {	-- Thornclaws
 						["crs"] = {
@@ -58,6 +61,7 @@ _.Zones =
 							135869,	-- Greenstalker
 							142278,	-- Hexed Thornclaw
 						},
+						["coord"] = { 33.0, 63.0, 896 },
 					}),
 					crit(5, {	-- Wolves
 						["crs"] = {
@@ -65,12 +69,14 @@ _.Zones =
 							132194,	-- Hexenwolf Alpha
 							132195,	-- Hexenwolf Tracker
 						},
+						["coord"] = { 24.6, 65.6, 896 },
 					}),
 					crit(6, {	-- Ravens
 						["crs"] = {
 							124382,	-- Bonepicker Raven
 							124890,	-- Ensorcelled Bonepicker
 						},
+						["coord"] = { 58.0, 26.8, 896 },
 					}),
 					crit(7, {	-- Rabbits
 						["crs"] = {
@@ -78,6 +84,7 @@ _.Zones =
 							129877,	-- Ensorcelled Hare
 							129899,	-- Frenzied Cottontail
 						},
+						["coord"] = { 55.6, 45.2, 896 },
 					}),
 					crit(8, {	-- Falcons
 						["crs"] = {
@@ -86,27 +93,36 @@ _.Zones =
 							122961,	-- Cursed Game-hawk
 							133988,	-- Cursed Gyrfalcon
 						},
+						["coord"] = { 31.6, 25.0, 896 },
 					}),
 					crit(9, {	-- Bramblebacks
 						["crs"] = {
 							134753,	-- Cursed Brambleback
 							133501,	-- Hexed Brambleback
 						},
+						["coords"] = {
+							{ 17.6, 57.0, 896 },
+							{ 24.6, 47.8, 896 },
+						},
 					}),
 					crit(10, {	-- Sea Lions
 						["crs"] = { 143953 },	-- Bewitched Seal
+						["coord"] = { 21.8, 22.6, 896 },
 					}),
 					crit(11, {	-- Horses
 						["crs"] = {
 							134307,	-- Hexthralled Courser
 							131534,	-- Hexthralled Guardsman
 						},
+						["coord"] = { 32.0, 21.6, 896 },
 					}),
 					crit(12, {	-- Sharks
 						["crs"] = { 143951 },	-- Hexed Dreadmaw
+						["coord"] = { 22.6, 70.6, 896 },
 					}),
 					crit(13, {	-- Crabs
 						["crs"] = { 143928 },	-- Cursed Snapclaw
+						["coord"] = { 76.21, 65.22, 896 },
 					}),
 				}),
 				ach(13064, {	-- Drust the Facts, Ma'am
