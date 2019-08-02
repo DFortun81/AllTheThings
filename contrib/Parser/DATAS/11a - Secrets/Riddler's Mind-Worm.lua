@@ -4,7 +4,7 @@
 _.Secrets = 
 {
 	n(-801, {	-- Riddler's Mind-Worm
-		["description"] = "Below is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
+		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
 		["modelScale"] = .7,
 		["modelID"] = 74314,
 		["g"] = {

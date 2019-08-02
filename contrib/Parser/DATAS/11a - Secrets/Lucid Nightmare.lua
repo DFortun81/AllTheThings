@@ -6,6 +6,7 @@ _.Secrets =
 	n(-800, {	-- Lucid Nightmare
 		["modelScale"] = .8,
 		["modelID"] = 78092,
+		["description"] = "***Quest tracking enabled is required to see all the steps.***",
 		["g"] = {
 			o(270855, {	-- Step 1: Inconspicuous Note
 				["questID"] = 47826,

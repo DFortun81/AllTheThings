@@ -212,7 +212,7 @@ _.Secrets =
 			n(-805, {	-- Baa'l  -- TODO: Descriptions
 				["modelScale"] = 1.1,
 				["modelID"] = 80456,
-				["description"] = "***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***",
+				["description"] = "***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***",
 				["maps"] = {
 					525,
 					646,
@@ -376,7 +376,7 @@ _.Secrets =
 				},
 			}),
 			n(-806, { 	-- Waist of Time   Descriptions, figure out quest.
-				["description"] = "You will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
+				["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
 				["maps"] = {
 					14,
 					15,

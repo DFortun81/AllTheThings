@@ -1,11 +1,11 @@
 ---------------------------------------------
 --     S E C R E T S     M O D U L E       --
 ---------------------------------------------
-_.Secrets = 
+_.Secrets =
 {
 	n(-802, {	-- Sun Darter Hatchling
 		["modelID"] = 74529,
-		["description"] = "***This secret requires you to have debug mode enabled to see the consumables needed. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the Debug Mode |cFFFFFFFF(Show Everything)|r box.*** \n\nIt also requires the battle pet Perky Pug from the Dungeons and Raids achievment Looking For Multitudes.\n\nEnjoy!\n\n!Note If coords are not plotting, you might need to make a standalone item plot it, and then plot again from the main list.",
+		["description"] = "***This secret requires you to have debug mode enabled to see the consumables/steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.*** \n\nIt also requires the battle pet Perky Pug from the Dungeons and Raids achievment Looking For Multitudes.\n\nEnjoy!\n\n!Note If coords are not plotting, you might need to make a standalone item plot it, and then plot again from the main list.",
 		["maps"] = {
 		},
 		["g"] = {
@@ -207,7 +207,7 @@ _.Secrets =
 				--["modelScale"] = 2,
 				["icon"] = "Interface\\Icons\\INV_Egg_09",
 				["questID"] = 48022,
-				["description"] = "|cFFFFFFFFSTEP 14:|r |cff66ccffDO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water.  Walk across the water and loot the egg.|r\n\nCongrats on your new pet!!! \n\nDon't forget to turn off debug mode now that you are done.",  -- |cff3399ff -- blue color
+				["description"] = "|cFFFFFFFFSTEP 14:|r |cff66ccffDO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water.  Walk across the water and loot the egg.|r\n\nCongrats on your new pet!!! \n\n!Don't forget to turn off debug mode now that you are done.",  -- |cff3399ff -- blue color
 				["g"] = {
 					i(142223),	-- Sun Darter Hatchling (PET!)
 				},
