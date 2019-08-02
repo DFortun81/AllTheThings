@@ -12037,11 +12037,20 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 			local worldMapIDs = {
 				{ 14 },		-- Arathi Highlands
 				{ 62 },		-- Darkshore
-				{ 875 },	-- Zandalar
+				{
+					875,	-- Zandalar
+					{
+						-- { 863, ???, { 54135, 54136 }},	-- Nazmir (Romp in the Swamp [H] / March on the Marsh [A])
+						-- { 864, ???, { 53885, 54134 }},	-- Voldun (Isolated Victory [H] / Many Fine Heroes [A])
+						-- { 862, ???, { 53883, 54138 }},	-- Zuldazar (Shores of Zuldazar [H] / Ritual Rampage [A])
+					}
+				},
 				{
 					876,	-- Kul'Tiras
 					{
-						{ 895, 5896, { 53939, 53711 }},	-- Tiragarde Sound
+						-- { 896, ???, { 54137, 53701 }},	-- Drustvar (In Every Dark Corner [H] / A Drust Cause [A])
+						{ 942, 5966, { 54132, 51982 }},	-- Stormsong Valley (A Horde of Heroes [H] / Storm's Rage [A])
+						{ 895, 5896, { 53939, 53711 }},	-- Tiragarde Sound (Breaching Boralus [H] / A Sound Defense [A])
 					}
 				},	
 				{ 
