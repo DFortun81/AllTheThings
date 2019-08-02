@@ -296,6 +296,7 @@ _.Zones =
 					}),
 					o(297891, {	-- Runebound Cache
 						["questID"] = 53385,
+						["coord"] = { 63.3, 65.8, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["g"] = {
 							i(163743),	-- Drust Soulcatcher
@@ -303,6 +304,7 @@ _.Zones =
 					}),
 					o(297892, {	-- Runebound Chest
 						["questID"] = 53386,
+						["coord"] = { 44.2, 27.8, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["g"] = {
 							i(163742),	-- Heartsbane Grimoire (TOY!)
@@ -310,6 +312,7 @@ _.Zones =
 					}),
 					o(297893, {	-- Runebound Coffer
 						["questID"] = 53387,
+						["coord"] = { 44.2, 27.8, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["g"] = {
 							i(163740),	-- Drust Ritual Knife (TOY!)
@@ -317,11 +320,19 @@ _.Zones =
 					}),
 					o(298920, {	-- Stolen Thornspeaker Cache
 						["questID"] = 53475,
+						["coord"] = { 24.3, 48.5, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["g"] = {
+							i(163036),	-- Polished Pet Charm
+						},
 					}),
 					o(297825, {	-- Web-Covered Chest
 						["questID"] = 53356,
+						["coord"] = { 33.7, 30.1, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["g"] = {
+							i(160053),	-- Battle-Scarred Augment Rune
+						},
 					}),
 				}),
 			}),
