@@ -12362,6 +12362,39 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								end
 							end
 							
+							if questObject.qgs and #questObject.qgs == 1 then
+								for j,qg in ipairs(questObject.qgs) do
+									cache = fieldCache["creatureID"][qg];
+									if cache then
+										for _,data in ipairs(cache) do
+											for key,value in pairs(data) do
+												if not (key == "g" or key == "parent") then
+													questObject[key] = value;
+												end
+											end
+											if data.g then
+												for _,entry in ipairs(data.g) do
+													MergeObject(questObject.g, entry);
+												end
+											end
+											if data.g then
+												for _,entry in ipairs(data.g) do
+													local resolved = ResolveSymbolicLink(entry);
+													if resolved then
+														entry = CreateObject(entry);
+														if not entry.g then entry.g = {}; end
+														for i,o in ipairs(resolved) do
+															MergeObject(entry.g, o);
+														end
+													end
+													MergeObject(questObject.g, entry);
+												end
+											end
+										end
+									end
+								end
+							end
+							
 							local numQuestRewards = GetNumQuestLogRewards (questObject.questID);
 							for j=1,numQuestRewards,1 do
 								local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);

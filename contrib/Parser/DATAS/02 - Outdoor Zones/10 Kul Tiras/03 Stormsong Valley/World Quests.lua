@@ -1507,6 +1507,7 @@ _.Zones =
 					}),
 					q(51778, {	-- Deepfang
 						["lvl"] = 120,
+						["qg"] = 139385,	-- Deepfang
 						["collectible"] = false,
 					}),
 					q(53804, {	-- Dinomancer Zakuru (Faction Assault WQ)
