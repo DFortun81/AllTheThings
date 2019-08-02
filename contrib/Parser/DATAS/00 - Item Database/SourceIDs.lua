@@ -89,6 +89,7 @@ i(25978, 1, 10687);		-- Seth's Graphite Fishing Pole
 i(88535, 1, 45845);		-- Sharpened Tuskarr Spear
 i(120163, 1, 67918);	-- Thruk's Fishing Rod
 i(133755, 1, 76909);	-- Underlight Angler
+i(168804, 1, 104673);	-- Powered Piscine Procurement Pole
 
 -------------------
 -- F I S H I E S --
