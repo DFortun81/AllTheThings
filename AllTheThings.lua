@@ -1159,6 +1159,7 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"unit",
 	"dungeonID"
 };
+local key, hash;
 local function GetKey(t)
 	for i,key in ipairs(keysByPriority) do
 		if rawget(t, key) then
@@ -1174,6 +1175,18 @@ local function GetKey(t)
 	for key,value in pairs(t) do
 		print(key, value);
 	end
+end
+local function CreateHash(t)
+	key = t.key or GetKey(t);
+	if key then
+		hash = key .. (rawget(t, key) or t[key]);
+		if key == "criteriaID" and t.achID then hash = hash .. ":" .. t.achID; end
+		rawset(t, "hash", hash);
+		return hash;
+	end
+end
+local function GetHash(t)
+	return t.hash or CreateHash(t);
 end
 CreateObject = function(t)
 	local s = {};
@@ -1258,55 +1271,59 @@ CreateObject = function(t)
 	end
 end
 MergeObjects = function(g, g2)
-	for i,o in ipairs(g2) do
-		MergeObject(g, o);
-	end
-end
-MergeObject = function(g, t, index)
-	local key = t.key or GetKey(t);
-	local value = t[key];
-	if key == "criteriaID" then
+	if #g2 > 25 then
+		local hashTable,t = {};
 		for i,o in ipairs(g) do
-			if o[key] == value and o.achID == t.achID then
-				if t.g then
-					local tg = t.g;
-					t.g = nil;
-					if o.g then
-						MergeObjects(o.g, tg);
+			hashTable[GetHash(o)] = o;
+		end
+		for i,o in ipairs(g2) do
+			t = hashTable[GetHash(o)];
+			if t then
+				if o.g then
+					local og = o.g;
+					o.g = nil;
+					if t.g then
+						MergeObjects(t.g, og);
 					else
-						o.g = tg;
+						t.g = og;
 					end
 				end
-				for k,v in pairs(t) do
+				for k,v in pairs(o) do
 					if k ~= "expanded" then
-						rawset(o, k, v);
+						rawset(t, k, v);
 					end
 				end
-				return o;
+			else
+				tinsert(g, o);
 			end
 		end
 	else
-		for i,o in ipairs(g) do
-			if o[key] == value then
-				if t.g then
-					local tg = t.g;
-					t.g = nil;
-					if o.g then
-						MergeObjects(o.g, tg);
-					else
-						o.g = tg;
-					end
-				end
-				for k,v in pairs(t) do
-					if k ~= "expanded" then
-						rawset(o, k, v);
-					end
-				end
-				return o;
-			end
+		for i,o in ipairs(g2) do
+			MergeObject(g, o);
 		end
 	end
-	
+end
+MergeObject = function(g, t, index)
+	hash = GetHash(t);
+	for i,o in ipairs(g) do
+		if GetHash(o) == hash then
+			if t.g then
+				local tg = t.g;
+				t.g = nil;
+				if o.g then
+					MergeObjects(o.g, tg);
+				else
+					o.g = tg;
+				end
+			end
+			for k,v in pairs(t) do
+				if k ~= "expanded" then
+					rawset(o, k, v);
+				end
+			end
+			return o;
+		end
+	end
 	if index then
 		tinsert(g, index, t);
 	else
@@ -12032,6 +12049,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						['text'] = "Update World Quests Now",
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
 						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
+						['hash'] = "funUpdateWorldQuests",
 						['OnClick'] = function(data, button)
 							Push(self, "Rebuild", self.Rebuild);
 							return true;
@@ -12137,7 +12155,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													entry.g = resolved;
 												end
 											end
-											MergeObject(questObject.g, entry);
+											tinsert(questObject.g, entry);
 										end
 									end
 								end
@@ -12208,7 +12226,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 																entry.g = resolved;
 															end
 														end
-														MergeObject(questObject.g, entry);
+														tinsert(questObject.g, entry);
 													end
 												end
 											end
@@ -12303,8 +12321,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											for j,item in ipairs(questObject.g) do
 												local resolved = ResolveSymbolicLink(item);
 												if resolved then
-													if not item.g then item.g = {}; end
-													MergeObjects(item.g, resolved);
+													if item.g then
+														MergeObjects(item.g, resolved);
+													else
+														item.g = resolved;
+													end
 												end
 											end
 										end
@@ -12363,7 +12384,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													entry.g = resolved;
 												end
 											end
-											MergeObject(questObject.g, entry);
+											tinsert(questObject.g, entry);
 										end
 									end
 								end
@@ -12378,9 +12399,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 												if not (key == "g" or key == "parent") then
 													questObject[key] = value;
 												end
-											end
-											if data.g then
-												MergeObjects(questObject.g, data.g);
 											end
 											if data.g then
 												for _,entry in ipairs(data.g) do
@@ -12716,6 +12734,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					MergeObject(self.data.g, CreateObject(o));
 				end
 				if not no then self:Update(); end
+				collectgarbage();
 			end
 			self.Sort = function(a, b)
 				if a.isRaid then
