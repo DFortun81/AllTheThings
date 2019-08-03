@@ -67,6 +67,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50511, {	-- Bajiatha
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54533, {	-- Barreling Through (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -189,6 +193,10 @@ _.Zones =
 						},
 					}),
 					q(50498, {	-- Gutrip
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50496, {	-- Glompmaw
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

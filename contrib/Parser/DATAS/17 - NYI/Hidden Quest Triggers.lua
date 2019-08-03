@@ -533,7 +533,7 @@ _.NeverImplemented =
 		q(55911),	-- Paol Pondwader first kill
 		q(55912),	-- Rumblerocks first kill
 		q(55924),	-- Rustfeather first kill
-					-- Scrapclaw first kill  -- 56100 and 57084 both (Missing in ATT) triggered
+		q(57084),	-- Scrapclaw first kill
 		q(55922),	-- Seaspit first kill
 		q(55923),	-- Sparkqueen P'Emp first kill
 		q(55933),	-- Steel Singer Freza first kill
@@ -543,7 +543,7 @@ _.NeverImplemented =
 		q(55921),	-- Uncle T'Rogg first kill
 		q(57081),	-- First Mechanized Chest of the week(Minipack: Mechagon)-- Still need to narrow down exact trigger
 		q(57133),	-- First Mechanized Chest of the week(Minipack: Mechagon)-- Still need to narrow down exact trigger
-		q(56100),	-- First Beastbot kill of the week(Minipack: Bondo's Yard)-- Still need to narrow down exact trigger
+		q(56100),	-- First Beastbot kill of the week(Minipack: Bondo's Yard)-- Still need to narrow down exact trigger(First rare kill of the week possibly)
 		q(57135),	-- First Beastbot kill of the week(Minipack: Bondo's Yard)-- Still need to narrow down exact trigger
 		q(56004),	-- looting Energy Cell while on the quest "We Can Fix It"
 		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"

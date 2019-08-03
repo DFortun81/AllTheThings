@@ -559,7 +559,7 @@ _.Zones =
 						["description"] = "Contains Mardivas reagent",
 					}),
 					i(168095, {	-- Strange Coral Cluster
-						["description"] = "Contains 375 Azerite",
+						["description"] = "Contains 3-400 Azerite",
 					}),
 					i(170158, {	-- Unspeakable Pearl Idol
 						["description"] = "Contains 7 Prismatic Manapearls",
