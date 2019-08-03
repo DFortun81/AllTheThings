@@ -1166,19 +1166,13 @@ local function GetKey(t)
 		end
 	end
 	for i,key in ipairs(keysByPriority) do
-		if t[key] then
+		if t[key] then	-- This goes a bit deeper.
 			return key;
 		end
 	end
-	
 	print("could not determine key for object")
 	for key,value in pairs(t) do
 		print(key, value);
-	end
-	for i,key in ipairs(keysByPriority) do
-		if t[key] then
-			return key;
-		end
 	end
 end
 CreateObject = function(t)
