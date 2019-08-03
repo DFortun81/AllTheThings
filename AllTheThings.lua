@@ -2903,7 +2903,7 @@ local function SearchForLink(link)
 						for i,o in ipairs(_) do
 							o = CreateObject(o);
 							o.modID = modID;
-							MergeObject(g, CreateObject(o));
+							MergeObject(g, o);
 						end
 						return g;
 					end
@@ -7909,8 +7909,8 @@ local function CreateMiniListForGroup(group)
 					for i=#resolved,1,-1 do
 						resolved[i] = CreateObject(resolved[i]);
 					end
+					popout.data.g = resolved;
 				end
-				popout.data.g = resolved;
 			else
 				local resolved = ResolveSymbolicLink(group);
 				if resolved then
@@ -12131,8 +12131,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											local resolved = ResolveSymbolicLink(entry);
 											if resolved then
 												entry = CreateObject(entry);
-												if not entry.g then entry.g = {}; end
-												MergeObjects(entry.g, resolved);
+												if entry.g then
+													MergeObjects(entry.g, resolved);
+												else
+													entry.g = resolved;
+												end
 											end
 											MergeObject(questObject.g, entry);
 										end
@@ -12199,8 +12202,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 														local resolved = ResolveSymbolicLink(entry);
 														if resolved then
 															entry = CreateObject(entry);
-															if not entry.g then entry.g = {}; end
-															MergeObjects(entry.g, resolved);
+															if entry.g then
+																MergeObjects(entry.g, resolved);
+															else
+																entry.g = resolved;
+															end
 														end
 														MergeObject(questObject.g, entry);
 													end
@@ -12351,8 +12357,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											local resolved = ResolveSymbolicLink(entry);
 											if resolved then
 												entry = CreateObject(entry);
-												if not entry.g then entry.g = {}; end
-												MergeObjects(entry.g, resolved);
+												if entry.g then
+													MergeObjects(entry.g, resolved);
+												else
+													entry.g = resolved;
+												end
 											end
 											MergeObject(questObject.g, entry);
 										end
@@ -12378,8 +12387,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													local resolved = ResolveSymbolicLink(entry);
 													if resolved then
 														entry = CreateObject(entry);
-														if not entry.g then entry.g = {}; end
-														MergeObjects(entry.g, resolved);
+														if entry.g then
+															MergeObjects(entry.g, resolved);
+														else
+															entry.g = resolved;
+														end
 													end
 													MergeObject(questObject.g, entry);
 												end
@@ -12579,8 +12591,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									local resolved = ResolveSymbolicLink(entry);
 									if resolved then
 										entry = CreateObject(entry);
-										if not entry.g then entry.g = {}; end
-										MergeObjects(entry.g, resolved);
+										if entry.g then
+											MergeObjects(entry.g, resolved);
+										else
+											entry.g = resolved;
+										end
 									end
 									MergeObject(data.g, entry);
 								end
