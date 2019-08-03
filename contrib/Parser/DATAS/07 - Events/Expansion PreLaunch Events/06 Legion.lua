@@ -278,13 +278,25 @@ _.WorldEvents =
 						q(43284, {	-- Invasion: Dun Morogh
 							["u"] = 40,
 						}),
+						q(42803, {	-- Invasion: Dun Morogh
+							["u"] = 40,
+						}),
 						q(43285, {	-- Invasion: Hillsbrad Foothills
+							["u"] = 40,
+						}),
+						q(42805, {	-- Invasion: Hillsbrad Foothills
 							["u"] = 40,
 						}),
 						q(43282, {	-- Invasion: Northern Barrens
 							["u"] = 40,
 						}),
+						q(42236, {	-- Invasion: Northern Barrens
+							["u"] = 40,
+						}),
 						q(43244, {	-- Invasion: Tanaris
+							["u"] = 40,
+						}),
+						q(42237, {	-- Invasion: Tanaris
 							["u"] = 40,
 						}),
 						q(43245, {	-- Invasion: Westfall
@@ -294,16 +306,17 @@ _.WorldEvents =
 							["qg"] = 113655,	-- Brann Bronzebeard
 							["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council
 						}),
-						--q(42803),	-- Invasion: Dun Morogh
-						--q(42237),	-- Invasion: Tanaris
 						--q(43289),	-- Defend
 						--q(43294),	-- Repel
 						--q(43290),	-- Repel
 						--q(43292),	-- Repel (Dun Morogh)
-						--q(42236),	-- Invasion: Northern Barrens
 						-- Tanaris:
 						--q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
 						--q(43243),	-- Demon Commander (possibly LEGACY - Legion pre-patch)
+						-- hillsbrad foothills:
+						--q(43296),	-- Defend (REMOVED, from Legion pre-patch)
+						--q(43286),	-- Demon Commander (REMOVED, from Legion pre-patch)
+						--q(43297),	-- Repel (Hillsbrad Foothills)
 					}),
 					n(-2, {	-- Vendors
 						n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>

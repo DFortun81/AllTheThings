@@ -30,7 +30,7 @@ _.Zones =
 						i(9789),	-- Raider's Legguards
 						i(6538),	-- Willow Robe
 					},
-				}), 
+				}),
 				n(14222, { 	-- Araga
 					["coord"] = { 44.2, 54.0, 25 },
 					["g"] = {
@@ -65,7 +65,7 @@ _.Zones =
 						i(6569),	-- Shimmering Robe
 						i(6593),	-- Battleforge Cloak
 					},
-				}), 
+				}),
 				n(14280, { 	-- Big Samras
 					["coord"] = { 63.6, 52.6, 25 },
 					["g"] = {
@@ -101,7 +101,7 @@ _.Zones =
 						i(9807),	-- Superior Shoulders
 						i(6597),	-- Battleforge Shoulderguards
 					},
-				}), 
+				}),
 				n(50955, { 	-- Carcinak
 					["coord"] = { 46.8, 76.0, 25 },
 					["g"] = {
@@ -128,7 +128,7 @@ _.Zones =
 						i(9772),	-- Greenweave Leggings
 						i(9794),	-- Ivycloth Cloak
 					},
-				}), 
+				}),
 				n(51022, { 	-- Chordix
 					["coord"] = { 56.8, 54.8, 25 },
 					["g"] = {
@@ -154,7 +154,7 @@ _.Zones =
 						i(6584),	-- Scouting Tunic
 						i(6586),	-- Scouting Gloves
 					},
-				}), 
+				}),
 				n(14223, { 	-- Cranky Benj
 					["coords"] = {
 						{ 68.4, 30.6, 25 },
@@ -203,7 +203,7 @@ _.Zones =
 						i(9796),	-- Ivycloth Mantle
 						i(9807),	-- Superior Shoulders
 					},
-				}), 
+				}),
 				n(50967, { 	-- Craw the Ravager
 					["coord"] = { 51.8, 87.2, 25 },
 					["g"] = {
@@ -224,7 +224,7 @@ _.Zones =
 						i(6578),	-- Defender Leggings
 						i(9806),	-- Superior Gloves
 					},
-				}), 
+				}),
 				n(14279, { 	-- Creepthess
 					["coord"] = { 43.8, 74.4, 25 },
 					["g"] = {
@@ -263,7 +263,7 @@ _.Zones =
 						i(6574),	-- Defender Bracers
 						i(9774),	-- Greenweave Vest
 					},
-				}), 
+				}),
 				n(50858, { 	-- Dustwing
 					["coord"] = { 28.6, 84.0, 25 },
 					["g"] = {
@@ -288,7 +288,7 @@ _.Zones =
 						i(6574),	-- Defender Bracers
 						i(6587),	-- Scouting Trousers
 					},
-				}), 
+				}),
 				n(14221, { 	-- Gravis Slipknot
 					["coord"] = { 56.6, 23.6, 25 },
 					["g"] = {
@@ -324,7 +324,7 @@ _.Zones =
 						i(6601),	-- Dervish Boots
 						i(9808),	-- Superior Leggings
 					},
-				}), 
+				}),
 				n(47010, { 	-- Indigos
 					["coord"] = { 31.6, 40.0, 25 },
 					["g"] = {
@@ -355,7 +355,7 @@ _.Zones =
 						i(9771),	-- Greenweave Gloves
 						i(6585),	-- Scouting Cloak
 					},
-				}), 
+				}),
 				n(14281, { 	-- Jimmy the Bleeder
 					["coord"] = { 49.8, 50.6, 25 },
 					["g"] = {
@@ -393,7 +393,7 @@ _.Zones =
 						i(9813),	-- Fortified Gauntlets
 						i(6584),	-- Scouting Tunic
 					},
-				}), 
+				}),
 				n(14277, { 	-- Lady Zephris
 					["coord"] = { 54.6, 76.6, 25 },
 					["g"] = {
@@ -429,7 +429,7 @@ _.Zones =
 						i(9801),	-- Superior Belt
 						i(6584),	-- Scouting Tunic
 					},
-				}), 
+				}),
 				n(50929, { 	-- Little Bjorn
 					["coord"] = { 35.0, 78.4, 25 },
 					["g"] = {
@@ -456,7 +456,7 @@ _.Zones =
 						i(6575),	-- Defender Cloak
 						i(6578),	-- Defender Leggings
 					},
-				}), 
+				}),
 				n(2453, { 	-- Lo'Grosh
 					["coord"] = { 49.4, 18.4, 25 },
 					["g"] = {
@@ -464,7 +464,7 @@ _.Zones =
 						i(4810),	-- Boulder Pads
 						i(1678),	-- Black Ogre Kickers
 					},
-				}), 
+				}),
 				n(51076, { 	-- Lopex
 					["coord"] = { 68.8, 56.0, 25 },
 					["g"] = {
@@ -531,7 +531,7 @@ _.Zones =
 						i(9821),	-- Durable Bracers
 						i(9831),	-- Scaled Cloak
 					},
-				}), 
+				}),
 				n(50765, { 	-- Miasmiss
 					["coord"] = { 37.0, 68.2, 25 },
 					["g"] = {
@@ -554,7 +554,7 @@ _.Zones =
 						i(9775),	-- Bandit Cinch
 						i(6562),	-- Shimmering Boots
 					},
-				}), 
+				}),
 				n(14278, { 	-- Ro'Bark
 					["coord"] = { 58.4, 75.6, 25 },
 					["g"] = {
@@ -589,7 +589,7 @@ _.Zones =
 						i(6577),	-- Defender Gauntlets
 						i(6567),	-- Shimmering Armor
 					},
-				}), 
+				}),
 				n(14276, { 	-- Scargil
 					["coord"] = { 32.6, 79.8, 25 },
 					["g"] = {
@@ -626,19 +626,19 @@ _.Zones =
 						i(9773),	-- Greenweave Robe
 						i(6568),	-- Shimmering Trousers
 					},
-				}), 
+				}),
 				n(2452, { 	-- Skhowl
 					["coord"] = { 43.6, 38.8, 25 },
 					["g"] = {
 						i(3011),	-- Feathered Headdress
 						i(6331),	-- Howling Blade
 					},
-				}), 
+				}),
 				n(14275, {	-- Tamra Stormpike
 					["coord"] = { 63.2, 85.8, 25 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(3053), 	-- Humbert's Chestpiece	
+						i(3053), 	-- Humbert's Chestpiece
 						i(9805),	-- Superior Cloak
 						i(9814),	-- Fortified Belt
 						i(9815),	-- Fortified Leggings
@@ -671,7 +671,7 @@ _.Zones =
 						i(9806),	-- Superior Gloves
 						i(9808),	-- Superior Leggings
 					},
-				}), 
+				}),
 				n(50818, { 	-- The Dark Prowler
 					["coord"] = { 33.0, 55.0, 25 },
 					["g"] = {
@@ -692,7 +692,7 @@ _.Zones =
 						i(9782),	-- Bandit Jerkin
 						i(9783),	-- Raider's Chestpiece
 					},
-				}), 
+				}),
 				n(51057, { 	-- Weevil
 					["coord"] = { 45.6, 53.8, 25 },
 					["g"] = {
@@ -722,7 +722,7 @@ _.Zones =
 						i(6586),	-- Scouting Gloves
 						i(6578),	-- Defender Leggings
 					},
-				}), 
+				}),
 				n(50770, { 	-- Zorn
 					["coord"] = { 77.0, 60.0, 25 },
 					["g"] = {

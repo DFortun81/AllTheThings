@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(25, {	-- Hillsbrad Foothills
 			n(0,    {	-- Zone Drop
-				n(2287, { 	-- Crushridge Warmonger 
+				n(2287, { 	-- Crushridge Warmonger
 					un(7, i(1602)),	-- Sickle Axe
 				}),
 				n(2358, { 	-- Dalaran Summoner
@@ -65,4 +65,3 @@ _.Zones =
 		}),
 	}),
 };
-			
