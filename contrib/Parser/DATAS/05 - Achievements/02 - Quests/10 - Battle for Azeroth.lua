@@ -275,12 +275,12 @@ _.Achievements =
 						crit(8),	-- Princely Visit
 						crit(9),	-- The Resistance Needs YOU!
 						crit(10),	-- Rescuing the Resistance
-						crit(12),	-- My Father's Armies
-						crit(13),	-- We Can Fix It
-						crit(14),	-- Drill Rig Construction
-						crit(15),	-- Send My Father a Message
-						crit(16),	-- Welcome to the Resistance
-						crit(17),	-- Operation: Mechagon - The Mechoriginator
+						crit(11),	-- My Father's Armies
+						crit(12),	-- We Can Fix It
+						crit(13),	-- Drill Rig Construction
+						crit(14),	-- Send My Father a Message
+						crit(15),	-- Welcome to the Resistance
+						crit(16),	-- Operation: Mechagon - The Mechoriginator
 					})),
 					h(ach(13700, {	-- The Mechagonian Threat (H)
 						crit(1),	-- The Legend of Mechagon
@@ -293,12 +293,12 @@ _.Achievements =
 						crit(8),	-- To Mechagon!
 						crit(9),	-- Prospectus Bay
 						crit(10),	-- We Come in Peace... and Profit
-						crit(12),	-- The Resistance Needs YOU!
-						crit(13),	-- My Father's Armies
-						crit(14),	-- We Can Fix It
-						crit(15),	-- Drill Rig Construction
-						crit(16),	-- Send My Father a Message
-						crit(17),	-- Welcome to the Resistance
+						crit(11),	-- The Resistance Needs YOU!
+						crit(12),	-- My Father's Armies
+						crit(13),	-- We Can Fix It
+						crit(14),	-- Drill Rig Construction
+						crit(15),	-- Send My Father a Message
+						crit(16),	-- Welcome to the Resistance
 					})),
 					a(ach(12997)),	-- The Pride of Kul Tiras
 					a(ach(12087)),	-- The Reining Champion

@@ -16,6 +16,14 @@ _.Zones =
 				}),
 				
 				
+				q(50612, {	-- A House Divided
+					["sourceQuests"] = { 50611 },	-- Storm's Vengeance
+					["coord"] = { 66.0, 47.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 134639,	-- Brother Pike
+				}),
+				
+				
 				q(49725, {	-- A Risky Ploy
 					["sourceQuests"] = { 51401 },	-- Carry On
 					["coord"] = { 59.2, 69.5, 942 },
@@ -73,6 +81,17 @@ _.Zones =
 					["coord"] = { 60.2, 70.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 141769,	-- Marilyn Hood
+				}),
+				
+				
+				q(50784, {	-- Eye of the Storm
+					["sourceQuests"] = {
+						50780,	-- Oathbound
+						50783,	-- The Abyssal Council
+					},
+					["coord"] = { 61.7, 36.3, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 136497,	-- Tideguard Victoria
 				}),
 				
 				
@@ -188,6 +207,14 @@ _.Zones =
 				}),
 				
 				
+				q(50780, {	-- Oathbound
+					["sourceQuests"] = { 50612 },	-- A House Divided
+					["coord"] = { 60.9, 41.3, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 135517,	-- Tideguard Victoria
+				}),
+				
+				
 				q(49706, {	-- Proclamation Investigation
 					["sourceQuests"] = { 49703 },	-- House Stormsong
 					["coord"] = { 63.4, 64.8, 942 },
@@ -252,6 +279,38 @@ _.Zones =
 				}),
 				
 				
+				q(50611, {	-- Storm's Vengeance
+					["sourceQuests"] = {
+						50608,	-- Forbidden Rites
+						50609,	-- From the Maw of Madness
+						50610,	-- Gathering Storm
+					},
+					["coord"] = { 66.0, 47.4, 942 },
+					["qg"] = 134639,	-- Brother Pike
+					["g"] = {
+						i(158681),	-- Lightning Tether
+					},
+				}),
+				
+				
+				q(50783, {	-- The Abyssal Council
+					["sourceQuests"] = {
+						50777,	-- The Storm Awakens
+						50778,	-- Twisted Intentions
+					},
+					["coord"] = { 59.9, 37.9, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 136498,	-- Taelia
+					["g"] = {
+						i(158702),	-- Darkwater Bindings
+						i(158700),	-- Dread Corsair Vambraces
+						i(158701),	-- Stormchaser Shackles
+						i(158699),	-- Tidespeaker Bindings
+						i(155236),	-- Stormwarden Seal
+					},
+				}),
+				
+				
 				q(51552, {	-- The Days Are Just Packed
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -308,6 +367,22 @@ _.Zones =
 				}),
 				
 				
+				q(50777, {	-- The Storm Awakens
+					["sourceQuests"] = { 50612 },	-- A House Divided
+					["coord"] = { 63.1, 43.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 135534,	-- Brother Pike
+				}),
+				
+				
+				q(50778, {	-- Twisted Intentions
+					["sourceQuests"] = { 50612 },	-- A House Divided
+					["coord"] = { 63.1, 43.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 136053,	-- Samuel Williams
+				}),
+				
+				
 				q(49705, {	-- Unnecessary Duress
 					["sourceQuests"] = { 49703 },	-- House Stormsong
 					["coord"] = { 63.4, 64.8, 942 },
@@ -355,12 +430,6 @@ _.Zones =
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["coord"] = { 63.2, 41.2 },
 					["description"] = "The Umbral Hulks will ruin your day unless you have a group. Do NOT try soloing them.",
-				})),
-				a(q(50612, {	-- A House Divided
-					["qg"] = 134639,	-- Brother Pike
-					["sourceQuests"] = { 50611 },	-- Storm's Vengeance
-					["coord"] = { 66.1, 47.4 },
-					["isBreadcrumb"] = true,
 				})),
 				a(q(50814, {	-- A Horrible Place
 					["qg"] = 135367,	-- Grettle Haribull
@@ -517,11 +586,6 @@ _.Zones =
 						})),
 					},
 				})),
-				a(q(50784, {	-- Eye of the Storm
-					["qg"] = 136497,	-- Tideguard Victoria
-					["sourceQuests"] = { 50780, 50783 },	-- Oathbound / The Abyssal Council
-					["coord"] = { 61.8, 36.2 },
-				})),
 				a(q(50136, {	-- Farming Stimulator
 					["qg"] = 132118,	-- Farmer Burton
 					["sourceQuests"] = { 50134, 50135 },	-- Gadgets and Gizmos Aplenty / Stop Vining
@@ -670,11 +734,6 @@ _.Zones =
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["coord"] = { 44.4, 55.5 },
 				})),
-				a(q(50780, {	-- Oathbound
-					["qg"] = 135517,	-- Tideguard Victoria
-					["sourceQuests"] = { 50612 },	-- A House Divided
-					["coord"] = { 60.9, 41.3 },
-				})),
 				a(q(51310, {	-- Raiders of the Lost Crop
 					["qg"] = 137094,	-- Farmer Max
 					-- ["sourceQuests"] = {  },	--  (This didn't have a source Quest that I could tell)
@@ -746,19 +805,6 @@ _.Zones =
 					},
 					-- This gave "At the Edge of Madness" criteria achievement - Crieve
 				})),
-				a(q(50611, {	-- Storm's Vengeance
-					["qg"] = 134639,	-- Brother Pike
-					["sourceQuests"] = { 50608, 50609, 50610 },	-- Forbidden Rites / From the Maw of Madness / Gathering Storm
-					["coord"] = { 66.1, 47.4 },
-					["g"] = {
-						{
-							["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
-							["criteriaID"] = 3,	-- The Growing Tempest [Criteria]
-						},
-						i(158681),	-- Lightning Tether
-					},
-					-- This gave "The Growing Tempest" criteria achievement - Crieve
-				})),
 				a(q(52067, {	-- Survivors
 					["qg"] = 130190,	-- Sergeant Calvin
 					["sourceQuests"] = { 49755 },	-- Heavy Artillery
@@ -781,18 +827,6 @@ _.Zones =
 						i(155200),	-- Thornmatron's Vinecaller
 					},
 				})),
-				a(q(50783, {	-- The Abyssal Council
-					["qg"] = 136498,	-- Taelia
-					["sourceQuests"] = { 50777, 50778 },	-- The Storm Awakens / Twisted Intentions
-					["coord"] = { 60.0, 37.8 },
-					["g"] = {
-						i(158702),	-- Darkwater Bindings
-						i(158700),	-- Dread Corsair Vambraces
-						i(158701),	-- Stormchaser Shackles
-						i(158699),	-- Tidespeaker Bindings
-						i(155236),	-- Stormwarden Seal
-					},
-				})),
 				a(q(51534, {	-- The Battle for Brennadam (Objective)
 					["qg"] = 130694,	-- Mayor Roz
 					-- ["sourceQuests"] = { 51552 },	-- The Days Are Just Packed ??? (verification required)
@@ -813,11 +847,6 @@ _.Zones =
 					["sourceQuests"] = { 50793 },	-- Cave Commotion
 					["coord"] = { 41.1, 54.1 },
 				})),
-				a(q(50777, {	-- The Storm Awakens
-					["qg"] = 135534,	-- Brother Pike
-					["sourceQuests"] = { 50612 },	-- A House Divided
-					["coord"] = { 63.2, 43.1 },
-				})),
 				a(q(50157, {	-- There's Gold in Them There Fields
 					["qg"] = 130694,	-- Mayor Roz
 					["sourceQuests"] = { 49755 },	-- Heavy Artillery
@@ -834,11 +863,6 @@ _.Zones =
 					-- ["sourceQuests"] = {  },	-- I'm not sure, I hearthed here and picked it up ???
 					["coord"] = { 59.5, 69.9 },
 					["isBreadcrumb"] = true,
-				})),
-				a(q(50778, {	-- Twisted Intentions
-					["qg"] = 136053,	-- Samuel Williams
-					["sourceQuests"] = { 50612 },	-- A House Divided
-					["coord"] = { 63.1, 43.1 },
 				})),
 				a(q(50674, {	-- Two Faced Pirate Scum
 					["qg"] = 134720,	-- Leo Shealds
@@ -1270,9 +1294,6 @@ _.Zones =
 				q(50814, {	-- A Horrible Place
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50612, {	-- A House Divided
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(53099),	-- A Mote of Cosmic Truth
 
 				q(50733, {	-- A New Dawn
@@ -1639,9 +1660,6 @@ _.Zones =
 				q(51712, {	-- Eye for an Eye
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50784, {	-- Eye of the Storm
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50644, {	-- Facing the Invaders
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1948,9 +1966,6 @@ _.Zones =
 				q(50691, {	-- Not On Our Payroll
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50780, {	-- Oathbound
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51840, {	-- Oily Mess
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -2234,9 +2249,6 @@ _.Zones =
 				q(50824, {	-- Storm's End
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50611, {	-- Storm's Vengeance
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50601, {	-- Storm's Wake
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2270,9 +2282,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50368, {	-- Terror of the Kraul
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50783, {	-- The Abyssal Council
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51534, {	-- The Battle for Brennadam
@@ -2325,13 +2334,8 @@ _.Zones =
 				q(50635, {	-- The Shifting Tides
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50777, {	-- The Storm Awakens
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(56111),	-- The Usurper
-
 				q(50388),	-- The Weight of My Ambition
-
 				q(50157, {	-- There's Gold in Them There Fields
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2390,9 +2394,6 @@ _.Zones =
 				q(52200, {	-- Turtle Tactics
 					["collectible"] = false,
 					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50778, {	-- Twisted Intentions
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50674, {	-- Two Faced Pirate Scum
