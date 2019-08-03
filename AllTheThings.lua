@@ -1131,9 +1131,57 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 end })
 
 -- Search Caching
-local searchCache = {};
+local searchCache, CreateObject, MergeObject, MergeObjects = {};
 app.searchCache = searchCache;
-local function CreateObject(t)
+(function()
+local keysByPriority = {	-- Sorted by frequency of use.
+	"s",
+	"toyID",
+	"itemID",
+	"speciesID",
+	"npcID",
+	"creatureID",
+	"objectID",
+	"questID",
+	"mapID",
+	"criteriaID",
+	"achID",
+	"currencyID",
+	"encounterID",
+	"instanceID",
+	"recipeID",
+	"spellID",
+	"classID",
+	"professionID",
+	"categoryID",
+	"followerID",
+	"illusionID",
+	"unit",
+	"dungeonID"
+};
+local function GetKey(t)
+	for i,key in ipairs(keysByPriority) do
+		if rawget(t, key) then
+			return key;
+		end
+	end
+	for i,key in ipairs(keysByPriority) do
+		if t[key] then
+			return key;
+		end
+	end
+	
+	print("could not determine key for object")
+	for key,value in pairs(t) do
+		print(key, value);
+	end
+	for i,key in ipairs(keysByPriority) do
+		if t[key] then
+			return key;
+		end
+	end
+end
+CreateObject = function(t)
 	local s = {};
 	if t[1] then
 		-- array
@@ -1143,8 +1191,8 @@ local function CreateObject(t)
 		return s;
 	else
 		if t.key == "criteriaID" then s.achievementID = t.achievementID; end
-		for key,value in pairs(t) do
-			s[key] = value;
+		for k,v in pairs(t) do
+			rawset(s, k, v);
 		end
 		if t.g then
 			s.g = {};
@@ -1215,78 +1263,56 @@ local function CreateObject(t)
 		end
 	end
 end
-local function MergeObject(g, t, index)
-	local key = t.key;
-	if not key then
-		if t.mapID then
-			key = "mapID";
-		elseif t.s then
-			key = "s";
-		elseif t.currencyID then
-			key = "currencyID";
-		elseif t.objectID then
-			key = "objectID";
-		elseif t.followerID then
-			key = "followerID";
-		elseif t.encounterID then
-			key = "encounterID";
-		elseif t.instanceID then
-			key = "instanceID";
-		elseif t.illusionID then
-			key = "illusionID";
-		elseif t.speciesID then
-			key = "speciesID";
-		elseif t.recipeID then
-			key = "recipeID";
-		elseif t.spellID then
-			key = "spellID";
-		elseif t.categoryID then
-			key = "categoryID";
-		elseif t.criteriaID then
-			key = "criteriaID";
-		elseif t.achID then
-			key = "achID";
-		elseif t.toyID then
-			key = "toyID";
-		elseif t.itemID then
-			key = "itemID";
-		elseif t.professionID then
-			key = "professionID";
-		elseif t.classID then
-			key = "classID";
-		elseif t.npcID then
-			key = "npcID";
-		elseif t.creatureID then
-			key = "creatureID";
-		elseif t.questID then
-			key = "questID";
-		elseif t.unit then
-			key = "unit";
-		elseif t.dungeonID then
-			key = "dungeonID";
-		end
+MergeObjects = function(g, g2)
+	for i,o in ipairs(g2) do
+		MergeObject(g, o);
 	end
-	for i,o in ipairs(g) do
-		if o[key] == t[key] and (key ~= "criteriaID" or o.achID == t.achID) then
-			if t.g then
-				local tg = t.g;
-				t.g = nil;
-				if o.g then
-					for j,k in ipairs(tg) do
-						MergeObject(o.g, k);
+end
+MergeObject = function(g, t, index)
+	local key = t.key or GetKey(t);
+	local value = t[key];
+	if key == "criteriaID" then
+		for i,o in ipairs(g) do
+			if o[key] == value and o.achID == t.achID then
+				if t.g then
+					local tg = t.g;
+					t.g = nil;
+					if o.g then
+						MergeObjects(o.g, tg);
+					else
+						o.g = tg;
 					end
-				else
-					o.g = tg;
 				end
-			end
-			for k,value in pairs(t) do
-				if k ~= "expanded" then -- and k ~= "parent" then
-					o[k] = value;
+				for k,v in pairs(t) do
+					if k ~= "expanded" then
+						rawset(o, k, v);
+					end
 				end
+				return o;
 			end
-			return o;
+		end
+	else
+		for i,o in ipairs(g) do
+			if o[key] == value then
+				if t.g then
+					local tg = t.g;
+					t.g = nil;
+					if o.g then
+						MergeObjects(o.g, tg);
+					else
+						o.g = tg;
+					end
+				end
+				for k,v in pairs(t) do
+					if k ~= "expanded" then
+						rawset(o, k, v);
+					end
+				end
+				return o;
+			end
 		end
 	end
+	
 	if index then
 		tinsert(g, index, t);
 	else
@@ -1294,6 +1320,7 @@ local function MergeObject(g, t, index)
 	end
 	return t;
 end
+end)();
 local function ExpandGroupsRecursively(group, expanded, manual)
 	if group.g and (not group.itemID or manual) then
 		group.expanded = expanded;
@@ -1715,9 +1742,7 @@ ResolveSymbolicLink = function(o)
 			elseif cmd == "postprocess" then
 				-- Instruction to take all of the current search results and ensure that there are no duplicated primary keys.
 				local uniques = {};
-				for k,s in ipairs(searchResults) do
-					MergeObject(uniques, s);
-				end
+				MergeObjects(uniques, searchResults);
 				searchResults = uniques;
 			elseif cmd == "invtype" then
 				-- Instruction to include only search results where an item is of a specific inventory type.
@@ -7895,9 +7920,7 @@ local function CreateMiniListForGroup(group)
 			else
 				local resolved = ResolveSymbolicLink(group);
 				if resolved then
-					for i,o in ipairs(resolved) do
-						MergeObject(popout.data.g, CreateObject(o));
-					end
+					MergeObjects(popout.data.g, resolved);
 				end
 			end
 		elseif group.g then
@@ -10491,9 +10514,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					for u,temp in pairs(unlinked) do
 						local h = holidays[u];
 						if h then
-							for i,data in ipairs(temp) do
-								MergeObject(h.g, data);
-							end
+							MergeObjects(h.g, temp);
 						else
 							-- Attempt to scan for the main holiday header.
 							local done = false;
@@ -10509,9 +10530,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 								end
 							end
 							if not done then
-								for i,data in ipairs(temp) do
-									MergeObject(holiday, data);
-								end
+								MergeObjects(holiday, temp);
 							end
 						end
 					end
@@ -12119,9 +12138,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											if resolved then
 												entry = CreateObject(entry);
 												if not entry.g then entry.g = {}; end
-												for i,o in ipairs(resolved) do
-													MergeObject(entry.g, o);
-												end
+												MergeObjects(entry.g, resolved);
 											end
 											MergeObject(questObject.g, entry);
 										end
@@ -12189,9 +12206,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 														if resolved then
 															entry = CreateObject(entry);
 															if not entry.g then entry.g = {}; end
-															for i,o in ipairs(resolved) do
-																MergeObject(entry.g, o);
-															end
+															MergeObjects(entry.g, resolved);
 														end
 														MergeObject(questObject.g, entry);
 													end
@@ -12256,9 +12271,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 																		item.progress = 0;
 																		item.total = 0;
 																	end
-																	for __,subdata in ipairs(data.g) do
-																		MergeObject(item.g, subdata);
-																	end
+																	MergeObjects(item.g, data.g);
 																end
 															end
 															if ACKCHUALLY then
@@ -12291,9 +12304,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 												local resolved = ResolveSymbolicLink(item);
 												if resolved then
 													if not item.g then item.g = {}; end
-													for i,o in ipairs(resolved) do
-														MergeObject(item.g, o);
-													end
+													MergeObjects(item.g, resolved);
 												end
 											end
 										end
@@ -12343,18 +12354,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									end
 									if data.g then
 										for _,entry in ipairs(data.g) do
-											MergeObject(questObject.g, entry);
-										end
-									end
-									if data.g then
-										for _,entry in ipairs(data.g) do
 											local resolved = ResolveSymbolicLink(entry);
 											if resolved then
 												entry = CreateObject(entry);
 												if not entry.g then entry.g = {}; end
-												for i,o in ipairs(resolved) do
-													MergeObject(entry.g, o);
-												end
+												MergeObjects(entry.g, resolved);
 											end
 											MergeObject(questObject.g, entry);
 										end
@@ -12373,9 +12377,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 												end
 											end
 											if data.g then
-												for _,entry in ipairs(data.g) do
-													MergeObject(questObject.g, entry);
-												end
+												MergeObjects(questObject.g, data.g);
 											end
 											if data.g then
 												for _,entry in ipairs(data.g) do
@@ -12383,9 +12385,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													if resolved then
 														entry = CreateObject(entry);
 														if not entry.g then entry.g = {}; end
-														for i,o in ipairs(resolved) do
-															MergeObject(entry.g, o);
-														end
+														MergeObjects(entry.g, resolved);
 													end
 													MergeObject(questObject.g, entry);
 												end
@@ -12452,9 +12452,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 															item.progress = 0;
 															item.total = 0;
 														end
-														for __,subdata in ipairs(data.g) do
-															MergeObject(item.g, subdata);
-														end
+														MergeObjects(item.g, data.g);
 													end
 												end
 												if ACKCHUALLY then
@@ -12504,9 +12502,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 															item.total = 0;
 															item.OnUpdate = OnUpdateForItem;
 														end
-														for __,subdata in ipairs(data.g) do
-															MergeObject(item.g, subdata);
-														end
+														MergeObjects(item.g, data.g);
 													end
 												end
 											end
@@ -12529,9 +12525,10 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								for j,item in ipairs(questObject.g) do
 									local resolved = ResolveSymbolicLink(item);
 									if resolved then
-										if not item.g then item.g = {}; end
-										for i,o in ipairs(resolved) do
-											MergeObject(item.g, o);
+										if not item.g then
+											item.g = resolved;
+										else
+											MergeObjects(item.g, resolved);
 										end
 									end
 								end
@@ -12583,22 +12580,13 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					if cache then
 						for _,data in ipairs(cache) do
 							data = CreateObject(data);
-							--[[
-							if data.g then
-								for _,entry in ipairs(data.g) do
-									MergeObject(mapObject.g, entry);
-								end
-							end
-							]]--
 							if data.g then
 								for _,entry in ipairs(data.g) do
 									local resolved = ResolveSymbolicLink(entry);
 									if resolved then
 										entry = CreateObject(entry);
 										if not entry.g then entry.g = {}; end
-										for i,o in ipairs(resolved) do
-											MergeObject(entry.g, o);
-										end
+										MergeObjects(entry.g, resolved);
 									end
 									MergeObject(data.g, entry);
 								end
@@ -12663,9 +12651,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													item.total = 0;
 													item.OnUpdate = OnUpdateForItem;
 												end
-												for __,subdata in ipairs(data.g) do
-													MergeObject(item.g, subdata);
-												end
+												MergeObjects(item.g, data.g);
 											end
 										end
 									end
@@ -12692,9 +12678,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 														item.total = 0;
 														item.OnUpdate = OnUpdateForItem;
 													end
-													for __,subdata in ipairs(data.g) do
-														MergeObject(item.g, subdata);
-													end
+													MergeObjects(item.g, data.g);
 												end
 											end
 										end
