@@ -1242,6 +1242,8 @@ local function MergeObject(g, t, index)
 			key = "spellID";
 		elseif t.categoryID then
 			key = "categoryID";
+		elseif t.criteriaID then
+			key = "criteriaID";
 		elseif t.achID then
 			key = "achID";
 		elseif t.toyID then
@@ -1260,14 +1262,12 @@ local function MergeObject(g, t, index)
 			key = "questID";
 		elseif t.unit then
 			key = "unit";
-		elseif t.criteriaID then
-			key = "criteriaID";
 		elseif t.dungeonID then
 			key = "dungeonID";
 		end
 	end
 	for i,o in ipairs(g) do
-		if o[key] == t[key] then
+		if o[key] == t[key] and (key ~= "criteriaID" or o.achID == t.achID) then
 			if t.g then
 				local tg = t.g;
 				t.g = nil;
