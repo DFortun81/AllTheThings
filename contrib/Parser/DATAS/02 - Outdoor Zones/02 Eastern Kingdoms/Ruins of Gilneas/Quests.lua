@@ -9,27 +9,36 @@ _.Zones =
 				n(-17, {	-- Quests
 					q(27406, {	-- A Man Named Godfrey
 						["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
-						["races"] = HORDE_ONLY,
 						["coord"] = { 72.9, 30.1, 217 },
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27405 },	-- Fall Back!
 					}),
 					ql(q(30093, {	-- Assassinate Creed
 						["qg"] = 57770,	-- Zazzo Twinklefingers
+						["coord"] = { 70.0, 40.8, 21 },
 						["classes"] = { 4 },	-- Rogue
 						["lvl"] = 85,
 						["sourceQuests"] = { 30092 },	-- Our Man in Gilneas
 					})),
 					q(27349, {	-- Break in Communications: Dreadwatch Outpost
 						["qg"] = 45315,	-- Forward Commander Onslaught
-						["races"] = HORDE_ONLY,
 						["coord"] = { 57.5, 18.2, 217 },
-						["sourceQuests"] = { 27333, 27345 },	-- Losing Ground / The F.C.D.
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							27342,	-- In Time, All Will Be Revealed
+							27333,	-- Losing Ground
+							27345,	-- The F.C.D.
+						},
 					}),
 					q(27350, {	-- Break in Communications: Rutsak's Guard
+						["qg"] = 45315,	-- Forward Commander Onslaught
+						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27349 },	-- Break in Communications: Dreadwatch Outpost
 					}),
 					q(27405, {	-- Fall Back!
+						["qg"] = 45315,	-- Forward Commander Onslaught
+						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27401 },	-- What Tomorrow Brings
 						["g"] = {
@@ -50,19 +59,17 @@ _.Zones =
 							i(131665),	-- Wolfsbane Harness
 						},
 					}),
-					n(45301, {	-- Korok the Colossus
-						i(60956, {	-- Korok's Second Head
-							q(27322, { 	-- Korok the Colossus
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = { 27290 }, 	-- To Forsaken Forward Command
-								["description"] = "If Forward Commander Onslaught is dead, you can turn this quest in to High Warlord Cromush in Silverpine Forest. However, once you have completed 'Cities in Dust', Cromush may despawn and you will be unable to complete this quest.|r",
-								["g"] = {
-									i(62867),	-- Belt of the Second Head
-									i(62866),	-- Cromush's Cloak
-									i(62868),	-- Korok's Ring
-								},
-							}),
-						}),
+					i(60956, {	-- Korok's Second Head
+						["crs"] = { 45301 },	-- Korok the Colossus
+						["questID"] = 27322,
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 27290 }, 	-- To Forsaken Forward Command
+						["description"] = "If Forward Commander Onslaught is dead, you can turn this quest in to |cFFFFD700Deathguard Podrig|r at |cFFFFD700The Sepulcher|r.",
+						["g"] = {
+							i(62867),	-- Belt of the Second Head
+							i(62866),	-- Cromush's Cloak
+							i(62868),	-- Korok's Ring
+						},
 					}),
 					q(27333, {	-- Losing Ground
 						["qg"] = 45315,	-- Forward Commander Onslaught
@@ -71,33 +78,42 @@ _.Zones =
 						["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 					}),
 					q(27364, {	-- On Whose Orders?
+						["qg"] = 45315,	-- Forward Commander Onslaught
+						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 27360 },	-- Vengeance for Our Soldiers
+						["sourceQuests"] = { 27350 },	-- Break in Communications: Rutsak's Guard
 					}),
 					q(27423, {	-- Resistance is Futile
+						["qg"] = 45315,	-- Forward Commander Onslaught
+						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27405 },	-- Fall Back!
 					}),
 					ql(q(30106, {	-- The Deed is Done
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["lvl"] = 85,
+						["coord"] = { 70.0, 40.8, 21 },
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30093 },	-- Assassinate Creed
 						["g"] = {
 							i(77945),	-- Fear
 							i(77946),	-- Vengeance
 						},
-					})),						
+					})),
 					q(27345, {	-- The F.C.D.
 						["qg"] = 45315,	-- Forward Commander Onslaught
-						["races"] = HORDE_ONLY,
 						["coord"] = { 57.5, 18.2, 217 },
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 					}),
 					q(27438, {	-- The Great Escape (awards "Ruins of Gilneas" criteria for zone achievement)
-						["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
+						["qg"] = 45312,	-- Deathstalker Commander Belmont
+						["coord"] = { 79.7, 75.7, 21 },
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 27406, 27423 },	-- A Man Named Godfrey / Resistance is Futile
+						["sourceQuests"] = {
+							27406,	-- A Man Named Godfrey
+							27423,	-- Resistance is Futile
+						},
 						["g"] = {
 							i(62874),	-- Treads of the True Plan
 							i(62873),	-- Godfrey's Belt
@@ -118,8 +134,13 @@ _.Zones =
 						},
 					}),
 					q(27401, {	-- What Tomorrow Brings
+						["qg"] = 45315,	-- Forward Commander Onslaught
+						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 27364 },	-- On Whose Orders?
+						["sourceQuests"] = {
+							27364,	-- On Whose Orders?
+							27360,	-- Vengeance for Our Soldiers
+						},
 					}),
 				}),
 			}),

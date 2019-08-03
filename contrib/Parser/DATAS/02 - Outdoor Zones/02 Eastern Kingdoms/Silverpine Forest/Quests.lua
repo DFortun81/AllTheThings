@@ -6,29 +6,24 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(21, {	-- Silverpine Forest
 			n(-17, {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-				h(ach(4894, {	-- Silverpine Forest Quests
-					crit(1),		-- Forsaken High Command
-					crit(2),		-- Forsaken Rear Guard
-					crit(3),		-- The Sepulcher
-					crit(4),		-- The Ruins of Gilneas
-					crit(5),		-- Ambermill
-					crit(6),		-- On the Battlefront
-				})),
-]]--
 				q(27577, {	-- 7th Legion Battle Plans
 					["qg"] = 45879,	-- Lord Walden
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27548, 27550 },	-- Lessons in Fear / Pyrewood's Fall
+					["sourceQuests"] = {
+						27548,	-- Lessons in Fear
+						27547,	-- Of No Consequence
+						27550,	-- Pyrewood's Fall
+					},
 				}),
-				q(530, {	-- A Husband's Revenge
+				q(530,   {	-- A Husband's Revenge
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(2, i(3235)),	-- Ring of Scorn
 					},
 				}),
-				q(451, { 	-- A Recipe for Death
+				q(451,   { 	-- A Recipe for Death
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -38,6 +33,7 @@ _.Zones =
 				}),
 				q(27510, {	-- A Wolf in Bear's Clothing
 					["qg"] = 45631,	-- High Warlord Cromush
+					["coord"] = { 52.2, 66.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27484 },	-- Only One May Enter
 					["g"] = {
@@ -47,27 +43,13 @@ _.Zones =
 						i(62885),	-- Unmistakable Gloves
 					},
 				}),
-				o(205143, {	-- Abandoned Outhouse
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						q(27045, { 	-- Waiting to Exsanguinate
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = { 27039 },	-- Dangerous Intentions
-							["g"] = {
-								i(62833),	-- Cloak of Courage
-								i(131634),	-- Grasps of the Survivor
-								i(62831),	-- Treads of the Survivor
-								i(62832),	-- Yorick's Bequest
-							},
-						}),
-					},
-				}),
 				q(26992, {	-- Agony Abounds
 					["qg"] = 44778,	-- Apothecary Witherbloom
+					["coord"] = { 56.7, 9.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 				}),
-				q(99, { 	-- Arugal's Folly 
+				q(99,    { 	-- Arugal's Folly
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -76,7 +58,7 @@ _.Zones =
 						un(2, i(3586)),	-- Logsplitter
 					},
 				}),
-				q(442, { 	-- Assault on Fenris Isle
+				q(442,   { 	-- Assault on Fenris Isle
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -86,10 +68,11 @@ _.Zones =
 				}),
 				q(27056, {	-- Belmont's Report
 					["qg"] = 44789,	-- Deathstalker Commander Belmont
+					["coord"] = { 58.0, 8.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27045 },	-- Waiting to Exsanguinate
 				}),
-				q(516, { 	-- Beren's Peril
+				q(516,   { 	-- Beren's Peril
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -98,11 +81,13 @@ _.Zones =
 				}),
 				q(27474, {	-- Breaking the Barrier
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 				}),
 				q(27601, {	-- Cities in Dust
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["g"] = {
@@ -113,20 +98,29 @@ _.Zones =
 					},
 				}),
 				q(27194, {	-- Cornered and Crushed!
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["coord"] = { 44.8, 41.6, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27193 },	-- Seek and Destroy
 				}),
 				q(27476, {	-- Dalar Dawnweaver
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27474, 27475 },	-- Breaking the Barrier / Unyielding Servitors
+					["sourceQuests"] = {
+						27474,	-- Breaking the Barrier
+						27475,	-- Unyielding Servitors
+					},
 				}),
 				q(27039, {	-- Dangerous Intentions
 					["qg"] = 44789,	-- Deathstalker Commander Belmont
+					["coord"] = { 58.0, 8.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26998 },	-- Iterating Upon Success
 				}),
 				q(27094, {	-- Deeper into Darkness
+					["qg"] = 44917,	-- Warlord Torok
+					["coord"] = { 44.0, 21.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27095 },	-- Skitterweb Menace
 					["g"] = {
@@ -138,19 +132,23 @@ _.Zones =
 				}),
 				q(27746, {	-- Empire of Dirt
 					["qg"] = 46124,	-- Lady Sylvanas Windrunner
+					["coord"] = { 45.3, 84.4, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27601 },	-- Cities in Dust
 				}),
 				q(27181, {	-- Excising the Taint
 					["qg"] = 45195,	-- Bloodfang Stalker
+					["coord"] = { 46.1, 50.2, 21 },
 					["races"] = HORDE_ONLY,
+					["description"] = "Available during or after |cFFFFD700Honor the Dead|r.",
 					["sourceQuests"] = { 27180 },	-- Honor the Dead
 				}),
 				q(27575, {	-- From the Belly of the Beast
 					["qg"] = 45878,	-- Lord Godfrey
 					["races"] = HORDE_ONLY,
+					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["sourceQuests"] = { 27574 },	-- I Never Forget a Face
-					["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r",
+					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
 					["g"] = {
 						i(131679),	-- Better, Stronger, Faster Bracers
 						i(62887),	-- Bracers of the Million Gold Man
@@ -160,16 +158,19 @@ _.Zones =
 				}),
 				q(27073, {	-- Give 'em Hell!
 					["qg"] = 44917,	-- Warlord Torok
+					["coord"] = { 43.9, 21.2, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 				}),
 				q(26995, {	-- Guts and Gore
 					["qg"] = 44784,	-- High Apothecary Shana T'veen
+					["coord"] = { 56.2, 8.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 				}),
 				q(27226, {	-- Hair of the Dog
 					["qg"] = 44917,	-- Warlord Torok
+					["coord"] = { 45.7, 41.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
 					["g"] = {
@@ -181,33 +182,30 @@ _.Zones =
 				}),
 				q(27180, {	-- Honor the Dead
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["coord"] = { 44.9, 41.6, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
 				}),
-				o(205350, {	-- Horde Communication Panel
-					q(27232, { 	-- The Waters Run Red...
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 27231 },	-- Reinforcements from Fenris
-						["g"] = {
-							i(62853),	-- Blood Offering Platter
-							i(62852),	-- Sabots of Red Waters
-							i(131661),	-- Treads of Red Waters
-						},				
-					}),
-				}),
 				i(61505, {	-- Partially Digested Head
-					["description"] = "Quest drops from Marsh Crocolisks while you have Lord Godfrey at your side. Once you no longer have Lord Godfrey accompanying you, this quest becomes unobtainable.|r",
+					["crs"] = { 45896 },	-- Marsh Crocolisk
+					["races"] = HORDE_ONLY,
+					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
 					["g"] = {
 						q(27574, {	-- I Never Forget a Face
 							["qg"] = 45896,	-- March Crocolisk
+							["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
 				q(26998, {	-- Iterating Upon Success
 					["qg"] = 44784,	-- High Apothecary Shana T'veen
+					["coord"] = { 56.2, 8.4, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26992, 26995 },	-- Agony Abounds / Guts and Gore
+					["sourceQuests"] = {
+						26992,	-- Agony Abounds
+						26995,	-- Guts and Gore
+					},
 					["g"] = {
 						i(131629),	-- Maggot-Ridden Greaves
 						i(62835),	-- Maggot-Ridden Leggings
@@ -217,6 +215,7 @@ _.Zones =
 				}),
 				q(27088, {	-- It's Only Poisonous if You Ingest It
 					["qg"] = 44912,	-- Apothecary Wormcrud
+					["coord"] = { 44.7, 20.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27082 },	-- Playing Dirty
 					["g"] = {
@@ -227,20 +226,28 @@ _.Zones =
 				}),
 				q(27548, {	-- Lessons in Fear
 					["qg"] = 45879,	-- Lord Walden
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 				}),
 				q(27098, {	-- Lordaeron
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["coord"] = { 57.3, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27099 },	-- No Escape
 				}),
 				q(27093, {	-- Lost in the Darkness
 					["qg"] = 44916,	-- Admiral Hatchet
+					["coord"] = { 44.0, 21.3, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27073, 27069 },	-- Give 'em Hell! / Steel Thunder
+					["sourceQuests"] = {
+						27073,	-- Give 'em Hell!
+						27069,	-- Steel Thunder
+					},
 				}),
 				q(27099, {	-- No Escape
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["coord"] = { 65.7, 26.4, 21 },
 					["sourceQuests"] = { 27097 },	-- Rise, Forsaken
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -251,6 +258,7 @@ _.Zones =
 				}),
 				q(27195, {	-- Nowhere to Run
 					["qg"] = 45228,	-- Master Forteski
+					["coord"] = { 55.8, 46.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27194 },	-- Cornered and Crushed
 					["g"] = {
@@ -262,34 +270,50 @@ _.Zones =
 				}),
 				q(27547, {	-- Of No Consequence
 					["qg"] = 45880,	-- Baron Ashbury
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 				}),
 				q(27594, {	-- On Her Majesty's Secret Service
 					["qg"] = 45878,	-- Lord Godfrey
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27580 },	-- Sowing Discord
+					["sourceQuests"] = {
+						27577,	-- 7th Legion Battle Plans
+						27580,	-- Sowing Discord
+					},
 					["g"] = {
 						i(62892),	-- Windrunner Band
 					},
 				}),
 				q(27484, {	-- Only One May Enter
 					["qg"] = 1938,	-- Dalar Dawnweaver
+					["coord"] = { 47.0, 43.2, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27478 },	-- Relios the Relic Keeper
+					["sourceQuests"] = {
+						27483,	-- Practical Vengeance
+						27478,	-- Relios the Relic Keeper
+					},
 				}),
 				q(27096, {	-- Orcs are in Order
 					["qg"] = 44916,	-- Admiral Hatchet
+					["coord"] = { 44.0, 21.3, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27088, 27093 },	-- It's Only Poisonous if You Ingest It / Lost in the Darkness
+					["sourceQuests"] = {
+						27094,	-- Deeper into Darkness
+						27088,	-- It's Only Poisonous if You Ingest It
+						27093,	-- Lost in the Darkness
+					},
 				}),
 				q(27082, {	-- Playing Dirty
 					["qg"] = 44912,	-- Apothecary Wormcrud
+					["coord"] = { 44.7, 20.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 				}),
 				q(27483, {	-- Practical Vengeance
 					["qg"] = 1938,	-- Dalar Dawnweaver
+					["coord"] = { 47.0, 43.2, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27476 },	-- Dalar Dawnweaver
 					["g"] = {
@@ -299,7 +323,7 @@ _.Zones =
 						i(62879),	-- Psychopathic Hatchet
 					},
 				}),
-				q(452, { 	-- Pyrewood Ambush 
+				q(452,   { 	-- Pyrewood Ambush
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -310,16 +334,19 @@ _.Zones =
 				}),
 				q(27550, {	-- Pyrewood's Fall
 					["qg"] = 45878,	-- Lord Godfrey
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 				}),
 				q(27231, {	-- Reinforcements from Fenris
 					["qg"] = 44916,	-- Admiral Hatchet
+					["coord"] = { 45.8, 41.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
 				}),
 				q(27478, {	-- Relios the Relic Keeper
 					["qg"] = 1938,	-- Dalar Dawnweaver
+					["coord"] = { 47.0, 43.2, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27476 },	-- Dalar Dawnweaver
 					["g"] = {
@@ -331,30 +358,44 @@ _.Zones =
 				}),
 				q(27097, {	-- Rise, Forsaken
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["coord"] = { 57.3, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27096 },	-- Orcs are in Order
 				}),
 				q(27472, {	-- Rise, Godfrey
 					["qg"] = 45525,	-- Lady Sylvanas Windrunner
+					["coord"] = { 51.7, 66.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27438 },	-- The Great Escape
 				}),
 				q(27193, {	-- Seek and Destroy
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["coord"] = { 44.8, 41.6, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27181 },	-- Excising the Taint
 				}),
 				q(27095, {	-- Skitterweb Menace
 					["qg"] = 44917,	-- Warlord Torok
+					["coord"] = { 43.9, 21.2, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27073 },	-- Give 'em Hell!
+					["sourceQuests"] = {
+						27073,	-- Give 'em Hell!
+						27069,	-- Steel Thunder
+					},
 				}),
 				q(27580, {	-- Sowing Discord
 					["qg"] = 45878,	-- Lord Godfrey
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27550 },	-- Pyrewood's Fall
+					["sourceQuests"] = {
+						27548,	-- Lessons in Fear
+						27547,	-- Of No Consequence
+						27550,	-- Pyrewood's Fall
+					},
 				}),
 				q(27069, {	-- Steel Thunder
 					["qg"] = 44916,	-- Admiral Hatcher
+					["coord"] = { 44.0, 21.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 					["g"] = {
@@ -366,11 +407,13 @@ _.Zones =
 				}),
 				q(27542, {	-- Taking the Battlefront
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27518 },	-- Transdimensional Warfare: Chapter III
 				}),
 				q(26989, {	-- The Gilneas Liberation Front
 					["qg"] = 44615,	-- Grand Executor Mortuus
+					["coord"] = { 57.4, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 					["g"] = {
@@ -381,15 +424,29 @@ _.Zones =
 				}),
 				q(26965, {	-- The Warchief Cometh
 					["qg"] = 44615,	-- Grand Executor Mortuus
+					["coord"] = { 57.4, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26964 },	-- Warchief's Command: Silverpine Forest!
 				}),
 				q(27065, {	-- The Warchief's Fleet
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["coord"] = { 57.3, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27056 },	-- Belmont's Report
 				}),
-				q(480, { 	-- The Weaver
+				q(27232, { 	-- The Waters Run Red...
+					--["objectID"] = 205350,	-- Horde Communication Panel
+					["icon"] = "Interface\\Icons\\INV_Gizmo_GoblinBoomBox_01",
+					["coord"] = { 59.1, 34.2, 21 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 27231 },	-- Reinforcements from Fenris
+					["g"] = {
+						i(62853),	-- Blood Offering Platter
+						i(62852),	-- Sabots of Red Waters
+						i(131661),	-- Treads of Red Waters
+					},
+				}),
+				q(480,   { 	-- The Weaver
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -399,19 +456,29 @@ _.Zones =
 				}),
 				q(27290, {	-- To Forsaken Forward Command
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["coord"] = { 44.8, 41.6, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27195 },	-- Nowhere to Run
+					["sourceQuests"] = {
+						27226,	-- Hair of the Dog
+						27195,	-- Nowhere to Run
+						27290,	-- To Forsaken Forward Command
+					},
 				}),
 				q(27512, {	-- Transdimensional Warfare: Chapter I
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27484 },	-- Only One May Enter
 				}),
 				q(27513, {	-- Transdimensional Warfare: Chapter II
+					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27512 },	-- Transdimensional Warfare: Chapter I
 				}),
 				q(27518, {	-- Transdimensional Warfare: Chapter III
+					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27513 },	-- Transdimensional Warfare: Chapter II
 					["g"] = {
@@ -419,13 +486,26 @@ _.Zones =
 						i(62889),	-- Transdimensional Cloak
 						i(62891),	-- Vessel of the Dark Lady
 					},
-				}),					
-				q(27475, {	-- Unyielding Servitors (secondary QG ID 45626)
-					["qg"] = 45626,	-- Daschla (secondary QG ID 45610)
+				}),
+				q(27475, {	-- Unyielding Servitors
+					["qgs"] = { 45610, 45626 },	-- Daschla
+					["coord"] = { 51.8, 64.7, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 				}),
-				q(491, { 	-- Wand to Bethor
+				q(27045, { 	-- Waiting to Exsanguinate
+					--["objectID"] = 205143,	-- Abandoned Outhouse
+					["coord"] = { 53.8, 12.9, 21 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 27039 },	-- Dangerous Intentions
+					["g"] = {
+						i(62833),	-- Cloak of Courage
+						i(131634),	-- Grasps of the Survivor
+						i(62831),	-- Treads of the Survivor
+						i(62832),	-- Yorick's Bequest
+					},
+				}),
+				q(491,   { 	-- Wand to Bethor
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -434,19 +514,25 @@ _.Zones =
 						un(2, i(3458)),	-- Rugged Mail Gloves
 					},
 				}),
-				q(429, {	-- Wild Hearts
+				q(28089, {	-- Warchief's Command: Hillsbrad Foothills!
+					["qg"] = 44640,	-- High Warlord Cromush
+					["races"] = HORDE_ONLY,
+					["altQuests"] = { 27746 },	-- Empire of Dirt
+					["isBreadcrumb"] = true,
+					["coords"] = {
+						{ 57.3, 10.1, 21 },	-- Forsaken High Command
+						{ 44.8, 40.7, 21 },	-- The Sepulcher
+						{ 52.2, 66.3, 21 },	-- The Forsaken Front
+						{ 45.3, 84.3, 21 },	-- The Battlefront
+					},
+				}),
+				q(429,   {	-- Wild Hearts
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(7, i(4597)),	-- Recipe: Discolored Healing Potion
 					},
 				}),
-				--[[
---					q(28089, {	-- Warchief's Command: Hillsbrad Foothills! (secondary QG IDs 45631 and 46125 -- couldn't find this to pick up -- may overlap with Empire of Dirt, which is also a Hillsbrad breadcrumb quest)
-					["qg"] = 44640,	-- 
-					["races"] = HORDE_ONLY,
-				}),
-				]]--
 			}),
 		}),
 	}),

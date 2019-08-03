@@ -7,6 +7,7 @@ _.Zones =
 		m(21, {	-- Silverpine Forest
 			n(-2,  {	-- Vendors
 				n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
+					["coord"] = { 44.6, 39.6, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4788),	-- Agile Boots
@@ -14,6 +15,7 @@ _.Zones =
 					},
 				}),
 				n(3554, {	-- Andrea Boynton <Clothier>
+					["coord"] = { 44.6, 39.2, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4782), 	-- Solstice Robe
@@ -25,6 +27,7 @@ _.Zones =
 					},
 				}),
 				n(3556, {	-- Andrew Hilbert <Trade Supplies>
+					["coord"] = { 43.2, 40.6, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6272),	-- Pattern: Blue Linen Robe
@@ -35,6 +38,7 @@ _.Zones =
 					},
 				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>
+					["coord"] = { 59.4, 33.4, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
@@ -42,6 +46,7 @@ _.Zones =
 					},
 				}),
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
+					["coord"] = { 53.8, 82.2, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
@@ -52,6 +57,7 @@ _.Zones =
 					},
 				}),
 				n(5757, {	-- Lilly <Enchanting Supplies>
+					["coord"] = { 46.8, 40.6, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6346),	-- Formula: Enchant Chest - Lesser Mana
@@ -62,12 +68,14 @@ _.Zones =
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>
+					["coord"] = { 44.8, 39.8, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(3534, {	-- Wallace the Blind <Weaponsmith>
+					["coord"] = { 33.0, 17.8, 21 },
 					["g"] = {
 						i(4817), 	-- Blessed Claymore
 						i(4818), 	-- Executioner's Sword
