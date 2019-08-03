@@ -1378,6 +1378,26 @@ local ResolveSymbolicLink;
 (function()
 local subroutines;
 subroutines = {
+	["pvp_cata_gladiator_base"] = function(headerID, classID)
+		return {
+			{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
+			{"pop"},	-- Discard the "Cataclysm" header and acquire the children.
+			{"where", "npcID", headerID },	-- Select the Gladiator header
+			{"pop"},	-- Discard the Gladiator header and acquire the children.
+			{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header
+			{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
+			{"where", "classID", classID },	-- Select all the class header.
+			{"pop"},	-- Discard the class header and acquire the children.
+			{"is", "itemID"},
+			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+		};
+	end,
+	["pvp_ruthless_gladiator"] = function(classID)
+		return { ["sym"] = { {"sub", "pvp_cata_gladiator_base", -673, classID }, }, };
+	end,
+	["pvp_vicious_gladiator"] = function(classID)
+		return { ["sym"] = { {"sub", "pvp_cata_gladiator_base", -672, classID }, }, };
+	end,
 	["legion_relinquished_base"] = function()
 		return {
 			-- Legion Legendaries

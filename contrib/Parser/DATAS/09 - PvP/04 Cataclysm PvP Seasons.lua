@@ -55,11 +55,7 @@ _.PVP =
 				}),
 				cl(6, {	-- Death Knight
 					i(146523, {	-- Ensemble: Vicious Gladiator's Dreadplate Armor
-						i(60408),	-- Vicious Gladiator's Dreadplate Chestpiece	
-						i(60409),	-- Vicious Gladiator's Dreadplate Gauntlets	
-						i(60410),	-- Vicious Gladiator's Dreadplate Helm	
-						i(60411),	-- Vicious Gladiator's Dreadplate Legguards	
-						i(60412),	-- Vicious Gladiator's Dreadplate Shoulders
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 6 }, },
 					}),
 					i(60408),	-- Vicious Gladiator's Dreadplate Chestpiece	
 					i(60409),	-- Vicious Gladiator's Dreadplate Gauntlets	
@@ -69,22 +65,7 @@ _.PVP =
 				}),
 				cl(11, {	-- Druid
 					i(146521, {	-- Ensemble: Vicious Gladiator's Dragonhide Armor
-						i(60443),	-- Vicious Gladiator's Dragonhide Gloves	
-						i(60444),	-- Vicious Gladiator's Dragonhide Helm	
-						i(60445),	-- Vicious Gladiator's Dragonhide Legguards	
-						i(60446),	-- Vicious Gladiator's Dragonhide Robes	
-						i(60447),	-- Vicious Gladiator's Dragonhide Spaulders
-						i(60480),	-- Vicious Gladiator's Felweave Trousers	
-						i(60448),	-- Vicious Gladiator's Kodohide Gloves	
-						i(60449),	-- Vicious Gladiator's Kodohide Helm	
-						i(60450),	-- Vicious Gladiator's Kodohide Legguards	
-						i(60451),	-- Vicious Gladiator's Kodohide Robes	
-						i(60452),	-- Vicious Gladiator's Kodohide Spaulders
-						i(60453),	-- Vicious Gladiator's Wyrmhide Gloves	
-						i(60454),	-- Vicious Gladiator's Wyrmhide Helm	
-						i(60455),	-- Vicious Gladiator's Wyrmhide Legguards	
-						i(60456),	-- Vicious Gladiator's Wyrmhide Robes	
-						i(60457),	-- Vicious Gladiator's Wyrmhide Spaulders
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 11 }, },
 					}),
 					i(60443),	-- Vicious Gladiator's Dragonhide Gloves	
 					i(60444),	-- Vicious Gladiator's Dragonhide Helm	
@@ -104,11 +85,7 @@ _.PVP =
 				}),
 				cl(3, {	-- Hunter
 					i(146519, {	-- Ensemble: Vicious Gladiator's Chain Armor
-						i(60423),	-- Vicious Gladiator's Chain Armor	
-						i(60424),	-- Vicious Gladiator's Chain Gauntlets	
-						i(60425),	-- Vicious Gladiator's Chain Helm	
-						i(60426),	-- Vicious Gladiator's Chain Leggings
-						i(60427),	-- Vicious Gladiator's Chain Spaulders
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 3 }, },
 					}),
 					i(60423),	-- Vicious Gladiator's Chain Armor
 					i(60424),	-- Vicious Gladiator's Chain Gauntlets
@@ -118,11 +95,7 @@ _.PVP =
 				}),
 				cl(8, {	-- Mage
 					i(146537, {	-- Ensemble: Vicious Gladiator's Silk Armor
-						i(60467),	-- Vicious Gladiator's Silk Amice
-						i(60464),	-- Vicious Gladiator's Silk Cowl
-						i(60463),	-- Vicious Gladiator's Silk Handguards
-						i(60466),	-- Vicious Gladiator's Silk Robe
-						i(60465),	-- Vicious Gladiator's Silk Trousers
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 8 }, },
 					}),
 					i(60467),	-- Vicious Gladiator's Silk Amice
 					i(60464),	-- Vicious Gladiator's Silk Cowl
@@ -132,16 +105,7 @@ _.PVP =
 				}),
 				cl(2, {	-- Paladin
 					i(146535, {	-- Ensemble: Vicious Gladiator's Scaled Armor
-						i(60601),	-- Vicious Gladiator's Ornamented Chestguard	
-						i(60602),	-- Vicious Gladiator's Ornamented Gloves	
-						i(60603),	-- Vicious Gladiator's Ornamented Headcover	
-						i(60604),	-- Vicious Gladiator's Ornamented Legplates	
-						i(60605),	-- Vicious Gladiator's Ornamented Spaulders
-						i(60413),	-- Vicious Gladiator's Scaled Chestpiece	
-						i(60414),	-- Vicious Gladiator's Scaled Gauntlets	
-						i(60415),	-- Vicious Gladiator's Scaled Helm	
-						i(60416),	-- Vicious Gladiator's Scaled Legguards	
-						i(60417),	-- Vicious Gladiator's Scaled Shoulders
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 2 }, },
 					}),
 					i(60601),	-- Vicious Gladiator's Ornamented Chestguard
 					i(60602),	-- Vicious Gladiator's Ornamented Gloves
@@ -156,16 +120,7 @@ _.PVP =
 				}),
 				cl(5, {	-- Priest
 					i(146533, {	-- Ensemble: Vicious Gladiator's Satin Armor
-						i(60468),	-- Vicious Gladiator's Mooncloth Gloves
-						i(60469),	-- Vicious Gladiator's Mooncloth Helm
-						i(60470),	-- Vicious Gladiator's Mooncloth Leggings
-						i(60472),	-- Vicious Gladiator's Mooncloth Mantle
-						i(60471),	-- Vicious Gladiator's Mooncloth Robe
-						i(60473),	-- Vicious Gladiator's Satin Gloves
-						i(60474),	-- Vicious Gladiator's Satin Hood
-						i(60475),	-- Vicious Gladiator's Satin Leggings
-						i(60477),	-- Vicious Gladiator's Satin Mantle
-						i(60476),	-- Vicious Gladiator's Satin Robe
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 5 }, },
 					}),
 					i(60468),	-- Vicious Gladiator's Mooncloth Gloves
 					i(60469),	-- Vicious Gladiator's Mooncloth Helm
@@ -180,11 +135,7 @@ _.PVP =
 				}),
 				cl(4, {	-- Rogue
 					i(146527, {	-- Ensemble: Vicious Gladiator's Leather Armor
-						i(60459),	-- Vicious Gladiator's Leather Gloves	
-						i(60460),	-- Vicious Gladiator's Leather Helm	
-						i(60461),	-- Vicious Gladiator's Leather Legguards	
-						i(60462),	-- Vicious Gladiator's Leather Spaulders	
-						i(60458),	-- Vicious Gladiator's Leather Tunic
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 4 }, },
 					}),
 					i(60459),	-- Vicious Gladiator's Leather Gloves	
 					i(60460),	-- Vicious Gladiator's Leather Helm	
@@ -194,21 +145,7 @@ _.PVP =
 				}),
 				cl(7, {	-- Shaman
 					i(146531, {	-- Ensemble: Vicious Gladiator's Ringmail Armor
-						i(60433),	-- Vicious Gladiator's Linked Armor	
-						i(60434),	-- Vicious Gladiator's Linked Gauntlets	
-						i(60435),	-- Vicious Gladiator's Linked Helm	
-						i(60436),	-- Vicious Gladiator's Linked Leggings	
-						i(60437),	-- Vicious Gladiator's Linked Spaulders	
-						i(60438),	-- Vicious Gladiator's Mail Armor	
-						i(60439),	-- Vicious Gladiator's Mail Gauntlets	
-						i(60440),	-- Vicious Gladiator's Mail Helm	
-						i(60441),	-- Vicious Gladiator's Mail Leggings	
-						i(60442),	-- Vicious Gladiator's Mail Spaulders	
-						i(60428),	-- Vicious Gladiator's Ringmail Armor	
-						i(60429),	-- Vicious Gladiator's Ringmail Gauntlets	
-						i(60430),	-- Vicious Gladiator's Ringmail Helm	
-						i(60431),	-- Vicious Gladiator's Ringmail Leggings	
-						i(60432),	-- Vicious Gladiator's Ringmail Spaulders
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 7 }, },
 					}),
 					i(60433),	-- Vicious Gladiator's Linked Armor	
 					i(60434),	-- Vicious Gladiator's Linked Gauntlets	
@@ -228,11 +165,7 @@ _.PVP =
 				}),
 				cl(9, {	-- Warlock
 					i(146525, {	-- Ensemble: Vicious Gladiator's Felweave Armor
-						i(60482),	-- Vicious Gladiator's Felweave Amice	
-						i(60479),	-- Vicious Gladiator's Felweave Cowl	
-						i(60478),	-- Vicious Gladiator's Felweave Handguards	
-						i(60481),	-- Vicious Gladiator's Felweave Raiment	
-						i(60480),	-- Vicious Gladiator's Felweave Trousers
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 9 }, },
 					}),
 					i(60482),	-- Vicious Gladiator's Felweave Amice	
 					i(60479),	-- Vicious Gladiator's Felweave Cowl	
@@ -242,11 +175,7 @@ _.PVP =
 				}),
 				cl(1, {	-- Warrior
 					i(146529, {	-- Ensemble: Vicious Gladiator's Plate Armor
-						i(60418),	-- Vicious Gladiator's Plate Chestpiece	
-						i(60419),	-- Vicious Gladiator's Plate Gauntlets	
-						i(60420),	-- Vicious Gladiator's Plate Helm	
-						i(60421),	-- Vicious Gladiator's Plate Legguards	
-						i(60422),	-- Vicious Gladiator's Plate Shoulders	
+						["sym"] = { {"sub", "pvp_vicious_gladiator", 1 }, },
 					}),
 					i(60418),	-- Vicious Gladiator's Plate Chestpiece	
 					i(60419),	-- Vicious Gladiator's Plate Gauntlets	
@@ -552,11 +481,7 @@ _.PVP =
 				}),
 				cl(6, {	-- Death Knight
 					i(146503, {	-- Ensemble: Ruthless Gladiator's Dreadplate Armor
-						i(70244),	-- Ruthless Gladiator's Dreadplate Chestpiece
-						i(70245),	-- Ruthless Gladiator's Dreadplate Gauntlets
-						i(70246),	-- Ruthless Gladiator's Dreadplate Helm
-						i(70247),	-- Ruthless Gladiator's Dreadplate Legguards
-						i(70248),	-- Ruthless Gladiator's Dreadplate Shoulders
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 6 }, },
 					}),
 					i(70244),	-- Ruthless Gladiator's Dreadplate Chestpiece
 					i(70245),	-- Ruthless Gladiator's Dreadplate Gauntlets
@@ -566,21 +491,7 @@ _.PVP =
 				}),
 				cl(11, {	-- Druid
 					i(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
-						i(70279),	-- Ruthless Gladiator's Dragonhide Gloves
-						i(70280),	-- Ruthless Gladiator's Dragonhide Helm
-						i(70281),	-- Ruthless Gladiator's Dragonhide Legguards
-						i(70282),	-- Ruthless Gladiator's Dragonhide Robes
-						i(70283),	-- Ruthless Gladiator's Dragonhide Spaulders
-						i(70284),	-- Ruthless Gladiator's Kodohide Gloves
-						i(70285),	-- Ruthless Gladiator's Kodohide Helm
-						i(70286),	-- Ruthless Gladiator's Kodohide Legguards
-						i(70287),	-- Ruthless Gladiator's Kodohide Robes
-						i(70288),	-- Ruthless Gladiator's Kodohide Spaulders
-						i(70289),	-- Ruthless Gladiator's Wyrmhide Gloves
-						i(70290),	-- Ruthless Gladiator's Wyrmhide Helm
-						i(70291),	-- Ruthless Gladiator's Wyrmhide Legguards
-						i(70292),	-- Ruthless Gladiator's Wyrmhide Robes
-						i(70293),	-- Ruthless Gladiator's Wyrmhide Spaulders
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 11 }, },
 					}),
 					i(70279),	-- Ruthless Gladiator's Dragonhide Gloves
 					i(70280),	-- Ruthless Gladiator's Dragonhide Helm
@@ -600,11 +511,7 @@ _.PVP =
 				}),
 				cl(3, {	-- Hunter
 					i(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor
-						i(70259),	-- Ruthless Gladiator's Chain Armor
-						i(70260),	-- Ruthless Gladiator's Chain Gauntlets
-						i(70261),	-- Ruthless Gladiator's Chain Helm
-						i(70262),	-- Ruthless Gladiator's Chain Leggings
-						i(70263),	-- Ruthless Gladiator's Chain Spaulders
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 3 }, },
 					}),
 					i(70259),	-- Ruthless Gladiator's Chain Armor
 					i(70260),	-- Ruthless Gladiator's Chain Gauntlets
@@ -614,11 +521,7 @@ _.PVP =
 				}),
 				cl(8, {	-- Mage
 					i(146517, {	-- Ensemble: Ruthless Gladiator's Silk Armor
-						i(70299),	-- Ruthless Gladiator's Silk Handguards
-						i(70300),	-- Ruthless Gladiator's Silk Cowl
-						i(70301),	-- Ruthless Gladiator's Silk Trousers
-						i(70302),	-- Ruthless Gladiator's Silk Robe
-						i(70303),	-- Ruthless Gladiator's Silk Amice
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 8 }, },
 					}),
 					i(70299),	-- Ruthless Gladiator's Silk Handguards
 					i(70300),	-- Ruthless Gladiator's Silk Cowl
@@ -628,16 +531,7 @@ _.PVP =
 				}),
 				cl(2, {	-- Paladin
 					i(146515, {	-- Ensemble: Ruthless Gladiator's Scaled Armor
-						i(70353),	-- Ruthless Gladiator's Ornamented Chestguard
-						i(70354),	-- Ruthless Gladiator's Ornamented Gloves
-						i(70355),	-- Ruthless Gladiator's Ornamented Headcover
-						i(70356),	-- Ruthless Gladiator's Ornamented Legplates
-						i(70357),	-- Ruthless Gladiator's Ornamented Spaulders
-						i(70249),	-- Ruthless Gladiator's Scaled Chestpiece
-						i(70250),	-- Ruthless Gladiator's Scaled Gauntlets
-						i(70251),	-- Ruthless Gladiator's Scaled Helm
-						i(70252),	-- Ruthless Gladiator's Scaled Legguards
-						i(70253),	-- Ruthless Gladiator's Scaled Shoulders	
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 2 }, },	
 					}),
 					i(70353),	-- Ruthless Gladiator's Ornamented Chestguard
 					i(70354),	-- Ruthless Gladiator's Ornamented Gloves
@@ -652,17 +546,7 @@ _.PVP =
 				}),
 				cl(5, {	-- Priest
 					i(146513, {	-- Ensemble: Ruthless Gladiator's Satin Armor
-						i(70304),	-- Ruthless Gladiator's Mooncloth Gloves
-						i(70305),	-- Ruthless Gladiator's Mooncloth Helm
-						i(70306),	-- Ruthless Gladiator's Mooncloth Leggings
-						i(70307),	-- Ruthless Gladiator's Mooncloth Robe
-						i(70308),	-- Ruthless Gladiator's Mooncloth Mantle
-						i(70309),	-- Ruthless Gladiator's Satin Gloves
-						i(70310),	-- Ruthless Gladiator's Satin Hood
-						i(70311),	-- Ruthless Gladiator's Satin Leggings
-						i(70312),	-- Ruthless Gladiator's Satin Robe
-						i(70313),	-- Ruthless Gladiator's Satin Mantle
-						
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 5 }, },
 					}),
 					i(70304),	-- Ruthless Gladiator's Mooncloth Gloves
 					i(70305),	-- Ruthless Gladiator's Mooncloth Helm
@@ -677,11 +561,7 @@ _.PVP =
 				}),
 				cl(4, {	-- Rogue
 					i(146507, {	-- Ensemble: Ruthless Gladiator's Leather Armor
-						i(70294),	-- Ruthless Gladiator's Leather Tunic
-						i(70295),	-- Ruthless Gladiator's Leather Gloves
-						i(70296),	-- Ruthless Gladiator's Leather Helm
-						i(70297),	-- Ruthless Gladiator's Leather Legguards
-						i(70298),	-- Ruthless Gladiator's Leather Spaulders
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 4 }, },
 					}),
 					i(70294),	-- Ruthless Gladiator's Leather Tunic
 					i(70295),	-- Ruthless Gladiator's Leather Gloves
@@ -691,22 +571,7 @@ _.PVP =
 				}),
 				cl(7, {	-- Shaman
 					i(146511, {	-- Ensemble: Ruthless Gladiator's Ringmail Armor
-						i(70269),	-- Ruthless Gladiator's Linked Armor
-						i(70270),	-- Ruthless Gladiator's Linked Gauntlets
-						i(70271),	-- Ruthless Gladiator's Linked Helm
-						i(70272),	-- Ruthless Gladiator's Linked Leggings
-						i(70273),	-- Ruthless Gladiator's Linked Spaulders
-						i(70274),	-- Ruthless Gladiator's Mail Armor
-						i(70275),	-- Ruthless Gladiator's Mail Gauntlets
-						i(70276),	-- Ruthless Gladiator's Mail Helm
-						i(70277),	-- Ruthless Gladiator's Mail Leggings
-						i(70278),	-- Ruthless Gladiator's Mail Spaulders
-						i(70264),	-- Ruthless Gladiator's Ringmail Armor
-						i(70265),	-- Ruthless Gladiator's Ringmail Gauntlets
-						i(70266),	-- Ruthless Gladiator's Ringmail Helm
-						i(70267),	-- Ruthless Gladiator's Ringmail Leggings
-						i(70268),	-- Ruthless Gladiator's Ringmail Spaulders
-						
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 7 }, },
 					}),
 					i(70269),	-- Ruthless Gladiator's Linked Armor
 					i(70270),	-- Ruthless Gladiator's Linked Gauntlets
@@ -726,11 +591,7 @@ _.PVP =
 				}),
 				cl(9, {	-- Warlock
 					i(146505, {	-- Ensemble: Ruthless Gladiator's Felweave Armor
-						i(70314),	-- Ruthless Gladiator's Felweave Handguards
-						i(70315),	-- Ruthless Gladiator's Felweave Cowl
-						i(70316),	-- Ruthless Gladiator's Felweave Trousers
-						i(70317),	-- Ruthless Gladiator's Felweave Raiment
-						i(70318),	-- Ruthless Gladiator's Felweave Amice
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 9 }, },
 					}),
 					i(70314),	-- Ruthless Gladiator's Felweave Handguards
 					i(70315),	-- Ruthless Gladiator's Felweave Cowl
@@ -740,11 +601,7 @@ _.PVP =
 				}),
 				cl(1, {	-- Warrior
 					i(146509, {	-- Ensemble: Ruthless Gladiator's Plate Armor
-						i(70254),	-- Ruthless Gladiator's Plate Chestpiece
-						i(70255),	-- Ruthless Gladiator's Plate Gauntlets
-						i(70256),	-- Ruthless Gladiator's Plate Helm
-						i(70257),	-- Ruthless Gladiator's Plate Legguards
-						i(70258),	-- Ruthless Gladiator's Plate Shoulders
+						["sym"] = { {"sub", "pvp_ruthless_gladiator", 1 }, },
 					}),
 					i(70254),	-- Ruthless Gladiator's Plate Chestpiece
 					i(70255),	-- Ruthless Gladiator's Plate Gauntlets
