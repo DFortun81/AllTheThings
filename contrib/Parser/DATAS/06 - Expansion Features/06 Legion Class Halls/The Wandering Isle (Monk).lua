@@ -144,7 +144,22 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
 					}),
 					q(41087, {	-- Storm Brew
-						i(139731),	-- Grandmaster's Tunic
+						["qgs"] = 100438,	-- Iron-Body Ponshu
+						["sourceQuests"] = { 32442 },	-- Impending Danger
+						["groups"] = {
+							title(472),	-- Grandmaster %s
+							i(139731),	-- Grandmaster's Tunic
+							i(142056),	-- Arcanum of the Order
+							i(142063),	-- Dusk of the Order
+							i(142058),	-- Fel Ward of the Order
+							i(142059),	-- Flame of the Order
+							i(142064),	-- Gale Wind of the Order
+							i(142057),	-- Heartbeat of the Order
+							i(142060),	-- Icy Core of the Order
+							i(142061),	-- Iron Will of the Order
+							i(142055),	-- Light of the Order
+							i(142062),	-- Prosperity of the Order
+						},
 					}),
 					q(45459, {	-- Storming the Legion
 						["qg"] = 119765,	-- Spirit of Brewmaster Blanche
