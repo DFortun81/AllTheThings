@@ -518,7 +518,10 @@ _.Zones =
 						["description"] = "Contains Mardivas reagent",
 					}),
 					i(168094, {	-- Faintly Humming Sea Stones
-						i(167077),	-- Scrying Stone
+						["description"] = "Contains Scrying Stone",	-- Description added so you dont need debug mode to see contained item.
+						["g"] = {
+							i(167077),	-- Scrying Stone
+						},
 					}),
 					i(168093, {	-- Grimy Manapearl Bracelet
 						["description"] = "Contains 3 Prismatic Manapearls",
@@ -527,8 +530,11 @@ _.Zones =
 						["description"] = "Contains 3 Prismatic Manapearls",
 					}),
 					i(170153, {	-- Ominous Looking Tome
-						i(169945),	-- Naga Deployment Orders(A)
-						i(170085),	-- Naga Deployment Orders(H)
+						["description"] = "Contains Naga Deployment Orders",	-- Description added so you dont need debug mode to see contained items.
+						["g"] = {
+							i(169945),	-- Naga Deployment Orders(A)
+							i(170085),	-- Naga Deployment Orders(H)
+						},
 					}),
 					i(168097, {	-- Pilfered Armor Crate
 						["description"] = "Contains a piece of Benthic gear",
@@ -541,7 +547,10 @@ _.Zones =
 						["description"] = "Contains a piece of Benthic gear",
 					}),
 					i(168091, {	-- Severly Rusted Lockbox
-						i(169475),	-- Barnacled Lockbox
+						["description"] = "Contains Barnacled Lockbox",	-- Description added so you dont need debug mode to see contained items.
+						["g"] = {
+							i(169475),	-- Barnacled Lockbox
+						},
 					}),
 					i(170152,	{	-- Shadow-Cloaked Shell
 						["description"] = "150 rep with Nazjatar faction",
@@ -558,14 +567,20 @@ _.Zones =
 					i(168053),	-- Unusually Wise Hermit Crab
 					i(170161),	-- Unusually Wise Hermit Crab
 					i(168096, {	-- Waterlogged Toolbox
-						i(166888),	-- Germinating Seed
-						i(167012),	-- Brinestone Pickaxe
-						i(167059),	-- Chum
+						["description"] = "Contains item to summon Nazjatar rare",	-- Description added so you dont need debug mode to see contained items.
+						["g"] = {
+							i(166888),	-- Germinating Seed
+							i(167012),	-- Brinestone Pickaxe
+							i(167059),	-- Chum
+						},
 					}),
 					i(170162, {	-- Waterlogged Toolbox
-						i(166888),	-- Germinating Seed
-						i(167012),	-- Brinestone Pickaxe
-						i(167059),	-- Chum
+						["description"] = "Contains item to summon Nazjatar rare",	-- Description added so you dont need debug mode to see contained items.
+						["g"] = {
+							i(166888),	-- Germinating Seed
+							i(167012),	-- Brinestone Pickaxe
+							i(167059),	-- Chum
+						},
 					}),
 				}
 			}),
