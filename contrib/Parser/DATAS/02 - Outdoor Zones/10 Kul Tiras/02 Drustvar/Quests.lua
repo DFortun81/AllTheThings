@@ -20,13 +20,6 @@ _.Zones =
 					-- May have additional/different source quest(s); needs confirmation.
 					-- Not required for "Drust Do It."
 				}),
-				q(53701, {	-- A Drust Cause
-					["coord"] = { 37.03, 51.35, 896 },	-- Waycrest Gryphon Start
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["crs"] = { 144984 },	-- Waycrest Gryphon
-					["qg"] = 135815,	-- Quartermaster Alcorn
-				}),
 				q(49443, {	-- A Lesson in Witch Hunting
 					["sourceQuests"] = { 48986 },	-- Take the High Road
 					["coord"] = { 36.8, 50.1, 896 },
@@ -1267,23 +1260,6 @@ _.Zones =
 					},
 					["icon"] = "Interface\\Icons\\inv_drustvar",
 				}),
-				{	-- In Every Dark Corner [Incursion Quest]
-					["questID"] = 54137,	-- In Every Dark Corner
-					["qg"] = 148142,		-- Rokhan
-					["coords"] = {
-						{ 36.91, 26.47, 896 },	-- Rokhan [Complete Rokhan's Ritual]
-						{ 40.08, 48.93, 896 },	-- Vindicator Caeduum
-					},
-					["crs"] = {
-						148380,	-- Vindicator Caeduum
-					},
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						{	-- Honorbound Equipment Cache
-							["itemID"] = 165871,	-- Honorbound Equipment Cache
-						},
-					},
-				},
 --[[	raw quest list to check against
 				
 				-- Unknown

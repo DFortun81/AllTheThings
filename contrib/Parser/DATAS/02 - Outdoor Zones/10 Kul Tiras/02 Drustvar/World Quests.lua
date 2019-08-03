@@ -1290,9 +1290,23 @@ _.Zones =
 				}),
 ]]--				
 					q(53701, {	-- A Drust Cause (Faction Assault WQ)
+						["qg"] = 135815,	-- Quartermaster Alcorn <Order of Embers Emissary>
+						["coord"] = { 37.03, 51.35, 896 },	-- Waycrest Gryphon Start
+						["crs"] = { 144984 },	-- Waycrest Gryphon
 						["lvl"] = 110,
+						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13283,	-- Frontline Warrior
+								["criteriaID"] = 3,	-- A Drust Cause
+							},
+							{
+								["achievementID"] = 13387,	-- Frontline Veteran
+								["criteriaID"] = 3,	-- A Drust Cause
+							},
+						},
 					}),
 					q(51616, {	-- A Final Rest
 						["lvl"] = 120,
@@ -1563,9 +1577,26 @@ _.Zones =
 						["lvl"] = 120,
 					}),
 					q(54137, {	-- In Every Dark Corner (Faction Assault WQ)
+						["qg"] = 148142,		-- Rokhan
+						["crs"] = { 148380 },	-- Vindicator Caeduum
+						["coords"] = {
+							{ 36.91, 26.47, 896 },	-- Rokhan [Complete Rokhan's Ritual]
+							{ 40.08, 48.93, 896 },	-- Vindicator Caeduum
+						},
 						["lvl"] = 110,
+						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13284,	-- Frontline Warrior
+								["criteriaID"] = 5,	-- In Every Dark Corner
+							},
+							{
+								["achievementID"] = 13388,	-- Frontline Veteran
+								["criteriaID"] = 5,	-- In Every Dark Corner
+							},
+						},
 					}),
 					q(54688, {	-- Inquisitor Erik (Faction Assault WQ)
 						["lvl"] = 110,

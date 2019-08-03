@@ -1573,9 +1573,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54132, {	-- Horde of Heroes (Faction Assault WQ)
+						["qg"] = 135447,	-- Ransa Greyfeather <The Honorbound Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13284,	-- Frontline Warrior
+								["criteriaID"] = 6,	-- Horde of Heroes
+							},
+							{
+								["achievementID"] = 13388,	-- Frontline Veteran
+								["criteriaID"] = 6,	-- Horde of Heroes
+							},
+						},
 					}),
 					q(52988, {	-- House Cleaning
 						["lvl"] = 120,
@@ -1860,9 +1871,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51982, {	-- Storm's Rage (Faction Assault WQ)
+						["qg"] = 135800,	-- Sister Lilyana <Storm's Wake Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13283,	-- Frontline Warrior
+								["criteriaID"] = 2,	-- Storm's Rage
+							},
+							{
+								["achievementID"] = 13387,	-- Frontline Veteran
+								["criteriaID"] = 2,	-- Storm's Rage
+							},
+						},
 					}),
 					q(52322, {	-- Taja the Tidehowler
 						["lvl"] = 120,

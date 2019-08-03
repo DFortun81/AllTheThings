@@ -1558,9 +1558,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53711, {	-- A Sound Defense (Faction Assault WQ)
+						["qg"] = 135808,	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13283,	-- Frontline Warrior
+								["criteriaID"] = 1,	-- A Sound Defense
+							},
+							{
+								["achievementID"] = 13387,	-- Frontline Veteran
+								["criteriaID"] = 1,	-- A Sound Defense
+							},
+						},
 					}),
 					q(51385, {	-- A Supply of Stingers
 						["lvl"] = 120,
@@ -1644,9 +1655,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53939, {	-- Breaching Boralus (Faction Assault WQ)
+						["qg"] = 135447,	-- Ransa Greyfeather <The Honorbound Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13284,	-- Frontline Warrior
+								["criteriaID"] = 1,	-- Breaching Boralus
+							},
+							{
+								["achievementID"] = 13388,	-- Frontline Veteran
+								["criteriaID"] = 1,	-- Breaching Boralus
+							},
+						},
 					}),
 					q(52755, {	-- Bringing the Heat
 						["lvl"] = 120,

@@ -249,9 +249,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54136, {	-- March on the Marsh (Faction Assault WQ)
+						["qg"] = 135446,	-- Vindicator Jaelaana <7th Legion Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13283,	-- Frontline Warrior
+								["criteriaID"] = 5,	-- March on the Marsh
+							},
+							{
+								["achievementID"] = 13387,	-- Frontline Veteran
+								["criteriaID"] = 5,	-- March on the Marsh
+							},
+						},
 					}),
 					q(52754, {	-- Marshdwellers
 						["lvl"] = 120,
@@ -338,9 +349,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54135, {	-- Romp in the Swamp (Faction Assault WQ)
+						["qg"] = 135459,	-- Provisioner Lija <Talanji's Expedition Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13284,	-- Frontline Warrior
+								["criteriaID"] = 2,	-- Romp in the Swamp
+							},
+							{
+								["achievementID"] = 13388,	-- Frontline Veteran
+								["criteriaID"] = 2,	-- Romp in the Swamp
+							},
+						},
 					}),
 					q(50961, {	-- Save Our Scrolls!
 						["lvl"] = 120,

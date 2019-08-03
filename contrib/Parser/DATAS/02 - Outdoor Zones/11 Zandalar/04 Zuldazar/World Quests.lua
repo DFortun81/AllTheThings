@@ -294,9 +294,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54138, {	-- Ritual Rampage (Faction Assault WQ)
+						["qg"] = 135446,	-- Vindicator Jaelaana <7th Legion Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13283,	-- Frontline Warrior
+								["criteriaID"] = 6,	-- Ritual Rampage
+							},
+							{
+								["achievementID"] = 13387,	-- Frontline Veteran
+								["criteriaID"] = 6,	-- Ritual Rampage
+							},
+						},
 					}),
 					q(51814, {	-- Ravoracious
 						["lvl"] = 120,
@@ -328,9 +339,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53883, {	-- Shores of Zuldazar (Faction Assault WQ)
+						["qg"] = 135447,	-- Ransa Greyfeather <The Honorbound Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13284,	-- Frontline Warrior
+								["criteriaID"] = 4,	-- Shores of Zuldazar
+							},
+							{
+								["achievementID"] = 13388,	-- Frontline Veteran
+								["criteriaID"] = 4,	-- Shores of Zuldazar
+							},
+						},
 					}),
 					q(54522, {	-- Short for an Orc (Faction Assault WQ)
 						["lvl"] = 110,
