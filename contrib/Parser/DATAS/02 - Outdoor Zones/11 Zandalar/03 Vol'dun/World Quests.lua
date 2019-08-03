@@ -212,9 +212,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53885, {	-- Isolated Victory (Faction Assault WQ)
+						["qg"] = 135804,	-- Hoarder Jena <Voldunai Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13284,	-- Frontline Warrior
+								["criteriaID"] = 3,	-- 	Isolated Victory
+							},
+							{
+								["achievementID"] = 13388,	-- Frontline Veteran
+								["criteriaID"] = 3,	-- 	Isolated Victory
+							},
+						},
 					}),
 					q(54574, {	-- Jin'tago (Faction Assault WQ)
 						["lvl"] = 110,
@@ -256,9 +267,20 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54134, {	-- Many Fine Heroes (Faction Assault WQ)
+						["qg"] = 135446,	-- Vindicator Jaelaana <7th Legion Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+						["groups"] = {
+							{
+								["achievementID"] = 13283,	-- Frontline Warrior
+								["criteriaID"] = 4,	-- Many Fine Heroes
+							},
+							{
+								["achievementID"] = 13387,	-- Frontline Veteran
+								["criteriaID"] = 4,	-- Many Fine Heroes
+							},
+						},
 					}),
 					q(51153, { 	-- Mor'fani the Exile
 						["lvl"] = 120,
