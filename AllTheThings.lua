@@ -1159,7 +1159,6 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"unit",
 	"dungeonID"
 };
-local key, hash;
 local function GetKey(t)
 	for i,key in ipairs(keysByPriority) do
 		if rawget(t, key) then
@@ -1177,9 +1176,9 @@ local function GetKey(t)
 	end
 end
 local function CreateHash(t)
-	key = t.key or GetKey(t);
+	local key = t.key or GetKey(t);
 	if key then
-		hash = key .. (rawget(t, key) or t[key]);
+		local hash = key .. (rawget(t, key) or t[key]);
 		if key == "criteriaID" and t.achID then hash = hash .. ":" .. t.achID; end
 		rawset(t, "hash", hash);
 		return hash;
@@ -1304,7 +1303,7 @@ MergeObjects = function(g, g2)
 	end
 end
 MergeObject = function(g, t, index)
-	hash = GetHash(t);
+	local hash = GetHash(t);
 	for i,o in ipairs(g) do
 		if GetHash(o) == hash then
 			if t.g then

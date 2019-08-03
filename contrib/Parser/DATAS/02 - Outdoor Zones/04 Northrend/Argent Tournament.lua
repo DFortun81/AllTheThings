@@ -2157,7 +2157,7 @@ _.Zones =
 							173,
 						},
 						["races"] = HORDE_ONLY,
-						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
+						["g"] = {
 							i(47242, {	-- Trophy of the Crusade
 								-- Priest
 								gs(350, {	-- Zabra's Regalia
@@ -2285,7 +2285,7 @@ _.Zones =
 									i(48497),	-- Koltira's Legplates of Triumph
 								}),
 							}),
-						}),
+						},
 					}),
 					n(35577, {	-- Valiant Laradia <Triumphant Armor Vendor>
 						["coord"] = { 75.4, 21.6, 118 },
@@ -2294,7 +2294,7 @@ _.Zones =
 							172,
 							173,
 						},
-						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
+						["g"] = {
 							i(47242, {	-- Trophy of the Crusade
 								-- Priest
 								gs(349, {	-- Velen's Regalia
@@ -2422,7 +2422,7 @@ _.Zones =
 									i(48484),	-- Thassarian's Legplates of Triumph
 								}),
 							}),
-						}),
+						},
 					}),
 					n(34772, {	-- Vasarin Redmorn <Sunreavers Quartermaster>
 						["coord"] = { 76.2, 24.0, 118 },
