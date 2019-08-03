@@ -1170,10 +1170,12 @@ local function GetKey(t)
 			return key;
 		end
 	end
+	--[[
 	print("could not determine key for object")
 	for key,value in pairs(t) do
 		print(key, value);
 	end
+	]]--
 end
 local function CreateHash(t)
 	local key = t.key or GetKey(t);
@@ -1273,24 +1275,32 @@ MergeObjects = function(g, g2)
 	if #g2 > 25 then
 		local hashTable,t = {};
 		for i,o in ipairs(g) do
-			hashTable[GetHash(o)] = o;
+			local hash = GetHash(o);
+			if hash then
+				hashTable[hash] = o;
+			end
 		end
 		for i,o in ipairs(g2) do
-			t = hashTable[GetHash(o)];
-			if t then
-				if o.g then
-					local og = o.g;
-					o.g = nil;
-					if t.g then
-						MergeObjects(t.g, og);
-					else
-						t.g = og;
+			local hash = GetHash(o);
+			if hash then
+				t = hashTable[hash];
+				if t then
+					if o.g then
+						local og = o.g;
+						o.g = nil;
+						if t.g then
+							MergeObjects(t.g, og);
+						else
+							t.g = og;
+						end
 					end
-				end
-				for k,v in pairs(o) do
-					if k ~= "expanded" then
-						rawset(t, k, v);
+					for k,v in pairs(o) do
+						if k ~= "expanded" then
+							rawset(t, k, v);
+						end
 					end
+				else
+					tinsert(g, o);
 				end
 			else
 				tinsert(g, o);
@@ -1304,23 +1314,25 @@ MergeObjects = function(g, g2)
 end
 MergeObject = function(g, t, index)
 	local hash = GetHash(t);
-	for i,o in ipairs(g) do
-		if GetHash(o) == hash then
-			if t.g then
-				local tg = t.g;
-				t.g = nil;
-				if o.g then
-					MergeObjects(o.g, tg);
-				else
-					o.g = tg;
+	if hash then
+		for i,o in ipairs(g) do
+			if GetHash(o) == hash then
+				if t.g then
+					local tg = t.g;
+					t.g = nil;
+					if o.g then
+						MergeObjects(o.g, tg);
+					else
+						o.g = tg;
+					end
 				end
-			end
-			for k,v in pairs(t) do
-				if k ~= "expanded" then
-					rawset(o, k, v);
+				for k,v in pairs(t) do
+					if k ~= "expanded" then
+						rawset(o, k, v);
+					end
 				end
+				return o;
 			end
-			return o;
 		end
 	end
 	if index then
