@@ -1876,14 +1876,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 						["groups"] = {
-							{
+							crit(2, {	-- Storm's Rage
 								["achievementID"] = 13283,	-- Frontline Warrior
-								["criteriaID"] = 2,	-- Storm's Rage
-							},
-							{
+							}),
+							crit(2, {	-- Storm's Rage
 								["achievementID"] = 13387,	-- Frontline Veteran
-								["criteriaID"] = 2,	-- Storm's Rage
-							},
+							}),
 						},
 					}),
 					q(52322, {	-- Taja the Tidehowler

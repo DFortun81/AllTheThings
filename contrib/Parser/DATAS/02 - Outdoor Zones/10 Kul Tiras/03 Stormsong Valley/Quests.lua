@@ -7,6 +7,7 @@ _.Zones =
 		m(942, {	-- Stormsong Valley
 			n(-17,	{	-- Quests [Finalized]
 			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.  it looks like the leather chest was added, but the shoulders are still missing.
+			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.  same as above, leather helm is added but shoulders are missing.
 				q(50593, {	-- A Bloody Mess
 					["sourceQuests"] = { 49998 },	-- Voices Below
 				--	["itemID"] = 158195,	-- Frothing Vial
@@ -16,11 +17,28 @@ _.Zones =
 				}),
 				
 				
+				q(50781, {	-- A Bridge Too Far
+					["sourceQuests"] = { 50784 },	-- Eye of the Storm
+					["coord"] = { 69.8, 36.0, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 136933,	-- Brother Pike
+				}),
+				
+				
 				q(50612, {	-- A House Divided
 					["sourceQuests"] = { 50611 },	-- Storm's Vengeance
 					["coord"] = { 66.0, 47.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 134639,	-- Brother Pike
+				}),
+				
+				
+				q(50733, {	-- A New Dawn
+					["sourceQuests"] = { 50824 },	-- Storm's End
+					["isBreadcrumb"] = true,
+					["coord"] = { 78.2, 28.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 137692,	-- Taelia
 				}),
 				
 				
@@ -53,6 +71,14 @@ _.Zones =
 				}),
 				
 				
+				q(49744, {	-- Bombs, Away
+					["sourceQuests"] = { 51552 },	-- The Days Are Just Packed
+					["coord"] = { 57.6, 66.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130190,	-- Sergeant Calvin
+				}),
+				
+				
 				q(51490, {	-- Border Issues
 					["sourceQuests"] = { 51489 },	-- Time to Leave
 					["coord"] = { 57.9, 86.0, 942 },
@@ -81,6 +107,13 @@ _.Zones =
 					["coord"] = { 60.2, 70.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 141769,	-- Marilyn Hood
+				}),
+				
+				
+				q(49746, {	-- Dousing the Flames
+					["coord"] = { 57.6, 66.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130694,	-- Mayor Roz
 				}),
 				
 				
@@ -159,11 +192,25 @@ _.Zones =
 				}),
 				
 				
-				q(51582, {	-- Make it Mildenhall
-					["isBreadcrumb"] = true,
-				--	["objectID"] = 290537,	-- Help Wanted
-					["coord"] = { 66.3, 57.1, 942 },
+				q(49755, {	-- Heavy Artillery
+					["sourceQuests"] = {
+						49744,	-- Bombs, Away
+						49746,	-- Dousing the Flames
+						49745,	-- You Have Their Orders
+					},
+					["coord"] = { 57.6, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130694,	-- Mayor Roz
+					["g"] = {
+						i(158692),	-- Darkwater Cinch
+						i(160364),	-- Darkwater Legwraps
+						i(158689),	-- Dread Corsair Greatbelt
+						i(160370),	-- Dread Corsair Wargreaves
+						i(158691),	-- Stormchaser Cincture
+						i(160367),	-- Stormchaser Greaves
+						i(158690),	-- Tidespeaker Cord
+						i(160361),	-- Tidespeaker Pants
+					},
 				}),
 				
 				
@@ -172,6 +219,14 @@ _.Zones =
 					["coord"] = { 59.2, 68.6, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 130576,	-- Brother Pike
+				}),
+				
+				
+				q(51278, {	-- Lost and Forgotten
+					["sourceQuests"] = { 50781 },	-- A Bridge Too Far
+					["coord"] = { 70.2, 36.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 136933,	-- Brother Pike
 				}),
 				
 				
@@ -184,6 +239,14 @@ _.Zones =
 					["coord"] = { 63.4, 64.8, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 130714,	-- Brother Pike
+				}),
+				
+				
+				q(51582, {	-- Make it Mildenhall
+					["isBreadcrumb"] = true,
+				--	["objectID"] = 290537,	-- Help Wanted
+					["coord"] = { 66.3, 57.1, 942 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				
 				
@@ -253,10 +316,41 @@ _.Zones =
 				}),
 				
 				
+				q(51320, {	-- Sealed Fate
+					["sourceQuests"] = { 50781 },	-- A Bridge Too Far
+					["coord"] = { 70.2, 36.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 136933,	-- Brother Pike
+				}),
+				
+				
+				q(50825, {	-- Shrine of the Storm: Whispers Below
+					["sourceQuests"] = { 50824 },	-- Storm's End
+					["coord"] = { 78.2, 28.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 137691,	-- Brother Pike
+				}),
+				
+				
 				q(52796, {	-- Sometimes Less is More
 					["coord"] = { 60.2, 70.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 141769,	-- Marilyn Hood
+				}),
+				
+				
+				q(50824, {	-- Storm's End
+					["sourceQuests"] = { 51319 },	-- The Final Ascent
+					["coord"] = { 75.5, 26.9, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 137506,	-- Brother Pike
+					["g"] = {
+						i(155180),	-- Darkwater Hood
+						i(155177),	-- Dread Corsair Greathelm
+						i(155187),	-- Dread Corsair Shoulderplates
+						i(155178),	-- Tidespeaker Circlet
+						i(155188),	-- Tidespeaker Mantle
+					},
 				}),
 				
 				
@@ -325,6 +419,16 @@ _.Zones =
 				}),
 				
 				
+				q(51319, {	-- The Final Ascent
+					["sourceQuests"] = {
+						51278,	-- Lost and Forgotten
+						51320,	-- Sealed Fate
+					},
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 137220,	-- Brother Pike / Awakened Tidesage
+				}),
+				
+				
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
@@ -375,6 +479,19 @@ _.Zones =
 				}),
 				
 				
+				q(49818, {	-- Trouble at Fort Daelin
+					["sourceQuests"] = {	-- needs confirmation.  may open as early as walking across the bridge north of brennadam.  it wasn't here prior to doing that, though.  it was available after turning these 3 in but before picking up or doing 'heavy artillery,' so the SQ is either these 3 or walking across the brennadam bridge to pick these 3 up.
+						49744,	-- Bombs, Away
+						49746,	-- Dousing the Flames
+						49745,	-- You Have Their Orders
+					},
+					["isBreadcrumb"] = true,
+					["coord"] = { 59.4, 69.9, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131004,	-- Squire Augustus III
+				}),
+				
+				
 				q(50778, {	-- Twisted Intentions
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["coord"] = { 63.1, 43.2, 942 },
@@ -407,7 +524,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 130714,	-- Brother Pike
 				}),
-			
+				
+				
+				q(49745, {	-- You Have Their Orders
+					["coord"] = { 57.6, 66.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130694,	-- Mayor Roz
+				}),
+				
+				
 			--[[
 				
 					["sourceQuests"] = {  },	-- 
@@ -420,11 +545,6 @@ _.Zones =
 
 			}),
 			n(-17,  {	-- Quests [Crieve]
-				a(q(50781, {	-- A Bridge Too Far
-					["qg"] = 136933,	-- Brother Pike
-					["sourceQuests"] = { 50784 },	-- Eye of the Storm
-					["coord"] = { 69.8, 36.1 },
-				})),
 				a(q(50779, {	-- A Clean Slate
 					["qg"] = 135415,	-- Umbral Hulk
 					["sourceQuests"] = { 50612 },	-- A House Divided
@@ -435,12 +555,6 @@ _.Zones =
 					["qg"] = 135367,	-- Grettle Haribull
 					["sourceQuests"] = { 50697, 50696 },	-- Bomb Beats Rock / Fun With Magnets
 					["coord"] = { 44.2, 54.0 },
-				})),
-				a(q(50733, {	-- A New Dawn
-					["qg"] = 137692,	-- Taelia
-					["sourceQuests"] = { 50824 },	-- Storm's End
-					["coord"] = { 78.3, 28.8 },
-					["isBreadcrumb"] = true,
 				})),
 				a(q(50041, {	-- A Pocket Full of Shells
 					["qg"] = 129808,	-- Farmer Goldfield
@@ -486,11 +600,6 @@ _.Zones =
 					["qg"] = 133953,	-- Sergeant Calvin
 					["sourceQuests"] = { 50622 },	-- Deal's Off
 					["coord"] = { 44.7, 64.6 },
-				})),
-				a(q(49744, {	-- Bombs, Away
-					["qg"] = 130190,	-- Sergeant Calvin
-					["sourceQuests"] = { 51552 },	-- The Days Are Just Packed
-					["coord"] = { 57.6, 66.4 },
 				})),
 				a(q(50697, {	-- Bomb Beats Rock
 					["qg"] = 134882,	-- Moxie Lockspinner / Worker
@@ -562,11 +671,6 @@ _.Zones =
 					["qg"] = 134702,	-- Nedly Grinner
 					["sourceQuests"] = { 50697, 50696 },	-- Bomb Beats Rock / Fun With Magnets
 					["coord"] = { 44.4, 55.5 },
-				})),
-				a(q(49746, {	-- Dousing the Flames
-					["qg"] = 130694,	-- Mayor Roz
-					-- ["sourceQuests"] = { 51552 },	-- The Days Are Just Packed ??? (verification required)
-					["coord"] = { 57.6, 66.4 },
 				})),
 				a(q(50753, {	-- Earl-E Bot Gets the Worm
 					["qg"] = 135067,	-- Moxie Lockspinner
@@ -647,21 +751,6 @@ _.Zones =
 					},
 					["coord"] = { 54.9, 67.9 },
 				})),
-				a(q(49755, {	-- Heavy Artillery
-					["qg"] = 130694,	-- Mayor Roz
-					["sourceQuests"] = { 49744, 49746, 49745 },	-- Bombs, Away / Dousing the Flames / You Have Their Orders
-					["coord"] = { 57.6, 66.4 },
-					["g"] = {
-						i(158692),	-- Darkwater Cinch
-						i(160364),	-- Darkwater Legwraps
-						i(158689),	-- Dread Corsair Greatbelt
-						i(160370),	-- Dread Corsair Wargreaves
-						i(158691),	-- Stormchaser Cincture
-						i(160367),	-- Stormchaser Greaves
-						i(158690),	-- Tidespeaker Cord
-						i(160361),	-- Tidespeaker Pants
-					},
-				})),
 				a(q(50504, {	-- Honey Glazed Sam
 					["qg"] = 132292,	-- Raimond Mildenhall
 					["sourceQuests"] = { 50168, 50162 },	-- Royal Succession / Sticky Situation
@@ -709,11 +798,6 @@ _.Zones =
 					["sourceQuests"] = { 50622 },	-- Deal's Off
 					["coord"] = { 44.7, 64.5 },
 				})),
-				a(q(51278, {	-- Lost and Forgotten
-					["qg"] = 136933,	-- Brother Pike
-					["sourceQuests"] = { 50781 },	-- A Bridge Too Far
-					["coord"] = { 70.3, 36.1 },
-				})),
 				a(q(50343, {	-- Mayhem at Mildenhall Meadery
 					["qg"] = 131793,	-- Ancel Mildenhall
 					["sourceQuests"] = { 51582 },	-- Make it Mildenhall
@@ -760,16 +844,6 @@ _.Zones =
 					["sourceQuests"] = { 50353 },	-- Boaring Company
 					["coord"] = { 46.7, 73.8 },
 				})),
-				a(q(51320, {	-- Sealed Fate
-					["qg"] = 136933,	-- Brother Pike
-					["sourceQuests"] = { 50781 },	-- A Bridge Too Far
-					["coord"] = { 70.3, 36.1 },
-				})),
-				a(q(50825, {	-- Shrine of the Storm: Whispers Below
-					["qg"] = 137691,	-- Brother Pike
-					["sourceQuests"] = { 50824 },	-- Storm's End
-					["coord"] = { 78.3, 28.7 },
-				})),
 				a(q(49960, {	-- Sic 'Em!
 					["qg"] = 131656,	-- Houndmaster Archibald
 					-- ["sourceQuests"] = {  },	--  (This didn't have a source Quest that I could tell)
@@ -789,21 +863,6 @@ _.Zones =
 					["qg"] = 132118,	-- Farmer Burton
 					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse
 					["coord"] = { 51.5, 65.9 },
-				})),
-				a(q(50824, {	-- Storm's End
-					["qg"] = 137506,	-- Brother Pike
-					["sourceQuests"] = { 51319 },	-- The Final Ascent
-					["coord"] = { 75.6, 27.0 },
-					["g"] = {
-						{
-							["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
-							["criteriaID"] = 4,	-- At the Edge of Madness [Criteria]
-						},
-						i(155180),	-- Darkwater Hood
-						i(155177),	-- Dread Corsair Greathelm
-						i(155187),	-- Dread Corsair Shoulderplates
-					},
-					-- This gave "At the Edge of Madness" criteria achievement - Crieve
 				})),
 				a(q(52067, {	-- Survivors
 					["qg"] = 130190,	-- Sergeant Calvin
@@ -837,11 +896,6 @@ _.Zones =
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
 				})),
-				a(q(51319, {	-- The Final Ascent
-					["qg"] = 137220,	-- Brother Pike / Awakened Tidesage
-					["sourceQuests"] = { 51278, 51320 },	-- Lost and Forgotten / Sealed Fate
-					["coord"] = { 74.2, 30.6 },
-				})),
 				a(q(52132, {	-- The Proof of Piracy
 					["qg"] = 134882,	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50793 },	-- Cave Commotion
@@ -858,12 +912,6 @@ _.Zones =
 					["sourceQuests"] = { 50810 },	-- Break 'Em Out
 					["coord"] = { 42.9, 56.6 },
 				})),
-				a(q(49818, {	-- Trouble at Fort Daelin
-					["qg"] = 131004,	-- Squire Augustus III
-					-- ["sourceQuests"] = {  },	-- I'm not sure, I hearthed here and picked it up ???
-					["coord"] = { 59.5, 69.9 },
-					["isBreadcrumb"] = true,
-				})),
 				a(q(50674, {	-- Two Faced Pirate Scum
 					["qg"] = 134720,	-- Leo Shealds
 					["sourceQuests"] = { 51554 },	-- Reloading
@@ -873,11 +921,6 @@ _.Zones =
 					["qg"] = 134447,	-- Lost Farmhand
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
-				})),
-				a(q(49745, {	-- You Have Their Orders
-					["qg"] = 130694,	-- Mayor Roz
-					-- ["sourceQuests"] = { 51552 },	-- The Days Are Just Packed ??? (verification required)
-					["coord"] = { 57.6, 66.4 },
 				})),
 				a(o(288157, {	-- WANTED: Yarsel'ghun
 					["coord"] = { 57.8, 55.8 },
@@ -1458,9 +1501,6 @@ _.Zones =
 				q(50697, {	-- Bomb Beats Rock
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49744, {	-- Bombs, Away
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50810, {	-- Break 'Em Out
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1615,9 +1655,6 @@ _.Zones =
 				q(51352),	-- Don't Play with Matches
 
 				q(50741, {	-- Don't Turtle
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49746, {	-- Dousing the Flames
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53318, {	-- Ductile Platinum
@@ -1890,9 +1927,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(51278, {	-- Lost and Forgotten
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51582, {	-- Make it Mildenhall
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2155,9 +2189,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(51320, {	-- Sealed Fate
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51487, {	-- Searching for Answers
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2308,9 +2339,6 @@ _.Zones =
 				q(52166, {	-- The Faceless Herald
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(51319, {	-- The Final Ascent
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50743, {	-- The Immediate Problem
 					["races"] = ALLIANCE_ONLY,
@@ -2573,9 +2601,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52065, {	-- Worse Than It Looks
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49745, {	-- You Have Their Orders
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50773, {	-- You're a Shark
