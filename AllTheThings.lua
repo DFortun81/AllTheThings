@@ -1300,6 +1300,7 @@ MergeObjects = function(g, g2)
 						end
 					end
 				else
+					hashTable[hash] = o;
 					tinsert(g, o);
 				end
 			else
