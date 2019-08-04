@@ -43,7 +43,10 @@ _.Zones =
 						i(9923),	-- Tracker's Shoulderpads
 						i(9960),	-- Warmonger's Gauntlets
 					},
-				}), 
+				}),
+				n(2754, { 	-- Anathemus
+					["coord"] = { 8.8, 67.0, 15 },
+				}),
 				n(2753,  { 	-- Barnabus
 					["coord"] = { 40.8, 58.8, 15 },
 					["g"] = {
@@ -81,7 +84,7 @@ _.Zones =
 						i(7520),	-- Gossamer Headpiece
 						i(9947),	-- Chieftain's Belt
 					},
-				}), 
+				}),
 				n(2749,  { 	-- Barricade
 					["coords"] = {
 						{ 9.60, 48.8, 15 },
@@ -126,7 +129,7 @@ _.Zones =
 						i(10127),	-- Revenant Bracers
 						i(9964),	-- Warmonger's Leggings
 					},
-				}), 
+				}),
 				n(51000, { 	-- Blackshell the Impenetrable
 					["coord"] = { 72.2, 27.4, 15 },
 					["g"] = {
@@ -139,7 +142,7 @@ _.Zones =
 						i(7523),	-- Gossamer Shoulderpads
 						i(9915),	-- Royal Headband
 					},
-				}), 
+				}),
 				n(2850,  { 	-- Broken Tooth
 					["coord"] = { 22.6, 60.6, 15 },
 					["g"] = {
@@ -172,7 +175,7 @@ _.Zones =
 						i(10087),	-- Gothic Plate Gauntlets
 						i(9905),	-- Royal Blouse
 					},
-				}), 
+				}),
 				n(50728, { 	-- Deathstrike
 					["coord"] = { 70.2, 53.8, 15 },
 					["g"] = {
@@ -188,7 +191,7 @@ _.Zones =
 						i(7538),	-- Champion's Armor
 						i(10076),	-- Lord's Armguards
 					},
-				}), 
+				}),
 				n(7057,  {	-- Digmaster Shovelphlange
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
@@ -223,7 +226,7 @@ _.Zones =
 						i(9945),	-- Abjurer's Sash
 						i(7539),	-- Champion's Leggings
 					},
-				}), 
+				}),
 				n(50731, { 	-- Needlefang
 					["coord"] = { 50.8, 72.6, 15 },
 					["g"] = {
@@ -309,7 +312,7 @@ _.Zones =
 						i(9905),	-- Royal Blouse
 						i(9962),	-- Warmonger's Greaves
 					},
-				}), 
+				}),
 				n(51007, { 	-- Serkett
 					["coord"] = { 26.8, 38.0, 15 },
 					["g"] = {
@@ -328,7 +331,7 @@ _.Zones =
 						i(10185),	-- Swashbuckler's Cape
 						i(9951),	-- Chieftain's Cloak
 					},
-				}), 
+				}),
 				n(50838, { 	-- Tabbs
 					["coord"] = { 58.6, 60.6, 15 },
 					["g"] = {
@@ -344,7 +347,7 @@ _.Zones =
 						i(7519),	-- Gossamer Pants
 						i(10207),	-- Overlord's Crown
 					},
-				}), 
+				}),
 				n(51021, { 	-- Vorticus
 					["coord"] = { 23.2, 37.6, 15 },
 					["g"] = {
@@ -401,7 +404,7 @@ _.Zones =
 						i(7520),	-- Gossamer Headpiece
 						i(7519),	-- Gossamer Pants
 					},
-				}), 
+				}),
 				n(2931,  { 	-- Zaricotl
 					["coord"] = { 56.6, 44.0, 15 },
 					["g"] = {
@@ -440,7 +443,7 @@ _.Zones =
 						i(7517),	-- Gossamer Tunic
 						i(10086),	-- Gothic Plate Armor
 					},
-				}), 
+				}),
 				n(51018, { 	-- Zormus
 					["coord"] = { 51.8, 34.2, 15 },
 					["g"] = {
@@ -466,7 +469,6 @@ _.Zones =
 						i(10127),	-- Revenant Bracers
 					},
 				}),
---				n(2754, { 	-- Anathemus	}),
 			}),
 		}),
 	}),
