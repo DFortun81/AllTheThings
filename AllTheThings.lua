@@ -2420,14 +2420,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				
-				-- If the item is a relic, then let's compare against equipped relics.
-				if IsArtifactRelicItem(itemID) and app.Settings:GetTooltipSetting("Progress") then
+				if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
+					-- If the item is a relic, then let's compare against equipped relics.
 					local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
 					local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
 					if myArtifactData then
 						local progress, total = 0, 0;
 						local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
-						for itemID,artifactData in pairs(myArtifactData) do
+						for relicID,artifactData in pairs(myArtifactData) do
 							local infoString;
 							for relicSlotIndex,relicData in pairs(artifactData) do
 								if relicData.relicType == relicType then
@@ -2446,7 +2446,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								end
 							end
 							if infoString then
-								local itemLink = select(2, GetItemInfo(itemID));
+								local itemLink = select(2, GetItemInfo(relicID));
 								tinsert(info, 1, { 
 									left = itemLink and ("   " .. itemLink) or RETRIEVING_DATA, 
 									right = L["iLvl"] .. " " .. infoString,
@@ -2454,13 +2454,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 						end
 						if total > 0 then
-							group.total = total;
-							group.progress = progress;
+							tinsert(group, { itemID=itemID, total=total, progress=progress});
 							tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
 						end
 					else
-						group.collectible = true;
-						group.collected = false;
 						tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
 					end
 				end
@@ -2560,8 +2557,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group.g = merged;
 			end
 			
-			group.progress = 0;
-			group.total = 0;
+			group.total = (group.total or 0);
+			group.progress = (group.progress or 0);
 			app.UpdateGroups(group, group.g);
 			if group.collectible then
 				group.total = group.total + 1;
