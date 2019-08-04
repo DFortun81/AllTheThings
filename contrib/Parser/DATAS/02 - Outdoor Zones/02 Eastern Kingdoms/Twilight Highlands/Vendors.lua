@@ -7,6 +7,7 @@ _.Zones =
 		m(241, {	-- Twilight Highlands
 			n(-2,  {	-- Vendors
 				n(50146, {	-- Agatian Fallanos <Shard Trader>
+					["coord"] = { 76.8, 49.4, 241 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(52555, {	-- Hypnotic Dust
@@ -33,6 +34,7 @@ _.Zones =
 					},
 				}),
 				n(50433, {	-- Aristaleon Sunweaver <Cloth Trader>
+					["coord"] = { 75.3, 50.0, 241 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(54440, {	-- Dreamcloth
@@ -56,12 +58,14 @@ _.Zones =
 					},
 				}),
 				n(49605, {	-- Brian Terrel <Bowyer>
+					["coord"] = { 43.8, 57.8, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11308),	-- Sylvan Shortbow
 					},
 				}),
 				n(50382, {	-- Brundall Chiselgut <Metal Trader>
+					["coord"] = { 79.0, 76.6, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(52186, {	-- Elementium Bar
@@ -107,6 +111,7 @@ _.Zones =
 					},
 				}),
 				n(49386, {	-- Craw MacGraw <Wildhammer Clan Quartermaster>
+					["coord"] = { 48.6, 30.6, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(62431),	-- Belt of the Untamed
@@ -123,6 +128,7 @@ _.Zones =
 					},
 				}),
 				n(49387, {	-- Grot Deathblow <Dragonmaw Clan Quartermaster>
+					["coord"] = { 53.8, 42.0, 241 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(62417),	-- Liar's Handwraps
@@ -139,6 +145,7 @@ _.Zones =
 					},
 				}),
 				n(50375, {	-- Kuldar Steeltooth <Metal Trader>
+					["coord"] = { 77.2, 53.0, 241 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(52186, {	-- Elementium Bar
@@ -184,6 +191,7 @@ _.Zones =
 					},
 				}),
 				n(50381, {	-- Misty Merriweather <Hide & Leather Trader>
+					["coord"] = { 78.6, 76.2, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(67095),	-- Pattern: Assassin's Chestplate
@@ -234,6 +242,7 @@ _.Zones =
 					},
 				}),
 				n(50386, {	-- Sal Ferraga <Cloth Trader>
+					["coord"] = { 78.6, 76.8, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(54440, {	-- Dreamcloth
@@ -257,6 +266,7 @@ _.Zones =
 					},
 				}),
 				n(50134, {	-- Senthii <Shard Trader>
+					["coord"] = { 78.6, 77.0, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(52555, {	-- Hypnotic Dust
@@ -283,6 +293,7 @@ _.Zones =
 					},
 				}),
 				n(50172, {	-- Threm Blackscalp <Hide & Leather Trader>
+					["coord"] = { 75.2, 50.0, 241 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(67095),	-- Pattern: Assassin's Chestplate

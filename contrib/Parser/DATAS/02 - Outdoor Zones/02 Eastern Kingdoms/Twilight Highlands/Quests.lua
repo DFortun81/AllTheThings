@@ -1404,6 +1404,24 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48366,	-- Russell Brower
 				}),
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 --[[
 				q(29802),	-- A Hidden Message
 				q(27947, {	-- A Vision of Twilight
@@ -1438,9 +1456,14 @@ _.Zones =
 				q(27584, {	-- Blood in the Surf
 					["races"] = HORDE_ONLY,
 				}),
+				]]--
 				q(27611, {	-- Blood on the Sand
+					["qg"] = 46089,	-- Rok'tar
+					["coord"] = { 78.2, 62.5, 241 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 27607,	-- The Southern Flank
 				}),
+				--[[
 				q(28875, {	-- Bring Down the High Shaman
 					["races"] = HORDE_ONLY,
 				}),
@@ -1552,12 +1575,18 @@ _.Zones =
 				}),
 --]]
 				q(28589, {	-- Everything But the Kitchen Sink
-					["qg"] = 48993,	--
+					["qg"] = 48993,	-- Captain Krazz
+					["coord"] = { 77.6, 16.6, 241 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						28586,	-- Pool Pony Rescue
+						28584,	-- Quality Construction
+						28588,	-- Wildhammer Infestation
+					},
 					["g"] = {
-						i(63864),	--
-						i(63863),	--
-						i(63862),	--
+						i(63864),	-- Gunnery Gloves
+						i(63863),	-- Rivetproof Chestguard
+						i(63862),	-- Tool-Bracing Armguards
 					},
 				}),
 --[[
@@ -1603,9 +1632,13 @@ _.Zones =
 				q(27658, {	-- Help from the Earthcaller
 					["races"] = HORDE_ONLY,
 				}),
+				]]--
 				q(28594, {	-- Highbank, Crybank
+					["qg"] = 49378,	-- Patch
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 28591,	-- Off the Wall
 				}),
+				--[[
 				q(28874, {	-- Hook 'em High
 					["races"] = HORDE_ONLY,
 				}),
@@ -1637,30 +1670,44 @@ _.Zones =
 				}),
 --]]
 				q(28595, {	-- Krazz Works!
-					["qg"] = 49000,	--
+					["qg"] = 49000,	-- Patch
+					["coord"] = { 82.1, 80.0, 241 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						28594,	-- Highbank, Crybank
+						28593,	-- Of Utmost Importance
+						28592,	-- Parting Packages
+					},
 					["g"] = {
-						i(63829),	--
-						i(63828),	--
-						i(63827),	--
-						i(63830),	--
+						i(63829),	-- Shocktrooper Hood
+						i(63828),	-- Aerial Assault Legguards
+						i(63827),	-- Skyshredder Battleplate
+						i(63830),	-- Air Raid Beacon
 					},
 				}),
---[[
 				q(28583, {	-- Krazzworks
+					["qg"] = 46090,	-- Juice Gnugat
+					["coord"] = { 78.4, 62.5, 241 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 27622,	-- Mo' Better Shredder
 				}),
+--[[
 				q(26549, {	-- Madness
 					["races"] = HORDE_ONLY,
 				}),
 --]]
 				q(27622, {	-- Mo' Better Shredder
-					["qg"] = 46090,	--
+					["qg"] = 46090,	-- Juice Gnugat
+					["coord"] = { 78.4, 62.5, 241 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						27611,	-- Blood on the Sand
+						27610,	-- Scouting the Shore
+					},
 					["g"] = {
-						i(63902),	--
-						i(63901),	--
-						i(63900),	--
+						i(63902),	-- Mechano-Assembler Headguard
+						i(63901),	-- Leggings of Shredded Protection
+						i(63900),	-- Shredder-Salvage Spaulders
 					},
 				}),
 --[[
@@ -1687,12 +1734,18 @@ _.Zones =
 					i(63839),	-- Harmlight Token
 					i(63838),	-- Shrine-Cleansing Purifier
 				},
+				]]--
 				q(28593, {	-- Of Utmost Importance
+					["qg"] = 49378,	-- Patch
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 28591,	-- Off the Wall
 				}),
 				q(28591, {	-- Off The Wall
+					["qg"] = 49378,	-- Patch
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 28590,	-- Reprisal
 				}),
+				--[[
 				q(27493, {	-- Ogres & Ettins
 					["races"] = HORDE_ONLY,
 				}),
@@ -1706,13 +1759,14 @@ _.Zones =
 						i(63809),	--
 					},
 				}),
-				q(28592, {	-- Parting Packages (secondary QG ID 49379)
-					["qg"] = 49002,	--
+				q(28592, {	-- Parting Packages
+					["qg"] = 49379,	-- Ticker
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 28591,	-- Off the Wall
 					["g"] = {
-						i(63852),	--
-						i(63851),	--
-						i(63850),	--
+						i(63852),	-- Sharkshield Cover
+						i(63851),	-- Repair Crew Treads
+						i(63850),	-- Krazzworks Climbing Belt
 					},
 				}),
 --[[
@@ -1725,10 +1779,13 @@ _.Zones =
 				q(11882, {	-- Playing with Fire
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(28586, {	-- Pool Pony Rescue
-					["races"] = HORDE_ONLY,
-				}),
 --]]
+				q(28586, {	-- Pool Pony Rescue
+					["qg"] = 49441,	-- Flashbang Rothman
+					["coord"] = { 77.6, 16.6, 241 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 28583,	-- Krazzworks
+				}),
 				q(28090, {	-- Precious Goods
 					["qg"] = 47492,	--
 					["races"] = HORDE_ONLY,
@@ -1752,27 +1809,37 @@ _.Zones =
 				}),
 				]]--
 				q(28584, {	-- Quality Construction
-					["qg"] = 49439,	--
+					["qg"] = 49439,	-- Brett the Bomber
+					["coord"] = { 77.6, 16.6, 241 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 28583,	-- Krazzworks
 					["g"] = {
-						i(63858),	--
-						i(63857),	--
-						i(63856),	--
+						i(63858),	-- Cartographer's Chestguard
+						i(63857),	-- Techie's Hard Hat
+						i(63856),	-- Crazed Pilot's Gloves
 					},
 				}),
---[[
 				q(28590, {	-- Reprisal
+					["qg"] = 48993,	-- Captain Krazz
+					["coord"] = { 77.6, 16.6, 241 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 28589,	-- Everything But the Kitchen Sink
 				}),
+--[[
 				q(26840, {	-- Return to the Highlands
 					["races"] = HORDE_ONLY,
 				}),
 				q(26798, {	-- Saurfang Will be Pleased
 					["races"] = HORDE_ONLY,
 				}),
+				]]--
 				q(27610, {	-- Scouting the Shore
+					["qg"] = 46089,	-- Rok'tar
+					["coord"] = { 78.2, 62.5, 241 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 27607,	-- The Southern Flank
 				}),
+				--[[
 				q(26786, {	-- Securing the Beach Head
 					["races"] = HORDE_ONLY,
 				}),
@@ -1824,12 +1891,18 @@ _.Zones =
 				q(27786, {	-- The Hammer of Twilight
 					["races"] = HORDE_ONLY,
 				}),
+				]]--
 				q(27583, {	-- The Northern Flank
+					["qg"] = 44169,	-- Zaela
+					["coord"] = { 75.3, 54.8, 241 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27607, {	-- The Southern Flank
+					["qg"] = 44169,	-- Zaela
+					["coord"] = { 75.3, 54.8, 241 },
 					["races"] = HORDE_ONLY,
 				}),
+				--[[
 				q(27375, {	-- The Weeping Wound
 					["races"] = HORDE_ONLY,
 				}),
@@ -1895,9 +1968,14 @@ _.Zones =
 				q(28149, {	-- Whispers in the Wind
 					["races"] = HORDE_ONLY,
 				}),
+				]]--
 				q(28588, {	-- Wildhammer Infestation
+					["qg"] = 48993,	-- Captain Krazz
+					["coord"] = { 77.6, 16.6, 241 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 28583,	-- Krazzworks
 				}),
+				--[[
 				q(26619, {	-- You Say You Want a Revolution
 					["races"] = HORDE_ONLY,
 				}),

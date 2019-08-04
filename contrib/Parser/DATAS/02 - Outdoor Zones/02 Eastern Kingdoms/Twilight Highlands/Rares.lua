@@ -7,10 +7,16 @@ _.Zones =
 		m(241, {	-- Twilight Highlands
 			n(-16,  {	-- Rares
 				n(50085, {	-- Overlord Sunderfury
-					i(67244),	-- Sunderfury's Sundries
+					["coord"] = { 58.0, 33.8, 241 },
+					["g"] = {
+						i(67244),	-- Sunderfury's Sundries
+					},
 				}),
 				n(50086, {	-- Tarvus the Vile
-					i(67245),	-- Tarvus's Poison-Scarred Boots
+					["coord"] = { 51.0, 82.4, 241 },
+					["g"] = {
+						i(67245),	-- Tarvus's Poison-Scarred Boots
+					},
 				}),
 			}),
 		}),
