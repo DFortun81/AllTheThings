@@ -12340,7 +12340,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											end
 										end
 										
-										local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeRemaining * 60));
+										local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeLeft * 60));
 										if timeLeft < 30 then
 											description = "|cFFFF0000" .. description .. "|r";
 										elseif timeLeft < 60 then
