@@ -42,12 +42,6 @@ _.Factions =
 				}),
 			}),
 			tier(1, {	-- Classic
-				faction(92, {	-- Gelkis Kolkar
-					["races"] = ALLIANCE_ONLY,
-				}),
-				faction(93, {	-- Magram Kolkar
-					["races"] = ALLIANCE_ONLY,
-				}),
 				faction(589, {	-- Wintersaber Trainers
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -107,7 +101,6 @@ _.Factions =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(1682, {	-- Wyrnn's Vanguard
-					["u"] = 2,				-- Removed in 8.0 Prepatch
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -164,14 +157,6 @@ _.Factions =
 					["races"] = HORDE_ONLY,
 				}),
 				faction(889, {	-- Warsong Outriders
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			tier(1, {	-- Classic
-				faction(92, {	-- Gelkis Kolkar
-					["races"] = HORDE_ONLY,
-				}),
-				faction(93, {	-- Magram Kolkar
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -233,7 +218,6 @@ _.Factions =
 					["races"] = HORDE_ONLY,
 				}),
 				faction(1681, {	-- Vol'jin's Spear
-					["u"] = 2,	-- Removed in 8.0 Prepatch
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -262,7 +246,9 @@ _.Factions =
 		faction(910), 	-- Brood of Nozdormu
 		faction(609), 	-- Cenarion Circle
 		faction(909), 	-- Darkmoon Faire
+		faction(92),	-- Gelkis Clan Centaur
 		faction(749), 	-- Hydraxian Waterlords
+		faction(93),	-- Magram Clan Centaur
 		faction(349), 	-- Ravenholdt
 		un(2, faction(809)),	-- Shen'dralar
 		faction(169, { 	-- Steamwheedle Cartel

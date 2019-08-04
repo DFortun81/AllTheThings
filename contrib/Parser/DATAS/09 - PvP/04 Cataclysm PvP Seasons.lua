@@ -8,18 +8,7 @@ _.PVP =
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
-						["sym"] = {
-							{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
-							{"pop"},	-- Discard the "Cataclysm" header and acquire the children.
-							{"where", "npcID", -672 },	-- Select the "Vicious Gladiator: Season 9" header
-							{"pop"},	-- Discard the "Vicious Gladiator: Season 9" header and acquire the children.
-							{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header
-							{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
-							{"where", "npcID", -319 },	-- Select the "Weapons" header.
-							{"pop"},	-- Discard the "Weapons" header and acquire the children.
-							{"is", "itemID"},
-							{"exclude", "itemID", 146641 }, -- Don't use the Arsenal / Ensamble itself
-						},
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -672, -661 }, },
 					}),
 					i(61360),	-- Vicious Gladiator's Barrier
 					i(61351),	-- Vicious Gladiator's Baton of Light
@@ -55,7 +44,7 @@ _.PVP =
 				}),
 				cl(6, {	-- Death Knight
 					i(146523, {	-- Ensemble: Vicious Gladiator's Dreadplate Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 6 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 6 }, },
 					}),
 					i(60408),	-- Vicious Gladiator's Dreadplate Chestpiece	
 					i(60409),	-- Vicious Gladiator's Dreadplate Gauntlets	
@@ -65,7 +54,7 @@ _.PVP =
 				}),
 				cl(11, {	-- Druid
 					i(146521, {	-- Ensemble: Vicious Gladiator's Dragonhide Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 11 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 11 }, },
 					}),
 					i(60443),	-- Vicious Gladiator's Dragonhide Gloves	
 					i(60444),	-- Vicious Gladiator's Dragonhide Helm	
@@ -85,7 +74,7 @@ _.PVP =
 				}),
 				cl(3, {	-- Hunter
 					i(146519, {	-- Ensemble: Vicious Gladiator's Chain Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 3 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 3 }, },
 					}),
 					i(60423),	-- Vicious Gladiator's Chain Armor
 					i(60424),	-- Vicious Gladiator's Chain Gauntlets
@@ -95,7 +84,7 @@ _.PVP =
 				}),
 				cl(8, {	-- Mage
 					i(146537, {	-- Ensemble: Vicious Gladiator's Silk Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 8 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 8 }, },
 					}),
 					i(60467),	-- Vicious Gladiator's Silk Amice
 					i(60464),	-- Vicious Gladiator's Silk Cowl
@@ -105,7 +94,7 @@ _.PVP =
 				}),
 				cl(2, {	-- Paladin
 					i(146535, {	-- Ensemble: Vicious Gladiator's Scaled Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 2 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 2 }, },
 					}),
 					i(60601),	-- Vicious Gladiator's Ornamented Chestguard
 					i(60602),	-- Vicious Gladiator's Ornamented Gloves
@@ -120,7 +109,7 @@ _.PVP =
 				}),
 				cl(5, {	-- Priest
 					i(146533, {	-- Ensemble: Vicious Gladiator's Satin Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 5 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 5 }, },
 					}),
 					i(60468),	-- Vicious Gladiator's Mooncloth Gloves
 					i(60469),	-- Vicious Gladiator's Mooncloth Helm
@@ -135,7 +124,7 @@ _.PVP =
 				}),
 				cl(4, {	-- Rogue
 					i(146527, {	-- Ensemble: Vicious Gladiator's Leather Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 4 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 4 }, },
 					}),
 					i(60459),	-- Vicious Gladiator's Leather Gloves	
 					i(60460),	-- Vicious Gladiator's Leather Helm	
@@ -145,7 +134,7 @@ _.PVP =
 				}),
 				cl(7, {	-- Shaman
 					i(146531, {	-- Ensemble: Vicious Gladiator's Ringmail Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 7 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 7 }, },
 					}),
 					i(60433),	-- Vicious Gladiator's Linked Armor	
 					i(60434),	-- Vicious Gladiator's Linked Gauntlets	
@@ -165,7 +154,7 @@ _.PVP =
 				}),
 				cl(9, {	-- Warlock
 					i(146525, {	-- Ensemble: Vicious Gladiator's Felweave Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 9 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 9 }, },
 					}),
 					i(60482),	-- Vicious Gladiator's Felweave Amice	
 					i(60479),	-- Vicious Gladiator's Felweave Cowl	
@@ -175,7 +164,7 @@ _.PVP =
 				}),
 				cl(1, {	-- Warrior
 					i(146529, {	-- Ensemble: Vicious Gladiator's Plate Armor
-						["sym"] = { {"sub", "pvp_vicious_gladiator", 1 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 1 }, },
 					}),
 					i(60418),	-- Vicious Gladiator's Plate Chestpiece	
 					i(60419),	-- Vicious Gladiator's Plate Gauntlets	
@@ -434,18 +423,7 @@ _.PVP =
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
-						["sym"] = {
-							{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
-							{"pop"},	-- Discard the "Cataclysm" header and acquire the children.
-							{"where", "npcID", -673 },	-- Select the "Ruthless Gladiator: Season 10" header
-							{"pop"},	-- Discard the "Ruthless Gladiator: Season 10" header and acquire the children.
-							{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header
-							{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
-							{"where", "npcID", -319 },	-- Select the "Weapons" header.
-							{"pop"},	-- Discard the "Weapons" header and acquire the children.
-							{"is", "itemID"},
-							{"exclude", "itemID", 146640 }, -- Don't use the Arsenal / Ensamble itself
-						},
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -673, -661 }, },
 					}),
 					i(70242),	-- Ruthless Gladiator's Barrier
 					i(70235),	-- Ruthless Gladiator's Baton of Light
@@ -481,7 +459,7 @@ _.PVP =
 				}),
 				cl(6, {	-- Death Knight
 					i(146503, {	-- Ensemble: Ruthless Gladiator's Dreadplate Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 6 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 6 }, },
 					}),
 					i(70244),	-- Ruthless Gladiator's Dreadplate Chestpiece
 					i(70245),	-- Ruthless Gladiator's Dreadplate Gauntlets
@@ -491,7 +469,7 @@ _.PVP =
 				}),
 				cl(11, {	-- Druid
 					i(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 11 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 11 }, },
 					}),
 					i(70279),	-- Ruthless Gladiator's Dragonhide Gloves
 					i(70280),	-- Ruthless Gladiator's Dragonhide Helm
@@ -511,7 +489,7 @@ _.PVP =
 				}),
 				cl(3, {	-- Hunter
 					i(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 3 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 3 }, },
 					}),
 					i(70259),	-- Ruthless Gladiator's Chain Armor
 					i(70260),	-- Ruthless Gladiator's Chain Gauntlets
@@ -521,7 +499,7 @@ _.PVP =
 				}),
 				cl(8, {	-- Mage
 					i(146517, {	-- Ensemble: Ruthless Gladiator's Silk Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 8 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 8 }, },
 					}),
 					i(70299),	-- Ruthless Gladiator's Silk Handguards
 					i(70300),	-- Ruthless Gladiator's Silk Cowl
@@ -531,7 +509,7 @@ _.PVP =
 				}),
 				cl(2, {	-- Paladin
 					i(146515, {	-- Ensemble: Ruthless Gladiator's Scaled Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 2 }, },	
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 2 }, },
 					}),
 					i(70353),	-- Ruthless Gladiator's Ornamented Chestguard
 					i(70354),	-- Ruthless Gladiator's Ornamented Gloves
@@ -546,7 +524,7 @@ _.PVP =
 				}),
 				cl(5, {	-- Priest
 					i(146513, {	-- Ensemble: Ruthless Gladiator's Satin Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 5 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 5 }, },
 					}),
 					i(70304),	-- Ruthless Gladiator's Mooncloth Gloves
 					i(70305),	-- Ruthless Gladiator's Mooncloth Helm
@@ -561,7 +539,7 @@ _.PVP =
 				}),
 				cl(4, {	-- Rogue
 					i(146507, {	-- Ensemble: Ruthless Gladiator's Leather Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 4 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 4 }, },
 					}),
 					i(70294),	-- Ruthless Gladiator's Leather Tunic
 					i(70295),	-- Ruthless Gladiator's Leather Gloves
@@ -571,7 +549,7 @@ _.PVP =
 				}),
 				cl(7, {	-- Shaman
 					i(146511, {	-- Ensemble: Ruthless Gladiator's Ringmail Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 7 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 7 }, },
 					}),
 					i(70269),	-- Ruthless Gladiator's Linked Armor
 					i(70270),	-- Ruthless Gladiator's Linked Gauntlets
@@ -591,7 +569,7 @@ _.PVP =
 				}),
 				cl(9, {	-- Warlock
 					i(146505, {	-- Ensemble: Ruthless Gladiator's Felweave Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 9 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 9 }, },
 					}),
 					i(70314),	-- Ruthless Gladiator's Felweave Handguards
 					i(70315),	-- Ruthless Gladiator's Felweave Cowl
@@ -601,7 +579,7 @@ _.PVP =
 				}),
 				cl(1, {	-- Warrior
 					i(146509, {	-- Ensemble: Ruthless Gladiator's Plate Armor
-						["sym"] = { {"sub", "pvp_ruthless_gladiator", 1 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 1 }, },
 					}),
 					i(70254),	-- Ruthless Gladiator's Plate Chestpiece
 					i(70255),	-- Ruthless Gladiator's Plate Gauntlets
@@ -861,18 +839,7 @@ _.PVP =
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
-						["sym"] = {
-							{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
-							{"pop"},	-- Discard the "Cataclysm" header and acquire the children.
-							{"where", "npcID", -674 },	-- Select the "Cataclysmic Gladiator: Season 11" header
-							{"pop"},	-- Discard the "Cataclysmic Gladiator: Season 11" header and acquire the children.
-							{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header
-							{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
-							{"where", "npcID", -319 },	-- Select the "Weapons" header.
-							{"pop"},	-- Discard the "Weapons" header and acquire the children.
-							{"is", "itemID"},
-							{"exclude", "itemID", 146639 }, -- Don't use the Arsenal / Ensamble itself
-						},
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -674, -661 }, },
 					}),
 					i(73468),	-- Cataclysmic Gladiator's Barrier
 					i(73450),	-- Cataclysmic Gladiator's Baton of Light
@@ -908,11 +875,7 @@ _.PVP =
 				}),
 				cl(6, {	-- Death Knight
 					i(146443, {	-- Ensemble: Cataclysmic Gladiator's Dreadplate Armor
-						i(73620),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
-						i(73619),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
-						i(73618),	-- Cataclysmic Gladiator's Dreadplate Helm
-						i(73617),	-- Cataclysmic Gladiator's Dreadplate Legguards
-						i(73616),	-- Cataclysmic Gladiator's Dreadplate Shoulders
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 6 }, },
 					}),
 					i(73620),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
 					i(73619),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
@@ -922,21 +885,7 @@ _.PVP =
 				}),
 				cl(11, {	-- Druid
 					i(146441, {	-- Ensemble: Cataclysmic Gladiator's Dragonhide Armor
-						i(73615),	-- Cataclysmic Gladiator's Dragonhide Gloves
-						i(73614),	-- Cataclysmic Gladiator's Dragonhide Helm
-						i(73613),	-- Cataclysmic Gladiator's Dragonhide Legguards
-						i(73612),	-- Cataclysmic Gladiator's Dragonhide Robes
-						i(73611),	-- Cataclysmic Gladiator's Dragonhide Spaulders
-						i(73607),	-- Cataclysmic Gladiator's Kodohide Gloves
-						i(73606),	-- Cataclysmic Gladiator's Kodohide Helm
-						i(73605),	-- Cataclysmic Gladiator's Kodohide Legguards
-						i(73604),	-- Cataclysmic Gladiator's Kodohide Robes
-						i(73603),	-- Cataclysmic Gladiator's Kodohide Spaulders
-						i(73599),	-- Cataclysmic Gladiator's Wyrmhide Gloves
-						i(73598),	-- Cataclysmic Gladiator's Wyrmhide Helm
-						i(73597),	-- Cataclysmic Gladiator's Wyrmhide Legguards
-						i(73596),	-- Cataclysmic Gladiator's Wyrmhide Robes
-						i(73595),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 11 }, },
 					}),
 					i(73615),	-- Cataclysmic Gladiator's Dragonhide Gloves
 					i(73614),	-- Cataclysmic Gladiator's Dragonhide Helm
@@ -956,11 +905,7 @@ _.PVP =
 				}),
 				cl(3, {	-- Hunter
 					i(146439, {	-- Ensemble: Cataclysmic Gladiator's Chain Armor
-						i(73584),	-- Cataclysmic Gladiator's Chain Armor
-						i(73583),	-- Cataclysmic Gladiator's Chain Gauntlets
-						i(73582),	-- Cataclysmic Gladiator's Chain Helm
-						i(73581),	-- Cataclysmic Gladiator's Chain Leggings
-						i(73580),	-- Cataclysmic Gladiator's Chain Spaulders
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 3 }, },
 					}),
 					i(73584),	-- Cataclysmic Gladiator's Chain Armor
 					i(73583),	-- Cataclysmic Gladiator's Chain Gauntlets
@@ -970,11 +915,7 @@ _.PVP =
 				}),
 				cl(8, {	-- Mage
 					i(146457, {	-- Ensemble: Cataclysmic Gladiator's Silk Armor
-						i(73572),	-- Cataclysmic Gladiator's Silk Amice
-						i(73575),	-- Cataclysmic Gladiator's Silk Cowl
-						i(73576),	-- Cataclysmic Gladiator's Silk Handguards
-						i(73573),	-- Cataclysmic Gladiator's Silk Robe
-						i(73574),	-- Cataclysmic Gladiator's Silk Trousers
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 8 }, },
 					}),
 					i(73572),	-- Cataclysmic Gladiator's Silk Amice
 					i(73575),	-- Cataclysmic Gladiator's Silk Cowl
@@ -984,17 +925,7 @@ _.PVP =
 				}),
 				cl(2, {	-- Paladin
 					i(146455, {	-- Ensemble: Cataclysmic Gladiator's Scaled Armor
-						i(88170),	-- Cataclysmic Gladiator's Ornamented Battlerobe
-						i(73560),	-- Cataclysmic Gladiator's Ornamented Chestguard
-						i(73559),	-- Cataclysmic Gladiator's Ornamented Gloves
-						i(73558),	-- Cataclysmic Gladiator's Ornamented Headcover
-						i(73557),	-- Cataclysmic Gladiator's Ornamented Legplates
-						i(73556),	-- Cataclysmic Gladiator's Ornamented Spaulders
-						i(73571),	-- Cataclysmic Gladiator's Scaled Chestpiece
-						i(73570),	-- Cataclysmic Gladiator's Scaled Gauntlets
-						i(73569),	-- Cataclysmic Gladiator's Scaled Helm
-						i(73568),	-- Cataclysmic Gladiator's Scaled Legguards
-						i(73567),	-- Cataclysmic Gladiator's Scaled Shoulders
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 2 }, },
 					}),
 					i(88170),	-- Cataclysmic Gladiator's Ornamented Battlerobe
 					i(73560),	-- Cataclysmic Gladiator's Ornamented Chestguard
@@ -1010,16 +941,7 @@ _.PVP =
 				}),
 				cl(5, {	-- Priest
 					i(146453, {	-- Ensemble: Cataclysmic Gladiator's Satin Armor
-						i(73549),	-- Cataclysmic Gladiator's Mooncloth Gloves
-						i(73548),	-- Cataclysmic Gladiator's Mooncloth Helm
-						i(73547),	-- Cataclysmic Gladiator's Mooncloth Leggings
-						i(73545),	-- Cataclysmic Gladiator's Mooncloth Mantle
-						i(73546),	-- Cataclysmic Gladiator's Mooncloth Robe
-						i(73544),	-- Cataclysmic Gladiator's Satin Gloves
-						i(73543),	-- Cataclysmic Gladiator's Satin Hood
-						i(73542),	-- Cataclysmic Gladiator's Satin Leggings
-						i(73540),	-- Cataclysmic Gladiator's Satin Mantle
-						i(73541),	-- Cataclysmic Gladiator's Satin Robe
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 5 }, },
 					}),
 					i(73549),	-- Cataclysmic Gladiator's Mooncloth Gloves
 					i(73548),	-- Cataclysmic Gladiator's Mooncloth Helm
@@ -1034,11 +956,7 @@ _.PVP =
 				}),
 				cl(4, {	-- Rogue
 					i(146447, {	-- Ensemble: Cataclysmic Gladiator's Leather Armor
-						i(73526),	-- Cataclysmic Gladiator's Leather Gloves
-						i(73525),	-- Cataclysmic Gladiator's Leather Helm
-						i(73524),	-- Cataclysmic Gladiator's Leather Legguards
-						i(73523),	-- Cataclysmic Gladiator's Leather Spaulders
-						i(73527),	-- Cataclysmic Gladiator's Leather Tunic
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 4 }, },
 					}),
 					i(73526),	-- Cataclysmic Gladiator's Leather Gloves
 					i(73525),	-- Cataclysmic Gladiator's Leather Helm
@@ -1048,21 +966,7 @@ _.PVP =
 				}),
 				cl(7, {	-- Shaman
 					i(146451, {	-- Ensemble: Cataclysmic Gladiator's Ringmail Armor
-						i(73512),	-- Cataclysmic Gladiator's Linked Armor
-						i(73511),	-- Cataclysmic Gladiator's Linked Gauntlets
-						i(73510),	-- Cataclysmic Gladiator's Linked Helm
-						i(73509),	-- Cataclysmic Gladiator's Linked Leggings
-						i(73508),	-- Cataclysmic Gladiator's Linked Spaulders
-						i(73506),	-- Cataclysmic Gladiator's Mail Armor
-						i(73505),	-- Cataclysmic Gladiator's Mail Gauntlets
-						i(73504),	-- Cataclysmic Gladiator's Mail Helm
-						i(73503),	-- Cataclysmic Gladiator's Mail Leggings
-						i(73502),	-- Cataclysmic Gladiator's Mail Spaulders
-						i(73517),	-- Cataclysmic Gladiator's Ringmail Armor
-						i(73516),	-- Cataclysmic Gladiator's Ringmail Gauntlets
-						i(73515),	-- Cataclysmic Gladiator's Ringmail Helm
-						i(73514),	-- Cataclysmic Gladiator's Ringmail Leggings
-						i(73513),	-- Cataclysmic Gladiator's Ringmail Spaulders
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 7 }, },
 					}),
 					i(73512),	-- Cataclysmic Gladiator's Linked Armor
 					i(73511),	-- Cataclysmic Gladiator's Linked Gauntlets
@@ -1082,11 +986,7 @@ _.PVP =
 				}),
 				cl(9, {	-- Warlock
 					i(146445, {	-- Ensemble: Cataclysmic Gladiator's Felweave Armor
-						i(73483),	-- Cataclysmic Gladiator's Felweave Amice
-						i(73486),	-- Cataclysmic Gladiator's Felweave Cowl
-						i(73487),	-- Cataclysmic Gladiator's Felweave Handguards
-						i(73484),	-- Cataclysmic Gladiator's Felweave Raiment
-						i(73485),	-- Cataclysmic Gladiator's Felweave Trousers
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 9 }, },
 					}),
 					i(73483),	-- Cataclysmic Gladiator's Felweave Amice
 					i(73486),	-- Cataclysmic Gladiator's Felweave Cowl
@@ -1096,11 +996,7 @@ _.PVP =
 				}),
 				cl(1, {	-- Warrior
 					i(146449, {	-- Ensemble: Cataclysmic Gladiator's Plate Armor
-						i(73482),	-- Cataclysmic Gladiator's Plate Chestpiece
-						i(73481),	-- Cataclysmic Gladiator's Plate Gauntlets
-						i(73480),	-- Cataclysmic Gladiator's Plate Helm
-						i(73479),	-- Cataclysmic Gladiator's Plate Legguards
-						i(73478),	-- Cataclysmic Gladiator's Plate Shoulders
+						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 1 }, },
 					}),
 					i(73482),	-- Cataclysmic Gladiator's Plate Chestpiece
 					i(73481),	-- Cataclysmic Gladiator's Plate Gauntlets

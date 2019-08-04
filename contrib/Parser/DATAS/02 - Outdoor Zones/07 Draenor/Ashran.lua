@@ -115,81 +115,59 @@ _.Zones =
 					q(38925, {	-- Ashran Dominance
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["u"] = 2,
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-								["g"] = {
-									i(135578),	-- Battle Touched Banner
-									i(135568),	-- Battle Touched Blood of the Fallen
-									i(135574),	-- Battle Touched Blossom
-									i(135573),	-- Battle Touched Chain Link
-									i(135565),	-- Battle Touched Elemental Spark
-									i(135571),	-- Battle Touched Ember
-									i(135576),	-- Battle Touched Fetish
-									i(135570),	-- Battle Touched Helfrost
-									i(135569),	-- Battle Touched Infernal Shard
-									i(135572),	-- Battle Touched Martyr Stone
-									i(134696),	-- Cascading Amice
-									i(134694),	-- Cascading Cord
-									i(134697),	-- Cascading Cuffs
-									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing Armplates
-									i(134711),	-- Crushing Girdle
-									i(134712),	-- Crushing Legguards
-									i(134713),	-- Crushing Pauldrons
-									i(134692),	-- Enveloping Accolade
-									i(134715),	-- Enveloping Badge
-									i(134716),	-- Enveloping Cloak
-									i(134698),	-- Enveloping Distinction
-									i(134709),	-- Enveloping Pendant
-									i(134707),	-- Surging Armbands
-									i(134705),	-- Surging Chain Leggings
-									i(134706),	-- Surging Spaulders
-									i(134704),	-- Surging Waistguard
-									i(134700),	-- Swarming Belt
-									i(134703),	-- Swarming Bindings
-									i(134701),	-- Swarming Legguards
-									i(134702),	-- Swarming Shoulders
-								},
+								i(135578),	-- Battle Touched Banner
+								i(135568),	-- Battle Touched Blood of the Fallen
+								i(135574),	-- Battle Touched Blossom
+								i(135573),	-- Battle Touched Chain Link
+								i(135565),	-- Battle Touched Elemental Spark
+								i(135571),	-- Battle Touched Ember
+								i(135576),	-- Battle Touched Fetish
+								i(135570),	-- Battle Touched Helfrost
+								i(135569),	-- Battle Touched Infernal Shard
+								i(135572),	-- Battle Touched Martyr Stone
+								i(134696),	-- Cascading Amice
+								i(134694),	-- Cascading Cord
+								i(134697),	-- Cascading Cuffs
+								i(134695),	-- Cascading Trousers
+								i(134714),	-- Crushing Armplates
+								i(134711),	-- Crushing Girdle
+								i(134712),	-- Crushing Legguards
+								i(134713),	-- Crushing Pauldrons
+								i(134692),	-- Enveloping Accolade
+								i(134715),	-- Enveloping Badge
+								i(134716),	-- Enveloping Cloak
+								i(134698),	-- Enveloping Distinction
+								i(134709),	-- Enveloping Pendant
+								i(134707),	-- Surging Armbands
+								i(134705),	-- Surging Chain Leggings
+								i(134706),	-- Surging Spaulders
+								i(134704),	-- Surging Waistguard
+								i(134700),	-- Swarming Belt
+								i(134703),	-- Swarming Bindings
+								i(134701),	-- Swarming Legguards
+								i(134702),	-- Swarming Shoulders
 							}),
 						},
 					}),
 					q(38923, {	-- Ashran Dominance
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["u"] = 2,
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-								["g"] = {
-									i(135578),	-- Battle Touched Banner
-									i(135568),	-- Battle Touched Blood of the Fallen
-									i(135574),	-- Battle Touched Blossom
-									i(135573),	-- Battle Touched Chain Link
-									i(135565),	-- Battle Touched Elemental Spark
-									i(135571),	-- Battle Touched Ember
-									i(135576),	-- Battle Touched Fetish
-									i(135570),	-- Battle Touched Helfrost
-									i(135569),	-- Battle Touched Infernal Shard
-									i(135572),	-- Battle Touched Martyr Stone
-									i(134696),	-- Cascading Amice
-									i(134694),	-- Cascading Cord
-									i(134697),	-- Cascading Cuffs
-									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing Armplates
-									i(134711),	-- Crushing Girdle
-									i(134712),	-- Crushing Legguards
-									i(134713),	-- Crushing Pauldrons
-									i(134692),	-- Enveloping Accolade
-									i(134715),	-- Enveloping Badge
-									i(134716),	-- Enveloping Cloak
-									i(134698),	-- Enveloping Distinction
-									i(134709),	-- Enveloping Pendant
-									i(134707),	-- Surging Armbands
-									i(134705),	-- Surging Chain Leggings
-									i(134706),	-- Surging Spaulders
-									i(134704),	-- Surging Waistguard
-									i(134700),	-- Swarming Belt
-									i(134703),	-- Swarming Bindings
-									i(134701),	-- Swarming Legguards
-									i(134702),	-- Swarming Shoulders
+								["sym"] = {
+									{"select", "mapID", 572 },	-- Select the "Draenor" header
+									{"pop"},	-- Discard the "Draenor" header and acquire the children.
+									{"where", "mapID", 588 },	-- Select the "Ashran" header
+									{"pop"},	-- Discard the "Ashran" header and acquire the children.
+									{"where", "questID", 38925 },	-- Select the "Ashran Dominance" quest
+									{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
+									{"where", "itemID", 135546 },	-- Select the "Weapons" header.
+									{"pop"},	-- Discard the "Weapons" header and acquire the children.
+									{"is", "itemID"},
 								},
 							}),
 						},
@@ -205,40 +183,19 @@ _.Zones =
 					q(39096, {	-- Slay Them All!
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["u"] = 2,
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-								["g"] = {
-									i(135578),	-- Battle Touched Banner
-									i(135568),	-- Battle Touched Blood of the Fallen
-									i(135574),	-- Battle Touched Blossom
-									i(135573),	-- Battle Touched Chain Link
-									i(135565),	-- Battle Touched Elemental Spark
-									i(135571),	-- Battle Touched Ember
-									i(135576),	-- Battle Touched Fetish
-									i(135570),	-- Battle Touched Helfrost
-									i(135569),	-- Battle Touched Infernal Shard
-									i(135572),	-- Battle Touched Martyr Stone
-									i(134696),	-- Cascading Amice
-									i(134694),	-- Cascading Cord
-									i(134697),	-- Cascading Cuffs
-									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing Armplates
-									i(134711),	-- Crushing Girdle
-									i(134712),	-- Crushing Legguards
-									i(134713),	-- Crushing Pauldrons
-									i(134692),	-- Enveloping Accolade
-									i(134715),	-- Enveloping Badge
-									i(134716),	-- Enveloping Cloak
-									i(134698),	-- Enveloping Distinction
-									i(134709),	-- Enveloping Pendant
-									i(134707),	-- Surging Armbands
-									i(134705),	-- Surging Chain Leggings
-									i(134706),	-- Surging Spaulders
-									i(134704),	-- Surging Waistguard
-									i(134700),	-- Swarming Belt
-									i(134703),	-- Swarming Bindings
-									i(134701),	-- Swarming Legguards
-									i(134702),	-- Swarming Shoulders
+								["sym"] = {
+									{"select", "mapID", 572 },	-- Select the "Draenor" header
+									{"pop"},	-- Discard the "Draenor" header and acquire the children.
+									{"where", "mapID", 588 },	-- Select the "Ashran" header
+									{"pop"},	-- Discard the "Ashran" header and acquire the children.
+									{"where", "questID", 38925 },	-- Select the "Ashran Dominance" quest
+									{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
+									{"where", "itemID", 135546 },	-- Select the "Weapons" header.
+									{"pop"},	-- Discard the "Weapons" header and acquire the children.
+									{"is", "itemID"},
 								},
 							}),
 						},
@@ -246,40 +203,19 @@ _.Zones =
 					q(39090, {	-- Slay Them All!
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["u"] = 2,
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-								["g"] = {
-									i(135578),	-- Battle Touched Banner
-									i(135568),	-- Battle Touched Blood of the Fallen
-									i(135574),	-- Battle Touched Blossom
-									i(135573),	-- Battle Touched Chain Link
-									i(135565),	-- Battle Touched Elemental Spark
-									i(135571),	-- Battle Touched Ember
-									i(135576),	-- Battle Touched Fetish
-									i(135570),	-- Battle Touched Helfrost
-									i(135569),	-- Battle Touched Infernal Shard
-									i(135572),	-- Battle Touched Martyr Stone
-									i(134696),	-- Cascading Amice
-									i(134694),	-- Cascading Cord
-									i(134697),	-- Cascading Cuffs
-									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing Armplates
-									i(134711),	-- Crushing Girdle
-									i(134712),	-- Crushing Legguards
-									i(134713),	-- Crushing Pauldrons
-									i(134692),	-- Enveloping Accolade
-									i(134715),	-- Enveloping Badge
-									i(134716),	-- Enveloping Cloak
-									i(134698),	-- Enveloping Distinction
-									i(134709),	-- Enveloping Pendant
-									i(134707),	-- Surging Armbands
-									i(134705),	-- Surging Chain Leggings
-									i(134706),	-- Surging Spaulders
-									i(134704),	-- Surging Waistguard
-									i(134700),	-- Swarming Belt
-									i(134703),	-- Swarming Bindings
-									i(134701),	-- Swarming Legguards
-									i(134702),	-- Swarming Shoulders
+								["sym"] = {
+									{"select", "mapID", 572 },	-- Select the "Draenor" header
+									{"pop"},	-- Discard the "Draenor" header and acquire the children.
+									{"where", "mapID", 588 },	-- Select the "Ashran" header
+									{"pop"},	-- Discard the "Ashran" header and acquire the children.
+									{"where", "questID", 38925 },	-- Select the "Ashran Dominance" quest
+									{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
+									{"where", "itemID", 135546 },	-- Select the "Weapons" header.
+									{"pop"},	-- Discard the "Weapons" header and acquire the children.
+									{"is", "itemID"},
 								},
 							}),
 						},

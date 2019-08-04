@@ -660,11 +660,11 @@ _.Zones =
 						n(128756, {	-- Crafticus Mindbender
 							["coord"] = { 54.8, 16.8, 622 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
+								i(137642, {	-- Mark of Honor
+									i(116776),	-- Pale Thorngrazer
 								}),
-								un(2, i(114126)),	-- Disposable Pocket Flying Machine (Rep removed from Medallion of the Legion in hotfix for 8.0)
-								un(2, i(115517)),	-- Wrynn's Vanguard Tabard (Rep removed from Medallion of the Legion in hotfix for 8.0)
+								i(114126),	-- Disposable Pocket Flying Machine
+								i(115517),	-- Wrynn's Vanguard Tabard
 							},
 						}),
 						n(92501, {	-- Dawn-Seeker Kasrek <Apexis Belt Trader>

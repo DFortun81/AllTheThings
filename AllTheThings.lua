@@ -1379,25 +1379,55 @@ local ResolveSymbolicLink;
 (function()
 local subroutines;
 subroutines = {
-	["pvp_cata_gladiator_base"] = function(headerID, classID)
+	["pvp_gear_base"] = function(headerID1, headerID2, headerID3)
 		return {
-			{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
-			{"pop"},	-- Discard the "Cataclysm" header and acquire the children.
-			{"where", "npcID", headerID },	-- Select the Gladiator header
-			{"pop"},	-- Discard the Gladiator header and acquire the children.
-			{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header
-			{"pop"},	-- Discard the "Gladiator PvP Gear" header and acquire the children.
+			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"pop"},	-- Discard the Expansion header and acquire the children.
+			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"pop"},	-- Discard the Season header and acquire the children.
+			{"where", "npcID", headerID3 },	-- Select the Set header
+		};
+	end,
+	["pvp_gear_faction_base"] = function(headerID1, headerID2, headerID3, headerID4)
+		return {
+			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"pop"},	-- Discard the Expansion header and acquire the children.
+			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"pop"},	-- Discard the Season header and acquire the children.
+			{"where", "npcID", headerID3 },	-- Select the Faction header
+			{"pop"},	-- Discard the Faction header and acquire the children.
+			{"where", "npcID", headerID4 },	-- Select the Set header
+		};
+	end,
+	-- Set Gear	
+	["pvp_set_ensemble"] = function(headerID1, headerID2, headerID3, classID)
+		return {
+			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"pop"},	-- Discard the Expansion header and acquire the children.
+			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"pop"},	-- Discard the Season header and acquire the children.
+			{"where", "npcID", headerID3 },	-- Select the Set header
+			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
 			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
 		};
 	end,
-	["pvp_ruthless_gladiator"] = function(classID)
-		return { ["sym"] = { {"sub", "pvp_cata_gladiator_base", -673, classID }, }, };
-	end,
-	["pvp_vicious_gladiator"] = function(classID)
-		return { ["sym"] = { {"sub", "pvp_cata_gladiator_base", -672, classID }, }, };
+	-- Weapons
+	["pvp_weapons_ensemble"] = function(headerID1, headerID2, headerID3)
+		return {
+			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"pop"},	-- Discard the Expansion header and acquire the children.
+			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"pop"},	-- Discard the Season header and acquire the children.
+			{"where", "npcID", headerID3 },	-- Select the Set header
+			{"pop"},	-- Discard the Set header and acquire the children.
+			{"where", "npcID", -319 },	-- Select the "Weapons" header.
+			{"pop"},	-- Discard the class header and acquire the children.
+			{"is", "itemID"},
+			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+		};
 	end,
 	["legion_relinquished_base"] = function()
 		return {

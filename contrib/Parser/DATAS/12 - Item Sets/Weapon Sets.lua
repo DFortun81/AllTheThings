@@ -422,18 +422,7 @@ _.GearSets =
 							i(61350),	-- Vicious Gladiator's Touch of Defeat
 						}),
 						i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
-							["sym"] = {
-								{"select", "npcID", -9979 },	-- Select the "Cataclysm" header
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "npcID", -673 },	-- Select the "Ruthless Gladiator: Season 10" header
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "npcID", -661 },	-- Select the "Gladiator PvP Gear" header.
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "npcID", -319 },	-- Select the "Weapons" header.
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"is", "itemID"},
-								{"not", "itemID", 146640 }, -- Don't use the Arsenal / Ensamble itself
-							},
+							["sym"] = { {"sub", "pvp_weapons_base", -9979, -673, -661 }, },
 						}),
 						i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["g"] = {

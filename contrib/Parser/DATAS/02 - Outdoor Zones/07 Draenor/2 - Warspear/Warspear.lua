@@ -791,11 +791,11 @@ _.Zones =
 						n(128759, {	-- Dazzerian <Warspear Quartermaster>
 							["coord"] = { 49.2, 55.0, 624 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									un(2, i(116775)),	-- Breezestrider Stallion (Rep removed from Medallion of the Legion in hotfix for 8.0)
+								i(137642, {	-- Mark of Honor
+									i(116775),	-- Breezestrider Stallion
 								}),
-								un(2, i(115500)),	-- Disposable Pocket Flying Machine (Rep removed from Medallion of the Legion in hotfix for 8.0)
-								un(2, i(115518)),	-- Vol'jin's Spear Tabard (Rep removed from Medallion of the Legion in hotfix for 8.0)
+								i(115500),	-- Disposable Pocket Flying Machine
+								i(115518),	-- Vol'jin's Spear Tabard
 							},
 						}),
 						n(93908, {	-- Fobbly Kickfix <Wild Combatant>
