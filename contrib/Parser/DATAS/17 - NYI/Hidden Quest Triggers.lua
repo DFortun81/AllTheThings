@@ -63,6 +63,11 @@ _.NeverImplemented =
 		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
 		
 		-------------------
+		--   CATACLYSM   --
+		-------------------
+		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
+		
+		-------------------
 		--      WOD      --
 		-------------------
 		q(37187),	-- The Dark Portal

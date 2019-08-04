@@ -1072,6 +1072,11 @@ _.Zones =
 					["coord"] = { 50.6, 74.0, 76 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28849,	-- Twilight Skies
+					["g"] = {
+						i(63870),	-- Hull-Shatter Shoulders
+						i(63869),	-- Bracers of the Lost Leader
+						i(63868),	-- Skyfallen Plate Belt
+					},
 				}),
 				q(14135, {	-- Up a Tree
 					["races"] = HORDE_ONLY,

@@ -58,7 +58,7 @@ _.Zones =
 				}),
 				q(31974, {	-- Goz Banefury
 					["qg"] = 66822,	-- Goz Banefury
-					["coord"] = { 56.6, 56.8, 241 },
+					["coord"] = { 56.5, 56.7, 241 },
 					["isDaily"] = true,
 				}),
 			}),

@@ -42,6 +42,15 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(5501, {	-- Fading into Twilight (Horde)
+					["collectible"] = false,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {	-- Goblin Work Ethic
+							["sourceQuests"] = { 26337 },	-- Beating the Market
+						}),
+					},
+				}),
 				ach(5448),	-- Glutton for Fiery Punishment
 				ach(5546),	-- Glutton for Icy Punishment
 				ach(5547),	-- Glutton for Shadowy Punishment

@@ -12,12 +12,33 @@ _.Zones =
 				ach(5482, {	-- Dragonmaw Tour of Duty
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1),	-- High Shaman MacKilligan slain
-						crit(2),	-- Dillan MacHurley slain
-						crit(3),	-- Gunwald Greybeard slain
-						crit(4),	-- Cliff Thundermar slain
-						crit(5),	-- The Black Recluse spider slain
-						crit(6),	-- Korthalon the Black slain
+						crit(1, {	-- High Shaman MacKilligan slain
+							["creatureID"] = 46885,
+							["coord"] = { 45.8, 33.6, 241 },
+						}),
+						crit(2, {	-- Dillan MacHurley slain
+							["creatureID"] = 46378,
+							["coords"] = {
+								{ 45.0, 37.6, 241 },
+								{ 46.8, 36.8, 241 },
+							},
+						}),
+						crit(3, {	-- Gunwald Greybeard slain
+							["creatureID"] = 46376,
+							["coord"] = { 45.2, 42.8, 241 },
+						}),
+						crit(4, {	-- Cliff Thundermar slain
+							["creatureID"] = 46377,
+							["coord"] = { 52.8, 28.2, 241 },
+						}),
+						crit(5, {	-- The Black Recluse spider slain
+							["creatureID"] = 47115,
+							["coord"] = { 45.8, 31.6, 241 },
+						}),
+						crit(6, {	-- Korthalon the Black slain
+							["creatureID"] = 47171,
+							["coord"] = { 52.0, 27.6, 241 },
+						}),
 					},
 				}),
 				ach(4873, {	-- Fading into Twilight (Alliance)
@@ -59,7 +80,10 @@ _.Zones =
 							["sourceQuests"] = { 28595 },	-- Krazz Works!
 						}),
 						crit(4, {	-- The Dragonmaw
-							["sourceQuests"] = { 28133 },	-- Fury Unbound
+							["sourceQuests"] = {
+								28133,	-- Fury Unbound
+								27945,	-- Paint it Black
+							},
 						}),
 						crit(5, {	-- The Eye of Twilight
 							["sourceQuests"] = { 27955 },	-- Eye Spy
@@ -67,8 +91,12 @@ _.Zones =
 						crit(6, {	-- The Attack Begins
 							["sourceQuests"] = { 28247 },	-- Last of Her Kind
 						}),
-						crit(7, {	-- Send Them Packing
-							["sourceQuests"] = { 27662 },	-- Unbinding
+						crit(7, {	-- Send Them Packing (TODO: Need to verify this. popped for me at the same time as Skullcrusher the Mountain)
+							["sourceQuests"] = {
+								27659,	-- Portal Overload
+								27788,	-- Skullcrusher the Mountain
+								27662,	-- Unbinding
+							},
 						}),
 					},
 				}),
@@ -94,10 +122,25 @@ _.Zones =
 				ach(5481, {	-- Wildhammer Tour of Duty
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- Warlord Halthar slain
-						crit(2),	-- Karkrog the Exterminator slain
-						crit(3),	-- The Black Recluse spider slain
-						crit(4),	-- Korthalon the Black slain
+						crit(1, {	-- Warlord Halthar slain
+							["crs"] = { 46493 },
+							["coord"] = { 49.0, 37.2, 241 },
+						}),
+						crit(2, {	-- Karkrog the Exterminator slain
+							["crs"] = { 46756 },
+							["coords"] = {
+								{ 50.8, 33.8, 241 },
+								{ 51.6, 33.0, 241 },
+							},
+						}),
+						crit(3, {	-- The Black Recluse spider slain
+							["crs"] = { 47115 },
+							["coord"] = { 45.8, 31.6, 241 },
+						}),
+						crit(4, {	-- Korthalon the Black slain
+							["crs"] = { 47171 },
+							["coord"] = { 52.0, 27.6, 241 },
+						}),
 					},
 				}),
 			}),
