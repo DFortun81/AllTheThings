@@ -2853,9 +2853,15 @@ fieldConverters = {
 	end,
 };
 CacheFields = function(group)
+	local n = 0;
+	local clone = {};
 	for key,value in pairs(group) do
-		_cache = rawget(fieldConverters, key);
-		if _cache then _cache(group, value); end
+		n = n + 1
+		rawset(clone, n, key);
+	end
+	for i=1,n,1 do
+		_cache = rawget(fieldConverters, rawget(clone, i));
+		if _cache then _cache(group, rawget(group, rawget(clone, i))); end
 	end
 end
 end)();
@@ -2970,6 +2976,8 @@ local function SearchForLink(link)
 		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
 		if kind == "itemid" then
 			return SearchForField("itemID", id);
+		elseif kind == "sourceid" or kind == "s" then
+			return SearchForField("s", id);
 		elseif kind == "questid" or kind == "quest" then
 			return SearchForField("questID", id);
 		elseif kind == "creatureid" or kind == "npcid" then
