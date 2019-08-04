@@ -12331,7 +12331,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											end
 										end
 										
-										local description = BONUS_OBJECTIVE_TIME_LEFT:format(date("%H:%M", time() + (timeLeft * 60)));
+										local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeRemaining * 60));
 										if timeLeft < 30 then
 											description = "|cFFFF0000" .. description .. "|r";
 										elseif timeLeft < 60 then
@@ -12520,7 +12520,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							
 							local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
 							if timeRemaining and timeRemaining > 0 then
-								local description = BONUS_OBJECTIVE_TIME_LEFT:format(date("%H:%M", time() + (timeRemaining * 60)));
+								local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeRemaining * 60));
 								if timeRemaining < 30 then
 									description = "|cFFFF0000" .. description .. "|r";
 								elseif timeRemaining < 60 then
