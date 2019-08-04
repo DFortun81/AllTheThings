@@ -13,42 +13,45 @@ _.Zones =
 							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["altQuests"] = {
+							["repeatable"] = true,
+							--[[["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
 								29482,	-- Transmutation Master
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},								
+							},]]								
 						}),
 						q(29067, {	-- Potion Master
 							["qg"] = 5499,	-- Lilyssia Nightbreeze (Stormwind)
 							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["altQuests"] = {
+							["repeatable"] = true,
+							--[[["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
 								29482,	-- Transmutation Master
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},	
+							},]]
 						}),
 						q(29482, {	-- Transmutation Master
 							["qg"] = 5499,	-- Lilyssia Nightbreeze (Stormwind)
 							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["altQuests"] = {
+							["repeatable"] = true,
+							--[[["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
 								29482,	-- Transmutation Master
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},								
+							},]]							
 						}),
 					}),
 				}),
@@ -151,6 +154,7 @@ _.Zones =
 							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
 							["requireSkill"] = 202,	-- Engineering
 							["lvl"] = 20,
+							["repeatable"] = true,
 						}),
 						q(29475, {	-- Goblin Engineering
 							["qg"] = 5518,	-- Lilliam Sparkspindle
@@ -158,6 +162,7 @@ _.Zones =
 							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
 							["requireSkill"] = 202,	-- Engineering
 							["lvl"] = 20,
+							["repeatable"] = true,
 						}),
 					}),
 				}),

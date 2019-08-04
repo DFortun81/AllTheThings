@@ -13,42 +13,45 @@ _.Zones =
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy	
-							["altQuests"] = {
+							["repeatable"] = true,
+							--[[["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
 								29482,	-- Transmutation Master
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},								
+							},]]								
 						}),
 						q(29067, {	-- Potion Master
 							["qg"] = 4611,	-- Doctor Herbert Halsey (Undercity)
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["altQuests"] = {
+							["repeatable"] = true,
+							--[[["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
 								29482,	-- Transmutation Master
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},	
+							},]]
 						}),
 						q(29482, {	-- Transmutation Master
 							["qg"] = 4611,	-- Doctor Herbert Halsey (Undercity)
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["altQuests"] = {
+							["repeatable"] = true,
+							--[[["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
 								29482,	-- Transmutation Master
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},								
+							},]]							
 						}),
 					}),
 				}),

@@ -13,42 +13,45 @@ _.Zones =
 							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy	
-							["altQuests"] = {
+							["repeatable"] = true,
+							--[[["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
 								29482,	-- Transmutation Master
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},								
+							},]]							
 						}),
 						q(29067, {	-- Potion Master
 							["qg"] = 3347,	-- Yelmak (Orgrimmar)
 							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["altQuests"] = {
+							["repeatable"] = true,
+							--[[["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
 								29482,	-- Transmutation Master
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},	
+							},]]
 						}),
 						q(29482, {	-- Transmutation Master
 							["qg"] = 3347,	-- Yelmak (Orgrimmar)
 							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
-							["altQuests"] = {
+							["repeatable"] = true,
+							--[[["altQuests"] = {
 								29481,	-- Elixir Master
 								29067,	-- Potion Master
 								29482,	-- Transmutation Master
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},								
+							},]]							
 						}),
 					}),
 				}),
@@ -222,6 +225,7 @@ _.Zones =
 							["requireSkill"] = 202,	-- Engineering
 							["races"] = HORDE_ONLY,
 							["lvl"] = 20,
+							["repeatable"] = true,
 						}),
 						q(29475, {	-- Goblin Engineering
 							["qg"] = 11017,	-- Roxxik
@@ -230,6 +234,7 @@ _.Zones =
 							["requireSkill"] = 202,	-- Engineering
 							["races"] = HORDE_ONLY,
 							["lvl"] = 20,
+							["repeatable"] = true,
 						}),
 					}),
 				}),
