@@ -586,7 +586,7 @@ _.Zones =
 				}),
 				n(150448, {	-- Reclamaton Rig
 				-- TO DO: figure out which rig quest to attach to this, if any.  separate quests for each box/reward?  one quest attached to the overall NPC?  there are reclamation rig quests in the 'quests' file; should they be moved here/attached in this area?
-				-- figure out if there is a separate npcID that needs to be attached for the rig prior to being built.  (150448 is once it's been built)
+					["creatureID"] = 150451,	-- Reclamation Rig (before being built)
 					["coord"] = { 70.0, 61.5, 1462 },
 					["g"] = {
 						i(168394, {	-- Box of Assorted Parts
@@ -628,6 +628,23 @@ _.Zones =
 							["g"] = {
 								i(169879),	-- Melted Irradiated Undercoat (PET!)
 							},
+						}),
+						i(168264, {	-- Recycling Requisition(Green)
+							i(169167),	-- Blueprint: Orange Spraybot
+							i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+								crit(37, {	-- Re-Procedurally Genereated Punchcard
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							}),
+							i(167795, {	-- Paint Vial: Copper Trim
+								["questID"] = 55456,	-- Paint Vial: Copper Trim
+								["g"] = {
+									crit(4, {	-- Copper Trim
+										["achievementID"] = 13513,	-- Available in Eight Colors
+									}),
+								},
+							}),
+							i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 						}),
 					},
 				}),

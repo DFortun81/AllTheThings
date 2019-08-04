@@ -418,7 +418,7 @@ _.Zones =
 					},
 				}),
 				q(56423, {	-- Large Storage Fragment
-				--	one-time?  repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies
+				--	repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies.  i've only recieved this item on data anomaly day.  i think the first time i got it was from just looting a normal mob, the second time was from a blue box of assorted parts from the reclamation rig
 					["itemID"] = 169593,	-- Large Storage Fragment
 				}),
 				q(56305, {	-- Let's Fish!
@@ -958,6 +958,10 @@ _.Zones =
 					["coord"] = { 73.8, 26.0, 1462 },
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
+				}),
+				q(56424, {	-- Rust Covered Disc
+				--	repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies.  i've only recieved this item on data anomaly day.  received from a green recycling box from the reclamation rig
+					["itemID"] = 169594,	-- Rust Covered Disc
 				}),
 				q(55096, {	-- Send My Father a Message
 					["qg"] = 153670,	-- Rustbolt Resistance Fighter (Prinze Erazmin)
