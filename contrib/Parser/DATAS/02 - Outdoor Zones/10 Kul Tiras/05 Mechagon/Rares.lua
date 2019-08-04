@@ -583,6 +583,50 @@ _.Zones =
 						i(170468),	-- Supervolt Zapper
 					},
 				}),
+				n(150448, {	-- Reclamaton Rig
+				-- TO DO: figure out which rig quest to attach to this, if any.  separate quests for each box/reward?  one quest attached to the overall NPC?  there are reclamation rig quests in the 'quests' file; should they be moved here/attached in this area?
+				-- figure out if there is a separate npcID that needs to be attached for the rig prior to being built.  (150448 is once it's been built)
+					i(168394, {	-- Box of Assorted Parts
+						["g"] = {
+							i(169396),	-- Echoing Oozeling (PET!)
+							i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
+								i(169844),	-- Azeroth Mini: Overspark
+								i(169852),	-- Azeroth Mini: Blastatron
+								i(169851),	-- Azeroth Mini: Cogstar
+								i(169845),	-- Azeroth Mini: HK-8
+								i(169846),	-- Azeroth Mini: King Mechagon *slumber note: this pack dropped from a mechanized chest for me and contained this mini
+							}),
+						},
+					}),
+					i(168395, {	-- Irradiated Box of Assorted Parts
+						["description"] = "During the Reclamation Rig event, use the Supercollider on each Irradiated Elemental to make them unstable.  If you complete the hardmode event correctly, you'll face three Unstable Irradiated Golems at the end of the encounter.",
+						["g"] = {
+							i(168495, {	-- Blueprint: Rustbolt Requisitions
+								["questID"] = 55074,
+								["g"] = {
+									crit(20, {	-- Rustbolt Requisitions
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								},
+							}),
+							i(169396),	-- Echoing Oozeling
+							i(169692, {    -- Vinyl: Triumph of Gnomeregan
+								["questID"] = 56519,    -- Triumph of Gnomeregan
+								["g"] = {
+									crit(6, {    -- Triumph of Gnomeregan
+										["achievementID"] = 13686,    -- Junkyard Melomanic
+									}),
+								},
+							}),
+						},
+					}),
+					i(169878, {	-- Irradiated Undercoat
+						["description"] = "This shirt can drop from mobs during the Reclamation Rig event.  Equip it, collect 100 Unstable Isotopes from attacking more of the event mobs, and then use the shirt to absorb the isotopes.  You can only absorb isotopes once every 24 hours, and you'll get the pet after you use all five of the shirt's charges.",
+						["g"] = {
+							i(169879),	-- Melted Irradiated Undercoat (PET!)
+						},
+					}),
+				}),
 				n(150575, {	-- Rumblerocks
 					["questID"] = 55368,
 					["coord"] = { 39.9, 53.2, 1462 },
