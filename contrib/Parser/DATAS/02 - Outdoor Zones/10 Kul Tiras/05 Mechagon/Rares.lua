@@ -426,6 +426,7 @@ _.Zones =
 					},
 				}),
 				n(152007, {	-- Killsaw
+					["description"] = "This rare doesn't spawn on days when the Venture Co. invades the Fleeting Forest.",
 					["questID"] = 55369,
 					["coords"] = {
 						{ 42.6, 48.7, 1462 },
