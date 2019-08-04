@@ -12,22 +12,6 @@ _.Zones =
 					Scrappy can be found at (70.5,30.5) and requires an energy cell to revive him
 					R33-DR - 63.4, 57.0 interactive "data analyzer" npc. Possibly part of a puzzle?
 				]]--
-				q(55575, {	-- One Gnome's Trash
-					["qg"] = 152499,	-- Moxie Lockspinner
-					["coord"] = { 73.6, 34.6, 1462 },
-					["isDaily"] = true,
-					["g"] = {
-						i(168204, {	-- Small Metal Box
-								["description"] = "Small Metal Boxes can be collected when using the Rare Metal Collector",
-								["g"] = {
-									i(170148, {	-- Paint Bottle: Electric Blue
-										["questID"] = 56909,
-										
-									}),
-								},
-						}),
-					},
-				}),
 				q(56493, {	-- A Direct Approach
 					["qg"] = 155188,	-- Scrollsage Nola
 					["coord"] = { 72.2, 37.2, 862 },
@@ -39,6 +23,7 @@ _.Zones =
 					},
 				}),
 				q(55688, {	-- A Growing Mystery
+					["description"] = "This quest is only available if you pick up the clue from the |cFFFfffffDirt Pile|r while on |cFFefc400Clues Abound|r.",
 					["isDaily"] = true,
 					["g"] = {
 						crit(5, {	-- A Growing Mystery
@@ -52,9 +37,9 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(55672, {	-- A Historical Mess
+					["description"] = "This quest is only available if you pick up the clue from the |cFFffffffWaterlogged Scroll Case|r while on |cFFefc400Clues Abound|r.",
 					["qg"] = 152633,	-- Sir Finley Mrrgglton
 					["isDaily"] = true,
-					["sourceQuests"] = { 55658 },	-- Clues Abound
 					["g"] = {
 						crit(4, {	-- A Historical Mess
 							["achievementID"] = 13556,	-- Outside Influences
@@ -197,6 +182,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(55658, {	-- Clues Abound
+					["description"] = "Depending on which clue you pick up, the follow-ups to this quest fulfill different achievement criteria for |cFFf0ef00Outside Influences|r.\n\n|cFFffffffDirt Pile|r > |cFFefc400A Growing Mystery|r\n|cFFffffffHearthstone Card|r > |cFFefc400Time for Heroics|r > |cFFefc400Deck 'Em|r\n|cFFffffffWaterlogged Scroll Case|r > |cFFefc400A Historical Mess|r\n\nWhile on any of the follow-up quests, |cFFcc4d38Congealed Oil|r has a chance to drop an item that will start |cFFefc400Pirates? I Hate Those Guys!|r and |cFFcc4d38Toxic Lurkers|r have a chance to drop an item that will start |cFFefc400Strange Discovery|r.\n",
 					["qg"] = 152501,	-- Elise Starseeker
 					["coord"] = { 70.4, 31.0, 1462 },
 					["isDaily"] = true,
@@ -240,16 +226,15 @@ _.Zones =
 					["coord"] = { 73.1, 33.3, 1462 },
 					["sourceQuest"] = 55707,	-- First One's Free
 				}),
-				{
+				q(56421, {	-- Cracked Numeric Cylinder
 					["itemID"] = 169591,	-- Cracked Numeric Cylinder
-					["questID"] = 56421,	-- Cracked Numeric Cylinder
 					["sourceQuest"] = 56410,	-- Discs of Norgannon
 					["isDaily"] = true,
-				},
-				q(56049, {	-- Deck 'Em -- only available during "Time for Heroics" ?
+				}),
+				q(56049, {	-- Deck 'Em
+					["sourceQuests"] = { 55717 },	-- Time for Heroics
 					["qg"] = 153538,	-- Adalin Halfheight
 					["coord"] = { 75.2, 69.8, 862 },
-					["races"] = HORDE_ONLY,	-- QG is tauren. probably horde only? verify this
 					["g"] = {
 						crit(8, {	-- Deck 'Em
 							["achievementID"] = 13556,	-- Outside Influences
@@ -260,15 +245,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 58.9, 31.7, 1462 },
 					["qg"] = 153750,	-- Koupal Oilshins
-				}),
-				q(56518, {	-- Vinyl: Depths of Ulduar
-				--	["questID"] = 56518,	-- Vinyl: Depths of Ulduar
-					["coord"] = { 70.3, 30.2, 862 },
-					["g"] = {
-						crit(5, {	-- Junkyard Melomaniac
-							["achievementID"] = 13686,
-						}),
-					},
 				}),
 				q(56410, {	-- Discs of Norgannon
 					["qg"] = 154982,	-- Archivist Bitbyte
@@ -521,6 +497,14 @@ _.Zones =
 						crit(2, {	-- One Gnome's Trash
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
+						i(168204, {	-- Small Metal Box
+							["description"] = "Small Metal Boxes can be collected when using the Rare Metal Collector.",
+							["g"] = {
+								i(170148, {	-- Paint Bottle: Electric Blue
+									["questID"] = 56909,
+								}),
+							},
+						}),
 					},
 				}),
 				q(55609, {	-- Operation: Mechagon - The Mechoriginator
@@ -563,37 +547,19 @@ _.Zones =
 						}),
 					},
 				}),
-				q(55456, {	-- Paint Vial: Copper Trim
-					crit(4, {	-- Copper Trim
-						["achievementID"] = 13513,	-- Available in Eight Colors
-					}),
-				}),
-				q(55451, {	-- Paint Vial: Fireball Red
-				--	["description"] = "This item can drop from any of the Mechanized Chests in the zone.",
-					["g"] = {
-						crit(6, {	-- Available in Eight Colors
-							["achievementID"] = 13513,
-						}),
-					},
-				}),
-				q(55457, {	-- Paint Vial: Overload Orange
-					["g"] = {
-						crit(7, {	-- Available in Eight Colors
-							["achievementID"] = 13513,
-						}),
-					},
-				}),
 				i(169864, {	-- Old Pirate Hat
-					["description"] = "You need to be on one of the following quests \"A Growing Mytery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get the item.",
+					["description"] = "You need to be on either \"A Growing Mytery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get this item.",
 					["crs"] = { 150698 },	-- Congealed Oil
 					["g"] = {
 						q(56469, {	-- Pirates? I Hate Those Guys!
 							["isDaily"] = true,
 							["g"] = {
-								ach(13556, crit(10)),	-- Outside Influences / Pirates? I Hate Those Guys!
+								crit(10, {	-- Pirates? I Hate Those Guys!
+									["achievementID"] = 13556,	-- Outside Influencesw
+								}),
 							},
 						}),
-					}
+					},
 				}),
 				q(56184, {	-- Pirates, Sea Monsters, Robots
 					["qg"] = 154335,	-- Dread Captain DeMeza
@@ -723,9 +689,12 @@ _.Zones =
 									}),
 								}),
 								i(167795, {	-- Paint Vial: Copper Trim
-									crit(4, {	-- Copper Trim
-										["achievementID"] = 13513,	-- Available in Eight Colors
-									}),
+									["questID"] = 55456,	-- Paint Vial: Copper Trim
+									["g"] = {
+										crit(4, {	-- Copper Trim
+											["achievementID"] = 13513,	-- Available in Eight Colors
+										}),
+									},
 								}),
 								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
@@ -736,8 +705,19 @@ _.Zones =
 										["achievementID"] = 13479,	-- Junkyard Architect
 									}),
 								}),
-								i(167795),	-- Paint Vial: Copper Trim
-								i(169689),	-- Vinyl: Mimiron's Brainstorm
+								i(167795, {	-- Paint Vial: Copper Trim
+									["questID"] = 55456,	-- Paint Vial: Copper Trim
+									["g"] = {
+										crit(4, {	-- Copper Trim
+											["achievementID"] = 13513,	-- Available in Eight Colors
+										}),
+									},
+								}),
+								i(169689, {	-- Vinyl: Mimiron's Brainstorm
+									crit(3, {	-- Mimiron's Brainstorm
+										["achievementID"] = 13686,    -- Junkyard Melomanic
+									}),
+                                }),
 								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
 									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
 									["groups"] = {
@@ -786,7 +766,11 @@ _.Zones =
 										["achievementID"] = 13513,	-- Available in Eight Colors
 									}),
 								}),
-								i(169689),	-- Vinyl: Mimiron's Brainstorm
+								i(169689, {	-- Vinyl: Mimiron's Brainstorm
+									crit(3, {	-- Mimiron's Brainstorm
+										["achievementID"] = 13686,    -- Junkyard Melomanic
+									}),
+								}),
 								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
 									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
 									["groups"] = {
@@ -1005,13 +989,15 @@ _.Zones =
 					},
 				}),
 				i(168256, {	-- Night Elf Ring
-					["description"] = "You need to be on one of the following quests \"A Growing Mytery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get the item.",
+					["description"] = "You need to be on either \"A Growing Mytery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get this item.",
 					["crs"] = { 152653 },	-- Toxic Lurker
 					["g"] = {
 						q(55718, {	-- Strange Discovery
 							["isDaily"] = true,
 							["g"] = {
-								ach(13556, crit(7)),	-- Outside Influences / Strange Discovery
+								crit(7, {	-- Strange Discovery
+									["achievementID"] = 13556,	-- Outside Influences
+								}),
 							},
 						}),
 					},
@@ -1119,9 +1105,9 @@ _.Zones =
 					["sourceQuest"] = 55298,	-- Fishing For Something Bigger
 				}),
 				q(55717, {	-- Time for Heroics
+					["description"] = "This quest is only available if you pick up the clue from the |cFFffffffHearthstone Card|r while on |cFFefc400Clues Abound|r.",
 					["qg"] = 152633,	-- Sir Finley Mrrgglton
 					["isDaily"] = true,
-					["sourceQuest"] = 55658,	-- Clues Abound
 					["g"] = {
 						crit(6, {	-- Time for Heroics
 							["achievementID"] = 13556,	-- Outside Influences

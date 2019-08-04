@@ -37,7 +37,7 @@ _.Zones =
 					}),
 				}),
 				n(-850, {	-- Mechanized Chest
-					o(325659, {	-- Mechanized Chest.
+					o(325659, {	-- Mechanized Chest
 						["questID"] = 55547,
 						["isDaily"] = true,
 						["coords"] = {
@@ -48,7 +48,7 @@ _.Zones =
 							{ 43.5, 49.9, 1462 },
 						},
 					}),
-					o(325660, {	-- Mechanized Chest.
+					o(325660, {	-- Mechanized Chest
 						["questID"] = 55548,
 						["isDaily"] = true,
 						["coords"] = {
@@ -58,7 +58,7 @@ _.Zones =
 							{ 20.7, 71.3, 1462 },
 						},
 					}),
-					o(325661, {	-- Mechanized Chest.
+					o(325661, {	-- Mechanized Chest
 						["questID"] = 55549,
 						["isDaily"] = true,
 						["coords"] = {
@@ -69,7 +69,7 @@ _.Zones =
 							{ 80.5, 48.5, 1462 },
 						},
 					}),
-					o(325662, {	-- Mechanized Chest.
+					o(325662, {	-- Mechanized Chest
 						["questID"] = 55550,
 						["isDaily"] = true,
 						["coords"] = {
@@ -80,10 +80,10 @@ _.Zones =
 							{ 81.1, 61.5, 1462 },
 						},
 					}),
-					o(325663, {	-- Mechanized Chest.
+					o(325663, {	-- Mechanized Chest
 						["questID"] = 55551,
 						["isDaily"] = true,
-						["description"] = "Spawns in the future version of Mechagon",
+						["description"] = "Spawns in the future version of Mechagon.",
 						["coords"] = {
 							{ 61.6, 32.5, 1462 },
 							{ 58.8, 41.7, 1462 },
@@ -91,8 +91,13 @@ _.Zones =
 							{ 64.5, 59.6, 1462 },
 							{ 70.6, 47.8, 1462 },	-- Possibly bloat from another chest
 						},
+						["g"] = {
+							i(170147, {	-- Paint Bottle: Goblin Green
+								["questID"] = 56908,
+							}),
+						},
 					}),
-					o(325664, {	-- Mechanized Chest.
+					o(325664, {	-- Mechanized Chest
 						["questID"] = 55552,
 						["isDaily"] = true,
 						["coords"] = {
@@ -104,7 +109,7 @@ _.Zones =
 							{ 57.3, 22.9, 1462 },	-- Possibly bloat from another chest
 						},
 					}),	
-					o(325665, {	-- Mechanized Chest.
+					o(325665, {	-- Mechanized Chest
 						["questID"] = 55553,
 						["isDaily"] = true,
 						["coords"] = {
@@ -115,7 +120,7 @@ _.Zones =
 							{ 67.3, 23.1, 1462 },	-- Possibly bloat from another chest
 						},
 					}),
-					o(325666, {	-- Mechanized Chest.
+					o(325666, {	-- Mechanized Chest
 						["questID"] = 55554,
 						["isDaily"] = true,
 						["coords"] = {
@@ -125,7 +130,7 @@ _.Zones =
 							{ 66.7, 77.4, 1462 },
 						},
 					}),
-					o(325667, {	-- Mechanized Chest.
+					o(325667, {	-- Mechanized Chest
 						["questID"] = 55555,
 						["isDaily"] = true,
 						["coords"] = {
@@ -136,7 +141,7 @@ _.Zones =
 							{ 76.5, 65.9, 1462 }, -- Possibly bloat from another chest
 						},
 					}),
-					o(325668, {	-- Mechanized Chest.
+					o(325668, {	-- Mechanized Chest
 						["questID"] = 55556,
 						["isDaily"] = true,
 						["coords"] = {
@@ -175,9 +180,6 @@ _.Zones =
 					}),
 					i(168832),	-- Galvanic Oscillator
 					i(168327),	-- Chain Ignitercoil
-					i(170147, {	-- Paint Bottle: Goblin Green
-						["questID"] = 56908,
-					}),
 					i(167790, {	-- Paint Vial: Fireball Red
 						["questID"] = 55451,	-- Paint Vial: Fireball Red
 						["g"] = {
