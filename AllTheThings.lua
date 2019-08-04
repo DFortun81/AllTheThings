@@ -2456,7 +2456,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						if total > 0 then
 							group.total = total;
 							group.progress = progress;
-							group.g = {};
 							tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
 						end
 					else
