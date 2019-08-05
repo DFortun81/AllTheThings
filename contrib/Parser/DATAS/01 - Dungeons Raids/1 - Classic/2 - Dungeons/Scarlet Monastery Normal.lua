@@ -65,7 +65,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					un(7, i(7736)),	-- Fight Club
-					un(7, i(7755)),	-- Flintrock Shoulders
+					i(7755),	-- Flintrock Shoulders
 					i(7754, {	-- Harbinger Boots
 						["crs"] = {
 							59746,	-- Scarlet Centurion
