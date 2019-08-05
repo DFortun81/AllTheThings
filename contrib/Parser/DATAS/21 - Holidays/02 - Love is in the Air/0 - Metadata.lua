@@ -3,9 +3,7 @@
 --------------------------------------------
 _.Holidays = bubbleDown({["u"] = 18}, 
 {
-	{	-- Feast of Winter Veil
-		["holidayID"] = 235468,	-- Love is in the Air
-		["u"] = 18,				-- Love is in the Air Filter
+	holiday(235468, {	-- Love is in the Air
 		["icon"] = "Interface\\Addons\\AllTheThings\\assets\\love_is_in_the_air",
 		["maps"] = {
 			89,		-- Darnassus
@@ -17,5 +15,5 @@ _.Holidays = bubbleDown({["u"] = 18},
 			88,		-- Thunder Bluff
 			90,		-- Undercity
 		},
-	},
+	}),
 });
