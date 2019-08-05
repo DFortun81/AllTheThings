@@ -642,24 +642,6 @@ _.Zones =
 						i(166970),	-- Energy Cell
 					},
 				}),
-				q(55847, {	-- Reclamation Rig
-					["coord"] = { 70.0, 62.0, 1462 },
-					["isDaily"] = true,  -- This version isDaily as it rewards extra items once a day
-					["qg"] = 150448,	-- Reclamation Rig
-					["g"] = {
-						i(168394),	-- Box of Assorted Parts
-						i(168264),	-- Recycling Requisition(Green)
-						i(168266),	-- Strange Recycling Requisiton(Epic)
-					},
-				}),
-				q(55148, {	-- Reclamation Rig
-					["coord"] = { 70.0, 62.0, 1462 },
-					["repeatable"] = true,
-					["qg"] = 150448,	-- Reclamation Rig
-					["g"] = {
-						i(168264),	-- Recycling Requisition(Green)
-					},
-				}),
 				q(55849, {	-- Reclamation Rig
 					["coord"] = { 70.0, 62.0, 1462 },
 					["repeatable"] = true,

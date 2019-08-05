@@ -306,7 +306,7 @@ _.Zones =
 					["questID"] = 55514,
 					["coord"] = { 35.3, 43.0, 1462 },
 					["isDaily"] = true,
-					["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn him.",
+					["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn him.  Summoning requires a |cffa335eeHundred-Fathom Lure|r.",
 					["g"] = {
 						crit(11, {	-- Deepwater Maw
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -585,11 +585,18 @@ _.Zones =
 					},
 				}),
 				n(150448, {	-- Reclamaton Rig
-				-- TO DO: figure out which rig quest to attach to this, if any.  separate quests for each box/reward?  one quest attached to the overall NPC?  there are reclamation rig quests in the 'quests' file; should they be moved here/attached in this area?
+				--	TO DO: figure out questIDs for:
+					--	hardmode rig (irradiated box of assorted parts)
+					--	irradiated undercoat usage (may not have associated quest and may just be based on the shirt's timer)
+				--	verify that epic recycling requisition is daily.  possibly repeatable?
+				--	if recycling requisitions are separate based on whether you get the items from the scrapyard or the reclamation rig, we should probably move the quests to the NYI file or something so that one doesn't check off the other!  (or mark them repeatable or whatever)
+				--	possibly attach just the 'box of assorted parts' questID to the overall header instead of the box itself?
 					["creatureID"] = 150451,	-- Reclamation Rig (before being built)
 					["coord"] = { 70.0, 61.5, 1462 },
 					["g"] = {
 						i(168394, {	-- Box of Assorted Parts
+							["questID"] = 55847,
+							["isDaily"] = true,
 							["g"] = {
 								i(169396),	-- Echoing Oozeling (PET!)
 								i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
@@ -630,21 +637,59 @@ _.Zones =
 							},
 						}),
 						i(168264, {	-- Recycling Requisition(Green)
-							i(169167),	-- Blueprint: Orange Spraybot
-							i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
-								crit(37, {	-- Re-Procedurally Genereated Punchcard
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							}),
-							i(167795, {	-- Paint Vial: Copper Trim
-								["questID"] = 55456,	-- Paint Vial: Copper Trim
-								["g"] = {
-									crit(4, {	-- Copper Trim
-										["achievementID"] = 13513,	-- Available in Eight Colors
+							["repeatable"] = true,
+							["questID"] = 55148,
+							["g"] = {
+								i(169167),	-- Blueprint: Orange Spraybot
+								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+									crit(37, {	-- Re-Procedurally Genereated Punchcard
+										["achievementID"] = 13479,	-- Junkyard Architect
 									}),
-								},
-							}),
-							i(169848),	-- Azeroth Mini Pack: Bondo's Yard
+								}),
+								i(167795, {	-- Paint Vial: Copper Trim
+									["questID"] = 55456,	-- Paint Vial: Copper Trim
+									["g"] = {
+										crit(4, {	-- Copper Trim
+											["achievementID"] = 13513,	-- Available in Eight Colors
+										}),
+									},
+								}),
+								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
+							},
+						}),
+						i(168266, {	-- Strange Recycling Requisiton(Epic)
+							["questID"] = 56079,	-- triggered when completing normal-mode rig and receiving this item on top of normal box
+							["isDaily"] = true,
+							["g"] = {
+								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
+								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+									crit(37, {	-- Re-Procedurally Genereated Punchcard
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								}),
+								i(167795, {	-- Paint Vial: Copper Trim
+									["questID"] = 55456,	-- Paint Vial: Copper Trim
+									["g"] = {
+										crit(4, {	-- Copper Trim
+											["achievementID"] = 13513,	-- Available in Eight Colors
+										}),
+									},
+								}),
+								i(169689, {	-- Vinyl: Mimiron's Brainstorm
+									crit(3, {	-- Mimiron's Brainstorm
+										["achievementID"] = 13686,    -- Junkyard Melomanic
+									}),
+								}),
+								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
+									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
+									["groups"] = {
+										crit(35, {	-- Annoy-o-Tron Gang
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
+								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
+							},
 						}),
 					},
 				}),

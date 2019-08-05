@@ -45,6 +45,7 @@ _.Zones =
 				["coords"] = {
 					{ 36.8, 27.7, 1355 },	-- cave entrance, putting it here instead of the actual coordinate because it's easy to mistakenly go to the top level above the cave
 					{ 55.0, 29.1, 1355 },
+					{ 58.8, 48.2, 1355 },
 					{ 60.6, 33.9, 1355 },
 					{ 72.2, 36.2, 1355 },
 				},
@@ -568,6 +569,7 @@ _.Zones =
 				["questID"] = 56277,
 				["isDaily"] = true,
 				["coords"] = {
+					{ 62.4, 39.6, 1355 },
 					{ 63.7, 48.3, 1355 },
 					{ 64.3, 54.9, 1355 },
 					{ 81.2, 39.8, 1355 },
