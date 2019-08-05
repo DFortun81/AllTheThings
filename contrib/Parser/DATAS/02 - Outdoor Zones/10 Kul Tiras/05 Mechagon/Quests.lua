@@ -273,7 +273,14 @@ _.Zones =
 										}),
 									},
 								}),
-								i(169690),	-- Vinyl: Battle of Gnomeregan (any)
+								i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
+									["questID"] = 56517,
+									["g"] = {
+										crit(4, {	-- Battle of Gnomeregan
+											["achievementID"] = 13686,	-- Junkyard Melomaniac
+										}),
+									},
+								}),
 								i(18507),	-- Boots of the Full Moon
 								i(16844),	-- Earthfury Epaulets (Geddon?)
 								i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
