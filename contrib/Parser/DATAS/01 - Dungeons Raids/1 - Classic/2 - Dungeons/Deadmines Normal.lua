@@ -104,96 +104,103 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
-				i(10401, {	-- Blackened Defias Gloves
-					["crs"] = {
-						48421,	-- Defias Overseer
-					},
-				}),
-				i(10400, {	-- Blackened Defias Leggings
-					["crs"] = {
-						48421,	-- Defias Overseer
-					},
-				}),
-				i(1951, {	-- Blackwater Cutlass
-					["crs"] = {
-						48522,	-- Defias Pirate
-						48521,	-- Defias Squallshaper
-					},
-				}),
-				i(8492, {	-- Parrot Cage
-					["crs"] = {
-						48417,	-- Defias Blood Wizard
-						48522,	-- Defias Pirate
-					},
-				}),
-				i(1930, {	-- Stonemason Cloak
-					["crs"] = {
-						48419,	-- Defias Miner
-					},
-				}),
-				i(1926, {	-- Weighted Sap
-					["crs"] = {
-						48420,	-- Defias Digger
-					},
-				}),
-			}),
 			d(1, {	-- Normal
-				cr(47162, e(89, {	-- Glubtok
-					i(2169),	-- Buzzer Blade
-					i(5444),	-- Miner's Cape
-					i(5195),	-- Gold-Flecked Gloves
-				-- i(157628), 	-- Gold-Flecked Gloves (NOTE: This ID only drops on Heroic Mode.)
-				})),
-				cr(47296, e(90, {	-- Helix Gearbreaker
-					i(5200),	-- Impaling Harpoon
-					i(5191),	-- Cruel Barb
-					i(5443),	-- Gold-Plated Buckler
-					i(151062),	-- Armbands of Exiled Architects
-					i(151063),	-- Gear-Marked Gauntlets
-					i(132556),	-- Smelter's Britches
-					i(5199),	-- Smelting Pants
-				-- i(157752), 	-- Armbands of Exiled Architects (NOTE: This ID only drops on Heroic Mode.)
-				})),
-				cr(43778, e(91, {	-- Foe Reaper 5000
-					i(5201),	-- Emberstone Staff
-					i(5187),	-- Foe Reaper
-					i(1937),	-- Buzz Saw
-					i(151066),	-- Missing Diplomat's Pauldrons
-					i(151064),	-- Vest of the Curious Visitor
-					i(151065),	-- Old Friend's Gloves
-				-- i(157753), 	-- Vest of the Curious Visitor (NOTE: This ID only drops on Heroic Mode.)
-				-- i(157754), 	-- Old Friend's Gloves (NOTE: This ID only drops on Heroic Mode.)
-				-- i(157755), 	-- Missing Diplomat's Pauldrons (NOTE: This ID only drops on Heroic Mode.)
-				})),
-				cr(47626, e(92, {	-- Admiral Ripsnarl
-					i(872),	-- Rockslicer
-					i(5196),	-- Smite's Reaver
-					i(1156),	-- Lavishly Jeweled Ring
-				})),
-				cr(47739, e(93, {	-- "Captain" Cookie
-					ach(628),	-- Deadmines
-					i(5192),	-- Cookie's Tenderizer
-					i(5197),	-- Thief's Blade
-					i(5198),	-- Cookie's Stirring Rod
-					i(5193),	-- Cape of the Brotherhood
-					i(5202),	-- Corsair's Overshirt
-				})),
+				n(0, {	-- Zone Drop
+					i(10401, {	-- Blackened Defias Gloves
+						["crs"] = { 48421 },	-- Defias Overseer
+					}),
+					i(10400, {	-- Blackened Defias Leggings
+						["crs"] = { 48421 },	-- Defias Overseer
+					}),
+					i(1951, {	-- Blackwater Cutlass
+						["crs"] = {
+							48522,	-- Defias Pirate
+							48521,	-- Defias Squallshaper
+						},
+					}),
+					i(8492, {	-- Parrot Cage
+						["crs"] = {
+							48417,	-- Defias Blood Wizard
+							48522,	-- Defias Pirate
+						},
+					}),
+					i(1930, {	-- Stonemason Cloak
+						["crs"] = { 48419 },	-- Defias Miner
+					}),
+					i(1926, {	-- Weighted Sap
+						["crs"] = { 48420 },	-- Defias Digger
+					}),
+				}),
+				e(89, {	-- Glubtok
+					["creatureID"] = 47162,	-- Glubtok
+					["g"] = {
+						i(2169),	-- Buzzer Blade
+						i(5444),	-- Miner's Cape
+						i(5195),	-- Gold-Flecked Gloves
+					--	i(157628), 	-- Gold-Flecked Gloves (NOTE: This ID only drops on Heroic Mode.)
+					},
+				}),
+				e(90, {	-- Helix Gearbreaker
+					["creatureID"] = 47296,	-- Helix Gearbreaker
+					["g"] = {
+						i(5200),	-- Impaling Harpoon
+						i(5191),	-- Cruel Barb
+						i(5443),	-- Gold-Plated Buckler
+						i(151062),	-- Armbands of Exiled Architects
+						i(151063),	-- Gear-Marked Gauntlets
+						i(132556),	-- Smelter's Britches
+						i(5199),	-- Smelting Pants
+					--	i(157752), 	-- Armbands of Exiled Architects (NOTE: This ID only drops on Heroic Mode.)
+					},
+				}),
+				e(91, {	-- Foe Reaper 5000
+					["creatureID"] = 43778,	-- Foe Reaper 5000
+					["g"] = {
+						i(5201),	-- Emberstone Staff
+						i(5187),	-- Foe Reaper
+						i(1937),	-- Buzz Saw
+						i(151066),	-- Missing Diplomat's Pauldrons
+						i(151064),	-- Vest of the Curious Visitor
+						i(151065),	-- Old Friend's Gloves
+					--	i(157753), 	-- Vest of the Curious Visitor (NOTE: This ID only drops on Heroic Mode.)
+					--	i(157754), 	-- Old Friend's Gloves (NOTE: This ID only drops on Heroic Mode.)
+					--	i(157755), 	-- Missing Diplomat's Pauldrons (NOTE: This ID only drops on Heroic Mode.)
+					},
+				}),
+				e(92, {	-- Admiral Ripsnarl
+					["creatureID"] = 47626,	-- Admiral Ripsnarl
+					["g"] = {
+						i(872),	-- Rockslicer
+						i(5196),	-- Smite's Reaver
+						i(1156),	-- Lavishly Jeweled Ring
+					},
+				}),
+				e(93, {	-- "Captain" Cookie
+					["creatureID"] = 47739,	-- "Captain" Cookie
+					["g"] = {
+						ach(628),	-- Deadmines
+						i(5192),	-- Cookie's Tenderizer
+						i(5197),	-- Thief's Blade
+						i(5198),	-- Cookie's Stirring Rod
+						i(5193),	-- Cape of the Brotherhood
+						i(5202),	-- Corsair's Overshirt
+					},
+				}),
 				n(-40, {	-- Legacy
 					n(0, {	-- Zone Drops -- TODO:: These are all from the original version of deadmines. Should these be merged into the rest of this file or left in a dedicated header?
 						un(43, n(647, { 	-- Captain Greenskin
 							i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
-								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
+								["description"] = "You can obtain this appearance by doing a rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(4416, { 	-- Defias Strip Miner
 							i(10402, {	-- Blackend Defias Boots **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
-								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
+								["description"] = "You can obtain this appearance by doing a rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(639, { 	-- Edwin Van Cleef
 							i(10399, {	-- Blackened Defias Armor **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
-								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
+								["description"] = "You can obtain this appearance by doing a rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(1731, { 	-- Goblin Craftsman
