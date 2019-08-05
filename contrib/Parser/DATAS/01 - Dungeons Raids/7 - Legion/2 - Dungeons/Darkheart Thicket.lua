@@ -13,6 +13,10 @@ _.Instances = { tier(7, {	-- Legion
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42714, {	-- Darkheart Thicket: Mythana
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42744, {	-- Darkheart Thicket: Preserving the Preservers
 					["lvl"] = 110,
 					["collectible"] = false,

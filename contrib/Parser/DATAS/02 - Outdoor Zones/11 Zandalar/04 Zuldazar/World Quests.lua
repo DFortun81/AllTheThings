@@ -190,6 +190,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50857, {	-- Golrakahn
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54298, {	-- Gravity Matters (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -446,6 +450,10 @@ _.Zones =
 					q(51374, {	-- Unending Gorilla Warfare
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50872, {	-- Warcrawler Karkithiss
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(54017, {	-- Wet Work: Warbeast Kraal (Faction Assault WQ)

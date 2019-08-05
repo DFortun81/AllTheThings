@@ -38,7 +38,6 @@ _.Zones =
 				q(41564),	-- Felhide
 				q(41562),	-- Felhide
 				q(41563),	-- Felhide
-				q(44044),	-- Felled Experiment
 				q(41513),	-- Felwort
 				q(41437),	-- Fine Leystone Deposits
 				q(41289),	-- Flourishing Aethril
@@ -75,7 +74,6 @@ _.Zones =
 				q(43609),	-- WANTED: Doomlord Kazrok
 				q(43610),	-- WANTED: Infernal Lord
 				q(43612),	-- WANTED: Normantis the Deposed
-				q(42633),	-- WANTED: Vorthax
 				q(43614),	-- WANTED: Vorthax
 				q(43615),	-- WANTED: Warbringer Mox'na
 				q(43802),	-- Watery Graves
@@ -182,6 +180,10 @@ _.Zones =
 				}),
 				q(46161, {	-- Felcaller Thalezra (Invasion WQ)
 					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(44044, {	-- Felled Experiment
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(41515, {	-- Felwort
@@ -447,6 +449,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43613, {	-- WANTED: Syphonus
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42633, {	-- WANTED: Vorthax
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -8,7 +8,6 @@ _.Zones =
 			n(-34, {	-- World Quests
 --[[
 				n(-34, {	-- World Quests
-					q(49057),	-- Minixis
 					q(49058),	-- One-of-Many
 					q(49056),	-- Pilfer
 					q(48870),	-- The Many-Faced Devourer
@@ -84,6 +83,11 @@ _.Zones =
 				}),
 				q(48983, {	-- Mining Regulation
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(49057, {	-- Minixis
+					["lvl"] = 110,
+					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(47552, {	-- Mistress Il'thendra

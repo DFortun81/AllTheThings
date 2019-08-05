@@ -9,6 +9,10 @@ _.Instances = { tier(7, {	-- Legion
 		["lvl"] = 110,
 		["g"] = {
 			n(-34, {	-- World Quests
+				q(46868, {	-- Cathedral of Eternal Night: Infernal Dead
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46865, {	-- Cathedral of Eternal Night: Mother of Flame
 					["lvl"] = 110,
 					["collectible"] = false,

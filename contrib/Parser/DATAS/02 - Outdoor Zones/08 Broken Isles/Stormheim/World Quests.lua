@@ -17,7 +17,6 @@ _.Zones =
 				q(41488),	-- Brimstone Destroyer
 				q(46011),	-- Colossal Infernal
 				q(43745),	-- Culling the Storm
-				q(42820),	-- DANGER: Aegir Wavecrusher
 				q(42806),	-- DANGER: Fjorlag, the Grave's Chill
 				q(42798),	-- DANGER: Huntress Estrid
 				q(42964),	-- DANGER: Lagertha
@@ -153,6 +152,10 @@ _.Zones =
 				}),
 				q(46179, {	-- Crushing the Legion (Invasion WQ)
 					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(42820, {	-- DANGER: Aegir Wavecrusher
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(42861, {	-- DANGER: Boulderfall, the Eroded

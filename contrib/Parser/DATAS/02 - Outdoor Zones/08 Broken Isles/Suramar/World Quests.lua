@@ -18,7 +18,6 @@ _.Zones =
 				q(41697),	-- DANGER: Colerian, Alteria, and Selenyi
 				q(42799),	-- DANGER: Oglok the Furious
 				q(44122),	-- DANGER: Sorallus
-				q(44119),	-- DANGER: Volshax, Breaker of Will
 				q(41446),	-- Darkened Felslate Deposits
 				q(41347),	-- Extra-Rancid Felhound Hide
 				q(41572),	-- Felhide
@@ -53,7 +52,6 @@ _.Zones =
 				q(41301),	-- Starlight Rose Cluster
 				q(41318),	-- Supplies Needed: Felslate
 				q(41303),	-- Supplies Needed: Starlight Roses
-				q(41283),	-- The Angler Mangler
 				q(43435),	-- The Battle Rages On
 				q(42082),	-- The Shattered Locus
 				q(41346),	-- Velvety Stalker Hide
@@ -158,6 +156,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44114, {	-- DANGER: Magistrix Vilessa
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44119, {	-- DANGER: Volshax, Breaker of Will
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -302,6 +304,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41351, {	-- Supplies Needed: Stonehide Leather
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41283, {	-- The Angler Mangler
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -409,11 +409,7 @@ _.Zones =
 					q(49404, {	-- Fairwind's "Friends"
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51284, {	-- Falcon Hunt
-						["collectible"] = false,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
+					
 					q(50776, {	-- False Prophets
 						["collectible"] = false,
 						["lvl"] = 120,
@@ -1736,6 +1732,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+					}),
+					q(51284, {	-- Falcon Hunt
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(54129, {	-- First Mate Malone (Faction Assault WQ)
 						["lvl"] = 110,
