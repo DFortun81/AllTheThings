@@ -11,47 +11,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(0, {	-- Zone Drop
-						{	-- Blackwater Cutlass
-							["itemID"] = 1951,	-- Blackwater Cutlass
-							["crs"] = {
-								48417,	-- Defias Blood Wizard
-								48522,	-- Defias Pirate
-								48521,	-- Defias Squallshaper
-							},
-						},
-						{	-- Blackened Defias Gloves
-							["itemID"] = 10401,	-- Blackened Defias Gloves
-							["crs"] = {
-								48421,	-- Defias Overseer
-							},
-						},
-						{	-- Blackened Defias Leggings
-							["itemID"] = 10400,	-- Blackened Defias Leggings
-							["crs"] = {
-								48421,	-- Defias Overseer
-							},
-						},
-						{	-- Parrot Cage (Green Wing Macaw)
-							["itemID"] = 8492,	-- Parrot Cage (Green Wing Macaw)
-							["crs"] = {
-								48417,	-- Defias Blood Wizard
-								48522,	-- Defias Pirate
-							},
-						},
-						{	-- Stonemason Cloak
-							["itemID"] = 1930,	-- Stonemason Cloak
-							["crs"] = {
-								48419,	-- Defias Miner
-							},
-						},
-						{	-- Weighted Sap
-							["itemID"] = 1926,	-- Weighted Sap
-							["crs"] = {
-								48420,	-- Defias Digger
-							},
-						},
-					}),
 					cr(47162, e(89, {	-- Glubtok
 						{	-- Ready for Raiding
 							["achievementID"] = 5366,	-- Ready for Raiding
