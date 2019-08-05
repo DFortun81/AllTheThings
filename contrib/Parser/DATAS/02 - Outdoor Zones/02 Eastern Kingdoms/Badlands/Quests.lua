@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
 			n(-17,  {	-- Quests
-				q(719, {	-- A Dwarf and His Tools
+				q(719,   {	-- A Dwarf and His Tools
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -15,6 +15,7 @@ _.Zones =
 				}),
 				q(27823, {	-- A Dwarf's Got Needs
 					["qg"] = 2860,	-- Sigrun Ironhew
+					["coord"] = { 49.4, 37.0, 15 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27764, {	-- A Strange Request
@@ -31,6 +32,7 @@ _.Zones =
 				}),
 				q(27792, {	-- All's Fair in Love, War, and Archaeology
 					["qg"] = 46760,	-- Lead Prospector Durdin
+					["coord"] = { 49.2, 36.9, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27791 },	-- Dustwind Dig
 					["g"] = {
@@ -47,6 +49,8 @@ _.Zones =
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
 				q(27793, {	-- Ancient Protectors (A)
+					["qg"] = 46760,	-- Lead Prospector Durdin
+					["coord"] = { 49.2, 36.9, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27709,	-- The Sentinel's Game
@@ -62,7 +66,7 @@ _.Zones =
 						27885,	-- The Warden's Game
 					},
 				}),
-				q(2258, {	-- Badlands Reagent Run II
+				q(2258,  {	-- Badlands Reagent Run II
 					["u"] = 40,
 					["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
 					["races"] = HORDE_ONLY,
@@ -73,10 +77,11 @@ _.Zones =
 				}),
 				q(27834, {	-- Baelog, the Glass Cannon
 					["qgs"] = { 46853, 46856 },	-- Baelog
+					["coord"] = { 20.6, 56.1, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
-				q(4983, {	-- Bijou's Reconnaissance Report (may only have been both factions)
+				q(4983,  {	-- Bijou's Reconnaissance Report (may only have been both factions)
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -90,7 +95,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27789 },	-- Troggish Troubles
 				}),
-				q(793, {	-- Broken Alliances
+				q(793,   {	-- Broken Alliances
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -105,14 +110,14 @@ _.Zones =
 					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["sourceQuests"] = { 27898 },	-- Rheastrasza's Gift
 				}),
-				q(27927, {	-- Down to the Scar -- aa
+				q(27927, {	-- Down to the Scar
 					["isBreadcrumb"] = true,
 					["qgs"] = {
 						46930,	-- Victoria Dolen (A)
 						46660,	-- Aidan Summerwind (H)
 					},
 					["coords"] = {
-						{ 20.8, 55.8, 15 },	-- Alliance
+						{ 20.8, 55.7, 15 },	-- Alliance
 						{ 18.4, 41.5, 15 },	-- Horde
 					},
 				}),
@@ -122,13 +127,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27789 },	-- Troggish Troubles
 				}),
-				q(27774, {	-- Easily Swayed -- aa
+				q(27774, {	-- Easily Swayed
 					["qg"] = 46652,	-- Dolph Blastus
 					["coord"] = { 65.0, 38.3, 15 },
 					["sourceQuests"] = { 27763 },	-- To Fuselight Proper
 				}),
 				q(27828, {	-- Eric, the Utility Dwarf
 					["qgs"] = { 46852, 46855 },	-- Eric "The Swift"
+					["coord"] = { 20.5, 56.0, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
@@ -137,7 +143,7 @@ _.Zones =
 					["coord"] = { 66.3, 55.4, 15 },
 					["sourceQuests"] = { 27764 },	-- A Strange Request
 				}),
-				q(27878, {	-- Forcible Acquisition -- aa
+				q(27878, {	-- Forcible Acquisition
 					["qg"] = 46758,	-- Aoren Sunglow
 					["coord"] = { 52.1, 51.5, 15 }, 
 					["races"] = HORDE_ONLY,
@@ -157,6 +163,7 @@ _.Zones =
 				}),
 				q(27833, {	-- Half-Ton Holdouts
 					["qg"] = 46972,	-- Terrance Storm
+					["coord"] = { 20.8, 57.3, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(63199),	-- Storm's Bow
@@ -166,7 +173,7 @@ _.Zones =
 						i(63195),	-- Cloak of Passion
 					},
 				}),
-				q(27880, {	-- Half-Ton Holdouts -- aa
+				q(27880, {	-- Half-Ton Holdouts
 					["qg"] = 1068,	-- Gorn
 					["coord"] = { 17.6, 43.9, 15 },
 					["races"] = HORDE_ONLY,
@@ -180,6 +187,7 @@ _.Zones =
 				}),
 				q(27826, {	-- Into the Dragon's Mouth
 					["qg"] = 46664,	-- Dr. Hieronymus Blam
+					["coord"] = { 46.8, 56.2, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27794 },	-- Return to Blam
 				}),
@@ -214,14 +222,14 @@ _.Zones =
 						27766,	-- Second Sample: Whelps
 					},
 				}),
-				q(715, {	-- Liquid Stone
+				q(715,   {	-- Liquid Stone
 					["u"] = 40,
 					["qg"] = 2920,	-- Quest Giver: Lucien Tosselwrench
 					["g"] = {
 						un(7, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
 					},
 				}),
-				q(4134, {	-- Lost Thunderbrew Recipe
+				q(4134,  {	-- Lost Thunderbrew Recipe
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -229,21 +237,21 @@ _.Zones =
 						un(2, i(11964)),	-- Swiftstrike Cudgel
 					},
 				}),
-				q(739, {	-- Murdaloc
+				q(739,   {	-- Murdaloc
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(4983)),	-- Rock Pulverizer
 					},
 				}),
-				q(1137, {	-- News for Fizzle
+				q(1137,  {	-- News for Fizzle
 					["u"] = 40,
 					["g"] = {
 						un(2, i(6729)),	-- Fizzle's Zippy Lighter
 						un(2, i(6732)),	-- Gnomish Mechanic's Gloves
 					},
 				}),
-				q(2341, {	-- Necklace Recovery, Take 3
+				q(2341,  {	-- Necklace Recovery, Take 3
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -258,17 +266,18 @@ _.Zones =
 				}),
 				q(27835, {	-- Olaf, the Big Fella'
 					["qgs"] = { 46854, 46857 },	-- Olaf
+					["coord"] = { 20.5, 56.3, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
-				q(705, {	-- Pearl Diving
+				q(705,   {	-- Pearl Diving
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4086)),	-- Flash Rifle
 						un(2, i(5248)),	-- Flash Wand
 					},
 				}),
-				q(2418, {	-- Power Stones
+				q(2418,  {	-- Power Stones
 					["u"] = 40,
 					["g"] = {
 						un(2, i(10358)),	-- Duracin Bracers
@@ -276,7 +285,7 @@ _.Zones =
 						un(2, i(10359)),	-- Everlast Boots
 					},
 				}),
-				q(2361, {	-- Restoring the Necklace
+				q(2361,  {	-- Restoring the Necklace
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -315,6 +324,7 @@ _.Zones =
 				}),
 				q(27858, {	-- Rheastrasza's Gift (A)
 					["qg"] = 46654,	-- Rhea
+					["coord"] = { 15.9, 33.3, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27832 },	-- The Hidden Clutch
 				}),
@@ -324,7 +334,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27897 },	-- The Hidden Clutch
 				}),
-				q(733, {	-- Scrounging
+				q(733,   {	-- Scrounging
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -337,7 +347,7 @@ _.Zones =
 					["coord"] = { 66.3, 55.4, 15 },
 					["sourceQuests"] = { 27764 },	-- A Strange Request
 				}),
-				q(709, {	-- Solution to Doom
+				q(709,   {	-- Solution to Doom
 					["qg"] = 2785,	-- Theldurin the Lost
 					["coord"] = { 51.6, 76.6, 15 },
 					["lvl"] = 30,
@@ -346,7 +356,7 @@ _.Zones =
 						un2, i(4746),	-- Doomsayer's Robe
 					},
 				}),
-				q(716, {	-- Stone Is Better than Cloth
+				q(716,   {	-- Stone Is Better than Cloth
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4979)),	-- Enchanted Stonecloth Bracers
@@ -354,9 +364,10 @@ _.Zones =
 				}),
 				q(27825, {	-- Survival of the Fattest
 					["qg"] = 46930,	-- Victoria Delen
+					["coord"] = { 20.8, 55.7, 15 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27879, {	-- Survival of the Fattest -- aa
+				q(27879, {	-- Survival of the Fattest
 					["qg"] = 46660,	-- Aidan Summerwind
 					["coord"] = { 18.4, 41.5, 15 },
 					["races"] = HORDE_ONLY,
@@ -367,7 +378,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27889 },	-- New Kargath
 				}),
-				q(27713, {	-- The Day that Deathwing Came -- aa
+				q(27713, {	-- The Day that Deathwing Came
 					["qg"] = 2785,	-- Theldurin the Lost
 					["coord"] = { 26.2, 62.2, 15 },
 					["sourceQuests"] = { 27927 },	-- Down to the Scar
@@ -399,6 +410,7 @@ _.Zones =
 				}),
 				q(27824, {	-- The Good Stuff
 					["qg"] = 2860,	-- Sigrun Ironhew
+					["coord"] = { 49.4, 36.9, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27823 },	-- A Dwarf's Got Needs
 					["g"] = {
@@ -410,6 +422,8 @@ _.Zones =
 					},
 				}),
 				q(27832, {	-- The Hidden Clutch (A)
+					["qg"] = 46654,	-- Rhea
+					["coord"] = { 21.1, 57.7, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27831 },	-- The Sorrow and the Fury
 				}),
@@ -419,19 +433,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
 				}),
-				q(1139, {	-- The Lost Tablets of Will
+				q(1139,  {	-- The Lost Tablets of Will
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(6723)),		-- Medal of Courage
 					},
 				}),
-				q(27877, {	-- The Morons' League -- aa
+				q(27877, {	-- The Morons' League
 					["qg"] = 46759,	-- Lidia Sunglow
 					["coord"] = { 52.2, 51.6, 15 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(4724, {	-- The Pack Mistress
+				q(4724,  {	-- The Pack Mistress
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -440,7 +454,7 @@ _.Zones =
 						un(2, i(15825)),	-- Traphook Jerkin
 					},
 				}),
-				q(4063, {	-- The Rise of the Machines
+				q(4063,  {	-- The Rise of the Machines
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -466,6 +480,7 @@ _.Zones =
 				}),
 				q(27797, {	-- The Sentinel's Pawn (A)
 					["qg"] = 46760,	-- Lead Prospector Durdin
+					["coord"] = { 49.2, 36.9, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
 				}),
@@ -476,6 +491,8 @@ _.Zones =
 					["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
 				}),
 				q(27831, {	-- The Sorrow and the Fury (A)
+					["qg"] = 46654,	-- Rhea
+					["coord"] = { 21.1, 57.7, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27830 },	-- Their Hunt Continues
 				}),
@@ -487,10 +504,13 @@ _.Zones =
 				}),
 				q(27827, {	-- The Swift, the Fierce, and the Stout
 					["qg"] = 46654,	-- Rhea
+					["coord"] = { 21.1, 57.7, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27826 },	-- Into the Dragon's Mouth
 				}),
 				q(27912, {	-- The Titans' Trove (A)
+					["qg"] = 46760,	-- Lead Prospector Durdin
+					["coord"] = { 49.2, 36.9, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27793 },	-- Ancient Protectors
 				}),
@@ -521,6 +541,7 @@ _.Zones =
 				}),
 				q(27796, {	-- The Warden's Pawn (A)
 					["qg"] = 46760,	-- Lead Prospector Durdin
+					["coord"] = { 49.2, 36.9, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
 				}),
@@ -536,6 +557,11 @@ _.Zones =
 						46856,	-- Baelog
 						46855,	-- Eric "The Swift"
 						46857,	-- Olaf
+					},
+					["coords"] = {
+						{ 20.6, 56.1, 15 },
+						{ 20.5, 56.0, 15 },
+						{ 20.5, 56.3, 15 },
 					},
 					["sourceQuests"] = {
 						27834,	-- Baelog, the Glass Cannon
@@ -562,6 +588,8 @@ _.Zones =
 					},
 				}),
 				q(27830, {	-- Their Hunt Continues (A)
+					["qg"] = 46654,	-- Rhea
+					["coord"] = { 21.1, 57.7, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27829 },	-- The Wrath of a Dragonflight
 				}),
@@ -582,30 +610,30 @@ _.Zones =
 						i(63160),	-- Boots of Duress
 					},
 				}),
-				q(778, {	-- This Is Going to Be Hard
+				q(778,   {	-- This Is Going to Be Hard
 					["u"] = 40,
 					["g"] = {
 						un(2, i(2820)),	-- Nifty Stopwatch
 					},
 				}),
-				q(27763, {	-- To Fuselight Proper -- aa
+				q(27763, {	-- To Fuselight Proper
 					["qg"] = 46650,	-- Eddie Flofizzle
 					["coord"] = { 92.6, 38.9, 15 },
 					["isBreadcrumb"] = true,	-- for "Easily Swayed"
 					["sourceQuests"] = { 27762 },	-- Fuselight Ho!
 				}),
-				q(28512, {	-- To the Aid of the Thorium Brotherhood -- aa
+				q(28512, {	-- To the Aid of the Thorium Brotherhood
 					["isBreadcrumb"] = true,
 					["qgs"] = {
 						46930,	-- Victoria Dolen (A)
 						46660,	-- Aidan Summerwind (H)
 					},
 					["coords"] = {
-						{ 20.8, 55.8, 15 },	-- Alliance
+						{ 20.8, 55.7, 15 },	-- Alliance
 						{ 18.4, 41.5, 15 },	-- Horde
 					},
 				}),
-				q(727, {	-- To Ironforge for Yagyin's Digest
+				q(727,   {	-- To Ironforge for Yagyin's Digest
 					["qg"] = 2785,	-- Theldurin the Lost
 					["coord"] = { 51.6, 76.6, 15 },
 					["sourceQuest"] = 709,	-- Solution to Doom
@@ -613,7 +641,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
-				q(728, {	-- To the Undercity for Yagyin's Digest
+				q(728,   {	-- To the Undercity for Yagyin's Digest
 					["qg"] = 2785,	-- Theldurin the Lost
 					["coord"] = { 51.6, 76.6, 15 },
 					["sourceQuest"] = 709,	-- Solution to Doom
@@ -621,7 +649,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
-				q(717, {	-- Tremors of the Earth
+				q(717,   {	-- Tremors of the Earth
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -641,12 +669,12 @@ _.Zones =
 						i(63180),	-- Blam Blam Gun
 					},
 				}),
-				q(2202, {	-- Uldaman Reagent Run
+				q(2202,  {	-- Uldaman Reagent Run
 					["u"] = 40,
 					["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
 					["sourceQuests"] = { 2258 },	-- Source Quest: Badlands Reagent Run
 				}),
-				q(27775, {	-- When the Going Gets Tough, Cheat -- aa
+				q(27775, {	-- When the Going Gets Tough, Cheat
 					["qg"] = 46653,	-- Garyanne Fleezlebop
 					["coord"] = { 64.2, 38.1, 15 },
 					["g"] = {
