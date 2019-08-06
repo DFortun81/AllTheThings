@@ -14,83 +14,110 @@ _.ExpansionFeatures =
 						--["questID"] = 53160,	-- Ancient Crypt Key (Quest)
 						["repeatable"] = true,
 					},
-					{	-- Azeroth's Tear [Both]
-						["itemID"] = 163217,	-- Azeroth's Tear
-						--["questID"] = 53112,	-- Azeroth's Tear
-						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Magni in Silithius at 42.40, 44.29 for Champions of Azeroth rep.|r",
-					},
-					{	-- Dented Coin [Alliance]
-						["itemID"] = 163616,	-- Dented Coin
-						--["questID"] = 53118,	-- Dented Coin
-						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Cyrus Crestfall in Boralus at 68, 21 for Proudmore Admiralty rep.|r",
-						["races"] = ALLIANCE_ONLY,
-					},
+					i(163217, {	-- Azeroth's Tear [Both]
+						["description"] = "|CFFFF0000Turn this into Magni Bronzebeard in Silithus @ 42.2, 44.2 for Champions of Azeroth rep.|r",
+						["g"] = {
+							q(53112, {	-- Azeroth's Tear
+								["qg"] = 130216,	-- Magni Bronzebeard <The Speaker>
+								["repeatable"] = true,
+								["coord"] = { 42.2, 44.2, 81 },
+							}),
+						},
+					}),
+					i(163616, {	-- Dented Coin [Alliance]
+						["description"] = "|CFFFF0000Turn this into Cyrus Crestfall in Boralus @ 68, 22 for Proudmore Admiralty rep.|r",
+						["g"] = {
+							q(53118, {	-- Dented Coin
+								["qg"] = 122370,	-- Cyrus Crestfall <Harbormaster>
+								["races"] =  ALLIANCE_ONLY,
+								["repeatable"] = true,
+								["coord"] = { 68.0, 22.0, 1161 },
+							}),
+						},
+					}),
 					{	-- Druidic Fur [Both]
 						["itemID"] = 163485,	-- Druidic Fur (Item)
 						--["questID"] = 53181,	-- Druidic Fur (Quest)
 						["repeatable"] = true,
 					},
-					{	-- Exotic Spices [Alliance]
-						["itemID"] = 163614,	-- Exotic Spices
-						--["questID"] = 53120,	-- Exotic Spices
-						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Xun Xun in Drustvar at 20.66, 45.59 for Order of Embers rep.|r",
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Golden Beetle [Horde]
-						["itemID"] = 163619,	-- Golden Beetle
-						--["questID"] = 53114,	-- Golden Beetle
-						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Krag'wa in Nazmir at 75, 56 for Talanji's Expedition rep.|r",
-						["races"] = HORDE_ONLY
-					},
-					{	-- Island Flotsam [Horde]
-						["itemID"] = 163620,	-- Island Flotsam
-						--["questID"] = 53115,	-- Island Flotsam
-						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Jani in Zul'Dazar at 35.34, 7.66 for Zandlari Empire rep.|r",
-						["races"] = HORDE_ONLY,
-						["description"] = "Must have unlocked Jana by doing the quest \"Pests\".",
-					},
-					{	-- Lost Sea Scroll [Alliance]
-						["itemID"] = 163615,	-- Lost Sea Scroll
-						--["questID"] = 53119,	-- Lost Sea Scroll
-						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Rusted Alliance Insignia [Alliance]
-						["itemID"] = 163617,	-- Rusted Alliance Insignia
-						--["questID"] = 53117,	-- Rusted Alliance Insignia
-						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Jaelaana in Boralus at 69.33, 24.95 for 7th Legion rep.|r",
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Rusted Horde Insignia [Horde]
-						["itemID"] = 163621,	-- Rusted Horde Insignia
-						--["questID"] = 53116,	-- Rusted Horde Insignia
-						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Ransa Greyfeather for Honorbound rep.|r",
-						["races"] = HORDE_ONLY,
-					},
-					{	-- Shimmering Shell [Horde]
-						["itemID"] = 163618,	-- Shimmering Shell
-						--["questID"] = 53113,	-- Shimminering Shell
-						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Hoarder Jena in Vol'dun at 56.70, 49.80 for Voldunai rep.|r",
-						["races"] = HORDE_ONLY,
-					},
+					i(163614, {	-- Exotic Spices [Alliance]
+						["description"] = "|CFFFF0000Turn this into Xun Xun Sweetflower in Drustvar @ 20.6, 45.6 for Order of Embers rep.|r",
+						["g"] = {
+							q(53120, {	-- Exotic Spices
+								["qg"] = 136269,	-- Xun Xun Sweetflower <Exotic Food & Spices>
+								["races"] =  ALLIANCE_ONLY,
+								["repeatable"] = true,
+								["coord"] = { 20.6, 45.6, 896 },
+							}),
+						},
+					}),
+					i(163619, {	-- Golden Beetle [Horde]
+						["description"] = "|CFFFF0000Turn this into Krag'wa the Huge in Nazmir @ 75.6, 56.6 for Talanji's Expedition rep.|r",
+						["g"] = {
+							q(53114, {	-- Golden Beetle
+								["qg"] = 120551,	-- Krag'wa the Huge
+								["races"] = HORDE_ONLY,
+								["repeatable"] = true,
+								["coord"] = { 75.6, 56.6, 863 },
+							}),
+						},
+					}),
+					i(163620, {	-- Island Flotsam [Horde]
+						["description"] = "|CFFFF0000Turn this into Jani in Dazar'alor @ 35.4, 7.8 for Zandalari Empire rep.|r",
+						["g"] = {
+							q(53115, {	-- Island Flotsam
+								["description"] = "Must have unlocked Jani by doing the quest \"Pests\".",
+								["qg"] = 126334,	-- Jani <Loa of Scavengers>
+								["races"] = HORDE_ONLY,
+								["repeatable"] = true,
+								["coord"] = { 35.4, 7.8, 1163 },
+							}),
+						},
+					}),
+					i(163615, {	-- Lost Sea Scroll [Alliance]
+						["description"] = "|CFFFF0000Turn this into Brother Pike in Stormsong Valley @ 59.2, 68.6 for Storm's Wake rep.|r",
+						["g"] = {
+							q(53119, {	-- Lost Sea Scroll
+								["qg"] = 130576,	-- Brother Pike
+								["races"] =  ALLIANCE_ONLY,
+								["repeatable"] = true,
+								["coord"] = { 59.2, 68.6, 942 },
+							}),
+						},
+					}),
+					i(163617, {	-- Rusted Alliance Insignia
+						["description"] = "|CFFFF0000Turn this into Vindicator Jaelaana in Boralus @ 69.2, 25.0 for 7th Legion rep.|r",
+						["g"] = {
+							q(53117, {	-- Rusted Alliance Insignia [Alliance]
+								["qg"] = 135446,	-- Vindicator Jaelaana <7th Legion Emissary>
+								["races"] =  ALLIANCE_ONLY,
+								["repeatable"] = true,
+								["coord"] = { 69.2, 25.0, 1161 },
+							}),
+						},
+					}),
+					i(163621, {	-- Rusted Horde Insignia
+						["description"] = "|CFFFF0000Turn this into Ransa Greyfeather in Zuldazar @ 58,62.6 for Honorbound rep.|r",
+						["g"] = {
+							q(53116, {	-- Rusted Horde Insignia
+								["qg"] = 135447,	-- Ransa Greyfeather
+								["races"] = HORDE_ONLY,
+								["repeatable"] = true,
+								["coord"] = { 58, 62.6, 862 },
+							}),
+						},
+					}),
+					i(163618, {	-- Shimmering Shell [Horde]
+						["description"] = "|CFFFF0000Turn this into Hoarder Jena in Vol'dun @ 56.7, 49.8 for Voldunai rep.|r",
+						["g"] = {
+							q(53113, {	-- Shimmering Shell
+								["qg"] = 135804,	-- Hoarder Jena
+								["races"] = HORDE_ONLY,
+								["repeatable"] = true,
+								["coord"] = { 56.7, 49.8, 864 },
+							}),
+						},
+					}),
 				},
 			}),
 		},
