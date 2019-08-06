@@ -6,7 +6,17 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
 			n(-16, {	-- Rares
-				n(45380, {	-- Ashtail
+				n(45380,  {	-- Ashtail
+					["coords"] = {
+						{ 68.8, 38.2, 48 },
+						{ 72.4, 36.2, 48 },
+						{ 74.0, 34.0, 48 },
+						{ 77.0, 39.0, 48 },
+						{ 76.4, 42.4, 48 },
+						{ 73.6, 44.0, 48 },
+						{ 69.6, 42.0, 48 },
+						{ 66.6, 40.0, 48 },
+					},
 					["g"] = {
 						i(9765),	-- Cadet Vest
 						i(9779),	-- Bandit Cloak
@@ -32,7 +42,13 @@ _.Zones =
 						i(9770),	-- Greenweave Cloak
 					},
 				}), 
-				n(1398, {	-- Boss Galgosh
+				n(1398,   {	-- Boss Galgosh
+					["coords"] = {
+						{ 69.6, 60.0, 48 },
+						{ 70.4, 64.6, 48 },
+						{ 70.8, 68.0, 48 },
+						{ 68.0, 66.0, 48 },
+					},
 					["g"] = {
 						i(6557),	-- Bard's Boots
 						i(6539),	-- Willow Belt
@@ -64,8 +80,13 @@ _.Zones =
 					},
 				}), 
 				o(207496, {	-- Dark Iron Treasure Chest
-					["modelScale"] = 1.5,
-					["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
+					["coords"] = {
+						{ 36.6, 61.2, 48 },
+						{ 61.9, 75.0, 48 },
+						{ 80.3, 51.9, 48 },
+					},
+					--["modelScale"] = 1.5,
+					--["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 					["g"] = {
 						i(3292),	-- Ancestral Tunic
@@ -88,7 +109,14 @@ _.Zones =
 						i(6547),	-- Soldier's Gauntlets
 					},
 				}),
-				n(14267, {	-- Emogg the Crusher
+				n(14267,  {	-- Emogg the Crusher
+					["coords"] = {
+						{ 68.4, 29.0, 48 },
+						{ 67.0, 21.0, 48 },
+						{ 73.0, 25.8, 48 },
+						{ 72.8, 21.4, 48 },
+						{ 70.0, 25.0, 48 },
+					},
 					["g"] = {
 						i(9779),	-- Bandit Cloak
 						i(9767),	-- Greenweave Sandals
@@ -122,7 +150,8 @@ _.Zones =
 						i(6582),	-- Scouting Boots
 					},
 				}), 
-				n(45404, {	-- Geoshaper Maren
+				n(45404,  {	-- Geoshaper Maren
+					["coord"] = { 50.0, 24.0, 48 },
 					["g"] = {
 						i(9788),	-- Raider's Belt
 						i(6581),	-- Scouting Belt
@@ -155,7 +184,12 @@ _.Zones =
 						i(10287),	-- Greenweave Mantle
 					},
 				}),
-				n(2476, {	-- Gosh-Haldir
+				n(2476,   {	-- Gosh-Haldir
+					["coords"] = {
+						{ 56.4, 51.8, 48 },
+						{ 55.6, 55.8, 48 },
+						{ 53.0, 56.8, 48 },
+					},
 					["g"] = {
 						i(9756),	-- Gypsy Trousers
 						i(9763),	-- Cadet Leggings
@@ -189,7 +223,8 @@ _.Zones =
 						un(7, i(3563)),	-- Seafarer's Pantaloons
 					},
 				}), 
-				n(45398, {	-- Grizlak
+				n(45398,  {	-- Grizlak
+					["coord"] = { 35.6, 15.6, 48 },
 					["g"] = {
 						i(9756),	-- Gypsy Trousers
 						i(9747),	-- Simple Britches
@@ -222,7 +257,12 @@ _.Zones =
 						un(7, i(3305)),	-- Brackwater Leggings
 					},
 				}), 
-				n(1425, {	-- Kubb
+				n(1425,   {	-- Kubb
+					["coords"] = {
+						{ 26.0, 27.0, 48 },
+						{ 26.2, 31.8, 48 },
+						{ 24.8, 30.6, 48 },
+					},
 					["g"] = {
 						i(6336),	-- Infantry Tunic
 						i(6512),	-- Disciple's Robe
@@ -249,7 +289,15 @@ _.Zones =
 						un(7, i(6195)),	-- Wax-Polished Armor
 					},
 				}), 
-				n(14268, {	-- Lord Condar
+				n(14268,  {	-- Lord Condar
+					["coords"] = {
+						{ 67.4, 76.0, 48 },
+						{ 73.2, 72.6, 48 },
+						{ 75.8, 63.0, 48 },
+						{ 79.0, 63.0, 48 },
+						{ 78.6, 71.2, 48 },
+						{ 78.2, 74.6, 48 },
+					},
 					["g"] = {
 						i(6547),	-- Soldier's Gauntlets
 						i(9785),	-- Raider's Bracers
@@ -278,7 +326,8 @@ _.Zones =
 						i(6536),	-- Willow Vest
 					},
 				}), 
-				n(1399, {	-- Magosh
+				n(1399,   {	-- Magosh
+					["coord"] = { 31.0, 75.6, 48 },
 					["g"] = {
 						i(6267),	-- Disciple's Pants
 						i(68759),	-- Imbued Gypsy Cloak
@@ -309,7 +358,12 @@ _.Zones =
 						un(7, i(3571)),	-- Trogg Beater
 					},
 				}), 
-				n(45369, {	-- Morick Darkbrew
+				n(45369,  {	-- Morick Darkbrew
+					["coords"] = {
+						{ 37.8, 63.2, 48 },
+						{ 40.4, 60.4, 48 },
+						{ 40.6, 64.4, 48 },
+					},
 					["g"] = {
 						i(6512),	-- Disciple's Robe
 						i(6268),	-- Pioneer Tunic
@@ -336,7 +390,14 @@ _.Zones =
 						i(6542),	-- Willow Cape
 					},
 				}), 
-				n(45402, {	-- Nix
+				n(45402,  {	-- Nix
+					["coords"] = {
+						{ 50.8, 37.4, 48 },
+						{ 53.0, 33.8, 48 },
+						{ 58.4, 38.6, 48 },
+						{ 58.8, 41.6, 48 },
+						{ 53.8, 43.2, 48 },
+					},
 					["g"] = {
 						i(6546),	-- Soldier's Leggings
 						i(6554),	-- Bard's Gloves
@@ -363,7 +424,13 @@ _.Zones =
 						i(9787),	-- Raider's Gauntlets
 					},
 				}), 
-				n(45399, {	-- Optimo
+				n(45399,  {	-- Optimo
+					["coords"] = {
+						{ 71.6, 77.0, 48 },
+						{ 74.8, 76.4, 48 },
+						{ 77.0, 83.2, 48 },
+						{ 78.0, 77.8, 48 },
+					},
 					["g"] = {
 						i(9779),	-- Bandit Cloak
 						i(6553),	-- Bard's Trousers
@@ -400,7 +467,8 @@ _.Zones =
 						i(6562),	-- Shimmering Boots
 					},
 				}), 
-				n(45384, {	-- Sagepaw
+				n(45384,  {	-- Sagepaw
+					["coord"] = { 25.6, 44.8, 48 },
 					["g"] = {
 						i(6267),	-- Disciple's Pants
 						i(6269),	-- Pioneer Trousers
@@ -422,7 +490,8 @@ _.Zones =
 						i(68755),	-- Imbued Disciple's Gloves
 					},
 				}), 
-				n(14266, {	-- Shanda the Spinner
+				n(14266,  {	-- Shanda the Spinner
+					["coord"] = { 61.6, 74.6, 48 },
 					["g"] = {
 						i(6540),	-- Willow Pants
 						i(9779),	-- Bandit Cloak
@@ -459,14 +528,21 @@ _.Zones =
 						i(6538),	-- Willow Robe
 					},
 				}), 
-				n(7170, {	-- Thragomm <Horde Runner>
+				n(7170,   {	-- Thragomm <Horde Runner>
 					["u"] = 43,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(7, i(4949)),	-- Orcish Cleaver
 					},
 				}),
-				n(45401, {	-- Whitefin
+				n(45401,  {	-- Whitefin
+					["coords"] = {
+						{ 45.6, 38.6, 48 },
+						{ 43.2, 41.6, 48 },
+						{ 44.8, 48.6, 48 },
+						{ 46.0, 54.8, 48 },
+						{ 49.6, 57.0, 48 },
+					},
 					["g"] = {
 						i(9756),	-- Gypsy Trousers
 						i(9763),	-- Cadet Leggings

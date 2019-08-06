@@ -25,7 +25,7 @@ _.Zones =
 				}),
 				q(26148, {	-- A Decisive Strike
 					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
-					["coord"] = { 23.4, 74.9, 48 },
+					["coord"] = { 23.3, 75.0, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1092,	-- Captain Rugelfuss
 					["g"] = {
@@ -64,10 +64,8 @@ _.Zones =
 					},
 				}),
 				q(26929, {	-- A Load of Croc
-				--	unclear if this quest is required for the achievement
-				--	it's picked up in thelsamar after the first criteria + algaz station are complete, so it'd be a part of the second criteria if it is
 					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
-					["coord"] = { 34.8, 49.0, 48 },
+					["coord"] = { 34.7, 49.1, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44345,	-- Cannary Caskshot
 				}),
@@ -80,8 +78,6 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(26846, {	-- A Nasty Exploit
-				--	unclear if this quest is required for the achievement
-				--	it's picked up in algaz station after the first criteria is complete, so it'd be a part of the second criteria if it is
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
 					["coord"] = { 25.5, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
@@ -89,31 +85,29 @@ _.Zones =
 				}),
 				q(27115, {	-- Ando's Call
 					["sourceQuests"] = { 27078 },	-- Gor'kresh
-					["coord"] = { 64.0, 26.8, 48 },
+					["coord"] = { 64.1, 26.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1073,	-- Ashlan Stonesmirk
 				}),
 				q(26843, {	-- A Tiny, Clever Commander
 					["sourceQuests"] = { 13636 },	-- Stormpike's Orders
-					["coord"] = { 25.5, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1343,	-- Mountaineer Stormpike
 				}),
 				q(26868, {	-- Axis of Awful
 					["sourceQuests"] = { 26928 },	-- Smells Like a Plan
-					["coord"] = { 34.8, 49.0, 48 },
+					["coord"] = { 34.7, 49.1, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44345,	-- Cannary Caskshot
 				}),
 				q(1655,  {	-- Bailor's Ore Shipment
 					["classes"] = { 2 },	-- Paladin
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 6241,	-- 
+					["qg"] = 6241,	--
 					["u"] = 40,	-- Legacy Quests
 				}),
 				q(26147, {	-- Bigger and Uglier
-				--	unclear if this quest is required for the achievement
-				--	it's picked up in the valley of kings, prior to getting to thelsamar, so it'd be part of the first criteria if it is
 					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
 					["coord"] = { 23.4, 74.9, 48 },
 					["races"] = ALLIANCE_ONLY,
@@ -137,27 +131,25 @@ _.Zones =
 				}),
 				q(27032, {	-- Bird is the Word
 					["sourceQuests"] = { 27031 },	-- Wing Nut
-					["coord"] = { 81.7, 64.6, 48 },
+					["coord"] = { 81.6, 64.7, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6577,	-- Bingles Blastenheimer
 				}),
 				q(26932, {	-- Buzz Off
-				--	unclear if this quest is required for the achievement
-				--	it's picked up in thelsamar after the first criteria + algaz station are complete, so it'd be a part of the second criteria if it is
 					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
-					["coord"] = { 34.9, 46.7, 48 },
+					["coord"] = { 35.0, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1340,	-- Mountaineer Kadrell
 				}),
 				q(26137, {	-- Checking on the Boys
-					["isBreadcrumb"] = true,	-- for The Stolen Keg
-					["coord"] = { 25.5, 17.9, 48 },
+					["isBreadcrumb"] = true,
+					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1343,	-- Mountaineer Stormpike
 				}),
 				q(27077, {	-- Clutching at Chaos
 					["sourceQuests"] = { 27074 },	-- Fight the Hammer
-					["coord"] = { 64.1, 26.7, 48 },
+					["coord"] = { 64.1, 26.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1073,	-- Ashlan Stonesmirk
 				}),
@@ -172,14 +164,14 @@ _.Zones =
 				}),
 				q(27026, {	-- Defcon: Bobcat
 					["sourceQuests"] = { 27025 },	-- Thistle While You Work
-					["coord"] = { 82.8, 63.3, 48 },
+					["coord"] = { 82.7, 63.4, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44859,	-- Safety Warden Pipsy
 				}),
 				q(13652, {	-- Defense of the Stonewrought Dam
 					["u"] = 40,	-- Legacy Quests
 				}),
-				q(298, {	-- Excavation Progress Report
+				q(298,   {	-- Excavation Progress Report
 					["qg"] = 1344,	-- Prospector Ironband
 					["coord"] = { 65.9, 65.6, 48 },
 					["races"] = ALLIANCE_ONLY,
@@ -187,48 +179,49 @@ _.Zones =
 				}),
 				q(13656, {	-- Explorers' League Document (1 of 6)
 				--	["objectID"] = 194387,	-- Stolen Explorers' League Document
-					["coord"] = { 36.7, 61.2, 48 },
+					["coord"] = { 36.7, 61.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\Interface\\Icons\\INV_Scroll_11",
+					["icon"] = "Interface\\Icons\\INV_Scroll_11",
 				}),
 				q(13655, {	-- Explorers' League Document (2 of 6)
-					["objectID"] = 194378,	-- Stolen Explorers' League Document
-					["coord"] = { 41.3, 39.0, 48 },
+					--["objectID"] = 194378,	-- Stolen Explorers' League Document
+					["coord"] = { 41.3, 38.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\Interface\\Icons\\INV_Scroll_11",
+					["icon"] = "Interface\\Icons\\INV_Scroll_11",
 				}),
 				q(13657, {	-- Explorers' League Document (3 of 6)
 				--	["objectID"] = 194388,	-- Stolen Explorers' League Document
-					["coord"] = { 61.6, 73.0, 48 },
+					["coord"] = { 61.6, 73.1, 48 },
 					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\INV_Scroll_11",
 				}),
 				q(13658, {	-- Explorers' League Document (4 of 6)
 				--	["objectID"] = 194389,	-- Stolen Explorers' League Document
-					["coord"] = { 68.1, 66.0, 48 },
+					["coord"] = { 68.1, 66.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\Interface\\Icons\\INV_Scroll_11",
+					["icon"] = "Interface\\Icons\\INV_Scroll_11",
 				}),
 				q(13660, {	-- Explorers' League Document (5 of 6)
 				--	["objectID"] = 194391,	-- Stolen Explorers' League Document
-					["coord"] = { 53.8, 38.0, 48 },
+					["coord"] = { 53.7, 38.1, 48 },
 					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\INV_Scroll_11",
 				}),
 				q(13659, {	-- Explorers' League Document (6 of 6)
 				--	["objectID"] = 194390,	-- Stolen Explorers' League Document
-					["coord"] = { 73.0, 35.9, 48 },
+					["coord"] = { 73.1, 35.8, 48 },
 					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\INV_Scroll_11",
 				}),
 				q(27074, {	-- Fight the Hammer
 					["sourceQuests"] = { 27035 },	-- Standing Up
-					["coord"] = { 58.6, 29.1, 48 },
+					["coord"] = { 58.5, 29.1, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44870,	-- Ando Blastenheimer
 				}),
 				q(26863, {	-- Filthy Paws
-				--	unclear if this quest is required for the achievement
-				--	it's picked up in algaz station after the first criteria is complete, so it'd be a part of the second criteria if it is
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
-					["coord"] = { 25.5, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1343,	-- Mountaineer Stormpike
 					["g"] = {
@@ -247,12 +240,12 @@ _.Zones =
 					},
 				}),
 				q(27030, {	-- Foxtails By The Handful
-					["coord"] = { 81.8, 61.7, 48 },
+					["coord"] = { 81.7, 61.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1154,	-- Marek Ironheart
 				}),
 				q(26961, {	-- Gathering Idols
-					["coord"] = { 64.9, 66.5, 48 },
+					["coord"] = { 64.8, 66.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1345,	-- Magmar Felhew
 					["g"] = {
@@ -276,7 +269,7 @@ _.Zones =
 						27077,	-- Clutching at Chaos
 						27075,	-- Servants of Cho'gall
 					},
-					["coord"] = { 64.0, 26.7, 48 },
+					["coord"] = { 64.1, 26.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1073,	-- Ashlan Stonesmirk
 				}),
@@ -292,27 +285,27 @@ _.Zones =
 					["coord"] = { 37.1, 47.8, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1153,	-- Torren Squarejaw
-					["g"] = {	
+					["g"] = {
 						i(58993),	-- Old Dwarven Hammer
 						i(58991),	-- Star Shooter
-						i(156932),	-- Surveyor's Staff 
+						i(156932),	-- Surveyor's Staff
 						i(58992),	-- Uncovered Breastplate
 						i(131300),	-- Uncovered Chestguard
 					},
 				}),
 				q(27034, {	-- He's That Age
 					["sourceQuests"] = { 27033 },	-- Skystrider's Heart
-					["coord"] = { 81.7, 64.6, 48 },
+					["coord"] = { 81.6, 64.7, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6577,	-- Bingles Blastenheimer
 				}),
 				q(27028, {	-- Hornet Hunting
-					["coord"] = { 81.8, 61.7, 48 },
+					["coord"] = { 81.7, 61.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1154,	-- Marek Ironheart
 				}),
 				q(26146, {	-- In Defense of the King's Lands
-					["coord"] = { 23.4, 74.9, 48 },
+					["coord"] = { 23.3, 75.0, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1092,	-- Captain Rugelfuss
 					["g"] = {
@@ -332,8 +325,6 @@ _.Zones =
 					},
 				}),
 				q(13647, {	-- Joining the Hunt
-				--	unclear if this quest is required for the achievement — it links ironband's excavation to the farstrider lodge
-				--	not sure if it needs to be marked as a breadcrumb / not sure if it is invalidated by any other quests, but it didn't hide any quests
 					["sourceQuests"] = {
 						26961,	-- Gathering Idols
 						13650,	-- Keep Your Hands Off The Goods!
@@ -350,25 +341,25 @@ _.Zones =
 				}),
 				q(26844, {	-- Kobold and Kobolder
 					["sourceQuests"] = { 26843 },	-- A Tiny, Clever Commander
-					["coord"] = { 25.5, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1343,	-- Mountaineer Stormpike
 				}),
 				q(25118, {	-- Looking for Lurkers
-					["coord"] = { 35.3, 42.8, 48 },
+					["coord"] = { 36, 44.2, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1777,	-- Dakk Blunderblast
 				}),
 				q(26176, {	-- Onward to Thelsamar
 					["sourceQuests"] = { 26148 },	-- A Decisive Strike
-					["isBreadcrumb"] = true,	-- for Out of Gnoll-where
+					["isBreadcrumb"] = true,
 					["coord"] = { 23.4, 74.9, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1092,	-- Captain Rugelfuss
 				}),
 				q(26842, {	-- Out of Gnoll-where
 					["sourceQuests"] = { 26176 },	-- Onward to Thelsamar
-					["coord"] = { 35.1, 46.7, 48 },
+					["coord"] = { 35.0, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1340,	-- Mountaineer Kadrell
 				}),
@@ -396,7 +387,7 @@ _.Zones =
 						un(2, i(58976)), 	-- Rat Ear Cloak
 					},
 				}),
-				q(301, {	-- Report to Ironforge
+				q(301,   {	-- Report to Ironforge
 					["qg"] = 1105,	-- Jern Hornhelm
 					["coord"] = { 37.2, 47.4, 48 },
 					["sourceQuest"] = 298,	-- Excavation Progress Report
@@ -409,7 +400,7 @@ _.Zones =
 					["sourceQuest"] = 26868,	-- Axis of Awful
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(273, {	-- Resupplying the Excavation (Legacy)
+				q(273,   {	-- Resupplying the Excavation (Legacy)
 					["qg"] = 1105,	-- Jern Hornhelm
 					["coord"] = { 37.2, 47.4, 48 },
 					["sourceQuest"] = 302,	-- Powder to Ironband
@@ -428,32 +419,32 @@ _.Zones =
 				}),
 				q(27075, {	-- Servants of Cho'gall
 					["sourceQuests"] = { 27074 },	-- Fight the Hammer
-					["coord"] = { 64.1, 26.7, 48 },
+					["coord"] = { 64.1, 26.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1073,	-- Ashlan Stonesmirk
 				}),
 				q(27033, {	-- Skystrider's Heart
 					["sourceQuests"] = { 27032 },	-- Bird is the Word
-					["coord"] = { 78.4, 76.3, 48 },
+					["coord"] = { 78.5, 76.2, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44618,	-- Rusted Skystrider
 				}),
 				q(13635, {	-- South Gate Status Report
 					["sourceQuests"] = { 26855 },	-- A Pilot's Revenge
-					["isBreadcrumb"] = true,	-- for The Trogg Threat
-					["coord"] = { 14.0, 56.6, 48 },
+					["isBreadcrumb"] = true,
+					["coord"] = { 14.0, 56.4, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1960,	-- Pilot Hammerfoot
 				}),
 				q(26928, {	-- Smells Like A Plan
 					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
-					["coord"] = { 34.8, 49.0, 48 },
+					["coord"] = { 34.7, 49.1, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44345,	-- Cannary Caskshot
 				}),
 				q(27035, {	-- Standing Up
 					["sourceQuests"] = { 27034 },	-- He's That Age
-					["coord"] = { 58.6, 29.1, 48 },
+					["coord"] = { 58.5, 29.1, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44870,	-- Ando Blastenheimer
 				}),
@@ -462,19 +453,19 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 				}),
 				q(13636, {	-- Stormpike's Orders
-					["coord"] = { 35.1, 46.7, 48 },
+					["coord"] = { 35.0, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1340,	-- Mountaineer Kadrell
 				}),
 				q(26927, {	-- Suddenly, Murlocs!
 					["sourceQuests"] = { 26864 },	-- The Bearer of Gnoll-edge
-					["coord"] = { 34.9, 46.7, 48 },
+					["coord"] = { 35.0, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1340,	-- Mountaineer Kadrell
 				}),
 				q(26864, {	-- The Bearer of Gnoll-edge
 					["sourceQuests"] = { 26845 },	-- Who's in Charge Here?
-					["coord"] = { 25.5, 17.8, 48 },
+					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1343,	-- Mountaineer Stormpike
 				}),
@@ -483,7 +474,7 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 				}),
 				q(27016, {	-- The Joy of Boar Hunting
-					["coord"] = { 83.4, 65.2, 48 },
+					["coord"] = { 83.4, 65.4, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1187,	-- Daryl the Youngling
 				}),
@@ -502,8 +493,16 @@ _.Zones =
 						i(156933),	-- Mori's Pocketknife
 					},
 				}),
+				q(418,   {	-- Thelsamar Blood Sausages
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1963,	-- Vidra Hearthstove
+					["g"] = {
+						i(3679),	-- Recipe: Blood Sausage
+					},
+				}),
 				q(26860, {	-- Thelsamar Blood Sausages
-					["coord"] = { 34.7, 49.1, 48 },
+					["coord"] = { 34.8, 49.2, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1963,	-- Vidra Hearthstove
 					["g"] = {
@@ -511,33 +510,42 @@ _.Zones =
 					},
 				}),
 				q(26145, {	-- The Trogg Threat
-				--	unclear if this quest is required for the achievement
-				--	it's picked up in the valley of kings, prior to getting to thelsamar, so it'd be part of the first criteria if it is
 					["sourceQuests"] = { 13635 },	-- South Gate Status Report
-					["coord"] = { 23.4, 74.9, 48 },
+					["coord"] = { 23.3, 74.9, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1089,	-- Mountaineer Cobbleflint
 				}),
 				q(27116, {	-- The Winds of Loch Modan
 					["sourceQuests"] = { 27115 },	-- Ando's Call
-					["coord"] = { 58.6, 29.1, 48 },
+					["coord"] = { 58.5, 29.1, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44870,	-- Ando Blastenheimer
 				}),
 				q(27025, {	-- Thistle While You Work
-					["coord"] = { 82.8, 63.3, 48 },
+					["coord"] = { 82.7, 63.4, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44859,	-- Safety Warden Pipsy
 				}),
+				q(271,   {	-- Vyrin's Revenge (#1)
+					["u"] = 40,
+					["qg"] = 1156,	-- Vyrin Swiftwind
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(27036, {	-- Vyrin's Revenge (#1)
 					["sourceQuests"] = { 27016 },	-- The Joy of Boar Hunting
-					["coord"] = { 82.0, 64.4, 48 },
+					["coord"] = { 81.9, 64.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1156,	-- Vyrin Swiftwind
 				}),
+				q(271,   {	-- Vyrin's Revenge (#2)
+					["u"] = 40,
+					["qg"] = 1187,	-- Daryl the Youngling
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 271,	-- Vyrin's Revenge (#1)
+				}),
 				q(27037, {	-- Vyrin's Revenge (#2)
 					["sourceQuests"] = { 27036 },	-- Vyrin's Revenge (#1)
-					["coord"] = { 83.4, 65.1, 48 },
+					["coord"] = { 83.4, 65.4, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1187,	-- Daryl the Youngling
 					["g"] = {
@@ -560,18 +568,18 @@ _.Zones =
 				}),
 				q(13648, {	-- WANTED: The Dark Iron Spy
 				--	["objectID"] = 256,	-- Wanted!
-					["coord"] = { 37.2, 46.3, 48 },
+					["coord"] = { 37.3, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 				}),
 				q(26845, {	-- Who's In Charge Here?
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
-					["coord"] = { 25.5, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1343,	-- Mountaineer Stormpike
 				}),
-				q(27031, {	-- Wing Nut	
-					["coord"] = { 81.7, 64.6, 48 },
+				q(27031, {	-- Wing Nut
+					["coord"] = { 81.6, 64.7, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6577,	-- Bingles Blastenheimer
 				}),
