@@ -27,10 +27,10 @@ _.Zones =
 						i(44606),	-- Toy Train Set Toy
 						i(45057),	-- Wind-Up Train Wrecker Toy
 						i(69896, {	-- Yellow Balloon Toy
-							["u"] = 20,	-- Only available during Children's Week
+							["u"] = 20,	-- Children's Week
 						}),
 						i(69895, {	-- Green Balloon Toy
-							["u"] = 20,	-- Only available during Children's Week
+							["u"] = 20,	-- Children's Week
 						}),
 					},
 				}),
@@ -407,23 +407,47 @@ _.Zones =
 					["coord"] = { 60.6, 58.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(54440, {	-- Dreamcloth
-							i(54601),	-- Pattern: Belt of the Depths
-							i(54602),	-- Pattern: Dreamless Belt
-							i(54603),	-- Pattern: Breeches of Mended Nightmares
-							i(54604),	-- Pattern: Flame-Ascended Pantaloons
-							i(54605),	-- Pattern: Illusionary Bag
+						i(54601, {	-- Pattern: Belt of the Depths
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
 						}),
-						i(53643, {	-- Bolt of Embersilk Cloth
-							i(68199),	-- Pattern: Black Embersilk Gown
-							i(54600),	-- Pattern: Powerful Ghostly Spellthread
-							i(54599),	-- Pattern: Powerful Enchanted Spellthread
-							i(54593),	-- Pattern: Vicious Embersilk Cowl
-							i(54594),	-- Pattern: Vicious Embersilk Pants
-							i(54595),	-- Pattern: Vicious Embersilk Robe
-							i(54596),	-- Pattern: Vicious Fireweave Cowl
-							i(54597),	-- Pattern: Vicious Fireweave Pants
-							i(54598),	-- Pattern: Vicious Fireweave Robe
+						i(54602, {	-- Pattern: Dreamless Belt
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						}),
+						i(54603, {	-- Pattern: Breeches of Mended Nightmares
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						}),
+						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						}),
+						i(54605, {	-- Pattern: Illusionary Bag
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						}),
+						i(68199, {	-- Pattern: Black Embersilk Gown
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54600, {	-- Pattern: Powerful Ghostly Spellthread
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54599, {	-- Pattern: Powerful Enchanted Spellthread
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54593, {	-- Pattern: Vicious Embersilk Cowl
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54594, {	-- Pattern: Vicious Embersilk Pants
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54595, {	-- Pattern: Vicious Embersilk Robe
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54596, {	-- Pattern: Vicious Fireweave Cowl
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54597, {	-- Pattern: Vicious Fireweave Pants
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54598, {	-- Pattern: Vicious Fireweave Robe
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
 						i(6270),	-- Pattern: Blue Linen Vest
 						i(6274),	-- Pattern: Blue Overalls
@@ -433,12 +457,15 @@ _.Zones =
 					},
 				}),
 				n(12793,  {	-- Brave Stonehide <Accessories Quartermaster>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 38.2, 72.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(15199),	-- Stone Guard's Herald
-						i(15197),	-- Scout's Tabard
+						i(15199, {	-- Stone Guard's Herald
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(15197, {	-- Scout's Tabard
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
 						un(2, i(18834)),	-- Insignia of the Horde [Warrior]
 						un(2, i(18845)),	-- Insignia of the Horde [Shaman]
 						un(2, i(18846)),	-- Insignia of the Horde [Hunter]
@@ -470,17 +497,35 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 41.8, 73.0, 85 },
 					["g"] = {
-						i(103533, {	-- Vicious Saddle
-							i(70910),	-- Horn of the Vicious War Wolf Mount
-							i(102533),	-- Reins of the Vicious Skeletal Warhorse Mount
-							i(142235),	-- Vicious War Bear
-							i(152869),	-- Vicious War Fox
-							i(124540),	-- Vicious War Kodo Mount
-							i(116778),	-- Vicious War Raptor Mount
-							i(142437),	-- Vicious War Scorpion Mount
-							i(140354),	-- Vicious War Trike Mount
-							i(143649),	-- Vicious War Turtle Mount
-							i(140348),	-- Vicious Warstrider Mount
+						i(70910, {	-- Horn of the Vicious War Wolf Mount
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(102533, {	-- Reins of the Vicious Skeletal Warhorse Mount
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(142235, {	-- Vicious War Bear
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(152869, {	-- Vicious War Fox
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(124540, {	-- Vicious War Kodo Mount
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(116778, {	-- Vicious War Raptor Mount
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(142437, {	-- Vicious War Scorpion Mount
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(140354, {	-- Vicious War Trike Mount
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(143649, {	-- Vicious War Turtle Mount
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(140348, {	-- Vicious Warstrider Mount
+							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
 					},
 				}),
@@ -1077,7 +1122,7 @@ _.Zones =
 					},
 				}),
 				n(3367,   {	-- Felika <Trade Supplies>
-					["description"] = "This npc walks between the Valley of Wisdom and Valley of Strength on the right path.",
+					["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
 					["coords"] = {
 						{ 48.4, 47.8, 85 },
 						{ 52.6, 64.6, 85 },
@@ -1264,207 +1309,578 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 48.4, 71.6, 85 },
 					["g"] = {
-						i(71523),	-- Immolation Handguards
-						i(71608),	-- Shoulderguards of the Molten Giant
-						i(71477),	-- Elementium Deathplate Gauntlets
-						i(71478),	-- Elementium Deathplate Helmet
-						i(71479),	-- Elementium Deathplate Greaves
-						i(71480),	-- Elementium Deathplate Pauldrons
-						i(71481),	-- Elementium Deathplate Chestguard
-						i(71482),	-- Elementium Deathplate Handguards
-						i(71483),	-- Elementium Deathplate Faceguard
-						i(71484),	-- Elementium Deathplate Legguards
-						i(71485),	-- Elementium Deathplate Shoulderguards
-						i(71486),	-- Obsidian Arborweave Raiment
-						i(71487),	-- Obsidian Arborweave Grips
-						i(71488),	-- Obsidian Arborweave Headpiece
-						i(71489),	-- Obsidian Arborweave Legguards
-						i(71490),	-- Obsidian Arborweave Spaulders
-						i(71491),	-- Obsidian Arborweave Handwraps
-						i(71492),	-- Obsidian Arborweave Helm
-						i(71493),	-- Obsidian Arborweave Legwraps
-						i(71494),	-- Obsidian Arborweave Tunic
-						i(71495),	-- Obsidian Arborweave Mantle
-						i(71496),	-- Obsidian Arborweave Gloves
-						i(71497),	-- Obsidian Arborweave Cover
-						i(71498),	-- Obsidian Arborweave Leggings
-						i(71499),	-- Obsidian Arborweave Vestment
-						i(71500),	-- Obsidian Arborweave Shoulderwraps
-						i(71501),	-- Flamewaker's Tunic
-						i(71502),	-- Flamewaker's Gloves
-						i(71503),	-- Flamewaker's Headguard
-						i(71504),	-- Flamewaker's Legguards
-						i(71505),	-- Flamewaker's Spaulders
-						i(71507),	-- Firehawk Gloves
-						i(71508),	-- Firehawk Hood
-						i(71509),	-- Firehawk Leggings
-						i(71510),	-- Firehawk Robes
-						i(71511),	-- Firehawk Mantle
-						i(71512),	-- Immolation Battleplate
-						i(71513),	-- Immolation Gauntlets
-						i(71514),	-- Immolation Helmet
-						i(71515),	-- Immolation Legplates
-						i(71516),	-- Immolation Pauldrons
-						i(71517),	-- Immolation Breastplate
-						i(71518),	-- Immolation Gloves
-						i(71519),	-- Immolation Headguard
-						i(71520),	-- Immolation Greaves
-						i(71521),	-- Immolation Mantle
-						i(71522),	-- Immolation Chestguard
-						i(71476),	-- Elementium Deathplate Breastplate
-						i(71524),	-- Immolation Faceguard
-						i(71525),	-- Immolation Legguards
-						i(71526),	-- Immolation Shoulderguards
-						i(71527),	-- Handwraps of the Cleansing Flame
-						i(71528),	-- Cowl of the Cleansing Flame
-						i(71529),	-- Legwraps of the Cleansing Flame
-						i(71530),	-- Robes of the Cleansing Flame
-						i(71531),	-- Mantle of the Cleansing Flame
-						i(71532),	-- Gloves of the Cleansing Flame
-						i(71533),	-- Hood of the Cleansing Flame
-						i(71534),	-- Leggings of the Cleansing Flame
-						i(71535),	-- Vestment of the Cleansing Flame
-						i(71536),	-- Shoulderwraps of the Cleansing Flame
-						i(71537),	-- Dark Phoenix Tunic
-						i(71538),	-- Dark Phoenix Gloves
-						i(71539),	-- Dark Phoenix Helmet
-						i(71540),	-- Dark Phoenix Legguards
-						i(71541),	-- Dark Phoenix Spaulders
-						i(71542),	-- Erupting Volcanic Tunic
-						i(71543),	-- Erupting Volcanic Handwraps
-						i(71544),	-- Erupting Volcanic Faceguard
-						i(71545),	-- Erupting Volcanic Legwraps
-						i(71546),	-- Erupting Volcanic Mantle
-						i(71547),	-- Erupting Volcanic Cuirass
-						i(71548),	-- Erupting Volcanic Grips
-						i(71549),	-- Erupting Volcanic Helmet
-						i(71550),	-- Erupting Volcanic Legguards
-						i(71551),	-- Erupting Volcanic Spaulders
-						i(71552),	-- Erupting Volcanic Hauberk
-						i(71553),	-- Erupting Volcanic Gloves
-						i(71554),	-- Erupting Volcanic Headpiece
-						i(71555),	-- Erupting Volcanic Kilt
-						i(71556),	-- Erupting Volcanic Shoulderwraps
-						i(71594),	-- Balespider's Handwraps
-						i(71595),	-- Balespider's Hood
-						i(71596),	-- Balespider's Leggings
-						i(71597),	-- Balespider's Robes
-						i(71598),	-- Balespider's Mantle
-						i(71599),	-- Helmet of the Molten Giant
-						i(71600),	-- Battleplate of the Molten Giant
-						i(71601),	-- Gauntlets of the Molten Giant
-						i(71602),	-- Legplates of the Molten Giant
-						i(71603),	-- Pauldrons of the Molten Giant
-						i(71604),	-- Chestguard of the Molten Giant
-						i(71605),	-- Handguards of the Molten Giant
-						i(71606),	-- Faceguard of the Molten Giant
-						i(71607),	-- Legguards of the Molten Giant
-						i(71285),	-- Balespider's Mantle
-						i(71286),	-- Firehawk Gloves
-						i(71287),	-- Firehawk Hood
-						i(71288),	-- Firehawk Leggings
-						i(71289),	-- Firehawk Robes
-						i(71290),	-- Firehawk Mantle
-						i(71291),	-- Erupting Volcanic Hauberk
-						i(71292),	-- Erupting Volcanic Gloves
-						i(71293),	-- Erupting Volcanic Headpiece
-						i(71294),	-- Erupting Volcanic Kilt
-						i(70937),	-- Bracers of Regal Force
-						i(71296),	-- Erupting Volcanic Tunic
-						i(71297),	-- Erupting Volcanic Handwraps
-						i(71298),	-- Erupting Volcanic Faceguard
-						i(71299),	-- Erupting Volcanic Legwraps
-						i(71300),	-- Erupting Volcanic Mantle
-						i(71301),	-- Erupting Volcanic Cuirass
-						i(71302),	-- Erupting Volcanic Grips
-						i(71303),	-- Erupting Volcanic Helmet
-						i(71304),	-- Erupting Volcanic Legguards
-						i(71305),	-- Erupting Volcanic Spaulders
-						i(70941),	-- Shoulderguards of the Molten Giant
-						i(70942),	-- Legguards of the Molten Giant
-						i(70943),	-- Handguards of the Molten Giant
-						i(70944),	-- Faceguard of the Molten Giant
-						i(70945),	-- Chestguard of the Molten Giant
-						i(70946),	-- Immolation Shoulderguards
-						i(70947),	-- Immolation Legguards
-						i(70948),	-- Immolation Faceguard
-						i(70949),	-- Immolation Handguards
-						i(70950),	-- Immolation Chestguard
-						i(70951),	-- Elementium Deathplate Shoulderguards
-						i(70952),	-- Elementium Deathplate Legguards
-						i(70953),	-- Elementium Deathplate Handguards
-						i(70954),	-- Elementium Deathplate Faceguard
-						i(70955),	-- Elementium Deathplate Chestguard
-						i(71045),	-- Dark Phoenix Tunic
-						i(71046),	-- Dark Phoenix Gloves
-						i(71047),	-- Dark Phoenix Helmet
-						i(71048),	-- Dark Phoenix Legguards
-						i(71049),	-- Dark Phoenix Spaulders
-						i(71050),	-- Flamewaker's Gloves
-						i(71051),	-- Flamewaker's Headguard
-						i(71052),	-- Flamewaker's Legguards
-						i(71053),	-- Flamewaker's Spaulders
-						i(71054),	-- Flamewaker's Tunic
-						i(71058),	-- Elementium Deathplate Breastplate
-						i(71059),	-- Elementium Deathplate Gauntlets
-						i(71060),	-- Elementium Deathplate Helmet
-						i(71061),	-- Elementium Deathplate Greaves
-						i(71062),	-- Elementium Deathplate Pauldrons
-						i(71063),	-- Immolation Battleplate
-						i(71064),	-- Immolation Gauntlets
-						i(71065),	-- Immolation Helmet
-						i(71066),	-- Immolation Legplates
-						i(71067),	-- Immolation Pauldrons
-						i(71068),	-- Battleplate of the Molten Giant
-						i(71069),	-- Gauntlets of the Molten Giant
-						i(71070),	-- Helmet of the Molten Giant
-						i(71071),	-- Legplates of the Molten Giant
-						i(71072),	-- Pauldrons of the Molten Giant
-						i(71091),	-- Immolation Breastplate
-						i(71092),	-- Immolation Gloves
-						i(71093),	-- Immolation Headguard
-						i(71094),	-- Immolation Greaves
-						i(71095),	-- Immolation Mantle
-						i(71097),	-- Obsidian Arborweave Grips
-						i(71098),	-- Obsidian Arborweave Headpiece
-						i(71099),	-- Obsidian Arborweave Legguards
-						i(71100),	-- Obsidian Arborweave Raiment
-						i(71101),	-- Obsidian Arborweave Spaulders
-						i(71102),	-- Obsidian Arborweave Handwraps
-						i(71103),	-- Obsidian Arborweave Helm
-						i(71104),	-- Obsidian Arborweave Legwraps
-						i(71105),	-- Obsidian Arborweave Tunic
-						i(71106),	-- Obsidian Arborweave Mantle
-						i(71107),	-- Obsidian Arborweave Gloves
-						i(71108),	-- Obsidian Arborweave Cover
-						i(71109),	-- Obsidian Arborweave Leggings
-						i(71110),	-- Obsidian Arborweave Vestment
-						i(71111),	-- Obsidian Arborweave Shoulderwraps
-						i(71130),	-- Flamebinder Bracers
-						i(71150), 	-- Scorchvine Wand
-						i(71151),	-- Trail of Embers
-						i(71260),	-- Bracers of Imperious Truths
-						i(71261),	-- Gigantiform Bracers
-						i(71262),	-- Smolderskull Bindings
-						i(71263),	-- Bracers of Misting Ash
-						i(71264),	-- Bracers of Forked Lightning
-						i(71265),	-- Emberflame Bracers
-						i(71266),	-- Firesoul Wristguards
-						i(71271),	-- Handwraps of the Cleansing Flame
-						i(71272),	-- Cowl of the Cleansing Flame
-						i(71273),	-- Legwraps of the Cleansing Flame
-						i(71274),	-- Robes of the Cleansing Flame
-						i(71275),	-- Mantle of the Cleansing Flame
-						i(71276),	-- Gloves of the Cleansing Flame
-						i(71277),	-- Hood of the Cleansing Flame
-						i(71278),	-- Leggings of the Cleansing Flame
-						i(71279),	-- Vestment of the Cleansing Flame
-						i(71280),	-- Shoulderwraps of the Cleansing Flame
+						i(71213),	-- Amulet of Burning Brilliance
 						i(71281),	-- Balespider's Handwraps
+						i(71594, {	-- Balespider's Handwraps
+							["cost"] = {
+								{ "i", 71281, 1 },	-- Balespider's Handwraps
+								{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
+							},
+						}),
 						i(71282),	-- Balespider's Hood
+						i(71595, {	-- Balespider's Hood
+							["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+						}),
 						i(71283),	-- Balespider's Leggings
+						i(71596, {	-- Balespider's Leggings
+							["cost"] = {
+								{ "i", 71283, 1 },	-- Balespider's Leggings
+								{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
+							},
+						}),
+						i(71285),	-- Balespider's Mantle
+						i(71598, {	-- Balespider's Mantle
+							["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+						}),
 						i(71284),	-- Balespider's Robes
+						i(71597, {	-- Balespider's Robes
+							["cost"] = {
+								{ "i", 71284, 1 },	-- Balespider's Robes
+								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
+							},
+						}),
+						i(71068),	-- Battleplate of the Molten Giant
+						i(71600, {	-- Battleplate of the Molten Giant
+							["cost"] = {
+								{ "i", 71068, 1 },	-- Battleplate of the Molten Giant
+								{ "i", 71686, 1 },	-- Chest of the Fiery Protector
+							},
+						}),
+						i(71264),	-- Bracers of Forked Lightning
+						i(71260),	-- Bracers of Imperious Truths
+						i(71263),	-- Bracers of Misting Ash
+						i(70937),	-- Bracers of Regal Force
+						i(70945),	-- Chestguard of the Molten Giant
+						i(71604, {	-- Chestguard of the Molten Giant
+							["cost"] = {
+								{ "i", 70945, 1 },	-- Chestguard of the Molten Giant
+								{ "i", 71686, 1 },	-- Chest of the Fiery Protector
+							},
+						}),
+						i(71272),	-- Cowl of the Cleansing Flame
+						i(71528, {	-- Cowl of the Cleansing Flame
+							["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+						}),
+						i(71210),	-- Crystalline Brimstone Ring
+						i(71046),	-- Dark Phoenix Gloves
+						i(71538, {	-- Dark Phoenix Gloves
+							["cost"] = {
+								{ "i", 71046, 1 },	-- Dark Phoenix Gloves
+								{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
+							},
+						}),
+						i(71047),	-- Dark Phoenix Helmet
+						i(71539, {	-- Dark Phoenix Helmet
+							["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+						}),
+						i(71048),	-- Dark Phoenix Legguards
+						i(71540, {	-- Dark Phoenix Legguards
+							["cost"] = {
+								{ "i", 71048, 1 },	-- Dark Phoenix Legguards
+								{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
+							},
+						}),
+						i(71049),	-- Dark Phoenix Spaulders
+						i(71541, {	-- Dark Phoenix Spaulders
+							["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+						}),
+						i(71045),	-- Dark Phoenix Tunic
+						i(71537, {	-- Dark Phoenix Tunic
+							["cost"] = {
+								{ "i", 71045, 1 },	-- Dark Phoenix Tunic
+								{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
+							},
+						}),
+						i(70940),	-- Deflecting Brimstone Band
+						i(71058),	-- Elementium Deathplate Breastplate
+						i(71476, {	-- Elementium Deathplate Breastplate
+							["cost"] = {
+								{ "i", 71058, 1 },	-- Elementium Deathplate Breastplate
+								{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
+							},
+						}),
+						i(70955),	-- Elementium Deathplate Chestguard
+						i(71481, {	-- Elementium Deathplate Chestguard
+							["cost"] = {
+								{ "i", 70955, 1 },	-- Elementium Deathplate Chestguard
+								{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
+							},
+						}),
+						i(70954),	-- Elementium Deathplate Faceguard
+						i(71483, {	-- Elementium Deathplate Faceguard
+							["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+						}),
+						i(71059),	-- Elementium Deathplate Gauntlets
+						i(71477, {	-- Elementium Deathplate Gauntlets
+							["cost"] = {
+								{ "i", 71059, 1 },	-- Elementium Deathplate Gauntlets
+								{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
+							},
+						}),
+						i(71061),	-- Elementium Deathplate Greaves
+						i(71479, {	-- Elementium Deathplate Greaves
+							["cost"] = {
+								{ "i", 71061, 1 },	-- Elementium Deathplate Greaves
+								{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
+							},
+						}),
+						i(70953),	-- Elementium Deathplate Handguards
+						i(71482, {	-- Elementium Deathplate Handguards
+							["cost"] = {
+								{ "i", 70953, 1 },	-- Elementium Deathplate Handguards
+								{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
+							},
+						}),
+						i(71060),	-- Elementium Deathplate Helmet
+						i(71478, {	-- Elementium Deathplate Helmet
+							["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+						}),
+						i(70952),	-- Elementium Deathplate Legguards
+						i(71484, {	-- Elementium Deathplate Legguards
+							["cost"] = {
+								{ "i", 70952, 1 },	-- Elementium Deathplate Legguards
+								{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
+							},
+						}),
+						i(71062),	-- Elementium Deathplate Pauldrons
+						i(71480, {	-- Elementium Deathplate Pauldrons
+							["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+						}),
+						i(70951),	-- Elementium Deathplate Shoulderguards
+						i(71485, {	-- Elementium Deathplate Shoulderguards
+							["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+						}),
+						i(71265),	-- Emberflame Bracers
+						i(71301),	-- Erupting Volcanic Cuirass
+						i(71547, {	-- Erupting Volcanic Cuirass
+							["cost"] = {
+								{ "i", 71301, 1 },	-- Erupting Volcanic Cuirass
+								{ "i", 71686, 1 },	-- Chest of the Fiery Protector
+							},
+						}),
+						i(71298),	-- Erupting Volcanic Faceguard
+						i(71544, {	-- Erupting Volcanic Faceguard
+							["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+						}),
+						i(71292),	-- Erupting Volcanic Gloves
+						i(71553, {	-- Erupting Volcanic Gloves
+							["cost"] = {
+								{ "i", 71292, 1 },	-- Erupting Volcanic Gloves
+								{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
+							},
+						}),
+						i(71302),	-- Erupting Volcanic Grips
+						i(71548, {	-- Erupting Volcanic Grips
+							["cost"] = {
+								{ "i", 71302, 1 },	-- Erupting Volcanic Grips
+								{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
+							},
+						}),
+						i(71297),	-- Erupting Volcanic Handwraps
+						i(71543, {	-- Erupting Volcanic Handwraps
+							["cost"] = {
+								{ "i", 71297, 1 },	-- Erupting Volcanic Handwraps
+								{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
+							},
+						}),
+						i(71291),	-- Erupting Volcanic Hauberk
+						i(71552, {	-- Erupting Volcanic Hauberk
+							["cost"] = {
+								{ "i", 71291, 1 },	-- Erupting Volcanic Hauberk
+								{ "i", 71686, 1 },	-- Chest of the Fiery Protector
+							},
+						}),
+						i(71293),	-- Erupting Volcanic Headpiece
+						i(71554, {	-- Erupting Volcanic Headpiece
+							["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+						}),
+						i(71303),	-- Erupting Volcanic Helmet
+						i(71549, {	-- Erupting Volcanic Helmet
+							["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+						}),
+						i(71294),	-- Erupting Volcanic Kilt
+						i(71555, {	-- Erupting Volcanic Kilt
+							["cost"] = {
+								{ "i", 71294, 1 },	-- Erupting Volcanic Kilt
+								{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
+							},
+						}),
+						i(71304),	-- Erupting Volcanic Legguards
+						i(71550, {	-- Erupting Volcanic Legguards
+							["cost"] = {
+								{ "i", 71304, 1 },	-- Erupting Volcanic Legguards
+								{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
+							},
+						}),
+						i(71299),	-- Erupting Volcanic Legwraps
+						i(71545, {	-- Erupting Volcanic Legwraps
+							["cost"] = {
+								{ "i", 71299, 1 },	-- Erupting Volcanic Legwraps
+								{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
+							},
+						}),
+						i(71300),	-- Erupting Volcanic Mantle
+						i(71546, {	-- Erupting Volcanic Mantle
+							["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+						}),
 						i(71295),	-- Erupting Volcanic Shoulderwraps
+						i(71556, {	-- Erupting Volcanic Shoulderwraps
+							["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+						}),
+						i(71305),	-- Erupting Volcanic Spaulders
+						i(71551, {	-- Erupting Volcanic Spaulders
+							["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+						}),
+						i(71296),	-- Erupting Volcanic Tunic
+						i(71542, {	-- Erupting Volcanic Tunic
+							["cost"] = {
+								{ "i", 71296, 1 },	-- Erupting Volcanic Tunic
+								{ "i", 71686, 1 },	-- Chest of the Fiery Protector
+							},
+						}),
+						i(70944),	-- Faceguard of the Molten Giant
+						i(71606, {	-- Faceguard of the Molten Giant
+							["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+						}),
+						i(71286),	-- Firehawk Gloves
+						i(71507, {	-- Firehawk Gloves
+							["cost"] = {
+								{ "i", 71286, 1 },	-- Firehawk Gloves
+								{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
+							},
+						}),
+						i(71287),	-- Firehawk Hood
+						i(71508, {	-- Firehawk Hood
+							["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+						}),
+						i(71288),	-- Firehawk Leggings
+						i(71509, {	-- Firehawk Leggings
+							["cost"] = {
+								{ "i", 71288, 1 },	-- Firehawk Leggings
+								{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
+							},
+						}),
+						i(71290),	-- Firehawk Mantle
+						i(71511, {	-- Firehawk Mantle
+							["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+						}),
+						i(71289),	-- Firehawk Robes
+						i(71510, {	-- Firehawk Robes
+							["cost"] = {
+								{ "i", 71289, 1 },	-- Firehawk Robes
+								{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
+							},
+						}),
+						i(71214),	-- Firemind Pendant
+						i(71266),	-- Firesoul Wristguards
+						i(71130),	-- Flamebinder Bracers
+						i(71050),	-- Flamewaker's Gloves
+						i(71502, {	-- Flamewaker's Gloves
+							["cost"] = {
+								{ "i", 71050, 1 },	-- Flamewaker's Gloves
+								{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
+							},
+						}),
+						i(71051),	-- Flamewaker's Headguard
+						i(71503, {	-- Flamewaker's Headguard
+							["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+						}),
+						i(71052),	-- Flamewaker's Legguards
+						i(71504, {	-- Flamewaker's Legguards
+							["cost"] = {
+								{ "i", 71052, 1 },	-- Flamewaker's Legguards
+								{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
+							},
+						}),
+						i(71053),	-- Flamewaker's Spaulders
+						i(71505, {	-- Flamewaker's Spaulders
+							["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+						}),
+						i(71054),	-- Flamewaker's Tunic
+						i(71501, {	-- Flamewaker's Tunic
+							["cost"] = {
+								{ "i", 71054, 1 },	-- Flamewaker's Tunic
+								{ "i", 71686, 1 },	-- Chest of the Fiery Protector
+							},
+						}),
+						i(71069),	-- Gauntlets of the Molten Giant
+						i(71601, {	-- Gauntlets of the Molten Giant
+							["cost"] = {
+								{ "i", 71069, 1 },	-- Gauntlets of the Molten Giant
+								{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
+							},
+						}),
+						i(71261),	-- Gigantiform Bracers
+						i(71276),	-- Gloves of the Cleansing Flame
+						i(71532, {	-- Gloves of the Cleansing Flame
+							["cost"] = {
+								{ "i", 71276, 1 },	-- Gloves of the Cleansing Flame
+								{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
+							},
+						}),
+						i(70943),	-- Handguards of the Molten Giant
+						i(71605, {	-- Handguards of the Molten Giant
+							["cost"] = {
+								{ "i", 70943, 1 },	-- Handguards of the Molten Giant
+								{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
+							},
+						}),
+						i(71271),	-- Handwraps of the Cleansing Flame
+						i(71527, {	-- Handwraps of the Cleansing Flame
+							["cost"] = {
+								{ "i", 71271, 1 },	-- Handwraps of the Cleansing Flame
+								{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
+							},
+						}),
+						i(71070),	-- Helmet of the Molten Giant
+						i(71599, {	-- Helmet of the Molten Giant
+							["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+						}),
+						i(71277),	-- Hood of the Cleansing Flame
+						i(71533, {	-- Hood of the Cleansing Flame
+							["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+						}),
+						i(71063),	-- Immolation Battleplate
+						i(71512, {	-- Immolation Battleplate
+							["cost"] = {
+								{ "i", 71063, 1 },	-- Immolation Battleplate
+								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
+							},
+						}),
+						i(71091),	-- Immolation Breastplate
+						i(71517, {	-- Immolation Breastplate
+							["cost"] = {
+								{ "i", 71091, 1 },	-- Immolation Breastplate
+								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
+							},
+						}),
+						i(70950),	-- Immolation Chestguard
+						i(71522, {	-- Immolation Chestguard
+							["cost"] = {
+								{ "i", 70950, 1 },	-- Immolation Chestguard
+								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
+							},
+						}),
+						i(70948),	-- Immolation Faceguard
+						i(71524, {	-- Immolation Faceguard
+							["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+						}),
+						i(71064),	-- Immolation Gauntlets
+						i(71513, {	-- Immolation Gauntlets
+							["cost"] = {
+								{ "i", 71064, 1 },	-- Immolation Gauntlets
+								{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
+							},
+						}),
+						i(71092),	-- Immolation Gloves
+						i(71518, {	-- Immolation Gloves
+							["cost"] = {
+								{ "i", 71092, 1 },	-- Immolation Gloves
+								{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
+							},
+						}),
+						i(71094),	-- Immolation Greaves
+						i(71520, {	-- Immolation Greaves
+							["cost"] = {
+								{ "i", 71094, 1 },	-- Immolation Greaves
+								{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
+							},
+						}),
+						i(70949),	-- Immolation Handguards
+						i(71523, {	-- Immolation Handguards
+							["cost"] = {
+								{ "i", 70949, 1 },	-- Immolation Handguards
+								{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
+							},
+						}),
+						i(71093),	-- Immolation Headguard
+						i(71519, {	-- Immolation Headguard
+							["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+						}),
+						i(71065),	-- Immolation Helmet
+						i(71514, {	-- Immolation Helmet
+							["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+						}),
+						i(70947),	-- Immolation Legguards
+						i(71525, {	-- Immolation Legguards
+							["cost"] = {
+								{ "i", 70947, 1 },	-- Immolation Legguards
+								{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
+							},
+						}),
+						i(71066),	-- Immolation Legplates
+						i(71515, {	-- Immolation Legplates
+							["cost"] = {
+								{ "i", 71066, 1 },	-- Immolation Legplates
+								{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
+							},
+						}),
+						i(71095),	-- Immolation Mantle
+						i(71521, {	-- Immolation Mantle
+							["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+						}),
+						i(71067),	-- Immolation Pauldrons
+						i(71516, {	-- Immolation Pauldrons
+							["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+						}),
+						i(70946),	-- Immolation Shoulderguards
+						i(71526, {	-- Immolation Shoulderguards
+							["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+						}),
+						i(71278),	-- Leggings of the Cleansing Flame
+						i(71534, {	-- Leggings of the Cleansing Flame
+							["cost"] = {
+								{ "i", 71278, 1 },	-- Leggings of the Cleansing Flame
+								{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
+							},
+						}),
+						i(70942),	-- Legguards of the Molten Giant
+						i(71607, {	-- Legguards of the Molten Giant
+							["cost"] = {
+								{ "i", 70942, 1 },	-- Legguards of the Molten Giant
+								{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
+							},
+						}),
+						i(71071),	-- Legplates of the Molten Giant
+						i(71602, {	-- Legplates of the Molten Giant
+							["cost"] = {
+								{ "i", 71071, 1 },	-- Legplates of the Molten Giant
+								{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
+							},
+						}),
+						i(71273),	-- Legwraps of the Cleansing Flame
+						i(71529, {	-- Legwraps of the Cleansing Flame
+							["cost"] = {
+								{ "i", 71273, 1 },	-- Legwraps of the Cleansing Flame
+								{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
+							},
+						}),
+						i(71275),	-- Mantle of the Cleansing Flame
+						i(71531, {	-- Mantle of the Cleansing Flame
+							["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+						}),
+						i(71129),	-- Necklace of Smoke Signals
+						i(71108),	-- Obsidian Arborweave Cover
+						i(71497, {	-- Obsidian Arborweave Cover
+							["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+						}),
+						i(71107),	-- Obsidian Arborweave Gloves
+						i(71496, {	-- Obsidian Arborweave Gloves
+							["cost"] = {
+								{ "i", 71107, 1 },	-- Obsidian Arborweave Gloves
+								{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
+							},
+						}),
+						i(71097),	-- Obsidian Arborweave Grips
+						i(71487, {	-- Obsidian Arborweave Grips
+							["cost"] = {
+								{ "i", 71097, 1 },	-- Obsidian Arborweave Grips
+								{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
+							},
+						}),
+						i(71102),	-- Obsidian Arborweave Handwraps
+						i(71491, {	-- Obsidian Arborweave Handwraps
+							["cost"] = {
+								{ "i", 71102, 1 },	-- Obsidian Arborweave Handwraps
+								{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
+							},
+						}),
+						i(71098),	-- Obsidian Arborweave Headpiece
+						i(71488, {	-- Obsidian Arborweave Headpiece
+							["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+						}),
+						i(71103),	-- Obsidian Arborweave Helm
+						i(71492, {	-- Obsidian Arborweave Helm
+							["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+						}),
+						i(71109),	-- Obsidian Arborweave Leggings
+						i(71498, {	-- Obsidian Arborweave Leggings
+							["cost"] = {
+								{ "i", 71109, 1 },	-- Obsidian Arborweave Leggings
+								{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
+							},
+						}),
+						i(71099),	-- Obsidian Arborweave Legguards
+						i(71489, {	-- Obsidian Arborweave Legguards
+							["cost"] = {
+								{ "i", 71099, 1 },	-- Obsidian Arborweave Legguards
+								{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
+							},
+						}),
+						i(71104),	-- Obsidian Arborweave Legwraps
+						i(71493, {	-- Obsidian Arborweave Legwraps
+							["cost"] = {
+								{ "i", 71104, 1 },	-- Obsidian Arborweave Legwraps
+								{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
+							},
+						}),
+						i(71106),	-- Obsidian Arborweave Mantle
+						i(71495, {	-- Obsidian Arborweave Mantle
+							["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+						}),
+						i(71100),	-- Obsidian Arborweave Raiment
+						i(71486, {	-- Obsidian Arborweave Raiment
+							["cost"] = {
+								{ "i", 71100, 1 },	-- Obsidian Arborweave Raiment
+								{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
+							},
+						}),
+						i(71111),	-- Obsidian Arborweave Shoulderwraps
+						i(71500, {	-- Obsidian Arborweave Shoulderwraps
+							["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+						}),
+						i(71101),	-- Obsidian Arborweave Spaulders
+						i(71490, {	-- Obsidian Arborweave Spaulders
+							["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+						}),
+						i(71105),	-- Obsidian Arborweave Tunic
+						i(71494, {	-- Obsidian Arborweave Tunic
+							["cost"] = {
+								{ "i", 71105, 1 },	-- Obsidian Arborweave Tunic
+								{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
+							},
+						}),
+						i(71110),	-- Obsidian Arborweave Vestment
+						i(71499, {	-- Obsidian Arborweave Vestment
+							["cost"] = {
+								{ "i", 71110, 1 },	-- Obsidian Arborweave Vestment
+								{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
+							},
+						}),
+						i(71072),	-- Pauldrons of the Molten Giant
+						i(71603, {	-- Pauldrons of the Molten Giant
+							["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+						}),
+						i(71274),	-- Robes of the Cleansing Flame
+						i(71530, {	-- Robes of the Cleansing Flame
+							["cost"] = {
+								{ "i", 71274, 1 },	-- Robes of the Cleansing Flame
+								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
+							},
+						}),
+						i(71150), 	-- Scorchvine Wand
+						i(71208),	-- Serrated Brimstone Signet
+						i(70941),	-- Shoulderguards of the Molten Giant
+						i(71608, {	-- Shoulderguards of the Molten Giant
+							["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+						}),
+						i(71280),	-- Shoulderwraps of the Cleansing Flame
+						i(71536, {	-- Shoulderwraps of the Cleansing Flame
+							["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+						}),
+						i(71262),	-- Smolderskull Bindings
+						i(71211),	-- Soothing Brimstone Circle
+						i(71209),	-- Splintered Brimstone Seal
+						i(71212),	-- Stoneheart Choker
+						i(70935),	-- Stoneheart Necklace
+						i(71151),	-- Trail of Embers
+						i(71279),	-- Vestment of the Cleansing Flame
+						i(71535, {	-- Vestment of the Cleansing Flame
+							["cost"] = {
+								{ "i", 71279, 1 },	-- Vestment of the Cleansing Flame
+								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
+							},
+						}),
 					},
 				}),
 				n(3335,   {	-- Hagrus <Reagents>
@@ -1485,29 +1901,256 @@ _.Zones =
 					["coord"] = { 48.6, 71.4, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						i(77162),	-- Arrowflick Gauntlets
+						i(77109),	-- Band of Reconstruction
+						i(78822, {	-- Battleplate of Radiant Glory
+							["cost"] = { { "i", 78863, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(76874, {	-- Battleplate of Radiant Glory
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(78727, {	-- Battleplate of Radiant Glory
+							["cost"] = { { "i", 78847, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(77095),	-- Batwing Cloak
+						i(77180),	-- Belt of Hidden Keys
+						i(77181),	-- Belt of Universal Curing
+						i(78774, {	-- Blackfang Battleweave Gloves
+							["cost"] = { { "i", 78865, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(77024, {	-- Blackfang Battleweave Gloves
+							["cost"] = { { "i", 78173, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78679, {	-- Blackfang Battleweave Gloves
+							["cost"] = { { "i", 78855, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78794, {	-- Blackfang Battleweave Helmet
+							["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(77025, {	-- Blackfang Battleweave Helmet
+							["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78699, {	-- Blackfang Battleweave Helmet
+							["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78803, {	-- Blackfang Battleweave Legguards
+							["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(77026, {	-- Blackfang Battleweave Legguards
+							["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78708, {	-- Blackfang Battleweave Legguards
+							["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(77027, {	-- Blackfang Battleweave Spaulders
+							["cost"] = { { "i", 78874, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78738, {	-- Blackfang Battleweave Spaulders
+							["cost"] = { { "i", 78170, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78833, {	-- Blackfang Battleweave Spaulders
+							["cost"] = { { "i", 78861, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78759, {	-- Blackfang Battleweave Tunic
+							["cost"] = { { "i", 78862, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(77023, {	-- Blackfang Battleweave Tunic
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78664, {	-- Blackfang Battleweave Tunic
+							["cost"] = { { "i", 78849, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(77171),	-- Bladeshatter Treads
+						i(77184),	-- Blinding Girdle of Truth
+						i(77119),	-- Bones of the Damned
+						i(77175),	-- Boneshard Boots
+						i(77172),	-- Boots of Fungoid Growth
+						i(77114),	-- Bottled Wishes
+						i(77322),	-- Bracers of Manifold Pockets
+						i(77323),	-- Bracers of the Black Dream
+						i(77319),	-- Bracers of the Spectral Wolf
+						i(77318),	-- Bracers of Unrelenting Excellence
+						i(78821, {	-- Breastplate of Radiant Glory
+							["cost"] = { { "i", 78863, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(76765, {	-- Breastplate of Radiant Glory
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(78726, {	-- Breastplate of Radiant Glory
+							["cost"] = { { "i", 78726, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(77091),	-- Cameo of Terrible Memories
+						i(78827, {	-- Chestguard of Radiant Glory
+							["cost"] = { { "i", 78863, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(77003, {	-- Chestguard of Radiant Glory
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(78732, {	-- Chestguard of Radiant Glory
+							["cost"] = { { "i", 78847, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(77120),	-- Chestplate of the Unshakable Titan
+						i(77324),	-- Chronoboost Bracers
+						i(77159),	-- Clockwinder's Immaculate Gloves
+						i(78752, {	-- Colossal Dragonplate Battleplate
+							["cost"] = { { "i", 78864, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(76984, {	-- Colossal Dragonplate Battleplate
+							["cost"] = { { "i", 78179, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78657, {	-- Colossal Dragonplate Battleplate
+							["cost"] = { { "i", 78848, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78753, {	-- Colossal Dragonplate Chestguard
+							["cost"] = { { "i", 78864, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(76988, {	-- Colossal Dragonplate Chestguard
+							["cost"] = { { "i", 78179, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78658, {	-- Colossal Dragonplate Chestguard
+							["cost"] = { { "i", 78848, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78784, {	-- Colossal Dragonplate Faceguard
+							["cost"] = { { "i", 78870, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(76990, {	-- Colossal Dragonplate Faceguard
+							["cost"] = { { "i", 78177, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78689, {	-- Colossal Dragonplate Faceguard
+							["cost"] = { { "i", 78851, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78763, {	-- Colossal Dragonplate Gauntlets
+							["cost"] = { { "i", 78867, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(76985, {	-- Colossal Dragonplate Gauntlets
+							["cost"] = { { "i", 78178, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78668, {	-- Colossal Dragonplate Gauntlets
+							["cost"] = { { "i", 78854, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78764, {	-- Colossal Dragonplate Handguards
+							["cost"] = { { "i", 78867, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(76989, {	-- Colossal Dragonplate Handguards
+							["cost"] = { { "i", 78178, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78669, {	-- Colossal Dragonplate Handguards
+							["cost"] = { { "i", 78854, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78783, {	-- Colossal Dragonplate Helmet
+							["cost"] = { { "i", 78870, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(76983, {	-- Colossal Dragonplate Helmet
+							["cost"] = { { "i", 78177, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78688, {	-- Colossal Dragonplate Helmet
+							["cost"] = { { "i", 78851, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78800, {	-- Colossal Dragonplate Legguards
+							["cost"] = { { "i", 78873, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(76991, {	-- Colossal Dragonplate Legguards
+							["cost"] = { { "i", 78176, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78705, {	-- Colossal Dragonplate Legguards
+							["cost"] = { { "i", 78857, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78801, {	-- Colossal Dragonplate Legplates
+							["cost"] = { { "i", 78873, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(76986, {	-- Colossal Dragonplate Legplates
+							["cost"] = { { "i", 78176, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78706, {	-- Colossal Dragonplate Legplates
+							["cost"] = { { "i", 78857, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78830, {	-- Colossal Dragonplate Pauldrons
+							["cost"] = { { "i", 78876, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(76987, {	-- Colossal Dragonplate Pauldrons
+							["cost"] = { { "i", 78175, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78735, {	-- Colossal Dragonplate Pauldrons
+							["cost"] = { { "i", 78860, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78829, {	-- Colossal Dragonplate Shoulderguards
+							["cost"] = { { "i", 78876, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(76992, {	-- Colossal Dragonplate Shoulderguards
+							["cost"] = { { "i", 78175, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78734, {	-- Colossal Dragonplate Shoulderguards
+							["cost"] = { { "i", 78860, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(77182),	-- Cord of Dragon Sinew
+						i(78795, {	-- Cowl of Dying Light
+							["cost"] = { { "i", 78869, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(76358, {	-- Cowl of Dying Light
+							["cost"] = { { "i", 78182, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(78700, {	-- Cowl of Dying Light
+							["cost"] = { { "i", 78850, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(77127),	-- Decaying Herbalist's Robes
+						i(78791, {	-- Deep Earth Cover
+							["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(77019, {	-- Deep Earth Cover
+							["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78696, {	-- Deep Earth Cover
+							["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78771, {	-- Deep Earth Gloves
+							["cost"] = { { "i", 78865, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(77018, {	-- Deep Earth Gloves
+							["cost"] = { { "i", 78173, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78676, {	-- Deep Earth Gloves
+							["cost"] = { { "i", 78855, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+
+
+
+
+				--[[		["cost"] = {
+								{ "i", , 1 },	-- 
+								{ "i", , 1 },	-- 
+							},
+						}),
+						
+							["cost"] = { { "i", , 1 }, },	-- 
+						}),
+				--]]
+
+
+						i(77013),	-- Deep Earth Raiment
+						i(77014),	-- Deep Earth Grips
+						i(77015),	-- Deep Earth Headpiece
+						i(77016),	-- Deep Earth Legguards
+						i(77017),	-- Deep Earth Spaulders
+						i(77020),	-- Deep Earth Leggings
+						i(77021),	-- Deep Earth Vestment
+						i(77022),	-- Deep Earth Shoulderwraps
 						i(78704),	-- Spiritwalker's Legguards
 						i(78666),	-- Spiritwalker's Gloves
-						i(78658),	-- Colossal Dragonplate Chestguard
 						i(78659),	-- Necrotic Boneplate Breastplate
 						i(78660),	-- Deep Earth Robes
 						i(78661),	-- Wyrmstalker's Tunic
 						i(78662),	-- Deep Earth Vestment
 						i(78663),	-- Necrotic Boneplate Chestguard
-						i(78664),	-- Blackfang Battleweave Tunic
 						i(78665),	-- Deep Earth Raiment
 						i(78667),	-- Spiritwalker's Grips
-						i(78668),	-- Colossal Dragonplate Gauntlets
-						i(78669),	-- Colossal Dragonplate Handguards
 						i(78670),	-- Necrotic Boneplate Gauntlets
 						i(78671),	-- Time Lord's Gloves
 						i(78672),	-- Spiritwalker's Handwraps
 						i(78673),	-- Gloves of Radiant Glory
 						i(78674),	-- Wyrmstalker's Gloves
 						i(78675),	-- Gauntlets of Radiant Glory
-						i(78676),	-- Deep Earth Gloves
 						i(78677),	-- Handguards of Radiant Glory
 						i(78678),	-- Necrotic Boneplate Handguards
-						i(78679),	-- Blackfang Battleweave Gloves
 						i(78680),	-- Deep Earth Handwraps
 						i(78681),	-- Gloves of the Faceless Shroud
 						i(78682),	-- Gloves of Dying Light
@@ -1516,27 +2159,18 @@ _.Zones =
 						i(78685),	-- Spiritwalker's Headpiece
 						i(78686),	-- Spiritwalker's Helmet
 						i(78687),	-- Necrotic Boneplate Helmet
-						i(78688),	-- Colossal Dragonplate Helmet
-						i(78689),	-- Colossal Dragonplate Faceguard
 						i(78690),	-- Deep Earth Helm
 						i(78691),	-- Spiritwalker's Faceguard
 						i(78692),	-- Headguard of Radiant Glory
 						i(78693),	-- Helmet of Radiant Glory
 						i(78694),	-- Deep Earth Headpiece
 						i(78695),	-- Faceguard of Radiant Glory
-						i(78696),	-- Deep Earth Cover
 						i(78697),	-- Necrotic Boneplate Faceguard
 						i(78698),	-- Wyrmstalker's Headguard
-						i(78699),	-- Blackfang Battleweave Helmet
-						i(78700),	-- Cowl of Dying Light
 						i(78701),	-- Time Lord's Hood
 						i(78702),	-- Hood of the Faceless Shroud
 						i(78703),	-- Hood of Dying Light
-						i(78657),	-- Colossal Dragonplate Battleplate
-						i(78705),	-- Colossal Dragonplate Legguards
-						i(78706),	-- Colossal Dragonplate Legplates
 						i(78707),	-- Necrotic Boneplate Greaves
-						i(78708),	-- Blackfang Battleweave Legguards
 						i(78709),	-- Wyrmstalker's Legguards
 						i(78710),	-- Deep Earth Legwraps
 						i(78711),	-- Spiritwalker's Kilt
@@ -1554,19 +2188,13 @@ _.Zones =
 						i(78723),	-- Spiritwalker's Hauberk
 						i(78724),	-- Spiritwalker's Cuirass
 						i(78725),	-- Spiritwalker's Tunic
-						i(78726),	-- Breastplate of Radiant Glory
-						i(78727),	-- Battleplate of Radiant Glory
 						i(78728),	-- Robes of Dying Light
 						i(78729),	-- Time Lord's Robes
 						i(78730),	-- Robes of the Faceless Shroud
 						i(78731),	-- Robes of Dying Light
-						i(78732),	-- Chestguard of Radiant Glory
 						i(78733),	-- Spiritwalker's Spaulders
-						i(78734),	-- Colossal Dragonplate Shoulderguards
-						i(78735),	-- Colossal Dragonplate Pauldrons
 						i(78736),	-- Necrotic Boneplate Pauldrons
 						i(78737),	-- Wyrmstalker's Spaulders
-						i(78738),	-- Blackfang Battleweave Spaulders
 						i(78739),	-- Spiritwalker's Mantle
 						i(78740),	-- Deep Earth Mantle
 						i(78741),	-- Spiritwalker's Shoulderwraps
@@ -1582,20 +2210,16 @@ _.Zones =
 						i(78751),	-- Necrotic Boneplate Shoulderguards
 						i(77078),	-- Scintillating Rods
 						i(77079),	-- Hungermouth Wand
-						i(77095),	-- Batwing Cloak
 						i(77096),	-- Woundlicker Cover
 						i(77097),	-- Dreamcrusher Drape
 						i(77098),	-- Nanoprecise Cape
 						i(77099),	-- Indefatigable Greatcloak
-						i(77119),	-- Bones of the Damned
-						i(77120),	-- Chestplate of the Unshakable Titan
 						i(77121),	-- Lightwarper Vestments
 						i(77122),	-- Robes of Searing Shadow
 						i(77123),	-- Shining Carapace of Glory
 						i(77124),	-- Dragonflayer Vest
 						i(77125),	-- Ghostworld Chestguard
 						i(77126),	-- Shadowbinder Chestguard
-						i(77127),	-- Decaying Herbalist's Robes
 						i(77146),	-- Soulgaze Cowl
 						i(77147),	-- Hood of Hidden Flesh
 						i(77148),	-- Nocturnal Gaze
@@ -1606,41 +2230,27 @@ _.Zones =
 						i(77155),	-- Visage of Petrification
 						i(77156),	-- Jaw of Repudiation
 						i(77157),	-- The Hands of Gilly
-						i(77159),	-- Clockwinder's Immaculate Gloves
 						i(77160),	-- Fungus-Born Gloves
 						i(77161),	-- Lightfinger Handwraps
-						i(77162),	-- Arrowflick Gauntlets
 						i(77163),	-- Gloves of Ghostly Dreams
 						i(77164),	-- Gleaming Grips of Mending
 						i(77165),	-- Grimfist Crushers
 						i(77166),	-- Gauntlets of Feathery Blows
 						i(77169),	-- Silver Sabatons of Fury
 						i(77170),	-- Kneebreaker Boots
-						i(77171),	-- Bladeshatter Treads
-						i(77172),	-- Boots of Fungoid Growth
 						i(77173),	-- Rooftop Griptoes
 						i(77174),	-- Sabatons of the Graceful Spirit
-						i(77175),	-- Boneshard Boots
 						i(77176),	-- Kavan's Forsaken Treads
 						i(77177),	-- Splinterfoot Sandals
 						i(77179),	-- Tentacular Belt
-						i(77180),	-- Belt of Hidden Keys
-						i(77181),	-- Belt of Universal Curing
-						i(77182),	-- Cord of Dragon Sinew
 						i(77183),	-- Girdle of Shamanic Fury
-						i(77184),	-- Blinding Girdle of Truth
 						i(77185),	-- Demonbone Waistguard
 						i(77186),	-- Forgesmelter Waistplate
 						i(77187),	-- Vestal's Irrepressible Girdle
 						i(77316),	-- Flashing Bracers of Warmth
 						i(77317),	-- Heartcrusher Wristplates
-						i(77318),	-- Bracers of Unrelenting Excellence
-						i(77319),	-- Bracers of the Spectral Wolf
 						i(77320),	-- Luminescent Bracers
 						i(77321),	-- Dragonbelly Bracers
-						i(77322),	-- Bracers of Manifold Pockets
-						i(77323),	-- Bracers of the Black Dream
-						i(77324),	-- Chronoboost Bracers
 						i(76212),	-- Time Lord's Gloves
 						i(76214),	-- Time Lord's Leggings
 						i(76215),	-- Time Lord's Robes
@@ -1657,7 +2267,6 @@ _.Zones =
 						i(76347),	-- Hood of Dying Light
 						i(76348),	-- Gloves of Dying Light
 						i(76357),	-- Handwraps of Dying Light
-						i(76358),	-- Cowl of Dying Light
 						i(76359),	-- Legwraps of Dying Light
 						i(76360),	-- Robes of Dying Light
 						i(76361),	-- Mantle of Dying Light
@@ -1671,12 +2280,10 @@ _.Zones =
 						i(76758),	-- Spiritwalker's Faceguard
 						i(76759),	-- Spiritwalker's Legwraps
 						i(76760),	-- Spiritwalker's Mantle
-						i(76765),	-- Breastplate of Radiant Glory
 						i(76766),	-- Gloves of Radiant Glory
 						i(76767),	-- Headguard of Radiant Glory
 						i(76768),	-- Greaves of Radiant Glory
 						i(76769),	-- Mantle of Radiant Glory
-						i(76874),	-- Battleplate of Radiant Glory
 						i(76875),	-- Gauntlets of Radiant Glory
 						i(76876),	-- Helmet of Radiant Glory
 						i(76877),	-- Legplates of Radiant Glory
@@ -1686,17 +2293,6 @@ _.Zones =
 						i(76976),	-- Necrotic Boneplate Helmet
 						i(76977),	-- Necrotic Boneplate Greaves
 						i(76978),	-- Necrotic Boneplate Pauldrons
-						i(76983),	-- Colossal Dragonplate Helmet
-						i(76984),	-- Colossal Dragonplate Battleplate
-						i(76985),	-- Colossal Dragonplate Gauntlets
-						i(76986),	-- Colossal Dragonplate Legplates
-						i(76987),	-- Colossal Dragonplate Pauldrons
-						i(76988),	-- Colossal Dragonplate Chestguard
-						i(76989),	-- Colossal Dragonplate Handguards
-						i(76990),	-- Colossal Dragonplate Faceguard
-						i(76991),	-- Colossal Dragonplate Legguards
-						i(76992),	-- Colossal Dragonplate Shoulderguards
-						i(77003),	-- Chestguard of Radiant Glory
 						i(77004),	-- Handguards of Radiant Glory
 						i(77005),	-- Faceguard of Radiant Glory
 						i(77006),	-- Legguards of Radiant Glory
@@ -1706,21 +2302,6 @@ _.Zones =
 						i(77010),	-- Necrotic Boneplate Faceguard
 						i(77011),	-- Necrotic Boneplate Legguards
 						i(77012),	-- Necrotic Boneplate Shoulderguards
-						i(77013),	-- Deep Earth Raiment
-						i(77014),	-- Deep Earth Grips
-						i(77015),	-- Deep Earth Headpiece
-						i(77016),	-- Deep Earth Legguards
-						i(77017),	-- Deep Earth Spaulders
-						i(77018),	-- Deep Earth Gloves
-						i(77019),	-- Deep Earth Cover
-						i(77020),	-- Deep Earth Leggings
-						i(77021),	-- Deep Earth Vestment
-						i(77022),	-- Deep Earth Shoulderwraps
-						i(77023),	-- Blackfang Battleweave Tunic
-						i(77024),	-- Blackfang Battleweave Gloves
-						i(77025),	-- Blackfang Battleweave Helmet
-						i(77026),	-- Blackfang Battleweave Legguards
-						i(77027),	-- Blackfang Battleweave Spaulders
 						i(77028),	-- Wyrmstalker's Tunic
 						i(77029),	-- Wyrmstalker's Gloves
 						i(77030),	-- Wyrmstalker's Headguard
@@ -1737,28 +2318,22 @@ _.Zones =
 						i(77043),	-- Spiritwalker's Legguards
 						i(77044),	-- Spiritwalker's Spaulders
 						i(78799),	-- Spiritwalker's Legguards
-						i(78752),	-- Colossal Dragonplate Battleplate
 						i(78754),	-- Necrotic Boneplate Breastplate
 						i(78755),	-- Deep Earth Robes
 						i(78756),	-- Wyrmstalker's Tunic
 						i(78757),	-- Deep Earth Vestment
 						i(78758),	-- Necrotic Boneplate Chestguard
-						i(78759),	-- Blackfang Battleweave Tunic
 						i(78760),	-- Deep Earth Raiment
 						i(78761),	-- Spiritwalker's Gloves
 						i(78762),	-- Spiritwalker's Grips
-						i(78763),	-- Colossal Dragonplate Gauntlets
-						i(78764),	-- Colossal Dragonplate Handguards
 						i(78765),	-- Necrotic Boneplate Gauntlets
 						i(78766),	-- Time Lord's Gloves
 						i(78767),	-- Spiritwalker's Handwraps
 						i(78768),	-- Gloves of Radiant Glory
 						i(78769),	-- Wyrmstalker's Gloves
 						i(78770),	-- Gauntlets of Radiant Glory
-						i(78771),	-- Deep Earth Gloves
 						i(78772),	-- Handguards of Radiant Glory
 						i(78773),	-- Necrotic Boneplate Handguards
-						i(78774),	-- Blackfang Battleweave Gloves
 						i(78775),	-- Deep Earth Handwraps
 						i(78776),	-- Gloves of the Faceless Shroud
 						i(78777),	-- Gloves of Dying Light
@@ -1767,27 +2342,18 @@ _.Zones =
 						i(78780),	-- Spiritwalker's Headpiece
 						i(78781),	-- Spiritwalker's Helmet
 						i(78782),	-- Necrotic Boneplate Helmet
-						i(78783),	-- Colossal Dragonplate Helmet
-						i(78784),	-- Colossal Dragonplate Faceguard
 						i(78785),	-- Deep Earth Helm
 						i(78786),	-- Spiritwalker's Faceguard
 						i(78787),	-- Headguard of Radiant Glory
 						i(78788),	-- Helmet of Radiant Glory
 						i(78789),	-- Deep Earth Headpiece
 						i(78790),	-- Faceguard of Radiant Glory
-						i(78791),	-- Deep Earth Cover
 						i(78792),	-- Necrotic Boneplate Faceguard
 						i(78793),	-- Wyrmstalker's Headguard
-						i(78794),	-- Blackfang Battleweave Helmet
-						i(78795),	-- Cowl of Dying Light
 						i(78796),	-- Time Lord's Hood
 						i(78797),	-- Hood of the Faceless Shroud
 						i(78798),	-- Hood of Dying Light
-						i(78753),	-- Colossal Dragonplate Chestguard
-						i(78800),	-- Colossal Dragonplate Legguards
-						i(78801),	-- Colossal Dragonplate Legplates
 						i(78802),	-- Necrotic Boneplate Greaves
-						i(78803),	-- Blackfang Battleweave Legguards
 						i(78804),	-- Wyrmstalker's Legguards
 						i(78805),	-- Deep Earth Legwraps
 						i(78806),	-- Spiritwalker's Kilt
@@ -1805,19 +2371,13 @@ _.Zones =
 						i(78818),	-- Spiritwalker's Hauberk
 						i(78819),	-- Spiritwalker's Cuirass
 						i(78820),	-- Spiritwalker's Tunic
-						i(78821),	-- Breastplate of Radiant Glory
-						i(78822),	-- Battleplate of Radiant Glory
 						i(78823),	-- Robes of Dying Light
 						i(78824),	-- Time Lord's Robes
 						i(78825),	-- Robes of the Faceless Shroud
 						i(78826),	-- Robes of Dying Light
-						i(78827),	-- Chestguard of Radiant Glory
 						i(78828),	-- Spiritwalker's Spaulders
-						i(78829),	-- Colossal Dragonplate Shoulderguards
-						i(78830),	-- Colossal Dragonplate Pauldrons
 						i(78831),	-- Necrotic Boneplate Pauldrons
 						i(78832),	-- Wyrmstalker's Spaulders
-						i(78833),	-- Blackfang Battleweave Spaulders
 						i(78834),	-- Spiritwalker's Mantle
 						i(78835),	-- Deep Earth Mantle
 						i(78836),	-- Spiritwalker's Shoulderwraps
