@@ -627,12 +627,8 @@ _.Zones =
 				q(48505, { 	-- Lovesick and Lost
 					["sourceQuests"] = { 48419 }, 	-- Lured and Allured
 					["coord"] = { 84.8, 76.0, 895 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 126158,	-- Flynn Fairwind
-					["g"] = {
-						crit(7, {	-- Castaways and Cutouts
-							["achievementID"] = 12473,	-- A Sound Plan
-						}),
-					},
 				}),
 				q(48898, {	-- Lucky Charm
 					["coord"] = { 51.2, 25.9, 895 },

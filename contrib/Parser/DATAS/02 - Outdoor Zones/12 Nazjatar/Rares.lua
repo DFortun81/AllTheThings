@@ -45,6 +45,7 @@ _.Zones =
 				["coords"] = {
 					{ 36.8, 27.7, 1355 },	-- cave entrance, putting it here instead of the actual coordinate because it's easy to mistakenly go to the top level above the cave
 					{ 55.0, 29.1, 1355 },
+					{ 57.5, 51.1, 1355 },
 					{ 58.8, 48.2, 1355 },
 					{ 60.6, 33.9, 1355 },
 					{ 72.2, 36.2, 1355 },
@@ -233,7 +234,10 @@ _.Zones =
 			n(152291, {	-- Deepglider
 				["questID"] = 56272,
 				["isDaily"] = true,
-				["coord"] = { 56.4, 43.5, 1355 },
+				["coords"] = {
+					{ 52.9, 53.5, 1355 },
+					{ 56.4, 43.5, 1355 },
+				},
 				["g"] = {
 					crit(10, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
