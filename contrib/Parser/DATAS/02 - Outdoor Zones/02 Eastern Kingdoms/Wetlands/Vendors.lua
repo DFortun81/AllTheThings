@@ -7,6 +7,7 @@ _.Zones =
 		m(56, {	-- Wetlands
 			n(-2,  {	-- Vendors
 				n(1441, {	-- Brak Durnad <Weaponsmith>
+					["coord"] = { 11.6, 59.6, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4817),	-- Blessed Claymore
@@ -21,6 +22,7 @@ _.Zones =
 					},
 				}),
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
+					["coord"] = { 10.0, 59.0, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6275),	-- Pattern: Greater Adept's Robe
@@ -34,12 +36,15 @@ _.Zones =
 					},
 				}),
 				n(1459, {	-- Naela Trance <Bowyer>
+					["coord"] = { 11.0, 57.8, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(1448, {	-- Neal Allen <Engineering Supplies & General Goods>
+					["coord"] = { 11.8, 52.6, 56 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20970, {	-- Design: Pendant of the Agate Shield (Removed in Cata and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -48,6 +53,7 @@ _.Zones =
 					},
 				}),
 				n(3178, {	-- Stuart Fleming <Fishing Supplies>
+					["coord"] = { 6.4, 57.6, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(17062),	-- Recipe: Mithril Head Trout
@@ -56,6 +62,7 @@ _.Zones =
 					},
 				}),
 				n(1460, {	-- Unger Statforth <Horse Breeder>
+					["coord"] = { 9.2, 56.6, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(2411),	-- Black Stallion Bridle Mount
@@ -65,6 +72,7 @@ _.Zones =
 					},
 				}),
 				n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>
+					["coord"] = { 25.6, 25.8, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(7114), 	-- Pattern: Azure Silk Gloves

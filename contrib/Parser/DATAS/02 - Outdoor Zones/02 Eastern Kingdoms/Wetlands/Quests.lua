@@ -424,7 +424,10 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\inv_crate_02",
 				}),
 				q(25395, {	-- The Stolen Keg
-					["sourceQuests"] = { 28565 },	-- Hero's Call: Wetlands!
+					["sourceQuests"] = {
+						26137,	-- Checking on the Boys
+						28565,	-- Hero's Call: Wetlands!
+					},
 					["coord"] = { 49.9, 79.2, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 41075,	-- Mountaineer Rharen
