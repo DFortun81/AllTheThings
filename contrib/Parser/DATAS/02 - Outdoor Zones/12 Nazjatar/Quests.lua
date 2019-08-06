@@ -2356,10 +2356,18 @@ _.Zones =
 				["coord"] = { 39.2, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(56226, {	-- WANTED: Gler'thogg
+			q(55773, {	-- WANTED: Gler'thogg (A)
+				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			--	["objectID"] = 326142,	-- Bounty Board
+				["isDaily"] = true,
+				["coord"] = { 39.2, 54.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56226, {	-- WANTED: Gler'thogg (H)
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-				--["objectID"] = 326142,	-- Bounty Board
+			--	["objectID"] = 326142,	-- Bounty Board
 				["isDaily"] = true,
 				["coord"] = { 48.0, 61.5, 1355 },
 				["races"] = HORDE_ONLY,
