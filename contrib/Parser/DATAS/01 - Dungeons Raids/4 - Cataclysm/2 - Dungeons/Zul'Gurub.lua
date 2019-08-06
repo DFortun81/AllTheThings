@@ -298,8 +298,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 							["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 						}),
 					}),
-					n(52442, {			-- Hive Queen
+					n(52442, {			-- Florawing Hive Queen
 						["questID"] = 53809,	-- KillID
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Hive Queen Slain (Gurubashi Headhunter)
 								["achievementID"] = 5744,	-- Gurubashi Headhunter
