@@ -380,6 +380,7 @@ _.Zones =
 					},
 				}),
 				n(-384, {	-- Neck
+					i(134376),	-- Netherstone Choker
 					i(146867),	-- Wrathguard Choker
 				}),
 				--[[
