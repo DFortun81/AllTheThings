@@ -1163,6 +1163,7 @@ namespace ATT
                         }
 
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
+                    case "cost":
                     case "sym":
                         {
                             // Convert the data to a list of generic objects.

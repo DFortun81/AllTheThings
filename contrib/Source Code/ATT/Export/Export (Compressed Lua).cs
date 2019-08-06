@@ -147,7 +147,7 @@ namespace ATT
                             builder.Append(field).Append('=');
 
                             // Append the undetermined object's format to the builder.
-                            if (field == "sym")
+                            if (field == "sym" || field == "cost")
                             {
                                 // Write the symbolic link without changing anything.
                                 //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
