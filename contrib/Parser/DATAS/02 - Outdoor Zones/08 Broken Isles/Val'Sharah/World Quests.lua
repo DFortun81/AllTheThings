@@ -1584,6 +1584,7 @@ _.Zones =
 				n(-387,  {	-- Relics
 					i(143698),	-- Effervescent Leyblossom
 					i(141255),	-- Mockery of Life
+					i(141256),	-- Promise of Rebirth
 					i(143682),	-- Viscous Terror
 				}),
 			}),

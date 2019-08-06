@@ -63,6 +63,7 @@ _.Zones =
 				}),
 				n(-387, {	-- Relic
 					i(151009),	-- Annihilan Heart
+					i(151006),	-- Augari Manuscript
 					i(151005),	-- Dram of Light
 					i(151013),	-- Ethereal Anchor
 					i(151014),	-- Fulminating Arcstone
