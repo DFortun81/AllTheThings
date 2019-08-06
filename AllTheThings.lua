@@ -12461,23 +12461,25 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									cache = fieldCache["creatureID"][qg];
 									if cache then
 										for _,data in ipairs(cache) do
-											for key,value in pairs(data) do
-												if not (key == "g" or key == "parent") then
-													questObject[key] = value;
-												end
-											end
-											if data.g then
-												for _,entry in ipairs(data.g) do
-													local resolved = ResolveSymbolicLink(entry);
-													if resolved then
-														entry = CreateObject(entry);
-														if entry.g then
-															MergeObjects(entry.g, resolved);
-														else
-															entry.g = resolved;
-														end
+											if GetRelativeField(group, "npcID", -16) then	-- Rares only!
+												for key,value in pairs(data) do
+													if not (key == "g" or key == "parent") then
+														questObject[key] = value;
 													end
-													MergeObject(questObject.g, entry);
+												end
+												if data.g then
+													for _,entry in ipairs(data.g) do
+														local resolved = ResolveSymbolicLink(entry);
+														if resolved then
+															entry = CreateObject(entry);
+															if entry.g then
+																MergeObjects(entry.g, resolved);
+															else
+																entry.g = resolved;
+															end
+														end
+														MergeObject(questObject.g, entry);
+													end
 												end
 											end
 										end
