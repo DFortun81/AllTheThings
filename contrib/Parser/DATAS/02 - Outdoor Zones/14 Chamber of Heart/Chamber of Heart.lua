@@ -131,11 +131,11 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["qg"] = 136907,	-- Magni Bronzebeard	
 						}),
-						-- Hearth of Azeroth Level 54
+						-- Heart of Azeroth Level 54
 						q(55390, {	-- In Darkness, I Dream
 							["qg"] = 152365,	-- Kalecgos
 							["coord"] = { 53.1, 70.9, 1473 },
-							["description"] = "Your Hearth of Azeroth needs to be 54 to start the questline.",
+							["description"] = "Your Heart of Azeroth needs to be 54 to start the questline.",
 							["lvl"] = 120,
 						}),	
 						q(55392, {	-- Enter the Dreamway
@@ -221,7 +221,7 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 1475 },	-- The Emerald Dream
 						}),
-						-- Hearth of Azeroth Level 55
+						-- Heart of Azeroth Level 55
 						q(55519, {	-- A Fresh Trauma
 							["qg"] = 152206,	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.2, 1473 },
@@ -230,7 +230,7 @@ _.Zones =
 								56261,	-- Return to the Heart (H)
 								55522,	-- Return to the Heart (A)
 							},
-							["description"] = "Your Hearth of Azeroth needs to be 55 to start the questline.",
+							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["lvl"] = 120,
 						}),
 						q(55520, {	-- Healing Nordrassil
@@ -247,12 +247,12 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
-						-- Hearth of Azeroth Level 60
+						-- Heart of Azeroth Level 60
 						q(56167, {	-- Investigating the Highlands
 							["qg"] = 152365,	-- Kalecgos
 							["coord"] = { 53.1, 70.9, 1473 },
 							["sourceQuest"] = 55521,	-- Do It the Azerite Way
-							["description"] = "Your Hearth of Azeroth needs to be 66 to start the questline.",
+							["description"] = "Your Heart of Azeroth needs to be 66 to start the questline.",
 							["lvl"] = 120,
 						}),
 						q(55657, {	-- In the Shadow of Crimson Wings
