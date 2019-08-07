@@ -936,10 +936,7 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
-				q(43629, {	-- WANTED: Kiranys Duskwhisper
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
+				
 				q(43630, {	-- WANTED: Perrexx
 					["collectible"] = false,
 					["lvl"] = 110,
@@ -1366,6 +1363,10 @@ _.Zones =
 				q(43460, {	-- WANTED: Kiranys Duskwhisper
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(43629, {	-- WANTED: Kiranys Duskwhisper
+					["collectible"] = false,
+					["lvl"] = 110,
 				}),
 				q(43458, {	-- WANTED: Perrexx
 					["lvl"] = 110,

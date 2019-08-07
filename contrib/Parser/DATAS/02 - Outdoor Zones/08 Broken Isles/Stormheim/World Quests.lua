@@ -19,7 +19,6 @@ _.Zones =
 				q(43745),	-- Culling the Storm
 				q(42806),	-- DANGER: Fjorlag, the Grave's Chill
 				q(42798),	-- DANGER: Huntress Estrid
-				q(42964),	-- DANGER: Lagertha
 				q(42963),	-- DANGER: Rulf Bonesnapper
 				q(42991),	-- DANGER: Runeseer Sigvid
 				q(42953),	-- DANGER: Soulbinder Halldora
@@ -58,7 +57,6 @@ _.Zones =
 				q(41343),	-- Solid Crabshell Fragment
 				q(41445),	-- Stormy Leystone Deposits
 				q(41442),	-- Striking Leystone Deposits
-				q(41298),	-- Supplies Needed: Fjarnskaggl
 				q(41345),	-- Supplies Needed: Stormscales
 				q(43721),	-- The Helarjar Have Surfaced
 				q(42269),	-- The Soultakers
@@ -167,6 +165,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(42785, {	-- DANGER: Den Mother Ylva
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42964, {	-- DANGER: Lagertha
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -320,6 +322,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43827, {	-- Stormwing the Portals
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41298, {	-- Supplies Needed: Fjarnskaggl
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

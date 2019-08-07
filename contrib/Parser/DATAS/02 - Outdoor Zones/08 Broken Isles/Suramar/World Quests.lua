@@ -57,7 +57,6 @@ _.Zones =
 				q(41346),	-- Velvety Stalker Hide
 				q(44032),	-- WANTED: Apothecary Faldren
 				q(44186),	-- WANTED: Broodmother Shu'malis
-				q(44016),	-- WANTED: Cadraeus
 				q(44030),	-- WANTED: Guardian Thor'el
 				q(44021),	-- WANTED: Hertha Grimdottir
 				q(44027),	-- WANTED: Magister Phaedris
@@ -364,6 +363,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44031, {	-- WANTED: Cadraeus
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44016, {	-- WANTED: Cadraeus
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

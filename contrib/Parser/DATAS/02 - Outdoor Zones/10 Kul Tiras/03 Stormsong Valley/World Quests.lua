@@ -610,15 +610,11 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(53108, {	-- Iconoclasm
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(53344, {	-- Iconoclasm
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
+				
 				q(52115, {	-- In the Shadow of the Kraken
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -1601,6 +1597,11 @@ _.Zones =
 					q(52328, {	-- Ice Sickle
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(53108, {	-- Iconoclasm
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52321, {	-- Kickers
 						["npcID"] = 141029,	-- Kickers

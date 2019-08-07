@@ -9,9 +9,7 @@ _.Zones =
 --[[				
 				q(43985),	-- A Dark Tide
 				q(45840),	-- Assault on Highmountain
-				q(41026),	-- Back to the Shadows
 				q(46191),	-- Balinar
-				q(45071),	-- Barrels o' Fun
 				q(40980),	-- Boilback Plague
 				q(41310),	-- Border Reinforcements
 				q(41203),	-- Bright Leystone Deposits
@@ -93,6 +91,14 @@ _.Zones =
 				q(41235),	-- Work Order: Stonehide Leather
 --]]
 				q(41705, {	-- Assault on Thunder Totem
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41026, {	-- Back to the Shadows
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45071, {	-- Barrels o' Fun
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

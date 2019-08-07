@@ -6,13 +6,6 @@ _.Zones =
 	m(905, { 	-- Argus
 		m(882, {	-- Mac'Aree
 			n(-34, {	-- World Quests
---[[
-				n(-34, {	-- World Quests
-					q(48727),	-- Captain Faruq
-					q(49051),	-- Corrupted Blood of Argus
-					q(49049),	-- Gloamwing
-				}),
---]]				
 				q(48729, {	-- Ataxon
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -31,6 +24,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(48101, {	-- Bully Pulpit
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(48727, {	-- Captain Faruq
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -69,6 +66,11 @@ _.Zones =
 				}),
 				q(48103, {	-- Gatekeeper's Review: Tenacity
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(49049, {	-- Gloamwing
+					["lvl"] = 110,
+					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(48731, {	-- Herald of Chaos

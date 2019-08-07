@@ -9,13 +9,11 @@ _.Zones =
 --[[
 				n(-34, {	-- World Quests
 					q(46209),	-- A Flare In The Dark
-					q(46932),	-- A Tad More Corruption
 					q(47061),	-- Apocron
 					q(46104),	-- Arachnid Toxicity
 					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
 					q(46068),	-- Brute Wrangling
-					q(44846),	-- Clearing the Path
 					q(45358),	-- Contagion Containment
 					q(45837),	-- Creeping Fel
 					q(45531),	-- Creeping Fel
@@ -50,6 +48,10 @@ _.Zones =
 				}),
 ]]--
 				q(45473, {	-- A Giant Problem
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46932, {	-- A Tad More Corruption
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -90,6 +92,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46814, {	-- Call of the Frostwyrm
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44846, {	-- Clearing the Path
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

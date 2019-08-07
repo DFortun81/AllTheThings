@@ -8,10 +8,6 @@ _.Zones =
 			n(-34, {	-- World Quests
 --[[
 				n(-34, {	-- World Quests
-					q(49058),	-- One-of-Many
-					q(49056),	-- Pilfer
-					q(48870),	-- The Many-Faced Devourer
-					q(48624),	-- Who Let The Dogs Out?
 					q(48349),	-- Work Order: Empyrium
 					q(48359),	-- Work Order: Fiendish Leather
 					q(48363),	-- Work Order: Florid Malachite
@@ -102,6 +98,16 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(49058, {	-- One-of-Many
+					["lvl"] = 110,
+					["filterID"] = 101,	-- Battle Pet
+					["collectible"] = false,
+				}),
+				q(49056, {	-- Pilfer
+					["lvl"] = 110,
+					["filterID"] = 101,	-- Battle Pet
+					["collectible"] = false,
+				}),
 				q(48467, {	-- Puscilla
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -146,6 +152,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(48870, {	-- The Many-Faced Devourer
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(48952, {	-- Throw Them a Bone
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -171,6 +181,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(48836, {	-- Watcher Aival
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(48624, {	-- Who Let The Dogs Out?
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

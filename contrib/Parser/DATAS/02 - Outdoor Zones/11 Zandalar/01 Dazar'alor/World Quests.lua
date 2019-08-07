@@ -21,6 +21,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50747, { 	-- No Good Amani
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(49413, { 	-- Scamps With Scrolls
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
