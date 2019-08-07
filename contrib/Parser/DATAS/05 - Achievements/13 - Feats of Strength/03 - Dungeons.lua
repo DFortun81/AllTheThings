@@ -32,7 +32,31 @@ _.Achievements =
 						crit(9),	-- Tol Dagor
 						crit(10),	-- Waycrest Manor
 					})),
-					ach(13448, {		-- Battle for Azeroth Keystone Conqueror: Season Two
+					un(2, ach(13448, {		-- Battle for Azeroth Keystone Conqueror: Season Two
+						crit(1),	-- Atal'Dazar
+						crit(2),	-- Freehold
+						crit(3),	-- Kings' Rest
+						crit(4),	-- Shrine of the Storm
+						crit(5),	-- Siege of Boralus
+						crit(6),	-- Temple of Sethraliss
+						crit(7),	-- The MOTHERLODE!!
+						crit(8),	-- The Underrot
+						crit(9),	-- Tol Dagor
+						crit(10),	-- Waycrest Manor
+					})),
+					un(2, ach(13449, {		-- Battle for Azeroth Keystone Master: Season Two
+						crit(1),	-- Atal'Dazar
+						crit(2),	-- Freehold
+						crit(3),	-- Kings' Rest
+						crit(4),	-- Shrine of the Storm
+						crit(5),	-- Siege of Boralus
+						crit(6),	-- Temple of Sethraliss
+						crit(7),	-- The MOTHERLODE!!
+						crit(8),	-- The Underrot
+						crit(9),	-- Tol Dagor
+						crit(10),	-- Waycrest Manor
+					})),
+					ach(13780, {		-- Battle for Azeroth Keystone Conqueror: Season Three
 						crit(1),	-- Atal'Dazar
 						crit(2),	-- Freehold
 						crit(3),	-- Kings' Rest
@@ -44,7 +68,7 @@ _.Achievements =
 						crit(9),	-- Tol Dagor
 						crit(10),	-- Waycrest Manor
 					}),
-					ach(13449, {		-- Battle for Azeroth Keystone Master: Season Two
+					ach(13781, {		-- Battle for Azeroth Keystone Master: Season Three
 						crit(1),	-- Atal'Dazar
 						crit(2),	-- Freehold
 						crit(3),	-- Kings' Rest
@@ -56,30 +80,6 @@ _.Achievements =
 						crit(9),	-- Tol Dagor
 						crit(10),	-- Waycrest Manor
 					}),
-					--[[ach(13448, {		-- Battle for Azeroth Keystone Conqueror: Season Three
-						crit(1),	-- Atal'Dazar
-						crit(2),	-- Freehold
-						crit(3),	-- Kings' Rest
-						crit(4),	-- Shrine of the Storm
-						crit(5),	-- Siege of Boralus
-						crit(6),	-- Temple of Sethraliss
-						crit(7),	-- The MOTHERLODE!!
-						crit(8),	-- The Underrot
-						crit(9),	-- Tol Dagor
-						crit(10),	-- Waycrest Manor
-					}),
-					ach(13449, {		-- Battle for Azeroth Keystone Master: Season Three
-						crit(1),	-- Atal'Dazar
-						crit(2),	-- Freehold
-						crit(3),	-- Kings' Rest
-						crit(4),	-- Shrine of the Storm
-						crit(5),	-- Siege of Boralus
-						crit(6),	-- Temple of Sethraliss
-						crit(7),	-- The MOTHERLODE!!
-						crit(8),	-- The Underrot
-						crit(9),	-- Tol Dagor
-						crit(10),	-- Waycrest Manor
-					}),]]
 					un(2, ach(9622, {		-- Challenge Master: Auchindoun
 						un(39, title(293)),	-- the Soul Preserver
 					})),

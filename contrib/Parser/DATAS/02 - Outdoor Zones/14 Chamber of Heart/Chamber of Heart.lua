@@ -252,7 +252,7 @@ _.Zones =
 							["qg"] = 152365,	-- Kalecgos
 							["coord"] = { 53.1, 70.9, 1473 },
 							["sourceQuest"] = 55521,	-- Do It the Azerite Way
-							["description"] = "Your Heart of Azeroth needs to be 66 to start the questline.",
+							["description"] = "Your Heart of Azeroth needs to be 60 to start the questline.",
 							["lvl"] = 120,
 						}),
 						q(55657, {	-- In the Shadow of Crimson Wings
