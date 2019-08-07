@@ -10,10 +10,10 @@ _.ExpansionFeatures =
 			n(-17, {	-- Quests
 				["groups"] = {
 					i(163470, {	 -- Ancient Crypt Key
+						["coord"] = { 83.2, 29.6, 390 },
 						["g"] = {
 							q(53160, {	-- Ancient Crypt Key
 								["qg"] = 61962,	-- Lorewalker Cho
-								["coord"] = { 83.2, 29.6, 390 },
 							}),
 							crit(19, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -21,10 +21,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163478, {	 -- Battered Twilight Scale
+						["coord"] = { 20.2, 54.6, 241 },
 						["g"] = {
 							q(53171, {	-- Battered Twilight Scale
 								["qg"] = 132888,	-- Eryna
-								["coord"] = { 20.2, 54.6, 241 },
 							}),
 							crit(11, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -32,10 +32,11 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163472, {	 -- Bloodwake Drinking Horn
+						["coord"] = { 68.4, 54.2, 634 },
 						["g"] = {
 							q(53163, {	-- Bloodwake Drinking Horn
 								["qg"] = 93231,	-- Vydhar
-								["coord"] = { 68.4, 54.2, 634 },
+								["modelScale"] = 1.3,
 							}),
 							crit(17, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -43,10 +44,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163482, {	 -- Broken Compass
+						["coord"] = { 42.0, 74.6, 210 },
 						["g"] = {
 							q(53177, {	-- Broken Compass
 								["qg"] = 908,	-- Flora Silverwind <Herbalism Trainer>
-								["coord"] = { 42.0, 74.6, 210 },
 							}),
 							crit(7, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -54,10 +55,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163485, {	 -- Druidic Fur
+						["coord"] = { 52.6, 40.6, 80 },
 						["g"] = {
 							q(53181, {	-- Druidic Fur
 								["qg"] = 12042,	-- Loganaar <Druid Trainer>
-								["coord"] = { 52.6, 40.6, 80 },
 							}),
 							crit(4, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -65,10 +66,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163476, {	 -- Elemental Core
+						["coord"] = { 92.7, 42.0, 76 },	-- Verify Coords/npcid
 						["g"] = {
 							q(53169, {	-- Elemental Core
 								["qg"] = 13278,	-- Duke Hydraxis
-								["coord"] = { 92.7, 42.0, 76 },	-- Verify Coords/npcid
 							}),
 							crit(13, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -76,10 +77,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163481, {	 -- Glittering Scarab
+						["coord"] = { 58.8, 46.2, 249 },
 						["g"] = {
 							q(53176, {	-- Glittering Scarab
 								["qg"] = 46134,	-- High Commander Kamses
-								["coord"] = { 58.8, 46.2, 249 },
 							}),
 							crit(8, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -87,10 +88,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163474, {	 -- Icetusk Fur Cloak
+						["coord"] = { 48.0, 76.0, 115 },
 						["g"] = {
 							q(53167, {	-- Icetusk Fur Cloak
 								["qg"] = 26245,	-- Tua'kea
-								["coord"] = { 48.0, 76.0, 115 },
 							}),
 							crit(15, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -98,10 +99,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163475, {	 -- Magical Spyglass
+						["coord"] = { 41.0, 73.0, 210 },
 						["g"] = {
 							q(53168, {	-- Magical Spyglass
 								["qg"] = 2496,	-- Baron Revilgaz
-								["coord"] = { 41.0, 73.0, 210 },
 							}),
 							crit(14, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -109,13 +110,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163480, {	 -- Murloc Eye
+						["coords"] = {
+							{ 42.6, 10.8, 650 },
+							{ 49.6, 15.8, 650 },
+						},
 						["g"] = {
 							q(53174, {	-- Murloc Eye
 								["qg"] = 98067,	-- King Mrgl-Mrgl <D.E.H.T.A.>
-								["coords"] = {
-									{ 42.6, 10.8, 650 },
-									{ 49.6, 15.8, 650 },
-								},
 							}),
 							crit(9, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -123,10 +124,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163466, {	 -- Notched Coin
+						["coord"] = { 55.2, 19.2, 371 },
 						["g"] = {
 							q(53155, {	-- Notched Coin
 								["qg"] = 64365,	-- Mili Wanderbrew <Apprentice Brewmaster>
-								["coord"] = { 55.2, 19.2, 371 },
 							}),
 							crit(20, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -134,10 +135,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163483, {	 -- Razorfin Hunting Spear
+						["coord"] = { 29.6, 39.0, 418 },
 						["g"] = {
 							q(53178, {	-- Razorfin Hunting Spear
 								["qg"] = 58278,	-- Tired Shushen <Waterspeaker>
-								["coord"] = { 29.6, 39.0, 418 },
 							}),
 							crit(6, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -145,10 +146,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163471, {	 -- Ring of the Reefs
+						["coord"] = { 60.2, 51.2, 634 },
 						["g"] = {
 							q(53161, {	-- Ring of the Reefs
 								["qg"] = 106904,	-- Valdemar Stormseeker <Valarjar Emissary>
-								["coord"] = { 60.2, 51.2, 634 },
 							}),
 							crit(18, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -156,10 +157,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163473, {	 -- Sonic Stone
+						["coord"] = { 39.4, 62.0, 388 },
 						["g"] = {
 							q(53164, {	-- Sonic Stone
 								["qg"] = 61584,	-- Sentinel Commander Qipan
-								["coord"] = { 39.4, 62.0, 388 },
 							}),
 							crit(16, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -167,10 +168,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163486, {	 -- Strangling Root
+						["coord"] = { 36.2, 41.8, 80 },
 						["g"] = {
 							q(53182, {	-- Strangling Root
 								["qg"] = 11832,	-- Keeper Remulos
-								["coord"] = { 36.2, 41.8, 80 },
 							}),
 							crit(3, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -178,10 +179,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163477, {	 -- Unscarred Black Scale
+						["coord"] = { 47.8, 68.8, 36 },	-- Verify map/npc id
 						["g"] = {
 							q(53170, {	-- Unscarred Black Scale
 								["qg"] = 66306,	-- Blacktalon Agent <Servant of the Black Prince>
-								["coord"] = { 47.8, 68.8, 36 },	-- Verify map/npc id
 							}),
 							crit(12, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -189,14 +190,14 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163479, {	 -- Venture Co. Business Plan
+						["coords"] = {
+							{ 50.2, 59.2, 10 },
+							{ 66.8, 72.6, 10 },
+						},
 						["g"] = {
 							q(53172, {	-- Venture Co. Business Plan
 								["description"] = "Pats along the road between The Crossroads and Ratchet",
 								["qg"] = 3658,	-- Lizzarik <Weapon Dealer>
-								["coords"] = {
-									{ 50.2, 59.2, 10 },
-									{ 66.8, 72.6, 10 },
-								},
 							}),
 							crit(10, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -204,10 +205,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163484, {	 -- Vorus'arak's Carapace
+						["coord"] = { 26.2, 50.6, 115 },
 						["g"] = {
 							q(53180, {	-- Vorus'arak's Carapace
 								["qg"] = 26653,	-- Kilix the Unraveler
-								["coord"] = { 26.2, 50.6, 115 },
 							}),
 							crit(5, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -215,10 +216,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163488, {	 -- Weathered Pamphlet
+						["coord"] = { 52.0, 30.0, 71 },
 						["g"] = {
 							q(53184, {	-- Weathered Pamphlet
 								["qg"] = 132832,	-- Jordle Flangebender
-								["coord"] = { 52.0, 30.0, 71 },
 							}),
 							crit(1, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -226,11 +227,11 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(163487, {	 -- Wriggling Mass
+						["description"] = "Turn in @ old or new Silithus",
+						["coord"] = { 40.0, 76.6, 81 },
 						["g"] = {
 							q(53183, {	-- Wriggling Mass
-								["description"] = "Turn in @ old or new Silithus",
 								["qg"] = 132886,	-- Twilight Hermit
-								["coord"] = { 40.0, 76.6, 81 },
 							}),
 							crit(2, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -239,101 +240,101 @@ _.ExpansionFeatures =
 					}),
 					-- Rep Items
 					i(163217, {	-- Azeroth's Tear [Both]
-						["description"] = "|CFFFF0000Turn this into Magni Bronzebeard in Silithus @ 42.2, 44.2 for Champions of Azeroth rep.|r",
+						["description"] = "|CFFFF0000Turn into Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
+						["coord"] = { 42.2, 44.2, 81 },
 						["g"] = {
 							q(53112, {	-- Azeroth's Tear
 								["qg"] = 130216,	-- Magni Bronzebeard <The Speaker>
 								["repeatable"] = true,
-								["coord"] = { 42.2, 44.2, 81 },
 							}),
 						},
 					}),
 					i(163616, {	-- Dented Coin [Alliance]
-						["description"] = "|CFFFF0000Turn this into Cyrus Crestfall in Boralus @ 68, 22 for Proudmore Admiralty rep.|r",
+						["description"] = "|CFFFF0000Turn into Cyrus Crestfall in Boralus for Proudmore Admiralty rep.|r",
+						["coord"] = { 68.0, 22.0, 1161 },
 						["g"] = {
 							q(53118, {	-- Dented Coin
 								["qg"] = 122370,	-- Cyrus Crestfall <Harbormaster>
 								["races"] =  ALLIANCE_ONLY,
 								["repeatable"] = true,
-								["coord"] = { 68.0, 22.0, 1161 },
 							}),
 						},
 					}),
 					i(163614, {	-- Exotic Spices [Alliance]
-						["description"] = "|CFFFF0000Turn this into Xun Xun Sweetflower in Drustvar @ 20.6, 45.6 for Order of Embers rep.|r",
+						["description"] = "|CFFFF0000Turn into Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
+						["coord"] = { 20.6, 45.6, 896 },
 						["g"] = {
 							q(53120, {	-- Exotic Spices
 								["qg"] = 136269,	-- Xun Xun Sweetflower <Exotic Food & Spices>
 								["races"] =  ALLIANCE_ONLY,
 								["repeatable"] = true,
-								["coord"] = { 20.6, 45.6, 896 },
 							}),
 						},
 					}),
 					i(163619, {	-- Golden Beetle [Horde]
-						["description"] = "|CFFFF0000Turn this into Krag'wa the Huge in Nazmir @ 75.6, 56.6 for Talanji's Expedition rep.|r",
+						["description"] = "|CFFFF0000Turn into Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
+						["coord"] = { 75.6, 56.6, 863 },
 						["g"] = {
 							q(53114, {	-- Golden Beetle
 								["qg"] = 120551,	-- Krag'wa the Huge
 								["races"] = HORDE_ONLY,
 								["repeatable"] = true,
-								["coord"] = { 75.6, 56.6, 863 },
 							}),
 						},
 					}),
 					i(163620, {	-- Island Flotsam [Horde]
-						["description"] = "|CFFFF0000Turn this into Jani in Dazar'alor @ 35.4, 7.8 for Zandalari Empire rep.|r",
+						["description"] = "|CFFFF0000Turn into Jani in Dazar'alor for Zandalari Empire rep.|r",
+						["coord"] = { 35.4, 7.8, 1163 },
 						["g"] = {
 							q(53115, {	-- Island Flotsam
 								["description"] = "Must have unlocked Jani by doing the quest \"Pests\".",
 								["qg"] = 126334,	-- Jani <Loa of Scavengers>
 								["races"] = HORDE_ONLY,
 								["repeatable"] = true,
-								["coord"] = { 35.4, 7.8, 1163 },
 							}),
 						},
 					}),
 					i(163615, {	-- Lost Sea Scroll [Alliance]
-						["description"] = "|CFFFF0000Turn this into Brother Pike in Stormsong Valley @ 59.2, 68.6 for Storm's Wake rep.|r",
+						["description"] = "|CFFFF0000Turn into Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
+						["coord"] = { 59.2, 68.6, 942 },
 						["g"] = {
 							q(53119, {	-- Lost Sea Scroll
 								["qg"] = 130576,	-- Brother Pike
 								["races"] =  ALLIANCE_ONLY,
 								["repeatable"] = true,
-								["coord"] = { 59.2, 68.6, 942 },
 							}),
 						},
 					}),
 					i(163617, {	-- Rusted Alliance Insignia
-						["description"] = "|CFFFF0000Turn this into Vindicator Jaelaana in Boralus @ 69.2, 25.0 for 7th Legion rep.|r",
+						["description"] = "|CFFFF0000Turn into Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
+						["coord"] = { 69.2, 25.0, 1161 },
 						["g"] = {
 							q(53117, {	-- Rusted Alliance Insignia [Alliance]
 								["qg"] = 135446,	-- Vindicator Jaelaana <7th Legion Emissary>
 								["races"] =  ALLIANCE_ONLY,
 								["repeatable"] = true,
-								["coord"] = { 69.2, 25.0, 1161 },
 							}),
 						},
 					}),
 					i(163621, {	-- Rusted Horde Insignia
-						["description"] = "|CFFFF0000Turn this into Ransa Greyfeather in Zuldazar @ 58,62.6 for Honorbound rep.|r",
+						["description"] = "|CFFFF0000Turn into Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
+						["coord"] = { 58, 62.6, 862 },
 						["g"] = {
 							q(53116, {	-- Rusted Horde Insignia
 								["qg"] = 135447,	-- Ransa Greyfeather
 								["races"] = HORDE_ONLY,
 								["repeatable"] = true,
-								["coord"] = { 58, 62.6, 862 },
 							}),
 						},
 					}),
 					i(163618, {	-- Shimmering Shell [Horde]
-						["description"] = "|CFFFF0000Turn this into Hoarder Jena in Vol'dun @ 56.7, 49.8 for Voldunai rep.|r",
+						["description"] = "|CFFFF0000Turn into Hoarder Jena in Vol'dun for Voldunai rep.|r",
+						["coord"] = { 56.7, 49.8, 864 },
 						["g"] = {
 							q(53113, {	-- Shimmering Shell
 								["qg"] = 135804,	-- Hoarder Jena
 								["races"] = HORDE_ONLY,
 								["repeatable"] = true,
-								["coord"] = { 56.7, 49.8, 864 },
 							}),
 						},
 					}),

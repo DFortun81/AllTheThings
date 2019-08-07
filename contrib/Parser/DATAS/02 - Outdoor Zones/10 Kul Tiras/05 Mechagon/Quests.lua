@@ -653,6 +653,7 @@ _.Zones =
 					["coord"] = { 70.0, 62.0, 1462 },
 					["repeatable"] = true,
 					["qg"] = 150448,	-- Reclamation Rig
+					["modelScale"] = 4.2,
 				}),
 				q(55730, {	-- Rescuing the Resistance  (+ 56005 flag: engineers rescued -- horde only?  didn't pop on alliance on live)
 					["qg"] = 152820,	-- Prince Erazmin
