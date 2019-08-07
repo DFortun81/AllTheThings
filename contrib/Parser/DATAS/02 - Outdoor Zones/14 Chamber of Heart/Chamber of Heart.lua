@@ -115,7 +115,7 @@ _.Zones =
 							["sourceQuest"] = 55497,	-- A Friendly Face
 							["g"] = {
 								i(168611, {	-- Petrified Ebony Scale
-									{ ["azeriteEssenceID"] = 12 },
+									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 1)
 								}),
 							},
 						}),
@@ -209,8 +209,8 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 1475 },	-- The Emerald Dream
 							["g"] = {
-								i(168612, {	-- Dreamglow Dragonscale (Rank 2)
-									{ ["azeriteEssenceID"] = 12 },
+								i(168612, {	-- Dreamglow Dragonscale
+									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 2)
 								}),
 							},
 						}),
@@ -223,9 +223,13 @@ _.Zones =
 						}),
 						-- Hearth of Azeroth Level 55
 						q(55519, {	-- A Fresh Trauma
-							["sourceQuests"] = { 56261, 55522 },	-- Return to the Heart (A, H)
 							["qg"] = 152206,	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.2, 1473 },
+							["sourceQuests"] = {
+								55398,	-- The Long Awake
+								56261,	-- Return to the Heart (H)
+								55522,	-- Return to the Heart (A)
+							},
 							["description"] = "Your Hearth of Azeroth needs to be 55 to start the questline.",
 							["lvl"] = 120,
 						}),
@@ -243,6 +247,29 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
+						-- Hearth of Azeroth Level 60
+						q(56167, {	-- Investigating the Highlands
+							["qg"] = 152365,	-- Kalecgos
+							["coord"] = { 53.1, 70.9, 1473 },
+							["sourceQuest"] = 55521,	-- Do It the Azerite Way
+							["description"] = "Your Hearth of Azeroth needs to be 66 to start the questline.",
+							["lvl"] = 120,
+						}),
+						q(55657, {	-- In the Shadow of Crimson Wings
+							["qg"] = 152720,	-- Kalecgos
+							["coord"] = { 36.0, 50.5, 241 },
+							["sourceQuest"] = 56167,	-- Investigating the Highlands
+							["lvl"] = 120,
+							["maps"] = { 
+								241,	-- Twilight Highlands
+								1476,	-- Twilight Highlands (Szenario)
+							},
+							["g"] = {
+								i(168613, {	-- Tempered Scale of the Scarlet Broodmother
+									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 3)
+								}),
+							},
+						}),
 					}),
 					n(-2,   {	-- Vendors
 						["lvl"] = 120,
@@ -251,9 +278,11 @@ _.Zones =
 								["coord"] = { 42.22, 44.27, 81 },
 								["g"] = {
 									i(160544),	-- Champions of Azeroth Tabard
-									i(163036, {	-- Polished Pet Charm
-										i(163555),	-- Drop of Azerite
-										i(163515),	-- Shard of Azerite
+									i(163555, {	-- Drop of Azerite
+										["cost"] = { { "i", 163036, 200 } },	-- 200x Polished Pet Charm
+									}),
+									i(163515, {	-- Shard of Azerite
+										["cost"] = { { "i", 163036, 100 } },	-- 100x Polished Pet Charm
 									}),
 									i(161555),	-- Azerothian Champion's Crown
 									i(161563),	-- Helm of the Azerothian Champion
