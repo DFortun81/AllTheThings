@@ -1329,7 +1329,7 @@ AllTheThings.L = {
 	--	[-803] = select(2, EJ_GetCreatureInfo(111573)),							-- Kosumoth the Hungering
 		[-804] = GetSpellInfo(254763),											-- Uuna
 		[-805] = GetSpellInfo(277461),											-- Baa'l
-		[-806] = GetItemInfo(162690),											-- Waist of Time
+		[-806] = "Waist of Time",												-- Waist of Time
 		
 -- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest

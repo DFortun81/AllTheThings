@@ -20,7 +20,7 @@ _.Zones =
 							ach(13773),	-- Essence Gains
 						}),
 						ach(12918, {	-- Have a Heart
-							["sourceQuests"] = { 51211 },	-- The Heart of Azeroth
+							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 						}),
 						ach(13777),		-- My Heart Container is Full
 						ach(13771, {	-- Power Is Beautiful
@@ -28,7 +28,7 @@ _.Zones =
 							ach(13770),	-- Power Creep
 						}),
 						ach(13572, {	-- The Heart Forge
-							["sourceQuests"] = { 55618 },	-- The Heart Forge
+							["sourceQuest"] = 55618,	-- The Heart Forge
 						}),
 					}),
 					n(-169, {	-- Emissary Quests
@@ -74,9 +74,12 @@ _.Zones =
 							["sourceQuest"] = 55618,	-- The Heart Forge
 						}),
 						q(52428, {	-- Infusing the Heart
-							["sourceQuests"] = { 53028, 51211 },	-- The Heart of Azeroth (A/H)
-							["coord"] = { 50.3, 54.4 },
 							["qg"] = 136907,	-- Magni Bronzebeard
+							["coord"] = { 50.3, 54.4, 1473 },
+							["sourceQuests"] = { 
+								53028,	-- The Heart of Azeroth (A)
+								51211,	-- The Heart of Azeroth (H)
+							},
 							["g"] = {
 								i(160909),	-- Crown of the Champion
 								i(160913),	-- Crown of the Champion
@@ -270,6 +273,19 @@ _.Zones =
 								}),
 							},
 						}),
+--[[					
+						-- Heart of Azeroth Level 70
+						q(56401, {	--
+						--	["qg"] = ,	--
+						--	["coord"] = { },
+						--	["sourceQuest"] = ,	--
+							["g"] = {
+								i(168614, {	-- Charged Scale of the Blue Aspect
+									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 4)
+								}),
+							},
+						}),
+]]--
 					}),
 					n(-2,   {	-- Vendors
 						["lvl"] = 120,
