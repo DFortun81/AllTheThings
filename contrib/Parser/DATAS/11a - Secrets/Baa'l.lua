@@ -26,18 +26,18 @@ _.Secrets =
 					{ 46.3, 53.9, 863 },	-- Bridge
 					{ 51.8, 59.0, 863 },	-- Conspicuous Note
 				},
-				["description"] = "Your journey begins in Nazmir...  The note reads: \"Begin at the beginning\"",
+				["description"] = "|cFFFFFFFFStep 1:|r Your journey begins in Nazmir...  The note reads: \"Begin at the beginning\"",
 			}),
 			o(293837, {	-- Step 2: First Ordinary Pebble
 				["questID"] = 52809,
 				["sourceQuest"] = 52819,	-- Step 1: Conspicuous Note
-				["description"] = "Broken Shore",-- |cFFFFFFFFStep 2:|r Head to |cFFFFD700The Broken Shore|r, and interact with the pebble on the table in next to |cFFFFD700Drak'Thul|r. If you can't click the pebble, interact with |cFFFFD700Drak'Thul|r so he turns away from the table, or use an |cFFFFD700invsibility potion|r.",  -- Pebble txt "<An ordinary pebble, unremarkable in every way.>
+				["description"] = "|cFFFFFFFFStep 2:|r Broken Shore",-- |cFFFFFFFFStep 2:|r Head to |cFFFFD700The Broken Shore|r, and interact with the pebble on the table in next to |cFFFFD700Drak'Thul|r. If you can't click the pebble, interact with |cFFFFD700Drak'Thul|r so he turns away from the table, or use an |cFFFFD700invsibility potion|r.",  -- Pebble txt "<An ordinary pebble, unremarkable in every way.>
 				["coord"] = { 37.5, 71.6, 646 },
 			}),
 			o(293838, {	-- Step 3: Second Ordinary Pebble
 				["questID"] = 52810,
 				["sourceQuests"] = { 52809 },
-				["description"] = "Boralus",
+				["description"] = "|cFFFFFFFFStep 3:|r Boralus",
 				["coords"] = {
 					{ 49.6, 40.0, 1161 },	-- Nets/Entrance
 					{ 44.7, 38.5, 1161 },	-- Ordinary Pebble
@@ -50,7 +50,7 @@ _.Secrets =
 					{ 31.9, 35.3, 862 },	-- Ordinary Pebble
 				},
 				["sourceQuest"] = 52810,	-- Step 3: Second Ordinary Pebble
-				["description"] = "Zuldazar",
+				["description"] = "|cFFFFFFFFStep 4:|r Zuldazar",
 			}),
 			o(293840, {	-- Step 5: Fourth Ordinary Pebble
 				["questID"] = 52817,
@@ -59,7 +59,7 @@ _.Secrets =
 					{ 36.3, 53.5, 896 },	-- Ordinary Pebble
 				},
 				["sourceQuest"] = 52818,	-- Step 4: Third Ordinary Pebble
-				["description"] = "Drustvar",
+				["description"] = "|cFFFFFFFFStep 5:|r Drustvar",
 			}),
 			o(293841, {	-- Step 6: Fifth Ordinary Pebble
 				["questID"] = 52816,
@@ -68,13 +68,13 @@ _.Secrets =
 					{ 63.0, 21.6, 864 },	-- Ordinary Pebble
 				},
 				["sourceQuest"] = 52817,	-- Step 5 Fourth Ordinary Pebble
-				["description"] = "Vol'dun",
+				["description"] = "|cFFFFFFFFStep 6:|r Vol'dun",
 				
 			}),
 			o(293842, {	-- Step 7: Sixth Ordinary Pebble
 				["questID"] = 52815,
 				["sourceQuests"] = 52816,	-- Step 6: Fifth Ordinary Pebble
-				["description"] = "Stormsong Valley",
+				["description"] = "|cFFFFFFFFStep 7:|r Stormsong Valley",
 				["coords"] = {
 					{ 68.3, 10.5, 942 },	-- Cave Entrance
 					{ 67.9, 13.0, 942 },	-- Ordinary Pebble
@@ -84,7 +84,7 @@ _.Secrets =
 			o(293843, {	-- Step 8: Seventh Ordinary Pebble
 				["questID"] = 52814,
 				["sourceQuest"] = 52815,	-- Step 7: Sixth Ordinary Pebble
-				["description"] = "Nazmir",
+				["description"] = "|cFFFFFFFFStep 8:|r Nazmir",
 				["coords"] = {
 					{ 39.8, 4.0, 863 },	-- Starting location
 					{ 54.5, 7.3, 875 },	-- Ordinary Pebble
@@ -93,7 +93,7 @@ _.Secrets =
 			o(293844, { 	-- Step 9: Eighth Ordinary Pebble
 				["questID"] = 52813,
 				["sourceQuest"] = 52814,	-- Step 8: Seventh Ordinary Pebble
-				["description"] = "Boralus",
+				["description"] = "|cFFFFFFFFStep 9:|r Boralus",
 				["coords"] = {
 					{ 37.5, 80.3, 1161 },	-- Cellar Entrance
 					{ 37.2, 79.9, 1161 },	-- Ordinary Pebble
@@ -106,7 +106,7 @@ _.Secrets =
 					{ 17.2, 6.5, 896 },	-- Ordinary Pebble
 				},
 				["sourceQuest"] = 52813,	-- Step 9: Eighth Ordinary Pebble
-				["description"] = "Drustvar",
+				["description"] = "|cFFFFFFFFStep 10:|r Drustvar",
 			}),
 			o(293846, {	-- Step 11: Tenth Ordinary Pebble
 				["questID"] = 53632,
@@ -115,7 +115,7 @@ _.Secrets =
 					{ 74.3, 70.9, 895 },	-- Ordinary Pebble
 				},
 				["sourceQuest"] = 52812,	-- Step 10: Ningth Ordinary Pebble
-				["description"] = "Tiragarde Sound",
+				["description"] = "|cFFFFFFFFStep 11:|r Tiragarde Sound",
 			}),
 			o(303018, { 	-- Step 12: Eleventh Ordinary Pebble
 				["questID"] = 53633,
@@ -124,12 +124,12 @@ _.Secrets =
 					{ 79.7, 18.0, 895 },	-- Ordinary Pebble
 				},
 				["sourceQuest"] = 53632,	-- Step 11: Tenth Ordinary Pebble
-				["description"] = "Tiragarde Sound",
+				["description"] = "|cFFFFFFFFStep 12:|r Tiragarde Sound",
 			}),
 			o(303017, { 	-- Step 13: Twelfth Ordinary Pebble
 				["questID"] = 53634,
 				["sourceQuests"] = { 53633 },
-				["description"] = "Boralus",
+				["description"] = "|cFFFFFFFFStep 13:|r Boralus",
 				["coords"] = {
 					{ 10.0, 82.7, 1161 },	-- Cave Entrance
 					{ 59.7, 41.8, 895 },	-- Ordinary Pebble
@@ -143,13 +143,13 @@ _.Secrets =
 					{ 55.72, -10.21, 875 },	-- Underwater Cave
 				},
 				["sourceQuest"] = 53634,	-- Step 13: Twelfth Ordinary Pebble
-				["description"] = "Vol'dun, Nazmir.\n\nThe stone reads:\n\"<Something is carved into the stone.>\n\nHeckler of the Murkiest Thugs, sheathe \nyour\nBat and remove the Keg Cork, Wot?\"",
+				["description"] = "|cFFFFFFFFStep 14:|r Vol'dun, Nazmir.\n\nThe stone reads:\n\"<Something is carved into the stone.>\n\nHeckler of the Murkiest Thugs, sheathe \nyour\nBat and remove the Keg Cork, Wot?\"",
 			}),
-			n(141909, {		-- Baa'l
+			n(141909, {	-- Baa'l
 				["questID"] = 52828,
 				["coord"] = { 62.3, 22.9, 525 },
 				["sourceQuest"] = 52827,	-- Step 14: Thirteenth Ordinary Pebble
-				["description"] = "Frostfire Ridge",
+				["description"] = "|cFFFFFFFFStep 15:|r Frostfire Ridge",
 				["g"] = {
 					i(162578),	-- Baa'ls Darksign
 				},
