@@ -10,7 +10,6 @@ _.Secrets =
 		},
 		["g"] = {
 			o(9999908, {	-- |cFFFFFFFFStep 1:|r Gather Consumables.
-				["icon"] = "Interface\\Icons\\INV_Misc_Map02",
 				["description"] = "|cFFFFFFFFSTEP 1:|r Gather the following quantity of consumables:",
 				["g"] = {
 					i(38320, {	-- Dire Brew
@@ -152,60 +151,47 @@ _.Secrets =
 				},
 			}),
 			o(9999909, {	-- |cFFFFFFFFStep 2:|r Cavern of Consumption
-				["icon"] = "Interface\\Icons\\Achievement_Zone_Winterspring",
 				["description"] = "|cFFFFFFFFSTEP 2:|r |cff66ccffOnce you have gathered all of the consumables go to Caverns of Consumption on the North coast of Winterspring|r, and travel threw the cavern to the fire barrier.\n\n***Before you continue, make sure you have 10-15 mins to finish the remaining steps***",
 				["coords"] = {
 					{ 57.2, 14.0, 12 },	-- Cave Entrance
 				},
 			}),
 			o(9999910, {	-- |cFFFFFFFFStep 3:|r Fire Barrier
-				["icon"] = "Interface\\Icons\\INV_potion_124",
 				["description"] = "|cFFFFFFFFSTEP 3:|r |cff66ccffUse the Major Fire Protection Potion, and pass threw the Fire Barrior|r",
 			}),
 			o(9999911, {	-- |cFFFFFFFFStep 4:|r Prismatic Barrier
-				["icon"] = "Interface\\Icons\\INV_Potion_129",
 				["description"] = "|cFFFFFFFFSTEP 4:|r |cff66ccffUse the rest of the Major Potions and pass threw the Prismatic Barrior|r",
 			}),
 			o(9999912, {	-- |cFFFFFFFFStep 5:|r Diligent Watcher
-				["icon"] = "Interface\\Icons\\INV_Potion_83",
 				["description"] = "|cFFFFFFFFSTEP 5:|r |cff66ccffUse Noggenfogger Elixir until you turn into a Skeleton, then walk past the Diligent Watcher.|r",
 			}),
 			o(9999913, {	-- |cFFFFFFFFStep 6:|r Vine Barrier
-				["icon"] = "Interface\\Icons\\INV_Misc_Coin_17",
 				["description"] = "|cFFFFFFFFSTEP 6:|r |cff66ccffOn the right will be a Wall of Vines.  Use Scotty's Lucky Coin, pass threw the vines, and loot a Water Stone from the water.|r",
 			}),
 			o(9999914, {	-- |cFFFFFFFFStep 7:|r Water Barrier
-				["icon"] = "Interface\\Icons\\INV_Elemental_Mote_Water01",
 				["description"] = "|cFFFFFFFFSTEP 7:|r |cff66ccffUse the Water Stone, backtrack to the Blue Barrier and walk threw ever so slightly.|r",
 			}),
 			o(9999915, {	-- |cFFFFFFFFStep 8:|r Stone Golem
-				["icon"] = "Interface\\Icons\\INV_Drink_03",
 				["description"] = "|cFFFFFFFFSTEP 8:|r |cff66ccffUse the Dire Brew and walk past the Stone Watcher|r",
 			}),
 			o(9999916, {	-- |cFFFFFFFFStep 9:|r Ethereal Barrier
-				["icon"] = "Interface\\Icons\\INV_Drink_11",
 				["description"] = "|cFFFFFFFFSTEP 9:|r |cff66ccffGo up the ramp on the right to the Purple Transparent Barrier. Use Ethereal Oil and walk threw the barrier to the Strange Stone in the back.|r",
 			}),
 			o(9999917, {	-- |cFFFFFFFFStep 10:|r Strange Stone
-				["icon"] = "Interface\\Icons\\Spell_Shadow_Rune",
 				["description"] = "|cFFFFFFFFSTEP 10:|r |cff66ccffAt the Strange Stone, use the Gordok Ogre Suit & Wintefall Firewater.  Select the Strange Stones dialogue \"Stick arm in stone\" and recieve Sign of the Second debuff.|r",
 			}),
 			o(9999918, {	-- |cFFFFFFFFStep 11:|r Metal Gate
-				["icon"] = "Interface\\Icons\\INV_Potion_07",
 				["description"] = "|cFFFFFFFFSTEP 11:|r |cff66ccffBacktrack to the gate and use the Pygmy Oil until you turn into a Pygmy.  Walk threw the gate to the Wisdom Cube.|r",
 			}),
 			o(9999919, {	-- |cFFFFFFFFStep 12:|r Wisdom Cube
-				["icon"] = "Interface\\Icons\\Spell_Ice_Rune",
 				["description"] = "|cFFFFFFFFSTEP 12:|r |cff66ccffAt the Wisdom Cube summon Perky Pug and use the Little Princess Costume on it. Select the Wisdom Cubes dialogue \"Place Arm Beneath Cube\" and recieve Sign of the First debuff.|r",
 			}),
 			o(9999920, {	-- |cFFFFFFFFStep 13:|r Tarnished Plaque
-				["icon"] = "Interface\\Icons\\INV_Scroll_01",
 				["description"] = "|cFFFFFFFFSTEP 13a:|r |cff66ccffBacktrack down the ramp to the now opened gate. DO NOT JUMP OFF. Enter the room and on a pillar on the right will be a Tarnished Plaque.  Click on it.\n\nThe Tarnished Plaque reads:\n\n\"The greatest of achievments begins\nwith the smallest leap of the mind.\"\n\n|cFFFFFFFFSTEP 13b:|r After reading the Tarnished Plaque, click off at least one buff and use the Scroll of Intellect.|r",
 			}),
 			o(272487, {	-- |cFFFFFFFFStep 14:|r Oddly-Colored Egg	
 				--["modelID"] = 74529,
 				--["modelScale"] = 2,
-				["icon"] = "Interface\\Icons\\INV_Egg_09",
 				["questID"] = 48022,
 				["description"] = "|cFFFFFFFFSTEP 14:|r |cff66ccffDO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water.  Walk across the water and loot the egg.|r\n\nCongrats on your new pet!!! \n\n!Don't forget to turn off debug mode now that you are done.",  -- |cff3399ff -- blue color
 				["g"] = {

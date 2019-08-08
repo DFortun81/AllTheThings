@@ -23,7 +23,6 @@ _.Secrets =
 			},
 			["g"] = {
 				o(293849, { 	-- Conspicuous Note
-					["icon"] = "Interface\\Icons\\INV_Misc_NoteBlank1a",
 					["questID"] = 52819,
 					["description"] = "Your journey begins in Nazmir...  The note reads: \"Begin at the beginning\"",
 					["coords"] = {
@@ -32,14 +31,12 @@ _.Secrets =
 					},
 				}),
 				o(9999948, {	-- First Pebble			-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52809,
 					["sourceQuests"] = { 52819 },
 					["description"] = "Broken Shore",-- |cFFFFFFFFStep 2:|r Head to |cFFFFD700The Broken Shore|r, and interact with the pebble on the table in next to |cFFFFD700Drak'Thul|r. If you can't click the pebble, interact with |cFFFFD700Drak'Thul|r so he turns away from the table, or use an |cFFFFD700invsibility potion|r.",  -- Pebble txt "<An ordinary pebble, unremarkable in every way.>
 					["coord"] = { 37.5, 71.6, 646 },
 				}),
 				o(9999949, {	-- Second Pebble		-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52810,
 					["sourceQuests"] = { 52809 },
 					["description"] = "Boralus",
@@ -49,7 +46,6 @@ _.Secrets =
 					},
 				}),
 				o(9999950, {	-- Third Pebble			-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52818,
 					["sourceQuests"] = { 52810 },
 					["description"] = "Zuldazar",
@@ -59,7 +55,6 @@ _.Secrets =
 					},
 				}),
 				o(9999951, {	-- Fourth Pebble		-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52817,
 					["sourceQuests"] = { 52818 },
 					["description"] = "Drustvar",
@@ -69,7 +64,6 @@ _.Secrets =
 					},
 				}),
 				o(9999952, {	-- Fifth Pebble			-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52816,
 					["sourceQuests"] = { 52817 },
 					["description"] = "Vol'dun",
@@ -79,7 +73,6 @@ _.Secrets =
 					},
 				}),
 				o(9999953, {	-- Sixth Pebble			-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52815,
 					["sourceQuests"] = { 52816 },
 					["description"] = "Stormsong Valley",
@@ -90,7 +83,6 @@ _.Secrets =
 					},
 				}),
 				o(9999954, {	-- Seventh Pebble		-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52814,
 					["sourceQuests"] = { 52815 },
 					["description"] = "Nazmir",
@@ -100,7 +92,6 @@ _.Secrets =
 					},
 				}),
 				o(9999955, { 	-- Eighth Pebble		-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52813,
 					["sourceQuests"] = { 52814 },
 					["description"] = "Boralus",
@@ -110,7 +101,6 @@ _.Secrets =
 					},
 				}),
 				o(9999956, { 	-- Ningth Pebble		-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52812,
 					["sourceQuests"] = { 52813 },
 					["description"] = "Drustvar",
@@ -120,7 +110,6 @@ _.Secrets =
 					},
 				}),
 				o(9999957, { 	-- Tenth Pebble			-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 53632,
 					["sourceQuests"] = { 52812 },
 					["description"] = "Tiragarde Sound",
@@ -130,7 +119,6 @@ _.Secrets =
 					}
 				}),
 				o(9999958, { 	-- Eleventh Pebble		-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 53633,
 					["sourceQuests"] = { 53632 },
 					["description"] = "Tiragarde Sound",
@@ -140,7 +128,6 @@ _.Secrets =
 					},
 				}),
 				o(9999959, { 	-- Twelfth Pebble		-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 53634,
 					["sourceQuests"] = { 53633 },
 					["description"] = "Boralus",
@@ -150,7 +137,6 @@ _.Secrets =
 					},
 				}),
 				o(9999960, { 	-- Thirteenth Pebble	-- "Ordinary Pebble"
-					["icon"] = "Interface\\Icons\\INV_Stone_16",
 					["questID"] = 52827,
 					["sourceQuests"] = { 53634 },
 					["description"] = "Vol'dun, Nazmir.\n\nThe stone reads:\n\"<Something is carved into the stone.>\n\nHeckler of the Murkiest Thugs, sheathe \nyour\nBat and remove the Keg Cork, Wot?\"",
@@ -199,14 +185,12 @@ _.Secrets =
 			},
 			["g"] = {
 				o(9999946, { 	-- Summon Baa'l
-					["icon"] = "Interface\\Icons\\PetJournalPortrait",
 					["modelID"] = 80456,	-- Baa'l
 					["questID"] = 52829,
 					["sourceQuests"] = { 52828 },
 					["description"] = "Souls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!",
 				}),
 				o(294096, { 	-- Lit Orb  -- Summoned Baal' at this location and 52829 triggered, possibly his emote text  "Souls fEast on the enDless shrieKing, in darKNess they writhe and scream, yOu WiLl join thEm, toGether forEver morE!"
-					["icon"] = "Interface\\Icons\\Ability_TitanKeeper_CleansingOrb",
 					["questID"] = 52830,	-- Orb click
 					["sourceQuests"] = { 52829 },
 					["description"] = "Your journey continues in Spires of Arak.  You must have summoned Baa'l at least once before you can continue. \n\nInside the small basket \n\nThe Orb Reads: \n\n\"<Something is written here.>\n\nPassive Ice Veins\"",
@@ -215,7 +199,6 @@ _.Secrets =
 					},
 				}),
 				o(294097, { 	-- Strange Seed
-					["icon"] = "Interface\\Icons\\Inv_Farm_PumpkinSeed_Red",
 					["questID"] = 52831,
 					["sourceQuests"] = { 52830 },
 					["description"] = "Stormwind City\n\nThe Strange Seed reads: \n\n\"<Something is written here.>\n\nSadness, Keynoted\"",
@@ -224,7 +207,6 @@ _.Secrets =
 					},
 				}),
 				o(294098, { 	-- Tiny Frog
-					["icon"] = "Interface\\Icons\\INV_Frog2_Green",
 					["questID"] = 52898,
 					["sourceQuests"] = { 52831 },
 					["description"] = "Spires of Arak\n\nUnderwater on top of the large rock.  \n\nThe Tiny Frog says:\n\n\"<Something is written here.>\n\nDog wig moss?\"",	 
@@ -233,7 +215,6 @@ _.Secrets =
 					},
 				}),
 				o(294099, { 	-- Brittle Bone
-					["icon"] = "Interface\\Icons\\INV_Misc_Bone_01",
 					["questID"] = 52899,
 					["sourceQuests"] = { 52898 },
 					["description"] = "Blades Edge Mountains\n\nOn the ground next to a crystal.  \n\nThe Brittle Bone reads:\n\n\"<Something is written here.>\n\nRage, Shank Sever\"", 
@@ -242,7 +223,6 @@ _.Secrets =
 					},
 				}),
 				o(294100, { 	-- Misplaced Candle
-					["icon"] = "Interface\\Icons\\INV_Helm_Misc_Candle_A_01",
 					["questID"] = 52900,
 					["sourceQuests"] = { 52899 },
 					["description"] = "Spires of Arak\n\nNext to a large candle. \n\nThe Misplaced Candle reads:\n\n\"<Something is written here.>\n\nRankest Goldfish\"",
@@ -251,7 +231,6 @@ _.Secrets =
 					},
 				}),
 				o(294101, {		-- Odd Cup
-					["icon"] = "Interface\\Icons\\INV_Drink_19",
 					["questID"] = 52901,
 					["sourceQuests"] = { 52900 },
 					["description"] = "Draenor SMV\n\nBrown cup, next to the fire. \n\nThe Odd Cup reads:\n\n\"<Something is written here.>\n\nEase off fruit...\"",  
@@ -260,7 +239,6 @@ _.Secrets =
 					},
 				}),
 				o(294102, { 	-- Interesting Rock
-					["icon"] = "Interface\\Icons\\INV_Stone_10",
 					["questID"] = 52902,
 					["sourceQuests"] = { 52901 },
 					["description"] = "Outland SMV\n\nOn top of the mountain.\n\nThe Interesting Rock reads:\n\n\"<Something is written here.>\n\nThe BIG Bull\"",
@@ -269,7 +247,6 @@ _.Secrets =
 					},
 				}),
 				o(294103, { 	-- Blooming Lily
-					["icon"] = "Interface\\Icons\\INV_Misc_Herb_19",
 					["questID"] = 52903,
 					["sourceQuests"] = { 52902 },
 					["description"] = "Swamp of Sorrows\n\nUnder the tree, on top of the water.\n\nThe Blooming Lily reads:\n\n\"<Something is written here.>\n\nJaws open nooks!\"",
@@ -278,7 +255,6 @@ _.Secrets =
 					},
 				}),
 				o(294104, { 	-- Pretty Flower
-					["icon"] = "Interface\\Icons\\INV_Misc_Roses_01",
 					["questID"] = 52904,
 					["sourceQuests"] = { 52903 },
 					["description"] = "Eastern Plaguelands\n\nInside the crypt, on top of the sarcophagus lid\n\nThe Pretty Flower reads:\n\n\"<Something is written here.>\n\nDead Rune Thug\"", 
@@ -287,7 +263,6 @@ _.Secrets =
 					},
 				}),
 				o(294105, { 	-- Old Book
-					["icon"] = "Interface\\Icons\\INV_Misc_Book_09",
 					["questID"] = 52905,
 					["sourceQuests"] = { 52904 },
 					["description"] = "Deadwind Pass\n\nInside the old church, near the table.\n\nThe Old Book reads:\n\n\"<Something is written here.>\n\n...A Stage Deception\"", 
@@ -296,7 +271,6 @@ _.Secrets =
 					},
 				}),
 				o(294106, { 	-- Dead Fish
-					["icon"] = "Interface\\Icons\\INV_MISC_FOOD_164_FISH_SEADOG",
 					["questID"] = 52906,
 					["sourceQuests"] = { 52905 },
 					["description"] = "Blackrock Mountain\n\nRoom next to LBRS entrance, next to the fire.\n\nThe Dead Fish says:\n\n\"<Something is written here.>\n\nNecropolis Expos!\"",
@@ -306,7 +280,6 @@ _.Secrets =
 					},
 				}),
 				o(294107, { 	-- Scratched Board
-					["icon"] = "Interface\\Icons\\INV_TradeskillItem_01",
 					["questID"] = 52907,
 					["sourceQuests"] = { 52906 },
 					["description"] = "Duskwood\n\nUnderneath the large plank.\n\nThe Scratched Board reads:\n\n\"<Something is written here.>\n\nThe net saves.\"",
@@ -315,7 +288,6 @@ _.Secrets =
 					},
 				}),
 				o(294108, { 	-- Lost Ring
-					["icon"] = "Interface\\Icons\\INV_MISC_6oRing_BlueLv2",
 					["questID"] = 52908,
 					["sourceQuests"] = { 52907 },
 					["description"] = "Hillsbrad Foothills\n\nJust inside the clocktower, left pile of bones.\n\nThe Lost Ring reads:\n\n\"<Something is written here.>\n\nTerrible grunt.\"",
@@ -324,7 +296,6 @@ _.Secrets =
 					},
 				}),
 				o(294109, { 	-- Spoiled Apple
-					["icon"] = "Interface\\Icons\\INV_Misc_Food_19",
 					["questID"] = 52909,
 					["sourceQuests"] = { 52908 },
 					["description"] = "Badlands\n\nInside the larger building, on the table, next to the roasted boar.\n\nThe Spoiled Apple reads:\n\n\"<Something is written here.>\n\nLeave Nets, Often\"",
@@ -333,7 +304,6 @@ _.Secrets =
 					},
 				}),
 				o(294110, { 	-- Broken Tooth
-					["icon"] = "Interface\\Icons\\INV_Archaeology_Orcclans_Grontoothnecklace",
 					["questID"] = 52910,
 					["sourceQuests"] = { 52909 },
 					["description"] = "Blasted Lands\n\nBase of the statue, near a candle.  The tooth is present in both the past and present.\n\nThe Broken tooth reads:\n\n\"<Something is written here.>\n\nBrash remains.\"",
@@ -342,7 +312,6 @@ _.Secrets =
 					},
 				}),
 				o(294111, { 	-- Worn Helm
-					["icon"] = "Interface\\Icons\\INV_Misc_Desecrated_PlateHelm",
 					["questID"] = 52911,
 					["sourceQuests"] = { 52910 },
 					["description"] = "Burning Steppes\n\nEquipped on the larger brown skeletons head.\n\nThe Worn Helm reads:\n\n\"<Something is written here.>\n\nSensed the Figs...\"",
@@ -351,7 +320,6 @@ _.Secrets =
 					},
 				}),
 				o(294112, { 	-- Leafy Leaf
-					["icon"] = "Interface\\Icons\\INV_Misc_Herb_Fadeleaf_Petal",
 					["questID"] = 52912,
 					["sourceQuests"] = { 52911 },
 					["description"] = "Northrend Dalaran\n\nIn front of the left planter.\n\nThe Leafy Leaf reads:\n\n\"<Something is written here.>\n\nPhantasmal Hosts?\"",  -- Punctured Pelt purchase while on this?
@@ -360,7 +328,6 @@ _.Secrets =
 					},
 				}),
 				o(294113, { 	-- Musty Cloth
-					["icon"] = "Interface\\Icons\\Item_moonclothbolt",
 					["questID"] = 52913,
 					["sourceQuests"] = { 52912 },
 					["description"] = "Terrokar Forrest\n\nInside the crate, inside the tent, near the Shadow Labs entrance.\n\nThe Musty Cloth reads:\n\n\"<Something is written here.>\n\nScarce odds, still.\"",
@@ -369,7 +336,6 @@ _.Secrets =
 					},
 				}),
 				o(294114, { 	-- Broken Tablet
-					["icon"] = "Interface\\Icons\\INV_Misc_StoneTablet_04",
 					["questID"] = 52914,
 					["sourceQuests"] = { 52913 },
 					["description"] = "Twilight Highlands\n\nOn the ground next to the mace.\n\nThe Broken Tablet reads:\n\n\"<Something is written here.>\n\nStarfish droplets!\"",
@@ -378,7 +344,6 @@ _.Secrets =
 					},
 				}),
 				o(294115, { 	-- Ashed Torch
-					["icon"] = "Interface\\Icons\\INV_Torch_Unlit",
 					["questID"] = 52915,
 					["sourceQuests"] = { 52914 },
 					["description"] = "Feralas\n\nMiddle of the remains and table, sticking out of the ground.\n\nThe Ashed Torch reads:\n\n\"<Something is written here.>\n\n...a daft tormenter's fog.\"",
@@ -387,7 +352,6 @@ _.Secrets =
 					},
 				}),
 				o(294312, { 	-- Grimmy's List of Friends
-					["icon"] = "Interface\\Icons\\INV_Misc_NotePicture2c",
 					["questID"] = 52916,
 					["sourceQuests"] = { 52915 },
 					["description"] = "Head to the past version of Arathi Highlands, and click on the note on the table inside Grimmy's house.\n\nGrimmy's List of Friends reads:\n\n\"List of My Friends?\nFirst is SN, you always smelled so good\nSecond is TM, you smelled like burning\nwood\nThird is FD, though you smelled like fel\nLast is OM, I hated that fishy smell\"",
@@ -406,7 +370,6 @@ _.Secrets =
 					},
 				}),
 				o(294314, { 	-- Grimmy's List of Enemies
-					["icon"] = "Interface\\Icons\\INV_Misc_NotePicture1c",
 					["questID"] = 52918,
 					["sourceQuests"] = { 52917 },
 					["description"] = "After selecting the Grimmy dialogue, a note appears on his bedstand.  Click it.  Grimmy's List of Enemies reads:\n\n\"You flaunted your virility, and red was\nnever to my liking\nThough I wanted to slap you, I always\nfound you striking.\n\nYou Always though you knew what was\nbest, but not everyone likes greens,\nThough I waved your way, I pictured\nyour shredded hide in my dreams.\n??\nYour bread was bad, you diseased lout,\nit made me sick.\nI woudl cheerily beat you with a stick.\n??\nLast you, I'm not eve going to think of\na rhyme for you, Mugs.\nI will dance on your grave, you were\nuniquely terrible.\"\n\nGo to each of the following npc's with Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking, and emote to them.",
@@ -450,13 +413,12 @@ _.Secrets =
 					--["icon"] = "Interface\\Icons\\INV_Torch_Unlit",
 					["questID"] = 52919,
 					["sourceQuests"] = { 52826, 52824, 52823, 52822, },
-					["description"] = "Return to Grimmy and select his new dialogue\n\n\"I've sent some messages to your enemies, now about those secrets...\"",
+					["description"] = "After emoting to the four npcs return to Grimmy and select his new dialogue\n\n\"I've sent some messages to your enemies, now about those secrets...\"",
 					["coords"] = {
 						{ 85.3, 73.6, 14 },	-- Grimmy Dialogue
 					},
 				}),
 				o(294315, { 	-- Grimmy's Favorite Recipe
-					["icon"] = "Interface\\Icons\\INV_Misc_NoteScript1c",
 					["questID"] = 52920,
 					["sourceQuests"] = { 52919 },
 					["description"] = "After selecting Grimmy's dialogue, a new note appears by the fireplace.  Click it.  Grimmy's Favorite Recipe reads:\n\n\"A pinch of turmeric and a pound of salt,\nif it comes out poorly it's your own\nfault.\n\nPay attention to the broth, and stir,stir,\nstir!\nThen add a big handful of boar fur.\n\nLast you need a little sour,\nget the kick with a little gunpowder!\"",
@@ -465,7 +427,6 @@ _.Secrets =
 					},
 				}),
 				o(294335, { 	-- Rotten Potato
-					["icon"] = "Interface\\Icons\\Ability_Creature_Disease_01",
 					["questID"] = 52921,
 					["sourceQuests"] = { 52920 },
 					["description"] = "Go outside and find the Rotten Potato.  You will need to get exactly 144 stacks of Rotten Potato by clicking the potato.  After getting 144 stacks of the buff, go back and talk to Grimmy and select his new dialogue option\"How do I smell?\"\n\nGrimmy's new dialogue says:\n\n\"Oh, my, just like my mother used to after she made her famous pie.\n\nVery well, I will show you...my life's work!\n\nIt's in the chest out back, and it's all yours!\n\nI hope it was worth it!\"",
@@ -474,7 +435,6 @@ _.Secrets =
 					},
 				}),
 				o(294703, { 	-- Grimmy's Rusty Lockbox
-					["icon"] = "Interface\\Icons\\INV_Box_03",
 					["questID"] = 52922,
 					["sourceQuests"] = { 52921 },
 					["description"] = "After asking Grimmy how you smell, go outside behind and above his house, and on the hill will be Grimmy's Rusty Lockbox waiting for you to open it.",
