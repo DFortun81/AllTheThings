@@ -112,13 +112,13 @@ _.Achievements =
 						crit(6),		-- Horde of Heroes
 					})),]]
 					ach(12918),		-- Have a Heart
-					ach(13542, {	-- How to Train Your Direhorn
+					h(ach(13542, {	-- How to Train Your Direhorn
 						crit(1),	-- Naptime
 						crit(2),	-- Held for Observation
 						crit(3),	-- Sleep, Eat, Repeat
 						crit(4),	-- Torcali's Blessing
 						crit(5),	-- Wander Not Alone
-					}),
+					})),
 					h(ach(13573, {	-- How to Ptrain Your Pterrordax
 						crit(1),	-- Just Ptrust Me On This
 						ach(13030, {	-- How to Ptrain Your Pterrordax
