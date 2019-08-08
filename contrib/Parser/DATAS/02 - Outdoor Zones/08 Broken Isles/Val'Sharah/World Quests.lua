@@ -1098,6 +1098,11 @@ _.Zones =
 				q(42023, {	-- Black Rook Rumble
 					["lvl"] = 110,
 					["collectible"] = false,
+					["g"] = {
+						crit(3, {	-- Off the Top Rook
+							["achievementID"] = 11474,	-- Free For All, More For Me
+						}),
+					},
 				}),
 				q(41955, {	-- Bloodline of Stone
 					["lvl"] = 110,

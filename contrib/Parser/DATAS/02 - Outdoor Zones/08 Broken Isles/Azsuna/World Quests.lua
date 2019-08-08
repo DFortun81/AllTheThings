@@ -293,6 +293,11 @@ _.Zones =
 				q(41896, {	-- Operation Murloc Freedom
 					["lvl"] = 110,
 					["collectible"] = false,
+					["g"] = {
+						crit(1, {	-- Mission Accomplished
+							["achievementID"] = 11474,	-- Free For All, More For Me
+						}),
+					},
 				}),
 				q(42623, {	-- Piracy Doesn't Pay
 					["lvl"] = 110,
