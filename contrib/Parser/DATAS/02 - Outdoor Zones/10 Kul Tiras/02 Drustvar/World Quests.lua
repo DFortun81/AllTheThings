@@ -223,10 +223,7 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(53272, {	-- Blooming Siren's Sting
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
+				
 				q(53299, {	-- Blooming Siren's Sting
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -1413,6 +1410,11 @@ _.Zones =
 					q(51699, {	-- Blighted Monstrosity
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(53272, {	-- Blooming Siren's Sting
+						["requireSkill"] = 182,	-- Herbalism
+						["collectible"] = false,
+						["lvl"] = 120,
 					}),
 					q(51709, {	-- Bombarbment
 						["lvl"] = 120,

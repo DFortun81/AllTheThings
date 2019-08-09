@@ -17,6 +17,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["lvl"] = 120,
 					["collectible"] = false,
 				}),
+				q(52298, {	-- The MOTHERLODE!!: The Smarts Are In His Horn!
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
 			}),
 			d(1, {	-- Normal
 				e(2109, {	-- Coin-Operated Crowd Pummeler

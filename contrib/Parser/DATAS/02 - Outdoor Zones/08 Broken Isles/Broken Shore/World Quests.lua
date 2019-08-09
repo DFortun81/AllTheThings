@@ -44,7 +44,6 @@ _.Zones =
 					q(46811),	-- The Broodmother's Wrath
 					q(46032),	-- The Tormented Return
 					q(46325),	-- The United Front
-					q(46063),	-- The Wailing Dead
 				}),
 ]]--
 				q(45473, {	-- A Giant Problem
@@ -252,6 +251,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46160, {	-- The Shackled Void
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46063, {	-- The Wailing Dead
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

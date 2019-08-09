@@ -26,7 +26,6 @@ _.Zones =
 				q(43059),	-- DANGER: Fjordun
 				q(43079),	-- DANGER: Immolian
 				q(44190),	-- DANGER: Jade Darkhaven
-				q(44191),	-- DANGER: Karthax
 				q(43798),	-- DANGER: Kosumoth the Hungering
 				q(44192),	-- DANGER: Lysanis Shadesoul
 				q(43063),	-- DANGER: Stormfeather
@@ -125,6 +124,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43175, {	-- DANGER: Deepclaw
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44191, {	-- DANGER: Karthax
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

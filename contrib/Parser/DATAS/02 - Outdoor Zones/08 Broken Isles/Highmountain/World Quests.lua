@@ -18,14 +18,12 @@ _.Zones =
 				q(41210),	-- Brimstone Destroyer
 				q(41233),	-- Bristled Bear Skin
 				q(41238),	-- Calcified Wormscales
-				q(41623),	-- Champions of Highmountain
 				q(41201),	-- Coarse Leystone Outcropping
 				q(46183),	-- Commander Zarthak
 				q(41699),	-- Crabby Crunchies
 				q(41202),	-- Crude Leystone Seams
 				q(41685),	-- DANGER: Ala'washte
 				q(41695),	-- DANGER: Defilia
-				q(41696),	-- DANGER: Mawat'aki
 				q(41686),	-- DANGER: Olokk the Shipbreaker
 				q(41703),	-- DANGER: Ormagrogg
 				q(41816),	-- DANGER: Oubdob da Smasher
@@ -54,7 +52,6 @@ _.Zones =
 				q(41090),	-- Lords of the Hills
 				q(41089),	-- Lords of the Hills
 				q(41433),	-- Massive Leystone Deposits
-				q(41122),	-- Mists Take You
 				q(41057),	-- Primal Payback
 				q(41055),	-- Primal Payback
 				q(40985),	-- Rimescale Naga Incursion: Highmountain
@@ -131,6 +128,10 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
+				q(41623, {	-- Champions of Highmountain
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46196, {	-- Class Dismissed (Invasion WQ)
 					["collectible"] = false,
 					["lvl"] = 98,
@@ -144,6 +145,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41093, {	-- DANGER: Durguth
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41696, {	-- DANGER: Mawat'aki
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -234,6 +239,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41122, {	-- Mists Take You
+					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(41077, {	-- Munitions Testing
 					["lvl"] = 110,

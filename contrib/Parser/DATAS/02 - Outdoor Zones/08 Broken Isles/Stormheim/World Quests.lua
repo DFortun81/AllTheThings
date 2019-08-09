@@ -72,7 +72,6 @@ _.Zones =
 				q(43438),	-- WANTED: Nameless King
 				q(43625),	-- WANTED: Nameless King
 				q(43626),	-- WANTED: Thane Irglov
-				q(43450),	-- WANTED: Tiptog the Lost
 				q(43628),	-- WANTED: Urgev the Flayer
 				q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
 				q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
@@ -392,6 +391,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43627, {	-- WANTED: Tiptog the Lost
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43450, {	-- WANTED: Tiptog the Lost
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

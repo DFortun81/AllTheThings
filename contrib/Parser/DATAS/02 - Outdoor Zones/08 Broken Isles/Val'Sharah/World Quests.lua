@@ -484,10 +484,7 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
-				q(41612, {	-- Huge Mossgill Perch
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
+				
 				q(38719),	-- Illidari Freedom
 
 				q(44278),	-- Illidari Freedom
@@ -1193,6 +1190,11 @@ _.Zones =
 				q(42124, {	-- Hags and Hexes
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41612, {	-- Huge Mossgill Perch
+					["requireSkill"] = 356,	-- Fishing
+					["collectible"] = false,
+					["lvl"] = 110,
 				}),
 				q(42028, {	-- Into the Nightmare
 					["lvl"] = 110,

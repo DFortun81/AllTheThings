@@ -13,7 +13,6 @@ _.Zones =
 				q(41447),	-- Burning Felslate Deposits
 				q(41195),	-- Culling Ambervale
 				q(44113),	-- DANGER: Achronos
-				q(44118),	-- DANGER: Auditor Esiel
 				q(44121),	-- DANGER: Az'jatar
 				q(41697),	-- DANGER: Colerian, Alteria, and Selenyi
 				q(42799),	-- DANGER: Oglok the Furious
@@ -35,7 +34,6 @@ _.Zones =
 				q(41617),	-- Huge Runescale Koi
 				q(41538),	-- Iridescent Starlight Roses
 				q(41605),	-- Lively Runescale Koi
-				q(41279),	-- Lively Runescale Koi
 				q(41604),	-- Lively Runescale Koi
 				q(41461),	-- Malevolent Felslate Outcropping
 				q(43513),	-- Na'zak the Fiend
@@ -150,6 +148,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44118, {	-- DANGER: Auditor Esiel
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42797, {	-- DANGER: Scythemaster Cil'raman
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -233,6 +235,11 @@ _.Zones =
 				q(45032, {	-- Like the Wind
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41279, {	-- Lively Runescale Koi
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41537, {	-- Lively Starlight Roses
 					["lvl"] = 110,
