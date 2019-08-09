@@ -503,7 +503,11 @@ _.NeverImplemented =
 		q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
 		q(56488),	-- Triggered after killing Herald of Salgos
 		q(55891),	-- Triggered after killing Herald of Salgos
-		q(56892),	-- Triggered after killing Herald of Salgos
+		q(56892),	-- Triggered after killing Herald of Salgos and Burning Amalgamation
+		q(55145),	-- Triggered after killing Burning Amalgamation
+		q(56481),	-- Triggered after killing Burning Amalgamation
+		q(56725),	-- Triggered after killing Burning Amalgamation
+		q(56891),	-- Triggered after killing Burning Amalgamation
 		--	Naga Commanders
 		q(56882),	-- Commander Minezra
 		q(56895),	-- Incantatrix Vazina

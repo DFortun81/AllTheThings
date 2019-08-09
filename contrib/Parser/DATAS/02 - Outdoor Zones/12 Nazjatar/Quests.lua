@@ -284,7 +284,7 @@ _.Zones =
 			}),
 			q(56218, {	--	Beauty in the Deeps
 				["qgs"] = {
-					154297,	-- Bladesman Inowari	-- active npcID need to be confirmed
+					154297,	-- Bladesman Inowari
 					149803,	-- Bladesman Inowari (inactive in front of the bonfire)
 				},
 				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 20.",

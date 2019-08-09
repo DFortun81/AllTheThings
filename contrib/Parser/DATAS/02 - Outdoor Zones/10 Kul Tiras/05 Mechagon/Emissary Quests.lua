@@ -14,9 +14,12 @@ _.Zones =
 					["g"] = {
 						i(170061, {	-- Rustbolt Supplies
 							i(168494, {	-- Blueprint Rustbolt Resistance Insignia
-								crit(19, {	-- Rustbolt Resistance Insignia
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
+								["quest"] = 55073,
+								["g"] = {
+									crit(19, {	-- Rustbolt Resistance Insignia
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								},
 							}),
 							i(169171, {	-- Blueprint MicroBot XD
 								crit(31, {	-- Microbot XD
@@ -26,6 +29,7 @@ _.Zones =
 							i(168935),	-- Existence Vibrancy Display
 							i(168569),	-- Null Force Visualizer
 							i(168861),	-- Ultimate Purification Protocols
+							i(168368),	-- Recipe: Famine Evaluator And Snack Table (Rank 3)
 						}),
 					},
 				}),
