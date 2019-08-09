@@ -190,13 +190,6 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 1475 },	-- The Emerald Dream
 						}),
-						q(55397, {	-- Before I Wake
-							["qg"] = 151825,	-- Merithra of the Dream
-							["coord"] = { 46.5, 39.7, 1475 },
-							["sourceQuest"] = 55465,	-- We Must Go Deeper
-							["lvl"] = 120,
-							["maps"] = { 1475 },	-- The Emerald Dream
-						}),
 						o(324407, {	-- Void Roots
 							["questID"] = 55467,
 							["maps"] = { 1475 },	-- The Emerald Dream
@@ -229,9 +222,8 @@ _.Zones =
 							["qg"] = 152206,	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.2, 1473 },
 							["sourceQuests"] = {
-								55398,	-- The Long Awake
-								56261,	-- Return to the Heart (H)
-								55522,	-- Return to the Heart (A)
+								56261,	-- Return to the Heart (A)
+								55522,	-- Return to the Heart (H)
 							},
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["lvl"] = 120,
@@ -250,7 +242,7 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
-						-- Heart of Azeroth Level 60
+						-- Heart of Azeroth Level 60  -- Confirm this is actually sourced from the Magni Chain.
 						q(56167, {	-- Investigating the Highlands
 							["qg"] = 152365,	-- Kalecgos
 							["coord"] = { 53.1, 70.9, 1473 },

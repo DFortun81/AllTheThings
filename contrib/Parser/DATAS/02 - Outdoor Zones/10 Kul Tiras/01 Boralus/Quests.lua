@@ -202,7 +202,6 @@ _.Zones =
 					},
 				}),
 				q(56261, {	-- Return to the Heart
-				--	breadcrumb to send you back to the Heart Chamber to unlock your first minor slot for the azerite neck
 					["isBreadcrumb"] = true,
 					["coord"] = { 74.8, 15.2, 1161 },
 					["races"] = ALLIANCE_ONLY,

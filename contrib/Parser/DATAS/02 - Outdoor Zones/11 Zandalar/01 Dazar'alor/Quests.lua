@@ -343,14 +343,10 @@ _.Zones =
 					["qg"] = 122817,	-- Bladeguard Kaja
 				}),
 				q(55522, {	-- Return to the Heart
-					--["sourceQuests"] = { },	
-					["coord"] = { 51.0, 88.8 },
+					["isBreadcrumb"] = true,
+					["coord"] = { 51.0, 88.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["qg"] = 154465,	-- Earthen Guardian <Messenger of the Speaker>
-					["description"] = "You can skip directly to the next quest 'A fresh trauma' which is available in the Chamber of Heart",
-					["altQuests"] = {
-						55519,	-- A Fresh Trauma
-					},
 				}),
 				q(47315, {	-- Into the Dunes
 					["sourceQuests"] = { 47314 },	-- Rumors of Exile
