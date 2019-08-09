@@ -1010,13 +1010,21 @@ _.Zones =
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["isBreadcrumb"] = true,
 			}),
-			q(56149, {	-- Feed Them All
-				["sourceQuests"] = { 56156 },	-- A Tempered Blade
+			q(56149, {	-- Feed Them All (A)
+				["qg"] = 154235,	-- Harvester Akaro
+				["coord"] = { 55.6, 47.0, 1355 },
+				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
 				["isDaily"] = true,
-				["coord"] = { 55.6, 47.0, 1355 },
 				["races"] = ALLIANCE_ONLY,
-				["qg"] = 154235,	-- Harvester Akaro
+			}),
+			q(55715, {	-- Feed Them All (H)
+				["qg"] = 152786,	-- Oben Sandfin
+				["coord"] = { 57.4, 45.6, 1355 },
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+				["isDaily"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 			q(55661, {	-- Fighting Venomous With Venom -- TODO:: verify sourceQuest
 				["qg"] = 153777,	-- Cando Mikfin
@@ -1094,7 +1102,7 @@ _.Zones =
 				},
 			}),
 			q(56215, {	--	Glittering Shell
-				["qg"] = 155978,	-- Poen Gillbrack		-- npcID need to be confirmed
+				["qg"] = 151310,	-- Poen Gillbrack
 				["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 20.",
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -2558,7 +2566,10 @@ _.Zones =
 				},
 			}),
 			q(56804, {	-- With Friends Like You, Who Needs Anemones?
-				["qg"] = 151310,	-- Kelfin Scout (Vim Brineheart)
+				["qgs"] = {
+					151310,	-- Kelfin Scout (Vim Brineheart)
+					149906,	-- Vim Brineheart
+				},
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
 				["races"] = HORDE_ONLY,

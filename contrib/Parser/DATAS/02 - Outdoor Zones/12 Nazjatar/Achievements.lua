@@ -208,69 +208,59 @@ _.Zones =
 					},
 				}),
 				ach(13836, {	-- Feline Figurines Found
-					o(9999970, {	-- Figurine 1
+					o(245286, {	-- Crystalline Cat Figurine
 						["questID"] = 56983,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["coord"] = { 28.8, 29.1, 1355 },
 						["description"] = "In an underwater cave filled with |cFFFFD700Bloodfin Murlocs|r. ",
 					}),
-					o(9999969, {	-- Figurine 2
+					o(332569, {	-- Crystalline Cat Figurine
 						["questID"] = 56988,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["coord"] = { 71.4, 23.7, 1355 },
 						["description"] = "Hidden behind a starfish on the left side of an underwater cave.",
 					}),
-					o(9999968, {	-- Figurine 3
+					o(332570, {	-- Crystalline Cat Figurine
 						["questID"] = 56992,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["coord"] = { 73.6, 25.9, 1355 },
 						["description"] = "On the left side of a small underwater cave, tucked behind a curved piece of broken shell on the ground.",
 					}),
-					o(9999967, {	-- Figurine 4
+					o(332571, {	-- Crystalline Cat Figurine
 						["questID"] = 56990,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["coord"] = { 58.2, 22.0, 1355 },
 						["description"] = "In an underwater cave.",
 					}),
-					o(9999966, {	-- Figurine 5
+					o(332572, {	-- Crystalline Cat Figurine
 						["questID"] = 56986,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["coord"] = { 55.3, 27.2, 1355 },
 						["description"] = "On top of a pillar at the back of the room. Jump onto one of the conch shells to reach it."
 					}),
-					o(9999965, {	-- Figurine 6
+					o(332573, {	-- Crystalline Cat Figurine
 						["questID"] = 56984,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["coord"] = { 61.1, 26.8, 1355 },
 						["description"] = "Behind the sea urchin in a small cave filled with wind elementals.",
 					}),
-					o(9999964, {	-- Figurine 7
+					o(332574, {	-- Crystalline Cat Figurine
 						["questID"] = 56991,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["coord"] = { 61.6, 10.7, 1355 },
 						["description"] = "In an underwater cave with a school of |cFFFFD700Deeptide Frenzy|r swimming around. It's on a rocky outcrop at the top of the cave."
 					}),
-					o(9999963, {	-- Figurine 8
+					o(332575, {	-- Crystalline Cat Figurine
 						["questID"] = 56989,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["description"] = "Drop down carefully from the path to a small cave hidden in the wall.",
 						["coords"] = {
-							{ 38.7, 49.3, 1355 },	-- cave entrance
-							{ 38.0, 49.3, 1355 },	-- figurine
+							{ 38.7, 49.3, 1355 },	-- Cave Entrance
+							{ 38.0, 49.3, 1355 },	-- Crystalline Cat Figurine
 						},
 					}),
-					o(9999962, {	-- Figurine 9
+					o(332576, {	-- Crystalline Cat Figurine
 						["questID"] = 56987,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["coords"] = {
-							{ 40.3, 81.3, 1355 },	-- cave entrance
-							{ 40.1, 86.5, 1355 },	-- crystal cat
+							{ 40.3, 81.3, 1355 },	-- Cave Entrance
+							{ 40.1, 86.5, 1355 },	-- Crystalline Cat Figurine
 						},
 						["description"] = "At the back of an underwater cave filled with |cFFFFD700Murkbloom Reefwalkers|r.",
 					}),
-					o(9999961, {	-- Figurine 10
+					o(332577, {	-- Crystalline Cat Figurine
 						["questID"] = 56985,
-						["icon"] = "Interface\\Icons\\trade_archaeology_catstatueemeraldeyes",
 						["coord"] = { 59.1, 30.4, 1355 },
 						["description"] = "In a coral outcropping at the back of a small cave filled with water elementals.",
 					}),
