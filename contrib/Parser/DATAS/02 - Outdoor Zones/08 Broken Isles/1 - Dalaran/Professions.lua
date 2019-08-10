@@ -498,9 +498,6 @@ _.Zones =
 				prof(356, {	-- Fishing
 					n(-10067, { 	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
-						["modelScale"] = 1.25,
-						["modelRotation"] = 55,
 						["lvl"] = 110,
 						["g"] = {
 							{
