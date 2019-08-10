@@ -46,11 +46,6 @@ namespace ATT
         private static readonly long LEGION_VERSION = LEGION_VERSION_ARR.ConvertVersion();
 
         /// <summary>
-        /// All of the NPCs that have been parsed sorted by NPC ID.
-        /// </summary>
-        private static IDictionary<int, int> NPCS = new Dictionary<int, int>();
-
-        /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
         private static IDictionary<int, bool> NPCS_WITH_REFERENCES = new Dictionary<int, bool>();
@@ -104,21 +99,6 @@ namespace ATT
             if (data.TryGetValue("mounts", out listing))
             {
                 Merge(listing);
-            }
-
-            // Are we dealing with an NPC Database section? We only care about the displayID.
-            if (data.TryGetValue("npcDB", out Dictionary<string, object> npcDB))
-            {
-                foreach (var pair in npcDB)
-                {
-                    if (pair.Value is Dictionary<string, object> entry)
-                    {
-                        if (entry.TryGetValue("displayID", out int displayID))
-                        {
-                            NPCS[Convert.ToInt32(pair.Key)] = displayID;
-                        }
-                    }
-                }
             }
 
             // Are we dealing with a Quests Database section?
@@ -1349,6 +1329,7 @@ namespace ATT
                 // Export various debug information to the Debugging folder.
                 Items.ExportDebug(debugFolder.FullName);
                 Objects.ExportDebug(debugFolder.FullName);
+                Objects.ExportDB(debugFolder.FullName);
             }
 
             // Setup the output folder (/db)

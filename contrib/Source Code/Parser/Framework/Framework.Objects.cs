@@ -844,27 +844,225 @@ namespace ATT
             public static void Export(string directory)
             {
                 File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportCompressedLuaCategories(AllContainers).ToString());
+            }
+            #endregion
+            #region Export DB
+            private static Dictionary<int, bool> BLACKLISTED_NPC_IDS = new Dictionary<int, bool>
+            {
+                { -1, true },   // Zone Drops?
+            };
+            private static Dictionary<int, Dictionary<string, object>> ITEM_DB = new Dictionary<int, Dictionary<string, object>>();
+            private static Dictionary<int, Dictionary<string, object>> NPC_DB = new Dictionary<int, Dictionary<string, object>>();
 
-                // Only export NPC ID / Display ID pairs with references.
-                var usedNPCDisplayIDs = new Dictionary<int, int>();
-                var keys = NPCS_WITH_REFERENCES.Keys.ToList();
+            public static void ExportDB(string directory)
+            {
+                foreach(var container in AllContainers.Values) ProcessDB(container);
+                ExportDB(directory, "ITEMDB", ITEM_DB);
+                ExportDB(directory, "NPCDB", NPC_DB);
+            }
+
+            public static void ExportDB(string directory, string name, Dictionary<int, Dictionary<string, object>> db)
+            {
+                var builder = new StringBuilder("AllTheThings.").Append(name).Append("={");
+                var keys = db.Keys.ToList();
                 keys.Sort();
-                foreach (var npcID in keys)
+                foreach (var key in keys)
                 {
-                    if(NPCS.TryGetValue(npcID, out int displayID))
+                    var entry = db[key];
+                    if (entry.Any())
                     {
-                        usedNPCDisplayIDs[npcID] = displayID;
-                    }
-                    else if(npcID > 0)
-                    {
-                        Trace.Write("NPC #");
-                        Trace.Write(npcID);
-                        Trace.WriteLine(" is missing a displayID...");
+                        if(entry.TryGetValue("name", out object entryName))
+                        {
+                            entry.Remove("name");
+                        }
+                        else if (entry.TryGetValue("text", out entryName))
+                        {
+                            entry.Remove("text");
+                        }
+                        builder.AppendLine();
+                        builder
+                            .Append('[').Append(key).Append("]=")
+                            .Append(ATT.Export.ExportCompressedLua(entry).ToString())
+                            .Append(',');
+                        if (entryName != null) builder.Append("\t-- ").Append(entryName);
                     }
                 }
+                File.WriteAllText(Path.Combine(directory, $"{name}.lua"), builder.AppendLine().Append("};").ToString());
+            }
 
-                var builder = ATT.Export.ExportCompressedLua(usedNPCDisplayIDs);
-                File.WriteAllText(Path.Combine(directory, "NPCDB.lua"), builder.Insert(0, "AllTheThings.NPCDB=").ToString());
+            private static void ProcessDB(List<object> list)
+            {
+                foreach (var o in list)
+                {
+                    ProcessDB(o as Dictionary<string, object>);
+                }
+            }
+
+            private static void ProcessDB(Dictionary<string, object> data)
+            {
+                if (data == null) return;
+                if (data.TryGetValue("g", out object g)) ProcessDB(g as List<object>);
+
+                // We were silly and used both... sigh.
+                if (data.TryGetValue("creatureID", out g)) ProcessNPCData(Convert.ToInt32(g), data);
+                if (data.TryGetValue("npcID", out g)) ProcessNPCData(Convert.ToInt32(g), data);
+                if (data.TryGetValue("itemID", out g)) ProcessItemData(Convert.ToInt32(g), data);
+
+            }
+
+            private static void ProcessItemData(int itemID, Dictionary<string, object> data)
+            {
+                // Acquire the current Item Data and add to it.
+                if (!ITEM_DB.TryGetValue(itemID, out Dictionary<string, object> itemData))
+                {
+                    ITEM_DB[itemID] = itemData = new Dictionary<string, object>();
+                }
+
+                // Only include whitelisted fields.
+                foreach (var pair in data)
+                {
+                    switch (pair.Key)
+                    {
+                        case "description":
+                        case "lvl":
+                        case "races":
+                        case "classes":
+                        case "coords":
+                        case "sym":
+                        case "f":
+                            itemData[pair.Key] = pair.Value;
+                            break;
+
+                        case "s":
+                            {
+                                int modID = 1;
+                                if (data.TryGetValue("modID", out object modIDRef)) modID = Convert.ToInt32(modIDRef);
+                                if (itemData.TryGetValue("m", out object sourceIDRefs))
+                                {
+                                    (sourceIDRefs as Dictionary<int, object>)[modID] = pair.Value; 
+                                }
+                                else
+                                {
+                                    itemData["m"] = new Dictionary<int, object>
+                                    {
+                                        { modID, pair.Value }
+                                    };
+                                }
+                                break;
+                            }
+
+                        // Blacklisted fields.
+                        case "itemID":
+                        case "achID":
+                        case "altAchID":
+                        case "npcID":
+                        case "bonusID":
+                        case "modID":
+                        case "creatureID":
+                        case "criteriaID":
+                        case "ilvl":
+                        case "g":
+                        case "hideText":
+                            break;
+                        default:
+                            // FOR NOW, just copy all non-g fields.
+                            itemData[pair.Key] = pair.Value;
+                            break;
+                    }
+                }
+            }
+            private static void ProcessNPCData(int npcID, Dictionary<string, object> data)
+            {
+                // Do not include information about blacklisted npc data.
+                if (BLACKLISTED_NPC_IDS.TryGetValue(npcID, out bool blacklisted) && blacklisted) return;
+
+                // Do not include "Custom" NPC IDs. We use these for headers and most of these are going to be purged.
+                if (npcID < 1) return;
+
+                // Acquire the current NPC Data and add to it.
+                if (!NPC_DB.TryGetValue(npcID, out Dictionary<string, object> npcData))
+                {
+                    NPC_DB[npcID] = npcData = new Dictionary<string, object>();
+                }
+
+                // Only include whitelisted fields.
+                foreach(var pair in data)
+                {
+                    switch(pair.Key)
+                    {
+                        case "name":
+                        case "text":
+                        case "title":
+                        case "icon":
+                        case "lvl":
+                        case "coords":
+                        case "crs":
+                        case "sym":
+                        case "u":
+                        case "maps":
+                        case "questID":
+                        case "altQuestID":
+                        case "altQuests":
+                        case "sourceQuests":
+                        case "isDaily":
+                        case "isWeekly":
+                        case "repeatable":
+                        case "factionID":
+                        case "requireSkill":
+                        case "followerID":
+                        case "isRaid":
+                        case "mapID":
+                        case "races":
+                            npcData[pair.Key] = pair.Value;
+                            break;
+
+                        case "c":
+                        case "classes":
+                            npcData["c"] = pair.Value;
+                            break;
+
+                        case "r":
+                            npcData["r"] = pair.Value;
+                            break;
+
+                        case "qgs":
+                        case "isBreadcrumb":
+                        case "modelRotation":
+                        case "modelScale":
+                            // Only do these for non-custom NPC IDs:
+                            npcData[pair.Key] = pair.Value;
+                            break;
+
+                        // Blacklisted fields.
+                        case "achID":
+                        case "altAchID":
+                        case "currencyID":
+                        case "encounterID":
+                        case "itemID":
+                        case "npcID":
+                        case "modID":
+                        case "creatureID":
+                        case "criteriaID":
+                        case "displayID":   // This is now dynamic!
+                        case "modelID":   // This is now dynamic!
+                        case "ilvl":
+                        case "b":
+                        case "q":
+                        case "f":
+                        case "s":
+                        case "g":
+                        case "collectible":
+                        case "hideText":
+                        case "description":
+                            // Ignore these!
+                            break;
+
+                        default:
+                            // Only write keys we don't know about by commenting the other ones:
+                            // npcData[pair.Key] = pair.Value;
+                            break;
+                    }
+                }
             }
             #endregion
             #region Merge (for acquiring fields for the Item Database)

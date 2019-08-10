@@ -5806,7 +5806,6 @@ local npcModelHarvester = CreateFrame("DressUpModel", nil, UIParent);
 npcModelHarvester:SetPoint("TOPRIGHT", UIParent, "BOTTOMRIGHT", 0, 0);
 npcModelHarvester:SetSize(1, 1);
 npcModelHarvester:Hide();
--- NPCDB
 local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 	if id > 0 then
 		npcModelHarvester:SetDisplayInfo(0);
