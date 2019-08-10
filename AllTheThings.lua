@@ -8776,18 +8776,12 @@ local function RowOnEnter(self)
 				GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
 			end
 			GameTooltipIcon:Show();
-		elseif reference.displayID or reference.modelID or reference.model then
-			if app.Settings:GetTooltipSetting("fileID") then
-				GameTooltip:AddDoubleLine("File ID", GameTooltipModel.Model:GetModelFileID());
-			end
-			if app.Settings:GetTooltipSetting("displayID") then
-				if reference.displayID or reference.modelID then
-					GameTooltip:AddDoubleLine("Display ID", reference.displayID);
-				end
-				if reference.modelID then
-					GameTooltip:AddDoubleLine("Model ID", reference.modelID);
-				end
-			end
+		end
+		if reference.displayID and app.Settings:GetTooltipSetting("displayID") then
+			GameTooltip:AddDoubleLine("Display ID", reference.displayID);
+		end
+		if reference.modelID and app.Settings:GetTooltipSetting("displayID") then
+			GameTooltip:AddDoubleLine("Model ID", reference.modelID);
 		end
 		if reference.cost then
 			if type(reference.cost) == "table" then
@@ -9705,82 +9699,6 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
-		
-		-- Uncomment this section if you need to Harvest Display IDs:
-		--[[
-		local displayData = {};
-		displayData.visible = true;
-		displayData.expanded = true;
-		displayData.progress = 0;
-		displayData.total = 0;
-		displayData.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
-		displayData.text = "Harvesting All Display IDs";
-		displayData.description = "If you're seeing this window outside of Git, please yell loudly in Crieve's ear.";
-		displayData.g = {};
-		for i=1,78092,1 do
-			tinsert(displayData.g, {["displayID"] = i,["text"] = "Model #" .. i});
-		end
-		displayData.rows = displayData.g;
-		BuildGroups(displayData, displayData.g);
-		UpdateGroups(displayData, displayData.g);
-		
-		-- Assign the missing data table to the harvester.
-		local popout = app:GetWindow("DisplayIDs");
-		popout.data = displayData;
-		popout.ScrollBar:SetValue(1);
-		popout:SetVisible(true);
-		popout.fileIDs = {};
-		popout.UpdateDone = function(self)
-			print("UpdateDone");
-			local progress = 0;
-			local total = 0;
-			local tries = 0;
-			for i,group in ipairs(displayData.g) do
-				total = total + 1;
-				if not group.fileID then
-					if tries < 10 and (not group.tries or group.tries < 5) then
-						tries = tries + 1;
-						group.tries = (group.tries or 0) + 1;
-						if GameTooltipModel:TrySetModel(group) then
-							group.fileID = GameTooltipModel.Model:GetModelFileID();
-						end
-					end
-				end
-				
-				if group.fileID then
-					if group.displayID then
-						popout.fileIDs[group.fileID] = group.displayID;
-					elseif popout.fileIDs[group.fileID] then
-						group.displayID = popout.fileIDs[group.fileID];
-					end
-				end
-				
-				if not group.displayID or not group.fileID then
-					group.visible = true;
-					group.saved = false;
-					group.trackable = true;
-				else
-					group.saved = true;
-					group.trackable = true;
-					if group.model then
-						group.visible = true;
-					else
-						group.visible = false;
-					end
-					progress = progress + 1;
-				end
-			end
-			if self.rowData then
-				local count = #self.rowData;
-				if count > 1 then
-					self.rowData[1].progress = progress;
-					self.rowData[1].total = total;
-				end
-				self.processingLinks = false;
-			end
-			UpdateVisibleRowData(self);
-		end
-		]]--
 	end
 	return allData;
 end

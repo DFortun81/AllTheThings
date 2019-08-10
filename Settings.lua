@@ -2572,7 +2572,6 @@ local ids = {["achievementID"] = "Achievement ID",
 	["encounterID"] = "Encounter ID",
 	["factionID"] = "Faction ID",
 	["filterID"] = "Filter ID",
-	["fileID"] = "File ID",
 	["flightPathID"] = "Flight Path ID",
 	["followerID"] = "Follower ID",
 	["iconPath"] = "Icon Path",
@@ -2593,7 +2592,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["visualID"] = "Visual ID",
 };
 local last = nil;
-for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","flightPathID","followerID","iconPath"}) do
+for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","iconPath"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
