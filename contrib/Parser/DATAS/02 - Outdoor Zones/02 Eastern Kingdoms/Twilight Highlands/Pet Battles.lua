@@ -44,7 +44,7 @@ _.Zones =
 				}),
 				p(2677, {	-- Twilight Whelpling
 					i(169346, {	-- Young Twilight Scale
-						q(56371),	-- Young Twilight Scale
+						["questID"] = 56371,	-- Young Twilight Scale
 					}),
 				}),
 				p(418, {	-- Water Snake

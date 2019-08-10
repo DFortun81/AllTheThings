@@ -56,6 +56,7 @@ _.Zones =
 					["sourceQuests"] = {
 						27752,	-- Fight Like a Wildhammer
 						27753,	-- Never Leave a Dinner Behind
+						27754,	-- Dragonmaw Takedown
 					},
 					["coord"] = { 49.7, 29.1, 241 },
 					["races"] = ALLIANCE_ONLY,
@@ -117,16 +118,18 @@ _.Zones =
 					["qg"] = 46806,	-- Brom Forgehammer
 				}),
 				q(27711, {	-- Back to the Elementium Depths (A)
-					["sourceQuests"] = { 27702 },	-- Coup de Grace
+					["sourceQuest"] = 27719,	-- Water of Life
 					["coord"] = { 36.3, 66.1, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
+					["isBreadcrumb"] = true,
 				}),
 				q(27712, {	-- Back to the Elementium Depths (H)
 					["qg"] = 45675,	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27798,	-- Water of Life
+					["isBreadcrumb"] = true,
 				}),
 				q(28041, {	-- Bait and Throttle
 					["qg"] = 46313,	-- Narkrall Rakeclaw
@@ -152,6 +155,7 @@ _.Zones =
 					["coord"] = { 49.0, 29.8, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+					["sourceQuests"] = { 28655 },	-- Wild, Wild, Wildhammer Wedding
 				}),
 				q(27514, {	-- Bird Down! Bird Down!
 					["sourceQuests"] = {
@@ -222,7 +226,10 @@ _.Zones =
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
 				}),
 				q(27654, {	-- Bring the Hammer Down (A)
-					["sourceQuests"] = { 27636 },	-- Just You and Mathias
+					["sourceQuests"] = {
+						27636,	-- Just You and Mathias (Automatically granted)
+						27637,	-- Just You and Mathias (Cassius the White)
+					},
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
@@ -338,7 +345,10 @@ _.Zones =
 					},
 				}),
 				q(27652, {	-- Dark Assassins (A)
-					["sourceQuests"] = { 27636 },	-- Just You and Mathias
+					["sourceQuests"] = {
+						27636,	-- Just You and Mathias (Automatically granted)
+						27637,	-- Just You and Mathias (Cassius the White)
+					},
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
@@ -466,8 +476,6 @@ _.Zones =
 					},
 				}),
 				q(27754, {	-- Dragonmaw Takedown
-				--	Unsure if this has prereqs.
-				--	["sourceQuests"] = {  },	--
 					["coord"] = { 49.0, 29.7, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46591,	-- Colin Thundermar
@@ -581,8 +589,6 @@ _.Zones =
 					["qg"] = 45518,	-- Lirastrasza
 				}),
 				q(27752, {	-- Fight Like a Wildhammer
-				--	["sourceQuests"] = {  },	--
-				-- 	Unsure if this has prereqs.
 					["coord"] = { 49.7, 29.1, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48010,	-- Low Shaman Blundy
@@ -597,6 +603,7 @@ _.Zones =
 					["coord"] = { 49.6, 29.2, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+					["sourceQuests"] = { 28655 },	-- Wild, Wild, Wildhammer Wedding
 				}),
 				q(28378, {	-- Find Fanny
 					["sourceQuests"] = { 28377 },	-- Rescue at Glopgut's Hollow
@@ -715,7 +722,10 @@ _.Zones =
 					["sourceQuest"] = 27745,	-- A Fiery Reunion
 				}),
 				q(27657, {	-- Help from the Earthcaller (A)
-					["sourceQuests"] = { 27636 },	-- Just You and Mathias
+					["sourceQuests"] = {
+						27636,	-- Just You and Mathias (Automatically granted)
+						27637,	-- Just You and Mathias (Cassius the White)
+					},
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
@@ -736,8 +746,16 @@ _.Zones =
 					["sourceQuest"] = 28591,	-- Off the Wall
 				}),
 				q(27650, {	-- Home Again
-					["sourceQuests"] = { 27646 },	-- Finding Beak
-					["coord"] = { 46.2, 58.7, 241 },
+					["sourceQuests"] = {
+						27647,	-- Anything But Water
+						27646,	-- Finding Beak
+						27648,	-- Once More Into The Fire
+					},
+					["coords"] = {
+						{ 52.4, 70.3, 241 },	-- Eoin Dunwald
+						{ 45.9, 58.6, 241 },	-- Donnelly Dunwald
+						{ 47.8, 74.4, 241 },	-- Cayden Dunwald
+					},
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 27650,	-- Donnelly Dunwald
 				}),
@@ -758,8 +776,10 @@ _.Zones =
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
 				}),
 				q(28212, {	-- Hot Stuff
-					["sourceQuests"] = { 27753 },	-- Never Leave a Dinner Behind
-					-- May have additional SQs.
+					["sourceQuests"] = {
+						27753,	-- Never Leave a Dinner Behind
+						27754,	-- Dragonmaw Takedown
+					},
 					["coord"] = { 49.1, 29.3, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48014,	-- Nivvet Channelock
@@ -772,8 +792,8 @@ _.Zones =
 				}),
 				q(28108, {	-- If The Key Fits (A)
 					["sourceQuests"] = {
-						28104,	-- Precious Goods (definitely required)
-						28103,	-- Easy Pickings (probably required)
+						28104,	-- Precious Goods
+						28103,	-- Easy Pickings
 					},
 					["coord"] = { 26.0, 38.8, 241 },
 					["races"] = ALLIANCE_ONLY,
@@ -819,15 +839,18 @@ _.Zones =
 					["description"] = "Automatically granted.",
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27637, {	-- Just You and Mathias (TODO: verify qg/coord. Abandon the original, then pick this up at Victor's Point)
+				q(27637, {	-- Just You and Mathias
 					["sourceQuests"] = { 27502 },	-- Up to the Citadel
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 43.4, 57.3, 241 },
+					["qg"] = 45669,	-- Cassius the White
 				}),
 				q(28860, {	-- Keeping the Dragonmaw at Bay
 					["qg"] = 46591,	-- Colin Thundermar
 					["coord"] = { 49.0, 29.8, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+					["sourceQuests"] = { 28655 },	-- Wild, Wild, Wildhammer Wedding
 				}),
 				q(27491, {	-- Kor'kron Drop
 					["qg"] = 45665,	-- Lady Cozwynn
@@ -903,7 +926,7 @@ _.Zones =
 				q(28216, {	-- Magmalord Falthazar
 					["sourceQuests"] = {
 						27754,	-- Dragonmaw Takedown
-						27753,	-- Never Leave a Dinner Behind (didn't show up until I turned this in)
+						27753,	-- Never Leave a Dinner Behind
 					},
 					["coord"] = { 49.0, 29.7, 241 },
 					["races"] = ALLIANCE_ONLY,
@@ -975,8 +998,11 @@ _.Zones =
 					},
 				}),
 				q(27720, {	-- Mr. Goldmine's Wild Ride (A)
-				--	Not sure if this also requires Portal Overload / Unbinding.
-					["sourceQuests"] = { 27711 },	-- Back to the Elementium Depths
+					["sourceQuests"] = {
+						27711,	-- Back to the Elementium Depths
+						27659,	-- Portal Overload
+						27662,	-- Unbinding
+					},
 					["coord"] = { 37.5, 88.6, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46243,	-- Initiate Goldmine
@@ -985,7 +1011,11 @@ _.Zones =
 					["qg"] = 46243,	-- Initiate Goldmine
 					["coord"] = { 37.5, 88.7, 241 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27712,	-- Back to the Elementium Depths},
+					["sourceQuests"] = {
+						27712,	-- Back to the Elementium Depths
+						27659,	-- Portal Overload
+						27662,	-- Unbinding
+					},
 				}),
 				q(26784, {	-- Muddied Waters
 					["qg"] = 44024,	-- Artesh
@@ -994,8 +1024,6 @@ _.Zones =
 					["sourceQuest"] = 26786,	-- Securing the Beach Head
 				}),
 				q(28369, {	-- My Sister, Fanny
-				--	["sourceQuests"] = {  },
-				--	Unsure if this has prereqs.
 					["isBreadcrumb"] = true,	-- for "Never Leave a Dinner Behind"
 					["coord"] = { 49.0, 29.7, 241 },
 					["races"] = ALLIANCE_ONLY,
@@ -1048,6 +1076,7 @@ _.Zones =
 					["coord"] = { 49.6, 29.2, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+					["sourceQuests"] = { 28655 },	-- Wild, Wild, Wildhammer Wedding
 				}),
 				q(28170, {	-- Night Terrors
 					["qg"] = 47751,	-- Buunu
@@ -1151,7 +1180,7 @@ _.Zones =
 				}),
 				q(28107, {	-- Paving the Way (A)
 					["sourceQuests"] = { 28108 },	-- If the Key Fits
-					["description"] = "You don't have to complete 'If the Key Fits' to get this quest, but the questgiver won't appear until you pick 'If the Key Fits' up.",
+					["description"] = "Must be on |cFFFFD700If the Key Fits|r to receieve this quest.",
 					["coord"] = { 26.0, 38.9, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 47611,	-- Highbank Lieutenant
@@ -1163,7 +1192,11 @@ _.Zones =
 					["sourceQuest"] = 28097,	-- The Gates of Grim Batol
 				}),
 				q(27816, {	-- Personal Request
-					["sourceQuests"] = { 27815 },	-- Somethin' For the Boys
+					["sourceQuests"] = {
+						27815,	-- Somethin' For the Boys
+						27999,	-- The Fate of the Doyles
+						27812,	-- The Loyalty of Clan Mullan
+					},
 					["coord"] = { 57.4, 58.1, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46805,	-- Iain Firebeard
@@ -1185,8 +1218,10 @@ _.Zones =
 					},
 				}),
 				q(28215, {	-- Potential Energy
-				--	May have additional SQs.
-					["sourceQuests"] = { 27753 },	-- Never Leave a Dinner Behind
+					["sourceQuests"] = {
+						27753,	-- Never Leave a Dinner Behind
+						27754,	-- Dragonmaw Takedown
+					},
 					["coord"] = { 49.1, 29.3, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48014,	-- Nivvet Channelock
@@ -1349,6 +1384,7 @@ _.Zones =
 				}),
 				q(27588, {	-- Signal the Attack (A)
 					["qg"] = 45668,	-- Kurdran Wildhammer
+					["coord"] = { 43.3, 57.3, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27494 },	-- Move the Mountain
 				}),
@@ -1374,9 +1410,7 @@ _.Zones =
 					["qg"] = 45432,	-- Initiate Goldmine
 				}),
 				q(27200, {	-- Siren's Song
-				--	["sourceQuests"] = { 28599 },	-- Kurdran's Waitin'
-				--	Unsure of requirement.  May be available with no prereqs.  Commented-out SQ is where I picked it up
-				--	I had also already picked up the other two quests in the area, Naga Reinforcements and Salvage Operations.
+					["sourceQuests"] = { 28599 },	-- Kurdran's Waitin'
 					["coord"] = { 75.9, 79.9, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45171,	-- Ephram Hardstone
@@ -1424,8 +1458,8 @@ _.Zones =
 				}),
 				q(27815, {	-- Somethin' for the Boys
 					["sourceQuests"] = {
-						27814,	-- Anything We Can Get (definitely required)
-						27813,	-- Death Worthy of a Dragonmaw (probably required)
+						27814,	-- Anything We Can Get
+						28234,	-- They Took Me Pants!
 					},
 					["coord"] = { 62.5, 48.3, 241 },
 					["races"] = ALLIANCE_ONLY,
@@ -1483,14 +1517,15 @@ _.Zones =
 						28215,	-- Potential Energy
 						28211,	-- Tempered in Elemental Flame
 					},
-				--	not sure if this requires "A Vision in Twilight" and its followups
 					["coord"] = { 49.1, 29.3, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48174,	-- Nivvet Channelock
 				}),
 				q(28211, {	-- Tempered in Elemental Flame
-					["sourceQuests"] = { 27753 },	-- Never Leave a Dinner Behind
-				--	May have additional SQs.
+					["sourceQuests"] = {
+						27753,	-- Never Leave a Dinner Behind
+						27754,	-- Dragonmaw Takedown
+					},
 					["coord"] = { 49.1, 29.3, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48014,	-- Nivvet Channelock
@@ -1645,11 +1680,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48046,	-- Ella Forgehammer
 				}),
+				q(28236, {	-- The Lost Brother
+					["u"] = 40,
+				}),
 				q(27812, {	-- The Loyalty of Clan Mullan
 					["sourceQuests"] = {
 						27810,	-- The Fighting Spirit
-								-- "The Fighting Spirit" is probably required.  It's listed on WH as a prereq.
-								-- This quest did not show up until I turned in "The Scent of Battle," though.
 						27811	-- The Scent of Battle
 					},
 					["coord"] = { 50.7, 60.2, 241 },
@@ -1675,6 +1711,7 @@ _.Zones =
 					["coord"] = { 55.2, 17.3, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 49374,	-- Lachlan MacGraff
+					["isBreadcrumb"] = true,
 				}),
 				q(27583, {	-- The Northern Flank
 					["qg"] = 44169,	-- Zaela
@@ -1815,6 +1852,7 @@ _.Zones =
 					["coord"] = { 48.6, 30.6, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+					["sourceQuests"] = { 28655 },	-- Wild, Wild, Wildhammer Wedding
 				}),
 				q(27485, {	-- Warm Welcome (A)
 					["sourceQuests"] = { 27380 },	-- Nightmare
@@ -1893,7 +1931,6 @@ _.Zones =
 						28409,	-- Something Brewed
 						28411,	-- Something Stewed
 						28410,	-- Something Stolen
-						-- May also require "Words and Music By..."
 					},
 					["coord"] = { 54.2, 16.7, 241 },
 					["races"] = ALLIANCE_ONLY,
