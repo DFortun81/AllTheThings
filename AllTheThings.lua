@@ -8772,7 +8772,7 @@ local function RowOnEnter(self)
 				elseif v[1] == "c" then
 					name,_,icon = GetCurrencyInfo(v[2])
 				end
-				cost = (("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " x" .. v[3];
+				cost = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " x" .. v[3];
 				if cost then
 					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", cost);
 				end
