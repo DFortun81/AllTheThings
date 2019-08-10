@@ -11,6 +11,7 @@ _.NeverImplemented =
 		
 		q(13807),	-- FLAG: Tournament Invitation
 		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
+		q(35903),	-- Blackrock Depths: bonus boss killed
 		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
 		q(35894),	-- Dire Maul: Bonus objective complete
