@@ -18,26 +18,34 @@ _.Zones =
 						}),
 						crit(2, {	-- The Flooding of Menethil
 							["sourceQuests"] = {
-								25780,	-- Assault on Menethil Keep (definitely required)
-							--	25801,	-- Claws from the Deep (probably required)
-							--	25805,	-- Return the Statuette (probably required)
-								25819,	-- The Eye of Paleth (definitely required)
+								25780,	-- Assault on Menethil Keep
+								25801,	-- Claws from the Deep
+								25805,	-- Return the Statuette
+								25819,	-- The Eye of Paleth
 							},
 						}),
 						crit(3, {	-- Engineers and Archaeologists
 							["sourceQuests"] = { 
+								25857,	-- Hunting Horrorjaw
 								26189,	-- The Angerfang Menace
 								25868,	-- Yorla Darksnare
-						--[[	possibly required -- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
+						--[[	TODO: possibly required -- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
 								25855,	-- Gizmos and Gadgets
-								25857,	-- Hunting Horrorjaw
 								25850,	-- Strike the Earth!
 								25853,	-- Tooling Around
 						--]]
 							},
 						}),
 						crit(4, {	-- Wardens of the Wetlands
-							["sourceQuests"] = { 26128 },	-- The Battle of Thandol Span
+							["sourceQuests"] = {
+								26128,	-- The Battle of Thandol Span
+								26120,	-- The Crazed Dragonmaw
+								--[[ TODO: possibly needed
+								25939,	-- For Peat's Sake
+								26196,	-- Longbraid the Grim
+								25927,	-- The Threat of Flame
+								]]--
+							},
 						}),
 					},
 				}),
