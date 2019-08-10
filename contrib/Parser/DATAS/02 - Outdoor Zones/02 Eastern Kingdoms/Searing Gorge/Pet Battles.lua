@@ -20,7 +20,7 @@ _.Zones =
 				}),
 				q(31912, {	--Kortas Darkhammer
 					["qg"] = 66515,	-- Kortas Darkhammer
-					["coord"] = { 35.3, 27.8, 32 },
+					["coord"] = { 35.2, 27.7, 32 },
 					["isDaily"] = true,
 				}),
 			}),

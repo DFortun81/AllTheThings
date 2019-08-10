@@ -8,13 +8,13 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(27962, {	-- A Lumbering Relic
 					["qg"] = 47267,	-- Burrian Coalpart
-					["coord"] = { 68.4, 53.4, 32 },
+					["coord"] = { 68.4, 53.2, 32 },
 					["sourceQuests"] = { 27960 },	-- The Fewer, the Better
 				}),
 				q(27963, {	-- A New Master... But Who?
 					["qg"] = 47266,	-- Jack Rockleg
-					["coord"] = { 68.5, 53.4, 32 },
-					["sourceQuests"] = { 
+					["coord"] = { 68.5, 53.3, 32 },
+					["sourceQuests"] = {
 						28582,	-- Hero's Call: Searing Gorge
 						28512,	-- To the Aid of the Thorium Brotherhood
 						28581,	-- Warchief's Command: Searing Gorge
@@ -27,12 +27,12 @@ _.Zones =
 				}),
 				q(27470, {	-- A Potential Ally
 					["qg"] = 14625,	-- Overseer Oilfist
-					["coord"] = { 38.1, 27.0, 32 },
+					["coord"] = { 38.1, 26.9, 32 },
 					["isBreadcrumb"] = true,
 				}),
 				q(27958, {	-- A Proper Antivenom
 					["qg"] = 47268,	-- Prisanne Dustcropper
-					["coord"] = { 68.8, 53.4, 32 },
+					["coord"] = { 68.7, 53.3, 32 },
 					["sourceQuests"] = { 27957 },	-- Lunk No Kill
 					["g"] = {
 						i(63211),	-- Medical Officer Legguards
@@ -42,8 +42,8 @@ _.Zones =
 				}),
 				q(27976, {	-- Curse These Fat Fingers
 					["qg"] = 14627,	-- Hansel Heavyhands
-					["coord"] = { 38.4, 27.9, 32 },
-					["sourceQuest"] = 27965, -- Thorium Point: The Seat of the Brotherhood
+					["coord"] = { 38.4, 27.8, 32 },
+					["sourceQuests"] = { 27965 }, -- Thorium Point: The Seat of the Brotherhood
 					["g"] = {
 						i(63226),	-- Fat Finger Gloves
 						i(63225),	-- Pounding Leggings
@@ -60,15 +60,15 @@ _.Zones =
 				}),
 				q(27979, {	-- Dark Ministry
 					["qg"] = 14627,	-- Hansel Heavyhands
-					["coord"] = { 38.4, 27.9, 32 },
-					["sourceQuests"] = { 
+					["coord"] = { 38.4, 27.8, 32 },
+					["sourceQuests"] = {
 						27976,	-- Curse These Fat Fingers
 						27977,	-- Recon Essentials
 					},
 				}),
 				q(28033, {	-- Deceit
 					["qg"] = 47393,	-- Mountain-Lord Rendan
-					["coord"] = { 39.4, 67.9, 32 },
+					["coord"] = { 39.4, 67.8, 32 },
 					["sourceQuests"] = {
 						28028,	-- Siege!
 						28029,	-- Set Them Ablaze!
@@ -77,8 +77,8 @@ _.Zones =
 				}),
 				q(27964, {	-- Dig-Boss Dinwhisker
 					["qg"] = 47266,	-- Jack Rockleg
-					["coord"] = { 68.5, 53.4, 32 },
-					["sourceQuests"] = { 27963 },	-- "A New Master...But Who?"
+					["coord"] = { 68.5, 53.3, 32 },
+					["sourceQuests"] = { 27963 },	-- A New Master...But Who?
 				}),
 				q(7724, {	-- Fiery Menace!
 					["u"] = 40,
@@ -108,8 +108,8 @@ _.Zones =
 				}),
 				q(27981, {	-- Heat That Just Don't Quit
 					["qg"] = 14627,	-- Hansel Heavyhands
-					["coord"] = { 38.4, 27.9, 32 },
-					["sourceQuest"] = 27965, -- Thorium Point: The Seat of the Brotherhood
+					["coord"] = { 38.4, 27.8, 32 },
+					["sourceQuests"] = { 27965 }, -- Thorium Point: The Seat of the Brotherhood
 				}),
 				q(7727, {	-- Incendosaurs? Whateverosaur is More Like It
 					["u"] = 40,
@@ -151,15 +151,18 @@ _.Zones =
 						un(2, i(11861)),	-- Girdle of Reprisal
 					},
 				}),
-				o(179832, {	-- Pillaclencher's Ornate Pillow
-					i(62933, {	-- Chambermaid Pillaclencher's Pillow
-						q(28058, {	-- Look at the Size of It!
-							["coord"] = { 46.0, 29.8, 32 },
-							["sourceQuest"] = 28057,	-- Kill 'em With Sleep Deprivation
-							["g"] = {
-								i(18951),	-- Evonice's Landin' Pilla
-							},
-						}),
+				i(62933, {	-- Chambermaid Pillaclencher's Pillow
+					--["objectID"] = 179832,	-- Pillaclencher's Ornate Pillow
+					q(28058, {	-- Look at the Size of It!
+						["coord"] = { 46.0, 29.8, 32 },
+						["sourceQuests"] = {
+							28054,	-- Slavery Is Bad
+							28055,	-- Sweet, Horrible Freedom
+							28056,	-- Rise, Obsidion
+						},
+						["g"] = {
+							i(18951),	-- Evonice's Landin' Pilla
+						},
 					}),
 				}),
 				q(28053, {	-- Lunk Like Your Style
@@ -172,29 +175,35 @@ _.Zones =
 				}),
 				q(27957, {	-- Lunk No Kill
 					["qg"] = 47269,	-- Lunk
-					["coord"] = { 68.8, 53.4, 32 },
+					["coord"] = { 68.9, 53.2, 32 },
 					["sourceQuests"] = { 27956 },	-- Lunk's Task
 				}),
 				q(27983, {	-- Lunk's Adventure: Cranky Little Dwarfs
 					["qg"] = 47429,	-- Lunk
-					["sourceQuests"] = { 27977 },
+					["description"] = "Must be on |cFFFFD700Recon Essentials|r to get this quest.",
+					["sourceQuests"] = { 27965 }, -- Thorium Point: The Seat of the Brotherhood
 				}),
 				q(28034, {	-- Lunk's Adventure: Rendan's Weakness
 					["qg"] = 47429,	-- Lunk
-					["coord"] = { 39.8, 68.0, 32 },
+					["coord"] = { 39.8, 67.9, 32 },
 					["sourceQuests"] = { 28033 },	-- Deceit
 				}),
 				q(27959, {	-- Lunk's Adventure: Spider Rider
 					["qg"] = 47429,	-- Lunk
-					["sourceQuests"] = { 27958 },	-- A Proper Antivenom
+					["description"] = "Must be on |cFFFFD700A Proper Antivenom|r to get this quest.",
+					["sourceQuests"] = { 27957 },	-- Lunk No Kill
 				}),
 				q(27956, {	-- Lunk's Task
 					["qg"] = 47269,	-- Lunk
-					["coord"] = { 68.8, 53.4, 32 },
+					["coord"] = { 68.9, 53.2, 32 },
 				}),
 				q(27984, {	-- Lunthistle's Tale
 					["qg"] = 8436,	-- Zamael Lunthistle
 					["coord"] = { 29.6, 26.2, 32 },
+					["sourceQuests"] = {
+						27976,	-- Curse These Fat Fingers
+						27977,	-- Recon Essentials
+					},
 				}),
 				q(28061, {	-- Minions of Calcinder
 					["qg"] = 14625,	-- Overseer Oilfist
@@ -225,7 +234,7 @@ _.Zones =
 				}),
 				q(27961, {	-- Out of Place
 					["qg"] = 47267,	-- Burrian Coalpart
-					["coord"] = { 68.4, 53.4, 32 },
+					["coord"] = { 68.4, 53.2, 32 },
 					["sourceQuests"] = { 27960 },	-- The Fewer, the Better
 					["g"] = {
 						i(63215),	-- Coalpart's Bracers
@@ -249,13 +258,13 @@ _.Zones =
 				}),
 				q(28099, {	-- Rasha'krak
 					["qg"] = 14625,	-- Overseer Oilfist
-					["coord"] = { 38.1, 27.0, 32 },
+					["coord"] = { 38.1, 26.9, 32 },
 					["sourceQuests"] = { 27965 }, -- Thorium Point: The Seat of the Brotherhood
 				}),
 				q(27977, {	-- Recon Essentials
 					["qg"] = 14626,	-- Taskmaster Scrange
-					["coord"] = { 36.0, 28.4, 32 },
-					["sourceQuests"] = { 27965 },	-- Thorium Point: The Seat of the Brotherhood
+					["coord"] = { 36.1, 28.2, 32 },
+					["sourceQuests"] = { 27965 }, -- Thorium Point: The Seat of the Brotherhood
 					["g"] = {
 						i(63222),	-- Steamsmith Helm
 						i(63221),	-- Taskmaster's Loop
@@ -265,7 +274,7 @@ _.Zones =
 				}),
 				q(28056, {	-- Rise, Obsidion
 					["qg"] = 47393,	-- Mountain-Lord Rendan
-					["coord"] = { 40.8, 51.7, 32 },
+					["coord"] = { 40.8, 51.6, 32 },
 					["sourceQuest"] = 28052,	-- Operation: Stir the Cauldron
 					["g"] = {
 						i(63240),  -- Dark Iron Axe
@@ -285,7 +294,7 @@ _.Zones =
 				}),
 				q(28029, {	-- Set Them Ablaze!
 					["qg"] = 47393,	-- Mountain-Lord Rendan
-					["coord"] = { 39.4, 67.9, 32 },
+					["coord"] = { 39.4, 67.8, 32 },
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
 				}),
 				q(3463, {	-- Set Them Ablaze
@@ -307,12 +316,12 @@ _.Zones =
 				}),
 				q(28028, {	-- Siege!
 					["qg"] = 47393,	-- Mountain-Lord Rendan
-					["coord"] = { 39.4, 67.9, 32 },
+					["coord"] = { 39.4, 67.8, 32 },
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
 				}),
 				q(28054, {	-- Slavery is Bad
 					["qg"] = 47393,	-- Mountain-Lord Rendan
-					["coord"] = { 40.8, 51.7, 32 },
+					["coord"] = { 40.8, 51.6, 32 },
 					["sourceQuest"] = 28052,	-- Operation: Stir the Cauldron
 				}),
 				q(7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
@@ -324,21 +333,21 @@ _.Zones =
 				}),
 				q(28055, {	-- Sweet, Horrible Freedom
 					["qg"] = 47393,	-- Mountain-Lord Rendan
-					["coord"] = { 40.8, 51.7, 32 },
+					["coord"] = { 40.8, 51.6, 32 },
 					["sourceQuest"] = 28052,	-- Operation: Stir the Cauldron
 				}),
 				q(27960, {	-- The Fewer, the Better
 					["qg"] = 47267,	-- Burrian Coalpart
-					["coord"] = { 68.4, 53.4, 32 },
+					["coord"] = { 68.4, 53.2, 32 },
 				}),
 				q(28035, {	-- The Mountain-Lord's Support
 					["qg"] = 47393,	-- Mountain-Lord Rendan
-					["coord"] = { 39.4, 67.9, 32 },
+					["coord"] = { 39.4, 67.8, 32 },
 					["sourceQuest"] = 28034,	-- Lunk's Adventure: Rendan's Weakness
 				}),
 				q(28032, {	-- The Mysteries of the Fire-Gizzard
 					["qg"] = 47440,	-- Agnes Flimshale
-					["coord"] = { 38.9, 68.9, 32 },
+					["coord"] = { 38.8, 68.9, 32 },
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
 					["g"] = {
 						i(63233),	-- Iron Summit Belt
@@ -349,7 +358,7 @@ _.Zones =
 				}),
 				q(27980, {	-- The Spiders Have to Go
 					["qg"] = 14634,	-- Lookout Captain Lolo Longstriker
-					["coord"] = { 37.7, 26.6, 32 },
+					["coord"] = { 37.7, 26.5, 32 },
 				}),
 				q(3385, {	-- The Undermarket
 					["u"] = 40,
@@ -371,7 +380,7 @@ _.Zones =
 				}),
 				q(28030, {	-- They Build a Better Bullet
 					["qg"] = 47393,	-- Mountain-Lord Rendan
-					["coord"] = { 39.4, 67.9, 32 },
+					["coord"] = { 39.4, 67.8, 32 },
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
 					["g"] = {
 						i(63229),  -- K'Vlar Vest
@@ -386,12 +395,14 @@ _.Zones =
 				q(27965, {	-- Thorium Point: The Seat of the Brotherhood
 					["qg"] = 47266,	-- Jack Rockleg
 					["coord"] = { 68.5, 53.4, 32 },
-					["sourceQuest"] = 27964,	-- Dig-Boss Dinwhisker
+					["sourceQuests"] = {
+						27964,	-- Dig-Boss Dinwhisker
+					},
 				}),
-				q(27982, {	--Twilight Collars
+				q(27982, {	-- Twilight Collars
 					["qg"] = 14626,	-- Taskmaster Scrange
 					["coord"] = { 36.0, 28.4, 32 },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						27976,	-- Curse These Fat Fingers
 						27977,	-- Recon Essentials
 					},
