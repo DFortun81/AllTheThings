@@ -18,6 +18,7 @@ _.ExpansionFeatures =
 						i(165636),	-- Sentinel's Gavel
 						i(165632),	-- Sentinel's Greatblade
 						i(165627),	-- Sentinel's Halberd
+						i(165635);	-- Sentinel's Moonglaive
 						i(165623),	-- Sentinel's Recurve
 						i(165629),	-- Sentinel's Spellblade
 						i(166483),	-- Sentinel's Tomahawk
