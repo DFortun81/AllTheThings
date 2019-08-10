@@ -8790,17 +8790,18 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.cost then
-			for k,v in pairs(reference.cost) do
-				local name, icon, _;
-				if v[1] == "i" then
-					name,_,_,_,_,_,_,_,_,icon = GetItemInfo(v[2])
-				elseif v[1] == "c" then
-					name,_,icon = GetCurrencyInfo(v[2])
+			if type(reference.cost) == "table" then
+				for k,v in pairs(reference.cost) do
+					local name, icon, _;
+					if v[1] == "i" then
+						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2])
+					elseif v[1] == "c" then
+						name,_,icon = GetCurrencyInfo(v[2])
+					end
+					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " x" .. v[3]);
 				end
-				cost = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " x" .. v[3];
-				if cost then
-					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", cost);
-				end
+			else
+				GameTooltip:AddDoubleLine("Cost", GetCoinTextureString(reference.cost));
 			end
 		end
 		if reference.criteriaID and reference.achievementID then
@@ -9861,7 +9862,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
 				if pos then
 					local px, py = pos:GetXY();
-					info.coord = { px * 100, py * 100 };
+					info.coord = { px * 100, py * 100, mapID };
 				end
 				repeat
 					mapInfo = C_Map.GetMapInfo(mapID);
