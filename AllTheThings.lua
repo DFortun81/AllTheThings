@@ -8765,11 +8765,18 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.cost then
-			local cost = tostring(reference.cost);
-			if reference.parent and (reference.parent.currencyID or reference.parent.itemID) then
-				cost = (reference.parent.icon and ("|T" .. reference.parent.icon .. ":0|t") or "") .. (reference.parent.text or "???") .. " x" .. cost;
+			for k,v in pairs(reference.cost) do
+				local name, icon, _;
+				if v[1] == "i" then
+					name,_,_,_,_,_,_,_,_,icon = GetItemInfo(v[2])
+				elseif v[1] == "c" then
+					name,_,icon = GetCurrencyInfo(v[2])
+				end
+				cost = (("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " x" .. v[3];
+				if cost then
+					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", cost);
+				end
 			end
-			GameTooltip:AddDoubleLine("Cost", cost); 
 		end
 		if reference.criteriaID and reference.achievementID then
 			GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID));
