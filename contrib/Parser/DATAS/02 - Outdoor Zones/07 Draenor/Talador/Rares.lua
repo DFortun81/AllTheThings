@@ -296,9 +296,8 @@ _.Zones =
 				n(-72,   {	-- Sargerei War Council
 					["description"] = "Patrols the area in roughly a circle.",	
 					["questID"] = 37337,
-					["modelID"] = 60730,
 					["isDaily"] = true,
-					["crs"] = {
+					["qgs"] = {
 						88071,	-- Strategist Ankor
 						88072,	-- Archmagus Tekar
 						88073,	-- Soulbinder Naylana
