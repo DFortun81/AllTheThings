@@ -962,6 +962,7 @@ namespace ATT
                         case "criteriaID":
                         case "ilvl":
                         case "g":
+                        case "q":
                         case "hideText":
                             break;
                         default:
