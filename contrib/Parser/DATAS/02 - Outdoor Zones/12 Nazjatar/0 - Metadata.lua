@@ -12,6 +12,6 @@ _.Zones =
 			1524,	-- Deepsea Slave Pen
 			1528,	-- The Eternal Palace
 		},
-		["description"] = "|cff66ccffDESCRIPTION PENDING|r",
+		["description"] = "|cff66ccffNazjatar is a dangerous and beautiful place, filled with coral forests and unfathomable deep-sea creatures skittering through passageways and clinging to rockfaces. Secrets that have remained submerged for millennia are now exposed to the surface world, including the ancient ruins of Zin-Azshari, the once-glorious capital of the kaldorei. Further in the depths, the beautiful and terrible city of the naga — and the palace of the Queen of Tides herself — awaits.|r",
 	}),
 };
