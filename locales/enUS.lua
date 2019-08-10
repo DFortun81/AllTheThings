@@ -2262,6 +2262,7 @@ AllTheThings.L = {
 		[290765] = "Interface\\Icons\\INV_Ore_Gold_Nugget",
 		[290993] = "Interface\\Icons\\inv_misc_treasurechest04b",
 		[291143] = "Interface\\Icons\\inv_misc_wrench_01",
+		[293837] = "Interface\\Icons\\INV_Stone_16",
 		[293838] = "Interface\\Icons\\INV_Stone_16",
 		[293839] = "Interface\\Icons\\INV_Stone_16",
 		[293840] = "Interface\\Icons\\INV_Stone_16",

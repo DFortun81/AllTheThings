@@ -36,7 +36,7 @@ _.Secrets =
 			}),
 			o(293838, {	-- Step 3: Second Ordinary Pebble
 				["questID"] = 52810,
-				["sourceQuests"] = { 52809 },
+				["sourceQuest"] = 52809,
 				["description"] = "|cFFFFFFFFStep 3:|r Boralus",
 				["coords"] = {
 					{ 49.6, 40.0, 1161 },	-- Nets/Entrance
@@ -73,7 +73,7 @@ _.Secrets =
 			}),
 			o(293842, {	-- Step 7: Sixth Ordinary Pebble
 				["questID"] = 52815,
-				["sourceQuests"] = 52816,	-- Step 6: Fifth Ordinary Pebble
+				["sourceQuest"] = 52816,	-- Step 6: Fifth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 7:|r Stormsong Valley",
 				["coords"] = {
 					{ 68.3, 10.5, 942 },	-- Cave Entrance
@@ -128,7 +128,7 @@ _.Secrets =
 			}),
 			o(303017, { 	-- Step 13: Twelfth Ordinary Pebble
 				["questID"] = 53634,
-				["sourceQuests"] = { 53633 },
+				["sourceQuest"] =  53633,
 				["description"] = "|cFFFFFFFFStep 13:|r Boralus",
 				["coords"] = {
 					{ 10.0, 82.7, 1161 },	-- Cave Entrance
