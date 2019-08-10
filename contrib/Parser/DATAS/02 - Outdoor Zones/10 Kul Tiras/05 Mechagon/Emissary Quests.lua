@@ -14,7 +14,7 @@ _.Zones =
 					["g"] = {
 						i(170061, {	-- Rustbolt Supplies
 							i(168494, {	-- Blueprint Rustbolt Resistance Insignia
-								["quest"] = 55073,
+								["questID"] = 55073,
 								["g"] = {
 									crit(19, {	-- Rustbolt Resistance Insignia
 										["achievementID"] = 13479,	-- Junkyard Architect
