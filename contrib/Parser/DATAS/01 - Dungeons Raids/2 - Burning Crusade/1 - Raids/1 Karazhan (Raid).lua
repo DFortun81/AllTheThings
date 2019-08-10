@@ -179,8 +179,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				n(17521, {		-- The Big Bad Wolf [Red Riding Hood]
 					["description"] = "The Big Bad Wolf is initially a harmless Grandmother, though speaking to her will reveal the truth...\n\n\"Run away little girl!\"",
-					["qgs"] = {
-						17521,	-- The Big Bad Wolf
+					["crs"] = {
 						17603,	-- Grandmother
 					},
 					["groups"] = {
@@ -193,8 +192,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				n(17534, {		-- Julianne [Romulo and Julianne]
 					["description"] = "Julianne will appear first alone, then after defeating her, Romulo will join the fight. After dispatching him, they will both rise and begin the fight again.",
-					["qgs"] = {
-						17534,	-- Julianne
+					["crs"] = {
 						17533,	-- Romulo
 					},
 					["groups"] = {
@@ -206,13 +204,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				n(18168, {		-- The Crone [Wizard of Oz]
 					["description"] = "She spawns shortly after Dorothee, Dorothee's pet Tito, Roar, Strawman, and Tinhead are defeated.",
-					["qgs"] = {
+					["crs"] = {
 						17535,	-- Dorothee
 						17548,	-- Tito
 						17543,	-- Strawman
 						17547,	-- Tinhead
 						17546,	-- Roar
-						18168,	-- The Crone
 					},
 					["groups"] = {
 						i(28587),	-- Legacy

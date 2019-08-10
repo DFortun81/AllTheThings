@@ -202,7 +202,6 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51108, {	-- Hivemother Kraxi
-						["npcID"] = 130443,	-- Hivemother Kraxi
 						["qg"] = 130443,	-- Hivemother Kraxi
 						["lvl"] = 120,
 						["collectible"] = false,
