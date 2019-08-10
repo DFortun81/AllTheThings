@@ -228,6 +228,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50767, {	-- The Scrimshaw Gang
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(51621, {	-- Tidal Teachings
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

@@ -8,13 +8,6 @@ _.Zones =
 			["lvl"] = 110,
 			["g"] = {
 				filter(200, {	-- Recipes
-					q(41663, {	-- Vantus Rune Work Order: Elerethe Renferal
-						["repeatable"] = true,
-						["qg"] = 107376,	-- Veridis Fallon <Court of Farondis Emissary>
-						["g"] = {
-							i(137772),	-- Vantus Rune Technique: Elerethe Renferal [Rank 3]
-						},
-					}),
 					q(41666, {	-- Vantus Rune Work Order: Nythendra
 						["repeatable"] = true,
 						["qg"] = 106904,	-- Valdemar Stormseeker <Valarjar Emissary>

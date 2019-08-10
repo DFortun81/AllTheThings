@@ -28,7 +28,6 @@ _.Zones =
 				q(44190),	-- DANGER: Jade Darkhaven
 				q(43798),	-- DANGER: Kosumoth the Hungering
 				q(44192),	-- DANGER: Lysanis Shadesoul
-				q(43063),	-- DANGER: Stormfeather
 				q(44194),	-- DANGER: Torrentius
 				q(44287),	-- DEADLY: Withered J'im
 				q(44054),	-- Demonicide
@@ -140,6 +139,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44193, {	-- DANGER: Sea King Tidross
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43063, {	-- DANGER: Stormfeather
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -411,6 +414,15 @@ _.Zones =
 				q(42160, {	-- Unwelcome Visitors
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41663, {	-- Vantus Rune Work Order: Elerethe Renferal
+					["qg"] = 107376,	-- Veridis Fallon <Court of Farondis Emissary>
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 773,	-- Inscription
+					["g"] = {
+						i(137772),	-- Vantus Rune Technique: Elerethe Renferal [Rank 3]
+					},
 				}),
 				q(43605, {	-- WANTED: Arcanist Shal'iman
 					["lvl"] = 110,

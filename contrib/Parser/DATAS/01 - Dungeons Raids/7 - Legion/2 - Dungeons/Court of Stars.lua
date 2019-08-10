@@ -12,6 +12,10 @@ _.Instances = { tier(7, {	-- Legion
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42781, {	-- Court of Stars: Disarmning the Watch
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42783, {	-- Court of Stars: They Bloom at Night
 					["lvl"] = 110,
 					["collectible"] = false,

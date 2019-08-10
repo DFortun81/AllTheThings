@@ -60,7 +60,6 @@ _.Zones =
 				q(44027),	-- WANTED: Magister Phaedris
 				q(44015),	-- WANTED: Mal'Dreth the Corruptor
 				q(44026),	-- WANTED: Mal'Dreth the Corruptor
-				q(44010),	-- WANTED: Oreth the Vile
 				q(44185),	-- WANTED: Sanaar
 				q(44022),	-- WANTED: Shal'an
 				q(44024),	-- WANTED: Shal'an
@@ -394,6 +393,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44018, {	-- WANTED: Magister Phaedris
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44010, {	-- WANTED: Oreth the Vile
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

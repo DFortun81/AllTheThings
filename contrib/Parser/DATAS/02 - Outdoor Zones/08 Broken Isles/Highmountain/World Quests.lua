@@ -68,9 +68,7 @@ _.Zones =
 				q(41232),	-- Thick Ironhorn Hide
 				q(44823),	-- Thunder Totem Cleanup Detail
 				q(41011),	-- Umbralshard Rituals
-				q(41836),	-- WANTED: Bodash the Hoarder
 				q(43616),	-- WANTED: Bodash the Hoarder
-				q(41826),	-- WANTED: Crawshuk the Hungry
 				q(44291),	-- WANTED: Crawshuk the Hungry
 				q(43617),	-- WANTED: Devouring Darkness
 				q(44292),	-- WANTED: Majestic Elderhorn
@@ -397,6 +395,14 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(44290, {	-- WANTED: Bristlemaul
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41836, {	-- WANTED: Bodash the Hoarder
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41826, {	-- WANTED: Crawshuk the Hungry
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

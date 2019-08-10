@@ -20,6 +20,10 @@ _.Instances = { tier(7, {	-- Legion
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42926, {	-- Vault of the Wardens: How'd He Get Up There?
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42922, {	-- Vault of the Wardens: Startup Sequence
 					["lvl"] = 110,
 					["collectible"] = false,

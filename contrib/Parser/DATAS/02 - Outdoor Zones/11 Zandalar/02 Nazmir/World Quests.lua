@@ -305,6 +305,10 @@ _.Zones =
 						["collectible"] = false,
 						["requireSkill"] = 182, 	-- Herbalism
 					}),
+					q(50510, {	-- Overstuffed Saurolisk
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52799, {	-- Pack Leader
 						["qg"] = 141799,	-- Grady Prett
 						["lvl"] = 120,

@@ -297,7 +297,6 @@ _.Zones =
 						["collectible"] = false,
 						["lvl"] = 120,
 					}),
-					
 					q(53832, {	-- Counter-Sabotage
 						["collectible"] = false,
 						["lvl"] = 110,
@@ -456,11 +455,7 @@ _.Zones =
 						["collectible"] = false,
 						["lvl"] = 120,
 					}),
-					q(52144, {	-- Foundry Meltdown
-						["collectible"] = false,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
+					
 					q(51654, {	-- Fowlmouth
 						["collectible"] = false,
 						["lvl"] = 120,
@@ -1155,7 +1150,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					
 					q(48354, {	-- Tainted Shipments
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1258,11 +1252,6 @@ _.Zones =
 					q(49229, {	-- The Ruins Fought Back
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50767, {	-- The Scrimshaw Gang
-						["collectible"] = false,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51578, {	-- The Sea Runs Red
 						["collectible"] = false,
 						["lvl"] = 120,
@@ -1283,7 +1272,6 @@ _.Zones =
 						["collectible"] = false,
 						["lvl"] = 120,
 					}),
-					
 					q(52163, {	-- The Winged Typhoon
 						["collectible"] = false,
 						["lvl"] = 120,
@@ -1762,6 +1750,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+					}),
+					q(52144, {	-- Foundry Meltdown
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51654, {	-- Fowlmouth
 						["lvl"] = 120,
