@@ -11,6 +11,7 @@ _.ExpansionFeatures =
 				gt(408, {	-- For Honor and Glory
 					i(141069, {	-- Skyhold Chest of Riches
 						["lvl"] = 103,
+						["questID"] = 43763,	-- Chest of Riches Weekly Lockout
 						["classes"]  = {1},
 						["description"] = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once per week.\n\nIt can contain the Fury Hidden Appearance items, however, you're better off gathering those items from their respective sources in the outdoor world due to the number of Warriors going for the toy. (IE: Do not open this chest if you already have the toy)",
 						["groups"] = {
