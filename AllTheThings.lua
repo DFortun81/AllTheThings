@@ -10229,10 +10229,9 @@ app:GetWindow("Debugger", UIParent, function(self)
 						for i=1,numItems,1 do
 							local link = GetMerchantItemLink(i);
 							if link then
-								local parent = rawGroups;
 								local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
-								-- print(link, cost, extendedCost);
 								if extendedCost then
+									cost = {};
 									local itemCount = GetMerchantItemCostInfo(i);
 									for j=1,itemCount,1 do
 										local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
@@ -10240,42 +10239,18 @@ app:GetWindow("Debugger", UIParent, function(self)
 											-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
 											local m = itemLink:match("currency:(%d+)");
 											if m then
-												-- Parse as a CURRENCY LINK.
-												parent = MergeObject(parent, {["currencyID"] = tonumber(m), ["g"] = {}}).g;
-												cost = itemValue;
+												-- Parse as a CURRENCY.
+												tinsert(cost, {"c", tonumber(m), itemValue});
 											else
-												-- Parse as an ITEM LINK.
-												m = itemLink:match("item:(%d+)");
-												if m then
-													cost = itemValue;
-													parent = MergeObject(parent, {["itemID"] = tonumber(m), ["g"] = {}}).g;
-												end
+												-- Parse as an ITEM.
+												tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
 											end
 										end
 									end
 								end
 								
 								-- Parse as an ITEM LINK.
-								m = link:match("item:(%d+)");
-								if m then
-									m = tonumber(m);
-									local found = false;
-									local searchResults = SearchForField("itemID", m);
-									if searchResults and #searchResults > 0 then
-										for j,k in ipairs(searchResults) do
-											if k.parent and (k.parent.creatureID == npc_id or (k.parent.parent and k.parent.parent.creatureID == npc_id)) then
-												found = true;
-											end
-										end
-									end
-									if not found then
-										table.insert(parent, {["itemID"] = m, ["cost"] = cost});
-									end
-								end
-								--[===[
-								local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(link);
-								print(" ", itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice);
-								]===]--
+								table.insert(rawGroups, {["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost});
 							end
 						end
 						
