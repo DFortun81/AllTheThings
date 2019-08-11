@@ -172,7 +172,7 @@ _.Secrets =
 				["description"] = "|cFFFFFFFFSTEP 6:|r |cff66ccffOn the right will be a Wall of Vines.  Use Scotty's Lucky Coin, pass threw the vines, and loot a Water Stone from the water.|r",
 			}),
 			o(9999914, {	-- |cFFFFFFFFStep 7:|r Water Barrier
-				["description"] = "|cFFFFFFFFSTEP 7:|r |cff66ccffUse the Water Stone, backtrack to the Blue Barrier and walk threw ever so slightly.|r",
+				["description"] = "|cFFFFFFFFSTEP 7:|r |cff66ccffUse the Water Stone, backtrack to the Blue Barrier and walk threw ever so slightly.|r",	-- i(147455)	-- Water Stone
 			}),
 			o(9999915, {	-- |cFFFFFFFFStep 8:|r Stone Golem
 				["description"] = "|cFFFFFFFFSTEP 8:|r |cff66ccffUse the Dire Brew and walk past the Stone Watcher|r",
@@ -181,13 +181,13 @@ _.Secrets =
 				["description"] = "|cFFFFFFFFSTEP 9:|r |cff66ccffGo up the ramp on the right to the Purple Transparent Barrier. Use Ethereal Oil and walk threw the barrier to the Strange Stone in the back.|r",
 			}),
 			o(9999917, {	-- |cFFFFFFFFStep 10:|r Strange Stone
-				["description"] = "|cFFFFFFFFSTEP 10:|r |cff66ccffAt the Strange Stone, use the Gordok Ogre Suit & Wintefall Firewater.  Select the Strange Stones dialogue \"Stick arm in stone\" and recieve Sign of the Second debuff.|r",
+				["description"] = "|cFFFFFFFFSTEP 10:|r |cff66ccffAt the Strange Stone, use the Gordok Ogre Suit & Wintefall Firewater.  Select the Strange Stones dialogue \"Stick arm in stone\" and recieve Sign of the Second debuff.|r",	-- n(54213)	-- Strange Stone
 			}),
 			o(9999918, {	-- |cFFFFFFFFStep 11:|r Metal Gate
 				["description"] = "|cFFFFFFFFSTEP 11:|r |cff66ccffBacktrack to the gate and use the Pygmy Oil until you turn into a Pygmy.  Walk threw the gate to the Wisdom Cube.|r",
 			}),
 			o(9999919, {	-- |cFFFFFFFFStep 12:|r Wisdom Cube
-				["description"] = "|cFFFFFFFFSTEP 12:|r |cff66ccffAt the Wisdom Cube summon Perky Pug and use the Little Princess Costume on it. Select the Wisdom Cubes dialogue \"Place Arm Beneath Cube\" and recieve Sign of the First debuff.|r",
+				["description"] = "|cFFFFFFFFSTEP 12:|r |cff66ccffAt the Wisdom Cube summon Perky Pug and use the Little Princess Costume on it. Select the Wisdom Cubes dialogue \"<Place arm beneath cube.>\" and recieve Sign of the First debuff.|r",	-- n(53730)	-- Wisdom Cube
 			}),
 			o(9999920, {	-- |cFFFFFFFFStep 13:|r Tarnished Plaque
 				["description"] = "|cFFFFFFFFSTEP 13a:|r |cff66ccffBacktrack down the ramp to the now opened gate. DO NOT JUMP OFF. Enter the room and on a pillar on the right will be a Tarnished Plaque.  Click on it.\n\nThe Tarnished Plaque reads:\n\n\"The greatest of achievments begins\nwith the smallest leap of the mind.\"\n\n|cFFFFFFFFSTEP 13b:|r After reading the Tarnished Plaque, click off at least one buff and use the Scroll of Intellect.|r",
@@ -196,6 +196,7 @@ _.Secrets =
 				--["modelID"] = 74529,
 				--["modelScale"] = 2,
 				["questID"] = 48022,
+				["isWeekly"] = true,
 				["description"] = "|cFFFFFFFFSTEP 14:|r |cff66ccffDO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water.  Walk across the water and loot the egg.|r\n\nCongrats on your new pet!!! \n\n!Don't forget to turn off debug mode now that you are done.",  -- |cff3399ff -- blue color
 				["g"] = {
 					i(142223),	-- Sun Darter Hatchling (PET!)
