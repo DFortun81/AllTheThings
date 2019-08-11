@@ -603,6 +603,7 @@ _.Zones =
 			--	UNSORTED BELOW THIS POINT.
 				q(26487, {	-- Akiris by the Bundle
 					["qg"] = 43095,	-- Sassy Hardwrench
+					["coord"] = { 34.6, 29.5, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {26404,28704},
 				}),
@@ -686,12 +687,19 @@ _.Zones =
 						i(131554),	-- Spaulders of the Bat
 					},
 				}),
-				q(29151, {	-- Bad Supplies
+				q(29151, {	-- Bad Supplies (A)
 					["lvl"] = 85,
 					["qg"] = 52234,	-- Bwemba
 					["coord"] = { 55.1, 42.2, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29150 },	-- Voodoo Zombies
+				}),
+				q(29238, {	-- Bad Supplies (H)
+					["qg"] = 52234,	-- Bwemba
+					["lvl"] = 85,
+					["coord"] = { 34.7, 29.4, 210 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 29237,	-- Voodoo Zombies
 				}),
 				q(26495, {	-- Chabal
 					["qg"] = 43095,	-- Sassy Hardwrench
@@ -719,7 +727,9 @@ _.Zones =
 				}),
 				q(26450, {	-- If They're Just Going to Leave Them Lying Around...
 					["qg"] = 43095,	-- Sassy Hardwrench
+					["coord"] = { 34.6, 29.5, 210 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26404,	-- Above My Pay Grade
 					["g"] = {
 						i(61517),	-- Sassy Pantaloons
 						i(61518),	-- Iconic Vest
@@ -735,12 +745,18 @@ _.Zones =
 					["races"] = { 9 },	-- Goblin
 					["description"] = "This is only available to Goblin players who have not accepted [Akiris by the Bundle]."
 				}),
-				q(29152, {	-- Making Contact
+				q(29152, {	-- Making Contact (A)
 					["lvl"] = 85,
 					["qg"] = 52646,	-- Colin Swifthammer
 					["coord"] = { 55.3, 41.9, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29151 },	-- Bad Supplies
+				}),
+				q(29250, {	-- Making Contact (H)
+					["qg"] = 53078,	-- Zombie Survivor
+					["coord"] = { 33.5, 30.3, 210 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 29238,	-- Bad Supplies
 				}),
 				q(26554, {	-- Plunging Into Zul'Gurub
 					["races"] = HORDE_ONLY,
@@ -788,12 +804,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {26551},
 				}),
-				q(29150, {	-- Voodoo Zombies
+				q(29150, {	-- Voodoo Zombies (A)
 					["lvl"] = 85,
 					["qg"] = 52234,	-- Bwemba
 					["coord"] = { 55.1, 42.2, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29133 },	-- To the Digsite
+				}),
+				q(29237, {	-- Voodoo Zombies (H)
+					["qg"] = 52234,	-- Bwemba
+					["lvl"] = 85,
+					["coord"] = { 34.7, 29.4, 210 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 29236,	-- To Hardwrench Hideaway
 				}),
 			--	q(8194),	-- Apprentice Angler
 --[[			q(31851),	-- Bill Buckler
@@ -827,9 +850,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(26630),	-- Looks Like a Tauren Pirate to Me
-				q(29250, {	-- Making Contact
-					["races"] = HORDE_ONLY,
-				}),
 				q(11357, {	-- Masked Orphan Matron
 					["races"] = HORDE_ONLY,
 				}),
