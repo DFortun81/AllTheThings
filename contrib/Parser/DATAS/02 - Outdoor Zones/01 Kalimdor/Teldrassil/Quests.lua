@@ -81,6 +81,7 @@ _.Zones =
 					["coord"] = { 40.0, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 32460,	-- Tracking the Thieves
+					["level"] = 81,
 				}),
 				q(938,   {	-- Mist
 					["qg"] = 3568,	-- Mist
@@ -180,6 +181,7 @@ _.Zones =
 					["g"] = {
 						q(931, {	-- The Shimmering Frond
 							["races"] = ALLIANCE_ONLY,
+							["description"] = "Submit this to Denalan at Lake Al'Ameth (59.8, 59.6) to ensure you get the next quest.",
 						}),
 					},
 				}),
