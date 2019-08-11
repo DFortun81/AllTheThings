@@ -47,7 +47,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(9457, {	-- An Unusual Patron
+				q(9457,  {	-- An Unusual Patron
 					["qg"] = 17094,	-- Nemeth Hawkeye
 					["coord"] = { 38.1, 50.0, 50 },
 					["races"] = HORDE_ONLY,
@@ -59,7 +59,7 @@ _.Zones =
 						i(131255),	-- Shouldersguards of Raw Power
 					},
 				}),
-				q(204, {	-- Bad Medicine
+				q(204,   {	-- Bad Medicine
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -102,7 +102,7 @@ _.Zones =
 						i(131515),	-- Waistguard of the High Shaman
 					},
 				}),
-				q(208, {	-- Big Game Hunter
+				q(208,   {	-- Big Game Hunter
 					["qg"] = 715,	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuests"] = {
@@ -140,13 +140,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26736,	-- Spared from Madness
 				}),
-				q(9436, {	-- Bloodscalp Insight (H)
+				q(9436,  {	-- Bloodscalp Insight (H)
 					["qg"] = 17094,	-- Nemeth Hawkeye
 					["coord"] = { 38.1, 50.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26321,	-- I Think She's Hungry
 				}),
-				q(596, {	-- Bloody Bone Necklaces
+				q(596,   {	-- Bloody Bone Necklaces
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -172,7 +172,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26301,	-- Speaking with Nezzliok
 				}),
-				q(202, {	-- Colonel Kurzen
+				q(202,   {	-- Colonel Kurzen
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -229,7 +229,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(3625, {	-- Enchanted Azsharite Fel Weaponry
+				q(3625,  {	-- Enchanted Azsharite Fel Weaponry
 					["u"] = 40,
 					["g"] = {
 						un(2, i(10697)),	-- Enchanted Azsharite Felbane Dagger
@@ -237,7 +237,7 @@ _.Zones =
 						un(2, i(10696)),	-- Enchanted Azsharite Felbane Sword
 					},
 				}),
-				q(2765, {	-- Expert Blacksmith!
+				q(2765,  {	-- Expert Blacksmith!
 					["u"] = 40,
 					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
@@ -311,7 +311,7 @@ _.Zones =
 					["description"] = "This version is available if you abandon the quest that was granted automatically.",
 					["sourceQuest"] = 29227,	-- The Hunter's Revenge
 				}),
-				q(2764, {	-- Galvin's Finest Pupil
+				q(2764,  {	-- Galvin's Finest Pupil
 					["u"] = 40,
 					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
@@ -328,7 +328,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26775,	-- Be Raptor
 				}),
-				q(582, {	-- Headhunting
+				q(582,   {	-- Headhunting
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -408,7 +408,7 @@ _.Zones =
 					["coord"] = { 47.0, 10.6, 50 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(206, {	-- Mai'Zoth
+				q(206,   {	-- Mai'Zoth
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -487,12 +487,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26359,	-- See Raptor
 				}),
-				q(190, {	-- Panther Hunting
+				q(190,   {	-- Panther Hunting
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
 				}),
-				q(193, {	-- Panther Mastery
+				q(193,   {	-- Panther Mastery
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 192,	-- Panther Prowess
@@ -503,12 +503,12 @@ _.Zones =
 						un(2, i(4108)),	-- Panther Hunter Leggings
 					},
 				}),
-				q(191, {	-- Panther Stalking
+				q(191,   {	-- Panther Stalking
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 190,	-- Panther Hunting
 				}),
-				q(192, {	-- Panther Prowess
+				q(192,   {	-- Panther Prowess
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 191,	-- Panther Stalking
@@ -542,12 +542,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26748,	-- Bloodlord Mandokir
 				}),
-				q(194, {	-- Raptor Hunting
+				q(194,   {	-- Raptor Hunting
 					["qg"] = 715,	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
 				}),
-				q(197, {	-- Raptor Mastery
+				q(197,   {	-- Raptor Mastery
 					["qg"] = 715,	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuest"] = 196,	-- Raptor Prowess
@@ -559,17 +559,17 @@ _.Zones =
 						un(2, i(4119)),	-- Raptor Hunter Tunic
 					},
 				}),
-				q(196, {	-- Raptor Prowess
+				q(196,   {	-- Raptor Prowess
 					["qg"] = 715,	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuest"] = 195,	-- Raptor Stalking
 				}),
-				q(195, {	-- Raptor Stalking
+				q(195,   {	-- Raptor Stalking
 					["qg"] = 715,	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuest"] = 194,	-- Raptor Hunting
 				}),
-				q(331, {	-- Report to Doren
+				q(331,   {	-- Report to Doren
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -577,7 +577,7 @@ _.Zones =
 						un(2, i(4139)),	-- Junglewalker Sandals
 					},
 				}),
-				q(622, {	-- Return to Corporal Kaleb
+				q(622,   {	-- Return to Corporal Kaleb
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -605,7 +605,7 @@ _.Zones =
 						i(131593),	-- Mahamba's Pauldrons
 					},
 				}),
-				q(592, {	-- Saving Yenniku
+				q(592,   {	-- Saving Yenniku
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -656,7 +656,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26330,	-- Who's a Big Troll?
 				}),
-				q(2761, {	-- Smelt On, Smelt Off
+				q(2761,  {	-- Smelt On, Smelt Off
 					["u"] = 40,
 					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
@@ -719,7 +719,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29221,	-- Serpents and Poison
 				}),
-				q(598, {	-- Split Bone Necklace
+				q(598,   {	-- Split Bone Necklace
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -761,7 +761,7 @@ _.Zones =
 						i(131590),	-- Salt-Cured Mantle
 					},
 				}),
-				q(2763, {	-- The Art of the Imbue
+				q(2763,  {	-- The Art of the Imbue
 					["u"] = 40,
 					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
@@ -771,7 +771,7 @@ _.Zones =
 						un(2, i(7985)),	-- Plans: Ornate Mithril Shoulders
 					},
 				}),
-				q(569, {	-- The Defense of Grom'gol
+				q(569,   {	-- The Defense of Grom'gol
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -825,7 +825,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26838,	-- Rebels Without a Clue
 				}),
-				q(2762, {	-- The Great Silver Deceiver
+				q(2762,  {	-- The Great Silver Deceiver
 					["u"] = 40,
 					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
@@ -835,7 +835,7 @@ _.Zones =
 						un(2, i(7984)),	-- Plans: Ornate Mithril Gloves
 					},
 				}),
-				q(338, {	-- The Green Hills of Stranglethorn
+				q(338,   {	-- The Green Hills of Stranglethorn
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4116)),	-- Olmann Sewar
@@ -847,7 +847,7 @@ _.Zones =
 					["coord"] = { 44.2, 22.1, 50 },
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
 				}),
-				q(328, {	-- The Hidden Key
+				q(328,   {	-- The Hidden Key
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
