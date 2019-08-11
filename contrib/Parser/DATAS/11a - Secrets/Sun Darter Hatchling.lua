@@ -83,10 +83,13 @@ _.Secrets =
 							}),
 						},
 					}),
+					i(22845, {	-- Major Arcane Protection Potion
+						["description"] = "Qty:1\n\nPurchase on the AH or make your own(Alchemy)",
+					}),
 					i(22841, {	-- Major Fire Protection Potion
 						["description"] = "Qty:1\n\nPurchase on the AH or make your own(Alchemy)",
 					}),
-					i(22845, {	-- Major Arcane Protection Potion
+					i(22842, {	-- Major Frost Protection Potion
 						["description"] = "Qty:1\n\nPurchase on the AH or make your own(Alchemy)",
 					}),
 					i(22847, {	-- Major Holy Protection Potion
