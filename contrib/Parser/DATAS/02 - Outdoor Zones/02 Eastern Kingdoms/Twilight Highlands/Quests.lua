@@ -746,6 +746,13 @@ _.Zones =
 					["sourceQuest"] = 28591,	-- Off the Wall
 				}),
 				q(27650, {	-- Home Again
+					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						46174,	-- Cayden Dunwald
+						46176,	-- Donnelly Dunwald
+						46626,	-- Donnelly Dunwald
+						46583,	-- Eoin Dunwald
+					},
 					["sourceQuests"] = {
 						27647,	-- Anything But Water
 						27646,	-- Finding Beak
@@ -756,8 +763,6 @@ _.Zones =
 						{ 45.9, 58.6, 241 },	-- Donnelly Dunwald
 						{ 47.8, 74.4, 241 },	-- Cayden Dunwald
 					},
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 27650,	-- Donnelly Dunwald
 				}),
 				q(27806, {	-- Honorable Bearing
 					["sourceQuests"] = {
