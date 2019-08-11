@@ -9,8 +9,14 @@ _.Zones =
 			["icon"] = "Interface\\Icons\\achievement_battleground_battleforgilneas",
 			["maps"] = {
 				180,	-- Emberstone Mine
-				181,	-- Greymane Manor
-				182,	-- Greymane Manor
+				181,	-- Greymane Manor [Main Floor]
+				182,	-- Greymane Manor [Upper Floor]
+			},
+			["g"] = {
+				m(202, {	-- Gilneas City
+					["description"] = "|cff66ccffGilneas City was the capital city of the Kingdom of Gilneas. It was a dark and foreboding place of narrow cobblestone streets and crowded, Gothic houses, divided into four districts, centered around the Light's Dawn Cathedral. Shortly after the Cataclysm, the city was struck by a worgen assault and, later, a Forsaken invasion. After its abandonment by the Gilneans, the Alliance managed to retake the city, although its current status remains unknown.|r",
+					["icon"] = "Interface\\Icons\\Achievement_worganhead",
+				}),
 			},
 		}),
 	}),
