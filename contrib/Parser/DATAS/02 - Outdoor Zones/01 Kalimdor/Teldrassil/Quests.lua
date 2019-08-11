@@ -171,6 +171,7 @@ _.Zones =
 						q(2399, {	-- The Sprouted Fronds
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 931,	-- The Shimmering Frond
+							["description"] = "This quest is unobtainable if you submit |cffffffffThe Shimmering Frond|r to Denalan at Wellspring Hovel (43.8, 44.2) instead of Lake Al'Ameth (59.8, 59.6).",
 						}),
 					},
 				}),
