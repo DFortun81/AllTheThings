@@ -38,7 +38,7 @@ _.Secrets =
 								["collectible"] = false,
 								["coords"] = {
 									{ 62.5, 24.9, 69 },	-- Dire Maul North entrance
-									--{ 17.07, 17.06, 235 },	-- Inside instance?
+									{ 28.5, 55.0, 235 },	-- Inside instance
 								}
 							}),
 						},	
