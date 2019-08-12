@@ -76,6 +76,7 @@ _.Toys =
 			i(147308), 		-- Enchanted Bobber
 			i(147309), 		-- Face of the Forest
 			i(147310), 		-- Floating Totem
+			i(168016),		-- Hyper-Compressed Ocean
 			i(108739),		-- Pretty Draenor Pearl
 			i(147311), 		-- Replica Gondola
 			i(44430),		-- Titanium Seal of Dalaran
