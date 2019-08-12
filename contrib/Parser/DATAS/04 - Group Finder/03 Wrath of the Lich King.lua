@@ -38,6 +38,7 @@ _.GroupFinder =
 				i(113684),	-- Icecrust Cloak*
 				i(113687),	-- Dark Rune Lavalliere*
 				i(113688),	-- Obsidian Citadel Necklace*
+				i(113686),	-- Nerubian Prince's Pendant
 			},
 		}),
 		i(114634, {	-- Icy Satchel of Helpful Goods 70-74

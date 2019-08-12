@@ -647,11 +647,9 @@ _.Zones =
 						i(134317),	-- Ley-Scarred Sabatons
 					},		
 				}),
-				--[[
 				n(-384, {	-- Neck
-					
+					i(134319),	-- Depleted Mana Crystal Pendant
 				}),
-				]]--
 				n(-386,  {	-- Trinkets
 					i(134234),	-- Barnacled Azsharan Insignia
 					i(134248),	-- Leycoral Shard

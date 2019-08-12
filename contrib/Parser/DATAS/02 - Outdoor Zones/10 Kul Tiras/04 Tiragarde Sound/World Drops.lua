@@ -76,7 +76,6 @@ _.Zones =
 					--i(159562),	-- Tideguard Pike
 					i(159523),	-- Tideguard Shanker
 					--i(159503),	-- Tideguard Slicers
-					i(155224),	-- Tideguard Spellblade
 					--i(159565),	-- Tideguard Spire
 					i(159589),	-- Tideguard Sword
 					i(159800),	-- Wavecaller Buckler

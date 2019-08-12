@@ -1590,6 +1590,7 @@ _.Zones =
 					i(121310),	-- Nightmare Thorn
 				}),
 				n(-387,  {	-- Relics
+					i(139076),	-- Bloom of New Growth
 					i(143698),	-- Effervescent Leyblossom
 					i(141255),	-- Mockery of Life
 					i(141256),	-- Promise of Rebirth
