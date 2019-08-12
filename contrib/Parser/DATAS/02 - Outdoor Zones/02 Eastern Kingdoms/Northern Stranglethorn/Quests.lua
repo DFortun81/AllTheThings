@@ -348,12 +348,17 @@ _.Zones =
 						i(131506),	-- Palm Frond Pauldrons
 					},
 				}),
-				q(26812, {	-- High Priestess Jeklik
+				q(26812, {	-- High Priestess Jeklik (A)
 					["sourceQuests"] = { 26811 },	-- Through the Troll Hole
 					["coord"] = { 78.5, 35.6, 50 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26814, {	-- High Priest Venoxis
+				q(26553, {	-- High Priestess Jeklik (H)
+					["coord"] = { 78.5, 35.6, 50 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26552,	-- Through the Troll Hole
+				}),
+				q(26814, {	-- High Priest Venoxis (A)
 					["sourceQuests"] = { 26813 },	-- Plunging Into Zul'Gurub
 					["coord"] = { 82.1, 35.3, 50 },
 					["races"] = ALLIANCE_ONLY,
@@ -362,6 +367,17 @@ _.Zones =
 						i(61550),	-- Boots of the Foolhardy
 						i(61551),	-- Cloak of Great Endeavors
 						i(131607),	-- Treads of the Foolhardy
+					},
+				}),
+				q(26555, {	-- High Priest Venoxis (H)
+					["coord"] = { 82.1, 35.3, 50 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26554,	-- Plunging Into Zul'Gurub
+					["g"] = {
+						i(61552),	-- Chabal's Favorite Ring
+						i(61553),	-- Boots of the Foolhardy
+						i(61554),	-- Cloak of Great Endeavors
+						i(131555),	-- Treads of the Foolhardy
 					},
 				}),
 				q(29213, {	-- How's the Hunter Holding Up? (A)
@@ -513,10 +529,15 @@ _.Zones =
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 191,	-- Panther Stalking
 				}),
-				q(26813, {	-- Plunging Into Zul'Gurub
+				q(26813, {	-- Plunging Into Zul'Gurub (A)
 					["sourceQuests"] = { 26812 },	-- High Priestess Jeklik
 					["coord"] = { 77.9, 44.1, 50 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(26554, {	-- Plunging Into Zul'Gurub (H)
+					["coord"] = { 78.0, 44.2, 50 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 26553,	-- High Priestess Jeklik
 				}),
 				q(26751, {	-- Population Con-Troll (A)
 					["qg"] = 733,	-- Sergeant Yohwa
@@ -985,12 +1006,6 @@ _.Zones =
 					["coord"] = { 44.1, 22.9, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29223,	-- Nesingwary Will Know
-				}),
-				q(9259,  {	-- Traitor to the Bloodsail
-					["qg"] = 16399,	-- Bloodsail Traitor
-					["coord"] = { 48.4, 63.2, 50 },
-					["repeatable"] = true,
-					["maxReputation"] = NEUTRAL,
 				}),
 				q(26763, {	-- Venture Company Mining (A)
 					["qg"] = 773,	-- Krazek

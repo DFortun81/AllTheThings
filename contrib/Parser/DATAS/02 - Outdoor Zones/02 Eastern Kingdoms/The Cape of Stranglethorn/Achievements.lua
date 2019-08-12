@@ -8,16 +8,14 @@ _.Zones =
 			n(-4, {		-- Achievements
 				ach(4905, {	-- Cape of Stranglethorn Quests
 					crit(1, {	-- The Trolls of Zul'gurub
-						["achievementID"] = 4905,	-- Cape of Stranglethorn Quests
 						["sourceQuests"] = { 26814, 26555 },	-- High Priest Venoxis (A, H)
 					}),
 					crit(2, {	-- Bustling Booty Bay
-						["achievementID"] = 4905,	-- Cape of Stranglethorn Quests
+						["description"] = "You only need to complete one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to earn full credit.",
 						["sourceQuests"] = {
 							26612,	-- Details of the Attack
 							26613,	-- Up to Snuff
 						},
-						["description"] = "You only need to complete one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to earn full credit.",
 					}),
 					crit(3, {	-- A Pirate's Life For You
 						["sourceQuests"] = { 26665 },	-- Call of Booty
