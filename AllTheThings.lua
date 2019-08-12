@@ -6033,7 +6033,7 @@ app.BaseQuest = {
 		elseif key == "link" then
 			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
 		elseif key == "icon" then
-			if t.isDaily or t.isDaily then
+			if t.isDaily or t.isWeekly then
 				return "Interface\\GossipFrame\\DailyQuestIcon";
 			elseif t.repeatable then
 				return "Interface\\GossipFrame\\DailyActiveQuestIcon";
