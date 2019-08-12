@@ -6033,6 +6033,14 @@ app.BaseQuest = {
 		elseif key == "link" then
 			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
 		elseif key == "icon" then
+			if t.isDaily or t.isDaily then
+				return "Interface\\GossipFrame\\DailyQuestIcon";
+			elseif t.repeatable then
+				return "Interface\\GossipFrame\\DailyActiveQuestIcon";
+			else
+				return "Interface\\GossipFrame\\AvailableQuestIcon";
+			end
+		elseif key == "preview" then
 			return "Interface\\Icons\\Achievement_Quests_Completed_08";
 		elseif key == "trackable" then
 			return true;
