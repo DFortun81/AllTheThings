@@ -351,40 +351,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95973),	-- Abandoned Zandalari Waterchain
 						i(95979),	-- Columnbreaker Stompers [Crieve got November 24, 2018 on stream]
 						i(94295),	-- Primal Egg
-						i(44984),	-- Ammen Vale Lashling
-						i(54436),	-- Blue Clockwork Rocket Bot
-						i(44970),	-- Dun Morogh Cub
-						i(44973),	-- Durotar Scorpion
-						i(67282),	-- Elementium Geode
-						i(44974),	-- Elwynn Lamb
-						i(44982),	-- Enchanted Broom
-						i(64403),	-- Fox Kit
-						i(43698),	-- Giant Sewer Rat
 						i(95965),	-- Home-Warding Slippers
-						i(45002),	-- Mechanopeep
-						i(44980),	-- Mulgore Hatchling
 						i(95980),	-- Necklace of the Terra-Cotta Protector
 						i(95958),	-- Necklace of the Terra-Cotta Archer
-						i(69992),	-- Shimmering Wyrmling
-						i(44965),	-- Teldrassil Sproutling
-						i(69991),	-- Tiny Sporebat
-						i(44971),	-- Tirisfal Batling
-						i(10360),	-- Black Kingsnake
-						i(29960),	-- Captured Firefly
-						i(8491),	-- Cat Carrier (Black Tabby)
-						i(46398),	-- Cat Carrier (Calico Cat)
-						i(8487),	-- Cat Carrier (Orange Tabby)
-						i(8488),	-- Cat Carrier (Silver Tabby)
-						i(10822),	-- Dark Whelpling
-						i(29953),	-- Golden Dragonhawk Hatchling
-						i(48116),	-- Gundrak Hatchling
-						i(48118),	-- Leaping Hatchling
-						i(48120),	-- Obsidian Hatchling
-						i(8496),	-- Parrot Cage (Cockatiel)
-						i(8492),	-- Parrot Cage (Green Wing Macaw)
-						i(8495),	-- Parrot Cage (Senegal)
-						i(48124),	-- Razormaw Hatchling
-						i(48126),	-- Razzashi Hatchling
+						i(95959),	-- Spiderweb Tabi
 					}),
 					
 					-- Necks
