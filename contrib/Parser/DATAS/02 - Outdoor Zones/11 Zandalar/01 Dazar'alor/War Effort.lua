@@ -205,6 +205,11 @@ _.Zones =
 								}),
 							},
 						}),
+						q(54329, {	-- Darkshore Donations: War Resources
+							["qg"] = 142158,	-- Quartermaster Rauka
+							["coord"] = { 51.71, 95.07, 1165 },
+							["isDaily"] = true,
+						}),
 						q(52930, {	-- Wartime Donation: Gold
 							["qg"] = 142157,	-- Paymaster Grintooth
 							["coords"] = {

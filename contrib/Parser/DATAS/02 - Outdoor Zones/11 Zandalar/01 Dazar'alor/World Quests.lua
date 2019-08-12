@@ -21,6 +21,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51496, {	-- Loa Your Standards
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50747, { 	-- No Good Amani
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

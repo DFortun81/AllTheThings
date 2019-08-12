@@ -407,10 +407,6 @@ _.Zones =
 				q(50645, {	-- Eeling in a Big One
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53878, {	-- Emergency Extrication
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(51207, {	-- Ettin It Done
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1515,6 +1511,11 @@ _.Zones =
 						["collectible"] = false,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(53878, {	-- Emergency Extrication (Faction Assault WQ)
+						["collectible"] = false,
+						--["races"] = ,	-- Needs Verification	-- Neutral quest on wowhead(Completed as horde)
+						["lvl"] = 110,
 					}),
 					q(51781, {	-- Foreman Scripps
 						["lvl"] = 120,

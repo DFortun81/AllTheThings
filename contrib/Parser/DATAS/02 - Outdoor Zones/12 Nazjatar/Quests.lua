@@ -2066,6 +2066,18 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56353,	-- An Abyssal Opportunity
 			}),
+			q(56349, {	-- The Eternal Palace: Pushing the Limits (A)
+				["qg"] = 154257,	-- Instructor Ulooaka
+				["coord"] = { 37.9, 52.9, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 56348,	-- The Eternal Palace: We Can Make It Stronger... (A)
+			}),
+			q(56351, {	-- The Eternal Palace: Pushing the Limits (H)
+				["qg"] = 154408,	-- Rolm
+				["coord"] = { 49.3, 61.8, 1355 },
+				["races"] = HORDE_ONLY,
+				["sourceQuest"] = 56352,	-- The Eternal Palace: We Can Make It Stronger... (H)
+			}),
 			q(56311, {	-- The Ever Drowning (A)
 				["qg"] = 154660,	-- Shandris Feathermoon
 				["coord"] = { 73.9, 41.7, 1355 },

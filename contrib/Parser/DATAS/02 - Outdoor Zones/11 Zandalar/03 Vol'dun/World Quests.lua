@@ -210,6 +210,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51180, {	-- Instructions Not Included
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(53885, {	-- Isolated Victory (Faction Assault WQ)
 						["qg"] = 135804,	-- Hoarder Jena <Voldunai Emissary>
 						["lvl"] = 110,
