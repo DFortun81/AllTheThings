@@ -131,6 +131,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(26939, {	-- The G-Team [Alliance]
 					["qg"] = 44556,	-- Murd Doc
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						26943,	-- Home Sweet Gnome
 						26944,	-- Exploring Gnomeregan
@@ -138,6 +139,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(50338, {	-- The G-Team [Horde]
 					["qg"] = 44556,	-- Murd Doc
+					["races"] = HORDE_ONLY,
 				}),
 				q(26941, {	-- The G-Team [Alliance]
 					["hordeQuestID"] = 50337,
