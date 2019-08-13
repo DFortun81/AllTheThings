@@ -125,6 +125,21 @@ _.Zones =
 						["coord"] = { 76.21, 65.22, 896 },
 					}),
 				}),
+				ach(12497, {	-- Drust Do It.
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1),	-- The Final Effigy
+						crit(2),	-- The Burden of Proof
+						crit(3),	-- An Airtight Alibi
+						crit(4),	-- The Order of Embers
+						crit(5),	-- A New Order
+						crit(6),	-- Break on Through
+						crit(7),	-- Storming the Manor
+						crit(8),	-- Clear Victory
+						crit(9),	-- Fighting With Fire
+						crit(10),	-- Stick It To 'Em!
+					},
+				}),
 				ach(13064, {	-- Drust the Facts, Ma'am
 					o(296915, {	-- Drust Stele: The Circle
 						["coord"] = { 36.8, 64.5, 896 },
