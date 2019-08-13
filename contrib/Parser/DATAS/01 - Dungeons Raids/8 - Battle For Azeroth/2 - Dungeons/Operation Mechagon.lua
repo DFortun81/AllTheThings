@@ -19,6 +19,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
 				i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
 			}),
+			ach(13789),	-- Hertz Locker
 			filter(101, {	-- Pet Battles
 				p(2672, {	-- Alloyed Alleyrat
 					["crs"] = { 154789 },

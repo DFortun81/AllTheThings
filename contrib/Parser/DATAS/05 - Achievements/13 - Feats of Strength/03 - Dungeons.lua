@@ -136,6 +136,7 @@ _.Achievements =
 							["description"] = "Must earn with a female character.",
 						})),
 					})),
+					ach(13789),	-- Hertz Locker
 					un(2, ach(8903, {		-- Mistwalker
 						un(39, title(255)),	-- Mistwalker
 					})),
