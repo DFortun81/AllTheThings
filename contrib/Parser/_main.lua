@@ -724,8 +724,6 @@ h = function(t) -- Flag as Horde Only
 	end
 	return t;
 end
-qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object
-qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
 
