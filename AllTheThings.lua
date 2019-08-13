@@ -1101,15 +1101,28 @@ local IsQuestFlaggedCompletedForObject = function(t)
 end
 
 -- Quest Name Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
+local questRetries = {};
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 	QuestHarvester:SetHyperlink("quest:"..id);
-	local title = AllTheThingsQuestHarvesterTextLeft1:GetText();
+	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
 	QuestHarvester:Hide()
 	if title and title ~= RETRIEVING_DATA then
-		t[id] = title
+		rawset(questRetries, id, nil);
+		rawset(t, id, title);
 		return title
+	else
+		local retries = rawget(questRetries, id);
+		if retries and retries > 120 then
+			title = "Quest #" .. id .. "*";
+			rawset(questRetries, id, nil);
+			rawset(t, id, title);
+			return title;
+		else
+			rawset(questRetries, id, (retries or 0) + 1);
+		end
+		return RETRIEVING_DATA;
 	end
 end })
 
@@ -6019,17 +6032,7 @@ app.BaseQuest = {
 			return questName;
 		elseif key == "questName" then
 			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
-			local questName = QuestTitleFromID[questID];
-			if questName then
-				t.retries = nil;
-				t.title = nil;
-				return "[" .. questName .. "]";
-			end
-			if t.retries and t.retries > 120 then
-				return "[Quest #" .. questID .. "*]";
-			else
-				t.retries = (t.retries or 0) + 1;
-			end
+			return QuestTitleFromID[questID];
 		elseif key == "link" then
 			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
 		elseif key == "icon" then
@@ -6139,18 +6142,7 @@ app.BaseSelfieFilter = {
 			end
 			return t.questName;
 		elseif key == "questName" then
-			local questID = t.questID;
-			local questName = QuestTitleFromID[questID];
-			if questName then
-				t.retries = nil;
-				t.title = nil;
-				return "[" .. questName .. "]";
-			end
-			if t.retries and t.retries > 120 then
-				return "[Quest #" .. questID .. "*]";
-			else
-				t.retries = (t.retries or 0) + 1;
-			end
+			return QuestTitleFromID[t.questID];
 		elseif key == "link" then
 			return "quest:" .. t.questID;
 		elseif key == "icon" then
@@ -6588,18 +6580,7 @@ app.BaseVignette = {
 			end
 			return t.questName;
 		elseif key == "questName" then
-			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
-			local questName = QuestTitleFromID[questID];
-			if questName then
-				t.retries = nil;
-				t.title = nil;
-				return "[" .. questName .. "]";
-			end
-			if t.retries and t.retries > 120 then
-				return "[Quest #" .. questID .. "*]";
-			else
-				t.retries = (t.retries or 0) + 1;
-			end
+			return QuestTitleFromID[t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID];
 		elseif key == "link" then
 			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
 		elseif key == "icon" then
