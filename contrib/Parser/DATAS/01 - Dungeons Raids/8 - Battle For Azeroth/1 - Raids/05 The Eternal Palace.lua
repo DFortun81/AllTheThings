@@ -207,7 +207,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								i(168328),	-- Hardened Azerite Formation
 								i(168941),	-- Vitality Redistribution Lattice
 								i(168275),	-- Anu-Azshara, Staff of the Eternal
-								i(168895),	-- Mel'nalore, Javelin of Suramar
+								--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
 								i(168887),	-- Gloves of Incomparable Beauty
 								i(168888),	-- Handguards of the Highest-Born
 								i(168871),	-- Beloved Monarch's Waistwrap
@@ -429,7 +429,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(168328),	-- Hardened Azerite Formation
 						i(168941),	-- Vitality Redistribution Lattice
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						i(168895),	-- Mel'nalore, Javelin of Suramar
+						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
 						i(168887),	-- Gloves of Incomparable Beauty
 						i(168888),	-- Handguards of the Highest-Born
 						i(168871),	-- Beloved Monarch's Waistwrap
@@ -651,7 +651,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(168855),	-- Pulsing Elemental Hearth
 						i(168536),	-- Recrystalizing Azerite Formation
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						i(168895),	-- Mel'nalore, Javelin of Suramar
+						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
 						i(168887),	-- Gloves of Incomparable Beauty
 						i(168888),	-- Handguards of the Highest-Born
 						i(168871),	-- Beloved Monarch's Waistwrap
@@ -883,7 +883,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(168857),	-- Sparkling Elemental Heart
 						i(168944),	-- Web of Unbridled Vitality
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						i(168895),	-- Mel'nalore, Javelin of Suramar
+						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
 						i(168887),	-- Gloves of Incomparable Beauty
 						i(168888),	-- Handguards of the Highest-Born
 						i(168871),	-- Beloved Monarch's Waistwrap
