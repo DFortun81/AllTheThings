@@ -25,7 +25,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44082,	-- Bronwyn Hewstrike
 				}),
-				q(617, {	-- Akiris by the Bundle
+				q(617,   {	-- Akiris by the Bundle
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4117)),	-- Scorching Sash
@@ -59,6 +59,15 @@ _.Zones =
 					},
 					["g"] = {
 						i(10398),	-- Mechanical Chicken
+					},
+				}),
+				q(7838,  {	-- Arena Grandmaster
+					["sourceQuest"] = 7810,	-- Arena Master
+					["repeatable"] = true,
+					["coord"] = { 45.0, 25.4, 210 },
+					["qg"] = 14508,	-- Short John Mithril
+					["g"] = {
+						i(19024),	-- Arena Grand Master
 					},
 				}),
 				q(26644, {	-- Attracting Attention
@@ -125,17 +134,29 @@ _.Zones =
 					},
 				}),
 				q(26610, {	-- Bloodsail Treachery
-					["sourceQuests"] = {26609},
+					["sourceQuests"] = { 26609 },	-- The Bloodsail Buccaneers
 				--	["objectID"] = 2083,	-- Bloodsail Correspondence
 					["coord"] = { 41.2, 61.3, 210 },
 					["icon"] = "Interface\\Icons\\inv_misc_scrollunrolled04",
 				}),
-				q(29251, {	-- Booty Bay's Interests
+				q(29153, {	-- Booty Bay's Interests (A)
+					["qg"] = 2496,	-- Baron Revilgaz
+					["coord"] = { 41.1, 73.0, 210 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29251, {	-- Booty Bay's Interests (H)
 					["qg"] = 2496,	-- Baron Revilgaz
 					["coord"] = { 41.1, 73.0, 210 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(26718, {	-- Breadcrumb to Badlands
+					["u"] = 1,
+				}),
 				q(26665, {	-- Call of Booty
+					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
+				--	["objectID"] = 204450,	-- Captain Stillwater's Charts
+					["coord"] = { 50.3, 91.5, 210 },
+					["icon"] = "Interface\\Icons\\Icon_TreasureMap",
 					["sourceQuests"] = {
 						26664,	-- Making Mutiny
 						26663,	-- Sinking From Within
@@ -153,7 +174,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
 				}),
-				q(613, {	-- Cracking Maury's Foot
+				q(613,   {	-- Cracking Maury's Foot
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -162,13 +183,13 @@ _.Zones =
 				}),
 				q(26826, {	-- Dask "The Flask" Gobfizzle
 					["sourceQuests"] = { 28702 },	-- Hero's Call: The Cape of Stranglethorn
-					["description"] = "This quest is only available if you DID NOT complete [The Source of the Corruption] and [The Mosh'Ogg Bounty] in Northern Stranglethorn.",
+					["description"] = "This quest is only available if you DID NOT complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44082,	-- Bronwyn Hewstrike
 				}),
 				q(26825, {	-- Dask "The Flask" Gobfizzle
 					["sourceQuests"] = { 28702 },	-- Hero's Call: The Cape of Stranglethorn
-					["description"] = "This quest is only available if you DID complete [The Source of the Corruption] and [The Mosh'Ogg Bounty] in Northern Stranglethorn.",
+					["description"] = "This quest is only available if you DID complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44082,	-- Bronwyn Hewstrike
 				}),
@@ -219,26 +240,35 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26550,	-- Backdoor Dealings
 				}),
-				q(628, {	-- Excelsior
+				q(628,   {	-- Excelsior
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(4109)),	-- Excelsior Boots
 					},
 				}),
-				q(618, {	-- Facing Negolash
+				q(618,   {	-- Facing Negolash
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
 					},
 				}),
-				q(8554, {	-- Facing Negolash
+				q(8554,  {	-- Facing Negolash
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
 					},
+				}),
+				q(38399, {	-- Fencing the Rose
+					["qg"] = 2542,	-- Catelyn the Blade
+					["coord"] = { 41.3, 74.1, 210 },
+					["isDaily"] = true,
+					["requireSkill"] = 202,	-- Engineering
+				}),
+				q(26839, {	-- Get Away From It All!
+					["u"] = 40,
 				}),
 				q(26624, {	-- Getting In With the Bloodsail
 					["sourceQuests"] = { 26612 },	-- Details of the Attack
@@ -258,7 +288,7 @@ _.Zones =
 				}),
 				q(26605, {	-- Grubby Little Paws
 					["sourceQuests"] = { 26604 },	-- Protecting Her Royal Highness Poobah
-					["coord"] = { 59.3, 79.2, 210 },
+					["coord"] = { 59.4, 79.0, 210 },
 					["qg"] = 2634,	-- Princess Poobah
 				}),
 				q(26452, {	-- Gurubashi Challenge
@@ -271,7 +301,7 @@ _.Zones =
 					["qg"] = 43099,	-- Stone Guard Towhide
 					["coord"] = { 46.2, 28.1, 210 },
 				}),
-				q(213, {	-- Hostile Takeover
+				q(213,   {	-- Hostile Takeover
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4121)),	-- Gemmed Gloves
@@ -316,7 +346,7 @@ _.Zones =
 					["races"] = { 9 },	-- Goblin
 					["isBreadcrumb"] = true,
 				}),
-				q(576, {	-- Keep An Eye Out
+				q(576,   {	-- Keep An Eye Out
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -369,9 +399,10 @@ _.Zones =
 					["sourceQuest"] = 29238,	-- Bad Supplies
 				}),
 				q(26664, {	-- Making Mutiny
-					["sourceQuests"] = { 26550 },	-- The Damsel's Luck
+					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
 				--	["objectID"] = 204450,	-- Captain Stillwater's Charts
 					["coord"] = { 50.3, 91.5, 210 },
+					["icon"] = "Interface\\Icons\\Icon_TreasureMap",
 					["g"] = {
 						i(61614),	-- Supposed Mace
 						i(61616),	-- Accusing Finger
@@ -384,7 +415,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 44083,	-- Linzi Hewstrike
 				}),
-				q(630, {	-- Message in a Bottle
+				q(630,   {	-- Message in a Bottle
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4118)),	-- Poobah's Nose Ring
@@ -396,6 +427,7 @@ _.Zones =
 					["coords"] = {
 						{ 50.2, 76.0, 210 },
 						{ 62.4, 46.7, 210 },
+						{ 57.0, 54.5, 210 },
 					},
 				}),
 				q(26494, {	-- Mixmaster Jasper
@@ -416,7 +448,7 @@ _.Zones =
 						i(131561),	-- Landlubber Helm
 					},
 				}),
-				q(573, {	-- Mok'thardin's Enchantment
+				q(573,   {	-- Mok'thardin's Enchantment
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -425,7 +457,7 @@ _.Zones =
 				}),
 				q(26606, {	-- Mukla's Demise
 					["sourceQuests"] = { 26605 },	-- Grubby Little Paws
-					["coord"] = { 59.3, 79.2, 210 },
+					["coord"] = { 59.4, 79.0, 210 },
 					["qg"] = 2634,	-- Princess Poobah
 					["g"] = {
 						i(61586),	-- Princess Poobah's Dress
@@ -491,7 +523,7 @@ _.Zones =
 				}),
 				q(26604, {	-- Protecting Her Royal Highness Poobah
 					["sourceQuests"] = { 26603 },	-- Message in a Bottle
-					["coord"] = { 59.3, 79.2, 210 },
+					["coord"] = { 59.4, 79.0, 210 },
 					["qg"] = 2634,	-- Princess Poobah
 				}),
 				q(26816, {	-- Recipe for Disaster (A)
@@ -530,9 +562,10 @@ _.Zones =
 					["qg"] = 2502,	-- "Shaky" Phillipe
 				}),
 				q(26679, {	-- Return to Revilgaz
-					["sourceQuests"] = {26678},
+					["sourceQuests"] = { 26678 },	-- Doublerum
 				--	["objectID"] = 204578,	-- Barrel of Doublerum
 					["coord"] = { 40.6, 73.2, 210 },
+					["icon"] = "Interface\\Icons\\achievement_faction_brewmaster",
 				}),
 				q(26593, {	-- Scaring Shaky -- aa
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
@@ -549,11 +582,12 @@ _.Zones =
 					["qg"] = 2496,	-- Baron Revilgaz
 				}),
 				q(26663, {	-- Sinking From Within
-					["sourceQuests"] = { 26550 },	-- The Damsel's Luck
+					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
 				--	["objectID"] = 204450,	-- Captain Stillwater's Charts
 					["coord"] = { 50.3, 91.5, 210 },
+					["icon"] = "Interface\\Icons\\Icon_TreasureMap",
 				}),
-				q(348, {	-- Stranglethorn Fever
+				q(348,   {	-- Stranglethorn Fever
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4113)),	-- Medicine Blanket
@@ -604,7 +638,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(608, {	-- The Bloodsail Buccaneers
+				q(608,   {	-- The Bloodsail Buccaneers
 					["u"] = 40,
 					["g"] = {
 						un(2,  i(4138)),	-- Blackwater Tunic
@@ -621,9 +655,10 @@ _.Zones =
 					["qg"] = 2490,	-- First Mate Crazz
 				}),
 				q(26662, {	-- The Brashtide Crew
-					["sourceQuests"] = { 26550 },	-- The Damsel's Luck
+					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
 				--	["objectID"] = 204450,	-- Captain Stillwater's Charts
 					["coord"] = { 50.3, 91.5, 210 },
+					["icon"] = "Interface\\Icons\\Icon_TreasureMap",
 				}),
 				q(26596, {	-- The Call of Kalimdor (A)
 					["isBreadcrumb"] = true,	-- leads to Dustwallow Marsh
@@ -638,14 +673,14 @@ _.Zones =
 					["description"] = "Swims in a circle near the dock.",
 					["isBreadcrumb"] = true,
 				}),
-				q(614, {	-- The Captain's Chest (A)
+				q(614,   {	-- The Captain's Chest (A)
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11469),	-- Bloodband Bracers NOTE: Awarded from new version of quest 26599
 					},
 				}),
-				q(8551, {	-- The Captain's Chest (H)
+				q(8551,  {	-- The Captain's Chest (H)
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -659,7 +694,7 @@ _.Zones =
 						i(11469),	-- Bloodband Bracers
 					},
 				}),
-				q(1041, {	-- The Caravan Road
+				q(1041,  {	-- The Caravan Road
 					["qg"] = 3945,	-- Caravaneer Ruzzgot
 					["coord"] = { 27.4, 74.2, 210 },
 					["sourceQuests"] = 1040,	-- The Passage to Booty Bay
@@ -667,7 +702,7 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
-				q(611, {	-- The Curse of the Tides
+				q(611,   {	-- The Curse of the Tides
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -686,6 +721,18 @@ _.Zones =
 					},
 					["coord"] = { 46.7, 95.2, 210 },
 					["qg"] = 2546, -- Fleet Master Firallon
+				}),
+				q(40849, {	-- The Dreadblades
+					["qg"] = 102120,	-- Fleet Admiral Tethys
+					["lvl"] = 98,
+					["coord"] = { 40.6, 69.2, 210 },
+					["classes"] = {
+						1,	-- Warrior
+						4,	-- Rogue
+					},
+				}),
+				q(26837, {	-- The Explorers' League Digsite
+					["u"] = 40,
 				}),
 				q(26697, {	-- The Final Voyage of the Brashtide
 					["sourceQuests"] = { 26695 },	-- Prepare for Takeoff
@@ -719,7 +766,7 @@ _.Zones =
 					["coord"] = { 54.1, 46.5, 210 },
 					["qg"] = 1449,	-- Witch Doctor Unbagwa
 				}),
-				q(2760, {	-- The Mithril Order
+				q(2760,  {	-- The Mithril Order
 					["u"] = 40,
 					["qg"] = 7794,	-- McGavan
 					["coord"] = { 43.8, 70.7, 210 },
@@ -781,7 +828,7 @@ _.Zones =
 					["coord"] = { 40.7, 73.8, 210 },
 					["qg"] = 2488,	-- Deeg
 				}),
-				q(600, {	-- Venture Company Mining
+				q(600,   {	-- Venture Company Mining
 					["u"] = 40,
 					["g"] = {
 						un(2, i(5253)),	-- Goblin Igniter
@@ -810,7 +857,7 @@ _.Zones =
 					["coord"] = { 43.8, 56.4, 210 },
 					["qg"] = 43504,	-- Yancey Grillsen
 				}),
-				q(621, {	-- Zanzil's Secret
+				q(621,   {	-- Zanzil's Secret
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -829,66 +876,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26494,	-- Mixmaster Jasper
 				}),
-
-			--	UNSORTED BELOW THIS POINT.
-				q(7838,  {	-- Arena Grandmaster
-					["sourceQuest"] = 7810,	-- Arena Master
-					["repeatable"] = true,
-					["qg"] = 14508,	-- Short John Mithril
-					["g"] = {
-						i(19024),	-- Arena Grand Master
-					},
-				}),
-				q(4621,  {	-- Avast Ye, Admiral!
-					["qg"] = 2546,	-- Fleet Master Firallon
-					["g"] = {
-						i(12185),	-- Bloodsail Admiral's Hat
-					},
-				}),
-				q(1036,  {	-- Avast Ye, Scallywag
-					["qg"] = 2545,	-- "Pretty Boy" Duncan
-				}),
-				
-				
-				
-				
-				
-				
---[[			
-				q(8194),	-- Apprentice Angler
-				q(29252, {	-- Booty Bay's Interests
-					["races"] = HORDE_ONLY,
-				}),
-				q(29153, {	-- Booty Bay's Interests
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29154, {	-- Booty Bay's Interests
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26718),	-- Breadcrumb to Badlands
-				q(9272),	-- Dressing the Part
-				q(38399),	-- Fencing the Rose
-				q(26839),	-- Get Away From It All!
-				q(26630),	-- Looks Like a Tauren Pirate to Me
-				q(11357, {	-- Masked Orphan Matron
-					["races"] = HORDE_ONLY,
-				}),
-				q(40849),	-- The Dreadblades
-				q(26837),	-- The Explorers' League Digsite //REMOVED
-				q(47709, {	-- The Great Gnomeregan Race
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(11970, {	-- The Master of Summer Lore
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(11971, {	-- The Spinner of Summer Tales
-					["races"] = HORDE_ONLY,
-				}),
-				q(26805, {	-- To the Cape! //Starts in Northern Stranglethorn
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(42758),	-- You're Gonna Need A Bigger Boat!
---]]
 			}),
 		}),
 	}),

@@ -252,17 +252,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(69251),	-- Lashtail Hatchling
 							},
 						}),
-						q(29153, {	-- Booty Bay's Interests
-							["qg"] = 2496,	-- Baron Revilgaz
-							["races"] = ALLIANCE_ONLY,
-						}),
 						q(29154, {	-- Booty Bay's Interests
 							["qg"] = 53151,			-- Overseer Revilgaz
 							["races"] = ALLIANCE_ONLY,
-						}),
-						q(29251, {	-- Booty Bay's Interests
-							["qg"] = 2496,			-- Baron Revilgaz
-							["races"] = HORDE_ONLY,
 						}),
 						q(29252, {	-- Booty Bay's Interests
 							["qg"] = 53151,			-- Overseer Revilgaz

@@ -13,6 +13,11 @@ _.WorldEvents =
 			i(19807, {	-- Speckled Tastyfish
 				["description"] = "You need 40. Fish from the pools! Good luck!",
 				["g"] = {
+					q(8194, {	-- Apprentice Angler
+						["qg"] = 15078,	-- Jang
+						["coord"] = { 41.4, 73.0, 210 },
+						["repeatable"] = true,
+					}),
 					q(8193, {	-- Grand Prize
 						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
 						["coord"] = { 41.4, 73.0, 210 },
