@@ -30,18 +30,18 @@ _.Secrets =
 			}),
 			o(293837, {	-- Step 2: First Ordinary Pebble
 				["questID"] = 52809,
+				["coord"] = { 37.5, 71.6, 646 },
 				["sourceQuest"] = 52819,	-- Step 1: Conspicuous Note
 				["description"] = "|cFFFFFFFFStep 2:|r Broken Shore",-- |cFFFFFFFFStep 2:|r Head to |cFFFFD700The Broken Shore|r, and interact with the pebble on the table in next to |cFFFFD700Drak'Thul|r. If you can't click the pebble, interact with |cFFFFD700Drak'Thul|r so he turns away from the table, or use an |cFFFFD700invsibility potion|r.",  -- Pebble txt "<An ordinary pebble, unremarkable in every way.>
-				["coord"] = { 37.5, 71.6, 646 },
 			}),
 			o(293838, {	-- Step 3: Second Ordinary Pebble
 				["questID"] = 52810,
-				["sourceQuest"] = 52809,
-				["description"] = "|cFFFFFFFFStep 3:|r Boralus",
 				["coords"] = {
 					{ 49.6, 40.0, 1161 },	-- Nets/Entrance
 					{ 44.7, 38.5, 1161 },	-- Ordinary Pebble
 				},
+				["sourceQuest"] = 52809,	-- Step 3: Second Ordinary Pebble
+				["description"] = "|cFFFFFFFFStep 3:|r Boralus",	
 			}),
 			o(293839, {	-- Step 4: Third Ordinary Pebble
 				["questID"] = 52818,
@@ -90,7 +90,7 @@ _.Secrets =
 					{ 54.5, 7.3, 875 },	-- Ordinary Pebble
 				},
 			}),
-			o(293844, { 	-- Step 9: Eighth Ordinary Pebble
+			o(293844, {	-- Step 9: Eighth Ordinary Pebble
 				["questID"] = 52813,
 				["sourceQuest"] = 52814,	-- Step 8: Seventh Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 9:|r Boralus",
@@ -117,7 +117,7 @@ _.Secrets =
 				["sourceQuest"] = 52812,	-- Step 10: Ningth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 11:|r Tiragarde Sound",
 			}),
-			o(303018, { 	-- Step 12: Eleventh Ordinary Pebble
+			o(303018, {	-- Step 12: Eleventh Ordinary Pebble
 				["questID"] = 53633,
 				["coords"] = {
 					{ 80.2, 19.2, 895 },	-- Cave Entrance
@@ -128,7 +128,7 @@ _.Secrets =
 			}),
 			o(303017, { 	-- Step 13: Twelfth Ordinary Pebble
 				["questID"] = 53634,
-				["sourceQuest"] =  53633,
+				["sourceQuest"] =  53633,	-- Step 12: Eleventh Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 13:|r Boralus",
 				["coords"] = {
 					{ 10.0, 82.7, 1161 },	-- Cave Entrance

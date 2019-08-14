@@ -308,68 +308,29 @@ _.GearSets =
 								},
 								["classes"] = { 7 },
 							}),
-							{	-- Vindictive Gladiator's Scaled Armor
-								["setID"] = 1121, 	-- Vindictive Gladiator's Scaled Armor
-								["classes"] = {
-									2,	-- Paladin
-								},
+							gs(1121, {	-- Vindictive Gladiator's Scaled Armor
 								["g"] = {
-									{	-- Vindictive Gladiator's Scaled Helm
-										["itemID"] = 135634,	-- Vindictive Gladiator's Scaled Helm
-									},
-									{	-- Vindictive Gladiator's Scaled Shoulders
-										["itemID"] = 135636,	-- Vindictive Gladiator's Scaled Shoulders
-									},
-									{	-- Vindictive Gladiator's Greatcloak of Faith
-										["itemID"] = 135688,	-- Vindictive Gladiator's Greatcloak of Faith
-									},
-									{	-- Vindictive Gladiator's Scaled Battlerobe
-										["itemID"] = 135631,	-- Vindictive Gladiator's Scaled Battlerobe
-									},
-									{	-- Vindictive Gladiator's Scaled Wristplates
-										["itemID"] = 135638,	-- Vindictive Gladiator's Scaled Wristplates
-									},
-									{	-- Vindictive Gladiator's Scaled Gauntlets
-										["itemID"] = 135633,	-- Vindictive Gladiator's Scaled Gauntlets
-									},
-									{	-- Vindictive Gladiator's Scaled Girdle
-										["itemID"] = 135637,	-- Vindictive Gladiator's Scaled Girdle
-									},
-									{	-- Vindictive Gladiator's Scaled Legguards
-										["itemID"] = 135635,	-- Vindictive Gladiator's Scaled Legguards
-									},
-									{	-- Vindictive Gladiator's Scaled Sabatons
-										["itemID"] = 135632,	-- Vindictive Gladiator's Scaled Sabatons
-									},
-									{	-- Fearless Gladiator's Scaled Helm
-										["itemID"] = 142603,	-- Fearless Gladiator's Scaled Helm
-									},
-									{	-- Fearless Gladiator's Scaled Shoulders
-										["itemID"] = 142605,	-- Fearless Gladiator's Scaled Shoulders
-									},
-									{	-- Fearless Gladiator's Greatcloak of Faith
-										["itemID"] = 142657,	-- Fearless Gladiator's Greatcloak of Faith
-									},
-									{	-- Fearless Gladiator's Scaled Battlerobe
-										["itemID"] = 142600,	-- Fearless Gladiator's Scaled Battlerobe
-									},
-									{	-- Fearless Gladiator's Scaled Wristplates
-										["itemID"] = 142607,	-- Fearless Gladiator's Scaled Wristplates
-									},
-									{	-- Fearless Gladiator's Scaled Gauntlets
-										["itemID"] = 142602,	-- Fearless Gladiator's Scaled Gauntlets
-									},
-									{	-- Fearless Gladiator's Scaled Girdle
-										["itemID"] = 142606,	-- Fearless Gladiator's Scaled Girdle
-									},
-									{	-- Fearless Gladiator's Scaled Legguards
-										["itemID"] = 142604,	-- Fearless Gladiator's Scaled Legguards
-									},
-									{	-- Fearless Gladiator's Scaled Sabatons
-										["itemID"] = 142601,	-- Fearless Gladiator's Scaled Sabatons
-									},
+									i(135634),	-- Vindictive Gladiator's Scaled Helm
+									i(135636),	-- Vindictive Gladiator's Scaled Shoulders
+									i(135688),	-- Vindictive Gladiator's Greatcloak of Faith
+									i(135631),	-- Vindictive Gladiator's Scaled Battlerobe
+									i(135638),	-- Vindictive Gladiator's Scaled Wristplates
+									i(135633),	-- Vindictive Gladiator's Scaled Gauntlets
+									i(135637),	-- Vindictive Gladiator's Scaled Girdle
+									i(135635),	-- Vindictive Gladiator's Scaled Legguards
+									i(135632),	-- Vindictive Gladiator's Scaled Sabatons
+									i(142603),	-- Fearless Gladiator's Scaled Helm
+									i(142605),	-- Fearless Gladiator's Scaled Shoulders
+									i(142657),	-- Fearless Gladiator's Greatcloak of Faith
+									i(142600),	-- Fearless Gladiator's Scaled Battlerobe
+									i(142607),	-- Fearless Gladiator's Scaled Wristplates
+									i(142602),	-- Fearless Gladiator's Scaled Gauntlets
+									i(142606),	-- Fearless Gladiator's Scaled Girdle
+									i(142604),	-- Fearless Gladiator's Scaled Legguards
+									i(142601),	-- Fearless Gladiator's Scaled Sabatons
 								},
-							},
+								["classes"] = { 2 },	-- Paladin
+							}),
 							gs(1133, {	-- Vindictive Gladiator's Plate Armor
 								["groups"] = {
 									i(135674),	-- Vindictive Gladiator's Plate Helm
@@ -383,7 +344,7 @@ _.GearSets =
 									i(135672),	-- Vindictive Gladiator's Plate Warboots
 									i(142643),	-- Fearless Gladiator's Plate Helm
 									i(142645),	-- Fearless Gladiator's Plate Shoulders
-									--i(136885),	-- Fearless Gladiator's Cloak of Battle
+									i(136885),	-- Fearless Gladiator's Cloak of Battle
 									i(142640),	-- Fearless Gladiator's Plate Chestpiece
 									i(142647),	-- Fearless Gladiator's Plate Wristplates
 									i(142642),	-- Fearless Gladiator's Plate Gauntlets
@@ -479,15 +440,15 @@ _.GearSets =
 							}),
 							gs(1127, {	-- Vindictive Gladiator's Leather Armor
 								["groups"] = {
-								i(136102),	-- Vindictive Gladiator's Leather Helm
-								i(136104),	-- Vindictive Gladiator's Leather Spaulders
-								i(136874),	-- Vindictive Gladiator's Shadowcape
-								i(136099),	-- Vindictive Gladiator's Leather Tunic
-								i(136106),	-- Vindictive Gladiator's Leather Wristguards
-								i(136101),	-- Vindictive Gladiator's Leather Gloves
-								i(136105),	-- Vindictive Gladiator's Leather Belt
-								i(136103),	-- Vindictive Gladiator's Leather Legguards
-								i(136100),	-- Vindictive Gladiator's Leather Slippers
+									i(136102),	-- Vindictive Gladiator's Leather Helm
+									i(136104),	-- Vindictive Gladiator's Leather Spaulders
+									i(136874),	-- Vindictive Gladiator's Shadowcape
+									i(136099),	-- Vindictive Gladiator's Leather Tunic
+									i(136106),	-- Vindictive Gladiator's Leather Wristguards
+									i(136101),	-- Vindictive Gladiator's Leather Gloves
+									i(136105),	-- Vindictive Gladiator's Leather Belt
+									i(136103),	-- Vindictive Gladiator's Leather Legguards
+									i(136100),	-- Vindictive Gladiator's Leather Slippers
 								},
 								["classes"] = { 4 },
 							}),

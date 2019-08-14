@@ -24,760 +24,304 @@ _.Zones =
 					-- LEGION Season 1 & 2
 								i(146159, {	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 5 },	-- Priest
-									["g"] = {
-										i(135980),	-- Vindictive Combatant's Satin Hood
-										i(135983),	-- Vindictive Combatant's Satin Mantle
-										i(136870),	-- Vindictive Combatant's Drape of Piety
-										i(135982),	-- Vindictive Combatant's Satin Tunic
-										i(135985),	-- Vindictive Combatant's Satin Bracers
-										i(135979),	-- Vindictive Combatant's Satin Gloves
-										i(135984),	-- Vindictive Combatant's Satin Cord
-										i(135981),	-- Vindictive Combatant's Satin Leggings
-										i(135978),	-- Vindictive Combatant's Satin Treads
-										i(142949),	-- Fearless Combatant's Satin Hood
-										i(142952),	-- Fearless Combatant's Satin Mantle
-										i(143295),	-- Fearless Combatant's Drape of Piety
-										i(142951),	-- Fearless Combatant's Satin Robe
-										i(142954),	-- Fearless Combatant's Satin Bracers
-										i(142948),	-- Fearless Combatant's Satin Gloves
-										i(142953),	-- Fearless Combatant's Satin Cord
-										i(142950),	-- Fearless Combatant's Satin Leggings
-										i(142947),	-- Fearless Combatant's Satin Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 5 },	-- Season 2
 									},
 								}),
 								i(146157, {	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 8 },	-- Mage
-									["g"] = {
-										i(135956),	-- Vindictive Combatant's Silk Cowl
-										i(135959),	-- Vindictive Combatant's Silk Amice
-										i(136019),	-- Vindictive Combatant's Silken Shawl
-										i(135958),	-- Vindictive Combatant's Silk Tunic
-										i(135961),	-- Vindictive Combatant's Silk Bracers
-										i(135955),	-- Vindictive Combatant's Silk Handguards
-										i(135960),	-- Vindictive Combatant's Silk Cord
-										i(135957),	-- Vindictive Combatant's Silk Trousers
-										i(135954),	-- Vindictive Combatant's Silk Treads
-										i(142925),	-- Fearless Combatant's Silk Cowl
-										i(142928),	-- Fearless Combatant's Silk Amice
-										i(142988),	-- Fearless Combatant's Silken Shawl
-										i(142927),	-- Fearless Combatant's Silk Robe
-										i(142930),	-- Fearless Combatant's Silk Bracers
-										i(142924),	-- Fearless Combatant's Silk Handguards
-										i(142929),	-- Fearless Combatant's Silk Cord
-										i(142926),	-- Fearless Combatant's Silk Trousers
-										i(142923),	-- Fearless Combatant's Silk Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 8 },	-- Season 2
 									},
 								}),
 								i(146161, {	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 9 },	-- Warlock
-									["g"] = {
-										i(136004),	-- Vindictive Combatant's Felweave Cowl
-										i(136007),	-- Vindictive Combatant's Felweave Amice
-										i(136882),	-- Vindictive Combatant's Felweave Cloak
-										i(136006),	-- Vindictive Combatant's Felweave Tunic
-										i(136009),	-- Vindictive Combatant's Felweave Bracers
-										i(136003),	-- Vindictive Combatant's Felweave Handguards
-										i(136008),	-- Vindictive Combatant's Felweave Cord
-										i(136005),	-- Vindictive Combatant's Felweave Trousers
-										i(136002),	-- Vindictive Combatant's Felweave Treads
-										i(142973),	-- Fearless Combatant's Felweave Cowl
-										i(142976),	-- Fearless Combatant's Felweave Amice
-										i(143307),	-- Fearless Combatant's Felweave Cloak
-										i(142975),	-- Fearless Combatant's Felweave Raiment
-										i(142978),	-- Fearless Combatant's Felweave Bracers
-										i(142972),	-- Fearless Combatant's Felweave Handguards
-										i(142977),	-- Fearless Combatant's Felweave Cord
-										i(142974),	-- Fearless Combatant's Felweave Trousers
-										i(142971),	-- Fearless Combatant's Felweave Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 9 },	-- Season 2
 									},
 								}),
 								i(146169, {	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 11 },	-- Druid
-									["g"] = {
-										i(135940),	-- Vindictive Combatant's Dragonhide Helm
-										i(135943),	-- Vindictive Combatant's Dragonhide Spaulders
-										i(136022),	-- Vindictive Combatant's Dragonhide Cloak
-										i(135942),	-- Vindictive Combatant's Dragonhide Tunic
-										i(135945),	-- Vindictive Combatant's Dragonhide Wristguards
-										i(135939),	-- Vindictive Combatant's Dragonhide Gloves
-										i(135944),	-- Vindictive Combatant's Dragonhide Belt
-										i(135941),	-- Vindictive Combatant's Dragonhide Legguards
-										i(135938),	-- Vindictive Combatant's Dragonhide Moccasins
-										i(142909),	-- Fearless Combatant's Dragonhide Helm
-										i(142912),	-- Fearless Combatant's Dragonhide Spaulders
-										i(142991),	-- Fearless Combatant's Dragonhide Cloak
-										i(142911),	-- Fearless Combatant's Dragonhide Tunic
-										i(142914),	-- Fearless Combatant's Dragonhide Wristguards
-										i(142908),	-- Fearless Combatant's Dragonhide Gloves
-										i(142913),	-- Fearless Combatant's Dragonhide Belt
-										i(142910),	-- Fearless Combatant's Dragonhide Legguards
-										i(142907),	-- Fearless Combatant's Dragonhide Moccasins
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 11 },	-- Season 2
 									},
 								}),
 								i(146173, {	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 4 },	-- Rogue
-									["g"] = {
-										i(135989),	-- Vindictive Combatant's Leather Helm
-										i(135991),	-- Vindictive Combatant's Leather Spaulders
-										i(136871),	-- Vindictive Combatant's Shadowcape
-										i(135986),	-- Vindictive Combatant's Leather Tunic
-										i(135993),	-- Vindictive Combatant's Leather Wristguards
-										i(135988),	-- Vindictive Combatant's Leather Gloves
-										i(135992),	-- Vindictive Combatant's Leather Belt
-										i(135990),	-- Vindictive Combatant's Leather Legguards
-										i(135987),	-- Vindictive Combatant's Leather Slippers
-										i(142958),	-- Fearless Combatant's Leather Helm
-										i(142960),	-- Fearless Combatant's Leather Spaulders
-										i(143296),	-- Fearless Combatant's Shadowcape
-										i(142955),	-- Fearless Combatant's Leather Tunic
-										i(142962),	-- Fearless Combatant's Leather Wristguards
-										i(142957),	-- Fearless Combatant's Leather Gloves
-										i(142961),	-- Fearless Combatant's Leather Belt
-										i(142959),	-- Fearless Combatant's Leather Legguards
-										i(142956),	-- Fearless Combatant's Leather Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 4 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 4 },	-- Season 2
 									},
 								}),
 								i(146171, {	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 10 },	-- Monk
-									["g"] = {
-										i(135964),	-- Vindictive Combatant's Ironskin Helm
-										i(135966),	-- Vindictive Combatant's Ironskin Spaulders
-										i(136023),	-- Vindictive Combatant's Ironskin Cloak
-										i(135967),	-- Vindictive Combatant's Ironskin Tunic
-										i(135969),	-- Vindictive Combatant's Ironskin Wristguards
-										i(135963),	-- Vindictive Combatant's Ironskin Gloves
-										i(135968),	-- Vindictive Combatant's Ironskin Belt
-										i(135965),	-- Vindictive Combatant's Ironskin Legguards
-										i(135962),	-- Vindictive Combatant's Ironskin Slippers
-										i(142933),	-- Fearless Combatant's Ironskin Helm
-										i(142935),	-- Fearless Combatant's Ironskin Spaulders
-										i(142992),	-- Fearless Combatant's Ironskin Cloak
-										i(142936),	-- Fearless Combatant's Ironskin Tunic
-										i(142938),	-- Fearless Combatant's Ironskin Wristguards
-										i(142932),	-- Fearless Combatant's Ironskin Gloves
-										i(142937),	-- Fearless Combatant's Ironskin Belt
-										i(142934),	-- Fearless Combatant's Ironskin Legguards
-										i(142931),	-- Fearless Combatant's Ironskin Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 10 },	-- Season 2
 									},
 								}),
 								i(146265, {	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 12 },	-- Demon Hunter
-									["g"] = {
-										i(136305),	-- Vindictive Combatant's Felskin Helm
-										i(136308),	-- Vindictive Combatant's Felskin Spaulders
-										i(136894),	-- Vindictive Combatant's Demonthread Cloak
-										i(136307),	-- Vindictive Combatant's Felskin Tunic
-										i(136310),	-- Vindictive Combatant's Felskin Wristguards
-										i(136304),	-- Vindictive Combatant's Felskin Gloves
-										i(136309),	-- Vindictive Combatant's Felskin Belt
-										i(136306),	-- Vindictive Combatant's Felskin Legguards
-										i(136303),	-- Vindictive Combatant's Felskin Boots
-										i(143264),	-- Fearless Combatant's Felskin Helm
-										i(143267),	-- Fearless Combatant's Felskin Spaulders
-										i(143319),	-- Fearless Combatant's Demonthread Cloak
-										i(143266),	-- Fearless Combatant's Felskin Tunic
-										i(143269),	-- Fearless Combatant's Felskin Wristguards
-										i(143263),	-- Fearless Combatant's Felskin Gloves
-										i(143268),	-- Fearless Combatant's Felskin Belt
-										i(143265),	-- Fearless Combatant's Felskin Legguards
-										i(143262),	-- Fearless Combatant's Felskin Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 12 },	-- Season 2
 									},
 								}),
 								i(146155, {	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["g"] = {
-										i(135949),	-- Vindictive Combatant's Chain Helm
-										i(135951),	-- Vindictive Combatant's Chain Spaulders
-										i(136026),	-- Vindictive Combatant's Drape of the Tracker
-										i(135946),	-- Vindictive Combatant's Chain Armor
-										i(135953),	-- Vindictive Combatant's Chain Armband
-										i(135948),	-- Vindictive Combatant's Chain Gauntlets
-										i(135952),	-- Vindictive Combatant's Chain Clasp
-										i(135950),	-- Vindictive Combatant's Chain Leggings
-										i(135947),	-- Vindictive Combatant's Chain Treads
-										i(142918),	-- Fearless Combatant's Chain Helm
-										i(142920),	-- Fearless Combatant's Chain Spaulders
-										i(142995),	-- Fearless Combatant's Drape of the Tracker
-										i(142915),	-- Fearless Combatant's Chain Armor
-										i(142922),	-- Fearless Combatant's Chain Armband
-										i(142917),	-- Fearless Combatant's Chain Gauntlets
-										i(142921),	-- Fearless Combatant's Chain Clasp
-										i(142919),	-- Fearless Combatant's Chain Leggings
-										i(142916),	-- Fearless Combatant's Chain Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 3 },	-- Season 2
 									},
 								}),
 								i(146153, {	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 7 },	-- Shaman
-									["g"] = {
-										i(135997),	-- Vindictive Combatant's Ringmail Helm
-										i(135999),	-- Vindictive Combatant's Ringmail Spaulders
-										i(136872),	-- Vindictive Combatant's Totemic Cloak
-										i(135994),	-- Vindictive Combatant's Ringmail Armor
-										i(136001),	-- Vindictive Combatant's Ringmail Armband
-										i(135996),	-- Vindictive Combatant's Ringmail Gauntlets
-										i(136000),	-- Vindictive Combatant's Ringmail Clasp
-										i(135998),	-- Vindictive Combatant's Ringmail Kilt
-										i(135995),	-- Vindictive Combatant's Ringmail Boots
-										i(142966),	-- Fearless Combatant's Ringmail Helm
-										i(142968),	-- Fearless Combatant's Ringmail Spaulders
-										i(143297),	-- Fearless Combatant's Totemic Cloak
-										i(142963),	-- Fearless Combatant's Ringmail Armor
-										i(142970),	-- Fearless Combatant's Ringmail Armband
-										i(142965),	-- Fearless Combatant's Ringmail Gauntlets
-										i(142969),	-- Fearless Combatant's Ringmail Clasp
-										i(142967),	-- Fearless Combatant's Ringmail Leggings
-										i(142964),	-- Fearless Combatant's Ringmail Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 7 },	-- Season 2
 									},
 								}),
 								i(146167, {	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 2 },	-- Pally
-									["g"] = {
-										i(135973),	-- Vindictive Combatant's Scaled Helm
-										i(135975),	-- Vindictive Combatant's Scaled Shoulders
-										i(136027),	-- Vindictive Combatant's Greatcloak of Faith
-										i(135970),	-- Vindictive Combatant's Scaled Chestpiece
-										i(135977),	-- Vindictive Combatant's Scaled Wristplates
-										i(135972),	-- Vindictive Combatant's Scaled Gauntlets
-										i(135976),	-- Vindictive Combatant's Scaled Girdle
-										i(135974),	-- Vindictive Combatant's Scaled Legguards
-										i(135971),	-- Vindictive Combatant's Scaled Sabatons
-										i(142942),	-- Fearless Combatant's Scaled Helm
-										i(142944),	-- Fearless Combatant's Scaled Shoulders
-										i(142996),	-- Fearless Combatant's Greatcloak of Faith
-										i(142939),	-- Fearless Combatant's Scaled Chestpiece
-										i(142946),	-- Fearless Combatant's Scaled Wristplates
-										i(142941),	-- Fearless Combatant's Scaled Gauntlets
-										i(142945),	-- Fearless Combatant's Scaled Girdle
-										i(142943),	-- Fearless Combatant's Scaled Legguards
-										i(142940),	-- Fearless Combatant's Scaled Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 2 },	-- Season 2
 									},
 								}),
 								i(146163, {	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 1 },	-- Warrior
-									["g"] = {
-										i(136013),	-- Vindictive Combatant's Plate Helm
-										i(136015),	-- Vindictive Combatant's Plate Shoulders
-										i(136888),	-- Vindictive Combatant's Cloak of Battle
-										i(136010),	-- Vindictive Combatant's Plate Chestpiece
-										i(136017),	-- Vindictive Combatant's Plate Wristplates
-										i(136012),	-- Vindictive Combatant's Plate Gauntlets
-										i(136016),	-- Vindictive Combatant's Plate Girdle
-										i(136014),	-- Vindictive Combatant's Plate Legguards
-										i(136011),	-- Vindictive Combatant's Plate Warboots
-										i(142982),	-- Fearless Combatant's Plate Helm
-										i(142984),	-- Fearless Combatant's Plate Shoulders
-										i(143313),	-- Fearless Combatant's Cloak of Battle
-										i(142979),	-- Fearless Combatant's Plate Chestpiece
-										i(142986),	-- Fearless Combatant's Plate Wristplates
-										i(142981),	-- Fearless Combatant's Plate Gauntlets
-										i(142985),	-- Fearless Combatant's Plate Girdle
-										i(142983),	-- Fearless Combatant's Plate Legguards
-										i(142980),	-- Fearless Combatant's Plate Warboots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 1 },	-- Season 2
 									},
 								}),
 								i(146165, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19 & 5/22/19]
-									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 6 },	-- Death Knight
-									["g"] = {
-										i(135933),	-- Vindictive Combatant's Dreadplate Helm
-										i(135935),	-- Vindictive Combatant's Dreadplate Shoulders
-										i(136018),	-- Vindictive Combatant's Dreadcloak
-										i(135930),	-- Vindictive Combatant's Dreadplate Chestpiece
-										i(135937),	-- Vindictive Combatant's Dreadplate Wristplates
-										i(135932),	-- Vindictive Combatant's Dreadplate Gauntlets
-										i(135936),	-- Vindictive Combatant's Dreadplate Girdle
-										i(135934),	-- Vindictive Combatant's Dreadplate Legguards
-										i(135931),	-- Vindictive Combatant's Dreadplate Sabatons
-										i(142902),	-- Fearless Combatant's Dreadplate Helm
-										i(142904),	-- Fearless Combatant's Dreadplate Shoulders
-										i(142987),	-- Fearless Combatant's Dreadcloak
-										i(142899),	-- Fearless Combatant's Dreadplate Chestpiece
-										i(142906),	-- Fearless Combatant's Dreadplate Wristplates
-										i(142901),	-- Fearless Combatant's Dreadplate Gauntlets
-										i(142905),	-- Fearless Combatant's Dreadplate Girdle
-										i(142903),	-- Fearless Combatant's Dreadplate Legguards
-										i(142900),	-- Fearless Combatant's Dreadplate Sabatons
+									["description"] = "You will need to log out and back in to register Season 3 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 6 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 6 },	-- Season 2
 									},
 								}),
 					-- LEGION Season 3 & 4
 								i(147687, {	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 5 },	-- Priest
-									["g"] = {
-										i(145173),	-- Cruel Combatant's Satin Hood
-										i(145179),	-- Cruel Combatant's Satin Mantle
-										i(145041),	-- Cruel Combatant's Drape of Piety
-										i(145177),	-- Cruel Combatant's Satin Robe
-										i(145183),	-- Cruel Combatant's Satin Bracers
-										i(145171),	-- Cruel Combatant's Satin Gloves
-										i(145181),	-- Cruel Combatant's Satin Cord
-										i(145175),	-- Cruel Combatant's Satin Leggings
-										i(145169),	-- Cruel Combatant's Satin Treads
-										i(146015),	-- Ferocious Combatant's Satin Hood
-										i(146021),	-- Ferocious Combatant's Satin Mantle
-										i(145883),	-- Ferocious Combatant's Drape of Piety
-										i(146019),	-- Ferocious Combatant's Satin Robe
-										i(146025),	-- Ferocious Combatant's Satin Bracers
-										i(146013),	-- Ferocious Combatant's Satin Gloves
-										i(146023),	-- Ferocious Combatant's Satin Cord
-										i(146017),	-- Ferocious Combatant's Satin Leggings
-										i(146011),	-- Ferocious Combatant's Satin Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 5 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 5 },	-- Season 4
 									},
 								}),
 								i(147695, {	-- Ensemble: Cruel Combatant's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 8 },	-- Mage
-									["g"] = {
-										i(145119),	-- Cruel Combatant's Silk Cowl
-										i(145125),	-- Cruel Combatant's Silk Amice
-										i(145035),	-- Cruel Combatant's Silken Shawl
-										i(145123),	-- Cruel Combatant's Silk Robe
-										i(145129),	-- Cruel Combatant's Silk Bracers
-										i(145117),	-- Cruel Combatant's Silk Handguards
-										i(145127),	-- Cruel Combatant's Silk Cord
-										i(145121),	-- Cruel Combatant's Silk Trousers
-										i(145115),	-- Cruel Combatant's Silk Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 8 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 8 },	-- Season 4
 									},
 								}),
 								i(147681, {	-- Ensemble: Cruel Combatant's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 9 },	-- Warlock
-									["g"] = {
-										i(145245),	-- Cruel Combatant's Felweave Cowl
-										i(145251),	-- Cruel Combatant's Felweave Amice
-										i(145047),	-- Cruel Combatant's Felweave Cloak
-										i(145249),	-- Cruel Combatant's Felweave Raiment
-										i(145255),	-- Cruel Combatant's Felweave Bracers
-										i(145243),	-- Cruel Combatant's Felweave Handguards
-										i(145253),	-- Cruel Combatant's Felweave Cord
-										i(145247),	-- Cruel Combatant's Felweave Trousers
-										i(145241),	-- Cruel Combatant's Felweave Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 9 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 9 },	-- Season 4
 									},
 								}),
 								i(147676, {	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 11 },	-- Druid
-									["g"] = {
-										i(145089),	-- Cruel Combatant's Dragonhide Helm
-										i(145093),	-- Cruel Combatant's Dragonhide Spaulders
-										i(145031),	-- Cruel Combatant's Dragonhide Cloak
-										i(145083),	-- Cruel Combatant's Dragonhide Tunic
-										i(145097),	-- Cruel Combatant's Dragonhide Wristguards
-										i(145087),	-- Cruel Combatant's Dragonhide Gloves
-										i(145095),	-- Cruel Combatant's Dragonhide Belt
-										i(145091),	-- Cruel Combatant's Dragonhide Legguards
-										i(145085),	-- Cruel Combatant's Dragonhide Moccasins
-										i(145931),	-- Ferocious Combatant's Dragonhide Helm
-										i(145935),	-- Ferocious Combatant's Dragonhide Spaulders
-										i(145873),	-- Ferocious Combatant's Dragonhide Cloak
-										i(145925),	-- Ferocious Combatant's Dragonhide Tunic
-										i(145939),	-- Ferocious Combatant's Dragonhide Wristguards
-										i(145929),	-- Ferocious Combatant's Dragonhide Gloves
-										i(145937),	-- Ferocious Combatant's Dragonhide Belt
-										i(145933),	-- Ferocious Combatant's Dragonhide Legguards
-										i(145927),	-- Ferocious Combatant's Dragonhide Moccasins
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 11 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 11 },	-- Season 4
 									},
 								}),
 								i(147686, {	-- Ensemble: Cruel Combatant's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 4 },	-- Rogue
-									["g"] = {
-										i(145197),	-- Cruel Combatant's Leather Helm
-										i(145201),	-- Cruel Combatant's Leather Spaulders
-										i(145043),	-- Cruel Combatant's Shadowcape
-										i(145191),	-- Cruel Combatant's Leather Tunic
-										i(145205),	-- Cruel Combatant's Leather Wristguards
-										i(145195),	-- Cruel Combatant's Leather Gloves
-										i(145203),	-- Cruel Combatant's Leather Belt
-										i(145199),	-- Cruel Combatant's Leather Legguards
-										i(145193),	-- Cruel Combatant's Leather Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 4 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 4 },	-- Season 4
 									},
 								}),
 								i(147683, {	-- Ensemble: Cruel Combatant's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 10 },	-- Monk
-									["g"] = {
-										i(145135),	-- Cruel Combatant's Ironskin Helm
-										i(145139),	-- Cruel Combatant's Ironskin Spaulders
-										i(145037),	-- Cruel Combatant's Ironskin Cloak
-										i(145141),	-- Cruel Combatant's Ironskin Tunic
-										i(145145),	-- Cruel Combatant's Ironskin Wristguards
-										i(145133),	-- Cruel Combatant's Ironskin Gloves
-										i(145143),	-- Cruel Combatant's Ironskin Belt
-										i(145137),	-- Cruel Combatant's Ironskin Legguards
-										i(145131),	-- Cruel Combatant's Ironskin Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 10 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 10 },	-- Season 4
 									},
 								}),
 								i(147679, {	-- Ensemble: Cruel Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 12 },	-- Demon Hunter
-									["g"] = {
-										i(145073),	-- Cruel Combatant's Felskin Helm
-										i(145077),	-- Cruel Combatant's Felskin Spaulders
-										i(145029),	-- Cruel Combatant's Demonthread Cloak
-										i(145067),	-- Cruel Combatant's Felskin Tunic
-										i(145081),	-- Cruel Combatant's Felskin Wristguards
-										i(145071),	-- Cruel Combatant's Felskin Gloves
-										i(145079),	-- Cruel Combatant's Felskin Belt
-										i(145075),	-- Cruel Combatant's Felskin Legguards
-										i(145069),	-- Cruel Combatant's Felskin Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 12 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 12 },	-- Season 4
 									},
 								}),
 								i(147690, {	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["g"] = {
-										i(145105),	-- Cruel Combatant's Chain Helm
-										i(145109),	-- Cruel Combatant's Chain Spaulders
-										i(145033),	-- Cruel Combatant's Drape of the Tracker
-										i(145099),	-- Cruel Combatant's Chain Armor
-										i(145113),	-- Cruel Combatant's Chain Armband
-										i(145103),	-- Cruel Combatant's Chain Gauntlets
-										i(145111),	-- Cruel Combatant's Chain Clasp
-										i(145107),	-- Cruel Combatant's Chain Leggings
-										i(145101),	-- Cruel Combatant's Chain Treads
-										i(145947),	-- Ferocious Combatant's Chain Helm
-										i(145951),	-- Ferocious Combatant's Chain Spaulders
-										i(145875),	-- Ferocious Combatant's Drape of the Tracker
-										i(145941),	-- Ferocious Combatant's Chain Armor
-										i(145955),	-- Ferocious Combatant's Chain Armband
-										i(145945),	-- Ferocious Combatant's Chain Gauntlets
-										i(145953),	-- Ferocious Combatant's Chain Clasp
-										i(145949),	-- Ferocious Combatant's Chain Leggings
-										i(145943),	-- Ferocious Combatant's Chain Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 3 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 3 },	-- Season 4
 									},
 								}),
 								i(147673, {	-- Ensemble: Cruel Combatant's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 7 },	-- Shaman
-									["g"] = {
-										i(145213),	-- Cruel Combatant's Ringmail Helm
-										i(145217),	-- Cruel Combatant's Ringmail Spaulders
-										i(145045),	-- Cruel Combatant's Totemic Cloak
-										i(145207),	-- Cruel Combatant's Ringmail Armor
-										i(145221),	-- Cruel Combatant's Ringmail Armband
-										i(145211),	-- Cruel Combatant's Ringmail Gauntlets
-										i(145219),	-- Cruel Combatant's Ringmail Clasp
-										i(145215),	-- Cruel Combatant's Ringmail Leggings
-										i(145209),	-- Cruel Combatant's Ringmail Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 7 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 7 },	-- Season 4
 									},
 								}),
 								i(147694, {	-- Ensemble: Cruel Combatant's Scaled Armor [Paladin - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 2 },	-- Paladin
-									["g"] = {
-										i(145159),	-- Cruel Combatant's Scaled Helm
-										i(145163),	-- Cruel Combatant's Scaled Shoulders
-										i(145039),	-- Cruel Combatant's Greatcloak of Faith
-										i(145153),	-- Cruel Combatant's Scaled Chestpiece
-										i(145167),	-- Cruel Combatant's Scaled Wristplates
-										i(145157),	-- Cruel Combatant's Scaled Gauntlets
-										i(145165),	-- Cruel Combatant's Scaled Girdle
-										i(145161),	-- Cruel Combatant's Scaled Legguards
-										i(145155),	-- Cruel Combatant's Scaled Sabatons
-										i(146001),	-- Ferocious Combatant's Scaled Helm
-										i(146005),	-- Ferocious Combatant's Scaled Shoulders
-										i(145881),	-- Ferocious Combatant's Greatcloak of Faith
-										i(145995),	-- Ferocious Combatant's Scaled Chestpiece
-										i(146009),	-- Ferocious Combatant's Scaled Wristplates
-										i(145999),	-- Ferocious Combatant's Scaled Gauntlets
-										i(146007),	-- Ferocious Combatant's Scaled Girdle
-										i(146003),	-- Ferocious Combatant's Scaled Legguards
-										i(145997),	-- Ferocious Combatant's Scaled Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 2 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 2 },	-- Season 4
 									},
 								}),
 								i(147691, {	-- Ensemble: Cruel Combatant's Plate Armor [Warrior - 5/10/19]
-									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 1 },	-- Warrior
-									["g"] = {
-										i(145263),	-- Cruel Combatant's Plate Helm
-										i(145267),	-- Cruel Combatant's Plate Shoulders
-										i(145049),	-- Cruel Combatant's Cloak of Battle
-										i(145257),	-- Cruel Combatant's Plate Chestpiece
-										i(145271),	-- Cruel Combatant's Plate Wristplates
-										i(145261),	-- Cruel Combatant's Plate Gauntlets
-										i(145269),	-- Cruel Combatant's Plate Girdle
-										i(145265),	-- Cruel Combatant's Plate Legguards
-										i(145259),	-- Cruel Combatant's Plate Warboots
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 1 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 1 },	-- Season 4
 									},
 								}),
 								i(147678, {	-- Ensemble: Cruel Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 6 },	-- Death Knight
-									["g"] = {
-										i(145057),	-- Cruel Combatant's Dreadplate Helm
-										i(145061),	-- Cruel Combatant's Dreadplate Shoulders
-										i(145027),	-- Cruel Combatant's Dreadcloak
-										i(145051),	-- Cruel Combatant's Dreadplate Chestpiece
-										i(145065),	-- Cruel Combatant's Dreadplate Wristplates
-										i(145055),	-- Cruel Combatant's Dreadplate Gauntlets
-										i(145063),	-- Cruel Combatant's Dreadplate Girdle
-										i(145059),	-- Cruel Combatant's Dreadplate Legguards
-										i(145053),	-- Cruel Combatant's Dreadplate Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 6 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 6 },	-- Season 4
 									},
 								}),
 					-- LEGION Season 5, 6, 7
 								i(150262, {	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 5 },	-- Priest
-									["g"] = {
-										i(149653),	-- Fierce Combatant's Satin Hood
-										i(149659),	-- Fierce Combatant's Satin Mantle
-										i(149520),	-- Fierce Combatant's Drape of Piety
-										i(149657),	-- Fierce Combatant's Satin Robe
-										i(149663),	-- Fierce Combatant's Satin Bracers
-										i(149651),	-- Fierce Combatant's Satin Gloves
-										i(149661),	-- Fierce Combatant's Satin Cord
-										i(149655),	-- Fierce Combatant's Satin Leggings
-										i(149649),	-- Fierce Combatant's Satin Treads
-										i(149903),	-- Dominant Combatant's Satin Hood
-										i(149909),	-- Dominant Combatant's Satin Mantle
-										i(149771),	-- Dominant Combatant's Drape of Piety
-										i(149907),	-- Dominant Combatant's Satin Robe
-										i(149913),	-- Dominant Combatant's Satin Bracers
-										i(149901),	-- Dominant Combatant's Satin Gloves
-										i(149911),	-- Dominant Combatant's Satin Cord
-										i(149905),	-- Dominant Combatant's Satin Leggings
-										i(149899),	-- Dominant Combatant's Satin Treads
-										i(150149),	-- Demonic Combatant's Satin Hood
-										i(150155),	-- Demonic Combatant's Satin Mantle
-										i(150017),	-- Demonic Combatant's Drape of Piety
-										i(150153),	-- Demonic Combatant's Satin Robe
-										i(150159),	-- Demonic Combatant's Satin Bracers
-										i(150147),	-- Demonic Combatant's Satin Gloves
-										i(150157),	-- Demonic Combatant's Satin Cord
-										i(150151),	-- Demonic Combatant's Satin Leggings
-										i(150145),	-- Demonic Combatant's Satin Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 5 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 5 },	-- Season 7
 									},
 								}),
 								i(150270, {	-- Ensemble: Fierce Combatant's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 8 },	-- Mage
-									["g"] = {
-										i(149599),	-- Fierce Combatant's Silk Cowl
-										i(149605),	-- Fierce Combatant's Silk Amice
-										i(149514),	-- Fierce Combatant's Silken Shawl
-										i(149603),	-- Fierce Combatant's Silk Robe
-										i(149609),	-- Fierce Combatant's Silk Bracers
-										i(149597),	-- Fierce Combatant's Silk Handguards
-										i(149607),	-- Fierce Combatant's Silk Cord
-										i(149601),	-- Fierce Combatant's Silk Trousers
-										i(149595),	-- Fierce Combatant's Silk Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 8 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 8 },	-- Season 7
 									},
 								}),
 								i(150256, {	-- Ensemble: Fierce Combatant's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 9 },	-- Warlock
-									["g"] = {
-										i(149725),	-- Fierce Combatant's Felweave Cowl
-										i(149731),	-- Fierce Combatant's Felweave Amice
-										i(149526),	-- Fierce Combatant's Felweave Cloak
-										i(149729),	-- Fierce Combatant's Felweave Raiment
-										i(149735),	-- Fierce Combatant's Felweave Bracers
-										i(149723),	-- Fierce Combatant's Felweave Handguards
-										i(149733),	-- Fierce Combatant's Felweave Cord
-										i(149727),	-- Fierce Combatant's Felweave Trousers
-										i(149721),	-- Fierce Combatant's Felweave Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 9 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 9 },	-- Season 7
 									},
 								}),
 								i(150251, {	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 11 },	-- Druid
-									["g"] = {
-										i(149568),	-- Fierce Combatant's Dragonhide Helm
-										i(149572),	-- Fierce Combatant's Dragonhide Spaulders
-										i(149510),	-- Fierce Combatant's Dragonhide Cloak
-										i(149562),	-- Fierce Combatant's Dragonhide Tunic
-										i(149577),	-- Fierce Combatant's Dragonhide Wristguards
-										i(149566),	-- Fierce Combatant's Dragonhide Gloves
-										i(149575),	-- Fierce Combatant's Dragonhide Belt
-										i(149570),	-- Fierce Combatant's Dragonhide Legguards
-										i(149564),	-- Fierce Combatant's Dragonhide Moccasins
-										i(149819),	-- Dominant Combatant's Dragonhide Helm
-										i(149823),	-- Dominant Combatant's Dragonhide Spaulders
-										i(149761),	-- Dominant Combatant's Dragonhide Cloak
-										i(149813),	-- Dominant Combatant's Dragonhide Tunic
-										i(149827),	-- Dominant Combatant's Dragonhide Wristguards
-										i(149817),	-- Dominant Combatant's Dragonhide Gloves
-										i(149825),	-- Dominant Combatant's Dragonhide Belt
-										i(149821),	-- Dominant Combatant's Dragonhide Legguards
-										i(149815),	-- Dominant Combatant's Dragonhide Moccasins
-										i(148957),	-- Demonic Gladiator's Dragonhide Helm
-										i(148961),	-- Demonic Gladiator's Dragonhide Spaulders
-										i(148899),	-- Demonic Gladiator's Dragonhide Cloak
-										i(148951),	-- Demonic Gladiator's Dragonhide Vest
-										i(148965),	-- Demonic Gladiator's Dragonhide Wristguards
-										i(148955),	-- Demonic Gladiator's Dragonhide Gloves
-										i(148963),	-- Demonic Gladiator's Dragonhide Belt
-										i(148959),	-- Demonic Gladiator's Dragonhide Legguards
-										i(148953),	-- Demonic Gladiator's Dragonhide Moccasins
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 11 },	-- Season 7
 									},
 								}),
 								i(150261, {	-- Ensemble: Fierce Combatant's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 4 },	-- Rogue
-									["g"] = {
-										i(149677),	-- Fierce Combatant's Leather Helm
-										i(149681),	-- Fierce Combatant's Leather Spaulders
-										i(149522),	-- Fierce Combatant's Shadowcape
-										i(149671),	-- Fierce Combatant's Leather Tunic
-										i(149685),	-- Fierce Combatant's Leather Wristguards
-										i(149675),	-- Fierce Combatant's Leather Gloves
-										i(149683),	-- Fierce Combatant's Leather Belt
-										i(149679),	-- Fierce Combatant's Leather Legguards
-										i(149673),	-- Fierce Combatant's Leather Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 4 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 4 },	-- Season 7
 									},
 								}),
 								i(150258, {	-- Ensemble: Fierce Combatant's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 10 },	-- Monk
-									["g"] = {
-										i(149615),	-- Fierce Combatant's Ironskin Helm
-										i(149619),	-- Fierce Combatant's Ironskin Spaulders
-										i(149516),	-- Fierce Combatant's Ironskin Cloak
-										i(149621),	-- Fierce Combatant's Ironskin Tunic
-										i(149625),	-- Fierce Combatant's Ironskin Wristguards
-										i(149613),	-- Fierce Combatant's Ironskin Gloves
-										i(149623),	-- Fierce Combatant's Ironskin Belt
-										i(149617),	-- Fierce Combatant's Ironskin Legguards
-										i(149611),	-- Fierce Combatant's Ironskin Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 10 },	-- Season 7
 									},
 								}),
 								i(150254, {	-- Ensemble: Fierce Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 12 },	-- Demon Hunter
-									["g"] = {
-										i(149552),	-- Fierce Combatant's Felskin Helm
-										i(149556),	-- Fierce Combatant's Felskin Spaulders
-										i(149508),	-- Fierce Combatant's Demonthread Cloak
-										i(149546),	-- Fierce Combatant's Felskin Tunic
-										i(149560),	-- Fierce Combatant's Felskin Wristguards
-										i(149550),	-- Fierce Combatant's Felskin Gloves
-										i(149558),	-- Fierce Combatant's Felskin Belt
-										i(149554),	-- Fierce Combatant's Felskin Legguards
-										i(149548),	-- Fierce Combatant's Felskin Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 12 },	-- Season 7
 									},
 								}),
 								i(150265, {	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["g"] = {
-										i(149585),	-- Fierce Combatant's Chain Helm
-										i(149589),	-- Fierce Combatant's Chain Spaulders
-										i(149512),	-- Fierce Combatant's Drape of the Tracker
-										i(149579),	-- Fierce Combatant's Chain Armor
-										i(149593),	-- Fierce Combatant's Chain Armband
-										i(149583),	-- Fierce Combatant's Chain Gauntlets
-										i(149591),	-- Fierce Combatant's Chain Clasp
-										i(149587),	-- Fierce Combatant's Chain Leggings
-										i(149581),	-- Fierce Combatant's Chain Treads
-										i(149835),	-- Dominant Combatant's Chain Helm
-										i(149839),	-- Dominant Combatant's Chain Spaulders
-										i(149763),	-- Dominant Combatant's Drape of the Tracker
-										i(149829),	-- Dominant Combatant's Chain Armor
-										i(149843),	-- Dominant Combatant's Chain Armband
-										i(149833),	-- Dominant Combatant's Chain Gauntlets
-										i(149841),	-- Dominant Combatant's Chain Clasp
-										i(149837),	-- Dominant Combatant's Chain Leggings
-										i(149831),	-- Dominant Combatant's Chain Treads
-										i(150081),	-- Demonic Combatant's Chain Helm
-										i(150085),	-- Demonic Combatant's Chain Spaulders
-										i(150009),	-- Demonic Combatant's Drape of the Tracker
-										i(150075),	-- Demonic Combatant's Chain Armor
-										i(150089),	-- Demonic Combatant's Chain Armband
-										i(150079),	-- Demonic Combatant's Chain Gauntlets
-										i(150087),	-- Demonic Combatant's Chain Clasp
-										i(150083),	-- Demonic Combatant's Chain Leggings
-										i(150077),	-- Demonic Combatant's Chain Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 3 },	-- Season 7
 									},
 								}),
 								i(150248, {	-- Ensemble: Fierce Combatant's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 7 },	-- Shaman
-									["g"] = {
-										i(149693),	-- Fierce Combatant's Ringmail Helm
-										i(149697),	-- Fierce Combatant's Ringmail Spaulders
-										i(149524),	-- Fierce Combatant's Totemic Cloak
-										i(149687),	-- Fierce Combatant's Ringmail Robe
-										i(149701),	-- Fierce Combatant's Ringmail Armband
-										i(149691),	-- Fierce Combatant's Ringmail Gauntlets
-										i(149699),	-- Fierce Combatant's Ringmail Clasp
-										i(149695),	-- Fierce Combatant's Ringmail Leggings
-										i(149689),	-- Fierce Combatant's Ringmail Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 7 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 7 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 7 },	-- Season 7
 									},
 								}),
 								i(150269, {	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 2 },	-- Paladin
-									["g"] = {
-										i(149639),	-- Fierce Combatant's Scaled Helm
-										i(149643),	-- Fierce Combatant's Scaled Shoulders
-										i(149518),	-- Fierce Combatant's Greatcloak of Faith
-										i(149633),	-- Fierce Combatant's Scaled Chestpiece
-										i(149647),	-- Fierce Combatant's Scaled Wristplates
-										i(149637),	-- Fierce Combatant's Scaled Gauntlets
-										i(149645),	-- Fierce Combatant's Scaled Girdle
-										i(149641),	-- Fierce Combatant's Scaled Legguards
-										i(149635),	-- Fierce Combatant's Scaled Sabatons
-										i(149889),	-- Dominant Combatant's Scaled Helm
-										i(149893),	-- Dominant Combatant's Scaled Shoulders
-										i(149769),	-- Dominant Combatant's Greatcloak of Faith
-										i(149883),	-- Dominant Combatant's Scaled Chestpiece
-										i(149897),	-- Dominant Combatant's Scaled Wristplates
-										i(149887),	-- Dominant Combatant's Scaled Gauntlets
-										i(149895),	-- Dominant Combatant's Scaled Girdle
-										i(149891),	-- Dominant Combatant's Scaled Legguards
-										i(149885),	-- Dominant Combatant's Scaled Sabatons
-										i(150135),	-- Demonic Combatant's Scaled Helm
-										i(150139),	-- Demonic Combatant's Scaled Shoulders
-										i(150015),	-- Demonic Combatant's Greatcloak of Faith
-										i(150129),	-- Demonic Combatant's Scaled Chestpiece
-										i(150143),	-- Demonic Combatant's Scaled Wristplates
-										i(150133),	-- Demonic Combatant's Scaled Gauntlets
-										i(150141),	-- Demonic Combatant's Scaled Girdle
-										i(150137),	-- Demonic Combatant's Scaled Legguards
-										i(150131),	-- Demonic Combatant's Scaled Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 2 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 2 },	-- Season 7
 									},
 								}),
 								i(150266, {	-- Ensemble: Fierce Combatant's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 1 },	-- Warrior
-									["g"] = {
-										i(149743),	-- Fierce Combatant's Plate Helm
-										i(149747),	-- Fierce Combatant's Plate Shoulders
-										i(149528),	-- Fierce Combatant's Cloak of Battle
-										i(149737),	-- Fierce Combatant's Plate Chestpiece
-										i(149751),	-- Fierce Combatant's Plate Wristplates
-										i(149741),	-- Fierce Combatant's Plate Gauntlets
-										i(149749),	-- Fierce Combatant's Plate Girdle
-										i(149745),	-- Fierce Combatant's Plate Legguards
-										i(149739),	-- Fierce Combatant's Plate Warboots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 1 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 1 },	-- Season 7
 									},
 								}),
 								i(150253, {	-- Ensemble: Fierce Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 6 },	-- Death Knight
-									["g"] = {
-										i(149536),	-- Fierce Combatant's Dreadplate Helm
-										i(149540),	-- Fierce Combatant's Dreadplate Shoulders
-										i(149506),	-- Fierce Combatant's Dreadcloak
-										i(149530),	-- Fierce Combatant's Dreadplate Chestpiece
-										i(149544),	-- Fierce Combatant's Dreadplate Wristplates
-										i(149534),	-- Fierce Combatant's Dreadplate Gauntlets
-										i(149542),	-- Fierce Combatant's Dreadplate Girdle
-										i(149538),	-- Fierce Combatant's Dreadplate Legguards
-										i(149532),	-- Fierce Combatant's Dreadplate Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 6 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 6 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 6 },	-- Season 7
 									},
 								}),
 							},
@@ -788,227 +332,98 @@ _.Zones =
 					-- LEGION Season 1 & 2
 								i(146149, {	-- Ensemble: Vindictive Gladiator's Satin Armor [Priest - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 5 },	-- Priest
-									["g"] = {
-										i(135754),	-- Vindictive Gladiator's Satin Hood
-										i(135757),	-- Vindictive Gladiator's Satin Mantle
-										i(136864),	-- Vindictive Gladiator's Drape of Piety
-										i(135756),	-- Vindictive Gladiator's Satin Robe
-										i(135759),	-- Vindictive Gladiator's Satin Bracers
-										i(135753),	-- Vindictive Gladiator's Satin Gloves
-										i(135758),	-- Vindictive Gladiator's Satin Cord
-										i(135755),	-- Vindictive Gladiator's Satin Leggings
-										i(135752),	-- Vindictive Gladiator's Satin Treads
-										i(142723),	-- Fearless Gladiator's Satin Hood
-										i(142726),	-- Fearless Gladiator's Satin Mantle
-										i(143289),	-- Fearless Gladiator's Drape of Piety
-										i(142725),	-- Fearless Gladiator's Satin Robe
-										i(142728),	-- Fearless Gladiator's Satin Bracers
-										i(142722),	-- Fearless Gladiator's Satin Gloves
-										i(142727),	-- Fearless Gladiator's Satin Cord
-										i(142724),	-- Fearless Gladiator's Satin Leggings
-										i(142721),	-- Fearless Gladiator's Satin Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 5 },	-- Season 2
 									},
 								}),
 								i(146147, {	-- Ensemble: Vindictive Gladiator's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 8 },	-- Mage
-									["g"] = {
-										i(135730),	-- Vindictive Gladiator's Silk Cowl
-										i(135733),	-- Vindictive Gladiator's Silk Amice
-										i(135793),	-- Vindictive Gladiator's Silken Shawl
-										i(135732),	-- Vindictive Gladiator's Silk Robe
-										i(135735),	-- Vindictive Gladiator's Silk Bracers
-										i(135729),	-- Vindictive Gladiator's Silk Handguards
-										i(135734),	-- Vindictive Gladiator's Silk Cord
-										i(135731),	-- Vindictive Gladiator's Silk Trousers
-										i(135728),	-- Vindictive Gladiator's Silk Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 8 },	-- Season 2
 									},
 								}),
 								i(146151, {	-- Ensemble: Vindictive Gladiator's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 9 },	-- Warlock
-									["g"] = {
-										i(135778),	-- Vindictive Gladiator's Felweave Cowl
-										i(135781),	-- Vindictive Gladiator's Felweave Amice
-										i(136880),	-- Vindictive Gladiator's Felweave Cloak
-										i(135780),	-- Vindictive Gladiator's Felweave Raiment
-										i(135783),	-- Vindictive Gladiator's Felweave Bracers
-										i(135777),	-- Vindictive Gladiator's Felweave Handguards
-										i(135782),	-- Vindictive Gladiator's Felweave Cord
-										i(135779),	-- Vindictive Gladiator's Felweave Trousers
-										i(135776),	-- Vindictive Gladiator's Felweave Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 9 },	-- Season 2
 									},
 								}),
 								i(146141, {	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 11 },	-- Druid
-									["g"] = {
-										i(135714),	-- Vindictive Gladiator's Dragonhide Helm
-										i(135717),	-- Vindictive Gladiator's Dragonhide Spaulders
-										i(135796),	-- Vindictive Gladiator's Dragonhide Cloak
-										i(135716),	-- Vindictive Gladiator's Dragonhide Robe
-										i(135719),	-- Vindictive Gladiator's Dragonhide Wristguards
-										i(135713),	-- Vindictive Gladiator's Dragonhide Gloves
-										i(135718),	-- Vindictive Gladiator's Dragonhide Belt
-										i(135715),	-- Vindictive Gladiator's Dragonhide Legguards
-										i(135712),	-- Vindictive Gladiator's Dragonhide Moccasins
-										i(142683),	-- Fearless Gladiator's Dragonhide Helm
-										i(142686),	-- Fearless Gladiator's Dragonhide Spaulders
-										i(142765),	-- Fearless Gladiator's Dragonhide Cloak
-										i(142685),	-- Fearless Gladiator's Dragonhide Robe
-										i(142688),	-- Fearless Gladiator's Dragonhide Wristguards
-										i(142682),	-- Fearless Gladiator's Dragonhide Gloves
-										i(142687),	-- Fearless Gladiator's Dragonhide Belt
-										i(142684),	-- Fearless Gladiator's Dragonhide Legguards
-										i(142681),	-- Fearless Gladiator's Dragonhide Moccasins
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 11 },	-- Season 2
 									},
 								}),
 								i(146145, {	-- Ensemble: Vindictive Gladiator's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 4 },	-- Rogue
-									["g"] = {
-										i(135763),	-- Vindictive Gladiator's Leather Helm
-										i(135765),	-- Vindictive Gladiator's Leather Spaulders
-										i(136865),	-- Vindictive Gladiator's Shadowcape
-										i(135760),	-- Vindictive Gladiator's Leather Tunic
-										i(135767),	-- Vindictive Gladiator's Leather Wristguards
-										i(135762),	-- Vindictive Gladiator's Leather Gloves
-										i(135766),	-- Vindictive Gladiator's Leather Belt
-										i(135764),	-- Vindictive Gladiator's Leather Legguards
-										i(135761),	-- Vindictive Gladiator's Leather Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 4 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 4 },	-- Season 2
 									},
 								}),
 								i(146143, {	-- Ensemble: Vindictive Gladiator's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 10 },	-- Monk
-									["g"] = {
-										i(135738),	-- Vindictive Gladiator's Ironskin Helm
-										i(135740),	-- Vindictive Gladiator's Ironskin Spaulders
-										i(135797),	-- Vindictive Gladiator's Ironskin Cloak
-										i(135741),	-- Vindictive Gladiator's Ironskin Tunic
-										i(135743),	-- Vindictive Gladiator's Ironskin Wristguards
-										i(135737),	-- Vindictive Gladiator's Ironskin Gloves
-										i(135742),	-- Vindictive Gladiator's Ironskin Belt
-										i(135739),	-- Vindictive Gladiator's Ironskin Legguards
-										i(135736),	-- Vindictive Gladiator's Ironskin Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 10 },	-- Season 2
 									},
 								}),
 								i(146263, {	-- Ensemble: Vindictive Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 12 },	-- Demon Hunter
-									["g"] = {
-										i(136289),	-- Vindictive Gladiator's Felskin Helm
-										i(136292),	-- Vindictive Gladiator's Felskin Spaulders
-										i(136892),	-- Vindictive Gladiator's Demonthread Cloak
-										i(136291),	-- Vindictive Gladiator's Felskin Tunic
-										i(136294),	-- Vindictive Gladiator's Felskin Wristguards
-										i(136288),	-- Vindictive Gladiator's Felskin Gloves
-										i(136293),	-- Vindictive Gladiator's Felskin Belt
-										i(136290),	-- Vindictive Gladiator's Felskin Legguards
-										i(136287),	-- Vindictive Gladiator's Felskin Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 12 },	-- Season 2
 									},
 								}),
 								i(146139, {	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["g"] = {
-										i(135723),	-- Vindictive Gladiator's Chain Helm
-										i(135725),	-- Vindictive Gladiator's Chain Spaulders
-										i(135800),	-- Vindictive Gladiator's Drape of the Tracker
-										i(135720),	-- Vindictive Gladiator's Chain Armor
-										i(135727),	-- Vindictive Gladiator's Chain Armband
-										i(135722),	-- Vindictive Gladiator's Chain Gauntlets
-										i(135726),	-- Vindictive Gladiator's Chain Clasp
-										i(135724),	-- Vindictive Gladiator's Chain Leggings
-										i(135721),	-- Vindictive Gladiator's Chain Treads
-										i(142692),	-- Fearless Gladiator's Chain Helm
-										i(142694),	-- Fearless Gladiator's Chain Spaulders
-										i(142769),	-- Fearless Gladiator's Drape of the Tracker
-										i(142689),	-- Fearless Gladiator's Chain Armor
-										i(142696),	-- Fearless Gladiator's Chain Armband
-										i(142691),	-- Fearless Gladiator's Chain Gauntlets
-										i(142695),	-- Fearless Gladiator's Chain Clasp
-										i(142693),	-- Fearless Gladiator's Chain Leggings
-										i(142690),	-- Fearless Gladiator's Chain Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 3 },	-- Season 2
 									},
 								}),
 								i(146137, {	-- Ensemble: Vindictive Gladiator's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 7 },	-- Shaman
-									["g"] = {
-										i(135771),	-- Vindictive Gladiator's Ringmail Helm
-										i(135773),	-- Vindictive Gladiator's Ringmail Spaulders
-										i(136886),	-- Vindictive Gladiator's Cloak of Battle
-										i(135768),	-- Vindictive Gladiator's Ringmail Armor
-										i(135775),	-- Vindictive Gladiator's Ringmail Armband
-										i(135770),	-- Vindictive Gladiator's Ringmail Gauntlets
-										i(135774),	-- Vindictive Gladiator's Ringmail Clasp
-										i(135772),	-- Vindictive Gladiator's Ringmail Kilt
-										i(135769),	-- Vindictive Gladiator's Ringmail Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 7 },	-- Season 2
 									},
 								}),
 								i(146135, {	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/14/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 2 },	-- Paladin
-									["g"] = {
-										i(135747),	-- Vindictive Gladiator's Scaled Helm
-										i(135749),	-- Vindictive Gladiator's Scaled Shoulders
-										i(135801),	-- Vindictive Gladiator's Greatcloak of Faith
-										i(135744),	-- Vindictive Gladiator's Scaled Battlerobe
-										i(135751),	-- Vindictive Gladiator's Scaled Wristplates
-										i(135746),	-- Vindictive Gladiator's Scaled Gauntlets
-										i(135750),	-- Vindictive Gladiator's Scaled Girdle
-										i(135748),	-- Vindictive Gladiator's Scaled Legguards
-										i(135745),	-- Vindictive Gladiator's Scaled Sabatons
-										i(142716),	-- Fearless Gladiator's Scaled Helm
-										i(142718),	-- Fearless Gladiator's Scaled Shoulders
-										i(142770),	-- Fearless Gladiator's Greatcloak of Faith
-										i(142713),	-- Fearless Gladiator's Scaled Battlerobe
-										i(142720),	-- Fearless Gladiator's Scaled Wristplates
-										i(142715),	-- Fearless Gladiator's Scaled Gauntlets
-										i(142719),	-- Fearless Gladiator's Scaled Girdle
-										i(142717),	-- Fearless Gladiator's Scaled Legguards
-										i(142714),	-- Fearless Gladiator's Scaled Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 2 },	-- Season 2
 									},
 								}),
 								i(146131, {	-- Ensemble: Vindictive Gladiator's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 1 },	-- Warrior
-									["g"] = {
-										i(135787),	-- Vindictive Gladiator's Plate Helm
-										i(135789),	-- Vindictive Gladiator's Plate Shoulders
-										i(136886),	-- Vindictive Gladiator's Cloak of Battle
-										i(135784),	-- Vindictive Gladiator's Plate Chestpiece
-										i(135791),	-- Vindictive Gladiator's Plate Wristplates
-										i(135786),	-- Vindictive Gladiator's Plate Gauntlets
-										i(135790),	-- Vindictive Gladiator's Plate Girdle
-										i(135788),	-- Vindictive Gladiator's Plate Legguards
-										i(135785),	-- Vindictive Gladiator's Plate Warboots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 1 },	-- Season 2
 									},
 								}),
 								i(146133, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 6 },	-- Death Knight
-									["g"] = {
-										i(135707),	-- Vindictive Gladiator's Dreadplate Helm
-										i(135709),	-- Vindictive Gladiator's Dreadplate Shoulders
-										i(135792),	-- Vindictive Gladiator's Dreadcloak
-										i(135704),	-- Vindictive Gladiator's Dreadplate Chestpiece
-										i(135711),	-- Vindictive Gladiator's Dreadplate Wristplates
-										i(135706),	-- Vindictive Gladiator's Dreadplate Gauntlets
-										i(135710),	-- Vindictive Gladiator's Dreadplate Girdle
-										i(135708),	-- Vindictive Gladiator's Dreadplate Legguards
-										i(135705),	-- Vindictive Gladiator's Dreadplate Sabatons
-										i(142560),	-- Fearless Gladiator's Dreadplate Helm
-										i(142561),	-- Fearless Gladiator's Dreadplate Shoulders
-										i(142648),	-- Fearless Gladiator's Dreadcloak
-										i(142562),	-- Fearless Gladiator's Dreadplate Chestpiece
-										i(142563),	-- Fearless Gladiator's Dreadplate Wristplates
-										i(142564),	-- Fearless Gladiator's Dreadplate Gauntlets
-										i(142565),	-- Fearless Gladiator's Dreadplate Girdle
-										i(142566),	-- Fearless Gladiator's Dreadplate Legguards
-										i(142567),	-- Fearless Gladiator's Dreadplate Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 6 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 6 },	-- Season 2
 									},
 								}),
 					-- LEGION Season 3 & 4
@@ -2520,544 +1935,304 @@ _.Zones =
 					-- LEGION Season 1 & 2
 								i(146158, {	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 5 },	-- Priest
-									["g"] = {
-										i(135867),	-- Vindictive Combatant's Satin Hood
-										i(135870),	-- Vindictive Combatant's Satin Mantle
-										i(136867),	-- Vindictive Combatant's Drape of Piety
-										i(135869),	-- Vindictive Combatant's Satin Tunic
-										i(135872),	-- Vindictive Combatant's Satin Bracers
-										i(135866),	-- Vindictive Combatant's Satin Gloves
-										i(135871),	-- Vindictive Combatant's Satin Cord
-										i(135868),	-- Vindictive Combatant's Satin Leggings
-										i(135865),	-- Vindictive Combatant's Satin Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 5 },	-- Season 2
 									},
 								}),
 								i(146156, {	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 8 },	-- Mage
-									["g"] = {
-										i(135843),	-- Vindictive Combatant's Silk Cowl
-										i(135846),	-- Vindictive Combatant's Silk Amice
-										i(135906),	-- Vindictive Combatant's Silken Shawl
-										i(135845),	-- Vindictive Combatant's Silk Tunic
-										i(135848),	-- Vindictive Combatant's Silk Bracers
-										i(135842),	-- Vindictive Combatant's Silk Handguards
-										i(135847),	-- Vindictive Combatant's Silk Cord
-										i(135844),	-- Vindictive Combatant's Silk Trousers
-										i(135841),	-- Vindictive Combatant's Silk Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 8 },	-- Season 2
 									},
 								}),
 								i(146160, {	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 9 },	-- Warlock
-									["g"] = {
-										i(135891),	-- Vindictive Combatant's Felweave Cowl
-										i(135894),	-- Vindictive Combatant's Felweave Amice
-										i(136881),	-- Vindictive Combatant's Felweave Cloak
-										i(135893),	-- Vindictive Combatant's Felweave Tunic
-										i(135896),	-- Vindictive Combatant's Felweave Bracers
-										i(135890),	-- Vindictive Combatant's Felweave Handguards
-										i(135895),	-- Vindictive Combatant's Felweave Cord
-										i(135892),	-- Vindictive Combatant's Felweave Trousers
-										i(135889),	-- Vindictive Combatant's Felweave Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 9 },	-- Season 2
 									},
 								}),
 								i(146168, {	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 11 },	-- Druid
-									["g"] = {
-										i(135827),	-- Vindictive Combatant's Dragonhide Helm
-										i(135830),	-- Vindictive Combatant's Dragonhide Spaulders
-										i(135909),	-- Vindictive Combatant's Dragonhide Cloak
-										i(135829),	-- Vindictive Combatant's Dragonhide Tunic
-										i(135832),	-- Vindictive Combatant's Dragonhide Wristguards
-										i(135826),	-- Vindictive Combatant's Dragonhide Gloves
-										i(135831),	-- Vindictive Combatant's Dragonhide Belt
-										i(135828),	-- Vindictive Combatant's Dragonhide Legguards
-										i(135825),	-- Vindictive Combatant's Dragonhide Moccasins
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 11 },	-- Season 2
 									},
 								}),
 								i(146172, {	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 4 },	-- Rogue
-									["g"] = {
-										i(135876),	-- Vindictive Combatant's Leather Helm
-										i(135878),	-- Vindictive Combatant's Leather Spaulders
-										i(136868),	-- Vindictive Combatant's Shadowcape
-										i(135873),	-- Vindictive Combatant's Leather Tunic
-										i(135880),	-- Vindictive Combatant's Leather Wristguards
-										i(135875),	-- Vindictive Combatant's Leather Gloves
-										i(135879),	-- Vindictive Combatant's Leather Belt
-										i(135877),	-- Vindictive Combatant's Leather Legguards
-										i(135874),	-- Vindictive Combatant's Leather Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 4 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 4 },	-- Season 2
 									},
 								}),
 								i(146170, {	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 10 },	-- Monk
-									["g"] = {
-										i(135851),	-- Vindictive Combatant's Ironskin Helm
-										i(135853),	-- Vindictive Combatant's Ironskin Spaulders
-										i(135910),	-- Vindictive Combatant's Ironskin Cloak
-										i(135854),	-- Vindictive Combatant's Ironskin Tunic
-										i(135856),	-- Vindictive Combatant's Ironskin Wristguards
-										i(135850),	-- Vindictive Combatant's Ironskin Gloves
-										i(135855),	-- Vindictive Combatant's Ironskin Belt
-										i(135852),	-- Vindictive Combatant's Ironskin Legguards
-										i(135849),	-- Vindictive Combatant's Ironskin Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 10 },	-- Season 2
 									},
 								}),
 								i(146264, {	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 12 },	-- Demon Hunter
-									["g"] = {
-										i(136297),	-- Vindictive Combatant's Felskin Helm
-										i(136300),	-- Vindictive Combatant's Felskin Spaulders
-										i(136893),	-- Vindictive Combatant's Demonthread Cloak
-										i(136299),	-- Vindictive Combatant's Felskin Tunic
-										i(136302),	-- Vindictive Combatant's Felskin Wristguards
-										i(136296),	-- Vindictive Combatant's Felskin Gloves
-										i(136301),	-- Vindictive Combatant's Felskin Belt
-										i(136298),	-- Vindictive Combatant's Felskin Legguards
-										i(136295),	-- Vindictive Combatant's Felskin Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 12 },	-- Season 2
 									},
 								}),
 								i(146154, {	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["g"] = {
-										i(135836),	-- Vindictive Combatant's Chain Helm
-										i(135838),	-- Vindictive Combatant's Chain Spaulders
-										i(135913),	-- Vindictive Combatant's Drape of the Tracker
-										i(135833),	-- Vindictive Combatant's Chain Armor
-										i(135840),	-- Vindictive Combatant's Chain Armband
-										i(135835),	-- Vindictive Combatant's Chain Gauntlets
-										i(135839),	-- Vindictive Combatant's Chain Clasp
-										i(135837),	-- Vindictive Combatant's Chain Leggings
-										i(135834),	-- Vindictive Combatant's Chain Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 3 },	-- Season 2
 									},
 								}),
 								i(146152, {	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 7 },	-- Shaman
-									["g"] = {
-										i(135884),	-- Vindictive Combatant's Ringmail Helm
-										i(135886),	-- Vindictive Combatant's Ringmail Spaulders
-										i(136869),	-- Vindictive Combatant's Totemic Cloak
-										i(135881),	-- Vindictive Combatant's Ringmail Armor
-										i(135888),	-- Vindictive Combatant's Ringmail Armband
-										i(135883),	-- Vindictive Combatant's Ringmail Gauntlets
-										i(135887),	-- Vindictive Combatant's Ringmail Clasp
-										i(135885),	-- Vindictive Combatant's Ringmail Kilt
-										i(135882),	-- Vindictive Combatant's Ringmail Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 7 },	-- Season 2
 									},
 								}),
 								i(146166, {	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 2 },	-- Paladin
-									["g"] = {
-										i(135860),	-- Vindictive Combatant's Scaled Helm
-										i(135862),	-- Vindictive Combatant's Scaled Shoulders
-										i(135914),	-- Vindictive Combatant's Greatcloak of Faith
-										i(135857),	-- Vindictive Combatant's Scaled Chestpiece
-										i(135864),	-- Vindictive Combatant's Scaled Wristplates
-										i(135859),	-- Vindictive Combatant's Scaled Gauntlets
-										i(135863),	-- Vindictive Combatant's Scaled Girdle
-										i(135861),	-- Vindictive Combatant's Scaled Legguards
-										i(135858),	-- Vindictive Combatant's Scaled Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 2 },	-- Season 2
 									},
 								}),
 								i(146162, {	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 1 },	-- Warrior
-									["g"] = {
-										i(135900),	-- Vindictive Combatant's Plate Helm
-										i(135902),	-- Vindictive Combatant's Plate Shoulders
-										i(136887),	-- Vindictive Combatant's Cloak of Battle
-										i(135897),	-- Vindictive Combatant's Plate Chestpiece
-										i(135904),	-- Vindictive Combatant's Plate Wristplates
-										i(135899),	-- Vindictive Combatant's Plate Gauntlets
-										i(135903),	-- Vindictive Combatant's Plate Girdle
-										i(135901),	-- Vindictive Combatant's Plate Legguards
-										i(135898),	-- Vindictive Combatant's Plate Warboots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 1 },	-- Season 2
 									},
 								}),
-								i(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
+								i(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 6 },	-- Death Knight
-									["g"] = {
-										i(135820),	-- Vindictive Combatant's Dreadplate Helm
-										i(135822),	-- Vindictive Combatant's Dreadplate Shoulders
-										i(135905),	-- Vindictive Combatant's Dreadcloak
-										i(135817),	-- Vindictive Combatant's Dreadplate Chestpiece
-										i(135824),	-- Vindictive Combatant's Dreadplate Wristplates
-										i(135819),	-- Vindictive Combatant's Dreadplate Gauntlets
-										i(135823),	-- Vindictive Combatant's Dreadplate Girdle
-										i(135821),	-- Vindictive Combatant's Dreadplate Legguards
-										i(135818),	-- Vindictive Combatant's Dreadplate Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 6 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 6 },	-- Season 2
 									},
 								}),
 					-- LEGION Season 3 & 4
 								i(147688, {	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 5 },	-- Priest
-									["g"] = {
-										i(145172),	-- Cruel Combatant's Satin Hood
-										i(145178),	-- Cruel Combatant's Satin Mantle
-										i(145040),	-- Cruel Combatant's Drape of Piety
-										i(145176),	-- Cruel Combatant's Satin Robe
-										i(145182),	-- Cruel Combatant's Satin Bracers
-										i(145170),	-- Cruel Combatant's Satin Gloves
-										i(145180),	-- Cruel Combatant's Satin Cord
-										i(145174),	-- Cruel Combatant's Satin Leggings
-										i(145168),	-- Cruel Combatant's Satin Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 5 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 5 },	-- Season 4
 									},
 								}),
 								i(147696, {	-- Ensemble: Cruel Combatant's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 8 },	-- Mage
-									["g"] = {
-										i(145118),	-- Cruel Combatant's Silk Cowl
-										i(145124),	-- Cruel Combatant's Silk Amice
-										i(145034),	-- Cruel Combatant's Silken Shawl
-										i(145122),	-- Cruel Combatant's Silk Robe
-										i(145128),	-- Cruel Combatant's Silk Bracers
-										i(145116),	-- Cruel Combatant's Silk Handguards
-										i(145126),	-- Cruel Combatant's Silk Cord
-										i(145120),	-- Cruel Combatant's Silk Trousers
-										i(145114),	-- Cruel Combatant's Silk Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 8 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 8 },	-- Season 4
 									},
 								}),
 								i(147682, {	-- Ensemble: Cruel Combatant's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 9 },	-- Warlock
-									["g"] = {
-										i(145244),	-- Cruel Combatant's Felweave Cowl
-										i(145250),	-- Cruel Combatant's Felweave Amice
-										i(145046),	-- Cruel Combatant's Felweave Cloak
-										i(145248),	-- Cruel Combatant's Felweave Raiment
-										i(145254),	-- Cruel Combatant's Felweave Bracers
-										i(145242),	-- Cruel Combatant's Felweave Handguards
-										i(145252),	-- Cruel Combatant's Felweave Cord
-										i(145246),	-- Cruel Combatant's Felweave Trousers
-										i(145240),	-- Cruel Combatant's Felweave Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 9 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 9 },	-- Season 4
 									},
 								}),
 								i(147675, {	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 11 },	-- Druid
-									["g"] = {
-										i(145088),	-- Cruel Combatant's Dragonhide Helm
-										i(145092),	-- Cruel Combatant's Dragonhide Spaulders
-										i(145030),	-- Cruel Combatant's Dragonhide Cloak
-										i(145082),	-- Cruel Combatant's Dragonhide Tunic
-										i(145096),	-- Cruel Combatant's Dragonhide Wristguards
-										i(145086),	-- Cruel Combatant's Dragonhide Gloves
-										i(145094),	-- Cruel Combatant's Dragonhide Belt
-										i(145090),	-- Cruel Combatant's Dragonhide Legguards
-										i(145084),	-- Cruel Combatant's Dragonhide Moccasins
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 11 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 11 },	-- Season 4
 									},
 								}),
 								i(147685, {	-- Ensemble: Cruel Combatant's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 4 },	-- Rogue
-									["g"] = {
-										i(145196),	-- Cruel Combatant's Leather Helm
-										i(145200),	-- Cruel Combatant's Leather Spaulders
-										i(145042),	-- Cruel Combatant's Shadowcape
-										i(145190),	-- Cruel Combatant's Leather Tunic
-										i(145204),	-- Cruel Combatant's Leather Wristguards
-										i(145194),	-- Cruel Combatant's Leather Gloves
-										i(145202),	-- Cruel Combatant's Leather Belt
-										i(145198),	-- Cruel Combatant's Leather Legguards
-										i(145192),	-- Cruel Combatant's Leather Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 4 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 4 },	-- Season 4
 									},
 								}),
 								i(147684, {	-- Ensemble: Cruel Combatant's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 10 },	-- Monk
-									["g"] = {
-										i(145134),	-- Cruel Combatant's Ironskin Helm
-										i(145138),	-- Cruel Combatant's Ironskin Spaulders
-										i(145036),	-- Cruel Combatant's Ironskin Cloak
-										i(145140),	-- Cruel Combatant's Ironskin Tunic
-										i(145144),	-- Cruel Combatant's Ironskin Wristguards
-										i(145132),	-- Cruel Combatant's Ironskin Gloves
-										i(145142),	-- Cruel Combatant's Ironskin Belt
-										i(145136),	-- Cruel Combatant's Ironskin Legguards
-										i(145130),	-- Cruel Combatant's Ironskin Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 10 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 10 },	-- Season 4
 									},
 								}),
 								i(147680, {	-- Ensemble: Cruel Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 12 },	-- Demon Hunter
-									["g"] = {
-										i(145072),	-- Cruel Combatant's Felskin Helm
-										i(145076),	-- Cruel Combatant's Felskin Spaulders
-										i(145028),	-- Cruel Combatant's Demonthread Cloak
-										i(145066),	-- Cruel Combatant's Felskin Tunic
-										i(145080),	-- Cruel Combatant's Felskin Wristguards
-										i(145070),	-- Cruel Combatant's Felskin Gloves
-										i(145078),	-- Cruel Combatant's Felskin Belt
-										i(145074),	-- Cruel Combatant's Felskin Legguards
-										i(145068),	-- Cruel Combatant's Felskin Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 12 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 12 },	-- Season 4
 									},
 								}),
 								i(147689, {	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["g"] = {
-										i(145104),	-- Cruel Combatant's Chain Helm
-										i(145108),	-- Cruel Combatant's Chain Spaulders
-										i(145032),	-- Cruel Combatant's Drape of the Tracker
-										i(145098),	-- Cruel Combatant's Chain Armor
-										i(145112),	-- Cruel Combatant's Chain Armband
-										i(145102),	-- Cruel Combatant's Chain Gauntlets
-										i(145110),	-- Cruel Combatant's Chain Clasp
-										i(145106),	-- Cruel Combatant's Chain Leggings
-										i(145100),	-- Cruel Combatant's Chain Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 3 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 3 },	-- Season 4
 									},
 								}),
 								i(147674, {	-- Ensemble: Cruel Combatant's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 7 },	-- Shaman
-									["g"] = {
-										i(145212),	-- Cruel Combatant's Ringmail Helm
-										i(145216),	-- Cruel Combatant's Ringmail Spaulders
-										i(145044),	-- Cruel Combatant's Totemic Cloak
-										i(145206),	-- Cruel Combatant's Ringmail Armor
-										i(145220),	-- Cruel Combatant's Ringmail Armband
-										i(145210),	-- Cruel Combatant's Ringmail Gauntlets
-										i(145218),	-- Cruel Combatant's Ringmail Clasp
-										i(145214),	-- Cruel Combatant's Ringmail Kilt
-										i(145208),	-- Cruel Combatant's Ringmail Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 7 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 7 },	-- Season 4
 									},
 								}),
 								i(147693, {	-- Ensemble: Cruel Combatant's Scaled Armor [Paladin - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 2 },	-- Paladin
-									["g"] = {
-										i(145158),	-- Cruel Combatant's Scaled Helm
-										i(145162),	-- Cruel Combatant's Scaled Shoulders
-										i(145038),	-- Cruel Combatant's Greatcloak of Faith
-										i(145152),	-- Cruel Combatant's Scaled Chestpiece
-										i(145166),	-- Cruel Combatant's Scaled Wristplates
-										i(145156),	-- Cruel Combatant's Scaled Gauntlets
-										i(145164),	-- Cruel Combatant's Scaled Girdle
-										i(145160),	-- Cruel Combatant's Scaled Legguards
-										i(145154),	-- Cruel Combatant's Scaled Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 2 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 2 },	-- Season 4
 									},
 								}),
 								i(147692, {	-- Ensemble: Cruel Combatant's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 1 },	-- Warrior
-									["g"] = {
-										i(145262),	-- Cruel Combatant's Plate Helm
-										i(145266),	-- Cruel Combatant's Plate Shoulders
-										i(145048),	-- Cruel Combatant's Cloak of Battle
-										i(145256),	-- Cruel Combatant's Plate Chestpiece
-										i(145270),	-- Cruel Combatant's Plate Wristplates
-										i(145260),	-- Cruel Combatant's Plate Gauntlets
-										i(145268),	-- Cruel Combatant's Plate Girdle
-										i(145264),	-- Cruel Combatant's Plate Legguards
-										i(145258),	-- Cruel Combatant's Plate Warboots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 1 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 1 },	-- Season 4
 									},
 								}),
 								i(147677, {	-- Ensemble: Cruel Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 6 },	-- Death Knight
-									["g"] = {
-										i(145056),	-- Cruel Combatant's Dreadplate Helm
-										i(145060),	-- Cruel Combatant's Dreadplate Shoulders
-										i(145026),	-- Cruel Combatant's Dreadcloak
-										i(145050),	-- Cruel Combatant's Dreadplate Chestpiece
-										i(145064),	-- Cruel Combatant's Dreadplate Wristplates
-										i(145054),	-- Cruel Combatant's Dreadplate Gauntlets
-										i(145062),	-- Cruel Combatant's Dreadplate Girdle
-										i(145058),	-- Cruel Combatant's Dreadplate Legguards
-										i(145052),	-- Cruel Combatant's Dreadplate Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 6 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 6 },	-- Season 4
 									},
 								}),
 					-- LEGION Season 5, 6, 7
 								i(150263, {	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 5 },	-- Priest
-									["g"] = {
-										i(149652),	-- Fierce Combatant's Satin Hood
-										i(149658),	-- Fierce Combatant's Satin Mantle
-										i(149519),	-- Fierce Combatant's Drape of Piety
-										i(149656),	-- Fierce Combatant's Satin Robe
-										i(149662),	-- Fierce Combatant's Satin Bracers
-										i(149650),	-- Fierce Combatant's Satin Gloves
-										i(149660),	-- Fierce Combatant's Satin Cord
-										i(149654),	-- Fierce Combatant's Satin Leggings
-										i(149648),	-- Fierce Combatant's Satin Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 5 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 5 },	-- Season 7
 									},
 								}),
 								i(150271, {	-- Ensemble: Fierce Combatant's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 8 },	-- Mage
-									["g"] = {
-										i(149598),	-- Fierce Combatant's Silk Cowl
-										i(149604),	-- Fierce Combatant's Silk Amice
-										i(149513),	-- Fierce Combatant's Silken Shawl
-										i(149602),	-- Fierce Combatant's Silk Robe
-										i(149608),	-- Fierce Combatant's Silk Bracers
-										i(149596),	-- Fierce Combatant's Silk Handguards
-										i(149606),	-- Fierce Combatant's Silk Cord
-										i(149600),	-- Fierce Combatant's Silk Trousers
-										i(149594),	-- Fierce Combatant's Silk Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 8 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 8 },	-- Season 7
 									},
 								}),
 								i(150257, {	-- Ensemble: Fierce Combatant's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 9 },	-- Warlock
-									["g"] = {
-										i(149724),	-- Fierce Combatant's Felweave Cowl
-										i(149730),	-- Fierce Combatant's Felweave Amice
-										i(149525),	-- Fierce Combatant's Felweave Cloak
-										i(149728),	-- Fierce Combatant's Felweave Raiment
-										i(149734),	-- Fierce Combatant's Felweave Bracers
-										i(149722),	-- Fierce Combatant's Felweave Handguards
-										i(149732),	-- Fierce Combatant's Felweave Cord
-										i(149726),	-- Fierce Combatant's Felweave Trousers
-										i(149720),	-- Fierce Combatant's Felweave Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 9 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 9 },	-- Season 7
 									},
 								}),
 								i(150250, {	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 11 },	-- Druid
-									["g"] = {
-										i(149567),	-- Fierce Combatant's Dragonhide Helm
-										i(149571),	-- Fierce Combatant's Dragonhide Spaulders
-										i(149509),	-- Fierce Combatant's Dragonhide Cloak
-										i(149561),	-- Fierce Combatant's Dragonhide Tunic
-										i(149576),	-- Fierce Combatant's Dragonhide Wristguards
-										i(149565),	-- Fierce Combatant's Dragonhide Gloves
-										i(149573),	-- Fierce Combatant's Dragonhide Belt
-										i(149569),	-- Fierce Combatant's Dragonhide Legguards
-										i(149563),	-- Fierce Combatant's Dragonhide Moccasins
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 11 },	-- Season 7
 									},
 								}),
 								i(150260, {	-- Ensemble: Fierce Combatant's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 4 },	-- Rogue
-									["g"] = {
-										i(149676),	-- Fierce Combatant's Leather Helm
-										i(149680),	-- Fierce Combatant's Leather Spaulders
-										i(149521),	-- Fierce Combatant's Shadowcape
-										i(149670),	-- Fierce Combatant's Leather Tunic
-										i(149684),	-- Fierce Combatant's Leather Wristguards
-										i(149674),	-- Fierce Combatant's Leather Gloves
-										i(149682),	-- Fierce Combatant's Leather Belt
-										i(149678),	-- Fierce Combatant's Leather Legguards
-										i(149672),	-- Fierce Combatant's Leather Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 4 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 4 },	-- Season 7
 									},
 								}),
 								i(150259, {	-- Ensemble: Fierce Combatant's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 10 },	-- Monk
-									["g"] = {
-										i(149614),	-- Fierce Combatant's Ironskin Helm
-										i(149618),	-- Fierce Combatant's Ironskin Spaulders
-										i(149515),	-- Fierce Combatant's Ironskin Cloak
-										i(149620),	-- Fierce Combatant's Ironskin Tunic
-										i(149624),	-- Fierce Combatant's Ironskin Wristguards
-										i(149612),	-- Fierce Combatant's Ironskin Gloves
-										i(149622),	-- Fierce Combatant's Ironskin Belt
-										i(149616),	-- Fierce Combatant's Ironskin Legguards
-										i(149610),	-- Fierce Combatant's Ironskin Slippers
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 10 },	-- Season 7
 									},
 								}),
 								i(150255, {	-- Ensemble: Fierce Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 12 },	-- Demon Hunter
-									["g"] = {
-										i(149551),	-- Fierce Combatant's Felskin Helm
-										i(149555),	-- Fierce Combatant's Felskin Spaulders
-										i(149507),	-- Fierce Combatant's Demonthread Cloak
-										i(149545),	-- Fierce Combatant's Felskin Tunic
-										i(149559),	-- Fierce Combatant's Felskin Wristguards
-										i(149549),	-- Fierce Combatant's Felskin Gloves
-										i(149557),	-- Fierce Combatant's Felskin Belt
-										i(149553),	-- Fierce Combatant's Felskin Legguards
-										i(149547),	-- Fierce Combatant's Felskin Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 12 },	-- Season 7
 									},
 								}),
 								i(150264, {	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["g"] = {
-										i(149584),	-- Fierce Combatant's Chain Helm
-										i(149588),	-- Fierce Combatant's Chain Spaulders
-										i(149511),	-- Fierce Combatant's Drape of the Tracker
-										i(149578),	-- Fierce Combatant's Chain Armor
-										i(149592),	-- Fierce Combatant's Chain Armband
-										i(149582),	-- Fierce Combatant's Chain Gauntlets
-										i(149590),	-- Fierce Combatant's Chain Clasp
-										i(149586),	-- Fierce Combatant's Chain Leggings
-										i(149580),	-- Fierce Combatant's Chain Treads
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 3 },	-- Season 7
 									},
 								}),
 								i(150249, {	-- Ensemble: Fierce Combatant's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 7 },	-- Shaman
-									["g"] = {
-										i(149692),	-- Fierce Combatant's Ringmail Helm
-										i(149696),	-- Fierce Combatant's Ringmail Spaulders
-										i(149523),	-- Fierce Combatant's Totemic Cloak
-										i(149686),	-- Fierce Combatant's Ringmail Robe
-										i(149700),	-- Fierce Combatant's Ringmail Armband
-										i(149690),	-- Fierce Combatant's Ringmail Gauntlets
-										i(149698),	-- Fierce Combatant's Ringmail Clasp
-										i(149694),	-- Fierce Combatant's Ringmail Leggings
-										i(149688),	-- Fierce Combatant's Ringmail Boots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 7 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 7 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 7 },	-- Season 7
 									},
 								}),
 								i(150268, {	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 2 },	-- Paladin
-									["g"] = {
-										i(149638),	-- Fierce Combatant's Scaled Helm
-										i(149642),	-- Fierce Combatant's Scaled Shoulders
-										i(149517),	-- Fierce Combatant's Greatcloak of Faith
-										i(149632),	-- Fierce Combatant's Scaled Chestpiece
-										i(149646),	-- Fierce Combatant's Scaled Wristplates
-										i(149636),	-- Fierce Combatant's Scaled Gauntlets
-										i(149644),	-- Fierce Combatant's Scaled Girdle
-										i(149640),	-- Fierce Combatant's Scaled Legguards
-										i(149634),	-- Fierce Combatant's Scaled Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 2 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 2 },	-- Season 7
 									},
 								}),
 								i(150267, {	-- Ensemble: Fierce Combatant's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 1 },	-- Warrior
-									["g"] = {
-										i(149742),	-- Fierce Combatant's Plate Helm
-										i(149746),	-- Fierce Combatant's Plate Shoulders
-										i(149527),	-- Fierce Combatant's Cloak of Battle
-										i(149736),	-- Fierce Combatant's Plate Chestpiece
-										i(149750),	-- Fierce Combatant's Plate Wristplates
-										i(149740),	-- Fierce Combatant's Plate Gauntlets
-										i(149748),	-- Fierce Combatant's Plate Girdle
-										i(149744),	-- Fierce Combatant's Plate Legguards
-										i(149738),	-- Fierce Combatant's Plate Warboots
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 1 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 1 },	-- Season 7
 									},
 								}),
 								i(150252, {	-- Ensemble: Fierce Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 6 },	-- Death Knight
-									["g"] = {
-										i(149535),	-- Fierce Combatant's Dreadplate Helm
-										i(149539),	-- Fierce Combatant's Dreadplate Shoulders
-										i(149505),	-- Fierce Combatant's Dreadcloak
-										i(149529),	-- Fierce Combatant's Dreadplate Chestpiece
-										i(149543),	-- Fierce Combatant's Dreadplate Wristplates
-										i(149533),	-- Fierce Combatant's Dreadplate Gauntlets
-										i(149541),	-- Fierce Combatant's Dreadplate Girdle
-										i(149537),	-- Fierce Combatant's Dreadplate Legguards
-										i(149531),	-- Fierce Combatant's Dreadplate Sabatons
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 6 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 6 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 6 },	-- Season 7
 									},
 								}),
 							},
@@ -4973,464 +4148,306 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 							["g"] = {
 					-- LEGION Season 1 & 2
-								i(146237, {	-- Vindictive Gladiator's Satin Armor
-									i(136206),	-- Vindictive Gladiator's Satin Hood
-									i(136209),	-- Vindictive Gladiator's Satin Mantle
-									i(136876),	-- Vindictive Gladiator's Drape of Piety
-									i(136208),	-- Vindictive Gladiator's Satin Robe
-									i(136211),	-- Vindictive Gladiator's Satin Bracers
-									i(136205),	-- Vindictive Gladiator's Satin Gloves
-									i(136210),	-- Vindictive Gladiator's Satin Cord
-									i(136207),	-- Vindictive Gladiator's Satin Leggings
-									i(136204),	-- Vindictive Gladiator's Satin Treads
+								i(146237, {	-- Vindictive Gladiator's Satin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 5 },	-- Season 2
+									},
 								}),
-								i(146235, {	-- Vindictive Gladiator's Satin Armor
-									i(136182),	-- Vindictive Gladiator's Silk Cowl
-									i(136185),	-- Vindictive Gladiator's Silk Amice
-									i(136245),	-- Vindictive Gladiator's Silken Shawl
-									i(136184),	-- Vindictive Gladiator's Silk Robe
-									i(136187),	-- Vindictive Gladiator's Silk Bracers
-									i(136181),	-- Vindictive Gladiator's Silk Handguards
-									i(136186),	-- Vindictive Gladiator's Silk Cord
-									i(136183),	-- Vindictive Gladiator's Silk Trousers
-									i(136180),	-- Vindictive Gladiator's Silk Treads
+								i(146235, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor (H)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 8 },	-- Season 2
+									},
 								}),
-								i(146239, {	-- Vindictive Gladiator's Satin Armor
-									i(136230),	-- Vindictive Gladiator's Felweave Cowl
-									i(136233),	-- Vindictive Gladiator's Felweave Amice
-									i(136884),	-- Vindictive Gladiator's Felweave Cloak
-									i(136232),	-- Vindictive Gladiator's Felweave Raiment
-									i(136235),	-- Vindictive Gladiator's Felweave Bracers
-									i(136229),	-- Vindictive Gladiator's Felweave Handguards
-									i(136234),	-- Vindictive Gladiator's Felweave Cord
-									i(136231),	-- Vindictive Gladiator's Felweave Trousers
-									i(136228),	-- Vindictive Gladiator's Felweave Treads
+								i(146239, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor (H)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 9 },	-- Season 2
+									},
 								}),
-								i(146229, {	-- Vindictive Gladiator's Satin Armor
-									i(136166),	-- Vindictive Gladiator's Dragonhide Helm
-									i(136169),	-- Vindictive Gladiator's Dragonhide Spaulders
-									i(136248),	-- Vindictive Gladiator's Dragonhide Cloak
-									i(136168),	-- Vindictive Gladiator's Dragonhide Robe
-									i(136171),	-- Vindictive Gladiator's Dragonhide Wristguards
-									i(136165),	-- Vindictive Gladiator's Dragonhide Gloves
-									i(136170),	-- Vindictive Gladiator's Dragonhide Belt
-									i(136167),	-- Vindictive Gladiator's Dragonhide Legguards
-									i(136164),	-- Vindictive Gladiator's Dragonhide Moccasins
+								i(146229, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor (H)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 11 },	-- Season 2
+									},
 								}),
-								i(146233, {	-- Vindictive Gladiator's Satin Armor
-									i(136215),	-- Vindictive Gladiator's Leather Helm
-									i(136217),	-- Vindictive Gladiator's Leather Spaulders
-									i(136877),	-- Vindictive Gladiator's Shadowcape
-									i(136212),	-- Vindictive Gladiator's Leather Tunic
-									i(136219),	-- Vindictive Gladiator's Leather Wristguards
-									i(136214),	-- Vindictive Gladiator's Leather Gloves
-									i(136218),	-- Vindictive Gladiator's Leather Belt
-									i(136216),	-- Vindictive Gladiator's Leather Legguards
-									i(136213),	-- Vindictive Gladiator's Leather Slippers
+								i(146233, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor (H)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 11 },	-- Season 2
+									},
 								}),
-								i(146231, {	-- Vindictive Gladiator's Satin Armor
-									i(136190),	-- Vindictive Gladiator's Ironskin Helm
-									i(136192),	-- Vindictive Gladiator's Ironskin Spaulders
-									i(136249),	-- Vindictive Gladiator's Ironskin Cloak
-									i(136193),	-- Vindictive Gladiator's Ironskin Tunic
-									i(136195),	-- Vindictive Gladiator's Ironskin Wristguards
-									i(136189),	-- Vindictive Gladiator's Ironskin Gloves
-									i(136194),	-- Vindictive Gladiator's Ironskin Belt
-									i(136191),	-- Vindictive Gladiator's Ironskin Legguards
-									i(136188),	-- Vindictive Gladiator's Ironskin Slippers
+								i(146231, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 10 },	-- Season 2
+									},
 								}),
-								i(146271, {	-- Vindictive Gladiator's Satin Armor
-									["classes"] = { 12 },	-- Demon Hunter
-									["g"] = {
-										i(136321),	-- Vindictive Gladiator's Felskin Helm
-										i(136324),	-- Vindictive Gladiator's Felskin Spaulders
-										i(136896),	-- Vindictive Gladiator's Demonthread Cloak
-										i(136323),	-- Vindictive Gladiator's Felskin Tunic
-										i(136326),	-- Vindictive Gladiator's Felskin Wristguards
-										i(136320),	-- Vindictive Gladiator's Felskin Gloves
-										i(136325),	-- Vindictive Gladiator's Felskin Belt
-										i(136322),	-- Vindictive Gladiator's Felskin Legguards
-										i(136319),	-- Vindictive Gladiator's Felskin Boots
+								i(146271, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 12 },	-- Season 2
 									},
 								}),
 								i(146227, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["u"] = 14,	-- Elite PvP Filter
-									["g"] = {
-										i(136175, {	-- Vindictive Gladiator's Chain Helm
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(136177, {	-- Vindictive Gladiator's Chain Spaulders
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(136252, {	-- Vindictive Gladiator's Drape of the Tracker
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(136172, {	-- Vindictive Gladiator's Chain Armor
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(136179, {	-- Vindictive Gladiator's Chain Armband
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(136174, {	-- Vindictive Gladiator's Chain Gauntlets
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(136178, {	-- Vindictive Gladiator's Chain Clasp
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(136176, {	-- Vindictive Gladiator's Chain Leggings
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(136173, {	-- Vindictive Gladiator's Chain Treads
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(143144, {	-- Fearless Gladiator's Chain Helm
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(143146, {	-- Fearless Gladiator's Chain Spaulders
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(143221, {	-- Fearless Gladiator's Drape of the Tracker
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(143141, {	-- Fearless Gladiator's Chain Armor
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(143148, {	-- Fearless Gladiator's Chain Armband
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(143143, {	-- Fearless Gladiator's Chain Gauntlets
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(143147, {	-- Fearless Gladiator's Chain Clasp
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(143145, {	-- Fearless Gladiator's Chain Leggings
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(143142, {	-- Fearless Gladiator's Chain Treads
-											["u"] = 14,	-- Elite PvP Filter
-										}),
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 3 },	-- Season 2
 									},
 								}),
-								i(146225, {	-- Vindictive Gladiator's Satin Armor
-									i(136223),	-- Vindictive Gladiator's Ringmail Helm
-									i(136225),	-- Vindictive Gladiator's Ringmail Spaulders
-									i(136878),	-- Vindictive Gladiator's Totemic Cloak
-									i(136220),	-- Vindictive Gladiator's Ringmail Armor
-									i(136227),	-- Vindictive Gladiator's Ringmail Armband
-									i(136222),	-- Vindictive Gladiator's Ringmail Gauntlets
-									i(136226),	-- Vindictive Gladiator's Ringmail Clasp
-									i(136224),	-- Vindictive Gladiator's Ringmail Kilt
-									i(136221),	-- Vindictive Gladiator's Ringmail Boots
+								i(146225, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 7 },	-- Season 2
+									},
 								}),
-								i(146223, {	-- Vindictive Gladiator's Satin Armor
-									i(136199),	-- Vindictive Gladiator's Scaled Helm
-									i(136201),	-- Vindictive Gladiator's Scaled Shoulders
-									i(136253),	-- Vindictive Gladiator's Greatcloak of Faith
-									i(136196),	-- Vindictive Gladiator's Scaled Chestpiece
-									i(136203),	-- Vindictive Gladiator's Scaled Wristplates
-									i(136198),	-- Vindictive Gladiator's Scaled Gauntlets
-									i(136202),	-- Vindictive Gladiator's Scaled Girdle
-									i(136200),	-- Vindictive Gladiator's Scaled Legguards
-									i(136197),	-- Vindictive Gladiator's Scaled Sabatons
+								i(146223, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor (H)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 2 },	-- Season 2
+									},
 								}),
-								i(146219, {	-- Vindictive Gladiator's Satin Armor
-									i(136239),	-- Vindictive Gladiator's Plate Helm
-									i(136241),	-- Vindictive Gladiator's Plate Shoulders
-									i(136890),	-- Vindictive Gladiator's Cloak of Battle
-									i(136236),	-- Vindictive Gladiator's Plate Chestpiece
-									i(136243),	-- Vindictive Gladiator's Plate Wristplates
-									i(136238),	-- Vindictive Gladiator's Plate Gauntlets
-									i(136242),	-- Vindictive Gladiator's Plate Girdle
-									i(136240),	-- Vindictive Gladiator's Plate Legguards
-									i(136237),	-- Vindictive Gladiator's Plate Warboots
+								i(146219, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 1 },	-- Season 2
+									},
 								}),
-								i(146221, {	-- Vindictive Gladiator's Satin Armor
-									i(136159),	-- Vindictive Gladiator's Dreadplate Helm
-									i(136161),	-- Vindictive Gladiator's Dreadplate Shoulders
-									i(136244),	-- Vindictive Gladiator's Dreadcloak
-									i(136156),	-- Vindictive Gladiator's Dreadplate Chestpiece
-									i(136163),	-- Vindictive Gladiator's Dreadplate Wristplates
-									i(136158),	-- Vindictive Gladiator's Dreadplate Gauntlets
-									i(136162),	-- Vindictive Gladiator's Dreadplate Girdle
-									i(136160),	-- Vindictive Gladiator's Dreadplate Legguards
-									i(136157),	-- Vindictive Gladiator's Dreadplate Sabatons
+								i(146221, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (H)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 8 },	-- Season 2
+									},
 								}),
 					-- LEGION Season 3 & 4
-								i(147639, {	-- Cruel Gladiator's Satin Armor
-									i(144927),	-- Cruel Gladiator's Satin Hood
-									i(144933),	-- Cruel Gladiator's Satin Mantle
-									i(144795),	-- Cruel Gladiator's Drape of Piety
-									i(144931),	-- Cruel Gladiator's Satin Robe
-									i(144937),	-- Cruel Gladiator's Satin Bracers
-									i(144925),	-- Cruel Gladiator's Satin Gloves
-									i(144935),	-- Cruel Gladiator's Satin Cord
-									i(144929),	-- Cruel Gladiator's Satin Leggings
-									i(144923),	-- Cruel Gladiator's Satin Treads
-								}),
-								i(147643, {	-- Cruel Gladiator's Silk Armor
-									i(144873),	-- Cruel Gladiator's Silk Cowl
-									i(144879),	-- Cruel Gladiator's Silk Amice
-									i(144789),	-- Cruel Gladiator's Silken Shawl
-									i(144877),	-- Cruel Gladiator's Silk Robe
-									i(144883),	-- Cruel Gladiator's Silk Bracers
-									i(144871),	-- Cruel Gladiator's Silk Handguards
-									i(144881),	-- Cruel Gladiator's Silk Cord
-									i(144875),	-- Cruel Gladiator's Silk Trousers
-									i(144869),	-- Cruel Gladiator's Silk Treads
-								}),
-								i(147630, {	-- Cruel Gladiator's Felweave Armor
-									i(144999),	-- Cruel Gladiator's Felweave Cowl
-									i(145005),	-- Cruel Gladiator's Felweave Amice
-									i(144801),	-- Cruel Gladiator's Felweave Cloak
-									i(145003),	-- Cruel Gladiator's Felweave Raiment
-									i(145009),	-- Cruel Gladiator's Felweave Bracers
-									i(144997),	-- Cruel Gladiator's Felweave Handguards
-									i(145007),	-- Cruel Gladiator's Felweave Cord
-									i(145001),	-- Cruel Gladiator's Felweave Trousers
-									i(144995),	-- Cruel Gladiator's Felweave Treads
-								}),
-								i(147624, {	-- Cruel Gladiator's Dragonhide Armor
-									i(144843),	-- Cruel Gladiator's Dragonhide Helm
-									i(144847),	-- Cruel Gladiator's Dragonhide Spaulders
-									i(144785),	-- Cruel Gladiator's Dragonhide Cloak
-									i(144837),	-- Cruel Gladiator's Dragonhide Robe
-									i(144851),	-- Cruel Gladiator's Dragonhide Wristguards
-									i(144841),	-- Cruel Gladiator's Dragonhide Gloves
-									i(144849),	-- Cruel Gladiator's Dragonhide Belt
-									i(144845),	-- Cruel Gladiator's Dragonhide Legguards
-									i(144839),	-- Cruel Gladiator's Dragonhide Moccasins
-								}),
-								i(147633, {	-- Cruel Gladiator's Leather Armor
-									i(144951),	-- Cruel Gladiator's Leather Helm
-									i(144955),	-- Cruel Gladiator's Leather Spaulders
-									i(144797),	-- Cruel Gladiator's Shadowcape
-									i(144945),	-- Cruel Gladiator's Leather Tunic
-									i(144959),	-- Cruel Gladiator's Leather Wristguards
-									i(144949),	-- Cruel Gladiator's Leather Gloves
-									i(144957),	-- Cruel Gladiator's Leather Belt
-									i(144953),	-- Cruel Gladiator's Leather Legguards
-									i(144947),	-- Cruel Gladiator's Leather Slippers
-								}),
-								i(147631, {	-- Cruel Gladiator's Ironskin Armor
-									i(144889),	-- Cruel Gladiator's Ironskin Helm
-									i(144893),	-- Cruel Gladiator's Ironskin Spaulders
-									i(144791),	-- Cruel Gladiator's Ironskin Cloak
-									i(144895),	-- Cruel Gladiator's Ironskin Tunic
-									i(144899),	-- Cruel Gladiator's Ironskin Wristguards
-									i(144887),	-- Cruel Gladiator's Ironskin Gloves
-									i(144897),	-- Cruel Gladiator's Ironskin Belt
-									i(144891),	-- Cruel Gladiator's Ironskin Legguards
-									i(144885),	-- Cruel Gladiator's Ironskin Slippers
-								}),
-								i(147628, {	-- Cruel Gladiator's Felskin Armor
-									["classes"] = { 12 },	-- Demon Hunter
-									["g"] = {
-										i(144827),	-- Cruel Gladiator's Felskin Helm
-										i(144831),	-- Cruel Gladiator's Felskin Spaulders
-										i(144783),	-- Cruel Gladiator's Demonthread Cloak
-										i(144821),	-- Cruel Gladiator's Felskin Tunic
-										i(144835),	-- Cruel Gladiator's Felskin Wristguards
-										i(144825),	-- Cruel Gladiator's Felskin Gloves
-										i(144833),	-- Cruel Gladiator's Felskin Belt
-										i(144829),	-- Cruel Gladiator's Felskin Legguards
-										i(144823),	-- Cruel Gladiator's Felskin Boots
-									},
-								}),
-								i(147622, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor
+								i(147639, {	-- Ensemble: Elite Cruel Gladiator's Satin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["u"] = 14,	-- Elite PvP Filter
-									["g"] = {
-										i(144859, {	-- Cruel Gladiator's Chain Helm
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(144863, {	-- Cruel Gladiator's Chain Spaulders
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(144787, {	-- Cruel Gladiator's Drape of the Tracker
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(144853, {	-- Cruel Gladiator's Chain Armor
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(144867, {	-- Cruel Gladiator's Chain Armband
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(144857, {	-- Cruel Gladiator's Chain Gauntlets
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(144865, {	-- Cruel Gladiator's Chain Clasp
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(144861, {	-- Cruel Gladiator's Chain Leggings
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(144855, {	-- Cruel Gladiator's Chain Treads
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(145701, {	-- Ferocious Gladiator's Chain Helm
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(145705, {	-- Ferocious Gladiator's Chain Spaulders
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(145629, {	-- Ferocious Gladiator's Drape of the Tracker
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(145695, {	-- Ferocious Gladiator's Chain Armor
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(145709, {	-- Ferocious Gladiator's Chain Armband
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(145699, {	-- Ferocious Gladiator's Chain Gauntlets
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(145707, {	-- Ferocious Gladiator's Chain Clasp
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(145703, {	-- Ferocious Gladiator's Chain Leggings
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(145697, {	-- Ferocious Gladiator's Chain Treads
-											["u"] = 14,	-- Elite PvP Filter
-										}),
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 5 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 5	},	-- Season 4
 									},
 								}),
-								i(147638, {	-- Cruel Gladiator's Ringmail Armor
-									i(144967),	-- Cruel Gladiator's Ringmail Helm
-									i(144971),	-- Cruel Gladiator's Ringmail Spaulders
-									i(144799),	-- Cruel Gladiator's Totemic Cloak
-									i(144961),	-- Cruel Gladiator's Ringmail Armor
-									i(144975),	-- Cruel Gladiator's Ringmail Armband
-									i(144965),	-- Cruel Gladiator's Ringmail Gauntlets
-									i(144973),	-- Cruel Gladiator's Ringmail Clasp
-									i(144969),	-- Cruel Gladiator's Ringmail Kilt
-									i(144963),	-- Cruel Gladiator's Ringmail Boots
+								i(147643, {	-- Ensemble: Elite Cruel Gladiator's Silk Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 8 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 8	},	-- Season 4
+									},
 								}),
-								i(147641, {	-- Cruel Gladiator's Scaled Armor
-									i(144913),	-- Cruel Gladiator's Scaled Helm
-									i(144917),	-- Cruel Gladiator's Scaled Shoulders
-									i(144793),	-- Cruel Gladiator's Greatcloak of Faith
-									i(144907),	-- Cruel Gladiator's Scaled Breastplate
-									i(144921),	-- Cruel Gladiator's Scaled Wristplates
-									i(144911),	-- Cruel Gladiator's Scaled Gauntlets
-									i(144919),	-- Cruel Gladiator's Scaled Girdle
-									i(144915),	-- Cruel Gladiator's Scaled Legguards
-									i(144909),	-- Cruel Gladiator's Scaled Sabatons
+								i(147630, {	-- Ensemble: Elite Cruel Gladiator's Felweave Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 9 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 9	},	-- Season 4
+									},
 								}),
-								i(147635, {	-- Cruel Gladiator's Plate Armor
-									i(145017),	-- Cruel Gladiator's Plate Helm
-									i(145021),	-- Cruel Gladiator's Plate Shoulders
-									i(144803),	-- Cruel Gladiator's Cloak of Battle
-									i(145011),	-- Cruel Gladiator's Plate Chestpiece
-									i(145025),	-- Cruel Gladiator's Plate Wristplates
-									i(145015),	-- Cruel Gladiator's Plate Gauntlets
-									i(145023),	-- Cruel Gladiator's Plate Girdle
-									i(145019),	-- Cruel Gladiator's Plate Legguards
-									i(145013),	-- Cruel Gladiator's Plate Warboots
+								i(147624, {	-- Ensemble: Elite Cruel Gladiator's Dragonhide Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 11 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 11 },	-- Season 4
+									},
 								}),
-								i(147626, {	-- Cruel Gladiator's Dreadplate Armor
-									i(144811),	-- Cruel Gladiator's Dreadplate Helm
-									i(144815),	-- Cruel Gladiator's Dreadplate Shoulders
-									i(144781),	-- Cruel Gladiator's Dreadcloak
-									i(144805),	-- Cruel Gladiator's Dreadplate Chestpiece
-									i(144819),	-- Cruel Gladiator's Dreadplate Wristplates
-									i(144809),	-- Cruel Gladiator's Dreadplate Gauntlets
-									i(144817),	-- Cruel Gladiator's Dreadplate Girdle
-									i(144813),	-- Cruel Gladiator's Dreadplate Legguards
-									i(144807),	-- Cruel Gladiator's Dreadplate Sabatons
+								i(147633, {	-- Ensemble: Elite Cruel Gladiator's Leather Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 4 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 4	},	-- Season 4
+									},
 								}),
-					-- LEGION Season 5 & 6
-								i(149455, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor
+								i(147631, {	-- Ensemble: Elite Cruel Gladiator's Ironskin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 10 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 10 },	-- Season 4
+									},
+								}),
+								i(147628, {	-- Ensemble: Elite Cruel Gladiator's Felskin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 12 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 12 },	-- Season 4
+									},
+								}),
+								i(147622, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 3 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 3 },	-- Season 4
+									},
+								}),
+								i(147638, {	-- Ensemble: Elite Cruel Gladiator's Ringmail Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 7 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 7	},	-- Season 4
+									},
+								}),
+								i(147641, {	-- Ensemble: Elite Cruel Gladiator's Scaled Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 2 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 2	},	-- Season 4
+									},
+								}),
+								i(147635, {	-- Ensemble: Elite Cruel Gladiator's Plate Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 1 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 1	},	-- Season 4
+									},
+								}),
+								i(147626, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor (H)
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 6 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 6	},	-- Season 4
+									},
+								}),
+					-- LEGION Season 5, 6 & 7
+								i(149472, {	-- Ensemble: Elite Fierce Gladiator's Satin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["classes"] = { 3 },	-- Hunter
-									["u"] = 14,	-- Elite PvP Filter
-									["g"] = {
-										i(148234, {	-- Fierce Gladiator's Chain Helm
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148238, {	-- Fierce Gladiator's Chain Spaulders
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148162, {	-- Fierce Gladiator's Drape of the Tracker
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148228, {	-- Fierce Gladiator's Chain Armor
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148242, {	-- Fierce Gladiator's Chain Armband
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148232, {	-- Fierce Gladiator's Chain Gauntlets
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148240, {	-- Fierce Gladiator's Chain Clasp
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148236, {	-- Fierce Gladiator's Chain Leggings
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148230, {	-- Fierce Gladiator's Chain Treads
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148727, {	-- Dominant Gladiator's Chain Helm
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148731, {	-- Dominant Gladiator's Chain Spaulders
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148655, {	-- Dominant Gladiator's Drape of the Tracker
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148721, {	-- Dominant Gladiator's Chain Armor
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148735, {	-- Dominant Gladiator's Chain Armband
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148725, {	-- Dominant Gladiator's Chain Gauntlets
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148733, {	-- Dominant Gladiator's Chain Clasp
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148729, {	-- Dominant Gladiator's Chain Leggings
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(148723, {	-- Dominant Gladiator's Chain Treads
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(149219, {	-- Demonic Gladiator's Chain Helm
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(149223, {	-- Demonic Gladiator's Chain Spaulders
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(149147, {	-- Demonic Gladiator's Drape of the Tracker
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(149213, {	-- Demonic Gladiator's Chain Armor
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(149227, {	-- Demonic Gladiator's Chain Armband
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(149217, {	-- Demonic Gladiator's Chain Gauntlets
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(149225, {	-- Demonic Gladiator's Chain Clasp
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(149221, {	-- Demonic Gladiator's Chain Leggings
-											["u"] = 14,	-- Elite PvP Filter
-										}),
-										i(149215, {	-- Demonic Gladiator's Chain Treads
-											["u"] = 14,	-- Elite PvP Filter
-										}),
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 5	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 5	},	-- Season 7
+									},
+								}),
+								i(149476, {	-- Ensemble: Elite Fierce Gladiator's Silk Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 8	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 8	},	-- Season 7
+									},
+								}),
+								i(149463, {	-- Ensemble: Elite Fierce Gladiator's Felweave Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 9	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 9	},	-- Season 7
+									},
+								}),
+								i(149457, {	-- Ensemble: Elite Fierce Gladiator's Dragonhide Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 11 },	-- Season 7
+									},
+								}),
+								i(149466, {	-- Ensemble: Elite Fierce Gladiator's Leather Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 4	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 4 },	-- Season 7
+									},
+								}),
+								i(149464, {	-- Ensemble: Elite Fierce Gladiator's Ironskin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 10 },	-- Season 7
+									},
+								}),
+								i(149461, {	-- Ensemble: Elite Fierce Gladiator's Felskin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 12 },	-- Season 7
+									},
+								}),
+								i(149455, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 3 },	-- Season 7
+									},
+								}),
+								i(149471, {	-- Ensemble: Elite Fierce Gladiator's Ringmail Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 7 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 7 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 7 },	-- Season 7
+									},
+								}),
+								i(149474, {	-- Ensemble: Elite Fierce Gladiator's Scaled Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 2 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 2 },	-- Season 7
+									},
+								}),
+								i(149468, {	-- Ensemble: Elite Fierce Gladiator's Plate Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 1 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 1 },	-- Season 7
+									},
+								}),
+								i(149459, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 6 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 6 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 6 },	-- Season 7
 									},
 								}),
 							},

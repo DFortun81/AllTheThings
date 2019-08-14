@@ -365,87 +365,15 @@ _.GearSets =
 								i(148036),	-- Fierce Gladiator's Scaled Sabatons
 							}),
 							gs(1422, {	-- Fierce Gladiator's Plate Armor
-								{	-- Fierce Gladiator's Scaled Helm
-									["itemID"] = 148040,	-- Fierce Gladiator's Scaled Helm
-								},
-								{	-- Fierce Gladiator's Scaled Shoulders
-									["itemID"] = 148045,	-- Fierce Gladiator's Scaled Shoulders
-								},
-								{	-- Fierce Gladiator's Greatcloak of Faith
-									["itemID"] = 147921,	-- Fierce Gladiator's Greatcloak of Faith
-								},
-								{	-- Fierce Gladiator's Scaled Breastplate
-									["itemID"] = 148044,	-- Fierce Gladiator's Scaled Breastplate
-								},
-								{	-- Fierce Gladiator's Scaled Wristplates
-									["itemID"] = 148049,	-- Fierce Gladiator's Scaled Wristplates
-								},
-								{	-- Fierce Gladiator's Scaled Gauntlets
-									["itemID"] = 148038,	-- Fierce Gladiator's Scaled Gauntlets
-								},
-								{	-- Fierce Gladiator's Scaled Girdle
-									["itemID"] = 148047,	-- Fierce Gladiator's Scaled Girdle
-								},
-								{	-- Fierce Gladiator's Scaled Legguards
-									["itemID"] = 148042,	-- Fierce Gladiator's Scaled Legguards
-								},
-								{	-- Fierce Gladiator's Scaled Sabatons
-									["itemID"] = 148036,	-- Fierce Gladiator's Scaled Sabatons
-								},
-								{	-- Dominant Gladiator's Scaled Helm
-									["itemID"] = 148533,	-- Dominant Gladiator's Scaled Helm
-								},
-								{	-- Dominant Gladiator's Scaled Shoulders
-									["itemID"] = 148538,	-- Dominant Gladiator's Scaled Shoulders
-								},
-								{	-- Dominant Gladiator's Greatcloak of Faith
-									["itemID"] = 148414,	-- Dominant Gladiator's Greatcloak of Faith
-								},
-								{	-- Dominant Gladiator's Scaled Breastplate
-									["itemID"] = 148537,	-- Dominant Gladiator's Scaled Breastplate
-								},
-								{	-- Dominant Gladiator's Scaled Wristplates
-									["itemID"] = 148542,	-- Dominant Gladiator's Scaled Wristplates
-								},
-								{	-- Dominant Gladiator's Scaled Gauntlets
-									["itemID"] = 148531,	-- Dominant Gladiator's Scaled Gauntlets
-								},
-								{	-- Dominant Gladiator's Scaled Girdle
-									["itemID"] = 148540,	-- Dominant Gladiator's Scaled Girdle
-								},
-								{	-- Dominant Gladiator's Scaled Legguards
-									["itemID"] = 148535,	-- Dominant Gladiator's Scaled Legguards
-								},
-								{	-- Dominant Gladiator's Scaled Sabatons
-									["itemID"] = 148529,	-- Dominant Gladiator's Scaled Sabatons
-								},
-								{	-- Demonic Gladiator's Scaled Helm
-									["itemID"] = 149025,	-- Demonic Gladiator's Scaled Helm
-								},
-								{	-- Demonic Gladiator's Scaled Shoulders
-									["itemID"] = 149030,	-- Demonic Gladiator's Scaled Shoulders
-								},
-								{	-- Demonic Gladiator's Greatcloak of Faith
-									["itemID"] = 148906,	-- Demonic Gladiator's Greatcloak of Faith
-								},
-								{	-- Demonic Gladiator's Scaled Breastplate
-									["itemID"] = 149029,	-- Demonic Gladiator's Scaled Breastplate
-								},
-								{	-- Demonic Gladiator's Scaled Wristplates
-									["itemID"] = 149034,	-- Demonic Gladiator's Scaled Wristplates
-								},
-								{	-- Demonic Gladiator's Scaled Gauntlets
-									["itemID"] = 149023,	-- Demonic Gladiator's Scaled Gauntlets
-								},
-								{	-- Demonic Gladiator's Scaled Girdle
-									["itemID"] = 149032,	-- Demonic Gladiator's Scaled Girdle
-								},
-								{	-- Demonic Gladiator's Scaled Legguards
-									["itemID"] = 149027,	-- Demonic Gladiator's Scaled Legguards
-								},
-								{	-- Demonic Gladiator's Scaled Sabatons
-									["itemID"] = 149021,	-- Demonic Gladiator's Scaled Sabatons
-								},
+								i(147931),	-- Fierce Gladiator's Cloak of Battle
+								i(148139),	-- Fierce Gladiator's Plate Chestpiece
+								i(148143),	-- Fierce Gladiator's Plate Gauntlets
+								i(148151),	-- Fierce Gladiator's Plate Girdle
+								i(148145),	-- Fierce Gladiator's Plate Helm
+								i(148147),	-- Fierce Gladiator's Plate Legguards
+								i(148149),	-- Fierce Gladiator's Plate Shoulders
+								i(148141),	-- Fierce Gladiator's Plate Warboots
+								i(148153),	-- Fierce Gladiator's Plate Wristplates
 							}),
 							gs(1400, {	-- Fierce Gladiator's Dreadplate Armor
 								i(147939),	-- Fierce Gladiator's Dreadplate Helm

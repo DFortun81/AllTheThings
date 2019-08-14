@@ -245,68 +245,6 @@ _.GearSets =
 								i(144722),	-- Cruel Gladiator's Ringmail Kilt
 								i(144716),	-- Cruel Gladiator's Ringmail Boots
 							}),
-							{	-- Cruel Gladiator's Scaled Armor
-								["setID"] = 1265, 	-- Cruel Gladiator's Scaled Armor
-								["classes"] = {
-									2,	-- Paladin
-								},
-								["g"] = {
-									{	-- Cruel Gladiator's Scaled Helm
-										["itemID"] = 144665,	-- Cruel Gladiator's Scaled Helm
-									},
-									{	-- Cruel Gladiator's Scaled Shoulders
-										["itemID"] = 144670,	-- Cruel Gladiator's Scaled Shoulders
-									},
-									{	-- Cruel Gladiator's Greatcloak of Faith
-										["itemID"] = 144546,	-- Cruel Gladiator's Greatcloak of Faith
-									},
-									{	-- Cruel Gladiator's Scaled Breastplate
-										["itemID"] = 144669,	-- Cruel Gladiator's Scaled Breastplate
-									},
-									{	-- Cruel Gladiator's Scaled Wristplates
-										["itemID"] = 144674,	-- Cruel Gladiator's Scaled Wristplates
-									},
-									{	-- Cruel Gladiator's Scaled Gauntlets
-										["itemID"] = 144663,	-- Cruel Gladiator's Scaled Gauntlets
-									},
-									{	-- Cruel Gladiator's Scaled Girdle
-										["itemID"] = 144672,	-- Cruel Gladiator's Scaled Girdle
-									},
-									{	-- Cruel Gladiator's Scaled Legguards
-										["itemID"] = 144667,	-- Cruel Gladiator's Scaled Legguards
-									},
-									{	-- Cruel Gladiator's Scaled Sabatons
-										["itemID"] = 144661,	-- Cruel Gladiator's Scaled Sabatons
-									},
-									{	-- Ferocious Gladiator's Scaled Helm
-										["itemID"] = 145507,	-- Ferocious Gladiator's Scaled Helm
-									},
-									{	-- Ferocious Gladiator's Scaled Shoulders
-										["itemID"] = 145512,	-- Ferocious Gladiator's Scaled Shoulders
-									},
-									{	-- Ferocious Gladiator's Greatcloak of Faith
-										["itemID"] = 145388,	-- Ferocious Gladiator's Greatcloak of Faith
-									},
-									{	-- Ferocious Gladiator's Scaled Breastplate
-										["itemID"] = 145511,	-- Ferocious Gladiator's Scaled Breastplate
-									},
-									{	-- Ferocious Gladiator's Scaled Wristplates
-										["itemID"] = 145516,	-- Ferocious Gladiator's Scaled Wristplates
-									},
-									{	-- Ferocious Gladiator's Scaled Gauntlets
-										["itemID"] = 145505,	-- Ferocious Gladiator's Scaled Gauntlets
-									},
-									{	-- Ferocious Gladiator's Scaled Girdle
-										["itemID"] = 145514,	-- Ferocious Gladiator's Scaled Girdle
-									},
-									{	-- Ferocious Gladiator's Scaled Legguards
-										["itemID"] = 145509,	-- Ferocious Gladiator's Scaled Legguards
-									},
-									{	-- Ferocious Gladiator's Scaled Sabatons
-										["itemID"] = 145503,	-- Ferocious Gladiator's Scaled Sabatons
-									},
-								},
-							},
 							gs(1265, {	-- Cruel Gladiator's Scaled Armor
 								i(144665),	-- Cruel Gladiator's Scaled Helm
 								i(144670),	-- Cruel Gladiator's Scaled Shoulders
@@ -317,6 +255,15 @@ _.GearSets =
 								i(144672),	-- Cruel Gladiator's Scaled Girdle
 								i(144667),	-- Cruel Gladiator's Scaled Legguards
 								i(144661),	-- Cruel Gladiator's Scaled Sabatons
+								i(145507),	-- Ferocious Gladiator's Scaled Helm
+								i(145512),	-- Ferocious Gladiator's Scaled Shoulders
+								i(145388),	-- Ferocious Gladiator's Greatcloak of Faith
+								i(145511),	-- Ferocious Gladiator's Scaled Breastplate
+								i(145516),	-- Ferocious Gladiator's Scaled Wristplates
+								i(145505),	-- Ferocious Gladiator's Scaled Gauntlets
+								i(145514),	-- Ferocious Gladiator's Scaled Girdle
+								i(145509),	-- Ferocious Gladiator's Scaled Legguards
+								i(145503),	-- Ferocious Gladiator's Scaled Sabatons
 							}),
 							gs(1225, {	-- Cruel Gladiator's Plate Armor
 								i(144770),	-- Cruel Gladiator's Plate Helm

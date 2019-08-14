@@ -9,9 +9,7 @@ _.Zones =
 			m(1021, {	-- Chamber of Heart
 				["achievementID"] = 12918,	-- Have a Heart
 				["description"] = "|cff66ccffThe Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.|r",
-				["maps"] = {
-					1473,	-- Chamber of Heart
-				},
+				["maps"] = { 1473 },	-- Chamber of Heart (Repaired)
 				["lvl"] = 110,
 				["g"] = {
 					n(-4,   {	-- Achievements
@@ -51,35 +49,11 @@ _.Zones =
 						}),
 					}),
 					n(-17,  {	-- Quests
-						q(55374, {	-- A Disturbance Beneath the Earth
-							["qg"] = 152194,	-- MOTHER
-							["coord"] = { 48.1, 72.2, 1473 },
-							["sourceQuest"] = 55533,	-- MOTHER Knows Best
-						}),
-						q(56162, {	-- Back Out to Sea
-							["qg"] = 152206,	-- Magni Bronzebeard
-							["coord"] = { 50.0, 59.1, 1355 },
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 57010,	-- Harnessing the Power
-						}),
-						q(56161, {	-- Back Out to Sea
-							["qg"] = 152206,	-- Magni Bronzebeard
-							["coord"] = { 50.0, 59.1, 1473 },
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 57010,	-- Harnessing the Power
-						}),
-						q(57010, {	-- Harnessing the Power
-							["qg"] = 152194,	-- MOTHER
-							["coord"] = { 48.0, 72.2, 1473 },
-							["sourceQuest"] = 55618,	-- The Heart Forge
-						}),
 						q(52428, {	-- Infusing the Heart
 							["qg"] = 136907,	-- Magni Bronzebeard
-							["coord"] = { 50.3, 54.4, 1473 },
-							["sourceQuests"] = { 
-								53028,	-- The Heart of Azeroth (A)
-								51211,	-- The Heart of Azeroth (H)
-							},
+							["coord"] = { 50.3, 54.4, 1021 },
+							["sourceQuest"] = 51211,	-- The Heart of Azeroth
+							["lvl"] = 110,
 							["g"] = {
 								i(160909),	-- Crown of the Champion
 								i(160913),	-- Crown of the Champion
@@ -106,11 +80,61 @@ _.Zones =
 								i(159901),	-- Breastplate of the Champion
 								i(159905),	-- Breastplate of the Champion
 							},
-						}),	
+						}),
+						q(51403, {	-- The Speaker's Imperative (A)
+							["qg"] = 136907,	-- Magni Bronzebeard
+							["coord"] = { 50.1, 53.6, 1021 },
+							["sourceQuest"] = 52428,	-- Infusing the Heart
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 110,
+						}),
+						q(53031, {	-- The Speaker's Imperative (H)
+							["qg"] = 136907,	-- Magni Bronzebeard
+							["coord"] = { 50.1, 53.6, 1021 },
+							["sourceQuest"] = 52428,	-- Infusing the Heart
+							["races"] = HORDE_ONLY,
+							["lvl"] = 110,
+						}),
+						-- Unlock Heartforge / Essences
 						q(55533, {	-- MOTHER Knows Best
 							["qg"] = 152206,	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, 1473 },
 							--["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
+							["lvl"] = 120,
+						}),
+						q(55374, {	-- A Disturbance Beneath the Earth
+							["qg"] = 152194,	-- MOTHER
+							["coord"] = { 48.1, 72.2, 1473 },
+							["sourceQuest"] = 55533,	-- MOTHER Knows Best
+							["lvl"] = 120,
+						}),
+						q(55400, {	-- Take My Hand
+							["qg"] = 151641,	-- Spiritwalker Ebonhorn
+							["coord"] = { 49.4, 68.3, 650 },
+							["sourceQuest"] = 55374,	-- A Disurbance Beneath the Earth
+							["lvl"] = 120,
+							["maps"] = { 650 },	-- Highmountain
+						}),
+						q(55407, {	-- Calming the Spine
+							["qg"] = 151695,	-- Spiritwalker Ebonhorn
+							["coord"] = { 27.0, 45.9, 1472 },
+							["sourceQuest"] = 55400,	-- Take My Hand
+							["lvl"] = 120,
+							["maps"] = { 1472 },	-- The Dragon's Spine
+						}),
+						q(55425, {	-- Dominating the Indomitable
+							["qg"] = 152385,	-- Spiritwalker Ebonhorn
+							["coord"] = { 17.5, 62.1, 1472 },
+							["sourceQuest"] = 55407,	-- Calming the Spine
+							["lvl"] = 120,
+							["maps"] = { 1472 },	-- The Dragon's Spine
+						}),
+						q(55497, {	-- A Friendly Face
+							["qg"] = 152385,	-- Highmountain Shaman (Ebonhorn)
+							["coord"] = { 18.9, 58.0, 1472 },
+							["sourceQuest"] = 55425,	-- Dominating the Indomitable
+							["lvl"] = 120,
+							["maps"] = { 1472 },	-- The Dragon's Spine
 						}),
 						q(55618, {	-- The Heart Forge
 							["qg"] = 152194,	-- MOTHER
@@ -122,17 +146,22 @@ _.Zones =
 								}),
 							},
 						}),
-						q(53031, {	-- The Speaker's Imperative
-							["sourceQuests"] = { 52428 },	-- Infusing the Heart
-							["coord"] = { 50.1, 53.6, 1021 },
-							["races"] = HORDE_ONLY,
-							["qg"] = 136907,	-- Magni Bronzebeard
+						q(57010, {	-- Harnessing the Power
+							["qg"] = 152194,	-- MOTHER
+							["coord"] = { 48.0, 72.2, 1473 },
+							["sourceQuest"] = 55618,	-- The Heart Forge
 						}),
-						q(51403, {	-- The Speaker's Imperative
-							["sourceQuests"] = { 52428 },	-- Infusing the Heart
-							["coord"] = { 50.1, 53.6, 1021 },
+						q(56162, {	-- Back Out to Sea (A)
+							["qg"] = 152206,	-- Magni Bronzebeard
+							["coord"] = { 50.0, 59.1, 1473 },
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 136907,	-- Magni Bronzebeard	
+							["sourceQuest"] = 57010,	-- Harnessing the Power
+						}),
+						q(56161, {	-- Back Out to Sea (H)
+							["qg"] = 152206,	-- Magni Bronzebeard
+							["coord"] = { 50.0, 59.1, 1473 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 57010,	-- Harnessing the Power
 						}),
 						-- Heart of Azeroth Level 54
 						q(55390, {	-- In Darkness, I Dream

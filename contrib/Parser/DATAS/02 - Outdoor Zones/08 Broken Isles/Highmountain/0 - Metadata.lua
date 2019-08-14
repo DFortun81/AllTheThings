@@ -20,9 +20,8 @@ _.Zones =
 				660,	-- Feltotem Caverns
 				750,	-- Thunder Totem
 				826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
-				869,	-- Highmountain (legion invasion ship 1)
-				870,	-- Highmountain (legion invasion ship 2)
-				1472,	-- The Dragon's Spine (8.2 Heart Forge unlock scenario)
+				869,	-- Highmountain (Legion Invasion Ship 1)
+				870,	-- Highmountain (Legion Invasion Ship 2)
 			},
 			["lvl"] = 98,
 		}),
