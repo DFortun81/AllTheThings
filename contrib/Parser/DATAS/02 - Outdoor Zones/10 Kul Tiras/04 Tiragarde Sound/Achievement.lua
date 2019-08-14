@@ -180,11 +180,10 @@ _.Zones =
 							}),
 						},
 					}),
-					{
-						["criteriaID"] = 6,	-- Secrets of the Deep
+					crit(6, {	-- Secrets of the Deep
 						["description"] = "This can be found in Boralus and requires that you find a number of scrolls before finishing the criteria.",
 						["coord"] = { 61.94, 84.5, 895 }
-					},
+					}),
 				}),
 			}),
 		}),

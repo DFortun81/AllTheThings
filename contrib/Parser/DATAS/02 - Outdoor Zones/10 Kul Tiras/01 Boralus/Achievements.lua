@@ -61,12 +61,9 @@ _.Zones =
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
 						o(292673, {	-- A Damp Scroll
-							["description"] = "Located in the Underwater Cave in Stormsong Monastery.  Scroll located in skeleton's hand next to altar.",
+							["description"] = "Located in the underwater cave in Stormsong Monastery.  Scroll located in skeleton's hand next to altar.",
 							["questID"] = 52134,
-							["coords"] = {
-								{ 61.13, 84.15, 1161 },	-- Entrance
-								{ 55.88, 91.19, 1161 },	-- Altar
-							},
+							["coord"] = { 61.13, 84.15, 1161 },	-- Entrance
 						}),
 						o(292674, {	-- A Damp Scroll
 							["description"] = "Located on the floor next to K'thir Occultist in Stormsong Monastery down in the basement.",
@@ -93,12 +90,12 @@ _.Zones =
 							},
 						}),
 						o(292677, {	-- A Damp Scroll
-							["description"] = "Located in the building before the underwater cave in Stormsong Monastery.",
+							["description"] = "Located upstairs in the building before the underwater cave in Stormsong Monastery.",
 							["questID"] = 52136,
 							["coord"] = { 63.03, 81.76, 1161 },
 						}),
 						o(292686, {	-- Ominous Altar
-							["description"] = "Once you have clicked all five damp scrolls return back to the altar.  From there you will click the altar and click each time new line comes up.  Once all five are entered it will ask you are sure hit \"Accept\".  You will then be teleported (way south of Tiragarde Sound) where a gem will be in front of you.  Click it to open it up and receive the toy.",
+							["description"] = "Once you have clicked all five damp scrolls, return to the altar in the underwater cave.  From there you will click the altar and click each time a new line comes up.  Once all five are entered it will ask you are sure hit \"Accept\".  You will then be teleported (way south of Tiragarde Sound) where a gem will be in front of you.  Click it to open it up and receive the toy.",
 							["questID"] = 52195,	-- Secrets of the Depths
 							["sourceQuests"] = {
 								52134,	-- A Damp Scroll
@@ -107,6 +104,7 @@ _.Zones =
 								52137,	-- A Damp Scroll
 								52138,	-- A Damp Scroll
 							},
+							["coord"] = { 61.13, 84.15, 1161 },	-- Entrance
 							["g"] = {
 								crit(6, {	-- Secrets of the Deep
 									["achievementID"] = 12852,	-- Treasures of Tiragarde Sound
