@@ -591,6 +591,7 @@ _.Zones =
 				--	verify that epic recycling requisition is daily.  possibly repeatable?
 				--	if recycling requisitions are separate based on whether you get the items from the scrapyard or the reclamation rig, we should probably move the quests to the NYI file or something so that one doesn't check off the other!  (or mark them repeatable or whatever)
 				--	possibly attach just the 'box of assorted parts' questID to the overall header instead of the box itself?
+					["modelScale"] = 4.2,
 					["creatureID"] = 150451,	-- Reclamation Rig (before being built)
 					["coord"] = { 70.0, 61.5, 1462 },
 					["g"] = {
