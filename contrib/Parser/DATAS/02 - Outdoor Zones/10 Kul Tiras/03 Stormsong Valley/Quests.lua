@@ -289,6 +289,7 @@ _.Zones =
 				q(49996, {	-- Rearmament
 					["sourceQuests"] = { 49975 },	-- Rest in the Depths
 					["coord"] = { 66.4, 56.4, 942 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 131249,	-- Taelia
 					["g"] = {
 						i(155204),	-- Brineworks Boot Knife
@@ -380,6 +381,7 @@ _.Zones =
 						50610,	-- Gathering Storm
 					},
 					["coord"] = { 66.0, 47.4, 942 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 134639,	-- Brother Pike
 					["g"] = {
 						i(158681),	-- Lightning Tether
