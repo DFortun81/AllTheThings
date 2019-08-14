@@ -610,6 +610,7 @@ _.Zones =
 						}),
 						i(168395, {	-- Irradiated Box of Assorted Parts
 							["description"] = "During the Reclamation Rig event, use the Supercollider on each Irradiated Elemental to make them unstable.  If you complete the hardmode event correctly, you'll face three Unstable Irradiated Golems at the end of the encounter.",
+							["questID"] = 55794,	-- popped immediately upon death of final golems; shift+clicking to refresh afterwards also popped 55848.  this item was the only thing i received from HM rig.  it's possible that 55848 is the "item received" quest and that 55794 is the "rig done for the first time today" quest when hardmode is active (or vice versa!)... if we could isolate the non-hardmode "rig is done for the first time today" quest then we could maybe attach both with altQuests.  WHY IS QUEST TRACKING SO COMPLICATED.  @BLIZZARD ANSWER FOR YOUR CRIMES
 							["g"] = {
 								i(168495, {	-- Blueprint: Rustbolt Requisitions
 									["questID"] = 55074,
