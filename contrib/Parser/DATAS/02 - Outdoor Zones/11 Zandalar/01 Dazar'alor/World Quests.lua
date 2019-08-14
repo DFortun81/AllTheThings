@@ -23,6 +23,7 @@ _.Zones =
 					}),
 					q(51496, {	-- Loa Your Standards
 						["lvl"] = 120,
+						--["races"] = HORDE_ONLY,	-- This is likely Horde Only due to quests that need to be completed for phasing but needs verification
 						["collectible"] = false,
 					}),
 					q(50747, { 	-- No Good Amani

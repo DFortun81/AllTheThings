@@ -187,14 +187,7 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53286, {	-- Blooming Siren's Sting
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53285, {	-- Blooming Star Moss
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
+				
 				q(52063, {	-- Boarder Patrol
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -623,11 +616,7 @@ _.Zones =
 				q(51557, {	-- Irontide Warning
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52168, {	-- It's Lit
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
+				
 				q(52321, {	-- Kickers
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -650,11 +639,7 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52794, {	-- Lizards and Ledgers
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
+				
 				q(50354, {	-- Look Out!
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -699,10 +684,7 @@ _.Zones =
 				q(51209, {	-- Mighty Grokkfist
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52880, {	-- Milden Mud Snout
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
+				
 				q(51215, {	-- Milking Goats
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1435,6 +1417,12 @@ _.Zones =
 					q(53286, {	-- Blooming Siren's Sting
 						["lvl"] = 120,
 						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(53285, {	-- Blooming Star Moss
+						["requireSkill"] = 182,	-- Herbalism
+						["collectible"] = false,
+						["lvl"] = 120,
 					}),
 					q(52045, {	-- Boarder Patrol
 						["lvl"] = 120,
@@ -1507,23 +1495,23 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51981, {	-- Earthcaller's Abode
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53878, {	-- Emergency Extrication (Faction Assault WQ)
+						["collectible"] = false,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
 					q(52947, {	-- Ettin Outta Here
 						["collectible"] = false,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(53878, {	-- Emergency Extrication (Faction Assault WQ)
-						["collectible"] = false,
-						--["races"] = ,	-- Needs Verification	-- Neutral quest on wowhead(Completed as horde)
-						["lvl"] = 110,
-					}),
 					q(51781, {	-- Foreman Scripps
 						["lvl"] = 120,
-						["collectible"] = false,
-					}),
-					q(51981, {	-- Earthcaller's Abode
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52179, {	-- Fortified Resistance
@@ -1604,6 +1592,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(52168, {	-- It's Lit
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(52321, {	-- Kickers
 						["npcID"] = 141029,	-- Kickers
 						["lvl"] = 120,
@@ -1613,6 +1606,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+					}),
+					q(52794, {	-- Lizards and Ledgers
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52230, {	-- Loose Change
 						["lvl"] = 120,
@@ -1627,6 +1625,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+					}),
+					q(52880, {	-- Milden Mud Snout
+						["collectible"] = false,
+						["lvl"] = 120,
 					}),
 					q(52982, {	-- Mine or Trouble
 						["lvl"] = 120,

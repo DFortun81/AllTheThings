@@ -8,6 +8,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			936,	-- Freehold
 		},
 		["groups"] = {
+			n(-34, {	-- World Quests
+				q(52454, {	-- Freehold: Dread Captain Vandegrim
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2102, {	-- Skycap'n Kragg
 					["crs"] = {

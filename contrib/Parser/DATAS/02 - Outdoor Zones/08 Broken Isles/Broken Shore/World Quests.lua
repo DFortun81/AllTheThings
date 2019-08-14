@@ -29,7 +29,6 @@ _.Zones =
 					q(46308),	-- Leave a Trail
 					q(46046),	-- Life's a Lich
 					q(46754),	-- Magical Beasts
-					q(46948),	-- Malificus
 					q(46755),	-- Mission: Felraging
 					q(46822),	-- Natural Selection
 					q(46833),	-- Nature Unshackled
@@ -41,7 +40,6 @@ _.Zones =
 					q(46945),	-- Si'vash
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
-					q(46032),	-- The Tormented Return
 					q(46325),	-- The United Front
 				}),
 ]]--
@@ -176,6 +174,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(46948, {	-- Malificus
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(46707, {	-- Minion! Kill That One Too!
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -254,6 +256,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46160, {	-- The Shackled Void
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46032, {	-- The Tormented Return
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

@@ -27,6 +27,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(47456, {	-- Calming the Void
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(48727, {	-- Captain Faruq
 					["lvl"] = 110,
 					["collectible"] = false,

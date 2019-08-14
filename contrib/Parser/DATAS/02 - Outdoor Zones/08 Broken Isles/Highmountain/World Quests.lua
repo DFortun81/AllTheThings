@@ -67,7 +67,6 @@ _.Zones =
 				q(43448),	-- The Frozen King
 				q(41232),	-- Thick Ironhorn Hide
 				q(44823),	-- Thunder Totem Cleanup Detail
-				q(41011),	-- Umbralshard Rituals
 				q(43616),	-- WANTED: Bodash the Hoarder
 				q(44291),	-- WANTED: Crawshuk the Hungry
 				q(43617),	-- WANTED: Devouring Darkness
@@ -368,6 +367,10 @@ _.Zones =
 				}),
 				q(46190, {	-- Ulgrom (Invasion WQ)
 					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41011, {	-- Umbralshard Rituals
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(41428, {	-- Unstable Portal

@@ -67,16 +67,14 @@ _.Zones =
 				q(43620),	-- WANTED: Egyl the Enduring
 				q(43621),	-- WANTED: Fathnyr
 				q(43622),	-- WANTED: Glimar Ironfist
-				q(43623),	-- WANTED: Hannval the Butcher
 				q(43624),	-- WANTED: Isel the Hammer
 				q(43438),	-- WANTED: Nameless King
-				q(43625),	-- WANTED: Nameless King
 				q(43626),	-- WANTED: Thane Irglov
 				q(43628),	-- WANTED: Urgev the Flayer
 				q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
 				q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
 				q(41497),	-- Wild Leystone Seams
-				q(41297),	-- Work Order: Fjarnskaggl
+				
 				q(41313),	-- Work Order: Leystone
 				q(41660),	-- Work Order: Skaggldrynk
 				q(41344),	-- Work Order: Stormscales
@@ -382,7 +380,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43623, {	-- WANTED: Hannval the Butcher
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43452, {	-- WANTED: Isel the Hammer
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43625, {	-- WANTED: Nameless King
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -419,6 +425,11 @@ _.Zones =
 					["groups"] = {
 						i(137865),	-- Design: Queen's Opal Loop (Rank 3)
 					},
+				}),
+				q(41297, {	-- Work Order: Fjarnskaggl
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41648, {	-- Work Order: Silkweave Bracers
 					["requireSkill"] = 197,	-- Tailoring

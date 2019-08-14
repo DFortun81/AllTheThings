@@ -21,10 +21,8 @@ _.Zones =
 				q(41438),	-- Charged Leystone Deposits
 				q(43091),	-- DANGER: Arcanor Prime
 				q(44189),	-- DANGER: Bestrix
-				q(43121),	-- DANGER: Chief Treasurer Jabrill
 				q(44187),	-- DANGER: Cinderwing
 				q(43059),	-- DANGER: Fjordun
-				q(43079),	-- DANGER: Immolian
 				q(44190),	-- DANGER: Jade Darkhaven
 				q(43798),	-- DANGER: Kosumoth the Hungering
 				q(44192),	-- DANGER: Lysanis Shadesoul
@@ -123,6 +121,14 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43175, {	-- DANGER: Deepclaw
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43121, {	-- DANGER: Chief Treasurer Jabrill
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43079, {	-- DANGER: Immolian
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

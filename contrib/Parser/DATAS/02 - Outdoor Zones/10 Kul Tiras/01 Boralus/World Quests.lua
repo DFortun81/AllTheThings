@@ -27,6 +27,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51577, {	-- Defending the Academy
+						["collectible"] = false,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(50776, {	-- False Prophets
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

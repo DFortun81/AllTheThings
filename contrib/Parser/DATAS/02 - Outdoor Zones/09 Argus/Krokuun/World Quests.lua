@@ -6,6 +6,10 @@ _.Zones =
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
 			n(-34, {	-- World Quests
+				q(48285, {	-- Aerial Superiority
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(49043, {	-- Baneglow
 					["lvl"] = 110,
 					["filterID"] = 101,	-- Battle Pet

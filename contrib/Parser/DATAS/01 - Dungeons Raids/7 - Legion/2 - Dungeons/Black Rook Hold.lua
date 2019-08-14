@@ -43,6 +43,10 @@ _.Instances = { tier(7, {	-- Legion
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43642, {	-- Black Rook Hold: The Sorrow
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43762, {	-- Black Rook Hold: Traitor's Demise
 					["lvl"] = 110,
 					["collectible"] = false,

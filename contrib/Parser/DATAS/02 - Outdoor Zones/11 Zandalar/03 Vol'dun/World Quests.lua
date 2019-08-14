@@ -212,6 +212,7 @@ _.Zones =
 					}),
 					q(51180, {	-- Instructions Not Included
 						["lvl"] = 120,
+						["races"] = HORDE_ONLY,	-- very slim chance this isn't Horde only but given that there are 8 versions of the quest with 4 marked Alliance only it's more likely than not (could still use verification though)
 						["collectible"] = false,
 					}),
 					q(53885, {	-- Isolated Victory (Faction Assault WQ)

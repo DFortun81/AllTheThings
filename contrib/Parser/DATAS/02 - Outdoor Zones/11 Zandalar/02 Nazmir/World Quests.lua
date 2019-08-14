@@ -465,6 +465,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50529, {	-- The Spirits Within
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51856, {	-- The Underrot: Rotmaw
 						["lvl"] = 120,
 						["collectible"] = false,

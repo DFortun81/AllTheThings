@@ -15,8 +15,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["g"] = {
 			n(-17, {	-- Quests
 				n(-34, {	-- World Quests
+					q(51213, {	-- Waycrest Manor: No need to Hag-gle
+						["collectible"] = false,
+						["lvl"] = 120,
+					}),
 					q(51212, {	-- Waycrest Manor: Witchy Kithcen
-						["isDaily"] = true,
+						["collectible"] = false,
+						["lvl"] = 120,
 					}),
 				}),
 				q(50990, {	-- Cutting Edge Poultry Science

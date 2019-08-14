@@ -340,11 +340,7 @@ _.Zones =
 					q(49405, {	-- Defenders of Daelin's Gate
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51577, {	-- Defending the Academy
-						["collectible"] = false,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
+					
 					q(49239, {	-- Dress to Impress
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -358,11 +354,7 @@ _.Zones =
 						["collectible"] = false,
 						["lvl"] = 110,
 					}),
-					q(53877, {	-- Eastpoint Encounter
-						["collectible"] = false,
-						["lvl"] = 110,
-						["races"] = ALLIANCE_ONLY,
-					}),
+					
 					q(48372, {	-- Eldritch Invocations
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -818,10 +810,7 @@ _.Zones =
 					q(49398, {	-- Raise a Glass!
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51890, {	-- Ranja the Last Chillpaw
-						["collectible"] = false,
-						["lvl"] = 120,
-					}),
+					
 					q(51580, {	-- Rear Admiral Hainsworth
 						["collectible"] = false,
 						["lvl"] = 120,
@@ -1711,6 +1700,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(53877, {	-- Eastpoint Encounter (Faction Assault WQ)
+						["collectible"] = false,
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(51311, {	-- Energizing Extract
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -1905,6 +1899,10 @@ _.Zones =
 					q(51661, {	-- Raging Swell
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(51890, {	-- Ranja the Last Chillpaw
+						["collectible"] = false,
+						["lvl"] = 120,
 					}),
 					q(51566, {	-- Resurgence of the Beast
 						["lvl"] = 120,

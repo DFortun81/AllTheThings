@@ -123,10 +123,7 @@ _.Zones =
 				q(51018, {	-- Asking for a Friend
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51542, {	-- Avalanche
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
+				
 				q(54681, {	-- Azerite Caravan
 					["collectible"] = false,
 					["lvl"] = 110,
@@ -399,10 +396,7 @@ _.Zones =
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51919, {	-- Emily Mayville
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
+				
 				q(53867, {	-- Engineer Bolthold
 					["collectible"] = false,
 					["lvl"] = 110,
@@ -1338,6 +1332,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51542, {	-- Avalanche
+						["collectible"] = false,
+						["lvl"] = 120,
+					}),
 					q(54681, {	-- Azerite Caravan (Faction Assault WQ)
 						["coord"] = { 32.13, 46.54, 896 },
 						["crs"] = { 148676 },	-- Caravan Commander Veronica
@@ -1497,6 +1495,10 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+					}),
+					q(51919, {	-- Emily Mayville
+						["collectible"] = false,
+						["lvl"] = 120,
 					}),
 					q(53867, {	-- Engineer Bolthold (Faction Assault WQ)
 						["lvl"] = 110,
