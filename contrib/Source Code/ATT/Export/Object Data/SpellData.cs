@@ -26,6 +26,7 @@ namespace ATT
                 {
                     WriteShortcut(builder, "selfie", "_.CreateSelfieFilter");
                     ExportField(builder, data, fields, "questID");
+                    fields.Remove("f");
                 }
                 else base.Build(builder, data, fields);
             }

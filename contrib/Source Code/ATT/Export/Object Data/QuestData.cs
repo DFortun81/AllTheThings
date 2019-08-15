@@ -25,6 +25,7 @@ namespace ATT
                 if (data.TryGetValue("f", out object fObj) && Convert.ToInt32(fObj) == 60)
                 {
                     WriteShortcut(builder, "selfie", "_.CreateSelfieFilter");
+                    fields.Remove("f");
                 }
                 else base.Build(builder, data, fields);
             }

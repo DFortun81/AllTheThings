@@ -5786,19 +5786,13 @@ app.BaseMusicRoll = {
 		elseif key == "collectible" or key == "trackable" then
 			return app.CollectibleMusicRolls;
 		elseif key == "collected" or key == "saved" then
-			if app.AccountWideMusicRolls then
-				if GetDataSubMember("CollectedMusicRolls", t.questID) then
-					return 1;
-				end
-			else
-				if GetTempDataSubMember("CollectedMusicRolls", t.questID) then
-					return 1;
-				end
-			end
 			if IsQuestFlaggedCompleted(t.questID) then
-				SetTempDataSubMember("CollectedMusicRolls", t.questID, 1);
-				SetDataSubMember("CollectedMusicRolls", t.questID, 1);
 				return 1;
+			end
+			if app.AccountWideMusicRolls then
+				if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
+					return 2;
+				end
 			end
 		elseif key == "lvl" then
 			return 100;
@@ -13654,7 +13648,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedFlightPaths", {});
 	GetDataMember("CollectedFollowers", {});
-	GetDataMember("CollectedMusicRolls", {});
 	GetDataMember("CollectedQuests", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("CollectedTitles", {});
@@ -13739,21 +13732,6 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedFollowers", myFollowers);
 	end
 	
-	-- Cache your character's music roll data.
-	local musicRolls = GetDataMember("CollectedMusicRollsPerCharacter", {});
-	local myMusicRolls = GetTempDataMember("CollectedMusicRolls", musicRolls[app.GUID]);
-	if not myMusicRolls then
-		myMusicRolls = {};
-		musicRolls[app.GUID] = myMusicRolls;
-		SetTempDataMember("CollectedMusicRolls", myMusicRolls);
-		SetDataMember("WipedCollectedMusicRollsPerCharacter", 1);
-	elseif not GetDataMember("WipedCollectedMusicRollsPerCharacter") then
-		SetDataMember("WipedCollectedMusicRollsPerCharacter", 1);
-		wipe(myMusicRolls);
-		wipe(musicRolls);
-		musicRolls[app.GUID] = myMusicRolls;
-	end
-	
 	-- Cache your character's quest data.
 	local quests = GetDataMember("CollectedQuestsPerCharacter", {});
 	local myQuests = GetTempDataMember("CollectedQuests", quests[app.GUID]);
@@ -13823,7 +13801,6 @@ app.events.VARIABLES_LOADED = function()
 		CleanData(factions, myfactions);
 		CleanData(followers, myFollowers);
 		CleanData(lockouts, myLockouts);
-		CleanData(musicRolls, myMusicRolls);
 		CleanData(recipes, myRecipes);
 		CleanData(titles, myTitles);
 		characters[app.GUID] = app.Me;
@@ -13856,8 +13833,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedFlightPaths",
 		"CollectedFlightPathsPerCharacter",
 		"CollectedIllusions",
-		"CollectedMusicRolls",
-		"CollectedMusicRollsPerCharacter",
 		"CollectedQuests",
 		"CollectedQuestsPerCharacter",
 		"CollectedSources",
@@ -13879,8 +13854,7 @@ app.events.VARIABLES_LOADED = function()
 		"UnobtainableItemFilters",
 		"WaypointFilters",
 		"EnableTomTomWaypointsOnTaxi",
-		"TomTomIgnoreCompletedObjects",
-		"WipedCollectedMusicRollsPerCharacter"
+		"TomTomIgnoreCompletedObjects"
 	}) do
 		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
 	end
