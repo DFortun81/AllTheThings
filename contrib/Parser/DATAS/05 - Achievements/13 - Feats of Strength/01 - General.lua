@@ -215,7 +215,7 @@ _.Achievements =
 					un(2, ach(6871)),	-- Realm First! Zen Master Skinner
 					un(2, ach(6872)),	-- Realm First! Zen Master Tailor
 					ach(13779, {		-- Phenomenal Cosmic Power
-						title(659),		-- , Azeroth's Champion"
+						title(407),		-- , Azeroth's Champion"
 					}),
 					ach(9597),	-- You're Really Doing It Wrong
 					un(2, ach(8812)),	-- You're Really Doing It Wrong (Level 90)

@@ -60,6 +60,15 @@ _.Zones =
 				n(115887, {	-- Trinket
 					["coord"] = { 32.4, 66.8, 650 },
 					["groups"] = {
+						i(142368), 	-- Cracked Falcosaur Beak
+						i(142361, {	-- Ivory Talon
+							i(142363),	-- Mark of Prey
+						}),
+						i(142364), 	-- Bag of Twigs
+						i(142366), 	-- Regurgitated Leaf
+						i(142367, { 	-- Ivory Feather
+							i(142363),	-- Mark of Prey
+						}),
 						i(142369),	-- Ivory Hawkstrider Mount
 					},
 				}),

@@ -16,18 +16,108 @@ profession(794, {	-- Archaeology
 	}),
 	currency(1174, {	-- Demonic
 		n(-17, {	-- Quests
+			-- Crystalline Eye of Undravius
 			q(41157, {	-- Corrupted Studies
+				["qg"] = 103484,	-- Brann Bronzebeard
 				["isWeekly"] = true,
-				["groups"] = {
+				["coord"] = { 52.2, 52.6, 634 },
+				["sourceQuest"] = 40857,	-- Bits and Pieces
+				["g"] = {
 					i(136362, {	-- Ancient War Remnants
-						i(131724),	-- Crystalline Eye of Undravius
+						i(131724), 	-- Crystalline Eye of Undravius
+						crit(1, {
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
 					}),
 				},
 			}),
-			q(41163, {	-- The Apocalypse Bringer
+			-- Imp Generator
+			q(41159, {	-- Process of Elimination
+				["qg"] = 103484,	-- Brann Bronzebeard
 				["isWeekly"] = true,
-				["groups"] = {
+				["coord"] = { 52.2, 52.6, 634 },
+				["sourceQuest"] = 41158,	-- Fragments of the Fjords
+			}),
+			q(41802, {	-- The Gates of Valor
+				["qg"] = 103484,	-- Brann Bronzebeard
+				["isWeekly"] = true,
+				["coord"] = { 52.2, 52.6, 634 },
+				["sourceQuest"] = 41159,	-- Process of Elimination
+				["g"] = {
+					i(131735),	-- Imp Generator
+					crit(5, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
+				},
+			}),
+			-- Wyrmy Tunkins
+			q(41162, {	-- And Into the Fel Fire
+				["qg"] = 103484,	-- Brann Bronzebeard
+				["isWeekly"] = true,
+				["coord"] = { 39.0, 38.6, 630 },
+				["sourceQuest"] = 41161,	-- Out of the Frying Pan
+			}),
+			q(41163, {	-- The Apocalypse Bringer
+				["qg"] = 103484,	-- Brann Bronzebeard
+				["isWeekly"] = true,
+				["coord"] = { 39.0, 38.6, 630 },
+				["sourceQuest"] = 41162,	-- And Into the Fel Fire
+				["g"] = {
 					i(136922),	-- Wyrmy Tunkins
+					crit(7, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
+				},
+			}),
+			-- Blood of Young Mannoroth
+			q(41165, {	-- Deciphering Demonology
+				["qg"] = 103484,	-- Brann Bronzebeard
+				["isWeekly"] = true,
+				["coord"] = { 27.0, 70.0, 680 },
+				["sourceQuest"] = 41164,	-- One Step Closer
+			}),
+			q(41166, {	-- Dark Secrets
+				["qg"] = 103484,	-- Brann Bronzebeard
+				["isWeekly"] = true,
+				["coord"] = { 27.0, 70.0, 680 },
+				["sourceQuest"] = 41165,	-- Deciphering Demonology
+				["g"] = {
+					i(131743),	-- Blood of Young Mannoroth
+					crit(10, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
+				},
+			}),
+			-- Purple Hills of Mac'Aree
+			q(41168, {	-- The Purple Hills of Mac'Aree
+				["qg"] = 103484,	-- Brann Bronzebeard
+				["isWeekly"] = true,
+				["coord"] = { 61.8, 87.9, 641 },
+				["sourceQuest"] = 41167,	-- Fel Fragments
+			}),
+			q(41169, {	-- Darkheart Thicket: Through the Fog
+				["qg"] = 103484,	-- Brann Bronzebeard
+				["isWeekly"] = true,
+				["coord"] = { 61.8, 87.9, 641 },
+				["sourceQuest"] = 41168,	-- The Purple Hills of Mac'Aree
+				["g"] = {
+					i(131732),	-- Purple Hills of Mac'Aree
+					crit(12, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
+				},
+			}),
+			--
+			q(41170, {	-- The Relic Renewed
+				["sourceQuests"] = {	-- Hidden Tracking quests used, as the other quests reset weekly.
+					41871, 	-- Darkheart Thicket: Through the Fog
+					41870,	-- Dark Secrets
+					41869,	-- The Apocalypse Bringer
+					41868,	-- The Gates of Valor
+					41867,	-- Corrupted Studies
+				},
+				["g"] = {
+					ach(10606),	-- The Dwarven Dream
 				},
 			}),
 		}),
@@ -109,6 +199,113 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(1172, {	-- Highborne
+		n(-17, {	-- Quests
+			-- Key of Kalyndras
+			q(41178, {	-- Explosive Results
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 38.8, 81.6, 641 },
+				["sourceQuest"] = 41177,	-- Goblin Archaeology
+			}),
+			q(41179, {	-- What Once Was Lost
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 38.8, 81.6, 641 },
+				["sourceQuest"] = 41178,
+				["g"] = {
+					i(136383, {	-- Ravencrest Cache
+						i(131745), 	-- Key of Kalyndras
+						crit(6, {
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					}),
+				},
+			}),
+			-- Key to Nar'thalas Academy
+			q(41184, {	-- Tried and True
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 38.2, 90, 630 },
+				["sourceQuest"] = 41183,	-- Academic Exploration
+			}),
+			q(41185, {	-- The Keys to Success
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 38.2, 90, 630 },
+				["sourceQuest"] = 41184,
+				["g"] = {
+					i(131744, {		-- Key to Nar'thalas Academy
+						title(348),	-- Headmaster / Headmistress
+					}),
+					crit(11, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
+				},
+			}),
+			-- Crown Jewels of Suramar
+			q(41175, {	-- Fit for an Elven Queen
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 38.2, 90, 680 },
+				["sourceQuest"] = 41174,	-- Worth Its Weight
+			}),
+			q(41176, {	-- Sifting Through the Rubble
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 38.2, 90, 680 },
+				["sourceQuest"] = 41175,	-- Fit for an Elven Queen
+				["g"] = {
+					i(131740),		-- Crown Jewels of Suramar
+					crit(4, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
+				},
+			}),
+			-- Starlight Beacon
+			q(41172, {	-- Echoes of My Ancestors
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 47.4, 42.6, 630 },
+				["sourceQuest"] = 41171,	-- The Reliquary Calls
+			}),
+			q(41173, {	-- A Beacon of Hope
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 47.4, 42.6, 630 },
+				["sourceQuest"] = 41172,	-- Echoes of My Ancestors
+				["g"] = {
+					i(131717),	-- Starlight Beacon
+					crit(2, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
+				},
+			}),
+			-- Shard of Sciallax
+			q(41181, {	-- Narrowing Down
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 38.2, 90, 680 },
+				["sourceQuest"] = 41180,	-- Unspeakable Power
+			}),
+			q(41182, {	-- Uncovering the Orb of Sciallax
+				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["isWeekly"] = true,
+				["coord"] = { 38.2, 90, 680 },
+				["sourceQuest"] = 41181,	-- Narrowing Down
+				["g"] = {
+					i(134076),	-- Crystallized Shard of Sciallax
+					i(134079),	-- Ardent Shard of Sciallax
+					i(134081),	-- Adamant Shard of Sciallax
+					i(131731),	-- Glinting Shard of Sciallax
+					i(134077),	-- Glowing Shard of Sciallax
+					i(134078),	-- Dark Shard of Sciallax
+					crit(8, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
+				},
+			}),
+		}),
+		
 		i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3]
 		sp(196471, {	-- Inert Leystone Charm
 			i(130907),	-- Inert Leystone Charm
@@ -133,16 +330,55 @@ profession(794, {	-- Archaeology
 	}),
 	currency(1173, {	-- Highmountain Tauren
 		n(-17, {	-- Quests
+			-- Spirit of Eche'ro
 			q(41193, {	-- Laying to Rest
+				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
-				["groups"] = {
+				["coord"] = { 45.8, 44.6, 650 },
+				["sourceQuest"] = 41192,	-- The Right Path
+				["g"] = {
 					i(131734),	-- Spirit of Eche'ro
+					crit(13, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
 				},
 			}),
-			q(41188, {	-- Neltharion's Lair: Misdirected
+			-- Spear of Rethu
+			q(41187, {	-- Surveying Student
+				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
-				["groups"] = {
+				["coord"] = { 45.8, 44.6, 650 },
+				["sourceQuest"] = 41186,	-- History of Highmountain
+			}),
+			q(41188, {	-- Neltharion's Lair: Misdirected
+				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
+				["isWeekly"] = true,
+				["coord"] = { 45.8, 44.6, 650 },
+				["sourceQuest"] = 41187,	-- Surveying Student
+				["g"] = {
 					i(131733),	-- Spear of Rethu
+					crit(3, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
+				},
+			}),
+			-- Prizerock Neckband
+			q(41190, {	-- Crystal Eyes
+				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
+				["isWeekly"] = true,
+				["coord"] = { 45.8, 44.6, 650 },
+				["sourceQuest"] = 41189,	-- A New Lead
+			}),
+			q(41191, {	-- Drogbar Deception
+				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
+				["isWeekly"] = true,
+				["coord"] = { 45.8, 44.6, 650 },
+				["sourceQuest"] = 41190,	-- Crystal Eyes
+				["g"] = {
+					i(131736),	-- Prizerock Neckband
+					crit(9, {
+						["achievementID"] = 10603,	-- A Keen Eye
+					}),
 				},
 			}),
 		}),

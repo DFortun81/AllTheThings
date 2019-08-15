@@ -314,6 +314,12 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
+				n(-1, {	-- Common Boss Drops
+					i(139706),	-- Corrupted Essence
+					i(139771, {	-- Seething Essence
+						i(139706),	-- Corrupted Essence
+					}),
+				}),
 				n(0,   {	-- Zone Drop
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
@@ -561,6 +567,12 @@ _.Instances = { tier(7, {	-- Legion
 							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						},
 					},
+				}),
+				n(-1, {	-- Common Boss Drops
+					i(139706),	-- Corrupted Essence
+					i(139771, {	-- Seething Essence
+						i(139706),	-- Corrupted Essence
+					}),
 				}),
 				n(0,   {	-- Zone Drop
 					i(141696),	-- Pendant of Liquid Horror
@@ -814,6 +826,12 @@ _.Instances = { tier(7, {	-- Legion
 							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						},
 					},
+				}),
+				n(-1, {	-- Common Boss Drops
+					i(139706),	-- Corrupted Essence
+					i(139771, {	-- Seething Essence
+						i(139706),	-- Corrupted Essence
+					}),
 				}),
 				n(0,   {	-- Zone Drop
 					i(141696),	-- Pendant of Liquid Horror

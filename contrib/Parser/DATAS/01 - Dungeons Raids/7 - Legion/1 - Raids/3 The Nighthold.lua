@@ -450,6 +450,12 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
+				n(-1, {	-- Common Boss Drops
+					i(140199),	-- Nightshard
+					i(140200, {	-- Immaculate Nightshard Curio
+						i(140199),	-- Nightshard
+					}),
+				}),
 				n(0, { 		-- Zone Drop
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
@@ -852,6 +858,12 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						},
 					},
+				}),
+				n(-1, {	-- Common Boss Drops
+					i(140199),	-- Nightshard
+					i(140200, {	-- Immaculate Nightshard Curio
+						i(140199),	-- Nightshard
+					}),
 				}),
 				n(0, { 		-- Zone Drop
 					i(144399),	-- Aristocrat's Winter Drape
@@ -1258,6 +1270,12 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						},
 					},
+				}),
+				n(-1, {	-- Common Boss Drops
+					i(140199),	-- Nightshard
+					i(140200, {	-- Immaculate Nightshard Curio
+						i(140199),	-- Nightshard
+					}),
 				}),
 				n(0, { 		-- Zone Drop
 					i(144399),	-- Aristocrat's Winter Drape
