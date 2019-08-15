@@ -124,12 +124,6 @@ _.Zones =
 						["qg"] = 93538,	-- Dariness the Learned
 					}),
 					q(40857, {	-- Bits and Pieces
-						["sourceQuests"] = {
-							41158,	-- Fragments of the Fjords
-							41161,	-- Out of the Frying Pan
-							41164,	-- One Step Closer
-							41167,	-- Fel Fragments
-						},
 						["isWeekly"] = true,
 						["qg"] = 93538,	-- Dariness the Learned
 					}),
