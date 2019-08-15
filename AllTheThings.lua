@@ -477,7 +477,8 @@ GameTooltipModel.SetCreatureID = function(self, creatureID)
 	if creatureID > 0 then
 		self.Model:SetUnit("none");
 		self.Model:SetCreature(creatureID);
-		if not self.Model:GetModelFileID() then
+		local displayID = self.Model:GetDisplayInfo();
+		if not displayID then
 			Push(app, "SetCreatureID", function()
 				if self.lastModel == creatureID then
 					self:SetCreatureID(creatureID);
