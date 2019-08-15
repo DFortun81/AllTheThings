@@ -1390,6 +1390,7 @@ _.Zones =
 						50058,	-- The Witch's Pet
 					},
 					["coord"] = { 70.0, 18.5, 895 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 129669,	-- Benjamin Algerson
 					["g"] = {
 						i(158219),	-- Petula's Locket
