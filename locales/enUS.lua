@@ -62,6 +62,7 @@ AllTheThings.L = {
 	["REQUIRES"] = "Requires";
 	["REQUIRES_LEVEL"] = "Requires Level";
 	["SECRETS_HEADER"] = "Secrets";
+	["SELFIE_FILTERS_HEADER"] = "Selfie Filters";
 	
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
@@ -1069,13 +1070,6 @@ AllTheThings.L = {
 		[-243] = "Bounty",														-- Bounty
 		[-244] = "Dark Iron Dwarf",												-- Dark Iron Dwarf
 		[-245] = "Mag'har Orc",													-- Mag'har Orc
-		
-		-- S.E.L.F.I.E. Camera Filters
-		[-246] = GetSpellInfo(258749),											-- Firelands Filter
-		[-247] = GetSpellInfo(258750),											-- Frostmourne Filter
-		[-248] = GetSpellInfo(258751),											-- Sha Filter
-		[-249] = GetSpellInfo(258752),											-- Twilight Filter
-		[-250] = GetSpellInfo(258803),											-- Argus Filter
 	
 		[-251] = "Zandalari Troll",												-- Zandalari Troll
 		[-252] = "Kul Tiran",													-- Kul Tiran

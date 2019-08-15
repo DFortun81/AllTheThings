@@ -109,6 +109,7 @@ namespace ATT
                     case "GearSets":
                     case "InGameShop":
                     case "PetJournal":
+                    case "SelfieFilters":
                     case "Toys":
                     default:
                         data.Remove(pair.Key);

@@ -1083,7 +1083,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
 		return 1;
 	end
-	if not t.repeatable and app.Settings:Get("AccountWide:Quests") then
+	if not t.repeatable and app.AccountWideQuests then
 		if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
 			return 2;
 		end
@@ -5493,7 +5493,7 @@ local itemFields = {
 		return t.saved;
 	end,
 	["icon"] = function(t)
-		return "Interface\\Icons\\INV_Misc_QuestionMark";
+		return select(5, GetItemInfoInstant(t.itemID));
 	end,
 	["link"] = function(t)
 		local itemLink = t.itemID;
@@ -6149,38 +6149,33 @@ app.BaseSelfieFilter = {
 		if key == "key" then
 			return "questID";
 		elseif key == "text" then
-			if t.npcID then
-				if t.npcID > 0 then
-					return t.npcID > 0 and NPCNameFromID[t.npcID];
-				else
-					return L["NPC_ID_NAMES"][t.npcID];
-				end
-			end
-			return t.questName;
-		elseif key == "questName" then
-			return QuestTitleFromID[t.questID];
+			return select(1, GetSpellLink(t.spellID));
 		elseif key == "link" then
 			return "quest:" .. t.questID;
 		elseif key == "icon" then
-			return "Interface\\Icons\\INV_Misc_ SelfieCamera_02";
+			return select(3, GetSpellInfo(t.spellID));
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
 			return app.CollectibleSelfieFilters;
 		elseif key == "saved" or key == "collected" then
+			if IsQuestFlaggedCompleted(t.questID) then
+				return 1;
+			end
 			if app.AccountWideSelfieFilters then
-				if GetDataSubMember("CollectedSelfieFilters", t.questID) then
-					return 1;
+				if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
+					return 2;
 				end
-			else
-				if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
-					return 1;
+				if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
+					return 2;
 				end
 			end
-			if IsQuestFlaggedCompleted(t.questID) then
-				SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
-				SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
-				return 1;
+		elseif key == "description" then
+			if t.crs and #t.crs > 0 then
+				for i,id in ipairs(t.crs) do
+					return "Take a selfie using your " .. select(2, GetItemInfo(122674)) .. " with |cffff8000" .. (NPCNameFromID[id] or "???")
+					.. "|r" .. (t.maps and (" in |cffff8000" .. (app.GetMapName(t.maps[1]) or "???") .. "|r.") or ".");
+				end
 			end
 		else
 			-- Something that isn't dynamic.
@@ -9305,6 +9300,14 @@ function app:GetDataCache()
 			db.icon = "Interface\\ICONS\\INV_Horse2Purple";
 			db.g = app.Categories.Secrets;
 			db.collectible = false;
+			table.insert(g, db);
+		end
+		
+		-- Selfie Filters
+		if app.Categories.SelfieFilters then
+			db = app.CreateItem(122674, app.Categories.SelfieFilters);
+			db.expanded = false;
+			db.text = L["SELFIE_FILTERS_HEADER"];
 			table.insert(g, db);
 		end
 		
@@ -13650,7 +13653,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedFollowers", {});
 	GetDataMember("CollectedMusicRolls", {});
 	GetDataMember("CollectedQuests", {});
-	GetDataMember("CollectedSelfieFilters", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("CollectedTitles", {});
 	GetDataMember("SeasonalFilters", {});
@@ -13781,15 +13783,6 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
-	-- Cache your character's selfie filters data.
-	local selfieFilters = GetDataMember("CollectedSelfieFiltersPerCharacter", {});
-	local mySelfieFilters = GetTempDataMember("CollectedSelfieFilters", selfieFilters[app.GUID]);
-	if not mySelfieFilters then
-		mySelfieFilters = {};
-		selfieFilters[app.GUID] = mySelfieFilters;
-		SetTempDataMember("CollectedSelfieFilters", mySelfieFilters);
-	end
-	
 	-- Cache your character's title data.
 	local titles = GetDataMember("CollectedTitlesPerCharacter", {});
 	local myTitles = GetTempDataMember("CollectedTitles", titles[app.GUID]);
@@ -13829,7 +13822,6 @@ app.events.VARIABLES_LOADED = function()
 		CleanData(lockouts, myLockouts);
 		CleanData(musicRolls, myMusicRolls);
 		CleanData(recipes, myRecipes);
-		CleanData(selfieFilters, mySelfieFilters);
 		CleanData(titles, myTitles);
 		characters[app.GUID] = app.Me;
 	end
@@ -13865,8 +13857,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedMusicRollsPerCharacter",
 		"CollectedQuests",
 		"CollectedQuestsPerCharacter",
-		"CollectedSelfieFilters",
-		"CollectedSelfieFiltersPerCharacter",
 		"CollectedSources",
 		"CollectedSpells",
 		"CollectedSpellsPerCharacter",

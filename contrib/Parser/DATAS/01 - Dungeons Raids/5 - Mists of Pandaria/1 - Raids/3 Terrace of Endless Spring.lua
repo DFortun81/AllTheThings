@@ -9,22 +9,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["mapID"] = 456,
 		["coord"] = { 48.4, 61.4, 433 },	-- Terrace of Endless Spring, The Veiled Stair
 		["groups"] = {
-			{	-- S.E.L.F.I.E. Camera
-				["itemID"] = 122674,		-- S.E.L.F.I.E. Camera
-				["collectible"] = false,	-- We don't want the toy collectible here, only want the header.
-				["g"] = {
-					{	-- Sha Filter
-						["npcID"] = -248,		-- Sha Filter
-						["questID"] = 49763,	-- Completed
-						["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
-						["icon"] = "Interface\\Icons\\sha_ability_rogue_envelopingshadows_nightborne",
-						["description"] = "In order to collect this you will need to take a picture with Sha of Fear.  Once you have done this it should check off.  If it doesn't hit \"M\", \"L\" or relog.  These are PER character and not account wide.",
-						["crs"] = {
-							60999,	-- Sha of Fear
-						},
-					},
-				},
-			},
 			d(7, {	-- LFR
 				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms

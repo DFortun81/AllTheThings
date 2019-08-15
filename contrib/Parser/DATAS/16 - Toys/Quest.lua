@@ -56,9 +56,7 @@ _.Toys =
 		i(138876),		-- Runas' Crystal Grinder
 		i(82467), 		-- Ruthers' Harness
 		i(119134), 		-- Sargerei Disguise
-		i(122674, {	-- S.E.L.F.I.E. Camera MkII
-			["description"] = "If you have obtained this toy and are seeing 0/1 in some zones it is due to you missing the filter.  The filters are PER character and if you wish to not collect them you can filter them out.",
-		}),
+		i(122674),		-- S.E.L.F.I.E. Camera MkII
 		i(88387), 		-- Shushen's Spittoon
 		i(88381), 		-- Silversage Incense
 		i(156871),		-- Spitzy

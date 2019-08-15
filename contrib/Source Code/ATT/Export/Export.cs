@@ -43,7 +43,7 @@ namespace ATT
             ObjectData.Create("mapID",              "m",            "_.CreateMap", "f");
             ObjectData.Create("illusionID",         "ill",          "_.CreateIllusion", "f", "spellID");
             ObjectData.Create("recipeID",           "r",            "_.CreateRecipe", "f", "spellID");
-            ObjectData.Create("spellID",            "sp",           "_.CreateSpell");
+            ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
             ObjectData.Create("setID",              "gs",           "_.CreateGearSet", "f");
             ObjectData.Create("setHeaderID",        "gsh",          "_.CreateGearSetHeader", "f");
             ObjectData.Create("setSubHeaderID",     "gssh",         "_.CreateGearSetSubHeader", "f");

@@ -216,22 +216,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				},
 			}),
-			{	-- S.E.L.F.I.E. Camera
-				["itemID"] = 122674,		-- S.E.L.F.I.E. Camera
-				["collectible"] = false,	-- We don't want the toy collectible here, only want the header.
-				["g"] = {
-					{	-- Firelands Filter
-						["npcID"] = -246,		-- Firelands Filter
-						["questID"] = 49761,	-- Completed
-						["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
-						["icon"] = "Interface\\Icons\\achievement_zone_firelands",
-						["description"] = "In order to collect this you will need to take a picture with Ragnaros.  Once you have done this it should check off.  If it doesn't hit \"M\", \"L\" or relog.  These are PER character and not account wide.",
-						["crs"] = {
-							52409,	-- Ragnaros
-						},
-					},
-				},
-			},
 			n(-2, {	-- Vendors
 				n(54401, {	-- Naresir Stormfury
 					i(70930),
