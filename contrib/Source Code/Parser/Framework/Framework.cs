@@ -442,33 +442,37 @@ namespace ATT
                     { "g", (tierLists[tierID] = new TierList()).Groups },
                 });
             }
+            TierList tier = tierLists[1];
+            var moreThanOne = tierLists.Count > 1;
             foreach (var item in Items.AllItemsWithoutReferences)
             {
-                TierList tier;
-                if (item.TryGetValue("lvl", out object lvlRef) && lvlRef is int level)
+                if (moreThanOne)
                 {
-                    if (level < 61) tier = tierLists[1]; // Classic
-                    else if (level < 71) tier = tierLists[2];   // Burning Crusade
-                    else if (level < 81) tier = tierLists[3];   // Wrath of the Lich King
-                    else if (level < 86) tier = tierLists[4];   // Cataclysm
-                    else if (level < 91) tier = tierLists[5];   // Mists of Pandaria
-                    else if (level < 101) tier = tierLists[6];   // Warlords of Draenor
-                    else if (level < 111) tier = tierLists[7];   // Legion
-                    else tier = tierLists[8];   // Battle For Azeroth
+                    if (item.TryGetValue("lvl", out object lvlRef) && lvlRef is int level)
+                    {
+                        if (level < 61) tier = tierLists[1]; // Classic
+                        else if (level < 71) tier = tierLists[2];   // Burning Crusade
+                        else if (level < 81) tier = tierLists[3];   // Wrath of the Lich King
+                        else if (level < 86) tier = tierLists[4];   // Cataclysm
+                        else if (level < 91) tier = tierLists[5];   // Mists of Pandaria
+                        else if (level < 101) tier = tierLists[6];   // Warlords of Draenor
+                        else if (level < 111) tier = tierLists[7];   // Legion
+                        else tier = tierLists[8];   // Battle For Azeroth
+                    }
+                    else if (item.TryGetValue("itemID", out object itemIDRef))
+                    {
+                        var itemID = Convert.ToInt32(itemIDRef);
+                        if (itemID < 22727) tier = tierLists[1]; // Classic
+                        else if (itemID < 29205) tier = tierLists[2];   // Burning Crusade
+                        else if (itemID < 37649) tier = tierLists[3];   // Wrath of the Lich King
+                        else if (itemID < 72019) tier = tierLists[4];   // Cataclysm
+                        else if (itemID < 100855) tier = tierLists[5];   // Mists of Pandaria
+                        else if (itemID < 130731) tier = tierLists[6];   // Warlords of Draenor
+                        else if (itemID < 156823) tier = tierLists[7];   // Legion
+                        else tier = tierLists[8];   // Battle For Azeroth
+                    }
+                    else tier = tierLists[1];
                 }
-                else if (item.TryGetValue("itemID", out object itemIDRef))
-                {
-                    var itemID = Convert.ToInt32(itemIDRef);
-                    if (itemID < 22727) tier = tierLists[1]; // Classic
-                    else if (itemID < 29205) tier = tierLists[2];   // Burning Crusade
-                    else if (itemID < 37649) tier = tierLists[3];   // Wrath of the Lich King
-                    else if (itemID < 72019) tier = tierLists[4];   // Cataclysm
-                    else if (itemID < 100855) tier = tierLists[5];   // Mists of Pandaria
-                    else if (itemID < 130731) tier = tierLists[6];   // Warlords of Draenor
-                    else if (itemID < 156823) tier = tierLists[7];   // Legion
-                    else tier = tierLists[8];   // Battle For Azeroth
-                }
-                else tier = tierLists[1];
 
                 if (item.TryGetValue("f", out object objRef))
                 {
@@ -573,6 +577,25 @@ namespace ATT
 
             // Merge the Item Data into the Containers again.
             foreach (var container in Objects.AllContainers.Values) Process(container, 1, 1);
+
+            // Remove empty tiers.
+            for (int i = unsorted.Count - 1;i >= 0; --i)
+            {
+                var o = unsorted[i] as Dictionary<string, object>;
+                if (o == null) continue;
+                if (o.TryGetValue("g", out List<object> list) && list.Count == 0)
+                {
+                    unsorted.RemoveAt(i);
+                }
+            }
+            if(unsorted.Count == 1)
+            {
+                var o = unsorted[0] as Dictionary<string, object>;
+                if (o != null && o.TryGetValue("g", out List<object> list))
+                {
+                    Objects.AllContainers["Unsorted"] = list;
+                }
+            }
         }
 
         private class TierList

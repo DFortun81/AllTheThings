@@ -103,7 +103,7 @@ namespace ATT
                 builder2.Append(pair.Value);
             }
             builder2.Append(';').AppendLine();
-            builder.Insert(0, builder2);
+            if(count > 0) builder.Insert(0, builder2);
         }
 
         /// <summary>

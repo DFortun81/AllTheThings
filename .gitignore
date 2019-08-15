@@ -36,3 +36,4 @@ obj/
 *.bak
 contrib/Parser/log.txt
 contrib/Harvesters/API.key
+contrib/Parser/ATT.pdb
