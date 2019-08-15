@@ -1082,6 +1082,9 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 54960,	-- A Bitter Reunion
+						["altQuests"] = {
+						55034,	-- Under False Colors
+					},
 					},
 				{	-- Unleash the Raptors
 					["questID"] = 27243,
