@@ -1060,7 +1060,7 @@ local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	if value then
 		rawset(t, key, value);
-		DirtyQuests[key] = true;
+		rawset(DirtyQuests, key, true);
 		SetDataSubMember("CollectedQuests", key, 1);
 		SetTempDataSubMember("CollectedQuests", key, 1);
 		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
