@@ -6177,6 +6177,8 @@ app.BaseSelfieFilter = {
 					.. "|r" .. (t.maps and (" in |cffff8000" .. (app.GetMapName(t.maps[1]) or "???") .. "|r.") or ".");
 				end
 			end
+		elseif key == "lvl" then
+			return 100;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -9308,6 +9310,7 @@ function app:GetDataCache()
 			db = app.CreateItem(122674, app.Categories.SelfieFilters);
 			db.expanded = false;
 			db.text = L["SELFIE_FILTERS_HEADER"];
+			db.lvl = 100;
 			table.insert(g, db);
 		end
 		
