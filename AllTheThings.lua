@@ -4678,24 +4678,22 @@ end)();
 			elseif key == "collectible" then
 				return app.CollectibleFlightPaths;
 			elseif key == "collected" then
-				local isCollected;
 				if app.AccountWideFlightPaths then
 					if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
-						isCollected = 1;
+						return 1;
 					end
 				else
 					if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then
-						isCollected = 1;
+						return 1;
 					end
 				end
-				if isCollected ~= 1 and t.altQuests then
+				if t.altQuests then
 					for i,questID in ipairs(t.altQuests) do
 						if IsQuestFlaggedCompleted(questID) then
-							isCollected = 1;
+							return 1;
 						end
 					end
 				end
-				return isCollected;
 			elseif key == "text" then
 				return t.info.name or "Visit the Flight Master to cache.";
 			elseif key == "u" then
