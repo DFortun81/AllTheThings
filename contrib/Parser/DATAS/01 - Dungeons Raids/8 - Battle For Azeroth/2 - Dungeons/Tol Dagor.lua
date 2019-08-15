@@ -11,9 +11,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			978,	-- Officer Quarters
 			979,	-- Overseer's Redoubt
 			980,	-- Oveseer's Summit
-			1349,	-- Tol Dagor (used in horde war campaign scenario)
-			1350,	-- Tol Dagor (used in horde war campaign scenario)
-			1351,	-- Tol Dagor (used in horde war campaign scenario)
 		},
 		["lvl"] = 110,
 		["g"] = {

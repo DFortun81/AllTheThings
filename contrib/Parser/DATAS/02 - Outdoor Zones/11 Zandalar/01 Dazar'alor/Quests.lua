@@ -534,19 +534,7 @@ _.Zones =
 						["coord"] = { 78.0, 36.7, 862 },
 						["sourceQuest"] = 54174,	-- Orders from Azshara
 						["races"] = HORDE_ONLY,
-						["classes"] = {
-							1,	-- Warrior
-							2,	-- Paladin
-							3,	-- Hunter
-							4,	-- Rogue
-							6,	-- Deathknight
-							7,	-- Shaman
-							8,	-- Mage
-							9,	-- Warlock
-							10,	-- Monk
-							11,	-- Druid
-							12,	-- Demonhunter
-						},
+						["classes"] = exclude( { 5 }, ALL_CLASSES ),	-- all classes, excluding Priest
 					}),
 					q(54118, {	-- Every Little Death Helps
 						["coords"] = {
@@ -565,26 +553,14 @@ _.Zones =
 							{ 34.2, 31.8, 942 },
 						},
 						["sourceQuest"] = 54117,	-- Every Little Death Helps
-						["classes"] = {
-							1,	-- Warrior
-							2,	-- Paladin
-							3,	-- Hunter
-							4,	-- Rogue
-							6,	-- Deathknight
-							7,	-- Shaman
-							8,	-- Mage
-							9,	-- Warlock
-							10,	-- Monk
-							11,	-- Druid
-							12,	-- Demonhunter
-						},
+						["classes"] = exclude( { 5 }, ALL_CLASSES ),	-- all classes, excluding Priest
 					}),
 					q(54058, {	-- Unintended Consequences
 						["coords"] = {
 							{ 78.0, 36.7, 862 },
 							{ 34.2, 31.8, 942 },
 						},
-						["sourceQuests"] = { 54118 },	-- Every Little Death Helps
+						["sourceQuest"] = 54118,	-- Every Little Death Helps
 						["classes"] = { 5 },	-- Priest
 					}),
 					i(169765, {	-- Worldvein Intelligence Reports
@@ -592,7 +568,7 @@ _.Zones =
 						["g"] = {
 							spell(302239),	-- Investigating the Rumors
 						},
-					}),	
+					}),			
 				}),
 			}),
 		}),
