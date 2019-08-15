@@ -185,7 +185,7 @@ function StartHarvest() {
                 if(data['addedInPatch'] && data['addedInPatch'].length > 0) {
                     str = str + '\t["timeline"] = {\n';
                     data['addedInPatch'].forEach(function(e) {
-                        str = str + '\t\t' + e + ',\n';
+                        str = str + '\t\t"' + e + '",\n';
                     });
                     str = str + '\t},\n';
                 }
