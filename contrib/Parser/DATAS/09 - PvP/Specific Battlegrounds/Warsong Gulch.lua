@@ -14,8 +14,10 @@ _.PVP =
 			["achievementID"] = 166,	-- Warsong Gulch Victory
 			["description"] = "Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War. A faction wins when they have returned three enemy flags within 25 minutes, or if they have returned the most flags (or capped last if a tie) when the timer runs out. The longer a flag carrier holds onto a flag, the more damage the player will take.\n\nEach base has a long tunnel with several floors and platforms that can only be accessed via certain routes. A common technique is for the flag carrier to hop between floor levels while the attacking team tries to figure out which floor the FC is hidden on, or jump away from melee attackers.\n\nThe Alliance Outpost is located in Southern Ashenvale.\nThe Horde Outpost is located in Northern Barrens.",
 			["g"] = {
-				a(faction(890, {	-- Silverwing Sentinels
+				faction(890, {	-- Silverwing Sentinels
 					["creatureID"] = 19908,	-- Su'ura Swiftarrow <Warsong Gulch Battlemaster>
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
 					["g"] = {
 						q(7865,  {	-- Sentinel Advanced Care Package
 							["qg"] = 14753,	-- Illiyana Moonblaze
@@ -111,9 +113,11 @@ _.PVP =
 							},
 						}),
 					},
-				})),
-				h(faction(889, {	-- Warsong Outriders
+				}),
+				faction(889, {	-- Warsong Outriders
 					["creatureID"] = 19910,	-- Gargok <Warsong Gulch Battlemaster>
+					["races"] = HORDE_ONLY,
+					["icon"] = "Interface\\Icons\\ability_warrior_warcry",
 					["g"] = {
 						n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
@@ -186,7 +190,7 @@ _.PVP =
 							},
 						}),
 					},
-				})),
+				}),
 			},
 		}),
 	}),

@@ -15,8 +15,10 @@ _.PVP =
 			["achievementID"] = 154,	-- Arathi Basin Victory
 			["description"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1,600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 			["g"] = {
-				h(faction(510, {
+				faction(510, {	-- The Defilers
 					["creatureID"] = 19905,
+					["races"] = HORDE_ONLY,
+					["icon"] = "Interface\\Icons\\spell_shadow_psychichorrors",
 					["g"] = {
 						ach(710), 	-- The Defiler
 						n(-17, {	-- Quests
@@ -119,9 +121,11 @@ _.PVP =
 							}),
 						}),
 					},
-				})),
-				a(faction(509, {
+				}),
+				faction(509, {	-- The League of Arathor
 					["creatureID"] = 30231,
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\ability_warrior_rallyingcry",
 					["g"] = {
 						ach(711), 	-- Knight of Arathor
 						n(-17, {	-- Quests
@@ -224,7 +228,7 @@ _.PVP =
 							}),
 						}),
 					},
-				})),
+				}),
 			},
 		}),
 	}),

@@ -66,28 +66,19 @@ _.Zones =
 							["coord"] = { 61.13, 84.15, 1161 },	-- Entrance
 						}),
 						o(292674, {	-- A Damp Scroll
-							["description"] = "Located on the floor next to K'thir Occultist in Stormsong Monastery down in the basement.",
+							["description"] = "Located on the floor next to K'thir Occultist in Stormsong Monastery, down in a cellar.",
 							["questID"] = 52135,
-							["coords"] = {
-								{ 61.75, 78.12, 1161 },	-- Entrance
-								{ 61.15, 78.18, 1161 },	-- Scroll Location
-							},
+							["coord"] = { 61.75, 78.12, 1161 },	-- Entrance
 						}),
 						o(292675, {	-- A Damp Scroll
-							["description"] = "Located on the floor next to K'thir Occultist in Stormsong Monastery down in the basement.",
+							["description"] = "Located on the floor next to K'thir Occultist in Stormsong Monastery, down in another cellar.",
 							["questID"] = 52137,
-							["coords"] = {
-								{ 70.33, 85.75, 1161 },	-- Entrance
-								{ 71.12, 84.64, 1161 },	-- Scroll Location
-							},
+							["coord"] = { 70.33, 85.75, 1161 },	-- Entrance
 						}),
 						o(292676, {	-- A Damp Scroll
 							["description"] = "Located underneath the deck in one of the concrete buildings in Stormsong Monastery.",
 							["questID"] = 52138,
-							["coords"] = {
-								{ 66.39, 81.65, 1161 },	-- Entrance
-								{ 67.28, 79.80, 1161 },	-- Scroll Location
-							},
+							["coord"] = { 67.28, 79.80, 1161 },	-- Scroll Location
 						}),
 						o(292677, {	-- A Damp Scroll
 							["description"] = "Located upstairs in the building before the underwater cave in Stormsong Monastery.",

@@ -42,6 +42,21 @@ _.Zones =
 				}),
 				
 				
+				q(50041, {	-- A Pocket Full of Shells
+					["sourceQuests"] = { 50157 },	-- There's Gold in Them There Fields
+					["coord"] = { 50.7, 73.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129808,	-- Farmer Goldfield
+				}),
+				
+				
+				q(50065, {	-- A Reason to Stay
+				--	["objectID"] = 244986,	-- Dirty Pocketwatch
+					["coord"] = { 49.8, 73.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(49725, {	-- A Risky Ploy
 					["sourceQuests"] = { 51401 },	-- Carry On
 					["coord"] = { 59.2, 69.5, 942 },
@@ -103,6 +118,14 @@ _.Zones =
 				}),
 				
 				
+				q(50158, {	-- Checking Out the Collapse
+					["sourceQuests"] = { 49755 },	-- Heavy Artillery
+					["coord"] = { 57.5, 66.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130694,	-- Mayor Roz
+				}),
+				
+				
 				q(52793, {	-- Circle the Wagons
 					["coord"] = { 60.2, 70.4, 942 },
 					["races"] = ALLIANCE_ONLY,
@@ -133,6 +156,14 @@ _.Zones =
 					["coord"] = { 66.4, 56.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 131248,	-- Samuel Williams
+				}),
+				
+				
+				q(49886, {	-- Follow Your Nose
+				--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
+					["coord"] = { 51.0, 70.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131656,	-- Houndmaster Archibald
 				}),
 				
 				
@@ -172,6 +203,14 @@ _.Zones =
 				}),
 				
 				
+				q(50134, {	-- Gadgets and Gizmos Aplenty
+					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse
+					["coord"] = { 51.5, 65.9, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 132118,	-- Farmer Burton
+				}),
+				
+				
 				q(50610, {	-- Gathering Storm
 					["sourceQuests"] = {
 						50593,	-- A Bloody Mess
@@ -181,6 +220,32 @@ _.Zones =
 					["coord"] = { 66.1, 47.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 134639,	-- Brother Pike
+				}),
+				
+				
+				q(50069, {	-- Goldfield's War
+					["sourceQuests"] = {
+						50041,	-- A Pocket Full of Shells
+						50065,	-- A Reason to Stay
+					},
+					["coord"] = { 50.7, 73.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129808,	-- Farmer Goldfield
+				}),
+				
+				
+				q(50088, {	-- Golden Fields Forever
+					["sourceQuests"] = { 50069 },	-- Goldfield's War
+					["coord"] = { 50.7, 73.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 129808,	-- Farmer Goldfield
+				}),
+				
+				
+				q(51314, {	-- Grain Drain
+					["coord"] = { 55.0, 67.9, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 137094,	-- Farmer Max
 				}),
 				
 				
@@ -286,6 +351,13 @@ _.Zones =
 				}),
 				
 				
+				q(51310, {	-- Raiders of the Lost Crop
+					["coord"] = { 55.0, 67.9, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 137094,	-- Farmer Max
+				}),
+				
+				
 				q(49996, {	-- Rearmament
 					["sourceQuests"] = { 49975 },	-- Rest in the Depths
 					["coord"] = { 66.4, 56.4, 942 },
@@ -333,10 +405,26 @@ _.Zones =
 				}),
 				
 				
+				q(49960, {	-- Sic 'Em!
+					--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
+					["coord"] = { 51.0, 70.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 131656,	-- Houndmaster Archibald
+				}),
+				
+				
 				q(52796, {	-- Sometimes Less is More
 					["coord"] = { 60.2, 70.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 141769,	-- Marilyn Hood
+				}),
+				
+				
+				q(50135, {	-- Stop Vining!
+					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse
+					["coord"] = { 51.5, 65.9, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 132118,	-- Farmer Burton
 				}),
 				
 				
@@ -386,6 +474,15 @@ _.Zones =
 					["g"] = {
 						i(158681),	-- Lightning Tether
 					},
+				}),
+				
+				
+				q(52067, {	-- Survivors
+					["sourceQuests"] = { 49755 },	-- Heavy Artillery
+					["isBreadcrumb"] = true,
+					["coord"] = { 57.6, 66.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130190,	-- Sergeant Calvin
 				}),
 				
 				
@@ -448,6 +545,15 @@ _.Zones =
 				--	["objectID"] = 280727,	-- Charred Note
 					["coord"] = { 68.6, 54.4, 942 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(50157, {	-- There's Gold in Them There Fields
+					["sourceQuests"] = { 49755 },	-- Heavy Artillery
+					["isBreadcrumb"] = true,
+					["coord"] = { 57.5, 66.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 130694,	-- Mayor Roz
 				}),
 				
 				
@@ -558,11 +664,6 @@ _.Zones =
 					["sourceQuests"] = { 50697, 50696 },	-- Bomb Beats Rock / Fun With Magnets
 					["coord"] = { 44.2, 54.0 },
 				})),
-				a(q(50041, {	-- A Pocket Full of Shells
-					["qg"] = 129808,	-- Farmer Goldfield
-					["sourceQuests"] = { 50157 },	-- There's Gold in Them There Fields
-					["coord"] = { 50.7, 73.1 },
-				})),
 				a(q(50640, {	-- A Question of Quillpower
 					["qg"] = 133953,	-- Sergeant Calvin
 					["sourceQuests"] = { 50368 },	-- Terror of the Kraul
@@ -626,12 +727,6 @@ _.Zones =
 					["sourceQuests"] = { 50774 },	-- No Bot Left Behind
 					["coord"] = { 42.6, 54.3 },
 				})),
-				a(q(50158, {	-- Checking Out the Collapse
-					["qg"] = 130694,	-- Mayor Roz
-					["sourceQuests"] = { 49755 },	-- Heavy Artillery
-					["coord"] = { 57.6, 66.4 },
-					["isBreadcrumb"] = true,
-				})),
 				a(q(50359, {	-- Cleanup Duty
 					["qg"] = 132017,	-- Ancel Mildenhall
 					["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery
@@ -651,14 +746,6 @@ _.Zones =
 					["qg"] = 132017,	-- Ancel Mildenhall
 					["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery
 					["coord"] = { 68.8, 65.1 },
-				})),
-				a(o(244983, {	-- Dirty Pocketwatch
-					["coord"] = { 49.8, 73.5 },
-					["g"] = {
-						a(q(50065, {	-- A Reason to Stay
-							-- ["sourceQuests"] = { 50157 },	-- There's Gold in Them There Fields ??? (not required)
-						})),
-					},
 				})),
 				a(q(50064, {	-- Don't Go in the Basement
 					["qg"] = 132017,	-- Ancel Mildenhall
@@ -709,11 +796,6 @@ _.Zones =
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
 				})),
-				a(q(49886, {	-- Follow Your Nose
-					["qg"] = 131656,	-- Houndmaster Archibald
-					-- ["sourceQuests"] = {  },	--  (This didn't have a source Quest that I could tell)
-					["coord"] = { 51.0, 70.1 },
-				})),
 				a(i(157849, {	-- Foul Smelling Flask
 					["questID"] = 50367,	-- Anger in a Bottle
 					["qg"] = 130073,	-- Briarback Lookout
@@ -729,29 +811,6 @@ _.Zones =
 					["qg"] = 134882,	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["coord"] = { 44.4, 55.6 },
-				})),
-				a(q(50134, {	-- Gadgets and Gizmos Aplenty
-					["qg"] = 132118,	-- Farmer Burton
-					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse
-					["coord"] = { 51.5, 65.9 },
-				})),
-				a(q(50088, {	-- Golden Fields Forever
-					["qg"] = 129808,	-- Farmer Goldfield
-					["sourceQuests"] = { 50069 },	-- Goldfield's War
-					["coord"] = { 50.7, 73.1 },
-				})),
-				a(q(50069, {	-- Goldfield's War
-					["qg"] = 129808,	-- Farmer Goldfield
-					["sourceQuests"] = { 50041, 50065 },	-- A Pocket Full of Shells / A Reason to Stay
-					["coord"] = { 50.7, 73.1 },
-				})),
-				a(q(51314, {	-- Grain Drain
-					["qg"] = 137094,	-- Farmer Max
-					-- ["sourceQuests"] = {  },	--  (This didn't have a source Quest that I could tell)
-					["g"] = {
-						i(161084),	-- Recovered Stormsong Produce
-					},
-					["coord"] = { 54.9, 67.9 },
 				})),
 				a(q(50504, {	-- Honey Glazed Sam
 					["qg"] = 132292,	-- Raimond Mildenhall
@@ -820,11 +879,6 @@ _.Zones =
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["coord"] = { 44.4, 55.5 },
 				})),
-				a(q(51310, {	-- Raiders of the Lost Crop
-					["qg"] = 137094,	-- Farmer Max
-					-- ["sourceQuests"] = {  },	--  (This didn't have a source Quest that I could tell)
-					["coord"] = { 54.9, 67.9 },
-				})),
 				a(q(50161, {	-- Recovering Raimond
 					["qg"] = 132647,	-- Ancel Mildenhall
 					["sourceQuests"] = { 50064 },	-- Don't Go in the Basement
@@ -846,11 +900,6 @@ _.Zones =
 					["sourceQuests"] = { 50353 },	-- Boaring Company
 					["coord"] = { 46.7, 73.8 },
 				})),
-				a(q(49960, {	-- Sic 'Em!
-					["qg"] = 131656,	-- Houndmaster Archibald
-					-- ["sourceQuests"] = {  },	--  (This didn't have a source Quest that I could tell)
-					["coord"] = { 51.0, 70.1 },
-				})),
 				a(q(50908, {	-- Smells like Trouble
 					["qg"] = 135682,	-- Patrick Eckhart
 					-- ["sourceQuests"] = { 52067 },	-- Survivors ??? (potentially not required)
@@ -860,17 +909,6 @@ _.Zones =
 					["qg"] = 132292,	-- Raimond Mildenhall
 					["sourceQuests"] = { 50161 },	-- Recovering Raimond
 					["coord"] = { 74.1, 72.7 },
-				})),
-				a(q(50135, {	-- Stop Vining
-					["qg"] = 132118,	-- Farmer Burton
-					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse
-					["coord"] = { 51.5, 65.9 },
-				})),
-				a(q(52067, {	-- Survivors
-					["qg"] = 130190,	-- Sergeant Calvin
-					["sourceQuests"] = { 49755 },	-- Heavy Artillery
-					["coord"] = { 57.6, 66.4 },
-					["isBreadcrumb"] = true,
 				})),
 				a(q(50368, {	-- Terror of the Kraul
 					["qg"] = 133953,	-- Sergeant Calvin
@@ -902,12 +940,6 @@ _.Zones =
 					["qg"] = 134882,	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50793 },	-- Cave Commotion
 					["coord"] = { 41.1, 54.1 },
-				})),
-				a(q(50157, {	-- There's Gold in Them There Fields
-					["qg"] = 130694,	-- Mayor Roz
-					["sourceQuests"] = { 49755 },	-- Heavy Artillery
-					["coord"] = { 57.6, 66.4 },
-					["isBreadcrumb"] = true,
 				})),
 				a(q(50675, {	-- Treasure Hunting
 					["qg"] = 134720,	-- Leo Shealds

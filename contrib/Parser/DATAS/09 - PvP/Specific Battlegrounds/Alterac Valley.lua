@@ -13,6 +13,7 @@ _.PVP =
 			["groups"] = {
 				faction(729, {	-- Frostwolf Clan
 					["races"] = HORDE_ONLY,
+					["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
 					["g"] = {
 						n(-17, {	-- Quests
 							q(7385, {	-- A Gallon of Blood
@@ -251,6 +252,7 @@ _.PVP =
 				}),
 				faction(730, {	-- Stormpike Guards
 					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\inv_jewelry_stormpiketrinket_05",
 					["g"] = {
 						n(-17, {	-- Quests
 							q(7081, {	-- Alterac Valley Graveyards
