@@ -553,11 +553,9 @@ _.Zones =
 						i(134273),	-- Arcane Defender's Boots
 					},
 				}),
-				--[[
 				n(-384, {	-- Neck
-					
+					i(139990),	-- Inspector's Pendant
 				}),
-				]]--
 				n(-386,  {	-- Trinkets
 					i(134278),	-- Nightborne Defender's Badge
 					i(134292),	-- Nightborne Researcher's Phial

@@ -667,6 +667,10 @@ _.Zones =
 					i(141259),	-- Seawitch's Foci
 					i(143684),	-- Slavemaster's Malevolence
 					i(141258),	-- Whirlpool Seed
+					i(143702),	-- Eternity of Wisdome
+				}),
+				n(-385, {	-- Finger
+					i(134245),	-- Nazjatar Manapearl Ring
 				}),
 			}),
 		}),

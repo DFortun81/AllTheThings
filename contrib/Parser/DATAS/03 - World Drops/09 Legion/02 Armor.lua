@@ -93,7 +93,6 @@ _.WorldDrops =
 					i(141582),	-- Fran's Intractable Loop
 					i(134323),	-- Glinting Quartz Ring
 					i(140024),	-- Ley-Charged Band
-					i(134245),	-- Nazjatar Manapearl Ring
 					i(121288),	-- Nightmare Loop
 					i(134157),	-- Roggstone Signet
 					i(134191),	-- Rough-Hammered Silver Ring

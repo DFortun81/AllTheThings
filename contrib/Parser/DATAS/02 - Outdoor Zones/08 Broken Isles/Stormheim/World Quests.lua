@@ -536,6 +536,7 @@ _.Zones =
 					i(143688),	-- Stormwing's Roar
 					i(143685),	-- Strength of the Nazjatar
 					i(143689),	-- Weight of Tradition
+					i(143691),	-- Bloody Kvaldir Pennant 
 				}),
 			}),
 		}),	

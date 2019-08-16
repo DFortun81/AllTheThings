@@ -632,7 +632,7 @@ _.Zones =
 					i(139113),	-- An'she's Token of Guile
 				}),
 				n(-387,  {	-- Relics
-					
+					i(143692),	-- Earthshaper's Mantra
 				}),
 			}),
 		}),
