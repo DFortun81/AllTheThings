@@ -147,7 +147,7 @@ _.ExpansionFeatures =
 						["qgs"] = 100438,	-- Iron-Body Ponshu
 						["sourceQuests"] = { 32442 },	-- Impending Danger
 						["groups"] = {
-							title(472),	-- Grandmaster %s
+							title(329),	-- Grandmaster %s
 							i(139731),	-- Grandmaster's Tunic
 							i(142056),	-- Arcanum of the Order
 							i(142063),	-- Dusk of the Order
