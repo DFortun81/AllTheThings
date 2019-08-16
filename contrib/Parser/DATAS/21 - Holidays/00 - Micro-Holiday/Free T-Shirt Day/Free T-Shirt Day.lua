@@ -30,7 +30,9 @@ _.Holidays =
 						un(22, i(167180)),	-- Ebon Filigreed Doublet
 						un(22, i(167185)),	-- Ebon Filigreed Shirt
 						un(22, i(167192)),	-- Embroidered Shirt
-						un(22, i(165657)),	-- Free T-Shirt
+						un(22, i(165657, {	-- Free T-Shirt
+							title(399),		-- the T-Shirt Enthusiast
+						})),
 						un(22, i(167181)),	-- Golden Filigreed Doublet
 						un(22, i(167189)),	-- Golden Filigreed Shirt
 						un(22, i(167191)),	-- Green Martial Shirt
@@ -61,7 +63,9 @@ _.Holidays =
 						un(22, i(167180)),	-- Ebon Filigreed Doublet
 						un(22, i(167185)),	-- Ebon Filigreed Shirt
 						un(22, i(167192)),	-- Embroidered Shirt
-						un(22, i(165657)),	-- Free T-Shirt
+						un(22, i(165657, {	-- Free T-Shirt
+							title(399),		-- the T-Shirt Enthusiast
+						})),
 						un(22, i(167181)),	-- Golden Filigreed Doublet
 						un(22, i(167189)),	-- Golden Filigreed Shirt
 						un(22, i(167191)),	-- Green Martial Shirt
