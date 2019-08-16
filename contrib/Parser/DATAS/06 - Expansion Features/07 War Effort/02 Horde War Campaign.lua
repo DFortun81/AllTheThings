@@ -8,54 +8,55 @@ _.ExpansionFeatures =
 		n(-253, {	-- Horde War Campaign
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				ach(12509, {	-- Ready for War
-					["collectible"] = false,
-					["races"] = HORDE_ONLY,
-					["maps"] = { 1163, 1164, 1165 },	-- Dazar'alor
-					["lvl"] = 110,
-					["g"] = {
-						ach(12509, crit(1, {	-- Ready for War / Drustvar Foothold
-							["sourceQuest"] = 51985,	-- Return to Zuldazar (Drustvar Foothold)
-						})),
-						ach(12509, crit(2, {	-- Ready for War / Tiragarde Sound Foothold
-							["sourceQuest"] = 51984,	-- Return to Zuldazar (Tiragarde Sound Foothold)
-						})),
-						ach(12509, crit(3, {	-- Ready for War / Stormsong Valley Foothold
-							["sourceQuest"] = 51986,	-- Return to Zuldazar (Stormsong Valley Foothold)
-						})),
-						ach(12509, crit(4, {	-- Ready for War / The First Assault
-							["sourceQuest"] = 51601,	-- The Bridgeport Ride
-						})),
-						ach(12509, crit(5, {	-- Ready for War / The Marshal's Grave
-							["sourceQuest"] = 51789,	-- What Remains of Marshal M. Valentine
-						})),
-						ach(12509, crit(6, {	-- Ready for War / Death of a Tidesage
-							["sourceQuest"] = 52122,	-- To Be Forsaken
-						})),
-						ach(12509, crit(7, {	-- Ready for War / At the Bottom of the Sea
-							["sourceQuest"] = 52978,	-- With Prince in Tow
-						})),
-						ach(12509, crit(8, {	-- Ready for War / The Strike on Boralus
-							["sourceQuest"] = 53003,	-- A Cycle of Hatred
-						})),
-					},
-				}),
-				ach(13466, {	-- Tides of Vengeance
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						ach(13466, crit(1, {	-- Tides of Vengeance / The Day is Won
-							["sourceQuest"] = 53981,	-- The Day is Won
-						})),
-						ach(13466, crit(2, {	-- Tides of Vengeance / Mekkatorque's Battle Plans
-							["sourceQuest"] = 54022,	-- Mekkatorque's Battle Plans
-						})),
-						ach(13466, crit(3, {	-- Tides of Vengeance / Through the Front Door
-							["sourceQuest"] = 54179,	-- Through the Front Door
-						})),
-						ach(13466, crit(4, {	-- Tides of Vengeance / Fly Out to Meet Them
-							["sourceQuest"] = 54280,	-- Fly Out to Meet Them
-						})),
-					},
+				n(-4, {	-- Achievements
+					ach(12509, {	-- Ready for War
+						["races"] = HORDE_ONLY,
+						["maps"] = { 1163, 1164, 1165 },	-- Dazar'alor
+						["lvl"] = 110,
+						["g"] = {
+							crit(1, {	-- Drustvar Foothold
+								["sourceQuest"] = 51985,	-- Return to Zuldazar (Drustvar Foothold)
+							}),
+							crit(2, {	-- Tiragarde Sound Foothold
+								["sourceQuest"] = 51984,	-- Return to Zuldazar (Tiragarde Sound Foothold)
+							}),
+							crit(3, {	-- Stormsong Valley Foothold
+								["sourceQuest"] = 51986,	-- Return to Zuldazar (Stormsong Valley Foothold)
+							}),
+							crit(4, {	-- The First Assault
+								["sourceQuest"] = 51601,	-- The Bridgeport Ride
+							}),
+							crit(5, {	-- The Marshal's Grave
+								["sourceQuest"] = 51789,	-- What Remains of Marshal M. Valentine
+							}),
+							crit(6, {	-- Death of a Tidesage
+								["sourceQuest"] = 52122,	-- To Be Forsaken
+							}),
+							crit(7, {	-- At the Bottom of the Sea
+								["sourceQuest"] = 52978,	-- With Prince in Tow
+							}),
+							crit(8, {	-- The Strike on Boralus
+								["sourceQuest"] = 53003,	-- A Cycle of Hatred
+							}),
+						},
+					}),
+					ach(13466, {	-- Tides of Vengeance
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							crit(1, {	-- The Day is Won
+								["sourceQuest"] = 53981,	-- The Day is Won
+							}),
+							crit(2, {	-- Mekkatorque's Battle Plans
+								["sourceQuest"] = 54022,	-- Mekkatorque's Battle Plans
+							}),
+							crit(3, {	-- Through the Front Door
+								["sourceQuest"] = 54179,	-- Through the Front Door
+							}),
+							crit(4, {	-- Fly Out to Meet Them
+								["sourceQuest"] = 54280,	-- Fly Out to Meet Them
+							}),
+						},
+					}),
 				}),
 				n(-6015, {	-- Rewards
 					["description"] = "You'll be offered these rewards at the end of your first foothold.",
@@ -180,7 +181,7 @@ _.ExpansionFeatures =
 					q(53067, {	-- Operation: Bottom Feeder
 						["qg"] = 135691,	-- Nathanos Blightcaller
 						["description"] = "This Quest automatically pop up when you reach a Reputation of 7500 Honored with the Honorbound.",
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -188,7 +189,7 @@ _.ExpansionFeatures =
 						["qg"] = 135691,	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 53067,	-- Operation: Bottom Feeder
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -197,7 +198,7 @@ _.ExpansionFeatures =
 						["qg"] = 141644,	-- Nathanos Blightcaller
 						["coord"] = { 40.4, 67.2, 1157 },
 						["sourceQuest"] = 52764,	-- Journey to the Middle of Nowhere
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -206,7 +207,7 @@ _.ExpansionFeatures =
 						["qg"] = 141645,	-- Hobart Grapplehammer
 						["coord"] = { 41.6, 67.4, 1157 },
 						["sourceQuest"] = 52765,	-- Deep Dive
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -214,7 +215,7 @@ _.ExpansionFeatures =
 					q(52767, {	-- Checking Dog Tags
 						["qg"] = 141645,	-- Hobart Grapplehammer
 						["sourceQuest"] = 52766,	-- Seafloor Shipwreck
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -222,7 +223,7 @@ _.ExpansionFeatures =
 					q(52768, {	-- The Sunken Graveyard
 						["qg"] = 141645,	-- Hobart Grapplehammer
 						["sourceQuest"] = 52767,	-- Checking Dog Tags
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -230,7 +231,7 @@ _.ExpansionFeatures =
 					q(52769, {	-- Captain By Captain
 						["qg"] = 141645,	-- Hobart Grapplehammer
 						["sourceQuest"] = 52768,	-- The Sunken Graveyard
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -238,7 +239,7 @@ _.ExpansionFeatures =
 					q(52770, {	-- Biolumi-Nuisance
 						["qg"] = 141645,	-- Hobart Grapplehammer
 						["sourceQuest"] = 52768,	-- The Sunken Graveyard
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -249,7 +250,7 @@ _.ExpansionFeatures =
 							52769,	-- Captain By Captain
 							52770,	-- Biolumi-Nuisance
 						},
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -257,7 +258,7 @@ _.ExpansionFeatures =
 					q(52773, {	-- Water-Breathing Dragon
 						["qg"] = 141645,	-- Hobart Grapplehammer
 						["sourceQuest"] = 52772,	-- The Undersea Ledge
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -266,17 +267,17 @@ _.ExpansionFeatures =
 						["qg"] = 141645,	-- Hobart Grapplehammer
 						["coord"] = { 41.6, 67.4, 1157 },
 						["sourceQuest"] = 52773,	-- Water-Breathing Dragon
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
 					}),
-					q(53121, {	-- Siege of Boralus			-- Accountwide progession
+					q(53121, {	-- Siege of Boralus
 						["qg"] = 141654,	-- Lilian Voss
 						["coord"] = { 41.4, 66.6, 1157 },
 						["sourceQuest"] = 52774,	-- Grab and Go
-						["description"] = "You need to do this Quest once per Account, after that the Quest will marked as done and not available on any other Character.",
-						["minReputation"] = HONORED,
+						["description"] = "This quest can only be completed by one character per account.",
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -288,7 +289,7 @@ _.ExpansionFeatures =
 						["qg"] = 141644,	-- Nathanos Blightcaller
 						["coord"] = { 40.4, 67.2, 1157 },
 						["sourceQuest"] = 52774,	-- Grab and Go
-						["minReputation"] = HONORED,
+						["minReputation"] = HONORED+7500,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -296,9 +297,9 @@ _.ExpansionFeatures =
 					q(53068, {	-- Operation: Hook and Line
 						["qg"] = 141644,	-- Nathanos Blightcaller
 						["sourceQuest"] = 52978,	-- With Prince in Tow
-						["description"] = "This Quest automatically pop up when you reach Reverted with the Honorbound. If this Quest does not show up you need to relog.",
+						["description"] = "This Quest automatically pop up when you reach Revered with the Honorbound. If this Quest does not show up you need to relog.",
 						["isBreadcrumb"] = true,
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -306,7 +307,7 @@ _.ExpansionFeatures =
 						["qg"] = 141644,	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 53068,	-- Operation: Hook and Line
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -314,7 +315,7 @@ _.ExpansionFeatures =
 						["qg"] = 140485,	-- Nathanos Blightcaller
 						["coord"] = { 86.9, 53.1, 895 },
 						["sourceQuest"] = 52183,	-- When a Plan Comes Together
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -323,7 +324,7 @@ _.ExpansionFeatures =
 						["qg"] = 140484,	-- Captain Amalia Stone
 						["coord"] = { 87.0, 53.1, 895 },
 						["sourceQuest"] = 52183,	-- When a Plan Comes Together
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -335,7 +336,7 @@ _.ExpansionFeatures =
 							52187,	-- Old Colleagues
 							52186,	-- The Bulk of the Guard
 						},
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -344,7 +345,7 @@ _.ExpansionFeatures =
 						["qg"] = 140487,	-- Thomas Zelling
 						["coord"] = { 71.0, 84.8, 1161 },
 						["sourceQuest"] = 52185,	-- A Well Placed Portal
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1161 },	-- Boralus
@@ -353,7 +354,7 @@ _.ExpansionFeatures =
 						["qg"] = 140487,	-- Thomas Zelling
 						["coord"] = { 71.0, 84.8, 1161 },
 						["sourceQuest"] = 52185,	-- A Well Placed Portal
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1161 },	-- Boralus
@@ -362,7 +363,7 @@ _.ExpansionFeatures =
 						["qg"] = 140487,	-- Thomas Zelling
 						["coord"] = { 71.0, 84.8, 1161 },
 						["sourceQuest"] = 52185,	-- A Well Placed Portal
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1161 },	-- Boralus
@@ -375,7 +376,7 @@ _.ExpansionFeatures =
 							52188,	-- Tidesage Teachings
 							52189,	-- Forfeit Souls
 						},
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1161 },	-- Boralus
@@ -383,7 +384,7 @@ _.ExpansionFeatures =
 					q(52990, {	-- Return to the Harbor
 						["qg"] = 141602,	-- Thomas Zelling
 						["sourceQuest"] = 52190,	-- Gaining the Upper Hand
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1161 },	-- Boralus
@@ -392,7 +393,7 @@ _.ExpansionFeatures =
 						["qg"] = 140485,	-- Nathanos Blightcaller
 						["coord"] = { 86.9, 53.1, 895 },
 						["sourceQuest"] = 52990,	-- Return to the Harbor
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1161 },	-- Boralus
@@ -401,7 +402,7 @@ _.ExpansionFeatures =
 						["qg"] = 140485,	-- Nathanos Blightcaller
 						["coord"] = { 86.9, 53.1, 895 },
 						["sourceQuest"] = 52191,	-- Life Held Hostage
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -410,7 +411,7 @@ _.ExpansionFeatures =
 						["qg"] = 135691,	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 52192,	-- The Aid of the Tides
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -418,7 +419,7 @@ _.ExpansionFeatures =
 						["qg"] = 141961,	-- Lilian Voss
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 52192,	-- The Aid of the Tides
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["g"] = {
@@ -430,7 +431,7 @@ _.ExpansionFeatures =
 						["qg"] = 134711,	-- Lady Sylvanas Windrunner
 						["coord"] = { 48.4, 71.4, 85 },
 						["sourceQuest"] = 53003,	-- A Cycle of Hatred
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 85 },	-- Orgrimmar
@@ -439,7 +440,7 @@ _.ExpansionFeatures =
 						["qg"] = 135691,	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 53850,	-- Our War Continues
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -448,7 +449,7 @@ _.ExpansionFeatures =
 						["qg"] = 145422,	-- Rexxar
 						["coord"] = { 47.5, 21.8, 895 },
 						["sourceQuest"] = 53852,	-- Azerite Denied
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -460,7 +461,7 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 48.9, 25.0, 895 },
 						["sourceQuest"] = 53856,	-- The Fury of the Horde
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -472,7 +473,7 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 48.9, 25.0, 895 },
 						["sourceQuest"] = 53856,	-- The Fury of the Horde
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -483,7 +484,7 @@ _.ExpansionFeatures =
 							53879,	-- Cleaning Out the Estate
 							53880,	-- Machines of War and Azerite
 						},
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -491,7 +492,7 @@ _.ExpansionFeatures =
 					q(53912, {	-- The Hunt Never Ends
 						["qg"] = 146462,	-- Rexxar
 						["sourceQuest"] = 53913,	-- With Honor
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -500,7 +501,7 @@ _.ExpansionFeatures =
 						["qg"] = 145422,	-- Rexxar
 						["coord"] = { 53.0, 30.5, 895 },
 						["sourceQuest"] = 53912,	-- The Hunt Never Ends
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -509,7 +510,7 @@ _.ExpansionFeatures =
 						["qg"] = 145422,	-- Rexxar
 						["coord"] = { 47.4, 21.8, 895 },
 						["sourceQuest"] = 53973,	-- Ride Out to Meet Them
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -518,8 +519,8 @@ _.ExpansionFeatures =
 						["qg"] = 135691,	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 53981,	-- The Day is Won
-						["description"] = "You need to reach a Reputation of 7000 Reverted with the Honorbound to get this Quest offered.",
-						["minReputation"] = REVERTED,
+						["description"] = "You need to reach a Reputation of 7000 Revered with the Honorbound to get this Quest offered.",
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -527,7 +528,7 @@ _.ExpansionFeatures =
 						["qg"] = 145751,	-- Trade Prince Gallywix
 						["coord"] = { 36.2, 72.0, 862 },
 						["sourceQuest"] = 53941,	-- A Mech for a Goblin
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -535,7 +536,7 @@ _.ExpansionFeatures =
 						["qg"] = 148339,	-- Patch
 						["coord"] = { 36.3, 72.0, 862 },
 						["sourceQuest"] = 53941,	-- A Mech for a Goblin
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -546,7 +547,7 @@ _.ExpansionFeatures =
 							54123,	-- It Belongs in My Mech!
 							54124,	-- Avoiding Lawsuits 101
 						},
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 896 },	-- Drustvar
@@ -555,7 +556,7 @@ _.ExpansionFeatures =
 						["qg"] = 145816,	-- G.M.O.D.
 						["coord"] = { 37.3, 26.0, 896 },
 						["sourceQuest"] = 53942,	-- The Right Mech for the Job
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 896 },	-- Drustvar
@@ -564,7 +565,7 @@ _.ExpansionFeatures =
 						["qg"] = 145816,	-- G.M.O.D.
 						["coord"] = { 37.3, 26.0, 896 },
 						["sourceQuest"] = 54128,	-- Necessary Precautions
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 896 },	-- Drustvar
@@ -573,7 +574,7 @@ _.ExpansionFeatures =
 						["qg"] = 146073,	-- Trade Prince Gallywix
 						["coord"] = { 54.6, 64.6, 895 },
 						["sourceQuest"] = 54128,	-- Test Case #1; Mech vs. Mekkatorque
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -582,7 +583,7 @@ _.ExpansionFeatures =
 						["qg"] = 146073,	-- Trade Prince Gallywix
 						["coord"] = { 54.6, 64.6, 895 },
 						["sourceQuest"] = 54007,	-- Insurance Policy
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -591,7 +592,7 @@ _.ExpansionFeatures =
 						["qg"] = 146073,	-- Trade Prince Gallywix
 						["coord"] = { 54.6, 64.6, 895 },
 						["sourceQuest"] = 54007,	-- Insurance Policy
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -599,7 +600,7 @@ _.ExpansionFeatures =
 					q(54022, {	-- Mekkatorque's Battle Plans
 						["itemID"] = 164987,	-- Alliance Battle Plans
 						["sourceQuest"] = 54007,	-- Insurance Policy
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -612,7 +613,7 @@ _.ExpansionFeatures =
 							54009,	-- Killing on the Side
 							54022,	-- Mekkatorque's Battle Plans
 						},
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -621,7 +622,7 @@ _.ExpansionFeatures =
 						["qg"] = 146623,	-- G.M.O.D.
 						["coord"] = { 87.6, 53.5, 895 },
 						["sourceQuest"] = 54028,	-- Mech versus Airship
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+7000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -630,8 +631,8 @@ _.ExpansionFeatures =
 						["qg"] = 135691,	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 54094,	-- A Goblin's Definition of Success
-						["description"] = "You need to reach a Reputation of 14000 Reverted with the Honorbound to get this Quest offered.",
-						["minReputation"] = REVERTED,
+						["description"] = "You need to reach a Reputation of 14000 Revered with the Honorbound to get this Quest offered.",
+						["minReputation"] = REVERED+14000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -640,7 +641,7 @@ _.ExpansionFeatures =
 						["qg"] = 147088,	-- Arcanist Valtrois
 						["coord"] = { 82.9, 49.5, 895 },
 						["sourceQuest"] = 54094,	-- Breaking Out Ashvane
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+14000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -649,7 +650,7 @@ _.ExpansionFeatures =
 						["qg"] = 147088,	-- Arcanist Valtrois
 						["coord"] = { 82.9, 49.5, 895 },
 						["sourceQuest"] = 54094,	-- Breaking Out Ashvane
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+14000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -658,7 +659,7 @@ _.ExpansionFeatures =
 						["qg"] = 146931,	-- Rexxar
 						["coord"] = { 83.0, 49.6, 895 },
 						["sourceQuest"] = 54094,	-- Breaking Out Ashvane
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+14000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -671,7 +672,7 @@ _.ExpansionFeatures =
 							54176,	-- Be More Uniform
 							54177,	-- A Brilliant Distraction
 						},
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+14000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
@@ -680,7 +681,7 @@ _.ExpansionFeatures =
 						["qg"] = 147135,	-- Nathanos Blightcaller
 						["coord"] = { 88.2, 50.8, 895 },
 						["sourceQuest"] = 54094,	-- Breaking Out Ashvane
-						["minReputation"] = REVERTED,
+						["minReputation"] = REVERED+14000,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 
@@ -695,7 +696,163 @@ _.ExpansionFeatures =
 							i(163280),	-- Honorbound Artificer's Robes
 						},
 					}),
-				
+					q(54139, {	-- War Is Here
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 862 },
+						["sourceQuest"] = 54179,	-- Through the Front Door
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(54140, {	-- Ride of the Zandalari
+						["qg"] = 133050,	-- Princess Talanji
+						["coord"] = { 41.1, 66.5, 1165 },
+						["sourceQuest"] = 54139,	-- War Is Here
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(54156, {	-- A Path of Blood
+						["qg"] = 147075,	-- General Rakera
+						["coord"] = { 58.0, 21.3, 862 },
+						["sourceQuest"] = 54140,	-- Ride of the Zandalari
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(54157, {	-- No One Left Behind
+						["qg"] = 146921,	-- Princess Talanji
+						["coord"] = { 58.0, 21.3, 862 },
+						["sourceQuest"] = 54140,	-- Ride of the Zandalari
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(54207, {	-- Retaking the Outpost
+						["qg"] = 147075,	-- General Rakera
+						["coord"] = { 58.0, 21.3, 862 },
+						["sourceQuests"] = {
+							54156,	-- A Path of Blood
+							54157,	-- No One Left Behind
+						},
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(54211, {	-- Putting the Gob in Gob Squad
+						["qg"] = 147155,	-- Patch
+						["coord"] = { 50.3, 78.4, 863 },
+						["sourceQuest"] = 54207,	-- Retaking the Outpost
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54212, {	-- Re-rebuilding the A.F.M.O.D.
+						["qg"] = 147155,	-- Patch
+						["coord"] = { 50.3, 78.4, 863 },
+						["sourceQuest"] = 54207,	-- Retaking the Outpost
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54213, {	-- It's Alive!
+						["qg"] = 147155,	-- Patch
+						["coord"] = { 50.3, 78.4, 863 },
+						["sourceQuests"] = {
+							54211,	-- Putting the Gob in Gob Squad
+							54212,	-- Re-rebuilding the A.F.M.O.D.
+						},
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54224, {	-- The Battle of Zul'jan Ruins
+						["qg"] = 146921,	-- Princess Talanji
+						["coord"] = { 50.4, 78.5, 863 },
+						["sourceQuest"] = 54213,	-- It's Alive!
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54244, {	-- We Have Them Cornered
+						["qg"] = 146921,	-- Princess Talanji
+						["coord"] = { 39.3, 78.2, 863 },
+						["sourceQuest"] = 54224,	-- The Battle of Zul'jan Ruins
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54249, {	-- Zandalari Justice
+						["qg"] = 146921,	-- Princess Talanji
+						["coord"] = { 30.9, 51.9, 863 },
+						["sourceQuest"] = 54244,	-- We Have Them Cornered
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54269, {	-- None Shall Escape
+						["qg"] = 147075,	-- General Rakera
+						["coord"] = { 30.8, 51.8, 863 },
+						["sourceQuest"] = 54244,	-- We Have Them Cornered
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54270, {	-- Breaking Mirrors
+						["qg"] = 147075,	-- General Rakera
+						["coord"] = { 30.8, 51.8, 863 },
+						["sourceQuest"] = 54244,	-- We Have Them Cornered
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54271, {	-- Telaamon's Purge
+						["qg"] = 147233,	-- Rokhan
+						["coord"] = { 31.2, 46.8, 863 },
+						["sourceQuests"] = {
+							54249,	-- Zandalari Justice
+							54269,	-- None Shall Escape
+							54270,	-- Breaking Mirrors
+						},
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54275, {	-- Parting Mists
+						["qg"] = 147233,	-- Rokhan
+						["coord"] = { 31.2, 46.8, 863 },
+						["sourceQuest"] = 54271,	-- Telaamon's Purge
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54280, {	-- Fly Out to Meet Them
+						["qg"] = 147075,	-- General Rakera
+						["coord"] = { 31.4, 32.0, 863 },
+						["sourceQuest"] = 54271,	-- Telaamon's Purge
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 863 },	-- Nazmir
+					}),
+					q(54280, {	-- Fly Out to Meet Them
+						["qg"] = 146921,	-- Princess Talanji
+						["coord"] = { 37.0, 5.2, 862 },
+						["sourceQuest"] = 54280,	-- Fly Out to Meet Them
+						["minReputation"] = REVERED+14000,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
 				--	unsorted below this point
 				
 					q(51987, {	-- Champion: Hobart Grapplehammer
