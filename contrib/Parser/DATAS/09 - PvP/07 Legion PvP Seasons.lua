@@ -3116,37 +3116,135 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(6, {	-- Death Knight
+						i(145376),	-- Ferocious Gladiator's Dreadcloak (A)
+						i(145400),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
+						i(145404),	-- Ferocious Gladiator's Dreadplate Gauntlets (A)
+						i(145412),	-- Ferocious Gladiator's Dreadplate Girdle (A)
+						i(145406),	-- Ferocious Gladiator's Dreadplate Helm (A)
+						i(145408),	-- Ferocious Gladiator's Dreadplate Legguards (A)
+						i(145402),	-- Ferocious Gladiator's Dreadplate Sabatons (A)
+						i(145410),	-- Ferocious Gladiator's Dreadplate Shoulders (A)
+						i(145414),	-- Ferocious Gladiator's Dreadplate Wristplates (A)
 					}),
 					cl(12, {	-- Demon Hunter
+						i(145378),	-- Ferocious Gladiator's Demonthread Cloak (A)
+						i(145428),	-- Ferocious Gladiator's Felskin Belt (A)
+						i(145418),	-- Ferocious Gladiator's Felskin Boots (A)
+						i(145420),	-- Ferocious Gladiator's Felskin Gloves (A)
+						i(145422),	-- Ferocious Gladiator's Felskin Helm (A)
+						i(145424),	-- Ferocious Gladiator's Felskin Legguards (A)
+						i(145426),	-- Ferocious Gladiator's Felskin Spaulders (A)
+						i(145416),	-- Ferocious Gladiator's Felskin Tunic (A)
+						i(145430),	-- Ferocious Gladiator's Felskin Wristguards (A)
 					}),
 					cl(11, {	-- Druid
+						i(145444),	-- Ferocious Gladiator's Dragonhide Belt (A)
+						i(145380),	-- Ferocious Gladiator's Dragonhide Cloak (A)
+						i(145436),	-- Ferocious Gladiator's Dragonhide Gloves (A)
+						i(145438),	-- Ferocious Gladiator's Dragonhide Helm (A)
+						i(145440),	-- Ferocious Gladiator's Dragonhide Legguards (A)
+						i(145434),	-- Ferocious Gladiator's Dragonhide Moccasins (A)
+						i(145432),	-- Ferocious Gladiator's Dragonhide Robe (A)
+						i(145442),	-- Ferocious Gladiator's Dragonhide Spaulders (A)
+						i(145446),	-- Ferocious Gladiator's Dragonhide Wristguards (A)
 					}),
 					cl(3, {	-- Hunter
+						i(145462),	-- Ferocious Gladiator's Chain Armband (A)
+						i(145448),	-- Ferocious Gladiator's Chain Armor (A)
+						i(145460),	-- Ferocious Gladiator's Chain Clasp (A)
+						i(145452),	-- Ferocious Gladiator's Chain Gauntlets (A)
+						i(145454),	-- Ferocious Gladiator's Chain Helm (A)
+						i(145456),	-- Ferocious Gladiator's Chain Leggings (A)
+						i(145458),	-- Ferocious Gladiator's Chain Spaulders (A)
+						i(145450),	-- Ferocious Gladiator's Chain Treads (A)
+						i(145382),	-- Ferocious Gladiator's Drape of the Tracker (A)
 					}),
 					cl(8, {	-- Mage
+						i(145474),	-- Ferocious Gladiator's Silk Amice (A)
+						i(145478),	-- Ferocious Gladiator's Silk Bracers (A)
+						i(145476),	-- Ferocious Gladiator's Silk Cord (A)
+						i(145468),	-- Ferocious Gladiator's Silk Cowl (A)
+						i(145466),	-- Ferocious Gladiator's Silk Handguards (A)
+						i(145472),	-- Ferocious Gladiator's Silk Robe (A)
+						i(145464),	-- Ferocious Gladiator's Silk Treads (A)
+						i(145470),	-- Ferocious Gladiator's Silk Trousers (A)
+						i(145384),	-- Ferocious Gladiator's Silken Shawl (A)
 					}),
 					cl(10, {	-- Monk
+						i(145386),	-- Ferocious Gladiator's Ironskin Cloak (A)
+						i(145482),	-- Ferocious Gladiator's Ironskin Gloves (A)
+						i(145484),	-- Ferocious Gladiator's Ironskin Helm (A)
+						i(145486),	-- Ferocious Gladiator's Ironskin Legguards (A)
+						i(145480),	-- Ferocious Gladiator's Ironskin Slippers (A)
+						i(145488),	-- Ferocious Gladiator's Ironskin Spaulders (A)
+						i(145490),	-- Ferocious Gladiator's Ironskin Tunic (A)
+						i(145494),	-- Ferocious Gladiator's Ironskin Wristguards (A)
 					}),
 					cl(2, {	-- Paladin
-						i(145388),	-- Ferocious Gladiator's Greatcloak of Faith (A)
-						i(145511),	-- Ferocious Gladiator's Scaled Breastplate (A)
-						i(145505),	-- Ferocious Gladiator's Scaled Gauntlets (A)
-						i(145514),	-- Ferocious Gladiator's Scaled Girdle (A)
-						i(145507),	-- Ferocious Gladiator's Scaled Helm (A)
-						i(145509),	-- Ferocious Gladiator's Scaled Legguards (A)
-						i(145503),	-- Ferocious Gladiator's Scaled Sabatons (A)
-						i(145512),	-- Ferocious Gladiator's Scaled Shoulders (A)
-						i(145516),	-- Ferocious Gladiator's Scaled Wristplates (A)
+						i(145377),	-- Ferocious Gladiator's Dreadcloak (H)
+						i(145401),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
+						i(145405),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
+						i(145413),	-- Ferocious Gladiator's Dreadplate Girdle (H)
+						i(145407),	-- Ferocious Gladiator's Dreadplate Helm (H)
+						i(145409),	-- Ferocious Gladiator's Dreadplate Legguards (H)
+						i(145403),	-- Ferocious Gladiator's Dreadplate Sabatons (H)
+						i(145411),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
+						i(145415),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
 					}),
 					cl(5, {	-- Priest
+						i(145390),	-- Ferocious Gladiator's Drape of Piety (A)
+						i(145532),	-- Ferocious Gladiator's Satin Bracers (A)
+						i(145530),	-- Ferocious Gladiator's Satin Cord (A)
+						i(145520),	-- Ferocious Gladiator's Satin Gloves (A)
+						i(145522),	-- Ferocious Gladiator's Satin Hood (A)
+						i(145524),	-- Ferocious Gladiator's Satin Leggings (A)
+						i(145528),	-- Ferocious Gladiator's Satin Mantle (A)
+						i(145526),	-- Ferocious Gladiator's Satin Robe (A)
+						i(145518),	-- Ferocious Gladiator's Satin Treads (A)
 					}),
 					cl(4, {	-- Rogue
+						i(145552),	-- Ferocious Gladiator's Leather Belt (A)
+						i(145544),	-- Ferocious Gladiator's Leather Gloves (A)
+						i(145546),	-- Ferocious Gladiator's Leather Helm (A)
+						i(145548),	-- Ferocious Gladiator's Leather Legguards (A)
+						i(145542),	-- Ferocious Gladiator's Leather Slippers (A)
+						i(145550),	-- Ferocious Gladiator's Leather Spaulders (A)
+						i(145540),	-- Ferocious Gladiator's Leather Tunic (A)
+						i(145554),	-- Ferocious Gladiator's Leather Wristguards (A)
+						i(145392),	-- Ferocious Gladiator's Shadowcape (A)
 					}),
 					cl(7, {	-- Shaman
+						i(145570),	-- Ferocious Gladiator's Ringmail Armband (A)
+						i(145556),	-- Ferocious Gladiator's Ringmail Armor (A)
+						i(145558),	-- Ferocious Gladiator's Ringmail Boots (A)
+						i(145568),	-- Ferocious Gladiator's Ringmail Clasp (A)
+						i(145560),	-- Ferocious Gladiator's Ringmail Gauntlets (A)
+						i(145562),	-- Ferocious Gladiator's Ringmail Helm (A)
+						i(145564),	-- Ferocious Gladiator's Ringmail Kilt (A)
+						i(145566),	-- Ferocious Gladiator's Ringmail Spaulders (A)
+						i(145394),	-- Ferocious Gladiator's Totemic Cloak (A)
 					}),
 					cl(9, {	-- Warlock
+						i(145600),	-- Ferocious Gladiator's Felweave Amice (A)
+						i(145604),	-- Ferocious Gladiator's Felweave Bracers (A)
+						i(145396),	-- Ferocious Gladiator's Felweave Cloak (A)
+						i(145602),	-- Ferocious Gladiator's Felweave Cord (A)
+						i(145594),	-- Ferocious Gladiator's Felweave Cowl (A)
+						i(145592),	-- Ferocious Gladiator's Felweave Handguards (A)
+						i(145598),	-- Ferocious Gladiator's Felweave Raiment (A)
+						i(145590),	-- Ferocious Gladiator's Felweave Treads (A)
+						i(145596),	-- Ferocious Gladiator's Felweave Trousers (A)
 					}),
 					cl(1, {	-- Warrior
+						i(145398),	-- Ferocious Gladiator's Cloak of Battle (A)
+						i(145606),	-- Ferocious Gladiator's Plate Chestpiece (A)
+						i(145610),	-- Ferocious Gladiator's Plate Gauntlets (A)
+						i(145618),	-- Ferocious Gladiator's Plate Girdle (A)
+						i(145612),	-- Ferocious Gladiator's Plate Helm (A)
+						i(145614),	-- Ferocious Gladiator's Plate Legguards (A)
+						i(145616),	-- Ferocious Gladiator's Plate Shoulders (A)
+						i(145608),	-- Ferocious Gladiator's Plate Warboots (A)
+						i(145620),	-- Ferocious Gladiator's Plate Wristplates (A)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(145496)),	-- Ferocious Gladiator's Necklace (A)
@@ -3204,28 +3302,137 @@ _.PVP =
 				}),
 				n(-662, {	-- Elite PvP Gear
 					cl(6, {	-- Death Knight
+						un(14, i(145622)),	-- Ferocious Gladiator's Dreadcloak (A)
+						un(14, i(145646)),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
+						un(14, i(145650)),	-- Ferocious Gladiator's Dreadplate Gauntlets (A)
+						un(14, i(145658)),	-- Ferocious Gladiator's Dreadplate Girdle (A)
+						un(14, i(145652)),	-- Ferocious Gladiator's Dreadplate Helm (A)
+						un(14, i(145654)),	-- Ferocious Gladiator's Dreadplate Legguards (A)
+						un(14, i(145648)),	-- Ferocious Gladiator's Dreadplate Sabatons (A)
+						un(14, i(145656)),	-- Ferocious Gladiator's Dreadplate Shoulders (A)
+						un(14, i(145660)),	-- Ferocious Gladiator's Dreadplate Wristplates (A)
 					}),
 					cl(12, {	-- Demon Hunter
+						un(14, i(145624)),	-- Ferocious Gladiator's Demonthread Cloak (A)
+						un(14, i(145674)),	-- Ferocious Gladiator's Felskin Belt (A)
+						un(14, i(145664)),	-- Ferocious Gladiator's Felskin Boots (A)
+						un(14, i(145666)),	-- Ferocious Gladiator's Felskin Gloves (A)
+						un(14, i(145668)),	-- Ferocious Gladiator's Felskin Helm (A)
+						un(14, i(145670)),	-- Ferocious Gladiator's Felskin Legguards (A)
+						un(14, i(145672)),	-- Ferocious Gladiator's Felskin Spaulders (A)
+						un(14, i(145662)),	-- Ferocious Gladiator's Felskin Tunic (A)
+						un(14, i(145676)),	-- Ferocious Gladiator's Felskin Wristguards (A)
 					}),
 					cl(11, {	-- Druid
+						un(14, i(145690)),	-- Ferocious Gladiator's Dragonhide Belt (A)
+						un(14, i(145626)),	-- Ferocious Gladiator's Dragonhide Cloak (A)
+						un(14, i(145682)),	-- Ferocious Gladiator's Dragonhide Gloves (A)
+						un(14, i(145684)),	-- Ferocious Gladiator's Dragonhide Helm (A)
+						un(14, i(145686)),	-- Ferocious Gladiator's Dragonhide Legguards (A)
+						un(14, i(145680)),	-- Ferocious Gladiator's Dragonhide Moccasins (A)
+						un(14, i(145678)),	-- Ferocious Gladiator's Dragonhide Robe (A)
+						un(14, i(145688)),	-- Ferocious Gladiator's Dragonhide Spaulders (A)
+						un(14, i(145692)),	-- Ferocious Gladiator's Dragonhide Wristguards (A)
 					}),
 					cl(3, {	-- Hunter
+						un(14, i(145708)),	-- Ferocious Gladiator's Chain Armband (A)
+						un(14, i(145694)),	-- Ferocious Gladiator's Chain Armor (A)
+						un(14, i(145706)),	-- Ferocious Gladiator's Chain Clasp (A)
+						un(14, i(145698)),	-- Ferocious Gladiator's Chain Gauntlets (A)
+						un(14, i(145700)),	-- Ferocious Gladiator's Chain Helm (A)
+						un(14, i(145702)),	-- Ferocious Gladiator's Chain Leggings (A)
+						un(14, i(145704)),	-- Ferocious Gladiator's Chain Spaulders (A)
+						un(14, i(145696)),	-- Ferocious Gladiator's Chain Treads (A)
+						un(14, i(145628)),	-- Ferocious Gladiator's Drape of the Tracker (A)
 					}),
 					cl(8, {	-- Mage
+						un(14, i(145720)),	-- Ferocious Gladiator's Silk Amice (A)
+						un(14, i(145724)),	-- Ferocious Gladiator's Silk Bracers (A)
+						un(14, i(145722)),	-- Ferocious Gladiator's Silk Cord (A)
+						un(14, i(145714)),	-- Ferocious Gladiator's Silk Cowl (A)
+						un(14, i(145712)),	-- Ferocious Gladiator's Silk Handguards (A)
+						un(14, i(145718)),	-- Ferocious Gladiator's Silk Robe (A)
+						un(14, i(145710)),	-- Ferocious Gladiator's Silk Treads (A)
+						un(14, i(145716)),	-- Ferocious Gladiator's Silk Trousers (A)
+						un(14, i(145630)),	-- Ferocious Gladiator's Silken Shawl (A)
 					}),
 					cl(10, {	-- Monk
+						un(14, i(145738)),	-- Ferocious Gladiator's Ironskin Belt (A)
+						un(14, i(145492)),	-- Ferocious Gladiator's Ironskin Belt (A)
+						un(14, i(145632)),	-- Ferocious Gladiator's Ironskin Cloak (A)
+						un(14, i(145728)),	-- Ferocious Gladiator's Ironskin Gloves (A)
+						un(14, i(145730)),	-- Ferocious Gladiator's Ironskin Helm (A)
+						un(14, i(145732)),	-- Ferocious Gladiator's Ironskin Legguards (A)
+						un(14, i(145726)),	-- Ferocious Gladiator's Ironskin Slippers (A)
+						un(14, i(145734)),	-- Ferocious Gladiator's Ironskin Spaulders (A)
+						un(14, i(145736)),	-- Ferocious Gladiator's Ironskin Tunic (A)
+						un(14, i(145740)),	-- Ferocious Gladiator's Ironskin Wristguards (A)
 					}),
 					cl(2, {	-- Paladin
+						un(14, i(145634)),	-- Ferocious Gladiator's Greatcloak of Faith (A)
+						un(14, i(145748)),	-- Ferocious Gladiator's Scaled Breastplate (A)
+						un(14, i(145752)),	-- Ferocious Gladiator's Scaled Gauntlets (A)
+						un(14, i(145760)),	-- Ferocious Gladiator's Scaled Girdle (A)
+						un(14, i(145754)),	-- Ferocious Gladiator's Scaled Helm (A)
+						un(14, i(145756)),	-- Ferocious Gladiator's Scaled Legguards (A)
+						un(14, i(145750)),	-- Ferocious Gladiator's Scaled Sabatons (A)
+						un(14, i(145758)),	-- Ferocious Gladiator's Scaled Shoulders (A)
+						un(14, i(145762)),	-- Ferocious Gladiator's Scaled Wristplates (A)
 					}),
 					cl(5, {	-- Priest
+						un(14, i(145636)),	-- Ferocious Gladiator's Drape of Piety (A)
+						un(14, i(145778)),	-- Ferocious Gladiator's Satin Bracers (A)
+						un(14, i(145776)),	-- Ferocious Gladiator's Satin Cord (A)
+						un(14, i(145766)),	-- Ferocious Gladiator's Satin Gloves (A)
+						un(14, i(145768)),	-- Ferocious Gladiator's Satin Hood (A)
+						un(14, i(145770)),	-- Ferocious Gladiator's Satin Leggings (A)
+						un(14, i(145774)),	-- Ferocious Gladiator's Satin Mantle (A)
+						un(14, i(145772)),	-- Ferocious Gladiator's Satin Robe (A)
+						un(14, i(145764)),	-- Ferocious Gladiator's Satin Treads (A)
 					}),
 					cl(4, {	-- Rogue
+						un(14, i(145798)),	-- Ferocious Gladiator's Leather Belt (A)
+						un(14, i(145790)),	-- Ferocious Gladiator's Leather Gloves (A)
+						un(14, i(145792)),	-- Ferocious Gladiator's Leather Helm (A)
+						un(14, i(145794)),	-- Ferocious Gladiator's Leather Legguards (A)
+						un(14, i(145788)),	-- Ferocious Gladiator's Leather Slippers (A)
+						un(14, i(145796)),	-- Ferocious Gladiator's Leather Spaulders (A)
+						un(14, i(145786)),	-- Ferocious Gladiator's Leather Tunic (A)
+						un(14, i(145800)),	-- Ferocious Gladiator's Leather Wristguards (A)
+						un(14, i(145638)),	-- Ferocious Gladiator's Shadowcape (A)
 					}),
 					cl(7, {	-- Shaman
+						un(14, i(145816)),	-- Ferocious Gladiator's Ringmail Armband (A)
+						un(14, i(145802)),	-- Ferocious Gladiator's Ringmail Armor (A)
+						un(14, i(145804)),	-- Ferocious Gladiator's Ringmail Boots (A)
+						un(14, i(145814)),	-- Ferocious Gladiator's Ringmail Clasp (A)
+						un(14, i(145806)),	-- Ferocious Gladiator's Ringmail Gauntlets (A)
+						un(14, i(145808)),	-- Ferocious Gladiator's Ringmail Helm (A)
+						un(14, i(145810)),	-- Ferocious Gladiator's Ringmail Kilt (A)
+						un(14, i(145812)),	-- Ferocious Gladiator's Ringmail Spaulders (A)
+						un(14, i(145640)),	-- Ferocious Gladiator's Totemic Cloak (A)
 					}),
 					cl(9, {	-- Warlock
+						un(14, i(145846)),	-- Ferocious Gladiator's Felweave Amice (A)
+						un(14, i(145850)),	-- Ferocious Gladiator's Felweave Bracers (A)
+						un(14, i(145642)),	-- Ferocious Gladiator's Felweave Cloak (A)
+						un(14, i(145848)),	-- Ferocious Gladiator's Felweave Cord (A)
+						un(14, i(145840)),	-- Ferocious Gladiator's Felweave Cowl (A)
+						un(14, i(145838)),	-- Ferocious Gladiator's Felweave Handguards (A)
+						un(14, i(145844)),	-- Ferocious Gladiator's Felweave Raiment (A)
+						un(14, i(145836)),	-- Ferocious Gladiator's Felweave Treads (A)
+						un(14, i(145842)),	-- Ferocious Gladiator's Felweave Trousers (A)
 					}),
 					cl(1, {	-- Warrior
+						un(14, i(145644)),	-- Ferocious Gladiator's Cloak of Battle (A)
+						un(14, i(145852)),	-- Ferocious Gladiator's Plate Chestpiece (A)
+						un(14, i(145856)),	-- Ferocious Gladiator's Plate Gauntlets (A)
+						un(14, i(145864)),	-- Ferocious Gladiator's Plate Girdle (A)
+						un(14, i(145858)),	-- Ferocious Gladiator's Plate Helm (A)
+						un(14, i(145860)),	-- Ferocious Gladiator's Plate Legguards (A)
+						un(14, i(145862)),	-- Ferocious Gladiator's Plate Shoulders (A)
+						un(14, i(145854)),	-- Ferocious Gladiator's Plate Warboots (A)
+						un(14, i(145866)),	-- Ferocious Gladiator's Plate Wristplates (A)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(145742)),	-- Ferocious Gladiator's Necklace (A)
@@ -3440,8 +3647,26 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(6, {	-- Death Knight
+						i(145377),	-- Ferocious Gladiator's Dreadcloak (H)
+						i(145401),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
+						i(145405),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
+						i(145413),	-- Ferocious Gladiator's Dreadplate Girdle (H)
+						i(145407),	-- Ferocious Gladiator's Dreadplate Helm (H)
+						i(145409),	-- Ferocious Gladiator's Dreadplate Legguards (H)
+						i(145403),	-- Ferocious Gladiator's Dreadplate Sabatons (H)
+						i(145411),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
+						i(145415),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
 					}),
 					cl(12, {	-- Demon Hunter
+						i(145379),	-- Ferocious Gladiator's Demonthread Cloak (H)
+						i(145429),	-- Ferocious Gladiator's Felskin Belt (H)
+						i(145419),	-- Ferocious Gladiator's Felskin Boots (H)
+						i(145421),	-- Ferocious Gladiator's Felskin Gloves (H)
+						i(145423),	-- Ferocious Gladiator's Felskin Helm (H)
+						i(145425),	-- Ferocious Gladiator's Felskin Legguards (H)
+						i(145427),	-- Ferocious Gladiator's Felskin Spaulders (H)
+						i(145417),	-- Ferocious Gladiator's Felskin Tunic (H)
+						i(145431),	-- Ferocious Gladiator's Felskin Wristguards (H)
 					}),
 					cl(11, {	-- Druid
 						i(145445),	-- Ferocious Gladiator's Dragonhide Belt (H)
@@ -3466,8 +3691,26 @@ _.PVP =
 						i(145383),	-- Ferocious Gladiator's Drape of the Tracker (H)
 					}),
 					cl(8, {	-- Mage
+						i(145475),	-- Ferocious Gladiator's Silk Amice (H)
+						i(145479),	-- Ferocious Gladiator's Silk Bracers (H)
+						i(145477),	-- Ferocious Gladiator's Silk Cord (H)
+						i(145469),	-- Ferocious Gladiator's Silk Cowl (H)
+						i(145467),	-- Ferocious Gladiator's Silk Handguards (H)
+						i(145473),	-- Ferocious Gladiator's Silk Robe (H)
+						i(145465),	-- Ferocious Gladiator's Silk Treads (H)
+						i(145471),	-- Ferocious Gladiator's Silk Trousers (H)
+						i(145385),	-- Ferocious Gladiator's Silken Shawl (H)
 					}),
 					cl(10, {	-- Monk
+						i(145493),	-- Ferocious Gladiator's Ironskin Belt (H)
+						i(145387),	-- Ferocious Gladiator's Ironskin Cloak (H)
+						i(145483),	-- Ferocious Gladiator's Ironskin Gloves (H)
+						i(145485),	-- Ferocious Gladiator's Ironskin Helm (H)
+						i(145487),	-- Ferocious Gladiator's Ironskin Legguards (H)
+						i(145481),	-- Ferocious Gladiator's Ironskin Slippers (H)
+						i(145489),	-- Ferocious Gladiator's Ironskin Spaulders (H)
+						i(145491),	-- Ferocious Gladiator's Ironskin Tunic (H)
+						i(145495),	-- Ferocious Gladiator's Ironskin Wristguards (H)
 					}),
 					cl(2, {	-- Paladin
 						i(145389),	-- Ferocious Gladiator's Greatcloak of Faith (H)
@@ -3492,12 +3735,48 @@ _.PVP =
 						i(145519),	-- Ferocious Gladiator's Satin Treads (H)
 					}),
 					cl(4, {	-- Rogue
+						i(145553),	-- Ferocious Gladiator's Leather Belt (H)
+						i(145545),	-- Ferocious Gladiator's Leather Gloves (H)
+						i(145547),	-- Ferocious Gladiator's Leather Helm (H)
+						i(145549),	-- Ferocious Gladiator's Leather Legguards (H)
+						i(145543),	-- Ferocious Gladiator's Leather Slippers (H)
+						i(145551),	-- Ferocious Gladiator's Leather Spaulders (H)
+						i(145541),	-- Ferocious Gladiator's Leather Tunic (H)
+						i(145555),	-- Ferocious Gladiator's Leather Wristguards (H)
+						i(145393),	-- Ferocious Gladiator's Shadowcape (H)
 					}),
 					cl(7, {	-- Shaman
+						i(145571),	-- Ferocious Gladiator's Ringmail Armband (H)
+						i(145557),	-- Ferocious Gladiator's Ringmail Armor (H)
+						i(145559),	-- Ferocious Gladiator's Ringmail Boots (H)
+						i(145569),	-- Ferocious Gladiator's Ringmail Clasp (H)
+						i(145561),	-- Ferocious Gladiator's Ringmail Gauntlets (H)
+						i(145563),	-- Ferocious Gladiator's Ringmail Helm (H)
+						i(145565),	-- Ferocious Gladiator's Ringmail Kilt (H)
+						i(145567),	-- Ferocious Gladiator's Ringmail Spaulders (H)
+						i(145395),	-- Ferocious Gladiator's Totemic Cloak (H)
 					}),
 					cl(9, {	-- Warlock
+						i(145601),	-- Ferocious Gladiator's Felweave Amice (H)
+						i(145605),	-- Ferocious Gladiator's Felweave Bracers (H)
+						i(145397),	-- Ferocious Gladiator's Felweave Cloak (H)
+						i(145603),	-- Ferocious Gladiator's Felweave Cord (H)
+						i(145595),	-- Ferocious Gladiator's Felweave Cowl (H)
+						i(145593),	-- Ferocious Gladiator's Felweave Handguards (H)
+						i(145599),	-- Ferocious Gladiator's Felweave Raiment (H)
+						i(145591),	-- Ferocious Gladiator's Felweave Treads (H)
+						i(145597),	-- Ferocious Gladiator's Felweave Trousers (H)
 					}),
 					cl(1, {	-- Warrior
+						i(145399),	-- Ferocious Gladiator's Cloak of Battle (H)
+						i(145607),	-- Ferocious Gladiator's Plate Chestpiece (H)
+						i(145611),	-- Ferocious Gladiator's Plate Gauntlets (H)
+						i(145619),	-- Ferocious Gladiator's Plate Girdle (H)
+						i(145613),	-- Ferocious Gladiator's Plate Helm (H)
+						i(145615),	-- Ferocious Gladiator's Plate Legguards (H)
+						i(145617),	-- Ferocious Gladiator's Plate Shoulders (H)
+						i(145609),	-- Ferocious Gladiator's Plate Warboots (H)
+						i(145621),	-- Ferocious Gladiator's Plate Wristplates (H)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(145497)),	-- Ferocious Gladiator's Necklace (H)
@@ -3555,10 +3834,37 @@ _.PVP =
 				}),
 				n(-662, {	-- Elite PvP Gear
 					cl(6, {	-- Death Knight
+						un(14, i(145623)),	-- Ferocious Gladiator's Dreadcloak (H)
+						un(14, i(145647)),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
+						un(14, i(145651)),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
+						un(14, i(145659)),	-- Ferocious Gladiator's Dreadplate Girdle (H)
+						un(14, i(145653)),	-- Ferocious Gladiator's Dreadplate Helm (H)
+						un(14, i(145655)),	-- Ferocious Gladiator's Dreadplate Legguards (H)
+						un(14, i(145649)),	-- Ferocious Gladiator's Dreadplate Sabatons (H)
+						un(14, i(145657)),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
+						un(14, i(145661)),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
 					}),
 					cl(12, {	-- Demon Hunter
+						un(14, i(145625)),	-- Ferocious Gladiator's Demonthread Cloak (H)
+						un(14, i(145675)),	-- Ferocious Gladiator's Felskin Belt (H)
+						un(14, i(145665)),	-- Ferocious Gladiator's Felskin Boots (H)
+						un(14, i(145667)),	-- Ferocious Gladiator's Felskin Gloves (H)
+						un(14, i(145669)),	-- Ferocious Gladiator's Felskin Helm (H)
+						un(14, i(145671)),	-- Ferocious Gladiator's Felskin Legguards (H)
+						un(14, i(145673)),	-- Ferocious Gladiator's Felskin Spaulders (H)
+						un(14, i(145663)),	-- Ferocious Gladiator's Felskin Tunic (H)
+						un(14, i(145677)),	-- Ferocious Gladiator's Felskin Wristguards (H)
 					}),
 					cl(11, {	-- Druid
+						un(14, i(145691)),	-- Ferocious Gladiator's Dragonhide Belt (H)
+						un(14, i(145627)),	-- Ferocious Gladiator's Dragonhide Cloak (H)
+						un(14, i(145683)),	-- Ferocious Gladiator's Dragonhide Gloves (H)
+						un(14, i(145685)),	-- Ferocious Gladiator's Dragonhide Helm (H)
+						un(14, i(145687)),	-- Ferocious Gladiator's Dragonhide Legguards (H)
+						un(14, i(145681)),	-- Ferocious Gladiator's Dragonhide Moccasins (H)
+						un(14, i(145679)),	-- Ferocious Gladiator's Dragonhide Robe (H)
+						un(14, i(145689)),	-- Ferocious Gladiator's Dragonhide Spaulders (H)
+						un(14, i(145693)),	-- Ferocious Gladiator's Dragonhide Wristguards (H)
 					}),
 					cl(3, {	-- Hunter
 						un(14, i(145709)),	-- Ferocious Gladiator's Chain Armband (H)
@@ -3572,20 +3878,92 @@ _.PVP =
 						un(14, i(145629)),	-- Ferocious Gladiator's Drape of the Tracker (H)
 					}),
 					cl(8, {	-- Mage
+						un(14, i(145721)),	-- Ferocious Gladiator's Silk Amice (H)
+						un(14, i(145725)),	-- Ferocious Gladiator's Silk Bracers (H)
+						un(14, i(145723)),	-- Ferocious Gladiator's Silk Cord (H)
+						un(14, i(145715)),	-- Ferocious Gladiator's Silk Cowl (H)
+						un(14, i(145713)),	-- Ferocious Gladiator's Silk Handguards (H)
+						un(14, i(145719)),	-- Ferocious Gladiator's Silk Robe (H)
+						un(14, i(145711)),	-- Ferocious Gladiator's Silk Treads (H)
+						un(14, i(145717)),	-- Ferocious Gladiator's Silk Trousers (H)
+						un(14, i(145631)),	-- Ferocious Gladiator's Silken Shawl (H)
 					}),
 					cl(10, {	-- Monk
+						un(14, i(145739)),	-- Ferocious Gladiator's Ironskin Belt (H)
+						un(14, i(145633)),	-- Ferocious Gladiator's Ironskin Cloak (H)
+						un(14, i(145729)),	-- Ferocious Gladiator's Ironskin Gloves (H)
+						un(14, i(145731)),	-- Ferocious Gladiator's Ironskin Helm (H)
+						un(14, i(145733)),	-- Ferocious Gladiator's Ironskin Legguards (H)
+						un(14, i(145727)),	-- Ferocious Gladiator's Ironskin Slippers (H)
+						un(14, i(145735)),	-- Ferocious Gladiator's Ironskin Spaulders (H)
+						un(14, i(145737)),	-- Ferocious Gladiator's Ironskin Tunic (H)
+						un(14, i(145741)),	-- Ferocious Gladiator's Ironskin Wristguards (H)
 					}),
 					cl(2, {	-- Paladin
+						un(14, i(145635)),	-- Ferocious Gladiator's Greatcloak of Faith (H)
+						un(14, i(145749)),	-- Ferocious Gladiator's Scaled Breastplate (H)
+						un(14, i(145753)),	-- Ferocious Gladiator's Scaled Gauntlets (H)
+						un(14, i(145761)),	-- Ferocious Gladiator's Scaled Girdle (H)
+						un(14, i(145755)),	-- Ferocious Gladiator's Scaled Helm (H)
+						un(14, i(145757)),	-- Ferocious Gladiator's Scaled Legguards (H)
+						un(14, i(145751)),	-- Ferocious Gladiator's Scaled Sabatons (H)
+						un(14, i(145759)),	-- Ferocious Gladiator's Scaled Shoulders (H)
+						un(14, i(145763)),	-- Ferocious Gladiator's Scaled Wristplates (H)
 					}),
 					cl(5, {	-- Priest
+						un(14, i(145637)),	-- Ferocious Gladiator's Drape of Piety (H)
+						un(14, i(145779)),	-- Ferocious Gladiator's Satin Bracers (H)
+						un(14, i(145777)),	-- Ferocious Gladiator's Satin Cord (H)
+						un(14, i(145767)),	-- Ferocious Gladiator's Satin Gloves (H)
+						un(14, i(145769)),	-- Ferocious Gladiator's Satin Hood (H)
+						un(14, i(145771)),	-- Ferocious Gladiator's Satin Leggings (H)
+						un(14, i(145775)),	-- Ferocious Gladiator's Satin Mantle (H)
+						un(14, i(145773)),	-- Ferocious Gladiator's Satin Robe (H)
+						un(14, i(145765)),	-- Ferocious Gladiator's Satin Treads (H)
 					}),
 					cl(4, {	-- Rogue
+						un(14, i(145799)),	-- Ferocious Gladiator's Leather Belt (H)
+						un(14, i(145791)),	-- Ferocious Gladiator's Leather Gloves (H)
+						un(14, i(145793)),	-- Ferocious Gladiator's Leather Helm (H)
+						un(14, i(145795)),	-- Ferocious Gladiator's Leather Legguards (H)
+						un(14, i(145789)),	-- Ferocious Gladiator's Leather Slippers (H)
+						un(14, i(145797)),	-- Ferocious Gladiator's Leather Spaulders (H)
+						un(14, i(145787)),	-- Ferocious Gladiator's Leather Tunic (H)
+						un(14, i(145801)),	-- Ferocious Gladiator's Leather Wristguards (H)
+						un(14, i(145639)),	-- Ferocious Gladiator's Shadowcape (H)
 					}),
 					cl(7, {	-- Shaman
+						un(14, i(145817)),	-- Ferocious Gladiator's Ringmail Armband (H)
+						un(14, i(145803)),	-- Ferocious Gladiator's Ringmail Armor (H)
+						un(14, i(145805)),	-- Ferocious Gladiator's Ringmail Boots (H)
+						un(14, i(145815)),	-- Ferocious Gladiator's Ringmail Clasp (H)
+						un(14, i(145807)),	-- Ferocious Gladiator's Ringmail Gauntlets (H)
+						un(14, i(145809)),	-- Ferocious Gladiator's Ringmail Helm (H)
+						un(14, i(145811)),	-- Ferocious Gladiator's Ringmail Kilt (H)
+						un(14, i(145813)),	-- Ferocious Gladiator's Ringmail Spaulders (H)
+						un(14, i(145641)),	-- Ferocious Gladiator's Totemic Cloak (H)
 					}),
 					cl(9, {	-- Warlock
+						un(14, i(145847)),	-- Ferocious Gladiator's Felweave Amice (H)
+						un(14, i(145851)),	-- Ferocious Gladiator's Felweave Bracers (H)
+						un(14, i(145643)),	-- Ferocious Gladiator's Felweave Cloak (H)
+						un(14, i(145849)),	-- Ferocious Gladiator's Felweave Cord (H)
+						un(14, i(145841)),	-- Ferocious Gladiator's Felweave Cowl (H)
+						un(14, i(145839)),	-- Ferocious Gladiator's Felweave Handguards (H)
+						un(14, i(145845)),	-- Ferocious Gladiator's Felweave Raiment (H)
+						un(14, i(145837)),	-- Ferocious Gladiator's Felweave Treads (H)
+						un(14, i(145843)),	-- Ferocious Gladiator's Felweave Trousers (H)
 					}),
 					cl(1, {	-- Warrior
+						un(14, i(145645)),	-- Ferocious Gladiator's Cloak of Battle (H)
+						un(14, i(145853)),	-- Ferocious Gladiator's Plate Chestpiece (H)
+						un(14, i(145857)),	-- Ferocious Gladiator's Plate Gauntlets (H)
+						un(14, i(145865)),	-- Ferocious Gladiator's Plate Girdle (H)
+						un(14, i(145859)),	-- Ferocious Gladiator's Plate Helm (H)
+						un(14, i(145861)),	-- Ferocious Gladiator's Plate Legguards (H)
+						un(14, i(145863)),	-- Ferocious Gladiator's Plate Shoulders (H)
+						un(14, i(145855)),	-- Ferocious Gladiator's Plate Warboots (H)
+						un(14, i(145867)),	-- Ferocious Gladiator's Plate Wristplates (H)
 					}),
 					n(-384,	{	-- Neck
 						un(2, i(145743)),	-- Ferocious Gladiator's Necklace (H)

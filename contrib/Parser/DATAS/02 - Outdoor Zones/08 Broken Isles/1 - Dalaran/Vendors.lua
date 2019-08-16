@@ -2345,7 +2345,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149425, {	-- Chest of the Demonic Gladiator
@@ -2426,7 +2426,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149407, {	-- Chest of the Dominant Gladiator
@@ -2507,7 +2507,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149389, {	-- Chest of the Fierce Gladiator
@@ -2593,7 +2593,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149434, {	-- Chest of the Demonic Gladiator
@@ -2674,7 +2674,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149416, {	-- Chest of the Dominant Gladiator
@@ -2755,7 +2755,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149398, {	-- Chest of the Fierce Gladiator
@@ -3737,7 +3737,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149425, {	-- Chest of the Demonic Gladiator
@@ -3818,7 +3818,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149407, {	-- Chest of the Dominant Gladiator
@@ -3899,7 +3899,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149389, {	-- Chest of the Fierce Gladiator
@@ -3985,7 +3985,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149434, {	-- Chest of the Demonic Gladiator
@@ -4066,7 +4066,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149416, {	-- Chest of the Dominant Gladiator
@@ -4147,7 +4147,7 @@ _.Zones =
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_BACK" },
+										{"invtype", "INVTYPE_CLOAK" },
 									},
 								}),
 								i(149398, {	-- Chest of the Fierce Gladiator
