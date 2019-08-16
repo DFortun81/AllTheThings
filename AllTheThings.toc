@@ -26,5 +26,4 @@ Settings.lua
 AllTheThings.lua
 db\FlightPathDB.lua
 db\RaceDB.lua
-db\NPCDB.lua
 db\Categories.lua

@@ -1,1 +1,0 @@
-AllTheThings.NPCDB={}
