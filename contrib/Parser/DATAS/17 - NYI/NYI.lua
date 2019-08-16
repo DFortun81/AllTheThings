@@ -1342,6 +1342,13 @@ _.NeverImplemented =
 			un(1, i(52548)),	-- Initiate's Tunic
 			un(1, i(53879)), 	-- Rugged Work Shirt
 			un(1, i(53880)), 	-- Super Girly Shirt
+			un(1, i(167223)),	-- Selis' Silk Shirt
+			un(1, i(167213)),	-- Shuurt's Precious
+			un(1, i(167214)),	-- Tia Shortsleeve's Short Sleeve Shirt
+			un(1, i(167221)),	-- Threads of Tirion
+			un(1, i(167227)),	-- Gild's Crewneck
+			un(1, i(167230)),	-- Shirtsi's Cloth Shirt
+			un(1, i(167208)),	-- Jade's Lovely Shirt
 		}),
 		n(-325, {	-- Tabard
 			un(1, i(147204)),	-- Black Apron - TEST

@@ -31,7 +31,9 @@ _.Holidays =
 						un(22, i(167185)),	-- Ebon Filigreed Shirt
 						un(22, i(167192)),	-- Embroidered Shirt
 						un(22, i(165657, {	-- Free T-Shirt
-							title(399),		-- the T-Shirt Enthusiast
+							title(399, {	-- the T-Shirt Enthusiast
+								["collectible"] = false,
+							}),
 						})),
 						un(22, i(167181)),	-- Golden Filigreed Doublet
 						un(22, i(167189)),	-- Golden Filigreed Shirt
@@ -64,7 +66,9 @@ _.Holidays =
 						un(22, i(167185)),	-- Ebon Filigreed Shirt
 						un(22, i(167192)),	-- Embroidered Shirt
 						un(22, i(165657, {	-- Free T-Shirt
-							title(399),		-- the T-Shirt Enthusiast
+							title(399, {	-- the T-Shirt Enthusiast
+								["collectible"] = false,
+							}),
 						})),
 						un(22, i(167181)),	-- Golden Filigreed Doublet
 						un(22, i(167189)),	-- Golden Filigreed Shirt
@@ -80,28 +84,12 @@ _.Holidays =
 				}),
 			}),
 			n(-2, {	-- Vendors
-				n(150945, {	-- Selis Silksong
-					["coord"] = { 67.7, 27.7, 111 },
-					["maps"] = { 111 },	-- Shattrath
-					["u"] = 22,
-					["g"] = {
-						un(22, i(167222)),	-- Selis' Silk Shirt
-					},
-				}),
 				n(150948, {	-- Gild Crewneck
 					["coord"] = { 60.3, 52.5, 634 },
 					["maps"] = { 634 },	-- Stormheim
 					["u"] = 22,
 					["g"] = {
 						un(22, i(167226)),	-- Gild's Crewneck
-					},
-				}),
-				n(150946, {	-- Shuurt the Clothripper
-					["coord"] = { 49.8, 51.5, 116 },
-					["maps"] = { 116 },	-- Grizzly Hills
-					["u"] = 22,
-					["g"] = {
-						un(22, i(167212)),	-- Shuurt's Precious
 					},
 				}),
 				n(146961, {	-- Jade Lovelyshirts
@@ -112,14 +100,6 @@ _.Holidays =
 						un(22, i(167207)),	-- Jade's Lovely Shirt
 					},
 				}),
-				n(150950, {	-- Tia Shortsleeve
-					["coord"] = { 84.4, 30.9, 535 },
-					["maps"] = { 535 },	-- Talador
-					["u"] = 22,
-					["g"] = {
-						un(22, i(167215)),	-- Tia Shortsleeve's Short Sleeve Shirt
-					},
-				}),
 				n(150904, {	-- Melvin Shirtson
 					["coord"] = { 74.3, 53.0, 23 },
 					["maps"] = { 23 },	-- Eastern Plaguelands
@@ -128,12 +108,36 @@ _.Holidays =
 						un(22, i(167220)),	-- Threads of Tirion
 					},
 				}),
+				n(150945, {	-- Selis Silksong
+					["coord"] = { 67.7, 27.7, 111 },
+					["maps"] = { 111 },	-- Shattrath
+					["u"] = 22,
+					["g"] = {
+						un(22, i(167222)),	-- Selis' Silk Shirt
+					},
+				}),
 				n(150905, {	-- Shirtsi Clothpatch
 					["coord"] = { 59.6, 50.3, 83 },
 					["maps"] = { 83 },	-- Winterspring
 					["u"] = 22,
 					["g"] = {
 						un(22, i(167229)),	-- Shirtsi's Cloth Shirt
+					},
+				}),
+				n(150946, {	-- Shuurt the Clothripper
+					["coord"] = { 49.8, 51.5, 116 },
+					["maps"] = { 116 },	-- Grizzly Hills
+					["u"] = 22,
+					["g"] = {
+						un(22, i(167212)),	-- Shuurt's Precious
+					},
+				}),
+				n(150950, {	-- Tia Shortsleeve
+					["coord"] = { 84.4, 30.9, 535 },
+					["maps"] = { 535 },	-- Talador
+					["u"] = 22,
+					["g"] = {
+						un(22, i(167215)),	-- Tia Shortsleeve's Short Sleeve Shirt
 					},
 				}),
 			}),
