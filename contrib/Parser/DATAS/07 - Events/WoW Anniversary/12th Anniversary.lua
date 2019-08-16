@@ -32,12 +32,14 @@ _.WorldEvents =
 								["questID"] = 43472,	-- The Historians
 								["races"] = HORDE_ONLY,
 								["u"] = 31,				-- WoW Anniversary Filter
+								["collectible"] = false,	 -- Resets each year even if you did it.
 							},
 							{	-- Letter from the Timewalker [Alliance]
 								["itemID"] = 139409,	-- Letter from the Timewalker
 								["questID"] = 43471,	-- The Historians
 								["races"] = ALLIANCE_ONLY,
 								["u"] = 31,				-- WoW Anniversary Filter
+								["collectible"] = false,	 -- Resets each year even if you did it.
 							},
 						},
 					},
