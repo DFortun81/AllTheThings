@@ -1330,6 +1330,10 @@ AllTheThings.L = {
 		[-851] = "Irontide Chest",												-- Irontide Chest
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
+		
+-- Temporarily Header
+
+		[-1002] = "Free T-Shirt Day",											-- Just until we find the HolidayID
 
 -- Weapon Sets
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
