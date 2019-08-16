@@ -3,7 +3,8 @@
 --------------------------------------------
 _.Holidays =
 {
-	n(-1002, {	-- Free T-Shirt Day
+	{	-- Free T-Shirt Day
+		["holidayID"] = 2827082,	-- Free T-Shirt Day
 		["u"] = 22,	-- Micro-Holiday Filter
 		["maps"] = {
 			85,	-- Orgrimmar
@@ -133,5 +134,5 @@ _.Holidays =
 				}),
 			}),
 		},
-	}),
+	},
 };

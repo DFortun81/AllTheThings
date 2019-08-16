@@ -1333,7 +1333,7 @@ AllTheThings.L = {
 		
 -- Temporarily Header
 
-		[-1002] = "Free T-Shirt Day",											-- Just until we find the HolidayID
+		
 
 -- Weapon Sets
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth

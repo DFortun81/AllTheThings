@@ -5282,7 +5282,7 @@ local function GetHolidayCache()
 				if numEvents > 0 then
 					for index=1,numEvents,1 do
 						local event = C_Calendar.GetDayEvent(0, day, index)
-						if event and event.calendarType == "HOLIDAY" and event.sequenceType == "START" then
+						if event and event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
 							if event.iconTexture then
 								local t = cache[event.iconTexture];
 								if not t then
