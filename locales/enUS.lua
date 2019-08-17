@@ -63,6 +63,7 @@ AllTheThings.L = {
 	["REQUIRES_LEVEL"] = "Requires Level";
 	["SECRETS_HEADER"] = "Secrets";
 	["SELFIE_FILTERS_HEADER"] = "Selfie Filters";
+	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";

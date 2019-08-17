@@ -858,6 +858,10 @@ namespace ATT
                     {
                         return "repeatable";
                     }
+                case "isLimited":
+                    {
+                        return "isLimited";
+                    }
 
                 case "isDaily":
                 case "daily":

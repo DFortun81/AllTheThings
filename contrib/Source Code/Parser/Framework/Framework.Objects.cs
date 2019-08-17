@@ -1005,6 +1005,7 @@ namespace ATT
                         case "altQuestID":
                         case "altQuests":
                         case "sourceQuests":
+                        case "isLimited":
                         case "isDaily":
                         case "isWeekly":
                         case "repeatable":
@@ -1205,6 +1206,7 @@ namespace ATT
                     case "equippable":
                     case "repeatable":
                     case "isBreadcrumb":
+                    case "isLimited":
                     case "isDaily":
                     case "isWeekly":
                     case "isYearly":

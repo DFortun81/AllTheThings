@@ -331,6 +331,7 @@ namespace ATT
                     case "collectible":
                     case "equippable":
                     case "repeatable":
+                    case "isLimited":
                     case "isDaily":
                     case "isWeekly":
                     case "isMonthly":
@@ -659,6 +660,7 @@ namespace ATT
                     case "sourceQuests":
                     case "altQuests":
                     case "repeatable":
+                    case "isLimited":
                     case "isWeekly":
                     case "isDaily":
                     case "isYearly":

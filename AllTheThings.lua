@@ -2639,6 +2639,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
 		end
 		
+		if group.isLimited then
+			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = "ff66ccff" });
+		end
+		
 		if group.g and #group.g > 0 then
 			--[[
 			if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
