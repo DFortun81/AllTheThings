@@ -492,7 +492,7 @@ _.Zones =
 				q(37177, {	-- Call of the Talon King
 					["qg"] = 84122,	-- Shade of Terokk
 					["coord"] = { 46.6, 46.7, 542 },
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 1515, EXALTED },
 					["description"] = "Granted automatically. If you're in the zone when you hit exalted, leave the zone and return.",
 				}),
 				q(35081, {	-- Clearing Out Before Cleaning Up
@@ -1015,7 +1015,7 @@ _.Zones =
 				q(37144, {	-- Talon Guard Kurekk
 					["qg"] = 80758,	-- Talon Guard Kurekk
 					["coord"] = { 62.2, 42.6, 542 },
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 1515, EXALTED },
 					["g"] = {
 						follower(224),	-- Talon Guard Kurekk
 					},

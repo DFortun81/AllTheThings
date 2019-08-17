@@ -54,19 +54,19 @@ _.Zones =
 								["qg"] = 23233,	-- Chu'a'lor
 								["coord"] = { 28.8, 57.4, 105 },
 								["sourceQuest"] = 11059,	-- Guardian of the Monument
-								["minReputation"] = FRIENDLY,
+								["minReputation"] = { 1038, FRIENDLY },
 							}),
 							q(11051, {	-- Banish More Demons
 								["qg"] = 23253,	-- Kronk
 								["coord"] = { 28.8, 57.8, 105 },
 								["sourceQuest"] = 11026,	-- Banish the Demons
-								["minReputation"] = HONORED,
+								["minReputation"] = { 1038, HONORED },
 								["repeatable"] = true,
 							}),
 							q(11026, {	-- Banish the Demons
 								["qg"] = 23253,	-- Kronk
 								["coord"] = { 28.8, 57.8, 105 },
-								["minReputation"] = HONORED,
+								["minReputation"] = { 1038, HONORED },
 							}),
 							q(11023, {	-- Bomb Them Again!
 								["qg"] = 23120,	-- Sky Sergeant Vanderlip

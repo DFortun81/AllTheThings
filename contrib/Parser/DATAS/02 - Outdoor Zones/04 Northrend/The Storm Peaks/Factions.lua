@@ -101,12 +101,12 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 						q(13011, {	-- Jormuttar is Soo Fat...
-							["minReputation"] = FRIENDLY,
+							["minReputation"] = { 1119, FRIENDLY },
 							["coord"] = { 65.3, 60.1, 120 },
 							["qg"] = 30105,	-- King Jokkum
 						}),
 						q(12985, {	-- Forging a Head
-							["minReputation"] = FRIENDLY,
+							["minReputation"] = { 1119, FRIENDLY },
 							["sourceQuests"] = { 12967 },	-- Battling the Elements
 							["coord"] = { 63.2, 63.2, 120 },
 							["qg"] = 30127,	-- Njormeld
@@ -124,7 +124,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Helmet_110",
 						}),
 						{			-- Everfrost
-							["minReputation"] = FRIENDLY,
+							["minReputation"] = { 1119, FRIENDLY },
 							["itemID"] = 44725,	-- Everfrost Chip
 							["questID"] = 13420,	-- Everfrost
 							["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
@@ -144,7 +144,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_Misc_Horn_03",
 						}),
 						q(13046, {	-- Feeding Arngrim
-							["minReputation"] = REVERED,
+							["minReputation"] = { 1119, REVERED },
 							["isDaily"]	= true,
 							["coord"] = { 67.5, 60.0, 120 },
 							["icon"] = "Interface\\Icons\\Achievement_Dungeon_FrozenThrone",
@@ -157,18 +157,18 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\INV_BLACKSMITH_ANVIL",
 						}),
 						q(12994, {	-- Spy Hunter
-							["minReputation"] = HONORED,
+							["minReputation"] = { 1119, HONORED },
 							["isDaily"]	= true,
 							["coord"] = { 63.5, 59.7, 120 },
 							["qg"] = 30294,		-- Quest Giver: Frostworg Denmother
 						}),
 						q(13001, {	-- Raising Hodir's Spear (awarded "The Sons of Hodir" criteria)
-							["minReputation"] = HONORED,
+							["minReputation"] = { 1119, HONORED },
 							["coord"] = { 64.8, 59.1, 120 },
 							["qg"] = 30252,	-- Lorekeeper Randvir
 						}),
 						q(13003, {	-- Thrusting Hodir's Spear
-							["minReputation"] = HONORED,
+							["minReputation"] = { 1119, HONORED },
 							["sourceQuests"] = { 13001 },	-- Raising Hodir's Spear
 							["isDaily"]	= true,
 							["coord"] = { 65.0, 60.9, 120 },

@@ -392,7 +392,7 @@ _.Zones =
 				q(55103, {	-- Ideas Can Com from Anywhere
 					["qg"] = 152295, -- Pascal
 					["coord"] = { 71.2, 32.3, 1462 },
-					["minReputation"] = REVERED,
+					["minReputation"] = { 2391, REVERED },
 				}),
 				q(55101, {	-- Junkyard Tinkering and You -- also triggered 56902 for alliance -- slumber note: maybe not on live?  didn't get it on my priest.
 					["qg"] = 152295,	-- Pascal
@@ -459,7 +459,7 @@ _.Zones =
 				q(56756, {	-- My Punkin, the Action Figure
 					["qg"] = 153701,	-- Grizzek Fizzwrench
 					["coord"] = { 72.0, 34.2, 1462 },
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 2391, EXALTED },
 					["description"] = "Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",
 					["g"] = {
 						i(169876, {	-- Azeroth Mini: Sapphronetta
@@ -644,7 +644,7 @@ _.Zones =
 					["qg"] = 150631,	-- Pristy Quickcharge
 					["coord"] = { 70.7, 38.4, 1462 },
 					["sourceQuest"] = 56319,	-- The Quickcharge Contract
-					["minReputation"] = HONORED,
+					["minReputation"] = { 2391, HONORED },
 					["g"] = {
 						i(166970),	-- Energy Cell
 					},
@@ -1072,7 +1072,7 @@ _.Zones =
 				q(56319, {	-- The Quickcharge Contract
 					["qg"] = 150631,	-- Pristy Quickcharge
 					["coord"] = { 70.7, 38.4, 1462 },
-					["minReputation"] = HONORED,
+					["minReputation"] = { 2391, HONORED },
 				}),
 				q(55729, {	-- The Resistance Needs You!
 					["qg"] = 152851,	-- Prince Erazmin
@@ -1085,7 +1085,7 @@ _.Zones =
 				q(56181, {	-- This One's On Me
 					["qg"] = 152295,	-- Pascal
 					["coord"] = { 71.2, 32.5, 1462 },
-					["minReputation"] = HONORED,
+					["minReputation"] = { 2391, HONORED },
 					["g"] = {
 						spell(300122),	-- Scrapmaster's Blowtorch
 						crit(21, {	-- Scrapmaster's Blowtorch

@@ -24,7 +24,7 @@ _.PVP =
 							["lvl"] = 45,
 							["coord"] = { 61.5, 83.9, 63 },
 							["races"] = ALLIANCE_ONLY,
-							["minReputation"] = FRIENDLY,
+							["minReputation"] = { 890, FRIENDLY },
 						}),
 						q(7863,  {	-- Sentinel Basic Care Package
 							["u"] = 40,
@@ -32,7 +32,7 @@ _.PVP =
 							["lvl"] = 25,
 							["coord"] = { 61.5, 83.9, 63 },
 							["races"] = ALLIANCE_ONLY,
-							["minReputation"] = FRIENDLY,
+							["minReputation"] = { 890, FRIENDLY },
 						}),
 						q(7864,  {	-- Sentinel Standard Care Package
 							["u"] = 40,
@@ -40,7 +40,7 @@ _.PVP =
 							["lvl"] = 35,
 							["coord"] = { 61.5, 83.9, 63 },
 							["races"] = ALLIANCE_ONLY,
-							["minReputation"] = FRIENDLY,
+							["minReputation"] = { 890, FRIENDLY },
 						}),
 						n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor

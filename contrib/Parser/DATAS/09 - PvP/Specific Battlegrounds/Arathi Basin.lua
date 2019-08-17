@@ -26,19 +26,19 @@ _.PVP =
 								["qg"] = 15126,	-- Rutherford Twing
 								["lvl"] = 45,
 								["races"] = HORDE_ONLY,
-								["minReputation"] = FRIENDLY,
+								["minReputation"] = { 510, FRIENDLY },
 							}),
 							q(8263, {	-- Defiler's Basic Care Package
 								["qg"] = 15126,	-- Rutherford Twing
 								["lvl"] = 25,
 								["races"] = HORDE_ONLY,
-								["minReputation"] = FRIENDLY,
+								["minReputation"] = { 510, FRIENDLY },
 							}),
 							q(8264, {	-- Defiler's Standard Care Package
 								["qg"] = 15126,	-- Rutherford Twing
 								["lvl"] = 35,
 								["races"] = HORDE_ONLY,
-								["minReputation"] = FRIENDLY,
+								["minReputation"] = { 510, FRIENDLY },
 							}),
 						}),
 						n(-2, {	-- Vendors
@@ -133,19 +133,19 @@ _.PVP =
 								["qg"] = 15127,	-- Samuel Hawke
 								["lvl"] = 45,
 								["races"] = ALLIANCE_ONLY,
-								["minReputation"] = FRIENDLY,
+								["minReputation"] = { 509, FRIENDLY },
 							}),
 							q(8260, {	-- Arathor Basic Care Package
 								["qg"] = 15127,	-- Samuel Hawke
 								["lvl"] = 25,
 								["races"] = ALLIANCE_ONLY,
-								["minReputation"] = FRIENDLY,
+								["minReputation"] = { 509, FRIENDLY },
 							}),
 							q(8261, {	-- Arathor Standard Care Package
 								["qg"] = 15127,	-- Samuel Hawke
 								["lvl"] = 35,
 								["races"] = ALLIANCE_ONLY,
-								["minReputation"] = FRIENDLY,
+								["minReputation"] = { 509, FRIENDLY },
 							}),
 						}),
 						n(-2, {	-- Vendors

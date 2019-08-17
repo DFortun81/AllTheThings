@@ -315,6 +315,8 @@ namespace ATT
                     case "recipeID":
                     case "previousRecipeID":
                     case "nextRecipeID":
+                    case "minReputation":
+                    case "maxReputation":
                         {
                             return;
                         }
@@ -366,8 +368,6 @@ namespace ATT
                     case "subclass":
                     case "inventoryType":
                     case "factionID":
-                    case "minReputation":
-                    case "maxReputation":
                     case "mountID":
                     case "speciesID":
                     case "spellID":

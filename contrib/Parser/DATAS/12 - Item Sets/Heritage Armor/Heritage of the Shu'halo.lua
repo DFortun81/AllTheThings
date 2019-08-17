@@ -21,7 +21,7 @@ _.GearSets =
 					["coord"] = { 39.1, 79.0, 85 },
 					["sourceQuest"] = 55779,	-- Stay of Execution (after the Baine Rescue Scenario)
 					["races"] = { 6 },	-- Tauren	
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 81, EXALTED },
 					["maps"] = { 85 },	-- Orgrimmar
 					["lvl"] = 120,
 				}),
@@ -30,7 +30,7 @@ _.GearSets =
 					["coord"] = { 60.3, 51.7, 88 },
 					["sourceQuest"] = 54759,	-- When Spririts Whisper	
 					["races"] = { 6 },	-- Tauren
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 81, EXALTED },
 					["maps"] = { 88 },	-- Thunder Bluff
 					["lvl"] = 120,
 				}),
@@ -39,7 +39,7 @@ _.GearSets =
 					["coord"] = { 12.3, 31.3, 462 },
 					["sourceQuest"] = 54760,	-- The Spiritwalkers	
 					["races"] = { 6 },	-- Tauren
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 81, EXALTED },
 					["maps"] = { 462 },	-- Camp Narache
 					["lvl"] = 120,
 				}),
@@ -48,7 +48,7 @@ _.GearSets =
 					["coord"] = { 12.3, 31.3, 462 },
 					["sourceQuest"] = 54761,	-- Spirit Guide	
 					["races"] = { 6 },	-- Tauren
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 81, EXALTED },
 					["maps"] = { 462 },	-- Camp Narache
 					["lvl"] = 120,
 				}),
@@ -57,7 +57,7 @@ _.GearSets =
 					["coord"] = { 49.2, 60.8, 65 },
 					["sourceQuest"] = 54762,	-- A Small Retreat
 					["races"] = { 6 },	-- Tauren
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 81, EXALTED },
 					["maps"] = { 65 },	-- Stonetalon Mountains
 					["lvl"] = 120,
 				}),
@@ -66,7 +66,7 @@ _.GearSets =
 					["coord"] = { 49.2, 60.8, 65 },
 					["sourceQuest"] = 54763,	-- Crossing Over
 					["races"] = { 6 },	-- Tauren
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 81, EXALTED },
 					["maps"] = { 65 },	-- Stonetalon Mountains
 					["lvl"] = 120,
 				}),
@@ -75,7 +75,7 @@ _.GearSets =
 					["coord"] = { 58.3, 51.8, 88 },
 					["sourceQuest"] = 54764,	-- Storm in Bloodhoof
 					["races"] = { 6 },	-- Tauren
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 81, EXALTED },
 					["maps"] = { 88 },	-- Thunder Bluff
 					["lvl"] = 120,
 				}),
@@ -84,7 +84,7 @@ _.GearSets =
 					["coord"] = { 60.3, 51.7, 88 },
 					["sourceQuest"] = 54766,	-- Answer the Call	
 					["races"] = { 6 },	-- Tauren
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 81, EXALTED },
 					["maps"] = { 88 },	-- Thunder Bluff
 					["lvl"] = 120,		
 					["g"] = {

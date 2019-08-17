@@ -15,15 +15,15 @@ _.Zones =
 							["qg"] = 18333,	-- Shadrek
 							["coord"] = { 31.8, 56.8, 107 },
 							["isBreadcrumb"] = true,
-							["minReputation"] = NEUTRAL,
-							["maxReputation"] = FRIENDLY,
+							["minReputation"] = { 933, NEUTRAL },
+							["maxReputation"] = { 933, FRIENDLY },
 						}),
 						q(9886, {	-- Membership Benefits
 							["qg"] = 18265,	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["repeatable"] = true,
-							["minReputation"] = NEUTRAL,
-							["maxReputation"] = FRIENDLY,
+							["minReputation"] = { 933, NEUTRAL },
+							["maxReputation"] = { 933, FRIENDLY },
 							["g"] = {
 								i(25424),	-- Gem-Stuffed Envelope
 							},
@@ -32,8 +32,8 @@ _.Zones =
 							["qg"] = 18265,	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["repeatable"] = true,
-							["minReputation"] = FRIENDLY,
-							["maxReputation"] = HONORED,
+							["minReputation"] = { 933, FRIENDLY },
+							["maxReputation"] = { 933, HONORED },
 							["g"] = {
 								i(25419),	-- Unmarked Bag of Gems
 							},
@@ -42,8 +42,8 @@ _.Zones =
 							["qg"] = 18265,	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["repeatable"] = true,
-							["minReputation"] = HONORED,
-							["maxReputation"] = REVERED,
+							["minReputation"] = { 933, HONORED },
+							["maxReputation"] = { 933, REVERED },
 							["g"] = {
 								i(25422),	-- Bulging Sack of Gems
 							},
@@ -52,7 +52,7 @@ _.Zones =
 							["qg"] = 18265,	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["repeatable"] = true,
-							["minReputation"] = REVERED,
+							["minReputation"] = { 933, REVERED },
 							["g"] = {
 								i(25423),	-- Bag of Premium Gems
 							},
@@ -62,36 +62,36 @@ _.Zones =
 							["coord"] = { 31.4, 57.8, 107 },
 							["sourceQuest"] = 9882,	-- Stealing from Thieves
 							["repeatable"] = true,
-							["minReputation"] = NEUTRAL,
-							["maxReputation"] = FRIENDLY,
+							["minReputation"] = { 933, NEUTRAL },
+							["maxReputation"] = { 933, FRIENDLY },
 						}),
 						q(9915, {	-- More Heads Full of Ivory
 							["qg"] = 18333,	-- Shadrek
 							["coord"] = { 31.8, 56.8, 107 },
 							["sourceQuest"] = 9914,	-- A Head Full of Ivory
 							["repeatable"] = true,
-							["minReputation"] = NEUTRAL,
-							["maxReputation"] = FRIENDLY,
+							["minReputation"] = { 933, NEUTRAL },
+							["maxReputation"] = { 933, FRIENDLY },
 						}),
 						q(9892, {	-- More Obsidian Warbeads
 							["qg"] = 18265,	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["sourceQuest"] = 9893,	-- Obsidian Warbeads
 							["repeatable"] = true,
-							["minReputation"] = FRIENDLY,
+							["minReputation"] = { 933, FRIENDLY },
 						}),
 						q(9893, {	-- Obsidian Warbeads
 							["qg"] = 18265,	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
-							["minReputation"] = FRIENDLY,
+							["minReputation"] = { 933, FRIENDLY },
 						}),
 						q(9882, {	-- Stealing from Thieves
 						--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
 							["isBreadcrumb"] = true,
 							["qg"] = 18265,	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
-							["minReputation"] = NEUTRAL,
-							["maxReputation"] = FRIENDLY,
+							["minReputation"] = { 933, NEUTRAL },
+							["maxReputation"] = { 933, FRIENDLY },
 						}),	
 					}),
 					n(-2,   {	-- Vendors

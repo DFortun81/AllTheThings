@@ -810,7 +810,7 @@ _.Zones =
 					["qg"] = 16399,	-- Bloodsail Traitor
 					["coord"] = { 48.4, 63.2, 210 },
 					["repeatable"] = true,
-					["maxReputation"] = NEUTRAL,
+					["maxReputation"] = { 21, NEUTRAL },
 				}),
 				q(26699, {	-- Turning the Brashtide
 					["sourceQuests"] = { 26698 },	-- Seeking Seahorn

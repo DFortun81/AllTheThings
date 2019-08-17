@@ -640,8 +640,8 @@ _.Zones =
 					["questID"] = 9267,
 					["qg"] = 16418,	-- Mupsi Shacklefridd
 					["coord"] = { 65.8, 72.0, 10 },
-					["minReputation"] = HATED,
-					["maxReputation"] = NEUTRAL,
+					["minReputation"] = { 470, HATED },
+					["maxReputation"] = { 470, NEUTRAL },
 					["repeatable"] = true,
 				},
 				{	-- Miner's Fortune

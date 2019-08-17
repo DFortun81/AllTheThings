@@ -21,13 +21,13 @@ _.Zones =
 							q(1036,  {	-- Avast Ye, Scallywag
 								["qg"] = 2545,	-- "Pretty Boy" Duncan
 								["coord"] = { 44.5, 92.8, 210 },
-								["minReputation"] = FRIENDLY,
+								["minReputation"] = { 87, FRIENDLY },
 								["isBreadcrumb"] = true,
 							}),
 							q(9272, {	-- Dressing the Part
 								["qg"] = 2546,	-- Fleet Master Firallon
 								["coord"] = { 46.6, 95.2, 210 },
-								["minReputation"] = NEUTRAL,
+								["minReputation"] = { 87, NEUTRAL },
 								["g"] = bubbleDown({["collectible"] = false }, {
 									i(22746, {	-- Buccaneer's Uniform
 										i(22744),	-- Bloodsail Boots

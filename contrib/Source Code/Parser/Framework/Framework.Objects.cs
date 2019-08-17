@@ -1279,8 +1279,6 @@ namespace ATT
                     case "ilvl":
                     case "lvl":
                     case "q":
-                    case "minReputation":
-                    case "maxReputation":
                         {
                             item[field] = Convert.ToInt32(value);
                             break;
@@ -1394,7 +1392,25 @@ namespace ATT
                             item[field] = newListOfLists;
                             break;
                         }
-
+                    case "minReputation":
+                    case "maxReputation":
+                        {
+                            if (!(value is List<object> newList))
+                            {
+                                if (value is Dictionary<object, object> dict)
+                                {
+                                    newList = dict.Values.ToList();
+                                }
+                                else return;
+                            }
+                            var newRep = new List<object>();
+                            foreach (var repArg in newList) newRep.Add(Convert.ToInt32(repArg));
+                            if (newRep.Count > 0)
+                            {
+                                item[field] = newRep;
+                            }
+                            break;
+                        }
                     // Special parser for coordinate data. (list of floats)
                     case "coord":
                         {

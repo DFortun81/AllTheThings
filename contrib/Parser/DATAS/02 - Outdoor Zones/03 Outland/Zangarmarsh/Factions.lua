@@ -15,7 +15,7 @@ _.Zones =
 								["coord"] = { 80.3, 64.2, 102 },
 								["sourceQuest"] = 9802,	-- Plants of Zangarmarsh
 								["repeatable"] = true,
-								["maxReputation"] = HONORED,
+								["maxReputation"] = { 942, HONORED },
 								["g"] = {
 									i(24402),	-- Package of Identified Plants
 								},
@@ -25,7 +25,7 @@ _.Zones =
 									q(9875, {	-- Uncatalogued Species
 										["sourceQuest"] = 9784,	-- Identify Plant Parts
 										["repeatable"] = true,
-										["maxReputation"] = HONORED,
+										["maxReputation"] = { 942, HONORED },
 									}),
 								}),
 							}),
@@ -102,28 +102,28 @@ _.Zones =
 								["coord"] = { 19.1, 49.4, 102 },
 								["sourceQuest"] = 9806,	-- Fertile Spores
 								["repeatable"] = true,
-								["maxReputation"] = FRIENDLY,
+								["maxReputation"] = { 942, FRIENDLY },
 							}),
 							q(9809, {	-- More Glowcaps 
 								["qg"] = 17924,	-- Mshii'fn
 								["coord"] = { 19.7, 52.1, 102 },
 								["sourceQuest"] = 9808,	-- Glowcap Mushrooms
 								["repeatable"] = true,
-								["maxReputation"] = FRIENDLY,
+								["maxReputation"] = { 942, FRIENDLY },
 							}),
 							q(9742, {	-- More Spore Sacs
 								["qg"] = 17923,	-- Fahssn
 								["coord"] = { 19.0, 63.4, 102 },
 								["sourceQuest"] = 9739,	-- The Sporelings' Plight
 								["repeatable"] = true,
-								["maxReputation"] = FRIENDLY,
+								["maxReputation"] = { 942, FRIENDLY },
 							}),
 							q(9744, {	-- More Tendrils!
 								["qg"] = 17923,	-- Fahssn
 								["coord"] = { 19.0, 63.4, 102 },
 								["sourceQuest"] = 9743,	-- Natural Enemies
 								["repeatable"] = true,
-								["maxReputation"] = FRIENDLY,
+								["maxReputation"] = { 942, FRIENDLY },
 							}),
 							q(9727, {	-- Now That We're Still Friends...
 								["qg"] = 17856,	-- Gzhun'tt

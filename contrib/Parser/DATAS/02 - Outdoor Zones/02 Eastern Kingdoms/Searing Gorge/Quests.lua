@@ -96,14 +96,14 @@ _.Zones =
 					["qg"] = 14624,	-- Master Smith Burninate
 					["coord"] = { 38.6, 28.7, 32 },
 					["repeatable"] = true,
-					["maxReputation"] = REVERED,
+					["maxReputation"] = { 59, REVERED },
 					["sourceQuest"] = 28064,	-- Welcome to the Brotherhood
 				}),
 				q(7737, {	-- Gaining Even More Acceptance
 					["qg"] = 14624,	-- Master Smith Burninate
 					["coord"] = { 38.6, 28.7, 32 },
 					["repeatable"] = true,
-					["maxReputation"] = REVERED,
+					["maxReputation"] = { 59, REVERED },
 					["sourceQuest"] = 28064,	-- Welcome to the Brotherhood
 				}),
 				q(27981, {	-- Heat That Just Don't Quit

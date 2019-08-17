@@ -15,12 +15,12 @@ _.Zones =
 				q(11554, {	-- A Friend in the Frontlines
 					["qg"] = 25032,	-- Eldara Dawnrunner
 					["coord"] = { 47.3, 30.7, 122 },
-					["minReputation"] = FRIENDLY,
+					["minReputation"] = { 1077, FRIENDLY },
 				}),
 				q(11549, {	-- A Magnanimous Benefactor
 					["qg"] = 25163,	-- Anchorite Kairthos
 					["coord"] = { 51.2, 33.1, 122 },
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 1077, EXALTED },
 					["g"] = {
 						title(38),	-- Of the Shattered Sun
 					},
@@ -65,7 +65,7 @@ _.Zones =
 				q(11557, {	-- Exalted Among All Combatants
 					["qg"] = 25032,	-- Eldara Dawnrunner
 					["coord"] = { 47.3, 30.7, 122 },
-					["minReputation"] = EXALTED,
+					["minReputation"] = { 1077, EXALTED },
 				}),
 				q(11525, {	-- Further Conversions
 					["qg"] = 24965,	-- Vindicator Xayann
@@ -75,7 +75,7 @@ _.Zones =
 				q(11555, {	-- Honored by Your Allies
 					["qg"] = 25032,	-- Eldara Dawnrunner
 					["coord"] = { 47.3, 30.7, 122 },
-					["minReputation"] = HONORED,
+					["minReputation"] = { 1077, HONORED },
 				}),
 				q(11542, {	-- Intercept the Reinforcements (Removed completion of Phase 3)
 					["u"] = 40,
@@ -120,7 +120,7 @@ _.Zones =
 				q(11556, {	-- Revered in the Field of Battle
 					["qg"] = 25032,	-- Eldara Dawnrunner
 					["coord"] = { 47.3, 30.7, 122 },
-					["minReputation"] = REVERED,
+					["minReputation"] = { 1077, REVERED },
 				}),
 				q(11539, {	-- Taking the Harbor (Removed completion of Phase 3)
 					["u"] = 40,
