@@ -51,336 +51,121 @@ _.Zones =
 				n(26090, {	-- Karynna <Exotic Gear Purveyor>
 					["coord"] = { 49.6, 40.5, 122 },
 					["g"] = {
-						{	-- Helm of the Fallen Champion [Rogue, Shaman, Paladin]
-							["itemID"] = 29760,	-- Helm of the Fallen Champion
-							["g"] = {
-								{	-- Gladiator's Leather Helm
-									["itemID"] = 25830,	-- Gladiator's Leather Helm
-								},
-								{	-- Gladiator's Linked Helm
-									["itemID"] = 25998,	-- Gladiator's Linked Helm
-								},
-								{	-- Gladiator's Mail Helm
-									["itemID"] = 27471,	-- Gladiator's Mail Helm
-								},
-								{	-- Gladiator's Ringmail Helm
-									["itemID"] = 31400,	-- Gladiator's Ringmail Helm
-								},
-								{	-- Gladiator's Lamellar Helm
-									["itemID"] = 27704,	-- Gladiator's Lamellar Helm
-								},
-								{	-- Gladiator's Ornamented Headcover
-									["itemID"] = 31616,	-- Gladiator's Ornamented Headcover
-								},
-								{	-- Gladiator's Scaled Helm
-									["itemID"] = 27881,	-- Gladiator's Scaled Helm
-								},
-							},
-						},
-						{	-- Helm of the Fallen Defender [Priest, Druid, Warrior]
-							["itemID"] = 29761,	-- Helm of the Fallen Defender
-							["g"] = {
-								{	-- Gladiator's Mooncloth Hood
-									["itemID"] = 31410,	-- Gladiator's Mooncloth Hood
-								},
-								{	-- Gladiator's Satin Hood
-									["itemID"] = 27708,	-- Gladiator's Satin Hood
-								},
-								{	-- Gladiator's Dragonhide Helm
-									["itemID"] = 28127,	-- Gladiator's Dragonhide Helm
-								},
-								{	-- Gladiator's Kodohide Helm
-									["itemID"] = 31376,	-- Gladiator's Kodohide Helm
-								},
-								{	-- Gladiator's Wyrmhide Helm
-									["itemID"] = 28137,	-- Gladiator's Wyrmhide Helm
-								},
-								{	-- Gladiator's Plate Helm
-									["itemID"] = 24545,	-- Gladiator's Plate Helm
-								},
-							},
-						},
-						{	-- Helm of the Fallen Hero [Mage, Warlock, Hunter]
-							["itemID"] = 29759,	-- Helm of the Fallen Hero
-							["g"] = {
-								{	-- Gladiator's Silk Cowl
-									["itemID"] = 25855,	-- Gladiator's Silk Cowl
-								},
-								{	-- Gladiator's Dreadweave Hood
-									["itemID"] = 24553,	-- Gladiator's Dreadweave Hood
-								},
-								{	-- Gladiator's Felweave Cowl
-									["itemID"] = 30187,	-- Gladiator's Felweave Cowl
-								},
-								{	-- Gladiator's Chain Helm
-									["itemID"] = 28331,	-- Gladiator's Chain Helm
-								},
-							},
-						},
-						{	-- Pauldrons of the Fallen Champion [Rogue, Shaman, Paladin]
-							["itemID"] = 29763,	-- Pauldrons of the Fallen Champion
-							["g"] = {
-								{	-- Gladiator's Leather Spaulders
-									["itemID"] = 25832,	-- Gladiator's Leather Spaulders
-								},
-								{	-- Gladiator's Linked Spaulders
-									["itemID"] = 25999,	-- Gladiator's Linked Spaulders
-								},
-								{	-- Gladiator's Mail Spaulders
-									["itemID"] = 27473,	-- Gladiator's Mail Spaulders
-								},
-								{	-- Gladiator's Ringmail Spaulders
-									["itemID"] = 31407,	-- Gladiator's Ringmail Spaulders
-								},
-								{	-- Gladiator's Lamellar Shoulders
-									["itemID"] = 27706,	-- Gladiator's Lamellar Shoulders
-								},
-								{	-- Gladiator's Ornamented Spaulders
-									["itemID"] = 31619,	-- Gladiator's Ornamented Spaulders
-								},
-								{	-- Gladiator's Scaled Shoulders
-									["itemID"] = 27883,	-- Gladiator's Scaled Shoulders
-								},
-							},
-						},
-						{	-- Pauldrons of the Fallen Defender [Priest, Druid, Warrior]
-							["itemID"] = 29764,	-- Pauldrons of the Fallen Defender
-							["g"] = {
-								{	-- Gladiator's Satin Mantle
-									["itemID"] = 27710,	-- Gladiator's Satin Mantle
-								},
-								{	-- Gladiator's Mooncloth Mantle
-									["itemID"] = 31412,	-- Gladiator's Mooncloth Mantle
-								},
-								{	-- Gladiator's Dragonhide Spaulders
-									["itemID"] = 28129,	-- Gladiator's Dragonhide Spaulders
-								},
-								{	-- Gladiator's Kodohide Spaulders
-									["itemID"] = 31378,	-- Gladiator's Kodohide Spaulders
-								},
-								{	-- Gladiator's Wyrmhide Spaulders
-									["itemID"] = 28139,	-- Gladiator's Wyrmhide Spaulders
-								},
-								{	-- Gladiator's Plate Shoulders
-									["itemID"] = 24546,	-- Gladiator's Plate Shoulders
-								},
-							},
-						},
-						{	-- Pauldrons of the Fallen Hero [Mage, Warlock, Hunter]
-							["itemID"] = 29762,	-- Pauldrons of the Fallen Hero
-							["g"] = {
-								{	-- Gladiator's Silk Amice
-									["itemID"] = 25854,	-- Gladiator's Silk Amice
-								},
-								{	-- Gladiator's Dreadweave Mantle
-									["itemID"] = 24554,	-- Gladiator's Dreadweave Mantle
-								},
-								{	-- Gladiator's Felweave Amice
-									["itemID"] = 30186,	-- Gladiator's Felweave Amice
-								},
-								{	-- Gladiator's Chain Spaulders
-									["itemID"] = 28333,	-- Gladiator's Chain Spaulders
-								},
-							},
-						},
-						{	-- Chestguard of the Fallen Champion [Rogue, Shaman, Paladin]
-							["itemID"] = 29754,	-- Chestguard of the Fallen Champion
-							["g"] = {
-								{	-- Gladiator's Leather Tunic
-									["itemID"] = 25831,	-- Gladiator's Leather Tunic
-								},
-								{	-- Gladiator's Linked Armor
-									["itemID"] = 25997,	-- Gladiator's Linked Armor
-								},
-								{	-- Gladiator's Mail Armor
-									["itemID"] = 27469,	-- Gladiator's Mail Armor
-								},
-								{	-- Gladiator's Ringmail Armor
-									["itemID"] = 31396,	-- Gladiator's Ringmail Armor
-								},
-								{	-- Gladiator's Lamellar Chestpiece
-									["itemID"] = 27702,	-- Gladiator's Lamellar Chestpiece
-								},
-								{	-- Gladiator's Ornamented Chestguard
-									["itemID"] = 31613,	-- Gladiator's Ornamented Chestguard
-								},
-								{	-- Gladiator's Scaled Chestpiece
-									["itemID"] = 27879,	-- Gladiator's Scaled Chestpiece
-								},
-							},
-						},
-						{	-- Chestguard of the Fallen Defender [Priest, Druid, Warrior]
-							["itemID"] = 29753,	
-							["g"] = {
-								{	-- Gladiator's Satin Robe
-									["itemID"] = 27711,	-- Gladiator's Satin Robe
-								},
-								{	-- Gladiator's Mooncloth Robe
-									["itemID"] = 31413,	-- Gladiator's Mooncloth Robe
-								},
-								{	-- Gladiator's Dragonhide Tunic
-									["itemID"] = 28130,	-- Gladiator's Dragonhide Tunic
-								},
-								{	-- Gladiator's Kodohide Tunic
-									["itemID"] = 31379,	-- Gladiator's Kodohide Tunic
-								},
-								{	-- Gladiator's Wyrmhide Tunic
-									["itemID"] = 28140,	-- Gladiator's Wyrmhide Tunic
-								},
-								{	-- Gladiator's Plate Chestpiece
-									["itemID"] = 24544,	-- Gladiator's Plate Chestpiece
-								},
-							},
-						},
-						{	-- Chestguard of the Fallen Hero [Mage, Warlock, Hunter]
-							["itemID"] = 29755,	-- Chestguard of the Fallen Hero
-							["g"] = {
-								{	-- Gladiator's Silk Raiment
-									["itemID"] = 25856,	-- Gladiator's Silk Raiment
-								},
-								{	-- Gladiator's Dreadweave Robe
-									["itemID"] = 24552,	-- Gladiator's Dreadweave Robe
-								},
-								{	-- Gladiator's Felweave Raiment
-									["itemID"] = 30200,	-- Gladiator's Felweave Raiment
-								},
-								{	-- Gladiator's Chain Armor
-									["itemID"] = 28334,	-- Gladiator's Chain Armor
-								},
-							},
-						},
-						{	-- Gloves of the Fallen Champion [Rogue, Shaman, Paladin]
-							["itemID"] = 29757,	-- Gloves of the Fallen Champion
-							["g"] = {
-								{	-- Gladiator's Leather Gloves
-									["itemID"] = 25834,	-- Gladiator's Leather Gloves
-								},
-								{	-- Gladiator's Linked Gauntlets
-									["itemID"] = 26000,	-- Gladiator's Linked Gauntlets
-								},
-								{	-- Gladiator's Mail Gauntlets
-									["itemID"] = 27470,	-- Gladiator's Mail Gauntlets
-								},
-								{	-- Gladiator's Ringmail Gauntlets
-									["itemID"] = 31397,	-- Gladiator's Ringmail Gauntlets
-								},
-								{	-- Gladiator's Lamellar Gauntlets
-									["itemID"] = 27703,	-- Gladiator's Lamellar Gauntlets
-								},
-								{	-- Gladiator's Ornamented Gloves
-									["itemID"] = 31614,	-- Gladiator's Ornamented Gloves
-								},
-								{	-- Gladiator's Scaled Gauntlets
-									["itemID"] = 27880,	-- Gladiator's Scaled Gauntlets
-								},
-							},
-						},
-						{	-- Gloves of the Fallen Defender [Priest, Druid, Warrior]
-							["itemID"] = 29758,	-- Gloves of the Fallen Defender
-							["g"] = {
-								{	-- Gladiator's Satin Gloves
-									["itemID"] = 27707,	-- Gladiator's Satin Gloves
-								},
-								{	-- Gladiator's Mooncloth Gloves
-									["itemID"] = 31409,	-- Gladiator's Mooncloth Gloves
-								},
-								{	-- Gladiator's Dragonhide Gloves
-									["itemID"] = 28126,	-- Gladiator's Dragonhide Gloves
-								},
-								{	-- Gladiator's Kodohide Gloves
-									["itemID"] = 31375,	-- Gladiator's Kodohide Gloves
-								},
-								{	-- Gladiator's Wyrmhide Gloves
-									["itemID"] = 28136,	-- Gladiator's Wyrmhide Gloves
-								},
-								{	-- Gladiator's Plate Gauntlets
-									["itemID"] = 24549,	-- Gladiator's Plate Gauntlets
-								},
-							},
-						},
-						{	-- Gloves of the Fallen Hero [Mage, Warlock, Hunter]
-							["itemID"] = 29756,	-- Gloves of the Fallen Hero
-							["g"] = {
-								{	-- Gladiator's Silk Handguards
-									["itemID"] = 25857,	-- Gladiator's Silk Handguards
-								},
-								{	-- Gladiator's Felweave Handguards
-									["itemID"] = 30188,	-- Gladiator's Felweave Handguards
-								},
-								{	-- Gladiator's Dreadweave Gloves
-									["itemID"] = 24556,	-- Gladiator's Dreadweave Gloves
-								},
-								{	-- Gladiator's Chain Gauntlets
-									["itemID"] = 28335,	-- Gladiator's Chain Gauntlets
-								},
-							},
-						},
-						{	-- Leggings of the Fallen Champion [Rogue, Shaman, Paladin]
-							["itemID"] = 29766,	-- Leggings of the Fallen Champion
-							["g"] = {
-								{	-- Gladiator's Leather Legguards
-									["itemID"] = 25833,	-- Gladiator's Leather Legguards
-								},
-								{	-- Gladiator's Linked Leggings
-									["itemID"] = 26001,	-- Gladiator's Linked Leggings
-								},
-								{	-- Gladiator's Mail Leggings
-									["itemID"] = 27472,	-- Gladiator's Mail Leggings
-								},
-								{	-- Gladiator's Ringmail Leggings
-									["itemID"] = 31406,	-- Gladiator's Ringmail Leggings
-								},
-								{	-- Gladiator's Lamellar Legguards
-									["itemID"] = 27705,	-- Gladiator's Lamellar Legguards
-								},
-								{	-- Gladiator's Ornamented Legplates
-									["itemID"] = 31618,	-- Gladiator's Ornamented Legplates
-								},
-								{	-- Gladiator's Scaled Legguards
-									["itemID"] = 27882,	-- Gladiator's Scaled Legguards
-								},
-							},
-						},
-						{	-- Leggings of the Fallen Defender [Priest, Druid, Warrior]
-							["itemID"] = 29767,	-- Leggings of the Fallen Defender
-							["g"] = {
-								{	-- Gladiator's Satin Leggings
-									["itemID"] = 27709,	-- Gladiator's Satin Leggings
-								},
-								{	-- Gladiator's Mooncloth Leggings
-									["itemID"] = 31411,	-- Gladiator's Mooncloth Leggings
-								},
-								{	-- Gladiator's Dragonhide Legguards
-									["itemID"] = 28128,	-- Gladiator's Dragonhide Legguards
-								},
-								{	-- Gladiator's Kodohide Legguards
-									["itemID"] = 31377,	-- Gladiator's Kodohide Legguards
-								},
-								{	-- Gladiator's Wyrmhide Legguards
-									["itemID"] = 28138,	-- Gladiator's Wyrmhide Legguards
-								},
-								{	-- Gladiator's Plate Legguards
-									["itemID"] = 24547,	-- Gladiator's Plate Legguards
-								},
-							},
-						},
-						{	-- Leggings of the Fallen Hero [Mage, Warlock, Hunter]
-							["itemID"] = 29765,	-- Leggings of the Fallen Hero
-							["g"] = {
-								{	-- Gladiator's Silk Trousers
-									["itemID"] = 25858,	-- Gladiator's Silk Trousers
-								},
-								{	-- Gladiator's Felweave Trousers
-									["itemID"] = 30201,	-- Gladiator's Felweave Trousers
-								},
-								{	-- Gladiator's Dreadweave Leggings
-									["itemID"] = 24555,	-- Gladiator's Dreadweave Leggings
-								},
-								{	-- Gladiator's Chain Leggings
-									["itemID"] = 28332,	-- Gladiator's Chain Leggings
-								},
-							},
-						},
+						i(29760, {	-- Helm of the Fallen Champion [Rogue, Shaman, Paladin]
+							i(25830),	-- Gladiator's Leather Helm
+							i(25998),	-- Gladiator's Linked Helm
+							i(27471),	-- Gladiator's Mail Helm
+							i(31400),	-- Gladiator's Ringmail Helm
+							i(27704),	-- Gladiator's Lamellar Helm
+							i(31616),	-- Gladiator's Ornamented Headcover
+							i(27881),	-- Gladiator's Scaled Helm
+						}),
+						i(29761, {	-- Helm of the Fallen Defender [Priest, Druid, Warrior]
+							i(31410),	-- Gladiator's Mooncloth Hood
+							i(27708),	-- Gladiator's Satin Hood
+							i(28127),	-- Gladiator's Dragonhide Helm
+							i(31376),	-- Gladiator's Kodohide Helm
+							i(28137),	-- Gladiator's Wyrmhide Helm
+							i(24545),	-- Gladiator's Plate Helm
+						}),
+						i(29759, {	-- Helm of the Fallen Hero [Mage, Warlock, Hunter]
+							i(25855),	-- Gladiator's Silk Cowl
+							i(24553),	-- Gladiator's Dreadweave Hood
+							i(30187),	-- Gladiator's Felweave Cowl
+							i(28331),	-- Gladiator's Chain Helm
+						}),
+						i(29763, {	-- Pauldrons of the Fallen Champion [Rogue, Shaman, Paladin]
+							i(25832),	-- Gladiator's Leather Spaulders
+							i(25999),	-- Gladiator's Linked Spaulders
+							i(27473),	-- Gladiator's Mail Spaulders
+							i(31407),	-- Gladiator's Ringmail Spaulders
+							i(27706),	-- Gladiator's Lamellar Shoulders
+							i(31619),	-- Gladiator's Ornamented Spaulders
+							i(27883),	-- Gladiator's Scaled Shoulders
+						}),
+						i(29764, {	-- Pauldrons of the Fallen Defender [Priest, Druid, Warrior]
+							i(27710),	-- Gladiator's Satin Mantle
+							i(31412),	-- Gladiator's Mooncloth Mantle
+							i(28129),	-- Gladiator's Dragonhide Spaulders
+							i(31378),	-- Gladiator's Kodohide Spaulders
+							i(28139),	-- Gladiator's Wyrmhide Spaulders
+							i(24546),	-- Gladiator's Plate Shoulders
+						}),
+						i(29762, {	-- Pauldrons of the Fallen Hero [Mage, Warlock, Hunter]
+							i(25854),	-- Gladiator's Silk Amice
+							i(24554),	-- Gladiator's Dreadweave Mantle
+							i(30186),	-- Gladiator's Felweave Amice
+							i(28333),	-- Gladiator's Chain Spaulders
+						}),
+						i(29754, {	-- Chestguard of the Fallen Champion [Rogue, Shaman, Paladin]
+							i(25831),	-- Gladiator's Leather Tunic
+							i(25997),	-- Gladiator's Linked Armor
+							i(27469),	-- Gladiator's Mail Armor
+							i(31396),	-- Gladiator's Ringmail Armor
+							i(27702),	-- Gladiator's Lamellar Chestpiece
+							i(31613),	-- Gladiator's Ornamented Chestguard
+							i(27879),	-- Gladiator's Scaled Chestpiece
+						}),
+						i(29753, {	-- Chestguard of the Fallen Defender [Priest, Druid, Warrior]
+							i(27711),	-- Gladiator's Satin Robe
+							i(31413),	-- Gladiator's Mooncloth Robe
+							i(28130),	-- Gladiator's Dragonhide Tunic
+							i(31379),	-- Gladiator's Kodohide Tunic
+							i(28140),	-- Gladiator's Wyrmhide Tunic
+							i(24544),	-- Gladiator's Plate Chestpiece
+						}),
+						i(29755, {	-- Chestguard of the Fallen Hero [Mage, Warlock, Hunter]
+							i(25856),	-- Gladiator's Silk Raiment
+							i(24552),	-- Gladiator's Dreadweave Robe
+							i(30200),	-- Gladiator's Felweave Raiment
+							i(28334),	-- Gladiator's Chain Armor
+						}),
+						i(29757, {	-- Gloves of the Fallen Champion [Rogue, Shaman, Paladin]
+							i(25834),	-- Gladiator's Leather Gloves
+							i(26000),	-- Gladiator's Linked Gauntlets
+							i(27470),	-- Gladiator's Mail Gauntlets
+							i(31397),	-- Gladiator's Ringmail Gauntlets
+							i(27703),	-- Gladiator's Lamellar Gauntlets
+							i(31614),	-- Gladiator's Ornamented Gloves
+							i(27880),	-- Gladiator's Scaled Gauntlets
+						}),
+						i(29758, {	-- Gloves of the Fallen Defender [Priest, Druid, Warrior]
+							i(27707),	-- Gladiator's Satin Gloves
+							i(31409),	-- Gladiator's Mooncloth Gloves
+							i(28126),	-- Gladiator's Dragonhide Gloves
+							i(31375),	-- Gladiator's Kodohide Gloves
+							i(28136),	-- Gladiator's Wyrmhide Gloves
+							i(24549),	-- Gladiator's Plate Gauntlets
+						}),
+						i(29756, {	-- Gloves of the Fallen Hero [Mage, Warlock, Hunter]
+							i(25857),	-- Gladiator's Silk Handguards
+							i(30188),	-- Gladiator's Felweave Handguards
+							i(24556),	-- Gladiator's Dreadweave Gloves
+							i(28335),	-- Gladiator's Chain Gauntlets
+						}),
+						i(29766, {	-- Leggings of the Fallen Champion [Rogue, Shaman, Paladin]
+							i(25833),	-- Gladiator's Leather Legguards
+							i(26001),	-- Gladiator's Linked Leggings
+							i(27472),	-- Gladiator's Mail Leggings
+							i(31406),	-- Gladiator's Ringmail Leggings
+							i(27705),	-- Gladiator's Lamellar Legguards
+							i(31618),	-- Gladiator's Ornamented Legplates
+							i(27882),	-- Gladiator's Scaled Legguards
+						}),
+						i(29767, {	-- Leggings of the Fallen Defender [Priest, Druid, Warrior]
+							i(27709),	-- Gladiator's Satin Leggings
+							i(31411),	-- Gladiator's Mooncloth Leggings
+							i(28128),	-- Gladiator's Dragonhide Legguards
+							i(31377),	-- Gladiator's Kodohide Legguards
+							i(28138),	-- Gladiator's Wyrmhide Legguards
+							i(24547),	-- Gladiator's Plate Legguards
+						}),
+						i(29765, {	-- Leggings of the Fallen Hero [Mage, Warlock, Hunter]
+							i(25858),	-- Gladiator's Silk Trousers
+							i(30201),	-- Gladiator's Felweave Trousers
+							i(24555),	-- Gladiator's Dreadweave Leggings
+							i(28332),	-- Gladiator's Chain Leggings
+						}),
 					},
 				}),
 				n(26089, {	-- Kayri <Exotic Gear Purveyor>
@@ -601,156 +386,84 @@ _.Zones =
 				n(25950, {	-- Shaani
 					["coord"] = { 51.5, 32.5, 122 },
 					["g"] = {
-						{	-- Design: Bold Crimson Spinel
-							["itemID"] = 35244,	-- Design: Bold Crimson Spinel
-						},
-						{	-- Design: Brilliant Crimson Spinel
-							["itemID"] = 35248,	-- Design: Brilliant Crimson Spinel
-						},
-						{	-- Design: Brilliant Crimson Spinel
-							["itemID"] = 35250,	-- Design: Brilliant Crimson Spinel
+						i(35244),	-- Design: Bold Crimson Spinel
+						i(35248),	-- Design: Brilliant Crimson Spinel
+						i(35250, {	-- Design: Brilliant Crimson Spinel
 							["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Brilliant Crimson Spinel
-							["itemID"] = 35255,	-- Design: Brilliant Crimson Spinel
+						}),
+						i(35255, {	-- Design: Brilliant Crimson Spinel
 							["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Deadly Pyrestone
-							["itemID"] = 35271,	-- Design: Deadly Pyrestone
-						},
-						{	-- Design: Delicate Crimson Spinel
-							["itemID"] = 35246,	-- Design: Delicate Crimson Spinel
-						},
-						{	-- Design: Delicate Crimson Spinel
-							["itemID"] = 35245,	-- Design: Delicate Crimson Spinel
+						}),
+						i(35271),	-- Design: Deadly Pyrestone
+						i(35246),	-- Design: Delicate Crimson Spinel
+						i(35245, {	-- Design: Delicate Crimson Spinel
 							["spellID"] = 0,	-- This is now available via 35246, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Flashing Crimson Spinel
-							["itemID"] = 35247,	-- Design: Flashing Crimson Spinel
-						},
-						{	-- Design: Forceful Seaspray Emerald
-							["itemID"] = 35769,	-- Design: Forceful Seaspray Emerald
-						},
-						{	-- Design: Forceful Talasite
-							["itemID"] = 35325,	-- Design: Forceful Talasite
-						},
-						{	-- Design: Glinting Shadowsong Amethyst
-							["itemID"] = 35266,	-- Design: Glinting Shadowsong Amethyst
-						},
-						{	-- Design: Glinting Shadowsong Amethyst
-							["itemID"] = 35240,	-- Design: Glinting Shadowsong Amethyst
+						}),
+						i(35247),	-- Design: Flashing Crimson Spinel
+						i(35769),	-- Design: Forceful Seaspray Emerald
+						i(35325),	-- Design: Forceful Talasite
+						i(35266),	-- Design: Glinting Shadowsong Amethyst
+						i(35240, {	-- Design: Glinting Shadowsong Amethyst
 							["spellID"] = 0,	-- This is now available via 35266, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Inscribed Pyrestone
-							["itemID"] = 35267,	-- Design: Inscribed Pyrestone
-						},
-						{	-- Design: Jagged Seaspray Emerald
-							["itemID"] = 35253,	-- Design: Jagged Seaspray Emerald
-						},
-						{	-- Design: Mystic Lionseye
-							["itemID"] = 35258,	-- Design: Mystic Lionseye
-						},
-						{	-- Design: Potent Pyrestone
-							["itemID"] = 35269,	-- Design: Potent Pyrestone
-						},
-						{	-- Design: Purified Shadowsong Amethyst
-							["itemID"] = 35251,	-- Design: Purified Shadowsong Amethyst
-						},
-						{	-- Design: Purified Shadowsong Amethyst
-							["itemID"] = 35241,	-- Design: Purified Shadowsong Amethyst
+						}),
+						i(35267),	-- Design: Inscribed Pyrestone
+						i(35253),	-- Design: Jagged Seaspray Emerald
+						i(35258),	-- Design: Mystic Lionseye
+						i(35269),	-- Design: Potent Pyrestone
+						i(35251),	-- Design: Purified Shadowsong Amethyst
+						i(35241, {	-- Design: Purified Shadowsong Amethyst
 							["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Purified Shadowsong Amethyst
-							["itemID"] = 37504,	-- Design: Purified Shadowsong Amethyst
+						}),
+						i(37504, {	-- Design: Purified Shadowsong Amethyst
 							["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Quick Dawnstone
-							["itemID"] = 35322,	-- Design: Quick Dawnstone
-						},
-						{	-- Design: Quick Lionseye
-							["itemID"] = 35768,	-- Design: Quick Lionseye
-						},
-						{	-- Design: Radiant Seaspray Emerald
-							["itemID"] = 35254,	-- Design: Radiant Seaspray Emerald
-						},
-						{	-- Design: Reckless Noble Topaz
-							["itemID"] = 35323,	-- Design: Reckless Noble Topaz
-						},
-						{	-- Design: Reckless Pyrestone
-							["itemID"] = 35767,	-- Design: Reckless Pyrestone
-						},
-						{	-- Design: Reckless Pyrestone
-							["itemID"] = 35268,	-- Design: Reckless Pyrestone
+						}),
+						i(35322),	-- Design: Quick Dawnstone
+						i(35768),	-- Design: Quick Lionseye
+						i(35254),	-- Design: Radiant Seaspray Emerald
+						i(35323),	-- Design: Reckless Noble Topaz
+						i(35767),	-- Design: Reckless Pyrestone
+						i(35268, {	-- Design: Reckless Pyrestone
 							["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Regal Seaspray Emerald
-							["itemID"] = 35252,	-- Design: Regal Seaspray Emerald
-						},
-						{	-- Design: Rigid Empyrean Sapphire
-							["itemID"] = 35259,	-- Design: Rigid Empyrean Sapphire
-						},
-						{	-- Design: Rigid Empyrean Sapphire
-							["itemID"] = 35257,	-- Design: Rigid Empyrean Sapphire
+						}),
+						i(35252),	-- Design: Regal Seaspray Emerald
+						i(35259),	-- Design: Rigid Empyrean Sapphire
+						i(35257, {	-- Design: Rigid Empyrean Sapphire
 							["spellID"] = 0,	-- This is now available via 35259, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Shifting Shadowsong Amethyst
-							["itemID"] = 35242,	-- Design: Shifting Shadowsong Amethyst
-						},
-						{	-- Design: Shifting Shadowsong Amethyst
-							["itemID"] = 35238,	-- Design: Shifting Shadowsong Amethyst
+						}),
+						i(35242),	-- Design: Shifting Shadowsong Amethyst
+						i(35238, {	-- Design: Shifting Shadowsong Amethyst
 							["spellID"] = 0,	-- This is now available via 35242, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Smooth Lionseye
-							["itemID"] = 35260,	-- Design: Smooth Lionseye
-						},
-						{	-- Design: Smooth Lionseye
-							["itemID"] = 35256,	-- Design: Smooth Lionseye
+						}),
+						i(35260),	-- Design: Smooth Lionseye
+						i(35256, {	-- Design: Smooth Lionseye
 							["spellID"] = 0,	-- This is now available via 35260, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Solid Empyrean Sapphire
-							["itemID"] = 35263,	-- Design: Solid Empyrean Sapphire
-						},
-						{	-- Design: Sovereign Shadowsong Amethyst
-							["itemID"] = 35243,	-- Design: Sovereign Shadowsong Amethyst
-						},
-						{	-- Design: Sparkling Empyrean Sapphire
-							["itemID"] = 35264,	-- Design: Sparkling Empyrean Sapphire
-						},
-						{	-- Design: Sparkling Empyrean Sapphire
-							["itemID"] = 35262,	-- Design: Sparkling Empyrean Sapphire
+						}),
+						i(35263),	-- Design: Solid Empyrean Sapphire
+						i(35243),	-- Design: Sovereign Shadowsong Amethyst
+						i(35264),	-- Design: Sparkling Empyrean Sapphire
+						i(35262, {	-- Design: Sparkling Empyrean Sapphire
 							["spellID"] = 0,	-- This is now available via 35262, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Steady Seaspray Emerald
-							["itemID"] = 35766,	-- Design: Steady Seaspray Emerald
-						},
-						{	-- Design: Stormy Empyrean Sapphire
-							["itemID"] = 35265,	-- Design: Stormy Empyrean Sapphire
-						},
-						{	-- Design: Subtle Lionseye
-							["itemID"] = 35249,	-- Design: Subtle Lionseye
-						},
-						{	-- Design: Subtle Lionseye
-							["itemID"] = 35261,	-- Design: Subtle Lionseye
+						}),
+						i(35766),	-- Design: Steady Seaspray Emerald
+						i(35265),	-- Design: Stormy Empyrean Sapphire
+						i(35249),	-- Design: Subtle Lionseye
+						i(35261, {	-- Design: Subtle Lionseye
 							["spellID"] = 0,	-- This is now available via 35261, need to delink the old plans from the recipe
 							["u"] = 2,
-						},
-						{	-- Design: Timeless Shadowsong Amethyst
-							["itemID"] = 35239,	-- Design: Timeless Shadowsong Amethyst
-						},
-						{	-- Design: Veiled Shadowsong Amethyst
-							["itemID"] = 35270,	-- Design: Veiled Shadowsong Amethyst
-						},
+						}),
+						i(35239),	-- Design: Timeless Shadowsong Amethyst
+						i(35270),	-- Design: Veiled Shadowsong Amethyst
 					},
 				}),
 				n(25046, {	-- Smith Hauthaa <Weapons & Armorsmith>
