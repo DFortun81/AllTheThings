@@ -98,6 +98,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 26801 },	-- Scourge on our Perimeter
 					}),
+					q(31148, {	-- Novice Elreth
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+					}),
 					q(24966, {	-- Of Light and Shadows
 						["u"] = 40,
 						["qg"] = 2123,	-- Dark Cleric Duesten
@@ -111,7 +115,7 @@ _.Zones =
 						["races"] = { 5 },	-- undead
 						["sourceQuests"] = { 25089 },	-- Beyond the Graves
 					}),
-					q(26801, {	-- Scourge on our Perimeter -- aa
+					q(26801, {	-- Scourge on our Perimeter
 						["qg"] = 1569,	-- Shadow Priest Sarvis
 						["coord"] = { 46.6, 58.8, 465 },
 						["races"] = HORDE_ONLY,
@@ -177,7 +181,6 @@ _.Zones =
 						["coord"] = { 46.6, 58.8, 465 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24971 },	-- Assault on the Rotbrain Encampment
-						["isBreadcrumb"] = true,
 					}),
 				}),
 			}),

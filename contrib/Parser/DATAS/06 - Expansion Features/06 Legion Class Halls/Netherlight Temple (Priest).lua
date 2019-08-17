@@ -111,8 +111,11 @@ _.ExpansionFeatures =
 						i(128827, {	-- Xal'atah, Blade of the Black Empire
 							i(133958),	-- Secrets of the Void 
 							q(40710, {	-- Blade in Twilight
-								["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
-								["qg"] = 101314,	-- Alonsus Faol
+								["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
+								["lvl"] = 98,
+								["coord"] = { 79.0, 40.9, 18 },
+								["classes"] = { 5 },	-- Priest
+								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 							}),
 						}),
 						i(141332, {	-- The Annals of Light and Shadow

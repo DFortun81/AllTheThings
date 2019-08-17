@@ -62,6 +62,7 @@ _.Zones =
 			q(49532),	-- Warchief's Command: Shadowmoon Valley!
 			q(49535),	-- Warchief's Command: Sholazar Basin!
 			q(28527),	-- Warchief's Command: Silithus!
+			q(28568),	-- Warchief's Command: Silverpine Forest!
 			q(28549),	-- Warchief's Command: Southern Barrens!
 			q(49536),	-- Warchief's Command: Storm Peaks!
 			q(28532),	-- Warchief's Command: Stonetalon Mountains!

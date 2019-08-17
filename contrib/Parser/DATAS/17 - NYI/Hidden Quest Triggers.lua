@@ -7,6 +7,7 @@ _.NeverImplemented =
 	-- When adding a quest trigger be sure to put a description of how it triggered
 	n(-9956, {	-- Quests
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success"
+		q(25040),	-- Tirisfal Glades - attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
 		q(27224),	-- Western Plaguelands - Andorhal Phase Flag - triggers during "The Depravity of the Forsaken"
 		
 		q(13807),	-- FLAG: Tournament Invitation
