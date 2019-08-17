@@ -120,6 +120,18 @@ _.Zones =
 						i(18239),	-- Pattern: Shadowskin Gloves							
 					},
 				}),
+				n(151042, {	-- Skin-Me-Own-Coat Dibblefur <T-Shirt Scalper>
+					["coord"] = { 42.1, 73.8, 210 },
+					["g"] = {
+						i(167227),	-- Gild's Crewneck
+						i(167208),	-- Jade's Lovely Shirt
+						i(167223),	-- Selis' Silk Shirt
+						i(167230),	-- Shirtsi's Cloth Shirt
+						i(167213),	-- Shuurt's Precious
+						i(167221),	-- Threads of Tirion
+						i(167214),	-- Tia Shortsleeve's Short Sleeve Shirt
+					},
+				}),
 				n(105637, {	-- Scowling Rosa <Texts and Specialty Goods>
 					["description"] = "These are completely useless as far as we know. I bought one of each and they're sitting in my bank just in case Blizzard ever removes the vendor.\b - Crieve",
 					["g"] = {

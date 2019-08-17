@@ -28,14 +28,14 @@ _.Zones =
 								["qg"] = 2546,	-- Fleet Master Firallon
 								["coord"] = { 46.6, 95.2, 210 },
 								["minReputation"] = NEUTRAL,
-								["g"] = {
+								["g"] = bubbleDown({["collectible"] = false }, {
 									i(22746, {	-- Buccaneer's Uniform
 										i(22744),	-- Bloodsail Boots
 										i(22745),	-- Bloodsail Pants
 										i(22743),	-- Bloodsail Sash
 										i(22742),	-- Bloodsail Shirt
 									}),
-								},
+								}),
 							}),
 						}),
 					},
