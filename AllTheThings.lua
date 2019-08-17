@@ -2624,8 +2624,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group.g = merged;
 			end
 			
-			group.total = (group.total or 0);
-			group.progress = (group.progress or 0);
+			group.total = 0;
+			group.progress = 0;
 			app.UpdateGroups(group, group.g);
 			if group.collectible then
 				group.total = group.total + 1;
