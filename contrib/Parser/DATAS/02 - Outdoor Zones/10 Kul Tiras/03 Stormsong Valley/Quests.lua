@@ -42,11 +42,33 @@ _.Zones =
 				}),
 				
 				
+				q(50367, {	-- Anger in a Bottle
+					["sourceQuests"] = { 50622 },	-- Deal's Off
+				--	["itemID"] = 157849,	-- Foul Smelling Flask
+					["coord"] = { 42.8, 69.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						130075,	-- Briarback Geomancer
+						130073,	-- Briarback Lookout
+						130395,	-- Briarback Warcaller
+						134425,	-- Hulking Kraulguard
+					},
+				}),
+				
+				
 				q(50041, {	-- A Pocket Full of Shells
 					["sourceQuests"] = { 50157 },	-- There's Gold in Them There Fields
 					["coord"] = { 50.7, 73.1, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 129808,	-- Farmer Goldfield
+				}),
+				
+				
+				q(50640, {	-- A Question of Quillpower
+					["sourceQuests"] = { 50368 },	-- Terror of the Kraul
+					["coord"] = { 44.8, 75.8, 1183 },	-- Thornheart
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133953,	-- Sergeant Calvin
 				}),
 				
 				
@@ -83,6 +105,14 @@ _.Zones =
 						i(155228),	-- Tideguard Bulwark
 						i(155231),	-- Purified Tideblood Band
 					},
+				}),
+				
+				
+				q(50353, {	-- Boaring Company
+					["sourceQuests"] = { 50622 },	-- Deal's Off
+					["coord"] = { 44.7, 64.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133953,	-- Sergeant Calvin
 				}),
 				
 				
@@ -133,6 +163,26 @@ _.Zones =
 				}),
 				
 				
+				q(50910, {	-- Dangerous Game
+					["sourceQuests"] = { 52067 },	-- Survivors
+					["coord"] = { 57.8, 55.3, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 135682,	-- Patrick Eckhart
+				}),
+				
+				
+				q(50622, {	-- Deal's Off
+				--	according to wowhead you can pick this up from two separate NPCs.  i had done the goldfield's war/golden fields forever quests already, before finishing the chain that ends with 'farming stimulator,' so you might be able to pick it up from either 'farmer' depending on which of these chains you finish second.  the quest text says 'there's only one farm left,' so it'd make sense writing-wise if you had to complete the other two farms first.
+					["sourceQuests"] = {
+						50136,	-- Farming Stimulator
+					--	50088,	-- Golden Fields Forever (possibly required)
+					},
+					["coord"] = { 51.6, 66.0, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 132118,	-- Farmer Burton
+				}),
+				
+				
 				q(49746, {	-- Dousing the Flames
 					["coord"] = { 57.6, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
@@ -156,6 +206,24 @@ _.Zones =
 					["coord"] = { 66.4, 56.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 131248,	-- Samuel Williams
+				}),
+				
+				
+				q(50136, {	-- Farming Stimulator
+					["sourceQuests"] = {
+						50134,	-- Gadgets and Gizmos Aplenty
+						50135,	-- Stop Vining
+					},
+					["coord"] = { 51.5, 65.9, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 132118,	-- Farmer Burton
+					["g"] = {
+						i(155197),	-- Darkwater Bracers
+						i(155195),	-- Dread Corsair Bracers
+						i(155196),	-- Stormchaser Bracers
+						i(155194),	-- Tidespeaker Cuffs
+						i(155235),	-- Vineshaper's Grasp
+					},
 				}),
 				
 				
@@ -287,6 +355,14 @@ _.Zones =
 				}),
 				
 				
+				q(50354, {	-- Look Out!
+					["sourceQuests"] = { 50622 },	-- Deal's Off
+					["coord"] = { 44.7, 64.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133953,	-- Mayor Roz
+				}),
+				
+				
 				q(51278, {	-- Lost and Forgotten
 					["sourceQuests"] = { 50781 },	-- A Bridge Too Far
 					["coord"] = { 70.2, 36.1, 942 },
@@ -324,6 +400,14 @@ _.Zones =
 					["coord"] = { 63.4, 64.8, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 130714,	-- Brother Pike
+				}),
+				
+				
+				q(50909, {	-- Never Outgunned
+					["sourceQuests"] = { 52067 },	-- Survivors
+					["coord"] = { 57.9, 55.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 135874,	-- Lea Martinel
 				}),
 				
 				
@@ -389,6 +473,17 @@ _.Zones =
 				}),
 				
 				
+				q(50365, {	-- Run For the Hills
+					["sourceQuests"] = {
+						50353,	-- Boaring Company
+						50354,	-- Look Out!
+					},
+					["coord"] = { 46.7, 73.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133953,	-- Sergeant Calvin
+				}),
+				
+				
 				q(51320, {	-- Sealed Fate
 					["sourceQuests"] = { 50781 },	-- A Bridge Too Far
 					["coord"] = { 70.2, 36.1, 942 },
@@ -413,10 +508,30 @@ _.Zones =
 				}),
 				
 				
+				q(50908, {	-- Smells like Trouble
+					["sourceQuests"] = { 52067 },	-- Survivors
+					["coord"] = { 57.8, 55.3, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 135682,	-- Patrick Eckhart
+				}),
+				
+				
 				q(52796, {	-- Sometimes Less is More
 					["coord"] = { 60.2, 70.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 141769,	-- Marilyn Hood
+				}),
+				
+				
+				q(50340, {	-- Steal Them Back
+					["sourceQuests"] = {
+						50353,	-- Boaring Company
+						50354,	-- Look Out!
+					},
+				--	["objectID"] = 282478,	-- Empty Crate
+					["coord"] = { 46.7, 73.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133953,	-- Sergeant Calvin
 				}),
 				
 				
@@ -483,6 +598,30 @@ _.Zones =
 					["coord"] = { 57.6, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 130190,	-- Sergeant Calvin
+				}),
+				
+				
+				q(50368, {	-- Terror of the Kraul
+					["sourceQuests"] = {
+					--	may also require 50340 'steal them back'.  DOES NOT REQUIRE 'TOTEMS, TOTEMS, TOTEMS;' i picked it up before turning that one in.
+						50367,	-- Anger in a Bottle (didn't appear until i turned this in, in addition to 'run for the hills' + 'war pigs')
+						50363,	-- Run For the Hills 
+						50365,	-- War Pigs
+					},
+					["coord"] = { 46.7, 73.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133953,	-- Sergeant Calvin
+					["g"] = {
+						i(155225),	-- Bramblehulk Greatsword
+						i(160522),	-- Brennadam Vinescythe
+						i(155205),	-- Briarback Thornshaper
+						i(160520),	-- Briarback Thornspike
+						i(155210),	-- Briarback Warmace
+						i(155223),	-- Kraulguard Longsword
+						i(155218),	-- Kraulguard Poleaxe
+						i(155203),	-- Needleshot Repeater
+						i(155200),	-- Thornmatron's Vinecaller
+					},
 				}),
 				
 				
@@ -587,6 +726,13 @@ _.Zones =
 				}),
 				
 				
+				q(50111, {	-- Totems, Totems, Totems!
+				--	["objectID"] = 282457,	-- Brambleguard Totem
+					["coord"] = { 44.0, 72.4, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(49818, {	-- Trouble at Fort Daelin
 					["sourceQuests"] = {	-- needs confirmation.  may open as early as walking across the bridge north of brennadam.  it wasn't here prior to doing that, though.  it was available after turning these 3 in but before picking up or doing 'heavy artillery,' so the SQ is either these 3 or walking across the brennadam bridge to pick these 3 up.
 						49744,	-- Bombs, Away
@@ -634,6 +780,24 @@ _.Zones =
 				}),
 				
 				
+				q(51217, {	-- WANTED: Yarsel'ghun
+					["objectID"] = 288157,	-- WANTED: Yarsel'ghun
+					["coord"] = { 57.8, 55.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(50363, {	-- War Pigs
+					["sourceQuests"] = {
+						50353,	-- Boaring Company
+						50354,	-- Look Out!
+					},
+					["coord"] = { 46.7, 73.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 133953,	-- Sergeant Calvin
+				}),
+				
+				
 				q(49745, {	-- You Have Their Orders
 					["coord"] = { 57.6, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
@@ -664,17 +828,6 @@ _.Zones =
 					["sourceQuests"] = { 50697, 50696 },	-- Bomb Beats Rock / Fun With Magnets
 					["coord"] = { 44.2, 54.0 },
 				})),
-				a(q(50640, {	-- A Question of Quillpower
-					["qg"] = 133953,	-- Sergeant Calvin
-					["sourceQuests"] = { 50368 },	-- Terror of the Kraul
-					["coord"] = { 71.2, 52.2 },
-					["g"] = {
-						{
-							["achievementID"] = 12496,	-- Stormsong and Dance [Achievement]
-							["criteriaID"] = 7,	-- Briarback Kraul [Criteria]
-						},
-					},
-				})),
 				a(q(50797, {	-- A Turtle's Invitation
 					["qg"] = 135033,	-- Maokka
 					["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
@@ -699,23 +852,10 @@ _.Zones =
 						i(158558),	-- Back to the Lab
 					},
 				})),
-				a(q(50353, {	-- Boaring Company
-					["qg"] = 133953,	-- Sergeant Calvin
-					["sourceQuests"] = { 50622 },	-- Deal's Off
-					["coord"] = { 44.7, 64.6 },
-				})),
 				a(q(50697, {	-- Bomb Beats Rock
 					["qg"] = 134882,	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["coord"] = { 44.4, 55.6 },
-				})),
-				a(o(282457, {	-- Brambleguard Totem
-					["coord"] = { 44.0, 72.4 },
-					["g"] = {
-						a(q(50111, {	-- Totems, Totems, Totems!
-							-- ["sourceQuests"] = { 50622 },	-- Deal's Off ??? (not required)
-						})),
-					},
 				})),
 				a(q(50810, {	-- Break 'Em Out
 					["qg"] = 134720,	-- Leo Shealds
@@ -731,16 +871,6 @@ _.Zones =
 					["qg"] = 132017,	-- Ancel Mildenhall
 					["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery
 					["coord"] = { 68.8, 65.1 },
-				})),
-				a(q(50910, {	-- Dangerous Game
-					["qg"] = 135682,	-- Patrick Eckhart
-					-- ["sourceQuests"] = { 52067 },	-- Survivors ??? (potentially not required)
-					["coord"] = { 57.8, 55.3 },
-				})),
-				a(q(50622, {	-- Deal's Off
-					["qg"] = 129808,	-- Farmer Goldfield
-					["sourceQuests"] = { 50088 },	-- Golden Fields Forever
-					["coord"] = { 50.6, 77.0 },
 				})),
 				a(q(50070, {	-- Detective Mildenhall
 					["qg"] = 132017,	-- Ancel Mildenhall
@@ -771,36 +901,10 @@ _.Zones =
 						}),
 					},
 				})),
-				a(o(282478, {	-- Empty Crate
-					["coord"] = { 46.3, 77.0 },
-					["g"] = {
-						a(q(50340, {	-- Steal Them Back
-							["sourceQuests"] = { 50353 },	-- Boaring Company
-						})),
-					},
-				})),
-				a(q(50136, {	-- Farming Stimulator
-					["qg"] = 132118,	-- Farmer Burton
-					["sourceQuests"] = { 50134, 50135 },	-- Gadgets and Gizmos Aplenty / Stop Vining
-					["coord"] = { 51.5, 65.9 },
-					["g"] = {
-						i(155197),	-- Darkwater Bracers
-						i(155195),	-- Dread Corsair Bracers
-						i(155196),	-- Stormchaser Bracers
-						i(155194),	-- Tidespeaker Cuffs
-						i(155235),	-- Vineshaper's Grasp
-					},
-				})),
 				a(q(50493, {	-- Fetching Wrex
 					["qg"] = 134028,	-- Sam Robinson
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
-				})),
-				a(i(157849, {	-- Foul Smelling Flask
-					["questID"] = 50367,	-- Anger in a Bottle
-					["qg"] = 130073,	-- Briarback Lookout
-					["sourceQuests"] = { 50622 },	-- Deal's Off
-					["coord"] = { 42.8, 69.7 },
 				})),
 				a(q(50264, {	-- Free the Farmhands
 					["qg"] = 134028,	-- Sam Robinson
@@ -854,20 +958,10 @@ _.Zones =
 						})),
 					},
 				})),
-				a(q(50354, {	-- Look Out!
-					["qg"] = 133953,	-- Mayor Roz
-					["sourceQuests"] = { 50622 },	-- Deal's Off
-					["coord"] = { 44.7, 64.5 },
-				})),
 				a(q(50343, {	-- Mayhem at Mildenhall Meadery
 					["qg"] = 131793,	-- Ancel Mildenhall
 					["sourceQuests"] = { 51582 },	-- Make it Mildenhall
 					["coord"] = { 68.8, 65.1 },
-				})),
-				a(q(50909, {	-- Never Outgunned
-					["qg"] = 135874,	-- Lea Martinel
-					-- ["sourceQuests"] = { 52067 },	-- Survivors ??? (potentially not required)
-					["coord"] = { 57.9, 55.5 },
 				})),
 				a(q(50774, {	-- No Bot Left Behind
 					["qg"] = 135067,	-- Moxie Lockspinner
@@ -895,36 +989,10 @@ _.Zones =
 					["sourceQuests"] = { 50161 },	-- Recovering Raimond
 					["coord"] = { 74.1, 72.7 },
 				})),
-				a(q(50365, {	-- Run For the Hills
-					["qg"] = 133953,	-- Sergeant Calvin
-					["sourceQuests"] = { 50353 },	-- Boaring Company
-					["coord"] = { 46.7, 73.8 },
-				})),
-				a(q(50908, {	-- Smells like Trouble
-					["qg"] = 135682,	-- Patrick Eckhart
-					-- ["sourceQuests"] = { 52067 },	-- Survivors ??? (potentially not required)
-					["coord"] = { 57.8, 55.3 },
-				})),
 				a(q(50162, {	-- Sticky Situation
 					["qg"] = 132292,	-- Raimond Mildenhall
 					["sourceQuests"] = { 50161 },	-- Recovering Raimond
 					["coord"] = { 74.1, 72.7 },
-				})),
-				a(q(50368, {	-- Terror of the Kraul
-					["qg"] = 133953,	-- Sergeant Calvin
-					["sourceQuests"] = { 50363, 50365 },	-- Run For the Hills / War Pigs
-					["coord"] = { 46.7, 73.8 },
-					["g"] = {
-						i(155225),	-- Bramblehulk Greatsword
-						i(160522),	-- Brennadam Vinescythe
-						i(155205),	-- Briarback Thornshaper
-						i(160520),	-- Briarback Thornspike
-						i(155210),	-- Briarback Warmace
-						i(155223),	-- Kraulguard Longsword
-						i(155218),	-- Kraulguard Poleaxe
-						i(155203),	-- Needleshot Repeater
-						i(155200),	-- Thornmatron's Vinecaller
-					},
 				})),
 				a(q(51534, {	-- The Battle for Brennadam (Objective)
 					["qg"] = 130694,	-- Mayor Roz
@@ -956,24 +1024,11 @@ _.Zones =
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
 				})),
-				a(o(288157, {	-- WANTED: Yarsel'ghun
-					["coord"] = { 57.8, 55.8 },
-					["g"] = {
-						a(q(51217, {	-- WANTED: Yarsel'ghun
-							["sourceQuests"] = { 52067 },	-- Survivors ??? (potentially required)
-						})),
-					},
-				})),
 				a(o(282448, {	-- Wanted Poster
 					["coord"] = { 46.0, 61.8 },
 					["g"] = {
 						a(q(49730)),	-- WANTED: Thundersnout [Source Quest Unknown]
 					},
-				})),
-				a(q(50363, {	-- War Pigs
-					["qg"] = 133953,	-- Sergeant Calvin
-					["sourceQuests"] = { 50353 },	-- Boaring Company
-					["coord"] = { 46.7, 73.8 },
 				})),
 				a(q(50133, {	-- Weed Whacking (Objective)
 					["qg"] = 132118,	-- Farmer Burton
@@ -1947,9 +2002,6 @@ _.Zones =
 				q(52794, {	-- Lizards and Ledgers
 					["collectible"] = false,
 					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50354, {	-- Look Out!
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52230, {	-- Loose Change

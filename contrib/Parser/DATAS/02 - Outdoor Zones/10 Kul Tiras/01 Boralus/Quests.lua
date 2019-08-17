@@ -123,9 +123,10 @@ _.Zones =
 					["qg"] = 146902,	-- Brother Pike
 				}),
 				q(51341, { 	-- Daughter of the Sea
-					["qg"] = 120922,	-- Lady Jaina Proudmoore
 					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 					["coord"] = { 65.7, 50.6, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 120922,	-- Lady Jaina Proudmoore
 				}),
 				q(47961, {	-- Drustvar
 					["sourceQuests"] = { 47189 },	-- A Nation Divided
@@ -140,9 +141,10 @@ _.Zones =
 					["qg"] = 135259,	-- Taelia
 				}),
 				q(52128, { 	-- Ferry Pass
-					["qg"] = 122370,	-- Cyrus Crestfall
 					["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 					["coord"] = { 68.0, 21.9, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 122370,	-- Cyrus Crestfall
 				}),
 				q(53765, {	-- His Eye Upon You
 					["sourceQuest"] = 54126,	-- Twist the Knife [Alliance]
