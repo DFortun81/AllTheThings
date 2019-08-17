@@ -808,69 +808,43 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						i(67275, {	-- Formula: Magic Lamp
 							["races"] = ALLIANCE_ONLY,
-							["cost"] = {
-								{ "i", 52555, 20 },	-- 20x Hypnotic Dust
-							},
+							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
 						}),
 						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
-							["cost"] = {
-								{ "i", 52721, 5 },	-- 5x Heavenly Shard
-							},
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(64412, {	-- Formula: Enchant Boots - Lavawalker
-							["cost"] = {
-								{ "i", 52721, 5 },	-- 5x Heavenly Shard
-							},
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
-							["cost"] = {
-								{ "i", 52721, 5 },	-- 5x Heavenly Shard
-							},
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(64413, {	-- Formula: Enchant Bracer - Greater Speed
-							["cost"] = {
-								{ "i", 52721, 5 },	-- 5x Heavenly Shard
-							},
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(52740, {	-- Formula: Enchant Chest - Greater Stamina
-							["cost"] = {
-								{ "i", 52721, 5 },	-- 5x Heavenly Shard
-							},
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(52739, {	-- Formula: Enchant Chest - Peerless Stats
-							["cost"] = {
-								{ "i", 52721, 5 },	-- 5x Heavenly Shard
-							},
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
-							["cost"] = {
-								{ "i", 52721, 5 },	-- 5x Heavenly Shard
-							},
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
-							["cost"] = {
-								{ "i", 52721, 5 },	-- 5x Heavenly Shard
-							},
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
-							["cost"] = {
-								{ "i", 52721, 5 },	-- 5x Heavenly Shard
-							},
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(52736, {	-- Formula: Enchant Weapon - Landslide
-							["cost"] = {
-								{ "i", 52722, 5 },	-- 5x Maelstrom Crystal
-							},
+							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
 						}),
 						i(52733, {	-- Formula: Enchant Weapon - Power Torrent
-							["cost"] = {
-								{ "i", 52722, 5 },	-- 5x Maelstrom Crystal
-							},
+							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
 						}),
 						i(52735, {	-- Formula: Enchant Weapon - Windwalk
-							["cost"] = {
-								{ "i", 52722, 5 },	-- 5x Maelstrom Crystal
-							},
+							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
 						}),
 					},
 				}),
@@ -878,7 +852,9 @@ _.Zones =
 					["coord"] = { 57.8, 71.6, 89 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(12256),	-- Cindercloth Leggings
+						i(12256, {	-- Cindercloth Leggings
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),
