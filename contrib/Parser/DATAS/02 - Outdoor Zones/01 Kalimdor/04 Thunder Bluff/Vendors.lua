@@ -22,7 +22,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12249, {	-- Merciless Axe
-							["description"] = "This item is a limited spawn on the vendor and may take hours to spawn.",
+							["isLimited"] = true,
 						}),
 					},
 				}),
