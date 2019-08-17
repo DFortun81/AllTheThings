@@ -269,7 +269,7 @@ _.Zones =
 					},
 				}),
 				n(50306, {	-- Kadu <Exodar Quartermaster>
-					["coord"] = { 66.6, 74.0, 103 },
+					["coord"] = { 54.8, 36.8, 103 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64889),	-- Mantle of Exodar
