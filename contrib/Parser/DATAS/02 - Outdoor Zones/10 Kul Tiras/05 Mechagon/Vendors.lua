@@ -80,6 +80,8 @@ _.Zones =
 						i(169384),	-- Microbot XD
 						i(169155),	-- Scrapmaster's Blowtorch
 						i(169383),	-- Utility Mechanoclaw
+						i(168045),	-- Beastbot Powerpack
+						i(168057),	-- RUstbolt Requisitions
 					},
 				}),
 				n(150716, {	-- Stolen Royal Vendorbot

@@ -41,17 +41,7 @@ _.NeverImplemented =
 		un(1, i(166951)),	-- Dread Gladiator's leather spaulders
 		un(1, i(166952)),	-- Dread Gladiator's leather belt
 		un(1, i(166953)),	-- Dread Gladiator's leather bindings
-		
-		-- Plate Blue Warfront Pieces
-		un(1, i(163412)),	-- 7th Legionnaire's Helmet
-		un(1, i(163406)),	-- 7th Legionnaire's Shoulderplates
-		un(1, i(163413)),	-- 7th Legionnaire's Strikers
-		un(1, i(163423)),	-- 7th Legionnaire's Girdle
-		un(1, i(163408)),	-- 7th Legionnaire's Legplates
-		un(1, i(163420)),	-- 7th Legionnaire's Stompers
-		un(1, i(163457)),	-- Honorbound Centurion's Helmet
-		un(1, i(163454)),	-- Honorbound Centurion's Pauldrons
-		un(1, i(163462)),	-- Honorbound Centurion's Girdle
+	
 		
 		-- Mail Blue Warfront Pieces
 		un(1, i(163396)),	-- 7th Legionnaire's Skullcap
@@ -1172,6 +1162,28 @@ _.NeverImplemented =
 				un(1, i(48873)),	-- Hellscream's Legguards of Conquest
 				un(1, i(48874)),	-- Hellscream's Pauldrons of Conquest
 				un(1, i(154041)),	-- Oathsworn Faceguard
+				un(1, i(46278)),	-- Siegebreaker battleplate
+				un(1, i(46279)),	-- Siegebreaker breastplate
+				un(1, i(46280)),	-- Siegebreaker gauntlets
+				un(1, i(46281)),	-- Siegebreaker greathelm
+				un(1, i(46282)),	-- Siegebreaker helmet
+				un(1, i(46283)),	-- Siegebreaker handguards
+				un(1, i(46284)),	-- Siegebreaker legguards
+				un(1, i(46285)),	-- Siegebreaker legplates
+				un(1, i(46286)),	-- Siegebreaker pauldrons
+				un(1, i(46287)),	-- Siegebreaker shoulderplates
+				un(1, i(48865)),	-- Wyrnn's battleplate
+				un(1, i(48866)),	-- Wyrnn's gaimtöets
+				un(1, i(48867)),	-- Wyrnn's helmet
+				un(1, i(48868)),	-- Wyrnn's legplates
+				un(1, i(48869)),	-- Wyrnn's shoulderplate
+				un(1, i(48875)),	-- Wyrnn's breastplate
+				un(1, i(48876)),	-- Wyrnn's greathelm
+				un(1, i(48877)),	-- Wyrnn's handguards
+				un(1, i(48878)),	-- Wyrnn's legguards
+				un(1, i(48879)),	-- Wyrnn's pauldrons
+				un(1, i(48895)),	-- thassarians chestguard
+				un(1, i(48899)),	-- thassarians pauldrons
 				-- Unused T0 Replica
 				un(1, i(78154)),	-- Replica Belt of Valor
 				un(1, i(78153)),	-- Replica Boots of Valor
@@ -1203,6 +1215,17 @@ _.NeverImplemented =
 				un(1, i(96366)), -- Legguards of the Last Mogu
 				un(1, i(96367)), -- Shoulderguards of the Last Mogu
 			}),
+			-- Plate Blue Warfront Pieces
+			un(1, i(163412)),	-- 7th Legionnaire's Helmet
+			un(1, i(163406)),	-- 7th Legionnaire's Shoulderplates
+			un(1, i(163413)),	-- 7th Legionnaire's Strikers
+			un(1, i(163423)),	-- 7th Legionnaire's Girdle
+			un(1, i(163408)),	-- 7th Legionnaire's Legplates
+			un(1, i(163420)),	-- 7th Legionnaire's Stompers
+			un(1, i(163457)),	-- Honorbound Centurion's Helmet
+			un(1, i(163454)),	-- Honorbound Centurion's Pauldrons
+			un(1, i(163462)),	-- Honorbound Centurion's Girdle
+			
 			un(1, i(166400)),	-- flaskzertaurens plate chestguards
 			un(1, i(166401)),	-- flaskzertaurens plate cuirass
 			un(1, i(166411)),	-- flaskzertaurens plate shoulderguards
@@ -1554,6 +1577,9 @@ _.NeverImplemented =
 			un(1, i(20936)),	-- Unknown
 			un(1, i(20937)),	-- Unknown
 			un(1, i(156927)),	-- Great Hall Recall)
+			un(1, i(168023)),	-- dnt smashed transporter relay
+			un(1, i(168030)),	-- dnt hyperbolic circuit
+			un(1, i(168031)),	-- dnt transference disc
 		}),
 		un(1, i(79907)),	-- Spear of Xuen (Old Version)
 		un(1, i(129742)),	-- Badge of timewaking justice cap
@@ -3116,6 +3142,7 @@ _.NeverImplemented =
 		un(1, i(122230)),	-- Unknown
 		un(1, i(122235)),	-- Unknown
 		un(1, i(108640)),	-- Unknown
+		un(1, i(166782)),	-- Unknown
 		{
 			["itemID"] = 119179,	-- Iron Star Roller
 			["timeline"] = {
@@ -3375,6 +3402,10 @@ _.NeverImplemented =
 			un(1, i(132479)),	-- Unknown - was under Legion>Staves
 			un(1, i(132480)),	-- Unknown - was under Legion>Staves
 			un(1, i(132481)),	-- Unknown - was under Legion>Staves
+			un(1, i(140690)),	-- Restorative ashwood staff
+			un(1, i(140702)),	-- whispering staff of the void
+			un(1, i(150585)),	-- restorative ashwood staff
+			un(1, i(150597)),	-- whispering staff of the void
 			un(1, i(132482)),	-- Unknown - was under Legion>Staves
 			un(1, i(132483)),	-- Unknown - was under Legion>Staves
 			un(1, i(134066)),	-- Unknown - was under Legion>Staves
