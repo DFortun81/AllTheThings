@@ -10,8 +10,12 @@ _.Zones =
 					["coord"] = { 25.6, 70.8, 66 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12250),	-- Midnight Axe
-						i(12249),	-- Merciless Axe
+						i(12249, {	-- Merciless Axe
+							["isLimited"] = true,
+						}),
+						i(12250, {	-- Midnight Axe
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(8150,  {	-- Janet Hommers <Food & Drink>
@@ -30,7 +34,9 @@ _.Zones =
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 							["u"] = 7,
 						}),
-						i(7114),	-- Pattern: Azure Silk Gloves
+						i(7114, {	-- Pattern: Azure Silk Gloves
+							["isLimited"] = true,
+						}),
 						i(12232),	-- Recipe: Carrion Surprise
 						i(12240),	-- Recipe: Heavy Kodo Stew
 					},
@@ -39,7 +45,9 @@ _.Zones =
 					["coord"] = { 55.8, 56.6, 66 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(10858),	-- Plans: Solid Iron Maul
+						i(10858, {	-- Plans: Solid Iron Maul
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(12033, {	-- Wulan <Cooking Supplies>
