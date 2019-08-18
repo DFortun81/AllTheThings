@@ -99,6 +99,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 54946,	-- Report to Gila
 				}),
+		--[[	Listed under Expansion Features>Island>Quests
 				q(53436, { 	-- Azerite for the Alliance
 					["repeatable"] = true,
 					["isWeekly"] = true,
@@ -115,7 +116,7 @@ _.Zones =
 						}),
 						i(170150),	-- Map to the Last WOrldvein
 					},
-				}),
+				}),--]]
 				q(50789, {	-- Clear the Air
 					["sourceQuests"] = { 50787 },	-- Make Our Case
 					["coord"] = { 49.9, 87.3, 1161 },

@@ -354,6 +354,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 122320,	-- Bladeguard Kaja
 				}),
+		--[[	Listed under Expansion Features>Island>Quests
 				q(53435, {	-- Azerite for the Horde
 					["repeatable"] = true,
 					["isWeekly"] = true,
@@ -371,7 +372,7 @@ _.Zones =
 						}),
 						i(170150),	-- Map to the Last WOrldvein
 					},
-				}),
+				}),--]]
 				q(54439, {	-- Crucible of Storms: Relics of Shadow
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53763 },	-- Twist the Knife

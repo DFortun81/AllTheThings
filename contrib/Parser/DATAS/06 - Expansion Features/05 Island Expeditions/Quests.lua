@@ -1,12 +1,20 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
--- TO:DO -- Break the file down in parts later. Lucetia
 -- Add icons to each Item Set header
 _.ExpansionFeatures =
 {
 	n(-3338, {	-- Island Expeditions
 		["groups"] = {
+			n(-10067, {	-- Artifact
+				["groups"] = {
+					n(-227,	{	-- Victory
+						i(169687, {	-- Fragment of Zem'lan's Lost Treasure Map
+							i(169693),	-- Zem'Lans Lost Treasure Map
+						}),
+					}),
+				},
+			}),
 			n(-17, {	-- Quests
 				["groups"] = {
 					i(163470, {	 -- Ancient Crypt Key
@@ -19,6 +27,43 @@ _.ExpansionFeatures =
 								["achievementID"] = 13127,	-- Tell Me A Tale
 							}),
 						},
+					}),
+					q(53436, { 	-- Azerite for the Alliance
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["coord"] = { 66.6, 35.5, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 131290,	-- Flynn
+						["g"] = {
+							i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
+							i(166999),	-- Treasure Map
+							i(169764, {	-- Worldvein Intelligence Reports
+								["g"] = {
+									q(56533), 	-- Worldvein Rumors
+								},
+							}),
+							i(170150),	-- Map to the Last WOrldvein
+						},
+						["maps"] = { 1161 },	-- Boralus
+					}),
+					q(53435, {	-- Azerite for the Horde
+						["repeatable"] = true,
+						["isWeekly"] = true,
+						["races"] = HORDE_ONLY,
+						["coord"] = { 44.60, 95.40, 1163 },
+						["qg"] = 123000,	-- Captain Rez'okun
+						["g"] = {
+							i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
+							i(166999),	-- Treasure Map
+							i(169765, {	-- Worldvein Intelligence Reports
+								["questID"] = 56534,	-- Worldvein Rumors
+								["g"] = {
+									spell(302239),	-- Investigating the Rumors
+								},
+							}),
+							i(170149),	-- Map to the Last WOrldvein
+						},
+						["maps"] = { 1163 },	-- Dazar'Alor
 					}),
 					i(163478, {	 -- Battered Twilight Scale
 						["coord"] = { 20.2, 54.6, 241 },
