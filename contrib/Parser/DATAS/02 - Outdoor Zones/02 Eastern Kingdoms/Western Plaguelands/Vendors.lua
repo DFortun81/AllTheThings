@@ -8,7 +8,7 @@ _.Zones =
 			n(-2, {	-- Vendors
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
 					["coord"] = { 42.8, 83.8, 22 },
-					["description"] = "To view this vendor's shop, you need to be at least Honored with Argent Dawn.  Although this vendor is in an Alliance area, Horde players may still purchase from this NPC provided they have the required reputation.",
+					["description"] = "Although this vendor is in an Alliance area, Horde players may still purchase from this NPC provided they have the required reputation.",
 					["g"] = {
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 						i(19447),	-- Formula: Enchant Bracer - Healing Power
