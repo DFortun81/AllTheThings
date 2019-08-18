@@ -51,6 +51,7 @@ _.Zones =
 								i(170072),	-- Armored Vaultbot
 							},
 						}),
+						i(168045),	-- Beastbot Powerpack
 						i(168833, {	-- Experimental Adventurer Augmentation
 							i(169002),	-- Calibrated Hefty Cog
 							i(169007),	-- Laser-Etched Band
@@ -78,10 +79,9 @@ _.Zones =
 						i(168907),	-- Holographic Digitalization Hearthstone
 						i(167751),	-- Mechanocat Laser Pointer
 						i(169384),	-- Microbot XD
+						i(168057),	-- RUstbolt Requisitions
 						i(169155),	-- Scrapmaster's Blowtorch
 						i(169383),	-- Utility Mechanoclaw
-						i(168045),	-- Beastbot Powerpack
-						i(168057),	-- RUstbolt Requisitions
 					},
 				}),
 				n(150716, {	-- Stolen Royal Vendorbot

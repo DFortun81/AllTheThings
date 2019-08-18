@@ -1580,6 +1580,19 @@ _.NeverImplemented =
 		un(1, i(31498)),	-- Unknown
 		un(1, i(31500)),	-- Unknown
 		un(1, i(31502)),	-- Unknown
+		un(1, i(165884)),	-- Treasure Map of molten clay
+		un(1, i(165899)),	-- Treasure Map of whispering reef
+		un(1, i(165900)),	-- Treasure Map of verdant wilds
+		un(1, i(165901)),	-- Treasure Map of ungol ruins
+		un(1, i(165902)),	-- Treasure Map of rotting mire
+		un(1, i(165903)),	-- Treasure Map of dread chain
+		un(1, i(165904)),	-- Treasure Map of havenswood
+		un(1, i(165905)),	-- Treasure Map of jorundall
+		un(1, i(165906)),	-- Treasure Map of skittering hollow
+		un(1, i(168822)),	-- Unknown
+		un(1, i(168825)),	-- Unknown
+		un(1, i(168828)),	-- Unknown
+		un(1, i(169192)),	-- Unknown
 		un(1, i(78892)),	-- Perfect Geode (PTR Only)
 		un(1, i(31503)),	-- Unknown
 		un(1, i(107474)),	-- ph6 engorged innards
