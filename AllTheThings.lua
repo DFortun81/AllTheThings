@@ -11989,8 +11989,13 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			self:SetMovable(true);
 			self:ClearAllPoints();
 			if visible and self.cachedTSMFrame then
-				self:SetPoint("TOPLEFT", self.cachedTSMFrame, "TOPRIGHT", 0, 0);
-				self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
+				if self.cachedTSMFrame.queue and self.cachedTSMFrame.queue:IsShown() then
+					self:SetPoint("TOPLEFT", self.cachedTSMFrame.queue, "TOPRIGHT", 0, 0);
+					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame.queue, "BOTTOMRIGHT", 0, 0);
+				else
+					self:SetPoint("TOPLEFT", self.cachedTSMFrame, "TOPRIGHT", 0, 0);
+					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
+				end
 				self:SetMovable(false);
 			elseif TradeSkillFrame then
 				-- Default Alignment on the WoW UI.
@@ -12104,6 +12109,45 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						return self.OldNewElement(...);
 					end
 				end
+			end
+		elseif TSMCraftingTradeSkillFrame then
+			if not self.cachedTSMFrame then
+				local f = TSMCraftingTradeSkillFrame;
+				self.cachedTSMFrame = f;
+				local oldSetVisible = f.SetVisible;
+				local oldShow = f.Show;
+				local oldHide = f.Hide;
+				f.SetVisible = function(s, visible)
+					oldSetVisible(s, visible);
+					self:SetTSMCraftingVisible(visible);
+				end
+				f.Hide = function(s)
+					oldHide(s);
+					self:SetTSMCraftingVisible(false);
+				end
+				f.Show = function(s)
+					oldShow(s);
+					self:SetTSMCraftingVisible(true);
+				end
+				if f.queueBtn then
+					local setScript = f.queueBtn.SetScript;
+					f.queueBtn.SetScript = function(s, e, callback)
+						if e == "OnClick" then
+							setScript(s, e, function(...)
+								if callback then callback(...); end
+								
+								local thing = self.TSMCraftingVisible;
+								self.TSMCraftingVisible = nil;
+								self:SetTSMCraftingVisible(thing);
+							end);
+						else
+							setScript(s, e, callback);
+						end
+					end
+					f.queueBtn:SetScript("OnClick", f.queueBtn:GetScript("OnClick"));
+				end
+				self:SetTSMCraftingVisible(f:IsShown());
+				return;
 			end
 		end
 		
