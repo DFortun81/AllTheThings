@@ -9,9 +9,6 @@ _.GearSets =
 		-- Note: [As of August 18th 110 trials have been implemented and use same itemID's as boosting]
 			["description"] = "These are gained by creating a Level 110 Trial of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",
 			["icon"] = "Interface\\Icons\\achievement_level_110",
-			["maps"] = {
-				--907,	-- Trials
-			},
 			["lvl"] = 110,
 		}),
 	}),
