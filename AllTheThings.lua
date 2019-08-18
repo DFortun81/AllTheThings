@@ -11842,6 +11842,7 @@ end);
 app:GetWindow("Tradeskills", UIParent, function(self, ...)
 	if not self.initialized then
 		self.initialized = true;
+		self:SetMovable(false);
 		self:SetUserPlaced(false);
 		self:SetClampedToScreen(false);
 		self:RegisterEvent("TRADE_SKILL_SHOW");
@@ -11985,15 +11986,19 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				return;
 			end
 			self.TSMCraftingVisible = visible;
+			self:SetMovable(true);
 			self:ClearAllPoints();
 			if visible and self.cachedTSMFrame then
 				self:SetPoint("TOPLEFT", self.cachedTSMFrame, "TOPRIGHT", 0, 0);
 				self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
+				self:SetMovable(false);
 			elseif TradeSkillFrame then
 				-- Default Alignment on the WoW UI.
 				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
 				self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+				self:SetMovable(false);
 			else
+				self:SetMovable(false);
 				StartCoroutine("TSMWHY", function()
 					while InCombatLockdown() or not TradeSkillFrame do coroutine.yield(); end
 					StartCoroutine("TSMWHYPT2", function()
