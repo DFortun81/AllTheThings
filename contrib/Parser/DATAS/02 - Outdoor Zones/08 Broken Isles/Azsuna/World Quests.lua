@@ -656,6 +656,9 @@ _.Zones =
 				n(-384, {	-- Neck
 					i(134319),	-- Depleted Mana Crystal Pendant
 				}),
+				n(-385, {	-- Finger
+					i(134245),	-- Nazjatar Manapearl Ring
+				}),
 				n(-386,  {	-- Trinkets
 					i(134234),	-- Barnacled Azsharan Insignia
 					i(134248),	-- Leycoral Shard
@@ -663,14 +666,12 @@ _.Zones =
 				}),
 				n(-387,  {	-- Relics
 					i(141273),	-- Echo of Eons
+					i(143702),	-- Eternity of Wisdom
+					i(141274),	-- Frozen Ley Scar
 					i(141257),	-- Roar of the Ocean
 					i(141259),	-- Seawitch's Foci
 					i(143684),	-- Slavemaster's Malevolence
 					i(141258),	-- Whirlpool Seed
-					i(143702),	-- Eternity of Wisdome
-				}),
-				n(-385, {	-- Finger
-					i(134245),	-- Nazjatar Manapearl Ring
 				}),
 			}),
 		}),
