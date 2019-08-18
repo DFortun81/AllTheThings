@@ -410,10 +410,13 @@ _.Zones =
 						i(54601, {	-- Pattern: Belt of the Depths
 							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
 						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						i(68199, {	-- Pattern: Black Embersilk Gown
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
 						i(54603, {	-- Pattern: Breeches of Mended Nightmares
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						}),
+						i(54602, {	-- Pattern: Dreamless Belt
 							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
 						}),
 						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
@@ -421,9 +424,6 @@ _.Zones =
 						}),
 						i(54605, {	-- Pattern: Illusionary Bag
 							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(68199, {	-- Pattern: Black Embersilk Gown
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
 						i(54600, {	-- Pattern: Powerful Ghostly Spellthread
 							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
@@ -449,11 +449,21 @@ _.Zones =
 						i(54598, {	-- Pattern: Vicious Fireweave Robe
 							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
-						i(6270),	-- Pattern: Blue Linen Vest
-						i(6274),	-- Pattern: Blue Overalls
-						i(10314),	-- Pattern: Lavender Mageweave Shirt
-						i(10317),	-- Pattern: Pink Mageweave Shirt
-						i(5772),	-- Pattern: Red Woolen Bag
+						i(6270, {	-- Pattern: Blue Linen Vest
+							["isLimited"] = true,
+						}),
+						i(6274, {	-- Pattern: Blue Overalls
+							["isLimited"] = true,
+						}),
+						i(10314, {	-- Pattern: Lavender Mageweave Shirt
+							["isLimited"] = true,
+						}),
+						i(10317, {	-- Pattern: Pink Mageweave Shirt
+							["isLimited"] = true,
+						}),
+						i(5772, {	-- Pattern: Red Woolen Bag
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(12793,  {	-- Brave Stonehide <Accessories Quartermaster>
@@ -466,14 +476,14 @@ _.Zones =
 						i(15197, {	-- Scout's Tabard
 							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 						}),
-						un(2, i(18834)),	-- Insignia of the Horde [Warrior]
-						un(2, i(18845)),	-- Insignia of the Horde [Shaman]
-						un(2, i(18846)),	-- Insignia of the Horde [Hunter]
-						un(2, i(18849)),	-- Insignia of the Horde [Rogue]
-						un(2, i(18850)),	-- Insignia of the Horde [Mage]
-						un(2, i(18851)),	-- Insignia of the Horde [Priest]
-						un(2, i(18852)),	-- Insignia of the Horde [Warlock]
-						un(2, i(18853)),	-- Insignia of the Horde [Druid]
+						un(2, i(18834)),	-- Insignia of the Horde (Warrior)
+						un(2, i(18845)),	-- Insignia of the Horde (Shaman)
+						un(2, i(18846)),	-- Insignia of the Horde (Hunter)
+						un(2, i(18849)),	-- Insignia of the Horde (Rogue)
+						un(2, i(18850)),	-- Insignia of the Horde (Mage)
+						un(2, i(18851)),	-- Insignia of the Horde (Priest)
+						un(2, i(18852)),	-- Insignia of the Horde (Warlock)
+						un(2, i(18853)),	-- Insignia of the Horde (Druid)
 						un(2, i(28246)),	-- Band of Triumph
 						un(2, i(28247)),	-- Band of Dominance
 						un(2, i(15200)),	-- Senior Sergeant's Insignia
@@ -538,7 +548,7 @@ _.Zones =
 					},
 				}),
 				n(46593,  {	-- Doris Volanthius >S9< Elite <Vicious Gladiator>
-					["u"] = 43,
+					["u"] = 43,	-- Removed NPCs
 					["coord"] = { 38.8, 69.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1129,7 +1139,9 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(20856),	-- Design: Heavy Golden Necklace of Battle
+						i(20856, {	-- Design: Heavy Golden Necklace of Battle
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(133261, {	-- Feng Su <Cooking Trainer>
@@ -1886,15 +1898,21 @@ _.Zones =
 				n(3335,   {	-- Hagrus <Reagents>
 					["coord"] = { 45.6, 39.0, 86 },
 					["g"] = {
-						i(5643),	-- Recipe: Great Rage Potion
-						i(5640),	-- Recipe: Rage Potion
-					}
+						i(5643, {	-- Recipe: Great Rage Potion
+							["isLimited"] = true,
+						}),
+						i(5640, {	-- Recipe: Rage Potion
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(3316,   {	-- Handor <Cloth & Leather Armor Merchant>
 					["coord"] = { 60.8, 54.0, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12256),	-- Cindercloth Leggings
+						i(12256, {	-- Cindercloth Leggings
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(46556,  {	-- Jamus'Vaz <Valor Quartermaster>
@@ -2111,295 +2129,742 @@ _.Zones =
 						i(78676, {	-- Deep Earth Gloves
 							["cost"] = { { "i", 78855, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
 						}),
-
-
-
-
-				--[[		["cost"] = {
-								{ "i", , 1 },	-- 
-								{ "i", , 1 },	-- 
-							},
+						i(78779, {	-- Deep Earth Grips
+							["cost"] = { { "i", 78865, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
 						}),
-						
-							["cost"] = { { "i", , 1 }, },	-- 
+						i(77014, {	-- Deep Earth Grips
+							["cost"] = { { "i", 78173, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
 						}),
-				--]]
-
-
-						i(77013),	-- Deep Earth Raiment
-						i(77014),	-- Deep Earth Grips
-						i(77015),	-- Deep Earth Headpiece
-						i(77016),	-- Deep Earth Legguards
-						i(77017),	-- Deep Earth Spaulders
-						i(77020),	-- Deep Earth Leggings
-						i(77021),	-- Deep Earth Vestment
-						i(77022),	-- Deep Earth Shoulderwraps
-						i(78704),	-- Spiritwalker's Legguards
-						i(78666),	-- Spiritwalker's Gloves
-						i(78659),	-- Necrotic Boneplate Breastplate
-						i(78660),	-- Deep Earth Robes
-						i(78661),	-- Wyrmstalker's Tunic
-						i(78662),	-- Deep Earth Vestment
-						i(78663),	-- Necrotic Boneplate Chestguard
-						i(78665),	-- Deep Earth Raiment
-						i(78667),	-- Spiritwalker's Grips
-						i(78670),	-- Necrotic Boneplate Gauntlets
-						i(78671),	-- Time Lord's Gloves
-						i(78672),	-- Spiritwalker's Handwraps
-						i(78673),	-- Gloves of Radiant Glory
-						i(78674),	-- Wyrmstalker's Gloves
-						i(78675),	-- Gauntlets of Radiant Glory
-						i(78677),	-- Handguards of Radiant Glory
-						i(78678),	-- Necrotic Boneplate Handguards
-						i(78680),	-- Deep Earth Handwraps
-						i(78681),	-- Gloves of the Faceless Shroud
-						i(78682),	-- Gloves of Dying Light
-						i(78683),	-- Handwraps of Dying Light
-						i(78684),	-- Deep Earth Grips
-						i(78685),	-- Spiritwalker's Headpiece
-						i(78686),	-- Spiritwalker's Helmet
-						i(78687),	-- Necrotic Boneplate Helmet
-						i(78690),	-- Deep Earth Helm
-						i(78691),	-- Spiritwalker's Faceguard
-						i(78692),	-- Headguard of Radiant Glory
-						i(78693),	-- Helmet of Radiant Glory
-						i(78694),	-- Deep Earth Headpiece
-						i(78695),	-- Faceguard of Radiant Glory
-						i(78697),	-- Necrotic Boneplate Faceguard
-						i(78698),	-- Wyrmstalker's Headguard
-						i(78701),	-- Time Lord's Hood
-						i(78702),	-- Hood of the Faceless Shroud
-						i(78703),	-- Hood of Dying Light
-						i(78707),	-- Necrotic Boneplate Greaves
-						i(78709),	-- Wyrmstalker's Legguards
-						i(78710),	-- Deep Earth Legwraps
-						i(78711),	-- Spiritwalker's Kilt
-						i(78712),	-- Legplates of Radiant Glory
-						i(78713),	-- Deep Earth Legguards
-						i(78714),	-- Deep Earth Leggings
-						i(78715),	-- Legguards of Radiant Glory
-						i(78716),	-- Necrotic Boneplate Legguards
-						i(78717),	-- Greaves of Radiant Glory
-						i(78718),	-- Spiritwalker's Legwraps
-						i(78719),	-- Legwraps of Dying Light
-						i(78720),	-- Time Lord's Leggings
-						i(78721),	-- Leggings of the Faceless Shroud
-						i(78722),	-- Leggings of Dying Light
-						i(78723),	-- Spiritwalker's Hauberk
-						i(78724),	-- Spiritwalker's Cuirass
-						i(78725),	-- Spiritwalker's Tunic
-						i(78728),	-- Robes of Dying Light
-						i(78729),	-- Time Lord's Robes
-						i(78730),	-- Robes of the Faceless Shroud
-						i(78731),	-- Robes of Dying Light
-						i(78733),	-- Spiritwalker's Spaulders
-						i(78736),	-- Necrotic Boneplate Pauldrons
-						i(78737),	-- Wyrmstalker's Spaulders
-						i(78739),	-- Spiritwalker's Mantle
-						i(78740),	-- Deep Earth Mantle
-						i(78741),	-- Spiritwalker's Shoulderwraps
-						i(78742),	-- Pauldrons of Radiant Glory
-						i(78743),	-- Deep Earth Spaulders
-						i(78744),	-- Deep Earth Shoulderwraps
-						i(78745),	-- Shoulderguards of Radiant Glory
-						i(78746),	-- Mantle of Radiant Glory
-						i(78747),	-- Mantle of Dying Light
-						i(78748),	-- Time Lord's Mantle
-						i(78749),	-- Mantle of the Faceless Shroud
-						i(78750),	-- Mantle of Dying Light
-						i(78751),	-- Necrotic Boneplate Shoulderguards
-						i(77078),	-- Scintillating Rods
-						i(77079),	-- Hungermouth Wand
-						i(77096),	-- Woundlicker Cover
-						i(77097),	-- Dreamcrusher Drape
-						i(77098),	-- Nanoprecise Cape
-						i(77099),	-- Indefatigable Greatcloak
-						i(77121),	-- Lightwarper Vestments
-						i(77122),	-- Robes of Searing Shadow
-						i(77123),	-- Shining Carapace of Glory
+						i(78684, {	-- Deep Earth Grips
+							["cost"] = { { "i", 78855, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78775, {	-- Deep Earth Handwraps
+							["cost"] = { { "i", 78865, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(76749, {	-- Deep Earth Handwraps
+							["cost"] = { { "i", 78173, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78680, {	-- Deep Earth Handwraps
+							["cost"] = { { "i", 78855, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78789, {	-- Deep Earth Headpiece
+							["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(77015, {	-- Deep Earth Headpiece
+							["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78694, {	-- Deep Earth Headpiece
+							["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78785, {	-- Deep Earth Helm
+							["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(76750, {	-- Deep Earth Helm
+							["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78690, {	-- Deep Earth Helm
+							["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78809, {	-- Deep Earth Leggings
+							["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(77020, {	-- Deep Earth Leggings
+							["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78714, {	-- Deep Earth Leggings
+							["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78808, {	-- Deep Earth Legguards
+							["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(77016, {	-- Deep Earth Legguards
+							["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78713, {	-- Deep Earth Legguards
+							["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78805, {	-- Deep Earth Legwraps
+							["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(76751, {	-- Deep Earth Legwraps
+							["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78710, {	-- Deep Earth Legwraps
+							["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78835, {	-- Deep Earth Mantle
+							["cost"] = { { "i", 78874, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(76753, {	-- Deep Earth Mantle
+							["cost"] = { { "i", 78170, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78740, {	-- Deep Earth Mantle
+							["cost"] = { { "i", 78861, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78760, {	-- Deep Earth Raiment
+							["cost"] = { { "i", 78862, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(77013, {	-- Deep Earth Raiment
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78665, {	-- Deep Earth Raiment
+							["cost"] = { { "i", 78849, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78755, {	-- Deep Earth Robes
+							["cost"] = { { "i", 78862, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(76752, {	-- Deep Earth Robes
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78660, {	-- Deep Earth Robes
+							["cost"] = { { "i", 78849, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78839, {	-- Deep Earth Shoulderwraps
+							["cost"] = { { "i", 78874, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(77022, {	-- Deep Earth Shoulderwraps
+							["cost"] = { { "i", 78170, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78744, {	-- Deep Earth Shoulderwraps
+							["cost"] = { { "i", 78861, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78838, {	-- Deep Earth Spaulders
+							["cost"] = { { "i", 78874, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(77017, {	-- Deep Earth Spaulders
+							["cost"] = { { "i", 78170, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78743, {	-- Deep Earth Spaulders
+							["cost"] = { { "i", 78861, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78757, {	-- Deep Earth Vestment
+							["cost"] = { { "i", 78862, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(77021, {	-- Deep Earth Vestment
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78662, {	-- Deep Earth Vestment
+							["cost"] = { { "i", 78849, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(77185),	-- Demonbone Waistguard
+						i(77321),	-- Dragonbelly Bracers
 						i(77124),	-- Dragonflayer Vest
-						i(77125),	-- Ghostworld Chestguard
-						i(77126),	-- Shadowbinder Chestguard
-						i(77146),	-- Soulgaze Cowl
-						i(77147),	-- Hood of Hidden Flesh
-						i(77148),	-- Nocturnal Gaze
-						i(77149),	-- Helmet of Perpetual Rebirth
-						i(77150),	-- Zeherah's Dragonskull Crown
-						i(77151),	-- Wolfdream Circlet
-						i(77153),	-- Glowing Wings of Hope
-						i(77155),	-- Visage of Petrification
-						i(77156),	-- Jaw of Repudiation
-						i(77157),	-- The Hands of Gilly
+						i(77097),	-- Dreamcrusher Drape
+						i(77111),	-- Emergency Descent Loop
+						i(78790, {	-- Faceguard of Radiant Glory
+							["cost"] = { { "i", 78869, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(77005, {	-- Faceguard of Radiant Glory
+							["cost"] = { { "i", 78182, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(78695, {	-- Faceguard of Radiant Glory
+							["cost"] = { { "i", 78850, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(77117),	-- Fire of the Deep
+						i(77316),	-- Flashing Bracers of Warmth
+						i(77186),	-- Forgesmelter Waistplate
 						i(77160),	-- Fungus-Born Gloves
-						i(77161),	-- Lightfinger Handwraps
-						i(77163),	-- Gloves of Ghostly Dreams
-						i(77164),	-- Gleaming Grips of Mending
-						i(77165),	-- Grimfist Crushers
 						i(77166),	-- Gauntlets of Feathery Blows
-						i(77169),	-- Silver Sabatons of Fury
-						i(77170),	-- Kneebreaker Boots
-						i(77173),	-- Rooftop Griptoes
-						i(77174),	-- Sabatons of the Graceful Spirit
+						i(78770, {	-- Gauntlets of Radiant Glory
+							["cost"] = { { "i", 78866, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(76875, {	-- Gauntlets of Radiant Glory
+							["cost"] = { { "i", 78183, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(78675, {	-- Gauntlets of Radiant Glory
+							["cost"] = { { "i", 78853, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(77125),	-- Ghostworld Chestguard
+						i(77183),	-- Girdle of Shamanic Fury
+						i(77164),	-- Gleaming Grips of Mending
+						i(78777, {	-- Gloves of Dying Light
+							["cost"] = { { "i", 78866, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(76348, {	-- Gloves of Dying Light
+							["cost"] = { { "i", 78183, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(78682, {	-- Gloves of Dying Light
+							["cost"] = { { "i", 78853, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(77163),	-- Gloves of Ghostly Dreams
+						i(78768, {	-- Gloves of Radiant Glory
+							["cost"] = { { "i", 78866, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(76766, {	-- Gloves of Radiant Glory
+							["cost"] = { { "i", 78183, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(78673, {	-- Gloves of Radiant Glory
+							["cost"] = { { "i", 78853, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(78776, {	-- Gloves of the Faceless Shroud
+							["cost"] = { { "i", 78866, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(76343, {	-- Gloves of the Faceless Shroud
+							["cost"] = { { "i", 78183, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(78681, {	-- Gloves of the Faceless Shroud
+							["cost"] = { { "i", 78853, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(77153),	-- Glowing Wings of Hope
+						i(78812, {	-- Greaves of Radiant Glory
+							["cost"] = { { "i", 78872, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(76768, {	-- Greaves of Radiant Glory
+							["cost"] = { { "i", 78181, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78717, {	-- Greaves of Radiant Glory
+							["cost"] = { { "i", 78856, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(77165),	-- Grimfist Crushers
+						i(77092),	-- Guardspike Choker
+						i(78772, {	-- Handguards of Radiant Glory
+							["cost"] = { { "i", 78866, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(77004, {	-- Handguards of Radiant Glory
+							["cost"] = { { "i", 78183, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(78677, {	-- Handguards of Radiant Glory
+							["cost"] = { { "i", 78853, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(78778, {	-- Handwraps of Dying Light
+							["cost"] = { { "i", 78866, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(76357, {	-- Handwraps of Dying Light
+							["cost"] = { { "i", 78183, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(78683, {	-- Handwraps of Dying Light
+							["cost"] = { { "i", 78853, 1 }, },	-- Gauntlets of the Corrupted Conqueror
+						}),
+						i(78787, {	-- Headguard of Radiant Glory
+							["cost"] = { { "i", 78869, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(76767, {	-- Headguard of Radiant Glory
+							["cost"] = { { "i", 78182, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(78692, {	-- Headguard of Radiant Glory
+							["cost"] = { { "i", 78850, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(77317),	-- Heartcrusher Wristplates
+						i(77149),	-- Helmet of Perpetual Rebirth
+						i(78788, {	-- Helmet of Radiant Glory
+							["cost"] = { { "i", 78869, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(76876, {	-- Helmet of Radiant Glory
+							["cost"] = { { "i", 78182, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(78693, {	-- Helmet of Radiant Glory
+							["cost"] = { { "i", 78850, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(78798, {	-- Hood of Dying Light
+							["cost"] = { { "i", 78869, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(76347, {	-- Hood of Dying Light
+							["cost"] = { { "i", 78182, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(78703, {	-- Hood of Dying Light
+							["cost"] = { { "i", 78850, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(77147),	-- Hood of Hidden Flesh
+						i(78797, {	-- Hood of the Faceless Shroud
+							["cost"] = { { "i", 78869, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(76342, {	-- Hood of the Faceless Shroud
+							["cost"] = { { "i", 78182, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(78702, {	-- Hood of the Faceless Shroud
+							["cost"] = { { "i", 78850, 1 }, },	-- Crown of the Corrupted Conqueror
+						}),
+						i(77079),	-- Hungermouth Wand
+						i(77099),	-- Indefatigable Greatcloak
+						i(77156),	-- Jaw of Repudiation
 						i(77176),	-- Kavan's Forsaken Treads
+						i(77113),	-- Kiroptyric Sigil
+						i(77170),	-- Kneebreaker Boots
+						i(78817, {	-- Leggings of Dying Light
+							["cost"] = { { "i", 78872, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(76346, {	-- Leggings of Dying Light
+							["cost"] = { { "i", 78181, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78722, {	-- Leggings of Dying Light
+							["cost"] = { { "i", 78856, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78816, {	-- Leggings of the Faceless Shroud
+							["cost"] = { { "i", 78872, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(76341, {	-- Leggings of the Faceless Shroud
+							["cost"] = { { "i", 78181, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78721, {	-- Leggings of the Faceless Shroud
+							["cost"] = { { "i", 78856, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78810, {	-- Legguards of Radiant Glory
+							["cost"] = { { "i", 78872, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(77006, {	-- Legguards of Radiant Glory
+							["cost"] = { { "i", 78181, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78715, {	-- Legguards of Radiant Glory
+							["cost"] = { { "i", 78856, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78807, {	-- Legplates of Radiant Glory
+							["cost"] = { { "i", 78872, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(76877, {	-- Legplates of Radiant Glory
+							["cost"] = { { "i", 78181, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78712, {	-- Legplates of Radiant Glory
+							["cost"] = { { "i", 78856, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78814, {	-- Legwraps of Dying Light
+							["cost"] = { { "i", 78872, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(76359, {	-- Legwraps of Dying Light
+							["cost"] = { { "i", 78181, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(78719, {	-- Legwraps of Dying Light
+							["cost"] = { { "i", 78856, 1 }, },	-- Leggings of the Corrupted Conqueror
+						}),
+						i(77161),	-- Lightfinger Handwraps
+						i(77121),	-- Lightwarper Vestments
+						i(77320),	-- Luminescent Bracers
+						i(78845, {	-- Mantle of Dying Light
+							["cost"] = { { "i", 78875, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(78842, {	-- Mantle of Dying Light
+							["cost"] = { { "i", 78875, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(76344, {	-- Mantle of Dying Light
+							["cost"] = { { "i", 78180, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(76361, {	-- Mantle of Dying Light
+							["cost"] = { { "i", 78180, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(78750, {	-- Mantle of Dying Light
+							["cost"] = { { "i", 78859, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(78747, {	-- Mantle of Dying Light
+							["cost"] = { { "i", 78859, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(78841, {	-- Mantle of Radiant Glory
+							["cost"] = { { "i", 78875, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(76769, {	-- Mantle of Radiant Glory
+							["cost"] = { { "i", 78180, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(78746, {	-- Mantle of Radiant Glory
+							["cost"] = { { "i", 78859, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(78844, {	-- Mantle of the Faceless Shroud
+							["cost"] = { { "i", 78875, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(76339, {	-- Mantle of the Faceless Shroud
+							["cost"] = { { "i", 78180, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(78749, {	-- Mantle of the Faceless Shroud
+							["cost"] = { { "i", 78859, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(77098),	-- Nanoprecise Cape
+						i(77090),	-- Necklace of Black Dragon's Teeth
+						i(78754, {	-- Necrotic Boneplate Breastplate
+							["cost"] = { { "i", 78862, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(76974, {	-- Necrotic Boneplate Breastplate
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78659, {	-- Necrotic Boneplate Breastplate
+							["cost"] = { { "i", 78849, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78758, {	-- Necrotic Boneplate Chestguard
+							["cost"] = { { "i", 78862, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(77008, {	-- Necrotic Boneplate Chestguard
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78663, {	-- Necrotic Boneplate Chestguard
+							["cost"] = { { "i", 78849, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78792, {	-- Necrotic Boneplate Faceguard
+							["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(77010, {	-- Necrotic Boneplate Faceguard
+							["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78697, {	-- Necrotic Boneplate Faceguard
+							["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78765, {	-- Necrotic Boneplate Gauntlets
+							["cost"] = { { "i", 78865, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(76975, {	-- Necrotic Boneplate Gauntlets
+							["cost"] = { { "i", 78173, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78670, {	-- Necrotic Boneplate Gauntlets
+							["cost"] = { { "i", 78855, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78802, {	-- Necrotic Boneplate Greaves
+							["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(76977, {	-- Necrotic Boneplate Greaves
+							["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78707, {	-- Necrotic Boneplate Greaves
+							["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78773, {	-- Necrotic Boneplate Handguards
+							["cost"] = { { "i", 78865, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(77009, {	-- Necrotic Boneplate Handguards
+							["cost"] = { { "i", 78173, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78678, {	-- Necrotic Boneplate Handguards
+							["cost"] = { { "i", 78855, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78782, {	-- Necrotic Boneplate Helmet
+							["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(76976, {	-- Necrotic Boneplate Helmet
+							["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78687, {	-- Necrotic Boneplate Helmet
+							["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78811, {	-- Necrotic Boneplate Legguards
+							["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(77011, {	-- Necrotic Boneplate Legguards
+							["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78716, {	-- Necrotic Boneplate Legguards
+							["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78831, {	-- Necrotic Boneplate Pauldrons
+							["cost"] = { { "i", 78874, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(76978, {	-- Necrotic Boneplate Pauldrons
+							["cost"] = { { "i", 78170, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78736, {	-- Necrotic Boneplate Pauldrons
+							["cost"] = { { "i", 78861, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78846, {	-- Necrotic Boneplate Shoulderguards
+							["cost"] = { { "i", 78874, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(77012, {	-- Necrotic Boneplate Shoulderguards
+							["cost"] = { { "i", 78170, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78751, {	-- Necrotic Boneplate Shoulderguards
+							["cost"] = { { "i", 78861, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(77148),	-- Nocturnal Gaze
+						i(77088),	-- Opal of the Secret Order
+						i(78837, {	-- Pauldrons of Radiant Glory
+							["cost"] = { { "i", 78875, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(76878, {	-- Pauldrons of Radiant Glory
+							["cost"] = { { "i", 78180, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(78742, {	-- Pauldrons of Radiant Glory
+							["cost"] = { { "i", 78859, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(77115),	-- Reflection of the Light
+						i(77110),	-- Ring of Torn Flesh
+						i(78826, {	-- Robes of Dying Light
+							["cost"] = { { "i", 78863, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(78823, {	-- Robes of Dying Light
+							["cost"] = { { "i", 78863, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(76345, {	-- Robes of Dying Light
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(76360, {	-- Robes of Dying Light
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(78731, {	-- Robes of Dying Light
+							["cost"] = { { "i", 78847, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(78728, {	-- Robes of Dying Light
+							["cost"] = { { "i", 78847, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(77122),	-- Robes of Searing Shadow
+						i(78825, {	-- Robes of the Faceless Shroud
+							["cost"] = { { "i", 78863, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(76340, {	-- Robes of the Faceless Shroud
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(78730, {	-- Robes of the Faceless Shroud
+							["cost"] = { { "i", 78847, 1 }, },	-- Chest of the Corrupted Conqueror
+						}),
+						i(77173),	-- Rooftop Griptoes
+						i(77116),	-- Rotting Skull
+						i(77174),	-- Sabatons of the Graceful Spirit
+						i(77078),	-- Scintillating Rods
+						i(77108),	-- Seal of the Grand Architect
+						i(77126),	-- Shadowbinder Chestguard
+						i(77123),	-- Shining Carapace of Glory
+						i(78840, {	-- Shoulderguards of Radiant Glory
+							["cost"] = { { "i", 78875, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(77007, {	-- Shoulderguards of Radiant Glory
+							["cost"] = { { "i", 78180, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(78745, {	-- Shoulderguards of Radiant Glory
+							["cost"] = { { "i", 78859, 1 }, },	-- Shoulders of the Corrupted Conqueror
+						}),
+						i(77112),	-- Signet of the Resolute
+						i(77169),	-- Silver Sabatons of Fury
+						i(77146),	-- Soulgaze Cowl
+						i(78819, {	-- Spiritwalker's Cuirass
+							["cost"] = { { "i", 78864, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(77040, {	-- Spiritwalker's Cuirass
+							["cost"] = { { "i", 78179, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78724, {	-- Spiritwalker's Cuirass
+							["cost"] = { { "i", 78848, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78786, {	-- Spiritwalker's Faceguard
+							["cost"] = { { "i", 78870, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(76758, {	-- Spiritwalker's Faceguard
+							["cost"] = { { "i", 78177, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78691, {	-- Spiritwalker's Faceguard
+							["cost"] = { { "i", 78851, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78761, {	-- Spiritwalker's Gloves
+							["cost"] = { { "i", 78867, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(77038, {	-- Spiritwalker's Gloves
+							["cost"] = { { "i", 78178, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78666, {	-- Spiritwalker's Gloves
+							["cost"] = { { "i", 78854, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78762, {	-- Spiritwalker's Grips
+							["cost"] = { { "i", 78867, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(77041, {	-- Spiritwalker's Grips
+							["cost"] = { { "i", 78178, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78667, {	-- Spiritwalker's Grips
+							["cost"] = { { "i", 78854, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78767, {	-- Spiritwalker's Handwraps
+							["cost"] = { { "i", 78867, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(76757, {	-- Spiritwalker's Handwraps
+							["cost"] = { { "i", 78178, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78672, {	-- Spiritwalker's Handwraps
+							["cost"] = { { "i", 78854, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78818, {	-- Spiritwalker's Hauberk
+							["cost"] = { { "i", 78864, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(77039, {	-- Spiritwalker's Hauberk
+							["cost"] = { { "i", 78179, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78723, {	-- Spiritwalker's Hauberk
+							["cost"] = { { "i", 78848, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78780, {	-- Spiritwalker's Headpiece
+							["cost"] = { { "i", 78870, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(77037, {	-- Spiritwalker's Headpiece
+							["cost"] = { { "i", 78177, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78685, {	-- Spiritwalker's Headpiece
+							["cost"] = { { "i", 78851, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78781, {	-- Spiritwalker's Helmet
+							["cost"] = { { "i", 78870, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(77042, {	-- Spiritwalker's Helmet
+							["cost"] = { { "i", 78177, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78686, {	-- Spiritwalker's Helmet
+							["cost"] = { { "i", 78851, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78806, {	-- Spiritwalker's Kilt
+							["cost"] = { { "i", 78873, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(77036, {	-- Spiritwalker's Kilt
+							["cost"] = { { "i", 78176, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78711, {	-- Spiritwalker's Kilt
+							["cost"] = { { "i", 78857, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78799, {	-- Spiritwalker's Legguards
+							["cost"] = { { "i", 78873, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(77043, {	-- Spiritwalker's Legguards
+							["cost"] = { { "i", 78176, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78704, {	-- Spiritwalker's Legguards
+							["cost"] = { { "i", 78857, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78813, {	-- Spiritwalker's Legwraps
+							["cost"] = { { "i", 78873, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(76759, {	-- Spiritwalker's Legwraps
+							["cost"] = { { "i", 78176, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78718, {	-- Spiritwalker's Legwraps
+							["cost"] = { { "i", 78857, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78834, {	-- Spiritwalker's Mantle
+							["cost"] = { { "i", 78876, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(76760, {	-- Spiritwalker's Mantle
+							["cost"] = { { "i", 78175, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78739, {	-- Spiritwalker's Mantle
+							["cost"] = { { "i", 78860, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78836, {	-- Spiritwalker's Shoulderwraps
+							["cost"] = { { "i", 78876, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(77035, {	-- Spiritwalker's Shoulderwraps
+							["cost"] = { { "i", 78175, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78741, {	-- Spiritwalker's Shoulderwraps
+							["cost"] = { { "i", 78860, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78828, {	-- Spiritwalker's Spaulders
+							["cost"] = { { "i", 78876, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(77044, {	-- Spiritwalker's Spaulders
+							["cost"] = { { "i", 78175, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78733, {	-- Spiritwalker's Spaulders
+							["cost"] = { { "i", 78860, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78820, {	-- Spiritwalker's Tunic
+							["cost"] = { { "i", 78864, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(76756, {	-- Spiritwalker's Tunic
+							["cost"] = { { "i", 78179, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78725, {	-- Spiritwalker's Tunic
+							["cost"] = { { "i", 78848, 1 }, },	-- Chest of the Corrupted Protector
+						}),
 						i(77177),	-- Splinterfoot Sandals
 						i(77179),	-- Tentacular Belt
-						i(77183),	-- Girdle of Shamanic Fury
-						i(77185),	-- Demonbone Waistguard
-						i(77186),	-- Forgesmelter Waistplate
+						i(77157),	-- The Hands of Gilly
+						i(77089),	-- Threadlinked Chain
+						i(78766, {	-- Time Lord's Gloves
+							["cost"] = { { "i", 78865, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(76212, {	-- Time Lord's Gloves
+							["cost"] = { { "i", 78173, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78671, {	-- Time Lord's Gloves
+							["cost"] = { { "i", 78855, 1 }, },	-- Gauntlets of the Corrupted Vanquisher
+						}),
+						i(78796, {	-- Time Lord's Hood
+							["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(76213, {	-- Time Lord's Hood
+							["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78701, {	-- Time Lord's Hood
+							["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
+						}),
+						i(78815, {	-- Time Lord's Leggings
+							["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(76214, {	-- Time Lord's Leggings
+							["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78720, {	-- Time Lord's Leggings
+							["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
+						}),
+						i(78843, {	-- Time Lord's Mantle
+							["cost"] = { { "i", 78874, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(76216, {	-- Time Lord's Mantle
+							["cost"] = { { "i", 78170, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78748, {	-- Time Lord's Mantle
+							["cost"] = { { "i", 78861, 1 }, },	-- Shoulders of the Corrupted Vanquisher
+						}),
+						i(78824, {	-- Time Lord's Robes
+							["cost"] = { { "i", 78862, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(76215, {	-- Time Lord's Robes
+							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
+						i(78729, {	-- Time Lord's Robes
+							["cost"] = { { "i", 78849, 1 }, },	-- Chest of the Corrupted Vanquisher
+						}),
 						i(77187),	-- Vestal's Irrepressible Girdle
-						i(77316),	-- Flashing Bracers of Warmth
-						i(77317),	-- Heartcrusher Wristplates
-						i(77320),	-- Luminescent Bracers
-						i(77321),	-- Dragonbelly Bracers
-						i(76212),	-- Time Lord's Gloves
-						i(76214),	-- Time Lord's Leggings
-						i(76215),	-- Time Lord's Robes
-						i(76216),	-- Time Lord's Mantle
-						i(76339),	-- Mantle of the Faceless Shroud
-						i(76340),	-- Robes of the Faceless Shroud
-						i(76341),	-- Leggings of the Faceless Shroud
-						i(76342),	-- Hood of the Faceless Shroud
-						i(76343),	-- Gloves of the Faceless Shroud
-						i(76213),	-- Time Lord's Hood
-						i(76344),	-- Mantle of Dying Light
-						i(76345),	-- Robes of Dying Light
-						i(76346),	-- Leggings of Dying Light
-						i(76347),	-- Hood of Dying Light
-						i(76348),	-- Gloves of Dying Light
-						i(76357),	-- Handwraps of Dying Light
-						i(76359),	-- Legwraps of Dying Light
-						i(76360),	-- Robes of Dying Light
-						i(76361),	-- Mantle of Dying Light
-						i(76749),	-- Deep Earth Handwraps
-						i(76750),	-- Deep Earth Helm
-						i(76751),	-- Deep Earth Legwraps
-						i(76752),	-- Deep Earth Robes
-						i(76753),	-- Deep Earth Mantle
-						i(76756),	-- Spiritwalker's Tunic
-						i(76757),	-- Spiritwalker's Handwraps
-						i(76758),	-- Spiritwalker's Faceguard
-						i(76759),	-- Spiritwalker's Legwraps
-						i(76760),	-- Spiritwalker's Mantle
-						i(76766),	-- Gloves of Radiant Glory
-						i(76767),	-- Headguard of Radiant Glory
-						i(76768),	-- Greaves of Radiant Glory
-						i(76769),	-- Mantle of Radiant Glory
-						i(76875),	-- Gauntlets of Radiant Glory
-						i(76876),	-- Helmet of Radiant Glory
-						i(76877),	-- Legplates of Radiant Glory
-						i(76878),	-- Pauldrons of Radiant Glory
-						i(76974),	-- Necrotic Boneplate Breastplate
-						i(76975),	-- Necrotic Boneplate Gauntlets
-						i(76976),	-- Necrotic Boneplate Helmet
-						i(76977),	-- Necrotic Boneplate Greaves
-						i(76978),	-- Necrotic Boneplate Pauldrons
-						i(77004),	-- Handguards of Radiant Glory
-						i(77005),	-- Faceguard of Radiant Glory
-						i(77006),	-- Legguards of Radiant Glory
-						i(77007),	-- Shoulderguards of Radiant Glory
-						i(77008),	-- Necrotic Boneplate Chestguard
-						i(77009),	-- Necrotic Boneplate Handguards
-						i(77010),	-- Necrotic Boneplate Faceguard
-						i(77011),	-- Necrotic Boneplate Legguards
-						i(77012),	-- Necrotic Boneplate Shoulderguards
-						i(77028),	-- Wyrmstalker's Tunic
-						i(77029),	-- Wyrmstalker's Gloves
-						i(77030),	-- Wyrmstalker's Headguard
-						i(77031),	-- Wyrmstalker's Legguards
-						i(77032),	-- Wyrmstalker's Spaulders
-						i(77035),	-- Spiritwalker's Shoulderwraps
-						i(77036),	-- Spiritwalker's Kilt
-						i(77037),	-- Spiritwalker's Headpiece
-						i(77038),	-- Spiritwalker's Gloves
-						i(77039),	-- Spiritwalker's Hauberk
-						i(77040),	-- Spiritwalker's Cuirass
-						i(77041),	-- Spiritwalker's Grips
-						i(77042),	-- Spiritwalker's Helmet
-						i(77043),	-- Spiritwalker's Legguards
-						i(77044),	-- Spiritwalker's Spaulders
-						i(78799),	-- Spiritwalker's Legguards
-						i(78754),	-- Necrotic Boneplate Breastplate
-						i(78755),	-- Deep Earth Robes
-						i(78756),	-- Wyrmstalker's Tunic
-						i(78757),	-- Deep Earth Vestment
-						i(78758),	-- Necrotic Boneplate Chestguard
-						i(78760),	-- Deep Earth Raiment
-						i(78761),	-- Spiritwalker's Gloves
-						i(78762),	-- Spiritwalker's Grips
-						i(78765),	-- Necrotic Boneplate Gauntlets
-						i(78766),	-- Time Lord's Gloves
-						i(78767),	-- Spiritwalker's Handwraps
-						i(78768),	-- Gloves of Radiant Glory
-						i(78769),	-- Wyrmstalker's Gloves
-						i(78770),	-- Gauntlets of Radiant Glory
-						i(78772),	-- Handguards of Radiant Glory
-						i(78773),	-- Necrotic Boneplate Handguards
-						i(78775),	-- Deep Earth Handwraps
-						i(78776),	-- Gloves of the Faceless Shroud
-						i(78777),	-- Gloves of Dying Light
-						i(78778),	-- Handwraps of Dying Light
-						i(78779),	-- Deep Earth Grips
-						i(78780),	-- Spiritwalker's Headpiece
-						i(78781),	-- Spiritwalker's Helmet
-						i(78782),	-- Necrotic Boneplate Helmet
-						i(78785),	-- Deep Earth Helm
-						i(78786),	-- Spiritwalker's Faceguard
-						i(78787),	-- Headguard of Radiant Glory
-						i(78788),	-- Helmet of Radiant Glory
-						i(78789),	-- Deep Earth Headpiece
-						i(78790),	-- Faceguard of Radiant Glory
-						i(78792),	-- Necrotic Boneplate Faceguard
-						i(78793),	-- Wyrmstalker's Headguard
-						i(78796),	-- Time Lord's Hood
-						i(78797),	-- Hood of the Faceless Shroud
-						i(78798),	-- Hood of Dying Light
-						i(78802),	-- Necrotic Boneplate Greaves
-						i(78804),	-- Wyrmstalker's Legguards
-						i(78805),	-- Deep Earth Legwraps
-						i(78806),	-- Spiritwalker's Kilt
-						i(78807),	-- Legplates of Radiant Glory
-						i(78808),	-- Deep Earth Legguards
-						i(78809),	-- Deep Earth Leggings
-						i(78810),	-- Legguards of Radiant Glory
-						i(78811),	-- Necrotic Boneplate Legguards
-						i(78812),	-- Greaves of Radiant Glory
-						i(78813),	-- Spiritwalker's Legwraps
-						i(78814),	-- Legwraps of Dying Light
-						i(78815),	-- Time Lord's Leggings
-						i(78816),	-- Leggings of the Faceless Shroud
-						i(78817),	-- Leggings of Dying Light
-						i(78818),	-- Spiritwalker's Hauberk
-						i(78819),	-- Spiritwalker's Cuirass
-						i(78820),	-- Spiritwalker's Tunic
-						i(78823),	-- Robes of Dying Light
-						i(78824),	-- Time Lord's Robes
-						i(78825),	-- Robes of the Faceless Shroud
-						i(78826),	-- Robes of Dying Light
-						i(78828),	-- Spiritwalker's Spaulders
-						i(78831),	-- Necrotic Boneplate Pauldrons
-						i(78832),	-- Wyrmstalker's Spaulders
-						i(78834),	-- Spiritwalker's Mantle
-						i(78835),	-- Deep Earth Mantle
-						i(78836),	-- Spiritwalker's Shoulderwraps
-						i(78837),	-- Pauldrons of Radiant Glory
-						i(78838),	-- Deep Earth Spaulders
-						i(78839),	-- Deep Earth Shoulderwraps
-						i(78840),	-- Shoulderguards of Radiant Glory
-						i(78841),	-- Mantle of Radiant Glory
-						i(78842),	-- Mantle of Dying Light
-						i(78843),	-- Time Lord's Mantle
-						i(78844),	-- Mantle of the Faceless Shroud
-						i(78845),	-- Mantle of Dying Light
-						i(78846),	-- Necrotic Boneplate Shoulderguards
+						i(77155),	-- Visage of Petrification
+						i(77151),	-- Wolfdream Circlet
+						i(77096),	-- Woundlicker Cover
+						i(78769, {	-- Wyrmstalker's Gloves
+							["cost"] = { { "i", 78867, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(77029, {	-- Wyrmstalker's Gloves
+							["cost"] = { { "i", 78178, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78674, {	-- Wyrmstalker's Gloves
+							["cost"] = { { "i", 78854, 1 }, },	-- Gauntlets of the Corrupted Protector
+						}),
+						i(78793, {	-- Wyrmstalker's Headguard
+							["cost"] = { { "i", 78870, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(77030, {	-- Wyrmstalker's Headguard
+							["cost"] = { { "i", 78177, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78698, {	-- Wyrmstalker's Headguard
+							["cost"] = { { "i", 78851, 1 }, },	-- Crown of the Corrupted Protector
+						}),
+						i(78804, {	-- Wyrmstalker's Legguards
+							["cost"] = { { "i", 78873, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(77031, {	-- Wyrmstalker's Legguards
+							["cost"] = { { "i", 78176, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78709, {	-- Wyrmstalker's Legguards
+							["cost"] = { { "i", 78857, 1 }, },	-- Leggings of the Corrupted Protector
+						}),
+						i(78832, {	-- Wyrmstalker's Spaulders
+							["cost"] = { { "i", 78876, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(77032, {	-- Wyrmstalker's Spaulders
+							["cost"] = { { "i", 78175, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78737, {	-- Wyrmstalker's Spaulders
+							["cost"] = { { "i", 78860, 1 }, },	-- Shoulders of the Corrupted Protector
+						}),
+						i(78756, {	-- Wyrmstalker's Tunic
+							["cost"] = { { "i", 78864, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(77028, {	-- Wyrmstalker's Tunic
+							["cost"] = { { "i", 78179, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(78661, {	-- Wyrmstalker's Tunic
+							["cost"] = { { "i", 78848, 1 }, },	-- Chest of the Corrupted Protector
+						}),
+						i(77150),	-- Zeherah's Dragonskull Crown
 					},
 				}),
 				n(3322,   {	-- Kaja <Bow & Rifle Vendor>
 					["coord"] = { 40.8, 49.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(11307),	-- Massive Longbow
-						i(11306),	-- Sturdy Recurve
-						i(11303),	-- Fine Shortbow
+						i(11303, {	-- Fine Shortbow
+							["isLimited"] = true,
+						}),
+						i(11307, {	-- Massive Longbow
+							["isLimited"] = true,
+						}),
+						i(11306, {	-- Sturdy Recurve
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(48510,  {	-- Kall Worthaton <Trike Dealer>
@@ -2422,39 +2887,68 @@ _.Zones =
 					["coord"] = { 53.2, 48.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
-						i(6346),	-- Formula: Enchant Chest - Lesser Mana
+						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
+							["isLimited"] = true,
+						}),
+						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(64412, {	-- Formula: Enchant Boots - Lavawalker
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(64413, {	-- Formula: Enchant Bracer - Greater Speed
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(52740, {	-- Formula: Enchant Chest - Greater Stamina
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(6346, {	-- Formula: Enchant Chest - Lesser Mana
+							["isLimited"] = true,
+						}),
+						i(52739, {	-- Formula: Enchant Chest - Peerless Stats
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(67308, {	-- Formula: Enchanted Lantern
+							["races"] = HORDE_ONLY,
+							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+						}),
+						i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
+							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(52736, {	-- Formula: Enchant Weapon - Landslide
+							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+						}),
+						i(52733, {	-- Formula: Enchant Weapon - Power Torrent
+							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+						}),
+						i(52735, {	-- Formula: Enchant Weapon - Windwalk
+							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+						}),
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						i(52555, {	-- Hypnotic Dust
-							h(i(67308)),	-- Formula: Enchanted Lantern
-						}),
-						i(52721, {	-- Heavenly Shard
-							i(64411),	-- Formula: Enchant Boots - Assassin's Step
-							i(64412),	-- Formula: Enchant Boots - Lavawalker
-							i(52738),	-- Formula: Enchant Bracer - Greater Critical Strike
-							i(64413),	-- Formula: Enchant Bracer - Greater Speed
-							i(52740),	-- Formula: Enchant Chest - Greater Stamina
-							i(52739),	-- Formula: Enchant Chest - Peerless Stats
-							i(52737),	-- Formula: Enchant Cloak - Greater Critical Strike
-							i(64414),	-- Formula: Enchant Gloves - Greater Mastery
-							i(64415),	-- Formula: Enchant Gloves - Mighty Strength
-						}),
-						i(52722, {	-- Maelstrom Crystal
-							i(52736),	-- Formula: Enchant Weapon - Landslide
-							i(52733),	-- Formula: Enchant Weapon - Power Torrent
-							i(52735),	-- Formula: Enchant Weapon - Windwalk
-						}),
 					},
 				}),
 				n(3348,   {	-- Kor'geld <Alchemy Supplies>
 					["coord"] = { 55.6, 45.4, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(13478),	-- Recipe: Elixir of Superior Defense
-						i(5642),	-- Recipe: Free Action Potion
+						i(13478, {	-- Recipe: Elixir of Superior Defense
+							["isLimited"] = true,
+						}),
+						i(5642, {	-- Recipe: Free Action Potion
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(34043,  {	-- Lady Palanseer (removed in 4.0.3a)
@@ -2555,135 +3049,353 @@ _.Zones =
 					["coord"] = { 38.2, 86.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(6270),	-- Pattern: Blue Linen Vest
-						i(6274),	-- Pattern: Blue Overalls
-						i(10314),	-- Pattern: Lavender Mageweave Shirt
-						i(10317),	-- Pattern: Pink Mageweave Shirt
-						i(5772),	-- Pattern: Red Woolen Bag
+						i(6270, {	-- Pattern: Blue Linen Vest
+							["isLimited"] = true,
+						}),
+						i(6274, {	-- Pattern: Blue Overalls
+							["isLimited"] = true,
+						}),
+						i(10314, {	-- Pattern: Lavender Mageweave Shirt
+							["isLimited"] = true,
+						}),
+						i(10317, {	-- Pattern: Pink Mageweave Shirt
+							["isLimited"] = true,
+						}),
+						i(5772, {	-- Pattern: Red Woolen Bag
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(45558,  {	-- Lizna Goldweaver <Tailoring Supplies>
 					["coord"] = { 41.0, 79.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(54440, {	-- Dreamcloth
-							i(54601),	-- Pattern: Belt of the Depths
-							i(54602),	-- Pattern: Dreamless Belt
-							i(54603),	-- Pattern: Breeches of Mended Nightmares
-							i(54604),	-- Pattern: Flame-Ascended Pantaloons
-							i(54605),	-- Pattern: Illusionary Bag
+						i(54601, {	-- Pattern: Belt of the Depths
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
 						}),
-						i(53643, {	-- Bolt of Embersilk Cloth
-							i(68199),	-- Pattern: Black Embersilk Gown
-							i(54600),	-- Pattern: Powerful Ghostly Spellthread
-							i(54599),	-- Pattern: Powerful Enchanted Spellthread
-							i(54593),	-- Pattern: Vicious Embersilk Cowl
-							i(54594),	-- Pattern: Vicious Embersilk Pants
-							i(54595),	-- Pattern: Vicious Embersilk Robe
-							i(54596),	-- Pattern: Vicious Fireweave Cowl
-							i(54597),	-- Pattern: Vicious Fireweave Pants
-							i(54598),	-- Pattern: Vicious Fireweave Robe
+						i(68199, {	-- Pattern: Black Embersilk Gown
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
-						i(6270),	-- Pattern: Blue Linen Vest
-						i(6274),	-- Pattern: Blue Overalls
-						i(10314),	-- Pattern: Lavender Mageweave Shirt
-						i(10317),	-- Pattern: Pink Mageweave Shirt
-						i(5772),	-- Pattern: Red Woolen Bag
+						i(6270, {	-- Pattern: Blue Linen Vest
+							["isLimited"] = true,
+						}),
+						i(6274, {	-- Pattern: Blue Overalls
+							["isLimited"] = true,
+						}),
+						i(54603, {	-- Pattern: Breeches of Mended Nightmares
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						}),
+						i(54602, {	-- Pattern: Dreamless Belt
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						}),
+						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						}),
+						i(54605, {	-- Pattern: Illusionary Bag
+							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+						}),
+						i(10314, {	-- Pattern: Lavender Mageweave Shirt
+							["isLimited"] = true,
+						}),
+						i(10317, {	-- Pattern: Pink Mageweave Shirt
+							["isLimited"] = true,
+						}),
+						i(54599, {	-- Pattern: Powerful Enchanted Spellthread
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54600, {	-- Pattern: Powerful Ghostly Spellthread
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(5772, {	-- Pattern: Red Woolen Bag
+							["isLimited"] = true,
+						}),
+						i(54593, {	-- Pattern: Vicious Embersilk Cowl
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54594, {	-- Pattern: Vicious Embersilk Pants
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54595, {	-- Pattern: Vicious Embersilk Robe
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54596, {	-- Pattern: Vicious Fireweave Cowl
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54597, {	-- Pattern: Vicious Fireweave Pants
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(54598, {	-- Pattern: Vicious Fireweave Robe
+							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
 					},
 				}),
 				n(50482,  {	-- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 72.4, 34.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						currency(361, {	-- Illustrious Jewelcrafter's Token
-							i(52409),	-- Design: Accurate Demonseye
-							i(52419),	-- Design: Adept Ember Topaz
-							i(52421),	-- Design: Artful Ember Topaz
-							i(52437),	-- Design: Austere Shadowspirit Diamond
-							i(52461),	-- Design: Band of Blades
-							i(52381),	-- Design: Bold Chimera's Eye
-							i(52362),	-- Design: Bold Inferno Ruby
-							i(52435),	-- Design: Bracing Shadowspirit Diamond
-							i(52464),	-- Design: Brazen Elementium Medallion
-							i(52449),	-- Design: Brilliant Chimera's Eye
-							i(52387),	-- Design: Brilliant Inferno Ruby
-							i(52434),	-- Design: Chaotic Shadowspirit Diamond
-							i(52413),	-- Design: Deadly Ember Topaz
-							i(52401),	-- Design: Defender's Demonseye
-							i(52416),	-- Design: Deft Ember Topaz
-							i(52447),	-- Design: Delicate Chimera's Eye
-							i(52380),	-- Design: Delicate Inferno Ruby
-							i(52441),	-- Design: Destructive Shadowspirit Diamond
-							i(52438),	-- Design: Effulgent Shadowspirit Diamond
-							i(52460),	-- Design: Elementium Destroyer's Ring
-							i(52467),	-- Design: Elementium Guardian
-							i(52463),	-- Design: Elementium Moebius Band
-							i(52439),	-- Design: Ember Shadowspirit Diamond
-							i(52443),	-- Design: Enigmatic Shadowspirit Diamond
-							i(52465),	-- Design: Entwined Elementium Choker
-							i(52405),	-- Design: Etched Demonseye
-							i(52436),	-- Design: Eternal Shadowspirit Diamond
-							i(52466),	-- Design: Eye of Many Deaths
-							i(52415),	-- Design: Fierce Ember Topaz
-							i(52420),	-- Design: Fine Ember Topaz
-							i(52448),	-- Design: Flashing Chimera's Eye
-							i(52384),	-- Design: Flashing Inferno Ruby
-							i(52433),	-- Design: Fleet Shadowspirit Diamond
-							i(52428),	-- Design: Forceful Dream Emerald
-							i(52445),	-- Design: Forlorn Shadowspirit Diamond
-							i(52398),	-- Design: Fractured Amberjewel
-							i(52459),	-- Design: Fractured Chimera's Eye
-							i(52406),	-- Design: Glinting Demonseye
-							i(52403),	-- Design: Guardian's Demonseye
-							i(52444),	-- Design: Impassive Shadowspirit Diamond
-							i(52412),	-- Design: Inscribed Ember Topaz
-							i(52425),	-- Design: Jagged Dream Emerald
-							i(52422),	-- Design: Keen Ember Topaz
-							i(52429),	-- Design: Lightning Dream Emerald
-							i(68360),	-- Design: Lucent Ember Topaz
-							i(52396),	-- Design: Mystic Amberjewel
-							i(52457),	-- Design: Mystic Chimera's Eye
-							i(52424),	-- Design: Nimble Dream Emerald
-							i(52426),	-- Design: Piercing Dream Emerald
-							i(52410),	-- Design: Polished Ember Topaz
-							i(52414),	-- Design: Potent Ember Topaz
-							i(52442),	-- Design: Powerful Shadowspirit Diamond
-							i(52450),	-- Design: Precise Chimera's Eye
-							i(52389),	-- Design: Precise Inferno Ruby
-							i(52430),	-- Design: Puissant Dream Emerald
-							i(69853),	-- Design: Punisher's Band
-							i(52404),	-- Design: Purified Demonseye
-							i(52397),	-- Design: Quick Amberjewel
-							i(52458),	-- Design: Quick Chimera's Eye
-							i(52417),	-- Design: Reckless Ember Topaz
-							i(52423),	-- Design: Regal Dream Emerald
-							i(52411),	-- Design: Resolute Ember Topaz
-							i(68361),	-- Design: Resplendent Ember Topaz
-							i(52407),	-- Design: Retaliating Demonseye
-							i(52440),	-- Design: Revitalizing Shadowspirit Diamond
-							i(52454),	-- Design: Rigid Chimera's Eye
-							i(52393),	-- Design: Rigid Ocean Sapphire
-							i(52462),	-- Design: Ring of Warring Elements
-							i(52432),	-- Design: Sensei's Dream Emerald
-							i(52400),	-- Design: Shifting Demonseye
-							i(52418),	-- Design: Skillful Ember Topaz
-							i(52395),	-- Design: Smooth Amberjewel
-							i(52456),	-- Design: Smooth Chimera's Eye
-							i(52451),	-- Design: Solid Chimera's Eye
-							i(52390),	-- Design: Solid Ocean Sapphire
-							i(52399),	-- Design: Sovereign Demonseye
-							i(52452),	-- Design: Sparkling Chimera's Eye
-							i(52391),	-- Design: Sparkling Ocean Sapphire
-							i(52427),	-- Design: Steady Dream Emerald
-							i(52453),	-- Design: Stormy Chimera's Eye
-							i(52392),	-- Design: Stormy Ocean Sapphire
-							i(52394),	-- Design: Subtle Amberjewel
-							i(52455),	-- Design: Subtle Chimera's Eye
-							i(52402),	-- Design: Timeless Demonseye
-							i(52408),	-- Design: Veiled Demonseye
-							i(68742),	-- Design: Vivid Dream Emerald
-							i(68359),	-- Design: Willful Ember Topaz
-							i(52431),	-- Design: Zen Dream Emerald
+						i(52409, {	-- Design: Accurate Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52419, {	-- Design: Adept Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52421, {	-- Design: Artful Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52437, {	-- Design: Austere Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52461, {	-- Design: Band of Blades
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(52381, {	-- Design: Bold Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52362, {	-- Design: Bold Inferno Ruby
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52435, {	-- Design: Bracing Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52464, {	-- Design: Brazen Elementium Medallion
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(52449, {	-- Design: Brilliant Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52387, {	-- Design: Brilliant Inferno Ruby
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52434, {	-- Design: Chaotic Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52413, {	-- Design: Deadly Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52401, {	-- Design: Defender's Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52416, {	-- Design: Deft Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52447, {	-- Design: Delicate Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52380, {	-- Design: Delicate Inferno Ruby
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52441, {	-- Design: Destructive Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52438, {	-- Design: Effulgent Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52460, {	-- Design: Elementium Destroyer's Ring
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(52467, {	-- Design: Elementium Guardian
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(52463, {	-- Design: Elementium Moebius Band
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(52439, {	-- Design: Ember Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52443, {	-- Design: Enigmatic Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52465, {	-- Design: Entwined Elementium Choker
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(52405, {	-- Design: Etched Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52436, {	-- Design: Eternal Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52466, {	-- Design: Eye of Many Deaths
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(52415, {	-- Design: Fierce Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52420, {	-- Design: Fine Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52448, {	-- Design: Flashing Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52384, {	-- Design: Flashing Inferno Ruby
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52433, {	-- Design: Fleet Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52428, {	-- Design: Forceful Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52445, {	-- Design: Forlorn Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52398, {	-- Design: Fractured Amberjewel
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52459, {	-- Design: Fractured Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52406, {	-- Design: Glinting Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52403, {	-- Design: Guardian's Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52444, {	-- Design: Impassive Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52412, {	-- Design: Inscribed Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52425, {	-- Design: Jagged Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52422, {	-- Design: Keen Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52429, {	-- Design: Lightning Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(68360, {	-- Design: Lucent Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52396, {	-- Design: Mystic Amberjewel
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52457, {	-- Design: Mystic Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52424, {	-- Design: Nimble Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52426, {	-- Design: Piercing Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52410, {	-- Design: Polished Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52414, {	-- Design: Potent Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52442, {	-- Design: Powerful Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52450, {	-- Design: Precise Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52389, {	-- Design: Precise Inferno Ruby
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52430, {	-- Design: Puissant Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(69853, {	-- Design: Punisher's Band
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(52404, {	-- Design: Purified Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52397, {	-- Design: Quick Amberjewel
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52458, {	-- Design: Quick Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52417, {	-- Design: Reckless Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52423, {	-- Design: Regal Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52411, {	-- Design: Resolute Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(68361, {	-- Design: Resplendent Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52407, {	-- Design: Retaliating Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52440, {	-- Design: Revitalizing Shadowspirit Diamond
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						}),
+						i(52454, {	-- Design: Rigid Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52393, {	-- Design: Rigid Ocean Sapphire
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52462, {	-- Design: Ring of Warring Elements
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(52432, {	-- Design: Sensei's Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52400, {	-- Design: Shifting Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52418, {	-- Design: Skillful Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52395, {	-- Design: Smooth Amberjewel
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52456, {	-- Design: Smooth Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52451, {	-- Design: Solid Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52390, {	-- Design: Solid Ocean Sapphire
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52399, {	-- Design: Sovereign Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52452, {	-- Design: Sparkling Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52391, {	-- Design: Sparkling Ocean Sapphire
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52427, {	-- Design: Steady Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52453, {	-- Design: Stormy Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52392, {	-- Design: Stormy Ocean Sapphire
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52394, {	-- Design: Subtle Amberjewel
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52455, {	-- Design: Subtle Chimera's Eye
+							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
+						}),
+						i(52402, {	-- Design: Timeless Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52408, {	-- Design: Veiled Demonseye
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(68742, {	-- Design: Vivid Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(68359, {	-- Design: Willful Ember Topaz
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
+						}),
+						i(52431, {	-- Design: Zen Dream Emerald
+							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
 						}),
 					},
 				}),
@@ -2720,46 +3432,110 @@ _.Zones =
 					["coord"] = { 45.0, 77.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12162),	-- Plans: Hardened Iron Shortsword
-						i(52186, {	-- Elementium Bar
-							i(66107),	-- Plans: Elementium Girdle of Pain
-							i(66105),	-- Plans: Hardened Elementium Girdle
-							i(66109),	-- Plans: Light Elementium Belt
-							i(66103),	-- Plans: Pyrium Weapon Chain
-							i(66127),	-- Plans: Vicious Ornate Pyrium Belt
-							i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
-							i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
-							i(66119),	-- Plans: Vicious Pyrium Belt
-							i(66117),	-- Plans: Vicious Pyrium Bracers
-							i(66118),	-- Plans: Vicious Pyrium Gauntlets
+						i(66100, {	-- Plans: Ebonsteel Belt Buckle
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
 						}),
-						i(53039, {	-- Hardened Elementium Bar
-							i(66113),	-- Plans: Elementium Bonesplitter
-							i(66106),	-- Plans: Elementium Deathplate
-							i(66115),	-- Plans: Elementium Earthguard
-							i(67603),	-- Plans: Elementium Gutslicer
-							i(66111),	-- Plans: Elementium Hammer
-							i(66112),	-- Plans: Elementium Poleaxe
-							i(66114),	-- Plans: Elementium Shank
-							i(66110),	-- Plans: Elementium Spellblade
-							i(66116),	-- Plans: Elementium Stormshield
-							i(66104),	-- Plans: Hardened Elementium Hauberk
-							i(66108),	-- Plans: Light Elementium Chestguard
-							i(66128),	-- Plans: Vicious Ornate Pyrium Boots
-							i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
-							i(66120),	-- Plans: Vicious Pyrium Boots
-							i(66121),	-- Plans: Vicious Pyrium Shoulders
+						i(66113, {	-- Plans: Elementium Bonesplitter
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
-						i(51950, {	-- Pyrium Bar
-							i(66100),	-- Plans: Ebonsteel Belt Buckle
-							i(67606),	-- Plans: Forged Elementium Mindcrusher
-							i(66101),	-- Plans: Pyrium Shield Spike
-							i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
-							i(66131),	-- Plans: Vicious Ornate Pyrium Helm
-							i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
-							i(66124),	-- Plans: Vicious Pyrium Breastplate
-							i(66123),	-- Plans: Vicious Pyrium Helm
-							i(66122),	-- Plans: Vicious Pyrium Legguards
+						i(66106, {	-- Plans: Elementium Deathplate
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66115, {	-- Plans: Elementium Earthguard
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66107, {	-- Plans: Elementium Girdle of Pain
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(67603, {	-- Plans: Elementium Gutslicer
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66111, {	-- Plans: Elementium Hammer
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66112, {	-- Plans: Elementium Poleaxe
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66114, {	-- Plans: Elementium Shank
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66110, {	-- Plans: Elementium Spellblade
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66116, {	-- Plans: Elementium Stormshield
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(67606, {	-- Plans: Forged Elementium Mindcrusher
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66105, {	-- Plans: Hardened Elementium Girdle
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(12162, {	-- Plans: Hardened Iron Shortsword
+							["isLimited"] = true,
+						}),
+						i(66104, {	-- Plans: Hardened Elementium Hauberk
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66109, {	-- Plans: Light Elementium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66108, {	-- Plans: Light Elementium Chestguard
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66101, {	-- Plans: Pyrium Shield Spike
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66103, {	-- Plans: Pyrium Weapon Chain
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66119, {	-- Plans: Vicious Pyrium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66120, {	-- Plans: Vicious Pyrium Boots
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66117, {	-- Plans: Vicious Pyrium Bracers
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66124, {	-- Plans: Vicious Pyrium Breastplate
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66123, {	-- Plans: Vicious Pyrium Helm
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66122, {	-- Plans: Vicious Pyrium Legguards
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66121, {	-- Plans: Vicious Pyrium Shoulders
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
 					},
 				}),
@@ -2771,7 +3547,7 @@ _.Zones =
 						i(29466),	-- Black War Kodo
 						i(29469),	-- Horn of the Black War Wolf
 						i(29470),	-- Red Skeletal Warhorse
-						i(29472),	-- Whistle of the Black WAr Raptor
+						i(29472),	-- Whistle of the Black War Raptor
 						i(34129),	-- Swift Warstrider
 					},
 				}),
@@ -2918,271 +3694,692 @@ _.Zones =
 					["coord"] = { 48.2, 71.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(65226),	-- Reinforced Sapphirium Faceguard
-						i(65202),	-- Stormrider's Vestment
-						i(65272),	-- Earthen Legguards
-						i(65271),	-- Earthen Faceguard
-						i(65270),	-- Earthen Handguards
-						i(65269),	-- Earthen Chestguard
-						i(65268),	-- Earthen Pauldrons
-						i(65267),	-- Earthen Legplates
-						i(65266),	-- Earthen Helmet
-						i(65265),	-- Earthen Gauntlets
-						i(65264),	-- Earthen Battleplate
-						i(65263),	-- Shadowflame Mantle
-						i(65262),	-- Shadowflame Robes
-						i(65261),	-- Shadowflame Leggings
-						i(65260),	-- Shadowflame Hood
-						i(65259),	-- Shadowflame Handwraps
-						i(65258),	-- Shoulderwraps of the Raging Elements
-						i(65257),	-- Kilt of the Raging Elements
-						i(65256),	-- Headpiece of the Raging Elements
-						i(65255),	-- Gloves of the Raging Elements
-						i(65254),	-- Hauberk of the Raging Elements
-						i(65253),	-- Spaulders of the Raging Elements
-						i(65252),	-- Legguards of the Raging Elements
-						i(65251),	-- Helmet of the Raging Elements
-						i(65250),	-- Grips of the Raging Elements
-						i(65249),	-- Cuirass of the Raging Elements
-						i(65248),	-- Mantle of the Raging Elements
-						i(65247),	-- Legwraps of the Raging Elements
-						i(65246),	-- Faceguard of the Raging Elements
-						i(65245),	-- Handwraps of the Raging Elements
-						i(65244),	-- Tunic of the Raging Elements
-						i(65243),	-- Wind Dancer's Spaulders
-						i(65242),	-- Wind Dancer's Legguards
-						i(65241),	-- Wind Dancer's Helmet
-						i(65240),	-- Wind Dancer's Gloves
-						i(65239),	-- Wind Dancer's Tunic
-						i(65238),	-- Mercurial Shoulderwraps
-						i(65237),	-- Mercurial Vestment
-						i(65236),	-- Mercurial Leggings
-						i(65235),	-- Mercurial Hood
-						i(65234),	-- Mercurial Gloves
-						i(65233),	-- Mercurial Mantle
-						i(65232),	-- Mercurial Robes
-						i(65231),	-- Mercurial Legwraps
-						i(65230),	-- Mercurial Cowl
-						i(65229),	-- Mercurial Handwraps
-						i(65228),	-- Reinforced Sapphirium Shoulderguards
-						i(65227),	-- Reinforced Sapphirium Legguards
-						i(65273),	-- Earthen Shoulderguards
-						i(65225),	-- Reinforced Sapphirium Handguards
-						i(65224),	-- Reinforced Sapphirium Chestguard
-						i(65223),	-- Reinforced Sapphirium Mantle
-						i(65222),	-- Reinforced Sapphirium Greaves
-						i(65221),	-- Reinforced Sapphirium Headguard
-						i(65220),	-- Reinforced Sapphirium Gloves
-						i(65219),	-- Reinforced Sapphirium Breastplate
-						i(65218),	-- Reinforced Sapphirium Pauldrons
-						i(65217),	-- Reinforced Sapphirium Legplates
-						i(65216),	-- Reinforced Sapphirium Helmet
-						i(65215),	-- Reinforced Sapphirium Gauntlets
-						i(65214),	-- Reinforced Sapphirium Battleplate
-						i(65213),	-- Firelord's Mantle
-						i(65212),	-- Firelord's Robes
-						i(65211),	-- Firelord's Leggings
-						i(65210),	-- Firelord's Hood
-						i(65209),	-- Firelord's Gloves
-						i(65208),	-- Lightning-Charged Spaulders
-						i(65207),	-- Lightning-Charged Legguards
-						i(65206),	-- Lightning-Charged Headguard
-						i(65205),	-- Lightning-Charged Gloves
-						i(65204),	-- Lightning-Charged Tunic
-						i(65203),	-- Stormrider's Shoulderwraps
-						i(65179),	-- Magma Plated Battleplate
-						i(65180),	-- Magma Plated Gauntlets
-						i(65181),	-- Magma Plated Helmet
-						i(65182),	-- Magma Plated Legplates
-						i(65183),	-- Magma Plated Pauldrons
-						i(65184),	-- Magma Plated Chestguard
-						i(65185),	-- Magma Plated Handguards
-						i(65186),	-- Magma Plated Faceguard
-						i(65187),	-- Magma Plated Legguards
-						i(65188),	-- Magma Plated Shoulderguards
-						i(65189),	-- Stormrider's Grips
-						i(65190),	-- Stormrider's Headpiece
-						i(65191),	-- Stormrider's Legguards
-						i(65192),	-- Stormrider's Raiment
-						i(65193),	-- Stormrider's Spaulders
-						i(65194),	-- Stormrider's Handwraps
-						i(65195),	-- Stormrider's Helm
-						i(65196),	-- Stormrider's Legwraps
-						i(65197),	-- Stormrider's Robes
-						i(65198),	-- Stormrider's Mantle
-						i(65199),	-- Stormrider's Gloves
-						i(65200),	-- Stormrider's Cover
-						i(65201),	-- Stormrider's Leggings
-						i(60321),	-- Legguards of the Raging Elements
-						i(60250),	-- Shadowflame Leggings
-						i(60251),	-- Shadowflame Robes
-						i(60252),	-- Shadowflame Mantle
-						i(60253),	-- Mercurial Shoulderwraps
-						i(60254),	-- Mercurial Vestment
-						i(60255),	-- Mercurial Leggings
-						i(60256),	-- Mercurial Hood
-						i(60257),	-- Mercurial Gloves
-						i(60258),	-- Mercurial Cowl
-						i(60259),	-- Mercurial Robes
-						i(60261),	-- Mercurial Legwraps
-						i(60262),	-- Mercurial Mantle
-						i(60275),	-- Mercurial Handwraps
-						i(60276),	-- Stormrider's Robes
-						i(60277),	-- Stormrider's Helm
-						i(60278),	-- Stormrider's Legwraps
-						i(60279),	-- Stormrider's Mantle
-						i(60280),	-- Stormrider's Handwraps
-						i(60281),	-- Stormrider's Vestment
-						i(60282),	-- Stormrider's Cover
-						i(60283),	-- Stormrider's Leggings
-						i(60284),	-- Stormrider's Shoulderwraps
-						i(60285),	-- Stormrider's Gloves
-						i(60286),	-- Stormrider's Headpiece
-						i(60287),	-- Stormrider's Raiment
-						i(60288),	-- Stormrider's Legguards
-						i(60289),	-- Stormrider's Spaulders
-						i(60290),	-- Stormrider's Grips
-						i(60298),	-- Wind Dancer's Gloves
-						i(60299),	-- Wind Dancer's Helmet
-						i(60300),	-- Wind Dancer's Legguards
-						i(60301),	-- Wind Dancer's Tunic
-						i(60302),	-- Wind Dancer's Spaulders
-						i(60303),	-- Lightning-Charged Headguard
-						i(60304),	-- Lightning-Charged Tunic
-						i(60305),	-- Lightning-Charged Legguards
-						i(60306),	-- Lightning-Charged Spaulders
-						i(60307),	-- Lightning-Charged Gloves
-						i(60308),	-- Faceguard of the Raging Elements
-						i(60309),	-- Tunic of the Raging Elements
-						i(60310),	-- Legwraps of the Raging Elements
-						i(60311),	-- Mantle of the Raging Elements
-						i(60312),	-- Handwraps of the Raging Elements
-						i(60313),	-- Hauberk of the Raging Elements
-						i(60314),	-- Gloves of the Raging Elements
-						i(60315),	-- Headpiece of the Raging Elements
-						i(60316),	-- Kilt of the Raging Elements
-						i(60317),	-- Shoulderwraps of the Raging Elements
-						i(60318),	-- Cuirass of the Raging Elements
-						i(60319),	-- Grips of the Raging Elements
-						i(60320),	-- Helmet of the Raging Elements
-						i(60322),	-- Spaulders of the Raging Elements
-						i(60323),	-- Earthen Battleplate
-						i(60324),	-- Earthen Legplates
-						i(60325),	-- Earthen Helmet
-						i(60326),	-- Earthen Gauntlets
-						i(60327),	-- Earthen Pauldrons
-						i(60328),	-- Earthen Faceguard
-						i(60329),	-- Earthen Chestguard
-						i(60330),	-- Earthen Legguards
-						i(60331),	-- Earthen Shoulderguards
-						i(60332),	-- Earthen Handguards
-						i(60339),	-- Magma Plated Battleplate
-						i(60340),	-- Magma Plated Gauntlets
-						i(60341),	-- Magma Plated Helmet
-						i(60342),	-- Magma Plated Legplates
-						i(60343),	-- Magma Plated Pauldrons
-						i(60344),	-- Reinforced Sapphirium Battleplate
-						i(60345),	-- Reinforced Sapphirium Gauntlets
-						i(60346),	-- Reinforced Sapphirium Helmet
-						i(60347),	-- Reinforced Sapphirium Legplates
-						i(60348),	-- Reinforced Sapphirium Pauldrons
-						i(60349),	-- Magma Plated Chestguard
-						i(60350),	-- Magma Plated Handguards
-						i(60351),	-- Magma Plated Faceguard
-						i(60352),	-- Magma Plated Legguards
-						i(60353),	-- Magma Plated Shoulderguards
-						i(60354),	-- Reinforced Sapphirium Chestguard
-						i(60355),	-- Reinforced Sapphirium Handguards
-						i(60356),	-- Reinforced Sapphirium Faceguard
-						i(60357),	-- Reinforced Sapphirium Legguards
-						i(60358),	-- Reinforced Sapphirium Shoulderguards
-						i(60359),	-- Reinforced Sapphirium Headguard
-						i(60360),	-- Reinforced Sapphirium Breastplate
-						i(60361),	-- Reinforced Sapphirium Greaves
-						i(60362),	-- Reinforced Sapphirium Mantle
-						i(60363),	-- Reinforced Sapphirium Gloves
-						i(58190),	-- Floating Web
-						i(58191),	-- Viewless Wings
-						i(58192),	-- Gray Hair Cloak
-						i(58193),	-- Haunt of Flies
-						i(58194),	-- Heavenly Breeze
-						i(58195),	-- Woe Breeder's Boots
-						i(58197),	-- Rock Furrow Boots
-						i(58198),	-- Eternal Pathfinders
-						i(58199),	-- Moccasins of Verdurous Glooms
-						i(58481),	-- Boots of the Perilous Seas
-						i(58482),	-- Treads of Fleeting Joy
-						i(58484),	-- Fading Violet Sandals
-						i(58485),	-- Melodious Slippers
-						i(58486),	-- Slippers of Moving Waters
-						i(60243),	-- Firelord's Hood
-						i(60244),	-- Firelord's Robes
-						i(60245),	-- Firelord's Leggings
-						i(60246),	-- Firelord's Mantle
-						i(60247),	-- Firelord's Gloves
-						i(60248),	-- Shadowflame Handwraps
-						i(60249),	-- Shadowflame Hood
-						i(58107),	-- Legguards of the Gentle
+						i(57931),	-- Amulet of Dull Dreaming
+						i(57924),	-- Apple-Bent Bough
+						i(58185),	-- Band of Bees
+						i(58188),	-- Band of Secret Names
+						i(58182),	-- Bedrock Talisman
 						i(57913),	-- Beech Green Belt
 						i(57915),	-- Belt of Barred Clouds
 						i(57916),	-- Belt of the Dim Forest
+						i(57922),	-- Belt of the Falling Rain
 						i(57917),	-- Belt of the Still Stream
-						i(57918),	-- Sash of Musing
-						i(57914),	-- Girdle of the Mountains
-						i(58163),	-- Gloves of Purification
-						i(58162),	-- Summer Song Shoulderwraps
-						i(58161),	-- Mask of New Snow
-						i(58160),	-- Leggings of Charity
-						i(58159),	-- Musk Rose Robes
-						i(58158),	-- Gloves of the Painless Midnight
-						i(58157),	-- Meadow Mantle
-						i(58155),	-- Cowl of Pleasant Gloom
-						i(58154),	-- Pensive Legwraps
-						i(58153),	-- Robes of Embalmed Darkness
 						i(58152),	-- Blessed Hands of Elune
-						i(58151),	-- Somber Shawl
-						i(58150),	-- Cluster of Stars
-						i(58140),	-- Leggings of Late Blooms
-						i(58139),	-- Chestguard of Forgetfulness
-						i(58138),	-- Sticky Fingers
-						i(58134),	-- Embrace of the Night
-						i(58133),	-- Mask of Vines
-						i(58132),	-- Leggings of the Burrowing Mole
-						i(58131),	-- Tunic of Sinking Envy
-						i(58130),	-- Gleaning Gloves
-						i(58129),	-- Seafoam Mantle
-						i(58128),	-- Helm of the Inward Eye
-						i(58127),	-- Leggings of Soothing Silence
-						i(58126),	-- Vest of the Waking Dream
-						i(58125),	-- Gloves of the Passing Night
-						i(58124),	-- Wrap of the Valley Glades
-						i(58123),	-- Willow Mask
-						i(58122),	-- Hillside Striders
-						i(58121),	-- Vest of the True Companion
-						i(58110),	-- Gloves of Curious Conscience
-						i(58109),	-- Pauldrons of the Forlorn
-						i(58108),	-- Crown of the Blazing Sun
-						i(57919),	-- Thatch Eave Vines
-						i(58106),	-- Chestguard of Dancing Waves
-						i(58105),	-- Numbing Handguards
-						i(58104),	-- Sunburnt Pauldrons
-						i(58103),	-- Helm of the Proud
-						i(58102),	-- Greaves of Splendor
-						i(58101),	-- Chestplate of the Steadfast
-						i(58100),	-- Pauldrons of the High Requiem
-						i(58099),	-- Reaping Gauntlets
-						i(58098),	-- Helm of Easeful Death
-						i(58097),	-- Greaves of Gallantry
+						i(58481),	-- Boots of the Perilous Seas
 						i(58096),	-- Breastplate of Raging Fury
+						i(57934),	-- Celadon Pendant
+						i(67423, {	-- Chest of the Forlorn Conqueror
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(67424, {	-- Chest of the Forlorn Protector
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(67425, {	-- Chest of the Forlorn Vanquisher
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(58106),	-- Chestguard of Dancing Waves
+						i(58139),	-- Chestguard of Forgetfulness
+						i(58101),	-- Chestplate of the Steadfast
+						i(58150),	-- Cluster of Stars
+						i(58184),	-- Core of Ripeness
+						i(58155),	-- Cowl of Pleasant Gloom
+						i(58108),	-- Crown of the Blazing Sun
+						i(65001, {	-- Crown of the Forlorn Conqueror
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(65000, {	-- Crown of the Forlorn Protector
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(65002, {	-- Crown of the Forlorn Vanquisher
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(60318),	-- Cuirass of the Raging Elements
+						i(65249, {	-- Cuirass of the Raging Elements
+							["cost"] = {
+								{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
+								{ "i", 60318, 1 },	-- Cuirass of the Raging Elements
+							},
+						}),
 						i(57929),	-- Dawnblaze Blade
-						i(57928),	-- Windslicer
-						i(57927),	-- Throat Slasher
+						i(60323),	-- Earthen Battleplate
+						i(65264, {	-- Earthen Battleplate
+							["cost"] = {
+								{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
+								{ "i", 60323, 1 },	-- Earthen Battleplate
+							},
+						}),
+						i(60329),	-- Earthen Chestguard
+						i(65269, {	-- Earthen Chestguard
+							["cost"] = {
+								{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
+								{ "i", 60329, 1 },	-- Earthen Chestguard
+							},
+						}),
+						i(60328),	-- Earthen Faceguard
+						i(65271, {	-- Earthen Faceguard
+							["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Vanquisher
+						}),
+						i(60326),	-- Earthen Gauntlets
+						i(65265, {	-- Earthen Gauntlets
+							["cost"] = {
+								{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
+								{ "i", 60326, 1 },	-- Earthen Gauntlets
+							},
+						}),
+						i(60332),	-- Earthen Handguards
+						i(65270, {	-- Earthen Handguards
+							["cost"] = {
+								{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
+								{ "i", 60332, 1 },	-- Earthen Handguards
+							},
+						}),
+						i(60325),	-- Earthen Helmet
+						i(65266, {	-- Earthen Helmet
+							["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+						}),
+						i(60330),	-- Earthen Legguards
+						i(65272, {	-- Earthen Legguards
+							["cost"] = {
+								{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
+								{ "i", 60330, 1 },	-- Earthen Legguards
+							},
+						}),
+						i(60324),	-- Earthen Legplates
+						i(65267, {	-- Earthen Legplates
+							["cost"] = {
+								{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
+								{ "i", 60324, 1 },	-- Earthen Legplates
+							},
+						}),
+						i(60327),	-- Earthen Pauldrons
+						i(65268, {	-- Earthen Pauldrons
+							["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+						}),
+						i(60331),	-- Earthen Shoulderguards
+						i(65273, {	-- Earthen Shoulderguards
+							["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+						}),
+						i(58134),	-- Embrace of the Night
+						i(58198),	-- Eternal Pathfinders
+						i(60308),	-- Faceguard of the Raging Elements
+						i(65246, {	-- Faceguard of the Raging Elements
+							["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+						}),
+						i(58484),	-- Fading Violet Sandals
+						i(60247),	-- Firelord's Gloves
+						i(65209, {	-- Firelord's Gloves
+							["cost"] = {
+								{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
+								{ "i", 60247, 1 },	-- Firelord's Gloves
+							},
+						}),
+						i(60243),	-- Firelord's Hood
+						i(65210, {	-- Firelord's Hood
+							["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+						}),
+						i(60245),	-- Firelord's Leggings
+						i(65211, {	-- Firelord's Leggings
+							["cost"] = {
+								{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
+								{ "i", 60245, 1 },	-- Firelord's Leggings
+							},
+						}),
+						i(60246),	-- Firelord's Mantle
+						i(65213, {	-- Firelord's Mantle
+							["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+						}),
+						i(60244),	-- Firelord's Robes
+						i(65212, {	-- Firelord's Robes
+							["cost"] = {
+								{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
+								{ "i", 60244, 1 },	-- Firelord's Robes
+							},
+						}),
+						i(58190),	-- Floating Web
+						i(58181),	-- Fluid Death
+						i(67429, {	-- Gauntlets of the Forlorn Conqueror
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(67430, {	-- Gauntlets of the Forlorn Protector
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(67431, {	-- Gauntlets of the Forlorn Vanquisher
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(57914),	-- Girdle of the Mountains
+						i(58130),	-- Gleaning Gloves
+						i(58110),	-- Gloves of Curious Conscience
+						i(58163),	-- Gloves of Purification
+						i(58158),	-- Gloves of the Painless Midnight
+						i(58125),	-- Gloves of the Passing Night
+						i(60314),	-- Gloves of the Raging Elements
+						i(65255, {	-- Gloves of the Raging Elements
+							["cost"] = {
+								{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
+								{ "i", 60314, 1 },	-- Gloves of the Raging Elements
+							},
+						}),
+						i(58192),	-- Gray Hair Cloak
+						i(58097),	-- Greaves of Gallantry
+						i(58102),	-- Greaves of Splendor
+						i(60319),	-- Grips of the Raging Elements
+						i(65250, {	-- Grips of the Raging Elements
+							["cost"] = {
+								{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
+								{ "i", 60319, 1 },	-- Grips of the Raging Elements
+							},
+						}),
+						i(60312),	-- Handwraps of the Raging Elements
+						i(65245, {	-- Handwraps of the Raging Elements
+							["cost"] = {
+								{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
+								{ "i", 60312, 1 },	-- Handwraps of the Raging Elements
+							},
+						}),
+						i(60313),	-- Hauberk of the Raging Elements
+						i(65254, {	-- Hauberk of the Raging Elements
+							["cost"] = {
+								{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
+								{ "i", 60313, 1 },	-- Hauberk of the Raging Elements
+							},
+						}),
+						i(58193),	-- Haunt of Flies
+						i(60315),	-- Headpiece of the Raging Elements
+						i(65256, {	-- Headpiece of the Raging Elements
+							["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+						}),
+						i(58194),	-- Heavenly Breeze
+						i(58098),	-- Helm of Easeful Death
+						i(58128),	-- Helm of the Inward Eye
+						i(58103),	-- Helm of the Proud
+						i(60320),	-- Helmet of the Raging Elements
+						i(65251, {	-- Helmet of the Raging Elements
+							["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+						}),
+						i(57923),	-- Hermit's Lamp
+						i(58122),	-- Hillside Striders
+						i(68812),	-- Hornet-Sting Band
+						i(57921),	-- Incense Infused Cummerbund
+						i(60316),	-- Kilt of the Raging Elements
+						i(65257, {	-- Kilt of the Raging Elements
+							["cost"] = {
+								{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
+								{ "i", 60316, 1 },	-- Kilt of the Raging Elements
+							},
+						}),
+						i(58160),	-- Leggings of Charity
+						i(58140),	-- Leggings of Late Blooms
+						i(58127),	-- Leggings of Soothing Silence
+						i(58132),	-- Leggings of the Burrowing Mole
+						i(67428, {	-- Leggings of the Forlorn Conqueror
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(67427, {	-- Leggings of the Forlorn Protector
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(67426, {	-- Leggings of the Forlorn Vanquisher
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(58107),	-- Legguards of the Gentle
+						i(60321),	-- Legguards of the Raging Elements
+						i(65252, {	-- Legguards of the Raging Elements
+							["cost"] = {
+								{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
+								{ "i", 60321, 1 },	-- Legguards of the Raging Elements
+							},
+						}),
+						i(60310),	-- Legwraps of the Raging Elements
+						i(65247, {	-- Legwraps of the Raging Elements
+							["cost"] = {
+								{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
+								{ "i", 60310, 1 },	-- Legwraps of the Raging Elements
+							},
+						}),
+						i(58180),	-- License to Slay
+						i(60307),	-- Lightning-Charged Gloves
+						i(65205, {	-- Lightning-Charged Gloves
+							["cost"] = {
+								{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
+								{ "i", 60307, 1 },	-- Lightning-Charged Gloves
+							},
+						}),
+						i(60303),	-- Lightning-Charged Headguard
+						i(65206, {	-- Lightning-Charged Headguard
+							["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+						}),
+						i(60305),	-- Lightning-Charged Legguards
+						i(65207, {	-- Lightning-Charged Legguards
+							["cost"] = {
+								{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
+								{ "i", 60305, 1 },	-- Lightning-Charged Legguards
+							},
+						}),
+						i(60306),	-- Lightning-Charged Spaulders
+						i(65208, {	-- Lightning-Charged Spaulders
+							["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+						}),
+						i(60304),	-- Lightning-Charged Tunic
+						i(65204, {	-- Lightning-Charged Tunic
+							["cost"] = {
+								{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
+								{ "i", 60304, 1 },	-- Lightning-Charged Tunic
+							},
+						}),
+						i(60339),	-- Magma Plated Battleplate
+						i(65179, {	-- Magma Plated Battleplate
+							["cost"] = {
+								{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
+								{ "i", 60339, 1 },	-- Magma Plated Battleplate
+							},
+						}),
+						i(60349),	-- Magma Plated Chestguard
+						i(65184, {	-- Magma Plated Chestguard
+							["cost"] = {
+								{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
+								{ "i", 60349, 1 },	-- Magma Plated Chestguard
+							},
+						}),
+						i(60351),	-- Magma Plated Faceguard
+						i(65186, {	-- Magma Plated Faceguard
+							["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+						}),
+						i(60340),	-- Magma Plated Gauntlets
+						i(65180, {	-- Magma Plated Gauntlets
+							["cost"] = {
+								{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
+								{ "i", 60340, 1 },	-- Magma Plated Gauntlets
+							},
+						}),
+						i(60350),	-- Magma Plated Handguards
+						i(65185, {	-- Magma Plated Handguards
+							["cost"] = {
+								{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
+								{ "i", 60350, 1 },	-- Magma Plated Handguards
+							},
+						}),
+						i(60341),	-- Magma Plated Helmet
+						i(65181, {	-- Magma Plated Helmet
+							["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+						}),
+						i(60352),	-- Magma Plated Legguards
+						i(65187, {	-- Magma Plated Legguards
+							["cost"] = {
+								{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
+								{ "i", 60352, 1 },	-- Magma Plated Legguards
+							},
+						}),
+						i(60342),	-- Magma Plated Legplates
+						i(65182, {	-- Magma Plated Legplates
+							["cost"] = {
+								{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
+								{ "i", 60342, 1 },	-- Magma Plated Legplates
+							},
+						}),
+						i(60343),	-- Magma Plated Pauldrons
+						i(65183, {	-- Magma Plated Pauldrons
+							["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+						}),
+						i(60353),	-- Magma Plated Shoulderguards
+						i(65188, {	-- Magma Plated Shoulderguards
+							["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+						}),
+						i(60311),	-- Mantle of the Raging Elements
+						i(65248, {	-- Mantle of the Raging Elements
+							["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+						}),
+						i(58161),	-- Mask of New Snow
+						i(58133),	-- Mask of Vines
+						i(58157),	-- Meadow Mantle
+						i(58485),	-- Melodious Slippers
+						i(60258),	-- Mercurial Cowl
+						i(65230, {	-- Mercurial Cowl
+							["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+						}),
+						i(60257),	-- Mercurial Gloves
+						i(65234, {	-- Mercurial Gloves
+							["cost"] = {
+								{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
+								{ "i", 60257, 1 },	-- Mercurial Gloves
+							},
+						}),
+						i(60275),	-- Mercurial Handwraps
+						i(65229, {	-- Mercurial Handwraps
+							["cost"] = {
+								{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
+								{ "i", 60275, 1 },	-- Mercurial Handwraps
+							},
+						}),
+						i(60256),	-- Mercurial Hood
+						i(65235, {	-- Mercurial Hood
+							["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+						}),
+						i(60255),	-- Mercurial Leggings
+						i(65236, {	-- Mercurial Leggings
+							["cost"] = {
+								{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
+								{ "i", 60255, 1 },	-- Mercurial Leggings
+							},
+						}),
+						i(60261),	-- Mercurial Legwraps
+						i(65231, {	-- Mercurial Legwraps
+							["cost"] = {
+								{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
+								{ "i", 60261, 1 },	-- Mercurial Legwraps
+							},
+						}),
+						i(60262),	-- Mercurial Mantle
+						i(65233, {	-- Mercurial Mantle
+							["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+						}),
+						i(60259),	-- Mercurial Robes
+						i(65232, {	-- Mercurial Robes
+							["cost"] = {
+								{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
+								{ "i", 60259, 1 },	-- Mercurial Robes
+							},
+						}),
+						i(60253),	-- Mercurial Shoulderwraps
+						i(65238, {	-- Mercurial Shoulderwraps
+							["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+						}),
+						i(60254),	-- Mercurial Vestment
+						i(65237, {	-- Mercurial Vestment
+							["cost"] = {
+								{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
+								{ "i", 60254, 1 },	-- Mercurial Vestment
+							},
+						}),
+						i(58199),	-- Moccasins of Verdurous Glooms
+						i(58159),	-- Musk Rose Robes
+						i(58105),	-- Numbing Handguards
+						i(58109),	-- Pauldrons of the Forlorn
+						i(58100),	-- Pauldrons of the High Requiem
+						i(57930),	-- Pendant of Quiet Breath
+						i(58154),	-- Pensive Legwraps
+						i(58099),	-- Reaping Gauntlets
+						i(60344),	-- Reinforced Sapphirium Battleplate
+						i(65214, {	-- Reinforced Sapphirium Battleplate
+							["cost"] = {
+								{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
+								{ "i", 60344, 1 },	-- Reinforced Sapphirium Battleplate
+							},
+						}),
+						i(60360),	-- Reinforced Sapphirium Breastplate
+						i(65219, {	-- Reinforced Sapphirium Breastplate
+							["cost"] = {
+								{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
+								{ "i", 60360, 1 },	-- Reinforced Sapphirium Breastplate
+							},
+						}),
+						i(60354),	-- Reinforced Sapphirium Chestguard
+						i(65224, {	-- Reinforced Sapphirium Chestguard
+							["cost"] = {
+								{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
+								{ "i", 60354, 1 },	-- Reinforced Sapphirium Chestguard
+							},
+						}),
+						i(60356),	-- Reinforced Sapphirium Faceguard
+						i(65226, {	-- Reinforced Sapphirium Faceguard
+							["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+						}),
+						i(60345),	-- Reinforced Sapphirium Gauntlets
+						i(65215, {	-- Reinforced Sapphirium Gauntlets
+							["cost"] = {
+								{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
+								{ "i", 60345, 1 },	-- Reinforced Sapphirium Gauntlets
+							},
+						}),
+						i(60363),	-- Reinforced Sapphirium Gloves
+						i(65220, {	-- Reinforced Sapphirium Gloves
+							["cost"] = {
+								{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
+								{ "i", 60363, 1 },	-- Reinforced Sapphirium Gloves
+							},
+						}),
+						i(60361),	-- Reinforced Sapphirium Greaves
+						i(65222, {	-- Reinforced Sapphirium Greaves
+							["cost"] = {
+								{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
+								{ "i", 60361, 1 },	-- Reinforced Sapphirium Greaves
+							},
+						}),
+						i(60355),	-- Reinforced Sapphirium Handguards
+						i(65225, {	-- Reinforced Sapphirium Handguards
+							["cost"] = {
+								{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
+								{ "i", 60355, 1 },	-- Reinforced Sapphirium Handguards
+							},
+						}),
+						i(60359),	-- Reinforced Sapphirium Headguard
+						i(65221, {	-- Reinforced Sapphirium Headguard
+							["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+						}),
+						i(60346),	-- Reinforced Sapphirium Helmet
+						i(65216, {	-- Reinforced Sapphirium Helmet
+							["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+						}),
+						i(60357),	-- Reinforced Sapphirium Legguards
+						i(65227, {	-- Reinforced Sapphirium Legguards
+							["cost"] = {
+								{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
+								{ "i", 60357, 1 },	-- Reinforced Sapphirium Legguards
+							},
+						}),
+						i(60347),	-- Reinforced Sapphirium Legplates
+						i(65217, {	-- Reinforced Sapphirium Legplates
+							["cost"] = {
+								{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
+								{ "i", 60347, 1 },	-- Reinforced Sapphirium Legplates
+							},
+						}),
+						i(60362),	-- Reinforced Sapphirium Mantle
+						i(65223, {	-- Reinforced Sapphirium Mantle
+							["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+						}),
+						i(60348),	-- Reinforced Sapphirium Pauldrons
+						i(65218, {	-- Reinforced Sapphirium Pauldrons
+							["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+						}),
+						i(60358),	-- Reinforced Sapphirium Shoulderguards
+						i(65228, {	-- Reinforced Sapphirium Shoulderguards
+							["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+						}),
+						i(58187),	-- Ring of the Battle Anthem
+						i(58153),	-- Robes of Embalmed Darkness
+						i(58197),	-- Rock Furrow Boots
+						i(57918),	-- Sash of Musing
+						i(58129),	-- Seafoam Mantle
+						i(60248),	-- Shadowflame Handwraps
+						i(65259, {	-- Shadowflame Handwraps
+							["cost"] = {
+								{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
+								{ "i", 60248, 1 },	-- Shadowflame Handwraps
+							},
+						}),
+						i(60249),	-- Shadowflame Hood
+						i(65260, {	-- Shadowflame Hood
+							["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+						}),
+						i(60250),	-- Shadowflame Leggings
+						i(65261, {	-- Shadowflame Leggings
+							["cost"] = {
+								{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
+								{ "i", 60250, 1 },	-- Shadowflame Leggings
+							},
+						}),
+						i(60252),	-- Shadowflame Mantle
+						i(65263, {	-- Shadowflame Mantle
+							["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+						}),
+						i(60251),	-- Shadowflame Robes
+						i(65262, {	-- Shadowflame Robes
+							["cost"] = {
+								{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
+								{ "i", 60251, 1 },	-- Shadowflame Robes
+							},
+						}),
 						i(57926),	-- Shield of the Four Grey Towers
 						i(57925),	-- Shield of the Mists
-						i(57924),	-- Apple-Bent Bough
-						i(57923),	-- Hermit's Lamp
-						i(57922),	-- Belt of the Falling Rain
-						i(57921),	-- Incense Infused Cummerbund
+						i(65088, {	-- Shoulders of the Forlorn Conqueror
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(65087, {	-- Shoulders of the Forlorn Protector
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(65089, {	-- Shoulders of the Forlorn Vanquisher
+							["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+						}),
+						i(60317),	-- Shoulderwraps of the Raging Elements
+						i(65258, {	-- Shoulderwraps of the Raging Elements
+							["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+						}),
+						i(58486),	-- Slippers of Moving Waters
+						i(58151),	-- Somber Shawl
+						i(58183),	-- Soul Casket
+						i(60322),	-- Spaulders of the Raging Elements
+						i(65253, {	-- Spaulders of the Raging Elements
+							["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+						}),
+						i(58138),	-- Sticky Fingers
+						i(60282),	-- Stormrider's Cover
+						i(65200, {	-- Stormrider's Cover
+							["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+						}),
+						i(60285),	-- Stormrider's Gloves
+						i(65199, {	-- Stormrider's Gloves
+							["cost"] = {
+								{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
+								{ "i", 60285, 1 },	-- Stormrider's Gloves
+							},
+						}),
+						i(60290),	-- Stormrider's Grips
+						i(65189, {	-- Stormrider's Grips
+							["cost"] = {
+								{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
+								{ "i", 60290, 1 },	-- Stormrider's Grips
+							},
+						}),
+						i(60280),	-- Stormrider's Handwraps
+						i(65194, {	-- Stormrider's Handwraps
+							["cost"] = {
+								{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
+								{ "i", 60280, 1 },	-- Stormrider's Handwraps
+							},
+						}),
+						i(60286),	-- Stormrider's Headpiece
+						i(65190, {	-- Stormrider's Headpiece
+							["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+						}),
+						i(60277),	-- Stormrider's Helm
+						i(65195, {	-- Stormrider's Helm
+							["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+						}),
+						i(60283),	-- Stormrider's Leggings
+						i(65201, {	-- Stormrider's Leggings
+							["cost"] = {
+								{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
+								{ "i", 60283, 1 },	-- Stormrider's Leggings
+							},
+						}),
+						i(60288),	-- Stormrider's Legguards
+						i(65191, {	-- Stormrider's Legguards
+							["cost"] = {
+								{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
+								{ "i", 60288, 1 },	-- Stormrider's Legguards
+							},
+						}),
+						i(60278),	-- Stormrider's Legwraps
+						i(65196, {	-- Stormrider's Legwraps
+							["cost"] = {
+								{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
+								{ "i", 60278, 1 },	-- Stormrider's Legwraps
+							},
+						}),
+						i(60279),	-- Stormrider's Mantle
+						i(65198, {	-- Stormrider's Mantle
+							["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+						}),
+						i(60287),	-- Stormrider's Raiment
+						i(65192, {	-- Stormrider's Raiment
+							["cost"] = {
+								{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
+								{ "i", 60287, 1 },	-- Stormrider's Raiment
+							},
+						}),
+						i(60276),	-- Stormrider's Robes
+						i(65197, {	-- Stormrider's Robes
+							["cost"] = {
+								{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
+								{ "i", 60276, 1 },	-- Stormrider's Robes
+							},
+						}),
+						i(60284),	-- Stormrider's Shoulderwraps
+						i(65203, {	-- Stormrider's Shoulderwraps
+							["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+						}),
+						i(60289),	-- Stormrider's Spaulders
+						i(65193, {	-- Stormrider's Spaulders
+							["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+						}),
+						i(60281),	-- Stormrider's Vestment
+						i(65202, {	-- Stormrider's Vestment
+							["cost"] = {
+								{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
+								{ "i", 60281, 1 },	-- Stormrider's Vestment
+							},
+						}),
+						i(57933),	-- String of Beaded Bubbles
+						i(58162),	-- Summer Song Shoulderwraps
+						i(58104),	-- Sunburnt Pauldrons
+						i(57919),	-- Thatch Eave Vines
+						i(57932),	-- The Lustrous Eye
+						i(57927),	-- Throat Slasher
+						i(58482),	-- Treads of Fleeting Joy
+						i(58131),	-- Tunic of Sinking Envy
+						i(60309),	-- Tunic of the Raging Elements
+						i(65244, {	-- Tunic of the Raging Elements
+							["cost"] = {
+								{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
+								{ "i", 60309, 1 },	-- Tunic of the Raging Elements
+							},
+						}),
+						i(58189),	-- Twined Band of Flowers
+						i(58121),	-- Vest of the True Companion
+						i(58126),	-- Vest of the Waking Dream
+						i(58191),	-- Viewless Wings
+						i(58123),	-- Willow Mask
+						i(60298),	-- Wind Dancer's Gloves
+						i(65240, {	-- Wind Dancer's Gloves
+							["cost"] = {
+								{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
+								{ "i", 60298, 1 },	-- Wind Dancer's Gloves
+							},
+						}),
+						i(60299),	-- Wind Dancer's Helmet
+						i(65241, {	-- Wind Dancer's Helmet
+							["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+						}),
+						i(60300),	-- Wind Dancer's Legguards
+						i(65242, {	-- Wind Dancer's Legguards
+							["cost"] = {
+								{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
+								{ "i", 60300, 1 },	-- Wind Dancer's Legguards
+							},
+						}),
+						i(60302),	-- Wind Dancer's Spaulders
+						i(65243, {	-- Wind Dancer's Spaulders
+							["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+						}),
+						i(60301),	-- Wind Dancer's Tunic
+						i(65239, {	-- Wind Dancer's Tunic
+							["cost"] = {
+								{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
+								{ "i", 60301, 1 },	-- Wind Dancer's Tunic
+							},
+						}),
+						i(57928),	-- Windslicer
+						i(58195),	-- Woe Breeder's Boots
+						i(58124),	-- Wrap of the Valley Glades
 					},
 				}),
 				n(69978,  {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
@@ -3390,36 +4587,92 @@ _.Zones =
 					["coord"] = { 56.8, 62.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						currency(81, {	-- Epicurean's Award
-							i(65426),	-- Recipe: Baked Rockfish
-							i(65427),	-- Recipe: Basilisk Liverdog
-							i(65429),	-- Recipe: Beer-Basted Crocolisk
-							i(65424),	-- Recipe: Blackbelly Sushi
-							i(65411),	-- Recipe: Broiled Mountain Trout
-							i(65431),	-- Recipe: Chocolate Cookie
-							i(65430),	-- Recipe: Crocolisk Au Gratin
-							i(65422),	-- Recipe: Delicious Sagefish Tail
-							i(65408),	-- Recipe: Feathered Lure
-							i(65423),	-- Recipe: Fish Fry
-							i(65432),	-- Recipe: Fortune Cookie
-							i(65428),	-- Recipe: Grilled Dragon
-							i(65418),	-- Recipe: Hearty Seafood Soup
-							i(65415),	-- Recipe: Highland Spirits
-							i(65407),	-- Recipe: Lavascale Fillet
-							i(65409),	-- Recipe: Lavascale Minestrone
-							i(65412),	-- Recipe: Lightly Fried Lurker
-							i(65416),	-- Recipe: Lurker Lunch
-							i(65420),	-- Recipe: Mushroom Sauce Mudfish
-							i(65417),	-- Recipe: Pickled Guppy
-							i(65410),	-- Recipe: Salted Eye
-							i(68688),	-- Recipe: Scalding Murglesnout
-							i(65413),	-- Recipe: Seasoned Crab
-							i(65421),	-- Recipe: Severed Sagefish Head
-							i(65425),	-- Recipe: Skewered Eel
-							i(65433),	-- Recipe: South Island Iced Tea
-							i(65414),	-- Recipe: Starfire Espresso
-							i(65419),	-- Recipe: Tender Baked Turtle
-							i(65406),	-- Recipe: Whitecrest Gumbo
+						i(65426, {	-- Recipe: Baked Rockfish
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65427, {	-- Recipe: Basilisk Liverdog
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65429, {	-- Recipe: Beer-Basted Crocolisk
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65424, {	-- Recipe: Blackbelly Sushi
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65411, {	-- Recipe: Broiled Mountain Trout
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65431, {	-- Recipe: Chocolate Cookie
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65430, {	-- Recipe: Crocolisk Au Gratin
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65422, {	-- Recipe: Delicious Sagefish Tail
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65408, {	-- Recipe: Feathered Lure
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65423, {	-- Recipe: Fish Fry
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65432, {	-- Recipe: Fortune Cookie
+							["cost"] = { { "c", 81, 5 }, },	-- 5x Epicurean's Award
+						}),
+						i(65428, {	-- Recipe: Grilled Dragon
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65418, {	-- Recipe: Hearty Seafood Soup
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65415, {	-- Recipe: Highland Spirits
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65407, {	-- Recipe: Lavascale Fillet
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65409, {	-- Recipe: Lavascale Minestrone
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65412, {	-- Recipe: Lightly Fried Lurker
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65416, {	-- Recipe: Lurker Lunch
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65420, {	-- Recipe: Mushroom Sauce Mudfish
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65417, {	-- Recipe: Pickled Guppy
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65410, {	-- Recipe: Salted Eye
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(68688, {	-- Recipe: Scalding Murglesnout
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65413, {	-- Recipe: Seasoned Crab
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65421, {	-- Recipe: Severed Sagefish Head
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65425, {	-- Recipe: Skewered Eel
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65433, {	-- Recipe: South Island Iced Tea
+							["cost"] = { { "c", 81, 5 }, },	-- 5x Epicurean's Award
+						}),
+						i(65414, {	-- Recipe: Starfire Espresso
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65419, {	-- Recipe: Tender Baked Turtle
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+						}),
+						i(65406, {	-- Recipe: Whitecrest Gumbo
+							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
 						}),
 					},
 				}),
@@ -3427,8 +4680,12 @@ _.Zones =
 					["coord"] = { 56.0, 56.0, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(18647),	-- Schematic: Red Firework
-						i(22729),	-- Steam Tonk Controller
+						i(18647, {	-- Schematic: Red Firework
+							["isLimited"] = true,
+						}),
+						i(22729, {	-- Schematic: Steam Tonk Controller
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(50488,  {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
@@ -3443,31 +4700,72 @@ _.Zones =
 					},
 				}),
 				n(12794,  {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 38.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(16345),	-- High Warlord's Blade
-						i(18826),	-- High Warlord's Shield Wall
-						i(18828),	-- High Warlord's Cleaver
-						i(18831),	-- High Warlord's Battle Axe
-						i(18835),	-- High Warlord's Recurve
-						i(18837),	-- High Warlord's Crossbow
-						i(18840),	-- High Warlord's Razor
-						i(18844),	-- High Warlord's Right Claw
-						i(18848),	-- High Warlord's Razor Claw
-						i(18860),	-- High Warlord's Street Sweeper
-						i(18866),	-- High Warlord's Bludgeon
-						i(18868),	-- High Warlord's Pulverizer
-						i(18871),	-- High Warlord's Pig Sticker
-						i(18874),	-- High Warlord's War Staff
-						i(18877),	-- High Warlord's Greatsword
-						i(23464),	-- High Warlord's Battle Mace
-						i(23465),	-- High Warlord's Destroyer
-						i(23466),	-- High Warlord's Spellblade
-						i(23467),	-- High Warlord's Quickblade
-						i(23468),	-- High Warlord's Tome of Destruction
-						i(23469),	-- High Warlord's Tome of Mending
+						i(18831, {	-- High Warlord's Battle Axe
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(23464, {	-- High Warlord's Battle Mace
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(16345, {	-- High Warlord's Blade
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18866, {	-- High Warlord's Bludgeon
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18828, {	-- High Warlord's Cleaver
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18837, {	-- High Warlord's Crossbow
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(23465, {	-- High Warlord's Destroyer
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18877, {	-- High Warlord's Greatsword
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18871, {	-- High Warlord's Pig Sticker
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18868, {	-- High Warlord's Pulverizer
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(23467, {	-- High Warlord's Quickblade
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18835, {	-- High Warlord's Recurve
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18840, {	-- High Warlord's Razor
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18848, {	-- High Warlord's Razor Claw
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18844, {	-- High Warlord's Right Claw
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18826, {	-- High Warlord's Shield Wall
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23466, {	-- High Warlord's Spellblade
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(18860, {	-- High Warlord's Street Sweeper
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
+						i(23468, {	-- High Warlord's Tome of Destruction
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23469, {	-- High Warlord's Tome of Mending
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(18874, {	-- High Warlord's War Staff
+							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+						}),
 					},
 				}),
 				n(46708,  {	-- Suja <Cooking Supplies>
@@ -3482,46 +4780,110 @@ _.Zones =
 					["coord"] = { 75.8, 35.2, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12162),	-- Plans: Hardened Iron Shortsword
-						i(52186, {	-- Elementium Bar
-							i(66107),	-- Plans: Elementium Girdle of Pain
-							i(66105),	-- Plans: Hardened Elementium Girdle
-							i(66109),	-- Plans: Light Elementium Belt
-							i(66103),	-- Plans: Pyrium Weapon Chain
-							i(66127),	-- Plans: Vicious Ornate Pyrium Belt
-							i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
-							i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
-							i(66119),	-- Plans: Vicious Pyrium Belt
-							i(66117),	-- Plans: Vicious Pyrium Bracers
-							i(66118),	-- Plans: Vicious Pyrium Gauntlets
+						i(66100, {	-- Plans: Ebonsteel Belt Buckle
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
 						}),
-						i(53039, {	-- Hardened Elementium Bar
-							i(66113),	-- Plans: Elementium Bonesplitter
-							i(66106),	-- Plans: Elementium Deathplate
-							i(66115),	-- Plans: Elementium Earthguard
-							i(67603),	-- Plans: Elementium Gutslicer
-							i(66111),	-- Plans: Elementium Hammer
-							i(66112),	-- Plans: Elementium Poleaxe
-							i(66114),	-- Plans: Elementium Shank
-							i(66110),	-- Plans: Elementium Spellblade
-							i(66116),	-- Plans: Elementium Stormshield
-							i(66104),	-- Plans: Hardened Elementium Hauberk
-							i(66108),	-- Plans: Light Elementium Chestguard
-							i(66128),	-- Plans: Vicious Ornate Pyrium Boots
-							i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
-							i(66120),	-- Plans: Vicious Pyrium Boots
-							i(66121),	-- Plans: Vicious Pyrium Shoulders
+						i(66113, {	-- Plans: Elementium Bonesplitter
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
-						i(51950, {	-- Pyrium Bar
-							i(66100),	-- Plans: Ebonsteel Belt Buckle
-							i(67606),	-- Plans: Forged Elementium Mindcrusher
-							i(66101),	-- Plans: Pyrium Shield Spike
-							i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
-							i(66131),	-- Plans: Vicious Ornate Pyrium Helm
-							i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
-							i(66124),	-- Plans: Vicious Pyrium Breastplate
-							i(66123),	-- Plans: Vicious Pyrium Helm
-							i(66122),	-- Plans: Vicious Pyrium Legguards
+						i(66106, {	-- Plans: Elementium Deathplate
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66115, {	-- Plans: Elementium Earthguard
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66107, {	-- Plans: Elementium Girdle of Pain
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(67603, {	-- Plans: Elementium Gutslicer
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66111, {	-- Plans: Elementium Hammer
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66112, {	-- Plans: Elementium Poleaxe
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66114, {	-- Plans: Elementium Shank
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66110, {	-- Plans: Elementium Spellblade
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66116, {	-- Plans: Elementium Stormshield
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(67606, {	-- Plans: Forged Elementium Mindcrusher
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66105, {	-- Plans: Hardened Elementium Girdle
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(12162, {	-- Plans: Hardened Iron Shortsword
+							["isLimited"] = true,
+						}),
+						i(66104, {	-- Plans: Hardened Elementium Hauberk
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66109, {	-- Plans: Light Elementium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66108, {	-- Plans: Light Elementium Chestguard
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66101, {	-- Plans: Pyrium Shield Spike
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66103, {	-- Plans: Pyrium Weapon Chain
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66119, {	-- Plans: Vicious Pyrium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66120, {	-- Plans: Vicious Pyrium Boots
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66117, {	-- Plans: Vicious Pyrium Bracers
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66124, {	-- Plans: Vicious Pyrium Breastplate
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66123, {	-- Plans: Vicious Pyrium Helm
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66122, {	-- Plans: Vicious Pyrium Legguards
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66121, {	-- Plans: Vicious Pyrium Shoulders
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
 					},
 				}),
@@ -3529,126 +4891,350 @@ _.Zones =
 					["coord"] = { 60.6, 54.4, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(67095),	-- Pattern: Assassin's Chestplate
-						i(67070),	-- Pattern: Belt of Nefarious Whispers
-						i(67084),	-- Pattern: Charscale Leg Armor
-						i(67094),	-- Pattern: Chestguard of Nature's Fury
-						i(67073),	-- Pattern: Corded Viper Belt
-						i(67100),	-- Pattern: Dragonkiller Tunic
-						i(68193),	-- Pattern: Dragonscale Leg Armor
-						i(71721),	-- Pattern: Drakehide Leg Armor
-						i(18731),	-- Pattern: Heavy Leather Ball
-						i(67068),	-- Pattern: Lightning Lash
-						i(67082),	-- Pattern: Razor-Edged Cloak
-						i(67072),	-- Pattern: StormLeather Sash
-						i(67083),	-- Pattern: Twilight Dragonscale Cloak
-						i(67096),	-- Pattern: Twilight Scale Chestguard
-						i(67064),	-- Pattern: Vicious Charscale Belt
-						i(67063),	-- Pattern: Vicious Charscale Boots	
-						i(67049),	-- Pattern: Vicious Charscale Bracers
-						i(67090),	-- Pattern: Vicious Charscale Chest
-						i(67053),	-- Pattern: Vicious Charscale Gloves
-						i(67091),	-- Pattern: Vicious Charscale Helm
-						i(67079),	-- Pattern: Vicious Charscale Legs
-						i(67078),	-- Pattern: Vicious Charscale Shoulders
-						i(67080),	-- Pattern: Vicious Dragonscale Belt
-						i(67065),	-- Pattern: Vicious Dragonscale Boots
-						i(67054),	-- Pattern: Vicious Dragonscale Bracers
-						i(67093),	-- Pattern: Vicious Dragonscale Chest
-						i(67066),	-- Pattern: Vicious Dragonscale Gloves
-						i(67081),	-- Pattern: Vicious Dragonscale Helm
-						i(67092),	-- Pattern: Vicious Dragonscale Legs
-						i(67055),	-- Pattern: Vicious Dragonscale Shoulders
-						i(67076),	-- Pattern: Vicious Leather Belt
-						i(67060),	-- Pattern: Vicious Leather Boots
-						i(67046),	-- Pattern: Vicious Leather Bracers
-						i(67087),	-- Pattern: Vicious Leather Chest
-						i(67048),	-- Pattern: Vicious Leather Gloves
-						i(67077),	-- Pattern: Vicious Leather Helm
-						i(67089),	-- Pattern: Vicious Leather Legs
-						i(67062),	-- Pattern: Vicious Leather Shoulders
-						i(67044),	-- Pattern: Vicious Wyrmhide Belt
-						i(67058),	-- Pattern: Vicious Wyrmhide Boots
-						i(67042),	-- Pattern: Vicious Wyrmhide Bracers
-						i(67075),	-- Pattern: Vicious Wyrmhide Chest	
-						i(67056),	-- Pattern: Vicious Wyrmhide Gloves
-						i(67086),	-- Pattern: Vicious Wyrmhide Helm
-						i(67085),	-- Pattern: Vicious Wyrmhide Legs
-						i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
+						i(67095, {	-- Pattern: Assassin's Chestplate
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67070, {	-- Pattern: Belt of Nefarious Whispers
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67084, {	-- Pattern: Charscale Leg Armor
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67094, {	-- Pattern: Chestguard of Nature's Fury
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67073, {	-- Pattern: Corded Viper Belt
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67100, {	-- Pattern: Dragonkiller Tunic
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(68193, {	-- Pattern: Dragonscale Leg Armor
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(71721, {	-- Pattern: Drakehide Leg Armor
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(18731, {	-- Pattern: Heavy Leather Ball
+							["isLimited"] = true,
+						}),
+						i(67068, {	-- Pattern: Lightning Lash
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67082, {	-- Pattern: Razor-Edged Cloak
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67072, {	-- Pattern: StormLeather Sash
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67083, {	-- Pattern: Twilight Dragonscale Cloak
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67096, {	-- Pattern: Twilight Scale Chestguard
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67064, {	-- Pattern: Vicious Charscale Belt
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67063, {	-- Pattern: Vicious Charscale Boots	
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67049, {	-- Pattern: Vicious Charscale Bracers
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67090, {	-- Pattern: Vicious Charscale Chest
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67053, {	-- Pattern: Vicious Charscale Gloves
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67091, {	-- Pattern: Vicious Charscale Helm
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67079, {	-- Pattern: Vicious Charscale Legs
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67078, {	-- Pattern: Vicious Charscale Shoulders
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67080, {	-- Pattern: Vicious Dragonscale Belt
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67065, {	-- Pattern: Vicious Dragonscale Boots
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67054, {	-- Pattern: Vicious Dragonscale Bracers
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67093, {	-- Pattern: Vicious Dragonscale Chest
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67066, {	-- Pattern: Vicious Dragonscale Gloves
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67081, {	-- Pattern: Vicious Dragonscale Helm
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67092, {	-- Pattern: Vicious Dragonscale Legs
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67055, {	-- Pattern: Vicious Dragonscale Shoulders
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67076, {	-- Pattern: Vicious Leather Belt
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67060, {	-- Pattern: Vicious Leather Boots
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67046, {	-- Pattern: Vicious Leather Bracers
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67087, {	-- Pattern: Vicious Leather Chest
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67048, {	-- Pattern: Vicious Leather Gloves
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67077, {	-- Pattern: Vicious Leather Helm
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67089, {	-- Pattern: Vicious Leather Legs
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67062, {	-- Pattern: Vicious Leather Shoulders
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67044, {	-- Pattern: Vicious Wyrmhide Belt
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67058, {	-- Pattern: Vicious Wyrmhide Boots
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67075, {	-- Pattern: Vicious Wyrmhide Chest	
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67086, {	-- Pattern: Vicious Wyrmhide Helm
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67085, {	-- Pattern: Vicious Wyrmhide Legs
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
+						i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders
+							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+						}),
 					},
 				}),
 				n(57922,  {	-- Taryssa Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 72.4, 34.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						currency(361, {	-- Illustrious Jewelcrafter's Token
-							i(71928),	-- Design: Accurate Shadow Spinel
-							i(71917),	-- Design: Adept Lava Coral
-							i(71919),	-- Design: Artful Lava Coral
-							i(71893),	-- Design: Balanced Elven Peridot
-							i(71943),	-- Design: Bold Queen's Garnet
-							i(71941),	-- Design: Brilliant Queen's Garnet
-							i(71912),	-- Design: Champion's Lava Coral
-							i(71906),	-- Design: Crafty Lava Coral
-							i(71905),	-- Design: Deadly Lava Coral
-							i(71937),	-- Design: Defender's Shadow Spinel
-							i(71913),	-- Design: Deft Lava Coral
-							i(71939),	-- Design: Delicate Queen's Garnet
-							i(71898),	-- Design: Energized Elven Peridot
-							i(71931),	-- Design: Etched Shadow Spinel
-							i(71916),	-- Design: Fierce Lava Coral
-							i(71920),	-- Design: Fine Lava Coral
-							i(71942),	-- Design: Flashing Queen's Garnet
-							i(71901),	-- Design: Forceful Elven Peridot
-							i(71947),	-- Design: Fractured Lightstone
-							i(71927),	-- Design: Glinting Shadow Spinel
-							i(71935),	-- Design: Guardian's Shadow Spinel
-							i(71891),	-- Design: Infused Elven Peridot
-							i(71908),	-- Design: Inscribed Lava Coral
-							i(71899),	-- Design: Jagged Elven Peridot
-							i(71918),	-- Design: Keen Lava Coral
-							i(71889),	-- Design: Lightning Elven Peridot
-							i(71922),	-- Design: Lucent Lava Coral
-							i(71887),	-- Design: Misty Elven Peridot
-							i(71932),	-- Design: Mysterious Shadow Spinel
-							i(71948),	-- Design: Mystic Lightstone
-							i(71902),	-- Design: Nimble Elven Peridot
-							i(71888),	-- Design: Piercing Elven Peridot
-							i(71909),	-- Design: Polished Lava Coral
-							i(71907),	-- Design: Potent Lava Coral
-							i(71940),	-- Design: Precise Queen's Garnet
-							i(71903),	-- Design: Puissant Elven Peridot
-							i(71933),	-- Design: Purified Shadow Spinel
-							i(71946),	-- Design: Quick Lightstone
-							i(71896),	-- Design: Radiant Elven Peridot
-							i(71915),	-- Design: Reckless Lava Coral
-							i(71900),	-- Design: Regal Elven Peridot
-							i(71910),	-- Design: Resolute Lava Coral
-							i(71926),	-- Design: Resplendent Lava Coral
-							i(71930),	-- Design: Retaliating Shadow Spinel
-							i(71821),	-- Design: Rigid Deepholm Iolite
-							i(71890),	-- Design: Sensei's Elven Peridot
-							i(71897),	-- Design: Shattered Elven Peridot
-							i(71934),	-- Design: Shifting Shadow Spinel
-							i(71921),	-- Design: Skillful Lava Coral
-							i(71944),	-- Design: Smooth Lightstone
-							i(71886),	-- Design: Solid Deepholm Iolite
-							i(71938),	-- Design: Sovereign Shadow Spinel
-							i(71885),	-- Design: Sparkling Deepholm Iolite
-							i(71925),	-- Design: Splendid Lava Coral
-							i(71911),	-- Design: Stalwart Lava Coral
-							i(71904),	-- Design: Steady Elven Peridot
-							i(71884),	-- Design: Stormy Deepholm Iolite
-							i(71945),	-- Design: Subtle Lightstone
-							i(71923),	-- Design: Tenuous Lava Coral
-							i(71936),	-- Design: Timeless Shadow Spinel
-							i(71895),	-- Design: Turbid Elven Peridot
-							i(71929),	-- Design: Veiled Shadow Spinel
-							i(71894),	-- Design: Vivid Elven Peridot
-							i(71914),	-- Design: Wicked Lava Coral
-							i(71924),	-- Design: Willful Lava Coral
-							i(71892),	-- Design: Zen Elven Peridot
-							i(71949),	-- Tome of Burning Jewels
+						i(71928, {	-- Design: Accurate Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71917, {	-- Design: Adept Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71919, {	-- Design: Artful Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71893, {	-- Design: Balanced Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71943, {	-- Design: Bold Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71941, {	-- Design: Brilliant Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71912, {	-- Design: Champion's Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71906, {	-- Design: Crafty Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71905, {	-- Design: Deadly Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71937, {	-- Design: Defender's Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71913, {	-- Design: Deft Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71939, {	-- Design: Delicate Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71898, {	-- Design: Energized Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71931, {	-- Design: Etched Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71916, {	-- Design: Fierce Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71920, {	-- Design: Fine Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71942, {	-- Design: Flashing Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71901, {	-- Design: Forceful Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71947, {	-- Design: Fractured Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71927, {	-- Design: Glinting Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71935, {	-- Design: Guardian's Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71891, {	-- Design: Infused Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71908, {	-- Design: Inscribed Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71899, {	-- Design: Jagged Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71918, {	-- Design: Keen Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71889, {	-- Design: Lightning Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71922, {	-- Design: Lucent Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71887, {	-- Design: Misty Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71932, {	-- Design: Mysterious Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71948, {	-- Design: Mystic Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71902, {	-- Design: Nimble Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71888, {	-- Design: Piercing Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71909, {	-- Design: Polished Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71907, {	-- Design: Potent Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71940, {	-- Design: Precise Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71903, {	-- Design: Puissant Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71933, {	-- Design: Purified Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71946, {	-- Design: Quick Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71896, {	-- Design: Radiant Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71915, {	-- Design: Reckless Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71900, {	-- Design: Regal Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71910, {	-- Design: Resolute Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71926, {	-- Design: Resplendent Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71930, {	-- Design: Retaliating Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71821, {	-- Design: Rigid Deepholm Iolite
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71890, {	-- Design: Sensei's Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71897, {	-- Design: Shattered Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71934, {	-- Design: Shifting Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71921, {	-- Design: Skillful Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71944, {	-- Design: Smooth Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71886, {	-- Design: Solid Deepholm Iolite
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71938, {	-- Design: Sovereign Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71885, {	-- Design: Sparkling Deepholm Iolite
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71925, {	-- Design: Splendid Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71911, {	-- Design: Stalwart Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71904, {	-- Design: Steady Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71884, {	-- Design: Stormy Deepholm Iolite
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71945, {	-- Design: Subtle Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71923, {	-- Design: Tenuous Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71936, {	-- Design: Timeless Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71895, {	-- Design: Turbid Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71929, {	-- Design: Veiled Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71894, {	-- Design: Vivid Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71914, {	-- Design: Wicked Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71924, {	-- Design: Willful Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71892, {	-- Design: Zen Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71949, {	-- Tome of Burning Jewels
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
 						}),
 					},
 				}),
@@ -3656,15 +5242,21 @@ _.Zones =
 					["coord"] = { 36.8, 84.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(18647),	-- Schematic: Red Firework
-						i(22729),	-- Schematic: Steam Tonk Controller
+						i(18647, {	-- Schematic: Red Firework
+							["isLimited"] = true,
+						}),
+						i(22729, {	-- Schematic: Steam Tonk Controller
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(3315,   {	-- Tor'phan <Cloth & Leather Armor Merchant>
 					["coord"] = { 60.8, 59.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12255),	-- Pale Leggings
+						i(12255, {	-- Pale Leggings
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(66022,  {	-- Turtlemaster Odai <Dragon Turtle Breeder>
@@ -3726,8 +5318,12 @@ _.Zones =
 					["coord"] = { 36.6, 86.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(18647),	-- Schematic: Red Firework
-						i(22729),	-- Schematic: Steam Tonk Controller
+						i(18647, {	-- Schematic: Red Firework
+							["isLimited"] = true,
+						}),
+						i(22729, {	-- Schematic: Steam Tonk Controller
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(8404,   {	-- Xan'tish <Snake Vendor>
@@ -3752,46 +5348,110 @@ _.Zones =
 					["coord"] = { 36.2, 83.2, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12162),	-- Plans: Hardened Iron Shortsword
-						i(52186, {	-- Elementium Bar
-							i(66107),	-- Plans: Elementium Girdle of Pain
-							i(66105),	-- Plans: Hardened Elementium Girdle
-							i(66109),	-- Plans: Light Elementium Belt
-							i(66103),	-- Plans: Pyrium Weapon Chain
-							i(66127),	-- Plans: Vicious Ornate Pyrium Belt
-							i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
-							i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
-							i(66119),	-- Plans: Vicious Pyrium Belt
-							i(66117),	-- Plans: Vicious Pyrium Bracers
-							i(66118),	-- Plans: Vicious Pyrium Gauntlets
+						i(66100, {	-- Plans: Ebonsteel Belt Buckle
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
 						}),
-						i(53039, {	-- Hardened Elementium Bar
-							i(66113),	-- Plans: Elementium Bonesplitter
-							i(66106),	-- Plans: Elementium Deathplate
-							i(66115),	-- Plans: Elementium Earthguard
-							i(67603),	-- Plans: Elementium Gutslicer
-							i(66111),	-- Plans: Elementium Hammer
-							i(66112),	-- Plans: Elementium Poleaxe
-							i(66114),	-- Plans: Elementium Shank
-							i(66110),	-- Plans: Elementium Spellblade
-							i(66116),	-- Plans: Elementium Stormshield
-							i(66104),	-- Plans: Hardened Elementium Hauberk
-							i(66108),	-- Plans: Light Elementium Chestguard
-							i(66128),	-- Plans: Vicious Ornate Pyrium Boots
-							i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
-							i(66120),	-- Plans: Vicious Pyrium Boots
-							i(66121),	-- Plans: Vicious Pyrium Shoulders
+						i(66113, {	-- Plans: Elementium Bonesplitter
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
-						i(51950, {	-- Pyrium Bar
-							i(66100),	-- Plans: Ebonsteel Belt Buckle
-							i(67606),	-- Plans: Forged Elementium Mindcrusher
-							i(66101),	-- Plans: Pyrium Shield Spike
-							i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
-							i(66131),	-- Plans: Vicious Ornate Pyrium Helm
-							i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
-							i(66124),	-- Plans: Vicious Pyrium Breastplate
-							i(66123),	-- Plans: Vicious Pyrium Helm
-							i(66122),	-- Plans: Vicious Pyrium Legguards
+						i(66106, {	-- Plans: Elementium Deathplate
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66115, {	-- Plans: Elementium Earthguard
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66107, {	-- Plans: Elementium Girdle of Pain
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(67603, {	-- Plans: Elementium Gutslicer
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66111, {	-- Plans: Elementium Hammer
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66112, {	-- Plans: Elementium Poleaxe
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66114, {	-- Plans: Elementium Shank
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66110, {	-- Plans: Elementium Spellblade
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66116, {	-- Plans: Elementium Stormshield
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(67606, {	-- Plans: Forged Elementium Mindcrusher
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66105, {	-- Plans: Hardened Elementium Girdle
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(12162, {	-- Plans: Hardened Iron Shortsword
+							["isLimited"] = true,
+						}),
+						i(66104, {	-- Plans: Hardened Elementium Hauberk
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66109, {	-- Plans: Light Elementium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66108, {	-- Plans: Light Elementium Chestguard
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66101, {	-- Plans: Pyrium Shield Spike
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66103, {	-- Plans: Pyrium Weapon Chain
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66119, {	-- Plans: Vicious Pyrium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66120, {	-- Plans: Vicious Pyrium Boots
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66117, {	-- Plans: Vicious Pyrium Bracers
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66124, {	-- Plans: Vicious Pyrium Breastplate
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66123, {	-- Plans: Vicious Pyrium Helm
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66122, {	-- Plans: Vicious Pyrium Legguards
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66121, {	-- Plans: Vicious Pyrium Shoulders
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
 					},
 				}),

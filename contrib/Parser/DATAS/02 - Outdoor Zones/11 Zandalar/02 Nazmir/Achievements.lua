@@ -131,12 +131,12 @@ _.Zones =
 					["g"] = {
 						n(143644, {	-- Goramor
 							["coords"] = { 
-								{ 32.35, 35.37, 863 },	-- Goramor
-								{ 35.4, 55.2, 863 },	-- Blind Wunja
+								{ 32.3, 35.3, 863 },	-- Goramor
+								{ 34.6, 54.9, 863 },	-- Blind Wunja
 							},
-							["description"] = "Buy Primative Watermelon from Blind Wunja at 35.4, 55.2 first.",
+							["description"] = "Buy Primitive Watermelon from Blind Wunja inside the cave at 34.6, 54.9 first.",
 							["g"] = {
-								crit(1),		-- Brutosaur of Nazmir Fed
+								crit(1),	-- Brutosaur of Nazmir Fed
 							},
 						}),
 					},
