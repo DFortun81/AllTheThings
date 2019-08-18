@@ -4924,7 +4924,7 @@ _.Zones =
 						i(67082, {	-- Pattern: Razor-Edged Cloak
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67072, {	-- Pattern: StormLeather Sash
+						i(67072, {	-- Pattern: Stormleather Sash
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67083, {	-- Pattern: Twilight Dragonscale Cloak
