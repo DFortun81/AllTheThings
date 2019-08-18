@@ -11842,6 +11842,7 @@ end);
 app:GetWindow("Tradeskills", UIParent, function(self, ...)
 	if not self.initialized then
 		self.initialized = true;
+		self:SetUserPlaced(false);
 		self:SetClampedToScreen(false);
 		self:RegisterEvent("TRADE_SKILL_SHOW");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
@@ -11976,6 +11977,39 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			end
 		end
 		
+		-- TSM Shenanigans
+		self.TSMCraftingVisible = nil;
+		self.SetTSMCraftingVisible = function(self, visible)
+			visible = not not visible;
+			if visible == self.TSMCraftingVisible then
+				return;
+			end
+			self.TSMCraftingVisible = visible;
+			self:ClearAllPoints();
+			if visible and self.cachedTSMFrame then
+				self:SetPoint("TOPLEFT", self.cachedTSMFrame, "TOPRIGHT", 0, 0);
+				self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
+			elseif TradeSkillFrame then
+				-- Default Alignment on the WoW UI.
+				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+				self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+			else
+				StartCoroutine("TSMWHY", function()
+					while InCombatLockdown() or not TradeSkillFrame do coroutine.yield(); end
+					StartCoroutine("TSMWHYPT2", function()
+						local thing = self.TSMCraftingVisible;
+						self.TSMCraftingVisible = nil;
+						self:SetTSMCraftingVisible(thing);
+					end);
+				end);
+				return;
+			end
+			StartCoroutine("UpdateTradeSkills", function()
+				while InCombatLockdown() do coroutine.yield(); end
+				coroutine.yield();
+				self:Update();
+			end);
+		end
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
 			if e == "TRADE_SKILL_LIST_UPDATE" then
@@ -11989,21 +12023,16 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					-- Check to see if ATT has information about this profession.
 					local tradeSkillID = AllTheThings.GetTradeSkillLine();
 					if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
-						if self:IsVisible() then
-							-- app.print("You must have a profession open to open the profession mini list.");
-						end
 						self:SetVisible(false);
 						return false;
 					end
-					
-					-- Set the Window to align with the Profession Window
-					self:ClearAllPoints();
-					self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-					self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
 					self:Update();
 				end
 				self:RefreshRecipes();
 			elseif e == "TRADE_SKILL_SHOW" then
+				if self.TSMCraftingVisible == nil then
+					self:SetTSMCraftingVisible(false);
+				end
 				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
 					self:SetVisible(true);
 				end
@@ -12026,8 +12055,53 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				self:SetVisible(false);
 			end
 		end);
+		return;
 	end
 	if self:IsVisible() then
+		if TSM_API then
+			if not self.cachedTSMFrame then
+				for i,f in ipairs({UIParent:GetChildren()}) do
+					if f.headerBgCenter then
+						self.cachedTSMFrame = f;
+						local oldSetVisible = f.SetVisible;
+						local oldShow = f.Show;
+						local oldHide = f.Hide;
+						f.SetVisible = function(s, visible)
+							oldSetVisible(s, visible);
+							self:SetTSMCraftingVisible(visible);
+						end
+						f.Hide = function(s)
+							oldHide(s);
+							self:SetTSMCraftingVisible(false);
+						end
+						f.Show = function(s)
+							oldShow(s);
+							self:SetTSMCraftingVisible(true);
+						end
+						if self.gettinMadAtDumbNamingConventions then
+							TSMAPI_FOUR.UI.NewElement = self.OldNewElement;
+							self.gettinMadAtDumbNamingConventions = nil;
+							self.OldNewElement = nil;
+						end
+						self:SetTSMCraftingVisible(f:IsShown());
+						return;
+					end
+				end
+				if not self.gettinMadAtDumbNamingConventions then
+					self.gettinMadAtDumbNamingConventions = true;
+					self.OldNewElement = TSMAPI_FOUR.UI.NewElement;
+					TSMAPI_FOUR.UI.NewElement = function(...)
+						StartCoroutine("UpdateTradeSkills", function()
+							while InCombatLockdown() do coroutine.yield(); end
+							coroutine.yield();
+							self:Update();
+						end);
+						return self.OldNewElement(...);
+					end
+				end
+			end
+		end
+		
 		-- Update the window and all of its row data
 		self.data.progress = 0;
 		self.data.total = 0;
