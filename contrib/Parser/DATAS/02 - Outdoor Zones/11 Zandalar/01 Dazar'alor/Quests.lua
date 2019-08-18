@@ -363,6 +363,13 @@ _.Zones =
 					["g"] = {
 						i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 						i(166999),	-- Treasure Map
+						i(169765, {	-- Worldvein Intelligence Reports
+							["questID"] = 56534,	-- Worldvein Rumors
+							["g"] = {
+								spell(302239),	-- Investigating the Rumors
+							},
+						}),
+						i(170150),	-- Map to the Last WOrldvein
 					},
 				}),
 				q(54439, {	-- Crucible of Storms: Relics of Shadow
@@ -563,13 +570,7 @@ _.Zones =
 						["sourceQuest"] = 54118,	-- Every Little Death Helps
 						["classes"] = { 5 },	-- Priest
 					}),
-					i(169765, {	-- Worldvein Intelligence Reports
-						["questID"] = 56534,	-- Worldvein Rumors
-						["g"] = {
-							spell(302239),	-- Investigating the Rumors
-						},
-					}),			
-				}),
+				}),		
 			}),
 		}),
 	}),

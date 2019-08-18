@@ -166,7 +166,7 @@ _.Zones =
 						i(168930),	-- Tome of the Quickening Tides
 						i(168839),	-- Regenerating Barrier of the Depths
 					}),
-					i(163073),	-- Conch of Wa'mundi
+					i(171151),	-- Conch of Wa'mundi
 					i(169365),	-- Damplight Slug
 					i(169274),	-- Tabard of the Unshackled
 					un(1, i(170076)),	-- Recipe: Unagi Skewer
@@ -179,6 +179,7 @@ _.Zones =
 					i(169602),	-- Recipe: Potion of Focused Resolve (Rank 3)
 					i(169600),	-- Recipe: Potion of Empowered Proximity (Rank 3)
 					i(169603),	-- Recipe: Greater Mystical Cauldron (Rank 3)
+					i(168479),	-- Troop Requisition
 				},
 			}),
 			n(154653, {	-- Crafticus Mindbender
@@ -615,6 +616,7 @@ _.Zones =
 					i(169493, {	-- Recipe: Potion of Reconstitution (Rank 3)
 						["u"] = 1,	-- NYI
 					}),
+					i(168480),	-- Troop Requisition
 				},
 			}),
 			n(153024, {	-- Suva

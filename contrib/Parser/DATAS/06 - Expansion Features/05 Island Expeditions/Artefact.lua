@@ -10,13 +10,6 @@ _.ExpansionFeatures =
 			n(-10067, {	-- Artifact
 				["groups"] = {
 					n(-227,	{	-- Victory
-					--[[	n(-17, {	-- Quests
-							i(169764, {	-- Worldvein Intelligence Reports
-								["g"] = {
-									q(56533), 	-- Worldvein Rumors
-								},
-							}),
-						}),--]]
 						i(169687, {	-- Fragment of Zem'lan's Lost Treasure Map
 							i(169693),	-- Zem'Lans Lost Treasure Map
 						}),
