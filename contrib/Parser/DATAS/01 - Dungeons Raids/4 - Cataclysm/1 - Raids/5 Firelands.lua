@@ -265,17 +265,17 @@ _.Instances = { tier(4, {	-- Cataclysm
 					53901,	-- Unstable Magma
 				},
 				["g"] = {
-					i(69976),	-- Pattern: Boots of the Black Flame		
-					i(69966),	-- Pattern: Don Tayo's Inferno Mittens	
-					i(69975),	-- Pattern: Endless Dream  Walkers		
-					i(69965),	-- Pattern: Grips of Altered Reality	
-					i(69962),	-- Pattern: Clutches of Evil		
-					i(69960),	-- Pattern: Dragonfire Gloves	
+					i(69976),	-- Pattern: Boots of the Black Flame
+					i(69966),	-- Pattern: Don Tayo's Inferno Mittens
+					i(69975),	-- Pattern: Endless Dream  Walkers
+					i(69965),	-- Pattern: Grips of Altered Reality
+					i(69962),	-- Pattern: Clutches of Evil
+					i(69960),	-- Pattern: Dragonfire Gloves
 					i(69971),	-- Pattern: Earthen Scale Sabatons
-					i(69974),	-- Pattern: Ethereal Footfalls	
-					i(69972),	-- Pattern: Footwraps of Quenched Fire	
-					i(69961),	-- Pattern: Gloves of Unforgiving Flame	
-					i(69963),	-- Pattern: Heavenly Gloves of the Moon	
+					i(69974),	-- Pattern: Ethereal Footfalls
+					i(69972),	-- Pattern: Footwraps of Quenched Fire
+					i(69961),	-- Pattern: Gloves of Unforgiving Flame
+					i(69963),	-- Pattern: Heavenly Gloves of the Moon
 					i(69973),	-- Pattern: Treads of the Craft
 					i(69970),	-- Plans: Emberforged Elementium Boots
 					i(69969),	-- Plans: Mirrored Boots
@@ -322,7 +322,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
-						["g"] = {		
+						["g"] = {
 							ach(5821),	-- Death from Above
 							i(152976),	-- Cinderweb Egg (PET!)
 							i(71039),	-- Funeral Pyre
@@ -340,7 +340,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71032),	-- Widow's Kiss
 							i(68981),	-- Spidersilk Spindle
 						},
-					}),			
+					}),	
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
 						["g"] = {
@@ -359,7 +359,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71007),	-- Grips of the Raging Giant
 							i(70912),	-- Cracked Obsidian Stompers
 						},
-					}),			
+					}),	
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
 						["g"] = {
@@ -385,7 +385,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(70738),	-- Alysrazor's Band
 							i(68983),	-- Eye of Blazing Power
 						},
-					}),			
+					}),	
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
 						["g"] = {
@@ -412,7 +412,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71027),	-- Treads of Implicit Obedience
 							i(71024),	-- Crystal Prison Band
 						},
-					}),			
+					}),	
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
 						["g"] = {
@@ -432,7 +432,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71315),	-- Decimation Treads
 							i(68982),	-- Necromantic Focus
 						},
-					}),			
+					}),	
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
 						["g"] = {
@@ -441,31 +441,31 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
-							i(71681, {	-- Mantle of the Fiery Conqueror		
-								i(71275),	-- Mantle of the Cleansing Flame	
-								i(71280),	-- Shoulderwraps of the Cleansing Flame	
-								i(71285),	-- Balespider's Mantle	
-								i(71095),	-- Immolation Mantle	
-								i(71067),	-- Immolation Pauldrons	
-								i(70946),	-- Immolation Shoulderguards	
-							}),			
-							i(71688, {	-- Mantle of the Fiery Protector		
-								i(71053),	-- Flamewaker's Spaulders	
-								i(71305),	-- Erupting Volcanic Spaulders	
-								i(71295),	-- Erupting Volcanic Shoulderwraps	
-								i(71300),	-- Erupting Volcanic Mantle	
-								i(71072),	-- Pauldrons of the Molten Giant	
-								i(70941),	-- Shoulderguards of the Molten Giant	
-							}),			
-							i(71674, {	-- Mantle of the Fiery Vanquisher		
-								i(71290),	-- Firehawk Mantle	
-								i(71101),	-- Obsidian Arborweave Spaulders	
-								i(71106),	-- Obsidian Arborweave Mantle	
-								i(71111),	-- Obsidian Arborweave Shoulderwraps	
-								i(71049),	-- Dark Phoenix Spaulders	
-								i(70951),	-- Elementium Deathplate Shoulderguards	
-								i(71062),	-- Elementium Deathplate Pauldrons	
-							}),			
+							i(71681, {	-- Mantle of the Fiery Conqueror
+								i(71275),	-- Mantle of the Cleansing Flame
+								i(71280),	-- Shoulderwraps of the Cleansing Flame
+								i(71285),	-- Balespider's Mantle
+								i(71095),	-- Immolation Mantle
+								i(71067),	-- Immolation Pauldrons
+								i(70946),	-- Immolation Shoulderguards
+							}),	
+							i(71688, {	-- Mantle of the Fiery Protector
+								i(71053),	-- Flamewaker's Spaulders
+								i(71305),	-- Erupting Volcanic Spaulders
+								i(71295),	-- Erupting Volcanic Shoulderwraps
+								i(71300),	-- Erupting Volcanic Mantle
+								i(71072),	-- Pauldrons of the Molten Giant
+								i(70941),	-- Shoulderguards of the Molten Giant
+							}),	
+							i(71674, {	-- Mantle of the Fiery Vanquisher
+								i(71290),	-- Firehawk Mantle
+								i(71101),	-- Obsidian Arborweave Spaulders
+								i(71106),	-- Obsidian Arborweave Mantle
+								i(71111),	-- Obsidian Arborweave Shoulderwraps
+								i(71049),	-- Dark Phoenix Spaulders
+								i(70951),	-- Elementium Deathplate Shoulderguards
+								i(71062),	-- Elementium Deathplate Pauldrons
+							}),	
 							i(69897),	-- Fandral's Flamescythe
 							i(71347),	-- Stinger of the Flaming Scorpion
 							i(71348),	-- Flowform Choker
@@ -479,28 +479,28 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(68926),	-- Jaws of Defeat
 							i(68927),	-- The Hungerer
 						},
-					}),			
+					}),	
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
 						["g"] = {
 							ach(5855),	-- Ragnar-O's
-							i(71675, {	-- Helm of the Fiery Conqueror	
+							i(71675, {	-- Helm of the Fiery Conqueror
 								i(71272),	-- Cowl of the Cleansing Flame
 								i(71277),	-- Hood of the Cleansing Flame
 								i(71282),	-- Balespider's Hood
 								i(71093),	-- Immolation Headguard
 								i(70948),	-- Immolation Faceguard
 								i(71065),	-- Immolation Helmet
-							}),		
-							i(71682, {	-- Helm of the Fiery Protector	
+							}),
+							i(71682, {	-- Helm of the Fiery Protector
 								i(71051),	-- Flamewaker's Headguard
 								i(71293),	-- Erupting Volcanic Headpiece
 								i(71298),	-- Erupting Volcanic Faceguard
 								i(71303),	-- Erupting Volcanic Helmet
 								i(70944),	-- Faceguard of the Molten Giant
 								i(71070),	-- Helmet of the Molten Giant
-							}),		
-							i(71668, {	-- Helm of the Fiery Vanquisher	
+							}),
+							i(71668, {	-- Helm of the Fiery Vanquisher
 								i(71287),	-- Firehawk Hood
 								i(71098),	-- Obsidian Arborweave Headpiece
 								i(71103),	-- Obsidian Arborweave Helm
@@ -523,7 +523,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(68925),	-- Variable Pulse Lightning Capacitor
 							i(68995),	-- Vessel of Acceleration
 						},
-					}),			
+					}),	
 				},
 			}),
 			d(2,  {	-- Heroic
@@ -549,7 +549,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 											i(69113),	-- Apparatus of Khaz'goroth
 										}),
 										i(71359, {	-- Chelley's Sterilized Scalpel
-											i(71560),	-- Chelley's Sterilized Scalpel						
+											i(71560),	-- Chelley's Sterilized Scalpel				
 										}),
 										i(70929, {  -- Firebound Gorget
 											i(71563),	-- Firebound Gorget
@@ -561,7 +561,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 											i(71558),	-- Lava Bolt Crossbow
 										}),
 										i(71362, {	-- Obsidium Cleaver
-											i(71562),	-- Obsidium Cleaver						
+											i(71562),	-- Obsidium Cleaver				
 										}),
 										i(71361, {	-- Ranseur of Hatred
 											i(71557),	-- Ranseur of Hatred
@@ -612,7 +612,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
-						["g"] = {		
+						["g"] = {
 							ach(5821),	-- Death from Above
 							ach(5807),	-- Heroic: Beth'tilac
 							i(152976),	-- Cinderweb Egg (PET!)
@@ -631,7 +631,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71401),	-- Widow's Kiss
 							i(69138),	-- Spidersilk Spindle
 						},
-					}),			
+					}),	
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
 						["g"] = {
@@ -651,7 +651,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71426),	-- Grips of the Raging Giant
 							i(71420),	-- Cracked Obsidian Stompers
 						},
-					}),			
+					}),	
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
 						["g"] = {
@@ -662,23 +662,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 								crit(4),	-- Fiery Tornado
 							}),
 							ach(5809),	-- Heroic: Alysrazor
-							i(71679, {	-- Chest of the Fiery Conqueror	
+							i(71679, {	-- Chest of the Fiery Conqueror
 								i(71530),	-- Robes of the Cleansing Flame
 								i(71535),	-- Vestment of the Cleansing Flame
 								i(71597),	-- Balespider's Robes
 								i(71512),	-- Immolation Battleplate
 								i(71517),	-- Immolation Breastplate
 								i(71522),	-- Immolation Chestguard
-							}),		
-							i(71686, {	-- Chest of the Fiery Protector	
+							}),
+							i(71686, {	-- Chest of the Fiery Protector
 								i(71501),	-- Flamewaker's Tunic
 								i(71542),	-- Erupting Volcanic Tunic
 								i(71547),	-- Erupting Volcanic Cuirass
 								i(71552),	-- Erupting Volcanic Hauberk
 								i(71600),	-- Battleplate of the Molten Giant
 								i(71604),	-- Chestguard of the Molten Giant
-							}),		
-							i(71672, {	-- Chest of the Fiery Vanquisher	
+							}),
+							i(71672, {	-- Chest of the Fiery Vanquisher
 								i(71510),	-- Firehawk Robes
 								i(71486),	-- Obsidian Arborweave Raiment
 								i(71494),	-- Obsidian Arborweave Tunic
@@ -703,7 +703,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71433),	-- Alysrazor's Band
 							i(69149),	-- Eye of Blazing Power
 						},
-					}),			
+					}),	
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
 						["g"] = {
@@ -715,23 +715,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 								crit(5),	-- Shatterstone
 							}),
 							ach(5806),	-- Heroic: Shannox
-							i(71678, {	-- Leggings of the Fiery Conqueror	
+							i(71678, {	-- Leggings of the Fiery Conqueror
 								i(71529),	-- Legwraps of the Cleansing Flame
 								i(71534),	-- Leggings of the Cleansing Flame
 								i(71596),	-- Balespider's Leggings
 								i(71515),	-- Immolation Legplates
 								i(71520),	-- Immolation Greaves
 								i(71525),	-- Immolation Legguards
-							}),		
-							i(71685, {	-- Leggings of the Fiery Protector	
+							}),
+							i(71685, {	-- Leggings of the Fiery Protector
 								i(71504),	-- Flamewaker's Legguards
 								i(71545),	-- Erupting Volcanic Legwraps
 								i(71550),	-- Erupting Volcanic Legguards
 								i(71555),	-- Erupting Volcanic Kilt
 								i(71602),	-- Legplates of the Molten Giant
 								i(71607),	-- Legguards of the Molten Giant
-							}),		
-							i(71671, {	-- Leggings of the Fiery Vanquisher	
+							}),
+							i(71671, {	-- Leggings of the Fiery Vanquisher
 								i(71509),	-- Firehawk Leggings
 								i(71489),	-- Obsidian Arborweave Legguards
 								i(71493),	-- Obsidian Arborweave Legwraps
@@ -756,29 +756,29 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71451),	-- Treads of Implicit Obedience
 							i(71449),	-- Crystal Prison Band
 						},
-					}),			
+					}),	
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
 						["g"] = {
 							ach(5805),	-- Heroic: Baleroc
 							ach(5830),	-- Share the Pain
-							i(71676, {	-- Gauntlets of the Fiery Conqueror	
+							i(71676, {	-- Gauntlets of the Fiery Conqueror
 								i(71527),	-- Handwraps of the Cleansing Flame
 								i(71532),	-- Gloves of the Cleansing Flame
 								i(71594),	-- Balespider's Handwraps
 								i(71513),	-- Immolation Gauntlets
 								i(71518),	-- Immolation Gloves
 								i(71523),	-- Immolation Handguards
-							}),		
-							i(71683, {	-- Gauntlets of the Fiery Protector	
+							}),
+							i(71683, {	-- Gauntlets of the Fiery Protector
 								i(71502),	-- Flamewaker's Gloves
 								i(71543),	-- Erupting Volcanic Handwraps
 								i(71548),	-- Erupting Volcanic Grips
 								i(71553),	-- Erupting Volcanic Gloves
 								i(71601),	-- Gauntlets of the Molten Giant
 								i(71605),	-- Handguards of the Molten Giant
-							}),		
-							i(71669, {	-- Gauntlets of the Fiery Vanquisher	
+							}),
+							i(71669, {	-- Gauntlets of the Fiery Vanquisher
 								i(71507),	-- Firehawk Gloves
 								i(71487),	-- Obsidian Arborweave Grips
 								i(71491),	-- Obsidian Arborweave Handwraps
@@ -802,7 +802,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71457),	-- Decimation Treads
 							i(69139),	-- Necromantic Focus
 						},
-					}),			
+					}),	
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
 						["g"] = {
@@ -812,23 +812,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
-							i(71680, {	-- Shoulders of the Fiery Conqueror	
+							i(71680, {	-- Shoulders of the Fiery Conqueror
 								i(71531),	-- Mantle of the Cleansing Flame
 								i(71536),	-- Shoulderwraps of the Cleansing Flame
 								i(71598),	-- Balespider's Mantle
 								i(71516),	-- Immolation Pauldrons
 								i(71521),	-- Immolation Mantle
 								i(71526),	-- Immolation Shoulderguards
-							}),		
-							i(71687, {	-- Shoulders of the Fiery Protector	
+							}),
+							i(71687, {	-- Shoulders of the Fiery Protector
 								i(71505),	-- Flamewaker's Spaulders
 								i(71546),	-- Erupting Volcanic Mantle
 								i(71551),	-- Erupting Volcanic Spaulders
 								i(71556),	-- Erupting Volcanic Shoulderwraps
 								i(71603),	-- Pauldrons of the Molten Giant
 								i(71608),	-- Shoulderguards of the Molten Giant
-							}),		
-							i(71673, {	-- Shoulders of the Fiery Vanquisher	
+							}),
+							i(71673, {	-- Shoulders of the Fiery Vanquisher
 								i(71511),	-- Firehawk Mantle
 								i(71490),	-- Obsidian Arborweave Spaulders
 								i(71495),	-- Obsidian Arborweave Mantle
@@ -836,7 +836,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(71541),	-- Dark Phoenix Spaulders
 								i(71480),	-- Elementium Deathplate Pauldrons
 								i(71485),	-- Elementium Deathplate Shoulderguards
-							}),		
+							}),
 							i(71466),	-- Fandral's Flamescythe
 							i(71473),	-- Stinger of the Flaming Scorpion
 							i(71472),	-- Flowform Choker
@@ -849,8 +849,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71475),	-- Treads of the Penitent Man
 							i(69111),	-- Jaws of Defeat
 							i(69112),	-- The Hungerer
-						},	
-					}),			
+						},
+					}),	
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
 						["g"] = {
@@ -858,23 +858,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 								title(190),	-- Firelord
 							}),
 							ach(5855),	-- Ragnar-O's
-							i(71677, {	-- Crown of the Fiery Conqueror	
+							i(71677, {	-- Crown of the Fiery Conqueror
 								i(71528),	-- Cowl of the Cleansing Flame
 								i(71533),	-- Hood of the Cleansing Flame
 								i(71595),	-- Balespider's Hood
 								i(71524),	-- Immolation Faceguard
 								i(71514),	-- Immolation Helmet
 								i(71519),	-- Immolation Headguard
-							}),		
-							i(71684, {	-- Crown of the Fiery Protector	
+							}),
+							i(71684, {	-- Crown of the Fiery Protector
 								i(71503),	-- Flamewaker's Headguard
 								i(71544),	-- Erupting Volcanic Faceguard
 								i(71549),	-- Erupting Volcanic Helmet
 								i(71554),	-- Erupting Volcanic Headpiece
 								i(71599),	-- Helmet of the Molten Giant
 								i(71606),	-- Faceguard of the Molten Giant
-							}),		
-							i(71670, {	-- Crown of the Fiery Vanquisher	
+							}),
+							i(71670, {	-- Crown of the Fiery Vanquisher
 								i(71508),	-- Firehawk Hood
 								i(71488),	-- Obsidian Arborweave Headpiece
 								i(71492),	-- Obsidian Arborweave Helm
@@ -897,7 +897,189 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(69110),	-- Variable Pulse Lightning Capacitor
 							i(69167),	-- Vessel of Acceleration
 						},
-					}),			
+					}),	
+				},
+			}),
+			d(24, {	-- Timewalking
+				["lvl"] = 86,
+				["timeline"] = {
+					"added 8.2.5.31337"
+				},
+				["g"] = {
+					-- Common Boss Drops do not drop in Timewalking, from the looks of it.
+					e(192, {	-- Beth'tilac
+						["creatureID"] = 52498,
+						["g"] = {
+							i(152976),	-- Cinderweb Egg (PET!)
+							i(171701),	-- Funeral Pyre
+							i(171664),	-- Mandible of Beth'tilac
+							i(171700),	-- Ward of the Red Widow
+							i(171702),	-- Cowl of the Clicking Menace
+							i(171697),	-- Flickering Shoulders
+							i(171705),	-- Spaulders of Manifold Eyes
+							i(171658),	-- Carapace of Imbibed Flame
+							i(171703),	-- Robes of Smoldering Devastation
+							i(171706),	-- Cindersilk Gloves
+							i(171698),	-- Cinderweb Leggings
+							i(171704),	-- Thoracic Flame Kilt
+							i(171696),	-- Arachnaflame Treads
+							i(171699),	-- Widow's Kiss
+							i(171643),	-- Spidersilk Spindle
+						},
+					}),	
+					e(193, {	-- Lord Rhyolith
+						["creatureID"] = 52558,
+						["g"] = {
+							i(171677),	-- Volcanospike
+							i(171671),	-- Arbalest of Erupting Fury
+							i(171681),	-- Flickering Cowl
+							i(171674),	-- Hood of Rampant Disdain
+							i(171682),	-- Heartstone of Rhyolith
+							i(171672),	-- Dreadfire Drape
+							i(171676),	-- Flaming Core Chestguard
+							i(171680),	-- Incendic Chestguard
+							i(171675),	-- Earthcrack Bracers
+							i(171679),	-- Lava Line Wristbands
+							i(171673),	-- Fireskin Gauntlets
+							i(171678),	-- Grips of the Raging Giant
+							i(171656),	-- Cracked Obsidian Stompers
+						},
+					}),	
+					e(194, {	-- Alysrazor
+						["creatureID"] = 52530,
+						["g"] = {
+							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
+							i(171649),	-- Alysra's Razor
+							i(171650),	-- Greathelm of the Voracious Maw
+							i(171665),	-- Craterflame Spaulders
+							i(171653),	-- Spaulders of Recurring Flame
+							i(171670),	-- Wings of Flame
+							i(171668),	-- Clutch of the Firemother
+							i(171651),	-- Flickering Wristbands
+							i(171666),	-- Clawshaper Gauntlets
+							i(171655),	-- Lavaworm Legplates
+							i(171669),	-- Leggings of Billowing Fire
+							i(171652),	-- Moltenfeather Leggings
+							i(171667),	-- Phoenix-Down Treads
+							i(171654),	-- Alysrazor's Band
+							i(171645),	-- Eye of Blazing Power
+						},
+					}),	
+					e(195, {	-- Shannox
+						["creatureID"] = 53691,
+						["g"] = {
+							i(152975),	-- Smoldering Treat (PET!)
+							i(171684),	-- Skullstealer Greataxe
+							i(171683),	-- Feeding Frenzy
+							i(171689),	-- Goblet of Anger
+							i(171685),	-- Scalp of the Bandit Prince
+							i(171686),	-- Necklace of Fetishes
+							i(171692),	-- Flickering Shoulderpads
+							i(171693),	-- Bracers of the Dread Hunter
+							i(171687),	-- Gloves of Dissolving Smoke
+							i(171688),	-- Uncrushable Belt of Fury
+							i(171695),	-- Legplates of Absolute Control
+							i(171657),	-- Legplates of Frenzied Devotion
+							i(171690),	-- Coalwalker Sandals
+							i(171694),	-- Treads of Implicit Obedience
+							i(171691),	-- Crystal Prison Band
+						},
+					}),	
+					e(196, {	-- Baleroc, the Gatekeeper
+						["creatureID"] = 53494,
+						["g"] = {
+							i(152977),	-- Vibrating Stone (PET!)
+							i(171707),	-- Gatecrasher
+							i(171659),	-- Shard of Torment
+							i(171711),	-- Molten Scream
+							i(171714),	-- Casque of Flame
+							i(171660),	-- Helm of Blazing Glory
+							i(171715),	-- Mantle of Closed Doors
+							i(171717),	-- Shoulderpads of the Forgotten Gate
+							i(171709),	-- Breastplate of the Incendiary Soul
+							i(171712),	-- Gatekeeper's Embrace
+							i(171713),	-- Glowing Wing Bracers
+							i(171661),	-- Flickering Handguards
+							i(171710),	-- Decimation Treads
+							i(171644),	-- Necromantic Focus
+						},
+					}),	
+					e(197, {	-- Majordomo Staghelm
+						["creatureID"] = 52571,
+						["g"] = {
+							i(152978),	-- Fandral's Pet Carrier (PET!)
+							i(122304),	-- Fandral's Seed Pouch (TOY!)
+							i(171807),	-- Balespider's Mantle
+							i(171772),	-- Dark Phoenix Spaulders
+							i(171742),	-- Elementium Deathplate Pauldrons
+							i(171733),	-- Elementium Deathplate Shoulderguards
+							i(171822),	-- Erupting Volcanic Mantle
+							i(171817),	-- Erupting Volcanic Shoulderwraps
+							i(171827),	-- Erupting Volcanic Spaulders
+							i(171776),	-- Flamewaker's Spaulders
+							i(171812),	-- Firehawk Mantle
+							i(171792),	-- Immolation Mantle
+							i(171782),	-- Immolation Pauldrons
+							i(171763),	-- Immolation Shoulderguards
+							i(171797),	-- Mantle of the Cleansing Flame
+							i(171752),	-- Obsidian Arborweave Mantle
+							i(171757),	-- Obsidian Arborweave Shoulderwraps
+							i(171747),	-- Obsidian Arborweave Spaulders
+							i(171787),	-- Pauldrons of the Molten Giant
+							i(171758),	-- Shoulderguards of the Molten Giant
+							i(171802),	-- Shoulderwraps of the Cleansing Flame
+							i(171648),	-- Fandral's Flamescythe
+							i(171719),	-- Stinger of the Flaming Scorpion
+							i(171720),	-- Flowform Choker
+							i(171716),	-- Breastplate of Shifting Visions
+							i(171662),	-- Bracers of the Fiery Path
+							i(171722),	-- Wristwraps of Arrogant Doom
+							i(171718),	-- Grips of Unerring Precision
+							i(171721),	-- Firecat Leggings
+							i(171708),	-- Sandals of Leaping Coals
+							i(171723),	-- Treads of the Penitent Man
+							i(171641),	-- Jaws of Defeat
+							i(171642),	-- The Hungerer
+						},
+					}),	
+					e(198, {	-- Ragnaros
+						["creatureID"] = 52409,
+						["g"] = {
+							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
+							i(171804),	-- Balespider's Hood
+							i(171794),	-- Cowl of the Cleansing Flame
+							i(171770),	-- Dark Phoenix Helmet
+							i(171736),	-- Elementium Deathplate Faceguard
+							i(171740),	-- Elementium Deathplate Helmet
+							i(171820),	-- Erupting Volcanic Faceguard
+							i(171815),	-- Erupting Volcanic Headpiece
+							i(171825),	-- Erupting Volcanic Helmet
+							i(171761),	-- Faceguard of the Molten Giant
+							i(171809),	-- Firehawk Hood
+							i(171774),	-- Flamewaker's Headguard
+							i(171785),	-- Helmet of the Molten Giant
+							i(171799),	-- Hood of the Cleansing Flame
+							i(171765),	-- Immolation Faceguard
+							i(171790),	-- Immolation Headguard
+							i(171780),	-- Immolation Helmet
+							i(171754),	-- Obsidian Arborweave Cover
+							i(171744),	-- Obsidian Arborweave Headpiece
+							i(171749),	-- Obsidian Arborweave Helm
+							un(1, i(171731)),	-- Sho'ravon, Greatstaff of Annihilation [Heroic? WTF Blizzard]
+							i(171732),	-- Sho'ravon, Greatstaff of Annihilation
+							i(171724),	-- Sulfuras, the Extinguished Hand
+							i(171727),	-- Ko'gun, Hammer of the Firelord
+							i(171725),	-- Arathar, the Eye of Flame
+							i(171728),	-- Crown of Flame
+							i(171726),	-- Choker of the Vanquished Lord
+							i(171663),	-- Pauldrons of Roaring Flame
+							i(171730),	-- Fingers of Incineration
+							i(171729),	-- Majordomo's Chain of Office
+							i(171646),	-- Matrix Restabilizer
+							i(171640),	-- Variable Pulse Lightning Capacitor
+							i(171647),	-- Vessel of Acceleration
+						},
+					}),	
 				},
 			}),
 		},
