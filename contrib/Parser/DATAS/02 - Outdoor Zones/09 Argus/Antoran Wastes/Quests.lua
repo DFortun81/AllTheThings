@@ -152,6 +152,38 @@ _.Zones =
 					},
 					["description"] = "You collect this piece, before you can gather the Arc Circuit, Conductive Sheath and Power Cell.\n\nThis item opens the portal to Squadron Commander Vishax",
 				},
+				q(48870, {	-- The Many-Faced Devourer
+					["lvl"] = 110,
+					["itemID"] = 152786,	-- Call of the Devourer
+					["description"] = "You need to collect three items from various locations around the zone. The bone pile will be repeatadly clickable after you have acquired all three and interacted with the bone pile once.\n\nYou must have this item in your inventory for the other items to drop.",
+					["crs"] = {
+						126193,	-- Antoran Defender
+						126171,	-- Tormented Ritualist
+					},
+					["groups"] = {
+						{
+							["itemID"] = 152993,	-- Ur'zul Bone
+							["description"] = "Next to the Altar.",
+							["coord"] = { 50.4, 56.1, 885 },
+							["questID"] = 48870,
+						},
+						{
+							["itemID"] = 152992,	-- Imp Bone
+							["description"] = "Can be found inside imp cave.",
+							["coords"] = {
+								{ 65.6, 26.3, 885 },	-- Entrance
+								{ 66, 20, 885 },	-- Imp Bone
+							},
+							["questID"] = 48870,
+						},
+						{
+							["itemID"] = 152991,	-- Fiend Bone
+							["description"] = "Next to black pillar left of the trap.",
+							["coord"] = { 52.4, 35.3, 885 },
+							["questID"] = 48870,
+						},
+					},
+				}),
 			}),
 		}),
 	}),
