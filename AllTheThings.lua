@@ -12230,6 +12230,14 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					o.visible = false;
 				end
 			end;
+			function UnsetNotCollectible(o)
+				if o.collectible == false then o.collectible = nil; end
+				if o.g then
+					for i,p in ipairs(o.g) do
+						UnsetNotCollectible(p);
+					end
+				end
+			end
 			self.Clear = function(self)
 				local temp = self.data.g[1];
 				wipe(self.data.g);
@@ -12856,6 +12864,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				end
 				
 				for i,o in ipairs(temp) do
+					UnsetNotCollectible(o);
 					MergeObject(self.rawData, o);
 				end
 				for i,o in ipairs(self.rawData) do
