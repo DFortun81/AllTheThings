@@ -10,7 +10,9 @@ _.Zones =
 					["coord"] = { 62.5, 16.0, 17 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(9300),	-- Recipe: Elixir of Demonslaying
+						i(9300, {	-- Recipe: Elixir of Demonslaying
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(44321, {	-- Sarah Lightbrew <Enchanting Supplies>
@@ -28,26 +30,26 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Vendor only sells quest reward items as you progress through the invasion story.",
 					["g"] = {
-						i(118776),	-- Talisman of the Invader
-						i(118777),	-- Bloodcaster's Charm
-						i(118778),	-- Ironmender's Totem
+						i(118774),	-- Armswake Greatcloak
+						i(118763),	-- Blackstone Signet
 						i(118779),	-- Bladespike Charm
 						i(118780),	-- Bloodburn Protector
-						i(118775),	-- Night Prowler's Cloak
-						i(118774),	-- Armswake Greatcloak
+						i(118777),	-- Bloodcaster's Charm
 						i(118773),	-- Butcher's Wrap
-						i(118772),	-- Frostshaper Cape
-						i(118771),	-- Wildfire Windcloak
 						i(118770),	-- Chain of Evasion
 						i(118769),	-- Emberfury Choker
+						i(118772),	-- Frostshaper Cape
 						i(118768),	-- Gnawing Tooth
-						i(118767),	-- Necklace of Celerity
-						i(118766),	-- Skulltooth Collar
-						i(118765),	-- Sapphire Seal
-						i(118764),	-- Ruby-Eye Seal
-						i(118763),	-- Blackstone Signet
-						i(118762),	-- Portal-Breaker's Band
 						i(118761),	-- Invader's Scarlet Seal
+						i(118778),	-- Ironmender's Totem
+						i(118767),	-- Necklace of Celerity
+						i(118775),	-- Night Prowler's Cloak
+						i(118762),	-- Portal-Breaker's Band
+						i(118764),	-- Ruby-Eye Seal
+						i(118765),	-- Sapphire Seal
+						i(118766),	-- Skulltooth Collar
+						i(118776),	-- Talisman of the Invader
+						i(118771),	-- Wildfire Windcloak
 					},
 				}),
 				n(76522, {	-- Zerpy Clampshock <Replacement Quest Rewards and General Goods>
@@ -55,26 +57,26 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["description"] = "Vendor only sells quest reward items as you progress through the invasion story.",
 					["g"] = {
-						i(118776),	-- Talisman of the Invader
-						i(118777),	-- Bloodcaster's Charm
-						i(118778),	-- Ironmender's Totem
+						i(118774),	-- Armswake Greatcloak
+						i(118763),	-- Blackstone Signet
 						i(118779),	-- Bladespike Charm
 						i(118780),	-- Bloodburn Protector
-						i(118775),	-- Night Prowler's Cloak
-						i(118774),	-- Armswake Greatcloak
+						i(118777),	-- Bloodcaster's Charm
 						i(118773),	-- Butcher's Wrap
-						i(118772),	-- Frostshaper Cape
-						i(118771),	-- Wildfire Windcloak
 						i(118770),	-- Chain of Evasion
 						i(118769),	-- Emberfury Choker
+						i(118772),	-- Frostshaper Cape
 						i(118768),	-- Gnawing Tooth
-						i(118767),	-- Necklace of Celerity
-						i(118766),	-- Skulltooth Collar
-						i(118765),	-- Sapphire Seal
-						i(118764),	-- Ruby-Eye Seal
-						i(118763),	-- Blackstone Signet
-						i(118762),	-- Portal-Breaker's Band
 						i(118761),	-- Invader's Scarlet Seal
+						i(118778),	-- Ironmender's Totem
+						i(118767),	-- Necklace of Celerity
+						i(118775),	-- Night Prowler's Cloak
+						i(118762),	-- Portal-Breaker's Band
+						i(118764),	-- Ruby-Eye Seal
+						i(118765),	-- Sapphire Seal
+						i(118766),	-- Skulltooth Collar
+						i(118776),	-- Talisman of the Invader
+						i(118771),	-- Wildfire Windcloak
 					},
 				}),
 			}),

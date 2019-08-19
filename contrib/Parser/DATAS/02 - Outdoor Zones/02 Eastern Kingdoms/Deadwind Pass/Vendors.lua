@@ -11,9 +11,9 @@ _.Zones =
 					["g"] = {
 						i(31401),	-- Design: The Frozen Eye
 						i(33165),	-- Formula: Enchant Weapon - Greater Agility
+						i(29187),	-- Inscription of Endurance
 						i(33124), 	-- Pattern: Cloak of Darkness
 						i(33205), 	-- Pattern: Shadowprowler's Chestguard
-						i(29187),	-- Inscription of Endurance
 					},
 				}),
 			}),
