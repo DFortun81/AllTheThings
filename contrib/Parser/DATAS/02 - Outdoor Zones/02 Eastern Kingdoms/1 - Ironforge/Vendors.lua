@@ -167,7 +167,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64899),	-- Cape of Ironforge
-						i(67258),	-- Ironforge Satchel
+						i(67528),	-- Ironforge Satchel
 						i(45577),	-- Ironforge Tabard
 						i(64900),	-- Mantle of Ironforge
 						i(64898),	-- Shroud of Ironforge

@@ -35,6 +35,7 @@ _.Toys =
 		i(119218),		-- Horde Flag of Victory (Horde)
 		i(88385),		-- Hozen Idol
 		i(88579), 		-- Jin Warmkeg's Brew
+		i(156833),		-- Katys's Stampwhistle
 		i(88580),		-- Ken-Ken's Mask
 		i(95567),		-- Kirin Tor Beacon (Alliance)
 		i(88531),		-- Lao Chin's Last Mug

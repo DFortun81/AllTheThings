@@ -491,6 +491,7 @@ _.ExpansionFeatures =
 								i(87791),	-- Reins of the Crimson Water Strider
 								i(114919),	-- Sea Calf
 							}),
+							i(168416),	-- Angler's Water Striders
 							i(86596),	-- Nat's Fishing Chair
 						}),	
 					}),						

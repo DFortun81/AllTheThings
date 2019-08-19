@@ -463,6 +463,7 @@ _.ExpansionFeatures =
 								i(116825),	-- Savage Fishing Pole [Horde only]
 								i(114919),	-- Sea Calf
 							}),
+							i(168416),	-- Angler's Water Striders
 							i(86596),	-- Nat's Fishing Chair
 						},
 					}),

@@ -9,6 +9,7 @@ _.WorldEvents =
 				prof(356, {	-- Fishing
 					["groups"] = {
 						i(93732),		-- Darkmoon Fishing Cap
+						i(35286),		-- Bloated Giant Sunfish
 					},
 				}),
 			}),

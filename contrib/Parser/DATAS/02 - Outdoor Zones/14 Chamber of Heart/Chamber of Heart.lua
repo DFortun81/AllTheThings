@@ -135,6 +135,9 @@ _.Zones =
 							["sourceQuest"] = 55425,	-- Dominating the Indomitable
 							["lvl"] = 120,
 							["maps"] = { 1472 },	-- The Dragon's Spine
+							["g"] = {
+								i(167830), 	-- Petrified Ebony Scale
+							},
 						}),
 						q(55618, {	-- The Heart Forge
 							["qg"] = 152194,	-- MOTHER

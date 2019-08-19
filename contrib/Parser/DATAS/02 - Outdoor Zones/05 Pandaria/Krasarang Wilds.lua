@@ -1858,6 +1858,7 @@ _.Zones =
 						},
 					}),
 					n(63721, {	-- Nat Pagle <The Anglers Quartermaster>
+						i(168416),	-- Angler's Water Striders
 						i(93225),	-- Grand Commendation of the Anglers
 						i(81354),	-- Reins of the Azure Water Strider Mount
 						i(85505),	-- Recipe: Krasarang Fritters

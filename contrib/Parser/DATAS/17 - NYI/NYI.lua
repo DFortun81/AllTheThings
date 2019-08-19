@@ -1559,6 +1559,8 @@ _.NeverImplemented =
 			un(1, i(38307)),	-- Crafty's Bottomless Inscription Bag
 		}),
 		n(-650, {	-- Quest Item
+			un(1, i(157772)),	-- A Royal Concern
+			un(1, i(157775)),	-- A Royal Concern
 			un(1, i(142362)),	-- zzz old fel-etched bone
 			un(1, i(142371)),	-- zzz old inferno stone
 			un(1, i(142373)),	-- zzz old locket f eldr thalas
@@ -1569,6 +1571,9 @@ _.NeverImplemented =
 			un(1, i(20883)),	-- Unknown
 			un(1, i(20936)),	-- Unknown
 			un(1, i(20937)),	-- Unknown
+			un(1, i(169958)),	-- Fragment of the Void
+			un(1, i(169959)),	-- Fragment of the Void
+			un(1, i(169960)),	-- Fragment of the Void
 			un(1, i(156927)),	-- Great Hall Recall)
 			un(1, i(168023)),	-- dnt smashed transporter relay
 			un(1, i(168030)),	-- dnt hyperbolic circuit
