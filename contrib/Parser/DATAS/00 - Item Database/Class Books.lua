@@ -206,9 +206,5 @@ i(44793);	-- Tome of Polymorph: Rabbit
 i(22739);	-- Tome of Polymorph: Turtle
 i(147580);	-- Tome of the Hybrid Beast
 i(147770);	-- Tome of the PTR Beast
-i(136795);	-- Tome of the Wilds: Charm Woodland Creature
-i(136794);	-- Tome of the Wilds: Flap
-i(136789);	-- Tome of the Wilds: Stag Form
 i(136790);	-- Tome of the Wilds: Track Beasts
-i(136787);	-- Tome of the Wilds: Treant Form
 i(16665);	-- Tome of Tranquilizing Shot

@@ -6207,9 +6207,11 @@ app.BaseSpell = {
 				end
 			end
 			return select(1, GetSpellLink(t.spellID));
+		elseif key == "trackable" then
+			return true;
 		elseif key == "collectible" then
 			return false;
-		elseif key == "collected" then
+		elseif key == "collected" or key == "saved" then
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
 			end

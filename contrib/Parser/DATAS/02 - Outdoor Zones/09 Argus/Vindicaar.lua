@@ -206,29 +206,22 @@ _.Zones =
 						},
 					},
 					q(48078, {	-- Counterbalancing
+						["requireSkill"] = 165,	-- Leatherworking
+						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 						["groups"] = {
 							i(151740),	-- Recipe: Fiendish Shoulderguards (Rank 1)					
 							i(151743),	-- Recipe: Fiendish Spaulders (Rank 1)					
 						},
-						["requireSkill"] = 165,	-- Leatherworking
-						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 					}),
 					q(48055, {	-- Empyrial Strength
+						["qg"] = 125341,	-- Khamir
+						["requireSkill"] = 164,	-- Blacksmithing
+						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 						["groups"] = {
 							{	-- Plans: Empyrial Breastplate [Rank 1]
 								["itemID"] = 151711,	-- Plans: Empyrial Breastplate [Rank 1]
 							},
 						},
-						["qg"] = 125341,	-- Khamir
-						["requireSkill"] = 164,	-- Blacksmithing
-						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-					}),
-					q(49445, {	-- The Prime Exchange
-						["qg"] = 129674,	-- Maras
-					}),
-					q(48069, {	-- The Wrench Calls
-						["requireSkill"] = 202,	-- Engineering
-						["sourceQuests"] = { 46941 },	-- The Path Forward
 					}),
 					q(48065, {	-- Extraterrestrial Exploration
 						["requireSkill"] = 202,	-- Engineering
@@ -240,17 +233,24 @@ _.Zones =
 						},
 					}),
 					q(48074, {	-- Looming Over Me
+						["requireSkill"] = 197,	-- Tailoring
+						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["groups"] = {
 							i(151571),	-- Lightweave Breeches
 						},
-						["requireSkill"] = 197,	-- Tailoring
-						["sourceQuests"] = { 46941 },	-- The Path Forward
 					}),
 					q(48912, {	-- Supplying the Antoran Campaign
+						["isWeekly"] = true,
 						["groups"] = {
 							i(152097),	-- Lightforged Bulwark
 						},
-						["isWeekly"] = true,
+					}),
+					q(49445, {	-- The Prime Exchange
+						["qg"] = 129674,	-- Maras
+					}),
+					q(48069, {	-- The Wrench Calls
+						["requireSkill"] = 202,	-- Engineering
+						["sourceQuests"] = { 46941 },	-- The Path Forward
 					}),
 				}),
 				n(127476, {	-- Scouting Map
@@ -363,36 +363,6 @@ _.Zones =
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_TRINKET"} },	-- Trinkets Only!
 								},
-								--[[
-								["groups"] = {
-									i(136736),	-- Badge of the Wardens
-									i(147275),	-- Beguiler's Talisman
-									
-									i(139076),	-- Bloom of New Growth
-									i(134146),	-- Brulstone Idol
-									i(137419),	-- Chrono Shard
-									i(137400),	-- Coagulated Nightwell Residue
-									i(134322),	-- Drained Mana Crystal
-									i(139075),	-- Forest Creeper's Guile
-									i(134160),	-- Huge Roggstone
-									i(134379),	-- Infernal Bloodstone Shard
-									i(134366),	-- Legionnaire's Mandate
-									i(134335),	-- Mana Crystal Shard
-									i(136749),	-- Mark of the Sentinel
-									i(133766),	-- Nether Anti-Toxin
-									
-									i(137398),	-- Portable Manacracker
-									i(139064),	-- Resilient Heart of the Forest
-									i(134159),	-- Rocksunder Lucky Statue
-									
-									i(147276),	-- Spellbinder's Seal
-									i(147278),	-- Stalwart Crest
-									i(134336),	-- Stolen Mana Crystal
-									i(137406),	-- Terrorbound Nexus
-									
-									i(136750),	-- Vault Guardian's Talisman
-								},
-								]]--
 							}),
 							i(153059, {	-- Relinquished Arcane Relic
 								["sym"] = {

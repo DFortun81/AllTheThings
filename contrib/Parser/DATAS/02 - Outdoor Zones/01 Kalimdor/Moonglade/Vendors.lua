@@ -34,19 +34,19 @@ _.Zones =
 						}),
 						i(141041),	-- Technique: Glyph of the Forest Path
 						i(136795, {	-- Tome of the Wilds: Charm Woodland Creature
-							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
+							["spellID"] = 127757,	-- Charm Woodland Creature
 						}),
 						i(136794, {	-- Tome of the Wilds: Flap
-							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
+							["spellID"] = 164862,	-- Flap
 						}),
 						i(136789, {	-- Tome of the Wilds: Stag Form
-							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
+							["spellID"] = 210053,	-- Stag Form
 						}),
 						i(136790, {	-- Tome of the Wilds: Track Beasts
 							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
 						}),
 						i(136787, {	-- Tome of the Wilds: Treant Form
-							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
+							["spellID"] = 114282,	-- Treant Form
 						}),
 					},
 				}),
