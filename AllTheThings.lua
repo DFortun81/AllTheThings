@@ -5920,6 +5920,8 @@ app.BaseObject = {
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
 			return app.CollectibleQuests and t.questID and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
+		elseif key == "repeatable" then
+			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" or key == "collected" then

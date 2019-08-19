@@ -11,6 +11,10 @@ _.Zones =
 					["questID"] = 48564,
 					["coord"] = { 45.0, 58.8, 830 },
 					["groups"] = {
+						{	-- Commander Endaxis
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 25,		-- Commander Endaxis
+						},
 						i(153255),	-- Isolon Anchorite's Cudgel
 						i(152946),	-- World-Defiler's Casque
 						i(152944),	-- World-Defiler's Shoulderplates
@@ -27,6 +31,10 @@ _.Zones =
 					["questID"] = 48562,
 					["coord"] = { 33.6, 75.2, 830 },
 					["groups"] = {
+						{	-- Commander Sathrenael
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 23,		-- Commander Sathrenael
+						},
 						i(153113),	-- Demon's Soulstone
 					},
 				}),
@@ -35,6 +43,10 @@ _.Zones =
 					["questID"] = 48563,
 					["coord"] = { 39.2, 59.4, 830 },
 					["groups"] = {
+						{	-- Commander Vecaya
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 24,		-- Commander Vecaya
+						},
 						i(153299),	-- Militant Exarch's Shortsword
 						i(152946),	-- World-Defiler's Casque
 						i(152944),	-- World-Defiler's Shoulderplates
@@ -264,7 +276,10 @@ _.Zones =
 					["questID"] = 48666,
 					["coord"] = { 42.2, 70.0, 830 },
 					["groups"] = {
-						-- DROPS CACHE
+						{	-- Imp Mother Laglath
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 17,		-- Imp Mother Laglath
+						},
 					},
 				}),
 				n(125824, {	-- Khazaduum
@@ -272,6 +287,10 @@ _.Zones =
 					["questID"] = 48561,
 					["coord"] = { 38.6, 39.4, 833 },	-- Nath'raxas Spire
 					["groups"] = {
+						{	-- Khazaduum
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 21,		-- Khazaduum
+						},
 						i(153316),	-- Praetor's Ornamental Edge
 						i(152946),	-- World-Defiler's Casque
 						i(152944),	-- World-Defiler's Shoulderplates
@@ -289,6 +308,10 @@ _.Zones =
 					["modelScale"] = 0.63,
 					["coord"] = { 71, 32.4, 830 },
 					["groups"] = {
+						{	-- Naroua
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 22,		-- Naroua
+						},
 						i(153190, {	-- Fel-Spotted Egg
 							i(153191, {	-- Cracked Fel-Spotted Egg
 								i(152843),	-- Darkspore Mana Ray Mount
@@ -306,7 +329,10 @@ _.Zones =
 					["questID"] = 48627,
 					["coord"] = { 58.6, 76.8, 830 },
 					["groups"] = {
-						-- DROPS CACHE
+						{	-- Siegemaster Voraan
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 9,			-- Siegemaster Voraan
+						},
 					},
 				}),
 				n(123464, {	-- Sister Subversia <Coven of Shivarra>
@@ -315,6 +341,10 @@ _.Zones =
 					["modelScale"] = 0.80,
 					["coord"] = { 53.0, 31.0, 830 },
 					["groups"] = {
+						{	-- Sister Subversia
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 26,		-- Sister Subversia
+						},
 						i(153124),	-- Spire of Spite
 					},
 				}),
@@ -323,6 +353,10 @@ _.Zones =
 					["questID"] = 48628,
 					["coord"] = { 55.4, 80.4, 830 },
 					["groups"] = {
+						{	-- Talestra the Vile
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 5,			-- Talestra the Vile
+						},
 						i(153329),	-- Mystic Wakener's Blade
 						i(152946),	-- World-Defiler's Casque
 						i(152944),	-- World-Defiler's Shoulderplates
@@ -339,7 +373,10 @@ _.Zones =
 					["questID"] = 48665,
 					["coord"] = { 70.2, 81.6, 830 },
 					["groups"] = {
-						-- DROPS CACHE
+						{	-- Tar Spitter
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 16,		-- Tar Spitter
+						},
 					},
 				}),
 				n(124804, {	-- Tereck the Selector
@@ -347,6 +384,10 @@ _.Zones =
 					["questID"] = 48664,
 					["coord"] = { 69.6, 56.8, 830 },
 					["groups"] = {
+						{	-- Tereck the Selector
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 14,		-- Tereck the Selector
+						},
 						i(153263),	-- Enclave Aspirant's Cleaver
 						i(152946),	-- World-Defiler's Casque
 						i(152944),	-- World-Defiler's Shoulderplates
@@ -363,6 +404,10 @@ _.Zones =
 					["questID"] = 48629,
 					["coord"] = { 61.0, 20.6, 830 },
 					["groups"] = {
+						{	-- Vagath the Betrayed
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 15,		-- Vagath the Betrayed
+						},
 						i(153114),	-- Nathrezim Tome of Manipulation
 					},
 				}),

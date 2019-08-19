@@ -11,6 +11,10 @@ _.Zones =
 					["questID"] = 48817,
 					["coord"] = { 73.6, 71.8, 885 },
 					["groups"] = {
+						{	-- Admiral Rel'var
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 56,		-- Admiral Rel'var
+						},
 						i(153324),	-- Mac'Aree Vigilant's Bastion
 						i(152886),	-- Zealous Felslinger's Visage
 						i(152888),	-- Zealous Felslinger's Epaulets
@@ -27,6 +31,10 @@ _.Zones =
 					["questID"] = 48818,
 					["coord"] = { 76.0, 56.2, 885 },
 					["groups"] = {
+						{	-- All-Seer Xanarian
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 58,		-- All-Seer Xanarian
+						},
 						i(153123),	-- Cracked Radinax Control Gem (Green Item)
 					},
 				}),
@@ -36,6 +44,10 @@ _.Zones =
 					["modelScale"] = 0.80,
 					["coord"] = { 61.8, 37.6, 885 },
 					["groups"] = {
+						{	-- Blistermaw
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 7,			-- Blistermaw
+						},
 						i(152905),	-- Crimson Slavermaw
 					},
 				}),
@@ -44,6 +56,10 @@ _.Zones =
 					["questID"] = 48865,
 					["coord"] = { 61.2, 21.6, 885 },
 					["groups"] = {
+						{	-- Chief Alchemist Munculus
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 3,			-- Chief Alchemist Munculus
+						},
 						i(153113),	-- Demon's Soulstone
 					},
 				}),
@@ -52,6 +68,10 @@ _.Zones =
 					["questID"] = 48816,
 					["coord"] = { 82.6, 65.8, 885 },
 					["groups"] = {
+						{	-- Commander Texlaz
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 57,		-- Commander Texlaz
+						},
 						i(153123),	-- Cracked Radinax Control Gem (Green Item)
 					},
 				}),
@@ -61,6 +81,10 @@ _.Zones =
 					["description"] = "He takes three people to summon by standing on each of the runes.  He will give you a debuff that will instantly kill you (ignore immunities) unless you kill him before it expires or you walk into Doom Starts.",
 					["coord"] = { 58.0, 12.0, 885 },
 					["groups"] = {
+						{	-- Doomcaster Suprax
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 12,		-- Doomcaster Suprax
+						},
 						i(153194),	-- Legion Communication Orb
 					},
 				}),
@@ -69,6 +93,10 @@ _.Zones =
 					["questID"] = 49241,
 					["coord"] = { 56.0, 45.8, 885 },
 					["groups"] = {
+						{	-- Gar'zoth
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 6,			-- Gar'zoth
+						},
 						i(153113),	-- Demon's Soulstone
 					},
 				}),
@@ -78,6 +106,10 @@ _.Zones =
 					["modelScale"] = 0.73,
 					["coord"] = { 63.8, 22.0, 885 },
 					["groups"] = {
+						{	-- Houndmaster Kerrax
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 52,		-- Houndmaster Kerrax
+						},
 						i(152790),	-- Vile Fiend
 					},
 				}),
@@ -86,6 +118,10 @@ _.Zones =
 					["questID"] = 48815,
 					["coord"] = { 60.6, 48.6, 885 },
 					["groups"] = {
+						{	-- Inquisitor Vethroz
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 59,		-- Inquisitor Vethroz
+						},
 						i(151543),	-- Technique: Glyph of Fel-Touched Shards
 					},
 				}),
@@ -286,6 +322,10 @@ _.Zones =
 					["questID"] = 48813,
 					["coord"] = { 62.6, 54.4, 885 },
 					["groups"] = {
+						{	-- Lieutenant Xakaar
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 55,		-- Lieutenant Xakaar
+						},
 						i(153113),	-- Demon's Soulstone
 					},
 				}),
@@ -294,6 +334,10 @@ _.Zones =
 					["questID"] = 49240,
 					["coord"] = { 57.6, 33.6, 885 },
 					["groups"] = {
+						{	-- Mistress Il'thendra
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 8,			-- Mistress Il'thendra
+						},
 						i(153327),	-- Mystic Wakener's Dagger
 						i(152946),	-- World-Defiler's Casque
 						i(152944),	-- World-Defiler's Shoulderplates
@@ -315,6 +359,10 @@ _.Zones =
 						{ 66.6, 17.8, 885 },	-- Inside the Cave
 					},
 					["groups"] = {
+						{	-- Mother Rosula
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 1,			-- Mother Rosula
+						},
 						i(152999, {
 							["description"] = "Use 100 of these to create a Disgusting Feast.",
 						}),
@@ -331,6 +379,10 @@ _.Zones =
 					["questID"] = 48809,
 					["coord"] = { 64.0, 20.8, 885 },
 					["groups"] = {
+						{	-- Puscilla
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 20,		-- Puscilla
+						},
 						i(152903),	-- Biletooth Gnasher Mount
 					},
 				}),
@@ -344,6 +396,10 @@ _.Zones =
 						{ 84.6, 81.0, 885 },	-- Spawn Location
 					},
 					["groups"] = {
+						{	-- Squadron Commander Vishax
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 11,		-- Squadron Commander Vishax
+						},
 						i(153253),	-- S.F.E. Interceptor
 					},
 				}),
@@ -354,6 +410,10 @@ _.Zones =
 					["coord"] = { 54, 38, 885 },
 					["sourceQuest"] = 48870,	-- The Many-Faced Devourer
 					["groups"] = {
+						{	-- The Many-Faced Devourer
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 10,		-- The Many-Faced Devourer
+						},
 						i(153195),	-- Uuna's Doll
 					},
 				}),
@@ -363,6 +423,10 @@ _.Zones =
 					["modelScale"] = 0.63,
 					["coord"] = { 65.0, 51.6, 885 },
 					["groups"] = {
+						{	-- Varga
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 60,		-- Varga
+						},
 						i(153190, {	-- Fel-Spotted Egg
 							i(153191, {	-- Cracked Fel-Spotted Egg
 								i(152843),	-- Darkspore Mana Ray Mount
@@ -383,6 +447,10 @@ _.Zones =
 						{ 63.6, 57.0, 885 },
 					},
 					["groups"] = {
+						{	-- Ven'orn
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 19,		-- Ven'orn
+						},
 						i(153113),	-- Demon's Soulstone
 					},
 				}),
@@ -391,6 +459,10 @@ _.Zones =
 					["questID"] = 48824,
 					["coord"] = { 55.6, 21.8, 885 },
 					["groups"] = {
+						{	-- Void Warden Valsuran
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 53,		-- Void Warden Valsuran
+						},
 						i(153319),	-- Ardent Vindicator's Greatmace
 						i(152886),	-- Zealous Felslinger's Visage
 						i(152888),	-- Zealous Felslinger's Epaulets
@@ -407,6 +479,10 @@ _.Zones =
 					["questID"] = 48810,
 					["coord"] = { 53.0, 36.6, 885 },
 					["groups"] = {
+						{	-- Vrax'thul
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 18,		-- Vrax'thul
+						},
 						i(152903),	-- Biletooth Gnasher Mount
 					},
 				}),
@@ -415,6 +491,10 @@ _.Zones =
 					["questID"] = 48822,
 					["coord"] = { 53.2, 28.4, 885 },
 					["groups"] = {
+						{	-- Watcher Aival
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 54,		-- Watcher Aival
+						},
 						i(153113),	-- Demon's Soulstone
 					},
 				}),
@@ -423,6 +503,10 @@ _.Zones =
 					["questID"] = 48820,
 					["coord"] = { 51.6, 54.6, 885 },
 					["groups"] = {
+						{	-- Worldsplitter Skuul
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 2,			-- Worldsplitter Skuul
+						},
 						i(153312),	-- Praetor's Ornamental Greatsword
 						i(152886),	-- Zealous Felslinger's Visage
 						i(152888),	-- Zealous Felslinger's Epaulets
@@ -440,6 +524,10 @@ _.Zones =
 					["modelScale"] = 0.65,
 					["coord"] = { 61.6, 65.0, 885 },
 					["groups"] = {
+						{	-- Wrath-Lord Yarez
+							["achievementID"] = 12078,	-- Commander of Argus
+							["criteriaID"] = 51,		-- Wrath-Lord Yarez
+						},
 						i(153126),	-- Micro-Artillery Controller
 					},
 				}),
