@@ -1827,6 +1827,7 @@ _.Zones =
 							i(86558, {	-- Rolling Pin
 								["description"] = "In order to mark this item as collected you will need to shift+click the ATT header.",
 							}),
+							i(92748),	-- Portable Refrigerator
 						}),
 					},
 				}),

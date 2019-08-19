@@ -5,6 +5,9 @@ _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
 		n(-182, {	-- Enchanting
+			n(114, {	-- Mount Equipment
+				i(168412),	-- Light-Step Hoofplates
+			}),
 			filter(101, {	-- Battle Pets
 				i(152878),	-- Enchanted Tiki Mask
 			}),

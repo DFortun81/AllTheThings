@@ -12,6 +12,9 @@ _.Craftables =
 					},
 				}),
 			}),
+			n(114, {	-- Mount Equipment
+				i(168417),	-- Inflatable Mount Shoes
+			}),
 			filter(20, {	-- Daggers
 				i(161922),	-- Honorable Combatant's Shanker [Alliance]
 				i(159857),	-- Honorable Combatant's Shanker [Horde]

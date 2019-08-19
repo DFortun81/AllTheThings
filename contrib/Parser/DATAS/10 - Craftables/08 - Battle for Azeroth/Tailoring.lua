@@ -5,6 +5,9 @@ _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
 		n(-190, {	-- Tailoring
+			n(114, {	-- Mount Equipment
+				i(168427),	-- Saddlechute
+			}),
 			filter(113, {	-- Bags
 				i(154695),	-- Deep Sea Bag
 				i(154696),	-- Embroidered Deep Sea Bag

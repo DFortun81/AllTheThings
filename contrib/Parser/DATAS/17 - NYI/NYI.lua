@@ -1556,6 +1556,7 @@ _.NeverImplemented =
 		filter(113, {	-- Bags
 			un(1, i(130943)),	-- Reusable Tote Bag
 			un(1, i(166699)),	-- Desert Rucksack
+			un(1, i(92746)),	-- Portable Refrigerator
 			un(1, i(38307)),	-- Crafty's Bottomless Inscription Bag
 		}),
 		n(-650, {	-- Quest Item
@@ -3348,6 +3349,7 @@ _.NeverImplemented =
 			un(1, i(43922)),	-- Honed Lightblade
 			--un(1, i(134067)),	-- Unknown
 			un(1, i(162447)),	-- Marrow Render
+			un(1, i(93145)),	-- Scavenged Pandaren Sword
 			un(1, i(64817)),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
 			un(1, i(64858)),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta))
 			un(1, i(140705)),	-- Outlaw Cutlass

@@ -5,6 +5,9 @@ _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
 		n(-187, {	-- Leatherworking
+			n(114, {	-- Mount Equipment
+				i(168419),	-- Comfortable Rider's Barding
+			}),
 			filter(32, {	-- Bows
 				i(161975),	-- Honorable Combatant's Bow [Alliance]
 				i(159896),	-- Honorable Combatant's Bow [Horde]

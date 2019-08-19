@@ -223,6 +223,7 @@ AllTheThings.L = {
 		[111] = GetItemClassInfo(16), 							-- Glyph
 		[112] = FACTION, 										-- Factions
 		[113] = INVTYPE_BAG, 									-- Bags
+		[114] = "Mount Equipment", 								-- Mount Equipment
 
 		-- "Recipes"
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
