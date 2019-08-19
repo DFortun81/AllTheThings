@@ -1,13 +1,15 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S       M O D U L E          -- 
 ---------------------------------------------------
 _.Zones =
 {
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
-			n(-16, { 	-- Rares -- TODO: Consolidate Eredar War Supplies coords if possible
+			n(-16, { 	-- Rares	--TODO: Consolidate Eredar War Supplies coords if possible
 				n(124775, {	-- Commander Endaxis
 					["isDaily"] = true,
+					["questID"] = 48564,
+					["coord"] = { 45.0, 58.8, 830 },
 					["groups"] = {
 						i(153255),	-- Isolon Anchorite's Cudgel
 						i(152946),	-- World-Defiler's Casque
@@ -19,17 +21,19 @@ _.Zones =
 						i(152945),	-- World-Defiler's Tuille
 						i(152948),	-- World-Defiler's Sabatons
 					},
-					["questID"] = 48564,
 				}),
 				n(122912, {	-- Commander Sathrenael
 					["isDaily"] = true,
+					["questID"] = 48562,
+					["coord"] = { 33.6, 75.2, 830 },
 					["groups"] = {
 						i(153113),	-- Demon's Soulstone
 					},
-					["questID"] = 48562,
 				}),
 				n(122911, {	-- Commander Vecaya
 					["isDaily"] = true,
+					["questID"] = 48563,
+					["coord"] = { 39.2, 59.4, 830 },
 					["groups"] = {
 						i(153299),	-- Militant Exarch's Shortsword
 						i(152946),	-- World-Defiler's Casque
@@ -41,10 +45,10 @@ _.Zones =
 						i(152945),	-- World-Defiler's Tuille
 						i(152948),	-- World-Defiler's Sabatons
 					},
-					["questID"] = 48563,
 				}),
 				o(271849, {	-- Eredar War Supplies (very small circular spawn area west and a little south of Krokul Hovel (near Talestra the Vile)
 					["isDaily"] = true,
+					["questID"] = 47753,
 					["coords"] = {
 						{ 52.7, 76.0, 830 },
 						{ 53.1, 73.1, 830 },
@@ -63,10 +67,10 @@ _.Zones =
 						i(152943),	-- World-Defiler's Girdle
 						i(152945),	-- World-Defiler's Tuille
 					},
-					["questID"] = 47753,
 				}),
 				o(271850, {	-- Eredar War Supplies (south central/east and south of Shattered Fields beacon)
 					["isDaily"] = true,
+					["questID"] = 47997,
 					["coords"] = {
 						{ 40.6, 75.5, 830 },
 						{ 42.7, 75.5, 830 },
@@ -94,10 +98,10 @@ _.Zones =
 						i(152943),	-- World-Defiler's Girdle
 						i(152945),	-- World-Defiler's Tuille
 					},
-					["questID"] = 47997,
 				}),
 				o(272455, {	-- Eredar War Supplies (central, around Annihilan Pits)
 					["isDaily"] = true,
+					["questID"] = 47752,
 					["coords"] = {
 						{ 49.6, 58.8, 830 },
 						{ 52.0, 59.6, 830 },
@@ -117,10 +121,10 @@ _.Zones =
 						i(152945),	-- World-Defiler's Tuille
 						i(152948),	-- World-Defiler's Sabatons
 					},
-					["questID"] = 47752,
 				}),
 				o(272456, {	-- Eredar War Supplies (north)
 					["isDaily"] = true,
+					["questID"] = 47999,
 					["coords"] = {
 						{ 43.3, 36.3, 830 },
 						{ 48.6, 31.0, 830 },
@@ -157,10 +161,10 @@ _.Zones =
 						i(152943),	-- World-Defiler's Girdle
 						i(152948),	-- World-Defiler's Sabatons
 					},
-					["questID"] = 47999,
 				}),
 				o(272770, {	-- Eredar War Supplies (southwest, in/around the Xenedar)
 					["isDaily"] = true,
+					["questID"] = 48336,
 					["coords"] = {
 						{ 26.1, 68.1, 830 },
 						{ 27.2, 66.8, 830 },
@@ -189,10 +193,10 @@ _.Zones =
 						i(152945),	-- World-Defiler's Tuille
 						i(152948),	-- World-Defiler's Sabatons
 					},
-					["questID"] = 48336,
 				}),
 				o(272771, {	-- Eredar War Supplies (scattered around center and northeast)
 					["isDaily"] = true,
+					["questID"] = 48339,
 					["coords"] = {
 						{ 46.1, 40.7, 830 },
 						{ 44.9, 43.5, 830 },
@@ -226,10 +230,10 @@ _.Zones =
 						i(152949),	-- World-Defiler's Cuirass
 						i(152943),	-- World-Defiler's Girdle
 					},
-					["questID"] = 48339,
 				}),
 				o(273222, {	-- Eredar War Supplies (southeast)
 					["isDaily"] = true,
+					["questID"] = 48000,
 					["coords"] = {
 						{ 63.0, 68.2, 830 },
 						{ 67.9, 71.5, 830 },
@@ -248,38 +252,42 @@ _.Zones =
 						{ 67.9, 62.5, 830 },
 					},
 					["groups"] = {
-						i(152949),	--World-Defiler's Cuirass
-						i(152942),	--World-Defiler's Wristguards
-						i(152947),	--World-Defiler's Gauntlets
-						i(152943),	--World-Defiler's Girdle
-						i(152945),	--World-Defiler's Tuille
+						i(152949),	-- World-Defiler's Cuirass
+						i(152942),	-- World-Defiler's Wristguards
+						i(152947),	-- World-Defiler's Gauntlets
+						i(152943),	-- World-Defiler's Girdle
+						i(152945),	-- World-Defiler's Tuille
 					},
-					["questID"] = 48000,
 				}),
 				n(125820, {	-- Imp Mother Laglath
 					["isDaily"] = true,
+					["questID"] = 48666,
+					["coord"] = { 42.2, 70.0, 830 },
 					["groups"] = {
 						-- DROPS CACHE
 					},
-					["questID"] = 48666,
 				}),
 				n(125824, {	-- Khazaduum
 					["isDaily"] = true,
-					["groups"] = {
-						i(153316), --Praetor's Ornamental Edge
-						i(152946),	--World-Defiler's Casque
-						i(152944),	--World-Defiler's Shoulderplates
-						i(152949),	--World-Defiler's Cuirass
-						i(152942),	--World-Defiler's Wristguards
-						i(152947),	--World-Defiler's Gauntlets
-						i(152943),	--World-Defiler's Girdle
-						i(152945),	--World-Defiler's Tuille
-						i(152948),	--World-Defiler's Sabatons
-					},
 					["questID"] = 48561,
+					["coord"] = { 38.6, 39.4, 833 },	-- Nath'raxas Spire
+					["groups"] = {
+						i(153316),	-- Praetor's Ornamental Edge
+						i(152946),	-- World-Defiler's Casque
+						i(152944),	-- World-Defiler's Shoulderplates
+						i(152949),	-- World-Defiler's Cuirass
+						i(152942),	-- World-Defiler's Wristguards
+						i(152947),	-- World-Defiler's Gauntlets
+						i(152943),	-- World-Defiler's Girdle
+						i(152945),	-- World-Defiler's Tuille
+						i(152948),	-- World-Defiler's Sabatons
+					},
 				}),
 				n(126419, {	-- Naroua, King of the Forest
 					["isDaily"] = true,
+					["questID"] = 48667,
+					["modelScale"] = 0.63,
+					["coord"] = { 71, 32.4, 830 },
 					["groups"] = {
 						i(153190, {	-- Fel-Spotted Egg
 							i(153191, {	-- Cracked Fel-Spotted Egg
@@ -292,67 +300,71 @@ _.Zones =
 							}),
 						}),
 					},
-					["questID"] = 48667,
-					["modelScale"] = 0.63,
 				}),
 				n(120393, {	-- Siegemaster Voraan
 					["isDaily"] = true,
+					["questID"] = 48627,
+					["coord"] = { 58.6, 76.8, 830 },
 					["groups"] = {
 						-- DROPS CACHE
 					},
-					["questID"] = 48627,
 				}),
-				n(123464, {	-- Sister Subversia
+				n(123464, {	-- Sister Subversia <Coven of Shivarra>
 					["isDaily"] = true,
+					["questID"] = 48565,
+					["modelScale"] = 0.80,
+					["coord"] = { 53.0, 31.0, 830 },
 					["groups"] = {
 						i(153124),	-- Spire of Spite
 					},
-					["questID"] = 48565,
-					["modelScale"] = 0.80,
 				}),
 				n(123689, {	-- Talestra the Vile
 					["isDaily"] = true,
-					["groups"] = {
-						i(153329),	--Mystic Wakener's Blade
-						i(152946),	--World-Defiler's Casque
-						i(152944),	--World-Defiler's Shoulderplates
-						i(152949),	--World-Defiler's Cuirass
-						i(152942),	--World-Defiler's Wristguards
-						i(152947),	--World-Defiler's Gauntlets
-						i(152943),	--World-Defiler's Girdle
-						i(152945),	--World-Defiler's Tuille
-						i(152948),	--World-Defiler's Sabatons
-					},
 					["questID"] = 48628,
+					["coord"] = { 55.4, 80.4, 830 },
+					["groups"] = {
+						i(153329),	-- Mystic Wakener's Blade
+						i(152946),	-- World-Defiler's Casque
+						i(152944),	-- World-Defiler's Shoulderplates
+						i(152949),	-- World-Defiler's Cuirass
+						i(152942),	-- World-Defiler's Wristguards
+						i(152947),	-- World-Defiler's Gauntlets
+						i(152943),	-- World-Defiler's Girdle
+						i(152945),	-- World-Defiler's Tuille
+						i(152948),	-- World-Defiler's Sabatons
+					},
 				}),
 				n(125479, {	-- Tar Spitter
 					["isDaily"] = true,
+					["questID"] = 48665,
+					["coord"] = { 70.2, 81.6, 830 },
 					["groups"] = {
 						-- DROPS CACHE
 					},
-					["questID"] = 48665,
 				}),
 				n(124804, {	-- Tereck the Selector
 					["isDaily"] = true,
-					["groups"] = {
-						i(153263),	--Enclave Aspirant's Cleaver
-						i(152946),	--World-Defiler's Casque
-						i(152944),	--World-Defiler's Shoulderplates
-						i(152949),	--World-Defiler's Cuirass
-						i(152942),	--World-Defiler's Wristguards
-						i(152947),	--World-Defiler's Gauntlets
-						i(152943),	--World-Defiler's Girdle
-						i(152945),	--World-Defiler's Tuille
-						i(152948),	--World-Defiler's Sabatons
-					},
 					["questID"] = 48664,
+					["coord"] = { 69.6, 56.8, 830 },
+					["groups"] = {
+						i(153263),	-- Enclave Aspirant's Cleaver
+						i(152946),	-- World-Defiler's Casque
+						i(152944),	-- World-Defiler's Shoulderplates
+						i(152949),	-- World-Defiler's Cuirass
+						i(152942),	-- World-Defiler's Wristguards
+						i(152947),	-- World-Defiler's Gauntlets
+						i(152943),	-- World-Defiler's Girdle
+						i(152945),	-- World-Defiler's Tuille
+						i(152948),	-- World-Defiler's Sabatons
+					},
 				}),
 				n(125388, {	-- Vagath the Betrayed
 					["isDaily"] = true,
+					["questID"] = 48629,
+					["coord"] = { 61.0, 20.6, 830 },
 					["groups"] = {
 						i(153114),	-- Nathrezim Tome of Manipulation
 					},
-					["questID"] = 48629,
 				}),
 			}),
 		}),
