@@ -668,6 +668,7 @@ _.Zones =
 					i(141273),	-- Echo of Eons
 					i(143702),	-- Eternity of Wisdom
 					i(141274),	-- Frozen Ley Scar
+					i(141272),	-- Mana-Saber Eye
 					i(141257),	-- Roar of the Ocean
 					i(141259),	-- Seawitch's Foci
 					i(143684),	-- Slavemaster's Malevolence

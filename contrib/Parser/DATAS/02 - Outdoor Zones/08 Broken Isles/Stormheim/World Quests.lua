@@ -529,14 +529,15 @@ _.Zones =
 					i(134203),	-- Three-Toed Rabbit Foot
 				}),
 				n(-387, {	-- Relics
+					i(143691),	-- Bloody Kvaldir Pennant 
 					i(143687),	-- Felskorn Mania
 					i(141261),	-- Fires of Heaven
-					i(143690),	-- Specter of Helheim
 					i(141262),	-- Rune-Etched Quill
+					i(141260),	-- Shieldmaiden's Prayer
+					i(143690),	-- Specter of Helheim
 					i(143688),	-- Stormwing's Roar
 					i(143685),	-- Strength of the Nazjatar
 					i(143689),	-- Weight of Tradition
-					i(143691),	-- Bloody Kvaldir Pennant 
 				}),
 			}),
 		}),	

@@ -1592,6 +1592,7 @@ _.Zones =
 				n(-387,  {	-- Relics
 					i(139076),	-- Bloom of New Growth
 					i(143698),	-- Effervescent Leyblossom
+					i(141271),	-- Hope of the Forest
 					i(141255),	-- Mockery of Life
 					i(141256),	-- Promise of Rebirth
 					i(139064),	-- Resilient Heart of the Forest
