@@ -303,6 +303,9 @@ _.Craftables =
 					}),
 				}),
 			}),
+			sp(227043, {	-- Tome of the Tranquil Mind
+				i(141446),	-- Tome of the Tranquil Mind
+			}),
 			filter(102, {	-- Toy
 				i(129211),	-- Steamy Romance Novel Kit
 			}),

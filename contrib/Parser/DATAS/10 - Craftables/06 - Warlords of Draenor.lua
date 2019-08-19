@@ -119,6 +119,9 @@ _.Craftables =
 					}),
 				}),
 			}),
+			sp(227561, {	-- Tome of the Clear Mind
+				i(141640),	-- Tome of the Clear Mind
+			}),
 			filter(53, {	-- Trinkets
 				i(118602),	-- Laughing Tarot
 				i(118601),	-- Ocean Tarot

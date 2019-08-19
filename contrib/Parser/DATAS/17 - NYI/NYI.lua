@@ -3192,6 +3192,8 @@ _.NeverImplemented =
 			un(1, i(94303)),	-- Tyrannical Gladiator's longbow h s13
 			un(1, i(99780)),	-- Tyrannical Gladiator's longbow a s14
 			un(1, i(99964)),	-- Tyrannical Gladiator's longbow h s14
+			un(1, i(158562)),	-- Howdah-Rider's Bow
+			un(1, i(167141)),	-- Unknown
 			un(1, i(64783)),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
 			un(1, i(111783)),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
