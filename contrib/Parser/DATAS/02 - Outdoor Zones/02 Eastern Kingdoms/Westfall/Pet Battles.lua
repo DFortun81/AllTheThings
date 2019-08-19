@@ -38,7 +38,7 @@ _.Zones =
 					},
 				}),
 				q(31725, {	-- Lindsay
-					["qg"] = 31780,	-- Old MacDonald
+					["qg"] = 65648,	-- Old MacDonald
 					["coord"] = { 80.6, 18.4, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -46,7 +46,7 @@ _.Zones =
 					},
 				}),
 				q(31780, {	-- Old MacDonald
-					["qg"] = 31780,	-- Old MacDonald
+					["qg"] = 65648,	-- Old MacDonald
 					["coord"] = { 80.6, 18.4, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
