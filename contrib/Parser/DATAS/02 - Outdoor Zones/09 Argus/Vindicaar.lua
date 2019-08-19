@@ -18,6 +18,94 @@ _.Zones =
 			["lvl"] = 110,
 			["isRaid"] = true,
 			["groups"] = {
+				n(-4, { 	-- Achievement
+					ach(12073, {	-- Locked and Loaded
+						{
+							["itemID"] = 147496,	-- Fel Heart of Argus
+							["sourceQuest"] = 47182,	-- Long Overdue
+							["groups"] = {
+								{
+									["achievementID"] = 12073,	-- Locked and Loaded
+									["criteriaID"] = 3,	-- Fel Heart of Argus
+								},
+								{
+									["spellID"] = 248011,	-- Fel Heart of Argus
+								},
+								{
+									["questID"] = 48450,	-- First Time Tracking Quest?
+									["repeatable"] = true,
+								},
+								{
+									["questID"] = 48860,	-- Tracking Quest - Active?
+									["repeatable"] = true,
+								},
+							},
+						},
+						{
+							["itemID"] = 151830,	-- Light's Judgement
+							["sourceQuest"] = 47287,	-- The Vindicaar Matrix Core
+							["groups"] = {
+								{
+									["achievementID"] = 12073,	-- Locked and Loaded
+									["criteriaID"] = 1,	-- Light's Judgement
+								},
+								{
+									["spellID"] = 247427,	-- Light's Judgement
+								},
+								{
+									["questID"] = 48451,	-- First Time Tracking Quest?
+									["repeatable"] = true,
+								},
+								{
+									["questID"] = 48858,	-- Tracking Quest - Active?
+									["repeatable"] = true,
+								},
+							},
+						},
+						{
+							["itemID"] = 152098,	-- Lightforged Warframe
+							["sourceQuest"] = 47994,	-- Forming a Bond
+							["groups"] = {
+								{
+									["achievementID"] = 12073,	-- Locked and Loaded
+									["criteriaID"] = 2,	-- Lightforged Warframe
+								},
+								{
+									["spellID"] = 250436,	-- Lightforged Warframe
+								},
+								{
+									["questID"] = 48449,	-- First Time Tracking Quest?
+									["repeatable"] = true,
+								},
+								{
+									["questID"] = 48859,	-- Tracking Quest - Active?
+									["repeatable"] = true,
+								},
+							},
+						},
+						{
+							["itemID"] = 151912,	-- Shroud of Arcane Echoes
+							["sourceQuest"] = 48107,	-- The Sigil of Awakening
+							["groups"] = {
+								{
+									["achievementID"] = 12073,	-- Locked and Loaded
+									["criteriaID"] = 4,	-- Shroud of Arcane Echoes
+								},
+								{
+									["spellID"] = 248779,	-- Shroud of Arcane Echoes
+								},
+								{
+									["questID"] = 48450,	-- First Time Tracking Quest?
+									["repeatable"] = true,
+								},
+								{
+									["questID"] = 48579,	-- Tracking Quest - Active?
+									["repeatable"] = true,
+								},
+							},
+						},
+					}),
+				}),
 				n(-169, {	-- Emissary Quests
 					q(48642, {	-- Argussian Reach
 						["qg"] = 127151,	-- Toraan the Revered
