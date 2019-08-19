@@ -20,33 +20,51 @@ _.Zones =
 					["coord"] = { 76.0, 43.4, 69 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(9302),	-- Recipe: Ghost Dye
-						i(6057),	-- Recipe: Nature Protection Potion
+						i(9302, {	-- Recipe: Ghost Dye
+							["isLimited"] = true,
+						}),
+						i(6057, {	-- Recipe: Nature Protection Potion
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(9548,  {	-- Cawind Trueaim <Gunsmith & Bowyer>
 					["coord"] = { 74.8, 45.6, 69 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(11308),	-- Sylvan Shortbow
+						i(11308, {	-- Sylvan Shortbow
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(7854,  {	-- Jangdor Swiftstrider <Leatherworking Supplies>
 					["coord"] = { 52.8, 47.0, 69 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(15734),	-- Pattern: Living Shoulders
-						i(8409),	-- Pattern: Nightscape Shoulders
-						i(8385),	-- Pattern: Turtle Scale Gloves
-						i(7451),	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers
+							["isLimited"] = true,
+						}),
+						i(15734, {	-- Pattern: Living Shoulders
+							["isLimited"] = true,
+						}),
+						i(8409, {	-- Pattern: Nightscape Shoulders
+							["isLimited"] = true,
+						}),
+						i(8385, {	-- Pattern: Turtle Scale Gloves
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(8157,  {	-- Logannas <Alchemy Supplies>
 					["coord"] = { 46.6, 43.0, 69 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(9302),	-- Recipe: Ghost Dye
-						i(6057),	-- Recipe: Nature Protection Potion
+						i(9302, {	-- Recipe: Ghost Dye
+							["isLimited"] = true,
+						}),
+						i(6057, {	-- Recipe: Nature Protection Potion
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(40474, {	-- Moro Sungrain <Trade Supplies>
@@ -61,9 +79,15 @@ _.Zones =
 					["coord"] = { 45.4, 41.2, 69 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(15734),	-- Pattern: Living Shoulders
-						i(8385),	-- Pattern: Turtle Scale Gloves
-						i(7451),	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers
+							["isLimited"] = true,
+						}),
+						i(15734, {	-- Pattern: Living Shoulders
+							["isLimited"] = true,
+						}),
+						i(8385, {	-- Pattern: Turtle Scale Gloves
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(8145,  {	-- Sheendra Tallgrass <Trade Supplies>
@@ -90,8 +114,12 @@ _.Zones =
 					["coord"] = { 74.6, 42.6, 69 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12254),	-- Well Oiled Cloak
-						i(12253),	-- Brilliant Red Cloak
+						i(12253, {	-- Brilliant Red Cloak
+							["isLimited"] = true,
+						}),
+						i(12254, {	-- Well Oiled Cloak
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(14637, {	-- Zorbin Fandazzle

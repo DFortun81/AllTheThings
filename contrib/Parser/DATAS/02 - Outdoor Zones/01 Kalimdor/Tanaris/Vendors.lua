@@ -9,11 +9,15 @@ _.Zones =
 				n(5594,   {	-- Alchemist Pestlezugg <Alchemy Supplies>
 					["coord"] = { 50.8, 28.0, 71 },
 					["g"] = {
-						i(6057),	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion
+							["isLimited"] = true,
+						}),
 						i(9303),	-- Recipe: Philosopher's Stone
 						i(12958),	-- Recipe: Transmute Arcanite
 						i(9304),	-- Recipe: Transmute Iron to Gold
-						i(9305),	-- Recipe: Transmute Mithril to Truesilver
+						i(9305, {	-- Recipe: Transmute Mithril to Truesilver
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(21643,  {	-- Alurmi <Keepers of Time Quartermaster>
@@ -388,7 +392,12 @@ _.Zones =
 					},
 				}),
 				n(8131,	  {	-- Blizrik Buckshot <Gunsmith>
-					i(18650),	-- Schematic: EZ-Thro Dynamite II
+					["coord"] = { 50.6, 28.6, 71 },
+					["g"] = {
+						i(18650, {	-- Schematic: EZ-Thro Dynamite II
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(69322,  {	-- Capps Carlin <Cataclysmic Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
@@ -611,7 +620,9 @@ _.Zones =
 				n(40572,  {	-- Haughty Modiste <Fashion Designer>
 					["coord"] = { 50.6, 28.6, 71 },
 					["g"] = {
-						i(37915),	-- Pattern: Dress Shoes
+						i(37915, {	-- Pattern: Dress Shoes
+							["isLimited"] = true,
+						}),
 						i(38327),	-- Pattern: Haliscan Jacket
 						i(38328),	-- Pattern: Haliscan Pantaloons
 					},
@@ -619,7 +630,9 @@ _.Zones =
 				n(5411,   {	-- Krinkle Goodsteel <Blacksmithing Supplies>
 					["coord"] = { 51.2, 30.2, 71 },
 					["g"] = {
-						i(6047),	-- Plans: Golden Scale Coif
+						i(6047, {	-- Plans: Golden Scale Coif
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(7733,   {	-- Innkeeper Fizzgrimble <Innkeeper>
@@ -635,13 +648,12 @@ _.Zones =
 					},
 				}),
 				n(155944, {	-- Otela
-				--	["coord"] = { 52.6, 27.0, 71 },
+					["coord"] = { 42.4, 71.6, 71 },
 					["g"] = {
 						i(170739),	-- Sunswarmed Sand
 						i(170380),	-- Jar of the Sunwarmed Sand
 					},
 				}),
-				
 				n(69323,  {	-- Tiny Tayger <Ruthless Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
@@ -795,7 +807,9 @@ _.Zones =
 				n(6568,   {	-- Vizzklick <Tailoring Supplies>
 					["coord"] = { 50.6, 28.6, 71 },
 					["g"] = {
-						i(7088), 	-- Pattern: Crimson Silk Robe
+						i(7088, { 	-- Pattern: Crimson Silk Robe
+							["isLimited"] = true,
+						}),
 						i(21358),	-- Pattern: Soul Pouch
 					},
 				}),

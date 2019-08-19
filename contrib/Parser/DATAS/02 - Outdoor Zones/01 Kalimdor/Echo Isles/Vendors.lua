@@ -12,9 +12,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(97901),	-- Griftah's Authentic Troll Shoes
-							i(97919),	-- Whole-Body Shinka' Toy
-							i(97942),	-- Sen'jin Spirit Drum Toy
-							i(98552),	-- Xan'tish's Flute Toy
+							i(97919),	-- Whole-Body Shinka' (TOY!)
+							i(97942),	-- Sen'jin Spirit Drum (TOY!)
+							i(98552),	-- Xan'tish's Flute (TOY!)
 						},
 					}),
 				}),

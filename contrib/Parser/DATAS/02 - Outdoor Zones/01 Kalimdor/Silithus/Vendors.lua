@@ -24,59 +24,119 @@ _.Zones =
 				n(15174,  {	-- Calandrath <Innkeeper>
 					["coord"] = { 55.4, 36.6, 81 },
 					["g"] = {
-						i(13496),	-- Recipe: Greater Nature Protection Potion
+						i(13496, {	-- Recipe: Greater Nature Protection Potion
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(132139, {	-- Hagras Wartaker <Blacksmith> (Silithus)
 					["coord"] = { 66.2, 55.2, 81 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12162),	-- Plans: Hardened Iron Shortsword
-						i(52186, {	-- Elementium Bar
-							["g"] = {
-								i(66107),	-- Plans: Elementium Girdle of Pain
-								i(66105),	-- Plans: Hardened Elementium Girdle
-								i(66109),	-- Plans: Light Elementium Belt
-								i(66103),	-- Plans: Pyrium Weapon Chain
-								i(66127),	-- Plans: Vicious Ornate Pyrium Belt
-								i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
-								i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
-								i(66119),	-- Plans: Vicious Pyrium Belt
-								i(66117),	-- Plans: Vicious Pyrium Bracers
-								i(66118),	-- Plans: Vicious Pyrium Gauntlets
-							},
+						i(66100, {	-- Plans: Ebonsteel Belt Buckle
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
 						}),
-						i(53039, {	-- Hardened Elementium Bar
-							["g"] = {
-								i(66113),	-- Plans: Elementium Bonesplitter
-								i(66106),	-- Plans: Elementium Deathplate
-								i(66115),	-- Plans: Elementium Earthguard
-								i(67603),	-- Plans: Elementium Gutslicer
-								i(66111),	-- Plans: Elementium Hammer
-								i(66112),	-- Plans: Elementium Poleaxe
-								i(66114),	-- Plans: Elementium Shank
-								i(66110),	-- Plans: Elementium Spellblade
-								i(66116),	-- Plans: Elementium Stormshield
-								i(66104),	-- Plans: Hardened Elementium Hauberk
-								i(66108),	-- Plans: Light Elementium Chestguard
-								i(66128),	-- Plans: Vicious Ornate Pyrium Boots
-								i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
-								i(66120),	-- Plans: Vicious Pyrium Boots
-								i(66121),	-- Plans: Vicious Pyrium Shoulders
-							},
+						i(66113, {	-- Plans: Elementium Bonesplitter
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
-						i(51950, {	-- Pyrium Bar
-							["g"] = {
-								i(66100),	-- Plans: Ebonsteel Belt Buckle
-								i(67606),	-- Plans: Forged Elementium Mindcrusher
-								i(66101),	-- Plans: Pyrium Shield Spike
-								i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
-								i(66131),	-- Plans: Vicious Ornate Pyrium Helm
-								i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
-								i(66124),	-- Plans: Vicious Pyrium Breastplate
-								i(66123),	-- Plans: Vicious Pyrium Helm
-								i(66122),	-- Plans: Vicious Pyrium Legguards
-							},
+						i(66106, {	-- Plans: Elementium Deathplate
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66115, {	-- Plans: Elementium Earthguard
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66107, {	-- Plans: Elementium Girdle of Pain
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(67603, {	-- Plans: Elementium Gutslicer
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66111, {	-- Plans: Elementium Hammer
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66112, {	-- Plans: Elementium Poleaxe
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66114, {	-- Plans: Elementium Shank
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66110, {	-- Plans: Elementium Spellblade
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66116, {	-- Plans: Elementium Stormshield
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(67606, {	-- Plans: Forged Elementium Mindcrusher
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66105, {	-- Plans: Hardened Elementium Girdle
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(12162, {	-- Plans: Hardened Iron Shortsword
+							["isLimited"] = true,
+						}),
+						i(66104, {	-- Plans: Hardened Elementium Hauberk
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66109, {	-- Plans: Light Elementium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66108, {	-- Plans: Light Elementium Chestguard
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66101, {	-- Plans: Pyrium Shield Spike
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66103, {	-- Plans: Pyrium Weapon Chain
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66119, {	-- Plans: Vicious Pyrium Belt
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66120, {	-- Plans: Vicious Pyrium Boots
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
+						}),
+						i(66117, {	-- Plans: Vicious Pyrium Bracers
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66124, {	-- Plans: Vicious Pyrium Breastplate
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
+							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
+						}),
+						i(66123, {	-- Plans: Vicious Pyrium Helm
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66122, {	-- Plans: Vicious Pyrium Legguards
+							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
+						}),
+						i(66121, {	-- Plans: Vicious Pyrium Shoulders
+							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
 					},
 				}),
@@ -95,7 +155,9 @@ _.Zones =
 				n(15179,  {	-- Mishta <Trade Supplies>
 					["coord"] = { 53.8, 34.4, 81 },
 					["g"] = {
-						i(21952), 	-- Design: Emerald Crown of Destruction
+						i(21952, { 	-- Design: Emerald Crown of Destruction
+							["isLimited"] = true,
+						}),
 						i(22310),	-- Pattern: Cenarion Herb Bag
 						i(22683),	-- Pattern: Gaea's Embrace
 						i(22312),	-- Pattern: Satchel of Cenarius
@@ -117,8 +179,12 @@ _.Zones =
 				n(12956,  {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					["coord"] = { 81.2, 18.6, 81 },
 					["g"] = {
-						i(15724),	-- Pattern: Heavy Scorpid Bracers
-						i(15762),	-- Pattern: Heavy Scorpid Helm
+						i(15724, {	-- Pattern: Heavy Scorpid Bracers
+							["isLimited"] = true,
+						}),
+						i(15762, {	-- Pattern: Heavy Scorpid Helm
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),

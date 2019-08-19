@@ -25,8 +25,12 @@ _.Zones =
 				n(12959, {	-- Nergal <General Goods>
 					["coord"] = { 54.8, 62.6, 78 },
 					["g"] = {
-						i(15772),	-- Pattern: Devilsaur Leggings
-						i(15758),	-- Pattern: Devilsaur Gauntlets
+						i(15758, {	-- Pattern: Devilsaur Gauntlets
+							["isLimited"] = true,
+						}),
+						i(15772, {	-- Pattern: Devilsaur Leggings
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),

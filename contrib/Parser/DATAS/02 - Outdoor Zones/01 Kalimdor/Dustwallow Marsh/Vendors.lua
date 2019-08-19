@@ -18,7 +18,9 @@ _.Zones =
 					["coord"] = { 35.2, 30.8, 70 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(4355), 	-- Pattern: Icy Cloak
+						i(4355, { 	-- Pattern: Icy Cloak
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(4885,  {	-- Gregor MacVince <Horse Breeder>
@@ -37,17 +39,27 @@ _.Zones =
 					["coord"] = { 64.6, 50.4, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(12248),	-- Daring Dirk
-						i(12250),	-- Midnight Axe
+						i(12248, {	-- Daring Dirk
+							["isLimited"] = true,
+						}),
+						i(12250, {	-- Midnight Axe
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(4897,  {	-- Helenia Olden <Trade Supplies>
 					["coord"] = { 66.4, 51.4, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(21941),	-- Design: Black Pearl Panther
-						i(21943),	-- Design: Truesilver Crab
-						i(5789),	-- Pattern: Murloc Scale Bracers
+						i(21941, {	-- Design: Black Pearl Panther
+							["isLimited"] = true,
+						}),
+						i(21943, {	-- Design: Truesilver Crab
+							["isLimited"] = true,
+						}),
+						i(5789, {	-- Pattern: Murloc Scale Bracers
+							["isLimited"] = true,
+						}),
 						i(12239),	-- Recipe: Dragonbreath Chili
 						i(12233),	-- Recipe: Mystery Stew
 						i(12228),	-- Recipe: Roast Raptor
@@ -57,7 +69,9 @@ _.Zones =
 					["coord"] = { 67.8, 49.8, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(11305),	-- Dense Shortbow
+						i(11305, {	-- Dense Shortbow
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(53410, {	-- Lissah Spellwick <Enchanting Trainer & Supplies>
@@ -84,30 +98,54 @@ _.Zones =
 					["coord"] = { 67.4, 47.8, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(4817),	-- Blessed Claymore
-						i(4818),	-- Executioner's Sword
-						i(4824),	-- Blurred Axe
-						i(4825),	-- Callous Axe
-						i(4826),	-- Marauder Axe
-						i(4830),	-- Saber Leggings
-						i(4831),	-- Stalking Pants
-						i(4832),	-- Mystic Sarong
+						i(4817, {	-- Blessed Claymore
+							["isLimited"] = true,
+						}),
+						i(4824, {	-- Blurred Axe
+							["isLimited"] = true,
+						}),
+						i(4825, {	-- Callous Axe
+							["isLimited"] = true,
+						}),
+						i(4818, {	-- Executioner's Sword
+							["isLimited"] = true,
+						}),
+						i(4826, {	-- Marauder Axe
+							["isLimited"] = true,
+						}),
+						i(4832, {	-- Mystic Sarong
+							["isLimited"] = true,
+						}),
+						i(4830, {	-- Saber Leggings
+							["isLimited"] = true,
+						}),
+						i(4831, {	-- Stalking Pants
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(63546, {	-- Zidormi
 					["description"] = "Vendor only sells to those who completed the level 85 version of the Theramore's Fall Scenario.",
 					["coord"] = { 55.8, 49.6, 70 },
 					["g"] = {
-						a(i(89196)),	-- Theramore Tabard
-						h(i(89205)),	-- Mini Mana Bomb
+						i(89196, {	-- Theramore Tabard
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(89205, {	-- Mini Mana Bomb (TOY!)
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 				n(4884,  {	-- Zulrg <Weaponsmith>
 					["coord"] = { 36.2, 31.6, 70 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12251),	-- Big Stick
-						i(12250),	-- Midnight Axe
+						i(12251, {	-- Big Stick
+							["isLimited"] = true,
+						}),
+						i(12250, {	-- Midnight Axe
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),

@@ -9,11 +9,10 @@ _.Zones =
 				n(40475, {	-- Jinky Twizzlefixxit <Engineering Supplies>
 					["coord"] = { 76.6, 73.6, 64 },
 					["g"] = {
-						{	-- Schematic: Lovingly Crafted Boomstick
-							["itemID"] = 13309,	-- Schematic: Lovingly Crafted Boomstick
+						i(13309, {	-- Schematic: Lovingly Crafted Boomstick
 							["spellID"] = 0,	-- now learned from trainer, schematic was removed from game
 							["u"] = 7, 
-						},
+						}),
 					},
 				}),
 				n(4878,  {	-- Montarr
@@ -26,14 +25,18 @@ _.Zones =
 				n(41135, {	-- "Plucky" Johnson
 					["coord"] = { 85.6, 91.6, 64 },
 					["g"] = {
-						i(11023),	-- Ancona Chicken
+						i(11023),	-- Ancona Chicken (PET!)
 					},
 				}),
 				n(41452, {	-- Starn <Gunsmith & Bowyer>
 					["coord"] = { 46.2, 57.6, 64 },
 					["g"] = {
-						i(11305),	-- Dense Shortbow
-						i(11304),	-- Fine Longbow
+						i(11305, {	-- Dense Shortbow
+							["isLimited"] = true,
+						}),
+						i(11304, {	-- Fine Longbow
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),

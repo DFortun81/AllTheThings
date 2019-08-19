@@ -10,11 +10,21 @@ _.Zones =
 					["coord"] = { 67.4, 48.2, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(4797),	-- Fiery Cloak
-						i(4798),	-- Heavy Runed Cloak
-						i(4816),	-- Legionnaire's Leggings
-						i(4799),	-- Antiquated Cloak
-						i(4800),	-- Mighty Chain Pants
+						i(4799, {	-- Antiquated Cloak
+							["isLimited"] = true,
+						}),
+						i(4797, {	-- Fiery Cloak
+							["isLimited"] = true,
+						}),
+						i(4798, {	-- Heavy Runed Cloak
+							["isLimited"] = true,
+						}),
+						i(4816, {	-- Legionnaire's Leggings
+							["isLimited"] = true,
+						}),
+						i(4800, {	-- Mighty Chain Pants
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),

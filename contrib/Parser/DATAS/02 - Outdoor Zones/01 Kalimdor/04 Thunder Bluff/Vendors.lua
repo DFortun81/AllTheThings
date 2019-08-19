@@ -30,7 +30,7 @@ _.Zones =
 					["coord"] = { 61.98, 58.39, 88 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(10394),	-- Prairie Dog Whistle Pet
+						i(10394),	-- Prairie Dog Whistle (PET!)
 					},
 				}),
 				n(8358, {	-- Hewa <Cloth Armor Merchant>
@@ -46,9 +46,15 @@ _.Zones =
 					["coord"] = { 46.99, 45.67, 88 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(11303),	-- Fine Shortbow
-						i(11307),	-- Massive Longbow
-						i(11306),	-- Sturdy Recurve
+						i(11303, {	-- Fine Shortbow
+							["isLimited"] = true,
+						}),
+						i(11307, {	-- Massive Longbow
+							["isLimited"] = true,
+						}),
+						i(11306, {	-- Sturdy Recurve
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(3002, {	-- Kurm Stonehoof <Mining Supplies>
@@ -90,11 +96,20 @@ _.Zones =
 						i(68199, {	-- Pattern: Black Embersilk Gown
 							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
+						i(10311, {	-- Pattern: Orange Martial Shirt
+							["isLimited"] = true,
+						}),
 						i(54599, {	-- Pattern: Powerful Enchanted Spellthread
 							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
 						i(54600, {	-- Pattern: Powerful Ghostly Spellthread
 							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+						}),
+						i(5771, {	-- Pattern: Red Linen Bag
+							["isLimited"] = true,
+						}),
+						i(5772, {	-- Pattern: Red Woolen Bag
+							["isLimited"] = true,
 						}),
 						i(54593, {	-- Pattern: Vicious Embersilk Cowl
 							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
@@ -114,10 +129,9 @@ _.Zones =
 						i(54598, {	-- Pattern: Vicious Fireweave Robe
 							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
-						i(5771),	-- Pattern: Red Linen Bag
-						i(5772),	-- Pattern: Red Woolen Bag
-						i(10311),	-- Pattern: Orange Martial Shirt
-						i(10325),	-- Pattern: White Wedding Dress
+						i(10325, {	-- Pattern: White Wedding Dress
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(3008, {	-- Mak <Leatherworking Supplies>
@@ -362,11 +376,17 @@ _.Zones =
 					["coord"] = { 44.91, 37.66, 88 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
+							["isLimited"] = true,
+						}),
 						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
 							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
 						i(64412, {	-- Formula: Enchant Boots - Lavawalker
 							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+						}),
+						i(6377, {	-- Formula: Enchant Boots - Minor Agility
+							["isLimited"] = true,
 						}),
 						i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
 							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
@@ -389,9 +409,6 @@ _.Zones =
 						i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
 							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 						}),
-						i(67308, {	-- Formula: Enchanted Lantern
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-						}),
 						i(52736, {	-- Formula: Enchant Weapon - Landslide
 							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
 						}),
@@ -401,12 +418,14 @@ _.Zones =
 						i(52735, {	-- Formula: Enchant Weapon - Windwalk
 							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
 						}),
-						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
-						i(6377),	-- Formula: Enchant Boots - Minor Agility
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(67308, {	-- Formula: Enchanted Lantern
+							["races"] = HORDE_ONLY,
+							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+						}),
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
 				n(52658, {	-- Paku Cloudchaser <Jewelcrafting Supplies>
@@ -679,7 +698,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(8364, {	-- Pakwa
+				n(8364, {	-- Pakwa <Bag Vendor>
 					["coord"] = { 39.31, 64.28, 88 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -698,8 +717,12 @@ _.Zones =
 					["coord"] = { 36.22, 60.21, 88 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(18647),	-- Schematic: Red Firework
-						i(22729),	-- Steam Tonk Controller
+						i(18647, {	-- Schematic: Red Firework
+							["isLimited"] = true,
+						}),
+						i(22729, {	-- Steam Tonk Controller
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
@@ -710,14 +733,16 @@ _.Zones =
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 					},
 				}),
-				n(8363, {	-- Shadi Mistrunner
+				n(8363, {	-- Shadi Mistrunner <Trade Supplies>
 					["coord"] = { 40.33, 63.38, 88 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(21948),	-- Design: Opal Necklace of Impact
+						i(21948, {	-- Design: Opal Necklace of Impact
+							["isLimited"] = true,
+						}),
 					},
 				}),
-				n(3016, {	-- Tand
+				n(3016, {	-- Tand <Basket Weaver>
 					["coord"] = { 49.06, 34.16, 88 },
 					["races"] = HORDE_ONLY,
 					["g"] = {

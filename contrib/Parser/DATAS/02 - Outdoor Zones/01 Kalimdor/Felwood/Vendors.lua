@@ -9,7 +9,9 @@ _.Zones =
 				n(48577, {	-- Ciana <Weaponsmith>
 					["coord"] = { 43.2, 28.4, 77 },
 					["g"] = {
-						i(11308),	-- Sylvan Shortbow
+						i(11308, {	-- Sylvan Shortbow
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(48580, {	-- Desaan <Cooking Supplies>

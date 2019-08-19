@@ -383,22 +383,27 @@ _.Zones =
 							["description"] = "This vendor unlocks once you complete the quest Filling the Moonwell.",
 							["sourceQuest"] = 29279,	-- Filling the Moonwell
 							["g"] = {
-								i(70160),	-- Crimson Lasher [Pet]
-								i(70161),	-- Mushroom Chair [Toy]
-								i(70176),	-- Pattern: Luxurious Silk Gem Bag
-								i(70174),	-- Pattern: Royal Scribe's Satchel
-								i(70175),	-- Pattern: Triple-Reinforced Mining Bag
-								i(70112),	-- Globe of Moonlight
+								i(70160),	-- Crimson Lasher (PET!)
+								i(70161),	-- Mushroom Chair (TOY!)
 								i(70110),	-- Band of Glittering Lights
+								i(70112),	-- Globe of Moonlight
 								i(70113),	-- Moon Blessed Band
 								i(70142),	-- Moonwell Chalice
 								i(70143),	-- Moonwell Phial
+								i(70176),	-- Pattern: Luxurious Silk Gem Bag
+								i(70174),	-- Pattern: Royal Scribe's Satchel
+								i(70175),	-- Pattern: Triple-Reinforced Mining Bag
 							},
 						}),
 						n(53214, {	-- Damek Bloombeard <Exceptional Equipment>
 							["description"] = "This vendor unlocks once you complete the quest Additional Armaments.",
 							["sourceQuest"] = 29281,	-- Additional Armaments
 							["g"] = {
+								i(70117),	-- Belt of Living Obsidium
+								i(70115),	-- Fiery Treads
+								i(70114),	-- Fireplume Girdle
+								i(70116),	-- Gauntlets of Living Obsidium
+								i(70119),	-- Meteorite Ring
 								i(70166),	-- Plans: Brainsplinter
 								i(70169),	-- Plans: Elementium-Edged Scalper
 								i(70168),	-- Plans: Lightforged Elementium Hammer
@@ -407,52 +412,72 @@ _.Zones =
 								i(70170),	-- Plans: Pyrium Spellward
 								i(70171),	-- Plans: Unbreakable Guardian
 								i(70173),	-- Plans: Witch-Hunter's Harvester
+								i(70121),	-- Ricket's Gun Show
+								i(70144),	-- Ricket's Magnetic Fireball
+								i(70120),	-- Rickety Belt
 								i(71078),	-- Schematic: Extreme-Impact Hole Puncher
 								i(70177),	-- Schematic: Flintlocke's Woodchucker
-								i(70121),	-- Ricket's Gun Show
-								i(70116),	-- Gauntlets of Living Obsidium
 								i(70118),	-- Widow Clutches
-								i(70117),	-- Belt of Living Obsidium
-								i(70114),	-- Fireplume Girdle
-								i(70120),	-- Rickety Belt
-								i(70115),	-- Fiery Treads
-								i(70119),	-- Meteorite Ring
-								i(70144),	-- Ricket's Magnetic Fireball
 							},
 						}),
 						n(53882, {	-- Varlan Highbough <Provisions of the Grove>
 							["description"] = "This vendor unlocks once you complete the quest Calling the Ancients.",
 							["sourceQuest"] = 29283,	-- Calling the Ancients
 							["g"] = {
-								i(70159),	-- Mylune's Call Toy
-								i(70140),	-- Hyjal Bear Cub Pet
+								i(70140),	-- Hyjal Bear Cub (PET!)
+								i(70159),	-- Mylune's Call (TOY!)
 								i(70122),	-- Aviana's Grips
+								i(70141),	-- Dwyer's Caber
 								i(70123),	-- Lancer's Greaves
 								i(70127),	-- Lylagar Horn Ring
 								i(70126),	-- Nemesis Shell Band
 								i(70124),	-- Spirit Fragment Band
-								i(70141),	-- Dwyer's Caber
 							},
 						}),
 						n(52822, {	-- Zen'Vorka <Favors of the World Tree>
+							i(71088, {	-- Bilgewater Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(70145, {	-- Darnassus Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(70146, {	-- Exodar Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
 							i(70107),	-- Fireheart Necklace
-							i(70106),	-- Nightweaver's Amulet
-							i(70108),	-- Pyrelord Greaves
+							i(71087, {	-- Gilneas Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(70147, {	-- Gnomeregan Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(70148, {	-- Ironforge Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
 							i(70105),	-- Matoclaw's Band
-							currency(416, {	-- Mark of the World Tree
-								i(71088),	-- Bilgewater Writ of Commendation
-								i(70145),	-- Darnassus Writ of Commendation
-								i(70146),	-- Exodar Writ of Commendation
-								i(71087),	-- Gilneas Writ of Commendation
-								i(70147),	-- Gnomeregan Writ of Commendation
-								i(70148),	-- Ironforge Writ of Commendation
-								i(70149),	-- Orgrimmar Writ of Commendation
-								i(70150),	-- Sen'jin Writ of Commendation
-								i(70151),	-- Silvermoon Writ of Commendation
-								i(70152),	-- Stormwind Writ of Commendation
-								i(70153),	-- Thunder Bluff Writ of Commendation
-								i(70154),	-- Undercity Writ of Commendation
-								i(71631, {	-- Zen'Vorka's Cache
+							i(70106),	-- Nightweaver's Amulet
+							i(70149, {	-- Orgrimmar Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(70108),	-- Pyrelord Greaves
+							i(70150, {	-- Sen'jin Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(70151, {	-- Silvermoon Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(70152, {	-- Stormwind Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(70153, {	-- Thunder Bluff Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(70154, {	-- Undercity Writ of Commendation
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+							}),
+							i(71631, {	-- Zen'Vorka's Cache
+								["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+								["g"] = {
 									i(34955),	-- Scorched Stone
 									i(55405),	-- Blackwolf Amulet
 									i(55315),	-- Blackwolf Cloak
@@ -592,7 +617,7 @@ _.Zones =
 									i(55611),	-- Thornsnarl Legguards
 									i(55620),	-- Thornsnarl Spaulders
 									i(55575),	-- Thornsnarl Vest
-								}),
+								},
 							}),
 						}),
 					}),

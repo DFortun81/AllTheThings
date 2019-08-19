@@ -17,16 +17,22 @@ _.Zones =
 				n(12023, {	-- Kharedon <Light Armor Merchant>
 					["coord"] = { 56.6, 29.8, 80 },
 					["g"] = {
-						i(12254),	-- Well Oiled Cloak
+						i(12254, {	-- Well Oiled Cloak
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(12022, {	-- Lorelae Wintersong <Trade Supplies>
 					["coord"] = { 48.31, 40.20, 80 },
 					["g"] = {
-						i(16224),	-- Formula: Enchant Cloak - Superior Defense
-						i(14483),	-- Pattern: Felcloth Pants
+						i(16224, {	-- Formula: Enchant Cloak - Superior Defense
+							["isLimited"] = true,
+						}),
+						i(136849),	-- Nature's Beacon (TOY!)
+						i(14483, {	-- Pattern: Felcloth Pants
+							["isLimited"] = true,
+						}),
 						i(141041),	-- Technique: Glyph of the Forest Path
-						i(136849),	-- Nature's Beacon
 						i(136795, {	-- Tome of the Wilds: Charm Woodland Creature
 							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
 						}),
@@ -47,7 +53,9 @@ _.Zones =
 				n(12029, {	-- Narianna <Bowyer>
 					["coord"] = { 53.2, 42.6, 80 },
 					["g"] = {
-						i(11308),	-- Sylvan Shortbow
+						i(11308, {	-- Sylvan Shortbow
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),
