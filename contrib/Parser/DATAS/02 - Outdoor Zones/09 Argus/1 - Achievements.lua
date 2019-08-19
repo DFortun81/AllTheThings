@@ -86,46 +86,6 @@ _.Zones =
 						{	-- Felclaw Marsuul
 							["itemID"] = 153040,	-- Felclaw Marsuul
 						},
-						{	-- Aquatic Assault
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 1,			-- Aquatic Assault
-						},
-						{	-- Beast Blitz
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 2,	-- Beast Blitz
-						},
-						{	-- Critical Critters
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 3,			-- Critical Critters
-						},
-						{	-- Draconic Destruction
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 4,			-- Draconic Destruction
-						},
-						{	-- Elemental Escalation
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 5,			-- Elemental Escalation
-						},
-						{	-- Fierce Fliers
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 6,			-- Fierce Fliers
-						},
-						{	-- Humanoid Havoc
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 7,			-- Humanoid Havoc
-						},
-						{	-- Magical Mayhem
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 8,			-- Magical Mayhem
-						},
-						{	-- Mechanical Melee
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 9,			-- Mechanical Melee
-						},
-						{	-- Unstoppable Undead
-							["achievementID"] = 12100,	-- Commander of Argus
-							["criteriaID"] = 10,		-- Unstoppable Undead
-						},
 					},
 				},
 				{	-- Paragon of Argus

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
-			n(-16, { 	-- Rares	-- TODO: Consolidate Legion War Supplies coords if possible
+			n(-16, { 	-- Rares
 				n(127090, {	-- Admiral Rel'var
 					["isDaily"] = true,
 					["questID"] = 48817,

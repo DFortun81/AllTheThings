@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(882, {	-- Mac'Aree
-			n(-16,  {	-- Rares	-- TODO: Consolidate Ancient Eredar Cache coords if possible
+			n(-16,  {	-- Rares
 				n(126887, {	-- Ataxon
 					["isDaily"] = true,
 					["questID"] = 48709,

@@ -1,11 +1,11 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          -- 
+--         Z O N E S       M O D U L E          -- 
 ---------------------------------------------------
 _.Zones =
 {
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
-			n(-16, { 	-- Rares	--TODO: Consolidate Eredar War Supplies coords if possible
+			n(-16, { 	-- Rares
 				n(124775, {	-- Commander Endaxis
 					["isDaily"] = true,
 					["questID"] = 48564,
