@@ -10491,13 +10491,13 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							first = true;
 						else
 							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
-								group = app.CreateNPC(-4, { g = { group } });
+								if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group } }); end
 								first = true;
 							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-								group = app.CreateNPC(-2, { g = { group } });
+								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
 								first = true;
 							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-								group = app.CreateNPC(-17, { g = { group } });
+								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
 								first = true;
 							end
 						end
