@@ -30,7 +30,6 @@ i(17413);	-- Codex: Prayer of Fortitude
 i(31837);	-- Codex: Prayer of Shadow Protection
 i(22393);	-- Codex: Prayer of Shadow Protection
 i(136803);	-- Dirty Tricks, Vol 1: Detection
-i(136801);	-- Divine Tome: Contemplation
 i(136419);	-- Excavator's Notebook
 i(136782);	-- Fireworks Instruction Manual
 i(111356);	-- Fishing Guide to Draenor
@@ -162,7 +161,6 @@ i(114849);	-- Manual Of Spell Reflection
 i(136800);	-- Meditation Manual: Zen Flight
 i(136797);	-- Mystical Tome: Arcane Linguist
 i(136799);	-- Mystical Tome: Illusion
-i(136796);	-- Necrophile Tome: Corpse Exploder
 i(136781);	-- Pet Training Manual: Fetch
 i(136780);	-- Pet Training Manual: Play Dead
 i(113992);	-- Scribe's Research Notes

@@ -247,7 +247,9 @@ _.ExpansionFeatures =
 						i(130323),	-- Vest of Artful Dodging
 					}),
 					n(105986, {	-- Kelsey Steelspark <Quartermaster>
-						i(136803),	-- Dirty Tricks, Vol 1: Detection
+						i(136803, {	-- Dirty Tricks, Vol 1: Detection
+							--["spellID"] = 210108,	-- Detection
+						}),
 						i(140541),	-- Shiv of the Uncrowned
 						i(140556),	-- Shortblade of the Uncrowned
 						{

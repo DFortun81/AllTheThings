@@ -385,10 +385,10 @@ _.Zones =
 						i(141056),	-- Technique: Glyph of Burnout
 						i(136927),	-- Scarlet Confessional Book
 						i(136972, {	-- Tome of Hex: Cockroach
-							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
+							--["spellID"] = 211015,	-- Hex(Cockroach)
 						}),
 						i(136803, {	-- Dirty Tricks, Vol 1: Detection
-							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
+							--["spellID"] = 210108,	-- Detection
 						}),
 					},
 				}),

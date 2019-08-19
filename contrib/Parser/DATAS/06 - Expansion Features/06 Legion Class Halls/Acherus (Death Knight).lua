@@ -106,7 +106,9 @@ _.ExpansionFeatures =
 				n(-2, {	-- Vendors
 					n(93550, {	-- Quartermaster Ozorg
 						i(40775),	-- Winged Steed of the Ebon Blade Mount
-						i(136796),	-- Necrophile Tome: Corpse Exploder
+						i(136796, {	-- Necrophile Tome: Corpse Exploder
+							["spellID"] = 127344,	-- Corpse Exploder
+						}),
 						i(140538),	-- Broadaxe of the Ebon Blade
 						i(140554),	-- Warsword of the Ebon Blade
 						{

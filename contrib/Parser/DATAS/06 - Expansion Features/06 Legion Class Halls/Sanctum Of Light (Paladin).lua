@@ -204,7 +204,9 @@ _.ExpansionFeatures =
 							},
 						}),
 						n(100196, {	-- Eadric the Pure <Quartermaster>
-							i(136801),	-- Divine Tome: Contemplation
+							i(136801, {	-- Divine Tome: Contemplation
+								["spellID"] = 121183,	-- Contemplation
+							}),
 							i(140555),	-- Blade of the Silver Hand
 							i(140535),	-- Bulwark of  the Silver hand
 							i(140558),	-- Greatsword of the Silver Hand

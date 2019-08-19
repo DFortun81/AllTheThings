@@ -26,7 +26,9 @@ _.Zones =
 					["coord"] = { 84.0, 49.8, 23 },
 					["g"] = {
 						i(40775),	-- Winged Steed of the Ebon Blade
-						i(136796),	-- Necrophile Tome: Corpse Exploder
+						i(136796, {	-- Necrophile Tome: Corpse Exploder
+							["spellID"] = 127344,	-- Corpse Exploder
+						}),
 					},
 				}),
 				n(12941, {	-- Jase Farlane <Trade Supplies>
@@ -43,7 +45,9 @@ _.Zones =
 					["g"] = {
 						i(18171),	-- Arcane Mantle of the Dawn
 						i(18182),	-- Chromatic Mantle of the Dawn
-						i(136801),	-- Divine Tome: Contemplation (Paladin)
+						i(136801, {	-- Divine Tome: Contemplation (Paladin)
+							["spellID"] = 121183,	-- Contemplation
+						}),
 						i(18169),	-- Flame Mantle of the Dawn
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 						i(19447),	-- Formula: Enchant Bracer - Healing Power
