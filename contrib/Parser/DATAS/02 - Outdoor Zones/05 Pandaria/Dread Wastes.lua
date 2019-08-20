@@ -242,6 +242,7 @@ _.Zones =
 							i(84639),	-- Amberglow Amulet
 						},
 						["qg"] = 65975,	-- Zer'ik
+						["altQuests"] = { 31090 },	-- Better With Age
 						["sourceQuests"] = { 31087 },	-- Extending Our Coverage
 					}),
 					q(31084, {	-- Bind the Glamour
@@ -271,6 +272,7 @@ _.Zones =
 					}),
 					q(31682, {	-- By the Sea, Nevermore
 						["qg"] = 65975,	-- Zer'ik
+						["altQuests"] = { 31089 },	-- By the Sea, Nevermore
 						["sourceQuests"] = {
 							31681,	-- Better With Age
 							31680,	-- Crime and Punishment
@@ -295,6 +297,7 @@ _.Zones =
 					}),
 					q(31680, {	-- Crime and Punishment
 						["qg"] = 65975,	-- Zer'ik
+						["altQuests"] = { 31088 },	-- Crime and Punishment
 						["sourceQuests"] = { 31087 },	-- Extending Our Coverage
 					}),
 					q(31088, {	-- Crime and Punishment

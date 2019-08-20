@@ -697,162 +697,516 @@ _.Zones =
 						i(31991, {	-- Merciless Gladiator's Kodohide Tunic
 							["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
 						}),
-
-
---[[						["cost"] = { { "i", , 1 }, },	-- 
+						i(31992, {	-- Merciless Gladiator's Lamellar Chestpiece
+							["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
 						}),
---]]
-
-						i(32006),	-- Merciless Gladiator's Linked Helm
-						i(30486),	-- Merciless Gladiator's Plate Chestpiece
-						i(30488),	-- Merciless Gladiator's Plate Helm
-						i(30489),	-- Merciless Gladiator's Plate Legguards
-						i(30490),	-- Merciless Gladiator's Plate Shoulders
-						i(31992),	-- Merciless Gladiator's Lamellar Chestpiece
-						i(31993),	-- Merciless Gladiator's Lamellar Gauntlets
-						i(31995),	-- Merciless Gladiator's Lamellar Legguards
-						i(31996),	-- Merciless Gladiator's Lamellar Shoulders
-						i(31997),	-- Merciless Gladiator's Lamellar Helm
-						i(31998),	-- Merciless Gladiator's Leather Gloves
-						i(31999),	-- Merciless Gladiator's Leather Helm
-						i(32000),	-- Merciless Gladiator's Leather Legguards
-						i(32001),	-- Merciless Gladiator's Leather Spaulders
-						i(32002),	-- Merciless Gladiator's Leather Tunic
-						i(32004),	-- Merciless Gladiator's Linked Armor
-						i(32005),	-- Merciless Gladiator's Linked Gauntlets
-						i(30487),	-- Merciless Gladiator's Plate Gauntlets
-						i(32007),	-- Merciless Gladiator's Linked Leggings
-						i(32008),	-- Merciless Gladiator's Linked Spaulders
-						i(32009),	-- Merciless Gladiator's Mail Armor
-						i(32010),	-- Merciless Gladiator's Mail Gauntlets
-						i(32011),	-- Merciless Gladiator's Mail Helm
-						i(32012),	-- Merciless Gladiator's Mail Leggings
-						i(32013),	-- Merciless Gladiator's Mail Spaulders
-						i(32015),	-- Merciless Gladiator's Mooncloth Gloves
-						i(32016),	-- Merciless Gladiator's Mooncloth Hood
-						i(32017),	-- Merciless Gladiator's Mooncloth Leggings
-						i(32018),	-- Merciless Gladiator's Mooncloth Mantle
-						i(32019),	-- Merciless Gladiator's Mooncloth Robe
-						i(32020),	-- Merciless Gladiator's Ornamented Chestguard
-						i(32021),	-- Merciless Gladiator's Ornamented Gloves
-						i(32022),	-- Merciless Gladiator's Ornamented Headcover
-						i(32023),	-- Merciless Gladiator's Ornamented Legplates
-						i(32024),	-- Merciless Gladiator's Ornamented Spaulders
-						i(32029),	-- Merciless Gladiator's Ringmail Armor
-						i(32030),	-- Merciless Gladiator's Ringmail Gauntlets
-						i(32031),	-- Merciless Gladiator's Ringmail Helm
-						i(32032),	-- Merciless Gladiator's Ringmail Leggings
-						i(32033),	-- Merciless Gladiator's Ringmail Spaulders
-						i(32034),	-- Merciless Gladiator's Satin Gloves
-						i(32035),	-- Merciless Gladiator's Satin Hood
-						i(32036),	-- Merciless Gladiator's Satin Leggings
-						i(32037),	-- Merciless Gladiator's Satin Mantle
-						i(32038),	-- Merciless Gladiator's Satin Robe
-						i(32039),	-- Merciless Gladiator's Scaled Chestpiece
-						i(32040),	-- Merciless Gladiator's Scaled Gauntlets
-						i(32041),	-- Merciless Gladiator's Scaled Helm
-						i(32042),	-- Merciless Gladiator's Scaled Legguards
-						i(32043),	-- Merciless Gladiator's Scaled Shoulders
-						i(32047),	-- Merciless Gladiator's Silk Amice
-						i(32048),	-- Merciless Gladiator's Silk Cowl
-						i(32049),	-- Merciless Gladiator's Silk Handguards
-						i(32050),	-- Merciless Gladiator's Silk Raiment
-						i(32051),	-- Merciless Gladiator's Silk Trousers
-						i(32056),	-- Merciless Gladiator's Wyrmhide Gloves
-						i(32057),	-- Merciless Gladiator's Wyrmhide Helm
-						i(32058),	-- Merciless Gladiator's Wyrmhide Legguards
-						i(32059),	-- Merciless Gladiator's Wyrmhide Spaulders
-						i(32060),	-- Merciless Gladiator's Wyrmhide Tunic
+						i(31993, {	-- Merciless Gladiator's Lamellar Gauntlets
+							["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+						}),
+						i(31997, {	-- Merciless Gladiator's Lamellar Helm
+							["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+						}),
+						i(31995, {	-- Merciless Gladiator's Lamellar Legguards
+							["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+						}),
+						i(31996, {	-- Merciless Gladiator's Lamellar Shoulders
+							["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+						}),
+						i(31998, {	-- Merciless Gladiator's Leather Gloves
+							["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+						}),
+						i(31999, {	-- Merciless Gladiator's Leather Helm
+							["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+						}),
+						i(32000, {	-- Merciless Gladiator's Leather Legguards
+							["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+						}),
+						i(32001, {	-- Merciless Gladiator's Leather Spaulders
+							["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+						}),
+						i(32002, {	-- Merciless Gladiator's Leather Tunic
+							["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+						}),
+						i(32004, {	-- Merciless Gladiator's Linked Armor
+							["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+						}),
+						i(32005, {	-- Merciless Gladiator's Linked Gauntlets
+							["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+						}),
+						i(32006, {	-- Merciless Gladiator's Linked Helm
+							["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+						}),
+						i(32007, {	-- Merciless Gladiator's Linked Leggings
+							["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+						}),
+						i(32008, {	-- Merciless Gladiator's Linked Spaulders
+							["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+						}),
+						i(32009, {	-- Merciless Gladiator's Mail Armor
+							["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+						}),
+						i(32010, {	-- Merciless Gladiator's Mail Gauntlets
+							["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+						}),
+						i(32011, {	-- Merciless Gladiator's Mail Helm
+							["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+						}),
+						i(32012, {	-- Merciless Gladiator's Mail Leggings
+							["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+						}),
+						i(32013, {	-- Merciless Gladiator's Mail Spaulders
+							["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+						}),
+						i(32015, {	-- Merciless Gladiator's Mooncloth Gloves
+							["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+						}),
+						i(32016, {	-- Merciless Gladiator's Mooncloth Hood
+							["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+						}),
+						i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
+							["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+						}),
+						i(32018, {	-- Merciless Gladiator's Mooncloth Mantle
+							["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+						}),
+						i(32019, {	-- Merciless Gladiator's Mooncloth Robe
+							["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+						}),
+						i(32020, {	-- Merciless Gladiator's Ornamented Chestguard
+							["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+						}),
+						i(32021, {	-- Merciless Gladiator's Ornamented Gloves
+							["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+						}),
+						i(32022, {	-- Merciless Gladiator's Ornamented Headcover
+							["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+						}),
+						i(32023, {	-- Merciless Gladiator's Ornamented Legplates
+							["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+						}),
+						i(32024, {	-- Merciless Gladiator's Ornamented Spaulders
+							["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+						}),
+						i(30486, {	-- Merciless Gladiator's Plate Chestpiece
+							["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+						}),
+						i(30487, {	-- Merciless Gladiator's Plate Gauntlets
+							["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+						}),
+						i(30488, {	-- Merciless Gladiator's Plate Helm
+							["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+						}),
+						i(30489, {	-- Merciless Gladiator's Plate Legguards
+							["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+						}),
+						i(30490, {	-- Merciless Gladiator's Plate Shoulders
+							["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+						}),
+						i(32029, {	-- Merciless Gladiator's Ringmail Armor
+							["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+						}),
+						i(32030, {	-- Merciless Gladiator's Ringmail Gauntlets
+							["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+						}),
+						i(32031, {	-- Merciless Gladiator's Ringmail Helm
+							["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+						}),
+						i(32032, {	-- Merciless Gladiator's Ringmail Leggings
+							["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+						}),
+						i(32033, {	-- Merciless Gladiator's Ringmail Spaulders
+							["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+						}),
+						i(32034, {	-- Merciless Gladiator's Satin Gloves
+							["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+						}),
+						i(32035, {	-- Merciless Gladiator's Satin Hood
+							["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+						}),
+						i(32036, {	-- Merciless Gladiator's Satin Leggings
+							["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+						}),
+						i(32037, {	-- Merciless Gladiator's Satin Mantle
+							["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+						}),
+						i(32038, {	-- Merciless Gladiator's Satin Robe
+							["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+						}),
+						i(32039, {	-- Merciless Gladiator's Scaled Chestpiece
+							["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+						}),
+						i(32040, {	-- Merciless Gladiator's Scaled Gauntlets
+							["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+						}),
+						i(32041, {	-- Merciless Gladiator's Scaled Helm
+							["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+						}),
+						i(32042, {	-- Merciless Gladiator's Scaled Legguards
+							["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+						}),
+						i(32043, {	-- Merciless Gladiator's Scaled Shoulders
+							["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+						}),
+						i(32047, {	-- Merciless Gladiator's Silk Amice
+							["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+						}),
+						i(32048, {	-- Merciless Gladiator's Silk Cowl
+							["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+						}),
+						i(32049, {	-- Merciless Gladiator's Silk Handguards
+							["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+						}),
+						i(32050, {	-- Merciless Gladiator's Silk Raiment
+							["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+						}),
+						i(32051, {	-- Merciless Gladiator's Silk Trousers
+							["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+						}),
+						i(32056, {	-- Merciless Gladiator's Wyrmhide Gloves
+							["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+						}),
+						i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
+							["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+						}),
+						i(32058, {	-- Merciless Gladiator's Wyrmhide Legguards
+							["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+						}),
+						i(32059, {	-- Merciless Gladiator's Wyrmhide Spaulders
+							["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+						}),
+						i(32060, {	-- Merciless Gladiator's Wyrmhide Tunic
+							["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+						}),
 					},
 				}),
 				n(25976, {	-- Theremis <Keeper of Lost Artifacts>
 					["coord"] = { 50.1, 28.4, 122 },
 					["g"] = {
-						i(34545),	-- Skyshatter Girdle
-						i(34431),	-- Lightbringer Bands
-						i(34433),	-- Lightbringer Wristguards
-						i(34434),	-- Bracers of Absolution
-						i(34435),	-- Cuffs of Absolution
-						i(34436),	-- Bracers of the Malefic
-						i(34437),	-- Skyshatter Bands
-						i(34438),	-- Skyshatter Bracers
-						i(34439),	-- Skyshatter Wristguards
-						i(34441),	-- Onslaught Bracers
-						i(34442),	-- Onslaught Wristguards
-						i(34443),	-- Gronnstalker's Bracers
-						i(34444),	-- Thunderheart Wristguards
-						i(34445),	-- Thunderheart Bracers
-						i(34446),	-- Thunderheart Bands
-						i(34447),	-- Bracers of the Tempest
-						i(34448),	-- Slayer's Bracers
-						i(34485),	-- Lightbringer Girdle
-						i(34487),	-- Lightbringer Belt
-						i(34488),	-- Lightbringer Waistguard
-						i(34527),	-- Belt of Absolution
-						i(34528),	-- Cord of Absolution
-						i(34541),	-- Belt of the Malefic
-						i(34542),	-- Skyshatter Cord
-						i(34543),	-- Skyshatter Belt
-						i(34432),	-- Lightbringer Bracers
-						i(34546),	-- Onslaught Belt
-						i(34547),	-- Onslaught Waistguard
-						i(34549),	-- Gronnstalker's Belt
-						i(34554),	-- Thunderheart Belt
-						i(34555),	-- Thunderheart Cord
-						i(34556),	-- Thunderheart Waistguard
-						i(34557),	-- Belt of the Tempest
-						i(34558),	-- Slayer's Belt
-						i(34559),	-- Lightbringer Treads
-						i(34560),	-- Lightbringer Stompers
-						i(34561),	-- Lightbringer Boots
-						i(34562),	-- Boots of Absolution
-						i(34563),	-- Treads of Absolution
-						i(34564),	-- Boots of the Malefic
-						i(34565),	-- Skyshatter Boots
-						i(34566),	-- Skyshatter Treads
-						i(34567),	-- Skyshatter Greaves
-						i(34568),	-- Onslaught Boots
-						i(34569),	-- Onslaught Treads
-						i(34570),	-- Gronnstalker's Boots
-						i(34571),	-- Thunderheart Boots
-						i(34572),	-- Thunderheart Footwraps
-						i(34573),	-- Thunderheart Treads
-						i(34574),	-- Boots of the Tempest		
-						i(34575),	-- Slayer's Boots		
+						i(34527, {	-- Belt of Absolution
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(34541, {	-- Belt of the Malefic
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(34557, {	-- Belt of the Tempest
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(34562, {	-- Boots of Absolution
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(34564, {	-- Boots of the Malefic
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(34574, {	-- Boots of the Tempest
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(34434, {	-- Bracers of Absolution
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(34436, {	-- Bracers of the Malefic
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(34447, {	-- Bracers of the Tempest
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
+						i(34528, {	-- Cord of Absolution
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(34435, {	-- Cuffs of Absolution
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(34549, {	-- Gronnstalker's Belt
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(34570, {	-- Gronnstalker's Boots
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(34443, {	-- Gronnstalker's Bracers
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(34431, {	-- Lightbringer Bands
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(34487, {	-- Lightbringer Belt
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(34561, {	-- Lightbringer Boots
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(34432, {	-- Lightbringer Bracers
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(34485, {	-- Lightbringer Girdle
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(34560, {	-- Lightbringer Stompers
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(34559, {	-- Lightbringer Treads
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(34488, {	-- Lightbringer Waistguard
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(34433, {	-- Lightbringer Wristguards
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(34546, {	-- Onslaught Belt
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(34568, {	-- Onslaught Boots
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(34441, {	-- Onslaught Bracers
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(34569, {	-- Onslaught Treads
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(34547, {	-- Onslaught Waistguard
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(34442, {	-- Onslaught Wristguards
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(34437, {	-- Skyshatter Bands
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(34543, {	-- Skyshatter Belt
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(34565, {	-- Skyshatter Boots
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(34438, {	-- Skyshatter Bracers
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(34542, {	-- Skyshatter Cord
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(34545, {	-- Skyshatter Girdle
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(34567, {	-- Skyshatter Greaves
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(34566, {	-- Skyshatter Treads
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(34439, {	-- Skyshatter Wristguards
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(34558, {	-- Slayer's Belt
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(34575, {	-- Slayer's Boots
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(34448, {	-- Slayer's Bracers
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
+						i(34446, {	-- Thunderheart Bands
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
+						i(34554, {	-- Thunderheart Belt
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(34571, {	-- Thunderheart Boots
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(34445, {	-- Thunderheart Bracers
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
+						i(34555, {	-- Thunderheart Cord
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(34572, {	-- Thunderheart Footwraps
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(34573, {	-- Thunderheart Treads
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(34556, {	-- Thunderheart Waistguard
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(34444, {	-- Thunderheart Wristguards
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
+						i(34563, {	-- Treads of Absolution
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
 					},	
 				}),
 				n(25977, {	-- Yrma <Transmuter of Sin'dorei Relics>
 					["coord"] = { 50.2, 28.2 },
 					["g"] = {
-						i(34664, {	-- Sunmote
-							i(34405),	-- Helm of Arcane Purity
-							i(34406),	-- Gloves of Tyri's Power
-							i(34396),	-- Garments of Crashing Shores
-							i(34384),	-- Breeches of Natural Splendor
-							i(34385),	-- Leggings of the Immortal Beast
-							i(34386),	-- Pantaloons of Growing Strife
-							i(34388),	-- Pauldrons of Berserking
-							i(34389),	-- Spaulders of the Thalassian Defender
-							i(34390),	-- Erupting Epaulets
-							i(34391),	-- Spaulders of Devastation
-							i(34392),	-- Demontooth Shoulderpads
-							i(34393),	-- Shoulderpads of Knowledge's Pursuit
-							i(34394),	-- Breastplate of Agony's Aversion
-							i(34395),	-- Noble Judicator's Chestguard
-							i(34382),	-- Judicator's Legguards
-							i(34397),	-- Bladed Chaos Tunic
-							i(34398),	-- Utopian Tunic of Elune
-							i(34399),	-- Robes of Ghostly Hatred
-							i(34400),	-- Crown of Dath'Remar
-							i(34401),	-- Helm of Uther's Resolve
-							i(34402),	-- Shroud of Chieftain Ner'zhul
-							i(34403),	-- Cover of Ursoc the Mighty
-							i(34404),	-- Mask of the Fury Hunter
-							i(34381),	-- Felstrength Legplates
-							i(34383),	-- Kilt of Spiritual Reconstruction
-							i(34408),	-- Gloves of the Forest Drifter
-							i(34409),	-- Gauntlets of the Ancient Frostwolf
-							i(34407),	-- Tranquil Moonlight Wraps
+						i(34397, {	-- Bladed Chaos Tunic
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34211, 1 },	-- Harness of Carnal Instinct
+							},
+						}),
+						i(34394, {	-- Breastplate of Agony's Aversion
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34215, 1 },	-- Warharness of Reckless Fury
+							},
+						}),
+						i(34384, {	-- Breeches of Natural Splendor
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34169, 1 },	-- Breeches of Natural Aggression
+							},
+						}),
+						i(34403, {	-- Cover of Ursoc the Mighty
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34245, 1 },	-- Cover of Ursol the Wise
+							},
+						}),
+						i(34400, {	-- Crown of Dath'Remar
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34345, 1 },	-- Crown of Anasterian
+							},
+						}),
+						i(34392, {	-- Demontooth Shoulderpads
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34195, 1 },	-- Shoulderpads of Vehemence
+							},
+						}),
+						i(34390, {	-- Erupting Epaulets
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34208, 1 },	-- Equilibrium Epaulets
+							},
+						}),
+						i(34381, {	-- Felstrength Legplates
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34180, 1 },	-- Felfury Legplates
+							},
+						}),
+						i(34396, {	-- Garments of Crashing Shores
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34229, 1 },	-- Garments of Serene Shores
+							},
+						}),
+						i(34409, {	-- Gauntlets of the Ancient Frostwolf
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34350, 1 },	-- Gauntlets of the Ancient Shadowmoon
+							},
+						}),
+						i(34408, {	-- Gloves of the Forest Drifter
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34234, 1 },	-- Shadowed Gauntlets of Paroxysm
+							},
+						}),
+						i(34406, {	-- Gloves of Tyri's Power
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34342, 1 },	-- Handguards of the Dawn
+							},
+						}),
+						i(34405, {	-- Helm of Arcane Purity
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34339, 1 },	-- Cowl of Light's Purity
+							},
+						}),
+						i(34401, {	-- Helm of Uther's Resolve
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34243, 1 },	-- Helm of Burning Righteousness
+							},
+						}),
+						i(34382, {	-- Judicator's Legguards
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34167, 1 },	-- Legplates of the Holy Juggernaut
+							},
+						}),
+						i(34383, {	-- Kilt of Spiritual Reconstruction
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34186, 1 },	-- Chain Links of the Tumultuous Storm
+							},
+						}),
+						i(34385, {	-- Leggings of the Immortal Beast
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34188, 1 },	-- Leggings of the Immortal Night
+							},
+						}),
+						i(34404, {	-- Mask of the Fury Hunter
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34244, 1 },	-- Duplicitous Guise
+							},
+						}),
+						i(34395, {	-- Noble Judicator's Chestguard
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34216, 1 },	-- Heroic Judicator's Chestguard
+							},
+						}),
+						i(34386, {	-- Pantaloons of Growing Strife
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34170, 1 },	-- Pantaloons of Calming Strife
+							},
+						}),
+						i(34388, {	-- Pauldrons of Berserking
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34192, 1 },	-- Pauldrons of Perseverance
+							},
+						}),
+						i(34399, {	-- Robes of Ghostly Hatred
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34233, 1 },	-- Robes of Faltered Light
+							},
+						}),
+						i(34393, {	-- Shoulderpads of Knowledge's Pursuit
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34202, 1 },	-- Shawl of Wonderment
+							},
+						}),
+						i(34402, {	-- Shroud of Chieftain Ner'zhul
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34332, 1 },	-- Cowl of Gul'dan
+							},
+						}),
+						i(34391, {	-- Spaulders of Devastation
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34209, 1 },	-- Spaulders of Reclamation
+							},
+						}),
+						i(34389, {	-- Spaulders of the Thalassian Defender
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34193, 1 },	-- Spaulders of the Thalassian Savior
+							},
+						}),
+						i(34407, {	-- Tranquil Moonlight Wraps
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34351, 1 },	-- Tranquil Majesty Wraps
+							},
+						}),
+						i(34398, {	-- Utopian Tunic of Elune
+							["cost"] = {
+								{ "i", 34664, 1 },	-- 1x Sunmote
+								{ "i", 34212, 1 },	-- Sunglow Vest
+							},
 						}),
 					},
 				}),
