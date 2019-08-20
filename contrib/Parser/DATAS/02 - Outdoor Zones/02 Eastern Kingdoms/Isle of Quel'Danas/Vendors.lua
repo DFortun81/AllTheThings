@@ -6,24 +6,13 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(122, {	-- Isle of Quel'Danas
 			n(-2, {	-- Vendors
+			-- TO DO: karynna & olus
 				n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
 					["coord"] = { 47.2, 30.7, 122 },
 					["g"] = {
-						i(35221),	-- Tabard of the Shattered Sun
-						i(34676),	-- Dawnforged Defender
-						i(34675),	-- Sunward Crest
 						i(34667),	-- Archmage's Guile
-						i(34665),	-- Bombadier's Blade
-						i(34672),	-- Inuuro's Blade
-						i(34671),	-- K'iru's Presage
-						i(34673),	-- Legionfoe
-						i(34670),	-- Seeker's Gavel
-						i(34666),	-- the Sunbreaker
-						i(34674),	-- Truestrike Crossbow
-						i(34678),	-- Shattered Sun Pendant of Acumen
-						i(34679),	-- Shattered Sun Pendant of Might
-						i(34680),	-- Shattered Sun Pendant of Resolve
-						i(34677),	-- Shattered Sun Pendant of Restoration
+						i(34665),	-- Bombardier's Blade
+						i(34676),	-- Dawnforged Defender
 						i(35505),	-- Design: Ember Skyfire Diamond
 						i(35502),	-- Design: Eternal Earthstorm Diamond
 						i(35697),	-- Design: Figurine - Crimson Serpent
@@ -42,10 +31,22 @@ _.Zones =
 						i(35766),	-- Design: Steady Seaspray Emerald
 						i(35500),	-- Formula: Enchant Chest - Dodge
 						i(34872),	-- Formula: Void Shatter
+						i(34672),	-- Inuuro's Blade
+						i(34671),	-- K'iru's Presage
+						i(34673),	-- Legionfoe
 						i(35755),	-- Recipe: Assassin's Alchemist Stone
 						i(35752),	-- Recipe: Guardian's Alchemist Stone
 						i(35754),	-- Recipe: Redeemer's Alchemist Stone
 						i(35753),	-- Recipe: Sorcerer's Alchemist Stone
+						i(34670),	-- Seeker's Gavel
+						i(34678),	-- Shattered Sun Pendant of Acumen
+						i(34679),	-- Shattered Sun Pendant of Might
+						i(34680),	-- Shattered Sun Pendant of Resolve
+						i(34677),	-- Shattered Sun Pendant of Restoration
+						i(34675),	-- Sunward Crest
+						i(35221),	-- Tabard of the Shattered Sun
+						i(34666),	-- The Sunbreaker
+						i(34674),	-- Truestrike Crossbow
 					},
 				}),
 				n(26090, {	-- Karynna <Exotic Gear Purveyor>
@@ -171,96 +172,186 @@ _.Zones =
 				n(26089, {	-- Kayri <Exotic Gear Purveyor>
 					["coord"] = { 50.2, 39.7, 122 },
 					["g"] = {		
-						i(33896),	-- Vindicator's Linked Sabatons
-						i(33811),	-- Vindicator's Plate Belt
-						i(33915),	-- Vindicator's Wyrmhide Belt
-						i(33914),	-- Vindicator's Silk Footguards
-						i(33912),	-- Vindicator's Silk Belt
-						i(33911),	-- Vindicator's Scaled Greaves
-						i(33909),	-- Vindicator's Scaled Belt
-						i(33908),	-- Vindicator's Ringmail Sabatons
-						i(33907),	-- Vindicator's Ringmail Girdle
-						i(33905),	-- Vindicator's Ornamented Greaves
-						i(33903),	-- Vindicator's Ornamented Belt
-						i(33902),	-- Vindicator's Mooncloth Slippers
-						i(33900),	-- Vindicator's Mooncloth Belt
-						i(33899),	-- Vindicator's Mail Sabatons
-						i(33898),	-- Vindicator's Mail Girdle
-						i(33916),	-- Vindicator's Wyrmhide Boots
-						i(33895),	-- Vindicator's Linked Girdle
-						i(33892),	-- Vindicator's Leather Boots
-						i(33891),	-- Vindicator's Leather Belt
-						i(33890),	-- Vindicator's Lamellar Greaves
-						i(33888),	-- Vindicator's Lamellar Belt
-						i(33886),	-- Vindicator's Kodohide Boots
-						i(33885),	-- Vindicator's Kodohide Belt
-						i(33884),	-- Vindicator's Dreadweave Stalkers
-						i(33882),	-- Vindicator's Dreadweave Belt
-						i(33880),	-- Vindicator's Dragonhide Boots
-						i(33879),	-- Vindicator's Dragonhide Belt
-						i(33878),	-- Vindicator's Chain Sabatons
-						i(33877),	-- Vindicator's Chain Girdle
-						i(33812),	-- Vindicator's Plate Greaves
-						i(33904),	-- Vindicator's Ornamented Bracers
-						i(33887),	-- Vindicator's Kodohide Bracers
-						i(33897),	-- Vindicator's Mail Bracers
-						i(33913),	-- Vindicator's Silk Cuffs
-						i(33910),	-- Vindicator's Scaled Bracers
-						i(33883),	-- Vindicator's Dreadweave Cuffs
-						i(33894),	-- Vindicator's Linked Bracers
-						i(33881),	-- Vindicator's Dragonhide Bracers
-						i(33893),	-- Vindicator's Leather Bracers
-						i(33901),	-- Vindicator's Mooncloth Cuffs
-						i(33906),	-- Vindicator's Ringmail Bracers
-						i(33917),	-- Vindicator's Wyrmhide Bracers
-						i(33876),	-- Vindicator's Chain Bracers
-						i(33813),	-- Vindicator's Plate Bracers
-						i(33889),	-- Vindicator's Lamellar Bracers
-						i(32808),	-- Veteran's Wyrmhide Belt
-						i(32786),	-- Veteran's Dragonhide Boots
-						i(32998),	-- Veteran's Ringmail Girdle
-						i(32787),	-- Veteran's Dreadweave Stalkers
-						i(32990),	-- Veteran's Ornamented Greaves
-						i(32788),	-- Veteran's Kodohide Boots
-						i(32988),	-- Veteran's Ornamented Belt
-						i(32981),	-- Veteran's Mooncloth Slippers
-						i(32789),	-- Veteran's Lamellar Greaves
-						i(32979),	-- Veteran's Mooncloth Belt
-						i(32790),	-- Veteran's Leather Boots
-						i(32791),	-- Veteran's Linked Sabatons
-						i(32792),	-- Veteran's Mail Sabatons
-						i(32793),	-- Veteran's Plate Greaves
-						i(32794),	-- Veteran's Scaled Greaves
-						i(32795),	-- Veteran's Silk Footguards
-						i(32796),	-- Veteran's Wyrmhide Boots
-						i(32797),	-- Veteran's Chain Girdle
-						i(32798),	-- Veteran's Dragonhide Belt
-						i(32799),	-- Veteran's Dreadweave Belt
-						i(32800),	-- Veteran's Kodohide Belt
-						i(32801),	-- Veteran's Lamellar Belt
-						i(32999),	-- Veteran's Ringmail Sabatons
-						i(32807),	-- Veteran's Silk Belt
-						i(32806),	-- Veteran's Scaled Belt
-						i(32805),	-- Veteran's Plate Belt
-						i(32804),	-- Veteran's Mail Girdle
-						i(32803),	-- Veteran's Linked Girdle
-						i(32802),	-- Veteran's Leather Belt
-						i(32785),	-- Veteran's Chain Sabatons
 						i(32809),	-- Veteran's Chain Bracers
+						i(32797),	-- Veteran's Chain Girdle
+						i(32785),	-- Veteran's Chain Sabatons
+						i(32798),	-- Veteran's Dragonhide Belt
+						i(32786),	-- Veteran's Dragonhide Boots
+						i(32810),	-- Veteran's Dragonhide Bracers
+						i(32799),	-- Veteran's Dreadweave Belt
 						i(32811),	-- Veteran's Dreadweave Cuffs
+						i(32787),	-- Veteran's Dreadweave Stalkers
+						i(32800),	-- Veteran's Kodohide Belt
+						i(32788),	-- Veteran's Kodohide Boots
 						i(32812),	-- Veteran's Kodohide Bracers
+						i(32801),	-- Veteran's Lamellar Belt
 						i(32813),	-- Veteran's Lamellar Bracers
+						i(32789),	-- Veteran's Lamellar Greaves
+						i(32802),	-- Veteran's Leather Belt
+						i(32790),	-- Veteran's Leather Boots
 						i(32814),	-- Veteran's Leather Bracers
 						i(32816),	-- Veteran's Linked Bracers
+						i(32803),	-- Veteran's Linked Girdle
+						i(32791),	-- Veteran's Linked Sabatons
 						i(32817),	-- Veteran's Mail Bracers
-						i(32810),	-- Veteran's Dragonhide Bracers
-						i(32819),	-- Veteran's Scaled Bracers
-						i(32820),	-- Veteran's Silk Cuffs
-						i(32821),	-- Veteran's Wyrmhide Bracers
+						i(32804),	-- Veteran's Mail Girdle
+						i(32792),	-- Veteran's Mail Sabatons
+						i(32979),	-- Veteran's Mooncloth Belt
 						i(32980),	-- Veteran's Mooncloth Cuffs
+						i(32981),	-- Veteran's Mooncloth Slippers
+						i(32988),	-- Veteran's Ornamented Belt
 						i(32989),	-- Veteran's Ornamented Bracers
-						i(32997),	-- Veteran's Ringmail Bracers
+						i(32990),	-- Veteran's Ornamented Greaves
+						i(32805),	-- Veteran's Plate Belt
 						i(32818),	-- Veteran's Plate Bracers
+						i(32793),	-- Veteran's Plate Greaves
+						i(32997),	-- Veteran's Ringmail Bracers
+						i(32998),	-- Veteran's Ringmail Girdle
+						i(32999),	-- Veteran's Ringmail Sabatons
+						i(32806),	-- Veteran's Scaled Belt
+						i(32819),	-- Veteran's Scaled Bracers
+						i(32794),	-- Veteran's Scaled Greaves
+						i(32807),	-- Veteran's Silk Belt
+						i(32820),	-- Veteran's Silk Cuffs
+						i(32795),	-- Veteran's Silk Footguards
+						i(32808),	-- Veteran's Wyrmhide Belt
+						i(32796),	-- Veteran's Wyrmhide Boots
+						i(32821),	-- Veteran's Wyrmhide Bracers
+						i(33876, {	-- Vindicator's Chain Bracers
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(33877, {	-- Vindicator's Chain Girdle
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(33878, {	-- Vindicator's Chain Sabatons
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(33879, {	-- Vindicator's Dragonhide Belt
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(33880, {	-- Vindicator's Dragonhide Boots
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(33881, {	-- Vindicator's Dragonhide Bracers
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
+						i(33882, {	-- Vindicator's Dreadweave Belt
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(33883, {	-- Vindicator's Dreadweave Cuffs
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(33884, {	-- Vindicator's Dreadweave Stalkers
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(33885, {	-- Vindicator's Kodohide Belt
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(33886, {	-- Vindicator's Kodohide Boots
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(33887, {	-- Vindicator's Kodohide Bracers
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
+						i(33888, {	-- Vindicator's Lamellar Belt
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(33889, {	-- Vindicator's Lamellar Bracers
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(33890, {	-- Vindicator's Lamellar Greaves
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(33891, {	-- Vindicator's Leather Belt
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(33892, {	-- Vindicator's Leather Boots
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(33893, {	-- Vindicator's Leather Bracers
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
+						i(33894, {	-- Vindicator's Linked Bracers
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(33895, {	-- Vindicator's Linked Girdle
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(33896, {	-- Vindicator's Linked Sabatons
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(33897, {	-- Vindicator's Mail Bracers
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(33898, {	-- Vindicator's Mail Girdle
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(33899, {	-- Vindicator's Mail Sabatons
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(33900, {	-- Vindicator's Mooncloth Belt
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(33901, {	-- Vindicator's Mooncloth Cuffs
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(33902, {	-- Vindicator's Mooncloth Slippers
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(33903, {	-- Vindicator's Ornamented Belt
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(33904, {	-- Vindicator's Ornamented Bracers
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(33905, {	-- Vindicator's Ornamented Greaves
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(33811, {	-- Vindicator's Plate Belt
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(33813, {	-- Vindicator's Plate Bracers
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(33812, {	-- Vindicator's Plate Greaves
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(33906, {	-- Vindicator's Ringmail Bracers
+							["cost"] = { { "i", 34851, 1 }, },	-- Bracers of the Forgotten Protector
+						}),
+						i(33907, {	-- Vindicator's Ringmail Girdle
+							["cost"] = { { "i", 34854, 1 }, },	-- Belt of the Forgotten Protector
+						}),
+						i(33908, {	-- Vindicator's Ringmail Sabatons
+							["cost"] = { { "i", 34857, 1 }, },	-- Boots of the Forgotten Protector
+						}),
+						i(33909, {	-- Vindicator's Scaled Belt
+							["cost"] = { { "i", 34853, 1 }, },	-- Belt of the Forgotten Conqueror
+						}),
+						i(33910, {	-- Vindicator's Scaled Bracers
+							["cost"] = { { "i", 34848, 1 }, },	-- Bracers of the Forgotten Conqueror
+						}),
+						i(33911, {	-- Vindicator's Scaled Greaves
+							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
+						}),
+						i(33912, {	-- Vindicator's Silk Belt
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(33913, {	-- Vindicator's Silk Cuffs
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
+						i(33914, {	-- Vindicator's Silk Footguards
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(33915, {	-- Vindicator's Wyrmhide Belt
+							["cost"] = { { "i", 34855, 1 }, },	-- Belt of the Forgotten Vanquisher
+						}),
+						i(33916, {	-- Vindicator's Wyrmhide Boots
+							["cost"] = { { "i", 34858, 1 }, },	-- Boots of the Forgotten Vanquisher
+						}),
+						i(33917, {	-- Vindicator's Wyrmhide Bracers
+							["cost"] = { { "i", 34852, 1 }, },	-- Bracers of the Forgotten Vanquisher
+						}),
 					},
 				}),
 				n(26091, {	-- Olus <Exotic Gear Purveyor>
@@ -469,94 +560,154 @@ _.Zones =
 				n(25046, {	-- Smith Hauthaa <Weapons & Armorsmith>
 					["coord"] = { 50.5, 40.7, 122 },
 					["g"] = {
-						i(34895),	-- Scryer's Blade of Focus
-						i(34952),	-- The Mutilator
-						i(34892),	-- Crossbow of Relentless Strikes
-						i(34893),	-- Vanir's Fist of Brutality
-						i(34894),	-- Blade of Serration
-						i(34891),	-- The Blade of Harbingers
-						i(34896),	-- Gavel of Naaru Blessings
-						i(34898),	-- Staff of the Forest Lord
-						i(34949),	-- Swift Blade of Uncertainty
-						i(34950),	-- Vanir's Fist of Savagery
-						i(34951),	-- Vanir's Fist of Carnage
-						i(34900),	-- Shroud of Nature's Harmony
-						i(34901),	-- Grovewalker's Leggings
-						i(34902),	-- Oakleaf-Spun Handguards
-						i(34903),	-- Embrace of Starlight
-						i(34904),	-- Barbed Gloves of the Sage
-						i(34905),	-- Crystalwind Leggings
-						i(34906),	-- Embrace of Everlasting Prowess
-						i(34910),	-- Tameless Breeches
-						i(34911),	-- Handwraps of the Aggressor
-						i(34912),	-- Scaled Drakeskin Chestguard
-						i(34914),	-- Leggings of the Pursuit
-						i(34916),	-- Gauntlets of Rapidity
-						i(34917),	-- Shroud of the Lore`nial
-						i(34918),	-- Legwraps of Sweltering Flame
-						i(34919),	-- Boots of Incantations
-						i(34921),	-- Ecclesiastical Cuirass
-						i(34922),	-- Greaves of Pacification
-						i(34924),	-- Gown of Spiritual Wonder
 						i(34925),	-- Adorned Supernal Legwraps
-						i(34926),	-- Slippers of Dutiful Mending
-						i(34927),	-- Tunic of the Dark Hour
-						i(34928),	-- Trousers of the Scryers' Retainer
-						i(34929),	-- Belt of the Silent Path
-						i(34930),	-- Wave of Life Chestguard
-						i(34931),	-- Runed Scales of Antiquity
-						i(34932),	-- Clutch of the Soothing Breeze
-						i(34933),	-- Hauberk of Whirling Fury
-						i(34934),	-- Rushing Storm Kilt
 						i(34935),	-- Aftershock Waistguard
-						i(34936),	-- Tormented Demonsoul Robes
-						i(34937),	-- Corrupted Soulcloth Pantaloons
-						i(34938),	-- Enslaved Doomguard Soulgrips
-						i(34939),	-- Chestplate of Stoicism
-						i(34940),	-- Sunguard Legplates
-						i(34941),	-- Girdle of the Fearless
-						i(34942),	-- Breastplate of Ire
-						i(34943),	-- Legplates of Unending Fury
-						i(34944),	-- Girdle of Seething Rage
-						i(34945),	-- Shattrath Protectorate's Breastplate
-						i(34946),	-- Inscribed Legplates of the Aldor
+						i(34887),	-- Angelista's Revenge
+						i(34890),	-- Anveena's Touch
+						i(34904),	-- Barbed Gloves of the Sage
+						i(34929),	-- Belt of the Silent Path
+						i(34894),	-- Blade of Serration
 						i(34947),	-- Blue's Greaves of the Righteous Guardian
+						i(34919),	-- Boots of Incantations
+						i(34942),	-- Breastplate of Ire
+						i(34939),	-- Chestplate of Stoicism
+						i(34932),	-- Clutch of the Soothing Breeze
+						i(34937),	-- Corrupted Soulcloth Pantaloons
+						i(34892),	-- Crossbow of Relentless Strikes
+						i(34905),	-- Crystalwind Leggings
+						i(34921),	-- Ecclesiastical Cuirass
+						i(34906),	-- Embrace of Everlasting Prowess
+						i(34903),	-- Embrace of Starlight
+						i(34938),	-- Enslaved Doomguard Soulgrips
+						i(34889),	-- Fused Nethergon Band
+						i(34916),	-- Gauntlets of Rapidity
+						i(34896),	-- Gavel of Naaru Blessings
+						i(34944),	-- Girdle of Seething Rage
+						i(34941),	-- Girdle of the Fearless
+						i(34924),	-- Gown of Spiritual Wonder
+						i(34922),	-- Greaves of Pacification
+						i(34901),	-- Grovewalker's Leggings
+						i(34911),	-- Handwraps of the Aggressor
+						i(34933),	-- Hauberk of Whirling Fury
+						i(34946),	-- Inscribed Legplates of the Aldor
+						i(34914),	-- Leggings of the Pursuit
+						i(34943),	-- Legplates of Unending Fury
+						i(34918),	-- Legwraps of Sweltering Flame
+						i(34902),	-- Oakleaf-Spun Handguards
+						i(34888),	-- Ring of the Stalwart Protector
+						i(34931),	-- Runed Scales of Antiquity
+						i(34934),	-- Rushing Storm Kilt
+						i(34912),	-- Scaled Drakeskin Chestguard
+						i(34895),	-- Scryer's Blade of Focus
+						i(34945),	-- Shattrath Protectorate's Breastplate
+						i(34900),	-- Shroud of Nature's Harmony
+						i(34917),	-- Shroud of the Lore`nial
+						i(34926),	-- Slippers of Dutiful Mending
+						i(34898),	-- Staff of the Forest Lord
+						i(34940),	-- Sunguard Legplates
+						i(34949),	-- Swift Blade of Uncertainty
+						i(34910),	-- Tameless Breeches
+						i(34891),	-- The Blade of Harbingers
+						i(34952),	-- The Mutilator
+						i(34936),	-- Tormented Demonsoul Robes
+						i(34928),	-- Trousers of the Scryers' Retainer
+						i(34927),	-- Tunic of the Dark Hour
+						i(34893),	-- Vanir's Fist of Brutality
+						i(34951),	-- Vanir's Fist of Carnage
+						i(34950),	-- Vanir's Fist of Savagery
 						i(34923),	-- Waistguard of Reparation
+						i(34930),	-- Wave of Life Chestguard
 					},
 				}),
 				n(26092, {	-- Soryn <Exotic Gear Purveyor>
 					["coord"] = { 49.3, 39.7, 122 },
 					["g"] = {
+						i(31960, {	-- Merciless Gladiator's Chain Armor
+							["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+						}),
+						i(31961, {	-- Merciless Gladiator's Chain Gauntlets
+							["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+						}),
+						i(31962, {	-- Merciless Gladiator's Chain Helm
+							["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+						}),
+						i(31963, {	-- Merciless Gladiator's Chain Leggings
+							["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+						}),
+						i(31964, {	-- Merciless Gladiator's Chain Spaulders
+							["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+						}),
+						i(31967, {	-- Merciless Gladiator's Dragonhide Gloves
+							["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+						}),
+						i(31968, {	-- Merciless Gladiator's Dragonhide Helm
+							["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+						}),
+						i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
+							["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+						}),
+						i(31971, {	-- Merciless Gladiator's Dragonhide Spaulders
+							["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+						}),
+						i(31972, {	-- Merciless Gladiator's Dragonhide Tunic
+							["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+						}),
+						i(31973, {	-- Merciless Gladiator's Dreadweave Gloves
+							["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+						}),
+						i(31974, {	-- Merciless Gladiator's Dreadweave Hood
+							["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+						}),
+						i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
+							["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+						}),
+						i(31976, {	-- Merciless Gladiator's Dreadweave Mantle
+							["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+						}),
+						i(31977, {	-- Merciless Gladiator's Dreadweave Robe
+							["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+						}),
+						i(31979, {	-- Merciless Gladiator's Felweave Amice
+							["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+						}),
+						i(31980, {	-- Merciless Gladiator's Felweave Cowl
+							["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+						}),
+						i(31981, {	-- Merciless Gladiator's Felweave Handguards
+							["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+						}),
+						i(31982, {	-- Merciless Gladiator's Felweave Raiment
+							["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+						}),
+						i(31983, {	-- Merciless Gladiator's Felweave Trousers
+							["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+						}),
+						i(31987, {	-- Merciless Gladiator's Kodohide Gloves
+							["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+						}),
+						i(31988, {	-- Merciless Gladiator's Kodohide Helm
+							["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+						}),
+						i(31989, {	-- Merciless Gladiator's Kodohide Legguards
+							["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+						}),
+						i(31990, {	-- Merciless Gladiator's Kodohide Spaulders
+							["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+						}),
+						i(31991, {	-- Merciless Gladiator's Kodohide Tunic
+							["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+						}),
+
+
+--[[						["cost"] = { { "i", , 1 }, },	-- 
+						}),
+--]]
+
 						i(32006),	-- Merciless Gladiator's Linked Helm
 						i(30486),	-- Merciless Gladiator's Plate Chestpiece
 						i(30488),	-- Merciless Gladiator's Plate Helm
 						i(30489),	-- Merciless Gladiator's Plate Legguards
 						i(30490),	-- Merciless Gladiator's Plate Shoulders
-						i(31960),	-- Merciless Gladiator's Chain Armor
-						i(31961),	-- Merciless Gladiator's Chain Gauntlets
-						i(31962),	-- Merciless Gladiator's Chain Helm
-						i(31963),	-- Merciless Gladiator's Chain Leggings
-						i(31964),	-- Merciless Gladiator's Chain Spaulders
-						i(31967),	-- Merciless Gladiator's Dragonhide Gloves
-						i(31968),	-- Merciless Gladiator's Dragonhide Helm
-						i(31969),	-- Merciless Gladiator's Dragonhide Legguards
-						i(31971),	-- Merciless Gladiator's Dragonhide Spaulders
-						i(31972),	-- Merciless Gladiator's Dragonhide Tunic
-						i(31973),	-- Merciless Gladiator's Dreadweave Gloves
-						i(31974),	-- Merciless Gladiator's Dreadweave Hood
-						i(31975),	-- Merciless Gladiator's Dreadweave Leggings
-						i(31976),	-- Merciless Gladiator's Dreadweave Mantle
-						i(31977),	-- Merciless Gladiator's Dreadweave Robe
-						i(31979),	-- Merciless Gladiator's Felweave Amice
-						i(31980),	-- Merciless Gladiator's Felweave Cowl
-						i(31981),	-- Merciless Gladiator's Felweave Handguards
-						i(31982),	-- Merciless Gladiator's Felweave Raiment
-						i(31983),	-- Merciless Gladiator's Felweave Trousers
-						i(31987),	-- Merciless Gladiator's Kodohide Gloves
-						i(31988),	-- Merciless Gladiator's Kodohide Helm
-						i(31989),	-- Merciless Gladiator's Kodohide Legguards
-						i(31990),	-- Merciless Gladiator's Kodohide Spaulders
-						i(31991),	-- Merciless Gladiator's Kodohide Tunic
 						i(31992),	-- Merciless Gladiator's Lamellar Chestpiece
 						i(31993),	-- Merciless Gladiator's Lamellar Gauntlets
 						i(31995),	-- Merciless Gladiator's Lamellar Legguards

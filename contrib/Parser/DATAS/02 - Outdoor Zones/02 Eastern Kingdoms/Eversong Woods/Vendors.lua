@@ -36,9 +36,9 @@ _.Zones =
 					["coord"] = { 54.2, 50.8, 94 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(64914),	-- Shroud of Silvermoon
 						i(64915),	-- Cape of Silvermoon
 						i(64916),	-- Mantle of Silvermoon
+						i(64914),	-- Shroud of Silvermoon
 						i(67535),	-- Silvermoon Satchel
 						i(45585),	-- Silvermoon City Tabard
 					},
@@ -47,13 +47,13 @@ _.Zones =
 					["coord"] = { 61.0, 54.6, 94 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						i(29221),	-- Black Hawkstrider (MOUNT!)
+						i(29220),	-- Blue Hawkstrider (MOUNT!)
+						i(29222),	-- Purple Hawkstrider (MOUNT!)
+						i(28927),	-- Red Hawkstrider (MOUNT!)
 						i(28936),	-- Swift Pink Hawkstrider (MOUNT!)
 						i(29223),	-- Swift Green Hawkstrider (MOUNT!)
 						i(29224),	-- Swift Purple Hawkstrider (MOUNT!)
-						i(28927),	-- Red Hawkstrider (MOUNT!)
-						i(29220),	-- Blue Hawkstrider (MOUNT!)
-						i(29221),	-- Black Hawkstrider (MOUNT!)
-						i(29222),	-- Purple Hawkstrider (MOUNT!)
 					},
 				})
 			}),
