@@ -17,27 +17,37 @@ _.Zones =
 				n(2687, {	-- Gnaz Blunderflame <Engineering Supplies>
 					["coord"] = { 67.5, 61.2, 50 },
 					["g"] = {
-						i(13311),	-- Schematic: Mechanical Dragonling
+						i(13311, {	-- Schematic: Mechanical Dragonling
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2483, {	-- Jaquilina Dramet <Superior Axecrafter>
 					["coord"] = { 43.7, 23.2, 50 },
 					["g"] = {
-						i(12250),	-- Midnight Axe
-						i(12164),	-- Plans: Massive Iron Axe
+						i(12250, {	-- Midnight Axe
+							["isLimited"] = true,
+						}),
+						i(12164, {	-- Plans: Massive Iron Axe
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(8679, {	-- Knaz Blunderflame <Engineering Supplies>
 					["coord"] = { 67.8, 61.1, 50 },
 					["g"] = {
-						i(10602),	-- Schematic: Deadly Scope
+						i(10602, {	-- Schematic: Deadly Scope
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(1148, {	-- Nerrist <Trade Goods>
 					["coord"] = { 39.3, 51.1, 50 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(21943),	-- Design: Truesilver Crab
+						i(21943, {	-- Design: Truesilver Crab
+							["isLimited"] = true,
+						}),
 						i(3682),	-- Recipe: Curiously Tasty Omelet
 						i(12231),	-- Recipe: Jungle Stew
 						i(12228),	-- Recipe: Roast Raptor
@@ -47,9 +57,15 @@ _.Zones =
 					["coord"] = { 38.7, 49.1, 50 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(12250),	-- Midnight Axe
-						i(12248),	-- Daring Dirk
-						i(12164),	-- Plans: Massive Iron Axe
+						i(12250, {	-- Midnight Axe
+							["isLimited"] = true,
+						}),
+						i(12248, {	-- Daring Dirk
+							["isLimited"] = true,
+						}),
+						i(12164, {	-- Plans: Massive Iron Axe
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(1149, {	-- Uthok <General Supplies>

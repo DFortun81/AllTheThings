@@ -9,53 +9,74 @@ _.Zones =
 				n(2846,   {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coord"] = { 42.8, 74.1, 210 },
 					["g"] = {
-						i(5789),	-- Pattern: Murloc Scale Bracers						
-						i(5788),	-- Pattern: Thick Murloc Armor
+						i(5789, {	-- Pattern: Murloc Scale Bracers
+							["isLimited"] = true,
+						}),
+						i(5788, {	-- Pattern: Thick Murloc Armor
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2672,   {	-- Cowardly Crosby <Tailoring Supplies>
 					["coord"] = { 40.8, 82.1, 210 },
 					["g"] = {
-						i(10318), 	-- Pattern: Admiral's Hat
+						i(10318, { 	-- Pattern: Admiral's Hat
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2838,   {	-- Crazk Sparks <Fireworks Merchant>
 					["coord"] = { 43.0, 72.7, 210 },
 					["g"] = {
-						i(18648),	-- Schematic: Green Firework
+						i(18648, {	-- Schematic: Green Firework
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2845,   {	-- Fargon Mortalak <Superior Armorer>
 					["coord"] = { 44.1, 70.0, 210 },
 					["g"] = {
-						i(12257),	-- Heavy Notched Belt
+						i(12257, {	-- Heavy Notched Belt
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2848,   {	-- Glyx Brewright <Alchemy Supplies>
 					["coord"] = { 42.7, 75.1, 210 },
 					["g"] = {
-						i(6056),	-- Recipe: Frost Protection Potion
-						i(6057),	-- Recipe: Nature Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion
+							["isLimited"] = true,
+						}),
+						i(6057, {	-- Recipe: Nature Protection Potion
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2839,   {	-- Haren Kanmae <Superior Bowyer>
 					["coord"] = { 42.9, 69.3, 210 },
 					["g"] = {
-						i(11305),	-- Dense Shortbow
+						i(11305, {	-- Dense Shortbow
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(44179,  {	-- Harry No-Hooks <Birds and Rum>
-					["description"] = "Will only sell to those who have proven themselves friends of the Bloodsail Buccaneers, either while on the quest chain that makes you friendly, or by raising your reputation with them the hard way. The pets are also sold in Booty Bay by Narkk.|r",
+					["description"] = "If you don't have the required reputation with Bloodsail Buccaneers, these pets are also sold in Booty Bay by Narkk.|r",
+					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers
 					["g"] = {
-						i(8495),	-- Parrot Cage (Senegal) pet
-						i(8496),	-- Parrot Cage (Cockatiel) pet
+						i(8495),	-- Parrot Cage (Senegal) (PET!)
+						i(8496),	-- Parrot Cage (Cockatiel) (PET!)
 					},
 				}),
 				n(2843,   {	-- Jutak <Blade Trader>
 					["coord"] = { 41.6, 74.1, 210 },
 					["g"] = {
-						i(12162),	-- Plans: Hardened Iron Shortsword
-						i(12248),	-- Daring Dirk
+						i(12248, {	-- Daring Dirk
+							["isLimited"] = true,
+						}),
+						i(12162, {	-- Plans: Hardened Iron Shortsword
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2664,   {	-- Kelsey Yance <Cook>
@@ -75,8 +96,12 @@ _.Zones =
 				n(2840,   {	-- Kizz Bluntstrike <Macecrafter>
 					["coord"] = { 42.9, 70.4, 210 },
 					["g"] = {
-						i(4778),	-- Heavy Spiked Mace
-						i(4777),	-- Ironwood Maul
+						i(4778, {	-- Heavy Spiked Mace
+							["isLimited"] = true,
+						}),
+						i(4777, {	-- Ironwood Maul
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(17249,  {	-- Landro Longshot <The Black Flame>
@@ -102,22 +127,30 @@ _.Zones =
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
-						i(16767),	-- Recipe: Undermine Clam Chowder
+						i(16767, {	-- Recipe: Undermine Clam Chowder
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2663,   {	-- Narkk <Pirate Supplies>
 					["coord"] = { 42.6, 69.1, 210 },
 					["g"] = {
-						i(10728), 	-- Pattern: Black Swashbuckler's Shirt
-						i(8496),	-- Parrot Cage (Cockatiel) pet
-						i(8495),	-- Parrot Cage (Senegal) pet
+						i(8496),	-- Parrot Cage (Cockatiel) (PET!)
+						i(8495),	-- Parrot Cage (Senegal) (PET!)
+						i(10728, { 	-- Pattern: Black Swashbuckler's Shirt
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2699,   {	-- Rikqiz <Leatherworking Supplies>
 					["coord"] = { 43.2, 71.7, 210 },
 					["g"] = {
-						i(14635),	-- Pattern: Gem-Studded Leather Belt						
-						i(18239),	-- Pattern: Shadowskin Gloves							
+						i(14635, {	-- Pattern: Gem-Studded Leather Belt
+							["isLimited"] = true,
+						}),
+						i(18239, {	-- Pattern: Shadowskin Gloves
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(151042, {	-- Skin-Me-Own-Coat Dibblefur <T-Shirt Scalper>
@@ -150,16 +183,26 @@ _.Zones =
 				n(2670,   {	-- Xizk Goodstitch <Tailoring Supplies>
 					["coord"] = { 43.6, 73.1, 210 },
 					["g"] = {
-						i(7087), 	-- Pattern: Crimson Silk Cloak
-						i(14630), 	-- Pattern: Enchanter's Cowl
+						i(7087, {	-- Pattern: Crimson Silk Cloak
+							["isLimited"] = true,
+						}),
+						i(14630, {	-- Pattern: Enchanter's Cowl
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(2482,   {	-- Zarena Cromwind <Superior Weaponsmith>
 					["coord"] = { 43.0, 70.8, 210 },
 					["g"] = {
-						i(12163), 	-- Plans: Moonsteel Broadsword
-						i(12251),	-- Big Stick
-						i(12252),	-- Staff of Protection
+						i(12251, {	-- Big Stick
+							["isLimited"] = true,
+						}),
+						i(12163, {	-- Plans: Moonsteel Broadsword
+							["isLimited"] = true,
+						}),
+						i(12252, {	-- Staff of Protection
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),

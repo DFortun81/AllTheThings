@@ -30,7 +30,9 @@ _.Zones =
 					["coord"] = { 52.6, 55.6, 18 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(6270),	-- Pattern: Blue Linen Vest
+						i(6270, {	-- Pattern: Blue Linen Vest
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(3550,  {	-- Martine Tramblay <Fishing Supplies>
@@ -45,21 +47,25 @@ _.Zones =
 					["coord"] = { 83.2, 69.4, 18 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(15741),	-- Pattern: Stormshroud Pants
-						i(15725),	-- Pattern: Wicked Leather Gauntlets
+						i(15741, {	-- Pattern: Stormshroud Pants
+							["isLimited"] = true,
+						}),
+						i(15725, {	-- Pattern: Wicked Leather Gauntlets
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(4731,  {	-- Zachariah Post <Undead Horse Merchant>
 					["coord"] = { 61.8, 51.8, 18 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(13334),	-- Green Skeletal Warhorse
-						i(18791),	-- Purple Skeletal Warhorse
-						i(47101),	-- Ochre Skeletal Warhorse
-						i(13331),	-- Red Skeletal Warhorse
+						i(46308),	-- Black Skeletal Warhorse
 						i(13332),	-- Blue Skeletal Warhorse
 						i(13333),	-- Brown Skeletal Warhorse
-						i(46308),	-- Black Skeletal Warhorse
+						i(13334),	-- Green Skeletal Warhorse
+						i(47101),	-- Ochre Skeletal Warhorse
+						i(18791),	-- Purple Skeletal Warhorse
+						i(13331),	-- Red Skeletal Warhorse
 					},
 				})
 			}),

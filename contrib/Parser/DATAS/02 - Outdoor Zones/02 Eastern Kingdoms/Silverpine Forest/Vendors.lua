@@ -10,30 +10,48 @@ _.Zones =
 					["coord"] = { 44.6, 39.6, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(4788),	-- Agile Boots
-						i(4789),	-- Stable Boots
+						i(4788, {	-- Agile Boots
+							["isLimited"] = true,
+						}),
+						i(4789, {	-- Stable Boots
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(3554, {	-- Andrea Boynton <Clothier>
 					["coord"] = { 44.6, 39.2, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(4782), 	-- Solstice Robe
-						i(4781), 	-- Whispering Vest
-						i(4786), 	-- Wise Man's Belt
-						i(3428),	-- Common Gray Shirt
 						i(16059),	-- Common Brown Shirt
+						i(3428),	-- Common Gray Shirt
 						i(16060),	-- Common White Shirt
+						i(4782, {	-- Solstice Robe
+							["isLimited"] = true,
+						}),
+						i(4781, {	-- Whispering Vest
+							["isLimited"] = true,
+						}),
+						i(4786, {	-- Wise Man's Belt
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(3556, {	-- Andrew Hilbert <Trade Supplies>
 					["coord"] = { 43.2, 40.6, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(6272),	-- Pattern: Blue Linen Robe
-						i(5786), 	-- Pattern: Murloc Scale Belt
-						i(5787), 	-- Pattern: Murloc Scale Breastplate
-						i(5771),	-- Pattern: Red Linen Bag
+						i(6272, {	-- Pattern: Blue Linen Robe
+							["isLimited"] = true,
+						}),
+						i(5786, {	-- Pattern: Murloc Scale Belt
+							["isLimited"] = true,
+						}),
+						i(5787, {	-- Pattern: Murloc Scale Breastplate
+							["isLimited"] = true,
+						}),
+						i(5771, {	-- Pattern: Red Linen Bag
+							["isLimited"] = true,
+						}),
 						i(6892),	-- Recipe: Smoked Bear Meat
 					},
 				}),
@@ -49,7 +67,9 @@ _.Zones =
 					["coord"] = { 53.8, 82.2, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
+						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
+							["isLimited"] = true,
+						}),
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
@@ -71,17 +91,29 @@ _.Zones =
 					["coord"] = { 44.8, 39.8, 21 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(11304),	-- Fine Longbow
+						i(11304, {	-- Fine Longbow
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(3534, {	-- Wallace the Blind <Weaponsmith>
 					["coord"] = { 33.0, 17.8, 21 },
 					["g"] = {
-						i(4817), 	-- Blessed Claymore
-						i(4818), 	-- Executioner's Sword
-						i(11304), 	-- Fine Longbow
-						i(4778), 	-- Heavy Spiked Mace
-						i(4777), 	-- Ironwood Maul
+						i(4817, {	-- Blessed Claymore
+							["isLimited"] = true,
+						}),
+						i(4818, {	-- Executioner's Sword
+							["isLimited"] = true,
+						}),
+						i(11304, {	-- Fine Longbow
+							["isLimited"] = true,
+						}),
+						i(4778, {	-- Heavy Spiked Mace
+							["isLimited"] = true,
+						}),
+						i(4777, {	-- Ironwood Maul
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),
