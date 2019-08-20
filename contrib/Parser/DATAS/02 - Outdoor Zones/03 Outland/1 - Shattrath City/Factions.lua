@@ -173,11 +173,12 @@ _.Zones =
 							["repeatable"] = true,
 							["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
 						}),
-						un(40, q(11513, {	-- Intercepting the Mana Cells
+						q(11513, {	-- Intercepting the Mana Cells
+							["u"] = 40,	-- Legacy Quests
 							["qg"] = 24932,	-- Exarch Nasuun
 							["coord"] = { 49.8, 42.6, 111 },
 							["repeatable"] = true,
-						})),
+						}),
 						q(11514, {	-- Maintaining the Sunwell Portal
 							["qg"] = 24932,	-- Exarch Nasuun
 							["coord"] = { 49.8, 42.6, 111 },
@@ -290,9 +291,9 @@ _.Zones =
 								["coord"] = { 23.6, 32.6, 111 },
 								["g"] = {
 									i(28963),	-- Voidheart Crown
-									i(28964),	-- Voidhaert Robe
+									i(28964),	-- Voidheart Robe
 									i(28966),	-- Voidheart Leggings
-									i(28967),	-- Voidheat Mantle
+									i(28967),	-- Voidheart Mantle
 									i(28968),	-- Voidheart Gloves
 									i(29011),	-- Warbringer Greathelm
 									i(29012),	-- Warbringer Chestguard
@@ -385,6 +386,266 @@ _.Zones =
 									i(35716),	-- Shattrath Flask of Pure Death
 									i(32901),	-- Shattrath Flask of Relentless Assault
 									i(32900),	-- Shattrath Flask of Supreme Power
+								},
+							}),
+							n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
+								["coord"] = { 24.8, 27.0, 111 },
+								["g"] = {
+									i(30153, {	-- Breeches of the Avatar
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30164, {	-- Cataclysm Chestguard
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30169, {	-- Cataclysm Chestpiece
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30185, {	-- Cataclysm Chestplate
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30189, {	-- Cataclysm Gauntlets
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30165, {	-- Cataclysm Gloves
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30170, {	-- Cataclysm Handgrips
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30166, {	-- Cataclysm Headguard
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30171, {	-- Cataclysm Headpiece
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30190, {	-- Cataclysm Helm
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30172, {	-- Cataclysm Leggings
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30167, {	-- Cataclysm Legguards
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30192, {	-- Cataclysm Legplates
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30168, {	-- Cataclysm Shoulderguards
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30173, {	-- Cataclysm Shoulderpads
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30194, {	-- Cataclysm Shoulderplates
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30152, {	-- Cowl of the Avatar
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30206, {	-- Cowl of Tirisfal
+										["cost"] = { { "i", 30244, 1 }, },	-- Helm of the Vanquished Hero
+									}),
+									i(30129, {	-- Crystalforge Breastplate
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30123, {	-- Crystalforge Chestguard
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30134, {	-- Crystalforge Chestpiece
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30125, {	-- Crystalforge Faceguard
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30130, {	-- Crystalforge Gauntlets
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30135, {	-- Crystalforge Gloves
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30136, {	-- Crystalforge Greathelm
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30132, {	-- Crystalforge Greaves
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30124, {	-- Crystalforge Handguards
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30137, {	-- Crystalforge Leggings
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30126, {	-- Crystalforge Legguards
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30138, {	-- Crystalforge Pauldrons
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30133, {	-- Crystalforge Shoulderbraces
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30127, {	-- Crystalforge Shoulderguards
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30131, {	-- Crystalforge War-Helm
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30144, {	-- Deathmantle Chestguard
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30145, {	-- Deathmantle Handguards
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30146, {	-- Deathmantle Helm
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30148, {	-- Deathmantle Legguards
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30149, {	-- Deathmantle Shoulderpads
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30120, {	-- Destroyer Battle-Helm
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30118, {	-- Destroyer Breastplate
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30113, {	-- Destroyer Chestguard
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30119, {	-- Destroyer Gauntlets
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30115, {	-- Destroyer Greathelm
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30121, {	-- Destroyer Greaves
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30114, {	-- Destroyer Handguards
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30116, {	-- Destroyer Legguards
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30122, {	-- Destroyer Shoulderblades
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30117, {	-- Destroyer Shoulderguards
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30151, {	-- Gloves of the Avatar
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30211, {	-- Gloves of the Corruptor
+										["cost"] = { { "i", 30241, 1 }, },	-- Gloves of the Vanquished Hero
+									}),
+									i(30205, {	-- Gloves of Tirisfal
+										["cost"] = { { "i", 30241, 1 }, },	-- Gloves of the Vanquished Hero
+									}),
+									i(30160, {	-- Handguards of the Avatar
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30161, {	-- Hood of the Avatar
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30212, {	-- Hood of the Corruptor
+										["cost"] = { { "i", 30244, 1 }, },	-- Helm of the Vanquished Hero
+									}),
+									i(30162, {	-- Leggings of the Avatar
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30213, {	-- Leggings of the Corruptor
+										["cost"] = { { "i", 30247, 1 }, },	-- Leggings of the Vanquished Hero
+									}),
+									i(30207, {	-- Leggings of Tirisfal
+										["cost"] = { { "i", 30247, 1 }, },	-- Leggings of the Vanquished Hero
+									}),
+									i(30154, {	-- Mantle of the Avatar
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30215, {	-- Mantle of the Corruptor
+										["cost"] = { { "i", 30250, 1 }, },	-- Pauldrons of the Vanquished Hero
+									}),
+									i(30210, {	-- Mantle of Tirisfal
+										["cost"] = { { "i", 30250, 1 }, },	-- Pauldrons of the Vanquished Hero
+									}),
+									i(30216, {	-- Nordrassil Chestguard
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30231, {	-- Nordrassil Chestpiece
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30222, {	-- Nordrassil Chestplate
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30229, {	-- Nordrassil Feral-Kilt
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30230, {	-- Nordrassil Feral-Mantle
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30232, {	-- Nordrassil Gauntlets
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30217, {	-- Nordrassil Gloves
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30223, {	-- Nordrassil Handgrips
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30228, {	-- Nordrassil Headdress
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30219, {	-- Nordrassil Headguard
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30233, {	-- Nordrassil Headpiece
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30220, {	-- Nordrassil Life-Kilt
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30221, {	-- Nordrassil Life-Mantle
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30234, {	-- Nordrassil Wrath-Kilt
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30235, {	-- Nordrassil Wrath-Mantle
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30140, {	-- Rift Stalker Gauntlets
+										["cost"] = { { "i", 30241, 1 }, },	-- Gloves of the Vanquished Hero
+									}),
+									i(30139, {	-- Rift Stalker Hauberk
+										["cost"] = { { "i", 30238, 1 }, },	-- Chestguard of the Vanquished Hero
+									}),
+									i(30141, {	-- Rift Stalker Helm
+										["cost"] = { { "i", 30244, 1 }, },	-- Helm of the Vanquished Hero
+									}),
+									i(30142, {	-- Rift Stalker Leggings
+										["cost"] = { { "i", 30247, 1 }, },	-- Leggings of the Vanquished Hero
+									}),
+									i(30143, {	-- Rift Stalker Mantle
+										["cost"] = { { "i", 30250, 1 }, },	-- Pauldrons of the Vanquished Hero
+									}),
+									i(30214, {	-- Robe of the Corruptor
+										["cost"] = { { "i", 30238, 1 }, },	-- Chestguard of the Vanquished Hero
+									}),
+									i(30196, {	-- Robes of Tirisfal
+										["cost"] = { { "i", 30238, 1 }, },	-- Chestguard of the Vanquished Hero
+									}),
+									i(30159, {	-- Shroud of the Avatar
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30150, {	-- Vestments of the Avatar
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30163, {	-- Wings of the Avatar
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
 								},
 							}),
 							n(19321, {	-- Quartermaster Endarin <Aldor Quartermaster>
@@ -682,6 +943,266 @@ _.Zones =
 								["coord"] = { 49.6, 79.0, 111 },
 								["g"] = {
 									i(12252),	-- Staff of Protection
+								},
+							}),
+							n(21905,  {	-- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
+								["coord"] = {44.8, 91.6, 111 },
+								["g"] = {
+									i(30153, {	-- Breeches of the Avatar
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30164, {	-- Cataclysm Chestguard
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30169, {	-- Cataclysm Chestpiece
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30185, {	-- Cataclysm Chestplate
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30189, {	-- Cataclysm Gauntlets
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30165, {	-- Cataclysm Gloves
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30170, {	-- Cataclysm Handgrips
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30166, {	-- Cataclysm Headguard
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30171, {	-- Cataclysm Headpiece
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30190, {	-- Cataclysm Helm
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30172, {	-- Cataclysm Leggings
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30167, {	-- Cataclysm Legguards
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30192, {	-- Cataclysm Legplates
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30168, {	-- Cataclysm Shoulderguards
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30173, {	-- Cataclysm Shoulderpads
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30194, {	-- Cataclysm Shoulderplates
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30152, {	-- Cowl of the Avatar
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30206, {	-- Cowl of Tirisfal
+										["cost"] = { { "i", 30244, 1 }, },	-- Helm of the Vanquished Hero
+									}),
+									i(30129, {	-- Crystalforge Breastplate
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30123, {	-- Crystalforge Chestguard
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30134, {	-- Crystalforge Chestpiece
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30125, {	-- Crystalforge Faceguard
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30130, {	-- Crystalforge Gauntlets
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30135, {	-- Crystalforge Gloves
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30136, {	-- Crystalforge Greathelm
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30132, {	-- Crystalforge Greaves
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30124, {	-- Crystalforge Handguards
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30137, {	-- Crystalforge Leggings
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30126, {	-- Crystalforge Legguards
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30138, {	-- Crystalforge Pauldrons
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30133, {	-- Crystalforge Shoulderbraces
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30127, {	-- Crystalforge Shoulderguards
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30131, {	-- Crystalforge War-Helm
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30144, {	-- Deathmantle Chestguard
+										["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+									}),
+									i(30145, {	-- Deathmantle Handguards
+										["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+									}),
+									i(30146, {	-- Deathmantle Helm
+										["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+									}),
+									i(30148, {	-- Deathmantle Legguards
+										["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+									}),
+									i(30149, {	-- Deathmantle Shoulderpads
+										["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+									}),
+									i(30120, {	-- Destroyer Battle-Helm
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30118, {	-- Destroyer Breastplate
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30113, {	-- Destroyer Chestguard
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30119, {	-- Destroyer Gauntlets
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30115, {	-- Destroyer Greathelm
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30121, {	-- Destroyer Greaves
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30114, {	-- Destroyer Handguards
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30116, {	-- Destroyer Legguards
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30122, {	-- Destroyer Shoulderblades
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30117, {	-- Destroyer Shoulderguards
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30151, {	-- Gloves of the Avatar
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30211, {	-- Gloves of the Corruptor
+										["cost"] = { { "i", 30241, 1 }, },	-- Gloves of the Vanquished Hero
+									}),
+									i(30205, {	-- Gloves of Tirisfal
+										["cost"] = { { "i", 30241, 1 }, },	-- Gloves of the Vanquished Hero
+									}),
+									i(30160, {	-- Handguards of the Avatar
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30161, {	-- Hood of the Avatar
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30212, {	-- Hood of the Corruptor
+										["cost"] = { { "i", 30244, 1 }, },	-- Helm of the Vanquished Hero
+									}),
+									i(30162, {	-- Leggings of the Avatar
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30213, {	-- Leggings of the Corruptor
+										["cost"] = { { "i", 30247, 1 }, },	-- Leggings of the Vanquished Hero
+									}),
+									i(30207, {	-- Leggings of Tirisfal
+										["cost"] = { { "i", 30247, 1 }, },	-- Leggings of the Vanquished Hero
+									}),
+									i(30154, {	-- Mantle of the Avatar
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30215, {	-- Mantle of the Corruptor
+										["cost"] = { { "i", 30250, 1 }, },	-- Pauldrons of the Vanquished Hero
+									}),
+									i(30210, {	-- Mantle of Tirisfal
+										["cost"] = { { "i", 30250, 1 }, },	-- Pauldrons of the Vanquished Hero
+									}),
+									i(30216, {	-- Nordrassil Chestguard
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30231, {	-- Nordrassil Chestpiece
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30222, {	-- Nordrassil Chestplate
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30229, {	-- Nordrassil Feral-Kilt
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30230, {	-- Nordrassil Feral-Mantle
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30232, {	-- Nordrassil Gauntlets
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30217, {	-- Nordrassil Gloves
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30223, {	-- Nordrassil Handgrips
+										["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+									}),
+									i(30228, {	-- Nordrassil Headdress
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30219, {	-- Nordrassil Headguard
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30233, {	-- Nordrassil Headpiece
+										["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+									}),
+									i(30220, {	-- Nordrassil Life-Kilt
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30221, {	-- Nordrassil Life-Mantle
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30234, {	-- Nordrassil Wrath-Kilt
+										["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+									}),
+									i(30235, {	-- Nordrassil Wrath-Mantle
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
+									i(30140, {	-- Rift Stalker Gauntlets
+										["cost"] = { { "i", 30241, 1 }, },	-- Gloves of the Vanquished Hero
+									}),
+									i(30139, {	-- Rift Stalker Hauberk
+										["cost"] = { { "i", 30238, 1 }, },	-- Chestguard of the Vanquished Hero
+									}),
+									i(30141, {	-- Rift Stalker Helm
+										["cost"] = { { "i", 30244, 1 }, },	-- Helm of the Vanquished Hero
+									}),
+									i(30142, {	-- Rift Stalker Leggings
+										["cost"] = { { "i", 30247, 1 }, },	-- Leggings of the Vanquished Hero
+									}),
+									i(30143, {	-- Rift Stalker Mantle
+										["cost"] = { { "i", 30250, 1 }, },	-- Pauldrons of the Vanquished Hero
+									}),
+									i(30214, {	-- Robe of the Corruptor
+										["cost"] = { { "i", 30238, 1 }, },	-- Chestguard of the Vanquished Hero
+									}),
+									i(30196, {	-- Robes of Tirisfal
+										["cost"] = { { "i", 30238, 1 }, },	-- Chestguard of the Vanquished Hero
+									}),
+									i(30159, {	-- Shroud of the Avatar
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30150, {	-- Vestments of the Avatar
+										["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+									}),
+									i(30163, {	-- Wings of the Avatar
+										["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+									}),
 								},
 							}),
 						}),

@@ -9,12 +9,20 @@ _.Zones =
 				n(19662,  {	-- Aaron Hollman <Blacksmithing Supplies>
 					["coord" ] = { 64.0, 71.8, 111 },
 					["g"] = {
-						i(23591),	-- Plans: Adamantite Cleaver
-						i(23592),	-- Plans: Adamantite Dagger
-						i(23590),	-- Plans: Adamantite Maul
-						i(23593),	-- Plans: Adamantite Rapier
+						i(23591, {	-- Plans: Adamantite Cleaver
+							["isLimited"] = true,
+						}),
+						i(23592, {	-- Plans: Adamantite Dagger
+							["isLimited"] = true,
+						}),
+						i(23590, {	-- Plans: Adamantite Maul
+							["isLimited"] = true,
+						}),
+						i(23593, {	-- Plans: Adamantite Rapier
+							["isLimited"] = true,
+						}),
 						i(25846, {	-- Plans: Adamantite Rod
-							["u"] = 1,
+							["u"] = 1,	-- Never Available
 						}),
 					},
 				}),
@@ -22,7 +30,9 @@ _.Zones =
 					-- may require neutral (not aligned with alder/scryers) or positive reputation with aldor to interact with this vendor -- need to test
 					["coord"] = { 34.2, 20.0, 111 },
 					["g"] = {
-						i(12251),	-- Big Stick
+						i(12251, {	-- Big Stick
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(22212,  {	-- Andrion Darkspinner <Shadoweave Tailoring Specialist>
@@ -30,8 +40,8 @@ _.Zones =
 					["g"] = {
 						i(21915),	-- Pattern: Ebon Shadowbag
 						i(21914),	-- Pattern: Frozen Shadoweave Boots
-						i(21912),	-- Pattern: Frozen Shadoweave Shoulders
 						i(21913),	-- Pattern: Frozen Shadoweave Robe
+						i(21912),	-- Pattern: Frozen Shadoweave Shoulders
 						i(30483),	-- Pattern: Shadowcloth
 					},
 				}),
@@ -83,12 +93,12 @@ _.Zones =
 						i(34926), 	-- Slippers of Dutiful Mending
 						i(34898), 	-- Staff of the Forest Lord
 						i(34940), 	-- Sunguard Legplates
-						i(34949), 	-- Swiftblade of Uncertainty
+						i(34949), 	-- Swift Blade of Uncertainty
 						i(34910), 	-- Tameless Breeches
 						i(34891), 	-- The Blade of Harbingers
 						i(34952), 	-- The Mutilator
 						i(34936), 	-- Tormented Demonsoul Robes
-						i(34928), 	-- Trousers of the Scryer's Retainer
+						i(34928), 	-- Trousers of the Scryers' Retainer
 						i(34927), 	-- Tunic of the Dark Hour
 						i(34893), 	-- Vanir's Fist of Brutality
 						i(34951), 	-- Vanir's Fist of Carnage
@@ -212,6 +222,7 @@ _.Zones =
 						i(33530), 	-- Natural Life Leggings
 						i(29374), 	-- Necklace of Eternal Hope
 						i(29386), 	-- Necklace of the Juggernaut
+						i(30183),	-- Nether Vortex
 						i(33222), 	-- Nyn'jah's Tabi Boots
 						i(29272), 	-- Orb of the Soul-Eater
 						i(33584), 	-- Pantaloons of Arcane Annihilation
@@ -220,6 +231,7 @@ _.Zones =
 						i(33970), 	-- Pauldrons of the Furious Elements
 						i(33973), 	-- Pauldrons of Tribal Fury
 						i(33531), 	-- Polished Waterscale Gloves
+						i(23572),	-- Primal Nether
 						i(29379), 	-- Ring of Arathi Warlords
 						i(29367),	-- Ring of Cryptic Dreams
 						i(29384),	-- Ring of Unyielding Force
@@ -245,7 +257,7 @@ _.Zones =
 						i(33520), 	-- Vambraces of the Naaru
 						i(33579), 	-- Vestments of Hibernation
 						i(33325), 	-- Voodoo Shaker
-						i(33291), 	-- Vood-Woven Belt
+						i(33291), 	-- Voodoo-Woven Belt
 						i(33583), 	-- Waistguard of the Great Beast
 						i(33280), 	-- War-Feathered Loop
 						i(32085), 	-- Warpstalker Helm
@@ -266,163 +278,257 @@ _.Zones =
 					["coord"] = { 75.6, 30.6, 111 },
 					["g"] = {
 						i(38082),	-- "Gigantique" Bag
+						i(134007),	-- Eternal Black Diamond Ring (TOY!)
+						i(134004),	-- Noble's Eternal Elementium Signet (TOY!)
 						i(51809),	-- Portable Hole
-						i(134007),	-- Eternal Black Diamond Ring Toy
-						i(134004),	-- Noble's Eternal Elementium Signet
 					},
 				}),
 				n(19065,  {	-- Inessera <Jewelcrafting Supplies Vendor>
 					["coord"] = { 35.6, 19.8, 111 },
 					["g"] = {
-						currency(61, {	-- Dalaran Jewelcrafter's Token
-							i(47010),	-- Design: Accurate Dreadstone
-							i(46917),	-- Design: Bold Cardinal Ruby
-							i(46916),	-- Design: Brilliant Cardinal Ruby
-							i(46930, {	-- Design: Brilliant Cardinal Ruby
-								["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47015),	-- Design: Champion's Ametrine
-							i(46949),	-- Design: Deadly Ametrine
-							i(47011, {	-- Design: Deadly Ametrine
-								["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46941),	-- Design: Defender's Dreadstone
-							i(47020),	-- Design: Deft Ametrine
-							i(47023, {	-- Design: Deft Ametrine
-								["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46918),	-- Design: Delicate Cardinal Ruby
-							i(46919, {	-- Design: Delicate Cardinal Ruby
-								["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46912),	-- Design: Energized Eye of Zul
-							i(46910, {	-- Design: Energized Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46953),	-- Design: Etched Dreadstone
-							i(47019),	-- Design: Fierce Ametrine
-							i(46923),	-- Design: Flashing Cardinal Ruby
-							i(46904),	-- Design: Forceful Eye of Zul
-							i(46956),	-- Design: Glinting Dreadstone
-							i(46945, {	-- Design: Glinting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46946, {	-- Design: Glinting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47008, {	-- Design: Glinting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46942),	-- Design: Guardian's Dreadstone
-							i(46948),	-- Design: Inscribed Ametrine
-							i(46901),	-- Design: Jagged Eye of Zul
-							i(46944, {	-- Design: Jagged Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46909),	-- Design: Lightning Eye of Zul
-							i(46907, {	-- Design: Lightning Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47021),	-- Design: Lucent Ametrine
-							i(47016, {	-- Design: Lucent Ametrine
-								["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46905),	-- Design: Misty Eye of Zul
-							i(46906, {	-- Design: Misty Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46943),	-- Design: Mysterious Dreadstone
-							i(46932),	-- Design: Mystic King's Amber
-							i(49112),	-- Design: Nightmare Tear
-							i(46899),	-- Design: Nimble Eye of Zul
-							i(46950),	-- Design: Potent Ametrine
-							i(46920),	-- Design: Precise Cardinal Ruby
-							i(46937),	-- Design: Purified Dreadstone
-							i(46900, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46903, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46947, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46939, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46933),	-- Design: Quick King's Amber
-							i(46911),	-- Design: Radiant Eye of Zul
-							i(46908, {	-- Design: Radiant Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47007),	-- Design: Reckless Ametrine
-							i(46897),	-- Design: Regal Eye of Zul
-							i(46940, {	-- Design: Regal Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47022),	-- Design: Resolute Ametrine
-							i(47018),	-- Design: Resplendent Ametrine
-							i(46928),	-- Design: Rigid Majestic Zircon
-							i(46913),	-- Design: Shattered Eye of Zul
-							i(46938),	-- Design: Shifting Dreadstone
-							i(46934, {	-- Design: Shifting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46929),	-- Design: Smooth King's Amber
-							i(46921, {	-- Design: Smooth King's Amber
-								["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46924),	-- Design: Solid Majestic Zircon
-							i(46935),	-- Design: Sovereign Dreadstone
-							i(46925),	-- Design: Sparkling Majestic Zircon
-							i(46927, {	-- Design: Sparkling Majestic Zircon
-								["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47017),	-- Design: Stalwart Ametrine
-							i(47012, {	-- Design: Stalwart Ametrine
-								["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46898),	-- Design: Steady Eye of Zul
-							i(46926),	-- Design: Stormy Majestic Zircon
-							i(46922),	-- Design: Subtle King's Amber
-							i(46931, {	-- Design: Subtle King's Amber
-								["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46902),	-- Design: Timeless Dreadstone
-							i(46936, {	-- Design: Timeless Dreadstone
-								["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46915),	-- Design: Turbid Eye of Zul
-							i(46914, {	-- Design: Turbid Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46951),	-- Design: Veiled Dreadstone
-							i(46952),	-- Design: Willful Ametrine
+						i(47010, {	-- Design: Accurate Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46917, {	-- Design: Bold Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46916, {	-- Design: Brilliant Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46930, {	-- Design: Brilliant Cardinal Ruby
+							["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47015, {	-- Design: Champion's Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46949, {	-- Design: Deadly Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47011, {	-- Design: Deadly Ametrine
+							["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46941, {	-- Design: Defender's Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47020, {	-- Design: Deft Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47023, {	-- Design: Deft Ametrine
+							["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46918, {	-- Design: Delicate Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46919, {	-- Design: Delicate Cardinal Ruby
+							["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46912, {	-- Design: Energized Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46910, {	-- Design: Energized Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46953, {	-- Design: Etched Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47019, {	-- Design: Fierce Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46923, {	-- Design: Flashing Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46904, {	-- Design: Forceful Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46956, {	-- Design: Glinting Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46945, {	-- Design: Glinting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46946, {	-- Design: Glinting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47008, {	-- Design: Glinting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46942, {	-- Design: Guardian's Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46948, {	-- Design: Inscribed Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46901, {	-- Design: Jagged Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46944, {	-- Design: Jagged Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46909, {	-- Design: Lightning Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46907, {	-- Design: Lightning Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47021, {	-- Design: Lucent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47016, {	-- Design: Lucent Ametrine
+							["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46905, {	-- Design: Misty Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46906, {	-- Design: Misty Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46943, {	-- Design: Mysterious Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46932, {	-- Design: Mystic King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(49112, {	-- Design: Nightmare Tear
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46899, {	-- Design: Nimble Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46950, {	-- Design: Potent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46920, {	-- Design: Precise Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46937, {	-- Design: Purified Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46900, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46903, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46947, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46939, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46933, {	-- Design: Quick King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46911, {	-- Design: Radiant Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46908, {	-- Design: Radiant Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47007, {	-- Design: Reckless Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46897, {	-- Design: Regal Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46940, {	-- Design: Regal Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47022, {	-- Design: Resolute Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47018, {	-- Design: Resplendent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46928, {	-- Design: Rigid Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46913, {	-- Design: Shattered Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46938, {	-- Design: Shifting Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46934, {	-- Design: Shifting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46929, {	-- Design: Smooth King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46921, {	-- Design: Smooth King's Amber
+							["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46924, {	-- Design: Solid Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46935, {	-- Design: Sovereign Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46925, {	-- Design: Sparkling Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46927, {	-- Design: Sparkling Majestic Zircon
+							["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47017, {	-- Design: Stalwart Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47012, {	-- Design: Stalwart Ametrine
+							["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46898, {	-- Design: Steady Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46926, {	-- Design: Stormy Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46922, {	-- Design: Subtle King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46931, {	-- Design: Subtle King's Amber
+							["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46902, {	-- Design: Timeless Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46936, {	-- Design: Timeless Dreadstone
+							["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46915, {	-- Design: Turbid Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46914, {	-- Design: Turbid Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46951, {	-- Design: Veiled Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46952, {	-- Design: Willful Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 						}),
 					},
 				}),
@@ -433,248 +539,252 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
-				n(21906,  {	-- Kelara <Keeper of Sha'tari Heirlooms>
-					["coord"] = { 24.8, 27.0, 111 },
-					["g"] = {
-						i(30113),	-- Destroyer Chestguard
-						i(30114),	-- Destroyer Handguards
-						i(30115),	-- Destroyer Greathelm
-						i(30116),	-- Destroyer Legguards
-						i(30117),	-- Destroyer Shoulderguards
-						i(30118),	-- Destroyer Breastplate
-						i(30119),	-- Destroyer Gauntlets
-						i(30120),	-- Destroyer Battle-Helm
-						i(30121),	-- Destroyer Greaves
-						i(30122),	-- Destroyer Shoulderblades
-						i(30123),	-- Crystalforge Chestguard
-						i(30124),	-- Crystalforge Handguards
-						i(30125),	-- Crystalforge Faceguard
-						i(30126),	-- Crystalforge Legguards
-						i(30127),	-- Crystalforge Shoulderguards
-						i(30129),	-- Crystalforge Breastplate
-						i(30130),	-- Crystalforge Gauntlets
-						i(30131),	-- Crystalforge War-Helm
-						i(30132),	-- Crystalforge Greaves
-						i(30133),	-- Crystalforge Shoulderbraces
-						i(30134),	-- Crystalforge Chestpiece
-						i(30135),	-- Crystalforge Gloves
-						i(30136),	-- Crystalforge Greathelm
-						i(30137),	-- Crystalforge Leggings
-						i(30138),	-- Crystalforge Pauldrons
-						i(30139),	-- Rift Stalker Hauberk
-						i(30140),	-- Rift Stalker Gauntlets
-						i(30141),	-- Rift Stalker Helm
-						i(30142),	-- Rift Stalker Leggings
-						i(30143),	-- Rift Stalker Mantle
-						i(30144),	-- Deathmantle Chestguard
-						i(30145),	-- Deathmantle Handguards
-						i(30146),	-- Deathmantle Helm
-						i(30148),	-- Deathmantle Legguards
-						i(30149),	-- Deathmantle Shoulderpads
-						i(30150),	-- Vestments of the Avatar
-						i(30151),	-- Gloves of the Avatar
-						i(30152),	-- Cowl of the Avatar
-						i(30153),	-- Breeches of the Avatar
-						i(30154),	-- Mantle of the Avatar
-						i(30159),	-- Shroud of the Avatar
-						i(30160),	-- Handguards of the Avatar
-						i(30161),	-- Hood of the Avatar
-						i(30162),	-- Leggings of the Avatar
-						i(30163),	-- Wings of the Avatar
-						i(30164),	-- Cataclysm Chestguard
-						i(30165),	-- Cataclysm Gloves
-						i(30166),	-- Cataclysm Headguard
-						i(30167),	-- Cataclysm Legguards
-						i(30168),	-- Cataclysm Shoulderguards
-						i(30169),	-- Cataclysm Chestpiece
-						i(30170),	-- Cataclysm Handgrips
-						i(30171),	-- Cataclysm Headpiece
-						i(30172),	-- Cataclysm Leggings
-						i(30173),	-- Cataclysm Shoulderpads
-						i(30185),	-- Cataclysm Chestplate
-						i(30189),	-- Cataclysm Gauntlets
-						i(30190),	-- Cataclysm Helm
-						i(30192),	-- Cataclysm Legplates
-						i(30194),	-- Cataclysm Shoulderplates
-						i(30196),	-- Robes of Tirisfal
-						i(30205),	-- Gloves of Tirisfal
-						i(30206),	-- Cowl of Tirisfal
-						i(30207),	-- Leggings of Tirisfal
-						i(30210),	-- Mantle of Tirisfal
-						i(30211),	-- Gloves of the Corruptor
-						i(30212),	-- Hood of the Corruptor
-						i(30213),	-- Leggings of the Corruptor
-						i(30214),	-- Robe of the Corruptor
-						i(30215),	-- Mantle of the Corruptor
-						i(30216),	-- Nordrassil Chestguard
-						i(30217),	-- Nordrassil Gloves
-						i(30219),	-- Nordrassil Headgurad
-						i(30220),	-- Nordrassil Life-Kilt
-						i(30221),	-- Nordrassil Life-Mantle
-						i(30222),	-- Nordrassil Chestplate
-						i(30223),	-- Nordrassil Handgrips
-						i(30228),	-- Nordrassil Headdress
-						i(30229),	-- Nordrassil Feral-Kilt
-						i(30230),	-- Nordrassil Feral-Mantle
-						i(30231),	-- Nordrassil Chestpiece
-						i(30232),	-- Nordrassil Gauntlets
-						i(30233),	-- Nordrassil Headpiece
-						i(30234),	-- Nordrassil Wrath-Kilt
-						i(30235),	-- Nordrassil Wrath-Mantle
-					},
-				}),
 				n(33637,  {	-- Kirembri Silvermane <Jewelcrafting Trainer>
 					["coord"] = { 58.6, 75.2, 111 },
 					["g"] = {
-						currency(61, {	-- Dalaran Jewelcrafter's Token
-							i(47010),	-- Design: Accurate Dreadstone
-							i(46917),	-- Design: Bold Cardinal Ruby
-							i(46916),	-- Design: Brilliant Cardinal Ruby
-							i(46930, {	-- Design: Brilliant Cardinal Ruby
-								["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47015),	-- Design: Champion's Ametrine
-							i(46949),	-- Design: Deadly Ametrine
-							i(47011, {	-- Design: Deadly Ametrine
-								["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46941),	-- Design: Defender's Dreadstone
-							i(47020),	-- Design: Deft Ametrine
-							i(47023, {	-- Design: Deft Ametrine
-								["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46918),	-- Design: Delicate Cardinal Ruby
-							i(46919, {	-- Design: Delicate Cardinal Ruby
-								["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46912),	-- Design: Energized Eye of Zul
-							i(46910, {	-- Design: Energized Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46953),	-- Design: Etched Dreadstone
-							i(47019),	-- Design: Fierce Ametrine
-							i(46923),	-- Design: Flashing Cardinal Ruby
-							i(46904),	-- Design: Forceful Eye of Zul
-							i(46956),	-- Design: Glinting Dreadstone
-							i(46945, {	-- Design: Glinting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46946, {	-- Design: Glinting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47008, {	-- Design: Glinting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46942),	-- Design: Guardian's Dreadstone
-							i(46948),	-- Design: Inscribed Ametrine
-							i(46901),	-- Design: Jagged Eye of Zul
-							i(46944, {	-- Design: Jagged Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46909),	-- Design: Lightning Eye of Zul
-							i(46907, {	-- Design: Lightning Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47021),	-- Design: Lucent Ametrine
-							i(47016, {	-- Design: Lucent Ametrine
-								["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46905),	-- Design: Misty Eye of Zul
-							i(46906, {	-- Design: Misty Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46943),	-- Design: Mysterious Dreadstone
-							i(46932),	-- Design: Mystic King's Amber
-							i(49112),	-- Design: Nightmare Tear
-							i(46899),	-- Design: Nimble Eye of Zul
-							i(46950),	-- Design: Potent Ametrine
-							i(46920),	-- Design: Precise Cardinal Ruby
-							i(46937),	-- Design: Purified Dreadstone
-							i(46900, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46903, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46947, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46939, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46933),	-- Design: Quick King's Amber
-							i(46911),	-- Design: Radiant Eye of Zul
-							i(46908, {	-- Design: Radiant Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47007),	-- Design: Reckless Ametrine
-							i(46897),	-- Design: Regal Eye of Zul
-							i(46940, {	-- Design: Regal Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47022),	-- Design: Resolute Ametrine
-							i(47018),	-- Design: Resplendent Ametrine
-							i(46928),	-- Design: Rigid Majestic Zircon
-							i(46913),	-- Design: Shattered Eye of Zul
-							i(46938),	-- Design: Shifting Dreadstone
-							i(46934, {	-- Design: Shifting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46929),	-- Design: Smooth King's Amber
-							i(46921, {	-- Design: Smooth King's Amber
-								["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46924),	-- Design: Solid Majestic Zircon
-							i(46935),	-- Design: Sovereign Dreadstone
-							i(46925),	-- Design: Sparkling Majestic Zircon
-							i(46927, {	-- Design: Sparkling Majestic Zircon
-								["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47017),	-- Design: Stalwart Ametrine
-							i(47012, {	-- Design: Stalwart Ametrine
-								["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46898),	-- Design: Steady Eye of Zul
-							i(46926),	-- Design: Stormy Majestic Zircon
-							i(46922),	-- Design: Subtle King's Amber
-							i(46931, {	-- Design: Subtle King's Amber
-								["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46902),	-- Design: Timeless Dreadstone
-							i(46936, {	-- Design: Timeless Dreadstone
-								["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46915),	-- Design: Turbid Eye of Zul
-							i(46914, {	-- Design: Turbid Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46951),	-- Design: Veiled Dreadstone
-							i(46952),	-- Design: Willful Ametrine
+						i(47010, {	-- Design: Accurate Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46917, {	-- Design: Bold Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46916, {	-- Design: Brilliant Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46930, {	-- Design: Brilliant Cardinal Ruby
+							["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47015, {	-- Design: Champion's Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46949, {	-- Design: Deadly Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47011, {	-- Design: Deadly Ametrine
+							["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46941, {	-- Design: Defender's Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47020, {	-- Design: Deft Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47023, {	-- Design: Deft Ametrine
+							["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46918, {	-- Design: Delicate Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46919, {	-- Design: Delicate Cardinal Ruby
+							["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46912, {	-- Design: Energized Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46910, {	-- Design: Energized Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46953, {	-- Design: Etched Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47019, {	-- Design: Fierce Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46923, {	-- Design: Flashing Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46904, {	-- Design: Forceful Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46956, {	-- Design: Glinting Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46945, {	-- Design: Glinting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46946, {	-- Design: Glinting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47008, {	-- Design: Glinting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46942, {	-- Design: Guardian's Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46948, {	-- Design: Inscribed Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46901, {	-- Design: Jagged Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46944, {	-- Design: Jagged Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46909, {	-- Design: Lightning Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46907, {	-- Design: Lightning Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47021, {	-- Design: Lucent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47016, {	-- Design: Lucent Ametrine
+							["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46905, {	-- Design: Misty Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46906, {	-- Design: Misty Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46943, {	-- Design: Mysterious Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46932, {	-- Design: Mystic King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(49112, {	-- Design: Nightmare Tear
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46899, {	-- Design: Nimble Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46950, {	-- Design: Potent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46920, {	-- Design: Precise Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46937, {	-- Design: Purified Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46900, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46903, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46947, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46939, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46933, {	-- Design: Quick King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46911, {	-- Design: Radiant Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46908, {	-- Design: Radiant Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47007, {	-- Design: Reckless Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46897, {	-- Design: Regal Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46940, {	-- Design: Regal Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47022, {	-- Design: Resolute Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47018, {	-- Design: Resplendent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46928, {	-- Design: Rigid Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46913, {	-- Design: Shattered Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46938, {	-- Design: Shifting Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46934, {	-- Design: Shifting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46929, {	-- Design: Smooth King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46921, {	-- Design: Smooth King's Amber
+							["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46924, {	-- Design: Solid Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46935, {	-- Design: Sovereign Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46925, {	-- Design: Sparkling Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46927, {	-- Design: Sparkling Majestic Zircon
+							["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47017, {	-- Design: Stalwart Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47012, {	-- Design: Stalwart Ametrine
+							["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46898, {	-- Design: Steady Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46926, {	-- Design: Stormy Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46922, {	-- Design: Subtle King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46931, {	-- Design: Subtle King's Amber
+							["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46902, {	-- Design: Timeless Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46936, {	-- Design: Timeless Dreadstone
+							["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46915, {	-- Design: Turbid Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46914, {	-- Design: Turbid Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46951, {	-- Design: Veiled Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46952, {	-- Design: Willful Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 						}),
 					},
 				}),
@@ -693,13 +803,21 @@ _.Zones =
 				n(19663,  {	-- Madame Ruby <Enchanting Supplies>
 					["coord"] = { 63.6, 70.0, 111 },
 					["g"] = {
-						i(28282),	-- Formula: Enchant Shield - Major Stamina
-						i(22565),	-- Formula: Large Prismatic Shard
+						i(28282, {	-- Formula: Enchant Shield - Major Stamina
+							["isLimited"] = true,
+						}),
+						i(22565, {	-- Formula: Large Prismatic Shard
+							["isLimited"] = true,
+						}),
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
-						i(22562),	-- Formula: Superior Mana Oil
-						i(22563),	-- Formula: Superior Wizard Oil
+						i(22562, {	-- Formula: Superior Mana Oil
+							["isLimited"] = true,
+						}),
+						i(22563, {	-- Formula: Superior Wizard Oil
+							["isLimited"] = true,
+						}),
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
@@ -716,155 +834,249 @@ _.Zones =
 				n(33680,  {	-- Nemiha <Jewelcrafting Trainer>
 					["coord"] = { 36.2, 47.0, 111 },
 					["g"] = {
-						currency(61, {	-- Dalaran Jewelcrafter's Token
-							i(47010),	-- Design: Accurate Dreadstone
-							i(46917),	-- Design: Bold Cardinal Ruby
-							i(46916),	-- Design: Brilliant Cardinal Ruby
-							i(46930, {	-- Design: Brilliant Cardinal Ruby
-								["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47015),	-- Design: Champion's Ametrine
-							i(46949),	-- Design: Deadly Ametrine
-							i(47011, {	-- Design: Deadly Ametrine
-								["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46941),	-- Design: Defender's Dreadstone
-							i(47020),	-- Design: Deft Ametrine
-							i(47023, {	-- Design: Deft Ametrine
-								["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46918),	-- Design: Delicate Cardinal Ruby
-							i(46919, {	-- Design: Delicate Cardinal Ruby
-								["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46912),	-- Design: Energized Eye of Zul
-							i(46910, {	-- Design: Energized Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46953),	-- Design: Etched Dreadstone
-							i(47019),	-- Design: Fierce Ametrine
-							i(46923),	-- Design: Flashing Cardinal Ruby
-							i(46904),	-- Design: Forceful Eye of Zul
-							i(46956),	-- Design: Glinting Dreadstone
-							i(46945, {	-- Design: Glinting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46946, {	-- Design: Glinting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47008, {	-- Design: Glinting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46942),	-- Design: Guardian's Dreadstone
-							i(46948),	-- Design: Inscribed Ametrine
-							i(46901),	-- Design: Jagged Eye of Zul
-							i(46944, {	-- Design: Jagged Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46909),	-- Design: Lightning Eye of Zul
-							i(46907, {	-- Design: Lightning Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47021),	-- Design: Lucent Ametrine
-							i(47016, {	-- Design: Lucent Ametrine
-								["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46905),	-- Design: Misty Eye of Zul
-							i(46906, {	-- Design: Misty Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46943),	-- Design: Mysterious Dreadstone
-							i(46932),	-- Design: Mystic King's Amber
-							i(49112),	-- Design: Nightmare Tear
-							i(46899),	-- Design: Nimble Eye of Zul
-							i(46950),	-- Design: Potent Ametrine
-							i(46920),	-- Design: Precise Cardinal Ruby
-							i(46937),	-- Design: Purified Dreadstone
-							i(46900, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46903, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46947, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46939, {	-- Design: Purified Dreadstone
-								["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46933),	-- Design: Quick King's Amber
-							i(46911),	-- Design: Radiant Eye of Zul
-							i(46908, {	-- Design: Radiant Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47007),	-- Design: Reckless Ametrine
-							i(46897),	-- Design: Regal Eye of Zul
-							i(46940, {	-- Design: Regal Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47022),	-- Design: Resolute Ametrine
-							i(47018),	-- Design: Resplendent Ametrine
-							i(46928),	-- Design: Rigid Majestic Zircon
-							i(46913),	-- Design: Shattered Eye of Zul
-							i(46938),	-- Design: Shifting Dreadstone
-							i(46934, {	-- Design: Shifting Dreadstone
-								["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46929),	-- Design: Smooth King's Amber
-							i(46921, {	-- Design: Smooth King's Amber
-								["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46924),	-- Design: Solid Majestic Zircon
-							i(46935),	-- Design: Sovereign Dreadstone
-							i(46925),	-- Design: Sparkling Majestic Zircon
-							i(46927, {	-- Design: Sparkling Majestic Zircon
-								["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(47017),	-- Design: Stalwart Ametrine
-							i(47012, {	-- Design: Stalwart Ametrine
-								["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46898),	-- Design: Steady Eye of Zul
-							i(46926),	-- Design: Stormy Majestic Zircon
-							i(46922),	-- Design: Subtle King's Amber
-							i(46931, {	-- Design: Subtle King's Amber
-								["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46902),	-- Design: Timeless Dreadstone
-							i(46936, {	-- Design: Timeless Dreadstone
-								["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46915),	-- Design: Turbid Eye of Zul
-							i(46914, {	-- Design: Turbid Eye of Zul
-								["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(46951),	-- Design: Veiled Dreadstone
-							i(46952),	-- Design: Willful Ametrine
+						i(47010, {	-- Design: Accurate Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46917, {	-- Design: Bold Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46916, {	-- Design: Brilliant Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46930, {	-- Design: Brilliant Cardinal Ruby
+							["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47015, {	-- Design: Champion's Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46949, {	-- Design: Deadly Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47011, {	-- Design: Deadly Ametrine
+							["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46941, {	-- Design: Defender's Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47020, {	-- Design: Deft Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47023, {	-- Design: Deft Ametrine
+							["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46918, {	-- Design: Delicate Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46919, {	-- Design: Delicate Cardinal Ruby
+							["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46912, {	-- Design: Energized Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46910, {	-- Design: Energized Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46953, {	-- Design: Etched Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47019, {	-- Design: Fierce Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46923, {	-- Design: Flashing Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46904, {	-- Design: Forceful Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46956, {	-- Design: Glinting Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46945, {	-- Design: Glinting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46946, {	-- Design: Glinting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47008, {	-- Design: Glinting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46942, {	-- Design: Guardian's Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46948, {	-- Design: Inscribed Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46901, {	-- Design: Jagged Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46944, {	-- Design: Jagged Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46909, {	-- Design: Lightning Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46907, {	-- Design: Lightning Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47021, {	-- Design: Lucent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47016, {	-- Design: Lucent Ametrine
+							["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46905, {	-- Design: Misty Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46906, {	-- Design: Misty Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46943, {	-- Design: Mysterious Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46932, {	-- Design: Mystic King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(49112, {	-- Design: Nightmare Tear
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46899, {	-- Design: Nimble Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46950, {	-- Design: Potent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46920, {	-- Design: Precise Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46937, {	-- Design: Purified Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46900, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46903, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46947, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46939, {	-- Design: Purified Dreadstone
+							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46933, {	-- Design: Quick King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46911, {	-- Design: Radiant Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46908, {	-- Design: Radiant Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47007, {	-- Design: Reckless Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46897, {	-- Design: Regal Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46940, {	-- Design: Regal Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47022, {	-- Design: Resolute Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47018, {	-- Design: Resplendent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46928, {	-- Design: Rigid Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46913, {	-- Design: Shattered Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46938, {	-- Design: Shifting Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46934, {	-- Design: Shifting Dreadstone
+							["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46929, {	-- Design: Smooth King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46921, {	-- Design: Smooth King's Amber
+							["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46924, {	-- Design: Solid Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46935, {	-- Design: Sovereign Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46925, {	-- Design: Sparkling Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46927, {	-- Design: Sparkling Majestic Zircon
+							["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(47017, {	-- Design: Stalwart Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47012, {	-- Design: Stalwart Ametrine
+							["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46898, {	-- Design: Steady Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46926, {	-- Design: Stormy Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46922, {	-- Design: Subtle King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46931, {	-- Design: Subtle King's Amber
+							["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46902, {	-- Design: Timeless Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46936, {	-- Design: Timeless Dreadstone
+							["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46915, {	-- Design: Turbid Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46914, {	-- Design: Turbid Eye of Zul
+							["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
+							["u"] = 2,
+						}),
+						i(46951, {	-- Design: Veiled Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46952, {	-- Design: Willful Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 						}),
 					},
 				}),
@@ -954,103 +1166,17 @@ _.Zones =
 				n(19074,  {	-- Skreah <Alchemy Supplies>
 					["coord"] = { 45.8, 20.8, 111 },
 					["g"] = {
-						i(23574),	-- Recipe: Transmute Primal Might
-					},
-				}),
-				n(21905,  {	-- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
-					["coord"] = {44.8, 91.6, 111 },
-					["g"] = {
-						i(30113),	-- Destroyer Chestguard
-						i(30114),	-- Destroyer Handguards
-						i(30115),	-- Destroyer Greathelm
-						i(30116),	-- Destroyer Legguards
-						i(30117),	-- Destroyer Shoulderguards
-						i(30118),	-- Destroyer Breastplate
-						i(30119),	-- Destroyer Gauntlets
-						i(30120),	-- Destroyer Battle-Helm
-						i(30121),	-- Destroyer Greaves
-						i(30122),	-- Destroyer Shoulderblades
-						i(30123),	-- Crystalforge Chestguard
-						i(30124),	-- Crystalforge Handguards
-						i(30125),	-- Crystalforge Faceguard
-						i(30126),	-- Crystalforge Legguards
-						i(30127),	-- Crystalforge Shoulderguards
-						i(30129),	-- Crystalforge Breastplate
-						i(30130),	-- Crystalforge Gauntlets
-						i(30131),	-- Crystalforge War-Helm
-						i(30132),	-- Crystalforge Greaves
-						i(30133),	-- Crystalforge Shoulderbraces
-						i(30134),	-- Crystalforge Chestpiece
-						i(30135),	-- Crystalforge Gloves
-						i(30136),	-- Crystalforge Greathelm
-						i(30137),	-- Crystalforge Leggings
-						i(30138),	-- Crystalforge Pauldrons
-						i(30139),	-- Rift Stalker Hauberk
-						i(30140),	-- Rift Stalker Gauntlets
-						i(30141),	-- Rift Stalker Helm
-						i(30142),	-- Rift Stalker Leggings
-						i(30143),	-- Rift Stalker Mantle
-						i(30144),	-- Deathmantle Chestguard
-						i(30145),	-- Deathmantle Handguards
-						i(30146),	-- Deathmantle Helm
-						i(30148),	-- Deathmantle Legguards
-						i(30149),	-- Deathmantle Shoulderpads
-						i(30150),	-- Vestments of the Avatar
-						i(30151),	-- Gloves of the Avatar
-						i(30152),	-- Cowl of the Avatar
-						i(30153),	-- Breeches of the Avatar
-						i(30154),	-- Mantle of the Avatar
-						i(30159),	-- Shroud of the Avatar
-						i(30160),	-- Handguards of the Avatar
-						i(30161),	-- Hood of the Avatar
-						i(30162),	-- Leggings of the Avatar
-						i(30163),	-- Wings of the Avatar
-						i(30164),	-- Cataclysm Chestguard
-						i(30165),	-- Cataclysm Gloves
-						i(30166),	-- Cataclysm Headguard
-						i(30167),	-- Cataclysm Legguards
-						i(30168),	-- Cataclysm Shoulderguards
-						i(30169),	-- Cataclysm Chestpiece
-						i(30170),	-- Cataclysm Handgrips
-						i(30171),	-- Cataclysm Headpiece
-						i(30172),	-- Cataclysm Leggings
-						i(30173),	-- Cataclysm Shoulderpads
-						i(30185),	-- Cataclysm Chestplate
-						i(30189),	-- Cataclysm Gauntlets
-						i(30190),	-- Cataclysm Helm
-						i(30192),	-- Cataclysm Legplates
-						i(30194),	-- Cataclysm Shoulderplates
-						i(30196),	-- Robes of Tirisfal
-						i(30205),	-- Gloves of Tirisfal
-						i(30206),	-- Cowl of Tirisfal
-						i(30207),	-- Leggings of Tirisfal
-						i(30210),	-- Mantle of Tirisfal
-						i(30211),	-- Gloves of the Corruptor
-						i(30212),	-- Hood of the Corruptor
-						i(30213),	-- Leggings of the Corruptor
-						i(30214),	-- Robe of the Corruptor
-						i(30215),	-- Mantle of the Corruptor
-						i(30216),	-- Nordrassil Chestguard
-						i(30217),	-- Nordrassil Gloves
-						i(30219),	-- Nordrassil Headgurad
-						i(30220),	-- Nordrassil Life-Kilt
-						i(30221),	-- Nordrassil Life-Mantle
-						i(30222),	-- Nordrassil Chestplate
-						i(30223),	-- Nordrassil Handgrips
-						i(30228),	-- Nordrassil Headdress
-						i(30229),	-- Nordrassil Feral-Kilt
-						i(30230),	-- Nordrassil Feral-Mantle
-						i(30231),	-- Nordrassil Chestpiece
-						i(30232),	-- Nordrassil Gauntlets
-						i(30233),	-- Nordrassil Headpiece
-						i(30234),	-- Nordrassil Wrath-Kilt
-						i(30235),	-- Nordrassil Wrath-Mantle
+						i(23574, {	-- Recipe: Transmute Primal Might
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(19661,  {	-- Viggz Shinesparked <Engineering Supplies>
 					["coord"] = { 64.8, 69.6, 111 },
 					["g"] = {
-						i(23799),	-- Schematic: Adamantite Rifle
+						i(23799, {	-- Schematic: Adamantite Rifle
+							["isLimited"] = true,
+						}),
 						i(32381, {	-- Schematic: Fused Wiring
 							["spellID"] = 0,
 							["u"] = 7,	-- now learned from trainer, schematic was removed from game
@@ -1060,8 +1186,12 @@ _.Zones =
 				n(18484,  {	-- Wind Trader Lathrai
 					["coord"] = { 72.6, 31.6, 111 },
 					["g"] = {
-						i(23816),	-- Schematic: Fel Iron Toolbox
-						i(23811),	-- Schematic: White Smoke Flare
+						i(23816, {	-- Schematic: Fel Iron Toolbox
+							["isLimited"] = true,
+						}),
+						i(23811, {	-- Schematic: White Smoke Flare
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(19234,  {	-- Yurial Soulwater <Enchanting Supplies>
