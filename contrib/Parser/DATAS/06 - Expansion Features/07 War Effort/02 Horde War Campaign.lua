@@ -380,6 +380,9 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1161 },	-- Boralus
+						["g"] = {
+							i(162579),	-- Abyssal Scepter (QI)
+						},
 					}),
 					q(52990, {	-- Return to the Harbor
 						["qg"] = 141602,	-- Thomas Zelling
@@ -435,15 +438,35 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 85 },	-- Orgrimmar
+						["g"] = {
+							i(164778),	-- Abyssal Scepter (QI)
+						},
+					}),
+					q(53851, {	-- Our War Continues
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 862 },
+						["sourceQuest"] = 53003,	-- A Cycle of Hatred
+						["minReputation"] = { 2157, REVERED },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["g"] = {
+							i(164778),	-- Abyssal Scepter (QI)
+						},
 					}),
 					q(53852, {	-- Azerite Denied
 						["qg"] = 135691,	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 53850,	-- Our War Continues
+						["sourceQuests"] = {
+							53850,	-- Our War Continues
+							53851,	-- Our War Continues
+						},
 						["minReputation"] = { 2157, REVERED },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
+						["g"] = {
+							i(164778),	-- Abyssal Scepter (QI)
+						},
 					}),
 					q(53856, {	-- The Fury of the Horde
 						["qg"] = 145422,	-- Rexxar
@@ -453,6 +476,9 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
+						["g"] = {
+							i(164778),	-- Abyssal Scepter (QI)
+						},
 					}),
 					q(53879, {	-- Cleaning Out the Estate
 						["qgs"] = {
@@ -477,6 +503,9 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
+						["g"] = {
+							i(164778),	-- Abyssal Scepter (QI)
+						},
 					}),
 					q(53913, {	-- With Honor
 						["qg"] = 146462,	-- Rexxar

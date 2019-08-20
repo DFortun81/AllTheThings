@@ -2578,10 +2578,6 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53983, {	-- Wet Work: Fort Knight
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(51222),	-- What's Yours is Mined
 
 				q(51208, {	-- Wheat A Minute

@@ -6,6 +6,12 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(85, {	-- Orgrimmar
 			n(-2, {	-- Vendors
+				n(149806, {	-- A. Shady
+					["coord"] = { 76.7, 35.6, 85 },
+					["g"] = {
+						i(166805),	-- Blood-Soaked Invitation (QI)
+					},
+				}),
 				n(52809,  {	-- Blax Bottlerocket <Toys and Novelties>
 					["coords"] = {
 						{ 58.2, 62.6, 85 },

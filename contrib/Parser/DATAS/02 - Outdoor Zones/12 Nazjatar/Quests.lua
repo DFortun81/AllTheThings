@@ -52,10 +52,16 @@ _.Zones =
 					q(56561, {	-- A Curious Discovery (A)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 56156,	-- A Tempered Blade
+						["g"] = {
+							i(169778),	-- Enchanting Crystal (QI)
+						},
 					}),
 					q(56560, {	-- A Curious Discovery (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55500,	-- Save a Friend
+						["g"] = {
+							i(169778),	-- Enchanting Crystal (QI)
+						},
 					}),
 				},
 			}),
@@ -1169,6 +1175,9 @@ _.Zones =
 					54012,	-- Fortunate Souls
 					56063,	-- Dark Tides
 				},
+				["g"] = {
+					i(168817),	-- Siphoning Crystal (QI)
+				},
 			}),
 			q(55593, {	-- Insight into Our Enemies
 				["qg"] = 150101,	-- Lady Jaina Proudmoore
@@ -1430,6 +1439,14 @@ _.Zones =
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			}),
 			q(55876, {	-- Plug the Geysers
+				["qg"] = 153833,	-- Scout Newly
+				["coord"] = { 48.2, 73.8, 1355 },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			}),
+			q(55878, {	-- Plug the Geysers
 				["qg"] = 153833,	-- Scout Newly
 				["coord"] = { 48.2, 73.8, 1355 },
 				["races"] = HORDE_ONLY,

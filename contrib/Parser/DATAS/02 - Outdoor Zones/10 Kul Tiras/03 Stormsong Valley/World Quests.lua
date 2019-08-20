@@ -752,8 +752,12 @@ _.Zones =
 				}),
 				
 				q(53288, {	-- Overgrown Anchor Weed
+					["requireSkill"] = 182,	-- Herbalism
 					["collectible"] = false,
 					["lvl"] = 120,
+					["g"] = {
+						i(163601),	-- Overgrown Anchor Weed (QI)
+					},	
 				}),
 				q(54437, {	-- Owynn Graddock
 					["collectible"] = false,
@@ -1253,10 +1257,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53983, {	-- Wet Work: Fort Knight
-					["collectible"] = false,
-					["lvl"] = 110,
 				}),
 				q(51222),	-- What's Yours is Mined
 
@@ -1977,6 +1977,9 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+						["g"] = {
+							i(164731)	-- Enchanted Shroud (QI)
+						},
 					}),
 					q(53287, {	-- Winter's Kiss Cluster
 						["lvl"] = 120,

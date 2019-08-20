@@ -182,6 +182,9 @@ _.Zones =
 					["coord"] = { 40.4, 36.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 135793,	-- Collector Kojo
+					["g"] = {
+						i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
+					},
 				}),
 				q(54265, {	-- Orders from Azshara
 					["sourceQuest"] = 54172,	-- The Azsharan Medallion
@@ -369,6 +372,9 @@ _.Zones =
 						["classes"] = exclude( { 5 }, ALL_CLASSES ),	-- all classes, excluding Priest
 						["coord"] = { 34.2, 31.8, 942 },
 						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
+						},
 					}),
 					q(54118, {	-- Every Little Death Helps
 						["sourceQuests"] = {
@@ -387,6 +393,9 @@ _.Zones =
 						["coords"] = {
 							{ 78.0, 36.7, 862 },
 							{ 34.2, 31.8, 942 },
+						},
+						["g"] = {
+							i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
 						},
 					}),
 					q(54058, {	-- Unintended Consequences

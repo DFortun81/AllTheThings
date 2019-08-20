@@ -136,7 +136,7 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 1472 },	-- The Dragon's Spine
 							["g"] = {
-								i(167830), 	-- Petrified Ebony Scale
+								i(167830), 	-- Petrified Ebony Scale (QI)
 							},
 						}),
 						q(55618, {	-- The Heart Forge
@@ -144,6 +144,7 @@ _.Zones =
 							["coord"] = { 48.1, 72.4, 1473 },
 							["sourceQuest"] = 55497,	-- A Friendly Face
 							["g"] = {
+								i(169325),	-- Petrified Ebony Scale (QI)
 								i(168611, {	-- Petrified Ebony Scale
 									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 1)
 								}),
@@ -237,6 +238,7 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 1475 },	-- The Emerald Dream
 							["g"] = {
+								i(167875),	-- Reforged Dreamglow Dragonscale (QI)
 								i(168612, {	-- Dreamglow Dragonscale
 									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 2)
 								}),
@@ -292,6 +294,7 @@ _.Zones =
 								1476,	-- Twilight Highlands (Szenario)
 							},
 							["g"] = {
+								i(168280),	-- Lost Scale of the Scarlet Broodmother (QI)
 								i(168613, {	-- Tempered Scale of the Scarlet Broodmother
 									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 3)
 								}),
@@ -304,6 +307,7 @@ _.Zones =
 						--	["coord"] = { },
 						--	["sourceQuest"] = ,	--
 							["g"] = {
+								i(169292),	-- Charged Scale of the Blue Aspect (QI)
 								i(168614, {	-- Charged Scale of the Blue Aspect
 									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 4)
 								}),

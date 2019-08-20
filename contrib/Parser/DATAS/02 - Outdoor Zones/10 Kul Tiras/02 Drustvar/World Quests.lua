@@ -718,12 +718,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53274, {	-- Overgrown Anchor Weed
+					["requireSkill"] = 182,	-- Herbalism
 					["collectible"] = false,
 					["lvl"] = 120,
+					["g"] = {
+						i(163601),	-- Overgrown Anchor Weed (QI)
+					},							
 				}),
 				q(53282, {	-- Overgrown Anchor Weed
+					["requireSkill"] = 182,	-- Herbalism
 					["collectible"] = false,
 					["lvl"] = 120,
+					["g"] = {
+						i(163601),	-- Overgrown Anchor Weed (QI)
+					},		
 				}),
 				q(54666, {	-- Packmaster Swiftarrow
 					["collectible"] = false,

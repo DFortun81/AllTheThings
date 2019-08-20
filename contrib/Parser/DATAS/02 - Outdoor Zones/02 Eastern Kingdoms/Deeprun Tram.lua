@@ -19,6 +19,14 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 6661 } -- Deeprun Rat Roundup
 					}),
+					n(-2, {	-- Vendors
+						n(149806, {	-- A. Shady
+							["coord"] = { 34.2, 32.9, 499 },
+							["g"] = {
+								i(166805),	-- Blood-Soaked Invitation (QI)
+							},
+						}),
+					}),
 				}),
 			},
 		}),

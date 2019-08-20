@@ -228,6 +228,9 @@ _.Zones =
 									["coord"] = { 70.8, 51.0 },
 									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 50886,	-- Surrogate Wings
+									["g"] = {
+										i(158913),	-- Huge Dragon Kite (QI)
+									},
 								}),
 								q(50900, {	-- Maybe When You're Older
 									["qg"] = 135595,	-- Pa'ku

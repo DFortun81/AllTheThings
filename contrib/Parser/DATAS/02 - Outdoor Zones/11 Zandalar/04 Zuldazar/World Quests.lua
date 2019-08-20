@@ -267,6 +267,14 @@ _.Zones =
 							i(160509), 	-- Echoes of Rezan (TOY!)
 						},
 					}),
+					q(53305, {	-- Overgrown Anchor Weed
+						["requireSkill"] = 182,	-- Herbalism
+						["collectible"] = false,
+						["lvl"] = 120,
+						["g"] = {
+							i(163601),	-- Overgrown Anchor Weed (QI)
+						},	
+					}),
 					q(51821, { 	-- Quelling the Cove
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

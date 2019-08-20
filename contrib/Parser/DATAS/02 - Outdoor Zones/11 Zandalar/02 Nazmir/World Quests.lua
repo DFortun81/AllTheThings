@@ -306,9 +306,12 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53293, {	-- Overgrown Anchor Weed
-						["lvl"] = 120,
+						["requireSkill"] = 182,	-- Herbalism
 						["collectible"] = false,
-						["requireSkill"] = 182, 	-- Herbalism
+						["lvl"] = 120,
+						["g"] = {
+							i(163601),	-- Overgrown Anchor Weed (QI)
+						},	
 					}),
 					q(50510, {	-- Overstuffed Saurolisk
 						["lvl"] = 120,

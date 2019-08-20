@@ -21,6 +21,11 @@ _.Toys =
 		i(98132),		-- Shado-Pan Geyser Gun
 		i(43824),		-- The Schools of Arcane Magic - Mastery
 		i(122293, {		-- Trans-Dimensional Bird Whistle
+			i(170151, {	-- A Tiny Clockwork Key
+				["questID"] = 56911,	-- Pepe can be sometimes be summoned with this mask
+				["coords"] = { 68.5, 47.9, 1462 },	-- Pepe Location
+				["description"] = "Located in the alternate Timeline.",
+			}),
 			i(161451, {	-- A Tiny Diving Helmet
 				["questID"] = 52277,	-- Pepe can be sometimes be summoned with this mask
 				["coord"] = { 54.01, 71.01, 1161 },

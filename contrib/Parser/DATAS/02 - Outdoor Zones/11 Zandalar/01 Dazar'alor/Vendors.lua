@@ -198,6 +198,7 @@ _.Zones =
 					["g"] = {
 						i(104324),	-- Foot Ball
 						i(104323),	-- The Pigskin
+						i(158913),	-- Huge Dragon Kite (QI)
 					},
 				}),
 				n(122702, {	-- Enchantress Quinni <Enchanting Trainer>

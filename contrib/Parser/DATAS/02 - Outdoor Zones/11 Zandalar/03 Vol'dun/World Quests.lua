@@ -307,9 +307,12 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53300, {	-- Overgrown Anchor Weed
-						["lvl"] = 120,
-						["collectible"] = false,
 						["requireSkill"] = 182,	-- Herbalism
+						["collectible"] = false,
+						["lvl"] = 120,
+						["g"] = {
+							i(163601),	-- Overgrown Anchor Weed (QI)
+						},
 					}),
 					q(51850, {	-- Preserve the Oasis
 						["lvl"] = 120,
