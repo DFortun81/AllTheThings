@@ -750,6 +750,7 @@ _.Zones =
 				}),
 				q(30085, {	-- Into the Brewery
 					["sourceQuests"] = { 30078 },	-- Cleaning House
+					["isBreadcrumb"] = true,
 					["coord"] = { 36.0, 69.1, 376 },
 					["qg"] = 56133,	-- Chen Stormstout
 				}),
