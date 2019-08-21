@@ -178,7 +178,6 @@ i(21279);	-- Tome of Fireball
 i(22890);	-- Tome of Frost Ward
 i(21214);	-- Tome of Frostbolt
 i(136971);	-- Tome of Hex: Snake
-i(162623);	-- Tome of Hex: Zandalari Tendonripper
 i(120139);	-- Tome of Polymorph: Penguin
 i(147580);	-- Tome of the Hybrid Beast
 i(147770);	-- Tome of the PTR Beast
