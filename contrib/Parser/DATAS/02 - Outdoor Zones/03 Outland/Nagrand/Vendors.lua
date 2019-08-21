@@ -68,7 +68,8 @@ _.Zones =
 							["classes"] = { 7 },	-- Shaman
 						}),
 						i(136938, {	-- Tome of Hex: Compy
-							["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+							["spellID"] = 210873,	-- Hex(Compy)
+							["classes"] = { 7 },	-- Shaman
 						}),
 					},
 				}),

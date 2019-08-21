@@ -63,6 +63,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(137408),	-- Xakal's Determination
 				})),
 				cr(98207, e(1500, {	-- Nal'tira
+					i(136969, {	-- Tome of Hex: Spider
+						["spellID"] = 211004,	-- Hex(Spider)
+						["classes"] = { 7 },	-- Shaman
+					}),
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk
 					i(137410),	-- Greathelm of Barbed Chelicerae
@@ -139,7 +143,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(137408),	-- Xakal's Determination
 				})),
 				cr(98207, e(1500, {	-- Nal'tira
-					i(136969),	-- Tome of Hex: Spider
+					i(136969, {	-- Tome of Hex: Spider
+						["spellID"] = 211004,	-- Hex(Spider)
+						["classes"] = { 7 },	-- Shaman
+					}),
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk
 					i(137410),	-- Greathelm of Barbed Chelicerae

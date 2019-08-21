@@ -177,12 +177,7 @@ i(44714);	-- Tome of Dalaran Brilliance
 i(21279);	-- Tome of Fireball
 i(22890);	-- Tome of Frost Ward
 i(21214);	-- Tome of Frostbolt
-i(136972);	-- Tome of Hex: Cockroach
-i(136938);	-- Tome of Hex: Compy
-i(159841);	-- Tome of Hex: Skeletal Hatchling
 i(136971);	-- Tome of Hex: Snake
-i(136969);	-- Tome of Hex: Spider
-i(162624);	-- Tome of Hex: Wicker Mongrel
 i(162623);	-- Tome of Hex: Zandalari Tendonripper
 i(120139);	-- Tome of Polymorph: Penguin
 i(147580);	-- Tome of the Hybrid Beast

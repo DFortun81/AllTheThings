@@ -287,7 +287,10 @@ _.Zones =
 							["spellID"] = 277787,	-- Polymorph(Direhorn)
 							["classes"] = { 8 },	-- Mage
 						}),
-						i(162623),	-- Tome of Hex: Zandalari Tendonripper
+						i(162623, {	-- Tome of Hex: Zandalari Tendonripper
+							["spellID"] = 277778,	-- Hex(Zandalari Tendonripper)
+							["classes"] = { 7 },	-- Shaman
+						}),
 						i(161516),	-- Bindings of the Disparate Tribes*
 						i(161497),	-- Cord of the Loa Worshippers*
 						i(161548),	-- Gonk Adherents Vambraces*

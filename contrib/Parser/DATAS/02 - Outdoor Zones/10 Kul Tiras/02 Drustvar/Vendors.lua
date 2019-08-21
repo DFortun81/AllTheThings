@@ -34,7 +34,10 @@ _.Zones =
 						i(163036, {	-- Polished Pet Charm
 							i(163491),	-- Pristine Falcon Feather
 						}),
-						i(162624),	-- Tome of Hex: Wicker Mongrel
+						i(162624, {	-- Tome of Hex: Wicker Mongrel
+							["spellID"] = 277784,	-- Hex(Wicker Mongrel)
+							["classes"] = { 7 },	-- Shaman
+						}),
 						i(161908),	-- Reins of the Dusky Waycrest Gryphon
 						i(161910),	-- Reins of the Smoky Charger
 						i(161596),	-- Coven Buster's Waistguard

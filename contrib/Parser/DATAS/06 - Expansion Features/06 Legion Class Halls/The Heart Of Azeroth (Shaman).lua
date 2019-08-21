@@ -129,6 +129,10 @@ _.ExpansionFeatures =
 						i(140536),	-- Earthen Ring Aegis
 						i(140545),	-- Earthen Ring Mace
 						i(140546),	-- Earthen Ring Scepter
+						i(136938, {	-- Tome of Hex: Compy
+							["spellID"] = 210873,	-- Hex(Compy)
+							["classes"] = { 7 },	-- Shaman
+						}),
 						{
 							["itemID"] = 139701,		-- Helm
 							["groups"] = {

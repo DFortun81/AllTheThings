@@ -73,6 +73,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				e(2083, {	-- Rezan
 					["crs"] = { 122963 },	-- Rezan
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						i(159841, {	-- Tome of Hex: Skeletal Hatchling
+							["spellID"] = 269352,	-- Hex(Skeletal Hatchling)
+							["classes"] = { 7 },	-- Shaman
+						}),
 						i(160269),	-- Soulrending Claw
 						i(158711),	-- Hallowed Ossein Longbow
 						i(158713),	-- Disc of Indomitable Will
@@ -132,6 +136,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					e(2083, {	-- Rezan
 						["crs"] = { 122963 },	-- Rezan
 						["g"] = {
+							i(159841, {	-- Tome of Hex: Skeletal Hatchling
+								["spellID"] = 269352,	-- Hex(Skeletal Hatchling)
+								["classes"] = { 7 },	-- Shaman
+							}),
 							i(160269),	-- Soulrending Claw
 							i(158711),	-- Hallowed Ossein Longbow
 							i(158713),	-- Disc of Indomitable Will
@@ -215,7 +223,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							crit(3, {	-- Rezan defeated
 								["achievementID"] = 12270,	-- Bringing Hexy Back
 							}),
-							i(159841),	-- Tome of Hex: Skeletal Hatchling
+							i(159841, {	-- Tome of Hex: Skeletal Hatchling
+								["spellID"] = 269352,	-- Hex(Skeletal Hatchling)
+								["classes"] = { 7 },	-- Shaman
+							}),
 							i(160269),	-- Soulrending Claw
 							i(158711),	-- Hallowed Ossein Longbow
 							i(158713),	-- Disc of Indomitable Will
