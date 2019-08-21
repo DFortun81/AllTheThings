@@ -522,24 +522,26 @@ _.Zones =
 						{	-- Ancient Tome of Portal: Dalaran [Mage only]
 							["itemID"] = 82470,		-- Ancient Tome of Portal: Dalaran
 							["spellID"] = 120146,	-- Ancient Portal: Dalaran
-							["collectible"] = true,
+							["classes"] = { 8 },	-- Mage
 						},
 						{	-- Dalaran Initiates' Pin Toy [Mage only]
 							["itemID"] = 137294,	-- Dalaran Initiates' Pin Toy
+							["classes"] = { 8 },	-- Mage
 						},
 						{	-- Familiar Stone Toy [Mage only]
 							["itemID"] = 136846,	-- Familiar Stone Toy
+							["classes"] = { 8 },	-- Mage
 						},
 						{	-- Mystical Tome: Arcane Linguist [Mage only]
 							["itemID"] = 136797,	-- Mystical Tome: Arcane Linguist
 							["spellID"] = 210086,	-- Arcane Linguist
-							["collectible"] = true,
+							["classes"] = { 8 },	-- Mage
 						},
 
 						{	-- Mystical Tome: Illusion [Mage only]
 							["itemID"] = 136799,	-- Mystical Tome: Illusion
 							["spellID"] = 131784,	-- Illusion
-							["collectible"] = true,
+							["classes"] = { 8 },	-- Mage
 						},
 						{	-- Technique: Glyph of Dalaran Brilliance
 							["itemID"] = 167733,	-- Technique: Glyph of Dalaran Brilliance
@@ -547,6 +549,7 @@ _.Zones =
 						{	-- Tome of Dalaran Brilliance
 							["itemID"] = 44714,		-- Tome of Dalaran Brilliance.
 							["u"] = 2,				-- Removed in 7.0.3
+							["classes"] = { 8 },	-- Mage
 							["g"] = {
 								{	-- Magic Consumed Book
 									["itemID"] = 44602,	-- Magic Consumed Book
@@ -556,7 +559,7 @@ _.Zones =
 						{	-- Tome of Polymorph: Black Cat [Mage only]
 							["itemID"] = 44709,		-- Tome of Polymorph: Black Cat
 							["spellID"] = 61305,	-- Polymorph
-							["collectible"] = true,
+							["classes"] = { 8 },	-- Mage
 						},
 					},
 				}),

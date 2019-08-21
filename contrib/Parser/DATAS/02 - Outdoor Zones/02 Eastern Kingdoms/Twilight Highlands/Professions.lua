@@ -14,10 +14,16 @@ _.Zones =
 				}),
 				prof(356, {	-- Fishing
 					o(208311, {	-- Deepsea Sagefish School
-						i(22739),	-- Tome of Polymorph: Turtle
+						i(22739, {	-- Tome of Polymorph: Turtle
+							["spellID"] = 28271,	-- Polymorph(Turtle)
+							["classes"] = { 8 },	-- Mage
+						}),
 					}),
 					o(202777, {	-- Highland Guppy School
-						i(22739),	-- Tome of Polymorph: Turtle
+						i(22739, {	-- Tome of Polymorph: Turtle
+							["spellID"] = 28271,	-- Polymorph(Turtle)
+							["classes"] = { 8 },	-- Mage
+						}),
 					}),
 				}),
 			}),

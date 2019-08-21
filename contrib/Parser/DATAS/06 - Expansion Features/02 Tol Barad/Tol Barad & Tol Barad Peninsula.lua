@@ -23,12 +23,18 @@ _.ExpansionFeatures =
 				prof(356, {
 					o(207724, {	-- Shipwreck Debris
 						["g"] = {
-							i(22739),	-- Tome of Polymorph: Turtle
+							i(22739, {	-- Tome of Polymorph: Turtle
+								["spellID"] = 28271,	-- Polymorph(Turtle)
+								["classes"] = { 8 },	-- Mage
+							}),
 						},
 					}),
 					o(202780, {	-- Fathom Eel Swarm
 						["g"] = {
-							i(22739),	-- Tome of Polymorph: Turtle
+							i(22739, {	-- Tome of Polymorph: Turtle
+								["spellID"] = 28271,	-- Polymorph(Turtle)
+								["classes"] = { 8 },	-- Mage
+							}),
 						},
 					}),
 				}),

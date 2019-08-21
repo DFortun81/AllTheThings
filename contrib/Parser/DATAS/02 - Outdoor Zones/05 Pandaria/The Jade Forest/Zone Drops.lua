@@ -123,7 +123,8 @@ _.Zones =
 					},
 				}),
 				i(120138, {	-- Tome of Polymorph: Monkey
-					["collectible"] = false,
+					["spellID"] = 161354,	-- Polymorph(Monkey)
+					["classes"] = { 8 },	-- Mage
 					["crs"] = {
 						55470,	-- Hozen Groundpounder
 						57119,	-- Hozen Ravager
@@ -137,7 +138,8 @@ _.Zones =
 					},
 				}),
 				i(120140, {	-- Tome of Polymorph: Porcupine
-					["collectible"] = false,
+					["spellID"] = 126819,	-- Polymorph(Porcupine)
+					["classes"] = { 8 },	-- Mage
 					["crs"] = {
 						54896,	-- Glade Porcupine
 						59772,	-- Smoky Porcupine

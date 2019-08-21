@@ -17,6 +17,7 @@ _.Zones =
 					["crs"] = { 27333 },	-- Onslaught Mason
 				}),
 				i(120137, {	-- Tome of Polymorph: Polar Bear Cub
+					["spellID"] = 161353,	-- Polymorph(Polar Bear Cub)
 					["classes"] = { 8 },	-- Mage
 					["crs"] = { 26482 },	-- Arctic Grizzly
 				}),

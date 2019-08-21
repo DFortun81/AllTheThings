@@ -61,6 +61,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						{	-- Ancient Tome of Teleport: Dalaran
 							["itemID"] = 82469,	-- Ancient Tome of Teleport: Dalaran
 							["description"] = "Can be looted from a bookshelf if the boss didn't burn them. Available on Normal or Heroic Difficulty.\n\nYou must be level 80 or higher to loot.",
+							["spellID"] = 120145,	-- Ancient Teleport: Dalaran
+							["classes"] = { 8 },	-- Mage
 						},
 						i(144196),	-- Mograine's Immaculate Might
 						i(144195),	-- Koegler's Ritual Knife

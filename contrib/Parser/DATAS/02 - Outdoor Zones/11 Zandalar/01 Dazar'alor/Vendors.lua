@@ -283,7 +283,10 @@ _.Zones =
 						i(161665),	-- Reins of the Cobalt Pterrordax*
 						i(161664),	-- Reins of the Spectral Pterrorwing
 						i(163210),	-- Party Totem*
-						i(162625),	-- Tome of Polymorph: Direhorn
+						i(162625, {	-- Tome of Polymorph: Direhorn
+							["spellID"] = 277787,	-- Polymorph(Direhorn)
+							["classes"] = { 8 },	-- Mage
+						}),
 						i(162623),	-- Tome of Hex: Zandalari Tendonripper
 						i(161516),	-- Bindings of the Disparate Tribes*
 						i(161497),	-- Cord of the Loa Worshippers*

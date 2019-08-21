@@ -6,8 +6,6 @@ local i = function(itemID)
 end
 
 i(94232);	-- Ancient Tome of Dinomancy
-i(82470);	-- Ancient Tome of Portal: Dalaran
-i(82469);	-- Ancient Tome of Teleport: Dalaran
 i(166502);	-- Blood-Soaked Tome of Dark Whispers
 i(24345);	-- Book of Cower IV
 i(24101);	-- Book of Ferocious Bite V
@@ -31,7 +29,6 @@ i(31837);	-- Codex: Prayer of Shadow Protection
 i(22393);	-- Codex: Prayer of Shadow Protection
 i(136803);	-- Dirty Tricks, Vol 1: Detection
 i(136419);	-- Excavator's Notebook
---i(136782);	-- Fireworks Instruction Manual
 i(111356);	-- Fishing Guide to Draenor
 i(28071);	-- Grimoire of Anguish (Rank 1)
 i(28072);	-- Grimoire of Anguish (Rank 2)
@@ -159,8 +156,6 @@ i(21297);	-- Manual of Heroic Strike
 i(21299);	-- Manual of Revenge
 i(114849);	-- Manual Of Spell Reflection
 i(136800);	-- Meditation Manual: Zen Flight
-i(136797);	-- Mystical Tome: Arcane Linguist
-i(136799);	-- Mystical Tome: Illusion
 i(113992);	-- Scribe's Research Notes
 i(114844);	-- Scroll of Touch of Death
 i(114846);	-- Sigil of Dark Simulacrum
@@ -190,15 +185,7 @@ i(136971);	-- Tome of Hex: Snake
 i(136969);	-- Tome of Hex: Spider
 i(162624);	-- Tome of Hex: Wicker Mongrel
 i(162623);	-- Tome of Hex: Zandalari Tendonripper
-i(44709);	-- Tome of Polymorph: Black Cat
-i(162626);	-- Tome of Polymorph: Bumblebee
-i(162625);	-- Tome of Polymorph: Direhorn
-i(120138);	-- Tome of Polymorph: Monkey
 i(120139);	-- Tome of Polymorph: Penguin
-i(120137);	-- Tome of Polymorph: Polar Bear Cub
-i(120140);	-- Tome of Polymorph: Porcupine
-i(44793);	-- Tome of Polymorph: Rabbit
-i(22739);	-- Tome of Polymorph: Turtle
 i(147580);	-- Tome of the Hybrid Beast
 i(147770);	-- Tome of the PTR Beast
 i(136790);	-- Tome of the Wilds: Track Beasts

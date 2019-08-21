@@ -8,7 +8,10 @@ _.Zones =
 			n(-38, {	-- Profession
 				prof(356, {	-- Fishing
 					o(202776, {	-- Mountain Trout School
-						i(22739),	-- Tome of Polymorph: Turtle
+						i(22739, {	-- Tome of Polymorph: Turtle
+							["spellID"] = 28271,	-- Polymorph(Turtle)
+							["classes"] = { 8 },	-- Mage
+						}),
 					}),
 				}),
 			}),

@@ -114,6 +114,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 									},
 									{	-- Tome of Polymorph: Rabbit
 										["itemID"] = 44793,			-- Tome of Polymorph: Rabbit
+										["spellID"] = 61721,		-- Polymorph(Rabbit)
+										["classes"] = { 8 },		-- Mage
 										["u"] = 19,					-- Noblegarden Filter
 									},
 								},
@@ -236,6 +238,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 									},
 									{	-- Tome of Polymorph: Rabbit
 										["itemID"] = 44793,			-- Tome of Polymorph: Rabbit
+										["spellID"] = 61721,		-- Polymorph(Rabbit)
 										["u"] = 19,					-- Noblegarden Filter
 									},
 								},
