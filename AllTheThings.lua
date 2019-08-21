@@ -11485,6 +11485,21 @@ app:GetWindow("Random", UIParent, function(self)
 					return temp;
 				end
 			end
+			function self:SelectQuest()
+				if searchCache["quests"] then
+					return searchCache["quests"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "questID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["quests"] = temp;
+					return temp;
+				end
+			end
 			function self:SelectRaid()
 				if searchCache["randomraid"] then
 					return searchCache["randomraid"];
@@ -11712,6 +11727,22 @@ app:GetWindow("Random", UIParent, function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Pet");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
+					},
+					{
+						['text'] = "Quest",
+						['icon'] = "Interface\\GossipFrame\\AvailableQuestIcon",
+						['preview'] = "Interface\\Icons\\Achievement_Quests_Completed_08",
+						['description'] = "Click this button to select a random quest based on what you're missing.",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Quest");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
