@@ -22,7 +22,7 @@ _.Zones =
 							["u"] = 2,	-- Removed BoP/BoA item
 						}),
 						i(136783, {	-- The Art of Concealment
-							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
+							["spellID"] = 61648,	-- Aspect of the Chameleon
 						}),
 					},
 				}),

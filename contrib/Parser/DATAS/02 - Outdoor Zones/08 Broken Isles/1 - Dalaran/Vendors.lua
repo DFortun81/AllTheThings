@@ -1557,7 +1557,9 @@ _.Zones =
 						i(144335),	-- Schematic: Tailored Skullblasters
 						i(136631),	-- Surface-to-Infernal Rocket Launcher
 					}),
-					i(136782),	-- Fireworks Instruction Manual
+					i(136782, {	-- Fireworks Instruction Manual
+						["spellID"] = 127933,	-- Fireworks
+					}),
 					i(137709),	-- Schematic: Auto-Hammer [Rank 2]
 					i(137705),	-- Schematic: Deployable Bullet Dispenser [Rank 2]
 					i(133673),	-- Schematic: Double-Barreled Cranial Cannon

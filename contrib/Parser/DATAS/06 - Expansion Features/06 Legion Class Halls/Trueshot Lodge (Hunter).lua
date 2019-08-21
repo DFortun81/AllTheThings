@@ -305,8 +305,12 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						i(136780),	-- Pet Training Manual: Play Dead
-						i(136781),	-- Pet Training Manual: Fetch
+						i(136780, {	-- Pet Training Manual: Play Dead
+							["spellID"] = 209997,	-- Play Dead
+						}),
+						i(136781, {	-- Pet Training Manual: Fetch
+							["spellID"] = 125050,	-- Fetch
+						}),
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras
@@ -321,7 +325,9 @@ _.ExpansionFeatures =
 						["groups"] = {
 							i(142228),	-- Trust of a Dire Wolfhawk
 							i(142226),	-- Trust of a Fierce Wolfhawk
-							i(147580),	-- Tome of the Hybrid Beast
+							i(147580, {	-- Tome of the Hybrid Beast
+								--["spellID"] = 242155,	-- Hybrid Kinship
+							}),
 						},
 					}),
 					n(103325, {	-- Uthrok

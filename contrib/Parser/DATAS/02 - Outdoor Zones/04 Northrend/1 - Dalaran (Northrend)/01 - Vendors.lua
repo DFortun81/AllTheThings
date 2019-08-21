@@ -347,7 +347,9 @@ _.Zones =
 				n(28722,  {	-- Bryan Landers <Engineering Supplies>
 					["coord"] = { 39.0, 26.0, 125 },
 					["g"] = {
-						i(136782),	-- Fireworks Instruction Manual
+						i(136782, {	-- Fireworks Instruction Manual
+							["spellID"] = 127933,	-- Fireworks
+						}),
 						i(23817),	-- Schematic: Titanium Toolbox
 					},
 				}),

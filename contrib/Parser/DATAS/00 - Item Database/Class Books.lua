@@ -31,7 +31,7 @@ i(31837);	-- Codex: Prayer of Shadow Protection
 i(22393);	-- Codex: Prayer of Shadow Protection
 i(136803);	-- Dirty Tricks, Vol 1: Detection
 i(136419);	-- Excavator's Notebook
-i(136782);	-- Fireworks Instruction Manual
+--i(136782);	-- Fireworks Instruction Manual
 i(111356);	-- Fishing Guide to Draenor
 i(28071);	-- Grimoire of Anguish (Rank 1)
 i(28072);	-- Grimoire of Anguish (Rank 2)
@@ -161,8 +161,6 @@ i(114849);	-- Manual Of Spell Reflection
 i(136800);	-- Meditation Manual: Zen Flight
 i(136797);	-- Mystical Tome: Arcane Linguist
 i(136799);	-- Mystical Tome: Illusion
-i(136781);	-- Pet Training Manual: Fetch
-i(136780);	-- Pet Training Manual: Play Dead
 i(113992);	-- Scribe's Research Notes
 i(114844);	-- Scroll of Touch of Death
 i(114846);	-- Sigil of Dark Simulacrum
@@ -171,7 +169,6 @@ i(114847);	-- Tablet of Ghost Wolf
 i(21293);	-- Tablet of Grace of Air Totem
 i(21291);	-- Tablet of Healing Wave
 i(21292);	-- Tablet of Strength of Earth Totem
-i(136783);	-- The Art of Concealment
 i(112005);	-- The Jailer's Libram
 i(111387);	-- The Joy of Draenor Cooking
 i(22153);	-- Tome of Arcane Brilliance
