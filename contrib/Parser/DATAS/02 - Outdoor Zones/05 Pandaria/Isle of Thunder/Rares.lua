@@ -217,7 +217,8 @@ _.Zones =
 				},
 				{			-- Sealed Tome of the Lost Legion
 					["itemID"] = 92426,		-- Sealed Tome of the Lost Legion
-					["questID"] = 32295,	-- An Unusual Tome
+					["spellID"] = 101508,	-- The Codex of Zerrath(added the spellID here until the full questline is put in)
+					["collectible"] = true,
 					["classes"] = { 9 },	-- Warlock
 					["crs"] = {
 						70000,	-- Al'tabim the All-Seeing

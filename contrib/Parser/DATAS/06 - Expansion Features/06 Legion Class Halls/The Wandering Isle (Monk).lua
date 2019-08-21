@@ -293,7 +293,9 @@ _.ExpansionFeatures =
 				]]--
 				n(-2, {	--  Vendors
 					n(112338, {	-- Caydori Brightstar <Purveyor of Rare Goods>
-						i(136800),	-- Meditation Manual: Zen Flight
+						i(136800, {	-- Meditation Manual: Zen Flight
+							["spellID"] = 125883,	-- Zen Flight
+						}),
 						i(140543),	-- Fist of the Broken Temple
 						i(140551),	-- Staff of the Broken Temple
 						i(140564),	-- Rod of the Broken Temple

@@ -155,7 +155,6 @@ i(24102);	-- Manual of Eviscerate IX
 i(21297);	-- Manual of Heroic Strike
 i(21299);	-- Manual of Revenge
 i(114849);	-- Manual Of Spell Reflection
-i(136800);	-- Meditation Manual: Zen Flight
 i(113992);	-- Scribe's Research Notes
 i(114844);	-- Scroll of Touch of Death
 i(114846);	-- Sigil of Dark Simulacrum

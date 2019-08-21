@@ -84,6 +84,9 @@ _.Zones =
 								i(89583),	-- Staff of Pilgrimage
 								i(89585),	-- Staff of Fallen Blossoms
 								i(89586),	-- Staff of Serenity
+								i(136800, {	-- Meditation Manual: Zen Flight
+									["spellID"] = 125883,	-- Zen Flight
+								}),
 							},
 						}),
 						n(66359, {	-- Master Tan <Fist Weapon Vendor>
