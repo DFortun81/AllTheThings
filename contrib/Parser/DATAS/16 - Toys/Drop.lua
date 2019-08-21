@@ -164,7 +164,11 @@ _.Toys =
 		i(141331), 		-- Vial of Green Goo
 		i(127666), 		-- Vial of Red Goo
 		i(113375),		-- Vindicator's Armor Polish Kit
-		i(152982), 		-- Vixx's Chest of Tricks
+		i(152982, {		-- Vixx's Chest of Tricks
+			title(365, {	-- %s the Collector
+				["collectible"] = false,
+			}),
+		}),
 		i(143534),		-- Wand of Simulated Life
 		i(119219),		-- Warlord's Flag of Victory
 		i(104331), 		-- Warning Sign

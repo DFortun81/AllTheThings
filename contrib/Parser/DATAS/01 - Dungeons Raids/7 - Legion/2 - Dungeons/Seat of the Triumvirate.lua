@@ -128,7 +128,11 @@ _.Instances = { tier(7, {	-- Legion
 			d(2, {	-- Heroic
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter
-					i(152982),	-- Vixx's Chest of Tricks
+					i(152982, {		-- Vixx's Chest of Tricks
+						title(365, {	-- %s the Collector
+							["collectible"] = false,
+						}),
+					}),
 				}),
 				cr(122313, e(1979, {	-- Zuraal the Ascended
 					i(151312),	-- Ampoule of Pure Void
@@ -195,7 +199,11 @@ _.Instances = { tier(7, {	-- Legion
 			d(23, {	-- Mythic
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter
-					i(152982),	-- Vixx's Chest of Tricks
+					i(152982, {		-- Vixx's Chest of Tricks
+						title(365, {	-- %s the Collector
+							["collectible"] = false,
+						}),
+					}),
 				}),
 				cr(122313, e(1979, {	-- Zuraal the Ascended
 					ach(12004),	-- Welcome the Void

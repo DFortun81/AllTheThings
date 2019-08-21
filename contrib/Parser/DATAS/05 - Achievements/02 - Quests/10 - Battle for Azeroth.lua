@@ -85,6 +85,7 @@ _.Achievements =
 						crit(8),		-- Clear Victory
 						crit(9),		-- Fighting With Fire
 						crit(10),		-- Stick It To 'Em!
+						title(378),		-- Inquisitor %s
 					})),
 					ach(13045),		-- Every Day I'm Truffling
 					ach(13283, 13284, {	-- Frontline Warrior [A] / [H]
