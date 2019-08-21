@@ -2051,6 +2051,18 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55482,	-- Making the Connection
 			}),
+			q(56805, {	-- That's What Friends Are For
+				["qgs"] = {
+					151309,	-- Kelfin Scout (Vim Brineheart)
+					149906,	-- Vim Brineheart
+				},
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 7.",
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(169919),	-- Unshackled Commendation Crate
+				},
+			}),
 			q(55665, {	-- The Dark Garden
 				["qg"] = 152787,	-- Moris Criz
 				["coord"] = { 56.0, 18.4, 1355 },
