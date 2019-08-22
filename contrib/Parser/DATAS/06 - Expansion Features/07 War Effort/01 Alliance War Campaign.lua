@@ -1262,7 +1262,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 
 							84,		-- Stormwind
-							1479,	-- Baine Rescue (this quest leads to this scenario.  not sure where else to put this map)
+							1479,	-- Baine Rescue (Scenario)
 						},
 						["lvl"] = 120,
 						["qg"] = 107574,	-- Anduin Wrynn

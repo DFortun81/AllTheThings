@@ -75,12 +75,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
 				}),
-				q(54103, {	-- Corner Crossing
-					["qg"] = 146806,	-- Dark Ranger Lyana
-					["coord"] = { 11.3, 66.8, 49 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54102,	-- Eastern Escape
-				}),
 				q(26714, {	-- Darkblaze, Brood of the Worldbreaker
 					["qg"] = 43733,	-- Colonel Troteman
 					["coord"] = { 60.6, 36.6, 49 },
@@ -133,25 +127,10 @@ _.Zones =
 						}),
 					},
 				}),
-				q(54105, {	-- Ever Eastward
-					["qg"] = 146937,	-- Dark Ranger
-					["coord"] = { 29.0, 68.1, 49 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54104,	-- Signs of Saurfang
-				}),
 				q(26506, {	-- Franks and Beans
 					["qg"] = 379,	-- Darchy Parker
 					["coord"] = { 15.6, 65.3, 49 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54107, {	-- Grim Tidings
-					["qg"] = 146012,	-- Zekhan
-					["coord"] = { 81.4, 52.4, 49 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54106,	-- Tracking Tipoff
-					["altQuests"] = {
-						54754,  -- For the Queen
-					},
 				}),
 				q(26728, {	-- Hero's Call: Duskwood!
 					["qg"] = 900,	-- Bailiff Conacher
@@ -327,12 +306,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26708,	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 				}),
-				q(54104, {	-- Signs of Saurfang
-					["qg"] = 146937,	-- Dark Ranger
-					["coord"] = { 25.9, 39.8, 49 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54103,	-- Corner Crossing
-				}),
 				q(26503, {	-- Still Assessing the Threat
 					["qg"] = 464,	-- Watch Captain Parker
 					["coord"] = { 15.3, 64.5, 49 },
@@ -441,12 +414,6 @@ _.Zones =
 					["coord"] = { 52.5, 55.3, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26646,	-- Prisoners of War
-				}),
-				q(54106, {	-- Tracking Tipoff
-					["qg"] = 147210,	-- Dark Ranger Lyana
-					["coord"] = { 80.6, 46.9, 49 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54105,	-- Ever Eastward
 				}),
 				q(26726, {	-- Triumphant Return
 					["qg"] = 43733,	-- Colonel Troteman

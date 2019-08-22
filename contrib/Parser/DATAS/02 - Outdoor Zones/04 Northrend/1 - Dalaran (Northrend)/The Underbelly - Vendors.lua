@@ -1784,11 +1784,9 @@ _.Zones =
 					n(54651, {	-- Zom Bocom (Same name, different npc)
 						["u"] = 43,	-- Vendor no longer exists
 						["sym"] = {
-							{"select", "npcID", -9979 },	-- Select the Cataclysm header.
-							{"pop"},	-- Discard header and acquire the children.
-							{"where", "npcID", -673 },	-- Ruthless Gladiator header.
-							{"pop"},	-- Discard header and acquire the children.
-							{"where", "npcID", -661 },	-- Gladiator header.
+							{"sub", "pvp_gear_base", -9979, -673, -661 },	-- Ruthless Gladiator: Season 10 Gladiator Gear
+							{"pop"},	-- Discard the Set header and acquire the children.
+							{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						},
 						["g"] = {
 							n(-4178, {	-- Old Season 11 (Header Missing, need new Header)

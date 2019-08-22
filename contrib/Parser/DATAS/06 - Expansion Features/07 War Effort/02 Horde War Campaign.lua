@@ -101,7 +101,7 @@ _.ExpansionFeatures =
 					}),
 					q(51770, {	-- Mission from the Warchief
 						["qg"] = 135691,	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, 1163 },
+						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuests"] = 53333,	-- Time for War
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -110,76 +110,461 @@ _.ExpansionFeatures =
 					}),
 					q(51771, {	-- War of Shadows
 						["qg"] = 138708,	-- Garona Halforcen
-						["coord"] = { 58.4, 62.6, 1163 },
+						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 51770,	-- Mission from the Warchief
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 					}),
 					q(53079, {	-- Reinforcements
 						["qg"] = 138708,	-- Garona Halforceen
-						["coord"] = { 58.4, 62.6, 1163 },
+						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 51771,	-- War of Shadows
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 					}),
 					q(51803, {	-- The Kul Tiras Campaign
 						["qg"] = 135691,	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, 1163 },
+						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 51770,	-- Mission from the Warchief
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 					}),
 					q(53050, {	-- Deeper Into Kul Tiras
 						["description"] = "Automatically starts when you finish your first Foothold in Kul Tiras",
+						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 110,
+						["lvl"] = 114,
 					}),
 					q(51979, {	-- The Ongoing Campaign
 						["qg"] = 135691,	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, 1163 },
+						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 51771,	-- War of Shadows
 						["races"] = HORDE_ONLY,
-						["lvl"] = 110,
+						["lvl"] = 114,
 					}),
 					q(53056, {	-- Pushing Our Influence
 						["description"] = "Automatically starts when you finish your second Foothold in Kul Tiras",
+						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 110,
+						["lvl"] = 118,
 					}),
 					q(52444, {	-- The Final Foothold
 						["qg"] = 135691,	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, 1163 },
+						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 53056,	-- Pushing Our Influence
+						["races"] = HORDE_ONLY,
+						["lvl"] = 118,
+					}),
+					-- Drustvar Foothold
+					q(51801, {	-- Foothold: Drustvar
+						["qg"] = 144630,	-- Kul Tiras Campaign (Table)
+						["coord"] = { 58.4, 62.6, 862 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 					}),
+					q(51332, {	-- A Trip Across the Ocean
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 862 },
+						["sourceQuest"] = 51801,	-- Foothold: Drustvar
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(51340, {	-- Drustvar Ho!
+						["qg"] = 136683,	-- Trade Prince Gallywix
+						["coord"] = { 58.5, 62.6, 862 },
+						["sourceQuest"] = 51332,	-- A Trip Across the Ocean
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(51224, {	-- Profit and Reconnaissance
+						["qg"] = 136725,	-- Eitrigg
+						["coord"] = { 20.8, 43.8, 896 },
+						["sourceQuest"] = 51340,	-- Drustvar Ho!
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					q(51231, {	-- Wiccaphobia
+						["qg"] = 136725,	-- Eitrigg
+						["coord"] = { 32.3, 54.6, 896 },
+						["sourceQuest"] = 51224,	-- Profit and Reconnaissance
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					q(51233, {	-- I Hope There's No Witches in the Mountains
+						["qg"] = 136683,	-- Trade Prince Gallywix
+						["coord"] = { 32.4, 54.6, 896 },
+						["sourceQuest"] = 51231,	-- Wiccaphobia
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					q(51234, {	-- Krazzlefrazz Outpost
+						["qg"] = 137613,	-- Hobart Grapplehammer
+						["coord"] = { 36.9, 27.1, 896 },
+						["sourceQuest"] = 51233,	-- I Hope There's No Witches in the Mountains
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					q(51987, {	-- Champion: Hobart Grapplehammer
+						["qg"] = 137613,	-- Hobart Grapplehammer
+						["coord"] = { 33.6, 37.8, 896 },
+						["sourceQuest"] = 51234,	-- Krazzlefrazz Outpost
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 896 },	-- Drustvar
+						["g"] = {
+							follower(1068),	-- Hobart Grapplehammer
+						},
+					}),
+					q(51985, {	-- Return to Zuldazar (Drustvar Foothold)
+						["qg"] = 136683,	-- Trade Prince Gallywix
+						["coord"] = { 37.2, 27.0, 896 },
+						["sourceQuest"] = 51987,	-- Champion: Hobart Grapplehammer
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					-- Stormsong Valley Foothold
+					q(51802, {	-- Foothold: Stormsong Valley
+						["qg"] = 144630,	-- Kul Tiras Campaign (Table)
+						["coord"] = { 58.4, 62.6, 862 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					-- Missing Quests !!
+					q(51753, {	-- Champion: Rexxar
+						["qg"] = 138876,	-- Rexxar
+						["coord"] = { 52.0, 33.6, 942 },
+						["sourceQuest"] = 51696,	-- Reclaiming What's Ours
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["g"] = {
+							follower(1069),	-- Rexxar
+						},
+					}),
+					q(51986, {	-- Return to Zuldazar (Stormsong Valley Foothold)
+						["qg"] = 138876,	-- Rexxar
+						["coord"] = { 52.0, 33.6, 942 },
+						["sourceQuest"] = 51753,	-- Champion: Rexxar
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["g"] = {
+							i(163672),	-- Honorbound Vanguard's Helm
+							i(163670),	-- Honorbound Vanguard's Pauldrons
+							i(163665),	-- Honorbound Vanguard's Chainmail
+						},
+					}),
+					-- Tiragarde Sound Foothold
 					q(51800, {	-- Foothold: Tiragarde Sound
 						["qg"] = 144630,	-- Kul Tiras Campaign (Table)
-						["coord"] = { 58.4, 62.6, 1163 },
+						["coord"] = { 58.4, 62.6, 862 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 					}),
 					q(51421, {	-- Shiver Me Timbers
 						["qg"] = 135691,	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, 1163 },
+						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 51800,	-- Foothold: Tiragarde Sound
 						["races"] = HORDE_ONLY,
-					}),
-					q(51801, {	-- Foothold: Drustvar
-						["qg"] = 144630,	-- Kul Tiras Campaign (Table)
-						["coord"] = { 58.4, 62.6, 1163 },
-						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 					}),
-					q(51802, {	-- Foothold: Stormsong Valley
-						["qg"] = 144630,	-- Kul Tiras Campaign (Table)
-						["coord"] = { 58.4, 62.6, 1163 },
+					-- Missing Quests !!
+					q(51975, {	-- Champion: Shadow Hunter Ty'jin
+						["qg"] = 137742,	-- Shadow Hunter Ty'jin
+						["coord"] = { 87.2, 50.0, 895 },
+						["sourceQuest"] = 51438,	-- Marking Our Territory
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+						["g"] = {
+							follower(1072),	-- Shadow Hunter Ty'jin
+						},
 					}),
-					-- Sorted
+					q(51984, {	-- Return to Zuldazar (Tiragarde Foothold)
+						["qg"] = 137742,	-- Shadow Hunter Ty'jin
+						["coord"] = { 87.2, 50.0, 895 },
+						["sourceQuest"] = 51975,	-- Champion: Shadow Hunter Ty'jin
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					-- First Assault
+					q(51589, {	-- Breaking Kul Tiran Will
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 862 },
+						["sourceQuests"] = {
+							51985,	-- Return to Zuldazar (Drustvar Foothold)
+							51986,	-- Return to Zuldazar (Stormsong Valley Foothold)
+							51984,	-- Return to Zuldazar (Tiragarde Foothold)
+						},
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(51590, {	-- Into the Heart of Tiragarde
+						["qg"] = 138285,	-- Nathanos Blightcaller
+						["coord"] = { 87.0, 50.5, 895 },
+						["sourceQuest"] = 51589,	-- Breaking Kul Tiran Will
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51591, {	-- Our Mountain Now
+						["qg"] = 138285,	-- Nathanos Blightcaller
+						["coord"] = { 72.0, 51.8, 895 },
+						["sourceQuest"] = 51590,	-- Into the Heart of Tiragarde
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51592, {	-- Making Ourselves at Home
+						["qg"] = 138285,	-- Nathanos Blightcaller
+						["coord"] = { 72.0, 51.8, 895 },
+						["sourceQuest"] = 51591,	-- Our Mountain Now
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51593, {	-- Bridgeport Investigation
+						["qg"] = 138287,	-- Lilian Voss
+						["coord"] = { 72.0, 51.8, 895 },
+						["sourceQuest"] = 51591,	-- Our Mountain Now
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51594, {	-- Explosives in the Foundry
+						["qg"] = 138287,	-- Lilian Voss
+						["coord"] = { 72.0, 51.8, 895 },
+						["sourceQuests"] = {
+							51592,	-- Making Ourselves at Home
+							51593,	-- Bridgeport Investigation
+						},
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51595, {	-- Explosivity
+						["qg"] = 138287,	-- Lilian Voss
+						["coord"] = { 77.5, 49.9, 895 },
+						["sourceQuest"] = 51594,	-- Explosives in the Foundry
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51596, {	-- Ammunition Acquisition
+						["qg"] = 138287,	-- Lilian Voss
+						["coord"] = { 77.5, 49.9, 895 },
+						["sourceQuest"] = 51595,	-- Explosivity
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51597, {	-- Gunpowder Research
+						["qg"] = 138287,	-- Lilian Voss
+						["coord"] = { 77.5, 49.9, 895 },
+						["sourceQuest"] = 51595,	-- Explosivity
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51598, {	-- A Bit of Chaos
+						["qg"] = 138287,	-- Lilian Voss
+						["coord"] = { 77.5, 49.9, 895 },
+						["sourceQuest"] = 51595,	-- Explosivity
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51599, {	-- Death Trap
+						["qg"] = 138287,	-- Lilian Voss
+						["coord"] = { 77.5, 49.9, 895 },
+						["sourceQuests"] = {
+							51596,	-- Ammunition Acquisition
+							51597,	-- Gunpowder Research
+							51598,	-- A Bit of Chaos
+						},
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51601, {	-- The Bridgeport Ride
+						["qg"] = 138287,	-- Lilian Voss
+						["coord"] = { 77.0, 49.2, 895 },
+						["sourceQuest"] = 51599,	-- Death Trap
+						["minReputation"] = { 2157, FRIENDLY },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					-- The Marshal's Grave
+					q(53065, {	-- Operation: Grave Digger
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["sourceQuest"] = 51601,	-- The Bridgeport Ride
+						["description"] = "This Quest automatically pop up when you reach a Reputation of 4500 Friendly with the Honorbound.",
+						["minReputation"] = { 2157, FRIENDLY+4500 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(51784, {	-- A Stroll Through a Cemetery
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 862 },
+						["sourceQuest"] = 53065,	-- Operation: Grave Digger
+						["minReputation"] = { 2157, FRIENDLY+4500 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					q(51785, {	-- Examining the Epitaphs
+						["qg"] = 139061,	-- Nathanos Blightcaller
+						["coord"] = { 61.4, 51.1, 896 },
+						["sourceQuest"] = 51784,	-- A Stroll Through a Cemetery
+						["minReputation"] = { 2157, FRIENDLY+4500 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					q(51786, {	-- State of Unrest
+						["qg"] = 139061,	-- Nathanos Blightcaller
+						["coord"] = { 61.4, 51.1, 896 },
+						["sourceQuest"] = 51784,	-- A Stroll Through a Cemetery
+						["minReputation"] = { 2157, FRIENDLY+4500 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					q(51787, {	-- Our Lot in Life
+						["qg"] = 139062,	-- Lilian Voss
+						["coord"] = { 61.3, 51.1, 896 },
+						["sourceQuest"] = 51784,	-- A Stroll Through a Cemetery
+						["minReputation"] = { 2157, FRIENDLY+4500 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					q(51788, {	-- The Crypt Keeper
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 61.4, 51.1, 896 },
+						["sourceQuests"] = {
+							51785,	-- Examining the Epitaphs
+							51786,	-- State of Unrest
+							51787,	-- Our Lot in Life
+						},
+						["minReputation"] = { 2157, FRIENDLY+4500 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					q(51789, {	-- What Remains of Marshal M. Valentine
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 61.4, 51.1, 896 },
+						["sourceQuest"] = 51788,	-- The Crypt Keeper
+						["minReputation"] = { 2157, FRIENDLY+4500 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 896 },	-- Drustvar
+					}),
+					-- Death of a Tidesage
+					q(53066, {	-- Operation: Water Wise
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["sourceQuest"] = 51789,	-- What Remains of Marshal M. Valentine
+						["description"] = "This Quest automatically pop up when you reach a Reputation of 3000 Honored with the Honorbound.",
+						["minReputation"] = { 2157, HONORED+3000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(51797, {	-- Tracking Tidesages
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 862 },
+						["sourceQuest"] = 53066,	-- Operation: Water Wise
+						["minReputation"] = { 2157, HONORED+3000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(51798, {	-- No Price Too High
+						["qg"] = 138876,	-- Rexxar
+						["coord"] = { 52.1, 33.7, 942 },
+						["sourceQuest"] = 51797,	-- Tracking Tidesages
+						["minReputation"] = { 2157, HONORED+3000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51805, {	-- They Will Know Fear
+						["qg"] = 139101,	-- Lilian Voss
+						["coord"] = { 62.6, 31.9, 942 },
+						["sourceQuest"] = 51798,	-- No Price Too High
+						["minReputation"] = { 2157, HONORED+3000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51818, {	-- Commander and Captain
+						["qg"] = 139098,	-- Thomas Zelling
+						["coord"] = { 62.6, 31.9, 942 },
+						["sourceQuest"] = 51798,	-- No Price Too High
+						["minReputation"] = { 2157, HONORED+3000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51819, {	-- Scattering Our Enemies
+						["qg"] = 139102,	-- Rexxar
+						["coord"] = { 62.7, 31.8, 942 },
+						["sourceQuest"] = 51798,	-- No Price Too High
+						["minReputation"] = { 2157, HONORED+3000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51830, {	-- Zelling's Potential
+						["qg"] = 139098,	-- Thomas Zelling
+						["coord"] = { 62.6, 31.9, 942 },
+						["sourceQuests"] = {
+							51805,	-- They Will Know Fear
+							51818,	-- Commander and Captain
+							51819,	-- Scattering Our Enemies
+						},
+						["minReputation"] = { 2157, HONORED+3000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51837, {	-- Whatever Will Be
+						["qg"] = 139101,	-- Lilian Voss
+						["coord"] = { 62.6, 31.9, 942 },
+						["sourceQuest"] = 51830,	-- Zelling's Potential
+						["minReputation"] = { 2157, HONORED+3000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(52122, {	-- To Be Forsaken
+						["qg"] = 139101,	-- Lilian Voss
+						["coord"] = { 62.6, 31.9, 942 },
+						["sourceQuest"] = 51837,	-- Whatever Will Be
+						["minReputation"] = { 2157, HONORED+3000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					-- At the Bottom of the Sea
 					q(53067, {	-- Operation: Bottom Feeder
 						["qg"] = 135691,	-- Nathanos Blightcaller
+						["sourceQuest"] = 52122,	-- To Be Forsaken
 						["description"] = "This Quest automatically pop up when you reach a Reputation of 7500 Honored with the Honorbound.",
 						["minReputation"] = { 2157, HONORED+7500 },
 						["races"] = HORDE_ONLY,
@@ -874,7 +1259,7 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["maps"] = { 863 },	-- Nazmir
 					}),
-					q(54280, {	-- Fly Out to Meet Them
+					q(54282, {	-- Battle of Dazar'alor
 						["qg"] = 146921,	-- Princess Talanji
 						["coord"] = { 37.0, 5.2, 862 },
 						["sourceQuest"] = 54280,	-- Fly Out to Meet Them
@@ -882,58 +1267,336 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
-				--	unsorted below this point
+					q(54164, {	-- The King's Death
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 862 },
+						["sourceQuest"] = 54282,	-- Battle of Dazar'alor
+						["minReputation"] = { 2157, REVERED+14000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(54165, {	-- The Return of Derek Proudmoore
+						["qg"] = 145411,	-- Lady Sylvanas Windrunner
+						["coord"] = { 49.8, 38.8, 1165 },
+						["sourceQuest"] = 54164,	-- The King's Death
+						["minReputation"] = { 2157, REVERED+14000 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					-- The Message to the Lord Admiral (Returning Derek Proudmoore to Jaina)
+					q(55124, {	-- Righting Wrongs
+						["qg"] = 150433,	-- Bluffwatcher Proudscar
+						["coord"] = { 49.8, 95.9, 1165 },
+						["sourceQuests"] = {
+							54165,	-- The Return of Derek Proudmoore
+							54754,	-- For the Queen
+							54109,	-- Queen's Favor
+						},
+						["altQuests"] = { 54961 },	-- Righting Wrongs
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(54961, {	-- Righting Wrongs (Sylvanas Version)
+						["qg"] = 150433,	-- Bluffwatcher Proudscar
+						["coord"] = { 49.8, 95.9, 1165 },
+						["sourceQuests"] = {
+							54165,	-- The Return of Derek Proudmoore
+							54754,	-- For the Queen
+							54109,	-- Queen's Favor
+						},
+						["altQuests"] = { 55124 },	-- Righting Wrongs
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(54958, {	-- Ships in the Night
+						["qg"] = 150309,	-- Baine Bloodhoof
+						["coord"] = { 87.3, 49.6, 895 },
+						["sourceQuests"] = {
+							55124,	-- Righting Wrongs
+							54961,	-- Righting Wrongs
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(54959, {	-- Under Lock and Keys
+						["qg"] = 149842,	-- Baine Bloodhoof
+						["coord"] = { 85.8, 45.8, 895 },
+						["sourceQuest"] = 54958,	-- Ships in the Night
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(54997, {	-- Dead in the Water
+						["qg"] = 149842,	-- Baine Bloodhoof
+						["coord"] = { 85.8, 45.8, 895 },
+						["sourceQuest"] = 54958,	-- Ships in the Night
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(54960, {	-- A Bitter Reunion
+						["qg"] = 149842,	-- Baine Bloodhoof
+						["coord"] = { 85.8, 45.8, 895 },
+						["sourceQuests"] = {
+							54959,	-- Under Lock and Keys
+							54997,	-- Dead in the Water
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(54999, {	-- Under False Colors
+						["qg"] = 150311,	-- Thomas Zelling
+						["coord"] = { 76.3, 42.7, 70 },
+						["sourceQuest"] = 54960,	-- A Bitter Reunion
+						["altQuests"] = { 55034 },	-- Under False Colors
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 70 },	-- Dustwallow Marsh 
+					}),
+					q(55034, {	-- Under False Colors (Sylvanas Version)
+						["qg"] = 150311,	-- Thomas Zelling
+						["coord"] = { 76.3, 42.7, 70 },
+						["sourceQuests"] = {
+							54960,	-- A Bitter Reunion
+							54961,	-- Righting Wrongs (Sylvanas Version)
+						},
+						["altQuests"] = { 54999 },	-- Under False Colors
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 70 },	-- Dustwallow Marsh 
+					}),
+					-- The Warfang Event (Baine's imprisoning)
+					q(55047, {	-- Securing Warfang Hold
+						["qg"] = 146013,	-- Dark Ranger Alina
+						["coord"] = { 58.4, 62.7, 862 },
+						["sourceQuest"] = 54999,	-- Under False Colors
+						["altQuests"] = { 55052 },	-- Securing Warfang Hold
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(55052, {	-- Securing Warfang Hold (Sylvanas Version)
+						["qg"] = 146013,	-- Dark Ranger Alina
+						["coord"] = { 58.4, 62.7, 862 },
+						["sourceQuest"] = 55034,	-- Under False Colors (Sylvanas Version)
+						["altQuests"] = { 55047 },	-- Securing Warfang Hold
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(55048, {	-- Spy Games
+						["qg"] = 150690,	-- Boss Mida
+						["coord"] = { 51.0, 32.9, 942 },
+						["sourceQuests"] = {
+							55047,	-- Securing Warfang Hold
+							55052,	-- Securing Warfang Hold (Sylvanas Version)
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(55049, {	-- Communication Breakdown
+						["qg"] = 150690,	-- Boss Mida
+						["coord"] = { 51.0, 32.9, 942 },
+						["sourceQuests"] = {
+							55047,	-- Securing Warfang Hold
+							55052,	-- Securing Warfang Hold (Sylvanas Version)
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(55050, {	-- Tickets, Please?
+						["qg"] = 150691,	-- Kazit
+						["coord"] = { 51.0, 32.8, 942 },
+						["sourceQuests"] = {
+							55047,	-- Securing Warfang Hold
+							55052,	-- Securing Warfang Hold (Sylvanas Version)
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(55051, {	-- A Display of Power
+						["qg"] = 150690,	-- Boss Mida
+						["coord"] = { 51.0, 32.9, 942 },
+						["sourceQuests"] = {
+							55048,	-- Spy Games
+							55049,	-- Communication Breakdown
+							55050,	-- Tickets, Please?
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					-- Baine's Rescue
+					q(55778, {	-- Visions of Danger
+						["qg"] = 151848,	-- Lor'themar Theron
+						["coord"] = { 48.5, 62.1, 1355 },
+						["sourceQuests"] = {
+							55869,	-- Clearing Out the Cache
+							55051,	-- A Display of Power
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1355 },	-- Nazjatar
+					}),
+					q(55781, {	-- Old Allies
+						["qg"] = 151848,	-- Lor'themar Theron
+						["coord"] = { 48.5, 62.1, 1355 },
+						["sourceQuest"] = 55778,	-- Visions of Danger
+						["altQuests"] = { 55780 },	-- Old Allies
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1355 },	-- Nazjatar
+					}),
+					q(55780, {	-- Old Allies (Sylvanas Version)
+						["qg"] = 151848,	-- Lor'themar Theron
+						["coord"] = { 48.5, 62.1, 1355 },
+						["sourceQuest"] = 55778,	-- Visions of Danger
+						["altQuests"] = { 55781 },	-- Old Allies
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1355 },	-- Nazjatar
+					}),
+					q(55779, {	-- Stay of Execution
+						["qg"] = 152977,	-- Thrall
+						["coord"] = { 56.1, 68.0, 86 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55781,	-- Old Allies
+						["altQuests"] = { 55782 },	-- Stay of Execution
+						["lvl"] = 120,
+						["maps"] = { 
+							85,	-- Orgrimmar
+							1479,	-- Baine Rescue (Scenario)
+						},
+					}),
+					q(55782, {	-- Stay of Execution (Sylvanas Version)
+						["qg"] = 152977,	-- Thrall
+						["coord"] = { 56.1, 68.0, 86 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55780,	-- Old Allies (Sylvanas Version)
+						["altQuests"] = { 55779 },	-- Stay of Execution
+						["lvl"] = 120,
+						["maps"] = { 
+							85,	-- Orgrimmar
+							1479,	-- Baine Rescue (Scenario)
+						},
+					}),
 				
-					q(51987, {	-- Champion: Hobart Grapplehammer
-						["qg"] = 137613,	-- Hobart Grapplehammer
-						["coord"] = { 33.6, 37.8, 896 },
-						["sourceQuest"] = 51234,	-- Krazzlefrazz Outpost
+				
+					-- Escape of Saurfang
+					q(54097, {	-- The Dark Lady Calls
+						["qg"] = 146013,	-- Dark Ranger Alina
+						["coord"] = { 58.4, 62.7, 862 },
+					--	["sourceQuest"] = 53981,	-- The Day is Won		-- need to be confirmed
 						["races"] = HORDE_ONLY,
+					}),
+					q(54099, {	-- The High Overlord
+						["qg"] = 146654,	-- Lady Sylvanas Windrunner
+						["coord"] = { 48.3, 71.2, 85 },
+						["sourceQuest"] = 54097,	-- The Dark Lady Calls
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 85 },	-- Orgrimmar
+					}),
+					q(54100, {	-- A Way Out
+						["qg"] = 146654,	-- Lady Sylvanas Windrunner
+						["coord"] = { 48.3, 71.0, 85 },
+						["sourceQuest"] = 54099,	-- The High Overlord
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 85 },	-- Orgrimmar
+					}),
+					q(54101, {	-- On Track
+						["qg"] = 146010,	-- Dark Ranger Lyana
+						["coord"] = { 30.5, 57.6, 37 },
+						["sourceQuest"] = 54100,	-- A Way Out
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 37 },	-- Elwynn Forest
+					}),
+					q(54102, {	-- Eastern Escape
+						["qg"] = 146791,	-- Dark Ranger
+						["coord"] = { 34.5, 63.3, 37 },
+						["sourceQuest"] = 54101,	-- On Track
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 37 },	-- Elwynn Forest
+					}),
+					q(54103, {	-- Corner Crossing
+						["qg"] = 146806,	-- Dark Ranger Lyana
+						["coord"] = { 11.3, 66.8, 49 },
+						["sourceQuest"] = 54102,	-- Eastern Escape
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(54104, {	-- Signs of Saurfang
+						["qg"] = 146937,	-- Dark Ranger
+						["coord"] = { 25.9, 39.8, 49 },
+						["sourceQuest"] = 54103,	-- Corner Crossing
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 49 },	-- Redridge Mountains
+					}),
+					q(54105, {	-- Ever Eastward
+						["qg"] = 146937,	-- Dark Ranger
+						["coord"] = { 29.0, 68.1, 49 },
+						["sourceQuest"] = 54104,	-- Signs of Saurfang
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 49 },	-- Redridge Mountains
+					}),
+					q(54106, {	-- Tracking Tipoff
+						["qg"] = 147210,	-- Dark Ranger Lyana
+						["coord"] = { 80.6, 46.9, 49 },
+						["sourceQuest"] = 54105,	-- Ever Eastward
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 49 },	-- Redridge Mountains
+					}),
+					q(54754, {	-- For the Queen
+						["coord"] = { 81.4, 52.4, 49 },
+						["sourceQuest"] = 54106,	-- Tracking Tipoff
+						["description"] = "You have to choose between helping Saurfang or not betray Sylvanas. If you want to stick with Sylvanas you have to choose \"I won't betray my Warchief, Troll.\" to get this quest. You are not able to get the Toy \"Worn Cloak\" if you choose this quest.",
+						["altQuests"] = { 54107 },  -- Grim Tidings
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 49 },	-- Redridge Mountains
+					}),
+					q(54107, {	-- Grim Tidings
+						["qg"] = 146012,	-- Zekhan
+						["coord"] = { 81.4, 52.4, 49 },
+						["description"] = "You have to choose between helping Saurfang or not betray Sylvanas. If you want to help Saurfang accept this Quest.",
+						["sourceQuest"] = 54106,	-- Tracking Tipoff
+						["altQuests"] = { 54754 },  -- For the Queen
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 49 },	-- Redridge Mountains
+					}),
+					q(54108, {	-- A Warrior's Death
+						["qg"] = 147297,	-- Zekhan
+						["coord"] = { 79.7, 74.7, 51 },
+						["sourceQuest"] = 54107,	-- Grim Tidings
+						["altQuests"] = { 54754 },  -- For the Queen
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 51 },	-- Swamp of Sorrows
 						["g"] = {
-							follower(1068),	-- Hobart Grapplehammer
+							i(165791),	-- Worn Cloak
 						},
 					}),
-					q(51985, {	-- Return to Zuldazar (Drustvar Foothold)
-						["qg"] = 136683,	-- Trade Prince Gallywix
-						["coord"] = { 37.2, 27.0, 896 },
-						["sourceQuest"] = 51987,	-- Champion: Hobart Grapplehammer
+					q(54109, {	-- Queen's Favor
+						["qg"] = 146011,	-- Varok Saurfang
+						["coord"] = { 80.8, 78.7, 51 },
+						["sourceQuest"] = 54108,	-- A Warrior's Death
+						["altQuests"] = { 54754 },  -- For the Queen
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 51 },	-- Swamp of Sorrows
 					}),
-					q(51753, {	-- Champion: Rexxar
-						["qg"] = 138876,	-- Rexxar
-						["coord"] = { 52.0, 33.6, 942 },
-						["sourceQuest"] = 51696,	-- Reclaiming What's Ours
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							follower(1069),	-- Rexxar
-						},
-					}),
-					q(51986, {	-- Return to Zuldazar (Stormsong Valley Foothold)
-						["qg"] = 138876,	-- Rexxar
-						["coord"] = { 52.0, 33.6, 942 },
-						["sourceQuest"] = 51753,	-- Champion: Rexxar
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(163672),	-- Honorbound Vanguard's Helm
-							i(163670),	-- Honorbound Vanguard's Pauldrons
-							i(163665),	-- Honorbound Vanguard's Chainmail
-						},
-					}),
-					q(51975, {	-- Champion: Shadow Hunter Ty'jin
-						["qg"] = 137742,	-- Shadow Hunter Ty'jin
-						["coord"] = { 87.2, 50.0, 895 },
-						["sourceQuest"] = 51438,	-- Marking Our Territory
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							follower(1072),	-- Shadow Hunter Ty'jin
-						},
-					}),
-					q(51984, {	-- Return to Zuldazar (Tiragarde Foothold)
-						["qg"] = 137742,	-- Shadow Hunter Ty'jin
-						["coord"] = { 87.2, 50.0, 895 },
-						["sourceQuest"] = 51975,	-- Champion: Shadow Hunter Ty'jin
-						["races"] = HORDE_ONLY,
-					}),
+				
+				--	unsorted below this point
 					q(51916, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
 						["qg"] = 135691,	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 1163 },

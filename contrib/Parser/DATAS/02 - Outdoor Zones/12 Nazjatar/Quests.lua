@@ -1352,12 +1352,6 @@ _.Zones =
 					i(168093),	-- Grimy Manapearl Bracelet
 				},
 			}),
-			q(55781, {	-- Old Allies
-				["qg"] = 151848,	-- Lor'themar Theron
-				["coord"] = { 48.5, 62.1, 1355 },
-				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 55778,	-- Visions of Danger
-			}),
 			q(56422, {	-- On Ghostly Wings
 				["qg"] = 154601,	-- Kelya Moonfall
 				["coord"] = { 80.2, 31.8, 1355 },
@@ -2376,12 +2370,6 @@ _.Zones =
 				["coord"] = { 62.4, 36.0, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 151000,	-- Blademaster Okani
-			}),
-			q(55778, {	-- Visions of Danger
-				["qg"] = 151848,	-- Lor'themar Theron
-				["coord"] = { 48.5, 62.1, 1355 },
-				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 55869,	-- Clearing Out the Cache
 			}),
 			q(55714, {	-- Void Cache (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)

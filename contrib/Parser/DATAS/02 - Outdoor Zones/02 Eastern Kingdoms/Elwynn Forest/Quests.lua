@@ -108,12 +108,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35,	-- Further Concerns
 				}),
-				q(54102, {	-- Eastern Escape
-					["qg"] = 146791,	-- Dark Ranger
-					["coord"] = { 34.5, 63.3, 37 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54101,	-- On Track
-				}),
 				q(83, {	-- Fine Linen Goods
 					["qg"] = 278,	-- Sara Timberlain
 					["races"] = ALLIANCE_ONLY,
@@ -231,12 +225,6 @@ _.Zones =
 					["qg"] = 244,	-- Ma Stonefield
 					["coord"] = { 34.6, 84.4, 37 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54101, {	-- On Track
-					["qg"] = 146010,	-- Dark Ranger Lyana
-					["coord"] = { 30.5, 57.6, 37 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54100,	-- A Way Out
 				}),
 				q(52, {	-- Protect the Frontier
 					["qg"] = 261,	-- Guard Thomas

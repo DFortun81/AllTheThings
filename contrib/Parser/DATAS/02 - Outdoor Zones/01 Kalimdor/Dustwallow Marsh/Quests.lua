@@ -1075,15 +1075,6 @@ _.Zones =
 						un(2, i(33252)),	-- Gleaming Scale Breastplate
 					},
 				},
-				{	-- Under False Colors
-						["questID"] = 54999,
-						["qg"] = 150311,	-- Thomas Zelling
-						["coord"] = { 76.3, 42.7, 70 },
-						["lvl"] = 120,
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 54960,	-- A Bitter Reunion
-						["altQuests"] = { 55034 },	-- Under False Colors
-					},
 				{	-- Unleash the Raptors
 					["questID"] = 27243,
 					["groups"] = {

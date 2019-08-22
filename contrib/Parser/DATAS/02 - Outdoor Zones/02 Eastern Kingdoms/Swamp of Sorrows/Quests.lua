@@ -33,16 +33,6 @@ _.Zones =
 						["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					}),
 				}),
-				q(54108, {	-- A Warrior's Death
-					["qg"] = 147297,	-- Zekhan
-					["lvl"] = 120,
-					["coord"] = { 79.7, 74.7, 51 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54107,	-- Grim Tidings
-					["altQuests"] = {
-						54754,  -- For the Queen
-					},
-				}),
 				q(27849, {	-- Assault on Stonard
 					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, 51 },
@@ -299,16 +289,6 @@ _.Zones =
 					["qg"] = 47041,	-- Neeka Bloodscar
 					["coord"] = { 21.2, 51.7, 51 },
 					["races"] = HORDE_ONLY,
-				}),
-				q(54109, {	-- Queen's Favor
-					["qg"] = 146011,	-- Varok Saurfang
-					["lvl"] = 120,
-					["coord"] = { 80.8, 78.7, 51 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54108,	-- A Warrior's Death
-					["altQuests"] = {
-						54754,  -- For the Queen
-					},
 				}),
 				q(27843, {	-- Reinforcements Denied
 					["qg"] = 46676,	-- Joanna Blueheart

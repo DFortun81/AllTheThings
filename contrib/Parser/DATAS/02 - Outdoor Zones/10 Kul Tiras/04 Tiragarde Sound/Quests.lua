@@ -13,16 +13,6 @@ _.Zones =
 					["coord"] = { 76.8, 85.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(54960, {	-- A Bitter Reunion
-					["sourceQuests"] = {
-						54997,	-- Dead in the Water
-						54960,	-- A Bitter Reunion
-					},
-					["coord"] = { 85.8, 45.8, 895 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["qg"] = 149842,	-- Baine Bloodhoof
-				}),
 				q(50249, {	-- A Boralus Triple Threat
 					["sourceQuests"] = {
 						51226,	-- Death From Two Sides
@@ -308,13 +298,6 @@ _.Zones =
 					["coord"] = { 37.6, 29.5, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 125962,	-- Manager Yerold
-				}),
-				q(54997, {	-- Dead in the Water
-					["sourceQuests"] = { 54958 },	-- Ships in the Night
-					["coord"] = { 85.8, 45.8, 895 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["qg"] = 149842,	-- Baine Bloodhoof
 				}),
 				q(51226, {	-- Death from Two Sides
 					["sourceQuests"] = { 49715 },	-- Trouble at Greystone Keep
@@ -979,13 +962,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 140752,	-- Jenny Swiftbrook
 				}),
-				q(54958, {	-- Ships in the Night
-					["sourceQuests"] = { 55124 },	-- Righting Wrongs
-					["coord"] = { 87.3, 49.6, 895 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["qg"] = 150309,	-- Baine Bloodhoof
-				}),
 				q(48939, {	-- Show Me What You've Got
 					["sourceQuests"] = { 48004 },	-- Beginner Equitation
 					["coord"] = { 51.6, 27.3, 895 },
@@ -1283,13 +1259,6 @@ _.Zones =
 					["coord"] = { 54.4, 19.4, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 127144,	-- Melissa Kenny
-				}),
-				q(54959, {	-- Under Lock and Keys
-					["sourceQuests"] = { 54958 },	-- Ships in the Night
-					["coord"] = { 85.8, 45.8, 895 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["qg"] = 149842,	-- Baine Bloodhoof
 				}),
 				q(50531, {	-- Under Their Noses
 					["sourceQuests"] = {

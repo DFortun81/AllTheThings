@@ -612,13 +612,6 @@ _.Zones =
 						i(65474),	-- Greatsword of the Sunwalker
 					},
 				}),
-				q(54100, {	-- A Way Out
-					["qg"] = 146654,	-- Lady Sylvanas Windrunner
-					["coord"] = { 48.3, 71.0, 85 },
-					["sourceQuest"] = 54099,	-- The High Overlord
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
 				q(25264, {	-- Ak'Zeloth
 					["qg"] = 3216,	-- Arnak Fireblade
 					["coord"] = { 58.5, 53.6, 85 },
@@ -1417,13 +1410,6 @@ _.Zones =
 						i(65478),	-- Staff of the Sunchaser
 					},
 				}),
-				q(55779, {	-- Stay of Execution
-					["qg"] = 152977,	-- Thrall
-					["lvl"] = 120,
-					["coord"] = { 56.1, 68.0, 86 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55781,	-- Old Allies
-				}),
 				q(28459, {	-- Stones of Binding
 					["qg"] = 88705,	-- Kranosh
 					["coord"] = { 49.0, 55.2, 85 },
@@ -1549,13 +1535,6 @@ _.Zones =
 					["g"] = {
 						i(65628),	-- Helm of the Great Hunter
 					},
-				}),
-				q(54099, {	-- The High Overlord
-					["qg"] = 146654,	-- Lady Sylvanas Windrunner
-					["coord"] = { 48.3, 71.2, 85 },
-					["sourceQuest"] = 54097,	-- The Dark Lady Calls
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(31013, {	-- The Horde Way
 					["qg"] = 39605,	-- Garrosh Hellscream

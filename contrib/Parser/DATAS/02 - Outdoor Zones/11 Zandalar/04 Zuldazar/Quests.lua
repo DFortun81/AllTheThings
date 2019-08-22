@@ -899,11 +899,6 @@ _.Zones =
 						i(155309),	-- Lightning Caller's Band
 					},
 				}),
-				q(54097, {	-- The Dark Lady Calls
-					["qg"] = 146013,	-- Dark Ranger Alina
-					["coord"] = { 58.4, 62.7, 862 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing

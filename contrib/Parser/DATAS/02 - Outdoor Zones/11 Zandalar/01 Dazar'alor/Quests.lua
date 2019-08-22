@@ -455,22 +455,6 @@ _.Zones =
 					["coord"] = { 71.4, 30.2, 862 },
 					["qg"] = 134345,	-- Collector Kojo
 				}),
-				q(55124, {	-- Righting Wrongs
-					["coord"] = { 49.8, 95.9, 1165 },
-					["races"] = HORDE_ONLY,
-					["qg"] = 150433,	-- Bluffwatcher Proudscar
-					["altQuests"] = {
-						54961,	-- Righting Wrongs
-					},
-				}),
-				q(54961, {	-- Righting Wrongs
-					["coord"] = { 49.8, 95.9, 1165 },
-					["races"] = HORDE_ONLY,
-					["qg"] = 150433,	-- Bluffwatcher Proudscar
-					["altQuests"] = {
-						55124,	-- Righting Wrongs
-					},
-				}),
 				q(54166, {	-- Set Sail
 					["u"] = 40,
 					["lvl"] = 110,
