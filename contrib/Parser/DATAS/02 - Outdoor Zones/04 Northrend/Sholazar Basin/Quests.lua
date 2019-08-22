@@ -120,113 +120,133 @@ _.Zones =
 						i(39452),	-- Roaming Wristguards
 					},
 				}),
-				q(12691,  {  -- A Timeworn Coffer
+				q(12691, {  -- A Timeworn Coffer
 					i(39348),
 					i(39402),
 					i(39438),
 					i(39508),
 				}),
-				q(12561,  {  -- An Issue of Trust
+				q(12561, {  -- An Issue of Trust
 					i(39363),
 					i(39406),
 					i(39439),
 					i(39459),
 				}),
-				q(12569,  {  -- Crocolisk Mastery: The Ambush
+				q(12797, {	-- Back Through the Waygate
+					["qg"] = 28092,	-- The Etymidian
+					["sourceQuest"] = 12547,	-- The Activation Rune
+					["coord"] = { 47.4, 9.2, 78 },
+					["maps"] = { 78 },	-- Un'goro Crater
+					["lvl"] = 66,
+				}),
+				q(12569, {  -- Crocolisk Mastery: The Ambush
 					i(39331),	-- Tooth-Marked Girdle
 					i(39374),	-- Crocscale Moccasins
 					i(39461),	-- Muck-Stained Carapace
 					i(39480),	-- Bent Crocolisk Tooth
 				}),
-				q(12558,  {  -- Dreadsaber Mastery: Ready to Pounce
+				q(12558, {  -- Dreadsaber Mastery: Ready to Pounce
 					i(39323),
 					i(39375),
 					i(39429),
 					i(39451),
 					i(39503),
 				}),
-				q(12617,  {  -- Exterminate the Intruders
+				q(12617, {  -- Exterminate the Intruders
 					i(39365),
 					i(39385),
 					i(39441),
 					i(39449),
 				}),
-				q(12532,  {  -- Flown the Coop!
+				q(12532, {  -- Flown the Coop!
 					i(39337),
 					i(39383),
 					i(39435),
 					i(39455),
 				}),
-				q(12570,  {  -- Fortunate Misunderstandings
+				q(12570, {  -- Fortunate Misunderstandings
 					i(39335),	-- Leggings of Mending Fronds
 					i(39378),	-- Ragged Leaf Grips
 					i(39432),	-- Belt of Misconceptions
 					i(39482),	-- Ring of Misinterpreted Gestures
 				}),
-				q(12624,  {  -- It Could Be Anywhere!
+				q(12624, {  -- It Could Be Anywhere!
 					i(39479),	-- Cloak of Renewed Hope
 					i(39446),	-- Pauldrons of Resolution
 					i(39466),	-- Boots of Dominance
 					i(39474),	-- Ring of Devoted Promises
 				}),
-				q(12537,  {  -- Lightning Definitely Strikes Twice
+				q(12537, {  -- Lightning Definitely Strikes Twice
 					i(39347),
 					i(39400),
 					i(39437),
 					i(39457),
 				}),
-				q(12573,  {  -- Making Peace
+				q(12573, {  -- Making Peace
 					i(39672),
 					i(39674),
 					i(39673),
 					i(39675),
 				}),
-				q(12614,  {  -- POst-partum Aggression
+				q(12614, {  -- POst-partum Aggression
 					i(39487),
 					i(39486),
 					i(39488),
 					i(39478),
 					i(40353),
 				}),
-				q(12681,  {  -- Reagent Agent
+				q(12681, {  -- Reagent Agent
 					i(39368),
 					i(39413),
 					i(39445),
 					i(39463),
 				}),
-				q(12546,  {  -- Reclamation
+				q(12546, {  -- Reclamation
 					i(40290),
 					i(40291),
 					i(40292),
 					i(40293),
 					i(40295),
 				}),
-				q(12611,  {  -- Returned Sevenfold
+				q(12611, {  -- Returned Sevenfold
 					i(39367),
 					i(39412),
 					i(39444),
 					i(39464),
 					i(39481),	-- Signet of the Avenging Heart
 				}),
-				q(12556,  {  -- Rhino Mastery: The Kill
+				q(12556, {  -- Rhino Mastery: The Kill
 					i(39333),
 					i(39377),
 					i(39431),
 					i(39453),
 				}),
-				q(12592,  {  -- The Great Hunter's Challenge
+				q(12547, {	-- The Activation Rune
+					["qg"] = 28092,	-- The Etymidian
+					["sourceQuest"] = 12548,	-- The Etymidian
+					["coord"] = { 47.4, 9.2, 78 },
+					["maps"] = { 78 },	-- Un'goro Crater
+					["lvl"] = 66,
+					["groups"] = {
+						i(39366),	-- Spaulders of the Runeseeker
+						i(39411),	-- Legguards of Guided Travel
+						i(39442),	-- Seeing-Eye Belt
+						i(39465),	-- Pathfinding Treads
+					},
+				}),
+				q(12592, {  -- The Great Hunter's Challenge
 					i(39330),
 					i(39373),
 					i(39428),
 					i(39448),
 				}),
-				q(12575,  {  -- The Lost Mistwhisper Treasure
+				q(12575, {  -- The Lost Mistwhisper Treasure
 					i(39336),
 					i(39380),
 					i(39433),
 					i(39454),
 				}),
-				q(12534,  {  -- The Sapphire Queen
+				q(12534, {  -- The Sapphire Queen
 					i(39346),
 					i(39387),
 					i(39436),

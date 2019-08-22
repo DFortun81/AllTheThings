@@ -130,12 +130,6 @@ _.Zones =
 					["qg"] = 38237,	-- Maximillian of Northshire
 					["coord"] = { 30.6, 51.1, 78 },
 				},
-				{	-- Back Through the Waygate
-					["questID"] = 12797,
-					["qg"] = 28092,	-- The Etymidian
-					["coord"] = { 47.4, 9.2, 78 },
-					["sourceQuest"] = 12547,	-- The Activation Rune
-				},
 				{	-- Beware of Pterrordax
 					["objectID"] = 174682,
 					["u"] = 43,
@@ -522,18 +516,6 @@ _.Zones =
 					["qg"] = 38276,	-- Tara
 					["coord"] = { 43.2, 40.8, 78 },
 					["sourceQuest"] = 24693,	-- Mossy Pile
-				},
-				{	-- The Activation Rune
-					["questID"] = 12547,
-					["qg"] = 28092,	-- The Etymidian
-					["coord"] = { 47.4, 9.2, 78 },
-					["sourceQuest"] = 12548,	-- The Etymidian
-					["groups"] = {
-						i(39366),	-- Spaulders of the Runeseeker
-						i(39411),	-- Legguards of Guided Travel
-						i(39442),	-- Seeing-Eye Belt
-						i(39465),	-- Pathfinding Treads
-					},
 				},
 				{	-- The Apes of Un'Goro
 					["questID"] = 24717,
