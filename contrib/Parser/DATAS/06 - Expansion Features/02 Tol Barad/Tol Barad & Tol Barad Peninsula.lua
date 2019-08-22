@@ -569,6 +569,7 @@ _.ExpansionFeatures =
 							i(62478),	-- Shimmering Morningstar
 							i(62479),	-- Sky Piercer
 							i(62474),	-- Spear of Trailing Shadows
+							i(63517),	-- Baradin's Wardens Commendation
 							i(68774),	-- Greater Inscription of Vicious Agility
 							i(68772),	-- Greater Inscription of Vicious Intellect
 							i(68773),	-- Greater Inscription of Vicious Strength
