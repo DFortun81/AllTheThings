@@ -11,6 +11,91 @@ _.ExpansionFeatures =
 						["questID"] = 36772,
 					}),
 				}),
+				garrisonBuilding(28,  {	-- Barracks (rank 1: 26, rank 2: 27, rank 3: 28)
+					q(37080, {	-- Glorious Slaughter
+						["qg"] = 86927,	-- Stormshield Death Knight(Delvar Ironfist)
+						["g"] = {
+							spell(174553, {	-- Delvar Ability: Breath of Sindragosa
+								["collectible"] = false,
+							}),
+						}
+					}),
+					q(37129, {	-- Unwelcome Memories
+						["qg"] = 86927,	-- Stormshield Death Knight(Delvar Ironfist)
+						["g"] = {
+							spell(174904, {	-- Delvar Perk: Death Gate
+								["collectible"] = false,
+							}),
+						}
+					}),
+					q(37047, {	-- The Light's Gift
+						["qg"] = 86934,	-- Sha'tari Defender(Defender Illona)
+						["g"] = {
+							spell(174537, {	-- Illona Ability: Guardian of Ancient Kings
+								["collectible"] = false,
+							}),
+						}
+					}),
+					q(37127, {	-- The Light of Exodus
+						["qg"] = 86934,	-- Sha'tari Defender(Defender Illona)
+						["g"] = {
+							spell(174887, {	-- Illona Perk: Guiding Light
+								["collectible"] = false,
+							}),
+						}
+					}),
+					q(36947, {	-- New Strength
+						["qg"] = 86682,	-- Retired Gorian Centurion(Tormmok)
+						["g"] = {
+							spell(174189, {	-- Tormmok Ability: Avatar
+								["collectible"] = false,
+							}),
+						}
+					}),
+					q(37126, {	-- An Ogre Without His Sword...(A)--Seems to count both Horde/Alli when you do one.
+						["qg"] = 86682,	-- Retired Gorian Centurion(Tormmok)
+						--["altQuestID"] = 37180,	-- An Ogre Without His Sword...(H)
+						["g"] = {
+							spell(174886, {	-- Tormmok Perk: Master of Arms
+								["collectible"] = false,
+							}),
+						}
+					}),
+					q(37085, {	-- Fury of the Clan
+						["qg"] = 86964,	-- Bloodmane Earthbinder(Leorajh)
+						["g"] = {
+							spell(174562, {	-- Leorajh Ability: Primal Bloodlust
+								["collectible"] = false,
+							}),
+						}
+					}),
+					q(37140, {	-- Leorajh's Prayer Beads(A)--Seems to count both Horde/Alli when you do one.
+						["qg"] = 86964,	-- Bloodmane Earthbinder(Leorajh)
+						--["altQuestID"] = 37181,	-- Leorajh's Prayer Beads(H)
+						["g"] = {
+							spell(174965, {	-- Leorajh Perk: Windspeaker
+								["collectible"] = false,
+							}),
+						}
+					}),
+					q(37084, {	-- The Shadows Call
+						["qg"] = 86946,	-- Outcast Talonpriest(Talonpriest Ishaal)
+						["g"] = {
+							spell(174560, {	-- Ishaal Ability: Last Rites
+								["collectible"] = false,
+							}),
+						}
+					}),
+					q(37137, {	-- Scrying Hard or Hardly Scrying(A)--Seems to count both Horde/Alli when you do one.
+						["qg"] = 86946,	-- Outcast Talonpriest(Talonpriest Ishaal)
+						--["altQuestID"] = 37182,	-- Scrying Hard or Hardly Scrying(H)
+						["g"] = {
+							spell(174927, {	-- Ishaal Perk: Courier Raven
+								["collectible"] = false,
+							}),
+						}
+					}),
+				}),
 				garrisonBuilding(10,  {	-- Dwarven Bunker (rank 1: 8, rank 2: 9, rank 3: 10)
 					q(37092, {	-- Scraps of Iron
 						["qg"] = 77377,	-- Kristen Stoneforge
