@@ -1358,6 +1358,12 @@ _.Zones =
 				["sourceQuest"] = 154514,	-- Saving Corin
 				["g"] = {
 					spell(303357),	-- Flight Master's Whistle Upgrade: Nazjatar
+					ach(13741, 13742),	-- <Hidden> Nazjatar - Flight Master Whistle Upgrade - Alliance (DNT) / Horde (DNT)-- Whistle upgrade tracking
+					--[[i(141605, {	-- Flight Master's Whistle
+						["collectible"] = true,
+						["allianceAchievementID"] = 13741,
+						["hordeAchievementID"] = 13742,
+					}),]]
 				},
 			}),
 			q(55625, {	-- Pearls of Unimaginable Power
