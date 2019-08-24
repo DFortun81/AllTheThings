@@ -90,7 +90,7 @@ _.Zones =
 				},
 			}),
 			q(56789, {	-- A Gift of Supplies
-				["description"] = "Offered when |nFFFFD700Bladesman Inowari|r reaches rank 7.",
+				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 7.",
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 154297,	-- Bladesman Inowari
 				["g"] = {
@@ -1525,7 +1525,7 @@ _.Zones =
 			q(55728, {	-- Reinforced Cache
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-				["objectID"] = 326047,	-- Reinforced Cache
+			--	["objectID"] = 326047,	-- Reinforced Cache
 				["isDaily"] = true,
 				["coord"] = { 45.0, 22.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -1533,7 +1533,7 @@ _.Zones =
 			q(56231, {	-- Reinforced Cache
 				["sourceQuests"] = { 55500 },	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-				["objectID"] = 326047,	-- Reinforced Cache
+			--	["objectID"] = 326047,	-- Reinforced Cache
 				["isDaily"] = true,
 				["coord"] = { 45.0, 22.1, 1355 },
 				["races"] = HORDE_ONLY,
@@ -2595,7 +2595,7 @@ _.Zones =
 			q(56815, {	-- With A Little Help From My Friends
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
 				["races"] = HORDE_ONLY,
-				["description"] = "Offered when |nFFFFD700Neri Sharpfin|r reaches rank 7.",
+				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 7.",
 				["g"] = {
 					i(169919),	-- Unshackled Commendation Crate
 				},
