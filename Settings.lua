@@ -271,6 +271,27 @@ settings.GetModeString = function(self)
 	end
 	return mode;
 end
+settings.GetShortModeString = function(self)
+	if self:Get("DebugMode") then
+		return "D";
+	else
+		if self:Get("Completionist") then
+			if self:Get("AccountMode") then
+				return "AC";
+			else
+				return "C";
+			end
+		else
+			if self:Get("AccountMode") then
+				return "AU";
+			elseif self:Get("MainOnly") then
+				return "UM";
+			else
+				return "U";
+			end
+		end
+	end
+end
 settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting];
 end

@@ -13726,6 +13726,14 @@ SlashCmdList["AllTheThingsRAN"] = function(cmd)
 	app:GetWindow("Random"):Toggle();
 end
 
+SLASH_AllTheThingsU1 = "/attu";
+SLASH_AllTheThingsU2 = "/attyou";
+SLASH_AllTheThingsU3 = "/attwho";
+SlashCmdList["AllTheThingsU"] = function(cmd)
+	local name,server = UnitName("target");
+	if name then SendResponseMessage("?", server and (name .. "-" .. server) or name); end
+end
+
 SLASH_AllTheThingsWQ1 = "/attwq";
 SlashCmdList["AllTheThingsWQ"] = function(cmd)
 	app:GetWindow("WorldQuests"):Toggle();
@@ -14114,24 +14122,33 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 			print(cmd, a, b, c, d, e, f);
 			if cmd == "?" then		-- Query Request
 				local response;
-				b = tonumber(b);
-				if a == "s" then
-					response = "s\t" .. b .. "\t" .. (GetDataSubMember("CollectedSources", b) or 0);
-				elseif a == "q" then
-					response = "q\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
-				elseif a == "a" then
-					response = "a\t" .. b .. "\t" .. (select(app.AchievementFilter, GetAchievementInfo(b)) and 1 or 0);
+				if a then
+					b = tonumber(b);
+					if a == "s" then
+						response = "s\t" .. b .. "\t" .. (GetDataSubMember("CollectedSources", b) or 0);
+					elseif a == "q" then
+						response = "q\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
+					elseif a == "a" then
+						response = "a\t" .. b .. "\t" .. (select(app.AchievementFilter, GetAchievementInfo(b)) and 1 or 0);
+					end
+				else
+					local data = app:GetWindow("Prime").data;
+					response = "ATT\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. app.Settings:GetShortModeString();
 				end
 				if response then SendResponseMessage("!\t" .. response, sender); end
 			elseif cmd == "!" then	-- Query Response
-				b = tonumber(b);
-				c = tonumber(c);
-				if a == "s" then
-					print(sender, ": ", b, GetCollectionText(c));
-				elseif a == "q" then
-					print(sender, ": ", b, GetCompletionText(c));
-				elseif a == "a" then
-					print(sender, ": ", b, GetCompletionText(c));
+				if a == "ATT" then
+					print(sender .. ": " .. GetProgressColorText(tonumber(b), tonumber(c)) .. " " .. string.sub(d, 1, 12));
+				else
+					b = tonumber(b);
+					c = tonumber(c);
+					if a == "s" then
+						print(sender .. ": ", b, GetCollectionText(c));
+					elseif a == "q" then
+						print(sender .. ": ", b, GetCompletionText(c));
+					elseif a == "a" then
+						print(sender .. ": ", b, GetCompletionText(c));
+					end
 				end
 			end
 		end
