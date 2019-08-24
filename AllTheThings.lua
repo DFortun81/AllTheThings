@@ -2760,6 +2760,9 @@ local function SendGroupMessage(msg)
 		C_ChatInfo.SendAddonMessage("ATT", msg, "PARTY")
 	end
 end
+local function SendResponseMessage(msg, player)
+	C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", player);
+end
 local function SendSocialMessage(msg)
 	SendGroupMessage(msg);
 	if IsInGuild() then
@@ -14105,7 +14108,33 @@ app.events.ADDON_LOADED = function(addonName)
 end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 	if prefix == "ATT" then
-		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
+		print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
+		local cmd, a, b, c, d, e, f = strsplit("\t", text);
+		if cmd then
+			print(cmd, a, b, c, d, e, f);
+			if cmd == "?" then		-- Query Request
+				local response;
+				b = tonumber(b);
+				if a == "s" then
+					response = "s\t" .. b .. "\t" .. (GetDataSubMember("CollectedSources", b) or 0);
+				elseif a == "q" then
+					response = "q\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
+				elseif a == "a" then
+					response = "a\t" .. b .. "\t" .. (select(app.AchievementFilter, GetAchievementInfo(b)) and 1 or 0);
+				end
+				if response then SendResponseMessage("!\t" .. response, sender); end
+			elseif cmd == "!" then	-- Query Response
+				b = tonumber(b);
+				c = tonumber(c);
+				if a == "s" then
+					print(sender, ": ", b, GetCollectionText(c));
+				elseif a == "q" then
+					print(sender, ": ", b, GetCompletionText(c));
+				elseif a == "a" then
+					print(sender, ": ", b, GetCompletionText(c));
+				end
+			end
+		end
 	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
