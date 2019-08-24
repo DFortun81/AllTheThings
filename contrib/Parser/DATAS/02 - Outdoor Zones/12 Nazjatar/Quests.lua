@@ -90,7 +90,7 @@ _.Zones =
 				},
 			}),
 			q(56789, {	-- A Gift of Supplies
-				["description"] = "Offered when |nFFFFD700Bladesman Inowari|r reaches rank 7.",
+				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 7.",
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 154297,	-- Bladesman Inowari
 				["g"] = {
@@ -2595,7 +2595,7 @@ _.Zones =
 			q(56815, {	-- With A Little Help From My Friends
 				["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
 				["races"] = HORDE_ONLY,
-				["description"] = "Offered when |nFFFFD700Neri Sharpfin|r reaches rank 7.",
+				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 7.",
 				["g"] = {
 					i(169919),	-- Unshackled Commendation Crate
 				},
