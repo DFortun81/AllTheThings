@@ -2752,7 +2752,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 end
 local function SendGroupMessage(msg)
-	print("SendGroupMessage", msg);
 	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
 		C_ChatInfo.SendAddonMessage("ATT", msg, "INSTANCE_CHAT")
 	elseif IsInRaid() then
@@ -2762,7 +2761,6 @@ local function SendGroupMessage(msg)
 	end
 end
 local function SendResponseMessage(msg, player)
-	print(msg, player);
 	if UnitInRaid(player) or UnitInParty(player) then
 		SendGroupMessage("to\t" .. player .. "\t" .. msg);
 	else
@@ -14122,10 +14120,10 @@ app.events.ADDON_LOADED = function(addonName)
 end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 	if prefix == "ATT" then
-		print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
+		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 		local cmd, a, b, c, d, e, f = strsplit("\t", text);
 		if cmd then
-			print(cmd, a, b, c, d, e, f);
+			--print(cmd, a, b, c, d, e, f);
 			if cmd == "?" then		-- Query Request
 				local response;
 				if a then
