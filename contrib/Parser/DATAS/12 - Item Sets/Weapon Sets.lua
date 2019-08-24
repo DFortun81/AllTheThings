@@ -148,256 +148,41 @@ _.GearSets =
 					},
 				}),
 				tier(3, {	-- Wrath of the Lich King
-					["g"] = {  -- COMPLETE
-						i(146647, {	-- Arsenal: Savage Gladiator's Weapons [ Horde / Alliance / Tested ]
-							i(42557),	-- Savage Gladiator's Barrier
-							i(42511),	-- Savage Gladiator's Baton of Light
-							i(42356),	-- Savage Gladiator's Battle Staff
-							i(42221),	-- Savage Gladiator's Bonecracker
-							i(42295),	-- Savage Gladiator's Bonegrinder
-							i(42212),	-- Savage Gladiator's Chopper
-							i(42206),	-- Savage Gladiator's Cleaver
-							i(42294),	-- Savage Gladiator's Decapitator
-							i(42382),	-- Savage Gladiator's Energy Staff
-							i(42220),	-- Savage Gladiator's Fleshslicer
-							i(44416),	-- Savage Gladiator's Focus Staff
-							i(42344),	-- Savage Gladiator's Gavel
-							i(42297),	-- Savage Gladiator's Greatsword
-							i(42213),	-- Savage Gladiator's Hacker
-							i(42446),	-- Savage Gladiator's Heavy Crossbow
-							i(42445),	-- Savage Gladiator's Longbow
-							i(42215),	-- Savage Gladiator's Mutilator
-							i(42517),	-- Savage Gladiator's Piercing Touch
-							i(42296),	-- Savage Gladiator's Pike
-							i(42222),	-- Savage Gladiator's Pummeler
-							i(42223),	-- Savage Gladiator's Quickblade
-							i(42568),	-- Savage Gladiator's Redoubt
-							i(42447),	-- Savage Gladiator's Rifle
-							i(42218),	-- Savage Gladiator's Ripper
-							i(42216),	-- Savage Gladiator's Shanker
-							i(42556),	-- Savage Gladiator's Shield Wall
-							i(42217),	-- Savage Gladiator's Shiv
-							i(42219),	-- Savage Gladiator's Slasher
-							i(42224),	-- Savage Gladiator's Slicer
-							i(42343),	-- Savage Gladiator's Spellblade
-							i(42388),	-- Savage Gladiator's Staff
-							i(42448),	-- Savage Gladiator's Touch of Defeat
-							i(44415),	-- Savage Gladiator's War Staff
-						}),
-						i(146646, {	-- Arsenal: Hateful Gladiator's Weapons [ Horde / Alliance / Tested ]
-							i(42563),	-- Hateful Gladiator's Barrier
-							i(42512),	-- Hateful Gladiator's Baton of Light
-							i(42359),	-- Hateful Gladiator's Battle Staff
-							i(42279),	-- Hateful Gladiator's Bonecracker
-							i(42321),	-- Hateful Gladiator's Bonegrinder
-							i(42231),	-- Hateful Gladiator's Chopper
-							i(42207),	-- Hateful Gladiator's Cleaver
-							i(42316),	-- Hateful Gladiator's Decapitator
-							i(42524),	-- Hateful Gladiator's Endgame
-							i(42383),	-- Hateful Gladiator's Energy Staff
-							i(42269),	-- Hateful Gladiator's Fleshslicer
-							i(44418),	-- Hateful Gladiator's Focus Staff
-							i(42351),	-- Hateful Gladiator's Gavel
-							i(42331),	-- Hateful Gladiator's Greatsword
-							i(42536),	-- Hateful Gladiator's Grimoire
-							i(42226),	-- Hateful Gladiator's Hacker
-							i(42494),	-- Hateful Gladiator's Heavy Crossbow
-							i(42489),	-- Hateful Gladiator's Longbow
-							i(42254),	-- Hateful Gladiator's Mutilator
-							i(42518),	-- Hateful Gladiator's Piercing Touch
-							i(42326),	-- Hateful Gladiator's Pike
-							i(42274),	-- Hateful Gladiator's Pummeler
-							i(42289),	-- Hateful Gladiator's Quickblade
-							i(42569),	-- Hateful Gladiator's Redoubt
-							i(42530),	-- Hateful Gladiator's Reprieve
-							i(42484),	-- Hateful Gladiator's Rifle
-							i(42259),	-- Hateful Gladiator's Ripper
-							i(42241),	-- Hateful Gladiator's Shanker
-							i(42558),	-- Hateful Gladiator's Shield Wall
-							i(42247),	-- Hateful Gladiator's Shiv
-							i(42264),	-- Hateful Gladiator's Slasher
-							i(42284),	-- Hateful Gladiator's Slicer
-							i(42345),	-- Hateful Gladiator's Spellblade
-							i(42389),	-- Hateful Gladiator's Staff
-							i(42501),	-- Hateful Gladiator's Touch of Defeat
-							i(44417),	-- Hateful Gladiator's War Staff
-							i(42236),	-- Hateful Gladiator's Waraxe
-						}),
-						i(146645, {	-- Arsenal: Deadly Gladiator's Weapon [ Horde / Alliance / Tested ]
-							i(42564),	-- Deadly Gladiator's Barrier
-							i(42513),	-- Deadly Gladiator's Baton of Light
-							i(42362),	-- Deadly Gladiator's Battle Staff
-							i(42280),	-- Deadly Gladiator's Bonecracker
-							i(42322),	-- Deadly Gladiator's Bonegrinder
-							i(42232),	-- Deadly Gladiator's Chopper
-							i(42208),	-- Deadly Gladiator's Cleaver
-							i(42317),	-- Deadly Gladiator's Decapitator
-							i(42525),	-- Deadly Gladiator's Endgame
-							i(42384),	-- Deadly Gladiator's Energy Staff
-							i(42270),	-- Deadly Gladiator's Fleshslicer
-							i(44420),	-- Deadly Gladiator's Focus Staff
-							i(42352),	-- Deadly Gladiator's Gavel
-							i(42332),	-- Deadly Gladiator's Greatsword
-							i(42537),	-- Deadly Gladiator's Grimoire
-							i(42227),	-- Deadly Gladiator's Hacker
-							i(42495),	-- Deadly Gladiator's Heavy Crossbow
-							i(42490),	-- Deadly Gladiator's Longbow
-							i(42255),	-- Deadly Gladiator's Mutilator
-							i(42519),	-- Deadly Gladiator's Piercing Touch
-							i(42327),	-- Deadly Gladiator's Pike
-							i(42275),	-- Deadly Gladiator's Pummeler
-							i(42290),	-- Deadly Gladiator's Quickblade
-							i(42570),	-- Deadly Gladiator's Redoubt
-							i(42531),	-- Deadly Gladiator's Reprieve
-							i(42485),	-- Deadly Gladiator's Rifle
-							i(42260),	-- Deadly Gladiator's Ripper
-							i(42242),	-- Deadly Gladiator's Shanker
-							i(42559),	-- Deadly Gladiator's Shield Wall
-							i(42248),	-- Deadly Gladiator's Shiv
-							i(42265),	-- Deadly Gladiator's Slasher
-							i(42285),	-- Deadly Gladiator's Slicer
-							i(42346),	-- Deadly Gladiator's Spellblade
-							i(42390),	-- Deadly Gladiator's Staff
-							i(42502),	-- Deadly Gladiator's Touch of Defeat
-							i(44419),	-- Deadly Gladiator's War Staff
-							i(42237),	-- Deadly Gladiator's Waraxe
-						}),
-						i(146644, {	-- Arsenal: Furious Gladiator's Weapons [ Horde / Alliance / Tested ]
-							i(42565),	-- Furious Gladiator's Barrier
-							i(42514),	-- Furious Gladiator's Baton of Light
-							i(42364),	-- Furious Gladiator's Battle Staff
-							i(42281),	-- Furious Gladiator's Bonecracker
-							i(42323),	-- Furious Gladiator's Bonegrinder
-							i(42233),	-- Furious Gladiator's Chopper
-							i(42209),	-- Furious Gladiator's Cleaver
-							i(42318),	-- Furious Gladiator's Decapitator
-							i(42526),	-- Furious Gladiator's Endgame
-							i(42385),	-- Furious Gladiator's Energy Staff
-							i(42271),	-- Furious Gladiator's Fleshslicer
-							i(44422),	-- Furious Gladiator's Focus Staff
-							i(42353),	-- Furious Gladiator's Gavel
-							i(42333),	-- Furious Gladiator's Greatsword
-							i(42538),	-- Furious Gladiator's Grimoire
-							i(42228),	-- Furious Gladiator's Hacker
-							i(42496),	-- Furious Gladiator's Heavy Crossbow
-							i(42491),	-- Furious Gladiator's Longbow
-							i(42256),	-- Furious Gladiator's Mutilator
-							i(42520),	-- Furious Gladiator's Piercing Touch
-							i(42328),	-- Furious Gladiator's Pike
-							i(42276),	-- Furious Gladiator's Pummeler
-							i(42291),	-- Furious Gladiator's Quickblade
-							i(42571),	-- Furious Gladiator's Redoubt
-							i(42532),	-- Furious Gladiator's Reprieve
-							i(42486),	-- Furious Gladiator's Rifle
-							i(42261),	-- Furious Gladiator's Ripper
-							i(42243),	-- Furious Gladiator's Shanker
-							i(42560),	-- Furious Gladiator's Shield Wall
-							i(42249),	-- Furious Gladiator's Shiv
-							i(42266),	-- Furious Gladiator's Slasher
-							i(42286),	-- Furious Gladiator's Slicer
-							i(42347),	-- Furious Gladiator's Spellblade
-							i(42391),	-- Furious Gladiator's Staff
-							i(42503),	-- Furious Gladiator's Touch of Defeat
-							i(44421),	-- Furious Gladiator's War Staff
-							i(42238),	-- Furious Gladiator's Waraxe
-						}),
-						i(146643, {	-- Arsenal: Relentless Gladiator's Weapons [ Horde / Alliance / Tested ]
-							i(42566),	-- Relentless Gladiator's Barrier
-							i(42515),	-- Relentless Gladiator's Baton of Light
-							i(42366),	-- Relentless Gladiator's Battle Staff
-							i(49189),	-- Relentless Gladiator's Blade of Alacrity
-							i(42282),	-- Relentless Gladiator's Bonecracker
-							i(42324),	-- Relentless Gladiator's Bonegrinder
-							i(42234),	-- Relentless Gladiator's Chopper
-							i(48444),	-- Relentless Gladiator's Claw
-							i(42210),	-- Relentless Gladiator's Cleaver
-							i(49187),	-- Relentless Gladiator's Compendium
-							i(42319),	-- Relentless Gladiator's Decapitator
-							i(42527),	-- Relentless Gladiator's Endgame
-							i(42386),	-- Relentless Gladiator's Energy Staff
-							i(42272),	-- Relentless Gladiator's Fleshslicer
-							i(44424),	-- Relentless Gladiator's Focus Staff
-							i(42354),	-- Relentless Gladiator's Gavel
-							i(42334),	-- Relentless Gladiator's Greatsword
-							i(42539),	-- Relentless Gladiator's Grimoire
-							i(42229),	-- Relentless Gladiator's Hacker
-							i(42498),	-- Relentless Gladiator's Heavy Crossbow
-							i(42492),	-- Relentless Gladiator's Longbow
-							i(42257),	-- Relentless Gladiator's Mutilator
-							i(42521),	-- Relentless Gladiator's Piercing Touch
-							i(42329),	-- Relentless Gladiator's Pike
-							i(42277),	-- Relentless Gladiator's Pummeler
-							i(42292),	-- Relentless Gladiator's Quickblade
-							i(42572),	-- Relentless Gladiator's Redoubt
-							i(42533),	-- Relentless Gladiator's Reprieve
-							i(42487),	-- Relentless Gladiator's Rifle
-							i(42262),	-- Relentless Gladiator's Ripper
-							i(42244),	-- Relentless Gladiator's Shanker
-							i(42561),	-- Relentless Gladiator's Shield Wall
-							i(42250),	-- Relentless Gladiator's Shiv
-							i(42267),	-- Relentless Gladiator's Slasher
-							i(42287),	-- Relentless Gladiator's Slicer
-							i(42348),	-- Relentless Gladiator's Spellblade
-							i(42392),	-- Relentless Gladiator's Staff
-							i(42504),	-- Relentless Gladiator's Touch of Defeat
-							i(49185),	-- Relentless Gladiator's Wand of Alacrity
-							i(44423),	-- Relentless Gladiator's War Staff
-						}),
-						i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons [ Horde / Alliance / Tested ]
-							i(51452),	-- Wrathful Gladiator's Barrier	
-							i(51532),	-- Wrathful Gladiator's Baton of Light	
-							i(51404),	-- Wrathful Gladiator's Battle Staff	
-							i(51406),	-- Wrathful Gladiator's Blade of Alacrity	
-							i(51445),	-- Wrathful Gladiator's Bonecracker	
-							i(51390),	-- Wrathful Gladiator's Bonegrinder	
-							i(51525),	-- Wrathful Gladiator's Chopper	
-							i(51515),	-- Wrathful Gladiator's Cleaver	
-							i(51407),	-- Wrathful Gladiator's Compendium	
-							i(51388),	-- Wrathful Gladiator's Decapitator	
-							i(51396),	-- Wrathful Gladiator's Endgame	
-							i(51456),	-- Wrathful Gladiator's Energy Staff	
-							i(51443),	-- Wrathful Gladiator's Fleshslicer	
-							i(51402),	-- Wrathful Gladiator's Focus Staff	
-							i(51453),	-- Wrathful Gladiator's Gavel	
-							i(51392),	-- Wrathful Gladiator's Greatsword	
-							i(51408),	-- Wrathful Gladiator's Grimoire	
-							i(51439),	-- Wrathful Gladiator's Hacker	
-							i(51411),	-- Wrathful Gladiator's Heavy Crossbow	
-							i(51394),	-- Wrathful Gladiator's Longbow	
-							i(51527),	-- Wrathful Gladiator's Mutilator	
-							i(51531),	-- Wrathful Gladiator's Piercing Touch	
-							i(51480),	-- Wrathful Gladiator's Pike	
-							i(51519),	-- Wrathful Gladiator's Pummeler	
-							i(51447),	-- Wrathful Gladiator's Quickblade	
-							i(51455),	-- Wrathful Gladiator's Redoubt	
-							i(51409),	-- Wrathful Gladiator's Reprieve	
-							i(51449),	-- Wrathful Gladiator's Rifle	
-							i(51523),	-- Wrathful Gladiator's Ripper	
-							i(51517),	-- Wrathful Gladiator's Shanker	
-							i(51533),	-- Wrathful Gladiator's Shield Wall	
-							i(51441),	-- Wrathful Gladiator's Shiv	
-							i(51530),	-- Wrathful Gladiator's Slasher	
-							i(51521),	-- Wrathful Gladiator's Slicer	
-							i(51397),	-- Wrathful Gladiator's Spellblade	
-							i(51431),	-- Wrathful Gladiator's Staff	
-							i(51410),	-- Wrathful Gladiator's Touch of Defeat	
-							i(51451),	-- Wrathful Gladiator's Wand of Alacrity	
-							i(51400),	-- Wrathful Gladiator's War Staff	
-						}),
-					},
+					i(146647, {	-- Arsenal: Savage Gladiator's Weapons
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -668, -660 }, },
+					}),
+					i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -668, -9983 }, },
+					}),
+					i(146645, {	-- Arsenal: Deadly Gladiator's Weapon
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -668, -661 }, },
+					}),
+					i(146644, {	-- Arsenal: Furious Gladiator's Weapons
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -669, -661 }, },
+					}),
+					i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -670, -661 }, },
+					}),
+					i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -671, -661 }, },
+					}),
 				}),
 				tier(4, {	-- Cataclysm
-					["g"] = { -- COMPLETE
-						i(146641, {	-- Arsenal: Vicious Gladiator's Weapons
-							["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -672, -661 }, },
-						}),
-						i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
-							["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -673, -661 }, },
-						}),
-						i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
-							["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -674, -661 }, },
-						}),
-					},
+					i(146641, {	-- Arsenal: Vicious Gladiator's Weapons
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -672, -661 }, },
+					}),
+					i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -673, -661 }, },
+					}),
+					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -674, -661 }, },
+					}),
 				}),
 				tier(5, {	-- Mists of Pandaria
 					["g"] = { -- COMPLETE

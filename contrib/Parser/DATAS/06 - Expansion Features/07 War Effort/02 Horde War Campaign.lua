@@ -291,6 +291,46 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["maps"] = { 895 },	-- Tiragarde Sound
 					}),
+					-- Unlocking the Worldquests
+					q(53064, {	-- A Mission of Unity
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["sourceQuests"] = {
+							51985,	-- Return to Zuldazar (Drustvar Foothold)
+							51986,	-- Return to Zuldazar (Stormsong Valley Foothold)
+							51984,	-- Return to Zuldazar (Tiragarde Foothold)
+						},
+						["isBreadcrumb"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(51916, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 1163 },
+						["sourceQuests"] = {
+							51985,	-- Return to Zuldazar (Drustvar Foothold)
+							51986,	-- Return to Zuldazar (Stormsong Valley Foothold)
+							51984,	-- Return to Zuldazar (Tiragarde Foothold)
+							53064,	-- A Mission of Unity
+						},
+						["description"] = "This version of the quest is offered to the first character on your account to reach Friendly with Zandalari Empire, Talanji's Expedition, and Voldunai. Your alts will get a different quest with the same name when they reach level 120, but all characters get credit for both quests.",
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["g"] = {
+							spell(273743),	-- World Quests (BFA)
+							i(141605),	-- Flight Master Whistle
+						},
+					}),
+					q(52451, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 1163 },
+						["description"] = "This version of the quest is offered to 120 alts that share an account with a character that already completed the original 'Uniting Zandalar'.	All characters get credit for both quests.",
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["g"] = {
+							spell(273743),	-- World Quests (BFA)
+							i(141605),	-- Flight Master Whistle
+						},
+					}),
 					-- First Assault
 					q(51589, {	-- Breaking Kul Tiran Will
 						["qg"] = 135691,	-- Nathanos Blightcaller
@@ -1483,7 +1523,7 @@ _.ExpansionFeatures =
 							1479,	-- Baine Rescue (Scenario)
 						},
 					}),
-				
+					--	unsorted below this point
 				
 					-- Escape of Saurfang
 					q(54097, {	-- The Dark Lady Calls
@@ -1594,30 +1634,6 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 51 },	-- Swamp of Sorrows
-					}),
-				
-				--	unsorted below this point
-					q(51916, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
-						["qg"] = 135691,	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, 1163 },
-						["description"] = "This version of the quest is offered to the first character on your account to reach Friendly with Zandalari Empire, Talanji's Expedition, and Voldunai. Your alts will get a different quest with the same name when they reach level 120, but all characters get credit for both quests.",
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							spell(273743),	-- World Quests (BFA)
-							i(141605),	-- Flight Master Whistle
-						},
-					}),
-					q(52451, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
-						["qg"] = 135691,	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, 1163 },
-						["description"] = "This version of the quest is offered to 120 alts that share an account with a character that already completed the original 'Uniting Zandalar'.	All characters get credit for both quests.",
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							spell(273743),	-- World Quests (BFA)
-							i(141605),	-- Flight Master Whistle
-						},
 					}),
 				}),
 			},

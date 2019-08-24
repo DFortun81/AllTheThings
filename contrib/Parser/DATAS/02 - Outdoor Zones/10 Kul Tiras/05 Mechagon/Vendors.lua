@@ -46,8 +46,8 @@ _.Zones =
 							i(161382),	-- Wind-Up Utility Pylon
 						}),
 						i(167062, {	-- Armored Vaultbot Key
-							["description"] = "To use this key the Armored Vaultbot must not be in engaged in combat.",
-							["groups"] = {
+							["description"] = "To use this key the Armored Vaultbot must not be engaged in combat.",
+							["g"] = {
 								i(170072),	-- Armored Vaultbot
 							},
 						}),

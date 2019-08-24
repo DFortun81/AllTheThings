@@ -3701,5 +3701,4 @@ m(890),		-- Arcatraz - scenario map
 m(1338),	-- Darkshore (Tyrande's Ascension scenario)
 m(933),		-- Forge of Souls (Lightbound Draenei scenario map)
 m(1170),	-- Gorgrond (Mag'har scenario)
-m(1351),	-- Horde war campaign scenario to free Lady Ashvane
 };
