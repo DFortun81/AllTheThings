@@ -2763,7 +2763,11 @@ local function SendGroupMessage(msg)
 end
 local function SendResponseMessage(msg, player)
 	print(msg, player);
-	C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", player);
+	if UnitInRaid(player) or UnitInParty(player) then
+		SendGroupMessage("to\t" .. player .. "\t" .. msg);
+	else
+		C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", player);
+	end
 end
 local function SendSocialMessage(msg)
 	SendGroupMessage(msg);
@@ -14151,6 +14155,12 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 					elseif a == "a" then
 						print(sender .. ": ", b, GetCompletionText(c));
 					end
+				end
+			elseif cmd == "to" then	-- To Command
+				local myName = UnitName("player");
+				local name,server = strsplit("-", a);
+				if myName == name and (not server or GetRealmName() == server) then
+					app.events.CHAT_MSG_ADDON(prefix, strsub(text, 5 + strlen(a)), "WHISPER", sender);
 				end
 			end
 		end
