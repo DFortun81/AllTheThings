@@ -2751,6 +2751,23 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		return group;
 	end
 end
+local function SendGroupMessage(msg)
+	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
+		C_ChatInfo.SendAddonMessage("ATT", msg, "INSTANCE_CHAT")
+	elseif IsInRaid() then
+		C_ChatInfo.SendAddonMessage("ATT", msg, "RAID")
+	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
+		C_ChatInfo.SendAddonMessage("ATT", msg, "PARTY")
+	end
+end
+local function SendSocialMessage(msg)
+	SendGroupMessage(msg);
+	if IsInGuild() then
+		C_ChatInfo.SendAddonMessage("ATT", msg, "GUILD");
+	else
+		app.events.CHAT_MSG_ADDON("ATT", msg, "WHISPER", "player");
+	end
+end
 
 -- Lua Constructor Lib
 local fieldCache = {};
@@ -9717,7 +9734,16 @@ function app:RefreshData(lazy, got, manual)
 		else
 			app:UpdateWindows(nil, got);
 		end
+		
+		-- Send a message to your party members.
+		local data = app:GetWindow("Prime").data;
+		local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
+		if app.lastMsg ~= msg then
+			SendSocialMessage(msg);
+			app.lastMsg = msg;
+		end
 		wipe(searchCache);
+		collectgarbage();
 	end);
 end
 function app:GetWindow(suffix, parent, onUpdate)
@@ -13705,6 +13731,7 @@ end
 -- Register Events required at the start
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
+app:RegisterEvent("CHAT_MSG_ADDON");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("TOYS_UPDATED");
@@ -14008,6 +14035,9 @@ app.events.VARIABLES_LOADED = function()
 	app.CurrentMapID = app.GetCurrentMapID();
 	app.Settings:Initialize();
 	
+	-- Attempt to register for the addon message prefix.
+	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
+	
 	local reagentCache = app.GetDataMember("Reagents");
 	if reagentCache then
 		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
@@ -14071,6 +14101,11 @@ app.events.ADDON_LOADED = function(addonName)
 		if app.Settings:GetTooltipSetting("Auto:AH") then
 			app:OpenAuctionModule();
 		end
+	end
+end
+app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
+	if prefix == "ATT" then
+		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
@@ -14187,11 +14222,13 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			app:PlayFanfare();
 			wipe(searchCache);
+			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end
 	end
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
-	if sourceID and GetDataSubMember("CollectedSources", sourceID) then
+	local oldState = sourceID and GetDataSubMember("CollectedSources", sourceID);
+	if oldState then
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 		SetDataSubMember("CollectedSources", sourceID, nil);
 		
@@ -14230,5 +14267,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		app:RefreshData(false, true);
 		app:PlayRemoveSound();
 		wipe(searchCache);
+		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end
 end
