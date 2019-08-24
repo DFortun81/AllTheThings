@@ -14140,14 +14140,14 @@ end
 app.events.PET_BATTLE_OPENING_START = function(...)
 	local mini = app:GetWindow("CurrentInstance");
 	local main = app:GetWindow("Prime");
-		if mini:IsVisible() then
-			mini:Toggle();
-			app.miniVis = true;
-		end
-		if main:IsVisible() then
-			main:Toggle();
-			app.mainVis = true;
-		end
+	if mini:IsVisible() then
+		mini:Toggle();
+		app.miniVis = true;
+	end
+	if main:IsVisible() then
+		main:Toggle();
+		app.mainVis = true;
+	end
 end
 app.events.PET_BATTLE_CLOSE = function(...)
 	if app.miniVis then 
