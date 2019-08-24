@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
-local app = AllTheThings;	-- Create a local (non global) reference
+local app = select(2, ...);
 local L = app.L;
 
 -- Performance Cache 
@@ -693,7 +693,7 @@ function PlayAudio(targetAudio)
 end
 
 -- Color Lib
-local CS = CreateFrame("ColorSelect", nil, app);
+local CS = CreateFrame("ColorSelect", nil, app._);
 local function Colorize(str, color)
 	return "|c" .. color .. str .. "|r";
 end
@@ -5763,20 +5763,6 @@ end
 
 -- Music Roll Lib
 (function()
-local completed = false;
-local frame = CreateFrame("FRAME", nil, app);
-frame:SetSize(1, 1);
-frame:Hide();
-frame.events = {};
-frame:SetScript("OnEvent", function(self, e, ...)
-	if IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
-		completed = true;
-		frame:UnregisterAllEvents();
-	end
-end);
-frame:RegisterEvent("VARIABLES_LOADED");
-frame:RegisterEvent("QUEST_TURNED_IN");
-frame:RegisterEvent("QUEST_LOG_UPDATE");
 app.BaseMusicRoll = {
 	__index = function(t, key)
 		if key == "key" then
@@ -5807,7 +5793,7 @@ app.BaseMusicRoll = {
 			end
 		elseif key == "description" then
 			local description = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
-			if not completed then
+			if not IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
 				description = description .. "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.";
 			end
 			return description;
@@ -9218,8 +9204,8 @@ function app:GetDataCache()
 			local cache = self.g;
 			table.wipe(cache);
 			-- Uncomment to harvest flight path data.
-			-- SetDataMember("FlightPathData", AllTheThings.FlightPathDB);
-			for i,fp in pairs(AllTheThings.FlightPathDB) do
+			-- SetDataMember("FlightPathData", app.FlightPathDB);
+			for i,fp in pairs(app.FlightPathDB) do
 				local id = tonumber(i);
 				local fp = self.fps[id];
 				if not fp then
@@ -11884,7 +11870,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			-- Cache Learned Spells
 			local skillCache = fieldCache["spellID"];
 			if skillCache then
-				local tradeSkillID = AllTheThings.GetTradeSkillLine();
+				local tradeSkillID = app.GetTradeSkillLine();
 				if tradeSkillID == self.lastTradeSkillID then
 					return false;
 				end
@@ -12051,7 +12037,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					end
 					
 					-- Check to see if ATT has information about this profession.
-					local tradeSkillID = AllTheThings.GetTradeSkillLine();
+					local tradeSkillID = app.GetTradeSkillLine();
 					if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
 						self:SetVisible(false);
 						return false;

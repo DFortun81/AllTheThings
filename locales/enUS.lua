@@ -9,7 +9,8 @@
 --------------------------------------------------------------------------------
 --				This script is called directly after the Core.lua file. 	  --
 --------------------------------------------------------------------------------
-AllTheThings.L = {
+local name, app = ...;
+app.L = {
 	-- General Text
 	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
 	["AUCTION_TAB"] = "|cffb4b4ffATT|r";

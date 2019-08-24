@@ -4,19 +4,42 @@
 --            Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
-local app = CreateFrame("FRAME", "AllTheThings", UIParent);
-app:SetScript("OnEvent", function(self, e, ...) (self.events[e] or print)(...); end);
-app:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
+local name, app = ...;
+function app:GetName() return name; end
+_G["AllTheThings"] = app;
+
+-- Create an Event Processor.
+local events = {};
+local _ = CreateFrame("FRAME", nil, UIParent);
+_:SetScript("OnEvent", function(self, e, ...) (rawget(events, e) or print)(...); end);
+_:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
+_:SetSize(1, 1);
+_:Show();
+app._ = _;
+app.events = events;
 app.refreshDataForce = true;
-app.events = {};
-app:SetSize(1, 1);
-app:Show();
+app.RegisterEvent = function(self, ...)
+	_:RegisterEvent(...);
+end
+app.UnregisterEvent = function(self, ...)
+	_:UnregisterEvent(...);
+end
+app.SetScript = function(self, ...)
+	local scriptName, method = ...;
+	if method then
+		_:SetScript(scriptName, function(...)
+			method(app, ...);
+		end);
+	else
+		_:SetScript(scriptName, nil);
+	end
+end
 
 (function()
-local button = CreateFrame("BUTTON", app:GetName() .. "BUTTON", app);
-local checkbutton = CreateFrame("CHECKBUTTON", app:GetName() .. "CHECKBUTTON", app);
-local texture = app:CreateTexture(nil, "ARTWORK");
-local frameClass = getmetatable(app).__index;
+local button = CreateFrame("BUTTON", nil, _);
+local checkbutton = CreateFrame("CHECKBUTTON", nil, _);
+local texture = _:CreateTexture(nil, "ARTWORK");
+local frameClass = getmetatable(_).__index;
 local buttonClass = getmetatable(button).__index;
 local checkbuttonClass = getmetatable(checkbutton).__index;
 local textureClass = getmetatable(texture).__index;

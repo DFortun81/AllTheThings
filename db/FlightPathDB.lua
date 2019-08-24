@@ -1,4 +1,4 @@
-AllTheThings.FlightPathDB = {
+select(2, ...).FlightPathDB = {
 	nil, -- [1]
 	{
 		name="Stormwind, Elwynn",

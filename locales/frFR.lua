@@ -1,6 +1,8 @@
 -- Localization for French (France) Clients.
 if GetLocale() ~= "frFR" then return; end
-local L = AllTheThings.L;
+local app = select(2, ...);
+local L = app.L;
+
 -- TODO
 L.SAVED_TO_DJ_INSTANCES["Temple noir"] = "Le Temple noir";
 L.SAVED_TO_DJ_INSTANCES["Le Puits de soleil"] = "Plateau du Puits de soleil";

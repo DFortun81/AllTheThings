@@ -1,6 +1,7 @@
 -- Localization for Korean (Korea) Clients.
 if GetLocale() ~= "koKR" then return; end
-local L = AllTheThings.L;
+local app = select(2, ...);
+local L = app.L;
 
 -- TODO
 

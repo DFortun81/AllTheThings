@@ -1,6 +1,7 @@
 -- Localization for English (UK) Clients.
 if GetLocale() ~= "enGB" then return; end
-local L = AllTheThings.L;
+local app = select(2, ...);
+local L = app.L;
 
 -- TODO
 

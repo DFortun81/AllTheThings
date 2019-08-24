@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
-local app = AllTheThings;
+local app = select(2, ...);
 local L = app.L;
 
 -- Binding Localizations
