@@ -7577,13 +7577,7 @@ end
 
 local function MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
-		-- Right Button opens the Options menu.
-		if InterfaceOptionsFrame:IsVisible() then
-			InterfaceOptionsFrame_Show();
-		else
-			InterfaceOptionsFrame_OpenToCategory(app:GetName());
-			InterfaceOptionsFrame_OpenToCategory(app:GetName());
-		end
+		app.Settings:Open();
 	else
 		-- Left Button
 		if IsShiftKeyDown() then
@@ -8345,13 +8339,7 @@ local function RowOnClick(self, button)
 				if self.index > 0 then
 					CreateMiniListForGroup(reference);
 				else
-					-- Open the Settings Menu
-					if InterfaceOptionsFrame:IsVisible() then
-						InterfaceOptionsFrame_Show();
-					else
-						InterfaceOptionsFrame_OpenToCategory(app:GetName());
-						InterfaceOptionsFrame_OpenToCategory(app:GetName());
-					end
+					app.Settings:Open();
 				end
 			end
 		else
@@ -13207,13 +13195,7 @@ app.OpenAuctionModule = function(self)
 		f:SetHeight(22);
 		f:RegisterForClicks("AnyUp");
 		f:SetScript("OnClick", function() 
-			-- Open the Settings Menu
-			if InterfaceOptionsFrame:IsVisible() then
-				InterfaceOptionsFrame_Show();
-			else
-				InterfaceOptionsFrame_OpenToCategory(app:GetName());
-				InterfaceOptionsFrame_OpenToCategory(app:GetName());
-			end
+			app.Settings:Open();
 		end);
 		f:SetATTTooltip("Click this button to toggle the settings menu.\n\nThe results displayed in this window will be filtered by your settings.");
 		frame.settingsButton = f;

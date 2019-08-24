@@ -42,6 +42,15 @@ settings:SetBackdrop({
 });
 settings:SetBackdropColor(0, 0, 0, 1);
 InterfaceOptions_AddCategory(settings);
+settings.Open = function(self)
+	-- Open the Options menu.
+	if InterfaceOptionsFrame:IsVisible() then
+		InterfaceOptionsFrame_Show();
+	else
+		InterfaceOptionsFrame_OpenToCategory(self.name);
+		InterfaceOptionsFrame_OpenToCategory(self.name);
+	end
+end
 
 -- Music / Sound Management (You can add your own sounds for this if you want.)
 settings.AUDIO_COMPLETE_TABLE = {
