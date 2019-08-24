@@ -2752,6 +2752,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 end
 local function SendGroupMessage(msg)
+	print("SendGroupMessage", msg);
 	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
 		C_ChatInfo.SendAddonMessage("ATT", msg, "INSTANCE_CHAT")
 	elseif IsInRaid() then
@@ -2761,6 +2762,7 @@ local function SendGroupMessage(msg)
 	end
 end
 local function SendResponseMessage(msg, player)
+	print(msg, player);
 	C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", player);
 end
 local function SendSocialMessage(msg)
