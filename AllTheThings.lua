@@ -10665,7 +10665,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				end
 				print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
 				print("Path: ", mapPath);
-				print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("AllTheThings", "Version"));
+				print("Please report this to the ATT Discord! Thanks! ", app.Version);
 			end
 		end
 		local function OpenMiniList(id, show)
@@ -13747,6 +13747,7 @@ app.events.ARTIFACT_UPDATE = function(...)
 	end
 end
 app.events.VARIABLES_LOADED = function()
+	app.Version = GetAddOnMetadata("AllTheThings", "Version");
 	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
 	if not AllTheThingsAD then
 		AllTheThingsAD = { };
@@ -14031,7 +14032,6 @@ app.events.VARIABLES_LOADED = function()
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
 		
 		-- Mark all previously completed quests.
-		local version = GetAddOnMetadata("AllTheThings", "Version");
 		GetQuestsCompleted(CompletedQuests);
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
@@ -14044,8 +14044,8 @@ app.events.VARIABLES_LOADED = function()
 		if not app.autoRefreshedCollections then
 			app.autoRefreshedCollections = true;
 			local lastTime = GetDataMember("RefreshedCollectionsAlready");
-			if not lastTime or (lastTime ~= version) then
-				SetDataMember("RefreshedCollectionsAlready", version);
+			if not lastTime or (lastTime ~= app.Version) then
+				SetDataMember("RefreshedCollectionsAlready", app.Version);
 				wipe(GetDataMember("CollectedSources", {}));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				RefreshCollections();
 				return nil;
