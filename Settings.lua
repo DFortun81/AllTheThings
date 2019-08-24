@@ -191,7 +191,7 @@ settings.Initialize = function(self)
 	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {}; end
 	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {}; end
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
-	FilterSettingsBase.__index = app.Presets[app.Class];
+	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
 	
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
