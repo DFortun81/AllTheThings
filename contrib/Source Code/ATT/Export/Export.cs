@@ -82,7 +82,7 @@ namespace ATT
                 .AppendLine("--   WARNING: This file is dynamically generated   --")
                 .Append("-- UPDATED: ").Append($"{utcNow.ToLongDateString()} @ {utcNow.ToShortTimeString()}".PadRight(38, ' ')).AppendLine(" --")
                 .AppendLine("-----------------------------------------------------")
-                .AppendLine("local _ = AllTheThings; local rawset = rawset;")
+                .AppendLine("local _ = _G[...]; local rawset = rawset;")
                 .AppendLine("local g = function(t,g) rawset(t,'g',g); return t; end"));
         }
 

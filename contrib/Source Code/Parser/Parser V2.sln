@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Retail to Classic Converter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATT", "..\ATT\ATT.csproj", "{98091A91-EC2A-4B0F-9400-89FC8CBCAC8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carbonite Quest Parser", "..\Carbonite Quest Parser\Carbonite Quest Parser.csproj", "{151A5FA7-5F71-478B-BA67-FF047B190418}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,14 +41,6 @@ Global
 		{98091A91-EC2A-4B0F-9400-89FC8CBCAC8B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{98091A91-EC2A-4B0F-9400-89FC8CBCAC8B}.Release|x86.ActiveCfg = Release|Any CPU
 		{98091A91-EC2A-4B0F-9400-89FC8CBCAC8B}.Release|x86.Build.0 = Release|Any CPU
-		{151A5FA7-5F71-478B-BA67-FF047B190418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{151A5FA7-5F71-478B-BA67-FF047B190418}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{151A5FA7-5F71-478B-BA67-FF047B190418}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{151A5FA7-5F71-478B-BA67-FF047B190418}.Debug|x86.Build.0 = Debug|Any CPU
-		{151A5FA7-5F71-478B-BA67-FF047B190418}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{151A5FA7-5F71-478B-BA67-FF047B190418}.Release|Any CPU.Build.0 = Release|Any CPU
-		{151A5FA7-5F71-478B-BA67-FF047B190418}.Release|x86.ActiveCfg = Release|Any CPU
-		{151A5FA7-5F71-478B-BA67-FF047B190418}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
