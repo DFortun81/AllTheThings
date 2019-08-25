@@ -25,7 +25,7 @@ _.Zones =
 						{ 41.2, 65.4, 108 },
 					},
 					["g"] = {
-						ach(1312, crit(2)),	-- Bloody Rare
+						ach(1312, crit(6)),	-- Bloody Rare
 						i(31238),	-- Dragonbone Ring
 					},
 				}),
