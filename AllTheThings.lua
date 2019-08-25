@@ -2760,6 +2760,13 @@ local function SendGroupMessage(msg)
 		C_ChatInfo.SendAddonMessage("ATT", msg, "PARTY")
 	end
 end
+local function SendGuildMessage(msg)
+	if IsInGuild() then
+		C_ChatInfo.SendAddonMessage("ATTC", msg, "GUILD");
+	else
+		app.events.CHAT_MSG_ADDON("ATTC", msg, "WHISPER", "player");
+	end
+end
 local function SendResponseMessage(msg, player)
 	if UnitInRaid(player) or UnitInParty(player) then
 		SendGroupMessage("to\t" .. player .. "\t" .. msg);
@@ -2769,11 +2776,7 @@ local function SendResponseMessage(msg, player)
 end
 local function SendSocialMessage(msg)
 	SendGroupMessage(msg);
-	if IsInGuild() then
-		C_ChatInfo.SendAddonMessage("ATT", msg, "GUILD");
-	else
-		app.events.CHAT_MSG_ADDON("ATT", msg, "WHISPER", "player");
-	end
+	SendGuildMessage(msg);
 end
 
 -- Lua Constructor Lib
@@ -14121,19 +14124,32 @@ end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 	if prefix == "ATT" then
 		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
-		local cmd, a, b, c, d, e, f = strsplit("\t", text);
+		local args = { strsplit("\t", text) };
+		local cmd = args[1];
 		if cmd then
-			--print(cmd, a, b, c, d, e, f);
+			local a = args[2];
 			if cmd == "?" then		-- Query Request
 				local response;
 				if a then
 					b = tonumber(b);
 					if a == "s" then
-						response = "s\t" .. b .. "\t" .. (GetDataSubMember("CollectedSources", b) or 0);
+						response = "s";
+						for i=3,#args,1 do
+							local b = tonumber(args[i]);
+							response = response .. "\t" .. b .. "\t" .. (GetDataSubMember("CollectedSources", b) or 0);
+						end
 					elseif a == "q" then
-						response = "q\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
+						response = "q";
+						for i=3,#args,1 do
+							local b = tonumber(args[i]);
+							response = response .. "\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
+						end
 					elseif a == "a" then
-						response = "a\t" .. b .. "\t" .. (select(app.AchievementFilter, GetAchievementInfo(b)) and 1 or 0);
+						response = "a";
+						for i=3,#args,1 do
+							local b = tonumber(args[i]);
+							response = response .. "\t" .. b .. "\t" .. (select(app.AchievementFilter, GetAchievementInfo(b)) and 1 or 0);
+						end
 					end
 				else
 					local data = app:GetWindow("Prime").data;
@@ -14142,17 +14158,32 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 				if response then SendResponseMessage("!\t" .. response, sender); end
 			elseif cmd == "!" then	-- Query Response
 				if a == "ATT" then
-					print(sender .. ": " .. GetProgressColorText(tonumber(b), tonumber(c)) .. " " .. string.sub(d, 1, 12));
+					print(sender .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
 				else
-					b = tonumber(b);
-					c = tonumber(c);
+					local response;
 					if a == "s" then
-						print(sender .. ": ", b, GetCollectionText(c));
+						response = " ";
+						for i=3,#args,2 do
+							local b = tonumber(args[i]);
+							local c = tonumber(args[i + 1]);
+							response = response .. b .. ": " .. GetCollectionIcon(c) .. " - ";
+						end
 					elseif a == "q" then
-						print(sender .. ": ", b, GetCompletionText(c));
+						response = " ";
+						for i=3,#args,2 do
+							local b = tonumber(args[i]);
+							local c = tonumber(args[i + 1]);
+							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
+						end
 					elseif a == "a" then
-						print(sender .. ": ", b, GetCompletionText(c));
+						response = " ";
+						for i=3,#args,2 do
+							local b = tonumber(args[i]);
+							local c = tonumber(args[i + 1]);
+							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
+						end
 					end
+					if response then print(response .. sender); end
 				end
 			elseif cmd == "to" then	-- To Command
 				local myName = UnitName("player");
