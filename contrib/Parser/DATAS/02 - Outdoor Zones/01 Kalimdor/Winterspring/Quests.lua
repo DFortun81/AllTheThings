@@ -644,6 +644,7 @@ _.Zones =
 					["questID"] = 28847,
 					["qg"] = 50366,	-- Nymn
 					["coord"] = { 59.6, 50.4, 83 },
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						28537,	-- In Pursuit of Shades
 						28722,	-- Yetiphobia
