@@ -687,6 +687,9 @@ _.Instances = { tier(1, {	-- Classic
 			cr(11502, e(1528, {	-- Ragnaros
 				ach(686),	-- Molten Core
 				i(138018),	-- Clothes Chest Pattern: Molten Core
+				i(19017, {	-- Essence of the Firelord
+					["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
+				}),
 				{	-- Eye of Sulfuras
 					["itemID"] = 17204,	-- Eye of Sulfuras
 					["classes"] = {
@@ -697,6 +700,9 @@ _.Instances = { tier(1, {	-- Classic
 						1,	-- Warrior
 					},
 					["f"] = 24,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
+					["cost"] = {
+						{ "i", 17193, 1 },	-- Sulfuron Hammer
+					},
 					["g"] = {
 						{	-- Sulfuras, Hand of Ragnaros
 							["itemID"] = 17182,	-- Sulfuras, Hand of Ragnaros
