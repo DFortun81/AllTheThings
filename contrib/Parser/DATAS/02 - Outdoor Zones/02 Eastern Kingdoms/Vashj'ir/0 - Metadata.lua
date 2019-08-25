@@ -14,10 +14,18 @@ _.Zones =
 					ach(4869, {	-- Sinking into Vashj'ir (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(1),	-- Defense of The Briny Cutter
-							crit(2),	-- Smuggler's Scar
-							crit(3),	-- A Budding Treasure Hunter
-							crit(4),	-- The Clutch
+							crit(1, {	-- Defense of The Briny Cutter
+								["sourceQuest"] = 25558,	-- All or Nothing
+							}),
+							crit(2, {	-- Smuggler's Scar
+								["sourceQuest"] = 25638,	-- A Desperate Plea
+							}),
+							crit(3, {	-- A Budding Treasure Hunter
+								["sourceQuest"] = 25743,	-- Decisions, Decisions
+							}),
+							crit(4, {	-- The Clutch
+								["sourceQuest"] = 27708,	-- The Warden's Time
+							}),
 							crit(5),	-- Silver Tide Hollow
 							crit(6),	-- Nespirah
 							crit(7),	-- Visions of the Past
@@ -29,10 +37,18 @@ _.Zones =
 					ach(4982, {	-- Sinking into Vashj'ir (Horde)
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(1),	-- Defense of The Immortal Coil
-							crit(2),	-- Smuggler's Scar
-							crit(3),	-- A Budding Treasure Hunter
-							crit(4),	-- The Clutch
+							crit(1, {	-- Defense of The Immortal Coil
+								["sourceQuest"] = 25949,	-- Blood and Thunder!
+							}),
+							crit(2, {	-- Smuggler's Scar
+								["sourceQuest"] = 25638,	-- A Desperate Plea
+							}),
+							crit(3, {	-- A Budding Treasure Hunter
+								["sourceQuest"] = 25743,	-- Decisions, Decisions
+							}),
+							crit(4, {	-- The Clutch
+								["sourceQuest"] = 27708,	-- The Warden's Time
+							}),
 							crit(5),	-- Silver Tide Hollow
 							crit(6),	-- Nespirah
 							crit(7),	-- Visions of the Past
