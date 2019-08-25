@@ -13,117 +13,82 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["coord"] = { 54.18, 83.25, 35 },	-- Molten Core, Blackrock Mountain [Blackrock Depths]
 		["groups"] = {
-			n(-1, {	-- Common Boss Drop
-				i(18260, {	-- Formula: Enchant Weapon - Healing Power
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
+			n(-17, {	-- Quests
+				{
+					["questID"] = 7848,	-- Attunement to the Core
+					["altQuests"] = {
+						7487,	-- Attunement to the Core [Original??]
 					},
-				}),
-				i(18259, {	-- Formula: Enchant Weapon - Spellpower
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
+					["qg"] = 14387,	-- Lothos Riftwaker
+					["coord"] = { 54.2, 83.3, 35 },	-- Blackrock Mountain
+					["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
+					["lvl"] = 55,
+					["maps"] = {
+						242, 243,	-- Blackrock Depths
+						35,	-- Blackrock Mountain
 					},
-				}),
-				i(18252, {	-- Pattern: Core Armor Kit
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
+				},
+				{
+					["questID"] = 7785,	-- Examine the Vessel
+					["qg"] = 14347,	-- Highlord Demitrian
+					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
+					["maps"] = { 81 },	-- Silithus
+					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
+					["lvl"] = 60,
+					["cost"] = {
+						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
+						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 					},
-				}),
-				i(21371, {	-- Pattern: Core Felcloth Bag
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
+					["groups"] = {
+						{
+							["itemID"] = 19016,	-- Vessel of Rebirth
+							["questID"] = 7785,	-- Examine the Vessel
+						},
 					},
-				}),
-				i(18265, {	-- Pattern: Flarecore Wraps
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
+				},
+				{
+					["questID"] = 7787,	-- Rise, Thunderfury!
+					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
+					["qg"] = 14347,	-- Highlord Demitrian
+					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
+					["maps"] = { 81 },	-- Silithus
+					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
+					["lvl"] = 60,
+					["groups"] = {
+						ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
+						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
-				}),
-				i(18264, {	-- Plans: Elemental Sharpening Stone
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
+				},
+				{
+					["questID"] = 7786,	-- Thunderaan the Windseeker
+					["altQuests"] = {
+						7521,	-- Thunderaan the Windseeker [Original?]
 					},
-				}),
-				i(18257, {	-- Recipe: Major Rejuvenation Potion
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
+					["sourceQuest"] = 7785,	-- Examine the Vessel
+					["qg"] = 14347,	-- Highlord Demitrian
+					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
+					["maps"] = { 81 },	-- Silithus
+					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
+					["lvl"] = 60,
+					["cost"] = {
+						{ "i", 17771, 10 },	-- Elementium Bar x10
+						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
+						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
+						{ "i", 19017, 1 },	-- Essence of the Firelord
 					},
-				}),
-				i(18290, {	-- Schematic: Biznicks 247x128 Accurascope
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
+					["groups"] = {
+						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
+							["description"] = "This is a 40 man raid boss. He will drop as many Dormant Wind Kissed Blade as there are people with the quest.\n\nWARNING: Do not have Master Looter turned on, the item will only drop in Group Loot.",
+							["groups"] = {
+								{
+									["itemID"] = 19018,	-- Dormant Wind Kissed Blade
+									["questID"] = 7787,	-- Rise, Thunderfury!
+								},
+							},
+						}),
 					},
-				}),
-				i(18292, {	-- Schematic: Core Marksman Rifle
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
-					},
-				}),
-				i(18291, {	-- Schematic: Force Reactive Disk
-					["crs"]	= {
-						12118,	-- Lucifron
-						11982,	-- Magmadar
-						12259,	-- Gehennas
-						12057,	-- Garr
-						12264,	-- Shazzrah
-						12056,	-- Baron Geddon
-						11988,	-- Golemagg the Incinerator
-					},
-				}),
+				},
 			}),
 			n(0, {	-- Zone Drop
 				i(16802, {	-- Arcanist Belt (Mage)
@@ -469,6 +434,118 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
+			n(-1, {	-- Common Boss Drop
+				i(18260, {	-- Formula: Enchant Weapon - Healing Power
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18259, {	-- Formula: Enchant Weapon - Spellpower
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18252, {	-- Pattern: Core Armor Kit
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(21371, {	-- Pattern: Core Felcloth Bag
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18265, {	-- Pattern: Flarecore Wraps
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18264, {	-- Plans: Elemental Sharpening Stone
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18257, {	-- Recipe: Major Rejuvenation Potion
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18290, {	-- Schematic: Biznicks 247x128 Accurascope
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18292, {	-- Schematic: Core Marksman Rifle
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18291, {	-- Schematic: Force Reactive Disk
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+			}),
 			cr(12118, e(1519, {	-- Lucifron
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
@@ -540,15 +617,6 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(12057, e(1522, {	-- Garr
 				i(18564, {	-- Bindings of the Windseeker (Right)
-					["groups"] = {
-						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
-							ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
-								["groups"] = {
-								},
-								["collectible"] = false,
-							}),
-						}),
-					},
 					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
 				}),
 				i(18822),	-- Obsidian Edged Blade
@@ -596,15 +664,6 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(12056, e(1524, {	-- Baron Geddon
 				i(18563, {	-- Bindings of the Windseeker (Left)
-					["groups"] = {
-						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
-							ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
-								["groups"] = {
-								},
-								["collectible"] = false,
-							}),
-						}),
-					},
 					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
 				}),
 				i(18822),	-- Obsidian Edged Blade

@@ -99,7 +99,11 @@ _.WorldEvents =
 						["questID"] = 8578,	-- Scrying Goggles? No Problem!
 						["sourceQuest"] = 8577,	-- Stewvul, Ex-B.F.F.
 						-- objectID:180642 -- Inconspicuous Crate
+						["qg"] = 11811,	-- Narain Soothfancy
+						["coord"] = { 65.2, 18.6, 71 },	-- Tanaris
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu
 						["u"] = 40,
+						["lvl"] = 60,
 					},
 					{
 						["questID"] = 8577,	-- Stewvul, Ex-B.F.F.

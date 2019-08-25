@@ -550,31 +550,6 @@ _.Zones =
 						},
 					},
 				},
--- LEGENDARY QUESTS
-				ql({	-- Examine the Vessel
-					["questID"] = 7785,
-					["qg"] = 14347,	-- Highlord Demitrian
-					["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
-				}),
-				{	-- Dormant Wind Kissed Blade
-					["itemID"] = 19018,
-					["g"] = {
-						ql({	-- Rise, Thunderfury!
-							["questID"] = 7787,
-							["qg"] = 14435,	-- Prince Thunderaan
-							["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
-							["g"] = {
-								i(19019),	-- Thunderfury, Blessed Blade of the Windseeker (LEGENDARY!)
-							},
-						}),
-					},
-				},
-				ql({	-- Thunderaan the Windseeker
-					["questID"] = 7786,
-					["qg"] = 14347,	-- Highlord Demitrian
-					["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
-					["sourceQuest"] = 7785,	-- Examine the Vessel
-				}),
 			}),
 		}),
 	}),
