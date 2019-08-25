@@ -995,6 +995,10 @@ _.Zones =
 					["isDaily"] = true,
 					["itemID"] = 169594,	-- Rust Covered Disc
 				}),
+				q(56425, {	-- Scorched Data Disc
+					["isDaily"] = true,
+					["itemID"] = 169595,	-- Scorched Data Disc
+				}),
 				q(55096, {	-- Send My Father a Message
 					["qg"] = 153670,	-- Rustbolt Resistance Fighter (Prinze Erazmin)
 					["coord"] = { 55.6, 60.1, 1462 },
