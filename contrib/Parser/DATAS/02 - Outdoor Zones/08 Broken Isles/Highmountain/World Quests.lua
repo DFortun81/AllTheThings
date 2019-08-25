@@ -633,6 +633,7 @@ _.Zones =
 					i(134160),	-- Huge Roggstone
 				}),
 				n(-387,  {	-- Relics
+					i(143693),	-- Darkened Brulstone
 					i(143692),	-- Earthshaper's Mantra
 				}),
 			}),
