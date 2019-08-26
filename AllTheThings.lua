@@ -8789,14 +8789,21 @@ local function RowOnEnter(self)
 		end
 		if reference.cost then
 			if type(reference.cost) == "table" then
+				local _, name, icon, amount;
 				for k,v in pairs(reference.cost) do
-					local name, icon, _;
-					if v[1] == "i" then
-						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2])
-					elseif v[1] == "c" then
+					_ = v[1];
+					if _ == "i" then
+						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
+						amount = "x" .. v[3];
+					elseif _ == "c" then
 						name,_,icon = GetCurrencyInfo(v[2])
+						amount = "x" .. v[3];
+					elseif _ == "g" then
+						name = "";
+						icon = nil;
+						amount = GetCoinTextureString(v[2]);
 					end
-					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " x" .. v[3]);
+					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " " .. amount);
 				end
 			else
 				GameTooltip:AddDoubleLine("Cost", GetCoinTextureString(reference.cost));

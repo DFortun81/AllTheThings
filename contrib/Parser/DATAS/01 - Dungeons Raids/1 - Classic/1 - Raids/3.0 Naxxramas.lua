@@ -13,6 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 			d(9, {	-- 40 Player (Legacy)
 				["ignoreBonus"] = true,
 				["u"] = 12,
+				["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 				["groups"] = {
 					n(-10066, {	-- Legendary Questline
 						["classes"] = { 5, 8, 9, 11 },    -- Priest, Mage, Warlock, Druid
@@ -227,22 +228,46 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(22707)),	-- Ramaladni's Icy Grasp
 							},
 						},
-						{	-- The Dread Citadel - Naxxramas
-							["questID"] = 9121,	-- The Dread Citadel - Naxxramas
+						{	-- The Dread Citadel - Naxxramas [Honored]
+							["questID"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-							["isBreadcrumb"] = true,
+							["minReputation"] = { 529, HONORED },	-- Argent Dawn, Honored.
+							["altQuests"] = {
+								9122,	-- The Dread Citadel - Naxxramas [Revered]
+								9123,	-- The Dread Citadel - Naxxramas [Exalted]
+							},
 							["u"] = 40,
+							["cost"] = {
+								{ "i", 12363, 6 },	-- Arcane Crystal
+								{ "i", 14344, 2 },	-- Large Brilliant Shard
+								{ "i", 20725, 2 },	-- Nexus Crystal
+								{ "i", 12811, 1 },	-- Righteous Orb
+								{ "g", 600000 },	-- 60g
+							},
 						},
-						{	-- The Dread Citadel - Naxxramas
-							["questID"] = 9122,	-- The Dread Citadel - Naxxramas
+						{	-- The Dread Citadel - Naxxramas [Revered]
+							["questID"] = 9122,	-- The Dread Citadel - Naxxramas [Revered]
 							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-							["isBreadcrumb"] = true,
+							["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							["altQuests"] = {
+								9121,	-- The Dread Citadel - Naxxramas [Honored]
+								9123,	-- The Dread Citadel - Naxxramas [Exalted]
+							},
 							["u"] = 40,
+							["cost"] = {
+								{ "i", 12363, 2 },	-- Arcane Crystal
+								{ "i", 20725, 1 },	-- Nexus Crystal
+								{ "g", 300000 },	-- 30g
+							},
 						},
-						{	-- The Dread Citadel - Naxxramas
-							["questID"] = 9123,	-- The Dread Citadel - Naxxramas
+						{	-- The Dread Citadel - Naxxramas [Exalted]
+							["questID"] = 9123,	-- The Dread Citadel - Naxxramas [Exalted]
 							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-							["isBreadcrumb"] = true,
+							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["altQuests"] = {
+								9121,	-- The Dread Citadel - Naxxramas [Honored]
+								9122,	-- The Dread Citadel - Naxxramas [Revered]
+							},
 							["u"] = 40,
 						},
 						{	-- The Fate of Ramaldni
