@@ -7987,17 +7987,21 @@ local function CreateMiniListForGroup(group)
 						prereqs = orig[1].g;
 						if not prereqs or #prereqs < 1 then
 							prereqs = orig[2].g;
-							orig[1].g = prereqs;
-							table.remove(orig, 2);
+							if orig[2].text == "Upon Completion" then
+								orig[1].g = prereqs;
+								table.remove(orig, 2);
+							end
 						else
 							sourceQuests = orig[2].g;
-							table.remove(orig, 2);
-							if #sourceQuests == 2 then
-								sourceQuests[1].g = sourceQuests[2].g;
-								table.remove(sourceQuests, 2);
-							end
-							for i,sourceQuest in ipairs(sourceQuests) do
-								table.insert(prereqs, sourceQuest);
+							if sourceQuests then
+								table.remove(orig, 2);
+								if #sourceQuests == 2 then
+									sourceQuests[1].g = sourceQuests[2].g;
+									table.remove(sourceQuests, 2);
+								end
+								for i,sourceQuest in ipairs(sourceQuests) do
+									table.insert(prereqs, sourceQuest);
+								end
 							end
 						end
 					else
