@@ -289,7 +289,7 @@ _.Factions =
 		faction(1098), 	-- Knights of the Ebon Blade
 		faction(1156), 	-- The Ashen Verdict
 		faction(1073), 	-- The Kalu'ak
-		faction(1105), 	-- The Oracles
+		faction(1105),	-- The Oracles
 		faction(1119), 	-- The Sons of Hodir
 		faction(1091), 	-- The Wyrmrest Accord
 	}),
@@ -318,6 +318,22 @@ _.Factions =
 		faction(1849), 	-- Order of the Awakened
 		faction(1850), 	-- The Saberstalkers
 		faction(1711), 	-- Steamwheedle Preservation Society
+		-- Bodyguards
+		faction(1740, {	-- Aeda Brightdawn
+			["races"] = HORDE_ONLY,
+		}),
+		faction(1738, {	-- Defender Illona
+			["races"] = ALLIANCE_ONLY,
+		}),
+		faction(1733, {	-- Delvar Ironfist
+			["races"] = ALLIANCE_ONLY,
+		}),
+		faction(1741),	-- Leorajh
+		faction(1737),	-- Talonpriest Ishaal
+		faction(1736),	-- Tormmok
+		faction(1739, {	-- Vivianne
+			["races"] = HORDE_ONLY,
+		}),
 	}),
 	tier(7, { 	-- Legion
 		faction(1900), 	-- Court of Farondis
