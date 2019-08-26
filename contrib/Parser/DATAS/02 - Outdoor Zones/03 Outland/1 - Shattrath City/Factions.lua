@@ -290,102 +290,284 @@ _.Zones =
 							n(20616, {	-- Asuur <Keeper of Sha'tari Artifacts>
 								["coord"] = { 23.6, 32.6, 111 },
 								["g"] = {
-									i(28963),	-- Voidheart Crown
-									i(28964),	-- Voidheart Robe
-									i(28966),	-- Voidheart Leggings
-									i(28967),	-- Voidheart Mantle
-									i(28968),	-- Voidheart Gloves
-									i(29011),	-- Warbringer Greathelm
-									i(29012),	-- Warbringer Chestguard
-									i(29015),	-- Warbringer Legguards
-									i(29016),	-- Warbringer Shoulderguards
-									i(29017),	-- Warbringer Handguards
-									i(29019),	-- Warbringer Breastplate
-									i(29020),	-- Warbringer Gauntlets
-									i(29021),	-- Warbringer Battle-Helm
-									i(29022),	-- Warbringer Greaves
-									i(29023),	-- Warbringer Shoulderplates
-									i(29028),	-- Cyclone Headdress
-									i(29029),	-- Cyclone Hauberk
-									i(29030),	-- Cyclone Kilt
-									i(29031),	-- Cyclone Shoulderpads
-									i(29032),	-- Cyclone Gloves
-									i(29033),	-- Cyclone Chestguard
-									i(29034),	-- Cyclone Handguards
-									i(29035),	-- Cyclone Faceguard
-									i(29036),	-- Cyclone Legguards
-									i(29037),	-- Cyclone Shoulderguards
-									i(29038),	-- Cuclone Breastplate
-									i(29039),	-- Cyclone Gauntlets
-									i(29040),	-- Cyclone Helm
-									i(29042),	-- Cyclone War-Kilt
-									i(29043),	-- Cyclone Sholderplates
-									i(29044),	-- Netherblade Facemask
-									i(29045),	-- Netherblade Chestpiece
-									i(29046),	-- Netherblade Breeches
-									i(29047),	-- Netherblade Shoulderpads
-									i(29048),	-- Netherblade Gloves
-									i(29049),	-- Light-Collar of the Incarnate
-									i(29050),	-- Robes of the Incarnate
-									i(29053),	-- Trousers of the Incarnate
-									i(29054),	-- Light-Mantle of the Incarnate
-									i(29055),	-- Handwraps of the Incarnate
-									i(29056),	-- Shroud of the Incarnate
-									i(29057),	-- Gloves of the Incarnate
-									i(29058),	-- Soul-Collar of the Incarnate
-									i(29059),	-- Leggings of the Incarnate
-									i(29060),	-- Soul-Mantle of the Incarnate
-									i(29061),	-- Justicar Diadem
-									i(29062),	-- Justicar Chestpiece
-									i(29063),	-- Justicar Leggings
-									i(29064),	-- Justicar Pauldrons
-									i(29065),	-- Justicar Gloves
-									i(29066),	-- Justicar Chestguard
-									i(29067),	-- Justicar Handguards
-									i(29068),	-- Justicar Faceguard
-									i(29069),	-- Justicar Legguards
-									i(29070),	-- Justicar Shoulderguards
-									i(29071),	-- Justicar Breastplate
-									i(29072),	-- Justicar Gauntlets
-									i(29073),	-- Justicar Crown
-									i(29074),	-- Justicar Greaves
-									i(29075),	-- Justicar Shoulderplates
-									i(29076),	-- Collar of the Aldor
-									i(29077),	-- Vestments of the Aldor
-									i(29078),	-- Legwraps of the Aldor
-									i(29079),	-- Pauldrons of the Aldor
-									i(29080),	-- Gloves of the Aldor
-									i(29081),	-- Demon Stalker Greathelm
-									i(29082),	-- Demon Stalker Harness
-									i(29083),	-- Demon Stalker Greaves
-									i(29084),	-- Demon Stalker Shoulderguards
-									i(29085),	-- Demon Stalker Gauntlets
-									i(29086),	-- Crown of Malorne
-									i(29087),	-- Chestguard of Malorne
-									i(29088),	-- Legguards of Malorne
-									i(29089),	-- Shoulderguards of Malorne
-									i(29090),	-- Handguards of Malorne
-									i(29091),	-- Chestpiece of Malorne
-									i(29092),	-- Gloves of Malorne
-									i(29093),	-- Antlers of Malorne
-									i(29094),	-- Britches of Malorne
-									i(29095),	-- Pauldrons of Malorne
-									i(29096),	-- Breastplate of Malorne
-									i(29097),	-- Gauntlets of Malorne
-									i(29098),	-- Stag-Helm of Malorne
-									i(29099),	-- Greaves of Malorne
-									i(29100),	-- Mantle of Malorne
+									i(29093, {	-- Antlers of Malorne
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29096, {	-- Breastplate of Malorne
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29094, {	-- Britches of Malorne
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29087, {	-- Chestguard of Malorne
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29091, {	-- Chestpiece of Malorne
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29076, {	-- Collar of the Aldor
+										["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+									}),
+									i(29086, {	-- Crown of Malorne
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29038, {	-- Cyclone Breastplate
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29033, {	-- Cyclone Chestguard
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29035, {	-- Cyclone Faceguard
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29039, {	-- Cyclone Gauntlets
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29032, {	-- Cyclone Gloves
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29034, {	-- Cyclone Handguards
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29029, {	-- Cyclone Hauberk
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29028, {	-- Cyclone Headdress
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29040, {	-- Cyclone Helm
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29030, {	-- Cyclone Kilt
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29036, {	-- Cyclone Legguards
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29037, {	-- Cyclone Shoulderguards
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29031, {	-- Cyclone Shoulderpads
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29043, {	-- Cyclone Shoulderplates
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29042, {	-- Cyclone War-Kilt
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29085, {	-- Demon Stalker Gauntlets
+										["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+									}),
+									i(29081, {	-- Demon Stalker Greathelm
+										["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+									}),
+									i(29083, {	-- Demon Stalker Greaves
+										["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+									}),
+									i(29082, {	-- Demon Stalker Harness
+										["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+									}),
+									i(29084, {	-- Demon Stalker Shoulderguards
+										["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+									}),
+									i(29097, {	-- Gauntlets of Malorne
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29092, {	-- Gloves of Malorne
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29080, {	-- Gloves of the Aldor
+										["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+									}),
+									i(29057, {	-- Gloves of the Incarnate
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29099, {	-- Greaves of Malorne
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29090, {	-- Handguards of Malorne
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29055, {	-- Handwraps of the Incarnate
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29071, {	-- Justicar Breastplate
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29066, {	-- Justicar Chestguard
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29062, {	-- Justicar Chestpiece
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29073, {	-- Justicar Crown
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29061, {	-- Justicar Diadem
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29068, {	-- Justicar Faceguard
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29072, {	-- Justicar Gauntlets
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29065, {	-- Justicar Gloves
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29074, {	-- Justicar Greaves
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29067, {	-- Justicar Handguards
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29063, {	-- Justicar Leggings
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29069, {	-- Justicar Legguards
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29064, {	-- Justicar Pauldrons
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29070, {	-- Justicar Shoulderguards
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29075, {	-- Justicar Shoulderplates
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29059, {	-- Leggings of the Incarnate
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29088, {	-- Legguards of Malorne
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29078, {	-- Legwraps of the Aldor
+										["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+									}),
+									i(29049, {	-- Light-Collar of the Incarnate
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29054, {	-- Light-Mantle of the Incarnate
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29100, {	-- Mantle of Malorne
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29046, {	-- Netherblade Breeches
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29045, {	-- Netherblade Chestpiece
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29044, {	-- Netherblade Facemask
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29048, {	-- Netherblade Gloves
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29047, {	-- Netherblade Shoulderpads
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29095, {	-- Pauldrons of Malorne
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29079, {	-- Pauldrons of the Aldor
+										["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+									}),
+									i(29050, {	-- Robes of the Incarnate
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29089, {	-- Shoulderguards of Malorne
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29056, {	-- Shroud of the Incarnate
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29058, {	-- Soul-Collar of the Incarnate
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29060, {	-- Soul-Mantle of the Incarnate
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29098, {	-- Stag-Helm of Malorne
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29053, {	-- Trousers of the Incarnate
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29077, {	-- Vestments of the Aldor
+										["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+									}),
+									i(28963, {	-- Voidheart Crown
+										["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+									}),
+									i(28968, {	-- Voidheart Gloves
+										["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+									}),
+									i(28966, {	-- Voidheart Leggings
+										["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+									}),
+									i(28967, {	-- Voidheart Mantle
+										["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+									}),
+									i(28964, {	-- Voidheart Robe
+										["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+									}),
+									i(29021, {	-- Warbringer Battle-Helm
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29019, {	-- Warbringer Breastplate
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29012, {	-- Warbringer Chestguard
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29020, {	-- Warbringer Gauntlets
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29011, {	-- Warbringer Greathelm
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29022, {	-- Warbringer Greaves
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29017, {	-- Warbringer Handguards
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29015, {	-- Warbringer Legguards
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29016, {	-- Warbringer Shoulderguards
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29023, {	-- Warbringer Shoulderplates
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
 								},
 							}),
 							n(23484, {	-- Haldor the Compulsive
-								["itemID"] = 32897,	-- Mark of the Illidari
+								["coord"] = { 48.0, 26.8, 111 },
 								["g"] = {
-									i(35717),	-- Shattrath Flask of Blinding Light
-									i(32898),	-- Shattrath Flask of Fortification
-									i(32899),	-- Shattrath Flask of Mighty Restoration
-									i(35716),	-- Shattrath Flask of Pure Death
-									i(32901),	-- Shattrath Flask of Relentless Assault
-									i(32900),	-- Shattrath Flask of Supreme Power
+									i(35717, {	-- Shattrath Flask of Blinding Light
+										["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+									}),
+									i(32898, {	-- Shattrath Flask of Fortification
+										["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+									}),
+									i(32899, {	-- Shattrath Flask of Mighty Restoration
+										["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+									}),
+									i(35716, {	-- Shattrath Flask of Pure Death
+										["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+									}),
+									i(32901, {	-- Shattrath Flask of Relentless Assault
+										["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+									}),
+									i(32900, {	-- Shattrath Flask of Supreme Power
+										["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+									}),
 								},
 							}),
 							n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
@@ -690,15 +872,29 @@ _.Zones =
 							n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
 								["coord"] = { 48.6, 26.6, 111 },
 								["g"] = {
-									i(29735, {	-- Holy Dust
-										i(28886),	-- Greater Inscription of Discipline
-										i(28887),	-- Greater Inscription of Faith
-										i(28888),	-- Greater Inscription of Vengeance
-										i(28889),	-- Greater Inscription of Warding
-										i(28881),	-- Inscription of Discipline
-										i(28878),	-- Inscription of Faith
-										i(28885),	-- Inscription of Vengeance
-										i(28882),	-- Inscription of Warding
+									i(28886, {	-- Greater Inscription of Discipline
+										["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+									}),
+									i(28887, {	-- Greater Inscription of Faith
+										["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+									}),
+									i(28888, {	-- Greater Inscription of Vengeance
+										["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+									}),
+									i(28889, {	-- Greater Inscription of Warding
+										["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+									}),
+									i(28881, {	-- Inscription of Discipline
+										["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+									}),
+									i(28878, {	-- Inscription of Faith
+										["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+									}),
+									i(28885, {	-- Inscription of Vengeance
+										["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+									}),
+									i(28882, {	-- Inscription of Warding
+										["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
 									}),
 								},
 							}),
@@ -795,104 +991,286 @@ _.Zones =
 						}),
 						n(-2,  {	-- Vendors
 							n(23483, {	-- Arcanist Xorith
-								["itemID"] = 32897,	-- Mark of the Illidari
+								["coord"] = { 60.6, 63.6, 111 },
 								["g"] = {
-									i(35717),	-- Shattrath Flask of Blinding Light
-									i(32898),	-- Shattrath Flask of Fortification
-									i(32899),	-- Shattrath Flask of Mighty Restoration
-									i(35716),	-- Shattrath Flask of Pure Death
-									i(32901),	-- Shattrath Flask of Relentless Assault
-									i(32900),	-- Shattrath Flask of Supreme Power
+									i(35717, {	-- Shattrath Flask of Blinding Light
+										["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+									}),
+									i(32898, {	-- Shattrath Flask of Fortification
+										["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+									}),
+									i(32899, {	-- Shattrath Flask of Mighty Restoration
+										["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+									}),
+									i(35716, {	-- Shattrath Flask of Pure Death
+										["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+									}),
+									i(32901, {	-- Shattrath Flask of Relentless Assault
+										["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+									}),
+									i(32900, {	-- Shattrath Flask of Supreme Power
+										["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+									}),
 								},
 							}),
 							n(20613, {	-- Arodis Sunblade <Keeper of Sha'tari Artifacts>
 								["coord"] = { 42.6, 90.6, 111 },
 								["g"] = {
-									i(28963),	-- Voidheart Crown
-									i(28964),	-- Voidhaert Robe
-									i(28966),	-- Voidheart Leggings
-									i(28967),	-- Voidheat Mantle
-									i(28968),	-- Voidheart Gloves
-									i(29011),	-- Warbringer Greathelm
-									i(29012),	-- Warbringer Chestguard
-									i(29015),	-- Warbringer Legguards
-									i(29016),	-- Warbringer Shoulderguards
-									i(29017),	-- Warbringer Handguards
-									i(29019),	-- Warbringer Breastplate
-									i(29020),	-- Warbringer Gauntlets
-									i(29021),	-- Warbringer Battle-Helm
-									i(29022),	-- Warbringer Greaves
-									i(29023),	-- Warbringer Shoulderplates
-									i(29028),	-- Cyclone Headdress
-									i(29029),	-- Cyclone Hauberk
-									i(29030),	-- Cyclone Kilt
-									i(29031),	-- Cyclone Shoulderpads
-									i(29032),	-- Cyclone Gloves
-									i(29033),	-- Cyclone Chestguard
-									i(29034),	-- Cyclone Handguards
-									i(29035),	-- Cyclone Faceguard
-									i(29036),	-- Cyclone Legguards
-									i(29037),	-- Cyclone Shoulderguards
-									i(29038),	-- Cuclone Breastplate
-									i(29039),	-- Cyclone Gauntlets
-									i(29040),	-- Cyclone Helm
-									i(29042),	-- Cyclone War-Kilt
-									i(29043),	-- Cyclone Sholderplates
-									i(29044),	-- Netherblade Facemask
-									i(29045),	-- Netherblade Chestpiece
-									i(29046),	-- Netherblade Breeches
-									i(29047),	-- Netherblade Shoulderpads
-									i(29048),	-- Netherblade Gloves
-									i(29049),	-- Light-Collar of the Incarnate
-									i(29050),	-- Robes of the Incarnate
-									i(29053),	-- Trousers of the Incarnate
-									i(29054),	-- Light-Mantle of the Incarnate
-									i(29055),	-- Handwraps of the Incarnate
-									i(29056),	-- Shroud of the Incarnate
-									i(29057),	-- Gloves of the Incarnate
-									i(29058),	-- Soul-Collar of the Incarnate
-									i(29059),	-- Leggings of the Incarnate
-									i(29060),	-- Soul-Mantle of the Incarnate
-									i(29061),	-- Justicar Diadem
-									i(29062),	-- Justicar Chestpiece
-									i(29063),	-- Justicar Leggings
-									i(29064),	-- Justicar Pauldrons
-									i(29065),	-- Justicar Gloves
-									i(29066),	-- Justicar Chestguard
-									i(29067),	-- Justicar Handguards
-									i(29068),	-- Justicar Faceguard
-									i(29069),	-- Justicar Legguards
-									i(29070),	-- Justicar Shoulderguards
-									i(29071),	-- Justicar Breastplate
-									i(29072),	-- Justicar Gauntlets
-									i(29073),	-- Justicar Crown
-									i(29074),	-- Justicar Greaves
-									i(29075),	-- Justicar Shoulderplates
-									i(29076),	-- Collar of the Aldor
-									i(29077),	-- Vestments of the Aldor
-									i(29078),	-- Legwraps of the Aldor
-									i(29079),	-- Pauldrons of the Aldor
-									i(29080),	-- Gloves of the Aldor
-									i(29081),	-- Demon Stalker Greathelm
-									i(29082),	-- Demon Stalker Harness
-									i(29083),	-- Demon Stalker Greaves
-									i(29084),	-- Demon Stalker Shoulderguards
-									i(29085),	-- Demon Stalker Gauntlets
-									i(29086),	-- Crown of Malorne
-									i(29087),	-- Chestguard of Malorne
-									i(29088),	-- Legguards of Malorne
-									i(29089),	-- Shoulderguards of Malorne
-									i(29090),	-- Handguards of Malorne
-									i(29091),	-- Chestpiece of Malorne
-									i(29092),	-- Gloves of Malorne
-									i(29093),	-- Antlers of Malorne
-									i(29094),	-- Britches of Malorne
-									i(29095),	-- Pauldrons of Malorne
-									i(29096),	-- Breastplate of Malorne
-									i(29097),	-- Gauntlets of Malorne
-									i(29098),	-- Stag-Helm of Malorne
-									i(29099),	-- Greaves of Malorne
-									i(29100),	-- Mantle of Malorne
+									i(29093, {	-- Antlers of Malorne
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29096, {	-- Breastplate of Malorne
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29094, {	-- Britches of Malorne
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29087, {	-- Chestguard of Malorne
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29091, {	-- Chestpiece of Malorne
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29076, {	-- Collar of the Aldor
+										["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+									}),
+									i(29086, {	-- Crown of Malorne
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29038, {	-- Cyclone Breastplate
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29033, {	-- Cyclone Chestguard
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29035, {	-- Cyclone Faceguard
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29039, {	-- Cyclone Gauntlets
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29032, {	-- Cyclone Gloves
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29034, {	-- Cyclone Handguards
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29029, {	-- Cyclone Hauberk
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29028, {	-- Cyclone Headdress
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29040, {	-- Cyclone Helm
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29030, {	-- Cyclone Kilt
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29036, {	-- Cyclone Legguards
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29037, {	-- Cyclone Shoulderguards
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29031, {	-- Cyclone Shoulderpads
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29043, {	-- Cyclone Shoulderplates
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29042, {	-- Cyclone War-Kilt
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29085, {	-- Demon Stalker Gauntlets
+										["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+									}),
+									i(29081, {	-- Demon Stalker Greathelm
+										["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+									}),
+									i(29083, {	-- Demon Stalker Greaves
+										["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+									}),
+									i(29082, {	-- Demon Stalker Harness
+										["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+									}),
+									i(29084, {	-- Demon Stalker Shoulderguards
+										["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+									}),
+									i(29097, {	-- Gauntlets of Malorne
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29092, {	-- Gloves of Malorne
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29080, {	-- Gloves of the Aldor
+										["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+									}),
+									i(29057, {	-- Gloves of the Incarnate
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29099, {	-- Greaves of Malorne
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29090, {	-- Handguards of Malorne
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29055, {	-- Handwraps of the Incarnate
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29071, {	-- Justicar Breastplate
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29066, {	-- Justicar Chestguard
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29062, {	-- Justicar Chestpiece
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29073, {	-- Justicar Crown
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29061, {	-- Justicar Diadem
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29068, {	-- Justicar Faceguard
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29072, {	-- Justicar Gauntlets
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29065, {	-- Justicar Gloves
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29074, {	-- Justicar Greaves
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29067, {	-- Justicar Handguards
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29063, {	-- Justicar Leggings
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29069, {	-- Justicar Legguards
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29064, {	-- Justicar Pauldrons
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29070, {	-- Justicar Shoulderguards
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29075, {	-- Justicar Shoulderplates
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29059, {	-- Leggings of the Incarnate
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29088, {	-- Legguards of Malorne
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29078, {	-- Legwraps of the Aldor
+										["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+									}),
+									i(29049, {	-- Light-Collar of the Incarnate
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29054, {	-- Light-Mantle of the Incarnate
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29100, {	-- Mantle of Malorne
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29046, {	-- Netherblade Breeches
+										["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+									}),
+									i(29045, {	-- Netherblade Chestpiece
+										["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+									}),
+									i(29044, {	-- Netherblade Facemask
+										["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+									}),
+									i(29048, {	-- Netherblade Gloves
+										["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+									}),
+									i(29047, {	-- Netherblade Shoulderpads
+										["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+									}),
+									i(29095, {	-- Pauldrons of Malorne
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29079, {	-- Pauldrons of the Aldor
+										["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+									}),
+									i(29050, {	-- Robes of the Incarnate
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29089, {	-- Shoulderguards of Malorne
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29056, {	-- Shroud of the Incarnate
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29058, {	-- Soul-Collar of the Incarnate
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29060, {	-- Soul-Mantle of the Incarnate
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29098, {	-- Stag-Helm of Malorne
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29053, {	-- Trousers of the Incarnate
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29077, {	-- Vestments of the Aldor
+										["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+									}),
+									i(28963, {	-- Voidheart Crown
+										["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+									}),
+									i(28968, {	-- Voidheart Gloves
+										["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+									}),
+									i(28966, {	-- Voidheart Leggings
+										["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+									}),
+									i(28967, {	-- Voidheart Mantle
+										["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+									}),
+									i(28964, {	-- Voidheart Robe
+										["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+									}),
+									i(29021, {	-- Warbringer Battle-Helm
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29019, {	-- Warbringer Breastplate
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29012, {	-- Warbringer Chestguard
+										["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+									}),
+									i(29020, {	-- Warbringer Gauntlets
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29011, {	-- Warbringer Greathelm
+										["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+									}),
+									i(29022, {	-- Warbringer Greaves
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29017, {	-- Warbringer Handguards
+										["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+									}),
+									i(29015, {	-- Warbringer Legguards
+										["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+									}),
+									i(29016, {	-- Warbringer Shoulderguards
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
+									i(29023, {	-- Warbringer Shoulderplates
+										["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+									}),
 								},
 							}),
 							n(19331, {	-- Quartermaster Enuril <Scryer Quartermaster>
@@ -926,23 +1304,39 @@ _.Zones =
 							n(20808, {	-- Scribe Veredis <Scryer Inscriptions>
 								["coord"] = { 60.0, 64.6, 111 },
 								["g"] = {
-									i(29736, {	-- Arcane Rune
-										i(28910),	-- Greater Inscription of the Blade
-										i(28911),	-- Greater Inscription of the Knight
-										i(28912),	-- Greater Inscription of the Oracle
-										i(28909),	-- Greater Inscription of the Orb
-										i(28907),	-- Inscription of the Blade
-										i(28908),	-- Inscription of the Knight
-										i(28904),	-- Inscription of the Oracle
-										i(28903),	-- Inscription of the Orb
+									i(28910, {	-- Greater Inscription of the Blade
+										["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+									}),
+									i(28911, {	-- Greater Inscription of the Knight
+										["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+									}),
+									i(28912, {	-- Greater Inscription of the Oracle
+										["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+									}),
+									i(28909, {	-- Greater Inscription of the Orb
+										["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+									}),
+									i(28907, {	-- Inscription of the Blade
+										["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+									}),
+									i(28908, {	-- Inscription of the Knight
+										["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+									}),
+									i(28904, {	-- Inscription of the Oracle
+										["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+									}),
+									i(28903, {	-- Inscription of the Orb
+										["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
 									}),
 								},
 							}),
 							n(19238, {	-- Urumir Stavebright <Staff Vendor>
-								["description"] = "You must be either have built rep with the Scryers OR be neutral (not have aligned yourself with either the Scryers or Aldor) to interact with this vendor.",
+								["minReputation"] = { 934, NEUTRAL },
 								["coord"] = { 49.6, 79.0, 111 },
 								["g"] = {
-									i(12252),	-- Staff of Protection
+									i(12252, {	-- Staff of Protection
+										["isLimited"] = true,
+									}),
 								},
 							}),
 							n(21905,  {	-- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
@@ -1253,7 +1647,7 @@ _.Zones =
 									i(35341),	-- Satin Mantle
 									i(35407),	-- Savage Plate Chestpiece
 									i(35381),	-- Seer's Linked Armor
-									i(35388),	-- Seer's MAil Helm
+									i(35388),	-- Seer's Mail Helm
 									i(35395),	-- Seer's Ringmail Shoulderpads
 									i(31781),	-- Sha'tar Tabard
 									i(35380),	-- Stalker's Chain Spaulders
