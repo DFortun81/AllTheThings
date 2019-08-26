@@ -20,16 +20,10 @@ _.Mounts =
 		un(35, i(166775)),	-- Vulpine Familiar
 		un(35, i(112326)),	-- Warforged Nightmare
 		un(35, i(69846)),	-- Winged Guardian
-		un(35, spell(302361, {	-- Alabaster Stormtalon		-- No in game item
-			["description"] = "Chiseled by the stonemasons of Stormwind, this stone gryphon symbolizes the unbending courage of the Alliance",
-			["displayID"] = 92345,	-- Alabaster Stormtalon
-			["collectible"] = true,
+		un(35, mount(302361, {	-- Alabaster Stormtalon		-- No in game item
 			["races"] = ALLIANCE_ONLY,
 		})),
-		un(35, spell(302362, {	-- Alabaster Thunderwing	-- No in game item
-			["description"] = "Chisled by the stoneworkers of Orgrimmar, this stone wind rider is a symbol of the unwavering strength of the Horde",
-			["displayID"] = 92344,	-- Alabaster Thunderwing
-			["collectible"] = true,
+		un(35, mount(302362, {	-- Alabaster Thunderwing	-- No in game item
 			["races"] = HORDE_ONLY,
 		})),
 	}),
