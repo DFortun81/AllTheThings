@@ -27,7 +27,9 @@ _.Zones =
 						i(63158),	-- Boots of Delivery
 						i(63157),	-- Lethlor Armbands
 						i(63156),	-- Alluring Leggings
-						i(63205),	-- Safety Goggles (not transmoggable)
+						i(63205, {	-- Safety Goggles (not transmoggable)
+							["collectible"] = false,
+						}),
 					},
 				}),
 				q(27792, {	-- All's Fair in Love, War, and Archaeology
