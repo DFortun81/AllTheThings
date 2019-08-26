@@ -26,8 +26,12 @@ _.Zones =
 							crit(4, {	-- The Clutch
 								["sourceQuest"] = 27708,	-- The Warden's Time
 							}),
-							crit(5),	-- Silver Tide Hollow
-							crit(6),	-- Nespirah
+							crit(5, {	-- Silver Tide Hollow
+								["sourceQuest"] = 25456,	-- Back in One Piece
+							}),
+							crit(6, {	-- Nespirah
+								["sourceQuest"] = 25922,	-- Waking the Beast
+							}),
 							crit(7),	-- Visions of the Past
 							crit(8),	-- The Merciless One
 							crit(9),	-- L'ghorek
@@ -49,8 +53,12 @@ _.Zones =
 							crit(4, {	-- The Clutch
 								["sourceQuest"] = 27708,	-- The Warden's Time
 							}),
-							crit(5),	-- Silver Tide Hollow
-							crit(6),	-- Nespirah
+							crit(5, {	-- Silver Tide Hollow
+								["sourceQuest"] = 25456,	-- Back in One Piece
+							}),
+							crit(6, {	-- Nespirah
+								["sourceQuest"] = 25996,	-- Waking the Beast
+							}),
 							crit(7),	-- Visions of the Past
 							crit(8),	-- The Merciless One
 							crit(9),	-- L'ghorek

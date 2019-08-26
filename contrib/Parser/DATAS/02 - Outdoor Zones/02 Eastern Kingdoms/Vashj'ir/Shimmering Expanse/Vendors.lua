@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(205, {	-- Shimmering Expanse
-				n(-2, {		-- Vendors
+				n(-2, {	-- Vendors
 					n(50324, {	-- Provisioner Arok <Earthen Ring Quartermaster>
 						["coord"] = { 49.1, 42.1, 205 },
 						["g"] = {
