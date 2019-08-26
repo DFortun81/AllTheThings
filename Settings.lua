@@ -275,21 +275,41 @@ settings.GetShortModeString = function(self)
 	if self:Get("DebugMode") then
 		return "D";
 	else
+		local things = {};
+		local thingCount = 0;
+		local totalThingCount = 0;
+		for key,_ in pairs(GeneralSettingsBase.__index) do
+			if string.sub(key, 1, 6) == "Thing:" then
+				totalThingCount = totalThingCount + 1;
+				if settings:Get(key) then
+					thingCount = thingCount + 1;
+					table.insert(things, string.sub(key, 7));
+				end
+			end
+		end
+		local style;
+		if thingCount == 0 then
+			style = "N";
+		elseif thingCount == totalThingCount then
+			style = "I";
+		else
+			style = "";
+		end
 		if self:Get("Completionist") then
 			if self:Get("AccountMode") then
-				return "AC";
+				return style .. "AC";
 			else
-				return "C";
+				return style .. "C";
 			end
 		else
 			if self:Get("AccountMode") then
-				return "AU";
+				return style .. "AU";
 			elseif self:Get("MainOnly") then
-				return "UM";
+				return style .. "UM";
 			else
-				return "U";
+				return style .. "U";
 			end
-		end
+		end		
 	end
 end
 settings.GetPersonal = function(self, setting)
