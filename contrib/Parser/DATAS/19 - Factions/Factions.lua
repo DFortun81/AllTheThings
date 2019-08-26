@@ -103,6 +103,12 @@ _.Factions =
 				faction(1682, {	-- Wyrnn's Vanguard
 					["races"] = ALLIANCE_ONLY,
 				}),
+				faction(1738, {	-- Defender Illona
+					["races"] = ALLIANCE_ONLY,
+				}),
+				faction(1733, {	-- Delvar Ironfist
+					["races"] = ALLIANCE_ONLY,
+				}),
 			}),
 			tier(8, {	-- The Battle for Azeroth
 				faction(2159, {	-- 7th Legion
@@ -220,6 +226,12 @@ _.Factions =
 				faction(1681, {	-- Vol'jin's Spear
 					["races"] = HORDE_ONLY,
 				}),
+				faction(1740, {	-- Aeda Brightdawn
+					["races"] = HORDE_ONLY,
+				}),
+				faction(1739, {	-- Vivianne
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 			tier(8, {	-- The Battle for Azeroth
 				faction(2156, {	-- Talanji's  Expedition
@@ -319,21 +331,9 @@ _.Factions =
 		faction(1850), 	-- The Saberstalkers
 		faction(1711), 	-- Steamwheedle Preservation Society
 		-- Bodyguards
-		faction(1740, {	-- Aeda Brightdawn
-			["races"] = HORDE_ONLY,
-		}),
-		faction(1738, {	-- Defender Illona
-			["races"] = ALLIANCE_ONLY,
-		}),
-		faction(1733, {	-- Delvar Ironfist
-			["races"] = ALLIANCE_ONLY,
-		}),
 		faction(1741),	-- Leorajh
 		faction(1737),	-- Talonpriest Ishaal
 		faction(1736),	-- Tormmok
-		faction(1739, {	-- Vivianne
-			["races"] = HORDE_ONLY,
-		}),
 	}),
 	tier(7, { 	-- Legion
 		faction(1900), 	-- Court of Farondis
