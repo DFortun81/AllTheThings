@@ -11,15 +11,26 @@ _.Zones =
 					["coord"] = { 42.8, 42.6, 107 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(24208),	-- Design: Mystic Dawnstone
-						i(30597),	-- Halaani Claymore
-						i(26045, {	-- Halaa Battle Token
-							i(28915),	-- Reins of the Dark Riding Talbuk
-							i(29228),	-- Reins of the Dark War Talbuk
+						i(24208, {	-- Design: Mystic Dawnstone
+							["isLimited"] = true,
 						}),
-						i(26044, {	-- Halaa Research Token
-							i(28915),	-- Reins of the Dark Riding Talbuk
-							i(29228),	-- Reins of the Dark War Talbuk
+						i(30598, {	-- Don Amancio's Heart
+							["isLimited"] = true,
+						}),
+						i(30597, {	-- Halaani Claymore
+							["isLimited"] = true,
+						}),
+						i(28915, {	-- Reins of the Dark Riding Talbuk
+							["cost"] = {
+								{ "i", 26045, 70 },	-- 70x Halaa Battle Token
+								{ "i", 26044, 15 },	-- 15x Halaa Research Token
+							},
+						}),
+						i(29228, {	-- Reins of the Dark War Talbuk
+							["cost"] = {
+								{ "i", 26045, 100 },	-- 100x Halaa Battle Token
+								{ "i", 26044, 20 },		-- 20x Halaa Research Token
+							},
 						}),
 					},
 				}),
@@ -27,8 +38,12 @@ _.Zones =
 					["coord"] = { 53.2, 71.8, 107 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(21894),	-- Pattern: Bolt of Soulcloth
-						i(21902), 	-- Pattern: Soulcloth Gloves
+						i(21894, {	-- Pattern: Bolt of Soulcloth
+							["isLimited"] = true,
+						}),
+						i(21902, { 	-- Pattern: Soulcloth Gloves
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(21474, {	-- Coreiel <Blade Merchant>
@@ -36,39 +51,50 @@ _.Zones =
 					["coord"] = { 42.8, 42.6, 107 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(24208),	-- Design: Mystic Dawnstone
-						i(30570),	-- Arkadian Claymore
-						i(26045, {	-- Halaa Battle Token
-							i(28915),	-- Reins of the Dark Riding Talbuk
-							i(29228),	-- Reins of the Dark War Talbuk
+						i(30570, {	-- Arkadian Claymore
+							["isLimited"] = true,
 						}),
-						i(26044, {	-- Halaa Research Token
-							i(28915),	-- Reins of the Dark Riding Talbuk
-							i(29228),	-- Reins of the Dark War Talbuk
+						i(24208, {	-- Design: Mystic Dawnstone
+							["isLimited"] = true,
+						}),
+						i(30571, {	-- Don Rodrigo's Heart
+							["isLimited"] = true,
+						}),
+						i(28915, {	-- Reins of the Dark Riding Talbuk
+							["cost"] = {
+								{ "i", 26045, 70 },	-- 70x Halaa Battle Token
+								{ "i", 26044, 15 },	-- 15x Halaa Research Token
+							},
+						}),
+						i(29228, {	-- Reins of the Dark War Talbuk
+							["cost"] = {
+								{ "i", 26045, 100 },	-- 100x Halaa Battle Token
+								{ "i", 26044, 20 },		-- 20x Halaa Research Token
+							},
 						}),
 					},
 				}),
 				n(18072, {	-- Elementalist Sharvak <The Earthen Ring>
 					["coord"] = { 60.6, 22.1, 107 },
 					["g"] = {
+						i(136934, {	-- Raging Elemental Stone (TOY!)
+							["classes"] = { 7 },	-- Shaman
+						}),
+						i(136935, {	-- Tadpole Cloudseeder (TOY!)
+							["classes"] = { 7 },	-- Shaman
+						}),
 						i(141059, {	-- Technique: Glyph of Flickering
 							["description"] = "Currently this Technique can only be learned by Shamans.  We suggest submitting a bug report to Blizzard to have it usuable by all scribes.",
 							["classes"] = { 7 },	-- Shaman
 						}),
-						i(136934, {	-- Raging Elemental Stone - Shaman only - Toy
-							["classes"] = { 7 },	-- Shaman
-						}),
-						i(136935, {	-- Tadpole Cloudseeder - Shaman only - Toy
-							["classes"] = { 7 },	-- Shaman
-						}),
-						i(136937, {	-- Vol'jin's Serpent Totem - Shaman only - Toy
-							["classes"] = { 7 },	-- Shaman
-						}),
-						i(138490, {	-- Waterspeaker's Totem - Shaman only - Toy
-							["classes"] = { 7 },	-- Shaman
-						}),
 						i(136938, {	-- Tome of Hex: Compy
-							["spellID"] = 210873,	-- Hex(Compy)
+							["spellID"] = 210873,	-- Hex (Compy)
+							["classes"] = { 7 },	-- Shaman
+						}),
+						i(136937, {	-- Vol'jin's Serpent Totem (TOY!)
+							["classes"] = { 7 },	-- Shaman
+						}),
+						i(138490, {	-- Waterspeaker's Totem (TOY!)
 							["classes"] = { 7 },	-- Shaman
 						}),
 					},
@@ -81,9 +107,13 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(21894),	-- Pattern: Bolt of Soulcloth
+						i(21894, {	-- Pattern: Bolt of Soulcloth
+							["isLimited"] = true,
+						}),
 						i(21893),	-- Pattern: Imbued Netherweave Bag
-						i(21902), 	-- Pattern: Soulcloth Gloves
+						i(21902, { 	-- Pattern: Soulcloth Gloves
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(20097, {	-- Nula the Butcher <Cooking Supplies>
@@ -101,40 +131,98 @@ _.Zones =
 					["coord"] = { 41.2, 44.2, 107 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(26045, {	-- Halaa Battle Token
-							i(27637),	-- Shadowstalker's Sash
-							i(27638),	-- Hierophant's Sash
-							i(27639),	-- Slayer's Waistguard
-							i(27643),	-- Stormbreaker's Girdle
-							i(27644),	-- Avenger's Waistguard
-							i(27645),	-- Dreamstalker Sash
-							i(27646),	-- Marksman's Belt
-							i(27647),	-- Marksman's Legguards
-							i(27648),	-- Dreamstalker Leggings
-							i(27649),	-- Hierophant's Leggings
-							i(27650),	-- Shadowstalker's Leggings
-							i(27652),	-- Stormbreaker's Leggings
-							i(27653),	-- Slayer's Leggings
-							i(27654),	-- Avenger's Legplates
+						i(27654, {	-- Avenger's Legplates
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
 						}),
-						i(26044, {	-- Halaa Research Token
-							i(33783),	-- Design: Steady Talasite
-							i(32071),	-- Recipe: Elixir of Ironskin
-							i(27637),	-- Shadowstalker's Sash
-							i(27638),	-- Hierophant's Sash
-							i(27639),	-- Slayer's Waistguard
-							i(27643),	-- Stormbreaker's Girdle
-							i(27644),	-- Avenger's Waistguard
-							i(27645),	-- Dreamstalker Sash
-							i(27646),	-- Marksman's Belt
-							i(27647),	-- Marksman's Legguards
-							i(27648),	-- Dreamstalker Leggings
-							i(27649),	-- Hierophant's Leggings
-							i(27650),	-- Shadowstalker's Leggings
-							i(27652),	-- Stormbreaker's Leggings
-							i(27653),	-- Slayer's Leggings
-							i(27654),	-- Avenger's Legplates
-							i(27680),	-- Halaani Bag
+						i(27644, {	-- Avenger's Waistguard
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(33783, {	-- Design: Steady Talasite
+							["cost"] = { { "i", 26044, 4 }, },	-- 4x Halaa Research Token
+						}),
+						i(27648, {	-- Dreamstalker Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(27645, {	-- Dreamstalker Sash
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27680, {	-- Halaani Bag
+							["cost"] = { { "i", 26044, 8 }, },	-- 8x Halaa Research Token
+						}),
+						i(27649, {	-- Hierophant's Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(27638, {	-- Hierophant's Sash
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27646, {	-- Marksman's Belt
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27647, {	-- Marksman's Legguards
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(32071, {	-- Recipe: Elixir of Ironskin
+							["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
+						}),
+						i(27650, {	-- Shadowstalker's Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(27637, {	-- Shadowstalker's Sash
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27653, {	-- Slayer's Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(27639, {	-- Slayer's Waistguard
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27643, {	-- Stormbreaker's Girdle
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27652, {	-- Stormbreaker's Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
 						}),
 					},
 				}),
@@ -143,40 +231,98 @@ _.Zones =
 					["coord"] = { 41.2, 44.2, 107 },
 					["races"] = HORDE_ONLY,
 					["g"]= {
-						i(26045, {	-- Halaa Battle Token
-							i(27637),	-- Shadowstalker's Sash
-							i(27638),	-- Hierophant's Sash
-							i(27639),	-- Slayer's Waistguard
-							i(27643),	-- Stormbreaker's Girdle
-							i(27644),	-- Avenger's Waistguard
-							i(27645),	-- Dreamstalker Sash
-							i(27646),	-- Marksman's Belt
-							i(27647),	-- Marksman's Legguards
-							i(27648),	-- Dreamstalker Leggings
-							i(27649),	-- Hierophant's Leggings
-							i(27650),	-- Shadowstalker's Leggings
-							i(27652),	-- Stormbreaker's Leggings
-							i(27653),	-- Slayer's Leggings
-							i(27654),	-- Avenger's Legplates
+						i(27654, {	-- Avenger's Legplates
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
 						}),
-						i(26044, {	-- Halaa Research Token
-							i(33783),	-- Design: Steady Talasite
-							i(32071),	-- Recipe: Elixir of Ironskin
-							i(27637),	-- Shadowstalker's Sash
-							i(27638),	-- Hierophant's Sash
-							i(27639),	-- Slayer's Waistguard
-							i(27643),	-- Stormbreaker's Girdle
-							i(27644),	-- Avenger's Waistguard
-							i(27645),	-- Dreamstalker Sash
-							i(27646),	-- Marksman's Belt
-							i(27647),	-- Marksman's Legguards
-							i(27648),	-- Dreamstalker Leggings
-							i(27649),	-- Hierophant's Leggings
-							i(27650),	-- Shadowstalker's Leggings
-							i(27652),	-- Stormbreaker's Leggings
-							i(27653),	-- Slayer's Leggings
-							i(27654),	-- Avenger's Legplates
-							i(27680),	-- Halaani Bag
+						i(27644, {	-- Avenger's Waistguard
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(33783, {	-- Design: Steady Talasite
+							["cost"] = { { "i", 26044, 4 }, },	-- 4x Halaa Research Token
+						}),
+						i(27648, {	-- Dreamstalker Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(27645, {	-- Dreamstalker Sash
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27680, {	-- Halaani Bag
+							["cost"] = { { "i", 26044, 8 }, },	-- 8x Halaa Research Token
+						}),
+						i(27649, {	-- Hierophant's Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(27638, {	-- Hierophant's Sash
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27646, {	-- Marksman's Belt
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27647, {	-- Marksman's Legguards
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(32071, {	-- Recipe: Elixir of Ironskin
+							["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
+						}),
+						i(27650, {	-- Shadowstalker's Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(27637, {	-- Shadowstalker's Sash
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27653, {	-- Slayer's Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
+						}),
+						i(27639, {	-- Slayer's Waistguard
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27643, {	-- Stormbreaker's Girdle
+							["cost"] = {
+								{ "i", 26045, 20 },	-- Halaa Battle Token
+								{ "i", 26044, 1 },	-- Halaa Research Token
+							},
+						}),
+						i(27652, {	-- Stormbreaker's Leggings
+							["cost"] = {
+								{ "i", 26045, 40 },	-- 40x Halaa Battle Token
+								{ "i", 26044, 2 },	-- 2x Halaa Research Token
+							},
 						}),
 					},
 				}),

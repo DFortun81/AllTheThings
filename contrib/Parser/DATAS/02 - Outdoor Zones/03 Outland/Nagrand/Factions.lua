@@ -98,9 +98,8 @@ _.Zones =
 						n(23007,   {	-- Paulsta'ats <Consortium Quartermaster>
 							["coord"] = { 30.5, 56.9, 107 },
 							["g"] = {
+								i(29115),	-- Consortium Blaster
 								i(31776),	-- Consortium Tabard
-								un(2, i(29118)),	-- Smuggler's Ammo Pouch
-								i(138796),	-- Illusion: Executioner
 								i(33156),	-- Design: Crimson Sun
 								i(23134),	-- Design: Delicate Blood Garnet
 								i(33305),	-- Design: Don Julio's Heart
@@ -129,19 +128,23 @@ _.Zones =
 								i(25908),	-- Design: Swift Skyfire Diamond
 								i(28274),	-- Formula: Enchant Cloak - PvP Power
 								i(22552),	-- Formula: Enchant Weapon - Major Striking
+								i(29456),	-- Gift of the Ethereal
+								i(29121),	-- Guile of Khoraazi
+								i(29119),	-- Haramad's Bargain
+								i(138796),	-- Illusion: Executioner
+								i(29122),	-- Nether Runner's Cowl
+								i(29457),	-- Nethershard
+								i(29116),	-- Nomad's Leggings
 								i(24314),	-- Pattern: Bag of Jewels
 								i(25733), 	-- Pattern: Fel Leather Boots
 								i(25732), 	-- Pattern: Fel Leather Gloves
 								i(25734), 	-- Pattern: Fel Leather Leggings
 								i(23874),	-- Schematic: Elemental Seaforium Charge
-								i(29115),	-- Consortium Blaster
-								i(29456),	-- Gift of the Ethereal
-								i(29121),	-- Guile of Khoraazi
-								i(29457),	-- Nethershard
-								i(29119),	-- Haramad's Bargain
-								i(29122),	-- Nether Runner's Cowl
-								i(29116),	-- Nomad's Leggings
+								un(2, i(29118)),	-- Smuggler's Ammo Pouch
 								i(29117),	-- Stormspire Vest
+
+
+								
 							},
 						}),
 					}),
@@ -174,14 +177,11 @@ _.Zones =
 							["coord"] = { 53.4, 36.8, 107 },
 							["coord"] = { 55.8, 37.8, 107 },
 							["g"] = {
-								i(29102),	-- Reins of the Cobalt War Talbuk
-								i(29104),	-- Reins of the Silver War Talbuk
-								i(29105),	-- Reins of the Tan War Talbuk
-								i(29103),	-- Reins of the White War Talbuk
-								i(31829),	-- Reins of the Cobalt Riding Talbuk
-								i(31831),	-- Reins of the Silver Riding Talbuk
-								i(31833),	-- Reins of the Tan Riding Talbuk
-								i(31835),	-- Reins of the White Riding Talbuk
+								i(29145),	-- Band of Ancestral Spirits
+								i(29139),	-- Ceremonial Cover
+								un(2, i(29143)),	-- Clefthoof Hide Quiver
+								i(29135),	-- Earthcaller's Headdress
+								i(29137),	-- Hellscream's Will
 								i(31773),	-- Mag'har Tabard
 								i(34174),	-- Pattern: Drums of Restoration
 								i(34172),	-- Pattern: Drums of Speed
@@ -190,13 +190,16 @@ _.Zones =
 								i(25742),	-- Pattern: Netherfury Leggings
 								i(29664),	-- Pattern: Reinforced Mining Bag
 								i(22917),	-- Recipe: Transmute Primal Fire to Earth
-								i(29137),	-- Hellscream's Will
-								i(29135),	-- Earthcaller's Headdress
-								i(29139),	-- Ceremonial Cover
+								i(31829),	-- Reins of the Cobalt Riding Talbuk
+								i(29102),	-- Reins of the Cobalt War Talbuk
+								i(31831),	-- Reins of the Silver Riding Talbuk
+								i(29104),	-- Reins of the Silver War Talbuk
+								i(31833),	-- Reins of the Tan Riding Talbuk
+								i(29105),	-- Reins of the Tan War Talbuk
+								i(31835),	-- Reins of the White Riding Talbuk
+								i(29103),	-- Reins of the White War Talbuk
 								i(29147),	-- Talbuk Hide Spaulders
 								i(29141),	-- Tempest Leggings
-								i(29145),	-- Band of Ancestral Spirits
-								un(2, i(29143)),	-- Clefthoof Hide Quiver
 							},
 						}),
 					}),
@@ -228,14 +231,12 @@ _.Zones =
 							["coord"] = { 54.5, 75.1, 107 },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								i(29227),	-- Reins of the Cobalt War Talbuk
-								i(29229),	-- Reins of the Silver War Talbuk
-								i(29230),	-- Reins of the Tan War Talbuk
-								i(29231),	-- Reins of the White War Talbuk
-								i(31830),	-- Reins of the Cobalt Riding Talbuk
-								i(31832),	-- Reins of the Silver Riding Talbuk
-								i(31834),	-- Reins of the Tan Riding Talbuk
-								i(31836),	-- Reins of the White Riding Talbuk
+								i(29138),	-- Arechron's Gift
+								i(29146),	-- Band of Elemental Spirits
+								i(29148),	-- Blackened Leather Spaulders
+								i(29140),	-- Cloak of the Ancient Spirit
+								i(29136),	-- Far Seer's Helm
+								i(29142),	-- Kurenai Kilt
 								i(31774),	-- Kurenai Tabard
 								i(34175),	-- Pattern: Drums of Restoration
 								i(34173),	-- Pattern: Drums of Speed
@@ -244,12 +245,14 @@ _.Zones =
 								i(29219),	-- Pattern: Netherfury Leggings
 								i(30444),	-- Pattern: Reinforced Mining Bag
 								i(30443),	-- Recipe: Transmute Primal Fire to Earth
-								i(29138),	-- Arechron's Gift
-								i(29136),	-- Far Seer's Helm
-								i(29140),	-- Cloak of the Ancient Spirit
-								i(29148),	-- Blackened Leather Spaulders
-								i(29142),	-- Kurenai Kilt
-								i(29146),	-- Band of Elemental Spirits
+								i(31830),	-- Reins of the Cobalt Riding Talbuk
+								i(29227),	-- Reins of the Cobalt War Talbuk
+								i(31832),	-- Reins of the Silver Riding Talbuk
+								i(29229),	-- Reins of the Silver War Talbuk
+								i(31834),	-- Reins of the Tan Riding Talbuk
+								i(29230),	-- Reins of the Tan War Talbuk
+								i(31836),	-- Reins of the White Riding Talbuk
+								i(29231),	-- Reins of the White War Talbuk
 								un(2, i(29144)),	-- Worg Hide Quiver
 							},
 						}),
