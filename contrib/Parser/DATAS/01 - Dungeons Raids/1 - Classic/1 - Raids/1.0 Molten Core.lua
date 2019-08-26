@@ -731,6 +731,19 @@ _.Instances = { tier(1, {	-- Classic
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
 			cr(12018, e(1527, {	-- Majordomo Executus
+				{
+					["itemID"] = 18703,	-- Ancient Petrified Leaf
+					["questID"] = 7632,	-- The Ancient Leaf
+					["classes"] = { 3 },	-- Hunter
+					["lvl"] = 60,
+					["u"] = 2,
+				},
+				i(18646, {	-- The Eye of Divinity
+					["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+					["sourceQuest"] = 7622,	-- The Balance of Light and Shadow
+					["classes"] = { 5 },
+					["u"] = 2,
+				}),
 				i(18803),	-- Finkle's Lava Dredger
 				i(18805),	-- Core Hound Tooth
 				i(19139),	-- Fireguard Shoulders
@@ -741,7 +754,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(18809),	-- Sash of Whispered Secrets
 				i(18806),	-- Core Forged Greaves
 				i(19140),	-- Cauterizing Band
-				un(2, i(18646)),	-- The Eye of Divinity
 			})),
 			cr(11502, e(1528, {	-- Ragnaros
 				ach(686),	-- Molten Core
