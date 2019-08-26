@@ -509,6 +509,7 @@ _.Zones =
 					["qg"] = 73097,	-- Frostwolf Champion
 					["coord"] = { 60.9, 65.0, 525 },
 					["sourceQuest"] = 33826,	-- Where's My Wolf?!
+					["races"] = HORDE_ONLY,
 				},
 				{	-- Eye Need That
 					["questID"] = 34230,
@@ -775,6 +776,7 @@ _.Zones =
 				{	-- Return to the Pack
 					["questID"] = 33493,
 					["qg"] = 72940,	-- Frostwolf Champion
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						32994,	-- Enfilade
 						33828,	-- The Master Siegesmith
