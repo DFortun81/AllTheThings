@@ -21,9 +21,11 @@ _.Zones =
 					}),
 					fp(610, {	-- Stygian Bounty, Vashj'ir (Horde - Flight Master)
 						["coord"] = { 64.8, 68.0, 205 },
+						["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
 					}),
 					fp(612, {	-- Stygian Bounty, Vashj'ir (Horde - Seahorse)
 						["coord"] = { 49.4, 65.6, 205 },
+						["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
 					}),
 					fp(523, {	-- Tranquil Wash Hollow, Vashj'ir
 						["coord"] = { 48.6, 57.4, 205 },

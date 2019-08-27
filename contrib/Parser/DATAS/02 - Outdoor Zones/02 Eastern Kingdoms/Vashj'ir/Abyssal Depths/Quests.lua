@@ -105,9 +105,14 @@ _.Zones =
 					q(26019, {	-- Enormous Eel Egg
 						["races"] = ALLIANCE_ONLY,
 					}),
+					]]--
 					q(26122, {	-- Environmental Awareness
+						["qg"] = 41669,	-- Fiasco Sizzlegrin
+						["coord"] = { 51.4, 60.7, 204 },
 						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 26221,	-- Full Circle
 					}),
+					--[[
 					q(26132, {	-- Fiends from the Netherworld
 						["races"] = ALLIANCE_ONLY,
 					}),

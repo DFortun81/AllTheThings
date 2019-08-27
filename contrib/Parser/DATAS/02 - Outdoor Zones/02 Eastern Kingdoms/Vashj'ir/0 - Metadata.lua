@@ -32,7 +32,9 @@ _.Zones =
 							crit(6, {	-- Nespirah
 								["sourceQuest"] = 25922,	-- Waking the Beast
 							}),
-							crit(7),	-- Visions of the Past
+							crit(7, {	-- Visions of the Past
+								["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
+							}),
 							crit(8),	-- The Merciless One
 							crit(9),	-- L'ghorek
 							crit(10),	-- The Tidehunter
@@ -59,13 +61,17 @@ _.Zones =
 							crit(6, {	-- Nespirah
 								["sourceQuest"] = 25996,	-- Waking the Beast
 							}),
-							crit(7),	-- Visions of the Past
+							crit(7, {	-- Visions of the Past
+								["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
+							}),
 							crit(8),	-- The Merciless One
 							crit(9),	-- L'ghorek
 							crit(10),	-- The Tidehunter
 						},
 					}),
-					ach(5452),		-- Visions of Vashj'ir Past
+					ach(5452, {	-- Visions of Vashj'ir Past
+						["sourceQuest"] = 25951,	-- Final Judgment
+					}),
 				}),
 			}
 		}),

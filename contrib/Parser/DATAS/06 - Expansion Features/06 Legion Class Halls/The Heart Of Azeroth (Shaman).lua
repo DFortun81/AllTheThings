@@ -110,6 +110,16 @@ _.ExpansionFeatures =
 							follower(608),	-- Stormcaller Mylra
 						},
 					}),
+					q(43644, {	-- To the Deeps
+						["qg"] = 96530,	-- Erunak Stonespeaker
+						["lvl"] = 98,
+						["classes"] = { 7 },	-- Shaman
+					}),
+					q(43645, {	-- Wavespeaker's Trail
+						["qg"] = 96530,	-- Erunak Stonespeaker
+						["lvl"] = 98,
+						["classes"] = { 7 },	-- Shaman
+					}),
 				}),
 				--[[
 				n(99428, {	-- Scouting Map
