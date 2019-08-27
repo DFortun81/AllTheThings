@@ -48,7 +48,7 @@ _.Zones =
 					},
 				}),
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
-					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
+					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.2, 64.0, 109 },
 					["g"] = {
 						a(i(77549)),	-- Replica Grand Marshal's Demolisher
@@ -280,13 +280,25 @@ _.Zones =
 				n(19536,  {	-- Dealer Jadyan <Exotic Weapons>
 					["coord"] = { 44.0, 36.6, 109 },
 					["g"] = {
+						i(29380, {	-- Ethereum Phase Blade
+							["isLimited"] = true,
+						}),
+						i(29377, {	-- Ethereum Phase-Spear
+							["isLimited"] = true,
+						}),
 						i(78348),	-- Formula: Enchant Weapon - Executioner
-						i(29371),	-- Nexus-Claw
-						i(29372),	-- Void-Talon
-						i(29377),	-- Ethereum Phase-Spear
-						i(29378),	-- Starheart Baton
-						i(29380),	-- Ethereum Phase Blade
-						i(29391),	-- Pulse Dagger
+						i(29371, {	-- Nexus-Claw
+							["isLimited"] = true,
+						}),
+						i(29391, {	-- Pulse Dagger
+							["isLimited"] = true,
+						}),
+						i(29378, {	-- Starheart Baton
+							["isLimited"] = true,
+						}),
+						i(29372, {	-- Void-Talon
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(19537,  {	-- Dealer Malij <Enchanting Supplies>
@@ -301,14 +313,14 @@ _.Zones =
 				n(20980,  {	-- Dealer Rashaad <Exotic Creatures>
 					["coord"] = { 43.4, 35.2, 109 },
 					["g"] = {
-						i(8490),	-- Cat Carrier (Siamese) Pet
-						i(8495),	-- Parrot Cage (Senegal) Pet
-						i(10392),	-- Crimson Snake Pet
-						i(10393),	-- Undercity Cockroach Pet
-						i(29363),	-- Mana Wyrmling Pet
-						i(29364),	-- Brown Rabbit Crate Pet
-						i(29902),	-- Red Moth Egg Pet
-						i(29958),	-- Blue Dragonhawk Hatchling Pet
+						i(29958),	-- Blue Dragonhawk Hatchling (PET!)
+						i(29364),	-- Brown Rabbit Crate (PET!)
+						i(8490),	-- Cat Carrier (Siamese) (PET!)
+						i(10392),	-- Crimson Snake (PET!)
+						i(29363),	-- Mana Wyrmling (PET!)
+						i(8495),	-- Parrot Cage (Senegal) (PET!)
+						i(29902),	-- Red Moth Egg (PET!)
+						i(10393),	-- Undercity Cockroach (PET!)
 					},
 				}),
 				n(34091,  {	-- Grex Brainboiler Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
@@ -727,9 +739,8 @@ _.Zones =
 				n(20242,  {	-- Karaaz <Consortium Quartermaster>
 					["coord"] = { 43.6, 34.4, 109 },
 					["g"] = {
+						i(29115),	-- Consortium Blaster
 						i(31776),	-- Consortium Tabard
-						un(2, i(29118)),	-- Smuggler's Ammo Pouch
-						i(138796),	-- Illusion: Executioner
 						i(33156),	-- Design: Crimson Sun
 						i(23134),	-- Design: Delicate Blood Garnet
 						i(33305),	-- Design: Don Julio's Heart
@@ -758,18 +769,19 @@ _.Zones =
 						i(25908),	-- Design: Swift Skyfire Diamond
 						i(28274),	-- Formula: Enchant Cloak - PvP Power
 						i(22552),	-- Formula: Enchant Weapon - Major Striking
+						i(29456),	-- Gift of the Ethereal
+						i(29121),	-- Guile of Khoraazi
+						i(29119),	-- Haramad's Bargain
+						i(138796),	-- Illusion: Executioner
+						i(29122),	-- Nether Runner's Cowl
+						i(29457),	-- Nethershard
+						i(29116),	-- Nomad's Leggings
 						i(24314),	-- Pattern: Bag of Jewels
 						i(25733), 	-- Pattern: Fel Leather Boots
 						i(25732), 	-- Pattern: Fel Leather Gloves
 						i(25734), 	-- Pattern: Fel Leather Leggings
 						i(23874),	-- Schematic: Elemental Seaforium Charge
-						i(29115),	-- Consortium Blaster
-						i(29456),	-- Gift of the Ethereal
-						i(29121),	-- Guile of Khoraazi
-						i(29457),	-- Nethershard
-						i(29119),	-- Haramad's Bargain
-						i(29122),	-- Nether Runner's Cowl
-						i(29116),	-- Nomad's Leggings
+						un(2, i(29118)),	-- Smuggler's Ammo Pouch
 						i(29117),	-- Stormspire Vest
 					},
 				}),
@@ -1396,7 +1408,7 @@ _.Zones =
 					},
 				}),
 				n(23396,  {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate>
-					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
+					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.0, 64.0, 109 },
 					["g"] = {
 						i(77718),	-- Replica Field Marshal's Plate Shoulderguards
@@ -1476,7 +1488,7 @@ _.Zones =
 					},
 				}),
 				n(54648,  {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
-					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
+					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.0, 64.0, 109 },
 					["g"] = {
 						i(77897),	-- Replica Warlord's Lamellar Pauldrons
@@ -1554,7 +1566,7 @@ _.Zones =
 					},
 				}),
 				n(58152,  {	-- Tini Smalls <Classic Horde Cloth & Leather>
-					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
+					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.0, 64.2, 109 },
 					["g"] = {
 						i(77900),	-- Replica Warlord's Satin Cowl
@@ -1663,8 +1675,12 @@ _.Zones =
 				n(20112,  {	-- Wind Trader Tuluman <Weapon Merchant>
 					["coord"] = { 34.6, 37.8, 109 },
 					["g"] = {
-						i(30753),	-- Warphorn Spear
-						i(30755),	-- Mag'hari Fighting Claw
+						i(30755, {	-- Mag'hari Fighting Claw
+							["isLimited"] = true,
+						}),
+						i(30753, {	-- Warphorn Spear
+							["isLimited"] = true,
+						}),
 					},
 				}),
 			}),

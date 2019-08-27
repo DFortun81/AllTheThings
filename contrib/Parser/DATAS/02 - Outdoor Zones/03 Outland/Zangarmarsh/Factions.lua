@@ -41,35 +41,36 @@ _.Zones =
 							n(17904,  {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 								["coord"] = { 79.25, 63.66, 102 },
 								["g"] = {
+									i(29172),	-- Ashyen's Gift
 									i(31804),	-- Cenarion Expedition Tabard
-									i(33999),	-- Cenarion War Hippogryph Mount
+									i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 									i(35403),	-- Crusader's Ornamented Gloves
 									i(35415),	-- Crusader's Scaled Legguards
-									i(24183),	-- Design: Nightseye Panther						
+									i(24183),	-- Design: Nightseye Panther
 									i(31402),	-- Design: The Natural Ward
 									i(35358),	-- Dragonhide Legguards
 									i(35329),	-- Dreadweave Hood
 									i(29171),	-- Earthwarden
 									i(35347),	-- Evoker's Silk Trousers
-									i(25835),	-- Explorer's Walking Stick						
+									i(25835),	-- Explorer's Walking Stick
 									i(33149),	-- Formula: Enchant Cloak - Stealth
 									i(28271),	-- Formula: Enchant Gloves - Precise Strikes
 									i(35365),	-- Kodohide Robe
 									i(35336),	-- Mooncloth Shoulderpads
-									i(35367),	-- Opportunist's Leather Helm						
+									i(35367),	-- Opportunist's Leather Helm
 									i(29720),	-- Pattern: Clefthide Leg Armor
 									i(25737),	-- Pattern: Heavy Clefthoof Boots
 									i(25736),	-- Pattern: Heavy Clefthoof Leggings
 									i(25735),	-- Pattern: Heavy Clefthoof Vest
 									un(1, i(24315)),	-- Pattern: Heavy Netherweave Net
-									i(29721),	-- Pattern: Nethercleft Leg Armor						
+									i(29721),	-- Pattern: Nethercleft Leg Armor
 									i(23618),	-- Plans: Adamantite Sharpening Stone
 									i(28632),	-- Plans: Adamantite Weightstone
-									i(25526),	-- Plans: Greater Rune of Warding						
+									i(25526),	-- Plans: Greater Rune of Warding
 									i(31390),	-- Plans: Wildguard Breastplate
 									i(31392),	-- Plans: Wildguard Helm
 									i(31391),	-- Plans: Wildguard Leggings
-									i(25836),	-- Preserver's Cudgel						
+									i(25836),	-- Preserver's Cudgel
 									i(32070),	-- Recipe: Earthen Elixir
 									i(31356),	-- Recipe: Flask of Distilled Wisdom
 									i(22922),	-- Recipe: Major Nature Protection Potion
@@ -82,12 +83,11 @@ _.Zones =
 									i(35387),	-- Seer's Mail Gauntlets
 									i(35394),	-- Seer's Ringmail Legguards
 									i(35379),	-- Stalker's Chain Leggings
+									i(29173),	-- Strength of the Untamed
 									i(25838),	-- Warden's Hauberk
 									i(29174),	-- Watcher's Cowl
 									i(29170),	-- Windcaller's Orb
 									i(35374),	-- Wyrmhide Spaulders
-									i(29173),	-- Strength of the Untamed
-									i(29172),	-- Ashyen's Gift
 								},
 							}),
 						}),
@@ -136,46 +136,44 @@ _.Zones =
 							n(18382, {	-- Mycah <Sporeggar Quartermaster>
 								["coord"] = { 18.27, 51.12, 102 },
 								["g"] = {
-									i(24245, {	-- Glowcap
-										i(34478, {	-- Tiny Sporebat
-											["description"] = "Cost: 30 Glowcaps",
-										}),
-										i(31775, {	-- Sporeggar Tabard
-											["description"] = "Cost: 10 Glowcaps",
-										}),
-										i(38229, {	-- Pattern: Mycah's Botanical Bag
-											["description"] = "Cost: 25 Glowcaps",
-										}),
-										i(30156, {	-- Recipe: Clam Bar
-											["description"] = "Cost: 1 Glowcap",
-										}),
-										i(22906, {	-- Recipe: Shrouding Potion
-											["description"] = "Cost: 30 Glowcaps",
-										}),
-										i(22916, {	-- Recipe: Transmute Primal Earth to Water
-											["description"] = "Cost: 25 Glowcaps",
-										}),
-										i(29150, {	-- Hardened Stone Shard
-											["description"] = "Cost: 45 Glowcaps",
-										}),
-										i(25828, {	-- Petrified Lichen Guard
-											["description"] = "Cost: 15 Glowcaps",
-										}),
-										i(29149, {	-- Sporeling's Firestick
-											["description"] = "Cost: 20 Glowcaps",
-										}),
-										i(25827, {	-- Muck-Covered Drape
-											["description"] = "Cost: 25 Glowcaps",
-										}),
-										i(24539, {	-- Marsh Lichen
-											["description"] = "Cost: 2 Glowcaps",
-										}),
-										i(25550, {	-- Redcap Toadstool
-											["description"] = "Cost: 1 Glowcap",
-										}),
-										i(25548, {	-- Tallstalk Mushroom
-											["description"] = "Cost: 1 Glowcap",
-										}),
+									i(34478, {	-- Tiny Sporebat
+										["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
+									}),
+									i(31775, {	-- Sporeggar Tabard
+										["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
+									}),
+									i(38229, {	-- Pattern: Mycah's Botanical Bag
+										["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
+									}),
+									i(30156, {	-- Recipe: Clam Bar
+										["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+									}),
+									i(22906, {	-- Recipe: Shrouding Potion
+										["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
+									}),
+									i(22916, {	-- Recipe: Transmute Primal Earth to Water
+										["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
+									}),
+									i(29150, {	-- Hardened Stone Shard
+										["cost"] = { { "i", 24245, 45 }, },	-- 45x Glowcap
+									}),
+									i(25828, {	-- Petrified Lichen Guard
+										["cost"] = { { "i", 24245, 15 }, },	-- 15x Glowcap
+									}),
+									i(29149, {	-- Sporeling's Firestick
+										["cost"] = { { "i", 24245, 20 }, },	-- 20x Glowcap
+									}),
+									i(25827, {	-- Muck-Covered Drape
+										["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
+									}),
+									i(24539, {	-- Marsh Lichen
+										["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
+									}),
+									i(25550, {	-- Redcap Toadstool
+										["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+									}),
+									i(25548, {	-- Tallstalk Mushroom
+										["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
 									}),
 								},
 							}),

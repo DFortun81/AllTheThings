@@ -10,22 +10,20 @@ _.Zones =
 					["coord"] = { 64.6, 46.4, 102 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(24579, {	-- Mark of Honor Hold
-							i(27931, {	-- Splintermark
-								["description"] = "Cost: 15 Mark of Honor Hold",									
-							}),		
-							i(27942, {	-- Incendic Rod
-								["description"] = "Cost: 15 Mark of Honor Hold",
-							}),		
-							i(27921, {	-- Mark of Conquest
-								["description"] = "Cost: 30 Mark of Honor Hold",
-							}),		
-							i(27922, {	-- Mark of Defiance
-								["description"] = "Cost: 30 Mark of Honor Hold",
-							}),		
-							i(27927, {	-- Mark of Vindication
-								["description"] = "Cost: 30 Mark of Honor Hold",
-							}),
+						i(27931, {	-- Splintermark
+							["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+						}),		
+						i(27942, {	-- Incendic Rod
+							["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+						}),		
+						i(27921, {	-- Mark of Conquest
+							["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
+						}),		
+						i(27922, {	-- Mark of Defiance
+							["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
+						}),		
+						i(27927, {	-- Mark of Vindication
+							["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
 						}),
 					},
 				}),
@@ -33,7 +31,12 @@ _.Zones =
 					["coord"] = { 32.4, 48.0, 102 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(23805),	-- Schematic: Ultra-Spectroscopic Detection Goggles
+						i(23805, {	-- Schematic: Ultra-Spectroscopic Detection Goggles
+							["isLimited"] = true,
+						}),
+						i(23811, {	-- Schematic: White Smoke Flare
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(20028, {	-- Doba <Cooking Supplies>
@@ -55,32 +58,36 @@ _.Zones =
 					["coord"] = { 67.8, 48.0, 102 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(22909),	-- Recipe: Elixir of Major Defense
-						i(22911),	-- Recipe: Major Dreamless Sleep Potion
-						i(22907),	-- Recipe: Super Mana Potion
+						i(22909, {	-- Recipe: Elixir of Major Defense
+							["isLimited"] = true,
+						}),
+						i(22902, {	-- Recipe: Elixir of Major Frost Power
+							["isLimited"] = true,
+						}),
+						i(22907, {	-- Recipe: Super Mana Potion
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(18564, {	-- Horde Field Scout
 					["coord"] = { 33.0, 49.0, 102 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(24581, {	-- Mark of Thrallmar
-							i(27930, {	-- Splintermark
-								["description"] = "Cost: 15 Mark of Thrallmar",									
-							}),		
-							i(27939, {	-- Incendic Rod
-								["description"] = "Cost: 15 Mark of Thrallmar",
-							}),		
-							i(27920, {	-- Mark of Conquest
-								["description"] = "Cost: 30 Mark of Thrallmar",
-							}),		
-							i(27924, {	-- Mark of Defiance
-								["description"] = "Cost: 30 Mark of Thrallmar",
-							}),		
-							i(27926, {	-- Mark of Vindication
-								["description"] = "Cost: 30 Mark of Thrallmar",
-							}),
+						i(27939, {	-- Incendic Rod
+							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+						}),		
+						i(27920, {	-- Mark of Conquest
+							["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
+						}),		
+						i(27924, {	-- Mark of Defiance
+							["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
+						}),		
+						i(27926, {	-- Mark of Vindication
+							["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
 						}),
+						i(27930, {	-- Splintermark
+							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+						}),	
 					},
 				}),
 				n(18911, {	-- Juno Dufrain <Fishing Trainer>
@@ -93,33 +100,51 @@ _.Zones =
 					["coord"] = { 68.6, 50.2, 102 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(23596),	-- Plans: Adamantite Breastplate
-						i(23594),	-- Plans: Adamantite Plate Bracers
-						i(23595),	-- Plans: Adamantite Plate Gloves
+						i(23596, {	-- Plans: Adamantite Breastplate
+							["isLimited"] = true,
+						}),
+						i(23594, {	-- Plans: Adamantite Plate Bracers
+							["isLimited"] = true,
+						}),
+						i(23595, {	-- Plans: Adamantite Plate Gloves
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(19722, {	-- Muheru the Weaver <Tailoring Supplies>
 					["coord"] = { 40.4, 28.2, 102 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(21899), 	-- Pattern: Imbued Netherweave Boots
-						i(21898), 	-- Pattern: Imbued Netherweave Pants
+						i(21899, {	-- Pattern: Imbued Netherweave Boots
+							["isLimited"] = true,
+						}),
+						i(21898, {	-- Pattern: Imbued Netherweave Pants
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(18017, {	-- Seer Janidi <Reagents>
 					["coord"] = { 32.4, 51.8, 102 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(22902),	-- Recipe: Elixir of Major Frost Power
-						i(22901),	-- Recipe: Sneaking Potion
+						i(22902, {	-- Recipe: Elixir of Major Frost Power
+							["isLimited"] = true,
+						}),
+						i(22901, {	-- Recipe: Sneaking Potion
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(18011, {	-- Zurai <Merchant>
 					["coord"] = { 85.2, 54.6, 102 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(21899),	-- Pattern: Imbued Netherweave Boots
-						i(21898),	-- Pattern: Imbued Netherweave Pants
+						i(21899, {	-- Pattern: Imbued Netherweave Boots
+							["isLimited"] = true,
+						}),
+						i(21898, {	-- Pattern: Imbued Netherweave Pants
+							["isLimited"] = true,
+						}),
 						i(27695),	-- Recipe: Feltail Delight
 					},
 				}),
