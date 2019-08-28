@@ -178,23 +178,26 @@ _.Instances = { tier(1, {	-- Classic
 					i(76401, {	-- Scarab Coffer Key
 						["groups"] = {
 							o(180691, {	-- Scarab Coffer
-								i(21156, {	-- Scarab Bag
-									i(20861),	-- Bronze Scarab
-									i(20859),	-- Gold Scarab
-									i(20862),	-- Crystal Scarab
-									i(20865),	-- Ivory Scarab
-									i(20860),	-- Silver Scarab
-									i(20858),	-- Stone Scarab
-									i(20864),	-- Bone Scarab
-									i(20863),	-- Clay Scarab
-								}),
-								i(20869),	-- Amber Idol
-								i(20870),	-- Jasper Idol
-								i(20872),	-- Vermillion Idol
-								i(20873),	-- Alabaster Idol
-								i(20871),	-- Obsidian Idol
-								i(20868),	-- Lambent Idol
-								i(20867),	-- Onyx Idol
+								["model"] = 200952,
+								["g"] = {
+									i(21156, {	-- Scarab Bag
+										i(20861),	-- Bronze Scarab
+										i(20859),	-- Gold Scarab
+										i(20862),	-- Crystal Scarab
+										i(20865),	-- Ivory Scarab
+										i(20860),	-- Silver Scarab
+										i(20858),	-- Stone Scarab
+										i(20864),	-- Bone Scarab
+										i(20863),	-- Clay Scarab
+									}),
+									i(20869),	-- Amber Idol
+									i(20870),	-- Jasper Idol
+									i(20872),	-- Vermillion Idol
+									i(20873),	-- Alabaster Idol
+									i(20871),	-- Obsidian Idol
+									i(20868),	-- Lambent Idol
+									i(20867),	-- Onyx Idol
+								},
 							}),
 						},
 					}),

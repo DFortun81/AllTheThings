@@ -42,27 +42,31 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = HORDE_ONLY,
 				}),
 				o(131474, {	-- The Discs of Norgannon
-					q(2278),	-- The Platinum Discs
-					q(2279, {	-- The Platinum Discs [Alliance]
-						["sourceQuest"] = 2278,	-- The Platinum Discs
-						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 45,
-						["u"] = 40,
-					}),
---[[				q(2280, {	-- The Platinum Discs [Horde] (before Blizzard reworked this Quest)
-						["sourceQuest"] = 2278,	-- The Platinum Discs
-						["races"] = HORDE_ONLY,
-						["lvl"] = 45,
-						["u"] = 40,
-]]--				}),
-					q(2280, {	-- The Platinum Discs
-						["sourceQuest"] = 2278,	-- The Platinum Discs
-						["g"] = {
-							i(65921),	-- Durdin's Hammer
-							i(65947),	-- Platinum Sword
-							i(65971),	-- Band of Uldaman
-						},
-					}),
+					["model"] = 203420,
+					["modelScale"] = 3,
+					["g"] = {
+						q(2278),	-- The Platinum Discs
+						q(2279, {	-- The Platinum Discs [Alliance]
+							["sourceQuest"] = 2278,	-- The Platinum Discs
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 45,
+							["u"] = 40,
+						}),
+	--[[				q(2280, {	-- The Platinum Discs [Horde] (before Blizzard reworked this Quest)
+							["sourceQuest"] = 2278,	-- The Platinum Discs
+							["races"] = HORDE_ONLY,
+							["lvl"] = 45,
+							["u"] = 40,
+	]]--				}),
+						q(2280, {	-- The Platinum Discs
+							["sourceQuest"] = 2278,	-- The Platinum Discs
+							["g"] = {
+								i(65921),	-- Durdin's Hammer
+								i(65947),	-- Platinum Sword
+								i(65971),	-- Band of Uldaman
+							},
+						}),
+					},
 				}),
 				q(2240, {	-- The Hidden Chamber
 					["u"] = 40,

@@ -34,6 +34,8 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				o(177964, {	-- Fathom Stone
+					["model"] = 200024,
+					["modelScale"] = 3,
 					["u"] = 43,
 					["races"] = HORDE_ONLY,
 					["groups"] = {

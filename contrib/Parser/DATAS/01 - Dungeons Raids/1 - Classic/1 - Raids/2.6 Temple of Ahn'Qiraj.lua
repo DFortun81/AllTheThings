@@ -516,24 +516,27 @@ _.Instances = { tier(1, {	-- Classic
 				i(76402, {	-- Greater Scarab Coffer Key
 					["groups"] = {
 						o(180690, {	-- Large Scarab Coffe
-							i(21156, {	-- Scarab Bag
-								i(20861),	-- Bronze Scarab
-								i(20859),	-- Gold Scarab
-								i(20862),	-- Crystal Scarab
-								i(20865),	-- Ivory Scarab
-								i(20860),	-- Silver Scarab
-								i(20858),	-- Stone Scarab
-								i(20864),	-- Bone Scarab
-								i(20863),	-- Clay Scarab
-							}),
-							i(20876),	-- Idol of Death
-							i(20875),	-- Idol of Night
-							i(20881),	-- Idol of Strife
-							i(20877),	-- Idol of the Sage
-							i(20874),	-- Idol of the Sun
-							i(20882),	-- Idol of War
-							i(20879),	-- Idol of Life
-							i(20878),	-- Idol of Rebirth
+							["model"] = 200952,
+							["g"] = {
+								i(21156, {	-- Scarab Bag
+									i(20861),	-- Bronze Scarab
+									i(20859),	-- Gold Scarab
+									i(20862),	-- Crystal Scarab
+									i(20865),	-- Ivory Scarab
+									i(20860),	-- Silver Scarab
+									i(20858),	-- Stone Scarab
+									i(20864),	-- Bone Scarab
+									i(20863),	-- Clay Scarab
+								}),
+								i(20876),	-- Idol of Death
+								i(20875),	-- Idol of Night
+								i(20881),	-- Idol of Strife
+								i(20877),	-- Idol of the Sage
+								i(20874),	-- Idol of the Sun
+								i(20882),	-- Idol of War
+								i(20879),	-- Idol of Life
+								i(20878),	-- Idol of Rebirth
+							},
 						}),
 					},
 				}),

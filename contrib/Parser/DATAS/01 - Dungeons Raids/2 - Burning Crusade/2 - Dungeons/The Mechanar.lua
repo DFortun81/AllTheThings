@@ -18,9 +18,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				})),
 			}),
 			o(184465, {	-- Cache of the Legion
-				["model"] = "World\\Expansion01\\Doodads\\TempestKeep\\Passivedoodads\\Container\\TK_Container_01.mdx",
-				["modelRotation"] = 358,
-				["modelScale"] = 1.3,
+				["model"] = 193577,
+				["modelScale"] = 1.6,
 				["groups"] = {
 					i(28252),	-- Bloodfyre Robes of Annihilation
 					i(28251),	-- Boots of the Glade-Keeper

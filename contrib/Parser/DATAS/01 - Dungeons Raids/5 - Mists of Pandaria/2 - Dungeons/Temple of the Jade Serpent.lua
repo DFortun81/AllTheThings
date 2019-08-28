@@ -45,10 +45,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 					},
 					o(221413, {	-- Lin Family Scroll
-						q(33107, {	-- Bad Feeling, Worse Result
-							["requireSkill"] = 185,	-- Cooking
-							["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
-						}),
+						["model"] = 534984,
+						["modelScale"] = 2,
+						["g"] = {
+							q(33107, {	-- Bad Feeling, Worse Result
+								["requireSkill"] = 185,	-- Cooking
+								["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
+							}),
+						},
 					}),
 				}),
 				n(0, {	-- Zone Drops

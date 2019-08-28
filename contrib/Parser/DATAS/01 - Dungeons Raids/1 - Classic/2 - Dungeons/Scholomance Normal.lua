@@ -187,6 +187,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(10503, {	-- Jandice Barov
 						un(2, o(180794, {	-- Journal of Jandice Barov
 							["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
+							["model"] = 198032,
 							["g"] = {
 								un(2, recipe(26086)),	-- Felcloth Bag
 							},

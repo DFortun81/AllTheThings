@@ -9,15 +9,19 @@ _.Instances = { tier(7, {	-- Legion
 		["g"] = {
 			n(-17, {	-- Quests
 				o(251991, {	-- The Aegis of Aggramar
-					q(43349, {	-- The Aegis of Aggramar
-						["sourceQuests"] = { 40072 },	-- Halls of Valor: Securing the Aegis
-						["g"] = {
-							i(130016),	-- Valor-Bound Legplates
-							i(129997),	-- Valor-Bound Legwraps
-							i(129989),	-- Valor-Bound Trousers
-							i(130005),	-- Valor-Bound Greaves
-						},
-					}),
+					["model"] = 1361813,
+					["modelScale"] = 3,
+					["g"] = {
+						q(43349, {	-- The Aegis of Aggramar
+							["sourceQuests"] = { 40072 },	-- Halls of Valor: Securing the Aegis
+							["g"] = {
+								i(130016),	-- Valor-Bound Legplates
+								i(129997),	-- Valor-Bound Legwraps
+								i(129989),	-- Valor-Bound Trousers
+								i(130005),	-- Valor-Bound Greaves
+							},
+						}),
+					},
 				}),
 			}),
 			n(-34, {	-- World Quests

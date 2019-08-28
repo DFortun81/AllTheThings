@@ -89,32 +89,35 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				e(529, {	-- Vazruden the Herald
 					["creatureID"] = 17307,
 					["g"] = {
-						model(34286, o(185168, { 	-- Reinforced Fel Iron Chest
-							i(24044),	-- Hellreaver
-							i(24155),	-- Ursol's Claw
-							i(29346),	-- Feltooth Eviscerator
-							i(27455),	-- Irondrake Faceguard
-							i(27454),	-- Volcanic Pauldrons
-							i(24150),	-- Mok'Nathal Wildercloak
-							i(27461),	-- Chestguard of the Prowler
-							i(27456),	-- Raiments of Nature's Breath
-							i(27452),	-- Light Scribe Bands
-							i(27459),	-- Vambraces of Daring
-							i(27457),	-- Life Bearer's Gauntlets
-							i(32077),	-- Wrath Infused Gauntlets
-							i(29238),	-- Lion's Heart Girdle
-							i(24063),	-- Shifting Sash of Midnight
-							i(29264),	-- Tree-Mender's Belt
-							i(24046),	-- Kilt of Rolling Thunders
-							i(24083),	-- Lifegiver Britches
-							i(27458),	-- Oceansong Kilt
-							i(24064),	-- Ironsole Clompers
-							i(27453),	-- Averinn's Ring of Slaying
-							i(24045),	-- Band of Renewal
-							i(24151),	-- Mok'Nathal Clan Ring
-							i(27460),	-- Reavers' Ring
-							i(24154),	-- Witching Band
-						})),
+						o(185168, { 	-- Reinforced Fel Iron Chest
+							["model"] = 196989,
+							["g"] = {
+								i(24044),	-- Hellreaver
+								i(24155),	-- Ursol's Claw
+								i(29346),	-- Feltooth Eviscerator
+								i(27455),	-- Irondrake Faceguard
+								i(27454),	-- Volcanic Pauldrons
+								i(24150),	-- Mok'Nathal Wildercloak
+								i(27461),	-- Chestguard of the Prowler
+								i(27456),	-- Raiments of Nature's Breath
+								i(27452),	-- Light Scribe Bands
+								i(27459),	-- Vambraces of Daring
+								i(27457),	-- Life Bearer's Gauntlets
+								i(32077),	-- Wrath Infused Gauntlets
+								i(29238),	-- Lion's Heart Girdle
+								i(24063),	-- Shifting Sash of Midnight
+								i(29264),	-- Tree-Mender's Belt
+								i(24046),	-- Kilt of Rolling Thunders
+								i(24083),	-- Lifegiver Britches
+								i(27458),	-- Oceansong Kilt
+								i(24064),	-- Ironsole Clompers
+								i(27453),	-- Averinn's Ring of Slaying
+								i(24045),	-- Band of Renewal
+								i(24151),	-- Mok'Nathal Clan Ring
+								i(27460),	-- Reavers' Ring
+								i(24154),	-- Witching Band
+							},
+						}),
 					},
 				})
 			}),
@@ -164,32 +167,35 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(529, {	-- Vazruden the Herald
 						["creatureID"] = 17307,
 						["g"] = {
-							model(34286, o(185168, { 	-- Reinforced Fel Iron Chest
-								i(24044),	-- Hellreaver
-								i(24155),	-- Ursol's Claw
-								i(29346),	-- Feltooth Eviscerator
-								i(27455),	-- Irondrake Faceguard
-								i(27454),	-- Volcanic Pauldrons
-								i(24150),	-- Mok'Nathal Wildercloak
-								i(27461),	-- Chestguard of the Prowler
-								i(27456),	-- Raiments of Nature's Breath
-								i(27452),	-- Light Scribe Bands
-								i(27459),	-- Vambraces of Daring
-								i(27457),	-- Life Bearer's Gauntlets
-								i(32077),	-- Wrath Infused Gauntlets
-								i(29238),	-- Lion's Heart Girdle
-								i(24063),	-- Shifting Sash of Midnight
-								i(29264),	-- Tree-Mender's Belt
-								i(24046),	-- Kilt of Rolling Thunders
-								i(24083),	-- Lifegiver Britches
-								i(27458),	-- Oceansong Kilt
-								i(24064),	-- Ironsole Clompers
-								i(27453),	-- Averinn's Ring of Slaying
-								i(24045),	-- Band of Renewal
-								i(24151),	-- Mok'Nathal Clan Ring
-								i(27460),	-- Reavers' Ring
-								i(24154),	-- Witching Band
-							})),
+							o(185168, { 	-- Reinforced Fel Iron Chest
+								["model"] = 196989,
+								["g"] = {
+									i(24044),	-- Hellreaver
+									i(24155),	-- Ursol's Claw
+									i(29346),	-- Feltooth Eviscerator
+									i(27455),	-- Irondrake Faceguard
+									i(27454),	-- Volcanic Pauldrons
+									i(24150),	-- Mok'Nathal Wildercloak
+									i(27461),	-- Chestguard of the Prowler
+									i(27456),	-- Raiments of Nature's Breath
+									i(27452),	-- Light Scribe Bands
+									i(27459),	-- Vambraces of Daring
+									i(27457),	-- Life Bearer's Gauntlets
+									i(32077),	-- Wrath Infused Gauntlets
+									i(29238),	-- Lion's Heart Girdle
+									i(24063),	-- Shifting Sash of Midnight
+									i(29264),	-- Tree-Mender's Belt
+									i(24046),	-- Kilt of Rolling Thunders
+									i(24083),	-- Lifegiver Britches
+									i(27458),	-- Oceansong Kilt
+									i(24064),	-- Ironsole Clompers
+									i(27453),	-- Averinn's Ring of Slaying
+									i(24045),	-- Band of Renewal
+									i(24151),	-- Mok'Nathal Clan Ring
+									i(27460),	-- Reavers' Ring
+									i(24154),	-- Witching Band
+								},
+							}),
 						},
 					}),
 				}
