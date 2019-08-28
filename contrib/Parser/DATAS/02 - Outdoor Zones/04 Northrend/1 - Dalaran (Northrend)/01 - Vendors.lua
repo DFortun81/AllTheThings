@@ -5,9 +5,9 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
-			n(-2, {	-- Vendors
+			n(-2, {		-- Vendors
 				n(28994,  {	-- Abra Cadabra
-					i(47658), 		-- Brimstone Igniter
+					i(47658),	-- Brimstone Igniter
 				}),
 				n(29512,  {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
 					i(21895),	-- Pattern: Primal Mooncloth
@@ -31,318 +31,422 @@ _.Zones =
 				n(32515,  {	-- Braeg Stoutbeard
 					["coord"] = { 37.33, 28.69, 125 },
 					["g"] = {
-						{	-- Arctic Fur
-							["itemID"] = 44128,	-- Arctic Fur
-							["g"] = {
-								{	-- Pattern: Earthgiving Boots
-									["itemID"] = 44553,	-- Pattern: Earthgiving Boots
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Earthgiving Legguards
-									["itemID"] = 44552,	-- Pattern: Earthgiving Legguards
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Giantmaim Bracers
-									["itemID"] = 44547,	-- Pattern: Giantmaim Bracers
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Giantmaim Legguards
-									["itemID"] = 44546,	-- Pattern: Giantmaim Legguards
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Revenant's Breastplate
-									["itemID"] = 44548,	-- Pattern: Revenant's Breastplate
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Revenant's Treads
-									["itemID"] = 44549,	-- Pattern: Revenant's Treads
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Swiftarrow Belt
-									["itemID"] = 44535,	-- Pattern: Swiftarrow Belt
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Trollwoven Girdle
-									["itemID"] = 44551,	-- Pattern: Trollwoven Girdle
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Trollwoven Spaulders
-									["itemID"] = 44550,	-- Pattern: Trollwoven Spaulders
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Windripper Boots
-									["itemID"] = 44932,	-- Pattern: Windripper Boots
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-								{	-- Pattern: Windripper Leggings
-									["itemID"] = 44933,	-- Pattern: Windripper Leggings
-									["description"] = "Cost: 2 Arctic Fur",
-								},
-							},
-						},
-						{	-- Heavy Borean Leather
-							["itemID"] = 38425,	-- Heavy Borean Leather
-							["g"] = {
-								{	-- Pattern: Icy Scale Belt
-									["itemID"] = 44588,	-- Pattern: Icy Scale Belt
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Icy Scale Boots
-									["itemID"] = 44589,	-- Pattern: Icy Scale Boots
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Icy Scale Chestguard
-									["itemID"] = 44587,	-- Pattern: Icy Scale Chestguard
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Polar Boots
-									["itemID"] = 44586,	-- Pattern: Polar Boots
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Polar Cord
-									["itemID"] = 44585,	-- Pattern: Polar Cord
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Polar Vest
-									["itemID"] = 44584,	-- Pattern: Polar Vest
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Eviscerator's Bindings
-									["itemID"] = 44516,	-- Pattern: Eviscerator's Bindings
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Eviscerator's Chestguard
-									["itemID"] = 44515,	-- Pattern: Eviscerator's Chestguard
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Eviscerator's Facemask
-									["itemID"] = 44513,	-- Pattern: Eviscerator's Facemask
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Eviscerator's Gauntlets
-									["itemID"] = 44517,	-- Pattern: Eviscerator's Gauntlets
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Eviscerator's Legguards
-									["itemID"] = 44519,	-- Pattern: Eviscerator's Legguards
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Eviscerator's Shoulderpads
-									["itemID"] = 44514,	-- Pattern: Eviscerator's Shoulderpads
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Eviscerator's Treads
-									["itemID"] = 44520,	-- Pattern: Eviscerator's Treads
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Eviscerator's Waistguard
-									["itemID"] = 44518,	-- Pattern: Eviscerator's Waistguard
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Overcast Belt
-									["itemID"] = 44526,	-- Pattern: Overcast Belt
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Overcast Boots
-									["itemID"] = 44528,	-- Pattern: Overcast Boots
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Overcast Bracers
-									["itemID"] = 44524,	-- Pattern: Overcast Bracers
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Overcast Chestguard
-									["itemID"] = 44523,	-- Pattern: Overcast Chestguard
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Overcast Handwraps
-									["itemID"] = 44525,	-- Pattern: Overcast Handwraps
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Overcast Headguard
-									["itemID"] = 44521,	-- Pattern: Overcast Headguard
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Overcast Leggings
-									["itemID"] = 44527,	-- Pattern: Overcast Leggings
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Overcast Spaulders
-									["itemID"] = 44522,	-- Pattern: Overcast Spaulders
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Stormhide Belt
-									["itemID"] = 44543,	-- Pattern: Stormhide Belt
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Stormhide Crown
-									["itemID"] = 44538,	-- Pattern: Stormhide Crown
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Stormhide Grips
-									["itemID"] = 44542,	-- Pattern: Stormhide Grips
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Stormhide Hauberk
-									["itemID"] = 44540,	-- Pattern: Stormhide Hauberk
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Stormhide Legguards
-									["itemID"] = 44544,	-- Pattern: Stormhide Legguards
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Stormhide Shoulders
-									["itemID"] = 44539,	-- Pattern: Stormhide Shoulders
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Stormhide Stompers
-									["itemID"] = 44545,	-- Pattern: Stormhide Stompers
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Stormhide Wristguards
-									["itemID"] = 44541,	-- Pattern: Stormhide Wristguards
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Swiftarrow Boots
-									["itemID"] = 44537,	-- Pattern: Swiftarrow Boots
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Swiftarrow Bracers
-									["itemID"] = 44533,	-- Pattern: Swiftarrow Bracers
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Swiftarrow Gauntlets
-									["itemID"] = 44534,	-- Pattern: Swiftarrow Gauntlets
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Swiftarrow Hauberk
-									["itemID"] = 44532,	-- Pattern: Swiftarrow Hauberk
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Swiftarrow Helm
-									["itemID"] = 44530,	-- Pattern: Swiftarrow Helm
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Swiftarrow Leggings
-									["itemID"] = 44536,	-- Pattern: Swiftarrow Leggings
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								{	-- Pattern: Swiftarrow Shoulderguards
-									["itemID"] = 44531,	-- Pattern: Swiftarrow Shoulderguards
-									["description"] = "Cost: 3 Heavy Borean Leather",
-								},
-								
-							},
-						},
+						i(44128, {	-- Arctic Fur
+							["cost"] = { { "i", 38425, 10 }, },	-- 10x Heavy Borean Leather
+						}),
+						i(44553, {	-- Pattern: Earthgiving Boots
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44552, {	-- Pattern: Earthgiving Legguards
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44516, {	-- Pattern: Eviscerator's Bindings
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44515, {	-- Pattern: Eviscerator's Chestguard
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44513, {	-- Pattern: Eviscerator's Facemask
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44517, {	-- Pattern: Eviscerator's Gauntlets
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44519, {	-- Pattern: Eviscerator's Legguards
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44514, {	-- Pattern: Eviscerator's Shoulderpads
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44520, {	-- Pattern: Eviscerator's Treads
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44518, {	-- Pattern: Eviscerator's Waistguard
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44547, {	-- Pattern: Giantmaim Bracers
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44546, {	-- Pattern: Giantmaim Legguards
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44588, {	-- Pattern: Icy Scale Belt
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44589, {	-- Pattern: Icy Scale Boots
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44587, {	-- Pattern: Icy Scale Chestguard
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44526, {	-- Pattern: Overcast Belt
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44528, {	-- Pattern: Overcast Boots
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44524, {	-- Pattern: Overcast Bracers
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44523, {	-- Pattern: Overcast Chestguard
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44525, {	-- Pattern: Overcast Handwraps
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44521, {	-- Pattern: Overcast Headguard
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44527, {	-- Pattern: Overcast Leggings
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44522, {	-- Pattern: Overcast Spaulders
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44586, {	-- Pattern: Polar Boots
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44585, {	-- Pattern: Polar Cord
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44584, {	-- Pattern: Polar Vest
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44548, {	-- Pattern: Revenant's Breastplate
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44549, {	-- Pattern: Revenant's Treads
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44543, {	-- Pattern: Stormhide Belt
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44538, {	-- Pattern: Stormhide Crown
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44542, {	-- Pattern: Stormhide Grips
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44540, {	-- Pattern: Stormhide Hauberk
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44544, {	-- Pattern: Stormhide Legguards
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44539, {	-- Pattern: Stormhide Shoulders
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44545, {	-- Pattern: Stormhide Stompers
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44541, {	-- Pattern: Stormhide Wristguards
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44535, {	-- Pattern: Swiftarrow Belt
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44537, {	-- Pattern: Swiftarrow Boots
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44533, {	-- Pattern: Swiftarrow Bracers
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44534, {	-- Pattern: Swiftarrow Gauntlets
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44532, {	-- Pattern: Swiftarrow Hauberk
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44530, {	-- Pattern: Swiftarrow Helm
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44536, {	-- Pattern: Swiftarrow Leggings
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44531, {	-- Pattern: Swiftarrow Shoulderguards
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
+						}),
+						i(44551, {	-- Pattern: Trollwoven Girdle
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44550, {	-- Pattern: Trollwoven Spaulders
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44932, {	-- Pattern: Windripper Boots
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
+						i(44933, {	-- Pattern: Windripper Leggings
+							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+						}),
 					},
 				}),
 				n(29523,  {	-- Bragund Brightlink <Mail Armor Merchant>
+					i(40736),	-- Armguard of the Tower Archer
 					i(50993),	-- Band of the Night Raven
-					i(50980),	-- Blizzard Keeper's Mitts
-					i(50979),	-- Logsplitters
-					i(50971),	-- Mail of the Geyser
-					i(50970),	-- Longstrider's Vest
-					i(50992),	-- Waistband of Despair
-					i(46212),	-- Conqueror's Worldbreaker Faceguard
-					i(46211),	-- Conqueror's Worldbreaker Shoulderpads
-					i(46210),	-- Conqueror's Worldbreaker Kilt
-					i(46209),	-- Conqueror's Worldbreaker Helm
-					i(46208),	-- Conqueror's Worldbreaker War-Kilt
-					i(46207),	-- Conqueror's Worldbreaker Gloves
-					i(46206),	-- Conqueror's Worldbreaker Hauberk
-					i(46205),	-- Conqueror's Worldbreaker Chestguard
-					i(46204),	-- Conqueror's Worldbreaker Spaulders
-					i(46203),	-- Conqueror's Worldbreaker Shoulderguards
+					i(40693),	-- Beadwork Belt of Shamanic Vision
 					i(45827),	-- Belt of the Ardent Marksman
-					i(46201),	-- Conqueror's Worldbreaker Headpiece
-					i(46200),	-- Conqueror's Worldbreaker Grips
-					i(46199),	-- Conqueror's Worldbreaker Handguards
-					i(46198),	-- Conqueror's Worldbreaker Tunic
-					i(46145),	-- Conqueror's Scourgestalker Spaulders
-					i(46144),	-- Conqueror's Scourgestalker Legguards
-					i(46143),	-- Conqueror's Scourgestalker Headpiece
-					i(46142),	-- Conqueror's Scourgestalker Handguards
-					i(46141),	-- Conqueror's Scourgestalker Tunic
-					i(45845),	-- Leggings of the Weary Mystic
-					i(45844),	-- Leggings of the Tireless Sentry
+					i(50980),	-- Blizzard Keeper's Mitts
+					i(46142, {	-- Conqueror's Scourgestalker Handguards
+						["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+					}),
+					i(46143, {	-- Conqueror's Scourgestalker Headpiece
+						["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+					}),
+					i(46144, {	-- Conqueror's Scourgestalker Legguards
+						["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+					}),
+					i(46145, {	-- Conqueror's Scourgestalker Spaulders
+						["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+					}),
+					i(46141, {	-- Conqueror's Scourgestalker Tunic
+						["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+					}),
+					i(46205, {	-- Conqueror's Worldbreaker Chestguard
+						["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+					}),
+					i(46212, {	-- Conqueror's Worldbreaker Faceguard
+						["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+					}),
+					i(46207, {	-- Conqueror's Worldbreaker Gloves
+						["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+					}),
+					i(46200, {	-- Conqueror's Worldbreaker Grips
+						["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+					}),
+					i(46199, {	-- Conqueror's Worldbreaker Handguards
+						["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+					}),
+					i(46206, {	-- Conqueror's Worldbreaker Hauberk
+						["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+					}),
+					i(46201, {	-- Conqueror's Worldbreaker Headpiece
+						["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+					}),
+					i(46209, {	-- Conqueror's Worldbreaker Helm
+						["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+					}),
+					i(46210, {	-- Conqueror's Worldbreaker Kilt
+						["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+					}),
+					i(46202, {	-- Conqueror's Worldbreaker Legguards
+						["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+					}),
+					i(46203, {	-- Conqueror's Worldbreaker Shoulderguards
+						["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+					}),
+					i(46211, {	-- Conqueror's Worldbreaker Shoulderpads
+						["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+					}),
+					i(46204, {	-- Conqueror's Worldbreaker Spaulders
+						["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+					}),
+					i(46198, {	-- Conqueror's Worldbreaker Tunic
+						["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+					}),
+					i(46208, {	-- Conqueror's Worldbreaker War-Kilt
+						["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+					}),
 					i(45837),	-- Gloves of Augury
 					i(45836),	-- Gloves of Unerring Aim
-					i(45828),	-- Windchill Binding
-					i(46202),	-- Conqueror's Worldbreaker Legguards
-					i(45363),	-- Valorous Scourgestalker Spaulders
-					i(45416),	-- Valorous Worldbreaker War-Kilt
-					i(45415),	-- Valorous Worldbreaker Shoulderguards
-					i(45414),	-- Valorous Worldbreaker Grips
-					i(45413),	-- Valorous Worldbreaker Chestguard
-					i(45412),	-- Valorous Worldbreaker Faceguard
-					i(45411),	-- Valorous Worldbreaker Hauberk
-					i(45410),	-- Valorous Worldbreaker Shoulderpads
-					i(45409),	-- Valorous Worldbreaker Kilt
-					i(45408),	-- Valorous Worldbreaker Helm
-					i(45406),	-- Valorous Worldbreaker Gloves
-					i(45405),	-- Valorous Worldbreaker Tunic
-					i(45404),	-- Valorous Worldbreaker Spaulders
-					i(45403),	-- Valorous Worldbreaker Legguards
-					i(45360),	-- Valorous Scourgestalker Handguards
-					i(45361),	-- Valorous Scourgestalker Headpiece
-					i(45362),	-- Valorous Scourgestalker Legguards
-					i(45402),	-- Valorous Worldbreaker Headpiece
-					i(45364),	-- Valorous Scourgestalker Tunic
-					i(45401),	-- Valorous Worldbreaker Handguards
-					i(40515),	-- Valorous Earthshatter Gloves
-					i(40506),	-- Valorous Cryptstalker Legguards
-					i(40737),	-- Pigmented Clan Bindings
-					i(40736),	-- Armguard of the Tower Archer
-					i(40524),	-- Valorous Earthshatter Shoulderguards
-					i(40523),	-- Valorous Earthshatter Chestguard
-					i(40522),	-- Valorous Earthshatter War-Kilt
-					i(40521),	-- Valorous Earthshatter Faceguard
-					i(40520),	-- Valorous Earthshatter Grips
-					i(40518),	-- Valorous Earthshatter Shoulderpads
-					i(40517),	-- Valorous Earthshatter Kilt
-					i(40516),	-- Valorous Earthshatter Helm
+					i(39582, {	-- Heroes' Cryptstalker Handguards
+						["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+					}),
+					i(39578, {	-- Heroes' Cryptstalker Headpiece
+						["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+					}),
+					i(39580, {	-- Heroes' Cryptstalker Legguards
+						["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+					}),
+					i(39581, {	-- Heroes' Cryptstalker Spaulders
+						["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+					}),
+					i(39579, {	-- Heroes' Cryptstalker Tunic
+						["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+					}),
+					i(39597, {	-- Heroes' Earthshatter Chestguard
+						["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+					}),
+					i(39602, {	-- Heroes' Earthshatter Faceguard
+						["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+					}),
+					i(39593, {	-- Heroes' Earthshatter Gloves
+						["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+					}),
+					i(39601, {	-- Heroes' Earthshatter Grips
+						["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+					}),
+					i(39591, {	-- Heroes' Earthshatter Handguards
+						["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+					}),
+					i(39592, {	-- Heroes' Earthshatter Hauberk
+						["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+					}),
+					i(39583, {	-- Heroes' Earthshatter Headpiece
+						["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+					}),
+					i(39594, {	-- Heroes' Earthshatter Helm
+						["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+					}),
+					i(39595, {	-- Heroes' Earthshatter Kilt
+						["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+					}),
+					i(39589, {	-- Heroes' Earthshatter Legguards
+						["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+					}),
+					i(39604, {	-- Heroes' Earthshatter Shoulderguards
+						["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+					}),
+					i(39596, {	-- Heroes' Earthshatter Shoulderpads
+						["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+					}),
+					i(39590, {	-- Heroes' Earthshatter Spaulders
+						["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+					}),
+					i(39588, {	-- Heroes' Earthshatter Tunic
+						["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+					}),
+					i(39603, {	-- Heroes' Earthshatter War-Kilt
+						["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+					}),
+					i(45844),	-- Leggings of the Tireless Sentry
+					i(45845),	-- Leggings of the Weary Mystic
+					i(50979),	-- Logsplitters
+					i(50970),	-- Longstrider's Vest
+					i(50971),	-- Mail of the Geyser
 					i(40746),	-- Pack-Ice Striders
-					i(40514),	-- Valorous Earthshatter Hauberk
-					i(40513),	-- Valorous Earthshatter Spaulders
-					i(40512),	-- Valorous Earthshatter Legguards
-					i(40510),	-- Valorous Earthshatter Headpiece
-					i(40509),	-- Valorous Earthshatter Handguards
-					i(40508),	-- Valorous Earthshatter Tunic
-					i(40507),	-- Valorous Cryptstalker Spaulders
+					i(40737),	-- Pigmented Clan Bindings
 					i(40747),	-- Treads of Coastal Wandering
-					i(40505),	-- Valorous Cryptstalker Headpiece
-					i(40504),	-- Valorous Cryptstalker Handguards
-					i(40503),	-- Valorous Cryptstalker Tunic
+					i(40504, {	-- Valorous Cryptstalker Handguards
+						["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+					}),
+					i(40505, {	-- Valorous Cryptstalker Headpiece
+						["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+					}),
+					i(40506, {	-- Valorous Cryptstalker Legguards
+						["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+					}),
+					i(40507, {	-- Valorous Cryptstalker Spaulders
+						["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+					}),
+					i(40503, {	-- Valorous Cryptstalker Tunic
+						["cost"] = { { "i", 40626, 1 }, },	-- Breastlplate of the Lost Protector
+					}),
+					i(40523, {	-- Valorous Earthshatter Chestguard
+						["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
+					}),
+					i(40521, {	-- Valorous Earthshatter Faceguard
+						["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+					}),
+					i(40515, {	-- Valorous Earthshatter Gloves
+						["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+					}),
+					i(40520, {	-- Valorous Earthshatter Grips
+						["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+					}),
+					i(40509, {	-- Valorous Earthshatter Handguards
+						["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+					}),
+					i(40514, {	-- Valorous Earthshatter Hauberk
+						["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
+					}),
+					i(40510, {	-- Valorous Earthshatter Headpiece
+						["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+					}),
+					i(40516, {	-- Valorous Earthshatter Helm
+						["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+					}),
+					i(40517, {	-- Valorous Earthshatter Kilt
+						["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+					}),
+					i(40512, {	-- Valorous Earthshatter Legguards
+						["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+					}),
+					i(40524, {	-- Valorous Earthshatter Shoulderguards
+						["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+					}),
+					i(40518, {	-- Valorous Earthshatter Shoulderpads
+						["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+					}),
+					i(40513, {	-- Valorous Earthshatter Spaulders
+						["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+					}),
+					i(40508, {	-- Valorous Earthshatter Tunic
+						["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
+					}),
+					i(40522, {	-- Valorous Earthshatter War-Kilt
+						["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+					}),
+					i(45360, {	-- Valorous Scourgestalker Handguards
+						["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+					}),
+					i(45361, {	-- Valorous Scourgestalker Headpiece
+						["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+					}),
+					i(45362, {	-- Valorous Scourgestalker Legguards
+						["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+					}),
+					i(45363, {	-- Valorous Scourgestalker Spaulders
+						["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+					}),
+					i(45364, {	-- Valorous Scourgestalker Tunic
+						["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+					}),
+					i(45413, {	-- Valorous Worldbreaker Chestguard
+						["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+					}),
+					i(45412, {	-- Valorous Worldbreaker Faceguard
+						["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+					}),
+					i(45406, {	-- Valorous Worldbreaker Gloves
+						["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+					}),
+					i(45414, {	-- Valorous Worldbreaker Grips
+						["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+					}),
+					i(45401, {	-- Valorous Worldbreaker Handguards
+						["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+					}),
+					i(45411, {	-- Valorous Worldbreaker Hauberk
+						["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+					}),
+					i(45402, {	-- Valorous Worldbreaker Headpiece
+						["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+					}),
+					i(45408, {	-- Valorous Worldbreaker Helm
+						["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+					}),
+					i(45409, {	-- Valorous Worldbreaker Kilt
+						["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+					}),
+					i(45403, {	-- Valorous Worldbreaker Legguards
+						["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+					}),
+					i(45415, {	-- Valorous Worldbreaker Shoulderguards
+						["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+					}),
+					i(45410, {	-- Valorous Worldbreaker Shoulderpads
+						["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+					}),
+					i(45404, {	-- Valorous Worldbreaker Spaulders
+						["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+					}),
+					i(45405, {	-- Valorous Worldbreaker Tunic
+						["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+					}),
+					i(45416, {	-- Valorous Worldbreaker War-Kilt
+						["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+					}),
 					i(40692),	-- Vereesa's Silver Chain Belt
-					i(39579),	-- Heroes' Cryptstalker Tunic
-					i(40693),	-- Beadwork Belt of Shamanic Vision
-					i(39604),	-- Heroes' Earthshatter Shoulderguards
-					i(39603),	-- Heroes' Earthshatter War-Kilt
-					i(39602),	-- Heroes' Earthshatter Faceguard
-					i(39601),	-- Heroes' Earthshatter Grips
-					i(39597),	-- Heroes' Earthshatter Chestguard
-					i(39596),	-- Heroes' Earthshatter Shoulderpads
-					i(39595),	-- Heroes' Earthshatter Kilt
-					i(39594),	-- Heroes' Earthshatter Helm
-					i(39593),	-- Heroes' Earthshatter Gloves
-					i(39592),	-- Heroes' Earthshatter Hauberk
-					i(39591),	-- Heroes' Earthshatter Handguards
-					i(39590),	-- Heroes' Earthshatter Spaulders
-					i(39589),	-- Heroes' Earthshatter Legguards
-					i(39588),	-- Heroes' Earthshatter Tunic
-					i(39583),	-- Heroes' Earthshatter Headpiece
-					i(39582),	-- Heroes' Cryptstalker Handguards
-					i(39581),	-- Heroes' Cryptstalker Spaulders
-					i(39580),	-- Heroes' Cryptstalker Legguards
-					i(39578),	-- Heroes' Cryptstalker Headpiece
-
+					i(50992),	-- Waistband of Despair
+					i(45828),	-- Windchill Binding
 				}),
 				n(28951,  {	-- Breanni <Pet Supplies>
-					i(44822),	-- Albino Snake Pet
-					i(46398),	-- Cat Carrier (Calico Cat) Pet
-					i(48120),	-- Obsidian Hatchling Pet
-					i(129826),	-- Nursery Spider Pet
-					i(44820),	-- Red Ribbon Pet Leash Toy
+					i(44822),	-- Albino Snake (PET!)
+					i(46398),	-- Cat Carrier (Calico Cat) (PET!)
+					i(129826),	-- Nursery Spider (PET!)
+					i(48120),	-- Obsidian Hatchling (PET!)
+					i(44820),	-- Red Ribbon Pet Leash (TOY!)
+					i(37460),	-- Rope Pet Leash (TOY!)
 				}),
 				n(28722,  {	-- Bryan Landers <Engineering Supplies>
 					["coord"] = { 39.0, 26.0, 125 },
@@ -350,63 +454,70 @@ _.Zones =
 						i(136782, {	-- Fireworks Instruction Manual
 							["spellID"] = 127933,	-- Fireworks
 						}),
-						i(23817),	-- Schematic: Titanium Toolbox
+						i(23817, {	-- Schematic: Titanium Toolbox
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(28699,  {	-- Charles Worth <Tailoring Trainer>
-					["description"] = "Your Tailor has to have personally completed Loremaster of Northrend for Deathchill Cloak and Northrend Dungeonmaster for Wispcloak, and not just via account-wide achievements.",
+					["description"] = "You can now learn these recipes even if the achievements have been completed on a different character.  If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
+					["coord"] = { 36.3, 33.4, 125 },
 					["g"] = {
 						ach(41, {	-- Loremaster of Northrend
-							{
-								["recipeID"] = 56017,	-- Deathchill Cloak
+							recipe(56017, {	-- Deathchill Cloak
 								["requireSkill"] = 197,	-- Tailoring
-							},
+							}),
 						}),
 						ach(1288, {	-- Northrend Dungeonmaster
-							{
-								["recipeID"] = 56016,	-- Wispcloak
+							recipe(56016, {	-- Wispcloak
 								["requireSkill"] = 197,	-- Tailoring
-							},
+							}),
 						}),
 					},
 				}),
 				n(29716,  {	-- Clockwork Assistant <Jepetto's Companion>
-					i(54436),	-- Blue Clockwork Rocket Bot Pet
-					i(95621),	-- Warbot Ignition Key Pet
-					i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
-					i(104324),	-- Foot Ball Toy
-					i(137663),	-- Small Foam Sword Toy
-					i(104323),	-- The Pigskin Toy
-					i(54438),	-- Tiny Blue Ragdoll Toy
-					i(54437),	-- Tiny Green Ragdoll Toy
-					i(44606),	-- Toy Train Set Toy
-					i(45057),	-- Wind-Up Train Wreck Toy
+					["coord"] = { 44.8, 46.3, 125 },
+					["g"] = {
+						i(54436),	-- Blue Clockwork Rocket Bot (PET!)
+						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
+						i(104324),	-- Foot Ball (TOY!)
+						i(137663),	-- Soft Foam Sword (TOY!)
+						i(104323),	-- The Swineskin (TOY!)
+						i(54438),	-- Tiny Blue Ragdoll (TOY!)
+						i(54437),	-- Tiny Green Ragdoll (TOY!)
+						i(44606),	-- Toy Train Set (TOY!)
+						i(95621),	-- Warbot Ignition Key (PET!)
+						i(45057),	-- Wind-Up Train Wreck (TOY!)
+					},
 				}),
 				n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 					["g"] = {
-						i(141056),	-- Technique: Glyph of Burnout
-						i(136927),	-- Scarlet Confessional Book
-						i(136972, {	-- Tome of Hex: Cockroach
-							["spellID"] = 211015,	-- Hex(Cockroach)
-						}),
 						i(136803, {	-- Dirty Tricks, Vol 1: Detection
 							--["spellID"] = 210108,	-- Detection
+						}),
+						i(136927),	-- Scarlet Confessional Book
+						i(141056),	-- Technique: Glyph of Burnout
+						i(136972, {	-- Tome of Hex: Cockroach
+							["spellID"] = 211015,	-- Hex(Cockroach)
 						}),
 					},
 				}),
 				n(29528,  {	-- Debbi Moore <Trinkets & Charms>
-					i(50356),	-- Corroded Skeleton Key
-					i(47735),	-- Glyph of Indomitability
-					i(50355),	-- Herkuml War Token
-					i(50357),	-- Maghia's Misguided Quill
-					i(47734),	-- Mark of Supremacy
-					i(40684),	-- Mirror of Truth
-					i(50358),	-- Purified Lunar Dust
-					i(48722),	-- Shard of the Crystal Heart
-					i(40682),	-- Sundial of the Exiled
-					i(48724),	-- Talisman of Resurgence
-					i(40685),	-- The Egg of Mortal Essence
-					i(40683),	-- Valor Medal of the First War
+					["coord"] = { 49.7, 55.5, 125 },
+					["g"] = {
+						i(50356),	-- Corroded Skeleton Key
+						i(47735),	-- Glyph of Indomitability
+						i(50355),	-- Herkuml War Token
+						i(50357),	-- Maghia's Misguided Quill
+						i(47734),	-- Mark of Supremacy
+						i(40684),	-- Mirror of Truth
+						i(50358),	-- Purified Lunar Dust
+						i(48722),	-- Shard of the Crystal Heart
+						i(40682),	-- Sundial of the Exiled
+						i(48724),	-- Talisman of Resurgence
+						i(40685),	-- The Egg of Mortal Essence
+						i(40683),	-- Valor Medal of the First War
+					},
 				}),
 				n(34252,  {	-- Dubin Clay <Plate Armor Merchant>
 					i(45335),	-- Valorous Darkruned Chestguard
@@ -518,49 +629,36 @@ _.Zones =
 				n(28715,  {	-- Endora Moorehead
 					["coord"] = { 38.62, 55.57, 125 },
 					["g"] = {
-						--Note!! Yes, these are actually collectible spells!
-						{	-- Ancient Tome of Portal: Dalaran [Mage only]
-							["itemID"] = 82470,		-- Ancient Tome of Portal: Dalaran
+						i(82470, {	-- Ancient Tome of Portal: Dalaran
 							["spellID"] = 120146,	-- Ancient Portal: Dalaran
 							["classes"] = { 8 },	-- Mage
-						},
-						{	-- Dalaran Initiates' Pin Toy [Mage only]
-							["itemID"] = 137294,	-- Dalaran Initiates' Pin Toy
+						}),
+						i(137294, {	-- Dalaran Initiates' Pin Toy
 							["classes"] = { 8 },	-- Mage
-						},
-						{	-- Familiar Stone Toy [Mage only]
-							["itemID"] = 136846,	-- Familiar Stone Toy
+						}),
+						i(136846, {	-- Familiar Stone Toy
 							["classes"] = { 8 },	-- Mage
-						},
-						{	-- Mystical Tome: Arcane Linguist [Mage only]
-							["itemID"] = 136797,	-- Mystical Tome: Arcane Linguist
+						}),
+						i(136797, {	-- Mystical Tome: Arcane Linguist
 							["spellID"] = 210086,	-- Arcane Linguist
 							["classes"] = { 8 },	-- Mage
-						},
-
-						{	-- Mystical Tome: Illusion [Mage only]
-							["itemID"] = 136799,	-- Mystical Tome: Illusion
+						}),
+						i(136799, {	-- Mystical Tome: Illusion
 							["spellID"] = 131784,	-- Illusion
 							["classes"] = { 8 },	-- Mage
-						},
-						{	-- Technique: Glyph of Dalaran Brilliance
-							["itemID"] = 167733,	-- Technique: Glyph of Dalaran Brilliance
-						},
-						{	-- Tome of Dalaran Brilliance
-							["itemID"] = 44714,		-- Tome of Dalaran Brilliance.
-							["u"] = 2,				-- Removed in 7.0.3
+						}),
+						i(167733),	-- Technique: Glyph of Dalaran Brilliance
+						i(44714, {	-- Tome of Dalaran Brilliance.
 							["classes"] = { 8 },	-- Mage
+							["u"] = 2,	-- BoP / BoA Items (removed in 7.0.3)
 							["g"] = {
-								{	-- Magic Consumed Book
-									["itemID"] = 44602,	-- Magic Consumed Book
-								},
+								i(44602),	-- Magic Consumed Book
 							},
-						},
-						{	-- Tome of Polymorph: Black Cat [Mage only]
-							["itemID"] = 44709,		-- Tome of Polymorph: Black Cat
+						}),
+						i(44709, {	-- Tome of Polymorph: Black Cat
 							["spellID"] = 61305,	-- Polymorph
 							["classes"] = { 8 },	-- Mage
-						},
+						}),
 					},
 				}),
 				n(40160,  {	-- Frozo the Renowned <Frozen Orb Trader>
