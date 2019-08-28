@@ -148,10 +148,6 @@ _.Zones =
 						["qgs"] = { 68392, 68399 },	-- King Varian Wrynn, 7th Legion Champion
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(32248, {	-- A Little Patience
-						["qg"] = 67940,	-- Admiral Taylor
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(30695, {	-- Ahead on the Way
 						["qg"] = 59138,	-- Koro Mistwalker
 						["sourceQuests"] = {
@@ -432,10 +428,6 @@ _.Zones =
 							i(88045),	-- Korjan Waistband
 							i(88044),	-- Dojani Waistband
 						},
-					}),
-					q(32251, {	-- Dagger in the Dark
-						["qg"] = 67939,	-- General Nazgrim
-						["races"] = HORDE_ONLY,
 					}),
 					q(32414, {	-- Darnassus Attacked?
 						["qg"] = 67940,	-- Admiral Taylor
@@ -1053,9 +1045,6 @@ _.Zones =
 					q(32332, {	-- The First Riddle: Mercy
 						["qg"] = 68003,	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(31058, {	-- The Funky Monkey Brew
-						["qg"] = 65289,	-- Brewmaster Bo
 					}),
 					q(36882, {	-- The Great Angler Returns
 						["qg"] = 63721,	-- Nat Pagle

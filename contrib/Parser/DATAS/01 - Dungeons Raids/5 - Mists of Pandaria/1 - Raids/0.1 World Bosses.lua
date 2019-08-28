@@ -865,7 +865,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(84828),	-- Malevolent Gladiator's Signet of Cruelty
 				},
 			})),
-			n(-10060, {	-- The Four Celestials
+			n(-10061, {	-- The Four Celestials
 				["questID"] = 33117,
 				["maps"] = { 554 },	-- Timeless Isle
 				["isRaid"] = true,

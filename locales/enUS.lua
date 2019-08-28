@@ -878,8 +878,9 @@ app.L = {
 		[-10056] = "Interface\\Icons\\Paladin_Protection",							-- 
 		[-10057] = "Interface\\Icons\\Paladin_Protection",							-- 
 		[-10058] = "Interface\\Icons\\Paladin_Protection",							-- 
-		[-10059] = "Interface\\Icons\\Paladin_Protection",							-- 
-		[-10060] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
+		[-10059] = "Interface\\Icons\\Paladin_Protection",							-- Pandaria Scenarios
+		[-10060] = "Interface\\Icons\\achievement_arena_3v3_1",						-- Arena of Annihilation (Scenario)
+		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
 		[-10070] = "Interface\\Icons\\Paladin_Protection",							-- 
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -903,7 +904,6 @@ app.L = {
 		[-15] = "Common Vendor Items",											-- Common Vendor Items
 		[-16] = BATTLE_PET_BREED_QUALITY4, 										-- Rares
 		[-17] = TRACKER_HEADER_QUESTS, 											-- Quests
-		[-19] = DUNGEON_FLOOR_PROVINGGROUNDS1, 									-- Arena of Annihilation
 		
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
 		
@@ -1748,14 +1748,17 @@ app.L = {
 		[-10057] = select(1,GetCategoryInfo(15308)),		-- War Effort
 		[-10058] = select(1,GetCategoryInfo(15283)),		-- World
 		[-10059] = select(1,GetCategoryInfo(15302)),		-- Pandaria Scenarios
-		[-10060] = select(2,GetAchievementInfo(7333)),		-- The Four Celestials
-		[-10061] = BATTLE_PET_BREED_QUALITY1,			-- "Poor";
+		[-10060] = select(2,GetAchievementInfo(7271)), 		-- Arena of Annihilation (Scenario)
+		[-10061] = select(2,GetAchievementInfo(7333)),		-- The Four Celestials
+--[[	-- If we ever need them they need a new number	
+		[-10061] = BATTLE_PET_BREED_QUALITY1,			-- "Poor";				
 		[-10062] = BATTLE_PET_BREED_QUALITY2,			-- "Common";
 		[-10063] = BATTLE_PET_BREED_QUALITY3,			-- "Uncommon";
 		[-10064] = BATTLE_PET_BREED_QUALITY4,			-- "Rare";
 		[-10065] = BATTLE_PET_BREED_QUALITY5,			-- "Epic";
+]]--
 		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
-		[-10067] = ITEM_QUALITY6_DESC, 				-- Artifact
+		[-10067] = ITEM_QUALITY6_DESC, 					-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 		[-10069] = "Scenarios",
 		[-10070] = select(1, GetCategoryInfo(15417)),		-- Heart of Azeroth

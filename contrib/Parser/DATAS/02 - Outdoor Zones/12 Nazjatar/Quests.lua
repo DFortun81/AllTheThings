@@ -1086,10 +1086,16 @@ _.Zones =
 				},
 			}),
 			q(56806, {	-- Friends Through Eternity
-				["qg"] = 151309,	-- Kelfin Scout(but which one?)
-				--["coord"] = { 76.4, 29.8, 1355 },
+				["qgs"] = {
+					151309,	-- Kelfin Scout (Vim Brineheart)
+					149906,	-- Vim Brineheart
+				},
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 9.",
 				["races"] = HORDE_ONLY,
-				--["sourceQuest"] = 55485,	-- Terrors in the Deep
+				["g"] = {
+					i(169916),	-- Brew-Soaked Supplies
+				},
 			}),
 			q(55871, {	-- Gather Friends -- also triggered 56544, 56682
 				["qg"] = 151311,	-- Narm
