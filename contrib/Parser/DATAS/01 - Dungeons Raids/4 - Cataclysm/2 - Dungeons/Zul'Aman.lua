@@ -168,25 +168,35 @@ _.Instances = { tier(4, {	-- Cataclysm
 					n(-7777, {	-- Timed Events
 						["description"] = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\n    Killing Nalorakk (bear) will add 5 minutes to your timer.\n    Killing Akil'zon (eagle) will add 5 minutes to your timer.\n    Other bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue.",
 						["groups"] = {
-							n(-7778, {	-- First Chest
-								i(69886),	-- Bag of Coins
+							o(187021, {	-- Bakkalzu's Satchel
+								["model"] = 200351,
+								["g"] = {
+									i(69886),	-- Bag of Coins
+								},
 							}),
-							n(-7779, {	-- Second Chest
-								i(69584),	-- Recovered Cloak of Frostheim
-								i(69587),	-- Chestplate of Hubris
-								i(69585),	-- Wristwraps of Madness
-								i(69586),	-- Two-Toed Boots
-								i(69588),	-- Skullcrusher Warboots
+							o(186648, {	-- Hazlek's Trunk
+								["model"] = 196982,
+								["g"] = {
+									i(69584),	-- Recovered Cloak of Frostheim
+									i(69587),	-- Chestplate of Hubris
+									i(69585),	-- Wristwraps of Madness
+									i(69586),	-- Two-Toed Boots
+									i(69588),	-- Skullcrusher Warboots
+								},
 							}),
-							n(-7780, {	-- Third Chest
-								i(69592),	-- Reforged Trollbane
-								i(69591),	-- Voodoo Hexblade
-								i(69593),	-- Battleplate of the Amani Empire
-								i(69590),	-- Mojo-Mender's Gloves
-								i(69589),	-- Leggings of Dancing Blades
+							o(186667, {	-- Norkani's Package
+								["model"] = 191107,
+								["g"] = {
+									i(69592),	-- Reforged Trollbane
+									i(69591),	-- Voodoo Hexblade
+									i(69593),	-- Battleplate of the Amani Empire
+									i(69590),	-- Mojo-Mender's Gloves
+									i(69589),	-- Leggings of Dancing Blades
+								},
 							}),
-							n(-7781, {	-- Final Chest
+							o(186672, {	-- Kasha's Bag
 								["description"] = "This item is found in the prisoner's loot chest associated with the fourth animal boss you defeat within the time limit of the event.\n\nOnly one player can receive this within a given instance lockout.",
+								["model"] = 200442,
 								["groups"] = {
 									ach(5858),	-- Bear-ly Made It
 									i(69747),	-- Amani Battle Bear (mount)

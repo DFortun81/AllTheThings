@@ -703,117 +703,121 @@ _.Zones =
 				}),
 				q(56117),	-- Recyclable Parts
 				o(326027, {	-- Recyclerizer DX-82
-					q(55743, {	-- More Recycling
-						["coords"] = {
-							{ 58.8, 59.2, 1462 },
-							{ 54.5, 56.4, 1462 },
-							{ 55.8, 62.7, 1462 },
-							{ 53.5, 61.5, 1462 },
-						},
-						["isDaily"] = true,
-						["groups"] = {
-							i(168264, {	-- Recycling Requisition(Green)
-								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
-									crit(37, {	-- Re-Procedurally Genereated Punchcard
-										["achievementID"] = 13479,	-- Junkyard Architect
+					["model"] = 2929684,
+					["modelScale"] = 3,
+					["g"] = {
+						q(55743, {	-- More Recycling
+							["coords"] = {
+								{ 58.8, 59.2, 1462 },
+								{ 54.5, 56.4, 1462 },
+								{ 55.8, 62.7, 1462 },
+								{ 53.5, 61.5, 1462 },
+							},
+							["isDaily"] = true,
+							["groups"] = {
+								i(168264, {	-- Recycling Requisition(Green)
+									i(169167),	-- Blueprint: Orange Spraybot
+									i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+										crit(37, {	-- Re-Procedurally Genereated Punchcard
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
 									}),
+									i(167795, {	-- Paint Vial: Copper Trim
+										["questID"] = 55456,	-- Paint Vial: Copper Trim
+										["g"] = {
+											crit(4, {	-- Copper Trim
+												["achievementID"] = 13513,	-- Available in Eight Colors
+											}),
+										},
+									}),
+									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 								}),
-								i(167795, {	-- Paint Vial: Copper Trim
-									["questID"] = 55456,	-- Paint Vial: Copper Trim
-									["g"] = {
+								i(168266, {	-- Strange Recycling Requisiton(Epic)
+									--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
+									i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+										crit(37, {	-- Re-Procedurally Genereated Punchcard
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									}),
+									i(167795, {	-- Paint Vial: Copper Trim
+										["questID"] = 55456,	-- Paint Vial: Copper Trim
+										["g"] = {
+											crit(4, {	-- Copper Trim
+												["achievementID"] = 13513,	-- Available in Eight Colors
+											}),
+										},
+									}),
+									i(169689, {	-- Vinyl: Mimiron's Brainstorm
+										crit(3, {	-- Mimiron's Brainstorm
+											["achievementID"] = 13686,    -- Junkyard Melomanic
+										}),
+									}),
+									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
+										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
+										["groups"] = {
+											crit(35, {	-- Annoy-o-Tron Gang
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
+									}),
+									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
+								}),
+							},
+						}),
+						q(56116, {	-- Even More Recycling
+							["coords"] = {
+								{ 58.8, 59.2, 1462 },
+								{ 54.5, 56.4, 1462 },
+								{ 55.8, 62.7, 1462 },
+								{ 53.5, 61.5, 1462 },
+							},
+							["sourceQuest"] = 55743,	-- More Recycling
+							["repeatable"] = true,
+							["groups"] = {
+								i(168264, {	-- Recycling Requisition(Green)
+									i(169167),	-- Blueprint: Orange Spraybot
+									i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+										crit(37, {	-- Re-Procedurally Genereated Punchcard
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									}),
+									i(167795, {	-- Paint Vial: Copper Trim
 										crit(4, {	-- Copper Trim
 											["achievementID"] = 13513,	-- Available in Eight Colors
 										}),
-									},
-								}),
-								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
-							}),
-							i(168266, {	-- Strange Recycling Requisiton(Epic)
-								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
-								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
-									crit(37, {	-- Re-Procedurally Genereated Punchcard
-										["achievementID"] = 13479,	-- Junkyard Architect
 									}),
+									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 								}),
-								i(167795, {	-- Paint Vial: Copper Trim
-									["questID"] = 55456,	-- Paint Vial: Copper Trim
-									["g"] = {
+								i(168266, {	-- Strange Recycling Requisiton(Epic)
+									--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
+									i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
+										crit(37, {	-- Re-Procedurally Genereated Punchcard
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									}),
+									i(167795, {	-- Paint Vial: Copper Trim
 										crit(4, {	-- Copper Trim
 											["achievementID"] = 13513,	-- Available in Eight Colors
 										}),
-									},
-								}),
-								i(169689, {	-- Vinyl: Mimiron's Brainstorm
-									crit(3, {	-- Mimiron's Brainstorm
-										["achievementID"] = 13686,    -- Junkyard Melomanic
 									}),
-                                }),
-								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
-									["groups"] = {
-										crit(35, {	-- Annoy-o-Tron Gang
-											["achievementID"] = 13479,	-- Junkyard Architect
+									i(169689, {	-- Vinyl: Mimiron's Brainstorm
+										crit(3, {	-- Mimiron's Brainstorm
+											["achievementID"] = 13686,    -- Junkyard Melomanic
 										}),
-									},
-								}),
-								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
-							}),
-						},
-					}),
-					q(56116, {	-- Even More Recycling
-						["coords"] = {
-							{ 58.8, 59.2, 1462 },
-							{ 54.5, 56.4, 1462 },
-							{ 55.8, 62.7, 1462 },
-							{ 53.5, 61.5, 1462 },
-						},
-						["sourceQuest"] = 55743,	-- More Recycling
-						["repeatable"] = true,
-						["groups"] = {
-							i(168264, {	-- Recycling Requisition(Green)
-								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
-									crit(37, {	-- Re-Procedurally Genereated Punchcard
-										["achievementID"] = 13479,	-- Junkyard Architect
 									}),
-								}),
-								i(167795, {	-- Paint Vial: Copper Trim
-									crit(4, {	-- Copper Trim
-										["achievementID"] = 13513,	-- Available in Eight Colors
+									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
+										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
+										["groups"] = {
+											crit(35, {	-- Annoy-o-Tron Gang
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
 									}),
+									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 								}),
-								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
-							}),
-							i(168266, {	-- Strange Recycling Requisiton(Epic)
-								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
-								i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
-									crit(37, {	-- Re-Procedurally Genereated Punchcard
-										["achievementID"] = 13479,	-- Junkyard Architect
-									}),
-								}),
-								i(167795, {	-- Paint Vial: Copper Trim
-									crit(4, {	-- Copper Trim
-										["achievementID"] = 13513,	-- Available in Eight Colors
-									}),
-								}),
-								i(169689, {	-- Vinyl: Mimiron's Brainstorm
-									crit(3, {	-- Mimiron's Brainstorm
-										["achievementID"] = 13686,    -- Junkyard Melomanic
-									}),
-								}),
-								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
-									["groups"] = {
-										crit(35, {	-- Annoy-o-Tron Gang
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
-								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
-							}),
-						},
-					}),
+							},
+						}),
+					},
 				}),
 				q(55880, {	-- Redistribution of Power
 					["qg"] = 150631,	-- Pristy Quickcharge

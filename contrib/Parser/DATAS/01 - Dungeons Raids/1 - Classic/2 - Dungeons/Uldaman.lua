@@ -333,7 +333,10 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			o(123329, {	-- Baelog's Chest
-				i(7740),	-- Gni'kiv Medallion
+				["model"] = 196979,
+				["g"] = {
+					i(7740),	-- Gni'kiv Medallion
+				},
 			}),
 			cr( 6910, e(467, {	-- Revelosh
 				i(132736),	-- Revelosh's Pauldrons
@@ -394,8 +397,8 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			o(141979, {				-- Ancient Treasure (No Localization)
 				["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items. Has a very large loot table far exceeding those listed.",
-				["model"] = "World\\Generic\\Passivedoodads\\Furniture\\Containers\\Titanchest.mdx",
-				["modelScale"] = 2.1,
+				["model"] = 199748,
+				["modelScale"] = 3,
 				["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 				["groups"] = {
 					i(20976),	-- Design: Citrine Pendant of Golden Healing
