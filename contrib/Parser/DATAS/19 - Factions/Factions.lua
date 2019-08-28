@@ -279,6 +279,7 @@ _.Factions =
 	}),
 	tier(2, {	-- The Burning Crusade
 		faction(1012), 	-- Ashtongue Deathsworn
+		faction(942),	-- Cenarion Expedition
 		faction(989), 	-- Keepers of Time
 		faction(1011), 	-- Lower City
 		faction(1015), 	-- Netherwing
@@ -294,23 +295,28 @@ _.Factions =
 		faction(967), 	-- The Violet Eye
 	}),
 	tier(3, {	-- Wrath of the Lich King
-		faction(1106), 	-- Argent Crusade
-		faction(942),	-- Cenarion Expedition
-		faction(1104), 	-- Frenzyheart Tribe
-		faction(1090), 	-- Kirin Tor
-		faction(1098), 	-- Knights of the Ebon Blade
-		faction(1156), 	-- The Ashen Verdict
-		faction(1073), 	-- The Kalu'ak
-		faction(1105),	-- The Oracles
-		faction(1119), 	-- The Sons of Hodir
-		faction(1091), 	-- The Wyrmrest Accord
+		["description"] = "Wrath of the Lich King is the second expansion. The majority of the expansion content takes place in Northrend & centers around the plans of the Lich King. Content highlights include the increase of the level cap from 70 to 80, the introduction of the death knight Hero class, & new PvP/World PvP content.\n\n|CFFFF0000Need to finish off a WotLK rep?  Equip a tabard obtained from the faction quartermaster and clear Halls of Lightning on normal for around 2k rep per clear.",
+		["g"] = {
+			faction(1106), 	-- Argent Crusade
+			faction(1104), 	-- Frenzyheart Tribe
+			faction(1090), 	-- Kirin Tor
+			faction(1098), 	-- Knights of the Ebon Blade
+			faction(1156), 	-- The Ashen Verdict
+			faction(1073), 	-- The Kalu'ak
+			faction(1105),	-- The Oracles
+			faction(1119), 	-- The Sons of Hodir
+			faction(1091), 	-- The Wyrmrest Accord
+		},
 	}),
 	tier(4, { 	-- Cataclysm
-		faction(1204), 	-- Avengers of Hyjal
-		faction(1135), 	-- The Earthen Ring
-		faction(1158), 	-- Guardians of Hyjal
-		faction(1173), 	-- Ramkahen
-		faction(1171), 	-- Therazane
+		["description"] = "Cataclysm is the third expansion. Set primarily in a dramatically reforged Kalimdor & Eastern Kingdoms on the world of Azeroth, the expansion follows the return of Deathwing, who causes a new Sundering as he makes his cataclysmic re-entrance into the world from Deepholm. Cataclysm returns players to the two continents of Azeroth for most of their campaigning, opening new zones such as Mount Hyjal, the sunken world of Vashj'ir, Deepholm, Uldum and the Twilight Highlands. It includes two new playable races, the worgen & the goblins. The expansion increases level cap to 85, adds the ability to fly in Kalimdor & Eastern Kingdoms, introduces Archaeology & reforging, & restructures the world itself.\n\n|CFFFF0000Need to finish off a Cataclysm rep?  Equip a tabard obtained from the faction quartermaster and clear Grim Batol on normal for around 2k rep per clear.",
+		["g"] = {
+			faction(1204), 	-- Avengers of Hyjal
+			faction(1135), 	-- The Earthen Ring
+			faction(1158), 	-- Guardians of Hyjal
+			faction(1173), 	-- Ramkahen
+			faction(1171), 	-- Therazane
+		},
 	}),
 	tier(5, { 	-- Mists of Pandaria
 		faction(1302), 	-- The Anglers
