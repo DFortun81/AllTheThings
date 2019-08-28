@@ -109,16 +109,19 @@ _.Zones =
 							},
 						}),
 						o(184660, {	-- Wanted Poster
-							q(10489, {	-- Felling an Ancient Tree
-								["coord"] = { 51.9, 57.8, 105 },
-								["races"] = HORDE_ONLY,
-								["g"] = {
-									i(31486),	-- Bear-Strength Harness
-									i(31488),	-- Boots of the Ancient-Killer
-									i(31485),	-- Dark Deed Leggings
-									i(31487),	-- Wild Horned Helm
-								},
-							}),
+							["model"] = 191094,
+							["g"] = {
+								q(10489, {	-- Felling an Ancient Tree
+									["coord"] = { 51.9, 57.8, 105 },
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										i(31486),	-- Bear-Strength Harness
+										i(31488),	-- Boots of the Ancient-Killer
+										i(31485),	-- Dark Deed Leggings
+										i(31487),	-- Wild Horned Helm
+									},
+								}),
+							},
 						}),
 						-- Alliance Questline
 						q(10455, {	-- The Encroaching Wilderness
@@ -223,25 +226,31 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 						}),
 						o(184825, {	-- Lashh'an Tome
-							q(10556, {	-- Scratches
-								["coords"] = {
-									{ 34.3, 77.4, 105 },
-									{ 35.4, 79.0, 105 },
-								},
-								["sourceQuest"] = 10555,	-- Malaise
-								["races"] = ALLIANCE_ONLY,
-							}),
+							["model"] = 198020,
+							["g"] = {
+								q(10556, {	-- Scratches
+									["coords"] = {
+										{ 34.3, 77.4, 105 },
+										{ 35.4, 79.0, 105 },
+									},
+									["sourceQuest"] = 10555,	-- Malaise
+									["races"] = ALLIANCE_ONLY,
+								}),
+							},
 						}),
 						o(185035, {	-- Wanted Poster
-							q(10690, {	-- The Den Mother
-								["coord"] = { 36.6, 67.3, 105 },
-								["races"] = ALLIANCE_ONLY,
-								["g"] = {
-									i(31424),	-- Arcane Wand of Sylvanaar
-									i(31422),	-- Heavy Elven Dirk
-									i(31423),	-- Wolf Hewer's Axe
-								},
-							}),
+							["model"] = 199473,
+							["g"] = {
+								q(10690, {	-- The Den Mother
+									["coord"] = { 36.6, 67.3, 105 },
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										i(31424),	-- Arcane Wand of Sylvanaar
+										i(31422),	-- Heavy Elven Dirk
+										i(31423),	-- Wolf Hewer's Axe
+									},
+								}),
+							},
 						}),
 					}),
 					crit(2, {	-- Reunion (H) / Toshley's Station (A)
@@ -889,20 +898,23 @@ _.Zones =
 							["sourceQuest"] = 10812,	-- Mystery Mask
 						}),
 						o(185165, {	-- Legion Communicator
-							q(10820, {	-- Deceive thy Enemy
-								["coord"] = { 73.23, 40.1, 105 },
-								["sourceQuest"] = 10819,	-- Felsworn Gas Mask
-							}),
-							q(10821, {	-- You're Fired!
-								["coord"] = { 73.23, 40.1, 105 },
-								["sourceQuest"] = 10820,	-- Deceive thy Enemy
-								["g"] = {
-									i(31793),	-- Ruuan Weald Wristguards
-									i(31792),	-- Evergrove Ranger's Cloak
-									i(31790),	-- Expedition Pendant
-									i(31791),	-- Wildlord's Band
-								},
-							}),
+							["model"] = 192342,
+							["g"] = {
+								q(10820, {	-- Deceive thy Enemy
+									["coord"] = { 73.23, 40.1, 105 },
+									["sourceQuest"] = 10819,	-- Felsworn Gas Mask
+								}),
+								q(10821, {	-- You're Fired!
+									["coord"] = { 73.23, 40.1, 105 },
+									["sourceQuest"] = 10820,	-- Deceive thy Enemy
+									["g"] = {
+										i(31793),	-- Ruuan Weald Wristguards
+										i(31792),	-- Evergrove Ranger's Cloak
+										i(31790),	-- Expedition Pendant
+										i(31791),	-- Wildlord's Band
+									},
+								}),
+							},
 						}),
 						q(10910, {	-- Death's Door
 							["qg"] = 22127,	-- Wildlord Antelarion

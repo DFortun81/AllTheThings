@@ -45,7 +45,7 @@ _.Zones =
 				o(207496, {	-- Dark Iron Treasure Chest
 					["modelScale"] = 1.5,
 					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
-					["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
+					["model"] = 446673,
 					["coords"] = {
 						{ 73.6, 82.2, 32 },
 						{ 63.6, 60.5, 32 },

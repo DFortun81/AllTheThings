@@ -192,6 +192,7 @@ _.Zones =
 					["sourceQuests"] = { 9138 },	-- Suncrown Village
 				}),
 				o(181150, {	-- Dusty Journal
+					["model"] = 198020,
 					["coord"] = { 79.6, 17.5, 95 },
 					["g"] = {
 						q(9162, {	-- Hints of the Past
@@ -493,6 +494,7 @@ _.Zones =
 					["sourceQuests"] = { 9157 },	-- Forgotten Rituals
 				}),
 				o(181147, {	-- Wanted Poster
+					["model"] = 192133,
 					["coord"] = { 48.3, 31.6, 95 },
 					["g"] = {
 						q(9156, {	-- Wanted: Knucklerot and Luzran
@@ -505,6 +507,7 @@ _.Zones =
 					},
 				}),
 				o(181153, {	-- Wanted Poster: Kel'gash the Wicked
+					["model"] = 192133,
 					["coord"] = { 72.2, 31.1, 95 },
 					["g"] = {
 						q(9215, {	-- Bring Me Kel'gash's Head!

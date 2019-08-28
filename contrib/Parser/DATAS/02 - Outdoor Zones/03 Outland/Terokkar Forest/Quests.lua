@@ -394,11 +394,14 @@ _.Zones =
 							},
 						}),
 						o(182549, {	-- Fel Orc Plans
-							q(10012, {	-- Fel Orc Plans
-								["coord"] = { 63.4, 42.7, 108 },
-								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 9998,	-- Unruly Neighbors
-							}),
+							["model"] = 198457,
+							["g"] = {
+								q(10012, {	-- Fel Orc Plans
+									["coord"] = { 63.4, 42.7, 108 },
+									["races"] = ALLIANCE_ONLY,
+									["sourceQuest"] = 9998,	-- Unruly Neighbors
+								}),
+							},
 						}),
 						q(10016, {	-- Timber Worg Tails
 							["qg"] = 18387,	-- Bertelm
@@ -418,10 +421,13 @@ _.Zones =
 							},
 						}),
 						o(182587, {	-- Wanted Poster
-							q(10033, {	-- WANTED: Bonelashers Dead!
-								["coord"] = { 57.6, 54.7, 108 },
-								["races"] = ALLIANCE_ONLY,
-							}),
+							["model"] = 199473,
+							["g"] = {
+								q(10033, {	-- WANTED: Bonelashers Dead!
+									["coord"] = { 57.6, 54.7, 108 },
+									["races"] = ALLIANCE_ONLY,
+								}),
+							},
 						}),
 						q(10035, {	-- Torgos!
 							["qg"] = 18704,	-- Taela Everstride
@@ -839,11 +845,14 @@ _.Zones =
 							},
 						}),
 						o(182549, {	-- Fel Orc Plans
-							q(10013, {	-- An Unseen Hand
-								["coord"] = { 63.4, 42.7, 108 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 10000,	-- An Unwelcome Presence
-							}),
+							["model"] = 198457,
+							["g"] = {
+								q(10013, {	-- An Unseen Hand
+									["coord"] = { 63.4, 42.7, 108 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 10000,	-- An Unwelcome Presence
+								}),
+							},
 						}),
 						q(10018, {	-- Vestments of the Wolf Spirit
 							["qg"] = 18384,	-- Malukaz
@@ -869,10 +878,13 @@ _.Zones =
 							},
 						}),
 						o(182588, {	-- Wanted Poster
-							q(10034, {	-- WANTED: Bonelashers Dead!
-								["coord"] = { 49.8, 45.3, 108 },
-								["races"] = HORDE_ONLY,
-							}),
+							["model"] = 199475,
+							["g"] = {
+								q(10034, {	-- WANTED: Bonelashers Dead!
+									["coord"] = { 49.8, 45.3, 108 },
+									["races"] = HORDE_ONLY,
+								}),
+							},
 						}),
 						q(10036, {	-- Torgos!
 							["qg"] = 18705,	-- Mawg Grimshot

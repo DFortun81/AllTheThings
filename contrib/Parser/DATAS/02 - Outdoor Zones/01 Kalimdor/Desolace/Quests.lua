@@ -70,6 +70,7 @@ _.Zones =
 					["sourceQuest"] = 14311,	-- Taking Part
 				}),
 				o(195433, {	-- Ancient Tablets
+					["model"] = 201275,
 					["coord"] = { 69.2, 29.2, 66 },
 					["g"] = {
 						q(14191, {	-- Furien's Footsteps
@@ -82,6 +83,7 @@ _.Zones =
 					},
 				}),
 				o(195445, {	-- Ancient Vortex Runestone
+					["model"] = 199976,
 					["coord"] = { 74.8, 13.2, 66 },
 					["g"] = {
 						q(14196, {	-- Firestarter
@@ -145,6 +147,7 @@ _.Zones =
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
 				}),
 				o(196393, {	-- Broken Relic
+					["model"] = 201094,
 					["coord"] = { 12.5, 49.3, 67 },	-- quest starts in Maraudon's mapID
 					["g"] = {
 						q(14333, {	-- While You're Here
@@ -284,6 +287,7 @@ _.Zones =
 					},
 				}),
 				o(195438, {	-- Cup of Elune
+					["model"] = 198754,
 					["g"] = {
 						q(14191, {	-- Furien's Footsteps
 							["races"] = HORDE_ONLY,
@@ -346,6 +350,7 @@ _.Zones =
 					},
 				}),
 				o(195497, {	-- Elune's Brazier
+					["model"] = 200976,
 					["coord"] = { 78.6, 23.1, 66 },
 					["g"] = {
 						q(14358, {	-- Ten Pounds of Flesh
@@ -379,6 +384,7 @@ _.Zones =
 					},
 				}),
 				o(195517, {	-- Elune's Handmaiden
+					["model"] = 198945,
 					["coord"] = { 75.9, 26.5, 66 },
 					["g"] = {
 						q(14357, {	-- To the Hilt!
@@ -524,6 +530,7 @@ _.Zones =
 					["sourceQuest"] = 14332,	-- Time for Change
 				}),
 				o(35251, {	-- Karnitol's Chest
+					["model"] = 196979,
 					["g"] = {
 						q(1455, {	-- The Karnitol Shipwreck
 							["races"] = ALLIANCE_ONLY,
@@ -689,6 +696,7 @@ _.Zones =
 					},
 				}),
 				o(177787, {	-- Rackmore's Log
+					["model"] = 200910,
 					["u"] = 43,
 					["g"] = {
 						q(6161, {	-- Claim Rackmore's Treasure!
@@ -779,6 +787,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				o(195600, {	-- Smouldering Stone
+					["model"] = 253308,
 					["coord"] = { 69.2, 21.3, 66 },
 					["g"] = {
 						q(14254, {	-- Heavy Metal

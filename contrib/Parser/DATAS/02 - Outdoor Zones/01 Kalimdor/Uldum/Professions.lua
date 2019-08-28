@@ -18,16 +18,22 @@ _.Zones =
 				}),
 				prof(356, {	-- Fishing
 					o(202779, {	-- Blackbelly Mudfish School
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["spellID"] = 28271,	-- Polymorph(Turtle)
-							["classes"] = { 8 },	-- Mage
-						}),
+						["model"] = 219405,
+						["g"] = {
+							i(22739, {	-- Tome of Polymorph: Turtle
+								["spellID"] = 28271,	-- Polymorph(Turtle)
+								["classes"] = { 8 },	-- Mage
+							}),
+						},
 					}),
 					o(202780, {	-- Fathom Eel Swarm
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["spellID"] = 28271,	-- Polymorph(Turtle)
-							["classes"] = { 8 },	-- Mage
-						}),
+						["model"] = 219405,
+						["g"] = {
+							i(22739, {	-- Tome of Polymorph: Turtle
+								["spellID"] = 28271,	-- Polymorph(Turtle)
+								["classes"] = { 8 },	-- Mage
+							}),
+						},
 					}),
 				}),
 				prof(186, {	-- Mining

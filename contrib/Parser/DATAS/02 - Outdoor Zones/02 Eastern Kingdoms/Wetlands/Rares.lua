@@ -28,8 +28,8 @@ _.Zones =
 				}),
 				o(207496, {	-- Dark Iron Treasure Chest
 					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
-					--["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-					--["modelScale"] = 1.5,
+					["model"] = 446673,
+					["modelScale"] = 1.5,
 					["coords"] = {
 						{ 63.9, 78.2, 56 },
 						{ 60.0, 24.5, 56 },
@@ -333,7 +333,7 @@ _.Zones =
 				}), 
 				o(202083, {	-- Razormaw Matriarch's Nest
 					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
-					--["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
+					["model"] = 199226,
 					["coord"] = { 69.9, 29.1, 56 },
 					["description"] = "Located inside the cave south of the coords.",
 					["g"] = {

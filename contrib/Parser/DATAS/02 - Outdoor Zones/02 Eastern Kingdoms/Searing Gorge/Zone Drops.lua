@@ -16,7 +16,7 @@ _.Zones =
 						i(142359, { 	-- Lava Oil
 							o(266289, { 	-- Time Lost Chest
 								["modelScale"] = 2,
-								["modelID"] = 49789,
+								["modelID"] = 446679,
 								["g"] = {
 									i(142358),	-- Plans: Blazing Rapier
 								},

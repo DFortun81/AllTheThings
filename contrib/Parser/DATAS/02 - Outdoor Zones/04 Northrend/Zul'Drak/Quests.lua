@@ -457,7 +457,8 @@ _.Zones =
 						i(41763),	-- Leggings of the Canny Chief
 					},
 				}),
-				o(191728, {
+				o(191728, {	-- Wanted!
+					["model"] = 199475,
 					["g"] = {
 						q(12857, {	-- Wanted: Ragemane's Flipper
 							["g"] = {

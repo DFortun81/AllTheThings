@@ -164,6 +164,7 @@ _.Zones =
 					["sourceQuest"] = 488,	-- Zenn's Bidding
 				}),
 				o(7510,  {	-- Sprouted Frond
+					["model"] = 189772,
 					["coords"] = {
 						{ 59.8, 59.9, 57 },
 						{ 43.9, 44.0, 57 },
@@ -177,6 +178,7 @@ _.Zones =
 					},
 				}),
 				o(6752,  {	-- Strange Fronded Plant
+					["model"] = 190380,
 					["coord"] = { 37.2, 25.3, 57 },
 					["g"] = {
 						q(931, {	-- The Shimmering Frond
@@ -186,6 +188,7 @@ _.Zones =
 					},
 				}),
 				o(6751,  {	-- Strange Fruited Plant
+					["model"] = 190381,
 					["coord"] = { 57.6, 63.0, 57 },
 					["g"] = {
 						q(930, {	-- The Glowing Fruit

@@ -7,6 +7,7 @@ _.Zones =
 		m(37, {	-- Elwynn Forest
 			n(-212, {	-- Treasure Chest
 				o(310709, {	-- Waterlogged Chest
+					["model"] = 196989,
 					["questID"] = 54131,
 					["coord"] = { 32.3, 63.6, 37 },
 					["lvl"] = 110,

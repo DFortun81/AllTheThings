@@ -80,14 +80,13 @@ _.Zones =
 					},
 				}), 
 				o(207496, {	-- Dark Iron Treasure Chest
+					["model"] = 446673,
+					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 					["coords"] = {
 						{ 36.6, 61.2, 48 },
 						{ 61.9, 75.0, 48 },
 						{ 80.3, 51.9, 48 },
 					},
-					--["modelScale"] = 1.5,
-					--["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 					["g"] = {
 						i(3292),	-- Ancestral Tunic
 						i(9775),	-- Bandit Cinch

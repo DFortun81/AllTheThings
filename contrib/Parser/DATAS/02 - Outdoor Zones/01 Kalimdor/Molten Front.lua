@@ -336,7 +336,9 @@ _.Zones =
 					}),
 					n(-16, {	-- Rares
 						o(207496, {	-- Dark Iron Treasure Chest
-							["modelScale"] = 1.5,
+							["model"] = 446673,
+							--["modelScale"] = 1.5,
+							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 							["coords"] = {
 								{ 34.3, 48.3, 338 },
 								{ 33.9, 53.8, 338 },
@@ -344,8 +346,6 @@ _.Zones =
 								{ 65.8, 55.0, 338 },
 								{ 68.5, 64.9, 338 },
 							},
-							["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 							["g"] = {
 								i(67121),	-- Chestguard of the Caring Ursine
 								i(66920),	-- Cyu's Ornate Wand

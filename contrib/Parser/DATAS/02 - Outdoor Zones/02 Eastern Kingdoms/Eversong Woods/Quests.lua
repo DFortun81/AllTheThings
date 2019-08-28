@@ -159,6 +159,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				o(181011, {	-- Magister Duskwither's Journal
+					["model"] = 191948,
 					["coord"] = { 69.2, 52.1, 94 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -359,6 +360,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				o(180918, {	-- Wanted: Thaelis the Hungerer
+					["model"] = 192133,
 					["questID"] = 8468,
 					["coord"] = { 48.1, 46.3, 94 },
 					["races"] = HORDE_ONLY,

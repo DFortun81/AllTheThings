@@ -100,6 +100,7 @@ _.Zones =
 					},
 				}),
 				o(181748, {	-- Blood Crystal
+					["model"] = 191579,
 					["coord"] = { 50.5, 11.6, 97 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

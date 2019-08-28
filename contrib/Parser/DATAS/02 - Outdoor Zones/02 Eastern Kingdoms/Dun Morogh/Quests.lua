@@ -317,6 +317,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				o(270, {	-- Unguarded Thunder Ale Barrel
+					["model"] = 199563,
 					["u"] = 43,
 					["g"] = {
 						q(311, {	-- Return to Marleth

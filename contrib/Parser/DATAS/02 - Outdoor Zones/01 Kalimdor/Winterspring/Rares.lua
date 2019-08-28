@@ -143,7 +143,7 @@ _.Zones =
 				}), 
 				o(240616, {	-- Frozen Supplies
 					["description"] = "|cff66ccffLoot the Frozen Supplies in a nook at the base of the pillar.|r",
-					["modelID"] = 32854,
+					["model"] = 874403,
 					["coord"] = { 68.0, 73.9, 83 },
 					["g"] = {	
 						i(122224),	-- Music Roll: Mountains

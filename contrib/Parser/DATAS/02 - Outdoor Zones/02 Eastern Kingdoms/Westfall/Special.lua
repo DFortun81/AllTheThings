@@ -3,10 +3,11 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms
+	m(13, {	-- Eastern Kingdoms	--- DELETE FILE????
 		m(52, {	-- Westfall
 			n(-77, {	-- Special
 				o(269830, {	-- Gift of the Mind-Seekers
+					["model"] = 942865,
 					["coord"] = { 30.6, 27.4, 52 },
 					["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
 					["questID"] = 47214,

@@ -8,7 +8,7 @@ _.Zones =
 			n(-16, {	-- Rares
 				o(179697, {	-- Arena Treasure Chest (FFA PvP)
 					["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM\nThose are the times the chest spawns.\nNote: The spawn times are SERVER time, not local time.",
-					["modelID"] = 64648,
+					["modelID"] = 219372,
 					["coord"] = { 46.6, 26.1, 210 },
 					["g"] = {
 						i(18706, {	-- Arena Master

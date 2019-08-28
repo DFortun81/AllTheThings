@@ -108,6 +108,7 @@ _.Zones =
 					},
 				}),
 				o(204824, {	-- Lightforged Arch
+					["model"] = 189528,
 					["coord"] = { 20.3, 27.4, 47 },
 					["g"] = {
 						q(26722, {	-- Buried Below
@@ -265,6 +266,7 @@ _.Zones =
 					},
 				}),
 				o(204825, {	-- Lightforged Crest
+					["model"] = 189528,
 					["coord"] = { 18.0, 25.3, 47 },
 					["g"] = {
 						q(26754, {	-- Morbent's Bane
@@ -493,6 +495,7 @@ _.Zones =
 					["sourceQuest"] = 26670,	-- Roland's Doom
 				}),
 				o(204817, {	-- Lightforged Rod
+					["model"] = 189528,
 					["coord"] = { 23.4, 35.4, 47 },
 					["g"] = {
 						q(26753, {	-- The Halls of the Dead
@@ -556,6 +559,7 @@ _.Zones =
 					},
 				}),
 				o(61, {	-- A Weathered Grave
+					["model"] = 189541,
 					["coord"] = { 17.7, 29.1, 47 },
 					["g"] = {
 						q(26793, {	-- The Weathered Grave

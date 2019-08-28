@@ -1641,6 +1641,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				o(142343, {	-- Uldum Pedestal
+					["model"] = 201041,
 					["coord"] = { 37.6, 81.4, 71 },
 					["g"] = {
 						q(2967, {	-- Return to Thunder Bluff

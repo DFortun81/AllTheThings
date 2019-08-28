@@ -270,10 +270,13 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 						}),
 						o(183284, {	-- Wanted Poster
-							q(10116, {	-- WANTED: Chieftain Mummaki
-								["coord"] = { 41.8, 27.3, 102 },
-								["races"] = ALLIANCE_ONLY,
-							}),
+							["model"] = 192468,
+							["g"] = {
+								q(10116, {	-- WANTED: Chieftain Mummaki
+									["coord"] = { 41.8, 27.3, 102 },
+									["races"] = ALLIANCE_ONLY,
+								}),
+							},
 						}),
 						q(9834, {	-- Natural Armor
 							["qg"] = 18010,	-- Maktu
@@ -319,14 +322,17 @@ _.Zones =
 						}),
 						-- Horde quests start
 						o(182165, {	-- Wanted Poster
-							q(9820, {	-- WANTED: Boss Grog'ak
-								["coord"] = { 32.0, 49.3, 102 },
-								["races"] = HORDE_ONLY,
-							}),
-							q(10117, {	-- Wanted: Chieftain Mummaki
-								["coord"] = { 32.0, 49.3, 102 },
-								["races"] = HORDE_ONLY,
-							}),
+							["model"] = 199421,
+							["g"] = {
+								q(9820, {	-- WANTED: Boss Grog'ak
+									["coord"] = { 32.0, 49.3, 102 },
+									["races"] = HORDE_ONLY,
+								}),
+								q(10117, {	-- Wanted: Chieftain Mummaki
+									["coord"] = { 32.0, 49.3, 102 },
+									["races"] = HORDE_ONLY,
+								}),
+							},
 						}),
 						q(9822, {	-- Impending Attack
 							["qg"] = 18013,	-- Shadow Hunter Denjai
@@ -566,24 +572,27 @@ _.Zones =
 						["coord"] = { 80.4, 64.7, 102 },
 					}),
 					o(182115, {	-- Wanted Poster
-						q(9817,  { 	-- Leader of the Bloodscale
-							["coord"] = { 79.1, 64.9, 102 },
-							["g"] = {
-								i(27723), 	-- Belt of the Moonkin
-								i(27721), 	-- Expedition Footgear
-								i(27722), 	-- Gloves of Marshmanship
-								i(27724), 	-- Wild Shoulderpads
-							},
-						}),
-						q(9730,  {	-- Leader of the Darkcrest
-							["coord"] = { 79.1, 64.9, 102 },
-							["g"] = {
-								i(27728),	-- Cushy Cenarion Walkers
-								i(27725),	-- Expedition Mantle
-								i(27726),	-- Hearty Cenarion Cincture
-								i(27727),	-- Swift Cenarion Footwear
-							},
-						}),
+						["model"] = 199428,
+						["g"] = {
+							q(9817,  { 	-- Leader of the Bloodscale
+								["coord"] = { 79.1, 64.9, 102 },
+								["g"] = {
+									i(27723), 	-- Belt of the Moonkin
+									i(27721), 	-- Expedition Footgear
+									i(27722), 	-- Gloves of Marshmanship
+									i(27724), 	-- Wild Shoulderpads
+								},
+							}),
+							q(9730,  {	-- Leader of the Darkcrest
+								["coord"] = { 79.1, 64.9, 102 },
+								["g"] = {
+									i(27728),	-- Cushy Cenarion Walkers
+									i(27725),	-- Expedition Mantle
+									i(27726),	-- Hearty Cenarion Cincture
+									i(27727),	-- Swift Cenarion Footwear
+								},
+							}),
+						},
 					}),
 					i(25459, {	-- "Count" Ungula's Mandible
 						q(9911,	{	-- The Count of the Marshes

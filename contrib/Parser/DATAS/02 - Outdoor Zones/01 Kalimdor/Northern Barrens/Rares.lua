@@ -464,6 +464,8 @@ _.Zones =
 					},
 				}), 
 				o(202081, {	-- Takk's Nest
+					["model"] = 199226,
+					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					["coords"] = {
 						{ 61.0, 19.8, 10 },
 						{ 62.8, 20.2, 10 },
@@ -471,8 +473,6 @@ _.Zones =
 						{ 65.0, 28.7, 10 },
 						--{ 56.0, 49.3, 10 },	-- Wowhead notes this as another coord, but only before cataclysm
 					},
-					["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
-					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					["g"] = {	
 						i(48118),  	-- Leaping Hatchling
 					},

@@ -109,6 +109,7 @@ _.Zones =
 					},
 				}),
 				o(296536, {	-- Bloodied Sentinel's Glaive
+					["model"] = 1118879,
 					["coord"] = { 45.2, 17.9, 62 },
 					["g"] = {
 						q(53130, {	-- Bloodied Sentinel's Glaive
@@ -128,7 +129,7 @@ _.Zones =
 				}),
 				o(194105, {	-- Buzzbox 413
 					["coord"] = { 53.2, 19.6, 62 },
-					["model"] = "world\\generic\\goblin\\passivedoodads\\controlpanel\\goblincontrolpanel.mdx",
+					["model"] = 197760,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(13527, {	-- No Accounting for Taste
@@ -145,7 +146,7 @@ _.Zones =
 				}),
 				o(194122, {	-- Buzzbox 723
 					["coord"] = { 54.1, 29.2, 62 },
-					["model"] = "world\\generic\\goblin\\passivedoodads\\controlpanel\\goblincontrolpanel.mdx",
+					["model"] = 197760,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(13554, {	-- A Cure In The Dark
@@ -240,7 +241,7 @@ _.Zones =
 				}),
 				o(194714, {	-- Disgusting Workbench
 					["coord"] = { 57.4, 33.7, 62 },
-					["model"] = "world\\generic\\undead\\passive doodads\\undeadalchemytable\\undead_alchemy_table.mdx",
+					["model"] = 200767,
 					["g"] = {
 						q(13831, {	-- A Troubling Prescription
 							["races"] = ALLIANCE_ONLY,

@@ -113,10 +113,13 @@ _.Zones =
 					-- prereq needs to be confirmed
 				}),
 				o(192060, {	-- Fjorn's Anvil
-					q(12956, {	-- A Spark of Hope
-						["coord"] = { 77.1, 62.9, 120 },
-						["sourceQuests"] = { 12922 },	-- The Refiner's Fire
-					}),
+					["model"] = 195374,
+					["g"] = {
+						q(12956, {	-- A Spark of Hope
+							["coord"] = { 77.1, 62.9, 120 },
+							["sourceQuests"] = { 12922 },	-- The Refiner's Fire
+						}),
+					},
 				}),
 				q(12867, {	-- Baby Stealers (awarded "The Harpy Problem" achievement criteria)
 					["qg"] = 29732,	-- Fjorlin Frostbrow
@@ -321,18 +324,21 @@ _.Zones =
 					["sourceQuests"] = { 12996 },	-- The Warm-Up
 				}),
 				o(191760, {	-- Inventor's Library Console
-					q(12872, {	-- Norgannon's Shell (awarded "Norgannon's Shell" criteria)
-						["coord"] = { 37.4, 46.7, 120 },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 13415 },	-- The Library Console
-						["g"] = {
-							i(42794),	-- Hardened Vine of the Mauler
-							i(42824),	-- Maker's Edge
-							i(42819),	-- Maker's Touch
-							i(42807),	-- Blade of the Inception
-							i(42831),	-- Maiden's Dagger
-						},
-					}),
+					["model"] = 243957,
+					["g"] = {
+						q(12872, {	-- Norgannon's Shell (awarded "Norgannon's Shell" criteria)
+							["coord"] = { 37.4, 46.7, 120 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuests"] = { 13415 },	-- The Library Console
+							["g"] = {
+								i(42794),	-- Hardened Vine of the Mauler
+								i(42824),	-- Maker's Edge
+								i(42819),	-- Maker's Touch
+								i(42807),	-- Blade of the Inception
+								i(42831),	-- Maiden's Dagger
+							},
+						}),
+					},
 				}),
 				q(12969, {	-- Is That Your Goblin?
 					["qg"] = 29975,	-- Lok'lira the Crone
@@ -769,13 +775,16 @@ _.Zones =
 					["description"] = "The giants that drop this quest item spawn on and around the ice patch east of Dun Niffelem.",
 				}),
 				o(191761, {	-- Prototype Console
-					q(13843, {	-- The Scrapbot Construction Kit
-						["coord"] = { 37.6, 46.8, 120 },
-						["requireSkill"] = 202,	-- Engineering
-						["sourceQuests"] = { 12889 },	-- The Prototype Console
-						-- wh says this ALSO teaches Scrapbot Construction Kit, spell 55252
-						-- not sure how to list reward/what quest it comes from, or if the questline has changed, so i guess an engineer needs to check it out
-					}),
+					["model"] = 243957,
+					["g"] = {
+						q(13843, {	-- The Scrapbot Construction Kit
+							["coord"] = { 37.6, 46.8, 120 },
+							["requireSkill"] = 202,	-- Engineering
+							["sourceQuests"] = { 12889 },	-- The Prototype Console
+							-- wh says this ALSO teaches Scrapbot Construction Kit, spell 55252
+							-- not sure how to list reward/what quest it comes from, or if the questline has changed, so i guess an engineer needs to check it out
+						}),
+					},
 				}),
 				q(12989, {	-- The Slithering Darkness
 					["qg"] = 29839,	-- Astrid Bjornrittar
@@ -838,15 +847,18 @@ _.Zones =
 					["sourceQuests"] = { 12874 },	-- Fervor of the Frostborn
 				}),
 				o(192072, {	-- Harpoon Crate
-					q(12953, {	-- Valkyrion Must Burn
-						["coord"] = { 24.0, 61.7, 120 },
-						["g"] = {
-							i(42850),	-- Flamebringer's Crown
-							i(42884),	-- Steel-Tipped Snowboots
-							i(42896),	-- Valkyrion Tracker's Chestguard
-							i(42874),	-- Wooly Stompers
-						},
-					}),
+					["model"] = 195533,
+					["g"] = {
+						q(12953, {	-- Valkyrion Must Burn
+							["coord"] = { 24.0, 61.7, 120 },
+							["g"] = {
+								i(42850),	-- Flamebringer's Crown
+								i(42884),	-- Steel-Tipped Snowboots
+								i(42896),	-- Valkyrion Tracker's Chestguard
+								i(42874),	-- Wooly Stompers
+							},
+						}),
+					},
 				}),
 				q(13050, {	-- Veranus
 					["qg"] = 29445,	-- Thorim

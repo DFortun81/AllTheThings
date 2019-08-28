@@ -8,7 +8,10 @@ _.Zones =
 			n(-38, {	-- Professions
 				prof(356, {	-- Fishing
 					o(182952, {	-- Steam Pump Flotsam
-						i(27481),	-- Heavy Supply Crate
+						["model"] = 219411,
+						["g"] = {
+							i(27481),	-- Heavy Supply Crate
+						},
 					}),
 				}),
 			}),

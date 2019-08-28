@@ -71,8 +71,7 @@ _.Zones =
 				o(240622, {	-- Warden's Scroll Case
 					["description"] = "|cff66ccffLoot the Warden's Scrollcase inside the Warden's Cage.|r",
 					["modelScale"] = .5,
-					["model"] = "World\\Expansion04\\Doodads\\Pandaren\\Scroll\\PA_Scroll_04.mdx",
-					["icon"] = "Interface\\Icons\\INV_Icon_Daily_Mission_Scroll",
+					["model"] = 521201,
 					["g"] = {
 						i(122228),	-- Music Roll: The Black Temple
 					},

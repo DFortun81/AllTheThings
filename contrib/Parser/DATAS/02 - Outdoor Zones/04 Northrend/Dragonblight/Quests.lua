@@ -259,12 +259,12 @@ _.Zones =
 							["sourceQuests"] = {12253},
 						}),
 						o(189311, {	--	Flesh-bound Tome
+							["model"] = 200922,
 							["g"] = {
 								q(12312, {	-- Secrets of the Scourge [Alliance]
 									["sourceQuests"] = {12309},
 								}),
 							},
-							["model"] = "World\\Goober\\g_bookopenmedium07.mdx",
 						}),
 						q(12319, {	-- Mystery of the Tome [Alliance]
 							["qg"] = 27318,	-- Cavalier Durkon
@@ -499,6 +499,7 @@ _.Zones =
 							["sourceQuests"] ={12028},
 						}),
 						o(188419, {	--	Elder Mana'loa
+							["model"] = 194335,
 							["g"] = {
 								q(12031, {	-- Freedom for the Lingering
 									["sourceQuests"] = {12030},
@@ -699,7 +700,7 @@ _.Zones =
 					},
 				}),
 				o(248398, {	-- Ethereal Communication Device
-					["model"] = "World\\Expansion01\\Doodads\\Generic\\Ethereal\\Holographicstand\\et_holographic_stand.mdx",
+					["model"] = 192568,
 					["g"] = {
 						q(42007, {	-- A Forgotten Enemy
 							["lvl"] = 98,
@@ -1131,6 +1132,7 @@ _.Zones =
 					["sourceQuest"] = 11959,	-- Slay Loguhn
 				}),
 				o(190020, {	-- Wanted!
+					["model"] = 199476,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(12441, {	-- Wanted: High Shaman Bloodpaw [Alliance]
@@ -1163,10 +1165,9 @@ _.Zones =
 							},
 						}),
 					},
-					["races"] = ALLIANCE_ONLY,
-					["model"] = "World\\Generic\\Passive Doodads\\Wantedposters\\newwantedposter03.mdx",
 				}),
 				o(188418, {	-- Wanted!
+					["model"] = 199476,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(12091, {	-- Wanted: Dreadtalon [Horde]
@@ -1225,7 +1226,7 @@ _.Zones =
 					},
 				}),
 				o(188364, {	-- Wrecked Crab Trap
-					["model"] = "World\\Expansion02\\Doodads\\Generic\\Tuskarr\\ts_crabbasket_broken.mdx",
+					["model"] = 195350,
 					["g"] = {
 						q(12011),	-- Signs of Big Watery Trouble
 					},

@@ -113,6 +113,7 @@ _.Zones =
 					},
 				}),
 				o(204351, {	-- Ettin Control Orb
+					["model"] = 203892,
 					["coord"] = { 17.8, 18.6, 49 },
 					["g"] = {
 						q(26520, {	-- Saving Foreman Oslow
@@ -241,7 +242,8 @@ _.Zones =
 					["coord"] = { 28.3, 48.8, 49 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				o(31,    {	-- Old Lion Statue
+				o(31, {	-- Old Lion Statue
+					["model"] = 189908,
 					["u"] = 43,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -447,6 +449,7 @@ _.Zones =
 					["sourceQuest"] = 26639,	-- Point of Contact: Brubaker
 				}),
 				o(204344, {	-- Wanted!
+					["model"] = 198409,
 					["coord"] = { 16.0, 64.6, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

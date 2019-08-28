@@ -8,7 +8,7 @@ _.Zones =
 			n(-212, {	-- Treasure Chest
 				o(240625, {	-- High Priestess' Reliquary
 					["description"] = "|cff66ccffLoot the chest on the top floor of the Temple of the Moon, on the wall opposite Tyrande Whisperwind.|r",
-					["model"] = "World\\Expansion05\\Doodads\\Human\\Doodads\\6hu_enchanting_chest01.mdx",
+					["model"] = 942843,
 					["icon"] = "Interface\\Icons\\Garrison_SilverChest",	
 					["g"] = {
 						i(122239),	-- Music Roll: Shalandis Isle

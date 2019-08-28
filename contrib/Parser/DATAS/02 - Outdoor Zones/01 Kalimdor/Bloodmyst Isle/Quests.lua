@@ -52,6 +52,7 @@ _.Zones =
 					["sourceQuest"] = 9696,	-- Translations...
 				}),
 				o(181756, {	-- Battered Ancient Book
+					["model"] = 198027,
 					["coord"] = { 61.1, 41.8, 106 },
 					["g"] = {
 						q(9557, {	-- Deciphering the Book
@@ -207,6 +208,7 @@ _.Zones =
 					},
 				}),
 				o(182032, {	-- Galaen's Journal
+					["model"] = 198028,
 					["coord"] = { 37.5, 61.2, 106 },
 					["g"] = {
 						q(9706, {	-- Galaen's Journal - The Fate of Vindicator Saruan
@@ -528,6 +530,7 @@ _.Zones =
 					["sourceQuest"] = 9756,	-- What We Don't Know...
 				}),
 				o(181889, {	-- Wanted Poster
+					["model"] = 192468,
 					["coord"] = { 55.2, 59.1, 106 },
 					["g"] = {
 						q(9646, {	-- WANTED: Deathclaw

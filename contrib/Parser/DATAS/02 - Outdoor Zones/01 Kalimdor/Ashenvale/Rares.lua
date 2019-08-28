@@ -310,7 +310,7 @@ _.Zones =
 				}),
 				o(240617, {	-- Lost Sentinel's Pouch
 					["coord"] = { 56.5, 49.3, 63 },
-					["model"] = "World\\Expansion04\\Doodads\\Hozu\\HZ_PouchClosed.mdx",
+					["model"] = 571710,
 					["modelScale"] = .2,
 					["icon"] = "Interface\\Icons\\INV_Misc_Bag_HerbPouch",
 					["description"] = "|cff66ccffLoot the Lost Sentinel's Pouch inside a large hollow tree trunk.|r",

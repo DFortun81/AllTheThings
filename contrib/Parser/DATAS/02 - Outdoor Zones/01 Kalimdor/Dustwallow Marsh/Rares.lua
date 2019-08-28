@@ -254,14 +254,14 @@ _.Zones =
 					},
 				}), 
 				o(202080, {	-- Dart's Nest
+					["model"] = 199226,
+					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					["coords"] = {
 						{ 47.9, 19.0, 70 },
 						{ 49.1, 17.5, 70 },
 						{ 48.0, 14.5, 70 },
 						{ 46.5, 17.2, 70 },
 					},
-					["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
-					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",	
 					["g"] = {		
 						i(48112),	-- Darting Hatchling
 					},

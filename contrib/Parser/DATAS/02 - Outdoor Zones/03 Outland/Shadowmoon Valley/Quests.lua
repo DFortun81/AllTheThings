@@ -582,18 +582,21 @@ _.Zones =
 					},
 				}),
 				o(185126, {	-- Crystal Prison
-					q(10781, {	-- Battle of the Crimson Watch
-						["coord"] = { 51.4, 72.7, 104 },
-						["sourceQuests"] = { 10793 },	-- The Journal of Val'zareq: Portends of War
-						["g"] = {
-							i(31380),	-- Acrobat's Mark of the Sha'tar
-							i(31381), 	-- Aggressor's Mark of the Sha'tar
-							i(31404),	-- Green Trophy Tabard of the Illidari
-							i(31382),	-- Mage's Mark of the Sha'tar
-							i(31405),	-- Purple Trophy Tabard of the Illidari
-							i(31383),	-- Spiritualist's Mark of the Sha'tar
-						},
-					}),
+					["model"] = 192011,
+					["g"] = {
+						q(10781, {	-- Battle of the Crimson Watch
+							["coord"] = { 51.4, 72.7, 104 },
+							["sourceQuests"] = { 10793 },	-- The Journal of Val'zareq: Portends of War
+							["g"] = {
+								i(31380),	-- Acrobat's Mark of the Sha'tar
+								i(31381), 	-- Aggressor's Mark of the Sha'tar
+								i(31404),	-- Green Trophy Tabard of the Illidari
+								i(31382),	-- Mage's Mark of the Sha'tar
+								i(31405),	-- Purple Trophy Tabard of the Illidari
+								i(31383),	-- Spiritualist's Mark of the Sha'tar
+							},
+						}),
+					},
 				}),
 				q(10562, {	-- Besieged!
 					["qg"] = 21357,	-- Wing Commander Nuainn
@@ -1275,27 +1278,33 @@ _.Zones =
 					["sourceQuests"] = { 10595 },	-- Besieged!
 				}),
 				o(184946, {	-- Wanted Poster
-					q(10648, {	-- Wanted: Uvuros, Scourge of Shadowmoon
-						["coord"] = { 38.2, 53.9, 104 },
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(31112),	-- Uvuros Hide Boots
-							i(31114),	-- Uvuros Hide Cinch
-							i(31111),	-- Uvuros Hide Gloves
-							i(31115),	-- Uvuros Plated Spaulders
-						},
-					}),
+					["model"] = 199476,
+					["g"] = {
+						q(10648, {	-- Wanted: Uvuros, Scourge of Shadowmoon
+							["coord"] = { 38.2, 53.9, 104 },
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(31112),	-- Uvuros Hide Boots
+								i(31114),	-- Uvuros Hide Cinch
+								i(31111),	-- Uvuros Hide Gloves
+								i(31115),	-- Uvuros Plated Spaulders
+							},
+						}),
+					},
 				}),
 				o(184945, {	-- Wanted Poster
-					q(10647, {	-- Wanted: Uvuros, Scourge of Shadowmoon
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(31112),	-- Uvuros Hide Boots
-							i(31114),	-- Uvuros Hide Cinch
-							i(31111),	-- Uvuros Hide Gloves
-							i(31115),	-- Uvuros Plated Spaulders
-						},
-					}),
+					["model"] = 199475,
+					["g"] = {
+						q(10647, {	-- Wanted: Uvuros, Scourge of Shadowmoon
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(31112),	-- Uvuros Hide Boots
+								i(31114),	-- Uvuros Hide Cinch
+								i(31111),	-- Uvuros Hide Gloves
+								i(31115),	-- Uvuros Plated Spaulders
+							},
+						}),
+					},
 				}),
 				q(10577, {	-- What Illidan Wants, Illidan Gets...
 					["qg"] = 21293,	-- Borak, Son of Oronok

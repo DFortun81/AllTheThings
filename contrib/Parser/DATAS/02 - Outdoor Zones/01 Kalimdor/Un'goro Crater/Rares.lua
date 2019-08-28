@@ -366,6 +366,8 @@ _.Zones =
 					},
 				}), 
 				o(202082, {	-- Ravasaur Matriarch's Nest
+					["model"] = 199226,
+					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					["coords"] = {
 						{ 68.9, 61.2, 78 },
 						{ 68.9, 66.9, 78 },
@@ -373,8 +375,6 @@ _.Zones =
 						{ 62.2, 65.3, 78 },
 						{ 62.0, 73.6, 78 },
 					},
-					["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
-					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					["g"] = {	
 						i(48122), 	-- Ravasaur Hatchling (PET!)
 					},

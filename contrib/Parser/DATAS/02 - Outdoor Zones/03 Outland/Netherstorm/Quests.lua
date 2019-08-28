@@ -37,10 +37,13 @@ _.Zones =
 									["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
 								}),
 								o(183770, {	-- B'naar Control Console
-									q(10245, {	-- B'naar Console Transcription
-										["coord"] = { 23.2, 68.2, 109 },
-										["sourceQuest"] = 10243,	-- Naaru Technology
-									}),
+									["model"] = 193552,
+									["g"] = {
+										q(10245, {	-- B'naar Console Transcription
+											["coord"] = { 23.2, 68.2, 109 },
+											["sourceQuest"] = 10243,	-- Naaru Technology
+										}),
+									},
 								}),
 								q(10299, {	-- Shutting Down Manaforge B'naar
 									["qg"] = 19467,	-- Anchorite Karja
@@ -343,10 +346,13 @@ _.Zones =
 							["sourceQuest"] = 10312,	-- The Annals of Kirin'Var
 						}),
 						o(184300, {	-- Necromantic Focus
-							q(10314, {	-- A Lingering Suspicion
-								["coord"] = { 60,3, 78.0, 109 },
-								["sourceQuests"] = 10316,	-- Searching for Evidence
-							}),
+							["model"] = 201097,
+							["g"] = {
+								q(10314, {	-- A Lingering Suspicion
+									["coord"] = { 60,3, 78.0, 109 },
+									["sourceQuests"] = 10316,	-- Searching for Evidence
+								}),
+							},
 						}),
 						i(29234, {	-- Belmara's Tome
 							q(10305, {	-- Abjurist Belmara
@@ -839,23 +845,26 @@ _.Zones =
 						},
 					}),
 					o(183811, {	-- Wanted Poster
-						q(10701, {	-- Breaking Down Netherock
-							["coord"] = { 32.1, 64.7, 109 },
-							["groups"] = {
-								i(31314),	-- Rocket-Chief Pauldrons
-								i(31313),	-- Nether-Rocket Gloves
-								i(31315),	-- Goblin Girdle
-								i(31312),	-- Sinister Area 52 Boots
-							},
-						}),	
-						q(10261, {	-- Wanted: Annihilator Servo!
-							["coord"] = { 32.1, 64.7, 109 },
-							["groups"] = {
-								i(30295),	-- Exotic Spiked Shoulders
-								i(30296),	-- Lost Chestplate of the Reverent
-								i(30294),	-- Red Pointy Hat
-							},
-						}),
+						["model"] = 199473,
+						["g"] = {
+							q(10701, {	-- Breaking Down Netherock
+								["coord"] = { 32.1, 64.7, 109 },
+								["groups"] = {
+									i(31314),	-- Rocket-Chief Pauldrons
+									i(31313),	-- Nether-Rocket Gloves
+									i(31315),	-- Goblin Girdle
+									i(31312),	-- Sinister Area 52 Boots
+								},
+							}),	
+							q(10261, {	-- Wanted: Annihilator Servo!
+								["coord"] = { 32.1, 64.7, 109 },
+								["groups"] = {
+									i(30295),	-- Exotic Spiked Shoulders
+									i(30296),	-- Lost Chestplate of the Reverent
+									i(30294),	-- Red Pointy Hat
+								},
+							}),
+						},
 					}),
 					q(10309, {	-- It's a Fel Reaver, But with Heart
 						["qg"] = 19690,	-- N. D. Meancamp

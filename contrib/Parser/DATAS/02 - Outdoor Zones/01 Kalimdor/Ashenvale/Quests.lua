@@ -971,6 +971,7 @@ _.Zones =
 					["sourceQuest"] = 13617,	-- West to the Strand
 				}),
 				o(195134,{	-- The Bomb
+					["model"] = 254419,
 					["coord"] = { 46.3, 61.8, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

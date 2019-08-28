@@ -446,6 +446,7 @@ _.Zones =
 							},
 						}),
 						o(182392, {	--	Garadar Bulletin Board
+							["model"] = 199475,
 							["g"] = {
 								q(9935, {	-- WANTED: Giselda the Crone
 									["coord"] = { 55.7, 38.0, 107 },
@@ -932,6 +933,7 @@ _.Zones =
 							},
 						}),
 						o(182393, {	--	Telaar Bulletin Board
+							["model"] = 192468,
 							["g"] = {
 								q(9936, {	-- WANTED: Giselda the Crone
 									["coord"] = { 54.7, 70.8, 107 },

@@ -249,7 +249,7 @@ _.Zones =
 							["sourceQuests"] = {12007},
 						}),
 						o(188365, {	-- Heart of the Ancients
-							["model"] = "World\\Expansion01\\Doodads\\Generic\\Tradeskill\\Jewelcrafting\\Jewelcraft_gemcut_03.mdx",
+							["model"] = 192714,
 							["g"] = {
 								q(12802, {	--  My Heart is in Your Hands
 									["sourceQuests"] = {12042},
@@ -441,7 +441,7 @@ _.Zones =
 				}),
 				o(188667, {	-- Amberseed
 					["races"] = ALLIANCE_ONLY,
-					["model"] = "World\\Kalimdor\\Mulgore\\Passivedoodads\\Pinecone\\Pinecone.mdx",
+					["model"] = 202297,
 					["g"] = {
 						q(12225),	--  Mmm... Amberseeds! [Alliance]
 					},
@@ -458,7 +458,7 @@ _.Zones =
 				}),
 				o(188261, {	-- Battered Journal
 					["races"] = ALLIANCE_ONLY,
-					["model"] = "World\\Goober\\g_booktraplightgood.mdx",
+					["model"] = 200908,
 					["g"] = {
 						q(11986),	--  The Damaged Journal [Alliance]
 					},

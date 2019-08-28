@@ -17,6 +17,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				o(55, {	-- A half-eaten body
+					["model"] = 198343,
 					["coord"] = { 72.6, 60.3, 37 },
 					["g"] = {
 						q(45, {	-- Discover Rolf's Fate
@@ -44,6 +45,7 @@ _.Zones =
 					["sourceQuest"] = 86,	-- Pie for Billy
 				}),
 				o(203733, {	-- Bounty Board
+					["model"] = 199473,
 					["coord"] = { 74.0, 72.3, 37 },
 					["g"] = {
 						q(46, {	-- Bounty on Murlocs
@@ -264,6 +266,7 @@ _.Zones =
 					},
 				}),
 				o(56, {	-- Rolf's corpse
+					["model"] = 198343,
 					["coord"] = { 79.7, 55.5, 37 },
 					["g"] = {
 						q(71, {	-- Report to Thomas
@@ -320,6 +323,7 @@ _.Zones =
 					["classes"] = { 4 },
 				}),
 				o(307265, {	-- Wanted Poster -- also provided by 307325 (24.5, 74.6)
+					["model"] = 199421,
 					["coords"] = {
 						{ 24.5, 78.2, 37 },
 						{ 24.5, 74.6, 37 },
@@ -344,7 +348,8 @@ _.Zones =
 					["sourceQuest"] = 47,	-- Gold Dust Exchange
 					["isBreadcrumb"] = true,
 				}),
-				o(203734, {	-- Westfall Deed?
+				o(203734, {	-- Westfall Deed
+					["model"] = 243448,
 					["coord"] = { 24.7, 95.2, 37 },
 					["g"] = {
 						q(184, {	-- Furlbrow's Deed

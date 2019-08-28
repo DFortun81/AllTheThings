@@ -193,6 +193,7 @@ _.Zones =
 					["sourceQuests"] = { 28438 },	-- Trial by Magma
 				}),
 				o(207304, {	-- Adventure Board
+					["model"] = 199475,
 					["coord"] = { 17.0, 51.7, 36 },
 					["g"] = {
 						q(28068, {	-- Adventurers Wanted: Blackrock Depths
@@ -203,6 +204,7 @@ _.Zones =
 					},
 				}),
 				o(207303, {	-- Adventure Board
+					["model"] = 199475,
 					["coord"] = { 17.0, 51.7, 36 },
 					["g"] = {
 						q(28069, {	-- Adventurers Wanted: Blackrock Depths

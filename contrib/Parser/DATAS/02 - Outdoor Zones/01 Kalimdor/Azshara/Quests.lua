@@ -323,6 +323,7 @@ _.Zones =
 					},
 				}),
 				o(204050, {	-- Foebreaker Blueprints
+					["model"] = 365176,
 					["coord"] = { 53.5, 47.5, 76 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -409,6 +410,7 @@ _.Zones =
 					["sourceQuest"] = 24448,	-- Field Promotion
 				}),
 				o(195431, {	-- Headquarters Radio
+					["model"] = 197760,
 					["coord"] = { 20.2, 70.3, 76 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -514,6 +516,7 @@ _.Zones =
 					["sourceQuest"] = 2744,	-- The Demon Hunter
 				}),
 				o(196833, {	-- Lower Scrying Stone
+					["model"] = 125825,
 					["coord"] = { 52.9, 29.0, 76 },
 					["g"] = {
 						q(14430, {	-- Hacking the Construct
@@ -597,6 +600,7 @@ _.Zones =
 					},
 				}),
 				o(195642, {	-- Naga Power Stone
+					["model"] = 198793,
 					["coord"] = { 58.9, 71.8, 76 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -791,6 +795,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				o(195676, {	-- Secret Lab Squawkbox
+					["model"] = 197760,
 					["coord"] = { 43.8, 77.3, 76 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1083,6 +1088,7 @@ _.Zones =
 					["sourceQuest"] = 14134,	-- The Captain's Logs
 				}),
 				o(196832, {	-- Upper Scrying Stone
+					["model"] = 125825,
 					["coord"] = { 49.5, 28.7, 76 },
 					["g"] = {
 						q(14429, {	-- Arcane De-Construction
@@ -1133,6 +1139,7 @@ _.Zones =
 					},
 				}),
 				o(195435, {	-- Weapons Cabinet
+					["model"] = 196982,
 					["coord"] = { 20.0, 69.9, 76 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1165,6 +1172,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				o(201578, {	-- Wrenchman Recruitment Poster
+					["model"] = 333925,
 					["races"] = HORDE_ONLY,
 					["coords"] = {
 						{ 56.9, 50.1, 76 },
