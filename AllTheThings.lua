@@ -7853,7 +7853,7 @@ local function CreateMiniListForGroup(group)
 			end;
 		elseif group.questID or group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
-			if group.parent.questID == group.questID then
+			if group.questID ~= nil and group.parent.questID == group.questID then
 				group = group.parent;
             end
 			local root = CloneData(group);
