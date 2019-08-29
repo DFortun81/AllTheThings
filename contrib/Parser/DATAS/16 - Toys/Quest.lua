@@ -9,6 +9,7 @@ _.Toys =
 		i(118191), 		-- Archmage Vargoth's Spare Staff
 		i(118427),		-- Autographed Hearthstone Card
 		i(119093),		-- Aviana's Feather
+		i(169796),		-- Azeroth Mini Collection: Mechagon
 		i(141879), 		-- Berglrgl Perrgl Girggrlf
 		i(133997),		-- Black Ice
 		i(170154),		-- Book of the Unshackled (H)
@@ -48,6 +49,7 @@ _.Toys =
 		i(119001), 		-- Mystery Keg
 		i(138873),		-- Mystical Frosh Hat
 		i(130209), 		-- Never Ending Toy Chest
+		i(44820),		-- Red Ribbon Pet Leash
 		i(123851),		-- Photo B.O.M.B.
 		i(30690),		-- Power Converter (Alliance)
 		i(88370), 		-- Puntable Marmot

@@ -7,6 +7,7 @@ _.Toys =
 		i(166247),		-- Citizens Brigade Whistle
 		i(134032),		-- Elite Pennant
 		i(139773),		-- Emerald Winds
+		i(134034),		-- Esteemed Pennant
 		i(164310),		-- Glorious Pennant
 		i(87528),		-- Honorary Brewmaster Keg
 		i(134026),		-- Honorable Pennant

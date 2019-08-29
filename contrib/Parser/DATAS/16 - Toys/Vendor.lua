@@ -5,6 +5,8 @@ _.Toys =
 {
 	n(-2,  { 	-- Vendor
 		i(163211),		-- Akunda's Firesticks
+		i(169275),		-- Alliance War Banner
+		i(169278),		-- Alliance War Standard
 		i(168012),		-- Apexis Focusing Shard
 		i(46843),		-- Argent Crusader's Banner
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
@@ -23,6 +25,7 @@ _.Toys =
 		i(97921),		-- Bom'bay's Color-Seein' Sauce
 		i(140336),		-- Brulfist Idol
 		i(103685), 		-- Celestial Defender's Medallion
+		i(143727),		-- Champion's Salute
 		i(89222),		-- Cloud Ring
 		i(166662),		-- Cranky Crab
 		i(153039),  	-- Crystalline Campfire Toy
@@ -40,6 +43,7 @@ _.Toys =
 		i(134007),		-- Eternal Black Diamond Ring
 		i(45020),		-- Exodar Banner (Alliance)
 		i(136846),		-- Familiar Stone
+		i(104324),		-- Foot Ball
 		i(88802), 		-- Foxicopter Controller
 		i(44719), 		-- Frenzyheart Brew
 		i(128471),		-- Frostwolf Grunt's Battlegear (Horde)
@@ -53,9 +57,12 @@ _.Toys =
 		i(159749), 		-- Haw'li's Hot & Spicy Chili
 		i(119210), 		-- Hearthstone Board
 		i(140325),		-- Home Made Party Mask
+		i(169276),		-- Horde War Banner
+		i(169277),		-- Horde War Standard
 		i(136855, {		-- Hunter's Call -- only Hunter
 			["classes"] = {3},	-- Hunter
 		}),
+		i(163705),		-- Imaginary Gun
 		i(127707),		-- Indestructible Bone
 		i(43499), 		-- Iron Boot Flask
 		i(45018),		-- Ironforge Banner (Alliance)
@@ -96,6 +103,7 @@ _.Toys =
 		i(164983),		-- Rhan'ka's Escape Plan
 		i(37460),		-- Rope Pet Leash
 		i(122283), 		-- Rukhmar's Sacred Memory
+		i(169108),		-- Rustbolt Banner
 		i(136927, {		-- Scarlet Confessional Book -- only Priest
 			["classes"] = {5},	-- Priest
 		}),
@@ -111,6 +119,7 @@ _.Toys =
 		i(169297),		-- Stormpike Insignia (A)
 		i(45011),		-- Stormwind Banner (Alliance)
 		i(150743),		-- Surviving Kalimdor (Alliance)
+		i(170204),		-- Symbol of Gral
 		i(130157),		-- Syxsehnz Rod
 		i(136935, {		-- Tadpole Cloudseeder -- only Shaman
 			["classes"] = {7},	-- Shaman
@@ -123,6 +132,7 @@ _.Toys =
 		i(150745),		-- The Azeroth Campaign (Horde)
 		i(45013),		-- Thunder Bluff Banner (Horde)
 		i(119160),		-- Tickle Totem (Horde)
+		i(163704),		-- Tiny Mechanical Mouse
 		i(150746),		-- To Modernize the Provisioning of Azeroth (Alliance)
 		i(63141),		-- Tol Barad Searchlight (Alliance)
 		i(64997),		-- Tol Barad Searchlight (Horde)
@@ -131,6 +141,7 @@ _.Toys =
 		i(136937, { 	-- Vol'jin's Serpent Totem -- only Shaman
 			["classes"] = {7},	-- Shaman
 		}),
+		i(129367),		-- Vrykul Toy Boat Kit
 		i(150744),		-- Walking Kalimdor with the Earthmother (Horde)
 		i(138490, {		-- Waterspeaker's Totem -- only Shaman
 			["classes"] = {7},	-- Shaman
@@ -140,6 +151,7 @@ _.Toys =
 			["description"] = "Use this toy when you encounter a mob you need to dps slowly, such as Exarch Maladaar in Auchenai Crypts.",
 		}),
 		i(119212),		-- Winning Hand
+		i(165021),		-- Words of Akunda
 		i(98552), 		-- Xan'tish's Flute
 		i(156649),		-- Zandalari Effigy Amulet
 	}),

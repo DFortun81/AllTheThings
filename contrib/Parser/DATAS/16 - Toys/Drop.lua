@@ -55,6 +55,7 @@ _.Toys =
 		i(164373),		-- Enchanted Soup Stone
 		i(86590),		-- Essence of the Breeze
 		i(104309),		-- Eternal Kiln
+		i(170198),		-- Eternal Palace Dining Set
 		i(86578),		-- Eternal Warrior's Sigil
 		i(129113), 		-- Faintly Glowing Flagon of Mead
 		i(140780), 		-- Fal'dorei Egg
@@ -79,6 +80,7 @@ _.Toys =
 		i(113631),		-- Hypnosis Goggles
 		i(118244),		-- Iron Buccaneer's Hat
 		i(127668),		-- Jewel of Hellfire
+		i(169347),		-- Judgment of Mechagon
 		i(141299), 		-- Kaldorei Light Globe
 		i(86571),		-- Kang's Bindstone
 		i(116125), 		-- Klikixx's Webspinner
@@ -94,11 +96,14 @@ _.Toys =
 		i(163741),		-- Magic Fun Rock
 		i(164374), 		-- Magic Monkey Banana
 		i(131900),		-- Majestic Elderhorn Hoof
+		i(167931),		-- Mechagonian Sawblades
 		i(142536), 		-- Memory Cube
+		i(153126),		-- Micro-Artillery Controller
 		i(163775),		-- Molok Morion
 		i(113670),		-- Mournful Moan of Murmur
 		i(86568), 		-- Mr. Smite's Brass Compass
 		i(166784),		-- Narassin's Soul Gem
+		i(168824),		-- Ocean Simulator
 		i(104262),		-- Odd Polished Stone
 		i(118224),		-- Ogre Brewing Kit
 		i(163795), 		-- Oomgut Ritual Drum
@@ -124,7 +129,9 @@ _.Toys =
 		i(153253),  	-- S.F.E. Interceptor
 		i(86583), 		-- Salyin Battle Banner
 		i(127655), 		-- Sassy Imp
+		i(170187),		-- Shadescale
 		i(86573),		-- Shard of Archstone
+		i(170196),		-- Shirakess Warning Sign
 		i(129055),		-- Shoe Shine Kit
 		i(153293),  	-- Sightless Eye
 		i(128328), 		-- Skoller's Bag of Squirrel Treats
