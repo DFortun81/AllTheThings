@@ -68,7 +68,7 @@ _.NeverImplemented =
 		--   CATACLYSM   --
 		-------------------
 		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
-		
+		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
 		-------------------
 		--      WOD      --
 		-------------------

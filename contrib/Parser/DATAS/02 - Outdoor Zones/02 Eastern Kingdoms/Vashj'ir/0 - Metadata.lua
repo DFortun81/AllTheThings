@@ -10,7 +10,14 @@ _.Zones =
 			["lvl"] = 80,
 			["g"] = {
 				n(-4,  {	-- Achievements
-					ach(5318, 5319),	-- 20,000 Leagues Under the Sea(Vashj'ir) [A] / [H]
+					ach(5318, {	-- 20,000 Leagues Under the Sea (A)
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26193,	-- Defending the Rift
+					}),
+					ach(5319, {	-- 20,000 Leagues Under the Sea (H)
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 26194,	-- Defending the Rift
+					}),
 					ach(4869, {	-- Sinking into Vashj'ir (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -35,9 +42,15 @@ _.Zones =
 							crit(7, {	-- Visions of the Past
 								["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
 							}),
-							crit(8),	-- The Merciless One
-							crit(9),	-- L'ghorek
-							crit(10),	-- The Tidehunter
+							crit(8, {	-- The Merciless One
+								["sourceQuest"] = 25987,	-- Put It On
+							}),
+							crit(9, {	-- L'ghorek
+								["sourceQuest"] = 26143,	-- All That Rises
+							}),
+							crit(10, {	-- The Tidehunter
+								["sourceQuest"] = 26193,	-- Defending the Rift
+							}),
 						},
 					}),
 					ach(4982, {	-- Sinking into Vashj'ir (Horde)
@@ -64,9 +77,15 @@ _.Zones =
 							crit(7, {	-- Visions of the Past
 								["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
 							}),
-							crit(8),	-- The Merciless One
-							crit(9),	-- L'ghorek
-							crit(10),	-- The Tidehunter
+							crit(8, {	-- The Merciless One
+								["sourceQuest"] = 25988,	-- Put It On
+							}),
+							crit(9, {	-- L'ghorek
+								["sourceQuest"] = 26143,	-- All That Rises
+							}),
+							crit(10, {	-- The Tidehunter
+								["sourceQuest"] = 26194,	-- Defending the Rift
+							}),
 						},
 					}),
 					ach(5452, {	-- Visions of Vashj'ir Past
