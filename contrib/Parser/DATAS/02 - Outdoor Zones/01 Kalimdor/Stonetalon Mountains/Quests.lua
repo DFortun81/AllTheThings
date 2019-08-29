@@ -740,8 +740,10 @@ _.Zones =
 					["coord"] = { 66.1, 63.7, 65 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+					["maxReputation"] = { 76, EXALTED },
 					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
+					["altQuests"] = { 26115 },	-- To Be Horde...
 				},
 				{	-- Seen Better Days
 					["questID"] = 25912,
