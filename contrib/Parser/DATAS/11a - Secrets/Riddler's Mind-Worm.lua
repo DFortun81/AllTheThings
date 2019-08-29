@@ -9,12 +9,14 @@ _.Secrets =
 		["modelID"] = 74314,
 		["g"] = {
 			o(148502, {	-- Step 1: Page 9 
+				["model"] = 305393,
 				["questID"] = 45470,
 				["coord"] = { 48.8, 42.1, 627 },
 				["description"] = "|cFFFFFFFFStep 1:|r We will begin in |cFFFFD700Dalaran|r.  Head to the |cFFFFD700Legerdemain Lounge|r at |cFFFFFFFF48.80, 42.10|r.  |cFFFFD700Page 9|r will be on the third shelf of the bookcase.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...of sea, spirit and self...|r",
 				["isWeekly"] = true,
 			}),
 			o(209270, {	-- Step 2: Page 78
+				["model"] = 305393,
 				["questID"] = 47207,
 				["coord"] = { 49.2, 34.0, 47 },
 				["sourceQuest"] = 45470,	-- Step 1: Page 9
@@ -22,6 +24,7 @@ _.Secrets =
 				["isWeekly"] = true,
 			}),
 			o(245216, {	-- Step 3: Page 161
+				["model"] = 305393,
 				["questID"] = 47208,
 				["coord"] = { 47.3, 78.1, 198 },	-- Firelands
 				["sourceQuest"] = 47207,	-- Step 2: Page 78
@@ -29,6 +32,7 @@ _.Secrets =
 				["isWeekly"] = true,
 			}),
 			o(251564, {	-- Step 4: Page 655
+				["model"] = 305393,
 				["questID"] = 47209,
 				["coord"] = { 70.4, 78.1, 249 },
 				["sourceQuest"] = 47208,	-- Step 3: Page 161
@@ -36,6 +40,7 @@ _.Secrets =
 				["isWeekly"] = true,
 			}),
 			o(220821, {	-- Step 5: Page 845
+				["model"] = 305393,
 				["questID"] = 47210,
 				["coord"] = { 72.4, 44.3, 390 },	-- Siege of Orgrimmar
 				["sourceQuest"] = 47209,	-- Step 4: Page 655
@@ -43,6 +48,7 @@ _.Secrets =
 				["isWeekly"] = true,
 			}),
 			o(220820, {	-- Step 6: Page 1127
+				["model"] = 305393,
 				["questID"] = 47211,
 				["coords"] = {
 					{ 22.9, 64.4, 75 },	-- Well of Eternity
@@ -53,6 +59,7 @@ _.Secrets =
 				["isWeekly"] = true,
 			}),
 			o(19023, {	-- Step 7: Page 2351
+				["model"] = 305393,
 				["questID"] = 47212,
 				["coord"] = { 34.6, 50.9, 379 },
 				["sourceQuest"] = 47211,	-- Step 6: Page 1127
@@ -60,6 +67,7 @@ _.Secrets =
 				["isWeekly"] = true,
 			}),
 			o(244678, {	-- Step 8: Page 5555
+				["model"] = 305393,
 				["questID"] = 47213,
 				["coord"] = { 76.4, 53.6, 249 },
 				["sourceQuest"] = 47212,	-- Step 7: Page 2351
@@ -67,6 +75,7 @@ _.Secrets =
 				["isWeekly"] = true,
 			}),
 			o(269830, {	-- Step 9: Gift of the Mind-Seekers
+				["model"] = 942865,
 				["questID"] = 47214,
 				["coord"] = { 30.5, 27.5, 52 },
 				["sourceQuest"] = 47213,	-- Step 8: Page 5555
