@@ -1762,15 +1762,6 @@ app.L = {
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 		[-10069] = "Scenarios",
 		[-10070] = select(1, GetCategoryInfo(15417)),		-- Heart of Azeroth
-		
-		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
-		
-		[-90000] = C_Map.GetAreaInfo(7680),							-- Lunarwing Shallows
-		[-90000] = C_Map.GetAreaInfo(8268),							-- Lostlight Grotto
-		[-90002] = C_Map.GetAreaInfo(9655),							-- Krazzlefrazz Outpost
-		[-90002] = C_Map.GetAreaInfo(9338),							-- Waning Glacier
-		[-90002] = C_Map.GetAreaInfo(9617),							-- Anyport
-		[-90005] = C_Map.GetAreaInfo(9305),							-- Castaway Point
 	},
 
 	["OBJECT_ID_ICONS"] = {
