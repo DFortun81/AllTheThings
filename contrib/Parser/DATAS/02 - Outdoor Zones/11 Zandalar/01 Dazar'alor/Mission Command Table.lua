@@ -7,6 +7,7 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(138706, {	-- Mission Command Table
+				["modelScale"] = 3,
 				["crs"] = { 147244 },	-- Dazar'alor: The Great Seal Location
 				["coords"] = {
 					{ 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]

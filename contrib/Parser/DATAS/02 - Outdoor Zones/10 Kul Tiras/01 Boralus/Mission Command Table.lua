@@ -7,6 +7,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(1161, {	-- Boralus
 			n(138704, {	-- Mission Command Table
+				["modelScale"] = 2,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					ach(12898, {	-- Azeroth at War: After Lordaron
