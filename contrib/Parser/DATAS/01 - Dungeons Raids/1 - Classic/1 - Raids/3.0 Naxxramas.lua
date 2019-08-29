@@ -1049,6 +1049,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(22938)),	-- Cryptfiend Silk Cloak
 								un(2, i(22936)),	-- Wristguards of Vengeance
 								un(2, i(22939)),	-- Band of Unanswered Prayers
+								un(2, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
+								un(2, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
+								un(2, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15953, {	-- Grand Widow Faerlina
 								un(2, i(22942)),	-- The Widow's Embrace
@@ -1056,6 +1059,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(22943)),	-- Malice Stone Pendant
 								un(2, i(22940)),	-- Icebane Pauldrons
 								un(2, i(22941)),	-- Polar Shoulder Pads
+								un(2, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
+								un(2, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
+								un(2, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15952, {	-- Maexxna
 								un(2, i(22804)),	-- Maexxna's Fang
@@ -1063,6 +1069,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(22947)),	-- Pendant of Forgotten Names
 								un(2, i(23220)),	-- Crystal Webbed Robe
 								un(2, i(22954)),	-- Kiss of the Spider
+								un(2, i(22357)),	-- Desecrated Gauntlets (Rogue, Warrior)
+								un(2, i(22371)),	-- Desecrated Gloves (Mage, Priest Warlock)
+								un(2, i(22364)),	-- Desecrated Handguards (Druid, Hunter, Paladin, Shaman)
 							}),
 						},
 						["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
@@ -1075,6 +1084,11 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(23030)),	-- Cloak of the Scourge
 								un(2, i(23028)),	-- Hailstone Band
 								un(2, i(23031)),	-- Band of the Inevitable
+								un(2, i(23006)),	-- Libram of Light
+								un(2, i(23005)),	-- Totem of Flower Water
+								un(2, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
+								un(2, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
+								un(2, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15936, {	-- Heigan the Unclean
 								un(2, i(23019)),	-- Icebane Helmet
@@ -1082,6 +1096,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(23035)),	-- Preceptor's Hat
 								un(2, i(23036)),	-- Necklace of Necropsy
 								un(2, i(23068)),	-- Legplates of Carnage
+								un(2, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
+								un(2, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
+								un(2, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(16011, {	-- Loatheb
 								un(2, i(22800)),	-- Brimstone Staff
@@ -1089,6 +1106,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(23038)),	-- Band of Unnatural Forces
 								un(2, i(23037)),	-- Ring of Spiritual Fervor
 								un(2, i(23042)),	-- Loatheb's Reflection
+								un(2, i(22352)),	-- Desecrated Legplates (Rogue, Warrior)
+								un(2, i(22366)),	-- Desecrated Leggings (Mage, Priest Warlock)
+								un(2, i(22359)),	-- Desecrated Legguards (Druid, Hunter, Paladin, Shaman)
 							}),
 						},
 						["icon"] = "Interface\\Icons\\inv_misc_cauldron_nature",
@@ -1123,6 +1143,10 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(23017)),	-- Veil of Eclipse
 								un(2, i(23219)),	-- Girdle of the Mentor
 								un(2, i(23018)),	-- Signet of the Fallen Defender
+								un(2, i(23004)),	-- Idol of Longevity
+								un(2, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
+								un(2, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
+								un(2, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(16060, {	-- Gothik the Harvester
 								un(2, i(23032)),	-- Glacial Headdress
@@ -1130,6 +1154,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(23023)),	-- Sadist's Collar
 								un(2, i(23021)),	-- The Soul Harvester's Bindings
 								un(2, i(23073)),	-- Boots of Displacement
+								un(2, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
+								un(2, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
+								un(2, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(16062, {	-- Highlord Mograine <The Ashbringer>
 								{
@@ -1144,6 +1171,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(23071)),	-- Leggings of Apocalypse
 								un(2, i(23025)),	-- Seal of the Damned
 								un(2, i(23027)),	-- Warmth of Forgiveness
+								un(2, i(22349)),	-- Desecrated Breastplate (Rogue, Warrior)
+								un(2, i(22351)),	-- Desecrated Robe (Mage, Priest Warlock)
+								un(2, i(22350)),	-- Desecrated Tunic (Druid, Hunter, Paladin, Shaman)
 							}),
 						},
 						["icon"] = "Interface\\Icons\\spell_deathknight_classicon",
@@ -1156,6 +1186,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(22820)),	-- Wand of Fates
 								un(2, i(22960)),	-- Cloak of Suturing
 								un(2, i(22961)),	-- Band of Reanimation
+								un(2, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
+								un(2, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
+								un(2, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15931, {	-- Grobbulus
 								un(2, i(22803)),	-- Midnight Haze
@@ -1163,6 +1196,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(22810)),	-- Toxin Injector
 								un(2, i(22968)),	-- Glacial Mantle
 								un(2, i(22967)),	-- Icy Scale Spaulders
+								un(2, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
+								un(2, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
+								un(2, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15932, {	-- Gluth
 								un(2, i(22813)),	-- Claymore of Unholy Might
@@ -1170,6 +1206,18 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(22994)),	-- Digested Hand of Power
 								un(2, i(22981)),	-- Gluth's Missing Collar
 								un(2, i(22983)),	-- Rime Covered Mantle
+								un(2, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
+								un(2, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
+								un(2, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
+								un(2, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
+								un(2, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
+								un(2, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
+								un(2, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
+								un(2, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
+								un(2, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
+								un(2, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
+								un(2, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
+								un(2, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15928, {	-- Thaddius
 								un(2, i(22801)),	-- Spire of Twilight
@@ -1177,6 +1225,9 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(23000)),	-- Plated Abomination Ribcage
 								un(2, i(23070)),	-- Leggings of Polarity
 								un(2, i(23001)),	-- Eye of Diminution
+								un(2, i(22353)),	-- Desecrated Helmet (Rogue, Warrior)
+								un(2, i(22367)),	-- Desecrated Circlet (Mage, Priest Warlock)
+								un(2, i(22360)),	-- Desecrated Headpiece (Druid, Hunter, Paladin, Shaman)
 							}),
 						},
 						["icon"] = "Interface\\Icons\\ability_rogue_deviouspoisons",
