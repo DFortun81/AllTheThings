@@ -561,5 +561,12 @@ _.NeverImplemented =
 		q(56004),	-- looting Energy Cell while on the quest "We Can Fix It"
 		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"
 		q(55623),	-- Seems to trigger after completion of the WQ zone daily.  Mechanized chests and Rustbolt Rebellion WQ confirmed triggering this.
+		
+		-- Eternal Palace
+		-- Azerite essences assembled with Aqueous Reliquary
+		q(56957),	-- Grid of Bursting Vitality (Rank 3)
+		q(56956),	-- Mesh of Expanding Vitality (Rank 2)
+		q(56950),	-- Resonating Elemental Heart (Rank 3)
+		q(56946),	-- Vitality Redistribution Lattice (Rank 1)
 	}),
 };
