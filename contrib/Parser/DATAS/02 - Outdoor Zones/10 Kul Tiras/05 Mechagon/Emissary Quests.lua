@@ -26,9 +26,18 @@ _.Zones =
 									["achievementID"] = 13479,	-- Junkyard Architect
 								}),
 							}),
-							i(168935),	-- Existence Vibrancy Display
-							i(168569),	-- Null Force Visualizer
-							i(168861),	-- Ultimate Purification Protocols
+							i(168935, {	-- Existence Vibrancy Display
+								["model"] = 2974000,
+								["modelScale"] = 3,
+							}),
+							i(168569, {	-- Null Force Visualizer
+								["model"] = 2924336,
+								["modelScale"] = 3,
+							}),
+							i(168861, {	-- Ultimate Purification Protocols
+								["model"] = 2958033,
+								["modelScale"] = 4,
+							}),
 							i(168368),	-- Recipe: Famine Evaluator And Snack Table (Rank 3)
 						}),
 					},
