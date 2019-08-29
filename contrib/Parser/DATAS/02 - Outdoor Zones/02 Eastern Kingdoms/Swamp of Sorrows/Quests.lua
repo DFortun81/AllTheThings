@@ -33,6 +33,11 @@ _.Zones =
 						["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					}),
 				}),
+				q(2801, {	-- A Tale of Sorrow
+					["u"] = 40,
+					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["sourceQuest"] = 2783,	-- Petty Squabbles
+				}),
 				q(27849, {	-- Assault on Stonard
 					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, 51 },
@@ -132,6 +137,11 @@ _.Zones =
 						un(2, i(9682)),	-- Leather Chef's Belt
 					},
 				}),
+				q(2784, {	-- Fall From Grace
+					["u"] = 40,
+					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["races"] = HORDE_ONLY,
+				}),
 				q(1393, {	-- Galen's Escape
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -141,9 +151,11 @@ _.Zones =
 				}),
 				q(2702, {	-- Heroes of Old
 					["u"] = 40,
+					["sourceQuest"] = 2681,	-- The Stones that Bind Us
 				}),
 				q(2702, {	-- Heroes of Old 2
 					["u"] = 40,
+					["sourceQuest"] = 2702,	-- Heroes of Old
 					["g"] = {
 						un(2, i(10659)),	-- Shard of Afrasa
 					},
@@ -275,6 +287,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27871,	-- To Stonard
 				}),
+				q(2783, {	-- Petty Squabbles
+					["u"] = 40,
+					["qg"] = 7826,	-- Ambassador Ardalan
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(27694, {	-- Pool of Tears
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, 51 },
@@ -373,6 +390,12 @@ _.Zones =
 						i(64619),	-- Sinister Belt
 					},
 				}),
+				q(2621, {	-- The Disgraced One
+					["u"] = 40,
+					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 2784,	-- Fall From Grace
+				}),
 				q(27869, {	-- The Dragon and the Temple
 					["qg"] = 46172,	-- Baba Bogbrew
 					["coord"] = { 69.0, 76.5, 51 },
@@ -398,6 +421,12 @@ _.Zones =
 					["coord"] = { 69.8, 36.5, 51 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(2622, {	-- The Missing Orders
+					["u"] = 40,
+					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 2621,	-- The Disgraced One
+				}),
 				q(27902, {	-- The Purespring
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 26.8, 33.5, 51 },
@@ -418,6 +447,16 @@ _.Zones =
 				}),
 				q(2681, {	-- The Stones That Bind Us
 					["u"] = 40,
+					["sourceQuests"] = {
+						2801,	-- A Tale of Sorrow (A)
+						2623,	-- The Swamp (H)
+					},
+				}),
+				q(2623, {	-- The Swamp
+					["u"] = 40,
+					["qg"] = 7643,	-- Bengor
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 2622,	-- The Missing Orders
 				}),
 				q(1427, {	-- [DEPRECATED]Threat From the Sea
 					["u"] = 40,
