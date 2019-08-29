@@ -136,11 +136,13 @@ profession(773, {	-- Inscription
 				{	-- Quest
 					["categoryID"] = 791--[[Quest]],
 					["g"] = {
-						{	-- Forged Documents
-							["recipeID"] = 86654--[[Forged Documents]],
+						recipe(89244, {	--Forged Documents
 							["races"] = ALLIANCE_ONLY,
-						}
-					}
+						}),
+						recipe(86654, {	--Forged Documents
+							["races"] = HORDE_ONLY,
+						}),
+					},
 				},
 				{	-- Toys
 					["categoryID"] = 792--[[Toys]],

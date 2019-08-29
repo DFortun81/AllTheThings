@@ -2102,117 +2102,170 @@ _.Zones =
 					},
 				}),
 				n(29495,  {	-- Norvin Alderman <Cloaks>
-					i(50466),	-- Sentinel's Winter Cloak
-					i(50467),	-- Might of the Ocean Serpent
-					i(50468),	-- Drape of the Violet Tower
-					i(50469),	-- Volde's Cloak of the Night Sky
-					i(50470),	-- Recovered Scarlet Onslaught Cape
-					i(40721),	-- Hammerhead Sharkskin Cloak
-					i(40722),	-- Platinum Mesh Cloak
-					i(40723),	-- Disguise of the Kumiho
-					i(40724),	-- Cloak of Kea Feathers
+					["coord"] = { 44.7, 48.9, 125 },
+					["g"] = {
+						i(40724),	-- Cloak of Kea Feathers
+						i(40723),	-- Disguise of the Kumiho
+						i(50468),	-- Drape of the Violet Tower
+						i(40721),	-- Hammerhead Sharkskin Cloak
+						i(50467),	-- Might of the Ocean Serpent
+						i(40722),	-- Platinum Mesh Cloak
+						i(50470),	-- Recovered Scarlet Onslaught Cape
+						i(50466),	-- Sentinel's Winter Cloak
+						i(50469),	-- Volde's Cloak of the Night Sky
+					},
 				}),
 				n(29527,  {	-- Orton Bennet <Offhand Offerings>
-					i(40698),	-- Ward of the Violet Citadel
-					i(40699),	-- Handbook of Obscure Remedies
+					["coord"] = { 51.9, 55.1, 125 },
+					["g"] = {
+						i(40699),	-- Handbook of Obscure Remedies
+						i(40698),	-- Ward of the Violet Citadel
+					},
 				}),
 				n(28995,  {	-- Paldesse <Cloth Armor Merchant>
-					i(50997),	-- Circle of Ossus
-					i(50984),	-- Gloves of Ambivalence
-					i(50983),	-- Gloves of False Gestures
-					i(50975),	-- Ermine Coronation Robes
-					i(50974),	-- Meteor Chaser's Raiment
-					i(50996),	-- Belt of Omission
-					i(46197),	-- Conqueror's Cowl of Sanctification
-					i(46195),	-- Conqueror's Leggings of Sanctification
-					i(46193),	-- Conqueror's Robe of Sanctification
-					i(46190),	-- Conqueror's Shoulderpads of Sanctification
-					i(46188),	-- Conqueror's Gloves of Sanctification
-					i(46172),	-- Conqueror's Circlet of Sanctification
-					i(46170),	-- Conqueror's Pants of Sanctification
-					i(46168),	-- Conqueror's Raiments of Sanctification
-					i(45831),	-- Sash of Potent Incantations
-					i(46163),	-- Conqueror's Handwraps of Sanctification
-					i(46140),	-- Conqueror's Deathbringer Hood
-					i(46139),	-- Conqueror's Deathbringer Leggings
-					i(46137),	-- Conqueror's Deathbringer Robe
-					i(46136),	-- Conqueror's Deathbringer Shoulderpads
-					i(46135),	-- Conqueror's Deathbringer Gloves
-					i(46134),	-- Conqueror's Kirin Tor Shoulderpads
-					i(46133),	-- Conqueror's Kirin Tor Leggings
-					i(46132),	-- Conqueror's Kirin Tor Gauntlets
-					i(46130),	-- Conqueror's Kirin Tor Tunic
-					i(46129),	-- Conqueror's Kirin Tor Hood
-					i(45848),	-- Legwraps of the Master Conjurer
-					i(45840),	-- Touch of the Occult
-					i(46165),	-- Conqueror's Mantle of Sanctification
-					i(46131),	-- Valorous Kirin Tor Gauntlets
-					i(45368),	-- Valorous Kirin Tor Tunic
-					i(45422),	-- Valorous Deathbringer Shoulderpads
-					i(45421),	-- Valorous Deathbringer Robe
-					i(45420),	-- Valorous Deathbringer Leggings
-					i(45419),	-- Valorous Deathbringer Gloves
-					i(45417),	-- Valorous Deathbringer Hood
-					i(45395),	-- Valorous Raiments of Sanctification
-					i(45394),	-- Valorous Pants of Sanctification
-					i(45393),	-- Valorous Mantle of Sanctification
-					i(45392),	-- Valorous Handwraps of Sanctification
-					i(45391),	-- Valorous Circlet of Sanctification
-					i(45390),	-- Valorous Shoulderpads of Sanctification
-					i(45389),	-- Valorous Robe of Sanctification
-					i(45388),	-- Valorous Leggings of Sanctification
-					i(45387),	-- Valorous Gloves of Sanctification
-					i(45365),	-- Valorous Kirin Tor Hood
-					i(45367),	-- Valorous Kirin Tor Leggings
-					i(45386),	-- Valorous Cowl of Sanctification
-					i(45369),	-- Valorous Kirin Tor Shoulderpads
-					i(40447),	-- Valorous Crown of Faith
-					i(40418),	-- Valorous Frostfire Robe
-					i(40740),	-- Wraps of the Astral Traveler
-					i(40459),	-- Valorous Mantle of Faith
-					i(40458),	-- Valorous Raiments of Faith
-					i(40457),	-- Valorous Pants of Faith
-					i(40456),	-- Valorous Circlet of Faith
-					i(40454),	-- Valorous Handwraps of Faith
-					i(40450),	-- Valorous Shoulderpads of Faith
-					i(40449),	-- Valorous Robe of Faith
-					i(40448),	-- Valorous Leggings of Faith
-					i(40750),	-- Xintor's Expeditionary Boots
-					i(40445),	-- Valorous Gloves of Faith
-					i(40424),	-- Valorous Plagueheart Shoulderpads
-					i(40423),	-- Valorous Plagueheart Robe
-					i(40422),	-- Valorous Plagueheart Leggings
-					i(40421),	-- Valorous Plagueheart Circlet
-					i(40420),	-- Valorous Plagueheart Gloves
-					i(40419),	-- Valorous Frostfire Shoulderpads
-					i(40751),	-- Slippers of the Holy Light
-					i(40417),	-- Valorous Frostfire Leggings
-					i(40416),	-- Valorous Frostfire Circlet
-					i(40415),	-- Valorous Frostfire Gloves
-					i(40696),	-- Plush Sash of Guzbah
-					i(39492),	-- Heroes' Frostfire Robe
-					i(40697),	-- Elegant Temple Gardens' Girdle
-					i(39530),	-- Heroes' Handwraps of Faith
-					i(39529),	-- Heroes' Mantle of Faith
-					i(39528),	-- Heroes' Pants of Faith
-					i(39523),	-- Heroes' Raiments of Faith
-					i(39521),	-- Heroes' Circlet of Faith
-					i(39519),	-- Heroes' Gloves of Faith
-					i(39518),	-- Heroes' Shoulderpads of Faith
-					i(39517),	-- Heroes' Leggings of Faith
-					i(39515),	-- Heroes' Robe of Faith
-					i(39514),	-- Heroes' Crown of Faith
-					i(39500),	-- Heroes' Plagueheart Gloves
-					i(39499),	-- Heroes' Plagueheart Shoulderpads
-					i(39498),	-- Heroes' Plagueheart Leggings
-					i(39497),	-- Heroes' Plagueheart Robe
-					i(39496),	-- Heroes' Plagueheart Circlet
-					i(39495),	-- Heroes' Frostfire Gloves
-					i(39494),	-- Heroes' Frostfire Shoulderpads
-					i(39493),	-- Heroes' Frostfire Leggings
-					i(39491),	-- Heroes' Frostfire Circlet
+					["coord"] = { 43.8, 49.4, 125 },
+					["g"] = {
+						i(50996),	-- Belt of Omission
+						i(50997),	-- Circle of Ossus
+						i(46172, {	-- Conqueror's Circlet of Sanctification
+							["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
+						}),
+						i(46197, {	-- Conqueror's Cowl of Sanctification
+							["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
+						}),
+						i(46135, {	-- Conqueror's Deathbringer Gloves
+							["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
+						}),
+						i(46140, {	-- Conqueror's Deathbringer Hood
+							["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
+						}),
+						i(46139, {	-- Conqueror's Deathbringer Leggings
+							["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
+						}),
+						i(46137, {	-- Conqueror's Deathbringer Robe
+							["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
+						}),
+						i(46136, {	-- Conqueror's Deathbringer Shoulderpads
+							["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
+						}),
+						i(46188, {	-- Conqueror's Gloves of Sanctification
+							["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
+						}),
+						i(46163, {	-- Conqueror's Handwraps of Sanctification
+							["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
+						}),
+						i(46132, {	-- Conqueror's Kirin Tor Gauntlets
+							["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
+						}),
+						i(46129, {	-- Conqueror's Kirin Tor Hood
+							["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
+						}),
+						i(46133, {	-- Conqueror's Kirin Tor Leggings
+							["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
+						}),
+						i(46134, {	-- Conqueror's Kirin Tor Shoulderpads
+							["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
+						}),
+						i(46130, {	-- Conqueror's Kirin Tor Tunic
+							["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
+						}),
+						i(46195, {	-- Conqueror's Leggings of Sanctification
+							["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
+						}),
+						i(46165, {	-- Conqueror's Mantle of Sanctification
+							["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
+						}),
+						i(46170, {	-- Conqueror's Pants of Sanctification
+							["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
+						}),
+						i(46168, {	-- Conqueror's Raiments of Sanctification
+							["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
+						}),
+						i(46193, {	-- Conqueror's Robe of Sanctification
+							["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
+						}),
+						i(46190, {	-- Conqueror's Shoulderpads of Sanctification
+							["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
+						}),
+						i(40697),	-- Elegant Temple Gardens' Girdle
+						i(50975),	-- Ermine Coronation Robes
+						i(50984),	-- Gloves of Ambivalence
+						i(50983),	-- Gloves of False Gestures
 
+--[[		
+							["cost"] = { { "i", , 1 }, },	-- 
+						}),
+				--]]
 
+						i(50974),	-- Meteor Chaser's Raiment
+						i(45831),	-- Sash of Potent Incantations
+						i(45848),	-- Legwraps of the Master Conjurer
+						i(45840),	-- Touch of the Occult
+						i(46131),	-- Valorous Kirin Tor Gauntlets
+						i(45368),	-- Valorous Kirin Tor Tunic
+						i(45422),	-- Valorous Deathbringer Shoulderpads
+						i(45421),	-- Valorous Deathbringer Robe
+						i(45420),	-- Valorous Deathbringer Leggings
+						i(45419),	-- Valorous Deathbringer Gloves
+						i(45417),	-- Valorous Deathbringer Hood
+						i(45395),	-- Valorous Raiments of Sanctification
+						i(45394),	-- Valorous Pants of Sanctification
+						i(45393),	-- Valorous Mantle of Sanctification
+						i(45392),	-- Valorous Handwraps of Sanctification
+						i(45391),	-- Valorous Circlet of Sanctification
+						i(45390),	-- Valorous Shoulderpads of Sanctification
+						i(45389),	-- Valorous Robe of Sanctification
+						i(45388),	-- Valorous Leggings of Sanctification
+						i(45387),	-- Valorous Gloves of Sanctification
+						i(45365),	-- Valorous Kirin Tor Hood
+						i(45367),	-- Valorous Kirin Tor Leggings
+						i(45386),	-- Valorous Cowl of Sanctification
+						i(45369),	-- Valorous Kirin Tor Shoulderpads
+						i(40447),	-- Valorous Crown of Faith
+						i(40418),	-- Valorous Frostfire Robe
+						i(40740),	-- Wraps of the Astral Traveler
+						i(40459),	-- Valorous Mantle of Faith
+						i(40458),	-- Valorous Raiments of Faith
+						i(40457),	-- Valorous Pants of Faith
+						i(40456),	-- Valorous Circlet of Faith
+						i(40454),	-- Valorous Handwraps of Faith
+						i(40450),	-- Valorous Shoulderpads of Faith
+						i(40449),	-- Valorous Robe of Faith
+						i(40448),	-- Valorous Leggings of Faith
+						i(40750),	-- Xintor's Expeditionary Boots
+						i(40445),	-- Valorous Gloves of Faith
+						i(40424),	-- Valorous Plagueheart Shoulderpads
+						i(40423),	-- Valorous Plagueheart Robe
+						i(40422),	-- Valorous Plagueheart Leggings
+						i(40421),	-- Valorous Plagueheart Circlet
+						i(40420),	-- Valorous Plagueheart Gloves
+						i(40419),	-- Valorous Frostfire Shoulderpads
+						i(40751),	-- Slippers of the Holy Light
+						i(40417),	-- Valorous Frostfire Leggings
+						i(40416),	-- Valorous Frostfire Circlet
+						i(40415),	-- Valorous Frostfire Gloves
+						i(40696),	-- Plush Sash of Guzbah
+						i(39492),	-- Heroes' Frostfire Robe
+						i(39530),	-- Heroes' Handwraps of Faith
+						i(39529),	-- Heroes' Mantle of Faith
+						i(39528),	-- Heroes' Pants of Faith
+						i(39523),	-- Heroes' Raiments of Faith
+						i(39521),	-- Heroes' Circlet of Faith
+						i(39519),	-- Heroes' Gloves of Faith
+						i(39518),	-- Heroes' Shoulderpads of Faith
+						i(39517),	-- Heroes' Leggings of Faith
+						i(39515),	-- Heroes' Robe of Faith
+						i(39514),	-- Heroes' Crown of Faith
+						i(39500),	-- Heroes' Plagueheart Gloves
+						i(39499),	-- Heroes' Plagueheart Shoulderpads
+						i(39498),	-- Heroes' Plagueheart Leggings
+						i(39497),	-- Heroes' Plagueheart Robe
+						i(39496),	-- Heroes' Plagueheart Circlet
+						i(39495),	-- Heroes' Frostfire Gloves
+						i(39494),	-- Heroes' Frostfire Shoulderpads
+						i(39493),	-- Heroes' Frostfire Leggings
+						i(39491),	-- Heroes' Frostfire Circlet
+					},
 				}),
 				n(35497,  {	-- Rafael Langrom <Leather Armor Merchant>
 					i(48102),	-- Malfurion's Headpiece of Conquest
