@@ -149,6 +149,8 @@ _.Toys =
 				i(104323),	-- The Pigskin
 				i(54438),	-- Tiny Blue Ragdoll
 				i(54437),	-- Tiny Green Ragdoll
+				i(162643),	-- Toy Armor Set [Alliance]
+				i(162642),	-- Toy Armor Set [Horde]
 				i(44606),	-- Toy Train Set
 				i(151349), 	-- Toy Weapon Set [Alliance]
 				i(151348), 	-- Toy Weapon Set [Horde]
