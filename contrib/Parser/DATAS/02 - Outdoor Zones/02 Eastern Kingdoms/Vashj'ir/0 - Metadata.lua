@@ -12,84 +12,17 @@ _.Zones =
 				n(-4,  {	-- Achievements
 					ach(5318, {	-- 20,000 Leagues Under the Sea (A)
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 26193,	-- Defending the Rift
+						["sourceQuests"] = {
+							26193,	-- Defending the Rift
+							-- TODO: There are a lot more source quests than just this, but no good info on what they are
+						},
 					}),
 					ach(5319, {	-- 20,000 Leagues Under the Sea (H)
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 26194,	-- Defending the Rift
-					}),
-					ach(4869, {	-- Sinking into Vashj'ir (Alliance)
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1, {	-- Defense of The Briny Cutter
-								["sourceQuest"] = 25558,	-- All or Nothing
-							}),
-							crit(2, {	-- Smuggler's Scar
-								["sourceQuest"] = 25638,	-- A Desperate Plea
-							}),
-							crit(3, {	-- A Budding Treasure Hunter
-								["sourceQuest"] = 25743,	-- Decisions, Decisions
-							}),
-							crit(4, {	-- The Clutch
-								["sourceQuest"] = 27708,	-- The Warden's Time
-							}),
-							crit(5, {	-- Silver Tide Hollow
-								["sourceQuest"] = 25456,	-- Back in One Piece
-							}),
-							crit(6, {	-- Nespirah
-								["sourceQuest"] = 25922,	-- Waking the Beast
-							}),
-							crit(7, {	-- Visions of the Past
-								["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
-							}),
-							crit(8, {	-- The Merciless One
-								["sourceQuest"] = 25987,	-- Put It On
-							}),
-							crit(9, {	-- L'ghorek
-								["sourceQuest"] = 26143,	-- All That Rises
-							}),
-							crit(10, {	-- The Tidehunter
-								["sourceQuest"] = 26193,	-- Defending the Rift
-							}),
+						["sourceQuests"] = {
+							26194,	-- Defending the Rift
+							-- TODO: There are a lot more source quests than just this, but no good info on what they are
 						},
-					}),
-					ach(4982, {	-- Sinking into Vashj'ir (Horde)
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1, {	-- Defense of The Immortal Coil
-								["sourceQuest"] = 25949,	-- Blood and Thunder!
-							}),
-							crit(2, {	-- Smuggler's Scar
-								["sourceQuest"] = 25638,	-- A Desperate Plea
-							}),
-							crit(3, {	-- A Budding Treasure Hunter
-								["sourceQuest"] = 25743,	-- Decisions, Decisions
-							}),
-							crit(4, {	-- The Clutch
-								["sourceQuest"] = 27708,	-- The Warden's Time
-							}),
-							crit(5, {	-- Silver Tide Hollow
-								["sourceQuest"] = 25456,	-- Back in One Piece
-							}),
-							crit(6, {	-- Nespirah
-								["sourceQuest"] = 25996,	-- Waking the Beast
-							}),
-							crit(7, {	-- Visions of the Past
-								["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
-							}),
-							crit(8, {	-- The Merciless One
-								["sourceQuest"] = 25988,	-- Put It On
-							}),
-							crit(9, {	-- L'ghorek
-								["sourceQuest"] = 26143,	-- All That Rises
-							}),
-							crit(10, {	-- The Tidehunter
-								["sourceQuest"] = 26194,	-- Defending the Rift
-							}),
-						},
-					}),
-					ach(5452, {	-- Visions of Vashj'ir Past
-						["sourceQuest"] = 25951,	-- Final Judgment
 					}),
 				}),
 			}
