@@ -32,9 +32,11 @@ _.Zones =
 					}),
 					fp(605, {	-- Voldrin's Hold, Vashj'ir (Alliance - Flight Master)
 						["coord"] = { 69.4, 75.2, 205 },
+						["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
 					}),
 					fp(611, {	-- Voldrin's Hold, Vashj'ir (Alliance - Seahorse)
 						["coord"] = { 57.0, 75.2, 205 },
+						["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
 					}),
 				}),
 			}),

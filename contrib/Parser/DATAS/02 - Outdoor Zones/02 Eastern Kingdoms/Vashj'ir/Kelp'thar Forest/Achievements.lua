@@ -21,7 +21,11 @@ _.Zones =
 								["sourceQuest"] = 25743,	-- Decisions, Decisions
 							}),
 							crit(4, {	-- The Clutch
-								["sourceQuest"] = 27708,	-- The Warden's Time
+								["sourceQuests"] = {
+									25888,	-- Decompression
+									27708,	-- The Warden's Time
+									25885,	-- What? What? In My Gut...?
+								},
 							}),
 						},
 					}),
@@ -39,7 +43,11 @@ _.Zones =
 								["sourceQuest"] = 25743,	-- Decisions, Decisions
 							}),
 							crit(4, {	-- The Clutch
-								["sourceQuest"] = 27708,	-- The Warden's Time
+								["sourceQuests"] = {
+									26008,	-- Decompression
+									27708,	-- The Warden's Time
+									26040,	-- What? What? In My Gut...?
+								},
 							}),
 						},
 					}),

@@ -11,6 +11,9 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 						["g"] = {
+							crit(8, {	-- The Merciless One
+								["sourceQuest"] = 25987,	-- Put It On
+							}),
 							crit(9, {	-- L'ghorek
 								["sourceQuest"] = 26143,	-- All That Rises
 							}),
@@ -23,6 +26,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["g"] = {
+							crit(8, {	-- The Merciless One
+								["sourceQuest"] = 25988,	-- Put It On
+							}),
 							crit(9, {	-- L'ghorek
 								["sourceQuest"] = 26143,	-- All That Rises
 							}),

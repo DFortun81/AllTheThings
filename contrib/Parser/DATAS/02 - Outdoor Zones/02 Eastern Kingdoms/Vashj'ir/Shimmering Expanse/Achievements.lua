@@ -20,9 +20,6 @@ _.Zones =
 							crit(7, {	-- Visions of the Past
 								["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
 							}),
-							crit(8, {	-- The Merciless One
-								["sourceQuest"] = 25987,	-- Put It On
-							}),
 						},
 					}),
 					ach(4982, {	-- Sinking into Vashj'ir (Horde)
@@ -37,9 +34,6 @@ _.Zones =
 							}),
 							crit(7, {	-- Visions of the Past
 								["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
-							}),
-							crit(8, {	-- The Merciless One
-								["sourceQuest"] = 25988,	-- Put It On
 							}),
 						},
 					}),

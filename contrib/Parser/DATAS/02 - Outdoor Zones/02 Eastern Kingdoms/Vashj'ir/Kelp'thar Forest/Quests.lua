@@ -51,7 +51,7 @@ _.Zones =
 					}),
 					q(25558, {	-- All or Nothing
 						["qg"] = 40690,	-- Captain Taylor
-						["coord"] = { 45.0, 23.5 },
+						["coord"] = { 45.0, 23.5, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25547 },	-- On Our Own Terms
 						["g"] = {
@@ -113,6 +113,7 @@ _.Zones =
 						["qg"] = 39887,	-- Captain Taylor
 						["coord"] = { 44.7, 22.5, 201 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25405,	-- Rest For the Weary
 					}),
 					q(25942, {	-- Buy Us Some Time (H)
 						["qg"] = 41711,	-- Legionnaire Nazgrim
@@ -302,7 +303,7 @@ _.Zones =
 					}),
 					q(25281, {	-- Pay It Forward (A)
 						["qg"] = 36915,	-- Erunak Stonespeaker
-						["coord"] = { 45.0, 23.2, 201 },
+						["coord"] = { 45.2, 23.2, 201 },
 						["sourceQuest"] = 24432,	-- Sea Legs
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -322,7 +323,7 @@ _.Zones =
 					}),
 					q(25405, {	-- Rest For the Weary (A)
 						["qg"] = 36915,	-- Erunak Stonespeaker
-						["coord"] = { 45.0, 23.2, 201 },
+						["coord"] = { 45.2, 23.2, 201 },
 						["sourceQuest"] = 25281,	-- Pay It Forward
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -334,7 +335,7 @@ _.Zones =
 					}),
 					q(24432, {	-- Sea Legs (A)
 						["qg"] = 36915,	-- Erunak Stonespeaker
-						["coord"] = { 45.0, 23.2, 201 },
+						["coord"] = { 45.2, 23.2, 201 },
 						["sourceQuest"] = 14482,	-- Call of Duty
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -394,7 +395,10 @@ _.Zones =
 						["crs"] = { 39918 },	-- Clacksnap Pincer
 						["g"] = {
 							q(25377, {	-- The Horde's Hoard
-								i(59788),	-- Bioluminescent Buckler
+								["sourceQuest"] = 25558,	-- All or Nothing
+								["g"] = {
+									i(59788),	-- Bioluminescent Buckler
+								},
 							}),
 						},
 					}),
@@ -421,6 +425,7 @@ _.Zones =
 						["qg"] = 39887,	-- Captain Taylor
 						["coord"] = { 44.7, 22.5, 201 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25405,	-- Rest For the Weary
 					}),
 					q(25943, {	-- Traveling on Our Stomachs (H)
 						["qg"] = 41711,	-- Legionnaire Nazgrim

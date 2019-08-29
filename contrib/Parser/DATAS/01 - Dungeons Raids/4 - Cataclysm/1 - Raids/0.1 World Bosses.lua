@@ -83,7 +83,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 			}), 
 			n(50009, {	-- Mobus
-				["maps"] = { 203 },	-- Vashj'ir
+				["maps"] = { 204 },	-- Vashj'ir
 				["groups"] = {
 					i(69843),	-- Mobus's Dripping Halberd
 					i(67135),	-- Morrie's Waywalker Wrap

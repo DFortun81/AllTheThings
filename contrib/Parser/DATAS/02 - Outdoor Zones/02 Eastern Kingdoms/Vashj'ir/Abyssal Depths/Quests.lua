@@ -8,17 +8,22 @@ _.Zones =
 			m(204, {	-- Abyssal Depths
 				n(-17,  {	-- Quests
 					q(26017, {	-- A Lure
+						["qg"] = 41910,	-- Humphrey Digsong
+						["coord"] = { 47.3, 49.7, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26015,	-- Phosphora Hunting
 					}),
-					q(25977, {	-- A Standard Day for Azrajar
+					q(25977, {	-- A Standard Day for Azrajar (A)
 						["qg"] = 41667,	-- Lieutenant "Foxy" Topper
+						["coord"] = { 55.4, 72.9, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26080,	-- One Last Favor
 						["g"] = {
 							i(59639),	-- Spikemender Shoulderplates
 							i(59638),	-- Necklace of the Furious Standard
 						},
 					}),
-					q(25980, {	-- A Standard Day for Azrajar
+					q(25980, {	-- A Standard Day for Azrajar (H)
 						["qg"] = 41670,	-- Sergeant Gertrude
 						["coord"] = { 51.4, 60.8, 204 },
 						["races"] = HORDE_ONLY,
@@ -59,7 +64,10 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 					q(26103, {	-- Bio-Fuel
+						["qg"] = 41666,	-- Engineer Hexascrub
+						["coord"] = { 55.5, 72.8, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26219,	-- Full Circle (A)
 					}),
 					q(26105, {	-- Claim Korthun's End
 						["qg"] = 42115,	-- Hellscream Seadog
@@ -67,15 +75,17 @@ _.Zones =
 					}),
 					q(26121, {	-- Claim Korthun's End
 						["qg"] = 41665,	-- Jorlan Trueblade
+						["coord"] = { 54.4, 72.9, 204 },
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "This version is provided if you abandon the quest granted by killing an |cFFFFD700Hellscream Seadog|r.",
 					}),
-					q(26070, {	-- Clearing the Defiled
+					q(26070, {	-- Clearing the Defiled (A)
 						["qg"] = 41598,	-- Captain Taylor
+						["coord"] = { 42.7, 37.9, 204 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
-							25983,	-- Promontory Point
-							-- TODO: Possibly requires "Put It On"?
+							25983,	-- Promontory Point (breadcrumb)
+							25987,	-- Put It On
 						},
 						["g"] = {
 							i(59624),	-- Eel-Slayer Legguards
@@ -83,13 +93,13 @@ _.Zones =
 							i(59623),	-- Trench-Stalker Shotgun
 						},
 					}),
-					q(26071, {	-- Clearing the Defiled
+					q(26071, {	-- Clearing the Defiled (H)
 						["qg"] = 41636,	-- Legionnaire Nazgrim
 						["coord"] = { 42.6, 37.8, 204 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
-							25984,	-- Promontory Point
-							-- TODO: Possibly requires "Put It On"?
+							25984,	-- Promontory Point (breadcrumb)
+							25988,	-- Put It On
 						},
 						["g"] = {
 							i(59621),	-- Eel-Slayer Legguards
@@ -98,7 +108,10 @@ _.Zones =
 						},
 					}),
 					q(26018, {	-- Coldlights Out
+						["qg"] = 41910,	-- Humphrey Digsong
+						["coord"] = { 47.3, 49.7, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26015,	-- Phosphora Hunting
 					}),
 					q(26140, {	-- Communing with the Ancient
 						["qg"] = 41600,	-- Erunak Stonespeaker
@@ -109,25 +122,29 @@ _.Zones =
 						["qg"] = 41600,	-- Erunak Stonespeaker
 						["coord"] = { 42.6, 37.8, 204 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 26181,	-- Back to Darkbreak Cave
+						["sourceQuests"] = {
+							26181,	-- Back to Darkbreak Cave (breadcrumb)
+							26143,	-- All That Rises
+						},
 						["g"] = {
 							i(59604),	-- Submariner's Weighted Treads
 							i(59605),	-- Signet of the Lookout
 							i(59606),	-- Drape of the Helmsman
 						},
-						-- TODO: verify the sourceQuest. 26181 is a breadcrumb, so what is the actual pre-req?
 					}),
 					q(26194, {	-- Defending the Rift (H)
 						["qg"] = 41600,	-- Erunak Stonespeaker
 						["coord"] = { 51.5, 60.8, 204 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 26182,	-- Back to the Tenebrous Cavern
+						["sourceQuests"] = {
+							26182,	-- Back to the Tenebrous Cavern (breadcrumb)
+							26143,	-- All that Rises
+						},
 						["g"] = {
 							i(59601),	-- Submariner's Weighted Treads
 							i(59602),	-- Signet of the Lookout
 							i(59603),	-- Drape of the Helmsman
 						},
-						-- TODO: verify the sourceQuest. 26182 is a breadcrumb, so what is the actual pre-req?
 					}),
 					q(26089, {	-- Die Fisherman Die
 						["qg"] = 41908,	-- Orako
@@ -135,8 +152,19 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26087,	-- "Glow-Juice"
 					}),
+					q(29328, {	-- Elemental Bonds: Desire
+						["qg"] = 53652,	-- Aggra
+						["coord"] = { 69.8, 34.2, 204 },
+						["sourceQuest"] = 29336,	-- Into Coaxing Tides
+					}),
 					q(26019, {	-- Enormous Eel Egg
+						["itemID"] = 56570,	-- Enormous Eel Egg
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26015,	-- Phosphora Hunting
+						["crs"] = {
+							41925,	-- Coldlight Hunters
+							41926,	-- Coldlight Oracles
+						},
 					}),
 					q(26122, {	-- Environmental Awareness
 						["qg"] = 41669,	-- Fiasco Sizzlegrin
@@ -145,7 +173,10 @@ _.Zones =
 						["sourceQuest"] = 26221,	-- Full Circle
 					}),
 					q(26132, {	-- Fiends from the Netherworld (A)
+						["qg"] = 41598,	-- Captain Taylor
+						["coord"] = { 42.7, 37.9, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26111,	-- ... It Will Come
 					}),
 					q(26133, {	-- Fiends from the Netherworld (H)
 						["qg"] = 41636,	-- Legionnaire Nazgrim
@@ -153,13 +184,14 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26111,	-- ... It Will Come
 					}),
-					q(26065,  {	-- Free Wil'hai
+					q(26065, {	-- Free Wil'hai
 						["qg"] = 41640,	-- Wavespeaker Valoren
 						["coord"] = { 52.6, 27.8, 204 },
 						["sourceQuests"] = {
+							26219,	-- Full Circle (A)
+							26221,	-- Full Circle (H)
 							26056,	-- The Wavespeaker (A)
 							26057,	-- The Wavespeaker (H)
-							-- TODO: Possibly requires "Put It On"?
 						},
 						["g"] = {
 							i(59628),	-- Hood of Teeming Horror
@@ -168,7 +200,10 @@ _.Zones =
 					}),
 					q(26106, {	-- Fuel-ology 101
 						["qg"] = 41666,	-- Engineer Hexascrub
+						["coord"] = { 55.5, 72.9, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26103,	-- Bio-Fuel
+						["description"] = "2 Remora, 3 Hammerhead",
 						["g"] = {
 							i(59646),	-- Gloves of Delicate Mixture
 							i(59645),	-- Vapor-Proof Headcover
@@ -207,17 +242,25 @@ _.Zones =
 							41926,	-- Coldlight Oracles
 						},
 					}),
+					q(29337, {	-- Into Constant Earth
+						["qg"] = 53652,	-- Aggra
+						["coord"] = { 69.8, 34.2, 204 },
+						["sourceQuest"] = 29328,	-- Elemental Bonds: Desire
+					}),
 					q(26072, {	-- Into the Totem
 						["qg"] = 41600,	-- Erunak Stonespeaker
 						["coord"] = { 42.6, 37.9, 204 },
-							-- TODO: Possibly requires "Put It On"?
+						["sourceQuests"] = {
+							25987,	-- Put It On (A)
+							25988,	-- Put It On (H)
+						},
 					}),
 					q(26111, {	-- ... It Will Come
 						["qg"] = 41600,	-- Erunak Stonespeaker
 						["coord"] = { 42.6, 37.9, 204 },
 						["sourceQuests"] = {
-							26096,	-- Scalding Shrooms (definitely required)
-							26072,	-- Into the Totem (probably required)
+							26096,	-- Scalding Shrooms
+							26072,	-- Into the Totem
 						},
 						["g"] = {
 							i(59618),	-- Chestguard of Cognitive Dissonance
@@ -227,14 +270,19 @@ _.Zones =
 					}),
 					q(26080, {	-- One Last Favor
 						["qg"] = 41910,	-- Humphrey Digsong
+						["coord"] = { 47.3, 49.7, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							26017,	-- A Lure
+							26018,	-- Coldlights Out
+						},
 						["g"] = {
 							i(59652),	-- Drag-Resistant Robes
 							i(59651),	-- Grips of the Severed Starfish
 							i(59650),	-- Glovaal's Choppink Svord
 						},
 					}),
-					q(26086, {	-- Orako
+					q(26086, {	-- Orako 
 						["qg"] = 41663,	-- Captain "Jewels" Verne
 						["coord"] = { 51.4, 61.5, 204 },
 						["races"] = HORDE_ONLY,
@@ -255,7 +303,10 @@ _.Zones =
 						}
 					}),
 					q(26015, {	-- Phosphora Hunting
+						["qg"] = 41910,	-- Humphrey Digsong
+						["coord"] = { 47.3, 49.7, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26014,	-- The Brothers Digsong
 					}),
 					q(26144, {	-- Prisoners (A)
 						["itemID"] = 57102,	-- Twilight Cage Key
@@ -282,6 +333,8 @@ _.Zones =
 						},
 					}),
 					q(25983, {	-- Promontory Point (A)
+						["qg"] = 41666,	-- Engineer Hexascrub
+						["coord"] = { 55.5, 72.9, 204 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25987,	-- Put It On
 						["isBreadcrumb"] = true,
@@ -295,6 +348,7 @@ _.Zones =
 					}),
 					q(25987, {	-- Put It On (A)
 						["qg"] = 41666,	-- Engineer Hexascrub
+						["coord"] = { 55.5, 72.8, 204 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25981,	-- Those Aren't Masks
 						["g"] = {
@@ -320,7 +374,10 @@ _.Zones =
 					q(26096, {	-- Scalding Shrooms
 						["qg"] = 41639,	-- Wavespeaker Tulra
 						["coord"] = { 42.7, 37.9, 204 },
-							-- TODO: Possibly requires "Put It On"?
+						["sourceQuests"] = {
+							25987,	-- Put It On (A)
+							25988,	-- Put It On (H)
+						},
 					}),
 					q(26124, {	-- Secure Seabrush
 						["qg"] = 42114,	-- Alliance Sea-Scout
@@ -333,7 +390,10 @@ _.Zones =
 						["description"] = "This version is provided if you abandon the quest granted by killing an |cFFFFD700Alliance Sea-Scout|r.",
 					}),
 					q(25950, {	-- Sira'Kess Slaying (A)
+						["qg"] = 41667,	-- Lieutenant "Foxy" Topper
+						["coord"] = { 55.4, 72.9, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26080,	-- One Last Favor
 					}),
 					q(25974, {	-- Sira'Kess Slaying (H)
 						["qg"] = 41670,	-- Sergeant Gertrude
@@ -342,11 +402,16 @@ _.Zones =
 						["sourceQuest"] = 26092,	-- Orako's Report
 					}),
 					q(26014, {	-- The Brothers Digsong
+						["qg"] = 41662,	-- Captain Glovaal
+						["coord"] = { 54.4, 72.9, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26106,	-- Fuel-ology 101
 					}),
 					q(26021, {	-- The Brothers Digsong 2: Ell-Egg-Trick Boogaloo
 						["qg"] = 41910,	-- Humphrey Digsong
+						["coord"] = { 47.3, 49.7, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26019,	-- Enormous Eel Egg
 						["g"] = {
 							i(59657),	-- Shoulderpads of Anguilliform Extinction
 							i(59656),	-- Explosively Decompressed Stompers
@@ -366,19 +431,24 @@ _.Zones =
 						},
 					}),
 					q(26056, {	-- The Wavespeaker (A)
+						["qg"] = 41598,	-- Captain Taylor
+						["coord"] = { 42.7, 37.9, 204 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-						-- TODO: Possibly requires "Put It On"?
+						["sourceQuest"] = 25987,	-- Put It On
 					}),
 					q(26057, {	-- The Wavespeaker (H)
 						["qg"] = 41636,	-- Legionnaire Nazgrim
 						["coord"] = { 42.6, 37.8, 204 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-						-- TODO: Possibly requires "Put It On"?
+						["sourceQuest"] = 25988,	-- Put It On
 					}),
 					q(25981, {	-- Those Aren't Masks (A)
+						["qg"] = 41666,	-- Engineer Hexascrub
+						["coord"] = { 55.5, 72.8, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26080,	-- One Last Favor
 					}),
 					q(25982, {	-- Those Aren't Masks (H)
 						["qg"] = 41669,	-- Fiasco Sizzlegrin
@@ -387,7 +457,10 @@ _.Zones =
 						["sourceQuest"] = 26092,	-- Orako's Report
 					}),
 					q(25975, {	-- Treasure Reclamation (A)
+						["qg"] = 41665,	-- Jorlan Trueblade
+						["coord"] = { 55.6, 72.9, 204 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26080,	-- One Last Favor
 					}),
 					q(25976, {	-- Treasure Reclamation (H)
 						["qg"] = 41668,	-- Blood Guard Toldrek
