@@ -16,7 +16,7 @@ _.Achievements =
 					}))),
 					un(2, ach(12110)),		-- Ahead of the Curve: Argus the Unmaker
 					un(2, ach(9444)),		-- Ahead of the Curve: Blackhand's Crucible
-					ach(12536),				-- Ahead of the Curve: G'huun
+					un(2, ach(12536)),		-- Ahead of the Curve: G'huun
 					un(2, ach(8398, {		-- Ahead of the Curve: Garrosh Hellscream (10 player)
 						un(2, i(104246)),		-- Reins of the Kor'kron War Wolf
 					})),
@@ -28,9 +28,11 @@ _.Achievements =
 					un(2, ach(11581)),		-- Ahead of the Curve: Helya
 					un(2, ach(9441)),		-- Ahead of the Curve: Imperator's Fall
 					un(2, ach(11874)),		-- Ahead of the Curve: Kil'jaeden
+					un(2, ach(13322)),		-- Ahead of the Curve: Lady Jaina Proudmoore
 					un(2, ach(8249)),		-- Ahead of the Curve: Lei Shen
 					un(2, ach(8248)),		-- Ahead of the Curve: Sha of Fear
 					un(2, ach(10044)),		-- Ahead of the Curve: The Black Gate
+					un(2, ach(13418)),		-- Ahead of the Curve: Uu'nat, Harbinger of the Void
 					un(2, ach(6954)),		-- Ahead of the Curve: Will of the Emperor
 					un(2, ach(11194)),		-- Ahead of the Curve: Xavius
 					un(2, ach(425)),		-- Atiesh, Greatstaff of the Guardian
@@ -44,10 +46,12 @@ _.Achievements =
 					un(2, ach(11580)),		-- Cutting Edge: Helya
 					un(2, ach(9442)),		-- Cutting Edge: Imperator's Fall
 					un(2, ach(11875)),		-- Cutting Edge: Kil'jaeden
+					un(2, ach(13323)),		-- Cutting Edge: Lady Jaina Proudmoore
 					un(2, ach(8238)),		-- Cutting Edge: Lei Shen
 					un(2, ach(8260)),		-- Cutting Edge: Ra-den
 					un(2, ach(7487)),		-- Cutting Edge: Sha of Fear
 					un(2, ach(10045)),		-- Cutting Edge: The Black Gate
+					un(2, ach(13419)),		-- Cutting Edge: Uu'nat, Harbinger of the Void
 					un(2, ach(7485)),		-- Cutting Edge: Will of the Emperor
 					un(2, ach(11191)),		-- Cutting Edge: Xavius
 					ach(5839, {				-- Dragonwrath, Tarecgosa's Rest

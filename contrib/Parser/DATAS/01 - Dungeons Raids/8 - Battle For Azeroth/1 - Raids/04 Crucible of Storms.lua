@@ -24,8 +24,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				},
 			}),
 			d(17, {	-- LFR
-			--	n(0, {	-- Zone Drop
-			--	}),
 				ach(13414, {	-- Crucible of Storms
 					["g"] = {
 						e(2328, {	-- The Restless Cabal
@@ -34,10 +32,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								146497,	-- Zaxasj the Speaker
 							},
 							["g"] = {
-								{	-- The Restless Cabal (Crucible of Storms)
+								crit(1, {	-- The Restless Cabal
 									["achievementID"] = 13414,	-- Crucible of Storms
-									["criteriaID"] = 1,	-- The Restless Cabal
-								},
+								}),
 								i(167863),	-- Pillar of the Drowned Cabal
 								i(167841),	-- Abyssal Speaker's Gauntlets
 								i(167833),	-- Fathom Dredgers
@@ -52,10 +49,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						e(2332, {	-- Uu'nat, Harbinger of the Void
 							["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
 							["g"] = {
-								{	-- Uu'nat, Harbinger of the Void (Crucible of Storms)
+								crit(2, {	-- Uu'nat, Harbinger of the Void
 									["achievementID"] = 13414,	-- Crucible of Storms
-									["criteriaID"] = 2,	-- Uu'nat, Harbinger of the Void
-								},
+								}),
 								i(167864),	-- Trident of Deep Ocean
 								i(167839),	-- Grips of Forsaken Sanity
 								i(167217),	-- Legplates of Unbound Anguish
@@ -71,18 +67,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(14, {	-- Normal
-			--	n(0, {	-- Zone Drop
-			--	}),
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
 						146497,	-- Zaxasj the Speaker
 					},
 					["g"] = {
-						{	-- The Restless Cabal (Crucible of Storms)
+						crit(1, {	-- The Restless Cabal
 							["achievementID"] = 13414,	-- Crucible of Storms
-							["criteriaID"] = 1,	-- The Restless Cabal
-						},
+						}),
 						i(167863),	-- Pillar of the Drowned Cabal
 						i(167841),	-- Abyssal Speaker's Gauntlets
 						i(167833),	-- Fathom Dredgers
@@ -97,10 +90,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2332, {	-- Uu'nat, Harbinger of the Void
 					["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
-						{	-- Uu'nat, Harbinger of the Void (Crucible of Storms)
+						crit(2, {	-- Uu'nat, Harbinger of the Void
 							["achievementID"] = 13414,	-- Crucible of Storms
-							["criteriaID"] = 2,	-- Uu'nat, Harbinger of the Void
-						},
+						}),
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity
 						i(167217),	-- Legplates of Unbound Anguish
@@ -114,24 +106,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(15, {	-- Heroic
-			--	n(0, {	-- Zone Drop
-			--	}),
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
 						146497,	-- Zaxasj the Speaker
 					},
 					["g"] = {
-						{	-- The Restless Cabal (Crucible of Storms)
+						crit(1, {	-- The Restless Cabal
 							["achievementID"] = 13414,	-- Crucible of Storms
-							["criteriaID"] = 1,	-- The Restless Cabal
-						},
-						--[[	-- didn't show up in-game properly
-						{	-- The Restless Cabal (Heroic: Crucible of Storms)
-							["achievementID"] = 13415,	-- Heroic: Crucible of Storms
-							["criteriaID"] = 1,	-- The Restless Cabal
-						},
-						--]]
+						}),
 						i(167863),	-- Pillar of the Drowned Cabal
 						i(167841),	-- Abyssal Speaker's Gauntlets
 						i(167833),	-- Fathom Dredgers
@@ -146,16 +129,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2332, {	-- Uu'nat, Harbinger of the Void
 					["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
-						{	-- Uu'nat, Harbinger of the Void (Crucible of Storms)
+						crit(2, {	-- Uu'nat, Harbinger of the Void
 							["achievementID"] = 13414,	-- Crucible of Storms
-							["criteriaID"] = 2,	-- Uu'nat, Harbinger of the Void
-						},
-						--[[	-- didn't show up in-game properly
-						{	-- Uu'nat, Harbinger of the Void (Heroic: Crucible of Storms)
-							["achievementID"] = 13415,	-- Heroic: Crucible of Storms
-							["criteriaID"] = 2,	-- Uu'nat, Harbinger of the Void
-						},
-						--]]
+						}),
+						un(2, ach(13418)),	-- Ahead of the Curve: Uu'nat, Harbinger of the Void
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity
 						i(167217),	-- Legplates of Unbound Anguish
@@ -169,24 +146,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(16, {	-- Mythic
-			--	n(0, {	-- Zone Drop
-			--	}),
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
 						146497,	-- Zaxasj the Speaker
 					},
 					["g"] = {
-						{			-- The Restless Cabal (Crucible of Storms)
+						crit(1, {	-- The Restless Cabal (Crucible of Storms)
 							["achievementID"] = 13414,	-- Crucible of Storms
-							["criteriaID"] = 1,	-- The Restless Cabal
-						},
-						--[[	-- didn't show up in-game properly
-						{			-- The Restless Cabal (Heroic: Crucible of Storms)
-							["achievementID"] = 13415,	-- Heroic: Crucible of Storms
-							["criteriaID"] = 1,	-- The Restless Cabal
-						},
-						--]]
+						}),
 						ach(13416),	-- Mythic: The Restless Cabal
 						i(167863),	-- Pillar of the Drowned Cabal
 						i(167841),	-- Abyssal Speaker's Gauntlets
@@ -202,17 +170,12 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2332, {	-- Uu'nat, Harbinger of the Void
 					["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
-						{			-- Uu'nat, Harbinger of the Void (Crucible of Storms)
+						crit(2, {	-- Uu'nat, Harbinger of the Void (Crucible of Storms)
 							["achievementID"] = 13414,	-- Crucible of Storms
-							["criteriaID"] = 2,	-- Uu'nat, Harbinger of the Void
-						},
-						--[[	-- didn't show up in-game properly
-						{			-- Uu'nat, Harbinger of the Void (Heroic: Crucible of Storms)
-							["achievementID"] = 13415,	-- Heroic: Crucible of Storms
-							["criteriaID"] = 2,	-- Uu'nat, Harbinger of the Void
-						},
-						--]]
+						}),
 						ach(13417),	-- Mythic: Uu'nat, Harbinger of the Void
+						un(2, ach(13418)),	-- Ahead of the Curve: Uu'nat, Harbinger of the Void
+						un(2, ach(13419)),	-- Cutting Edge: Uu'nat, Harbinger of the Void
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity
 						i(167217),	-- Legplates of Unbound Anguish
