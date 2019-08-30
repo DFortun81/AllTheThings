@@ -33,6 +33,7 @@ _.Zones =
 					["qg"] = 65651,	-- Lindsay
 					["coord"] = { 33.2, 52.5, 49 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 31725,	-- Lindsay
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},

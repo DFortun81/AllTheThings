@@ -21,6 +21,18 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
+				q(31984, {	-- A Brief Reprieve (A)
+					["qg"] = 66675,	-- Major Payne
+					["coord"] = { 77.4, 19.6, 118 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(31983, {	-- A Brief Reprieve (H)
+					["qg"] = 66675,	-- Major Payne
+					["coord"] = { 77.4, 19.6, 118 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(31928, { 	-- Grand Master Payne
 					["qg"] = 66675,	-- Major Payne
 					["g"] = {

@@ -41,6 +41,7 @@ _.Zones =
 					["qg"] = 65648,	-- Old MacDonald
 					["coord"] = { 80.6, 18.4, 52 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 31724,	-- Old MacDonald
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},

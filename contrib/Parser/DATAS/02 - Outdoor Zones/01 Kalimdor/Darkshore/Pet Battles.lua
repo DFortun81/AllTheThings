@@ -48,7 +48,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(31569, {	-- Got one!
+				q(31584, {	-- Got one!
 					["qg"] = 63083,	-- Will Larsons
 					["coord"] = { 50.1, 20.2, 62 },
 					["races"] = ALLIANCE_ONLY,

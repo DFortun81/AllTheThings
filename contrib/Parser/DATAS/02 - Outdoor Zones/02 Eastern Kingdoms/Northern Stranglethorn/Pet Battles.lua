@@ -37,6 +37,7 @@ _.Zones =
 					["qg"] = 63194,	-- Steven Lisbane
 					["coord"] = { 46.0, 40.4, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 31729,	-- Steven Lisbane
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},

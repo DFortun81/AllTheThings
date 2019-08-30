@@ -50,8 +50,10 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(31729, {	-- Steven Lisbane
+					["qg"] = 65655,	-- Eric Davidson
+					["coord"] = { 19.8, 44.8, 47 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 65655,	-- 
+					["sourceQuest"] = 31726,	-- Eric Davidson
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},

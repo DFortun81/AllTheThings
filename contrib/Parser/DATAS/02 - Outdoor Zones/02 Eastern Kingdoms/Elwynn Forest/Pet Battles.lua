@@ -86,6 +86,7 @@ _.Zones =
 					["qg"] = 64330,	-- Julia Stevens
 					["coord"] = { 41.6, 83.6, 37 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 31316,	-- Julia, The Pet Tamer
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},

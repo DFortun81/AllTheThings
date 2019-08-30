@@ -61,13 +61,6 @@ _.Zones =
 				q(13757, {	-- A Blade Fit For A Champion
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(31983, {	-- A Brief Reprieve
-					["qg"] = 66675,	-- Major Payne
-					["races"] = HORDE_ONLY,
-				}),
-				q(31984, {	-- A Brief Reprieve
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(13737, {	-- A Champion Rises
 					["races"] = HORDE_ONLY,
 				}),

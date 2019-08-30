@@ -131,9 +131,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31827 },	-- Level Up!
 				}),
+				q(31587, {	-- Got one!
+					["qg"] = 63086,	-- Matty
+					["coord"] = { 36.8, 77.4, 85 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 31828 },	-- Level Up!
+				}),
 				q(31588, {	-- Learning the Ropes
 					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
+					["races"] = HORDE_ONLY,
+					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+				}),
+				q(31585, {	-- Learning the Ropes
+					["qg"] = 63086,	-- Matty
+					["coord"] = { 36.8, 77.4, 85 },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
@@ -143,11 +155,24 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31589 },	-- On The Mend
 				}),
+				q(31828, {	-- Level Up!
+					["qg"] = 63086,	-- Matty
+					["coord"] = { 36.8, 77.4, 85 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 31586 },	-- On The Mend
+				}),
 				q(31589, {	-- On The Mend
 					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31588 },	-- Learning the Ropes
+					
+				}),
+				q(31586, {	-- On The Mend
+					["qg"] = 63086,	-- Matty
+					["coord"] = { 36.8, 77.4, 85 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 31585 },	-- Learning the Ropes
 					
 				}),
 				q(32863, {	-- What We've Been Training For

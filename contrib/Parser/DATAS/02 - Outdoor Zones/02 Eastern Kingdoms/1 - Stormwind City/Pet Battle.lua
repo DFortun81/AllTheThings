@@ -16,16 +16,86 @@ _.Zones =
 					["crs"] = { 62954 },	-- Stormwind Rat
 				}),
 				n(-17, { -- Quests
-					q(31591, {	-- Learning the Ropes
+					q(32008, {	-- Audrey Burnhep
+						["qg"] = 63596,	-- Audrey Burnhelp
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(31966, {	-- Battle Pet Tamers: Cataclysm
+						["qg"] = 63596,	-- Audrey Burnhelp
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31984,	-- A Brief Reprieve
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms
+						["qg"] = 63596,	-- Audrey Burnhelp
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31917,	-- A Tamer's Homecoming
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31889, {	-- Battle Pet Tamers: Kalimdor
+						["qg"] = 63596,	-- Audrey Burnhelp
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31927, {	-- Battle Pet Tamers: Northrend
+						["qg"] = 63596,	-- Audrey Burnhelp
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31981,	-- Exceeding Expectations
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31919, {	-- Battle Pet Tamers: Outland
+						["qg"] = 63596,	-- Audrey Burnhelp
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							31975,	-- The Returning Champion
+							31976,	-- The Returning Champion
+						},
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31930, {	-- Battle Pet Tamers: Pandaria
+						["qg"] = 63596,	-- Audrey Burnhelp
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31985,	-- The Triumphant Return
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31593, {	-- Got one!
 						["qg"] = 63596,	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
+						["sourceQuest"] = 31821,	-- Level Up!
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 1,
 					}),
-					q(31592, {	-- On The Mend
+					q(31316, {	-- Julia, The Pet Tamer
+						["qg"] = 63596,	-- Audrey Burnhelp
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 32008,	-- Audrey Burnhep
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31591, {	-- Learning the Ropes
 						["qg"] = 63596,	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
-						["sourceQuest"] = 31591,	-- Learning the Ropes
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 1,
 					}),
@@ -36,12 +106,21 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 1,
 					}),
-					q(31593, {	-- Got one!
+					q(31592, {	-- On The Mend
 						["qg"] = 63596,	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
-						["sourceQuest"] = 31821,	-- Level Up!
+						["sourceQuest"] = 31591,	-- Learning the Ropes
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 1,
+					}),
+					q(32863, { 	-- What We've Been Training For
+						["qg"] = 63596,	-- Audrey Burnhelp
+						["coord"] = { 69.2, 25.0, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
+						["g"] = {
+							i(98095),	-- Brawler's Pet Supplies
+						},
 					}),
 				}),
 				n(-2, {	-- Vendors
@@ -73,123 +152,6 @@ _.Zones =
 						},
 					}),
 				}),
-				--[[
-				--Note!! Commented out for now.  Need to re-evaluate this entire section.
-				--What purpose is it serving?  Are these only available in Stormwind only?  Why are some missing?  Why is Aubrey quests saying not completed and not available?
-				ach(6603, {	-- Taming Eastern Kingdoms
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						q(32008, {	-- Audrey Burnhep
-							["races"] = ALLIANCE_ONLY,
-						}),
-						--Note!! This and all 4 other quests return back false even if you did it.
-						--Note!! She is NOT part of the achievement
-						q(31316, {	-- Julia, The Pet Tamer
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(89125),	-- Sack of Pet Supplies
-							},
-						}),
-						q(31724, {	-- Old MacDonald
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(89125),	-- Sack of Pet Supplies
-							},
-						}),
-						q(31725, {	-- Lindsay
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(89125),	-- Sack of Pet Supplies
-							},
-						}),
-						q(31726, {	-- Eric Davidson
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(89125),	-- Sack of Pet Supplies
-							},
-						}),
-						q(31729, {	-- Steven Lisbane
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(89125),	-- Sack of Pet Supplies
-							},
-						}),
-						q(31728, {	-- Bill Buckler
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(89125),	-- Sack of Pet Supplies
-							},
-						}),
-						q(31917, {	-- A Tamer's Homecoming
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(89125),	-- Sack of Pet Supplies
-							},
-						}),
-						q(31915, {	-- Grand Master Lydia Accoste
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(89125),	-- Sack of Pet Supplies
-							},
-						}),
-					},
-				}),
-				q(31889, {	-- Battle Pet Tamers: Kalimdor
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31919, {	-- Battle Pet Tamers: Outland
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31927, {	-- Battle Pet Tamers: Northrend
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31966, {	-- Battle Pet Tamers: Cataclysm
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31930, {	-- Battle Pet Tamers: Pandaria
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(32863, { 	-- What We've Been Training For
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-					["g"] = {
-						i(98095),	-- Brawler's Pet Supplies
-					},
-				}),
-				q(31975, {	-- The Returning Champion
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31976, {	-- The Returning Champion
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31985, {	-- The Triumphant Return
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32863),	-- What We've Been Training For
-				--]]
 			}),
 		}),
 	}),
