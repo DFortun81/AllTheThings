@@ -175,6 +175,34 @@ _.Zones =
 					["sourceQuests"] = { 31585 },	-- Learning the Ropes
 					
 				}),
+				q(32009, {	-- Varzok
+					["qg"] = 63626,	-- Varzok
+					["coord"] = { 52.6, 59.3, 85 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				--[[
+				Putting quests 31882-31885 here for now, but I'm confident each of these are offered
+					at the end of the training quests in each of the starter zones. Can't find any info
+					on which one is appropriate to which map, so this is going to need to be something
+					figured out on an entirely new account that has done none of the pet battle quests
+				]]--
+				q(31882, {	-- Varzok
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(31883, {	-- Varzok
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(31884, {	-- Varzok
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(31885, {	-- Varzok
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(32863, {	-- What We've Been Training For
 					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
@@ -188,6 +216,9 @@ _.Zones =
 					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						32009, 31882, 31883, 31884, 31885,	-- Varzok (all breadcrumbs)
+					},
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},

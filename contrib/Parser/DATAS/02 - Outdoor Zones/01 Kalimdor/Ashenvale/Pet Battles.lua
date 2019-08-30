@@ -31,20 +31,17 @@ _.Zones =
 				p(420, {	-- Toad
 					["crs"] = { 61369 },	-- Toad
 				}),
-				n(31814, {	-- Analynn
-					["qg"] = 66135,	-- Dagra the Fierce
+				q(31854, {	-- Analynn
+					["qg"] = 66136,	-- Analynn
 					["coord"] = { 20.2, 29.5, 63 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 31813 },	-- Dagra the Fierce
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
+					["isDaily"] = true,
+					["sourceQuests"] = { 31814 },	-- Analynn
 				}),
-				n(31815, {	-- Zonya the Sadist
-					["qg"] = 66136,	-- Zonya the Sadist
+				q(31815, {	-- Zonya the Sadist
+					["qg"] = 66136,	-- Analynn
 					["coord"] = { 20.2, 29.5, 63 },
 					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
 					["sourceQuests"] = { 31814 },	-- Analynn
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
