@@ -6087,6 +6087,18 @@ app.BaseQuest = {
 app.CreateQuest = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
+local function RefreshQuestCompletionState(questID)
+	if questID ~= nil then
+		CompletedQuests[questID] = true;
+	else
+		GetQuestsCompleted(CompletedQuests);
+	end
+	
+	for questID,completed in pairs(DirtyQuests) do
+		app.QuestCompletionHelper(tonumber(questID));
+	end
+	wipe(DirtyQuests);
+end
 
 -- Recipe Lib
 app.BaseRecipe = {
@@ -13800,6 +13812,7 @@ app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 app:RegisterEvent("ARTIFACT_UPDATE");
+app:RegisterEvent("VIGNETTES_UPDATED");
 
 -- Define Event Behaviours
 app.events.ARTIFACT_UPDATE = function(...)
@@ -14231,11 +14244,13 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
+	RefreshQuestCompletionState()
 	app.Level = newLevel;
 	app:UpdateWindows();
 	app.Settings:Refresh();
 end
 app.events.BOSS_KILL = function(id, name, ...)
+	RefreshQuestCompletionState()
 	-- This is so that when you kill a boss, you can trigger 
 	-- an automatic update of your saved instance cache. 
 	-- (It does lag a little, but you can disable this if you want.)
@@ -14252,6 +14267,7 @@ app.events.LOOT_CLOSED = function()
 	RequestRaidInfo();
 end
 app.events.ZONE_CHANGED_NEW_AREA = function()
+	RefreshQuestCompletionState()
 	app.CurrentMapID = app.GetCurrentMapID();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
@@ -14268,6 +14284,7 @@ app.events.COMPANION_UNLEARNED = function(...)
 	RefreshMountCollection();
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
+	RefreshQuestCompletionState()
 	if itemID then
 		app:RefreshData(false, true);
 		app:PlayFanfare();
@@ -14280,19 +14297,10 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	end
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	CompletedQuests[questID] = true;
-	for questID,completed in pairs(DirtyQuests) do
-		app.QuestCompletionHelper(tonumber(questID));
-	end
-	wipe(DirtyQuests);
+	RefreshQuestCompletionState(questID)
 end
 app.events.QUEST_LOG_UPDATE = function()
-	GetQuestsCompleted(CompletedQuests);
-	for questID,completed in pairs(DirtyQuests) do
-		app.QuestCompletionHelper(tonumber(questID));
-	end
-	wipe(DirtyQuests);
-	app:UnregisterEvent("QUEST_LOG_UPDATE");
+	RefreshQuestCompletionState()
 end
 app.events.PET_BATTLE_OPENING_START = function(...)
 	local mini = app:GetWindow("CurrentInstance");
@@ -14391,4 +14399,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		wipe(searchCache);
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end
+end
+app.events.VIGNETTES_UPDATED = function() 
+	RefreshQuestCompletionState()
 end
