@@ -66,6 +66,87 @@ _.Zones =
 				p(1935, {	-- Squirky
 					["crs"] = { 113440 },	-- Squirky
 				}),
+				n(115741, {	-- Orphaned Bloodgazer
+					["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling! Do one quest each day for a mount!|r",
+					["groups"] = {
+						p(1977, {	-- Bloodgazer Hatchling
+							q(44998, {	-- Allies in Azsuna
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 44996,	-- Hunting Lesson: Erudite Manafiend
+							}),
+							q(45008, {	-- Bloodgazer Bonding
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45006,	-- The Unfavorable Faction
+								["g"] = {
+									i(142494),	-- Purple Blossom
+								},
+							}),
+							q(45020, {	-- Bloodgazer Reunion
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45018,	-- Bloodgazer Team Rumble
+								["g"] = {
+									i(137577),	-- Predatory Bloodgazer
+								},
+							}),
+							q(45018, {	-- Bloodgazer Team Rumble
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45016,	-- Teamwork Lesson: Skorpyron
+							}),
+							q(45000, {	-- Bloodgazer Team Up
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 44998,	-- Allies in Azsuna
+							}),
+							q(45002, {	-- Dangerous Prey
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45000,	-- Bloodgazer Team Up
+							}),
+							q(44996, {	-- Hunting Lesson: Erudite Manafiend
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuests"] = {
+									44993,	-- The Smell of Blood Elves
+									44991,	-- The Smell of Draenei
+								},
+							}),
+							q(45014, {	-- Hunting Lesson: Felspider
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45012,	-- Teamwork Lesson: Serpentrix
+							}),
+							q(45004, {	-- Hunting Lesson: Fledgling Kingfeather
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45002,	-- Dangerous Prey
+							}),
+							q(45010, {	-- Hunting Lesson: Juvenile Scuttleback
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45008,	-- Bloodgazer Bonding
+							}),
+							q(44990, {	-- Raising Your Bloodgazer
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+							}),
+							q(45012, {	-- Teamwork Lesson: Serpentrix
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45010,	-- Hunting Lesson: Juvenile Scuttleback
+							}),
+							q(45016, {	-- Teamwork Lesson: Skorpyron
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45014,	-- Hunting Lesson: Felspider
+							}),
+							q(44991, {	-- The Smell of Draenei
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 44990,	-- Raising Your Bloodgazer
+							}),
+							q(44993, {	-- The Smell of Blood Elves
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 44990,	-- Raising Your Bloodgazer
+							}),
+							q(45006, {	-- The Unfavorable Faction
+								["qg"] = 115787,	-- Bloodgazer Hatchling
+								["sourceQuest"] = 45004,	-- Hunting Lesson: Fledgling Kingfeather
+							}),
+						}),
+					},
+				}),
 			}),
 		}),
 	}),
