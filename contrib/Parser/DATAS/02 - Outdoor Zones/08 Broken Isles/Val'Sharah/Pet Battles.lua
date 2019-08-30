@@ -21,7 +21,7 @@ _.Zones =
 				p(1735), 	-- Terror Larva
 				p(1737), 	-- Vale Flitter
 				n(115740, {	-- Orphaned Sharptalon
-					["description"] = "1. Buy Dried Bilberries from Fialla Sweetberry in Dalaran.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling! Do one quest each day for a mount!|r",
+					["description"] = "1. Buy Dried Bilberries from Nalysse Dawnsorrow in Azsuna.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling! Do one quest each day for a mount!|r",
 					["groups"] = {
 						p(1976, {	-- Sharptalon Hatchling
 							q(44997, {	-- Allies in Val'sharah
