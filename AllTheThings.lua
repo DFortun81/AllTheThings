@@ -13812,7 +13812,7 @@ app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 app:RegisterEvent("ARTIFACT_UPDATE");
-app:RegisterEvent("VIGNETTES_UPDATED");
+app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
 
 -- Define Event Behaviours
 app.events.ARTIFACT_UPDATE = function(...)
@@ -14400,6 +14400,10 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end
 end
-app.events.VIGNETTES_UPDATED = function() 
-	RefreshQuestCompletionState()
+app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
+	local _,event = CombatLogGetCurrentEventInfo();
+	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
+		RefreshQuestCompletionState()
+	end
 end
+
