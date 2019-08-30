@@ -65,6 +65,12 @@ _.NeverImplemented =
 		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
 		
 		-------------------
+		--  UNKNOWN/NYI  --
+		-------------------
+		q(38995),	-- Unused
+		
+		
+		-------------------
 		--   CATACLYSM   --
 		-------------------
 		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
@@ -122,6 +128,11 @@ _.NeverImplemented =
 		q(39377),	-- Short-Supply Reward
 		q(39378),	-- Short-Supply Reward
 		q(39128),	-- Tanaan Vignette
+		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
+		q(39723),	-- Tracking Quest. Related to rare naval missions in the shipyard
+		q(39724),	-- Tracking Quest. Related to rare naval missions in the shipyard
+		q(39725),	-- Tracking Quest. Related to rare naval missions in the shipyard
+		q(39750),	-- Tracking Quest. Related to rare naval missions in the shipyard
 		
 		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
 
