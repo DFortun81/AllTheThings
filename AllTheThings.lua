@@ -10674,17 +10674,18 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						local o = results.g[i];
 						if o.difficultyID then
 							table.remove(results.g, i);
-							table.insert(bottom, o);
-						elseif o.isRaid then
-							table.remove(results.g, i);
-							table.insert(top, 1, o);
+							table.insert(bottom, 1, o);
+						-- this section appears to do nothing of value but appears to be responsible for preventing zone headers from collapsing/expanding
+						--elseif o.isRaid then
+						--	table.remove(results.g, i);
+						--	table.insert(top, o);
 						end
 					end
 					for i,o in ipairs(top) do
-						table.insert(results.g, o);
+						table.insert(results.g, 1, o);
 					end
 					for i,o in ipairs(bottom) do
-						table.insert(results.g, 1, o);
+						table.insert(results.g, o);
 					end
 					
 					-- if enabled minimize rows based on difficulty 
