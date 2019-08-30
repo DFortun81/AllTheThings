@@ -24,6 +24,7 @@ _.IllusionDB = {
 		["itemID"] = 138797,
 		["illusionID"] = 2673,
 		["text"] = "Mongoose",
+		["questID"] = 42892,
 	}, -- [5]
 	{
 		["visualID"] = 160,
@@ -35,24 +36,28 @@ _.IllusionDB = {
 		["illusionID"] = 3225,
 		["itemID"] = 138796,
 		["text"] = "Executioner",
+		["questID"] = 42891,
 	}, -- [7]
 	{
 		["visualID"] = 166,
 		["itemID"] = 138838,
 		["illusionID"] = 3273,
 		["text"] = "Deathfrost",
+		["questID"] = 42948,
 	}, -- [8]
 	{
 		["visualID"] = 186,
 		["illusionID"] = 3869,
 		["itemID"] = 138800,
 		["text"] = "Blade Ward",
+		["questID"] = 42895,
 	}, -- [9]
 	{
 		["visualID"] = 194,
 		["illusionID"] = 4066,
 		["itemID"] = 138803,
 		["text"] = "Mending",
+		["questID"] = 42900,
 	}, -- [10]
 	{
 		["visualID"] = 192,
@@ -74,6 +79,7 @@ _.IllusionDB = {
 		["illusionID"] = 4097,
 		["itemID"] = 138802,
 		["text"] = "Power Torrent",
+		["questID"] = 42898,
 	}, -- [14]
 	{
 		["visualID"] = 193,
@@ -95,6 +101,7 @@ _.IllusionDB = {
 		["illusionID"] = 4442,
 		["itemID"] = 138805,
 		["text"] = "Jade Spirit",
+		["questID"] = 42906,
 	}, -- [18]
 	{
 		["visualID"] = 236,
@@ -111,6 +118,7 @@ _.IllusionDB = {
 		["illusionID"] = 4445,
 		["itemID"] = 138804,
 		["text"] = "Colossus",
+		["questID"] = 42902,
 	}, -- [21]
 	{
 		["visualID"] = 237,
@@ -127,6 +135,7 @@ _.IllusionDB = {
 		["itemID"] = 138807,
 		["illusionID"] = 5331,
 		["text"] = "Mark of the Shattered Hand",
+		["questID"] = 42908,
 	}, -- [24]
 	{
 		["visualID"] = 283,
@@ -138,12 +147,14 @@ _.IllusionDB = {
 		["itemID"] = 138806,
 		["illusionID"] = 5335,
 		["text"] = "Mark of Shadowmoon",
+		["questID"] = 42907,
 	}, -- [26]
 	{
 		["visualID"] = 284,
 		["itemID"] = 138809,
 		["illusionID"] = 5336,
 		["text"] = "Mark of Blackrock",
+		["questID"] = 42910,
 	}, -- [27]
 	{
 		["visualID"] = 309,
@@ -155,6 +166,7 @@ _.IllusionDB = {
 		["itemID"] = 138808,
 		["illusionID"] = 5384,
 		["text"] = "Mark of Bleeding Hollow",
+		["questID"] = 42909,
 	}, -- [29]
 	{
 		["visualID"] = 125,
@@ -186,6 +198,7 @@ _.IllusionDB = {
 		["illusionID"] = 5392,
 		["itemID"] = 138801,
 		["text"] = "Blood Draining",
+		["questID"] = 42896,
 	}, -- [35]
 	{
 		["visualID"] = 103,
@@ -197,6 +210,7 @@ _.IllusionDB = {
 		["illusionID"] = 5448,
 		["itemID"] = 128649,
 		["text"] = "Winter's Grasp",
+		["questID"] = 42947,
 	}, -- [37]
 	{
 		["visualID"] = 31,
@@ -223,12 +237,14 @@ _.IllusionDB = {
 		["itemID"] = 138798,
 		["illusionID"] = 5865,
 		["text"] = "Sunfire",
+		["questID"] = 42893,
 	}, -- [42]
 	{
 		["visualID"] = 157,
 		["itemID"] = 138799,
 		["illusionID"] = 5866,
 		["text"] = "Soulfrost",
+		["questID"] = 42894,
 	}, -- [43]
 	{
 		["visualID"] = 213,
@@ -245,12 +261,14 @@ _.IllusionDB = {
 		["itemID"] = 138827,
 		["illusionID"] = 5876,
 		["text"] = "Nightmare",
+		["questID"] = 42934,
 	}, -- [46]
 	{
 		["visualID"] = 347,
 		["itemID"] = 138828,
 		["illusionID"] = 5877,
 		["text"] = "Chronos",
+		["questID"] = 42938,
 	}, -- [47]
 	
 	-- Shaman Only:
@@ -260,6 +278,7 @@ _.IllusionDB = {
 		["itemID"] = 138832,
 		["illusionID"] = 5871,
 		["visualID"] = 106,
+		["questID"] = 42941,
 	}, -- [46]
 	{
 		["sourceText"] = "Boss Drop: Ragnaros in Molten Core",
@@ -267,6 +286,7 @@ _.IllusionDB = {
 		["itemID"] = 138833,
 		["illusionID"] = 5872,
 		["visualID"] = 32,
+		["questID"] = 42942,
 	}, -- [47]
 	{
 		["sourceText"] = "Boss Drop: Hydross the Unstable in Serpentshrine Cavern",
@@ -281,6 +301,7 @@ _.IllusionDB = {
 		["itemID"] = 138835,
 		["illusionID"] = 5874,
 		["visualID"] = 61,
+		["questID"] = 42944,
 	}, -- [49]
 	{
 		["sourceText"] = "Boss Drop: Al'Akir in Throne of the Four Winds",
@@ -288,50 +309,47 @@ _.IllusionDB = {
 		["itemID"] = 138836,
 		["illusionID"] = 5875,
 		["visualID"] = 81,
+		["questID"] = 42945,
 	},
-
-	-- Death Knight Only:
-	{
+	{	-- Death Knight Only:
 		["sourceText"] = "Boss Drop: The Lich King in Icecrown Citadel",
 		["text"] = "Rune of Razorice",
 		["itemID"] = 138955,
 		["illusionID"] = 5869,
 		["visualID"] = 1,
+		["questID"] = 42973,
 	},
-	
-	-- Flames of Ragnaros
-	{
+	{	-- Flames of Ragnaros
 		["text"] = "Boss Drop: Ragnaros (Removed)",
 		["itemID"] = 118572,
-		["illusionID"] = 5394
+		["illusionID"] = 5394,
+		["questID"] = 42946,
 	},
-	
-	-- Poisoned (Rogue Only)
-	{
+	{	-- Poisoned (Rogue Only)
 		["text"] = "Rogue Only",
 		["itemID"] = 138954,
-		["illusionID"] = 5364
+		["illusionID"] = 5364,
+		["questID"] = 42972,
 	},
-	-- Demonic Tyranny
-	{
+	{	-- Demonic Tyranny
 		["itemID"] = 147778,
 		["illusionID"] = 5924,
 		["text"] = "Demonic Tyranny",
+		["questID"] = 47191,
 	}, -- 
-	-- Glorious Tyranny
-	{
+	{	-- Glorious Tyranny
 		["itemID"] = 120286, -- Enchanter's Illusion - Glorious Tyranny
 		["illusionID"] = 5396,
 		["text"] = "Glorious Tyranny",
+		["questID"] = 42949,
 	},
-	-- Primal Victory
-	{
+	{	-- Primal Victory
 		["itemID"] = 120287, -- Enchanter's Illusion - Primal Victory
 		["illusionID"] = 5397,
 		["text"] = "Primal Victory",
+		["questID"] = 42950,
 	},
-	-- Dreadflame
-	{
+	{	-- Dreadflame
 		--["itemID"] = 
 		["illusionID"] = 6096,
 		["text"] = "Dreadflame",
