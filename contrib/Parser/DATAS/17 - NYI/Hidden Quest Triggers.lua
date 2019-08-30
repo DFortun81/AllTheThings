@@ -319,6 +319,30 @@ _.NeverImplemented =
 		-------------------
 		--      BFA      --
 		-------------------
+		--[[ All of these pop up with brand new characters. Something account-wide triggers these. Possibly related to certain kinds of transmog events
+		q(51994),	-- 
+		q(52969),	-- 
+		q(53123),	-- 
+		q(53739),	-- 
+		q(53740),	-- 
+		q(53741),	-- 
+		q(53742),	-- 
+		q(53743),	-- 
+		q(53744),	-- 
+		q(53745),	-- 
+		q(54410),	-- 
+		q(56624),	-- 
+		q(56625),	-- 
+		q(56626),	-- 
+		q(56628),	-- 
+		q(56629),	-- 
+		q(56632),	-- 
+		q(56633),	-- 
+		q(56635),	-- 
+		q(56652),	-- 
+		q(57096),	-- 
+		]]--
+		
 		q(56056),	-- Wekemara kill questID (secondary to WQ, which needs to be attached for /attwq)
 		q(56899),	-- Wekemara bonus roll
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
