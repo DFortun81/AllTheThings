@@ -13,15 +13,15 @@ _.Zones =
 						["coord"] = { 57.7, 66.4, 114 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(44937),	-- Plans: Titanium Plating
-							i(44503),	-- Schematic: Mekgineer's Chopper
 							i(38464),	-- Gnomish Magician's Quill
 							i(38455),	-- Hammer of the Alliance Vanguard
-							i(38457),	-- Sawed-Off Hand Cannon
-							i(38465),	-- Vanguard Soldier's Dagger
 							i(38463),	-- Lordaeron's Resolve
 							i(38459),	-- Orb of the Eastern Kingdons
+							i(44937),	-- Plans: Titanium Plating
+							i(38457),	-- Sawed-Off Hand Cannon
+							i(44503),	-- Schematic: Mekgineer's Chopper
 							i(38453),	-- Shield of the Lion-Hearted
+							i(38465),	-- Vanguard Soldier's Dagger
 						},
 					}),
 					faction(1050, {	-- Valiance Expedition
@@ -39,13 +39,13 @@ _.Zones =
 								["coord"] = { 58.9, 68.1, 114 },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
+									i(25471),	-- Ebon Gryphon Mount
+									i(25470),	-- Golden Gryphon Mount
+									i(25472),	-- Snowy Gryphon Mount
 									i(25473), 	-- Swift Blue Gryphon Mount
-									i(25527),	-- Swift Red Gryphon Mount
 									i(25528),	-- Swift Green Gryphon Mount
 									i(25529),	-- Swift Purple Gryphon Mount
-									i(25470),	-- GoldenGryphon Mount
-									i(25471),	-- Ebon Gryphon Mount
-									i(25472),	-- Snowy Gryphon Mount
+									i(25527),	-- Swift Red Gryphon Mount
 								},
 							}),
 						},
@@ -60,11 +60,11 @@ _.Zones =
 						["coord"] = { 41.4, 53.7, 114 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(38452),	-- Bulwark of the Warchief
+							i(38460),	-- Charged Wand of the Cleft
+							i(38458),	-- Darkspear Orb
 							i(44938),	-- Plans: Titanium Plating
 							i(44502),	-- Schematic: Mechano-Hog
-							i(38452),	-- Bulwark of the Warchief
-							i(38458),	-- Darkspear Orb
-							i(38460),	-- Charged Wand of the Cleft
 							i(38456),	-- Sin'dorei Recurve Bow
 							i(38454),	-- Warsong Punisher
 							i(38461),	-- Warsong Shanker
@@ -87,13 +87,13 @@ _.Zones =
 								["coord"] = { 42.2, 55.4, 114 },
 								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(25477),	-- Swift Red Wind Rider
-									i(25531),	-- Swift Green Wind Rider
-									i(25532),	-- Swift Blue Wind Rider
-									i(25533),	-- Swift Purple Wind Rider
-									i(25474),	-- Tawny Wind Rider
 									i(25475),	-- Blue Wind Rider
 									i(25476),	-- Green Wind Rider
+									i(25532),	-- Swift Blue Wind Rider
+									i(25531),	-- Swift Green Wind Rider
+									i(25533),	-- Swift Purple Wind Rider
+									i(25477),	-- Swift Red Wind Rider
+									i(25474),	-- Tawny Wind Rider
 								},
 							}),
 						},

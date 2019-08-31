@@ -5,14 +5,22 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(114, {	-- Borean Tundra
-			n(-2, {	-- Vendors
+			n(-2, {		-- Vendors
 				n(25206, {	-- Ahlurglgr <Clam Vendor>
 					["coord"] = { 43.0, 13.8, 114 },
 					["g"] = {
-						i(34597, {	--  Winterfin Clam
-							i(37461),	-- Tidebreaker Trident
-							i(37462),	-- Sea King's Crown
-							i(37463),	-- Winterfin Patch of Honor
+						i(37462, {	-- Sea King's Crown
+							["cost"] = { { "i", 34597, 30 }, },	-- 30x Winterfin Clam
+						}),
+						i(36784, {	-- Siren's Tear
+							["isLimited"] = true,
+							["cost"] = { { "i", 34597, 100 }, },	-- 100x Winterfin Clam
+						}),
+						i(37461, {	-- Tidebreaker Trident
+							["cost"] = { { "i", 34597, 50 }, },	-- 50x Winterfin Clam
+						}),
+						i(37463, {	-- Winterfin Patch of Honor
+							["cost"] = { { "i", 34597, 30 }, },	-- 30x Winterfin Clam
 						}),
 					},
 				}),
