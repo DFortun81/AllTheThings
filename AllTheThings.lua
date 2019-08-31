@@ -2920,6 +2920,14 @@ fieldConverters = {
 			_cache(group, questGiverID);
 		end
 	end,
+	["providers"] = function(group, value)
+		_cache = rawget(fieldConverters, "creatureID");
+		for k,v in pairs(value) do
+			if v[1] == "n" and v[2] > 0 then
+				_cache(group, v[2]);
+			end
+		end
+	end,
 	["altQuests"] = function(group, value)
 		_cache = rawget(fieldConverters, "questID");
 		for i,questID in ipairs(value) do
@@ -8752,7 +8760,9 @@ local function RowOnEnter(self)
 				elseif providerType == "i" then
 					providerString = app.CreateItem(providerID).text
 				end
-				GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString .. ' (' .. providerID .. ')');
+				if providerString then
+					GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString .. ' (' .. providerID .. ')');
+				end
 				counter = counter + 1;
 			end
 			if counter > 0 then
