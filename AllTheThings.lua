@@ -3210,18 +3210,6 @@ app.SearchForLink = SearchForLink;
 local function AddTomTomWaypoint(group, auto)
 	if TomTom and group.visible then
 		if group.coords or group.coord then
-			if auto then
-				if C_Map.GetMapInfo(app.GetCurrentMapID()).mapType ~= 3 then return end -- only set waypoints if the current map is a zone
-				local waypointFilters = GetDataMember("WaypointFilters")
-				for headerID, enabled in pairs(waypointFilters) do
-					if (UnitOnTaxi("player") and not GetDataMember("EnableTomTomWaypointsOnTaxi"))
-					   or (app.RecursiveIsDescendantOfParentWithValue(group, "npcID", headerID) and not enabled)
-					   or (GetDataMember("TomTomIgnoreCompletedObjects") and app.IsComplete(group))
-					then
-						return
-					end
-				end
-			end
 			local opt = {
 				title = group.text or group.link,
 				persistent = nil,
@@ -13957,7 +13945,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
 	GetDataMember("ArtifactRelicItemLevels", {});
-	GetDataMember("WaypointFilters", {});
 	
 	-- Cache your character's lockouts.
 	local lockouts = GetDataMember("lockouts", {});
@@ -14155,9 +14142,6 @@ app.events.VARIABLES_LOADED = function()
 		"Sets",
 		"SourceSets",
 		"UnobtainableItemFilters",
-		"WaypointFilters",
-		"EnableTomTomWaypointsOnTaxi",
-		"TomTomIgnoreCompletedObjects"
 	}) do
 		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
 	end
@@ -14167,8 +14151,6 @@ app.events.VARIABLES_LOADED = function()
 	end
 
 	-- Tooltip Settings
-	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
-	GetDataMember("TomTomIgnoreCompletedObjects", true);
 	app.CurrentMapID = app.GetCurrentMapID();
 	app.Settings:Initialize();
 	
