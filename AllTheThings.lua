@@ -561,6 +561,21 @@ GameTooltipModel.TrySetModel = function(self, reference)
 					return true;
 				end
 			end
+		elseif reference.providers then
+			displayInfos = {}
+			local markedKeys = {}
+			for k,v in pairs(reference.providers) do
+				if v[1] == "n" and v[2] > 0 then
+					local displayID = app.NPCDisplayIDFromID[v[2]];
+					if displayID and not markedKeys[displayID] then
+						tinsert(displayInfos, displayID);
+						markedKeys[displayID] = 1;
+					end
+				end
+			end
+			if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
+				return true;
+			end
 		end
 		
 		if reference.displayID then
@@ -8720,6 +8735,28 @@ local function RowOnEnter(self)
 				GameTooltip:AddDoubleLine(j == 0 and "Coordinates" or " ", 
 					str.. GetNumberWithZeros(math.floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math.floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 				j = j + 1;
+			end
+		end
+		if reference.providers then
+			local counter = 0;
+			local displayIDs = {};
+			for i,provider in pairs(reference.providers) do
+				local providerType = provider[1]
+				local providerID = provider[2]
+				local providerString = "UNKNOWN"
+				if providerType == "o" then
+					providerString = app.CreateObject(providerID).text
+				elseif providerType == "n" then
+					providerString = tostring(providerID > 0 and NPCNameFromID[providerID] or "")
+					table.insert(displayIDs, providerID)
+				elseif providerType == "i" then
+					providerString = app.CreateItem(providerID).text
+				end
+				GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString .. ' (' .. providerID .. ')');
+				counter = counter + 1;
+			end
+			if counter > 0 then
+				GameTooltipModel:TrySetModel(reference)
 			end
 		end
 		if reference.coord and app.Settings:GetTooltipSetting("Coordinates") then

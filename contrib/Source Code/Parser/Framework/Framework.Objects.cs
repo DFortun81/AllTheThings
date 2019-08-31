@@ -1411,6 +1411,65 @@ namespace ATT
                             }
                             break;
                         }
+                    case "provider":
+                        {
+                            if (!(value is List<object> newList))
+                            {
+                                if (value is Dictionary<object, object> dict)
+                                {
+                                    newList = dict.Values.ToList();
+                                }
+                                else return;
+                            }
+                            var newProvider = new List<object>()
+                            {
+                                newList[0],
+                                Convert.ToInt32(newList[1])
+                            };
+                            if (item.TryGetValue("providers", out object providersRef) && providersRef is List<object> providers)
+                            {
+                                foreach(var providerRef in providers)
+                                {
+                                    if (providerRef is List<object> oldprovider)
+                                    {
+                                        if(oldprovider.Count == newProvider.Count)
+                                        {
+                                            bool match = true;
+                                            for(int i = 0; i < newProvider.Count;++i)
+                                            {
+                                                if (oldprovider[i] == newProvider[i]) continue;
+                                                match = false;
+                                                break;
+                                            }
+                                            if (match) return;
+                                        }
+                                    }
+                                }
+                                providers.Add(newProvider);
+                            }
+                            else
+                            {
+                                item["providers"] = providers = new List<object>
+                                {
+                                    newProvider
+                                };
+                            }
+                            break;
+                        }
+                    case "providers":
+                        {
+                            // Convert the data to a list of generic objects.
+                            if (value is List<object> newList)
+                            {
+                                foreach (var provider in newList) Merge(item, "provider", provider);
+                            }
+                            else if (value is Dictionary<object, object> dict)
+                            {
+                                newList = dict.Values.ToList();
+                                foreach (var provider in newList) Merge(item, "provider", provider);
+                            }
+                            break;
+                        }
                     // Special parser for coordinate data. (list of floats)
                     case "coord":
                         {

@@ -317,6 +317,8 @@ namespace ATT
                     case "nextRecipeID":
                     case "minReputation":
                     case "maxReputation":
+                    case "provider":
+                    case "providers":
                         {
                             return;
                         }
