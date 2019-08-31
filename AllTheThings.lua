@@ -964,6 +964,22 @@ local function GetDisplayID(data)
 		end
 	end
 	
+	-- Determine the most significant provider. The first provider is always selected, but any NPC will take precedent over other types
+	if data.providers and #data.providers > 0 then
+		local mostSignificantProvider
+		for k,v in pairs(data.providers) do
+			if v[1] == "n" then
+				mostSignificantProvider = v
+				break
+			elseif not mostSignificantProvider then
+				mostSignificantProvider = v
+			end
+		end
+		if mostSignificantProvider then
+			if mostSignificantProvider[1] == "n" then return app.NPCDisplayIDFromID[mostSignificantProvider[2]] end
+		end
+	end
+	
 	if data.qgs and #data.qgs > 0 then
 		return app.NPCDisplayIDFromID[data.qgs[1]];
 	end
@@ -2921,10 +2937,14 @@ fieldConverters = {
 		end
 	end,
 	["providers"] = function(group, value)
-		_cache = rawget(fieldConverters, "creatureID");
 		for k,v in pairs(value) do
 			if v[1] == "n" and v[2] > 0 then
+				_cache = rawget(fieldConverters, "creatureID");
 				_cache(group, v[2]);
+			elseif v[1] == "i" and v[2] > 0 then
+				CacheField(group, "itemID", v[2]);
+			elseif v[1] == "o" and v[2] > 0 then
+				CacheField(group, "objectID", v[2]);
 			end
 		end
 	end,
