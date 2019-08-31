@@ -8776,18 +8776,18 @@ local function RowOnEnter(self)
 			local counter = 0;
 			for i,provider in pairs(reference.providers) do
 				local providerType = provider[1]
-				local providerID = provider[2]
+				local providerID = provider[2] or 0
 				local providerString = "UNKNOWN"
 				if providerType == "o" then
-					providerString = app.CreateObject(providerID).text
+					local sff = SearchForField("objectID", providerID)
+					providerString = (sff and sff[1].text) or 'Object #'..providerID
 				elseif providerType == "n" then
-					providerString = tostring(providerID > 0 and NPCNameFromID[providerID] or "")
+					providerString = (providerID > 0 and NPCNameFromID[providerID]) or "Creature #"..providerID
 				elseif providerType == "i" then
-					providerString = app.CreateItem(providerID).text
+					local name = GetItemInfo(providerID)
+					providerString = name or 'Item #'..providerID
 				end
-				if providerString then
-					GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString .. ' (' .. providerID .. ')');
-				end
+				GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString .. ' (' .. providerID .. ')');
 				counter = counter + 1;
 			end
 		end
