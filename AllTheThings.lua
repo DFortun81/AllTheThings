@@ -6101,14 +6101,11 @@ app.BaseQuest = {
 				for k,v in pairs(t.providers) do
 					if v[2] > 0 then
 						if v[1] == "o" then
-							local obj = app.CreateObject(v[2])
-							if obj and obj.icon then
-								return obj.icon
-							end
+							return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Icons\\INV_Misc_Bag_10"
 						elseif v[1] == "i" then
-							local item = app.CreateItem(v[2])
-							if item and item.icon then
-								return item.icon
+							local _,_,_,_,icon = GetItemInfoInstant(v[2]);
+							if icon then
+								return icon
 							end
 						end
 					end
