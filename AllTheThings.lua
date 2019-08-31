@@ -964,19 +964,12 @@ local function GetDisplayID(data)
 		end
 	end
 	
-	-- Determine the most significant provider. The first provider is always selected, but any NPC will take precedent over other types
 	if data.providers and #data.providers > 0 then
-		local mostSignificantProvider
 		for k,v in pairs(data.providers) do
+			-- if one of the providers is an NPC, we should show its texture regardless of other providers
 			if v[1] == "n" then
-				mostSignificantProvider = v
-				break
-			elseif not mostSignificantProvider then
-				mostSignificantProvider = v
+				return app.NPCDisplayIDFromID[v[2]]
 			end
-		end
-		if mostSignificantProvider then
-			if mostSignificantProvider[1] == "n" then return app.NPCDisplayIDFromID[mostSignificantProvider[2]] end
 		end
 	end
 	
@@ -6103,16 +6096,33 @@ app.BaseQuest = {
 			return QuestTitleFromID[questID];
 		elseif key == "link" then
 			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
-		elseif key == "icon" then
-			if t.isDaily or t.isWeekly then
+		elseif key == "icon" or key == "preview" then
+			if t.providers then
+				for k,v in pairs(t.providers) do
+					if v[2] > 0 then
+						if v[1] == "o" then
+							local obj = app.CreateObject(v[2])
+							if obj and obj.icon then
+								return obj.icon
+							end
+						elseif v[1] == "i" then
+							local item = app.CreateItem(v[2])
+							if item and item.icon then
+								return item.icon
+							end
+						end
+					end
+				end
+			end
+			if key == "preview" then
+				return "Interface\\Icons\\Achievement_Quests_Completed_08";
+			elseif t.isDaily or t.isWeekly then
 				return "Interface\\GossipFrame\\DailyQuestIcon";
 			elseif t.repeatable then
 				return "Interface\\GossipFrame\\DailyActiveQuestIcon";
 			else
 				return "Interface\\GossipFrame\\AvailableQuestIcon";
 			end
-		elseif key == "preview" then
-			return "Interface\\Icons\\Achievement_Quests_Completed_08";
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
@@ -8767,7 +8777,6 @@ local function RowOnEnter(self)
 		end
 		if reference.providers then
 			local counter = 0;
-			local displayIDs = {};
 			for i,provider in pairs(reference.providers) do
 				local providerType = provider[1]
 				local providerID = provider[2]
@@ -8776,7 +8785,6 @@ local function RowOnEnter(self)
 					providerString = app.CreateObject(providerID).text
 				elseif providerType == "n" then
 					providerString = tostring(providerID > 0 and NPCNameFromID[providerID] or "")
-					table.insert(displayIDs, providerID)
 				elseif providerType == "i" then
 					providerString = app.CreateItem(providerID).text
 				end
@@ -8784,9 +8792,6 @@ local function RowOnEnter(self)
 					GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString .. ' (' .. providerID .. ')');
 				end
 				counter = counter + 1;
-			end
-			if counter > 0 then
-				GameTooltipModel:TrySetModel(reference)
 			end
 		end
 		if reference.coord and app.Settings:GetTooltipSetting("Coordinates") then
