@@ -9415,7 +9415,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.description = "Naughty secrets...";
 			db.text = L["SECRETS_HEADER"];
-			db.icon = "Interface\\ICONS\\INV_Horse2Purple";
+			db.icon = "Interface\\ICONS\\Spell_Nature_Polymorph_Cow";
 			db.model = "1526032";
 			db.g = app.Categories.Secrets;
 			db.collectible = false;
