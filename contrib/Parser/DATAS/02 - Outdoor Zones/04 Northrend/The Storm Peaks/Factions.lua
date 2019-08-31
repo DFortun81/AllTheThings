@@ -12,87 +12,75 @@ _.Zones =
 						n(32540, {	-- Lillehoff <The Sons of Hodir Quartermaster>
 							["coord"] = { 66.1, 61.4, 120 },
 							["g"] = {
-								ach(2083, {
-									i(43961),	-- Reins of the Grand Ice Mammoth Mount - Alliance
-									i(44086),	-- Reins of the Grand Ice Mammoth Mount - Horde
-								}),
-								ach(2082, {	-- Ice Mammoth
-									i(43958),	-- Reins of the Ice Mammoth Mount - Alliance
-									i(44080),	-- Reins of the Ice Mammoth Mount - Horde
-								}),
+								i(44193),	-- Broken Stalactite
 								i(41720),	-- Design: Smooth Autumn's Glow
 								i(41817, {	-- Design: Smooth Autumn's Glow
 									["spellID"] = 0,	-- This is now available via 41720, need to delink the old plans from the recipe
 									["u"] = 2,
 								}),
+								i(44189),	-- Giant Ring Belt
+								i(44194),	-- Giant-Friend Kilt
+								i(44133, {	-- Greater Inscription of the Axe
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(50335, {	-- Greater Inscription of the Axe
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(44134, {	-- Greater Inscription of the Crag
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(50336, {	-- Greater Inscription of the Crag
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(44136, {	-- Greater Inscription of the Pinnacle
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(50337, {	-- Greater Inscription of the Pinnacle
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(44135, {	-- Greater Inscription of the Storm
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(50338, {	-- Greater Inscription of the Storm
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(44131, {	-- Lesser Inscription of the Axe
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(44130, {	-- Lesser Inscription of the Crag
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(44132, {	-- Lesser Inscription of the Pinnacle
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
+								i(44129, {	-- Lesser Inscription of the Storm
+									["spellID"] = 0,	-- Ignore
+									["f"] = 55,		-- Consumable
+								}),
 								i(42184),	-- Pattern: Glacial Bag
 								i(44510),	-- Pattern: Mammoth Mining Bag
-								i(44193),	-- Broken Stalactite
+								ach(2083, {	-- Grand Ice Mammoth
+									i(43961),	-- Reins of the Grand Ice Mammoth Mount (A)
+									i(44086),	-- Reins of the Grand Ice Mammoth Mount (H)
+								}),
+								ach(2082, {	-- Ice Mammoth
+									i(43958),	-- Reins of the Ice Mammoth Mount (A)
+									i(44080),	-- Reins of the Ice Mammoth Mount (H)
+								}),
 								i(44192),	-- Stalactite Chopper
 								i(44190),	-- Spaulders of Frozen Knives
 								i(44195),	-- Spaulders of the Giant Lords
-								i(44189),	-- Giant Ring Belt
-								i(44194),	-- Giant-Friend Kilt
-								{
-									["itemID"] = 44131,	-- Lesser Inscription of the Axe
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 44130,	-- Lesser Inscription of the Crag
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 44132,	-- Lesser Inscription of the Pinnacle
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 44129,	-- Lesser Inscription of the Storm
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 44133,	-- Greater Inscription of the Axe
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 50335,	-- Greater Inscription of the Axe
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 44134,	-- Greater Inscription of the Crag
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 50336,	-- Greater Inscription of the Crag
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 44136,	-- Greater Inscription of the Pinnacle
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 50337,	-- Greater Inscription of the Pinnacle
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 44135,	-- Greater Inscription of the Storm
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
-								{
-									["itemID"] = 50338,	-- Greater Inscription of the Storm
-									["spellID"] = 0,	-- Ignore
-									["f"] = 55,		-- Consumable
-								},
 							},
 						}),
 						q(13559, {	-- Hodir's Tribute
@@ -123,19 +111,17 @@ _.Zones =
 							["coord"] = { 64.2, 59.6, 120 },
 							["icon"] = "Interface\\Icons\\INV_Helmet_110",
 						}),
-						{			-- Everfrost
+						q(13420, {	-- Everfrost
 							["minReputation"] = { 1119, FRIENDLY },
-							["itemID"] = 44725,	-- Everfrost Chip
-							["questID"] = 13420,	-- Everfrost
+						--	["itemID"] = 44725,	-- Everfrost Chip
 							["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
-						},
-						{			-- Remember Everfrost!
-							["questID"] = 13421,	-- Remember Everfrost!
+						}),
+						q(13421, {	-- Remember Everfrost!
 							["coord"] = { 67.0, 60.8, 120 },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
 							["qg"] = 32594,	-- Calder <Blacksmithing Supplies>
 							["sourceQuests"] = { 13420 },	-- Source Quest: Everfrost
 							["repeatable"]	= true,
-						},
+						}),
 						q(12977, {	-- Blowing Hodir's Horn
 						--	["minReputation"] = ,	-- unsure of reputation requirement
 							["sourceQuests"] = { 12976 },	-- A Monument to the Fallen

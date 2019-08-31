@@ -23,8 +23,8 @@ _.Zones =
 					["coord"] = { 37.0, 49.6, 120 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(42780, {	-- Relics of Ulduar
-							i(43499),	-- Iron Boot Flask
+						i(43499, {	-- Iron Boot Flask (TOY!)
+							["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
 						}),
 					},
 				}),
@@ -32,8 +32,8 @@ _.Zones =
 					["coord"] = { 28.8, 74.0, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(42780, {	-- Relics of Ulduar
-							i(43499),	-- Iron Boot Flask
+						i(43499, {	-- Iron Boot Flask (TOY!)
+							["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
 						}),
 					},
 				}),
