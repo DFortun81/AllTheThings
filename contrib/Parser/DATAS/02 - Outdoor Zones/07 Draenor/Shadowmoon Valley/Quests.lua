@@ -695,12 +695,14 @@ _.Zones =
 					["qg"] = 81126,	-- Prelate Luari
 					["coord"] = { 45.8, 37.4, 539 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(35444, {	-- The Southern Wilds
 					["sourceQuests"] = { 34019 },	-- Shadows Awaken
 					["coord"] = { 49.1, 37.1, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 82256,	-- Farmer Gehaar
+					["isBreadcrumb"] = true,
 				}),
 				q(34790, {	-- The Sting
 					["sourceQuests"] = { 34783 },	-- Naielle, The Rangari
