@@ -6,19 +6,36 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
 			n(-213, {	-- The Underbelly
-				n(-2, {	-- Vendors
+				n(-2, {		-- Vendors
 					n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
-						["coord"] = { 60.4, 55.2, 502 },
+						["coord"] = { 59.5, 57.9, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -668, -9983 },	-- Deadly Gladiator: Season 5 Honor Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
 						},
 					}),
+					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
+						["description"] = "This vendor is not always present.",
+						["coord"] = { 47.0, 28.1, 126 },
+						["g"] = {
+							i(136803, {	-- Dirty Tricks, Vol 1: Detection
+								--["spellID"] = 210108,	-- Detection
+							}),
+							i(136927),	-- Scarlet Confessional Book
+							i(141056),	-- Technique: Glyph of Burnout
+							i(136972, {	-- Tome of Hex: Cockroach
+								["spellID"] = 211015,	-- Hex(Cockroach)
+							}),
+						},
+					}),
 					n(29537, {	-- Darahir <Reagents & Magical Goods>
-						i(39973),	-- Ghostly Skull
+						["coord"] = { 63.4, 16.2, 126 },
+						["g"] = {
+							i(39973),	-- Ghostly Skull (PET!)
+						},
 					}),
 					n(69321, {	-- Herwin Steampop <Deadly Gladiator>
-						["coord"] = { 59.2, 58.6, 502 },
+						["coord"] = { 59.4, 57.8, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -668, -661 },	-- Deadly Gladiator: Season 5 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
@@ -26,29 +43,32 @@ _.Zones =
 						},
 					}),
 					n(29538, { 	-- Hexil Garrot <Tools of the Trade>
-						i(50995),	-- Vengeful Noose
-						i(50994),	-- Belt of Petrified Ivy
-						i(50982),	-- Cat Burglar's Grips
-						i(50981),	-- Gloves of the Great Horned Owl
-						i(50973),	-- Vestments of Spruce and Fir
-						i(50972),	-- Shadow Seeker's Tunic
-						i(45830),	-- Belt of the Living Thicket
-						i(45847),	-- Wildstrider Legguards
-						i(45846),	-- Leggings of Wavering Shadow
-						i(45839),	-- Grips of the Secret Grove
-						i(45829),	-- Belt of the Twilight Assassin
-						i(45838),	-- Gloves of the Blind Stalker
-						i(40749),	-- Rainey's Chewed Boots
-						i(40748),	-- Boots of Captain Ellis
-						i(40739),	-- Bands of the Great Tree
-						i(40738),	-- Wristwraps of the Cutthroat
-						i(40695),	-- Vine Belt of the Woodland Dryad
-						i(40704),	-- Pride
-						i(40702),	-- Rolfsen's Ripper
-						i(40694),	-- Jorach's Crocolisk Skin Belt
+						["coord"] = { 60.6, 11.9, 126 },
+						["g"] = {
+							i(40739),	-- Bands of the Great Tree
+							i(50994),	-- Belt of Petrified Ivy
+							i(45830),	-- Belt of the Living Thicket
+							i(45829),	-- Belt of the Twilight Assassin
+							i(40748),	-- Boots of Captain Ellis
+							i(50982),	-- Cat Burglar's Grips
+							i(45838),	-- Gloves of the Blind Stalker
+							i(50981),	-- Gloves of the Great Horned Owl
+							i(45839),	-- Grips of the Secret Grove
+							i(40694),	-- Jorach's Crocolisk Skin Belt
+							i(45846),	-- Leggings of Wavering Shadow
+							i(40704),	-- Pride
+							i(40749),	-- Rainey's Chewed Boots
+							i(40702),	-- Rolfsen's Ripper
+							i(50972),	-- Shadow Seeker's Tunic
+							i(50995),	-- Vengeful Noose
+							i(50973),	-- Vestments of Spruce and Fir
+							i(40695),	-- Vine Belt of the Woodland Dryad
+							i(45847),	-- Wildstrider Legguards
+							i(40738),	-- Wristwraps of the Cutthroat
+						},
 					}),
 					n(69318, { 	-- Kylo Kelwin <Furious Gladiator>
-						["coord"] = { 59.2, 58.6, 502 },
+						["coord"] = { 59.0, 57.6, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
@@ -231,7 +251,7 @@ _.Zones =
 						},
 					}),
 					n(40212, { 	-- Trapjaw Rix <Savage Gladiator>
-						["coord"] = { 59.6, 57.6, 502 },
+						["coord"] = { 59.3, 57.3, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -668, -660 },	-- Deadly Gladiator: Season 5 Aspirant / Combatant Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
@@ -242,7 +262,7 @@ _.Zones =
 						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -669, -662 }, },	-- Furious Gladiator: Season 6 Elite Weapons
 					}),
 					n(69971, { 	-- Xazi Smolderpipe <Wrathful Gladiator>
-						["coord"] = { 59.0, 58.8, 502 },
+						["coord"] = { 58.5, 58.3, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -671, -661 },	-- Wrathful Gladiator: Season 8 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
@@ -250,7 +270,7 @@ _.Zones =
 						},
 					}),
 					n(69973, { 	-- Zom Bocom <Relentless Gladiator>
-						["coord"] = { 59.0, 58.8, 502 },
+						["coord"] = { 59.0, 58.8, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -670, -661 },	-- Relentless Gladiator: Season 7 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
