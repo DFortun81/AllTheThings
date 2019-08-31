@@ -6,7 +6,9 @@ _.Toys =
 	n(-31, { 	-- Promotion
 		un(3, i(54653)),	-- Darkspear Pride (Horde) No Longer Available
 		un(3, i(54651)),	-- Gnomeregan Pride (Alliance) No Longer Available
-		un(16, i(33079)), 	-- Murloc Costume
+		un(16, i(33079, {	-- Murloc Costume
+			["model"] = 125041,
+		})),
 		un(16, i(163986, {	-- Orgrimmar Hero's War Banner
 			["races"] = HORDE_ONLY,
 		})),
