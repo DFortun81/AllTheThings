@@ -7,12 +7,12 @@ _.Zones =
 		m(7, {	-- Mulgore
 			m(462, {	-- Camp Narache
 				n(-17, {	-- Quests
-					q(752, {	-- A Humble Task
+					q(752,   {	-- A Humble Task
 						["u"] = 40,
 						["provider"] = { "n", 2981 },	-- Chief Hawkwind
 						["races"] = HORDE_ONLY,
 					}),
-					q(753, {	-- A Humble Task
+					q(753,   {	-- A Humble Task
 						["u"] = 40,
 						["provider"] = { "n", 2991 },	-- Greatmother Hawkwind
 						["races"] = HORDE_ONLY,
@@ -63,7 +63,7 @@ _.Zones =
 							i(57792),	-- Bag of Thorns
 						},
 					}),
-					q(757, {	-- Rite of Strength
+					q(757,   {	-- Rite of Strength
 						["u"] = 40,
 						["provider"] = { "n", 2982 },	-- Seer Graytongue
 						["races"] = HORDE_ONLY,
@@ -81,13 +81,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 23733,	-- Rites of the Earthmother
 					}),
-					q(755, {	-- Rites of the Earthmother
+					q(755,   {	-- Rites of the Earthmother
 						["u"] = 40,
 						["provider"] = { "n", 2981 },	-- Chief Hawkwind
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 753,	-- A Humble Task
 					}),
-					q(763, {	-- Rites of the Earthmother
+					q(763,   {	-- Rites of the Earthmother
 						["u"] = 40,
 						["provider"] = { "n", 2981 },	-- Chief Hawkwind
 						["races"] = HORDE_ONLY,
