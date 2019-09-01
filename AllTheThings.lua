@@ -8767,8 +8767,7 @@ local function RowOnEnter(self)
 				local providerID = provider[2] or 0
 				local providerString = "UNKNOWN"
 				if providerType == "o" then
-					local sff = SearchForField("objectID", providerID)
-					providerString = (sff and sff[1].text) or 'Object #'..providerID
+					providerString = L["OBJECT_ID_NAMES"][providerID] or 'Object #'..providerID
 				elseif providerType == "n" then
 					providerString = (providerID > 0 and NPCNameFromID[providerID]) or "Creature #"..providerID
 				elseif providerType == "i" then
