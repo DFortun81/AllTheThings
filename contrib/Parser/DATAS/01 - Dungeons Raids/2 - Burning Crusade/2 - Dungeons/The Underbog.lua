@@ -11,25 +11,25 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			n(-17, {	-- Quests
 				{	-- A Necessary Evil
 					["questID"] = 29568,	-- A Necessary Evil
-					["qg"] = 54678,			-- Naturalist Bite
+					["provider"] = { "n", 54678 },			-- Naturalist Bite
 				},
 				{	-- Bring Me A Shrubbery!
 					["questID"] = 29691,	-- Bring Me A Shrubbery!
-					["qg"] = 54674,			-- T'shu
+					["provider"] = { "n", 54674 },			-- T'shu
 				},
 				{	-- Bring Me Another Shrubbery!
 					["questID"] = 29692,		-- Bring Me Another Shrubbery!
 					["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
 					["repeatable"] = true,
-					["qg"] = 54674,	-- T'shu
+					["provider"] = { "n", 54674 },	-- T'shu
 				},
 				{	-- Rescuing the Expedition
 					["questID"] = 29570,	-- Rescuing the Expedition
-					["qg"] = 54675,			-- Watcher Jhang
+					["provider"] = { "n", 54675 },			-- Watcher Jhang
 				},
 				{	-- Stalk the Stalker
 					["questID"] = 29567,	-- Stalk the Stalker
-					["qg"] = 54674,			-- T'shu
+					["provider"] = { "n", 54674 },			-- T'shu
 					["g"] = {
 						{	-- Essence Infused Mushroom
 							["itemID"] = 28109,	-- Essence Infused Mushroom

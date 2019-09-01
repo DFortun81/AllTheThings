@@ -98,77 +98,77 @@ _.Zones =
 					["g"] = {
 						p(1974, {	-- Snowfeather Hatchling
 							q(44953, {	-- Allies in Highmountain
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44950,	-- Hunting Lesson: Northern Hawk Owls
 							}),
 							q(44956, {	-- Deadly Prey
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44954,	-- Snowfeather Team Up
 							}),
 							q(44962, {	-- Hunting Lesson: Coralback Fiddler
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44961,	-- Teamwork Lesson: Naraxas
 							}),
 							q(44960, {	-- Hunting Lesson: Mudshell Conch
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44959,	-- Snowfeather Bonding
 							}),
 							q(44950, {	-- Hunting Lesson: Northern Hawk Owls
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuests"] = {
 									44949,	-- The Smell of Humans
 									44971,	-- The Smell of Orcs
 								},
 							}),
 							q(44957, {	-- Hunting Lesson: Spiketail Beaver
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44956,	-- Deadly Prey
 							}),
 							q(44948, {	-- Raising Your Snowfeather
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 							}),
 							q(44959, {	-- Snowfeather Bonding
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44958,	-- The Unfriendly Faction
 								["g"] = {
 									i(142497),	-- Tiny Pack
 								},
 							}),
 							q(44969, {	-- Snowfeather Reunion
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44968,	-- Snowfeather Team Rumble
 								["g"] = {
 									i(137578),	-- Snowfeather Hunter
 								},
 							}),
 							q(44968, {	-- Snowfeather Team Rumble
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44967,	-- Teamwork Lesson: Ursoc
 							}),
 							q(44954, {	-- Snowfeather Team Up
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44953,	-- Allies in Highmountain
 							}),
 							q(44961, {	-- Teamwork Lesson: Naraxas
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44960,	-- Hunting Lesson: Mudshell Conch
 							}),
 							q(44967, {	-- Teamwork Lesson: Ursoc
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44962,	-- Hunting Lesson: Coralback Fiddler
 							}),
 							q(44949, {	-- The Smell of Humans
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 44948,	-- Raising Your Snowfeather
 							}),
 							q(44971, {	-- The Smell of Orcs
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 44948,	-- Raising Your Snowfeather
 							}),
 							q(44958, {	-- The Unfriendly Faction
-								["qg"] = 115784,	-- Snowfeather Hatchling
+								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44957,	-- Hunting Lesson: Spiketail Beaver
 							}),
 						}),

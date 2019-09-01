@@ -90,7 +90,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					q(8996, {	-- Return to Bodley
 						["u"] = 40,
-						["qg"] = 16073,	-- Spirit of Lord Valthalak
+						["provider"] = { "n", 16073 },	-- Spirit of Lord Valthalak
 						["lvl"] = 58,
 						["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
 					}),

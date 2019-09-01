@@ -8,14 +8,14 @@ _.Zones =
 			m(649,    {	-- Helheim
 				n(-17, {	-- Quests
 					q(39837, {	-- An Unworthy Task
-						["qg"] = 97319,	-- Ashildir
+						["provider"] = { "n", 97319 },	-- Ashildir
 						["coord"] = { 65.3, 46.9, 649 },
 						["sourceQuests"] = { 38818 },	-- The Final Judgment
 					}),
 					q(38324, {	-- Accessories of the Cursed
 						["sourceQuests"] = { 39837 },	-- An Unworthy Task
 						["coord"] = { 64.6, 43.8, 649 },
-						["qg"] = 91531,	-- Colborn the Unworthy
+						["provider"] = { "n", 91531 },	-- Colborn the Unworthy
 						["groups"] = {
 							i(129331),	-- Soulflayer Cord
 							i(129332),	-- Belt of the Eternally Tortured
@@ -27,7 +27,7 @@ _.Zones =
 					q(38339, {	-- A Little Kelp From My Foes
 						["sourceQuests"] = { 39837 },	-- An Unworthy Task
 						["coord"] = { 64.6, 43.8, 649 },
-						["qg"] = 91531,	-- Colborn the Unworthy
+						["provider"] = { "n", 91531 },	-- Colborn the Unworthy
 					}),
 					q(38347, {	-- Stealth by Seaweed
 						["sourceQuests"] = {
@@ -35,12 +35,12 @@ _.Zones =
 							38339,	-- A Little Kelp From My Foes
 						},
 						["coord"] = { 64.6, 43.8, 649 },
-						["qg"] = 91531,	-- Colborn the Unworthy
+						["provider"] = { "n", 91531 },	-- Colborn the Unworthy
 					}),
 					q(39848, {	-- A Desperate Bargain
 						["sourceQuests"] = { 38347 },	-- Stealth by Seaweed
 						["coord"] = { 47.2, 32.5, 649 },
-						["qg"] = 97419,	-- Ashildir
+						["provider"] = { "n", 97419 },	-- Ashildir
 					}),
 					q(39857, {	-- The Eternal Nemesis
 						["sourceQuests"] = { 39848 },	-- A Desperate Bargain
@@ -50,7 +50,7 @@ _.Zones =
 					q(39849, {	-- To Light the Way
 						["sourceQuests"] = { 39857 },	-- The Eternal Nemesis
 						["coord"] = { 46.6, 49.4, 649 },
-						["qg"] = 97480,	-- Ashildir
+						["provider"] = { "n", 97480 },	-- Ashildir
 						["groups"] = {
 							i(129339),	-- Drape of the Undying Raider
 							i(129239),	-- Bloodbeard's Seal
@@ -59,16 +59,16 @@ _.Zones =
 					q(39850, {	-- Sundered
 						["sourceQuests"] = { 39849 },	-- To Light the Way
 						["coord"] = { 46.6, 49.4, 649 },
-						["qg"] = 97480,	-- Ashildir
+						["provider"] = { "n", 97480 },	-- Ashildir
 					}),
 					q(39851, {	-- Allies in Death
 						["sourceQuests"] = { 39849 },	-- To Light the Way
 						["coord"] = { 46.6, 49.4, 649 },
-						["qg"] = 97480,	-- Ashildir
+						["provider"] = { "n", 97480 },	-- Ashildir
 					}),
 					q(39852, {	-- [PH] Collect Weapons
 						["u"] = 1,
-						["qg"] = 97319,	-- Ashildir
+						["provider"] = { "n", 97319 },	-- Ashildir
 					}),
 					q(39853, {	-- Victory is Eternal
 						["sourceQuests"] = {
@@ -76,12 +76,12 @@ _.Zones =
 							39850,	-- Sundered
 						},
 						["coord"] = { 46.6, 49.4, 649 },
-						["qg"] = 97480,	-- Ashildir
+						["provider"] = { "n", 97480 },	-- Ashildir
 					}),
 					q(39855, {	-- Paid in Lifeblood
 						["sourceQuests"] = { 39853 },	-- Victory is Eternal
 						["coord"] = { 46.2, 60.6, 649 },
-						["qg"] = 97558,	-- Ashildir
+						["provider"] = { "n", 97558 },	-- Ashildir
 						["groups"] = {
 							i(132832),	-- Bones of Geir	
 							i(132830),	-- Cursebinder Chains	

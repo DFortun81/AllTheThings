@@ -132,15 +132,15 @@ _.Zones =
 				}),
 				n(-17, {    -- Quests
 					un(40, q(40994, {	-- Right Tools for the Job
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["classes"] = { 4 },
 					})),
 					un(40, q(44174, {	-- The Very Best
-						["qg"] = 111246,	-- Archmage Timear
+						["provider"] = { "n", 111246 },	-- Archmage Timear
 						["isWeekly"] = true,
 					})),
 					un(40, q(41125, {	-- Unlocked Potential
-						["qg"] = 102700,	-- Meryl Felstorm
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
 						["classes"] = { 8 },
 						["sourceQuests"] = { 41114 },	-- The Champion's Return
 					})),

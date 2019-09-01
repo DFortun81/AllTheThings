@@ -35,7 +35,7 @@ _.Zones =
 					["description"] = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
 				}),
 				q(31817, {	-- Merda Stronghoof
-					["qg"] = 66137,	-- Zonya the Sadist
+					["provider"] = { "n", 66137 },	-- Zonya the Sadist
 					["coord"] = { 59.6, 71.6, 65 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -44,7 +44,7 @@ _.Zones =
 					},
 				}),
 				q(31862, {	-- Zonya the Sadist
-					["qg"] = 66137,	-- Zonya the Sadist
+					["provider"] = { "n", 66137 },	-- Zonya the Sadist
 					["coord"] = { 59.6, 71.6, 65 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

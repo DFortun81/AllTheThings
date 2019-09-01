@@ -9,7 +9,7 @@ _.Zones =
 				prof(171, {	-- Alchemy
 					n(-17, {	-- Quests
 						q(29481, {	-- Elixir Master
-							["qg"] = 5177,	-- Tally Berryfizz (Ironfoge)
+							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
 							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -24,7 +24,7 @@ _.Zones =
 							},]]							
 						}),
 						q(29067, {	-- Potion Master
-							["qg"] = 5177,	-- Tally Berryfizz (Ironfoge)
+							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
 							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -39,7 +39,7 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["qg"] = 5177,	-- Tally Berryfizz (Ironfoge)
+							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
 							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -63,7 +63,7 @@ _.Zones =
 					}),
 					n(-17, { 	-- Quests
 						q(29352, {	-- A Fowl Shortage
-							["qg"] = 5159,	-- Daryl Riknussun
+							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -75,7 +75,7 @@ _.Zones =
 							},
 						}),
 						q(29351, {	-- A Round for the Guards
-							["qg"] = 5159,	-- Daryl Riknussun
+							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -87,7 +87,7 @@ _.Zones =
 							},
 						}),
 						q(29355, {	-- Can't Get Enough Spice Bread
-							["qg"] = 5159,	-- Daryl Riknussun
+							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -99,7 +99,7 @@ _.Zones =
 							},
 						}),
 						q(29356, {	-- I Need to Cask a Favor
-							["qg"] = 5159,	-- Daryl Riknussun
+							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -111,14 +111,14 @@ _.Zones =
 							},
 						}),
 						q(6612, {	-- I Know A Guy...
-							["qg"] = 5159,	-- Daryl Riknussun
+							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 35,
 						}),
 						q(29353, {	-- Keepin' the Haggis Flowin'
-							["qg"] = 5159,	-- Daryl Riknussun
+							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -134,7 +134,7 @@ _.Zones =
 				prof(164, {	-- Blacksmithing
 					n(-17, {	-- Quests
 						q(1618,  {	-- Gearing Redridge
-							["qg"] = 6031,	-- Tormus Deepforge
+							["provider"] = { "n", 6031 },	-- Tormus Deepforge
 							["coord"] = { 49.0, 42.4, 87 },
 							["requireSkill"] = 164,	-- Blacksmithing
 							["races"] = ALLIANCE_ONLY,
@@ -144,7 +144,7 @@ _.Zones =
 							},
 						}),
 						q(1578,  {	-- Supplying the Front
-							["qg"] = 6031,	-- Tormus Deepforge
+							["provider"] = { "n", 6031 },	-- Tormus Deepforge
 							["coord"] = { 49.0, 42.4, 87 },
 							["requireSkill"] = 164,	-- Blacksmithing
 							["races"] = ALLIANCE_ONLY,
@@ -158,7 +158,7 @@ _.Zones =
 				prof(202, {	-- Engineering
 					n(-17, {	-- Quests
 						q(29477, {	-- Gnomish Engineering
-							["qg"] = 5174,	-- Springspindle Fizzlegear
+							["provider"] = { "n", 5174 },	-- Springspindle Fizzlegear
 							["coord"] = { 68.8, 45.2, 87 },
 							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
 							["requireSkill"] = 202,	-- Engineering
@@ -166,7 +166,7 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 						q(29475, {	-- Goblin Engineering
-							["qg"] = 5174,	-- Springspindle Fizzlegear
+							["provider"] = { "n", 5174 },	-- Springspindle Fizzlegear
 							["coord"] = { 68.8, 45.2, 87 },
 							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
 							["requireSkill"] = 202,	-- Engineering
@@ -178,7 +178,7 @@ _.Zones =
 				prof(129, {	-- First Aid
 					n(-17, {	-- Quests
 						q(6625,  {	-- Alliance Trauma
-							["qg"] = 5150,	-- Nissa Firestone
+							["provider"] = { "n", 5150 },	-- Nissa Firestone
 							["coord"] = { 55.1, 58.3, 87 },
 							["isBreadcrumb"] = true,
 							["requireSkill"] = 129,	-- First Aid
@@ -196,7 +196,7 @@ _.Zones =
 					}),
 					n(-17, {	-- Quests
 						q(29342, {	-- Cold Water Fishing
-							["qg"] = 5161,	-- Grimnur Stonebrand
+							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -213,7 +213,7 @@ _.Zones =
 							},
 						}),
 						q(8229, {	-- Could I get a Fishing Flier?
-							["qg"] = 15119,	-- Barrus
+							["provider"] = { "n", 15119 },	-- Barrus
 							["coord"] = { 28.6, 74.6, 87 },
 							["isBreadcrumb"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -221,7 +221,7 @@ _.Zones =
 							["lvl"] = 50,
 						}),
 						q(29344, {	-- Fish fer Squrky
-							["qg"] = 5161,	-- Grimnur Stonebrand
+							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -238,7 +238,7 @@ _.Zones =
 							},
 						}),
 						q(6609, {	-- I Got Nothin' Left!
-							["qg"] = 5161,	-- Grimnur Stonebrand
+							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isBreadcrumb"] = true,
 							["requireSkill"] = 129,	-- Fishing
@@ -246,7 +246,7 @@ _.Zones =
 							["lvl"] = 35,
 						}),
 						q(29347, {	-- Live Bait
-							["qg"] = 5161,	-- Grimnur Stonebrand
+							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -263,7 +263,7 @@ _.Zones =
 							},
 						}),
 						q(29343, {	-- One fer the Ages
-							["qg"] = 5161,	-- Grimnur Stonebrand
+							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -280,7 +280,7 @@ _.Zones =
 							},
 						}),
 						q(29350, {	-- The Gnomish Bait-o-Matic
-							["qg"] = 5161,	-- Grimnur Stonebrand
+							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -305,7 +305,7 @@ _.Zones =
 				prof(773, {	-- Inscription
 					n(-17, {	-- Quests
 						q(39956, {	-- The Legacy Passed On
-							["qg"] = 97762,	-- Bill Spearshaker <Author Extrodinaire>
+							["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
 							["coord"] = { 77.2, 10.4, 87 },
 							["sourceQuest"] = 39955,	-- The Plot Thickens
 							["requireSkill"] = 773,	-- Inscription

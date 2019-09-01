@@ -17,24 +17,24 @@ _.PVP =
 					["g"] = {
 						n(-17, {	-- Quests
 							q(7385, {	-- A Gallon of Blood
-								["qg"] = 13236,	-- Primalist Thurloga
+								["provider"] = { "n", 13236 },	-- Primalist Thurloga
 								["coord"] = { 50.1, 85.1, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(7281, {	-- Brotherly Love (H)
-								["qg"] = 13154,	-- Commander Louis Philips
+								["provider"] = { "n", 13154 },	-- Commander Louis Philips
 								["coord"] = { 50.4, 65.5, 91 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(5893, {	-- Coldtooth Supplies (H)
-								["qg"] = 12097, -- Frostwolf Quartermaster
+								["provider"] = { "n", 12097 }, -- Frostwolf Quartermaster
 								["coord"] = { 46.6, 84.0, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(7165, {	-- Earned Reverence
-								["qg"] = 13840,	-- Warmaster Laggrond
+								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7164 },	-- Honored Amongst the Clan
@@ -44,18 +44,18 @@ _.PVP =
 								},
 							}),
 							q(7001, {	-- Empty Stables (H)
-								["qg"] = 13616, -- Frostwolf Stable Master
+								["provider"] = { "n", 13616 }, -- Frostwolf Stable Master
 								["coord"] = { 57.1, 82.5, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(7224, {	-- Enemy Booty
-								["qg"] = 13176,	-- Smith Regzar
+								["provider"] = { "n", 13176 },	-- Smith Regzar
 								["coord"] = { 49.6, 82.6, 91 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(8272, {	-- Hero of the Frostwolf
-								["qg"] = 13817,	-- Voggah Deathgrip
+								["provider"] = { "n", 13817 },	-- Voggah Deathgrip
 								["coord"] = { 58.6, 34.2, 25 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7142 },	-- The Battle for Alterac
@@ -67,7 +67,7 @@ _.PVP =
 								},
 							}),
 							q(7164, {	-- Honored Amongst the Clan
-								["qg"] = 13840,	-- Warmaster Laggrond
+								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7163 },	-- Rise and be Recognized
@@ -77,13 +77,13 @@ _.PVP =
 								},
 							}),
 							q(6985, {	-- Irondeep Supplies (H)
-								["qg"] = 12097, -- Frostwolf Quartermaster
+								["provider"] = { "n", 12097 }, -- Frostwolf Quartermaster
 								["coord"] = { 46.6, 84.0, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(7166, {	-- Legendary Heroes
-								["qg"] = 13840,	-- Warmaster Laggrond
+								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7165 },	-- Earned Reverence
@@ -93,26 +93,26 @@ _.PVP =
 								},
 							}),
 							q(56259, {	-- Lokholar the Ice Lord
-								["qg"] = 154474,	-- Primalist Thurloga
+								["provider"] = { "n", 154474 },	-- Primalist Thurloga
 								["coord"] = { 55.0, 87.2, 91 },
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(6801, {	-- Lokholar the Ice Lord
-								["qg"] = 13236,	-- Primalist Thurloga
+								["provider"] = { "n", 13236 },	-- Primalist Thurloga
 								["coord"] = { 50.1, 85.1, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(6741, {	-- More Booty!
-								["qg"] = 13176,	-- Smith Regzar
+								["provider"] = { "n", 13176 },	-- Smith Regzar
 								["coord"] = { 49.6, 82.6, 91 },
 								["sourceQuest"] = 7224,	-- Enemy Booty
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(7161, {	-- Proving Grounds
-								["qg"] = 13840,	-- Warmaster Laggrond
+								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["lvl"] = 51,
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
@@ -121,13 +121,13 @@ _.PVP =
 								},
 							}),
 							q(7002, {	-- Ram Hide Harnesses
-								["qg"] = 13441, -- Frostwolf Wolf Rider Commander
+								["provider"] = { "n", 13441 }, -- Frostwolf Wolf Rider Commander
 								["coord"] = { 57.0, 82.5, 91 },
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(7163, {	-- Rise and Be Recognized
-								["qg"] = 13840,	-- Warmaster Laggrond
+								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7161 },	-- Proving Grounds
@@ -137,19 +137,19 @@ _.PVP =
 								},
 							}),
 							q(7142, {	-- The Battle for Alterac
-								["qg"] = 13817,	-- Voggah Deathgrip
+								["provider"] = { "n", 13817 },	-- Voggah Deathgrip
 								["coord"] = { 58.6, 34.2, 25 },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
 							q(56257, {	-- The Battle for Alterac (H)
-								["qg"] = 154473,	-- Voggah Deathgrip
+								["provider"] = { "n", 154473 },	-- Voggah Deathgrip
 								["coord"] = { 55.0, 87.2, 91 },
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
 							}),
 							q(7167, {	-- The Eye of Command
-								["qg"] = 13840,	-- Warmaster Laggrond
+								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["coord"] = { 57.7, 33.3, 25 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7166 },	-- Legendary Heroes
@@ -256,39 +256,39 @@ _.PVP =
 					["g"] = {
 						n(-17, {	-- Quests
 							q(7081, {	-- Alterac Valley Graveyards
-								["qg"] = 13777,	-- Sergeant Durgen Stormpike
+								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, 25 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7223, {	-- Armor Scraps
-								["qg"] = 13257,	-- Murgot Deepforge
+								["provider"] = { "n", 13257 },	-- Murgot Deepforge
 							--	["coord"] = { , 91 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7282, {	-- Brotherly Love (A)
-								["qg"] = 13320,	-- Commander Karl Philips
+								["provider"] = { "n", 13320 },	-- Commander Karl Philips
 								["coord"] = { 50.9, 30.8, 91 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7122, {	-- Capture a Mine
-								["qg"] = 13777,	-- Sergeant Durgen Stormpike
+								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, 25 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(6982, {	-- Coldtooth Supplies (A)
-								["qg"] = 12096, -- Stormpike Quartermaster
+								["provider"] = { "n", 12096 }, -- Stormpike Quartermaster
 								["coord"] = { 46.6, 84.0, 91 },
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7386, {	-- Crystal Cluster
-								["qg"] = 13442,	-- Archdruid Renferal
+								["provider"] = { "n", 13442 },	-- Archdruid Renferal
 								["coord"] = { 43.9, 12.6, 91 },
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7170, {	-- Earned Reverence
-								["qg"] = 13841,	-- Lieutenant Haggerdin
+								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7169 },	-- Honored Among the Guard
@@ -298,13 +298,13 @@ _.PVP =
 								},
 							}),
 							q(7027, {	-- Empty Stables (A)
-								["qg"] = 13617, -- Stormpike Stable Master
+								["provider"] = { "n", 13617 }, -- Stormpike Stable Master
 								["coord"] = { 42.6, 16.9 , 91 },
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(8271, {	-- Hero of the Stormpike
-								["qg"] = 13816,	-- Prospecter Stonechewer
+								["provider"] = { "n", 13816 },	-- Prospecter Stonechewer
 								["coord"] = { 45.2, 45.2, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7141 },	-- The Battle of Alterac
@@ -316,7 +316,7 @@ _.PVP =
 								},
 							}),
 							q(7169, {	-- Honored Amongst the Guard
-								["qg"] = 13841,	-- Lieutenant Haggerdin
+								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7168 },	-- Rise and be Recognized
@@ -326,25 +326,25 @@ _.PVP =
 								},
 							}),
 							q(5892, {	-- Irondeep Supplies (A)
-								["qg"] = 12096, -- Stormpike Quartermaster
+								["provider"] = { "n", 12096 }, -- Stormpike Quartermaster
 								["coord"] = { 46.6, 84.0, 91 },
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(6881, {	-- Ivus the Forest Lord
-								["qg"] = 13442,	-- Archdruid Renferal
+								["provider"] = { "n", 13442 },	-- Archdruid Renferal
 								["coord"] = { 43.9, 12.6, 91 },
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(56258, {	-- Ivus the Forest Lord
-								["qg"] = 154476,	-- Archdruid Renferal
+								["provider"] = { "n", 154476 },	-- Archdruid Renferal
 							--	["coord"] = { , 91 },
 								["isWeekly"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7171, {	-- Legendary Heroes
-								["qg"] = 13841,	-- Lieutenant Haggerdin
+								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7170 },	-- Earned Reverence
@@ -354,14 +354,14 @@ _.PVP =
 								},
 							}),
 							q(6781, {	-- More Armor Scraps
-								["qg"] = 13257,	-- Murgot Deepforge
+								["provider"] = { "n", 13257 },	-- Murgot Deepforge
 							--	["coord"] = { , 91 },
 								["sourceQuest"] = 7223,	-- Armor Scraps
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7162, {	-- Proving Grounds
-								["qg"] = 13841,	-- Lieutenant Haggerdin
+								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
@@ -370,13 +370,13 @@ _.PVP =
 								},
 							}),
 							q(7026, {	-- Ram Riding Harnesses
-								["qg"] = 13577, -- Stormpike Ram Rider Commander
+								["provider"] = { "n", 13577 }, -- Stormpike Ram Rider Commander
 							--	["coord"] = { , 91 },
 								["repeatable"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7168, {	-- Rise and Be Recognized
-								["qg"] = 13841,	-- Lieutenant Haggerdin
+								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7162 },	-- Proving Grounds
@@ -386,17 +386,17 @@ _.PVP =
 								},
 							}),
 							q(7141, {	-- The Battle of Alterac
-								["qg"] = 13816,	-- Prospecter Stonehewer
+								["provider"] = { "n", 13816 },	-- Prospecter Stonehewer
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(56256, {	-- The Battle for Alterac (A)
-								["qg"] = 154478,	-- Prospector Stonehewer
+								["provider"] = { "n", 154478 },	-- Prospector Stonehewer
 							--	["coord"] = { , 91 },
 								["isWeekly"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(7172, {	-- The Eye of Command
-								["qg"] = 13841,	-- Lieutenant Haggerdin
+								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
 								["coord"] = { 44.6, 46.2, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7171 },	-- Legendary Heroes
@@ -406,7 +406,7 @@ _.PVP =
 								},
 							}),
 							q(7102, {	-- Towers and Bunkers
-								["qg"] = 13777,	-- Sergeant Durgen Stormpike
+								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, 25 },
 								["races"] = ALLIANCE_ONLY,
 							}),

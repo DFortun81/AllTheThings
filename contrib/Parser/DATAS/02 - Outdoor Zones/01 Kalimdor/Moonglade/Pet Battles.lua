@@ -19,7 +19,7 @@ _.Zones =
 					["crs"] = { 62373 },	-- Silky Moth
 				}),
 				q(31908, {	-- Elena Flutterfly
-					["qg"] = 66412,	-- Elena Flutterfly
+					["provider"] = { "n", 66412 },	-- Elena Flutterfly
 					["coord"] = { 46.0, 60.4, 80 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

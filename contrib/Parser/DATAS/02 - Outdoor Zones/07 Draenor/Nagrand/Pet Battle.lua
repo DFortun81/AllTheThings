@@ -34,7 +34,7 @@ _.Zones =
 					["crs"] = { 61081 },	-- Squirrel
 				}),
 				q(37206, {	-- Tarr the Terrible
-					["qg"] = 87110,	-- Tar the Terrible
+					["provider"] = { "n", 87110 },	-- Tar the Terrible
 					["coord"] = { 56.2, 9.8, 550 },
 					["isDaily"] = true,
 					["g"] = {

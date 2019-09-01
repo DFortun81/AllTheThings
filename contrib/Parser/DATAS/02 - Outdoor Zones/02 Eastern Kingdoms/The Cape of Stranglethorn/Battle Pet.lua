@@ -38,13 +38,13 @@ _.Zones =
 					["crs"] = { 61323 },
 				}),
 				q(31917, {	-- A Tamer's Homecoming
-					["qg"] = 65656,	-- Bill Buckler
+					["provider"] = { "n", 65656 },	-- Bill Buckler
 					["coord"] = { 51.4, 73.2, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31728,	-- Bill Buckler
 				}),
 				q(31851, {	-- Bill Buckler
-					["qg"] = 65656,	-- Bill Buckler
+					["provider"] = { "n", 65656 },	-- Bill Buckler
 					["coord"] = { 51.4, 73.2, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,

@@ -82,7 +82,7 @@ _.Zones =
 				q(37208, {	-- Taralune
 					["isDaily"] = true,
 					["coord"] = { 49.0, 80.3, 535 },
-					["qg"] = 87125,	-- Taralune
+					["provider"] = { "n", 87125 },	-- Taralune
 					["g"] = {
 						i(116415),	-- Shiny Pet Charm
 					},

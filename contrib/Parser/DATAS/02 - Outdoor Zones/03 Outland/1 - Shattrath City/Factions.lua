@@ -11,7 +11,7 @@ _.Zones =
 					["g"] = {
 						n(-17, {	-- Quests
 							q(10917,  {  -- The Outcast's Plight
-								["qg"] = 22429,	-- Vekax
+								["provider"] = { "n", 22429 },	-- Vekax
 								["g"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash
@@ -29,7 +29,7 @@ _.Zones =
 								["sourceQuests"] = { 10917 },	-- The Outcast's Plight
 								["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",
 								["repeatable"] = true,
-								["qg"] = 22429,	-- Vekax
+								["provider"] = { "n", 22429 },	-- Vekax
 								["g"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash
@@ -131,13 +131,13 @@ _.Zones =
 						q(10984, {	-- Speak with the Ogre
 							["isBreadcrumb"] = true,
 							["coord"] = { 56.4, 49.2, 111 },
-							["qg"] = 22497,	-- V'eru
+							["provider"] = { "n", 22497 },	-- V'eru
 						}),
 						q(10983, {	-- Mog'dorg the Wizened
 							["isBreadcrumb"] = true,
 							["sourceQuest"] = 10984,	-- Speak with the Ogre
 							["coord"] = { 65.0, 68.4, 111 },
-							["qg"] = 22940,	-- Grok
+							["provider"] = { "n", 22940 },	-- Grok
 						}),
 					},
 				}),
@@ -147,12 +147,12 @@ _.Zones =
 					["g"] = {
 						q(11096, {	-- Threat from Above
 							["coord"] = { 64.0, 42.0, 111 },
-							["qg"] = 23449,	-- Yuula
+							["provider"] = { "n", 23449 },	-- Yuula
 						}),
 						q(11098, {	-- To Skettis!
 							["sourceQuest"] = 11096,	-- Threat From Above
 							["coord"] = { 64.0, 42.0, 111 },
-							["qg"] = 23449,	-- Yuula
+							["provider"] = { "n", 23449 },	-- Yuula
 						}),
 					},
 				}),
@@ -161,26 +161,26 @@ _.Zones =
 					["creatureID"] = 25032,	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
 					["g"] = {
 						q(11877, {	-- Sunfury Attack Plans
-							["qg"] = 25140,	-- Lord Torvos
+							["provider"] = { "n", 25140 },	-- Lord Torvos
 							["repeatable"] = true,
 						}),
 						q(11880, {	-- The Multiphase Survey
-							["qg"] = 19475,	-- Harbinger Haronem
+							["provider"] = { "n", 19475 },	-- Harbinger Haronem
 							["repeatable"] = true,
 						}),
 						q(11875, {	-- Gaining the Advantage
-							["qg"] = 19202,	-- Emissary Mordin
+							["provider"] = { "n", 19202 },	-- Emissary Mordin
 							["repeatable"] = true,
 							["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
 						}),
 						q(11513, {	-- Intercepting the Mana Cells
 							["u"] = 40,	-- Legacy Quests
-							["qg"] = 24932,	-- Exarch Nasuun
+							["provider"] = { "n", 24932 },	-- Exarch Nasuun
 							["coord"] = { 49.8, 42.6, 111 },
 							["repeatable"] = true,
 						}),
 						q(11514, {	-- Maintaining the Sunwell Portal
-							["qg"] = 24932,	-- Exarch Nasuun
+							["provider"] = { "n", 24932 },	-- Exarch Nasuun
 							["coord"] = { 49.8, 42.6, 111 },
 							["repeatable"] = true,
 						}),
@@ -193,75 +193,75 @@ _.Zones =
 							q(10551, {	-- Allegiance to the Aldor
 								["sourceQuest"] = 10211,	-- City of Light
 								["coord"] = { 54.7, 44.3, 111 },
-								["qg"] = 18166,	-- Archmage Khadgar
+								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10554, {	-- Ishanah
 								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 								["coord"] = { 54.7, 44.3, 111 },
-								["qg"] = 18166,	-- Archmage Khadgar
+								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10021, {	-- Restoring the Light
 								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 								["coord"] = { 24.2, 29.8, 111 },
-								["qg"] = 18538,	-- Ishanah
+								["provider"] = { "n", 18538 },	-- Ishanah
 							}),
 							q(10325, {	-- Marks of Kil'jaeden
 								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 								["coord"] = { 30.7, 34.6, 111 },
-								["qg"] = 18537,	-- Adyen the Lightwarden
+								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10327, {	-- Single Mark of Kil'jaeden
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
 								["repeatable"] = true,
 								["coord"] = { 30.7, 34.6, 111 },
-								["qg"] = 18537,	-- Adyen the Lightwarden
+								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10326, {	-- More Marks of Kil'jaeden
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
 								["repeatable"] = true,
 								["coord"] = { 30.7, 34.6, 111 },
-								["qg"] = 18537,	-- Adyen the Lightwarden
+								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10653, {	-- Marks of Sargeras
 								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 								["coord"] = { 30.7, 34.6, 111 },
-								["qg"] = 18537,	-- Adyen the Lightwarden
+								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10655, {	-- Single Mark of Sargeras
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuest"] = 10653,	-- Marks of Sargeras
 								["repeatable"] = true,
 								["coord"] = { 30.7, 34.6, 111 },
-								["qg"] = 18537,	-- Adyen the Lightwarden
+								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10654, {	-- More Marks of Sargeras
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = 10653,	-- Marks of Sargeras
 								["repeatable"] = true,
 								["coord"] = { 30.7, 34.6, 111 },
-								["qg"] = 18537,	-- Adyen the Lightwarden
+								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10420, {	-- A Cleansing Light
 								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 								["coord"] = { 24.2, 29.8, 111 },
-								["qg"] = 18538,	-- Ishanah
+								["provider"] = { "n", 18538 },	-- Ishanah
 							}),
 							q(10421, {	-- Fel Armaments
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuest"] = 10420,	-- A Cleansing Light
 								["repeatable"] = true,
 								["coord"] = { 24.2, 29.8, 111 },
-								["qg"] = 18538,	-- Ishanah
+								["provider"] = { "n", 18538 },	-- Ishanah
 							}),
 							q(10020, {	-- A Cure for Zahlia
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["qg"] = 18597,	-- Sha'nir
+								["provider"] = { "n", 18597 },	-- Sha'nir
 							}),
 							q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["qg"] = 18537,	-- Adyen the Lightwarden
+								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(11038, {	-- Assist Exarch Orelis
 								["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
@@ -270,20 +270,20 @@ _.Zones =
 									{ 35.0, 32.6, 111 },
 									{ 47.4, 26.4, 111 },
 								},
-								["qgs"] = {
-									23271,	-- Vindicator Kaan
-									23270,	-- Vindicator Aeus
+								["providers"] = {
+									{ "n", 23271 },	-- Vindicator Kaan
+									{ "n", 23270 },	-- Vindicator Aeus
 								},
 							}),
 							q(10017, {	-- Strained Supplies
 								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
-								["qg"] = 18597,	-- Sha'nir
+								["provider"] = { "n", 18597 },	-- Sha'nir
 							}),
 							q(10019, {	-- More Venom Sacs
 								["sourceQuests"] = { 10017 },	-- Strained Supplies
 								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
 								["repeatable"] = true,
-								["qg"] = 18597,	-- Sha'nir
+								["provider"] = { "n", 18597 },	-- Sha'nir
 							}),
 						}),
 						n(-2,  {	-- Vendors
@@ -908,62 +908,62 @@ _.Zones =
 							q(10552, {	-- Allegiance to the Scryers
 								["sourceQuest"] = 10211,	-- City of Light
 								["coord"] = { 54.7, 44.3, 111 },
-								["qg"] = 18166,	-- Archmage Khadgar
+								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10553, {	-- Voren'thal the Seer
 								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 								["coord"] = { 54.7, 44.3, 111 },
-								["qg"] = 18166,	-- Archmage Khadgar
+								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10412, {	-- Firewing Signets
 								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 								["coord"] = { 45.1, 81.4, 111 },
-								["qg"] = 18531,	-- Magistrix Fyalenn
+								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10414, {	-- Single Firewing Signet
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuest"] = 10412,	-- Firewing Signets
 								["repeatable"] = true,
 								["coord"] = { 45.1, 81.4, 111 },
-								["qg"] = 18531,	-- Magistrix Fyalenn
+								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10415, {	-- More Firewing Signets
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuest"] = 10412,	-- Firewing Signets
 								["repeatable"] = true,
 								["coord"] = { 45.1, 81.4, 111 },
-								["qg"] = 18531,	-- Magistrix Fyalenn
+								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10656, {	-- Sunfury Signets
 								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 								["coord"] = { 45.1, 81.4, 111 },
-								["qg"] = 18531,	-- Magistrix Fyalenn
+								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10659, {	-- Single Sunfury Signet
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuest"] = 10656,	-- Sunfury Signets
 								["repeatable"] = true,
 								["coord"] = { 45.1, 81.4, 111 },
-								["qg"] = 18531,	-- Magistrix Fyalenn
+								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10658, {	-- More Sunfury Signets
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuest"] = 10656,	-- Sunfury Signets
 								["repeatable"] = true,
 								["coord"] = { 45.1, 81.4, 111 },
-								["qg"] = 18531,	-- Magistrix Fyalenn
+								["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
 							}),
 							q(10416, {	-- Synthesis of Power
 								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 								["coord"] = { 42.6, 91.4, 111 },
-								["qg"] = 18530,	-- Voren'thal the Seer
+								["provider"] = { "n", 18530 },	-- Voren'thal the Seer
 							}),
 							q(10419, {	-- Arcane Tomes
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuest"] = 10416,	-- Synthesis of Power
 								["repeatable"] = true,
 								["coord"] = { 42.6, 91.4, 111 },
-								["qg"] = 18530,	-- Voren'thal the Seer
+								["provider"] = { "n", 18530 },	-- Voren'thal the Seer
 							}),
 							q(11039, {	-- Report to Spymaster Thalodien
 								["isBreadcrumb"] = true,	-- for Manaforge B'naar
@@ -972,20 +972,20 @@ _.Zones =
 									{ 44.6, 76.2, 111 },
 									{ 60.6, 63.2, 111 },
 								},
-								["qgs"] = {
-									23273, 	-- Arcanist Raestan
-									23272,	-- Arcanist Savan
+								["providers"] = {
+									{ "n", 23273 }, 	-- Arcanist Raestan
+									{ "n", 23272 },	-- Arcanist Savan
 								},
 							}),
 							q(10024, {	-- Voren'thal's Visions
 								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
-								["qg"] = 18596,	-- Arcanist Adyria
+								["provider"] = { "n", 18596 },	-- Arcanist Adyria
 							}),
 							q(10025, {	-- More Basilisk Eyes
 								["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
 								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
 								["repeatable"] = true,
-								["qg"] = 18596,	-- Arcanist Adyria
+								["provider"] = { "n", 18596 },	-- Arcanist Adyria
 							}),
 							q(11482),	-- Duty Calls
 						}),
@@ -1611,7 +1611,7 @@ _.Zones =
 								10885, 	-- Trial of the Naaru: Strength
 								10886,	-- Trial of the Naaru: Tenacity
 							},
-							["qg"] = 18481,	-- A'dal
+							["provider"] = { "n", 18481 },	-- A'dal
 							["g"] = {
 								i(31746) -- Phoenix-Fire Band
 							},

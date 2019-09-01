@@ -39,7 +39,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 --]]					["groups"] = {
 					q(30118, {	-- Patricide
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
+						["provider"] = { "n", 57777 },	-- Wrathion <The Black Prince>
 						["description"] = "This quest only requires looting the final boss, so make sure to pick it up before finishing the raid for the week.",
 						["sourceQuests"] = { 30116 },	-- Sharpening Your Fangs
 						["groups"] = {
@@ -58,7 +58,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					q(30116, {	-- Sharpening Your Fangs
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
+						["provider"] = { "n", 57777 },	-- Wrathion <The Black Prince>
 						["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
 						["sourceQuests"] = { 30113 },	-- Victory in the Depths
 						["groups"] = {
@@ -349,12 +349,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["groups"] = {
 					n(-17, {	-- Quests
 						ql(q(29802, {	-- A Hidden Message
-							["qg"] = 55476,	-- Lord Afrasastrasz
+							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
 							["classes"] = { 4 },	-- Rogue
 							["sourceQuests"] = { 29801 },	-- Proving Your Worth
 						})),
 						ql(q(29801, {	-- Proving Your Worth
-							["qg"] = 55476,	-- Lord Afrasastrasz
+							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
 							["classes"] = { 4 },	-- Rogue									
 						})),
 					}),
@@ -868,12 +868,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["groups"] = {
 					n(-17, {	-- Quests
 						ql(q(29802, {	-- A Hidden Message
-							["qg"] = 55476,	-- Lord Afrasastrasz
+							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
 							["classes"] = { 4 },	-- Rogue
 							["sourceQuests"] = { 29801 },	-- Proving Your Worth
 						})),
 						ql(q(29801, {	-- Proving Your Worth
-							["qg"] = 55476,	-- Lord Afrasastrasz
+							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
 							["classes"] = { 4 },	-- Rogue									
 						})),
 					}),

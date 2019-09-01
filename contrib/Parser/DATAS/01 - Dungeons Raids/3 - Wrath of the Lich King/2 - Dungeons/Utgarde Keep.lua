@@ -10,7 +10,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["groups"] = {
 			n(-17, {	-- Quests
 				h(q(30112,{ 	-- A Score to Settle
-					["qg"] = 24137,	-- Dark Ranger Marrah
+					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
 					["groups"] = {
 						i(39679), 	-- Runecaster's Bracers
 						i(39680),	-- Vambraces of the Vengeance Bringer
@@ -19,7 +19,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				})),
 				h(q(11272,{ 	-- A Score to Settle
-					["qg"] = 23780,	-- High Executor Anselm
+					["provider"] = { "n", 23780 },	-- High Executor Anselm
 					["sourceQuests"] = {11234},
 					["groups"] = {
 						i(39679), 	-- Runecaster's Bracers
@@ -29,7 +29,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				})),
 				a(q(29764, {	-- Disarmament
-					["qg"] = 24111,	-- Defender Mordun
+					["provider"] = { "n", 24111 },	-- Defender Mordun
 					["groups"] = {
 						i(44374),	-- Amulet of the Tranquil Mind
 						i(44375),	-- Razor-Blade Pendant
@@ -38,7 +38,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				})),
 				h(q(13206, {	-- Disarmament
-					["qg"] = 24137,	-- Dark Ranger Marrah
+					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
 					["groups"] = {
 						i(44400),	-- Necklace of Calm Skies
 						i(44401),	-- Hundred Tooth Necklace
@@ -47,7 +47,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				})),
 				a(q(29803,{ 	-- Ears of the Lich King
-					["qg"] = 24111,	-- Defender Mordun
+					["provider"] = { "n", 24111 },	-- Defender Mordun
 					["groups"] = {
 						i(39679), 	-- Runecaster's Bracers
 						i(39680),	-- Vambraces of the Vengeance Bringer
@@ -56,7 +56,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				})),
 				h(q(11262, {	-- Ingvar Must Die!
-					["qg"] = 24137,	-- Dark Ranger Marrah
+					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
 					["groups"] = {
 						i(38218),	-- Executioner's Band
 						i(38219),	-- Ring of Decimation
@@ -64,7 +64,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				})),
 				a(q(29763, {	-- Stealing Their Thunder
-					["qg"] = 24111,	-- Defender Mordun
+					["provider"] = { "n", 24111 },	-- Defender Mordun
 					["groups"] = {
 						i(38218),	-- Executioner's Band
 						i(38219),	-- Ring of Decimation

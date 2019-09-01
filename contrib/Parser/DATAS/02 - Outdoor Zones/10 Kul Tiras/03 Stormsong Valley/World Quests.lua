@@ -1356,7 +1356,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52165, {	-- Automated Chaos
-						["qg"] = 140315,	-- Eddie Fixit
+						["provider"] = { "n", 140315 },	-- Eddie Fixit
 						["lvl"] = 120,
 						["coord"] = { 36.61, 33.61, 942 },
 						["collectible"] = false,
@@ -1454,7 +1454,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52325, {	-- Captured Evil
-						["qg"] = 141046,	-- Leana Darkwind
+						["provider"] = { "n", 141046 },	-- Leana Darkwind
 						["lvl"] = 120,
 						["collectible"] = false,
 						["g"] = {
@@ -1487,7 +1487,7 @@ _.Zones =
 					}),
 					q(51778, {	-- Deepfang
 						["lvl"] = 120,
-						["qg"] = 139385,	-- Deepfang
+						["provider"] = { "n", 139385 },	-- Deepfang
 						["collectible"] = false,
 					}),
 					q(53804, {	-- Dinomancer Zakuru (Faction Assault WQ)
@@ -1558,7 +1558,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54132, {	-- Horde of Heroes (Faction Assault WQ)
-						["qg"] = 135447,	-- Ransa Greyfeather <The Honorbound Emissary>
+						["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
@@ -1787,7 +1787,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52316, {	-- Sea Creatures Are Weird
-						["qg"] = 141002,	-- Ellie Vern
+						["provider"] = { "n", 141002 },	-- Ellie Vern
 						["lvl"] = 120,
 						["collectible"] = false,
 						["g"] = {
@@ -1875,7 +1875,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51982, {	-- Storm's Rage (Faction Assault WQ)
-						["qg"] = 135800,	-- Sister Lilyana <Storm's Wake Emissary>
+						["provider"] = { "n", 135800 },	-- Sister Lilyana <Storm's Wake Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -1920,7 +1920,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52126, {	-- This Little Piggy Has Sharp Tusks
-						["qg"] = 139987,	-- Bristlespine
+						["provider"] = { "n", 139987 },	-- Bristlespine
 						["lvl"] = 120,
 						["coord"] = { 42.41, 76.61, 942 },
 						["collectible"] = false,
@@ -2004,7 +2004,7 @@ _.Zones =
 						},
 					}),
 					q(52347, {	-- Work Order: Honey-Glazed Haunchs [Rank 3]
-						["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
+						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
 						["collectible"] = false,
 						["requireSkill"] = 185,	-- Cooking
@@ -2040,7 +2040,7 @@ _.Zones =
 						},
 					}),
 					q(52344, {	-- Work Order: Kul Tiramisu [Rank 3]
-						["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
+						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
 						["collectible"] = false,
 						["requireSkill"] = 185,	-- Cooking
@@ -2064,7 +2064,7 @@ _.Zones =
 						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(52346, {	-- Work Order: Sailor's Pie [Rank 3]
-						["qg"] = 135793,	-- Collector Kojo <Tortollan Seekers Emissary>
+						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
 						["collectible"] = false,
 						["requireSkill"] = 185,	-- Cooking

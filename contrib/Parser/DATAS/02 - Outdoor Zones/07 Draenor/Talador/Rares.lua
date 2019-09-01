@@ -297,7 +297,7 @@ _.Zones =
 					["description"] = "Patrols the area in roughly a circle.",	
 					["questID"] = 37337,
 					["isDaily"] = true,
-					["qgs"] = {
+					["crs"] = {
 						88071,	-- Strategist Ankor
 						88072,	-- Archmagus Tekar
 						88073,	-- Soulbinder Naylana

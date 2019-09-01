@@ -11,7 +11,7 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(-17, {	-- Quests
 				q(44930,{ -- Deadmines: Sea'in Red
-					["qg"] = 115818,	-- Captain Bramblebeard
+					["provider"] = { "n", 115818 },	-- Captain Bramblebeard
 					["classes"] = { 4 },
 					["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Rogue in Outlaw Specialization.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove (Wooden Catwalk & Boat)|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5,17).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon Green Wing Macaw (Extra Action Button will appear, grapple up the wall).|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept quest and kill pirates for the 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat process to get back to questgiver to turn in.|r",
 					["g"] = {
@@ -36,7 +36,7 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuests"] = { 27844 },	-- Traitors!!!
 				}),
 				q(27842, {	-- Only the Beginning
-					["qg"] = 46889,	-- Kagtha
+					["provider"] = { "n", 46889 },	-- Kagtha
 					["races"] = HORDE_ONLY,
 				}),
 				q(214, { 	-- Red Silk Bandanas
@@ -84,7 +84,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(27756, {	-- The Foreman
-					["qg"] = 46612,	-- Lieutenant Horatio Laine
+					["provider"] = { "n", 46612 },	-- Lieutenant Horatio Laine
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27781, {	-- The Machination

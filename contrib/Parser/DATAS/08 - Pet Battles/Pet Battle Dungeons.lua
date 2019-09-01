@@ -5,7 +5,7 @@
 _.PetBattles = 
 {
 	q(46292, {	-- Pet Battle Challenge: Deadmines
-		["qg"] = 119390,	-- Marcus "Bagman" Brown
+		["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 		["coord"] = { 41.6, 71.2, 52 },
 		["isWeekly"] = true,
 		["lvl"] = 110,
@@ -27,7 +27,7 @@ _.PetBattles =
 		},
 	}),
 	q(54186, {	-- Pet Battle Challenge: Gnomeregan
-		["qg"] = 147070,	-- Micro Zoox
+		["provider"] = { "n", 147070 },	-- Micro Zoox
 		["isWeekly"] = true,
 		["maps"] = {
 			30,		-- New Tinkertown [Below]
@@ -49,7 +49,7 @@ _.PetBattles =
 		},
 	}),
 	q(56492, {	-- Pet Battle Challenge: Stratholme
-		["qg"] = 150987,	-- Sean Wilkers
+		["provider"] = { "n", 150987 },	-- Sean Wilkers
 		["coord"] = { 43.1, 19.9, 23 },
 		["maps"] = {
 			23,	-- Eastern Plaguelands
@@ -79,7 +79,7 @@ _.PetBattles =
 		},
 	}),
 	q(56491, {	-- Tiny Terrors of Stratholme
-		["qg"] = 150987,	-- Sean Wilkers
+		["provider"] = { "n", 150987 },	-- Sean Wilkers
 		["coord"] = { 43.1, 19.9, 23 },
 		["maps"] = {
 			23,	-- Eastern Plaguelands
@@ -90,7 +90,7 @@ _.PetBattles =
 		},
 	}),
 	q(45539, {	-- Pet Battle Challenge: Wailing Caverns
-		["qg"] = 116781,	-- Muyani
+		["provider"] = { "n", 116781 },	-- Muyani
 		["coord"] = { 38.8, 68.2, 10 },
 		["sourceQuest"] = 45423,	-- Wailing Critters
 		["isWeekly"] = true,
@@ -111,7 +111,7 @@ _.PetBattles =
 		},
 	}),
 	q(45423, {	-- Wailing Critters
-		["qg"] = 116781,	-- Muyani
+		["provider"] = { "n", 116781 },	-- Muyani
 		["coord"] = { 38.8, 68.2, 10 },
 		["maps"] = {
 			10,	-- Northern Barrens
@@ -122,7 +122,7 @@ _.PetBattles =
 		},
 	}),
 	q(33137, {	-- The Celestial Tournament
-		["qg"] = 73082,	-- Master Li
+		["provider"] = { "n", 73082 },	-- Master Li
 		["coord"] = { 34.8, 59.6, 554 },
 		["isWeekly"] = true,
 		["maps"] = {
@@ -149,7 +149,7 @@ _.PetBattles =
 		},
 	}),
 	q(33136, {	-- The Rainy Day is Here
-		["qg"] = 73082,	-- Master Li
+		["provider"] = { "n", 73082 },	-- Master Li
 		["coord"] = { 34.8, 59.6, 554 },
 		["sourceQuest"] = 33137,	-- The Celestial Tournament
 		["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",

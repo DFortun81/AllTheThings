@@ -85,7 +85,7 @@ profession(186, {	-- Mining
 					{
 						["questID"] = 38803,	-- Rin'thissa (Quest)
 						["sourceQuest"] = 38800,-- Source Quest: Rin'thissa's Eye
-						["qg"] = 93893, 		-- Quest Giver: Rin'thissa
+						["provider"] = { "n", 93893 }, 		-- Quest Giver: Rin'thissa
 						["groups"] = {
 							recipe(184494),	-- Felslate Deposit [Rank 3]
 						},
@@ -113,7 +113,7 @@ profession(186, {	-- Mining
 					{
 						["questID"] = 38804,	-- Lyrelle (Quest)
 						["sourceQuest"] = 38801,-- Source Quest: Lyrelle's Right Arm
-						["qg"] = 93776, 		-- Quest Giver: Lyrelle
+						["provider"] = { "n", 93776 }, 		-- Quest Giver: Lyrelle
 						["groups"] = {
 							recipe(184498),	-- Felslate Seam [Rank 3]
 						},
@@ -141,7 +141,7 @@ profession(186, {	-- Mining
 					{
 						["questID"] = 38805,	-- Ondri (Quest)
 						["sourceQuest"] = 38802,-- Source Quest: Ondri's Still-Beating Heart
-						["qg"] = 93777, 		-- Quest Giver: Ondri
+						["provider"] = { "n", 93777 }, 		-- Quest Giver: Ondri
 						["groups"] = {
 							recipe(184502),	-- Living Felslate [Rank 3]
 						},
@@ -152,17 +152,17 @@ profession(186, {	-- Mining
 				["questID"] = 38901,	-- The Felsmiths
 				["sourceQuests"] = {38795, 38796, 38797},	-- Source Quests: Felslate Deposit Sample, Felslate Seam Sample, and Living Felslate Sample.
 				["description"] = "You must complete all of the Rank 1 Felslate mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
-				["qg"] = 93189, 		-- Quest Giver: Mama Diggs <Mining Trainer>
+				["provider"] = { "n", 93189 }, 		-- Quest Giver: Mama Diggs <Mining Trainer>
 			},
 			{
 				["questID"] = 38798,	-- A Shred of Your Humanity
 				["sourceQuest"] = 38901,-- Source Quest: The Felsmiths
-				["qg"] = 92264, 		-- Quest Giver: Felsmith Nal'ryssa <Blacksmithing Trainer>
+				["provider"] = { "n", 92264 }, 		-- Quest Giver: Felsmith Nal'ryssa <Blacksmithing Trainer>
 			},
 			{
 				["questID"] = 38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 				["sourceQuest"] = 38798,-- Source Quest: A Shred of Your Humanity
-				["qg"] = 92264, 		-- Quest Giver: Felsmith Nal'ryssa <Blacksmithing Trainer>
+				["provider"] = { "n", 92264 }, 		-- Quest Giver: Felsmith Nal'ryssa <Blacksmithing Trainer>
 				["groups"] = {
 					i(126947),	-- Nal'ryssa's Spare Mining Supplies
 				},
@@ -190,7 +190,7 @@ profession(186, {	-- Mining
 					{
 						["questID"] = 38792,	-- Rethu's Lesson (Quest)
 						["sourceQuest"] = 38789,-- Source Quest: Rethu's Journal
-						["qg"] = 93735,			-- Quest Giver: Rethu Ironhorn
+						["provider"] = { "n", 93735 },			-- Quest Giver: Rethu Ironhorn
 						["groups"] = {
 							recipe(184457),	-- Leystone Deposit [Rank 3]
 						},
@@ -218,7 +218,7 @@ profession(186, {	-- Mining
 					{
 						["questID"] = 38793,	-- Rethu's Experience (Quest)
 						["sourceQuest"] = 38790,-- Source Quest: Rethu's Pick
-						["qg"] = 93735,			-- Quest Giver: Rethu Ironhorn
+						["provider"] = { "n", 93735 },			-- Quest Giver: Rethu Ironhorn
 						["groups"] = {
 							recipe(184486),	-- Leystone Seam [Rank 3]
 						},
@@ -246,7 +246,7 @@ profession(186, {	-- Mining
 					{
 						["questID"] = 38794,	-- Rethu's Sacrifice (Quest)
 						["sourceQuest"] = 38791,-- Source Quest: Rethu's Horn
-						["qg"] = 93735,			-- Quest Giver: Rethu Ironhorn
+						["provider"] = { "n", 93735 },			-- Quest Giver: Rethu Ironhorn
 						["groups"] = {
 							recipe(184490),	-- Living Leystone [Rank 3]
 						},
@@ -257,17 +257,17 @@ profession(186, {	-- Mining
 				["questID"] = 38888,	-- The Highmountain Tauren
 				["sourceQuests"] = {38777, 38784, 38785},	-- Source Quests: Leystone Deposit Sample, Leystone Seam Sample, and Living Leystone Sample.
 				["description"] = "You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
-				["qg"] = 93189, 		-- Quest Giver: Mama Diggs <Mining Trainer>
+				["provider"] = { "n", 93189 }, 		-- Quest Giver: Mama Diggs <Mining Trainer>
 			},
 			{
 				["questID"] = 38786,	-- Where Respect is Due
 				["sourceQuest"] = 38888,-- Source Quest: The Highmountain Tauren
-				["qg"] = 93691, 		-- Quest Giver: Ronos Ironhorn <Mining Trainer>
+				["provider"] = { "n", 93691 }, 		-- Quest Giver: Ronos Ironhorn <Mining Trainer>
 			},
 			{
 				["questID"] = 38787,	-- The Legend of Rethu Ironhorn
 				["sourceQuest"] = 38786,-- Source Quest: Where Respect is Due
-				["qg"] = 93691, 		-- Quest Giver: Ronos Ironhorn <Mining Trainer>
+				["provider"] = { "n", 93691 }, 		-- Quest Giver: Ronos Ironhorn <Mining Trainer>
 			},
 		}),
 	}),
@@ -279,7 +279,7 @@ profession(186, {	-- Mining
 		{
 			["questID"] = 38807,	-- Infernal Brimstone Analysis
 			["sourceQuest"] = 38806,	-- Source Quest: Infernal Brimstone Sample (Quest)
-			["qg"] = 93189,			-- Quest Giver: Mama Diggs <Mining Trainer>
+			["provider"] = { "n", 93189 },			-- Quest Giver: Mama Diggs <Mining Trainer>
 			["lvl"] = 110,
 			["groups"] = {
 				{
@@ -291,25 +291,25 @@ profession(186, {	-- Mining
 		{
 			["questID"] = 39790,	-- Infernal Brimstone Theory
 			["sourceQuest"] = 38807,	-- Source Quest: Infernal Brimstone Analysis (Quest)
-			["qg"] = 93189,			-- Quest Giver: Mama Diggs <Mining Trainer>
+			["provider"] = { "n", 93189 },			-- Quest Giver: Mama Diggs <Mining Trainer>
 			["lvl"] = 110,
 		},
 		{
 			["questID"] = 39763,	-- For Whom the Fel Tolls
 			["sourceQuest"] = 39790,	-- Source Quest: Infernal Brimstone Theory (Quest)
-			["qg"] = 97360,			-- Quest Giver: Matthew Rabis <Feral Warlock>
+			["provider"] = { "n", 97360 },			-- Quest Giver: Matthew Rabis <Feral Warlock>
 			["lvl"] = 110,
 		},
 		{
 			["questID"] = 39817,	-- The Brimstone's Secret
 			["sourceQuest"] = 39763,	-- Source Quest: For Whom the Fel Tolls (Quest)
-			["qg"] = 97360,			-- Quest Giver: Matthew Rabis <Feral Warlock>
+			["provider"] = { "n", 97360 },			-- Quest Giver: Matthew Rabis <Feral Warlock>
 			["lvl"] = 110,
 		},
 		{
 			["questID"] = 39830,	-- Hellfire Citadel: Hellfire and Brimstone
 			["sourceQuest"] = 39817,	-- Source Quest: The Brimstone's Secret
-			["qg"] = 93189,			-- Quest Giver: Mama Diggs <Mining Trainer>
+			["provider"] = { "n", 93189 },			-- Quest Giver: Mama Diggs <Mining Trainer>
 			["lvl"] = 110,
 			["groups"] = {
 				recipe(191970),	-- Infernal Brimstone [Rank 3]

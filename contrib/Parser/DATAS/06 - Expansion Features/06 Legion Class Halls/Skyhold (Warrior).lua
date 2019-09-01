@@ -79,7 +79,7 @@ _.ExpansionFeatures =
 					}),
 					q(43643, {	-- Secrets of the Axes
 						["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
-						["qg"] = 96586,	-- Master Smith Helgar
+						["provider"] = { "n", 96586 },	-- Master Smith Helgar
 						["groups"] = {
 							i(139578, {	-- The Arcanite Bladebreaker
 								artifact(908),	-- Arms Warrior Hidden Artifact Skin
@@ -199,63 +199,63 @@ _.ExpansionFeatures =
 					}),
 					--Followers Sort later
 					q(42616, {	-- Champion: Dvalen Ironrune
-						["qg"] = 112766,	-- Dvalen Ironrune
+						["provider"] = { "n", 112766 },	-- Dvalen Ironrune
 						["groups"] = {
 							follower(714),	-- Dvalen Ironrune
 						},
 					}),
 					q(42606, {	-- Champion: Finna Bjornsdottir
-						["qg"] = 107985,	-- Finna Bjornsdottir
+						["provider"] = { "n", 107985 },	-- Finna Bjornsdottir
 						["groups"] = {
 							follower(709),	-- Finna Bjornsdottir
 						},
 					}),
 					q(42619, {	-- Champion: Hodir
-						["qg"] = 113583,	-- Hodir
+						["provider"] = { "n", 113583 },	-- Hodir
 						["groups"] = {
 							follower(715),	-- Hodir
 						},
 					}),
 					q(42204, {	-- Jorhuttam
-						["qg"] = 106271,	-- Jarum Skymane
+						["provider"] = { "n", 106271 },	-- Jarum Skymane
 						["groups"] = {
 							follower(711),	-- Hymdall
 						},
 					}),
 					q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
-						--["qg"] = ,	-- Autoaccept while on the chain
+						--["provider"] = { "n",  },	-- Autoaccept while on the chain
 						["groups"] = {
 							follower(712),	-- King Ymiron
 						},
 					}),
 					q(45876, {	-- Champion: Lord Darius Crowley
-						["qg"] = 117480,	-- Lord Darius Crowley
+						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
 					}),
 					q(45873, {	-- Champion: Eitrigg
-						["qg"] = 117479,	-- Eitrigg
+						["provider"] = { "n", 117479 },	-- Eitrigg
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
 					}),
 					q(42605, {	-- Champion: Ragnvald Drakeborn
-						["qg"] = 107984,	-- Ragnvald Drakeborn
+						["provider"] = { "n", 107984 },	-- Ragnvald Drakeborn
 						["groups"] = {
 							follower(708),	-- Ragnvald Drakeborn
 						},
 					}),
 					q(42614, {	-- Champion: Svergan Stormcloak
-						["qg"] = 107986,	-- Svergan Stormcloak
+						["provider"] = { "n", 107986 },	-- Svergan Stormcloak
 						["groups"] = {
 							follower(710),	-- Svergan Stormcloak
 						},
 					}),
 					q(42618, {	-- Champion: Thorim
-						["qg"] = 112765,	-- Thorim
+						["provider"] = { "n", 112765 },	-- Thorim
 						["groups"] = {
 							follower(713),	-- Thorim
 						},

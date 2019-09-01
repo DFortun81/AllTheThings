@@ -12,67 +12,67 @@ _.Instances = { tier(1, {	-- Classic
 			n(-17, {	-- Quests
 				n(-75, {	-- Detention Block
 					q(27569, {	-- Dark Iron Tacticians
-						["qg"] = 45894,	-- Prospector Seymour
+						["provider"] = { "n", 45894 },	-- Prospector Seymour
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27568 },	-- Infilitrating Shadowforge City [Alliance]
 					}),
 					q(27568, {	-- Infiltrating Shadowforge City [Alliance]
-						["qg"] = 45891,	-- Oralius
+						["provider"] = { "n", 45891 },	-- Oralius
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(27582, {	-- Infiltrating Shadowforge City [Horde]
-						["qg"] = 45839,	-- Galamav the Marksman
+						["provider"] = { "n", 45839 },	-- Galamav the Marksman
 						["races"] = HORDE_ONLY,
 					}),
 					q(27565, {	-- Into the Prison [Alliance]
-						["qg"] = 45892,	-- Jalinda Sprig
+						["provider"] = { "n", 45892 },	-- Jalinda Sprig
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(27579, {	-- Into the Prison [Horde]
-						["qg"] = 45821,	-- Tha'trak Proudtusk
+						["provider"] = { "n", 45821 },	-- Tha'trak Proudtusk
 						["races"] = HORDE_ONLY,
 					}),
 					q(27585, {	-- The 109th Division
-						["qg"] = 45820,	-- Razal'blade
+						["provider"] = { "n", 45820 },	-- Razal'blade
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27582 },	-- Infiltrating Shadowforge City [Horde]
 					}),
 					q(27596, {	-- The Heart of the Mountain
-						["qg"] = 45850,	-- Maxwort Uberglint
+						["provider"] = { "n", 45850 },	-- Maxwort Uberglint
 					}),
 					q(27603, {	-- The Sealed Gate
-						["qg"] = 45849,	-- Tinkee Steamboil
+						["provider"] = { "n", 45849 },	-- Tinkee Steamboil
 					}),
 					q(27567, {	-- Twilight?! No! [Alliance]
-						["qg"] = 45898,	-- Kevin Dawson
+						["provider"] = { "n", 45898 },	-- Kevin Dawson
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27565 },	-- Into the Prison [Alliance]
 					}),
 					q(27581, {	-- Twilight?! No! [Horde]
-						["qg"] = 45818,	-- Lexlort
+						["provider"] = { "n", 45818 },	-- Lexlort
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27579 },	-- Into the Prison [Horde]
 					}),
 				}),
 				n(-76, {	-- Shadowforge City
 					q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
-						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
 						["repeatable"] = true,
 					}),
 					q(6645, {	-- Favor Amongst the Brotherhood, Core Leather
-						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
 						["repeatable"] = true,
 					}),
 					q(6642, {	-- Favor Amongst the Brotherhood, Dark Iron Ore
-						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
 						["repeatable"] = true,
 					}),
 					q(6643, {	-- Favor Amongst the Brotherhood, Fiery Core
-						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
 						["repeatable"] = true,
 					}),
 					q(6644, {	-- Favor Amongst the Brotherhood, Lava Core
-						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
 						["repeatable"] = true,
 					}),
 					q(27578, {	-- Morgan's Fruition
@@ -81,7 +81,7 @@ _.Instances = { tier(1, {	-- Classic
 							i(65932),	-- Thaurissan's Breastplatee
 							i(65980),	-- Dark Iron Band
 						},
-						["qg"] = 45890,   -- Marshal Maxwell
+						["provider"] = { "n", 45890 },   -- Marshal Maxwell
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27573 },	-- The Dark Iron Pact [Alliance]
 					}),
@@ -91,31 +91,31 @@ _.Instances = { tier(1, {	-- Classic
 							i(68052),	-- Kargath Cloak
 							i(68053),	-- Thaurissan's Breastplatee
 						},
-						["qg"] = 45840,	-- Warlord Goretooth
+						["provider"] = { "n", 45840 },	-- Warlord Goretooth
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27591 },  -- The Dark Iron Pact [Horde]
 					}),
 					q(4295, {	-- Rocknot's Ale
-						["qg"] = 9503,	-- Private Rocknot
+						["provider"] = { "n", 9503 },	-- Private Rocknot
 						["repeatable"] = true,
 					}),
 					q(27573, {	-- The Dark Iron Pact [Alliance]
-						["qg"] = 45899,	-- Mountaineer Orfus
+						["provider"] = { "n", 45899 },	-- Mountaineer Orfus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27571 },	-- The Grim Guzzler [Alliance]
 					}),
 					q(27591, {	-- The Dark Iron Pact [Horde]
-						["qg"] = 45824,	--  Thunderheart
+						["provider"] = { "n", 45824 },	--  Thunderheart
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27589 },	-- The Grim Guzzler [Horde]
 					}),
 					q(27571, {	-- The Grim Guzzler [Alliance]
-						["qg"] = 45888,	-- Mayara Brightwing
+						["provider"] = { "n", 45888 },	-- Mayara Brightwing
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27569 },	-- Dark Iron Tacticians
 					}),
 					q(27589, {	-- The Grim Guzzler [Horde]
-						["qg"] = 45817,	-- Hierophant Theodora Mulvadania
+						["provider"] = { "n", 45817 },	-- Hierophant Theodora Mulvadania
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27585 },	-- The 109th Division
 					}),

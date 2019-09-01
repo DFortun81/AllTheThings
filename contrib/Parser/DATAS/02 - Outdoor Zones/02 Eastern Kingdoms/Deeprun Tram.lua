@@ -11,11 +11,11 @@ _.Zones =
 			["g"] = {
 				n(-17, {	-- Quests
 					q(6661, {	-- Deeprun Rat Roundup
-						["qg"] = 12997,	-- Monty
+						["provider"] = { "n", 12997 },	-- Monty
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(6662, {	-- Me Brother, Nipsy
-						["qg"] = 12997,	-- Monty
+						["provider"] = { "n", 12997 },	-- Monty
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 6661 } -- Deeprun Rat Roundup
 					}),

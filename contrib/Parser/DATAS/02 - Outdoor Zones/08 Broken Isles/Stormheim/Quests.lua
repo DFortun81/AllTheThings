@@ -10,10 +10,10 @@ _.Zones =
 					["sourceQuests"] = { 38342 },	-- Another Way
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 45.7, 72.9, 634 },
-					["qg"] = 91558,	-- Commander Lorna Crowley <Gilneas Brigade>
+					["provider"] = { "n", 91558 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38618, {	-- Above the Winter Moonlight (Horde)
-					["qg"] = 92569,	-- Dread-Rider Cullen
+					["provider"] = { "n", 92569 },	-- Dread-Rider Cullen
 					["races"] = HORDE_ONLY,
 					["coord"] = { 45.7, 72.9, 634 },
 					["sourceQuests"] = { 38617 },	-- Another Way
@@ -21,7 +21,7 @@ _.Zones =
 				q(40002,  {	-- A Familiar Fate
 					["sourceQuests"] = { 40001 },	-- Knocking on Valor's Door
 					["coord"] = { 65.8, 59.4, 634 },
-					["qg"] = 91743,	-- Circle of Binding
+					["provider"] = { "n", 91743 },	-- Circle of Binding
 				}),
 				q(39385, {	-- A Gift for Greymane
 					["sourceQuests"] = { 38872 },	-- The Dark Lady's Bidding
@@ -42,13 +42,13 @@ _.Zones =
 					["sourceQuests"] = { 38473 },	-- Will of the Thorignir
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 37.4, 63.8, 634 },
-					["qg"] = 91222,	-- Commander Lorna Crowley <Gilneas Brigade>
+					["provider"] = { "n", 91222 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38612, {	-- A Grapple a Day (Horde)
 					["sourceQuests"] = { 38611 },	-- Will of the Thorignir
 					["races"] = HORDE_ONLY,
 					["coord"] = { 44.8, 59.3, 634 },
-					["qg"] = 92561,	-- Dread-Rider Cullen
+					["provider"] = { "n", 92561 },	-- Dread-Rider Cullen
 				}),
 				q(38362, {	-- A Grim Trophy
 					["sourceQuests"] = {
@@ -57,7 +57,7 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["coord"] = { 44.1, 18.1, 634 },
-					["qg"] = 91158,	-- Nathanos Blightcaller
+					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 					["groups"] = {
 						i(121499),	-- Footwraps of the Blightcaller
 						i(121501),	-- Duskbat Exterminator's Treads
@@ -72,25 +72,25 @@ _.Zones =
 				q(39590,  {	-- Ahead of the Game
 					["sourceQuests"] = { 38331 },	-- Havi's Test
 					["coord"] = { 41.8, 42.9, 634 },
-					["qg"] = 96254,	-- Havi
+					["provider"] = { "n", 96254 },	-- Havi
 				}),
 				q(40078,  {	-- A Heavy Burden
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["coord"] = { 60.0, 50.7, 634 },
-					["qg"] = 92539,	-- Havi
+					["provider"] = { "n", 92539 },	-- Havi
 					["groups"] = {
 						i(133813),	-- Recipe: Pickled Stormray (Rank 1)
 					},
 				}),
 				q(40120,  {	-- A Murky Fate
 					["coord"] = { 78.2, 58.5, 634 },
-					["qg"] = 98587,	-- Morheim Ancestor
+					["provider"] = { "n", 98587 },	-- Morheim Ancestor
 				}),
 				q(38882, {	-- A New Life for Undeath
 					["sourceQuests"] = { 39155 },	-- Becoming the Ascendant
 					["races"] = HORDE_ONLY,
 					["coord"] = { 62.5, 68.0, 634 },
-					["qg"] = 94228,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 94228 },	-- Lady Sylvanas Windrunner
 					["groups"] = {
 						i(121572),	-- Sylvanas' Barbed Arrow
 						i(121568),	-- Blessing of the Banshee Queen
@@ -105,10 +105,10 @@ _.Zones =
 					["sourceQuests"] = { 38410 },	-- Impalement Insurance
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 46.2, 70.3, 634 },
-					["qg"] = 91553,	-- Commander Lorna Crowley <Gilneas Brigade>
+					["provider"] = { "n", 91553 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38617, {	-- Another Way (Horde)
-					["qg"] = 92573,	-- Dread-Rider Cullen
+					["provider"] = { "n", 92573 },	-- Dread-Rider Cullen
 					["races"] = HORDE_ONLY,
 					["coord"] = { 47.0, 71.7, 634 },
 					["sourceQuests"] = { 38410 },	-- Impalement Insurance
@@ -117,7 +117,7 @@ _.Zones =
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.6, 50.8, 634 },
-					["qg"] = 90866,	-- Tinkmaster Overspark
+					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
 					["groups"] = {
 						i(134554),	-- Runespeaker's Gloves
 						i(134555),	-- Runesworn Grips
@@ -135,7 +135,7 @@ _.Zones =
 						39787,	-- Rigging the Wager
 					},
 					["coord"] = { 51.3, 57.2, 634 },
-					["qg"] = 107675,		-- Rax Sixtrigger
+					["provider"] = { "n", 107675 },		-- Rax Sixtrigger
 				}),
 				q(39786,  {	-- A Stone Cold Gamble
 					["sourceQuests"] = {
@@ -143,14 +143,14 @@ _.Zones =
 						39787,	-- Rigging the Wager
 					},
 					["coord"] = { 51.3, 56.9, 634 },
-					["qg"] = 107674,		-- Snaggle Sixtrigger
+					["provider"] = { "n", 107674 },		-- Snaggle Sixtrigger
 				}),
 				q(42639,  {	-- A Stone of Blood
 					["coord"] = { 74.8, 55.5, 634 },
-					["qg"] = 108072,	-- Sir Finley Mrrggglton
+					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 				}),
 				q(39594,  {	-- A Trial of Might
-					["qg"] = 96257,	-- Yotnar
+					["provider"] = { "n", 96257 },	-- Yotnar
 					["coord"] = { 46.6, 44.4, 634 },
 					["sourceQuests"] = {
 						39593,	-- The Shattered Watcher
@@ -169,13 +169,13 @@ _.Zones =
 					["sourceQuests"] = { 39063 },	-- Shielded Secrets
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 60.5, 65.0, 634 },
-					["qg"] = 95921,	-- Commander Lorna Crowley
+					["provider"] = { "n", 95921 },	-- Commander Lorna Crowley
 				}),
 				q(39155, {	-- Becoming the Ascendant (Horde)
 					["sourceQuests"] = { 38878 },	-- Shielded Secrets
 					["races"] = HORDE_ONLY,
 					["coord"] = { 60.9, 65.1, 634 },
-					["qg"] = 95611,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 95611 },	-- Lady Sylvanas Windrunner
 				}),
 				q(38808,  {	-- Bjornharta
 					["sourceQuests"] = {
@@ -183,7 +183,7 @@ _.Zones =
 						38778,	-- Turn the Keys
 					},
 					["coord"] = { 68.4, 54.2, 634 },
-					["qg"] = 93231,	-- Vydhar
+					["provider"] = { "n", 93231 },	-- Vydhar
 					["groups"] = {
 						i(129335),	-- Runespeaker's Cuffs
 						i(129336),	-- Runesworn Bindings
@@ -196,7 +196,7 @@ _.Zones =
 					["itemID"] = 128512,	-- Challenger's Tribute
 					-- Wowhead information on this quest is inaccurate.
 					-- No prereqs required; quest item was looted from the first mob I killed.
-					["qgs"] = {
+					["crs"] = {
 						100435,	-- Bloodtotem Flameheart
 						108309,	-- Bloodtotem Flameheart
 						96229,	-- Bloodtotem Skirmisher
@@ -209,13 +209,13 @@ _.Zones =
 					},
 				}),
 				q(38052, {	-- Boarded!
-					["qg"] = 90749,	-- Sky Admiral Rogers
+					["provider"] = { "n", 90749 },	-- Sky Admiral Rogers
 					["coord"] = { 33.7, 50.9, 634 },
 					["sourceQuest"] = 39800,	-- Greymane's Gambit
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38816,  {	-- Breaking the Bonespeakers
-					["qg"] = 93446,	-- Shieldmaiden Iounn
+					["provider"] = { "n", 93446 },	-- Shieldmaiden Iounn
 					["coord"] = { 68.0, 48.6, 634 },
 					["sourceQuests"] = {
 						38811,	-- Judgment Day
@@ -225,7 +225,7 @@ _.Zones =
 				q(40004,  {	-- Break the Spine
 					["sourceQuests"] = { 40002 },	-- A Familiar Fate
 					["coord"] = { 65.8, 59.4, 634 },
-					["qg"] = 97979,	-- Vethir
+					["provider"] = { "n", 97979 },	-- Vethir
 				}),
 				{	---------- Built to Scale (Alliance)
 					["questID"] = 38337,	-- Built to Scale
@@ -266,23 +266,23 @@ _.Zones =
 					["sourceQuests"] = { 38872 },	-- The Dark Lady's Bidding
 					["races"] = HORDE_ONLY,
 					["coord"] = { 54.9, 72.5, 634 },
-					["qg"] = 93603,	-- Nathanos Blightcaller
+					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
 				}),
 				q(39060, {	-- Combustible Contagion
 					["sourceQuests"] = { 39059 },	-- To Catch a Banshee
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 71.5, 59.9, 634 },
-					["qg"] = 94318,	-- Genn Greymane
+					["provider"] = { "n", 94318 },	-- Genn Greymane
 				}),
 				q(54147, {	-- Confront the Val'kyr
-					["qg"] = 146877,	-- Princess Talanji
+					["provider"] = { "n", 146877 },	-- Princess Talanji
 					["lvl"] = 120,
 					["coord"] = { 61.2, 68.1, 634 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 53781,	-- Eyir
 				}),
 				q(38624,  {	-- Cry Thunder!
-					["qg"] = 92218,	-- Thymjaris
+					["provider"] = { "n", 92218 },	-- Thymjaris
 					["coord"] = { 40.8, 80.8, 634 },
 					["sourceQuests"] = { 39652 },	-- Where Dragons Rule
 				}),
@@ -308,7 +308,7 @@ _.Zones =
 						42446,	-- Singed Feathers
 					},
 					["coord"] = { 49.8, 32.5, 634 },
-					["qg"] = 107498,	-- Cukkaw
+					["provider"] = { "n", 107498 },	-- Cukkaw
 					["groups"] = {
 						i(129361),	-- Blackfeather Handwraps
 						i(129363),	-- Blackfeather Gloves
@@ -321,24 +321,24 @@ _.Zones =
 					},
 				}),
 				q(44177,  {	-- Dark Secrets and Shady Deals
-					["qg"] = 112959,	-- Fleet Admiral Tethys
+					["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 					["classes"] = { 4 },
 				}),
 				q(39153, {	-- Dreadwake's Dilemma
 					["sourceQuests"] = { 38872 },	-- The Dark Lady's Bidding
 					["races"] = HORDE_ONLY,
 					["coord"] = { 54.9, 72.5, 634 },
-					["qg"] = 93603,	-- Nathanos Blightcaller
+					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
 				}),
 				q(39789,  {	-- Eating Into Our Business
-					["qg"] = 97258,	-- Ootasa Galehoof
+					["provider"] = { "n", 97258 },	-- Ootasa Galehoof
 					["coord"] = { 51.4, 56.9, 634 },
 				}),
 				q(39122, {	-- Ending the New Beginning
 					["sourceQuests"] = { 39092 },	-- Becoming the Ascendant
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 62.2, 68.1, 634 },
-					["qg"] = 95804,	-- Genn Greymane
+					["provider"] = { "n", 95804 },	-- Genn Greymane
 					["groups"] = {
 						i(129258),	-- Sylvanas' Broken Arrow
 						i(129259),	-- Bane of the Darklady
@@ -355,9 +355,9 @@ _.Zones =
 					["sourceQuests"] = { 38362 },	-- A Grim Trophy
 				}),
 				q(40568,  {	-- Fury of the Storm	
-					["qgs"] = {
-						91249,	-- Vethir
-						96465,	-- Vethir
+					["providers"] = {
+						{ "n", 91249 },	-- Vethir
+						{ "n", 96465 },	-- Vethir
 					},
 					["coord"] = { 44.7, 77.4, 634 },
 					["sourceQuests"] = {
@@ -368,10 +368,10 @@ _.Zones =
 				q(40072,  {	-- Halls of Valor: Securing the Aegis
 					["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
 					["coord"] = { 70.2, 69.1, 634 },
-					["qg"] = 97988,	-- Havi
+					["provider"] = { "n", 97988 },	-- Havi
 				}),
 				q(38331,  {	-- Havi's Test
-					["qg"] = 96254,	-- Havi
+					["provider"] = { "n", 96254 },	-- Havi
 					["coord"] = { 41.8, 42.9, 634 },
 					["sourceQuests"] = {
 						38210,	-- The Ancient Trials (Alliance)
@@ -379,9 +379,9 @@ _.Zones =
 					},
 				}),
 				q(38414,  {	-- Heart of a Dragon
-					["qgs"] = {
-						91249,	-- Vethir
-						96465,	-- Vethir
+					["providers"] = {
+						{ "n", 91249 },	-- Vethir
+						{ "n", 96465 },	-- Vethir
 					},
 					["coord"] = { 44.7, 77.4, 634 },
 					["sourceQuests"] = {
@@ -396,10 +396,10 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 43.8, 68.2, 634 },
-					["qg"] = 91519,	-- Commander Lorna Crowley <Gilneas Brigade>
+					["provider"] = { "n", 91519 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38615, {	-- Impalement Insurance (Horde)
-					["qg"] = 92567,	-- Dread-Rider Cullen
+					["provider"] = { "n", 92567 },	-- Dread-Rider Cullen
 					["races"] = HORDE_ONLY,
 					["coord"] = { 43.7, 67.8, 634 },
 					["sourceQuests"] = {
@@ -408,7 +408,7 @@ _.Zones =
 					},
 				}),
 				q(38811,  {	-- Judgment Day
-					["qg"] = 93231,	-- Vydhar
+					["provider"] = { "n", 93231 },	-- Vydhar
 					["coord"] = { 68.4, 54.2, 634 },
 					["sourceQuests"] = {
 						38808,	-- Bjornharta
@@ -418,10 +418,10 @@ _.Zones =
 				q(40001,  {	-- Knocking on Valor's Door
 					["sourceQuests"] = { 40078 },	-- A Heavy Burden
 					["coord"] = { 60.0, 50.7, 634 },
-					["qg"] = 92539,	-- Havi
+					["provider"] = { "n", 92539 },	-- Havi
 				}),
 				q(39791,  {	-- Lay Them to Rest
-					["qg"] = 93231,	-- Vydhar
+					["provider"] = { "n", 93231 },	-- Vydhar
 					["coord"] = { 68.4, 54.2, 634 },
 					["sourceQuests"] = {
 						38808,	-- Bjornharta
@@ -437,7 +437,7 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.7, 50.8, 634 },
-					["qg"] = 90866,	-- Tinkmaster Overspark
+					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
 				}),
 				q(38317, {	-- Masters of Disguise
 					["sourceQuests"] = { 38308 },	-- Eyes in the Overlook
@@ -458,7 +458,10 @@ _.Zones =
 						{ 60.2, 50.8, 634 },
 					},
 					["lvl"] = 110,
-					["qgs"] = { 92539, 97973 },	-- Havi (different IDs depending on the location in which you pick up the quest)
+					["providers"] = {
+						{ "n", 92539 },	-- Havi
+						{ "n", 97973 },	-- Havi
+					},
 					["groups"] = {
 						i(140618),	-- Helbreaker Amice
 						i(140619),	-- Helbreaker Epaulets
@@ -474,33 +477,33 @@ _.Zones =
 					["sourceQuests"] = { 38312 },	-- A Grapple a Day
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 42.0, 64.4, 634 },
-					["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
+					["provider"] = { "n", 91481 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38613, {	-- No Wings Required (Horde)
 					["sourceQuests"] = { 38612 },	-- A Grapple a Day
 					["races"] = HORDE_ONLY,
 					["coord"] = { 46.5, 67.7, 634 },
-					["qg"] = 92566,	-- Dread-Rider Cullen
+					["provider"] = { "n", 92566 },	-- Dread-Rider Cullen
 				}),
 				q(39793,  {	-- Only the Finest
 					["sourceQuests"] = { 39789 },	-- Eating Into Our Business
 					["coord"] = { 51.4, 57.0, 634 },
-					["qg"] = 107675,		-- Rax Sixtrigger
+					["provider"] = { "n", 107675 },		-- Rax Sixtrigger
 				}),
 				q(38059, {	-- Pins and Needles
 					["sourceQuests"] = { 38057 },	-- The Lost Legion
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 77.6, 49.5, 636 },	-- Stormscale Cavern
-					["qg"] = 92414,	-- Knight-Captain Rhodes
+					["provider"] = { "n", 92414 },	-- Knight-Captain Rhodes
 				}),
 				q(42444,  {	-- Plight of the Blackfeather
-					["qg"] = 107499,	-- Frightened Ravenbear
+					["provider"] = { "n", 107499 },	-- Frightened Ravenbear
 					["coord"] = { 50.2, 34.1, 634 }
 				}),
 				q(38358, {	-- Pump it Up
 					["races"] = HORDE_ONLY,
 					["coord"] = { 36.1, 27.4, 634 },
-					["qg"] = 91590,	-- Apothecary Withers
+					["provider"] = { "n", 91590 },	-- Apothecary Withers
 					["groups"] = {
 						i(134554),	-- Runespeaker's Gloves
 						i(134555),	-- Runesworn Grips
@@ -517,7 +520,7 @@ _.Zones =
 						39792,	-- A Stack of Racks
 						39786,	-- A Stone Cold Gamble
 					},
-					["qg"] = 107674,	-- Snaggle Sixtrigger
+					["provider"] = { "n", 107674 },	-- Snaggle Sixtrigger
 					["groups"] = {
 						title(343),	-- <Name> the Gullible
 					},
@@ -528,7 +531,7 @@ _.Zones =
 						39791,	-- Lay Them to Rest
 					},
 					["coord"] = { 68.0, 48.6, 634 },
-					["qg"] = 93446,	-- Shieldmaiden Iounn
+					["provider"] = { "n", 93446 },	-- Shieldmaiden Iounn
 					["groups"] = {
 						i(129229),	-- Runespeaker's Sandals
 						i(129231),	-- Stormborn Treads
@@ -546,23 +549,23 @@ _.Zones =
 				q(39787,  {	-- Rigging the Wager
 					["sourceQuests"] = { 39793 },	-- Only the Finest
 					["coord"] = { 51.2, 57.1, 634 },
-					["qg"] = 107674,		-- Snaggle Sixtrigger
+					["provider"] = { "n", 107674 },		-- Snaggle Sixtrigger
 				}),
 				q(40046,  {	-- Scavenging the Shallows
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
 					["coord"] = { 59.0, 42.9, 634 },
-					["qg"] = 97973,	-- Havi
+					["provider"] = { "n", 97973 },	-- Havi
 				}),
 				q(38558, {	-- See Ya Later, Oscillator
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.6, 50.8, 634 },
-					["qg"] = 90866,	-- Tinkmaster Overspark
+					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
 				}),
 				q(40044,  {	-- Shadows in the Mists
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
 					["coord"] = { 59.0, 42.9, 634 },
-					["qg"] = 97973,	-- Havi
+					["provider"] = { "n", 97973 },	-- Havi
 					["groups"] = {
 						i(129350),	-- Sigrid's Phantom Shroud
 						i(132773),	-- Dreadsworn Waistguard
@@ -575,18 +578,18 @@ _.Zones =
 					["sourceQuests"] = { 39062 },	-- To Skold-Ashil
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 63.5, 61.8, 634 },
-					["qg"] = 93779,	-- Commander Lorna Crowley
+					["provider"] = { "n", 93779 },	-- Commander Lorna Crowley
 				}),
 				q(38878, {	-- Shielded Secrets (Horde)
 					["sourceQuests"] = { 39154 },	-- To Skold-Ashil
 					["races"] = HORDE_ONLY,
 					["coord"] = { 56.8, 66.3, 634 },
-					["qg"] = 94227,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 94227 },	-- Lady Sylvanas Windrunner
 				}),
 				q(38357, {	-- Side Effects May Include Mild Undeath
 					["races"] = HORDE_ONLY,
 					["coord"] = { 36.1, 27.4, 634 },
-					["qg"] = 91590,	-- Apothecary Withers
+					["provider"] = { "n", 91590 },	-- Apothecary Withers
 				}),
 				q(38060, {	-- Signal Boost
 					["sourceQuests"] = { 38058 },	-- Lightning Rod
@@ -605,10 +608,10 @@ _.Zones =
 				q(42446,  {	-- Singed Feathers
 					["sourceQuests"] = { 42444 },	-- Plight of the Blackfeather
 					["coord"] = { 49.8, 32.5, 634 },
-					["qg"] = 107498,	-- Cukkaw
+					["provider"] = { "n", 107498 },	-- Cukkaw
 				}),
 				q(39804,  {	-- Speaking of Bones
-					["qg"] = 92539,	-- Havi
+					["provider"] = { "n", 92539 },	-- Havi
 					["coord"] = { 60.0, 50.8, 634 },
 					["sourceQuests"] = { 39803 },	-- The Trials Continue
 				}),
@@ -618,12 +621,12 @@ _.Zones =
 						42639,	-- A Stone of Blood
 					},
 					["coord"] = { 74.8, 55.5, 634 },
-					["qg"] = 108072,	-- Sir Finley Mrrggglton
+					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 				}),
 				q(40003,  {	-- Stem the Tide
 					["sourceQuests"] = { 40002 },	-- A Familiar Fate
 					["coord"] = { 65.8, 59.4, 634 },
-					["qg"] = 97979,	-- Vethir
+					["provider"] = { "n", 97979 },	-- Vethir
 				}),
 				q(39405,  {	-- Stories of Battle
 					["sourceQuests"] = { 39154 },	-- To Skold-Ashil
@@ -650,7 +653,7 @@ _.Zones =
 						40003,	-- Stem the Tide
 					},
 					["coord"] = { 70.2, 69.2, 634 },
-					["qg"] = 97986,	-- Vethir
+					["provider"] = { "n", 97986 },	-- Vethir
 					["groups"] = {
 						i(132845),	-- Odyn's Veil
 						i(132846),	-- Felbound Plasma
@@ -668,7 +671,7 @@ _.Zones =
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.6, 50.8, 634 },
-					["qg"] = 90783,	-- Mishka
+					["provider"] = { "n", 90783 },	-- Mishka
 				}),
 				q(43349,  {	-- The Aegis of Aggramar
 					i(130016),	-- Valor-Bound Legplates
@@ -680,17 +683,17 @@ _.Zones =
 					["sourceQuests"] = { 38060 },	-- Signal Boost
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.7, 45.9, 634 },
-					["qg"] = 97306,	-- Muninn
+					["provider"] = { "n", 97306 },	-- Muninn
 				}),
 				q(38459, {	-- The Ancient Trials (Horde)
 					["sourceQuests"] = { 38362 },	-- A Grim Trophy
 					["races"] = HORDE_ONLY,
 					["coord"] = { 36.8, 30.9, 634 },
-					["qg"] = 97305,	-- Huginn
+					["provider"] = { "n", 97305 },	-- Huginn
 				}),
 				q(39597,  {	-- The Blessing of the Watchers
 					["sourceQuests"] = { 39594 },	-- A Trial of Might
-					["qg"] = 96258,	-- Yotnar
+					["provider"] = { "n", 96258 },	-- Yotnar
 					["groups"] = {
 						i(132781),	-- Archived Record of Might
 						i(132786),	-- Archived Record of Valor
@@ -718,7 +721,7 @@ _.Zones =
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["races"] = HORDE_ONLY,
 					["coord"] = { 59.9, 51.2, 634 },
-					["qg"] = 93624,	-- Dread-Rider Cullen
+					["provider"] = { "n", 93624 },	-- Dread-Rider Cullen
 				}),
 				q(38810,  {	-- The Dreaming Fungus
 					["sourceQuests"] = {
@@ -726,15 +729,15 @@ _.Zones =
 						38778,	-- Turn the Keys
 					},
 					["coord"] = { 68.4, 54.2, 634 },
-					["qg"] = 93231,	-- Vydhar
+					["provider"] = { "n", 93231 },	-- Vydhar
 				}),
 				q(38818,  {	-- The Final Judgment
 					["sourceQuests"] = { 38815 },	-- Waking the Shieldmaiden
 					["coord"] = { 71.4, 42.5, 634 },
-					["qg"] = 93234,	-- Ashildir
+					["provider"] = { "n", 93234 },	-- Ashildir
 				}),
 				q(46340,  {	-- The Gates Are Closed
-					["qg"] = 93628,	-- Eyir
+					["provider"] = { "n", 93628 },	-- Eyir
 					["lvl"] = 110,
 				}),
 				q(38057, {	-- The Lost Legion
@@ -746,16 +749,16 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.7, 50.8, 634 },
-					["qg"] = 90783,	-- Mishka
+					["provider"] = { "n", 90783 },	-- Mishka
 				}),
 				q(42635,  {	-- The Mystery of Dreyrgrot
 					["coord"] = { 74.8, 55.5, 634 },
-					["qg"] = 108072,	-- Sir Finley Mrrggglton
+					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 				}),
 				q(38332, {	-- The Ranger Lord
 					["races"] = HORDE_ONLY,
 					["coord"] = { 36.1, 27.5, 634 },
-					["qg"] = 91473,	-- Dread-Rider Cullen
+					["provider"] = { "n", 91473 },	-- Dread-Rider Cullen
 				}),
 				q(38823,  {	-- The Runes that Bind
 					["sourceQuests"] = {
@@ -768,7 +771,7 @@ _.Zones =
 				q(39788,  {	-- The Runewood's Revenge
 					["sourceQuests"] = { 39796 },	-- To Haustvald
 					["coord"] = { 68.4, 54.2, 634 },
-					["qg"] = 93231,	-- Vydhar
+					["provider"] = { "n", 93231 },	-- Vydhar
 				}),
 				q(39593,  {	-- The Shattered Watcher
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
@@ -781,7 +784,7 @@ _.Zones =
 				q(39803,  {	-- The Trials Continue
 					["sourceQuests"] = { 38624 },	-- Cry Thunder!
 					["coord"] = { 47.9, 54.6, 634 },
-					["qg"] = 97074,	-- Huginn
+					["provider"] = { "n", 97074 },	-- Huginn
 				}),
 				q(42640,  {	-- The Value of Knowledge
 					["coord"] = { 75.5, 50.8, 634 },
@@ -790,23 +793,23 @@ _.Zones =
 					["sourceQuests"] = { 38322 },	-- The Ranger Lord
 					["races"] = HORDE_ONLY,
 					["coord"] = { 37.8, 21.6, 634 },
-					["qg"] = 91158,	-- Nathanos Blightcaller
+					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 				}),
 				q(39059, {	-- To Catch a Banshee
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 60.0, 51.2, 634 },
-					["qg"] = 94346,	-- Ensign Ward
+					["provider"] = { "n", 94346 },	-- Ensign Ward
 				}),
 				q(39796,  {	-- To Haustvald
 					["sourceQuests"] = { 39804 },	-- Speaking of Bones
 					["coord"] = { 60.0, 50.8, 634 },
-					["qg"] = 92539,	-- Havi
+					["provider"] = { "n", 92539 },	-- Havi
 				}),
 				q(43595,  {	-- To Honor the Fallen
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
 					["coord"] = { 59.0, 42.9, 634 },
-					["qg"] = 97973,	-- Havi
+					["provider"] = { "n", 97973 },	-- Havi
 				}),
 				q(39062, {	-- To Skold-Ashil (Alliance)
 					["sourceQuests"] = {
@@ -816,7 +819,7 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 71.5, 59.8, 634 },
-					["qg"] = 94318,	-- Genn Greymane
+					["provider"] = { "n", 94318 },	-- Genn Greymane
 				}),
 				q(39154, {	-- To Skold-Ashil (Horde)
 					["sourceQuests"] = {
@@ -826,13 +829,13 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["coord"] = { 54.9, 72.5, 634 },
-					["qg"] = 93603,	-- Nathanos Blightcaller
+					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
 				}),
 				q(38405, {	-- To Weather the Storm (Alliance)
 					["sourceQuests"] = { 38312 },	-- A Grapple a Day
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 42.0, 64.4, 634 },
-					["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
+					["provider"] = { "n", 91481 },	-- Commander Lorna Crowley <Gilneas Brigade>
 					["groups"] = {
 						i(121567),	-- Galeborn's Oiled Cloak
 						i(129318),	-- Lodestone of the Galeborn
@@ -844,7 +847,7 @@ _.Zones =
 					["sourceQuests"] = { 38612 },	-- A Grapple a Day
 					["races"] = HORDE_ONLY,
 					["coord"] = { 46.5, 67.7, 634 },
-					["qg"] = 92566,	-- Dread-Rider Cullen
+					["provider"] = { "n", 92566 },	-- Dread-Rider Cullen
 					["groups"] = {
 						i(121567),	-- Galeborn's Oiled Cloak
 						i(129318),	-- Lodestone of the Galeborn
@@ -855,7 +858,7 @@ _.Zones =
 				q(38778,  {	-- Turn the Keys
 					["sourceQuests"] = { 39796 },	-- To Haustvald
 					["coord"] = { 68.4, 54.2, 634 },
-					["qg"] = 93231,	-- Vydhar
+					["provider"] = { "n", 93231 },	-- Vydhar
 				}),
 				q(38815,  {	-- Waking the Shieldmaiden
 					["sourceQuests"] = {
@@ -864,7 +867,7 @@ _.Zones =
 						38823,	-- The Runes that Bind
 					},
 					["coord"] = { 69.8, 45.5, 634 },
-					["qg"] = 97270,	-- Shieldmaiden Iounn
+					["provider"] = { "n", 97270 },	-- Shieldmaiden Iounn
 				}),
 				q(42641,  {	-- What the Bonespeakers Buried
 					["sourceQuests"] = {
@@ -872,7 +875,7 @@ _.Zones =
 						42639,	-- A Stone of Blood
 					},
 					["coord"] = { 74.8, 55.5, 634 },
-					["qg"] = 108072,	-- Sir Finley Mrrggglton
+					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 					["groups"] = {
 						i(129329),	-- The Blood-Thane's Amulet
 						i(129360),	-- Dreadsworn Breastplate
@@ -888,7 +891,7 @@ _.Zones =
 						40568,	-- Fury of the Storm
 					},
 					["coord"] = { 42.8, 82.6, 634 },
-					["qg"] = 96465,	-- Vethir
+					["provider"] = { "n", 96465 },	-- Vethir
 					["groups"] = {
 						i(132806),	-- Azariah's Last Moments
 						i(132808),	-- Breath of Vethir
@@ -912,19 +915,19 @@ _.Zones =
 					["sourceQuests"] = { 39059 },	-- To Catch a Banshee
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 71.5, 59.9, 634 },
-					["qg"] = 94318,	-- Genn Greymane
+					["provider"] = { "n", 94318 },	-- Genn Greymane
 				}),
 				q(38473, {	-- Will of the Thorignir (Alliance)
 					["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 43.1, 49.1, 634 },
-					["qg"] = 96254,	-- Havi
+					["provider"] = { "n", 96254 },	-- Havi
 				}),
 				q(38611, {	-- Will of the Thorignir (Horde)
 					["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
 					["races"] = HORDE_ONLY,
 					["coord"] = { 41.8, 43.0, 634 },
-					["qg"] = 96254,	-- Havi
+					["provider"] = { "n", 96254 },	-- Havi
 				}),
 				q(38413,  {	-- Wings of Liberty
 					["sourceQuests"] = {
@@ -932,9 +935,9 @@ _.Zones =
 						38618,	-- Above the Winter Moonlight (Horde)
 					},
 					["coord"] = { 44.7, 77.4, 634 },
-					["qgs"] = {
-						91249,	-- Vethir
-						96465,	-- Vethir
+					["providers"] = {
+						{ "n", 91249 },	-- Vethir
+						{ "n", 96465 },	-- Vethir
 					},
 					["groups"] = {
 						i(121517),	-- Thorignir Punisher Spaulders
@@ -951,14 +954,14 @@ _.Zones =
 					["sourceQuests"] = { 38322 },	-- The Ranger Lord
 					["races"] = HORDE_ONLY,
 					["coord"] = { 37.8, 21.6, 634 },
-					["qg"] = 91158,	-- Nathanos Blightcaller
+					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 				}),
 				n(-38, {	-- Professions
 					n(-181, {	-- Blacksmithing
 						["requireSkill"] = 164,	-- Blacksmithing
 						["groups"] = {
 							q(41636, {	-- Work Order: Leystone Breastplate
-								["qg"] = 106904,	-- Valdemar Stormseeker
+								["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
 								["groups"] = {
 									i(123939),	-- Recipe: Leystone Breastplate [Rank 3]
 								},
@@ -969,7 +972,7 @@ _.Zones =
 						["requireSkill"] = 333,	-- Enchanting
 						["groups"] = {
 							q(39904, {	-- Halls of Valor: Revenge of the Enchantress
-								["qg"] = 98367,	-- Tigrid the Charmer
+								["provider"] = { "n", 98367 },	-- Tigrid the Charmer
 								["groups"] = {
 									i(128623),	-- Formula: Enchanted Pen
 								},
@@ -980,13 +983,13 @@ _.Zones =
 						["requireSkill"] = 202,	-- Engineering
 						["groups"] = {
 							q(41678, {	-- Work Order: Gunpack
-								["qg"] = 106904,	-- Valdemar Stormseeker
+								["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
 								["groups"] = {
 									i(137722),	-- Schematic: Gunpack [Rank 3]
 								},
 							}),
 							q(40866, {	-- The Shell, You Say?
-								["qg"] = 102198,	-- Fargo Flintlocke
+								["provider"] = { "n", 102198 },	-- Fargo Flintlocke
 								["groups"] = {
 									-- recipe(201596),	-- Schematic: Sonic Environment Enhancer(Spell that is cast on you to learn the following recipe.  Not collectible)
 									recipe(200466),	-- Schematic: Sonic Environment Enhancer
@@ -997,7 +1000,7 @@ _.Zones =
 									40866,	-- The Shell, You Say?
 									40867,	-- Bubble Baubles
 								},
-								["qg"] = 102198,	-- Fargo Flintlocke
+								["provider"] = { "n", 102198 },	-- Fargo Flintlocke
 								["groups"] = {
 									sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
 								},
@@ -1009,7 +1012,7 @@ _.Zones =
 						["groups"] = {
 							q(40052, {	-- Ancient Vrykul Mastered
 								["sourceQuests"] = { 39947 },	-- Not So Complex?
-								["qg"] = 97748,	-- Nicholo Swiftfuse
+								["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
 								["groups"] = {
 									i(137728),	-- Technique: Scroll of Forgotten Knowledge
 								},
@@ -1020,7 +1023,7 @@ _.Zones =
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["groups"] = {
 							q(40546, {
-								["qg"] = 100499,	-- Jabrul <Jewelcrafting Master>
+								["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
 								["groups"] = {
 									recipe(195883),	-- Chatterstone
 								},
@@ -1032,7 +1035,7 @@ _.Zones =
 						["groups"] = {
 							q(38974, {	-- Halls of Valor: The Right Question
 								["coord"] = { 65.6, 56.2, 634 },
-								["qg"] = 93977,	-- Leyweaver Tellumi
+								["provider"] = { "n", 93977 },	-- Leyweaver Tellumi
 								["groups"] = {
 									i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
 								},
@@ -1043,7 +1046,7 @@ _.Zones =
 			--[[ These quests will be organized soon™
 				q(44720),	-- A Call to Action
 				q(45534, {	-- A Common Enemy
-					["qg"] = 117394,	-- Sigryn
+					["provider"] = { "n", 117394 },	-- Sigryn
 				}),
 				q(40614),	-- A Feast Fit for Odyn
 				q(40078),	-- A Heavy Burden

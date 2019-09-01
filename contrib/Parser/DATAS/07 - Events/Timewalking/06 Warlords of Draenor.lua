@@ -10,7 +10,7 @@ _.WorldEvents =
 				{	-- Shimmering Timewarped Crystal
 					["itemID"] = 167921,	-- Shimmering Timewarped Crystal
 					["questID"] = 55498,	-- The Shimmering Crystal
-					["qg"] = 151955,		-- Tempra
+					["provider"] = { "n", 151955 },		-- Tempra
 					["isWeekly"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 36.9, 72.5, 622 },	-- Stormshield
@@ -18,7 +18,7 @@ _.WorldEvents =
 				{	-- Shimmering Timewarped Crystal
 					["itemID"] = 167922,	-- Shimmering Timewarped Crystal
 					["questID"] = 55499,	-- The Shimmering Crystal
-					["qg"] = 151987,		-- Kronnus
+					["provider"] = { "n", 151987 },		-- Kronnus
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,
 					["coord"] = { 42.8, 54.5, 624 },	-- Warspear

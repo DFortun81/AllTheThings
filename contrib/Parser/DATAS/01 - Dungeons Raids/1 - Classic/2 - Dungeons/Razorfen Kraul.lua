@@ -10,11 +10,11 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(-17, {	-- Quests
 				q(26906, {	-- Agamaggan
-					["qg"] = 44402,	-- Auld Stonespire
+					["provider"] = { "n", 44402 },	-- Auld Stonespire
 				}),
 				q(26905, {	-- Agamaggan's Charge
 					["sourceQuests"] = { 26906 },	-- Agamaggan
-					["qg"] = 44415,	-- Spirit of Agamaggan
+					["provider"] = { "n", 44415 },	-- Spirit of Agamaggan
 					["g"] = {
 						i(65968),	-- Agamaggan-Blessed Greaves
 						i(66007),	-- Agamaggan's Silent Tear
@@ -25,11 +25,11 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(26901, {	-- Going, Going, Guano!
-					["qg"] = 44402,	-- Auld Stonespire
+					["provider"] = { "n", 44402 },	-- Auld Stonespire
 				}),
 				q(1142,  {	-- Mortality Wanes
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4510,	-- Heralath Fallowbrook
+					["provider"] = { "n", 4510 },	-- Heralath Fallowbrook
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(6751)),	-- Mourning Shawl
@@ -37,7 +37,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(26907, {	-- Take Them Down!
-					["qg"] = 44402,	-- Auld Stonespire
+					["provider"] = { "n", 44402 },	-- Auld Stonespire
 				}),
 				q(24630, {	-- The Crone of the Kraul
 					["u"] = 40,	-- Legacy Quests
@@ -49,7 +49,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(1144,  {	-- Willix the Importer
-					["qg"] = 4508,	-- Willix the Importer
+					["provider"] = { "n", 4508 },	-- Willix the Importer
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(6748)),	-- Monkey Ring

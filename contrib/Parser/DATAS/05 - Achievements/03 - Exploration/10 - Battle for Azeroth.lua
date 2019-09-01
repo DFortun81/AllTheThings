@@ -1185,7 +1185,7 @@ _.Achievements =
 							},
 							{	-- Long Forgotten Rum
 								["itemID"] = 161153,		-- Long Forgotten Rum
-								["qg"] = 140055, 			-- First Mate Grogtok
+								["provider"] = { "n", 140055 }, 			-- First Mate Grogtok
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 14,		-- Long Forgotten Rum
 								["maps"] = {

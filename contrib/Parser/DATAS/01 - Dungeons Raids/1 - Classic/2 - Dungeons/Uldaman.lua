@@ -22,23 +22,23 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuests"] = { 27679 },	-- The Chamber of Khaz'mul
 				}),
 				q(27676, {	-- Behind Closed Doors
-					["qg"] = 46233,	-- Olga Runesworn
+					["provider"] = { "n", 46233 },	-- Olga Runesworn
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27681, {	-- Behind Closed Doors
-					["qg"] = 46235,	-- Lidia Sunglow
+					["provider"] = { "n", 46235 },	-- Lidia Sunglow
 					["races"] = HORDE_ONLY,
 				}),
 				q(27673, {	-- It's What's Inside That Counts
-					["qg"] = 46247,	-- Kand Sandseeker
+					["provider"] = { "n", 46247 },	-- Kand Sandseeker
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27672, {	-- The Chamber of Khaz'mul
-					["qg"] = 46234,	-- Lead Prospector Durdin
+					["provider"] = { "n", 46234 },	-- Lead Prospector Durdin
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27679, {	-- The Chamber of Khaz'mul
-					["qg"] = 46236,	-- High Examiner Tae'thelan
+					["provider"] = { "n", 46236 },	-- High Examiner Tae'thelan
 					["races"] = HORDE_ONLY,
 				}),
 				o(131474, {	-- The Discs of Norgannon
@@ -77,7 +77,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(27682, {	-- We Require More Minerals
-					["qg"] = 46241,	-- Aoren Sunglow
+					["provider"] = { "n", 46241 },	-- Aoren Sunglow
 					["races"] = HORDE_ONLY,
 				}),
 			}),

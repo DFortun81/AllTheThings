@@ -103,15 +103,15 @@ _.Zones =
 				q(12660),	-- Weapons of Destruction
 				--]]
 				q(12489, {	-- Welcome to Sholazar Basin
-					["qg"] = 27987,	-- Monte Muzzleshot
+					["provider"] = { "n", 27987 },	-- Monte Muzzleshot
 					["sourceQuests"] = { 12521 },	-- Where in the World is Hemet Nesingwary?
 				}),
 				q(12524, {	-- Venture Co. Misadventure
-					["qg"] = 28032,	-- Debaar
+					["provider"] = { "n", 28032 },	-- Debaar
 					["sourceQuests"] = { 27987 },	-- Welcome to Scholazar Basin
 				}),
 				q(12525, {	-- Wipe That Grin Off His Face
-					["qg"] = 28032,	-- Debaar
+					["provider"] = { "n", 28032 },	-- Debaar
 					["sourceQuests"] = { 12524 },	-- Venture Co. Misadventure
 					["g"] = {
 						i(39332),	-- Ogre-Crushing Wristguards
@@ -133,7 +133,7 @@ _.Zones =
 					i(39459),
 				}),
 				q(12797, {	-- Back Through the Waygate
-					["qg"] = 28092,	-- The Etymidian
+					["provider"] = { "n", 28092 },	-- The Etymidian
 					["sourceQuest"] = 12547,	-- The Activation Rune
 					["coord"] = { 47.4, 9.2, 78 },
 					["maps"] = { 78 },	-- Un'goro Crater
@@ -222,7 +222,7 @@ _.Zones =
 					i(39453),
 				}),
 				q(12547, {	-- The Activation Rune
-					["qg"] = 28092,	-- The Etymidian
+					["provider"] = { "n", 28092 },	-- The Etymidian
 					["sourceQuest"] = 12548,	-- The Etymidian
 					["coord"] = { 47.4, 9.2, 78 },
 					["maps"] = { 78 },	-- Un'goro Crater

@@ -10,7 +10,7 @@ _.Zones =
 					crit(1, {	-- On the Blade's Edge (H) / Sylvanaar (A)
 					-- Horde questline
 						q(10486, {	-- The Encroaching Wilderness
-							["qg"] = 21117,	-- Gor'drek
+							["provider"] = { "n", 21117 },	-- Gor'drek
 							["coord"] = { 52.4, 57.9, 105 },
 							["sourceQuests"] = {
 								39198,	-- Warchief's Command: Blade's Edge Mountains!
@@ -19,13 +19,13 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 						}),
 						q(10487, {	-- Dust from the Drakes
-							["qg"] = 21117,	-- Gor'drek
+							["provider"] = { "n", 21117 },	-- Gor'drek
 							["coord"] = { 52.4, 57.9, 105 },
 							["sourceQuest"] = 10486,	-- The Encroaching Wilderness
 							["races"] = HORDE_ONLY,
 						}),
 						q(10488, {	-- Protecting Our Own
-							["qg"] = 21117,	-- Gor'drek
+							["provider"] = { "n", 21117 },	-- Gor'drek
 							["coord"] = { 52.4, 57.9, 105 },
 							["sourceQuest"] = 10487,	-- Dust from the Drakes
 							["races"] = HORDE_ONLY,
@@ -37,12 +37,12 @@ _.Zones =
 							},
 						}),
 						q(10503, {	-- The Bladespire Threat
-							["qg"] = 21147,	-- Tor'chunk Twoclaws
+							["provider"] = { "n", 21147 },	-- Tor'chunk Twoclaws
 							["coord"] = { 51.8,58.4, 105 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(10505, {	-- The Bloodmaul Ogres
-							["qg"] = 21147,	-- Tor'chunk Twoclaws
+							["provider"] = { "n", 21147 },	-- Tor'chunk Twoclaws
 							["coord"] = { 51.8,58.4, 105 },
 							["sourceQuest"] = 10503,	-- The Bladespire Threat
 							["races"] = HORDE_ONLY,
@@ -55,7 +55,7 @@ _.Zones =
 						}),
 						i(30431, {	-- Thunderlord Clan Artifact
 							q(10524, {	-- Thunderlord Clan Artifacts
-								["qgs"] = {
+								["crs"] = {
 									19995,	-- Bladespire Brute
 									19998,	-- Bladespire Shaman
 								},
@@ -63,13 +63,13 @@ _.Zones =
 							}),
 						}),
 						q(10525, {	-- Vision Guide
-							["qg"] = 21311,	-- Rokgah Bloodgrip
+							["provider"] = { "n", 21311 },	-- Rokgah Bloodgrip
 							["coord"] = { 52.8, 59.0, 105 },
 							["sourceQuest"] = 10524,	-- Thunderlord Clan Artifacts
 							["races"] = HORDE_ONLY,
 						}),
 						q(10526, {	-- The Thunderspike
-							["qg"] = 21311,	-- Rokgah Bloodgrip
+							["provider"] = { "n", 21311 },	-- Rokgah Bloodgrip
 							["coord"] = { 52.8, 59.0, 105 },
 							["sourceQuest"] = 10525,	-- Vision Guide
 							["races"] = HORDE_ONLY,
@@ -80,24 +80,24 @@ _.Zones =
 							},
 						}),
 						q(10542, {	-- They Stole Me Hookah and Me Brews!
-							["qg"] = 21349,	-- T'chali the Witch Doctor
+							["provider"] = { "n", 21349 },	-- T'chali the Witch Doctor
 							["coord"] = { 45.0, 72.2, 105 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(10545, {	-- Bladespire Kegger
-							["qg"] = 21349,	-- T'chali the Witch Doctor
+							["provider"] = { "n", 21349 },	-- T'chali the Witch Doctor
 							["coord"] = { 45.0, 72.2, 105 },
 							["sourceQuest"] = 10542,	-- They Stole Me Hookah and Me Brews!
 							["races"] = HORDE_ONLY,
 						}),
 						q(10543, {	-- Grimnok and Korgaah, I Am For You!
-							["qg"] = 21349,	-- T'chali the Witch Doctor
+							["provider"] = { "n", 21349 },	-- T'chali the Witch Doctor
 							["coord"] = { 45.0, 72.2, 105 },
 							["sourceQuest"] = 10545,	-- Bladespire Kegger
 							["races"] = HORDE_ONLY,
 						}),
 						q(10544, {	-- A Curse Upon Both of Your Clans!
-							["qg"] = 21349,	-- T'chali the Witch Doctor
+							["provider"] = { "n", 21349 },	-- T'chali the Witch Doctor
 							["coord"] = { 45.0, 72.2, 105 },
 							["sourceQuest"] = 10543,	-- Grimnok and Korgaah, I Am For You!
 							["races"] = HORDE_ONLY,
@@ -125,7 +125,7 @@ _.Zones =
 						}),
 						-- Alliance Questline
 						q(10455, {	-- The Encroaching Wilderness
-							["qg"] = 21066,	-- Rina Moonspring
+							["provider"] = { "n", 21066 },	-- Rina Moonspring
 							["coord"] = { 36.2, 67.2, 105 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
@@ -134,13 +134,13 @@ _.Zones =
 							},
 						}),
 						q(10456, {	-- Marauding Wolves
-							["qg"] = 21066,	-- Rina Moonspring
+							["provider"] = { "n", 21066 },	-- Rina Moonspring
 							["coord"] = { 36.2, 67.2, 105 },
 							["sourceQuest"] = 10455,	-- The Encroaching Wilderness
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10457, {	-- Protecting Our Own
-							["qg"] = 21066,	-- Rina Moonspring
+							["provider"] = { "n", 21066 },	-- Rina Moonspring
 							["coord"] = { 36.2, 67.2, 105 },
 							["sourceQuest"] = 10456,	-- Marauding Wolves
 							["races"] = ALLIANCE_ONLY,
@@ -152,18 +152,18 @@ _.Zones =
 							},
 						}),
 						q(10506, {	-- A Dire Situation
-							["qg"] = 21066,	-- Rina Moonspring
+							["provider"] = { "n", 21066 },	-- Rina Moonspring
 							["coord"] = { 36.2, 67.2, 105 },
 							["sourceQuest"] = 10457,	-- Protecting Our Own
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10502, {	-- The Bloodmaul Ogres
-							["qg"] = 21158,	-- Commander Skyshadow
+							["provider"] = { "n", 21158 },	-- Commander Skyshadow
 							["coord"] = { 36.5, 66.4, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10504, {	-- The Bladespire Ogres
-							["qg"] = 21158,	-- Commander Skyshadow
+							["provider"] = { "n", 21158 },	-- Commander Skyshadow
 							["coord"] = { 36.5, 66.4, 105 },
 							["sourceQuest"] = 10502,	-- The Bloodmaul Ogres
 							["races"] = ALLIANCE_ONLY,
@@ -175,18 +175,18 @@ _.Zones =
 							},
 						}),
 						q(10511, {	-- Strange Brew
-							["qg"] = 21151,	-- Borgrim Stouthammer
+							["provider"] = { "n", 21151 },	-- Borgrim Stouthammer
 							["coord"] = { 37.4, 64.6, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10512, {	-- Getting the Bladespire Tanked
-							["qg"] = 21151,	-- Borgrim Stouthammer
+							["provider"] = { "n", 21151 },	-- Borgrim Stouthammer
 							["coord"] = { 37.4, 64.6, 105 },
 							["sourceQuest"] = 10511,	-- Strange Brew
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10510, {	-- Into the Draenethyst Mine
-							["qg"] = 21197,	-- Bronwyn Stouthammer
+							["provider"] = { "n", 21197 },	-- Bronwyn Stouthammer
 							["coord"] = { 37.4, 65.0, 105 },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
@@ -197,19 +197,19 @@ _.Zones =
 							},
 						}),
 						q(10516, {	-- The Trappings of a Vindicator
-							["qg"] = 21277,	-- Vindicator Vuuleen
+							["provider"] = { "n", 21277 },	-- Vindicator Vuuleen
 							["coord"] = { 44.0, 51.8, 105 },
 							["sourceQuest"] = 10504,	-- The Bladespire Ogres
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10517, {	-- Gorr'Dim, Your Time Has Come...
-							["qg"] = 21277,	-- Vindicator Vuuleen
+							["provider"] = { "n", 21277 },	-- Vindicator Vuuleen
 							["coord"] = { 44.0, 51.8, 105 },
 							["sourceQuest"] = 10516,	-- The Trappings of a Vindicator
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10518, {	-- Planting the Banner
-							["qg"] = 21277,	-- Vindicator Vuuleen
+							["provider"] = { "n", 21277 },	-- Vindicator Vuuleen
 							["coord"] = { 44.0, 51.8, 105 },
 							["sourceQuest"] = 10517,	-- Gorr'Dim, Your Time Has Come...
 							["races"] = ALLIANCE_ONLY,
@@ -221,7 +221,7 @@ _.Zones =
 							},
 						}),
 						q(10555, {	-- Malaise
-							["qg"] = 21469,	-- Daranelle
+							["provider"] = { "n", 21469 },	-- Daranelle
 							["coord"] = { 37.0, 65.6, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -256,55 +256,55 @@ _.Zones =
 					crit(2, {	-- Reunion (H) / Toshley's Station (A)
 					-- Horde Questline
 						q(10718, {	-- The Spirits Have Voices
-							["qg"] = 21950,	-- Garm Wolfbrother
+							["provider"] = { "n", 21950 },	-- Garm Wolfbrother
 							["coord"] = { 52.7, 59.0, 105 },
 							["sourceQuest"] = 10526,	-- The Thunderspike
 							["races"] = HORDE_ONLY,
 						}),
 						q(10614, {	-- Whispers on the Wind
-							["qg"] = 21984,	-- Rexxar
+							["provider"] = { "n", 21984 },	-- Rexxar
 							["coord"] = { 51.8, 58.3, 105 },
 							["sourceQuest"] = 10718,	-- The Spirits Have Voices
 							["races"] = HORDE_ONLY,
 						}),
 						q(10709, {	-- Reunion
-							["qg"] = 22004,	-- Leoroxx
+							["provider"] = { "n", 22004 },	-- Leoroxx
 							["coord"] = { 75,3, 60.9, 105 },
 							["sourceQuest"] = 10614,	-- Whispers on the Wind
 							["races"] = HORDE_ONLY,
 						}),
 						q(10714, {	-- On Spirit's Wings
-							["qg"] = 21984,	-- Rexxar
+							["provider"] = { "n", 21984 },	-- Rexxar
 							["coord"] = { 51.8, 58.3, 105 },
 							["sourceQuest"] = 10709,	-- Reunion
 							["races"] = HORDE_ONLY,
 						}),
 						q(10783, {	-- Baron Sablemane
-							["qg"] = 21984,	-- Rexxar
+							["provider"] = { "n", 21984 },	-- Rexxar
 							["coord"] = { 51.8, 58.3, 105 },
 							["sourceQuest"] = 10714,	-- On Spirit's Wings
 							["races"] = HORDE_ONLY,
 						}),
 						q(10715, {	-- Into the Churning Gulch
-							["qg"] = 22103,	-- Baron Sablemane
+							["provider"] = { "n", 22103 },	-- Baron Sablemane
 							["coord"] = { 53.3, 41.2, 105 },
 							["sourceQuest"] = 10783,	-- Baron Sablemane
 							["races"] = HORDE_ONLY,
 						}),
 						q(10749, {	-- Baron Sablemane's Poison
-							["qg"] = 22103,	-- Baron Sablemane
+							["provider"] = { "n", 22103 },	-- Baron Sablemane
 							["coord"] = { 53.3, 41.2, 105 },
 							["sourceQuest"] = 10715,	-- Into the Churning Gulch
 							["races"] = HORDE_ONLY,
 						}),
 						q(10720, {	-- The Smallest Creatures
-							["qg"] = 21984,	-- Rexxar
+							["provider"] = { "n", 21984 },	-- Rexxar
 							["coord"] = { 51.8, 58.3, 105 },
 							["sourceQuest"] = 10749,	-- Baron Sablemane's Poison
 							["races"] = HORDE_ONLY,
 						}),
 						q(10784, {	-- Crush the Bloodmaul Camp
-							["qg"] = 21147,	-- Tor'chunk Twoclaws
+							["provider"] = { "n", 21147 },	-- Tor'chunk Twoclaws
 							["coord"] = { 51.9, 58.4, 105 },
 							["sourceQuest"] = 10749,	-- Baron Sablemane's Poison
 							["races"] = HORDE_ONLY,
@@ -316,19 +316,19 @@ _.Zones =
 							},
 						}),
 						q(10721, {	-- A Boaring Time for Grulloc
-							["qg"] = 21984,	-- Rexxar
+							["provider"] = { "n", 21984 },	-- Rexxar
 							["coord"] = { 51.8, 58.3, 105 },
 							["sourceQuest"] = 10720,	-- The Smallest Creatures
 							["races"] = HORDE_ONLY,
 						}),
 						q(10785, {	-- It's a Trap!
-							["qg"] = 22103,	-- Baron Sablemane
+							["provider"] = { "n", 22103 },	-- Baron Sablemane
 							["coord"] = { 53.3, 41.2, 105 },
 							["sourceQuest"] = 10721,	-- A Boaring Time for Grulloc
 							["races"] = HORDE_ONLY,
 						}),
 						q(10723, {	-- Gorgrom the Dragon-Eater
-							["qg"] = 21984,	-- Rexxar
+							["provider"] = { "n", 21984 },	-- Rexxar
 							["coord"] = { 51.8, 58.3, 105 },
 							["sourceQuest"] = 10785,	-- It's a Trap!
 							["races"] = HORDE_ONLY,
@@ -339,19 +339,19 @@ _.Zones =
 							},
 						}),
 						q(10786, {	-- Slaughter at Boulder'mok
-							["qg"] = 21147,	-- Tor'chunk Twoclaws
+							["provider"] = { "n", 21147 },	-- Tor'chunk Twoclaws
 							["coord"] = { 51.9, 58.4, 105 },
 							["sourceQuest"] = 10721,	-- A Boaring Time for Grulloc
 							["races"] = HORDE_ONLY,
 						}),
 						q(10724, {	-- Prisoner of the Bladespire
-							["qg"] = 21984,	-- Rexxar
+							["provider"] = { "n", 21984 },	-- Rexxar
 							["coord"] = { 51.8, 58.3, 105 },
 							["sourceQuest"] = 10723,	-- Gorgrom the Dragon-Eater
 							["races"] = HORDE_ONLY,
 						}),
 						q(10742, {	-- Showdown
-							["qg"] = 21984,	-- Rexxar
+							["provider"] = { "n", 21984 },	-- Rexxar
 							["coord"] = { 51.8, 58.3, 105 },
 							["sourceQuest"] = 10724,	-- Prisoner of the Bladespire
 							["races"] = HORDE_ONLY,
@@ -366,36 +366,36 @@ _.Zones =
 						}),
 					-- Alliance Questline
 						q(10580, {	-- Where Did Those Darn Gnomes Go?
-							["qg"] = 21158,	-- Commander Skyshadow
+							["provider"] = { "n", 21158 },	-- Commander Skyshadow
 							["coord"] = { 36.5, 66.4, 105 },
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10581, {	-- Follow the Breadcrumbs
-							["qg"] = 21690,	-- R-3D0
+							["provider"] = { "n", 21690 },	-- R-3D0
 							["coord"] = { 55.0, 72.8, 105 },
 							["sourceQuest"] = 10580,	-- Where Did Those Darn Gnomes Go?
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10557, {	-- Test Flight: The Zephyrium Capacitorium
-							["qg"] = 21460,	-- Tally Zapnabber
+							["provider"] = { "n", 21460 },	-- Tally Zapnabber
 							["coord"] = { 60.3, 68.4, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10711, {	-- Test Flight: Razaan's Landing
-							["qg"] = 21460,	-- Tally Zapnabber
+							["provider"] = { "n", 21460 },	-- Tally Zapnabber
 							["coord"] = { 60.3, 68.4, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10584, {	-- Picking Up Some Power Converters
-							["qg"] = 21691,	-- Toshley
+							["provider"] = { "n", 21691 },	-- Toshley
 							["coord"] = { 60.5, 69.0, 105 },
 							["sourceQuest"] = 10581,	-- Follow the Breadcrumbs
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10657, { 	-- Ride the Lightning
-							["qg"] = 21691,	-- Toshley
+							["provider"] = { "n", 21691 },	-- Toshley
 							["coord"] = { 60.5, 69.0, 105 },
 							["sourceQuest"] = 10584,	-- Picking Up Some Power Converters
 							["races"] = ALLIANCE_ONLY,
@@ -407,13 +407,13 @@ _.Zones =
 							},
 						}),
 						q(10674, {	-- Trapping the Light Fantastic
-							["qg"] = 21691,	-- Toshley
+							["provider"] = { "n", 21691 },	-- Toshley
 							["coord"] = { 60.5, 69.0, 105 },
 							["sourceQuest"] = 10657, 	-- Ride the Lightning
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10675, {	-- Show Them Gnome Mercy!
-							["qg"] = 21691,	-- Toshley
+							["provider"] = { "n", 21691 },	-- Toshley
 							["coord"] = { 60.5, 69.0, 105 },
 							["sourceQuest"] = 10584,	-- Picking Up Some Power Converters
 							["races"] = ALLIANCE_ONLY,
@@ -426,18 +426,18 @@ _.Zones =
 							},
 						}),
 						q(10620, {	-- Ridgespine Menace
-							["qg"] = 21824,	-- Dizzy Dina
+							["provider"] = { "n", 21824 },	-- Dizzy Dina
 							["coord"] = { 60.4, 68.8, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10671, {	-- More than a Pound of Flesh
-							["qg"] = 21824,	-- Dizzy Dina
+							["provider"] = { "n", 21824 },	-- Dizzy Dina
 							["coord"] = { 60.4, 68.8, 105 },
 							["sourceQuest"] = 10620,	-- Ridgespine Menace
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10632, {	-- Cutting Your Teeth
-							["qg"] = 21118,	-- Razak Ironsides
+							["provider"] = { "n", 21118 },	-- Razak Ironsides
 							["coords"] = {
 								{ 60.0, 69.3, 105 },
 								{ 59.8, 68.3, 105 },
@@ -452,18 +452,18 @@ _.Zones =
 							},
 						}),
 						q(10710, {	-- Test Flight: The Singing Ridge
-							["qg"] = 21460,	-- Tally Zapnabber
+							["provider"] = { "n", 21460 },	-- Tally Zapnabber
 							["coord"] = { 60.3, 68.4, 105 },
 							["sourceQuest"] = 10557,	-- Test Flight: The Zephyrium Capacitorium
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10608, {	-- Crystal Clear
-							["qg"] = 21755,	-- Nickwinkle the Metro-Gnome
+							["provider"] = { "n", 21755 },	-- Nickwinkle the Metro-Gnome
 							["coord"] = { 60.2, 68.9, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10594, {	-- Gauging the Resonant Frequency
-							["qg"] = 21755,	-- Nickwinkle the Metro-Gnome
+							["provider"] = { "n", 21755 },	-- Nickwinkle the Metro-Gnome
 							["coord"] = { 60.2, 68.9, 105 },
 							["sourceQuest"] = 10608,	-- Crystal Clear
 							["races"] = ALLIANCE_ONLY,
@@ -475,7 +475,7 @@ _.Zones =
 							},
 						}),
 						q(10609, {	-- What Came First, the Drake or the Egg?
-							["qg"] = 21110,	-- Fizit "Doc" Clocktock
+							["provider"] = { "n", 21110 },	-- Fizit "Doc" Clocktock
 							["coord"] = { 61.0, 68.1, 105 },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
@@ -486,7 +486,7 @@ _.Zones =
 							},
 						}),
 						q(10712, {	-- Test Flight: Ruuan Weald
-							["qg"] = 21460,	-- Tally Zapnabber
+							["provider"] = { "n", 21460 },	-- Tally Zapnabber
 							["coord"] = { 60.3, 68.4, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -494,36 +494,36 @@ _.Zones =
 					crit(3, {	-- The Mok'Nathal (H) / The Gronn Threat (A)
 					-- Horde Questline
 						q(10565, {	-- The Stones of Vekh'nir
-							["qg"] = 21496,	-- Dertrok
+							["provider"] = { "n", 21496 },	-- Dertrok
 							["coord"] = { 75.1, 62.1, 105 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(10566, {	-- Trial and Error
-							["qg"] = 21496,	-- Dertrok
+							["provider"] = { "n", 21496 },	-- Dertrok
 							["coord"] = { 75.1, 62.1, 105 },
 							["sourceQuest"] = 10565,	-- The Stones of Vekh'nir
 							["races"] = HORDE_ONLY,
 						}),
 						q(10615, {	-- Ruuan Weald
-							["qg"] = 21496,	-- Dertrok
+							["provider"] = { "n", 21496 },	-- Dertrok
 							["coord"] = { 75.1, 62.1, 105 },
 							["sourceQuest"] = 10566,	-- Trial and Error
 							["races"] = HORDE_ONLY,
 						}),
 						q(10846, {	-- Understanding the Mok'Nathal
-							["qg"] = 22004,	-- Leoroxx
+							["provider"] = { "n", 22004 },	-- Leoroxx
 							["coord"] = { 75,3, 60.9, 105 },
 							["sourceQuest"] = 10565,	-- The Stones of Vekh'nir
 							["races"] = HORDE_ONLY,
 						}),
 						q(10843, {	-- Since Time Forgotten...
-							["qg"] = 22004,	-- Leoroxx
+							["provider"] = { "n", 22004 },	-- Leoroxx
 							["coord"] = { 75,3, 60.9, 105 },
 							["sourceQuest"] = 10846,	-- Understanding the Mok'Nathal
 							["races"] = HORDE_ONLY,
 						}),
 						q(10845, {	-- Slay the Brood Mother
-							["qg"] = 22004,	-- Leoroxx
+							["provider"] = { "n", 22004 },	-- Leoroxx
 							["coord"] = { 75,3, 60.9, 105 },
 							["sourceQuest"] = 10843,	-- Since Time Forgotten...
 							["races"] = HORDE_ONLY,
@@ -535,13 +535,13 @@ _.Zones =
 							},
 						}),
 						q(10851, {	-- The Totems of My Enemy
-							["qg"] = 22312,	-- Spiritcaller Dohgar
+							["provider"] = { "n", 22312 },	-- Spiritcaller Dohgar
 							["coord"] = { 74.9, 60.5, 105 },
 							["sourceQuest"] = 10846,	-- Understanding the Mok'Nathal
 							["races"] = HORDE_ONLY,
 						}),
 						q(10853, {	-- Spirit Calling
-							["qg"] = 22312,	-- Spiritcaller Dohgar
+							["provider"] = { "n", 22312 },	-- Spiritcaller Dohgar
 							["coord"] = { 74.9, 60.5, 105 },
 							["sourceQuest"] = 10851,	-- The Totems of My Enemy
 							["races"] = HORDE_ONLY,
@@ -553,19 +553,19 @@ _.Zones =
 							},
 						}),
 						q(10859, {	-- Gather the Orbs
-							["qg"] = 22312,	-- Spiritcaller Dohgar
+							["provider"] = { "n", 22312 },	-- Spiritcaller Dohgar
 							["coord"] = { 74.9, 60.5, 105 },
 							["sourceQuest"] = 10853,	-- Spirit Calling
 							["races"] = HORDE_ONLY,
 						}),
 						q(10865, {	-- Inform Leoroxx!
-							["qg"] = 22312,	-- Spiritcaller Dohgar
+							["provider"] = { "n", 22312 },	-- Spiritcaller Dohgar
 							["coord"] = { 74.9, 60.5, 105 },
 							["sourceQuest"] = 10859,	-- Gather the Orbs
 							["races"] = HORDE_ONLY,
 						}),
 						q(10867, {	-- There Can Be Only One Response
-							["qg"] = 22004,	-- Leoroxx
+							["provider"] = { "n", 22004 },	-- Leoroxx
 							["coord"] = { 75,3, 60.9, 105 },
 							["sourceQuest"] = 10865,	-- Inform Leoroxx!
 							["races"] = HORDE_ONLY,
@@ -578,12 +578,12 @@ _.Zones =
 						}),
 					-- Alliance Questline
 						q(10795, {	-- A Date with Dorgok
-							["qg"] = 22149,	-- Commander Haephus Stonewall
+							["provider"] = { "n", 22149 },	-- Commander Haephus Stonewall
 							["coord"] = { 62.0, 38.0, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10796, {	-- Crush the Bloodmaul Camp!
-							["qg"] = 22150,	-- Lieutenant Fairweather
+							["provider"] = { "n", 22150 },	-- Lieutenant Fairweather
 							["coord"] = { 62.0, 37.9, 105 },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
@@ -595,38 +595,38 @@ _.Zones =
 						}),
 						i(31363, {	-- Gorgrom's Favor
 							q(10795, {	-- Favor of the Gronn
-								["qg"] = 10797,	-- Dorgok
+								["provider"] = { "n", 10797 },	-- Dorgok
 								["coord"] = { 55.0, 24.2, 105 },
 								["description"]	= "You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",
 								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
 						q(10798, {	-- Pay the Baron a Visit
-							["qg"] = 22149,	-- Commander Haephus Stonewall
+							["provider"] = { "n", 22149 },	-- Commander Haephus Stonewall
 							["coord"] = { 62.0, 38.0, 105 },
 							["sourceQuest"] = 10795,	-- Favor of the Gronn
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10799, {	-- Into the Churning Gulch
-							["qg"] = 22103,	-- Baron Sablemane
+							["provider"] = { "n", 22103 },	-- Baron Sablemane
 							["coord"] = { 53.2, 41.0, 105 },
 							["sourceQuest"] = 10798,	-- Pay the Baron a Visit
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10800, {	-- Goodnight, Gronn
-							["qg"] = 22103,	-- Baron Sablemane
+							["provider"] = { "n", 22103 },	-- Baron Sablemane
 							["coord"] = { 53.2, 41.0, 105 },
 							["sourceQuest"] = 10799,	-- Into the Churning Gulch
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10801, {	-- It's a Trap!
-							["qg"] = 22103,	-- Baron Sablemane
+							["provider"] = { "n", 22103 },	-- Baron Sablemane
 							["coord"] = { 53.2, 41.0, 105 },
 							["sourceQuest"] = 10800,	-- Goodnight, Gronn
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10802, {	-- Gorgrom the Dragon-Eater
-							["qg"] = 22149,	-- Commander Haephus Stonewall
+							["provider"] = { "n", 22149 },	-- Commander Haephus Stonewall
 							["coord"] = { 62.0, 38.0, 105 },
 							["sourceQuest"] = 10801,	-- It's a Trap!
 							["races"] = ALLIANCE_ONLY,
@@ -637,25 +637,25 @@ _.Zones =
 							},
 						}),
 						q(10803, {	-- Slaughter at Boulder'mok
-							["qg"] = 22150,	-- Lieutenant Fairweather
+							["provider"] = { "n", 22150 },	-- Lieutenant Fairweather
 							["coord"] = { 62.0, 37.9, 105 },
 							["sourceQuest"] = 10801,	-- It's a Trap!
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10818, {	-- Baron Sablemane Has Requested Your Presence
-							["qg"] = 22149,	-- Commander Haephus Stonewall
+							["provider"] = { "n", 22149 },	-- Commander Haephus Stonewall
 							["coord"] = { 62.0, 38.0, 105 },
 							["sourceQuest"] = 10802,	-- Gorgrom the Dragon-Eater
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10805, {	-- Massacre at Gruul's Lair
-							["qg"] = 22103,	-- Baron Sablemane
+							["provider"] = { "n", 22103 },	-- Baron Sablemane
 							["coord"] = { 53.2, 41.0, 105 },
 							["sourceQuest"] = 10818,	-- Baron Sablemane Has Requested Your Presence
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10806, {	-- Showdown
-							["qg"] = 22103,	-- Baron Sablemane
+							["provider"] = { "n", 22103 },	-- Baron Sablemane
 							["coord"] = { 53.2, 41.0, 105 },
 							["sourceQuest"] = 10805,	-- Massacre at Gruul's Lair
 							["races"] = ALLIANCE_ONLY,
@@ -671,17 +671,17 @@ _.Zones =
 					}),
 					crit(4, {	-- Ogres of Ogri'la
 						q(10989, {	-- Mog'dorg the Wizened
-							["qg"] = 22995,	-- Chort
+							["provider"] = { "n", 22995 },	-- Chort
 							["coord"] = { 55.4, 45.2, 105 },
 							["isBreadcrumb"] = true,
 						}),
 						q(11057, {	-- The Trouble Below
-							["qg"] = 23233,	-- Chu'a'lor
+							["provider"] = { "n", 23233 },	-- Chu'a'lor
 							["coord"] = { 28.8, 57.4, 105 },
 							["isBreadcrumb"] = true,
 						}),
 						q(10995, {	-- Grulloc Has Two Skulls
-							["qg"] = 22941,	-- Mog'dorg the Wizened
+							["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
 							["coord"] = { 55.5, 44.8, 105 },
 							["sourceQuests"] = {
 								10983,	-- Mog'dorg the Wizened
@@ -691,7 +691,7 @@ _.Zones =
 							["description"]	= "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						}),
 						q(10996, {	-- Maggoc's Treasure Chest
-							["qg"] = 22941,	-- Mog'dorg the Wizened
+							["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
 							["coord"] = { 55.5, 44.8, 105 },
 							["sourceQuests"] = {
 								10983,	-- Mog'dorg the Wizened
@@ -701,7 +701,7 @@ _.Zones =
 							["description"]	= "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						}),
 						q(10997, {	-- Even Gronn Have Standards
-							["qg"] = 22941,	-- Mog'dorg the Wizened
+							["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
 							["coord"] = { 55.5, 44.8, 105 },
 							["sourceQuests"] = {
 								10983,	-- Mog'dorg the Wizened
@@ -711,7 +711,7 @@ _.Zones =
 							["description"]	= "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						}),
 						q(10998, {	-- Grim(oire) Business
-							["qg"] = 22941,	-- Mog'dorg the Wizened
+							["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
 							["coord"] = { 55.5, 44.8, 105 },
 							["sourceQuests"] = {
 								10997,	-- Even Gronn Have Standards
@@ -720,18 +720,18 @@ _.Zones =
 							},
 						}),
 						q(11000, {	-- Into the Soulgrinder
-							["qg"] = 22941,	-- Mog'dorg the Wizened
+							["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
 							["coord"] = { 55.5, 44.8, 105 },
 							["sourceQuest"] = 10998,	-- Grim(oire) Business
 						}),
 						q(11022, {	-- Speak with Mog'dorg
-							["qg"] = 23053,	-- Bladespire Supplicant
+							["provider"] = { "n", 23053 },	-- Bladespire Supplicant
 							["coord"] = { 42.8, 20.7, 107 },
 							["sourceQuest"] = 11000,	-- Into the Soulgrinder
 							["isBreadcrumb"] = true,
 						}),
 						q(11009, {	-- Ogre Heaven
-							["qg"] = 22941,	-- Mog'dorg the Wizened
+							["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
 							["coord"] = { 55.5, 44.8, 105 },
 							["sourceQuests"] = {
 								11000,	-- Into the Soulgrinder
@@ -739,46 +739,46 @@ _.Zones =
 							},
 						}),
 						q(11025, {	-- The Crystals
-							["qg"] = 23233,	-- Chu'a'lor
+							["provider"] = { "n", 23233 },	-- Chu'a'lor
 							["coord"] = { 28.8, 57.4, 105 },
 						}),
 						q(11030, {	-- Our Boy Wants To Be A Skyguard Ranger
-							["qg"] = 23316,	-- Torkus
+							["provider"] = { "n", 23316 },	-- Torkus
 							["coord"] = { 28.4, 57.6, 105 },
 							["sourceQuest"] = 11025,	-- The Crystals
 						}),
 						q(11058, {	-- An Apexis Relic
-							["qg"] = 23233,	-- Chu'a'lor
+							["provider"] = { "n", 23233 },	-- Chu'a'lor
 							["coord"] = { 28.8, 57.4, 105 },
 							["sourceQuest"] = 11025,	-- The Crystals
 						}),
 						q(11061, {	-- A Father's Duty
-							["qg"] = 23316,	-- Torkus
+							["provider"] = { "n", 23316 },	-- Torkus
 							["coord"] = { 28.4, 57.6, 105 },
 							["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
 						}),
 						q(11062, {	-- The Skyguard Outpost
-							["qg"] = 23233,	-- Chu'a'lor
+							["provider"] = { "n", 23233 },	-- Chu'a'lor
 							["coord"] = { 28.4, 57.6, 105 },
 							["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
 						}),
 						q(11079, {	-- A Fel Whip For Gahk
-							["qg"] = 23300,	-- Gahk
+							["provider"] = { "n", 23300 },	-- Gahk
 							["coord"] = { 28.5, 58.1, 105 },
 							["sourceQuest"] = 11061,	-- A Father's Duty
 						}),
 						q(11010, {	-- Bombing Run
-							["qg"] = 23120,	-- Sky Sergeant Vanderlip
+							["provider"] = { "n", 23120 },	-- Sky Sergeant Vanderlip
 							["coord"] = { 27.6, 52.9, 105 },
 							["sourceQuest"] = 11062,	-- The Skyguard Outpost
 						}),
 						q(11065, {	-- Wrangle Some Aether Rays!
-							["qg"] = 23335,	-- Skyguard Khatie
+							["provider"] = { "n", 23335 },	-- Skyguard Khatie
 							["coord"] = { 28.0, 51.5, 105 },
 							["sourceQuest"] = 11010,	-- Bombing Run
 						}),
 						q(11078, {	-- To Rule The Skies
-							["qg"] = 23334,	-- Sky Commander Keller
+							["provider"] = { "n", 23334 },	-- Sky Commander Keller
 							["coord"] = { 27.4, 52.7, 105 },
 							["sourceQuests"] = {
 								11010,	-- Bombing Run
@@ -788,11 +788,11 @@ _.Zones =
 					}),
 					crit(5, {	-- Ruuan Weald
 						q(10567, {	-- Creating the Pendant
-							["qg"] = 21782,	-- Timeon
+							["provider"] = { "n", 21782 },	-- Timeon
 							["coord"] = { 62.2, 39.1, 105 },
 						}),
 						q(10607, {	-- Whispers of the Raven God
-							["qg"] = 21782,	-- Timeon
+							["provider"] = { "n", 21782 },	-- Timeon
 							["coord"] = { 62.2, 39.1, 105 },
 							["sourceQuest"] = 10567,	-- Creating the Pendant
 							["g"] = {
@@ -803,7 +803,7 @@ _.Zones =
 							},
 						}),
 						q(10771, {	-- From the Ashes
-							["qg"] = 22053,	-- Mosswood the Ancient
+							["provider"] = { "n", 22053 },	-- Mosswood the Ancient
 							["coord"] = { 61.2, 38.5, 105 },
 							["g"] = {
 								i(31415),	-- Iron Oak Shield
@@ -812,15 +812,15 @@ _.Zones =
 							},
 						}),
 						q(10770, {	-- Little Embers
-							["qg"] = 22053,	-- Mosswood the Ancient
+							["provider"] = { "n", 22053 },	-- Mosswood the Ancient
 							["coord"] = { 61.2, 38.5, 105 },
 						}),
 						q(10682, {	-- A Time for Negotiation...
-							["qg"] = 22007,	-- Tree Warden Chawn
+							["provider"] = { "n", 22007 },	-- Tree Warden Chawn
 							["coord"] = { 62.0, 39.5, 105 },
 						}),
 						q(10713, {	-- ...and a Time for Action
-							["qg"] = 22007,	-- Tree Warden Chawn
+							["provider"] = { "n", 22007 },	-- Tree Warden Chawn
 							["coord"] = { 62.0, 39.5, 105 },
 							["sourceQuest"] = 10682,	-- A Time for Negotiation...
 							["g"] = {
@@ -831,7 +831,7 @@ _.Zones =
 							},
 						}),
 						q(10717, {	-- Poaching from Poachers
-							["qg"] = 21983,	-- Samia Inkling
+							["provider"] = { "n", 21983 },	-- Samia Inkling
 							["coord"] = { 61.9, 39.5, 105 },
 							["sourceQuest"] = 10682,	-- A Time for Negotiation...
 						}),
@@ -842,7 +842,7 @@ _.Zones =
 							}),
 						}),
 						q(10747, {	-- Whelps of the Wyrmcult
-							["qg"] = 21983,	-- Samia Inkling
+							["provider"] = { "n", 21983 },	-- Samia Inkling
 							["coord"] = { 61.9, 39.5, 105 },
 							["sourceQuest"] = 10717,	-- Poaching from Poachers
 							["g"] = {
@@ -853,22 +853,22 @@ _.Zones =
 							},
 						}),
 						q(10894, {	-- Wyrmskull Watcher
-							["qg"] = 22007,	-- Tree Warden Chawn
+							["provider"] = { "n", 22007 },	-- Tree Warden Chawn
 							["coord"] = { 62.0, 39.5, 105 },
 							["sourceQuest"] = 10719,	-- Did You Get The Note?
 						}),
 						q(10893, {	-- Longtail is the Lynchpin
-							["qg"] = 22386,	-- Watcher Moonshade
+							["provider"] = { "n", 22386 },	-- Watcher Moonshade
 							["coord"] = { 50.2, 36.0, 105 },
 							["sourceQuest"] = 10894,	-- Wyrmskull Watcher
 						}),
 						q(10722, {	-- Meeting at the Blackwing Coven
-							["qg"] = 22386,	-- Watcher Moonshade
+							["provider"] = { "n", 22386 },	-- Watcher Moonshade
 							["coord"] = { 50.2, 36.0, 105 },
 							["sourceQuest"] = 10893,	-- Longtail is the Lynchpin
 						}),
 						q(10748, {	-- Maxnar Must Die!
-							["qg"] = 22007,	-- Tree Warden Chawn
+							["provider"] = { "n", 22007 },	-- Tree Warden Chawn
 							["coord"] = { 62.0, 39.5, 105 },
 							["sourceQuest"] = 10722,	-- Meeting at the Blackwing Coven
 							["g"] = {
@@ -879,7 +879,7 @@ _.Zones =
 							},
 						}),
 						q(10753, {	-- Culling the Wild
-							["qg"] = 22133,	-- Faradrella
+							["provider"] = { "n", 22133 },	-- Faradrella
 							["coord"] = { 62.6, 38.3, 105 },
 						}),
 						i(31384, {	-- Damaged Mask
@@ -888,12 +888,12 @@ _.Zones =
 							}),
 						}),
 						q(10812, {	-- Mystery Mask
-							["qg"] = 22020,	-- O'Mally Zapnabber
+							["provider"] = { "n", 22020 },	-- O'Mally Zapnabber
 							["coord"] = { 62.6, 40.2, 105 },
 							["sourceQuest"] = 10810,	-- Damaged Mask
 						}),
 						q(10819, {	-- Felsworn Gas Mask
-							["qg"] = 22127,	-- Wildlord Antelarion
+							["provider"] = { "n", 22127 },	-- Wildlord Antelarion
 							["coord"] = { 62.6, 40.2, 105 },
 							["sourceQuest"] = 10812,	-- Mystery Mask
 						}),
@@ -917,20 +917,20 @@ _.Zones =
 							},
 						}),
 						q(10910, {	-- Death's Door
-							["qg"] = 22127,	-- Wildlord Antelarion
+							["provider"] = { "n", 22127 },	-- Wildlord Antelarion
 							["coord"] = { 62.6, 40.2, 105 },
 							["sourceQuest"] = 10821,	-- You're Fired!
 						}),
 						q(10904, {	-- Harvesting the Fel Ammunition
-							["qg"] = 22423,	-- Evergrove Druid
+							["provider"] = { "n", 22423 },	-- Evergrove Druid
 							["sourceQuest"] = 10910,	-- Death's Door
 						}),
 						q(10911, {	-- Fire At Will!
-							["qg"] = 22423,	-- Evergrove Druid
+							["provider"] = { "n", 22423 },	-- Evergrove Druid
 							["sourceQuest"] = 10904,	-- Harvesting the Fel Ammunition
 						}),
 						q(10912, {	-- The Hound-Master
-							["qg"] = 22423,	-- Evergrove Druid
+							["provider"] = { "n", 22423 },	-- Evergrove Druid
 							["sourceQuest"] = 10911,	-- Fire At Will!
 							["g"] = {
 								i(31693),	-- Natasha's Arcane Filament
@@ -945,17 +945,17 @@ _.Zones =
 				}),
 				n(-168, {   	-- Other Quests
 					q(10928, {	-- Killing the Crawlers
-						["qg"] = 22489,	-- Grunt Grahk
+						["provider"] = { "n", 22489 },	-- Grunt Grahk
 						["coord"] = { 53.0, 96.2, 105 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(10927, {	-- Killing the Crawlers
-						["qg"] = 22488,	-- Sentinel Moonwhisper
+						["provider"] = { "n", 22488 },	-- Sentinel Moonwhisper
 						["coord"] = { 32.2, 91.1, 105 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10860, {	-- Mok'Nathal Treats
-						["qg"] = 21088,	-- Matron Varah
+						["provider"] = { "n", 21088 },	-- Matron Varah
 						["coord"] = { 76.1, 60.3, 105 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -964,18 +964,18 @@ _.Zones =
 						},
 					}),
 					q(10617, {	-- Silkwing Cocoons
-						["qg"] = 21895,	-- Taerek
+						["provider"] = { "n", 21895 },	-- Taerek
 						["coord"] = { 75.9, 61.4, 105 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(10618, {	-- The Softest Wings
-						["qg"] = 21896,	-- Silmara
+						["provider"] = { "n", 21896 },	-- Silmara
 						["coord"] = { 75.8, 61.5, 105 },
 						["races"] = HORDE_ONLY,
 					}),
 					i(31489, {	-- Orb of the Grishna
 						q(10825, {	-- The Truth Unorbed
-							["qgs"] = {
+							["crs"] = {
 								19990,	-- Grishna Scorncrow
 								19989,	-- Grishna Harbinger
 								19988,	-- Grishna Falconwing
@@ -983,12 +983,12 @@ _.Zones =
 						}),
 					}),
 					q(10829, {	-- Treebole Must Know
-						["qg"] = 22007,	-- Tree Warden Chawn
+						["provider"] = { "n", 22007 },	-- Tree Warden Chawn
 						["coord"] = { 62.0, 39.5, 105 },
 						["sourceQuest"] = 10825,	-- The Truth Unorbed
 					}),
 					q(10830, {	-- Exorcising the Trees
-						["qg"] = 22215,	-- Treebole
+						["provider"] = { "n", 22215 },	-- Treebole
 						["coord"] = { 37.2, 22.2, 105 },
 						["sourceQuest"] = 10829,	-- Treebole Must Know
 						["g"] = {
@@ -999,31 +999,31 @@ _.Zones =
 						},
 					}),
 					q(11047, {	-- The Apprentice's Request
-						["qg"] = 23280,	-- Agadai
+						["provider"] = { "n", 23280 },	-- Agadai
 						["coord"] = { 52.0, 54.4, 107 },
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(11043, {	-- Building a Better Gryphon
-						["qg"] = 21107,	-- Rip Pedalslam
+						["provider"] = { "n", 21107 },	-- Rip Pedalslam
 						["coord"] = { 61.2, 70.4, 105 },
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11036, {	-- Out of This World Produce!
-						["qg"] = 19471,	-- Old Orok
+						["provider"] = { "n", 19471 },	-- Old Orok
 						["coord"] = { 53.2, 54.4, 105 },
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(11040, {	-- Parts for the Rocket-Chief
-						["qg"] = 21112,	-- Bossi Pentapiston
+						["provider"] = { "n", 21112 },	-- Bossi Pentapiston
 						["coord"] = { 60.8, 69.1, 105 },
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11119, {	-- Assault on Bash'ir Landing!
-						["qg"] = 23334,	-- Sky Commander Keller
+						["provider"] = { "n", 23334 },	-- Sky Commander Keller
 						["coord"] = { 60.8, 69.1, 105 },
 						["sourceQuest"] = 11010,	-- Bombing Run
 					}),

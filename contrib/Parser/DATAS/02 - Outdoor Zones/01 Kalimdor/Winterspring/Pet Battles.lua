@@ -33,14 +33,14 @@ _.Zones =
 					["description"] = "Starts spawning December 21st. Stops spawning March 20th",
 				}),
 				q(31897, {	-- Grand Master Trixxy
-					["qg"] = 66466,	-- Grand Master Trixxy
+					["provider"] = { "n", 66466 },	-- Grand Master Trixxy
 					["coord"] = { 65.6, 64.5, 83 },
 					["groups"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
 				q(31909, {	-- Grand Master Trixxy
-					["qg"] = 66466,	-- Grand Master Trixxy
+					["provider"] = { "n", 66466 },	-- Grand Master Trixxy
 					["coord"] = { 65.6, 64.5, 83 },
 					["isDaily"] = true,
 					["groups"] = {
@@ -48,13 +48,13 @@ _.Zones =
 					},
 				}),
 				q(31977, {	-- The Returning Champion
-					["qg"] = 66466,	-- Stone Cold Trixxy
+					["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
 					["coord"] = { 65.6, 64.4, 83 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(31975, {	-- The Returning Champion
-					["qg"] = 66466,	-- Stone Cold Trixxy
+					["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
 					["coord"] = { 65.6, 64.4, 83 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,

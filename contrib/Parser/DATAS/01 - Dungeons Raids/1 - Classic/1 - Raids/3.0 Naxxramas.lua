@@ -37,14 +37,14 @@ _.Instances = { tier(1, {	-- Classic
 							{
 								["questID"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["sourceQuest"] = 9250,	-- Frame of Atiesh
-								["qg"] = 15192,	-- Anachronos
+								["provider"] = { "n", 15192 },	-- Anachronos
 								["u"] = 2,
 							},
 							{
 								["questID"] = 9257,	-- Atiesh, Greatstaff of the Guardian [Priest]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["classes"] = { 5 },	-- Priest
-								["qg"] = 15192,	-- Anachronos
+								["provider"] = { "n", 15192 },	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
 									un(2, i(22631)),	-- Atiesh, Greatstaff of the Guardian (Priest)
@@ -54,7 +54,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9270,	-- Atiesh, Greatstaff of the Guardian [Mage]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["classes"] = { 8 },	-- Mage
-								["qg"] = 15192,	-- Anachronos
+								["provider"] = { "n", 15192 },	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
 									un(2, i(22589)),	-- Atiesh, Greatstaff of the Guardian (Mage)
@@ -64,7 +64,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9271,	-- Atiesh, Greatstaff of the Guardian [Warlock]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["classes"] = { 9 },	-- Warlock
-								["qg"] = 15192,	-- Anachronos
+								["provider"] = { "n", 15192 },	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
 									un(2, i(22630)),	-- Atiesh, Greatstaff of the Guardian (Warlock)
@@ -74,7 +74,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9269,	-- Atiesh, Greatstaff of the Guardian [Druid]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["classes"] = { 11 },	-- Druid
-								["qg"] = 15192,	-- Anachronos
+								["provider"] = { "n", 15192 },	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
 									un(2, i(22632)),	-- Atiesh, Greatstaff of the Guardian (Druid)
@@ -90,13 +90,13 @@ _.Instances = { tier(1, {	-- Classic
 								9122,	-- The Dread Citadel - Naxxramas
 								9123,	-- The Dread Citadel - Naxxramas
 							},
-							["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+							["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 							["u"] = 40,
 						},
 						{	-- Glacial Cloak
 							["questID"] = 9237,	-- Glacial Cloak
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22658)),	-- Glacial Cloak
@@ -105,7 +105,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Glacial Gloves
 							["questID"] = 9239,	-- Glacial Gloves
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22654)),	-- Glacial Gloves
@@ -114,7 +114,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Glacial Vest
 							["questID"] = 9240,	-- Glacial Vest
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22652)),	-- Glacial Vest
@@ -123,7 +123,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Glacial Wrists
 							["questID"] = 9238,	-- Glacial Wrists
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22655)),	-- Glacial Wrists
@@ -132,7 +132,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Icebane Bracers
 							["questID"] = 9235,	-- Icebane Bracers
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								{	-- Plans: Icebane Bracers
@@ -144,7 +144,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Icebane Breastplate
 							["questID"] = 9236,	-- Icebane Breastplate
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								{	-- Plans: Icebane Breastplate
@@ -156,7 +156,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Icebane Gauntlets
 							["questID"] = 9234,	-- Icebane Gauntlets
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								{	-- Plans: Icebane Gauntlets
@@ -168,7 +168,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Icy Scale Bracers
 							["questID"] = 9244,	-- Icy Scale Bracers
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22665)),	-- Icy Scale Bracers
@@ -177,7 +177,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Icy Scale Breastplate
 							["questID"] = 9246,	-- Icy Scale Breastplate
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22664)),	-- Icy Scale Breastplate
@@ -186,7 +186,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Icy Scale Gauntlets
 							["questID"] = 9245,	-- Icy Scale Gauntlets
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22666)),	-- Icy Scale Gauntlets
@@ -195,7 +195,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Polar Bracers
 							["questID"] = 9241,	-- Polar Bracers
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22663)),	-- Polar Bracers
@@ -204,7 +204,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Polar Gloves
 							["questID"] = 9242,	-- Polar Gloves
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22662)),	-- Polar Gloves
@@ -213,7 +213,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Polar Tunic
 							["questID"] = 9243,	-- Polar Tunic
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(8, i(22661)),	-- Polar Tunic
@@ -222,7 +222,7 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- Ramaladni's Icy Grasp
 							["questID"] = 9230,	-- Ramaladni's Icy Grasp
 							["sourceQuest"] = 9229,	-- The Fate of Ramaldni
-							["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+							["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(2, i(22707)),	-- Ramaladni's Icy Grasp
@@ -230,7 +230,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 						{	-- The Dread Citadel - Naxxramas [Honored]
 							["questID"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
-							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+							["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 							["minReputation"] = { 529, HONORED },	-- Argent Dawn, Honored.
 							["altQuests"] = {
 								9122,	-- The Dread Citadel - Naxxramas [Revered]
@@ -247,7 +247,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 						{	-- The Dread Citadel - Naxxramas [Revered]
 							["questID"] = 9122,	-- The Dread Citadel - Naxxramas [Revered]
-							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+							["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 							["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 							["altQuests"] = {
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
@@ -262,7 +262,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 						{	-- The Dread Citadel - Naxxramas [Exalted]
 							["questID"] = 9123,	-- The Dread Citadel - Naxxramas [Exalted]
-							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+							["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
 							["altQuests"] = {
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
@@ -273,13 +273,13 @@ _.Instances = { tier(1, {	-- Classic
 						{	-- The Fate of Ramaldni
 							["questID"] = 9229,	-- The Fate of Ramaldni
 							["sourceQuest"] = 9033,	-- Echoes of War
-							["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+							["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 							["u"] = 40,
 						},
 						{	-- The Only Song I Know...
 							["questID"] = 9232,	-- The Only Song I Know...
 							["sourceQuest"] = 9033,	-- Echoes of War
-							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
 								un(2, i(22700)),	-- Glacial Leggings
@@ -293,7 +293,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9037,	-- Dreadnaught Helmet
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22418)),	-- Dreadnaught Helmet
@@ -303,7 +303,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9038,	-- Dreadnaught Pauldrons
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22419)),	-- Dreadnaught Pauldrons
@@ -313,7 +313,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9034,	-- Dreadnaught Breastplate
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22416)),	-- Dreadnaught Breastplate
@@ -323,7 +323,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9042,	-- Dreadnaught Bracers
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22423)),	-- Dreadnaught Bracers
@@ -333,7 +333,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9040,	-- Dreadnaught Gauntlets
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22421)),	-- Dreadnaught Gauntlets
@@ -343,7 +343,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9041,	-- Dreadnaught Waistguard
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22422)),	-- Dreadnaught Waistguard
@@ -353,7 +353,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9036,	-- Dreadnaught Legplates
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22417)),	-- Dreadnaught Legplates
@@ -363,7 +363,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9039,	-- Dreadnaught Sabatons
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22420)),	-- Dreadnaught Sabatons
@@ -375,7 +375,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9045,	-- Redemption Headpiece
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22428)),	-- Redemption Headpiece
@@ -385,7 +385,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9046,	-- Redemption Spaulders
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22429)),	-- Redemption Spaulders
@@ -395,7 +395,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9050,	-- Redemption Wristguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22424)),	-- Redemption Wristguards
@@ -405,7 +405,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9048,	-- Redemption Handguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22426)),	-- Redemption Handguards
@@ -415,7 +415,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9043,	-- Redemption Tunic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22425)),	-- Redemption Tunic
@@ -425,7 +425,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9049,	-- Redemption Girdle
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22431)),	-- Redemption Girdle
@@ -435,7 +435,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9044,	-- Redemption Legguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22427)),	-- Redemption Legguards
@@ -445,7 +445,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9047,	-- Redemption Boots
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22430)),	-- Redemption Boots
@@ -457,7 +457,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9056,	-- Cryptstalker Headpiece
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22438)),	-- Cryptstalker Headpiece
@@ -467,7 +467,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9057,	-- Cryptstalker Spaulders
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22439)),	-- Cryptstalker Spaulders
@@ -477,7 +477,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9054,	-- Cryptstalker Tunic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22436)),	-- Cryptstalker Tunic
@@ -487,7 +487,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9061,	-- Cryptstalker Wristguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22443)),	-- Cryptstalker Wristguards
@@ -497,7 +497,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9059,	-- Cryptstalker Handguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22441)),	-- Cryptstalker Handguards
@@ -507,7 +507,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9060,	-- Cryptstalker Girdle
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22442)),	-- Cryptstalker Girdle
@@ -517,7 +517,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9055,	-- Cryptstalker Legguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22437)),	-- Cryptstalker Legguards
@@ -527,7 +527,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9058,	-- Cryptstalker Boots
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22440)),	-- Cryptstalker Boots
@@ -539,7 +539,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9079,	-- Bonescythe Helmet
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22478)),	-- Bonescythe Helmet
@@ -549,7 +549,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9080,	-- Bonescythe Pauldrons
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22479)),	-- Bonescythe Pauldrons
@@ -559,7 +559,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9077,	-- Bonescythe Breastplate
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22476)),	-- Bonescythe Breastplate
@@ -569,7 +569,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9084,	-- Bonescythe Bracers
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22483)),	-- Bonescythe Bracers
@@ -579,7 +579,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9082,	-- Bonescythe Gauntlets
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22481)),	-- Bonescythe Gauntlets
@@ -589,7 +589,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9083,	-- Bonescythe Waistguard
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22482)),	-- Bonescythe Waistguard
@@ -599,7 +599,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9078,	-- Bonescythe Legplates
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22477)),	-- Bonescythe Legplates
@@ -609,7 +609,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9081,	-- Bonescythe Sabatons
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22480)),	-- Bonescythe Sabatons
@@ -621,7 +621,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9113,	-- Circlet of Faith
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22514)),	-- Circlet of Faith
@@ -631,7 +631,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9114,	-- Shoulderpads of Faith
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22515)),	-- Shoulderpads of Faith
@@ -641,7 +641,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9111,	-- Robe of Faith
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22512)),	-- Robe of Faith
@@ -651,7 +651,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9118,	-- Bindings of Faith
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22519)),	-- Bindings of Faith
@@ -661,7 +661,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9116,	-- Gloves of Faith
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22517)),	-- Gloves of Faith
@@ -671,7 +671,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9117,	-- Belt of Faith
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22518)),	-- Belt of Faith
@@ -681,7 +681,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9112,	-- Leggings of Faith
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22513)),	-- Leggings of Faith
@@ -691,7 +691,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9115,	-- Sandals of Faith
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22516)),	-- Sandals of Faith
@@ -703,7 +703,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9070,	-- Earthshatter Headpiece
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22466)),	-- Earthshatter Headpiece
@@ -713,7 +713,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9071,	-- Earthshatter Spaulders
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22467)),	-- Earthshatter Spaulders
@@ -723,7 +723,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9068,	-- Earthshatter Tunic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22464)),	-- Earthshatter Tunic
@@ -733,7 +733,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9075,	-- Earthshatter Wristguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22471)),	-- Earthshatter Wristguards
@@ -743,7 +743,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9073,	-- Earthshatter Handguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22469)),	-- Earthshatter Handguards
@@ -753,7 +753,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9074,	-- Earthshatter Girdle
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22470)),	-- Earthshatter Girdle
@@ -763,7 +763,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9069,	-- Earthshatter Legguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22465)),	-- Earthshatter Legguards
@@ -773,7 +773,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9072,	-- Earthshatter Boots
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22468)),	-- Earthshatter Boots
@@ -785,7 +785,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9097,	-- Frostfire Circlet
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22498)),	-- Frostfire Circlet
@@ -795,7 +795,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9098,	-- Frostfire Shoulderpads
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22499)),	-- Frostfire Shoulderpads
@@ -805,7 +805,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9095,	-- Frostfire Robe
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22496)),	-- Frostfire Robe
@@ -815,7 +815,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9102,	-- Frostfire Bindings
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22503)),	-- Frostfire Bindings
@@ -825,7 +825,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9100,	-- Frostfire Gloves
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22501)),	-- Frostfire Gloves
@@ -835,7 +835,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9101,	-- Frostfire Belt
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22502)),	-- Frostfire Belt
@@ -845,7 +845,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9096,	-- Frostfire Leggings
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22497)),	-- Frostfire Leggings
@@ -855,7 +855,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9099,	-- Frostfire Sandals
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22500)),	-- Frostfire Sandals
@@ -867,7 +867,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9105,	-- Plagueheart Circlet
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22506)),	-- Plagueheart Circlet
@@ -877,7 +877,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9106,	-- Plagueheart Shoulderpads
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22507)),	-- Plagueheart Shoulderpads
@@ -887,7 +887,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9103,	-- Plagueheart Robe
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22504)),	-- Plagueheart Robe
@@ -897,7 +897,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9110,	-- Plagueheart Bindings
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22511)),	-- Plagueheart Bindings
@@ -907,7 +907,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9108,	-- Plagueheart Gloves
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22509)),	-- Plagueheart Gloves
@@ -917,7 +917,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9109,	-- Plagueheart Belt
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22510)),	-- Plagueheart Belt
@@ -927,7 +927,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9104,	-- Plagueheart Leggings
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22505)),	-- Plagueheart Leggings
@@ -937,7 +937,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9107,	-- Plagueheart Sandals
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22508)),	-- Plagueheart Sandals
@@ -949,7 +949,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9088,	-- Dreamwalker Headpiece
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22490)),	-- Dreamwalker Headpiece
@@ -959,7 +959,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9089,	-- Dreamwalker Spaulders
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22491)),	-- Dreamwalker Spaulders
@@ -969,7 +969,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9086,	-- Dreamwalker Tunic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22488)),	-- Dreamwalker Tunic
@@ -979,7 +979,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9093,	-- Dreamwalker Wristguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22495)),	-- Dreamwalker Wristguards
@@ -989,7 +989,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9091,	-- Dreamwalker Handguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22493)),	-- Dreamwalker Handguards
@@ -999,7 +999,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9092,	-- Dreamwalker Girdle
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22494)),	-- Dreamwalker Girdle
@@ -1009,7 +1009,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9087,	-- Dreamwalker Legguards
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22489)),	-- Dreamwalker Legguards
@@ -1019,7 +1019,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9090,	-- Dreamwalker Boots
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
-								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = 40,
 								["groups"] = {
 									un(9, i(22492)),	-- Dreamwalker Boots

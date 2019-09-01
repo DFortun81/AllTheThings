@@ -13,7 +13,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					ach(6396),	-- Sanguinarian
 					n(-17,   {	-- Quests
 						q(31448, {	-- An End to the Suffering
-							["qg"] = 64563,	-- Talking Skull
+							["provider"] = { "n", 64563 },	-- Talking Skull
 							["g"] = {
 								i(87379),	-- Runed Deathbone Chestplate
 								i(87380),	-- Carver's Bloodspattered Chestpiece
@@ -27,7 +27,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							},
 						}),
 						q(31442, {	-- The Four Tomes
-							["qg"] = 64563,	-- Talking Skull
+							["provider"] = { "n", 64563 },	-- Talking Skull
 						}),
 					}),
 					e(659,   { 	-- Instructor Chillheart

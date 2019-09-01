@@ -13,7 +13,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["g"] = {
 					n(-17, {	-- Quests
 						q(31497, {	-- Just for Safekeeping, Of Course
-							["qg"] = 64764,	-- Hooded Crusader
+							["provider"] = { "n", 64764 },	-- Hooded Crusader
 							["g"] = {
 								i(87370),	-- Waistguard of the Phalanx
 								i(87371),	-- Scarlet Champion's Belt
@@ -27,7 +27,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							},
 						}),
 						q(31495, {	-- Rank and File
-							["qg"] = 64764,	-- Hooded Crusader
+							["provider"] = { "n", 64764 },	-- Hooded Crusader
 						}),
 					}),
 					cr(59303, e(660, {	-- Houndmaster Braun

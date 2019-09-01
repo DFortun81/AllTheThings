@@ -14,7 +14,7 @@ _.Zones =
 				["g"] = {
 					n(-17, {	-- Quests
 						q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
-							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coords"] = {
 								{ 52.97, 94.35, 1165 },
 							},
@@ -90,7 +90,7 @@ _.Zones =
 						}),
 						q(53416, {	-- Warfront: The Battle For Stromgarde [Tier 3]
 							["sourceQuests"] = { 53212 },	-- Back to Zuldazar
-							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coords"] = {
 								{ 52.97, 94.35, 1165 },
 							},
@@ -112,7 +112,7 @@ _.Zones =
 						}),
 						q(56137, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
 							["sourceQuests"] = { 53212 },	-- Back to Zuldazar
-							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coords"] = {
 								{ 52.97, 94.35, 1165 },
 							},
@@ -206,12 +206,12 @@ _.Zones =
 							},
 						}),
 						q(54329, {	-- Darkshore Donations: War Resources
-							["qg"] = 142158,	-- Quartermaster Rauka
+							["provider"] = { "n", 142158 },	-- Quartermaster Rauka
 							["coord"] = { 51.71, 95.07, 1165 },
 							["isDaily"] = true,
 						}),
 						q(52930, {	-- Wartime Donation: Gold
-							["qg"] = 142157,	-- Paymaster Grintooth
+							["provider"] = { "n", 142157 },	-- Paymaster Grintooth
 							["coords"] = {
 								{ 51.71, 95.55, 1165 },
 							},
@@ -219,22 +219,22 @@ _.Zones =
 							["isWeekly"] = true,
 						}),
 						q(53335, {	-- Wartime Donation: War Resources
-							["qg"] = 142158,	-- Quartermaster Rauka
+							["provider"] = { "n", 142158 },	-- Quartermaster Rauka
 							["coord"] = { 51.71, 95.07, 1165 },
 							["isWeekly"] = true,
 						}),
 						q(53208, {	-- To The Front
 							["sourceQuests"] = { 138949 },	-- The Warfront Looms
-							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coord"] = { 52.97, 94.35, 1165 },
 							["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag
 						}),
 						q(53209, {	-- Warfront Contribution
-							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coord"] = { 52.97, 94.35, 1165 },
 						}),
 						q(53207, {	-- The Warfront Looms
-							["qg"] = 138949,	-- Throk <Recruitment Officer>
+							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coords"] = {
 								{ 52.97, 94.35, 1165 },
 							},

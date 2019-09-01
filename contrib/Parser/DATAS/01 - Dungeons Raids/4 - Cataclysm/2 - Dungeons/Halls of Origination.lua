@@ -14,7 +14,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(28746, {	-- Penetrating Their Defenses
-					["qg"] = 39908,	-- Brann Bronzebeard
+					["provider"] = { "n", 39908 },	-- Brann Bronzebeard
 					["sourceQuests"] = { 28654 },	-- The Heart of the Matter
 					["groups"] = {
 						i(66913),	-- Repository Gauntlets
@@ -23,7 +23,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 				q(28753, {	-- Doing it the Hard Way
-					["qg"] = 39908,	-- Brann Bronzebeard
+					["provider"] = { "n", 39908 },	-- Brann Bronzebeard
 					["sourceQuests"] = { 28746 },	-- Penetrating Their Defenses
 					["groups"] = {
 						i(66917),	-- True Archaeologist's Bracers

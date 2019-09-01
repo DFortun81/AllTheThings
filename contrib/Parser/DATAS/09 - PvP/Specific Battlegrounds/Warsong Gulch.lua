@@ -20,7 +20,7 @@ _.PVP =
 					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
 					["g"] = {
 						q(7865,  {	-- Sentinel Advanced Care Package
-							["qg"] = 14753,	-- Illiyana Moonblaze
+							["provider"] = { "n", 14753 },	-- Illiyana Moonblaze
 							["lvl"] = 45,
 							["coord"] = { 61.5, 83.9, 63 },
 							["races"] = ALLIANCE_ONLY,
@@ -28,7 +28,7 @@ _.PVP =
 						}),
 						q(7863,  {	-- Sentinel Basic Care Package
 							["u"] = 40,
-							["qg"] = 14753,	-- Illiyana Moonblaze
+							["provider"] = { "n", 14753 },	-- Illiyana Moonblaze
 							["lvl"] = 25,
 							["coord"] = { 61.5, 83.9, 63 },
 							["races"] = ALLIANCE_ONLY,
@@ -36,7 +36,7 @@ _.PVP =
 						}),
 						q(7864,  {	-- Sentinel Standard Care Package
 							["u"] = 40,
-							["qg"] = 14753,	-- Illiyana Moonblaze
+							["provider"] = { "n", 14753 },	-- Illiyana Moonblaze
 							["lvl"] = 35,
 							["coord"] = { 61.5, 83.9, 63 },
 							["races"] = ALLIANCE_ONLY,

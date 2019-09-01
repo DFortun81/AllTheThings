@@ -11,9 +11,9 @@ _.Zones =
 						i(94025),	-- Red Panda
 					},
 					["description"] = "Account-Wide Quest.|r",
-					["qgs"] = {
-						64572,	-- Sara Finkleswitch
-						64582,	-- Gentle San
+					["providers"] = {
+						{ "n", 64572 },	-- Sara Finkleswitch
+						{ "n", 64582 },	-- Gentle San
 					},
 				}),
 				q(32604, {	-- Beasts of Fable Book I
@@ -23,7 +23,7 @@ _.Zones =
 					["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
 					["isDaily"] = true,
 					["sourceQuests"] = { 32603 },	-- Beasts of Fable
-					["qgs"] = { 64572 },	-- Sara Finkleswitch
+					["provider"] = { "n", 64572 },	-- Sara Finkleswitch
 				}),
 				q(32868, {	-- Beasts of Fable Book II
 					["g"] = {
@@ -32,7 +32,7 @@ _.Zones =
 					["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
 					["isDaily"] = true,
 					["sourceQuests"] = { 32603 },	-- Beasts of Fable
-					["qgs"] = { 64572 },	-- Sara Finkleswitch
+					["provider"] = { "n", 64572 },	-- Sara Finkleswitch
 				}),
 				q(32869, {	-- Beasts of Fable Book III
 					["g"] = {
@@ -41,7 +41,7 @@ _.Zones =
 					["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
 					["isDaily"] = true,
 					["sourceQuests"] = { 32603 },	-- Beasts of Fable
-					["qgs"] = { 64572 },	-- Sara Finkleswitch
+					["provider"] = { "n", 64572 },	-- Sara Finkleswitch
 				}),
 				q(31958, {	-- Grand Master Aki
 					["g"] = {
@@ -52,7 +52,7 @@ _.Zones =
 						31930,	-- Battle Pet Tamers: Pandaria [Alliance]
 						31952,	-- Battle Pet Tamers: Pandaria [Horde]
 					},
-					["qgs"] = { 66741 },	-- Aki the Chosen
+					["provider"] = { "n", 66741 },	-- Aki the Chosen
 				}),
 				q(32428, {	-- Pandaren Spirit Tamer
 					["g"] = {				

@@ -7,7 +7,7 @@ _.Zones =
 		m(942, {	-- Stormsong Valley
 			n(-169, { 	-- Emissary Quests
 				q(54451, {	-- Baubles from the Seekers
-					["qg"] = 135793,	-- Collector Kojo
+					["provider"] = { "n", 135793 },	-- Collector Kojo
 					["lvl"] = 120,
 					["coord"] = { 40.54, 36.41, 942 },
 					["repeatable"] = true,
@@ -21,14 +21,14 @@ _.Zones =
 					},
 				}),
 				q(50601, {	-- Storm's Wake
-					["qg"] = 135800,	-- Sister Lilyana
+					["provider"] = { "n", 135800 },	-- Sister Lilyana
 					["lvl"] = 120,
 					["coord"] = { 59.29, 69.33, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(54457, {	-- Supplies from Storm's Wake
-					["qg"] = 135800,	-- Sister Lilyana
+					["provider"] = { "n", 135800 },	-- Sister Lilyana
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 59.29, 69.33, 942 },
@@ -41,7 +41,7 @@ _.Zones =
 					},
 				}),
 				q(50604, {	-- Tortollan Seekers
-					["qg"] = 135793,	-- Collector Kojo
+					["provider"] = { "n", 135793 },	-- Collector Kojo
 					["lvl"] = 120,
 					["coord"] = { 40.54, 36.41, 942 },
 					["isDaily"] = true,

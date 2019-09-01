@@ -13,13 +13,13 @@ _.Zones =
 						}),
 						--[[
 						q(47904, {	-- Preserve the True Future
-							["qg"] = 0,	-- Unable to pull from Wowhead.
+							["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
 						}),
 						q(47545, {	-- Rewind
-							["qg"] = 0,	-- Unable to pull from Wowhead.
+							["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
 						}),
 						q(47543, {	-- The Day That Chromie Dies
-							["qg"] = 0,	-- Unable to pull from Wowhead.
+							["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
 						}),
 						]]--
 						q(47906, { 		-- The Deaths of Chromie
@@ -82,7 +82,7 @@ _.Zones =
 						}),
 						--[[
 						q(47550, {	-- The Many Advantages of Being a Time Dragon
-							["qg"] = 0,	-- Unable to pull from Wowhead.
+							["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
 						}),
 						]]--
 						i(151482, { 	-- Time-Lost Wallet

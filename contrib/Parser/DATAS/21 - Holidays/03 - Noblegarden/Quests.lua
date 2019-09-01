@@ -8,9 +8,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 			{	--	A Tisket, a Tasket, a Noblegarden Basket [Alliance]
 				["questID"] = 13502,	-- A Tisket, a Tasket, a Noblegarden Basket
 				["u"] = 19,				-- Noblegarden Filter
-				["qgs"] = {
-					32836,	-- Noblegarden Vendor
-				},
+				["provider"] = { "n", 32836 },	-- Noblegarden Vendor
 				["coords"] = {
 					{ 49.01, 51.19, 97 },	-- Azure Watch, Azuremyst Isle
 					{ 55.72, 51.31, 57 },	-- Dolanaar, Teldrassil
@@ -33,9 +31,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 			{	--	A Tisket, a Tasket, a Noblegarden Basket [Horde]
 				["questID"] = 13503,	-- A Tisket, a Tasket, a Noblegarden Basket
 				["u"] = 19,				-- Noblegarden Filter
-				["qgs"] = {
-					32837,	-- Noblegarden Merchant  [Falconwing]
-				},
+				["provider"] = { "n", 32837 },	-- Noblegarden Merchant  [Falconwing]
 				["coords"] = {
 					{ 47.11, 59.89, 7 },	-- Bloodhoof Village, Mulgore
 					{ 61.35, 52.98, 18 },	-- Brill, Tirisfal Glades
@@ -58,13 +54,13 @@ _.Holidays = bubbleDown({["u"] = 19},
 			{	--	Spring Gathers [Alliance]
 				["questID"] = 13484,	-- Spring Gatherers
 				["u"] = 19,				-- Noblegarden Filter
-				["qgs"] = {
-					19171,	-- Draenei Commoner
-					19148,	-- Dwarf Commoner
-					20102,	-- Goblin Commoner
-					19172,	-- Gnome Commoner
-					18927,	-- Human Commoner
-					19173,	-- Night Elf Commoner
+				["providers"] = {
+					{ "n", 19171 },	-- Draenei Commoner
+					{ "n", 19148 },	-- Dwarf Commoner
+					{ "n", 20102 },	-- Goblin Commoner
+					{ "n", 19172 },	-- Gnome Commoner
+					{ "n", 18927 },	-- Human Commoner
+					{ "n", 19173 },	-- Night Elf Commoner
 				},
 				["coords"] = {
 					{ 33.19, 52.65, 126 },	-- Dalaran: Northrend [Goblin]
@@ -123,13 +119,13 @@ _.Holidays = bubbleDown({["u"] = 19},
 			{	--	Spring Gathers [Horde]
 				["questID"] = 13483,	-- Spring Gatherers
 				["u"] = 19,				-- Noblegarden Filter
-				["qgs"] = {
-					19169,	-- Blood Elf Commoner
-					19178,	-- Forsaken Commoner
-					20102,	-- Goblin Commoner
-					19175,	-- Orc Commoner
-					19176,	-- Tauren Commoner
-					19177,	-- Troll Commoner
+				["providers"] = {
+					{ "n", 19169 },	-- Blood Elf Commoner
+					{ "n", 19178 },	-- Forsaken Commoner
+					{ "n", 20102 },	-- Goblin Commoner
+					{ "n", 19175 },	-- Orc Commoner
+					{ "n", 19176 },	-- Tauren Commoner
+					{ "n", 19177 },	-- Troll Commoner
 				},
 				["coords"] = {
 					{ 33.19, 52.65, 126 },	-- Dalaran: Northrend [Goblin]
@@ -197,9 +193,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["questID"] = 13480,	-- The Great Egg Hunt
 				["u"] = 19,				-- Noblegarden Filter
 				["isDaily"] = true,
-				["qgs"] = {
-					32799,	-- Spring Collector
-				},
+				["provider"] = { "n", 32799 },	-- Spring Collector
 				["coords"] = {
 					{ 49.07, 51.25, 97 },	-- Azure Watch, Azuremyst Isle
 					{ 55.59, 51.36, 57 },	-- Dolanaar, Teldrassil
@@ -227,9 +221,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["questID"] = 13479,	-- The Great Egg Hunt
 				["u"] = 19,				-- Noblegarden Filter
 				["isDaily"] = true,
-				["qgs"] = {
-					32798,	-- Spring Gatherer [Falconwing]
-				},
+				["provider"] = { "n", 32798 },	-- Spring Gatherer [Falconwing]
 				["coords"] = {
 					{ 46.92, 59.53, 7 },	-- Bloodhoof Village, Mulgore
 					{ 61.63, 53.12, 18 },	-- Brill, Tirisfal Glades

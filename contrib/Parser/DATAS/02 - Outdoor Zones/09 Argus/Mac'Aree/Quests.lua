@@ -8,7 +8,7 @@ _.Zones =
 			n(-17,  {	-- Quests
 				{	-- A Colorful Key
 					["questID"] = 48075,	-- A Colorful Key
-					["qg"] = 125343,		-- Vorel
+					["provider"] = { "n", 125343 },		-- Vorel
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["sourceQuests"] = { 46941 },	-- The Path Forward
 					["groups"] = {
@@ -28,7 +28,7 @@ _.Zones =
 				},
 				{	-- A Crowning Achievement
 					["questID"] = 48076,	--  A Crowning Achievment
-					["qg"] = 125343,		-- Vorel
+					["provider"] = { "n", 125343 },		-- Vorel
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["sourceQuests"] = {
 						48075,	-- A Colorful Key

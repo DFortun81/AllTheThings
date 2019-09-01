@@ -25,26 +25,26 @@ _.ExpansionFeatures =
 							-- Quest is actually picked up in Dalaran.
 							["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 							["classes"] = { 5 },	-- Priest
-							["qgs"] = {
-								101344,	-- Hooded Priestess (Horde)
-								102333,	-- Hooded Priestess (Alliance)
+							["providers"] = {
+								{ "n", 101344 },	-- Hooded Priestess (Horde)
+								{ "n", 102333 },	-- Hooded Priestess (Alliance)
 							},
 						}),	
 						q(40706, {	-- A Legend You Can Hold
 							["sourceQuests"] = { 40705 },	-- Priestly Matters
 							["races"] = HORDE_ONLY,
-							["qg"] = 101314,	-- Alonsus Faol
+							["provider"] = { "n", 101314 },	-- Alonsus Faol
 						}),	
 						q(43935, {	-- A Second Legend
 							["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 							["races"] = HORDE_ONLY,
 							["coord"] = { 51.1, 48.2, 702 },
 							["lvl"] = 102,
-							["qg"] = 110564,	-- Alonsus Faol
+							["provider"] = { "n", 110564 },	-- Alonsus Faol
 						}),	
 						q(44407, {	-- The Third Legend
 							["sourceQuests"] = { 43935 },	-- A Second Legend
-							["qg"] = 110564,	-- Alonsus Faol
+							["provider"] = { "n", 110564 },	-- Alonsus Faol
 							["races"] = HORDE_ONLY,
 						}),	
 						i(128868, {	-- Light's Wrath
@@ -52,11 +52,11 @@ _.ExpansionFeatures =
 								q(41625, {	-- The Light's Wrath
 									["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
 									["classes"] = { 5 },	-- Priest
-									["qg"] = 101314,	-- Alonsus Faol
+									["provider"] = { "n", 101314 },	-- Alonsus Faol
 								}),	
 								q(41626, {	-- A New Threat
 									["sourceQuests"] = { 41625 } ,	-- The Light's Wrath
-									["qg"] = 101314,	-- Alonsus Faol
+									["provider"] = { "n", 101314 },	-- Alonsus Faol
 								}),	
 								q(41627, {	-- A Forgotten Enemy
 									["sourceQuests"] = { 41626 } ,	-- A New Threat
@@ -69,49 +69,52 @@ _.ExpansionFeatures =
 								}),	
 								q(41630, {	-- Unleashing Judgment
 									["sourceQuests"] = { 41628 } ,	-- Harnessing the Holy Fire
-									["qg"] = 105917,	-- Image of Kalec
+									["provider"] = { "n", 105917 },	-- Image of Kalec
 								}),	
 								q(41631, {	-- The Nexus Vault
 									["sourceQuests"] = { 41629 } ,	-- Unleashing Judgment
-									["qg"] = 105917,	-- Image of Kalec
+									["provider"] = { "n", 105917 },	-- Image of Kalec
 								}),	
 								q(41632, {	-- A Gift of Time
 									["sourceQuests"] = { 41630 } ,	-- The Nexus Vault
-									["qg"] = 105081,	-- Archmage Kalec
+									["provider"] = { "n", 105081 },	-- Archmage Kalec
 								}),	
 							},
 						}),
 						i(128825, {	-- T'uure, Beacon of the Naaru
 							q(41957, {	-- The Vindicator's Plea
 								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
-								["qg"] = 101314,	-- Alonsus Faol
+								["provider"] = { "n", 101314 },	-- Alonsus Faol
 								["races"] = HORDE_ONLY,
 							}),	
 							q(41966, {	-- House Call
 								["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
-								["qg"] = 105602,	-- Vindicator Boros
+								["provider"] = { "n", 105602 },	-- Vindicator Boros
 								["races"] = HORDE_ONLY,
 							}),	
 							q(41967, {	-- Out of the Darkness
 								["sourceQuests"] = { 41966 },	-- House Call
-								["qg"] = 105603,	-- Defender Barrem
+								["provider"] = { "n", 105603 },	-- Defender Barrem
 								["races"] = HORDE_ONLY,
 							}),	
 							q(41993, {	-- Salvation From On High
 								["sourceQuests"] = { 41967 },	-- Out of the Darkness
-								["qg"] = 105684,	-- Alora
+								["provider"] = { "n", 105684 },	-- Alora
 								["races"] = HORDE_ONLY,
 							}),	
 							q(42074, {	-- Return of the Light
 								["sourceQuests"] = { 41993 },	-- Salvation From On High
-								["qg"] = 106011,	-- Jace  Darkweaver
+								["provider"] = { "n", 106011 },	-- Jace  Darkweaver
 								["races"] = HORDE_ONLY,
 							}),
 						}),
 						i(128827, {	-- Xal'atah, Blade of the Black Empire
 							i(133958),	-- Secrets of the Void 
 							q(40710, {	-- Blade in Twilight
-								["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
+								["providers"] = {
+									{ "n", 101314 },	-- Alonsus Faol
+									{ "n", 110564 },	-- Alonsus Faol
+								},
 								["lvl"] = 98,
 								["coord"] = { 79.0, 40.9, 18 },
 								["classes"] = { 5 },	-- Priest
@@ -141,19 +144,19 @@ _.ExpansionFeatures =
 								q(44342, {	-- Volume VI
 									["title"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
 									["description"] = "You must get this volume first in order to collect the others.  Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you the first volume.",
-									["qg"] = 111119,	-- Archivist Inkforge
+									["provider"] = { "n", 111119 },	-- Archivist Inkforge
 									["coord"] = { 62.5, 36.3, 702 },
 								}),
 								q(44339, {	-- Volume I
 									["title"] = "|cFFFFFFFFVolume I|r | The Violet Citadel in new Dalaran.",
 									["description"] = "Khadgar is located in the Violet Citadel in new Dalaran. On the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\nWorld Spawn - might be on cooldown!",
-									["qg"] = 113873,	-- Archivist Elysiana <Curator>
+									["provider"] = { "n", 113873 },	-- Archivist Elysiana <Curator>
 									["coord"] = { 30.6, 50.8, 627 },
 								}),
 								q(44340, {	-- Volume II
 									["title"] = "|cFFFFFFFFVolume II|r | Behind Juvess the Duskwhisperer in the Class Order Hall.",
 									["description"] = "High Priestess Ishanah is on the other side of the alcove, and next to her is a Draenei Anchorite.\n\nWorld Spawn - might be on cooldown!",
-									["qg"] = 111738,	-- Juvess the Duskwhisperer
+									["provider"] = { "n", 111738 },	-- Juvess the Duskwhisperer
 									["coord"] = { 58.4, 25.1, 702 },
 								}),
 								q(44341, {	-- Volume III
@@ -168,13 +171,13 @@ _.ExpansionFeatures =
 								q(44344, {	-- Volume IV
 									["title"] = "|cFFFFFFFFVolume IV|r | Bookshelf to the left of Meridelle Lightspark in the Class Order Hall. ",
 									["description"] = "On the left side of Meridelle Lightspark there is a shelf. On the lower board, there are some stacked books, and this volume is on the right side of those.\n\nWorld Spawn - might be on cooldown!",
-									["qg"] = 112401,	-- Meridelle Lightspark <Logistics>
+									["provider"] = { "n", 112401 },	-- Meridelle Lightspark <Logistics>
 									["coord"] = { 37.2, 25.0, 702 },
 								}),
 								q(44343, {	-- Volume V
 									["title"] = "|cFFFFFFFFVolume V|r | Chillheart's room in Scholomance.",
 									["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trashpack on the right side. The book is on top of the 6th bookshelf from the right.",
-									["qg"] = 58633,	-- Instructor Chillheart
+									["provider"] = { "n", 58633 },	-- Instructor Chillheart
 									["coords"] = {
 										{ 69.0, 72.9, 22 },		-- Scholomance entrance
 										{ 58.8, 84.0, 476 },	--	Actual volume inside the dungeon
@@ -183,7 +186,7 @@ _.ExpansionFeatures =
 								q(44345, {	-- Volume VII
 									["title"] = "|cFFFFFFFFVolume VII|r | The Flameweaver's library in Scarlet Halls.",
 									["description"] = "Run through the instance to Flameweaver Koegler's room. on the left-hand side of the room there's a table with a candelabra. Volume 7 is on the bench between the table and the bookshelf.",
-									["qg"] = 59150,	-- Flameweaver Koegler
+									["provider"] = { "n", 59150 },	-- Flameweaver Koegler
 									["coords"] = {
 										{ 69.0, 24.9, 19 },		-- Scarlet Halls entrance
 										{ 35.7, 14.2, 432 },	-- Actual volume inside instance
@@ -192,19 +195,19 @@ _.ExpansionFeatures =
 								q(44350, {	-- Volume VIII
 									["title"] = "|cFFFFFFFFVolume VIII|r | A rare in the cave southwest of Halls of Valor in Stormheim (Inquisitor Ernstenbok).",
 									["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
-									["qg"] = 90139,	-- Inquisitor Ernstenbok
+									["provider"] = { "n", 90139 },	-- Inquisitor Ernstenbok
 									["coord"] = { 63.6, 74.4, 634 },
 								}),
 								q(44347, {	-- Volume IX
 									["title"] = "|cFFFFFFFFVolume IX|r | Artificer Lothaire in Moon Guard Stronghold, Suramar.",
 									["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
-									["qg"] = 106351,	-- Artificer Lothaire
+									["provider"] = { "n", 106351 },	-- Artificer Lothaire
 									["coord"] = { 33.8, 15.0, 680 },
 								}),
 								q(44348, {	-- Volume X
 									["title"] = "|cFFFFFFFFVolume X|r | Black Rook Hold in corner of room with ghosts and bookshelves.",
 									["description"] = "After defeating the first boss, you will get into the Map-Room with a large setup in the middle. Head along the left side, the book is on one of the tables.",
-									["qg"] = 98542,	-- Amalgam of Souls
+									["provider"] = { "n", 98542 },	-- Amalgam of Souls
 									["coords"] = { 
 										{ 58.6, 75.8, 751 },	-- item in instance
 										{ 38.4, 50.8, 641 },	-- Black Rook Hold entrance
@@ -213,7 +216,7 @@ _.ExpansionFeatures =
 								q(44349, {	-- Volume XI
 									["title"] = "|cFFFFFFFFVolume XI|r | Guardian's Library in old Karazhan.",
 									["description"] = "After the Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and 3 bookshelves below. Volume 11 is on the bottom of the left-hand bookshelf.",
-									["qg"] = 15691,	-- The Curator
+									["provider"] = { "n", 15691 },	-- The Curator
 									["coords"] = {
 										{ 46.9, 74.8, 42 },	-- Karazhan entrance
 										{ 36.8, 37.9, 358 },
@@ -222,7 +225,7 @@ _.ExpansionFeatures =
 								q(44346, {	-- Volume XII
 									["title"] = "|cFFFFFFFFVolume XII|r | Chief Bitterbrine on the Queen's Reprisal in Azsuna.",
 									["description"] = "Fly to Shackle's Den and head east.\n\nIf several kill the mob, only one Priest is able to loot the book!",
-									["qg"] = 106990,	-- Chief Bitterbrine
+									["provider"] = { "n", 106990 },	-- Chief Bitterbrine
 									["coord"] = { 65.6, 56.8, 630 },
 								}),
 								i(139567, {	-- Writings of the End
@@ -236,7 +239,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					q(41019, {	-- Actions on Azeroth
-						["qg"] = 102655,	-- Alonsus Faol
+						["provider"] = { "n", 102655 },	-- Alonsus Faol
 						["coord"] = { 48.9, 49.1, 702 },
 						["classes"] = { 5 },	-- Priest
 						["sourceQuests"] = { 40938 },	-- The Light and the Void
@@ -246,16 +249,16 @@ _.ExpansionFeatures =
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 75.7, 40.7, 702 },
 						["lvl"] = 103,
-						["qg"] = 102587,	-- Saa'ra
+						["provider"] = { "n", 102587 },	-- Saa'ra
 					}),
 					q(46034, {	-- Champion: Aelthalyste
-						["qg"] = 120842,	-- Aelthalyste
+						["provider"] = { "n", 120842 },	-- Aelthalyste
 						["g"] = {
 							follower(1002),	-- Champion: Akama
 						},
 					}),
 					q(43398, {	-- Champion: Alonsus Faol
-						["qg"] = 110564,	-- Alonsus Faol <Bishop of Secrets>
+						["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
 						["g"] = {
 							follower(875),	-- Alonsus Faol
 						},
@@ -263,7 +266,7 @@ _.ExpansionFeatures =
 					q(43271, {	-- Champion: Calia Menethil
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
 						["coord"] = { 51.6, 50.0, 702 },
-						["qg"] = 110596,	-- Calia Menethil
+						["provider"] = { "n", 110596 },	-- Calia Menethil
 						["g"] = {
 							follower(856),	-- Calia Menethil
 						},
@@ -271,26 +274,26 @@ _.ExpansionFeatures =
 					q(43272, {	-- Champion: High Priestess Ishanah
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
 						["coord"] = { 57.4, 26.9, 702 },
-						["qg"] = 110598,	-- High Priestess Ishanah
+						["provider"] = { "n", 110598 },	-- High Priestess Ishanah
 						["g"] = {
 							follower(857),	-- High Priestess Ishanah
 						},
 					}),
 					q(43381, {	-- Champion: Mariella Ward
-						["qg"] = 111215,	-- Mariella Ward
+						["provider"] = { "n", 111215 },	-- Mariella Ward
 						["g"] = {
 							i(139762),	-- Bracers of the High Priest
 							follower(873),	-- Mariella Ward
 						},
 					}),
 					q(43382, {	-- Champion: Natalie Seline
-						["qg"] = 110684,	-- Natalie Seline <Cult of Forgotten Shadows>
+						["provider"] = { "n", 110684 },	-- Natalie Seline <Cult of Forgotten Shadows>
 						["g"] = {
 							follower(874),	-- Natalie Seline
 						},
 					}),
 					q(43380, {	-- Champion: Sol
-						["qg"] = 110457,	-- Sol
+						["provider"] = { "n", 110457 },	-- Sol
 						["g"] = {
 							follower(872),	-- Sol
 						},
@@ -300,18 +303,18 @@ _.ExpansionFeatures =
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 48.9, 48.7, 702 },
 						["lvl"] = 103,
-						["qg"] = 110571,	-- Delas Moonfang
+						["provider"] = { "n", 110571 },	-- Delas Moonfang
 					}),
 					q(43390, {	-- Forgotten Shadows
 						["classes"] = { 5 },	-- Priest
-						["qg"] = 110564,	-- Alonsus Faol <Bishop of Secrets>
+						["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
 					}),
 					q(43377, {	-- Halls of Valor: The Light Within
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 50.9, 46.8, 702 },
 						["lvl"] = 103,
-						["qg"] = 110564,	-- Alonsus Faol
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43402, {	-- High Priest of Netherlight
 						i(139759),	-- Chest
@@ -329,35 +332,35 @@ _.ExpansionFeatures =
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 50.9, 46.8, 702 },
 						["lvl"] = 103,
-						["qg"] = 109776,	-- Moira Thaurissan
+						["provider"] = { "n", 109776 },	-- Moira Thaurissan
 					}),
 					q(43275, {	-- Recruiting the Troops
 						["sourceQuests"] = { 43273 },	-- Spread the Word
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 51.2, 48.3, 702 },
 						["lvl"] = 101,
-						["qg"] = 110564,	-- Alonsus Faol
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43371, {	-- Relieving the Front Lines
 						["sourceQuests"] = { 43277 },	-- Tech It Up A Notch
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 51.1, 48.5, 702 },
 						["lvl"] = 101,
-						["qg"] = 110564,	-- Alonsus Faol
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43270, {	-- Rise, Champions
 						["sourceQuests"] = { 44100 },	-- Proper Introductions
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 51.1, 48.2, 702 },
 						["lvl"] = 101,
-						["qg"] = 110564,	-- Alonsus Faol
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43273, {	-- Spread the Word
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 51.2, 48.3, 702 },
 						["lvl"] = 101,
-						["qg"] = 110564,	-- Alonsus Faol
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(39864, {	-- Stormheim
 						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
@@ -367,14 +370,14 @@ _.ExpansionFeatures =
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 51.1, 48.5, 702 },
 						["lvl"] = 101,
-						["qg"] = 110564,	-- Alonsus Faol
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43372, {	-- The Best and Brightest
 						["sourceQuests"] = { 43372 },	-- Whispers in the Void
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 48.2, 48.2, 702 },
 						["lvl"] = 103,
-						["qg"] = 110557,	-- Prophet Velen
+						["provider"] = { "n", 110557 },	-- Prophet Velen
 					}),
 					q(45789, {	-- The Sunken Vault
 						["classes"] = { 5 },
@@ -392,7 +395,7 @@ _.ExpansionFeatures =
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 51.2, 48.3, 702 },
 						["lvl"] = 101,
-						["qg"] = 110564,	-- Alonsus Faol
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43379, {	-- Velen's Vision
 						-- awarded third criteria for "fighting with style: classic" achievement
@@ -401,14 +404,14 @@ _.ExpansionFeatures =
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 48.3, 47.8, 702 },
 						["lvl"] = 103,
-						["qg"] = 110557,	-- Prophet Velen
+						["provider"] = { "n", 110557 },	-- Prophet Velen
 					}),
 					q(43372, {	-- Whispers in the Void
 						["sourceQuests"] = { 43371 },	-- Relieving the Front Lines
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 51.2, 48.7, 702 },
 						["lvl"] = 103,
-						["qg"] = 110564,	-- Alonsus Faol
+						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					--[[ Artifact Appearance Quests Commented Out For Now
 					q(43420, {	-- A Hero's Weapon

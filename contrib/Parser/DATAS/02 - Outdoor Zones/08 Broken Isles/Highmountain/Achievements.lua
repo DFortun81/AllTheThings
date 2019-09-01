@@ -255,7 +255,7 @@ _.Zones =
 								["itemID"] = 139524,		-- Crumpled Letter
 								--["questID"] = 42333,		-- Crumpled Letter (Quest)
 								["description"] = "Western Highmountain next to Skyhorn.",
-								["qgs"] = {96774}
+								["crs"] = {96774}
 							},
 							{
 								["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -263,7 +263,7 @@ _.Zones =
 								["itemID"] = 139525,		-- Crumpled Note
 								--["questID"] = 42334,		-- Crumpled Note (Quest)
 								["description"] = "Northern Highmountain.",
-								["qgs"] = {104323}
+								["crs"] = {104323}
 							},
 							{
 								["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -271,7 +271,7 @@ _.Zones =
 								["itemID"] = 139523,		-- Fevered Letter
 								--["questID"] = 42323,		-- Fevered Letter (Quest)
 								["description"] = "Southern Highmountain.",
-								["qgs"] = {103177}
+								["crs"] = {103177}
 							}
 						},
 					})),

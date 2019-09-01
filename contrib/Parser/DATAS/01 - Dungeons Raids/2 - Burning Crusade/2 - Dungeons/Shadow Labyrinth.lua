@@ -14,11 +14,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["g"] = {
 					{	-- Ambassador Hellmaw
 						["questID"] = 29645,	-- Ambassador Hellmaw
-						["qg"] = 54890,			-- Field Commander Mahfuun
+						["provider"] = { "n", 54890 },			-- Field Commander Mahfuun
 					},
 					{	-- Find Spy To'gun
 						["questID"] = 29640,	-- Find Spy To'gun
-						["qg"] = 54891,			-- Spy Grik'tha
+						["provider"] = { "n", 54891 },			-- Spy Grik'tha
 					},
 					{	-- Into the Heart of the Labyrinth
 						["questID"] = 29644,	-- Into the Heart of the Labyrinth
@@ -44,7 +44,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 					{	-- The Soul Devices
 						["questID"] = 29641,	-- The Soul Devices
-						["qg"] = 18891,			-- Spy To'gun
+						["provider"] = { "n", 18891 },			-- Spy To'gun
 						["sourceQuests"] = {
 							29640,	-- Find Spy To'gun
 						},
@@ -65,7 +65,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 					{	-- The Codex of Blood
 						["questID"] = 29643,	-- The Codex of Blood
-						["qg"] = 54890,			-- Field Commander Mahfuun
+						["provider"] = { "n", 54890 },			-- Field Commander Mahfuun
 					},
 				},
 			},

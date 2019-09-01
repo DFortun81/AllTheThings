@@ -16,18 +16,18 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["g"] = {
 					{	-- Raging Spirits
 						["questID"] = 29591,	-- Raging Spirits
-						["qg"] = 54698,			-- Tormented Soulpriest
+						["provider"] = { "n", 54698 },			-- Tormented Soulpriest
 					},
 					{	-- The Dead Watcher
 						["questID"] = 29590,	-- The Dead Watcher
-						["qg"] = 54725,			-- Draenei Spirit
+						["provider"] = { "n", 54725 },			-- Draenei Spirit
 					},
 					{	-- The End of the Exarch
 						["questID"] = 29596,	-- The End of the Exarch
 						["sourceQuests"] = {
 							29595,	-- Everything Will Be Alright
 						},
-						["qg"] = 54725,			-- Draenei Spirit
+						["provider"] = { "n", 54725 },			-- Draenei Spirit
 						["g"] = {
 							{	-- Auchenai Anchorite's Robe
 								["itemID"] = 29341,	-- Auchenai Anchorite's Robe

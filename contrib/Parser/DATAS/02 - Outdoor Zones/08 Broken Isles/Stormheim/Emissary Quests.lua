@@ -8,7 +8,7 @@ _.Zones =
 			n(-169,   {	-- Emissary Quests
 				q(42234, {	-- The Valarjar
 					["repeatable"] = true,
-					["qg"] = 106904,	-- Valdemar Stormseeker <Valarjar Emissary>
+					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
 					["groups"] = {
 						i(157824, {	-- Valarjar Cache
 							["sym"] = {
@@ -50,7 +50,7 @@ _.Zones =
 				n(-206, {	-- Paragon
 					q(46746, {	-- Supplies from the Valarjar
 						["repeatable"] = true,
-						["qg"] = 106904,	-- Valdemar Stormseeker <Valarjar Emissary>
+						["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
 						["groups"] = {
 							i(152106, {	-- Valarjar Strongbox
 								i(147805),	-- Valarjar Stormwing

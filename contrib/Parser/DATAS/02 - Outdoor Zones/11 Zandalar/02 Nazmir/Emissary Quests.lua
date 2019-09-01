@@ -7,7 +7,7 @@ _.Zones =
 		m(863, {	-- Nazmir
 			n(-169, { 	-- Emissary Quests
 				q(54460, {	-- Supplies from Talanji's Expedition
-					["qg"] = 135459,	-- Provisioner Lija
+					["provider"] = { "n", 135459 },	-- Provisioner Lija
 					["lvl"] = 120,
 					["coord"] = { 39.11, 79.47, 863 },
 					["races"] = HORDE_ONLY,
@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				q(50602, {	-- Talanji's Expedition
-					["qg"] = 135459,	-- Provisioner Lija
+					["provider"] = { "n", 135459 },	-- Provisioner Lija
 					["lvl"] = 120,
 					["coord"] = { 39.11, 79.47, 863 },
 					["races"] = HORDE_ONLY,

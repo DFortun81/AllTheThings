@@ -51,7 +51,7 @@ _.ExpansionFeatures =
 					q(42682, {	-- Additional Accoutrements
 						["sourceQuests"] = { 42683 },	-- Demonic Improvements
 						["coord"] = { 59.7, 50.3, 720 },
-						["qg"] = 98632,  -- Matron Mother Malevolence
+						["provider"] = { "n", 98632 },  -- Matron Mother Malevolence
 					}),
 					q(40247, {	-- Asking a Favor
 						["sourceQuests"] = {
@@ -60,13 +60,16 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 58.6, 56.5, 720 },
-						["qgs"] = { 99247, 108572 },	-- Kayn Sunfury (2 versions)
+						["providers"] = {
+							{ "n", 99247 },	-- Kayn Sunfury
+							{ "n", 108572 },	-- Kayne Sunfury
+						},
 					}),
 					q(42801, {	-- Back in Black
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
 						["coord"] = { 57.0, 53.1, 720 },
 						["lvl"] = 103,
-						["qg"] = 108782,	-- Belath Dawnblade
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 					}),
 					q(42679, {	-- Broken Warriors
 						["sourceQuests"] = {
@@ -75,12 +78,12 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 					}),
 					q(42690, {	-- Champion: Altruis the Sufferer
 						["sourceQuests"] = { 42670 },	-- Rise, Champions (Altruis) — must be on this quest
 						["lvl"] = 101,
-						["qg"] = 108571,	-- Altruis the Sufferer
+						["provider"] = { "n", 108571 },	-- Altruis the Sufferer
 						["g"] = {
 							follower(498),	-- Champion: Altruis the Sufferer
 						},
@@ -91,7 +94,7 @@ _.ExpansionFeatures =
 							42670,	-- Rise, Champions (Altruis) — must be on this quest
 						}, 
 						["lvl"] = 101,
-						["qg"] = 108326,  -- Asha Ravensong
+						["provider"] = { "n", 108326 },  -- Asha Ravensong
 						["g"] = {
 							follower(722),	-- Champion: Asha Ravensong
 						},
@@ -102,7 +105,7 @@ _.ExpansionFeatures =
 						}, 
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
-						["qg"] = 108572,	-- Kayn Sunfury
+						["provider"] = { "n", 108572 },	-- Kayn Sunfury
 						["g"] = {
 							follower(595),	-- Champion: Kayn Sunfury
 						},
@@ -114,7 +117,7 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["g"] = {
 							follower(721),	-- Champion: Kor'vas Bloodthorn
 						},
@@ -126,7 +129,7 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["qg"] = 108246,	-- Shade of Akama
+						["provider"] = { "n", 108246 },	-- Shade of Akama
 						["g"] = {
 							follower(719),	-- Champion: Shade of Akama
 						},
@@ -135,60 +138,60 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42801 },	-- Back in Black
 						["coord"] = { 59.4, 50.5, 720 },
 						["lvl"] = 103,
-						["qg"] = 98632,	-- Matron Mother Malevolence
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 					}),
 					q(42921, {	-- Confrontation at the Black Temple (Kayn)
 						["sourceQuests"] = { 42801 },	-- Back in Black
 						["coord"] = { 59.4, 50.5, 720 },
 						["lvl"] = 103,
-						["qg"] = 98632,	-- Matron Mother Malevolence
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 					}),
 					q(42683, {	-- Demonic Improvements
 						["sourceQuests"] = { 42681 },	-- Loramus, Is That You?
 						["coord"] = { 59.1, 58.8, 720 },
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 					}),
 					q(41069, {	-- Direct Our Wrath (Kayn)
 						["sourceQuests"] = { 41067 },	-- Time is of the Essence
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 59.5, 58.0, 720 },
-						["qg"] = 95240,	-- Kayn Sunfury
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 					}),
 					q(42808, {	-- Green Adepts
 						["sourceQuests"] = { 42802 },	-- Securing Mardum
 						["coord"] = { 58.3, 51.1, 720 },
 						["lvl"] = 103,
-						["qg"] = 108782,	-- Belath Dawnblade
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 					}),
 					q(42510, {	-- Immortal Soul
 						["sourceQuests"] = { 37447 },	-- The Blood of Demons
 						["coord"] = { 57.7, 51.7, 721 },
 						["lvl"] = 103,
-						["qg"] = 107724,	-- Kayn Sunfury
+						["provider"] = { "n", 107724 },	-- Kayn Sunfury
 					}),
 					q(39741, {	-- Into Our Ranks (Altruis)
 						["sourceQuests"] = { 42634 },	-- Confrontation at the Black Temple (Altruis)
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["qg"] = 108571,	-- Altruis the Sufferer
+						["provider"] = { "n", 108571 },	-- Altruis the Sufferer
 					}),
 					q(42665, {	-- Into Our Ranks (Kayn)
 						["sourceQuests"] = { 42921 },	-- Confrontation at the Black Temple (Kayn)
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["qg"] = 108572,	-- Kayn Sunfury
+						["provider"] = { "n", 108572 },	-- Kayn Sunfury
 					}),
 					q(42522, {	-- Leader of the Illidari
 						["sourceQuests"] = { 42510 },
 						["coord"] = { 57.7, 51.7, 721 },
 						["lvl"] = 103,
-						["qg"] = 107724,	-- Kayn Sunfury
+						["provider"] = { "n", 107724 },	-- Kayn Sunfury
 					}),
 					q(42681, {	-- Loramus, Is That You?
 						["sourceQuests"] = { 42679 },	-- Broken Warriors
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 					}),
 					q(39718, {	-- Paradise Lost
 						["sourceQuests"] = {
@@ -196,13 +199,13 @@ _.ExpansionFeatures =
 							41069,	-- Direct Our Wrath (Kayn)
 						},
 						["classes"] = { 12 },	-- Demon Hunter
-						["qg"] = 98613,	-- Scouting Map
+						["provider"] = { "n", 98613 },	-- Scouting Map
 					}),
 					q(42671, {	-- Rise, Champions (Kayn)
 						["sourceQuests"] = { 44087 },	-- Return to the Fel Hammer
 						["coord"] = { 56.4, 55.1, 720 },
 						["lvl"] = 101,
-						["qg"] = 103025,	-- Battlelord Gaardoun
+						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
 					}),
 					q(42802, {	-- Securing Mardum
 						["sourceQuests"] = {
@@ -211,31 +214,31 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 59.5, 50.6, 720 },
 						["lvl"] = 103,
-						["qg"] = 98632,	-- Matron Mother Malevolence
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 					}),
 					q(41062, {	-- Spoils of Victory
 						["sourceQuests"] = { 41037 },	-- Unbridled Power
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 58.6, 58.9, 720 },
-						["qg"] = 95240,	-- Kayn Sunfury
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 					}),
 					q(42593, {	-- The Arcane Way
 						["sourceQuests"] = { 42522 },	-- Leader of the Illidari
 						["coord"] = { 59.6, 50.3, 720 },
 						["lvl"] = 103,
-						["qg"] = 98632,	-- Matron Mother Malevolence
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 					}),
 					q(37447, {	-- The Blood of Demons
 						["sourceQuests"] = { 42682 },	-- Additional Accoutrements
 						["coord"] = { 59.1, 58.8, 720 },
 						["lvl"] = 103,
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 					}),
 					q(41066, {	-- The Hunter's Gaze
 						["sourceQuests"] = { 41062 },	-- Spoils of Victory
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 59.4, 50.4, 721 },
-						["qg"] = 95238,	-- Allari the Souleater
+						["provider"] = { "n", 95238 },	-- Allari the Souleater
 					}),
 					q(44161, {	-- Things Gaardoun Needs (Altruis)
 						["sourceQuests"] = {
@@ -244,7 +247,7 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 59.5, 58.7, 720 },
 						["lvl"] = 101,
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 					}),
 					q(42677, {	-- Things Gaardoun Needs (Kayn)
 						["sourceQuests"] = {
@@ -253,19 +256,19 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 59.5, 58.7, 720 },
 						["lvl"] = 101,
-						["qg"] = 103761,	-- Kor'vas Bloodthorn
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 					}),
 					q(41067, {	-- Time is of the Essence
 						["sourceQuests"] = { 41066 },	-- The Hunter's Gaze
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 58.8, 51.2, 721 },
-						["qg"] = 95238,	-- Allari the Souleater
+						["provider"] = { "n", 95238 },	-- Allari the Souleater
 					}),
 					q(41037, {	-- Unbridled Power
 						["sourceQuests"] = { 41221 },	-- Return to Mardum
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 57.7, 68.4, 720 },
-						["qg"] = 95240,	-- Kayn Sunfury
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 					}),
 					q(42131, {	-- Unexpected Visitors
 						["sourceQuests"] = {
@@ -274,7 +277,7 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 59.5, 50.6, 720 },
 						["lvl"] = 103,
-						["qg"] = 98632,	-- Matron Mother Malevolence
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["g"] = {
 							crit(3, {	-- Complete the first order campaign effort.
 								["achievementID"] = 10461,	-- Fighting with Style: Classic
@@ -286,7 +289,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42131 },	-- Unexpected Visitors
 						["coord"] = { 58.5, 51.6, 720 },
 						["lvl"] = 103,
-						["qg"] = 108782,	-- Belath Dawnblade
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 					}),
 
 
@@ -303,41 +306,41 @@ _.ExpansionFeatures =
 					q(41803),	-- Asking a Favor
 					q(44223),	-- Champion Armaments
 					q(42653, {	-- Champion: Akama
-						["qg"] = 108239,	-- Akama
+						["provider"] = { "n", 108239 },	-- Akama
 						["g"] = {
 							follower(718),	-- Champion: Akama
 						},
 					}),
 					q(43184, {	-- Champion: Allari the Souleater
-						["qg"] = 98648,	-- Allari the Souleater
+						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least  [This quest activates Champion: Allari the Souleater despite not being finished]
 						["g"] = {
 							follower(499),	-- Champion: Allari the Souleater
 						},
 					}),
 					q(42777, {	-- Champion: Belath Dawnblade
-						["qg"] = 108782,	-- Belath Dawnblade
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["sourceQuests"] = {  42776 },	-- Two Worthies [This quest activates Champion: Belath Dawnblade despite not being finished]
 						["g"] = {
 							follower(594),	-- Champion: Belath Dawnblade
 						},
 					}),
 					q(43185, {	-- Champion: Jace Darkweaver
-						["qg"] = 98646,	-- Jace Darkweaver
+						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least  [This quest activates Champion: Jace Darkweaver despite not being finished]
 						["g"] = {
 							follower(807),	-- Champion: Jace Darkweaver
 						},
 					}),
 					q(45391, {	-- Champion: Lady S'theno
-						["qg"] = 117481,	-- Lady S'theno
+						["provider"] = { "n", 117481 },	-- Lady S'theno
 						["sourceQuests"] = { 46266 },	-- Return of the Slayer
 						["g"] = {
 							follower(990),	-- Champion: Lady S'theno
 						},
 					}),
 					q(42701, {	-- Champion: Matron Mother Malevolence
-						["qg"] = 98632,	-- Matron Mother Malevolence
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["sourceQuests"] = { 42776 },	-- Two Worthies [This quest activates Champion: Matron Mother Malevolence despite not being finished]
 						["g"] = {
 							follower(720),	-- Champion: Matron Mother Malevolence
@@ -387,12 +390,12 @@ _.ExpansionFeatures =
 					q(41033),	-- Return to Mardum
 					q(41221),	-- Return to Mardum
 					q(42666, {	-- Return to the Fel Hammer
-						["qg"] = 112666,	-- Asha Ravensong
+						["provider"] = { "n", 112666 },	-- Asha Ravensong
 						--["sourceQuests"] = { },	-- DH was already on this point
 					}),
 					q(42670, {	-- Rise, Champions (Altruis)
 						["sourceQuests"] = { 42666 },	-- Return to the Fel Hammer [Note: I *believe* this is the right ID, I forgot to check]
-						["qg"] = 103025,	-- Battlelord Gaardoun
+						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
 					}),
 					q(45330),	-- Scouting Party
 					q(41070),	-- Spoils of Victory

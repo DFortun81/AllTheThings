@@ -7,7 +7,7 @@ _.Zones =
 		m(125, {	-- Dalaran: Northrend
 			n(-17,  {	-- Quests
 				q(32413, {	-- A Return to Krasarang
-					["qg"] = 68586,	-- Grand Magister Rommath
+					["provider"] = { "n", 68586 },	-- Grand Magister Rommath
 					["races"] = HORDE_ONLY,
 				}),
 				--[[
@@ -45,7 +45,7 @@ _.Zones =
 				q(13833),	-- Blood Is Thicker
 				]]--
 				q(14151, {	-- Cardinal Ruby
-					["qg"] = 28703,	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
+					["provider"] = { "n", 28703 },	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
 					["coord"] = { 42.4, 32.0 },
 					["description"] = "This quest is currently broken. Ticket a GM and they can autocomplete the quest for you to get you the recipe.\n\nNOTE FOR BLUES: Please fix this so that we stop bugging Customer Support.\n  - Crieve",
 					["requireSkill"] = 171,	-- Alchemy
@@ -69,12 +69,12 @@ _.Zones =
 				q(24587),	-- Ignis the Furnace Master Must Die!
 				--]]
 				q(24510, {	-- Inside the Frozen Citadel
-					["qg"] = 37776,	-- Apprentice Nelphi <Kirin Tor>
+					["provider"] = { "n", 37776 },	-- Apprentice Nelphi <Kirin Tor>
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(24506, {	-- Inside the Frozen Citadel
-					["qg"] = 37780,	-- Dark Ranger Vorel
+					["provider"] = { "n", 37780 },	-- Dark Ranger Vorel
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -92,7 +92,7 @@ _.Zones =
 				q(24590),	-- Lord Marrowgar Must Die!
 				--]]
 				q(12853, {	-- Luxurious Getaway!
-					["qg"] = 30490,	-- Rin Duoctane
+					["provider"] = { "n", 30490 },	-- Rin Duoctane
 					["coord"] = { 31.2, 49.6 },
 					["sourceQuests"] = {
 						49554,	-- Hero's Call: Storm Peaks!

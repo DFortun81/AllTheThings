@@ -38,25 +38,25 @@ _.Zones =
 					},
 				}),
 				q(31551, {	-- Got one!
-					["qg"] = 63075,	-- Grady Bannson
+					["provider"] = { "n", 63075 },	-- Grady Bannson
 					["coord"] = { 53.8, 50.1, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31822,	-- Level Up!
 				}),
 				q(31548, {	-- Learning the Ropes
-					["qg"] = 63075,	-- Grady Bannson
+					["provider"] = { "n", 63075 },	-- Grady Bannson
 					["coord"] = { 53.8, 50.1, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31822, {	-- Level Up!
-					["qg"] = 63075,	-- Grady Bannson
+					["provider"] = { "n", 63075 },	-- Grady Bannson
 					["coord"] = { 53.8, 50.1, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31549,	-- On The Mend
 				}),
 				q(31549, {	-- On The Mend
-					["qg"] = 63075,	-- Grady Bannson
+					["provider"] = { "n", 63075 },	-- Grady Bannson
 					["coord"] = { 53.8, 50.1, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31548,	-- Learning the Ropes

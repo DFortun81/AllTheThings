@@ -7,7 +7,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdom
 		m(1186, {	-- Blackrock Depths: Shadowforge City
 			q(51486, {	-- Fer the Alliance
-				["qg"] = 144152,	-- Moira Thaurissan
+				["provider"] = { "n", 144152 },	-- Moira Thaurissan
 				["coord"] = { 56.6, 31.8, 1186 },
 				["races"] = { 34 },	-- Dark Iron Dwarf
 				["lvl"] = 20,
@@ -17,7 +17,7 @@ _.Zones =
 				},
 			}),
 			q(51483, {	-- Heritage o' the Dark Iron
-				["qg"] = 144152,	-- Moira Thaurissan
+				["provider"] = { "n", 144152 },	-- Moira Thaurissan
 				["coord"] = { 56.6, 31.8, 1186 },
 				["races"] = { 34 },	-- Dark Iron Dwarf
 				["lvl"] = 110,

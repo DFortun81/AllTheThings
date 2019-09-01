@@ -9,14 +9,14 @@ _.WorldEvents =
 			tier(3, { 	-- Wrath of the Lich King
 				{	-- Disturbance Detected: Ulduar
 					["questID"] = 50316,	-- Disturbance Detected: Ulduar
-					["qg"] = 130654,	-- Vormu
+					["provider"] = { "n", 130654 },	-- Vormu
 					["repeatable"] = true,
 					["isWeekly"] = true,
 				},
 				{	-- Frigid Timewarped Prism
 					["itemID"] = 129928,	-- Frigid Timewarped Prism
 					["questID"] = 40173,	-- The Unstable Prism
-					["qg"] = 98690,	-- Auzin
+					["provider"] = { "n", 98690 },	-- Auzin
 					["repeatable"] = true,
 					["isWeekly"] = true,
 				},

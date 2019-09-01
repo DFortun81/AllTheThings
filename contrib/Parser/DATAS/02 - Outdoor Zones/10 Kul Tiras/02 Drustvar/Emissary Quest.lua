@@ -8,13 +8,13 @@ _.Zones =
 		m(896, {	-- Drustvar
 			n(-169, { 	-- Emissary Quests
 				q(50600, {	-- Order of Embers
-					["qg"] = 135815,	-- Quartermaster Alcorn
+					["provider"] = { "n", 135815 },	-- Quartermaster Alcorn
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(54456, {	-- Supplies from the Order of Embers
-					["qg"] = 135815,	-- Quartermaster Alcorn
+					["provider"] = { "n", 135815 },	-- Quartermaster Alcorn
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,

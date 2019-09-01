@@ -9,13 +9,13 @@ _.Zones =
 				a(ach(1191, {	-- Terror of Terokkar (Alliance)
 					crit(1, {	-- The Skettis Offensive
 						q(10863, {	-- Secrets of the Arakkoa
-							["qg"] = 15991,	-- Lady Dena Kennedy
+							["provider"] = { "n", 15991 },	-- Lady Dena Kennedy
 							["coord"] = { 57.6, 56.0, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(10847, {	-- The Eyes of Skettis
-							["qg"] = 22292,	-- Rilak the Redeemed
+							["provider"] = { "n", 22292 },	-- Rilak the Redeemed
 							["coord"] = { 52.6, 21.0, 111 },
 							["sourceQuests"] = { 
 								10863,	-- Secrets of the Arakkoa
@@ -24,17 +24,17 @@ _.Zones =
 							},
 						}),
 						q(10849, {	-- Seek Out Kirrik
-							["qg"] = 22292,	-- Rilak the Redeemed
+							["provider"] = { "n", 22292 },	-- Rilak the Redeemed
 							["coord"] = { 52.6, 21.0, 111 },
 							["sourceQuest"] = 10847,	-- The Eyes of Skettis
 						}),
 						q(10839, {	-- Veil Skith: Darkstone of Terokk
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10849,	-- Seek Out Kirrik
 						}),
 						q(10848,  {	-- Veil Rhaze: Unliving Evil
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10839,	-- Veil Skith: Darkstone of Terokk
 							["groups"] = {
@@ -43,7 +43,7 @@ _.Zones =
 							},
 						}),
 						q(10861,  {	-- Veil Lithic: Preemptive Strike
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10848,	-- Veil Rhaze: Unliving Evil
 							["groups"] = {
@@ -54,7 +54,7 @@ _.Zones =
 							},
 						}),
 						q(10874, {	-- Veil Shalas: Signal Fires
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10861,	-- Veil Lithic: Preemptive Strike
 							["groups"] = {
@@ -64,12 +64,12 @@ _.Zones =
 							},
 						}),
 						q(10889, {	-- Return to Shattrath
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10874,	-- Veil Shalas: Signal Fires
 						}),
 						q(10879, {	-- The Skettis Offensive
-							["qg"] = 22373,	-- Defender Grashna
+							["provider"] = { "n", 22373 },	-- Defender Grashna
 							["coord"] = { 51.8, 20.8, 111 },
 							["sourceQuest"] = 10889,	-- Return to Shattrath
 							["groups"] = {
@@ -80,16 +80,16 @@ _.Zones =
 					}),
 					crit(2, {	-- Refugee Caravan
 						q(10852, {	-- Missing Friends
-							["qg"] = 22365,	-- Ethan
+							["provider"] = { "n", 22365 },	-- Ethan
 							["coord"] = { 37.7, 51.3, 108 },
 						}),
 						q(10840, {	-- The Tomb of Lights
-							["qg"] = 22278,	-- High Priest Orglum
+							["provider"] = { "n", 22278 },	-- High Priest Orglum
 							["coord"] = { 37.5, 50.8, 108 },
 							["sourceQuest"] = 10852,	-- Missing Friends
 						}),
 						q(10842, {	-- Vengeful Souls
-							["qg"] = 21465,	-- High Priest Orglum
+							["provider"] = { "n", 21465 },	-- High Priest Orglum
 							["coord"] = { 37.5, 50.8, 108 },
 							["sourceQuest"] = 10852,	-- Missing Friends
 							["groups"] = {
@@ -98,12 +98,12 @@ _.Zones =
 							},
 						}),
 						q(10878, {	-- Before Darkness Falls
-							["qg"] = 22370,	-- Mekeda
+							["provider"] = { "n", 22370 },	-- Mekeda
 							["coord"] = { 37.6, 50.8, 108 },
 						}),
 						i(31707, {	-- Cabal Orders	
 							q(10880, {	-- Cabal Orders
-								["qgs"] = {
+								["crs"] = {
 									21661,	-- Cabal Skirmisher
 									21902,	-- Cabal Spell-weaver
 									21907,	-- Cabal Initiate
@@ -111,7 +111,7 @@ _.Zones =
 							}),
 						}),
 						q(10881, {	-- The Shadow Tomb
-							["qg"] = 22370,	-- Mekeda
+							["provider"] = { "n", 22370 },	-- Mekeda
 							["coord"] = { 37.6, 50.8, 108 },
 							["sourceQuest"] = 10880,	-- Cabal Orders
 							["groups"] = {
@@ -121,7 +121,7 @@ _.Zones =
 							},
 						}),
 						q(10887,  {  -- Escaping the Tomb
-							["qg"] = 22377,	-- Akuno
+							["provider"] = { "n", 22377 },	-- Akuno
 							["coord"] = { 30.6, 49.1, 108 },
 							["groups"] = {
 								i(31733),	-- Akuno's Blade
@@ -131,12 +131,12 @@ _.Zones =
 							},
 						}),
 						q(10030, {	-- Recover the Bones
-							["qg"] = 18675,	-- Soolaveen
+							["provider"] = { "n", 18675 },	-- Soolaveen
 							["coord"] = { 37.1, 49.5, 108 },
 							["sourceQuest"] = 10840,	-- The Tomb of Lights
 						}),
 						q(10031,  {  -- Helping the Lost Find Their Way
-							["qg"] = 19417,	-- Ramdor the Mad
+							["provider"] = { "n", 19417 },	-- Ramdor the Mad
 							["coord"] = { 35.1, 66.2, 108 },
 							["sourceQuest"] = 10030,	-- Recover the Bones
 							["groups"] = {
@@ -149,19 +149,19 @@ _.Zones =
 					}),
 					crit(3, {	-- Sha'tari Base Camp
 						q(10873, {	-- Taken in the Night
-							["qg"] = 22364,	-- Scout Navrin
+							["provider"] = { "n", 22364 },	-- Scout Navrin
 							["coord"] = { 31.4, 75.7, 108 },
 						}),
 						q(10877, {	-- The Dread Relic
-							["qg"] = 22456,	-- Oakun
+							["provider"] = { "n", 22456 },	-- Oakun
 							["coord"] = { 31.1, 76.5, 108 },
 						}),
 						q(10920, {	-- For the Fallen
-							["qg"] = 22462,	-- Vindicator Haylen
+							["provider"] = { "n", 22462 },	-- Vindicator Haylen
 							["coord"] = { 49.7, 76.2, 108 },
 						}),
 						q(10921, {	-- Terokkarantula
-							["qg"] = 22462,	-- Vindicator Haylen
+							["provider"] = { "n", 22462 },	-- Vindicator Haylen
 							["coord"] = { 49.7, 76.2, 108 },
 							["sourceQuest"] = 10920,	-- For the Fallen
 							["groups"] = {
@@ -172,12 +172,12 @@ _.Zones =
 							},
 						}),
 						q(10926, {	-- Return to Sha'tari Base Camp
-							["qg"] = 22462,	-- Vindicator Haylen
+							["provider"] = { "n", 22462 },	-- Vindicator Haylen
 							["coord"] = { 49.7, 76.2, 108 },
 							["sourceQuest"] = 10921,	-- Terokkarantula
 						}),
 						q(10923,  {  -- Evil Draws Near
-							["qg"] = 22456,	-- Oakun
+							["provider"] = { "n", 22456 },	-- Oakun
 							["coord"] = { 31.1, 76.5, 108 },
 							["sourceQuest"] = 10877,	-- The Dread Relic
 							["groups"] = {
@@ -187,16 +187,16 @@ _.Zones =
 							},
 						}),
 						q(10922, {	-- Digging Through Bones
-							["qg"] = 22458,	-- Chief Archaeologist Letoll
+							["provider"] = { "n", 22458 },	-- Chief Archaeologist Letoll
 							["coord"] = { 31.1, 76.5, 108 },
 						}),
 						q(10929, {	-- Fumping
-							["qg"] = 22481,	-- Dwarfowitz
+							["provider"] = { "n", 22481 },	-- Dwarfowitz
 							["coord"] = { 31.0, 76.2, 108 },
 							["sourceQuest"] = 10922,	-- Digging Through Bones
 						}),
 						q(10930,  {  -- The Big Bone Worm
-							["qg"] = 22481,	-- Dwarfowitz
+							["provider"] = { "n", 22481 },	-- Dwarfowitz
 							["coord"] = { 31.0, 76.2, 108 },
 							["sourceQuest"] = 10929,	-- Fumping
 							["groups"] = {
@@ -206,16 +206,16 @@ _.Zones =
 							},
 						}),
 						q(10913, {	-- An Improper Burial
-							["qg"] = 22446,	-- Commander Ra'vaj
+							["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 							["coord"] = { 31.0, 76.1, 108 },
 						}),
 						q(10914, {	-- A Hero Is Needed
-							["qg"] = 22446,	-- Commander Ra'vaj
+							["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 							["coord"] = { 31.0, 76.1, 108 },
 							["sourceQuest"] = 10913,	-- An Improper Burial
 						}),
 						q(10915,  {  -- The Fallen Exarch
-							["qg"] = 22446,	-- Commander Ra'vaj
+							["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 							["coord"] = { 31.0, 76.1, 108 },
 							["sourceQuest"] = 10914,	-- A Hero Is Needed
 							["groups"] = {
@@ -228,7 +228,7 @@ _.Zones =
 					}),
 					crit(4, {	-- The Warden's Secret
 						q(9968, {	-- Strange Energy
-							["qg"] = 18446,	-- Earthbinder Tavgren
+							["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
 							["sourceQuests"] = { 
 								9957,	-- What's Wrong at Cenarion Thicket?
@@ -239,11 +239,11 @@ _.Zones =
 							},
 						}),
 						q(9971, {	-- Clues in the Thicket
-							["qg"] = 18446,	-- Earthbinder Tavgren
+							["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
 						}),
 						q(9951,  {  -- It's Watching You!
-							["qg"] = 18424,	-- Warden Treelos
+							["provider"] = { "n", 18424 },	-- Warden Treelos
 							["coords"] = {
 								{ 43.4, 22.4, 108 },
 								{ 44.3, 24.2, 108 },
@@ -262,7 +262,7 @@ _.Zones =
 							},
 						}),
 						q(9978, {	-- By Any Means Necessary
-							["qg"] = 18446,	-- Earthbinder Tavgren
+							["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
 							["sourceQuests"] = {
 								9971,	-- Clues in the Thicket
@@ -270,7 +270,7 @@ _.Zones =
 							},
 						}),
 						q(9979, {	-- Wind Trader Lathrai
-							["qg"] = 18482,	-- Empoor
+							["provider"] = { "n", 18482 },	-- Empoor
 							["coords"] = { 
 								{ 38.0, 26.4, 108 },
 								{ 40.6, 25.4, 108 },
@@ -282,7 +282,7 @@ _.Zones =
 							["sourceQuests"] = 9978,	-- By Any Means Necessary
 						}),
 						q(10112, {	-- A Personal Favor
-							["qg"] = 18484,	-- Wind Trader Lathrai
+							["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
 							["coord"] = { 72.2, 30.7, 111 },
 							["sourceQuest"] = 9979,	-- Wind Trader Lathrai
 							["groups"] = {
@@ -293,30 +293,30 @@ _.Zones =
 							},
 						}),
 						q(9990, {	-- Investigate Tuurem
-							["qg"] = 18484,	-- Wind Trader Lathrai
+							["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
 							["coord"] = { 72.2, 30.7, 111 },
 							["sourceQuest"] = 10112,	-- A Personal Favor
 						}),
 						q(9994, {	-- What Are These Things?
-							["qg"] = 18446,	-- Earthbinder Tavgren
+							["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9990,	-- Investigate Tuurem
 						}),
 						q(10444, {	-- Report to the Allerian Post
-							["qg"] = 18459,	-- Jenai Starwhisper
+							["provider"] = { "n", 18459 },	-- Jenai Starwhisper
 							["coord"] = { 57.0, 53.6, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9994,	-- What Are These Things?
 						}),					
 						q(9996, {	-- Attack on Firewing Point
-							["qg"] = 21006,	-- Lieutenant Meridian
+							["provider"] = { "n", 21006 },	-- Lieutenant Meridian
 							["coord"] = { 69.6, 44.6, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10444,	-- Report to the Allerian Post
 						}),
 						q(10446, {	-- The Final Code
-							["qg"] = 21006,	-- Lieutenant Meridian
+							["provider"] = { "n", 21006 },	-- Lieutenant Meridian
 							["coord"] = { 69.6, 44.6, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9996,	-- Attack on Firewing Point
@@ -328,7 +328,7 @@ _.Zones =
 							},
 						}),
 						q(10005,  {  -- Letting Earthbinder Tavgren Know
-							["qg"] = 21006,	-- Lieutenant Meridian
+							["provider"] = { "n", 21006 },	-- Lieutenant Meridian
 							["coord"] = { 69.6, 44.6, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10446,	-- The Final Code
@@ -342,7 +342,7 @@ _.Zones =
 					}),
 					crit(5, {	-- Allerian Stronghold
 						q(10026, {	-- Magical Disturbances
-							["qg"] = 18252,	-- Andarl
+							["provider"] = { "n", 18252 },	-- Andarl
 							["coord"] = { 58.4, 53.6, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
@@ -351,39 +351,39 @@ _.Zones =
 							},
 						}),
 						q(9992, {	-- Olemba Seeds
-							["qg"] = 18390,	-- Ros'eleth
+							["provider"] = { "n", 18390 },	-- Ros'eleth
 							["coord"] = { 57.4, 55.4, 108 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10028, {	-- Vessels of Power
-							["qg"] = 18390,	-- Ros'eleth
+							["provider"] = { "n", 18390 },	-- Ros'eleth
 							["coord"] = { 57.4, 55.4, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9992,	-- Olemba Seeds
 						}),
 						q(9986, {	-- Stymying the Arakkoa
-							["qg"] = 18389,	-- Thander
+							["provider"] = { "n", 18389 },	-- Thander
 							["coord"] = { 57.8, 54.2, 108 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10869, {	-- Thin the Flock
-							["qg"] = 18713,	-- Lieutenant Gravelhammer
+							["provider"] = { "n", 18713 },	-- Lieutenant Gravelhammer
 							["coord"] = { 57.6, 55.6, 108 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(9998, {	-- Unruly Neighbors
-							["qg"] = 18387,	-- Bertelm
+							["provider"] = { "n", 18387 },	-- Bertelm
 							["coord"] = { 58.2, 54.8, 108 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10002, {	-- The Firewing Liaison
-							["qg"] = 18565,	-- Theloria Shadecloak
+							["provider"] = { "n", 18565 },	-- Theloria Shadecloak
 							["coord"] = { 69.6, 44.2, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9998,	-- Unruly Neighbors
 						}),
 						q(10007,  {  -- Thinning the Ranks
-							["qg"] = 18565,	-- Theloria Shadecloak
+							["provider"] = { "n", 18565 },	-- Theloria Shadecloak
 							["coord"] = { 69.6, 44.2, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9998,	-- Unruly Neighbors
@@ -404,12 +404,12 @@ _.Zones =
 							},
 						}),
 						q(10016, {	-- Timber Worg Tails
-							["qg"] = 18387,	-- Bertelm
+							["provider"] = { "n", 18387 },	-- Bertelm
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 58.2, 54.8, 108 },
 						}),
 						q(10022,  {  -- The Elusive Ironjaw
-							["qg"] = 18387,	-- Bertelm
+							["provider"] = { "n", 18387 },	-- Bertelm
 							["coord"] = { 58.2, 54.8, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10016,	-- Timber Worg Tails
@@ -430,7 +430,7 @@ _.Zones =
 							},
 						}),
 						q(10035, {	-- Torgos!
-							["qg"] = 18704,	-- Taela Everstride
+							["provider"] = { "n", 18704 },	-- Taela Everstride
 							["coord"] = { 58.0, 53.4, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10033,	-- WANTED: Bonelashers Dead!
@@ -440,18 +440,18 @@ _.Zones =
 							},
 						}),
 						q(10038, {	-- Speak with Private Weeks
-							["qg"] = 18713,	-- Lieutenant Gravelhammer
+							["provider"] = { "n", 18713 },	-- Lieutenant Gravelhammer
 							["coord"] = { 57.6, 55.6, 108 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10040, {	-- Who Are They?
-							["qg"] = 18715,	-- Private Weeks
+							["provider"] = { "n", 18715 },	-- Private Weeks
 							["coord"] = { 40.4, 36.0, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10038,	-- Speak with Private Weeks
 						}),
 						q(10042,  {  -- Kill the Shadow Council!
-							["qg"] = 18715,	-- Private Weeks
+							["provider"] = { "n", 18715 },	-- Private Weeks
 							["coord"] = { 40.4, 36.0, 108 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 10023,	-- Patriarch Ironjaw
@@ -466,13 +466,13 @@ _.Zones =
 				h(ach(1272, {	-- Terror of Terokkar (Horde)
 					crit(1, {	-- The Skettis Offensive
 						q(10862, {	-- Surrender to the Horde
-							["qg"] = 18386,	-- Rokag
+							["provider"] = { "n", 18386 },	-- Rokag
 							["coord"] = { 49.0, 44.6, 108 },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(10847, {	-- The Eyes of Skettis
-							["qg"] = 22292,	-- Rilak the Redeemed
+							["provider"] = { "n", 22292 },	-- Rilak the Redeemed
 							["coord"] = { 52.6, 21.0, 111 },
 							["sourceQuests"] = { 
 								10863,	-- Secrets of the Arakkoa
@@ -481,17 +481,17 @@ _.Zones =
 							},
 						}),
 						q(10849, {	-- Seek Out Kirrik
-							["qg"] = 22292,	-- Rilak the Redeemed
+							["provider"] = { "n", 22292 },	-- Rilak the Redeemed
 							["coord"] = { 52.6, 21.0, 111 },
 							["sourceQuest"] = 10847,	-- The Eyes of Skettis
 						}),
 						q(10839, {	-- Veil Skith: Darkstone of Terokk
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10849,	-- Seek Out Kirrik
 						}),
 						q(10848,  {	-- Veil Rhaze: Unliving Evil
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10839,	-- Veil Skith: Darkstone of Terokk
 							["groups"] = {
@@ -500,7 +500,7 @@ _.Zones =
 							},
 						}),
 						q(10861,  {	-- Veil Lithic: Preemptive Strike
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10848,	-- Veil Rhaze: Unliving Evil
 							["groups"] = {
@@ -511,7 +511,7 @@ _.Zones =
 							},
 						}),
 						q(10874, {	-- Veil Shalas: Signal Fires
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10861,	-- Veil Lithic: Preemptive Strike
 							["groups"] = {
@@ -521,12 +521,12 @@ _.Zones =
 							},
 						}),
 						q(10889, {	-- Return to Shattrath
-							["qg"] = 22272,	-- Kirrik the Awakened
+							["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 							["coord"] = { 37.6, 51.6, 108 },
 							["sourceQuest"] = 10874,	-- Veil Shalas: Signal Fires
 						}),
 						q(10879, {	-- The Skettis Offensive
-							["qg"] = 22373,	-- Defender Grashna
+							["provider"] = { "n", 22373 },	-- Defender Grashna
 							["coord"] = { 51.8, 20.8, 111 },
 							["sourceQuest"] = 10889,	-- Return to Shattrath
 							["groups"] = {
@@ -537,16 +537,16 @@ _.Zones =
 					}),
 					crit(2, {	-- Refugee Caravan
 						q(10852, {	-- Missing Friends
-							["qg"] = 22365,	-- Ethan
+							["provider"] = { "n", 22365 },	-- Ethan
 							["coord"] = { 37.7, 51.3, 108 },
 						}),
 						q(10840, {	-- The Tomb of Lights
-							["qg"] = 21465,	-- High Priest Orglum
+							["provider"] = { "n", 21465 },	-- High Priest Orglum
 							["coord"] = { 37.5, 50.8, 108 },
 							["sourceQuest"] = 10852,	-- Missing Friends
 						}),
 						q(10842, {	-- Vengeful Souls
-							["qg"] = 21465,	-- High Priest Orglum
+							["provider"] = { "n", 21465 },	-- High Priest Orglum
 							["coord"] = { 37.5, 50.8, 108 },
 							["sourceQuest"] = 10852,	-- Missing Friends
 							["groups"] = {
@@ -555,12 +555,12 @@ _.Zones =
 							},
 						}),
 						q(10878, {	-- Before Darkness Falls
-							["qg"] = 22370,	-- Mekeda
+							["provider"] = { "n", 22370 },	-- Mekeda
 							["coord"] = { 37.6, 50.8, 108 },
 						}),
 						i(31707, {	-- Cabal Orders	
 							q(10880, {	-- Cabal Orders
-								["qgs"] = {
+								["crs"] = {
 									21661,	-- Cabal Skirmisher
 									21902,	-- Cabal Spell-weaver
 									21907,	-- Cabal Initiate
@@ -568,7 +568,7 @@ _.Zones =
 							}),
 						}),
 						q(10881, {	-- The Shadow Tomb
-							["qg"] = 22370,	-- Mekeda
+							["provider"] = { "n", 22370 },	-- Mekeda
 							["coord"] = { 37.6, 50.8, 108 },
 							["sourceQuest"] = 10880,	-- Cabal Orders
 							["groups"] = {
@@ -578,7 +578,7 @@ _.Zones =
 							},
 						}),
 						q(10887,  {  -- Escaping the Tomb
-							["qg"] = 22377,	-- Akuno
+							["provider"] = { "n", 22377 },	-- Akuno
 							["coord"] = { 30.6, 49.1, 108 },
 							["groups"] = {
 								i(31733),	-- Akuno's Blade
@@ -588,12 +588,12 @@ _.Zones =
 							},
 						}),
 						q(10030, {	-- Recover the Bones
-							["qg"] = 18675,	-- Soolaveen
+							["provider"] = { "n", 18675 },	-- Soolaveen
 							["coord"] = { 37.1, 49.5, 108 },
 							["sourceQuest"] = 10840,	-- The Tomb of Lights
 						}),
 						q(10031,  {  -- Helping the Lost Find Their Way
-							["qg"] = 19417,	-- Ramdor the Mad
+							["provider"] = { "n", 19417 },	-- Ramdor the Mad
 							["coord"] = { 35.1, 66.2, 108 },
 							["sourceQuest"] = 10030,	-- Recover the Bones
 							["groups"] = {
@@ -606,19 +606,19 @@ _.Zones =
 					}),
 					crit(3, {	-- Sha'tari Base Camp
 						q(10873, {	-- Taken in the Night
-							["qg"] = 22364,	-- Scout Navrin
+							["provider"] = { "n", 22364 },	-- Scout Navrin
 							["coord"] = { 31.4, 75.7, 108 },
 						}),
 						q(10877, {	-- The Dread Relic
-							["qg"] = 22456,	-- Oakun
+							["provider"] = { "n", 22456 },	-- Oakun
 							["coord"] = { 31.1, 76.5, 108 },
 						}),
 						q(10920, {	-- For the Fallen
-							["qg"] = 22462,	-- Vindicator Haylen
+							["provider"] = { "n", 22462 },	-- Vindicator Haylen
 							["coord"] = { 49.7, 76.2, 108 },
 						}),
 						q(10921, {	-- Terokkarantula
-							["qg"] = 22462,	-- Vindicator Haylen
+							["provider"] = { "n", 22462 },	-- Vindicator Haylen
 							["coord"] = { 49.7, 76.2, 108 },
 							["sourceQuest"] = 10920,	-- For the Fallen
 							["groups"] = {
@@ -629,12 +629,12 @@ _.Zones =
 							},
 						}),
 						q(10926, {	-- Return to Sha'tari Base Camp
-							["qg"] = 22462,	-- Vindicator Haylen
+							["provider"] = { "n", 22462 },	-- Vindicator Haylen
 							["coord"] = { 49.7, 76.2, 108 },
 							["sourceQuest"] = 10921,	-- Terokkarantula
 						}),
 						q(10923,  {  -- Evil Draws Near
-							["qg"] = 22456,	-- Oakun
+							["provider"] = { "n", 22456 },	-- Oakun
 							["coord"] = { 31.1, 76.5, 108 },
 							["sourceQuest"] = 10877,	-- The Dread Relic
 							["groups"] = {
@@ -644,16 +644,16 @@ _.Zones =
 							},
 						}),
 						q(10922, {	-- Digging Through Bones
-							["qg"] = 22458,	-- Chief Archaeologist Letoll
+							["provider"] = { "n", 22458 },	-- Chief Archaeologist Letoll
 							["coord"] = { 31.1, 76.5, 108 },
 						}),
 						q(10929, {	-- Fumping
-							["qg"] = 22481,	-- Dwarfowitz
+							["provider"] = { "n", 22481 },	-- Dwarfowitz
 							["coord"] = { 31.0, 76.2, 108 },
 							["sourceQuest"] = 10922,	-- Digging Through Bones
 						}),
 						q(10930,  {  -- The Big Bone Worm
-							["qg"] = 22481,	-- Dwarfowitz
+							["provider"] = { "n", 22481 },	-- Dwarfowitz
 							["coord"] = { 31.0, 76.2, 108 },
 							["sourceQuest"] = 10929,	-- Fumping
 							["groups"] = {
@@ -663,16 +663,16 @@ _.Zones =
 							},
 						}),
 						q(10913, {	-- An Improper Burial
-							["qg"] = 22446,	-- Commander Ra'vaj
+							["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 							["coord"] = { 31.0, 76.1, 108 },
 						}),
 						q(10914, {	-- A Hero Is Needed
-							["qg"] = 22446,	-- Commander Ra'vaj
+							["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 							["coord"] = { 31.0, 76.1, 108 },
 							["sourceQuest"] = 10913,	-- An Improper Burial
 						}),
 						q(10915,  {  -- The Fallen Exarch
-							["qg"] = 22446,	-- Commander Ra'vaj
+							["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 							["coord"] = { 31.0, 76.1, 108 },
 							["sourceQuest"] = 10914,	-- A Hero Is Needed
 							["groups"] = {
@@ -685,7 +685,7 @@ _.Zones =
 					}),
 					crit(4, {	-- The Warden's Secret
 						q(9968, {	-- Strange Energy
-							["qg"] = 18446,	-- Earthbinder Tavgren
+							["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
 							["sourceQuests"] = { 
 								9957,	-- What's Wrong at Cenarion Thicket?
@@ -696,11 +696,11 @@ _.Zones =
 							},
 						}),
 						q(9971, {	-- Clues in the Thicket
-							["qg"] = 18446,	-- Earthbinder Tavgren
+							["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
 						}),
 						q(9951,  {  -- It's Watching You!
-							["qg"] = 18424,	-- Warden Treelos
+							["provider"] = { "n", 18424 },	-- Warden Treelos
 							["coords"] = {
 								{ 43.4, 22.4, 108 },
 								{ 44.3, 24.2, 108 },
@@ -719,7 +719,7 @@ _.Zones =
 							},
 						}),
 						q(9978, {	-- By Any Means Necessary
-							["qg"] = 18446,	-- Earthbinder Tavgren
+							["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
 							["sourceQuests"] = {
 								9971,	-- Clues in the Thicket
@@ -727,7 +727,7 @@ _.Zones =
 							},
 						}),
 						q(9979, {	-- Wind Trader Lathrai
-							["qg"] = 18482,	-- Empoor
+							["provider"] = { "n", 18482 },	-- Empoor
 							["coords"] = { 
 								{ 38.0, 26.4, 108 },
 								{ 40.6, 25.4, 108 },
@@ -739,7 +739,7 @@ _.Zones =
 							["sourceQuest"] = 9978,	-- By Any Means Necessary
 						}),
 						q(10112, {	-- A Personal Favor
-							["qg"] = 18484,	-- Wind Trader Lathrai
+							["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
 							["coord"] = { 72.2, 30.7, 111 },
 							["sourceQuest"] = 9979,	-- Wind Trader Lathrai
 							["groups"] = {
@@ -750,30 +750,30 @@ _.Zones =
 							},
 						}),
 						q(9990, {	-- Investigate Tuurem
-							["qg"] = 18484,	-- Wind Trader Lathrai
+							["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
 							["coord"] = { 72.2, 30.7, 111 },
 							["sourceQuest"] = 10112,	-- A Personal Favor
 						}),
 						q(9995, {	-- What Are These Things?
-							["qg"] = 18446,	-- Earthbinder Tavgren
+							["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 							["coord"] = { 44.3, 26.3, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 9990,	-- Investigate Tuurem
 						}),
 						q(10448, {	-- Report to Stonebreaker Camp
-							["qg"] = 18447,	-- Tooki
+							["provider"] = { "n", 18447 },	-- Tooki
 							["coord"] = { 50.0, 45.9, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 9995,	-- What Are These Things?
 						}),
 						q(9997, {	-- Attack on Firewing Point
-							["qg"] = 21007,	-- Sergeant Chawni
+							["provider"] = { "n", 21007 },	-- Sergeant Chawni
 							["coord"] = { 50.0, 45.9, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10448,	-- Report to Stonebreaker Camp
 						}),
 						q(10447,  {  -- The Final Code
-							["qg"] = 21007,	-- Sergeant Chawni
+							["provider"] = { "n", 21007 },	-- Sergeant Chawni
 							["coord"] = { 50.0, 45.9, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 9997,	-- Attack on Firewing Point
@@ -785,7 +785,7 @@ _.Zones =
 							},
 						}),
 						q(10006,  {  -- Letting Earthbinder Tavgren Know
-							["qg"] = 18447,	-- Tooki
+							["provider"] = { "n", 18447 },	-- Tooki
 							["coord"] = { 50.0, 45.9, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10447,	-- The Final Code
@@ -799,7 +799,7 @@ _.Zones =
 					}),
 					crit(5, {	-- Stonebreaker Hold
 						q(9993, {	-- Olemba Seed Oil
-							["qg"] = 18358,	-- Rakoria
+							["provider"] = { "n", 18358 },	-- Rakoria
 							["coord"] = { 50.1, 44.9, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 
@@ -808,34 +808,34 @@ _.Zones =
 							},
 						}),
 						q(10201, {	-- And Now, the Moment of Truth
-							["qg"] = 18358,	-- Rakoria
+							["provider"] = { "n", 18358 },	-- Rakoria
 							["coord"] = { 50.1, 44.9, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 9993,	-- Olemba Seed Oil
 						}),
 						q(10868, {	-- Arakkoa War Path
-							["qg"] = 18712,	-- Advisor Faila
+							["provider"] = { "n", 18712 },	-- Advisor Faila
 							["coord"] = { 48.9, 44.6, 108 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(9987, {	-- Stymying the Arakkoa
-							["qg"] = 18386,	-- Rokag
+							["provider"] = { "n", 18386 },	-- Rokag
 							["coord"] = { 49.0, 44.6, 108 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(10000, {	-- An Unwelcome Presence
-							["qg"] = 18383,	-- Kurgatok
+							["provider"] = { "n", 18383 },	-- Kurgatok
 							["coord"] = { 48.8, 45.7, 108 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(10003, {	-- The Firewing Liaison
-							["qg"] = 18566,	-- Shadowstalker Kaide
+							["provider"] = { "n", 18566 },	-- Shadowstalker Kaide
 							["coord"] = { 63.4, 42.7, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10000,	-- An Unwelcome Presence
 						}),
 						q(10008,  {  -- What Happens in Terokkar Stays in Terokkar
-							["qg"] = 18566,	-- Shadowstalker Kaide
+							["provider"] = { "n", 18566 },	-- Shadowstalker Kaide
 							["coord"] = { 63.4, 42.7, 108 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -855,18 +855,18 @@ _.Zones =
 							},
 						}),
 						q(10018, {	-- Vestments of the Wolf Spirit
-							["qg"] = 18384,	-- Malukaz
+							["provider"] = { "n", 18384 },	-- Malukaz
 							["coord"] = { 50.2, 46.4, 108 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(10023, {	-- Patriarch Ironjaw
-							["qg"] = 18384,	-- Malukaz
+							["provider"] = { "n", 18384 },	-- Malukaz
 							["coord"] = { 50.2, 46.4, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10018,	-- Vestments of the Wolf Spirit
 						}),
 						q(10791,  {  -- Welcoming the Wolf Spirit
-							["qg"] = 18384,	-- Malukaz
+							["provider"] = { "n", 18384 },	-- Malukaz
 							["coord"] = { 50.2, 46.4, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10023,	-- Patriarch Ironjaw
@@ -887,7 +887,7 @@ _.Zones =
 							},
 						}),
 						q(10036, {	-- Torgos!
-							["qg"] = 18705,	-- Mawg Grimshot
+							["provider"] = { "n", 18705 },	-- Mawg Grimshot
 							["coord"] = { 49.2, 45.9, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10034,	-- WANTED: Bonelashers Dead!
@@ -897,18 +897,18 @@ _.Zones =
 							},
 						}),
 						q(10039, {	-- Speak with Scout Neftis
-							["qg"] = 18712,	-- Advisor Faila
+							["provider"] = { "n", 18712 },	-- Advisor Faila
 							["coord"] = { 48.9, 44.6, 108 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(10041, {	-- Who Are They?
-							["qg"] = 18712,	-- Advisor Faila
+							["provider"] = { "n", 18712 },	-- Advisor Faila
 							["coord"] = { 48.9, 44.6, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10039,	-- Speak with Scout Neftis
 						}),
 						q(10043,  {  -- Kill the Shadow Council
-							["qg"] = 18712,	-- Advisor Faila
+							["provider"] = { "n", 18712 },	-- Advisor Faila
 							["coord"] = { 48.9, 44.6, 108 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 10041,	-- Who Are They?
@@ -922,7 +922,7 @@ _.Zones =
 				})),				
 				n(-168,  {	-- Other Quests
 					q(10052,  {  -- Escape from Firewing Point!
-						["qg"] = 18760,	-- Isla Starmane
+						["provider"] = { "n", 18760 },	-- Isla Starmane
 						["coord"] = { 73.9, 35.2, 108 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -932,7 +932,7 @@ _.Zones =
 						},
 					}),
 					q(10051,  {  -- Escape from Firewing Point!
-						["qg"] = 18760,	-- Isla Starmane
+						["provider"] = { "n", 18760 },	-- Isla Starmane
 						["coord"] = { 73.9, 35.2, 108 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -942,21 +942,21 @@ _.Zones =
 						},
 					}),
 					q(10027, {	-- Magical Disturbances
-						["qg"] = 18383,	-- Kurgatok
+						["provider"] = { "n", 18383 },	-- Kurgatok
 						["coord"] = { 48.8, 45.7, 108 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(10908, {	-- Speak with Rilak the Redeemed
-						["qg"] = 22272,	-- Kirrik the Awakened
+						["provider"] = { "n", 22272 },	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, 108 },
 						["isBreadcrumb"] = true,
 					}),
 					q(10896, {	-- The Infested Protectors
-						["qg"] = 22420,	-- Lakotae
+						["provider"] = { "n", 22420 },	-- Lakotae
 						["coord"] = { 37.9, 51.7, 108 },
 					}),
 					q(10898, {	-- Skywing
-						["qg"] = 22424,	-- Skywing
+						["provider"] = { "n", 22424 },	-- Skywing
 						["coord"] = { 53.8, 72.2, 108 },
 						["groups"] = {
 							i(31766),	-- Skywitch Hat
@@ -966,72 +966,72 @@ _.Zones =
 						},	
 					}),
 					q(9961, {	-- What's Wrong at Cenarion Thicket?
-						["qg"] = 18459,	-- Jenai Starwhisper
+						["provider"] = { "n", 18459 },	-- Jenai Starwhisper
 						["coord"] = { 57.0, 53.6, 102 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9960, {	-- What's Wrong at Cenarion Thicket?
-						["qg"] = 18447,	-- Tooki
+						["provider"] = { "n", 18447 },	-- Tooki
 						["coord"] = { 50.0, 45.8, 102 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(11506, {	-- Spirits of Auchindoun
-						["qg"] = 24886,	-- Exorcist Vaisha
+						["provider"] = { "n", 24886 },	-- Exorcist Vaisha
 						["coord"] = { 49.8, 46.6, 108 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(11505, {	-- Spirits of Auchindoun
-						["qg"] = 24885,	-- Exorcist Sullivan
+						["provider"] = { "n", 24885 },	-- Exorcist Sullivan
 						["coord"] = { 55.8, 53.8, 108 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					-- DUNGEON QUESTS
 					q(29582, {	-- Grek's Crazy Night
-						["qg"] = 19606,	-- Grek
+						["provider"] = { "n", 19606 },	-- Grek
 						["coord"] = { 49.8, 45.3, 108 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(29583, {	-- Eckert the Mad
-						["qg"] = 21400,	-- Eckert
+						["provider"] = { "n", 21400 },	-- Eckert
 						["coord"] = { 57.6, 53.6, 108 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(29595, {	-- Everything Will Be Alright
-						["qg"] = 19698,	-- Greatfather Aldrimus
+						["provider"] = { "n", 19698 },	-- Greatfather Aldrimus
 						["coord"] = { 35.0, 65.2, 108 },
 						["isBreadcrumb"] = true,
 					}),
 					q(10227, {	-- I See Dead Draenei
-						["qg"] = 19697,	-- Ha'lei
+						["provider"] = { "n", 19697 },	-- Ha'lei
 						["coord"] = { 35.0, 65.2, 108 },
 					}),
 					q(10228, {	-- Ezekiel
-						["qg"] = 19417,	-- Ramdor the Mad
+						["provider"] = { "n", 19417 },	-- Ramdor the Mad
 						["coord"] = { 35.2, 66.2, 108 },
 						["sourceQuest"] = 10227,	-- I See Dead Draenei
 					}),
 					q(10231, {	-- What Book? I Don't See Any Book.
-						["qg"] = 19715,	-- Ezekiel
+						["provider"] = { "n", 19715 },	-- Ezekiel
 						["sourceQuest"] = 10228,	-- Ezekiel
 					}),
 					q(10251, {	-- The Master's Grand Design?
-						["qg"] = 19720,	-- "Dirty" Larry <Ruffian>
+						["provider"] = { "n", 19720 },	-- "Dirty" Larry <Ruffian>
 						["coord"] = { 43.6, 29.6, 108 },
 						["sourceQuest"] = 10231,	-- What Book? I Don't See Any Book.
 					}),
 					q(10252, {	-- Vision of the Dead
-						["qg"] = 19844,	-- Nitrin the Learned
+						["provider"] = { "n", 19844 },	-- Nitrin the Learned
 						["coord"] = { 51.8, 56.8, 107 },
 						["sourceQuest"] = 10251,	-- The Master's Grand Design?
 					}),
 					q(10253, {	-- Levixus the Soul Caller
-						["qg"] = 19844,	-- Nitrin the Learned
+						["provider"] = { "n", 19844 },	-- Nitrin the Learned
 						["coord"] = { 51.8, 56.8, 107 },
 						["sourceQuest"] = 10252,	-- Vision of the Dead
 						["group"] = {

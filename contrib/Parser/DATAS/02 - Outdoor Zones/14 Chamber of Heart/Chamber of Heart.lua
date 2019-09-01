@@ -50,7 +50,7 @@ _.Zones =
 					}),
 					n(-17,  {	-- Quests
 						q(52428, {	-- Infusing the Heart
-							["qg"] = 136907,	-- Magni Bronzebeard
+							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.3, 54.4, 1021 },
 							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 							["lvl"] = 110,
@@ -82,14 +82,14 @@ _.Zones =
 							},
 						}),
 						q(51403, {	-- The Speaker's Imperative (A)
-							["qg"] = 136907,	-- Magni Bronzebeard
+							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, 1021 },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 110,
 						}),
 						q(53031, {	-- The Speaker's Imperative (H)
-							["qg"] = 136907,	-- Magni Bronzebeard
+							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, 1021 },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
 							["races"] = HORDE_ONLY,
@@ -97,40 +97,40 @@ _.Zones =
 						}),
 						-- Unlock Heartforge / Essences
 						q(55533, {	-- MOTHER Knows Best
-							["qg"] = 152206,	-- Magni Bronzebeard
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, 1473 },
 							--["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
 							["lvl"] = 120,
 						}),
 						q(55374, {	-- A Disturbance Beneath the Earth
-							["qg"] = 152194,	-- MOTHER
+							["provider"] = { "n", 152194 },	-- MOTHER
 							["coord"] = { 48.1, 72.2, 1473 },
 							["sourceQuest"] = 55533,	-- MOTHER Knows Best
 							["lvl"] = 120,
 						}),
 						q(55400, {	-- Take My Hand
-							["qg"] = 151641,	-- Spiritwalker Ebonhorn
+							["provider"] = { "n", 151641 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 49.4, 68.3, 650 },
 							["sourceQuest"] = 55374,	-- A Disurbance Beneath the Earth
 							["lvl"] = 120,
 							["maps"] = { 650 },	-- Highmountain
 						}),
 						q(55407, {	-- Calming the Spine
-							["qg"] = 151695,	-- Spiritwalker Ebonhorn
+							["provider"] = { "n", 151695 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 27.0, 45.9, 1472 },
 							["sourceQuest"] = 55400,	-- Take My Hand
 							["lvl"] = 120,
 							["maps"] = { 1472 },	-- The Dragon's Spine
 						}),
 						q(55425, {	-- Dominating the Indomitable
-							["qg"] = 152385,	-- Spiritwalker Ebonhorn
+							["provider"] = { "n", 152385 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 17.5, 62.1, 1472 },
 							["sourceQuest"] = 55407,	-- Calming the Spine
 							["lvl"] = 120,
 							["maps"] = { 1472 },	-- The Dragon's Spine
 						}),
 						q(55497, {	-- A Friendly Face
-							["qg"] = 152385,	-- Highmountain Shaman (Ebonhorn)
+							["provider"] = { "n", 152385 },	-- Highmountain Shaman (Ebonhorn)
 							["coord"] = { 18.9, 58.0, 1472 },
 							["sourceQuest"] = 55425,	-- Dominating the Indomitable
 							["lvl"] = 120,
@@ -140,7 +140,7 @@ _.Zones =
 							},
 						}),
 						q(55618, {	-- The Heart Forge
-							["qg"] = 152194,	-- MOTHER
+							["provider"] = { "n", 152194 },	-- MOTHER
 							["coord"] = { 48.1, 72.4, 1473 },
 							["sourceQuest"] = 55497,	-- A Friendly Face
 							["g"] = {
@@ -151,59 +151,59 @@ _.Zones =
 							},
 						}),
 						q(57010, {	-- Harnessing the Power
-							["qg"] = 152194,	-- MOTHER
+							["provider"] = { "n", 152194 },	-- MOTHER
 							["coord"] = { 48.0, 72.2, 1473 },
 							["sourceQuest"] = 55618,	-- The Heart Forge
 						}),
 						q(56162, {	-- Back Out to Sea (A)
-							["qg"] = 152206,	-- Magni Bronzebeard
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.1, 1473 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 57010,	-- Harnessing the Power
 						}),
 						q(56161, {	-- Back Out to Sea (H)
-							["qg"] = 152206,	-- Magni Bronzebeard
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.1, 1473 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 57010,	-- Harnessing the Power
 						}),
 						-- Heart of Azeroth Level 54
 						q(55390, {	-- In Darkness, I Dream
-							["qg"] = 152365,	-- Kalecgos
+							["provider"] = { "n", 152365 },	-- Kalecgos
 							["coord"] = { 53.1, 70.9, 1473 },
 							["description"] = "Your Heart of Azeroth needs to be 54 to start the questline.",
 							["lvl"] = 120,
 						}),	
 						q(55392, {	-- Enter the Dreamway
-							["qg"] = 151682,	-- Merithra of the Dream
+							["provider"] = { "n", 151682 },	-- Merithra of the Dream
 							["coord"] = { 51.6, 57.2, 641 },
 							["sourceQuest"] = 55390,	-- In Darkness, I Dream
 							["lvl"] = 120,
 							["maps"] = { 1471 },	-- Emerald Dreamway
 						}),
 						q(55393, {	-- Null the Void
-							["qg"] = 151693,	-- Merithra of the Dream
+							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["coord"] = { 44.1, 30.7, 1471 },
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
 							["lvl"] = 120,
 							["maps"] = { 1471 },	-- Emerald Dreamway
 						}),
 						q(55394, {	-- Shards of Emerald
-							["qg"] = 151693,	-- Merithra of the Dream
+							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["coord"] = { 44.1, 30.7, 1471 },
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
 							["lvl"] = 120,
 							["maps"] = { 1471 },	-- Emerald Dreamway
 						}),
 						q(55395, {	-- Don't Close Your Eyes
-							["qg"] = 151704,	-- Valithria Dreamwalker
+							["provider"] = { "n", 151704 },	-- Valithria Dreamwalker
 							["coord"] = { 27.1, 55.9, 1471 },
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
 							["lvl"] = 120,
 							["maps"] = { 1471 },	-- Emerald Dreamway
 						}),
 						q(55465, {	-- We Must Go Deeper
-							["qg"] = 151693,	-- Merithra of the Dream
+							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["coord"] = { 44.1, 30.7, 1471 },
 							["sourceQuests"] = {
 								55393,	-- Null the Void
@@ -217,7 +217,7 @@ _.Zones =
 							},
 						}),
 						q(55397, {	-- Before I Wake
-							["qg"] = 151825,	-- Merithra of the Dream
+							["provider"] = { "n", 151825 },	-- Merithra of the Dream
 							["coord"] = { 46.5, 39.7, 1475 },
 							["sourceQuest"] = 55465,	-- We Must Go Deeper
 							["lvl"] = 120,
@@ -232,7 +232,7 @@ _.Zones =
 							},
 						}),
 						q(55396, {	-- The Stuff Dreams Are Made Of
-							["qg"] = 151825,	-- Merithra of the Dream
+							["provider"] = { "n", 151825 },	-- Merithra of the Dream
 							["coord"] = { 46.5, 39.7, 1475 },
 							["sourceQuest"] = 55397,	-- Before I Wake
 							["lvl"] = 120,
@@ -245,7 +245,7 @@ _.Zones =
 							},
 						}),
 						q(55398, {	-- The Long Awake
-							["qg"] = 151887,	-- Merithra of the Dream
+							["provider"] = { "n", 151887 },	-- Merithra of the Dream
 							["coord"] = { 46.5, 39.7, 1475 },
 							["sourceQuest"] = 55396,	-- The Stuff Dreams Are Made Of
 							["lvl"] = 120,
@@ -253,7 +253,7 @@ _.Zones =
 						}),
 						-- Heart of Azeroth Level 55
 						q(55519, {	-- A Fresh Trauma
-							["qg"] = 152206,	-- Magni Bronzebeard
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.2, 1473 },
 							["sourceQuests"] = {
 								56261,	-- Return to the Heart (A)
@@ -263,14 +263,14 @@ _.Zones =
 							["lvl"] = 120,
 						}),
 						q(55520, {	-- Healing Nordrassil
-							["qg"] = 152095,	-- Magni Bronzebeard
+							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
 							["coord"] = { 62.0, 24.9, 198 },
 							["sourceQuest"] = 55519,	-- A Fresh Trauma
 							["lvl"] = 120,
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
 						q(55521, {	-- Do It the Azerite Way
-							["qg"] = 152095,	-- Magni Bronzebeard
+							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
 							["coord"] = { 62.0, 24.9, 198 },
 							["sourceQuest"] = 55520,	-- Healing Nordrassil
 							["lvl"] = 120,
@@ -278,14 +278,14 @@ _.Zones =
 						}),
 						-- Heart of Azeroth Level 60  -- Confirm this is actually sourced from the Magni Chain.
 						q(56167, {	-- Investigating the Highlands
-							["qg"] = 152365,	-- Kalecgos
+							["provider"] = { "n", 152365 },	-- Kalecgos
 							["coord"] = { 53.1, 70.9, 1473 },
 							["sourceQuest"] = 55521,	-- Do It the Azerite Way
 							["description"] = "Your Heart of Azeroth needs to be 60 to start the questline.",
 							["lvl"] = 120,
 						}),
 						q(55657, {	-- In the Shadow of Crimson Wings
-							["qg"] = 152720,	-- Kalecgos
+							["provider"] = { "n", 152720 },	-- Kalecgos
 							["coord"] = { 36.0, 50.5, 241 },
 							["sourceQuest"] = 56167,	-- Investigating the Highlands
 							["lvl"] = 120,
@@ -303,7 +303,7 @@ _.Zones =
 --[[					
 						-- Heart of Azeroth Level 70
 						q(56401, {	--
-						--	["qg"] = ,	--
+						--	["provider"] = { "n",  },	--
 						--	["coord"] = { },
 						--	["sourceQuest"] = ,	--
 							["g"] = {

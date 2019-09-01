@@ -54,13 +54,13 @@ _.Zones =
 					["classes"] = { 4 },
 				}),
 				q(9275, {	-- A Little Dash of Seasoning
-					["qg"] = 16464,	-- Apothecary Venustus
+					["provider"] = { "n", 16464 },	-- Apothecary Venustus
 					["coord"] = { 72.6, 31.5, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9276 },	-- Attack on Zeb'Tela
 				}),
 				q(9315, {	-- Anok'suten
-					["qg"] = 16601,	-- Dying Blood Elf
+					["provider"] = { "n", 16601 },	-- Dying Blood Elf
 					["coord"] = { 57.5, 14.9, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9758 },	-- Return to Arcanist Vandril
@@ -73,18 +73,18 @@ _.Zones =
 					},
 				}),
 				q(9487, {	-- Arcane Reavers (UNTESTED - unsure if there are pre-req requirements)
-					["qg"] = 16197,	-- Arcanist Vandril
+					["provider"] = { "n", 16197 },	-- Arcanist Vandril
 					["lvl"] = 10,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 8 },	-- Mage
 				}),
 				q(9877, {	-- A Restorative Draught
 					["u"] = 40,
-					["qg"] = 16240,	-- Arcanist Janeda
+					["provider"] = { "n", 16240 },	-- Arcanist Janeda
 					["races"] = HORDE_ONLY,
 				}),
 				q(9488, {	-- A Simple Robe (UNTESTED, don't know if there are add'l prereqs)
-					["qg"] = 16197,	-- Arcanist Vandril
+					["provider"] = { "n", 16197 },	-- Arcanist Vandril
 					["lvl"] = 10,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 8 },	-- Mage
@@ -94,7 +94,7 @@ _.Zones =
 					},
 				}),
 				q(9277, {	-- Assault on Zeb'Nowa
-					["qg"] = 16463,	-- Farstrider Solanna
+					["provider"] = { "n", 16463 },	-- Farstrider Solanna
 					["coord"] = { 72.3, 31.2, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9276 },	-- Attack on Zeb'tela
@@ -106,29 +106,29 @@ _.Zones =
 					},
 				}),
 				q(9276, {	-- Attack on Zeb'Tela
-					["qg"] = 16463,	-- Farstrider Solanna
+					["provider"] = { "n", 16463 },	-- Farstrider Solanna
 					["coord"] = { 72.3, 31.2, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9146 },	-- Report to Captain Helios
 				}),
 				q(9158, {	-- Bearers of the Plague
-					["qg"] = 16202,	-- Farstrider Sedina
+					["provider"] = { "n", 16202 },	-- Farstrider Sedina
 					["coord"] = { 72.4, 32.1, 95 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9164, {	-- Captives at Deatholme
-					["qg"] = 16240,	-- Arcanist Janeda
+					["provider"] = { "n", 16240 },	-- Arcanist Janeda
 					["coord"] = { 54.8, 48.3, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9176 },	-- The Twin Ziggurats
 				}),
 				q(9281, {	-- Clearing the Way
-					["qg"] = 16480,	-- Apprentice Vor'el
+					["provider"] = { "n", 16480 },	-- Apprentice Vor'el
 					["coord"] = { 46.3, 56.4, 95 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9171, {	-- Culinary Crunch
-					["qg"] = 16253,	-- Master Chef Mouldier
+					["provider"] = { "n", 16253 },	-- Master Chef Mouldier
 					["coord"] = { 48.4, 30.9, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9138 },	-- Suncrown Village
@@ -137,7 +137,7 @@ _.Zones =
 					},
 				}),
 				q(9159, {	-- Curbing the Plague
-					["qg"] = 16202,	-- Farstrider Sedina
+					["provider"] = { "n", 16202 },	-- Farstrider Sedina
 					["coord"] = { 72.4, 32.1, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9158 },	-- Bearers of the Plague
@@ -150,7 +150,7 @@ _.Zones =
 					},
 				}),
 				q(9170, {	-- Dar'Khan's Lieutenants
-					["qg"] = 16204,	-- Magister Idonis
+					["provider"] = { "n", 16204 },	-- Magister Idonis
 					["coord"] = { 54.8, 48.5, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9176 },	-- The Twin Ziggurats
@@ -163,7 +163,7 @@ _.Zones =
 					},
 				}),
 				q(9169, {	-- Deactivate An'owyn
-					["qg"] = 16237,	-- Magister Sylastor
+					["provider"] = { "n", 16237 },	-- Magister Sylastor
 					["coord"] = { 60.2, 35.6, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9166 },	-- Deliver the Plans to An'telas
@@ -174,19 +174,19 @@ _.Zones =
 					},
 				}),
 				q(9143, {	-- Dealing with Zeb'Sora
-					["qg"] = 16219,	-- Ranger Valanna
+					["provider"] = { "n", 16219 },	-- Ranger Valanna
 					["coord"] = { 69.3, 15.1, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9145 },	-- Help Ranger Valanna!
 				}),
 				q(9166, {	-- Deliver the Plans to An'telas
-					["qg"] = 16231,	-- Dame Auriferous
+					["provider"] = { "n", 16231 },	-- Dame Auriferous
 					["coord"] = { 44.8, 32.5, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9163 },	-- Into Occupied Territory
 				}),
 				q(9155, {	-- Down the Dead Scar
-					["qg"] = 16200,	-- Deathstalker Rathiel
+					["provider"] = { "n", 16200 },	-- Deathstalker Rathiel
 					["coord"] = { 46.0, 33.5, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9138 },	-- Suncrown Village
@@ -202,7 +202,7 @@ _.Zones =
 					},
 				}),
 				q(9212, {	-- Escape from the Catacombs
-					["qg"] = 16295,	-- Ranger Lilatha
+					["provider"] = { "n", 16295 },	-- Ranger Lilatha
 					["coord"] = { 59.9, 81.5, 96 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -213,20 +213,20 @@ _.Zones =
 					},
 				}),
 				q(9157, {	-- Forgotten Rituals
-					["qg"] = 16201,	-- Geranis Whitemorn
+					["provider"] = { "n", 16201 },	-- Geranis Whitemorn
 					["lvl"] = 10,
 					["coord"] = { 72.2, 19.0, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9146 },	-- Report to Captain Helios
 				}),
 				q(9811, {	-- Friend of the Sin'dorei
-					["qg"] = 16239,	-- Magister Kaendris
+					["provider"] = { "n", 16239 },	-- Magister Kaendris
 					["coord"] = { 55.0, 48.8, 95 },
 					["races"] = exclude({10}, HORDE_ONLY),	-- Horde, non-Blood Elf
 					["sourceQuests"] = { 9167 },	-- The Traitor's Destruction
 				}),
 				q(9139, {	-- Goldenmist Village
-					["qg"] = 16197,	-- Arcanist Vandril
+					["provider"] = { "n", 16197 },	-- Arcanist Vandril
 					["coord"] = { 46.3, 28.3, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9138 },	-- Suncrown Village
@@ -243,7 +243,7 @@ _.Zones =
 					},
 				}),
 				q(9145, {	-- Help Ranger Valanna!
-					["qg"] = 16213,	-- Ranger Lethvalin
+					["provider"] = { "n", 16213 },	-- Ranger Lethvalin
 					["coord"] = { 45.4, 32.4, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -252,57 +252,57 @@ _.Zones =
 					},
 				}),
 				q(9328, {	-- Hero of the Sin'dorei
-					["qg"] = 16239,	-- Magister Kaendris
+					["provider"] = { "n", 16239 },	-- Magister Kaendris
 					["races"] = { 10 },	-- Blood Elf
 					["sourceQuests"] = { 9167 },	-- The Traitor's Destruction
 				}),
 				q(9163, {	-- Into Occupied Territory
-					["qg"] = 16231,	-- Dame Auriferous
+					["provider"] = { "n", 16231 },	-- Dame Auriferous
 					["coord"] = { 44.8, 32.5, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9160 },	-- Investigate An'daroth
 				}),
 				q(9193, {	-- Investigate the Amani Catacombs
-					["qg"] = 16203,	-- Ranger Vynna
+					["provider"] = { "n", 16203 },	-- Ranger Vynna
 					["coord"] = { 71.9, 32.6, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9146 },	-- Report to Captain Helios
 				}),
 				q(9160, {	-- Investigate An'daroth
-					["qg"] = 16231,	-- Dame Auriferous
+					["provider"] = { "n", 16231 },	-- Dame Auriferous
 					["coord"] = { 44.8, 32.5, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9138 },	-- Suncrown Village
 				}),
 				q(9177, {	-- Journey to Undercity (wowhead reports this as removed, but Pr3vention recieved this version on 8.June.2019)
-					["qg"] = 16252,	-- High Executor Mavren
+					["provider"] = { "n", 16252 },	-- High Executor Mavren
 					["coord"] = { 44.7, 32.4, 95 },
 					["races"] = exclude({ 10 }, HORDE_ONLY),	-- Horde, excluding Blood Elf
 					["sourceQuests"] = { 9175 },	-- The Lady's Necklace
 					-- possibly granted if you do "The Lady's Necklace" before "Retaking Windrunner Spire" OR this one is for non-BEs
 				}),
 				q(9180, {	-- Journey to Undercity
-					["qg"] = 16252,	-- High Executor Mavren
+					["provider"] = { "n", 16252 },	-- High Executor Mavren
 					["coord"] = { 44.7, 32.4, 95 },
 					["races"] = { 10 },	-- Blood Elf
 					["sourceQuests"] = { 9175 },	-- The Lady's Necklace
 				}),
 				q(9217, {	-- More Rotting Hearts
-					["qg"] = 16205,	-- Magistrix Aminel
+					["provider"] = { "n", 16205 },	-- Magistrix Aminel
 					["coord"] = { 48.9, 31.3, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9216 },	-- Rotting Hearts
 					["repeatable"] = true,
 				}),
 				q(9219, {	-- More Spinal Dust
-					["qg"] = 16205,	-- Magistrix Aminel
+					["provider"] = { "n", 16205 },	-- Magistrix Aminel
 					["coord"] = { 48.9, 31.3, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9218 },	-- Spinal Dust
 					["repeatable"] = true,
 				}),
 				q(9146, {	-- Report to Captain Helios
-					["qg"] = 16219,	-- Ranger Valanna
+					["provider"] = { "n", 16219 },	-- Ranger Valanna
 					["coord"] = { 69.4, 15.1, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9143 },	-- Dealing with Zeb'Sora
@@ -314,7 +314,7 @@ _.Zones =
 					},
 				}),
 				q(9172, {	-- Report to Magister Kaendris
-					["qg"] = 16203,	-- Ranger Vynna
+					["provider"] = { "n", 16203 },	-- Ranger Vynna
 					["coord"] = { 71.9, 32.6, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9162 },	-- Hints of the Past
@@ -326,13 +326,13 @@ _.Zones =
 					},
 				}),
 				q(9173, {	-- Retaking Windrunner Spire
-					["qg"] = 16252,	-- High Executor Mavren
+					["provider"] = { "n", 16252 },	-- High Executor Mavren
 					["coord"] = { 44.7, 32.4, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9140 },	-- Windrunner Village
 				}),
 				q(9758, {	-- Return to Arcanist Vandril
-					["qg"] = 16252,	-- High Executor Mavren
+					["provider"] = { "n", 16252 },	-- High Executor Mavren
 					["coord"] = { 44.7, 32.4, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -341,54 +341,54 @@ _.Zones =
 					},
 				}),
 				q(9216, {	-- Rotting Hearts
-					["qg"] = 16205,	-- Magistrix Aminel
+					["provider"] = { "n", 16205 },	-- Magistrix Aminel
 					["coord"] = { 48.9, 31.3, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9155 },	-- Down the Dead Scar
 				}),
 				q(9150, {	-- Salvaging the Past
-					["qg"] = 16199,	-- Magister Darenis
+					["provider"] = { "n", 16199 },	-- Magister Darenis
 					["coord"] = { 46.0, 31.9, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9138 },	-- Suncrown Village
 				}),
 				q(9214, {	-- Shadowpine Weaponry
-					["qg"] = 16220,	-- Captain Helios
+					["provider"] = { "n", 16220 },	-- Captain Helios
 					["coord"] = { 72.3, 29.6, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9146 },	-- Report to Captain Helios
 				}),
 				q(9218, {	-- Spinal Dust
-					["qg"] = 16205,	-- Magistrix Aminel
+					["provider"] = { "n", 16205 },	-- Magistrix Aminel
 					["coord"] = { 48.9, 31.3, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9155 },	-- Down the Dead Scar
 				}),
 				q(9274, {	-- Spirits of the Drowned
-					["qg"] = 16462,	-- Ranger Krenn'an
+					["provider"] = { "n", 16462 },	-- Ranger Krenn'an
 					["coord"] = { 72.2, 29.7, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9146 },	-- Report to Captain Helios
 				}),
 				q(9138, {	-- Suncrown Village
-					["qg"] = 16197,	-- Arcanist Vandril
+					["provider"] = { "n", 16197 },	-- Arcanist Vandril
 					["coord"] = { 46.2, 28.3, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9758 },	-- Return to Arcanist Vandril
 				}),
 				q(9282, {	-- The Farstrider Enclave
-					["qg"] = 16239,	-- Magister Kaendris
+					["provider"] = { "n", 16239 },	-- Magister Kaendris
 					["coord"] = { 55.0, 48.8, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9151 },	-- The Sanctum of the Sun
 					["isBreadcrumb"] = true,
 				}),
 				q(9327, {	-- The Forsaken
-					["qg"] = 16197,	-- Arcanist Vandril
+					["provider"] = { "n", 16197 },	-- Arcanist Vandril
 					["races"] = { 10 },	-- Blood Elf
 				}),
 				q(9329, {	-- The Forsaken
-					["qg"] = 16197,	-- Arcanist Vandril
+					["provider"] = { "n", 16197 },	-- Arcanist Vandril
 					["races"] = exclude({10}, HORDE_ONLY),	-- Horde, not Blood Elf
 				}),
 				i(22597, {	-- The Lady's Necklace
@@ -400,7 +400,7 @@ _.Zones =
 					},
 				}),
 				q(9149, {	-- The Plagued Coast
-					["qg"] = 16198,	-- Apothecary Renzithen
+					["provider"] = { "n", 16198 },	-- Apothecary Renzithen
 					["coord"] = { 47.6, 34.8, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9138 },	-- Suncrown Village
@@ -418,7 +418,7 @@ _.Zones =
 					},
 				}),
 				q(9151, {	-- The Sanctum of the Sun
-					["qg"] = 16199,	-- Magister Darenis
+					["provider"] = { "n", 16199 },	-- Magister Darenis
 					["lvl"] = 20,
 					["coord"] = { 46.0, 31.9, 95 },
 					["races"] = HORDE_ONLY,
@@ -430,7 +430,7 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 				}),
 				q(9167, {	-- The Traitor's Destruction
-					["qg"] = 16239,	-- Magister Kaendris
+					["provider"] = { "n", 16239 },	-- Magister Kaendris
 					["coord"] = { 55.0, 48.8, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9176 },	-- The Twin Ziggurats
@@ -443,13 +443,13 @@ _.Zones =
 					},
 				}),
 				q(9161, {	-- The Traitor's Shadow
-					["qg"] = 16203,	-- Ranger Vynna
+					["provider"] = { "n", 16203 },	-- Ranger Vynna
 					["coord"] = { 71.9, 32.6, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9282 },	-- The Farstrider Enclave
 				}),
 				q(9176, {	-- The Twin Ziggurats
-					["qg"] = 16239,	-- Magister Kaendris
+					["provider"] = { "n", 16239 },	-- Magister Kaendris
 					["coord"] = { 55.0, 48.8, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9172 },	-- Report to Master Kaendris
@@ -459,13 +459,13 @@ _.Zones =
 					},
 				}),
 				q(9152, {	-- Tomber's Supplies
-					["qg"] = 16224,	-- Rathis Tomber
+					["provider"] = { "n", 16224 },	-- Rathis Tomber
 					["coord"] = { 47.2, 28.5, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9138 },	-- Suncrown Village
 				}),
 				q(9199, {	-- Troll Juju
-					["qg"] = 16464,	-- Apothecary Venustus
+					["provider"] = { "n", 16464 },	-- Apothecary Venustus
 					["coord"] = { 72.6, 31.5, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9146 },	-- Report to Captain Helios
@@ -477,18 +477,18 @@ _.Zones =
 					},
 				}),
 				q(9192, {	-- Trouble at the Underlight Mines
-					["qg"] = 16251,	-- Deathstalker Maltendis
+					["provider"] = { "n", 16251 },	-- Deathstalker Maltendis
 					["coord"] = { 44.7, 32.2, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9138 },	-- Suncrown Village
 				}),
 				q(9207, {	-- Underlight Ore Samples
-					["qg"] = 16293,	-- Apprentice Shatharia
+					["provider"] = { "n", 16293 },	-- Apprentice Shatharia
 					["coord"] = { 31.4, 48.3, 95 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9174, {	-- Vanquishing Aquantion
-					["qg"] = 16201,	-- Geranis Whitemorn
+					["provider"] = { "n", 16201 },	-- Geranis Whitemorn
 					["coord"] = { 72.2, 19.1, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9157 },	-- Forgotten Rituals
@@ -523,13 +523,13 @@ _.Zones =
 					},
 				}),
 				q(9220, {	-- War on Deatholme
-					["qg"] = 16204,	-- Magister Idonis
+					["provider"] = { "n", 16204 },	-- Magister Idonis
 					["coord"] = { 54.8, 48.5, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9176 },	-- The Twin Ziggurats
 				}),
 				q(9140, {	-- Windrunner Village
-					["qg"] = 16197,	-- Arcanist Vandril
+					["provider"] = { "n", 16197 },	-- Arcanist Vandril
 					["coord"] = { 46.2, 28.3, 95 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9139 },	-- Goldenmist Village

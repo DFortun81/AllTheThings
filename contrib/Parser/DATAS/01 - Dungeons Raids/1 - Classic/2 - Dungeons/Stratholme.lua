@@ -15,19 +15,19 @@ _.Instances = { tier(1, {	-- Classic
 					n(-17, {	-- Quests
 						{
 							["questID"] = 27185,	-- Cutting the Competition
-							["qg"] = 45201,	-- Master Craftsman Wilhelm
+							["provider"] = { "n", 45201 },	-- Master Craftsman Wilhelm
 						},
 						{
 							["questID"] = 27305,	-- Of Love and Family
-							["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
+							["provider"] = { "n", 45200 },	-- Crusade Commander Eligor Dawnbringer
 						},
 						{
 							["questID"] = 27223,	-- Retribution
-							["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
+							["provider"] = { "n", 45200 },	-- Crusade Commander Eligor Dawnbringer
 						},
 						{
 							["questID"] = 27208,	-- The Dreadlord Balnazzar
-							["qg"] = 45200,	-- Crusade Commander Eligor Dawnbringer
+							["provider"] = { "n", 45200 },	-- Crusade Commander Eligor Dawnbringer
 							["groups"] = {
 								i(65998),	-- Balnazzar's Hide
 								i(65977),	-- Balnazzar's Horn
@@ -37,7 +37,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 						{
 							["questID"] = 27223,	-- The Great Fras Siabi
-							["qg"] = 45323,	-- Packmaster Stonebruiser
+							["provider"] = { "n", 45323 },	-- Packmaster Stonebruiser
 						},
 					}),
 					n(0, {	-- Zone Drop
@@ -203,7 +203,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						-- Part of the Dungeon 2 Set Questline
 						q(8946, {	-- Proof of Life
-							["qg"] = 16031,	-- Ysida Harmon
+							["provider"] = { "n", 16031 },	-- Ysida Harmon
 							["sourceQuest"] = 8945,	-- Dead Man's Plea
 							["lvl"] = 58,
 							["u"] = 40,
@@ -294,23 +294,23 @@ _.Instances = { tier(1, {	-- Classic
 					n(-17, {	-- Quests
 						{
 							["questID"] = 27359,	-- Argent Reinforcements
-							["qg"] = 45330,	-- Archmage Angela Dosantos
+							["provider"] = { "n", 45330 },	-- Archmage Angela Dosantos
 						},
 						{
 							["questID"] = 27352,	-- Liquid Gold
-							["qg"] = 45328,	-- Packmaster Stonebruiser
+							["provider"] = { "n", 45328 },	-- Packmaster Stonebruiser
 						},
 						{
 							["questID"] = 27227,	-- Lord Aurius Rivendare
-							["qg"] = 45329,	-- Crusade Commander Eligor Dawnbringer
+							["provider"] = { "n", 45329 },	-- Crusade Commander Eligor Dawnbringer
 						},
 						{
 							["questID"] = 27228,	-- Man Against Abomination
-							["qg"] = 45206,	-- Crusade Commander Korfax
+							["provider"] = { "n", 45206 },	-- Crusade Commander Korfax
 						},
 						{
 							["questID"] = 27230,	-- Weapons for War
-							["qg"] = 45331,	-- Master Craftsman Wilhelm
+							["provider"] = { "n", 45331 },	-- Master Craftsman Wilhelm
 						},
 					}),
 					n(0, {	-- Zone Drop

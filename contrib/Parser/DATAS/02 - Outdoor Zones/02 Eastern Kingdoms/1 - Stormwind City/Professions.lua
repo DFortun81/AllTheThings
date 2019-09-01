@@ -9,7 +9,7 @@ _.Zones =
 				prof(171, {	-- Alchemy
 					n(-17, {	-- Quests
 						q(29481, {	-- Elixir Master
-							["qg"] = 5499,	-- Lilyssia Nightbreeze (Stormwind)
+							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
 							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -24,7 +24,7 @@ _.Zones =
 							},]]								
 						}),
 						q(29067, {	-- Potion Master
-							["qg"] = 5499,	-- Lilyssia Nightbreeze (Stormwind)
+							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
 							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -39,7 +39,7 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["qg"] = 5499,	-- Lilyssia Nightbreeze (Stormwind)
+							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
 							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -58,7 +58,7 @@ _.Zones =
 				prof(164, {	-- Blacksmithing
 					n(-17, {	-- Quests
 						q(2759, {	-- In Search of Galvan
-							["qg"] = 7798,	-- Hank the Hammer
+							["provider"] = { "n", 7798 },	-- Hank the Hammer
 							["coord"] = { 56.0, 16.0, 84 },
 							["sourceQuest"] = 2758,	-- The Origins of Smithing
 							["requireSkill"] = 164,	-- Blacksmithing
@@ -70,7 +70,7 @@ _.Zones =
 							},
 						}),
 						q(2758, {	-- The Origins of Smithing
-							["qg"] = 7798,	-- Hank the Hammer
+							["provider"] = { "n", 7798 },	-- Hank the Hammer
 							["coord"] = { 56.0, 16.0, 84 },
 							["requireSkill"] = 164,	-- Blacksmithing
 							["races"] = ALLIANCE_ONLY,
@@ -90,7 +90,7 @@ _.Zones =
 					}),
 					n(-17, {	-- Quests
 						q(26190, {	-- A Fisherman's Feast 
-							["qg"] = 42288,	-- Robby Flay
+							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -101,7 +101,7 @@ _.Zones =
 							},
 						}),
 						q(26177, {	-- Feeling Crabby?
-							["qg"] = 42288,	-- Robby Flay
+							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -112,7 +112,7 @@ _.Zones =
 							},
 						}),
 						q(26192, {	-- Orphans Like Cookies Too!
-							["qg"] = 42288,	-- Robby Flay
+							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -123,7 +123,7 @@ _.Zones =
 							},
 						}),
 						q(26153, {	-- Penny's Pumpkin Pancakes
-							["qg"] = 42288,	-- Robby Flay
+							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -134,7 +134,7 @@ _.Zones =
 							},
 						}),
 						q(26183, {	-- The King's Cider
-							["qg"] = 42288,	-- Robby Flay
+							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -149,7 +149,7 @@ _.Zones =
 				prof(202, {	-- Engineering
 					n(-17, {	-- Quests
 						q(29477, {	-- Gnomish Engineering
-							["qg"] = 5518,	-- Lilliam Sparkspindle
+							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
 							["coord"] = { 62.8, 32.0, 84 },
 							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
 							["requireSkill"] = 202,	-- Engineering
@@ -157,7 +157,7 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 						q(29475, {	-- Goblin Engineering
-							["qg"] = 5518,	-- Lilliam Sparkspindle
+							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
 							["coord"] = { 62.8, 32.0, 84 },
 							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
 							["requireSkill"] = 202,	-- Engineering
@@ -174,7 +174,7 @@ _.Zones =
 					}),
 					n(-17, {	-- Quests
 						q(26488, {	-- Big Gulp
-							["qg"] = 5494,	-- Catherine Leland
+							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 85 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -190,7 +190,7 @@ _.Zones =
 							},
 						}),
 						q(26420, {	-- Diggin' For Worms
-							["qg"] = 5494,	-- Catherine Leland
+							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 85 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -206,7 +206,7 @@ _.Zones =
 							},
 						}),
 						q(26414, {	-- Hitting a Walleye
-							["qg"] = 5494,	-- Catherine Leland
+							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 85 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -222,7 +222,7 @@ _.Zones =
 							},
 						}),
 						q(26442, {	-- Rock Lobster
-							["qg"] = 5494,	-- Catherine Leland
+							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 85 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -238,7 +238,7 @@ _.Zones =
 							},
 						}),
 						q(26536, {	-- Thunder Falls
-							["qg"] = 5494,	-- Catherine Leland
+							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 85 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -258,7 +258,7 @@ _.Zones =
 				prof(755, {	-- Jewelcrafting
 					n(-17, {	-- Quests
 						q(25154, {	-- A Present for Lila
-							["qg"] = 50480,	-- Isabel Jones
+							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 755,	-- Jewelcrafting
@@ -268,7 +268,7 @@ _.Zones =
 							},
 						}),
 						q(25156, {	-- Elemental Goo
-							["qg"] = 50480,	-- Isabel Jones
+							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 755,	-- Jewelcrafting
@@ -278,7 +278,7 @@ _.Zones =
 							},
 						}),
 						q(25105, {	-- Nibbler! No!
-							["qg"] = 50480,	-- Isabel Jones
+							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 755,	-- Jewelcrafting
@@ -288,7 +288,7 @@ _.Zones =
 							},
 						}),
 						q(25155, {	-- Ogrezonians in the Mood
-							["qg"] = 50480,	-- Isabel Jones
+							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 755,	-- Jewelcrafting
@@ -298,7 +298,7 @@ _.Zones =
 							},
 						}),
 						q(25157, {	-- The Latest Fashion!
-							["qg"] = 50480,	-- Isabel Jones
+							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 755,	-- Jewelcrafting
@@ -312,7 +312,7 @@ _.Zones =
 				prof(165, {	-- Leatherworking
 					n(-17, {	-- Quests
 						q(7497, {	-- The Journey Has Just Begun
-							["qg"] = 14394,	-- Major Mattingly
+							["provider"] = { "n", 14394 },	-- Major Mattingly
 							["coord"] = { 67.2, 85.1, 84 },
 							["sourceQuest"] = 24428, -- A Most Puzzling Circumstance (A)
 							["requireSkill"] = 165,	-- Leatherworking

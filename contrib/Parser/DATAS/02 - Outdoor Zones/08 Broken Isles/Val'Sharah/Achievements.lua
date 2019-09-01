@@ -163,7 +163,10 @@ _.Zones =
 									["itemID"] = 139527,		-- Bloody Plea
 									--["questID"] = 42308,		-- Bloody Plea (Quest)
 									["description"] = "Furbolgs in southern Val'sharah",
-									["qgs"] = {93577, 91288}
+									["crs"] = {
+										93577,
+										91288,
+									}
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -171,7 +174,7 @@ _.Zones =
 									["itemID"] = 139528,		-- Bloody Request
 									--["questID"] = 42309,		-- Bloody Request (Quest)
 									["description"] = "Grizzleweald (68, 73) in Val'sharah",
-									["qgs"] = {109045}
+									["crs"] = { 109045 }
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -179,7 +182,7 @@ _.Zones =
 									["itemID"] = 139526,		-- Fevered Note
 									--["questID"] = 42303,		-- Fevered Note (Quest)
 									["description"] = "Southern Val'sharah",
-									["qgs"] = {108675}
+									["crs"] = { 108675 },
 								}
 							},
 						})),

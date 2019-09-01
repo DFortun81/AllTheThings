@@ -14,26 +14,26 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			n(-17, {	-- Quests
 				{	-- A Radical Notion
 					["questID"] = 29686,	-- A Radical Notion
-					["qg"] = 55007,	-- Exarch Larethor
+					["provider"] = { "n", 55007 },	-- Exarch Larethor
 				},
 				{	-- Hard to Kill
 					["questID"] = 29685,	-- Hard to Kill
-					["qg"] = 24848,	-- Kalecgos
+					["provider"] = { "n", 24848 },	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
 				},
 				{	-- Severed Communications
 					["questID"] = 29684,	-- Severed Communications
-					["qg"] = 55007,	-- Exarch Larethor
+					["provider"] = { "n", 55007 },	-- Exarch Larethor
 					["sourceQuest"] = 11482,	-- Duty Calls
 				},
 				{	-- The Scryer's Scryer
 					["questID"] = 11490,	-- The Scryer's Scryer
-					["qg"] = 24822,	-- Tyrith
+					["provider"] = { "n", 24822 },	-- Tyrith
 					["sourceQuest"] = 29684,	-- Severed Communications
 				},
 				{	-- Twisted Associations
 					["questID"] = 29687,	-- Twisted Associations
-					["qg"] = 55007,	-- Exarch Larethor
+					["provider"] = { "n", 55007 },	-- Exarch Larethor
 				},
 			}),
 			n(0, {	-- Zone Drops

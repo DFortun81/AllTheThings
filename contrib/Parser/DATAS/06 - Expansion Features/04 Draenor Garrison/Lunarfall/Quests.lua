@@ -13,7 +13,7 @@ _.ExpansionFeatures =
 				}),
 				garrisonBuilding(28,  {	-- Barracks (rank 1: 26, rank 2: 27, rank 3: 28)
 					q(37080, {	-- Glorious Slaughter
-						["qg"] = 86927,	-- Stormshield Death Knight(Delvar Ironfist)
+						["provider"] = { "n", 86927 },	-- Stormshield Death Knight(Delvar Ironfist)
 						["g"] = {
 							spell(174553, {	-- Delvar Ability: Breath of Sindragosa
 								["collectible"] = false,
@@ -21,7 +21,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					q(37129, {	-- Unwelcome Memories
-						["qg"] = 86927,	-- Stormshield Death Knight(Delvar Ironfist)
+						["provider"] = { "n", 86927 },	-- Stormshield Death Knight(Delvar Ironfist)
 						["g"] = {
 							spell(174904, {	-- Delvar Perk: Death Gate
 								["collectible"] = false,
@@ -29,7 +29,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					q(37047, {	-- The Light's Gift
-						["qg"] = 86934,	-- Sha'tari Defender(Defender Illona)
+						["provider"] = { "n", 86934 },	-- Sha'tari Defender(Defender Illona)
 						["g"] = {
 							spell(174537, {	-- Illona Ability: Guardian of Ancient Kings
 								["collectible"] = false,
@@ -37,7 +37,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					q(37127, {	-- The Light of Exodus
-						["qg"] = 86934,	-- Sha'tari Defender(Defender Illona)
+						["provider"] = { "n", 86934 },	-- Sha'tari Defender(Defender Illona)
 						["g"] = {
 							spell(174887, {	-- Illona Perk: Guiding Light
 								["collectible"] = false,
@@ -45,7 +45,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					q(36947, {	-- New Strength
-						["qg"] = 86682,	-- Retired Gorian Centurion(Tormmok)
+						["provider"] = { "n", 86682 },	-- Retired Gorian Centurion(Tormmok)
 						["g"] = {
 							spell(174189, {	-- Tormmok Ability: Avatar
 								["collectible"] = false,
@@ -53,7 +53,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					q(37126, {	-- An Ogre Without His Sword...(A)--Seems to count both Horde/Alli when you do one.
-						["qg"] = 86682,	-- Retired Gorian Centurion(Tormmok)
+						["provider"] = { "n", 86682 },	-- Retired Gorian Centurion(Tormmok)
 						--["altQuestID"] = 37180,	-- An Ogre Without His Sword...(H)
 						["g"] = {
 							spell(174886, {	-- Tormmok Perk: Master of Arms
@@ -62,7 +62,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					q(37085, {	-- Fury of the Clan
-						["qg"] = 86964,	-- Bloodmane Earthbinder(Leorajh)
+						["provider"] = { "n", 86964 },	-- Bloodmane Earthbinder(Leorajh)
 						["g"] = {
 							spell(174562, {	-- Leorajh Ability: Primal Bloodlust
 								["collectible"] = false,
@@ -70,7 +70,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					q(37140, {	-- Leorajh's Prayer Beads(A)--Seems to count both Horde/Alli when you do one.
-						["qg"] = 86964,	-- Bloodmane Earthbinder(Leorajh)
+						["provider"] = { "n", 86964 },	-- Bloodmane Earthbinder(Leorajh)
 						--["altQuestID"] = 37181,	-- Leorajh's Prayer Beads(H)
 						["g"] = {
 							spell(174965, {	-- Leorajh Perk: Windspeaker
@@ -79,7 +79,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					q(37084, {	-- The Shadows Call
-						["qg"] = 86946,	-- Outcast Talonpriest(Talonpriest Ishaal)
+						["provider"] = { "n", 86946 },	-- Outcast Talonpriest(Talonpriest Ishaal)
 						["g"] = {
 							spell(174560, {	-- Ishaal Ability: Last Rites
 								["collectible"] = false,
@@ -87,7 +87,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					q(37137, {	-- Scrying Hard or Hardly Scrying(A)--Seems to count both Horde/Alli when you do one.
-						["qg"] = 86946,	-- Outcast Talonpriest(Talonpriest Ishaal)
+						["provider"] = { "n", 86946 },	-- Outcast Talonpriest(Talonpriest Ishaal)
 						--["altQuestID"] = 37182,	-- Scrying Hard or Hardly Scrying(H)
 						["g"] = {
 							spell(174927, {	-- Ishaal Perk: Courier Raven
@@ -98,7 +98,7 @@ _.ExpansionFeatures =
 				}),
 				garrisonBuilding(10,  {	-- Dwarven Bunker (rank 1: 8, rank 2: 9, rank 3: 10)
 					q(37092, {	-- Scraps of Iron
-						["qg"] = 77377,	-- Kristen Stoneforge
+						["provider"] = { "n", 77377 },	-- Kristen Stoneforge
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(118365),	-- Stormwind Tabard
@@ -110,7 +110,7 @@ _.ExpansionFeatures =
 						["requireSkill"] = 356,	-- Fishing
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
-						["qg"] = 77733,	-- Ron Ashton
+						["provider"] = { "n", 77733 },	-- Ron Ashton
 						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -127,7 +127,7 @@ _.ExpansionFeatures =
 						["requireSkill"] = 356,	-- Fishing
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
-						["qg"] = 77733,	-- Ron Ashton
+						["provider"] = { "n", 77733 },	-- Ron Ashton
 						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -138,7 +138,7 @@ _.ExpansionFeatures =
 						["requireSkill"] = 356,	-- Fishing
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
-						["qg"] = 77733,	-- Ron Ashton
+						["provider"] = { "n", 77733 },	-- Ron Ashton
 						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -149,7 +149,7 @@ _.ExpansionFeatures =
 						["requireSkill"] = 356,	-- Fishing
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
-						["qg"] = 77733,	-- Ron Ashton
+						["provider"] = { "n", 77733 },	-- Ron Ashton
 						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -160,7 +160,7 @@ _.ExpansionFeatures =
 						["requireSkill"] = 356,	-- Fishing
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
-						["qg"] = 77733,	-- Ron Ashton
+						["provider"] = { "n", 77733 },	-- Ron Ashton
 						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -171,7 +171,7 @@ _.ExpansionFeatures =
 						["requireSkill"] = 356,	-- Fishing
 						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 						["isDaily"] = true,
-						["qg"] = 77733,	-- Ron Ashton
+						["provider"] = { "n", 77733 },	-- Ron Ashton
 						["coord"] = { 54.4, 13.9, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -196,7 +196,7 @@ _.ExpansionFeatures =
 				}),
 				garrisonBuilding(138, {	-- Lumber Mill
 					q(36189, {	-- Easing into Lumberjacking
-						["qg"] = 84248,	-- Justin Timberlord <Work Orders>
+						["provider"] = { "n", 84248 },	-- Justin Timberlord <Work Orders>
 						["races"] = ALLIANCE_ONLY,
 					}),
 					n(85199, {	-- Petrified Ancient
@@ -218,18 +218,18 @@ _.ExpansionFeatures =
 					}),
 					q(36448, {	-- Reduction in Force
 						["sourceQuest"] = 36429,	-- The Rise and Fall of Barov Industries: Weldon Barov
-						["qg"] = 85413,	-- Weldon Barov <Barov Industries>
+						["provider"] = { "n", 85413 },	-- Weldon Barov <Barov Industries>
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(116154),	-- Barov Lumberjack Caller
 						},
 					}),
 					q(36194, {	-- Sharper Blades, Bigger Timber
-						["qg"] = 84248,	-- Justin Timberlord <Work Orders>
+						["provider"] = { "n", 84248 },	-- Justin Timberlord <Work Orders>
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36813, {	-- Subversive Infestation
-						["qg"] = 84889,	-- Phylarch the Evergreen
+						["provider"] = { "n", 84889 },	-- Phylarch the Evergreen
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
 						["g"] = {
@@ -237,7 +237,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(36429, {	-- The Rise and Fall of Barov Industries: Weldon Barov
-						["qg"] = 85378,	-- Weldon Barov <Barov Industries>
+						["provider"] = { "n", 85378 },	-- Weldon Barov <Barov Industries>
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Weldon Barov is found at 73.7, 64.0 in Talador. He is stuck under a log and it seems you need lumber mill to be able to get him out of there.",
 						["g"] = {
@@ -245,12 +245,12 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(36195, {	-- Tree-i-cide
-						["qg"] = 84248,	-- Justin Timberlord <Work Orders>
+						["provider"] = { "n", 84248 },	-- Justin Timberlord <Work Orders>
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36192, {	-- Turning Timber into Profit
 						["sourceQuest"] = 36189,	-- Easing into Lumberjacking
-						["qg"] = 84248,	-- Justin Timberlord <Work Orders>
+						["provider"] = { "n", 84248 },	-- Justin Timberlord <Work Orders>
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
@@ -668,7 +668,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37228, {	-- A Fruitful Proposition
-							["qg"] = 87991,	-- Cro Threadstrong
+							["provider"] = { "n", 87991 },	-- Cro Threadstrong
 							["sourceQuests"] = { 37152 },	-- Cro's Revenge
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -677,7 +677,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37237, {	-- A Hero's Quest is Never Complete
-							["qg"] = 88001,	-- Maximillian of Northshire
+							["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 							["sourceQuests"] = { 37162 },	-- Damsels and Dragons
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -686,7 +686,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37235, {	-- A Plea to the Sky
-							["qg"] = 87999,	--  Skylord Omnuron
+							["provider"] = { "n", 87999 },	--  Skylord Omnuron
 							["sourceQuests"] = { 37159 },	-- Avian's Request
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -695,7 +695,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37243, {	-- An Axe to Grind
-							["qg"] = 88007,	-- Gamon
+							["provider"] = { "n", 88007 },	-- Gamon
 							["sourceQuests"] = { 37160 },	--  Cleaving Time
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -704,7 +704,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37167, {	-- And No Maces!
-							["qg"] = 88006,	-- Lonika Stillblade
+							["provider"] = { "n", 88006 },	-- Lonika Stillblade
 							["g"] = {
 								i(118924, {	-- Cache of Arms
 									i(114073, {	-- Turbulent Hood
@@ -736,13 +736,13 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37159, {	-- Avian's Request
-							["qg"] = 87999,	--  Skylord Omnuron
+							["provider"] = { "n", 87999 },	--  Skylord Omnuron
 							["g"] = {
 								i(119093),	-- Avian's Feather
 							},
 						}),
 						q(37230, {	-- Bloody Expensive
-							["qg"] = 87994,	--  Moroes
+							["provider"] = { "n", 87994 },	--  Moroes
 							["sourceQuests"] = { 37157 },	-- Feeling A Bit Morose
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -751,7 +751,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37145, { 	-- Budd's Gambit
-							["qg"] = 88017,	-- Budd
+							["provider"] = { "n", 88017 },	-- Budd
 							["modID"] = 2,
 							["repeatable"] = true,
 							["g"] = {
@@ -844,25 +844,25 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37165, {	-- Cenrion Concerns
-							["qg"] = 88004,	--  Zen'kiki
+							["provider"] = { "n", 88004 },	--  Zen'kiki
 							["g"]  = {
 								i(118935),	-- Ever-Blooming Frond
 							},
 						}),
 						q(37160, {	-- Cleaving Time
-							["qg"] = 88007,	-- Gamon
+							["provider"] = { "n", 88007 },	-- Gamon
 							["g"] = {
 								i(118937),  -- Gamon's Braid
 							},
 						}),
 						q(37151, {	-- Cold Steel
-							["qg"] = 88026,	-- John J. Keeshan
+							["provider"] = { "n", 88026 },	-- John J. Keeshan
 							["g"] = {
 								i(118918),  -- Bloody Bandann
 							},
 						}),
 						q(37209, {	-- Cold Steel Part II
-							["qg"] = 88026,	-- John J. Keeshan
+							["provider"] = { "n", 88026 },	-- John J. Keeshan
 							["sourceQuests"] = { 37151 },	-- Cold Steel
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -871,31 +871,31 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37152, {	-- Cro's Revenge
-							["qg"] = 87991,	-- Cro Threadstrong
+							["provider"] = { "n", 87991 },	-- Cro Threadstrong
 							["g"] = {
 								i(119083),  -- Fruit Basket
 							},
 						}),
 						q(37162, {	-- Damsels and Dragons
-							["qg"] = 88001,	-- Maximillian of Northshire
+							["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 							["g"] = {
 								i(118927),	-- Maximillian's Laundry
 							},
 						}),
 						q(37161, {	-- Family Traditions
-							["qg"] = 88000,	--  Finkle Einhorn
+							["provider"] = { "n", 88000 },	--  Finkle Einhorn
 							["g"] = {
 								i(118926),	-- Huge Pile of Skins
 							},
 						}),
 						q(33814, {	-- Fast Expansion
-							["qg"] = 81152,	-- Scout Valdez
+							["provider"] = { "n", 81152 },	-- Scout Valdez
 							["coord"] = { 31.0, 31.1, 582 },	-- Garrison lvl 3
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(37239, {	-- Fate of the Fallen
-							["qg"] = 88003,	--  Cowled Ranger
+							["provider"] = { "n", 88003 },	--  Cowled Ranger
 							["sourceQuests"] = { 37164 },	-- The Huntress
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -904,13 +904,13 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37157, {	-- Feeling A Bit Morose
-							["qg"] = 87994,	-- Moroes <Tower Steward>
+							["provider"] = { "n", 87994 },	-- Moroes <Tower Steward>
 							["g"] = {
 								i(119092),	-- Moroes' Famous Polish
 							},
 						}),
 						q(37244, {	-- Flamefly Trap
-							["qg"] = 88024,	-- Oralius
+							["provider"] = { "n", 88024 },	-- Oralius
 							["sourceQuests"] = { 37148 },	-- Oralius' Adventure
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -919,20 +919,20 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37150, {	-- For the Birds
-							["qg"] = 88025,	-- Mylune
+							["provider"] = { "n", 88025 },	-- Mylune
 							["g"] = {
 								i(118921),	-- Everbloom Peachick
 							},
 						}),
 						q(37179, {	-- For the Children!
-							["qg"] = 88009,	-- Millhouse Manstorm
+							["provider"] = { "n", 88009 },	-- Millhouse Manstorm
 							["g"] = {
 								i(118938),	-- Manstorm's Duplicator
 								follower(455),	-- Millhouse Manstorm
 							},
 						}),
 						q(37146, {	-- Go Fetch
-							["qg"] = 88022,	-- Johnny Awesome
+							["provider"] = { "n", 88022 },	-- Johnny Awesome
 							["modID"] = 2,
 							["repeatable"] = true,
 							["g"] = {
@@ -1114,13 +1114,13 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37158, { 	-- Gloriously Incandescent
-							["qg"] = 87998,	--  Sunwalker Dezco
+							["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 							["g"] = {
 								i(118928),	-- Faintly-Sparkling Cache
 							},
 						}),
 						q(37242, {	-- Learning Is Painful
-							["qg"] = 88006,	--  Lonika Stillblade
+							["provider"] = { "n", 88006 },	--  Lonika Stillblade
 							["sourceQuests"] = { 37167 },	-- And No Maces!
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1129,7 +1129,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37241, {	-- Lessons of the Past
-							["qg"] = 88005,	--  Lorewalker Cho
+							["provider"] = { "n", 88005 },	--  Lorewalker Cho
 							["sourceQuests"] = { 37166 },	-- Titanic Evolution
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1138,7 +1138,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37229, {	-- Like A Dwarf In A Mine
-							["qg"] = 87992,	--  Olaf
+							["provider"] = { "n", 87992 },	--  Olaf
 							["sourceQuests"] = { 37153 },	-- Time-Lost Vikings
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1147,7 +1147,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37236, {	-- Like Father, Like Son
-							["qg"] = 88000,	--  Finkle Einhorn
+							["provider"] = { "n", 88000 },	--  Finkle Einhorn
 							["sourceQuests"] = { 37161 },	-- Family Traditions
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1156,7 +1156,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37142, {	-- Ogre Ancestry
-							["qg"] = 88013,	-- Lunk
+							["provider"] = { "n", 88013 },	-- Lunk
 							["isDaily"] = true,
 							["g"] = {
 								i(119040, {	-- Cache of Mingled Treasures
@@ -1249,13 +1249,13 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37148, {	-- Oralius' Adventure
-							["qg"] = 88024,	-- Oralius
+							["provider"] = { "n", 88024 },	-- Oralius
 							["g"] = {
 								i(118922),	-- Oralius' Whispering Crystal
 							},
 						}),
 						q(37227, {	-- Put a Bird on It
-							["qg"] = 88025,	-- Mylune
+							["provider"] = { "n", 88025 },	-- Mylune
 							["sourceQuests"] = { 37150 },	-- For the Birds
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1264,7 +1264,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37238, {	-- Secrets of Soulbinding
-							["qg"] = 88002,	--  Highlord Darion Mograine
+							["provider"] = { "n", 88002 },	--  Highlord Darion Mograine
 							["sourceQuests"] = { 37163 },	-- Shadowy Secrets
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1273,13 +1273,13 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37163, {	-- Shadowy Secrets
-							["qg"] = 88002,	-- Highlord Darion Mograine
+							["provider"] = { "n", 88002 },	-- Highlord Darion Mograine
 							["g"] = {
 								i(119003),	-- Void Totem
 							},
 						}),
 						q(37147, {	-- Sky Dancers
-							["qg"] = 88023,	-- Taoshi
+							["provider"] = { "n", 88023 },	-- Taoshi
 							["modID"] = 2,
 							["repeatable"] = true,
 							["g"] = {
@@ -1471,7 +1471,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37232, {	-- Soulcarver Voss
-							["qg"] = 87996,	--  Lillian Voss
+							["provider"] = { "n", 87996 },	--  Lillian Voss
 							["sourceQuests"] = { 37156 },	-- The Soulcutter
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1480,19 +1480,19 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37155, { 	-- The Brass Compass
-							["qg"] = 87995,	--  Fleet Master Seahorn
+							["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 							["g"] = {
 								i(118925),	-- Plundered Booty
 							},
 						}),
 						q(37154, {	-- The Cure For Death
-							["qg"] = 87997,	--  Leonid Barthalomew the Revered
+							["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
 							["g"] = {
 								i(118931),	-- Leonid's Bag of Supplies
 							},
 						}),
 						q(37234, {	-- The Dark Within
-							["qg"] = 87998,	--  Sunwalker Dezco
+							["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 							["sourceQuests"] = { 37158 },	-- Gloriously Incandescent
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1501,13 +1501,13 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37164, {	-- The Huntresses
-							["qg"] = 88003,	--  Cowled Ranger
+							["provider"] = { "n", 88003 },	--  Cowled Ranger
 							["g"] = {
 								i(118923),	-- Sentinel's Companion
 							},
 						}),
 						q(37240, {	-- The Leaf-Reader
-							["qg"] = 88004,	--  Zen'kiki
+							["provider"] = { "n", 88004 },	--  Zen'kiki
 							["sourceQuests"] = { 37165 },	-- Cenrion Concerns
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1516,7 +1516,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37231, {	-- The Search Continues
-							["qg"] = 87995,	--  Fleet Master Seahorn
+							["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 							["sourceQuests"] = { 37155 },	-- The Brass Compass
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1525,31 +1525,31 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37156, {	-- The Soulcutter
-							["qg"] = 87996,	--  Lillian Voss
+							["provider"] = { "n", 87996 },	--  Lillian Voss
 							["g"] = {
 								i(119039),	-- Lilian's Warning Sign
 							},
 						}),
 						q(37149, {	-- The Void-Gate
-							["qg"] = 88027,	-- Impsy
+							["provider"] = { "n", 88027 },	-- Impsy
 							["g"] = {
 								i(118936),	-- Manual of Void-Calling
 							},
 						}),
 						q(37153, {	-- Time-Lost Vikings
-							["qg"] = 87992,	--  Olaf
+							["provider"] = { "n", 87992 },	--  Olaf
 							["g"] = {
 								i(118929),	-- Sack of Mined Ore
 							},
 						}),
 						q(37166, {	-- Titanic Evolution
-							["qg"] = 88005,	--  Lorewalker Cho
+							["provider"] = { "n", 88005 },	--  Lorewalker Cho
 							["g"] = {
 								i(118930),	-- Bag of Everbloom Herbs
 							},
 						}),
 						q(37233, {	-- Vessel of Virtue
-							["qg"] = 87997,	--  Leonid Barthalomew the Revered
+							["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
 							["sourceQuests"] = { 37154 },	-- The Cure For Death
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1558,7 +1558,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37245, {	-- Whispers in the Darkness
-							["qg"] = 88027,	-- Impsy
+							["provider"] = { "n", 88027 },	-- Impsy
 							["sourceQuests"] = { 37149 },	-- The Void-Gate
 							["modID"] = 2,
 							["repeatable"] = true,
@@ -1570,310 +1570,310 @@ _.ExpansionFeatures =
 				}),
 				garrisonBuilding(95,  {	-- Scribe's Quarters (rank 2: 129, rank 3: 130)
 					q(36647, {	-- Your First Inscription Work Order
-						["qg"] = 77372,	-- Eric Broadoak
+						["provider"] = { "n", 77372 },	-- Eric Broadoak
 						["races"] = ALLIANCE_ONLY
 					}),
 				}),
 				garrisonBuilding(67,  {	-- Stables (rank 1: 65, rank 2: 66, rank 3: 67)
 					q(36913, {	-- Besting a Boar
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36274, {	-- Bigger Trap, Better Rewards
-						["qg"] = 84524,	-- Homer Stonefield
+						["provider"] = { "n", 84524 },	-- Homer Stonefield
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36997, {	-- Boar Training: Bulbapore
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36998, {	-- Boar Training: Cruel Ogres
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36999, {	-- Boar Training: Darkwing Roc
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36996, {	-- Boar Training: Gezz'ran
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37002, {	-- Boar Training: Ironbore
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37000, {	-- Boar Training: Moth of Wrath
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37003, {	-- Boar Training: Orc Hunters
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36995, {	-- Boar Training: Riplash
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37004, {	-- Boar Training: The Garn
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(116675),	-- Trained Rocktusk
 						},
 					}),
 					q(37001, {	-- Boar Training: Thundercall
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36916, {	-- Capturing a Clefthoof
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36987, {	-- Clefthoof Training: Bulbapore
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36988, {	-- Clefthoof Training: Cruel Ogres
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36989, {	-- Clefthoof Training: Darkwing Roc
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36986, {	-- Clefthoof Training: Gezz'ran
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36983, {	-- Clefthoof Training: Great-Tusk
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36992, {	-- Clefthoof Training: Ironbore
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36990, {	-- Clefthoof Training: Moth of Wrath
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36993, {	-- Clefthoof Training: Orc Hunters
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36984, {	-- Clefthoof Training: Rakkiri
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36985, {	-- Clefthoof Training: Riplash
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36994, {	-- Clefthoof Training: The Garn
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(116656),	-- Trained Icehoof
 						},
 					}),
 					q(36991, {	-- Clefthoof Training: Thundercall
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37015, {	-- Elekk Training: Cruel Ogres
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37016, {	-- Elekk Training: Darkwing Roc
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37019, {	-- Elekk Training: Ironbore
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37017, {	-- Elekk Training: Moth of Wrath
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37020, {	-- Elekk Training: Orc Hunters
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37021, {	-- Elekk Training: The Garn
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(116662),	-- Trained Meadowstomper
 						},
 					}),
 					q(37018, {	-- Elekk Training: Thundercall
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36915, {	-- Entangling an Elekk
-						["qg"] = 86973,	-- Keegan Firebeard
+						["provider"] = { "n", 86973 },	-- Keegan Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36918, {	-- Requisition a Riverbeast
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37006, {	-- Riverbeast Training: Bulbapore
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37007, {	-- Riverbeast Training: Cruel Ogres
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37008, {	-- Riverbeast Training: Darkwing Roc
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37005, {	-- Riverbeast Training: Gezz'ran
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37011, {	-- Riverbeast Training: Ironbore
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37009, {	-- Riverbeast Training: Moth of Wrath
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37012, {	-- Riverbeast Training: Orc Hunters
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37013, {	-- Riverbeast Training: The Garn
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(116676),	-- Trained Riverwallow
 						},
 					}),
 					q(37010, {	-- Riverbeast Training: Thundercall
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36975, {	-- Talbuk Training: Bulbapore
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36976, {	-- Talbuk Training: Cruel Ogres
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36977, {	-- Talbuk Training: Darkwing Roc
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36974, {	-- Talbuk Training: Gezz'ran
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36971, {	-- Talbuk Training: Great-Tusk
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36980, {	-- Talbuk Training: Ironbore
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36978, {	-- Talbuk Training: Moth of Wrath
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36981, {	-- Talbuk Training: Orc Hunters
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36972, {	-- Talbuk Training: Rakkiri
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36973, {	-- Talbuk Training: Riplash
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36982, {	-- Talbuk Training: The Garn
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(116774),	-- Trained Silverpelt
 						},
 					}),
 					q(36979, {	-- Talbuk Training: Thundercall
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36911, {	-- Taming a Talbuk
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37122, {	-- Teeth of a Predator
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37121, {	-- The Black Claw
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37022, {	-- Wolf Training: Cruel Ogres
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37023, {	-- Wolf Training: Darkwing Roc
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37026, {	-- Wolf Training: Ironbore
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37024, {	-- Wolf Training: Moth of Wrath
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37027, {	-- Wolf Training: Orc Hunters
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37028, {	-- Wolf Training: The Garn
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(116784),	-- Trained Snarler
 						},
 					}),
 					q(37025, {	-- Wolf Training: Thundercall
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36914, {	-- Wrangling a Wolf
-						["qg"] = 86974,	-- Fanny Firebeard
+						["provider"] = { "n", 86974 },	-- Fanny Firebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				garrisonBuilding(51,  {	-- Storehouse
 					q(37087, {	-- Lost in Transition
-						["qg"] = 84857,	-- Kyra Goldhands
+						["provider"] = { "n", 84857 },	-- Kyra Goldhands
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				garrisonBuilding(90,  {	-- The Tannery
 					q(36642, {	-- Your First Leatherworking Work Order
-						["qg"] = 77383,	-- Anders Longstitch
+						["provider"] = { "n", 77383 },	-- Anders Longstitch
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				garrisonBuilding(144, {	-- Trading Post
 					q(36948, {	-- Auctioning for Parts
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
-						["qg"] = 87206,	-- Ancient Trading Mechanism
+						["provider"] = { "n", 87206 },	-- Ancient Trading Mechanism
 						["races"] = ALLIANCE_ONLY,
 						["g"] = addObject(
 							bubbleDown({["u"] = 7, ["description"] = "This item is no longer required to complete the Auctioning for Parts garrison quest."}, {
@@ -1920,11 +1920,11 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(34026, {	-- Garrison Campaign: Seismic Matters
-							["qg"] = 77209,	-- Baros Alexston
+							["provider"] = { "n", 77209 },	-- Baros Alexston
 							["coord"] = { 29.2, 33.1, 582 },	-- garrison lvl 3
 						}),
 						q(35985, {	-- Garrison Campaign: The Broken Precipice
-							["qg"] = 88892,	-- Nixxie
+							["provider"] = { "n", 88892 },	-- Nixxie
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36219, {	-- Garrison Campaign: The Ring of Blood
@@ -1940,13 +1940,13 @@ _.ExpansionFeatures =
 							["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
 						}),
 						q(34027, {	-- Groundbreaking Data
-							["qg"] = 77217,	-- Jr. Surveyor Dorn
+							["provider"] = { "n", 77217 },	-- Jr. Surveyor Dorn
 							["coord"] = { 64.5, 69.8, 582 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 34026,	-- Garrison Campaign: Seismic Matters
 						}),
 						q(34028, {	-- These Look Familiar....
-							["qg"] = 77217,	-- Jr. Surveyor Dorn
+							["provider"] = { "n", 77217 },	-- Jr. Surveyor Dorn
 							["coord"] = { 64.5, 69.8, 582 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 34027,	-- Groundbreaking Data
@@ -1961,7 +1961,7 @@ _.ExpansionFeatures =
 				}),
 				q(33075, {	-- A Hero's Welcome
 					["sourceQuests"] = { 34692 },	-- Delegating on Draenor
-					["qg"] = 80568,	-- Yrel
+					["provider"] = { "n", 80568 },	-- Yrel
 					["races"] = ALLIANCE_ONLY,
 					["coords"] = {
 						{ 46.9, 50.8, 582 },	-- lvl 1 garrison
@@ -1969,7 +1969,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(38259, {	-- All Hands on Deck
-					["qg"] = 92219,	-- King Varian Wrynn
+					["provider"] = { "n", 92219 },	-- King Varian Wrynn
 					["coord"] = { 32.0, 31.9, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38258,	-- Nothing Remains
@@ -1982,11 +1982,11 @@ _.ExpansionFeatures =
 					["isBreadcrumb"] = true,
 					["coord"] = { 37.8, 36.8, 582 },
 					["lvl"] = 96,
-					["qg"] = 81492,	-- Bodrick Grey
+					["provider"] = { "n", 81492 },	-- Bodrick Grey
 				}),
 				q(36624, {	-- Ashran Appearance
 					["lvl"] = 91,
-					["qg"] = 79953,	-- Lieutenant Thorn
+					["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34692,	-- Delegating on Draenor
 					["coords"] = {
@@ -1997,13 +1997,13 @@ _.ExpansionFeatures =
 				q(36592, {	-- Bigger is Better
 					["sourceQuest"] = 34692,	-- Delegating on Draenor
 					["coord"] = { 41.2, 49.3, 582 },
-					["qg"] = 77209,	-- Baros Alexston
+					["provider"] = { "n", 77209 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38356, {	-- Bringing the Bass
 					["sourceQuests"] = { 36615 },	-- My Very Own Castle
 					["lvl"] = 100,
-					["qg"] = 91589,	-- Fix "Smallie" Biggswrench
+					["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 					["coord"] = { 33.8, 36.4, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2024,7 +2024,7 @@ _.ExpansionFeatures =
 					["u"] = 1,
 				}),
 				q(36100, {	-- Building For Professions
-					["qg"] = 77209,	-- Baros Alexston
+					["provider"] = { "n", 77209 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34586,	-- Establish Your Garrison
 					["coords"] = {
@@ -2039,18 +2039,18 @@ _.ExpansionFeatures =
 						35166,	-- Ship Salvage
 					},
 					["coord"] = { 41.1, 49.4, 582 },
-					["qg"] = 77209,	-- Baros Alexston
+					["provider"] = { "n", 77209 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35988, {	-- Call of the Archmage
-					["qg"] = 83858,	-- Khadgar's Servant
+					["provider"] = { "n", 83858 },	-- Khadgar's Servant
 					["u"] = 40,
 				}),
 				q(36404, {	-- Clearing the Garden
 					["sourceQuest"] = 36592,	-- Bigger is Better
 					["coord"] = { 58.9, 53.4, 582 },
 					["lvl"] = 96,
-					["qg"] = 85344,	-- Naron Bloomthistle
+					["provider"] = { "n", 85344 },	-- Naron Bloomthistle
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						garrisonBuilding(29),	-- Herb Garden lvl 1
@@ -2059,23 +2059,23 @@ _.ExpansionFeatures =
 				q(34692, {	-- Delegating on Draenor
 					["sourceQuests"] = { 34646 },	-- Qiana Moonshadow
 					["coord"] = { 40.2, 43.6, 582 },
-					["qg"] = 79953,	-- Lieutenant Thorn
+					["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34586, {	-- Establish Your Garrison
 					["sourceQuests"] = { 34585 },	-- Quakefist
 					["coord"] = { 32.7, 34.0, 582 },
-					["qg"] = 79243,	-- Baros Alexston
+					["provider"] = { "n", 79243 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36272, {	-- Feeding An Army
-					["qg"] = 84524,	-- Homer Stonefield
+					["provider"] = { "n", 84524 },	-- Homer Stonefield
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34583, {	-- For the Alliance
 					["sourceQuests"] = { 34582 },	-- Finding a Foothold
 					["coord"] = { 30.0, 34.3, 582 },
-					["qg"] = 79470,	-- Vindicator Maraad
+					["provider"] = { "n", 79470 },	-- Vindicator Maraad
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(108908),	-- Rangari Initiate Crossbow
@@ -2089,11 +2089,11 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(36134, {	-- Garrison Campaign: Awakening
-					["qg"] = 81492,	-- Bodrick Grey
+					["provider"] = { "n", 81492 },	-- Bodrick Grey
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34409, {	-- Garrison Campaign: Crows In The Field
-					["qg"] = 88112,	-- Morthis Whisperwing
+					["provider"] = { "n", 88112 },	-- Morthis Whisperwing
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38253, {	-- Garrison Campaign: War Council
@@ -2105,7 +2105,7 @@ _.ExpansionFeatures =
 				q(39195, {	-- Gems of the Apexis
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["isBreadcrumb"] = true,
-					["qg"] = 77209,	-- Baros Alexston
+					["provider"] = { "n", 77209 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["g"] = {
@@ -2125,20 +2125,20 @@ _.ExpansionFeatures =
 				q(35176, {	-- Keeping it Together
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
 					["coord"] = { 41.1, 49.4, 582 },
-					["qg"] = 77209,	-- Baros Alexston
+					["provider"] = { "n", 77209 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34194, {	-- Looking For Help
 					["requireSkill"] = 356,	-- Fishing
 					["sourceQuest"] = 36592,	-- Bigger is Better
-					["qg"] = 77733,	-- Ron Ashton
+					["provider"] = { "n", 77733 },	-- Ron Ashton
 					["coord"] = { 53.9, 13.4, 582 },	-- lvl 2 garrison
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34584, {	-- Looking for Lumber
 					["sourceQuests"] = { 34583 },	-- For the Alliance!
 					["coord"] = { 32.5, 34.2, 582 },
-					["qg"] = 79243,	-- Baros Alexston
+					["provider"] = { "n", 79243 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34820, {	-- Lost Lumberjacks
@@ -2150,12 +2150,12 @@ _.ExpansionFeatures =
 						{ 29.6, 19.3, 582 },	-- level 2 garrison
 						{ 40.3, 54.4, 582 },	-- lvl 3 garrison
 					},
-					["qg"] = 80163,	-- Ken Loggin
+					["provider"] = { "n", 80163 },	-- Ken Loggin
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(33359, {	-- Meet Us at Starfall Post
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
-					["qg"] = 80645,	-- Cordana Felsong
+					["provider"] = { "n", 80645 },	-- Cordana Felsong
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["coords"] = {
@@ -2165,7 +2165,7 @@ _.ExpansionFeatures =
 				}),
 				q(34778, {	-- Migrant Workers
 					["sourceQuests"] = { 34692 },	-- Delegating on Draenor
-					["qg"] = 79457,	-- Vindicator Maraad
+					["provider"] = { "n", 79457 },	-- Vindicator Maraad
 					["races"] = ALLIANCE_ONLY,
 					["coords"] = {
 						{ 44.1, 53.2, 582 },	-- lvl 1 garrison
@@ -2478,13 +2478,13 @@ _.ExpansionFeatures =
 				}),
 				q(38344, {	-- Mystery Notebook
 					["sourceQuest"] = 36615,	-- My Very Own Castle
-					["qg"] = 91589,	-- Fix "Smallie" Biggswrench
+					["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 					["coord"] = { 33.8, 36.4, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 100,
 				}),
 				q(36615, {	-- My Very Own Castle
-					["qg"] = 77209,	-- Baros Alexston
+					["provider"] = { "n", 77209 },	-- Baros Alexston
 					["coord"] = { 31.8, 31.0, 582 },
 					["sourceQuest"] = 36592,	-- Bigger is Better
 					["races"] = ALLIANCE_ONLY,
@@ -2494,11 +2494,11 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 36615 },	-- My Very Own Castle
 					["coord"] = { 28.7, 35.0, 582 },
 					["lvl"] = 100,
-					["qg"] = 79953,	-- Lieutenant Thorn
+					["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35174, {	-- Pale Moonlight
-					["qg"] = 79457,	-- Vindicator Maraad
+					["provider"] = { "n", 79457 },	-- Vindicator Maraad
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 44.0, 53.3, 582 },
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
@@ -2506,7 +2506,7 @@ _.ExpansionFeatures =
 				q(36861, {	-- Pinchwhistle Gearworks (Alliance)
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
 					["lvl"] = 96,
-					["qg"] = 86589,	-- Watchman Tilnia
+					["provider"] = { "n", 86589 },	-- Watchman Tilnia
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["coords"] = {
@@ -2517,7 +2517,7 @@ _.ExpansionFeatures =
 				q(37433, {	-- Proving Grounds
 					["coord"] = { 29.1, 34.6, 582 },
 					["lvl"] = 100,
-					["qg"] = 79953,	-- Lieutenant Thorn
+					["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
 					["g"] = {
@@ -2537,13 +2537,13 @@ _.ExpansionFeatures =
 						34616,	-- Ravenous Ravens
 					},
 					["coord"] = { 31.4, 35.8, 582 },
-					["qg"] = 79567,	-- Yrel
+					["provider"] = { "n", 79567 },	-- Yrel
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34646, {	-- Qiana Moonshadow
 					["sourceQuests"] = { 34587 },	-- Build Your Barracks
 					["coord"] = { 44.1, 53.3, 582 },
-					["qg"] = 79457,	-- Vindicator Maraad
+					["provider"] = { "n", 79457 },	-- Vindicator Maraad
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						follower(34),	-- Qiana Moonshadow
@@ -2552,7 +2552,7 @@ _.ExpansionFeatures =
 				q(34616, {	-- Ravenous Ravens
 					["sourceQuests"] = { 34583 },	-- For the Alliance!
 					["coord"] = { 32.5, 34.2, 582 },
-					["qg"] = 79243,	-- Baros Alexston
+					["provider"] = { "n", 79243 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37288, {	-- Resources in Ashran
@@ -2562,7 +2562,7 @@ _.ExpansionFeatures =
 				--	gorgrond is a level 92 zone, so that's possible
 				--	["sourceQuests"] = {  },	--
 					["coord"] = { 29.5, 33.3, 582 },
-					["qg"] = 77209,	-- Baros Alexston
+					["provider"] = { "n", 77209 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37289, {	-- Shadowmoon Invasion!
@@ -2572,17 +2572,17 @@ _.ExpansionFeatures =
 						33059,	-- The Fate of Karabor
 					},
 					["coord"] = { 29.5, 16.4, 582 },	-- level 2 garrison
-					["qg"] = 88223,	-- Sergeant Crowler
+					["provider"] = { "n", 88223 },	-- Sergeant Crowler
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35166, {	-- Ship Salvage
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
 					["coord"] = { 41.1, 49.4, 582 },
-					["qg"] = 77209,	-- Baros Alexston
+					["provider"] = { "n", 77209 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36522, {	-- Solidarity in Death
-					["qg"] = 85777,	-- Ahm
+					["provider"] = { "n", 85777 },	-- Ahm
 					["sourceQuest"] = 33973,	-- Dying Wish
 					["g"] = {
 						follower(208),	-- Ahm
@@ -2596,7 +2596,7 @@ _.ExpansionFeatures =
 					--["objectID"] = 232397,	-- Bulletin Board
 				}),
 				q(37184, {	-- Taking the Fight to Nagrand
-					["qg"] = 81492,	-- Bodrick Grey
+					["provider"] = { "n", 81492 },	-- Bodrick Grey
 					["lvl"] = 98,
 					["coord"] = { 38.2, 37.0, 582 },	-- garrison lvl 3
 					["races"] = ALLIANCE_ONLY,
@@ -2614,7 +2614,7 @@ _.ExpansionFeatures =
 					--["objectID"] = 232397,	-- Bulletin Board
 				}),
 				q(37183, {	-- The Critical Path
-					["qg"] = 81492,	-- Bodrick Grey
+					["provider"] = { "n", 81492 },	-- Bodrick Grey
 					["lvl"] = 94,
 					["coord"] = { 38.2, 37.0, 582 },	-- garrison lvl 3
 					["races"] = ALLIANCE_ONLY,
@@ -2623,7 +2623,7 @@ _.ExpansionFeatures =
 				q(35556, {	-- The Secrets of Gorgrond
 					["isBreadcrumb"] = true,
 					["lvl"] = 92,
-					["qg"] = 81492,	-- Bodrick Grey
+					["provider"] = { "n", 81492 },	-- Bodrick Grey
 					["races"] = ALLIANCE_ONLY,
 					["coords"] = {
 						{ 31.4, 33.5, 582 },	-- level 1 garrison
@@ -2639,7 +2639,7 @@ _.ExpansionFeatures =
 				}),
 				q(34192, {	-- Things Are Not Goren Our Way
 					["sourceQuests"] = { 36592 },	-- Bigger is Better
-					["qg"] = 77730,	-- Timothy Leens
+					["provider"] = { "n", 77730 },	-- Timothy Leens
 					["coord"] = { 65.2, 41.8, 582 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2648,23 +2648,23 @@ _.ExpansionFeatures =
 				}),
 				q(37848, {	-- Treasure Contract: Amulet of Rukhmar
 					["isDaily"] = true,
-					["qgs"] = {
-						89793,	-- Harrison Jones
-						92223,	-- Surveyor Daltry
+					["providers"] = {
+						{ "n", 89793 },	-- Harrison Jones
+						{ "n", 92223 },	-- Surveyor Daltry
 					},
 				}),
 				q(37788, {	-- Treasure Contract: Gutrek's Cleaver
 					["isDaily"] = true,
-					["qgs"] = {
-						89793,	-- Harrison Jones
-						92223,	-- Surveyor Daltry
+					["providers"] = {
+						{ "n", 89793 },	-- Harrison Jones
+						{ "n", 92223 },	-- Surveyor Daltry
 					},
 				}),
 				q(37941, {	-- Treasure Contract: The Infected Orc
 					["isDaily"] = true,
-					["qgs"] = {
-						89793,	-- Harrison Jones
-						92223,	-- Surveyor Daltry
+					["providers"] = {
+						{ "n", 89793 },	-- Harrison Jones
+						{ "n", 92223 },	-- Surveyor Daltry
 					},
 				}),
 				o(236165, {	-- War Planning Map
@@ -2690,7 +2690,7 @@ _.ExpansionFeatures =
 						38253,	-- Garrison Campaign: War Council
 						40418,	-- To Tanaan!
 					},
-					["qg"] = 92219,	-- King Varian Wrynn
+					["provider"] = { "n", 92219 },	-- King Varian Wrynn
 					["coord"] = { 32.0, 31.9, 582 },
 					["races"] = ALLIANCE_ONLY,
 				}),

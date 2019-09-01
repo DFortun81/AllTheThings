@@ -27,7 +27,7 @@ _.Zones =
 				q(31924, { 	-- Narrok
 					["isDaily"] = true,
 					["coord"] = { 61.0, 49.4, 107 },
-					["qg"] = 66552,	-- Narrok <Master Pet Tamer>
+					["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
 					["g"] = {
 						i(89125)	-- Sack of Pet Supplies
 					},

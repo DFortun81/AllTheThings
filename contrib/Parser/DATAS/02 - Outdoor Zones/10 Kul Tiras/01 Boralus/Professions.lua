@@ -9,7 +9,7 @@ _.Zones =
 			n(-38, {	-- Professions
 				prof(171, {	-- Alchemy
 					q(50125, {	-- A Possible Solution
-						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+						["provider"] = { "n", 132228 },	-- Elrick Pfitzer <Alchemielehrer>
 						["coord"] = { 74.2, 6.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -19,18 +19,18 @@ _.Zones =
 					}),
 					q(50121, {	-- Casting the First Stone
 						["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
-						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+						["provider"] = { "n", 132228 },	-- Elrick Pfitzer <Alchemielehrer>
 						["coord"] = { 74.2, 6.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(50124, {	-- Changing the Scenery
-						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+						["provider"] = { "n", 132228 },	-- Elrick Pfitzer <Alchemielehrer>
 						["coord"] = { 74.2, 6.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 50121,	-- Casting the First Stone
 					}),
 					q(50122, {	-- Ocular Extracts
-						["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+						["provider"] = { "n", 132228 },	-- Elrick Pfitzer <Alchemielehrer>
 						["coord"] = { 74.2, 6.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 50121,	-- Casting the First Stone
@@ -46,12 +46,12 @@ _.Zones =
 						["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
 						["coord"] = { 74.2, 11.3, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 136041,	-- Emily Fairweather
+						["provider"] = { "n", 136041 },	-- Emily Fairweather
 					}),
 				}),
 				prof(182, {	-- Herbalism
 					q(51398, {	-- An Unusual Mentor
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["lvl"] = 120,
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
@@ -59,7 +59,7 @@ _.Zones =
 						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(48754, {	-- Breaking the Food Chain
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 182,	-- Herbalism
@@ -69,7 +69,7 @@ _.Zones =
 						},
 					}),
 					q(51365, {	-- Cultural Signifcance
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Requires 50 Kul Tiran Herbalism.",
@@ -79,7 +79,7 @@ _.Zones =
 						},
 					}),
 					q(48753, {	-- Emergency Transplants
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 182,	-- Herbalism
@@ -89,7 +89,7 @@ _.Zones =
 						},
 					}),
 					q(48769, {	-- Gathering Memento
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 51365,	-- Cultural Significance
@@ -99,7 +99,7 @@ _.Zones =
 						},
 					}),
 					q(48757, {	-- Ghost Busting
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 48756,	-- Here in Spirit
@@ -109,7 +109,7 @@ _.Zones =
 						},
 					}),
 					q(48756, {	-- Here in Spirit
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 182,	-- Herbalism
@@ -119,7 +119,7 @@ _.Zones =
 						},
 					}),
 					q(51313, {	-- Learn From the Best
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 51312,	-- Aromatic Pollenator
@@ -129,14 +129,14 @@ _.Zones =
 						},
 					}),
 					q(48762, {	-- Meet Sweetflower
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 182,	-- Herbalism
 						["description"] = "Requires 50 Kul Tiran Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",
 					}),
 					q(51361, {	-- More Anchor Pods
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["requireSkill"] = 182,	-- Herbalism
 						["sourceQuest"] = 51360,	-- Enormous Anchor Pod
@@ -145,7 +145,7 @@ _.Zones =
 						},
 					}),
 					q(48755, {	-- Pollen Punching
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["requireSkill"] = 182,	-- Herbalism
 						["sourceQuest"] = 48758,	-- Disgustingly Damp Flower
@@ -154,7 +154,7 @@ _.Zones =
 						},
 					}),
 					q(51016, {	-- Seeking More Knowledge
-						["qg"] = 136096,	-- Declan Senal
+						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 182,	-- Herbalism
@@ -166,7 +166,7 @@ _.Zones =
 				}),
 				prof(186, {	-- Mining
 					q(48752, {	-- A Need For Coal
-						["qg"] = 136091,	-- Myra Cabot
+						["provider"] = { "n", 136091 },	-- Myra Cabot
 						["coord"] = { 75.01, 7.61, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Requires 50 Kul'Tiran Mining.",
@@ -176,7 +176,7 @@ _.Zones =
 						},
 					}),
 					q(51380, {	-- Back to Franklin
-						["qg"] = 136091,	-- Myra Cabot
+						["provider"] = { "n", 136091 },	-- Myra Cabot
 						["coord"] = { 75.01, 7.61, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 48770,	-- Three Sheets to the Wind
@@ -184,7 +184,7 @@ _.Zones =
 						["description"] = "Requires 150 Kul'Tiran Mining.",
 					}),
 					q(48768, {	-- Brined Justice
-						["qg"] = 136091,	-- Myra Cabot
+						["provider"] = { "n", 136091 },	-- Myra Cabot
 						["coord"] = { 75.01, 7.61, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 51568,	-- Ritualistic Preparations
@@ -195,7 +195,7 @@ _.Zones =
 						},
 					}),
 					q(48764, { 	-- Don't Pick a Fight
-						["qg"] = 136091,	-- Myra Cabot
+						["provider"] = { "n", 136091 },	-- Myra Cabot
 						["requireSkill"] = 186,	-- Mining
 						["coord"] = { 75.01, 7.61, 1161 },
 						["races"] = ALLIANCE_ONLY,
@@ -205,7 +205,7 @@ _.Zones =
 						},
 					}),
 					q(51568, {	-- Ritualistic Preparations
-						["qg"] = 136091,	-- Myra Cabot
+						["provider"] = { "n", 136091 },	-- Myra Cabot
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Requires 50 Kul'Tiran Mining\n73.49, 08.38 in Boralus is Forge Location\n41.87, 30.02 in Tiragarde Sound is Blessing Location",
 						["requireSkill"] = 186,	-- Mining
@@ -219,7 +219,7 @@ _.Zones =
 						},
 					}),
 					q(48761, {	-- Spiderphobia
-						["qg"] = 136091,	-- Myra Cabot
+						["provider"] = { "n", 136091 },	-- Myra Cabot
 						["coord"] = { 75.01, 7.61, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Requires 150 Kul'Tiran Mining.",
@@ -230,7 +230,7 @@ _.Zones =
 						},
 					}),
 					q(51889, {	-- The Wrath of Grapes
-						["qg"] = 139375,	-- Franklin the Drunk
+						["provider"] = { "n", 139375 },	-- Franklin the Drunk
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Requires 150 Kul'Tiran Mining.",
 						["sourceQuest"] = 51380,	-- Back to Franklin
@@ -247,7 +247,7 @@ _.Zones =
 						},
 					}),
 					q(48770, {	-- Three Sheets to the Wind
-						["qg"] = 136091,	-- Myra Cabot
+						["provider"] = { "n", 136091 },	-- Myra Cabot
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
@@ -266,7 +266,7 @@ _.Zones =
 						["description"] = "Requires 150 Kul Tiran Skinning.",
 						["coord"] = { 75.8, 13.1, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 136061,	-- Camilla Darksky
+						["provider"] = { "n", 136061 },	-- Camilla Darksky
 						["g"] = {
 							recipe(257154),	-- Skinning Technique: Bone Gathering (Rank 3)
 						},
@@ -275,7 +275,7 @@ _.Zones =
 						["description"] = "Requires 50 Kul Tiran Skinning.",
 						["coord"] = { 75.8, 13.1, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 136061,	-- Camilla Darksky
+						["provider"] = { "n", 136061 },	-- Camilla Darksky
 						["g"] = {
 							recipe(257153),	-- Skinning Technique: Bone Gathering (Rank 2)
 						},
@@ -284,7 +284,7 @@ _.Zones =
 						["description"] = "Requires 50 Kul Tiran Skinning.",
 						["coord"] = { 75.8, 13.1, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 136061,	-- Camilla Darksky
+						["provider"] = { "n", 136061 },	-- Camilla Darksky
 						["g"] = {
 							recipe(257147),	-- Skinning Technique: Leather Gathering (Rank 2)
 						},
@@ -293,7 +293,7 @@ _.Zones =
 						["description"] = "Requires 50 Kul Tiran Skinning.",
 						["coord"] = { 75.8, 13.1, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 136061,	-- Camilla Darksky
+						["provider"] = { "n", 136061 },	-- Camilla Darksky
 						["g"] = {
 							recipe(257150),	-- Skinning Technique: Scale Gathering (Rank 2)
 						},
@@ -302,7 +302,7 @@ _.Zones =
 						["description"] = "Requires 150 Kul Tiran Skinning.",
 						["coord"] = { 75.8, 13.1, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 136061,	-- Camilla Darksky
+						["provider"] = { "n", 136061 },	-- Camilla Darksky
 						["g"] = {
 							recipe(257151),	-- Skinning Technique: Scale Gathering (Rank 3)
 						},
@@ -311,23 +311,23 @@ _.Zones =
 				prof(197, {	-- Tailoring
 					-- Tools of Trade Questline
 					q(53805, {	-- A Friend in Needle
-						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 145022 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 76.6, 11.8, 1161 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(53807, {	-- A Stitch in Time
-						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 145022 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 76.6, 11.8, 1161 },
 						["sourceQuest"] = 53805,	-- A Friend in Needle
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(55177, {	-- Tearing at the Seams
-						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 145022 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["sourceQuest"] = 53807,	-- A Stitch in Time
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(53810, {	-- The Severed Thread
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 62.0, 53.9, 75 },
 						["sourceQuests"] = {
 							55177,	-- Tearing at the Seams (Alliance)
@@ -335,7 +335,7 @@ _.Zones =
 						},
 					}),
 					q(53813, {	-- Rolling Up the Sleeves
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 43.5, 34.8, 75 },
 						["sourceQuests"] = {
 							55177,	-- Tearing at the Seams (Alliance)
@@ -343,7 +343,7 @@ _.Zones =
 						},
 					}),
 					q(53858, {	-- Step Into Her Shoes
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 39.1, 63.3, 75 },
 						["sourceQuests"] = {
 							53810,	-- The Severed Thread
@@ -351,27 +351,27 @@ _.Zones =
 						},
 					}),
 					q(53866, {	-- If The Shoe Fits...
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 63.8, 68.8, 680 },
 						["sourceQuest"] = 53858,	-- Step Into Her Shoes
 					}),
 					q(55214, {	-- Seam Stress
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 64.2, 69.5, 680 },
 						["sourceQuest"] = 53866,	-- If The Shoe Fits...
 					}),
 					q(53868, {	-- Saving Nine
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 7.2, 24.5, 942 },
 						["sourceQuest"] = 55214,	-- Seam Stress
 					}),
 					q(53869, {	-- Killing Time
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 71.6, 39.8, 115 },
 						["sourceQuest"] = 53868,	-- Saving Nine
 					}),
 					q(53881, {	-- Cut from the Same Cloth
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 71.6, 39.8, 115 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 53869,	-- Killing Time

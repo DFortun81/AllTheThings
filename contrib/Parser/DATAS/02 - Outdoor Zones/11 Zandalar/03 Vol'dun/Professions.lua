@@ -15,7 +15,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51399, {	-- Foul Harvest
-						["qg"] = 137572,	-- Patu
+						["provider"] = { "n", 137572 },	-- Patu
 						["coord"] = { 62.21, 25.81, 864 },
 						["sourceQuests"] = {
 							51398,	-- An Unusual Mentor
@@ -24,7 +24,7 @@ _.Zones =
 						["requireSkill"] = 182,	-- Herbalism	
 					}),
 					q(51408, {	-- Giving Back to Nature
-						["qg"] = 137572,	-- Patu
+						["provider"] = { "n", 137572 },	-- Patu
 						["coord"] = { 62.21, 25.81, 864 },
 						["sourceQuest"] = 51399,	-- Foul Harvest
 						["requireSkill"] = 182,	-- Herbalism
@@ -54,7 +54,7 @@ _.Zones =
 						},
 					}),
 					q(52055, {	-- An Ore for an Eye
-						["qg"] = 139792,	-- Ta'mil Nadu
+						["provider"] = { "n", 139792 },	-- Ta'mil Nadu
 						["coord"] = { 27.6, 69.8, 864 },
 						["sourceQuest"] = 52053,	-- The Platinum Map
 						["requireSkill"] = 186,	-- Mining

@@ -871,7 +871,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isRaid"] = true,
 				["lvl"] = 80,		-- Confirmed by Lucetia November 5, 2018
 				["coord"] = { 38.87, 55.29, 554 },
-				["qgs"] = {
+				["crs"] = {
 					71952,	-- Chi-Ji, The Red Crane
 					71954,	-- Niuzao, The Black Ox
 					71953,	-- Xuen, The White Tiger

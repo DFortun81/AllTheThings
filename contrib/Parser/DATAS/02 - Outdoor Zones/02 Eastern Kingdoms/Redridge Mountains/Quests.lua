@@ -21,7 +21,7 @@ _.Zones =
 					},
 				}),
 				q(26708, {	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
-					["qg"] = 43733,	-- Colonel Troteman
+					["provider"] = { "n", 43733 },	-- Colonel Troteman
 					["coord"] = { 77.2, 65.9, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26694,	-- The Grand Magus Doane
@@ -35,24 +35,24 @@ _.Zones =
 					},
 				}),
 				q(26509, {	-- An Unwelcome Guest
-					["qg"] = 342,	-- Martie Jainrose
+					["provider"] = { "n", 342 },	-- Martie Jainrose
 					["coord"] = { 22.0, 42.7, 49 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26562, {	-- And Last But Not Least... Danforth
-					["qg"] = 43303,	-- Krakauer
+					["provider"] = { "n", 43303 },	-- Krakauer
 					["coord"] = { 25.9, 10.4, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26561,	-- Krakauer
 				}),
 				q(26636, {	-- Bravo Company Field Kit: Camouflage
-					["qg"] = 43461,	-- Krakauer
+					["provider"] = { "n", 43461 },	-- Krakauer
 					["coord"] = { 52.4, 55.4, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26616,	-- It's Never Over
 				}),
 				q(26637, {	-- Bravo Company Field Kit: Chloroform
-					["qg"] = 43459,	-- Messner
+					["provider"] = { "n", 43459 },	-- Messner
 					["coord"] = { 52.4, 55.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26616,	-- It's Never Over
@@ -64,25 +64,25 @@ _.Zones =
 					},
 				}),
 				q(26587, {	-- Breaking Out is Hard to Do
-					["qg"] = 43270,	-- Messner
+					["provider"] = { "n", 43270 },	-- Messner
 					["coord"] = { 47.5, 41.8, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = 26586,	-- In Search of Bravo Company
 				}),
 				q(26514, {	-- Canyon Romp
-					["qg"] = 344,	-- Magistrate Solomon
+					["provider"] = { "n", 344 },	-- Magistrate Solomon
 					["coord"] = { 32.3, 39.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
 				}),
 				q(26714, {	-- Darkblaze, Brood of the Worldbreaker
-					["qg"] = 43733,	-- Colonel Troteman
+					["provider"] = { "n", 43733 },	-- Colonel Troteman
 					["coord"] = { 60.6, 36.6, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26713,	-- Showdown at Stonewatch
 				}),
 				q(26668, {	-- Detonation
-					["qg"] = 43611,	-- John J. Keeshan
+					["provider"] = { "n", 43611 },	-- John J. Keeshan
 					["coord"] = { 77.6, 65.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26651,	-- To Win a War, You Gotta Become War
@@ -129,18 +129,18 @@ _.Zones =
 					},
 				}),
 				q(26506, {	-- Franks and Beans
-					["qg"] = 379,	-- Darchy Parker
+					["provider"] = { "n", 379 },	-- Darchy Parker
 					["coord"] = { 15.6, 65.3, 49 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26728, {	-- Hero's Call: Duskwood!
-					["qg"] = 900,	-- Bailiff Conacher
+					["provider"] = { "n", 900 },	-- Bailiff Conacher
 					["coord"] = { 28.7, 40.9, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26573, {	-- His Heart Must Be In It
-					["qg"] = 43221,	-- Colonel Troteman
+					["provider"] = { "n", 43221 },	-- Colonel Troteman
 					["coord"] = { 28.6, 40.7, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26571,	-- Weapons of War
@@ -159,43 +159,43 @@ _.Zones =
 					},
 				}),
 				q(26638, {	-- Hunting the Hunters
-					["qg"] = 43462,	-- Danforth
+					["provider"] = { "n", 43462 },	-- Danforth
 					["coord"] = { 52.5, 55.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26616,	-- It's Never Over
 				}),
 				q(26586, {	-- In Search of Bravo Company
-					["qg"] = 43221,	-- Colonel Troteman
+					["provider"] = { "n", 43221 },	-- Colonel Troteman
 					["coord"] = { 28.6, 40.7, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26568,	-- This Ain't My War
 				}),
 				q(26616, {	-- It's Never Over
-					["qg"] = 43184,	-- John J. Keeshan
+					["provider"] = { "n", 43184 },	-- John J. Keeshan
 					["coord"] = { 26.3, 40.1, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26607,	-- They Drew First Blood
 				}),
 				q(26567, {	-- John J. Keeshan
-					["qg"] = 43221,	-- Colonel Troteman
+					["provider"] = { "n", 43221 },	-- Colonel Troteman
 					["coord"] = { 28.6, 40.7, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26545,	-- Yowler Must Die!
 				}),
 				q(26560, {	-- Jorgensen
-					["qg"] = 43300,	-- Messner
+					["provider"] = { "n", 43300 },	-- Messner
 					["coord"] = { 47.5, 41.6, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26587,	-- Breaking Out is Hard to Do
 				}),
 				q(26561, {	-- Krakauer
-					["qg"] = 43305,	-- Jorgensen
+					["provider"] = { "n", 43305 },	-- Jorgensen
 					["coord"] = { 33.5, 11.8, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26560,	-- Jorgensen
 				}),
 				q(26511, {	-- Lake Everstill Clean Up
-					["qg"] = 900,	-- Bailiff Conacher
+					["provider"] = { "n", 900 },	-- Bailiff Conacher
 					["coord"] = { 28.6, 40.9, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -208,7 +208,7 @@ _.Zones =
 					},
 				}),
 				q(26513, {	-- Like a Fart in the Wind
-					["qg"] = 382,	-- Marshal Marris
+					["provider"] = { "n", 382 },	-- Marshal Marris
 					["coord"] = { 31.8, 44.9, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26510,	-- We Must Prepare!
@@ -238,7 +238,7 @@ _.Zones =
 					},
 				}),
 				q(26508, {	-- Nida's Necklace
-					["qg"] = 8965,	-- Shawn
+					["provider"] = { "n", 8965 },	-- Shawn
 					["coord"] = { 28.3, 48.8, 49 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -257,19 +257,19 @@ _.Zones =
 					},
 				}),
 				q(26505, {	-- Parker's Report
-					["qg"] = 464,	-- Watch Captain Parker
+					["provider"] = { "n", 464 },	-- Watch Captain Parker
 					["coord"] = { 15.3, 64.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26503,	-- Still Assessing the Threat
 				}),
 				q(26639, {	-- Point of Contact: Brubaker
-					["qg"] = 43458,	-- John J. Keeshan
+					["provider"] = { "n", 43458 },	-- John J. Keeshan
 					["coord"] = { 52.5, 55.4, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26616,	-- It's Never Over
 				}),
 				q(26646, {	-- Prisoners of War
-					["qg"] = 43458,	-- John J. Keeshan
+					["provider"] = { "n", 43458 },	-- John J. Keeshan
 					["coord"] = { 52.5, 55.4, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -280,19 +280,19 @@ _.Zones =
 					},
 				}),
 				q(26570, {	-- Render's Army
-					["qg"] = 382,	-- Marshal Marris
+					["provider"] = { "n", 382 },	-- Marshal Marris
 					["coord"] = { 31.8, 44.8, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26568,	-- This Ain't My War
 				}),
 				q(26563, {	-- Return of the Bravo Company
-					["qg"] = 43302,	-- Danforth
+					["provider"] = { "n", 43302 },	-- Danforth
 					["coord"] = { 28.3, 17.0, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26562,	-- And Last But Not Least... Danforth
 				}),
 				q(26692, {	-- Shadowhide Extinction
-					["qg"] = 43607,	-- Danforth
+					["provider"] = { "n", 43607 },	-- Danforth
 					["coord"] = { 77.6, 65.3, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26668,	-- Detonation
@@ -303,13 +303,13 @@ _.Zones =
 					},
 				}),
 				q(26713, {	-- Showdown at Stonewatch
-					["qg"] = 43733,	-- Colonel Troteman
+					["provider"] = { "n", 43733 },	-- Colonel Troteman
 					["coord"] = { 60.6, 36.6, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26708,	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 				}),
 				q(26503, {	-- Still Assessing the Threat
-					["qg"] = 464,	-- Watch Captain Parker
+					["provider"] = { "n", 464 },	-- Watch Captain Parker
 					["coord"] = { 15.3, 64.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {26365},	-- Hero's Call: Redridge Mountains!
@@ -321,7 +321,7 @@ _.Zones =
 					},
 				}),
 				q(26569, {	-- Surveying Equipment
-					["qg"] = 43194,	-- Foreman Oslow
+					["provider"] = { "n", 43194 },	-- Foreman Oslow
 					["coord"] = { 29.6, 44.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26568,	-- This Ain't My War
@@ -341,7 +341,7 @@ _.Zones =
 					},
 				}),
 				q(26693, {	-- The Dark Tower
-					["qg"] = 43611,	-- John J. Keeshan
+					["provider"] = { "n", 43611 },	-- John J. Keeshan
 					["coord"] = { 77.6, 65.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26668,	-- Detonation
@@ -356,7 +356,7 @@ _.Zones =
 					},
 				}),
 				q(26694, {	-- The Grand Magus Doane
-					["qg"] = 43611,	-- John J. Keeshan
+					["provider"] = { "n", 43611 },	-- John J. Keeshan
 					["coord"] = { 77.6, 65.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26693,	-- The Dark Tower
@@ -367,7 +367,7 @@ _.Zones =
 					},
 				}),
 				q(1699, {	-- The Rethban Gauntlet
-					["qg"] = 6166,	-- Yorus Barleybrew
+					["provider"] = { "n", 6166 },	-- Yorus Barleybrew
 					["coord"] = { 26.8, 44.8, 49 },
 					["sourceQuests"] = {
 						1698,	-- Yorus Barleybrew
@@ -379,7 +379,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(1702,  {	-- The Shieldsmith
-					["qg"] = 6166,	-- Yorus Barleybrew
+					["provider"] = { "n", 6166 },	-- Yorus Barleybrew
 					["coord"] = { 26.8, 44.8, 49 },
 					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
 					["races"] = ALLIANCE_ONLY,
@@ -391,7 +391,7 @@ _.Zones =
 					},
 				}),
 				q(26607, {	-- They Drew First Blood
-					["qg"] = 43221,	-- Colonel Troteman
+					["provider"] = { "n", 43221 },	-- Colonel Troteman
 					["coord"] = { 28.6, 40.7, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -400,25 +400,25 @@ _.Zones =
 					},
 				}),
 				q(26544, {	-- They've Wised Up...
-					["qg"] = 344,	-- Magistrate Solomon
+					["provider"] = { "n", 344 },	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26514,	-- Canyon Romp
 				}),
 				q(26568, {	-- This Ain't My War
-					["qg"] = 43184,	-- John J. Keeshan
+					["provider"] = { "n", 43184 },	-- John J. Keeshan
 					["coord"] = { 26.3, 40.1, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26567,	-- John J. Keeshan
 				}),
 				q(26651, {	-- To Win a War, You Gotta Become War
-					["qg"] = 43458,	-- John J. Keeshan
+					["provider"] = { "n", 43458 },	-- John J. Keeshan
 					["coord"] = { 52.5, 55.3, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26646,	-- Prisoners of War
 				}),
 				q(26726, {	-- Triumphant Return
-					["qg"] = 43733,	-- Colonel Troteman
+					["provider"] = { "n", 43733 },	-- Colonel Troteman
 					["coord"] = { 60.6, 36.6, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26714,	-- Darkblaze, Brood of the Worldbreaker
@@ -429,7 +429,7 @@ _.Zones =
 					},
 				}),
 				q(26512, {	-- Tuning the Gnomecorder
-					["qg"] = 344,	-- Magistrate Solomon
+					["provider"] = { "n", 344 },	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26510,	-- We Must Prepare!
@@ -443,7 +443,7 @@ _.Zones =
 					},
 				}),
 				q(26640, {	-- Unspeakable Atrocities
-					["qg"] = 43508,	-- Brubaker
+					["provider"] = { "n", 43508 },	-- Brubaker
 					["coord"] = { 53.0, 67.8, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26639,	-- Point of Contact: Brubaker
@@ -464,18 +464,18 @@ _.Zones =
 					},
 				}),
 				q(26510, {	-- We Must Prepare!
-					["qg"] = 344,	-- Magistrate Solomon
+					["provider"] = { "n", 344 },	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, 49 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26571, {	-- Weapons of War
-					["qg"] = 43221,	-- Colonel Troteman
+					["provider"] = { "n", 43221 },	-- Colonel Troteman
 					["coord"] = { 28.6, 40.7, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26568,	-- This Ain't My War
 				}),
 				q(26545, {	-- Yowler Must Die!
-					["qg"] = 344,	-- Magistrate Solomon
+					["provider"] = { "n", 344 },	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26544,	-- They've Wised Up...

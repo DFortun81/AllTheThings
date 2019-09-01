@@ -33,7 +33,7 @@ _.Zones =
 					}),
 				}),
 				q(28316, {	-- A Deal With a Dragon
-					["qg"] = 48306,	-- John J. Keeshan
+					["provider"] = { "n", 48306 },	-- John J. Keeshan
 					["coord"] = { 73.5, 67.2, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -43,7 +43,7 @@ _.Zones =
 					},
 				}),
 				q(28448, {	-- A Deal With a Dragon
-					["qg"] = 48565,	-- Ariok
+					["provider"] = { "n", 48565 },	-- Ariok
 					["coord"] = { 54.7, 24.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -53,121 +53,121 @@ _.Zones =
 					},
 				}),
 				q(28318, {	-- A Delivery for Neeralak
-					["qg"] = 48307,	-- Colonel Troteman
+					["provider"] = { "n", 48307 },	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28326 },	-- Placing the Pawns
 				}),
 				q(28451, {	-- A Delivery for Neeralak
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28449 },	-- Placing the Pawns
 				}),
 				q(28317, {	-- A Delivery for Thorg'izog
-					["qg"] = 48307,	-- Colonel Troteman
+					["provider"] = { "n", 48307 },	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28326 },	-- Placing the Pawns
 				}),
 				q(28450, {	-- A Delivery for Thorg'izog
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28449 },	-- Placing the Pawns
 				}),
 				q(28319, {	-- A Delivery for Xi'lun
-					["qg"] = 48307,	-- Colonel Troteman
+					["provider"] = { "n", 48307 },	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28326 },	-- Placing the Pawns
 				}),
 				q(28452, {	-- A Delivery for Xi'lun
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28449 },	-- Placing the Pawns
 				}),
 				q(28178, {	-- A Future Project
-					["qg"] = 47811,	-- John J. Keeshan
+					["provider"] = { "n", 47811 },	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance
 				}),
 				q(28420, {	-- A Future Project
-					["qg"] = 48559,	-- Ariok
+					["provider"] = { "n", 48559 },	-- Ariok
 					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28418 },	-- Burning Vengeance
 				}),
 				q(28313, {	-- A Heap of Delicious Worg
-					["qg"] = 48307,	-- Colonel Troteman
+					["provider"] = { "n", 48307 },	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28310 },	-- Morgan's Vigil
 				}),
 				q(28445, {	-- A Heap of Delicious Worg
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
 				}),
 				q(28254, {	-- A Needle in a Hellhole
-					["qg"] = 48109,	-- John J. Keeshan
+					["provider"] = { "n", 48109 },	-- John J. Keeshan
 					["coord"] = { 46.3, 46.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28184 },	-- Chiselgrip, Heart of the Steppes
 				}),
 				q(28427, {	-- A Needle in a Hellhole
-					["qg"] = 48568,	-- Eitrigg
+					["provider"] = { "n", 48568 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
 				}),
 				q(28202, {	-- A Perfect Costume
-					["qg"] = 48001,	-- Thelaron Direneedle
+					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
 					["races"] = { 3, 29 },	-- Dwarf, Void Elf
 					["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 				}),
 				q(28203, {	-- A Perfect Costume
-					["qg"] = 48001,	-- Thelaron Direneedle
+					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
 					["races"] = { 11, 22 },	-- Draenei, Worgen, Lightforged Draenei
 					["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 				}),
 				q(28204, {	-- A Perfect Costume
-					["qg"] = 48001,	-- Thelaron Direneedle
+					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
 					["races"] = { 7 },	-- Gnome
 					["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 				}),
 				q(28205, {	-- A Perfect Costume
-					["qg"] = 48001,	-- Thelaron Direneedle
+					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
 					["races"] = { 4 },	-- Night Elf
 					["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 				}),
 				q(28428, {	-- A Perfect Costume
-					["qg"] = 48001,	-- Thelaron Direneedle
+					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
 					["races"] = { 2, 5 },	-- Orc, Undead
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
 				q(28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
-					["qg"] = 48001,	-- Thelaron Direneedle
+					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
 					["races"] = { 6, 26, 28 },	-- Tauren, Pandaren, Highmountain Tauren (UNCONFIRMED)
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
 				q(28430, {	-- A Perfect Costume
-					["qg"] = 48001,	-- Thelaron Direneedle
+					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
 					["races"] = { 9 },	-- Goblin
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
 				q(28431, {	-- A Perfect Costume
-					["qg"] = 48001,	-- Thelaron Direneedle
+					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
 					["races"] = { 8, 10, 27 },	-- Troll, Blood Elf, Nightborne
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
@@ -181,13 +181,13 @@ _.Zones =
 					},
 				}),
 				q(28279, {	-- Abuse of Power
-					["qg"] = 48110,	-- Colonel Troteman
+					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28266 },	-- Trial by Magma
 				}),
 				q(28440, {	-- Abuse of Power
-					["qg"] = 48568,	-- Eitrigg
+					["provider"] = { "n", 48568 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28438 },	-- Trial by Magma
@@ -215,37 +215,37 @@ _.Zones =
 					},
 				}),
 				q(28320, {	-- Assault on Dreadmaul Rock
-					["qg"] = 48306,	-- John J. Keeshan
+					["provider"] = { "n", 48306 },	-- John J. Keeshan
 					["coord"] = { 73.5, 67.2, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28327 },	-- Locked and Loaded
 				}),
 				q(28454, {	-- Assault on Dreadmaul Rock
-					["qg"] = 48565,	-- Ariok
+					["provider"] = { "n", 48565 },	-- Ariok
 					["coord"] = { 54.7, 24.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28453 },	-- Locked and Loaded
 				}),
 				q(28311, {	-- Blackened Ashes
-					["qg"] = 48307,	-- Colonel Troteman
+					["provider"] = { "n", 48307 },	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28310 },	-- Morgan's Vigil
 				}),
 				q(28443, {	-- Blackened Ashes
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
 				}),
 				q(27471, {	-- Blackrock Anomaly -- aa
-					["qg"] = 9562,	-- Hellendis Riverhorn
+					["provider"] = { "n", 9562 },	-- Hellendis Riverhorn
 					["coord"] = { 73.4, 66.2, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(28314, {	-- Blood Tour
-					["qg"] = 48306,	-- John J. Keeshan
+					["provider"] = { "n", 48306 },	-- John J. Keeshan
 					["coord"] = { 73.5, 67.2, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -255,7 +255,7 @@ _.Zones =
 					},
 				}),
 				q(28446, {	-- Blood Tour
-					["qg"] = 48565,	-- Ariok
+					["provider"] = { "n", 48565 },	-- Ariok
 					["coord"] = { 54.7, 24.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -278,27 +278,27 @@ _.Zones =
 					},
 				}),
 				q(28174, {	-- Burning Vengeance -- aa
-					["qg"] = 47811,	-- John J. Keeshan
+					["provider"] = { "n", 47811 },	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28666 },	-- Hero's Call: Burning Steppes!
 					["description"] = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains."
 				}),
 				q(28416, {	-- Burning Vengeance -- aa
-					["qg"] = 47811,	-- John J. Keeshan
+					["provider"] = { "n", 47811 },	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28666 },	-- Hero's Call: Burning Steppes!
 					["description"] = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains."
 				}),
 				q(28418, {	-- Burning Vengeance -- aa
-					["qg"] = 48559,	-- Ariok
+					["provider"] = { "n", 48559 },	-- Ariok
 					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28667 },	-- Warchief's Command: Burning Steppes!
 				}),
 				q(28184, {	-- Chiselgrip, the Heart of the Steppes
-					["qg"] = 47811,	-- John J. Keeshan
+					["provider"] = { "n", 47811 },	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -313,7 +313,7 @@ _.Zones =
 					},
 				}),
 				q(28426, {	-- Chiselgrip, the Heart of the Steppes
-					["qg"] = 48559,	-- Ariok
+					["provider"] = { "n", 48559 },	-- Ariok
 					["coord"] = { 17.4, 51.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -328,7 +328,7 @@ _.Zones =
 					},
 				}),
 				q(28172, {	-- Done Nothing Wrong
-					["qg"] = 47779,	-- Mouton Flamestar
+					["provider"] = { "n", 47779 },	-- Mouton Flamestar
 					["coord"] = { 16.9, 51.3, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -338,7 +338,7 @@ _.Zones =
 					},
 				}),
 				q(28417, {	-- Done Nothing Wrong
-					["qg"] = 47779,	-- Mouton Flamestar
+					["provider"] = { "n", 47779 },	-- Mouton Flamestar
 					["coord"] = { 16.9, 51.3, 36 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -349,7 +349,7 @@ _.Zones =
 					},
 				}),
 				q(28315, {	-- Draconic Vanguard
-					["qg"] = 48306,	-- John J. Keeshan
+					["provider"] = { "n", 48306 },	-- John J. Keeshan
 					["coord"] = { 73.5, 67.2, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -359,7 +359,7 @@ _.Zones =
 					},
 				}),
 				q(28447, {	-- Draconic Vanguard
-					["qg"] = 48565,	-- Ariok
+					["provider"] = { "n", 48565 },	-- Ariok
 					["coord"] = { 54.7, 24.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -369,7 +369,7 @@ _.Zones =
 					},
 				}),
 				q(28286, {	-- Enough Damage For One Day
-					["qg"] = 48110,	-- Colonel Troteman
+					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28279 },	-- Abuse of Power
@@ -382,7 +382,7 @@ _.Zones =
 					},
 				}),
 				q(28441, {	-- Enough Damage For One Day
-					["qg"] = 48568,	-- Eitrigg
+					["provider"] = { "n", 48568 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28440 },	-- Abuse of Power
@@ -395,18 +395,18 @@ _.Zones =
 					},
 				}),
 				q(28442, {	-- Flame Crest
-					["qg"] = 48568,	-- Eitrigg
+					["provider"] = { "n", 48568 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28441 },	-- Enough Damage for One Day
 				}),
 				q(27469, {	-- Friends on The Other Side -- aa -- this is available to alliance despite being in horde territory
-					["qg"] = 56899,	-- Ragged Jong
+					["provider"] = { "n", 56899 },	-- Ragged Jong
 					["coord"] = { 54.1, 23.8, 36 },
 					["isBreadcrumb"] = true,
 				}),
 				q(28265, {	-- General Thorg'izog
-					["qg"] = 48109,	-- John J. Keeshan
+					["provider"] = { "n", 48109 },	-- John J. Keeshan
 					["coord"] = { 46.3, 46.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -415,7 +415,7 @@ _.Zones =
 					},
 				}),
 				q(28437, {	-- General Thorg'izog
-					["qg"] = 48568,	-- Eitrigg
+					["provider"] = { "n", 48568 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -424,19 +424,19 @@ _.Zones =
 					},
 				}),
 				q(28321, {	-- Glory Amidst Chaos
-					["qg"] = 48307,	-- Colonel Troteman
+					["provider"] = { "n", 48307 },	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28320 },	-- Assault on Dreadmaul Rock
 				}),
 				q(28455, {	-- Glory Amidst Chaos
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28454 },	-- Assault on Dreadmaul Rock
 				}),
 				q(28227, {	-- Golem Training
-					["qg"] = 48033,	-- Stebben Oreknuckle
+					["provider"] = { "n", 48033 },	-- Stebben Oreknuckle
 					["coord"] = { 46.8, 44.0, 36 },
 					["sourceQuests"] = {
 						28225,	-- Prove Yer Allegiance
@@ -450,25 +450,25 @@ _.Zones =
 					},
 				}),
 				q(28245, {	-- Grunt Work
-					["qg"] = 48085,	-- Quartermaster Kaoshin
+					["provider"] = { "n", 48085 },	-- Quartermaster Kaoshin
 					["coord"] = { 45.3, 51.7, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28239 },	-- Into the Black Tooth Hovel
 				}),
 				q(28433, {	-- Grunt Work
-					["qg"] = 48085,	-- Quartermaster Kaoshin
+					["provider"] = { "n", 48085 },	-- Quartermaster Kaoshin
 					["coord"] = { 45.3, 51.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28432 },	-- Into the Black Tooth Hovel
 				}),
 				q(28278, {	-- I Am the Law and I Am the Lash
-					["qg"] = 48133,	-- General Thorg'izog
+					["provider"] = { "n", 48133 },	-- General Thorg'izog
 					["coord"] = { 30.6, 33.7, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28266 },	-- Trial by Magma
 				}),
 				q(28439, {	-- I Am the Law and I Am the Lash
-					["qg"] = 48133,	-- General Thorg'izog
+					["provider"] = { "n", 48133 },	-- General Thorg'izog
 					["coord"] = { 30.6, 33.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28438 },	-- Trial by Magma
@@ -484,13 +484,13 @@ _.Zones =
 					},
 				}),
 				q(28239, {	-- Into the Black Tooth Hovel
-					["qg"] = 48109,	-- John J. Keeshan
+					["provider"] = { "n", 48109 },	-- John J. Keeshan
 					["coord"] = { 46.3, 46.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28202, 28203, 28204, 28205 },	-- A Perfect Costume (Alliance Versions)
 				}),
 				q(28432, {	-- Into the Black Tooth Hovel
-					["qg"] = 48568,	-- Eitrigg
+					["provider"] = { "n", 48568 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (Horde versions)
@@ -503,13 +503,13 @@ _.Zones =
 					},
 				}),
 				q(28312, {	-- Latent Demons of the Land
-					["qg"] = 48307,	-- Colonel Troteman
+					["provider"] = { "n", 48307 },	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28310 },	-- Morgan's Vigil
 				}),
 				q(28444, {	-- Latent Demons of the Land
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
@@ -530,7 +530,7 @@ _.Zones =
 					},
 				}),
 				q(28453, {	-- Locked and Loaded
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -558,12 +558,12 @@ _.Zones =
 					},
 				}),
 				q(28310, {	-- Morgan's Vigil
-					["qg"] = 48110,	-- Colonel Troteman
+					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28286 },	-- Enough Damage for One Day
 				}),
 				q(28179, {	-- Mud Hunter
-					["qg"] = 47811,	-- John J. Keeshan
+					["provider"] = { "n", 47811 },	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance
@@ -572,7 +572,7 @@ _.Zones =
 					},
 				}),
 				q(28421, {	-- Mud Hunter
-					["qg"] = 48559,	-- Ariok
+					["provider"] = { "n", 48559 },	-- Ariok
 					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28418 },	-- Burning Vengeance
@@ -581,7 +581,7 @@ _.Zones =
 					},						
 				}),
 				q(28491, {	-- Not Fireflies, Flameflies
-					["qg"] = 10260,	-- Kibler
+					["provider"] = { "n", 10260 },	-- Kibler
 					["coord"] = { 54.9, 22.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
@@ -601,7 +601,7 @@ _.Zones =
 					},
 				}),
 				q(28326, {	-- Placing the Pawns
-					["qg"] = 48307,	-- Colonel Troteman
+					["provider"] = { "n", 48307 },	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -617,7 +617,7 @@ _.Zones =
 					},
 				}),
 				q(28449, {	-- Placing the Pawns
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -633,7 +633,7 @@ _.Zones =
 					},
 				}),
 				q(28225, {	-- Prove Yer Allegiance
-					["qg"] = 48033,	-- Stebben Oreknuckle
+					["provider"] = { "n", 48033 },	-- Stebben Oreknuckle
 					["coord"] = { 46.7, 44.0, 36 },
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 				}),
@@ -647,7 +647,7 @@ _.Zones =
 					},
 				}),
 				q(28425, {	-- Return to Ariok
-					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["provider"] = { "n", 14437 },	-- Gorzeeki Wildeyes
 					["coord"] = { 8.3, 35.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -656,7 +656,7 @@ _.Zones =
 					},
 				}),
 				q(28183, {	-- Return to Keeshan
-					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["provider"] = { "n", 14437 },	-- Gorzeeki Wildeyes
 					["coord"] = { 8.3, 35.7, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -665,12 +665,12 @@ _.Zones =
 					},
 				}),
 				q(28226, {	-- Scrapped Golems
-					["qg"] = 48033,	-- Stebben Oreknuckle
+					["provider"] = { "n", 48033 },	-- Stebben Oreknuckle
 					["coord"] = { 46.7, 44.0, 36 },
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 				}),
 				q(28415, {	-- SEVEN! YUP!
-					["qg"] = 9177,	-- Oralius
+					["provider"] = { "n", 9177 },	-- Oralius
 					["coord"] = { 71.8, 67.9, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28310 },	-- Morgan's Vigil
@@ -682,19 +682,19 @@ _.Zones =
 					},
 				}),
 				q(28182, {	-- Shadow Boxing
-					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["provider"] = { "n", 14437 },	-- Gorzeeki Wildeyes
 					["coord"] = { 8.3, 35.7, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28180 },	-- The Sand, the Cider, and the Orb
 				}),
 				q(28424, {	-- Shadow Boxing
-					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["provider"] = { "n", 14437 },	-- Gorzeeki Wildeyes
 					["coord"] = { 8.3, 35.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28422 },	-- The Sand the Cider, and the Orb
 				}),
 				q(28177, {	-- Stocking Up
-					["qg"] = 47811,	-- John J. Keeshan
+					["provider"] = { "n", 47811 },	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance
@@ -705,7 +705,7 @@ _.Zones =
 					},
 				}),
 				q(28419, {	-- Stocking Up
-					["qg"] = 48559,	-- Ariok
+					["provider"] = { "n", 48559 },	-- Ariok
 					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28418 },	-- Burning Vengeance
@@ -715,19 +715,19 @@ _.Zones =
 					},
 				}),
 				q(28246, {	-- Strategic Cuts
-					["qg"] = 48110,	-- Colonel Troteman
+					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28245 },	-- Grunt Work
 				}),
 				q(28434, {	-- Strategic Cuts
-					["qg"] = 28432,	-- Eitrigg
+					["provider"] = { "n", 28432 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28433 },	-- Grunt Work (procs after accepting)
 				}),
 				q(28253, {	-- Taking the Horn For Ourselves
-					["qg"] = 48110,	-- Colonel Troteman
+					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28252 },	-- The Kodocaller's Horn
@@ -738,7 +738,7 @@ _.Zones =
 					},
 				}),
 				q(28436, {	-- Taking the Horn For Ourselves
-					["qg"] = 48568,	-- Eitrigg
+					["provider"] = { "n", 48568 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28435 },	-- The Kodocaller's Horn
@@ -749,33 +749,33 @@ _.Zones =
 					},
 				}),
 				q(28569, {	-- The Bogpaddle Bullet
-					["qg"] = 9177,	-- Oralius
+					["provider"] = { "n", 9177 },	-- Oralius
 					["lvl"] = 40,
 					["coord"] = { 71.8, 68.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(28570, {	-- The Bogpaddle Bullet
-					["qg"] = 10260,	-- Kibler
+					["provider"] = { "n", 10260 },	-- Kibler
 					["lvl"] = 40,
 					["coord"] = { 54.9, 22.6, 36 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(28252, {	-- The Kodocaller's Horn
-					["qg"] = 48085,	-- Quartermaster Kaoshin
+					["provider"] = { "n", 48085 },	-- Quartermaster Kaoshin
 					["coord"] = { 45.3, 51.7, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28245 },	-- Grunt Work
 				}),
 				q(28435, {	-- The Kodocaller's Horn
-					["qg"] = 48085,	-- Quartermaster Kaoshin
+					["provider"] = { "n", 48085 },	-- Quartermaster Kaoshin
 					["coord"] = { 45.3, 51.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28433 },	-- Grunt Work
 				}),
 				q(28180, {	-- The Sand, the Cider, and the Orb
-					["qg"] = 47811,	-- John J. Keeshan
+					["provider"] = { "n", 47811 },	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -785,7 +785,7 @@ _.Zones =
 					},
 				}),
 				q(28422, {	-- The Sand, the Cider, and the Orb
-					["qg"] = 48559,	-- Ariok
+					["provider"] = { "n", 48559 },	-- Ariok
 					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -795,7 +795,7 @@ _.Zones =
 					},
 				}),
 				q(28322, {	-- The Spoils of War
-					["qg"] = 48307,	-- Colonel Troteman
+					["provider"] = { "n", 48307 },	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28321 },	-- Glory Amidst Chaos
@@ -809,7 +809,7 @@ _.Zones =
 					},
 				}),
 				q(28456, {	-- The Spoils of War
-					["qg"] = 48569,	-- Eitrigg
+					["provider"] = { "n", 48569 },	-- Eitrigg
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28455 },	-- Glory Amidst Chaos
@@ -823,7 +823,7 @@ _.Zones =
 					},
 				}),
 				q(28266, {	-- Trial by Magma
-					["qg"] = 48133,	-- General Thorg'izog
+					["provider"] = { "n", 48133 },	-- General Thorg'izog
 					["coord"] = { 30.6, 33.7, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28265 },	-- General Thorg'izog
@@ -834,7 +834,7 @@ _.Zones =
 					},
 				}),
 				q(28438, {	-- Trial by Magma
-					["qg"] = 48133,	-- General Thorg'izog
+					["provider"] = { "n", 48133 },	-- General Thorg'izog
 					["coord"] = { 30.6, 33.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28437 },	-- General Thorg'izog
@@ -846,13 +846,13 @@ _.Zones =
 					},
 				}),
 				q(28181, {	-- Warlocks Have the Neatest Stuff
-					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["provider"] = { "n", 14437 },	-- Gorzeeki Wildeyes
 					["coord"] = { 8.3, 35.7, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28180 },	-- The Sand, the Cider, and the Orb
 				}),
 				q(28423, {	-- Warlocks Have the Neatest Stuff
-					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["provider"] = { "n", 14437 },	-- Gorzeeki Wildeyes
 					["coord"] = { 8.3, 35.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28422 },	-- The Sand, the Cider, and the Orb
@@ -869,7 +869,7 @@ _.Zones =
 					},
 				}),
 				q(44927, {	-- Worth Its Weight in Steel
-					["qg"] = 115805,	-- Hoddruc Bladebender
+					["provider"] = { "n", 115805 },	-- Hoddruc Bladebender
 					["coord"] = { 46.8, 44.9, 36 },
 					["sourceQuests"] = { 44926 },	-- A Familiar Axe to Grind
 					["requireSkill"] = 164,	-- Classic Blacksmithing

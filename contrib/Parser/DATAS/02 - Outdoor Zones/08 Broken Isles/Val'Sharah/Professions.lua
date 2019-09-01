@@ -8,30 +8,30 @@ _.Zones =
 			n(-38,  {	-- Profession
 				prof(171, {	-- Alchemy
 					q(39338, {	-- Return the Filter
-						["qg"] = 93974,	-- Leyweaver Erenyi
+						["provider"] = { "n", 93974 },	-- Leyweaver Erenyi
 						["sourceQuests"] = { 44112 },	-- Trading for Dreams
 					}),
 				}),
 				prof(164, {	-- Blacksmithing
 					q(39680, {	-- Between the Hammer...
 						["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
-						["qg"] = 96763,	-- Saris Swifthammer
+						["provider"] = { "n", 96763 },	-- Saris Swifthammer
 						["groups"] = {
 							i(123929),	-- Plans: Leystone Waistguard (Rank 2)
 						},
 					}),
 					q(39726, {	-- ...And the Anvil
 						["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
-						["qg"] = 96763,	-- Saris Swifthammer
+						["provider"] = { "n", 96763 },	-- Saris Swifthammer
 					}),
 					q(39729, {	-- The Knowledge of Black Rook
 						["sourceQuests"] = { 39680, 39726 },	-- Between the Hammer..., ...And the Anvil
 						["isBreadcrumb"] = true,
-						["qg"] = 96763,	-- Saris Swifthammer
+						["provider"] = { "n", 96763 },	-- Saris Swifthammer
 					}),
 					n(-34, {	-- World Quests
 						q(41634, {	-- Work Order: Leystone Armguards
-							["qg"] = 106901,	-- Sylvia Hartshorn
+							["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
 							["lvl"] = 110,
 							["collectible"] = false,
 							["groups"] = {

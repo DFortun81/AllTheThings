@@ -8,7 +8,7 @@ _.Zones =
 			n(-169, {	-- Emissary Quests
 				q(42170, {	-- The Dreamweavers
 					["repeatable"] = true,
-					["qg"] = 106901,	-- Sylvia Hartshorn <Dreamweaver Emissary>
+					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
 					["groups"] = {
 						i(157822, {	-- Dreamweaver Provisions
 							["sym"] = {
@@ -51,7 +51,7 @@ _.Zones =
 				n(-206, {	-- Paragon
 					q(46747, {	-- Supplies From the Dreamweavers
 						["repeatable"] = true,
-						["qg"] = 106901,	-- Sylvia Hartshorn <Dreamweaver Emissary>
+						["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
 						["groups"] = {
 							i(152103, {	-- Dreamweaver Cache
 								i(147804),	-- Wild Dreamrunner

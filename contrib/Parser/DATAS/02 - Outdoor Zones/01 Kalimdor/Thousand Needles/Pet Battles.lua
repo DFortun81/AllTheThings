@@ -20,7 +20,7 @@ _.Zones =
 					["description"] = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
 				}),
 				q(31906, {	-- Kela Grimtotem
-					["qg"] = 66452,	-- Kela Grimtotem
+					["provider"] = { "n", 66452 },	-- Kela Grimtotem
 					["coord"] = { 31.8, 32.8, 64 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

@@ -820,17 +820,17 @@ _.Zones =
 					},
 				}),
 				q(13072,  {	-- A Hero Remains
-					["qg"] = 30562,	-- Crusader Bridenbrad
+					["provider"] = { "n", 30562 },	-- Crusader Bridenbrad
 					["lvl"] = 67,
 					["sourceQuest"] = 13068,	-- A Tale of Valor
 				}),
 				q(13068,  {	-- A Tale of Valor
-					["qg"] = 31044,	-- Highlord Tirion Fordring
+					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["lvl"] = 67,
 					["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.\n\n—Fellwing on Wowhead",
 				}),
 				q(13142,  {	-- Banshee's Revenge
-					["qg"] = 30232,	-- The Bone Witch
+					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["g"] = {
 						i(44028),	-- Vengance Shiv
 						i(44029),	-- Quickblade of Cold Return
@@ -840,7 +840,7 @@ _.Zones =
 					},
 				}),
 				q(13279, {	-- Basic Chemistry
-					["qg"] = 29795,	-- Koltira Deathweaver
+					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(44386),	-- Newt-Eye Ring
@@ -849,7 +849,7 @@ _.Zones =
 					},
 				}),
 				q(13295, {	-- Basic Chemistry
-					["qg"] = 29799,	-- Thassarian
+					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(44386),	-- Newt-Eye Ring
@@ -858,7 +858,7 @@ _.Zones =
 					},
 				}),
 				q(13219,  {	-- Battle at Valhalas: Final Challenge
-					["qg"] = 31135,	-- Geirrvif
+					["provider"] = { "n", 31135 },	-- Geirrvif
 					["g"] = {
 						i(44382),	-- Robes of Refrained Celebration
 						i(44383),	-- Battleplate of Unheard Ovation
@@ -867,7 +867,7 @@ _.Zones =
 					},
 				}),
 				q(13291, {	-- Borrowed Technology
-					["qg"] = 30345,	-- Chief Engineer Boltwrench
+					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(38736),	-- Smuggler's Bracers
@@ -877,14 +877,14 @@ _.Zones =
 					},
 				}),
 				q(13211,  {	-- By Fire Be Purged
-					["qg"] = 30708,	-- Crusader Olakin Sainrith
+					["provider"] = { "n", 30708 },	-- Crusader Olakin Sainrith
 					["g"] = {
 						i(43880),	-- Fair Touch of the Crusader
 						i(43893),	-- Olakin's Enchanted Torch
 					},
 				}),
 				q(13319, {	-- Chain of Command
-					["qg"] = 29799,	-- Thassarian
+					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(43882),	-- Cultist's Cowl
@@ -894,7 +894,7 @@ _.Zones =
 					},
 				}),
 				q(13354, {	-- Chain of Command
-					["qg"] = 29795,	-- Koltira Deathweaver
+					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(43882),	-- Cultist's Cowl
@@ -904,7 +904,7 @@ _.Zones =
 					},
 				}),
 				q(13349, {	-- Cradle of the Frostbrood
-					["qg"] = 29795,	-- Koltira Deathweaver
+					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(39115),	-- Axe of Bloodstained Ice
@@ -915,7 +915,7 @@ _.Zones =
 					},
 				}),
 				q(12992,  {	-- Crush Dem Vrykuls!
-					["qg"] = 30216,	-- Vile
+					["provider"] = { "n", 30216 },	-- Vile
 					["coord"] = { 43.6, 24.2, 118 },
 					["sourceQuest"] = 12951,	-- Let the Baron Know
 					["g"] = {
@@ -927,7 +927,7 @@ _.Zones =
 					},
 				}),
 				q(13039,  {	-- Defending The Vanguard
-					["qg"] = 30224,	-- Crusader Lord Dalfors
+					["provider"] = { "n", 30224 },	-- Crusader Lord Dalfors
 					["g"] = {
 						i(43828),	-- Touch of Light
 						i(43841),	-- Argent Girdle
@@ -936,7 +936,7 @@ _.Zones =
 					},
 				}),
 				q(13394, {	-- Do Your Worst
-					["qg"] = 32408,	-- Matthias Lehner
+					["provider"] = { "n", 32408 },	-- Matthias Lehner
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(43881),	-- Demolisher Driver's Dustcoat
@@ -947,7 +947,7 @@ _.Zones =
 					},
 				}),
 				q(13305, {	-- Do Your Worst
-					["qg"] = 32408,	-- Mathias Lehner
+					["provider"] = { "n", 32408 },	-- Mathias Lehner
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(43881),	-- Demolisher Driver's Dustcoat
@@ -958,7 +958,7 @@ _.Zones =
 					},
 				}),
 				q(12982,  {	-- Ebon Blade Prisoners
-					["qg"] = 30218,	-- Vaelen the Flayed
+					["provider"] = { "n", 30218 },	-- Vaelen the Flayed
 					["coord"] = { 43.1, 21.0, 118 },
 					["sourceQuest"] = 13085,	-- Vaelen Has Returned
 					["g"] = {
@@ -969,7 +969,7 @@ _.Zones =
 					},
 				}),
 				q(12955,  {	-- Eliminate the Competition
-					["qg"] = 30074,	-- The Leaper
+					["provider"] = { "n", 30074 },	-- The Leaper
 					["coord"] = { 43.4, 25.0, 118 },
 					["sourceQuest"] = 12938,	-- The Duke
 					["g"] = {
@@ -981,7 +981,7 @@ _.Zones =
 					},
 				}),
 				q(13259, {	-- Establishing Superiority
-					["qg"] = 31440,	-- Sergeant Kregga
+					["provider"] = { "n", 31440 },	-- Sergeant Kregga
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(38737),	-- Shock-Proof Head Protector
@@ -991,7 +991,7 @@ _.Zones =
 					},
 				}),
 				q(12893,  {	-- Free Your Mind
-					["qg"] = 29804,	-- Baron Sliver
+					["provider"] = { "n", 29804 },	-- Baron Sliver
 					["coord"] = { 44.1, 24.7, 118 },
 					["sourceQuest"] = 12891,	-- I Have an Idea, But First...
 					["g"] = {
@@ -1002,17 +1002,17 @@ _.Zones =
 					},
 				}),
 				q(12949,  {	-- Get the Key
-					["qg"] = 30056,	-- Vaelen the Flayed
+					["provider"] = { "n", 30056 },	-- Vaelen the Flayed
 					["coord"] = { 41.0, 23.8, 118 },
 					["sourceQuest"] = 12943,	-- Shadow Vault Decree
 				}),
 				q(12939,  {	-- Honor Challenge
-					["qg"] = 30002,	-- Duke Lankral
+					["provider"] = { "n", 30002 },	-- Duke Lankral
 					["coord"] = { 44.6, 20.4, 118 },
 					["sourceQuest"] = 12938,	-- The Duke
 				}),
 				q(12891,  {	-- I Have an Idea, But First...
-					["qg"] = 29804,	-- Baron Sliver
+					["provider"] = { "n", 29804 },	-- Baron Sliver
 					["coord"] = { 44.1, 24.7, 118 },
 					["sourceQuests"] = {
 						12887,	-- It's All Fun and Games (alliance)
@@ -1020,19 +1020,19 @@ _.Zones =
 					},
 				}),
 				q(12896, {	-- If He Cannot Be Turned
-					["qg"] = 29804,	-- Baron Sliver
+					["provider"] = { "n", 29804 },	-- Baron Sliver
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 44.1, 24.7, 118 },
 					["sourceQuest"] = 12893,	-- Free Your Mind
 				}),
 				q(12897, {	-- If He Cannot Be Turned
-					["qg"] = 29804,	-- Baron Sliver
+					["provider"] = { "n", 29804 },	-- Baron Sliver
 					["races"] = HORDE_ONLY,
 					["coord"] = { 44.1, 24.7, 118 },
 					["sourceQuest"] = 12893,	-- Free Your Mind
 				}),
 				q(12840,  {	-- In Strict Confidence
-					["qg"] = 29344,	-- Lord-Commander Arete
+					["provider"] = { "n", 29344 },	-- Lord-Commander Arete
 					["g"] = {
 						i(43883),	-- Arete's Command
 						i(43920),	-- Growler's Intimidation
@@ -1042,17 +1042,17 @@ _.Zones =
 					},
 				}),
 				q(12892, {	-- It's All Fun and Games
-					["qg"] = 29795,	-- Koltira Deathweaver
+					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["coord"] = { 62.0, 40.2, 118 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(12887, {	-- It's All Fun and Games
-					["qg"] = 29799,	-- Thassarian
+					["provider"] = { "n", 29799 },	-- Thassarian
 					["coord"] = { 59.6, 44.4, 118 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13144,  {	-- Killing Two Scourge With One Skeleton
-					["qg"] = 30631,	-- Darkrider Arly
+					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["g"] = {
 						i(38739),	-- Fleshwerk Shackles
 						i(39038),	-- Fleshwerk Wristguards
@@ -1061,13 +1061,13 @@ _.Zones =
 					},
 				}),
 				q(12995,  {	-- Leave Our Mark
-					["qg"] = 29343,	-- Baron Sliver
+					["provider"] = { "n", 29343 },	-- Baron Sliver
 					["coord"] = { 42.8, 25.0, 118 },
 					["sourceQuest"] = 12951,	-- Let the Baron Know
 					["isDaily"] = true,
 				}),
 				q(12951,  {	-- Let the Baron Know
-					["qg"] = 30056,	-- Vaelen the Flayed
+					["provider"] = { "n", 30056 },	-- Vaelen the Flayed
 					["coord"] = { 41.0, 23.8, 118 },
 					["sourceQuest"] = 12949,	-- Get the Key
 				}),
@@ -1079,7 +1079,7 @@ _.Zones =
 					i(44039),	-- Signet of Bridenbrad
 				}),
 				q(13308,  {	-- Mind Tricks
-					["qg"] = 31892,	-- Darkspeaker R'khem
+					["provider"] = { "n", 31892 },	-- Darkspeaker R'khem
 					["g"] = {
 						i(44021),	-- The Darkspeaker's Footpads
 						i(44024),	-- The Darkspeaker's Treads
@@ -1088,7 +1088,7 @@ _.Zones =
 					},
 				}),
 				q(13346, {	-- No Rest For The Wicked
-					["qg"] = 29799,	-- Thassarian
+					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(44394),	-- Encrusted Zombie Finger
@@ -1097,7 +1097,7 @@ _.Zones =
 					},
 				}),
 				q(13367, {	-- No Rest For The Wicked
-					["qg"] = 29795,	-- Koltira Deathweaver
+					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(44393),	-- Polished Zombie Exterminator
@@ -1106,7 +1106,7 @@ _.Zones =
 					},
 				}),
 				q(13342, {	-- Not a Bug
-					["qg"] = 29799,	-- Thassarian
+					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(39372),	-- Mantle of the Dark Messenger
@@ -1117,7 +1117,7 @@ _.Zones =
 					},
 				}),
 				q(13358, {	-- Not a Bug
-					["qg"] = 29795,	-- Koltira Deathweaver
+					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(39372),	-- Mantle of the Dark Messenger
@@ -1128,7 +1128,7 @@ _.Zones =
 					},
 				}),
 				q(13137,  {	-- Not-So-Honorable Combat
-					["qg"] = 30232,	-- The Bone Witch
+					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["g"] = {
 						i(44016),	-- Wristguard of the Bone Witch
 						i(44036),	-- Njorndar Furywraps
@@ -1137,7 +1137,7 @@ _.Zones =
 					},
 				}),
 				q(13287, {	-- Poke and Prod
-					["qg"] = 29799,	-- Thassarian
+					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(43903),	-- Ring of the Fallen Shadow Adept
@@ -1146,7 +1146,7 @@ _.Zones =
 					},
 				}),
 				q(13237, {	-- Poke and Prod
-					["qg"] = 29795,	-- Koltira Deathweaver
+					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(43903),	-- Ring of the Fallen Shadow Adept
@@ -1155,7 +1155,7 @@ _.Zones =
 					},
 				}),
 				q(13321, {	-- Retest Now
-					["qg"] = 30345,	-- Chief Engineer Boltwrench
+					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(39134),	-- Bow of Regression
@@ -1165,7 +1165,7 @@ _.Zones =
 					},
 				}),
 				q(13356, {	-- Retest Now
-					["qg"] = 30825,	-- Chief Engineer Copperclaw
+					["provider"] = { "n", 30825 },	-- Chief Engineer Copperclaw
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(39134),	-- Bow of Regression
@@ -1175,7 +1175,7 @@ _.Zones =
 					},
 				}),
 				q(13059,  {	-- Revenge for the Vargul
-					["qg"] = 30406,	-- Bethod Feigr
+					["provider"] = { "n", 30406 },	-- Bethod Feigr
 					["g"] = {
 						i(43862),	-- Mantle of the Underhalls
 						i(43908),	-- Boots of the Fallen Thane
@@ -1185,7 +1185,7 @@ _.Zones =
 					},
 				}),
 				q(13387, {	-- Securing the Perimeter
-					["qg"] = 31444,	-- Captain Kendall
+					["provider"] = { "n", 31444 },	-- Captain Kendall
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(38737),	-- Shock-Proof Head Protector
@@ -1195,7 +1195,7 @@ _.Zones =
 					},
 				}),
 				q(13172,  {	-- Seeds of Chaos
-					["qg"] = 30946,	-- Keritose Bloodblade
+					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["g"] = {
 						i(43872),	-- Weeping Mantle
 						i(43905),	-- Fur-Lined Helm
@@ -1205,7 +1205,7 @@ _.Zones =
 					},
 				}),
 				q(12943,  {	-- Shadow Vault Decree
-					["qg"] = 30002,	-- Duke Lankral
+					["provider"] = { "n", 30002 },	-- Duke Lankral
 					["coord"] = { 44.6, 20.4, 118 },
 					["sourceQuest"] = 12939,	-- Honor Challenge
 					["g"] = {
@@ -1216,7 +1216,7 @@ _.Zones =
 					},
 				}),
 				q(13397, {	-- Sindragosa's Fall
-					["qg"] = 29799,	-- Thassarian
+					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(39115),	-- Axe of Bloodstained Ice
@@ -1227,7 +1227,7 @@ _.Zones =
 					},
 				}),
 				q(13288, {	-- That's Abominable!
-					["qg"] = 29799,	-- Thassarian
+					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(39814),	-- Slippers of the Broken Front
@@ -1237,7 +1237,7 @@ _.Zones =
 					},
 				}),
 				q(13264, {	-- That's Abominable!
-					["qg"] = 29795,	-- Koltira Deathweaver
+					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(39814),	-- Slippers of the Broken Front
@@ -1247,7 +1247,7 @@ _.Zones =
 					},
 				}),
 				q(12852,  {	-- The Admiral Revealed
-					["qg"] = 29560,	-- Lord-Commander Arete
+					["provider"] = { "n", 29560 },	-- Lord-Commander Arete
 					["g"] = {
 						i(44034),	--Amulet of the Crusade
 						i(44017),	-- Emeline's Locket
@@ -1256,7 +1256,7 @@ _.Zones =
 					},
 				}),
 				q(13125,  {	-- The Air Stands Still
-					["qg"] = 30596,	-- The Ebon Watcher
+					["provider"] = { "n", 30596 },	-- The Ebon Watcher
 					["g"] = {
 						i(43839),	-- Leiah's Footpads
 						i(43840),	-- Sixen's Skullcap
@@ -1265,7 +1265,7 @@ _.Zones =
 					},
 				}),
 				q(13091,  {	-- The Art of Being a Water Terror
-					["qg"] = 30232,	-- The Bone Witch
+					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["g"] = {
 						i(43863),	-- Pantaloons of the Water Magi
 						i(43907),	-- Spear-Sisters Mantle
@@ -1274,12 +1274,12 @@ _.Zones =
 					},
 				}),
 				q(12999,  {	-- The Bone Witch
-					["qg"] = 30074,	-- The Leaper
+					["provider"] = { "n", 30074 },	-- The Leaper
 					["sourceQuest"] = 12955,	-- Eliminate the Competition
 					["coord"] = { 43.4, 25.0, 118 },
 				}),
 				q(13157,  {	-- The Crusaders' Pinnacle
-					["qg"] = 30683,	-- Father Gustav
+					["provider"] = { "n", 30683 },	-- Father Gustav
 					["g"] = {
 						i(44019),	-- The Argent Skullcap
 						i(44044),	-- Tirion's Headwrap
@@ -1289,7 +1289,7 @@ _.Zones =
 					},
 				}),
 				q(12938,  {	-- The Duke
-					["qg"] = 29343,	-- Baron Sliver
+					["provider"] = { "n", 29343 },	-- Baron Sliver
 					["coord"] = { 44.1, 24.7, 118 },
 					["sourceQuests"] = {
 						12898,	-- The Shadow Vault (alliance)
@@ -1297,7 +1297,7 @@ _.Zones =
 					},
 				}),
 				q(13164,  {	-- The Fate of Bloodbane
-					["qg"] = 30944,	-- Vereth the Cunning
+					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["g"] = {
 						i(44027),	-- Bloodbane Shroud
 						i(44025),	-- Bloodbane Cloak
@@ -1306,7 +1306,7 @@ _.Zones =
 					},
 				}),
 				q(13235,  {	-- The Flesh Giant Champion
-					["qg"] = 30631,	-- Darkrider Arly
+					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["g"] = {
 						i(44378),	-- Mantle of the Flesh Giant
 						i(44379),	-- Shoulderpads of Fleshworks
@@ -1315,7 +1315,7 @@ _.Zones =
 					},
 				}),
 				q(13400, {	-- The Hunter and the Prince
-					["qg"] = 32497,	-- Matthias Lehner
+					["provider"] = { "n", 32497 },	-- Matthias Lehner
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(38741),	-- Gloves of Tormented Recollection
@@ -1325,7 +1325,7 @@ _.Zones =
 					},
 				}),
 				q(13361, {	-- The Hunter and the Prince
-					["qg"] = 32497,	-- Matthias Lehner
+					["provider"] = { "n", 32497 },	-- Matthias Lehner
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(38741),	-- Gloves of Tormented Recollection
@@ -1336,11 +1336,11 @@ _.Zones =
 				}),
 				q(13073,  {	-- The Keeper's Favor
 					["lvl"] = 67,
-					["qg"] = 31044,	-- Highlord Tirion Fordring
+					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13072,	-- A Hero Remains
 				}),
 				q(13086,  {	-- The Last Line Of Defense
-					["qg"] = 30657,	-- Siegemaster Fezzik
+					["provider"] = { "n", 30657 },	-- Siegemaster Fezzik
 					["g"] = {
 						i(44013),	-- Cannoneer's Fuselighter
 						i(44015),	-- Cannoneer's Morale
@@ -1348,7 +1348,7 @@ _.Zones =
 					},
 				}),
 				q(13110,  {	-- The Restless Dead
-					["qg"] = 30683,	-- Father Gustav
+					["provider"] = { "n", 30683 },	-- Father Gustav
 					["g"] = {
 						i(43833),	-- Blade of Echoes
 						i(43832),	-- The Argent Resolve
@@ -1357,7 +1357,7 @@ _.Zones =
 					},
 				}),
 				q(13163,  {	-- The Rider of Blood
-					["qg"] = 30944,	-- Vereth the Cunning
+					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["g"] = {
 						i(43877),	-- Blood-Forged Circle
 						i(43896),	-- Grotesque Butcher's Pants
@@ -1366,7 +1366,7 @@ _.Zones =
 					},
 				}),
 				q(13162,  {	-- The Rider of Frost
-					["qg"] = 30944,	-- Vereth the Cunning
+					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["g"] = {
 						i(43899),	-- Sapph's Cleaver
 						i(43897),	-- Frost Climber's Hatchet
@@ -1375,7 +1375,7 @@ _.Zones =
 					},
 				}),
 				q(13161,  {	-- The Rider of the Unholy
-					["qg"] = 30944,	-- Vereth the Cunning
+					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["g"] = {
 						i(43904),	-- Discarded Slaughterhouse Gloves
 						i(43948),	-- Blood-Encrusted Boots
@@ -1384,7 +1384,7 @@ _.Zones =
 					},
 				}),
 				q(12898, {	-- The Shadow Vault
-					["qg"] = 29799,	-- Thassarian
+					["provider"] = { "n", 29799 },	-- Thassarian
 					["coord"] = { 59.6, 44.4, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 12896,	-- If He Cannot Be Turned
@@ -1395,7 +1395,7 @@ _.Zones =
 					},
 				}),
 				q(12899, {	-- The Shadow Vault
-					["qg"] = 29795,	-- Koltira Deathweaver
+					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["coord"] = { 62.0, 40.2, 118 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 12897,	-- If He Cannot Be Turned
@@ -1406,7 +1406,7 @@ _.Zones =
 					},
 				}),
 				q(13130,  {	-- The Stone That Started A Revolution
-					["qg"] = 30686,	-- Crusade Architect Silas
+					["provider"] = { "n", 30686 },	-- Crusade Architect Silas
 					["g"] = {
 						i(43855),	-- Adepts Wristwraps
 						i(43914),	-- Girdle of Reprieve
@@ -1423,7 +1423,7 @@ _.Zones =
 					},
 				}),
 				q(13145,  {	-- The Vile Hold
-					["qg"] = 30944,	-- Vereth the Cunning
+					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["g"] = {
 						i(43866),	-- Lithe Stalker's Cord
 						i(43906),	-- Cunning Leather Tunic
@@ -1432,7 +1432,7 @@ _.Zones =
 					},
 				}),
 				q(13391, {	-- Time to Hide
-					["qg"] = 31237,	-- Matthias Lenher
+					["provider"] = { "n", 31237 },	-- Matthias Lenher
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(43885),	-- Scourgehammer
@@ -1444,7 +1444,7 @@ _.Zones =
 					},
 				}),
 				q(13275, {	-- Time to Hide
-					["qg"] = 31237,	-- Matthias Lehner
+					["provider"] = { "n", 31237 },	-- Matthias Lehner
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(43885),	-- Scourgehammer
@@ -1456,7 +1456,7 @@ _.Zones =
 					},
 				}),
 				q(13403, {	-- Tirion's Gambit
-					["qg"] = 31044,	-- Highllord Tirion Fordring
+					["provider"] = { "n", 31044 },	-- Highllord Tirion Fordring
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(44745),	-- Blade of the Empty Void
@@ -1466,7 +1466,7 @@ _.Zones =
 					},
 				}),
 				q(13364, {	-- Tirion's Gambit
-					["qg"] = 31044,	-- Highlord Tirion Fordring
+					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(44745),	-- Blade of the Empty Void
@@ -1476,17 +1476,17 @@ _.Zones =
 					},
 				}),
 				q(13085,  {	-- Vaelen Has Returned
-					["qg"] = 29343,	-- Baron Sliver
+					["provider"] = { "n", 29343 },	-- Baron Sliver
 					["coord"] = { 42.8, 25.0, 118 },
 					["sourceQuest"] = 12951,	-- Let the Baron Know
 				}),
 				q(13084,  {	-- Vandalizing Jotunheim
-					["qg"] = 30002,	-- Duke Lankral
+					["provider"] = { "n", 30002 },	-- Duke Lankral
 					["coord"] = { 44.6, 20.4, 118 },
 					["sourceQuest"] = 12951,	-- Let the Baron Know
 				}),
 				q(13239, {	-- Volatility
-					["qg"] = 30825,	-- Chief Engineer Copperclaw
+					["provider"] = { "n", 30825 },	-- Chief Engineer Copperclaw
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(38736),	-- Smuggler's Bracers
@@ -1496,7 +1496,7 @@ _.Zones =
 					},
 				}),
 				q(12814,  {	-- You'll Need a Gryphon
-					["qg"] = 29344,	-- Lord-Commander Arete
+					["provider"] = { "n", 29344 },	-- Lord-Commander Arete
 					["g"] = {
 						i(43879),	-- Gryphon Rider's Bracers
 						i(43894),	-- Gryphon Hide Moccasins

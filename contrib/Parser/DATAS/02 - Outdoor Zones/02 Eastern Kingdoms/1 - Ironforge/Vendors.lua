@@ -291,15 +291,6 @@ _.Zones =
 					["g"] = {
 						i(122375),	-- Aged Paundrons of The Five Thunders
 						i(122350),	-- Balanced Heartseeker
-						i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-							["cost"] = {
-								{ "i", 23247, 600 },	-- 600x   Burning Blossom
-								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
-							},
-						}),
-						i(167732, {	-- Battle-Hardened Heirloom Scabbard
-							["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						}),
 						i(122369),	-- Battleworn Thrash Blade
 						i(122349),	-- Bloodied Arcanite Reaper
 						i(122389),	-- Bloodsoaked Skullforge Reaver
@@ -351,40 +342,12 @@ _.Zones =
 						i(122360),	-- Tattered Dreadmist Mantle
 						i(122384),	-- Tattered Dreadmist Robe
 						i(122367),	-- The Blessed Hammer of Grace
-						i(122340, {	-- Timeworn Heirloom Armor Casing
-							["cost"] = {
-								{ "i", 23247, 600 },	-- 600x   Burning Blossom
-								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
-								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
-								{ "i", 33226, 450 },	-- 450x   Tricky Treat
-							},
-						}),
-						i(122341, {	-- Timeworn Heirloom Scabbard
-							["cost"] = {
-								{ "i", 49927, 450 },	-- 450x   Love Token
-								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
-							},
-						}),
 						i(150746, {	-- To Modernize the Provisions of Azeroth (TOY!)
 							["races"] = ALLIANCE_ONLY,
 						}),
 						i(122366),	-- Upgraded Dwarven Hand Cannon
 						i(122351),	-- Venerable Dal'Rend's Sacred Charge
 						i(122385),	-- Venerable Mass of McGowan
-						i(151614, {	-- Weathered Heirloom Armor Casing
-							["cost"] = {
-								{ "i", 23247, 600 },	-- 600x   Burning Blossom
-								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
-								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
-								{ "i", 33226, 450 },	-- 450x   Tricky Treat
-							},
-						}),
-						i(151615, {	-- Weathered Heirloom Scabbard
-							["cost"] = {
-								{ "i", 49927, 450 },	-- 450x   Love Token
-								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
-							},
-						}),
 						i(122392),	-- Weathered Observers Shield
 					},
 				}),

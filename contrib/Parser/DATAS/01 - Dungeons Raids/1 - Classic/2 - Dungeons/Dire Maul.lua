@@ -18,7 +18,7 @@ _.Instances = { tier(1, {	-- Classic
 				["g"] = {
 					n(-17, {	-- Quests
 						q(27104, {	-- Alzzin the Wildshaper
-							["qg"] = 44969,	-- Furgus Warpwood
+							["provider"] = { "n", 44969 },	-- Furgus Warpwood
 							["g"] = {
 								i(65948),	-- Warpwood Bark Vest
 								i(65972),	-- Warpwood Bow
@@ -27,7 +27,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27105, {	-- An Unwelcome Guest
-							["qg"] = 44969,	-- Furgus Warpwood
+							["provider"] = { "n", 44969 },	-- Furgus Warpwood
 						}),
 						q(7651, {	-- Enchanted Thorium Platemail: Volume III
 							["u"] = 40,
@@ -51,7 +51,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7488, {	-- Lethtendris's Web
 							["u"] = 40,
-							["qg"] = 7877,	-- Latronicus Moonspear
+							["provider"] = { "n", 7877 },	-- Latronicus Moonspear
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								un(2, i(18491)),	-- Lorespinner
@@ -59,18 +59,18 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7489, {	-- Lethtendris's Web
 							["u"] = 40,
-							["qg"] = 7776,	-- Talo Thornhoof
+							["provider"] = { "n", 7776 },	-- Talo Thornhoof
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(2, i(18491)),	-- Lorespinner
 							},
 						}),
 						q(27108, {	-- Lethtendris's Web
-							["qg"] = 44971,	-- "Ambassador" Dagg'thol
+							["provider"] = { "n", 44971 },	-- "Ambassador" Dagg'thol
 						}),
 						q(7483, {	-- Libram of Rapidity
 							["u"] = 40,
-							["qg"] = 14368,	-- Lorekeeper Lydros
+							["provider"] = { "n", 14368 },	-- Lorekeeper Lydros
 							["g"] = {
 								un(2, i(18329, {	-- Arcanum of Rapidity
 									["f"] = 55,	-- Consumable
@@ -79,17 +79,17 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7441, {	-- Pusillin and the Elder Azj'Tordin
 							["u"] = 40,
-							["qg"] = 14355,	-- Azj'Tordin
+							["provider"] = { "n", 14355 },	-- Azj'Tordin
 							["g"] = {
 								un(2, i(18410)),	-- Sprinter's Sword
 								un(2, i(18411)),	-- Spry Boots
 							},
 						}),
 						q(27107, {	-- Pusillin The Thief
-							["qg"] = 44971,	-- "Ambassador" Dagg'thol
+							["provider"] = { "n", 44971 },	-- "Ambassador" Dagg'thol
 						}),
 						q(27103, {	-- Shards of the Felvine
-							["qg"] = 44969,	-- Furgus Warpwood
+							["provider"] = { "n", 44969 },	-- Furgus Warpwood
 						}),
 					}),
 					n(0, {	-- Zone Drop
@@ -226,7 +226,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27133, {	-- Eyes in the Sky
-							["qg"] = 3936,	-- Shandris Feathermoon
+							["provider"] = { "n", 3936 },	-- Shandris Feathermoon
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(8949, {	-- Falrin's Vendetta
@@ -250,7 +250,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(5525, {	-- Free Knot!
 							["u"] = 40,
-							["qg"] = 14338,	-- Knott
+							["provider"] = { "n", 14338 },	-- Knott
 							["description"] = "This quest was removed with the Cataclym with the rest of the fun things in the game. You would obtain the key from one of the guards, turn it in, and he would present you with Knot Thimblejack's Cache.",
 							["g"] = {
 								un(2, i(18250)),	-- Gordok Shackle Key
@@ -271,7 +271,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27125, {	-- King of the Gordok
-							["qg"] = 45040,	-- Druid of the Talon
+							["provider"] = { "n", 45040 },	-- Druid of the Talon
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(65976),	-- Pauldrons of Tribute
@@ -281,7 +281,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27128, {	-- King of the Gordok
-							["qg"] = 45052,	-- Stonemaul Ogre
+							["provider"] = { "n", 45052 },	-- Stonemaul Ogre
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(66036),	-- Pauldrons of Tribute
@@ -330,13 +330,13 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27119, {	-- The Gordok Ogre Suit
-							["qg"] = 14338,	-- Knot Thimblejack
+							["provider"] = { "n", 14338 },	-- Knot Thimblejack
 							["g"] = {
 								i(18258),	-- Gordok Ogre Suit
 							},
 						}),
 						q(27120, {	-- The Gordok Ogre Suit
-							["qg"] = 14338,	-- Knot Thimblejack
+							["provider"] = { "n", 14338 },	-- Knot Thimblejack
 							["repeatable"] = true,
 							["g"] = {
 								un(2, recipe(22813)),	-- Gordok Ogre Suit
@@ -344,7 +344,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27114, {	-- The Gordok Taste Test
-							["qg"] = 14322,	-- Stomper Kreeg
+							["provider"] = { "n", 14322 },	-- Stomper Kreeg
 							["description"] = "Kill |cFFFFD700King Gordok|r to become king, then the courtyard.",
 						}),
 						q(7503, {	-- The Greatest Race of Hunters
@@ -362,7 +362,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27124, {	-- Unfinished Gordok Business
-							["qg"] = 14325,	-- Captain Kromcrush
+							["provider"] = { "n", 14325 },	-- Captain Kromcrush
 							["description"] = "Kill |cFFFFD700King Gordok|r then return to the courtyard.",
 							["g"] = {
 								i(18367),	-- Gordok's Gauntlets
@@ -544,21 +544,21 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27112,  { -- The Cursed Remains
-							["qg"] = 44991,
+							["provider"] = { "n", 44991 },
 						}),
 						q(7461, {	-- The Madness Within
 							["u"] = 40,
-							["qg"] = 14358,	-- Shen'dralar Ancient
+							["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
 						}),
 						q(27110, {	-- The Madness Within
-							["qg"] = 14358,	-- Shen'dralar Ancient
+							["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
 						}),
 						q(27113, {	-- The Shen'dralar Ancient
-							["qg"] = 44991,
+							["provider"] = { "n", 44991 },
 						}),
 						q(7462, { 	-- The Treasure of the Shen'dralar
 							["u"] = 40,
-							["qg"] = 14358,	-- Shen'dralar Ancient
+							["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 7461,	-- The Madness Within
 							["g"] = {
@@ -569,7 +569,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7877, { 	-- The Treasure of the Shen'dralar
 							["u"] = 40,
-							["qg"] = 14358,	-- Shen'dralar Ancient
+							["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 7461,	-- The Madness Within
 							["g"] = {
@@ -579,7 +579,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27111, {	-- The Treasure of Shen'dralar
-							["qg"] = 14358,	-- Shen'dralar Ancient
+							["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
 							["sourceQuest"] = 27110,	-- The Madness Within
 							["g"] = {
 								i(65949),	-- Dire Maul
@@ -589,11 +589,11 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27109, {	-- The Warped Defender
-							["qg"] = 44999,
+							["provider"] = { "n", 44999 },
 						}),
 						-- Part of the Dungeon 2 Set Questline
 						q(8949, {	-- Falrin's Vendetta
-							["qg"] = 16032,	-- Falrin Treeshaper
+							["provider"] = { "n", 16032 },	-- Falrin Treeshaper
 							["sourceQuest"] = 8948,	-- Anthion's Old Friend
 							["lvl"] = 58,
 							["u"] = 40,
@@ -603,13 +603,13 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(8950, {	-- The Instigator's Enchantment
-							["qg"] = 16032,	-- Falrin Treeshaper
+							["provider"] = { "n", 16032 },	-- Falrin Treeshaper
 							["sourceQuest"] = 8949,	-- Falrin's Vendetta
 							["lvl"] = 58,
 							["u"] = 40,
 						}),
 						q(9015, {	-- The Challenge
-							["qg"] = 16032,	-- Falrin Treeshaper
+							["provider"] = { "n", 16032 },	-- Falrin Treeshaper
 							["sourceQuest"] = 8950,	-- The Instigator's Enchantment
 							["lvl"] = 58,
 							["u"] = 40,

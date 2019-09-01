@@ -7,18 +7,18 @@ _.Zones =
 		m(57, {	-- Teldrassil
 			n(-17, {	-- Quests
 				q(475,   {	-- A Troubling Breeze
-					["qg"] = 2078,	-- Athridas Bearmantle
+					["provider"] = { "n", 2078 },	-- Athridas Bearmantle
 					["coord"] = { 55.7, 51.9, 57 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(997, {	-- Denalan's Earth
-					["qg"] = 2083,	-- Syral Blackleaf
+					["provider"] = { "n", 2083 },	-- Syral Blackleaf
 					["coord"] = { 55.7, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 486,	-- Ursal the Mauler
 				}),
 				q(2561, {	-- Druid of the Claw
-					["qg"] = 7317,	-- Oben Rageclaw
+					["provider"] = { "n", 7317 },	-- Oben Rageclaw
 					["coord"] = { 41.1, 83.7, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 2541,	-- The Sleeping Druid
@@ -29,7 +29,7 @@ _.Zones =
 					},
 				}),
 				q(1684, {	-- Elanaria
-					["qg"] = 3598,	-- Kyra Windblade
+					["provider"] = { "n", 3598 },	-- Kyra Windblade
 					["coord"] = { 56.2, 59.2, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
@@ -37,19 +37,19 @@ _.Zones =
 					["u"] = 40,
 				}),					
 				q(1581, {	-- Elixirs for the Bladeleafs
-					["qg"] = 2083,	-- Syral Bladeleaf
+					["provider"] = { "n", 2083 },	-- Syral Bladeleaf
 					["coord"] = { 55.8, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = 171,	-- Alchemy
 				}),
 				q(2459,  {	-- Ferocitas the Dream Eater
-					["qg"] = 3567,	-- Tallonkai Swiftroot
+					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
 					["coord"] = { 55.5, 49.9, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 2438,	-- The Emerald Dreamcatcher
 				}),
 				q(26758, {	-- Flight to Auberdine
-					["qg"] = 3838,	-- Vesprystus
+					["provider"] = { "n", 3838 },	-- Vesprystus
 					["coord"] = { 58.4, 94.0, 57 },
 					["sourceQuest"] = 26757,	-- The Bounty of Teldrassil
 					["races"] = { 4 },	-- Night Elf
@@ -65,26 +65,26 @@ _.Zones =
 					},
 				}),
 				q(476, {	-- Gnarlpine Corruption
-					["qg"] = 2107,	-- Gaerolas Talvethren
+					["provider"] = { "n", 2107 },	-- Gaerolas Talvethren
 					["coord"] = { 64.5, 51.1, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 475,	-- A Troubling Breeze
 				}),
 				q(14039, {	-- Home of the Kaldorei
-					["qg"] = 3515,	-- Corithras Moonrage
+					["provider"] = { "n", 3515 },	-- Corithras Moonrage
 					["coord"] = { 41.0, 45.5, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 935,	-- The Waters of Teldrassil
 				}),
 				q(32416, {	-- Jaina's Resolution
-					["qg"] = 68651,	-- Lady Jaina Proudmoore
+					["provider"] = { "n", 68651 },	-- Lady Jaina Proudmoore
 					["coord"] = { 40.0, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 32460,	-- Tracking the Thieves
 					["level"] = 81,
 				}),
 				q(938,   {	-- Mist
-					["qg"] = 3568,	-- Mist
+					["provider"] = { "n", 3568 },	-- Mist
 					["coord"] = { 34.5, 27.8 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "If someone else has started this escort quest, you'll need to wait for them to finish before the questgiver reappears.",
@@ -107,19 +107,19 @@ _.Zones =
 					},
 				}),
 				q(923,   {	-- Mossy Tumors
-					["qg"] = 3517,	-- Rellian Greenspyre
+					["provider"] = { "n", 3517 },	-- Rellian Greenspyre
 					["coord"] = { 43.9, 44.1, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 922,	-- Rellian Greenspyre
 				}),
 				q(13946, {	-- Nature's Reprisal
-					["qg"] = 2083,	-- Syral Bladeleaf
+					["provider"] = { "n", 2083 },	-- Syral Bladeleaf
 					["coord"] = { 55.7, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 489,	-- Seek Redemption!
 				}),
 				q(2499,  {	-- Oakenscowl
-					["qg"] = 2080,	-- Denalan
+					["provider"] = { "n", 2080 },	-- Denalan
 					["coord"] = { 43.9, 44.2, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 923,	-- Mossy Tumors
@@ -129,7 +129,7 @@ _.Zones =
 					},
 				}),
 				q(941,   {	-- Planting the Heart
-					["qg"] = 2080,	-- Denalan
+					["provider"] = { "n", 2080 },	-- Denalan
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 927,	-- The Moss-twined Heart
 					["coords"] = {
@@ -138,7 +138,7 @@ _.Zones =
 					},
 				}),
 				q(922,   {	-- Rellian Greenspyre
-					["qg"] = 2080,	-- Denalan
+					["provider"] = { "n", 2080 },	-- Denalan
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 918,	-- Timberling Seeds
 					["coords"] = {
@@ -147,18 +147,18 @@ _.Zones =
 					},
 				}),
 				q(6344,  {	-- Reminders of Home
-					["qg"] = 4265,	-- Nyoma
+					["provider"] = { "n", 4265 },	-- Nyoma
 					["coord"] = { 56.7, 53.5, 57 },
 					["races"] = { 4 },	-- Night Elf
 				}),
 				q(13945, {	-- Resident Danger
-					["qg"] = 2081,	-- Sentinel Kyra Starsong
+					["provider"] = { "n", 2081 },	-- Sentinel Kyra Starsong
 					["coord"] = { 55.6, 51.9, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 476,	-- Gnarlpine Corruption
 				}),
 				q(489,   {	-- Seek Redemption!
-					["qg"] = 2083,	-- Syral Bladeleaf
+					["provider"] = { "n", 2083 },	-- Syral Bladeleaf
 					["coord"] = { 55.7, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 488,	-- Zenn's Bidding
@@ -197,31 +197,31 @@ _.Zones =
 					},
 				}),
 				q(2518,  {	-- Tears of the Moon
-					["qg"] = 7313,	-- Priestess A'moora
+					["provider"] = { "n", 7313 },	-- Priestess A'moora
 					["coord"] = { 39.1, 29.9, 57 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7383,  {	-- Teldrassil: The Burden of the Kaldorei
-					["qg"] = 3515,	-- Corithras Moonrage
+					["provider"] = { "n", 3515 },	-- Corithras Moonrage
 					["coord"] = { 55.8, 53.9, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 918,	-- Timberling Seeds
 				}),
 				q(933,   {	-- Teldrassil: The Coming Dawn
-					["qg"] = 3515,	-- Corithras Moonrage
+					["provider"] = { "n", 3515 },	-- Corithras Moonrage
 					["coord"] = { 40.9, 45.5, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 7383,	-- Teldrassil: The Burden of the Kaldorei
 				}),
 				q(929,   {	-- Teldrassil: The Refusal of the Aspects
-					["qg"] = 3515,	-- Corithras Moonrage
+					["provider"] = { "n", 3515 },	-- Corithras Moonrage
 					["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 					["sourceQuest"] = 28731,	-- Teldrassil: Passing Awareness
 					["coord"] = { 41.4, 45.8, 57 },
 					["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
 				}),
 				q(26757, {	-- The Bounty of Teldrassil
-					["qg"] = 10118,	-- Nessa Shadowsong
+					["provider"] = { "n", 10118 },	-- Nessa Shadowsong
 					["coord"] = { 56.2, 92.4, 57 },
 					["sourceQuest"] = 26756,	-- Nessa Shadowsong
 					["races"] = { 4 },	-- Night Elf
@@ -229,18 +229,18 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(32327, {	-- The Darnassus Mission
-					["qg"] = 68077,	-- Fanlyr Silverthorn
+					["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
 					["coord"] = { 40.0, 50.4, 57 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32326,	-- Insertion
 				}),
 				q(2438,  {	-- The Emerald Dreamcatcher
-					["qg"] = 3567,	-- Tallonkai Swiftroot
+					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
 					["coord"] = { 55.5, 49.9, 57 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(937,   {	-- The Enchanted Glade
-					["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
+					["provider"] = { "n", 3519 },	-- Sentinel Arynia Cloudsbreak
 					["coord"] = { 39.5, 29.8, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -250,12 +250,12 @@ _.Zones =
 					},
 				}),
 				q(28517, {	-- The Howling Oak
-					["qg"] = 42968,	-- Krennan Aranas
+					["provider"] = { "n", 42968 },	-- Krennan Aranas
 					["coord"] = { 55.2, 89.2, 57 },
 					["races"] = { 22 },	-- Worgen
 				}),
 				q(483,   {	-- The Relics of Wakening
-					["qg"] = 2078,	-- Athridas Bearmantle
+					["provider"] = { "n", 2078 },	-- Athridas Bearmantle
 					["coord"] = { 55.6, 52.0, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 476,	-- Gnarlpine Corruption
@@ -264,19 +264,19 @@ _.Zones =
 					},
 				}),
 				q(487,   {	-- The Road to Darnassus
-					["qg"] = 2151,	-- Moon Priestess Amara
+					["provider"] = { "n", 2151 },	-- Moon Priestess Amara
 					["coord"] = { 49.3, 44.6, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 483,	-- The Relics of Wakening
 				}),
 				q(2541,  {	-- The Sleeping Druid?
-					["qg"] = 7317,	-- Oben Rageclaw
+					["provider"] = { "n", 7317 },	-- Oben Rageclaw
 					["coord"] = { 41.1, 83.7, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 476,	-- Gnarlpine Corruption
 				}),
 				q(14005, {	-- The Vengeance of Elune
-					["qg"] = 1992,	-- Tarindrella
+					["provider"] = { "n", 1992 },	-- Tarindrella
 					["coord"] = { 42.5, 58.1, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 933,	-- Teldrassil: The Coming Dawn
@@ -290,7 +290,7 @@ _.Zones =
 					},
 				}),
 				q(935,   {	-- The Waters of Teldrassil
-					["qg"] = 1992,	-- Tarindrella
+					["provider"] = { "n", 1992 },	-- Tarindrella
 					["coord"] = { 42.5, 58.1, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14005,	-- The Vengeance of Elune
@@ -304,31 +304,31 @@ _.Zones =
 					},
 				}),
 				q(918,   {	-- Timberling Seeds
-					["qg"] = 2080,	-- Denalan
+					["provider"] = { "n", 2080 },	-- Denalan
 					["coord"] = { 59.9, 59.7, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 997,	-- Denalan's Earth
 				}),
 				q(919,   {	-- Timberling Sprouts
-					["qg"] = 2080,	-- Denalan
+					["provider"] = { "n", 2080 },	-- Denalan
 					["coord"] = { 59.9, 59.7, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 997,	-- Denalan's Earth
 				}),
 				q(6341,  {	-- To Darnassus
-					["qg"] = 40553,	-- Fidelio
+					["provider"] = { "n", 40553 },	-- Fidelio
 					["coord"] = { 55.4, 50.4, 57 },
 					["races"] = { 4 },	-- Night Elf
 					["sourceQuest"] = 6344,	-- Reminders of Home
 				}),
 				q(932,   {	-- Twisted Hatred
-					["qg"] = 3567,	-- Tallonkai Swiftroot
+					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
 					["coord"] = { 55.5, 50.0, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 489,	-- Seek Redemption!
 				}),
 				q(486,   {	-- Ursal the Mauler
-					["qg"] = 2078,	-- Athridas Bearmantle
+					["provider"] = { "n", 2078 },	-- Athridas Bearmantle
 					["coord"] = { 55.6, 51.9, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 483,	-- The Relics of Wakening
@@ -338,13 +338,13 @@ _.Zones =
 					},
 				}),
 				q(32328, {	-- Victorious Return
-					["qg"] = 68077,	-- Fanlyr Silverthorn
+					["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
 					["coord"] = { 40.0, 50.4, 57 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32327,	-- The Darnassus Mission
 				}),
 				q(488,   {	-- Zenn's Bidding
-					["qg"] = 2150,	-- Zenn Foulhoof
+					["provider"] = { "n", 2150 },	-- Zenn Foulhoof
 					["coord"] = { 59.5, 49.2, 57 },
 					["races"] = ALLIANCE_ONLY,
 				}),

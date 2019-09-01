@@ -12,7 +12,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["g"] = {
 			n(-17, {	-- Quests
 				q(30097, {	-- Archival Purposes
-					["qg"] = 57864,	-- Alurmi
+					["provider"] = { "n", 57864 },	-- Alurmi
 					["g"] = {
 						i(72871),	-- Crescent Wand
 						i(72852),	-- Archivist's Gloves
@@ -21,7 +21,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 				q(30096, {	-- Murozond
 					["sourceQuests"] = { 30095 },	-- The End Time
-					["qg"] = 54751,	-- Nozdormu
+					["provider"] = { "n", 54751 },	-- Nozdormu
 					["g"] = {
 						i(72873),	-- Bronze Blaster
 						i(76152),	-- Cowl of Destiny
@@ -30,7 +30,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 				q(30098, {	-- The Well of Eternity
-					["qg"] = 54751,	-- Nozdormu
+					["provider"] = { "n", 54751 },	-- Nozdormu
 					["sourceQuests"] = { 30096 },	-- Murozond
 				}),
 			}),

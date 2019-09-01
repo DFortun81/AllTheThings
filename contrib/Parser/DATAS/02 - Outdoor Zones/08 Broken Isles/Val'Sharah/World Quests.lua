@@ -1335,7 +1335,7 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
-					["qg"] = 106901,	-- Sylvia Hartshorn <Dreamweaver Emissary>
+					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 773,	-- Inscription
@@ -1464,7 +1464,7 @@ _.Zones =
 					["requireSkill"] = 333,	-- Enchanting
 					["lvl"] = 110,
 					["collectible"] = false,
-					["qg"] = 106901,	-- Sylvia Hartshorn
+					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
 					["groups"] = {
 						i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
 					},

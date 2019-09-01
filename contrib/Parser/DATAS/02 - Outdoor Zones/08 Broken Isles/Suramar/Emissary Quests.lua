@@ -8,9 +8,9 @@ _.Zones =
 			n(-169, { 	-- Emissary Quests
 				q(42421, {	-- The Nightfallen
 					["repeatable"] = true,
-					["qgs"] = {
-						97140,	-- Thalyssra
-						115736,	-- First Arcanist Thalyssra
+					["providers"] = {
+						{ "n", 97140 },	-- Thalyssra
+						{ "n", 115736 },	-- First Arcanist Thalyssra
 					},
 					["g"] = {
 						i(157826, {	-- Nightfallen Hoard
@@ -56,9 +56,9 @@ _.Zones =
 				n(-206, {	-- Paragon
 					q(46748, {	-- Supplies From the Nightfallen
 						["repeatable"] = true,
-						["qgs"] = {
-							97140,	-- Thalyssra
-							115736,	-- First Arcanist Thalyssra
+						["providers"] = {
+							{ "n", 97140 },	-- Thalyssra
+							{ "n", 115736 },	-- First Arcanist Thalyssra
 						},
 						["g"] = {
 							i(152105, {	-- Nightfallen Cache

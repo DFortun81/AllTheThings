@@ -27,7 +27,7 @@ _.Zones =
 					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
 					["coord"] = { 23.3, 75.0, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1092,	-- Captain Rugelfuss
+					["provider"] = { "n", 1092 },	-- Captain Rugelfuss
 					["g"] = {
 						i(58989),	-- Belt of the Valley of Kings
 						i(58990),	-- Rugelfuss Bracers
@@ -67,10 +67,10 @@ _.Zones =
 					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
 					["coord"] = { 34.7, 49.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44345,	-- Cannary Caskshot
+					["provider"] = { "n", 44345 },	-- Cannary Caskshot
 				}),
 				q(454,   {	-- After the Ambush
-					["qg"] = 2057,	-- Huldar
+					["provider"] = { "n", 2057 },	-- Huldar
 					["coord"] = { 52.2, 69.4, 48 },
 					["sourceQuest"] = 273,	-- Resupplying the Excavation (Legacy)
 					["races"] = ALLIANCE_ONLY,
@@ -81,37 +81,37 @@ _.Zones =
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
 					["coord"] = { 25.5, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44200,	-- Scout Dorli
+					["provider"] = { "n", 44200 },	-- Scout Dorli
 				}),
 				q(27115, {	-- Ando's Call
 					["sourceQuests"] = { 27078 },	-- Gor'kresh
 					["coord"] = { 64.1, 26.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1073,	-- Ashlan Stonesmirk
+					["provider"] = { "n", 1073 },	-- Ashlan Stonesmirk
 				}),
 				q(26843, {	-- A Tiny, Clever Commander
 					["sourceQuests"] = { 13636 },	-- Stormpike's Orders
 					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1343,	-- Mountaineer Stormpike
+					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
 				q(26868, {	-- Axis of Awful
 					["sourceQuests"] = { 26928 },	-- Smells Like a Plan
 					["coord"] = { 34.7, 49.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44345,	-- Cannary Caskshot
+					["provider"] = { "n", 44345 },	-- Cannary Caskshot
 				}),
 				q(1655,  {	-- Bailor's Ore Shipment
 					["classes"] = { 2 },	-- Paladin
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 6241,	--
+					["provider"] = { "n", 6241 },	--
 					["u"] = 40,	-- Legacy Quests
 				}),
 				q(26147, {	-- Bigger and Uglier
 					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
 					["coord"] = { 23.4, 74.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1090,	-- Mountaineer Wallbang
+					["provider"] = { "n", 1090 },	-- Mountaineer Wallbang
 					["g"] = {
 						i(58995),	-- Bonesnapper Bracers
 						i(131491),	-- Bonesnapper Cuffs
@@ -133,25 +133,25 @@ _.Zones =
 					["sourceQuests"] = { 27031 },	-- Wing Nut
 					["coord"] = { 81.6, 64.7, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 6577,	-- Bingles Blastenheimer
+					["provider"] = { "n", 6577 },	-- Bingles Blastenheimer
 				}),
 				q(26932, {	-- Buzz Off
 					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
 					["coord"] = { 35.0, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1340,	-- Mountaineer Kadrell
+					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
 				}),
 				q(26137, {	-- Checking on the Boys
 					["isBreadcrumb"] = true,
 					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1343,	-- Mountaineer Stormpike
+					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
 				q(27077, {	-- Clutching at Chaos
 					["sourceQuests"] = { 27074 },	-- Fight the Hammer
 					["coord"] = { 64.1, 26.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1073,	-- Ashlan Stonesmirk
+					["provider"] = { "n", 1073 },	-- Ashlan Stonesmirk
 				}),
 				q(385,   {	-- Crocolisk Hunting
 					["races"] = ALLIANCE_ONLY,
@@ -166,13 +166,13 @@ _.Zones =
 					["sourceQuests"] = { 27025 },	-- Thistle While You Work
 					["coord"] = { 82.7, 63.4, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44859,	-- Safety Warden Pipsy
+					["provider"] = { "n", 44859 },	-- Safety Warden Pipsy
 				}),
 				q(13652, {	-- Defense of the Stonewrought Dam
 					["u"] = 40,	-- Legacy Quests
 				}),
 				q(298,   {	-- Excavation Progress Report
-					["qg"] = 1344,	-- Prospector Ironband
+					["provider"] = { "n", 1344 },	-- Prospector Ironband
 					["coord"] = { 65.9, 65.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,
@@ -217,13 +217,13 @@ _.Zones =
 					["sourceQuests"] = { 27035 },	-- Standing Up
 					["coord"] = { 58.5, 29.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44870,	-- Ando Blastenheimer
+					["provider"] = { "n", 44870 },	-- Ando Blastenheimer
 				}),
 				q(26863, {	-- Filthy Paws
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
 					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1343,	-- Mountaineer Stormpike
+					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 					["g"] = {
 						i(58978),	-- Filthy Paw
 						i(58980),	-- Ironheart Chain Cloak
@@ -242,12 +242,12 @@ _.Zones =
 				q(27030, {	-- Foxtails By The Handful
 					["coord"] = { 81.7, 61.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1154,	-- Marek Ironheart
+					["provider"] = { "n", 1154 },	-- Marek Ironheart
 				}),
 				q(26961, {	-- Gathering Idols
 					["coord"] = { 64.8, 66.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1345,	-- Magmar Felhew
+					["provider"] = { "n", 1345 },	-- Magmar Felhew
 					["g"] = {
 						i(58997),	-- Carved Stone Mace
 						i(58999),	-- Thelsamar Breastplate
@@ -271,7 +271,7 @@ _.Zones =
 					},
 					["coord"] = { 64.1, 26.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1073,	-- Ashlan Stonesmirk
+					["provider"] = { "n", 1073 },	-- Ashlan Stonesmirk
 				}),
 				q(13661, {	-- Heartfelt Appreciation
 					["sourceQuests"] = {
@@ -284,7 +284,7 @@ _.Zones =
 					},
 					["coord"] = { 37.1, 47.8, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1153,	-- Torren Squarejaw
+					["provider"] = { "n", 1153 },	-- Torren Squarejaw
 					["g"] = {
 						i(58993),	-- Old Dwarven Hammer
 						i(58991),	-- Star Shooter
@@ -297,17 +297,17 @@ _.Zones =
 					["sourceQuests"] = { 27033 },	-- Skystrider's Heart
 					["coord"] = { 81.6, 64.7, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 6577,	-- Bingles Blastenheimer
+					["provider"] = { "n", 6577 },	-- Bingles Blastenheimer
 				}),
 				q(27028, {	-- Hornet Hunting
 					["coord"] = { 81.7, 61.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1154,	-- Marek Ironheart
+					["provider"] = { "n", 1154 },	-- Marek Ironheart
 				}),
 				q(26146, {	-- In Defense of the King's Lands
 					["coord"] = { 23.3, 75.0, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1092,	-- Captain Rugelfuss
+					["provider"] = { "n", 1092 },	-- Captain Rugelfuss
 					["g"] = {
 						i(131490),	-- Greaves of Uncanny Courage
 						i(58985),	-- Leggings of Uncanny Courage
@@ -331,43 +331,43 @@ _.Zones =
 					},
 					["coord"] = { 64.9, 66.5, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1345,	-- Magmar Felhew
+					["provider"] = { "n", 1345 },	-- Magmar Felhew
 				}),
 				q(13650, {	-- Keep Your Hands Off The Goods!
 					["sourceQuests"] = { 309 },	-- Protecting the Shipment
 					["coord"] = { 65.2, 66.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1344,	-- Prospector Ironband
+					["provider"] = { "n", 1344 },	-- Prospector Ironband
 				}),
 				q(26844, {	-- Kobold and Kobolder
 					["sourceQuests"] = { 26843 },	-- A Tiny, Clever Commander
 					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1343,	-- Mountaineer Stormpike
+					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
 				q(25118, {	-- Looking for Lurkers
 					["coord"] = { 36, 44.2, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1777,	-- Dakk Blunderblast
+					["provider"] = { "n", 1777 },	-- Dakk Blunderblast
 				}),
 				q(26176, {	-- Onward to Thelsamar
 					["sourceQuests"] = { 26148 },	-- A Decisive Strike
 					["isBreadcrumb"] = true,
 					["coord"] = { 23.4, 74.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1092,	-- Captain Rugelfuss
+					["provider"] = { "n", 1092 },	-- Captain Rugelfuss
 				}),
 				q(26842, {	-- Out of Gnoll-where
 					["sourceQuests"] = { 26176 },	-- Onward to Thelsamar
 					["coord"] = { 35.0, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1340,	-- Mountaineer Kadrell
+					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
 				}),
 				q(309,   { 	-- Protecting the Shipment
 					["sourceQuests"] = { 13639 },	-- Resupplying the Excavation
 					["coord"] = { 56.4, 65.8, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2057,	-- Huldar
+					["provider"] = { "n", 2057 },	-- Huldar
 					["g"] = {
 						un(34, i(3217)),	-- Foreman Belt
 						un(34, i(6188)),	-- Mud Stompers
@@ -388,20 +388,20 @@ _.Zones =
 					},
 				}),
 				q(301,   {	-- Report to Ironforge
-					["qg"] = 1105,	-- Jern Hornhelm
+					["provider"] = { "n", 1105 },	-- Jern Hornhelm
 					["coord"] = { 37.2, 47.4, 48 },
 					["sourceQuest"] = 298,	-- Excavation Progress Report
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,
 				}),
 				q(13639, {	-- Resupplying the Excavation
-					["qg"] = 1105,	-- Jern Hornhelm
+					["provider"] = { "n", 1105 },	-- Jern Hornhelm
 					["coord"] = { 37.2, 47.4, 48 },
 					["sourceQuest"] = 26868,	-- Axis of Awful
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(273,   {	-- Resupplying the Excavation (Legacy)
-					["qg"] = 1105,	-- Jern Hornhelm
+					["provider"] = { "n", 1105 },	-- Jern Hornhelm
 					["coord"] = { 37.2, 47.4, 48 },
 					["sourceQuest"] = 302,	-- Powder to Ironband
 					["races"] = ALLIANCE_ONLY,
@@ -421,32 +421,32 @@ _.Zones =
 					["sourceQuests"] = { 27074 },	-- Fight the Hammer
 					["coord"] = { 64.1, 26.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1073,	-- Ashlan Stonesmirk
+					["provider"] = { "n", 1073 },	-- Ashlan Stonesmirk
 				}),
 				q(27033, {	-- Skystrider's Heart
 					["sourceQuests"] = { 27032 },	-- Bird is the Word
 					["coord"] = { 78.5, 76.2, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44618,	-- Rusted Skystrider
+					["provider"] = { "n", 44618 },	-- Rusted Skystrider
 				}),
 				q(13635, {	-- South Gate Status Report
 					["sourceQuests"] = { 26855 },	-- A Pilot's Revenge
 					["isBreadcrumb"] = true,
 					["coord"] = { 14.0, 56.4, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1960,	-- Pilot Hammerfoot
+					["provider"] = { "n", 1960 },	-- Pilot Hammerfoot
 				}),
 				q(26928, {	-- Smells Like A Plan
 					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
 					["coord"] = { 34.7, 49.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44345,	-- Cannary Caskshot
+					["provider"] = { "n", 44345 },	-- Cannary Caskshot
 				}),
 				q(27035, {	-- Standing Up
 					["sourceQuests"] = { 27034 },	-- He's That Age
 					["coord"] = { 58.5, 29.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44870,	-- Ando Blastenheimer
+					["provider"] = { "n", 44870 },	-- Ando Blastenheimer
 				}),
 				q(1338,  {	-- Stormpike's Order
 					["races"] = ALLIANCE_ONLY,
@@ -455,19 +455,19 @@ _.Zones =
 				q(13636, {	-- Stormpike's Orders
 					["coord"] = { 35.0, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1340,	-- Mountaineer Kadrell
+					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
 				}),
 				q(26927, {	-- Suddenly, Murlocs!
 					["sourceQuests"] = { 26864 },	-- The Bearer of Gnoll-edge
 					["coord"] = { 35.0, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1340,	-- Mountaineer Kadrell
+					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
 				}),
 				q(26864, {	-- The Bearer of Gnoll-edge
 					["sourceQuests"] = { 26845 },	-- Who's in Charge Here?
 					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1343,	-- Mountaineer Stormpike
+					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
 				q(13638, {	-- The Captured Mountaineer
 					["races"] = ALLIANCE_ONLY,
@@ -476,7 +476,7 @@ _.Zones =
 				q(27016, {	-- The Joy of Boar Hunting
 					["coord"] = { 83.4, 65.4, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1187,	-- Daryl the Youngling
+					["provider"] = { "n", 1187 },	-- Daryl the Youngling
 				}),
 				q(26854, {	-- The Lost Pilot
 					["sourceQuests"] = {
@@ -485,7 +485,7 @@ _.Zones =
 					},
 					["coord"] = { 14.0, 56.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1960,	-- Pilot Hammerfoot
+					["provider"] = { "n", 1960 },	-- Pilot Hammerfoot
 					["g"] = {
 						i(58970),	-- Mori's Cloak
 						i(58971),	-- Mori's Compass
@@ -496,7 +496,7 @@ _.Zones =
 				q(418,   {	-- Thelsamar Blood Sausages
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1963,	-- Vidra Hearthstove
+					["provider"] = { "n", 1963 },	-- Vidra Hearthstove
 					["g"] = {
 						i(3679),	-- Recipe: Blood Sausage
 					},
@@ -504,7 +504,7 @@ _.Zones =
 				q(26860, {	-- Thelsamar Blood Sausages
 					["coord"] = { 34.8, 49.2, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1963,	-- Vidra Hearthstove
+					["provider"] = { "n", 1963 },	-- Vidra Hearthstove
 					["g"] = {
 						i(3679),	-- Recipe: Blood Sausage
 					},
@@ -513,33 +513,33 @@ _.Zones =
 					["sourceQuests"] = { 13635 },	-- South Gate Status Report
 					["coord"] = { 23.3, 74.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1089,	-- Mountaineer Cobbleflint
+					["provider"] = { "n", 1089 },	-- Mountaineer Cobbleflint
 				}),
 				q(27116, {	-- The Winds of Loch Modan
 					["sourceQuests"] = { 27115 },	-- Ando's Call
 					["coord"] = { 58.5, 29.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44870,	-- Ando Blastenheimer
+					["provider"] = { "n", 44870 },	-- Ando Blastenheimer
 				}),
 				q(27025, {	-- Thistle While You Work
 					["coord"] = { 82.7, 63.4, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44859,	-- Safety Warden Pipsy
+					["provider"] = { "n", 44859 },	-- Safety Warden Pipsy
 				}),
 				q(271,   {	-- Vyrin's Revenge (#1)
 					["u"] = 40,
-					["qg"] = 1156,	-- Vyrin Swiftwind
+					["provider"] = { "n", 1156 },	-- Vyrin Swiftwind
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27036, {	-- Vyrin's Revenge (#1)
 					["sourceQuests"] = { 27016 },	-- The Joy of Boar Hunting
 					["coord"] = { 81.9, 64.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1156,	-- Vyrin Swiftwind
+					["provider"] = { "n", 1156 },	-- Vyrin Swiftwind
 				}),
 				q(271,   {	-- Vyrin's Revenge (#2)
 					["u"] = 40,
-					["qg"] = 1187,	-- Daryl the Youngling
+					["provider"] = { "n", 1187 },	-- Daryl the Youngling
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 271,	-- Vyrin's Revenge (#1)
 				}),
@@ -547,7 +547,7 @@ _.Zones =
 					["sourceQuests"] = { 27036 },	-- Vyrin's Revenge (#1)
 					["coord"] = { 83.4, 65.4, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1187,	-- Daryl the Youngling
+					["provider"] = { "n", 1187 },	-- Daryl the Youngling
 					["g"] = {
 						i(59010),	-- Swiftwind Blade
 						i(59008),	-- Unsanitary Gloves
@@ -576,12 +576,12 @@ _.Zones =
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
 					["coord"] = { 25.4, 17.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1343,	-- Mountaineer Stormpike
+					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
 				q(27031, {	-- Wing Nut
 					["coord"] = { 81.6, 64.7, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 6577,	-- Bingles Blastenheimer
+					["provider"] = { "n", 6577 },	-- Bingles Blastenheimer
 				}),
 			}),
 		}),

@@ -7,7 +7,7 @@ _.Zones =
 		m(14, {	-- Arathi Highlands
 			n(-17, {	-- Quests
 				q(26081, {	-- Alina's Reward
-					["qg"] = 41944,	-- Galen Trollbane
+					["provider"] = { "n", 41944 },	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26033,	-- Trol'kalar
@@ -21,7 +21,7 @@ _.Zones =
 					},
 				}),
 				q(26038, {	-- Attack on the Tower
-					["qg"] = 41983,	-- Apprentice Kryten
+					["provider"] = { "n", 41983 },	-- Apprentice Kryten
 					["coord"] = { 13.0, 69.2, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26037,	-- Trelane's Defenses
@@ -49,7 +49,7 @@ _.Zones =
 					},
 				}),
 				q(26027, {	-- Call to Arms
-					["qg"] = 41966,	-- Deathstalker Maudria
+					["provider"] = { "n", 41966 },	-- Deathstalker Maudria
 					["coord"] = { 13.3, 33.9, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26053,	-- Clearing the Highlands
@@ -63,28 +63,28 @@ _.Zones =
 					},
 				}),
 				q(26053, {	-- Clearing the Highlands
-					["qg"] = 41966,	-- Deathstalker Maudria
+					["provider"] = { "n", 41966 },	-- Deathstalker Maudria
 					["coord"] = { 13.3, 34.3, 14 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(8115,  {	-- Control Five Bases (pvp)
 					["u"] = 40,
-					["qg"] = 14983,	-- Field Marshal Oslight
+					["provider"] = { "n", 14983 },	-- Field Marshal Oslight
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8114,  {	-- Control Four Bases (pvp)
 					["u"] = 40,
-					["qg"] = 14983,	-- Field Marshal Oslight
+					["provider"] = { "n", 14983 },	-- Field Marshal Oslight
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26429, {	-- Crush the Witherbark
-					["qg"] = 2771,	-- Drum Fel
+					["provider"] = { "n", 2771 },	-- Drum Fel
 					["coord"] = { 69.0, 34.8, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
 				}),
 				q(42535, {	-- Death... and Decay
-					["qg"] = 107806,	-- Prince Galen Trollbane
+					["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
 					["lvl"] = 100,
 					["classes"] = { 6 },	-- Death Knight
 				}),
@@ -96,7 +96,7 @@ _.Zones =
 					},
 				}),
 				q(26628, {	-- Death From Below
-					["qg"] = 2610,	-- Shakes O'Breen
+					["provider"] = { "n", 2610 },	-- Shakes O'Breen
 					["coord"] = { 25.9, 83.8, 14 },
 					["sourceQuest"] = 26052,	-- Speak to Shakes
 					["g"] = {
@@ -121,7 +121,7 @@ _.Zones =
 					},
 				}),
 				q(26055, {	-- Drowned Sorrows
-					["qg"] = 2769,	-- Captain Steelgut
+					["provider"] = { "n", 2769 },	-- Captain Steelgut
 					["coord"] = { 27.7, 83.2, 14 },
 					["g"] = {
 						i(59205),	-- Folly's Spar
@@ -131,13 +131,13 @@ _.Zones =
 					},
 				}),
 				q(26022, {	-- First Blood
-					["qg"] = 41949,	-- Dark Ranger Alina
+					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28619 },	-- Warchief's Command: Arathi Highlands!
 				}),
 				q(26117, {	-- For Southshore
-					["qg"] = 2712,	-- Quae
+					["provider"] = { "n", 2712 },	-- Quae
 					["coord"] = { 54.8, 55.3, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26116,	-- Kinelory Strikes
@@ -157,11 +157,11 @@ _.Zones =
 					},
 				}),
 				q(26050, {	-- Goggle Boggle
-					["qg"] = 2768,	-- Professor Phizzlethorpe
+					["provider"] = { "n", 2768 },	-- Professor Phizzlethorpe
 					["coord"] = { 27.5, 83.0, 14 },
 				}),
 				q(26108, {	-- Guile of the Raptor
-					["qg"] = 42130,	-- Gor'mul
+					["provider"] = { "n", 42130 },	-- Gor'mul
 					["coord"] = { 67.7, 34.7, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26107,	-- Raising Spirits
@@ -174,13 +174,13 @@ _.Zones =
 					},
 				}),
 				q(26084, {	-- Hammerfall
-					["qg"] = 41949,	-- Dark Ranger Alina
+					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26081,	-- Alina's Reward
 				}),
 				q(26083, {	-- Hello Lolo
-					["qg"] = 42088,	-- Goutgut
+					["provider"] = { "n", 42088 },	-- Goutgut
 					["coord"] = { 12.8, 34.0, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26081,	-- Alina's Reward
@@ -194,20 +194,20 @@ _.Zones =
 					},
 				}),
 				q(26943, {	-- Home Sweet Gnome
-					["qg"] = 2789,	-- Skuerto
+					["provider"] = { "n", 2789 },	-- Skuerto
 					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
 					["isBreadcrumb"] = true,
 				}),
 				q(26110, {	-- Just Like Old Times
-					["qg"] = 2712,	-- Quae
+					["provider"] = { "n", 2712 },	-- Quae
 					["coord"] = { 54.8, 55.3, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26113,	-- Quae and Kinelory
 				}),
 				q(26116, {	-- Kinelory Strikes
-					["qg"] = 2713,	-- Kinelory
+					["provider"] = { "n", 2713 },	-- Kinelory
 					["coord"] = { 54.8, 55.4, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26114,	-- Quae Trusts You
@@ -235,7 +235,7 @@ _.Zones =
 					["sourceQuest"] = 26042,	-- Breaking the Keystone
 				}),
 				q(26093, {	-- Northfold Manor
-					["qg"] = 2700,	-- Captain Nials
+					["provider"] = { "n", 2700 },	-- Captain Nials
 					["coord"] = { 39.9, 48.8, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -244,63 +244,63 @@ _.Zones =
 					},
 				}),
 				q(42534, {	-- Our Oldest Enemies
-					["qg"] = 107806,	-- Prince Galen Trollbane
+					["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
 					["lvl"] = 100,
 					["classes"] = { 6 },	-- Death Knight
 				}),
 				q(26113, {	-- Quae and Kinelory
-					["qg"] = 2608,	-- Commander Amaren
+					["provider"] = { "n", 2608 },	-- Commander Amaren
 					["coord"] = { 39.6, 47.9, 14 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26114, {	-- Quae Trusts You
-					["qg"] = 2712,	-- Quae
+					["provider"] = { "n", 2712 },	-- Quae
 					["coord"] = { 54.8, 55.3, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26110,	-- Just Like Old Times
 				}),
 				q(26107, {	-- Raising Spirits
-					["qg"] = 42130,	-- Gor'mul
+					["provider"] = { "n", 42130 },	-- Gor'mul
 					["coord"] = { 67.7, 34.7, 14 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(42536, {	-- Regicide
-					["qg"] = 108042,	-- Thassarian
+					["provider"] = { "n", 108042 },	-- Thassarian
 					["lvl"] = 100,
 					["classes"] = { 6 },	-- Death Knight
 				}),
 				q(26430, {	-- Revantusk Village
-					["qg"] = 2771,	-- Drum Fel
+					["provider"] = { "n", 2771 },	-- Drum Fel
 					["coord"] = { 69.0, 34.8, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
 					["isBreadcrumb"] = true,
 				}),
 				q(26336, {	-- Shakes O'Breen
-					["qg"] = 2789,	-- Skuerto
+					["provider"] = { "n", 2789 },	-- Skuerto
 					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26032, {	-- Sigil of Arathor
-					["qg"] = 41944,	-- Galen Trollbane
+					["provider"] = { "n", 41944 },	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26031,	-- Sigil of Thoradin
 				}),
 				q(26030, {	-- Sigil of Strom
-					["qg"] = 41944,	-- Galen Trollbane
+					["provider"] = { "n", 41944 },	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26023,	-- The Forsaken Trollbane
 				}),
 				q(26031, {	-- Sigil of Thoradin
-					["qg"] = 41944,	-- Galen Trollbane
+					["provider"] = { "n", 41944 },	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26030,	-- Sigil of Strom
 				}),
 				q(26052, {	-- Speak to Shakes
-					["qg"] = 2774,	-- Doctor Draxlegauge
+					["provider"] = { "n", 2774 },	-- Doctor Draxlegauge
 					["coord"] = { 27.5, 82.9, 14 },
 					["sourceQuest"] = 26051,	-- Sunken Treasure
 				}),
@@ -318,7 +318,7 @@ _.Zones =
 					},
 				}),
 				q(26095, {	-- Stromgarde Badges
-					["qg"] = 2700,	-- Captain Nials
+					["provider"] = { "n", 2700 },	-- Captain Nials
 					["coord"] = { 39.9, 48.8, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26093,	-- Northfold Manner
@@ -345,7 +345,7 @@ _.Zones =
 					},
 				}),
 				q(26051, {	-- Sunken Treasure
-					["qg"] = 2774,	-- Doctor Draxlegauge
+					["provider"] = { "n", 2774 },	-- Doctor Draxlegauge
 					["coord"] = { 27.5, 82.9, 14 },
 					["sourceQuest"] = 26050,	-- Goggle Boggle
 					["g"] = {
@@ -357,32 +357,32 @@ _.Zones =
 				}),
 				q(8122,  {	-- Take Five Bases (pvp)
 					["u"] = 40,
-					["qg"] = 15021,	-- Deathmaster Dwire
+					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
 				}),
 				q(8121,  {	-- Take Four Bases (pvp)
 					["u"] = 40,
-					["qg"] = 15021,	-- Deathmaster Dwire
+					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
 				}),
 				q(8105,  {	-- The Battle for Arathi Basin! (pvp)
 					["u"] = 40,
-					["qg"] = 14983,	-- Field Marshal Oslight
+					["provider"] = { "n", 14983 },	-- Field Marshal Oslight
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8120,  {	-- The Battle for Arathi Basin! (pvp)
 					["u"] = 40,
-					["qg"] = 15021,	-- Deathmaster Dwire
+					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
 				}),
 				q(26023, {	-- The Forsaken Trollbane
-					["qg"] = 41949,	-- Dark Ranger Alina
+					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26022,	-- First Blood
 				}),
 				q(42537, {	-- The King Rises
-					["qg"] = 108042,	-- Thassarian
+					["provider"] = { "n", 108042 },	-- Thassarian
 					["lvl"] = 100,
 					["classes"] = { 6 },	-- Death Knight
 				}),
@@ -393,7 +393,7 @@ _.Zones =
 					["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
 				}),
 				q(26049, {	-- The Princess Unleashed (A)
-					["qg"] = 2789,	-- Skuerto
+					["provider"] = { "n", 2789 },	-- Skuerto
 					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26346,	-- Myzrael's Tale
@@ -406,7 +406,7 @@ _.Zones =
 					},
 				}),
 				q(26912, {	-- The Princess Unleashed (H)
-					["qg"] = 2787,	-- Zaruk
+					["provider"] = { "n", 2787 },	-- Zaruk
 					["coord"] = { 69.6, 36.5, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26911,	-- Myzrael's Tale
@@ -427,7 +427,7 @@ _.Zones =
 					},
 				}),
 				q(26029, {	-- The Real Threat
-					["qg"] = 41966,	-- Deathstalker Maudria
+					["provider"] = { "n", 41966 },	-- Deathstalker Maudria
 					["coord"] = { 13.3, 33.9, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26027,	-- Call to Arms
@@ -440,19 +440,19 @@ _.Zones =
 					},
 				}),
 				q(26341, {	-- The Stone Shards
-					["qg"] = 2789,	-- Skuerto
+					["provider"] = { "n", 2789 },	-- Skuerto
 					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26909, {	-- The Stone Shards
-					["qg"] = 2787,	-- Zaruk
+					["provider"] = { "n", 2787 },	-- Zaruk
 					["coord"] = { 69.6, 36.5, 14 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26025, {	-- The Traitor Orc
-					["qg"] = 41949,	-- Dark Ranger Alina
+					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26022,	-- First Blood
@@ -464,7 +464,7 @@ _.Zones =
 					},
 				}),
 				q(26428, {	-- To Steal From Thieves
-					["qg"] = 4486,	-- Genavie Callow
+					["provider"] = { "n", 4486 },	-- Genavie Callow
 					["coord"] = { 13.7, 33.9, 14 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -477,13 +477,13 @@ _.Zones =
 					},
 				}),
 				q(26037, {	-- Trelane's Defenses
-					["qg"] = 2789,	-- Skuerto
+					["provider"] = { "n", 2789 },	-- Skuerto
 					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26036,	-- Wand Over Fist
 				}),
 				q(6622,  {	-- Triage
-					["qg"] = 12920,	--	Doctor Gregory Victor
+					["provider"] = { "n", 12920 },	--	Doctor Gregory Victor
 					["coord"] = { 68.4, 37.8, 14 },
 					["sourceQuest"] = 6623,	-- Horde Trauma
 					["description"] = "This quest requires a skill of 225 in First Aid.",
@@ -499,13 +499,13 @@ _.Zones =
 					},
 				}),
 				q(26033, {	-- Trol'kalar
-					["qg"] = 41944,	-- Galen Trollbane
+					["provider"] = { "n", 41944 },	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26032,	-- Sigil of Arathor
 				}),
 				q(26036, {	-- Wand over Fist
-					["qg"] = 2789,	-- Skuerto
+					["provider"] = { "n", 2789 },	-- Skuerto
 					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26035,	-- Worth Its Weight in Gold
@@ -553,7 +553,7 @@ _.Zones =
 					},
 				}),
 				q(26035, {	-- Worth Its Weight in Gold
-					["qg"] = 2789,	-- Skuerto
+					["provider"] = { "n", 2789 },	-- Skuerto
 					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 				}),

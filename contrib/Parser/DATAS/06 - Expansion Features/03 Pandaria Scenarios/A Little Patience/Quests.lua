@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 		m(487, {	-- A Little Patience
 			n(-17, {	-- Quests
 				q(32248, {	-- A Little Patience
-					["qg"] = 67940,	-- Admiral Taylor
+					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["coord"] = { 89.4, 32.6, 418 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 90,

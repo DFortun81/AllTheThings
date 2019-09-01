@@ -9,7 +9,7 @@ _.Zones =
 				a(ach(37, {	-- Fo' Grizzle My Shizzle [Alliance]
 					crit(1, {	-- Ursoc, the Bear God
 						q(12292, {	-- Local Support [Alliance]
-							["qg"] = 26875,	-- Lieutenant Dumont
+							["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 							["sourceQuests"] = {12511,39207},
 							["g"] = {
 								i(38732),	-- Bramble-Proof Leggings
@@ -20,19 +20,19 @@ _.Zones =
 							},
 						}),
 						q(12293, {	--  Close the Deal [Alliance]
-							["qg"] = 26875,	-- Lieutenant Dumont
+							["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 							["sourceQuests"] = {12292},
 						}),
 						q(12294, {	--  A Tentative Pact [Alliance]
-							["qg"] = 27469,	-- Ivan
+							["provider"] = { "n", 27469 },	-- Ivan
 							["sourceQuests"] = {12293},
 						}),
 						q(12295, {	--  An Exercise in Diplomacy [Alliance]
-							["qg"] = 26875,	-- Lieutenant Dumont
+							["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 							["sourceQuests"] = {12294},
 						}),
 						q(12307, {	-- Wolfsbane Root [Alliance]
-							["qg"] = 27545,	-- Katja
+							["provider"] = { "n", 27545 },	-- Katja
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(39062),	-- Herbalist's Pauldrons
@@ -42,7 +42,7 @@ _.Zones =
 							},
 						}),
 						q(12299, {	--  Northern Hospitality [Alliance]
-							["qg"] = 27486,	-- Sergei
+							["provider"] = { "n", 27486 },	-- Sergei
 							["sourceQuests"] = {12295},
 							["g"] = {
 								i(38760),	-- Mendicant's Charm
@@ -51,15 +51,15 @@ _.Zones =
 							},
 						}),
 						q(12300, {	--  Test of Mettle [Alliance]
-							["qg"] = 27486,	-- Sergei
+							["provider"] = { "n", 27486 },	-- Sergei
 							["sourceQuests"] = {12307,12299},
 						}),
 						q(12302, {	--  Words of Warning [Alliance]
-							["qg"] = 27497,	-- Captured Trapper
+							["provider"] = { "n", 27497 },	-- Captured Trapper
 							["sourceQuests"] = {12300},
 						}),
 						q(12308, {	-- Escape from Silverbrook [Alliance]
-							["qg"] = 27499,	-- Caged Prisoner
+							["provider"] = { "n", 27499 },	-- Caged Prisoner
 							["sourceQuests"] = {12302},
 							["g"] = {
 								i(38733),	-- Raiment of the Caged Beast
@@ -70,11 +70,11 @@ _.Zones =
 							},
 						}),
 						q(12310, {	--  A Swift Response [Alliance]
-							["qg"] = 26875,	-- Lieutenant Dumont
+							["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 							["sourceQuests"] = {12308},
 						}),
 						q(12219, {	-- The Failed World Tree [Alliance]
-							["qg"] = 27295,	-- Hierophant Thayreen
+							["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 							["sourceQuests"] = {12310},
 							["g"] = {
 								i(38719),	-- Robe of Expurgation
@@ -84,11 +84,11 @@ _.Zones =
 							},
 						}),
 						q(12220, {	--  A Dark Influence [Alliance]
-							["qg"] = 27295,	-- Hierophant Thayreen
+							["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 							["sourceQuests"] = {12310},
 						}),
 						q(12246, {	-- A Possible Link [Alliance]
-							["qg"] = 27295,	-- Hierophant Thayreen
+							["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 							["sourceQuests"] = {12219,12220},
 							["g"] = {
 								i(38726),	-- Instigator's Gloves
@@ -98,15 +98,15 @@ _.Zones =
 							},
 						}),
 						q(12247, {	--  Children of Ursoc [Alliance]
-							["qg"] = 27295,	-- Hierophant Thayreen
+							["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 							["sourceQuests"] = {12219,12220},
 						}),
 						q(12248, {	--  Vordrassil's Sapling [Alliance]
-							["qg"] = 27295,	-- Hierophant Thayreen
+							["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 							["sourceQuests"] = {12246,12247},
 						}),
 						q(12250, {	-- Vordrassil's Seeds [Alliance]
-							["qg"] = 27295,	-- Hierophant Thayreen
+							["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 							["sourceQuests"] = {12246,12247},
 							["g"] = {
 								i(38753),	-- Hoarder's Necklace
@@ -115,7 +115,7 @@ _.Zones =
 							},
 						}),
 						q(12249, {	-- Ursoc, the Bear God [Alliance]
-							["qg"] = 27295,	-- Hierophant Thayreen
+							["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 							["sourceQuests"] = {12248,12250},
 							["g"] = {
 								i(39176),	-- Kilt of Deific Torment
@@ -129,22 +129,22 @@ _.Zones =
 					}),
 					crit(2, {	--The Iron Thane
 						q(11998, {	--  Softening the Blow [Alliance]
-							["qg"] = 26212,	-- Captain Gryan Stoutmantle
+							["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle
 						}),
 						q(12002, {	--  Brothers in Battle [Alliance]
-							["qg"] = 26226,	-- Brugar Stoneshear
+							["provider"] = { "n", 26226 },	-- Brugar Stoneshear
 							["sourceQuests"] = {11998},
 						}),
 						q(12003, {	--  Uncovering the Tunnels [Alliance]
-							["qg"] = 26226,	-- Brugar Stoneshear
+							["provider"] = { "n", 26226 },	-- Brugar Stoneshear
 							["sourceQuests"] = {12002},
 						}),
 						q(12010, {	--  The Fate of Orlond [Alliance]
-							["qg"] = 26226,	-- Brugar Stoneshear
+							["provider"] = { "n", 26226 },	-- Brugar Stoneshear
 							["sourceQuests"] = {12003},
 						}),
 						q(12014, {	-- Steady as a Rock? [Alliance]
-							["qg"] = 26514,	-- Surveyor Orlond
+							["provider"] = { "n", 26514 },	-- Surveyor Orlond
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12010},
 							["g"] = {
@@ -155,27 +155,27 @@ _.Zones =
 							},
 						}),
 						q(12128, {	--  Check Up on Raegar [Alliance]
-							["qg"] = 26226,	-- Brugar Stoneshear
+							["provider"] = { "n", 26226 },	-- Brugar Stoneshear
 							["sourceQuests"] = {12014},
 						}),
 						q(12129, {	--  The Perfect Plan [Alliance]
-							["qg"] = 26883,	-- Raegar Breakbrow
+							["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 							["sourceQuests"] = {12128},
 						}),
 						q(12130, {	--  Why Fabricate When You Can Appropriate? [Alliance]
-							["qg"] = 26883,	-- Raegar Breakbrow
+							["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 							["sourceQuests"] = {12129},
 						}),
 						q(12131, {	--  We Have the Power [Alliance]
-							["qg"] = 26883,	-- Raegar Breakbrow
+							["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 							["sourceQuests"] = {12130},
 						}),
 						q(12138, {	--  ... Or Maybe We Don't [Alliance]
-							["qg"] = 26883,	-- Raegar Breakbrow
+							["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 							["sourceQuests"] = {12131},
 						}),
 						q(12153, {	-- The Iron Thane and His Anvil [Alliance]
-							["qg"] = 26883,	-- Raegar Breakbrow
+							["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 							["sourceQuests"] = {12138},
 							["g"] = {
 								i(38711),	-- Grounded Gloves
@@ -187,19 +187,19 @@ _.Zones =
 					}),
 					crit(3, {	--Loken's Orders
 						q(12180, {	--  The Captive Prospectors [Alliance]
-							["qg"] = 26885,	-- Mountaineer Kilian
+							["provider"] = { "n", 26885 },	-- Mountaineer Kilian
 							["sourceQuests"] = {12014},
 						}),
 						q(12183, {	--  Looking the Part [Alliance]
-							["qg"] = 26885,	-- Mountaineer Kilian
+							["provider"] = { "n", 26885 },	-- Mountaineer Kilian
 							["sourceQuests"] = {12180},
 						}),
 						q(12184, {	--  Cultivating an Image [Alliance]
-							["qg"] = 26885,	-- Mountaineer Kilian
+							["provider"] = { "n", 26885 },	-- Mountaineer Kilian
 							["sourceQuests"] = {12183},
 						}),
 						q(12185, {	-- Put on Your Best Face for Loken [Alliance]
-							["qg"] = 26885,	-- Mountaineer Kilian
+							["provider"] = { "n", 26885 },	-- Mountaineer Kilian
 							["sourceQuests"] = {12184},
 							["g"] = {
 								i(38713),	-- Spaulders of Foresight
@@ -211,7 +211,7 @@ _.Zones =
 					}),
 					crit(4, {	--Revelation!
 						q(11984, {	-- Filling the Cages
-							["qg"] = 26424,	-- Samir
+							["provider"] = { "n", 26424 },	-- Samir
 							["sourceQuests"] = {12210,12208},
 							["g"] = {
 								i(39116),	-- Grinder of Reverse Emancipation
@@ -223,15 +223,15 @@ _.Zones =
 							},
 						}),
 						q(11989, {	--  Truce?
-							["qg"] = 26423,	-- Drakuru
+							["provider"] = { "n", 26423 },	-- Drakuru
 							["sourceQuests"] = {11984},
 						}),
 						q(11990, {	--  Vial of Visions
-							["qg"] = 26423,	-- Drakuru
+							["provider"] = { "n", 26423 },	-- Drakuru
 							["sourceQuests"] = {11989},
 						}),
 						q(11991, {	-- Subject to Interpretation
-							["qg"] = 26423,	-- Drakuru
+							["provider"] = { "n", 26423 },	-- Drakuru
 							["sourceQuests"] = {11990},
 							["g"] = {
 								i(38716),	-- Ethereal Hood
@@ -241,11 +241,11 @@ _.Zones =
 							},
 						}),
 						q(12007, {	--  Sacrifices Must be Made
-							["qg"] = 26500,	-- Image of Drakuru
+							["provider"] = { "n", 26500 },	-- Image of Drakuru
 							["sourceQuests"] = {11991},
 						}),
 						q(12042, {	--  Heart of the Ancients
-							["qg"] = 26543,	-- Image of Drakuru
+							["provider"] = { "n", 26543 },	-- Image of Drakuru
 							["sourceQuests"] = {12007},
 						}),
 						o(188365, {	-- Heart of the Ancients
@@ -257,7 +257,7 @@ _.Zones =
 							},
 						}),
 						q(12068, {	-- Voices From the Dust
-							["qg"] = 26701,	-- Image of Drakuru
+							["provider"] = { "n", 26701 },	-- Image of Drakuru
 							["sourceQuests"] = {12802},
 							["g"] = {
 								i(38718),	-- Wispy Shoulderpads
@@ -270,11 +270,11 @@ _.Zones =
 					}),
 					crit(5, {	--Hour of the Worg
 						q(12158, {	--  Hollowstone Mine [Alliance]
-							["qg"] = 26212,	-- Captain Gryan Stoutmantle
+							["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle
 							["sourceQuests"] = {12109},
 						}),
 						q(12159, {	-- Souls at Unrest [Alliance]
-							["qg"] = 26932,	-- Petrov
+							["provider"] = { "n", 26932 },	-- Petrov
 							["sourceQuests"] = {12158},
 							["g"] = {
 								i(38735),	-- Specially Treated Robes
@@ -284,15 +284,15 @@ _.Zones =
 							},
 						}),
 						q(12160, {	--  A Name from the Past [Alliance]
-							["qg"] = 26932,	-- Petrov
+							["provider"] = { "n", 26932 },	-- Petrov
 							["sourceQuests"] = {12159},
 						}),
 						q(12161, {	--  Ruuna the Blind [Alliance]
-							["qg"] = 27582,	-- Private Arun
+							["provider"] = { "n", 27582 },	-- Private Arun
 							["sourceQuests"] = {12160},
 						}),
 						q(12328, {	-- Ruuna's Request
-							["qg"] = 27581,	-- Ruuna the Blind
+							["provider"] = { "n", 27581 },	-- Ruuna the Blind
 							["sourceQuests"] = {12161},
 							["g"] = {
 								i(38727),	-- Foreseer's Girdle
@@ -302,15 +302,15 @@ _.Zones =
 							},
 						}),
 						q(12327, {	--  Out of Body Experience
-							["qg"] = 27581,	-- Ruuna the Blind
+							["provider"] = { "n", 27581 },	-- Ruuna the Blind
 							["sourceQuests"] = {12328},
 						}),
 						q(12329, {	--  Fate and Coincidence
-							["qg"] = 27581,	-- Ruuna the Blind
+							["provider"] = { "n", 27581 },	-- Ruuna the Blind
 							["sourceQuests"] = {12327},
 						}),
 						q(12330, {	--  Anatoly Will Talk
-							["qg"] = 26935,	-- Sasha
+							["provider"] = { "n", 26935 },	-- Sasha
 							["sourceQuests"] = {12329},
 							["g"] = {
 								i(38748),	-- Seal of the Slumbering Wolf
@@ -319,11 +319,11 @@ _.Zones =
 							},
 						}),
 						q(12411, {	--  A Sister's Pledge
-							["qg"] = 26935,	-- Sasha
+							["provider"] = { "n", 26935 },	-- Sasha
 							["sourceQuests"] = {12330},
 						}),
 						q(12164, {	-- Hour of the Worg
-							["qg"] = 26935,	-- Sasha
+							["provider"] = { "n", 26935 },	-- Sasha
 							["sourceQuests"] = {12411},
 							["g"] = {
 								i(39170),	-- Furred Worgslayer Spaulders
@@ -336,10 +336,10 @@ _.Zones =
 					}),
 					crit(6, {	--Eons of Misery
 						q(12116, {	--  It Takes Guts....
-							["qg"] = 26886,	-- Kraz
+							["provider"] = { "n", 26886 },	-- Kraz
 						}),
 						q(12120, {	-- Drak'aguul's Mallet
-							["qg"] = 26886,	-- Kraz
+							["provider"] = { "n", 26886 },	-- Kraz
 							["sourceQuests"] = {12116},
 							["g"] = {
 								i(38730),	-- Bell-Ringer's Shoulderpads
@@ -349,15 +349,15 @@ _.Zones =
 							},
 						}),
 						q(12121, {	--  See You on the Other Side
-							["qg"] = 26886,	-- Kraz
+							["provider"] = { "n", 26886 },	-- Kraz
 							["sourceQuests"] = {12120},
 						}),
 						q(12137, {	--  Chill Out, Mon
-							["qg"] = 26924,	-- Gan'jo
+							["provider"] = { "n", 26924 },	-- Gan'jo
 							["sourceQuests"] = {12121},
 						}),
 						q(12152, {	-- Jin'arrak's End
-							["qg"] = 26886,	-- Kraz
+							["provider"] = { "n", 26886 },	-- Kraz
 							["sourceQuests"] = {12137},
 							["g"] = {
 								i(39114),	-- Axe of the Warlord's Demise
@@ -372,46 +372,46 @@ _.Zones =
 				})),
 				a(ach(2016, {	-- Grizzled Veteran
 					q(12244, {	--  Shredder Repair [Alliance]
-						["qg"] = 27371,	-- Synipus
+						["provider"] = { "n", 27371 },	-- Synipus
 						["isDaily"] = true,
 					}),
 					q(12268, {	--  Pieces Parts [Alliance]
-						["qg"] = 27416,	-- Pipthwack
+						["provider"] = { "n", 27416 },	-- Pipthwack
 						["isDaily"] = true,
 					}),
 					q(12289, {	--  Kick 'Em While They're Down [Alliance]
-						["qg"] = 27468,	-- Sergeant Hartsman
+						["provider"] = { "n", 27468 },	-- Sergeant Hartsman
 						["isDaily"] = true,
 					}),
 					q(12296, {	--  Life or Death [Alliance]
-						["qg"] = 27484,	-- Rheanna
+						["provider"] = { "n", 27484 },	-- Rheanna
 						["isDaily"] = true,
 					}),
 					q(12314, {	--  Down With Captain Zorna! [Alliance]
-						["qg"] = 27520,	-- Baron Freeman
+						["provider"] = { "n", 27520 },	-- Baron Freeman
 						["isDaily"] = true,
 					}),
 					q(12316, {	--  Keep Them at Bay! [Alliance]
-						["qg"] = 27562,	-- Lieutenant Stuart
+						["provider"] = { "n", 27562 },	-- Lieutenant Stuart
 						["isDaily"] = true,
 					}),
 					q(12323, {	--  Smoke 'Em Out [Alliance]
-						["qg"] = 27602,	-- Sergeant Downey
+						["provider"] = { "n", 27602 },	-- Sergeant Downey
 						["isDaily"] = true,
 					}),
 					q(12437, {	--  Riding the Red Rocket [Alliance]
-						["qg"] = 27759,	-- Commander Howser
+						["provider"] = { "n", 27759 },	-- Commander Howser
 						["isDaily"] = true,
 					}),
 					q(12444, {	--  Blackriver Skirmish [Alliance]
-						["qg"] = 27783,	-- Scout Captain Carter
+						["provider"] = { "n", 27783 },	-- Scout Captain Carter
 						["isDaily"] = true,
 					}),
 				})),
 				
 				
 				q(12279, {	--  A Bear of an Appetite
-					["qg"] = 26484,	-- Hugh Glass
+					["provider"] = { "n", 26484 },	-- Hugh Glass
 				}),
 				q(12176,  {  -- A Minor Substitution
 					["races"] = HORDE_ONLY,
@@ -432,7 +432,7 @@ _.Zones =
 					},
 				}),
 				q(12446, {	--  Always Seeking Solvent
-					["qg"] = 27495,	-- Barblefink
+					["provider"] = { "n", 27495 },	-- Barblefink
 					["repeatable"] = true,
 					["sourceQuests"] = {12443},
 					["g"] = {
@@ -464,7 +464,7 @@ _.Zones =
 					},
 				}),
 				q(12154, {	--  Blackout [Alliance]
-					["qg"] = 26883,	-- Raegar Breakbrow
+					["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {12138},
 				}),
@@ -478,7 +478,7 @@ _.Zones =
 					},
 				}),
 				q(12238, {	--  Cleansing Drak'Tharon
-					["qg"] = 26787,	-- Image of Drakuru
+					["provider"] = { "n", 26787 },	-- Image of Drakuru
 					["sourceQuests"] = {12068},
 					["g"] = {
 						i(40755), 	-- Enticing Sabatons
@@ -488,7 +488,7 @@ _.Zones =
 					},
 				}),
 				q(12227, {	--  Doing Your Duty [Alliance]
-					["qg"] = 27277,	-- Master Woodsman Anderhol
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {12226},
 					["g"] = {
@@ -498,7 +498,7 @@ _.Zones =
 					},
 				}),
 				q(12082, {	-- Dun-da-Dun-tah!
-					["qg"] = 26814,	-- Harrison Jones
+					["provider"] = { "n", 26814 },	-- Harrison Jones
 					["g"] = {
 						i(38729),	-- Sandals of Quick Escape
 						i(39028),	-- Coiled Leather Gauntlets
@@ -507,7 +507,7 @@ _.Zones =
 					},
 				}),
 				q(12217, {	--  Eagle Eyes [Alliance]
-					["qg"] = 27277,	-- Master Woodsman Anderhol
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {12215},
 				}),
@@ -520,11 +520,11 @@ _.Zones =
 					},
 				}),
 				q(11981, {	--  Find Kurun!
-					["qg"] = 26335,	-- Fallen Earthen Warrior
+					["provider"] = { "n", 26335 },	-- Fallen Earthen Warrior
 					["isBreadcrumb"] = true,
 				}),
 				q(12099, {	-- Free at Last
-					["qg"] = 26420,	-- Gavrock
+					["provider"] = { "n", 26420 },	-- Gavrock
 					["sourceQuests"] = {12094},
 					["g"] = {
 						i(39117),	-- Liberator's Blade
@@ -535,7 +535,7 @@ _.Zones =
 					},
 				}),
 				q(12081, {	--  Gavrock
-					["qg"] = 26260,	-- Kurun
+					["provider"] = { "n", 26260 },	-- Kurun
 					["sourceQuests"] = {11985},
 				}),
 				q(12175,  {  -- Grey Worg Hides
@@ -548,7 +548,7 @@ _.Zones =
 					},
 				}),
 				q(11985, {	-- Into the Breach
-					["qg"] = 26260,	-- Kurun
+					["provider"] = { "n", 26260 },	-- Kurun
 					["sourceQuests"] = {12070},
 					["g"] = {
 						i(38715),	-- Forge-Scarred Sandals
@@ -558,12 +558,12 @@ _.Zones =
 					},
 				}),
 				q(12226, {	--  Just Passing Through [Alliance]
-					["qg"] = 27277,	-- Master Woodsman Anderhol
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {12225},
 				}),
 				q(12094, {	--  Latent Power
-					["qg"] = 26420,	-- Gavrock
+					["provider"] = { "n", 26420 },	-- Gavrock
 					["sourceQuests"] = {12093},
 				}),
 				i(36940, {	-- Mikhail's Journal
@@ -574,16 +574,16 @@ _.Zones =
 							i(39060),	-- Patched Trapper Pauldrons
 							i(39098),	-- Rusty Cave Stompers
 						},
-						["qg"] = 27546,	-- Silverbrook Hunter
+						["provider"] = { "n", 27546 },	-- Silverbrook Hunter
 					["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				q(12414, {	--  Mounting Up [Alliance]
-					["qg"] = 26377,	-- Squire Percy
+					["provider"] = { "n", 26377 },	-- Squire Percy
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12027, {	-- Mr. Floppy's Perilous Adventure [Alliance]
-					["qg"] = 26588,	-- Emily
+					["provider"] = { "n", 26588 },	-- Emily
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(38714),	-- Path-Cutter's Cord
@@ -603,36 +603,36 @@ _.Zones =
 					},
 				}),
 				q(12113, {	--  Nice to Meat You
-					["qg"] = 26884,	-- Harkor
+					["provider"] = { "n", 26884 },	-- Harkor
 				}),
 				q(11982, {	--  Raining Down Destruction
-					["qg"] = 26260,	-- Kurun
+					["provider"] = { "n", 26260 },	-- Kurun
 					["sourceQuests"] = {11981},
 				}),
 				q(12070, {	--  Rallying the Troops
-					["qg"] = 26260,	-- Kurun
+					["provider"] = { "n", 26260 },	-- Kurun
 					["sourceQuests"] = {11982},
 				}),
 				q(12770, {	--  Reallocating Resources [Alliance]
 					-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
-					["qg"] = 26212,	-- Captain Gryan Stoutmantle
+					["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12212, {	--  Replenishing the Storehouse [Alliance]
-					["qg"] = 27277,	-- Master Woodsman Anderhol
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12109, {	--  Report to Gryan Stoutmantle... Again [Alliance]
-					["qg"] = 26875,	-- Lieutenant Dumont
+					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(12093, {	--  Runes of Compulsion
-					["qg"] = 26420,	-- Gavrock
+					["provider"] = { "n", 26420 },	-- Gavrock
 					["sourceQuests"] = {12081},
 				}),
 				q(12134, {	-- Sasha's Hunt
-					["qg"] = 26935,	-- Sasha
+					["provider"] = { "n", 26935 },	-- Sasha
 					["sourceQuest"] = 12329,
 					["g"] = {
 						i(39011),	-- Bloody Bulwark
@@ -642,15 +642,15 @@ _.Zones =
 					},			
 				}),
 				q(12190, {	--  Say Hello to My Little Friend
-					["qg"] = 26519,	-- Prigmon
+					["provider"] = { "n", 26519 },	-- Prigmon
 					["sourceQuests"] = {12483},
 				}),
 				q(12484, {	--  Scourgekabob
-					["qg"] = 26519,	-- Prigmon
+					["provider"] = { "n", 26519 },	-- Prigmon
 					["sourceQuests"] = {11990},
 				}),
 				q(12037, {	--  Search and Rescue
-					["qg"] = 26604,	-- Mack Fearsen
+					["provider"] = { "n", 26604 },	-- Mack Fearsen
 					["sourceQuests"] = {12029},
 					["g"] = {
 						i(39649),	-- Kurzel's Angst
@@ -659,29 +659,29 @@ _.Zones =
 					},
 				}),
 				q(12029, {	--  Seared Scourge
-					["qg"] = 26604,	-- Mack Fearsen
+					["provider"] = { "n", 26604 },	-- Mack Fearsen
 					["sourceQuests"] = {12484},
 				}),
 				q(12038, {	--  Seared Scourge
-					["qg"] = 26604,	-- Mack Fearsen
+					["provider"] = { "n", 26604 },	-- Mack Fearsen
 					["sourceQuests"] = {12029},
 					["isDaily"] = true,
 				}),
 				q(12222, {	--  Secrets of the Flamebinders [Alliance]
-					["qg"] = 27391,	-- Woodsman Drake
+					["provider"] = { "n", 27391 },	-- Woodsman Drake
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {12294},
 				}),
 				q(12443, {	--  Seeking Solvent [Alliance]
-					["qg"] = 27495,	-- Barblefink
+					["provider"] = { "n", 27495 },	-- Barblefink
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12483, {	--  Shimmercap Stew
-					["qg"] = 26519,	-- Prigmon
+					["provider"] = { "n", 26519 },	-- Prigmon
 					["sourceQuests"] = {12484},
 				}),
 				q(12216, {	--  Take Their Rear! [Alliance]
-					["qg"] = 27277,	-- Master Woodsman Anderhol
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {12212},
 				}),
@@ -696,21 +696,21 @@ _.Zones =
 					},
 				}),
 				q(12794, {	-- The Magical Kingdom of Dalaran [Alliance]
-					["qg"] = 29161, --	Magistrix Haelenai
+					["provider"] = { "n", 29161 }, --	Magistrix Haelenai
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12791, {	-- The Magical Kingdom of Dalaran
-					["qg"] = 29160,	-- Magistrix Phaelista
+					["provider"] = { "n", 29160 },	-- Magistrix Phaelista
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(11988, {	--  The Runic Keystone [Alliance]
-					["qg"] = 26361,	-- Torthen Deepdig
+					["provider"] = { "n", 26361 },	-- Torthen Deepdig
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {11986},
 				}),
 				q(11993, {	-- The Runic Prophecies [Alliance]
-					["qg"] = 26361,	-- Torthen Deepdig
+					["provider"] = { "n", 26361 },	-- Torthen Deepdig
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {11988},
 					["g"] = {
@@ -730,7 +730,7 @@ _.Zones =
 					},
 				}),
 				q(12255, {	-- The Thane of Voldrune [Alliance]
-					["qg"] = 27391,	-- Woodsman Drake
+					["provider"] = { "n", 27391 },	-- Woodsman Drake
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {12222,12223},
 					["g"] = {
@@ -752,7 +752,7 @@ _.Zones =
 					},
 				}),
 				q(12215, {	--  Them or Us! [Alliance]
-					["qg"] = 27277,	-- Master Woodsman Anderhol
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12114, {	-- Therapy
@@ -763,15 +763,15 @@ _.Zones =
 						i(39093),	-- Chestguard of Expressed Fury
 						i(38758),	-- Therapeutic Cloak
 					},
-					["qg"] = 26884,	-- Harkor
+					["provider"] = { "n", 26884 },	-- Harkor
 				}),
 				q(12223, {	--  Thinning the Ranks [Alliance]
-					["qg"] = 27391,	-- Woodsman Drake
+					["provider"] = { "n", 27391 },	-- Woodsman Drake
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {12294},
 				}),
 				q(12210, {	--  Troll Season! [Alliance]
-					["qg"] = 26875,	-- Lieutenant Dumont
+					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {12212},
 					["isBreadcrumb"] = true,

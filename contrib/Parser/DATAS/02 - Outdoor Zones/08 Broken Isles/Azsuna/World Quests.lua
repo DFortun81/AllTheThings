@@ -422,7 +422,7 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(41663, {	-- Vantus Rune Work Order: Elerethe Renferal
-					["qg"] = 107376,	-- Veridis Fallon <Court of Farondis Emissary>
+					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 773,	-- Inscription

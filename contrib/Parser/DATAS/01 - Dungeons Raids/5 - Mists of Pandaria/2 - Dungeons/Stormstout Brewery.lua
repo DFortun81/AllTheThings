@@ -9,7 +9,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(31324, {	-- Family Secrets
-					["qg"] = 59822,	-- Auntie Stormstout
+					["provider"] = { "n", 59822 },	-- Auntie Stormstout
 					["groups"] = {
 						i(87310),	-- Stormstout Drink Napkin
 						i(87311),	-- Used Bar Rag
@@ -19,7 +19,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 				q(31327, {	-- Trouble Brewing
-					["qg"] = 59704,	-- Chen Stormstout
+					["provider"] = { "n", 59704 },	-- Chen Stormstout
 					["groups"] = {
 						i(87301),	-- Master Brewer's Gloves
 						i(87302),	-- Barrel Stacker's Mitts

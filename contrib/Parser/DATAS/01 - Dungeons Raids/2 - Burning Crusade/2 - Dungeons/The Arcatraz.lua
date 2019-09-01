@@ -15,12 +15,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			n(-17, {	-- Quests
 				q(29675, {	-- Hey There Dalliah
 					["sourceQuest"] = 29674,	-- Unbound Darkness
-					["qg"] = 18481,	-- A'dal
+					["provider"] = { "n", 18481 },	-- A'dal
 					["coord"] = { 74.4, 57.7, 109 },	-- The Arcatraz, Netherstorm
 				}),
 				q(29681, {	-- Maximum Security Breakout
 					["sourceQuest"] = 29675,	-- Hey There Dalliah
-					["qg"] = 18481,	-- A'dal
+					["provider"] = { "n", 18481 },	-- A'dal
 					["g"] = {
 						i(31749),	-- A'dal's Recovery Necklace
 						i(31747),	-- Potent Sha'tari Pendant
@@ -28,13 +28,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				q(29674, {	-- Unbound Darkness
-					["qg"] = 18481,	-- A'dal
+					["provider"] = { "n", 18481 },	-- A'dal
 				}),
 				faction(932, {	-- The Aldor
 					["collectible"] = false,
 					["g"] = {
 						q(10706, {	-- A Mysterious Portent
-							["qg"] = 21962,	-- Udalo
+							["provider"] = { "n", 21962 },	-- Udalo
 							["sourceQuests"] = { 10705 },	-- Seer Udalo
 						}),
 					},
@@ -43,7 +43,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["collectible"] = false,
 					["g"] = {
 						q(10706, {	-- A Mysterious Portent
-							["qg"] = 21962,	-- Udalo
+							["provider"] = { "n", 21962 },	-- Udalo
 							["sourceQuests"] = { 10705 },	-- Seer Udalo
 						}),
 					},

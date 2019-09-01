@@ -8,7 +8,7 @@ _.Zones =
 			n(-169, {	-- Emissary Quests
 				q(42233, {	-- Highmountain Tribes
 					["repeatable"] = true,
-					["qg"] = 106902,	-- Ransa Greyfeather <Highmountain Emissary>
+					["provider"] = { "n", 106902 },	-- Ransa Greyfeather <Highmountain Emissary>
 					["groups"] = {
 						i(157823, {	-- Highmountain Tribute
 							["sym"] = {
@@ -50,7 +50,7 @@ _.Zones =
 				n(-206, {	-- Paragon
 					q(46743, {	-- Supplies From Highmountain
 						["repeatable"] = true,
-						["qg"] = 106902,	-- Ransa Greyfeather <Highmountain Emissary>
+						["provider"] = { "n", 106902 },	-- Ransa Greyfeather <Highmountain Emissary>
 						["groups"] = {
 							i(152104, {	-- Highmountain Supplies
 								i(147807),	-- Highmountain Elderhorn (MOUNT!)

@@ -18,37 +18,37 @@ _.Instances = { tier(7, {	-- Legion
 							["g"] = {
 								{
 									["criteriaID"] = 7,	-- Scaly's Imprint Collected
-									["qg"] = 113204,	-- Scaly
+									["provider"] = { "n", 113204 },	-- Scaly
 									["description"] = "After first boss Rokmora, before entering a barrel, use the macro: /tar Scaly and then apply a target icon to him. It sits on a Mushroom on the left river bank and while riding in the barrel, you need to throw the fish at it while riding the barrel to make it fall into the water and come along with you.",
 								},
 								{
 									["criteriaID"] = 1,	-- Sparky's imprint collected
-									["qg"] = 111882,	-- Sparky
+									["provider"] = { "n", 111882 },	-- Sparky
 									["description"] = "Dive right where the barrel ride ends and find a pathway to a somewhat hidden cave where the snail is located at.",
 								},
 								{
 									["criteriaID"] = 5,	-- Slinky's imprint collected
-									["qg"] = 111861,	-- Slinky
+									["provider"] = { "n", 111861 },	-- Slinky
 									["description"] = "Follow the long westward path before Ularogg Cragshaper to a cave. He is usually along the cave's back wall.",
 								},
 								{
 									["criteriaID"] = 2,	-- Turbax's imprint collected
-									["qg"] = 105742,	-- Turbax
+									["provider"] = { "n", 105742 },	-- Turbax
 									["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
 								},
 								{
 									["criteriaID"] = 3,	-- Whipsnap's imprint collected
-									["qg"] = 105743,	-- Whipsnap
+									["provider"] = { "n", 105743 },	-- Whipsnap
 									["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
 								},
 								{
 									["criteriaID"] = 4,	-- Blaze's imprint collected
-									["qg"] = 105744,	-- Blaze
+									["provider"] = { "n", 105744 },	-- Blaze
 									["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
 								},
 								{
 									["criteriaID"] = 6,	-- Sticky's imprint collected
-									["qg"] = 111864,	-- Sticky
+									["provider"] = { "n", 111864 },	-- Sticky
 									["description"] = "Directly after the previous 3 snails. Go into the water with the basalisks and go along the river to the back where there is a cave and more basalisks. Kill all of them and have some one use an ability on Sticky. He is up on top of the cave just chilling out. Once someone attacks him he falls down and you can smack him and claim your achievement.",
 								},
 							},

@@ -18,7 +18,8 @@ _.Zones =
 							7,	-- Elemental Shaman
 							1,	-- Fury Warrior
 						},
-						["qgs"] = {
+						["provider"] = { "n", 117871 },	-- War Councilor Victoria
+						["crs"] = {
 							115638,	-- Agatha
 							115719,	-- Imp Servant
 							115641,	-- Smoldering Imp
@@ -54,7 +55,8 @@ _.Zones =
 							4,	-- Subtlety Rogue
 							1,	-- Arms Warrior
 						},
-						["qgs"] = {
+						["provider"] = { "n", 117871 },	-- War Councilor Victoria
+						["crs"] = {
 							115244,	-- Archmage Xylem
 							116839,	-- Corrupting Shadows
 						},
@@ -84,7 +86,8 @@ _.Zones =
 							5,	-- Holy Priest
 							7,	-- Restoration Shaman
 						},
-						["qgs"] = {
+						["provider"] = { "n", 117871 },	-- War Councilor Victoria
+						["crs"] = {
 							118447,	-- Commander Jarod Shadowsong
 							118448,	-- Granny Marl
 							118451,	-- Callie Carrington
@@ -118,7 +121,8 @@ _.Zones =
 							5,	-- Discipline Priest
 							9,	-- Destruction Warlock
 						},
-						["qgs"] = {
+						["provider"] = { "n", 117871 },	-- War Councilor Victoria
+						["crs"] = {
 							117230,	-- Tugar Bloodtotem
 							117484,	-- Jormog the Behemoth
 						},
@@ -145,7 +149,8 @@ _.Zones =
 							7,	-- Enhancemeent Shaman
 							9,	-- Demonology Warlock
 						},
-						["qgs"] = {
+						["provider"] = { "n", 117871 },	-- War Councilor Victoria
+						["crs"] = {
 							116484,	-- Sigryn
 							116499,	-- Jarl Velbrand
 							116496,	-- Runeseer Faljar
@@ -177,7 +182,8 @@ _.Zones =
 							2,	-- Protection Paladin
 							1,	-- Protection Warrior
 						},
-						["qgs"] = {
+						["provider"] = { "n", 117871 },	-- War Councilor Victoria
+						["crs"] = {
 							117933,	-- Inquisitor Variss
 							118032,	-- Tormenting Eye
 							103928,	-- Smoldering Infernal
@@ -213,7 +219,8 @@ _.Zones =
 							5,	-- Shadow Priest
 							9,	-- Affliction Warlock
 						},
-						["qgs"] = {
+						["provider"] = { "n", 117871 },	-- War Councilor Victoria
+						["crs"] = {
 							116410,	-- Karam Magespear
 							116409,	-- Raest Magespear
 							118698,	-- Hand from Beyond

@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 				["g"] = {
 					n(-17, {	-- Quests
 						q(39665, {	-- A True Naval Commander
-							["qg"] = 93812,	-- Salty Jorren
+							["provider"] = { "n", 93812 },	-- Salty Jorren
 							["coord"] = { 28.6, 10.8, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39666,	-- Equipping Our Fleet
@@ -25,50 +25,50 @@ _.ExpansionFeatures =
 						}),
 						q(39057, {	-- Command of the Seas
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 						}),
 						q(39003, {	-- Cooking the Books
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							["sourceQuest"] = 39000,	-- We Don't Need No Library Card
 						}),
 						q(39004, {	-- Darkness Incarnate
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 						}),
 						q(39404, {	-- Destroying the Competition
-							["qg"] = 93822,	-- Merreck Vonder
+							["provider"] = { "n", 93822 },	-- Merreck Vonder
 							["coord"] = { 28.2, 11.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39056,	-- Naval Commander
 						}),
 						q(39666, {	-- Equipping Our Fleet
-							["qg"] = 93822,	-- Merreck Vonder
+							["provider"] = { "n", 93822 },	-- Merreck Vonder
 							["coord"] = { 28.2, 11.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39655,	-- If At First You Fail, Try Again!
 						}),
 						q(39601, {	-- I Sunk Your Battleship
-							["qg"] = 93822,	-- Merreck Vonder
+							["provider"] = { "n", 93822 },	-- Merreck Vonder
 							["coord"] = { 28.2, 11.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39665,	-- A True Naval Commander
 						}),
 						q(39655, {	-- If At First You Fail, Try Again!
-							["qg"] = 93822,	-- Merreck Vonder
+							["provider"] = { "n", 93822 },	-- Merreck Vonder
 							["coord"] = { 28.2, 11.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39404,	-- Destroying the Competition
 						}),
 						q(39082, {	-- Let's Get To Work
-							["qg"] = 93822,	-- Merreck Vonder
+							["provider"] = { "n", 93822 },	-- Merreck Vonder
 							["coord"] = { 28.1, 10.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 38259,	-- All Hands on Deck
 						}),
 						q(37839, {	-- Light Be With You
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								un(4, i(124634)),	-- Thorasus, the Stone Heart of Draenor
@@ -80,60 +80,60 @@ _.ExpansionFeatures =
 						}),
 						q(39697, {	-- Master vs. Commander
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							["sourceQuest"] = 39057,	-- Command of the Seas
 							["g"] = {
 								 un(40, i(128693)),	-- Draenic Sea Chart
 							},
 						}),
 						q(39056, {	-- Naval Commander
-							["qg"] = 93822,	-- Merreck Vonder
+							["provider"] = { "n", 93822 },	-- Merreck Vonder
 							["coord"] = { 28.2, 10.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39422,	-- Shipyard Report
 						}),
 						q(39055, {	-- Ship Shape
-							["qg"] = 95002,	-- Yanas Seastrike
+							["provider"] = { "n", 95002 },	-- Yanas Seastrike
 							["coord"] = { 29.8, 10.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39276,	-- Strange Tools
 						}),
 						q(39054, {	-- Shipbuilding
-							["qg"] = 94429,	-- Solog Roark
+							["provider"] = { "n", 94429 },	-- Solog Roark
 							["coord"] = { 29.7, 10.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39082,	-- Let's Get To Work
 						}),
 						q(39276, {	-- Strange Tools
-							["qg"] = 94429,	-- Solog Roark
+							["provider"] = { "n", 94429 },	-- Solog Roark
 							["coord"] = { 29.7, 10.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39054,	-- Shipbuilding
 						}),
 						q(37841, {	-- The Final Assault
 							["u"] = 40,
-							["qg"] = 90233,	-- Archmage Khadgar
+							["provider"] = { "n", 90233 },	-- Archmage Khadgar
 							["sourceQuest"] = 37837,	-- An Inside Job
 						}),
 						q(38435, {	-- The Invasion of Tanaan
-							["qg"] = 95002,	-- Yanas Seastrike
+							["provider"] = { "n", 95002 },	-- Yanas Seastrike
 							["coord"] = { 29.8, 10.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39055,	-- Ship Shape
 						}),
 						q(37835, {	-- The Shadow War
 							["u"] = 40,
-							["qg"] = 83823,	-- Archmage Khadgar
+							["provider"] = { "n", 83823 },	-- Archmage Khadgar
 						}),
 						q(39067, {	-- Upgrading The Fleet
-							["qg"] = 93822,	-- Merreck Vonder
+							["provider"] = { "n", 93822 },	-- Merreck Vonder
 							["coord"] = { 28.2, 11.6, 539 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 39665,	-- A True Naval Commander
 						}),
 						q(39000, {	-- We Don't Need No Library Card
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							["sourceQuest"] = 39024,	-- Call of the Archmage
 						}),
 					}),

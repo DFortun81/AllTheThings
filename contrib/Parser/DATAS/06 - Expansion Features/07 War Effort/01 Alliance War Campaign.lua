@@ -92,34 +92,34 @@ _.ExpansionFeatures =
 					q(47099, { 	-- Get Your Bearings
 						["coord"] = { 75.7, 23.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 121235,	-- Taelia
+						["provider"] = { "n", 121235 },	-- Taelia
 					}),
 					q(46729, { 	-- The Old Knight
 						["sourceQuests"] = { 47099 },	-- Get Your Bearings
 						["coord"] = { 67.1, 15.3, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 124630,	-- Taelia
+						["provider"] = { "n", 124630 },	-- Taelia
 					}),
 					q(47186, { 	-- Sanctum of Sages
 						["sourceQuests"] = { 46729 },	-- The Old Knight
 						["coord"] = { 68.1, 21.9, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 121235,	-- Taelia
+						["provider"] = { "n", 121235 },	-- Taelia
 					}),
 					q(47189, { 	-- A Nation Divided
 						["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 						["coord"] = { 68.1, 21.9, 1161 },
-						["qg"] = 121235,	-- Taelia
+						["provider"] = { "n", 121235 },	-- Taelia
 					}),
 					q(52654, {	-- The War Campaign
 						["sourceQuests"] = { 47189 },	-- A Nation Divided
-						["qg"] = 120788,	-- Genn Greymane
+						["provider"] = { "n", 120788 },	-- Genn Greymane
 						["coord"] = { 68.0, 22.3, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(52544, {	-- The War Cache
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52654 },	-- The War Campaign
@@ -129,7 +129,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 52544 },	-- The War Cache (automatically offered upon turn-in)
 					}),
 					q(51714, {	-- Mission from the King
-						["qg"] = 135618,	-- Falstad Wildhammer
+						["provider"] = { "n", 135618 },	-- Falstad Wildhammer
 						["coord"] = { 69.7, 27.6, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53332 },	-- Time for War
@@ -138,19 +138,19 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(51715, {	-- War of Shadows
-						["qg"] = 135614,	-- Master Mathias Shaw
+						["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 						["coord"] = { 70.4, 27.1, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51714 },	-- Mission from the King
 					}),
 					q(53074, {	-- Reinforcements
-						["qg"] = 135614,	-- Master Mathias Shaw
+						["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 						["coord"] = { 70.4, 27.1, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51715 },	-- War of Shadows
 					}),
 					q(51569, {	-- The Zandalar Campaign
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
@@ -165,7 +165,7 @@ _.ExpansionFeatures =
 						-- I listed only the first one as a SQ since it'll be required for all 3 footholds.
 					}),
 					q(51088, {	-- Heart of Darkness
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51571 },	-- Foothold: Nazmir
@@ -179,7 +179,7 @@ _.ExpansionFeatures =
 						-- I listed only the first one as a SQ since it'll be required for all 3 footholds.
 					}),
 					q(51283, {	-- Voyage to the West
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51572 },	-- Foothold: Vol'dun
@@ -193,21 +193,21 @@ _.ExpansionFeatures =
 						-- I listed only the first one as a SQ since it'll be required for all 3 footholds.
 					}),
 					q(51308, {	-- Zuldazar Foothold
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51570 },	-- Foothold: Zuldazar
 					}),
 					q(53583, {	-- Adapting Our Tactics
-						["qg"] = 143846,	-- Alleria Windrunner
+						["provider"] = { "n", 143846 },	-- Alleria Windrunner
 						["coord"] = { 70.5, 27.3, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
 						-- Turning in this quest also grants credit for the Horde equivalent, 53602
 					}),
 					q(51961, {	-- The Ongoing Campaign
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
@@ -218,7 +218,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52443, {	-- The Final Foothold
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "To get this quest and continue the campaign, you must complete two footholds of your choice.",
@@ -227,25 +227,25 @@ _.ExpansionFeatures =
 					}),
 				--	NAZMIR FOOTHOLD STARTS HERE
 					q(51129, {	-- Dubious Offering
-						["qg"] = 136432,	-- Brann Bronzebeard
+						["provider"] = { "n", 136432 },	-- Brann Bronzebeard
 						["coord"] = { 62.0, 41.5, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51088 },	-- Heart of Darkness
 					}),
 					q(51167, {	-- Blood of Hir'eek
-						["qg"] = 136641,	-- Brann Bronzebeard
+						["provider"] = { "n", 136641 },	-- Brann Bronzebeard
 						["coord"] = { 31.2, 46.7, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51129 },	-- Dubious Offering
 					}),
 					q(51150, {	-- Honoring the Fallen
-						["qg"] = 136641,	-- Brann Bronzebeard
+						["provider"] = { "n", 136641 },	-- Brann Bronzebeard
 						["coord"] = { 31.2, 46.7, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51129 },	-- Dubious Offering
 					}),
 					q(51168, {	-- Zealots of Zalamar
-						["qg"] = 136641,	-- Brann Bronzebeard
+						["provider"] = { "n", 136641 },	-- Brann Bronzebeard
 						["coord"] = { 31.2, 46.7, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -254,30 +254,30 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(51169, {	-- Flight from the Fall
-						["qg"] = 136645,	-- Brann Bronzebeard
+						["provider"] = { "n", 136645 },	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51168 },	-- Zealots of Zalamar
 					}),
 					q(51281, {	-- Zul'Nazman
-						["qg"] = 136432,	-- Brann Bronzebeard
+						["provider"] = { "n", 136432 },	-- Brann Bronzebeard
 						["coord"] = { 62.0, 41.5, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51169 },	-- Flight from the Fall
 					}),
 					q(51279, {	-- Nazmani Cultists
-						["qg"] = 136675,	-- Brann Bronzebeard
+						["provider"] = { "n", 136675 },	-- Brann Bronzebeard
 						["coord"] = { 49.9, 50.8, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51281 },	-- Zul'Nazman
 					}),
 					q(51280, {	-- Offerings to G'huun
-						["qg"] = 136675,	-- Brann Bronzebeard
+						["provider"] = { "n", 136675 },	-- Brann Bronzebeard
 						["coord"] = { 49.9, 50.8, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51281 },	-- Zul'Nazman
 					}),
 					q(51282, {	-- Captain Conrad
-						["qg"] = 136675,	-- Brann Bronzebeard
+						["provider"] = { "n", 136675 },	-- Brann Bronzebeard
 						["coord"] = { 45.7, 57.4, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -286,13 +286,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(51177, {	-- Lessons of the Damned
-						["qg"] = 136568,	-- Captain Conrad
+						["provider"] = { "n", 136568 },	-- Captain Conrad
 						["coord"] = { 45.0, 57.2, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51282 },	-- Captain Conrad
 					}),
 					q(52013, {	-- Champion: John J. Keeshan
-						["qg"] = 139609,	-- John J. Keeshan
+						["provider"] = { "n", 139609 },	-- John J. Keeshan
 						["coord"] = { 61.8, 41.3, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51177 },	-- Lessons of the Damned
@@ -304,41 +304,41 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 52013 },	-- Champion: John J. Keeshan
 						["coord"] = { 62.0, 41.5, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 136432,	-- Brann Bronzebeard
+						["provider"] = { "n", 136432 },	-- Brann Bronzebeard
 					}),
 				--	VOL'DUN FOOTHOLD STARTS HERE
 					q(51170, {	-- Ooh Rah!
-						["qg"] = 137867,	-- Halford Wyrmbane
+						["provider"] = { "n", 137867 },	-- Halford Wyrmbane
 						["coord"] = { 32.8, 34.8, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51283 },	-- Voyage to the West
 					}),
 					q(51229, {	-- Establish a Beachhead
-						["qg"] = 137008,	-- Sergeant Ermey
+						["provider"] = { "n", 137008 },	-- Sergeant Ermey
 						["coord"] = { 39.6, 35.7, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51170 },	-- Ooh Rah!
 					}),
 					q(51349, {	-- Honor Bound
-						["qg"] = 137213,	-- Halford Wyrmbane
+						["provider"] = { "n", 137213 },	-- Halford Wyrmbane
 						["coord"] = { 37.7, 35.7, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51229 },	-- Establish a Beachhead
 					}),
 					q(51350, {	-- Unexpected Aid
-						["qg"] = 137337,	-- Sergeant Ermey
+						["provider"] = { "n", 137337 },	-- Sergeant Ermey
 						["coord"] = { 39.0, 42.9, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51349 },	-- Honor Bound
 					}),
 					q(51351, {	-- Poisoned Barbs
-						["qg"] = 137337,	-- Sergeant Ermey
+						["provider"] = { "n", 137337 },	-- Sergeant Ermey
 						["coord"] = { 39.0, 42.9, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51349 },	-- Honor Bound
 					}),
 					q(51366, {	-- Antidote Application
-						["qg"] = 137337,	-- Sergeant Ermey
+						["provider"] = { "n", 137337 },	-- Sergeant Ermey
 						["coord"] = { 39.0, 42.9, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -347,31 +347,31 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(51369, {	-- Friends in Strange Places
-						["qg"] = 137434,	-- Vorrik
+						["provider"] = { "n", 137434 },	-- Vorrik
 						["coord"] = { 38.9, 42.9, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51366 },	-- Antidote Application
 					}),
 					q(51391, {	-- Defang the Faithless
-						["qg"] = 137537,	-- Vorrik
+						["provider"] = { "n", 137537 },	-- Vorrik
 						["coord"] = { 27.2, 53.9, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51369 },	-- Friends in Strange Places
 					}),
 					q(51394, {	-- Break the Siege
-						["qg"] = 137537,	-- Vorrik
+						["provider"] = { "n", 137537 },	-- Vorrik
 						["coord"] = { 27.2, 53.9, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51369 },	-- Friends in Strange Places
 					}),
 					q(51389, {	-- Breaking Free
-						["qg"] = 137543,	-- Sergeant Ermey
+						["provider"] = { "n", 137543 },	-- Sergeant Ermey
 						["coord"] = { 27.2, 53.9, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51369 },	-- Friends in Strange Places
 					}),
 					q(51395, {	-- The Keepers' Keys
-						["qg"] = 129519,	-- Vorrik
+						["provider"] = { "n", 129519 },	-- Vorrik
 						["coord"] = { 27.5, 52.5, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -381,13 +381,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(51402, {	-- Reporting In
-						["qg"] = 137543,	-- Sergeant Ermey
+						["provider"] = { "n", 137543 },	-- Sergeant Ermey
 						["coord"] = { 27.0, 52.5, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51395 },	-- The Keepers' Keys
 					}),
 					q(52008, {	-- Champion: Magister Umbric
-						["qg"] = 139568,	-- Magister Umbric
+						["provider"] = { "n", 139568 },	-- Magister Umbric
 						["coord"] = { 37.5, 35.8, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51402 },	-- Reporting In
@@ -396,7 +396,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(51969, {	-- Return to Boralus (Vol'dun)
-						["qg"] = 137213,	-- Halford Wyrmbane
+						["provider"] = { "n", 137213 },	-- Halford Wyrmbane
 						["coord"] = { 37.7, 35.7, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52008 },	-- Champion: Magister Umbric
@@ -404,43 +404,43 @@ _.ExpansionFeatures =
 					}),
 				--	ZULDAZAR FOOTHOLD STARS HERE
 					q(51201, {	-- The Troll's Tale
-						["qg"] = 136197,	-- Brigadier Thom
+						["provider"] = { "n", 136197 },	-- Brigadier Thom
 						["coord"] = { 77.5, 54.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51308 },	-- Zuldazar Foothold
 					}),
 					q(51190, {	-- Granting a Reprieve
-						["qg"] = 136197,	-- Brigadier Thom
+						["provider"] = { "n", 136197 },	-- Brigadier Thom
 						["coord"] = { 77.5, 54.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51201 },	-- The Troll's Tale
 					}),
 					q(51544, {	-- Disarming the Cannons
-						["qg"] = 136197,	-- Brigadier Thom
+						["provider"] = { "n", 136197 },	-- Brigadier Thom
 						["coord"] = { 77.5, 54.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51201 },	-- The Troll's Tale
 					}),
 					q(51192, {	-- A Lack of Surplus
-						["qg"] = 136192,	-- Degdod
+						["provider"] = { "n", 136192 },	-- Degdod
 						["coord"] = { 77.1, 55.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51201 },	-- The Troll's Tale
 					}),
 					q(51193, {	-- That One's Mine
-						["qg"] = 136192,	-- Degdod
+						["provider"] = { "n", 136192 },	-- Degdod
 						["coord"] = { 77.1, 55.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51201 },	-- The Troll's Tale
 					}),
 					q(51191, {	-- Save Them All
-						["qg"] = 136195,	-- Medic Feorea
+						["provider"] = { "n", 136195 },	-- Medic Feorea
 						["coord"] = { 77.1, 55.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51201 },	-- The Troll's Tale
 					}),
 					q(51418, {	-- Xibala
-						["qg"] = 135620,	-- Kelsey Steelspark
+						["provider"] = { "n", 135620 },	-- Kelsey Steelspark
 						["coord"] = { 77.4, 55.2, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -453,7 +453,7 @@ _.ExpansionFeatures =
 						-- Hidden quest 53384 completes as Kelsey Steelspark runs up
 					}),
 					q(51359, {	-- Fragment of the Firelands
-						["qg"] = 137401,	-- Anvil-Thane Thurgaden
+						["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
 						["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -462,7 +462,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52003, {	-- Champion: Kelsey Steelspark
-						["qg"] = 135620,	-- Kelsey Steelspark
+						["provider"] = { "n", 135620 },	-- Kelsey Steelspark
 						["coord"] = { 40.7, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 51359 },	-- Fragment of the Firelands
@@ -471,7 +471,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(51968, {	-- Return to Boralus (Zuldazar)
-						["qg"] = 135620,	-- Kelsey Steelspark
+						["provider"] = { "n", 135620 },	-- Kelsey Steelspark
 						["coord"] = { 40.7, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52003 },	-- Champion: Kelsey Steelspark
@@ -479,7 +479,7 @@ _.ExpansionFeatures =
 					}),
 				--	ALL 3 FOOTHOLDS END Here
 					q(51918, {	-- Uniting Kul Tiras
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["lvl"] = 120,
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
@@ -493,61 +493,61 @@ _.ExpansionFeatures =
 					}),
 				--	BLOOD ON THE SAND STARTS HERE
 					q(52027, {	-- The Vol'dun Plan
-						["qg"] = 139705,	-- Halford Wyrmbane
+						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 37.7, 35.8, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52026 },	-- Overseas Assassination
 					}),
 					q(52028, {	-- Comb the Desert
-						["qg"] = 139705,	-- Halford Wyrmbane
+						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 37.7, 35.8, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52027 },	-- The Vol'dun Plan
 					}),
 					q(52029, {	-- Dirty Work
-						["qg"] = 139719,	-- Shandris Feathermoon
+						["provider"] = { "n", 139719 },	-- Shandris Feathermoon
 						["coord"] = { 40.7, 47.8, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52028 },	-- Comb the Desert
 					}),
 					q(52030, {	-- Keep Combing
-						["qg"] = 139705,	-- Halford Wyrmbane
+						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 40.7, 47.8, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52029 },	-- Dirty Work
 					}),
 					q(52031, {	-- Classic Reliquary
-						["qg"] = 139719,	-- Shandris Feathermoon
+						["provider"] = { "n", 139719 },	-- Shandris Feathermoon
 						["coord"] = { 44.9, 58.7, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52030 },	-- Keep Combing
 					}),
 					q(52032, {	-- Never Stop Combing
-						["qg"] = 139705,	-- Halford Wyrmbane
+						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 44.9, 58.7, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52031 },	-- Classic Reliquary
 					}),
 					q(52035, {	-- Improvised Survival
-						["qg"] = 139705,	-- Halford Wyrmbane
+						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52032 },	-- Never Stop Combing
 					}),
 					q(52034, {	-- A Message to the Zandalari
-						["qg"] = 139719,	-- Shandris Feathermoon
+						["provider"] = { "n", 139719 },	-- Shandris Feathermoon
 						["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52032 },	-- Never Stop Combing
 					}),
 					q(52036, {	-- They Have Alpacas Here
-						["qg"] = 139722,	-- Explosioneer Zoidfuse
+						["provider"] = { "n", 139722 },	-- Explosioneer Zoidfuse
 						["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52032 },	-- Never Stop Combing
 					}),
 					q(52038, {	-- Splitting Up
-						["qg"] = 139705,	-- Halford Wyrmbane
+						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -557,19 +557,19 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52040, {	-- Full of Arrows
-						["qg"] = 139719,	-- Shandris Feathermoon
+						["provider"] = { "n", 139719 },	-- Shandris Feathermoon
 						["coord"] = { 29.9, 78.5, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52038 },	-- Splitting Up
 					}),
 					q(52039, {	-- Delayed Deathification
-						["qg"] = 139719,	-- Shandris Feathermoon
+						["provider"] = { "n", 139719 },	-- Shandris Feathermoon
 						["coord"] = { 29.9, 78.5, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52038 },	-- Splitting Up
 					}),
 					q(52041, {	-- Report to Wyrmbane
-						["qg"] = 139719,	-- Shandris Feathermoon
+						["provider"] = { "n", 139719 },	-- Shandris Feathermoon
 						["coord"] = { 29.9, 78.5, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -578,13 +578,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52042, {	-- The Big Boom
-						["qg"] = 139705,	-- Halford Wyrmbane
+						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 39.6, 83.9, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52041 },	-- Report to Wyrmbane
 					}),
 					q(52146, {	-- Blood on the Sand
-						["qg"] = 139705,	-- Halford Wyrmbane
+						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 39.6, 83.9, 864 },	-- Vol'dun
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52042 },	-- The Big Boom
@@ -597,20 +597,20 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 52146 },	-- Blood on the Sand
 					}),
 					q(52147, {	-- Crippling the Horde
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53069 },	-- Operation: Blood Arrow
 					}),
 				--	CHASING DARKNESS STARTS HERE
 					q(52150, {	-- How to Kill a Dark Ranger
-						["qg"] = 140258,	-- Shandris Feathermoon
+						["provider"] = { "n", 140258 },	-- Shandris Feathermoon
 						["coord"] = { 61.9, 41.1, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52147 },	-- Crippling the Horde
 					}),
 					q(52170, {	-- Ending Areiel
-						["qg"] = 140258,	-- Shandris Feathermoon
+						["provider"] = { "n", 140258 },	-- Shandris Feathermoon
 						["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -619,7 +619,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52171, {	-- One Option: Fire
-						["qg"] = 139609,	-- John J. Keeshan
+						["provider"] = { "n", 139609 },	-- John J. Keeshan
 						["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -628,7 +628,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52172, {	-- They Can't Stay Here
-						["qg"] = 139609,	-- John J. Keeshan
+						["provider"] = { "n", 139609 },	-- John J. Keeshan
 						["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -637,7 +637,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52208, {	-- Meeting of the Minds
-						["qg"] = 140258,	-- Shandris Feathermoon
+						["provider"] = { "n", 140258 },	-- Shandris Feathermoon
 						["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -647,7 +647,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52219, {	-- Target: Blood Prince Dreven
-						["qg"] = 140519,	-- Shandris Feathermoon
+						["provider"] = { "n", 140519 },	-- Shandris Feathermoon
 						["coord"] = { 42.1, 39.7, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52208 },	-- Meeting of the Minds
@@ -659,38 +659,38 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
 					}),
 					q(52154, {	-- Our Next Target
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53070 },	-- Operation: Cutpurse
 					}),
 					q(52173, {	-- The Void Elves Stand Ready
-						["qg"] = 140348,	-- Magister Umbric
+						["provider"] = { "n", 140348 },	-- Magister Umbric
 						["coord"] = { 69.4, 26.7, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52154 },	-- Our Next Target
 					}),
 				--	A GOLDEN OPPORTUNITY STARTS HERE
 					q(52205, {	-- Bilgewater Bonanza Go Boom
-						["qg"] = 140477,	-- Magister Umbric
+						["provider"] = { "n", 140477 },	-- Magister Umbric
 						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
 					}),
 					q(52204, {	-- The Void Solution
-						["qg"] = 140477,	-- Magister Umbric
+						["provider"] = { "n", 140477 },	-- Magister Umbric
 						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
 					}),
 					q(52203, {	-- Find the Paper Trail
-						["qg"] = 140477,	-- Magister Umbric
+						["provider"] = { "n", 140477 },	-- Magister Umbric
 						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
 					}),
 					q(52241, {	-- A Greedy Goblin's Paradise
-						["qg"] = 140477,	-- Magister Umbric
+						["provider"] = { "n", 140477 },	-- Magister Umbric
 						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -700,24 +700,24 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52247, {	-- Chasing Gallywix
-						["qg"] = 140712,	-- Magister Umbric
+						["provider"] = { "n", 140712 },	-- Magister Umbric
 						["coord"] = { 40.3, 39.7, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52241 },	-- A Greedy Goblin's Paradise
 					}),
 					q(52259, {	-- I Take No Pleasure In This
-						["qg"] = 140740,	-- Magister Umbric
+						["provider"] = { "n", 140740 },	-- Magister Umbric
 						["coord"] = { 21.5, 52.3, 76 },	-- Azshara
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52247 },	-- Chasing Gallywix
 					}),
 					q(52260, {	-- We Have Him Cornered
-						["qg"] = 140740,	-- Magister Umbric
+						["provider"] = { "n", 140740 },	-- Magister Umbric
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52259 },	-- I Take No Pleasure In This
 					}),
 					q(52261, {	-- Gallywix Got Away
-						["qg"] = 140740,	-- Magister Umbric
+						["provider"] = { "n", 140740 },	-- Magister Umbric
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52260 },	-- We Have Him Cornered
 					}),
@@ -728,20 +728,20 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 52261 },	-- Gallywix Got Away
 					}),
 					q(52308, {	-- Intercepted Orders
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53071 },	-- Operation: Gryphon's Claw
 					}),
 					q(52489, {	-- Hunting Blood Prince Dreven
-						["qg"] = 141356,	-- Shandris Feathermoon
+						["provider"] = { "n", 141356 },	-- Shandris Feathermoon
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52308 },	-- Intercepted Orders
 					}),
 				--	BLOOD IN THE WATER STARTS HERE
 					q(52490, {	-- Behind Enemy Boats
-						["qg"] = 141567,	-- Shandris Feathermoon
+						["provider"] = { "n", 141567 },	-- Shandris Feathermoon
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52489 },	-- Hunting Blood Prince Dreven
 					}),
@@ -751,7 +751,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 52490 },	-- Behind Enemy Boats
 					}),
 					q(52492, {	-- The Wildhammer Specialty
-						["qg"] = 141541,	-- Falstad Wildhammer
+						["provider"] = { "n", 141541 },	-- Falstad Wildhammer
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							52490,	-- Behind Enemy Boats
@@ -759,19 +759,19 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52493, {	-- An Unnatural Crew
-						["qg"] = 142228,	-- Shandris Feathermoon
+						["provider"] = { "n", 142228 },	-- Shandris Feathermoon
 						["coord"] = { 41.7, 56.9, 1156 },	-- The Great Sea
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
 					}),
 					q(52494, {	-- Foul Crystals for Foul People
-						["qg"] = 142228,	-- Shandris Feathermoon
+						["provider"] = { "n", 142228 },	-- Shandris Feathermoon
 						["coord"] = { 41.7, 56.9, 1156 },	-- The Great Sea
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
 					}),
 					q(52495, {	-- Ending the San'layn Threat
-						["qg"] = 142232,	-- Shandris Feathermoon
+						["provider"] = { "n", 142232 },	-- Shandris Feathermoon
 						["coord"] = { 41.6, 55.3, 1156 },	-- The Great Sea
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -780,7 +780,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52496, {	-- A Clean Escape
-						["qg"] = 141567,	-- Shandris Feathermoon
+						["provider"] = { "n", 141567 },	-- Shandris Feathermoon
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52495 },	-- Ending the San'layn Threat
 					}),
@@ -792,38 +792,38 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 52496 },	-- A Clean Escape
 					}),
 					q(52473, {	-- Bringing Down the Fleet
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53072 },	-- Operation: Heartstrike
 					}),
 				--	THE STRIKE ON ZULDAZAR STARTS HERE
 					q(52282, {	-- How to Sink a Zandalari Battleship
-						["qg"] = 140257,	-- Halford Wyrmbane
+						["provider"] = { "n", 140257 },	-- Halford Wyrmbane
 						["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52473 },	-- Bringing Down the Fleet
 					}),
 					q(52281, {	-- Under the Cover of Swiftwing
-						["qg"] = 141287,	-- Falstad Wildhammer
+						["provider"] = { "n", 141287 },	-- Falstad Wildhammer
 						["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52282 },	-- How to Sink a Zandalari Battleship
 					}),
 					q(52284, {	-- Ship Logs
-						["qg"] = 141290,	-- Kelsey Steelspark
+						["provider"] = { "n", 141290 },	-- Kelsey Steelspark
 						["coord"] = { 57.6, 87.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52281 },	-- Under the Cover of Swiftwing
 					}),
 					q(52283, {	-- Sabotaging the Pa'ku
-						["qg"] = 141289,	-- John J. Keeshan
+						["provider"] = { "n", 141289 },	-- John J. Keeshan
 						["coord"] = { 57.6, 87.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52281 },	-- Under the Cover of Swiftwing
 					}),
 					q(52285, {	-- The Enlarged Miniaturized Submarine
-						["qg"] = 141290,	-- Kelsey Steelspark
+						["provider"] = { "n", 141290 },	-- Kelsey Steelspark
 						["coord"] = { 57.6, 87.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -832,31 +832,31 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52290, {	-- My Enemy's Enemy is My Disguise
-						["qg"] = 141291,	-- Shandris Feathermoon
+						["provider"] = { "n", 141291 },	-- Shandris Feathermoon
 						["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52285 },	-- The Enlarged Miniaturized Submarine
 					}),
 					q(52286, {	-- Right Beneath Their Nose
-						["qg"] = 141291,	-- Shandris Feathermoon
+						["provider"] = { "n", 141291 },	-- Shandris Feathermoon
 						["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
 					}),
 					q(52287, {	-- Intelligence Denial
-						["qg"] = 141291,	-- Shandris Feathermoon
+						["provider"] = { "n", 141291 },	-- Shandris Feathermoon
 						["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
 					}),
 					q(52288, {	-- Void Vacation
-						["qg"] = 141288,	-- Magister Umbric
+						["provider"] = { "n", 141288 },	-- Magister Umbric
 						["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
 					}),
 					q(52289, {	-- Victory is Assured
-						["qg"] = 141291,	-- Shandris Feathermoon
+						["provider"] = { "n", 141291 },	-- Shandris Feathermoon
 						["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -866,29 +866,29 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(52291, {	-- Victory Was Assured
-						["qg"] = 140257,	-- Halford Wyrmbane
+						["provider"] = { "n", 140257 },	-- Halford Wyrmbane
 						["coord"] = { 40.4, 71.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52289 },	-- Victory is Assured
 					}),
 					q(52788, {	-- Leave None Alive
-						["qg"] = 141719,	-- Halford Wyrmbane
+						["provider"] = { "n", 141719 },	-- Halford Wyrmbane
 						["coord"] = { 35.1, 77.2, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52291 },	-- Victory Was Assured
 					}),
 					q(52789, {	-- Silencing the Advisor
-						["qg"] = 144024,	-- Halford Wyrmbane
+						["provider"] = { "n", 144024 },	-- Halford Wyrmbane
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52788 },	-- Leave None Alive
 					}),
 					q(52790, {	-- An End to the Killing
-						["qg"] = 144024,	-- Halford Wyrmbane
+						["provider"] = { "n", 144024 },	-- Halford Wyrmbane
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52789 },	-- Silencing the Advisor
 					}),
 					q(53098, {	-- Champion: Shandris Feathermoon
-						["qg"] = 141291,	-- Shandris Feathermoon
+						["provider"] = { "n", 141291 },	-- Shandris Feathermoon
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 84 },	-- Stormwind City
 						-- ^This puts just this quest in SW.  It looks weird without context, but the only alternative I can think of is attaching the SW map at the very beginning of the achievement with the Boralus map, which would list the entirety of Ready for War in SW, which doesn't make much sense.
@@ -900,57 +900,57 @@ _.ExpansionFeatures =
 					}),
 				--	BETWEEN READY FOR WAR AND TIDES OF VENGEANCE START
 					q(53986, {	-- The Calm Before
-						["qg"] = 135614,	-- Master Mathias Shaw
+						["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 						["coord"] = { 70.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53098 },	-- Champion: Shandris Feathermoon
 					}),
 				--	WAR MARCHES ON STARTS HERE
 					q(53888, {	-- To Anglepoint
-						["qg"] = 145580,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
 						["coord"] = { 67.0, 36.2, 895 },	-- Boralus/Tiragarde Sound (technically in Boralus but shows up in TS)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53986 },	-- The Calm Before
 					}),
 					q(53896, {	-- Stand Fast
-						["qg"] = 145580,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
 						["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53888 },	-- To Anglepoint
 					}),
 					q(53910, {	-- Repel the Horde
-						["qg"] = 145580,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
 						["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53896 },	-- Stand Fast
 					}),
 					q(54519, {	-- Squad Goals
-						["qg"] = 148015,	-- Taelia Fordragon
+						["provider"] = { "n", 148015 },	-- Taelia Fordragon
 						["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53896 },	-- Stand Fast
 					}),
 					q(54518, {	-- Zero Zeppelins
-						["qg"] = 145632,	-- Okri Putterwrench
+						["provider"] = { "n", 145632 },	-- Okri Putterwrench
 						["coord"] = { 42.1, 29.8, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54519 },	-- Squad Goals (not required to complete first, but must fully pick up the quest before Zero Zeppelins appears)
 					}),
 					q(53909, {	-- Besieged Allies
-						["qg"] = 145580,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
 						["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53896 },	-- Stand Fast
 					}),
 					q(53916, {	-- Outrigger Outfitters
-						["qg"] = 145593,	-- Rosaline Madison
+						["provider"] = { "n", 145593 },	-- Rosaline Madison
 						["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53909 },	-- Besieged Allies
 						-- This quest was available before I turned in Squad Goals, Repel the Horde, or Zero Zeppelins.  Not sure if those 3 are optional or required further down the chain.  Assuming they are required for the next part, so listing them.
 					}),
 					q(53978, {	-- Gunpowder Plots
-						["qg"] = 145593,	-- Rosaline Madison
+						["provider"] = { "n", 145593 },	-- Rosaline Madison
 						["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -961,7 +961,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(54787, {	-- Masking for a Friend
-						["qg"] = 145593,	-- Rosaline Madison
+						["provider"] = { "n", 145593 },	-- Rosaline Madison
 						["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -972,7 +972,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(54559, {	-- Free Plumeria
-						["qg"] = 145632,	-- Okri Putterwrench
+						["provider"] = { "n", 145632 },	-- Okri Putterwrench
 						["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -983,7 +983,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(53919, {	-- Shots Fired
-						["qg"] = 145593,	-- Rosaline Madison
+						["provider"] = { "n", 145593 },	-- Rosaline Madison
 						["coord"] = { 37.5, 24.9, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -993,19 +993,19 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(53936, {	-- Stopping the Sappers
-						["qg"] = 145580,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
 						["coord"] = { 37.4, 24.9, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53919 },	-- Shots Fired
 					}),
 					q(54703, {	-- Express Delivery
-						["qg"] = 145580,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
 						["coord"] = { 36.2, 29.8, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 53936 },	-- Stopping the Sappers
 					}),
 					q(53887, {	-- War Marches On
-						["qg"] = 145580,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
 						["coord"] = { 36.4, 30.7, 895 },	-- Tiragarde Sound
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54703 },	-- Express Delivery
@@ -1018,44 +1018,44 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 53887 },	-- War Marches On
 					}),
 					q(54192, {	-- Sensitive Intel
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54191 },	-- Changing Course
 					}),
 				--	THE SLEEPER AGENT STARTS HERE
 					q(54193, {	-- This is Huge!
-						["qg"] = 147151,	-- Kelsey Steelspark
+						["provider"] = { "n", 147151 },	-- Kelsey Steelspark
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54192 },	-- Sensitive Intel
 					}),
 					q(54194, {	-- Real Big Power
-						["qg"] = 147148,	-- Megs
+						["provider"] = { "n", 147148 },	-- Megs
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54193 },	-- This is Huge
 					}),
 					q(54195, {	-- A Beast with Brains
-						["qg"] = 147148,	-- Megs
+						["provider"] = { "n", 147148 },	-- Megs
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54194 },	-- Real Big Power
 					}),
 					q(54196, {	-- Out of Options
-						["qg"] = 147228,	-- Grong
+						["provider"] = { "n", 147228 },	-- Grong
 						["coord"] = { 48.2, 55.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54195 },	-- A Beast with Brains
 					}),
 					q(54197, {	-- Freedom for the Da'kani
-						["qg"] = 147228,	-- Grong
+						["provider"] = { "n", 147228 },	-- Grong
 						["coord"] = { 48.2, 55.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54195 },	-- A Beast with Brains
 					}),
 					q(54198, {	-- Bittersweet Goodbyes
-						["qg"] = 147293,	-- Grong
+						["provider"] = { "n", 147293 },	-- Grong
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							54197,	-- Freedom for the Da'kani
@@ -1063,31 +1063,31 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(54199, {	-- The Needs of the Many
-						["qg"] = 147228,	-- Grong
+						["provider"] = { "n", 147228 },	-- Grong
 						["coord"] = { 46.8, 50.5, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54198 },	-- Bittersweet Goodbyes
 					}),
 					q(54200, {	-- Bring the Base
-						["qg"] = 147149,	-- Morton Cogswald
+						["provider"] = { "n", 147149 },	-- Morton Cogswald
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54199 },	-- The Needs of the Many
 					}),
 					q(54201, {	-- Fit for Grong
-						["qg"] = 147311,	-- Morton Cogswald
+						["provider"] = { "n", 147311 },	-- Morton Cogswald
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54200 },	-- Bring the Base
 					}),
 					q(54202, {	-- Calibrate the Core
-						["qg"] = 147148,	-- Megs
+						["provider"] = { "n", 147148 },	-- Megs
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54200 },	-- Bring the Base
 					}),
 					q(54203, {	-- The Embiggining
-						["qg"] = 147148,	-- Megs
+						["provider"] = { "n", 147148 },	-- Megs
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -1096,26 +1096,26 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(54204, {	-- Total Temple Destruction
-						["qg"] = 147148,	-- Megs
+						["provider"] = { "n", 147148 },	-- Megs
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54203 },	-- The Embiggining
 					}),
 					q(54205, {	-- A Nice Nap
-						["qg"] = 147519,	-- Kelsey Steelspark
+						["provider"] = { "n", 147519 },	-- Kelsey Steelspark
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54204 },	-- Total Temple Destruction
 					}),
 					q(54206, {	-- The Sleeper Agent
-						["qg"] = 147519,	-- Kelsey Steelspark
+						["provider"] = { "n", 147519 },	-- Kelsey Steelspark
 						["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54205 },	-- A Nice Nap
 					}),
 				--	BETWEEN THE SLEEPER AGENT AND MISCHIEF MANAGED
 					q(54171, {	-- The Abyssal Scepter
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "This quest will be available in Boralus when you reach 14,000 Revered reputation with 7th Legion (66.6% of Revered).",
@@ -1123,7 +1123,7 @@ _.ExpansionFeatures =
 					}),
 				--	MISCHIEF MANAGED STARTS HERE	— NEED TO DO ON CLOTH/LEATHER/PLATE
 					q(54169, {	-- The Treasury Heist
-						["qg"] = 146982,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
 						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54171 },	-- The Abyssal Scepter
@@ -1132,7 +1132,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 54169 },	-- The Treasury Heist
 						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 146982,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
 						["g"] = {
 							i(163339),	-- 7th Legionnaire's Hood
 							i(163337),	-- 7th Legionnaire's Amice
@@ -1145,33 +1145,33 @@ _.ExpansionFeatures =
 					}),
 				--	BETWEEN MISCHIEF MANAGED AND HE WHO WALKS IN THE LIGHT
 					q(54302, {	-- The Fall of Zuldazar
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54510 },	-- Mischief Managed
 						-- Technically available before turning in this quest, but is the next part of the campaign.
 					}),
 					q(54303, {	-- The March to Nazmir
-						["qg"] = 147819,	-- Blademaster Telaamon
+						["provider"] = { "n", 147819 },	-- Blademaster Telaamon
 						["coord"] = { 39.1, 77.1, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54302 },	-- The Fall of Zuldazar
 					}),
 				--	HE WHO WALKS IN THE LIGHT STARTS HERE
 					q(54310, {	-- Repurposing Their Village
-						["qg"] = 147842,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
 						["coord"] = { 30.9, 29.5, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54303 },	-- The March to Nazmir
 					}),
 					q(54404, {	-- Dark Iron Machinations
-						["qg"] = 147843,	-- Master Mathias Shaw
+						["provider"] = { "n", 147843 },	-- Master Mathias Shaw
 						["coord"] = { 30.9, 29.5, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54303 },	-- The March to Nazmir
 					}),
 					q(54312, {	-- Fog of War
-						["qg"] = 147844,	-- Blademaster Telaamon
+						["provider"] = { "n", 147844 },	-- Blademaster Telaamon
 						["coord"] = { 33.3, 45.9, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -1180,37 +1180,37 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(54407, {	-- Lurking in the Swamp
-						["qg"] = 147842,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
 						["coord"] = { 33.6, 47.7, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54312 },	-- Fog of War
 					}),
 					q(54412, {	-- Zul'jan Deluge
-						["qg"] = 147842,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
 						["coord"] = { 35.7, 68.1, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54407 },	-- Lurking in the Swamp
 					}),
 					q(54417, {	-- Showing Our Might
-						["qg"] = 147842,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
 						["coord"] = { 44.2, 78.8, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54412 },	-- Zul'jan Deluge
 					}),
 					q(54421, {	-- Taming their Beasts
-						["qg"] = 147843,	-- Master Mathias Shaw
+						["provider"] = { "n", 147843 },	-- Master Mathias Shaw
 						["coord"] = { 44.2, 78.6, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54412 },	-- Zul'jan Deluge
 					}),
 					q(54418, {	-- The Mech of Death
-						["qg"] = 147844,	-- Blademaster Telaamon
+						["provider"] = { "n", 147844 },	-- Blademaster Telaamon
 						["coord"] = { 44.2, 78.6, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54412 },	-- Zul'jan Deluge
 					}),
 					q(54441, {	-- Taking the Blood Gate
-						["qg"] = 147842,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
 						["coord"] = { 50.4, 84.1, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -1220,26 +1220,26 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(54459, {	-- He Who Walks in the Light
-						["qg"] = 147842,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
 						["coord"] = { 50.4, 84.1, 863 },	-- Nazmir
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54441 },	-- Taking the Blood Gate
 					}),
 				--	AFTER TIDES OF VENGEANCE
 					q(54485, {	-- Battle of Dazar'alor
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 					}),
 					q(54163, {	-- As the Dust Settles
-						["qg"] = 135612,	-- Halford Wyrmbane
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54485 },	-- Battle of Dazar'alor
 					}),
 					q(54183, {	-- Dead Reckoning
-						["qg"] = 147885,	-- Anduin Wrynn
+						["provider"] = { "n", 147885 },	-- Anduin Wrynn
 						["coord"] = { 49.2, 85.4, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54163 },	-- As the Dust Settles
@@ -1254,7 +1254,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 1355 },	-- Nazjatar
 						["lvl"] = 120,
-						["qg"] = 150101,	-- Lady Jaina Proudmoore
+						["provider"] = { "n", 150101 },	-- Lady Jaina Proudmoore
 					}),
 					q(55783, {	-- Stay of Execution
 						["sourceQuests"] = { 55784 },	-- Payment in Kind
@@ -1265,7 +1265,7 @@ _.ExpansionFeatures =
 							1479,	-- Baine Rescue (Scenario)
 						},
 						["lvl"] = 120,
-						["qg"] = 107574,	-- Anduin Wrynn
+						["provider"] = { "n", 107574 },	-- Anduin Wrynn
 					}),
 				}),
 			},

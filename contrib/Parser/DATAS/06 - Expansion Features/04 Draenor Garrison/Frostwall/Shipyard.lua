@@ -16,16 +16,16 @@ _.ExpansionFeatures =
 						}),
 						q(39057, {	-- Command of the Seas
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 						}),
 						q(39003, {	-- Cooking the Books
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							["sourceQuest"] = 39000,	-- We Don't Need No Library Card
 						}),
 						q(39004, {	-- Darkness Incarnate
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 						}),
 						q(39401, {	-- Destroying the Competition
 							["races"] = HORDE_ONLY,
@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 						}),
 						q(37840, {	-- Draenor's Blessing
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							["g"] = {
 								un(4, i(124634)),	-- Thorasus, the Stone Heart of Draenor
 								un(4, i(124635)),	-- Nithramus, the All-Seer
@@ -60,7 +60,7 @@ _.ExpansionFeatures =
 						}),
 						q(39697, {	-- Master vs. Commander
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							["sourceQuest"] = 39057,	-- Command of the Seas
 							["g"] = {
 								 un(40, i(128693)),	-- Draenic Sea Chart
@@ -80,7 +80,7 @@ _.ExpansionFeatures =
 						}),
 						q(37841, {	-- The Final Assault
 							["u"] = 40,
-							["qg"] = 90233,	-- Archmage Khadgar
+							["provider"] = { "n", 90233 },	-- Archmage Khadgar
 							["sourceQuest"] = 37837,	-- An Inside Job
 						}),
 						q(37889, {	-- The Invasion of Tanaan
@@ -89,11 +89,11 @@ _.ExpansionFeatures =
 						}),
 						q(37835, {	-- The Shadow War
 							["u"] = 40,
-							["qg"] = 83823,	-- Archmage Khadgar
+							["provider"] = { "n", 83823 },	-- Archmage Khadgar
 						}),
 						q(39000, {	-- We Don't Need No Library Card
 							["u"] = 40,
-							["qg"] = 92213,	-- Archmage Khadgar
+							["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							["sourceQuest"] = 39024,	-- Call of the Archmage
 						}),
 					}),

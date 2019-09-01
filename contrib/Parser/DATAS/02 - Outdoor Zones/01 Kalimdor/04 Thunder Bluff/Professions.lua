@@ -9,7 +9,7 @@ _.Zones =
 				prof(171, {	-- Alchemy
 					n(-17, {	-- Quests
 						q(29481, {	-- Elixir Master
-							["qg"] = 3009,	-- Bena Winterhoof (Thunder Bluff)
+							["provider"] = { "n", 3009 },	-- Bena Winterhoof (Thunder Bluff)
 							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy	
@@ -24,7 +24,7 @@ _.Zones =
 							},]]								
 						}),
 						q(29067, {	-- Potion Master
-							["qg"] = 3009,	-- Bena Winterhoof (Thunder Bluff)
+							["provider"] = { "n", 3009 },	-- Bena Winterhoof (Thunder Bluff)
 							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -39,7 +39,7 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["qg"] = 3009,	-- Bena Winterhoof (Thunder Bluff)
+							["provider"] = { "n", 3009 },	-- Bena Winterhoof (Thunder Bluff)
 							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -63,7 +63,7 @@ _.Zones =
 					}),
 					n(-17, { 	-- Quests
 						q(29364, {	-- Corn Mash
-							["qg"] = 3026,	-- Aska Mistrunner
+							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -75,7 +75,7 @@ _.Zones =
 							},
 						}),
 						q(29362, {	-- "Magic" Mushrooms
-							["qg"] = 3026,	-- Aska Mistrunner
+							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -87,7 +87,7 @@ _.Zones =
 							},
 						}),
 						q(29363, {	-- Mulgore Spice Bread
-							["qg"] = 3026,	-- Aska Mistrunner
+							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -99,7 +99,7 @@ _.Zones =
 							},
 						}),
 						q(29365, {	-- Perfectly Picked Portions
-							["qg"] = 3026,	-- Aska Mistrunner
+							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -111,7 +111,7 @@ _.Zones =
 							},
 						}),
 						q(29358, {	-- Pining for Nuts
-							["qg"] = 3026,	-- Aska Mistrunner
+							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -127,7 +127,7 @@ _.Zones =
 				prof(202, {	-- Engineering
 					n(-17, {	-- Quests
 						q(29477, {	-- Gnomish Engineering
-							["qg"] = 52651,	-- Engineer Palehoof
+							["provider"] = { "n", 52651 },	-- Engineer Palehoof
 							["coord"] = { 36.8, 59.6, 88 },
 							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
 							["requireSkill"] = 202,	-- Engineering
@@ -136,7 +136,7 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 						q(29475, {	-- Goblin Engineering
-							["qg"] = 52651,	-- Engineer Palehoof
+							["provider"] = { "n", 52651 },	-- Engineer Palehoof
 							["coord"] = { 36.8, 59.6, 88 },
 							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
 							["requireSkill"] = 202,	-- Engineering
@@ -154,7 +154,7 @@ _.Zones =
 					}),
 					n(-17, { 	-- Quests
 						q(29349, {	-- Craving Crayfish
-							["qg"] = 3028,	-- Kah Mistrunner
+							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -171,7 +171,7 @@ _.Zones =
 							},
 						}),
 						q(29345, {	-- Pond Predators
-							["qg"] = 3028,	-- Kah Mistrunner
+							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -188,7 +188,7 @@ _.Zones =
 							},
 						}),
 						q(29354, {	-- Shiny Baubles
-							["qg"] = 3028,	-- Kah Mistrunner
+							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -205,7 +205,7 @@ _.Zones =
 							},
 						}),
 						q(29348, {	-- The Race to Restock
-							["qg"] = 3028,	-- Kah Mistrunner
+							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -222,7 +222,7 @@ _.Zones =
 							},
 						}),
 						q(29346, {	-- The Ring's the Thing
-							["qg"] = 3028,	-- Kah Mistrunner
+							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing

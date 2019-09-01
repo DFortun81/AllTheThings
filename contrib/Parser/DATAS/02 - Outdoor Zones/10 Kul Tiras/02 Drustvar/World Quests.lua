@@ -1289,7 +1289,7 @@ _.Zones =
 				}),
 ]]--				
 					q(53701, {	-- A Drust Cause (Faction Assault WQ)
-						["qg"] = 135815,	-- Quartermaster Alcorn <Order of Embers Emissary>
+						["provider"] = { "n", 135815 },	-- Quartermaster Alcorn <Order of Embers Emissary>
 						["coord"] = { 37.03, 51.35, 896 },	-- Waycrest Gryphon Start
 						["crs"] = { 144984 },	-- Waycrest Gryphon
 						["lvl"] = 110,
@@ -1464,7 +1464,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52009, {	-- Crab People
-						["qg"] = 139489,	-- Captain Hermes
+						["provider"] = { "n", 139489 },	-- Captain Hermes
 						["lvl"] = 120,
 						["collectible"] = false,
 						["g"] = {
@@ -1589,7 +1589,7 @@ _.Zones =
 						["lvl"] = 120,
 					}),
 					q(54137, {	-- In Every Dark Corner (Faction Assault WQ)
-						["qg"] = 148142,		-- Rokhan
+						["provider"] = { "n", 148142 },		-- Rokhan
 						["crs"] = { 148380 },	-- Vindicator Caeduum
 						["coords"] = {
 							{ 36.91, 26.47, 896 },	-- Rokhan [Complete Rokhan's Ritual]
@@ -1682,7 +1682,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52218, {	-- Night Horrors
-						["qg"] = 140461,	-- Dilbert McClint
+						["provider"] = { "n", 140461 },	-- Dilbert McClint
 						["lvl"] = 120,
 						["collectible"] = false,
 						["g"] = {
@@ -1730,7 +1730,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52278, {	-- Rogue Azerite
-						["qg"] = 140813,	-- Fizzie Sparkwhistle
+						["provider"] = { "n", 140813 },	-- Fizzie Sparkwhistle
 						["lvl"] = 120,
 						["collectible"] = false,
 						["g"] = {
@@ -1850,7 +1850,7 @@ _.Zones =
 						},
 					}),
 					q(52297, {	-- What's the Buzz?
-						["qg"] = 140880,	-- Michael Skarn
+						["provider"] = { "n", 140880 },	-- Michael Skarn
 						["lvl"] = 120,
 						["collectible"] = false,
 						["g"] = {
@@ -1900,7 +1900,7 @@ _.Zones =
 					q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
 						["requireSkill"] = 333,	-- Enchanting
 						["lvl"] = 120,
-						["qg"] = 135815,	-- Quarteermaster Alcorn
+						["provider"] = { "n", 135815 },	-- Quarteermaster Alcorn
 						["coord"] = { 37.81, 49.01, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,

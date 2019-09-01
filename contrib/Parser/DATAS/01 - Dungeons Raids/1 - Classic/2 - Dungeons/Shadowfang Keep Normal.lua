@@ -11,22 +11,22 @@ _.Instances = { tier(1, {	-- Classic
 			d(1, {		-- Normal
 				n(-17, {	-- Quests
 					q(27917, { 	-- Sniffing Them Out
-						["qg"] = 47706,	-- Packleader Ivar Bloodfang
+						["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(27920, { 	-- Armored to the Teeth
 						["sourceQuests"] = { 27917 },	-- Sniffing Them Out
-						["qg"] = 47706,	-- Packleader Ivar Bloodfang
+						["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(27921, { 	-- Fighting Tooth and Claw
 						["sourceQuests"] = { 27920 },	-- Armored to the Teeth
-						["qg"] = 47706,	-- Packleader Ivar Bloodfang
+						["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(27968, { 	-- Fury of the Pack
 						["sourceQuests"] = { 27921 },	-- Fighting Tooth and Claw
-						["qg"] = 47706,	-- Packleader Ivar Bloodfang
+						["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(65984), 	-- Breastplate of the Terrible Price
@@ -39,22 +39,22 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(27974, { 	-- This Land is Our Land
-						["qg"] = 47293,	-- Deathstalker Commander Belmont
+						["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
 						["races"] = HORDE_ONLY,
 					}),
 					q(27988, { 	-- Plague...Plague Everywhere!
 						["sourceQuests"] = { 27974 },	-- This Land is Our Land
-						["qg"] = 47293,	-- Deathstalker Commander Belmont
+						["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
 						["races"] = HORDE_ONLY,
 					}),
 					q(27996, { 	-- Orders Are For the Living
 						["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
-						["qg"] = 47293,	-- Deathstalker Commander Belmont
+						["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
 						["races"] = HORDE_ONLY,
 					}),
 					q(27998, { 	-- Sweet, Merciless Revenge
 						["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
-						["qg"] = 47293,	-- Deathstalker Commander Belmont
+						["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(66038), 	-- Breastplate of the Terrible Price

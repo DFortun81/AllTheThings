@@ -241,7 +241,7 @@ _.Zones =
 					["crs"] = { 143040 },	-- Shack Crab
 				}),
 				q(52061, {	-- Taptaf the Pig!
-					["qg"] = 139380,	-- Taptaf
+					["provider"] = { "n", 139380 },	-- Taptaf
 					["coord"] = { 65.0, 83.2, 896 },
 					["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
 					["g"] = {

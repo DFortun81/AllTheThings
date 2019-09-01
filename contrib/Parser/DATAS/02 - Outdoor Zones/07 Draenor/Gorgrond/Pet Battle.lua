@@ -48,7 +48,7 @@ _.Zones =
 				q(37201, {	-- Cymre Brightblade
 					["isDaily"] = true,
 					["coord"] = { 51.1, 70.6, 543 },
-					["qg"] = 83837,	-- Cymre Brightblade
+					["provider"] = { "n", 83837 },	-- Cymre Brightblade
 					["g"] = {
 						i(116415),	-- Shiny Pet Charm x2
 					},

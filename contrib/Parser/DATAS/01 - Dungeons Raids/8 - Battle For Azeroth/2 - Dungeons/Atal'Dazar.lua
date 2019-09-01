@@ -23,7 +23,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),					
 			n(-17, {	-- Quests
 				q(51517, {	-- You Owe Me a Spirit
-					["qg"] = 140405,	-- Bwonsamdi
+					["provider"] = { "n", 140405 },	-- Bwonsamdi
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 51516 },	-- Atal'Dazar: Ashes of a Warchief
 					["g"] = {

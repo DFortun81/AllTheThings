@@ -20,7 +20,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["coord"] = { 71.0, 46.5, 104 },	-- Black Temple, Shadowmoon Valley
 		["g"] = {
 			faction(1012, {	-- Ashtongue Deathsworn
-				["qg"] = 23159,	-- Okuno <Ashtongue Deathsworn Quartermaster>
+				["provider"] = { "n", 23159 },	-- Okuno <Ashtongue Deathsworn Quartermaster>
 				["g"] = {
 					ach(958),	-- Sworn to the Deathsworn
 					i(32429),	-- Pattern: Boots of Shackled Souls
@@ -969,12 +969,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			n(-17, {	-- Quests
 				q(10957, {	-- Redemption of the Ashtongue (UNTESTED, NEEDS CONFIRMATION)
-					["qg"] = 23158,	-- Seer Kanai
+					["provider"] = { "n", 23158 },	-- Seer Kanai
 					["coord"] = { 62.0, 50.2 },
 					["sourceQuests"] = { 10958 },	-- Seek Out the Ashtongue
 				}),
 				q(10959, {	-- The Fall of the Betrayer (UNTESTED, NEEDS CONFIRMATION)
-					["qg"] = 23158,	-- Seer Kanai
+					["provider"] = { "n", 23158 },	-- Seer Kanai
 					["coord"] = { 62.0, 50.2 },
 					["sourceQuests"] = { 10957 },	-- Redemption of the Ashtongue
 					["g"] = {

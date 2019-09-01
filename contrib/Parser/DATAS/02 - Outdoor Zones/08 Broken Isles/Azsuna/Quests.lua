@@ -14,7 +14,7 @@ _.Zones =
 				}),
 				q(38857, {	-- A Favor for Mr. Shackle
 					["coord"] = { 50.2, 61.0, 630 },
-					["qg"] = 88863,	-- Seska Seafang
+					["provider"] = { "n", 88863 },	-- Seska Seafang
 					["g"] = {
 						i(133039),	-- Breath of Al'Akir
 						i(133037),	-- Zandalari Voodoo Totem
@@ -31,17 +31,17 @@ _.Zones =
 				q(37991, {	-- Agapanthus
 					["sourceQuests"] = { 37853 },	-- The Death of the Eldest
 					["coord"] = { 48.0, 27.1, 630 },
-					["qg"] = 89795,	-- Emmigosa
+					["provider"] = { "n", 89795 },	-- Emmigosa
 				}),
 				q(37492, {	-- A Rather Long Walk
 					["sourceQuests"] = { 37256 },	-- They Came From the Sea
 					["coord"] = { 47.0, 41.4, 630 },
-					["qg"] = 88798,	-- Lady Irisse
+					["provider"] = { "n", 88798 },	-- Lady Irisse
 				}),
 				q(42367, {	-- Arkethrax
 					["sourceQuests"] = { 42375 },	-- Eye See You
 					["coord"] = { 63.8, 28.8, 630 },
-					["qg"] = 107245,	-- Marius Felbane
+					["provider"] = { "n", 107245 },	-- Marius Felbane
 					["g"] = {
 						crit(1, {	-- Azsuna
 							["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
@@ -56,7 +56,7 @@ _.Zones =
 						42693,	-- You Never Know Until You Scry
 					},
 					["coord"] = { 53.3, 45.4, 630 },
-					["qg"] = 108328,	-- Olothil Starlance
+					["provider"] = { "n", 108328 },	-- Olothil Starlance
 					["g"] = {
 						i(138820),	-- Starlance Pauldrons
 						i(138821),	-- Starlance Mantle
@@ -70,7 +70,7 @@ _.Zones =
 				q(37507, {	-- Boss Whalebelly's in Charge
 					["sourceQuests"] = { 37496 },	-- Infiltrating Shipwreck Arena
 					["coord"] = { 50.0, 48.4, 630 },
-					["qg"] = 88873,	-- Okuna Longtusk
+					["provider"] = { "n", 88873 },	-- Okuna Longtusk
 				}),
 				q(38407, {	-- Bottled Up
 				--	["itemID"] = 122699,	-- Okuna's Message
@@ -88,7 +88,10 @@ _.Zones =
 						{ 40.8, 9.20, 630 },
 						{ 48.6, 12.2, 630 },
 					},
-					["qgs"] = { 91061, 91065 },	-- Cellarman Voodani (two different versions)
+					["providers"] = {
+						{ "n", 91061 },	-- Cellarman Voodani
+						{ "n", 91065 },	-- Cellarman Voodani
+					},
 					["g"] = {
 						i(121493),	-- Liastrin's Wine Taster
 						i(121489),	-- Valiana's Secret Recipe
@@ -101,7 +104,7 @@ _.Zones =
 				}),
 				q(42692, {	-- Children of Nar'thalas
 					["coord"] = { 53.3, 45.4, 630 },
-					["qg"] = 89326,	-- Kallista Starlance
+					["provider"] = { "n", 89326 },	-- Kallista Starlance
 				}),
 				q(42567, {	-- Cursed to Wither
 					["sourceQuests"] = {
@@ -109,14 +112,14 @@ _.Zones =
 						38015,	-- On the Brink
 					},
 					["coord"] = { 49.9, 26.6, 630 },
-					["qg"] = 90738,	-- Stellagosa
+					["provider"] = { "n", 90738 },	-- Stellagosa
 				}),
 				q(37449, {	-- Dark Revelations
 					["sourceQuests"] = {
 						37450,	-- Saving Stellagosa
 						37656,	-- Fel Machinations
 					},
-					["qg"] = 90474,	-- Kor'vas Bloodthorn
+					["provider"] = { "n", 90474 },	-- Kor'vas Bloodthorn
 					["g"] = {
 						i(132984),	-- Abandoned Highborne Mana Crystal
 						i(132985),	-- Blood of the Vanquished Highborne
@@ -142,12 +145,12 @@ _.Zones =
 						44137,	-- Into the Fray (DH version)
 					},
 					["coord"] = { 43.2, 43.1, 630 },
-					["qg"] = 89398,	-- Allari the Souleater
+					["provider"] = { "n", 89398 },	-- Allari the Souleater
 				}),
 				q(37736, {	-- Dressing With Class
 					["sourceQuests"] = { 37468 },	-- Into the Academy
 					["coord"] = { 53.4, 48.9, 631 },	-- Nar'thalas Academy
-					["qg"] = 89660,	-- Thyrillion
+					["provider"] = { "n", 89660 },	-- Thyrillion
 					["g"] = {
 						i(138873),	-- Mystical Frosh Hat (TOY!)
 					},
@@ -155,12 +158,12 @@ _.Zones =
 				q(38286, {	-- Eye of Azshara: Wrath of Azshara
 					["sourceQuests"] = { 37470 },	-- The Head of the Snake
 					["coord"] = { 61.7, 41.1, 630 },
-					["qg"] = 91403,	-- Prince Farondis
+					["provider"] = { "n", 91403 },	-- Prince Farondis
 				}),
 				q(42375, {	-- Eye See You
 					["sourceQuests"] = { 42372 },	-- Felblaze Ingress
 					["coord"] = { 63.8, 29.0, 630 },
-					["qg"] = 107244,	-- Tehd Shoemaker
+					["provider"] = { "n", 107244 },	-- Tehd Shoemaker
 				}),
 				q(40794, {	-- Fate of the Queen's Reprisal (A)
 					["sourceQuests"] = { 37659 },	-- The Captain's Foot Locker
@@ -191,7 +194,7 @@ _.Zones =
 				q(38014, {	-- Feasting on the Dragon
 					["sourceQuests"] = { 37862 },	-- Still Alive
 					["coord"] = { 49.7, 26.8, 630 },
-					["qg"] = 102988,	-- Archmage Khadgar
+					["provider"] = { "n", 102988 },	-- Archmage Khadgar
 					["g"] = {
 						i(121435),	-- Leywalker Robes
 						i(121418),	-- Ruin-Stalker Vest
@@ -206,14 +209,14 @@ _.Zones =
 				q(42372, {	-- Felblaze Ingress
 					["isBreadcrumb"] = true,
 					["coord"] = { 50.4, 30.6, 630 },
-					["qg"] = 106915,	-- Marius Felbane
+					["provider"] = { "n", 106915 },	-- Marius Felbane
 				}),
 				q(45127, {	-- Fel-Crossed Lovers
 				--	this is an artifact quest, but i'm not sure for which one(s).
 					["coord"] = { 25.6, 57.6, 630 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
-					["qg"] = 116189,	-- Levia Laurence
+					["provider"] = { "n", 116189 },	-- Levia Laurence
 				}),
 				q(37656, {	-- Fel Machinations
 					["sourceQuests"] = {
@@ -222,31 +225,31 @@ _.Zones =
 						44140,	-- From Within (DH - Kayn)
 					},
 					["coord"] = { 41.2, 50.5, 630 },
-					["qg"] = 90474,	-- Kor'vas Bloodthorn
+					["provider"] = { "n", 90474 },	-- Kor'vas Bloodthorn
 				}),
 				q(36920, {	-- From Within (Non-DH version)
 					["sourceQuests"] = { 37660 },	-- The Scythe of Souls
 					["classes"] = exclude(12, ALL_CLASSES),	-- all classes, excluding Demon Hunter
 					["coord"] = { 43.5, 43.4, 630 },
-					["qg"] = 89362,	-- Kayn Sunfury
+					["provider"] = { "n", 89362 },	-- Kayn Sunfury
 				}),
 				q(40815, {	-- From Within (DH version, must choose Altruis)
 					["sourceQuests"] = { 37660 },	-- The Scythe of Souls
 					["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests.",
 					["classes"] = { 12 },	-- Demon Hunter
-					["qg"] = 101927,	-- Altruis the Sufferer
+					["provider"] = { "n", 101927 },	-- Altruis the Sufferer
 				}),
 				q(44140, {	-- From Within (DH version, must choose Kayn)
 					["sourceQuests"] = { 37660 },	-- The Scythe of Souls
 					["description"] = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests.",
 					["classes"] = { 12 },	-- Demon Hunter
 					["coord"] = { 43.5, 43.4, 630 },
-					["qg"] = 89362,	-- Kayn Sunfury
+					["provider"] = { "n", 89362 },	-- Kayn Sunfury
 				}),
 				q(37678, {	-- Hit the Books
 					["sourceQuests"] = { 37468 },	-- Into the Academy
 					["coord"] = { 53.4, 48.9, 631 },	-- Nar'thalas Academy
-					["qg"] = 89849,	-- Andellis
+					["provider"] = { "n", 89849 },	-- Andellis
 					["g"] = {
 						i(138843),	-- The Librarian's Handwraps
 						i(138842),	-- Bookbinding Wraps
@@ -261,7 +264,7 @@ _.Zones =
 				q(42756, {	-- Hunger's End
 					["sourceQuests"] = { 42567 },	-- Cursed to Wither
 					["coord"] = { 48.2, 22.7, 630 },
-					["qg"] = 91131,	-- Runas the Shamed
+					["provider"] = { "n", 91131 },	-- Runas the Shamed
 					["g"] = {
 						i(133016),	-- Azurewing Guile
 						i(133014),	-- Senegos' Despair
@@ -288,65 +291,65 @@ _.Zones =
 				q(37496, {	-- Infiltrating Shipwreck Arena
 					["sourceQuests"] = { 38407 },	-- Bottled Up
 					["coord"] = { 47.0, 41.4, 630 },
-					["qg"] = 88798,	-- Lady Irisse
+					["provider"] = { "n", 88798 },	-- Lady Irisse
 				}),
 				q(37468, {	-- Into the Academy
 					["sourceQuests"] = { 37467 },	-- The Walk of Shame
 					["coord"] = { 54.2, 42.0, 630 },
-					["qg"] = 88890,	-- Prince Farondis
+					["provider"] = { "n", 88890 },	-- Prince Farondis
 				}),
 				q(38834, {	-- Into the Fray (Non-DH version)
 					["sourceQuests"] = { 41220 },	-- Down to Azsuna
 					["classes"] = exclude(12, ALL_CLASSES),	-- all classes, excluding Demon Hunter
 					["coord"] = { 45.1, 42.9, 630 },
-					["qg"] = 93337,	-- Archmage Khadgar
+					["provider"] = { "n", 93337 },	-- Archmage Khadgar
 				}),
 				q(44137, {	-- Into the Fray (DH version)
 					["sourceQuests"] = { 41220 },	-- Down to Azsuna
 					["classes"] = { 12 },	-- Demon Hunter
 					["coord"] = { 45.1, 42.9, 630 },
-					["qg"] = 93337,	-- Archmage Khadgar
+					["provider"] = { "n", 93337 },	-- Archmage Khadgar
 				}),
 				q(45836, {	-- Jorach's Calling
 					["classes"] = { 4 },	-- Rogue
 					["coord"] = { 57.6, 63.4, 630 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
-					["qg"] = 119821,	-- Princess Tess Greymane
+					["provider"] = { "n", 119821 },	-- Princess Tess Greymane
 				}),
 				q(46326, {	-- Jorach's Calling
 					["classes"] = { 4 },	-- Rogue
 					["coord"] = { 57.6, 63.4, 630 },
 					["races"] = HORDE_ONLY,
-					["qg"] = 119822,	-- Lilian Voss
+					["provider"] = { "n", 119822 },	-- Lilian Voss
 				}),
 				q(38443, {	-- Journey to the Repose
 					["sourceQuests"] = { 37449 },	-- Dark Revelations
 					["coord"] = { 43.5, 43.4, 630 },
-					["qg"] = 93326,	-- Archmage Khadgar
+					["provider"] = { "n", 93326 },	-- Archmage Khadgar
 				}),
 				q(37528, {	-- Let Sleeping Giants Lie
 					["sourceQuests"] = { 37507 },	-- Boss Whalebelly's in Charge
 					["coord"] = { 50.0, 48.4, 630 },
-					["qg"] = 88873,	-- Okuna Longtusk
+					["provider"] = { "n", 88873 },	-- Okuna Longtusk
 				}),
 				q(38460, {	-- Let's Make A Deal
 					["sourceQuests"] = { 42238 },	-- Missing Demon
 					["coord"] = { 62.0, 51.3, 630 },
-					["qg"] = 91166,	-- Daglop
+					["provider"] = { "n", 91166 },	-- Daglop
 				}),
 				q(37960, {	-- Leyline Abuse
 					["sourceQuests"] = { 37857 },	-- Runas Knows the Way
 					["coord"] = { 53.4, 16.3, 630 },
-					["qg"] = 89978,	-- Projection of Senegos
+					["provider"] = { "n", 89978 },	-- Projection of Senegos
 				}),
 				q(37654, {	-- Maritime Law
 					["coord"] = { 56.5, 59.5, 630 },
-					["qg"] = 91419,	-- Mr. Shackle
+					["provider"] = { "n", 91419 },	-- Mr. Shackle
 				}),
 				q(37657, {	-- Making the World Safe for Profit
 					["coord"] = { 56.5, 59.5, 630 },
-					["qg"] = 91419,	-- Mr. Shackle
+					["provider"] = { "n", 91419 },	-- Mr. Shackle
 					["g"] = {
 						i(138852),	-- Gilnean Fleece Pantaloons
 						i(138851),	-- Corsair's Britches
@@ -364,17 +367,17 @@ _.Zones =
 				q(38232, {	-- Minion! Kill Them!
 					["sourceQuests"] = { 38460 },	-- Let's Make A Deal
 					["coord"] = { 62.8, 51.4, 630 },
-					["qg"] = 91166,	-- Daglop
+					["provider"] = { "n", 91166 },	-- Daglop
 				}),
 				q(42238, {	-- Missing Demon
 					["isBreadcrumb"] = true,
 					["coord"] = { 50.4, 30.6, 630 },
-					["qg"] = 106914,	-- Tehd Shoemaker
+					["provider"] = { "n", 106914 },	-- Tehd Shoemaker
 				}),
 				q(37536, {	-- Morale Booster
 					["sourceQuests"] = { 37510 },	-- Sternfathom's Champion
 					["coord"] = { 47.9, 48.7, 630 },
-					["qg"] = 88923,	-- Sternfathom
+					["provider"] = { "n", 88923 },	-- Sternfathom
 					["g"] = {
 						i(133828),	-- Recipe: Fighter Chow (Rank 1)
 					},
@@ -382,7 +385,7 @@ _.Zones =
 				q(37486, {	-- Nar'thalas Still Suffers
 					["sourceQuests"] = { 37497 },	-- Trailing the Tidestone
 					["coord"] = { 51.7, 44.2, 630 },
-					["qg"] = 88867,	-- Prince Farondis
+					["provider"] = { "n", 88867 },	-- Prince Farondis
 					["g"] = {
 						i(121487),	-- Nar'thalas Protector's Cape
 						i(132911),	-- Seal of House Farondis
@@ -391,7 +394,7 @@ _.Zones =
 				q(37542, {	-- No Time for Tryouts
 					["sourceQuests"] = { 37507 },	-- Boss Whalebelly's in Charge
 					["coord"] = { 50.0, 48.4, 630 },
-					["qg"] = 88873,	-- Okuna Longtusk
+					["provider"] = { "n", 88873 },	-- Okuna Longtusk
 					["g"] = {
 						i(121492),	-- Shiny Ookin' Bauble
 						i(121494),	-- Mundane Ookin' Curio
@@ -402,7 +405,7 @@ _.Zones =
 				q(38015, {	-- On the Brink
 					["sourceQuests"] = { 37862 },	-- Still Alive
 					["coord"] = { 50.0, 26.5, 630 },
-					["qg"] = 90738,	-- Stellagosa
+					["provider"] = { "n", 90738 },	-- Stellagosa
 					["g"] = {
 						i(129178),	-- Emmigosa (PET!)
 					},
@@ -410,7 +413,7 @@ _.Zones =
 				q(37257, {	-- Our Very Bones
 					["sourceQuests"] = { 37733 },	-- Prince Farondis
 					["coord"] = { 46.9, 41.2, 630 },
-					["qg"] = 88115,	-- Prince Farondis
+					["provider"] = { "n", 88115 },	-- Prince Farondis
 					["g"] = {
 						i(121432),	-- Leywalker Leggings
 						i(121434),	-- Ruin-Stalker Breeches
@@ -425,22 +428,22 @@ _.Zones =
 				q(37729, {	-- Pop Quiz: Advanced Rune Drawing
 					["sourceQuests"] = { 42371 },	-- Study Hall: Combat Research
 					["coord"] = { 29.5, 42.6, 631 },	-- Nar'thalas Academy
-					["qg"] = 89661,	-- Instructor Nidriel
+					["provider"] = { "n", 89661 },	-- Instructor Nidriel
 				}),
 				q(37728, {	-- Presentation is Everything
 					["sourceQuests"] = { 37256 },	-- They Came From the Sea
 					["coord"] = { 47.0, 41.3, 630 },
-					["qg"] = 89341,	-- Magister Garuhod
+					["provider"] = { "n", 89341 },	-- Magister Garuhod
 				}),
 				q(37733, {	-- Prince Farondis
 					["sourceQuests"] = { 37256 },	-- They Came From the Sea
 					["coord"] = { 48.4, 34.4, 630 },
-					["qg"] = 89023,	-- Nightwatcher Idri
+					["provider"] = { "n", 89023 },	-- Nightwatcher Idri
 				}),
 				q(42367, {	-- Quantity over Quality
 					["sourceQuests"] = { 42375 },	-- Eye See You
 					["coord"] = { 63.8, 28.8, 630 },
-					["qg"] = 107245,	-- Marius Felbane
+					["provider"] = { "n", 107245 },	-- Marius Felbane
 				}),
 				q(37658, {	-- Reignite the Wards
 					["sourceQuests"] = {
@@ -448,7 +451,7 @@ _.Zones =
 						44137,	-- Into the Fray (DH version)
 					},
 					["coord"] = { 43.1, 43.6, 630 },
-					["qg"] = 90317,	-- Jace Darkweaver
+					["provider"] = { "n", 90317 },	-- Jace Darkweaver
 					["g"] = {
 						i(141623),	-- Demon Warding Halo
 						i(141622),	-- Guise of the Demon Warder
@@ -463,7 +466,7 @@ _.Zones =
 				q(37538, {	-- Round 1, Fight!
 					["sourceQuests"] = { 37536 },	-- Morale Booster
 					["coord"] = { 47.9, 48.7, 630 },
-					["qg"] = 89048,	-- Sternfathom
+					["provider"] = { "n", 89048 },	-- Sternfathom
 					["g"] = {
 						i(121438),	-- Leywalker Amice
 						i(121436),	-- Ruin-Stalker Spaulders
@@ -478,12 +481,12 @@ _.Zones =
 				q(37857, {	-- Runas Knows the Way
 					["sourceQuests"] = { 37957 },	-- Runas the Shamed
 					["coord"] = { 49.1, 16.1, 630 },
-					["qg"] = 90383,	-- Runas the Shamed
+					["provider"] = { "n", 90383 },	-- Runas the Shamed
 				}),
 				q(37957, {	-- Runas the Shamed
 					["sourceQuests"] = { 37858 },	-- Stellagosa
 					["coord"] = { 46.6, 15.7, 630 },
-					["qg"] = 90065,	-- Stellagosa
+					["provider"] = { "n", 90065 },	-- Stellagosa
 					["g"] = {
 						i(132971),	-- Nightfallen's Desperation
 						i(132970),	-- Runas' Nearly Depleted Ley Crystal
@@ -497,7 +500,7 @@ _.Zones =
 				q(37530, {	-- Save Yourself
 					["sourceQuests"] = { 37469 },	-- The Tidestone: Shattered
 					["coord"] = { 57.8, 43.3, 630 },
-					["qg"] = 89009,	-- Prince Farondis
+					["provider"] = { "n", 89009 },	-- Prince Farondis
 					["g"] = {
 						i(121420),	-- Leywalker Treads
 						i(121422),	-- Ruin-Stalker Boots
@@ -516,7 +519,7 @@ _.Zones =
 						44140,	-- From Within (DH - Kayn)
 					},
 					["coord"] = { 41.2, 50.5, 630 },
-					["qg"] = 90474,	-- Kor'vas Bloodthorn
+					["provider"] = { "n", 90474 },	-- Kor'vas Bloodthorn
 					["g"] = {
 						i(132961),	-- Cape of Azure Fury
 						i(132964),	-- Stellagosa's Breath
@@ -536,7 +539,7 @@ _.Zones =
 					["sourceQuests"] = { 37856 },	-- The Withered
 					["isBreadcrumb"] = true,
 					["coord"] = { 49.1, 16.4, 630 },
-					["qg"] = 89978,	-- Projection of Senegos
+					["provider"] = { "n", 89978 },	-- Projection of Senegos
 				}),
 				q(37510, {	-- Sternfathom's Champion
 					["sourceQuests"] = {
@@ -544,33 +547,33 @@ _.Zones =
 						37542,	-- No Time for Tryouts
 					},
 					["coord"] = { 50.0, 48.4, 630 },
-					["qg"] = 88873,	-- Okuna Longtusk
+					["provider"] = { "n", 88873 },	-- Okuna Longtusk
 				}),
 				q(37862, {	-- Still Alive
 				--	may also require "You Scratch My Back..."
 					["sourceQuests"] = { 37861 },	-- THe Nightborne Prince
 					["coord"] = { 57.5, 13.4, 630 },
-					["qg"] = 107995,	-- Stellagosa
+					["provider"] = { "n", 107995 },	-- Stellagosa
 				}),
 				q(42371, {	-- Study Hall: Combat Research
 					["sourceQuests"] = { 42370 },	-- Wanding 101
 					["coord"] = { 30.9, 44.6, 631 },	-- Nar'thalas Academy
-					["qg"] = 107334,	-- Sythorne
+					["provider"] = { "n", 107334 },	-- Sythorne
 				}),
 				q(37659, {	-- The Captain's Foot Locker
 					["sourceQuests"] = { 37654 },	-- Maritime Law
 					["coord"] = { 64.2, 56.0, 630 },
-					["qg"] = 106881,	-- Looper Allen
+					["provider"] = { "n", 106881 },	-- Looper Allen
 				}),
 				q(37859, {	-- The Consumed
 					["sourceQuests"] = { 37855 },	-- The Last of the Last
 					["coord"] = { 49.3, 15.6, 630 },
-					["qg"] = 90423,	-- Mana-Drained Whelpling
+					["provider"] = { "n", 90423 },	-- Mana-Drained Whelpling
 				}),
 				q(37853, {	-- The Death of the Eldest
 					["sourceQuests"] = { 38443 },	-- Journey to the Repose
 					["coord"] = { 47.9, 27.2, 630 },
-					["qg"] = 93354,	-- Archmage Khadgar
+					["provider"] = { "n", 93354 },	-- Archmage Khadgar
 				}),
 				q(37518, {	-- The Haunted Halls
 					["sourceQuests"] = {
@@ -578,12 +581,12 @@ _.Zones =
 						37678,	-- Hit the Books
 					},
 					["coord"] = { 53.4, 48.9, 631 },	-- Nar'thalas Academy
-					["qg"] = 89660,	-- Thyrillion
+					["provider"] = { "n", 89660 },	-- Thyrillion
 				}),
 				q(37730, {	-- The Headmistress' Keys
 					["sourceQuests"] = { 37729 },	-- Pop Quiz: Advanced Rune Drawing
 					["coord"] = { 29.5, 42.6, 631 },	-- Nar'thalas Academy
-					["qg"] = 89661,	-- Instructor Nidriel
+					["provider"] = { "n", 89661 },	-- Instructor Nidriel
 					["g"] = {
 						i(121484),	-- Psychotic Scholar's Chain
 						i(132910),	-- Leywalker Bracers
@@ -595,7 +598,7 @@ _.Zones =
 				q(37470, {	-- The Head of the Snake
 					["sourceQuests"] = { 37530 },	-- Save Yourself
 					["coord"] = { 57.8, 43.4, 630 },
-					["qg"] = 89009,	-- Prince Farondis
+					["provider"] = { "n", 89009 },	-- Prince Farondis
 					["g"] = {
 						i(133028),	--	Gale of Azshara
 						i(133026),	--	Cursed Dissection Blade
@@ -618,7 +621,7 @@ _.Zones =
 				q(37959, {	-- The Hunger Returns
 					["sourceQuests"] = { 37857 },	-- Runas Knows the Way
 					["coord"] = { 53.7, 16.7, 630 },
-					["qg"] = 90383,	-- Runas the Shamed
+					["provider"] = { "n", 90383 },	-- Runas the Shamed
 					["g"] = {
 						i(138876), 		-- Runas' Crystal Grinder (TOY!)
 					},
@@ -626,7 +629,7 @@ _.Zones =
 				q(42271, {	-- Their Dying Breaths
 					["sourceQuests"] = { 37991 },	-- Agapanthus
 					["coord"] = { 48.8, 26.4, 630 },
-					["qg"] = 90543,	-- Agapanthus
+					["provider"] = { "n", 90543 },	-- Agapanthus
 					["g"] = {
 						i(121481),	-- Tranquil Azurewing Band
 						i(121425),	-- Leywalker Gloves
@@ -638,12 +641,12 @@ _.Zones =
 				q(37855, {	-- The Last of the Last
 					["sourceQuests"] = { 42271 },	-- Their Dying Breaths
 					["coord"] = { 48.0, 26.9, 630 },
-					["qg"] = 89975,	-- Senegos
+					["provider"] = { "n", 89975 },	-- Senegos
 				}),
 				q(37727, {	-- The Magister of Mixology
 					["sourceQuests"] = { 37256 },	-- They Came From the Sea
 					["coord"] = { 47.0, 41.3, 630 },
-					["qg"] = 89341,	-- Magister Garuhod
+					["provider"] = { "n", 89341 },	-- Magister Garuhod
 					["g"]  = {
 						i(133814),	-- Recipe: Faronaar Fizz (Rank 1)
 					},
@@ -654,7 +657,7 @@ _.Zones =
 						37959,	-- The Hunger Returns
 					},
 					["coord"] = { 53.5, 16.3, 630 },
-					["qg"] = 89978,	-- Projection of Senegos
+					["provider"] = { "n", 89978 },	-- Projection of Senegos
 					["g"] = {
 						i(121444),	-- Leywalker Wristwraps
 						i(121447),	-- Ruin-Stalker Wristwraps
@@ -669,7 +672,7 @@ _.Zones =
 				q(37566, {	-- The Prince is Going Down
 					["sourceQuests"] = { 37565 },	-- The Right Weapons for the Job
 					["coord"] = { 53.4, 63.0, 630 },
-					["qg"] = 89051,	-- Okuna Longtusk
+					["provider"] = { "n", 89051 },	-- Okuna Longtusk
 					["g"] = {
 						i(121441),	-- Leywalker Waistwrap
 						i(121443),	-- Ruin-Stalker Belt
@@ -689,7 +692,7 @@ _.Zones =
 						37653,	-- Demon Souls
 					},
 					["coord"] = { 43.2, 43.1, 630 },
-					["qg"] = 89398,	-- Allari the Souleateer
+					["provider"] = { "n", 89398 },	-- Allari the Souleateer
 					["g"] = {
 						i(129172),	-- Band of Demonic Guile
 						i(132951),	-- Leywalker Shoes
@@ -701,22 +704,22 @@ _.Zones =
 				q(37469, {	-- The Tidestone: Shattered
 					["sourceQuests"] = { 37730 },	-- The Headmistress' Keys
 					["coord"] = { 53.4, 48.6, 631 },	-- Nar'thalas Academy
-					["qg"] = 89660,	-- Thyrillion
+					["provider"] = { "n", 89660 },	-- Thyrillion
 				}),
 				q(37467, {	-- The Walk of Shame
 					["sourceQuests"] = { 37486 },	-- Nar'thalas Still Suffers
 					["coord"] = { 51.7, 44.2, 630 },
-					["qg"] = 88867,	-- Prince Farondis
+					["provider"] = { "n", 88867 },	-- Prince Farondis
 				}),
 				q(37856, {	-- The Withered
 					["sourceQuests"] = { 37855 },	-- The Last of the Last
 					["coord"] = { 48.6, 16.4, 630 },
-					["qg"] = 90916,	-- Agapanthus
+					["provider"] = { "n", 90916 },	-- Agapanthus
 				}),
 				q(37256, {	-- They Came From the Sea
 					["sourceQuests"] = { 37690 },	-- Those Who Remember
 					["coord"] = { 48.4, 34.4, 630 },
-					["qg"] = 89023,	-- Nightwatcher Idri
+					["provider"] = { "n", 89023 },	-- Nightwatcher Idri
 					["g"] = {
 						i(121428),	-- Leywalker Aurora
 						i(121430),	-- Ruin-Stalker Helm
@@ -731,11 +734,11 @@ _.Zones =
 				q(42369, {	-- They're Doing it Wrong
 					["sourceQuests"] = { 42375 },	-- Eye See You
 					["coord"] = { 63.8, 28.8, 630 },
-					["qg"] = 107244,	-- Tehd Shoemaker
+					["provider"] = { "n", 107244 },	-- Tehd Shoemaker
 				}),
 				q(38237, {	-- This IS In My Contract.
 					["sourceQuests"] = { 38232 },	-- Minion!  Kill Them!
-					["qg"] = 91165,	-- Daglop
+					["provider"] = { "n", 91165 },	-- Daglop
 					["g"] = {
 						i(138878),	-- Copy of Daglop's Contract (TOY!)
 					},
@@ -743,21 +746,21 @@ _.Zones =
 				q(37690, {	-- Those Who Remember
 					["sourceQuests"] = { 42271 },	-- Their Dying Breaths
 					["coord"] = { 48.0, 26.9, 630 },
-					["qg"] = 89975,	-- Senegos
+					["provider"] = { "n", 89975 },	-- Senegos
 				}),
 				q(37497, {	-- Trailing the Tidestone
 					["sourceQuests"] = { 37257 },	-- Our Very Bones
 					["coord"] = { 47.0, 41.2, 630 },
-					["qg"] = 88115,	-- Prince Farondis
+					["provider"] = { "n", 88115 },	-- Prince Farondis
 				}),
 				q(42370, {	-- Wanding 101
 					["sourceQuests"] = { 37518 },	-- The Haunted Halls
 					["coord"] = { 29.7, 42.5, 631 },	-- Nar'thalas Academy
-					["qg"] = 89661,	-- Instructor Nidriel
+					["provider"] = { "n", 89661 },	-- Instructor Nidriel
 				}),
 				q(42693, {	-- You Never Know Until You Scry
 					["coord"] = { 53.3, 45.4, 630 },
-					["qg"] = 108328,	-- Olothil Starlance
+					["provider"] = { "n", 108328 },	-- Olothil Starlance
 				}),
 				q(37860, {	-- You Scratch My Back...
 					["sourceQuests"] = {
@@ -765,7 +768,7 @@ _.Zones =
 						37959,	-- The Hunger Returns
 					},
 					["coord"] = { 53.7, 16.7, 630 },
-					["qg"] = 90383,	-- Runas the Shamed
+					["provider"] = { "n", 90383 },	-- Runas the Shamed
 				}),
         --[[ These quests will be organized soon™
 				q(41173),	-- A Beacon of Hope

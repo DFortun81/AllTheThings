@@ -52,7 +52,7 @@ _.Zones =
 				},
 				{	-- A Little Payback
 					["questID"] = 25588,
-					["qg"] = 40591,	-- Drag Master Miglen
+					["provider"] = { "n", 40591 },	-- Drag Master Miglen
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 					["groups"] = {
@@ -63,7 +63,7 @@ _.Zones =
 				},
 				{	-- A Little Payback
 					["questID"] = 25589,
-					["qg"] = 40595,	-- Rugfizzle
+					["provider"] = { "n", 40595 },	-- Rugfizzle
 					["coord"] = { 78.2, 73.6, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats
@@ -75,7 +75,7 @@ _.Zones =
 				},
 				{	-- Back to Crazzle
 					["questID"] = 25790,
-					["qg"] = 41204,	-- Khan Ablinh
+					["provider"] = { "n", 41204 },	-- Khan Ablinh
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25778,	-- Fake Gold for Black Gold
 					["groups"] = {
@@ -87,7 +87,7 @@ _.Zones =
 				},
 				{	-- Back to Riznek
 					["questID"] = 25791,
-					["qg"] = 41205,	-- Khan Blizh
+					["provider"] = { "n", 41205 },	-- Khan Blizh
 					["coord"] = { 86.7, 51.5, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25779,	-- Fake Gold for Black Gold
@@ -100,20 +100,20 @@ _.Zones =
 				},
 				{	-- Bar Fight!
 					["questID"] = 25517,
-					["qg"] = 40554,	-- Rizzle Brassbolts
+					["provider"] = { "n", 40554 },	-- Rizzle Brassbolts
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25488,	-- Two if By Boat
 				},
 				{	-- Bar Fight!
 					["questID"] = 25518,
-					["qg"] = 40556,	-- Zamek
+					["provider"] = { "n", 40556 },	-- Zamek
 					["coord"] = { 78.1, 73.6, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25489,	-- Two if By Boat
 				},
 				{	-- Behind You!
 					["questID"] = 28136,
-					["qg"] = 47580,	-- Lakota Windsong
+					["provider"] = { "n", 47580 },	-- Lakota Windsong
 					["coord"] = { 30.4, 49.2, 64 },
 					["groups"] = {
 						i(63659),	-- Starion's Slippers
@@ -128,24 +128,24 @@ _.Zones =
 				},
 				{	-- Break Them Out
 					["questID"] = 28127,
-					["qg"] = 47580,	-- Lakota Windsong
+					["provider"] = { "n", 47580 },	-- Lakota Windsong
 					["coord"] = { 30.4, 49.2, 64 },
 					["sourceQuest"] = 28124,	-- On to the Bulwark
 				},
 				{	-- Carcass Collection
 					["questID"] = 25672,
-					["qg"] = 41060,	-- Ajamon Ghostcaller
+					["provider"] = { "n", 41060 },	-- Ajamon Ghostcaller
 					["coord"] = { 96.8, 72.4, 64 },
 					["sourceQuest"] = 25661,	-- With a Little Help...
 				},
 				q(25561, {	-- Circle the Wagons... er, Boats
 					["u"] = 40,
-					["qg"] = 40475,	-- 
+					["provider"] = { "n", 40475 },	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25562, {	-- Circle the Wagons... er, Boats
 					["u"] = 40,
-					["qg"] = 40487,	-- 
+					["provider"] = { "n", 40487 },	-- 
 					["races"] = HORDE_ONLY,
 				}),
 				{	-- Circle the Wagons... er, Boats
@@ -174,7 +174,7 @@ _.Zones =
 				},
 				{	-- Codemaster's Code
 					["questID"] = 28139,
-					["qg"] = 47580,	-- Lakota Windsong
+					["provider"] = { "n", 47580 },	-- Lakota Windsong
 					["coord"] = { 30.4, 49.2, 64 },
 					["sourceQuests"] = {
 						28127,	-- Break Them Out
@@ -183,7 +183,7 @@ _.Zones =
 				},
 				{	-- Darkcloud Grimtotem
 					["questID"] = 27312,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27275,	-- Together Again
 					["groups"] = {
@@ -194,7 +194,7 @@ _.Zones =
 				},
 				{	-- Darkcloud Grimtotem
 					["questID"] = 27313,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["coord"] = { 42.2, 48.0, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27276,	-- Together Again
@@ -206,7 +206,7 @@ _.Zones =
 				},
 				{	-- Death to all Trappers!
 					["questID"] = 28087,
-					["qg"] = 47471,	-- Pao'ka Swiftmountain
+					["provider"] = { "n", 47471 },	-- Pao'ka Swiftmountain
 					["coord"] = { 12.8, 33.9, 64 },
 					["sourceQuest"] = 28085,	-- Trouble at Highperch
 					["groups"] = {
@@ -218,20 +218,20 @@ _.Zones =
 				},
 				{	-- Defend the Drill
 					["questID"] = 25798,
-					["qg"] = 41190,	-- Crazzle Sprysprocket
+					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25790,	-- Back to Crazzle
 				},
 				{	-- Defend the Drill
 					["questID"] = 25799,
-					["qg"] = 41184,	-- Riznek
+					["provider"] = { "n", 41184 },	-- Riznek
 					["coord"] = { 88.5, 54.8, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25791,	-- Back to Riznek
 				},
 				{	-- Deliver the Goods
 					["questID"] = 25825,
-					["qg"] = 41190,	-- Crazzle Sprysprocket
+					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25813,	-- Go Blow that Horn
 					["groups"] = {
@@ -242,7 +242,7 @@ _.Zones =
 				},
 				{	-- Deliver the Goods
 					["questID"] = 25826,
-					["qg"] = 41184,	-- Riznek
+					["provider"] = { "n", 41184 },	-- Riznek
 					["coord"] = { 88.5, 54.8, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25814,	-- Go Blow that Horn
@@ -254,21 +254,21 @@ _.Zones =
 				},
 				{	-- Do Me a Favor? (A)
 					["questID"] = 25504,
-					["qg"] = 40027,	-- Fizzle Brassbolts
+					["provider"] = { "n", 40027 },	-- Fizzle Brassbolts
 					["coord"] = { 75.9, 74.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25488,	-- Two if By Boat
 				},
 				{	-- Do Me a Favor? (H)
 					["questID"] = 25505,
-					["qg"] = 40028,	-- Pozzik
+					["provider"] = { "n", 40028 },	-- Pozzik
 					["coord"] = { 75.9, 74.6, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25489,	-- Two if By Boat
 				},
 				{	-- Down in the Deeps (A)
 					["questID"] = 25515,
-					["qg"] = 40475,	-- Jinky Twizzlefixxit
+					["provider"] = { "n", 40475 },	-- Jinky Twizzlefixxit
 					["coord"] = { 76.5, 73.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25504,	-- Do Me a Favor?
@@ -282,7 +282,7 @@ _.Zones =
 				},
 				{	-- Down in the Deeps (H)
 					["questID"] = 25516,
-					["qg"] = 40487,	-- Razzeric
+					["provider"] = { "n", 40487 },	-- Razzeric
 					["coord"] = { 77.1, 74.4, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25505,	-- Do Me a Favor?
@@ -296,53 +296,53 @@ _.Zones =
 				},
 				{	-- Eminent Domain
 					["questID"] = 25796,
-					["qg"] = 41190,	-- Crazzle Sprysprocket
+					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25790,	-- Back to Crazzle
 				},
 				{	-- Eminent Domain
 					["questID"] = 25797,
-					["qg"] = 41184,	-- Riznek
+					["provider"] = { "n", 41184 },	-- Riznek
 					["coord"] = { 88.5, 54.8, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25791,	-- Back to Riznek
 				},
 				{	-- Fake Gold for Black Gold
 					["questID"] = 25778,
-					["qg"] = 41190,	-- Crazzle Sprysprocket
+					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25774,	-- Fool's Gold
 				},
 				{	-- Fake Gold for Black Gold
 					["questID"] = 25779,
-					["qg"] = 41184,	-- Riznek
+					["provider"] = { "n", 41184 },	-- Riznek
 					["coord"] = { 88.5, 54.8, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25775,	-- Fool's Gold
 				},
 				{	-- Fool's Gold
 					["questID"] = 25774,
-					["qg"] = 41190,	-- Crazzle Sprysprocket
+					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25756,	-- Get Zherin!
 				},
 				{	-- Fool's Gold
 					["questID"] = 25775,
-					["qg"] = 41184,	-- Riznek
+					["provider"] = { "n", 41184 },	-- Riznek
 					["coord"] = { 88.5, 54.8, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25757,	-- Get Koalbeard!
 				},
 				{	-- Four Twilight Elements
 					["questID"] = 28157,
-					["qg"] = 47745,	-- Magatha Grimtotem
+					["provider"] = { "n", 47745 },	-- Magatha Grimtotem
 					["coord"] = { 50.1, 62.5, 64 },
 					["sourceQuest"] = 28142,	-- To the Withering
 				},
 				{	-- Free at Last
 					["questID"] = 4904,
 					["u"] = 40,
-					["qg"] = 10646,	-- Lakota Windsong
+					["provider"] = { "n", 10646 },	-- Lakota Windsong
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(15469)),	-- Windsong Cinch
@@ -351,7 +351,7 @@ _.Zones =
 				},
 				{	-- Free Freewind Post
 					["questID"] = 25835,
-					["qg"] = 40027,	-- Fizzle Brassbolts
+					["provider"] = { "n", 40027 },	-- Fizzle Brassbolts
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25825,	-- Deliver the Goods
@@ -360,7 +360,7 @@ _.Zones =
 				},
 				{	-- Free Freewind Post
 					["questID"] = 25836,
-					["qg"] = 40028,	-- Pozzik
+					["provider"] = { "n", 40028 },	-- Pozzik
 					["coord"] = { 75.9, 74.7, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -370,13 +370,13 @@ _.Zones =
 				},
 				{	-- Free the Pridelings
 					["questID"] = 28086,
-					["qg"] = 47471,	-- Pao'ka Swiftmountain
+					["provider"] = { "n", 47471 },	-- Pao'ka Swiftmountain
 					["coord"] = { 12.8, 33.9, 64 },
 					["sourceQuest"] = 28085,	-- Trouble at Highperch
 				},
 				{	-- Freezing the Pipes
 					["questID"] = 28047,
-					["qg"] = 47383,	-- Brivelthwerp
+					["provider"] = { "n", 47383 },	-- Brivelthwerp
 					["coord"] = { 69.8, 85.1, 64 },
 					["sourceQuests"] = {
 						28045,	-- The Greatest Flavor in the World!
@@ -386,7 +386,7 @@ _.Zones =
 				{	-- Gahz'rilla
 					["questID"] = 2770,
 					["u"] = 40,
-					["qg"] = 4453,	-- Wizzle Brassbolts
+					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(11122)),	-- Carrot on a Stick
@@ -395,20 +395,20 @@ _.Zones =
 				},
 				{	-- Get Koalbeard!
 					["questID"] = 25757,
-					["qg"] = 41184,	-- Riznek
+					["provider"] = { "n", 41184 },	-- Riznek
 					["coord"] = { 88.5, 54.8, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25745,	-- Negotiations
 				},
 				{	-- Get Zherin!
 					["questID"] = 25756,
-					["qg"] = 41190,	-- Crazzle Sprysprocket
+					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25744,	-- Negotiations
 				},
 				{	-- Go Blow that Horn
 					["questID"] = 25813,
-					["qg"] = 41190,	-- Crazzle Sprysprocket
+					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25798,	-- Defend the Drill
@@ -417,7 +417,7 @@ _.Zones =
 				},
 				{	-- Go Blow that Horn
 					["questID"] = 25814,
-					["qg"] = 41184,	-- Riznek
+					["provider"] = { "n", 41184 },	-- Riznek
 					["coord"] = { 88.5, 54.8, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -427,7 +427,7 @@ _.Zones =
 				},
 				{	-- Grimtotem Chiefs: Elder Stormhoof
 					["questID"] = 27318,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27314,	-- Grimtotem Chiefs: Isha Gloomaxe
 					["groups"] = {
@@ -439,7 +439,7 @@ _.Zones =
 				},
 				{	-- Grimtotem Chiefs: Elder Stormhoof
 					["questID"] = 27319,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["coord"] = { 43.7, 43.7, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27315,	-- Grimtotem Chiefs: Isha Gloomaxe
@@ -452,33 +452,33 @@ _.Zones =
 				},
 				{	-- Grimtotem Chiefs: Grundig Darkcloud
 					["questID"] = 27323,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27318,	-- Grimtotem Chiefs: Elder Stormhoof
 				},
 				{	-- Grimtotem Chiefs: Grundig Darkcloud
 					["questID"] = 27324,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["coord"] = { 39.0, 41.1, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27319,	-- Grimtotem Chiefs: Elder Stormhoof
 				},
 				{	-- Grimtotem Chiefs: Isha Gloomaxe
 					["questID"] = 27314,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27275,	-- Together Again
 				},
 				{	-- Grimtotem Chiefs: Isha Gloomaxe
 					["questID"] = 27315,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["coord"] = { 42.2, 48.0, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27276,	-- Together Again
 				},
 				{	-- Grimtotem Chiefs: The Chief of Chiefs
 					["questID"] = 27327,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27323,	-- Grimtotem Chiefs: Grundig Darkcloud
 					["groups"] = {
@@ -489,7 +489,7 @@ _.Zones =
 				},
 				{	-- Grimtotem Chiefs: The Chief of Chiefs
 					["questID"] = 27328,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["coord"] = { 34.0, 40.0, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27324,	-- Grimtotem Chiefs: Grundig Darkcloud
@@ -501,13 +501,13 @@ _.Zones =
 				},
 				{	-- Grimtotem in the Post
 					["questID"] = 25869,
-					["qg"] = 41392,	-- Quentin
+					["provider"] = { "n", 41392 },	-- Quentin
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25835,	-- Free Freewind Post
 				},
 				{	-- Grimtotem in the Post
 					["questID"] = 25870,
-					["qg"] = 41446,	-- Thalia Amberhide
+					["provider"] = { "n", 41446 },	-- Thalia Amberhide
 					["coord"] = { 46.3, 57.7, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25836,	-- Free Freewind Post
@@ -515,7 +515,7 @@ _.Zones =
 				{	-- Grimtotem Spying
 					["questID"] = 5064,
 					["u"] = 40,
-					["qg"] = 10537,	-- Cliffwatcher Longhorn
+					["provider"] = { "n", 10537 },	-- Cliffwatcher Longhorn
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(15457)),	-- Desert Shoulders
@@ -525,7 +525,7 @@ _.Zones =
 				},
 				{	-- Haunted
 					["questID"] = 25660,
-					["qg"] = 41058,	-- Spirit of Tony Two-Tusk
+					["provider"] = { "n", 41058 },	-- Spirit of Tony Two-Tusk
 					["coord"] = { 91.7, 78.9, 64 },	-- can be picked up anywhere in the Southsea Holdfast, but this is where it first shows up
 					["sourceQuests"] = {
 						25627,	-- Two-Tusk Takedown (alliance)
@@ -534,13 +534,13 @@ _.Zones =
 				},
 				{	-- Horn of the Traitor
 					["questID"] = 25873,
-					["qg"] = 45271,	-- Montarr
+					["provider"] = { "n", 45271 },	-- Montarr
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25835,	-- Free Freewind Post
 				},
 				{	-- Horn of the Traitor
 					["questID"] = 25874,
-					["qg"] = 45271,	-- Montarr
+					["provider"] = { "n", 45271 },	-- Montarr
 					["coord"] = { 44.6, 49.9, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25836,	-- Free Freewind Post
@@ -548,7 +548,7 @@ _.Zones =
 				{	-- Hypercapacitor Gizmo
 					["questID"] = 5151,
 					["u"] = 40,
-					["qg"] = 10941,	-- Wizlo Bearingshiner
+					["provider"] = { "n", 10941 },	-- Wizlo Bearingshiner
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(15467)),	-- Inventor's League Ring
@@ -556,7 +556,7 @@ _.Zones =
 				},
 				{	-- Invoking the Serpent
 					["questID"] = 27329,
-					["qg"] = 45442,	-- Lakota Windsong
+					["provider"] = { "n", 45442 },	-- Lakota Windsong
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27357,	-- The Captive Bride
 					["groups"] = {
@@ -568,7 +568,7 @@ _.Zones =
 				},
 				{	-- Invoking the Serpent
 					["questID"] = 27330,
-					["qg"] = 45442,	-- Lakota Windsong
+					["provider"] = { "n", 45442 },	-- Lakota Windsong
 					["coord"] = { 39.1, 25.7, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27358,	-- The Captive Bride
@@ -580,40 +580,40 @@ _.Zones =
 				},
 				{	-- Negotiations
 					["questID"] = 25744,
-					["qg"] = 40027,	-- Fizzle Brassbolts
+					["provider"] = { "n", 40027 },	-- Fizzle Brassbolts
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 				},
 				{	-- Negotiations
 					["questID"] = 25745,
-					["qg"] = 40028,	-- Pozzik
+					["provider"] = { "n", 40028 },	-- Pozzik
 					["coord"] = { 75.9, 74.6, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats
 				},
 				{	-- No Weapons For You!
 					["questID"] = 27310,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27275,	-- Together Again
 				},
 				{	-- No Weapons For You!
 					["questID"] = 27311,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["coord"] = { 42.2, 48.0, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27276,	-- Together Again
 				},
 				{	-- On to the Bulwark
 					["questID"] = 28124,
-					["qg"] = 47471,	-- Pao'ka Swiftmountain
+					["provider"] = { "n", 47471 },	-- Pao'ka Swiftmountain
 					["coord"] = { 12.8, 34.0, 64 },
 					["sourceQuest"] = 28098,	-- The Twilight Skymaster
 				},
 				{	-- Parts of the Swarm
 					["questID"] = 1184,
 					["u"] = 40,
-					["qg"] = 3428,	-- Korran
+					["provider"] = { "n", 3428 },	-- Korran
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(6738)),	-- Bleeding Crescent
@@ -622,7 +622,7 @@ _.Zones =
 				},
 				{	-- Pirate Accuracy Increasing
 					["questID"] = 25533,
-					["qg"] = 40487,	-- Razzeric
+					["provider"] = { "n", 40487 },	-- Razzeric
 					["coord"] = { 77.1, 74.4, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -634,7 +634,7 @@ _.Zones =
 				{	-- Protect Kanati Greycloud
 					["questID"] = 4966,
 					["u"] = 40,
-					["qg"] = 10638,	-- Kanati Greycloud
+					["provider"] = { "n", 10638 },	-- Kanati Greycloud
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(15461)),	-- Lightheel Boots
@@ -644,26 +644,26 @@ _.Zones =
 				},
 				{	-- Pirate Accuracy Increasing
 					["questID"] = 25532,
-					["qg"] = 40475,	-- Jinky Twizzlefixxit
+					["provider"] = { "n", 40475 },	-- Jinky Twizzlefixxit
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25515,	-- Down in the Deeps
 				},
 				{	-- Quiet the Cannons
 					["questID"] = 25585,
-					["qg"] = 40475,	-- Jinky Twizzlefixxit
+					["provider"] = { "n", 40475 },	-- Jinky Twizzlefixxit
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 				},
 				{	-- Quiet the Cannons
 					["questID"] = 25586,
-					["qg"] = 40487,	-- Razzeric
+					["provider"] = { "n", 40487 },	-- Razzeric
 					["coord"] = { 77.1, 74.4, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats
 				},
 				{	-- Release Heartrazor
 					["questID"] = 28088,
-					["qg"] = 47471,	-- Pao'ka Swiftmountain
+					["provider"] = { "n", 47471 },	-- Pao'ka Swiftmountain
 					["coord"] = { 12.8, 33.9, 64 },
 					["sourceQuests"] = {
 						28087,	-- Death to All Trappers!
@@ -672,13 +672,13 @@ _.Zones =
 				},
 				{	-- Save the Sentinel
 					["questID"] = 25871,
-					["qg"] = 41444,	-- Brienna Starglow
+					["provider"] = { "n", 41444 },	-- Brienna Starglow
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25835,	-- Free Freewind Post
 				},
 				{	-- Something to Wear
 					["questID"] = 28125,
-					["qg"] = 47580,	-- Lakota Windsong
+					["provider"] = { "n", 47580 },	-- Lakota Windsong
 					["coord"] = { 30.4, 49.2, 64 },
 					["sourceQuest"] = 28124,	-- On to the Bulwark
 					["groups"] = {
@@ -690,20 +690,20 @@ _.Zones =
 				},
 				{	-- Special Delivery for Brivelthwerp
 					["questID"] = 28031,
-					["qg"] = 40726,	-- Mazzer Stripscrew
+					["provider"] = { "n", 40726 },	-- Mazzer Stripscrew
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 				},
 				{	-- Special Delivery for Brivelthwerp
 					["questID"] = 28042,
-					["qg"] = 40727,	-- Griznak
+					["provider"] = { "n", 40727 },	-- Griznak
 					["coord"] = { 78.2, 73.6, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats
 				},
 				{	-- Spread the Word
 					["questID"] = 28160,
-					["qg"] = 47745,	-- Magatha Grimtotem
+					["provider"] = { "n", 47745 },	-- Magatha Grimtotem
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28159,	-- The Doomstone
 					["groups"] = {
@@ -717,7 +717,7 @@ _.Zones =
 				},
 				{	-- Spread the Word
 					["questID"] = 28161,
-					["qg"] = 47745,	-- Magatha Grimtotem
+					["provider"] = { "n", 47745 },	-- Magatha Grimtotem
 					["coord"] = { 50.1, 62.5, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28159,	-- The Doomstone
@@ -748,34 +748,34 @@ _.Zones =
 				},
 				{	-- Sunken Treasure
 					["questID"] = 25609,
-					["qg"] = 40885,	-- Wizzle Brassbolts
+					["provider"] = { "n", 40885 },	-- Wizzle Brassbolts
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25590,	-- Where's Wizzle?
 				},
 				{	-- Sunken Treasure
 					["questID"] = 25610,
-					["qg"] = 40888,	-- Synge
+					["provider"] = { "n", 40888 },	-- Synge
 					["coord"] = { 91.6, 79.2, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25596,	-- Where's Synge?
 				},
 				{	-- Tanaris is Calling (A)
 					["questID"] = 27446,
-					["qg"] = 40027,	-- Fizzle Brassbolts
+					["provider"] = { "n", 40027 },	-- Fizzle Brassbolts
 					["coord"] = { 75.9, 74.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				},
 				{	-- Tanaris is Calling (H)
 					["questID"] = 27447,
-					["qg"] = 40028,	-- Pozzik
+					["provider"] = { "n", 40028 },	-- Pozzik
 					["coord"] = { 75.9, 74.6, 64 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				},
 				{	-- That Smart One's Gotta Go
 					["questID"] = 28048,
-					["qg"] = 47383,	-- Brivelthwerp
+					["provider"] = { "n", 47383 },	-- Brivelthwerp
 					["coord"] = { 69.8, 85.1, 64 },
 					["groups"] = {
 						i(63621),	-- Ice Cream Churner
@@ -789,7 +789,7 @@ _.Zones =
 				},
 				{	-- The Ancient Brazier
 					["questID"] = 25762,
-					["qg"] = 40082,	-- Skycaller Vrakthris
+					["provider"] = { "n", 40082 },	-- Skycaller Vrakthris
 					["coord"] = { 90.0, 53.0, 64 },
 					["groups"] = {
 						i(63608),	-- Shroud of Contempt
@@ -803,20 +803,20 @@ _.Zones =
 				},
 				{	-- The Brave and the Bold
 					["questID"] = 25872,
-					["qg"] = 41421,	-- Rau Cliffrunner
+					["provider"] = { "n", 41421 },	-- Rau Cliffrunner
 					["coord"] = { 46.7, 56.0, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25836,	-- Free Freewind Post
 				},
 				{	-- The Captive Bride
 					["questID"] = 27357,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27327,	-- Grimtotem Chiefs: The Chief of Chiefs
 				},
 				{	-- The Captive Bride
 					["questID"] = 27358,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["races"] = HORDE_ONLY,	-- missing source quests
 					["sourceQuests"] = {
 						27328,	-- Grimtotem Chiefs: The Chief of Chiefs
@@ -826,7 +826,7 @@ _.Zones =
 				},
 				{	-- The Doomstone
 					["questID"] = 28159,
-					["qg"] = 47745,	-- Magatha Grimtotem
+					["provider"] = { "n", 47745 },	-- Magatha Grimtotem
 					["coord"] = { 50.1, 62.5, 64 },
 					["groups"] = {
 						i(63663),	-- Bracers of Safe Keeping
@@ -841,19 +841,19 @@ _.Zones =
 				},
 				{	-- The Drums of War
 					["questID"] = 27325,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27316,	-- The Rattle of Bones
 				},
 				{	-- The Drums of War
 					["questID"] = 27326,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27317,	-- The Rattle of Bones
 				},
 				{	-- The Elder Crone
 					["questID"] = 28140,
-					["qg"] = 47580,	-- Lakota Windsong
+					["provider"] = { "n", 47580 },	-- Lakota Windsong
 					["coord"] = { 30.4, 49.2, 64 },
 					["sourceQuests"] = {
 						28136,	-- Behind You!
@@ -862,13 +862,13 @@ _.Zones =
 				},
 				{	-- The Greatest Flavor in the World!
 					["questID"] = 28045,
-					["qg"] = 47383,	-- Brivelthwerp
+					["provider"] = { "n", 47383 },	-- Brivelthwerp
 					["coord"] = { 69.8, 85.1, 64 },
 					["sourceQuest"] = 28042,	-- Special Delivery for Brivelthwerp
 				},
 				{	-- The Grimtotem are Coming
 					["questID"] = 25487,
-					["qg"] = 39895,	-- Kanati Greycloud
+					["provider"] = { "n", 39895 },	-- Kanati Greycloud
 					["coord"] = { 11.1, 11.2, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -878,7 +878,7 @@ _.Zones =
 				},
 				{	-- The Mad Magus
 					["questID"] = 25704,
-					["qg"] = 41060,	-- Ajamon Ghostcaller
+					["provider"] = { "n", 41060 },	-- Ajamon Ghostcaller
 					["coord"] = { 96.8, 72.4, 64 },
 					["sourceQuest"] = 25672,	-- Carcass Collection
 					["groups"] = {
@@ -898,7 +898,7 @@ _.Zones =
 				},
 				{	-- The Rattle of Bones
 					["questID"] = 27317,
-					["qg"] = 48208,	-- The Rattle of Bones
+					["provider"] = { "n", 48208 },	-- The Rattle of Bones
 					["coord"] = { 43.4, 43.4, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -909,7 +909,7 @@ _.Zones =
 				{	-- The Sacred Flame
 					["questID"] = 1197,
 					["u"] = 40,
-					["qg"] = 4722,	-- Rau Cliffrunner
+					["provider"] = { "n", 4722 },	-- Rau Cliffrunner
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 1196,	-- The Sacred Flame
 					["groups"] = {
@@ -918,20 +918,20 @@ _.Zones =
 					},
 				},
 				q(1150, {	-- Test of Endurance
-					["qg"] = 2986,	-- Dorn Plainstalker
+					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
 					["coord"] = { 53.8, 41.6, 64 },
 					["sourceQuest"] = 1149,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 				}),
 				q(1149, {	-- Test of Faith
-					["qg"] = 2986,	-- Dorn Plainstalker
+					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
 					["coord"] = { 53.8, 41.6, 64 },
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 				}),
 				q(1152, {	-- Test of Lore	
-					["qg"] = 2986,	-- Dorn Plainstalker
+					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
 					["coord"] = { 53.8, 41.6, 64 },
 					["sourceQuest"] = 1151,	-- Test of Lore
 					["races"] = HORDE_ONLY,
@@ -939,7 +939,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(1151, {	-- Test of Strength
-					["qg"] = 2986,	-- Dorn Plainstalker
+					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
 					["coord"] = { 53.8, 41.6, 64 },
 					["sourceQuest"] = 1150,	-- Test of Lore
 					["races"] = HORDE_ONLY,
@@ -948,7 +948,7 @@ _.Zones =
 				}),
 				{	-- The Twilight Skymaster
 					["questID"] = 28098,
-					["qg"] = 47471,	-- Pao'ka Swiftmountain
+					["provider"] = { "n", 47471 },	-- Pao'ka Swiftmountain
 					["coord"] = { 12.8, 33.9, 64 },
 					["sourceQuest"] = 28088,	-- Release Heartrazor
 					["groups"] = {
@@ -960,19 +960,19 @@ _.Zones =
 				},
 				{	-- The Writ of History
 					["questID"] = 27320,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27316,	-- The Rattle of Bones
 				},
 				{	-- The Writ of History
 					["questID"] = 27321,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27317,	-- The Rattle of Bones
 				},
 				{	-- Together Again
 					["questID"] = 27275,
-					["qg"] = 41444,	-- Brienna Starglow
+					["provider"] = { "n", 41444 },	-- Brienna Starglow
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25871,	-- Save the Sentinel
 				},
@@ -987,14 +987,14 @@ _.Zones =
 				},
 				{	-- Together Again
 					["questID"] = 27276,
-					["qg"] = 41421,	-- Rau Cliffrunner
+					["provider"] = { "n", 41421 },	-- Rau Cliffrunner
 					["coord"] = { 46.7, 55.9, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25872,	-- The Brave and the Bold
 				},
 				{	-- Trouble at Highperch
 					["questID"] = 28085,
-					["qg"] = 45442,	-- Lakota Windsong
+					["provider"] = { "n", 45442 },	-- Lakota Windsong
 					["coord"] = { 39.1, 25.7, 64 },
 					["sourceQuests"] = {
 						27329,	-- Invoking the Serpent (alliance)
@@ -1003,7 +1003,7 @@ _.Zones =
 				},
 				{	-- Two If By Boat
 					["questID"] = 25489,
-					["qg"] = 39963,	-- Motega Firemane
+					["provider"] = { "n", 39963 },	-- Motega Firemane
 					["coord"] = { 10.5, 8.5, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25487,	-- The Grimtotem are Coming
@@ -1016,7 +1016,7 @@ _.Zones =
 				},
 				{	-- Two-Tusk Takedown
 					["questID"] = 25627,
-					["qg"] = 40885,	-- Wizzle Brassbolts
+					["provider"] = { "n", 40885 },	-- Wizzle Brassbolts
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25609,	-- Sunken Treasure
 					["groups"] = {
@@ -1028,7 +1028,7 @@ _.Zones =
 				},
 				{	-- Two-Tusk Takedown
 					["questID"] = 25628,
-					["qg"] = 40888,	-- Synge
+					["provider"] = { "n", 40888 },	-- Synge
 					["coord"] = { 91.6, 79.2, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25610,	-- Sunken Treasure
@@ -1041,7 +1041,7 @@ _.Zones =
 				},
 				{	-- Unbound
 					["questID"] = 28158,
-					["qg"] = 47745,	-- Magatha Grimtotem
+					["provider"] = { "n", 47745 },	-- Magatha Grimtotem
 					["coord"] = { 50.1, 62.5, 64 },
 					["sourceQuest"] = 28142,	-- To the Withering
 				},
@@ -1061,7 +1061,7 @@ _.Zones =
 				},
 				{	-- We All Scream for Ice Cream... and then Die!
 					["questID"] = 28051,
-					["qg"] = 47383,	-- Brivelthwerp
+					["provider"] = { "n", 47383 },	-- Brivelthwerp
 					["coord"] = { 69.8, 85.1, 64 },
 					["sourceQuest"] = 28042,	-- Special Delivery for Brivelthwerp
 					["groups"] = {
@@ -1075,34 +1075,34 @@ _.Zones =
 				},
 				{	-- What's that Rattle? (only pops up if you complete "Grimtotem Chiefs: Isha Gloomaxe" and haven't picked up "The Rattle of Bones")
 					["questID"] = 28283,
-					["qg"] = 45277,	-- Feralas Sentinel
+					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 27314,	-- Grimtotem Chiefs: Isha Gloomaxe
 				},
 				{	-- What's that Rattle? (only pops up if you complete "Grimtotem Chiefs: Isha Gloomaxe" and haven't picked up "The Rattle of Bones")
 					["questID"] = 28284,
-					["qg"] = 45278,	-- Freewind Brave
+					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 27315,	-- Grimtotem Chiefs: Isha Gloomaxe
 				},
 				{	-- Where's Synge?
 					["questID"] = 25596,
-					["qg"] = 40556,	-- Zamek
+					["provider"] = { "n", 40556 },	-- Zamek
 					["coord"] = { 78.1, 73.7, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats
 				},
 				{	-- Where's Wizzle?
 					["questID"] = 25590,
-					["qg"] = 40554,	-- Rizzle Brassbolts
+					["provider"] = { "n", 40554 },	-- Rizzle Brassbolts
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 				},
 				{	-- With a Little Help...
 					["questID"] = 25661,
-					["qg"] = 41060,	-- Ajamon Ghostcaller
+					["provider"] = { "n", 41060 },	-- Ajamon Ghostcaller
 					["coord"] = { 96.8, 72.4, 64 },
 					["sourceQuest"] = 25660,	-- Haunted
 					["groups"] = {
@@ -1123,32 +1123,32 @@ _.Zones =
 -- DUNGEON QUESTS					
 				{	-- Looming Threat
 					["questID"] = 27062,
-					["qg"] = 39895,	-- Kanati Greycloud
+					["provider"] = { "n", 39895 },	-- Kanati Greycloud
 					["coord"] = { 11.1, 11.2, 64 },
 					["races"] = HORDE_ONLY,
 				},
 -- SHAMAN CLASS HALL QUESTS
 				{	-- Against Magatha's Will
 					["questID"] = 44800,
-					["qg"] = 120244,	-- Magatha Grimtotem
+					["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 					["lvl"] = 110,
 					["classes"] = { 7 },
 				},
 				{	-- Breaking Chains
 					["questID"] = 45725,
-					["qg"] = 120244,	-- Magatha Grimtotem
+					["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 					["lvl"] = 110,
 					["classes"] = { 7 },
 				},
 				{	-- Snakes and Stones
 					["questID"] = 45724,
-					["qg"] = 120244,	-- Magatha Grimtotem
+					["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 					["lvl"] = 110,
 					["classes"] = { 7 },
 				},
 				{	-- The Crone's Wrath
 					["questID"] = 45723,
-					["qg"] = 120244,	-- Magatha Grimtotem
+					["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 					["lvl"] = 110,
 					["classes"] = { 7 },
 				},

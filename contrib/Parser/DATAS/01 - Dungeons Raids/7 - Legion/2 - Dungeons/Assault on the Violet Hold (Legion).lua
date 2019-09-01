@@ -15,7 +15,7 @@ _.Instances = { tier(7, {	-- Legion
 					["sourceQuests"] = { 39051 },	-- By Any Means
 					["classes"] = { 12 },	-- Demon Hunter
 					["coord"] = { 50.5, 69.4, 723 },
-					["qg"] = 103156,	-- Altruis the Sufferer
+					["provider"] = { "n", 103156 },	-- Altruis the Sufferer
 				}),
 			}),
 			d(1, {	-- Normal

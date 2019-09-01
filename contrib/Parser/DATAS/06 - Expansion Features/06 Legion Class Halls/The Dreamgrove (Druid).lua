@@ -25,17 +25,17 @@ _.ExpansionFeatures =
 				n(-17, {	-- Quests
 					spell(241857, {	-- Archdruid's Lunarwing Form
 						q(46317, {	-- Talon's Call
-							["qg"] = 118105,	-- Grovewarden Proudhorn
+							["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 							["sourceQuests"] = { 46246 },	-- Strike Them Down
 							["classes"] = { 11 },  -- Druid
 						}),
 						q(46318, {	-- Defense of Aviana
-							["qg"] = 106299,	-- Thisalee Crow
+							["provider"] = { "n", 106299 },	-- Thisalee Crow
 							["sourceQuests"] = { 46317 },	-- Talon's Call
 							["classes"] = {11},
 						}),
 						q(46319, {	-- You Can't Take the Sky from Me
-							["qg"] = 106299,	-- Thisalee Crow
+							["provider"] = { "n", 106299 },	-- Thisalee Crow
 							["sourceQuests"] = { 46318 },	-- Defense of Aviana
 							["classes"] = {11},
 							["groups"] = {
@@ -65,7 +65,7 @@ _.ExpansionFeatures =
 					q(42039),	-- Champion: Sylendra Gladesong
 					{
 						["questID"] = 46044,	-- Champion: Thisalee Crow
-						["qg"] = 106299,	-- Quest Giver: Thisalee Crow
+						["provider"] = { "n", 106299 },	-- Quest Giver: Thisalee Crow
 						["sourceQuest"] = 46677,	-- Source Quest: Prick of a Thistle
 						["lvl"] = 110,
 					},
@@ -89,7 +89,7 @@ _.ExpansionFeatures =
 					q(42365),	-- Focusing the Energies
 					{
 						["questID"] = 46786,	-- Further Advancement
-						["qg"] = 98002,	-- Quest Giver: Skylord Omnuron <Mission Specialist>
+						["provider"] = { "n", 98002 },	-- Quest Giver: Skylord Omnuron <Mission Specialist>
 						["sourceQuest"] = 46044,	-- Source Quest: Champion: Thisalee Crow
 						["lvl"] = 110,
 					},
@@ -127,7 +127,7 @@ _.ExpansionFeatures =
 					q(44869),	-- Talon Terror
 					{
 						["questID"] = 44869,	-- Talon Terror (Champions of Legionfall quest chain)
-						["qg"] = 106299,	-- Quest Givers: Thisalee Crow
+						["provider"] = { "n", 106299 },	-- Quest Givers: Thisalee Crow
 						["lvl"] = 110,
 					},
 					q(46317),	-- Talon's Call
@@ -144,13 +144,13 @@ _.ExpansionFeatures =
 					q(43496),	-- The Power Within
 					{
 						["questID"] = 46674,	-- The Preservation of Nature
-						["qg"] = 101195,	-- Quest Giver: Rensar Greathoof <Archdruid of the Grove>
+						["provider"] = { "n", 101195 },	-- Quest Giver: Rensar Greathoof <Archdruid of the Grove>
 						["sourceQuest"] = 45426,	-- Source Quest: Nature's Advance
 						["lvl"] = 110,
 					},
 					q(43991),	-- The Protectors
 					q(40783, {	-- The Scythe of Elune
-						["qg"] = 103778,	-- Naralex
+						["provider"] = { "n", 103778 },	-- Naralex
 					}),
 					q(40651),	-- The Seed of Ages
 					q(42428),	-- The Shrine of Ashamane
@@ -165,7 +165,7 @@ _.ExpansionFeatures =
 					q(44058),	-- Volpin the Elusive
 					{
 						["questID"] = 40646,	-- Weapons of Legend
-						["qg"] = 101195,	-- Quest Giver: Rensar Greathoof <Archdruid of the Grove>
+						["provider"] = { "n", 101195 },	-- Quest Giver: Rensar Greathoof <Archdruid of the Grove>
 						["sourceQuest"] = 40644,	-- Source Quest: To The Dreamgrove
 					},
 					q(44443),	-- Weapons of the Ancients
@@ -222,55 +222,55 @@ _.ExpansionFeatures =
 					--]]
 					--Followers Sort later
 					q(42047, {	-- Champion: Hamuul Runetotem
-						["qg"] = 107025,	-- Archdruid Hamuul Runetotem
+						["provider"] = { "n", 107025 },	-- Archdruid Hamuul Runetotem
 						["groups"] = {
 							follower(643),	-- Archdruid Hamuul Runetotem
 						},
 					}),
 					q(43368, {	-- Champion: Brightwing
-						["qg"] = 98008,		-- Brightwing
+						["provider"] = { "n", 98008 },		-- Brightwing
 						["groups"] = {
 							follower(645),	-- Brightwing
 						},
 					}),
 					q(42038, {	-- Champion: Broll Bearmantle
-						["qg"] = 106091,	-- Broll Bearmantle
+						["provider"] = { "n", 106091 },	-- Broll Bearmantle
 						["groups"] = {
 							follower(641),	-- Broll Bearmantle
 						},
 					}),
 					q(42056, {	-- Champion: Remulos
-						["qg"] = 103832,	-- Keeper Remulos
+						["provider"] = { "n", 103832 },	-- Keeper Remulos
 						["groups"] = {
 							follower(646),	-- Keeper Remulos
 						},
 					}),
 					q(42048, {	-- Champion: Mylune
-						["qg"] = 107026,	-- Mylune
+						["provider"] = { "n", 107026 },	-- Mylune
 						["groups"] = {
 							follower(644),	-- Mylune
 						},
 					}),
 					q(42096, {	-- Champion: Naralex
-						["qg"] = 103778,	-- Naralex
+						["provider"] = { "n", 103778 },	-- Naralex
 						["groups"] = {
 							follower(639),	-- Naralex
 						},
 					}),
 					q(42039, {	-- Champion: Sylendra Gladesong
-						["qg"] = 106093,	-- Sylendra Gladesong
+						["provider"] = { "n", 106093 },	-- Sylendra Gladesong
 						["groups"] = {
 							follower(642),	-- Sylendra Gladesong
 						},
 					}),
 					q(46044, {	-- Champion: Thisalee Crow
-						["qg"] = 106299,	-- Thisalee Crow
+						["provider"] = { "n", 106299 },	-- Thisalee Crow
 						["groups"] = {
 							follower(999),	-- Thisalee Crow
 						},
 					}),
 					q(40650, {	-- Champion: Zen'tabra
-						["qg"] = 98013,		-- Zen'tabra
+						["provider"] = { "n", 98013 },		-- Zen'tabra
 						["groups"] = {
 							follower(640),	-- Zen'tabra
 						},
@@ -397,7 +397,7 @@ _.ExpansionFeatures =
 						n(-17, {	-- Quests
 							{	-- Communing With Malorne
 								["questID"] = 42045,
-								["qg"] = 106204,	-- Archdruid Hamuul Runetotem
+								["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
 								["classes"]= { 11 }, 	-- Druid
 							},
 						}),

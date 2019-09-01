@@ -15,7 +15,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["questID"] = 43162,	-- Under the Crooked Tree
 						["repeatable"] = true,
 						["isDaily"] = true,
-						["qg"] = 109734,		-- Hag of the Crooked Tree
+						["provider"] = { "n", 109734 },		-- Hag of the Crooked Tree
 						["sourceQuests"] = {
 							43259,	-- Beware of the Crooked Tree
 						},
@@ -139,7 +139,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["questID"] = 29375,	-- Clean Up in Undercity
 						["repeatable"] = true,
 						["isDaily"] = true,
-						["qg"] = 53763,			-- Candace Fenlow
+						["provider"] = { "n", 53763 },			-- Candace Fenlow
 						["coords"] = {
 							{ 62.42, 66.71 },
 						},
@@ -157,7 +157,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["questID"] = 29374,	--- Stink Bombs Away!
 						["repeatable"] = true,
 						["isDaily"] = true,
-						["qg"] = 53763,			-- Candace Fenlow
+						["provider"] = { "n", 53763 },			-- Candace Fenlow
 						["coords"] = {
 							{ 62.42, 66.71 },
 						},
@@ -173,7 +173,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 					q(39721, {	-- Culling the Crew
 						["u"] = 26,
-						["qg"] = 96705,	-- Orukan
+						["provider"] = { "n", 96705 },	-- Orukan
 						["isDaily"] = true,
 						["g"] = {
 							i(128658),	-- Spooky Supplies
@@ -181,7 +181,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					}),
 					q(39720, {	-- Foul Fertilizer
 						["u"] = 26,
-						["qg"] = 96705,	-- Orukan
+						["provider"] = { "n", 96705 },	-- Orukan
 						["isDaily"] = true,
 						["g"] = {
 							i(128658),	-- Spooky Supplies
@@ -189,7 +189,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					}),
 					q(39719, {	-- Mutiny on the Boneship
 						["u"] = 26,
-						["qg"] = 96705,	-- Orukan
+						["provider"] = { "n", 96705 },	-- Orukan
 						["isDaily"] = true,
 						["g"] = {
 							i(128658),	-- Spooky Supplies
@@ -197,7 +197,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					}),
 					q(39716, {	-- Smashing Squashlings
 						["u"] = 26,
-						["qg"] = 96705,	-- Orukan
+						["provider"] = { "n", 96705 },	-- Orukan
 						["isDaily"] = true,
 						["g"] = {
 							i(128658),	-- Spooky Supplies
@@ -208,7 +208,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["questID"] = 8312,	-- Hallow's End Treats for Spoops!
 						["repeatable"] = true,
 						["isDaily"] = true,
-						["qg"] = 15309,			-- Spoops
+						["provider"] = { "n", 15309 },			-- Spoops
 						["coords"] = {
 							{ 62.13, 66.44 },
 						},
@@ -226,7 +226,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					--Save Village from Headless Horseman
 					{	-- Fire Training [Durotaur]
 						["questID"] = 11361,	-- Fire Training
-						["qg"] = 23973,			-- Masked Oprhan Matron
+						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
 						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
@@ -249,7 +249,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 					{	-- Fire Training [Elwynn Forest]
 						["questID"] = 11450,	-- Fire Training
-						["qg"] = 23973,			-- Masked Oprhan Matron
+						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
 						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
@@ -272,7 +272,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 					{	-- Fire Training [Tirisfal Glades]
 						["questID"] = 11449,	-- Fire Training
-						["qg"] = 23973,			-- Masked Oprhan Matron
+						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
 						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
@@ -291,7 +291,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 					{	-- "Let the Fires Come!"
 						["questID"] = 12139,	-- "Let the Fires Come!"
-						["qg"] = 23973,			-- Masked Oprhan Matron
+						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
 						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
@@ -317,7 +317,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 					{	-- Stop the Fires!
 						["questID"] = 11219,	-- Stop the Fires!
-						["qg"] = 23973,			-- Masked Oprhan Matron
+						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
 						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
@@ -343,41 +343,41 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 					
 					q(29430, {	-- A Friend in Need (Alliance)
-						["qg"] = 51934,	-- Gretchen Fenlow
+						["provider"] = { "n", 51934 },	-- Gretchen Fenlow
 						["maps"] = { 37 },	-- Elwynn Forest
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(29392, {	-- Missing Heirlooms (Alliance)
-						["qg"] = 53949,	-- Anson Hastings
+						["provider"] = { "n", 53949 },	-- Anson Hastings
 						["maps"] = { 84 },	-- Stormwind City
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 29430 },	-- A Friend in Need (Alliance)
 					}),
 					q(29398, {	-- Fencing the Goods (Alliance)
-						["qg"] = 53950,	-- Hired Courier
+						["provider"] = { "n", 53950 },	-- Hired Courier
 						["maps"] = { 84 },	-- Stormwind City
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 29392 },	-- Missing Heirlooms (Alliance)
 					}),
 					q(29399, {	-- Shopping Around (Alliance)
-						["qg"] = 8719,	-- Auctioneer Fitch
+						["provider"] = { "n", 8719 },	-- Auctioneer Fitch
 						["maps"] = { 84 },	-- Stormwind City
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 29398 },	-- Fencing the Goods (Alliance)
 					}),
 					q(29402, {	-- Taking Precautions (Alliance)
-						["qg"] = 54021,	-- Hudson Barnes
+						["provider"] = { "n", 54021 },	-- Hudson Barnes
 						["maps"] = { 84 },	-- Stormwind City
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 29399 },	-- Shopping Around (Alliance)
 					}),
 					q(29403, {	-- The Collector's Agent (Alliance)
-						["qg"] = 54021,	-- Hudson Barnes
+						["provider"] = { "n", 54021 },	-- Hudson Barnes
 						["maps"] = { 84 },	-- Stormwind City
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = ALLIANCE_ONLY,
@@ -403,41 +403,41 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					}),
 					q(29431, {	-- A Friend in Need (Horde)
-						["qg"] = 53763,	-- Gretchen Fenlow
+						["provider"] = { "n", 53763 },	-- Gretchen Fenlow
 						["maps"] = { 90 },	-- Undercity
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = HORDE_ONLY,
 					}),
 					q(29415, {	-- Missing Heirlooms (Horde)
-						["qg"] = 54141,	-- Edgar Goodwin
+						["provider"] = { "n", 54141 },	-- Edgar Goodwin
 						["maps"] = { 85 },	-- Orgrimmar
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 29431 },	-- A Friend in Need (Horde)
 					}),
 					q(29416, {	-- Fencing the Goods (Horde)
-						["qg"] = 54142,	-- Hired Courier
+						["provider"] = { "n", 54142 },	-- Hired Courier
 						["maps"] = { 85 },	-- Orgrimmar
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 29415 },	-- Missing Heirlooms (Horde)
 					}),
 					q(29425, {	-- Shopping Around (Horde)
-						["qg"] = 44866,	-- Auctioneer Drezmit
+						["provider"] = { "n", 44866 },	-- Auctioneer Drezmit
 						["maps"] = { 85 },	-- Orgrimmar
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 29416 },	-- Fencing the Goods (Horde)
 					}),
 					q(29426, {	-- Taking Precautions (Horde)
-						["qg"] = 54146,	-- Delian Sunshade
+						["provider"] = { "n", 54146 },	-- Delian Sunshade
 						["maps"] = { 85 },	-- Orgrimmar
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 29425 },	-- Shopping Around (Horde)
 					}),
 					q(29427, {	-- The Collector's Agent (Horde)
-						["qg"] = 54146,	-- Delian Sunshade
+						["provider"] = { "n", 54146 },	-- Delian Sunshade
 						["maps"] = { 85 },	-- Orgrimmar
 						["u"] = 26,				-- Hallow's End Filter
 						["races"] = HORDE_ONLY,
@@ -463,70 +463,70 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					}),
 					q(8356, {	-- Flexing for Nougat (Alliance)
-						["qg"] = 6740,	-- Innkeeper Allison
+						["provider"] = { "n", 6740 },	-- Innkeeper Allison
 						["maps"] = { 84 },	-- Stormwind City
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
 					}),
 					q(8355, {	-- Incoming Gumdrop (Alliance)
-						["qg"] = 5111,	-- Innkeeper Firebrew
+						["provider"] = { "n", 5111 },	-- Innkeeper Firebrew
 						["maps"] = { 87 },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
 					}),
 					q(8353, {	-- Chicken Clucking for a Mint (Alliance)
-						["qg"] = 6740,	-- Innkeeper Allison
+						["provider"] = { "n", 6740 },	-- Innkeeper Allison
 						["maps"] = { 84 },	-- Stormwind City
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
 					}),
 					q(8357, {	-- Dancing for Marzipan (Alliance)
-						["qg"] = 6735,	-- Innkeeper Saelienne
+						["provider"] = { "n", 6735 },	-- Innkeeper Saelienne
 						["maps"] = { 89 },	-- Darnassus
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
 					}),
 					q(8311, {	-- Hallow's End Treats for Jesper!
-						["qg"] = 15310,	-- Jesper
+						["provider"] = { "n", 15310 },	-- Jesper
 						["maps"] = { 37 },	-- Elwynn Forest
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8356, 8355, 8353, 8357 },	-- Flexing for Nougat, Incoming Gumdrop, Chicken Clucking for a Mint, Dancing for Marzipan (Alliance)
 					}),
 					q(8359, {	-- Flexing for Nougat (Horde)
-						["qg"] = 6929,	-- Innkeeper Gryshka
+						["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 						["maps"] = { 85 },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
 					}),
 					q(8358, {	-- Incoming Gumdrop (Horde)
-						["qg"] = 11814,	-- Kali Remik
+						["provider"] = { "n", 11814 },	-- Kali Remik
 						["maps"] = { 85 },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
 					}),
 					q(8354, {	-- Chicken Clucking for a Mint (Horde)
-						["qg"] = 6741,	-- Innkeeper Norman
+						["provider"] = { "n", 6741 },	-- Innkeeper Norman
 						["maps"] = { 90 },	-- Undercity
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
 					}),
 					q(8360, {	-- Dancing for Marzipan (Horde)
-						["qg"] = 6746,	-- Innkeeper Pala
+						["provider"] = { "n", 6746 },	-- Innkeeper Pala
 						["maps"] = { 88 },	-- Thunder Bluff
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
 					}),
 					q(8312, {	-- Hallow's End Treats for Spoops!
-						["qg"] = 15309,	-- Spoops
+						["provider"] = { "n", 15309 },	-- Spoops
 						["maps"] = { 90 },	-- Undercity
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
@@ -534,13 +534,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 					}),
 --[[				-- To Do
 					q(29400, {	-- A Season for Celebration
-						["qgs"] = {
-							19169,	-- Blood Elf Commoner
-							19175,	-- Orc Commoner
-							19176,	-- Tauren Commoner
-							19177,	-- Troll Commoner
-							19178,	-- Forsaken Commoner
-							20102,	-- Goblin Commoner
+						["providers"] = {
+							{ "n", 19169 },	-- Blood Elf Commoner
+							{ "n", 19175 },	-- Orc Commoner
+							{ "n", 19176 },	-- Tauren Commoner
+							{ "n", 19177 },	-- Troll Commoner
+							{ "n", 19178 },	-- Forsaken Commoner
+							{ "n", 20102 },	-- Goblin Commoner
 						},
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
@@ -548,7 +548,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["maps"] = 		Need to be filled in.
 					}),
 					q(29377, {	-- A Time to Break Down
-						["qg"] = 15197,	-- Darkcaller Yanka
+						["provider"] = { "n", 15197 },	-- Darkcaller Yanka
 						["coord"] = { 62.0, 67.8, 18 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 29400,	-- A Season for Celebration
@@ -556,7 +556,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["maps"] = { 18 }, - Tirisfal Glades
 					}),
 					q(29376, {	-- A Time to Build Up
-						["qg"] = 15197,	-- Darkcaller Yanka
+						["provider"] = { "n", 15197 },	-- Darkcaller Yanka
 						["coord"] = { 62.0, 67.8, 18 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 29400,	-- A Season for Celebration

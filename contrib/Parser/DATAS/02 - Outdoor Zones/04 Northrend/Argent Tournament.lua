@@ -35,173 +35,173 @@ _.Zones =
 						q(14444, {	-- What The Dragons Know (A)
 							["sourceQuest"] = 14443,	-- The Battered Hilt [Alliance]
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 						}),
 						q(24555, {	-- What The Dragons Know (H)
 							["sourceQuest"] = 24554,	-- The Battered Hilt [Horde]
 							["races"] = HORDE_ONLY,
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
 						q(14457, {	-- The Sunreaver Plan
 							["sourceQuest"] = 14444,	-- What The Dragons Know [Alliance]
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36669,	-- Arcanist Tybalin
+							["provider"] = { "n", 36669 },	-- Arcanist Tybalin
 						}),
 						q(24557, {	-- The Silver Covenant's Scheme
 							["sourceQuest"] = 24555,	-- What The Dragons Know
 							["races"] = HORDE_ONLY,
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+							["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
 						}),
 						q(20438, {	-- A Suitable Disguise (A)
 							["sourceQuest"] = 14457,	-- The Sunreaver Plan
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36669,	-- Arcanist Tybalin
+							["provider"] = { "n", 36669 },	-- Arcanist Tybalin
 						}),
 						q(24556, {	-- A Suitable Disguise (H)
 							["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme [Horde]
 							["races"] = HORDE_ONLY,
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+							["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
 						}),
 						q(20439, {	-- A Meeting With The Magister
 							["sourceQuest"] = 20438,	-- A Suitable Disguise [Alliance]
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36669,	-- Arcanist Tybalin
+							["provider"] = { "n", 36669 },	-- Arcanist Tybalin
 						}),
 						q(24451, {	-- An Audience With The Arcanist
 							["sourceQuest"] = 24556,	-- A Suitable Disguise [Horde]
 							["races"] = HORDE_ONLY,
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+							["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
 						}),
 						q(24454, {	-- Return To Caladis Brightspear
 							["sourceQuest"] = 20439,	-- A Meeting With The Magister [Alliance]
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36669,	-- Arcanist Tybalin
+							["provider"] = { "n", 36669 },	-- Arcanist Tybalin
 						}),
 						q(24558, {	-- Return To Myralion Sunblaze
 							["sourceQuest"] = 24451,	-- An Audience With The Arcanist [Horde]
 							["races"] = HORDE_ONLY,
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+							["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
 						}),
 						q(24461, {	-- Reforging The Sword (A)
 							["sourceQuest"] = 24454,	-- Return To Caladis Brightspear [Alliance]
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 						}),
 						q(24559, {	-- Reforging The Sword (H)
 							["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze [Horde]
 							["races"] = HORDE_ONLY,
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
 						q(24476, {	-- Tempering The Blade (A)
 							["sourceQuest"] = 24461,	-- Reforging The Sword [Alliance]
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 						}),
 						q(24560, {	-- Tempering The Blade (H)
 							["sourceQuest"] = 24559,	-- Reforging The Sword [Horde]
 							["races"] = HORDE_ONLY,
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
 						q(24480, {	-- The Halls Of Reflection (A)
 							["sourceQuest"] = 24476,	-- Tempering The Blade [Alliance]
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 						}),
 						q(24561, {	-- The Halls Of Reflection (H)
 							["sourceQuest"] = 24560,	-- Tempering The Blade [Horde]
 							["races"] = HORDE_ONLY,
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
 						q(24522, {	-- Journey To The Sunwell (A)
 							["sourceQuest"] = 24480,	-- The Halls Of Reflection [Alliance]
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 						}),
 						q(24562, {	-- Journey To The Sunwell (H)
 							["sourceQuest"] = 24561,	-- The Halls Of Reflection [Horde]
 							["races"] = HORDE_ONLY,
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
 						q(24535, {	-- Thalorien Dawnseeker (A)
 							["sourceQuest"] = 24522,	-- Journey To The Sunwell
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
 						q(24563, {	-- Thalorien Dawnseeker (H)
 							["sourceQuest"] = 24562,	-- Journey To The Sunwell
 							["races"] = HORDE_ONLY,
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
 						q(24553, {	-- The Purification of Quel'Delar (A)
 							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
 						q(24595, {	-- The Purification of Quel'Delar (A — Maces)
 							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
 						q(24564, {	-- The Purification of Quel'Delar (H)
 							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
 							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
 						q(24598, {	-- The Purification of Quel'Delar (H — Maces)
 							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
 						q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
 							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
 							["races"] = { 10 },	-- Blood Elf
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
 						q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
 							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 							["races"] = { 10 },	-- Blood Elf
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
 						q(24796, {	-- A Victory For The Silver Covenant (A)
 							["sourceQuest"] = 24553,	-- The Purification of Quel'Delar [Alliance]
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 						}),
 						q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
 							["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [Alliance - Maces]
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 						}),
 						q(24801, {	-- A Victory For The Sunreavers [Horde]
 							["sourceQuest"] = 24564,	-- The Purification of Quel'Delar [Horde]
 							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
 						q(24799, {	-- A Victory For The Sunreavers [Horde - Maces]
 							["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [Horde - Maces]
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
 						q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
 							["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
 							["races"] = { 10 },	-- Blood Elf Only!
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
 						q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
 							["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 							["races"] = { 10 },	-- Blood Elf Only!
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
 						n(-6015, {	-- Rewards
 							["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
@@ -241,7 +241,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -250,7 +250,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.1, 24.0, 118 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -273,7 +273,7 @@ _.Zones =
 							33748,	-- Thunder Bluff Champion
 							33749,	-- Undercity Champion
 						},
-						["qg"] = 33771,	-- Luuri
+						["provider"] = { "n", 33771 },	-- Luuri
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
@@ -299,7 +299,7 @@ _.Zones =
 							33748,	-- Thunder Bluff Champion
 							33749,	-- Undercity Champion
 						},
-						["qg"] = 33770,	-- Illyrie Nightfall <Mistress of Horses>
+						["provider"] = { "n", 33770 },	-- Illyrie Nightfall <Mistress of Horses>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
@@ -313,7 +313,7 @@ _.Zones =
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
 						["isDaily"] = true,
 						["coord"] = { 69.9, 23.4, 118 },
-						["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
+						["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
@@ -326,7 +326,7 @@ _.Zones =
 						["classes"] = { 6 },	-- Death Knight Only
 						["isDaily"] = true,
 						["coord"] = { 73.8, 20.0, 118 },
-						["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
+						["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
@@ -337,7 +337,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
+						["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -346,7 +346,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.1, 24.0, 118 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
+						["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -354,12 +354,12 @@ _.Zones =
 					q(13846, {	-- Contributin' To The Cause
 						["isDaily"] = true,
 						["coord"] = { 69.5, 22.4, 118 },
-						["qg"] = 34210,	-- Squire Artie
+						["provider"] = { "n", 34210 },	-- Squire Artie
 					}),
 					q(14101, {	-- Drottinn Hrothgar
 						["isDaily"] = true,
 						["coord"] = { 69.4, 23.1, 118 },
-						["qg"] = 34882,	-- High Crusader Adelard
+						["provider"] = { "n", 34882 },	-- High Crusader Adelard
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -367,7 +367,7 @@ _.Zones =
 					q(14108, {	-- Get Kraken!
 						["isDaily"] = true,
 						["coord"] = { 69.4, 23.1, 118 },
-						["qg"] = 35094,	-- Crusader Silverdawn
+						["provider"] = { "n", 35094 },	-- Crusader Silverdawn
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -376,7 +376,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
+						["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -385,7 +385,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.1, 24.0, 118 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
+						["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -394,7 +394,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -403,7 +403,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.1, 24.0, 118 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -412,7 +412,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -421,7 +421,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.1, 24.0, 118 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -432,7 +432,7 @@ _.Zones =
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
 						["isDaily"] = true,
 						["coord"] = { 69.9, 23.4, 118 },
-						["qg"] = 33763,	-- Cellian Daybreak <Master of Arms>
+						["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
@@ -445,7 +445,7 @@ _.Zones =
 						["classes"] = { 6 },	-- Death Knight Only
 						["isDaily"] = true,
 						["coord"] = { 73.8, 19.6, 118 },
-						["qg"] = 33769,	-- Zor'be the Bloodletter <Master of Arms>
+						["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
@@ -455,7 +455,7 @@ _.Zones =
 					q(14107, {	-- The Fate of the Fallen
 						["isDaily"] = true,
 						["coord"] = { 69.4, 23.1, 118 },
-						["qg"] = 35094,	-- Crusader Silverdawn
+						["provider"] = { "n", 35094 },	-- Crusader Silverdawn
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -464,7 +464,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -473,7 +473,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.1, 24.0, 118 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -484,7 +484,7 @@ _.Zones =
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
 						["isDaily"] = true,
 						["coord"] = { 69.9, 23.4, 118 },
-						["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
+						["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
@@ -497,7 +497,7 @@ _.Zones =
 						["isDaily"] = true,
 						["classes"] = { 6 },	-- Death Knight Only
 						["coord"] = { 73.8, 20.0, 118 },
-						["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
+						["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
@@ -508,7 +508,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
+						["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -517,7 +517,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.1, 24.0, 118 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
+						["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -526,7 +526,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
@@ -535,7 +535,7 @@ _.Zones =
 						["isDaily"] = true,
 						["coord"] = { 76.1, 24.0, 118 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},

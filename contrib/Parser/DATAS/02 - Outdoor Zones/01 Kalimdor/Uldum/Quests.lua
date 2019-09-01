@@ -47,7 +47,7 @@ _.Zones =
 				},
 				{	-- A Favor for the Furrier
 					["questID"] = 27928,
-					["qg"] = 47670,	-- Belloc Brightblade
+					["provider"] = { "n", 47670 },	-- Belloc Brightblade
 					["coord"] = { 24.3, 64.5, 249 },
 					["sourceQuest"] = 27926,	-- Eastern Hospitality
 					["groups"] = {
@@ -100,19 +100,19 @@ _.Zones =
 				},
 				{	-- After the Fall
 					["questID"] = 27624,
-					["qg"] = 45296,	-- Harrison Jones
+					["provider"] = { "n", 45296 },	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, 249 },
 					["sourceQuest"] = 27431,	-- Tipping the Balance
 				},
 				{	-- Al'Akir's Vengeance
 					["questID"] = 28135,
-					["qg"] = 47684,	-- King Phaoris
+					["provider"] = { "n", 47684 },	-- King Phaoris
 					["coord"] = { 54.9, 32.7, 249 },
 					["sourceQuest"] = 28134,	-- Impending Retribution
 				},
 				{	-- Ancient Weapons
 					["questID"] = 27839,
-					["qg"] = 46134,	-- High Commander Kamses
+					["provider"] = { "n", 46134 },	-- High Commander Kamses
 					["coord"] = { 58.8, 46.1, 249 },
 					["sourceQuest"] = 28201,	-- Ploughshares to Swords
 					["groups"] = {
@@ -123,19 +123,19 @@ _.Zones =
 				},
 				{	-- Angered Spirits
 					["questID"] = 27943,
-					["qg"] = 47159,	-- Commander Schnottz
+					["provider"] = { "n", 47159 },	-- Commander Schnottz
 					["coord"] = { 24.4, 64.0, 249 },
 					["sourceQuest"] = 27939,	-- The Desert Fox
 				},
 				{	-- Bad Datas
 					["questID"] = 28403,
-					["qg"] = 48528,	-- Harrison Jones
+					["provider"] = { "n", 48528 },	-- Harrison Jones
 					["coord"] = { 36.1, 20.2, 249 },
 					["sourceQuest"] = 28402,	-- Schnottz So Fast
 				},
 				{	-- Battlezone
 					["questID"] = 27990,
-					["qg"] = 47159,	-- Commander Schnottz
+					["provider"] = { "n", 47159 },	-- Commander Schnottz
 					["coord"] = { 24.4, 64.0, 249 },
 					["sourceQuest"] = 28002,	-- Crisis Management
 					["groups"] = {
@@ -146,7 +146,7 @@ _.Zones =
 				},
 				{	-- Be Prepared
 					["questID"] = 28602,
-					["qg"] = 45296,	-- Harrison Jones
+					["provider"] = { "n", 45296 },	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, 249 },
 					["sourceQuest"] = 27196,	-- On to Something
 					["description"] = "This version of the quest will be offered if you have completed Lessons From the Past.",
@@ -158,19 +158,19 @@ _.Zones =
 				},
 				{	-- Bleeding the Enemy
 					["questID"] = 28483,
-					["qg"] = 48564,	-- King Phaoris
+					["provider"] = { "n", 48564 },	-- King Phaoris
 					["coord"] = { 52.0, 65.4, 249 },
 					["sourceQuest"] = 28623,	-- The Push Westward
 				},
 				{	-- Budd's Plan
 					["questID"] = 27924,
-					["qg"] = 46875,	-- Budd
+					["provider"] = { "n", 46875 },	-- Budd
 					["coord"] = { 59.5, 72.0, 249 },
 					["sourceQuest"] = 27922,	-- Traitors!
 				},
 				{	-- By the Light of the Stars
 					["questID"] = 27549,
-					["qg"] = 45296,	-- Harrison Jones
+					["provider"] = { "n", 45296 },	-- Harrison Jones
 					["coord"] = { 64.4, 28.0, 249 },
 					["sourceQuests"] = {
 						27517,	-- Be Prepared
@@ -181,13 +181,13 @@ _.Zones =
 				},
 				{	-- Camel Tow
 					["questID"] = 28352,
-					["qg"] = 48431,	-- Sullah
+					["provider"] = { "n", 48431 },	-- Sullah
 					["coord"] = { 29.6, 21.8, 249 },
 					["sourceQuest"] = 28274,	-- Two Tents
 				},
 				{	-- Crisis Management
 					["questID"] = 28002,
-					["qg"] = 47670,	-- Belloc Brightblade
+					["provider"] = { "n", 47670 },	-- Belloc Brightblade
 					["coord"] = { 24.3, 64.5, 249 },
 					["sourceQuest"] = 27969,	-- Make Yourself Useful
 				},
@@ -210,13 +210,13 @@ _.Zones =
 				},
 				{	-- Dirty Birds
 					["questID"] = 27940,
-					["qg"] = 47202,	-- Diseased Vulture
+					["provider"] = { "n", 47202 },	-- Diseased Vulture
 					["sourceQuest"] = 27926,	-- Eastern Hospitality
 					["description"] = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox or A Favor for the Furrier."
 				},
 				{	-- Do the Honors
 					["questID"] = 27669,
-					["qg"] = 45296,	-- Harrison Jones
+					["provider"] = { "n", 45296 },	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, 249 },
 					["sourceQuest"] = 27624,	-- After the Fall
 					["groups"] = {
@@ -228,13 +228,13 @@ _.Zones =
 				},
 				{	-- Do the World a Favor
 					["questID"] = 27187,
-					["qg"] = 45202,	-- Mangy Hyena
+					["provider"] = { "n", 45202 },	-- Mangy Hyena
 					["sourceQuest"] = 27141,	-- Harrison Jones
 					["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting Just the Tip or Field Work."
 				},
 				{	-- Eastern Hospitality
 					["questID"] = 27926,
-					["qg"] = 47670,	-- Belloc Brightblade
+					["provider"] = { "n", 47670 },	-- Belloc Brightblade
 					["coord"] = { 24.3, 64.5, 249 },
 					["sourceQuest"] = 28132,	-- Efficient Excavations
 				},
@@ -272,13 +272,13 @@ _.Zones =
 				},
 				{	-- Elemental Bonds: Doubt
 					["questID"] = 29327,
-					["qg"] = 53524,	-- Cyclonas
+					["provider"] = { "n", 53524 },	-- Cyclonas
 					["coord"] = { 47.7, 88.9, 249 },
 					["sourceQuest"] = 29335,	-- Into Slashing Winds
 				},
 				{	-- Escape From the Lost City
 					["questID"] = 28112,
-					["qg"] = 46872,	-- Prince Nadun
+					["provider"] = { "n", 46872 },	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, 249 },
 					["sourceQuests"] = {
 						27923,	-- Smoke in Their Eyes
@@ -294,7 +294,7 @@ _.Zones =
 				},
 				{	-- Fashionism
 					["questID"] = 27941,
-					["qg"] = 47670,	-- Belloc Brightblade
+					["provider"] = { "n", 47670 },	-- Belloc Brightblade
 					["coord"] = { 24.3,64.5, 249 },
 					["sourceQuest"] = 27928,	-- A Favor for the Furrier
 					["groups"] = {
@@ -305,7 +305,7 @@ _.Zones =
 				},
 				{	-- Field Work
 					["questID"] = 27179,
-					["qg"] = 45186,	-- Sand Pygmy Corpse
+					["provider"] = { "n", 45186 },	-- Sand Pygmy Corpse
 					["coord"] = { 64.6, 28.6, 249 },
 					["sourceQuests"] = {
 						28112,	-- Escape From the Lost City
@@ -314,7 +314,7 @@ _.Zones =
 				},
 				{	-- Fire From the Sky
 					["questID"] = 28497,
-					["qg"] = 48698,	-- Harrison Jones
+					["provider"] = { "n", 48698 },	-- Harrison Jones
 					["coord"] = { 41.3, 5.5, 249 },
 					["sourceQuest"] = 28482,	-- Sullah's Gift
 					["groups"] = {
@@ -326,7 +326,7 @@ _.Zones =
 				},
 				{	-- Fire From the Sky
 					["questID"] = 28736,
-					["qg"] = 49523,	-- Weathered Nomad
+					["provider"] = { "n", 49523 },	-- Weathered Nomad
 					["coord"] = { 41.3, 5.5, 249 },
 					["isDaily"] = true,
 					["sourceQuest"] = 28497,	-- Fire From the Sky
@@ -336,7 +336,7 @@ _.Zones =
 				},
 				{	-- Firing Squad
 					["questID"] = 28267,
-					["qg"] = 47972,	-- Commander Schnottz
+					["provider"] = { "n", 47972 },	-- Commander Schnottz
 					["coord"] = { 22.5, 63.1, 249 },
 					["sourceQuests"] = {
 						28195,	-- Sending a Message
@@ -345,7 +345,7 @@ _.Zones =
 				},
 				{	-- Fortune and Glory
 					["questID"] = 27748,
-					["qg"] = 47158,	-- Harrison Jones
+					["provider"] = { "n", 47158 },	-- Harrison Jones
 					["coord"] = { 36.1, 15.7, 249 },
 					["sourceQuest"] = 28613,	-- See You on the Other Side!
 					["groups"] = {
@@ -356,13 +356,13 @@ _.Zones =
 				},
 				{	-- Friend of a Friend
 					["questID"] = 28273,
-					["qg"] = 48186,	-- Harrison Jones
+					["provider"] = { "n", 48186 },	-- Harrison Jones
 					["coord"] = { 27.0, 7.5, 249 },
 					["sourceQuest"] = 28269,	-- Meet Me In Vir'sar
 				},
 				{	-- Gnomebliteration
 					["questID"] = 27779,
-					["qg"] = 46750,	-- Fusion Core
+					["provider"] = { "n", 46750 },	-- Fusion Core
 					["coord"] = { 77.2, 63.2, 249 },
 					["sourceQuest"] = 27778,	-- Hacking the Wibson
 					["groups"] = {
@@ -374,7 +374,7 @@ _.Zones =
 				},
 				{	-- Gobbles!
 					["questID"] = 27950,
-					["qg"] = 47159,	-- Commander Schnottz
+					["provider"] = { "n", 47159 },	-- Commander Schnottz
 					["coord"] = { 24.4, 64.2, 249 },
 					["sourceQuests"] = {
 						27941,	-- Fashionism
@@ -384,7 +384,7 @@ _.Zones =
 				},
 				{	-- Harrison Jones and the Temple of Uldum
 					["questID"] = 28612,
-					["qg"] = 49151,	-- Harrison Jones
+					["provider"] = { "n", 49151 },	-- Harrison Jones
 					["coord"] = { 33.3, 19.6, 249 },
 					["sourceQuest"] = 27748,	-- Fortune and Glory
 					["groups"] = {
@@ -396,7 +396,7 @@ _.Zones =
 				},
 				{	-- I'll Do It By Hand
 					["questID"] = 28404,
-					["qg"] = 48558,	-- Harrison Jones
+					["provider"] = { "n", 48558 },	-- Harrison Jones
 					["coord"] = { 38.9, 23.2, 249 },
 					["sourceQuest"] = 28403,	-- Bad Datas
 					["groups"] = {
@@ -407,7 +407,7 @@ _.Zones =
 				},
 				{	-- I've Got This Guy
 					["questID"] = 27900,
-					["qg"] = 46978,	-- Harrison Jones
+					["provider"] = { "n", 46978 },	-- Harrison Jones
 					["coord"] = { 43.9, 57.0, 249 },
 					["sourceQuests"] = {
 						27669,	-- Do the Honors
@@ -416,31 +416,31 @@ _.Zones =
 				},
 				{	-- Idolatry
 					["questID"] = 27942,
-					["qg"] = 47159,	-- Commander Schnottz
+					["provider"] = { "n", 47159 },	-- Commander Schnottz
 					["coord"] = { 24.4, 64.0, 249 },
 					["sourceQuest"] = 27939,	-- The Desert Fox
 				},
 				{	-- Ignition
 					["questID"] = 27903,
-					["qg"] = 46978,	-- Harrison Jones
+					["provider"] = { "n", 46978 },	-- Harrison Jones
 					["coord"] = { 43.9, 57.0, 249 },
 					["sourceQuest"] = 27901,	-- They Don't Know What They've Got Here
 				},
 				{	-- Impending Retribution
 					["questID"] = 28134,
-					["qg"] = 47684,	-- King Phaoris
+					["provider"] = { "n", 47684 },	-- King Phaoris
 					["coord"] = { 54.9, 32.7, 249 },
 					["sourceQuest"] = 28112,	-- Escape From the Lost City
 				},
 				{	-- Into Coaxing Tides
 					["questID"] = 29336,
-					["qg"] = 53519,	-- Aggra
+					["provider"] = { "n", 53519 },	-- Aggra
 					["coord"] = { 34.3, 77.6, 249 },
 					["sourceQuest"] = 29327,	-- Elemental Bonds: Doubt
 				},
 				{	-- Jonesy Sent For You
 					["questID"] = 28353,
-					["qg"] = 48431,	-- Sullah
+					["provider"] = { "n", 48431 },	-- Sullah
 					["coord"] = { 29.6, 21.8, 249 },
 					["sourceQuest"] = 28350,	-- Master Trapper
 					["isBreadcrumb"] = true,
@@ -449,7 +449,7 @@ _.Zones =
 					["questID"] = 27627,
 					["sourceQuest"] = 27431,	-- Tipping the Balance
 					["description"] = "This quest is auto-accepted when you kill any color Scarab after completing Tipping the Balance.",
-					["qgs"] = {
+					["crs"] = {
 						46129,	-- Amethyst Scarab
 						46128,	-- Emerald Scarab
 						46127,	-- Sapphire Scarab
@@ -458,7 +458,7 @@ _.Zones =
 				},
 				{	-- Kavem the Callous
 					["questID"] = 28105,
-					["qg"] = 46872,	-- Prince Nadun
+					["provider"] = { "n", 46872 },	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, 249 },
 					["sourceQuest"] = 27922,	-- Traitors!
 					["groups"] = {
@@ -469,13 +469,13 @@ _.Zones =
 				},
 				{	-- Lessons From the Past
 					["questID"] = 27541,
-					["qg"] = 45874,	-- Schnottz Scout
+					["provider"] = { "n", 45874 },	-- Schnottz Scout
 					["coord"] = { 63.4, 32.4, 249 },
 					["sourceQuest"] = 27196,	-- On to Something
 				},
 				{	-- Lieutenants of Darkness
 					["questID"] = 28480,
-					["qg"] = 48564,	-- King Phaoris
+					["provider"] = { "n", 48564 },	-- King Phaoris
 					["coord"] = { 52.0, 65.4, 249 },
 					["sourceQuest"] = 28623,	-- The Push Westward
 					["groups"] = {
@@ -485,13 +485,13 @@ _.Zones =
 				},
 				{	-- Lockdown!
 					["questID"] = 28193,
-					["qg"] = 47972,	-- Commander Schnottz
+					["provider"] = { "n", 47972 },	-- Commander Schnottz
 					["coord"] = { 22.5, 63.1, 249 },
 					["sourceQuest"] = 28187,	-- Missed Me By Zhat Much!
 				},
 				{	-- Make Yourself Useful
 					["questID"] = 27969,
-					["qg"] = 47159,	-- Commander Schnottz
+					["provider"] = { "n", 47159 },	-- Commander Schnottz
 					["coord"] = { 24.4, 64.0, 249 },
 					["sourceQuest"] = 27950,	-- Gobbles!
 					["groups"] = {
@@ -502,19 +502,19 @@ _.Zones =
 				},
 				{	-- Master Trapper
 					["questID"] = 28350,
-					["qg"] = 48431,	-- Sullah
+					["provider"] = { "n", 48431 },	-- Sullah
 					["coord"] = { 29.6, 21.8, 249 },
 					["sourceQuest"] = 28274,	-- Two Tents
 				},
 				{	-- Meet Me In Vir'sar
 					["questID"] = 28269,
-					["qg"] = 48162,	-- Harrison Jones
+					["provider"] = { "n", 48162 },	-- Harrison Jones
 					["coord"] = { 23.5, 60.2, 249 },
 					["sourceQuest"] = 28267,	-- Firing Squad
 				},
 				{	-- Minions of Al'Akir
 					["questID"] = 27520,
-					["qg"] = 45799,	-- Prince Nadun
+					["provider"] = { "n", 45799 },	-- Prince Nadun
 					["coord"] = { 45.2, 37.9, 249 },
 					["sourceQuest"] = 28135,	-- Al'Akir's Vengeance
 					["groups"] = {
@@ -525,37 +525,37 @@ _.Zones =
 				},
 				{	-- Missed Me By Zhat Much!
 					["questID"] = 28187,
-					["qg"] = 47940,	-- Commander Schnottz
+					["provider"] = { "n", 47940 },	-- Commander Schnottz
 					["coord"] = { 24.4, 64.0, 249 },
 					["sourceQuest"] = 27990,	-- Battlezone
 				},
 				{	-- Missing Pieces
 					["questID"] = 28272,
-					["qg"] = 48186,	-- Harrison Jones
+					["provider"] = { "n", 48186 },	-- Harrison Jones
 					["coord"] = { 27.0, 7.5, 249 },
 					["sourceQuest"] = 28350,	-- Master Trapper
 				},
 				{	-- Myzerian's Head
 					["itemID"] = 63700,
 					["questID"] = 28376,
-					["qg"] = 48428,	-- Myzerian
+					["provider"] = { "n", 48428 },	-- Myzerian
 					["sourceQuest"] = 48431,	-- Shroud of the Makers!
 					["coord"] = { 40.59, 22.19, 249 },
 				},
 				{	-- Nahom Must Hold
 					["questID"] = 28561,
-					["qg"] = 47684,	-- King Phaoris
+					["provider"] = { "n", 47684 },	-- King Phaoris
 					["coord"] = { 54.9, 32.7, 249 },
 					["sourceQuest"] = 28533,	-- The High Council's Decision
 				},
 				{	-- Neferset Prison
 					["questID"] = 27707,
-					["qg"] = 46136,	-- Vizier Tanotep
+					["provider"] = { "n", 46136 },	-- Vizier Tanotep
 					["sourceQuest"] = 27632,	-- Tanotep's Son
 				},
 				{	-- On to Something
 					["questID"] = 27196,
-					["qg"] = 45180,	-- Harrison Jones
+					["provider"] = { "n", 45180 },	-- Harrison Jones
 					["coord"] = { 64.5, 28.5, 249 },
 					["sourceQuests"] = {
 						27176,	-- Just the Tip
@@ -564,19 +564,19 @@ _.Zones =
 				},
 				{	-- Ploughshares to Swords
 					["questID"] = 28201,
-					["qg"] = 46134,	-- High Commander Kamses
+					["provider"] = { "n", 46134 },	-- High Commander Kamses
 					["coord"] = { 58.8, 46.1, 249 },
 					["sourceQuest"] = 27631,	-- The High Commander's Vote
 				},
 				{	-- Premature Explosionation
 					["questID"] = 27141,
-					["qg"] = 44860,	-- Harrison Jones
+					["provider"] = { "n", 44860 },	-- Harrison Jones
 					["coord"] = { 64.3, 22.3, 249 },
 					["sourceQuest"] = 27993,	-- Take it to 'Em!
 				},
 				{	-- Punish the Trespassers
 					["questID"] = 28499,
-					["qg"] = 48501,	-- Sun Prophet Tumet
+					["provider"] = { "n", 48501 },	-- Sun Prophet Tumet
 					["coord"] = { 67.3, 42.7, 249 },
 					["sourceQuest"] = 28561,	-- Nahom Must Hold
 					["groups"] = {
@@ -587,13 +587,13 @@ _.Zones =
 				},
 				{	-- Put That Baby in the Cradle!
 					["questID"] = 28621,
-					["qg"] = 49204,	-- Brann Bronzebeard
+					["provider"] = { "n", 49204 },	-- Brann Bronzebeard
 					["coord"] = { 32.5, 30.8, 249 },
 					["sourceQuest"] = 28612,	-- Harrison Jones and Temple of Uldum
 				},
 				{	-- Reduced Productivity
 					["questID"] = 28271,
-					["qg"] = 48186,	-- Harrison Jones
+					["provider"] = { "n", 48186 },	-- Harrison Jones
 					["coord"] = { 27.0, 7.5, 249 },
 					["sourceQuests"] = {
 						28353,	-- Jonesy Sent For You
@@ -602,26 +602,26 @@ _.Zones =
 				},
 				{	-- Relics of the Sun King
 					["questID"] = 28141,
-					["qg"] = 47715,	-- Sun Priest Asaris
+					["provider"] = { "n", 47715 },	-- Sun Priest Asaris
 					["coord"] = { 52.9, 27.7, 249 },
 					["sourceQuest"] = 28112,	-- Escape From the Lost City
 				},
 				{	-- Return to Camp
 					["questID"] = 28291,
-					["qg"] = 48237,	-- Salhet
+					["provider"] = { "n", 48237 },	-- Salhet
 					["coord"] = { 56.9, 62.4, 249 },
 					["sourceQuest"] = 28277,	-- Salhet the Tactician
 				},
 				{	-- Return to the Lost City
 					["questID"] = 28870,
-					["qg"] = 47684,	-- King Phaoris
+					["provider"] = { "n", 47684 },	-- King Phaoris
 					["coord"] = { 54.9, 32.7, 249 },
 					["sourceQuest"] = 28520,	-- The Fall of Neferset City
 					["isBreadcrumb"] = true,	-- For 28783
 				},
 				{	-- Salhet the Tactician
 					["questID"] = 28277,
-					["qg"] = 48237,	-- Salhet
+					["provider"] = { "n", 48237 },	-- Salhet
 					["coord"] = { 56.9, 62.4, 249 },
 					["sourceQuest"] = 28276,	-- Salhet's Secret
 					["groups"] = {
@@ -632,13 +632,13 @@ _.Zones =
 				},
 				{	-- Salhet's Gambit
 					["questID"] = 28486,
-					["qg"] = 49345,	-- Salhet
+					["provider"] = { "n", 49345 },	-- Salhet
 					["coord"] = { 52.9, 65.5, 249 },
 					["sourceQuest"] = 28623,	-- The Push Westward
 				},
 				{	-- Salhet's Secret
 					["questID"] = 28276,
-					["qg"] = 48022,	-- Salhet
+					["provider"] = { "n", 48022 },	-- Salhet
 					["coord"] = { 52.5, 56.5, 249 },	-- Picked up anywhere on Sunwatcher's Ridge, but adding one coord to point out the general area
 					["sourceQuest"] = 28210,	-- Shaping Up
 				},
@@ -664,37 +664,37 @@ _.Zones =
 				},
 				{	-- Schnottz So Fast
 					["questID"] = 28402,
-					["qg"] = 48186,	-- Harrison Jones
+					["provider"] = { "n", 48186 },	-- Harrison Jones
 					["coord"] = { 27.0, 7.5, 249 },
 					["sourceQuest"] = 28367,	-- Shroud of the Makers
 				},
 				{	-- See You on the Other Side!
 					["questID"] = 28613,
-					["qg"] = 48698,	-- Harrison Jones
+					["provider"] = { "n", 48698 },	-- Harrison Jones
 					["coord"] = { 41.3, 5.5, 249 },
 					["sourceQuest"] = 28497,	-- Fire From the Sky
 				},
 				{	-- Send Word to Phaoris
 					["questID"] = 27628,
-					["qg"] = 45799,	-- Prince Nadun
+					["provider"] = { "n", 45799 },	-- Prince Nadun
 					["coord"] = { 45.2, 37.9, 249 },
 					["sourceQuest"] = 27706,	-- The Scepter of Orsis
 				},
 				{	-- Sending a Message
 					["questID"] = 28195,
-					["qg"] = 47972,	-- Commander Schnottz
+					["provider"] = { "n", 47972 },	-- Commander Schnottz
 					["coord"] = { 22.5, 63.1, 249 },
 					["sourceQuest"] = 28193,	-- Lockdown!
 				},
 				{	-- Shaping Up
 					["questID"] = 28210,
-					["qg"] = 46883,	-- Salhet
+					["provider"] = { "n", 46883 },	-- Salhet
 					["coord"] = { 59.5, 47.3, 249 },
 					["sourceQuest"] = 28198,	-- The Weakest Link
 				},
 				{	-- Shroud of the Makers
 					["questID"] = 28367,
-					["qg"] = 48431,	-- Sullah
+					["provider"] = { "n", 48431 },	-- Sullah
 					["coord"] = { 29.6, 21.8, 249 },
 					["sourceQuest"] = 28363,	-- Stirred the Hornet's Nest
 					["groups"] = {
@@ -705,13 +705,13 @@ _.Zones =
 				},
 				{	-- Smoke in Their Eyes
 					["questID"] = 27923,
-					["qg"] = 46872,	-- Prince Nadun
+					["provider"] = { "n", 46872 },	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, 249 },
 					["sourceQuest"] = 27922,	-- Traitors!
 				},
 				{	-- Stirred the Hornet's Nest
 					["questID"] = 28363,
-					["qg"] = 48186,	-- Harrison Jones
+					["provider"] = { "n", 48186 },	-- Harrison Jones
 					["coord"] = { 27.0, 7.5, 249 },
 					["sourceQuests"] = {
 						28272,	-- Missing Pieces
@@ -720,19 +720,19 @@ _.Zones =
 				},
 				{	-- Stopping the Spread
 					["questID"] = 27836,
-					["qg"] = 46135,	-- High Priest Amet
+					["provider"] = { "n", 46135 },	-- High Priest Amet
 					["coord"] = { 54.1, 41.8, 249 },
 					["sourceQuest"] = 27630,	-- The High Priest's Vice
 				},
 				{	-- Sullah's Gift
 					["questID"] = 28482,
-					["qg"] = 48621,	-- Sullah
+					["provider"] = { "n", 48621 },	-- Sullah
 					["coord"] = { 42.1, 25.9, 249 },
 					["sourceQuest"] = 28404,	-- I'll Do It By Hand
 				},
 				{	-- Tailgunner!
 					["questID"] = 27905,
-					["qg"] = 46978,	-- Harrison Jones
+					["provider"] = { "n", 46978 },	-- Harrison Jones
 					["coord"] = { 43.9, 57.0, 249 },
 					["sourceQuests"] = {
 						27900,	-- I've Got This Guy
@@ -746,14 +746,14 @@ _.Zones =
 				},
 				{	-- Take it to 'Em!
 					["questID"] = 27993,
-					["qg"] = 47318,	-- Mack
+					["provider"] = { "n", 47318 },	-- Mack
 					["coord"] = { 49.6, 39.0, 249 },
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28112,	-- Escape From the Lost City
 				},
 				{	-- Tanotep's Son
 					["questID"] = 27632,
-					["qg"] = 46136,	-- Vizier Tanotep
+					["provider"] = { "n", 46136 },	-- Vizier Tanotep
 					["coord"] = { 56.6, 53.5, 249 },
 					["sourceQuest"] = 27629,	-- The Vizier's Vote
 					["groups"] = {
@@ -765,14 +765,14 @@ _.Zones =
 				},
 				{	-- That Gleam in his Eye
 					["questID"] = 27899,
-					["qg"] = 47005,	-- Adarrah
+					["provider"] = { "n", 47005 },	-- Adarrah
 					["coord"] = { 54.2, 35.2, 249 },
 					["sourceQuest"] = 27669,	-- Do The Honors
 					["isBreadcrumb"] = true,
 				},
 				{	-- The Bandit Warlord
 					["questID"] = 28502,
-					["qg"] = 47715,	-- Sun Priest Asaris
+					["provider"] = { "n", 47715 },	-- Sun Priest Asaris
 					["coord"] = { 53.0, 27.7, 249 },
 					["sourceQuest"] = 28141,	-- Relics of the Sun King
 					["groups"] = {
@@ -784,13 +784,13 @@ _.Zones =
 				},
 				{	-- The Coffer of Promise
 					["questID"] = 28633,
-					["qg"] = 49248,	-- Brann Bronzebeard
+					["provider"] = { "n", 49248 },	-- Brann Bronzebeard
 					["coord"] = { 44.8, 67.3, 249 },
 					["sourceQuest"] = 28622,	-- Three if by Air
 				},
 				{	-- The Curse of the Tombs
 					["questID"] = 27755,
-					["qg"] = 48501,	-- Sun Prophet Tumet
+					["provider"] = { "n", 48501 },	-- Sun Prophet Tumet
 					["coord"] = { 67.3, 42.7, 249 },
 					["sourceQuest"] = 28501,	-- The Defense of Nahom
 					["groups"] = {
@@ -803,7 +803,7 @@ _.Zones =
 				},
 				{	-- The Cypher of Keset
 					["questID"] = 28500,
-					["qg"] = 48761,	-- Salhet
+					["provider"] = { "n", 48761 },	-- Salhet
 					["coord"] = { 67.2, 42.8, 249 },
 					["sourceQuests"] = {
 						28499,	-- Punish the Trespassers
@@ -812,13 +812,13 @@ _.Zones =
 				},
 				{	-- The Defense of Nahom
 					["questID"] = 28501,
-					["qg"] = 48761,	-- Salhet
+					["provider"] = { "n", 48761 },	-- Salhet
 					["coord"] = { 67.2, 42.8, 249 },
 					["sourceQuest"] = 28500,	-- The Cypher of Keset
 				},
 				{	-- The Defilers' Ritual
 					["questID"] = 28611,
-					["qg"] = 46135,	-- High Priest Amet
+					["provider"] = { "n", 46135 },	-- High Priest Amet
 					["coord"] = { 54.1, 41.8, 249 },
 					["sourceQuests"] = {
 						27836,	-- Stopping the Spread
@@ -827,13 +827,13 @@ _.Zones =
 				},
 				{	-- The Desert Fox
 					["questID"] = 27939,
-					["qg"] = 47159,	-- Commander Schnottz
+					["provider"] = { "n", 47159 },	-- Commander Schnottz
 					["coord"] = { 24.4, 64.0, 249 },
 					["sourceQuest"] = 27926,	-- Eastern Hospitality
 				},
 				{	-- The Elements of Supplies
 					["questID"] = 28200,
-					["qg"] = 48012,	-- Sergeant Mehat
+					["provider"] = { "n", 48012 },	-- Sergeant Mehat
 					["coord"] = { 58.9, 46.1, 249 },
 					["sourceQuest"] = 27631,	-- The High Commander's Vote
 					["groups"] = {
@@ -845,7 +845,7 @@ _.Zones =
 				},
 				{	-- The Fall of Neferset City
 					["questID"] = 28520,
-					["qg"] = 48564,	-- King Phaoris
+					["provider"] = { "n", 48564 },	-- King Phaoris
 					["coord"] = { 52.0, 65.4, 249 },
 					["sourceQuests"] = {
 						28480,	-- Lieutenants of Darkness
@@ -861,7 +861,7 @@ _.Zones =
 				},
 				{	-- The Great Escape
 					["questID"] = 28194,
-					["qg"] = 47967,	-- Prolific Writer
+					["provider"] = { "n", 47967 },	-- Prolific Writer
 					["coord"] = { 21.8, 64.0, 249 },
 					["sourceQuest"] = 28187,	-- Missed Me By Zhat Much!
 					["groups"] = {
@@ -873,22 +873,22 @@ _.Zones =
 				},
 				{	-- The Heart of the Matter
 					["questID"] = 28654,
-					["qg"] = 49204,	-- Brann Bronzebeard
+					["provider"] = { "n", 49204 },	-- Brann Bronzebeard
 					["coord"] = { 44.8, 67.3, 249 },
 					["sourceQuest"] = 28633,	-- The Coffer of Promise
 				},
 				{	-- The High Commander's Vote
 					["questID"] = 27631,
-					["qg"] = 47959,	-- Prince Nadun
+					["provider"] = { "n", 47959 },	-- Prince Nadun
 					["coord"] = { 55.0, 34.0, 249 },
 					["sourceQuest"] = 27628,	-- Send Word to Phaoris
 				},
 				{	-- The High Council's Decision
 					["questID"] = 28533,
-					["qgs"] = {
-						46134,	-- High Commander Kamses
-						46135,	-- High Priest Amet
-						46136,	-- Vizier Tanotep
+					["providers"] = {
+						{ "n", 46134 },	-- High Commander Kamses
+						{ "n", 46135 },	-- High Priest Amet
+						{ "n", 46136 },	-- Vizier Tanotep
 					},
 					["coords"] = {
 						{ 58.8, 46.1, 249 },
@@ -903,13 +903,13 @@ _.Zones =
 				},
 				{	-- The High Priest's Vote
 					["questID"] = 27630,
-					["qg"] = 47959,	-- Prince Nadun
+					["provider"] = { "n", 47959 },	-- Prince Nadun
 					["coord"] = { 55.0, 34.0, 249 },
 					["sourceQuest"] = 27628,	-- Send Word to Phaoris
 				},
 				{	-- The Pit of Scales
 					["questID"] = 27738,
-					["qg"] = 46136,	-- Vizier Tanotep
+					["provider"] = { "n", 46136 },	-- Vizier Tanotep
 					["coord"] = { 71.2, 73.7, 249 },
 					["sourceQuest"] = 27707,	-- Neferset Prison
 					["groups"] = {
@@ -921,25 +921,25 @@ _.Zones =
 				},
 				{	-- The Prophet Hadassi
 					["questID"] = 27595,
-					["qg"] = 45772,	-- General Ammantep
+					["provider"] = { "n", 45772 },	-- General Ammantep
 					["coord"] = { 45.2, 37.7, 249 },
 					["sourceQuest"] = 28135,	-- Al'Akir's Vengeance
 				},
 				{	-- The Prophet's Dying Words
 					["questID"] = 27602,
-					["qg"] = 46603,	-- Prophet Hadassi
+					["provider"] = { "n", 46603 },	-- Prophet Hadassi
 					["coord"] = { 40.0, 40.5, 249 },
 					["sourceQuest"] = 27595,	-- The Prophet Hadassi
 				},
 				{	-- The Push Westward
 					["questID"] = 28623,
-					["qg"] = 48761,	-- Salhet
+					["provider"] = { "n", 48761 },	-- Salhet
 					["coord"] = { 67.2, 42.8, 249 },
 					["sourceQuest"] = 28501,	-- The Defense of Nahom
 				},
 				{	-- The Root of the Corruption
 					["questID"] = 27838,
-					["qg"] = 46135,	-- High Priest Amet
+					["provider"] = { "n", 46135 },	-- High Priest Amet
 					["coord"] = { 54.1, 41.8, 249 },
 					["sourceQuest"] = 28611,	-- The Defiler's Ritual
 					["groups"] = {
@@ -950,25 +950,25 @@ _.Zones =
 				},
 				{	-- The Secret of Nahom
 					["questID"] = 28498,
-					["qg"] = 48761,	-- Salhet
+					["provider"] = { "n", 48761 },	-- Salhet
 					["coord"] = { 67.2, 42.8, 249 },
 					["sourceQuest"] = 28561,	-- Nahom Must Hold
 				},
 				{	-- The Thrill of Discovery
 					["questID"] = 27511,
-					["qg"] = 45296,	-- Harrison Jones
+					["provider"] = { "n", 45296 },	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, 249 },
 					["sourceQuest"] = 27196,	-- On to Something
 				},
 				{	-- The Vizier's Vote
 					["questID"] = 27629,
-					["qg"] = 47959,	-- Prince Nadun
+					["provider"] = { "n", 47959 },	-- Prince Nadun
 					["coord"] = { 55.0, 34.0, 249 },
 					["sourceQuest"] = 27628,	-- Send Word to Phaoris
 				},
 				{	-- The Vortex Pinnacle
 					["questID"] = 28845,
-					["qg"] = 45772,	-- General Ammantep
+					["provider"] = { "n", 45772 },	-- General Ammantep
 					["coord"] = { 45.2, 37.7, 249 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -979,43 +979,43 @@ _.Zones =
 				},
 				{	-- The Weakest Link
 					["questID"] = 28198,
-					["qg"] = 46134,	-- High Commander Kamses
+					["provider"] = { "n", 46134 },	-- High Commander Kamses
 					["coord"] = { 58.8, 46.1, 249 },
 					["sourceQuest"] = 27631,	-- The High Commander's Vote
 				},
 				{	-- They Don't Know What They've Got Here
 					["questID"] = 27901,
-					["qg"] = 46978,	-- Harrison Jones
+					["provider"] = { "n", 46978 },	-- Harrison Jones
 					["coord"] = { 43.9, 57.0, 249 },
 					["sourceQuest"] = 27669,	-- Do the Honors
 				},
 				{	-- Thieving Little Pluckers
 					["questID"] = 28250,
-					["qg"] = 46603,	-- Nomarch Teneth
+					["provider"] = { "n", 46603 },	-- Nomarch Teneth
 					["coord"] = { 60.2, 38.2, 249 },
 					["isDaily"] = true,
 				},
 				{	-- Three if by Air
 					["questID"] = 28622,
-					["qg"] = 49203,	-- Harrison Jones
+					["provider"] = { "n", 49203 },	-- Harrison Jones
 					["coord"] = { 32.5, 30.6, 249 },
 					["sourceQuest"] = 28621,	-- Put That Baby in the Cradle!
 				},
 				{	-- Tipping the Balance
 					["questID"] = 27431,
-					["qg"] = 45296,	-- Harrison Jones
+					["provider"] = { "n", 45296 },	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, 249 },
 					["sourceQuest"] = 27549,	-- By the Light of the Stars
 				},
 				{	-- Traitors!
 					["questID"] = 27922,
-					["qg"] = 46872,	-- Prince Nadun
+					["provider"] = { "n", 46872 },	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, 249 },
 					["sourceQuest"] = 27003,	-- Easy Money (tanaris)
 				},
 				{	-- Trespassers in the Water
 					["questID"] = 27837,
-					["qg"] = 46135,	-- High Priest Amet
+					["provider"] = { "n", 46135 },	-- High Priest Amet
 					["coord"] = { 54.1, 41.8, 249 },
 					["sourceQuest"] = 27630,	-- The High Priest's Vote
 					["groups"] = {
@@ -1026,25 +1026,25 @@ _.Zones =
 				},
 				{	-- Two Tents
 					["questID"] = 28274,
-					["qg"] = 48203,	-- Sullah
+					["provider"] = { "n", 48203 },	-- Sullah
 					["coord"] = { 26.6, 8.0, 249 },
 					["sourceQuest"] = 28273,	-- Friend of a Friend
 				},
 				{	-- Under the Choking Sands
 					["questID"] = 27519,
-					["qg"] = 45772,	-- General Ammantep
+					["provider"] = { "n", 45772 },	-- General Ammantep
 					["coord"] = { 45.2, 37.7, 249 },
 					["sourceQuest"] = 28135,	-- Al'Akir's Vengeance
 				},
 				{	-- Unlimited Potential
 					["questID"] = 28351,
-					["qg"] = 48431,	-- Sullah
+					["provider"] = { "n", 48431 },	-- Sullah
 					["coord"] = { 29.6, 21.8, 249 },
 					["sourceQuest"] = 28274,	-- Two Tents
 				},
 				{	-- Venomblood Antidote
 					["questID"] = 28145,
-					["qg"] = 47715,	-- Sun Priest Asaris
+					["provider"] = { "n", 47715 },	-- Sun Priest Asaris
 					["coord"] = { 52.9, 27.7, 249 },
 					["sourceQuest"] = 28112,	-- Escape From the Lost City
 					["groups"] = {

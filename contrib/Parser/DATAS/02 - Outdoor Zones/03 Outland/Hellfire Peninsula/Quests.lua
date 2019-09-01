@@ -11,17 +11,17 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Disrupt the Burning Legion
 							q(10120, {	-- Arrival in Outland
-								["qg"] = 19253,	-- Lieutenant General Orion
+								["provider"] = { "n", 19253 },	-- Lieutenant General Orion
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 49816 },	-- To Outland [Breadcrumb]
 							}),
 							q(10289, {	-- Journey to Thrallmar
-								["qg"] = 18930,	-- Vlagga Freyfeather
+								["provider"] = { "n", 18930 },	-- Vlagga Freyfeather
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10120 },	-- Arrival in Outlanad
 							}),
 							q(10291, {	-- Report to Nazgrel
-								["qg"] = 19255,	-- General Krakork
+								["provider"] = { "n", 19255 },	-- General Krakork
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10289 },	-- Journey to Thrallmar
 							}),
@@ -32,11 +32,11 @@ _.Zones =
 									i(29945),	-- Magistrate's Greaves
 									i(29931),	-- Phantasmal Headdress
 								},
-								["qg"] = 21283,	-- Megzeg Nukklebust
+								["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
 								["races"] = HORDE_ONLY,
 							}),
 							q(10121, {	-- Eradicate the Burning Legion
-								["qg"] = 3230,	-- Nazgrel
+								["provider"] = { "n", 3230 },	-- Nazgrel
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10291 },	-- Report to Nazgrel
 							}),
@@ -48,7 +48,7 @@ _.Zones =
 									i(29916),	-- Ironstar Repeater
 									i(29917),	-- Landslide Buckler
 								},
-								["qg"] = 21256,	-- Vurtok Axebreaker
+								["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10291 },	-- Report to Nazgrel
 							}),
@@ -59,7 +59,7 @@ _.Zones =
 									i(29941),	-- Scale Brand Breastplate
 									i(29928),	-- Wanderer's Stitched Trousers
 								},
-								["qg"] = 21283,	-- Megzeg Nukklebust
+								["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10086 },	-- Work For the Horde
 							}),
@@ -71,17 +71,17 @@ _.Zones =
 									i(29909),	-- Screaming Dagger
 									i(29910),	-- The Staff of Twin Worlds
 								},
-								["qg"] = 19256,	-- Sergeant Shatterskull
+								["provider"] = { "n", 19256 },	-- Sergeant Shatterskull
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10121 },	-- Eradicate the Burning Legion
 							}),
 							q(10449, {	-- Apothecary Zelana
-								["qg"] = 21256,	-- Vurtok Axebreaker
+								["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10450 },	-- Bonechewer Blood
 							}),
 							q(10124, {	-- Forward Base: Reaver's Fall
-								["qg"] = 19256,	-- Sergeeant Shatterskull
+								["provider"] = { "n", 19256 },	-- Sergeeant Shatterskull
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10123 },	-- Felspark Ravine
 							}),
@@ -93,7 +93,7 @@ _.Zones =
 									i(29946),	-- Invader's Greathelm
 									i(29927),	-- Shadowbrim Travel Hat
 								},
-								["qg"] = 19273,	-- Forward Commander To'arch
+								["provider"] = { "n", 19273 },	-- Forward Commander To'arch
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 							}),
@@ -104,12 +104,12 @@ _.Zones =
 									i(29944),	-- Protectorate Breastplate
 									i(29929),	-- Raging Spirit Harness
 								},
-								["qg"] = 19273,	-- Forwarad Commander To'arch
+								["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10208 },	-- Disrupt Their Reinforcements
 							}),
 							q(10388, {	-- Return to Thrallmar
-								["qg"] = 19273,	-- Forwarad Commander To'arch
+								["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10129 },	-- Mission: Gatewayas Murketh and Shaadraz 
 							}),
@@ -118,17 +118,17 @@ _.Zones =
 						}),
 						crit(3, {	-- The Hand of Kargath
 							q(10538,{	-- Boiling Blood
-								["qg"] = 21279,	--Apothecary Albreck
+								["provider"] = { "n", 21279 },	--Apothecary Albreck
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10242 },	-- Spinebreaker Post
 							}),
 							q(10835, {	-- Apothecary Antonivich
-								["qg"] = 21279,	-- Apothecary Albreck
+								["provider"] = { "n", 21279 },	-- Apothecary Albreck
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10242 },	-- Boiling Blood
 							}),		
 							q(10864, {	-- A Burden of Souls
-								["qg"] = 16588,	-- Apothecary Antonivich
+								["provider"] = { "n", 16588 },	-- Apothecary Antonivich
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10835 },	-- Apothecary Antonivich
 							}),		
@@ -136,12 +136,12 @@ _.Zones =
 								["groups"] = {
 									i(31715),	-- Demoniac Soul Prison
 								},	
-								["qg"] = 16588,	-- Apothecary Antonivichk
+								["provider"] = { "n", 16588 },	-- Apothecary Antonivichk
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10864 },	-- A Burden of Souls
 							}),		
 							q(10875, {	-- Report to Nazgrel
-								["qg"] = 16588,	-- Apothecary Antonivich
+								["provider"] = { "n", 16588 },	-- Apothecary Antonivich
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10838 },	-- The Demonaic Scryer
 							}),		
@@ -152,7 +152,7 @@ _.Zones =
 									i(31717),	-- Shadowcast Tunic
 									i(31719),	-- Stormstrike Vest
 								},	
-								["qg"] = 3230,	-- Nazgrel
+								["provider"] = { "n", 3230 },	-- Nazgrel
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10875 },	-- Report to Nazgrel
 							}),
@@ -161,22 +161,22 @@ _.Zones =
 						}),
 						crit(5, {	-- The Mag'har
 							q(9400, {	-- The Assassin
-								["qg"] = 3230,	-- Nazgrel
+								["provider"] = { "n", 3230 },	-- Nazgrel
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 10388 },	-- Return to Thrallmar
 							}),
 							q(9401, {	-- A Strange Weapon
-								["qg"] = 17062,	-- Fel Orc Corpse
+								["provider"] = { "n", 17062 },	-- Fel Orc Corpse
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 9400 },	-- The Assassin
 							}),
 							q(9405, {	-- The Warchief's Mandate
-								["qg"] = 3230,	-- Nazgrel
+								["provider"] = { "n", 3230 },	-- Nazgrel
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 9401 },	-- The Warchief's Mandate
 							}),
 							q(9410, {	-- A Spirit Guide
-								["qg"] = 16574,	-- Far Seer Regulkut
+								["provider"] = { "n", 16574 },	-- Far Seer Regulkut
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 9405 },	-- The Warchief's Mandate
 							}),
@@ -187,7 +187,7 @@ _.Zones =
 									i(25511),	-- Thunderforge Leggings
 									i(25512),	-- Tribal Hauberk
 								},
-								["qg"] = 16845,	-- Gorkan Bloodfist
+								["provider"] = { "n", 16845 },	-- Gorkan Bloodfist
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 9410 },	-- A Spirit Guide
 							}),
@@ -196,15 +196,15 @@ _.Zones =
 						}),
 						crit(7, {	-- Green, But Not Orcs [Missing Rest that procs achieve]
 							q(10236, {	-- Outland Sucks!
-								["qg"] = 16915,	-- Foreman Razelcraz
+								["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 								["sourceQuests"] = { 0 },	-- 
 							}),		
 							q(10238, {	-- How to Serve Goblins
-								["qg"] = 16915,	-- Foreman Razelcraz
+								["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 								["sourceQuests"] = { 10236 },	-- Outland Sucks!
 							}),		
 							q(10629, {	-- Shizz Work
-								["qg"] = 16915,	-- Foreman Razelcraz
+								["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 								["sourceQuests"] = { 10238 },	-- How to Serve Goblins
 							}),		
 							q(10630, {	-- Beneath Thrallmar	
@@ -213,18 +213,18 @@ _.Zones =
 									i(30855),	-- Shatterstone Pick
 									i(30856),	-- Underworld Helm
 								},	
-								["qg"] = 16915,	-- Foreman Razelcraz
+								["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 								["sourceQuests"] = { 10629 },	-- Shizz Work
 							}),		
 						}),
 						crit(8, {	-- Cenarion Post
 							i(29476, {	-- Crimson Crystal Shard
 								q(10134, {	-- Crimson Crystal Clue
-									["qg"] = 19188,	-- Raging Colossus
+									["provider"] = { "n", 19188 },	-- Raging Colossus
 								}),
 							}),
 							q(10349, {	-- The Earthbinder
-								["qg"] = 19293,	-- Tola'thion
+								["provider"] = { "n", 19293 },	-- Tola'thion
 								["sourceQuests"] = { 10134 },	-- Crimson Crystal Clue
 							}),
 							q(10351, {	-- Natural Remedies
@@ -234,7 +234,7 @@ _.Zones =
 									i(28074),	-- Studded Green Anklewraps
 									i(28070),	-- Verdant Handwraps
 								},
-								["qg"] = 19294,	-- Earthbinder Galandria Nightbreeze
+								["provider"] = { "n", 19294 },	-- Earthbinder Galandria Nightbreeze
 								["sourceQuests"] = { 10349 },	-- The Earthbinder
 							}),
 							q(10132, {	-- Colossal Menace
@@ -242,13 +242,13 @@ _.Zones =
 									i(28062),	-- Expedition Repeater
 									i(28063),	-- Survivalist's Wand
 								},
-								["qg"] = 19293,	-- Tola'thion
+								["provider"] = { "n", 19293 },	-- Tola'thion
 							}),
 							q(9372, {	-- Demonic Contamination
-								["qg"] = 16991,	-- Thiah Redmane
+								["provider"] = { "n", 16991 },	-- Thiah Redmane
 							}),
 							q(10159, {	-- Keep Thornfang Hill Clear!
-								["qg"] = 16888,	-- Mahuram Stouthoof
+								["provider"] = { "n", 16888 },	-- Mahuram Stouthoof
 							}),
 							q(10255, {	-- Testing the Antidote
 								["groups"] = {
@@ -256,7 +256,7 @@ _.Zones =
 									i(25986),	-- Dreadtusk's Fury
 									i(25987),	-- Helboar Carving Blade
 								},
-								["qg"] = 16991,	-- Thiah Redmane
+								["provider"] = { "n", 16991 },	-- Thiah Redmane
 								["sourceQuests"] = { 9372 },	-- Demonic Contamination
 							}),
 						}),
@@ -267,17 +267,17 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Disrupt the Burning Legion
 							q(10288, {	-- Arrival in Outland
-								["qg"] = 19229,	-- Commander Duron
+								["provider"] = { "n", 19229 },	-- Commander Duron
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 49862 },	-- To Outland [Breadcrumb]
 							}),
 							q(10140, {	-- Journey to Honor Hold
-								["qg"] = 18931,	-- Amish Wildhammer
+								["provider"] = { "n", 18931 },	-- Amish Wildhammer
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10288 },	-- Arrival in Outland
 							}),
 							q(10254, {	-- Force Commander Danath
-								["qg"] = 19308,	-- Marshal Isildor
+								["provider"] = { "n", 19308 },	-- Marshal Isildor
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10140 },	-- Journey to Honor Hold
 							}),
@@ -288,17 +288,17 @@ _.Zones =
 									i(29945),	-- Magistrate's Greaves
 									i(29931),	-- Phantasmal Headdress
 								},
-								["qg"] = 21209,	-- Dumphry
+								["provider"] = { "n", 21209 },	-- Dumphry
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10254 },	-- Force Commander Danath
 							}),
 							q(10141, {	-- The Legion Reborn
-								["qg"] = 16819,	-- Force Commander Danath Trollbane
+								["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10254 },	-- Force Commander Danath
 							}),
 							q(10160, {	-- Know Your Enemy
-								["qg"] = 16819,	-- Force Commander Danath Trollbane
+								["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10254 },	-- Force Commander Danath
 							}),
@@ -310,12 +310,12 @@ _.Zones =
 									i(29916),	-- Ironstar Repeater
 									i(29917),	-- Landslide Buckler
 								},
-								["qg"] = 16820,	-- Lieutenant Amadi
+								["provider"] = { "n", 16820 },	-- Lieutenant Amadi
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10160 },	-- Know Your Enemy
 							}),
 							q(10078, {	-- Laying Waste to the Unwanted
-								["qg"] = 21209,	-- Dumphry
+								["provider"] = { "n", 21209 },	-- Dumphry
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10055 },	-- Waste Not, Want Not
 							}),
@@ -327,17 +327,17 @@ _.Zones =
 									i(29909),	-- Screaming Dagger
 									i(29910),	-- The Staff of Twin Worlds
 								},
-								["qg"] = 19309,	-- Sergeant Altumus
+								["provider"] = { "n", 19309 },	-- Sergeant Altumus
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10141 },	-- The Legion Reborn
 							}),
 							q(10483, {	-- Ill Omens
-								["qg"] = 16820,	-- Lieutenant Amadi
+								["provider"] = { "n", 16820 },	-- Lieutenant Amadi
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10482 },	-- Fel Orc Scavengers
 							}),
 							q(10143, {	-- Expedition Point
-								["qg"] = 19309,	-- Sergeant Altumus
+								["provider"] = { "n", 19309 },	-- Sergeant Altumus
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10142 },	-- The Path of Anguish
 							}),
@@ -349,7 +349,7 @@ _.Zones =
 									i(29946),	-- Invader's Greathelm
 									i(29927),	-- Shadowbrim Travel Hat
 								},
-								["qg"] = 19310,	-- Forward Commander Kingston
+								["provider"] = { "n", 19310 },	-- Forward Commander Kingston
 							["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10143 },	-- Expedition Point
 							}),
@@ -360,7 +360,7 @@ _.Zones =
 									i(29944),	-- Protectorate Breastplate
 									i(29929),	-- Raging Spirit Harness
 								},
-								["qg"] = 19310,	-- Forward Commander Kingston
+								["provider"] = { "n", 19310 },	-- Forward Commander Kingston
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 10144 },	-- Disrupt Their Reinforcements
 							}),
@@ -381,11 +381,11 @@ _.Zones =
 						crit(8, {	-- Cenarion Post
 							i(29476, {	-- Crimson Crystal Shard
 								q(10134, {	-- Crimson Crystal Clue
-									["qg"] = 19188,	-- Raging Colossus
+									["provider"] = { "n", 19188 },	-- Raging Colossus
 								}),
 							}),
 							q(10349, {	-- The Earthbinder
-								["qg"] = 19293,	-- Tola'thion
+								["provider"] = { "n", 19293 },	-- Tola'thion
 								["sourceQuests"] = { 10134 },	-- Crimson Crystal Clue
 							}),
 							q(10351, {	-- Natural Remedies
@@ -395,7 +395,7 @@ _.Zones =
 									i(28074),	-- Studded Green Anklewraps
 									i(28070),	-- Verdant Handwraps
 								},
-								["qg"] = 19294,	-- Earthbinder Galandria Nightbreeze
+								["provider"] = { "n", 19294 },	-- Earthbinder Galandria Nightbreeze
 								["sourceQuests"] = { 10349 },	-- The Earthbinder
 							}),
 							q(10132, {	-- Colossal Menace
@@ -403,13 +403,13 @@ _.Zones =
 									i(28062),	-- Expedition Repeater
 									i(28063),	-- Survivalist's Wand
 								},
-								["qg"] = 19293,	-- Tola'thion
+								["provider"] = { "n", 19293 },	-- Tola'thion
 							}),
 							q(9372, {	-- Demonic Contamination
-								["qg"] = 16991,	-- Thiah Redmane
+								["provider"] = { "n", 16991 },	-- Thiah Redmane
 							}),
 							q(10159, {	-- Keep Thornfang Hill Clear!
-								["qg"] = 16888,	-- Mahuram Stouthoof
+								["provider"] = { "n", 16888 },	-- Mahuram Stouthoof
 							}),
 							q(10255, {	-- Testing the Antidote
 								["groups"] = {
@@ -417,7 +417,7 @@ _.Zones =
 									i(25986),	-- Dreadtusk's Fury
 									i(25987),	-- Helboar Carving Blade
 								},
-								["qg"] = 16991,	-- Thiah Redmane
+								["provider"] = { "n", 16991 },	-- Thiah Redmane
 								["sourceQuests"] = { 9372 },	-- Demonic Contamination
 							}),
 						}),
@@ -426,7 +426,7 @@ _.Zones =
 				q(9442,  {	-- A Debilitating Sickness
 					["u"] = 40,
 					["sourceQuest"] = 9441,	-- Envoy to the Mag'har
-					["qg"] = 17123,	-- Earthcaller Ryga
+					["provider"] = { "n", 17123 },	-- Earthcaller Ryga
 					["races"] = HORDE_ONLY,
 				}),
 				q(9355, {	-- A Job for an Intelligent Man
@@ -448,7 +448,7 @@ _.Zones =
 				q(9447,  {	-- Administering the Salve
 					["u"] = 40,
 					["sourceQuest"] = 9442,	-- A Debilitating Sickness
-					["qg"] = 17123,	-- Earthcaller Ryga
+					["provider"] = { "n", 17123 },	-- Earthcaller Ryga
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(25492)),	-- Earthcaller's Mace
@@ -496,7 +496,7 @@ _.Zones =
 				}),
 				i(23580, {	-- Avruu's Orb
 					["questID"] = 9418,	-- Avruu's Orb
-					["qg"] = 17084,	-- Avruu
+					["provider"] = { "n", 17084 },	-- Avruu
 					["coords"] = {
 						{ 25.57, 76.45, 100 },
 						{ 25.57, 76.33, 100 },
@@ -607,20 +607,20 @@ _.Zones =
 				q(9441,  {	-- Envoy to the Mag'har
 					["u"] = 40,
 					["sourceQuest"] = 9438,	-- Messenger to Thrall
-					["qg"] = 4949,	-- Thrall
+					["provider"] = { "n", 4949 },	-- Thrall
 					["races"] = HORDE_ONLY
 				}),
 				q(10143, {	-- Expedition Point
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9498, {	-- Falcon Watch
-					["qg"] = 21256,	-- Vurtok Axebreaker
+					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
 					["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 },	-- Every race but Blood Elves
 					["sourceQuests"] = { 10450 },	-- Bonechewer Blood
 					["isBreadcrumb"] = true,
 				}),
 				q(9499, {	-- Falcon Watch
-					["qg"] = 21256,	-- Vurtok Axebreaker
+					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuests"] = { 10450 },	-- Bonechewer Blood
 					["isBreadcrumb"] = true,
@@ -635,7 +635,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10390, {	-- Forge Camp: Mageddon
-					["qg"] = 3230,	-- Nazgrel
+					["provider"] = { "n", 3230 },	-- Nazgrel
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10388 },	-- Return to Thrallmar
 				}),
@@ -688,7 +688,7 @@ _.Zones =
 					},
 				}),
 				q(13409, {	-- Hellfire Fortifications
-					["qg"] = 18267,	-- Battlecryer Blackeye
+					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["g"] = {
@@ -696,7 +696,7 @@ _.Zones =
 					},
 				}),
 				q(10110, {	-- Hellfire Fortifications
-					["qg"] = 18267,	-- Battlecryer Blackeye
+					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 13409 },	-- Hellfire Fortifications
 				}),
@@ -704,7 +704,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10442, {	-- Helping the Cenarion Post
-					["qg"] = 16790,	-- Falconer Drenna Riverwind
+					["provider"] = { "n", 16790 },	-- Falconer Drenna Riverwind
 					["races"] = HORDE_ONLY,
 				}),
 				q(10258,  {  -- Honor the Fallen
@@ -768,7 +768,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(10220,{	-- Make Them Listen
-					["qg"] = 19682,	-- Emissary Mordiba
+					["provider"] = { "n", 19682 },	-- Emissary Mordiba
 					["races"] = HORDE_ONLY,
 				}),	
 				q(9424,  {  -- Makuru's Vengeance
@@ -790,12 +790,12 @@ _.Zones =
 				q(9438,  {	-- Messenger to Thrall
 					["u"] = 40,
 					["sourceQuest"] = 9406,	-- The Mag'har
-					["qg"] = 3230,	-- Nazgrel
+					["provider"] = { "n", 3230 },	-- Nazgrel
 					["races"] = HORDE_ONLY,
 				}),
 				q(9373),	-- Missing Missive
 				q(10163, {	-- Mission: The Abyssal Shelf
-					["qg"] = 20232,	-- Wing Commander Gryphongar
+					["provider"] = { "n", 20232 },	-- Wing Commander Gryphongar
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10344 },	-- Wing Commander Gryphongar
 					["g"] = {
@@ -806,7 +806,7 @@ _.Zones =
 					},
 				}),
 				q(10162, {	-- Mission: The Abyssal Shelf
-					["qg"] = 19273,	-- Forwarad Commander To'arch
+					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10129 },	-- Mission: Gatewayas Murketh and Shaadraz
 					["g"] = {
@@ -829,7 +829,7 @@ _.Zones =
 					},
 				}),
 				q(9345,{	-- Preparing the Salve
-					["qg"] = 16858,	-- Grelag
+					["provider"] = { "n", 16858 },	-- Grelag
 					["races"] = HORDE_ONLY,
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari
@@ -863,7 +863,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(9732, {	-- Return to the Marsh (awarded "Draining the Marsh" criteria for Zangarmarsh)
-					["qg"] = 16885,	-- Amythiel Mistwalker
+					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
 					["description"] = "This quest is required for the 'Draining the Marsh' criteria in Zangarmarsh.",
 					["sourceQuests"] = { 9724 },	-- Warning the Cenarion Circle
 					["g"] = {
@@ -893,7 +893,7 @@ _.Zones =
 					},
 				}),
 				q(10242, {	-- Spinebreaker Post
-					["qg"] = 21257,	-- Apothecary Zelana
+					["provider"] = { "n", 21257 },	-- Apothecary Zelana
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10449 },	-- Apothecary Zelana
 				}),
@@ -907,7 +907,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(9912, {	-- The Cenarion Expedition
-					["qg"] = 16885,
+					["provider"] = { "n", 16885 },
 					["isBreadcrumb"] = true,
 				}),
 				q(9370,  {  -- The Cleansing Must Be Stopped
@@ -1012,7 +1012,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10278,{	-- The Warp Rifts
-					["qg"] = 19683,	-- Ogath the Mad
+					["provider"] = { "n", 19683 },	-- Ogath the Mad
 					["races"] = HORDE_ONLY,
 				}),	
 				q(10119, {	-- Through the Dark Portal

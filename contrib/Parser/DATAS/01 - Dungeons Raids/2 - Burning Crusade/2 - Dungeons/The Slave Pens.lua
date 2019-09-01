@@ -11,15 +11,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			n(-17, {	-- Quests 					
 				{	-- A Brother Betrayed
 					["questID"] = 29564,	-- A Brother Betrayed
-					["qg"] = 54668,	-- Nahuud
+					["provider"] = { "n", 54668 },	-- Nahuud
 				},
 				{	-- Lost in Action
 					["questID"] = 29563,	-- Lost in Action
-					["qg"] = 54667,	-- Watcher Jhang
+					["provider"] = { "n", 54667 },	-- Watcher Jhang
 				},
 				{	-- The Heart of the Matter
 					["questID"] = 29565,	-- The Heart of the Matter
-					["qg"] = 54667,	-- Watcher Jhang
+					["provider"] = { "n", 54667 },	-- Watcher Jhang
 					["g"]	= {
 						i(25541),	-- Cenarion Ring of Casting
 						i(28029),	-- Goldenvine Wraps

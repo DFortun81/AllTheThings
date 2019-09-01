@@ -156,7 +156,7 @@ _.Zones =
 				["coord"] = { 85.6, 31.8, 84 },
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["qg"] = 107574,	-- Anduin Wrynn <King of Stormwind> 
+				["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind> 
 				["g"] = {
 					i(60689),	-- Belt of Unsolvable Problems
 					i(60690),	-- Doody Boots

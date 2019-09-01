@@ -10,7 +10,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["groups"] = {
 			n(-17, {	-- Quests 
 				q(28779, {	-- A Long Way from Home
-					["qg"] = 49943,	-- Itesh
+					["provider"] = { "n", 49943 },	-- Itesh
 					["groups"] = {
 						i(66898),	-- Cloak of Itesh
 						i(66899),	-- Leggings of the Vortex Pinnacle
@@ -18,12 +18,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 				q(28845, {	-- The Vortex Pinnacle
-					["qg"] = 49943,	-- Itesh
+					["provider"] = { "n", 49943 },	-- Itesh
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 28779 },	-- A Long Way from Home
 				}),
 				q(28760, {	-- Vengeance for Orsis
-					["qg"] = 49943,	-- Itesh
+					["provider"] = { "n", 49943 },	-- Itesh
 					["groups"] = {
 						i(66901),	-- Greaves of Orsis
 					},

@@ -49,25 +49,25 @@ _.Zones =
 					},
 				}),
 				q(31581, {	-- Got one!
-					["qg"] = 63080,	-- Jarson Everlong
+					["provider"] = { "n", 63080 },	-- Jarson Everlong
 					["coord"] = { 47.2, 47.2, 94 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31830,	-- Level Up!
 				}),
 				q(31579, {	-- Learning the Ropes
-					["qg"] = 63080,	-- Jarson Everlong
+					["provider"] = { "n", 63080 },	-- Jarson Everlong
 					["coord"] = { 47.2, 47.2, 94 },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31824, {	-- Level Up!
-					["qg"] = 63080,	-- Jarson Everlong
+					["provider"] = { "n", 63080 },	-- Jarson Everlong
 					["coord"] = { 47.2, 47.2, 94 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31572,	-- On The Mend
 				}),
 				q(31580, {	-- On The Mend
-					["qg"] = 63080,	-- Jarson Everlong
+					["provider"] = { "n", 63080 },	-- Jarson Everlong
 					["coord"] = { 47.2, 47.2, 94 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31571,	-- Learning the Ropes

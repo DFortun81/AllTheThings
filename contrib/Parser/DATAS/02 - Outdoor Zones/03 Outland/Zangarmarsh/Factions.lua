@@ -11,7 +11,7 @@ _.Zones =
 					["g"] = {
 						n(-17,  {	-- Quests
 							q(9784, {	-- Identify Plant Parts
-								["qg"] = 17909,	-- Lauranna Thar'well
+								["provider"] = { "n", 17909 },	-- Lauranna Thar'well
 								["coord"] = { 80.3, 64.2, 102 },
 								["sourceQuest"] = 9802,	-- Plants of Zangarmarsh
 								["repeatable"] = true,
@@ -30,7 +30,7 @@ _.Zones =
 								}),
 							}),
 							q(9802, {	-- Plants of Zangarmarsh
-								["qg"] = 17909,	-- Lauranna Thar'well
+								["provider"] = { "n", 17909 },	-- Lauranna Thar'well
 								["coord"] = { 80.3, 64.2, 102 },
 								["g"] = {
 									i(24402),	-- Package of Identified Plants
@@ -98,35 +98,35 @@ _.Zones =
 					["g"] = {
 						n(-17, {	-- Quests
 							q(9807, {	-- More Fertile Spores
-								["qg"] = 17925,	-- Gshaff
+								["provider"] = { "n", 17925 },	-- Gshaff
 								["coord"] = { 19.1, 49.4, 102 },
 								["sourceQuest"] = 9806,	-- Fertile Spores
 								["repeatable"] = true,
 								["maxReputation"] = { 942, FRIENDLY },
 							}),
 							q(9809, {	-- More Glowcaps 
-								["qg"] = 17924,	-- Mshii'fn
+								["provider"] = { "n", 17924 },	-- Mshii'fn
 								["coord"] = { 19.7, 52.1, 102 },
 								["sourceQuest"] = 9808,	-- Glowcap Mushrooms
 								["repeatable"] = true,
 								["maxReputation"] = { 942, FRIENDLY },
 							}),
 							q(9742, {	-- More Spore Sacs
-								["qg"] = 17923,	-- Fahssn
+								["provider"] = { "n", 17923 },	-- Fahssn
 								["coord"] = { 19.0, 63.4, 102 },
 								["sourceQuest"] = 9739,	-- The Sporelings' Plight
 								["repeatable"] = true,
 								["maxReputation"] = { 942, FRIENDLY },
 							}),
 							q(9744, {	-- More Tendrils!
-								["qg"] = 17923,	-- Fahssn
+								["provider"] = { "n", 17923 },	-- Fahssn
 								["coord"] = { 19.0, 63.4, 102 },
 								["sourceQuest"] = 9743,	-- Natural Enemies
 								["repeatable"] = true,
 								["maxReputation"] = { 942, FRIENDLY },
 							}),
 							q(9727, {	-- Now That We're Still Friends...
-								["qg"] = 17856,	-- Gzhun'tt
+								["provider"] = { "n", 17856 },	-- Gzhun'tt
 								["coord"] = { 19.5, 50.0, 102 },
 								["sourceQuest"] = 9726,	-- Now That We're Friends...
 								["repeatable"] = true,

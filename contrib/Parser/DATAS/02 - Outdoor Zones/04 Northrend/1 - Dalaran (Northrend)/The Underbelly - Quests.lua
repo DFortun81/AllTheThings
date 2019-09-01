@@ -8,13 +8,13 @@ _.Zones =
 			n(-213, {	-- The Underbelly
 				n(-17, {	-- Quests
 					q(13571, {	-- Fletcher's Lost and Found
-						["qg"] = 32516,	-- Washed-Up Mage
+						["provider"] = { "n", 32516 },	-- Washed-Up Mage
 						["g"] = {
 							recipe(53056),	-- Kungaloosh
 						},
 					}),
 					q(12974, {	-- The Champion's Call!
-						["qg"] = 30137,	-- Shifty Vickers
+						["provider"] = { "n", 30137 },	-- Shifty Vickers
 						["isBreadcrumb"] = true,
 					}),
 				}),

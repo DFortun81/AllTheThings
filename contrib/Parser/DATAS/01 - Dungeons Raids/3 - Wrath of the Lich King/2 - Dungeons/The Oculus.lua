@@ -9,7 +9,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(13124, {	-- The Struggle Persists
-					["qg"] = 26117,	-- Raelorasz
+					["provider"] = { "n", 26117 },	-- Raelorasz
 					["groups"] = {
 						i(44334),	-- Ring of Temerity
 						i(44335),	-- Band of Motivation
@@ -18,15 +18,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(13126, {	-- A Unified Front
-					["qg"] = 27658,	-- Belgaristrasz
+					["provider"] = { "n", 27658 },	-- Belgaristrasz
 					["sourceQuest"] = 13124,
 				}),
 				q(13127, {	-- Mage-Lord Urom
-					["qg"] = 28012,	-- Image of Belgaristrasz
+					["provider"] = { "n", 28012 },	-- Image of Belgaristrasz
 					["sourceQuest"] = 13126,
 				}),
 				q(13128, { 	-- A Wing and a Prayer
-					["qg"] = 28012,	-- Image of Belgaristrasz
+					["provider"] = { "n", 28012 },	-- Image of Belgaristrasz
 					["sourceQuest"] = 13127,
 					["groups"] = {
 						i(44340), 	-- Bindings of Raelorasz

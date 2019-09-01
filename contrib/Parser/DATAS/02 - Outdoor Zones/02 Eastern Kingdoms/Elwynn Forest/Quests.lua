@@ -7,12 +7,12 @@ _.Zones =
 		m(37, {	-- Elwynn Forest
 			n(-17, {	-- Quests
 				q(5545, {	-- A Bundle of Trouble
-					["qg"] = 10616,	-- Supervisor Raelen
+					["provider"] = { "n", 10616 },	-- Supervisor Raelen
 					["coord"] = { 81.3, 66.1, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(40, {	-- A Fishy Peril
-					["qg"] = 241,	-- Remy
+					["provider"] = { "n", 241 },	-- Remy
 					["coord"] = { 42.1, 67.2, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -27,19 +27,19 @@ _.Zones =
 					},
 				}),
 				q(26393, {	-- A Swift Message
-					["qg"] = 514,	-- Smith Argus
+					["provider"] = { "n", 514 },	-- Smith Argus
 					["coord"] = { 41.7, 65.5, 37 },
 					["races"] = { 1 },	-- Human
 				}),
 				q(26150, {	-- A Visit With Maybell
 					["isBreadcrumb"] = true,
-					["qg"] = 253,	-- William Pestle
+					["provider"] = { "n", 253 },	-- William Pestle
 					["coord"] = { 43.3, 65.7, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 60,	-- Kobold Candles
 				}),
 				q(84, {	-- Back to Billy
-					["qg"] = 246,	-- "Auntie" Bernice Stonefield
+					["provider"] = { "n", 246 },	-- "Auntie" Bernice Stonefield
 					["coord"] = { 34.4, 84.2, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 86,	-- Pie for Billy
@@ -65,7 +65,7 @@ _.Zones =
 					},
 				}),
 				q(59, {	-- Cloth and Leather Armor
-					["qg"] = 261,	-- Guard Thomas
+					["provider"] = { "n", 261 },	-- Guard Thomas
 					["coord"] = { 73.9, 72.1, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 171,	-- Report to Thomas
@@ -88,30 +88,30 @@ _.Zones =
 					},
 				}),
 				q(112, {	-- Collecting Kelp
-					["qg"] = 253,	-- William Pestle
+					["provider"] = { "n", 253 },	-- William Pestle
 					["coord"] = { 43.3, 65.7, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 107,	-- Note to William
 				}),
 				q(26394, {	-- Continue to Stormwind
-					["qg"] = 42983,	-- Bartlett the Brave
+					["provider"] = { "n", 42983 },	-- Bartlett the Brave
 					["coord"] = { 41.7, 64.6, 37 },
 					["races"] = { 1 },	-- Human
 					["sourceQuest"] = 26393,	-- A Swift Message
 				}),
 				q(1097, {	-- Elmore's Task
-					["qg"] = 514,	-- Smith Argus
+					["provider"] = { "n", 514 },	-- Smith Argus
 					["coord"] = { 41.7, 65.5, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37, {	-- Find the Lost Guards
-					["qg"] = 261,	-- Guard Thomas
+					["provider"] = { "n", 261 },	-- Guard Thomas
 					["coord"] = { 73.9, 72.1, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35,	-- Further Concerns
 				}),
 				q(83, {	-- Fine Linen Goods
-					["qg"] = 278,	-- Sara Timberlain
+					["provider"] = { "n", 278 },	-- Sara Timberlain
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(983),		-- Red Linen Sash
@@ -122,7 +122,7 @@ _.Zones =
 					},
 				}),
 				q(35, {	-- Further Concerns
-					["qg"] = 240,	-- Marshal Dughan
+					["provider"] = { "n", 240 },	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 40,	-- A Fishy Peril
@@ -136,13 +136,13 @@ _.Zones =
 					},
 				}),
 				q(16, {	-- Give Gerard a Drink
-					["qg"] = 255,	-- Gerard Tiller
+					["provider"] = { "n", 255 },	-- Gerard Tiller
 					["coord"] = { 43.1, 85.5, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(47, {	-- Gold Dust Exchange
-					["qg"] = 241,	-- Remy "Two Times"
+					["provider"] = { "n", 241 },	-- Remy "Two Times"
 					["coord"] = { 42.1, 67.2, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -158,19 +158,19 @@ _.Zones =
 					},
 				}),
 				q(87, {	-- Goldtooth
-					["qg"] = 247,	-- Billy Maclure
+					["provider"] = { "n", 247 },	-- Billy Maclure
 					["coord"] = { 43.1, 85.7, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 84,	-- Back to Billy
 				}),
 				q(26378, {	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963, 42256)
-					["qg"] = 240,	-- Marshal Dughan
+					["provider"] = { "n", 240 },	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(60, {	-- Kobold Candles
-					["qg"] = 253,	-- William Pestle
+					["provider"] = { "n", 253 },	-- William Pestle
 					["coord"] = { 43.3, 65.7, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -184,12 +184,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(85, {	-- Lost Necklace
-					["qg"] = 246,	-- "Auntie" Bernice Stonefield
+					["provider"] = { "n", 246 },	-- "Auntie" Bernice Stonefield
 					["coord"] = { 34.4, 84.2, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(147, {	-- Manhunt
-					["qg"] = 42256,	-- Marshal McCree
+					["provider"] = { "n", 42256 },	-- Marshal McCree
 					["coord"] = { 81.8, 66.0, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 123,	-- The Collector
@@ -202,14 +202,14 @@ _.Zones =
 					},
 				}),
 				q(107, {	-- Note to William
-					["qg"] = 248,	-- Gramma Stonefield
+					["provider"] = { "n", 248 },	-- Gramma Stonefield
 					["coord"] = { 34.9, 83.8, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 111,	-- Speak with Gramma
 				}),
 				q(7678, {	-- Palomino Exchange
 					["u"] = 40,
-					["qg"] = 384,	-- Katie Hunter
+					["provider"] = { "n", 384 },	-- Katie Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18777),	-- Swift Brown Steed
@@ -218,18 +218,18 @@ _.Zones =
 					},
 				}),
 				q(86, {	-- Pie for Billy
-					["qg"] = 247,	-- Billy Maclure
+					["provider"] = { "n", 247 },	-- Billy Maclure
 					["coord"] = { 43.1, 85.7, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 85,	-- Lost Necklace
 				}),
 				q(88, {	-- Princess Must Die!
-					["qg"] = 244,	-- Ma Stonefield
+					["provider"] = { "n", 244 },	-- Ma Stonefield
 					["coord"] = { 34.6, 84.4, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52, {	-- Protect the Frontier
-					["qg"] = 261,	-- Guard Thomas
+					["provider"] = { "n", 261 },	-- Guard Thomas
 					["coord"] = { 73.9, 72.1, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -241,19 +241,19 @@ _.Zones =
 				}),
 				q(2158, {	-- Rest and Relaxation
 					["u"] = 40,
-					["qg"] = 6774,	-- Falkhaan Isenstrider
+					["provider"] = { "n", 6774 },	-- Falkhaan Isenstrider
 					["lvl"] = 4,
 					["coord"] = { 45.3, 49.0, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37112, {	-- Rest and Relaxation
-					["qg"] = 6774,	-- Falkhaan Isenstrider
+					["provider"] = { "n", 6774 },	-- Falkhaan Isenstrider
 					["lvl"] = 4,
 					["coord"] = { 45.3, 49.0, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11, {	-- Riverpaw Gnoll Bounty
-					["qg"] = 963,	-- Deputy Rainer
+					["provider"] = { "n", 963 },	-- Deputy Rainer
 					["coord"] = { 24.2, 74.4, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 239,	-- Westbrook Garrison Needs Help!
@@ -276,25 +276,25 @@ _.Zones =
 					},
 				}),
 				q(111, {	-- Speak with Gramma
-					["qg"] = 252,	-- Tommy Joe Stonefield
+					["provider"] = { "n", 252 },	-- Tommy Joe Stonefield
 					["coord"] = { 29.8, 85.9, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 106,	-- Young Lovers
 				}),
 				q(114, {	-- The Escape
-					["qg"] = 253,	-- William Pestle
+					["provider"] = { "n", 253 },	-- William Pestle
 					["coord"] = { 43.3, 65.7, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 112,	-- Collecting Kelp
 				}),
 				q(76, {	-- The Jasperlode Mine
-					["qg"] = 240,	-- Marshal Dughan
+					["provider"] = { "n", 240 },	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 62,	-- The Fargodeep Mine
 				}),
 				q(62, {	-- The Fargodeep Mine
-					["qg"] = 240,	-- Marshal Dughan
+					["provider"] = { "n", 240 },	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -311,13 +311,13 @@ _.Zones =
 					},
 				}),
 				q(42504, {	-- The Unseen Blade
-					["qg"] = 107979,	-- Garona Halforcen
+					["provider"] = { "n", 107979 },	-- Garona Halforcen
 					["lvl"] = 100,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },
 				}),
 				q(42627, {	-- The Unseen Blade
-					["qg"] = 107979,	-- Garona Halforcen
+					["provider"] = { "n", 107979 },	-- Garona Halforcen
 					["lvl"] = 100,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },
@@ -342,7 +342,7 @@ _.Zones =
 					},
 				}),
 				q(239, {	-- Westbrook Garrison Needs Help!
-					["qg"] = 240,	-- Marshal Dughan
+					["provider"] = { "n", 240 },	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 47,	-- Gold Dust Exchange
@@ -359,7 +359,7 @@ _.Zones =
 				}),
 				q(7677, {	-- White Stallion Exchange
 					["u"] = 40,
-					["qg"] = 384,	-- Katie Hunter
+					["provider"] = { "n", 384 },	-- Katie Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18777),	-- Swift Brown Steed
@@ -368,7 +368,7 @@ _.Zones =
 					},
 				}),
 				q(106, {	-- Young Lovers
-					["qg"] = 251,	-- Maybell Maclure
+					["provider"] = { "n", 251 },	-- Maybell Maclure
 					["coord"] = { 43.1, 89.6, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26150,	-- A Visit With Maybell

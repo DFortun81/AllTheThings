@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 					ach(9264),	-- Draenor Pet Brawler
 					{	-- Battle Pet Tamers: Warlords
 						["questID"] = 40329,
-						["qg"] = 79858,	-- Serr'ah
+						["provider"] = { "n", 79858 },	-- Serr'ah
 						["coord"] = { 32.6, 39.8, 590 },
 						["races"] = HORDE_ONLY,
 						["isWeekly"] = true,
@@ -19,12 +19,12 @@ _.ExpansionFeatures =
 					{	-- Critters of Draenor
 						["questID"] = 38300,
 						["coord"] = { 32.6, 39.8, 590 },
-						["qgs"] = {
-							91026,	-- Kura Thunderhoof (Spores, Dusty and Salad)
-							91361,	-- Kura Thunderhoof (Moon, Mouthy and Carl)
-							91362,	-- Kura Thunderhoof (Enbi'see, Mal and Bones)
-							91363,	-- Kura Thunderhoof (Sprouts, Prince Charming and Runts)
-							91364,	-- Kura Thunderhoof (Nicodemus, Brisby and Jenner)
+						["providers"] = {
+							{ "n", 91026 },	-- Kura Thunderhoof (Spores, Dusty and Salad)
+							{ "n", 91361 },	-- Kura Thunderhoof (Moon, Mouthy and Carl)
+							{ "n", 91362 },	-- Kura Thunderhoof (Enbi'see, Mal and Bones)
+							{ "n", 91363 },	-- Kura Thunderhoof (Sprouts, Prince Charming and Runts)
+							{ "n", 91364 },	-- Kura Thunderhoof (Nicodemus, Brisby and Jenner)
 						},
 						["groups"] = {
 							i(122535, {	-- Traveler's Pet Supplies
@@ -36,7 +36,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Mastering the Menagerie
 						["questID"] = 37645,
-						["qg"] = 79858,	-- Serr'ah
+						["provider"] = { "n", 79858 },	-- Serr'ah
 						["coord"] = { 32.6, 39.8, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -54,7 +54,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Pets Versus Pests
 						["questID"] = 36469,
-						["qg"] = 79858,	-- Serr'ah
+						["provider"] = { "n", 79858 },	-- Serr'ah
 						["coord"] = { 32.6, 39.8, 590 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 38242,	-- Unearthed Magic
@@ -66,7 +66,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Scrappin'
 						["questID"] = 36662,
-						["qg"] = 79858,	-- Serr'ah
+						["provider"] = { "n", 79858 },	-- Serr'ah
 						["coord"] = { 32.6, 39.8, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -74,7 +74,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Unearthed Magic
 						["questID"] = 38242,
-						["qg"] = 79858,	-- Serr'ah
+						["provider"] = { "n", 79858 },	-- Serr'ah
 						["coord"] = { 32.6, 39.8, 590 },
 						["races"] = HORDE_ONLY,
 					},

@@ -35,26 +35,26 @@ _.Instances = { tier(7, {	-- Legion
 							},
 							["g"] = {
 								q(48864, {	-- The Broken Blacksmith
-									["qg"] = 123668,	-- Captain Fareeya <The Crescent Glaive>
+									["provider"] = { "n", 123668 },	-- Captain Fareeya <The Crescent Glaive>
 									["sourceQuest"] = 48230,	-- Fragment of the Past
 								}),
 								q(48271, {	-- Recovering the Pieces
-									["qg"] = 125246,	-- Gaal <Blacksmith>
+									["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 									["sourceQuest"] = 48864,	-- The Broken Blacksmith
 								}),
 								q(48803, {	-- The Power to Reforge
-									["qg"] = 125246,	-- Gaal <Blacksmith>
+									["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 									["sourceQuest"] = 48864,	-- The Broken Blacksmith
 								}),
 								q(48261, {	-- Forging a Key to the Past
-									["qg"] = 125246,	-- Gaal <Blacksmith>
+									["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 									["sourceQuests"] = {
 										48271,	-- Recovering the Pieces
 										48803,	-- The Power to Reforge
 									},
 								}),
 								q(48231, {	-- The Seat of the Triumvirate: Armor of the Triumvirate
-									["qg"] = 125246,	-- Gaal <Blacksmith>
+									["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 									["g"] = {
 										i(152241, { -- Ensemble: Light-Woven Triumvirate Regalia
 											i(151337),	-- Head

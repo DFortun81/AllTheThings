@@ -12,14 +12,14 @@ _.Zones =
 					n(-17,  {	-- Quests
 						q(9914, {	-- A Head Full of Ivory
 						--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
-							["qg"] = 18333,	-- Shadrek
+							["provider"] = { "n", 18333 },	-- Shadrek
 							["coord"] = { 31.8, 56.8, 107 },
 							["isBreadcrumb"] = true,
 							["minReputation"] = { 933, NEUTRAL },
 							["maxReputation"] = { 933, FRIENDLY },
 						}),
 						q(9886, {	-- Membership Benefits
-							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["repeatable"] = true,
 							["minReputation"] = { 933, NEUTRAL },
@@ -29,7 +29,7 @@ _.Zones =
 							},
 						}),
 						q(9884, {	-- Membership Benefits
-							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["repeatable"] = true,
 							["minReputation"] = { 933, FRIENDLY },
@@ -39,7 +39,7 @@ _.Zones =
 							},
 						}),
 						q(9885, {	-- Membership Benefits	
-							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["repeatable"] = true,
 							["minReputation"] = { 933, HONORED },
@@ -49,7 +49,7 @@ _.Zones =
 							},
 						}),
 						q(9887, {	-- Membership Benefits
-							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["repeatable"] = true,
 							["minReputation"] = { 933, REVERED },
@@ -58,7 +58,7 @@ _.Zones =
 							},
 						}),
 						q(9883, {	-- More Crystal Fragments
-							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["sourceQuest"] = 9882,	-- Stealing from Thieves
 							["repeatable"] = true,
@@ -66,7 +66,7 @@ _.Zones =
 							["maxReputation"] = { 933, FRIENDLY },
 						}),
 						q(9915, {	-- More Heads Full of Ivory
-							["qg"] = 18333,	-- Shadrek
+							["provider"] = { "n", 18333 },	-- Shadrek
 							["coord"] = { 31.8, 56.8, 107 },
 							["sourceQuest"] = 9914,	-- A Head Full of Ivory
 							["repeatable"] = true,
@@ -74,21 +74,21 @@ _.Zones =
 							["maxReputation"] = { 933, FRIENDLY },
 						}),
 						q(9892, {	-- More Obsidian Warbeads
-							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["sourceQuest"] = 9893,	-- Obsidian Warbeads
 							["repeatable"] = true,
 							["minReputation"] = { 933, FRIENDLY },
 						}),
 						q(9893, {	-- Obsidian Warbeads
-							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["minReputation"] = { 933, FRIENDLY },
 						}),
 						q(9882, {	-- Stealing from Thieves
 						--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
 							["isBreadcrumb"] = true,
-							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["minReputation"] = { 933, NEUTRAL },
 							["maxReputation"] = { 933, FRIENDLY },
@@ -159,14 +159,14 @@ _.Zones =
 					}),
 					n(-17,  {	-- Quests
 						q(10478, {	-- More Warbeads!
-							["qg"] = 18407,	-- Warden Bullrok
+							["provider"] = { "n", 18407 },	-- Warden Bullrok
 							["coord"] = { 55.8, 37.8, 107 },
 							["sourceQuest"] = 10479,	-- Proving Your Strength
 							["repeatable"] = true,
 							["races"] = HORDE_ONLY,
 						}),
 						q(10479, {	-- Proving Your Strength
-							["qg"] = 18407,	-- Warden Bullrok
+							["provider"] = { "n", 18407 },	-- Warden Bullrok
 							["coord"] = { 55.8, 37.8, 107 },
 							["races"] = HORDE_ONLY,
 							
@@ -214,12 +214,12 @@ _.Zones =
 					}),
 					n(-17, {	-- Quests
 						q(10476, {	-- Fierce Enemies
-							["qg"] = 18408,	-- Warden Moi'bff Jill
+							["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
 							["coord"] = { 54.8, 70.8, 107 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10477, {	-- More Warbeads!
-							["qg"] = 18408,	-- Warden Moi'bff Jill
+							["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
 							["coord"] = { 54.8, 70.8, 107 },
 							["sourceQuest"] = 10476,	-- Fierce Enemies
 							["repeatable"] = true,

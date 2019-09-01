@@ -257,7 +257,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21393),	-- Signet of Unyielding Strength
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -265,7 +265,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21396),	-- Ring of Eternal Justice
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -273,7 +273,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21399),	-- Ring of the Gathering Storm
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -281,7 +281,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21414),	-- Band of Vaulted Secrets
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -289,7 +289,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21408),	-- Band of Unending Life
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -299,7 +299,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21402),	-- Signet of the Unseen Path
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -307,7 +307,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21405),	-- Band of Veiled Shadows
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -315,7 +315,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21411),	-- Ring of Infinite Wisdom
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -323,7 +323,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21417),	-- Ring of Unspoken Names
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -333,7 +333,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21394),	-- Drape of Unyielding Strength
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -341,7 +341,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21406),	-- Cloak of Veiled Shadows
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -349,7 +349,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21412),	-- Shroud of Infinite Wisdom
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -357,7 +357,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21415),	-- Drape of Vaulted Secrets
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -367,7 +367,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21397),	-- Cape of Eternal Justice
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -375,7 +375,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21403),	-- Cloak of the Unseen Path
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -383,7 +383,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21400),	-- Cloak of the Gathering Storm
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -391,7 +391,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21418),	-- Shroud of Unspoken Names
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -399,7 +399,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21409),	-- Cloak of Unending Life
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -447,7 +447,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21393),	-- Signet of Unyielding Strength
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -455,7 +455,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21396),	-- Ring of Eternal Justice
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -463,7 +463,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21399),	-- Ring of the Gathering Storm
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -471,7 +471,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21414),	-- Band of Vaulted Secrets
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -479,7 +479,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21408),	-- Band of Unending Life
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -489,7 +489,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21402),	-- Signet of the Unseen Path
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -497,7 +497,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21405),	-- Band of Veiled Shadows
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -505,7 +505,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21411),	-- Ring of Infinite Wisdom
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -513,7 +513,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21417),	-- Ring of Unspoken Names
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -523,7 +523,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21394),	-- Drape of Unyielding Strength
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -531,7 +531,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21406),	-- Cloak of Veiled Shadows
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -539,7 +539,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21412),	-- Shroud of Infinite Wisdom
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -547,7 +547,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21415),	-- Drape of Vaulted Secrets
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -557,7 +557,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21397),	-- Cape of Eternal Justice
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -565,7 +565,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21403),	-- Cloak of the Unseen Path
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -573,7 +573,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21400),	-- Cloak of the Gathering Storm
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -581,7 +581,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21418),	-- Shroud of Unspoken Names
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -589,7 +589,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21409),	-- Cloak of Unending Life
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -620,7 +620,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21410),	-- Gavel of Infinite Wisdom
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -628,7 +628,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21413),	-- Blade of Vaulted Secrets
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -636,7 +636,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21416),	-- Kris of Unspoken Names
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -644,7 +644,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21407),	-- Mace of Unending Life
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -654,7 +654,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21392),	-- Sickle of Unyielding Strength
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -662,7 +662,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21395),	-- Blade of Eternal Justice
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -670,7 +670,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21401),	-- Scythe of the Unseen Path
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -678,7 +678,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21404),	-- Dagger of Veiled Shadows
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -686,7 +686,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21398),	-- Hammer of the Gathering Storm
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -696,7 +696,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21393),	-- Signet of Unyielding Strength
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -704,7 +704,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21396),	-- Ring of Eternal Justice
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -712,7 +712,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21399),	-- Ring of the Gathering Storm
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -720,7 +720,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21414),	-- Band of Vaulted Secrets
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -728,7 +728,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21408),	-- Band of Unending Life
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -738,7 +738,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21402),	-- Signet of the Unseen Path
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -746,7 +746,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21405),	-- Band of Veiled Shadows
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -754,7 +754,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21411),	-- Ring of Infinite Wisdom
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -762,7 +762,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21417),	-- Ring of Unspoken Names
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -772,7 +772,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21394),	-- Drape of Unyielding Strength
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -780,7 +780,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21406),	-- Cloak of Veiled Shadows
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -788,7 +788,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21412),	-- Shroud of Infinite Wisdom
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -796,7 +796,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21415),	-- Drape of Vaulted Secrets
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -806,7 +806,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21397),	-- Cape of Eternal Justice
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -814,7 +814,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21403),	-- Cloak of the Unseen Path
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -822,7 +822,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21400),	-- Cloak of the Gathering Storm
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -830,7 +830,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21418),	-- Shroud of Unspoken Names
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -838,7 +838,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21409),	-- Cloak of Unending Life
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -887,7 +887,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21410),	-- Gavel of Infinite Wisdom
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -895,7 +895,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21413),	-- Blade of Vaulted Secrets
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -903,7 +903,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21416),	-- Kris of Unspoken Names
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -911,7 +911,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21407),	-- Mace of Unending Life
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -921,7 +921,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21392),	-- Sickle of Unyielding Strength
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -929,7 +929,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21395),	-- Blade of Eternal Justice
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -937,7 +937,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21401),	-- Scythe of the Unseen Path
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -945,7 +945,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21404),	-- Dagger of Veiled Shadows
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -953,7 +953,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21398),	-- Hammer of the Gathering Storm
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -963,7 +963,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21393),	-- Signet of Unyielding Strength
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -971,7 +971,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21396),	-- Ring of Eternal Justice
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -979,7 +979,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21399),	-- Ring of the Gathering Storm
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -987,7 +987,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21414),	-- Band of Vaulted Secrets
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -995,7 +995,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21408),	-- Band of Unending Life
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -1005,7 +1005,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21402),	-- Signet of the Unseen Path
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -1013,7 +1013,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21405),	-- Band of Veiled Shadows
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -1021,7 +1021,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21411),	-- Ring of Infinite Wisdom
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -1029,7 +1029,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21417),	-- Ring of Unspoken Names
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -1039,7 +1039,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21394),	-- Drape of Unyielding Strength
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -1047,7 +1047,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21406),	-- Cloak of Veiled Shadows
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -1055,7 +1055,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21412),	-- Shroud of Infinite Wisdom
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -1063,7 +1063,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21415),	-- Drape of Vaulted Secrets
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -1073,7 +1073,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21397),	-- Cape of Eternal Justice
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -1081,7 +1081,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21403),	-- Cloak of the Unseen Path
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -1089,7 +1089,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21400),	-- Cloak of the Gathering Storm
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -1097,7 +1097,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21418),	-- Shroud of Unspoken Names
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -1105,7 +1105,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21409),	-- Cloak of Unending Life
 							},
-							["qg"] = 15500,	-- Keyl Swiftclaw
+							["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -1130,7 +1130,7 @@ _.Instances = { tier(1, {	-- Classic
 								i(21505),	-- Choker of the Shifting Sands
 								i(21506),	-- Pendant of the Shifting Sands
 							},
-							["qg"] = 15339,	-- Ossirian the Unscarred
+							["provider"] = { "n", 15339 },	-- Ossirian the Unscarred
 						}),
 					}),
 					i(20890, {	-- Qiraji Ornate Hilt
@@ -1138,7 +1138,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21410),	-- Gavel of Infinite Wisdom
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -1146,7 +1146,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21413),	-- Blade of Vaulted Secrets
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -1154,7 +1154,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21416),	-- Kris of Unspoken Names
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -1162,7 +1162,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21407),	-- Mace of Unending Life
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -1172,7 +1172,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21392),	-- Sickle of Unyielding Strength
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -1180,7 +1180,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21395),	-- Blade of Eternal Justice
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -1188,7 +1188,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21401),	-- Scythe of the Unseen Path
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -1196,7 +1196,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21404),	-- Dagger of Veiled Shadows
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -1204,7 +1204,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21398),	-- Hammer of the Gathering Storm
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -1214,7 +1214,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21393),	-- Signet of Unyielding Strength
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -1222,7 +1222,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21396),	-- Ring of Eternal Justice
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -1230,7 +1230,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21399),	-- Ring of the Gathering Storm
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -1238,7 +1238,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21414),	-- Band of Vaulted Secrets
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -1246,7 +1246,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21408),	-- Band of Unending Life
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -1256,7 +1256,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21402),	-- Signet of the Unseen Path
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -1264,7 +1264,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21405),	-- Band of Veiled Shadows
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -1272,7 +1272,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21411),	-- Ring of Infinite Wisdom
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -1280,7 +1280,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21417),	-- Ring of Unspoken Names
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -1308,7 +1308,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21410),	-- Gavel of Infinite Wisdom
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -1316,7 +1316,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21413),	-- Blade of Vaulted Secrets
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -1324,7 +1324,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21416),	-- Kris of Unspoken Names
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),
@@ -1332,7 +1332,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21407),	-- Mace of Unending Life
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -1342,7 +1342,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21392),	-- Sickle of Unyielding Strength
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -1350,7 +1350,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21395),	-- Blade of Eternal Justice
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -1358,7 +1358,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21401),	-- Scythe of the Unseen Path
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -1366,7 +1366,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21404),	-- Dagger of Veiled Shadows
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -1374,7 +1374,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21398),	-- Hammer of the Gathering Storm
 							},
-							["qg"] = 15499,	-- Warden Haro
+							["provider"] = { "n", 15499 },	-- Warden Haro
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -1384,7 +1384,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21393),	-- Signet of Unyielding Strength
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 1 },	-- Warrior
 						}),
@@ -1392,7 +1392,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21396),	-- Ring of Eternal Justice
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 2 },	-- Paladin
 						}),
@@ -1400,7 +1400,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21399),	-- Ring of the Gathering Storm
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 7 },	-- Shaman
 						}),
@@ -1408,7 +1408,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21414),	-- Band of Vaulted Secrets
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 8 },	-- Mage
 						}),
@@ -1416,7 +1416,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21408),	-- Band of Unending Life
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 11 },	-- Druid
 						}),
@@ -1426,7 +1426,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21402),	-- Signet of the Unseen Path
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 3 },	-- Hunter
 						}),
@@ -1434,7 +1434,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21405),	-- Band of Veiled Shadows
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 4 },	-- Rogue
 						}),
@@ -1442,7 +1442,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21411),	-- Ring of Infinite Wisdom
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 5 },	-- Priest
 						}),
@@ -1450,7 +1450,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(21417),	-- Ring of Unspoken Names
 							},
-							["qg"] = 15498,	-- Windcaller Yessendra
+							["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
 							["classes"] = { 9 },	-- Warlock
 						}),

@@ -7,12 +7,12 @@ _.Zones =
 		m(7, {	-- Mulgore
 			n(-17, {	-- Quests
 				q(6361, {	-- A Bundle of Hides
-					["qg"] = 3079,	-- Varg Windwhisper
+					["provider"] = { "n", 3079 },	-- Varg Windwhisper
 					["coord"] = { 46.0, 58.2, 7 },
 					["races"] = { 6 },	-- Tauren
 				}),
 				q(833, {	-- A Sacred Burial
-					["qg"] = 3233,	-- Lorekeeper Raintotem
+					["provider"] = { "n", 3233 },	-- Lorekeeper Raintotem
 					["coord"] = { 49.4, 17.2, 7 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -23,14 +23,14 @@ _.Zones =
 					},
 				}),
 				q(743, {	-- Dangers of the Windfury
-					["qg"] = 2985,	-- Ruul Eagletalon
+					["provider"] = { "n", 2985 },	-- Ruul Eagletalon
 					["coord"] = { 47.5, 61.3, 7 },
 					["races"] = HORDE_ONLY,
 				}),
 				i(4854, {	-- Demon Scarred Cloak
 					["ignoreSource"] = true,
 					["questID"] = 770,	-- The Demon Scarred Cloak
-					["qg"] = 3056,	-- Ghost Howl
+					["provider"] = { "n", 3056 },	-- Ghost Howl
 					["races"] = HORDE_ONLY,
 					["description"] = "This NPC patrols around the coordinates listed which is the Wildmane Water Well.  This npc does not set off any rare scanners so you have to manually look or add it to your list.",
 					["coords"] = {
@@ -53,13 +53,13 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(24550, {	-- Journey into Thunder Bluff
-					["qg"] = 37024,	-- Una Wildmane
+					["provider"] = { "n", 37024 },	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, 7 },
 					["races"] = { 6 },	-- Tauren
 					["sourceQuest"] = 24524,	-- Wildmane Cleansing
 				}),
 				q(11129, {	-- Kyle's Gond Missing!
-					["qg"] = 23618,	-- Ahab Wheathoof
+					["provider"] = { "n", 23618 },	-- Ahab Wheathoof
 					["coord"] = { 48.3, 53.1, 7 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -76,18 +76,18 @@ _.Zones =
 					["races"] = { 6 },	-- Tauren
 				}),
 				q(26188, {	-- Mazzranache
-					["qg"] = 3055,	-- Maur Raincaller
+					["provider"] = { "n", 3055 },	-- Maur Raincaller
 					["coord"] = { 47.1, 56.6, 7 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24459, {	-- Morin Cloudstalker
-					["qg"] = 36644,	-- Ahmo Thunderhorn
+					["provider"] = { "n", 36644 },	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.5, 7 },
 					["isBreadcrumb"] = true,
 				}),
 				q(7663, {	-- New Kodo - Green
 					["u"] = 40,
-					["qg"] = 3685,	-- Harb Clawhoof
+					["provider"] = { "n", 3685 },	-- Harb Clawhoof
 					["coord"] = { 47.6, 58.0, 7 },
 					["g"] = {
 						i(18794),	-- Great Brown Kodo
@@ -97,7 +97,7 @@ _.Zones =
 				}),
 				q(7662, {	-- New Kodo - Teal
 					["u"] = 40,
-					["qg"] = 3685,	-- Harb Clawhoof
+					["provider"] = { "n", 3685 },	-- Harb Clawhoof
 					["coord"] = { 47.6, 58.0, 7 },
 					["g"] = {
 						i(18794),	-- Great Brown Kodo
@@ -106,12 +106,12 @@ _.Zones =
 					},
 				}),
 				q(20440, {	-- Poison Water
-					["qg"] = 2948,	-- Mull Thunderhorn
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.5, 7 },
 					["races"] = { 6 },	-- Tauren
 				}),
 				q(744, {	-- Preparation for Ceremony
-					["qg"] = 2987,	-- Eyahn Eagletalon
+					["provider"] = { "n", 2987 },	-- Eyahn Eagletalon
 					["coord"] = { 49.6, 17.4, 7 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -122,25 +122,25 @@ _.Zones =
 					},
 				}),
 				q(6362, {	-- Ride to Thunder Bluff
-					["qg"] = 40809,	-- Tak
+					["provider"] = { "n", 40809 },	-- Tak
 					["coord"] = { 47.4, 58.6, 7 },
 					["races"] = { 6 },	-- Tauren
 				}),
 				q(24457, {	-- Rite of Vision
-					["qg"] = 2948,	-- Mull Thunderhorn
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
 					["races"] = { 6 },	-- Tauren
 					["sourceQuest"] = 24456,	-- Thunderhorn Cleansing
 					["isBreadcrumb"] = true,
 				}),
 				q(20441, {	-- Rite of Vision
-					["qg"] = 3054,	-- Zarlman Two-Moons
+					["provider"] = { "n", 3054 },	-- Zarlman Two-Moons
 					["coord"] = { 47.8, 57.2, 7 },
 					["races"] = { 6 },	-- Tauren
 					["sourceQuest"] = 24457,	-- Rite of Vision
 				}),
 				q(773, {	-- Rite of Wisdom
-					["qg"] = 3233,	-- Lorekeeper Raintotem
+					["provider"] = { "n", 3233 },	-- Lorekeeper Raintotem
 					["coord"] = { 49.4, 17.2, 7 },
 					["races"] = { 6 },	-- Tauren
 				}),
@@ -154,13 +154,13 @@ _.Zones =
 					},
 				}),
 				q(14438, {	-- Sharing the Land
-					["qg"] = 36644,	-- Ahmo Thunderhorn
+					["provider"] = { "n", 36644 },	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.5, 7 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(765, {	-- Supervisor Fizsprocket
 					["u"] = 40,
-					["qg"] = 2988,	-- Morin Cloudstalker
+					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(2, i(4974)),	-- Compact Fighting Knife
@@ -168,19 +168,19 @@ _.Zones =
 					},
 				}),
 				q(26180, {	-- Supervisor Fizsprocket
-					["qg"] = 2988,	-- Morin Cloudstalker
+					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
 					["coord"] = { 57.0, 60.4, 7 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 751,	-- The Ravaged Caravan
 				}),
 				q(761, {	-- Swoop Hunting
-					["qg"] = 2947,	-- Harken Windtotem
+					["provider"] = { "n", 2947 },	-- Harken Windtotem
 					["coord"] = { 48.7, 58.7, 7 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(861, {	-- The Hunter's Way
 					["u"] = 40,
-					["qg"] = 3052,	-- Skorn Whitecloud
+					["provider"] = { "n", 3052 },	-- Skorn Whitecloud
 					["coord"] = { 49.6, 17.2, 7 },
 					["races"] = {
 						6,	-- Tauren
@@ -189,43 +189,43 @@ _.Zones =
 					},
 				}),
 				q(749, {	-- The Ravaged Caravan
-					["qg"] = 2988,	-- Morin Cloudstalker
+					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
 					["coord"] = { 57.0, 60.4, 7 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24459,	-- Morin Cloudstalker
 				}),
 				q(14491, {	-- The Restless Earth
-					["qg"] = 36644,	-- Ahmo Thunderhorn
+					["provider"] = { "n", 36644 },	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.6, 7 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14438,	-- Sharing the Land
 				}),
 				q(764, {	-- The Venture Co.
 					["u"] = 40,
-					["qg"] = 2988,	-- Morin Cloudstalker
+					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
 					["coord"] = { 57.2, 61.2, 7 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26179, {	-- The Venture Co.
-					["qg"] = 2988,	-- Morin Cloudstalker
+					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
 					["coord"] = { 57.0, 60.4, 7 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 751,	-- The Ravaged Caravan
 				}),
 				q(24456, {	-- Thunderhorn Cleansing
-					["qg"] = 2948,	-- Mull Thunderhorn
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
 					["races"] = { 6 },	-- Tauren
 					["sourceQuest"] = 24441,	-- Thunderhorn Totem
 				}),
 				q(24441, {	-- Thunderhorn Totem
-					["qg"] = 2948,	-- Mull Thunderhorn
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
 					["races"] = { 6 },	-- Tauren
 					["sourceQuest"] = 24440,	-- Winterhoof Cleansing
 				}),
 				q(24524, {	-- Wildmane Cleansing
-					["qg"] = 37024,	-- Una Wildmane
+					["provider"] = { "n", 37024 },	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, 7 },
 					["races"] = { 6 },	-- Tauren
 					["sourceQuest"] = 24523,	-- Wildmane Totem
@@ -238,13 +238,13 @@ _.Zones =
 					},
 				}),
 				q(24523, {	-- Wildmane Totem
-					["qg"] = 37024,	-- Una Wildmane
+					["provider"] = { "n", 37024 },	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, 7 },
 					["races"] = { 6 },	-- Tauren
 					["sourceQuest"] = 20441,	-- Rite of Vision
 				}),
 				q(24440, {	-- Winterhoof Cleansing
-					["qg"] = 2948,	-- Mull Thunderhorn
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
 					["races"] = { 6 },	-- Tauren
 					["sourceQuest"] = 20440,	-- Poison Water

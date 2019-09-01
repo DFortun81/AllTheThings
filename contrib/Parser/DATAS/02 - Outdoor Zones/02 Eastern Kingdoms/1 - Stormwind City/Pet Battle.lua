@@ -17,12 +17,12 @@ _.Zones =
 				}),
 				n(-17, { -- Quests
 					q(32008, {	-- Audrey Burnhep
-						["qg"] = 63596,	-- Audrey Burnhelp
+						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(31966, {	-- Battle Pet Tamers: Cataclysm
-						["qg"] = 63596,	-- Audrey Burnhelp
+						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31984,	-- A Brief Reprieve
@@ -31,7 +31,7 @@ _.Zones =
 						},
 					}),
 					q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms
-						["qg"] = 63596,	-- Audrey Burnhelp
+						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31917,	-- A Tamer's Homecoming
@@ -40,7 +40,7 @@ _.Zones =
 						},
 					}),
 					q(31889, {	-- Battle Pet Tamers: Kalimdor
-						["qg"] = 63596,	-- Audrey Burnhelp
+						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -48,7 +48,7 @@ _.Zones =
 						},
 					}),
 					q(31927, {	-- Battle Pet Tamers: Northrend
-						["qg"] = 63596,	-- Audrey Burnhelp
+						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31981,	-- Exceeding Expectations
@@ -57,7 +57,7 @@ _.Zones =
 						},
 					}),
 					q(31919, {	-- Battle Pet Tamers: Outland
-						["qg"] = 63596,	-- Audrey Burnhelp
+						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -69,7 +69,7 @@ _.Zones =
 						},
 					}),
 					q(31930, {	-- Battle Pet Tamers: Pandaria
-						["qg"] = 63596,	-- Audrey Burnhelp
+						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31985,	-- The Triumphant Return
@@ -78,14 +78,14 @@ _.Zones =
 						},
 					}),
 					q(31593, {	-- Got one!
-						["qg"] = 63596,	-- Audrey Burnhep
+						["provider"] = { "n", 63596 },	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
 						["sourceQuest"] = 31821,	-- Level Up!
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 1,
 					}),
 					q(31316, {	-- Julia, The Pet Tamer
-						["qg"] = 63596,	-- Audrey Burnhelp
+						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 32008,	-- Audrey Burnhep
@@ -94,27 +94,27 @@ _.Zones =
 						},
 					}),
 					q(31591, {	-- Learning the Ropes
-						["qg"] = 63596,	-- Audrey Burnhep
+						["provider"] = { "n", 63596 },	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 1,
 					}),
 					q(31821, {	-- Level Up!
-						["qg"] = 63596,	-- Audrey Burnhep
+						["provider"] = { "n", 63596 },	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
 						["sourceQuest"] = 31592,	-- On The Mend
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 1,
 					}),
 					q(31592, {	-- On The Mend
-						["qg"] = 63596,	-- Audrey Burnhep
+						["provider"] = { "n", 63596 },	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
 						["sourceQuest"] = 31591,	-- Learning the Ropes
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 1,
 					}),
 					q(32863, { 	-- What We've Been Training For
-						["qg"] = 63596,	-- Audrey Burnhelp
+						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
 						["isWeekly"] = true,

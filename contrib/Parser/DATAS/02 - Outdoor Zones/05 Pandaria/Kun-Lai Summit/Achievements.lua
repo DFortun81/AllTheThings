@@ -28,7 +28,7 @@ _.Zones =
 					}),
 					i(86125, {	-- Kafa Press
 						["questID"] = 31304,
-						["qg"] = 64227,	-- Frozen Trail Packer
+						["provider"] = { "n", 64227 },	-- Frozen Trail Packer
 					}),
 					o(213751, {	-- Sprite's Cloth Chest
 						["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and focuses on your set spec, not your loot spec.",

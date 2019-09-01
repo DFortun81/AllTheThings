@@ -8,7 +8,7 @@ _.Zones =
 			n(-169, {	-- Emissary Quests
 				q(48641, {	-- Armies of Legionfall
 					["repeatable"] = true,
-					["qg"] = 120414,	-- Captain Ruysantos
+					["provider"] = { "n", 120414 },	-- Captain Ruysantos
 					["coord"] = { 42.2, 58.8, 646 },
 					["g"] = {
 						i(157830, {	-- Legionfall Spoils
@@ -43,7 +43,7 @@ _.Zones =
 				n(-206,  {	-- Paragon
 					q(46777, {	-- The Bounties of Legionfall
 						["repeatable"] = true,
-						["qg"] = 120414,	-- Captain Ruysantos
+						["provider"] = { "n", 120414 },	-- Captain Ruysantos
 						["coord"] = { 42.2, 58.8, 646 },
 						["g"] = {
 							i(152108, {	-- Legionfall Chest

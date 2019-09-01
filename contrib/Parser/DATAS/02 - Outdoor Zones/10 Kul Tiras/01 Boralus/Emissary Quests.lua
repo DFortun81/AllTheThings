@@ -8,21 +8,21 @@ _.Zones =
 		m(1161, {	-- Boralus
 			n(-169, {	-- Emissary Quests
 				q(50605, { 	-- Alliance War Effort [7th Legion]
-					["qg"] = 135446,	-- Vindicator Jaelaana
+					["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
 					["lvl"] = 120,
 					["coord"] = { 69.32, 24.94, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(50599, {	-- Proudmoore Admiralty
-					["qg"] = 135808,	-- Provisioner Fray
+					["provider"] = { "n", 135808 },	-- Provisioner Fray
 					["lvl"] = 120,
 					["coord"] = { 67.52, 21.56, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(54454, {	-- Supplies from the 7th Legion
-					["qg"] = 135446,	-- Vindicator Jaelaana
+					["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
 					["lvl"] = 120,
 					["coord"] = { 69.32, 24.94, 1161 },
 					["races"] = ALLIANCE_ONLY,
@@ -35,7 +35,7 @@ _.Zones =
 					},
 				}),
 				q(54458, {	-- Supplies from Proudmoore Admiralty
-					["qg"] = 135808,	-- Provisioner Fray
+					["provider"] = { "n", 135808 },	-- Provisioner Fray
 					["lvl"] = 120,
 					["coord"] = { 67.52, 21.56, 1161 },
 					["races"] = ALLIANCE_ONLY,

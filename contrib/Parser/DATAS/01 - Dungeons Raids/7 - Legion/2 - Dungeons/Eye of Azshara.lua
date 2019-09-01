@@ -25,7 +25,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			n(-17,    {	-- Quests
 				q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
-					["qg"] = 106780,	-- Tidestone of Golganneth
+					["provider"] = { "n", 106780 },	-- Tidestone of Golganneth
 					["sourceQuest"] = 38286,	-- Eye of Azshara: Wrath of Azshara
 					["modelScale"] = 3,
 					["g"] = {

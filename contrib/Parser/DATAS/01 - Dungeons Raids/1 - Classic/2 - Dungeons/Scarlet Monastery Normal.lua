@@ -14,10 +14,10 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(-17, {	-- Quests
 				q(31513, {	-- Blades of the Anointed
-					["qg"] = 64827,	-- Hooded Crusader
+					["provider"] = { "n", 64827 },	-- Hooded Crusader
 				}),
 				q(31514, {	-- Unto Dust Thou Shalt Return
-					["qg"] = 64854,	-- Blade of the Anointed
+					["provider"] = { "n", 64854 },	-- Blade of the Anointed
 					["sourceQuests"] = { 31513 },	-- Blades of the Anointed
 				}),
 			}),

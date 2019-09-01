@@ -25,7 +25,7 @@ _.Zones =
 					["crs"] = { 61326 },	-- Scorpid
 				}),
 				q(31914, {	-- Durin Darkhammer
-					["qg"] = 66520,	-- Durin Darkhammer
+					["provider"] = { "n", 66520 },	-- Durin Darkhammer
 					["coord"] = { 25.5, 47.4, 36 },
 					["isDaily"] = true,
 				}),

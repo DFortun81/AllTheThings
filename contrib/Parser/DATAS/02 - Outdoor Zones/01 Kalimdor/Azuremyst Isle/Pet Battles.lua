@@ -43,7 +43,7 @@ _.Zones =
 					},
 				}),
 				q(3861, {	-- CLUCK!
-					["qg"] = 620,	-- Chicken
+					["provider"] = { "n", 620 },	-- Chicken
 					["description"] = "Spam |cFFFFD700/chicken|r at a Chicken for it to grant you this quest. The vendor, William Saldean sells the Special Chicken Feed you need.",
 					["repeatable"] = true,
 					["g"] = {
@@ -51,25 +51,25 @@ _.Zones =
 					},
 				}),
 				q(31569, {	-- Got one!
-					["qg"] = 63077,	-- Lehna
+					["provider"] = { "n", 63077 },	-- Lehna
 					["coord"] = { 49.2, 52.0, 97 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31825,	-- Level Up!
 				}),
 				q(31556, {	-- Learning the Ropes
-					["qg"] = 63077,	-- Lehna
+					["provider"] = { "n", 63077 },	-- Lehna
 					["coord"] = { 49.2, 52.0, 97 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31825, {	-- Level Up!
-					["qg"] = 63077,	-- Lehna
+					["provider"] = { "n", 63077 },	-- Lehna
 					["coord"] = { 49.2, 52.0, 97 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31568,	-- On The Mend
 				}),
 				q(31568, {	-- On The Mend
-					["qg"] = 63077,	-- Lehna
+					["provider"] = { "n", 63077 },	-- Lehna
 					["coord"] = { 49.2, 52.0, 97 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31556,	-- Learning the Ropes

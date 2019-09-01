@@ -7,7 +7,7 @@ _.Zones =
 		m(379, {	-- Kun-Lai Summit
 			n(-17, {	-- Quests
 				q(30581, {	-- ... and the Pot, Too!
-					["qg"] = 59636,	-- Uyen Chow
+					["provider"] = { "n", 59636 },	-- Uyen Chow
 					["coord"] = { 60.2, 85.9, 379 },
 					["sourceQuests"] = {
 						30569,	-- Trouble on the Farmstead (A)
@@ -38,7 +38,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(30808, {	-- A Grummle's Luck
-					["qg"] = 59371,	-- Lucky Eightcoins
+					["provider"] = { "n", 59371 },	-- Lucky Eightcoins
 					["coord"] = { 64.7, 61.8, 379 },
 				}),
 				q(32377, {	-- A Kor'kron In Our Midst
@@ -60,7 +60,7 @@ _.Zones =
 				--q(30596),	-- A Zandalari Troll? (A) (Wowhead lists these quests but couldn't find them in game.  Completing Mogu?! Oh No-gu! marked them as complete.)
 				--q(30615),	-- A Zandalari Troll? (H)
 				q(30506, {	-- Admiral Taylor has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
-					["qg"] = 59076,	-- Commander Hsieh
+					["provider"] = { "n", 59076 },	-- Commander Hsieh
 					["coord"] = { 70.8, 90.4, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -70,7 +70,7 @@ _.Zones =
 					},
 				}),
 				q(30507, {	-- Admiral Taylor has Awakened
-					["qg"] = 59073,	-- Mayor Bramblestaff
+					["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
 					["coord"] = { 72.2, 91.8, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -80,7 +80,7 @@ _.Zones =
 					},
 				}),
 				q(30508, {	-- Admiral Taylor has Awakened
-					["qg"] = 59077,	-- Apothecary Cheng
+					["provider"] = { "n", 59077 },	-- Apothecary Cheng
 					["coord"] = { 71.6, 92.8, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -90,7 +90,7 @@ _.Zones =
 					},
 				}),
 				q(30459, {	-- All of the Arrows
-					["qg"] = 59076,	-- Commander Hsieh
+					["provider"] = { "n", 59076 },	-- Commander Hsieh
 					["coord"] = { 70.8, 90.4, 379 },
 				}),
 				--q(30796),	-- An End to Everything
@@ -101,12 +101,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30491, {	-- At the Yak Wash
-					["qg"] = 61693,	-- Muskpaw Jr.
+					["provider"] = { "n", 61693 },	-- Muskpaw Jr.
 					["coord"] = { 65.3, 62.3, 379 },
 					["sourceQuest"] = 30488,	-- The Missing Muskpaw
 				}),
 				q(30492, {	-- Back in Yak
-					["qg"] = 61693,	-- Muskpaw Jr.
+					["provider"] = { "n", 61693 },	-- Muskpaw Jr.
 					["coord"] = { 65.3, 62.3, 379 },
 					["sourceQuests"] = {
 						30491,	-- At the Yak Wash
@@ -121,7 +121,7 @@ _.Zones =
 					},
 				}),
 				q(31253, {	-- Back to Eastwind Rest
-					["qg"] = 59573,	-- Farmer Chow
+					["provider"] = { "n", 59573 },	-- Farmer Chow
 					["coord"] = { 60.2, 85.8, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -130,7 +130,7 @@ _.Zones =
 					},
 				}),
 				q(31252, {	-- Back to Westwind Rest
-					["qg"] = 59573,	-- Farmer Chow
+					["provider"] = { "n", 59573 },	-- Farmer Chow
 					["coord"] = { 60.2, 85.8, 379 },
 					["races"] = ALlIANCE_ONLY,
 					["sourceQuests"] = {
@@ -142,7 +142,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30651, {	-- Barrels of Fun (A)
-					["qg"] = 59450,	-- Sully "The Pickle" McLeary
+					["provider"] = { "n", 59450 },	-- Sully "The Pickle" McLeary
 					["coord"] = { 54.0, 83.2, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 30619,	-- Mogu?! Oh No-gu!
@@ -151,7 +151,7 @@ _.Zones =
 					},
 				}),
 				q(30656, {	-- Barrels of Fun (H)
-					["qg"] = 59448,	-- Rivett Clutchpop
+					["provider"] = { "n", 59448 },	-- Rivett Clutchpop
 					["coord"] = { 62.8, 79.9, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 30620,	-- Mogu?! Oh No-gu!
@@ -161,14 +161,14 @@ _.Zones =
 				}),
 				--q(31834),	-- Begin Your Training: Master Cheng
 				q(31251, {	-- Best Meals Anywhere!
-					["qg"] = 59448,	-- Rivett Clutchpop
+					["provider"] = { "n", 59448 },	-- Rivett Clutchpop
 					["coord"] = { 62.8, 79.9, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 30515,	-- Challenge Accepted
 				}),
 				--q(31847),	-- Better Dead than Dread
 				q(31695, {	-- Beyond the Wall
-					["qg"] = 63535,	-- Elder Shiao
+					["provider"] = { "n", 63535 },	-- Elder Shiao
 					["coord"] = { 62.3, 79.6, 379 },
 					["sourceQuests"] = {
 						30660,	-- The Ordo Warbringer (A)
@@ -199,7 +199,7 @@ _.Zones =
 				}),
 				--q(30807),	-- By the Falls, For the Fallen
 				q(30457, {	-- Call Out Their Leader
-					["qg"] = 59073,	-- Mayor Bramblestaff
+					["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
 					["coord"] = { 72.2, 91.8, 379 },
 					["g"] = {
 						i(84542),	-- Bataari Hatchet
@@ -213,13 +213,13 @@ _.Zones =
 					},
 				}),
 				q(30514, {	-- Challenge Accepted (A)
-					["qg"] = 63542,	-- Elder Tsulan
+					["provider"] = { "n", 63542 },	-- Elder Tsulan
 					["coord"] = { 54.6, 84.2, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 30512,	-- Westwind Rest
 				}),
 				q(30515, {	-- Challenge Accepted (H)
-					["qg"] = 63535,	-- Elder Shiao
+					["provider"] = { "n", 63535 },	-- Elder Shiao
 					["coord"] = { 61.2, 82.3, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 30513,	-- Eastwind Rest
@@ -230,7 +230,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31459, {	-- Cho's Missive (H)
-					["qg"] = 59449,	-- Shademaster Kiryn
+					["provider"] = { "n", 59449 },	-- Shademaster Kiryn
 					["coord"] = { 62.7, 80.7, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -241,7 +241,7 @@ _.Zones =
 				}),
 				--q(46347),	-- Clean-up on Aisle Sha
 				q(30828, {	-- Cleansing the Mere
-					["qg"] = 60973,	-- Waterspeaker Gorai
+					["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 					["coord"] = { 74.9, 88.6, 379 },
 					["sourceQuest"] = 30480,	-- The Ritual
 				}),
@@ -258,13 +258,13 @@ _.Zones =
 				--q(31833),	-- Continue Your Training: Master Woo
 				--q(31836),	-- Continue Your Training: Master Yoon
 				q(30593, {	-- Deanimate the Reanimated (A)
-					["qg"] = 59451,	-- Mishka
+					["provider"] = { "n", 59451 },	-- Mishka
 					["coord"] = { 53.6, 83.2, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 30514,	-- Challenge Accepted
 				}),
 				q(30594, {	-- Deanimate the Reanimated (H)
-					["qg"] = 59449,	-- Shademaster Kiryn
+					["provider"] = { "n", 59449 },	-- Shademaster Kiryn
 					["coord"] = { 62.7, 80.7, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 30515,	-- Challenge Accepted
@@ -275,7 +275,7 @@ _.Zones =
 					},
 				}),
 				q(30513, {	-- Eastwind Rest
-					["qg"] = 59442,	-- General Nazgrim
+					["provider"] = { "n", 59442 },	-- General Nazgrim
 					["coord"] = { 71.6, 93.1, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -290,7 +290,7 @@ _.Zones =
 				--q(30794),	-- Emergency Care
 				--q(31011),	-- Enemies At Our Door
 				q(30468, {	-- Enraged Vengeance
-					["qg"] = 59273,	-- Swordmistress Mei
+					["provider"] = { "n", 59273 },	-- Swordmistress Mei
 					["coord"] = { 74.8, 88.7, 379 },
 					["g"] = {
 						i(84535),	-- Bodyguard's Dagger
@@ -305,12 +305,12 @@ _.Zones =
 					},
 				}),
 				q(31279, {	-- Everything I Know About Cooking
-					["qg"] = 59405,	-- Li Goldendraft
+					["provider"] = { "n", 59405 },	-- Li Goldendraft
 					["coord"] = { 64.3, 61.4, 379 },
 					["requireSkill"] = 185,	-- Cooking
 				}),
 				q(30571, {	-- Farmhand Freedom
-					["qg"] = 59573,	-- Farmer Chow
+					["provider"] = { "n", 59573 },	-- Farmer Chow
 					["coord"] = { 60.2, 85.8, 379 },
 					["sourceQuests"] = {
 						30569,	-- Trouble on the Farmstead (A)
@@ -318,7 +318,7 @@ _.Zones =
 					},
 				}),
 				q(30834, {	-- Father and Child Reunion
-					["qg"] = 59272,	-- Wu-Peng
+					["provider"] = { "n", 59272 },	-- Wu-Peng
 					["coord"] = { 74.7, 76.9, 379 },
 					["sourceQuest"] = 30467,	-- My Son...
 				}),
@@ -328,15 +328,15 @@ _.Zones =
 				--q(30992),	-- Finish This!
 				--q(30935),	-- Fisherman's Tale
 				q(30489, {	-- Fresh Needle Scent
-					["qg"] = 59353,	-- Lao Muskpaw
+					["provider"] = { "n", 59353 },	-- Lao Muskpaw
 					["coord"] = { 71.8, 70.2, 379 },
 				}),
 				q(30967, {	-- Free the Dissenters
-					["qg"] = 60973,	-- Waterspeaker Gorai
+					["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 					["coord"] = { 75.1, 88.0, 379 },
 				}),
 				q(30509, {	-- General Nazgrim has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
-					["qg"] = 59076,	-- Commander Hsieh
+					["provider"] = { "n", 59076 },	-- Commander Hsieh
 					["coord"] = { 70.8, 90.4, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -346,7 +346,7 @@ _.Zones =
 					},
 				}),
 				q(30510, {	-- General Nazgrim has Awakened
-					["qg"] = 59073,	-- Mayor Bramblestaff
+					["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
 					["coord"] = { 72.2, 91.8, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -356,7 +356,7 @@ _.Zones =
 					},
 				}),
 				q(30511, {	-- General Nazgrim has Awakened
-					["qg"] = 59077,	-- Apothecary Cheng
+					["provider"] = { "n", 59077 },	-- Apothecary Cheng
 					["coord"] = { 71.6, 92.8, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -380,7 +380,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30460, {	-- Hit Medicine
-					["qg"] = 59077,	-- Apothecary Cheng
+					["provider"] = { "n", 59077 },	-- Apothecary Cheng
 					["coord"] = { 71.6, 92.8, 379 },
 				}),
 				--q(30681),	-- Holed Up
@@ -394,19 +394,19 @@ _.Zones =
 				--q(30723),	-- Honor, Even in Death
 				--q(30607),	-- Hozen Love Their Keys
 				q(30652, {	-- In Tents Channeling (A)
-					["qg"] = 59441,	-- Admiral Taylor
+					["provider"] = { "n", 59441 },	-- Admiral Taylor
 					["coord"] = { 53.8, 83.6, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 30593,	-- Deanimate the Reanimated
 				}),
 				q(30657, {	-- In Tents Channeling (H)
-					["qg"] = 59442,	-- General Nazgrim
+					["provider"] = { "n", 59442 },	-- General Nazgrim
 					["coord"] = { 63.0, 80.2, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 30594,	-- Deanimate the Reanimated
 				}),
 				q(30601, {	-- Instant Courage
-					["qg"] = 59696,	-- Uncle Cloverleaf
+					["provider"] = { "n", 59696 },	-- Uncle Cloverleaf
 					["coord"] = { 57.2, 61.2, 379 },
 					["sourceQuest"] = 30999,	-- Path Less Traveled
 				}),
@@ -442,7 +442,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(30619, {	-- Mogu?! Oh No-gu! (A)
-					["qg"] = 63542,	-- Elder Tsulan
+					["provider"] = { "n", 63542 },	-- Elder Tsulan
 					["coord"] = { 54.6, 84.2, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 30514,	-- Challenge Accepted
@@ -459,7 +459,7 @@ _.Zones =
 					},
 				}),
 				q(30620, {	-- Mogu?! Oh No-gu! (H)
-					["qg"] = 63535,	-- Elder Shiao
+					["provider"] = { "n", 63535 },	-- Elder Shiao
 					["coord"] = { 62.4, 79.6, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 30515,	-- Challenge Accepted
@@ -479,7 +479,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31457, {	-- Muskpaw Ranch (H)
-					["qg"] = 63751,	-- Farmhand Ko
+					["provider"] = { "n", 63751 },	-- Farmhand Ko
 					["coord"] = { 62.6, 79.5, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -490,13 +490,13 @@ _.Zones =
 				}),
 				--q(30768),	-- My Husband...
 				q(30467, {	-- My Son...
-					["qg"] = 59263,	-- Merchant Shi
+					["provider"] = { "n", 59263 },	-- Merchant Shi
 					["coord"] = { 74.9, 88.9, 379 },
 				}),
 				--q(30600),	-- No Pack Left Behind
 				--q(30750),	-- Off the Wall!
 				q(30614, {	-- Oil Stop
-					["qg"] = 59402,	-- Slimy Inkstain
+					["provider"] = { "n", 59402 },	-- Slimy Inkstain
 					["coord"] = { 65.5, 60.8, 379 },
 				}),
 				q(30683, {	-- One Traveler's Misfortune
@@ -513,19 +513,19 @@ _.Zones =
 					},
 				}),
 				q(30650, {	-- Pandaren Prisoners (A)
-					["qg"] = 63542,	-- Elder Tsulan
+					["provider"] = { "n", 63542 },	-- Elder Tsulan
 					["coord"] = { 54.6, 84.2, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 30619,	-- Mogu?! Oh No-gu!
 				}),
 				q(30655, {	-- Pandaren Prisoners (H)
-					["qg"] = 63535,	-- Elder Shiao
+					["provider"] = { "n", 63535 },	-- Elder Shiao
 					["coord"] = { 62.4, 79.6, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 30620,	-- Mogu?! Oh No-gu!
 				}),
 				q(30999, {	-- Path Less Traveled
-					["qg"] = 61847,	-- Lorewalker Cho
+					["provider"] = { "n", 61847 },	-- Lorewalker Cho
 					["coord"] = { 57.4, 61.6, 379 },
 					["sourceQuests"] = {
 						31460,	-- Cho's Missive (A)
@@ -554,12 +554,12 @@ _.Zones =
 				--q(31843),	-- Practice Makes Perfect: Master Yoon
 				--q(30819),	-- Preparing the Remains
 				q(30595, {	-- Profiting off of the Past
-					["qg"] = 59821,	-- Bao Jian
+					["provider"] = { "n", 59821 },	-- Bao Jian
 					["coord"] = { 59.6, 78.2, 379 },
 				}),
 				--q(30766),	-- Profiting off of the Past (Not sure why there is a 2nd version of this quest but I never found it in game.  Tried killing statues before talking to quest giver but no quest item dropped.)
 				q(30469, {	-- Repossession
-					["qg"] = 59263,	-- Merchant Shi
+					["provider"] = { "n", 59263 },	-- Merchant Shi
 					["coord"] = { 74.9, 88.9, 379 },
 				}),
 				q(31228, {	-- Prophet Khar'zul
@@ -598,7 +598,7 @@ _.Zones =
 				--q(46342),	-- Return to the Broken Peak
 				--q(30946),	-- Revelations
 				q(30617, {	-- Roadside Assistance
-					["qg"] = 59597,	-- Smokey Sootassle
+					["provider"] = { "n", 59597 },	-- Smokey Sootassle
 					["coord"] = { 64.9, 60.4, 379 },
 					["sourceQuest"] = 30616,	-- Traffic Issues
 					["g"] = {
@@ -606,7 +606,7 @@ _.Zones =
 					},
 				}),
 				q(30575, {	-- Round 'Em Up (A)
-					["qg"] = 59441,	-- Admiral Taylor
+					["provider"] = { "n", 59441 },	-- Admiral Taylor
 					["coord"] = { 53.8, 82.6, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 30514,	-- Challenge Accepted
@@ -623,7 +623,7 @@ _.Zones =
 					},
 				}),
 				q(31256, {	-- Round 'Em Up (H)
-					["qg"] = 59442,	-- General Nazgrim
+					["provider"] = { "n", 59442 },	-- General Nazgrim
 					["coord"] = { 63.0, 80.2, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 30515,	-- Challenge Accepted
@@ -658,25 +658,25 @@ _.Zones =
 				--q(30795),	-- Staying Connected
 				--q(30800),	-- Stealing Their Thunder King
 				q(31392, {	-- Temple of the White Tiger (A)
-					["qgs"] = {
-						63751,	-- Farmhand Ko
-						64448,	-- Hopsmaster Chang
-						60289,	-- Leni Kelpenstout
-						55809,	-- Peiji Goldendraft
-						66247,	-- Tigermaster Liu-Do
-						64521,	-- Wanderer Chu
+					["providers"] = {
+						{ "n", 63751 },	-- Farmhand Ko
+						{ "n", 64448 },	-- Hopsmaster Chang
+						{ "n", 60289 },	-- Leni Kelpenstout
+						{ "n", 55809 },	-- Peiji Goldendraft
+						{ "n", 66247 },	-- Tigermaster Liu-Do
+						{ "n", 64521 },	-- Wanderer Chu
 					},
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31393, {	-- Temple of the White Tiger (H)
-					["qgs"] = {
-						63751,	-- Farmhand Ko
-						64448,	-- Hopsmaster Chang
-						60289,	-- Leni Kelpenstout
-						55809,	-- Peiji Goldendraft
-						66247,	-- Tigermaster Liu-Do
-						64521,	-- Wanderer Chu
+					["providers"] = {
+						{ "n", 63751 },	-- Farmhand Ko
+						{ "n", 64448 },	-- Hopsmaster Chang
+						{ "n", 60289 },	-- Leni Kelpenstout
+						{ "n", 55809 },	-- Peiji Goldendraft
+						{ "n", 66247 },	-- Tigermaster Liu-Do
+						{ "n", 64521 },	-- Wanderer Chu
 					},
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -690,7 +690,7 @@ _.Zones =
 				}),
 				--q(30603),	-- The Broketooth Ravage
 				q(30747, {	-- The Burlap Grind
-					["qg"] = 60679,	-- Nephew Burrberry
+					["provider"] = { "n", 60679 },	-- Nephew Burrberry
 					["g"] = {
 						i(82525),	-- Dreaming Spirit Sabatons
 						i(82527),	-- Mindbender Treads
@@ -704,11 +704,11 @@ _.Zones =
 					},
 				}),
 				q(30821, {	-- The Burlap Grind (daily)
-					["qg"] = 60679,	-- Nephew Burrberry
+					["provider"] = { "n", 60679 },	-- Nephew Burrberry
 					["isRepeatable"] = true,
 				}),
 				q(30592, {	-- The Burlap Trail: To Burlap Waystation
-					["qg"] = 59701,	-- Brother Lintpocket
+					["provider"] = { "n", 59701 },	-- Brother Lintpocket
 					["coord"] = { 58.1, 61.4, 379 },
 				}),
 				q(30692, {	-- The Burlap Trail: To Kota Basecamp
@@ -730,7 +730,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(30855, {	-- The Fall of Shai Hu
-					["qg"] = 61065,	-- Waterspeaker Gorai
+					["provider"] = { "n", 61065 },	-- Waterspeaker Gorai
 					["sourceQuest"] = 30828,	-- Cleansing the Mere
 					["g"] = {
 						i(82552),	-- Dreaming Spirit Armbands
@@ -745,7 +745,7 @@ _.Zones =
 					},
 				}),
 				q(30804, {	-- The Fearmaster
-					["qg"] = 59353,	-- Lao Muskpaw
+					["provider"] = { "n", 59353 },	-- Lao Muskpaw
 					["coord"] = { 71.8, 70.2, 379 },
 					["sourceQuest"] = 30582,	-- The Late Mrs. Muskpaw
 					["g"] = {
@@ -781,7 +781,7 @@ _.Zones =
 				--q(31611),	-- The Kun-Lai Kicker
 				i(80241, {	-- Muskpaw's Keepsake
 					q(30582, {	-- The Late Mrs. Muskpaw
-						["qg"] = 59335,	-- Burilgi Despoiler
+						["provider"] = { "n", 59335 },	-- Burilgi Despoiler
 					}),
 				}),
 				q(30612, {	-- The Leader Hozen
@@ -806,7 +806,7 @@ _.Zones =
 				}),
 				]]--
 				q(30488, {	-- The Missing Muskpaw
-					["qg"] = 59353,	-- Lao Muskpaw
+					["provider"] = { "n", 59353 },	-- Lao Muskpaw
 					["coord"] = { 71.8, 70.2, 379 },
 					["sourceQuests"] = {
 						31456,	-- Muskpaw Ranch (A)
@@ -859,7 +859,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(30480, {	-- The Ritual
-					["qg"] = 60973,	-- Waterspeaker Gorai
+					["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 					["coord"] = { 75.1, 88.0, 379 },
 					["sourceQuests"] = {
 						30967,	-- Free the Dissenters
@@ -883,7 +883,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31453, {	-- The Shado-Pan (H)
-					["qg"] = 59442,	-- General Nazgrim
+					["provider"] = { "n", 59442 },	-- General Nazgrim
 					["coord"] = { 62.2, 79.9, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -893,7 +893,7 @@ _.Zones =
 					},
 				}),
 				q(30496, {	-- The Waterspeaker's Staff
-					["qg"] = 60973,	-- Waterspeaker Gorai
+					["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 					["coord"] = { 75.1, 88.0, 379 },
 				}),
 				q(30606, {	-- Thumping Knucklethump
@@ -908,7 +908,7 @@ _.Zones =
 					},
 				}),
 				q(30616, {	-- Traffic Issues
-					["qg"] = 59597,	-- Smokey Sootassle
+					["provider"] = { "n", 59597 },	-- Smokey Sootassle
 					["coord"] = { 64.9, 60.4, 379 },
 					["g"] = {
 						i(82571),	-- Burlap Loop
@@ -919,13 +919,13 @@ _.Zones =
 					},
 				}),
 				q(30569, {	-- Trouble on the Farmstead (A)
-					["qg"] = 63754,	-- Farmhand Bo
+					["provider"] = { "n", 63754 },	-- Farmhand Bo
 					["coord"] = { 53.8, 84.0, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 30514,	-- Challenge Accepted
 				}),
 				q(30570, {	-- Trouble on the Farmstead (H)
-					["qg"] = 63751,	-- Farmhand Ko
+					["provider"] = { "n", 63751 },	-- Farmhand Ko
 					["coord"] = { 62.6, 79.5, 379 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 30515,	-- Challenge Accepted
@@ -944,7 +944,7 @@ _.Zones =
 					},
 				}),
 				q(30512, {	-- Westwind Rest
-					["qg"] = 59441,	-- Admiral Taylor
+					["provider"] = { "n", 59441 },	-- Admiral Taylor
 					["coord"] = { 71.6, 93.0, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -1046,31 +1046,31 @@ _.Zones =
 					["lvl"] = 110,
 					["g"] = {
 						q(46343, {	-- The Trail of Ban-Lu
-							["qgs"] = 120722,	-- Master Bu
+							["provider"] = { "n", 120722 },	-- Master Bu
 							["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
 						}),
 						q(46344, {	-- Smelly's Luckydo
-							["qgs"] = 120744,	-- Smelly Mountaintop
+							["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 							["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
 						}),
 						q(46346, {	-- The Shadow of Ban-Lu
-							["qgs"] = 120722,	-- Master Bu
+							["provider"] = { "n", 120722 },	-- Master Bu
 							["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
 						}),
 						q(46347, {	-- Clean-up on Aisle Sha
-							["qgs"] = 120722,	-- Master Bu
+							["provider"] = { "n", 120722 },	-- Master Bu
 							["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
 						}),
 						q(46348, {	-- The River to Ban-Lu
-							["qgs"] = 120722,	-- Master Bu
+							["provider"] = { "n", 120722 },	-- Master Bu
 							["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
 						}),
 						q(46349, {	-- Lilies for Ryuli
-							["qgs"] = 120726,	-- Waterspeaker Ryuli
+							["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 							["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
 						}),
 						q(46350, {	-- The Trial of Ban-Lu
-							["qgs"] = 120726,	-- Waterspeaker Ryuli
+							["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 							["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
 							["g"] = {
 								i(142225),	-- Ban-Lu, Grandmaster's Companion

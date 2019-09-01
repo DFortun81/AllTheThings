@@ -7,28 +7,28 @@ _.Zones =
 		m(26, {	-- The Hinterlands
 			n(-17, { 	-- Quests
 				q(26486, {	-- 99 Bottles of Booze on the Beach
-					["qg"] = 43109,	-- Dron Blastbrew
+					["provider"] = { "n", 43109 },	-- Dron Blastbrew
 					["coord"] = { 66.2, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26523, {	-- All That Skitters (A)
-					["qg"] = 43156,	-- Fraggar Thundermantle
+					["provider"] = { "n", 43156 },	-- Fraggar Thundermantle
 					["coord"] = { 63.7, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26310, {	-- All That Skitters (H)
-					["qg"] = 42622,	-- Eliza Darkgrin
+					["provider"] = { "n", 42622 },	-- Eliza Darkgrin
 					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26547, {	-- A Mangy Threat
-					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["provider"] = { "n", 5636 },	-- Gryphon Master Talonaxe
 					["coord"] = { 9.9, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26542 },	-- Hero's Call: The Hinterlands!
 				}),
 				q(26641, {	-- Can't Make An Omelette Without... (A)
-					["qg"] = 43200,	-- Gilda Cloudcaller
+					["provider"] = { "n", 43200 },	-- Gilda Cloudcaller
 					["coord"] = { 30.6, 47.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -45,7 +45,7 @@ _.Zones =
 					},
 				}),
 				q(26382, {	-- Can't Make An Omelette Without... (H)
-					["qg"] = 42896,	-- Apothecary Surlis
+					["provider"] = { "n", 42896 },	-- Apothecary Surlis
 					["coord"] = { 31.8, 58.5, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -58,13 +58,13 @@ _.Zones =
 					},
 				}),
 				q(26384, {	-- Darkcleric Marnal
-					["qg"] = 42622,	-- Eliza Darkgrin
+					["provider"] = { "n", 42622 },	-- Eliza Darkgrin
 					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26369 },	-- Hunt the Keeper
 				}),
 				q(26524, {	-- Dark Vessels (A)
-					["qg"] = 43156,	-- Fraggar Thundermantle
+					["provider"] = { "n", 43156 },	-- Fraggar Thundermantle
 					["coord"] = { 63.7, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26523 },	-- All That Skitters
@@ -89,7 +89,7 @@ _.Zones =
 					},
 				}),
 				q(26309, {	-- Dark Vessels (H)
-					["qg"] = 42622,	-- Eliza Darkgrin
+					["provider"] = { "n", 42622 },	-- Eliza Darkgrin
 					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26310 },	-- All That Skitters
@@ -107,19 +107,19 @@ _.Zones =
 					},
 				}),
 				q(26498, {	-- Death to the Vilebranch (A)
-					["qg"] = 43157,	-- Doran Steelwing
+					["provider"] = { "n", 43157 },	-- Doran Steelwing
 					["coord"] = { 63.8, 59.8, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26497 },	-- Vilebranch Scum
 				}),
 				q(26307, {	-- Death to the Vilebranch (H)
-					["qg"] = 42642,	-- Death to the Vilebranch
+					["provider"] = { "n", 42642 },	-- Death to the Vilebranch
 					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26306 },	-- Start Taking Back
 				}),
 				q(26496, {	-- Down with the Vilebranch
-					["qg"] = 43108,	-- Kerr Ironsight
+					["provider"] = { "n", 43108 },	-- Kerr Ironsight
 					["coord"] = { 66.3, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -129,7 +129,7 @@ _.Zones =
 					},
 				}),
 				q(26521, {	-- Faces of Evil (A)
-					["qg"] = 43156,	-- Fraggar Thundermantle
+					["provider"] = { "n", 43156 },	-- Fraggar Thundermantle
 					["coord"] = { 63.7, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -141,7 +141,7 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(26357, {	-- Faces of Evil (H)
-					["qg"] = 42624,	-- Kotonga
+					["provider"] = { "n", 42624 },	-- Kotonga
 					["coord"] = { 67.7, 66.2, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -155,7 +155,7 @@ _.Zones =
 					["description"] = "The item that starts this quest drops from any mob in The Hinterlands.",
 				}),
 				q(26210, {	-- Gammerita, Mon!
-					["qg"] = 14740,	-- Katoom the Angler
+					["provider"] = { "n", 14740 },	-- Katoom the Angler
 					["coord"] = { 80.3, 81.5, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -166,7 +166,7 @@ _.Zones =
 					},
 				}),
 				q(26483, {	-- Gan'dranda
-					["qg"] = 43108,	-- Kerr Ironsight
+					["provider"] = { "n", 43108 },	-- Kerr Ironsight
 					["coord"] = { 66.3, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -181,17 +181,17 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(26518, {	-- Heads Up (A)
-					["qg"] = 43157,	-- Doran Steelwing
+					["provider"] = { "n", 43157 },	-- Doran Steelwing
 					["coord"] = { 63.8, 59.8, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26366, {	-- Heads Up (H)
-					["qg"] = 42642,	-- Primal Torntusk
+					["provider"] = { "n", 42642 },	-- Primal Torntusk
 					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26526, {	-- Hunt the Keeper (A)
-					["qg"] = 43156,	-- Fraggar Thundermantle
+					["provider"] = { "n", 43156 },	-- Fraggar Thundermantle
 					["coord"] = { 63.8, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26517 },	-- Summit of Fate
@@ -205,7 +205,7 @@ _.Zones =
 					},
 				}),
 				q(26369, {	-- Hunt the Keeper (H)
-					["qg"] = 42642,	-- Primal Torntusk
+					["provider"] = { "n", 42642 },	-- Primal Torntusk
 					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26363 },	-- Summit of Fate
@@ -219,19 +219,19 @@ _.Zones =
 					},
 				}),
 				q(26224, {	-- Hunt the Savages
-					["qg"] = 14741,	-- Huntsman Markhor
+					["provider"] = { "n", 14741 },	-- Huntsman Markhor
 					["coord"] = { 79.1, 79.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26223 },	-- Stalking the Stalkers
 				}),
 				q(27625, {	-- In Defense of Quel'Danil
-					["qg"] = 46475,	-- Anchorite Traska
+					["provider"] = { "n", 46475 },	-- Anchorite Traska
 					["coord"] = { 32.1, 42.5, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27725 },	-- Quel'Danil Lodge
 				}),
 				q(26516, {	-- It's Ours Now (A)
-					["qg"] = 43157,	-- Doran Steelwing
+					["provider"] = { "n", 43157 },	-- Doran Steelwing
 					["coord"] = { 63.8, 59.8, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26498 },	-- Death to the Vilebranch
@@ -242,7 +242,7 @@ _.Zones =
 					},
 				}),
 				q(26308, {	-- It's Ours Now (H)
-					["qg"] = 42642,	-- Primal Torntusk
+					["provider"] = { "n", 42642 },	-- Primal Torntusk
 					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
@@ -267,7 +267,7 @@ _.Zones =
 					},
 				}),
 				q(26212, {	-- Lard Lost His Lunch
-					["qg"] = 14731,	-- Lard
+					["provider"] = { "n", 14731 },	-- Lard
 					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -281,19 +281,19 @@ _.Zones =
 					},
 				}),
 				q(26515, {	-- Ongo'longo's Revenge (A)
-					["qg"] = 43157,	-- Doran Steelwing
+					["provider"] = { "n", 43157 },	-- Doran Steelwing
 					["coord"] = { 63.8, 59.8, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26518 },	-- Heads Up
 				}),
 				q(26367, {	-- Ongo'longo's Revenge (H)
-					["qg"] = 42642,	-- Primal Torntusk
+					["provider"] = { "n", 42642 },	-- Primal Torntusk
 					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
 				}),
 				q(26548, {	-- Out to the Front
-					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["provider"] = { "n", 5636 },	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -302,7 +302,7 @@ _.Zones =
 					},
 				}),
 				q(26490, {	-- Prime Slime (A)
-					["qg"] = 43109,	-- Dron Blastbrew
+					["provider"] = { "n", 43109 },	-- Dron Blastbrew
 					["coord"] = { 66.2, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -318,7 +318,7 @@ _.Zones =
 					},
 				}),
 				q(26283, {	-- Prime Slime (H)
-					["qg"] = 42612,	-- Malcolm Fendelson
+					["provider"] = { "n", 42612 },	-- Malcolm Fendelson
 					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -334,18 +334,18 @@ _.Zones =
 					},
 				}),
 				q(26225, {	-- Pupellyverbos Port
-					["qg"] = 42464,	-- Grognard
+					["provider"] = { "n", 42464 },	-- Grognard
 					["coord"] = { 77.3, 79.9, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27725, {	-- Quel'Danil Lodge
-					["qg"] = 46476,	-- Tracker Yoro
+					["provider"] = { "n", 46476 },	-- Tracker Yoro
 					["coord"] = { 63.9, 59.8, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26526 },	-- Hunt the Keeper
 				}),
 				q(26546, {	-- Razorbeak Friends
-					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["provider"] = { "n", 5636 },	-- Gryphon Master Talonaxe
 					["coord"] = { 9.9, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -357,7 +357,7 @@ _.Zones =
 					},
 				}),
 				q(836,   {	-- Rescue OOX-09/HL!
-					["qg"] = 7806,	-- Homing Robot OOX-09/HL
+					["provider"] = { "n", 7806 },	-- Homing Robot OOX-09/HL
 					["coord"] = { 49.4, 37.7, 26 },
 					["sourceQuest"] = 485,	-- Find OOX-09/HL!
 					["g"] = {
@@ -390,7 +390,7 @@ _.Zones =
 					},
 				}),
 				q(26532, {	-- Shadra the Venom Queen (A)
-					["qg"] = 43298,	-- Wildhammer Lookout
+					["provider"] = { "n", 43298 },	-- Wildhammer Lookout
 					["coord"] = { 34.3, 67.7, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26531 },	-- Summoning Shadra
@@ -404,7 +404,7 @@ _.Zones =
 					},
 				}),
 				q(26419, {	-- Shadra the Venom Queen (H)
-					["qg"] = 43299,	-- Deathstalker Lookout
+					["provider"] = { "n", 43299 },	-- Deathstalker Lookout
 					["coord"] = { 35.6, 68.4, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26558 },	-- Summoning Shadra
@@ -418,7 +418,7 @@ _.Zones =
 					},
 				}),
 				q(26491, {	-- Skulk Rock Clean-Up (A)
-					["qg"] = 43108,	-- Kerr Ironsight
+					["provider"] = { "n", 43108 },	-- Kerr Ironsight
 					["coord"] = { 66.3, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -427,7 +427,7 @@ _.Zones =
 					},
 				}),
 				q(26267, {	-- Skulk Rock Clean-Up (H)
-					["qg"] = 42613,	-- Elder Torntusk
+					["provider"] = { "n", 42613 },	-- Elder Torntusk
 					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -436,7 +436,7 @@ _.Zones =
 					},
 				}),
 				q(26492, {	-- Skulk Rock Supplies (A)
-					["qg"] = 43108,	-- Kerr Ironsight
+					["provider"] = { "n", 43108 },	-- Kerr Ironsight
 					["coord"] = { 66.3, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -445,7 +445,7 @@ _.Zones =
 					},
 				}),
 				q(26268, {	-- Skulk Rock Supplies (H)
-					["qg"] = 42613,	-- Elder Torntusk
+					["provider"] = { "n", 42613 },	-- Elder Torntusk
 					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -454,7 +454,7 @@ _.Zones =
 					},
 				}),
 				q(26485, {	-- Snapjaws, Lad!
-					["qg"] = 43109,	-- Dron Blastbrew
+					["provider"] = { "n", 43109 },	-- Dron Blastbrew
 					["coord"] = { 66.2, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -469,7 +469,7 @@ _.Zones =
 					},
 				}),
 				q(26211, {	-- Snapjaws, Mon!
-					["qg"] = 14740,	-- Katoom the Angler
+					["provider"] = { "n", 14740 },	-- Katoom the Angler
 					["coord"] = { 80.3, 81.5, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -477,35 +477,35 @@ _.Zones =
 					},
 				}),
 				q(26223, {	-- Stalking the Stalkers
-					["qg"] = 14741,	-- Huntsman Markhor
+					["provider"] = { "n", 14741 },	-- Huntsman Markhor
 					["coord"] = { 79.1, 79.5, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26306, {	-- Start Taking Back
-					["qg"] = 42642,	-- Primal Torntusk
+					["provider"] = { "n", 42642 },	-- Primal Torntusk
 					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26432 },	-- The Fall of Jintha'Alor
 				}),
 				q(26643, {	-- Starvation Diet (A)
-					["qg"] = 43200,	-- Gilda Cloudcaller
+					["provider"] = { "n", 43200 },	-- Gilda Cloudcaller
 					["coord"] = { 30.6, 47.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26641 },	-- Can't Make an Omelette Without...
 				}),
 				q(26387, {	-- Starvation Diet (H)
-					["qg"] = 42896,	-- Apothecary Surlis
+					["provider"] = { "n", 42896 },	-- Apothecary Surlis
 					["coord"] = { 31.8, 58.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26382 },	-- Can't Make an Omelette Without...
 				}),
 				q(26240, {	-- Stomp To My Beat
-					["qg"] = 14739,	-- Mystic Yayo'jin
+					["provider"] = { "n", 14739 },	-- Mystic Yayo'jin
 					["coord"] = { 78.8, 78.2, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26517, {	-- Summit of Fate (A)
-					["qg"] = 43156,	-- Fraggar Thundermantle
+					["provider"] = { "n", 43156 },	-- Fraggar Thundermantle
 					["coord"] = { 63.7, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -514,7 +514,7 @@ _.Zones =
 					},
 				}),
 				q(26363, {	-- Summit of Fate (H)
-					["qg"] = 42642,	-- Primal Torntusk
+					["provider"] = { "n", 42642 },	-- Primal Torntusk
 					["coord"] = { 67.8, 66.5, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -523,33 +523,33 @@ _.Zones =
 					},
 				}),
 				q(26531, {	-- Summoning Shadra (A)
-					["qg"] = 43200,	-- Gilda Cloudcaller
+					["provider"] = { "n", 43200 },	-- Gilda Cloudcaller
 					["coord"] = { 30.6, 47.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26530 },	-- The Shell of Shadra
 				}),
 				q(26558, {	-- Summoning Shadra (H)
-					["qg"] = 42898,	-- Darkcleric Marnal
+					["provider"] = { "n", 42898 },	-- Darkcleric Marnal
 					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26418 },	-- The Shell of Shadra
 				}),
 				q(28505, {	-- The Battle for Andorhal (A)
-					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["provider"] = { "n", 5636 },	-- Gryphon Master Talonaxe
 					["coord"] = { 9.9, 44.2, 26 },
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(28508, {	-- The Battle for Andorhal (H)
-					["qg"] = 42898,	-- Darkcleric Marnal
+					["provider"] = { "n", 42898 },	-- Darkcleric Marnal
 					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["isBreadcrumb"] = true,
 				}),
 				q(26528, {	-- The Eye of Shadra (A)
-					["qg"] = 43200,	-- Gilda Cloudcaller
+					["provider"] = { "n", 43200 },	-- Gilda Cloudcaller
 					["coord"] = { 30.6, 47.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -558,12 +558,12 @@ _.Zones =
 					},
 				}),
 				q(26381, {	-- The Eye of Shadra (H)
-					["qg"] = 42898,	-- Darkcleric Marnal
+					["provider"] = { "n", 42898 },	-- Darkcleric Marnal
 					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26432, {	-- The Fall of Jintha'Alor
-					["qg"] = 42613,	-- Elder Torntusk
+					["provider"] = { "n", 42613 },	-- Elder Torntusk
 					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -573,13 +573,13 @@ _.Zones =
 					},
 				}),
 				q(26529, {	-- The Fang of Shadra (A)
-					["qg"] = 43200,	-- Gilda Cloudcaller
+					["provider"] = { "n", 43200 },	-- Gilda Cloudcaller
 					["coord"] = { 30.6, 47.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26528 },	-- The Eye of Shadra
 				}),
 				q(26406, {	-- The Fang of Shadra (H)
-					["qg"] = 42898,	-- Darkcleric Marnal
+					["provider"] = { "n", 42898 },	-- Darkcleric Marnal
 					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26381 },	-- The Eye of Shadra
@@ -595,19 +595,19 @@ _.Zones =
 					},
 				}),
 				q(27626, {	-- The Highvale Documents
-					["qg"] = 46475,	-- Anchorite Traska
+					["provider"] = { "n", 46475 },	-- Anchorite Traska
 					["coord"] = { 32.1, 42.5, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27725 },	-- Quel'Danil Lodge
 				}),
 				q(26238, {	-- The Savage Dwarves
-					["qg"] = 42613,	-- Elder Torntusk
+					["provider"] = { "n", 42613 },	-- Elder Torntusk
 					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28574 },	-- Warchief's Command: The Hinterlands!
 				}),
 				q(26530, {	-- The Shell of Shadra (A)
-					["qg"] = 43200,	-- Gilda Cloudcaller
+					["provider"] = { "n", 43200 },	-- Gilda Cloudcaller
 					["coord"] = { 30.6, 47.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26529 },	-- The Fang of Shadra
@@ -621,7 +621,7 @@ _.Zones =
 					},
 				}),
 				q(26418, {	-- The Shell of Shadra (H)
-					["qg"] = 42898,	-- Darkcleric Marnal
+					["provider"] = { "n", 42898 },	-- Darkcleric Marnal
 					["coord"] = { 31.8, 58.3, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26406 },	-- The Fang of Shadra
@@ -635,12 +635,12 @@ _.Zones =
 					},
 				}),
 				q(26462, {	-- The Wicked Revantusk
-					["qg"] = 43108,	-- Kerr Ironsight
+					["provider"] = { "n", 43108 },	-- Kerr Ironsight
 					["coord"] = { 66.3, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26263, {	-- Thornar Thunderclash
-					["qg"] = 42613,	-- Elder Torntusk
+					["provider"] = { "n", 42613 },	-- Elder Torntusk
 					["coord"] = { 78.1, 81.3, 26 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -652,19 +652,19 @@ _.Zones =
 					},
 				}),
 				q(26525, {	-- Venomous Secrets (A)
-					["qg"] = 43156,	-- Fraggar Thundermantle
+					["provider"] = { "n", 43156 },	-- Fraggar Thundermantle
 					["coord"] = { 63.7, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26517 },	-- Summit of Fate
 				}),
 				q(26368, {	-- Venomous Secrets (H)
-					["qg"] = 42622,	-- Eliza Darkgrin
+					["provider"] = { "n", 42622 },	-- Eliza Darkgrin
 					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26309 },	-- Dark Vessels
 				}),
 				q(26497, {	-- Vilebranch Scum
-					["qg"] = 43157,	-- Doran Steelwing
+					["provider"] = { "n", 43157 },	-- Doran Steelwing
 					["coord"] = { 63.8, 59.8, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26496 },	-- Down with the Vilebranch

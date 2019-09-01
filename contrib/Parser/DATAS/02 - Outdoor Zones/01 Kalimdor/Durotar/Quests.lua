@@ -7,12 +7,12 @@ _.Zones =
 		m(1, {	-- Durotar
 			n(-17, {	-- Quests
 				q(41002, {	-- A Weapon of the Horde
-					["qg"] = 101035,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 101035 },	-- Lady Sylvanas Windrunner
 					["races"] = HORDE_ONLY,
 					["classes"]= { 12 },	-- Demon Hunter
 				}),
 				q(25263, {	-- Arnak Fireblade
-					["qg"] = 3208,	-- Margoz
+					["provider"] = { "n", 3208 },	-- Margoz
 					["coord"] = { 56.4, 19.8, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25262,	-- Skull Rock
@@ -34,7 +34,7 @@ _.Zones =
 					},
 				}),
 				q(25648, {	-- Beyond Durotar
-					["qg"] = 39379,	-- Gor the Enforcer
+					["provider"] = { "n", 39379 },	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, 1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -45,7 +45,7 @@ _.Zones =
 					},
 				}),
 				q(25167, {	-- Breaking the Chain
-					["qg"] = 3188,	-- Master Gadrin
+					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["coord"] = { 55.9, 74.8, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -54,7 +54,7 @@ _.Zones =
 					},
 				}),
 				q(1843,  {	-- Brutal Gauntlets
-					["qg"] = 6408,	-- Ula'elek
+					["provider"] = { "n", 6408 },	-- Ula'elek
 					["coord"] = { 56.4, 74.4, 1 },
 					["sourceQuest"] = 1842,	-- Satyr Hooves
 					["races"] = HORDE_ONLY,
@@ -66,7 +66,7 @@ _.Zones =
 					},
 				}),
 				q(25924, {	-- Call of Duty
-					["qg"] = 41621,	-- Commander Thorak
+					["provider"] = { "n", 41621 },	-- Commander Thorak
 					["coord"] = { 55.9, 12.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -75,19 +75,19 @@ _.Zones =
 					},
 				}),
 				q(25170, {	-- Cleaning Up the Coastline
-					["qg"] = 10578,	-- Bom'bay
+					["provider"] = { "n", 10578 },	-- Bom'bay
 					["coord"] = { 55.6, 75.2, 1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(840,   {	-- Conscript of the Horde
-					["qg"] = 3336,	-- Takrin Pathseeker
+					["provider"] = { "n", 3336 },	-- Takrin Pathseeker
 					["lvl"] = 10,
 					["coord"] = { 50.8, 43.5, 1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(40607, {	-- Demons Among Us
-					["qg"] = 100873,	-- Allari the Souleater
+					["provider"] = { "n", 100873 },	-- Allari the Souleater
 					["lvl"] = 98,
 					["coord"] = { 45.8, 15.1, 1 },
 					["races"] = HORDE_ONLY,
@@ -100,7 +100,7 @@ _.Zones =
 					},
 				}),
 				q(40983, {	-- Demons Among Them
-					["qg"] = 100873,	-- Allari the Souleater
+					["provider"] = { "n", 100873 },	-- Allari the Souleater
 					["lvl"] = 98,
 					["coord"] = { 45.8, 15.1, 1 },
 					["races"] = HORDE_ONLY,
@@ -111,27 +111,27 @@ _.Zones =
 					},
 				}),
 				q(40760, {	-- Emissary
-					["qg"] = 100866,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 100866 },	-- Lady Sylvanas Windrunner
 					["lvl"] = 98,
 					["coord"] = { 45.6, 15.8, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 40522 },	-- Fate of the Horde
 				}),
 				q(25176, {	-- Exploiting the Situation
-					["qg"] = 39423,	-- Gail Nozzywig
+					["provider"] = { "n", 39423 },	-- Gail Nozzywig
 					["coord"] = { 53.0, 43.1, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25171,	-- Riding On
 				}),
 				q(40522, {	-- Fate of the Horde
-					["qg"] = 100453,	-- Eitrigg
+					["provider"] = { "n", 100453 },	-- Eitrigg
 					["lvl"] = 98,
 					["coord"] = { 57.2, 10.5, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 40518 },	-- The Battle for Broken Shore
 				}),
 				q(25260, {	-- Fizzled
-					["qg"] = 39379,	-- Gor the Enforcer
+					["provider"] = { "n", 39379 },	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
@@ -142,7 +142,7 @@ _.Zones =
 					},
 				}),
 				q(25173, {	-- From Bad to Worse
-					["qg"] = 3139,	-- Gar'Thok
+					["provider"] = { "n", 3139 },	-- Gar'Thok
 					["lvl"] = 4,
 					["coord"] = { 51.9, 43.4, 1 },
 					["races"] = HORDE_ONLY,
@@ -150,7 +150,7 @@ _.Zones =
 				}),
 				q(5648,  {	-- Garments of Spirituality
 					["u"] = 40,
-					["qg"] = 3706,	-- Tai'jin
+					["provider"] = { "n", 3706 },	-- Tai'jin
 					["races"] = { 8 },	-- Troll
 					["classes"] = { 5 },	-- Priest
 					["g"] = {
@@ -158,25 +158,25 @@ _.Zones =
 					},
 				}),
 				q(25259, {	-- Gaur Icehorn
-					["qg"] = 39590,	-- Spiketooth
+					["provider"] = { "n", 39590 },	-- Spiketooth
 					["coord"] = { 58.7, 23.1, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25256	-- Sent for Help
 				}),
 				q(25257, {	-- Ghislania
-					["qg"] = 39590,	-- Spiketooth
+					["provider"] = { "n", 39590 },	-- Spiketooth
 					["coord"] = { 58.7, 23.1, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25256	-- Sent for Help
 				}),
 				q(25258, {	-- Griswold Hanniston
-					["qg"] = 39590,	-- Spiketooth
+					["provider"] = { "n", 39590 },	-- Spiketooth
 					["coord"] = { 58.7, 23.1, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25256	-- Sent for Help
 				}),
 				q(25206, {	-- Ignoring the Warnings
-					["qg"] = 39379,	-- Gor the Enforcer
+					["provider"] = { "n", 39379 },	-- Gor the Enforcer
 					["lvl"] = 8,
 					["coord"] = { 44.9, 14.7, 1 },
 					["races"] = HORDE_ONLY,
@@ -188,20 +188,20 @@ _.Zones =
 					},
 				}),
 				q(29690, {	-- Into the Mists
-					["qg"] = 55054,	-- General Nazrim
+					["provider"] = { "n", 55054 },	-- General Nazrim
 					["lvl"] = 80,
 					["coord"] = { 61.2, 44.6, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31853,	-- All Aboard!
 				}),
 				q(31012, {	-- Joining the Horde
-					["qg"] = 60570,	-- Ji Firepaw
+					["provider"] = { "n", 60570 },	-- Ji Firepaw
 					["coord"] = { 45.6, 12.6, 1 },
 					["races"] = { 24 },	-- Pandaren (Neutral)
 				}),
 				q(40605, {	-- Keep Your Friends Close
 					["coord"] = { 45.6, 15.9, 1 },
-					["qg"] = 101035,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 101035 },	-- Lady Sylvanas Windrunner
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						40607,	-- Demons Among Us
@@ -213,33 +213,38 @@ _.Zones =
 					["races"] = { 8 },	-- Troll
 					["description"] = "This quest is available to Trolls upon reaching level 20.",
 				}),
+				q(14088, {	-- Learn to Ride in Durotar
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 46883 },	-- Riding Trainer Pamphlet
+				}),
 				q(25179, {	-- Loss Reduction
-					["qg"] = 39270,	-- Injured Razor Hill Grunt
+					["provider"] = { "n", 39270 },	-- Injured Razor Hill Grunt
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25173,	-- From Bad to Worse
 					["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
 				}),
 				q(25193, {	-- Lost But Not Forgotten
-					["qg"] = 3193,	-- Misha Tor'kren
+					["provider"] = { "n", 3193 },	-- Misha Tor'kren
 					["coord"] = { 43.3, 30.6, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 				}),
 				q(25187, {	-- Lost in the Floods
-					["qg"] = 39323,	-- Gail Nozzywig
+					["provider"] = { "n", 39323 },	-- Gail Nozzywig
 					["coord"] = { 49.5, 40.1, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25227,	-- Thonk
 				}),
 				q(39698, {	-- Making the Rounds
-					["qg"] = 96686,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 96686 },	-- Lady Sylvanas Windrunner
 					["lvl"] = 98,
 					["coord"] = { 61.3, 8.8, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 38307 },	-- The Warchief Beckons
 				}),
 				q(25261, {	-- Margoz
-					["qg"] = 39379,	-- Gor the Enforcer
+					["provider"] = { "n", 39379 },	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, 1 },
 					["sourceQuest"] = 25260,	-- Fizzled
 					["races"] = {
@@ -249,7 +254,7 @@ _.Zones =
 					},
 				}),
 				q(6365,  {	-- Meats to Orgrimmar
-					["qg"] = 3881,	-- Grimtak
+					["provider"] = { "n", 3881 },	-- Grimtak
 					["coord"] = { 50.7, 42.8, 1 },
 					["races"] = {
 						2,	-- Orc
@@ -261,9 +266,9 @@ _.Zones =
 					["coord"] = { 57.6, 9.6, 1 },
 					["races"] = { 9 },	-- Goblin
 					["sourceQuest"] = 25266,	-- Warchief's Emissary
-					["qgs"] = {
-						86884,	-- Darkspear Loyalist
-						39609,	-- Kor'kron Loyalist
+					["providers"] = {
+						{ "n", 86884 },	-- Darkspear Loyalist
+						{ "n", 39609 },	-- Kor'kron Loyalist
 					},
 					["g"] = {
 						i(118217),	-- Staff of Dubious Pacts
@@ -276,43 +281,43 @@ _.Zones =
 					},
 				}),
 				q(25165, {	-- Never Trust a Big Barb and a Smile
-					["qg"] = 10578,	-- Bom'bay
+					["provider"] = { "n", 10578 },	-- Bom'bay
 					["coord"] = { 55.7, 75.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25170,	-- Cleaning up the Coastline
 				}),
 				q(25168, {	-- Purge the Valley
-					["qg"] = 3188,	-- Master Gadrin
+					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["coord"] = { 55.9, 74.7, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25167,	-- Breaking the Chain
 				}),
 				q(25192, {	-- Raggaran's Fury
-					["qg"] = 39326,	-- Raggaran
+					["provider"] = { "n", 39326 },	-- Raggaran
 					["coord"] = { 42.6, 49.8, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25190,	-- Raggaran's Rage
 				}),
 				q(25190, {	-- Raggaran's Rage
-					["qg"] = 39326,	-- Raggaran
+					["provider"] = { "n", 39326 },	-- Raggaran
 					["coord"] = { 42.6, 49.8, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 				}),
 				q(26806, {	-- Reports to Orgrimmar
-					["qg"] = 3139,	-- Gar'Thok
+					["provider"] = { "n", 3139 },	-- Gar'Thok
 					["coord"] = { 51.8, 43.4, 1 },
 					["races"]= { 9 },	-- Goblin
 					["sourceQuest"] = 26804,	-- Flight to Razor Hill
 				}),
 				q(26807, {	-- Return to Eitrigg
-					["qg"] = 41140,	-- Burok
+					["provider"] = { "n", 41140 },	-- Burok
 					["coord"] = { 53.0, 43.6, 1 },
 					["races"]= { 9 },	-- Goblin
 					["sourceQuest"] = 26806,	-- Reports to Orgrimmar
 				}),
 				q(25171, {	-- Riding On
-					["qg"] = 3188,	-- Master Gadrin
+					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["coord"] = { 55.9, 74.7, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -321,8 +326,8 @@ _.Zones =
 						25169,	-- Purge the Valley
 					},
 				}),
-				q(6384,  { -- Ride to Orgrimmar
-					["qg"] = 41140,	-- Burok
+				q(6384,  {	-- Ride to Orgrimmar
+					["provider"] = { "n", 41140 },	-- Burok
 					["coord"] = { 53.0, 43.6, 1 },
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
 					["races"] = {
@@ -331,14 +336,8 @@ _.Zones =
 						36,	-- Mag'har
 					},
 				}),
-				i(46883, {	-- Riding Trainer Pamphlet
-					q(14088, {	-- Learn to Ride in Durotar
-						["u"] = 40,
-						["races"] = HORDE_ONLY,
-					}),
-				}),
 				q(1842,  {	-- Satyr Hooves
-					["qg"] = 6408,	-- Ula'elek
+					["provider"] = { "n", 6408 },	-- Ula'elek
 					["coord"] = { 56.4, 74.4, 1 },
 					["sourceQuest"] = 1839,	-- Ula'elek and the Brutal Gauntlets
 					["races"] = HORDE_ONLY,
@@ -347,24 +346,24 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(40982, {	-- Second Sight
-					["qg"] = 100873,	-- Allari the Souleater
+					["provider"] = { "n", 100873 },	-- Allari the Souleater
 					["races"] = HORDE_ONLY,
 					["classes"] = { 12 },	-- Demon Hunter
 				}),
 				q(835,   {	-- Securing the Lines
-					["qg"] = 3293,	-- Rezlak
+					["provider"] = { "n", 3293 },	-- Rezlak
 					["lvl"] = 7,
 					["races"] = HORDE_ONLY,
 					["coord"] = { 46.3, 22.8, 1 },
 				}),
 				q(25256, {	-- Sent for Help
-					["qg"] = 39604,	-- Vek'nag
+					["provider"] = { "n", 39604 },	-- Vek'nag
 					["lvl"] = 8,
 					["coord"] = { 56.4, 20.2, 1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25178, {	-- Shipwreck Searching
-					["qg"] = 39423,	-- Gail Nozzywig
+					["provider"] = { "n", 39423 },	-- Gail Nozzywig
 					["coord"] = { 53.0, 43.1, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -374,7 +373,7 @@ _.Zones =
 				}),
 				q(827,   {	-- Skull Rock
 					["u"] = 40,
-					["qg"] = 3208,	-- Margoz
+					["provider"] = { "n", 3208 },	-- Margoz
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(2, i(4947)),	-- Jagged Dagger
@@ -383,7 +382,7 @@ _.Zones =
 					},
 				}),
 				q(25262, {	-- Skull Rock
-					["qg"] = 3208,	-- Margoz
+					["provider"] = { "n", 3208 },	-- Margoz
 					["coord"] = { 56.4, 20.0, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25261,	-- Margoz
@@ -395,19 +394,19 @@ _.Zones =
 					},
 				}),
 				q(25177, {	-- Storming the Beaches
-					["qg"] = 3139,	-- Gar'Thok
+					["provider"] = { "n", 3139 },	-- Gar'Thok
 					["coord"] = { 52.0, 43.4, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25173,	-- From Bad to Worse
 				}),
 				q(25195, {	-- That's the End of That Raptor
-					["qg"] = 39324,	-- Zen'Taji
+					["provider"] = { "n", 39324 },	-- Zen'Taji
 					["coord"] = { 35.8, 41.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25194,	-- Unbidden Visitors
 				}),
 				q(40518, {	-- The Battle for Broken Shore
-					["qg"] = 113547,	-- Stone Guard Mukar
+					["provider"] = { "n", 113547 },	-- Stone Guard Mukar
 					["coord"] = { 55.6, 11.0, 1 },
 					["sourceQuest"] = 44281,	-- To Be Prepared
 				--	["altQuest"] = 44543,	-- Scenario Skip (H)
@@ -428,33 +427,33 @@ _.Zones =
 					},
 				}),
 				q(25232, {	-- The Burning Blade
-					["qg"] = 3142,	-- Orgnil Soulscar
+					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
 					["lvl"] = 8,
 					["coord"] = { 52.2, 43.1, 1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(924,   {	-- The Demon Seed
 					["u"] = 40,
-					["qg"] = 3521,	-- Ak'Zeloth
+					["provider"] = { "n", 3521 },	-- Ak'Zeloth
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(2, i(5420)),	-- Banshee Armor
 					},
 				}),
 				q(25196, {	-- The Dranosh'ar Blockade
-					["qg"] = 3142,	-- Orgnil Soulscar
+					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
 					["coord"] = { 52.2, 43.0, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25232,	-- The Burning Blade
 				}),
 				q(42484, {	-- The Firstborn Rises
-					["qg"] = 107554,	-- Thassarian
+					["provider"] = { "n", 107554 },	-- Thassarian
 					["classes"] = { 6 },	-- Death Knight
 				}),
 				q(39801, {	-- The Splintered Fleet
 					["sourceQuest"] = 38307,	-- The Warchief Beckons
 					["lvl"] = 98,
-					["qg"] = 96686,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["provider"] = { "n", 96686 },	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(139916),	-- Black Rose Amice
@@ -468,32 +467,32 @@ _.Zones =
 					},
 				}),
 				q(25169, {	-- The War of Northwatch Aggression
-					["qg"] = 3140,	-- Lar Prowltusk
+					["provider"] = { "n", 3140 },	-- Lar Prowltusk
 					["coord"] = { 55.4, 75.0, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25167,	-- Breaking the Chain
 				}),
 				q(25205, {	-- The Wolf and The Kodo
-					["qg"] = 39380,	-- Shin Stonepillar
+					["provider"] = { "n", 39380 },	-- Shin Stonepillar
 					["lvl"] = 8,
 					["coord"] = { 44.9, 14.7, 1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25227, {	-- Thonk
-					["qg"] = 39423,	-- Gail Nozzywig
+					["provider"] = { "n", 39423 },	-- Gail Nozzywig
 					["coord"] = { 53.0, 43.1, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25178,	-- Shipwreck Searching
 					["isBreadcrumb"] = true,
 				}),
 				q(25236, {	-- Thunder Down Under
-					["qg"] = 39379,	-- Gor the Enforcer
+					["provider"] = { "n", 39379 },	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 				}),
 				q(44281, {	-- To Be Prepared
-					["qg"] = 4311,	-- Holgar Stormaxe
+					["provider"] = { "n", 4311 },	-- Holgar Stormaxe
 					["lvl"] = 98,
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 43926,	-- The Legion Returns
@@ -502,7 +501,7 @@ _.Zones =
 					},
 				}),
 				q(47867, {	-- Two If By Sea
-					["qg"] = 122065,	-- Lady Liadrin
+					["provider"] = { "n", 122065 },	-- Lady Liadrin
 					["coord"] = { 58.2, 12.0, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -511,26 +510,26 @@ _.Zones =
 					},
 				}),
 				q(25194, {	-- Unbidden Visitors
-					["qg"] = 39324,	-- Zen'Taji
+					["provider"] = { "n", 39324 },	-- Zen'Taji
 					["coord"] = { 35.8, 41.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 				}),
 				q(25188, {	-- Watershed Patrol
-					["qg"] = 39323,	-- Gail Nozzywig
+					["provider"] = { "n", 39323 },	-- Gail Nozzywig
 					["coord"] = { 49.5, 40.1, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 				}),
 				q(53777, {	-- Where He Died
-					["qg"] = 146290,	-- Spirit of Vol'jin
+					["provider"] = { "n", 146290 },	-- Spirit of Vol'jin
 					["lvl"] = 120,
 					["coord"] = { 45.9, 15.9, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54120,	-- To Orgrimmar
 				}),
 				q(834,   {	-- Winds in the Desert
-					["qg"] = 3293,	-- Rezlak
+					["provider"] = { "n", 3293 },	-- Rezlak
 					["lvl"] = 7,
 					["races"] = HORDE_ONLY,
 					["coord"] = { 46.3, 22.8, 1 },

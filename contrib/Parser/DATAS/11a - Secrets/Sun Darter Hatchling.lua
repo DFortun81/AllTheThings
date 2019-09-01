@@ -33,7 +33,7 @@ _.Secrets =
 						["description"] = "Qty:1\n\nPurchase on the AH, make your own(pre Cata Tailors/Leatherworkers only), or head to Dire Maul North.\n\nOnce inside find Knot Thimblejack near Guard Slip'kik, and complete his quest for the suit.",
 						["g"] = {
 							q(27120, {	-- The Gordok Ogre Suit
-								["qg"] = 14338,	-- Knot Thimblejack
+								["provider"] = { "n", 14338 },	-- Knot Thimblejack
 								["repeatable"] = true,
 								["collectible"] = false,
 								["coords"] = {

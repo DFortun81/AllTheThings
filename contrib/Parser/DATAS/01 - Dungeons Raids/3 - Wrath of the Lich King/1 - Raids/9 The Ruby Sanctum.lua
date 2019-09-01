@@ -15,7 +15,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			{
 				["questID"] = 26034,		-- The Twilight Destroyer
-				["qg"] = 40429,				-- Krasus <Consort of the Queen>
+				["provider"] = { "n", 40429 },				-- Krasus <Consort of the Queen>
 				["sourceQuest"] = 26013,	-- Assault on the Sanctum
 			},
 			n(39747, {	-- Saviana Ragefire

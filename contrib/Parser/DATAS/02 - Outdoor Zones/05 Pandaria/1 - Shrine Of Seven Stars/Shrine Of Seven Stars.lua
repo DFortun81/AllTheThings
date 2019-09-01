@@ -23,7 +23,7 @@ _.Zones =
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class- and spec-specific. Not all items are available to all classes able to equip them.|r",
 						["coord"] = { 47.23, 49.71, 393 },
 						["lvl"] = 90,
-						["qg"] = 64101,	-- Taijin the Cyclone
+						["provider"] = { "n", 64101 },	-- Taijin the Cyclone
 						["g"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
 								["sym"] = {
@@ -36,11 +36,11 @@ _.Zones =
 					q(33248, {	-- Proving Grounds
 						["coord"] = { 47.23, 49.71, 393 },
 						["lvl"] = 90,
-						["qg"] = 64101,	-- Taijin the Cyclone
+						["provider"] = { "n", 64101 },	-- Taijin the Cyclone
 					}),
 					q(32683, {	-- So You Want to Be a Blacksmith...
 						["requireSkill"] = 164,	-- Blacksmithing
-						["qg"] = 64085,	-- Cullen Hammerbrow
+						["provider"] = { "n", 64085 },	-- Cullen Hammerbrow
 						["coord"] = { 71.27, 50.52, 393 },
 					}),
 					--[[
@@ -53,7 +53,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["coord"] = { 85.8, 62.2, 393 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 64484,	-- Instructor Windspear
+						["provider"] = { "n", 64484 },	-- Instructor Windspear
 					}),
 					--[[
 					q(31386, {	-- The Shado-Pan Offensive

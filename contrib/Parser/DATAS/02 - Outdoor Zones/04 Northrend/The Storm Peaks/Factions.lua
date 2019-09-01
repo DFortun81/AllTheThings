@@ -84,25 +84,25 @@ _.Zones =
 							},
 						}),
 						q(13559, {	-- Hodir's Tribute
-							["qg"] = 32540,	-- Lillehoff
+							["provider"] = { "n", 32540 },	-- Lillehoff
 							["coord"] = { 66.1, 61.4, 120 },
 							["repeatable"] = true,
 						}),
 						q(13011, {	-- Jormuttar is Soo Fat...
 							["minReputation"] = { 1119, FRIENDLY },
 							["coord"] = { 65.3, 60.1, 120 },
-							["qg"] = 30105,	-- King Jokkum
+							["provider"] = { "n", 30105 },	-- King Jokkum
 						}),
 						q(12985, {	-- Forging a Head
 							["minReputation"] = { 1119, FRIENDLY },
 							["sourceQuests"] = { 12967 },	-- Battling the Elements
 							["coord"] = { 63.2, 63.2, 120 },
-							["qg"] = 30127,	-- Njormeld
+							["provider"] = { "n", 30127 },	-- Njormeld
 						}),
 						q(12987, {	-- Mounting Hodir's Helm
 							["sourceQuests"] = { 12985 },	-- Forging A Head
 							["coord"] = { 63.2, 63.2, 120 },
-							["qg"] = 30127,	-- Njormeld
+							["provider"] = { "n", 30127 },	-- Njormeld
 						}),
 						q(13006, {	-- Polishing the Helm
 						--	["minReputation"] = -- Unknown reputation requirement
@@ -118,7 +118,7 @@ _.Zones =
 						}),
 						q(13421, {	-- Remember Everfrost!
 							["coord"] = { 67.0, 60.8, 120 },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
-							["qg"] = 32594,	-- Calder <Blacksmithing Supplies>
+							["provider"] = { "n", 32594 },	-- Calder <Blacksmithing Supplies>
 							["sourceQuests"] = { 13420 },	-- Source Quest: Everfrost
 							["repeatable"]	= true,
 						}),
@@ -146,12 +146,12 @@ _.Zones =
 							["minReputation"] = { 1119, HONORED },
 							["isDaily"]	= true,
 							["coord"] = { 63.5, 59.7, 120 },
-							["qg"] = 30294,		-- Quest Giver: Frostworg Denmother
+							["provider"] = { "n", 30294 },		-- Quest Giver: Frostworg Denmother
 						}),
 						q(13001, {	-- Raising Hodir's Spear (awarded "The Sons of Hodir" criteria)
 							["minReputation"] = { 1119, HONORED },
 							["coord"] = { 64.8, 59.1, 120 },
-							["qg"] = 30252,	-- Lorekeeper Randvir
+							["provider"] = { "n", 30252 },	-- Lorekeeper Randvir
 						}),
 						q(13003, {	-- Thrusting Hodir's Spear
 							["minReputation"] = { 1119, HONORED },

@@ -10,23 +10,23 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["g"] = {
 			n(-17, {	-- Quests
 				q(29529, {	-- Demons in the Citadel
-					["qg"] = 54603,	-- Advance Scout Chadwick
+					["provider"] = { "n", 54603 },	-- Advance Scout Chadwick
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29530, {	-- Demons in the Citadel
-					["qg"] = 54606,	-- Stone Guard Stok'ton
+					["provider"] = { "n", 54606 },	-- Stone Guard Stok'ton
 					["races"] = HORDE_ONLY,
 				}),
 				q(29594, {	-- Hitting Them Where It Hurts
-					["qg"] = 54603,	-- Advance Scout Chadwick
+					["provider"] = { "n", 54603 },	-- Advance Scout Chadwick
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29593, {	-- Hitting Them Where It Hurts
-					["qg"] = 54606,	-- Stone Guard Stok'ton
+					["provider"] = { "n", 54606 },	-- Stone Guard Stok'ton
 					["races"] = HORDE_ONLY,
 				}),
 				q(29528, {	-- War on the Ramparts
-					["qg"] = 54603,	-- Advance Scout Chadwick
+					["provider"] = { "n", 54603 },	-- Advance Scout Chadwick
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25718),	-- Mantle of Magical Might
@@ -36,7 +36,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				q(29527, {	-- War on the Ramparts
-					["qg"] = 54606,	-- Stone Guard Stok'ton
+					["provider"] = { "n", 54606 },	-- Stone Guard Stok'ton
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25718),	-- Mantle of Magical Might

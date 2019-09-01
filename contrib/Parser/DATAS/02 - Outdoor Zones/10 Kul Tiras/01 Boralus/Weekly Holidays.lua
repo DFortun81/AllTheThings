@@ -8,7 +8,7 @@ _.Zones =
 		m(1161, {	-- Boralus
 			n(-176, {	-- Weekly Holidays
 				q(53034, {	-- A Shattered Path Through Time
-					["qg"] = 144383,	-- Chronicler Toopa
+					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
@@ -27,7 +27,7 @@ _.Zones =
 					},
 				}),
 				q(53037, {	-- Emissary of War [4 Mythic Dungeons]
-					["qg"] = 144383,	-- Chronicler Toopa
+					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
@@ -46,7 +46,7 @@ _.Zones =
 					},
 				}),
 				q(47148, {	-- Something Different
-					["qg"] = 144383,	-- Chronicler Toopa
+					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
@@ -62,7 +62,7 @@ _.Zones =
 					},
 				}),
 				q(53039, {	-- The Arena Calls 
-					["qg"] = 144383,	-- Chronicler Toopa
+					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
@@ -71,13 +71,13 @@ _.Zones =
 					},
 				}),
 				q(53038, {	-- The Very Best
-					["qg"] = 144383,	-- Chronicler Toopa
+					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 				}),
 				q(53030, {	-- The World Awaits
-					["qg"] = 144383,	-- Chronicler Toopa
+					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,

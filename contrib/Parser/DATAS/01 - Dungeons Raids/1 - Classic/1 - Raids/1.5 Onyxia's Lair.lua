@@ -26,9 +26,9 @@ _.Instances = { tier(1, {	-- Classic
 								["u"] = 40,
 								["g"] = {
 									q(7496, {	-- Celebrating Good Times
-										["qgs"] = {
-											1748,	-- Highlord Bolvar Fordragon
-											29611,	-- King Varian Wrynn
+										["providers"] = {
+											{ "n", 1748 },	-- Highlord Bolvar Fordragon
+											{ "n", 29611 },	-- King Varian Wrynn
 										},
 										["coord"] = { 85.6, 31.8, 84 },
 										["sourceQuest"] = 7495,	-- Victory for the Alliance
@@ -42,7 +42,7 @@ _.Instances = { tier(1, {	-- Classic
 										},
 									}),
 									q(7497, {	-- The Journey Has Just Begun
-										["qg"] = 14394,	-- Major Mattingly
+										["provider"] = { "n", 14394 },	-- Major Mattingly
 										["coord"] = { 67.2, 85.1, 84 },
 									--	["sourceQuest"] = 7496,	-- Celebrating Good Times	-- Legacy sourceQuest
 										["requireSkill"] = 165,	-- Leatherworking
@@ -62,7 +62,7 @@ _.Instances = { tier(1, {	-- Classic
 								["u"] = 40,
 								["g"] = {
 									q(7491, {	-- For All To See
-										["qg"] = 4949,	-- Thrall
+										["provider"] = { "n", 4949 },	-- Thrall
 										["coord"] = { 32.0, 37.8, 84 },
 										["sourceQuest"] = 7490,	-- Victory for the Horde
 										["races"] = HORDE_ONLY,
@@ -76,7 +76,7 @@ _.Instances = { tier(1, {	-- Classic
 										},
 									}),
 									q(7493, {	-- The Journey Has Just Begun (H)
-										["qg"] = 14392,		-- Overlord Runthak
+										["provider"] = { "n", 14392 },		-- Overlord Runthak
 										["coord"] = { 52.2, 75.8, 84 },
 									--	["sourceQuest"] = 7491,	-- For All To See	-- Legacy sourceQuest
 										["requireSkill"] = 165,	-- Leatherworking
@@ -141,7 +141,7 @@ _.Instances = { tier(1, {	-- Classic
 									i(49485),	-- Sparkling Onyxia Tooth Pendant
 									i(49487),	-- Purified Onyxia Blood Talisman
 									q(7497, {	-- The Journey Has Just Begun
-										["qg"] = 14394,	-- Major Mattingly
+										["provider"] = { "n", 14394 },	-- Major Mattingly
 										["coord"] = { 67.2, 85.1, 84 },
 										["sourceQuest"] = 24428,	-- A Most Puzzling Circumstance (A)
 										["requireSkill"] = 165,	-- Leatherworking
@@ -163,7 +163,7 @@ _.Instances = { tier(1, {	-- Classic
 									i(49485),		-- Sparkling Onyxia Tooth Pendant
 									i(49487),		-- Purified Onyxia Blood Talisman
 									q(7493, {	-- The Journey Has Just Begun (H)
-										["qg"] = 14392,	-- Overlord Natoj
+										["provider"] = { "n", 14392 },	-- Overlord Natoj
 										["coord"] = { 52.2, 75.8, 84 },
 										["sourceQuest"] = 24429,	-- A Most Puzzling Circumstance (H)
 										["requireSkill"] = 165,	-- Leatherworking
@@ -237,7 +237,7 @@ _.Instances = { tier(1, {	-- Classic
 									i(49485),	-- Sparkling Onyxia Tooth Pendant
 									i(49487),	-- Purified Onyxia Blood Talisman
 									q(7497, {	-- The Journey Has Just Begun
-										["qg"] = 14394,	-- Major Mattingly
+										["provider"] = { "n", 14394 },	-- Major Mattingly
 										["coord"] = { 67.2, 85.1, 84 },
 										["sourceQuest"] = 24428,	-- A Most Puzzling Circumstance (A)
 										["requireSkill"] = 165,	-- Leatherworking
@@ -259,7 +259,7 @@ _.Instances = { tier(1, {	-- Classic
 									i(49485),		-- Sparkling Onyxia Tooth Pendant
 									i(49487),		-- Purified Onyxia Blood Talisman
 									q(7493, {	-- The Journey Has Just Begun (H)
-										["qg"] = 14392,	-- Overlord Natoj
+										["provider"] = { "n", 14392 },	-- Overlord Natoj
 										["coord"] = { 52.2, 75.8, 84 },
 										["sourceQuest"] = 24429,	-- A Most Puzzling Circumstance (H)
 										["requireSkill"] = 165,	-- Leatherworking

@@ -16,11 +16,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["g"] = {
 					n(-17, {	-- Quests
 						q(31515, {	-- Blades of the Anointed
-							["qg"] = 64838,	-- Hooded Crusader
+							["provider"] = { "n", 64838 },	-- Hooded Crusader
 						}),
 						q(31516, {	-- Unto Dust Thou Shalt Return
 							["sourceQuests"] = { 31515 },	-- Blades of the Anointed
-							["qg"] = 64855,	-- Blade of the Anointed
+							["provider"] = { "n", 64855 },	-- Blade of the Anointed
 							["g"] = {
 								i(87361),	-- Martial Purification Gloves
 								i(87362),	-- Gauntlets of Righteous Conviction

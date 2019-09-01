@@ -30,7 +30,7 @@ _.Zones =
 				q(37205, {	-- Gargra
 					["isDaily"] = true,
 					["coord"] = { 68.5, 64.7, 525 },
-					["qg"] = 87122,	-- Gargra
+					["provider"] = { "n", 87122 },	-- Gargra
 					["g"] = {
 						currency(116415),	-- Shiny Pet Charm x2
 					},

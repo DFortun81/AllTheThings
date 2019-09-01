@@ -68,21 +68,21 @@ _.ExpansionFeatures =
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 37.6, 31.9, 717 },
 						["lvl"] = 102,
-						["qg"] = 101097,	-- Calydus
+						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(41759, {	-- An Unlikely Ally
 						["sourceQuests"] = { 42097 },	-- Searching the Archives
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 65.9, 47.0, 717 },
 						["lvl"] = 103,
-						["qg"] = 104795,	-- Ritssyn Flamescowl
+						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 					}),
 					q(41750, {	-- Champion: Calydus
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 37.6, 31.8, 717 },
 						["lvl"] = 101,
-						["qg"] = 101097,	-- Calydus
+						["provider"] = { "n", 101097 },	-- Calydus
 						["g"] = {
 							follower(616),	-- Calydus
 						},
@@ -92,7 +92,7 @@ _.ExpansionFeatures =
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 65.4, 47.3, 717 },
 						["lvl"] = 101,
-						["qg"] = 104795,	-- Ritssyn Flamescowl
+						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						["g"] = {
 							follower(589),	-- Ritssyn Flamescowl
 						},
@@ -106,7 +106,7 @@ _.ExpansionFeatures =
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 37.7, 31.8, 717 },
 						["lvl"] = 98,
-						["qg"] = 101097,	-- Calydus
+						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42603, {	-- Information at Any Cost
 						["sourceQuests"] = {
@@ -116,28 +116,28 @@ _.ExpansionFeatures =
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 66.3, 46.2, 717 },
 						["lvl"] = 101,
-						["qg"] = 106199,	-- Gakin the Darkbinder
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(40823, {	-- Rebuilding the Council
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 37.7, 31.8, 717 },
 						["lvl"] = 98,
-						["qg"] = 101097,	-- Calydus
+						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(41797, {	-- Recruiting The Troops
 						["sourceQuests"] = { 42603 },	-- Information at Any Cost
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 66.3, 46.2, 717 },
 						["lvl"] = 101,
-						["qg"] = 106199,	-- Gakin the Darkbinder
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(42608, {	-- Rise, Champions
 						["sourceQuests"] = { 44099 },	-- A Mutual Friend
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 37.6, 31.8, 717 },
 						["lvl"] = 101,
-						["qg"] = 101097,	-- Calydus
+						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42128, {	-- Ritual Reagents
 						["sourceQuests"] = { 
@@ -148,14 +148,14 @@ _.ExpansionFeatures =
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 37.7, 31.8, 717 },
 						["lvl"] = 98,
-						["qg"] = 101097,	-- Calydus
+						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42097, {	-- Searching the Archives
 						["sourceQuests"] = { 42601 },	-- Tech It Up A Notch
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 65.6, 47.2, 717 },
 						["lvl"] = 101,
-						["qg"] = 104795,	-- Ritssyn Flamescowl
+						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 					}),
 					q(39735, {	-- Stormheim
 						["sourceQuests"] = { 40824 },	-- The Path of the Dreadscar
@@ -168,24 +168,24 @@ _.ExpansionFeatures =
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 66.3, 46.2, 717 },
 						["lvl"] = 101,
-						["qg"] = 106199,	-- Gakin the Darkbinder
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(40824, {	-- The Path of the Dreadscar
 						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 31.2, 58.8, 717 },
 						["lvl"] = 98,
-						["qg"] = 101921,	-- Ritssyn Flamescowl
+						["provider"] = { "n", 101921 },	-- Ritssyn Flamescowl
 					}),
 					q(43984, {	-- The Tome Opens Again
-						["qg"] = 101097,	-- Calydus
+						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42602, {	-- Troops in the Field
 						["sourceQuests"] = { 41797 },	-- Recruiting The Troops
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 66.3, 46.2, 717 },
 						["lvl"] = 101,
-						["qg"] = 106199,	-- Gakin the Darkbinder
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(40495, {	-- Ulthalesh, the Deadwind Harvester
 						["sourceQuests"] = { 
@@ -196,7 +196,7 @@ _.ExpansionFeatures =
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 37.7, 31.8, 717 },
 						["lvl"] = 98,
-						["qg"] = 101097,	-- Calydus
+						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 						
 						
@@ -208,7 +208,7 @@ _.ExpansionFeatures =
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { , , 717 },
 						["lvl"] = ,
-						["qg"] = ,	-- 
+						["provider"] = { "n",  },	-- 
 					}),
 --]]
 
@@ -323,44 +323,44 @@ _.ExpansionFeatures =
 					--]]
 					--Followers Sort Later
 					q(41756, {	-- Champion: Eredar Twins
-						["qg"] = 106228,	-- Grand Warlock Alythess
+						["provider"] = { "n", 106228 },	-- Grand Warlock Alythess
 						["g"] = {
 							follower(621),	-- Eredar Twins
 						},
 					}),
 					q(41753, {	-- Champion: Jubeka Shadowbreaker
-						["qg"] = 105922,	-- Jubeka Shadowbreaker <Council of the Black Harvest>
+						["provider"] = { "n", 105922 },	-- Jubeka Shadowbreaker <Council of the Black Harvest>
 						["g"] = {
 							follower(619),	-- Jubeka Shadowbreaker
 						},
 					}),
 					q(46047, {	-- Champion: Kanrethad Ebonlocke
 					--q(46316)  Diff quest text if you completed green fire quest.  Same result from both quests.
-						["qg"] = 118927,	-- Kanrethad Ebonlocke
+						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
 						["g"] = {
 							follower(997),	-- Kanrethad Ebonlocke
 						},
 					}),
 					q(41751, {	-- Champion: Kira Iresoul
-						["qg"] = 104732,	-- Kira Iresoul
+						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["g"] = {
 							follower(617),	-- Kira Iresoul
 						},
 					}),
 					q(41755, {	-- Champion: Lulubelle Fizzlebang
-						["qg"] = 105928,	-- Lulubelle Fizzlebang
+						["provider"] = { "n", 105928 },	-- Lulubelle Fizzlebang
 						["g"] = {
 							follower(590),	-- Lulubelle Fizzlebang
 						},
 					}),
 					q(41754, {	-- Champion: Shinfel Blightsworn
-						["qg"] = 105140,	-- Shinfel Blightsworn <Council of the Black Harvest>
+						["provider"] = { "n", 105140 },	-- Shinfel Blightsworn <Council of the Black Harvest>
 						["g"] = {
 							follower(620),	-- Shinfel Blightsworn
 						},
 					}),
 					q(41752, {	-- Champion: Zinnin Smythe
-						["qg"] = 105923,	-- Zinnin Smythe <Council of the Black Harvest>
+						["provider"] = { "n", 105923 },	-- Zinnin Smythe <Council of the Black Harvest>
 						["g"] = {
 							follower(618),	-- Zinnin Smythe
 						},

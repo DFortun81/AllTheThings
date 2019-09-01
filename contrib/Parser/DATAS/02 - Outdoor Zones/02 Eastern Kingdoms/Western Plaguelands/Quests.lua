@@ -7,12 +7,12 @@ _.Zones =
 		m(22, {	-- Western Plaguelands
 			n(-17, {	-- Quests
 				q(26954, {	-- A Different Approach
-					["qg"] = 44456,	-- Adrine Towhide
+					["provider"] = { "n", 44456 },	-- Adrine Towhide
 					["coord"] = { 48.8, 54.7, 22 },
 					["sourceQuests"] = 26953,	-- Zen'kiki, the Druid
 				}),
 				q(27012, {	-- A Gnoll's Resolve
-					["qg"] = 44472,	-- Kelly Dumah
+					["provider"] = { "n", 44472 },	-- Kelly Dumah
 					["coord"] = { 48.4, 31.9, 22 },
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
 					["g"] = {
@@ -22,7 +22,7 @@ _.Zones =
 					},
 				}),
 				q(27167, {	-- A Mighty Hunger
-					["qg"] = 45165,	-- Thurman Grant
+					["provider"] = { "n", 45165 },	-- Thurman Grant
 					["coord"] = { 42.7, 84.1, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -34,7 +34,7 @@ _.Zones =
 					},
 				}),
 				q(26999, {	-- A New Era for the Plaguelands
-					["qg"] = 44454,	-- Field Agent Kaartish
+					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
 					["sourceQuests"] = { 27175, 27233, 26952 },	-- The Menders' Stead (A/A/H versions)
 					["g"] = {
@@ -45,7 +45,7 @@ _.Zones =
 					},
 				}),
 				q(27089, {	-- Ace in the Hole
-					["qg"] = 44451,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44451 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 49.0, 63.7, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27087,	-- Lindsay Ravensun, Revealed
@@ -72,7 +72,7 @@ _.Zones =
 					},
 				}),
 				q(27206, {	-- Alas, Andorhal
-					["qg"] = 44453,	-- Thassarian
+					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 39.9, 69.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27204,	-- Aradne
@@ -99,7 +99,7 @@ _.Zones =
 					},
 				}),
 				q(27002, {	-- An Audience with the Highlord
-					["qg"] = 11616,	-- Nathaniel Dumah
+					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
 					["coord"] = { 48.1, 32.3, 22 },
 					["sourceQuest"] = 27001,	-- This Means WAR (Wild Arachnid Roundup)
 				}),
@@ -108,28 +108,28 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["coord"] = { 69.2, 79.0, 22 },
 					["lvl"] = 98,
-					["qg"] = 109698,	-- Calydus
+					["provider"] = { "n", 109698 },	-- Calydus
 				}),
 				q(27090, {	-- Andorhal, Once and For All
-					["qg"] = 45129,	-- Lurid
+					["provider"] = { "n", 45129 },	-- Lurid
 					["coord"] = { 39.3, 70.5, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27089,	-- Ace in the Hole
 				}),
 				q(27164, {	-- Araj the Summoner (A)
-					["qg"] = 44467,	-- Lang Loosegrip
+					["provider"] = { "n", 44467 },	-- Lang Loosegrip
 					["coord"] = { 41.2, 70.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27161,	-- The Endless Flow
 				}),
 				q(26925, {	-- Araj the Summoner (H)
-					["qg"] = 44462,	-- Jearl Donald
+					["provider"] = { "n", 44462 },	-- Jearl Donald
 					["coord"] = { 47.3, 64.4, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26922,	-- The Endless Flow
 				}),
 				q(27204, {	-- Aradne
-					["qg"] = 44453,	-- Thassarian
+					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 39.9, 69.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -138,24 +138,24 @@ _.Zones =
 					},
 				}),
 				q(27199, {	-- Ashes to Ashes (A)
-					["qg"] = 44453,	-- Thassarian
+					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 39.9, 69.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27197,	-- The Battle Resumes!
 				}),
 				q(27086, {	-- Ashes to Ashes (H)
-					["qg"] = 44452,	-- Koltira Deathweaver
+					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
 					["coord"] = { 46.9, 63.8, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
 				}),
 				q(27154, {	-- Bagging Bisp
-					["qg"] = 45147,	-- Daria L'Rayne
+					["provider"] = { "n", 45147 },	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, 22 },
 					["sourceQuest"] = 27153,	-- The Good People of Hearthglen
 				}),
 				q(27202, {	-- Brother Against Brother
-					["qg"] = 45165,	-- Thurman Grant
+					["provider"] = { "n", 45165 },	-- Thurman Grant
 					["coord"] = { 39.8, 69.7, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27205,	-- The Depravity of the Forsaken
@@ -168,7 +168,7 @@ _.Zones =
 					},
 				}),
 				q(27163, {	-- Brute Strength (A)
-					["qg"] = 44453,	-- Thassarian
+					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 41.0, 70.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -177,7 +177,7 @@ _.Zones =
 					},
 				}),
 				q(27117, {	-- Brute Strength (H)
-					["qg"] = 44452,	-- Koltira Deathweaver
+					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
 					["coord"] = { 47.7, 65.1, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -186,7 +186,7 @@ _.Zones =
 					},
 				}),
 				q(27174, {	-- Combat Training (A)
-					["qg"] = 45165,	-- Thurman Grant
+					["provider"] = { "n", 45165 },	-- Thurman Grant
 					["coord"] = { 53.8, 64.6, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27173,	-- This Is Our Army
@@ -199,7 +199,7 @@ _.Zones =
 					},
 				}),
 				q(26938, {	-- Combat Training (H)
-					["qg"] = 44466,	-- Lindsay Ravensun
+					["provider"] = { "n", 44466 },	-- Lindsay Ravensun
 					["coord"] = { 40.6, 52.0, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26937,	-- When Death is Not Enough
@@ -212,7 +212,7 @@ _.Zones =
 					},
 				}),
 				q(5408,  {	-- Corruptor's Scourgestones
-					["qg"] = 11039,		-- Duke Nicholas Zverenhoff
+					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
@@ -220,17 +220,17 @@ _.Zones =
 					},
 				}),
 				q(27054, {	-- Desperate Acts
-					["qg"] = 44454,	-- Field Agent Kaartish
+					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
 					["sourceQuest"] = 27057,	-- Return to the Stead
 				}),
 				q(27157, {	-- Drudges... <Sigh>
-					["qg"] = 45157,	-- Lieutenant Myner
+					["provider"] = { "n", 45157 },	-- Lieutenant Myner
 					["coord"] = { 43.2, 15.9, 22 },
 					["sourceQuest"] = 27156,	-- It's About Time!
 				}),
 				q(27053, {	-- Gahrron's Withering Cauldron
-					["qg"] = 44454,	-- Field Agent Kaartish
+					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
 					["sourceQuests"] = {
 						27002,	-- An Audience with the Highlord
@@ -253,18 +253,18 @@ _.Zones =
 					},
 				}),
 				q(27166, {	-- Go Fletch!
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
 					["coord"] = { 42.6, 84.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42774, {	-- Hope Prevails
 					["lvl"] = 98,
-					["qg"] = 108776,	-- Lord Maxwell Tyrosus
+					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
 				}),
 				q(26956, {	-- I Ain't Sayin' You a Gourd-Digger...
-					["qg"] = 44457,	-- Selyria Groenveld
+					["provider"] = { "n", 44457 },	-- Selyria Groenveld
 					["coord"] = { 48.5, 54.9, 22 },
 				}),
 				q(5944,  {	-- In Dreams
@@ -278,7 +278,7 @@ _.Zones =
 					},
 				}),
 				q(5407,  {	-- Invader's Scourgestones [A]
-					["qg"] = 10840,		-- Argent Officer Pureheart
+					["provider"] = { "n", 10840 },		-- Argent Officer Pureheart
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 42.96, 83.55, 22 },
 					["races"] = ALLIANCE_ONLY,
@@ -288,7 +288,11 @@ _.Zones =
 				}),
 				q(27683, {	-- Into the Woods
 					["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
-					["qgs"] = { 10840, 44462, 44456 } ,	-- Argent Office Pureheart, Jearl Donald, Adrine Towhide
+					["providers"] = {
+						{ "n", 10840 },	-- Argent Office Pureheart
+						{ "n", 44462 },	-- Jearl Donald
+						{ "n", 44456 },	-- Adrine Towhide
+					},
 					["coords"] = {
 						{ 42.9, 83.5, 22 },	-- Argent Officer Pureheart (A)
 						{ 48.8, 54.7, 22 },	-- Adrine Towhide
@@ -296,22 +300,22 @@ _.Zones =
 					},
 				}),
 				q(27156, {	-- It's About Time!
-					["qg"] = 45157,	-- Lieutenant Myner
+					["provider"] = { "n", 45157 },	-- Lieutenant Myner
 					["coord"] = { 43.2, 15.9, 22 },
 				}),
 				q(42771, {	-- Keeping the Peace
-					["qg"] = 108778,	-- Mehlar Dawnblade
+					["provider"] = { "n", 108778 },	-- Mehlar Dawnblade
 					["lvl"] = 98,
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
 				}),
 				q(27000, {	-- Learning the Ropes
-					["qg"] = 11616,	-- Nathaniel Dumah
+					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
 					["coord"] = { 48.1, 32.3, 22 },
 					["sourceQuest"] = 26935,	-- Northridge Lumber Mill
 				}),
 				q(27087, {	-- Lindsay Ravensun, Revealed
-					["qg"] = 44452,	-- Koltira Deathweaver
+					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
 					["coord"] = { 46.9, 63.8, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -328,7 +332,7 @@ _.Zones =
 					},
 				}),
 				q(27017, {	-- Memories from a Lost Past
-					["qg"] = 44458,	-- Del Gahrron
+					["provider"] = { "n", 44458 },	-- Del Gahrron
 					["coord"] = { 50.6, 52.5, 22 },
 					["sourceQuest"] = 26957,	-- The Long Trip Home
 					["g"] = {
@@ -341,7 +345,7 @@ _.Zones =
 					},
 				}),
 				q(5408,  {	-- Minion's Scourgestones [A]
-					["qg"] = 10840,		-- Argent Officer Pureheart
+					["provider"] = { "n", 10840 },		-- Argent Officer Pureheart
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 43.0, 84.0, 22 },
 					["races"] = ALLIANCE_ONLY,
@@ -359,13 +363,13 @@ _.Zones =
 					},
 				}),
 				q(26935, {	-- Northridge Lumber Mill
-					["qg"] = 44454,	-- Field Agent Kaartish
+					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
 					["sourceQuest"] = 26999,	-- A New Era for the Plaguelands
 					["isBreadcrumb"] = true,	-- for "Learning the Ropes"
 				}),
 				q(27011, {	-- Redpine Thievery
-					["qg"] = 44472,	-- Kelly Dumah
+					["provider"] = { "n", 44472 },	-- Kelly Dumah
 					["coord"] = { 48.4, 31.9, 22 },
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
 				}),
@@ -375,13 +379,13 @@ _.Zones =
 					["sourceQuest"] = 27053,	-- Gahrron's Withering Cauldron
 				}),
 				q(42772, {	-- Sacred Ground
-					["qg"] = 108777,	-- High Priest Thel'danis
+					["provider"] = { "n", 108777 },	-- High Priest Thel'danis
 					["lvl"] = 98,
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
 				}),
 				q(27162, {	-- Scholomancer (A)
-					["qg"] = 44453,	-- Thassarian
+					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 41.0, 70.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -398,7 +402,7 @@ _.Zones =
 					},
 				}),
 				q(26924, {	-- Scholomancer (H)
-					["qg"] = 44452,	-- Koltira Deathweaver
+					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
 					["coord"] = { 47.7, 65.1, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -415,7 +419,7 @@ _.Zones =
 					},
 				}),
 				q(26921, {	-- Scourge First... Alliance Later
-					["qg"] = 44452,	-- Koltira Deathweaver
+					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
 					["coord"] = { 47.7, 65.2, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -426,7 +430,7 @@ _.Zones =
 					},
 				}),
 				q(27159, {	-- Scourge First... Horde Later
-					["qg"] = 44453,	-- Thassarian
+					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 41.0, 70.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -437,13 +441,16 @@ _.Zones =
 					},
 				}),
 				q(42770, {	-- Seeking Guidance
-					["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (same QG, different IDs)
+					["providers"] = {
+						{ "n", 90259 },	-- Lord Maxwell Tyrosus
+						{ "n", 90369 },	-- Lord Maxwell Tyrosus
+					},
 					["lvl"] = 98,
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
 				}),
 				q(27055, {	-- Students of Krastinov
-					["qg"] = 44454,	-- Field Agent Kaartish
+					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
 					["sourceQuest"] = 27054,	-- Desperate Acts
 					["g"] = {
@@ -454,7 +461,7 @@ _.Zones =
 					},
 				}),
 				q(27198, {	-- Supporting the Troops (A)
-					["qg"] = 44467,	-- Lang Loosegrip
+					["provider"] = { "n", 44467 },	-- Lang Loosegrip
 					["coord"] = { 40.0, 69.1, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27197,	-- The Battle Resumes!
@@ -468,7 +475,7 @@ _.Zones =
 					},
 				}),
 				q(27085, {	-- Supporting the Troops (H)
-					["qg"] = 44462,	-- Jearl Donald
+					["provider"] = { "n", 44462 },	-- Jearl Donald
 					["coord"] = { 46.8, 63.4, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
@@ -482,36 +489,36 @@ _.Zones =
 					},
 				}),
 				q(27151, {	-- Taelan Fordring's Legacy
-					["qg"] = 45147,	-- Daria L'Rayne
+					["provider"] = { "n", 45147 },	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, 22 },
 					["sourceQuest"] = 27002,	-- An Audience With the Highlord
 				}),
 				q(27170, {	-- The Abandoned Crypt
-					["qg"] = 1854,	-- High Priest Thel'danis
+					["provider"] = { "n", 1854 },	-- High Priest Thel'danis
 					["coord"] = { 52.1, 83.5, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27169,	-- Uther's Blessing
 				}),
 				q(27158, {	-- The Battle for Andorhal
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
 					["coord"] = { 42.6, 84.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
 				}),
 				q(27197, {	-- The Battle Resumes! (A)
-					["qg"] = 45012,	-- Durnt Brightfalcon
+					["provider"] = { "n", 45012 },	-- Durnt Brightfalcon
 					["coord"] = { 50.4, 52.5, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27174,	-- Combat Training
 				}),
 				q(27083, {	-- The Battle Resumes! (H)
-					["qg"] = 45013,	-- Damion Steel
+					["provider"] = { "n", 45013 },	-- Damion Steel
 					["coord"] = { 49.2, 53.1, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26938,	-- Combat Training
 				}),
 				q(27205, {	-- The Depravity of the Forsaken
-					["qg"] = 44453,	-- Thassarian
+					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 39.9, 69.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -520,23 +527,23 @@ _.Zones =
 					},
 				}),
 				q(27161, {	-- The Endless Flow (A)
-					["qg"] = 44467,	-- Lang Loosegrip
+					["provider"] = { "n", 44467 },	-- Lang Loosegrip
 					["coord"] = { 41.2, 70.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26922, {	-- The Endless Flow (H)
-					["qg"] = 44462,	-- Jearl Donald
+					["provider"] = { "n", 44462 },	-- Jearl Donald
 					["coord"] = { 47.3, 64.4, 22 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27084, {	-- The Farmers' Militia
-					["qg"] = 44452,	-- Koltira Deathweaver
+					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
 					["coord"] = { 46.9, 63.8, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
 				}),
 				q(27153, {	-- The Good People of Hearthglen
-					["qg"] = 45147,	-- Daria L'Rayne
+					["provider"] = { "n", 45147 },	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, 22 },
 					["sourceQuest"] = 27152,	-- Unusual Behavior... Even For Gnolls
 				}),
@@ -555,31 +562,31 @@ _.Zones =
 					},
 				}),
 				q(42773, {	-- The Light Reveals
-					["qg"] = 108776,	-- Lord Maxwell Tyrosus
+					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 					["lvl"] = 98,
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
 				}),
 				q(26957, {	-- The Long Trip Home
-					["qg"] = 44905,	-- Del Gahrron
+					["provider"] = { "n", 44905 },	-- Del Gahrron
 					["coord"] = { 42.6, 14.9, 22 },
 				}),
 				q(27233, {	-- The Menders' Stead
-					["qg"] = 45165,	-- Thurman Grant
+					["provider"] = { "n", 45165 },	-- Thurman Grant
 					["coord"] = { 53.8, 64.6, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27174,	-- Combat Training
 					["isBreadcrumb"] = true,
 				}),
 				q(27175, {	-- The Menders' Stead
-					["qg"] = 10840,	-- Argent Officer Pureheart
+					["provider"] = { "n", 10840 },	-- Argent Officer Pureheart
 					["coord"] = { 42.9, 83.5, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27174,	-- Combat Training
 					["isBreadcrumb"] = true,
 				}),
 				q(27144, {	-- The Reckoning
-					["qg"] = 44451,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44451 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 49.0, 63.7, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27090,	-- Andorhal, Once and For All
@@ -593,19 +600,19 @@ _.Zones =
 					},
 				}),
 				q(27172, {	-- The Writhing Haunt
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
 					["coord"] = { 42.6, 84.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27171,	-- Ambushed!
 				}),
 				q(27173, {	-- This Is Our Army
-					["qg"] = 45165,	-- Thurman Grant
+					["provider"] = { "n", 45165 },	-- Thurman Grant
 					["coord"] = { 53.8, 64.6, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27172,	-- The Writhing Haunt
 				}),
 				q(27001, {	-- This Means WAR (Wild Arachnid Roundup)
-					["qg"] = 11616,	-- Nathaniel Dumah
+					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
 					["coord"] = { 48.1, 32.3, 22 },
 					["sourceQuest"] = 27000,	-- Learning the Ropes
 					["g"] = {
@@ -615,7 +622,7 @@ _.Zones =
 					},
 				}),
 				q(27168, {	-- Those That Couldn't Let Go
-					["qg"] = 11053,	-- High Priestess MacDonnell
+					["provider"] = { "n", 11053 },	-- High Priestess MacDonnell
 					["coord"] = { 43.4, 83.7, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -625,11 +632,11 @@ _.Zones =
 					},
 				}),
 				q(27013, {	-- Too Close for Comfort
-					["qg"] = 44472,	-- Kelly Dumah
+					["provider"] = { "n", 44472 },	-- Kelly Dumah
 					["coord"] = { 48.4, 31.9, 22 },
 				}),
 				q(27155, {	-- Turning Yourself In
-					["qg"] = 45147,	-- Daria L'Rayne
+					["provider"] = { "n", 45147 },	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, 22 },
 					["sourceQuest"] = 27154,	-- Bagging Bisp
 					["g"] = {
@@ -645,12 +652,12 @@ _.Zones =
 					},
 				}),
 				q(27152, {	-- Unusual Behavior... Even For Gnolls
-					["qg"] = 45147,	-- Daria L'Rayne
+					["provider"] = { "n", 45147 },	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, 22 },
 					["sourceQuest"] = 27151,	-- Taelan Fordring's Legacy
 				}),
 				q(27169, {	-- Uther's Blessing
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
 					["coord"] = { 42.6, 84.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -660,13 +667,13 @@ _.Zones =
 					},
 				}),
 				q(27201, {	-- Val'kyr Incursion
-					["qg"] = 44453,	-- Thassarian
+					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 39.9, 69.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27205,	-- The Depravity of the Forsaken
 				}),
 				q(27165, {	-- Victory, For Now (A)
-					["qg"] = 44453,	-- Thassarian
+					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 41.0, 70.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -676,7 +683,7 @@ _.Zones =
 					},
 				}),
 				q(26926, {	-- Victory, For Now (H)
-					["qg"] = 44452,	-- Koltira Deathweaver
+					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
 					["coord"] = { 47.7, 65.1, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -686,7 +693,7 @@ _.Zones =
 					},
 				}),
 				q(27160, {	-- War Machines (A)
-					["qg"] = 44471,	-- Lurid
+					["provider"] = { "n", 44471 },	-- Lurid
 					["coord"] = { 41.0, 70.4, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -699,7 +706,7 @@ _.Zones =
 					},
 				}),
 				q(26923, {	-- War Machines (H)
-					["qg"] = 44466,	-- Lindsay Ravensun
+					["provider"] = { "n", 44466 },	-- Lindsay Ravensun
 					["coord"] = { 47.5, 65.5, 22 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -712,17 +719,17 @@ _.Zones =
 					},
 				}),
 				q(26937, {	-- When Death is Not Enough
-					["qg"] = 44466,	-- Lindsay Ravensun
+					["provider"] = { "n", 44466 },	-- Lindsay Ravensun
 					["coord"] = { 40.6, 52.0, 22 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26979,	-- Strange New Faces
 				}),
 				q(26953, {	-- Zen'Kiki, the Druid
-					["qg"] = 44456,	-- Adrine Towhide
+					["provider"] = { "n", 44456 },	-- Adrine Towhide
 					["coord"] = { 48.8, 54.7, 22 },
 				}),
 				q(26955, {	-- Zen'Kiki and the Cultists
-					["qg"] = 44456,	-- Adrine Towhide
+					["provider"] = { "n", 44456 },	-- Adrine Towhide
 					["coord"] = { 48.8, 54.7, 22 },
 					["sourceQuests"] = {
 						26954,	-- A Different Approach

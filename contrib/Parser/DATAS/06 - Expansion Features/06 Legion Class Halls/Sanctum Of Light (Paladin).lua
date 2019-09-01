@@ -93,14 +93,14 @@ _.ExpansionFeatures =
 						}),
 						q(42005, {	--  The End of the Saga [Moved from Howling Fjord]
 							["lvl"] = 98,
-							["qg"] = 105724,	-- Orik Trueheart
+							["provider"] = { "n", 105724 },	-- Orik Trueheart
 						}),
 						q(46071, {	-- The Hammer of Dalaran
-							["qg"] = 90250,	-- Lord Grayson Shadowbreaker
+							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 							["sourceQuests"] = { 46070 },	-- Preparations Underway
 						}),
 						q(43687, {	-- Walking in the Shadows (Artifact Appearance)
-							["qg"] = 90259,	-- Lord Maxwell Tyrosus
+							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["description"] = "You must have the Shard of Darkness in your inventory in order for him to give you this quest. Once you have it, go to the Legion version of Acherus: The Ebon Hold using the Dalaran flight master.",
 							["sourceQuests"] = { 43685 },	-- Phylactery Used
 							["groups"] = {
@@ -117,61 +117,61 @@ _.ExpansionFeatures =
 						}),
 						--Followers  Sort to other quests later.
 						q(43492, {	-- Champion: Aponi Brightmane
-							["qg"] = 90251,		-- Aponi Brightmane <Sunwalker Chieftain>
+							["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
 							["groups"] = {
 								follower(757),	-- Aponi Brightmane
 							},
 						}),
 						q(43785, {	-- Champion: Arator the Redeemer
-							["qg"] = 99997,		-- Arator the Redeemer
+							["provider"] = { "n", 99997 },		-- Arator the Redeemer
 							["groups"] = {
 								follower(758),	-- Arator the Redeemer
 							},
 						}),
 						q(43933, {	-- Champion: Delas Moonfang
-							["qg"] = 113299,	-- Delas Moonfang <Priestess of the Moon>
+							["provider"] = { "n", 113299 },	-- Delas Moonfang <Priestess of the Moon>
 							["groups"] = {
 								follower(756),	-- Delas Moonfang
 							},
 						}),
 						q(42852, {	-- Champion: Justicar Julia Celeste
-							["qg"] = 99995,		-- Justicar Julia Celeste
+							["provider"] = { "n", 99995 },		-- Justicar Julia Celeste
 							["groups"] = {
 								follower(755),	-- Justicar Julia Celeste
 							},
 						}),
 						q(42881, {	-- Champion: Lady Liadrin
-							["qg"] = 92346,		-- Lady Liadrin <Blood Knight Matriarch>
+							["provider"] = { "n", 92346 },		-- Lady Liadrin <Blood Knight Matriarch>
 							["groups"] = {
 								follower(478),	-- Lady Liadrin
 							},
 						}),
 						q(39696, {	-- Rise, Champions
-							["qg"] = 90259,		-- Lord Maxwell Tyrosus
+							["provider"] = { "n", 90259 },		-- Lord Maxwell Tyrosus
 							["groups"] = {
 								follower(480),	-- Lord Maxwell Tyrosus
 							},
 						}),
 						q(43701, {	-- Champion: Lothraxion
-							["qg"] = 109105,	-- Lothraxion <High Commander>
+							["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
 							["groups"] = {
 								follower(759),	-- Lothraxion
 							},
 						}),
 						q(45813, {	-- Where Art Thou, My Sweet
-							["qg"] = 118088,	-- Maximillian of Northshire <Knight-Errant>
+							["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
 							["groups"] = {
 								follower(1001),	-- Maximillian of Northshire
 							},
 						}),
 						q(46045, {	-- Champion: Nerus Moonfang
-							["qg"] = 119545,	-- Nerus Moonfang
+							["provider"] = { "n", 119545 },	-- Nerus Moonfang
 							["groups"] = {
 								follower(1000),	-- Nerus Moonfang
 							},
 						}),
 						q(42851, {	-- Champion: Vindicator Boros
-							["qg"] = 94175,		-- Vindicator Boros <Triumvirate of the Hand>
+							["provider"] = { "n", 94175 },		-- Vindicator Boros <Triumvirate of the Hand>
 							["groups"] = {
 								follower(479),	-- Vindicator Boros
 							},

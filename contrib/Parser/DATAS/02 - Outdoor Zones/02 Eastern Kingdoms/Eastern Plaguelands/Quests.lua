@@ -7,16 +7,16 @@ _.Zones =
 		m(23, {	-- Eastern Plaguelands
 			n(-17, {	-- Quests
 				q(27463, {	-- A Boyhood Dream
-					["qg"] = 45431,	-- Gidwin Goldbraids
+					["provider"] = { "n", 45431 },	-- Gidwin Goldbraids
 					["coord"] = { 74.3, 53.3, 23 },
 					["sourceQuests"] = { 27455 },	-- Boys Will Be Boys
 				}),
 				q(27422, {	-- A City Under Siege
-					["qg"] = 45482,	-- Argent Officer Irizarry
+					["provider"] = { "n", 45482 },	-- Argent Officer Irizarry
 					["coord"] = { 51.6, 21.4, 23 },
 				}),
 				q(27533, {	-- A Fate Worse Than Butchery
-					["qg"] = 12384,	-- Augustus the Touched
+					["provider"] = { "n", 12384 },	-- Augustus the Touched
 					["coord"] = { 11.3, 28.5, 23 },
 					["sourceQuests"] = { 27535 },	-- Just a Little Touched
 					["g"] = {
@@ -27,7 +27,7 @@ _.Zones =
 					},
 				}),
 				q(27372, {	-- A Gift For Fiona
-					["qg"] = 45429,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45429 },	-- Tarenar Sunstrike
 					["coord"] = { 8.9, 66.5, 23 },
 					["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 					["g"] = {
@@ -48,18 +48,18 @@ _.Zones =
 					},
 				}),
 				q(27386, {	-- A Strange Historian
-					["qg"] = 11063,	-- Carlin Redpath
+					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["coord"] = { 35.5, 68.8, 23 },
 					["sourceQuests"] = { 27385 },	-- "Little Pamela"
 				}),
 				q(28756, {	-- Aberrations of Bone
-					["qg"] = 49856,	-- Lord Raymond George
+					["provider"] = { "n", 49856 },	-- Lord Raymond George
 					["coord"] = { 76.1, 50.9, 23 },
 					["repeatable"] = true,
 					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
 				}),
 				q(27539, {	-- Add'em to the Pile
-					["qg"] = 45831,	-- Crusader Kevin Frost
+					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, 23 },
 					["g"] = {
 						i(63014),	-- Cloak of Hoarding
@@ -69,7 +69,7 @@ _.Zones =
 					},
 				}),
 				q(27421, {	-- Amidst Death, Life
-					["qg"] = 16135,	-- Rayne
+					["provider"] = { "n", 16135 },	-- Rayne
 					["coord"] = { 30.2, 56.8, 23 },
 					["g"] = {
 						i(62965),	-- Ring of New Life
@@ -79,7 +79,7 @@ _.Zones =
 					},
 				}),
 				q(27457, {	-- An Opportune Alliance
-					["qg"] = 16134,	-- Rimblat Earthshatter
+					["provider"] = { "n", 16134 },	-- Rimblat Earthshatter
 					["coord"] = { 73.7, 51.8, 23 },
 					["sourceQuests"] = {
 						27465,	-- Argent Call: The Noxious Glade
@@ -87,20 +87,20 @@ _.Zones =
 					},
 				}),
 				q(28755, {	-- Annals of the Silver Hand
-					["qg"] = 49856,	-- Lord Raymond George
+					["provider"] = { "n", 49856 },	-- Lord Raymond George
 					["coord"] = { 76.1, 50.9, 23 },
 					["repeatable"] = true,
 					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
 				}),
 				q(8948,  {	-- Anthion's Old Friend
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
 				q(8959,  {	-- Anthion's Parting Words (Warrior)[Alliance]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = ALLIANCE_ONLY,
@@ -114,7 +114,7 @@ _.Zones =
 					},
 				}),
 				q(8954,  {	-- Anthion's Parting Words (Paladin)[Alliance]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = ALLIANCE_ONLY,
@@ -128,7 +128,7 @@ _.Zones =
 					},
 				}),
 				q(8952,  {	-- Anthion's Parting Words (Hunter)[Alliance]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = ALLIANCE_ONLY,
@@ -142,7 +142,7 @@ _.Zones =
 					},
 				}),
 				q(8956,  {	-- Anthion's Parting Words (Rogue)[Alliance]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = ALLIANCE_ONLY,
@@ -156,7 +156,7 @@ _.Zones =
 					},
 				}),
 				q(8955,  {	-- Anthion's Parting Words (Priest)[Alliance]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = ALLIANCE_ONLY,
@@ -170,7 +170,7 @@ _.Zones =
 					},
 				}),
 				q(10496, {	-- Anthion's Parting Words (Shaman)[Alliance]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = ALLIANCE_ONLY,
@@ -184,7 +184,7 @@ _.Zones =
 					},
 				}),
 				q(8953,  {	-- Anthion's Parting Words (Mage)[Alliance]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = ALLIANCE_ONLY,
@@ -198,7 +198,7 @@ _.Zones =
 					},
 				}),
 				q(8958,  {	-- Anthion's Parting Words (Warlock)[Alliance]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = ALLIANCE_ONLY,
@@ -212,7 +212,7 @@ _.Zones =
 					},
 				}),
 				q(8951,  {	-- Anthion's Parting Words (Druid)[Alliance]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = ALLIANCE_ONLY,
@@ -226,7 +226,7 @@ _.Zones =
 					},
 				}),
 				q(9022,  {	-- Anthion's Parting Words (Warrior)[Horde]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
@@ -240,7 +240,7 @@ _.Zones =
 					},
 				}),
 				q(10497, {	-- Anthion's Parting Words (Paladin)[Horde]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
@@ -254,7 +254,7 @@ _.Zones =
 					},
 				}),
 				q(9017,  {	-- Anthion's Parting Words (Hunter)[Horde]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
@@ -268,7 +268,7 @@ _.Zones =
 					},
 				}),
 				q(9020,  {	-- Anthion's Parting Words (Rogue)[Horde]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
@@ -282,7 +282,7 @@ _.Zones =
 					},
 				}),
 				q(9019,  {	-- Anthion's Parting Words (Priest)[Horde]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
@@ -296,7 +296,7 @@ _.Zones =
 					},
 				}),
 				q(8957,  {	-- Anthion's Parting Words (Shaman)[Horde]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
@@ -310,7 +310,7 @@ _.Zones =
 					},
 				}),
 				q(9018,  {	-- Anthion's Parting Words (Mage)[Horde]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
@@ -324,7 +324,7 @@ _.Zones =
 					},
 				}),
 				q(9021,  {	-- Anthion's Parting Words (Warlock)[Horde]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
@@ -338,7 +338,7 @@ _.Zones =
 					},
 				}),
 				q(9016,  {	-- Anthion's Parting Words (Druid)[Horde]
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
@@ -352,29 +352,29 @@ _.Zones =
 					},
 				}),
 				q(8947,  {	-- Anthion's Strange Request
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 8946,	-- Proof of Life
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
 				q(27466, {	-- Argent Call: Northdale
-					["qg"] = 45729,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 42.5, 91.2, 23 },
 					["sourceQuests"] = { 27465 },	-- Argent Call: The Noxious Glade
 				}),
 				q(27465, {	-- Argent Call: The Noxious Glade
-					["qg"] = 11034,	-- Lord Maxwell Tyrosus
+					["provider"] = { "n", 11034 },	-- Lord Maxwell Tyrosus
 					["coord"] = { 43.3, 87.2, 24 },
 					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
 				}),
 				q(27464, {	-- Argent Call: The Trial of the Crypt
-					["qg"] = 11034,	-- Lord Maxwell Tyrosus
+					["provider"] = { "n", 11034 },	-- Lord Maxwell Tyrosus
 					["coord"] = { 43.3, 87.2, 24 },
 					["sourceQuests"] = { 27463 },	-- A Boyhood Dream
 				}),
 				q(27618, {	-- Argent Upheaval
-					["qg"] = 16112,	-- Crusade Commander Korfax
+					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.1, 23 },
 					["sourceQuests"] = {
 						27614,	-- Scarlet Salvage
@@ -384,7 +384,7 @@ _.Zones =
 					},
 				}),
 				q(27560, {	-- Argus' Journal
-					["qg"] = 45400,	-- Fiona's Caravan
+					["provider"] = { "n", 45400 },	-- Fiona's Caravan
 					["repeatable"] = true,
 					["sourceQuest"] = 27381,	-- Traveling Companions
 					["coords"] = {
@@ -396,16 +396,16 @@ _.Zones =
 					},
 				}),
 				q(27534, {	-- Augustus' Receipt Book
-					["qg"] = 12384,	-- Augustus the Touched
+					["provider"] = { "n", 12384 },	-- Augustus the Touched
 					["coord"] = { 11.3, 28.5, 23 },
 				}),
 				q(27522, {	-- Beat it Out of Them
-					["qg"] = 45729,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 50.4, 20.1, 23 },
 					["sourceQuests"] = { 27489 },	-- Nobody to Blame but Myself
 				}),
 				q(27562, {	-- Beezil's Cog
-					["qg"] = 45400,	-- Fiona's Caravan
+					["provider"] = { "n", 45400 },	-- Fiona's Caravan
 					["repeatable"] = true,
 					["coords"] = {
 						{ 61.6, 42.6, 23 },
@@ -414,7 +414,7 @@ _.Zones =
 					},
 				}),
 				q(27617, {	-- Befouled No More
-					["qg"] = 16115,	-- Crusade Commander Eligor Dawnbringer
+					["provider"] = { "n", 16115 },	-- Crusade Commander Eligor Dawnbringer
 					["coord"] = { 76.7, 73.1, 23 },
 					["sourceQuests"] = {
 						27613,	-- The Assassin
@@ -422,17 +422,17 @@ _.Zones =
 					},
 				}),
 				q(27524, {	-- Blind Fury
-					["qg"] = 45417,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45417 },	-- Tarenar Sunstrike
 					["coord"] = { 50.5, 20.1, 23 },
 					["sourceQuests"] = { 27522 },	-- Beat it Out of Them
 				}),
 				q(27455, {	-- Boys Will Be Boys
-					["qg"] = 45417,	-- Fiona
+					["provider"] = { "n", 45417 },	-- Fiona
 					["coord"] = { 52.9, 53.0, 23 },
 					["sourceQuests"] = { 27448 }	-- The Trek Continues
 				}),
 				q(27467, {	-- Buried Blades
-					["qg"] = 16365,	-- Master Craftsman Omarion
+					["provider"] = { "n", 16365 },	-- Master Craftsman Omarion
 					["coord"] = { 41.5, 88.0, 23 },
 					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
 					["g"] = {
@@ -442,7 +442,7 @@ _.Zones =
 					},
 				}),
 				q(27453, {	-- Catalysm
-					["qg"] = 11035,	-- Betina Bigglezink
+					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 					["coord"] = { 53.2, 54.5, 23 },
 					["sourceQuests"] = {
 						27452,	-- Dark Garb
@@ -450,13 +450,13 @@ _.Zones =
 					},
 				}),
 				q(27544, {	-- Cenarion Tenacity
-					["qg"] = 45500,	-- Urk Gagbaz
+					["provider"] = { "n", 45500 },	-- Urk Gagbaz
 					["coord"] = { 35.0, 68.2, 23 },
 					["sourceQuests"] = { 27386 },	-- A Strange Historian
 					["isBreadcrumb"] = true,
 				}),
 				q(5408,  {	-- Corruptor's Scourgestones
-					["qg"] = 11039,		-- Duke Nicholas Zverenhoff
+					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
@@ -464,7 +464,7 @@ _.Zones =
 					},
 				}),
 				q(27531, {	-- Counter-Plague Research
-					["qg"] = 45828,	-- Argent Apotehcary Judkins
+					["provider"] = { "n", 45828 },	-- Argent Apotehcary Judkins
 					["coord"] = { 17.5, 27.8, 23 },
 					["sourceQuests"] = { 27532 },	-- The Plaguewood Tower
 					["g"] = {
@@ -475,11 +475,11 @@ _.Zones =
 					},
 				}),
 				q(27452, {	-- Dark Garb
-					["qg"] = 11035,	-- Betina Bigglezink
+					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 					["coord"] = { 53.2, 54.5, 23 },
 				}),
 				q(8945,  {	-- Dead Man's Plea
-					["qg"] = 16016,	-- Anthion Harmon
+					["provider"] = { "n", 16016 },	-- Anthion Harmon
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuests"] = {
 						8929,	-- In Search of Anthion [Alliance]
@@ -489,7 +489,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(27529, {	-- Defenders of Darrowshire
-					["qg"] = 45831,	-- Crusader Kevin Frost
+					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, 23 },
 				}),
 				q(6135,  {	-- Duskwing, Oh How I Hate Thee...
@@ -501,7 +501,7 @@ _.Zones =
 					},
 				}),
 				q(27523, {	-- Duskwing, Oh How I Hate Thee...
-					["qg"] = 45816,	-- Corpseburner Tim
+					["provider"] = { "n", 45816 },	-- Corpseburner Tim
 					["coord"] = { 48.0, 23.0, 23 },
 					["g"] = {
 						i(63001),	-- Duskwing Handwraps
@@ -559,7 +559,7 @@ _.Zones =
 					},
 				}),
 				q(27555, {	-- Fiona's Lucky Charm
-					["qg"] = 45400,	-- Fiona's Caravan
+					["provider"] = { "n", 45400 },	-- Fiona's Caravan
 					["repeatable"] = true,
 					["coords"] = {
 						{ 8.8, 66.6, 23 },
@@ -575,7 +575,7 @@ _.Zones =
 					},
 				}),
 				q(27450, {	-- Frederick's Fish Fancy
-					["qg"] = 45575,	-- Frederick Calston
+					["provider"] = { "n", 45575 },	-- Frederick Calston
 					["coord"] = { 53.7, 53.9, 23 },
 					["g"] = {
 						i(62974),	-- Infectis Scuttler Helm
@@ -584,7 +584,7 @@ _.Zones =
 					},
 				}),
 				q(27762, {	-- Fuselight, Ho!
-					["qg"] = 48704,	-- Gek Nozzlerocket
+					["provider"] = { "n", 48704 },	-- Gek Nozzlerocket
 					["coord"] = { 73.7, 53.0, 23 },
 					["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
 					["sourceQuests"] = {
@@ -593,7 +593,7 @@ _.Zones =
 					},
 				}),
 				q(27456, {	-- Gathering Some Grub(s)
-					["qg"] = 16134,	-- Rimblat Earthshatter
+					["provider"] = { "n", 16134 },	-- Rimblat Earthshatter
 					["coord"] = { 73.7, 51.8, 23 },
 					["g"] = {
 						i(62981),	-- Grubby Gun
@@ -603,7 +603,7 @@ _.Zones =
 					},
 				}),
 				q(27367, {	-- Gidwin Goldbraids
-					["qg"] = 45417,	-- Fiona
+					["provider"] = { "n", 45417 },	-- Fiona
 					["coord"] = { 9.0, 66.5, 23 },
 					["sourceQuests"] = {
 						27683,	-- Into the Woods
@@ -613,7 +613,7 @@ _.Zones =
 					},
 				}),
 				q(27526, {	-- Gidwin's Fate Revealed
-					["qg"] = 45729,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 27.6, 21.1, 23 },
 					["sourceQuests"] = {
 						27525,	-- Guardians of Stratholme
@@ -621,7 +621,7 @@ _.Zones =
 					},
 				}),
 				q(27556, {	-- Gidwin's Weapon Oil
-					["qg"] = 45400,	-- Fiona's Caravan
+					["provider"] = { "n", 45400 },	-- Fiona's Caravan
 					["repeatable"] = true,
 					["coords"] = {
 						{ 8.8, 66.6, 23 },
@@ -638,13 +638,13 @@ _.Zones =
 				}),
 				q(9237,  {	-- Glacial Cloak [Quest]
 					["u"] = 40,
-					["qg"] = 16376,	--
+					["provider"] = { "n", 16376 },	--
 					["g"] = {
 						un(8, i(22658)),	-- Glacial Cloak
 					},
 				}),
 				q(27369, {	-- Greasing the Wheel
-					["qg"] = 45428,	-- Gidwin Goldbraids
+					["provider"] = { "n", 45428 },	-- Gidwin Goldbraids
 					["coord"] = { 4.1, 36.0, 23 },
 					["sourceQuests"] = { 27368 },	-- Just Encased
 					["g"] = {
@@ -656,7 +656,7 @@ _.Zones =
 					},
 				}),
 				q(27525, {	-- Guardians of Stratholme
-					["qg"] = 45729,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 27.6, 21.1, 23 },
 					["sourceQuests"] = { 27524 },	-- Blind Fury
 				}),
@@ -668,7 +668,7 @@ _.Zones =
 					},
 				}),
 				q(27388, {	-- Heroes of Darrowshire
-					["qg"] = 10667,	-- Chromie
+					["provider"] = { "n", 10667 },	-- Chromie
 					["coord"] = { 35.2, 68.1, 23 },
 					["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 				}),
@@ -681,7 +681,7 @@ _.Zones =
 					},
 				}),
 				q(27391, {	-- Hidden Treasures
-					["qg"] = 10926,	-- Pamela Redpath
+					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["coord"] = { 32.4, 83.5, 23 },
 					["sourceQuests"] = { 27390 },	-- The Battle of Darrowshire
 					["g"] = {
@@ -693,7 +693,7 @@ _.Zones =
 					},
 				}),
 				q(27449, {	-- Honor and Strength
-					["qg"] = 45574,	-- Vex'tul
+					["provider"] = { "n", 45574 },	-- Vex'tul
 					["coord"] = { 52.7, 51.3, 23 },
 					["sourceQuests"] = { 27432 },	-- Zaeldarr the Outcast
 				}),
@@ -706,7 +706,7 @@ _.Zones =
 					},
 				}),
 				q(27392, {	-- I'm Not Supposed to Tell You This
-					["qg"] = 10926,	-- Pamela Redpath
+					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["coord"] = { 32.4, 83.6, 23 },
 					["sourceQuests"] = { 27383 },	-- "Little Pamela"
 					["g"] = {
@@ -716,12 +716,12 @@ _.Zones =
 					},
 				}),
 				q(27488, {	-- Impatience
-					["qg"] = 45729,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 61.5, 43.2, 23 },
 					["sourceQuests"] = { 27487 },	-- Ix'lar the Underlord
 				}),
 				q(27482, {	-- Into the Flames
-					["qg"] = 45574,	-- Vex'tul
+					["provider"] = { "n", 45574 },	-- Vex'tul
 					["coord"] = { 60.6, 43.4, 23 },
 					["sourceQuests"] = { 27481 },	-- Out of the Ziggurat
 					["g"] = {
@@ -729,7 +729,7 @@ _.Zones =
 					},
 				}),
 				q(5509,  {	-- Invader's Scourgestones
-					["qg"] = 11039,		-- Duke Nicholas Zverenhoff
+					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
@@ -737,7 +737,7 @@ _.Zones =
 					},
 				}),
 				q(27487, {	-- Ix'lar the Underlord
-					["qg"] = 45729,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 61.5, 43.2, 23 },
 					["sourceQuests"] = { 27466 },	-- Argent Call: Northdale
 					["g"] = {
@@ -748,7 +748,7 @@ _.Zones =
 					},
 				}),
 				q(27527, {	-- Journey's End
-					["qg"] = 45730,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45730 },	-- Tarenar Sunstrike
 					["coord"] = { 28.4, 25.8, 23 },
 					["sourceQuests"] = { 27526 },	-- Gidwin's Fate Revealed
 					["g"] = {
@@ -760,7 +760,7 @@ _.Zones =
 					},
 				}),
 				q(27454, {	-- Just a Drop in the Bucket
-					["qg"] = 11035,	-- Betina Bigglezink
+					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 					["coord"] = { 53.2, 54.5, 23 },
 					["sourceQuests"] = { 27453 },	-- Catalysm
 					["g"] = {
@@ -772,17 +772,17 @@ _.Zones =
 					},
 				}),
 				q(27535, {	-- Just a Little Touched
-					["qg"] = 45828,	-- Argent Apotehcary Judkins
+					["provider"] = { "n", 45828 },	-- Argent Apotehcary Judkins
 					["coord"] = { 17.5, 27.8, 23 },
 					["isBreadcrumb"] = true,
 				}),
 				q(27368, {	-- Just Encased
-					["qg"] = 45428,	-- Gidwin Goldbraids
+					["provider"] = { "n", 45428 },	-- Gidwin Goldbraids
 					["coord"] = { 4.1, 36.0, 23 },
 					["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
 				}),
 				q(27620, {	-- Like Rats
-					["qg"] = 16116,	-- Archmage Angela Dosantos
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["coord"] = { 76.0, 75.3, 23 },
 					["sourceQuests"] = {
 						27618,	-- Argent Upheaval
@@ -795,16 +795,16 @@ _.Zones =
 					},
 				}),
 				q(27383, {	-- Little Pamela
-					["qg"] = 11063,	-- Carlin Redpath
+					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["coord"] = { 35.5, 68.8, 23 },
 				}),
 				q(27389, {	-- Marauders of Darrowshire
-					["qg"] = 10667,	-- Chromie
+					["provider"] = { "n", 10667 },	-- Chromie
 					["coord"] = { 35.2, 68.1, 23 },
 					["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 				}),
 				q(5510,  {	-- Minion's Scourgestones
-					["qg"] = 11039,		-- Duke Nicholas Zverenhoff
+					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
@@ -812,12 +812,12 @@ _.Zones =
 					},
 				}),
 				q(27489, {	-- Nobody to Blame but Myself
-					["qg"] = 45729,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 61.5, 43.2, 23 },
 					["sourceQuests"] = { 27488 },	-- Impatience
 				}),
 				q(27373, {	-- Onward, to Light's Hope Chapel
-					["qg"] = 45417,	-- Fiona
+					["provider"] = { "n", 45417 },	-- Fiona
 					["coord"] = { 9.0, 66.5, 23 },
 					["sourceQuests"] = {
 						27372,	-- A Gift For Fiona
@@ -825,7 +825,7 @@ _.Zones =
 					},
 				}),
 				q(27481, {	-- Out of the Ziggurat
-					["qg"] = 45574,	-- Vex'tul
+					["provider"] = { "n", 45574 },	-- Vex'tul
 					["coord"] = { 60.6, 43.4, 23 },
 					["sourceQuests"] = {
 						27465,	-- Argent Call: The Noxious Glade
@@ -833,12 +833,12 @@ _.Zones =
 					},
 				}),
 				q(27384, {	-- Pamela's Doll
-					["qg"] = 10926,	-- Pamela Redpath
+					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["coord"] = { 32.4, 83.6, 23 },
 					["sourceQuests"] = { 27383 },	-- "Little Pamela"
 				}),
 				q(27558, {	-- Pamela's Doll
-					["qg"] = 45400,	-- Fiona's Caravan
+					["provider"] = { "n", 45400 },	-- Fiona's Caravan
 					["repeatable"] = true,
 					["sourceQuest"] = 27390,	-- The Battle of Darrowshire
 					["coords"] = {
@@ -850,7 +850,7 @@ _.Zones =
 					},
 				}),
 				q(27420, {	-- Postponing the Inevitable
-					["qg"] = 16135,	-- Rayne
+					["provider"] = { "n", 16135 },	-- Rayne
 					["coord"] = { 30.2, 56.8, 23 },
 					["sourceQuests"] = { 27544 },	-- Cenarion Tenacity
 				}),
@@ -863,17 +863,17 @@ _.Zones =
 					},
 				}),
 				q(27479, {	-- Righteous Indignation
-					["qg"] = 45736,	-- Deacon Andaal
+					["provider"] = { "n", 45736 },	-- Deacon Andaal
 					["coord"] = { 61.0, 44.2, 23 },
 				}),
 				q(27561, {	-- Rimblat's Stone
-					["qg"] = 45400,	-- Fiona's Caravan
+					["provider"] = { "n", 45400 },	-- Fiona's Caravan
 					["coord"] = { 73.6, 51.9, 23 },
 					["repeatable"] = true,
 					["sourceQuest"] = 27457,	-- An Opportune Alliance
 				}),
 				q(27382, {	-- Rough Roads
-					["qg"] = 45451,	-- Argus Highbeacon
+					["provider"] = { "n", 45451 },	-- Argus Highbeacon
 					["coord"] = { 35.5, 68.8, 23 },
 					["sourceQuests"] = { 27373 },	-- Onward, to Light's Hope Chapel
 					["g"] = {
@@ -884,20 +884,20 @@ _.Zones =
 					},
 				}),
 				q(27614, {	-- Scarlet Salvage
-					["qg"] = 16112,	-- Crusade Commander Korfax
+					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.1, 23 },
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 				}),
 				q(27528, {	-- Scourged Mass
-					["qg"] = 45831,	-- Crusader Kevin Frost
+					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, 23 },
 				}),
 				q(27458, {	-- Smokey and the Bandage
-					["qg"] = 11033,	-- Smokey LaRue
+					["provider"] = { "n", 11033 },	-- Smokey LaRue
 					["coord"] = { 74.9, 53.5, 23 },
 				}),
 				q(27460, {	-- Soft Landing
-					["qg"] = 16116,	-- Archmage Angela Dosantos
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["coord"] = { 72.6, 74.8, 23 },
 					["sourceQuests"] = { 27459 }, -- The Brotherhood of Light
 				}),
@@ -946,11 +946,11 @@ _.Zones =
 					},
 				}),
 				q(27370, {	-- Tarenar Sunstrike
-					["qg"] = 45417,	-- Fiona
+					["provider"] = { "n", 45417 },	-- Fiona
 					["coord"] = { 9.0, 66.5, 23 },
 				}),
 				q(27557, {	-- Tarenar's Talisman
-					["qg"] = 45400,	-- Fiona's Caravan
+					["provider"] = { "n", 45400 },	-- Fiona's Caravan
 					["repeatable"] = true,
 					["coords"] = {
 						{ 8.8, 66.6, 23 },
@@ -981,7 +981,7 @@ _.Zones =
 					},
 				}),
 				q(27613, {	-- The Assassin
-					["qg"] = 16115,	-- Crusade Commander Eligor Dawnbringer
+					["provider"] = { "n", 16115 },	-- Crusade Commander Eligor Dawnbringer
 					["coord"] = { 76.7, 73.1, 23 },
 					["sourceQuests"] = { 27461 },	-- To Take the Abbey
 					["g"] = {
@@ -999,7 +999,7 @@ _.Zones =
 					},
 				}),
 				q(27390, {	-- The Battle of Darrowshire
-					["qg"] = 10667,	-- Chromie
+					["provider"] = { "n", 10667 },	-- Chromie
 					["coord"] = { 35.2, 68.0, 23 },
 					["sourceQuests"] = {
 						27388,	-- Heroes of Darrowshire
@@ -1013,11 +1013,11 @@ _.Zones =
 					},
 				}),
 				q(27459, {	-- The Brotherhood of Light
-					["qg"] = 11036,	-- Leonid Barthalomew the Revered
+					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["coord"] = { 41.0, 87.9, 24 },
 				}),
 				q(27619, {	-- The Commander
-					["qg"] = 16112,	-- Crusade Commander Korfax
+					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.1, 23 },
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 					["g"] = {
@@ -1027,7 +1027,7 @@ _.Zones =
 					},
 				}),
 				q(27530, {	-- The Corpsebeasts
-					["qg"] = 45831,	-- Crusader Kevin Frost
+					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, 23 },
 					["sourceQuests"] = {
 						27539,	-- Add 'em to the Pile
@@ -1050,7 +1050,7 @@ _.Zones =
 					},
 				}),
 				q(27477, {	-- The Corpulent One
-					["qg"] = 45735,	-- Gamella Cracklefizz
+					["provider"] = { "n", 45735 },	-- Gamella Cracklefizz
 					["coord"] = { 61.5, 43.1, 23 },
 					["g"] = {
 						i(62987),	-- Eastwall Gauntlets
@@ -1065,7 +1065,7 @@ _.Zones =
 					},
 				}),
 				q(27616, {	-- The Huntsman
-					["qg"] = 16112,	-- Crusade Commander Korfax
+					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.1, 23 },
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 				}),
@@ -1076,7 +1076,7 @@ _.Zones =
 					},
 				}),
 				q(27532, {	-- The Plaguewood Tower
-					["qg"] = 45451,	-- Argus Highbeacon
+					["provider"] = { "n", 45451 },	-- Argus Highbeacon
 					["coord"] = { 28.3, 25.8, 23 },
 					["sourceQuests"] = { 27526 },	-- Gidwin's Fate Revealed
 					["isBreadcrumb"] = true,
@@ -1088,7 +1088,7 @@ _.Zones =
 					},
 				}),
 				q(27448, {	-- The Trek Continues
-					["qg"] = 45417,	-- Fiona
+					["provider"] = { "n", 45417 },	-- Fiona
 					["coord"] = { 34.8, 69.1, 23 },
 					["sourceQuests"] = {
 						27382,	-- Rough Roads
@@ -1096,12 +1096,12 @@ _.Zones =
 					},
 				}),
 				q(27615, {	-- The Wrathcaster
-					["qg"] = 16112,	-- Crusade Commander Korfax
+					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.1, 23 },
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 				}),
 				q(27451, {	-- To Kill With Purpose
-					["qg"] = 11035,	-- Betina Bigglezink
+					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 					["coord"] = { 53.2, 54.5, 23 },
 				}),
 				q(27461, {	-- To Take the Abbey
@@ -1117,12 +1117,12 @@ _.Zones =
 					["sourceQuests"] = { 27460 },	-- Soft Landing
 				}),
 				q(27381, {	-- Traveling Companions
-					["qg"] = 45429,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45429 },	-- Tarenar Sunstrike
 					["coord"] = { 35.2, 68.8, 23 },
 					["sourceQuests"] = { 27373 },	-- Onward, to Light's Hope Chapel
 				}),
 				q(27385, {	-- Uncle Carlin
-					["qg"] = 10926,	-- Pamela Redpath
+					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["coord"] = { 32.4, 83.6, 23 },
 					["sourceQuests"] = {
 						27392,	-- I'm Not Supposed to Tell You This
@@ -1130,7 +1130,7 @@ _.Zones =
 					},
 				}),
 				q(27559, {	-- Vex'tul's Armbands
-					["qg"] = 45400,	-- Fiona's Caravan
+					["provider"] = { "n", 45400 },	-- Fiona's Caravan
 					["repeatable"] = true,
 					["sourceQuest"] = 27449,	-- Honor and Strength
 					["coords"] = {
@@ -1140,12 +1140,12 @@ _.Zones =
 					},
 				}),
 				q(27612, {	-- Victory From Within
-					["qg"] = 16115,	-- Crusade Commander Eligor Dawnbringer
+					["provider"] = { "n", 16115 },	-- Crusade Commander Eligor Dawnbringer
 					["coord"] = { 76.7, 73.1, 23 },
 					["sourceQuests"] = { 27461 },	-- To Take the Abbey
 				}),
 				q(27387, {	-- Villians of Darrowshire
-					["qg"] = 10667,	-- Chromie
+					["provider"] = { "n", 10667 },	-- Chromie
 					["coord"] = { 35.2, 68.1, 23 },
 					["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 					["g"] = {
@@ -1156,12 +1156,12 @@ _.Zones =
 					},
 				}),
 				q(27684, {	-- Visitors
-					["qg"] = 11034,	-- Lord Maxwell Tyrosus
+					["provider"] = { "n", 11034 },	-- Lord Maxwell Tyrosus
 					["coord"] = { 43.3, 87.2, 24 },
 					["isBreadcrumb"] = true,
 				}),
 				q(27371, { 	-- What I Do Best
-					["qg"] = 45429,	-- Tarenar Sunstrike
+					["provider"] = { "n", 45429 },	-- Tarenar Sunstrike
 					["coord"] = { 18.3, 74.8, 23 },
 					["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 				}),
@@ -1174,11 +1174,11 @@ _.Zones =
 					},
 				}),
 				q(27521, {	-- Wretched Hive of Scum and Villainy
-					["qg"] = 45826,	-- Kirkian Dawnshield
+					["provider"] = { "n", 45826 },	-- Kirkian Dawnshield
 					["coord"] = { 49.9, 19.5, 23 },
 				}),
 				q(27432, {	-- Zaeldarr the Outcast
-					["qg"] = 45500,	-- Urk Gagbaz
+					["provider"] = { "n", 45500 },	-- Urk Gagbaz
 					["coord"] = { 35.0, 68.1, 23 },
 				}),
 			}),

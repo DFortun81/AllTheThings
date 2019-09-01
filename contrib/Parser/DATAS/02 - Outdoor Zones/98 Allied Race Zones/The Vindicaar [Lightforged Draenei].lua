@@ -13,7 +13,7 @@ _.Zones =
 				["description"] = "For untold millennia, the Army of the Light waged war against the Burning Legion throughout the Twisting Nether. The draenei most committed to their long crusade would undergo a ritual to become Lightforged, infusing their bodies with the very essence of the Holy Light. After finally achieving victory on Argus, the Lightforged draenei have undertaken a new mission: protecting Azeroth from rising threats and helping the Alliance push back against Horde aggression.",
 				["g"] = {
 					q(49772, {	-- For the Alliance
-						["qg"] = 130993,	-- Captain Fareeya
+						["provider"] = { "n", 130993 },	-- Captain Fareeya
 						["coord"] = { 42.96, 24.16, 940 },
 						["races"] = { 30 },	-- Lightforge Draenei
 						["lvl"] = 20,
@@ -23,7 +23,7 @@ _.Zones =
 						},
 					}),
 					q(49782, {	-- Heritage of the Lightforged
-						["qg"] = 130993,	-- Captain Fareeya
+						["provider"] = { "n", 130993 },	-- Captain Fareeya
 						["coord"] = { 42.96, 24.16, 940 },
 						["races"] = { 30 },	-- Lightforge Draenei
 						["lvl"] = 110,

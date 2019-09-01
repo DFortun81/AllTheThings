@@ -70,7 +70,7 @@ _.Zones =
 							},
 						}),
 						i(86529, {
-							["qg"] = 65552,	-- Glinting Rapana Whelk
+							["provider"] = { "n", 65552 },	-- Glinting Rapana Whelk
 							["questID"] = 31432,
 						}),
 						o(213968, {		-- Swarming Cleaver of Ka'roz
@@ -180,7 +180,7 @@ _.Zones =
 					}),
 ]]--
 					q(31178, {	-- A Bloody Delight
-						["qg"] = 63071,	-- Skeer the Bloodseeker
+						["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 					}),
 					q(31066, {	-- A Cry From Darkness
 						["g"] = {
@@ -190,20 +190,20 @@ _.Zones =
 							i(84063),	-- Seal of the Paragon Wakened
 							i(84064),	-- Clutch-Keeper Seal
 						},
-						["qg"] = 64815,	-- Kor'ik
+						["provider"] = { "n", 64815 },	-- Kor'ik
 					}),
 					q(31268, {	-- A Little Brain Work
-						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 						["isDaily"] = true,
 					}),
 					q(31730, {	-- A Not So Friendly Request
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31210, {	-- A Shade of Dread
-						["qg"] = 62151,	-- Xaril the Poisoned Mind
+						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					}),
 					q(31176, {	-- A Strange Appetite
-						["qg"] = 63071,	-- Skeer the Bloodseeker
+						["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 					}),
 					q(31008, {	-- Amber Arms
 						["g"] = {
@@ -217,24 +217,27 @@ _.Zones =
 							i(88115),	-- Bladesworn Shoes
 							i(88114),	-- Coldbite Shoes
 						},
-						["qg"] = 64599,	-- Ambersmith Zikk
+						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					}),
 					q(31019, {	-- Amber Is Life
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31232, {	-- An Ancient Empire
-						["qg"] = 62180,	-- Korven the Prime
+						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["isDaily"] = true,
 					}),
 					q(31676, {	-- Ancient Vengeance
-						["qg"] = 62202,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62202 },	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31271, {	-- Bad Genes
-						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector (2 versions)
+						["providers"] = {
+							{ "n", 63072 },	-- Rik'kal the Dissector
+							{ "n", 67091 },	-- Rik'kal the Dissector
+						},
 						["isDaily"] = true,
 					}),
 					q(31018, {	-- Beneath the Heart of Fear
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31090, {	-- Better With Age
 						["g"] = {
@@ -244,7 +247,7 @@ _.Zones =
 							i(84638),	-- Amberglow Pendant
 							i(84639),	-- Amberglow Amulet
 						},
-						["qg"] = 65365,	-- Kor'ik
+						["provider"] = { "n", 65365 },	-- Kor'ik
 					}),
 					q(31681, {	-- Better With Age
 						["g"] = {
@@ -254,16 +257,16 @@ _.Zones =
 							i(84638),	-- Amberglow Pendant
 							i(84639),	-- Amberglow Amulet
 						},
-						["qg"] = 65975,	-- Zer'ik
+						["provider"] = { "n", 65975 },	-- Zer'ik
 						["altQuests"] = { 31090 },	-- Better With Age
 						["sourceQuests"] = { 31087 },	-- Extending Our Coverage
 					}),
 					q(31084, {	-- Bind the Glamour
-						["qg"] = 62771,	-- Chief Rikkitun
+						["provider"] = { "n", 62771 },	-- Chief Rikkitun
 						["sourceQuests"] = { 31082 },	-- Great Vessel of Salvation
 					}),
 					q(31086, {	-- Blood of Ancients
-						["qg"] = 62666,	-- Sapmaster Vu
+						["provider"] = { "n", 62666 },	-- Sapmaster Vu
 					}),
 					q(31069, {	-- Bound With Shade
 						["g"] = {
@@ -273,18 +276,18 @@ _.Zones =
 							i(84083),	-- Brewgarden Cape
 							i(84084),	-- Sunset Cloak
 						},
-						["qg"] = 62666,	-- Sapmaster Vu
+						["provider"] = { "n", 62666 },	-- Sapmaster Vu
 						["sourceQuests"] = { 31067 },	-- The Heavens Hum With War
 					}),
 					q(31073, {	-- Bound With Wood
-						["qg"] = 62666,	-- Sapmaster Vu
+						["provider"] = { "n", 62666 },	-- Sapmaster Vu
 					}),
 					q(31238, {	-- Brain Food
-						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 						["isDaily"] = true,
 					}),
 					q(31682, {	-- By the Sea, Nevermore
-						["qg"] = 65975,	-- Zer'ik
+						["provider"] = { "n", 65975 },	-- Zer'ik
 						["altQuests"] = { 31089 },	-- By the Sea, Nevermore
 						["sourceQuests"] = {
 							31681,	-- Better With Age
@@ -292,79 +295,85 @@ _.Zones =
 						},
 					}),
 					q(31089, {	-- By the Sea, Nevermore
-						["qg"] = 65365,	-- Kor'ik
+						["provider"] = { "n", 65365 },	-- Kor'ik
 						["sourceQuests"] = {
 							31090,	-- Better With Age
 							31088,	-- Crime and Punishment
 						},
 					}),
 					q(31107, {	-- Citizens of a New Empire
-						["qg"] = 62774,	-- Malik the Unscathed
+						["provider"] = { "n", 62774 },	-- Malik the Unscathed
 					}),
 					q(31108, {	-- Concentrated Fear
-						["qg"] = 64599,	-- Ambersmith Zikk
+						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					}),
 					q(31441, {	-- Corruption Runs Deep
-						["qgs"] = { 64569, 64672 },	-- Hisek the Swarmkeeper (2 versions)
+						["providers"] = {
+							{ "n", 64569 },	-- Hisek the Swarmkeeper
+							{ "n", 64672 },	-- Hisek the Swarmkeeper
+						},
 						["sourceQuests"] = { 31439 },	-- Dropping Our Signal
 					}),
 					q(31680, {	-- Crime and Punishment
-						["qg"] = 65975,	-- Zer'ik
+						["provider"] = { "n", 65975 },	-- Zer'ik
 						["altQuests"] = { 31088 },	-- Crime and Punishment
 						["sourceQuests"] = { 31087 },	-- Extending Our Coverage
 					}),
 					q(31088, {	-- Crime and Punishment
-						["qg"] = 65365,	-- Kor'ik
+						["provider"] = { "n", 65365 },	-- Kor'ik
 					}),
 					q(31109, {	-- Culling the Swarm
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 						["isDaily"] = true,
 					}),
 					q(31070, {	-- Daggers of the Great Ones
-						["qg"] = 62668,	-- Olon
+						["provider"] = { "n", 62668 },	-- Olon
 					}),
 					q(31458, {	-- Damage Control
-						["qgs"] = { 64705, 65454 },	-- Hisek the Swarmkeeper (2 versions)
+						["providers"] = {
+							{ "n", 64705 },	-- Hisek the Swarmkeeper
+							{ "n", 65454 },	-- Hisek the Swarmkeeper
+						},
 					}),
 					q(31216, {	-- Dark Skies
-						["qg"] = 62151,	-- Xaril the Poisoned Mind
+						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 						["isDaily"] = true,
 					}),
 					q(31209, {	-- Dark Wings, Dark Things
-						["qg"] = 62151,	-- Xaril the Poisoned Mind
+						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					}),
 					q(31009, {	-- Dead Zone
-						["qg"] = 64815,	-- Kor'ik
+						["provider"] = { "n", 64815 },	-- Kor'ik
 					}),
 					q(31237, {	-- Debugging the Terrace
-						["qg"] = 63785,	-- Hisek the Swarmkeeper
+						["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
 						["isDaily"] = true,
 					}),
 					q(31186, {	-- Dog Food
-						["qg"] = 63955,	-- Dog
+						["provider"] = { "n", 63955 },	-- Dog
 					}),
 					q(31000, {	-- Dread Space
-						["qg"] = 62667,	-- Lya of Ten Songs
+						["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 					}),
 					q(31886, {	-- Dread Space
-						["qg"] = 63498,	-- Min the Breeze Rider
+						["provider"] = { "n", 63498 },	-- Min the Breeze Rider
 					}),
 					q(31231, {-- Dreadspinner Extermination
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 						["isDaily"] = true,
 					}),
 					q(31439, {	-- Dropping Our Signal
-						["qg"] = 64815,	-- Kor'ik
+						["provider"] = { "n", 64815 },	-- Kor'ik
 					}),
 					q(31111, {	-- Eradicating the Zan'thik
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 						["isDaily"] = true,
 					}),
 					q(31077, {	-- Evie Stormstout
-						["qg"] = 67138,	-- Chen Stormstout
+						["provider"] = { "n", 67138 },	-- Chen Stormstout
 					}),
 					q(31087, {	-- Extending Our Coverage
-						["qg"] = 64815,	-- Kor'ik
+						["provider"] = { "n", 64815 },	-- Kor'ik
 					}),
 					--q(31679),	-- Extending Our Coverage -- removed as duplicate?
 					q(31465, {	-- Extracting Answers
@@ -379,10 +388,13 @@ _.Zones =
 							i(88133),	-- Bladesworn Wristwraps
 							i(88132),	-- Coldbite Wristwraps
 						},
-						["qgs"] = { 64705, 65454 },	-- Hisek the Swarmkeeper (2 versions)
+						["providers"] = {
+							{ "n", 64705 },	-- Hisek the Swarmkeeper
+							{ "n", 65454 },	-- Hisek the Swarmkeeper
+						},
 					}),
 					q(31001, {	-- Falling Down
-						["qg"] = 62112,	-- Bowmistress Li
+						["provider"] = { "n", 62112 },	-- Bowmistress Li
 						["sourceQuests"] = {
 							31895,	-- Better Off Dread
 							49543,	-- Warchief's Command: Dread Wastes!
@@ -390,26 +402,32 @@ _.Zones =
 						},
 					}),
 					q(31129, {	-- Fate of the Stormstouts
-						["qg"] = 62779,	-- Chen Stormstout
+						["provider"] = { "n", 62779 },	-- Chen Stormstout
 					}),
 					q(31076, {-- Fate of the Stormstouts
-						["qg"] = 62779,	-- Chen Stormstout
+						["provider"] = { "n", 62779 },	-- Chen Stormstout
 					}),
 					q(31509, {	-- Fear Takes Root
-						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector
+						["providers"] = {
+							{ "n", 63072 },	-- Rik'kal the Dissector
+							{ "n", 67091 },	-- Rik'kal the Dissector
+						},
 						["isDaily"] = true,
 					}),
 					q(31092, {	-- Feed or Be Eaten
-						["qg"] = 64344,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 64344 },	-- Kaz'tik the Manipulator
 					}),
 					q(31020, {	-- Feeding the Beast
-						["qgs"] = { 62232, 63328 },	-- Klaxxi Warrior
+						["providers"] = {
+							{ "n", 62232 },	-- Klaxxi Warrior
+							{ "n", 63328 },	-- Klaxxi Warrior
+						},
 					}),
 					q(31080, {	-- Fiery Wings
-						["qg"] = 62668,	-- Olon
+						["provider"] = { "n", 62668 },	-- Olon
 					}),
 					q(31177, {	-- Fine Dining
-						["qg"] = 63071,	-- Skeer the Bloodseeker
+						["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 					}),
 					q(31085, {	-- Fires and Fears of Old
 						["g"] = {
@@ -423,15 +441,15 @@ _.Zones =
 							i(84026),	-- Bladesworn Warboots
 							i(84027),	-- Coldbite Warboots
 						},
-						["qg"] = 62667,	-- Lya of Ten Songs
+						["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 						["sourceQuests"] = { 31022 },	-- Kypari Zar
 					}),
 					q(32439, {	-- Flowing Pandaren Spirit
-						["qg"] = 68462,	-- FLowing Pandaren Spirit
+						["provider"] = { "n", 68462 },	-- FLowing Pandaren Spirit
 						["isDaily"] = true,
 					}),
 					q(31494, {	-- Free From Her Clutches
-						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 						["isDaily"] = true,
 					}),
 					q(31181, {	-- Fresh Pots
@@ -446,11 +464,11 @@ _.Zones =
 							i(84008),	-- Bladesworn Chestpiece
 							i(84009),	-- Coldbite Chestpiece
 						},
-						["qg"] = 63349,	-- Deck Boss Arie
+						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 						["sourceQuests"] = { 31727 },	-- Gambling Problem
 					}),
 					q(31727, {	-- Gambling Problem
-						["qg"] = 64599,	-- Ambersmith Zikk
+						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					}),
 					o(214062, {	-- Glowing Amber
 						q(31398, {	-- Falling to Pieces
@@ -469,20 +487,20 @@ _.Zones =
 						}),
 					}),
 					q(31082, {	-- Great Vessel of Salvation
-						["qg"] = 62771,	-- Chief Rikkitun
+						["provider"] = { "n", 62771 },	-- Chief Rikkitun
 					}),
 					q(31078, {	-- Han Stormstout
-						["qg"] = 67138,	-- Chen Stormstout
+						["provider"] = { "n", 67138 },	-- Chen Stormstout
 						["sourceQuests"] = { 31077 },	-- Evie Stormstout
 					}),
 					q(31071, {	-- I Bring Us Great Shame
-						["qg"] = 62859,	-- Thirsty Missho
+						["provider"] = { "n", 62859 },	-- Thirsty Missho
 					}),
 					q(31081, {	-- Incantations Fae and Primal
-						["qg"] = 62667,	-- Lya of Ten Songs
+						["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 					}),
 					q(31272, {	-- Infection
-						["qg"] = 63785,	-- Hisek the Swarmkeeper
+						["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
 						["isDaily"] = true,
 					}),
 					o(213973, {	-- Klaxxi Sonic Relay
@@ -502,40 +520,46 @@ _.Zones =
 							i(84624),	-- Sunset Heavy Helm
 							i(84625),	-- Sunset Armored Helm
 						},
-						["qg"] = 63218,	-- Defender Azzo
+						["provider"] = { "n", 63218 },	-- Defender Azzo
 					}),
 					q(31024, {	-- Kunchong Treats
-						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 						["isDaily"] = true,
 					}),
 					i(87871, {	-- Massive Kyparite Core
 						q(31598, {	-- Kypa'rak's Core
-							["qg"] = 65229,	-- Kypa'rak
+							["provider"] = { "n", 65229 },	-- Kypa'rak
 							["isDaily"] = true,
 						}),
 					}),
 					q(31022, {	-- Kypari Zar
-						["qgs"] = { 62232, 63328 },	-- Klaxxi Warrior
+						["providers"] = {
+							{ "n", 62232 },	-- Klaxxi Warrior
+							{ "n", 63328 },	-- Klaxxi Warrior
+						},
 					}),
 					q(31021, {	-- Living Amber
-						["qgs"] = { 62232, 63328 },	-- Klaxxi Warrior
+						["providers"] = {
+							{ "n", 62232 },	-- Klaxxi Warrior
+							{ "n", 63328 },	-- Klaxxi Warrior
+						},
 					}),
 					q(31354, {	-- Mazu's Bounty
-						["qg"] = 63349,	-- Deck Boss Arie
+						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 						["sourceQuests"] = { 31022 },	-- Kypari Zar
 					}),
 					q(31265, {	-- Mazu's Breath
-						["qg"] = 63349,	-- Deck Boss Arie
+						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					}),
 					q(31183, {	-- Meet the Cap'n
-						["qg"] = 63349,	-- Deck Boss Arie
+						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					}),
 					q(31507, {	-- Meltdown
-						["qg"] = 62180,	-- Korven the Prime
+						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["isDaily"] = true,
 					}),
 					q(31267, {	-- Mistblade Destruction
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 						["isDaily"] = true,
 					}),
 					q(31002, {	-- Nope
@@ -550,25 +574,25 @@ _.Zones =
 							i(84044),	-- Bladesown Gauntlets
 							i(84045),	-- Coldbite Gauntlets
 						},
-						["qg"] = 62112,	-- Bowmistress Li
+						["provider"] = { "n", 62112 },	-- Bowmistress Li
 					}),
 					q(31235, {	-- Nope Nope Nope
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 						["isDaily"] = true,
 					}),
 					q(31660, {	-- Not Fit to Swarm
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31184, {	-- Old Age and Treachery
-						["qg"] = 63317,	-- Captain "Soggy" Su-Dao
+						["provider"] = { "n", 63317 },	-- Captain "Soggy" Su-Dao
 					}),
 					q(31187, {	-- On the Crab
-						["qg"] = 63349,	-- Deck Boss Arie
+						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					}),
 					q(32030, {	-- Once in a Hundred Lifetimes
-						["qgs"] = {
-							62667,	-- Lya of Ten Songs
-							64259,	-- Master Angler Ju Lien
+						["providers"] = {
+							{ "n", 62667 },	-- Lya of Ten Songs
+							{ "n", 64259 },	-- Master Angler Ju Lien
 						},
 						["sourceQuests"] = {
 							31398,	-- Falling to Pieces
@@ -578,7 +602,7 @@ _.Zones =
 						},
 					}),
 					q(31504, {	-- Ordnance Disposal
-						["qg"] = 63785,	-- Hisek the Swarmkeeper
+						["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
 						["isDaily"] = true,
 					}),
 					q(31782, {	-- Overthrone
@@ -593,36 +617,39 @@ _.Zones =
 							i(84035),	-- Bladesworn Girdle
 							i(84036),	-- Coldbite Girdle
 						},
-						["qg"] = 65395,	-- Klaxxi'va Ik
+						["provider"] = { "n", 65395 },	-- Klaxxi'va Ik
 					}),
 					q(31004, {	-- Preserved in Amber
-						["qg"] = 62203,	-- Klaxxi'va Tik
+						["provider"] = { "n", 62203 },	-- Klaxxi'va Tik
 						["sourceQuests"] = { 31003 },	-- Psycho Mantid
 					}),
 					q(31083, {	-- Promises of Gold
 						["g"] = {
 							i(88417),	-- Gokk'lok's Shell
 						},
-						["qg"] = 62767,	-- Gokk'lok
+						["provider"] = { "n", 62767 },	-- Gokk'lok
 						["description"] = "Found underwater in the north-east of the zone.",
 					}),
 					q(31003, {	-- Psycho Mantid
-						["qg"] = 62166,	-- Marksman Lann
+						["provider"] = { "n", 62166 },	-- Marksman Lann
 					}),
 					q(31234, {	-- Putting An Eye Out
-						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector
+						["providers"] = {
+							{ "n", 63072 },	-- Rik'kal the Dissector
+							{ "n", 67091 },	-- Rik'kal the Dissector
+						},
 						["isDaily"] = true,
 					}),
 					q(31510, {	-- Quiet Now
-						["qg"] = 63785,	-- Hisek the Swarmkeeper
+						["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
 						["isDaily"] = true,
 					}),
 					q(31808, {-- Rampage Against the Machine
-						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 						["isDaily"] = true,
 					}),
 					q(31189, {	-- Reeltime Strategy
-						["qg"] = 63349,	-- Deck Boss Arie
+						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					}),
 					q(31072, {	-- Rending Daggers
 						["g"] = {
@@ -636,7 +663,7 @@ _.Zones =
 							i(88124),	-- Bladesworn Handwraps
 							i(88123),	-- Coldbite Handwraps
 						},
-						["qg"] = 62667,	-- Lya of Ten Songs
+						["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 					}),
 					q(31091, {	-- Reunited
 						["g"] = {
@@ -650,14 +677,14 @@ _.Zones =
 							i(83990),	-- Bladesworn Helm
 							i(83991),	-- Coldbite Helm
 						},
-						["qg"] = 63876,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 63876 },	-- Kaz'tik the Manipulator
 					}),
 					q(31496, {	-- Sampling the Empire's Finest
-						["qg"] = 62180,	-- Korven the Prime
+						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["isDaily"] = true,
 					}),
 					q(31233, {	-- Sap Tapping
-						["qg"] = 62180,	-- Korven the Prime
+						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["isDaily"] = true,
 					}),
 					o(212389, {	-- Scroll of Auspice
@@ -670,14 +697,14 @@ _.Zones =
 						}),
 					}),
 					q(31603, {	-- Seeds of Fear
-						["qg"] = 64599,	-- Ambersmith Zikk
+						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
             ["repeatable"] = true,
 					}),
 					o(214562, {	-- Sha-Haunted Crystal
 						q(31661),	-- A Source of Terrifying Power
 					}),
 					q(31506, {	-- Shackles of Manipulation
-						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 						["isDaily"] = true,
 					}),
 					q(31612, {	-- Shadow of the Empire
@@ -688,35 +715,41 @@ _.Zones =
 							i(90861),	-- Seal of the Windreaver
 							i(90858),	-- Seal of the Prime
 						},
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 						["sourceQuests"] = { 31609 },	-- The Wrath of Shek'zeer
 					}),
 					q(31188, {	-- Shark Week
-						["qgs"] = {
-							63349,	-- Deck Boss Arie
-							64259,	-- Master Angler Ju Lien
+						["providers"] = {
+							{ "n", 63349 },	-- Deck Boss Arie
+							{ "n", 64259 },	-- Master Angler Ju Lien
 						},
 					}),
 					q(31503, {	-- Shortcut to Ruin
-						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector (2 versions)
+						["providers"] = {
+							{ "n", 63072 },	-- Rik'kal the Dissector
+							{ "n", 67091 },	-- Rik'kal the Dissector
+						},
 						["isDaily"] = true,
 					}),
 					q(31175, {	-- Skeer the Bloodseeker
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31487, {	-- Sonic Disruption
-						["qg"] = 63758,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 						["isDaily"] = true,
 					}),
 					q(31508, {	-- Specimen Request
-						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector (2 versions)
+						["providers"] = {
+							{ "n", 63072 },	-- Rik'kal the Dissector
+							{ "n", 67091 },	-- Rik'kal the Dissector
+						},
 						["isDaily"] = true,
 					}),
 					i(82870, {	-- Strange Relic
 						q(31023),	-- Relics of the Swarm
 					}),
 					q(31075, {	-- Sunset Kings
-						["qg"] = 62666,	-- Sapmaster Vu
+						["provider"] = { "n", 62666 },	-- Sapmaster Vu
 					}),
 					q(31606, {	-- The Dissector Wakens
 						["g"] = {
@@ -730,24 +763,24 @@ _.Zones =
 							i(84053),	-- Bladesworn Armplates
 							i(84054),	-- Coldbite Bracers
 						},
-						["qg"] = 65253,	-- Rik'kal the Dissector
+						["provider"] = { "n", 65253 },	-- Rik'kal the Dissector
 						["sourceQuests"] = { 31605 },	-- The Zan'thik Dig
 					}),
 					q(31007, {	-- The Dread Clutches
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31689, {	-- The Dreadsworn
-						["qg"] = 62774,	-- Malik the Unscathed
+						["provider"] = { "n", 62774 },	-- Malik the Unscathed
 					}),
 					q(31959, {	-- The Empress' Gambit
-						["qg"] = 62774,	-- Malik the Unscathed
+						["provider"] = { "n", 62774 },	-- Malik the Unscathed
 					}),
 					q(31270, {	-- The Fight Against Fear
-						["qg"] = 62180,	-- Korven the Prime
+						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["isDaily"] = true,
 					}),
 					q(31067, {	-- The Heavens Hum With War
-						["qg"] = 62666,	-- Sapmaster Vu
+						["provider"] = { "n", 62666 },	-- Sapmaster Vu
 						["sourceQuests"] = { 31730 },	-- A Not So Friendly Request
 					}),
 					q(31079, {	-- The Horror Comes A-Rising
@@ -763,7 +796,7 @@ _.Zones =
 							i(90076),	-- Boggeo's Thorns
 							i(90077),	-- Oracle's Blade
 						},
-						["qg"] = 62772,	-- Boggeo
+						["provider"] = { "n", 62772 },	-- Boggeo
 					}),
 					q(31006, {	-- The Klaxxi Council
 						["g"] = {
@@ -773,14 +806,14 @@ _.Zones =
 							i(84058),	-- Kil'ruk's Pendant
 							i(84059),	-- Sacred Stone Amulet
 						},
-						["qg"] = 62202,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62202 },	-- Kil'ruk the Wind-Reaver
 						["sourceQuests"] = {
 							31676,	-- Ancient Vengeance
 							31005,	-- Wakening Sickness
 						},
 					}),
 					q(31359, {	-- The Kunchong Whisperer
-						["qg"] = 64344,	-- Kaz'tik the Manipulator
+						["provider"] = { "n", 64344 },	-- Kaz'tik the Manipulator
 						["sourceQuests"] = { 31091 },	-- Reunited
 					}),
 					q(31190, {	-- The Mariner's Revenge
@@ -795,11 +828,11 @@ _.Zones =
 							i(83999),	-- Bladesworn Shoulders
 							i(84000),	-- Coldbite Shoulders
 						},
-						["qg"] = 63317,	-- Captain "Soggy" Su-Dao
+						["provider"] = { "n", 63317 },	-- Captain "Soggy" Su-Dao
 					}),
 					i(87878, {	-- Enormous Kunchong Mandibles
 						q(31599, {	-- The Matriarch's Maw
-							["qg"] = 64724,	-- Karanosh
+							["provider"] = { "n", 64724 },	-- Karanosh
 							["isDaily"] = true,
 						}),
 					}),
@@ -811,7 +844,7 @@ _.Zones =
 							i(84068),	-- Battletank Seal
 							i(84069),	-- Wingguard Loop
 						},
-						["qg"] = 62151,	-- Xaril the Poisoned Mind
+						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					}),
 					q(31026, {	-- The Root of the Problem
 						["g"] = {
@@ -821,11 +854,14 @@ _.Zones =
 							i(84078),	-- Insignia of Kypari Zar
 							i(84079),	-- Badge of Kypari Zar
 						},
-						["qgs"] = { 62232, 63328 },	-- Klaxxi Warrior (2 versions)
+						["providers"] = {
+							{ "n", 62232 },	-- Klaxxi Warrior
+							{ "n", 63328 },	-- Klaxxi Warrior
+						},
 						["sourceQuests"] = { 31022 },	-- Kypari Zar
 					}),
 					q(31269, {	-- The Scale-Lord
-						["qg"] = 62180,	-- Korven the Prime
+						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["isDaily"] = true,
 					}),
 					q(31179, {	-- The Scent of Blood
@@ -839,7 +875,7 @@ _.Zones =
 							i(90104),	-- Wakener's Light
 							i(90105),	-- Chronicle of a Hudnred Wars
 						},
-						["qg"] = 63071,	-- Skeer the Bloodseeker
+						["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 					}),
 					i(88715, {	-- Ashes of Warlord Gurthan
 						q(31677, {	-- The Warlord's Ashes
@@ -847,21 +883,21 @@ _.Zones =
 						}),
 					}),
 					q(31609, {	-- The Wrath of Shek'zeer
-						["qg"] = 64599,	-- Ambersmith Zikk
+						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 						["sourceQuests"] = { 31959 },	-- The Empress' Gambit
 					}),
 					q(31605, {	-- The Zan'thik Dig
-						["qg"] = 64815,	-- Kor'ik
+						["provider"] = { "n", 64815 },	-- Kor'ik
 					}),
 					q(31208, {	-- Venomous Intent
-						["qg"] = 62151,	-- Xaril the Poisoned Mind
+						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					}),
 					q(31505, {	-- Vess-Guard Duty
-						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 						["isDaily"] = true,
 					}),
 					q(31005, {	-- Wakening Sickness
-						["qg"] = 62202,	-- Kil'ruk the Wind-Reaver
+						["provider"] = { "n", 62202 },	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31185, {	-- Walking Dog
 						["g"] = {
@@ -875,18 +911,21 @@ _.Zones =
 							i(84017),	-- Bladesworn Legguards
 							i(84018),	-- Coldbite Legguards
 						},
-						["qg"] = 63317,	-- Captain "Soggy" Su-Dao
+						["provider"] = { "n", 63317 },	-- Captain "Soggy" Su-Dao
 					}),
 					q(31502, {	-- Wing Clip
-						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector (2 versions)
+						["providers"] = {
+							{ "n", 63072 },	-- Rik'kal the Dissector
+							{ "n", 67091 },	-- Rik'kal the Dissector
+						},
 						["isDaily"] = true,
 					}),
 					q(31074, {	-- Wood and Shade
-						["qg"] = 62667,	-- Lya of Ten Songs
+						["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 						["sourceQuests"] = { 31072 },	-- Rending Daggers
 					}),
 					q(31182, {	-- You Otter Know
-						["qg"] = 63349,	-- Deck Boss Arie
+						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					}),
 				}),
 				n(-16, { 	-- Rares

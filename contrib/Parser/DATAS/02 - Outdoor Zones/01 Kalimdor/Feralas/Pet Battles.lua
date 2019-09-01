@@ -24,7 +24,7 @@ _.Zones =
 					["description"] = "Can be found near Feral Scar Yetis south of Dire Maul.",
 				}),
 				q(31871, {	-- Traitor Gluk
-					["qg"] = 66352,	-- Traitor Gluk
+					["provider"] = { "n", 66352 },	-- Traitor Gluk
 					["coord"] = { 59.6, 49.6, 69 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

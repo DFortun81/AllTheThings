@@ -129,7 +129,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			n(-17, {	-- Quests
 				a({
 					["questID"] = 8870,	-- The Lunar Festival
-					["qg"] = 15892,	-- Lunar Festival Emissary
+					["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["maps"] = {
@@ -138,7 +138,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				}),
 				a({
 					["questID"] = 8871,	-- The Lunar Festival
-					["qg"] = 15892,	-- Lunar Festival Emissary
+					["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["maps"] = {
@@ -147,7 +147,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				}),
 				a({
 					["questID"] = 8872,	-- The Lunar Festival
-					["qg"] = 15892,	-- Lunar Festival Emissary
+					["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["maps"] = {
@@ -156,7 +156,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				}),
 				h({
 					["questID"] = 8873,	-- The Lunar Festival
-					["qg"] = 15891,	-- Lunar Festival Herald
+					["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["maps"] = {
@@ -165,7 +165,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				}),
 				h({
 					["questID"] = 8874,	-- The Lunar Festival
-					["qg"] = 15891,	-- Lunar Festival Herald
+					["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["maps"] = {
@@ -174,7 +174,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				}),
 				h({
 					["questID"] = 8875,	-- The Lunar Festival
-					["qg"] = 15891,	-- Lunar Festival Herald
+					["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["maps"] = {
@@ -191,7 +191,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 						8874,	-- The Lunar Festival
 						8875,	-- The Lunar Festival
 					},
-					["qg"] = 15895,	-- Lunar Festival Harbinger
+					["provider"] = { "n", 15895 },	-- Lunar Festival Harbinger
 					["repeatable"] = true,
 					["maps"] = {
 						37,	-- Elwynn Forest
@@ -213,7 +213,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				{
 					["questID"] = 8883,	-- Valadar Starsong
 					["sourceQuest"] = 8867,	-- Lunar Fireworks
-					["qg"] = 15895,	-- Lunar Festival Harbinger
+					["provider"] = { "n", 15895 },	-- Lunar Festival Harbinger
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["maps"] = {
@@ -233,7 +233,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				{
 					["questID"] = 8868,	-- Elune's Blessing
 					["sourceQuest"] = 8883,	-- Valadar Starsong
-					["qg"] = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
+					["provider"] = { "n", 15864 },	-- Valadar Starsong <Coin of Ancestry Collector>
 					["repeatable"] = true,
 					["groups"] = {
 						un(17, i(21540)),	-- Elune's Lantern
@@ -242,7 +242,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Arp the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30364,	-- Elder Arp
+					["provider"] = { "n", 30364 },	-- Elder Arp
 					["maps"] = { 114 },	-- Borean Tundra
 					["coord"] = { 57.3, 43.7, 114 },
 					["questID"] = 13033,	-- Arp the Elder
@@ -256,7 +256,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Beldak the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30357,	-- Elder Beldak
+					["provider"] = { "n", 30357 },	-- Elder Beldak
 					["maps"] = { 116 },	-- Grizzly Hills
 					["coord"] = { 60.5, 27.7, 116 },
 					["questID"] = 13013,	-- Beldak the Elder
@@ -270,7 +270,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Bellowrage the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15563,	-- Elder Bellowrage
+					["provider"] = { "n", 15563 },	-- Elder Bellowrage
 					["maps"] = { 17 },	-- Blasted Lands
 					["coord"] = { 54.2, 49.4, 17 },
 					["questID"] = 8647,	-- Bellowrage the Elder
@@ -285,7 +285,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Bladeleaf the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15595,	-- Elder Bladeleaf
+					["provider"] = { "n", 15595 },	-- Elder Bladeleaf
 					["maps"] = { 57 },	-- Teldrassil
 					["coord"] = { 56.8, 53.1, 57 },
 					["questID"] = 8715,	-- Bladeleaf the Elder
@@ -300,7 +300,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Bladesing the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15599,	-- Elder Bladesing
+					["provider"] = { "n", 15599 },	-- Elder Bladesing
 					["maps"] = { 81 },	-- Silithus
 					["coord"] = { 53.0, 35.4, 81 },
 					["questID"] = 8719,	-- Bladesing the Elder
@@ -315,7 +315,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Bladeswift the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15598,	-- Elder Bladeswift
+					["provider"] = { "n", 15598 },	-- Elder Bladeswift
 					["maps"] = { 89 },	-- Darnassus
 					["coord"] = { 39.3, 31.8, 89 },
 					["questID"] = 8718,	-- Bladeswift the Elder
@@ -330,7 +330,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Bloodhoof the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15575,	-- Elder Bloodhoof
+					["provider"] = { "n", 15575 },	-- Elder Bloodhoof
 					["maps"] = { 7 },	-- Mulgore
 					["coord"] = { 48.4, 53.2, 7 },
 					["questID"] = 8673,	-- Bloodhoof the Elder
@@ -344,7 +344,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Bluewolf the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30368,	-- Elder Bluewolf
+					["provider"] = { "n", 30368 },	-- Elder Bluewolf
 					["maps"] = { 123 },	-- Wintergrasp
 					["coord"] = { 49.0, 14.0, 123 },
 					["questID"] = 13026,	-- Bluewolf the Elder
@@ -358,7 +358,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Brightspear the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15606,	-- Elder Brightspear
+					["provider"] = { "n", 15606 },	-- Elder Brightspear
 					["maps"] = { 83 },	-- Winterspring
 					["coord"] = { 53.2, 56.7, 83 },
 					["questID"] = 8726,	-- Brightspear the Elder
@@ -372,7 +372,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Bronzebeard the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15871,	-- Elder Bronzebeard
+					["provider"] = { "n", 15871 },	-- Elder Bronzebeard
 					["maps"] = { 87 },	-- Ironforge
 					["coord"] = { 29.4, 17.1, 87 },
 					["questID"] = 8866,	-- Bronzebeard the Elder
@@ -387,7 +387,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Chogan'gada the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30538,	-- Elder Chogan'gada
+					["provider"] = { "n", 30538 },	-- Elder Chogan'gada
 					["maps"] = {
 						117,	-- Howling Fjord
 						136,	-- Utgarde Pinnacle
@@ -405,7 +405,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Darkcore the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15564,	-- Elder Darkcore
+					["provider"] = { "n", 15564 },	-- Elder Darkcore
 					["maps"] = { 90 },	-- Undercity
 					["coord"] = { 66.5, 38.0, 90 },
 					["questID"] = 8648,	-- Darkcore the Elder
@@ -420,7 +420,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Darkfeather the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 55218,	-- Elder Darkfeather
+					["provider"] = { "n", 55218 },	-- Elder Darkfeather
 					["maps"] = { 241 },	-- Twilight Highlands
 					["coord"] = { 51.8, 33.0, 241 },
 					["questID"] = 29736,	-- Darkfeather the Elder
@@ -434,7 +434,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Darkhorn the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15579,	-- Elder Darkhorn
+					["provider"] = { "n", 15579 },	-- Elder Darkhorn
 					["maps"] = { 85 },	-- Orgrimmar
 					["coord"] = { 52.1, 59.8, 85 },
 					["questID"] = 8677,	-- Darkhorn the Elder
@@ -449,7 +449,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Dawnstrider the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15585,	-- Elder Dawnstrider
+					["provider"] = { "n", 15585 },	-- Elder Dawnstrider
 					["maps"] = { 36 },	-- Burning Steppes
 					["coord"] = { 52.3, 23.9, 36 },
 					["questID"] = 8683,	-- Dawnstrider the Elder
@@ -463,7 +463,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Deepforge the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 55216,	-- Elder Deepforge
+					["provider"] = { "n", 55216 },	-- Elder Deepforge
 					["maps"] = { 207 },	-- Deepholm
 					["coord"] = { 27.7, 69.1, 207 },
 					["questID"] = 29734,	-- Deepforge the Elder
@@ -477,7 +477,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Dreamseer the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15586,	-- Elder Dreamseer
+					["provider"] = { "n", 15586 },	-- Elder Dreamseer
 					["maps"] = { 71 },	-- Tanaris
 					["coord"] = { 51.3, 28.8, 71 },
 					["questID"] = 8684,	-- Dreamseer the Elder
@@ -491,7 +491,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Evershade the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 55227,	-- Elder Evershade
+					["provider"] = { "n", 55227 },	-- Elder Evershade
 					["maps"] = { 198 },	-- Mount Hyjal
 					["coord"] = { 62.5, 22.8, 198 },
 					["questID"] = 29740,	-- Evershade the Elder
@@ -505,7 +505,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Fargal the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30359,	-- Elder Fargal
+					["provider"] = { "n", 30359 },	-- Elder Fargal
 					["maps"] = { 120 },	-- The Storm Peaks
 					["coord"] = { 28.9, 73.7, 120 },
 					["questID"] = 13015,	-- Fargal the Elder
@@ -519,7 +519,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Farwhisper the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15607,	-- Elder Farwhisper
+					["provider"] = { "n", 15607 },	-- Elder Farwhisper
 					["maps"] = {
 						23,		-- Eastern Plaguelands
 						317,	-- Stratholme
@@ -537,7 +537,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Firebeard the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 55219,	-- Elder Firebeard
+					["provider"] = { "n", 55219 },	-- Elder Firebeard
 					["maps"] = { 241 },	-- Twilight Highlands
 					["coord"] = { 50.9, 70.4, 241 },
 					["questID"] = 29737,	-- Firebeard the Elder
@@ -551,7 +551,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Goldwell the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15569,	-- Elder Goldwell
+					["provider"] = { "n", 15569 },	-- Elder Goldwell
 					["maps"] = { 27 },	-- Dun Morogh
 					["coord"] = { 53.8, 49.9, 27 },
 					["questID"] = 8653,	-- Goldwell the Elder
@@ -565,7 +565,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Graveborn the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15568,	-- Elder Graveborn
+					["provider"] = { "n", 15568 },	-- Elder Graveborn
 					["maps"] = { 18 },	-- Tirisfal Glades
 					["coord"] = { 61.8, 53.9, 18 },
 					["questID"] = 8652,	-- Graveborn the Elder
@@ -580,7 +580,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Graymane the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30370,	-- Elder Graymane
+					["provider"] = { "n", 30370 },	-- Elder Graymane
 					["maps"] = { 120 },	-- The Storm Peaks
 					["coord"] = { 41.1, 84.7, 120 },
 					["questID"] = 13028,	-- Graymane the Elder
@@ -594,7 +594,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Grimtotem the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15581,	-- Elder Grimtotem
+					["provider"] = { "n", 15581 },	-- Elder Grimtotem
 					["maps"] = { 69 },	-- Feralas
 					["coord"] = { 76.7, 37.8, 69 },
 					["questID"] = 8679,	-- Grimtotem the Elder
@@ -608,7 +608,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Hammershout the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15562,	-- Elder Hammershout
+					["provider"] = { "n", 15562 },	-- Elder Hammershout
 					["maps"] = { 37 },	-- Elwynn Forest
 					["coord"] = { 34.5, 50.3, 37 },
 					["questID"] = 8646,	-- Hammershout the Elder
@@ -622,7 +622,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- High Mountain the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15588,	-- Elder High Mountain
+					["provider"] = { "n", 15588 },	-- Elder High Mountain
 					["maps"] = { 199 },	-- Southern Barrens
 					["coord"] = { 41.6, 47.4, 199 },
 					["questID"] = 8686,	-- High Mountain the Elder
@@ -636,7 +636,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Highpeak the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15559,	-- Elder Highpeak
+					["provider"] = { "n", 15559 },	-- Elder Highpeak
 					["maps"] = { 26 },	-- The Hinterlands
 					["coord"] = { 49.9, 47.9, 26 },
 					["questID"] = 8643,	-- Highpeak the Elder
@@ -650,7 +650,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Igasho the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30536,	-- Elder Igasho
+					["provider"] = { "n", 30536 },	-- Elder Igasho
 					["maps"] = {
 						114,	-- Borean Tundra
 						129,	-- The Nexus
@@ -668,7 +668,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Ironband the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15567,	-- Elder Ironband
+					["provider"] = { "n", 15567 },	-- Elder Ironband
 					["maps"] = { 32 },	-- Searing Gorge
 					["coord"] = { 21.3, 79.0, 32 },
 					["questID"] = 8651,	-- Ironband the Elder
@@ -682,7 +682,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Jarten the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30531,	-- Elder Jarten
+					["provider"] = { "n", 30531 },	-- Elder Jarten
 					["maps"] = {
 						117,	-- Howling Fjord
 						133,	-- Utgarde Keep
@@ -700,7 +700,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Kilias the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30534,	-- Elder Kilias
+					["provider"] = { "n", 30534 },	-- Elder Kilias
 					["maps"] = {
 						121,	-- Zul'Drak
 						160,	-- Drak'Tharon Keep
@@ -718,7 +718,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Lunaro the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30367,	-- Elder Lunaro
+					["provider"] = { "n", 30367 },	-- Elder Lunaro
 					["maps"] = { 116 },	-- Grizzly Hills
 					["coord"] = { 80.4, 37.1, 116 },
 					["questID"] = 13025,	-- Lunaro the Elder
@@ -732,7 +732,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Meadowrun the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15602,	-- Elder Meadowrun
+					["provider"] = { "n", 15602 },	-- Elder Meadowrun
 					["maps"] = { 22 },	-- Western Plaguelands
 					["coord"] = { 63.5, 36.2, 22 },
 					["questID"] = 8722,	-- Meadowrun the Elder
@@ -746,7 +746,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Menkhaf the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 55211,	-- Elder Menkhaf
+					["provider"] = { "n", 55211 },	-- Elder Menkhaf
 					["maps"] = { 249 },	-- Uldum
 					["coord"] = { 65.5, 18.7, 249 },
 					["questID"] = 29742,	-- Menkhaf the Elder
@@ -760,7 +760,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Mistwalker the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15587,	-- Elder Mistwalker
+					["provider"] = { "n", 15587 },	-- Elder Mistwalker
 					["maps"] = { 69 },	-- Feralas
 					["coord"] = { 62.5, 30.9, 69 },
 					["questID"] = 8685,	-- Mistwalker the Elder
@@ -774,7 +774,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Moonlance the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 55228,	-- Elder Moonlance
+					["provider"] = { "n", 55228 },	-- Elder Moonlance
 					["maps"] = { 205 },	-- 
 					["coord"] = { 57.2, 86.1, 205 },
 					["questID"] = 29738,	-- Moonlance the Elder
@@ -788,7 +788,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Moonstrike the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15594,	-- Elder Moonstrike
+					["provider"] = { "n", 15594 },	-- Elder Moonstrike
 					["maps"] = { 22 },	-- Western Plaguelands
 					["coord"] = { 69.1, 73.3, 22 },
 					["questID"] = 8714,	-- Moonstrike the Elder
@@ -802,7 +802,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Moonwarden the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15597,	-- Elder Moonwarden
+					["provider"] = { "n", 15597 },	-- Elder Moonwarden
 					["maps"] = { 10 },	-- Northern Barrens
 					["coord"] = { 48.5, 59.2, 10 },
 					["questID"] = 8717,	-- Moonwarden the Elder
@@ -816,7 +816,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Morndeep the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15549,	-- Elder Morndeep
+					["provider"] = { "n", 15549 },	-- Elder Morndeep
 					["maps"] = {
 						36,		-- Burning Steppes
 						242,	-- Blackrock Depths
@@ -834,7 +834,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Morningdew the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15604,	-- Elder Morningdew
+					["provider"] = { "n", 15604 },	-- Elder Morningdew
 					["maps"] = { 64 },	-- Thousand Needles
 					["coord"] = { 77.1, 75.6, 64 },
 					["questID"] = 8724,	-- Morningdew the Elder
@@ -848,7 +848,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Morthie the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30358,	-- Elder Morthie
+					["provider"] = { "n", 30358 },	-- Elder Morthie
 					["maps"] = { 115 },	-- Dragonblight
 					["coord"] = { 29.7, 55.9, 115 },
 					["questID"] = 13014,	-- Morthie the Elder
@@ -862,7 +862,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Muraco the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30374,	-- Elder Muraco
+					["provider"] = { "n", 30374 },	-- Elder Muraco
 					["maps"] = { 120 },	-- The Storm Peaks
 					["coord"] = { 64.6, 51.3, 120 },
 					["questID"] = 13032,	-- Muraco the Elder
@@ -876,7 +876,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Nightwind the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15603,	-- Elder Nightwind
+					["provider"] = { "n", 15603 },	-- Elder Nightwind
 					["maps"] = { 77 },	-- Felwood
 					["coord"] = { 38.4, 52.8, 77 },
 					["questID"] = 8723,	-- Nightwind the Elder
@@ -890,7 +890,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Northal the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30360,	-- Elder Northal
+					["provider"] = { "n", 30360 },	-- Elder Northal
 					["maps"] = { 114 },	-- Borean Tundra
 					["coord"] = { 33.7, 34.3, 114 },
 					["questID"] = 13016,	-- Northal the Elder
@@ -904,7 +904,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Nurgen the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30533,	-- Elder Nurgen
+					["provider"] = { "n", 30533 },	-- Elder Nurgen
 					["maps"] = {
 						115,	-- Dragonblight
 						157,	-- Azjol-Nerub
@@ -922,7 +922,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Obsidian the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15561,	-- Elder Obsidian
+					["provider"] = { "n", 15561 },	-- Elder Obsidian
 					["maps"] = { 21 },	-- Silverpine Forest
 					["coord"] = { 45.0, 41.1, 21 },
 					["questID"] = 8645,	-- Obsidian the Elder
@@ -936,7 +936,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Ohanzee the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30537,	-- Elder Ohanzee
+					["provider"] = { "n", 30537 },	-- Elder Ohanzee
 					["maps"] = {
 						121,	-- Zul'Drak
 						153,	-- Gundrak
@@ -954,7 +954,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Pamuya the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30371,	-- Elder Pamuya
+					["provider"] = { "n", 30371 },	-- Elder Pamuya
 					["maps"] = { 114 },	-- Borean Tundra
 					["coord"] = { 42.9, 49.5, 114 },
 					["questID"] = 13029,	-- Pamuya the Elder
@@ -968,7 +968,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Primestone the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15570,	-- Elder Primestone
+					["provider"] = { "n", 15570 },	-- Elder Primestone
 					["maps"] = { 81 },	-- Silithus
 					["coord"] = { 30.8, 13.3, 81 },
 					["questID"] = 8654,	-- Primestone the Elder
@@ -983,7 +983,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Ragetotem the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15573,	-- Elder Ragetotem
+					["provider"] = { "n", 15573 },	-- Elder Ragetotem
 					["maps"] = { 71 },	-- Tanaris
 					["coord"] = { 37.2, 79.0, 71 },
 					["questID"] = 8671,	-- Ragetotem the Elder
@@ -997,7 +997,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Riversong the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15605,	-- Elder Riversong
+					["provider"] = { "n", 15605 },	-- Elder Riversong
 					["maps"] = { 63 },	-- Ashenvale
 					["coord"] = { 35.5, 48.9, 63 },
 					["questID"] = 8725,	-- Riversong the Elder
@@ -1011,7 +1011,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Rumblerock the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15557,	-- Elder Rumblerock
+					["provider"] = { "n", 15557 },	-- Elder Rumblerock
 					["maps"] = { 36 },	-- Burning Steppes
 					["coord"] = { 70.1, 45.4, 36 },
 					["questID"] = 8636,	-- Rumblerock the Elder
@@ -1025,7 +1025,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Runetotem the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15572,	-- Elder Runetotem
+					["provider"] = { "n", 15572 },	-- Elder Runetotem
 					["maps"] = { 1 },	-- Durotar
 					["coord"] = { 53.1, 43.6, 1 },
 					["questID"] = 8670,	-- Runetotem the Elder
@@ -1039,7 +1039,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Sandrene the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30362,	-- Elder Sandrene
+					["provider"] = { "n", 30362 },	-- Elder Sandrene
 					["maps"] = { 119 },	-- Sholazar Basin
 					["coord"] = { 49.7, 63.5, 119 },
 					["questID"] = 13018,	-- Sandrene the Elder
@@ -1053,7 +1053,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Sardis the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30348,	-- Elder Sardis
+					["provider"] = { "n", 30348 },	-- Elder Sardis
 					["maps"] = { 114 },	-- Borean Tundra
 					["coord"] = { 59.0, 65.5, 114 },
 					["questID"] = 13012,	-- Sardis the Elder
@@ -1067,7 +1067,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Sekhemi the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 55210,	-- Elder Sekhemi
+					["provider"] = { "n", 55210 },	-- Elder Sekhemi
 					["maps"] = { 249 },	-- Uldum
 					["coord"] = { 31.5, 63.0, 249 },
 					["questID"] = 29741,	-- Sekhemi the Elder
@@ -1081,7 +1081,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Silvervein the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15558,	-- Elder Silvervein
+					["provider"] = { "n", 15558 },	-- Elder Silvervein
 					["maps"] = { 48 },	-- Loch Modan
 					["coord"] = { 33.3, 46.5, 48 },
 					["questID"] = 8642,	-- Silvervein the Elder
@@ -1095,7 +1095,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Skychaser the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15577,	-- Elder Skychaser
+					["provider"] = { "n", 15577 },	-- Elder Skychaser
 					["maps"] = { 52 },	-- Westfall
 					["coord"] = { 56.7, 47.1, 52 },
 					["questID"] = 8675,	-- Skychaser the Elder
@@ -1109,7 +1109,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Skygleam the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15600,	-- Elder Skygleam
+					["provider"] = { "n", 15600 },	-- Elder Skygleam
 					["maps"] = { 76 },	-- Azshara
 					["coord"] = { 64.7, 79.3, 76 },
 					["questID"] = 8720,	-- Skygleam the Elder
@@ -1123,7 +1123,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Skyseer the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15584,	-- Elder Skyseer
+					["provider"] = { "n", 15584 },	-- Elder Skyseer
 					["maps"] = { 64 },	-- Thousand Needles
 					["coord"] = { 46.3, 50.9, 64 },
 					["questID"] = 8682,	-- Skyseer the Elder
@@ -1137,7 +1137,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Skywarden the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30373,	-- Elder Skywarden
+					["provider"] = { "n", 30373 },	-- Elder Skywarden
 					["maps"] = { 115 },	-- Dragonblight
 					["coord"] = { 35.1, 48.3, 115 },
 					["questID"] = 13031,	-- Skywarden the Elder
@@ -1151,7 +1151,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Snowcrown the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15566,	-- Elder Snowcrown
+					["provider"] = { "n", 15566 },	-- Elder Snowcrown
 					["maps"] = { 23 },	-- Eastern Plaguelands
 					["coord"] = { 75.7, 54.4, 23 },
 					["questID"] = 8650,	-- Snowcrown the Elder
@@ -1165,7 +1165,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Splitrock the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15556,	-- Elder Splitrock
+					["provider"] = { "n", 15556 },	-- Elder Splitrock
 					["maps"] = {
 						66,		-- Desolace
 						280,	-- Maraudon
@@ -1183,7 +1183,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Starglade the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15596,	-- Elder Starglade
+					["provider"] = { "n", 15596 },	-- Elder Starglade
 					["maps"] = { 50 },	-- Northern Stranglethorn
 					["coord"] = { 71.0, 34.2, 50 },
 					["questID"] = 8716,	-- Starglade the Elder
@@ -1197,7 +1197,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Starsong the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15593,	-- Elder Starsong
+					["provider"] = { "n", 15593 },	-- Elder Starsong
 					["maps"] = { 
 						51,		-- Swamp of Sorrows
 						220,	-- Sunken Temple
@@ -1215,7 +1215,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Starweave the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15601,	-- Elder Starweave
+					["provider"] = { "n", 15601 },	-- Elder Starweave
 					["maps"] = { 62 },	-- Darkshore
 					["coord"] = { 49.5, 18.9, 62 },
 					["questID"] = 8721,	-- Starweave the Elder
@@ -1230,7 +1230,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Stonebeard the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30375,	-- Elder Stonebeard
+					["provider"] = { "n", 30375 },	-- Elder Stonebeard
 					["maps"] = { 120 },	-- The Storm Peaks
 					["coord"] = { 31.2, 37.6, 120 },
 					["questID"] = 13020,	-- Stonebeard the Elder
@@ -1244,7 +1244,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Stonebrand the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 55217,	-- Elder Stonebrand
+					["provider"] = { "n", 55217 },	-- Elder Stonebrand
 					["maps"] = { 207 },	-- Deepholm
 					["coord"] = { 49.7, 54.8, 207 },
 					["questID"] = 29735,	-- Stonebrand the Elder
@@ -1258,7 +1258,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Stonefort the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15560,	-- Elder Stonefort
+					["provider"] = { "n", 15560 },	-- Elder Stonefort
 					["maps"] = {
 						36,		-- Burning Steppes
 						252,	-- Lower Blackrock Spire
@@ -1276,7 +1276,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Stonespire the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15574,	-- Elder Stonespire
+					["provider"] = { "n", 15574 },	-- Elder Stonespire
 					["maps"] = { 83 },	-- Winterspring
 					["coord"] = { 59.9, 49.9, 83 },
 					["questID"] = 8672,	-- Stonespire the Elder
@@ -1290,7 +1290,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Stormbrow the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15565,	-- Elder Stormbrow
+					["provider"] = { "n", 15565 },	-- Elder Stormbrow
 					["maps"] = { 37 },	-- 
 					["coord"] = { 39.8, 63.8, 37 },
 					["questID"] = 8649,	-- Stormbrow the Elder
@@ -1304,7 +1304,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Tauros the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30369,	-- Elder Tauros
+					["provider"] = { "n", 30369 },	-- Elder Tauros
 					["maps"] = { 121 },	-- Zul'Drak
 					["coord"] = { 58.9, 56.0, 121 },
 					["questID"] = 13027,	-- Tauros the Elder
@@ -1318,7 +1318,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Thoim the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30363,	-- Elder Thoim
+					["provider"] = { "n", 30363 },	-- Elder Thoim
 					["maps"] = { 115 },	-- Dragonblight
 					["coord"] = { 48.7, 78.1, 115 },
 					["questID"] = 13019,	-- Thoim the Elder
@@ -1332,7 +1332,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Thunderhorn the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15583,	-- Elder Thunderhorn
+					["provider"] = { "n", 15583 },	-- Elder Thunderhorn
 					["maps"] = { 78 },	-- Un'Goro Crater
 					["coord"] = { 50.3, 76.2, 78 },
 					["questID"] = 8681,	-- Thunderhorn the Elder
@@ -1346,7 +1346,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Wanikaya the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30365,	-- Elder Wanikaya
+					["provider"] = { "n", 30365 },	-- Elder Wanikaya
 					["maps"] = { 119 },	-- Sholazar Basin
 					["coord"] = { 63.8, 49.0, 119 },
 					["questID"] = 13024,	-- Wanikaya the Elder
@@ -1360,7 +1360,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Wheathoof the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15580,	-- Elder Wheathoof
+					["provider"] = { "n", 15580 },	-- Elder Wheathoof
 					["maps"] = { 88 },	-- Thunder Bluff
 					["coord"] = { 72.8, 22.8, 88 },
 					["questID"] = 8678,	-- Wheathoof the Elder
@@ -1375,7 +1375,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Whurain the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30372,	-- Elder Whurain
+					["provider"] = { "n", 30372 },	-- Elder Whurain
 					["maps"] = { 116 },	-- Grizzly Hills
 					["coord"] = { 64.2, 47.0, 116 },
 					["questID"] = 13030,	-- Whurain the Elder
@@ -1389,7 +1389,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Wildmane the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15578,	-- Elder Wildmane
+					["provider"] = { "n", 15578 },	-- Elder Wildmane
 					["maps"] = {
 						71,		-- Tanaris
 						219,	-- Zul'Farrak
@@ -1407,7 +1407,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Windrun the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15592,	-- Elder Windrun
+					["provider"] = { "n", 15592 },	-- Elder Windrun
 					["maps"] = { 23 },	-- Eastern Plaguelands
 					["coord"] = { 35.5, 68.8, 23 },
 					["questID"] = 8688,	-- Windrun the Elder
@@ -1421,7 +1421,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Windsong the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 55224,	-- Elder Windsong
+					["provider"] = { "n", 55224 },	-- Elder Windsong
 					["maps"] = { 198 },	-- Mount Hyjal
 					["coord"] = { 26.7, 62.0, 198 },
 					["questID"] = 29739,	-- Windsong the Elder
@@ -1435,7 +1435,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Windtotem the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15582,	-- Elder Windtotem
+					["provider"] = { "n", 15582 },	-- Elder Windtotem
 					["maps"] = { 10 },	-- Northern Barrens
 					["coord"] = { 68.4, 69.9, 10 },
 					["questID"] = 8680,	-- Windtotem the Elder
@@ -1449,7 +1449,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Winterhoof the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 15576,	-- Elder Winterhoof
+					["provider"] = { "n", 15576 },	-- Elder Winterhoof
 					["maps"] = { 210 },	-- Cape of Stranglethorn
 					["coord"] = { 40.0, 72.4, 210 },
 					["questID"] = 8674,	-- Winterhoof the Elder
@@ -1463,7 +1463,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 				{	-- Yurauk the Elder
 					["u"] = 17,	-- Lunar Festival
-					["qg"] = 30535,	-- Elder Yurauk
+					["provider"] = { "n", 30535 },	-- Elder Yurauk
 					["maps"] = {
 						120,	-- The Storm Peaks
 						140,	-- Halls of Stone

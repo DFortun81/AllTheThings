@@ -1531,7 +1531,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53711, {	-- A Sound Defense (Faction Assault WQ)
-						["qg"] = 135808,	-- Provisioner Fray <Proudmoore Admiralty Emissary>
+						["provider"] = { "n", 135808 },	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -1628,7 +1628,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53939, {	-- Breaching Boralus (Faction Assault WQ)
-						["qg"] = 135447,	-- Ransa Greyfeather <The Honorbound Emissary>
+						["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
@@ -1864,7 +1864,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52430, {	-- Not So Bad Down Here
-						["qg"] = 141077,	-- Kwint
+						["provider"] = { "n", 141077 },	-- Kwint
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {
@@ -1983,7 +1983,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52751, {	-- Strange Looking Dogs
-						["qg"] = 141479,	-- Burly
+						["provider"] = { "n", 141479 },	-- Burly
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {
@@ -2023,7 +2023,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52471, {	-- That's a Big Carcass
-						["qg"] = 141292,	-- Delia Hanako
+						["provider"] = { "n", 141292 },	-- Delia Hanako
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {
@@ -2088,7 +2088,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52455, {	-- Unbreakable
-						["qg"] = 141215,	-- Chitara
+						["provider"] = { "n", 141215 },	-- Chitara
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {

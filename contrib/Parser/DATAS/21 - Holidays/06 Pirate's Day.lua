@@ -8,7 +8,7 @@ _.Holidays = bubbleDown({["u"] = 23},
 			-- Note!! No bubbleDown needed since this has been fully redone
 			n(-4, {	-- Achievements *UCN18
 				ach(3457, {	-- The Captain's Booty *UCN18
-					["qg"] = 28048,	-- Dread Captain DeMeza <Scourge of the South Seas>
+					["provider"] = { "n", 28048 },	-- Dread Captain DeMeza <Scourge of the South Seas>
 					["u"] = 23,
 					["coord"] = {
 						40.01, 72.61,	-- Booty Bay Pirate Day Location
@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({["u"] = 23},
 						un(23, i(138414)),	-- Emergency Pirate Outfit
 					},
 					["repeatable"] = true,	-- Resets yearly
-					["qg"] = 28048,	-- Dread Captain DeMeza <Scourge of the South Seas>
+					["provider"] = { "n", 28048 },	-- Dread Captain DeMeza <Scourge of the South Seas>
 					["u"] = 23,
 					["coord"] = {
 						40.01, 72.61,	-- Booty Bay Pirate Day Location

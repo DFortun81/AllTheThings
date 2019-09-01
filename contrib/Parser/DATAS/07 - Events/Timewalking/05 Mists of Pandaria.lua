@@ -10,7 +10,7 @@ _.WorldEvents =
 				{	--  Shrouded Timewarped Coin
 					["itemID"] = 143776,	-- Shrouded Timewarped Coin
 					["questID"] = 45563,	-- The Shrouded Coin
-					["qg"] = 118828,	-- Mistweaver Xia
+					["provider"] = { "n", 118828 },	-- Mistweaver Xia
 					["isWeekly"] = true,
 				},
 				n(118828, {	-- Mistweaver Xia <Timewalking Vendor>

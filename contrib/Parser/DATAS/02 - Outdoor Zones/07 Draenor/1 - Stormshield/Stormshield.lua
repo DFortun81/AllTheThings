@@ -22,22 +22,22 @@ _.Zones =
 				}),
 				n(-17,  {	-- Quests
 					q(36626, {	-- Host Howell
-						["qg"] = 86095,	-- Private Tristan
+						["provider"] = { "n", 86095 },	-- Private Tristan
 						["coord"] = { 32.0, 50.5, 622 },
 						["sourceQuests"] = { 36624 },	-- Ashran Appearance
 					}),
 					q(36629, {	-- Inspiring Ashran
-						["qg"] = 86069,	-- Lieutenant Howell
+						["provider"] = { "n", 86069 },	-- Lieutenant Howell
 						["coord"] = { 35.6, 75.1, 622 },
 						["sourceQuests"] = { 36626 },	-- Host Howell
 					}),
 					q(36630 , {	-- A Surly Dwarf
-						["qg"] = 86069,	-- Lieutenant Howell
+						["provider"] = { "n", 86069 },	-- Lieutenant Howell
 						["coord"] = { 35.6, 75.1, 622 },
 						["sourceQuests"] = { 36629 },	-- Inspiring Ashran
 					}),
 					q(36633, {	-- Delvar Ironfist
-						["qg"] = 86084,	-- Delvar Ironfist
+						["provider"] = { "n", 86084 },	-- Delvar Ironfist
 						["coord"] = { 47.5, 30.8, 622 },
 						["sourceQuests"] = { 36630 },	-- A Surly Dwarf
 						["g"] = {

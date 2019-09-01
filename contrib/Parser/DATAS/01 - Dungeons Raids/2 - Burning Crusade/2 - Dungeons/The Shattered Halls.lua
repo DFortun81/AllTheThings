@@ -11,12 +11,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			n(-17, {	-- Quests
 				{	-- A Very Special Cloth
 					["questID"] = 29655,	-- A Very Special Cloth
-					["qg"] = 54931,			-- Stone Guard Stok'ton
+					["provider"] = { "n", 54931 },			-- Stone Guard Stok'ton
 					["races"] = HORDE_ONLY,
 				},
 				{	-- Fel Ember
 					["questID"] = 29650,	-- Fel Ember
-					["qg"] = 54931,			-- Stone Guard Stok'ton
+					["provider"] = { "n", 54931 },			-- Stone Guard Stok'ton
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25790),	-- Expedition Scout's Epaulets
@@ -28,12 +28,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 				{	-- Honor the Dying
 					["questID"] = 29651,	-- Honor the Dying
-					["qg"] = 54932,			-- Caza'rez
+					["provider"] = { "n", 54932 },			-- Caza'rez
 					["races"] = HORDE_ONLY,
 				},
 				{	-- How to Save a Life
 					["questID"] = 29649,	-- How to Save a Life
-					["qg"] = 54933,			-- Advance Scout Chadwick
+					["provider"] = { "n", 54933 },			-- Advance Scout Chadwick
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25790),	-- Expedition Scout's Epaulets
@@ -45,18 +45,18 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 				{	-- O'mrogg's Warcloth
 					["questID"] = 29656,	-- O'mrogg's Warcloth
-					["qg"] = 54933,			-- Advance Scout Chadwick
+					["provider"] = { "n", 54933 },			-- Advance Scout Chadwick
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- One Last Favor
 					["questID"] = 29652,	-- One Last Favor
-					["qg"] = 54934,			-- Gunny
+					["provider"] = { "n", 54934 },			-- Gunny
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- The Will of the Warchief
 					["questID"] = 29653,	-- The Will of the Warchief
 					["races"] = HORDE_ONLY,
-					["qg"] = 54931,			-- Stone Guard Stok'ton
+					["provider"] = { "n", 54931 },			-- Stone Guard Stok'ton
 					["g"] = {
 						i(25808),	-- Rod of Dire Shadows
 						i(25809),	-- Maimfist's Choker
@@ -66,7 +66,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 				{	-- Turning the Tide
 					["questID"] = 29654,	-- Turning the Tide
-					["qg"] = 54933,			-- Advance Scout Chadwick
+					["provider"] = { "n", 54933 },			-- Advance Scout Chadwick
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25806),	-- Nethekurse's Rod of Torment

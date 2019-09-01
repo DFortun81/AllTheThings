@@ -26,7 +26,7 @@ _.Zones =
 					["crs"] = { 61369 },	-- Toad
 				}),
 				q(31907, {	-- Zoltan
-					["qg"] = 66442,	-- Zoltan
+					["provider"] = { "n", 66442 },	-- Zoltan
 					["coord"] = { 40.0, 56.6, 77 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

@@ -10,7 +10,7 @@ _.Zones =
 				filter(200, {	-- Recipes
 					q(41666, {	-- Vantus Rune Work Order: Nythendra
 						["repeatable"] = true,
-						["qg"] = 106904,	-- Valdemar Stormseeker <Valarjar Emissary>
+						["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
 						["g"] = {
 							i(137768),	-- Vantus Rune Technique: Nythendra [Rank 3]
 						},

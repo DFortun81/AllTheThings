@@ -19,12 +19,12 @@ profession(393, {	-- Skinning
 					{
 						["questID"] = 40157,	-- An Unseemly Task
 						["sourceQuest"] = 40156,	-- Source Quest: Felhide Sample (Quest)
-						["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+						["provider"] = { "n", 93541 },			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
 					},
 					{
 						["questID"] = 40158,	-- Darkheart Thicket: Demons Be Different
 						["sourceQuest"] = 40157,	-- Source Quest: An Unseemly Task
-						["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+						["provider"] = { "n", 98720 },			-- Quest Giver: Ske'rit <Skinning Trainer>
 						["groups"] = {
 							recipe(194168),	-- Felhide [Rank 2]
 						},
@@ -32,7 +32,7 @@ profession(393, {	-- Skinning
 					{
 						["questID"] = 40159,	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
 						["sourceQuest"] = 40158,	-- Source Quest: Darkheart Thicket: Demons Be Different
-						["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+						["provider"] = { "n", 93541 },			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
 						["groups"] = {
 							recipe(194169),	-- Felhide [Rank 3]
 						},
@@ -73,7 +73,7 @@ profession(393, {	-- Skinning
 			{
 				["questID"] = 40142,	-- The Core of the Stormscale (Quest)
 				["sourceQuest"] = 40141,	-- Source Quest: Stormscale Sample
-				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+				["provider"] = { "n", 93541 },			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
 				["groups"] = {
 					recipe(194164),	-- Stormscale [Rank 1]
 				},
@@ -86,12 +86,12 @@ profession(393, {	-- Skinning
 			{
 				["questID"] = 40144,	-- Glielle (Quest)
 				["sourceQuest"] = 40143,	-- Source Quest: Unfinished Treatise on the Properties of Stormscale
-				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+				["provider"] = { "n", 93541 },			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
 			},
 			{
 				["questID"] = 40145,	-- Under Down (Quest)
 				["sourceQuest"] = 40144,	-- Source Quest: Glielle
-				["qg"] = 98791,			-- Quest Giver: Glielle <Skinning Trainer>
+				["provider"] = { "n", 98791 },			-- Quest Giver: Glielle <Skinning Trainer>
 				["groups"] = {
 					recipe(194165),	-- Stormscale [Rank 2]
 				},
@@ -99,22 +99,22 @@ profession(393, {	-- Skinning
 			{
 				["questID"] = 40146,	-- Seymour and Agnes (Quest)
 				["sourceQuest"] = 40143,	-- Source Quest: Unfinished Treatise on the Properties of Stormscale
-				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+				["provider"] = { "n", 93541 },			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
 			},
 			{
 				["questID"] = 40147,	-- Mother's Prized Knife (Quest)
 				["sourceQuest"] = 40146,	-- Source Quest: Seymour and Agnes
-				["qg"] = 98721,			-- Quest Giver: Seymour <Skinning Trainer>
+				["provider"] = { "n", 98721 },			-- Quest Giver: Seymour <Skinning Trainer>
 			},
 			{
 				["questID"] = 40148,	-- Red-Eyed Revenge (Quest)
 				["sourceQuest"] = 40146,	-- Source Quest: Seymour and Agnes
-				["qg"] = 98721,			-- Quest Giver: Seymour <Skinning Trainer>
+				["provider"] = { "n", 98721 },			-- Quest Giver: Seymour <Skinning Trainer>
 			},
 			{
 				["questID"] = 40149,	-- Drakol'nir Must Die (Quest)
 				["sourceQuests"] = {40147,40148},	-- Source Quest: Mother's Prized Knife / Seymour and Agnes
-				["qg"] = 98721,			-- Quest Giver: Seymour <Skinning Trainer>
+				["provider"] = { "n", 98721 },			-- Quest Giver: Seymour <Skinning Trainer>
 				["groups"] = {
 					i(130102),	-- Mother's Skinning Knife
 				},
@@ -127,22 +127,22 @@ profession(393, {	-- Skinning
 			{
 				["questID"] = 40152,	-- Scales for Ske'rit (Quest)
 				["sourceQuest"] = 40151,	-- Source Quest: Immaculate Stormscale (Quest)
-				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+				["provider"] = { "n", 93541 },			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
 			},
 			{
 				["questID"] = 40153,	-- Return to Karazhan: Scales of Legend (Quest)
 				["sourceQuest"] = 40152,	-- Source Quest: Scales for Ske'rit (Quest)
-				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+				["provider"] = { "n", 98720 },			-- Quest Giver: Ske'rit <Skinning Trainer>
 			},
 			{
 				["questID"] = 40154,	-- Eye of Azshara: The Scales of Serpentrix (Quest)
 				["sourceQuest"] = 40152,	-- Source Quest: Scales for Ske'rit (Quest)
-				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+				["provider"] = { "n", 98720 },			-- Quest Giver: Ske'rit <Skinning Trainer>
 			},
 			{
 				["questID"] = 40155,	-- Eye of Azshara: The Scales of Serpentrix (Quest)
 				["sourceQuests"] = {40153,40154},	-- Source Quest: Return to Karazhan: Scales of Legend / Eye of Azshara: The Scales of Serpentrix
-				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+				["provider"] = { "n", 98720 },			-- Quest Giver: Ske'rit <Skinning Trainer>
 				["groups"] = {
 					recipe(194166),	-- Stormscale [Rank 3]
 				},
@@ -156,7 +156,7 @@ profession(393, {	-- Skinning
 			{
 				["questID"] = 40132,	-- In One Piece (Quest)
 				["sourceQuest"] = 40131,	-- Source Quest: Stonehide Leather Sample
-				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+				["provider"] = { "n", 93541 },			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
 				["groups"] = {
 					recipe(194161),	-- Stonehide Leather [Rank 1]
 				},
@@ -169,7 +169,7 @@ profession(393, {	-- Skinning
 			{
 				["questID"] = 40134,	-- Highmountain Hides (Quest)
 				["sourceQuest"] = 40133,	-- Source Quest: Scrap of Pants
-				["qg"] = 94409,			-- Quest Giver: Hemet Nesingwary <Hemet's Hunting Party>
+				["provider"] = { "n", 94409 },			-- Quest Giver: Hemet Nesingwary <Hemet's Hunting Party>
 				["groups"] = {
 					i(130064, {	-- Deadeye Monocle
 						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
@@ -179,7 +179,7 @@ profession(393, {	-- Skinning
 			{
 				["questID"] = 40135,	-- The Freedom to Roam (Quest)
 				["sourceQuest"] = 40133,	-- Source Quest: Scrap of Pants
-				["qg"] = 94409,			-- Quest Giver: Hemet Nesingwary <Hemet's Hunting Party>
+				["provider"] = { "n", 94409 },			-- Quest Giver: Hemet Nesingwary <Hemet's Hunting Party>
 				["groups"] = {
 					recipe(194162),	-- Stonehide Leather [Rank 2]
 				},
@@ -192,22 +192,22 @@ profession(393, {	-- Skinning
 			{
 				["questID"] = 40137,	-- Leather for Ske'rit (Quest)
 				["sourceQuest"] = 40136,	-- Source Quest: Immaculate Stonehide Leather
-				["qg"] = 93541,			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
+				["provider"] = { "n", 93541 },			-- Quest Giver: Kondal Huntsworn <Skinning Trainer>
 			},
 			{
 				["questID"] = 40138,	-- Trial of the Crusader: Hides of Legend (Quest)
 				["sourceQuest"] = 40137,	-- Source Quest: Leather for Ske'rit
-				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+				["provider"] = { "n", 98720 },			-- Quest Giver: Ske'rit <Skinning Trainer>
 			},
 			{
 				["questID"] = 40139,	-- Halls of Valor: The Hide of Fenryr (Quest)
 				["sourceQuest"] = 40137,	-- Source Quest: Leather for Ske'rit
-				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+				["provider"] = { "n", 98720 },			-- Quest Giver: Ske'rit <Skinning Trainer>
 			},
 			{
 				["questID"] = 40140,	-- Ske'rit's Leather Handbook (Quest)
 				["sourceQuests"] = {40138,40139},	-- Source Quest: Trial of the Crusader: Hides of Legend / Halls of Valor: The Hide of Fenryr
-				["qg"] = 98720,			-- Quest Giver: Ske'rit <Skinning Trainer>
+				["provider"] = { "n", 98720 },			-- Quest Giver: Ske'rit <Skinning Trainer>
 				["groups"] = {
 					recipe(194163),	-- Stonehide Leather [Rank 3]
 				},

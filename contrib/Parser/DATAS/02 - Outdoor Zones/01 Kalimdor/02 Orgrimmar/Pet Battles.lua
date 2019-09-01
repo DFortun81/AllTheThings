@@ -78,7 +78,7 @@ _.Zones =
 					},
 				}),
 				q(31967, {	-- Battle Pet Tamers: Cataclysm
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -86,7 +86,7 @@ _.Zones =
 					},
 				}),
 				q(31903, {	-- Battle Pet Tamers: Eastern Kingdoms
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -94,7 +94,7 @@ _.Zones =
 					},
 				}),
 				q(31891, {	-- Battle Pet Tamers: Kalimdor
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -102,7 +102,7 @@ _.Zones =
 					},
 				}),
 				q(31929, {	-- Battle Pet Tamers: Northrend
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -110,7 +110,7 @@ _.Zones =
 					},
 				}),
 				q(31921, {	-- Battle Pet Tamers: Outland
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -118,7 +118,7 @@ _.Zones =
 					},
 				}),
 				q(31952, {	-- Battle Pet Tamers: Pandaria
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -126,57 +126,57 @@ _.Zones =
 					},
 				}),
 				q(31590, {	-- Got one!
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31827 },	-- Level Up!
 				}),
 				q(31587, {	-- Got one!
-					["qg"] = 63086,	-- Matty
+					["provider"] = { "n", 63086 },	-- Matty
 					["coord"] = { 36.8, 77.4, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31828 },	-- Level Up!
 				}),
 				q(31588, {	-- Learning the Ropes
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31585, {	-- Learning the Ropes
-					["qg"] = 63086,	-- Matty
+					["provider"] = { "n", 63086 },	-- Matty
 					["coord"] = { 36.8, 77.4, 85 },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31827, {	-- Level Up!
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31589 },	-- On The Mend
 				}),
 				q(31828, {	-- Level Up!
-					["qg"] = 63086,	-- Matty
+					["provider"] = { "n", 63086 },	-- Matty
 					["coord"] = { 36.8, 77.4, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31586 },	-- On The Mend
 				}),
 				q(31589, {	-- On The Mend
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31588 },	-- Learning the Ropes
 					
 				}),
 				q(31586, {	-- On The Mend
-					["qg"] = 63086,	-- Matty
+					["provider"] = { "n", 63086 },	-- Matty
 					["coord"] = { 36.8, 77.4, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31585 },	-- Learning the Ropes
 					
 				}),
 				q(32009, {	-- Varzok
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -204,7 +204,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(32863, {	-- What We've Been Training For
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -213,7 +213,7 @@ _.Zones =
 					},
 				}),
 				q(31812, {	-- Zunta, The Pet Tramer
-					["qg"] = 63626,	-- Varzok
+					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {

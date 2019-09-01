@@ -7,7 +7,7 @@ _.Zones =
 		m(864, {	-- Vol'dun
 			n(-169, {	-- Emissary Quests
 				q(54461, {	-- Supplies from the Voldunai
-					["qg"] = 135804,	-- Hoarder Jena
+					["provider"] = { "n", 135804 },	-- Hoarder Jena
 					["lvl"] = 120,
 					["coord"] = { 56.68, 49.74, 864 },
 					["races"] = HORDE_ONLY,
@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				q(50603, {	-- Voldunai
-					["qg"] = 135804,	-- Hoarder Jena
+					["provider"] = { "n", 135804 },	-- Hoarder Jena
 					["lvl"] = 120,
 					["coord"] = { 56.68, 49.74, 864 },
 					["races"] = HORDE_ONLY,

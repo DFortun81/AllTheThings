@@ -10,21 +10,21 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(29573, {	-- Safety is Job One
-					["qg"] = 54692,	-- Artificer Morphalius
+					["provider"] = { "n", 54692 },	-- Artificer Morphalius
 					["sourceQuests"] = {
 						29582,	-- Grek's Crazy Night
 						29583,	-- Eckert the Mad
 					},
 				}),
 				q(29575, {	-- Undercutting the Competition
-					["qg"] = 54692,	-- Artificer Morphalius
+					["provider"] = { "n", 54692 },	-- Artificer Morphalius
 					["sourceQuests"] = {
 						29582,	-- Grek's Crazy Night
 						29583,	-- Eckert the Mad
 					},
 				}),
 				q(29574, {	-- Intriguing Specimens
-					["qg"] = 54694,	-- Mamdy the "Ologist"
+					["provider"] = { "n", 54694 },	-- Mamdy the "Ologist"
 				}),
 			}),
 			n(0, {	-- Zone Drops

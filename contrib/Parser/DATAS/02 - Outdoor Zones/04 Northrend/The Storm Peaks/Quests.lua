@@ -27,23 +27,23 @@ _.Zones =
 					},
 				}),
 				q(12925, {	-- Aberrations
-					["qg"] = 30041,	-- Thyra Kvinnshal
+					["provider"] = { "n", 30041 },	-- Thyra Kvinnshal
 					["coord"] = { 48.4, 72.1, 120 },
 					["sourceQuests"] = { 12841 },	-- The Crone's Bargain
 					-- May have additional SQs, needs confirmation.
 				}),
 				q(12908, {	-- A Certain Prisoner
-					["qg"] = 29885,	-- Mildred the Cruel
+					["provider"] = { "n", 29885 },	-- Mildred the Cruel
 					["coord"] = { 44.4, 68.9, 120 },
 					["sourceQuests"] = { 12907 },	-- Examples to be Made
 				}),
 				q(12921, {	-- A Change of Scenery
-					["qg"] = 29481,	-- Lok'lira the Crone
+					["provider"] = { "n", 29481 },	-- Lok'lira the Crone
 					["coord"] = { 42.8, 68.8, 120 },
 					["sourceQuests"] = { 12908 },	-- A Certain Prisoner
 				}),
 				q(12993, {	-- A Colossal Threat
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = {
 						12988,	-- Destroy the Forges! (probably required)
@@ -51,7 +51,7 @@ _.Zones =
 					},
 				}),
 				q(12820, {	-- A Delicate Touch
-					["qg"] = 29428,	-- Ricket
+					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 					["sourceQuests"] = { 12826 },	-- Slightly Unstable
 					["g"] = {
@@ -62,23 +62,23 @@ _.Zones =
 					},
 				}),
 				q(12823, {	-- A Flawless Plan
-					["qg"] = 29432,	-- Gino
+					["provider"] = { "n", 29432 },	-- Gino
 					["coord"] = { 50.0, 81.7, 120 },
 					["sourceQuests"] = { 12821 },	-- Opening the Backdoor
 				}),
 				q(12871, {	-- Aid from the Explorers' League
-					["qg"] = 29579,	-- Brann Bronzebeard
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12872 },	-- Norgannon's Shell
 				}),
 				q(12976, {	-- A Monument to the Fallen
-					["qg"] = 30105,	-- King Jokkum
+					["provider"] = { "n", 30105 },	-- King Jokkum
 					["coord"] = { 65.4, 60.1, 120 },
 					["sourceQuests"] = { 12975 },	-- In Memoriam
 				}),
 				q(12828, {	-- Ample Inspiration
-					["qg"] = 29428,	-- Ricket
+					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 					["sourceQuests"] = { 12836 },	-- Expression of Gratitude
 					["g"] = {
@@ -90,24 +90,24 @@ _.Zones =
 					},
 				}),
 				q(12870, {	-- Ancient Relics
-					["qg"] = 29744,	-- Rork Sharpchin
+					["provider"] = { "n", 29744 },	-- Rork Sharpchin
 					["coord"] = { 28.8, 74.0, 120 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13009, {	-- A New Beginning
-					["qg"] = 30127,	-- Njormeld
+					["provider"] = { "n", 30127 },	-- Njormeld
 					["coord"] = { 63.2, 63.2, 120 },
 					["sourceQuests"] = { 12967 },	-- Battling the Elements
 				}),
 				q(12875, {	-- An Experienced Guide
-					["qg"] = 29593,	-- Yorg Stormheart
+					["provider"] = { "n", 29593 },	-- Yorg Stormheart
 					["coord"] = { 30.2, 74.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12874 },	-- Fervor of the Frostborn
 				}),
 				q(12979, {	-- Armor of Darkness
 					["itemID"] = 42203,	-- Dark Armor Plate
-					["qg"] = 29380,	-- Stormforged War Golem
+					["provider"] = { "n", 29380 },	-- Stormforged War Golem
 					["coord"] = { 25.0, 45.2, 120 },
 					-- ["sourceQuests"] = { 12978 },	-- Facing the Storm
 					-- prereq needs to be confirmed
@@ -122,13 +122,13 @@ _.Zones =
 					},
 				}),
 				q(12867, {	-- Baby Stealers (awarded "The Harpy Problem" achievement criteria)
-					["qg"] = 29732,	-- Fjorlin Frostbrow
+					["provider"] = { "n", 29732 },	-- Fjorlin Frostbrow
 					["coord"] = { 29.8, 75.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12865 },	-- Loyal Companions
 				}),
 				q(13424, {	-- Back to the Pit
-					["qg"] = 29796,	-- Gretta the Arbiter
+					["provider"] = { "n", 29796 },	-- Gretta the Arbiter
 					["coord"] = { 50.8, 65.6, 120 },
 					["isDaily"] = true,
 					["sourceQuests"] = { 13061 },	-- Into the Pit
@@ -137,12 +137,12 @@ _.Zones =
 					},
 				}),
 				q(12967, {	-- Battling the Elements
-					["qg"] = 30099,	-- Njormeld
+					["provider"] = { "n", 30099 },	-- Njormeld
 					["coord"] = { 75.3, 63.5, 120 },
 					["sourceQuests"] = { 12966 },	-- You Can't Miss Him
 				}),
 				q(12832, {	-- Bitter Departure
-					["qg"] = 29434,	-- Injured Goblin Miner
+					["provider"] = { "n", 29434 },	-- Injured Goblin Miner
 					["sourceQuests"] = { 12831 },	-- Only Partly Forgotten
 					["coords"] = {	-- Can be picked up from the same NPC in multiple locations
 						{ 41.4, 74.8, 120 },
@@ -167,27 +167,27 @@ _.Zones =
 					},
 				}),
 				q(12818, {	-- Clean Up
-					["qg"] = 29431,	-- Jeer Sparksocket
+					["provider"] = { "n", 29431 },	-- Jeer Sparksocket
 					["coord"] = { 41.0, 86.4, 120 },
 				}),
 				q(12856, {	-- Cold Hearted
-					["qg"] = 29592,	-- Brijana
+					["provider"] = { "n", 29592 },	-- Brijana
 					["coord"] = { 53.1, 65.7, 120 },
 					["sourceQuests"] = { 12851 },	-- Going Bearback
 				}),
 				q(12860, {	-- Data Mining
-					["qg"] = 29579,	-- Brann Bronzebeard
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12858 },	-- Pieces to the Puzzle
 				}),
 				q(13063, {	-- Deemed Worthy
-					["qg"] = 29592,	-- Brijana
+					["provider"] = { "n", 29592 },	-- Brijana
 					["coord"] = { 53.1, 65.7, 120 },
 					["sourceQuests"] = { 12856 },	-- Cold Hearted
 				}),
 				q(13423, {	-- Defending Your Title
-					["qg"] = 29796,	-- Gretta the Arbiter
+					["provider"] = { "n", 29796 },	-- Gretta the Arbiter
 					["coord"] = { 50.8, 65.6, 120 },
 					["isDaily"] = true,
 					["sourceQuests"] = { 12971 },	-- Taking on All Challengers
@@ -196,7 +196,7 @@ _.Zones =
 					},
 				}),
 				q(12824, {	-- Demolitionist Extraordinaire
-					["qg"] = 29432,	-- Gino
+					["provider"] = { "n", 29432 },	-- Gino
 					["coord"] = { 50.0, 81.7, 120 },
 					["sourceQuests"] = { 12823 },	-- A Flawless Plan
 					["g"] = {
@@ -208,12 +208,12 @@ _.Zones =
 					},
 				}),
 				q(12988, {	-- Destroy the Forges!
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12984 },	-- Valduran the Stormborn
 				}),
 				q(12906, {	-- Discipline
-					["qg"] = 29885,	-- Mildred the Cruel
+					["provider"] = { "n", 29885 },	-- Mildred the Cruel
 					["coord"] = { 44.4, 68.9, 120 },
 					["sourceQuests"] = { 12905 },	-- Mildred the Cruel
 					["g"] = {
@@ -233,21 +233,21 @@ _.Zones =
 					},
 				}),
 				q(12844, {	-- Equipment Recovery
-					["qg"] = 29473,	-- Gretchen Fizzlespark
+					["provider"] = { "n", 29473 },	-- Gretchen Fizzlespark
 					["coord"] = { 41.1, 86.1, 120 },
 					-- Not required for "Defending K3" criteria.
 				}),
 				q(12907, {	-- Examples to be Made
-					["qg"] = 29885,	-- Mildred the Cruel
+					["provider"] = { "n", 29885 },	-- Mildred the Cruel
 					["coord"] = { 44.4, 68.9, 120 },
 					["sourceQuests"] = { 12906 },	-- Discipline
 				}),
 				q(12836, {	-- Expression of Gratitude
-					["qg"] = 29428,	-- Ricket
+					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 				}),
 				q(12978, {	-- Facing the Storm
-					["qg"] = 30152,	-- Bruor Ironbane
+					["provider"] = { "n", 30152 },	-- Bruor Ironbane
 					["coord"] = { 31.2, 38.1, 120 },
 					["sourceQuests"] = {
 						12957,	-- Slaves of the Stormforged (probably required)
@@ -255,7 +255,7 @@ _.Zones =
 					},
 				}),
 				q(12986, {	-- Fate of the Titans
-					["qg"] = 30052,	-- Creteus
+					["provider"] = { "n", 30052 },	-- Creteus
 					["coord"] = { 39.2, 59.6, 120 },	-- approximate, as NPC patrols a short path back and forth
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12877 },	-- The Lonesome Watcher
@@ -267,7 +267,7 @@ _.Zones =
 					},
 				}),
 				q(12874, {	-- Fervor of the Frostborn
-					["qg"] = 29593,	-- Yorg Stormheart
+					["provider"] = { "n", 29593 },	-- Yorg Stormheart
 					["coord"] = { 30.2, 74.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12873 },	-- The Frostborn King
@@ -279,12 +279,12 @@ _.Zones =
 					},
 				}),
 				q(12931, {	-- Fighting Back
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12930 },	-- Rare Earth
 				}),
 				q(12924, {	-- Forging an Alliance
-					["qg"] = 29445,	-- Thorim
+					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 58.0, 120 },
 					["description"] = "To progress through this quest, pick up the quest 'You Can't Miss Him' from King Jokkum.",
 					["sourceQuests"] = { 12956 },	-- A Spark of Hope
@@ -297,29 +297,29 @@ _.Zones =
 					},
 				}),
 				q(12879, {	-- Fury of the Frostborn King
-					["qg"] = 30548,	-- The Guardian's Charge (looks like an object, but is actually an NPC)
+					["provider"] = { "n", 30548 },	-- The Guardian's Charge (looks like an object, but is actually an NPC)
 					["coord"] = { 44.5, 64.5, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12878 },	-- The Hidden Relic
 				}),
 				q(12851, {	-- Going Bearback
-					["qg"] = 29592,	-- Brijana
+					["provider"] = { "n", 29592 },	-- Brijana
 					["coord"] = { 53.1, 65.7, 120 },
 					["sourceQuests"] = { 12972 },	-- You'll Need a Bear
 				}),
 				q(12991, {	-- Hit Them Where it Hurts
-					["qg"] = 30152,	-- Bruor Ironbane
+					["provider"] = { "n", 30152 },	-- Bruor Ironbane
 					["coord"] = { 31.2, 38.1, 120 },
 					["sourceQuests"] = { 12984 },	-- Valduran the Stormborn
 				}),
 				q(12975, {	-- In Memoriam
-					["qg"] = 30105,	-- King Jokkum
+					["provider"] = { "n", 30105 },	-- King Jokkum
 					["coord"] = { 65.4, 60.1, 120 },
 					["sourceQuests"] = { 12924 },	-- Forging an Alliance
 					-- SQ needs verification
 				}),
 				q(12997, {	-- Into the Pit
-					["qg"] = 29839,	-- Astrid Bjornrittar
+					["provider"] = { "n", 29839 },	-- Astrid Bjornrittar
 					["coord"] = { 49.7, 71.7, 120 },
 					["sourceQuests"] = { 12996 },	-- The Warm-Up
 				}),
@@ -341,22 +341,22 @@ _.Zones =
 					},
 				}),
 				q(12969, {	-- Is That Your Goblin?
-					["qg"] = 29975,	-- Lok'lira the Crone
+					["provider"] = { "n", 29975 },	-- Lok'lira the Crone
 					["coord"] = { 47.4, 69.0, 120 },
 					["sourceQuests"] = { 12921 },	-- A Change of Scenery
 				}),
 				q(12819, {	-- Just Around the Corner
-					["qg"] = 29431,	-- Jeer Sparksocket
+					["provider"] = { "n", 29431 },	-- Jeer Sparksocket
 					["coord"] = { 41.0, 86.4, 120 },
 					["sourceQuests"] = { 12818 },	-- Clean Up
 				}),
 				q(12822, {	-- Know No Fear (awarded "Defending K3" criteria)
-					["qg"] = 29428,	-- Ricket
+					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 					["sourceQuests"] = { 12821 },	-- Opening the Backdoor
 				}),
 				q(13010, {	-- Krolmir, Hammer of Storms
-					["qg"] = 29445,	-- Thorim
+					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 57.9, 120 },
 					["sourceQuests"] = { 13051 },	-- Territorial Trespass
 					["g"] = {
@@ -367,22 +367,22 @@ _.Zones =
 					},
 				}),
 				q(12846, {	-- Leave No Goblin Behind
-					["qg"] = 29473,	-- Gretchen Fizzlespark
+					["provider"] = { "n", 29473 },	-- Gretchen Fizzlespark
 					["coord"] = { 41.1, 86.1, 120 },
 					["sourceQuests"] = { 12843 },	-- They Took Our Men!
 				}),
 				q(13035, {	-- Loken's Lackeys
-					["qg"] = 30295,	-- Thorim
+					["provider"] = { "n", 30295 },	-- Thorim
 					["coord"] = { 56.2, 51.3, 120 },
 					["sourceQuests"] = { 13057 },	-- The Terrace of the Makers
 				}),
 				q(13062, {	-- Lok'lira's Parting Gift
-					["qg"] = 29975,	-- Lok'lira the Crone
+					["provider"] = { "n", 29975 },	-- Lok'lira the Crone
 					["coord"] = { 47.4, 69.0, 120 },
 					["sourceQuests"] = { 13061 },	-- Prepare for Glory
 				}),
 				q(12865, {	-- Loyal Companions
-					["qg"] = 29732,	-- Fjorlin Frostbrow
+					["provider"] = { "n", 29732 },	-- Fjorlin Frostbrow
 					["coord"] = { 29.8, 75.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12863 },	-- Offering Thanks
@@ -394,7 +394,7 @@ _.Zones =
 					},
 				}),
 				q(13422, {	-- Maintaining Discipline
-					["qg"] = 29796,	-- Gretta the Arbiter
+					["provider"] = { "n", 29796 },	-- Gretta the Arbiter
 					["coord"] = { 50.8, 65.6, 120 },
 					["isDaily"] = true,
 					["sourceQuests"] = { 12906 },	-- Discipline
@@ -403,7 +403,7 @@ _.Zones =
 					},
 				}),
 				q(12900, {	-- Making a Harness
-					["qg"] = 29839,	-- Astrid Bjornrittar
+					["provider"] = { "n", 29839 },	-- Astrid Bjornrittar
 					["coord"] = { 49.7, 71.8, 120 },
 					["sourceQuests"] = { 13063 },	-- Deemed Worthy
 					["g"] = {
@@ -414,23 +414,23 @@ _.Zones =
 					},
 				}),
 				q(12915, {	-- Mending Fences
-					["qg"] = 29445,	-- Thorim
+					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 58.0, 120 },
 					["sourceQuests"] = { 13064 },	-- Sibling Rivalry
 				}),
 				q(12905, {	-- Mildred the Cruel
-					["qg"] = 29481,	-- Lok'lira the Crone
+					["provider"] = { "n", 29481 },	-- Lok'lira the Crone
 					["coord"] = { 42.8, 68.8, 120 },
 					["sourceQuests"] = { 12841 },	-- The Crone's Bargain
 				}),
 				q(12864, {	-- Missing Scouts
-					["qg"] = 29727,	-- Glorthal Stiffbeard
+					["provider"] = { "n", 29727 },	-- Glorthal Stiffbeard
 					["coord"] = { 29.1, 74.9, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12863 },	-- Offering Thanks
 				}),
 				q(12829, {	-- Moving In
-					["qg"] = 29430,	-- Tore Rumblewrench
+					["provider"] = { "n", 29430 },	-- Tore Rumblewrench
 					["coord"] = { 41.6, 80.0, 120 },
 					["sourceQuests"] = { 12827 },	-- Reclaimed Rations
 					-- May have additional SQ
@@ -446,12 +446,12 @@ _.Zones =
 					},
 				}),
 				q(12863, {	-- Offering Thanks
-					["qg"] = 29743,	-- Lagnus
+					["provider"] = { "n", 29743 },	-- Lagnus
 					["coord"] = { 29.4, 73.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12942, {	-- Off With Their Black Wings
-					["qg"] = 29997,	-- Iva the Vengeful
+					["provider"] = { "n", 29997 },	-- Iva the Vengeful
 					["coord"] = { 48.3, 72.1, 120 },
 					["sourceQuests"] = { 12841 },	-- The Crone's Bargain
 					-- May have additional SQs, needs confirmation.
@@ -464,12 +464,12 @@ _.Zones =
 					},
 				}),
 				q(12854, {	-- On Brann's Trail
-					["qg"] = 29650,	-- Archaeologist Andorin
+					["provider"] = { "n", 29650 },	-- Archaeologist Andorin
 					["coord"] = { 29.6, 74.0, 120 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12831, {	-- Only Partly Forgotten
-					["qg"] = 29434,	-- Injured Goblin Miner
+					["provider"] = { "n", 29434 },	-- Injured Goblin Miner
 					["description"] = "You can pick up this quest from any of the Injured Goblin Miners inside the mine.",
 					["coords"] = {	-- Can be picked up from the same NPC in multiple locations
 						{ 41.4, 74.8, 120 },
@@ -481,68 +481,68 @@ _.Zones =
 					},
 				}),
 				q(12821, {	-- Opening the Backdoor
-					["qg"] = 29428,	-- Ricket
+					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 					["sourceQuests"] = { 12832 },	-- Bitter Departure
 					-- May have additional SQ
 				}),
 				q(12830, {	-- Ore Repossession
-					["qg"] = 29430,	-- Tore Rumblewrench
+					["provider"] = { "n", 29430 },	-- Tore Rumblewrench
 					["coord"] = { 41.6, 80.0, 120 },
 					["sourceQuests"] = { 12827 },	-- Reclaimed Rations
 					-- May have additional SQ
 				}),
 				q(12833, {	-- Overstock
-					["qg"] = 29428,	-- Ricket
+					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 					["isDaily"] = true,
 					["sourceQuests"] = { 12824 },	-- Demolitionist Extraordinaire
 				}),
 				q(12858, {	-- Pieces to the Puzzle
-					["qg"] = 29579,	-- Brann Bronzebeard
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12855 },	-- Sniffing Out the Perpetrator
 				}),
 				q(13061, {	-- Prepare for Glory
-					["qg"] = 29839,	-- Astrid Bjornrittar
+					["provider"] = { "n", 29839 },	-- Astrid Bjornrittar
 					["coord"] = { 49.7, 71.7, 120 },
 					["sourceQuests"] = { 12997 },	-- Into the Pit
 				}),
 				q(12869, {	-- Pushed Too Far
-					["qg"] = 29732,	-- Fjorlin Frostbrow
+					["provider"] = { "n", 29732 },	-- Fjorlin Frostbrow
 					["coord"] = { 29.8, 75.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					-- this quest appeared for me after turning in "the brother's bronzebeard," which was the last quest i did for its criteria + the overall zone.  i'm not sure if the quest itself is a prerequisite or if it's based on reputation, because i also hit friendly with alliance vanguard when turning it in.  some wowhead comments said it had different requirements, so i'm not sure what to put for SQ or a description.
 				}),
 				q(12930, {	-- Rare Earth
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12885 },	-- The Exiles of Ulduar
 				}),
 				q(12827, {	-- Reclaimed Rations
-					["qg"] = 29428,	-- Ricket
+					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 				}),
 				q(12937, {	-- Relief for the Fallen
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12930 },	-- Rare Earth
 				}),
 				q(12888, {	-- SCRAP-E
-					["qg"] = 29724,	-- Library Guardian
+					["provider"] = { "n", 29724 },	-- Library Guardian
 					["coord"] = { 39.2, 42.0, 120 },	-- general area
 					["itemID"] = 41267,	-- SCRAP-E Access Card
 					["requireSkill"] = 202,	-- Engineering
 				}),
 				q(13064, {	-- Sibling Rivalry (awarded "Heartbreak" achievement criteria)
-					["qg"] = 29445,	-- Thorim
+					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 58.0, 120 },
 					["sourceQuests"] = { 12886 },	-- The Drakkensryd
 				}),
 				q(12868, {	-- Sirana Iceshriek
-					["qg"] = 29727,	-- Glorthal Stiffbeard
+					["provider"] = { "n", 29727 },	-- Glorthal Stiffbeard
 					["coord"] = { 29.1, 74.9, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12866 },	-- Stemming the Aggressors
@@ -552,7 +552,7 @@ _.Zones =
 					},
 				}),
 				q(12957, {	-- Slaves of the Stormforged
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = {
 						12931,	-- Fighting Back (possibly required)
@@ -560,30 +560,30 @@ _.Zones =
 					},
 				}),
 				q(12826, {	-- Slightly Unstable
-					["qg"] = 29431,	-- Jeer Sparksocket
+					["provider"] = { "n", 29431 },	-- Jeer Sparksocket
 					["coord"] = { 41.0, 86.4, 120 },
 					["sourceQuests"] = { 12819 },	-- Just Around the Corner
 				}),
 				q(12855, {	-- Sniffing Out the Perpetrator
-					["qg"] = 29650,	-- Archaeologist Andorin
+					["provider"] = { "n", 29650 },	-- Archaeologist Andorin
 					["coord"] = { 29.6, 74.0, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12854 },	-- On Brann's Trail
 				}),
 				q(12866, {	-- Stemming the Aggressors
-					["qg"] = 29727,	-- Glorthal Stiffbeard
+					["provider"] = { "n", 29727 },	-- Glorthal Stiffbeard
 					["coord"] = { 29.1, 74.9, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12864 },	-- Missing Scouts
 				}),
 				q(29863, {	-- Stormherald Eljrrin
-					["qg"] = 30105,	-- King Jokkum
+					["provider"] = { "n", 30105 },	-- King Jokkum
 					["coord"] = { 65.4, 60.1, 120 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 13047 },	-- The Reckoning
 				}),
 				q(12971, {	-- Taking on All Challengers
-					["qg"] = 29975,	-- Lok'lira the Crone
+					["provider"] = { "n", 29975 },	-- Lok'lira the Crone
 					["coord"] = { 47.4, 69.0, 120 },
 					["sourceQuests"] = { 12970 },	-- The Hyldsmeet
 					["g"] = {
@@ -594,7 +594,7 @@ _.Zones =
 					},
 				}),
 				q(13051, {	-- Territorial Trespass
-					["qg"] = 29445,	-- Thorim
+					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 57.9, 120 },
 					["sourceQuests"] = { 13050 },	-- Veranus
 					["g"] = {
@@ -606,7 +606,7 @@ _.Zones =
 					},
 				}),
 				q(13425, {	-- The Aberrations Must Die
-					["qg"] = 29796,	-- Gretta the Arbiter
+					["provider"] = { "n", 29796 },	-- Gretta the Arbiter
 					["coord"] = { 50.8, 65.6, 120 },
 					["isDaily"] = true,
 					["sourceQuests"] = { 12925 },	-- Aberrations
@@ -615,7 +615,7 @@ _.Zones =
 					},
 				}),
 				q(12980, {	-- The Armor's Secrets
-					["qg"] = 30152,	-- Bruor Ironbane
+					["provider"] = { "n", 30152 },	-- Bruor Ironbane
 					["coord"] = { 31.2, 38.1, 120 },
 					["sourceQuests"] = { 12979 },	-- Armor of Darkness
 				}),
@@ -624,7 +624,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12973, {	-- The Brothers Bronzebeard (awarded "For the Frostborn King" criteria before turning in quest)
-					["qg"] = 30382,	-- Brann Bronzebeard
+					["provider"] = { "n", 30382 },	-- Brann Bronzebeard
 					["coord"] = { 39.5, 56.3, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12880 },	-- The Master Explorer
@@ -636,12 +636,12 @@ _.Zones =
 					},
 				}),
 				q(12841, {	-- The Crone's Bargain
-					["qg"] = 29481,	-- Lok'lira the Crone
+					["provider"] = { "n", 29481 },	-- Lok'lira the Crone
 					["coord"] = { 42.8, 68.8, 120 },
 					["sourceQuests"] = { 12846 },	-- Leave No Goblin Behind
 				}),
 				q(12964, {	-- The Dark Ore
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = {
 						12931,	-- Fighting Back (possibly required)
@@ -649,7 +649,7 @@ _.Zones =
 					},
 				}),
 				q(12886, {	-- The Drakkensryd
-					["qg"] = 29796,	-- Gretta the Arbiter
+					["provider"] = { "n", 29796 },	-- Gretta the Arbiter
 					["coord"] = { 50.8, 65.6, 120 },
 					["sourceQuests"] = { 13062 },	-- Lok'lira's Parting Gift
 					["g"] = {
@@ -660,7 +660,7 @@ _.Zones =
 					},
 				}),
 				q(13005, {	-- The Earthen Oath
-					["qg"] = 30295,	-- Thorim
+					["provider"] = { "n", 30295 },	-- Thorim
 					["coord"] = { 56.2, 51.3, 120 },
 					["sourceQuests"] = { 13057 },	-- The Terrace of the Makers
 					["g"] = {
@@ -671,19 +671,19 @@ _.Zones =
 					},
 				}),
 				q(12885, {	-- The Exiles of Ulduar
-					["qg"] = 29579,	-- Brann Bronzebeard
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12872 },	-- Norgannon's Shell
 				}),
 				q(12873, {	-- The Frostborn King
-					["qg"] = 29743,	-- Lagnus
+					["provider"] = { "n", 29743 },	-- Lagnus
 					["coord"] = { 29.4, 73.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12871 },	-- Aid From the Explorers' League
 				}),
 				q(12965, {	-- The Gifts of Loken
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = {
 						12957,	-- Slaves of the Stormforged (probably required)
@@ -697,23 +697,23 @@ _.Zones =
 					},
 				}),
 				q(12998, {	-- The Heart of the Storm
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12993 },	-- A Colossal Threat
 				}),
 				q(12878, {	-- The Hidden Relic
-					["qg"] = 30052,	-- Creteus
+					["provider"] = { "n", 30052 },	-- Creteus
 					["coord"] = { 39.2, 59.6, 120 },	-- approximate, as NPC patrols a short path back and forth
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12986 },	-- Fate of the Titans
 				}),
 				q(12970, {	-- The Hyldsmeet
-					["qg"] = 29975,	-- Lok'lira the Crone
+					["provider"] = { "n", 29975 },	-- Lok'lira the Crone
 					["coord"] = { 47.4, 69.0, 120 },
 					["sourceQuests"] = { 12969 },	-- Is That Your Goblin?
 				}),
 				q(13007, {	-- The Iron Colossus (awarded "Bringing Down the Iron Colossus)
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12998 },	-- The Heart of the Storm
 					["g"] = {
@@ -724,30 +724,30 @@ _.Zones =
 					},
 				}),
 				q(12983, {	-- The Last of Her Kind
-					["qg"] = 29839,	-- Astrid Bjornrittar
+					["provider"] = { "n", 29839 },	-- Astrid Bjornrittar
 					["coord"] = { 49.7, 71.7, 120 },
 					["sourceQuests"] = { 12900 },	-- Making a Harness
 				}),
 				q(13415, {	-- The Library Console
-					["qg"] = 29579,	-- Brann Bronzebeard
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12860 },	-- Data Mining
 				}),
 				q(12877, {	-- The Lonesome Watcher
-					["qg"] = 29751,	-- Drom Frostgrip
+					["provider"] = { "n", 29751 },	-- Drom Frostgrip
 					["coord"] = { 25.2, 68.4, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12875 },	-- An Experienced Guide
 				}),
 				q(12880, {	-- The Master Explorer
-					["qg"] = 30082,	-- Creteus
+					["provider"] = { "n", 30082 },	-- Creteus
 					["coord"] = { 38.2, 61.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12879 },	-- Fury of the Frostborn King
 				}),
 				q(12889, {	-- The Prototype Console
-					["qg"] = 29806,	-- SCRAP-E
+					["provider"] = { "n", 29806 },	-- SCRAP-E
 					["coord"] = { 37.6, 46.4, 120 },
 					["requireSkill"] = 202,	-- Engineering
 					["sourceQuests"] = { 12888 },	-- SCRAP-E
@@ -756,7 +756,7 @@ _.Zones =
 					},
 				}),
 				q(13047, {	-- The Reckoning (triggered completion of "Loken" criteria even before turning quest in)
-					["qg"] = 30295,	-- Thorim
+					["provider"] = { "n", 30295 },	-- Thorim
 					["coord"] = { 56.2, 51.3, 120 },
 					["sourceQuests"] = {
 						13005,	-- The Earthen Oath (probably required)
@@ -770,7 +770,7 @@ _.Zones =
 					},
 				}),
 				q(12922, {	-- The Refiner's Fire
-					["qg"] = 29375,	-- Stormforged Iron Giant
+					["provider"] = { "n", 29375 },	-- Stormforged Iron Giant
 					["itemID"] = 41556,	-- Slag Covered Metal
 					["description"] = "The giants that drop this quest item spawn on and around the ice patch east of Dun Niffelem.",
 				}),
@@ -787,7 +787,7 @@ _.Zones =
 					},
 				}),
 				q(12989, {	-- The Slithering Darkness
-					["qg"] = 29839,	-- Astrid Bjornrittar
+					["provider"] = { "n", 29839 },	-- Astrid Bjornrittar
 					["coord"] = { 49.7, 71.7, 120 },
 					["sourceQuests"] = { 12900 },	-- Making a Harness
 					["g"] = {
@@ -799,12 +799,12 @@ _.Zones =
 					},
 				}),
 				q(13057, {	-- The Terrace of the Makers
-					["qg"] = 30390,	-- Thorim
+					["provider"] = { "n", 30390 },	-- Thorim
 					["coord"] = { 71.3, 48.8, 120 },
 					["sourceQuests"] = { 13010 },	-- Krolmir, Hammer of the Storms
 				}),
 				q(12996, {	-- The Warm-Up
-					["qg"] = 29839,	-- Astrid Bjornrittar
+					["provider"] = { "n", 29839 },	-- Astrid Bjornrittar
 					["coord"] = { 49.7, 71.7, 120 },
 					["sourceQuests"] = { 12983 },	-- The Last of Her Kind
 				}),
@@ -818,7 +818,7 @@ _.Zones =
 					},
 				}),
 				q(12843, {	-- They Took Our Men!
-					["qg"] = 29473,	-- Gretchen Fizzlespark
+					["provider"] = { "n", 29473 },	-- Gretchen Fizzlespark
 					["coord"] = { 41.1, 86.1, 120 },
 					-- Not required for "Defending K3" criteria.
 					["g"] = {
@@ -830,7 +830,7 @@ _.Zones =
 					},
 				}),
 				q(12984, {	-- Valduran the Stormborn
-					["qg"] = 29801,	-- Bouldercrag the Rockshaper
+					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12980 },	-- The Armor's Secrets
 					["g"] = {
@@ -841,7 +841,7 @@ _.Zones =
 					},
 				}),
 				q(12876, {	-- Unwelcome Guests
-					["qg"] = 29732,	-- Fjorlin Frostbrow
+					["provider"] = { "n", 29732 },	-- Fjorlin Frostbrow
 					["coord"] = { 29.8, 75.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12874 },	-- Fervor of the Frostborn
@@ -861,29 +861,29 @@ _.Zones =
 					},
 				}),
 				q(13050, {	-- Veranus
-					["qg"] = 29445,	-- Thorim
+					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 58.0, 120 },
 					["sourceQuests"] = { 13009 },	-- A New Beginning
 				}),
 				q(12862, {	-- When All Else Fails
-					["qg"] = 29428,	-- Ricket
+					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12822 },	-- Know No Fear
 				}),
 				q(12966, {	-- You Can't Miss Him
-					["qg"] = 30105,	-- King Jokkum
+					["provider"] = { "n", 30105 },	-- King Jokkum
 					["coord"] = { 65.3, 60.1, 120 },
 					["description"] = "This questline is required to progress on the 'Forging the Alliance' quest.",
 					["sourceQuests"] = { 12924 },	-- Forging an Alliance
 				}),
 				q(12972, {	-- You'll Need a Bear (awarded "Bearly Ready" achievement criteria)
-					["qg"] = 29975,	-- Lok'lira the Crone
+					["provider"] = { "n", 29975 },	-- Lok'lira the Crone
 					["coord"] = { 47.4, 69.0, 120 },
 					["sourceQuests"] = { 12971 },	-- Taking on All Challengers
 				}),
 				q(12968, {	-- Yulda's Folly
-					["qg"] = 29997,	-- Iva the Vengeful
+					["provider"] = { "n", 29997 },	-- Iva the Vengeful
 					["coord"] = { 48.3, 72.1, 120 },
 					["sourceQuests"] = { 12841 },	-- The Crone's Bargain
 					-- May have additional SQs, needs confirmation.

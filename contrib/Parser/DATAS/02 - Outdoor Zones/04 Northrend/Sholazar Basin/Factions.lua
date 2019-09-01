@@ -10,7 +10,7 @@ _.Zones =
 				["g"] = {
 					n(-17, {	-- Quests
 						q(12758, {	-- A Hero's Headgear
-							["qg"] = 29043,	-- Rejek
+							["provider"] = { "n", 29043 },	-- Rejek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 							["isDaily"] = true,
 							["g"] = {
@@ -20,7 +20,7 @@ _.Zones =
 							},
 						}),
 						q(12702, {	-- Chicken Party!
-							["qg"] = 28138,	-- Elder Harkek
+							["provider"] = { "n", 28138 },	-- Elder Harkek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 							["isDaily"] = true,
 							["g"] = {
@@ -30,12 +30,12 @@ _.Zones =
 							},
 						}),
 						q(12582, {	-- Frenzyheart Champion
-							["qg"] = 28668,	-- Zepik the Gorloc Hunter
+							["provider"] = { "n", 28668 },	-- Zepik the Gorloc Hunter
 							["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
 							["isDaily"] = true
 						}),
 						q(12703, {	-- Kartak's Rampage
-							["qg"] = 29146,	-- Vekgar
+							["provider"] = { "n", 29146 },	-- Vekgar
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 							["isDaily"] = true,
 							["g"] = {
@@ -45,7 +45,7 @@ _.Zones =
 							},
 						}),
 						q(12734, {	-- Rejek: First Blood
-							["qg"] = 29043,	-- Rejek
+							["provider"] = { "n", 29043 },	-- Rejek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 							["isDaily"] = true,
 							["g"] = {
@@ -55,12 +55,12 @@ _.Zones =
 							},
 						}),
 						q(12692, {	-- Return of the Lich Hunter
-							["qg"] = 28668,		-- Zepik the Gorloc Hunter
+							["provider"] = { "n", 28668 },		-- Zepik the Gorloc Hunter
 							["sourceQuest"] = 12582,	-- Frenzyheart Champion
 							["isDaily"] = true
 						}),
 						q(12760, {	-- Secret Strength of the Frenzyheart
-							["qg"] = 29146,	-- Vekgar
+							["provider"] = { "n", 29146 },	-- Vekgar
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 							["isDaily"] = true,
 							["g"] = {
@@ -70,7 +70,7 @@ _.Zones =
 							},
 						}),
 						q(12741, {	-- Strength of the Tempest
-							["qg"] = 29043,	-- Rejek
+							["provider"] = { "n", 29043 },	-- Rejek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 							["isDaily"] = true,
 							["g"] = {
@@ -80,7 +80,7 @@ _.Zones =
 							},
 						}),
 						q(12732, {	-- The Heartblood's Strength
-							["qg"] = 29043,	-- Rejek
+							["provider"] = { "n", 29043 },	-- Rejek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 							["isDaily"] = true,
 							["g"] = {
@@ -90,7 +90,7 @@ _.Zones =
 							},
 						}),
 						q(12759, {	-- Tools of War
-							["qg"] = 29146,	-- Vekgar
+							["provider"] = { "n", 29146 },	-- Vekgar
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 							["isDaily"] = true,
 							["g"] = {
@@ -126,7 +126,7 @@ _.Zones =
 				["g"] = {
 					n(-17, { 	-- Quests
 						q(12735, {	-- A Cleansing Song
-							["qg"] = 29006,	-- Oracle Soo-nee
+							["provider"] = { "n", 29006 },	-- Oracle Soo-nee
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 							["isDaily"] = true,
 							["g"] = {
@@ -136,7 +136,7 @@ _.Zones =
 							},
 						}),
 						q(12581, {	-- A Hero's Burden
-							["qg"] = 28122,	-- Moodle
+							["provider"] = { "n", 28122 },	-- Moodle
 							["g"] = {
 								i(39475),	-- Artruis' Focus Stone
 								i(39485),	-- Blood-Infused Pendant
@@ -145,7 +145,7 @@ _.Zones =
 							},
 						}),
 						q(12704, {	-- Appeasing the Great Rain Stone
-							["qg"] = 28027,	-- High-Oracle Soo-say
+							["provider"] = { "n", 28027 },	-- High-Oracle Soo-say
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 							["isDaily"] = true,
 							["g"] = {
@@ -155,12 +155,12 @@ _.Zones =
 							},
 						}),
 						q(12689, {	-- Hand of the Oracles
-							["qg"] = 28667,		-- Jaloot
+							["provider"] = { "n", 28667 },		-- Jaloot
 							["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
 							["isDaily"] = true
 						}),
 						q(12761, {	-- Mastery of the Crystals
-							["qg"] = 29149,	-- Oracle Soo-dow
+							["provider"] = { "n", 29149 },	-- Oracle Soo-dow
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 							["isDaily"] = true,
 							["g"] = {
@@ -170,7 +170,7 @@ _.Zones =
 							},
 						}),
 						q(12762, {	-- Power of the Great Ones
-							["qg"] = 29149,	-- Oracle Soo-dow
+							["provider"] = { "n", 29149 },	-- Oracle Soo-dow
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 							["isDaily"] = true,
 							["g"] = {
@@ -180,12 +180,12 @@ _.Zones =
 							},
 						}),
 						q(12695, {	-- Return of the Friendly Dryskin
-							["qg"] = 28667,		-- Jaloot
+							["provider"] = { "n", 28667 },		-- Jaloot
 							["sourceQuest"] = 12689,	-- Hand of the Oracles
 							["isDaily"] = true
 						}),
 						q(12737, {	-- Song of Fecundity
-							["qg"] = 29006,	-- Oracle Soo-nee
+							["provider"] = { "n", 29006 },	-- Oracle Soo-nee
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 							["isDaily"] = true,
 							["g"] = {
@@ -195,7 +195,7 @@ _.Zones =
 							},
 						}),
 						q(12736, {	-- Song of Reflection
-							["qg"] = 29006,	-- Oracle Soo-nee
+							["provider"] = { "n", 29006 },	-- Oracle Soo-nee
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 							["isDaily"] = true,
 							["g"] = {
@@ -205,7 +205,7 @@ _.Zones =
 							},
 						}),
 						q(12726, {	-- Song of Wind and Water
-							["qg"] = 29006,	-- Oracle Soo-nee
+							["provider"] = { "n", 29006 },	-- Oracle Soo-nee
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 							["isDaily"] = true,
 							["g"] = {
@@ -215,7 +215,7 @@ _.Zones =
 							},
 						}),
 						q(12705, {	-- Will of the Titans
-							["qg"] = 29149,	-- Oracle Soo-dow
+							["provider"] = { "n", 29149 },	-- Oracle Soo-dow
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 							["isDaily"] = true,
 							["g"] = {

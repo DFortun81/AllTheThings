@@ -10,7 +10,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			n(-17, {	-- Quests
 				{
 					["questID"] = 29851,	-- Champion of the Tournament
-					["qg"] = 34996,	-- Highlord Tirion Fordring
+					["provider"] = { "n", 34996 },	-- Highlord Tirion Fordring
 				},
 			}),
 			d(1, {	-- Normal

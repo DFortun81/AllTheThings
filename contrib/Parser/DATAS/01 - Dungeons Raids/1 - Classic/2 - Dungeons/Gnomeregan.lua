@@ -131,7 +131,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(26939, {	-- The G-Team [Alliance]
-					["qg"] = 44556,	-- Murd Doc
+					["provider"] = { "n", 44556 },	-- Murd Doc
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						26943,	-- Home Sweet Gnome
@@ -139,17 +139,17 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(50338, {	-- The G-Team [Horde]
-					["qg"] = 44556,	-- Murd Doc
+					["provider"] = { "n", 44556 },	-- Murd Doc
 					["races"] = HORDE_ONLY,
 				}),
 				q(26941, {	-- The G-Team [Alliance]
 					["hordeQuestID"] = 50337,
-					["qg"] = 44560,	-- Murd Doc
+					["provider"] = { "n", 44560 },	-- Murd Doc
 					["sourceQuests"] = { 26939, 50338 },	-- The G-Team
 				}),
 				q(26942, {	-- The G-Team [Alliance]
 					["hordeQuestID"] = 50336,
-					["qg"] = 44561,	-- Murd Doc
+					["provider"] = { "n", 44561 },	-- Murd Doc
 					["sourceQuests"] = { 26941, 50337 },	-- The G-Team
 					["g"] = {
 						i(65987),	-- G-Team Belt

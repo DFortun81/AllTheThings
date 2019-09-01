@@ -13,10 +13,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(29598, {	-- Taretha's Diversion
-					["qg"] = 18723,	-- Erozion
+					["provider"] = { "n", 18723 },	-- Erozion
 				}),
 				q(29599, {	-- Escape from Durnholde
-					["qg"] = 17876,	-- Thrall
+					["provider"] = { "n", 17876 },	-- Thrall
 					["sourceQuests"] = { 29598 },
 					["groups"] = {
 						i(29317),	-- Tempest's Touch

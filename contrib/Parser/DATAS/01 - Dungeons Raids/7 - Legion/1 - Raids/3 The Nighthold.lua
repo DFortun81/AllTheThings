@@ -15,18 +15,18 @@ _.Instances = { tier(7, {	-- Legion
 			n(-17, { 	-- Quests
 				{	-- The Nighthold: Lord of the Shadow Council
 					["questID"] = 45417,	-- The Nighthold: Lord of the Shadow Council
-					["qg"] = 115367,	-- Archmage Khadgar
+					["provider"] = { "n", 115367 },	-- Archmage Khadgar
 					["sourceQuest"] = 44719,	-- Breaching the Sanctum
 					["description"] = "Need to click on Eye of Aman'thul to complete quest after Gul'dan is dead.",
 				},
 				{	-- The Nighthold: The Eye of Aman'Thul
 					["questID"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
-					["qg"] = 106522,	-- Archmage Khadgar
+					["provider"] = { "n", 106522 },	-- Archmage Khadgar
 					["sourceQuest"] = 45417,	-- The Nighthold: Lord of the Shadow Council
 				},
 				{	-- Fate of the Nightborne
 					["questID"] = 45372,	-- Fate of the Nightborne
-					["qg"] = 115710,	-- Chief Telemancer Oculeth
+					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
 					["groups"] = {
 						i(142436),	-- Arcanist's Manasaber
@@ -443,7 +443,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 						{	-- The Nighthold: Talisman of the Shal'dorei [Normal]
 							["questID"] = 45381,	-- The Nighthold: Talisman of the Shal'dorei [Normal]
-							["qg"] = 110791,	-- First Arcanist Thalyssra
+							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
 							["groups"] = {
 								ig(141324),	-- Talisman of the Shal'dorei [Normal]
 							},
@@ -852,7 +852,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 						{	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
 							["questID"] = 45382,	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
-							["qg"] = 110791,	-- First Arcanist Thalyssra
+							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
 							["groups"] = {
 								ig(141325),	-- Talisman of the Shal'dorei [Heroic]
 							},
@@ -1264,7 +1264,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 						{	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
 							["questID"] = 45383,	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
-							["qg"] = 110791,	-- First Arcanist Thalyssra
+							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
 							["groups"] = {
 								ig(141326),	-- Talisman of the Shal'dorei [Mythic]
 							},

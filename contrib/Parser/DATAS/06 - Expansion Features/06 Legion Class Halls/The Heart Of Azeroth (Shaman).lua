@@ -57,66 +57,66 @@ _.ExpansionFeatures =
 					-- q(43003),	-- Return to Janai
 					--Followers Sort Later
 					q(41747, {	-- Champion: Avalanchion
-						["qg"] = 106524,	-- Avalanchion the Unbroken <Fist of the Stonemother>
+						["provider"] = { "n", 106524 },	-- Avalanchion the Unbroken <Fist of the Stonemother>
 						["groups"] = {
 							follower(615),	-- Avalanchion the Unbroken
 						},
 					}),
 					q(41745, {	-- Champion: Scaldius
-						["qg"] = 106649,	-- Baron Scaldius <Emissary of the Firelord>
+						["provider"] = { "n", 106649 },	-- Baron Scaldius <Emissary of the Firelord>
 						["groups"] = {
 							follower(613),	-- Baron Scaldius
 						},
 					}),
 					q(41742, {	-- Champion: Celestos
-						["qg"] = 106521,	-- Consular Celestos <Emissary of the Windlord>
+						["provider"] = { "n", 106521 },	-- Consular Celestos <Emissary of the Windlord>
 						["groups"] = {
 							follower(610),	-- Consular Celestos
 						},
 					}),
 					q(42197, {	-- Champion: Duke Hydraxis
-						["qg"] = 106520,	-- Duke Hydraxis <Emissary of the Waterlord>
+						["provider"] = { "n", 106520 },	-- Duke Hydraxis <Emissary of the Waterlord>
 						["groups"] = {
 							follower(609),	-- Duke Hydraxis
 						},
 					}),
 					q(41743, {	-- Champion: Nobundo
-						["qg"] = 106519,	-- Farseer Nobundo <The Earthen Ring>
+						["provider"] = { "n", 106519 },	-- Farseer Nobundo <The Earthen Ring>
 						["groups"] = {
 							follower(611),	-- Farseer Nobundo
 						},
 					}),
 					q(46057, {	-- Champion: Magatha Grimtotem
-						["qg"] = 120245,	-- Magatha Grimtotem <Elder Crone>
+						["provider"] = { "n", 120245 },	-- Magatha Grimtotem <Elder Crone>
 						["groups"] = {
 							follower(992),	-- Magatha Grimtotem
 						},
 					}),
 					q(41746, {	-- Champion: Muln Earthfury
-						["qg"] = 106518,	-- Muln Earthfury <Earthen Ring>
+						["provider"] = { "n", 106518 },	-- Muln Earthfury <Earthen Ring>
 						["groups"] = {
 							follower(614),	-- Muln Earthfury
 						},
 					}),
 					q(41744, {	-- Champion: Rehgar Earthfury
-						["qg"] = 106517,	-- Rehgar Earthfury <Hero of the Storm>
+						["provider"] = { "n", 106517 },	-- Rehgar Earthfury <Hero of the Storm>
 						["groups"] = {
 							follower(612),	-- Rehgar Earthfury
 						},
 					}),
 					q(42198, {	-- Champion: Stormcaller Mylra
-						["qg"] = 106312,	-- Stormcaller Mylra <The Earthen Ring>
+						["provider"] = { "n", 106312 },	-- Stormcaller Mylra <The Earthen Ring>
 						["groups"] = {
 							follower(608),	-- Stormcaller Mylra
 						},
 					}),
 					q(43644, {	-- To the Deeps
-						["qg"] = 96530,	-- Erunak Stonespeaker
+						["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
 						["lvl"] = 98,
 						["classes"] = { 7 },	-- Shaman
 					}),
 					q(43645, {	-- Wavespeaker's Trail
-						["qg"] = 96530,	-- Erunak Stonespeaker
+						["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
 						["lvl"] = 98,
 						["classes"] = { 7 },	-- Shaman
 					}),

@@ -7,7 +7,7 @@ _.Zones =
 		m(25, {	-- Hillsbrad Foothills
 			n(-17,  {	-- Quests
 				q(28345, {	-- *Gurgle* HELP! *Gurgle*
-					["qg"] = 48218,	-- Kingslayer Orkus
+					["provider"] = { "n", 48218 },	-- Kingslayer Orkus
 					["coord"] = { 49.5, 74.4, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -16,7 +16,7 @@ _.Zones =
 					},
 				}),
 				q(28237, {	-- A Blight Upon the Land
-					["qg"] = 48020,	-- Master Apothecary Lydon
+					["provider"] = { "n", 48020 },	-- Master Apothecary Lydon
 					["coord"] = { 36.5, 58.0, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28235 },	-- Burnside Must Fall
@@ -26,23 +26,23 @@ _.Zones =
 					},
 				}),
 				q(28495, {	-- A Fighting Chance
-					["qg"] = 17092,	-- Advisor Duskingdawn
+					["provider"] = { "n", 17092 },	-- Advisor Duskingdawn
 					["coord"] = { 56.7, 47.4, 25 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28635, {	-- A Haunting in Hillsbrad
-					["qg"] = 49243,	-- Captain Jekyll
+					["provider"] = { "n", 49243 },	-- Captain Jekyll
 					["coord"] = { 59.9, 63.3, 25 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28587, {	-- Aid of the Frostwolf
-					["qg"] = 48545,	-- High Warlord Cromush
+					["provider"] = { "n", 48545 },	-- High Warlord Cromush
 					["coord"] = { 57.0, 46.2, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28400 },	-- Heroes of the Horde!
 				}),
 				q(28329, {	-- Angry Scrubbing Bubbles
-					["qg"] = 48319,	-- Angry Blight Slime
+					["provider"] = { "n", 48319 },	-- Angry Blight Slime
 					["coord"] = { 48.8, 71.2, 25 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -54,7 +54,7 @@ _.Zones =
 					},
 				}),
 				q(28733, {	-- Basic Botany
-					["qg"] = 49687,	-- Brazie the Botanist
+					["provider"] = { "n", 49687 },	-- Brazie the Botanist
 					["coord"] = { 33.5, 49.3, 25 },
 				}),
 				q(550,   {	-- Battle of Hillsbrad
@@ -68,7 +68,7 @@ _.Zones =
 					},
 				}),
 				q(28556, {	-- Breaking the Hand
-					["qg"] = 48545,	-- High Warlord Cromush
+					["provider"] = { "n", 48545 },	-- High Warlord Cromush
 					["coord"] = { 57.0, 46.2, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28506 },	-- March of the Stormpike
@@ -80,7 +80,7 @@ _.Zones =
 					},
 				}),
 				q(28235, {	-- Burnside Must Fall
-					["qg"] = 48020,	-- Master Apothecary Lydon
+					["provider"] = { "n", 48020 },	-- Master Apothecary Lydon
 					["coord"] = { 38.5, 57.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -89,7 +89,7 @@ _.Zones =
 					},
 				}),
 				q(28344, {	-- Can You Smell What the Lok'tar is Cooking?
-					["qg"] = 48129,	-- Helcular
+					["provider"] = { "n", 48129 },	-- Helcular
 					["coord"] = { 49.1, 66.3, 25 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -99,13 +99,13 @@ _.Zones =
 					},
 				}),
 				ql(q(30107, {	-- Cluster Clutch
-					["qg"] = 57777,	-- Wrathion
+					["provider"] = { "n", 57777 },	-- Wrathion
 					["coord"] = { 71.4, 45.6, 25 },
 					["classes"] = { 4 },	-- Rogue
 					["sourceQuests"] = { 30106 },	-- The Deed is Done
 				})),
 				q(28146, {	-- Coastal Delicacies!
-					["qg"] = 47551,	-- Spider-Handler Sarus
+					["provider"] = { "n", 47551 },	-- Spider-Handler Sarus
 					["coord"] = { 33.2, 73.6, 25 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -127,7 +127,7 @@ _.Zones =
 					},
 				}),
 				q(28538, {	-- Cry of the Banshee
-					["qg"] = 2278,	-- Melisara
+					["provider"] = { "n", 2278 },	-- Melisara
 					["coord"] = { 57.2, 46.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28587 },	-- Aid of the Frostwolf
@@ -142,7 +142,7 @@ _.Zones =
 					},
 				}),
 				q(28604, {	-- Deception and Trickery
-					["qg"] = 49035,	-- Lilith
+					["provider"] = { "n", 49035 },	-- Lilith
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28566 },	-- Decimation
 					["g"] = {
@@ -154,19 +154,19 @@ _.Zones =
 					},
 				}),
 				q(28566, {	-- Decimation
-					["qg"] = 2278,	-- Melisara
+					["provider"] = { "n", 2278 },	-- Melisara
 					["coord"] = { 57.2, 46.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28538 },	-- Cry of the Banshee
 				}),
 				q(28156, {	-- Deep Mine Rescue
-					["qg"] = 47681,	-- Dumass
+					["provider"] = { "n", 47681 },	-- Dumass
 					["coord"] = { 36.6, 70.1, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 				}),
 				q(28197, {	-- Discretion is Key
-					["qg"] = 47781,	-- Warden Stillwater
+					["provider"] = { "n", 47781 },	-- Warden Stillwater
 					["coord"] = { 36.1, 61.1, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
@@ -177,7 +177,7 @@ _.Zones =
 					},
 				}),
 				q(28231, {	-- Do it for Twinkles
-					["qg"] = 48021,	-- Johnny Awesome
+					["provider"] = { "n", 48021 },	-- Johnny Awesome
 					["coord"] = { 40.2, 59.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28209 },	-- Freedom for Lydon
@@ -191,9 +191,9 @@ _.Zones =
 				q(28605, {	-- Domination
 					["coord"] = { 57.2, 46.3, 25 },
 					["races"] = HORDE_ONLY,
-					["qgs"] = {
-						2278,	-- Melisara
-						49035,	-- Lilith
+					["providers"] = {
+						{ "n", 2278 },	-- Melisara
+						{ "n", 49035 },	-- Lilith
 					},
 					["sourceQuests"] = {
 						28604,	-- Deception and Trickery
@@ -211,7 +211,7 @@ _.Zones =
 					},
 				}),
 				q(28620, {	-- Eastpoint Tower
-					["qg"] = 2229,	-- Krusk
+					["provider"] = { "n", 2229 },	-- Krusk
 					["coord"] = { 57.6, 46.9, 25 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -227,24 +227,24 @@ _.Zones =
 					},
 				}),
 				q(28634, {	-- Extinction
-					["qg"] = 49201,	-- Nils Beerot
+					["provider"] = { "n", 49201 },	-- Nils Beerot
 					["coord"] = { 60.0, 63.6, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28620 },	-- Eastpoint Tower
 				}),
 				q(28617, {	-- Flower Power
-					["qg"] = 49687,	-- Brazie the Botanist
+					["provider"] = { "n", 49687 },	-- Brazie the Botanist
 					["coord"] = { 33.5, 49.3, 25 },
 					["sourceQuests"] = { 28733 },	-- Basic Botany
 				}),
 				q(28199, {	-- For Science!
-					["qg"] = 47899,	-- Flesh-Shaper Arnauld
+					["provider"] = { "n", 47899 },	-- Flesh-Shaper Arnauld
 					["coord"] = { 36.3, 60.2, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
 				}),
 				q(28209, {	-- Freedom for Lydon
-					["qg"] = 47900,	-- Master Apothecary Lydon
+					["provider"] = { "n", 47900 },	-- Master Apothecary Lydon
 					["coord"] = { 40.3, 59.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28206 },	-- Little Girl Lost
@@ -255,19 +255,19 @@ _.Zones =
 					},
 				}),
 				q(11997, {	-- The Frozen Flame
-					["qg"] = 99415,	-- Aethas Sunreaver
+					["provider"] = { "n", 99415 },	-- Aethas Sunreaver
 					["coord"] = { 28.6, 37.2, 25 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 8 },	-- Mage
 					["sourceQuests"] = { 40270 },	-- The Path of Atonement
 				}),
 				q(28744, {	-- Ghouls Hate My Grains
-					["qg"] = 49687,	-- Brazie the Botanist
+					["provider"] = { "n", 49687 },	-- Brazie the Botanist
 					["coord"] = { 33.5, 49.3, 25 },
 					["sourceQuests"] = { 28617 },	-- Flower Power
 				}),
 				q(28114, {	-- Glorious Harvest
-					["qg"] = 47432,	-- Apothecary Underhill
+					["provider"] = { "n", 47432 },	-- Apothecary Underhill
 					["coord"] = { 29.2, 64.0, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28096 },	-- Welcome to the Machine
@@ -279,17 +279,17 @@ _.Zones =
 					},
 				}),
 				q(28325, {	-- Green Living
-					["qg"] = 2391,	-- Serge Hinott
+					["provider"] = { "n", 2391 },	-- Serge Hinott
 					["coord"] = { 49.0, 66.3, 25 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28332, {	-- Helcular's Command
-					["qg"] = 48129,	-- Helcular
+					["provider"] = { "n", 48129 },	-- Helcular
 					["coord"] = { 49.1, 66.3, 25 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28331, {	-- Helcular's Rod Giveth...
-					["qg"] = 48129,	-- Helcular
+					["provider"] = { "n", 48129 },	-- Helcular
 					["coord"] = { 49.1, 66.3, 25 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -297,7 +297,7 @@ _.Zones =
 					},
 				}),
 				q(28400, {	-- Heroes of the Horde!
-					["qg"] = 48503,	-- Kingslayer Orkus
+					["provider"] = { "n", 48503 },	-- Kingslayer Orkus
 					["coord"] = { 25.4, 88.4, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28397 },	-- They Will Never Expect This...
@@ -311,7 +311,7 @@ _.Zones =
 					},
 				}),
 				q(28138, {	-- Human Infestation
-					["qg"] = 47554,	-- Captain Keyton
+					["provider"] = { "n", 47554 },	-- Captain Keyton
 					["coord"] = { 33.2, 73.5, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28111 },	-- Trouble at Azurelode
@@ -323,7 +323,7 @@ _.Zones =
 					},
 				}),
 				q(28487, {	-- Humbert's Personal Problems
-					["qg"] = 2419,	-- Deathguard Humbert
+					["provider"] = { "n", 2419 },	-- Deathguard Humbert
 					["coord"] = { 57.1, 45.5, 25 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -346,13 +346,13 @@ _.Zones =
 					},
 				}),
 				q(28603, {	-- Infiltration
-					["qg"] = 2278,	-- Melisara
+					["provider"] = { "n", 2278 },	-- Melisara
 					["coord"] = { 57.2, 46.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28566 },	-- Decimation
 				}),
 				q(8249,  {	-- Junkboxes Needed
-					["qg"] = 7323,	-- Winstone Wolfe
+					["provider"] = { "n", 7323 },	-- Winstone Wolfe
 					["coord"] = { 71.4, 45.0, 25 },
 					["repeatable"] = true,
 					["g"] = {
@@ -360,7 +360,7 @@ _.Zones =
 					},
 				}),
 				q(28354, {	-- Kasha Will Fly Again
-					["qg"] = 48218,	-- Kingslayer Orkus
+					["provider"] = { "n", 48218 },	-- Kingslayer Orkus
 					["coord"] = { 50.0, 74.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28348 },	-- Stormpike Rendezvous
@@ -372,7 +372,7 @@ _.Zones =
 					},
 				}),
 				q(28748, {	-- Lawn of the Dead
-					["qg"] = 49687,	-- Brazie the Botanist
+					["provider"] = { "n", 49687 },	-- Brazie the Botanist
 					["coord"] = { 33.5, 49.3, 25 },
 					["sourceQuests"] = { 28747 },	-- Someone Setup the Pumpkin Bomb
 					["g"] = {
@@ -390,7 +390,7 @@ _.Zones =
 					["sourceQuests"] = { 27483 },	-- Practical Vengeance
 				}),
 				q(28206, {	-- Little Girl Lost
-					["qg"] = 47781,	-- Warden Stillwater
+					["provider"] = { "n", 47781 },	-- Warden Stillwater
 					["coord"] = { 36.1, 61.1, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -399,19 +399,19 @@ _.Zones =
 					},
 				}),
 				q(28506, {	-- March of the Stormpike
-					["qg"] = 48545,	-- High Warlord Cromush
+					["provider"] = { "n", 48545 },	-- High Warlord Cromush
 					["coord"] = { 57.0, 46.2, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28600 },	-- Matters of Loyalty
 				}),
 				q(28600, {	-- Matters of Loyalty
-					["qg"] = 13817,	-- Voggah Deathgrip
+					["provider"] = { "n", 13817 },	-- Voggah Deathgrip
 					["coord"] = { 58.6, 34.2, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28587 },	-- Aid of the Frostwolf
 				}),
 				q(28154, {	-- Muckgill's Flipper or Something...
-					["qg"] = 47759,	-- Muckgill
+					["provider"] = { "n", 47759 },	-- Muckgill
 					["races"] = HORDE_ONLY,
 					["itemID"] = 63090,	-- Muckgill's Flipper
 					["g"] = {
@@ -421,7 +421,7 @@ _.Zones =
 					},
 				}),
 				q(28192, {	-- No One Here Gets Out Alive
-					["qg"] = 47781,	-- Warden Stillwater
+					["provider"] = { "n", 47781 },	-- Warden Stillwater
 					["coord"] = { 36.1, 61.1, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -430,19 +430,19 @@ _.Zones =
 					},
 				}),
 				ql(q(30092, {	-- Our Man in Gilneas
-					["qg"] = 57777,	-- Wrathion
+					["provider"] = { "n", 57777 },	-- Wrathion
 					["coord"] = { 71.4, 45.6, 25 },
 					["classes"] = { 4 },	-- Rogue
 					["sourceQuests"] = { 29847 },	-- To Catch a Thief
 				})),
 				ql(q(30108, {	-- Our Man in Karazhan
-					["qg"] = 57777,	-- Wrathion
+					["provider"] = { "n", 57777 },	-- Wrathion
 					["coord"] = { 71.4, 45.6, 25 },
 					["classes"] = { 4 },	-- Rogue
 					["sourceQuests"] = { 30107 },	-- Cluster Clutch
 				})),
 				q(28115, {	-- Past Their Prime
-					["qg"] = 47432,	-- Apothecary Underhill
+					["provider"] = { "n", 47432 },	-- Apothecary Underhill
 					["coord"] = { 29.2, 64.0, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28096 },	-- Welcome to the Machine
@@ -450,7 +450,7 @@ _.Zones =
 				q(28356, {	-- Preemptive Strike
 					["itemID"] = 63686,	-- Daggerspine Attack Plans
 					["races"] = HORDE_ONLY,
-					["qgs"] = {
+					["crs"] = {
 						2370,	-- Daggerspine Screamer
 						2369,	-- Daggerspine Shorehunter
 						2368,	-- Daggerspine Shorestalker
@@ -463,19 +463,19 @@ _.Zones =
 					},
 				}),
 				q(28230, {	-- Protocol
-					["qg"] = 48020,	-- Master Apothecary Lydon
+					["provider"] = { "n", 48020 },	-- Master Apothecary Lydon
 					["coord"] = { 40.2, 59.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28209 },	-- Freedom for Lydon
 				}),
 				ql(q(30116, {	-- Sharpening Your Fangs
-					["qg"] = 57777,	-- Wrathion
+					["provider"] = { "n", 57777 },	-- Wrathion
 					["coord"] = { 71.4, 45.6, 25 },
 					["classes"] = { 4 },	-- Rogue
 					["sourceQuests"] = { 30113 },	-- Victory in the Depths
 				})),
 				q(28636, {	-- Silence of the Dwarves
-					["qg"] = 49240,	-- Captain Ironhill's Ghost
+					["provider"] = { "n", 49240 },	-- Captain Ironhill's Ghost
 					["coord"] = { 61.6, 84.0, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28635 },	-- A Haunting in Hillsbrad
@@ -487,7 +487,7 @@ _.Zones =
 					},
 				}),
 				q(28747, {	-- Someone Setup the Pumpkin Bomb
-					["qg"] = 49687,	-- Brazie the Botanist
+					["provider"] = { "n", 49687 },	-- Brazie the Botanist
 					["coord"] = { 33.5, 49.3, 25 },
 					["sourceQuests"] = { 28744 },	-- Ghouls Hate My Grains
 				}),
@@ -499,7 +499,7 @@ _.Zones =
 					},
 				}),
 				q(28489, {	-- Stagwiches
-					["qg"] = 2397,	-- Derak Nightfall
+					["provider"] = { "n", 2397 },	-- Derak Nightfall
 					["coord"] = { 57.6, 45.2, 25 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -507,7 +507,7 @@ _.Zones =
 					},
 				}),
 				q(28616, {	-- Stormpike Apocalypse
-					["qg"] = 48545,	-- High Warlord Cromush
+					["provider"] = { "n", 48545 },	-- High Warlord Cromush
 					["coord"] = { 57.0, 46.2, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -522,7 +522,7 @@ _.Zones =
 					},
 				}),
 				q(28348, {	-- Stormpike Rendezvous
-					["qg"] = 48218,	-- Kingslayer Orkus
+					["provider"] = { "n", 48218 },	-- Kingslayer Orkus
 					["coord"] = { 50.0, 74.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28345 },	-- *Gurgle* HELP! *Gurgle*
@@ -535,7 +535,7 @@ _.Zones =
 					},
 				}),
 				q(28324, {	-- Studies in Lethality
-					["qg"] = 2391,	-- Serge Hinott
+					["provider"] = { "n", 2391 },	-- Serge Hinott
 					["coord"] = { 49.0, 66.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28251 },	-- Trouble at Southshore
@@ -556,7 +556,7 @@ _.Zones =
 					},
 				}),
 				q(28751, {	-- Tending the Garden
-					["qg"] = 49687,	-- Brazie the Botanist
+					["provider"] = { "n", 49687 },	-- Brazie the Botanist
 					["coord"] = { 33.5, 49.3, 25 },
 					["sourceQuests"] = { 28748 },	-- Lawn of the Dead
 					["isDaily"] = true,
@@ -568,7 +568,7 @@ _.Zones =
 				}),
 				q(28196, {	-- The Battle for Hillsbrad
 					["itemID"] = 63250,	-- The Battle for Hillsbrad
-					["qg"] = 47789,	-- Clerk Horrace Whitesteed
+					["provider"] = { "n", 47789 },	-- Clerk Horrace Whitesteed
 					["coord"] = { 37.6, 63.7, 25 },
 					["races"] = HORDE_ONLY,
 					-- TODO: does this always drop or is it only available after "No One Here Gets Out Alive" ?
@@ -581,13 +581,13 @@ _.Zones =
 					},
 				}),
 				q(28645, {	-- The Durnholde Challenge: Bloodvenom
-					["qg"] = 49243,	-- Captain Jekyll
+					["provider"] = { "n", 49243 },	-- Captain Jekyll
 					["coord"] = { 59.9, 63.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28644 },	-- The Durnholde Challenge: Teracula
 				}),
 				q(28647, {	-- The Durnholde Challenge: D-1000
-					["qg"] = 49243,	-- Captain Jekyll
+					["provider"] = { "n", 49243 },	-- Captain Jekyll
 					["coord"] = { 59.9, 63.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28646 },	-- The Durnholde Challenge: Infernus
@@ -597,24 +597,24 @@ _.Zones =
 					},
 				}),
 				q(28646, {	-- The Durnholde Challenge: Infernus
-					["qg"] = 49243,	-- Captain Jekyll
+					["provider"] = { "n", 49243 },	-- Captain Jekyll
 					["coord"] = { 59.9, 63.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28645 },	-- The Durnholde Challenge: Bloodvenom
 				}),
 				q(28644, {	-- The Durnholde Challenge: Teracula
-					["qg"] = 49243,	-- Captain Jekyll
+					["provider"] = { "n", 49243 },	-- Captain Jekyll
 					["coord"] = { 59.9, 63.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28643 },	-- The Durnholde Challenge: Zephyrus
 				}),
 				q(28643, {	-- The Durnholde Challenge: Zephyrus
-					["qg"] = 49243,	-- Captain Jekyll
+					["provider"] = { "n", 49243 },	-- Captain Jekyll
 					["coord"] = { 59.9, 63.3, 25 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28484, {	-- The Heart of the Matter
-					["qg"] = 2437,	-- Keeper Bel'varil
+					["provider"] = { "n", 2437 },	-- Keeper Bel'varil
 					["coord"] = { 56.9, 45.7, 25 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -625,7 +625,7 @@ _.Zones =
 					},
 				}),
 				q(40270, {	-- The Path of Atonement
-					["qg"] = 99398,	-- Archmage Modera
+					["provider"] = { "n", 99398 },	-- Archmage Modera
 					["coord"] = { 28.6, 37.2, 25 },
 					["classes"] = { 8 },	-- Mage
 					["sourceQuests"] = { 40267 },	-- An Unexpected Message
@@ -640,24 +640,24 @@ _.Zones =
 					},
 				}),
 				q(28375, {	-- The Road to Purgation
-					["qg"] = 48218,	-- Kingslayer Orkus
+					["provider"] = { "n", 48218 },	-- Kingslayer Orkus
 					["coord"] = { 50.0, 74.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28354 },	-- Kasha Will Fly Again
 				}),
 				q(28397, {	-- They Will Never Expect This...
-					["qg"] = 48470,	-- Kingslayer Orkus
+					["provider"] = { "n", 48470 },	-- Kingslayer Orkus
 					["coord"] = { 29.2, 83.8, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28375 },	-- The Road to Purgation
 				}),
 				q(28144, {	-- Thieving Little Monsters!
-					["qg"] = 47554,	-- Captain Keyton
+					["provider"] = { "n", 47554 },	-- Captain Keyton
 					["coord"] = { 33.2, 73.5, 25 },
 					["races"] = HORDE_ONLY,
 				}),
 				ql(q(29847, {	-- To Catch a Thief
-					["qg"] = 56375,	-- Mostrasz
+					["provider"] = { "n", 56375 },	-- Mostrasz
 					["coord"] = { 67.8, 45.2, 25 },
 					["classes"] = { 4 },	-- Rogue
 					["sourceQuests"] = { 29934 },	-- To Ravenholdt
@@ -674,21 +674,21 @@ _.Zones =
 					},
 				}),
 				q(28111, {	-- Trouble at Azurelode
-					["qg"] = 2215,	-- High Executor Darthalia
+					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 					["coord"] = { 29.2, 63.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 					["isBreadcrumb"] = true,
 				}),
 				q(28251, {	-- Trouble at Southshore
-					["qg"] = 47900,	-- Master Apothecary Lydon
+					["provider"] = { "n", 47900 },	-- Master Apothecary Lydon
 					["coord"] = { 36.6, 61.1, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28237 },	-- A Blight Upon the Land
 					["isBreadcrumb"] = true,
 				}),
 				q(28168, {	-- Trouble at the Sludge Fields
-					["qg"] = 47554,	-- Captain Keyton
+					["provider"] = { "n", 47554 },	-- Captain Keyton
 					["coord"] = { 33.2, 73.5, 25 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -732,7 +732,7 @@ _.Zones =
 					--["objectID"] = 207279,	-- Warchief's Command Board
 				}),
 				q(28096, {	-- Welcome to the Machine
-					["qg"] = 2215,	-- High Executor Darthalia
+					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 					["coord"] = { 29.2, 63.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27746, 28089 },	-- Empire of Dirt & Warchief's Command: Hillsbrad Foothills!
@@ -753,7 +753,7 @@ _.Zones =
 					},
 				}),
 				q(28485, {	-- Yetimus the Yeti Lord
-					["qg"] = 2418,	-- Deathguard Samsa
+					["provider"] = { "n", 2418 },	-- Deathguard Samsa
 					["coord"] = { 57.1, 45.5, 25 },
 					["races"] = HORDE_ONLY,
 					["g"] = {

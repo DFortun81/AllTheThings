@@ -14,7 +14,7 @@ _.Zones =
 							{	-- Deadwood Ritual Totem
 								["itemID"] = 20741,
 								["questID"] = 8470,	-- Deadwood Ritual Totem
-								["qgs"] = {
+								["crs"] = {
 									7157,	-- Deadwood Avenger
 									7156,	-- Deadwood Den Watcher
 									7158,	-- Deadwood Shaman
@@ -22,14 +22,14 @@ _.Zones =
 							},
 							{	-- Feathers for Grazle
 								["questID"] = 28396,
-								["qg"] = 11554,	-- Grazle
+								["provider"] = { "n", 11554 },	-- Grazle
 								["coord"] = { 51.4, 80.4, 77 },
 								["repeatable"] = true,
 								["sourceQuest"] = 27995,	-- Dance for Ruumbo!
 							},
 							{	-- Feathers for Nafien
 								["questID"] = 28395,
-								["qg"] = 15395,	-- Nafien
+								["provider"] = { "n", 15395 },	-- Nafien
 								["coord"] = { 64.0, 10.3, 77 },
 								["repeatable"] = true,
 								["sourceQuests"] = {
@@ -39,7 +39,7 @@ _.Zones =
 							},
 							{	-- Runecloth
 								["questID"] = 6031,
-								["qg"] = 11557,	-- Meilosh
+								["provider"] = { "n", 11557 },	-- Meilosh
 								["coord"] = { 64.8, 5.2, 77 },
 								["description"] = "You must be Friendly with Timbermaw Hold to pick up this quest.",
 								["groups"] = {
@@ -49,7 +49,7 @@ _.Zones =
 							},
 							{	-- Sacred Cloth
 								["questID"] = 6032,
-								["qg"] = 11557,	-- Meilosh
+								["provider"] = { "n", 11557 },	-- Meilosh
 								["coord"] = { 64.8, 5.2, 77 },
 								["description"] = "You must be Friendly with Timbermaw Hold to pick up this quest.",
 								["requireSkill"] = 197,	-- Requires: Tailoring
@@ -59,7 +59,7 @@ _.Zones =
 							},
 							{	-- Speak to Salfa
 								["questID"] = 28521,
-								["qg"] = 15395,	-- Nafien
+								["provider"] = { "n", 15395 },	-- Nafien
 								["coord"] = { 64.0, 10.4, 77 },
 								["isBreadcrumb"] = true,
 								["sourceQuests"] = {
@@ -69,7 +69,7 @@ _.Zones =
 							},
 							{	-- The Root of All Evil
 								["questID"] = 8481,
-								["qg"] = 11555,	-- Gorn One Eye
+								["provider"] = { "n", 11555 },	-- Gorn One Eye
 								["coord"] = { 64.4, 5.1, 77 },
 								["description"] = "Requires Exalted with Timberbaw Hold.",
 								["groups"] = {

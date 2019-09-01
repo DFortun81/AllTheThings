@@ -828,7 +828,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							{
 								["achievementID"] = 2184,	-- Just Can't Get Enough (10 player)
 								["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
-								["qg"] = 16428,	-- Unstoppable Abomination
+								["provider"] = { "n", 16428 },	-- Unstoppable Abomination
 							},
 							{
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
@@ -1925,7 +1925,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							{
 								["achievementID"] = 2185,	-- Just Can't Get Enough (25 player)
 								["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
-								["qg"] = 16428,	-- Unstoppable Abomination
+								["provider"] = { "n", 16428 },	-- Unstoppable Abomination
 							},
 							{
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes

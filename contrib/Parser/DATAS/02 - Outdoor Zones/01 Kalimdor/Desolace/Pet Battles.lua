@@ -44,7 +44,7 @@ _.Zones =
 					["crs"] = { 62181 },	-- Topaz Shale Hatchling
 				}),
 				q(31870, {	-- Cassandra Kaboom
-					["qg"] = 66372,	-- Merda Stronghoof
+					["provider"] = { "n", 66372 },	-- Merda Stronghoof
 					["coord"] = { 57.2, 45.8, 66 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -52,7 +52,7 @@ _.Zones =
 					},
 				}),
 				q(31872, {	-- Merda Stronghoof
-					["qg"] = 66372,	-- Merda Stronghoof
+					["provider"] = { "n", 66372 },	-- Merda Stronghoof
 					["coord"] = { 57.2, 45.8, 66 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

@@ -11,57 +11,57 @@ _.Zones =
 					["g"] = {
 						n(-17, {	-- Quests
 							q(37125, {	-- A Rare Find
-								["qg"] = 87393,	-- Sallee Silverclamp
+								["provider"] = { "n", 87393 },	-- Sallee Silverclamp
 								["coord"] = { 50.4, 41.3, 550 },
 								["repeatable"] = true,
 							}),
 							q(37210, {	-- Aogexon's Fang
-								["qg"] = 87706,	-- Gazmolf Futzwangler
+								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
 								["coord"] = { 50.3, 41.1, 550 },
 								["repeatable"] = true,
 							}),
 							q(37211, {	-- Bergruu's Horn
-								["qg"] = 87706,	-- Gazmolf Futzwangler
+								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
 								["coord"] = { 50.3, 41.1, 550 },
 								["repeatable"] = true,
 							}),
 							q(37221, {	-- Dekorhan's Tust
-								["qg"] = 87706,	-- Gazmolf Futzwangler
+								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
 								["coord"] = { 50.3, 41.1, 550 },
 								["repeatable"] = true,
 							}),
 							q(37222, {	-- Direhoof's Hide
-								["qg"] = 87706,	-- Gazmolf Futzwangler
+								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
 								["coord"] = { 50.3, 41.1, 550 },
 								["repeatable"] = true,
 							}),
 							q(35147, {	-- Fragments of the Past
-								["qg"] = 87393,	-- Sallee Silverclamp
+								["provider"] = { "n", 87393 },	-- Sallee Silverclamp
 								["coord"] = { 50.4, 41.3, 550 },
 								["repeatable"] = true,
 							}),
 							q(37223, {	-- Gagrog's Skull
-								["qg"] = 87706,	-- Gazmolf Futzwangler
+								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
 								["coord"] = { 50.3, 41.1, 550 },
 								["repeatable"] = true,
 							}),
 							q(37224, {	-- Mu'gra's Head
-								["qg"] = 87706,	-- Gazmolf Futzwangler
+								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
 								["coord"] = { 50.3, 41.1, 550 },
 								["repeatable"] = true,
 							}),
 							q(37225, {	-- Thek'talon's Talon
-								["qg"] = 87706,	-- Gazmolf Futzwangler
+								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
 								["coord"] = { 50.3, 41.1, 550 },
 								["repeatable"] = true,
 							}),
 							q(37520, {	-- Vileclaw's Claw
-								["qg"] = 87706,	-- Gazmolf Futzwangler
+								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
 								["coord"] = { 50.3, 41.1, 550 },
 								["repeatable"] = true,
 							}),
 							q(37226, {	-- Xelganak's Stinger
-								["qg"] = 87706,	-- Gazmolf Futzwangler
+								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
 								["coord"] = { 50.3, 41.1, 550 },
 								["repeatable"] = true,
 							}),

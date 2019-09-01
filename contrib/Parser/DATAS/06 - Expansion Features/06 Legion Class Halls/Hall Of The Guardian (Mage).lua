@@ -45,7 +45,7 @@ _.ExpansionFeatures =
 						}),
 						n(-159, {	-- Daily Event Roll
 							["isDaily"] = true,
-							["qg"] = 111704,	-- Cote "Shepherd" Metcalf
+							["provider"] = { "n", 111704 },	-- Cote "Shepherd" Metcalf
 							["questID"] = 43828,	-- "Sheep Summon Daily Roll" on WoWHead
 							["description"] = "If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.\n\nIf this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
 							["icon"] = "Interface\\Icons\\INV_Staff_2h_SheepStick_D_01",
@@ -120,16 +120,16 @@ _.ExpansionFeatures =
 				}),
 				n(-17, {	-- Quests
 					q(41141, { 	-- A Conjuror's Duty (mage class hall)
-						["qg"] = 103092,	-- The Great Akazamzarak
+						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["classes"] = {8},
 					}),					
 					q(42434),	-- A Covert Operation
 					q(46338, {	-- A Creative Solution (mage class hall)
-						["qg"] = 108247,	-- Archmage Kalec
+						["provider"] = { "n", 108247 },	-- Archmage Kalec
 					}),
 					q(43415),	-- A Hero's Weapon
 					q(41085, {	-- A Mage's Weapon (mage class hall)
-						["qg"] = 102700,	-- Meryl Felstorm
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
 						["classes"] = {8},
 					}),		
 					q(43441),	-- A Second Weapon
@@ -272,61 +272,61 @@ _.ExpansionFeatures =
 					--]]
 					--Followers Sort Later
 					q(46043, {	-- Champion: Aethas Sunreaver
-						["qg"] = 117497,	-- Aethas Sunreaver
+						["provider"] = { "n", 117497 },	-- Aethas Sunreaver
 						["g"] = {
 							follower(994),	-- Aethas Sunreaver
 						},
 					}),
 					q(42704, {	-- Champion: Arcane Destroyer
-						["qg"] = 108368,	-- Arcane Destroyer
+						["provider"] = { "n", 108368 },	-- Arcane Destroyer
 						["g"] = {
 							follower(724),	-- Arcane Destroyer
 						},
 					}),
 					q(42662, {	-- Champion: Archmage Kalec
-						["qg"] = 108247,	-- Archmage Kalec <Kirin Tor>
+						["provider"] = { "n", 108247 },	-- Archmage Kalec <Kirin Tor>
 						["g"] = {
 							follower(716),	-- Archmage Kalec
 						},
 					}),
 					q(42685, {	-- Champion: Archmage Modera
-						["qg"] = 108248,	-- Archmage Modera <Kirin Tor>
+						["provider"] = { "n", 108248 },	-- Archmage Modera <Kirin Tor>
 						["g"] = {
 							follower(717),	-- Archmage Modera
 						},
 					}),
 					q(42917, {	-- Champion: Archmage Vargoth
-						["qg"] = 109226,	-- Archmage Vargoth <Kirin Tor>
+						["provider"] = { "n", 109226 },	-- Archmage Vargoth <Kirin Tor>
 						["g"] = {
 							follower(762),	-- Archmage Vargoth
 						},
 					}),
 					q(42706, {	-- Champion: Esara Verrinde
-						["qg"] = 108380,	-- Esara Verrinde <Magisters>
+						["provider"] = { "n", 108380 },	-- Esara Verrinde <Magisters>
 						["g"] = {
 							follower(726),	-- Esara Verrinde
 						},
 					}),
 					q(42914, {	-- Champion: Meryl Felstorm
-						["qg"] = 109222,	-- Meryl Felstorm
+						["provider"] = { "n", 109222 },	-- Meryl Felstorm
 						["g"] = {
 							follower(761),	-- Meryl Felstorm
 						},
 					}),
 					q(42702, {	-- Champion: Millhouse Manastorm
-						["qg"] = 108342,	-- Millhouse Manastorm
+						["provider"] = { "n", 108342 },	-- Millhouse Manastorm
 						["g"] = {
 							follower(723),	-- Millhouse Manastorm
 						},
 					}),
 					q(42705, {	-- Champion: Ravandwyr
-						["qg"] = 108377,	-- Ravandwyr <Senior Kirin Tor Apprentice>
+						["provider"] = { "n", 108377 },	-- Ravandwyr <Senior Kirin Tor Apprentice>
 						["g"] = {
 							follower(725),	-- Ravandwyr
 						},
 					}),
 					q(46724, {	-- Champion: The Great Akazamzarak
-						--["qg"] = ,			-- Can't find QG
+						--["provider"] = { "n",  },			-- Can't find QG
 						["g"] = {
 							follower(995),	-- The Great Akazamzarak
 						},

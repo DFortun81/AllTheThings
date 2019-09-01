@@ -34,7 +34,7 @@ _.Zones =
 					["crs"] = { 61318 },	-- Tree Python
 				}),
 				q(31728, {	-- Bill Buckler
-					["qg"] = 63194,	-- Steven Lisbane
+					["provider"] = { "n", 63194 },	-- Steven Lisbane
 					["coord"] = { 46.0, 40.4, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31729,	-- Steven Lisbane
@@ -43,7 +43,7 @@ _.Zones =
 					},
 				}),
 				q(31852, {	-- Steven Lisbane
-					["qg"] = 63194,	-- Steven Lisbane
+					["provider"] = { "n", 63194 },	-- Steven Lisbane
 					["coord"] = { 46.0, 40.4, 50 },
 					["isDaily"] = true,
 				}),

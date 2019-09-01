@@ -8,13 +8,13 @@ _.Zones =
 			n(-169, {	-- Emissary Quests
 				q(43179, {	-- The Kirin Tor of Dalaran
 					["repeatable"] = true,
-					["qg"] = 32725,	-- Warmage Silva
+					["provider"] = { "n", 32725 },	-- Warmage Silva
 					["g"]  = {
 						i(157828, {	-- Kirin Tor Chest
 							i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 							i(141349, {	-- Strange Humming Crystal
 								q(44412,  {	-- Enemies Everywhere
-									["qg"] = 90417,	-- Archmage Khadgar
+									["provider"] = { "n", 90417 },	-- Archmage Khadgar
 									["g"] = {
 										i(141348),	-- Wondrous Wisdomball
 									},

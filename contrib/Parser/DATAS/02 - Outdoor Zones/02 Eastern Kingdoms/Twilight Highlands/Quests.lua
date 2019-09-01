@@ -10,7 +10,7 @@ _.Zones =
 					["sourceQuests"] = { 27817 },	-- Dropping the Hammer
 					["coord"] = { 60.1, 57.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46804,	-- Keegan Firebeard
+					["provider"] = { "n", 46804 },	-- Keegan Firebeard
 				}),
 				q(27745, {	-- A Fiery Reunion
 					["sourceQuests"] = {
@@ -19,7 +19,7 @@ _.Zones =
 						27743,	-- While We're Here
 					},
 					["coord"] = { 34.2, 86.6, 241 },
-					["qg"] = 46513,	-- Initiate Goldmine
+					["provider"] = { "n", 46513 },	-- Initiate Goldmine
 					["g"] = {
 						i(63711),	-- Magma-Proof Sandals
 						i(63710),	-- Widener's Bracers
@@ -29,12 +29,12 @@ _.Zones =
 				q(28191, {	-- A Fitting End
 					["sourceQuests"] = { 28171 },	-- And the Sky Streaked Red
 					["coord"] = { 59.0, 69.8, 241 },
-					["qg"] = 47902,	-- Lirastrasza
+					["provider"] = { "n", 47902 },	-- Lirastrasza
 				}),
 				q(27742, {	-- A Little on the Side
 					["sourceQuests"] = { 27720, 28885 },	-- Mr. Goldmine's Wild Ride (A/H)
 					["coord"] = { 38.2, 93.9, 241 },
-					["qg"] = 46513,	-- Initiate Goldmine
+					["provider"] = { "n", 46513 },	-- Initiate Goldmine
 					["g"] = {
 						i(63713),	-- Shard-Keeper Helm
 						i(63712),	-- Bracers of Gleaming Shards
@@ -45,7 +45,7 @@ _.Zones =
 					["sourceQuests"] = { 27647 },	-- Anything But Water
 					["coord"] = { 52.4, 70.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46583,	-- Eoin Dunwald
+					["provider"] = { "n", 46583 },	-- Eoin Dunwald
 					["g"] = {
 						i(63837),	-- Bubble-Brew Hood
 						i(63836),	-- Barrel-Belly Gauntlets
@@ -60,10 +60,10 @@ _.Zones =
 					},
 					["coord"] = { 49.7, 29.1, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48010,	-- Low Shaman Blundy
+					["provider"] = { "n", 48010 },	-- Low Shaman Blundy
 				}),
 				q(27947, {	-- A Vision of Twilight (H)
-					["qg"] = 46323,	-- Garona Halforcen
+					["provider"] = { "n", 46323 },	-- Garona Halforcen
 					["coord"] = { 53.2, 42.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
@@ -72,7 +72,7 @@ _.Zones =
 					["sourceQuests"] = { 28597 },	-- Burnin' at Both Ends
 					["coord"] = { 78.7, 76.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 49020,	-- Fargo Flintlocke
+					["provider"] = { "n", 49020 },	-- Fargo Flintlocke
 					["g"] = {
 						i(68014),	-- Flintlocke's Chuckshooter
 					},
@@ -80,10 +80,10 @@ _.Zones =
 				q(28171, {	-- And the Sky Streaked Red
 					["sourceQuests"] = { 28758 },	-- Battle of Life and Death
 					["coord"] = { 22.1, 56.5, 241 },
-					["qg"] = 47605,	-- Calen
+					["provider"] = { "n", 47605 },	-- Calen
 				}),
 				q(28873, {	-- Another Maw to Feed
-					["qg"] = 46319,	-- Griff
+					["provider"] = { "n", 46319 },	-- Griff
 					["coord"] = { 53.8, 43.2, 241 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -93,7 +93,7 @@ _.Zones =
 					["sourceQuests"] = { 27516 },	-- Wings Over Highbank
 					["coord"] = { 79.0, 78.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45167,	-- Kurdran Wildhammer
+					["provider"] = { "n", 45167 },	-- Kurdran Wildhammer
 					["g"] = {
 						i(63899),	-- Water-Drill Treads
 						i(63898),	-- Whirlpool Bracers
@@ -104,7 +104,7 @@ _.Zones =
 					["sourceQuests"] = { 27644 },	-- Eoin Dunwald
 					["coord"] = { 52.8, 74.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46175,	-- Eoin Dunwald
+					["provider"] = { "n", 46175 },	-- Eoin Dunwald
 					["g"] = {
 						i(63849),	-- Aledrinker Shoulderpads
 						i(63848),	-- Brewtaster Bracers
@@ -115,24 +115,24 @@ _.Zones =
 					["sourceQuests"] = { 27809 },	-- Firebeard Bellows
 					["coord"] = { 62.6, 48.6, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46806,	-- Brom Forgehammer
+					["provider"] = { "n", 46806 },	-- Brom Forgehammer
 				}),
 				q(27711, {	-- Back to the Elementium Depths (A)
 					["sourceQuest"] = 27719,	-- Water of Life
 					["coord"] = { 36.3, 66.1, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45796,	-- Master Mathias Shaw
+					["provider"] = { "n", 45796 },	-- Master Mathias Shaw
 					["isBreadcrumb"] = true,
 				}),
 				q(27712, {	-- Back to the Elementium Depths (H)
-					["qg"] = 45675,	-- Garona Halforcen
+					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27798,	-- Water of Life
 					["isBreadcrumb"] = true,
 				}),
 				q(28041, {	-- Bait and Throttle
-					["qg"] = 46313,	-- Narkrall Rakeclaw
+					["provider"] = { "n", 46313 },	-- Narkrall Rakeclaw
 					["coord"] = { 54.8, 44.2, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -143,7 +143,7 @@ _.Zones =
 				q(28758, {	-- Battle of Life and Death
 					["sourceQuests"] = { 28712 },	-- Enter the Dragon Queen
 					["coord"] = { 14.1, 15.5, 241 },
-					["qg"] = 49810,	-- Calen
+					["provider"] = { "n", 49810 },	-- Calen
 					["g"] = {
 						i(63761),	-- Red Dragonheart Ring
 						i(63762),	-- Pendant of Victorious Fury
@@ -151,7 +151,7 @@ _.Zones =
 					},
 				}),
 				q(28864, {	-- Beer Run
-					["qg"] = 46591,	-- Colin Thundermar
+					["provider"] = { "n", 46591 },	-- Colin Thundermar
 					["coord"] = { 49.0, 29.8, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -164,12 +164,12 @@ _.Zones =
 					},
 					["coord"] = { 76.7, 69.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45169,	-- Lieutenant Emry
+					["provider"] = { "n", 45169 },	-- Lieutenant Emry
 				}),
 				q(28173, {	-- Blackout
 					["sourceQuests"] = { 28171 },	-- And the Sky Streaked Red
 					["coord"] = { 59.0, 69.8, 241 },
-					["qg"] = 47902,	-- Lirastrasza
+					["provider"] = { "n", 47902 },	-- Lirastrasza
 					["g"] = {
 						i(63759),	-- Dragonwing Leggings
 						i(63758),	-- Nightscale Girdle
@@ -177,7 +177,7 @@ _.Zones =
 					},
 				}),
 				q(27606, {	-- Blast Him!
-					["qg"] = 45983,	-- Fergus Gearchum
+					["provider"] = { "n", 45983 },	-- Fergus Gearchum
 					["coord"] = { 70.3, 43.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -191,20 +191,20 @@ _.Zones =
 					},
 				}),
 				q(28038, {	-- Blood in the Highlands
-					["qg"] = 46318,	-- Harkkan
+					["provider"] = { "n", 46318 },	-- Harkkan
 					["coord"] = { 55.1, 43.5, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
 					["isBreadcrumb"] = true,
 				}),
 				q(27584, {	-- Blood in the Surf
-					["qg"] = 45982,	-- Gralok
+					["provider"] = { "n", 45982 },	-- Gralok
 					["coord"] = { 70.2, 43.2, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27583,	-- The Northern Flank
 				}),
 				q(27611, {	-- Blood on the Sand
-					["qg"] = 46089,	-- Rok'tar
+					["provider"] = { "n", 46089 },	-- Rok'tar
 					["coord"] = { 78.2, 62.5, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27607,	-- The Southern Flank
@@ -212,14 +212,14 @@ _.Zones =
 				q(27509, {	-- Breach in the Defenses
 					["sourceQuests"] = { 27564 },	-- In Defense of the Redoubt
 					["coord"] = { 29.3, 26.0, 241 },
-					["qg"] = 45528,	-- Calen
+					["provider"] = { "n", 45528 },	-- Calen
 					["g"] = {
 						i(63780),	-- Dragonmender Waistguard
 						i(63775),	-- Helm of Verdant Explosion
 					},
 				}),
 				q(28875, {	-- Bring Down the High Shaman
-					["qg"] = 49387,	-- Grot Deathblow
+					["provider"] = { "n", 49387 },	-- Grot Deathblow
 					["coord"] = { 53.8, 42.0, 241 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -232,10 +232,10 @@ _.Zones =
 					},
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45796,	-- Master Mathias Shaw
+					["provider"] = { "n", 45796 },	-- Master Mathias Shaw
 				}),
 				q(27655, {	-- Bring the Hammer Down (H)
-					["qg"] = 45675,	-- Garona Halforcen
+					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -247,13 +247,13 @@ _.Zones =
 					["sourceQuests"] = { 28596 },	-- Welcome to Highbank!
 					["coord"] = { 81.0, 79.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 49252,	-- Fargo Flintlocke
+					["provider"] = { "n", 49252 },	-- Fargo Flintlocke
 				}),
 				q(27496, {	-- Call in the Artillery (A)
 					["sourceQuests"] = { 28248 },	-- Victors' Point
 					["coord"] = { 43.4, 57.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45669,	-- Cassius the White
+					["provider"] = { "n", 45669 },	-- Cassius the White
 					["g"] = {
 						i(63753),	-- Flarefire Bracers
 						i(63752),	-- Marker's Hauberk
@@ -261,7 +261,7 @@ _.Zones =
 					},
 				}),
 				q(27497, {	-- Call in the Artillery (H)
-					["qg"] = 45665,	-- Lady Cozwynn
+					["provider"] = { "n", 45665 },	-- Lady Cozwynn
 					["coord"] = { 45.3, 75.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28249,	-- Crushblow
@@ -275,23 +275,23 @@ _.Zones =
 					["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
 					["coord"] = { 45.9, 65.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46177,	-- Keely Dunwald
+					["provider"] = { "n", 46177 },	-- Keely Dunwald
 				}),
 				q(26788, {	-- Cementing Our Victory
-					["qg"] = 44042,	-- Ornak
+					["provider"] = { "n", 44042 },	-- Ornak
 					["races"] = HORDE_ONLY,
 				}),
 				q(27807, {	-- Clan Mullan
 					["sourceQuests"] = { 27806 },	-- Honorable Bearing
 					["coord"] = { 57.4, 58.1, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46805,	-- Iain Firebeard
+					["provider"] = { "n", 46805 },	-- Iain Firebeard
 				}),
 				q(27702, {	-- Coup de Grace (A)
 					["sourceQuests"] = { 27700 },	-- Dragon, Unchained
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45796,	-- Master Mathias Shaw
+					["provider"] = { "n", 45796 },	-- Master Mathias Shaw
 					["g"] = {
 						i(63725),	-- Throat-Slitter Gauntlets
 						i(63724),	-- Lifecrusher Treads
@@ -299,7 +299,7 @@ _.Zones =
 					},
 				}),
 				q(27703, {	-- Coup de Grace (H)
-					["qg"] = 45675,	-- Garona Halforcen
+					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27701,	-- Dragon, Unchained
@@ -310,13 +310,13 @@ _.Zones =
 					},
 				}),
 				q(28249, {	-- Crushblow
-					["qg"] = 47902,	-- Lirastrasza
+					["provider"] = { "n", 47902 },	-- Lirastrasza
 					["coord"] = { 59.0, 69.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28247,	-- Last of Her Kind
 				}),
 				q(27751, {	-- Crushing the Wildhammer
-					["qg"] = 46313,	-- Narkrall Rakeclaw
+					["provider"] = { "n", 46313 },	-- Narkrall Rakeclaw
 					["coord"] = { 54.8, 44.2, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27690,	-- Narkrall, the Drake-Tamer
@@ -327,14 +327,14 @@ _.Zones =
 					},
 				}),
 				q(28871, {	-- Crushing the Wildhammer
-					["qg"] = 50622,	-- Malkar
+					["provider"] = { "n", 50622 },	-- Malkar
 					["coord"] = { 53.9, 41.8, 241 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
 				}),
 				q(26540, {	-- Dangerous Compassion
-					["qg"] = 43191,	-- Gregor
+					["provider"] = { "n", 43191 },	-- Gregor
 					["coord"] = { 76.6, 49.4, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26538,	-- Emergency Aid
@@ -351,7 +351,7 @@ _.Zones =
 					},
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45796,	-- Master Mathias Shaw
+					["provider"] = { "n", 45796 },	-- Master Mathias Shaw
 					["g"] = {
 						i(63741),	-- Fencer's Nimblefingers
 						i(63740),	-- Muffled Bracers
@@ -359,7 +359,7 @@ _.Zones =
 					},
 				}),
 				q(27653, {	-- Dark Assassins (H)
-					["qg"] = 45675,	-- Garona Halforcen
+					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -373,7 +373,7 @@ _.Zones =
 					},
 				}),
 				q(26622, {	-- Death to Mor'ghor
-					["qg"] = 43581,	-- Zaela
+					["provider"] = { "n", 43581 },	-- Zaela
 					["coord"] = { 76.6, 49.6, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26621,	-- Insurrection
@@ -387,13 +387,13 @@ _.Zones =
 					["sourceQuests"] = { 27809 },	-- Firebeard Bellows
 					["coord"] = { 62.5, 48.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46850,	-- Mackay Firebeard
+					["provider"] = { "n", 46850 },	-- Mackay Firebeard
 				}),
 				q(27377, {	-- Devoured
 					["sourceQuests"] = { 27376 },	-- The Maw of Iso'rath
 					["description"] = "You must die for this quest to continue.",
 					["coord"] = { 48.3, 14.5, 241 },
-					["qg"] = 47991,	-- Earthcaller Yevaa
+					["provider"] = { "n", 47991 },	-- Earthcaller Yevaa
 				}),
 				q(27688, {	-- Distract Them for Me (A)
 					["sourceQuests"] = {
@@ -402,7 +402,7 @@ _.Zones =
 					},
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45796,	-- Master Mathias Shaw
+					["provider"] = { "n", 45796 },	-- Master Mathias Shaw
 					["g"] = {
 						i(63732),	-- Rose-Scented Hood
 						i(63731),	-- Dame's Scaled Greaves
@@ -410,7 +410,7 @@ _.Zones =
 					},
 				}),
 				q(27689, {	-- Distract Them for Me (H)
-					["qg"] = 45675,	-- Garona Halforcen
+					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -427,7 +427,7 @@ _.Zones =
 					["sourceQuests"] = { 27650 },	-- Home Again
 					["coord"] = { 45.9, 65.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46177,	-- Keely Dunwald
+					["provider"] = { "n", 46177 },	-- Keely Dunwald
 					["g"] = {
 						i(63833),	-- Dunwald Winged Helm
 						i(63832),	-- Gryphon-Grip Leggings
@@ -439,12 +439,12 @@ _.Zones =
 					["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
 					["coord"] = { 45.9, 65.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46177,	-- Keely Dunwald
+					["provider"] = { "n", 46177 },	-- Keely Dunwald
 				}),
 				q(27505, {	-- Draconic Mending
 					["sourceQuests"] = { 27504 },	-- Even Dragons Bleed
 					["coord"] = { 29.8, 31.2, 241 },
-					["qg"] = 45522,	-- Velastrasza
+					["provider"] = { "n", 45522 },	-- Velastrasza
 					["g"] = {
 						i(63777),	-- Flashseal Sandals
 						i(63779),	-- Vermillion Belt
@@ -452,7 +452,7 @@ _.Zones =
 					},
 				}),
 				q(27929, {	-- Drag 'em Down
-					["qg"] = 46313,	-- Narkrall Rakeclaw
+					["provider"] = { "n", 46313 },	-- Narkrall Rakeclaw
 					["coord"] = { 54.8, 44.2, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27690,	-- Narkrall, the Drake-Tamer
@@ -464,10 +464,10 @@ _.Zones =
 					},
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45796,	-- Master Mathias Shaw
+					["provider"] = { "n", 45796 },	-- Master Mathias Shaw
 				}),
 				q(27701, {	-- Dragon, Unchained (H)
-					["qg"] = 45675,	-- Garona Halforcen
+					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -478,7 +478,7 @@ _.Zones =
 				q(27754, {	-- Dragonmaw Takedown
 					["coord"] = { 49.0, 29.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46591,	-- Colin Thundermar
+					["provider"] = { "n", 46591 },	-- Colin Thundermar
 					["g"] = {
 						i(63826),	-- Trophy-Taker Bracers
 						i(63825),	-- Belt of Bloody Dreams
@@ -486,7 +486,7 @@ _.Zones =
 					},
 				}),
 				q(28151, {	-- Dressed to Kill
-					["qg"] = 47723,	-- Rotgrum
+					["provider"] = { "n", 47723 },	-- Rotgrum
 					["coord"] = { 36.7, 37.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28147,	-- Purple Is Your Color
@@ -500,7 +500,7 @@ _.Zones =
 					["sourceQuests"] = { 27816 },	-- Personal Request
 					["coord"] = { 60.1, 57.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46804,	-- Keegan Firebeard
+					["provider"] = { "n", 46804 },	-- Keegan Firebeard
 					["g"] = {
 						i(63861),	-- Keegan's Windswept Chestguard
 						i(63860),	-- Hammerhead Helm
@@ -511,49 +511,49 @@ _.Zones =
 					["sourceQuests"] = { 27817 },	-- Dropping the Hammer
 					["coord"] = { 60.1, 57.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46804,	-- Keegan Firebeard
+					["provider"] = { "n", 46804 },	-- Keegan Firebeard
 				}),
 				q(28103, {	-- Easy Pickings (A)
 					["sourceQuests"] = { 28101 },	-- Mathias' Command
 					["coord"] = { 26.0, 38.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 47592,	-- Master Mathias Shaw
+					["provider"] = { "n", 47592 },	-- Master Mathias Shaw
 				}),
 				q(28091, {	-- Easy Pickings (H)
-					["qg"] = 47492,	-- Patch
+					["provider"] = { "n", 47492 },	-- Patch
 					["coord"] = { 27.3, 36.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27576,	-- Patchwork Command
 				}),
 				q(26538, {	-- Emergency Aid
-					["qg"] = 43193,	-- Warlord Krogg
+					["provider"] = { "n", 43193 },	-- Warlord Krogg
 					["coord"] = { 82.4, 49.8, 241 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27507, {	-- Encroaching Twilight
 					["sourceQuests"] = { 27564 },	-- In Defense of the Redoubt
 					["coord"] = { 29.3, 26.0, 241 },
-					["qg"] = 45528,	-- Calen
+					["provider"] = { "n", 45528 },	-- Calen
 				}),
 				q(28712, {	-- Enter the Dragon Queen
 					["sourceQuests"] = { 28109 },	-- Pressing Forward
 					-- May also require "Paving the Way"
 					["coord"] = { 21.8, 57.0, 241 },
-					["qg"] = 47603,	-- Alextrasza the Life-Binder
+					["provider"] = { "n", 47603 },	-- Alextrasza the Life-Binder
 				}),
 				q(27644, {	-- Eoin Dunwald
 					["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
 					["coord"] = { 45.9, 65.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46177,	-- Keely Dunwald
+					["provider"] = { "n", 46177 },	-- Keely Dunwald
 				}),
 				q(27504, {	-- Even Dragons Bleed
 					["sourceQuests"] = { 27485, 27486 },	-- Warm Welcome (A/H)
 					["coord"] = { 29.3, 25.9, 241 },
-					["qg"] = 45528,	-- Calen
+					["provider"] = { "n", 45528 },	-- Calen
 				}),
 				q(28589, {	-- Everything But the Kitchen Sink
-					["qg"] = 48993,	-- Captain Krazz
+					["provider"] = { "n", 48993 },	-- Captain Krazz
 					["coord"] = { 77.6, 16.6, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -571,14 +571,14 @@ _.Zones =
 					["sourceQuests"] = { 28243 },	-- The Eyes Have It
 					["coord"] = { 49.7, 29.1, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48175,	-- Low Shaman Blundy
+					["provider"] = { "n", 48175 },	-- Low Shaman Blundy
 					["g"] = {
 						i(63797),	-- Eye of Despair
 						i(63796),	-- Dark-Eye Ring
 					},
 				}),
 				q(27955, {	-- Eye Spy (H)
-					["qg"] = 46323,	-- Garona Halforcen
+					["provider"] = { "n", 46323 },	-- Garona Halforcen
 					["coord"] = { 53.2, 42.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27954,	-- The Eyes Have It
@@ -586,12 +586,12 @@ _.Zones =
 				q(27508, {	-- Far from the Nest
 					["sourceQuests"] = { 27564 },	-- In Defense of the Redoubt
 					["coord"] = { 29.3, 26.0, 241 },
-					["qg"] = 45518,	-- Lirastrasza
+					["provider"] = { "n", 45518 },	-- Lirastrasza
 				}),
 				q(27752, {	-- Fight Like a Wildhammer
 					["coord"] = { 49.7, 29.1, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48010,	-- Low Shaman Blundy
+					["provider"] = { "n", 48010 },	-- Low Shaman Blundy
 					["g"] = {
 						i(63819),	-- Keg-Stealer Bracers
 						i(63818),	-- Blundy's Breastplate
@@ -599,7 +599,7 @@ _.Zones =
 					},
 				}),
 				q(28861, {	-- Fight Like a Wildhammer
-					["qg"] = 48010,	-- Low Shaman Blundy
+					["provider"] = { "n", 48010 },	-- Low Shaman Blundy
 					["coord"] = { 49.6, 29.2, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -609,13 +609,13 @@ _.Zones =
 					["sourceQuests"] = { 28377 },	-- Rescue at Glopgut's Hollow
 					["coord"] = { 38.1, 34.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48472,	-- Colin Thundermar
+					["provider"] = { "n", 48472 },	-- Colin Thundermar
 				}),
 				q(27646, {	-- Finding Beak
 					["sourceQuests"] = { 27643 },	-- Donnelly Dunwald
 					["coord"] = { 46.5, 59.1, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46176,	-- Donnelly Dunwald
+					["provider"] = { "n", 46176 },	-- Donnelly Dunwald
 					["g"] = {
 						i(63855),	-- Beak's Torn Feedbag
 						i(63854),	-- Friendfinder Treads
@@ -626,18 +626,18 @@ _.Zones =
 					["sourceQuests"] = { 27806 },	-- Honorable Bearing
 					["coord"] = { 57.4, 58.1, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46805,	-- Iain Firebeard
+					["provider"] = { "n", 46805 },	-- Iain Firebeard
 				}),
 				q(27621, {	-- Firebeard's Patrol
 					["sourceQuests"] = { 27545 },	-- The Way is Open
 					["coord"] = { 79.2, 78.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45172,	-- Thordun Hammerblow
+					["provider"] = { "n", 45172 },	-- Thordun Hammerblow
 				}),
 				q(27661, {	-- Fire the Cannon
 					["sourceQuests"] = { 27660 },	-- Spirit of the Loch
 					["coord"] = { 27.7, 63.8, 241 },
-					["qg"] = 46413,	-- Countess Verrall
+					["provider"] = { "n", 46413 },	-- Countess Verrall
 				}),
 				q(28176, {	-- Following the Young Home
 					["sourceQuests"] = {
@@ -646,7 +646,7 @@ _.Zones =
 						28175,	-- Shining Through the Dark
 					},
 					["coord"] = { 59.0, 69.8, 241 },
-					["qg"] = 47902,	-- Lirastrasza
+					["provider"] = { "n", 47902 },	-- Lirastrasza
 				}),
 				q(27500, {	-- Four Heads are Better Than None (A)
 					["sourceQuests"] = {
@@ -662,7 +662,7 @@ _.Zones =
 					},
 				}),
 				q(27608, {	-- Four Heads are Better than None (A)
-					["qg"] = 45669,	-- Cassius the White
+					["provider"] = { "n", 45669 },	-- Cassius the White
 					["coord"] = { 43.4, 57.4, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -689,7 +689,7 @@ _.Zones =
 					},
 				}),
 				q(27609, {	-- Four Heads are Better than None (H)
-					["qg"] = 45665,	-- Lady Cozwynn
+					["provider"] = { "n", 45665 },	-- Lady Cozwynn
 					["coord"] = { 45.3, 75.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -703,7 +703,7 @@ _.Zones =
 					},
 				}),
 				q(28133, {	-- Fury Unbound
-					["qg"] = 47417,	-- Zaela
+					["provider"] = { "n", 47417 },	-- Zaela
 					["coord"] = { 54.3, 43.8, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28123,	-- The Demon Chain
@@ -716,7 +716,7 @@ _.Zones =
 					},
 				}),
 				q(27783, {	-- Garona Needs You
-					["qg"] = 46243,	-- Initiate Goldmine
+					["provider"] = { "n", 46243 },	-- Initiate Goldmine
 					["coord"] = { 37.5, 88.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27745,	-- A Fiery Reunion
@@ -728,10 +728,10 @@ _.Zones =
 					},
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45796,	-- Master Mathias Shaw
+					["provider"] = { "n", 45796 },	-- Master Mathias Shaw
 				}),
 				q(27658, {	-- Help from the Earthcaller (H)
-					["qg"] = 45675,	-- Garona Halforcen
+					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -740,18 +740,18 @@ _.Zones =
 					},
 				}),
 				q(28594, {	-- Highbank, Crybank
-					["qg"] = 49378,	-- Patch
+					["provider"] = { "n", 49378 },	-- Patch
 					["coord"] = { 81.5, 80.1, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28591,	-- Off the Wall
 				}),
 				q(27650, {	-- Home Again
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						46174,	-- Cayden Dunwald
-						46176,	-- Donnelly Dunwald
-						46626,	-- Donnelly Dunwald
-						46583,	-- Eoin Dunwald
+					["providers"] = {
+						{ "n", 46174 },	-- Cayden Dunwald
+						{ "n", 46176 },	-- Donnelly Dunwald
+						{ "n", 46626 },	-- Donnelly Dunwald
+						{ "n", 46583 },	-- Eoin Dunwald
 					},
 					["sourceQuests"] = {
 						27647,	-- Anything But Water
@@ -771,10 +771,10 @@ _.Zones =
 					},
 					["coord"] = { 60.1, 57.9, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46804,	-- Keegan Firebeard
+					["provider"] = { "n", 46804 },	-- Keegan Firebeard
 				}),
 				q(28874, {	-- Hook 'em High
-					["qg"] = 46318,	-- Harkkan
+					["provider"] = { "n", 46318 },	-- Harkkan
 					["coord"] = { 55.1, 43.5, 241 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -787,10 +787,10 @@ _.Zones =
 					},
 					["coord"] = { 49.1, 29.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48014,	-- Nivvet Channelock
+					["provider"] = { "n", 48014 },	-- Nivvet Channelock
 				}),
 				q(28043, {	-- How to Maim Your Dragon
-					["qg"] = 46313,	-- Narkrall Rakeclaw
+					["provider"] = { "n", 46313 },	-- Narkrall Rakeclaw
 					["coord"] = { 54.8, 44.2, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28041,	-- Bait and Throttle
@@ -802,10 +802,10 @@ _.Zones =
 					},
 					["coord"] = { 26.0, 38.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 47592,	-- Master Mathias Shaw
+					["provider"] = { "n", 47592 },	-- Master Mathias Shaw
 				}),
 				q(28092, {	-- If The Key Fits (H)
-					["qg"] = 47493,	-- Warlord Krogg
+					["provider"] = { "n", 47493 },	-- Warlord Krogg
 					["coord"] = { 29.6, 40.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28097,	-- The Gates of Grim Batol
@@ -816,10 +816,10 @@ _.Zones =
 						27506,	-- Life From Death
 					},
 					["coord"] = { 29.8, 31.2, 241 },
-					["qg"] = 45522,	-- Velastrasza
+					["provider"] = { "n", 45522 },	-- Velastrasza
 				}),
 				q(26621, {	-- Insurrection
-					["qg"] = 43581,	-- Zaela
+					["provider"] = { "n", 43581 },	-- Zaela
 					["coord"] = { 76.6, 49.6, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26619,	-- You Say You Want a Revolution
@@ -834,7 +834,7 @@ _.Zones =
 					["sourceQuest"] = 27503,	-- Up to the Citadel
 				}),
 				q(27639, {	-- Just You and Garona
-					["qg"] = 45665,	-- Lady Cozwynn
+					["provider"] = { "n", 45665 },	-- Lady Cozwynn
 					["coord"] = { 45.3, 75.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27503,	-- Up to the Citadel
@@ -848,23 +848,23 @@ _.Zones =
 					["sourceQuests"] = { 27502 },	-- Up to the Citadel
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 43.4, 57.3, 241 },
-					["qg"] = 45669,	-- Cassius the White
+					["provider"] = { "n", 45669 },	-- Cassius the White
 				}),
 				q(28860, {	-- Keeping the Dragonmaw at Bay
-					["qg"] = 46591,	-- Colin Thundermar
+					["provider"] = { "n", 46591 },	-- Colin Thundermar
 					["coord"] = { 49.0, 29.8, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["sourceQuests"] = { 28655 },	-- Wild, Wild, Wildhammer Wedding
 				}),
 				q(27491, {	-- Kor'kron Drop
-					["qg"] = 45665,	-- Lady Cozwynn
+					["provider"] = { "n", 45665 },	-- Lady Cozwynn
 					["coord"] = { 45.3, 75.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28249,	-- Crushblow
 				}),
 				q(28595, {	-- Krazz Works!
-					["qg"] = 49000,	-- Patch
+					["provider"] = { "n", 49000 },	-- Patch
 					["coord"] = { 82.1, 80.0, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -880,7 +880,7 @@ _.Zones =
 					},
 				}),
 				q(28583, {	-- Krazzworks
-					["qg"] = 46090,	-- Juice Gnugat
+					["provider"] = { "n", 46090 },	-- Juice Gnugat
 					["coord"] = { 78.4, 62.5, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27622,	-- Mo' Better Shredder
@@ -889,13 +889,13 @@ _.Zones =
 					["sourceQuests"] = { 28598 },	-- Aiming High
 					["coord"] = { 78.9, 76.6, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 49020,	-- Fargo Flintlocke
+					["provider"] = { "n", 49020 },	-- Fargo Flintlocke
 				}),
 				q(27366, {	-- Landgrab
 					["sourceQuests"] = { 27338 },	-- Our Boys on the Shore
 					["coord"] = { 76.7, 69.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45169,	-- Lieutenant Emry
+					["provider"] = { "n", 45169 },	-- Lieutenant Emry
 					["g"] = {
 						i(63893),	-- Signet of Bloody Sands
 						i(63892),	-- Beach-Sweeper Wand
@@ -904,7 +904,7 @@ _.Zones =
 				q(28247, {	-- Last of Her Kind
 					["sourceQuests"] = { 28176 },	-- Following the Young Home
 					["coord"] = { 45.0, 90.8, 241 },
-					["qg"] = 47905,	-- Baleflame
+					["provider"] = { "n", 47905 },	-- Baleflame
 					["g"] = {
 						i(63756),	-- Bracers of Final Memories
 						i(63755),	-- Hood of Lost Solitude
@@ -915,15 +915,15 @@ _.Zones =
 					["sourceQuests"] = { 28280 },	-- Tear Them From the Sky
 					["coord"] = { 49.0, 29.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48173,	-- Colin Thundermar
+					["provider"] = { "n", 48173 },	-- Colin Thundermar
 				}),
 				q(27506, {	-- Life from Death
 					["sourceQuests"] = { 27504 },	-- Even Dragons Bleed
 					["coord"] = { 29.7, 31.3, 241 },
-					["qg"] = 45562,	-- Baleflame
+					["provider"] = { "n", 45562 },	-- Baleflame
 				}),
 				q(26549, {	-- Madness
-					["qg"] = 43187,	-- Ornak
+					["provider"] = { "n", 43187 },	-- Ornak
 					["coord"] = { 78.8, 51.8, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26539,	-- Stalled Negotiations
@@ -935,7 +935,7 @@ _.Zones =
 					},
 					["coord"] = { 49.0, 29.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46591,	-- Colin Thundermar
+					["provider"] = { "n", 46591 },	-- Colin Thundermar
 					["g"] = {
 						i(63814),	-- Corruption Resistant Gloves
 						i(63813),	-- Flameproof Treads
@@ -950,18 +950,18 @@ _.Zones =
 					},
 					["coord"] = { 29.3, 26.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45528,	-- Calen
+					["provider"] = { "n", 45528 },	-- Calen
 				}),
 				q(27782, {	-- Mathias Needs You
 					["sourceQuests"] = { 27745 },	-- A Fiery Reunion
 					["coord"] = { 37.5, 88.6, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46243,	-- Initiate Goldmine
+					["provider"] = { "n", 46243 },	-- Initiate Goldmine
 				}),
 				q(27303, {	-- Mercy for the Bound
 					["sourceQuests"] = { 27301 },	-- Unbroken
 					["coord"] = { 44.2, 18.1, 241 },
-					["qg"] = 45362,	-- Earthcaller Yevaa
+					["provider"] = { "n", 45362 },	-- Earthcaller Yevaa
 					["g"] = {
 						i(63786),	-- Fleshburned Robes
 						i(63785),	-- Smoking Stride Treads
@@ -969,7 +969,7 @@ _.Zones =
 					},
 				}),
 				q(27622, {	-- Mo' Better Shredder
-					["qg"] = 46090,	-- Juice Gnugat
+					["provider"] = { "n", 46090 },	-- Juice Gnugat
 					["coord"] = { 78.4, 62.5, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -990,10 +990,10 @@ _.Zones =
 					},
 					["coord"] = { 43.4, 57.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45668,	-- Kurdran Wildhammer
+					["provider"] = { "n", 45668 },	-- Kurdran Wildhammer
 				}),
 				q(27495, {	-- Move the Mountain (H)
-					["qg"] = 45658,	-- Warlord Zaela
+					["provider"] = { "n", 45658 },	-- Warlord Zaela
 					["coord"] = { 45.2, 75.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1010,10 +1010,10 @@ _.Zones =
 					},
 					["coord"] = { 37.5, 88.6, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46243,	-- Initiate Goldmine
+					["provider"] = { "n", 46243 },	-- Initiate Goldmine
 				}),
 				q(28885, {	-- Mr. Goldmine's Wild Ride (H)
-					["qg"] = 46243,	-- Initiate Goldmine
+					["provider"] = { "n", 46243 },	-- Initiate Goldmine
 					["coord"] = { 37.5, 88.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1023,7 +1023,7 @@ _.Zones =
 					},
 				}),
 				q(26784, {	-- Muddied Waters
-					["qg"] = 44024,	-- Artesh
+					["provider"] = { "n", 44024 },	-- Artesh
 					["coord"] = { 73.8, 53.8, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26786,	-- Securing the Beach Head
@@ -1032,13 +1032,13 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- for "Never Leave a Dinner Behind"
 					["coord"] = { 49.0, 29.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46591,	-- Colin Thundermar
+					["provider"] = { "n", 46591 },	-- Colin Thundermar
 				}),
 				q(27178, {	-- Naga Reinforcements
 					["sourceQuests"] = { 28599 },	-- Kurdran's Waitin'
 					["coord"] = { 79.2, 78.5, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45170,	-- Simon Chandler
+					["provider"] = { "n", 45170 },	-- Simon Chandler
 					["g"] = {
 						i(63911),	-- Myrmidon-Slaying Bracers
 						i(63910),	-- Blackscale Wraps
@@ -1049,7 +1049,7 @@ _.Zones =
 					["sourceQuests"] = { 28281 },	-- Last Stand at Thundermar
 					["coord"] = { 49.0, 29.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48173,	-- Colin Thundermar
+					["provider"] = { "n", 48173 },	-- Colin Thundermar
 					["g"] = {
 						i(63807),	-- Narkrall's Leggings
 						i(63806),	-- Ale Soaked Grips
@@ -1059,13 +1059,13 @@ _.Zones =
 					},
 				}),
 				q(27690, {	-- Narkrall, the Drake-Tamer (H)
-					["qg"] = 45982,	-- Gralok
+					["provider"] = { "n", 45982 },	-- Gralok
 					["coord"] = { 70.2, 43.2, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27606,	-- Blast Him!
 				}),
 				q(26608, {	-- Negotiations Terminated
-					["qg"] = 43190,	-- Zaela
+					["provider"] = { "n", 43190 },	-- Zaela
 					["coord"] = { 73.6, 53.8, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26549,	-- Madness
@@ -1074,17 +1074,17 @@ _.Zones =
 					["sourceQuests"] = { 28369 },	-- My Sister, Fanny
 					["coord"] = { 49.7, 29.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48013,	-- Fanny Thundermar
+					["provider"] = { "n", 48013 },	-- Fanny Thundermar
 				}),
 				q(28862, {	-- Never Leave a Dinner Behind
-					["qg"] = 48010,	-- Low Shaman Blundy
+					["provider"] = { "n", 48010 },	-- Low Shaman Blundy
 					["coord"] = { 49.6, 29.2, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["sourceQuests"] = { 28655 },	-- Wild, Wild, Wildhammer Wedding
 				}),
 				q(28170, {	-- Night Terrors
-					["qg"] = 47751,	-- Buunu
+					["provider"] = { "n", 47751 },	-- Buunu
 					["coord"] = { 36.3, 37.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28166,	-- Thog's Nightlight
@@ -1097,7 +1097,7 @@ _.Zones =
 				q(27380, {	-- Nightmare
 					["sourceQuests"] = { 27379 },	-- The Terrors of Iso'rath
 					["coord"] = { 48.7, 16.6, 241 },
-					["qg"] = 48059,	-- Earthcaller Yevaa
+					["provider"] = { "n", 48059 },	-- Earthcaller Yevaa
 					["g"] = {
 						i(63783),	-- Woundseal Leggings
 						i(63782),	-- Weeping Scar Cover
@@ -1105,13 +1105,13 @@ _.Zones =
 					},
 				}),
 				q(28593, {	-- Of Utmost Importance
-					["qg"] = 49378,	-- Patch
+					["provider"] = { "n", 49378 },	-- Patch
 					["coord"] = { 81.9, 79.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28591,	-- Off the Wall
 				}),
 				q(28591, {	-- Off The Wall
-					["qg"] = 49378,	-- Patch
+					["provider"] = { "n", 49378 },	-- Patch
 					["coord"] = { 77.2, 74.6, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28590,	-- Reprisal
@@ -1120,16 +1120,16 @@ _.Zones =
 					["sourceQuests"] = { 28377 },	-- Rescue at Glopgut's Hollow
 					["coord"] = { 38.1, 34.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48472,	-- Colin Thundermar
+					["provider"] = { "n", 48472 },	-- Colin Thundermar
 				}),
 				q(27492, {	-- Ogres & Ettins (A)
 					["sourceQuests"] = { 28248 },	-- Victors' Point
 					["coord"] = { 43.4, 57.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45668,	-- Kurdran Wildhammer
+					["provider"] = { "n", 45668 },	-- Kurdran Wildhammer
 				}),
 				q(27493, {	-- Ogres & Ettins (H)
-					["qg"] = 45658,	-- Warlord Zaela
+					["provider"] = { "n", 45658 },	-- Warlord Zaela
 					["coord"] = { 45.2, 75.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28249,	-- Crushblow
@@ -1138,7 +1138,7 @@ _.Zones =
 					["sourceQuests"] = { 27645 },	-- Cayden Dunwald
 					["coord"] = { 45.7, 71.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46174,	-- Cayden Dunwald
+					["provider"] = { "n", 46174 },	-- Cayden Dunwald
 					["g"] = {
 						i(63843),	-- Blood-Soaked Ale Mug
 						i(63842),	-- World-Queller Focus
@@ -1149,10 +1149,10 @@ _.Zones =
 					["sourceQuests"] = { 28599 },	-- Kurdran's Waitin'
 					["coord"] = { 79.1, 78.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45167,	-- Kurdran Wildhammer
+					["provider"] = { "n", 45167 },	-- Kurdran Wildhammer
 				}),
 				q(27945, {	-- Paint it Black
-					["qg"] = 46324,	-- Mallia
+					["provider"] = { "n", 46324 },	-- Mallia
 					["coord"] = { 53.2, 42.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
@@ -1163,7 +1163,7 @@ _.Zones =
 					},
 				}),
 				q(28592, {	-- Parting Packages
-					["qg"] = 49379,	-- Ticker
+					["provider"] = { "n", 49379 },	-- Ticker
 					["coord"] = { 80.6, 80.6, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28591,	-- Off the Wall
@@ -1174,7 +1174,7 @@ _.Zones =
 					},
 				}),
 				q(27576, {	-- Patchwork Command
-					["qg"] = 45528,	-- Calen
+					["provider"] = { "n", 45528 },	-- Calen
 					["coord"] = { 29.3, 25.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1188,10 +1188,10 @@ _.Zones =
 					["description"] = "Must be on |cFFFFD700If the Key Fits|r to receieve this quest.",
 					["coord"] = { 26.0, 38.9, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 47611,	-- Highbank Lieutenant
+					["provider"] = { "n", 47611 },	-- Highbank Lieutenant
 				}),
 				q(28094, {	-- Paving the Way (H)
-					["qg"] = 47374,	-- Patch
+					["provider"] = { "n", 47374 },	-- Patch
 					["coord"] = { 29.6, 40.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28097,	-- The Gates of Grim Batol
@@ -1204,10 +1204,10 @@ _.Zones =
 					},
 					["coord"] = { 57.4, 58.1, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46805,	-- Iain Firebeard
+					["provider"] = { "n", 46805 },	-- Iain Firebeard
 				}),
 				q(28586, {	-- Pool Pony Rescue
-					["qg"] = 49441,	-- Flashbang Rothman
+					["provider"] = { "n", 49441 },	-- Flashbang Rothman
 					["coord"] = { 77.6, 16.6, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28583,	-- Krazzworks
@@ -1215,7 +1215,7 @@ _.Zones =
 				q(27659, {	-- Portal Overlord
 					["sourceQuests"] = { 27657, 27658 },	-- Help From the Earthcaller (A/H)
 					["coord"] = { 37.5, 88.6, 241 },
-					["qg"] = 46242,	-- Earthcaller Yevaa
+					["provider"] = { "n", 46242 },	-- Earthcaller Yevaa
 					["g"] = {
 						i(63734),	-- Portal-Sealer's Breastplate
 						i(63733),	-- Deepdigger Helm
@@ -1229,20 +1229,20 @@ _.Zones =
 					},
 					["coord"] = { 49.1, 29.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48014,	-- Nivvet Channelock
+					["provider"] = { "n", 48014 },	-- Nivvet Channelock
 				}),
 				q(28104, {	-- Precious Goods (A)
 					["sourceQuests"] = { 28101 },	-- Mathias' Command
 					["coord"] = { 26.0, 38.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 47592,	-- Master Mathias Shaw
+					["provider"] = { "n", 47592 },	-- Master Mathias Shaw
 					["g"] = {
 						i(63774),	-- Spear-Impaled Leggings
 						i(63773),	-- Gatekeeper's Helm
 					},
 				}),
 				q(28090, {	-- Precious Goods (H)
-					["qg"] = 47492,	-- Patch
+					["provider"] = { "n", 47492 },	-- Patch
 					["coord"] = { 27.3, 36.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27576,	-- Patchwork Command
@@ -1255,7 +1255,7 @@ _.Zones =
 					["sourceQuests"] = { 28108 },	-- If the Key Fits
 					["coord"] = { 29.6, 51.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 47611,	-- Highbank Lieutenant
+					["provider"] = { "n", 47611 },	-- Highbank Lieutenant
 					["g"] = {
 						i(63767),	-- Gatesmashing Gauntlets
 						i(63766),	-- Commander's Stompers
@@ -1263,7 +1263,7 @@ _.Zones =
 					},
 				}),
 				q(28093, {	-- Pressing Forward (H)
-					["qg"] = 47374,	-- Patch
+					["provider"] = { "n", 47374 },	-- Patch
 					["coord"] = { 29.1, 51.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28092,	-- If The Key Fits
@@ -1274,17 +1274,17 @@ _.Zones =
 					},
 				}),
 				q(28147, {	-- Purple is Your Color -- aa
-					["qg"] = 47723,	-- Rotgrum
+					["provider"] = { "n", 47723 },	-- Rotgrum
 					["coord"] = { 36.7, 37.9, 241 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27300, {	-- Pushing Back
 					["sourceQuests"] = { 27299 },	-- Torn Ground
 					["coord"] = { 44.0, 10.5, 241 },
-					["qg"] = 45332,	-- Earthcaller Torunscar
+					["provider"] = { "n", 45332 },	-- Earthcaller Torunscar
 				}),
 				q(28584, {	-- Quality Construction
-					["qg"] = 49439,	-- Brett the Bomber
+					["provider"] = { "n", 49439 },	-- Brett the Bomber
 					["coord"] = { 77.6, 16.6, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28583,	-- Krazzworks
@@ -1295,7 +1295,7 @@ _.Zones =
 					},
 				}),
 				q(28590, {	-- Reprisal
-					["qg"] = 48993,	-- Captain Krazz
+					["provider"] = { "n", 48993 },	-- Captain Krazz
 					["coord"] = { 77.6, 16.6, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28589,	-- Everything But the Kitchen Sink
@@ -1304,27 +1304,27 @@ _.Zones =
 					["sourceQuests"] = { 28346 },	-- The Bachelor
 					["coord"] = { 54.4, 16.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48364,	-- Keegan Firebeard
+					["provider"] = { "n", 48364 },	-- Keegan Firebeard
 				}),
 				q(27515, {	-- Roots'll Do 'Er
 					["sourceQuests"] = { 27514 },	-- Bird Down! Bird Down!
 					["coord"] = { 67.6, 65.9, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45172,	-- Thordun Hammerblow
+					["provider"] = { "n", 45172 },	-- Thordun Hammerblow
 				}),
 				q(27744, {	-- Rune Ruination
 					["sourceQuests"] = { 27720, 28885 },	-- Mr. Goldmine's Wild Ride (A/H)
 					["coord"] = { 37.4, 93.2, 241 },
-					["qg"] = 46671,	-- Twilight Rune of Earth
+					["provider"] = { "n", 46671 },	-- Twilight Rune of Earth
 				}),
 				q(27177, {	-- Salvage Operation
 					["sourceQuests"] = { 28599 },	-- Kurdran's Waitin'
 					["coord"] = { 79.2, 78.5, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45170,	-- Simon Chandler
+					["provider"] = { "n", 45170 },	-- Simon Chandler
 				}),
 				q(26798, {	-- Saurfang Will be Pleased
-					["qg"] = 44024,	-- Artesh
+					["provider"] = { "n", 44024 },	-- Artesh
 					["coord"] = { 73.8, 53.8, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26784,	-- Muddied Waters
@@ -1333,22 +1333,22 @@ _.Zones =
 					["sourceQuests"] = { 27338 },	-- Our Boys on the Shore
 					["coord"] = { 76.7, 69.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45169,	-- Lieutenant Emry
+					["provider"] = { "n", 45169 },	-- Lieutenant Emry
 				}),
 				q(27610, {	-- Scouting the Shore (H)
-					["qg"] = 46089,	-- Rok'tar
+					["provider"] = { "n", 46089 },	-- Rok'tar
 					["coord"] = { 78.2, 62.5, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27607,	-- The Southern Flank
 				}),
 				q(26786, {	-- Securing the Beach Head
-					["qg"] = 43943,	-- Garrosh Hellscream
+					["provider"] = { "n", 43943 },	-- Garrosh Hellscream
 					["coord"] = { 74.8, 53.0, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26622,	-- Death to Mor'ghor
 				}),
 				q(27586, {	-- Shells on the Sea Shore
-					["qg"] = 45983,	-- Fergus Gearchum
+					["provider"] = { "n", 45983 },	-- Fergus Gearchum
 					["coord"] = { 70.3, 43.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27583,	-- The Northern Flank
@@ -1356,25 +1356,25 @@ _.Zones =
 				q(28175, {	-- Shining Through the Dark
 					["sourceQuests"] = { 28171 },	-- And the Sky Streaked Red
 					["coord"] = { 59.0, 69.8, 241 },
-					["qg"] = 47904,	-- Velastrasza
+					["provider"] = { "n", 47904 },	-- Velastrasza
 				}),
 				q(27433, {	-- Shredderectomy
 					["sourceQuests"] = { 27338 },	-- Our Boys on the Shore
 					["coord"] = { 77.0, 69.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45168,	-- Fargo Flintlocke
+					["provider"] = { "n", 45168 },	-- Fargo Flintlocke
 				}),
 				q(27490, {	-- SI:7 Drop
 					["sourceQuests"] = { 28248 },	-- Victors' Point
 					["coord"] = { 43.4, 57.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45669,	-- Cassius the White
+					["provider"] = { "n", 45669 },	-- Cassius the White
 				}),
 				q(27468, {	-- Siege Tank Rescue
 					["sourceQuests"] = { 27433 },	-- Shredderectomy
 					["coord"] = { 77.0, 69.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45168,	-- Fargo Flintlocke
+					["provider"] = { "n", 45168 },	-- Fargo Flintlocke
 					["g"] = {
 						i(63887),	-- Tread-Bind Spaulders
 						i(63886),	-- Nature-Crush Helm
@@ -1385,10 +1385,10 @@ _.Zones =
 					["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
 					["coord"] = { 45.9, 65.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46143,	-- Flynn Dunwald
+					["provider"] = { "n", 46143 },	-- Flynn Dunwald
 				}),
 				q(27588, {	-- Signal the Attack (A)
-					["qg"] = 45668,	-- Kurdran Wildhammer
+					["provider"] = { "n", 45668 },	-- Kurdran Wildhammer
 					["coord"] = { 43.3, 57.3, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27494 },	-- Move the Mountain
@@ -1404,7 +1404,7 @@ _.Zones =
 					["sourceQuest"] = 27495,	-- Move the Mountain
 				}),
 				q(27590, {	-- Signal the Attack (H)
-					["qg"] = 45658,	-- Warlord Zaela
+					["provider"] = { "n", 45658 },	-- Warlord Zaela
 					["coord"] = { 45.2, 75.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27495,	-- Move the Mountain
@@ -1412,13 +1412,13 @@ _.Zones =
 				q(27302, {	-- Simple Solutions
 					["sourceQuests"] = { 27299 },	-- Torn Ground
 					["coord"] = { 44.4, 11.5, 241 },
-					["qg"] = 45432,	-- Initiate Goldmine
+					["provider"] = { "n", 45432 },	-- Initiate Goldmine
 				}),
 				q(27200, {	-- Siren's Song
 					["sourceQuests"] = { 28599 },	-- Kurdran's Waitin'
 					["coord"] = { 75.9, 79.9, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45171,	-- Ephram Hardstone
+					["provider"] = { "n", 45171 },	-- Ephram Hardstone
 					["g"] = {
 						i(63905),	-- Wax-Filled Hood
 						i(63904),	-- Mast-Bound Leggings
@@ -1429,7 +1429,7 @@ _.Zones =
 					["sourceQuests"] = { 27784 },	-- The Hammer of Twilight
 					["coord"] = { 45.2, 87.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46717,	-- The Hammer of Twilight
+					["provider"] = { "n", 46717 },	-- The Hammer of Twilight
 					["g"] = {
 						i(63708),	-- Overly Intelligent Robe
 						i(63707),	-- Shaw's Finest Leggings
@@ -1438,7 +1438,7 @@ _.Zones =
 					},
 				}),
 				q(27788, {	-- Skullcrusher the Mountain (H)
-					["qg"] = 46717,	-- The Hammer of Twilight
+					["provider"] = { "n", 46717 },	-- The Hammer of Twilight
 					["coord"] = { 45.3, 87.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27786,	-- The Hammer of Twilight
@@ -1453,7 +1453,7 @@ _.Zones =
 					["sourceQuests"] = { 27621 },	-- Firebeard's Patrol
 					["coord"] = { 60.4, 58.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46814,	-- Cailin Longfellow
+					["provider"] = { "n", 46814 },	-- Cailin Longfellow
 					["g"] = {
 						i(63880),	-- Fire-Dodged Shoulderpads
 						i(63879),	-- Waistguard of Salvaged Happiness
@@ -1468,7 +1468,7 @@ _.Zones =
 					},
 					["coord"] = { 62.5, 48.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46850,	-- Mackay Firebeard
+					["provider"] = { "n", 46850 },	-- Mackay Firebeard
 					["g"] = {
 						i(63867),	-- Forge-Hold Gloves
 						i(63866),	-- Camp-Cleaner Chestguard
@@ -1479,33 +1479,33 @@ _.Zones =
 					["sourceQuests"] = { 28407 },	-- The Bachelorette
 					["coord"] = { 54.3, 16.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48367,	-- Lachlan MacGraff
+					["provider"] = { "n", 48367 },	-- Lachlan MacGraff
 				}),
 				q(28409, {	-- Something Brewed
 					["sourceQuests"] = { 28407 },	-- The Bachelorette
 					["coord"] = { 54.3, 16.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48367,	-- Lachlan MacGraff
+					["provider"] = { "n", 48367 },	-- Lachlan MacGraff
 				}),
 				q(28411, {	-- Something Stewed
 					["sourceQuests"] = { 28407 },	-- The Bachelorette
 					["coord"] = { 54.3, 16.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48367,	-- Lachlan MacGraff
+					["provider"] = { "n", 48367 },	-- Lachlan MacGraff
 				}),
 				q(28410, {	-- Something Stolen
 					["sourceQuests"] = { 28407 },	-- The Bachelorette
 					["coord"] = { 54.3, 16.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48367,	-- Lachlan MacGraff
+					["provider"] = { "n", 48367 },	-- Lachlan MacGraff
 				}),
 				q(27660, {	-- Spirit of the Loch
 					["sourceQuests"] = { 27657, 27658 },	-- Help From the Earthcaller (A/H)
 					["coord"] = { 37.5, 88.6, 241 },
-					["qg"] = 46242,	-- Earthcaller Yevaa
+					["provider"] = { "n", 46242 },	-- Earthcaller Yevaa
 				}),
 				q(26539, {	-- Stalled Negotiations
-					["qg"] = 42978,	-- Admiral Stonefist
+					["provider"] = { "n", 42978 },	-- Admiral Stonefist
 					["coord"] = { 82.4, 49.8, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26388,	-- Twilight Skies
@@ -1514,7 +1514,7 @@ _.Zones =
 					["sourceQuests"] = { 27806 },	-- Honorable Bearing
 					["coord"] = { 57.4, 58.1, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46805,	-- Iain Firebeard
+					["provider"] = { "n", 46805 },	-- Iain Firebeard
 				}),
 				q(28280, {	-- Tear Them From the Sky!
 					["sourceQuests"] = {
@@ -1524,7 +1524,7 @@ _.Zones =
 					},
 					["coord"] = { 49.1, 29.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48174,	-- Nivvet Channelock
+					["provider"] = { "n", 48174 },	-- Nivvet Channelock
 				}),
 				q(28211, {	-- Tempered in Elemental Flame
 					["sourceQuests"] = {
@@ -1533,13 +1533,13 @@ _.Zones =
 					},
 					["coord"] = { 49.1, 29.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48014,	-- Nivvet Channelock
+					["provider"] = { "n", 48014 },	-- Nivvet Channelock
 				}),
 				q(28346, {	-- The Bachelor
 					["sourceQuests"] = { 28294 },	-- The Kirthaven Summit
 					["coord"] = { 54.8, 17.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48365,	-- Kurdran Wildhammer
+					["provider"] = { "n", 48365 },	-- Kurdran Wildhammer
 				}),
 				q(28407, {	-- The Bachelorette
 					["sourceQuests"] = {
@@ -1548,7 +1548,7 @@ _.Zones =
 					},
 					["coord"] = { 38.1, 34.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48472,	-- Colin Thundermar
+					["provider"] = { "n", 48472 },	-- Colin Thundermar
 				}),
 				q(31206, {	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
 					["u"] = 1,
@@ -1565,28 +1565,28 @@ _.Zones =
 						27865,	-- The Crucible of Carnage: The Wayward Wildhammer!
 					},
 					["coord"] = { 50.6, 58.3, 241 },
-					["qg"] = 46935,	-- Gurgthock
+					["provider"] = { "n", 46935 },	-- Gurgthock
 				}),
 				q(27863, {	-- The Crucible of Carnage: The Bloodeye Bruiser! -- aa
 					["coord"] = { 50.7, 58.2, 241 },
-					["qg"] = 46935,	-- Gurgthock
+					["provider"] = { "n", 46935 },	-- Gurgthock
 					["sourceQuest"] = 28038,	-- Blood in the Highlands
 				}),
 				q(27864, {	-- The Crucible of Carnage: The Deadly Dragonmaw!
 					["sourceQuests"] = { 27863 },	-- The Crucible of Carnage: The Bloodeye Bruiser!
 					["coord"] = { 50.7, 58.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46935,	-- Gurgthock
+					["provider"] = { "n", 46935 },	-- Gurgthock
 				}),
 				q(27867, {	-- The Crucible of Carnage: The Earl of Evisceration!
 					["sourceQuests"] = { 27866 },	-- The Crucible of Carnage: Calder's Creation!
 					["coord"] = { 50.6, 58.3, 241 },
-					["qg"] = 46935,	-- Gurgthock
+					["provider"] = { "n", 46935 },	-- Gurgthock
 				}),
 				q(27868, {	-- The Crucible of Carnage: The Twilight Terror!
 					["sourceQuests"] = { 27867 },	-- The Crucible of Carnage: The Earl of Evisceration!
 					["coord"] = { 50.6, 58.3, 241 },
-					["qg"] = 46935,	-- Gurgthock
+					["provider"] = { "n", 46935 },	-- Gurgthock
 					["g"] = {
 						i(63790),	-- Gurgthock's Garish Gorebat
 						i(63792),	-- Laquered Lung-Leak Longknife
@@ -1597,13 +1597,13 @@ _.Zones =
 					},
 				}),
 				q(27865, {	-- The Crucible of Carnage: The Wayward Wildhammer!
-					["qg"] = 46935,	-- Gurgthock
+					["provider"] = { "n", 46935 },	-- Gurgthock
 					["coord"] = { 50.7, 58.2, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27863,	-- The Crucible of Carnage: The Bloodeye Bruiser!
 				}),
 				q(28123, {	-- The Demon Chain
-					["qg"] = 47417,	-- Zaela
+					["provider"] = { "n", 47417 },	-- Zaela
 					["coord"] = { 54.3, 43.8, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28043,	-- How to Maim Your Dragon
@@ -1615,10 +1615,10 @@ _.Zones =
 					},
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45796,	-- Master Mathias Shaw
+					["provider"] = { "n", 45796 },	-- Master Mathias Shaw
 				}),
 				q(27696, {	-- The Elementium Axe (H)
-					["qg"] = 45675,	-- Garona Halforcen
+					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1644,16 +1644,16 @@ _.Zones =
 					["sourceQuests"] = { 27808 },	-- Stubborn as a Doyle
 					["coord"] = { 61.4, 67.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 47317,	-- Keeland Doyle
+					["provider"] = { "n", 47317 },	-- Keeland Doyle
 				}),
 				q(27810, {	-- The Fighting Spirit
 					["sourceQuests"] = { 27807 },	-- Clan Mullan
 					["coord"] = { 50.7, 60.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46811,	-- Duglas Mullan
+					["provider"] = { "n", 46811 },	-- Duglas Mullan
 				}),
 				q(28097, {	-- The Gates of Grim Batol
-					["qg"] = 47492,	-- Patch
+					["provider"] = { "n", 47492 },	-- Patch
 					["coord"] = { 27.3, 36.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1665,10 +1665,10 @@ _.Zones =
 					["sourceQuests"] = { 27782 },	-- Mathias Needs You
 					["coord"] = { 36.3, 66.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45796,	-- Master Mathias Shaw
+					["provider"] = { "n", 45796 },	-- Master Mathias Shaw
 				}),
 				q(27786, {	-- The Hammer of Twilight (H)
-					["qg"] = 45675,	-- Garona Halforcen
+					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27783,	-- Garona Needs You
@@ -1677,13 +1677,13 @@ _.Zones =
 					["sourceQuests"] = { 28282 },	-- Narkrall, the Drake-Tamer
 					["coord"] = { 49.0, 29.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48173,	-- Colin Thundermar
+					["provider"] = { "n", 48173 },	-- Colin Thundermar
 				}),
 				q(28233, {	-- The Lost Brother
 					["sourceQuests"] = { 27809 },	-- Firebeard Bellows
 					["coord"] = { 62.5, 48.5, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48046,	-- Ella Forgehammer
+					["provider"] = { "n", 48046 },	-- Ella Forgehammer
 				}),
 				q(28236, {	-- The Lost Brother
 					["u"] = 40,
@@ -1695,7 +1695,7 @@ _.Zones =
 					},
 					["coord"] = { 50.7, 60.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46811,	-- Duglas Mullan
+					["provider"] = { "n", 46811 },	-- Duglas Mullan
 					["g"] = {
 						i(63873),	-- Clan-Heart Shoulders
 						i(63872),	-- Loyalty-Seeker Bracers
@@ -1709,17 +1709,17 @@ _.Zones =
 						27303,	-- Mercy for the Bound
 					},
 					["coord"] = { 44.0, 10.5, 241 },
-					["qg"] = 45332,	-- Earthcaller Torunscar
+					["provider"] = { "n", 45332 },	-- Earthcaller Torunscar
 				}),
 				q(27374, {	-- The Maw of Madness
 					["sourceQuests"] = { 28655 },	-- Wild, Wild, Wildhammer Wedding
 					["coord"] = { 55.2, 17.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 49374,	-- Lachlan MacGraff
+					["provider"] = { "n", 49374 },	-- Lachlan MacGraff
 					["isBreadcrumb"] = true,
 				}),
 				q(27583, {	-- The Northern Flank
-					["qg"] = 44169,	-- Zaela
+					["provider"] = { "n", 44169 },	-- Zaela
 					["coord"] = { 75.3, 54.8, 241 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1727,38 +1727,38 @@ _.Zones =
 					["sourceQuests"] = { 27621 },	-- Firebeard's Patrol
 					["coord"] = { 60.1, 57.9, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46804,	-- Keegan Firebeard
+					["provider"] = { "n", 46804 },	-- Keegan Firebeard
 				}),
 				q(27538, {	-- The Perfect Poultice
 					["sourceQuests"] = { 27516 },	-- Wings Over Highbank
 					["coord"] = { 79.2, 78.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45172,	-- Thordun Hammerblow
+					["provider"] = { "n", 45172 },	-- Thordun Hammerblow
 				}),
 				q(27811, {	-- The Scent of Battle
 					["sourceQuests"] = { 27807 },	-- Clan Mullan
 					["coord"] = { 50.8, 60.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46812,	-- Edana Mullan
+					["provider"] = { "n", 46812 },	-- Edana Mullan
 				}),
 				q(27607, {	-- The Southern Flank
-					["qg"] = 44169,	-- Zaela
+					["provider"] = { "n", 44169 },	-- Zaela
 					["coord"] = { 75.3, 54.8, 241 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27379, {	-- The Terrors of Iso'rath
 					["sourceQuests"] = { 27378 },	-- The Worldbreaker
 					["coord"] = { 48.7, 16.6, 241 },
-					["qg"] = 48059,	-- Earthcaller Yevaa
+					["provider"] = { "n", 48059 },	-- Earthcaller Yevaa
 				}),
 				q(27545, {	-- The Way is Open
 					["sourceQuests"] = { 27537 },	-- Any Portal in a Storm
 					["coord"] = { 79.4, 77.6, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45173,	-- Talaa
+					["provider"] = { "n", 45173 },	-- Talaa
 				}),
 				q(27375, {	-- The Weeping Wound
-					["qg"] = 46324,	-- Mallia
+					["provider"] = { "n", 46324 },	-- Mallia
 					["coord"] = { 53.2, 42.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27945,	-- Paint it Black
@@ -1767,22 +1767,22 @@ _.Zones =
 				q(27378, {	-- The Worldbreaker
 					["sourceQuests"] = { 27377 },	-- Devoured
 					["coord"] = { 33.3, 50.3, 276 },	-- in The Maelstrom
-					["qg"] = 48051,	-- Thrall
+					["provider"] = { "n", 48051 },	-- Thrall
 				}),
 				q(28234, {	-- They Took Me Pants!
 					["sourceQuests"] = { 28233 },	-- The Lost Brother
 					["coord"] = { 63.1, 47.6, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48053,	-- Bahrum Forgehammer
+					["provider"] = { "n", 48053 },	-- Bahrum Forgehammer
 				}),
 				q(28166, {	-- Thog's Nightlight
-					["qg"] = 47751,	-- Buunu
+					["provider"] = { "n", 47751 },	-- Buunu
 					["coord"] = { 36.3, 37.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28149,	-- Whispers in the Wind
 				}),
 				ql(q(29934, {	-- To Ravenholdt
-					["qg"] = 55488,	-- Corastrasza
+					["provider"] = { "n", 55488 },	-- Corastrasza
 					["classes"] = { 4 },	-- Rogue
 					["sourceQuests"] = { 29802 },	-- A Hidden Message
 				})),
@@ -1792,10 +1792,10 @@ _.Zones =
 						27375,	-- The Weeping Wound (H)
 					},
 					["coord"] = { 44.0, 10.5, 241 },
-					["qg"] = 45332,	-- Earthcaller Torunscar
+					["provider"] = { "n", 45332 },	-- Earthcaller Torunscar
 				}),
 				q(27747, {	-- Total War
-					["qg"] = 46318,	-- Harkkan
+					["provider"] = { "n", 46318 },	-- Harkkan
 					["coord"] = { 55.1, 43.5, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27690,	-- Narkrall, the Drake-Tamer
@@ -1806,7 +1806,7 @@ _.Zones =
 					},
 				}),
 				q(28872, {	-- Total War
-					["qg"] = 46318,	-- Harkkan
+					["provider"] = { "n", 46318 },	-- Harkkan
 					["coord"] = { 55.1, 43.5, 241 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1815,12 +1815,12 @@ _.Zones =
 				q(27662, {	-- Unbinding
 					["sourceQuests"] = { 27657, 27658 },	-- Help From the Earthcaller (A/H)
 					["coord"] = { 37.5, 88.6, 241 },
-					["qg"] = 46243,	-- Initiate Goldmine
+					["provider"] = { "n", 46243 },	-- Initiate Goldmine
 				}),
 				q(27301, {	-- Unbroken
 					["sourceQuests"] = { 27299 },	-- Torn Ground
 					["coord"] = { 43.9, 11.2, 241 },
-					["qg"] = 45391,	-- Earthmender Duarn
+					["provider"] = { "n", 45391 },	-- Earthmender Duarn
 				}),
 				q(27502, {	-- Up to the Citadel (A)
 					["sourceQuests"] = {
@@ -1829,10 +1829,10 @@ _.Zones =
 					},
 					["coord"] = { 43.4, 57.3, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45669,	-- Cassius the White
+					["provider"] = { "n", 45669 },	-- Cassius the White
 				}),
 				q(27503, {	-- Up to the Citadel (H)
-					["qg"] = 45665,	-- Lady Cozwynn
+					["provider"] = { "n", 45665 },	-- Lady Cozwynn
 					["coord"] = { 45.3, 75.3, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1844,16 +1844,16 @@ _.Zones =
 					["sourceQuests"] = { 28247 },	-- Last of Her Kind
 					["coord"] = { 59.0, 69.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 47902,	-- Lirastrasza
+					["provider"] = { "n", 47902 },	-- Lirastrasza
 				}),
 				q(27750, {	-- War Forage
-					["qg"] = 46319,	-- Griff
+					["provider"] = { "n", 46319 },	-- Griff
 					["coord"] = { 53.8, 43.2, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27690,	-- Narkrall, the Drake-Tamer
 				}),
 				q(28863, {	-- Warlord Halthar is Back
-					["qg"] = 49386,	-- Craw MacGraw
+					["provider"] = { "n", 49386 },	-- Craw MacGraw
 					["coord"] = { 48.6, 30.6, 241 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1863,10 +1863,10 @@ _.Zones =
 					["sourceQuests"] = { 27380 },	-- Nightmare
 					["coord"] = { 44.0, 10.5, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48265,	-- Lauriel Trueblade
+					["provider"] = { "n", 48265 },	-- Lauriel Trueblade
 				}),
 				q(27486, {	-- Warm Welcome (H)
-					["qg"] = 46264,	-- Golluck Rockfist
+					["provider"] = { "n", 46264 },	-- Golluck Rockfist
 					["coord"] = { 44.0, 10.5, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27380,	-- Nightmare
@@ -1875,7 +1875,7 @@ _.Zones =
 					["sourceQuests"] = { 27661 },	-- Fire the Cannon
 					["coord"] = { 27.7, 63.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46413,	-- Countess Verrall
+					["provider"] = { "n", 46413 },	-- Countess Verrall
 					["g"] = {
 						i(63719),	-- Soulgrowth Spaulders
 						i(63718),	-- Grips of the Damned Mind
@@ -1883,7 +1883,7 @@ _.Zones =
 					},
 				}),
 				q(27798, {	-- Water of Life (H)
-					["qg"] = 46413,	-- Countess Verrall
+					["provider"] = { "n", 46413 },	-- Countess Verrall
 					["coord"] = { 27.6, 63.8, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27661,	-- Fire the Cannon
@@ -1911,24 +1911,24 @@ _.Zones =
 					["sourceQuests"] = { 27621 },	-- Firebeard's Patrol
 					["coord"] = { 60.1, 57.9, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46804,	-- Keegan Firebeard
+					["provider"] = { "n", 46804 },	-- Keegan Firebeard
 				}),
 				q(28596, {	-- Welcome to Highbank!
 					["sourceQuests"] = { 28832 },	-- Twilight Shores
 					["coord"] = { 80.9, 79.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 49022,	-- Lieutenant Fawkes
+					["provider"] = { "n", 49022 },	-- Lieutenant Fawkes
 				}),
 				q(27641, {	-- While Meeting The Family
 					["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
 					["coord"] = { 45.9, 65.4, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46143,	-- Flynn Dunwald
+					["provider"] = { "n", 46143 },	-- Flynn Dunwald
 				}),
 				q(27743, {	-- While We're Here
 					["sourceQuests"] = { 27720, 28885 },	-- Mr. Goldmine's Wild Ride (A/H)
 					["coord"] = { 38.2, 93.9, 241 },
-					["qg"] = 46513,	-- Initiate Goldmine
+					["provider"] = { "n", 46513 },	-- Initiate Goldmine
 				}),
 				q(28655, {	-- Wild, Wild, Wildhammer Wedding
 					["sourceQuests"] = {
@@ -1939,16 +1939,16 @@ _.Zones =
 					},
 					["coord"] = { 54.2, 16.7, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48368,	-- Grundy MacGraff
+					["provider"] = { "n", 48368 },	-- Grundy MacGraff
 				}),
 				q(28149, {	-- Whispers in the Wind
-					["qg"] = 47751,	-- Buunu
+					["provider"] = { "n", 47751 },	-- Buunu
 					["coord"] = { 36.3, 37.9, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28133,	-- Fury Unbound
 				}),
 				q(28588, {	-- Wildhammer Infestation
-					["qg"] = 48993,	-- Captain Krazz
+					["provider"] = { "n", 48993 },	-- Captain Krazz
 					["coord"] = { 77.6, 16.6, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28583,	-- Krazzworks
@@ -1957,16 +1957,16 @@ _.Zones =
 					["sourceQuests"] = { 27515 },	-- Roots'll Do 'Er
 					["coord"] = { 67.6, 65.9, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 45172,	-- Thordun Hammerblow
+					["provider"] = { "n", 45172 },	-- Thordun Hammerblow
 				}),
 				q(28413, {	-- Words and Music By...
 					["sourceQuests"] = { 28407 },	-- The Bachelorette
 					["coord"] = { 54.6, 17.5, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48366,	-- Russell Brower
+					["provider"] = { "n", 48366 },	-- Russell Brower
 				}),
 				q(26619, {	-- You Say You Want a Revolution
-					["qg"] = 43193,	-- Warlord Krogg
+					["provider"] = { "n", 43193 },	-- Warlord Krogg
 					["coord"] = { 82.4, 49.8, 241 },
 					["races"] = HORDE_ONLY,
 				}),

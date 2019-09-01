@@ -8,7 +8,7 @@ _.Zones =
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests
 					q(52923, {	-- Add More to the Collection
-						["qg"] = 142114,	-- Talia Sparkbrow
+						["provider"] = { "n", 142114 },	-- Talia Sparkbrow
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {
@@ -306,7 +306,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54138, {	-- Ritual Rampage (Faction Assault WQ)
-						["qg"] = 135446,	-- Vindicator Jaelaana <7th Legion Emissary>
+						["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -351,7 +351,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53883, {	-- Shores of Zuldazar (Faction Assault WQ)
-						["qg"] = 135447,	-- Ransa Greyfeather <The Honorbound Emissary>
+						["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,

@@ -68,7 +68,7 @@ _.Zones =
 				},
 				{	-- A Few Good Goblins
 					["questID"] = 25072,
-					["qg"] = 38706,	-- Zeke Bootscuff
+					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, 71 },
 					["sourceQuest"] = 25103,	-- Bootlegger Outpost
 					["groups"] = {
@@ -79,7 +79,7 @@ _.Zones =
 					},
 				},
 				q(2771, {	-- A Good Head On Your Shoulders
-					["qg"] = 7804,	-- Trenton Lighthammer
+					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = 164,	-- Blacksmithing
@@ -91,24 +91,24 @@ _.Zones =
 				{	-- A Grave Situation
 					["questID"] = 3913,
 					["u"] = 40,
-					["qg"] = 9299,	-- Gaeriyan
+					["provider"] = { "n", 9299 },	-- Gaeriyan
 					["sourceQuest"] = 3912,	-- Meet at the Grave
 				},
 				{	-- A Great Idea
 					["questID"] = 24951,
-					["qg"] = 38706,	-- Zeke Bootscuff
+					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, 71 },
 					["sourceQuest"] = 24933,	-- Chicken of the Desert
 				},
 				{	-- All Cheered Out
 					["questID"] = 26889,
-					["qg"] = 38704,	-- Kelsey Steelspark
+					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25166,	-- Captain Dreadbeard
 				},
 				{	-- Ancient Obstacles
 					["questID"] = 25420,
-					["qg"] = 40109,	-- Prospector Gunstan
+					["provider"] = { "n", 40109 },	-- Prospector Gunstan
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56903),	-- Gatewatcher Belt
@@ -122,7 +122,7 @@ _.Zones =
 				},
 				{	-- Ancient Obstacles
 					["questID"] = 25017,
-					["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, 71 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -137,7 +137,7 @@ _.Zones =
 				},
 				{	-- Andoren Will Know
 					["questID"] = 25018,
-					["qg"] = 38849,	-- Megs Dreadshredder
+					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25014,	-- Sandscraper's Treasure
@@ -146,7 +146,7 @@ _.Zones =
 				{	-- Another Power Source?
 					["questID"] = 841,
 					["u"] = 40,
-					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
+					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						{	-- Model 4711-FTZ Power Source
@@ -191,35 +191,35 @@ _.Zones =
 				{	-- Atiesh, Greatstaff of the Guardian
 					["questID"] = 9269,
 					["u"] = 40,
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["classes"] = { 11 },	-- Druid
 					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 				},
 				{	-- Atiesh, Greatstaff of the Guardian
 					["questID"] = 9270,
 					["u"] = 40,
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["classes"] = { 8 },	-- Mage
 					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 				},
 				{	-- Atiesh, Greatstaff of the Guardian
 					["questID"] = 9271,
 					["u"] = 40,
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["classes"] = { 9 },	-- Warlock
 					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 				},
 				{	-- Atiesh, Greatstaff of the Guardian
 					["questID"] = 9257,
 					["u"] = 40,
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["classes"] = { 5 },	-- Priest
 					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 				},
 				{	-- Atiesh, the Befouled Greatstaff
 					["questID"] = 9251,
 					["u"] = 40,
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 9250,	-- Frame of Atiesh
 				},
 				{	-- Blingtron Circuit Design
@@ -234,31 +234,31 @@ _.Zones =
 				},
 				{	-- Blisterpaw Butchery
 					["questID"] = 25115,
-					["qg"] = 39178,	-- Driz Plunkbow
+					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, 71 },
 					["sourceQuest"] = 25111,	-- Scavengers Scavenged
 				},
 				{	-- Blood to Thrive
 					["questID"] = 25021,
-					["qg"] = 38927,	-- Mazoga
+					["provider"] = { "n", 38927 },	-- Mazoga
 					["coord"] = { 42.2, 23.8, 71 },
 				},
 				{	-- Bootlegger Outpost
 					["questID"] = 25103,
-					["qg"] = 38703,	-- Megs Dreadshredder
+					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24950,	-- Captain Dreadbeard
 				},
 				{	-- Booty Duty
 					["questID"] = 24949,
-					["qg"] = 38703,	-- Megs Dreadshredder
+					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24910,	-- Rocket Rescue
 				},
 				q(4496, {	-- Bungle in the Jungle
-					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuests"] = {
 						4494,	-- March of the Silithid [Horde]
@@ -268,18 +268,18 @@ _.Zones =
 				}),
 				{	-- Butcherbot
 					["questID"] = 25112,
-					["qg"] = 39178,	-- Driz Plunkbow
+					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, 71 },
 				},
 				q(4509, {	-- Calm Before the Storm [Horde]
-					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 				}),
 				q(4508, {	-- Calm Before the Storm [Alliance]
-					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["races"] = ALLIANCE_ONLY,
@@ -287,7 +287,7 @@ _.Zones =
 				}),
 				{	-- Captain Dreadbeard
 					["questID"] = 25166,
-					["qg"] = 38704,	-- Kelsey Steelspark
+					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(56867),	-- Pretty Please Robes
@@ -303,7 +303,7 @@ _.Zones =
 				},
 				{	-- Captain Dreadbeard
 					["questID"] = 24950,
-					["qg"] = 38703,	-- Megs Dreadshredder
+					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, 71 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -320,14 +320,14 @@ _.Zones =
 				},
 				{	-- Chicken of the Desert
 					["questID"] = 24933,
-					["qg"] = 38706,	-- Zeke Bootscuff
+					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, 71 },
 					["sourceQuest"] = 24932,	-- Cutting Losses
 				},
 				{	-- Clamlette Surprise
 					["questID"] = 13825,
 					["u"] = 40,	
-					["qg"] = 40589,	-- Dirge Quikcleave
+					["provider"] = { "n", 40589 },	-- Dirge Quikcleave
 					["description"] = "This quest is only available if you learned Artisan Cooking before 3.1.0",
 					["requireSkill"] = 185,	-- Cooking
 					["groups"] = {
@@ -335,7 +335,7 @@ _.Zones =
 					},
 				},
 				q(6610, {	-- Clamlette Surprise
-					["qg"] = 40589,	-- Dirge Quikcleave
+					["provider"] = { "n", 40589 },	-- Dirge Quikcleave
 					["coord"] = { 52.4, 29.0, 71 },
 					["sourceQuests"] = {
 						6611,	-- To Gadgetzan You Go!
@@ -349,7 +349,7 @@ _.Zones =
 				{	-- Confront Yeh'kinya
 					["questID"] = 8181,
 					["u"] = 40,
-					["qg"] = 10460,	-- Prospector Ironboot
+					["provider"] = { "n", 10460 },	-- Prospector Ironboot
 					["groups"] = {
 						un(2, i(20218)),	-- Faded Hakkari Cloak
 						un(2, i(20219)),	-- Tattered Hakkari Cape
@@ -357,19 +357,19 @@ _.Zones =
 				},
 				{	-- Cutting Losses
 					["questID"] = 24932,
-					["qg"] = 38706,	-- Zeke Bootscuff
+					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, 71 },
 					["sourceQuest"] = 25103,	-- Bootlegger Outpost
 				},
 				{	-- Darkest Mojo
 					["questID"] = 25026,
-					["qg"] = 38927,	-- Mazoga
+					["provider"] = { "n", 38927 },	-- Mazoga
 					["coord"] = { 42.2, 23.8, 71 },
 					["sourceQuest"] = 25025,	-- Sang'thraze the Deflector
 				},
 				{	-- Dead Man's Chest
 					["questID"] = 25052,
-					["qg"] = 38704,	-- Kelsey Steelspark
+					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25050,	-- Rocket Rescue
 					["groups"] = {
@@ -381,7 +381,7 @@ _.Zones =
 				},
 				{	-- Dead Man's Chest
 					["questID"] = 24927,
-					["qg"] = 38703,	-- Megs Dreadshredder
+					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24910,	-- Rocket Rescue
@@ -394,20 +394,20 @@ _.Zones =
 				},
 				{	-- Define "Crazy"
 					["questID"] = 25060,
-					["qg"] = 39059,	-- Kelsey Steelspark
+					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- Deliver to MacKinley
 					["questID"] = 2874,
 					["u"] = 40,
-					["qg"] = 7881,	-- Stoley
+					["provider"] = { "n", 7881 },	-- Stoley
 					["groups"] = {
 						un(2, i(9637)),	-- Shinkicker Boots
 						un(2, i(9636)),	-- Swashbuckler Sash
 					},
 				},
 				q(3321, {	-- Did You Lose This?
-					["qg"] = 7804,	-- Trenton Lighthammer
+					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuests"] = {
 						2771,	-- A Good Head On Your Shoulders
@@ -422,7 +422,7 @@ _.Zones =
 					
 				}),
 				q(27003, {	-- Easy Money
-					["qg"] = 44833,	-- Adarrah
+					["provider"] = { "n", 44833 },	-- Adarrah
 					["coord"] = { 30.4, 65.5, 71 },
 					["sourceQuests"] = {
 						28558,	-- Hero's Call: Uldum!
@@ -433,7 +433,7 @@ _.Zones =
 				}),
 				{	-- Filling Our Pockets
 					["questID"] = 26887,
-					["qg"] = 38704,	-- Kelsey Steelspark
+					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25052,	-- Dead Man's Chest
@@ -442,19 +442,19 @@ _.Zones =
 				},
 				{	-- Filling Our Pockets
 					["questID"] = 25541,
-					["qg"] = 38703,	-- Megs Dreadshredder
+					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24949,	-- Booty Duty
 				},
 				{	-- Fragments of Language
 					["questID"] = 25565,
-					["qg"] = 40109,	-- Prospector Gunstan
+					["provider"] = { "n", 40109 },	-- Prospector Gunstan
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- Fragments of Language
 					["questID"] = 25020,
-					["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, 71 },
 					["races"] = HORDE_ONLY,
 				},
@@ -469,14 +469,14 @@ _.Zones =
 					},
 				},
 				q(992, {	-- Gadgetzan Water Survey
-					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["u"] = 40,
 				}),
 				{	-- Gahz'ridian
 					["questID"] = 3161,
 					["u"] = 40,
-					["qg"] = 7771,	-- Marvon Rivetseeker
+					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
 					["groups"] = {
 						un(2, i(10827)),	-- Surveyor's Tunic
 						un(2, i(10826)),	-- Staff of Lore
@@ -484,7 +484,7 @@ _.Zones =
 				},
 				{	-- Gargantapid
 					["questID"] = 25522,
-					["qg"] = 40580,	-- Gus Rustflutter
+					["provider"] = { "n", 40580 },	-- Gus Rustflutter
 					["coord"] = { 42.4, 24.2, 71 },
 					["sourceQuest"] = 25521,	-- I'm With Scorpid
 					["groups"] = {
@@ -495,20 +495,20 @@ _.Zones =
 				},
 				{	-- Gazer Tag
 					["questID"] = 24931,
-					["qg"] = 11811,	-- Narain Soothfancy
+					["provider"] = { "n", 11811 },	-- Narain Soothfancy
 					["coord"] = { 55.2, 60.2, 71 },
 					["sourceQuest"] = 24932,	-- Cutting Losses
 				},
 				{	-- Get The Centipaarty Started
 					["questID"] = 24957,
-					["qg"] = 38849,	-- Megs Dreadshredder
+					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24955,	-- Un-Chartered
 				},
 				{	-- Going Off-Task
 					["questID"] = 26886,
-					["qg"] = 38704,	-- Kelsey Steelspark
+					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25052,	-- Dead Man's Chest
@@ -517,14 +517,14 @@ _.Zones =
 				},
 				{	-- Going Off-Task
 					["questID"] = 25534,
-					["qg"] = 38703,	-- Megs Dreadshredder
+					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24927,	-- Dead Man's Chest
 				},
 				{	-- He's Dead, Jastor
 					["questID"] = 53821,
-					["qg"] = 151130,	-- Grizzek Fizzwrench
+					["provider"] = { "n", 151130 },	-- Grizzek Fizzwrench
 					["coord"] = { 27.2, 60.1, 71 },	-- Tanaris
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 53819,	-- Return to the Nest
@@ -535,13 +535,13 @@ _.Zones =
 				},
 				{	-- I'm With Scorpid
 					["questID"] = 25521,
-					["qg"] = 40580,	-- Gus Rustflutter
+					["provider"] = { "n", 40580 },	-- Gus Rustflutter
 					["coord"] = { 42.4, 24.2, 71 },
 				},
 				{	-- Imperial Plate Belt
 					["questID"] = 7653,	-- Imperial Plate Belt
 					["u"] = 40,
-					["qg"] = 14567,	-- Derotain Mudsipper <The Thorium Brotherhood>
+					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
 						{	-- Plans: Imperial Plate Belt
@@ -554,7 +554,7 @@ _.Zones =
 				{	-- Imperial Plate Boots
 					["questID"] = 7654,	-- Imperial Plate Boots
 					["u"] = 40,
-					["qg"] = 14567,	-- Derotain Mudsipper <The Thorium Brotherhood>
+					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
 						{	-- Plans: Imperial Plate Boots
@@ -567,7 +567,7 @@ _.Zones =
 				{	-- Imperial Plate Bracer
 					["questID"] = 7655,	-- Imperial Plate Bracer
 					["u"] = 40,
-					["qg"] = 14567,	-- Derotain Mudsipper <The Thorium Brotherhood>
+					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
 						{	-- Plans: Imperial Plate Bracers
@@ -580,7 +580,7 @@ _.Zones =
 				{	-- Imperial Plate Chest
 					["questID"] = 7656,	-- Imperial Plate Chest
 					["u"] = 40,
-					["qg"] = 14567,	-- Derotain Mudsipper <The Thorium Brotherhood>
+					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
 						{	-- Plans: Imperial Plate Chest
@@ -593,7 +593,7 @@ _.Zones =
 				{	-- Imperial Plate Helm
 					["questID"] = 7657,	-- Imperial Plate Helm
 					["u"] = 40,
-					["qg"] = 14567,	-- Derotain Mudsipper <The Thorium Brotherhood>
+					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
 						{	-- Plans: Imperial Plate Helm
@@ -606,7 +606,7 @@ _.Zones =
 				{	-- Imperial Plate Leggings
 					["questID"] = 7658,	-- Imperial Plate Leggings
 					["u"] = 40,
-					["qg"] = 14567,	-- Derotain Mudsipper <The Thorium Brotherhood>
+					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
 						{	-- Plans: Imperial Plate Leggings
@@ -619,7 +619,7 @@ _.Zones =
 				{	-- Imperial Plate Shoulders
 					["questID"] = 7659,	-- Imperial Plate Shoulders
 					["u"] = 40,
-					["qg"] = 14567,	-- Derotain Mudsipper <The Thorium Brotherhood>
+					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
 						{	-- Plans: Imperial Plate Shoulders
@@ -630,27 +630,27 @@ _.Zones =
 					},
 				},
 				q(110, {	-- Insect Part Analysis
-					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 10,	-- The Scrimshank Redemption
 					["u"] = 40,
 				}),
 				q(113, {	-- Insect Part Analysis
-					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 110,	-- Insect Part Analysis
 					["u"] = 40,
 				}),
 				{	-- Into Zul'Farrak
 					["questID"] = 25556,
-					["qg"] = 7804,	-- Trenton Lighthammer
+					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 42.4, 24.0, 71 },
 					["sourceQuest"] = 25032,	-- Secrets in the Oasis
 					["isBreadcrumb"] = true,
 				},
 				{	-- Just Trying to Kill Some Bugs
 					["questID"] = 24953,
-					["qg"] = 38706,	-- Zeke Bootscuff
+					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, 71 },
 					["sourceQuest"] = 24951,	-- A Great Idea
 					["groups"] = {
@@ -662,43 +662,43 @@ _.Zones =
 				},
 				{	-- Land's End
 					["questID"] = 25061,
-					["qg"] = 11811,	-- Narain Soothfancy
+					["provider"] = { "n", 11811 },	-- Narain Soothfancy
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- Laying Claim
 					["questID"] = 25559,
-					["qg"] = 40109,	-- Prospector Gunstan
+					["provider"] = { "n", 40109 },	-- Prospector Gunstan
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- Laying Claim
 					["questID"] = 25019,
-					["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, 71 },
 					["races"] = HORDE_ONLY,
 				},
 				{	-- Lootin' Plunder
 					["questID"] = 25054,
-					["qg"] = 38704,	-- Kelsey Steelspark
+					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25050,	-- Rocket Rescue
 				},
 				{	-- Maul 'Em With Kindness
 					["questID"] = 24963,
-					["qg"] = 38849,	-- Megs Dreadshredder
+					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24957,	-- Get The Centiparty Started
 				},
 				{	-- Momentum
 					["questID"] = 25121,
-					["qg"] = 38535,	-- Kelsey Steelspark
+					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25050,	-- Rocket Rescue
 					["isBreadcrumb"] = true,
 				},
 				{	-- Momentum
 					["questID"] = 24947,
-					["qg"] = 38534,	-- Megs Dreadshredder
+					["provider"] = { "n", 38534 },	-- Megs Dreadshredder
 					["races"] = HORDE_ONLY,
 					["coord"] = { 51.2, 29.9, 71 },
 					["sourceQuest"] = 24910,	-- Rocket Rescue
@@ -707,7 +707,7 @@ _.Zones =
 				{	-- Nice Hat...
 					["questID"] = 12513,	-- CRIEVE NOTE: Have this completed on Warrior, can't accept 12515. Also can't accept this quest on Druid.
 					-- Some people are still able to get this.  Not sure what the exact criteria are that need to be met.
-					["qg"] = 28126,			-- Don Carlos
+					["provider"] = { "n", 28126 },			-- Don Carlos
 					["coord"] = { 50.7, 27.5, 71 },
 					["isBreadcrumb"] = true,
 					["g"] = {
@@ -719,7 +719,7 @@ _.Zones =
 				},
 				{	-- Nice Hat...
 					["questID"] = 12515,	-- CRIEVE NOTE: Got this on Druid, who doesn't have 12513 completed. [5/4/2019]
-					["qg"] = 28126,			-- Don Carlos
+					["provider"] = { "n", 28126 },			-- Don Carlos
 					["coord"] = { 50.7, 27.5, 71 },
 					["isBreadcrumb"] = true,
 					["g"] = {
@@ -734,14 +734,14 @@ _.Zones =
 					["u"] = 1,
 				},
 				q(82, {	-- Noxious Lair Investigation
-					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 992,	-- Gadgetzan Water Survey
 					["u"] = 40,
 				}),
 				{	-- Old Hillsbrad
 					["questID"] = 10282,
-					["qg"] = 20130,	-- Andormu
+					["provider"] = { "n", 20130 },	-- Andormu
 					["coord"] = { 41.5, 38.5, 71 },
 					["sourceQuest"] = 10277,	-- The Caverns of Time
 				},
@@ -755,41 +755,41 @@ _.Zones =
 					},
 				},
 				q(4507, {	-- Pawn Captures Queen
-					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 4496,	-- Bungle in the Jungle
 					["u"] = 40,
 				}),
 				{	-- Prospector Gunstan
 					["questID"] = 28881,
-					["qg"] = 39059,	-- Kelsey steelspark
+					["provider"] = { "n", 39059 },	-- Kelsey steelspark
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25065,	-- You Too, Brute?
 				},
 				{	-- Puddle Stomping
 					["questID"] = 25049,
-					["qg"] = 38535,	-- Kelsey Steelspark
+					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
 					["coord"] = { 51.2, 29.9, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28507,	-- Hero's Call: Tanaris!
 				},
 				{	-- Puddle Stomping
 					["questID"] = 24907,
-					["qg"] = 38534,	-- Megs Dreadshredder
+					["provider"] = { "n", 38534 },	-- Megs Dreadshredder
 					["coord"] = { 51.2, 29.9, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28509,	-- Warchief's Command: Tanaris!
 				},
 				{	-- Re-parrot / Programming On The Fly
 					["questID"] = 53818,	-- Quest shows up in-game as "Re-parrot" currently, but Wowhead redirects to the second quest name listed
-					["qg"] = 151132,	-- Feathers
+					["provider"] = { "n", 151132 },	-- Feathers
 					["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
 					["sourceQuest"] = 53816,	-- Some Reassembly Required
 					["lvl"] = 120,
 				},
 				{	-- Rescue OOX-17/TN!
 					["questID"] = 648,
-					["qg"] = 7784,	-- Homing Robot OOX-17/TN
+					["provider"] = { "n", 7784 },	-- Homing Robot OOX-17/TN
 					["coord"] = { 59.7, 64.0, 71 },
 					["sourceQuest"] = 351,	-- Find OOX-17/TN!
 					["groups"] = {
@@ -799,7 +799,7 @@ _.Zones =
 				},
 				{	-- Return to the Nest
 					["questID"] = 53819,
-					["qg"] = 151132,	-- Feathers
+					["provider"] = { "n", 151132 },	-- Feathers
 					["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
 					["sourceQuest"] = 53818,	-- Re-parrot / Programming On The Fly
 					["lvl"] = 120,
@@ -807,7 +807,7 @@ _.Zones =
 				{	-- Return to Apothecary Zinge
 					["questID"] = 864,
 					["u"] = 40,
-					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
+					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 654,	-- Tanaris Field Sampling
 					["groups"] = {
@@ -818,21 +818,21 @@ _.Zones =
 				},
 				{	-- Returning a Favor
 					["questID"] = 24905,
-					["qg"] = 38706,	-- Zeke Bootscuff
+					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
 					["isBreadcrumb"] = true,
 				},
 				q(32, {	-- Rise of the Silithid [Horde]
-					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 113,	-- Insect Part Analysis
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 				}),
 				q(162, {	-- Rise of the Silithid [Alliance]
-					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 113,	-- Insect Part Analysis
 					["races"] = ALLIANCE_ONLY,
@@ -840,7 +840,7 @@ _.Zones =
 				}),
 				{	-- Rocket Rescue
 					["questID"] = 25050,
-					["qg"] = 38535,	-- Kelsey Steelspark
+					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
 					["coord"] = { 51.2, 29.9, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -856,7 +856,7 @@ _.Zones =
 				},
 				{	-- Rocket Rescue
 					["questID"] = 24910,
-					["qg"] = 38534,	-- Megs Dreadshredder
+					["provider"] = { "n", 38534 },	-- Megs Dreadshredder
 					["coord"] = { 51.2, 29.9, 71 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -873,7 +873,7 @@ _.Zones =
 				{	-- Safety First
 					["questID"] = 1189,
 					["u"] = 40,
-					["qg"] = 4708,	-- Shreev
+					["provider"] = { "n", 4708 },	-- Shreev
 					["sourceQuest"] = 1188,	-- Safety First
 					["groups"] = {
 						un(2, i(6726)),	-- Razzeric's Customized Seatbelt
@@ -882,7 +882,7 @@ _.Zones =
 				},
 				{	-- Sandscraper
 					["questID"] = 25001,
-					["qg"] = 38849,	-- Megs Dreadshredder
+					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24963,	-- Maul 'Em With Kindness
@@ -906,13 +906,13 @@ _.Zones =
 				},
 				{	-- Sandsorrow Watch
 					["questID"] = 25091,
-					["qg"] = 39178,	-- Driz Plunkbow
+					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, 71 },
 					["sourceQuest"] = 25115,	-- Blisterpaw Butchery
 				},
 				{	-- Sang'thraze the Deflector
 					["questID"] = 25025,
-					["qg"] = 38927,	-- Mazoga
+					["provider"] = { "n", 38927 },	-- Mazoga
 					["coord"] = { 42.2, 23.8, 71 },
 					["sourceQuest"] = 25021,	-- Blood to Thrive
 					["groups"] = {
@@ -924,7 +924,7 @@ _.Zones =
 				},	
 				{	-- Scavengers Scavenged
 					["questID"] = 25111,
-					["qg"] = 39178,	-- Driz Plunkbow
+					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, 71 },
 					["sourceQuest"] = 25112,	-- Butcherbot
 				},
@@ -934,20 +934,20 @@ _.Zones =
 				},
 				{	-- Seaside Salvage
 					["questID"] = 25048,
-					["qg"] = 38535,	-- Kelsey Steelspark
+					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
 					["coord"] = { 51.2, 29.9, 71 },
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- Seaside Salvage
 					["questID"] = 24906,
-					["qg"] = 38534,	-- Megs Dreadshredder
+					["provider"] = { "n", 38534 },	-- Megs Dreadshredder
 					["coord"] = { 51.2, 29.9, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27447,	-- Tanaris is Calling
 				},
 				{	-- Secrets in the Oasis
 					["questID"] = 25032,
-					["qg"] = 38927,	-- Mazoga
+					["provider"] = { "n", 38927 },	-- Mazoga
 					["coord"] = { 42.2, 23.8, 71 },
 					["sourceQuest"] = 25026,	-- Darkest Mojo
 					["groups"] = {
@@ -959,7 +959,7 @@ _.Zones =
 				},
 				{	-- She's in a Happier Place
 					["questID"] = 53820,
-					["qg"] = 151129,	-- Sapphronetta Flavvers
+					["provider"] = { "n", 151129 },	-- Sapphronetta Flavvers
 					["coord"] = { 27.1, 60.0, 71 },	-- Tanaris
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 53819,	-- Return to the Nest
@@ -969,7 +969,7 @@ _.Zones =
 				},
 				{	-- Slake That Thirst
 					["questID"] = 379,
-					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
+					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 					["groups"] = {
@@ -978,7 +978,7 @@ _.Zones =
 				},
 				{	-- Some Reassembly Required
 					["questID"] = 53816,
-					["qg"] = 151132,	-- Feathers
+					["provider"] = { "n", 151132 },	-- Feathers
 					["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
 					["sourceQuests"] = { 
 						53815,	-- Whatever Happened to Saffy Flivvers?
@@ -989,7 +989,7 @@ _.Zones =
 				{	-- Southsea Shakedown
 					["questID"] = 8366,
 					["u"] = 40,
-					["qg"] = 7882,	-- Security Chief Bilgewhizzle
+					["provider"] = { "n", 7882 },	-- Security Chief Bilgewhizzle
 					["groups"] = {
 						un(2, i(20640)),	-- Southsea Head Bucket
 						un(2, i(20641)),	-- Southsea Mojo Boots
@@ -997,23 +997,23 @@ _.Zones =
 				},
 				{	-- Terrapination
 					["questID"] = 25063,
-					["qg"] = 39059,	-- Kelsey Steelspark
+					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- The Black Morass
 					["questID"] = 10296,
-					["qg"] = 20130,	-- Andormu
+					["provider"] = { "n", 20130 },	-- Andormu
 					["coord"] = { 41.5, 38.5, 71 },
 				},
 				{	-- The Caverns of Time
 					["questID"] = 10277,
-					["qg"] = 20130,	-- Andormu
+					["provider"] = { "n", 20130 },	-- Andormu
 					["coord"] = { 41.5, 38.5, 71 },
 					["sourceQuest"] = 10279,	-- To The Master's Lair
 				},
 				{	-- The Changing of Paths - Conqueror No More
 					["questID"] = 8766,
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["repeatable"] = true,
 					["description"] = "Only available when Exalted with the Brood of Nozdormu",
 					["groups"] = {
@@ -1023,7 +1023,7 @@ _.Zones =
 				},
 				{	-- The Changing of Paths - Invoker No More
 					["questID"] = 8765,
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["repeatable"] = true,
 					["description"] = "Only available when Exalted with the Brood of Nozdormu",
 					["groups"] = {
@@ -1033,7 +1033,7 @@ _.Zones =
 				},
 				{	-- The Changing of Paths - Protector No More
 					["questID"] = 8764,
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["repeatable"] = true,
 					["description"] = "Only available when Exalted with the Brood of Nozdormu",
 					["groups"] = {
@@ -1043,7 +1043,7 @@ _.Zones =
 				},
 				{	-- The Crumbling Past
 					["questID"] = 25068,
-					["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
@@ -1051,7 +1051,7 @@ _.Zones =
 				{	-- The Dunemaul Compound
 					["questID"] = 5863,
 					["u"] = 40,
-					["qg"] = 11758,	-- Andi Lynn
+					["provider"] = { "n", 11758 },	-- Andi Lynn
 					["groups"] = {
 						un(2, i(16739)),	-- Rugwood Mantle
 						un(2, i(16738)),	-- Witherseed Gloves
@@ -1060,14 +1060,14 @@ _.Zones =
 				{	-- The Grand Invoker
 					["questID"] = 8761,
 					["isBreadcrumb"] = true,	-- Exalted Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8760,	-- The Path of the Invoker
 					["groups"] = {
 						i(21210),	-- Signet Ring of the Bronze Dragonflight
 					},
 				},
 				q(2773, {	-- The Mithril Kid
-					["qg"] = 7804,	-- Trenton Lighthammer
+					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = 164,	-- Blacksmithing
@@ -1079,7 +1079,7 @@ _.Zones =
 				{	-- The Path of the Conqueror
 					["questID"] = 8754,
 					["isBreadcrumb"] = true,	-- Honored Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8753,	-- The Path of the Conquerer
 					["groups"] = {
 						i(21203),	-- Signet Ring of the Bronze Dragonflight
@@ -1088,7 +1088,7 @@ _.Zones =
 				{	-- The Path of the Conqueror
 					["questID"] = 8755,
 					["isBreadcrumb"] = true,	-- Revered Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8754,	-- The Path of the Conquerer
 					["groups"] = {
 						i(21204),	-- Signet Ring of the Bronze Dragonflight
@@ -1097,7 +1097,7 @@ _.Zones =
 				{	-- The Path of the Conqueror
 					["questID"] = 8753,
 					["isBreadcrumb"] = true,	-- Friendly Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8752,	-- The Path of the Conquerer
 					["groups"] = {
 						i(21202),	-- Signet Ring of the Bronze Dragonflight
@@ -1106,7 +1106,7 @@ _.Zones =
 				{	-- The Path of the Conqueror
 					["questID"] = 8752,
 					["isBreadcrumb"] = true,	-- Neutral Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["groups"] = {
 						i(21201),	-- Signet Ring of the Bronze Dragonflight
 					},
@@ -1114,7 +1114,7 @@ _.Zones =
 				{	-- The Path of the Invoker
 					["questID"] = 8760,
 					["isBreadcrumb"] = true,	-- Revered Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8759,	-- The Path of the Invoker
 					["groups"] = {
 						i(21209),	-- Signet Ring of the Bronze Dragonflight
@@ -1123,7 +1123,7 @@ _.Zones =
 				{	-- The Path of the Invoker
 					["questID"] = 8759,
 					["isBreadcrumb"] = true,	-- Honored Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8758,	-- The Path of the Invoker
 					["groups"] = {
 						i(21208),	-- Signet Ring of the Bronze Dragonflight
@@ -1132,7 +1132,7 @@ _.Zones =
 				{	-- The Path of the Invoker
 					["questID"] = 8758,
 					["isBreadcrumb"] = true,	-- Friendly Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8757,	-- The Path of the Invoker
 					["groups"] = {
 						i(21207),	-- Signet Ring of the Bronze Dragonflight
@@ -1141,7 +1141,7 @@ _.Zones =
 				{	-- The Path of the Invoker
 					["questID"] = 8757,
 					["isBreadcrumb"] = true,	-- Neutral Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["groups"] = {
 						i(21206),	-- Signet Ring of the Bronze Dragonflight
 					},
@@ -1149,7 +1149,7 @@ _.Zones =
 				{	-- The Path of the Protector
 					["questID"] = 8747,
 					["isBreadcrumb"] = true,	-- Neutral Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["groups"] = {
 						i(21196),	-- Signet Ring of the Bronze Dragonflight
 					},
@@ -1157,7 +1157,7 @@ _.Zones =
 				{	-- The Path of the Protector
 					["questID"] = 8748,
 					["isBreadcrumb"] = true,	-- Friendly Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8747,	-- The Path of the Protector
 					["groups"] = {
 						i(21197),	-- Signet Ring of the Bronze Dragonflight
@@ -1166,7 +1166,7 @@ _.Zones =
 				{	-- The Path of the Protector
 					["questID"] = 8749,
 					["isBreadcrumb"] = true,	-- Honored Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8748,	-- The Path of the Protector
 					["groups"] = {
 						i(21198),	-- Signet Ring of the Bronze Dragonflight
@@ -1175,7 +1175,7 @@ _.Zones =
 				{	-- The Path of the Protector
 					["questID"] = 8750,
 					["isBreadcrumb"] = true,	-- Revered Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8749,	-- The Path of the Protector
 					["groups"] = {
 						i(21199),	-- Signet Ring of the Bronze Dragonflight
@@ -1184,7 +1184,7 @@ _.Zones =
 				{	-- The Protector of Kalimdor
 					["questID"] = 8751,
 					["isBreadcrumb"] = true,	-- Exalted Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8750,	-- The Path of the Protector
 					["groups"] = {
 						i(21200),	-- Signet Ring of the Bronze Dragonflight
@@ -1192,39 +1192,39 @@ _.Zones =
 				},
 				{	-- The Qiraji Conqueror
 					["questID"] = 8756,
-					["qg"] = 15192,	-- Anachronos
+					["provider"] = { "n", 15192 },	-- Anachronos
 					["isBreadcrumb"] = true,	-- Exalted Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["sourceQuest"] = 8755,	-- The Path of the Conqueror
 				},
 				q(10, {	-- The Scrimshank Redemption
-					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 82,	-- Noxious Lair Investigation
 					["u"] = 40,
 				}),
 				{	-- The Secrets of Uldum
 					["questID"] = 25566,
-					["qg"] = 40109,	-- Prospector Gunstan
+					["provider"] = { "n", 40109 },	-- Prospector Gunstan
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25420,	-- Ancient Obstacles
 				},
 				{	-- The Secrets of Uldum
 					["questID"] = 25069,
-					["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
 				},
 				{	-- The Thunderdrome!
 					["questID"] = 26896,
-					["qg"] = 44374,	-- Sherm
+					["provider"] = { "n", 44374 },	-- Sherm
 					["coord"] = { 33.2, 76.8, 71 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				},
 				{	-- The Thunderdrome!
 					["questID"] = 26895,
-					["qg"] = 38578,	-- Flinn
+					["provider"] = { "n", 38578 },	-- Flinn
 					["coord"] = { 40.3, 77.2, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1232,13 +1232,13 @@ _.Zones =
 				{	-- The Vials of Eternity
 					["questID"] = 13432,
 					["description"] = "Can be found walking around the Caverns of Time.",
-					["qgs"] = {
-						19935,	-- Soridormi
-						19936,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
 					},
 				},
 				q(2772, {	-- The World At Your Feet
-					["qg"] = 7804,	-- Trenton Lighthammer
+					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = 164,	-- Blacksmithing
@@ -1249,7 +1249,7 @@ _.Zones =
 				}),
 				{	-- Thunderdrome: Grudge Match!
 					["questID"] = 25513,
-					["qg"] = 39034,	-- Dr. Dealwell
+					["provider"] = { "n", 39034 },	-- Dr. Dealwell
 					["coord"] = { 51.7, 28.0, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1264,7 +1264,7 @@ _.Zones =
 				},
 				{	-- Thunderdrome: Grudge Match!
 					["questID"] = 25591,
-					["qg"] = 39034,	-- Dr. Dealwell
+					["provider"] = { "n", 39034 },	-- Dr. Dealwell
 					["coord"] = { 51.7, 28.0, 71 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1279,13 +1279,13 @@ _.Zones =
 				},
 				{	-- Thunderdrome: Sarinexx!
 					["questID"] = 25095,
-					["qg"] = 39034,	-- Dr. Dealwell
+					["provider"] = { "n", 39034 },	-- Dr. Dealwell
 					["coord"] = { 51.7, 28.0, 71 },
 					["sourceQuest"] = 25094,	-- Thunderdrome: Zumonga!
 				},
 				{	-- Thunderdrome: The Ginormus!
 					["questID"] = 25067,
-					["qg"] = 39034,	-- Dr. Dealwell
+					["provider"] = { "n", 39034 },	-- Dr. Dealwell
 					["coord"] = { 51.7, 28.0, 71 },
 					["sourceQuests"] = {
 						26895,	-- The Thunderdrome!
@@ -1294,13 +1294,13 @@ _.Zones =
 				},
 				{	-- Thunderdrome: Zumonga!
 					["questID"] = 25094,
-					["qg"] = 39034,	-- Dr. Dealwell
+					["provider"] = { "n", 39034 },	-- Dr. Dealwell
 					["coord"] = { 51.7, 28.0, 71 },
 					["sourceQuest"] = 25067,	-- Thunderdrome: The Ginormus!
 				},
 				{	-- To The Ground!
 					["questID"] = 25053,
-					["qg"] = 38704,	-- Kelsey Steelspark
+					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25052,	-- Dead Man's Chest
@@ -1309,21 +1309,21 @@ _.Zones =
 				},
 				{	-- To The Ground!
 					["questID"] = 24928,
-					["qg"] = 38703,	-- Megs Dreadshredder
+					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24910,	-- Rocket Rescue
 				},
 				{	-- To The Master's Lair
 					["questID"] = 10279,
-					["qg"] = 20142,	-- Steward of Time
+					["provider"] = { "n", 20142 },	-- Steward of Time
 					["coord"] = { 55.3, 27.7, 71 },
 					["isBreadcrumb"] = true,
 				},
 				{	-- Tooga's Quest
 					["questID"] = 1560,
 					["u"] = 40,
-					["qg"] = 5955,	-- Tooga
+					["provider"] = { "n", 5955 },	-- Tooga
 					["groups"] = {
 						un(2, i(9642)),	-- Band of the Great Tortoise
 						un(2, i(9638)),	-- Chelonian Cuffs
@@ -1336,33 +1336,33 @@ _.Zones =
 						{ 33.2, 76.8, 71 },
 						{ 40.2, 77.0, 71 },
 					},
-					["qgs"] = {
-						38578,	-- Flinn
-						44374,	-- Sherm
+					["providers"] = {
+						{ "n", 38578 },	-- Flinn
+						{ "n", 44374 },	-- Sherm
 					},
 				},
 				{	-- Un-Chartered
 					["questID"] = 24955,
-					["qg"] = 38849,	-- Megs Dreadshredder
+					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24905,	-- Returning a Favor
 				},
 				{	-- War at Sea
 					["questID"] = 9268,
-					["qg"] = 16417,	-- Rumsen Fizzlebrack
+					["provider"] = { "n", 16417 },	-- Rumsen Fizzlebrack
 					["coord"] = { 50.4, 27.2, 71 },
 					["repeatable"] = true,
 					["description"] = "Only available with reputations of Hated or Unfriendly with Gadgetzan",
 				},
 				{	-- What We Came For
 					["questID"] = 25062,
-					["qg"] = 39059,	-- Kelsey Steelspark
+					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- You Too, Brute?
 					["questID"] = 25065,
-					["qg"] = 39059,	-- Kelsey Steelspark
+					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25063,	-- Terrapination
 					["groups"] = {
@@ -1375,7 +1375,7 @@ _.Zones =
 				},
 				-- Scale of Sands / Repeatable Switch Ring Quests
 				{	-- Champion No More
-					["qg"] = 19935,	-- Soridormi
+					["provider"] = { "n", 19935 },	-- Soridormi
 					["repeatable"] = true,
 					["questID"] = 11105,
 					["groups"] = {
@@ -1386,7 +1386,7 @@ _.Zones =
 				},
 				{	-- Defender No More
 					["questID"] = 11106,
-					["qg"] = 19935,	-- Soridormi
+					["provider"] = { "n", 19935 },	-- Soridormi
 					["repeatable"] = true,
 					["groups"] = {
 						i(29301),	-- Band of the Eternal Champion
@@ -1396,7 +1396,7 @@ _.Zones =
 				},
 				{	-- Restorer No More
 					["questID"] = 11104,
-					["qg"] = 19935,	-- Soridormi
+					["provider"] = { "n", 19935 },	-- Soridormi
 					["repeatable"] = true,
 					["groups"] = {
 						i(29301),	-- Band of the Eternal Champion
@@ -1406,7 +1406,7 @@ _.Zones =
 				},
 				{	-- Sage No More
 					["questID"] = 11103,
-					["qg"] = 19935,	-- Soridormi
+					["provider"] = { "n", 19935 },	-- Soridormi
 					["repeatable"] = true,
 					["groups"] = {
 						i(29301),	-- Band of the Eternal Champion
@@ -1422,9 +1422,9 @@ _.Zones =
 					["groups"] = {
 						i(29301),	-- Band of the Eternal Champion
 					},
-					["qgs"] = {
-						19935,	-- Soridormi
-						19936,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
 					},
 				},
 				{	-- Champion's Oath
@@ -1434,15 +1434,15 @@ _.Zones =
 					["groups"] = {
 						i(29300),	-- Band of Eternity
 					},
-					["qgs"] = {
-						19935,	-- Soridormi
-						19936,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
 					},
 				},
 				{	-- Champion's Pledge
 					["questID"] = 10462,
 					["isBreadcrumb"] = true,	-- Prequest/Friendly Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
-					["qg"] = 19936,	-- Arazmodu
+					["provider"] = { "n", 19936 },	-- Arazmodu
 					["groups"] = {
 						i(29298),	-- Band of Eternity
 					},
@@ -1453,9 +1453,9 @@ _.Zones =
 					["groups"] = {
 						i(29299),	-- Band of Eternity
 					},
-					["qgs"] = {
-						19935,	-- Soridormi
-						19936,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
 					},
 				},
 				-- Scale of Sands / Tank Ring
@@ -1466,9 +1466,9 @@ _.Zones =
 					["groups"] = {
 						i(29297),	-- Band of the Eternal Defender
 					},
-					["qgs"] = {
-						19935,	-- Soridormi
-						19936,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
 					},
 				},
 				{	-- Defender's Oath
@@ -1478,15 +1478,15 @@ _.Zones =
 					["groups"] = {
 						i(29296),	-- Band of Eternity
 					},
-					["qgs"] = {
-						19935,	-- Soridormi
-						19936,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
 					},
 				},
 				{	-- Defender's Pledge
 					["questID"] = 10460,
 					["isBreadcrumb"] = true,	-- Prequest/Friendly Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
-					["qg"] = 19936,	-- Arazmodu
+					["provider"] = { "n", 19936 },	-- Arazmodu
 					["groups"] = {
 						i(29294),	-- Band of Eternity
 					},
@@ -1497,16 +1497,16 @@ _.Zones =
 					["groups"] = {
 						i(29295),	-- Band of Eternity
 					},
-					["qgs"] = {
-						19935,	-- Soridormi
-						19936,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
 					},
 				},
 				-- Scale of Sands / Healer Ring
 				{	-- Restorer's Covenant
 					["questID"] = 10473,
 					["isBreadcrumb"] = true,	-- Exalted Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
-					["qg"] = 19935,	-- Soridormi
+					["provider"] = { "n", 19935 },	-- Soridormi
 					["sourceQuest"] = 10469,	-- Restorer's Oath
 					["groups"] = {
 						i(29309),	-- Band of the Eternal Restorer
@@ -1515,7 +1515,7 @@ _.Zones =
 				{	-- Restorer's Oath
 					["questID"] = 10469,
 					["isBreadcrumb"] = true,	-- Revered Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
-					["qg"] = 19935,	-- Soridormi
+					["provider"] = { "n", 19935 },	-- Soridormi
 					["sourceQuest"] = 10465,	-- Restorer's Vow
 					["groups"] = {
 						i(29308),	-- Band of Eternity
@@ -1524,7 +1524,7 @@ _.Zones =
 				{	-- Restorer's Pledge
 					["questID"] = 10461,
 					["isBreadcrumb"] = true,	-- Prequest/Friendly Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
-					["qg"] = 19936,	-- Arazmodu
+					["provider"] = { "n", 19936 },	-- Arazmodu
 					["groups"] = {
 						i(29307),	-- Band of Eternity
 					},
@@ -1535,16 +1535,16 @@ _.Zones =
 					["groups"] = {
 						i(29306),	-- Band of Eternity
 					},
-					["qgs"] = {
-						19935,	-- Soridormi
-						19936,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
 					},
 				},
 				-- Scale of Sands / Caster Ring
 				{	-- Sage's Covenant
 					["questID"] = 10472,
 					["isBreadcrumb"] = true,	-- Exalted Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
-					["qg"] = 19935,	-- Soridormi
+					["provider"] = { "n", 19935 },	-- Soridormi
 					["sourceQuest"] = 10468,	-- Sage's Oath
 					["groups"] = {
 						i(29305),	-- Band of the Eternal Sage
@@ -1557,15 +1557,15 @@ _.Zones =
 					["groups"] = {
 						i(29304),	-- Band of Eternity
 					},
-					["qgs"] = {
-						19935,	-- Soridormi
-						19936,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19936 },	-- Arazmodu
 					},
 				},
 				{	-- Sage's Pledge
 					["questID"] = 10463,
 					["isBreadcrumb"] = true,	-- Prequest/Friendly Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
-					["qg"] = 19936,	-- Arazmodu
+					["provider"] = { "n", 19936 },	-- Arazmodu
 					["groups"] = {
 						i(29302),	-- Band of Eternity
 					},
@@ -1576,29 +1576,29 @@ _.Zones =
 					["groups"] = {
 						i(29303),	-- Band of Eternity
 					},
-					["qgs"] = {
-						19935,	-- Soridormi
-						19935,	-- Arazmodu
+					["providers"] = {
+						{ "n", 19935 },	-- Soridormi
+						{ "n", 19935 },	-- Arazmodu
 					},
 				},
 				-- Leagacy (need to put in a own file)
 				-- Part of the Dungeon 2 Set Questline
 				q(8925, {	-- A Portable Power Source
-					["qg"] = 16014,	-- Mux Manascrambler
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
 					["coord"] = { 52.0, 27.0 , 71 },
 					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
 				q(8928, {	-- A Shifty Merchant
-					["qg"] = 16014,	-- Mux Manascrambler
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
 					["coord"] = { 52.0, 27.0 , 71 },
 					["sourceQuest"] = 8925,	-- A Portable Power Source
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
 				q(8924, {	-- Hunting for Ectoplasm
-					["qg"] = 16014,	-- Mux Manascrambler
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
 					["coord"] = { 52.0, 27.0 , 71 },
 					["sourceQuests"] = {
 						8922,	-- A Supernatural Device [Alliance]
@@ -1608,7 +1608,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(8977, {	-- Return to Deliana
-					["qg"] = 16014,	-- Mux Manascrambler
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
 					["coord"] = { 52.0, 27.0, 71 },
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["races"] = ALLIANCE_ONLY,
@@ -1616,7 +1616,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(8978, {	-- Return to Mokvar
-					["qg"] = 16014,	-- Mux Manascrambler
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
 					["coord"] = { 52.0, 27.0, 71 },
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["races"] = HORDE_ONLY,
@@ -1624,14 +1624,14 @@ _.Zones =
 					["u"] = 40,
 				}),	
 				q(8921, {	-- The Ectoplasmic Distiller
-					["qg"] = 16014,	-- Mux Manascrambler
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
 					["coord"] = { 52.0, 27.0, 71 },
 					["sourceQuest"] = 8923,	-- A Supernatural Device
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
 				q(2954, {	-- The Stone Watcher
-					["qg"] = 7918,	-- Stone Watcher of Norgannon
+					["provider"] = { "n", 7918 },	-- Stone Watcher of Norgannon
 					["coord"] = { 37.6, 81.4, 71 },
 					["sourceQuests"] = { 
 						2966,	-- Seeing What Happens [Horde]

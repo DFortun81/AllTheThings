@@ -44,7 +44,7 @@ _.Zones =
 					["description"] = "There is an ongoing 4x4 battle.  Assist the Horde by defeating the Worgen Stalkers.",
 					["coord"] = { 44.0, 22.9, 634 },
 					["races"] = HORDE_ONLY,
-					["qgs"] = {
+					["crs"] = {
 						92604,	-- Champion Elodie
 						92609,	-- Tracker Jack
 						92611,	-- Ambusher Daggerfang
@@ -70,7 +70,7 @@ _.Zones =
 					["description"] = "There is an ongoing 4x4 battle.  Assist the Alliance by defeating the Horde Kill Squad.",
 					["coord"] = { 44.2, 22.8, 634 },
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
+					["crs"] = {
 						92626,	-- Deathguard Adams
 						92631,	-- Dark Ranger Jess
 						92633,	-- Assassin Huwe

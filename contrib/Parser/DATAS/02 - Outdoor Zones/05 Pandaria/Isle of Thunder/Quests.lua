@@ -24,17 +24,17 @@ _.Zones =
 				q(32706, {	-- Allies in the Shadows
 					["sourceQuest"] = 32681,	-- The Storm Gathers
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						67992,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
-						70370,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
+					["providers"] = {
+						{ "n", 67992 },	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
+						{ "n", 70370 },	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
 					},
 				}),
 				q(32709, {	-- Allies in the Shadows
 					["sourceQuest"] = 32680,	-- The Storm Gathers
 					["races"] = HORDE_ONLY,
-					["qgs"] = {
-						67990,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
-						70371,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
+					["providers"] = {
+						{ "n", 67990 },	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
+						{ "n", 70371 },	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
 					},
 				}),
 				q(32578, {	-- Among the Bones (A)
@@ -452,7 +452,7 @@ _.Zones =
 						32709,	-- Allies in the Shadows [Horde]
 						32706,	-- Allies in the Shadows [Alliance]
 					},
-					["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
+					["provider"] = { "n", 70160 },	-- Taran Zhu <Lord of the Shado-Pan>
 				}),
 				q(32599, {	-- Securing A Future
 					["races"] = ALLIANCE_ONLY,
@@ -496,7 +496,7 @@ _.Zones =
 					["questID"] = 32621,	-- Lightning Steel
 					["itemID"] = 94721,	-- Strange Metal Ingot
 					["coord"] = { 57.6, 33.8, 504 },
-					["qg"] = 69461,	-- Itoka
+					["provider"] = { "n", 69461 },	-- Itoka
 					["g"] = {
 						i(94553, {	-- Notes on Lightning Steel
 							i(94568),	-- Plans: Drakefist Hammer, Reborn

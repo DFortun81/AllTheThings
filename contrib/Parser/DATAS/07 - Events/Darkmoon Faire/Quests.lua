@@ -10,7 +10,7 @@ _.WorldEvents =
 			n(-17, {	-- Quests
 				{	-- 1200 Tickets - Amulet of the Darkmoon
 					["questID"] = 7981,	-- 1200 Tickets - Amulet of the Darkmoon
-					["qg"] = 14828,	-- Gelvas Grimegate <Souvenir & Toy Prizes>
+					["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 					["u"] = 40,
 					["g"] = {
 						{	-- Amulet of the Darkmoon
@@ -21,7 +21,7 @@ _.WorldEvents =
 				},
 				{	-- 1200 Tickets - Orb of the Darkmoon
 					["questID"] = 7940,	-- 1200 Tickets - Orb of the Darkmoon
-					["qg"] = 14828,	-- Gelvas Grimegate <Souvenir & Toy Prizes>
+					["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 					["u"] = 40,
 					["g"] = {
 						{	-- Orb of the Darkmoon
@@ -37,7 +37,7 @@ _.WorldEvents =
 					["g"] = {
 						{	-- Darkmoon Beast Deck
 							["questID"] = 7907,		-- Darkmoon Beast Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -54,7 +54,7 @@ _.WorldEvents =
 							["g"] = {
 								{	-- Darkmoon Blessings Deck
 									["questID"] = 10938,	-- Darkmoon Blessings Deck
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -70,7 +70,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Chaos Deck
 							["questID"] = 13325,	-- Darkmoon Chaos Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -84,7 +84,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Crane Deck
 							["questID"] = 30449,	-- Darkmoon Crane Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -98,7 +98,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Earthquake Deck
 							["questID"] = 27667,	-- Darkmoon Earthquake Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -112,7 +112,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Elementals Deck
 							["questID"] = 7929,		-- Darkmoon Elementals Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -129,7 +129,7 @@ _.WorldEvents =
 							["g"] = {
 								{	-- Darkmoon Furies Deck
 									["questID"] = 10940,	-- Darkmoon Furies Deck
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -145,7 +145,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Hurricane Deck
 							["questID"] = 27665,	-- Darkmoon Hurricane Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -165,7 +165,7 @@ _.WorldEvents =
 							["g"] = {
 								{	-- Darkmoon Lunacy Deck
 									["questID"] = 10941,	-- Darkmoon Lunacy Deck
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -181,7 +181,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Nobles Deck
 							["questID"] = 13326,	-- Darkmoon Nobles Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -204,7 +204,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Ox Deck
 							["questID"] = 30450,	-- Darkmoon Ox Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -218,7 +218,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Portals Deck
 							["questID"] = 7927,		-- Darkmoon Portals Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -232,7 +232,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Prisms Deck
 							["questID"] = 13324,	-- Darkmoon Prisms Deck	
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -246,7 +246,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Serpent Deck
 							["questID"] = 30451,	-- Darkmoon Serpent Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -263,7 +263,7 @@ _.WorldEvents =
 							["g"] = {
 								{	-- Darkmoon Storms Deck
 									["questID"] = 10939,	-- Darkmoon Storms Deck
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -279,7 +279,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Tiger Deck
 							["questID"] = 30452,	-- Darkmoon Tiger Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -296,7 +296,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Tsunami Deck
 							["questID"] = 27666,	-- Darkmoon Tsunami Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -310,7 +310,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Undeath Deck
 							["questID"] = 13327,	-- Darkmoon Undeath Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -324,7 +324,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Volcanic Deck
 							["questID"] = 27664,	-- Darkmoon Volcanic Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -338,7 +338,7 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Warlords Deck
 							["questID"] = 7928,	-- Darkmoon Warlords Deck
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -398,7 +398,7 @@ _.WorldEvents =
 								{	-- Banner of the Fallen
 									["itemID"] = 71951,		-- Banner of the Fallen
 									["questID"] = 29456,	-- A Captured Banner
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -408,7 +408,7 @@ _.WorldEvents =
 								{	-- Captured Insignia
 									["itemID"] = 71952,		-- Captured Insignia
 									["questID"] = 29457,	-- The Enemy's Insignia
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -418,7 +418,7 @@ _.WorldEvents =
 								{	-- Fallen Adventurer's Jounral
 									["itemID"] = 71953,		-- Fallen Adventurer's Jounral
 									["questID"] = 29458,	-- The Captured Journal
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -433,7 +433,7 @@ _.WorldEvents =
 								{	-- A Treatise on Strategy
 									["itemID"] = 71715,		-- A Treatise on Strategy
 									["questID"] = 29451,	-- The Master Strategist
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -443,7 +443,7 @@ _.WorldEvents =
 								{	-- Imbued Crystal
 									["itemID"] = 71635,		-- Imbued Crystal
 									["questID"] = 29443,	-- A Curious Crystal
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -453,7 +453,7 @@ _.WorldEvents =
 								{	-- Monstrous Egg
 									["itemID"] = 71636,		-- Monstrous Egg
 									["questID"] = 29444,	-- An Exotic Egg
-									["qg"] = 14829,			-- Yebb Neblegear
+									["provider"] = { "n", 14829 },			-- Yebb Neblegear
 									["coords"] = {
 										{ 51.11, 82.05, 407 },
 									},
@@ -463,7 +463,7 @@ _.WorldEvents =
 								{	-- Mysterious Grimoire
 									["itemID"] = 71637,		-- Mysterious Grimoire
 									["questID"] = 29445,	-- An Intriguing Grimoire
-									["qg"] = 14822,			-- Sayge
+									["provider"] = { "n", 14822 },			-- Sayge
 									["coords"] = {
 										{ 53.25, 75.84, 407 },
 									},
@@ -473,7 +473,7 @@ _.WorldEvents =
 								{	-- Ornate Weapon
 									["itemID"] = 71638,		-- Ornate Weapon
 									["questID"] = 29446,	-- A Wondrous Weapon
-									["qg"] = 14847,			-- Professor Thaddeus
+									["provider"] = { "n", 14847 },			-- Professor Thaddeus
 									["coords"] = {
 										{ 51.91, 60.93, 407 },
 									},
@@ -485,7 +485,7 @@ _.WorldEvents =
 						{	-- Soothsayer's Runes
 							["itemID"] = 71716,		-- Soothsayer's Runes
 							["questID"] = 29464, 	-- Tools of Divination
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -504,7 +504,7 @@ _.WorldEvents =
 					["g"] = {
 						{	-- Master Pit Fighter
 							["questID"] = 29761,	-- Master Pit Fighter
-							["qg"] = 55402,	-- Korgol Crushskull
+							["provider"] = { "n", 55402 },	-- Korgol Crushskull
 							["coord"] = { 47.38, 78.92, 407 },
 							["sourceQuests"] = { 29760 },	-- Pit Fighter
 							["collectible"] = false,
@@ -515,7 +515,7 @@ _.WorldEvents =
 						},
 						{	-- Pit Fighter
 							["questID"] = 29760,	-- Pit Fighter
-							["qg"] = 55402,	-- Korgol Crushskull
+							["provider"] = { "n", 55402 },	-- Korgol Crushskull
 							["coord"] = { 47.38, 78.92, 407 },
 							["collectible"] = false,
 							["g"] = {
@@ -536,7 +536,7 @@ _.WorldEvents =
 					["g"] = {
 						{	-- A Fizzy Fusion [Alchemy]
 							["questID"] = 29506,	-- A Fizzy Fusion
-							["qg"] = 14844,			-- Sylvannia
+							["provider"] = { "n", 14844 },			-- Sylvannia
 							["coords"] = {
 								{ 50.54, 69.57, 407 },
 							},
@@ -552,7 +552,7 @@ _.WorldEvents =
 						},
 						{	-- Baby Needs Two Pair of Shoes [Blacksmithing]
 							["questID"] = 29508,	-- Baby Needs Two Pair of Shoes
-							["qg"] = 14829,			-- Yebb Neblegear
+							["provider"] = { "n", 14829 },			-- Yebb Neblegear
 							["coords"] = {
 								{ 51.11, 82.05, 407 },
 							},
@@ -572,7 +572,7 @@ _.WorldEvents =
 						},
 						{	-- Banners, Banners Everywhere! [Leatherworking]
 							["questID"] = 29520,	-- Banners, Banners Everywhere!
-							["qg"] = 10445,			-- Selina Dourman
+							["provider"] = { "n", 10445 },			-- Selina Dourman
 							["coords"] = {
 								{ 55.56, 55.03, 407 },
 							},
@@ -588,7 +588,7 @@ _.WorldEvents =
 						},
 						{	-- Eye on the Prizes [Tailoring]
 							["questID"] = 29517,	-- Eyes on the Prizes
-							["qg"] = 14841,			-- Rinling
+							["provider"] = { "n", 14841 },			-- Rinling
 							["coords"] = {
 								{ 49.25, 60.79, 407 },
 							},
@@ -604,7 +604,7 @@ _.WorldEvents =
 						},
 						{	-- Fun for the Little Ones [Archaeology]
 							["questID"] = 29507,	-- Fun for the Little Ones
-							["qg"] = 14847,			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },			-- Professor Thaddeus
 							["coords"] = {
 								{ 51.91, 60.93, 407 },
 							},
@@ -620,7 +620,7 @@ _.WorldEvents =
 						},
 						{	-- Herbs for Healing [Herbalism]
 							["questID"] = 29514,	-- Herbs for Healing
-							["qg"] = 14833,			-- Chronos
+							["provider"] = { "n", 14833 },			-- Chronos
 							["repeatable"] = true,
 							["coords"] = {
 								{ 54.99, 70.78, 407 },
@@ -635,7 +635,7 @@ _.WorldEvents =
 						},
 						{	-- Keeping the Faire Sparkling [Jewelcrafting]
 							["questID"] = 29516,	-- Keeping the Faire Sparkling
-							["qg"] = 14833,			-- Chronos
+							["provider"] = { "n", 14833 },			-- Chronos
 							["repeatable"] = true,
 							["coords"] = {
 								{ 54.99, 70.78, 407 },
@@ -650,7 +650,7 @@ _.WorldEvents =
 						},
 						{	-- Putting the Carnies Back Together Again [First Aid]
 							["questID"] = 29512,	-- Putting the Carnies Back Together Again
-							["qg"] = 14833,			-- Chronos
+							["provider"] = { "n", 14833 },			-- Chronos
 							["repeatable"] = true,
 							["coords"] = {
 								{ 54.99, 70.78, 407 },
@@ -660,7 +660,7 @@ _.WorldEvents =
 						},
 						{	-- Putting the Crunch in the Frog [Cooking]
 							["questID"] = 29509,	-- Putting the Crunch in the Frog
-							["qg"] = 14845,			-- Stamp Thunderhorn
+							["provider"] = { "n", 14845 },			-- Stamp Thunderhorn
 							["coords"] = {
 								{ 52.89, 67.94, 407 },
 							},
@@ -676,7 +676,7 @@ _.WorldEvents =
 						},
 						{	-- Putting Trash to Good Use [Enchanting]
 							["questID"] = 29510,	-- Putting Trash to Good Use
-							["qg"] = 14822,			-- Sayge
+							["provider"] = { "n", 14822 },			-- Sayge
 							["repeatable"] = true,
 							["coords"] = {
 								{ 53.25, 75.84, 407 },
@@ -691,7 +691,7 @@ _.WorldEvents =
 						},
 						{	-- Rearm, Reuse, Recycle [Mining]
 							["questID"] = 29518,	-- Rearm, Reuse, Recycle
-							["qg"] = 14841,			-- Rinling
+							["provider"] = { "n", 14841 },			-- Rinling
 							["coords"] = {
 								{ 49.25, 60.79, 407 },
 							},
@@ -706,7 +706,7 @@ _.WorldEvents =
 						},
 						{	-- Spoilin' for Salty Sea Dogs [Fishing]
 							["questID"] = 29513,	-- Spoilin' for Salty Sea Dogs
-							["qg"] = 14845,			-- Stamp Thunderhorn
+							["provider"] = { "n", 14845 },			-- Stamp Thunderhorn
 							["coords"] = {
 								{ 52.89, 67.94, 407 },
 							},
@@ -721,7 +721,7 @@ _.WorldEvents =
 						},
 						{	-- Talking' Tonks [Engineering]
 							["questID"] = 29511,	-- Talking' Tonks
-							["qg"] = 14841,			-- Rinling
+							["provider"] = { "n", 14841 },			-- Rinling
 							["coords"] = {
 								{ 49.25, 60.79, 407 },
 							},
@@ -736,7 +736,7 @@ _.WorldEvents =
 						},
 						{	-- Tan My Hide [Skinning]
 							["questID"] = 29519,	-- Tan My Hide
-							["qg"] = 14833,			-- Chronos
+							["provider"] = { "n", 14833 },			-- Chronos
 							["repeatable"] = true,
 							["coords"] = {
 								{ 54.99, 70.78, 407 },
@@ -751,7 +751,7 @@ _.WorldEvents =
 						},
 						{	-- Writing the Future [Inscription]
 							["questID"] = 29515,	-- Writing the Future
-							["qg"] = 14822,			-- Sayge
+							["provider"] = { "n", 14822 },			-- Sayge
 							["repeatable"] = true,
 							["coords"] = {
 								{ 53.25, 75.84, 407 },
@@ -770,7 +770,7 @@ _.WorldEvents =
 				{	-- Faded Treasure Map
 					["itemID"] = 126930,	-- Faded Treasure Map
 					["questID"] = 38934,	-- Sila's Secret Stash
-					["qg"] = 55103,			-- Galissa Sundew
+					["provider"] = { "n", 55103 },			-- Galissa Sundew
 					["coords"] = {
 						{ 52.51, 88.79, 407 },
 					},
@@ -785,7 +785,7 @@ _.WorldEvents =
 					["questID"] = 36481,	-- Firebird's Challenge
 					["isDaily"] = true,
 					["repeatable"] = true,
-					["qg"] = 85546,			-- Ziggie Sparks
+					["provider"] = { "n", 85546 },			-- Ziggie Sparks
 					["coords"] = {
 						{ 48.36, 71.37, 407 },
 					},
@@ -807,7 +807,7 @@ _.WorldEvents =
 					["questID"] = 29438,	-- He Shoots, He Scores!
 					["isDaily"] = true,
 					["repeatable"] = true,
-					["qg"] = 14841,			-- Rinling
+					["provider"] = { "n", 14841 },			-- Rinling
 					["coords"] = {
 						{ 49.25, 60.79, 407 },
 					},
@@ -828,7 +828,7 @@ _.WorldEvents =
 					["questID"] = 29463,	-- It's Hammer Time
 					["isDaily"] = true,
 					["repeatable"] = true,
-					["qg"] = 54601,			-- Mola
+					["provider"] = { "n", 54601 },			-- Mola
 					["coords"] = {
 						{ 53.28, 54.35, 407 },
 					},
@@ -852,7 +852,7 @@ _.WorldEvents =
 				},
 				{	-- Let's Keep Racing
 					["questID"] = 33756,	-- Let's Keep Racing
-					["qg"] = 74056,			-- Malle Earnhard
+					["provider"] = { "n", 74056 },			-- Malle Earnhard
 					["isDaily"] = true,
 					["repeatable"] = true,
 					["sourceQuests"] = {
@@ -881,7 +881,7 @@ _.WorldEvents =
 				{	-- Moonfang's Pelt
 					["itemID"] = 105891,	-- Moonfang's Pelt
 					["questID"] = 33354,	-- Den Mother's Demise
-					["qg"] = 71992,			-- Moonfang
+					["provider"] = { "n", 71992 },			-- Moonfang
 					["repeatable"] = true,
 					["coords"] = {
 						{ 39.36, 43.68, 407 },
@@ -889,7 +889,7 @@ _.WorldEvents =
 				},
 				{	-- More Big Race!
 					["questID"] = 37868,	-- More Big Racing!
-					["qg"] = 90473,			-- Patti Earnhard
+					["provider"] = { "n", 90473 },			-- Patti Earnhard
 					["isDaily"] = true,
 					["repeatable"] = true,
 					["sourceQuests"] = {
@@ -918,7 +918,7 @@ _.WorldEvents =
 				{	-- Ring of Promises
 					["itemID"] = 116068,	-- Ring of Promises
 					["questID"] = 36477,	-- Ring of Promises
-					["qg"] = 85531,			-- Erinys
+					["provider"] = { "n", 85531 },			-- Erinys
 					["coords"] = {
 						{ 74.84, 33.49, 407 },	-- Entrance
 						{ 74.26, 44.29, 407 },	-- Enrinys
@@ -934,7 +934,7 @@ _.WorldEvents =
 					["questID"] = 29455,	-- Target: Turtle
 					["isDaily"] = true,
 					["repeatable"] = true,
-					["qg"] = 29455,			-- Jessica Rogers
+					["provider"] = { "n", 29455 },			-- Jessica Rogers
 					["coords"] = {
 						{ 51.51, 77.1, 407 },
 					},
@@ -958,7 +958,7 @@ _.WorldEvents =
 				},
 				{	-- Test Your Strength
 					["questID"] = 29433,	-- Test Your Strength
-					["qg"] = 14832,			-- Kerri Hicks
+					["provider"] = { "n", 14832 },			-- Kerri Hicks
 					["repeatable"] = true,
 					["coords"] = {
 						{ 47.91, 67.12, 407 },
@@ -968,7 +968,7 @@ _.WorldEvents =
 					["questID"] = 29436,	-- The Humanoid Cannonball
 					["isDaily"] = true,
 					["repeatable"] = true,
-					["qg"] = 15303,			-- Maxima Blastenheimer
+					["provider"] = { "n", 15303 },			-- Maxima Blastenheimer
 					["coords"] = {
 						{ 52.49, 56.14, 407 },
 					},
@@ -987,7 +987,7 @@ _.WorldEvents =
 				},
 				{	-- The Real Race
 					["questID"] = 37910,	-- The Real Race
-					["qg"] = 74056,			-- Malle Earnhard
+					["provider"] = { "n", 74056 },			-- Malle Earnhard
 					["isDaily"] = true,
 					["repeatable"] = true,
 					["sourceQuests"] = {
@@ -1087,7 +1087,7 @@ _.WorldEvents =
 				},
 				{	-- The Real Big Race
 					["questID"] = 37911,	-- The Real Big Race
-					["qg"] = 90473,			-- Patti Earnhard
+					["provider"] = { "n", 90473 },			-- Patti Earnhard
 					["isDaily"] = true,
 					["repeatable"] = true,
 					["sourceQuests"] = {
@@ -1192,7 +1192,7 @@ _.WorldEvents =
 					["questID"] = 29434,	-- Tonk Commander
 					["isDaily"] = true,
 					["repeatable"] = true,
-					["qg"] = 54605,			-- Finaly Coolshot
+					["provider"] = { "n", 54605 },			-- Finaly Coolshot
 					["coords"] = {
 						{ 50.71, 65.17, 407 },
 					},
@@ -1217,7 +1217,7 @@ _.WorldEvents =
 				{	-- Unhatched Jubling Egg
 					["itemID"] = 19462,	-- Unhatched Jubling Egg
 					["questID"] = 7946,	-- Spawn of Jubjub
-					["qg"] = 14871,		-- Morja
+					["provider"] = { "n", 14871 },		-- Morja
 					["coords"] = {
 						{ 55.94, 70.73, 407 },
 					},
@@ -1229,7 +1229,7 @@ _.WorldEvents =
 				},
 				{	-- Welcome to the Darkmoon Races [One Time Quest]
 					["questID"] = 37819,	-- Welcome to the Darkmoon Races
-					["qg"] = 74056,			-- Malle Earnhard
+					["provider"] = { "n", 74056 },			-- Malle Earnhard
 					["coords"] = {
 						{ 48.98, 88.31, 407 },
 					},
@@ -1248,7 +1248,7 @@ _.WorldEvents =
 					{	-- Your Fortune Awaits You...
 						["questID"] = 7945,
 						["itemID"] = 19452,	-- Sayge's Fortune #27
-						["qg"] = 14822,	-- Sayge
+						["provider"] = { "n", 14822 },	-- Sayge
 						["u"] = 40,
 					},
 				}),

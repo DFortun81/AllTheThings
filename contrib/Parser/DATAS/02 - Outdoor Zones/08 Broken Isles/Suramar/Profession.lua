@@ -8,35 +8,35 @@ _.Zones =
 			n(-38, { 	-- Profession
 				prof(164, {	-- Blacksmithing
 					q(38525, {	-- Part of the Team
-						["qg"] = 92264,	-- Felsmith Nal'ryssa
+						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
 						["sourceQuest"] = 38524,	-- Felsmith Nal'ryssa
 					}),
 					q(38526, {	-- Smith Under Fire
-						["qg"] = 92264,	-- Felsmith Nal'ryssa
+						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
 						["sourceQuest"] = 38525,	-- Part of the Team
 						["g"] = {
 							i(123934),	-- Plans: Leystone Boots (Rank 2)
 						},
 					}),
 					q(38527, {	-- Nal'ryssa's Technique
-						["qg"] = 92264,	-- Felsmith Nal'ryssa
+						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
 						["sourceQuest"] = 38526,	-- Smith Under Fire
 					}),
 					q(38528, {	-- Leystone's Potential
-						["qg"] = 92264,	-- Felsmith Nal'ryssa
+						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
 						["sourceQuest"] = 38527,	-- Nal'ryssa's Technique
 						["g"] = {
 							i(123928),	-- Plans: Leystone Armguards (Rank 2)
 						},
 					}),
 					q(38530, {	-- The Firmament Stone
-						["qg"] = 92264,	-- Felsmith Nal'ryssa
+						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
 						["sourceQuest"] = 38528,	-- Leystone's Potential
 						["isBreadcrumb"] = true,
 					}),
 					n(-34, {	-- World Quests
 						q(41637, {	-- Work Order: Leystone Pauldrons
-							["qg"] = 97140,	-- First Arcanist Thalyssra
+							["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 							["g"] = {
 								i(123938),	-- Recipe: Leystone Pauldrons (Rank 3)
 							},
@@ -235,7 +235,7 @@ _.Zones =
 				}),
 				prof(165, {	-- Leatherworking
 					q(40214, {	-- Fel Tanning
-						["qg"] = 98969,	-- Stalriss Dawnrunner
+						["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 						["g"] = {
 							i(140636),	-- Pattern: Dreadleather Bindings (Rank 1)
 							i(140644),	-- Recipe: Gravenscale Armbands (Rank 1)
@@ -249,7 +249,7 @@ _.Zones =
 							40138,	-- Trial of the Crusader: Hides of Legend
 							40139,	-- Halls of Valor: The Hide of Fenryr
 						},
-						["qg"] = 98720,	-- Ske'rit
+						["provider"] = { "n", 98720 },	-- Ske'rit
 						["g"] = {
 							sp(194819),	-- Skinning Technique: Stonehide Leather (Rank 3)
 						},
@@ -259,7 +259,7 @@ _.Zones =
 							40153,	-- Return to Karazhan: Scales of Legend
 							40154,	-- Eye of Azshara: The Scales of Serpentrix
 						},
-						["qg"] = 98720,	-- Ske'rit
+						["provider"] = { "n", 98720 },	-- Ske'rit
 						["g"] = {
 							sp(194822),	-- Skinning Technique: Stormscale (Rank 3)
 						},
@@ -281,7 +281,7 @@ _.Zones =
 					q(38971, {	-- Exotic Textiles
 						["requireSkill"] = 197,	-- Tailoring
 						["coord"] = { 26.6, 71.4 },
-						["qg"] = 93978,	-- Leyweaver Athystro
+						["provider"] = { "n", 93978 },	-- Leyweaver Athystro
 						["g"] = {
 							i(127026),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
 						},
@@ -289,7 +289,7 @@ _.Zones =
 					q(38975, {	-- Inspire Me!
 						["requireSkill"] = 197,	-- Tailoring
 						["coord"] = { 40.2, 69.6 },
-						["qg"] = 93976,	-- Leyweaver Mithrogane
+						["provider"] = { "n", 93976 },	-- Leyweaver Mithrogane
 						["g"] = {
 							i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
 						},
@@ -297,7 +297,7 @@ _.Zones =
 					q(44741, {	-- Return to Karazhan: The Big Bag Theory
 						["requireSkill"] = 197,	-- Tailoring
 						["coord"] = { 40.4, 69.4 },
-						["qg"] = 93969,	-- Leyweaver Tytallo
+						["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
 						["g"] = {
 							i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)
 						},

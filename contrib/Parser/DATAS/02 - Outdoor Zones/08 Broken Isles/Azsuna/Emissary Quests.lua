@@ -8,7 +8,7 @@ _.Zones =
 			n(-169, {	-- Emissary Quests
 				q(42420, {	-- Court of Farondis
 					["repeatable"] = true,
-					["qg"] = 107376,	-- Veridis Fallon <Court of Farondis Emissary>
+					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
 					["g"] = {
 						i(157825, {	-- Farondis Lockbox
 							["sym"] = {
@@ -49,7 +49,7 @@ _.Zones =
 				}),
 				q(42422, {	-- The Wardens
 					["repeatable"] = true,
-					["qg"] = 107379,	-- Marin Bladewing <Wardens Emissary>
+					["provider"] = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
 					["g"] = {
 						i(157827, {	-- Warden's Field Kit
 							["sym"] = {
@@ -88,7 +88,7 @@ _.Zones =
 				n(-206,  {	-- Paragon
 					q(46745, {	-- Supplies from the Court
 						["repeatable"] = true,
-						["qg"] = 107376,	-- Veridis Fallon <Court of Farondis Emissary>
+						["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
 						["g"] = {
 							i(152102, {	-- Farondis Chest
 								i(147806),	-- Cloudwing Hippogryph (MOUNT!)
@@ -103,7 +103,7 @@ _.Zones =
 					}),
 					q(46749, {	-- Supplies From the Wardens
 						["repeatable"] = true,
-						["qg"] = 107379,	-- Marin Bladewing <Wardens Emissary>
+						["provider"] = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
 						["g"] = {
 							i(152107, {	-- Warden's Supply Kit
 								i(147843),	-- Sira's Extra Cloak (TOY!)

@@ -35,7 +35,7 @@ _.Zones =
 						}),
 						q(11960, {	-- Planning for the Future
 							["isDaily"] = true,
-							["qg"] = 26228,	-- Trapper Mau'i
+							["provider"] = { "n", 26228 },	-- Trapper Mau'i
 						}),
 					},
 				}),

@@ -13,7 +13,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40014,	-- Spayed by the Spade (Quest)
 						["sourceQuest"] = 40013,	-- Source Quest: Aethril Sample (Quest)
-						["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+						["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 						["groups"] = {
 							recipe(193292),	-- Aethril [Rank 1]
 						},
@@ -28,7 +28,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40016,	-- Desperation Breeds Ingenuity (Quest)
 						["sourceQuest"] = 40015,	-- Source Quest: Ragged Strips of Silk (Quest)
-						["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+						["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 						["groups"] = {
 							recipe(193293),	-- Aethril [Rank 2]
 						},
@@ -76,7 +76,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40019,	-- An Empathetic Herb (Quest)
 						["sourceQuest"] = 40018,	-- Source Quest: Dreamleaf Sample (Quest)
-						["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+						["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 						["groups"] = {
 							recipe(193295),	-- Dreamleaf [Rank 1]
 						},
@@ -91,7 +91,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40021,	-- One Dead Plant is One Too Many (Quest)
 						["sourceQuest"] = 40020,	-- Source Quest: Twisted to Death (Quest)
-						["qg"] = 98135,		-- Quest Giver: Wildcrafter Osme <Herbalism Trainer>
+						["provider"] = { "n", 98135 },		-- Quest Giver: Wildcrafter Osme <Herbalism Trainer>
 						["groups"] = {
 							recipe(193296),	-- Dreamleaf [Rank 2]
 						},
@@ -106,7 +106,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40023,	-- The Last Straw (Quest)
 						["sourceQuest"] = 40022,	-- Source Quest: Choked by Nightmare (Quest)
-						["qg"] = 98135,		-- Quest Giver: Wildcrafter Osme <Herbalism Trainer>
+						["provider"] = { "n", 98135 },		-- Quest Giver: Wildcrafter Osme <Herbalism Trainer>
 						["groups"] = {
 							recipe(193297),	-- Dreamleaf [Rank 3]
 						},
@@ -125,7 +125,7 @@ profession(182, {	-- Herbalism
 			{
 				["questID"] = 40041,	-- Felwort Analysis (Quest)
 				["sourceQuest"] = 40040,	-- Source Quest: Felwort Sample (Quest)
-				["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+				["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 				["groups"] = {
 					recipe(193308),	-- Felwort [Rank 2]
 				},
@@ -133,7 +133,7 @@ profession(182, {	-- Herbalism
 			{
 				["questID"] = 40042,	-- The Emerald Nightmare: Felwort Mastery (Quest)
 				["sourceQuest"] = 40041,	-- Source Quest: Felwort Analysis (Quest)
-				["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+				["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 				["groups"] = {
 					recipe(193309),	-- Felwort [Rank 3]
 				},
@@ -155,7 +155,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40031,	-- Vrykul Herblore (Quest)
 						["sourceQuest"] = 40030,	-- Source Quest: Ram's-Horn Trowel (Quest)
-						["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+						["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 						["groups"] = {
 							recipe(193302),	-- Fjarnskaggl [Rank 2]
 						},
@@ -170,7 +170,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40033,	-- Fjarnskaggl (Quest)
 						["sourceQuest"] = 40032,	-- Source Quest: The Missing Page (Quest)
-						["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+						["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 						["groups"] = {
 							recipe(193303),	-- Fjarnskaggl [Rank 3]
 						},
@@ -194,7 +194,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40026,	-- Chase the Culprit (Quest)
 						["sourceQuest"] = 40025,	-- Source Quest: Teeny Bite Marks (Quest)
-						["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+						["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 						["groups"] = {
 							recipe(193299),	-- Foxflower [Rank 2]
 						},
@@ -218,7 +218,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40035,	-- The Gentlest Touch (Quest)
 						["sourceQuest"] = 40034,	-- Source Quest: Starlight Rosedust (Quest)
-						["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+						["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 						["groups"] = {
 							recipe(193304),	-- Starlight Rose [Rank 1]
 						},
@@ -233,7 +233,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40037,	-- The Spade's Blade (Quest)
 						["sourceQuest"] = 40036,	-- Source Quest: Jeweled Spade Handle (Quest)
-						["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+						["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 						["groups"] = {
 							recipe(193305),	-- Starlight Rose [Rank 2]
 						},
@@ -248,7 +248,7 @@ profession(182, {	-- Herbalism
 					{
 						["questID"] = 40039,	-- Tharillon's Fall (Quest)
 						["sourceQuest"] = 40038,	-- Source Quest: Insane Ramblings (Quest)
-						["qg"] = 92464,		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
+						["provider"] = { "n", 92464 },		-- Quest Giver: Kuhuine Tenderstride <Herbalism Trainer>
 						["groups"] = {
 							recipe(193306),	-- Starlight Rose [Rank 3]
 						},

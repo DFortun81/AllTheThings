@@ -14,12 +14,12 @@ _.WorldEvents =
 				["description"] = "You need 40. Fish from the pools! Good luck!",
 				["g"] = {
 					q(8194, {	-- Apprentice Angler
-						["qg"] = 15078,	-- Jang
+						["provider"] = { "n", 15078 },	-- Jang
 						["coord"] = { 41.4, 73.0, 210 },
 						["repeatable"] = true,
 					}),
 					q(8193, {	-- Grand Prize
-						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
+						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
 						["coord"] = { 41.4, 73.0, 210 },
 						["repeatable"] = true,
 						["g"] = {
@@ -32,7 +32,7 @@ _.WorldEvents =
 					}),
 					q(32435, {	-- Second Prize
 						["u"] = 40,
-						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
+						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
 						["coord"] = { 41.4, 73.0, 210 },
 						["repeatable"] = true,
 						["g"] = {
@@ -42,7 +42,7 @@ _.WorldEvents =
 						},
 					}),
 					q(44765, {	-- Stranglethorn Fishing Extravaganza
-						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
+						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
 						["coord"] = { 41.4, 73.0, 210 },
 						["repeatable"] = true,
 						["g"] = {
@@ -55,7 +55,7 @@ _.WorldEvents =
 					}),
 					q(32436, {	-- Third Prize
 						["u"] = 40,
-						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
+						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
 						["coord"] = { 41.4, 73.0, 210 },
 						["repeatable"] = true,
 						["g"] = {
@@ -66,7 +66,7 @@ _.WorldEvents =
 			}),
 			q(8225, {	-- Rare Fish -- Brownell's Blue Striped Racer
 				["itemID"] = 19803,	-- Brownell's Blue Striped Racer
-				["qg"] = 15079,	-- Fishbot 5000
+				["provider"] = { "n", 15079 },	-- Fishbot 5000
 				["coord"] = { 41.4, 73.0, 210 },
 				["repeatable"] = true,
 				["g"] = {
@@ -75,7 +75,7 @@ _.WorldEvents =
 			}),
 			q(8224, {	-- Rare Fish - Dezian Queenfish
 				["itemID"] = 19806,	-- Dezian Queenfish
-				["qg"] = 15079,	-- Fishbot 5000
+				["provider"] = { "n", 15079 },	-- Fishbot 5000
 				["coord"] = { 41.4, 73.0, 210 },
 				["repeatable"] = true,
 				["g"] = {
@@ -84,7 +84,7 @@ _.WorldEvents =
 			}),
 			q(8221, {	-- Rare Fish - Keefer's Angelfish
 				["itemID"] = 19805,	-- Keefer's Angelfish
-				["qg"] = 15079,	-- Fishbot 5000
+				["provider"] = { "n", 15079 },	-- Fishbot 5000
 				["coord"] = { 41.4, 73.0, 210 },
 				["repeatable"] = true,
 				["g"] = {

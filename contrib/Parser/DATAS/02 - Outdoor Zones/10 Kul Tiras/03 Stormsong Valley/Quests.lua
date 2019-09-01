@@ -21,7 +21,7 @@ _.Zones =
 					["sourceQuests"] = { 50784 },	-- Eye of the Storm
 					["coord"] = { 69.8, 36.0, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 136933,	-- Brother Pike
+					["provider"] = { "n", 136933 },	-- Brother Pike
 				}),
 				
 				
@@ -29,7 +29,7 @@ _.Zones =
 					["sourceQuests"] = { 50611 },	-- Storm's Vengeance
 					["coord"] = { 66.0, 47.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 134639,	-- Brother Pike
+					["provider"] = { "n", 134639 },	-- Brother Pike
 				}),
 				
 				
@@ -38,7 +38,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["coord"] = { 78.2, 28.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 137692,	-- Taelia
+					["provider"] = { "n", 137692 },	-- Taelia
 				}),
 				
 				
@@ -60,7 +60,7 @@ _.Zones =
 					["sourceQuests"] = { 50157 },	-- There's Gold in Them There Fields
 					["coord"] = { 50.7, 73.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 129808,	-- Farmer Goldfield
+					["provider"] = { "n", 129808 },	-- Farmer Goldfield
 				}),
 				
 				
@@ -68,7 +68,7 @@ _.Zones =
 					["sourceQuests"] = { 50368 },	-- Terror of the Kraul
 					["coord"] = { 44.8, 75.8, 1183 },	-- Thornheart
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 133953,	-- Sergeant Calvin
+					["provider"] = { "n", 133953 },	-- Sergeant Calvin
 				}),
 				
 				
@@ -83,7 +83,7 @@ _.Zones =
 					["sourceQuests"] = { 51401 },	-- Carry On
 					["coord"] = { 59.2, 69.5, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 129999,	-- Taelia
+					["provider"] = { "n", 129999 },	-- Taelia
 				}),
 				
 				
@@ -91,7 +91,7 @@ _.Zones =
 					["sourceQuests"] = { 52793 },	-- Circle the Wagons (must be on quest)
 					["coord"] = { 64.8, 76.7, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 141603,	-- Mallory Hood
+					["provider"] = { "n", 141603 },	-- Mallory Hood
 				}),
 				
 				
@@ -99,7 +99,7 @@ _.Zones =
 					["sourceQuests"] = { 49998 },	-- Voices Below
 					["coord"] = { 66.1, 47.4 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 134639,	-- Brother Pike
+					["provider"] = { "n", 134639 },	-- Brother Pike
 					["g"] = {
 						i(155229),	-- Abyssal Beacon
 						i(155228),	-- Tideguard Bulwark
@@ -112,7 +112,7 @@ _.Zones =
 					["sourceQuests"] = { 50622 },	-- Deal's Off
 					["coord"] = { 44.7, 64.5, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 133953,	-- Sergeant Calvin
+					["provider"] = { "n", 133953 },	-- Sergeant Calvin
 				}),
 				
 				
@@ -120,7 +120,7 @@ _.Zones =
 					["sourceQuests"] = { 51552 },	-- The Days Are Just Packed
 					["coord"] = { 57.6, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130190,	-- Sergeant Calvin
+					["provider"] = { "n", 130190 },	-- Sergeant Calvin
 				}),
 				
 				
@@ -128,7 +128,7 @@ _.Zones =
 					["sourceQuests"] = { 51489 },	-- Time to Leave
 					["coord"] = { 57.9, 86.0, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 137866,	-- Taelia
+					["provider"] = { "n", 137866 },	-- Taelia
 				}),
 				
 				
@@ -136,14 +136,14 @@ _.Zones =
 					["sourceQuests"] = { 49887 },	-- Forced Labor
 					["coord"] = { 64.6, 62.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130904,	-- Samuel Williams
+					["provider"] = { "n", 130904 },	-- Samuel Williams
 				}),
 				
 				
 				q(51401, {	-- Carry On
 					["sourceQuests"] = { 51490 },	-- Border Issues
 					["coord"] = { 57.9, 86.0, 942 },
-					["qg"] = 137866,	-- Taelia
+					["provider"] = { "n", 137866 },	-- Taelia
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
@@ -152,14 +152,14 @@ _.Zones =
 					["sourceQuests"] = { 49755 },	-- Heavy Artillery
 					["coord"] = { 57.5, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130694,	-- Mayor Roz
+					["provider"] = { "n", 130694 },	-- Mayor Roz
 				}),
 				
 				
 				q(52793, {	-- Circle the Wagons
 					["coord"] = { 60.2, 70.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 141769,	-- Marilyn Hood
+					["provider"] = { "n", 141769 },	-- Marilyn Hood
 				}),
 				
 				
@@ -167,7 +167,7 @@ _.Zones =
 					["sourceQuests"] = { 52067 },	-- Survivors
 					["coord"] = { 57.8, 55.3, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 135682,	-- Patrick Eckhart
+					["provider"] = { "n", 135682 },	-- Patrick Eckhart
 				}),
 				
 				
@@ -179,14 +179,14 @@ _.Zones =
 					},
 					["coord"] = { 51.6, 66.0, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 132118,	-- Farmer Burton
+					["provider"] = { "n", 132118 },	-- Farmer Burton
 				}),
 				
 				
 				q(49746, {	-- Dousing the Flames
 					["coord"] = { 57.6, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130694,	-- Mayor Roz
+					["provider"] = { "n", 130694 },	-- Mayor Roz
 				}),
 				
 				
@@ -197,7 +197,7 @@ _.Zones =
 					},
 					["coord"] = { 61.7, 36.3, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 136497,	-- Tideguard Victoria
+					["provider"] = { "n", 136497 },	-- Tideguard Victoria
 				}),
 				
 				
@@ -205,7 +205,7 @@ _.Zones =
 					["sourceQuests"] = { 49975 },	-- Rest in the Depths
 					["coord"] = { 66.4, 56.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 131248,	-- Samuel Williams
+					["provider"] = { "n", 131248 },	-- Samuel Williams
 				}),
 				
 				
@@ -216,7 +216,7 @@ _.Zones =
 					},
 					["coord"] = { 51.5, 65.9, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 132118,	-- Farmer Burton
+					["provider"] = { "n", 132118 },	-- Farmer Burton
 					["g"] = {
 						i(155197),	-- Darkwater Bracers
 						i(155195),	-- Dread Corsair Bracers
@@ -231,7 +231,7 @@ _.Zones =
 				--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
 					["coord"] = { 51.0, 70.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 131656,	-- Houndmaster Archibald
+					["provider"] = { "n", 131656 },	-- Houndmaster Archibald
 				}),
 				
 				
@@ -243,7 +243,7 @@ _.Zones =
 					},
 					["coord"] = { 66.1, 47.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 134639,	-- Brother Pike
+					["provider"] = { "n", 134639 },	-- Brother Pike
 				}),
 				
 				
@@ -255,7 +255,7 @@ _.Zones =
 					},
 					["coord"] = { 64.6, 62.2, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130904,	-- Samuel Williams
+					["provider"] = { "n", 130904 },	-- Samuel Williams
 				}),
 				
 				
@@ -267,7 +267,7 @@ _.Zones =
 					},
 					["coord"] = { 66.2, 47.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 134623,	-- Taelia
+					["provider"] = { "n", 134623 },	-- Taelia
 				}),
 				
 				
@@ -275,7 +275,7 @@ _.Zones =
 					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse
 					["coord"] = { 51.5, 65.9, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 132118,	-- Farmer Burton
+					["provider"] = { "n", 132118 },	-- Farmer Burton
 				}),
 				
 				
@@ -287,7 +287,7 @@ _.Zones =
 					},
 					["coord"] = { 66.1, 47.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 134639,	-- Brother Pike
+					["provider"] = { "n", 134639 },	-- Brother Pike
 				}),
 				
 				
@@ -298,7 +298,7 @@ _.Zones =
 					},
 					["coord"] = { 50.7, 73.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 129808,	-- Farmer Goldfield
+					["provider"] = { "n", 129808 },	-- Farmer Goldfield
 				}),
 				
 				
@@ -306,14 +306,14 @@ _.Zones =
 					["sourceQuests"] = { 50069 },	-- Goldfield's War
 					["coord"] = { 50.7, 73.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 129808,	-- Farmer Goldfield
+					["provider"] = { "n", 129808 },	-- Farmer Goldfield
 				}),
 				
 				
 				q(51314, {	-- Grain Drain
 					["coord"] = { 55.0, 67.9, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 137094,	-- Farmer Max
+					["provider"] = { "n", 137094 },	-- Farmer Max
 				}),
 				
 				
@@ -321,7 +321,7 @@ _.Zones =
 					["sourceQuests"] = { 49703 },	-- House Stormsong
 					["coord"] = { 63.4, 64.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130715,	-- Taelia
+					["provider"] = { "n", 130715 },	-- Taelia
 				}),
 				
 				
@@ -333,7 +333,7 @@ _.Zones =
 					},
 					["coord"] = { 57.6, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130694,	-- Mayor Roz
+					["provider"] = { "n", 130694 },	-- Mayor Roz
 					["g"] = {
 						i(158692),	-- Darkwater Cinch
 						i(160364),	-- Darkwater Legwraps
@@ -351,7 +351,7 @@ _.Zones =
 					["sourceQuests"] = { 49725 },	-- A Risky Ploy
 					["coord"] = { 59.2, 68.6, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130576,	-- Brother Pike
+					["provider"] = { "n", 130576 },	-- Brother Pike
 				}),
 				
 				
@@ -359,7 +359,7 @@ _.Zones =
 					["sourceQuests"] = { 50622 },	-- Deal's Off
 					["coord"] = { 44.7, 64.5, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 133953,	-- Mayor Roz
+					["provider"] = { "n", 133953 },	-- Mayor Roz
 				}),
 				
 				
@@ -367,7 +367,7 @@ _.Zones =
 					["sourceQuests"] = { 50781 },	-- A Bridge Too Far
 					["coord"] = { 70.2, 36.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 136933,	-- Brother Pike
+					["provider"] = { "n", 136933 },	-- Brother Pike
 				}),
 				
 				
@@ -379,7 +379,7 @@ _.Zones =
 					},
 					["coord"] = { 63.4, 64.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130714,	-- Brother Pike
+					["provider"] = { "n", 130714 },	-- Brother Pike
 				}),
 				
 				
@@ -399,7 +399,7 @@ _.Zones =
 					},
 					["coord"] = { 63.4, 64.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130714,	-- Brother Pike
+					["provider"] = { "n", 130714 },	-- Brother Pike
 				}),
 				
 				
@@ -407,7 +407,7 @@ _.Zones =
 					["sourceQuests"] = { 52067 },	-- Survivors
 					["coord"] = { 57.9, 55.5, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 135874,	-- Lea Martinel
+					["provider"] = { "n", 135874 },	-- Lea Martinel
 				}),
 				
 				
@@ -415,7 +415,7 @@ _.Zones =
 					["sourceQuests"] = { 49998 },	-- Voices Below
 					["coord"] = { 66.2, 47.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 134623,	-- Taelia
+					["provider"] = { "n", 134623 },	-- Taelia
 				}),
 				
 				
@@ -423,7 +423,7 @@ _.Zones =
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["coord"] = { 60.9, 41.3, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 135517,	-- Tideguard Victoria
+					["provider"] = { "n", 135517 },	-- Tideguard Victoria
 				}),
 				
 				
@@ -431,14 +431,14 @@ _.Zones =
 					["sourceQuests"] = { 49703 },	-- House Stormsong
 					["coord"] = { 63.4, 64.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130714,	-- Brother Pike
+					["provider"] = { "n", 130714 },	-- Brother Pike
 				}),
 				
 				
 				q(51310, {	-- Raiders of the Lost Crop
 					["coord"] = { 55.0, 67.9, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 137094,	-- Farmer Max
+					["provider"] = { "n", 137094 },	-- Farmer Max
 				}),
 				
 				
@@ -446,7 +446,7 @@ _.Zones =
 					["sourceQuests"] = { 49975 },	-- Rest in the Depths
 					["coord"] = { 66.4, 56.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 131249,	-- Taelia
+					["provider"] = { "n", 131249 },	-- Taelia
 					["g"] = {
 						i(155204),	-- Brineworks Boot Knife
 						i(155214),	-- Brineworks Hullcracker
@@ -469,7 +469,7 @@ _.Zones =
 					},
 					["coord"] = { 66.3, 56.6, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130714,	-- Brother Pike
+					["provider"] = { "n", 130714 },	-- Brother Pike
 				}),
 				
 				
@@ -480,7 +480,7 @@ _.Zones =
 					},
 					["coord"] = { 46.7, 73.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 133953,	-- Sergeant Calvin
+					["provider"] = { "n", 133953 },	-- Sergeant Calvin
 				}),
 				
 				
@@ -488,7 +488,7 @@ _.Zones =
 					["sourceQuests"] = { 50781 },	-- A Bridge Too Far
 					["coord"] = { 70.2, 36.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 136933,	-- Brother Pike
+					["provider"] = { "n", 136933 },	-- Brother Pike
 				}),
 				
 				
@@ -496,7 +496,7 @@ _.Zones =
 					["sourceQuests"] = { 50824 },	-- Storm's End
 					["coord"] = { 78.2, 28.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 137691,	-- Brother Pike
+					["provider"] = { "n", 137691 },	-- Brother Pike
 				}),
 				
 				
@@ -504,7 +504,7 @@ _.Zones =
 					--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
 					["coord"] = { 51.0, 70.1, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 131656,	-- Houndmaster Archibald
+					["provider"] = { "n", 131656 },	-- Houndmaster Archibald
 				}),
 				
 				
@@ -512,14 +512,14 @@ _.Zones =
 					["sourceQuests"] = { 52067 },	-- Survivors
 					["coord"] = { 57.8, 55.3, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 135682,	-- Patrick Eckhart
+					["provider"] = { "n", 135682 },	-- Patrick Eckhart
 				}),
 				
 				
 				q(52796, {	-- Sometimes Less is More
 					["coord"] = { 60.2, 70.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 141769,	-- Marilyn Hood
+					["provider"] = { "n", 141769 },	-- Marilyn Hood
 				}),
 				
 				
@@ -531,7 +531,7 @@ _.Zones =
 				--	["objectID"] = 282478,	-- Empty Crate
 					["coord"] = { 46.7, 73.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 133953,	-- Sergeant Calvin
+					["provider"] = { "n", 133953 },	-- Sergeant Calvin
 				}),
 				
 				
@@ -539,7 +539,7 @@ _.Zones =
 					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse
 					["coord"] = { 51.5, 65.9, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 132118,	-- Farmer Burton
+					["provider"] = { "n", 132118 },	-- Farmer Burton
 				}),
 				
 				
@@ -547,7 +547,7 @@ _.Zones =
 					["sourceQuests"] = { 51319 },	-- The Final Ascent
 					["coord"] = { 75.5, 26.9, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 137506,	-- Brother Pike
+					["provider"] = { "n", 137506 },	-- Brother Pike
 					["g"] = {
 						i(155180),	-- Darkwater Hood
 						i(155177),	-- Dread Corsair Greathelm
@@ -566,7 +566,7 @@ _.Zones =
 					},
 					["coord"] = { 66.4, 56.5, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130714,	-- Brother Pike
+					["provider"] = { "n", 130714 },	-- Brother Pike
 					["g"] = {
 						i(155168),	-- Darkwater Tunic
 						i(155166),	-- Dread Corsair Breastplate
@@ -585,7 +585,7 @@ _.Zones =
 					},
 					["coord"] = { 66.0, 47.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 134639,	-- Brother Pike
+					["provider"] = { "n", 134639 },	-- Brother Pike
 					["g"] = {
 						i(158681),	-- Lightning Tether
 					},
@@ -597,7 +597,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["coord"] = { 57.6, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130190,	-- Sergeant Calvin
+					["provider"] = { "n", 130190 },	-- Sergeant Calvin
 				}),
 				
 				
@@ -610,7 +610,7 @@ _.Zones =
 					},
 					["coord"] = { 46.7, 73.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 133953,	-- Sergeant Calvin
+					["provider"] = { "n", 133953 },	-- Sergeant Calvin
 					["g"] = {
 						i(155225),	-- Bramblehulk Greatsword
 						i(160522),	-- Brennadam Vinescythe
@@ -632,7 +632,7 @@ _.Zones =
 					},
 					["coord"] = { 59.9, 37.9, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 136498,	-- Taelia
+					["provider"] = { "n", 136498 },	-- Taelia
 					["g"] = {
 						i(158702),	-- Darkwater Bindings
 						i(158700),	-- Dread Corsair Vambraces
@@ -653,7 +653,7 @@ _.Zones =
 					},
 					["coord"] = { 66.7, 56.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130786,	-- Hobbs
+					["provider"] = { "n", 130786 },	-- Hobbs
 				}),
 				
 				
@@ -663,7 +663,7 @@ _.Zones =
 						51320,	-- Sealed Fate
 					},
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 137220,	-- Brother Pike / Awakened Tidesage
+					["provider"] = { "n", 137220 },	-- Brother Pike / Awakened Tidesage
 				}),
 				
 				
@@ -692,7 +692,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["coord"] = { 57.5, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130694,	-- Mayor Roz
+					["provider"] = { "n", 130694 },	-- Mayor Roz
 				}),
 				
 				
@@ -704,7 +704,7 @@ _.Zones =
 					},
 					["coord"] = { 63.4, 64.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130715,	-- Taelia
+					["provider"] = { "n", 130715 },	-- Taelia
 					["g"] = {
 						i(155193),	-- Darkwater Belt
 						i(155190),	-- Dread Corsair Girdle
@@ -722,7 +722,7 @@ _.Zones =
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["coord"] = { 63.1, 43.2, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 135534,	-- Brother Pike
+					["provider"] = { "n", 135534 },	-- Brother Pike
 				}),
 				
 				
@@ -742,7 +742,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["coord"] = { 59.4, 69.9, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 131004,	-- Squire Augustus III
+					["provider"] = { "n", 131004 },	-- Squire Augustus III
 				}),
 				
 				
@@ -750,7 +750,7 @@ _.Zones =
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["coord"] = { 63.1, 43.2, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 136053,	-- Samuel Williams
+					["provider"] = { "n", 136053 },	-- Samuel Williams
 				}),
 				
 				
@@ -758,7 +758,7 @@ _.Zones =
 					["sourceQuests"] = { 49703 },	-- House Stormsong
 					["coord"] = { 63.4, 64.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130714,	-- Brother Pike
+					["provider"] = { "n", 130714 },	-- Brother Pike
 					["g"] = {
 						i(155173),	-- Darkwater Gloves
 						i(155174),	-- Dread Corsair Gauntlets
@@ -776,7 +776,7 @@ _.Zones =
 					["sourceQuests"] = { 49997 },	-- Storm's Judgment
 					["coord"] = { 66.3, 56.5, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130714,	-- Brother Pike
+					["provider"] = { "n", 130714 },	-- Brother Pike
 				}),
 				
 				
@@ -794,14 +794,14 @@ _.Zones =
 					},
 					["coord"] = { 46.7, 73.8, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 133953,	-- Sergeant Calvin
+					["provider"] = { "n", 133953 },	-- Sergeant Calvin
 				}),
 				
 				
 				q(49745, {	-- You Have Their Orders
 					["coord"] = { 57.6, 66.4, 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 130694,	-- Mayor Roz
+					["provider"] = { "n", 130694 },	-- Mayor Roz
 				}),
 				
 				
@@ -810,7 +810,7 @@ _.Zones =
 					["sourceQuests"] = {  },	-- 
 					["coord"] = { , , 942 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = ,	-- 
+					["provider"] = { "n",  },	-- 
 				}),
 				
 			--]]
@@ -818,24 +818,24 @@ _.Zones =
 			}),
 			n(-17,  {	-- Quests [Crieve]
 				a(q(50779, {	-- A Clean Slate
-					["qg"] = 135415,	-- Umbral Hulk
+					["provider"] = { "n", 135415 },	-- Umbral Hulk
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["coord"] = { 63.2, 41.2 },
 					["description"] = "The Umbral Hulks will ruin your day unless you have a group. Do NOT try soloing them.",
 				})),
 				a(q(50814, {	-- A Horrible Place
-					["qg"] = 135367,	-- Grettle Haribull
+					["provider"] = { "n", 135367 },	-- Grettle Haribull
 					["sourceQuests"] = { 50697, 50696 },	-- Bomb Beats Rock / Fun With Magnets
 					["coord"] = { 44.2, 54.0 },
 				})),
 				a(q(50797, {	-- A Turtle's Invitation
-					["qg"] = 135033,	-- Maokka
+					["provider"] = { "n", 135033 },	-- Maokka
 					["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
 					["coord"] = { 42.5, 54.3 },
 					["isBreadcrumb"] = true,
 				})),
 				a(q(50704, {	-- Anchors Aweigh Too Much
-					["qg"] = 134702,	-- Nedly Grinner
+					["provider"] = { "n", 134702 },	-- Nedly Grinner
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["coord"] = { 44.4, 55.5 },
 					["g"] = {
@@ -845,7 +845,7 @@ _.Zones =
 					},
 				})),
 				a(q(50553, {	-- Back to the Lab
-					["qg"] = 134447,	-- Lost Farmhand
+					["provider"] = { "n", 134447 },	-- Lost Farmhand
 					["sourceQuests"] = { 50493, 50264, 50165, 50534 },	-- Fetching Wrex / Free the Farmhands / The Bee Team / Wendigo Away
 					["coord"] = { 72.7, 72.2 },
 					["g"] = {
@@ -853,32 +853,32 @@ _.Zones =
 					},
 				})),
 				a(q(50697, {	-- Bomb Beats Rock
-					["qg"] = 134882,	-- Moxie Lockspinner / Worker
+					["provider"] = { "n", 134882 },	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["coord"] = { 44.4, 55.6 },
 				})),
 				a(q(50810, {	-- Break 'Em Out
-					["qg"] = 134720,	-- Leo Shealds
+					["provider"] = { "n", 134720 },	-- Leo Shealds
 					-- ["sourceQuests"] = { 51554 },	-- Reloading (not required)
 					["coord"] = { 42.9, 56.6 },
 				})),
 				a(q(50793, {	-- Cave Commotion
-					["qg"] = 135067,	-- Moxie Lockspinner
+					["provider"] = { "n", 135067 },	-- Moxie Lockspinner
 					["sourceQuests"] = { 50774 },	-- No Bot Left Behind
 					["coord"] = { 42.6, 54.3 },
 				})),
 				a(q(50359, {	-- Cleanup Duty
-					["qg"] = 132017,	-- Ancel Mildenhall
+					["provider"] = { "n", 132017 },	-- Ancel Mildenhall
 					["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery
 					["coord"] = { 68.8, 65.1 },
 				})),
 				a(q(50070, {	-- Detective Mildenhall
-					["qg"] = 132017,	-- Ancel Mildenhall
+					["provider"] = { "n", 132017 },	-- Ancel Mildenhall
 					["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery
 					["coord"] = { 68.8, 65.1 },
 				})),
 				a(q(50064, {	-- Don't Go in the Basement
-					["qg"] = 132017,	-- Ancel Mildenhall
+					["provider"] = { "n", 132017 },	-- Ancel Mildenhall
 					["sourceQuests"] = { 50359, 50070 },	-- Cleanup Duty / Detective Mildenhall
 					["coord"] = { 70.6, 69.6 },
 					["g"] = {
@@ -887,12 +887,12 @@ _.Zones =
 					},
 				})),
 				a(q(50741, {	-- Don't Turtle
-					["qg"] = 134702,	-- Nedly Grinner
+					["provider"] = { "n", 134702 },	-- Nedly Grinner
 					["sourceQuests"] = { 50697, 50696 },	-- Bomb Beats Rock / Fun With Magnets
 					["coord"] = { 44.4, 55.5 },
 				})),
 				a(q(50753, {	-- Earl-E Bot Gets the Worm
-					["qg"] = 135067,	-- Moxie Lockspinner
+					["provider"] = { "n", 135067 },	-- Moxie Lockspinner
 					["sourceQuests"] = { 50741 },	-- Don't Turtle
 					["coord"] = { 42.6, 54.3 },
 					["g"] = {
@@ -902,22 +902,22 @@ _.Zones =
 					},
 				})),
 				a(q(50493, {	-- Fetching Wrex
-					["qg"] = 134028,	-- Sam Robinson
+					["provider"] = { "n", 134028 },	-- Sam Robinson
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
 				})),
 				a(q(50264, {	-- Free the Farmhands
-					["qg"] = 134028,	-- Sam Robinson
+					["provider"] = { "n", 134028 },	-- Sam Robinson
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
 				})),
 				a(q(50696, {	-- Fun With Magnets
-					["qg"] = 134882,	-- Moxie Lockspinner / Worker
+					["provider"] = { "n", 134882 },	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["coord"] = { 44.4, 55.6 },
 				})),
 				a(q(50504, {	-- Honey Glazed Sam
-					["qg"] = 132292,	-- Raimond Mildenhall
+					["provider"] = { "n", 132292 },	-- Raimond Mildenhall
 					["sourceQuests"] = { 50168, 50162 },	-- Royal Succession / Sticky Situation
 					["coord"] = { 74.1, 72.7 },
 				})),
@@ -927,12 +927,12 @@ _.Zones =
 					},
 				}),
 				a(q(50803, {	-- I Want It All Now
-					["qg"] = 135330,	-- Nedly Grinner
+					["provider"] = { "n", 135330 },	-- Nedly Grinner
 					["sourceQuests"] = { 50793 },	-- Cave Commotion
 					["coord"] = { 41.1, 54.0 },
 				})),
 				a(q(50802, {	-- Iron Low Tide
-					["qg"] = 134720,	-- Leo Shealds
+					["provider"] = { "n", 134720 },	-- Leo Shealds
 					-- ["sourceQuests"] = { 51554 },	-- Reloading (not required)
 					["coord"] = { 42.9, 56.6 },
 				})),
@@ -959,68 +959,68 @@ _.Zones =
 					},
 				})),
 				a(q(50343, {	-- Mayhem at Mildenhall Meadery
-					["qg"] = 131793,	-- Ancel Mildenhall
+					["provider"] = { "n", 131793 },	-- Ancel Mildenhall
 					["sourceQuests"] = { 51582 },	-- Make it Mildenhall
 					["coord"] = { 68.8, 65.1 },
 				})),
 				a(q(50774, {	-- No Bot Left Behind
-					["qg"] = 135067,	-- Moxie Lockspinner
+					["provider"] = { "n", 135067 },	-- Moxie Lockspinner
 					["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
 					["coord"] = { 42.6, 54.3 },
 				})),
 				a(q(50691, {	-- Not On Our Payroll
-					["qg"] = 134702,	-- Nedly Grinner
+					["provider"] = { "n", 134702 },	-- Nedly Grinner
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["coord"] = { 44.4, 55.5 },
 				})),
 				a(q(50161, {	-- Recovering Raimond
-					["qg"] = 132647,	-- Ancel Mildenhall
+					["provider"] = { "n", 132647 },	-- Ancel Mildenhall
 					["sourceQuests"] = { 50064 },	-- Don't Go in the Basement
 					["coord"] = { 70.6, 69.6 },
 				})),
 				a(q(51554, {	-- Reloading
-					["qg"] = 135874,	-- Lea Martinel
+					["provider"] = { "n", 135874 },	-- Lea Martinel
 					["sourceQuests"] = { 50909 },	-- Never Outgunned ??? (might require more??)
 					["coord"] = { 57.9, 55.5 },
 					["isBreadcrumb"] = true,
 				})),
 				a(q(50168, {	-- Royal Succession
-					["qg"] = 132292,	-- Raimond Mildenhall
+					["provider"] = { "n", 132292 },	-- Raimond Mildenhall
 					["sourceQuests"] = { 50161 },	-- Recovering Raimond
 					["coord"] = { 74.1, 72.7 },
 				})),
 				a(q(50162, {	-- Sticky Situation
-					["qg"] = 132292,	-- Raimond Mildenhall
+					["provider"] = { "n", 132292 },	-- Raimond Mildenhall
 					["sourceQuests"] = { 50161 },	-- Recovering Raimond
 					["coord"] = { 74.1, 72.7 },
 				})),
 				a(q(51534, {	-- The Battle for Brennadam (Objective)
-					["qg"] = 130694,	-- Mayor Roz
+					["provider"] = { "n", 130694 },	-- Mayor Roz
 					-- ["sourceQuests"] = { 51552 },	-- The Days Are Just Packed ??? (verification required)
 					["coord"] = { 57.6, 66.4 },
 				})),
 				a(q(50165, {	-- The Bee Team
-					["qg"] = 134447,	-- Lost Farmhand
+					["provider"] = { "n", 134447 },	-- Lost Farmhand
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
 				})),
 				a(q(52132, {	-- The Proof of Piracy
-					["qg"] = 134882,	-- Moxie Lockspinner / Worker
+					["provider"] = { "n", 134882 },	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50793 },	-- Cave Commotion
 					["coord"] = { 41.1, 54.1 },
 				})),
 				a(q(50675, {	-- Treasure Hunting
-					["qg"] = 134720,	-- Leo Shealds
+					["provider"] = { "n", 134720 },	-- Leo Shealds
 					["sourceQuests"] = { 50810 },	-- Break 'Em Out
 					["coord"] = { 42.9, 56.6 },
 				})),
 				a(q(50674, {	-- Two Faced Pirate Scum
-					["qg"] = 134720,	-- Leo Shealds
+					["provider"] = { "n", 134720 },	-- Leo Shealds
 					["sourceQuests"] = { 51554 },	-- Reloading
 					["coord"] = { 42.9, 56.6 },
 				})),
 				a(q(50534, {	-- Wendigo Away
-					["qg"] = 134447,	-- Lost Farmhand
+					["provider"] = { "n", 134447 },	-- Lost Farmhand
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["coord"] = { 72.7, 72.2 },
 				})),
@@ -1031,17 +1031,17 @@ _.Zones =
 					},
 				})),
 				a(q(50133, {	-- Weed Whacking (Objective)
-					["qg"] = 132118,	-- Farmer Burton
+					["provider"] = { "n", 132118 },	-- Farmer Burton
 					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse ??? This isn't required)
 					["coord"] = { 51.5, 65.9 },
 				})),
 				a(q(50955, {	-- We're Not Friends
-					["qg"] = 134882,	-- Moxie Lockspinner / Worker
+					["provider"] = { "n", 134882 },	-- Moxie Lockspinner / Worker
 					["sourceQuests"] = { 50793 },	-- Cave Commotion
 					["coord"] = { 41.1, 54.1 },
 				})),
 				a(q(52065, {	-- Worse Than it Looks
-					["qg"] = 135682,	-- Patrick Eckhart
+					["provider"] = { "n", 135682 },	-- Patrick Eckhart
 					["sourceQuests"] = { 50910, 50909, 50908 },	-- Dangerous Game / Never Outgunned / Smells like Trouble ???
 					["coord"] = { 57.8, 55.3 },
 					["isBreadcrumb"] = true,
@@ -1105,14 +1105,14 @@ _.Zones =
 				}),
 				q(51545),	-- Breaker Bad
 				q(51159, {	-- Bring out the Big Gun
-					["qg"] = 136481,	-- Cannon
+					["provider"] = { "n", 136481 },	-- Cannon
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 60.21, 54.55, 942 },
 				}),
 				{	-- Bumbles the Bee
 					["questID"] = 53347,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 131793,	-- Ancel Mildenhall
+					["provider"] = { "n", 131793 },	-- Ancel Mildenhall
 					["description"] = "First obtain an Annealed Honey Amulet from mobs in the Mildenhall Meadery area in Stormsong Valley.  Give the amulet to Rosaline Mildenhall in Boralus.  She will give you a letter.  Give the letter to Ancel Mildenhall, and this questline will then become available.",
 				},
 				q(51728, {	-- Burn It All Down
@@ -1247,7 +1247,7 @@ _.Zones =
 				{	-- Gunpowder Plot
 					["questID"] = 51492,	-- Gunpowder Plot
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 136574,	-- Charles Davenport
+					["provider"] = { "n", 136574 },	-- Charles Davenport
 					["g"] = {
 						i(160350),	-- Darkwater Handwraps
 						i(160356),	-- Dread Corsair Gloves
@@ -1271,7 +1271,7 @@ _.Zones =
 				}),
 				{	-- I like Turtles
 					["questID"] = 51427,	-- I like Turtles
-					["qg"] = 137453,	-- Loroja <Watcher of Ai'twen>
+					["provider"] = { "n", 137453 },	-- Loroja <Watcher of Ai'twen>
 					["g"] = {
 						i(160395),	-- Ai'twen's Light
 						i(160396),	-- Ai'twen's Defender
@@ -1288,7 +1288,7 @@ _.Zones =
 					["questID"] = 53371,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 132647,	-- Ancel Mildenhall
+					["provider"] = { "n", 132647 },	-- Ancel Mildenhall
 					["sourceQuest"] = 53347,	-- Bumbles the Bee
 					["description"] = "Complete this daily quest 7 times to receive the Bumbles pet in your mailbox.",
 				},
@@ -1327,7 +1327,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50653, {	-- Reclaiming our Defenses
-					["qg"] = 131003,	-- Specialist Wembley
+					["provider"] = { "n", 131003 },	-- Specialist Wembley
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(160337),	-- Darkwater Footpads
@@ -1374,7 +1374,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50956, {	-- Walking-Around Money
-					["qg"] = 134720,	-- Leo Shealds
+					["provider"] = { "n", 134720 },	-- Leo Shealds
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 				}),

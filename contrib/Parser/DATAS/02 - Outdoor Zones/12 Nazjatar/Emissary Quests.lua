@@ -6,7 +6,7 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		n(-169, {	-- Emissary Quests
 			q(53982, {	-- Supplies From The Unshackled
-				["qg"] = 154002,	-- Atolia Seapearl
+				["provider"] = { "n", 154002 },	-- Atolia Seapearl
 				["lvl"] = 120,
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
@@ -27,7 +27,7 @@ _.Zones =
 				},
 			}),
 			q(55976, {	-- Supplies From The Waveblade Ankoan
-				["qg"] = 154140,	-- Speaker Utia
+				["provider"] = { "n", 154140 },	-- Speaker Utia
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,

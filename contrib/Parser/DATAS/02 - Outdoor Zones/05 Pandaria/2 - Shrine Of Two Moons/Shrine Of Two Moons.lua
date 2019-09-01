@@ -51,7 +51,7 @@ _.Zones =
 --]]
 					q(32901, {	-- Heroic Deeds
 						["races"] = HORDE_ONLY,
-						["qg"] = 66998,	-- Jinho the Wind Breaker
+						["provider"] = { "n", 66998 },	-- Jinho the Wind Breaker
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 						["lvl"] = 90,
 						["g"] = {
@@ -64,7 +64,7 @@ _.Zones =
 						},
 					}),
 					q(32726, {	-- So You Want to Be a Blacksmith...
-						["qg"] = 64058,	-- Jorunga Stonehoof
+						["provider"] = { "n", 64058 },	-- Jorunga Stonehoof
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 164,	-- Blacksmithing
 					}),
@@ -87,7 +87,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["coord"] = { 60.6, 21.8, 391 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 64533,	-- Wei Lakebreeze
+						["provider"] = { "n", 64533 },	-- Wei Lakebreeze
 					}),
 					--[[
 					q(31388, {	-- The Shado-Pan Offensive

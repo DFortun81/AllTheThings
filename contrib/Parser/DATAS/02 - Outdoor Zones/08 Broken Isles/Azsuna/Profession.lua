@@ -16,7 +16,7 @@ _.Zones =
 				prof(164, {	-- Blacksmithing
 					q(41633, {	-- Work Order: Leystone Greaves (WQ)
 						["lvl"] = 110,	-- WQ is 110+ only
-						["qg"] = 107376,	-- Veridis Fallon
+						["provider"] = { "n", 107376 },	-- Veridis Fallon
 						["g"] = {
 							i(123931),	-- Recipe: Leystone Greaves (Rank 3)
 						},
@@ -25,7 +25,7 @@ _.Zones =
 				prof(333, {	-- Enchanting
 					q(40169),	-- Crossroads Rendezvous
 					q(39923, {	-- Down to the Core
-						["qg"] = 99420,	-- Kharmeera
+						["provider"] = { "n", 99420 },	-- Kharmeera
 						["g"] = {
 							i(128566),	-- Formula: Enchant Ring - Binding of Critical Strike (Rank 1)
 							i(128567),	-- Formula: Enchant Ring - Binding of Haste (Rank 1)
@@ -34,11 +34,11 @@ _.Zones =
 						},
 					}),
 					q(39907, {	-- Elven Enchantments
-						["qg"] = 107139,	-- Enchantress Ilanya
+						["provider"] = { "n", 107139 },	-- Enchantress Ilanya
 						["sourceQuests"] = { 39918 },	-- The Absent Priestess
 					}),
 					q(39905, {	-- Ringing True
-						["qg"] = 90317,	-- Jace Darkweaver
+						["provider"] = { "n", 90317 },	-- Jace Darkweaver
 						["g"] = {
 							i(128562),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 1)
 							i(128563),	-- Formula: Enchant Ring - Word of Haste (Rank 1)
@@ -47,7 +47,7 @@ _.Zones =
 						},
 					}),
 					q(39914, {	-- Sentinel's Final Duty
-						["qg"] = 98159,	-- Alynblaze
+						["provider"] = { "n", 98159 },	-- Alynblaze
 						["g"] = {
 							i(128577),	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 1)
 							i(141912),	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 1)
@@ -55,14 +55,14 @@ _.Zones =
 					}),
 					q(39918, {	-- The Absent Priestess
 						["sourceQuests"] = { 40130 },	-- Washed Clean
-						["qg"] = 98698,	-- Priestess Driana
+						["provider"] = { "n", 98698 },	-- Priestess Driana
 						["g"] = {
 							i(128578),	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 1)
 							i(141913),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 1)
 						},
 					}),
 					q(39910, {	-- The Druid's Debt
-						["qg"] = 98381,	-- Merrus Dawnwind
+						["provider"] = { "n", 98381 },	-- Merrus Dawnwind
 						["g"] = {
 							i(128576),	-- Formula: Enchant Neck - Mark of the Claw (Rank 1)
 							i(141911),	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 1)
@@ -72,11 +72,11 @@ _.Zones =
 				prof(202, {	-- Engineering
 					q(40856, {	-- It'll Cost You
 						["sourceQuest"] = 40855,	-- Our Man in Azsuna
-						["qg"] = 102195,	-- Fargo Flintlocke
+						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 						["requireSkill"] = 202,
 					}),
 					q(40876, {	-- 'Locke, Stock and Barrel
-						["qg"] = 102196,	-- Fargo Flintlocke
+						["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 						["g"] = {
 							-- Schematic: Better Headguns
 							--["recipeID"] = 201611,	-- Schematic: Better Headguns(Spell that is cast on you to learn the following recipes.  Not collectible)
@@ -88,7 +88,7 @@ _.Zones =
 					}),
 					q(40859, {	-- The Latest Fashion: Headguns!
 						["sourceQuest"] = 40856,	-- It'll Cost You
-						["qg"] = 102195,	-- Fargo Flintlocke
+						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 						["requireSkill"] = 202,
 						["g"] = {
 							recipe(198939),	-- Schematic: Blink-Trigger Headgun
@@ -99,7 +99,7 @@ _.Zones =
 					}),
 					q(40858, {	-- The Missing Pieces
 						["sourceQuest"] = 40855,	-- Our Man in Azsuna
-						["qg"] = 102195,	-- Fargo Flintlocke
+						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 						["requireSkill"] = 202,
 						["g"] = {
 							recipe(198976),	-- Schematic: Auto-Hammer [Rank 1]
@@ -345,9 +345,9 @@ _.Zones =
 						["g"] = {
 							i(137744),	-- Technique: Glyph of Tattered Wings
 						},
-						["qgs"] = {
-							97734,	-- Zaria Shadowheart
-							98026,	-- Baric Stormrunner
+						["providers"] = {
+							{ "n", 97734 },	-- Zaria Shadowheart
+							{ "n", 98026 },	-- Baric Stormrunner
 						},
 						["sourceQuests"] = {
 							39938,	-- Containing the Demon Within
@@ -362,7 +362,7 @@ _.Zones =
 					q(40547, {	-- To Dalaran, With Love
 						["sourceQuests"] = { 40556 },	-- Jabrul Needs You
 						["requireSkill"] = 755,	-- Jewelcrafting
-						["qg"] = 100521,	-- Jabrul
+						["provider"] = { "n", 100521 },	-- Jabrul
 					}),
 				}),
 				prof(165, {	-- Leatherworking
@@ -373,38 +373,38 @@ _.Zones =
 							recipe(194735),	-- Battlebound Armbands (Rank 1)
 							recipe(194740),	-- Battlebound Grips (Rank 1)
 						},
-						["qg"] = 98964,	-- Celea
+						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40208, {	-- Eye of Azshara: Scales of the Sea
 						["g"] = {
 							i(137904),	-- Recipe: Battlebound Warhelm (Rank 2)
 						},
-						["qg"] = 98964,	-- Celea
+						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40194, {	-- Reclaimed Cargo
 						["g"] = {
 							i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
 							i(137901), 	-- Recipe: Battlebound Girdle (Rank 2)
 						},
-						["qg"] = 98964,	-- Celea
+						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40207, {	-- Scales of the Arcane
 						["g"] = {
 							i(137905),	-- Recipe: Battlebound Grips (Rank 2)
 						},
-						["qg"] = 98964,	-- Celea
+						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40209, {	-- Scales of the Earth
 						["g"] = {
 							i(137903),	-- Recipe: Battlebound Leggings (Rank 2)
 						},
-						["qg"] = 98964,	-- Celea
+						["provider"] = { "n", 98964 },	-- Celea
 					}),
 					q(40327, {	-- Testing the Metal
 						["g"] = {
 							i(137907),	-- Recipe: Battlebound Hauberk (Rank 2)
 						},
-						["qg"] = 99689,	-- Taldranis
+						["provider"] = { "n", 99689 },	-- Taldranis
 					}),
 					q(40210, {	-- Time Well Spent
 						["requireSkill"] = 165,	-- Leatherworking
@@ -416,7 +416,7 @@ _.Zones =
 							40208,	-- Eye of Azshara: Scales of the Sea
 							40209,	-- Scales of the Earth
 						},
-						["qg"] = 98964,	-- Celea
+						["provider"] = { "n", 98964 },	-- Celea
 					}),
 				}),
 				prof(393, {	-- Skinning
@@ -424,7 +424,7 @@ _.Zones =
 						["sourceQuests"] = { 40144 },	-- Glielle
 						["requireSkill"] = 393,	-- Skinning
 						["coord"] = { 47.0, 45.2, 630 },
-						["qg"] = 98791,	-- Glielle
+						["provider"] = { "n", 98791 },	-- Glielle
 						["g"] = {
 							recipe(194165),	-- Skinning Technique: Stormscale (Rank 2)
 						},
@@ -441,12 +441,12 @@ _.Zones =
 					q(38959, {	-- Left Behind
 						["sourceQuests"] = { 38957 },	-- Taking Inspiration
 						["requireSkill"] = 197,	-- Tailoring
-						["qg"] = 93967,	-- Lyndras
+						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
 					q(38960, {	-- Lining Them Up
 						["sourceQuests"] = { 38957 },	-- Taking Inspiration
 						["requireSkill"] = 197,	-- Tailoring
-						["qg"] = 93967,	-- Lyndras
+						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
 				}),
 			}),

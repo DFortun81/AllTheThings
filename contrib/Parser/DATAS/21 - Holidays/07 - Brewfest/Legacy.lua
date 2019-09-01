@@ -31,7 +31,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						},
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 11454, },	-- Seek the Saboteurs
-						["qg"] = 23872,	-- Coren Direbrew
+						["provider"] = { "n", 23872 },	-- Coren Direbrew
 						["u"] = 2,
 						["maps"] = { 242, },	-- Blackrock Depths
 					}),
@@ -39,7 +39,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["groups"] = {
 							un(2, i(34140)),	-- Dark Iron Tankard
 						},
-						["qg"] = 23872,	-- Coren Direbrew
+						["provider"] = { "n", 23872 },	-- Coren Direbrew
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 11454, },	-- Seek the Saboteurs
 						["u"] = 2,								
@@ -48,35 +48,35 @@ _.Holidays = bubbleDown({["u"] = 24},
 					--]]
 					q(11442, {	-- Welcome to Brewfest! (Alliance)
 						
-						["qg"] = 24710,	-- Ipfelkofer Ironkeg
+						["provider"] = { "n", 24710 },	-- Ipfelkofer Ironkeg
 						["maps"] = { 27, },	-- Dun Morogh
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 40,	-- Legacy Quest/Quest Item
 					}),
 					q(11447, {	-- Welcome to Brewfest! (Horde)
 						
-						["qg"] = 24711,	-- Tapper Swindlekeg
+						["provider"] = { "n", 24711 },	-- Tapper Swindlekeg
 						["maps"] = { 1, },	-- Durotar
 						["races"] = HORDE_ONLY,
 						["u"] = 40,	-- Legacy Quest/Quest Item
 					}),
 					q(12318, {	-- Save Brewfest! (Alliance)
 						
-						["qg"] = 27584,	-- Darna Honeybock
+						["provider"] = { "n", 27584 },	-- Darna Honeybock
 						["maps"] = { 27, },	-- Dun Morogh
 						["sourceQuests"] = { 11442, },	-- Welcome to Brewfest! (Alliance)
 						["u"] = 40,	-- Legacy Quest/Quest Item
 					}),
 					q(12318, {	-- Save Brewfest! (Horde)
 						
-						["qg"] = 28329,	-- Slurpo Fizzykeg
+						["provider"] = { "n", 28329 },	-- Slurpo Fizzykeg
 						["maps"] = { 1, },	-- Durotar
 						["sourceQuests"] = { 11447, },	-- Welcome to Brewfest! (Horde)
 						["u"] = 40,	-- Legacy Quest/Quest Item
 					}),
 					--[[
 					q(12062, {	-- Insult Coren Direbrew
-						["qg"] = 26719,	-- Brewfest Spy
+						["provider"] = { "n", 26719 },	-- Brewfest Spy
 						["sourceQuests"] = { 11442, },	-- Save Brewfest!
 						["isDaily"] = true,
 						["u"] = 2,

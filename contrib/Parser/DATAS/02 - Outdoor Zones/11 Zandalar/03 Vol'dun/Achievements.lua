@@ -80,7 +80,7 @@ _.Zones =
 					["g"] = {
 						{	-- Charged Ranishu Antennae [**]
 							["itemID"] = 158910,	-- Charged Ranishu Antennae
-							["qg"] = 135536,	-- Jani
+							["provider"] = { "n", 135536 },	-- Jani
 							["questID"] = 50883,	-- Loot Treasure
 							["sourceQuests"] = {
 								50844,	-- Item Turn-In
@@ -101,7 +101,7 @@ _.Zones =
 								{	-- Communing with Jani
 									["npcID"] = -597,	-- Communing with Jani
 									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["qg"] = 135536,	-- Jani
+									["provider"] = { "n", 135536 },	-- Jani
 									["questID"] = 50884,	-- Item Turn-In
 									["sourceQuests"] = {
 										51145,	-- Curse of Jani [Alliance]
@@ -118,7 +118,7 @@ _.Zones =
 						},
 						{	-- Polished Ringhorn Hoof [**]
 							["itemID"] = 158915,	-- Polished Ringhorn Hoof
-							["qg"] = 135564,	--  Jani
+							["provider"] = { "n", 135564 },	--  Jani
 							["questID"] = 50890,	-- Loot Treasure
 							["sourceQuests"] = {
 								50889,	-- Item Turn-In
@@ -138,7 +138,7 @@ _.Zones =
 								{	-- Communing with Jani
 									["npcID"] = -596,	-- Communing with Jani
 									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["qg"] = 135564,	--  Jani
+									["provider"] = { "n", 135564 },	--  Jani
 									["questID"] = 50889,	-- Item Turn-In
 									["sourceQuests"] = {
 										51145,	-- Curse of Jani [Alliance]
@@ -157,7 +157,7 @@ _.Zones =
 							},
 						},
 						{	-- Saurid Surprise
-							["qg"] = 133859,	-- Jani
+							["provider"] = { "n", 133859 },	-- Jani
 							["questID"] = 50901,	-- Saurid Surprise
 							["sourceQuests"] = {
 								51145,	-- Curse of Jani [Alliance]
@@ -178,7 +178,7 @@ _.Zones =
 						},
 						{	-- Sturdy Redrock Jaw
 							["itemID"] = 158916,	-- Sturdy Redrock Jaw
-							["qg"] = 135572,	-- Jani
+							["provider"] = { "n", 135572 },	-- Jani
 							["questID"] = 50892,	-- Loot Treasure
 							["sourceQuests"] = {
 								50891,	-- Item Turn-In
@@ -194,7 +194,7 @@ _.Zones =
 								{	-- Communing with Jani
 									["npcID"] = -598,	-- Communing with Jani
 									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["qg"] = 135572,	-- Jani
+									["provider"] = { "n", 135572 },	-- Jani
 									["questID"] = 50891,	-- Item Turn-In
 									["sourceQuests"] = {
 										51145,	-- Curse of Jani [Alliance]

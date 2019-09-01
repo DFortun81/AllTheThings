@@ -70,7 +70,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(34672, {	-- The Rise of Aku'mai
-					["qg"] = 75606,	-- Sentinel Aluwyn
+					["provider"] = { "n", 75606 },	-- Sentinel Aluwyn
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65986),	-- Shield Against the Evil Presence
@@ -81,7 +81,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(34673, {	-- The Rise of Aku'mai
-					["qg"] = 74409,	-- Zeya
+					["provider"] = { "n", 74409 },	-- Zeya
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(66030),	-- Plates of Aku'mai

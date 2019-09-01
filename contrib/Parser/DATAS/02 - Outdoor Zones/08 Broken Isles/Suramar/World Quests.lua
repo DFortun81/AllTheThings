@@ -405,9 +405,9 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(43943, {	-- Withered Army Training
-					["qgs"] = {
-						97140,	-- First Arcanist Thalyssra (Frail)
-						115736,	-- First Arcanist Thalyssra (Kinda Hot)
+					["providers"] = {
+						{ "n", 97140 },	-- First Arcanist Thalyssra (Frail)
+						{ "n", 115736 },	-- First Arcanist Thalyssra (Kinda Hot)
 					},
 					["maps"] = {
 						692,	-- Falanaar Arcway

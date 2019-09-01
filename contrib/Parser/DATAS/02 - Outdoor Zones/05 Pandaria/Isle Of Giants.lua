@@ -68,26 +68,26 @@ _.Zones =
 						["g"] = {
 							q(32613, {	-- Giant Dinosaur Bone
 								["repeatable"] = true,
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
 							}),
 							q(32614, {	-- More Giant Dinosaur Bones
 								["repeatable"] = true,
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
 							}),
 							q(32615, {	-- Many More Giant Dinosaur Bones
 								["repeatable"] = true,
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
 							}),
 							q(32616, {	-- A Large Pile of Dinosaur Bones
 								["repeatable"] = true,
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
 								["g"] = {
 									i(94190),	-- Spectral Porcupette (PET!)
 								},
 							}),
 							q(32617, {	-- A Mountian of Dinosaur Bones
 								["repeatable"] = true,
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
 								["g"] = {
 									i(94290),	-- Bone-White Primal Raptor (MOUNT!)
 								},

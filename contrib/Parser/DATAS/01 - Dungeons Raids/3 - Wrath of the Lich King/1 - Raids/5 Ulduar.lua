@@ -148,13 +148,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- The Celestial Planetarium
 						["questID"] = 13607,	-- The Celestial Planetarium
 						["sourceQuest"] = 13604,	-- Archivum Data Disc
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["u"] = 40,
 					},
 					{	-- Freya's Sigil
 						["questID"] = 13606,	-- Freya's Sigil
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							32906,	-- Freya
 						},
@@ -169,7 +169,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- Hodir's Sigil
 						["questID"] = 13609,	-- Hodir's Sigil
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							32845,	-- Hodir
 						},
@@ -184,7 +184,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- Mimiron's Sigil
 						["questID"] = 13611,	-- Mimiron's Sigil
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							33350,	-- Mimiron
 						},
@@ -199,7 +199,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- Thorim's Sigil
 						["questID"] = 13610,	-- Thorim's Sigil
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							32865,	-- Thorim
 						},
@@ -219,7 +219,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							13611,	-- Mimiron's Sigil
 							13610,	-- Thorim's Sigil
 						},
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							32871,	-- Algalon the Observer
 						},
@@ -236,12 +236,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- Heroic: The Celestial Planetarium
 						["questID"] = 13816,	-- Heroic: The Celestial Planetarium
 						["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 					},
 					{	-- Heroic: Freya's Sigil
 						["questID"] = 13821,	-- Heroic: Freya's Sigil
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							32906,	-- Freya
 						},
@@ -255,7 +255,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- Heroic: Hodir's Sigil
 						["questID"] = 13822,	-- Heroic: Hodir's Sigil
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							32845,	-- Hodir
 						},
@@ -269,7 +269,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- Heroic: Mimiron's Sigil
 						["questID"] = 13824,	-- Heroic: Mimiron's Sigil
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							33350,	-- Mimiron
 						},
@@ -283,7 +283,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- Heroic: Thorim's Sigil
 						["questID"] = 13823,	-- Heroic: Thorim's Sigil
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							32865,	-- Thorim
 						},
@@ -302,7 +302,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							13824,	-- Heroic: Mimiron's Sigil
 							13823,	-- Heroic: Thorim's Sigil
 						},
-						["qg"] = 33957,	-- Prospector Loren
+						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = {
 							32871,	-- Algalon the Observer
 						},
@@ -622,7 +622,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 					i(46052, {	-- Reply-Code Alpha
 						q(13631, {	-- All Is Well That Ends Well
-							["qg"] = 16128,	-- Rhonin <Leader of the Kirin Tor>
+							["provider"] = { "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
 							["groups"] = {
 								i(46320),	-- Drape of the Skyherald
 								i(46321),	-- Sunglimmer Drape
@@ -633,7 +633,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					i(46053, {	-- Reply-Code Alpha
 						q(13819, {	-- Heroic: All Is Well That Ends Well
-							["qg"] = 16128,	-- Rhonin <Leader of the Kirin Tor>
+							["provider"] = { "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
 							["groups"] = {
 								i(45588),	-- Drape of the Skyborn
 								i(45618),	-- Sunglimmer Cloak

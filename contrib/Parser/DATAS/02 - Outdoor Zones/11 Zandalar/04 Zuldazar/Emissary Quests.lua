@@ -9,7 +9,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,	-- Attaching this here so it doesn't interfere with the quests that use the same ID as the alliance.
 				["g"] = {
 					q(54451, {	-- Baubles from the Seekers
-						["qg"] = 134345,	-- Collector Kojo
+						["provider"] = { "n", 134345 },	-- Collector Kojo
 						["lvl"] = 120,
 						["coord"] = { 71.51, 30.35, 862 },
 						["repeatable"] = true,
@@ -23,7 +23,7 @@ _.Zones =
 						},
 					}),
 					q(50604, {	-- Tortollan Seekers [Horde]
-						["qg"] = 134345,	-- Collector Kojo
+						["provider"] = { "n", 134345 },	-- Collector Kojo
 						["lvl"] = 120,
 						["coord"] = { 71.51, 30.35, 862 },
 						["isDaily"] = true,

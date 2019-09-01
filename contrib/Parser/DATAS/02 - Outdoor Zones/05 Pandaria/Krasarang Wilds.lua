@@ -140,16 +140,19 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(32143, {	-- A Kind of Magic
-						["qg"] = 67976,	-- Tinkmaster Overspark
+						["provider"] = { "n", 67976 },	-- Tinkmaster Overspark
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32247, {	-- A King Among Men
-						["qgs"] = { 68392, 68399 },	-- King Varian Wrynn, 7th Legion Champion
+						["providers"] = {
+							{ "n", 68392 },	-- King Varian Wrynn
+							{ "n", 68399 },	-- 7th Legion Champion
+						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30695, {	-- Ahead on the Way
-						["qg"] = 59138,	-- Koro Mistwalker
+						["provider"] = { "n", 59138 },	-- Koro Mistwalker
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
 							30669,	-- The Murksweats
@@ -167,7 +170,7 @@ _.Zones =
 						},
 					}),
 					q(32127, {	-- All Dead, All Dead
-						["qg"] = 67767,	-- Brolic
+						["provider"] = { "n", 67767 },	-- Brolic
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -180,22 +183,22 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(32452, {	-- And Then There Were Goblins
-						["qg"] = 68908,	-- Amber Kearnen
+						["provider"] = { "n", 68908 },	-- Amber Kearnen
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32315, {	-- Anduin's Plea
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32128, {	-- Another One Bites the Dust
-						["qg"] = 67880,	-- Blood Guard Gro'tash
+						["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 32235 },	-- Flash! Aaaaaahhhh!
 						["isDaily"] = true,
 					}),
 					q(30089, {	-- Apply Directly to the Forehead
-						["qg"] = 56115,	-- Ken-Ken
+						["provider"] = { "n", 56115 },	-- Ken-Ken
 						["sourceQuests"] = { 30088 },	-- Why So Serious?
 						["g"] = {
 							i(81467),	-- Nayeli Leggings
@@ -210,16 +213,16 @@ _.Zones =
 						},
 					}),
 					q(30613, {	-- Armored Carp
-						["qg"] = 60135,	-- Trawler Yotimo
+						["provider"] = { "n", 60135 },	-- Trawler Yotimo
 						["isDaily"] = true,
 					}),
 					q(32148, {	-- Attack! Move!
-						["qg"] = 67631,	-- Marshal Troteman
+						["provider"] = { "n", 67631 },	-- Marshal Troteman
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30672, {	-- Balance
-						["qg"] = 60139,	-- Wise Ana Wu
+						["provider"] = { "n", 60139 },	-- Wise Ana Wu
 						["sourceQuests"] = {
 							30691,	-- Misery
 							30671,	-- Wisdom Has A Price
@@ -299,72 +302,72 @@ _.Zones =
 						},
 					}),
 					q(32186, {	-- Beastmaster's Quarry: The Crab
-						["qg"] = 67508,	-- Colossal Viseclaw
+						["provider"] = { "n", 67508 },	-- Colossal Viseclaw
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32183, {	-- Beastmaster's Quarry: The Crab
-						["qg"] = 67508,	-- Colossal Viseclaw
+						["provider"] = { "n", 67508 },	-- Colossal Viseclaw
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32181, {	-- Beastmaster's Quarry: The Crane
-						["qg"] = 67436,	-- Ancient Bloodcrown Crane
+						["provider"] = { "n", 67436 },	-- Ancient Bloodcrown Crane
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32184, {	-- Beastmaster's Quarry: The Crane
-						["qg"] = 67503,	-- Ancient Bloodcrown Crane
+						["provider"] = { "n", 67503 },	-- Ancient Bloodcrown Crane
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32182, {	-- Beastmaster's Quarry: The Tiger
-						["qg"] = 67498,	-- Krasari Elder
+						["provider"] = { "n", 67498 },	-- Krasari Elder
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32185, {	-- Beastmaster's Quarry: The Tiger
-						["qg"] = 67498,	-- Krasari Elder
+						["provider"] = { "n", 67498 },	-- Krasari Elder
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32214, {	-- Bilgewater Infiltrators
-						["qg"] = 67608,	-- Rivett Clutchpop
+						["provider"] = { "n", 67608 },	-- Rivett Clutchpop
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30124, {	-- Blind Them!
-						["qg"] = 58114,	-- Kor Bloodtust
+						["provider"] = { "n", 58114 },	-- Kor Bloodtust
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30179 },	-- Poisoned!
 					}),
 					q(30384, {	-- Blind Them!
-						["qg"] = 58735,	-- Lyalia
+						["provider"] = { "n", 58735 },	-- Lyalia
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30270, {	-- Blinding the Riverblades
-						["qg"] = 59138,	-- Koro Mistwalker
+						["provider"] = { "n", 59138 },	-- Koro Mistwalker
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
 					}),
 					q(30084, {	-- Borderlands
-						["qg"] = 57744,	-- Mei Barrelbottom
+						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["sourceQuests"] = { 30091 },	-- Tears of Pandaria
 					}),
 					q(32401, {	-- Breath of Darkest Shadow
-						["qg"] = 68939,	-- Anduin Wrynn
+						["provider"] = { "n", 68939 },	-- Anduin Wrynn
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 32400 },	-- The Bell Speaks
 					}),
 					q(30754, {	-- Bright Bait
-						["qg"] = 60674,	-- John "Big Hook" Marsock
+						["provider"] = { "n", 60674 },	-- John "Big Hook" Marsock
 						["isDaily"] = true,
 					}),
 					q(30668, {	-- Build Your Own Raft
-						["qg"] = 60173,	-- Jay Cloudfall
+						["provider"] = { "n", 60173 },	-- Jay Cloudfall
 						["sourceQuests"] = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
 					}),
 					i(80827, {	-- Confusing Treasure Map
-						["qg"] = 60299,	-- Unga Fish-Getter
+						["provider"] = { "n", 60299 },	-- Unga Fish-Getter
 						["g"] = {
 							q(30675, {	-- Buried Hozen Treasure
 								["g"] = {
@@ -374,30 +377,30 @@ _.Zones =
 						},
 					}),
 					q(32154, {	-- Burn Out!
-						["qg"] = 68166,	-- Sully "The Pickle" McLeary
+						["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(31378, {	-- Challenge At The Temple of the Red Crane
-						["qg"] = 64032,	-- Sage Whiteheart
+						["provider"] = { "n", 64032 },	-- Sage Whiteheart
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(31379, {	-- Challenge At The Temple of the Red Crane
-						["qg"] = 64001,	-- Sage Lotusbloom
+						["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30740, {	-- Champion of Chi-Ji
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30716, {	-- Chasing Hope
-						["qg"] = 60528,	-- Kuo-Na Quillpaw
+						["provider"] = { "n", 60528 },	-- Kuo-Na Quillpaw
 						["isDaily"] = true,
 					}),
 					q(30082, {	-- Cheer Up, Yi-Mo
-						["qg"] = 58376,	-- Yi-Mo Longbrow
+						["provider"] = { "n", 58376 },	-- Yi-Mo Longbrow
 						["sourceQuests"] = { 30080 },	-- Finding Yi-Mo
 						["g"] = {
 							i(81440),	-- Nayeli Hood
@@ -412,10 +415,10 @@ _.Zones =
 						},
 					}),
 					q(30352, {	-- Crane Mastery
-						["qg"] = 58779,	-- Daggle Bombstrider
+						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 					}),
 					q(31262, {	-- Crane Mastery: Needlebeak
-						["qg"] = 58779,	-- Daggle Bombstrider
+						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 						["sourceQuests"] = { 30352 },	-- Crane Mastery
 						["g"] = {
 							i(88052),	-- Nayeli Waistband
@@ -430,52 +433,52 @@ _.Zones =
 						},
 					}),
 					q(32414, {	-- Darnassus Attacked?
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32123, {	-- Death on Two Legs
-						["qg"] = 67618,	-- Shokia
+						["provider"] = { "n", 67618 },	-- Shokia
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true
 					}),
 					q(30730, {	-- Dextrous Izissha
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(32446, {	-- Dis-Assembly Required
-						["qg"] = 68166,	-- Sully "The Pickle" McLeary
+						["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32108, {	-- Domination Point
-						["qg"] = 68072,	-- Kor'kron Bodyguard
+						["provider"] = { "n", 68072 },	-- Kor'kron Bodyguard
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 32250 },	-- The Might of the Warchief
 					}),
 					q(32145, {	-- Don't Lose Your Head
-						["qg"] = 67528,	-- Sully "The Pickle" McLeary
+						["provider"] = { "n", 67528 },	-- Sully "The Pickle" McLeary
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["sourceQuests"] = { 32143 },	-- A Kind of Magic
 					}),
 					q(32351, {	-- Echoes of Thunder
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					}),
 					q(30725, {	-- Ellia Ravenmane
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30739, {	-- Ellia Ravenmane: Redemption
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30727, {	-- Ellia Ravenmane: Rematch
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30732, {	-- Ellia Ravenmane: Revenge
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(32168, {	-- End of an Elder
@@ -487,34 +490,41 @@ _.Zones =
 						["isDaily"] = true,	-- where is this from?
 					}),
 					q(31486, {	-- Everything I Know About Cooking
-						["qgs"] = { 56707, 62872, 63013 },	-- Chin, Cranfur the Noodler, Sway Dish Chef
+						["providers"] = {
+							{ "n", 56707 },	-- Chin
+							{ "n", 62872 },	-- Cranfur the Noodler
+							{ "n", 63013 },	-- Sway Dish Chef
+						},
 					}),
 					q(32347, {	-- Eviction Notice
-						["qg"] = 68275,	-- Hilda Hornswaggle
+						["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30728, {	-- Fat Long-Fat
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30737, {	-- Fat Long-Fat: Rematch
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(36608, {	-- Finding Nat Pagle
-						["qgs"] = { 79917, 85708 },	-- Rak'jin, Segumi
+						["providers"] = {
+							{ "n", 79917 },	-- Rak'jin
+							{ "n", 85708 },	-- Segumi
+						},
 						["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
 					}),
 					q(30080, {	-- Finding Yi-Mo
-						["qg"] = 57744,	-- Mei Barrelbottom
+						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					}),
 					q(30588, {	-- Fishing for a Bruising
-						["qg"] = 59586,	-- Angler Shen
+						["provider"] = { "n", 59586 },	-- Angler Shen
 						["isDaily"] = true,
 					}),
 					q(32235, {	-- Flash! Aaaaaahhhh!
-						["qg"] = 67880,	-- Blood Guard Gro'tash
+						["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -524,7 +534,7 @@ _.Zones =
 						["description"] = "Found while fishing in any inland body of water on Pandaria",
 					}),
 					q(30174, {	-- For Family
-						["qg"] = 58607,	-- Sunwalker Dezco
+						["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30164 },	-- The Stoneplow Convoy
 						["g"] = {
@@ -540,62 +550,62 @@ _.Zones =
 						},
 					}),
 					q(30163, {	-- For the Tribe
-						["qg"] = 58114,	-- Kor Bloodtusk
+						["provider"] = { "n", 58114 },	-- Kor Bloodtusk
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 					}),
 					q(32329, {	-- Get My Results!
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["coords"] = { 10.4, 53.8, 418 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(30717, {	-- Gifts of the Great Crane
-						["qg"] = 60529,	-- Yan Quillpaw
+						["provider"] = { "n", 60529 },	-- Yan Quillpaw
 						["isDaily"] = true,
 					}),
 					q(30465, {	-- Going on the Offensive
-						["qg"] = 58735,	-- Lyalia
+						["provider"] = { "n", 58735 },	-- Lyalia
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30363, {	-- Going on the Offensive
-						["qg"] = 58735,	-- Lyalia
+						["provider"] = { "n", 58735 },	-- Lyalia
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30464, {	-- Going West
-						["qg"] = 58113,	-- Sunwalker Dezco
+						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30131 },	-- Life
 					}),
 					q(30132, {	-- Going West
-						["qg"] = 58113,	-- Sunwalker Dezco
+						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30131 },	-- Life
 					}),
 					q(32130, {	-- Good Luck, Have Fun
-						["qg"] = 67402,	-- Zazzix "Toasty" Sparkrocket
+						["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(31954, {	-- Grand Master Mo'ruk
-						["qg"] = 66733,	-- Mo'ruk
+						["provider"] = { "n", 66733 },	-- Mo'ruk
 						["isDaily"] = true,
 					}),
 					q(32146, {	-- Hammer to Fall
-						["qg"] = 67386,	-- Sky Admiral Rogers
+						["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32134, {	-- Hard Counter
-						["qg"] = 67402,	-- Zazzix "Toasty" Sparkrocket
+						["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32382, {	-- He's In Deep
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30130, {	-- Herbal Remedies
-						["qg"] = 58113,	-- Sunwalker Dezco
+						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							30123,	-- Skitterer Skew
@@ -603,35 +613,35 @@ _.Zones =
 						},
 					}),
 					q(32135, {	-- Hero Killer
-						["qg"] = 67628,	-- Shademaster Kiryn
+						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 32450 },	-- The Time is Now!
 						["isDaily"] = true,
 					}),
 					q(32153, {	-- Hero Killer
-						["qg"] = 67631,	-- Marshal Troteman
+						["provider"] = { "n", 67631 },	-- Marshal Troteman
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30376, {	-- Hope Springs Eternal
-						["qg"] = 59719,	-- Chi-Ji
+						["provider"] = { "n", 59719 },	-- Chi-Ji
 						["sourceQuests"] = { 30273 },	-- In the House of the Red Crane
 					}),
 					q(30734, {	-- Huck Wheelbarrow
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30658, {	-- Huff & Puff
-						["qg"] = 60135,	-- Trawler Yotimo
+						["provider"] = { "n", 60135 },	-- Trawler Yotimo
 						["isDaily"] = true,
 					}),
 					q(30348, {	-- Immortality?
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
+						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 30347 },	-- The Pools of Youth
 					}),
 					q(30273, {	-- In the House of the Red Crane
-						["qg"] = 59608,	-- Anduin Wrynn
+						["provider"] = { "n", 59608 },	-- Anduin Wrynn
 						["sourceQuests"] = { 30271, 30272, 30695 },	-- Sha Can Awe, Striking the Rain, Ahead of the Way
 						["g"] = {
 							i(81493),	-- Dojani Girdle
@@ -646,79 +656,79 @@ _.Zones =
 						},
 					}),
 					q(32326, {	-- Insertion
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					}),
 					q(30133, {	-- Into the Wilds
-						["qg"] = 57744,	-- Mei Barrelbottom
+						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30090 },	-- Zhu's Despair
 					}),
 					q(30461, {	-- Into the Wilds
-						["qg"] = 57744,	-- Mei Barrelbottom
+						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["races"] = HORDE_ONLY,
 					}),
 					q(30178, {	-- Into the Wilds
-						["qg"] = 57744,	-- Mei Barrelbottom
+						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30462, {	-- Into the Wilds
-						["qg"] = 57744,	-- Mei Barrelbottom
+						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32344, {	-- It Is A Mystery
-						["qg"] = 68274,	-- Kaelis Sunsoar
+						["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32119, {	-- It Is A Mystery
-						["qg"] = 68275,	-- Hilda Hornswaggle
+						["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32156, {	-- It's Only Right
-						["qg"] = 67444,	-- Mishka
+						["provider"] = { "n", 67444 },	-- Mishka
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30586, {	-- Jagged Abalone
-						["qg"] = 59584,	-- Fisherman Haito
+						["provider"] = { "n", 59584 },	-- Fisherman Haito
 						["isDaily"] = true,
 					}),
 					q(30729, {	-- Julia Bates
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30753, {	-- Jumping the Shark
-						["qg"] = 60674,	-- John "Big Hook" Marsock
+						["provider"] = { "n", 60674 },	-- John "Big Hook" Marsock
 						["isDaily"] = true,
 					}),
 					q(29875, {	-- Kang Bramblestaff
-						["qg"] = 56110,	-- Xiao
+						["provider"] = { "n", 56110 },	-- Xiao
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,	-- Hidden once you finish Valley of the Four Winds Story Line
 					}),
 					q(29874, {	-- Kang Bramblestaff
-						["qg"] = 56110,	-- Xiao
+						["provider"] = { "n", 56110 },	-- Xiao
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- Hidden once you finish Valley of the Four Winds Story Line
 					}),
 					q(32348, {	-- Kick 'em While They're Down
-						["qg"] = 68274,	-- Kaelis Sunsoar
+						["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30731, {	-- Kuo-Na Quillpaw
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(32120, {	-- Legacy of Ogudei
-						["qg"] = 68274,	-- Kaelis Sunsoar
+						["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30131, {	-- Life
-						["qg"] = 58113,	-- Sunwalker Dezco
+						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							30128,	-- The Pools of Youth
@@ -726,31 +736,31 @@ _.Zones =
 						},
 					}),
 					q(30678, {	-- Like Bombing Fish In A Barrel
-						["qg"] = 60136,	-- Fiznix
+						["provider"] = { "n", 60136 },	-- Fiznix
 						["isDaily"] = true,
 					}),
 					q(32109, {	-- Lion's Landing
-						["qg"] = 68399,	-- 7th Legion Champion
+						["provider"] = { "n", 68399 },	-- 7th Legion Champion
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 32247 },	-- A King Among Men
 					}),
 					q(30351, {	-- Lotus Tea
-						["qg"] = 56114,	-- Kang Bramblestaff
+						["provider"] = { "n", 56114 },	-- Kang Bramblestaff
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30081, {	-- Materia Medica
-						["qg"] = 56115,	-- Ken-ken
+						["provider"] = { "n", 56115 },	-- Ken-ken
 						["sourceQuests"] = {
 							30079,  -- What's Eating Zhu's Watch?
 							30082,	-- Cheer Up, Yi-Mo
 						},
 					}),
 					q(32249, {	-- Meet the Scout
-						["qg"] = 64566,	-- Sunwalker Dezco
+						["provider"] = { "n", 64566 },	-- Sunwalker Dezco
 						["races"] = HORDE_ONLY,
 					}),
 					q(32246, {	-- Meet the Scout
-						["qg"] = 64610,	-- Lyalia
+						["provider"] = { "n", 64610 },	-- Lyalia
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(86545, {
@@ -761,51 +771,51 @@ _.Zones =
 						}),
 					}),
 					q(30735, {	-- Mindel Sunspeaker
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30726, {	-- Minh Do-Tan
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30691, {	-- Misery
-						["qg"] = 60139,	-- Wise Ana Wu
+						["provider"] = { "n", 60139 },	-- Wise Ana Wu
 						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
 					}),
 					q(32197, {	-- Mystery Meatloaf
-						["qg"] = 67562,	-- Duke
+						["provider"] = { "n", 67562 },	-- Duke
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30354, {	-- No Sister Left Behind
-						["qg"] = 58821,	-- Lyalia
+						["provider"] = { "n", 58821 },	-- Lyalia
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
 					}),
 					q(32122, {	-- Ogudei's Lieutenants
-						["qg"] = 68275,	-- Hilda Hornswaggle
+						["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32343, {	-- Ogudei's Lieutenants
-						["qg"] = 68274,	-- Kaelis Sunsoar
+						["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32346, {	-- Oi Ain't Afraid o' No Ghosts!
-						["qg"] = 68275,	-- Hilda Hornswaggle
+						["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30667, {	-- Particular Plumage
-						["qg"] = 60182,	-- Tony Tuna
+						["provider"] = { "n", 60182 },	-- Tony Tuna
 					}),
 					q(30763, {	-- Piranha!
-						["qg"] = 60675,	-- Fo Fook
+						["provider"] = { "n", 60675 },	-- Fo Fook
 						["isDaily"] = true,
 					}),
 					q(30179, {	-- Poisoned!
-						["qg"] = 58160,	-- Chizen Dawnchaser
+						["provider"] = { "n", 58160 },	-- Chizen Dawnchaser
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							30090,	-- Zhu's Despair
@@ -820,17 +830,17 @@ _.Zones =
 						},
 					}),
 					q(32237, {	-- Precious Resource
-						["qg"] = 67553,	-- Bixy Buzzsaw
+						["provider"] = { "n", 67553 },	-- Bixy Buzzsaw
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32116, {	-- Priorities, People!
-						["qg"] = 67631,	-- Marshal Troteman
+						["provider"] = { "n", 67631 },	-- Marshal Troteman
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30353, {	-- Profit Mastery
-						["qg"] = 58779,	-- Daggle Bombstrider
+						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 						["g"] = {
 							i(81494),	-- Nayeli Gloves
 							i(81495),	-- Mortbreath Gloves
@@ -844,7 +854,7 @@ _.Zones =
 						},
 					}),
 					q(31260, {	-- Profit Mastery: Chasheen
-						["qg"] = 58779,	-- Daggle Bombstrider
+						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 						["sourceQuests"] = { 30353 },	-- Profit Mastery
 					}),
 					q(30169, {	-- Raid Leader Slovan
@@ -853,7 +863,7 @@ _.Zones =
 						},
 					}),
 					q(30230, {	-- Re-Reclaim
-						["qg"] = 56112,	-- Kang Bramblestaff
+						["provider"] = { "n", 56112 },	-- Kang Bramblestaff
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 						["g"] = {
@@ -869,7 +879,7 @@ _.Zones =
 						},
 					}),
 					q(30355, {	-- Re-Reclaim
-						["qg"] = 56114,	-- Kang Bramblestaff
+						["provider"] = { "n", 56114 },	-- Kang Bramblestaff
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(81503),	-- Nayeli Cuffs
@@ -884,32 +894,32 @@ _.Zones =
 						},
 					}),
 					q(32149, {	-- Resource Gathering
-						["qg"] = 67630,	-- Mishka
+						["provider"] = { "n", 67630 },	-- Mishka
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32256, {	-- Rise Of An Empire
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					}),
 					q(32137, {	-- Runnin' On Empty
-						["qg"] = 67542,	-- Grizzle Gearslip
+						["provider"] = { "n", 67542 },	-- Grizzle Gearslip
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30698, {	-- Scavenger Hunt
-						["qg"] = 60136,	-- Fiznix
+						["provider"] = { "n", 60136 },	-- Fiznix
 						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					q(30121, {	-- Search Party
-						["qg"] = 58113,	-- Sunwalker Dezco
+						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["description"] = "Not available if quest \"Poisoned!\" is in your quest or or already completed.",
 					}),
 					q(30083, {	-- Securing the Province
-						["qg"] = 57744,	-- Mei Barrelbottom
+						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["sourceQuests"] = { 30091 },	-- Tears of Pandaria
 						["g"] = {
 							i(81512),	-- Sha-Haunted Locket
@@ -920,22 +930,26 @@ _.Zones =
 						},
 					}),
 					q(32451, {	-- Send A Message
-						["qg"] = 68908,	-- Amber Kearnen
+						["provider"] = { "n", 68908 },	-- Amber Kearnen
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32133, {	-- Sentry Wards
-						["qg"] = 67628,	-- Shademaster Kiryn
+						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30356, {	-- Sever Their Supply Line
-						["qg"] = 58821,	-- Lyalia
+						["provider"] = { "n", 58821 },	-- Lyalia
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offense (both versions)
 					}),
 					q(30271, {	-- Sha Can Awe
-						["qgs"] = { 59188, 59189, 59608 } ,	-- 3 phased versions of Anduin Wrynn
+						["providers"] = {
+							{ "n", 59188 },	-- Anduin Wrynn
+							{ "n", 59189 },	-- Anduin Wrynn
+							{ "n", 59608 },	-- Anduin Wrynn
+						},
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
 							30669,	-- The Murksweats
@@ -943,32 +957,32 @@ _.Zones =
 						},
 					}),
 					q(32115, {	-- Shackles of the Past
-						["qg"] = 68275,	-- Hilda Hornswaggle
+						["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30584, {	-- Shocking!
-						["qg"] = 59584,	-- Fisherman Haito
+						["provider"] = { "n", 59584 },	-- Fisherman Haito
 						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					q(32152, {	-- Siege Damage
-						["qg"] = 67631,	-- Marshal Troteman
+						["provider"] = { "n", 67631 },	-- Marshal Troteman
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30123, {	-- Skitterer Stew
-						["qg"] = 56112,	-- Kang Bramblestaff
+						["provider"] = { "n", 56112 },	-- Kang Bramblestaff
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30179 },	-- Poisoned!
 					}),
 					q(30700, {	-- Snapclaw
-						["qg"] = 59586,	-- Angler Shen
+						["provider"] = { "n", 59586 },	-- Angler Shen
 						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					q(32284, {	-- Someone You Should See
-						["qg"] = 67865,	-- Messenger Grummle
+						["provider"] = { "n", 67865 },	-- Messenger Grummle
 						["races"] = HORDE_ONLY,
 					}),
 					i(86544, {	-- Spinefish Alpha
@@ -980,11 +994,11 @@ _.Zones =
 						},
 					}),
 					q(30350, {	-- Squirmy Delight
-						["qg"] = 56114,	-- Kang Bramblestaff
+						["provider"] = { "n", 56114 },	-- Kang Bramblestaff
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30272, {	-- Striking the Rain
-						["qg"] = 59138,	-- Koro Mistwalker
+						["provider"] = { "n", 59138 },	-- Koro Mistwalker
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
 							30669,	-- The Murksweats
@@ -992,38 +1006,38 @@ _.Zones =
 						},
 					}),
 					q(30718, {	-- Students of Chi-Ji
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30666, {	-- Sudden, Unexpected Crocolisk Aggression
-						["qg"] = 60173,	-- Jay Cloudfall
+						["provider"] = { "n", 60173 },	-- Jay Cloudfall
 					}),
 					q(32150, {	-- Supply Block
-						["qg"] = 67630,	-- Mishka
+						["provider"] = { "n", 67630 },	-- Mishka
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32118, {	-- Taking Advantage
-						["qg"] = 67847,	-- Belloc Brightblade
+						["provider"] = { "n", 67847 },	-- Belloc Brightblade
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32126, {	-- Tear It Up
-						["qg"] = 67767,	-- Brolic
+						["provider"] = { "n", 67767 },	-- Brolic
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30091, {	-- Tears of Pandaria
-						["qg"] = 57744,	-- Mei Barrelbottom
+						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["sourceQuests"] = { 30082 },	-- Cheer Up, Yi-Mo
 					}),
 					q(31370, {	-- The Anglers
-						["qg"] = 64010,	-- Master Angler Karu
+						["provider"] = { "n", 64010 },	-- Master Angler Karu
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(31369, {	-- The Anglers
-						["qg"] = 64033,	-- Master Angler Karu
+						["provider"] = { "n", 64033 },	-- Master Angler Karu
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
@@ -1031,80 +1045,80 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32398, {	-- The Bell Speaks
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					}),
 					q(32400, {	-- The Bell Speaks
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32380, {	-- The Best Around
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32332, {	-- The First Riddle: Mercy
-						["qg"] = 68003,	-- The Monkey King
+						["provider"] = { "n", 68003 },	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36882, {	-- The Great Angler Returns
-						["qg"] = 63721,	-- Nat Pagle
+						["provider"] = { "n", 63721 },	-- Nat Pagle
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 356,
 					}),
 					q(36609, {	-- The Great Angler Returns
-						["qg"] = 63721,	-- Nat Pagle
+						["provider"] = { "n", 63721 },	-- Nat Pagle
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 					}),
 					q(30229, {	-- The Greater Danger
-						["qg"] = 58114,	-- Kor Bloodtusk
+						["provider"] = { "n", 58114 },	-- Kor Bloodtusk
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 					}),
 					q(32335, {	-- The Greatest Prank
-						["qg"] = 68538,	-- The Monkey King
+						["provider"] = { "n", 68538 },	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 32332, 32333, 32334 },	-- The First Riddle: Mercy, The Second Riddle: Fellowship, The Third Riddle: :Strength
 					}),
 					q(32336, {	-- The Handle
-						["qg"] = 68538,	-- The Monkey King
+						["provider"] = { "n", 68538 },	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32355, {	-- The Harmonic Mallet
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32338, {	-- The Harmonic Ointment
-						["qg"] = 68538,	-- The Monkey King
+						["provider"] = { "n", 68538 },	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32337, {	-- The Head
-						["qg"] = 68538,	-- The Monkey King
+						["provider"] = { "n", 68538 },	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32331, {	-- The Kirin Tor
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32363, {	-- The Kun-Lai Expedition
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					}),
 					q(32370, {	-- The Kun-Lai Expedition
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30359, {	-- The Lord Reclaimer
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
+						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 30354, 30356 },	--  No Sister Left Behind, Sever Their Supply Line
 					}),
 					q(30669, {	-- The Lorewalker on the Lake
-						["qg"] = 60173,	-- Jay Cloudfall
+						["provider"] = { "n", 60173 },	-- Jay Cloudfall
 						["sourceQuests"] = { 30668 } -- Build Your Own Raft
 					}),
 					q(30344, {	-- The Lost Dynasty
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
+						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(81522),	-- Ring of the Pools of Youth
@@ -1115,7 +1129,7 @@ _.Zones =
 						},
 					}),
 					q(30175, {	-- The Mantid
-						["qg"] = 58630,	-- Ambassador Han
+						["provider"] = { "n", 58630 },	-- Ambassador Han
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							30230,	-- Re-Reclaim
@@ -1135,7 +1149,7 @@ _.Zones =
 						},
 					}),
 					q(30361, {	-- The Mantid
-						["qg"] = 58630,	-- Ambassador Han
+						["provider"] = { "n", 58630 },	-- Ambassador Han
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(81458),	-- Nayeli Robe
@@ -1150,11 +1164,14 @@ _.Zones =
 						},
 					}),
 					q(32250, {	-- The Might of the Warchief
-						["qgs"] = { 67867, 68072 },	-- Garrosh Hellscream, Kor'kron Bodyguard
+						["providers"] = {
+							{ "n", 67867 },	-- Garrosh Hellscream
+							{ "n", 68072 },	-- Kor'kron Bodyguard
+						},
 						["races"] = HORDE_ONLY,
 					}),
 					q(30129, {	-- The Mogu Agenda
-						["qg"] = 56112,	-- Kang Bramblestaff
+						["provider"] = { "n", 56112 },	-- Kang Bramblestaff
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							30123,	-- Skitterer Skew
@@ -1162,12 +1179,12 @@ _.Zones =
 						},
 					}),
 					q(32321, {	-- The Monkey King
-						["qg"] = 68004,	-- Anduin Wrynn
+						["provider"] = { "n", 68004 },	-- Anduin Wrynn
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 32355 },	-- The Harmonic Mallet
 					}),
 					q(30268, {	-- The Murksweats
-						["qg"] = 58609,	-- Anduin Wrynn
+						["provider"] = { "n", 58609 },	-- Anduin Wrynn
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
 						["g"] = {
 							i(81517),	-- Murksweat Ward
@@ -1178,13 +1195,13 @@ _.Zones =
 						},
 					}),
 					q(32157, {	-- The Only Good Goblin...
-						["qg"] = 67386,	-- Sky Admiral Rogers
+						["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 32452 },	-- And Then There Were Goblins
 						["isDaily"] = true,
 					}),
 					q(30128, {	-- The Pools of Youth
-						["qg"] = 58206,	-- Kang Bramblestaff
+						["provider"] = { "n", 58206 },	-- Kang Bramblestaff
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30129 },	-- The Mogu Agenda
 						["g"] = {
@@ -1196,7 +1213,7 @@ _.Zones =
 						},
 					}),
 					q(30347, {	-- The Pools of Youth
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
+						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 30346 },	-- Where are the Pools
 						["g"] = {
@@ -1208,34 +1225,34 @@ _.Zones =
 						},
 					}),
 					q(31254, {	-- The Road to Kun-Lai
-						["qg"] = 63778,	-- Messenger Grummle
+						["provider"] = { "n", 63778 },	-- Messenger Grummle
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
 					}),
 					q(31255, {	-- The Road to Kun-Lai
-						["qg"] = 63778,	-- Messenger Grummle
+						["provider"] = { "n", 63778 },	-- Messenger Grummle
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
 					}),
 					q(32391, {	-- The Ruins of Korune
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					}),
 					q(32393, {	-- The Ruins of Korune
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32449, {	-- The Ruins of Ogudei
-						["qg"] = 67880,	-- Blood Guard Gro'tash
+						["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32333, {	-- The Second Riddle: Fellowship
-						["qg"] = 68003,	-- The Monkey King
+						["provider"] = { "n", 68003 },	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32455,  {  	-- The Silence
-						["qg"] = 68987,	-- Anduin Wrynn
+						["provider"] = { "n", 68987 },	-- Anduin Wrynn
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 32401 },	-- Breath of Darkest Shadow
 						["g"] = {
@@ -1243,21 +1260,21 @@ _.Zones =
 						},
 					}),
 					q(32402, {	-- The Situation In Dalaran
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					}),
 					q(32121, {	-- The Spirit Trap
-						["qg"] = 68275,	-- Hilda Hornswaggle
+						["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32342, {	-- The Spirit Trap
-						["qg"] = 68274,	-- Kaelis Sunsoar
+						["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30357, {  	-- The Stoneplow Convoy
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
+						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							30230,	-- Re-Reclaim
@@ -1273,20 +1290,20 @@ _.Zones =
 						},
 					}),
 					q(30164, {	-- The Stoneplow Convoy
-						["qg"] = 58607,	-- Sunwalker Dezco
+						["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 						["races"] = HORDE_ONLY,
 					}),
 					q(32334, {	-- The Third Riddle: Strength
-						["qg"] = 68003,	-- The Monkey King
+						["provider"] = { "n", 68003 },	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32450, {	-- The Time Is Now!
-						["qg"] = 67880,	-- Blood Guard Gro'tash
+						["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30445, {	-- The Waters of Youth
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
+						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 30359 },	-- The Lord Reclaimer
 						["g"] = {
@@ -1302,11 +1319,11 @@ _.Zones =
 						},
 					}),
 					q(30738, {	-- Thelonius
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30168, {	-- Thieving Raiders
-						["qg"] = 58278,	-- Tired Shushen
+						["provider"] = { "n", 58278 },	-- Tired Shushen
 						["g"] = {
 							i(81532),	-- Silkspawn Carving
 							i(81534),	-- Carp Hunter Feather
@@ -1315,7 +1332,7 @@ _.Zones =
 						},
 					}),
 					q(30127, {	-- Threat from Dojan
-						["qg"] = 58114,	-- Kor Bloodtusk
+						["provider"] = { "n", 58114 },	-- Kor Bloodtusk
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							30123,	-- Skitterer Skew
@@ -1323,7 +1340,7 @@ _.Zones =
 						},
 					}),
 					q(30349, {	-- Threat from Dojan
-						["qg"] = 58735,	-- Lyalia
+						["provider"] = { "n", 58735 },	-- Lyalia
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(84281),	-- Bramble Locket
@@ -1334,24 +1351,24 @@ _.Zones =
 						},
 					}),
 					q(32190, {	-- To Mogujia
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					}),
 					q(32193, {	-- To Mogujia
-						["qg"] = 67940,	-- Admiral Taylor
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32376, {	-- To the Valley!
-						["qg"] = 67939,	-- General Nazgrim
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					}),
 					q(32151, {	-- Tower Defense
-						["qg"] = 67631,	-- Marshal Troteman
+						["provider"] = { "n", 67631 },	-- Marshal Troteman
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30694, {	-- Tread Lightly
-						["qg"] = 59138,	-- Koro Mistwalker
+						["provider"] = { "n", 59138 },	-- Koro Mistwalker
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
 						["g"] = {
 							i(84272),	-- Mistwalker Satin Leggings
@@ -1366,30 +1383,30 @@ _.Zones =
 						},
 					}),
 					q(30733, {	-- Tukka-Tuk
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(32158, {	-- Two Step Program
-						["qg"] = 68182,	-- Seraphine of the Winter
+						["provider"] = { "n", 68182 },	-- Seraphine of the Winter
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32144, {	-- Under Pressure
-						["qg"] = 67444,	-- Mishka
+						["provider"] = { "n", 67444 },	-- Mishka
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30269, {	-- Unsafe Passage
-						["qg"] = 58547,	-- Koro Mistwalker
+						["provider"] = { "n", 58547 },	-- Koro Mistwalker
 						["sourceQuests"] = { 30461, 30133 },	-- Into the Wilds
 					}),
 					q(32328, {	-- Victorious Return
-						["qg"] = 68077,	-- Fanlyr Silverthorn
+						["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 32327 },	-- The Darnassus Mission
 					}),
 					q(30701, {	-- Viseclaw Soup
-						["qg"] = 60675,	-- Fo Fook
+						["provider"] = { "n", 60675 },	-- Fo Fook
 						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
@@ -1400,52 +1417,52 @@ _.Zones =
 						}),
 					}),
 					q(30360, {	-- Warn Stoneplow
-						["qg"] = 58821,	-- Lyalia
+						["provider"] = { "n", 58821 },	-- Lyalia
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 30445 },	-- The Waters of Youth
 					}),
 					q(30241, {	-- Warn Stoneplow
-						["qg"] = 58607,	-- Sunwalker Dezco
+						["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30174 },	-- For Family
 					}),
 					q(32142, {	-- We Will Rock You
-						["qg"] = 67386,	-- Sky Admiral Rogers
+						["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 32451 },	-- Send a Message
 						["isDaily"] = true,
 					}),
 					q(32345, {	-- We're Not Monsters!
-						["qg"] = 68274,	-- Kaelis Sunsoar
+						["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32423, {	-- What Had To Be Done
-						["qg"] = 68687,	-- Vareesa Windrunner
+						["provider"] = { "n", 68687 },	-- Vareesa Windrunner
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 32417, 32418, 32419, 32420, 32421 },	-- Sewer Cleaning, Unfair Trade, Nowhere to Hide, Cashing Out, Nowhere to Run
 					}),
 					q(30585, {	-- What Lurks Below
-						["qg"] = 60673,	-- Elder Fisherman Rassan
+						["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
 						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					q(30079, {	-- What's Eating Zhu's Watch?
-						["qg"] = 56115,	-- Ken-Ken
+						["provider"] = { "n", 56115 },	-- Ken-Ken
 						["sourceQuests"] = { 29873, 49540, 49558 },	-- Ken-Ken, Warchief's Command: Krasarang Wilds!, Hero's Call: Krasarang Wilds!
 					}),
 					q(30346, {	-- Where are the Pools
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
+						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 30344 },	-- The Lost Dynasty
 					}),
 					q(30598, {	-- Who Knew Fish Liked Eggs?
-						["qg"] = 60673,	-- Elder Fisherman Rassan
+						["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
 						["requireSkill"] = 356,
 						["isDaily"] = true,
 					}),
 					q(30088, {	-- Why So Serious?
-						["qg"] = 56115,	-- Ken-Ken
+						["provider"] = { "n", 56115 },	-- Ken-Ken
 						["sourceQuests"] = { 30081 },	-- Materia Medica
 						["g"] = {
 							i(88061),	-- Nayeli Handwraps
@@ -1460,7 +1477,7 @@ _.Zones =
 						},
 					}),
 					q(30671, {	-- Wisdom Has A Price
-						["qg"] = 60139,	-- Wise Ana Wu
+						["provider"] = { "n", 60139 },	-- Wise Ana Wu
 						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
 						["g"] = {
 							i(88043),	-- Nayeli Shoes
@@ -1475,17 +1492,17 @@ _.Zones =
 						},
 					}),
 					q(32136, {	-- Work Order: Fuel
-						["qg"] = 67535,	-- Boss-Lady Trixel
+						["provider"] = { "n", 67535 },	-- Boss-Lady Trixel
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(32132, {	-- Worker Harassment
-						["qg"] = 67628,	-- Shademaster Kiryn
+						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(30736, {	-- Yan Quillpaw
-						["qg"] = 60506,	-- Thelonius
+						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
 					}),
 					q(30090,  {  	-- Zhu's Despair

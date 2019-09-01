@@ -12,7 +12,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			n(-17, {	-- Quests
 				{	-- Ascendant Lord Obsidius
 					["questID"] = 28741,
-					["qg"] = 49476,	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28738,	-- The Twilight Forge
 					["groups"] = {
 						i(66886),	-- Acid-Eaten Vest
@@ -22,7 +22,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 				{	-- Do My Eyes Deceive Me?
 					["questID"] = 28740,
-					["qg"] = 49476,	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28738,	-- The Twilight Forge
 					["groups"] = {
 						i(66889),	-- Beauty's Cootie-Ridden Blankie
@@ -31,17 +31,17 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 				{	-- The Twilight Forge
 					["questID"] = 28738,
-					["qg"] = 49476,	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28737,	-- What Is This Place?
 				},
 				{	-- To the Chamber of Incineration!
 					["questID"] = 28735,
-					["qg"] = 49476,	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28732,	-- This Can Only Mean One Thing...
 				},
 				{	-- What Is This Place?
 					["questID"] = 28737,
-					["qg"] = 49476,	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
 				},
 			}),

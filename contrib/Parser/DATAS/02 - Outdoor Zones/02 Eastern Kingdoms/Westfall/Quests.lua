@@ -10,13 +10,13 @@ _.Zones =
 					["sourceQuests"] = { 26319 },	-- Secrets Revealed
 					["coord"] = { 42.8, 65.1, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42651,	-- Thoralius the Wise
+					["provider"] = { "n", 42651 },	-- Thoralius the Wise
 				}),
 				q(26291, {	-- Big Trouble in Moonbrook
 					["sourceQuests"] = { 26290 },	-- Secrets of the Tower
 					["coord"] = { 68.2, 70.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 7024,	-- Agent Kearnen
+					["provider"] = { "n", 7024 },	-- Agent Kearnen
 					["g"] = {
 						i(58926),	-- Gryan's Boots
 						i(58924),	-- Legwork Trousers
@@ -88,13 +88,13 @@ _.Zones =
 					["sourceQuests"] = { 26215 },	-- Meet Two-Shoed Lou
 					["coord"] = { 49.4, 19.2, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42497,	-- Mama Celeste
+					["provider"] = { "n", 42497 },	-- Mama Celeste
 				}),
 				q(26271, {	-- Feeding the Hungry and the Hopeless
 					["sourceQuests"] = { 26266 },	-- Hope for the People
 					["coord"] = { 56.9, 47.1, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42575,	-- Hope Saldean
+					["provider"] = { "n", 42575 },	-- Hope Saldean
 				}),
 				q(26289, {	-- Find Agent Kearnen
 					["sourceQuests"] = {
@@ -103,7 +103,7 @@ _.Zones =
 					},
 					["coord"] = { 56.3, 47.6, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 				}),
 				q(26252, {	-- Heart of the Watcher
 					["sourceQuests"] = { 26236 },	-- Shakedown at the Saldean's
@@ -118,25 +118,25 @@ _.Zones =
 					["sourceQuests"] = { 26270 },	-- You Have Our Thanks
 					["coord"] = { 56.3, 30.5, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 235,	-- Salma Saldean
+					["provider"] = { "n", 235 },	-- Salma Saldean
 				}),
 				q(26214, {	-- Hot On the Trail: Murlocs
 					["sourceQuests"] = { 26209 },	-- Murder Was The Case That They Gave Me
 					["coord"] = { 60.1, 19.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42308,	-- Lieutenant Horatio Laine
+					["provider"] = { "n", 42308 },	-- Lieutenant Horatio Laine
 				}),
 				q(26213, {	-- Hot On the Trail: The Riverpaw Clan
 					["sourceQuests"] = { 26209 },	-- Murder Was The Case That They Gave Me
 					["coord"] = { 60.1, 19.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42308,	-- Lieutenant Horatio Laine
+					["provider"] = { "n", 42308 },	-- Lieutenant Horatio Laine
 				}),
 				q(26286, {	-- In Defense of Westfall
 					["sourceQuests"] = { 26266 },	-- Hope for the People
 					["coord"] = { 56.3, 47.6, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 					["g"] = {
 						i(58914),	-- Sentinel Hill Breastplate
 						i(131502),	-- Sentinel Hill Hauberk
@@ -154,7 +154,7 @@ _.Zones =
 					["sourceQuests"] = { 26215 },	-- Meet Two-Shoed Lou
 					["coord"] = { 49.7, 19.5, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42498,	-- Jimb "Candles" McHannigan
+					["provider"] = { "n", 42498 },	-- Jimb "Candles" McHannigan
 					["g"] = {
 						i(58905),	-- Kobold Basher
 						i(58903),	-- Kobold Candle
@@ -167,7 +167,7 @@ _.Zones =
 					["sourceQuests"] = { 26252 },	-- Heart of the Watcher
 					["coord"] = { 55.9, 31.3, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 233,	-- Farmer Saldean
+					["provider"] = { "n", 233 },	-- Farmer Saldean
 					["g"] = {
 						i(58916),	-- Chewed Belt
 						i(131497),	-- Chewed Chain Cord
@@ -179,7 +179,7 @@ _.Zones =
 					["sourceQuests"] = { 26287 },	-- The Westfall Brigade
 					["coord"] = { 56.3, 47.6, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 821,	-- Captain Danuvin
+					["provider"] = { "n", 821 },	-- Captain Danuvin
 					["g"] = {
 						i(58920),	-- Dust Plains Greaves
 						i(58918),	-- Mystic Riverpaw Wand
@@ -190,7 +190,7 @@ _.Zones =
 				q(26347, {	-- Keeper of the Flame
 					["coord"] = { 30.5, 85.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 392,	-- Captain Grayson
+					["provider"] = { "n", 392 },	-- Captain Grayson
 				}),
 				q(2359,  {	-- Klaven's Tower
 					["classes"] = { 4 },	-- Rogue
@@ -207,13 +207,13 @@ _.Zones =
 					["sourceQuests"] = { 26215 },	-- Meet Two-Shoed Lou
 					["coord"] = { 49.7, 19.5, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42405,	-- Two-Shoed Lou
+					["provider"] = { "n", 42405 },	-- Two-Shoed Lou
 				}),
 				q(26232, {	-- Lou's Parting Thoughts
 					["sourceQuests"] = { 26228 },	-- Livin' the Life
 					["coord"] = { 49.7, 19.5, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42405,	-- Two-Shoed Lou
+					["provider"] = { "n", 42405 },	-- Two-Shoed Lou
 				}),
 				q(26215, {	-- Meet Two-Shoed Lou
 					["sourceQuests"] = {
@@ -222,13 +222,13 @@ _.Zones =
 					},
 					["coord"] = { 60.1, 19.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42308,	-- Lieutenant Horatio Laine
+					["provider"] = { "n", 42308 },	-- Lieutenant Horatio Laine
 				}),
 				q(26209, {	-- Murder Was The Case That They Gave Me
 					["sourceQuests"] = { 28562 },	-- Hero's Call: Westfall!
 					["coord"] = { 60.1, 19.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42308,	-- Lieutenant Horatio Laine
+					["provider"] = { "n", 42308 },	-- Lieutenant Horatio Laine
 					["g"] = {
 						i(58907),	-- Crime Scene Tape
 						i(58906),	-- Equicide Cloak
@@ -239,7 +239,7 @@ _.Zones =
 					["sourceQuests"] = { 26292 },	-- To Moonbrook!
 					["coord"] = { 42.2, 64.0, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42425,	-- Captain Alpert
+					["provider"] = { "n", 42425 },	-- Captain Alpert
 				}),
 				q(153,   {	-- Red Leather Bandanas
 					["u"] = 40,	-- Legacy Quests
@@ -262,7 +262,7 @@ _.Zones =
 					["sourceQuests"] = { 26320 },	-- A Vision of the Past
 					["coord"] = { 56.2, 47.6, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 					["g"] = {
 						i(58931),	-- House Wrynn Claymore
 						i(58929),	-- House Wrynn Crossbow
@@ -276,19 +276,19 @@ _.Zones =
 					["sourceQuests"] = { 26289 },	-- Find Agent Kearnen
 					["coord"] = { 68.2, 70.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 7024,	-- Agent Kearnen
+					["provider"] = { "n", 7024 },	-- Agent Kearnen
 				}),
 				q(26319, {	-- Secrets Revealed
 					["sourceQuests"] = { 26297 },	-- The Dawning of a New Day
 					["coord"] = { 42.2, 64.0, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42425,	-- Captain Alpert
+					["provider"] = { "n", 42425 },	-- Captain Alpert
 				}),
 				q(26236, {	-- Shakedown at the Saldean's
 					["sourceQuests"] = { 26232 },	-- Lou's Parting Thoughts
 					["coord"] = { 49.8, 19.5, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42558,	-- Lieutenant Horatio Laine
+					["provider"] = { "n", 42558 },	-- Lieutenant Horatio Laine
 				}),
 				q(53,    {	-- Sweet Amber
 					["races"] = ALLIANCE_ONLY,
@@ -302,7 +302,7 @@ _.Zones =
 				q(26349, {	-- The Coastal Menace
 					["coord"] = { 30.5, 85.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 392,	-- Captain Grayson
+					["provider"] = { "n", 392 },	-- Captain Grayson
 					["g"] = {
 						i(1557),	-- Buckler of the Seas
 						i(1172),	-- Grayson's Torch
@@ -312,13 +312,13 @@ _.Zones =
 				q(26348, {	-- The Coast Isn't Clear
 					["coord"] = { 30.5, 85.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 392,	-- Captain Grayson
+					["provider"] = { "n", 392 },	-- Captain Grayson
 				}),
 				q(26297, {	-- The Dawning of a New Day
 					["sourceQuests"] = { 26295 },	-- Propaganda
 					["coord"] = { 42.2, 64.0, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42425,	-- Captain Alpert
+					["provider"] = { "n", 42425 },	-- Captain Alpert
 				}),
 				q(9,     {	-- The Killing Fields
 					["u"] = 40,
@@ -335,7 +335,7 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- for "The Coast Isn't Clear"
 					["coord"] = { 56.2, 47.4, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 878,	-- Scout Galiaan
+					["provider"] = { "n", 878 },	-- Scout Galiaan
 				}),
 				q(14,    {	-- The People's Militia
 					["u"] = 40,
@@ -354,7 +354,7 @@ _.Zones =
 				q(1652,  {	-- The Tome of Valor
 					["classes"] = { 11 },	-- Druid
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 6182,	-- Daphne Stilwell
+					["provider"] = { "n", 6182 },	-- Daphne Stilwell
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						i(9607, {	-- Bastion of Stormwind
@@ -366,32 +366,32 @@ _.Zones =
 					["sourceQuests"] = { 26266 },	-- Hope for the People
 					["coord"] = { 56.3, 47.6, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 821,	-- Captain Danuvin
+					["provider"] = { "n", 821 },	-- Captain Danuvin
 				}),
 				q(26761, {	-- Threat to the Kingdom
 					["sourceQuests"] = { 26370 },	-- Return to Sentinel Hill
 				--	["isBreadcrumb"] = true,	-- not sure!
 					["coord"] = { 56.3, 49.5, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 				}),
 				q(26237, {	-- Times are Tough
 					["sourceQuests"] = { 26236 },	-- Shakedown at the Saldean's
 					["coord"] = { 55.9, 31.3, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 233,	-- Farmer Saldean
+					["provider"] = { "n", 233 },	-- Farmer Saldean
 				}),
 				q(26292, {	-- To Moonbrook!
 					["sourceQuests"] = { 26291 },	-- Big Trouble in Moonbrook
 					["coord"] = { 56.3, 47.6, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 				}),
 				q(26241, {	-- Westfall Stew
 					["sourceQuests"] = { 26236 },	-- Shakedown at the Saldean's
 					["coord"] = { 56.3, 30.6, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 235,	-- Salma Saldean
+					["provider"] = { "n", 235 },	-- Salma Saldean
 					["g"] = {
 						i(58910),	-- Boiled Boots
 						i(131496),	-- Boiled Chain Footpads
@@ -406,7 +406,7 @@ _.Zones =
 					},
 					["coord"] = { 55.9, 31.3, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 233,	-- Farmer Saldean
+					["provider"] = { "n", 233 },	-- Farmer Saldean
 				}),
 			}),
 		}),

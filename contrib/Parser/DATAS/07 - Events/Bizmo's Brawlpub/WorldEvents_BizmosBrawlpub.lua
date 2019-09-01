@@ -32,108 +32,108 @@ _.WorldEvents =
 			n(-17, { 	-- Quests
 				q(55002, {	-- Murder at the Brawlpub
 					["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
-					["qg"] = 68363,	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
+					["provider"] = { "n", 68363 },	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 					["coord"] = { 50.22, 23.17, 500 },
 				}),
 				q(55003, {	-- Put Up Your Dukes
-					["qg"] = 150313,	-- Commander Daalo
+					["provider"] = { "n", 150313 },	-- Commander Daalo
 					["sourceQuest"] = 55002,	-- Murder at the Brawlpub
 					["coord"] = { 72.76, 68.41, 500 },
 				}),
 				q(55004, {	-- Undercover Agent: Ann Dennyson
-					["qg"] = 150313,	-- Commander Daalo
+					["provider"] = { "n", 150313 },	-- Commander Daalo
 					["sourceQuest"] = 55003,	-- Put Up Your Dukes
 					["coord"] = { 72.76, 68.41, 500 },
 				}),
 				q(55005, {	-- The Financial Participation Incentive
-					["qg"] = 150314,	-- Ann Dennyson
+					["provider"] = { "n", 150314 },	-- Ann Dennyson
 					["sourceQuest"] = 55004,	-- Undercover Agent: Ann Dennyson
 					["coord"] = { 69.73, 36.79, 500 },
 				}),
 				q(55006, {	-- A Favor for Your Old Chum Winifred
-					["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
+					["provider"] = { "n", 68365 },	-- Lord Winifred Browne <Prediction Incentives>
 					["sourceQuest"] = 55005,	-- The Financial Participation Incentive
 					["coord"] = { 63.32, 40.68, 500 },
 				}),
 				q(55007, {	-- Lord Browne's Debts
-					["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
+					["provider"] = { "n", 68365 },	-- Lord Winifred Browne <Prediction Incentives>
 					["sourceQuest"] = 55006,	-- A Favor for Your Old Chum Winifred
 					["coord"] = { 63.32, 40.68, 500 },
 				}),
 				q(55008, {	-- Evidence Packet: Lord Winifred Browne
-					["qg"] = 150314,	-- Ann Dennyson
+					["provider"] = { "n", 150314 },	-- Ann Dennyson
 					["sourceQuest"] = 55007,	-- Lord Browne's Debts
 					["coord"] = { 69.73, 36.79, 500 },
 				}),
 				q(55009, {	-- Undercover Agent: Saralara Fizzlesprang
-					["qg"] = 150313,	-- Commander Daalo
+					["provider"] = { "n", 150313 },	-- Commander Daalo
 					["sourceQuest"] = 55008,	-- Evidence Packet: Lord Winifred Browne
 					["coord"] = { 72.76, 68.41, 500 },
 				}),
 				q(55010, {	-- Soul Splinters
-					["qg"] = 150317,	-- Shadowmaster O'Flannerty
+					["provider"] = { "n", 150317 },	-- Shadowmaster O'Flannerty
 					["sourceQuest"] = 55009,	-- Undercover Agent: Saralara Fizzlesprang
 					["coord"] = { 68.05, 24.87, 500 },
 					["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 25-30 Soul Splinters, so you will need 4 Brawler's Purses to complete this quest.",
 				}),
 				q(55011, {	-- Super Soul Splinters
-					["qg"] = 150317,	-- Shadowmaster O'Flannerty
+					["provider"] = { "n", 150317 },	-- Shadowmaster O'Flannerty
 					["sourceQuest"] = 55010,	-- Soul Splinters
 					["coord"] = { 68.05, 24.87, 500 },
 					["description"] = "You can save previously earned Rumbler's Purses and open them while on this quest - Each Rumbler's Purse gives 1 Super Soul Splinter, so you will need 3 Rumbler's Purses to complete this quest.",
 				}),
 				q(55012, {	-- Cause for Concern
-					["qg"] = 150315,	-- Saralara Fizzlesprang
+					["provider"] = { "n", 150315 },	-- Saralara Fizzlesprang
 					["sourceQuest"] = 55011,	-- Super Soul Splinters
 					["coord"] = { 44.43, 34.60, 500 },
 				}),
 				q(55013, {	-- The Precious 13-Tooth Gogglegear
-					["qg"] = 150315,	-- Saralara Fizzlesprang
+					["provider"] = { "n", 150315 },	-- Saralara Fizzlesprang
 					["sourceQuest"] = 55012,	-- Cause for Concern
 					["coord"] = { 44.43, 34.60, 500 },
 				}),
 				q(55014, {	-- The Fizzlesprang Goggle Experiment
-					["qg"] = 150315,	-- Saralara Fizzlesprang
+					["provider"] = { "n", 150315 },	-- Saralara Fizzlesprang
 					["sourceQuest"] = 55013,	-- The Precious 13-Tooth Gogglegear
 					["coord"] = { 44.43, 34.60, 500 },
 				}),
 				q(55015, {	-- Evidence Packet: Shadowmaster O'Flannerty
-					["qg"] = 150315,	-- Saralara Fizzlesprang
+					["provider"] = { "n", 150315 },	-- Saralara Fizzlesprang
 					["sourceQuest"] = 55014,	-- The Fizzlesprang Goggle Experiment
 					["coord"] = { 44.43, 34.60, 500 },
 				}),
 				q(55016, {	-- Undercover Agent: Silent Jussho
-					["qg"] = 150313,	-- Commander Daalo
+					["provider"] = { "n", 150313 },	-- Commander Daalo
 					["sourceQuest"] = 55015,	-- Evidence Packet: Shadowmaster O'Flannerty
 					["coord"] = { 72.76, 68.41, 500 },
 				}),
 				q(55017, {	-- Flaunt It If You Got It
-					["qg"] = 70722,	-- Grant Lazarby
+					["provider"] = { "n", 70722 },	-- Grant Lazarby
 					["sourceQuest"] = 55016,	-- Undercover Agent: Silent Jussho
 					["coord"] = { 33.14, 64.36, 500 },
 				}),
 				q(55018, {	-- Simply Dying of Boredom
-					["qg"] = 70722,	-- Grant Lazarby
+					["provider"] = { "n", 70722 },	-- Grant Lazarby
 					["sourceQuest"] = 55017,	-- Flaunt It If You Got It
 					["coord"] = { 33.14, 64.36, 500 },
 				}),
 				q(55019, {	-- Evidence Packet: Grant Lazarby
-					["qg"] = 150316,	-- Silent Jussho
+					["provider"] = { "n", 150316 },	-- Silent Jussho
 					["sourceQuest"] = 55018,	-- Simply Dying of Boredom
 					["coord"] = { 30.32, 87.71, 500 },
 				}),
 				q(55020, {	-- The Brawlpub Trial
-					["qg"] = 150313,	-- Commander Daalo
+					["provider"] = { "n", 150313 },	-- Commander Daalo
 					["sourceQuest"] = 55019,	-- Evidence Packet: Grant Lazarby
 					["coord"] = { 72.76, 68.41, 500 },
 				}),
 				q(55021, {	-- A Clue from Area 52
-					["qg"] = 150313,	-- Commander Daalo
+					["provider"] = { "n", 150313 },	-- Commander Daalo
 					["sourceQuest"] = 55020,	-- The Brawlpub Trial
 					["coord"] = { 72.76, 68.41, 500 },
 				}),
 				q(55022, {	-- Solving the Mystery
-					["qg"] = 150320,	-- Bizmo
+					["provider"] = { "n", 150320 },	-- Bizmo
 					["sourceQuest"] = 55021,	-- A Clue from Area 52
 					["coord"] = { 31.15, 66.51, 109 },
 					["races"] = ALLIANCE_ONLY,

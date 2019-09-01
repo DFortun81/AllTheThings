@@ -208,9 +208,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								29153,	-- Booty Bay's Interests
 								29154,	-- Booty Bay's Interests
 							},
-							["qgs"] = {
-								2496,	-- Baron Revilgaz
-								53151,	-- Overseer Blingbang
+							["providers"] = {
+								{ "n", 2496 },	-- Baron Revilgaz
+								{ "n", 53151 },	-- Overseer Blingbang
 							},
 							["g"] = {
 								i(133997),	-- Black Ice
@@ -225,9 +225,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								29251,	-- Booty Bay's Interests
 								29252,	-- Booty Bay's Interests
 							},
-							["qgs"] = {
-								2496,	-- Baron Revilgaz
-								53151,	-- Overseer Blingbang
+							["providers"] = {
+								{ "n", 2496 },	-- Baron Revilgaz
+								{ "n", 53151 },	-- Overseer Blingbang
 							},
 							["g"] = {
 								i(133997),	-- Black Ice
@@ -247,42 +247,42 @@ _.Instances = { tier(4, {	-- Cataclysm
 								26775,	-- Be Raptor [Alliance]
 								26362,	-- Be Raptor [Horde]
 							},
-							["qg"] = 52877,	-- Lashtail Hatchling
+							["provider"] = { "n", 52877 },	-- Lashtail Hatchling
 							["g"] = {
 								i(69251),	-- Lashtail Hatchling
 							},
 						}),
 						q(29154, {	-- Booty Bay's Interests
-							["qg"] = 53151,			-- Overseer Revilgaz
+							["provider"] = { "n", 53151 },			-- Overseer Revilgaz
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(29252, {	-- Booty Bay's Interests
-							["qg"] = 53151,			-- Overseer Revilgaz
+							["provider"] = { "n", 53151 },			-- Overseer Revilgaz
 							["races"] = HORDE_ONLY,
 						}),
 						q(29241,  {	-- Break the Godbreaker
-							["qg"] = 53024,			-- Bloodslayer Zala
+							["provider"] = { "n", 53024 },			-- Bloodslayer Zala
 						}),
 						q(29174,  {	-- Break Their Spirits
 							["u"] = 1,				-- Never made it to live
 						}),
 						q(29175,  {	-- Break Their Spirits
-							["qg"] = 53023,			-- Bloodslayer T'ara
+							["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 						}),
 						q(29242,  {	-- Putting a Price on Priceless
-							["qg"] = 53043,			-- Briney Boltcutter
+							["provider"] = { "n", 53043 },			-- Briney Boltcutter
 						}),
 						q(29168,  {	-- Secondary Targets
 							["u"] = 1,				-- Never made it to live
 						}),
 						q(29173,  {	-- Secondary Targets
-							["qg"] = 53023,			-- Bloodslayer T'ara
+							["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 						}),
 						q(29169,  {	-- The Beasts Within
 							["u"] = 1,				-- Never made it to live
 						}),
 						q(29172,  {	-- The Beasts Within
-							["qg"] = 53023,			-- Bloodslayer T'ara
+							["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 						}),
 						q(29262,  {	-- Zul'Gurub Voodoo
 							--["objectID"] = 208550,	-- Voodoo Pile
@@ -378,21 +378,19 @@ _.Instances = { tier(4, {	-- Cataclysm
 							{	-- Summon Artifacts
 								["npcID"] = 52446,	-- Ancient Dwarven Artifact
 								["description"] = "This artifact is used in summoning the boss.",
-								["qgs"] = {
-									--52446,	-- Ancient Dwarven Artifact
-									52450,	-- Ancient Elven Artifact
-									52454,	-- Ancient Fossil
-									52452,	-- Ancient Troll Artifact
+								["providers"] = {
+									{ "n", 52450 },	-- Ancient Elven Artifact
+									{ "n", 52454 },	-- Ancient Fossil
+									{ "n", 52452 },	-- Ancient Troll Artifact
 								},
 							},
 							{	-- Ignored Artifacts
 								["npcID"] = 52449,	-- Ancient Dwarven Artifact
 								["description"] = "|CFFFF0000IGNORE!|r",
-								["qgs"] = {
-									--52449,	-- Ancient Dwarven Artifact
-									52451,	-- Ancient Elven Artifact
-									52455,	-- Ancient Fossil
-									52453,	-- Ancient Troll Artifact
+								["providers"] = {
+									{ "n", 52451 },	-- Ancient Elven Artifact
+									{ "n", 52455 },	-- Ancient Fossil
+									{ "n", 52453 },	-- Ancient Troll Artifact
 								},
 							},
 							--]]

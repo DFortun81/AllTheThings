@@ -70,27 +70,27 @@ _.Zones =
 				prof(171, {	-- Alchemy
 					-- Tools of Trade Questline
 					q(50112, {	-- Casting the First Stone
-						["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+						["provider"] = { "n", 122703 },	-- Clever Kumali <Alchemist Trainer>
 						["coord"] = { 42.2, 38.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 171,	-- Alchemy
 					}),
 					q(50113, {	-- Ocular Extracts
-						["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+						["provider"] = { "n", 122703 },	-- Clever Kumali <Alchemist Trainer>
 						["coord"] = { 42.2, 38.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50112,	-- Casting the First Stone
 						["requireSkill"] = 171,	-- Alchemy
 					}),
 					q(50115, {	-- Changing the Scenery
-						["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+						["provider"] = { "n", 122703 },	-- Clever Kumali <Alchemist Trainer>
 						["coord"] = { 42.2, 38.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50112,	-- Casting the First Stone
 						["requireSkill"] = 171,	-- Alchemy
 					}),
 					q(50116, {	-- A Possible Solution
-						["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+						["provider"] = { "n", 122703 },	-- Clever Kumali <Alchemist Trainer>
 						["coord"] = { 42.2, 38.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -100,21 +100,21 @@ _.Zones =
 						["requireSkill"] = 171,	-- Alchemy
 					}),
 					q(50117, {	-- A Deathly Draught
-						["qg"] = 132680,	-- Zukashi <Master of Transmutations>
+						["provider"] = { "n", 132680 },	-- Zukashi <Master of Transmutations>
 						["coord"] = { 65.2, 36.9, 863 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50116,	-- A Possible Solution
 						["requireSkill"] = 171,	-- Alchemy
 					}),
 					q(50118, {	-- A Stone's Throw
-						["qg"] = 132680,	-- Zukashi <Master of Transmutations>
+						["provider"] = { "n", 132680 },	-- Zukashi <Master of Transmutations>
 						["coord"] = { 65.2, 36.9, 863 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50116,	-- A Possible Solution
 						["requireSkill"] = 171,	-- Alchemy
 					}),
 					q(50119, {	-- Chemically Compounded
-						["qg"] = 132680,	-- Zukashi <Master of Transmutations>
+						["provider"] = { "n", 132680 },	-- Zukashi <Master of Transmutations>
 						["coord"] = { 65.2, 36.9, 863 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -137,7 +137,7 @@ _.Zones =
 				}),
 				prof(164, {	-- Blacksmithing
 					q(50276, {	-- A Recipe For the Ages
-						["qg"] = 127112,	-- Forgemaster Zak'aal
+						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 						["coord"] = { 43.6, 38.3, 1165 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -145,13 +145,13 @@ _.Zones =
 						},
 					}),
 					q(50278, {	-- Deep In the Core
-						["qg"] = 127112,	-- Forgemaster Zak'aal
+						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 						["coord"] = { 43.6, 38.3, 1165 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50277,	-- Hammering Out Information
 					}),
 					q(50277, {	-- Hammering Out Information
-						["qg"] = 127112,	-- Forgemaster Zak'aal
+						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 						["coord"] = { 43.6, 38.3, 1165 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50276,	-- A Recipe For the Ages
@@ -167,12 +167,12 @@ _.Zones =
 						["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
 						["coord"] = { 46.9, 35.8, 1165 },
 						["races"] = HORDE_ONLY,
-						["qg"] = 122702,	-- Enchantress Quinni
+						["provider"] = { "n", 122702 },	-- Enchantress Quinni
 					}),
 				}),
 				prof(186, {	-- Mining
 					q(51962, {	-- Lumbering Away
-						["qg"] = 122694,	-- Secott the Goldsmith
+						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
@@ -182,7 +182,7 @@ _.Zones =
 						},
 					}),
 					q(51964, {	-- Insufferable Bloodsuckers
-						["qg"] = 122694,	-- Secott the Goldsmith
+						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
@@ -192,7 +192,7 @@ _.Zones =
 						},
 					}),
 					q(51965, {	-- Lending a Hand
-						["qg"] = 122694,	-- Secott the Goldsmith
+						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
@@ -202,7 +202,7 @@ _.Zones =
 						},
 					}),
 					q(51971, {	-- An Exquisite Brooch
-						["qg"] = 122694,	-- Secott the Goldsmith
+						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
@@ -212,7 +212,7 @@ _.Zones =
 						},
 					}),
 					q(52014, {	-- Ritualistic Prepartions
-						["qg"] = 122694,	-- Secott the Goldsmith
+						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
@@ -222,7 +222,7 @@ _.Zones =
 						},
 					}),
 					q(52015, {	-- Brined Justice
-						["qg"] = 122694,	-- Secott the Goldsmith
+						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
@@ -232,7 +232,7 @@ _.Zones =
 						},
 					}),
 					q(52016, {	-- Three Sheets to the Wind
-						["qg"] = 122694,	-- Secott the Goldsmith
+						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
@@ -242,14 +242,14 @@ _.Zones =
 						},
 					}),
 					q(52017, {	-- Back to Biru
-						["qg"] = 122694,	-- Secott the Goldsmith
+						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 150 Zandalari Mining",
 					}),
 					q(52043, {	-- The Wrath of Grapes
-						["qg"] = 139634,	-- Biru The Drunk
+						["provider"] = { "n", 139634 },	-- Biru The Drunk
 						["coord"] = { 52.7, 84.3, 1165 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 52017,	-- Back to Biru
@@ -273,26 +273,26 @@ _.Zones =
 				prof(197, {	-- Tailoring
 					-- Tools of Trade Questline
 					q(53938, {	-- A Friend in Needle
-						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 145022 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 43.5, 34.8, 1165 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 197,
 					}),
 					q(53940, {	-- A Stitch in Time
-						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 145022 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 43.5, 34.8, 1165 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53938,	-- A Friend in Needle
 						["requireSkill"] = 197,
 					}),
 					q(55188, {	-- Tearing at the Seams
-						["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 145022 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53940,	-- A Stitch in Time
 						["requireSkill"] = 197,
 					}),
 					q(53810, {	-- The Severed Thread
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 62.0, 53.9, 75 },
 						["sourceQuests"] = {
 							55177,	-- Tearing at the Seams (Alliance)
@@ -301,7 +301,7 @@ _.Zones =
 						["requireSkill"] = 197,
 					}),
 					q(53813, {	-- Rolling Up the Sleeves
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 43.5, 34.8, 75 },
 						["sourceQuests"] = {
 							55177,	-- Tearing at the Seams (Alliance)
@@ -310,7 +310,7 @@ _.Zones =
 						["requireSkill"] = 197,
 					}),
 					q(53858, {	-- Step Into Her Shoes
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 39.1, 63.3, 75 },
 						["sourceQuests"] = {
 							53810,	-- The Severed Thread
@@ -319,31 +319,31 @@ _.Zones =
 						["requireSkill"] = 197,
 					}),
 					q(53866, {	-- If The Shoe Fits...
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 63.8, 68.8, 680 },
 						["sourceQuest"] = 53858,	-- Step Into Her Shoes
 						["requireSkill"] = 197,
 					}),
 					q(55214, {	-- Seam Stress
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 64.2, 69.5, 680 },
 						["sourceQuest"] = 53866,	-- If The Shoe Fits...
 						["requireSkill"] = 197,
 					}),
 					q(53868, {	-- Saving Nine
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 7.2, 24.5, 942 },
 						["sourceQuest"] = 55214,	-- Seam Stress
 						["requireSkill"] = 197,
 					}),
 					q(53869, {	-- Killing Time
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 71.6, 39.8, 115 },
 						["sourceQuest"] = 53868,	-- Saving Nine
 						["requireSkill"] = 197,
 					}),
 					q(53962, {	-- Cut from the Same Cloth
-						["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
 						["coord"] = { 71.6, 39.8, 115 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53869,	-- Killing Time

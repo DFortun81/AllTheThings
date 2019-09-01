@@ -10,10 +10,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(29862, {	-- Clearing the Way
-					["qg"] = 56027,	-- Stormherald Eljrrin
+					["provider"] = { "n", 56027 },	-- Stormherald Eljrrin
 				}),
 				q(29860, {	-- Diametrically Opposed
-					["qg"] = 56027,	-- Stormherald Eljrrin
+					["provider"] = { "n", 56027 },	-- Stormherald Eljrrin
 					["g"] = {
 						i(43193),	-- Lightning Infused Mantle
 						i(43194),	-- Charred Leather Shoulderguards
@@ -23,7 +23,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(29861, {	-- Whatever it Takes!
-					["qg"] = 56027,	-- Stormherald Eljrrin
+					["provider"] = { "n", 56027 },	-- Stormherald Eljrrin
 					["sourceQuests"] = { 29863 },	-- Stormherald Eljrrin
 					["g"] = {
 						i(42844),	-- Robes of Lightning

@@ -9,7 +9,7 @@ _.Zones =
 				prof(171, {	-- Alchemy
 					n(-17, {	-- Quests
 						q(29481, {	-- Elixir Master
-							["qg"] = 4611,	-- Doctor Herbert Halsey (Undercity)
+							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy	
@@ -24,7 +24,7 @@ _.Zones =
 							},]]								
 						}),
 						q(29067, {	-- Potion Master
-							["qg"] = 4611,	-- Doctor Herbert Halsey (Undercity)
+							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -39,7 +39,7 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["qg"] = 4611,	-- Doctor Herbert Halsey (Undercity)
+							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -63,7 +63,7 @@ _.Zones =
 					}),
 					n(-17, {	-- Quests
 						q(29317, {	-- Fish Head
-							["qg"] = 4573,	-- Armand Cromwell
+							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -79,7 +79,7 @@ _.Zones =
 							},
 						}),
 						q(29320, {	-- Like Pike?
-							["qg"] = 4573,	-- Armand Cromwell
+							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -95,7 +95,7 @@ _.Zones =
 							},
 						}),
 						q(29361, {	-- Moat Monster!
-							["qg"] = 4573,	-- Armand Cromwell
+							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -111,7 +111,7 @@ _.Zones =
 							},
 						}),
 						q(29319, {	-- Tadpole Terror
-							["qg"] = 4573,	-- Armand Cromwell
+							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -127,7 +127,7 @@ _.Zones =
 							},
 						}),
 						q(29322, {	-- Time for Slime
-							["qg"] = 4573,	-- Armand Cromwell
+							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
@@ -152,7 +152,7 @@ _.Zones =
 					}),
 					n(-17, { 	-- Quests
 						q(29333, {	-- Escargot A Go-Go
-							["qg"] = 4552,	-- Eunice Burch
+							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -163,7 +163,7 @@ _.Zones =
 							},
 						}),
 						q(29315, {	-- Fungus Among Us
-							["qg"] = 4552,	-- Eunice Burch
+							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -174,7 +174,7 @@ _.Zones =
 							},
 						}),
 						q(29332, {	-- Lily, Oh Lily
-							["qg"] = 4552,	-- Eunice Burch
+							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -185,7 +185,7 @@ _.Zones =
 							},
 						}),
 						q(29334, {	-- Roach Coach
-							["qg"] = 4552,	-- Eunice Burch
+							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -196,7 +196,7 @@ _.Zones =
 							},
 						}),
 						q(29360, {	-- Would You Like Some Flies With That?
-							["qg"] = 4552,	-- Eunice Burch
+							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking

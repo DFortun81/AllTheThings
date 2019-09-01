@@ -37,7 +37,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			n(-17, {	-- Quests
 				q(55609, {	-- Operation: Mechagon - The Mechoriginator
 					["sourceQuests"] = { 55736 },	-- Welcome to the Resistance
-					["qg"] = 149816,	-- Prince Erazmin
+					["provider"] = { "n", 149816 },	-- Prince Erazmin
 				}),
 			}),
 			d(23,  {	-- Mythic
@@ -146,7 +146,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 										--["sourceQuests"] = { },
 										["coord"] = { 36.2, 36.8, 864 },
 										["races"] = ALLIANCE_ONLY,
-										["qg"] = 136559,	-- Jani <Loa of Scavengers>
+										["provider"] = { "n", 136559 },	-- Jani <Loa of Scavengers>
 										["g"] = {
 											i(169394), 	-- Richly Appointed Drape
 											title(324),	-- Trashmaster
@@ -156,7 +156,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 										--["sourceQuests"] = { },
 										["coord"] = { 35.3, 7.70, 1165 },
 										["races"] = HORDE_ONLY,
-										["qg"] = 126334,	-- Jani <Loa of Scavengers>
+										["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
 										["g"] = {
 											i(169394), 	-- Richly Appointed Drape
 											title(324),	-- Trashmaster

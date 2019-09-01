@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 		n(-10060, {	-- Arena of Annihilation
 			n(-17, {	-- Quests
 				q(31207, {	-- The Arena of Annihilation
-					["qg"] = 63315,	-- Gurgthock
+					["provider"] = { "n", 63315 },	-- Gurgthock
 					["coord"] = { 68.6, 48.4, 379 },
 					["lvl"] = 90,
 					["maps"] = { 379 },	-- Kun-Lai Summit

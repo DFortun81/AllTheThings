@@ -16,7 +16,7 @@ _.Zones =
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 					["coord"] = { 29.9, 40.4, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 135976,	-- Morwin Gladeheart
+					["provider"] = { "n", 135976 },	-- Morwin Gladeheart
 					-- May have additional/different source quest(s); needs confirmation.
 					-- Not required for "Drust Do It."
 				}),
@@ -24,30 +24,30 @@ _.Zones =
 					["sourceQuests"] = { 48986 },	-- Take the High Road
 					["coord"] = { 36.8, 50.1, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 129642,	-- Lucille Waycrest
+					["provider"] = { "n", 129642 },	-- Lucille Waycrest
 				}),
 				q(50327, {	-- A Little 'Pick Me Up'
 					["sourceQuests"] = { 50306 },	-- Odds and Ends
 					["coord"] = { 20.6, 57.4, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 133126,	-- Marten Webb
+					["provider"] = { "n", 133126 },	-- Marten Webb
 					-- May have additional requirements; needs confirmation.
 				}),
 				q(50174, {	-- All Wrapped Up
-					["qg"] = 132374,	-- Elsie Wright
+					["provider"] = { "n", 132374 },	-- Elsie Wright
 					["coord"] = { 34.6, 30.71, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50149 },	-- A Weather Eye
 					-- May be available earlier; needs confirmation.
 				}),
 				q(50903, {	-- A Missing Master
-					["qg"] = 131469,	-- Marten Webb
+					["provider"] = { "n", 131469 },	-- Marten Webb
 					["coord"] = { 25.5, 70.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49939 },	-- So Long, Sister
 				}),
 				q(48538, {	-- An Airtight Alibi
-					["qg"] = 126310,	-- Evelyn Pare
+					["provider"] = { "n", 126310 },	-- Evelyn Pare
 					["coord"] = { 70.0, 60.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48523 },	-- The Murderous Matron
@@ -57,7 +57,7 @@ _.Zones =
 					["sourceQuests"] = { 48538 },	-- An Airtight Alibi
 					["coord"] = { 70.0, 42.8, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 125380,	-- Lucille Waycrest
+					["provider"] = { "n", 125380 },	-- Lucille Waycrest
 					["g"] = {
 						i(155126),	-- Reade's Waraxe
 						i(155152),	-- Witchrend Greatsword
@@ -72,7 +72,7 @@ _.Zones =
 					},
 				}),
 				q(50988, {	-- An Economic Opportunity
-					["qg"] = 136234,	-- Cesi Loosecannon
+					["provider"] = { "n", 136234 },	-- Cesi Loosecannon
 					["coord"] = { 22.8, 46.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
@@ -80,14 +80,14 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(50175, {	-- An Eight-Legged Curse
-					["qg"] = 132374,	-- Elsie Wright
+					["provider"] = { "n", 132374 },	-- Elsie Wright
 					["coord"] = { 34.6, 30.71, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50149 },	-- A Weather Eye
 					-- May be available earlier; needs confirmation.
 				}),
 				q(49807, {	-- A New Order
-					["qg"] = 129642,	-- Lucille Waycrest
+					["provider"] = { "n", 129642 },	-- Lucille Waycrest
 					["coord"] = { 36.8, 50.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -106,19 +106,19 @@ _.Zones =
 					},
 				}),
 				q(50253, {	-- An Improvised Arsenal
-					["qg"] = 131638,	-- Lucille Waycrest
+					["provider"] = { "n", 131638 },	-- Lucille Waycrest
 					["coord"] = { 31.4, 30.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50151 },	-- A Steady Ballast
 				}),
 				q(50450, {	-- An Offensive Harvest
-					["qg"] = 133839,	-- Harris Hocking
+					["provider"] = { "n", 133839 },	-- Harris Hocking
 					["coord"] = { 27.0, 25.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50449 },	-- Reeking Refuge
 				}),
 				q(48113, {	-- A Pungent Solution
-					["qg"] = 125380,	-- Lucille Waycrest
+					["provider"] = { "n", 125380 },	-- Lucille Waycrest
 					["coord"] = { 70.0, 42.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48111 },	-- Trial by Superstition
@@ -128,39 +128,39 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest appears to drop from whichever Sister you kill last.",
 					["sourceQuests"] = { 48520 },	-- The Three Sisters
-					["qgs"] = {
+					["crs"] = {
 						126144,	-- Sister Ashwell
 						126522,	-- Sister Early
 						126523,	-- Sister Mooring
 					},
 				}),
 				q(48682, {	-- A Simple Sacrifice
-					["qg"] = 127396,	-- Initiate Peony
+					["provider"] = { "n", 127396 },	-- Initiate Peony
 					["coord"] = { 59.0, 22.3, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48679 },	-- Mind the Hives
 				}),
 				q(51018, {	-- Asking for a Friend
-					["qg"] = 136184,	-- Kane Carlyle
+					["provider"] = { "n", 136184 },	-- Kane Carlyle
 					["coord"] = { 20.8, 46.0, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50978 },	-- Out With the Old Boss
 					-- Not required for "Drust Do It."
 				}),
 				q(48941, {	-- A Slight Detour
-					["qg"] = 125380,	-- Lucille Waycrest
+					["provider"] = { "n", 125380 },	-- Lucille Waycrest
 					["coord"] = { 69.6, 43.3, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49259 },	-- And Justice For All
 				}),
 				q(50151, {	-- A Steady Ballast
-					["qg"] = 131636,	-- Marshal Everit Reade
+					["provider"] = { "n", 131636 },	-- Marshal Everit Reade
 					["coord"] = { 31.36, 30.31, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50149 },	-- A Weather Eye
 				}),
 				q(50454, {	-- A Traitor's Death
-					["qg"] = 131636,	-- Marshal Everit Reade
+					["provider"] = { "n", 131636 },	-- Marshal Everit Reade
 					["coord"] = { 31.3, 30.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50453 },	-- Barrier Buster (must be ON quest to pick up this one)
@@ -176,31 +176,31 @@ _.Zones =
 					},
 				}),
 				q(50036, {	-- A Weapon of Old
-					["qg"] = 131448,	-- Warren Ashton
+					["provider"] = { "n", 131448 },	-- Warren Ashton
 					["coord"] = { 25.2, 67.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50092 },	-- Curiously Strong
 				}),
 				q(50149, {	-- A Weather Eye
-					["qg"] = 131636,	-- Marshal Everit Reade
+					["provider"] = { "n", 131636 },	-- Marshal Everit Reade
 					["coord"] = { 31.2, 29.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50003 },	-- The First Watch
 				}),
 				q(50453, {	-- Barrier Buster
-					["qg"] = 132193,	-- Angus Ballaster
+					["provider"] = { "n", 132193 },	-- Angus Ballaster
 					["coord"] = { 31.7, 29.5, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50446 },	-- Witchrending
 				}),
 				q(47947, {	-- Big Bad Wolves
-					["qg"] = 124786,	-- Thomas Staughton
+					["provider"] = { "n", 124786 },	-- Thomas Staughton
 					["coord"] = { 63.2, 27.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47945 },	-- To Market, To Market
 				}),
 				q(48883, {	-- Big Gulls Won't Die
-					["qg"] = 127558,	-- Art Hughie
+					["provider"] = { "n", 127558 },	-- Art Hughie
 					["coord"] = { 71.7, 50.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48880, 48904 },	-- Mean Gulls & Take the Bait
@@ -214,40 +214,40 @@ _.Zones =
 					-- May also require "The Reel Deal;" needs confirmation.
 				}),
 				q(50266, {	-- Bittersweet
-					["qg"] = 133101,	-- Samantha Sweet
+					["provider"] = { "n", 133101 },	-- Samantha Sweet
 					["coord"] = { 21.1, 55.0, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50265 },	-- Saving Master Ashton (must be ON quest to pick this one up)
 				}),
 				q(50761, {	-- Blood in the Chapel
-					["qg"] = 132994,	-- Lord Arthur Waycrest
+					["provider"] = { "n", 132994 },	-- Lord Arthur Waycrest
 					["coord"] = { 23.2, 12.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50760 },	-- From This Day Forward
 					-- Not required for "Drust Do It."
 				}),
 				q(52075, {	-- Boned
-					["qg"] = 139912,	-- Ranger Wons
+					["provider"] = { "n", 139912 },	-- Ranger Wons
 					["coord"] = { 61.9, 59.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 52074 },	-- Deliverance
 					-- Not required for "Drust Do It."
 				}),
 				q(50238, {	-- Bramblethorn
-					["qg"] = 132966,	-- Lynn Sweet
+					["provider"] = { "n", 132966 },	-- Lynn Sweet
 					["coord"] = { 26.9, 71.3, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49939 },	-- So Long, Sister
 					-- Not required for "Drust Do It."
 				}),
 				q(50001, {	-- Breaking Hag
-					["qg"] = 131879,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 131879 },	-- Inquisitor Cleardawn
 					["coord"] = { 26.9, 65.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49896 },	-- To Falconhurst
 				}),
 				q(50457, {	-- Break on Through
-					["qg"] = 131642,	-- Inquisitor Sterntide
+					["provider"] = { "n", 131642 },	-- Inquisitor Sterntide
 					["coord"] = { 30.6, 21.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50453 },	-- Barrier Buster
@@ -257,7 +257,7 @@ _.Zones =
 					["sourceQuests"] = { 50903 },	-- A Missing Master
 					["coord"] = { 25.5, 70.1, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 131442,	-- Leandro Royston
+					["provider"] = { "n", 131442 },	-- Leandro Royston
 					["g"] = {
 						i(160189),	-- Wickerwoven Footwraps
 						i(160190),	-- Banisher Footwraps
@@ -271,13 +271,13 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(49803, {	-- Changing of the Guard
-					["qg"] = 129643,	-- Marshal Everit Reade
+					["provider"] = { "n", 129643 },	-- Marshal Everit Reade
 					["coord"] = { 36.9, 50.0, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
 				}),
 				q(48683, {	-- Changing Seasons
-					["qg"] = 127418,	-- Edwin Maldus
+					["provider"] = { "n", 127418 },	-- Edwin Maldus
 					["coord"] = { 56.5, 23.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48682 },	-- A Simple Sacrifice
@@ -298,20 +298,20 @@ _.Zones =
 					}),
 				}),
 				q(49295, {	-- Clear-Cutting
-					["qg"] = 126310,	-- Evelyn Pare
+					["provider"] = { "n", 126310 },	-- Evelyn Pare
 					["coord"] = { 70.0, 60.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48171 },	-- The Curse of Fletcher's Hollow
 				}),
 				q(49898, {	-- Clear Victory
-					["qg"] = 135085,	-- Captain Lilian Nottley
+					["provider"] = { "n", 135085 },	-- Captain Lilian Nottley
 					["coord"] = { 39.7, 57.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49805 },	-- Implements of Ill Intent
 					-- May be available earlier; needs confirmation.
 				}),
 				q(50445, {	-- Controlling the Situation
-					["qg"] = 133105,	-- Warren Ashton
+					["provider"] = { "n", 133105 },	-- Warren Ashton
 					["coord"] = { 24.5, 56.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50370 },	-- Deeper Into the Woods
@@ -327,7 +327,7 @@ _.Zones =
 					}),
 				}),
 				q(48524, {	-- Culling the Coven
-					["qg"] = 126310,	-- Evelyn Pare
+					["provider"] = { "n", 126310 },	-- Evelyn Pare
 					["coord"] = { 70.0, 60.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -337,47 +337,47 @@ _.Zones =
 					},
 				}),
 				q(47950, {	-- Cured Ham
-					["qg"] = 124786,	-- Thomas Staughton
+					["provider"] = { "n", 124786 },	-- Thomas Staughton
 					["coord"] = { 63.2, 27.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47949 },	-- That's Not My Fetish
 					-- May have additional source quests; needs confirmation.
 				}),
 				q(50092, {	-- Curiously Strong
-					["qg"] = 131448,	-- Warren Ashton
+					["provider"] = { "n", 131448 },	-- Warren Ashton
 					["coord"] = { 25.3, 67.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50903 },	-- A Missing Master
 				}),
 				q(51020, {	-- Cutthroat Business Practices
-					["qg"] = 136227,	-- Fixi Slyshiv
+					["provider"] = { "n", 136227 },	-- Fixi Slyshiv
 					["coord"] = { 20.8, 46.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50988 },	-- An Economic Opportunity
 					-- Not required for "Drust Do It."
 				}),
 				q(50370, {	-- Deeper Into the Woods
-					["qg"] = 133098,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 133098 },	-- Inquisitor Cleardawn
 					["coord"] = { 20.6, 57.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50327 },	-- A Little 'Pick Me Up'
 				}),
 				q(52074, {	-- Deliverance
-					["qg"] = 125457,	-- Rebecca Hale
+					["provider"] = { "n", 125457 },	-- Rebecca Hale
 					["coord"] = { 64.5, 54.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48947 },	-- Gol Koval
 					-- Not required for "Drust Do It."
 				}),
 				q(50152, {	-- Digging for Scraps
-					["qg"] = 131641,	-- Inquisitor Yorrick
+					["provider"] = { "n", 131641 },	-- Inquisitor Yorrick
 					["coord"] = { 26.2, 36.0, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50149 },	-- A Weather Eye
 					-- May be available earlier; needs confirmation.
 				}),
 				q(48963, {	-- Diversionary Tactics
-					["qg"] = 127715,	-- Lucille Waycrest
+					["provider"] = { "n", 127715 },	-- Lucille Waycrest
 					["coord"] = { 44.7, 28.5, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -387,7 +387,7 @@ _.Zones =
 					-- May only require "Yeti to Rumble;" needs confirmation.
 				}),
 				q(49890, {	-- Drustfall
-					["qg"] = 130933,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 130933 },	-- Inquisitor Cleardawn
 					["coord"] = { 36.5, 61.3, 896 },	-- may change if the stones aren't always in the same order?
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -401,26 +401,26 @@ _.Zones =
 					},
 				}),
 				q(50451, {	-- Eating Through the Defenses
-					["qg"] = 133839,	-- Harris Hocking
+					["provider"] = { "n", 133839 },	-- Harris Hocking
 					["coord"] = { 27.0, 25.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50449 },	-- Reeking Refuge
 				}),
 				q(52149, {	-- Everburning
-					["qg"] = 129642,	-- Lucille Waycrest
+					["provider"] = { "n", 129642 },	-- Lucille Waycrest
 					["coord"] = { 36.8, 50.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50533 },	-- Stick It To 'Em!
 				}),
 				q(51001, {	-- Every Day I'm Smugglin'
-					["qg"] = 136140,	-- Clonk Greaseybit
+					["provider"] = { "n", 136140 },	-- Clonk Greaseybit
 					["coord"] = { 20.9, 43.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50978 },	-- Out With the Old Boss
 					-- Not required for "Drust Do It."
 				}),
 				q(50063, {	-- Fighting with Fire
-					["qg"] = 131448,	-- Warren Ashton
+					["provider"] = { "n", 131448 },	-- Warren Ashton
 					["coord"] = { 25.2, 67.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50036 },	-- A Weapon of Old
@@ -431,20 +431,20 @@ _.Zones =
 					},
 				}),
 				q(50760, {	-- From This Day Forward
-					["qg"] = 134953,	-- Alexander Treadward
+					["provider"] = { "n", 134953 },	-- Alexander Treadward
 					["coord"] = { 23.3, 12.5, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50759 },	-- Running Late
 					-- Not required for "Drust Do It."
 				}),
 				q(47980, {	-- Furious Familiars
-					["qg"] = 125093,	-- Fallhaven Villager
+					["provider"] = { "n", 125093 },	-- Fallhaven Villager
 					["coord"] = { 60.8, 30.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47979 },	-- Witch Hunt (must be ON this quest and sit on the stool for this quest to become available)
 				}),
 				q(48947, {	-- Gol Koval
-					["qg"] = 127743,	-- Auntie Amanda Hale
+					["provider"] = { "n", 127743 },	-- Auntie Amanda Hale
 					["coord"] = { 69.5, 43.7, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Deliverance"
@@ -452,26 +452,26 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(50953, {	-- Greenstalker
-					["qg"] = 135861,	-- Adalyn Forestwatcher
+					["provider"] = { "n", 135861 },	-- Adalyn Forestwatcher
 					["coord"] = { 33.4, 65.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 51543 },	-- Saplings in the Snow
 					-- Not required for "Drust Do It."
 				}),
 				q(48165, {	-- Harmful If Swallowed
-					["qg"] = 125380,	-- Lucille Waycrest
+					["provider"] = { "n", 125380 },	-- Lucille Waycrest
 					["coord"] = { 70.0, 42.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48111 },	-- Trial by Superstition
 				}),
 				q(50585, {	-- Hexecutioner
-					["qg"] = 131636,	-- Marshal Everit Reade
+					["provider"] = { "n", 131636 },	-- Marshal Everit Reade
 					["coord"] = { 31.0, 20.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50457 },	-- Break on Through
 				}),
 				q(50456, {	-- Hexed Hatchlings
-					["qg"] = 131640,	-- Inquisitor Notley
+					["provider"] = { "n", 131640 },	-- Inquisitor Notley
 					["coord"] = { 31.2, 22.7, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50446 },	-- Witchrending
@@ -485,7 +485,7 @@ _.Zones =
 					["itemID"] = 156517,	-- Hastily Drawn Map
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49804 },	-- Sharp Thinking
-					["qgs"] = {
+					["crs"] = {
 						129575,	-- Corlain Refugee
 						129641,	-- Corlain Refugee
 					},
@@ -497,7 +497,7 @@ _.Zones =
 					},
 					["coord"] = { 25.7, 70.2, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 131879,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 131879 },	-- Inquisitor Cleardawn
 					["g"] = {
 						i(158623),	-- Wickerwoven Cinch
 						i(158624),	-- Banisher Strap
@@ -511,13 +511,13 @@ _.Zones =
 
 				}),
 				q(48517, {	-- Honorable Discharge
-					["qg"] = 129983,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 129983 },	-- Inquisitor Cleardawn
 					["coord"] = { 40.2, 56.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48504 },	-- Through the Old Roads
 				}),
 				q(48519, {	-- Hope They Can't Swim
-					["qg"] = 126310,	-- Evelyn Pare
+					["provider"] = { "n", 126310 },	-- Evelyn Pare
 					["coord"] = { 70.0, 60.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -533,7 +533,7 @@ _.Zones =
 					},
 				}),
 				q(53109, {	-- House Waycrest
-					["qg"] = 142651,	-- Lucille Waycrest
+					["provider"] = { "n", 142651 },	-- Lucille Waycrest
 					["coord"] = { 36.0, 51.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 52149 },	-- Everburning
@@ -560,13 +560,13 @@ _.Zones =
 					}),
 				}),
 				q(48110, {	-- In Case of Ambush
-					["qg"] = 125385,	-- Marshal Everit Reade
+					["provider"] = { "n", 125385 },	-- Marshal Everit Reade
 					["coord"] = { 69.7, 43.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48283 },	-- Standing Accused
 				}),
 				q(50481, {	-- In the Hall of the Drust King
-					["qg"] = 133098,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 133098 },	-- Inquisitor Cleardawn
 					["coord"] = { 24.5, 56.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -578,13 +578,13 @@ _.Zones =
 					},
 				}),
 				q(50172, {	-- Into the Crimsonwood
-					["qg"] = 131879,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 131879 },	-- Inquisitor Cleardawn
 					["coord"] = { 25.1, 67.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50063 },	-- Fighting with Fire
 				}),
 				q(47428, {	-- Kitty?
-					["qg"] = 122169,	-- Abby Lewis
+					["provider"] = { "n", 122169 },	-- Abby Lewis
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47289 },	-- Teddies and Tea
 					["coords"] = {	-- Based on which toy you pick up last.
@@ -595,7 +595,7 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(50455, {	-- Leaving the Nest
-					["qg"] = 131640,	-- Inquisitor Notley
+					["provider"] = { "n", 131640 },	-- Inquisitor Notley
 					["coord"] = { 31.2, 22.7, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50446 },	-- Witchrending
@@ -603,7 +603,7 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(51472, {	-- Life Preserver
-					["qg"] = 137732,	-- Zallestrasza
+					["provider"] = { "n", 137732 },	-- Zallestrasza
 					["coord"] = { 33.5, 65.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50953 },	-- Greenstalker
@@ -620,14 +620,14 @@ _.Zones =
 					},
 				}),
 				q(48477, {	-- Looking for One More
-					["qg"] = 126240,	-- Bridget Fairwater
+					["provider"] = { "n", 126240 },	-- Bridget Fairwater
 					["coord"] = { 59.8, 48.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48476 },	-- Split Party
 					-- Not required for "Drust Do It."
 				}),
 				q(50967, {	-- Lost in the Woods
-					["qg"] = 135976,	-- Morwin Gladeheart
+					["provider"] = { "n", 135976 },	-- Morwin Gladeheart
 					["coord"] = { 29.9, 40.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
@@ -635,38 +635,38 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(50329, {	-- Matrons of the Crimsonwood
-					["qg"] = 133105,	-- Warren Ashton
+					["provider"] = { "n", 133105 },	-- Warren Ashton
 					["coord"] = { 24.5, 56.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50370 },	-- Deeper Into the Woods
 				}),
 				q(48880, {	-- Mean Gulls
-					["qg"] = 127558,	-- Art Hughie
+					["provider"] = { "n", 127558 },	-- Art Hughie
 					["coord"] = { 71.7, 50.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 					-- May have different source quest(s); needs confirmation.
 				}),
 				q(48792, {	-- Menace to Society
-					["qg"] = 127015,	-- Thaddeus "Gramps" Rifthold
+					["provider"] = { "n", 127015 },	-- Thaddeus "Gramps" Rifthold
 					["coord"] = { 53.9, 27.0, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48948 },	-- The North Pass Caverns
 				}),
 				q(48679, {	-- Mind the Hives
-					["qg"] = 127080,	-- Lord Autumnvale
+					["provider"] = { "n", 127080 },	-- Lord Autumnvale
 					["coord"] = { 59.4, 21.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48678 },	-- Questionable Offerings
 				}),
 				q(48804, {	-- Mistakes Were Made
-					["qg"] = 127157,	-- Marcus Howlingdale
+					["provider"] = { "n", 127157 },	-- Marcus Howlingdale
 					["coord"] = { 51.4, 23.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48793 },	-- The Adventurer's Society
 				}),
 				q(50306, {	-- Odds and Ends
-					["qg"] = 133126,	-- Marten Webb
+					["provider"] = { "n", 133126 },	-- Marten Webb
 					["coord"] = { 20.6, 57.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50172 },	-- Into the Crimsonwood
@@ -680,27 +680,27 @@ _.Zones =
 					},
 				}),
 				q(48170, {	-- Once Bitten, Twice Shy
-					["qg"] = 125380,	-- Lucille Waycrest
+					["provider"] = { "n", 125380 },	-- Lucille Waycrest
 					["coord"] = { 70.0, 42.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48111 },	-- Trial by Superstition
 				}),
 				q(50763, {	-- One Last Request
-					["qg"] = 135200,	-- Alexander Treadward
+					["provider"] = { "n", 135200 },	-- Alexander Treadward
 					["coord"] = { 23.3, 17.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50762 },	-- The Lady's Fate
 					-- Not required for "Drust Do It."
 				}),
 				q(50911, {	-- One Man Against the Horde
-					["qg"] = 135673,	-- Scout McKellis
+					["provider"] = { "n", 135673 },	-- Scout McKellis
 					["coord"] = { 34.6, 39.7, 896 },
 					["races"] = ALLIANCE_ONLY,
 					--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
 					-- Not required for "Drust Do It."
 				}),
 				q(50978, {	-- Out With the Old Boss
-					["qg"] = 136234,	-- Cesi Loosecannon
+					["provider"] = { "n", 136234 },	-- Cesi Loosecannon
 					["coord"] = { 20.6, 46.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -722,14 +722,14 @@ _.Zones =
 					},
 				}),
 				q(50758, {	-- Painful Memories
-					["qg"] = 135200,	-- Alexander Treadward
+					["provider"] = { "n", 135200 },	-- Alexander Treadward
 					["coord"] = { 23.2, 17.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50754 },	-- To Have Loved and Lost
 					-- Not required for "Drust Do It."
 				}),
 				q(48184, {	-- Pieces of History
-					["qg"] = 129983,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 129983 },	-- Inquisitor Cleardawn
 					["coord"] = { 40.2, 56.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48504 },	-- Through the Old Roads
@@ -738,7 +738,7 @@ _.Zones =
 					["sourceQuests"] = { 47945 },	-- To Market, To Market
 					["coord"] = { 63.2, 27.1, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 124786,	-- Thomas Staughton
+					["provider"] = { "n", 124786 },	-- Thomas Staughton
 					["g"] = {
 						i(155150),	-- Swinestained Saber
 						i(158641),	-- Pork-Chopper Pike
@@ -751,7 +751,7 @@ _.Zones =
 					},
 				}),
 				q(50452, {	-- Potent Protection
-					["qg"] = 133839,	-- Harris Hocking
+					["provider"] = { "n", 133839 },	-- Harris Hocking
 					["coord"] = { 27.0, 25.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -763,33 +763,33 @@ _.Zones =
 					},
 				}),
 				q(50929, {	-- Powder to the People
-					["qg"] = 135673,	-- Scout McKellis
+					["provider"] = { "n", 135673 },	-- Scout McKellis
 					["coord"] = { 34.6, 39.7, 896 },
 					["races"] = ALLIANCE_ONLY,
 					--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
 					-- Not required for "Drust Do It."
 				}),
 				q(50173, {	-- Precious Metals
-					["qg"] = 131638,	-- Lucille Waycrest
+					["provider"] = { "n", 131638 },	-- Lucille Waycrest
 					["coord"] = { 31.4, 30.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50149 },	-- A Weather Eye
 				}),
 				q(48678, {	-- Questionable Offerings
-					["qg"] = 127080,	-- Lord Autumnvale
+					["provider"] = { "n", 127080 },	-- Lord Autumnvale
 					["coord"] = { 59.4, 21.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48677 },	-- Wicker Worship
 				}),
 				q(49242, {	-- Quill or Be Quilled
-					["qg"] = 128494,	-- Adela Hawthorne
+					["provider"] = { "n", 128494 },	-- Adela Hawthorne
 					["coord"] = { 66.9, 42.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48111 },	-- Trial by Superstition
 					-- May be available slightly earlier; needs confirmation.
 				}),
 				q(48180, {	-- Really Big Problem
-					["qg"] = 140048,	-- Arthur Tradewind
+					["provider"] = { "n", 140048 },	-- Arthur Tradewind
 					["coord"] = { 58.4, 63.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
@@ -797,14 +797,14 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(50449, {	-- Reeking Refuge
-					["qg"] = 131639,	-- Inquisitor Mace
+					["provider"] = { "n", 131639 },	-- Inquisitor Mace
 					["coord"] = { 28.5, 25.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
 					-- May be available earlier; needs confirmation.
 				}),
 				q(50447, {	-- Remembering the Fallen
-					["qg"] = 134009,	-- Corlain Townsperson
+					["provider"] = { "n", 134009 },	-- Corlain Townsperson
 					["coord"] = { 29.2, 29.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
@@ -819,7 +819,7 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(48179, {	-- Rescue Rangers
-					["qg"] = 139912,	-- Ranger Wons
+					["provider"] = { "n", 139912 },	-- Ranger Wons
 					["coord"] = { 61.9, 59.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 52074 },	-- Deliverance
@@ -843,26 +843,26 @@ _.Zones =
 					}),
 				}),
 				q(50584, {	-- Ruinous Rituals
-					["qg"] = 131636,	-- Marshal Everit Reade
+					["provider"] = { "n", 131636 },	-- Marshal Everit Reade
 					["coord"] = { 31.0, 20.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50457 },	-- Break on Through
 				}),
 				q(50759, {	-- Running Late
-					["qg"] = 134953,	-- Alexander Treadward
+					["provider"] = { "n", 134953 },	-- Alexander Treadward
 					["coord"] = { 23.3, 12.5, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50758 },	-- Painful Memories
 					-- Not required for "Drust Do It."
 				}),
 				q(48943, {	-- Salvage Rights
-					["qg"] = 127715,	-- Lucille Waycrest
+					["provider"] = { "n", 127715 },	-- Lucille Waycrest
 					["coord"] = { 46.1, 33.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48941 },	-- A Slight Detour
 				}),
 				q(51543, {	-- Saplings in the Snow
-					["qg"] = 135861,	-- Adalyn Forestwatcher
+					["provider"] = { "n", 135861 },	-- Adalyn Forestwatcher
 					["coord"] = { 33.4, 65.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
@@ -871,25 +871,25 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(47946, {	-- Save Their Bacon
-					["qg"] = 124786,	-- Thomas Staughton
+					["provider"] = { "n", 124786 },	-- Thomas Staughton
 					["coord"] = { 63.2, 27.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47945 },	-- To Market, To Market
 				}),
 				q(48518, {	-- Save Who We Can
-					["qg"] = 126310,	-- Evelyn Pare
+					["provider"] = { "n", 126310 },	-- Evelyn Pare
 					["coord"] = { 70.0, 60.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48171 },	-- The Curse of Fletcher's Hollow
 				}),
 				q(50265, {	-- Saving Master Ashton
-					["qg"] = 133098,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 133098 },	-- Inquisitor Cleardawn
 					["coord"] = { 20.6, 57.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50172 },	-- Into the Crimsonwood
 				}),
 				q(48475, {	-- Seeing Spirits
-					["qg"] = 126210,	-- Caretaker Allen
+					["provider"] = { "n", 126210 },	-- Caretaker Allen
 					["coord"] = { 62.5, 42.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
@@ -897,7 +897,7 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(49804, {	-- Sharp Thinking
-					["qg"] = 129642,	-- Lucille Waycrest
+					["provider"] = { "n", 129642 },	-- Lucille Waycrest
 					["coord"] = { 36.8, 50.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
@@ -906,7 +906,7 @@ _.Zones =
 					},
 				}),
 				q(51019, {	-- She's Got it Where it Counts
-					["qg"] = 136233,	-- Klause Fairwind
+					["provider"] = { "n", 136233 },	-- Klause Fairwind
 					["coord"] = { 19.8, 44.3, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50988 },	-- An Economic Opportunity
@@ -920,45 +920,45 @@ _.Zones =
 					}),
 				}),
 				q(49939, {	-- So Long, Sister
-					["qg"] = 131879,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 131879 },	-- Inquisitor Cleardawn
 					["coord"] = { 25.7, 70.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50177 },	-- Hold the Barricade!
 				}),
 				q(50251, {	-- Spell Bound
-					["qg"] = 131579,	-- Captive Villager
+					["provider"] = { "n", 131579 },	-- Captive Villager
 					["coord"] = { 26.1, 66.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49896 },	-- To Falconhurst
 				}),
 				q(48476, {	-- Split Party
-					["qg"] = 126225,	-- Aaron Cresterly
+					["provider"] = { "n", 126225 },	-- Aaron Cresterly
 					["coord"] = { 60.7, 46.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48475 },	-- Seeing Spirits
 					-- Not required for "Drust Do It."
 				}),
 				q(48283, {	-- Standing Accused
-					["qg"] = 125394,	-- Constable Henry Framer
+					["provider"] = { "n", 125394 },	-- Constable Henry Framer
 					["coord"] = { 70.1, 42.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48108 },	-- The Waycrest Daughter
 				}),
 				q(50533, {	-- Stick It To 'Em!
-					["qg"] = 134301,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 134301 },	-- Inquisitor Cleardawn
 					["coord"] = { 27.0, 57.9, 896 },	-- Coordinates may vary slightly; the NPCs follow you when outside the cave.
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50481 },	-- In the Hall of the Drust King
 					-- Awarded "Stick It To 'Em!" criteria & overall "Drust Do It." achievement.
 				}),
 				q(50325, {	-- Stopping the Grand Rite
-					["qg"] = 133098,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 133098 },	-- Inquisitor Cleardawn
 					["coord"] = { 24.5, 56.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50370 },	-- Deeper Into the Woods
 				}),
 				q(50588, {	-- Storming the Manor
-					["qg"] = 131638,	-- Lucille Waycrest
+					["provider"] = { "n", 131638 },	-- Lucille Waycrest
 					["coord"] = { 31.0, 20.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -983,20 +983,20 @@ _.Zones =
 --						   51852	-- Storming the Manor /	-- Not sure why, but there are three versions of this quest on wowhead.
 --						   50960	-- Sweete's Orders
 				q(48904, {	-- Take the Bait
-					["qg"] = 127558,	-- Art Hughie
+					["provider"] = { "n", 127558 },	-- Art Hughie
 					["coord"] = { 71.7, 50.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 					-- May have different source quest(s); needs confirmation.
 				}),
 				q(48986, {	-- Take the High Road
-					["qg"] = 127715,	-- Lucille Waycrest
+					["provider"] = { "n", 127715 },	-- Lucille Waycrest
 					["coord"] = { 42.5, 25.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48946 },	-- The Order of Embers
 				}),
 				q(44785, {	-- Tea Party
-					["qg"] = 122493,	-- Annie Warren
+					["provider"] = { "n", 122493 },	-- Annie Warren
 					["coord"] = { 54.7, 49.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 45079 },	-- The Village of Glenbrook
@@ -1008,7 +1008,7 @@ _.Zones =
 					},
 				}),
 				q(47289, {	-- Teddies and Tea
-					["qg"] = 121603,	-- Abby Lewis
+					["provider"] = { "n", 121603 },	-- Abby Lewis
 					["coord"] = { 54.4, 39.3, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
@@ -1016,7 +1016,7 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(48853, {	-- Terminal Degree
-					["qg"] = 127157,	-- Marcus Howlingdale
+					["provider"] = { "n", 127157 },	-- Marcus Howlingdale
 					["coord"] = { 50.6, 24.3, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48804 },	-- Mistakes Were Made
@@ -1042,13 +1042,13 @@ _.Zones =
 					}),
 				}),
 				q(48793, {	-- The Adventurer's Society
-					["qg"] = 127015,	-- Thaddeus "Gramps" Rifthold
+					["provider"] = { "n", 127015 },	-- Thaddeus "Gramps" Rifthold
 					["coord"] = { 53.9, 27.0, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47982, 47948 },	-- The Final Effigy, The North Pass Caverns
 				}),
 				q(48198, {	-- The Burden of Proof
-					["qg"] = 125380,	-- Lucille Waycrest
+					["provider"] = { "n", 125380 },	-- Lucille Waycrest
 					["coord"] = { 70.0, 42.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48113, 48165, 48170 },	-- A Pungent Solution, Harmful If Swallowed, & Once Bitten, Twice Shy
@@ -1062,7 +1062,7 @@ _.Zones =
 					},
 				}),
 				q(48171, {	-- The Curse of Fletcher's Hollow
-					["qg"] = 125380,	-- Lucille Waycrest
+					["provider"] = { "n", 125380 },	-- Lucille Waycrest
 					["coord"] = { 70.0, 42.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48198 },	-- The Burden of Proof
@@ -1093,7 +1093,7 @@ _.Zones =
 					}),
 				}),
 				q(50003, {	-- The First Watch
-					["qg"] = 131636,	-- Marshal Everit Reade
+					["provider"] = { "n", 131636 },	-- Marshal Everit Reade
 					["coord"] = { 32.0, 30.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49926 },	-- The Road to Corlain
@@ -1104,7 +1104,7 @@ _.Zones =
 					},
 				}),
 				q(53110, {	-- The High Thornspeaker
-					["qg"] = 139926,	-- Thornspeaker Birchgrove
+					["provider"] = { "n", 139926 },	-- Thornspeaker Birchgrove
 					["coord"] = { 61.8, 59.3, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -1117,21 +1117,21 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(48183, {	-- The Hills Are Alive
-					["qg"] = 139926,	-- Thornspeaker Birchgrove
+					["provider"] = { "n", 139926 },	-- Thornspeaker Birchgrove
 					["coord"] = { 61.9, 59.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 52074 },	-- Deliverance
 					-- Not required for "Drust Do It."
 				}),
 				q(50762, {	-- The Lady's Fate
-					["qg"] = 132994,	-- Lord Arthur Waycrest
+					["provider"] = { "n", 132994 },	-- Lord Arthur Waycrest
 					["coord"] = { 23.2, 12.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50761 },	-- Blood in the Chapel
 					-- Not required for "Drust Do It."
 				}),
 				q(48523, {	-- The Murderous Matron
-					["qg"] = 126310,	-- Evelyn Pare
+					["provider"] = { "n", 126310 },	-- Evelyn Pare
 					["coord"] = { 70.0, 60.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -1141,14 +1141,14 @@ _.Zones =
 					},
 				}),
 				q(48948, {	-- The North Pass Caverns
-					["qg"] = 128457,	-- Maude Rifthold
+					["provider"] = { "n", 128457 },	-- Maude Rifthold
 					["coord"] = { 55.1, 35.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 47982 },	-- The Final Effigy
 				}),
 				q(48946, {	-- The Order of Embers
-					["qg"] = 127715,	-- Lucille Waycrest
+					["provider"] = { "n", 127715 },	-- Lucille Waycrest
 					["coord"] = { 42.5, 25.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48945 },	-- The Ruins of Gol Var
@@ -1167,19 +1167,19 @@ _.Zones =
 					}),
 				}),
 				q(49926, {	-- The Road to Corlain
-					["qg"] = 129643,	-- Marshal Everit Reade
+					["provider"] = { "n", 129643 },	-- Marshal Everit Reade
 					["coord"] = { 36.9, 50.0, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49807 },	-- A New Order
 				}),
 				q(48945, {	-- The Ruins of Gol Var
-					["qg"] = 127715,	-- Lucille Waycrest
+					["provider"] = { "n", 127715 },	-- Lucille Waycrest
 					["coord"] = { 44.9, 27.5, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48944 },	-- Unlocking History
 				}),
 				q(48520, {	-- The Three Sisters
-					["qg"] = 126310,	-- Evelyn Pare
+					["provider"] = { "n", 126310 },	-- Evelyn Pare
 					["coord"] = { 70.0, 60.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48519 },	-- Hope They Can't Swim
@@ -1193,7 +1193,7 @@ _.Zones =
 					}),
 				}),
 				q(48108, {	-- The Waycrest Daughter
-					["qg"] = 124417,	-- Cyril White
+					["provider"] = { "n", 124417 },	-- Cyril White
 					["coord"] = { 55.8, 35.0, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47982 },	-- The Final Effigy
@@ -1206,7 +1206,7 @@ _.Zones =
 					}),
 				}),
 				q(48109, {	-- The Woods Have Eyes
-					["qg"] = 125385,	-- Marshal Everit Reade
+					["provider"] = { "n", 125385 },	-- Marshal Everit Reade
 					["coord"] = { 69.7, 43.1, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48283 },	-- Standing Accused
@@ -1216,58 +1216,58 @@ _.Zones =
 					["itemID"] = 160027,	-- Ashenwood Relic
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 					-- May only drop while on A Farmer's Fate / Lost in the Woods as that was the point I picked it up; needs confirmation.
-					["qgs"] = {
+					["crs"] = {
 						135902,	-- Bloodbough Fungalmancer
 						135901,	-- Bloodbough Funggarian
 					},
 				}),
 				q(48504, {	-- Through the Old Roads
-					["qg"] = 135021,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 135021 },	-- Inquisitor Cleardawn
 					["coord"] = { 37.3, 50.3, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49926 },	-- The Road to Corlain (must be ON quest to pick this up)
 				}),
 				q(49896, {	-- To Falconhurst!
-					["qg"] = 130933,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 130933 },	-- Inquisitor Cleardawn
 					["coord"] = { 40.5, 62.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49890 },	-- Drustfall
 				}),
 				q(50754, {	-- To Have Loved and Lost
-					["qg"] = 131638,	-- Lucille Waycrest
+					["provider"] = { "n", 131638 },	-- Lucille Waycrest
 					["coord"] = { 31.4, 30.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
 					-- Not required for "Drust Do It."
 				}),
 				q(47945, {	-- To Market, To Market
-					["qg"] = 128467,	-- Elijah Eggleton
+					["provider"] = { "n", 128467 },	-- Elijah Eggleton
 					["coord"] = { 55.5, 34.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47982 },	-- The Final Effigy
 				}),
 				q(48182, {	-- Total Cairnage
-					["qg"] = 139926,	-- Thornspeaker Birchgrove
+					["provider"] = { "n", 139926 },	-- Thornspeaker Birchgrove
 					["coord"] = { 61.9, 59.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 52074 },	-- Deliverance
 					-- Not required for "Drust Do It."
 				}),
 				q(50583, {	-- To the Other Side
-					["qg"] = 131638,	-- Lucille Waycrest
+					["provider"] = { "n", 131638 },	-- Lucille Waycrest
 					["coord"] = { 30.9, 20.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50457 },	-- Break on Through
 				}),
 				q(48111, {	-- Trial by Superstition
-					["qg"] = 125380,	-- Lucille Waycrest
+					["provider"] = { "n", 125380 },	-- Lucille Waycrest
 					["coord"] = { 70.0, 42.8, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48110, 48109 },	-- In Case of Ambush & The Woods Have Eyes
 				}),
 				i(158918, {	-- Bilgewater Patented Flamethrower
 					q(50897, {	-- Turn the Heat Around
-						["qg"] = 135541,	-- Bilgewater Incinerator
+						["provider"] = { "n", 135541 },	-- Bilgewater Incinerator
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 50911 },	-- One Man Against the Horde
 						-- May have earlier sourceQuest or no prerequisite; needs confirmation.
@@ -1275,7 +1275,7 @@ _.Zones =
 					}),
 				}),
 				q(48944, {	-- Unlocking History
-					["qg"] = 127715,	-- Lucille Waycrest
+					["provider"] = { "n", 127715 },	-- Lucille Waycrest
 					["coord"] = { 45.0, 27.7, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48963 },	-- Diversionary Tactics
@@ -1313,26 +1313,26 @@ _.Zones =
 					}),
 				}),
 				q(50639, {	-- Waycrest Manor: The Fallen Mother
-					["qg"] = 131638,	-- Lucille Waycrest
+					["provider"] = { "n", 131638 },	-- Lucille Waycrest
 					["coord"] = { 32.8, 15.3, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50588 },	-- Storming the Manor
 				}),
 				q(48677, {	-- Wicker Worship
-					["qg"] = 127296,	-- David Maldus
+					["provider"] = { "n", 127296 },	-- David Maldus
 					["coord"] = { 62.5, 23.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 					-- May have other/different source quest(s); needs confirmation.
 				}),
 				q(47979, {	-- Witch Hunt
-					["qg"] = 124922,	-- Helena Gentle
+					["provider"] = { "n", 124922 },	-- Helena Gentle
 					["coord"] = { 60.5, 31.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47978 },	-- The Wayward Crone
 				}),
 				q(50446, {	-- Witchrending
-					["qg"] = 131638,	-- Lucille Waycrest
+					["provider"] = { "n", 131638 },	-- Lucille Waycrest
 					["coord"] = { 31.4, 30.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
@@ -1349,13 +1349,13 @@ _.Zones =
 					},
 				}),
 				q(50530, {	-- Witch Way Out?
-					["qg"] = 133098,	-- Inquisitor Cleardawn
+					["provider"] = { "n", 133098 },	-- Inquisitor Cleardawn
 					["coord"] = { 24.5, 56.6, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50370 },	-- Deeper Into the Woods
 				}),
 				q(48942, {	-- Yeti to Rumble
-					["qg"] = 127715,	-- Lucille Waycrest
+					["provider"] = { "n", 127715 },	-- Lucille Waycrest
 					["coord"] = { 46.1, 33.4, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48941 },	-- A Slight Detour

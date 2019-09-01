@@ -8,7 +8,7 @@ _.Zones =
 			m(201, {	-- Kelp'thar Forest
 				n(-17,  {	-- Quests
 					q(25732, {	-- A Bone To Pick
-						["qg"] = 46458,	-- Budd
+						["provider"] = { "n", 46458 },	-- Budd
 						["coord"] = { 58.3, 48.6, 201 },
 						["sourceQuests"] = { 25670 },	-- DUN-dun-DUN-dun-DUN-dun
 					}),
@@ -19,7 +19,7 @@ _.Zones =
 						["sourceQuests"] = { 25587 },	-- Gimme Shelter
 					}),
 					q(25471, {	-- Across the Great Divide
-						["qg"] = 41341,	-- Erunak Stonespeaker
+						["provider"] = { "n", 41341 },	-- Erunak Stonespeaker
 						["coord"] = { 63.8, 59.9, 201 },
 						["sourceQuests"] = { 27708 },	-- The Warden's Time
 					}),
@@ -30,7 +30,7 @@ _.Zones =
 						["sourceQuests"] = { 25459 },	-- Ophidophobia
 					}),
 					q(25390, {	-- A Girl's Best Friend
-						["qg"] = 39883,	-- Adarrah
+						["provider"] = { "n", 39883 },	-- Adarrah
 						["coord"] = { 57.1, 28.7, 201 },
 						["sourceQuests"] = { 25598 },	-- Ain't Too Proud to Beg
 						["g"] = {
@@ -40,17 +40,17 @@ _.Zones =
 						},
 					}),
 					q(25389, {	-- A Taste For Tail
-						["qg"] = 39883,	-- Adarrah
+						["provider"] = { "n", 39883 },	-- Adarrah
 						["coord"] = { 57.1, 28.7, 201 },
 						["sourceQuests"] = { 25598 },	-- Ain't Too Proud to Beg
 					}),
 					q(25598, {	-- Ain't Too Proud to Beg
-						["qg"] = 39883,	-- Adarrah
+						["provider"] = { "n", 39883 },	-- Adarrah
 						["coord"] = { 57.1, 28.8, 201 },
 						["sourceQuests"] = { 25587 },	-- Gimme Shelter
 					}),
 					q(25558, {	-- All or Nothing
-						["qg"] = 40690,	-- Captain Taylor
+						["provider"] = { "n", 40690 },	-- Captain Taylor
 						["coord"] = { 45.0, 23.5, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25547 },	-- On Our Own Terms
@@ -62,7 +62,7 @@ _.Zones =
 					}),
 					q(27687, {	-- An Opened Can of Whoop Gnash
 						["itemID"] = 62138,	-- Gnash's Head
-						["qg"] = 40987,	-- Gnash
+						["provider"] = { "n", 40987 },	-- Gnash
 						["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
 						["coords"] = {	-- pats up and down
 							{ 51.6, 42.4, 201 },
@@ -75,7 +75,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(25477, {	-- Better Late Than Dead
-						["qg"] = 41248,	-- Moanah Stormhoof
+						["provider"] = { "n", 41248 },	-- Moanah Stormhoof
 						["coord"] = { 46.0, 46.8, 201 },
 						["sourceQuests"] = {
 							25558,	-- All or Nothing (A)
@@ -84,7 +84,7 @@ _.Zones =
 					}),
 					q(25503, {	-- Blackfin's Booty
 						["itemID"] = 54639,	-- Waterlogged Journal
-						["qg"] = 41183,	-- Gilblingle
+						["provider"] = { "n", 41183 },	-- Gilblingle
 						["coord"] = { 51.1, 52.0, 201 },
 						["g"] = {
 							i(59781),	-- Calanoid Shoulders
@@ -93,7 +93,11 @@ _.Zones =
 						},
 					}),
 					q(25949, {	-- Blood and Thunder!
-						["qgs"] = { 41750, 41769, 41793 },	-- Legionnaire Nazgrim (3 versions)
+						["providers"] = {
+							{ "n", 41750 },	-- Legionnaire Nazgrim
+							{ "n", 41769 },	-- Legionnaire Nazgrim
+							{ "n", 41793 },	-- Legionnaire Nazgrim
+						},
 						["coord"] = { 39.0, 32.0, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25948,	-- Bring It On!
@@ -104,25 +108,25 @@ _.Zones =
 						},
 					}),
 					q(25948, {	-- Bring It On!
-						["qg"] = 41711,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 41711 },	-- Legionnaire Nazgrim
 						["coord"] = { 39.0, 32.0, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25947,	-- Finders, Keepers
 					}),
 					q(25357, {	-- Buy Us Some Time (A)
-						["qg"] = 39887,	-- Captain Taylor
+						["provider"] = { "n", 39887 },	-- Captain Taylor
 						["coord"] = { 44.7, 22.5, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25405,	-- Rest For the Weary
 					}),
 					q(25942, {	-- Buy Us Some Time (H)
-						["qg"] = 41711,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 41711 },	-- Legionnaire Nazgrim
 						["coord"] = { 39.0, 32.0, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 25941 },	-- Rest For the Weary
 					}),
 					q(25602, {	-- Can't Start a Fire Without a Spark
-						["qg"] = 39884,	-- Captain Samir
+						["provider"] = { "n", 39884 },	-- Captain Samir
 						["coord"] = { 57.3, 28.9, 201 },
 						["sourceQuests"] = { 25598 },	-- Ain't Too Proud to Beg
 					}),
@@ -130,7 +134,7 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(25884, {	-- Come Hell or High Water
-						["qg"] = 41344,	-- Rendel Firetongue
+						["provider"] = { "n", 41344 },	-- Rendel Firetongue
 						["coord"] = { 64.2, 59.9, 201 },
 						["sourceQuests"] = { 25887 },	-- Wake of Destruction
 						["g"] = {
@@ -140,24 +144,24 @@ _.Zones =
 						},
 					}),
 					q(25657, {	-- Dah, Nunt.. Dah, Nunt...
-						["qg"] = 46338,	-- Budd
+						["provider"] = { "n", 46338 },	-- Budd
 						["coord"] = { 55.2, 38.8, 201 },
 						["sourceQuests"] = { 25651 },	-- Oh, the Insanity!
 					}),
 					q(25824, {	-- Debriefing (A)
-						["qg"] = 41341,	-- Erunak Stonespeaker
+						["provider"] = { "n", 41341 },	-- Erunak Stonespeaker
 						["coord"] = { 63.8, 59.9, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25812 },	-- Spelunking
 					}),
 					q(26007, {	-- Debriefing (H)
-						["qg"] = 41341,	-- Erunak Stonespeaker
+						["provider"] = { "n", 41341 },	-- Erunak Stonespeaker
 						["coord"] = { 63.8, 59.9, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26000,	-- Spelunking
 					}),
 					q(25743, {	-- Decisions, Decisions
-						["qg"] = 46458,	-- Budd
+						["provider"] = { "n", 46458 },	-- Budd
 						["coord"] = { 58.3, 48.6, 201 },
 						["sourceQuests"] = { 25732 },	-- A Bone To Pick
 						["g"] = {
@@ -167,7 +171,7 @@ _.Zones =
 						},
 					}),
 					q(25888, {	-- Decompression (A)
-						["qg"] = 41347,	-- Moanah Stormhoof
+						["provider"] = { "n", 41347 },	-- Moanah Stormhoof
 						["coord"] = { 63.8, 59.3, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25887 },	-- Wake of Destruction
@@ -178,7 +182,7 @@ _.Zones =
 						},
 					}),
 					q(26008, {	-- Decompression (H)
-						["qg"] = 41347,	-- Moanah Stormhoof
+						["provider"] = { "n", 41347 },	-- Moanah Stormhoof
 						["coord"] = { 63.8, 59.3, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25887,	-- Wake of Destruction
@@ -189,12 +193,12 @@ _.Zones =
 						},
 					}),
 					q(25670, {	-- DUN-dun-DUN-dun-DUN-dun
-						["qg"] = 46338,	-- Budd
+						["provider"] = { "n", 46338 },	-- Budd
 						["coord"] = { 55.2, 38.8, 201 },
 						["sourceQuests"] = { 27699 },	-- Shark Weak
 					}),
 					q(25947, {	-- Finders, Keepers
-						["qg"] = 41711,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 41711 },	-- Legionnaire Nazgrim
 						["coord"] = { 39.0, 32.0, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -206,12 +210,12 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(25587, {	-- Gimme Shelter
-						["qg"] = 39667,	-- Adarrah
+						["provider"] = { "n", 39667 },	-- Adarrah
 						["coord"] = { 53.4, 43.0, 201 },
 						["sourceQuests"] = { 27685 },	-- Good Deed Left Undone
 					}),
 					q(25944, {	-- Girding Our Loins
-						["qg"] = 41711,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 41711 },	-- Legionnaire Nazgrim
 						["coord"] = { 39.0, 32.0, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -225,7 +229,7 @@ _.Zones =
 						},
 					}),
 					q(27685, {	-- Good Deed Left Undone
-						["qg"] = 41252,	-- Rendel Firetongue
+						["provider"] = { "n", 41252 },	-- Rendel Firetongue
 						["coord"] = { 46.6, 46.6, 201 },
 						["sourceQuest"] = 25371,	-- The Abyssal Ride
 						["isBreadcrumb"] = true,
@@ -262,17 +266,17 @@ _.Zones =
 						},
 					}),
 					q(25358, {	-- Nerve Tonic
-						["qg"] = 40983,	-- Mack Fearsen
+						["provider"] = { "n", 40983 },	-- Mack Fearsen
 						["coord"] = { 57.3, 29.2, 201 },
 						["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
 					}),
 					q(25651, {	-- Oh, the Insanity!
-						["qg"] = 46338,	-- Budd
+						["provider"] = { "n", 46338 },	-- Budd
 						["coord"] = { 55.2, 38.8, 201 },
 						["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
 					}),
 					q(25547, {	-- On Our Own Terms
-						["qg"] = 39887,	-- Captain Taylor
+						["provider"] = { "n", 39887 },	-- Captain Taylor
 						["coord"] = { 44.7, 22.5, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -287,12 +291,12 @@ _.Zones =
 						},
 					}),
 					q(25459, {	-- Ophidophobia
-						["qg"] = 39883,	-- Adarrah
+						["provider"] = { "n", 39883 },	-- Adarrah
 						["coord"] = { 57.1, 28.7, 201 },
 						["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
 					}),
 					q(27668, {	-- Pay Attention!
-						["qg"] = 41711,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 41711 },	-- Legionnaire Nazgrim
 						["coord"] = { 39.0, 32.0, 201 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -302,13 +306,13 @@ _.Zones =
 						},
 					}),
 					q(25281, {	-- Pay It Forward (A)
-						["qg"] = 36915,	-- Erunak Stonespeaker
+						["provider"] = { "n", 36915 },	-- Erunak Stonespeaker
 						["coord"] = { 45.2, 23.2, 201 },
 						["sourceQuest"] = 24432,	-- Sea Legs
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(25936, {	-- Pay It Forward (H)
-						["qg"] = 41618,	-- Erunak Stonespeaker
+						["provider"] = { "n", 41618 },	-- Erunak Stonespeaker
 						["coord"] = { 38.8, 31.6, 201 },
 						["sourceQuest"] = 25929,	-- Sea Legs
 						["races"] = HORDE_ONLY,
@@ -322,25 +326,25 @@ _.Zones =
 						},
 					}),
 					q(25405, {	-- Rest For the Weary (A)
-						["qg"] = 36915,	-- Erunak Stonespeaker
+						["provider"] = { "n", 36915 },	-- Erunak Stonespeaker
 						["coord"] = { 45.2, 23.2, 201 },
 						["sourceQuest"] = 25281,	-- Pay It Forward
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(25941, {	-- Rest For the Weary (H)
-						["qg"] = 41618,	-- Erunak Stonespeaker
+						["provider"] = { "n", 41618 },	-- Erunak Stonespeaker
 						["coord"] = { 38.8, 31.6, 201 },
 						["sourceQuest"] = 25936,	-- Pay It Forward
 						["races"] = HORDE_ONLY,
 					}),
 					q(24432, {	-- Sea Legs (A)
-						["qg"] = 36915,	-- Erunak Stonespeaker
+						["provider"] = { "n", 36915 },	-- Erunak Stonespeaker
 						["coord"] = { 45.2, 23.2, 201 },
 						["sourceQuest"] = 14482,	-- Call of Duty
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(25929, {	-- Sea Legs (H)
-						["qg"] = 41618,	-- Erunak Stonespeaker
+						["provider"] = { "n", 41618 },	-- Erunak Stonespeaker
 						["coord"] = { 38.7, 31.7, 201 },
 						["sourceQuest"] = 25924,	-- Call of Duty
 						["races"] = HORDE_ONLY,
@@ -357,13 +361,13 @@ _.Zones =
 						["sourceQuests"] = { 25657 },	-- Dah, Nunt.. Dah, Nunt...
 					}),
 					q(25812, {	-- Spelunking (A)
-						["qg"] = 40105,	-- Erunak Stonespeaker
+						["provider"] = { "n", 40105 },	-- Erunak Stonespeaker
 						["coord"] = { 46.3, 46.8, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25794 },	-- Undersea Sanctuary
 					}),
 					q(26000, {	-- Spelunking (H)
-						["qg"] = 40105,	-- Erunak Stonespeaker
+						["provider"] = { "n", 40105 },	-- Erunak Stonespeaker
 						["coord"] = { 46.3, 46.8, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25794,	-- Undersea Sanctuary
@@ -372,7 +376,7 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(25564, {	-- Stormwind Elite Aquatic and Land Forces
-						["qg"] = 39887,	-- Captain Taylor
+						["provider"] = { "n", 39887 },	-- Captain Taylor
 						["coord"] = { 44.7, 22.5, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -384,7 +388,7 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(25371, {	-- The Abyssal Ride
-						["qg"] = 41248,	-- Moanah Stormhoof
+						["provider"] = { "n", 41248 },	-- Moanah Stormhoof
 						["coord"] = { 46.0, 46.8, 201 },
 						["sourceQuests"] = { 25477 },	-- Better Late Than Dead
 						["g"] = {
@@ -403,12 +407,12 @@ _.Zones =
 						},
 					}),
 					q(27708, {	-- The Warden's Time
-						["qg"] = 41344,	-- Rendel Firetongue
+						["provider"] = { "n", 41344 },	-- Rendel Firetongue
 						["coord"] = { 64.2, 59.9, 201 },
 						["sourceQuests"] = { 25884 },	-- Come Hell or High Water
 					}),
 					q(25545, {	-- To Arms!
-						["qg"] = 39887,	-- Captain Taylor
+						["provider"] = { "n", 39887 },	-- Captain Taylor
 						["coord"] = { 44.7, 22.5, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -422,24 +426,24 @@ _.Zones =
 						},
 					}),
 					q(25546, {	-- Traveling on Our Stomachs (A)
-						["qg"] = 39887,	-- Captain Taylor
+						["provider"] = { "n", 39887 },	-- Captain Taylor
 						["coord"] = { 44.7, 22.5, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25405,	-- Rest For the Weary
 					}),
 					q(25943, {	-- Traveling on Our Stomachs (H)
-						["qg"] = 41711,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 41711 },	-- Legionnaire Nazgrim
 						["coord"] = { 39.0, 32.0, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 25941 },	-- Rest For the Weary
 					}),
 					q(25794, {	-- Undersea Sanctuary
-						["qg"] = 40105,	-- Erunak Stonespeaker
+						["provider"] = { "n", 40105 },	-- Erunak Stonespeaker
 						["coord"] = { 46.3, 46.8, 201 },
 						["sourceQuests"] = { 25638 },	-- A Desperate Plea
 					}),
 					q(25887, {	-- Wake of Destruction
-						["qg"] = 41341,	-- Erunak Stonespeaker
+						["provider"] = { "n", 41341 },	-- Erunak Stonespeaker
 						["coord"] = { 63.8, 59.9, 201 },
 						["sourceQuests"] = {
 							25824,	-- Debriefing (A)
@@ -450,13 +454,13 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(25885, {	-- What? What? In My Gut...? (A)
-						["qg"] = 41340,	-- Private Pollard
+						["provider"] = { "n", 41340 },	-- Private Pollard
 						["coord"] = { 63.9, 59.8, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25887 },	-- Wake of Destruction
 					}),
 					q(26040, {	-- What? What? In My Gut...? (H)
-						["qg"] = 41885,	-- Gurrok
+						["provider"] = { "n", 41885 },	-- Gurrok
 						["coord"] = { 63.9, 59.8, 201 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25887,	-- Wake of Destruction

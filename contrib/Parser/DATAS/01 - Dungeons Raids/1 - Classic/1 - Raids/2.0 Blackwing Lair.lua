@@ -268,7 +268,7 @@ _.Instances = { tier(1, {	-- Classic
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(7782, {	-- The Lord of Blackrock
-							["qg"] = 107574,	-- Anduin Wrynn
+							["provider"] = { "n", 107574 },	-- Anduin Wrynn
 							["coord"] = { 85.6, 31.8, 84 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 7781,	-- The Lord of Blackrock
@@ -284,7 +284,7 @@ _.Instances = { tier(1, {	-- Classic
 							["races"] = HORDE_ONLY,
 						}),
 						q(7784, {	-- The Lord of Blackrock
-							["qg"] = 14720,	-- High Overlord Saurfang
+							["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 							["coord"] = { 48.6, 71.0, 85 },
 							["sourceQuest"] = 7783,	-- The Lord of Blackrock (Head of Nefarian)
 							["races"] = HORDE_ONLY,

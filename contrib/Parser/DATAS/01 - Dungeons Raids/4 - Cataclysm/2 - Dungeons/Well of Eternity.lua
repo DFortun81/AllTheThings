@@ -13,7 +13,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["g"] = {
 			n(-17, {	-- Quests 			
 				q(30104, {	-- Documenting the Timeways
-					["qg"] = 57864,	-- Alurmi
+					["provider"] = { "n", 57864 },	-- Alurmi
 					["g"] = {
 						i(72880),	-- Alurmi's Ring
 						i(72881),	-- Treads of the Past
@@ -22,16 +22,16 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 				q(30099, {	-- In Unending Numbers
-					["qg"] = 55624,	-- Nozdormu
+					["provider"] = { "n", 55624 },	-- Nozdormu
 					["sourceQuests"] = { 30098 },	-- The Well of Eternity
 				}),
 				q(30102, {	-- The Hour of Twilight
-					["qg"] = 57913,	-- Chromie
+					["provider"] = { "n", 57913 },	-- Chromie
 					["sourceQuests"] = { 30101 },	-- The Path of the Dragon Soul
 				}),
 				q(30101, {	-- The Path of the Dragon Soul
 					["sourceQuests"] = { 30100 },	-- The Vainglorious
-					["qg"] = 55624,	-- Nozdormu
+					["provider"] = { "n", 55624 },	-- Nozdormu
 					["g"] = {
 						i(72876),	-- Ironfeather Longbow
 						i(72877),	-- Chain of the Demon Hunter
@@ -40,7 +40,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 				q(30100, {	-- The Vainglorious
-					["qg"] = 55624,	-- Nozdormu
+					["provider"] = { "n", 55624 },	-- Nozdormu
 					["sourceQuests"] = { 30099 },	-- In Unending Numbers
 				}),
 			}),

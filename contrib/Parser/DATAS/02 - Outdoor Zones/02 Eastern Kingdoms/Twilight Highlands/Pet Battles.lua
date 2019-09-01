@@ -57,7 +57,7 @@ _.Zones =
 					["crs"] = { 62904 },
 				}),
 				q(31974, {	-- Goz Banefury
-					["qg"] = 66822,	-- Goz Banefury
+					["provider"] = { "n", 66822 },	-- Goz Banefury
 					["coord"] = { 56.5, 56.7, 241 },
 					["isDaily"] = true,
 				}),

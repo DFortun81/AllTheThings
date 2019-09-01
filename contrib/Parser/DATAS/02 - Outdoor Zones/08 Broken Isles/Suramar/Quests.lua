@@ -20,7 +20,7 @@ _.Zones =
 				q(43485, {	-- A Burning Distraction
 					["sourceQuests"] = { 43469, 43479 },
 					["classes"] = { 4 },
-					["qg"] = 98100,	-- Taoshi
+					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(44919),	-- A Challenge From Our Enemies
 				q(43502),	-- A Change of Seasons
@@ -61,7 +61,7 @@ _.Zones =
 				q(43954),	-- Anax
 				q(44672, {	-- Ancient Mana
 					["sourceQuest"] = 42229,	-- Source Quest: Shal'Aran
-					["qg"] = 97140,	-- Quest Giver: First Arcanist Thalyssra
+					["provider"] = { "n", 97140 },	-- Quest Giver: First Arcanist Thalyssra
 					["g"] = {
 						i(141652),	-- Mana Divining Stone
 					},
@@ -169,7 +169,7 @@ _.Zones =
 				q(41137),	-- Fall of the King
 				q(40883),	-- Fate of the Guard
 				q(45372, {	-- Fate of the Nightborne
-					["qg"] = 115710,	-- Chief Telemancer Oculeth
+					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
 					["g"] = {
 						i(142436),	-- Arcanist's Manasaber
@@ -220,7 +220,7 @@ _.Zones =
 						i(140069),	-- Trueflight Arrow
 						i(140040),	-- Comet Dust
 					},
-					--["qg"] = 98969,	-- Stalriss Dawnrunner
+					--["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 				}),
 				q(40897),	-- Garvrulg
 				q(44736),	-- Gates of the Nighthold

@@ -163,7 +163,7 @@ _.Zones =
 									["itemID"] = 139531,		-- Crumpled Request
 									--["questID"] = 42058,		-- Crumpled Request (Quest)
 									["description"] = "Vampirates.\n  - Crieve (This was the best farming spot by far.)",
-									["qgs"] = {108030}
+									["crs"] = {108030}
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -171,7 +171,7 @@ _.Zones =
 									["itemID"] = 139529,		-- Fevered Request
 									--["questID"] = 41985,		-- Fevered Request (Quest)
 									["description"] = "Murlocs at Morheim (eastern Stormheim).",
-									["qgs"] = {98498, 98500, 98501, 98502, 110258}
+									["crs"] = {98498, 98500, 98501, 98502, 110258}
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -179,7 +179,7 @@ _.Zones =
 									["itemID"] = 139530,		-- Singed Letter
 									--["questID"] = 42215,		-- Singed Letter (Quest)
 									["description"] = "Southern Stormheim.",
-									["qgs"] = {116600}
+									["crs"] = {116600}
 								}
 							},
 						})),

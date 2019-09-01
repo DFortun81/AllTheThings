@@ -10,18 +10,18 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						q(10975, {	-- Purging the Chambers of Bash'ir
-							["qg"] = 22919,	-- Image of Commander Ameer
+							["provider"] = { "n", 22919 },	-- Image of Commander Ameer
 							["coord"] = { 52.8, 15.0, 105 },
 							["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
 							["repeatable"] = true,
 						}),
 						q(10976, {	-- The Mark of the Nexus-King
-							["qg"] = 22919,	-- Image of Commander Ameer
+							["provider"] = { "n", 22919 },	-- Image of Commander Ameer
 							["coord"] = { 52.8, 15.0, 105 },
 							["sourceQuest"] = 10975,	-- Purging the Chambers of Bash'ir
 						}),
 						q(10977, {	-- Stasis Chambers of the Mana-Tombs
-							["qg"] = 22919,	-- Image of Commander Ameer
+							["provider"] = { "n", 22919 },	-- Image of Commander Ameer
 							["coord"] = { 52.8, 15.0, 105 },
 							["sourceQuest"] = 10976,	-- The Mark of the Nexus-King
 							["g"] = {
@@ -29,13 +29,13 @@ _.Zones =
 							},
 						}),
 						q(10981, {	-- Nexus-Prince Shaffar's Personal Chamber
-							["qg"] = 22919,	-- Image of Commander Ameer
+							["provider"] = { "n", 22919 },	-- Image of Commander Ameer
 							["coord"] = { 52.8, 15.0, 105 },
 							["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
 							["repeatable"] = true,
 						}),
 						q(10982, {	-- The Eye of Haramad
-							["qg"] = 22919,	-- Image of Commander Ameer
+							["provider"] = { "n", 22919 },	-- Image of Commander Ameer
 							["coord"] = { 52.8, 15.0, 105 },
 							["sourceQuest"] = 10981,	-- Nexus-Prince Shaffar's Personal Chamber
 							["description"] = "Requires Exalted with The Consortium.",
@@ -51,25 +51,25 @@ _.Zones =
 						ach(896),	-- A Quest a Day Keeps the Ogres at Bay
 						n(-17, {	-- Quests
 							q(11091, {	-- A Special Thank You
-								["qg"] = 23233,	-- Chu'a'lor
+								["provider"] = { "n", 23233 },	-- Chu'a'lor
 								["coord"] = { 28.8, 57.4, 105 },
 								["sourceQuest"] = 11059,	-- Guardian of the Monument
 								["minReputation"] = { 1038, FRIENDLY },
 							}),
 							q(11051, {	-- Banish More Demons
-								["qg"] = 23253,	-- Kronk
+								["provider"] = { "n", 23253 },	-- Kronk
 								["coord"] = { 28.8, 57.8, 105 },
 								["sourceQuest"] = 11026,	-- Banish the Demons
 								["minReputation"] = { 1038, HONORED },
 								["repeatable"] = true,
 							}),
 							q(11026, {	-- Banish the Demons
-								["qg"] = 23253,	-- Kronk
+								["provider"] = { "n", 23253 },	-- Kronk
 								["coord"] = { 28.8, 57.8, 105 },
 								["minReputation"] = { 1038, HONORED },
 							}),
 							q(11023, {	-- Bomb Them Again!
-								["qg"] = 23120,	-- Sky Sergeant Vanderlip
+								["provider"] = { "n", 23120 },	-- Sky Sergeant Vanderlip
 								["coord"] = { 27.6, 52.9, 105 },
 								["sourceQuest"] = 11010,	-- Bombing Run
 								["isDaily"] = true,
@@ -78,18 +78,18 @@ _.Zones =
 								},
 							}),
 							q(11059, {	-- Guardian of the Monument
-								["qg"] = 23233,	-- Chu'a'lor
+								["provider"] = { "n", 23233 },	-- Chu'a'lor
 								["coord"] = { 28.8, 57.4, 105 },
 								["sourceQuest"] = 11025,	-- The Crystals
 							}),
 							q(11080, {	-- The Relic's Emanation
-								["qg"] = 23233,	-- Chu'a'lor
+								["provider"] = { "n", 23233 },	-- Chu'a'lor
 								["coord"] = { 28.8, 57.4, 105 },
 								["sourceQuest"] = 11058,	-- An Apexis Relic
 								["isDaily"] = true,
 							}),
 							q(11066, {	-- Wrangle More Aether Rays!
-								["qg"] = 23335,	-- Skyguard Khatie
+								["provider"] = { "n", 23335 },	-- Skyguard Khatie
 								["coord"] = { 28.0, 51.5, 105 },
 								["sourceQuest"] = 11065,	-- Wrangle Some Aether Rays!
 								["isDaily"] = true,

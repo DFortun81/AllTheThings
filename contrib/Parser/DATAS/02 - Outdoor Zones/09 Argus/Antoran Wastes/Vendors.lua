@@ -12,7 +12,7 @@ _.Zones =
 					["groups"] = {
 						i(153021, {	-- Intact Demon Eye
 							["description"] = "These eyes drop off of any demon on Argus while you have the Agent of the All Seer buff which can be obtained by clicking on the All-Seer Focus. WARNING: You will lose 90% health, so if you are missing any health, you might die! Walking into a hub will have the guards attack you.\n\nYou need 2500 for all of the useful items.",
-							["qg"] = 128151,	-- All-Seer Focus
+							["provider"] = { "n", 128151 },	-- All-Seer Focus
 							["f"] = 0,	-- Not Miscellaneous
 							["coords"] = {
 								{ 67.34, 48.11, 885 },	-- Ven'orn's Lair

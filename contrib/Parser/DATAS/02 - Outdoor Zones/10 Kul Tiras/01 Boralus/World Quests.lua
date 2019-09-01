@@ -84,21 +84,21 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51024, {	-- Supplies Needed: Akunda's Bite
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51028, {	-- Supplies Needed: Blood-Stained Bone
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51029, {	-- Supplies Needed: Calcified Bone
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
@@ -110,119 +110,119 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51035, {	-- Supplies Needed: Deep Sea Satin
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52375, {	-- Supplies Neeeded: Great Sea Catfish
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51033, {	-- Supplies Neeeded: Mistscale
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51017, {	-- Supplies Needed: Monelite Ore
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52379, {	-- Supplies Needed: Redtail Loaach
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51022, {	-- Supplies Needed: Riverbud
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52376, {	-- Supplies Needed: Sand Shifter
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51027, {	-- Supplis Needed: Sea Stalk
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51032, {	-- Supplies Needed: Shimmerscale
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51026, {	-- Supplies Needed: Siren's Pollen
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52378, {	-- Supplies Needed: Slimy Mackerel
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51023, {	-- Supplies Needed: Star Moss
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51021, {	-- Supplies Needed: Storm Silver Ore
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51031, {	-- Supplies Needed: Tempest Hide
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51034, {	-- Supplies Needed: Tidespray Line
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52377, {	-- Supplies Needed: Tiragarde Perch
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51025, {	-- Supplies Needed: Winter's Kiss
-						["qg"] = 142095,	-- Henrick Wyther <Trade Goods>
+						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
 						["races"] = ALLIANCE_ONLY,
@@ -298,7 +298,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["qg"] = 135808,	-- Provisioner Fray
+						["provider"] = { "n", 135808 },	-- Provisioner Fray
 						["coord"] = { 67.61, 21.81, 1161 },
 					}),
 					q(52392, {	-- Work Order: Ultramarine Pigment

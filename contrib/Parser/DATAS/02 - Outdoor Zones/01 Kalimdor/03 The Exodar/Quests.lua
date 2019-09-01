@@ -7,7 +7,7 @@ _.Zones =
 		m(103, {	-- The Exodar
 			n(-17, {	-- Quests
 				q(27225, {	-- A Summons from Ander Germaine
-					["qg"] = 17120,	-- Behomat (The Exodar)
+					["provider"] = { "n", 17120 },	-- Behomat (The Exodar)
 					["coord"] = { 56.4, 46.2, 103 },	-- Behomat (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -15,7 +15,7 @@ _.Zones =
 					["lvl"] = 20,					
 				}),
 				q(9675, {	-- Beast Training
-					["qg"] = 16712,	-- Ganaar
+					["provider"] = { "n", 16712 },	-- Ganaar
 					["coord"] = { 44.6, 87.6, 103 },
 					["races"] = { 11 },	-- Draenei
 					["classes"] = { 3 },	-- Hunter
@@ -26,14 +26,14 @@ _.Zones =
 					},
 				}),
 				q(9625, {	-- Elekks Are Serious Business
-					["qg"] = 17584,	-- Torallius the Pack Handler
+					["provider"] = { "n", 17584 },	-- Torallius the Pack Handler
 					["coord"] = { 81.5, 51.5, 103 },
 					["sourceQuest"] = 9623,	-- Coming of Age
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(9605, {	-- Hippogryph Master Stephanos
-					["qg"] = 16768,	-- Nurguni
+					["provider"] = { "n", 16768 },	-- Nurguni
 					["coord"] = { 56.8, 49.8, 103 },
 					["sourceQuest"] = 9604,	-- On the Wings of a Hippogryph
 					["races"] = { 
@@ -43,7 +43,7 @@ _.Zones =
 					["lvl"] = 5,
 				}),
 				q(27271, {	-- Journey to the Wizard's Sanctum
-					["qg"] = 16749,	-- Edirah (The Exodar)
+					["provider"] = { "n", 16749 },	-- Edirah (The Exodar)
 					["coord"] = { 47.2, 61.8, 103 },	--- Edirah (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -64,7 +64,7 @@ _.Zones =
 					}),
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
-					["qg"] = 16761,	-- Baatun (The Exodar)
+					["provider"] = { "n", 16761 },	-- Baatun (The Exodar)
 					["coord"] = { 43.6, 78.4, 103 },	-- Baatun (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -72,7 +72,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
-					["qg"] = 16756,	-- Caedmos (The Exodar)
+					["provider"] = { "n", 16756 },	-- Caedmos (The Exodar)
 					["coord"] = { 33.0, 65.4, 103 },	-- Caedmos (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -80,7 +80,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(28258, {	-- Meet with Ander Germaine
-					["qg"] = 17120,	-- Behomat (The Exodar)
+					["provider"] = { "n", 17120 },	-- Behomat (The Exodar)
 					["coord"] = { 56.4, 46.2, 103 },	-- Behomat (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -88,7 +88,7 @@ _.Zones =
 					["lvl"] = 50,	
 				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
-					["qg"] = 16761,	-- Baatun (The Exodar)
+					["provider"] = { "n", 16761 },	-- Baatun (The Exodar)
 					["coord"] = { 39.0, 84.2, 103 },	-- Baatun (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -96,7 +96,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
-					["qg"] = 16749,	-- Edirah (The Exodar)
+					["provider"] = { "n", 16749 },	-- Edirah (The Exodar)
 					["coord"] = { 26.2, 6.2, 103 },	-- Edirah (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -104,7 +104,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
-					["qg"] = 17122,	-- Vord (The Exodar)
+					["provider"] = { "n", 17122 },	-- Vord (The Exodar)
 					["coord"] = { 47.2, 88.4, 103 },	-- Vord (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -112,7 +112,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(9606, {	-- Return to Caregiver Chellan
-					["qg"] = 17555,	-- Stephanos
+					["provider"] = { "n", 17555 },	-- Stephanos
 					["coord"] = { 54.8, 35.8, 103 },
 					["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
 					["races"] = { 
@@ -122,7 +122,7 @@ _.Zones =
 					["lvl"] = 5,
 				}),
 				q(9762, {	-- The Unwritten Prophecy
-					["qg"] = 17468,	-- Prophet Velen
+					["provider"] = { "n", 17468 },	-- Prophet Velen
 					["coord"] = { 32.6, 54.2, 103 },
 					["sourceQuest"] =	9759,	-- Ending Their World
 					["races"] = { 11 },	-- Draenei
@@ -134,14 +134,14 @@ _.Zones =
 					},
 				}),
 				q(9699, {	-- Truth or Fiction
-					["qg"] = 17468,	-- Prophet Velen
+					["provider"] = { "n", 17468 },	-- Prophet Velen
 					["coord"] = { 32.6, 54.2, 103 },
 					["sourceQuest"] = 9698,	-- Audience with the Prophet
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(10371, {	-- Yorus Barleybrew (Draenei)
-					["qg"] = 16771,	-- Ahonan
+					["provider"] = { "n", 16771 },	-- Ahonan
 					["coord"] = { 55.0, 83.4, 103 },
 					["races"] = { 11 },	-- Draenei
 					["classes"] = { 1 },	-- Warrior
@@ -149,7 +149,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(27266, {	-- Wulf Calls
-					["qg"] = 17122,	-- Vord (The Exodar)
+					["provider"] = { "n", 17122 },	-- Vord (The Exodar)
 					["coord"] = { 47.2, 88.4, 103 },	-- Vord (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,

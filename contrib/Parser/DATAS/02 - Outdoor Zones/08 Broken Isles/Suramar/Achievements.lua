@@ -204,7 +204,7 @@ _.Zones =
 									["itemID"] = 139534,		-- Bloody Letter
 									--["questID"] = 42350,		-- Bloody Letter (Quest)
 									["description"] = "Northwest Suramar.",
-									["qgs"] = {101783}
+									["crs"] = {101783}
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -212,7 +212,7 @@ _.Zones =
 									["itemID"] = 139535,		-- Bloody Prayer
 									--["questID"] = 42351,		-- Bloody Prayer (Quest)
 									["description"] = "Southwest Suramar City.",
-									["qgs"] = {114470}
+									["crs"] = {114470}
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -220,7 +220,7 @@ _.Zones =
 									["itemID"] = 139532,		-- Fevered Prayer
 									--["questID"] = 42345,		-- Fevered Prayer (Quest)
 									["description"] = "Northwest Suramar.",
-									["qgs"] = {101784}
+									["crs"] = {101784}
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -228,7 +228,7 @@ _.Zones =
 									["itemID"] = 139533,		-- Singed Plea
 									--["questID"] = 42340,		-- Singed Plea (Quest)
 									["description"] = "Fal'dorei Tunnels.",
-									["qgs"] = {105753, 105625, 113162}
+									["crs"] = {105753, 105625, 113162}
 								}
 							},
 						})),

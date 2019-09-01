@@ -9,17 +9,17 @@ _.Zones =
 				{	---------- A Flash of Bronze... (A/H)
 					["allianceQuestID"] = 33229,	-- A Flash of Bronze...
 					["hordeQuestID"] = 33230,	-- A Flash of Bronze...
-					["qg"] = 73691,	-- Chromie <The Timewalkers>
+					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["isBreadcrumb"] = true,
 				},
 				q(37188, {	-- A Flash of Bronze...
 					["isBreadcrumb"] = true,
-					["qg"] = 73691,	-- Chromie <The Timewalkers>
+					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["u"] = 1,	-- Never Available
 				}),
 				q(37194, {	-- A Flash of Bronze...
 					["isBreadcrumb"] = true,
-					["qg"] = 73691,	-- Chromie <The Timewalkers>
+					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["u"] = 1,	-- Never Available
 				}),
 				{	---------- Journey to the Timeless Isle
@@ -31,21 +31,21 @@ _.Zones =
 						37188,	-- A Flash of Bronze...
 						37194,	-- A Flash of Bronze...
 					},	
-					["qg"] = 73691,	-- Chromie <The Timewalkers>
+					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 				},
 				q(32806, {	-- The King and the Council
-					["qg"] = 61962,	-- Lorewalker Cho
+					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 					["g"] = {
 						i(98133),	-- Greater Cache of Treasures
 					},
 				}),
 				q(32815, {	-- The Old Seer
 					["sourceQuest"] = 32807,	-- The Warchief and the Darkness
-					["qg"] = 61962,	-- Lorewalker Cho
+					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 				}),
 				q(32807, {	-- The Warchief and the Darkness
 					["sourceQuest"] = 32806,	-- The King and the Council
-					["qg"] = 61962,	-- Lorewalker Cho
+					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 					["g"] = {
 						i(98133),	-- Greater Cache of Treasures
 					},

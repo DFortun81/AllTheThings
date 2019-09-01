@@ -8,19 +8,19 @@ _.Zones =
 			n(-38, {	-- Profession
 				prof(164, {	-- Blacksmith
 					q(50272, {	-- An Ear to the Ground
-						["qg"] = 133489,	-- Ormhun Stonehammer
+						["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
 						["lvl"] = 120,
 						["coord"] = { 53.9, 50.0, 207 },
 						["sourceQuest"] = 50278,	-- Deep In the Core
 					}),
 					q(50271, {	-- Smash and Grab
-						["qg"] = 133489,	-- Ormhun Stonehammer
+						["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
 						["lvl"] = 120,
 						["coord"] = { 53.9, 50.0, 207 },
 						["sourceQuest"] = 50278,	-- Deep In the Core
 					}),
 					q(50274, {	-- Titanic Forging
-						["qg"] = 133489,	-- Ormhun Stonehammer
+						["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
 						["lvl"] = 120,
 						["coord"] = { 53.9, 50.0, 207 },
 						["sourceQuests"] = {
@@ -29,13 +29,13 @@ _.Zones =
 						},
 					}),
 					q(50288, {	-- Therazane's Choice
-						["qg"] = 133796,	-- Therazane
+						["provider"] = { "n", 133796 },	-- Therazane
 						["lvl"] = 120,
 						["coord"] = { 27.5, 50.8, 207 },
 						["sourceQuest"] = 50274,	-- Titanic Forging
 					}),
 					q(50279, {	-- Anvil's Away
-						["qg"] = 133796,	-- Therazane
+						["provider"] = { "n", 133796 },	-- Therazane
 						["lvl"] = 120,
 						["coord"] = { 27.5, 50.8, 207 },
 						["sourceQuest"] = 50288,	-- Therazane's Choice

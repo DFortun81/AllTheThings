@@ -47,7 +47,7 @@ _.Zones =
 					["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
 				}),
 				q(31972, {	-- Brok
-					["qg"] = 66819,	-- Brok
+					["provider"] = { "n", 66819 },	-- Brok
 					["coord"] = { 61.4, 32.7, 198 },
 					["isDaily"] = true,
 				}),

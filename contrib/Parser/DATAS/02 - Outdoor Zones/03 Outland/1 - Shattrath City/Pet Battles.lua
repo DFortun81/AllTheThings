@@ -10,7 +10,7 @@ _.Zones =
 					["repeatable"] = true,
 					["isDaily"] = true,
 					["coord"] = { 59.0, 70.0, 111 },
-					["qg"] = 66553,	-- Morulu The Elder
+					["provider"] = { "n", 66553 },	-- Morulu The Elder
 				}),
 			}),
 		}),

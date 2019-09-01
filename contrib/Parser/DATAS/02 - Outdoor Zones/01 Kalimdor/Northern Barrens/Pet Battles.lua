@@ -27,7 +27,7 @@ _.Zones =
 					["crs"] = { 61071 },	-- Small Frog
 				}),
 				q(31814, {	-- Analynn
-					["qg"] = 66135,	-- Dagra the Fierce
+					["provider"] = { "n", 66135 },	-- Dagra the Fierce
 					["coord"] = { 58.6, 53.0, 10 },
 					["classes"] = HORDE_ONLY,
 					["sourceQuest"] = 31813,	-- Dagra the Fierce
@@ -36,11 +36,11 @@ _.Zones =
 					},
 				}),
 				q(3861, {	-- CLUCK!
-					["qg"] = 620,	-- Chicken
+					["provider"] = { "n", 620 },	-- Chicken
 					["repeatable"] = true,
 				}),
 				q(45083, {	-- Crysa's Flyers
-					["qg"] = 115286,	-- Crysa
+					["provider"] = { "n", 115286 },	-- Crysa
 					["coord"] = { 63.6, 35.8, 10 },
 					["isDaily"] = true,
 					["groups"] = {
@@ -51,7 +51,7 @@ _.Zones =
 					},
 				}),
 				q(31819, {	-- Dagra the Fierce
-					["qg"] = 66135,	-- Dagra the Fierce
+					["provider"] = { "n", 66135 },	-- Dagra the Fierce
 					["coord"] = { 58.6, 53.0, 10 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

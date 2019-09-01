@@ -9,7 +9,7 @@ _.Zones =
 				q(26602, {	-- A Dish Best Served Huge
 					["sourceQuests"] = { 26600 },	-- A Giant's Feast
 					["coord"] = { 40.4, 67.8, 210 },
-					["qg"] = 2500,	-- Captain Hecklebury Smotts
+					["provider"] = { "n", 2500 },	-- Captain Hecklebury Smotts
 					["g"] = {
 						i(4130),	-- Smott's COmpass
 					},
@@ -17,13 +17,13 @@ _.Zones =
 				q(26600, {	-- A Giant's Feast
 					["sourceQuests"] = { 26599 },	-- The Captain's Chest
 					["coord"] = { 40.4, 67.8, 210 },
-					["qg"] = 2500,	-- Captain Hecklebury Smotts
+					["provider"] = { "n", 2500 },	-- Captain Hecklebury Smotts
 				}),
 				q(26821, {	-- Airwyn Bantamflax
 					["sourceQuests"] = { 26824 },	-- Results: Inconclusive
 					["coord"] = { 55.2, 42.3, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44082,	-- Bronwyn Hewstrike
+					["provider"] = { "n", 44082 },	-- Bronwyn Hewstrike
 				}),
 				q(617,   {	-- Akiris by the Bundle
 					["u"] = 40,
@@ -35,10 +35,10 @@ _.Zones =
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
 					["coord"] = { 55.3, 42.1, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44083,	-- Linzi Hewstrike
+					["provider"] = { "n", 44083 },	-- Linzi Hewstrike
 				}),
 				q(26487, {	-- Akiris by the Bundle (H) -- aa
-					["qg"] = 43095,	-- Sassy Hardwrench
+					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
 					["coord"] = { 34.6, 29.5, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26489,	-- It's You!!
@@ -47,10 +47,10 @@ _.Zones =
 				--	["itemID"] = 59143,	-- Weather-Beaten Coin
 					["coord"] = { 41.2, 61.3, 210 },
 					["icon"] = "Interface\\Icons\\inv_misc_coin_16",
-					["qg"] = 43454,	-- "Good-Boy" Bruce
+					["provider"] = { "n", 43454 },	-- "Good-Boy" Bruce
 				}),
 				q(3721,  {	-- An OOX of Your Own
-					["qg"] = 7406,	-- Oglethorpe Obnoticus
+					["provider"] = { "n", 7406 },	-- Oglethorpe Obnoticus
 					["coord"] = { 43.0, 72.0, 210 },
 					["sourceQuests"] = {
 						648,	-- Rescue OOX-17/TN! (Tanaris)
@@ -65,7 +65,7 @@ _.Zones =
 					["sourceQuest"] = 7810,	-- Arena Master
 					["repeatable"] = true,
 					["coord"] = { 45.0, 25.4, 210 },
-					["qg"] = 14508,	-- Short John Mithril
+					["provider"] = { "n", 14508 },	-- Short John Mithril
 					["g"] = {
 						i(19024),	-- Arena Grand Master
 					},
@@ -77,13 +77,13 @@ _.Zones =
 						26634,	-- The Bane of Many a Pirate
 					},
 					["coord"] = { 44.3, 91.6, 210 },
-					["qg"] = 2548,	-- Captain Keelhaul
+					["provider"] = { "n", 2548 },	-- Captain Keelhaul
 				}),
 				q(26809, {	-- Backdoor Dealings (A)
 					["sourceQuests"] = { 26808 },	-- Maywiki
 					["coord"] = { 55.6, 42.2, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44084,	-- Maywiki
+					["provider"] = { "n", 44084 },	-- Maywiki
 					["g"] = {
 						i(61531),  -- Veil of the Silent Listener
 						i(61532),  -- Monnion of the Bat
@@ -92,7 +92,7 @@ _.Zones =
 					},
 				}),
 				q(26550, {	-- Backdoor Dealings (H)
-					["qg"] = 43098,	-- Chabal
+					["provider"] = { "n", 43098 },	-- Chabal
 					["coord"] = { 34.5, 27.9, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26495,	-- Chabal
@@ -105,13 +105,13 @@ _.Zones =
 				}),
 				q(29151, {	-- Bad Supplies (A)
 					["lvl"] = 85,
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["coord"] = { 55.1, 42.2, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29150 },	-- Voodoo Zombies
 				}),
 				q(29238, {	-- Bad Supplies (H)
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["lvl"] = 85,
 					["coord"] = { 34.7, 29.4, 210 },
 					["races"] = HORDE_ONLY,
@@ -124,7 +124,7 @@ _.Zones =
 						26699,	-- Turning the Brashtide
 					},
 					["coord"] = { 41.1, 73.1, 210 },
-					["qg"] = 2496,	-- Baron Revilgaz
+					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 					["g"] = {
 						i(61626),	-- Booty Bay Pendant
 						i(61630),	-- Booty Bay Pantaloons
@@ -140,12 +140,12 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\inv_misc_scrollunrolled04",
 				}),
 				q(29153, {	-- Booty Bay's Interests (A)
-					["qg"] = 2496,	-- Baron Revilgaz
+					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 					["coord"] = { 41.1, 73.0, 210 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29251, {	-- Booty Bay's Interests (H)
-					["qg"] = 2496,	-- Baron Revilgaz
+					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 					["coord"] = { 41.1, 73.0, 210 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -166,10 +166,10 @@ _.Zones =
 				q(26635, {	-- Cannonball Swim
 					["sourceQuests"] = { 26631 },	-- Your First Day as a Pirate
 					["coord"] = { 44.5, 92.8, 210 },
-					["qg"] = 2545,	-- "Pretty Boy" Duncan
+					["provider"] = { "n", 2545 },	-- "Pretty Boy" Duncan
 				}),
 				q(26495, {	-- Chabal
-					["qg"] = 43095,	-- Sassy Hardwrench
+					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
 					["coord"] = { 34.6, 29.5, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
@@ -185,18 +185,18 @@ _.Zones =
 					["sourceQuests"] = { 28702 },	-- Hero's Call: The Cape of Stranglethorn
 					["description"] = "This quest is only available if you DID NOT complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44082,	-- Bronwyn Hewstrike
+					["provider"] = { "n", 44082 },	-- Bronwyn Hewstrike
 				}),
 				q(26825, {	-- Dask "The Flask" Gobfizzle
 					["sourceQuests"] = { 28702 },	-- Hero's Call: The Cape of Stranglethorn
 					["description"] = "This quest is only available if you DID complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44082,	-- Bronwyn Hewstrike
+					["provider"] = { "n", 44082 },	-- Bronwyn Hewstrike
 				}),
 				q(26612, {	-- Details of the Attack
 					["sourceQuests"] = { 26611 },	-- The Baron Must Be Told
 					["coord"] = { 41.1, 73.1, 210 },
-					["qg"] = 2496,	-- Baron Revilgaz
+					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 					["g"] = {
 						i(61570),	-- Informant's Gloves
 						i(61572),	-- Belt of Supremacy
@@ -206,7 +206,7 @@ _.Zones =
 					},
 				}),
 				q(26592, {	-- Diffractory Chromascope
-					["qg"] = 43096,	-- Flem Gizzix
+					["provider"] = { "n", 43096 },	-- Flem Gizzix
 					["coord"] = { 33.6, 29.1, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26433,	-- The Holy Water of Clarity
@@ -214,12 +214,12 @@ _.Zones =
 				q(26678, {	-- Doublerum
 					["sourceQuests"] = { 26665 },	-- Call of Booty
 					["coord"] = { 41.1, 73.1, 1355 },
-					["qg"] = 2496,	-- Baron Revilgaz
+					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 				}),
 				q(26649, {	-- Drive-By Piracy
 					["sourceQuests"] = { 26647 },	-- Ol' Blasty
 					["coord"] = { 46.6, 94.9, 210 },
-					["qg"] = 2547,	-- Ironpatch
+					["provider"] = { "n", 2547 },	-- Ironpatch
 					["g"] = {
 						i(61592),	-- Black Gold Buckler
 						i(61594),	-- Venture Blaster
@@ -232,10 +232,10 @@ _.Zones =
 					["sourceQuests"] = { 26809 },	-- Backdoor Dealings
 					["coord"] = { 55.7, 42.2, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44084,
+					["provider"] = { "n", 44084 },
 				}),
 				q(26551, {	-- Eliminate the Outcast (H)
-					["qg"] = 43098,	-- Chabal
+					["provider"] = { "n", 43098 },	-- Chabal
 					["coord"] = { 34.5, 27.9, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26550,	-- Backdoor Dealings
@@ -262,7 +262,7 @@ _.Zones =
 					},
 				}),
 				q(38399, {	-- Fencing the Rose
-					["qg"] = 2542,	-- Catelyn the Blade
+					["provider"] = { "n", 2542 },	-- Catelyn the Blade
 					["coord"] = { 41.3, 74.1, 210 },
 					["isDaily"] = true,
 					["requireSkill"] = 202,	-- Engineering
@@ -273,12 +273,12 @@ _.Zones =
 				q(26624, {	-- Getting In With the Bloodsail
 					["sourceQuests"] = { 26612 },	-- Details of the Attack
 					["coord"] = { 41.1, 73.1, 210 },
-					["qg"] = 2496,	-- Baron Revilgaz
+					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 				}),
 				q(26822, {	-- Good-Fer-Nothin' Slither-Dogs
 					["coord"] = { 55.0, 41.8, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44100,	-- Goris
+					["provider"] = { "n", 44100 },	-- Goris
 					["g"] = {
 						i(61525),	-- Goris' Medallion
 						i(61526),	-- Staff of First Occurrences
@@ -289,16 +289,16 @@ _.Zones =
 				q(26605, {	-- Grubby Little Paws
 					["sourceQuests"] = { 26604 },	-- Protecting Her Royal Highness Poobah
 					["coord"] = { 59.4, 79.0, 210 },
-					["qg"] = 2634,	-- Princess Poobah
+					["provider"] = { "n", 2634 },	-- Princess Poobah
 				}),
 				q(26452, {	-- Gurubashi Challenge
-					["qg"] = 43099,	-- Stone Guard Towhide
+					["provider"] = { "n", 43099 },	-- Stone Guard Towhide
 					["coord"] = { 46.2, 28.1, 210 },
 					["isDaily"] = true,
 					["sourceQuest"] = 26451,	-- Gurubashi Challenge: Free-For-All Arena Combat
 				}),
 				q(26451, {	-- Gurubashi Challenge: Free-For-All Arena Combat -- aa
-					["qg"] = 43099,	-- Stone Guard Towhide
+					["provider"] = { "n", 43099 },	-- Stone Guard Towhide
 					["coord"] = { 46.2, 28.1, 210 },
 				}),
 				q(213,   {	-- Hostile Takeover
@@ -308,7 +308,7 @@ _.Zones =
 					},
 				}),
 				q(26435, {	-- I'm A Huge Liar and a Fraud -- TODO:: part of loremaster?
-					["qg"] = 43096,	-- Flem Gizzix
+					["provider"] = { "n", 43096 },	-- Flem Gizzix
 					["coord"] = { 33.6, 29.1, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -320,14 +320,14 @@ _.Zones =
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
 					["coord"] = { 55.3, 42.1, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44083,	-- Linzi Hewstrike
+					["provider"] = { "n", 44083 },	-- Linzi Hewstrike
 					["g"] = {
 						i(61521),	-- Amulet of Brilliant Talent
 						i(61522),	-- Helm of Secrets
 					},
 				}),
 				q(26450, {	-- If They're Just Going to Leave Them Lying Around... (H)
-					["qg"] = 43095,	-- Sassy Hardwrench
+					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
 					["coord"] = { 34.6, 29.5, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26404,	-- Above My Pay Grade
@@ -341,7 +341,7 @@ _.Zones =
 					},
 				}),
 				q(26489, {	-- It's You!!
-					["qg"] = 43095,	-- Sassy Hardwrench
+					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
 					["coord"] = { 34.8, 29.4, 210 },
 					["races"] = { 9 },	-- Goblin
 					["isBreadcrumb"] = true,
@@ -356,14 +356,14 @@ _.Zones =
 				q(26614, {	-- Keep An Eye Out
 					["sourceQuests"] = { 26611 },	-- The Baron Must Be Told
 					["coord"] = { 43.3, 71.3, 210 },
-					["qg"] = 2493,	-- Dizzy One-Eye
+					["provider"] = { "n", 2493 },	-- Dizzy One-Eye
 					["g"] = {
 						i(4114),	-- Darktide Cape
 					},
 				}),
 				q(26595, {	-- Kill-Collect
 					["sourceQuests"] = { 26594 },	-- Return to MacKinley
-					["qg"] = 2501,	-- "Sea Wolf" MacKinley
+					["provider"] = { "n", 2501 },	-- "Sea Wolf" MacKinley
 					["coord"] = { 42.0, 73.4, 210 },
 					["g"] = {
 						i(61538),	-- Nice Shorts
@@ -374,7 +374,7 @@ _.Zones =
 					},
 				}),
 				q(26534, {	-- Let's See What You've Got, Zanzil
-					["qg"] = 43097,	-- Mixmaster Jasper
+					["provider"] = { "n", 43097 },	-- Mixmaster Jasper
 					["coord"] = { 35.1, 27.4, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26533,	-- Zanzil's Secret
@@ -383,17 +383,17 @@ _.Zones =
 					["description"] = "This is a sub-quest of Seeing Where Your Loyalties Lie.",
 					["collectible"] = false,	-- this quest doesn't permanently collect for god knows what stupid blizzard reason
 					["coord"] = { 41.0, 73.2, 210 },
-					["qg"] = 2487,	-- Fleet Master Seahorn
+					["provider"] = { "n", 2487 },	-- Fleet Master Seahorn
 				}),
 				q(29152, {	-- Making Contact (A)
 					["lvl"] = 85,
-					["qg"] = 52646,	-- Colin Swifthammer
+					["provider"] = { "n", 52646 },	-- Colin Swifthammer
 					["coord"] = { 55.3, 41.9, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29151 },	-- Bad Supplies
 				}),
 				q(29250, {	-- Making Contact (H)
-					["qg"] = 53078,	-- Zombie Survivor
+					["provider"] = { "n", 53078 },	-- Zombie Survivor
 					["coord"] = { 33.5, 30.3, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29238,	-- Bad Supplies
@@ -413,7 +413,7 @@ _.Zones =
 					["sourceQuests"] = { 26819 },	-- Akiris by the Bundle
 					["coord"] = { 55.3, 42.1, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44083,	-- Linzi Hewstrike
+					["provider"] = { "n", 44083 },	-- Linzi Hewstrike
 				}),
 				q(630,   {	-- Message in a Bottle
 					["u"] = 40,
@@ -431,7 +431,7 @@ _.Zones =
 					},
 				}),
 				q(26494, {	-- Mixmaster Jasper
-					["qg"] = 43095,	-- Sassy Hardwrench
+					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
 					["coord"] = { 34.6, 29.5, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
@@ -439,7 +439,7 @@ _.Zones =
 				q(26601, {	-- Mok'rash the Cleaver
 					["sourceQuests"] = { 26602 },	-- A Dish Best Served Huge
 					["coord"] = { 40.4, 67.8, 210 },
-					["qg"] = 2500,	-- Captain Hecklebury Smotts
+					["provider"] = { "n", 2500 },	-- Captain Hecklebury Smotts
 					["g"] = {
 						i(61562),	-- Smott's SIgnet
 						i(61564),	-- Sea Song Epaulettes
@@ -458,7 +458,7 @@ _.Zones =
 				q(26606, {	-- Mukla's Demise
 					["sourceQuests"] = { 26605 },	-- Grubby Little Paws
 					["coord"] = { 59.4, 79.0, 210 },
-					["qg"] = 2634,	-- Princess Poobah
+					["provider"] = { "n", 2634 },	-- Princess Poobah
 					["g"] = {
 						i(61586),	-- Princess Poobah's Dress
 						i(61588),	-- Princess Poobah's Bracelets
@@ -469,12 +469,12 @@ _.Zones =
 				q(26647, {	-- Ol' Blasty
 					["sourceQuests"] = { 26644 },	-- Attracting Attention
 					["coord"] = { 46.6, 94.9, 210 },
-					["qg"] = 2547,	-- Ironpatch
+					["provider"] = { "n", 2547 },	-- Ironpatch
 				}),
 				q(26648, {	-- Our Mortal Enemies
 					["sourceQuests"] = { 26644 },	-- Attracting Attention
 					["coord"] = { 46.5, 93.2, 210 },
-					["qg"] = 43556,	-- "Dead-Eye" Drederick McGumm
+					["provider"] = { "n", 43556 },	-- "Dead-Eye" Drederick McGumm
 					["g"] = {
 						i(61600),	-- Mortal Naginata
 						i(61604),	-- Other-Eye Patch
@@ -487,13 +487,13 @@ _.Zones =
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
 					["coord"] = { 55.2, 42.0, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
+					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 				}),
 				q(26818, {	-- Plush Pelts
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
 					["coord"] = { 55.3, 42.1, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44083,	-- Linzi Hewstrike
+					["provider"] = { "n", 44083 },	-- Linzi Hewstrike
 					["g"] = {
 						i(61123),	-- Band of Raptor Teeth
 						i(61513),	-- Fuzzy Legwarmers
@@ -507,10 +507,10 @@ _.Zones =
 				q(26695, {	-- Prepare for Takeoff
 					["sourceQuests"] = { 26679 },	-- Return to Revilgaz
 					["coord"] = { 41.1, 73.1, 210 },
-					["qg"] = 2496,	-- Baron Revilgaz
+					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 				}),
 				q(26434, {	-- Primal Reagents of Power
-					["qg"] = 43096,	-- Flem Gizzix
+					["provider"] = { "n", 43096 },	-- Flem Gizzix
 					["coord"] = { 33.6, 29.1, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26433,	-- The Holy Water of Clarity
@@ -524,13 +524,13 @@ _.Zones =
 				q(26604, {	-- Protecting Her Royal Highness Poobah
 					["sourceQuests"] = { 26603 },	-- Message in a Bottle
 					["coord"] = { 59.4, 79.0, 210 },
-					["qg"] = 2634,	-- Princess Poobah
+					["provider"] = { "n", 2634 },	-- Princess Poobah
 				}),
 				q(26816, {	-- Recipe for Disaster (A)
 					["sourceQuests"] = { 26815 },	-- Zanzil's Secret
 					["coord"] = { 55.2, 42.0, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
+					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 					["g"] = {
 						i(61543),	-- Dask's Cloak
 						i(61544),	-- Leggings with Mysterious Stains
@@ -539,7 +539,7 @@ _.Zones =
 					},
 				}),
 				q(26535, {	-- Recipe for Disaster (H) (probably used as a sourcequest with High Priest Venoxiss)
-					["qg"] = 43097,	-- Mixmaster Jasper
+					["provider"] = { "n", 43097 },	-- Mixmaster Jasper
 					["coord"] = { 35.1, 27.4, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26534,	-- Let's See What You've Got, Zanzil
@@ -554,12 +554,12 @@ _.Zones =
 					["sourceQuests"] = { 26815 },	-- Zanzil's Secret
 					["coord"] = { 55.2, 42.0, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
+					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 				}),
 				q(26594, {	-- Return to MacKinley
 					["sourceQuests"] = { 26593 },	-- Scaring Shaky
 					["coord"] = { 40.5, 67.8, 210 },
-					["qg"] = 2502,	-- "Shaky" Phillipe
+					["provider"] = { "n", 2502 },	-- "Shaky" Phillipe
 				}),
 				q(26679, {	-- Return to Revilgaz
 					["sourceQuests"] = { 26678 },	-- Doublerum
@@ -568,18 +568,18 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\achievement_faction_brewmaster",
 				}),
 				q(26593, {	-- Scaring Shaky -- aa
-					["qg"] = 2501,	-- "Sea Wolf" MacKinley
+					["provider"] = { "n", 2501 },	-- "Sea Wolf" MacKinley
 					["coord"] = { 42.0, 73.3, 210 },
 				}),
 				q(26629, {	-- Seeing Where Your Loyalties Lie
 					["sourceQuests"] = { 26624 },	-- Getting in With the Bloodsail
 					["coord"] = { 43.8, 56.4, 210 },
-					["qg"] = 43504,	-- Yancey Grillsen
+					["provider"] = { "n", 43504 },	-- Yancey Grillsen
 				}),
 				q(26698, {	-- Seeking Seahorn
 					["sourceQuests"] = { 26679 },	-- Return to Revilgaz
 					["coord"] = { 41.1, 73.1, 210 },
-					["qg"] = 2496,	-- Baron Revilgaz
+					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 				}),
 				q(26663, {	-- Sinking From Within
 					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
@@ -594,7 +594,7 @@ _.Zones =
 					},
 				}),
 				q(26597, {	-- Stranglethorn Fever -- aa
-					["qg"] = 2486,	-- Fin Fizracket
+					["provider"] = { "n", 2486 },	-- Fin Fizracket
 					["coord"] = { 41.7, 72.8, 210 },
 					["g"] = {
 						i(61556),	-- Feverish Bracers
@@ -606,7 +606,7 @@ _.Zones =
 				q(26633, {	-- Swabbing Duty
 					["sourceQuests"] = { 26631 },	-- Your First Day as a Pirate
 					["coord"] = { 44.4, 91.6, 210 },
-					["qg"] = 2548,	-- Captain Keelhaul
+					["provider"] = { "n", 2548 },	-- Captain Keelhaul
 					["g"] = {
 						i(61578),	-- Cleaning Britches
 						i(61580),	-- Swabbie's Booties
@@ -619,21 +619,21 @@ _.Zones =
 				q(26634, {	-- The Bane of Many A Pirate
 					["sourceQuests"] = { 26631 },	-- Your First Day as a Pirate
 					["coord"] = { 44.4, 92.0, 210 },
-					["qg"] = 2549,	-- Garr Salthoof
+					["provider"] = { "n", 2549 },	-- Garr Salthoof
 				}),
 				q(26611, {	-- The Baron Must Be Told
 					["sourceQuests"] = { 26610 },	-- Bloodsail Treachery
 					["coord"] = { 42.4, 72.0, 210 },
-					["qg"] = 2490,	-- First Mate Crazz
+					["provider"] = { "n", 2490 },	-- First Mate Crazz
 				}),
 				q(28749, {	-- The Battle for Andorhal (A)
 					["isBreadcrumb"] = true,
 					["coord"] = { 41.5, 74.2, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 49635,	-- War-Mage Erallier
+					["provider"] = { "n", 49635 },	-- War-Mage Erallier
 				}),
 				q(28750, {	-- The Battle for Andorhal (H)
-					["qg"] = 49636,	-- Arcanist Arman
+					["provider"] = { "n", 49636 },	-- Arcanist Arman
 					["coord"] = { 41.7, 74.1, 210 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -652,7 +652,7 @@ _.Zones =
 					},
 					["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
 					["coord"] = { 42.6, 71.8, 210 },
-					["qg"] = 2490,	-- First Mate Crazz
+					["provider"] = { "n", 2490 },	-- First Mate Crazz
 				}),
 				q(26662, {	-- The Brashtide Crew
 					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
@@ -664,10 +664,10 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- leads to Dustwallow Marsh
 					["coord"] = { 40.4, 68.1, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48808,	-- Corporal Jeyne
+					["provider"] = { "n", 48808 },	-- Corporal Jeyne
 				}),
 				q(26696, {	-- The Call of Kalimdor (H)
-					["qg"] = 48797,	-- Gim'hila
+					["provider"] = { "n", 48797 },	-- Gim'hila
 					["coord"] = { 39.6, 68.5, 210 },
 					["races"] = HORDE_ONLY,
 					["description"] = "Swims in a circle near the dock.",
@@ -688,14 +688,14 @@ _.Zones =
 					},
 				}),
 				q(26599, {	-- The Captain's Chest -- aa
-					["qg"] = 2500,	-- Captain Hecklebury Smotts
+					["provider"] = { "n", 2500 },	-- Captain Hecklebury Smotts
 					["coord"] = { 40.3, 67.7, 210 },
 					["g"] = {
 						i(11469),	-- Bloodband Bracers
 					},
 				}),
 				q(1041,  {	-- The Caravan Road
-					["qg"] = 3945,	-- Caravaneer Ruzzgot
+					["provider"] = { "n", 3945 },	-- Caravaneer Ruzzgot
 					["coord"] = { 27.4, 74.2, 210 },
 					["sourceQuests"] = 1040,	-- The Passage to Booty Bay
 					["races"] = ALLIANCE_ONLY,
@@ -712,7 +712,7 @@ _.Zones =
 				q(26700, {	-- The Damsel's (Bad) Luck
 					["sourceQuests"] = { 26698 },	-- Seeking Seahorn
 					["coord"] = { 41.5, 73.0, 210 },
-					["qg"] = 2487,	-- Fleet Master Seahorn
+					["provider"] = { "n", 2487 },	-- Fleet Master Seahorn
 				}),
 				q(26650, {	-- The Damsel's Luck
 					["sourceQuests"] = {
@@ -720,10 +720,10 @@ _.Zones =
 						26648,	-- Our Mortal Enemies
 					},
 					["coord"] = { 46.7, 95.2, 210 },
-					["qg"] = 2546, -- Fleet Master Firallon
+					["provider"] = { "n", 2546 }, -- Fleet Master Firallon
 				}),
 				q(40849, {	-- The Dreadblades
-					["qg"] = 102120,	-- Fleet Admiral Tethys
+					["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
 					["lvl"] = 98,
 					["coord"] = { 40.6, 69.2, 210 },
 					["classes"] = {
@@ -737,7 +737,7 @@ _.Zones =
 				q(26697, {	-- The Final Voyage of the Brashtide
 					["sourceQuests"] = { 26695 },	-- Prepare for Takeoff
 					["coord"] = { 41.1, 73.1, 210 },
-					["qg"] = 2496,	-- Baron Revilgaz
+					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 					["g"] = {
 						i(61608),	-- Mongrel Shooter
 						i(61610),	-- Flight Master's Gift
@@ -746,7 +746,7 @@ _.Zones =
 					},
 				}),
 				q(26433, {	-- The Holy Water of Clarity
-					["qg"] = 43096,	-- Flem Gizzix
+					["provider"] = { "n", 43096 },	-- Flem Gizzix
 					["coord"] = { 33.6, 29.1, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -756,7 +756,7 @@ _.Zones =
 				}),
 				q(26590, {	-- The Holy Water of Clarity
 					["u"] = 1,	-- TODO:: verify if there a special condition for this version
-					["qg"] = 43096,	-- Flem Gizzix
+					["provider"] = { "n", 43096 },	-- Flem Gizzix
 					["coord"] = { 33.6, 29.1, 210 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -764,11 +764,11 @@ _.Zones =
 					["description"] = "This quest is only available while you are on the [Stranglethorn Fever] quest.",
 					["repeatable"] = true,
 					["coord"] = { 54.1, 46.5, 210 },
-					["qg"] = 1449,	-- Witch Doctor Unbagwa
+					["provider"] = { "n", 1449 },	-- Witch Doctor Unbagwa
 				}),
 				q(2760,  {	-- The Mithril Order
 					["u"] = 40,
-					["qg"] = 7794,	-- McGavan
+					["provider"] = { "n", 7794 },	-- McGavan
 					["coord"] = { 43.8, 70.7, 210 },
 					["requireSkill"] = 164,	-- Blacksmithing
 					["sourceQuests"] = {
@@ -777,7 +777,7 @@ _.Zones =
 					},
 				}),
 				q(26493, {	-- There's Somebody Out There Who Wants It
-					["qg"] = 43095,	-- Sassy Hardwrench
+					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
 					["coord"] = { 34.6, 29.5, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -804,10 +804,10 @@ _.Zones =
 					["sourceQuests"] = { 26825, 26826 },	-- Dask "The Flask" Gobfizzle (two different versions)
 					["coord"] = { 55.2, 42.0, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
+					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 				}),
 				q(9259,  {	-- Traitor to the Bloodsail
-					["qg"] = 16399,	-- Bloodsail Traitor
+					["provider"] = { "n", 16399 },	-- Bloodsail Traitor
 					["coord"] = { 48.4, 63.2, 210 },
 					["repeatable"] = true,
 					["maxReputation"] = { 21, NEUTRAL },
@@ -815,7 +815,7 @@ _.Zones =
 				q(26699, {	-- Turning the Brashtide
 					["sourceQuests"] = { 26698 },	-- Seeking Seahorn
 					["coord"] = { 41.5, 73.0, 210 },
-					["qg"] = 2487,	-- Fleet Master Seahorn
+					["provider"] = { "n", 2487 },	-- Fleet Master Seahorn
 					["g"] = {
 						i(61620),	-- Revilgaz's Cutlass
 						i(61622),	-- Bruised Vest
@@ -826,7 +826,7 @@ _.Zones =
 				q(26613, {	-- Up to Snuff
 					["sourceQuests"] = { 26611 },	-- The Baron Must Be Told
 					["coord"] = { 40.7, 73.8, 210 },
-					["qg"] = 2488,	-- Deeg
+					["provider"] = { "n", 2488 },	-- Deeg
 				}),
 				q(600,   {	-- Venture Company Mining
 					["u"] = 40,
@@ -837,13 +837,13 @@ _.Zones =
 				}),
 				q(29150, {	-- Voodoo Zombies (A)
 					["lvl"] = 85,
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["coord"] = { 55.1, 42.2, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29133 },	-- To the Digsite
 				}),
 				q(29237, {	-- Voodoo Zombies (H)
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["lvl"] = 85,
 					["coord"] = { 34.7, 29.4, 210 },
 					["races"] = HORDE_ONLY,
@@ -855,7 +855,7 @@ _.Zones =
 						26629,	-- Seeing Where Your Loyalties Lie
 					},
 					["coord"] = { 43.8, 56.4, 210 },
-					["qg"] = 43504,	-- Yancey Grillsen
+					["provider"] = { "n", 43504 },	-- Yancey Grillsen
 				}),
 				q(621,   {	-- Zanzil's Secret
 					["u"] = 40,
@@ -868,10 +868,10 @@ _.Zones =
 					["sourceQuests"] = { 26817 },	-- Perfectly Pure
 					["coord"] = { 55.2, 41.9, 210 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
+					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 				}),
 				q(26533, {	-- Zanzil's Secret (H)
-					["qg"] = 43097,	-- Mixmaster Jasper
+					["provider"] = { "n", 43097 },	-- Mixmaster Jasper
 					["coord"] = { 35.1, 27.4, 210 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26494,	-- Mixmaster Jasper

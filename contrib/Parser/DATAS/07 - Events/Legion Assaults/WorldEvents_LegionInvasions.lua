@@ -9,7 +9,7 @@ _.WorldEvents =
 		["groups"] = {
 			{
 				["vignetteID"] = 47063,
-				["qgs"] = {
+				["crs"] = {
 					118180,	-- Dread Vizier Gra'tork <Legion Commander>
 					119579,	-- Fel Commander Erixtol
 					118840,	-- Lord Commander Alexius

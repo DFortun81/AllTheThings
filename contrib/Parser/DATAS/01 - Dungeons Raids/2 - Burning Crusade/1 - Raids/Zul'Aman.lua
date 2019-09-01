@@ -16,25 +16,25 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					n(-17, {	-- Quests 
 						{
 							["questID"] = 11165,	-- A Troll Among Trolls
-							["qg"] = 23761,	-- Quest Giver: Prigmon
+							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
 							["sourceQuest"] = 11164,	-- Source Quest: Tuskin' Raiders
 							["u"] = 2,			-- Legacy Content
 						},
 						{
 							["questID"] = 11171,	-- Hex Lord? Hah!
-							["qg"] = 23559,	-- Quest Giver: Budd
+							["provider"] = { "n", 23559 },	-- Quest Giver: Budd
 							["sourceQuest"] = 11166,	-- Source Quest: X Marks... Your Doom!
 							["u"] = 2,			-- Legacy Content
 						},
 						{
 							["questID"] = 11130, 	-- Oooh, Shinies!
-							["qg"] = 19227,	-- Quest Giver: Griftah (Shattrath)
+							["provider"] = { "n", 19227 },	-- Quest Giver: Griftah (Shattrath)
 							["u"] = 2,			-- Legacy Content
 							["isBreadcrumb"] = true,
 						},
 						{
 							["questID"] = 11195,	-- Playin' With Dolls
-							["qg"] = 23897,	-- Quest Giver: Zungam
+							["provider"] = { "n", 23897 },	-- Quest Giver: Zungam
 							["sourceQuest"] = 11165,	-- Source Quest: A Troll Among Trolls
 							["u"] = 2,			-- Legacy Content
 							["groups"] = {
@@ -43,7 +43,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						},
 						{
 							["questID"] = 11132,	-- Promises, Promises...
-							["qg"] = 23559,	-- Quest Giver: Budd
+							["provider"] = { "n", 23559 },	-- Quest Giver: Budd
 							["sourceQuest"] = 11130,	-- Source Quest: Oooh, Shinies!
 							["u"] = 2,			-- Legacy Content
 							["groups"] = {
@@ -52,13 +52,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						},
 						{
 							["questID"] = 11164,	-- Tuskin' Raiders
-							["qg"] = 23761,	-- Quest Giver: Prigmon
+							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
 							["sourceQuest"] = 11130,	-- Source Quest: Oooh, Shinies!
 							["u"] = 2,			-- Legacy Content
 						},
 						{
 							["questID"] = 11166,	-- X Marks... Your Doom!
-							["qg"] = 23559,	-- Quest Giver: Budd
+							["provider"] = { "n", 23559 },	-- Quest Giver: Budd
 							["sourceQuest"] = 11132,	-- Source Quest: Promises, Promises...
 							["u"] = 2,			-- Legacy Content
 						},

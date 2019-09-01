@@ -8,13 +8,13 @@ _.Zones =
 			m(205, {	-- Shimmering Expanse
 				n(-17,  {	-- Quests
 					q(25582, {	-- A Better Vantage (A)
-						["qg"] = 40643,	-- Admiral Dvorek
+						["provider"] = { "n", 40643 },	-- Admiral Dvorek
 						["coord"] = { 49.1, 56.9, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25540,	-- Bellies Await
 					}),
 					q(25955, {	-- A Better Vantage (H)
-						["qg"] = 40916,	-- Captain Vilethorn
+						["provider"] = { "n", 40916 },	-- Captain Vilethorn
 						["coord"] = { 51.1, 62.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25595,	-- Something Edible
@@ -23,19 +23,19 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(26005, {	-- A Breath of Fresh Air (A)
-						["qg"] = 39881,	-- Wavespeaker Valoren
+						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
 						["coord"] = { 49.4, 57.5, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
 					}),
 					q(26006, {	-- A Breath of Fresh Air (H)
-						["qg"] = 40919,	-- Wavespeaker Tulra
+						["provider"] = { "n", 40919 },	-- Wavespeaker Tulra
 						["coord"] = { 51.6, 62.7, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
 					}),
 					q(25215, {	-- A Distracting Scent
-						["qg"] = 39876,	-- Felora Firewreath
+						["provider"] = { "n", 39876 },	-- Felora Firewreath
 						["coord"] = { 49.3, 42.7, 205 },
 						["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
 						["g"] = {
@@ -55,13 +55,13 @@ _.Zones =
 						},
 					}),
 					q(25535, {	-- A Powerful Need To Eat
-						["qg"] = 39881,	-- Wavespeaker Valoren
+						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
 						["coord"] = { 49.5, 57.3, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25922,	-- Waking the Beast
 					}),
 					q(25581, {	-- An Occupation of Time (A)
-						["qg"] = 40644,	-- Levia Dreamwalker
+						["provider"] = { "n", 40644 },	-- Levia Dreamwalker
 						["coord"] = { 49.6, 57.1, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25540,	-- Bellies Await
@@ -72,7 +72,7 @@ _.Zones =
 						},
 					}),
 					q(25954, {	-- An Occupation of Time (H)
-						["qg"] = 40920,	-- Elendri Goldenbrow
+						["provider"] = { "n", 40920 },	-- Elendri Goldenbrow
 						["coord"] = { 51.2, 62.4, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -90,13 +90,13 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(25537, {	-- Art of Attraction
-						["qg"] = 40639,	-- Engineer Hexascrub
+						["provider"] = { "n", 40639 },	-- Engineer Hexascrub
 						["coord"] = { 48.9, 49.2, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25535 },	-- A Powerful Need to Eat
 					}),
 					q(25860, {	-- At All Costs
-						["qg"] = 41456,	-- Lady Sira'kess
+						["provider"] = { "n", 41456 },	-- Lady Sira'kess
 						["coord"] = { 33.1, 77.9, 205 },
 						["sourceQuests"] = {
 							25896,	-- Devout Assembly
@@ -104,7 +104,7 @@ _.Zones =
 						},
 					}),
 					q(25164, {	-- Backed Into a Corner
-						["qg"] = 39226,	-- Farseer Gadra
+						["provider"] = { "n", 39226 },	-- Farseer Gadra
 						["coord"] = { 55.9, 13.6, 205 },
 						["sourceQuests"] = { 25334 },	-- The Looming Threat
 						["g"] = {
@@ -114,12 +114,12 @@ _.Zones =
 						},
 					}),
 					q(25456, {	-- Back in One Piece
-						["qg"] = 39882,	-- The Great Sambino
+						["provider"] = { "n", 39882 },	-- The Great Sambino
 						["coord"] = { 41.3, 34.2, 205 },
 						["sourceQuests"] = { 25217 },	-- Totem Modification
 					}),
 					q(25540, {	-- Bellies Await
-						["qg"] = 40641,	-- Divemaster Birmingham
+						["provider"] = { "n", 40641 },	-- Divemaster Birmingham
 						["coord"] = { 48.9, 49.1, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25538 },	-- Odor Coater
@@ -130,36 +130,36 @@ _.Zones =
 						},
 					}),
 					q(25919, {	-- Body Blows (A)
-						["qg"] = 41540,	-- Captain Taylor
+						["provider"] = { "n", 41540 },	-- Captain Taylor
 						["coord"] = { 62.6, 49.8, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25917,	-- We Are Not Alone
 					}),
 					q(25993, {	-- Body Blows (H)
-						["qg"] = 41810,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 41810 },	-- Legionnaire Nazgrim
 						["coord"] = { 60.2, 63.6, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25991,	-- We Are Not Alone
 					}),
 					q(25916, {	-- Breaking Through (A)
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25909,	-- Capture the Crab
 					}),
 					q(25990, {	-- Breaking Through (H)
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25989,	-- Capture the Crab
 					}),
 					q(25658, {	-- Built to Last
-						["qg"] = 41050,	-- Sira'kess Tide Priestess
+						["provider"] = { "n", 41050 },	-- Sira'kess Tide Priestess
 						["coord"] = { 38.9, 58.5, 205 },
 						["sourceQuest"] = 25620,	-- The Revered Lady
 					}),
 					q(25858, {	-- By Her Lady's Word
-						["qg"] = 42076,	-- Lady Naz'jar
+						["provider"] = { "n", 42076 },	-- Lady Naz'jar
 						["coord"] = { 29.0, 78.4, 205 },
 						["description"] = "Must be on |cFFFFD700Visions of the Past: The Slaughter of Biel'aran Ridge|r to accept this quest.",
 						["sourceQuests"] = {
@@ -170,7 +170,7 @@ _.Zones =
 						},
 					}),
 					q(25909, {	-- Capture the Crab (A)
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -179,7 +179,7 @@ _.Zones =
 						},
 					}),
 					q(25989, {	-- Capture the Crab (H)
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -188,13 +188,13 @@ _.Zones =
 						},
 					}),
 					q(25579, {	-- Caught Off-Guard (A)
-						["qg"] = 40643,	-- Admiral Dvorek
+						["provider"] = { "n", 40643 },	-- Admiral Dvorek
 						["coord"] = { 49.1, 56.9, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25540,	-- Bellies Await
 					}),
 					q(25952, {	-- Caught Off-Guard (H)
-						["qg"] = 40916,	-- Captain Vilethorn
+						["provider"] = { "n", 40916 },	-- Captain Vilethorn
 						["coord"] = { 51.1, 62.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25595,	-- Something Edible
@@ -209,31 +209,31 @@ _.Zones =
 						["sourceQuest"] = 25862,	-- Stolen Property
 					}),
 					q(25539, {	-- Clamming Up
-						["qg"] = 40641,	-- Divemaster Birmingham
+						["provider"] = { "n", 40641 },	-- Divemaster Birmingham
 						["coord"] = { 48.9, 49.1, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25535 },	-- A Powerful Need to Eat
 					}),
 					q(25748, {	-- Clear Goals (A)
-						["qg"] = 40643,	-- Admiral Dvorek
+						["provider"] = { "n", 40643 },	-- Admiral Dvorek
 						["coord"] = { 32.9, 67.8, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25747,	-- Looking Forward
 					}),
 					q(25959, {	-- Clear Goals (H)
-						["qg"] = 40916,	-- Captain Vilethorn
+						["provider"] = { "n", 40916 },	-- Captain Vilethorn
 						["coord"] = { 39.7, 54.1, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25958,	-- Looking Forward
 					}),
 					q(25536, {	-- Cold Welcome
-						["qg"] = 42411,	-- Captain Taylor
+						["provider"] = { "n", 42411 },	-- Captain Taylor
 						["coord"] = { 56.9, 75.8, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25922,	-- Waking the Beast
 					}),
 					q(25895, {	-- Come Prepared (A)
-						["qg"] = 41535,	-- Engineer Hexascrub
+						["provider"] = { "n", 41535 },	-- Engineer Hexascrub
 						["coord"] = { 56.9, 80.4, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25893,	-- Desperate Plan
@@ -244,7 +244,7 @@ _.Zones =
 						},
 					}),
 					q(25970, {	-- Come Prepared (H)
-						["qg"] = 41770,	-- Fiasco Sizzlegrin
+						["provider"] = { "n", 41770 },	-- Fiasco Sizzlegrin
 						["coord"] = { 50.3, 78.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25968,	-- Desperate Plan
@@ -255,7 +255,7 @@ _.Zones =
 						},
 					}),
 					q(25360, {	-- Crabby Patrons
-						["qg"] = 40227,	-- Felice
+						["provider"] = { "n", 40227 },	-- Felice
 						["coord"] = { 41.1, 34.1, 205 },
 						["g"] = {
 							i(59761),	-- Leggings of the Albino Brachyura
@@ -264,7 +264,7 @@ _.Zones =
 						},
 					}),
 					q(25594, {	-- Crafty Crabs
-						["qg"] = 40918,	-- Fiasco Sizzlegrin
+						["provider"] = { "n", 40918 },	-- Fiasco Sizzlegrin
 						["coord"] = { 51.7, 62.4, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25996,	-- Waking the Beast
@@ -293,48 +293,48 @@ _.Zones =
 						},
 					}),
 					q(25592, {	-- Deep Attraction
-						["qg"] = 40917,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 40917 },	-- Legionnaire Nazgrim
 						["coord"] = { 51.2, 63.0, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25996,	-- Waking the Beast
 					}),
 					q(25893, {	-- Desperate Plan (A)
-						["qg"] = 40642,	-- Captain Taylor
+						["provider"] = { "n", 40642 },	-- Captain Taylor
 						["coord"] = { 49.1, 56.9, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25747,	-- Losing Ground
 					}),
 					q(25968, {	-- Desperate Plan (H)
-						["qg"] = 40917,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 40917 },	-- Legionnaire Nazgrim
 						["coord"] = { 51.2, 62.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25967,	-- Losing Ground
 					}),
 					q(25896, {	-- Devout Assembly
-						["qg"] = 41456,	-- Lady Sira'kess
+						["provider"] = { "n", 41456 },	-- Lady Sira'kess
 						["coord"] = { 33.1, 77.9, 205 },
 						["description"] = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
 						["sourceQuest"] = 25973,	-- Welcome News
 					}),
 					q(25219, {	-- Don't be Shellfish
-						["qg"] = 39875,	-- Earthmender Duarn
+						["provider"] = { "n", 39875 },	-- Earthmender Duarn
 						["coord"] = { 49.2, 42.5, 205 },
 						["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
 					}),
 					q(25753, {	-- Fallen But Not Forgotten (A)
-						["qg"] = 40642,	-- Captain Taylor
+						["provider"] = { "n", 40642 },	-- Captain Taylor
 						["coord"] = { 39.0, 78.5, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25752,	-- Swift Action
 					}),
 					q(25964, {	-- Fallen But Not Forgotten (H)
-						["qg"] = 40917,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 40917 },	-- Legionnaire Nazgrim
 						["coord"] = { 39.0, 78.5, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25963,	-- Swift Action
 					}),
 					q(25440, {	-- Fathom-Lord Zin'jatar
-						["qg"] = 40221,	-- Toshe Chaosrender
+						["provider"] = { "n", 40221 },	-- Toshe Chaosrender
 						["coord"] = { 64.0, 42.2, 205 },
 						["sourceQuest"] = 25439,	-- Vengeful Heart
 						["g"] = {
@@ -344,42 +344,42 @@ _.Zones =
 						},
 					}),
 					q(25951, {	-- Final Judgment
-						["qg"] = 41456,	-- Lady Sira'kess
+						["provider"] = { "n", 41456 },	-- Lady Sira'kess
 						["coord"] = { 33.1, 77.9, 205 },
 						["sourceQuest"] = 25860,	-- At All Costs
 					}),
 					q(26219, {	-- Full Circle (A)
-						["qg"] = 42411,	-- Captain Taylor
+						["provider"] = { "n", 42411 },	-- Captain Taylor
 						["coord"] = { 56.9, 75.8, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26005,	-- A Breath of Fresh Air
 					}),
 					q(26221, {	-- Full Circle (H)
-						["qg"] = 42410,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 42410 },	-- Legionnaire Nazgrim
 						["coord"] = { 49.6, 66.4, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26006,	-- A Breath of Fresh Air
 					}),
 					q(25754, {	-- Gauging Success (A)
-						["qg"] = 40643,	-- Admiral Dvorek
+						["provider"] = { "n", 40643 },	-- Admiral Dvorek
 						["coord"] = { 39.1, 78.7, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25752,	-- Swift Action
 					}),
 					q(25965, {	-- Gauging Success (H)
-						["qg"] = 40916,	-- Captain Vilethorn
+						["provider"] = { "n", 40916 },	-- Captain Vilethorn
 						["coord"] = { 39.1, 78.7, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25963,	-- Swift Action
 					}),
 					q(25629, {	-- Her Lady's Hand
-						["qg"] = 42077,	-- Lady Naz'jar
+						["provider"] = { "n", 42077 },	-- Lady Naz'jar
 						["coord"] = { 33.1, 75.9, 205 },
 						["description"] = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
 						["sourceQuest"] = 25973,	-- Welcome News
 					}),
 					q(25898, {	-- Honor and Privilege (A)
-						["qg"] = 41535,	-- Engineer Hexascrub
+						["provider"] = { "n", 41535 },	-- Engineer Hexascrub
 						["coord"] = { 56.9, 80.4, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -389,7 +389,7 @@ _.Zones =
 						},
 					}),
 					q(25972, {	-- Honor and Privilege (H)
-						["qg"] = 41770,	-- Fiasco Sizzlegrin
+						["provider"] = { "n", 41770 },	-- Fiasco Sizzlegrin
 						["coord"] = { 50.3, 78.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -399,7 +399,7 @@ _.Zones =
 						},
 					}),
 					q(25918, {	-- Hopelessly Gearless (A)
-						["qg"] = 41541,	-- Admiral Dvorek
+						["provider"] = { "n", 41541 },	-- Admiral Dvorek
 						["coord"] = { 62.7, 49.9, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25917,	-- We Are Not Alone
@@ -410,7 +410,7 @@ _.Zones =
 						},
 					}),
 					q(25992, {	-- Hopelessly Gearless (H)
-						["qg"] = 41811,	-- Captain Vilethorn
+						["provider"] = { "n", 41811 },	-- Captain Vilethorn
 						["coord"] = { 60.1, 63.7, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25991,	-- We Are Not Alone
@@ -421,58 +421,58 @@ _.Zones =
 						},
 					}),
 					q(25894, {	-- Hostile Waters (A)
-						["qg"] = 40645,	-- Jorlan Trueblade
+						["provider"] = { "n", 40645 },	-- Jorlan Trueblade
 						["coord"] = { 56.9, 80.5, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25893,	-- Desperate Plan
 					}),
 					q(25969, {	-- Hostile Waters (H)
-						["qg"] = 40917,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 40917 },	-- Legionnaire Nazgrim
 						["coord"] = { 51.2, 62.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25968,	-- Desperate Plan
 					}),
 					q(25747, {	-- Looking Forward (A)
-						["qg"] = 39881,	-- Wavespeaker Valoren
+						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
 						["coord"] = { 40.5, 75.0, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25760,	-- Visions of the Past: The Invasion of Vashj'ir
 					}),
 					q(25958, {	-- Looking Forward (H)
-						["qg"] = 40919,	-- Wavespeaker Tulra
+						["provider"] = { "n", 40919 },	-- Wavespeaker Tulra
 						["coord"] = { 40.6, 75.0, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25957,	-- Visions of the Past: The Invasion of Vashj'ir
 					}),
 					q(25892, {	-- Losing Ground (A)
-						["qg"] = 39881,	-- Wavespeaker Valoren
+						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
 						["coord"] = { 29.5, 78.9, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25755,	-- Visions of the Past: The Slaughter of Biel'aran Ridge
 					}),
 					q(25967, {	-- Losing Ground (H)
-						["qg"] = 40919,	-- Wavespeaker Tulra
+						["provider"] = { "n", 40919 },	-- Wavespeaker Tulra
 						["coord"] = { 29.5, 78.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25966,	-- Visions of the Past: The Slaughter of Biel'aran Ridge
 					}),
 					q(25900, {	-- Making Contact
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["sourceQuest"] = 25890,	-- Nespirah
 					}),
 					q(25890, {	-- Nespirah
-						["qg"] = 39875,	-- Earthmender Duarn
+						["provider"] = { "n", 39875 },	-- Earthmender Duarn
 						["coord"] = { 49.2, 42.5, 205 },
 						["sourceQuest"] = 25440,	-- Fathom-Lord Zin'jatar
 					}),
 					q(25859, {	-- No Trespass Forgiven
-						["qg"] = 42074,	-- Fathom-Stalker Azjentus
+						["provider"] = { "n", 42074 },	-- Fathom-Stalker Azjentus
 						["coord"] = { 46.1, 79.5, 205 },
 						["sourceQuest"] = 25858,	-- By Her Lady's Word
 					}),
 					q(25749, {	-- Not Entirely Unprepared (A)
-						["qg"] = 40642,	-- Captain Taylor
+						["provider"] = { "n", 40642 },	-- Captain Taylor
 						["coord"] = { 33.2, 68.3, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25747,	-- Looking Forward
@@ -483,7 +483,7 @@ _.Zones =
 						},
 					}),
 					q(25960, {	-- Not Entirely Unprepared (H)
-						["qg"] = 40917,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 40917 },	-- Legionnaire Nazgrim
 						["coord"] = { 39.5, 54.0, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25958,	-- Looking Forward
@@ -494,7 +494,7 @@ _.Zones =
 						},
 					}),
 					q(25659, {	-- Not Soon Forgotten
-						["qg"] = 41049,	-- Fathom-Lord Zin'jatar
+						["provider"] = { "n", 41049 },	-- Fathom-Lord Zin'jatar
 						["coord"] = { 36.4, 78.6, 205 },
 						["sourceQuests"] = {
 							25658,	-- Built to Last
@@ -502,7 +502,7 @@ _.Zones =
 						},
 					}),
 					q(25538, {	-- Odor Coater
-						["qg"] = 40639,	-- Engineer Hexascrub
+						["provider"] = { "n", 40639 },	-- Engineer Hexascrub
 						["coord"] = { 48.9, 49.2, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 25537 },	-- Art of Attraction
@@ -513,7 +513,7 @@ _.Zones =
 						},
 					}),
 					q(25921, {	-- Overseer Idra'kess (A)
-						["qg"] = 41540,	-- Captain Taylor
+						["provider"] = { "n", 41540 },	-- Captain Taylor
 						["coord"] = { 62.6, 49.8, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -528,7 +528,7 @@ _.Zones =
 						},
 					}),
 					q(25995, {	-- Overseer Idra'kess (H)
-						["qg"] = 41810,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 41810 },	-- Legionnaire Nazgrim
 						["coord"] = { 60.2, 63.6, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -569,19 +569,19 @@ _.Zones =
 						},
 					}),
 					q(25751, {	-- Properly Inspired (A)
-						["qg"] = 40639,	-- Engineer Hexascrub
+						["provider"] = { "n", 40639 },	-- Engineer Hexascrub
 						["coord"] = { 32.9, 69.2, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25747,	-- Looking Forward
 					}),
 					q(25962, {	-- Properly Inspired (H)
-						["qg"] = 40918,	-- Fiasco Sizzlegrin
+						["provider"] = { "n", 40918 },	-- Fiasco Sizzlegrin
 						["coord"] = { 39.4, 54.6, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25958,	-- Looking Forward
 					}),
 					q(25619, {	-- Reoccupation (this shows up on the map after "Back in One Piece" but isn't actually available yet)
-						["qg"] = 40978,	-- Fathom-Stalker Azjentus
+						["provider"] = { "n", 40978 },	-- Fathom-Stalker Azjentus
 						["coord"] = { 40.4, 75.3, 205 },
 						["description"] = "Must be on |cFFFFD700Visions of the Past: The Invasion of Vashj'ir|r to get this quest.",
 						["sourceQuests"] = {
@@ -590,38 +590,38 @@ _.Zones =
 						},
 					}),
 					q(25221, {	-- Rundown
-						["qg"] = 39877,	-- Toshe Chaosrender
+						["provider"] = { "n", 39877 },	-- Toshe Chaosrender
 						["coord"] = { 55.5, 12.5, 205 },
 						["sourceQuests"] = { 25164 },	-- Backed Into a Corner
 					}),
 					q(25861, {	-- Setting An Example
-						["qg"] = 41457,	-- Executioner Verathress
+						["provider"] = { "n", 41457 },	-- Executioner Verathress
 						["coord"] = { 57.1, 85.1, 205 },
 						["sourceQuest"] = 25858,	-- By Her Lady's Word
 					}),
 					q(25593, {	-- Shelled Salvation
-						["qg"] = 40916,	-- Captain Vilethorn
+						["provider"] = { "n", 40916 },	-- Captain Vilethorn
 						["coord"] = { 51.1, 62.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25996,	-- Waking the Beast
 					}),
 					q(25222, {	-- Silver Tide Hollow
-						["qg"] = 39877,	-- Toshe Chaosrender
+						["provider"] = { "n", 39877 },	-- Toshe Chaosrender
 						["coord"] = { 53.2, 33.1, 205 },
 						["sourceQuests"] = { 25221 },	-- Rundown
 					}),
 					q(25907, {	-- Slave Labor
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["sourceQuest"] = 25900,	-- Making Contact
 					}),
 					q(25220, {	-- Slippery Threat
-						["qg"] = 39878,	-- Caretaker Movra
+						["provider"] = { "n", 39878 },	-- Caretaker Movra
 						["coord"] = { 49.1, 41.9, 205 },
 						["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
 					}),
 					q(25595, {	-- Something Edible
-						["qg"] = 40919,	-- Wavespeaker Tulra
+						["provider"] = { "n", 40919 },	-- Wavespeaker Tulra
 						["coord"] = { 51.6, 62.7, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25996,	-- Waking the Beast
@@ -632,7 +632,7 @@ _.Zones =
 						},
 					}),
 					q(25908, {	-- Stick it to Them
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["sourceQuest"] = 25900,	-- Making Contact
 						["g"] = {
@@ -642,24 +642,24 @@ _.Zones =
 						},
 					}),
 					q(25920, {	-- Still Valuable (A)
-						["qg"] = 41802,	-- Wavespeaker Valoren
+						["provider"] = { "n", 41802 },	-- Wavespeaker Valoren
 						["coord"] = { 62.5, 49.9, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25917,	-- We Are Not Alone
 					}),
 					q(25994, {	-- Still Valuable (H)
-						["qg"] = 41813,	-- Wavespeaker Tulra
+						["provider"] = { "n", 41813 },	-- Wavespeaker Tulra
 						["coord"] = { 60.2, 63.8, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25991,	-- We Are Not Alone
 					}),
 					q(25862, {	-- Stolen Property
-						["qg"] = 41476,	-- Naz'jar Honor Guard
+						["provider"] = { "n", 41476 },	-- Naz'jar Honor Guard
 						["coord"] = { 46.3, 78.5, 205 },
 						["sourceQuest"] = 25858,	-- By Her Lady's Word
 					}),
 					q(25752, {	-- Swift Action (A)
-						["qg"] = 40643,	-- Admiral Dvorek
+						["provider"] = { "n", 40643 },	-- Admiral Dvorek
 						["coord"] = { 49.1, 56.9, 205 }, 
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -674,7 +674,7 @@ _.Zones =
 						},
 					}),
 					q(25963, {	-- Swift Action (H)
-						["qg"] = 40916,	-- Captain Vilethorn
+						["provider"] = { "n", 40916 },	-- Captain Vilethorn
 						["coord"] = { 39.7, 53.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -689,7 +689,7 @@ _.Zones =
 						},
 					}),
 					q(25580, {	-- Swift Approach (A)
-						["qg"] = 40642,	-- Captain Taylor
+						["provider"] = { "n", 40642 },	-- Captain Taylor
 						["coord"] = { 49.1, 56.9, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25540,	-- Bellies Await
@@ -700,7 +700,7 @@ _.Zones =
 						},
 					}),
 					q(25953, {	-- Swift Approach (H)
-						["qg"] = 40917,	-- Legionnaire Nazgrim
+						["provider"] = { "n", 40917 },	-- Legionnaire Nazgrim
 						["coord"] = { 51.2, 63.0, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25595,	-- Something Edible (definitely required)
@@ -714,7 +714,7 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(27393, {	-- The Call of the Blade (A)
-						["qg"] = 39881,	-- Wavespeaker Valoren
+						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
 						["coord"] = { 49.5, 57.5, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -725,7 +725,7 @@ _.Zones =
 						},
 					}),
 					q(27394, {	-- The Call of the Blade (H)
-						["qg"] = 40919,	-- Wavespeaker Tulra
+						["provider"] = { "n", 40919 },	-- Wavespeaker Tulra
 						["coord"] = { 51.6, 62.7, 205 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -736,7 +736,7 @@ _.Zones =
 						},
 					}),
 					q(26191, {	-- The Culmination of Our Efforts
-						["qg"] = 42076,	-- Lady Naz'jar
+						["provider"] = { "n", 42076 },	-- Lady Naz'jar
 						["coord"] = { 46.4, 79.0, 205 },
 						["sourceQuests"] = {
 							25863,	-- Chosen Burden
@@ -745,33 +745,33 @@ _.Zones =
 						},
 					}),
 					q(25216, {	-- The Great Sambino
-						["qg"] = 39876,	-- Felora Firewreath
+						["provider"] = { "n", 39876 },	-- Felora Firewreath
 						["coord"] = { 49.3, 42.7, 205 },
 						["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
 					}),
 					q(25334, {	-- The Looming Threat
-						["qg"] = 39226,	-- Farseer Gadra
+						["provider"] = { "n", 39226 },	-- Farseer Gadra
 						["coord"] = { 55.9, 13.6, 205 },
 						["sourceQuests"] = { 25471 },	-- Across the Great Divide
 					}),
 					q(25620, {	-- The Revered Lady
-						["qg"] = 40978,	-- Fathom-Stalker Azjentus
+						["provider"] = { "n", 40978 },	-- Fathom-Stalker Azjentus
 						["coord"] = { 40.5, 75.2, 205 },
 						["sourceQuest"] = 25619,	-- Reoccupation
 					}),
 					q(25637, {	-- To the Fathom-Lord's Call
-						["qg"] = 40640,	-- Lady Naz'jar
+						["provider"] = { "n", 40640 },	-- Lady Naz'jar
 						["coord"] = { 39.4, 58.9, 205 },
 						["sourceQuest"] = 25620,	-- The Revered Lady
 					}),
 					q(25359, {	-- Toshe's Vengeance
-						["qg"] = 39876,	-- Felora Firewreath
+						["provider"] = { "n", 39876 },	-- Felora Firewreath
 						["coord"] = { 49.5, 42.3, 205 },
 						["sourceQuest"] = 25456,	-- Back in One Piece (TODO:: does this require any other quest from Silver Tide Hollow?)
 						["isBreadcrumb"] = true,
 					}),
 					q(25217, {	-- Totem Modification
-						["qg"] = 39882,	-- The Great Sambino
+						["provider"] = { "n", 39882 },	-- The Great Sambino
 						["coord"] = { 41.3, 34.2, 205 },
 						["sourceQuests"] = { 25218 },	-- Undersea Inflation
 						["g"] = {
@@ -781,18 +781,18 @@ _.Zones =
 						},
 					}),
 					q(25218, {	-- Undersea Inflation
-						["qg"] = 39882,	-- The Great Sambino
+						["provider"] = { "n", 39882 },	-- The Great Sambino
 						["coord"] = { 41.3, 34.2, 205 },
 						["sourceQuests"] = { 25216 },	-- The Great Sambino
 					}),
 					q(25897, {	-- Unfurling Plan (A)
-						["qg"] = 41535,	-- Engineer Hexascrub
+						["provider"] = { "n", 41535 },	-- Engineer Hexascrub
 						["coord"] = { 56.9, 80.4, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25893,	-- Desperate Plan
 					}),
 					q(25971, {	-- Unfurling Plan (H)
-						["qg"] = 41770,	-- Fiasco Sizzlegrin
+						["provider"] = { "n", 41770 },	-- Fiasco Sizzlegrin
 						["coord"] = { 50.3, 78.9, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25968,	-- Desperate Plan
@@ -821,12 +821,12 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(25439, {	-- Vengeful Heart
-						["qg"] = 40221,	-- Toshe Chaosrender
+						["provider"] = { "n", 40221 },	-- Toshe Chaosrender
 						["coord"] = { 64.0, 42.2, 205 },
 						["sourceQuest"] = 25359,	-- Toshe's Vengeance
 					}),
 					q(25626, {	-- Visions of the Past: Rise from the Deep (A)
-						["qg"] = 39881,	-- Wavespeaker Valoren
+						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
 						["coord"] = { 49.4, 57.5, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25911,	-- Welcome News
@@ -838,7 +838,7 @@ _.Zones =
 						},
 					}),
 					q(26135, {	-- Visions of the Past: Rise from the Deep (H)
-						["qg"] = 40919,	-- Wavespeaker Tulra
+						["provider"] = { "n", 40919 },	-- Wavespeaker Tulra
 						["coord"] = { 51.6, 62.7, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25973,	-- Welcome News
@@ -849,7 +849,7 @@ _.Zones =
 						},
 					}),
 					q(25760, {	-- Visions of the Past: Invasion of Vashj'ir (A)
-						["qg"] = 39881,	-- Wavespeaker Valoren
+						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
 						["coord"] = { 49.4, 57.4, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25583,	-- Upon the Scene of Battle
@@ -860,7 +860,7 @@ _.Zones =
 						},
 					}),
 					q(25957, {	-- Visions of the Past: Invasion of Vashj'ir (H)
-						["qg"] = 40919,	-- Wavespeaker Tulra
+						["provider"] = { "n", 40919 },	-- Wavespeaker Tulra
 						["coord"] = { 51.6, 62.7, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25956,	-- Upon the Scene of Battle
@@ -871,7 +871,7 @@ _.Zones =
 						},
 					}),
 					q(25755, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge (A)
-						["qg"] = 39881,	-- Wavespeaker Valoren
+						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
 						["coord"] = { 39.2, 78.6, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -886,7 +886,7 @@ _.Zones =
 						},
 					}),
 					q(25966, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge (H)
-						["qg"] = 40919,	-- Wavespeaker Tulra
+						["provider"] = { "n", 40919 },	-- Wavespeaker Tulra
 						["coord"] = { 39.1, 78.6, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -901,49 +901,49 @@ _.Zones =
 						},
 					}),
 					q(25441, {	-- Vortex
-						["qg"] = 40221,	-- Toshe Chaosrender
+						["provider"] = { "n", 40221 },	-- Toshe Chaosrender
 						["coord"] = { 64.0, 42.2, 205 },
 					}),
 					q(25922, {	-- Waking the Beast (A)
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25921,	-- Overseer Idra'kess
 					}),
 					q(25996, {	-- Waking the Beast (H)
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25995,	-- Overseer Idra'kess
 					}),
 					q(27443, {	-- The War Has Many Fronts (A)
-						["qg"] = 45462,	-- Toshe Chaosrender
+						["provider"] = { "n", 45462 },	-- Toshe Chaosrender
 						["coord"] = { 57.2, 75.5, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26005,	-- A Breath of Fresh Air
 						["isBreadcrumb"] = true,
 					}),
 					q(27443, {	-- The War Has Many Fronts (H)
-						["qg"] = 45460,	-- Earthmender Duarn
+						["provider"] = { "n", 45460 },	-- Earthmender Duarn
 						["coord"] = { 64.4, 68.6, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26006,	-- A Breath of Fresh Air
 						["isBreadcrumb"] = true,
 					}),
 					q(25917, {	-- We Are Not Alone (A)
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25916,	-- Breaking Through
 					}),
 					q(25991, {	-- We Are Not Alone (H)
-						["qg"] = 41531,	-- Earthmender Duarn
+						["provider"] = { "n", 41531 },	-- Earthmender Duarn
 						["coord"] = { 51.6, 52.2, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25990,	-- Breaking Through
 					}),
 					q(25911, {	-- Welcome News (A)
-						["qg"] = 40645,	-- Jorlan Trueblade
+						["provider"] = { "n", 40645 },	-- Jorlan Trueblade
 						["coord"] = { 56.5, 80.2, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25898,	-- Honor and Privilege
@@ -954,7 +954,7 @@ _.Zones =
 						},
 					}),
 					q(25973, {	-- Welcome News (H)
-						["qg"] = 40921,	-- Blood Guard Toldrek
+						["provider"] = { "n", 40921 },	-- Blood Guard Toldrek
 						["coord"] = { 50.4, 79.0, 205 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25972,	-- Honor and Privilege

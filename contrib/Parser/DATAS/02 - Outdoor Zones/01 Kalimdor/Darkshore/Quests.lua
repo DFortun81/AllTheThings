@@ -6,8 +6,20 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(62, {	-- Darkshore
 			n(-17, {	-- Quests
+				q(13554, {	-- A Cure In The Dark
+					["model"] = 197760,
+					["coord"] = { 54.1, 29.2, 62 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 194122 },	-- Buzzbox 723
+					["sourceQuest"] = 13528,	-- Buzzbox 723
+					["g"] = {
+						i(52619),	-- Ichor Stained Vest
+						i(52631),	-- Befouled Staff
+						i(52583),	-- Rat Hair Vest
+					},
+				}),
 				q(13564, {	-- A Lost Companion
-					["qg"] = 32960,	-- Volcor
+					["provider"] = { "n", 32960 },	-- Volcor
 					["coord"] = { 50.9, 18.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -17,14 +29,14 @@ _.Zones =
 				}),
 				q(993,   {	-- A Lost Master
 					["u"] = 40,
-					["qg"] = 3693,	-- Terenthis
+					["provider"] = { "n", 3693 },	-- Terenthis
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(5387)),	-- Enchanted Moonstalker Cloak
 					},
 				}),
 				q(13563, {	-- A Love Eternal
-					["qg"] = 32959,	-- Cerellean Whiteclaw
+					["provider"] = { "n", 32959 },	-- Cerellean Whiteclaw
 					["coord"] = { 50.8, 17.8, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13529,	-- The Corruption's Source
@@ -35,7 +47,7 @@ _.Zones =
 					},
 				}),
 				q(13910, {	-- A New Home
-					["qg"] = 34340,	-- Archaeologist Groff
+					["provider"] = { "n", 34340 },	-- Archaeologist Groff
 					["coord"] = { 37.6, 82.8, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13909,	-- Got Some Flotsam?
@@ -45,7 +57,7 @@ _.Zones =
 					},
 				}),
 				q(13537, {	-- A Taste for Grouper
-					["qg"] = 33175,	-- Johnathan Staats
+					["provider"] = { "n", 33175 },	-- Johnathan Staats
 					["coord"] = { 52.3, 17.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = 356,	-- Fishing
@@ -54,8 +66,15 @@ _.Zones =
 						13522,	-- Threat From the Water
 					},
 				}),
+				q(13831, {	-- A Troubling Prescription
+					["model"] = 200767,
+					["coord"] = { 57.4, 33.7, 62 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 194714 },	-- Disgusting Workbench
+					["sourceQuest"] = 13528,	-- Buzzbox 723
+				}),
 				q(13542, {	-- Against the Wind
-					["qg"] = 3694,	-- Sentinel Selarin
+					["provider"] = { "n", 3694 },	-- Sentinel Selarin
 					["coord"] = { 42.5, 45.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -65,7 +84,7 @@ _.Zones =
 					},
 				}),
 				q(13560, {	-- An Ocean Not So Deep
-					["qg"] = 32979,	-- Gorbold Steelhand
+					["provider"] = { "n", 32979 },	-- Gorbold Steelhand
 					["coord"] = { 51.0, 19.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13569,	-- The Ritual Bond
@@ -75,13 +94,13 @@ _.Zones =
 					},
 				}),
 				q(13925, {	-- An Ounce of Prevention
-					["qg"] = 34301,	-- Kathrena Winterwisp
+					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
 					["coord"] = { 45.1, 74.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13882,	-- The Seeds of Life
 				}),
 				q(13578, {	-- Aroom's Farewell
-					["qg"] = 33119,	-- Aroom
+					["provider"] = { "n", 33119 },	-- Aroom
 					["coord"] = { 45.5, 48.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13577,	-- The Last Wildkin
@@ -92,7 +111,7 @@ _.Zones =
 					},
 				}),
 				q(26408, {	-- Ashes in Ashenvale
-					["qg"] = 34402,	-- Balren of the Claw
+					["provider"] = { "n", 34402 },	-- Balren of the Claw
 					["coord"] = { 45.3, 75.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -100,7 +119,7 @@ _.Zones =
 				}),
 				q(957,   {	-- Bashal'Aran
 					["u"] = 40,
-					["qg"] = 3650,	-- Asterion
+					["provider"] = { "n", 3650 },	-- Asterion
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(5604)),	-- Elven Wand
@@ -108,18 +127,23 @@ _.Zones =
 						un(2, i(5617)),	-- Vagabond Leggings
 					},
 				}),
-				o(296536, {	-- Bloodied Sentinel's Glaive
-					["model"] = 1118879,
-					["coord"] = { 45.2, 17.9, 62 },
-					["g"] = {
-						q(53130, {	-- Bloodied Sentinel's Glaive
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-						}),
+				q(13557, {	-- Bearer of Good Fortune
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 44927 },	-- Corruptor's Master Key
+					["crs"] = {
+						33022,	-- Vile Corruptor
+						33020,	-- Zenn Foulhoof
 					},
 				}),
+				q(53130, {	-- Bloodied Sentinel's Glaive
+					["lvl"] = 120,
+					["model"] = 1118879,
+					["coord"] = { 45.2, 17.9, 62 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 296536 },	-- Bloodied Sentinel's Glaive
+				}),
 				q(13521, {	-- Buzzbox 413
-					["qg"] = 32977,	-- Wizbang Cranktoggle
+					["provider"] = { "n", 32977 },	-- Wizbang Cranktoggle
 					["coord"] = { 51.1, 19.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -127,41 +151,14 @@ _.Zones =
 						13522,	-- Threat from the Water
 					},
 				}),
-				o(194105, {	-- Buzzbox 413
-					["coord"] = { 53.2, 19.6, 62 },
-					["model"] = 197760,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						q(13527, {	-- No Accounting for Taste
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 13521,	-- Buzzbox 413
-						}),
-					},
-				}),
 				q(13528, {	-- Buzzbox 723
-					["qg"] = 32977,	-- Wizbang Cranktoggle
+					["provider"] = { "n", 32977 },	-- Wizbang Cranktoggle
 					["coord"] = { 51.1, 19.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13527,	-- No Accounting for Taste
 				}),
-				o(194122, {	-- Buzzbox 723
-					["coord"] = { 54.1, 29.2, 62 },
-					["model"] = 197760,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						q(13554, {	-- A Cure In The Dark
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 13528,	-- Buzzbox 723
-							["g"] = {
-								i(52619),	-- Ichor Stained Vest
-								i(52631),	-- Befouled Staff
-								i(52583),	-- Rat Hair Vest
-							},
-						}),
-					},
-				}),
 				q(13558, {	-- Call Down the Thunder
-					["qg"] = 6887,	-- Yalda
+					["provider"] = { "n", 6887 },	-- Yalda
 					["coord"] = { 39.0, 43.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13547,	-- Coaxing the Spirits
@@ -172,7 +169,7 @@ _.Zones =
 					},
 				}),
 				q(13584, {	-- Calming the Earth
-					["qg"] = 33112,	-- Selenn
+					["provider"] = { "n", 33112 },	-- Selenn
 					["coord"] = { 44.4, 56.7, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13579,	-- Protector of Ameth'aran
@@ -183,42 +180,31 @@ _.Zones =
 				}),
 				q(947,   {	-- Cave Mushrooms
 					["u"] = 40,
-					["qg"] = 3583,	-- Barithras Moonshade
+					["provider"] = { "n", 3583 },	-- Barithras Moonshade
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(5610)),	-- Gustweld Cloak
 					},
 				}),
 				q(13545, {	-- Cleansing the Afflicted
-					["qg"] = 32967,	-- Elder Brolg
+					["provider"] = { "n", 32967 },	-- Elder Brolg
 					["coord"] = { 43.5, 81.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13544,	-- The Bear's Blessing
 				}),
 				q(13547, {	-- Coaxing the Spirits
-					["qg"] = 6887,	-- Yalda
+					["provider"] = { "n", 6887 },	-- Yalda
 					["coord"] = { 39.0, 43.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13881, {	-- Consumed
-					["qg"] = 34301,	-- Kathrena Winterwisp
+					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
 					["coord"] = { 45.1, 74.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(44927, {	-- Corruptor's Master Key
-					["crs"] = {
-						33022,	-- Vile Corruptor
-						33020,	-- Zenn Foulhoof
-					},
-					["g"] = {
-						q(13557, {	-- Bearer of Good Fortune
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
-				}),
 				q(6124,  {	-- Curing the Sick
 					["u"] = 40,
-					["qg"] = 3702,	-- Alanndarian Nightsong
+					["provider"] = { "n", 3702 },	-- Alanndarian Nightsong
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["g"] = {
@@ -226,7 +212,7 @@ _.Zones =
 					},
 				}),
 				q(13507, {	-- Denying Manpower
-					["qg"] = 32965,	-- Sentinel Tysha Moonblade
+					["provider"] = { "n", 32965 },	-- Sentinel Tysha Moonblade
 					["coord"] = { 58.8, 19.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -239,31 +225,32 @@ _.Zones =
 						i(131278),	-- Sentinel's Leafbough Chestpiece
 					},
 				}),
-				o(194714, {	-- Disgusting Workbench
-					["coord"] = { 57.4, 33.7, 62 },
-					["model"] = 200767,
+				q(13591, {	-- Disturbing Connections
+					["crs"] = { 32862 },	-- Jor'kil the Soulripper
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 46318 },	-- Hellscream's Missive
 					["g"] = {
-						q(13831, {	-- A Troubling Prescription
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 13528,	-- Buzzbox 723
-						}),
+						i(55128),	-- Silver Embossed Boots
+						i(55129),	-- Silver Plated Belt
+						i(52675),	-- Silver Embroidered Cloak
+						i(131292),	-- Silver Inlaid Footguards
 					},
 				}),
 				q(13582, {	-- Elune's Fire
-					["qg"] = 33119,	-- Aroom
+					["provider"] = { "n", 33119 },	-- Aroom
 					["coord"] = { 45.5, 48.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13578,	-- Aroom's Farewell
 				}),
 				q(13515, {	-- Ending the Threat
-					["qg"] = 33178,	-- Huntress Sandrya Moonfall
+					["provider"] = { "n", 33178 },	-- Huntress Sandrya Moonfall
 					["coord"] = { 72.2, 19.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13590,	-- The Front Line
 				}),
 				q(994,   {	-- Escape Through Force
 					["u"] = 40,
-					["qg"] = 3692,	-- Volcor
+					["provider"] = { "n", 3692 },	-- Volcor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(5609)),	-- Steadfast Cinch
@@ -271,7 +258,7 @@ _.Zones =
 				}),
 				q(995,   {	-- Escape Through Stealth
 					["u"] = 40,
-					["qg"] = 3692,	-- Volcor
+					["provider"] = { "n", 3692 },	-- Volcor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(6659)),	-- Scarab Trousers
@@ -279,7 +266,7 @@ _.Zones =
 				}),
 				q(963,   {	-- For Love Eternal
 					["u"] = 40,
-					["qg"] = 3644,	-- Cerellean Whiteclaw
+					["provider"] = { "n", 3644 },	-- Cerellean Whiteclaw
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(5611)),	-- Tear of Grief
@@ -287,7 +274,7 @@ _.Zones =
 				}),
 				q(1138,  {	-- Fruit of the Sea
 					["u"] = 40,
-					["qg"] = 10216,	-- Gubber Blump
+					["provider"] = { "n", 10216 },	-- Gubber Blump
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(15406)),	-- Crustacean Boots
@@ -295,33 +282,19 @@ _.Zones =
 					},
 				}),
 				q(13909, {	-- Got Some Flotsam?
-					["qg"] = 34340,	-- Archaeologist Groff
+					["provider"] = { "n", 34340 },	-- Archaeologist Groff
 					["coord"] = { 37.6, 82.8, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13907,	-- Sweeping Clean the Ruins
 				}),
 				q(13599, {	-- Grimclaw's Return
-					["qg"] = 33048,	-- Keeper Karithus
+					["provider"] = { "n", 33048 },	-- Keeper Karithus
 					["coord"] = { 42.9, 39.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13569,	-- The Ritual Bond
 				}),
-				i(46318, {	-- Hellscream's Missive
-					["crs"] = { 32862 },	-- Jor'kil the Soulripper
-					["g"] = {
-						q(13591, {	-- Disturbing Connections
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(55128),	-- Silver Embossed Boots
-								i(55129),	-- Silver Plated Belt
-								i(52675),	-- Silver Embroidered Cloak
-								i(131292),	-- Silver Inlaid Footguards
-							},
-						}),
-					},
-				}),
 				q(13601, {	-- In Aid of the Refugees
-					["qg"] = 32912,	-- Sentinel Lendra
+					["provider"] = { "n", 32912 },	-- Sentinel Lendra
 					["coord"] = { 50.3, 20.3, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13596,	-- Twilight Plans
@@ -330,13 +303,13 @@ _.Zones =
 					["u"] = 1,	-- this one doesn't appear to have ever been added. If you get this version, please include how you got it
 				}),
 				q(13885, {	-- In Defense of Darkshore
-					["qg"] = 34301,	-- Kathrena Winterwisp
+					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
 					["coord"] = { 45.1, 74.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13925,	-- An Ounce of Prevention
 				}),
 				q(13572, {	-- Jadefire Braziers
-					["qg"] = 32968,	-- Gren Tornfur
+					["provider"] = { "n", 32968 },	-- Gren Tornfur
 					["coord"] = { 43.5, 81.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13544,	-- The Bear's Blessing
@@ -347,24 +320,24 @@ _.Zones =
 					},
 				}),
 				q(13892, {	-- Leave No Tracks
-					["qg"] = 34402,	-- Balren of the Claw
+					["provider"] = { "n", 34402 },	-- Balren of the Claw
 					["coord"] = { 45.3, 75.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13940, {	-- Leaving the Dream
-					["qg"] = 33166,	-- Thessera
+					["provider"] = { "n", 33166 },	-- Thessera
 					["coord"] = { 49.1, 56.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13587,	-- The Waking Nightmare
 				}),
 				q(13573, {	-- Malfurion's Return
-					["qg"] = 32987,	-- Corvine Moonrise
+					["provider"] = { "n", 32987 },	-- Corvine Moonrise
 					["coord"] = { 42.6, 45.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(951,   {	-- Mathystra Relics
 					["u"] = 40,
-					["qg"] = 3616,	-- Onu
+					["provider"] = { "n", 3616 },	-- Onu
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(5757)),	-- Hardwood Cudgel
@@ -372,13 +345,13 @@ _.Zones =
 					},
 				}),
 				q(13902, {	-- Mounting the Offensive
-					["qg"] = 33091,	-- Malfurion Stormrage
+					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
 					["coord"] = { 43.6, 53.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13588,	-- The Eye of All Storms
 				}),
 				q(13576, {	-- Mutual Aid
-					["qg"] = 33117,	-- Elder Brownpaw
+					["provider"] = { "n", 33117 },	-- Elder Brownpaw
 					["coord"] = { 40.9, 56.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13575,	-- The Land is in Their Blood
@@ -387,28 +360,21 @@ _.Zones =
 						i(52587),	-- Singed Boots
 					},
 				}),
-				o(175524, {	-- Mysterious Red Crystal
-					["u"] = 43,
-					["g"] = {
-						q(4813, {	-- The Fragments Within
-							["u"] = 40,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								un(2, i(15335)),	-- Briarsteel Shortsword
-								un(2, i(15396)),	-- Curvewood Dagger
-								un(2, i(15397)),	-- Oakthrush Staff
-							},
-						}),
-					},
-				}),
 				q(13953, {	-- Naga In Our Midst
-					["qg"] = 34498,	-- Darkscale Assassin
+					["provider"] = { "n", 34498 },	-- Darkscale Assassin
 					["coord"] = { 45.5, 71.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13895,	-- The Slumbering Ancients
 				}),
+				q(13527, {	-- No Accounting for Taste
+					["model"] = 197760,
+					["coord"] = { 53.2, 19.6, 62 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 194105 },	-- Buzzbox 413
+					["sourceQuest"] = 13521,	-- Buzzbox 413
+				}),
 				q(13513, {	-- On the Brink
-					["qg"] = 32966,	-- Balthule Shadowstrike
+					["provider"] = { "n", 32966 },	-- Balthule Shadowstrike
 					["coord"] = { 58.8, 19.5, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -417,27 +383,18 @@ _.Zones =
 					},
 				}),
 				q(13511, {	-- One Bitter Wish
-					["qg"] = 33055,	-- Alanndarian Nightsong
+					["provider"] = { "n", 33055 },	-- Alanndarian Nightsong
 					["coord"] = { 63.7, 5.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13508,	-- Swift Response
 				}),
 				q(5713,  {	-- One Shot. One Kill.
-					["qg"] = 11711,	-- Sentinel Aynasha
+					["provider"] = { "n", 11711 },	-- Sentinel Aynasha
 					["coord"] = { 47.7, 88.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(44979, {	-- Overseer's Orders
-					["crs"] = { 32863 },	-- Shatterspear Overseer
-					["g"] = {
-						q(13506, {	-- Reason to Worry
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 13589,	-- The Shatterspear Invaders
-						}),
-					},
-				}),
 				q(13523, {	-- Power Over the Tides
-					["qg"] = 32932,	-- Moon Priestess Tharill
+					["provider"] = { "n", 32932 },	-- Moon Priestess Tharill
 					["coord"] = { 44.5, 30.7, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -447,12 +404,18 @@ _.Zones =
 					},
 				}),
 				q(13579, {	-- Protector of Ameth'Aran
-					["qg"] = 33091,	-- Malfurion Stormrage
+					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
 					["coord"] = { 43.6, 53.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(13506, {	-- Reason to Worry
+					["crs"] = { 32863 },	-- Shatterspear Overseer
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 44979 },	-- Overseer's Orders
+					["sourceQuest"] = 13589,	-- The Shatterspear Invaders
+				}),
 				q(13570, {	-- Remembrance of Auberdine
-					["qg"] = 32959,	-- Cerellean Whiteclaw
+					["provider"] = { "n", 32959 },	-- Cerellean Whiteclaw
 					["coord"] = { 50.1, 19.5, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13591,	-- Disturbing Connections
@@ -465,13 +428,13 @@ _.Zones =
 					},
 				}),
 				q(13505, {	-- Remnants of the Highborne
-					["qg"] = 32966,	-- Balthule Shadowstrike
+					["provider"] = { "n", 32966 },	-- Balthule Shadowstrike
 					["coord"] = { 58.8, 19.5, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13589,	-- The Shatterspear Invaders
 				}),
 				q(26759, {	-- Return to Nessa
-					["qg"] = 4200,	-- Laird
+					["provider"] = { "n", 4200 },	-- Laird
 					["coord"] = { 36.8, 44.2, 62 },
 					["sourceQuest"] = 26758,	-- Flight to Auberdine
 					["races"] = { 4 },	-- Night Elf
@@ -479,30 +442,30 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(13566, {	-- Ritual Materials
-					["qg"] = 33048,	-- Keeper Karithus
+					["provider"] = { "n", 33048 },	-- Keeper Karithus
 					["coord"] = { 42.9, 39.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13564,	-- A Lost Companion
 				}),
 				q(13504, {	-- Shatterspear Laborers
-					["qg"] = 32965,	-- Sentinel Tysha Moonblade
+					["provider"] = { "n", 32965 },	-- Sentinel Tysha Moonblade
 					["coord"] = { 58.8, 19.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13589,	-- The Shatterspear Invaders
 				}),
 				q(13561, {	-- Solace for the Highborne
-					["qg"] = 33177,	-- Arya Autumnlight
+					["provider"] = { "n", 33177 },	-- Arya Autumnlight
 					["coord"] = { 46.8, 33.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13893, {	-- Soggoth and Kronn
-					["qg"] = 34340,	-- Archaeologist Groff
+					["provider"] = { "n", 34340 },	-- Archaeologist Groff
 					["coord"] = { 37.6, 82.8, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13896,	-- Unearthed Knowledge
 				}),
 				q(13580, {	-- Soothing the Elements
-					["qg"] = 33117,	-- Elder Brownpaw
+					["provider"] = { "n", 33117 },	-- Elder Brownpaw
 					["coord"] = { 40.9, 56.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13576,	-- Mutual Aid
@@ -513,7 +476,7 @@ _.Zones =
 					},
 				}),
 				q(13568, {	-- Spirit of the Moonstalker
-					["qg"] = 33131,	-- Great Moonstalker Spirit
+					["provider"] = { "n", 33131 },	-- Great Moonstalker Spirit
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Grants 10% haste.",
 					["altQuests"] = {
@@ -527,7 +490,7 @@ _.Zones =
 					},
 				}),
 				q(13567, {	-- Spirit of the Stag
-					["qg"] = 33048,	-- Great Stag Spirit
+					["provider"] = { "n", 33048 },	-- Great Stag Spirit
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Stag gives 10% movement speed.",
 					["altQuests"] = {
@@ -541,7 +504,7 @@ _.Zones =
 					},
 				}),
 				q(13597, {	-- Spirit of the Thistle Bear
-					["qg"] = 33132,	-- Great Thistle Bear Spirit
+					["provider"] = { "n", 33132 },	-- Great Thistle Bear Spirit
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "10% reduction in damage taken.",
 					["altQuests"] = {
@@ -560,7 +523,7 @@ _.Zones =
 					["sourceQuest"] = 13892,	-- Leave No Tracks
 				}),
 				q(13512, {	-- Strategic Strikes
-					["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+					["provider"] = { "n", 32963 },	-- Lieutenant Morra Starbreeze
 					["coord"] = { 58.9, 19.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -572,30 +535,30 @@ _.Zones =
 					},
 				}),
 				q(13912, {	-- Swamped Secrets
-					["qg"] = 34342,	-- Jr. Archaeologist Ferd
+					["provider"] = { "n", 34342 },	-- Jr. Archaeologist Ferd
 					["coord"] = { 37.7, 82.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13907, {	-- Sweeping Clean the Ruins
-					["qg"] = 34340,	-- Archaeologist Groff
+					["provider"] = { "n", 34340 },	-- Archaeologist Groff
 					["coord"] = { 37.6, 82.8, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13508, {	-- Swift Response
-					["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+					["provider"] = { "n", 32963 },	-- Lieutenant Morra Starbreeze
 					["coord"] = { 58.9, 19.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13506,	-- Reason to Worry
 				}),
 				q(13585, {	-- Sworn to Protect
-					["qg"] = 33112,	-- Selenn
+					["provider"] = { "n", 33112 },	-- Selenn
 					["coord"] = { 44.4, 56.7, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13584,	-- Calming the Earth
 				}),
 				q(2139,  {	-- Tharnariun's Hope
 					["u"] = 40,
-					["qg"] = 3701,	-- Tharnariun Treetender
+					["provider"] = { "n", 3701 },	-- Tharnariun Treetender
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(7738)),	-- Evergreen Gloves
@@ -604,7 +567,7 @@ _.Zones =
 				}),
 				q(741,   {	-- The Absent Minded Prospector
 					["u"] = 40,
-					["qg"] = 2913,	-- Archaeologist Hollee
+					["provider"] = { "n", 2913 },	-- Archaeologist Hollee
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(5629)),	-- Hammerfist Gloves
@@ -614,7 +577,7 @@ _.Zones =
 				}),
 				q(943,   {	-- The Absent Minded Prospector
 					["u"] = 40,
-					["qg"] = 2911,	-- Archaeologist Flagongut
+					["provider"] = { "n", 2911 },	-- Archaeologist Flagongut
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(5627)),	-- Relic Blade
@@ -622,7 +585,7 @@ _.Zones =
 					},
 				}),
 				q(13911, {	-- The Absent-Minded Prospector
-					["qg"] = 34343,	-- Prospector Remtravel
+					["provider"] = { "n", 34343 },	-- Prospector Remtravel
 					["coord"] = { 37.6, 82.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -633,7 +596,7 @@ _.Zones =
 					},
 				}),
 				q(13514, {	-- The Ancients' Ire
-					["qg"] = 33176,	-- Kerlonian Evershade
+					["provider"] = { "n", 33176 },	-- Kerlonian Evershade
 					["coord"] = { 69.0, 19.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -642,7 +605,7 @@ _.Zones =
 					},
 				}),
 				q(13897, {	-- The Battle for Darkshore
-					["qg"] = 34422,	-- Malfurion Stormrage
+					["provider"] = { "n", 34422 },	-- Malfurion Stormrage
 					["coord"] = { 32.7, 84.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "If you don't pick this quest up promptly after the event ends, Malfurion will despawn and you will have to repeat the event to get the quest.",
@@ -654,20 +617,20 @@ _.Zones =
 					},
 				}),
 				q(13544, {	-- The Bear's Blessing
-					["qg"] = 32967,	-- Elder Brolg
+					["provider"] = { "n", 32967 },	-- Elder Brolg
 					["coord"] = { 43.5, 81.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13526,	-- The Bear's Paw
 				}),
 				q(13526, {	-- The Bear's Paw
-					["qg"] = 32967,	-- Elder Brolg
+					["provider"] = { "n", 32967 },	-- Elder Brolg
 					["coord"] = { 43.5, 81.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13525,	-- What's Happening to the Blackwood Furbolg?
 				}),
 				q(4763,  {	-- The Blackwood Corrupted
 					["u"] = 40,
-					["qg"] = 3649,	-- Thundris Windweaver
+					["provider"] = { "n", 3649 },	-- Thundris Windweaver
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(15203)),	-- Guststorm Legguards
@@ -676,13 +639,13 @@ _.Zones =
 					},
 				}),
 				q(13581, {	-- The Blackwood Pledge
-					["qg"] = 33117,	-- Elder Brownpaw
+					["provider"] = { "n", 33117 },	-- Elder Brownpaw
 					["coord"] = { 40.9, 56.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13580,	-- Soothing the Elements
 				}),
 				q(13520, {	-- The Boon of the Seas
-					["qg"] = 32972,	-- Serendia Oakwhisper
+					["provider"] = { "n", 32972 },	-- Serendia Oakwhisper
 					["coord"] = { 51.8, 18.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -695,7 +658,7 @@ _.Zones =
 					},
 				}),
 				q(13529, {	-- The Corruption's Source
-					["qg"] = 32978,	-- Tharnarium Treetender
+					["provider"] = { "n", 32978 },	-- Tharnarium Treetender
 					["coord"] = { 56.7, 30.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13528,	-- Buzzbox 723
@@ -707,13 +670,13 @@ _.Zones =
 					},
 				}),
 				q(13899, {	-- The Darkscale Warlord
-					["qg"] = 34402,	-- Balren of the Claw
+					["provider"] = { "n", 34402 },	-- Balren of the Claw
 					["coord"] = { 45.3, 75.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13953,	-- Naga in Our Midst
 				}),
 				q(13546, {	-- The Defiler
-					["qg"] = 32967,	-- Elder Brolg
+					["provider"] = { "n", 32967 },	-- Elder Brolg
 					["coord"] = { 43.5, 81.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13545,	-- Cleansing the Afflicted
@@ -725,7 +688,7 @@ _.Zones =
 					},
 				}),
 				q(13891, {	-- The Devourer of Darkshore
-					["qg"] = 34301,	-- Kathrena Winterwisp
+					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
 					["coord"] = { 45.1, 74.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13885,	-- In Defense of Darkshore
@@ -737,7 +700,7 @@ _.Zones =
 					},
 				}),
 				q(13586, {	-- The Emerald Dream
-					["qg"] = 33091,	-- Malfurion Stormrage
+					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
 					["coord"] = { 43.6, 53.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -747,7 +710,7 @@ _.Zones =
 					},
 				}),
 				q(13588, {	-- The Eye of All Storms
-					["qg"] = 33091,	-- Malfurion Stormrage
+					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
 					["coord"] = { 43.6, 53.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13940,	-- Leaving the Dream
@@ -757,13 +720,23 @@ _.Zones =
 					},
 				}),
 				q(13562, {	-- The Final Flame of Bashal'Aran
-					["qg"] = 32971,	-- Ranger Glynda Nal'Shea
+					["provider"] = { "n", 32971 },	-- Ranger Glynda Nal'Shea
 					["coord"] = { 50.2, 19.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13529,	-- The Corruption's Source
 				}),
+				q(4813,  {	-- The Fragments Within
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 175524 },	-- Mysterious Red Crystal (u=43)
+					["g"] = {
+						un(2, i(15335)),	-- Briarsteel Shortsword
+						un(2, i(15396)),	-- Curvewood Dagger
+						un(2, i(15397)),	-- Oakthrush Staff
+					},
+				}),
 				q(13590, {	-- The Front Line
-					["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+					["provider"] = { "n", 32963 },	-- Lieutenant Morra Starbreeze
 					["coord"] = { 58.9, 19.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -772,12 +745,12 @@ _.Zones =
 					},
 				}),
 				q(13575, {	-- The Land Is in Their Blood
-					["qg"] = 33091,	-- Malfurion Stormrage
+					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
 					["coord"] = { 43.6, 53.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13605, {	-- The Last Refugee
-					["qg"] = 33232,	-- Archaeologist Hollee
+					["provider"] = { "n", 33232 },	-- Archaeologist Hollee
 					["coord"] = { 38.5, 42.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -788,7 +761,7 @@ _.Zones =
 					},
 				}),
 				q(13518, {	-- The Last Wave of Survivors
-					["qg"] = 32973,	-- Dentaria Silverglade
+					["provider"] = { "n", 32973 },	-- Dentaria Silverglade
 					["coord"] = { 51.7, 18.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -798,12 +771,12 @@ _.Zones =
 					},
 				}),
 				q(13577, {	-- The Last Wildkin
-					["qg"] = 33091,	-- Malfurion Stormrage
+					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
 					["coord"] = { 43.6, 53.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13844, {	-- The Looting of Althalaxx
-					["qg"] = 34041,	-- Mathas Wildwood
+					["provider"] = { "n", 34041 },	-- Mathas Wildwood
 					["coord"] = { 59.1, 19.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -818,7 +791,7 @@ _.Zones =
 					},
 				}),
 				q(13900, {	-- The Offering to Azshara
-					["qg"] = 34423,	-- Warlord Wrathspine
+					["provider"] = { "n", 34423 },	-- Warlord Wrathspine
 					["coord"] = { 32.2, 85.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13899,	-- The Darkscale Warlord
@@ -831,7 +804,7 @@ _.Zones =
 					},
 				}),
 				q(13569, {	-- The Ritual Bond
-					["qg"] = 33048,	-- Keeper Karithus
+					["provider"] = { "n", 33048 },	-- Keeper Karithus
 					["coord"] = { 42.9, 39.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -847,7 +820,7 @@ _.Zones =
 					},
 				}),
 				q(13882, {	-- The Seeds of Life
-					["qg"] = 34301,	-- Kathrena Winterwisp
+					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
 					["coord"] = { 45.1, 74.6, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13881,	-- Consumed
@@ -858,14 +831,14 @@ _.Zones =
 					},
 				}),
 				q(13589, {	-- The Shatterspear Invaders
-					["qg"] = 32971,	-- Ranger Glynda Nal'Shea
+					["provider"] = { "n", 32971 },	-- Ranger Glynda Nal'Shea
 					["coord"] = { 50.3, 19.7, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13569,	-- The Ritual Bond
 				}),
 				q(5321,  {	-- The Sleeper Has Awakened
 					["u"] = 40,
-					["qg"] = 11218,	-- Kerlonian Evershade
+					["provider"] = { "n", 11218 },	-- Kerlonian Evershade
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(15206)),	-- Jadefinger Baton
@@ -874,13 +847,13 @@ _.Zones =
 					},
 				}),
 				q(13895, {	-- The Slumbering Ancients
-					["qg"] = 33072,	-- Onu
+					["provider"] = { "n", 33072 },	-- Onu
 					["coord"] = { 45.4, 74.8, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13893,	-- Soggoth and Kronn
 				}),
 				q(13898, {	-- The Tides Turn Against Us
-					["qg"] = 34403,	-- Felros
+					["provider"] = { "n", 34403 },	-- Felros
 					["coord"] = { 45.3, 75.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13953,	-- Naga in Our Midst
@@ -891,7 +864,7 @@ _.Zones =
 					},
 				}),
 				q(13918, {	-- The Titans' Terminal
-					["qg"] = 34342,	-- Jr. Archaeologist Ferd
+					["provider"] = { "n", 34342 },	-- Jr. Archaeologist Ferd
 					["coord"] = { 37.7, 82.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13912,	-- Swamped Secrets
@@ -902,7 +875,7 @@ _.Zones =
 				}),
 				q(981,   {	-- The Tower of Althalaxx
 					["u"] = 40,
-					["qg"] = 3661,	-- Balthule Shadowstrike
+					["provider"] = { "n", 3661 },	-- Balthule Shadowstrike
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(10043)),	-- Pious Legwraps
@@ -911,7 +884,7 @@ _.Zones =
 				}),
 				q(973,   {	-- The Tower of Althalaxx
 					["u"] = 40,
-					["qg"] = 3663,	-- Delgren the Purifier
+					["provider"] = { "n", 3663 },	-- Delgren the Purifier
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(5622)),	-- Clergy Ring
@@ -919,7 +892,7 @@ _.Zones =
 					},
 				}),
 				q(13519, {	-- The Twilight's Hammer
-					["qg"] = 32912,	-- Sentinel Lendra
+					["provider"] = { "n", 32912 },	-- Sentinel Lendra
 					["coord"] = { 50.3, 20.3, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13591,	-- Disturbing Connections
@@ -930,7 +903,7 @@ _.Zones =
 					},
 				}),
 				q(13587, {	-- The Waking Nightmare
-					["qg"] = 33166,	-- Thessera
+					["provider"] = { "n", 33166 },	-- Thessera
 					["coord"] = { 49.2, 56.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13586,	-- The Emerald Dream
@@ -940,23 +913,23 @@ _.Zones =
 					},
 				}),
 				q(13583, {	-- The Wildkin's Oath
-					["qg"] = 33119,	-- Aroom
+					["provider"] = { "n", 33119 },	-- Aroom
 					["coord"] = { 45.5, 48.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13582,	-- Elune's Fire
 				}),
 				q(13522, {	-- Threat from the Water
-					["qg"] = 32971,	-- Ranger Glynda Nal'Shea
+					["provider"] = { "n", 32971 },	-- Ranger Glynda Nal'Shea
 					["coord"] = { 50.2, 19.7, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13543, {	-- Three Hammers to Break
-					["qg"] = 32987,	-- Corvine Moonrise
+					["provider"] = { "n", 32987 },	-- Corvine Moonrise
 					["coord"] = { 42.6, 45.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13510, {	-- Timely Arrival
-					["qg"] = 32964,	-- Sentinel Aynasha
+					["provider"] = { "n", 32964 },	-- Sentinel Aynasha
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "To see this quest, use the cage key dropped by |cFFFFD700Rit'ko|r.",
 					["g"] = {
@@ -966,7 +939,7 @@ _.Zones =
 					},
 				}),
 				q(13565, {	-- Twice Removed
-					["qg"] = 33126,	-- Seraphine
+					["provider"] = { "n", 33126 },	-- Seraphine
 					["coord"] = { 42.9, 38.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13564,	-- A Lost Companion
@@ -977,27 +950,27 @@ _.Zones =
 					},
 				}),
 				q(13596, {	-- Twilight Plans
-					["qg"] = 32912,	-- Sentinel Lendra
+					["provider"] = { "n", 32912 },	-- Sentinel Lendra
 					["coord"] = { 50.3, 20.3, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13591,	-- Disturbing Connections
 				}),
 				q(13896, {	-- Unearthed Knowledge
-					["qg"] = 34404,	-- Larien
+					["provider"] = { "n", 34404 },	-- Larien
 					["coord"] = { 45.3, 75.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13948,	-- Stepping Up Surveillance
 				}),
 				q(13598, {	-- Unsavory Remedies
-					["qg"] = 33048,	-- Keeper Karithus
+					["provider"] = { "n", 33048 },	-- Keeper Karithus
 					["coord"] = { 42.9, 39.0, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13564,	-- A Lost Companion
 				}),
-				o(175320, {	-- WANTED: Murkdeep!
+				q(4740,  {	-- WANTED: Murkdeep!
 					["u"] = 40,
-					["questID"] = 4740,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 175320 },	-- WANTED: Murkdeep!
 					["g"] = {
 						un(2, i(15404)),	-- Breakwater Girdle
 						un(2, i(15403)),	-- Ridgeback Bracers
@@ -1005,7 +978,7 @@ _.Zones =
 					},
 				}),
 				q(13509, {	-- War Supplies
-					["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+					["provider"] = { "n", 32963 },	-- Lieutenant Morra Starbreeze
 					["coord"] = { 58.9, 19.4, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -1015,29 +988,26 @@ _.Zones =
 				}),
 				q(4681,  {	-- Washed Ashore
 					["u"] = 40,
-					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
+					["provider"] = { "n", 10219 },	-- Gwennyth Bly'Leggonde
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(15399)),	-- Dryweed Belt
 					},
 				}),
 				q(13525, {	-- What's Happening to the Blackwood Furbolg?
-					["qg"] = 33250,	-- Foriel Broadleaf
+					["provider"] = { "n", 33250 },	-- Foriel Broadleaf
 					["coord"] = { 45.1, 75.1, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "The Bear's Paw"
 				}),
-				i(64450, {	-- Writings of the Dark Herald
+				q(28529, {	-- Writings of the Void
 					["crs"] = { 48764 },	-- Telarius Voidstrider
 					["coord"] = { 52.4, 32.0, 62 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 64450 },	-- Writings of the Dark Herald
 					["description"] = "Jump into the whirlpool.",
-					["g"] = {
-						q(28529, {	-- Writings of the Void
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

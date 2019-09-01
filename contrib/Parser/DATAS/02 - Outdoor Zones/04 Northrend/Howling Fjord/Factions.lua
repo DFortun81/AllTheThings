@@ -33,7 +33,7 @@ _.Zones =
 						}),
 						q(11472, {	-- The Way to His Heart...
 							["isDaily"] = true,
-							["qg"] = 24810,	-- Anuniaq
+							["provider"] = { "n", 24810 },	-- Anuniaq
 						}),
 					},
 				}),

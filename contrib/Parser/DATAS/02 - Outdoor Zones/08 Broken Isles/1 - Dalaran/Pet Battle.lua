@@ -11,13 +11,13 @@ _.Zones =
 					["crs"] = { 98506 },	-- Dust Bunny
 				}),
 				q(45540, {	-- A Call from the Caverns
-					["qgs"] = {
-						98725,	-- Lio the Lioness <Battle Pet Master>
-						115287,	-- Serr'ah <Battle Pet Master>
+					["providers"] = {
+						{ "n", 98725 },	-- Lio the Lioness <Battle Pet Master>
+						{ "n", 115287 },	-- Serr'ah <Battle Pet Master>
 					},
 				}),
 				q(46293, {	-- Deadmines, Part Three?
-					["qg"] = 96479,	-- Breanni
+					["provider"] = { "n", 96479 },	-- Breanni
 				}),
 				ach(12431, {	-- Post Haste
 					i(156721),	-- Mailemental

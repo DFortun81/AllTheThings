@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(18704, {	-- Mature Blue Dragon Sinew
 						{
 							["questID"] = 7634,	-- Ancient Sinew Wrapped Lamina
-							["qg"] = 14526,	-- Hastat the Ancient
+							["provider"] = { "n", 14526 },	-- Hastat the Ancient
 							["u"] = 2,
 							["groups"] = {
 								{

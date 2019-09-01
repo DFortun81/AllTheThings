@@ -13,14 +13,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 					n(-17, {	-- Quests
 						{	-- A Troll Among Trolls
 							["questID"] = 29188,
-							["qg"] = 23761,	-- Quest Giver: Prigmon
+							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
 							["u"] = 2,			-- Legacy Content
 						},
 						q(29217, {	-- The Captive Scouts
-							["qg"] = 52933,	-- Blood Guard Hakkuz
+							["provider"] = { "n", 52933 },	-- Blood Guard Hakkuz
 						}),
 						q(29186, {	-- The Hex Lord's Fetish
-							["qg"] = 52925,	-- Witch Doctor T'wansi
+							["provider"] = { "n", 52925 },	-- Witch Doctor T'wansi
 							["g"] = {
 								i(69595),	-- Fetish Greaves
 								i(69594),	-- T'wansi's Handwraps
@@ -29,7 +29,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						}),
 						q(11196, {	-- Warlord of the Amani
-							["qg"] = 52924,	-- Vol'jin
+							["provider"] = { "n", 52924 },	-- Vol'jin
 							["g"] = {
 								i(69599),	-- Pauldrons of Ambition
 								i(69598),	-- Robes of Dissention
@@ -68,51 +68,51 @@ _.Instances = { tier(4, {	-- Cataclysm
 									ach(5761, {	-- Hex Mix
 										{
 											["criteriaID"] = 1,	-- Rosa saved.
-											["qg"] = 52905,	-- Rosa
+											["provider"] = { "n", 52905 },	-- Rosa
 										},
 										{
 											["criteriaID"] = 2,	-- Eulinda saved.
-											["qg"] = 52914,	-- Eulinda
+											["provider"] = { "n", 52914 },	-- Eulinda
 										},
 										{
 											["criteriaID"] = 3,	-- Lenzo saved.
-											["qg"] = 52917,	-- Lenzo
+											["provider"] = { "n", 52917 },	-- Lenzo
 										},
 										{
 											["criteriaID"] = 4,	-- Melasong saved.
-											["qg"] = 52916,	-- Melasong
+											["provider"] = { "n", 52916 },	-- Melasong
 										},
 										{
 											["criteriaID"] = 5,	-- Harald saved.
-											["qg"] = 52915,	-- Harald
+											["provider"] = { "n", 52915 },	-- Harald
 										},
 										{
 											["criteriaID"] = 6,	-- Relissa saved.
-											["qg"] = 52912,	-- Relissa
+											["provider"] = { "n", 52912 },	-- Relissa
 										},
 										{
 											["criteriaID"] = 7,	-- Kaldrick saved.
-											["qg"] = 52918,	-- Kaldrick
+											["provider"] = { "n", 52918 },	-- Kaldrick
 										},
 										{
 											["criteriaID"] = 8,	-- Arinoth saved.
-											["qg"] = 52919,	-- Arinoth
+											["provider"] = { "n", 52919 },	-- Arinoth
 										},
 										{
 											["criteriaID"] = 9,	-- Micah saved.
-											["qg"] = 52910,	-- Micah
+											["provider"] = { "n", 52910 },	-- Micah
 										},
 										{
 											["criteriaID"] = 10,	-- Tyllan saved.
-											["qg"] = 52909,	-- Tyllan
+											["provider"] = { "n", 52909 },	-- Tyllan
 										},
 										{
 											["criteriaID"] = 11,	-- Mawago saved.
-											["qg"] = 52920,	-- Mawago
+											["provider"] = { "n", 52920 },	-- Mawago
 										},
 										{
 											["criteriaID"] = 12,	-- Melissa saved.
-											["qg"] = 52947,	-- Melissa
+											["provider"] = { "n", 52947 },	-- Melissa
 										},
 									}),
 								},

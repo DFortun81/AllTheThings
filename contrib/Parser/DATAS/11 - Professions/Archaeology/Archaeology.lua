@@ -18,7 +18,7 @@ profession(794, {	-- Archaeology
 		n(-17, {	-- Quests
 			-- Crystalline Eye of Undravius
 			q(41157, {	-- Corrupted Studies
-				["qg"] = 103484,	-- Brann Bronzebeard
+				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 52.2, 52.6, 634 },
 				["sourceQuest"] = 40857,	-- Bits and Pieces
@@ -33,13 +33,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Imp Generator
 			q(41159, {	-- Process of Elimination
-				["qg"] = 103484,	-- Brann Bronzebeard
+				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 52.2, 52.6, 634 },
 				["sourceQuest"] = 41158,	-- Fragments of the Fjords
 			}),
 			q(41802, {	-- The Gates of Valor
-				["qg"] = 103484,	-- Brann Bronzebeard
+				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 52.2, 52.6, 634 },
 				["sourceQuest"] = 41159,	-- Process of Elimination
@@ -52,13 +52,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Wyrmy Tunkins
 			q(41162, {	-- And Into the Fel Fire
-				["qg"] = 103484,	-- Brann Bronzebeard
+				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 39.0, 38.6, 630 },
 				["sourceQuest"] = 41161,	-- Out of the Frying Pan
 			}),
 			q(41163, {	-- The Apocalypse Bringer
-				["qg"] = 103484,	-- Brann Bronzebeard
+				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 39.0, 38.6, 630 },
 				["sourceQuest"] = 41162,	-- And Into the Fel Fire
@@ -71,13 +71,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Blood of Young Mannoroth
 			q(41165, {	-- Deciphering Demonology
-				["qg"] = 103484,	-- Brann Bronzebeard
+				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 27.0, 70.0, 680 },
 				["sourceQuest"] = 41164,	-- One Step Closer
 			}),
 			q(41166, {	-- Dark Secrets
-				["qg"] = 103484,	-- Brann Bronzebeard
+				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 27.0, 70.0, 680 },
 				["sourceQuest"] = 41165,	-- Deciphering Demonology
@@ -90,13 +90,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Purple Hills of Mac'Aree
 			q(41168, {	-- The Purple Hills of Mac'Aree
-				["qg"] = 103484,	-- Brann Bronzebeard
+				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 61.8, 87.9, 641 },
 				["sourceQuest"] = 41167,	-- Fel Fragments
 			}),
 			q(41169, {	-- Darkheart Thicket: Through the Fog
-				["qg"] = 103484,	-- Brann Bronzebeard
+				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 61.8, 87.9, 641 },
 				["sourceQuest"] = 41168,	-- The Purple Hills of Mac'Aree
@@ -202,13 +202,13 @@ profession(794, {	-- Archaeology
 		n(-17, {	-- Quests
 			-- Key of Kalyndras
 			q(41178, {	-- Explosive Results
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 38.8, 81.6, 641 },
 				["sourceQuest"] = 41177,	-- Goblin Archaeology
 			}),
 			q(41179, {	-- What Once Was Lost
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 38.8, 81.6, 641 },
 				["sourceQuest"] = 41178,
@@ -223,13 +223,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Key to Nar'thalas Academy
 			q(41184, {	-- Tried and True
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 38.2, 90, 630 },
 				["sourceQuest"] = 41183,	-- Academic Exploration
 			}),
 			q(41185, {	-- The Keys to Success
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 38.2, 90, 630 },
 				["sourceQuest"] = 41184,
@@ -244,13 +244,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Crown Jewels of Suramar
 			q(41175, {	-- Fit for an Elven Queen
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 38.2, 90, 680 },
 				["sourceQuest"] = 41174,	-- Worth Its Weight
 			}),
 			q(41176, {	-- Sifting Through the Rubble
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 38.2, 90, 680 },
 				["sourceQuest"] = 41175,	-- Fit for an Elven Queen
@@ -263,13 +263,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Starlight Beacon
 			q(41172, {	-- Echoes of My Ancestors
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 47.4, 42.6, 630 },
 				["sourceQuest"] = 41171,	-- The Reliquary Calls
 			}),
 			q(41173, {	-- A Beacon of Hope
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 47.4, 42.6, 630 },
 				["sourceQuest"] = 41172,	-- Echoes of My Ancestors
@@ -282,13 +282,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Shard of Sciallax
 			q(41181, {	-- Narrowing Down
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 38.2, 90, 680 },
 				["sourceQuest"] = 41180,	-- Unspeakable Power
 			}),
 			q(41182, {	-- Uncovering the Orb of Sciallax
-				["qg"] = 103482,	-- Tae'thelan Bloodwatcher <High Examiner>
+				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 				["isWeekly"] = true,
 				["coord"] = { 38.2, 90, 680 },
 				["sourceQuest"] = 41181,	-- Narrowing Down
@@ -332,7 +332,7 @@ profession(794, {	-- Archaeology
 		n(-17, {	-- Quests
 			-- Spirit of Eche'ro
 			q(41193, {	-- Laying to Rest
-				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
+				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
 				["coord"] = { 45.8, 44.6, 650 },
 				["sourceQuest"] = 41192,	-- The Right Path
@@ -345,13 +345,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Spear of Rethu
 			q(41187, {	-- Surveying Student
-				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
+				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
 				["coord"] = { 45.8, 44.6, 650 },
 				["sourceQuest"] = 41186,	-- History of Highmountain
 			}),
 			q(41188, {	-- Neltharion's Lair: Misdirected
-				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
+				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
 				["coord"] = { 45.8, 44.6, 650 },
 				["sourceQuest"] = 41187,	-- Surveying Student
@@ -364,13 +364,13 @@ profession(794, {	-- Archaeology
 			}),
 			-- Prizerock Neckband
 			q(41190, {	-- Crystal Eyes
-				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
+				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
 				["coord"] = { 45.8, 44.6, 650 },
 				["sourceQuest"] = 41189,	-- A New Lead
 			}),
 			q(41191, {	-- Drogbar Deception
-				["qg"] = 103485,	-- Lessah Moonwater <Archaeologist>
+				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
 				["coord"] = { 45.8, 44.6, 650 },
 				["sourceQuest"] = 41190,	-- Crystal Eyes

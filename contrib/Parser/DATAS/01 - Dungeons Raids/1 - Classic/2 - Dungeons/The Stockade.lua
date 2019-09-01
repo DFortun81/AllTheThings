@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(-17, {	-- Quests
 				q(27737, {	-- By Fire Be Saved!
-					["qg"] = 46410,	-- Nurse Lillian
+					["provider"] = { "n", 46410 },	-- Nurse Lillian
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(377, {	-- Crime and Punishment
@@ -22,7 +22,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(50335, {	-- Grant Me Revenge
-					["qg"] = 46409,	-- Warden Thelwater
+					["provider"] = { "n", 46409 },	-- Warden Thelwater
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65989),	-- Hogger's Shiny
@@ -41,7 +41,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(27739,{	-- The Gnoll King
-					["qg"] = 46409,	-- Warden Thelwater
+					["provider"] = { "n", 46409 },	-- Warden Thelwater
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(65989),	-- Hogger's Shiny
@@ -52,7 +52,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(27733, {	-- The Good Ol' Switcheroo
-					["qg"] = 46417,	-- Rifle Commander Coe
+					["provider"] = { "n", 46417 },	-- Rifle Commander Coe
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(386, { 	-- What Comes Around...

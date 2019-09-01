@@ -22,22 +22,22 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					q(36707, {	-- Warspear Welcome
-						["qg"] = 86315,	-- Stomphoof
+						["provider"] = { "n", 86315 },	-- Stomphoof
 						["coord"] = { 45.5, 34.6, 624 },
 						["sourceQuest"] = 36706,	-- Ashran Appearance
 					}),
 					q(36708, {	-- Inspiring Ashran
-						["qg"] = 86312,	-- Lieutenant Kragil
+						["provider"] = { "n", 86312 },	-- Lieutenant Kragil
 						["coord"] = { 44.1, 45.4, 624 },
 						["sourceQuest"] = 36707,	-- Warspear Welcome
 					}),
 					q(36709, {	-- Burning Beauty
-						["qg"] = 86312,	-- Lieutenant Kragil
+						["provider"] = { "n", 86312 },	-- Lieutenant Kragil
 						["coord"] = { 44.1, 45.4, 624 },
 						["sourceQuest"] = 36708,	-- Inspiring Ashran
 					}),
 					q(35243, {	-- The Dark Lady's Gift
-						["qg"] = 81765,	-- Vivianne
+						["provider"] = { "n", 81765 },	-- Vivianne
 						["coord"] = { 62.1, 23.0, 624 },
 						["sourceQuest"] = 36709,	-- Burning Beauty
 						["g"] = {

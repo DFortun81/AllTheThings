@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(-17, {	-- Quests
 				q(27070, {	-- A Fool's Errand
-					["qg"] = 7407,	-- Chief Engineer Bildewhizzle
+					["provider"] = { "n", 7407 },	-- Chief Engineer Bildewhizzle
 					["g"] = {
 						i(65954),	-- Belt of the Deep
 						i(65929),	-- Bildewhizzle's Armbands
@@ -19,10 +19,10 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(27076, {	-- Breaking and Entering
-					["qg"] = 44929,	-- Tran'rek
+					["provider"] = { "n", 44929 },	-- Tran'rek
 				}),
 				q(27068, {	-- Chief Ukorz Sandscalp
-					["qg"] = 40712,	-- Mazoga's Spirit
+					["provider"] = { "n", 40712 },	-- Mazoga's Spirit
 					["sourceQuest"] = 25556,	-- Into Zul'Farrak
 					["g"] = {
 						i(65930),	-- Hands of Consequences
@@ -32,14 +32,14 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(2768, {	-- Divino-matic Rod
 					["u"] = 40,
-					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
+					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
 					["g"] = {
 						un(2, i(9534)),	-- Engineer's Guild Headpiece
 						un(2, i(9533)),	-- Masons Fraternity Ring
 					},
 				}),
 				q(27071, {	-- Wrath of the Sandfury
-					["qg"] = 40712,	-- Mazoga's Spirit
+					["provider"] = { "n", 40712 },	-- Mazoga's Spirit
 				}),
 			}),
 			n(0, {	-- Zone Drop

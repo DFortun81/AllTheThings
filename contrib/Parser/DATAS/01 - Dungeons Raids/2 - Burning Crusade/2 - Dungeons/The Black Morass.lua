@@ -13,7 +13,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["groups"] = {
 			n(-17, {
 				q(10297, {	-- The Opening of the Dark Portal
-					["qg"] = 20201,	-- Sa'at
+					["provider"] = { "n", 20201 },	-- Sa'at
 					["sourceQuests"] = { 10296 },	-- The Black Morass
 					["groups"] = {
 						i(29320),	-- Band of the Guardian

@@ -9,9 +9,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(29844, {	-- For Posterity
-					["qgs"] = {
-						55738,	-- Tol'mar
-						55737,	-- Chronicler Bah'Kini
+					["providers"] = {
+						{ "n", 55738 },	-- Tol'mar
+						{ "n", 55737 },	-- Chronicler Bah'Kini
 					},
 					["groups"] = {
 						i(43180),	-- Lion's Head Ring
@@ -21,9 +21,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(29835, {	-- Gal'darah Must Pay
-					["qgs"] = {
-						55738,	-- Tol'mar
-						55737,	-- Chronicler Bah'Kini
+					["providers"] = {
+						{ "n", 55738 },	-- Tol'mar
+						{ "n", 55737 },	-- Chronicler Bah'Kini
 					},
 					["groups"] = {
 						i(43164),	-- Sly Mojo Sash
@@ -33,9 +33,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(29839, {	-- One of a Kind
-					["qgs"] = {
-						55738,	-- Tol'mar
-						55737,	-- Chronicler Bah'Kini
+					["providers"] = {
+						{ "n", 55738 },	-- Tol'mar
+						{ "n", 55737 },	-- Chronicler Bah'Kini
 					},
 					["groups"] = {
 						i(43171),	-- Fur-Lined Moccasins

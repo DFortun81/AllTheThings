@@ -10,7 +10,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["g"] = {
 			n(-17, {	-- Quests 						
 				q(31360, {	-- A New Lesson for the Master
-					["qg"] = 64432,	-- Sinan the Dreamer
+					["provider"] = { "n", 64432 },	-- Sinan the Dreamer
 					["g"] = {
 						i(87333),	-- Watchful Dreamer's Trousers
 						i(87334),	-- Dreamer's Vigil Leggings
@@ -24,7 +24,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 				q(31357, {	-- Relics of the Four Kings
-					["qg"] = 64432,	-- Sinan the Dreamer
+					["provider"] = { "n", 64432 },	-- Sinan the Dreamer
 					["g"] = {
 						i(87342),	-- Subjugation Bracers
 						i(87343),	-- Bracers of Swift Wrath

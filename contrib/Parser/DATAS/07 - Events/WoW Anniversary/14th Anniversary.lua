@@ -48,7 +48,7 @@ _.WorldEvents =
 				["g"] = {
 					{	-- A Time to Reflect [Horde]
 						["questID"] = 43461,	-- A Time to Reflect
-						["qg"] = 110035,		-- Historian Jupa
+						["provider"] = { "n", 110035 },		-- Historian Jupa
 						["isDaily"] = true,
 						["coords"] = {
 							{ 36.6, 74.6, 85 },
@@ -60,7 +60,7 @@ _.WorldEvents =
 					},
 					{	-- A Time to Reflect [Alliance]
 						["questID"] = 43323,	-- A Time to Reflect
-						["qg"] = 110034,		-- Historian Llore
+						["provider"] = { "n", 110034 },		-- Historian Llore
 						["isDaily"] = true,
 						["coords"] = {
 							{ 84.61, 25.01, 13 },
@@ -70,7 +70,7 @@ _.WorldEvents =
 					},
 					{	-- The Originals [Horde]
 						["questID"] = 47254,	-- The Originals
-						["qg"] = 110035,		-- Historian Jupa
+						["provider"] = { "n", 110035 },		-- Historian Jupa
 						["isDaily"] = true,
 						["coords"] = {
 							{ 36.6, 74.6, 85 },
@@ -86,7 +86,7 @@ _.WorldEvents =
 					},
 					{	-- The Originals [Alliance]
 						["questID"] = 47253,	-- The Originals
-						["qg"] = 110034,		-- Historian Llore
+						["provider"] = { "n", 110034 },		-- Historian Llore
 						["isDaily"] = true,
 						["coords"] = {
 							{ 84.61, 25.01, 13 },

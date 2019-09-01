@@ -19,13 +19,13 @@ _.PVP =
 			})),
 			q(42982, {	-- The Victor's Spoils [Alliance]
 				["u"] = 40,
-				["qg"] = 109466,	-- Anduin Wrynn <King of Stormwind>
+				["provider"] = { "n", 109466 },	-- Anduin Wrynn <King of Stormwind>
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 42978,	-- A Royal Audience [Alliance]
 			}),
 			q(42987, {	-- The Victor's Spoils [Horde]
 				["u"] = 40,
-				["qg"] = 109471,	-- Lady Sylvanas Windrunner <Warchief>
+				["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner <Warchief>
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 42985,	-- A Royal Audience [Horde]
 			}),

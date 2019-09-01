@@ -11,15 +11,15 @@ _.Holidays = bubbleDown({["u"] = 29},
 				["g"] = {
 					-- ALLIANCE QUESTS --
 					q(7022,  {	-- Greatfather Winter is Here!
-						["qg"] = 13433,	-- Wulmort Jinglepocket
+						["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
 						["maps"] = { 87 },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(7023,  {	-- Greatfather Winter is Here!
-						["qgs"] = {
-							13435,	-- Khole Jinglepocket
-							23010,	-- Wolgren Jinglepocket
-							96304,	-- Tradurjo Jinglepocket
+						["providers"] = {
+							{ "n", 13435 },	-- Khole Jinglepocket
+							{ "n", 23010 },	-- Wolgren Jinglepocket
+							{ "n", 96304 },	-- Tradurjo Jinglepocket
 						},
 						["maps"] = {
 							84,	-- Stormwind City
@@ -29,7 +29,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(7025,  {	-- Treats for Greatfather Winter
-						["qg"] = 13444,	-- Greatfather Winter
+						["provider"] = { "n", 13444 },	-- Greatfather Winter
 						["maps"] = { 87 },	-- Ironforge
 						["sourceQuests"] = { 
 							7022,	-- Greatfather Winter is Here!
@@ -38,9 +38,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(7043,  {	-- You're a Mean One... (Alliance)
-						["qgs"] = {
-							13433,	-- Wulmort Jinglepocket
-							13636,	-- Strange Snowman
+						["providers"] = {
+							{ "n", 13433 },	-- Wulmort Jinglepocket
+							{ "n", 13636 },	-- Strange Snowman
 						},
 						["maps"] = {
 							25,	-- Hillsbrad Foothills
@@ -98,7 +98,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 					}),
 					q(7045,  {	-- A Smokywood Pastures Thank You! (Alliance)
-						["qg"] = 13433,	-- Wulmort Jinglepocket
+						["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
 						["maps"] = { 87, },	-- Ironforge
 						["sourceQuests"] = { 7043, },	-- You're a Mean One... (Alliance)
 						["races"] = ALLIANCE_ONLY,
@@ -128,34 +128,34 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 					}),
 					q(7062,  {	-- The Reason for the Season (Alliance)					
-						["qg"] = 1365,	-- Goli Krumn
+						["provider"] = { "n", 1365 },	-- Goli Krumn
 						["maps"] = { 87 },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(7063,  {	-- The Feast of Winter Veil (Alliance)
-						["qg"] = 2916,	-- Historian Karnik
+						["provider"] = { "n", 2916 },	-- Historian Karnik
 						["maps"] = { 87 },	-- Ironforge
 						["sourceQuest"] = 7062,	-- The Reason for the Season (Alliance)
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- HORDE QUESTS --
 					q(6961,  {	-- Great-father Winter is Here!
-						["qg"] = 13418,	-- Kaymard Copperpinch
+						["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
 						["maps"] = { 85 },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
 					q(7021,  {	-- Great-father Winter is Here!
-						["qg"] = 13431,	-- Whulwert Copperpinch
+						["provider"] = { "n", 13431 },	-- Whulwert Copperpinch
 						["maps"] = { 88 },	-- Thunder Bluff
 						["races"] = HORDE_ONLY,
 					}),
 					q(7024,  {	-- Great-father Winter is Here!
-						["qg"] = 13429,	-- Nardstrum Copperpinch
+						["provider"] = { "n", 13429 },	-- Nardstrum Copperpinch
 						["maps"] = { 90 },	-- Undercity
 						["races"] = HORDE_ONLY,
 					}),
 					q(39651, {	-- Grumpus
-						["qg"] = 96735,	-- Pizzle
+						["provider"] = { "n", 96735 },	-- Pizzle
 						["maps"] = { 590 },	-- Frostwall
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -164,7 +164,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 					}),
 					q(39649, {	-- Menacing Grumplings
-						["qg"] = 96735,	-- Pizzle
+						["provider"] = { "n", 96735 },	-- Pizzle
 						["maps"] = { 590 },	-- Frostwall
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -174,24 +174,24 @@ _.Holidays = bubbleDown({["u"] = 29},
 					}),
 					--[[ this was listed in a metadata file. putting it here temporarily
 					q(8861, {	-- New Year Celebrations!
-						["qg"] = 15732,	-- Wonderform Operator
+						["provider"] = { "n", 15732 },	-- Wonderform Operator
 						["maps"] = { 88 },	-- Thunder Bluff
 						["races"] = HORDE_ONLY,
 					}),
 					]]--
 					q(7061,  {	-- The Feast of Winter Veil (Horde)
-						["qg"] = 13417,	-- Sagorne Creststrider
+						["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 						["maps"] = { 85 },	-- Orgrimmar
 						["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
 						["races"] = HORDE_ONLY,
 					}),
 					q(6964,  {	-- The Reason for the Season (Horde)
-						["qg"] = 9550,	-- Furmund
+						["provider"] = { "n", 9550 },	-- Furmund
 						["maps"] = { 85 },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
 					q(6962,  {	-- Treats for Great-father Winter
-						["qg"] = 13445,	-- Great-father Winter
+						["provider"] = { "n", 13445 },	-- Great-father Winter
 						["maps"] = { 85 },	-- Orgrimmar
 						["sourceQuests"] = {
 							6961,	-- Great-father Winter is Here!
@@ -201,9 +201,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = HORDE_ONLY,
 					}),
 					q(6983,  {	-- You're a Mean One... (Horde)
-						["qgs"] = {
-							13418,	-- Kaymard Copperpinch
-							13636,	-- Strange Snowman
+						["providers"] = {
+							{ "n", 13418 },	-- Kaymard Copperpinch
+							{ "n", 13636 },	-- Strange Snowman
 						},
 						["maps"] = {
 							25,	-- Hillsbrad Foothills
@@ -261,7 +261,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 					}),
 					q(39668, {	-- What Horrible Presents
-						["qg"] = 96735,	-- Pizzle
+						["provider"] = { "n", 96735 },	-- Pizzle
 						["maps"] = { 590 },	-- Frostwall
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -270,7 +270,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 					}),
 					q(39648, {	-- Where Are the Children?
-						["qg"] = 96735,	-- Pizzle
+						["provider"] = { "n", 96735 },	-- Pizzle
 						["maps"] = { 590 },	-- Frostwall
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -279,7 +279,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 					}),
 					q(6984,  {	-- A Smokywood Pastures Thank You! (Horde)
-						["qg"] = 13418,	-- Kaymard Copperpinch
+						["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
 						["maps"] = { 85 },	-- Orgrimmar
 						["sourceQuest"] = 6983,	-- You're a Mean One... (Horde)
 						["races"] = HORDE_ONLY,
@@ -310,14 +310,14 @@ _.Holidays = bubbleDown({["u"] = 29},
 					}),
 --[[				-- Legacy Winter Veil Quests
 					q(8799, {	-- The Hero of the Day
-						["qg"] = 13418,	-- Kaymard Copperpinch
+						["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
 						["coord"] = { 52.4, 77.0, 87 },
 						["races"] = HORDE_ONLY,
 						["maps"] = { 85 },	-- Orgrimmar
 						["u"] = 40,
 						}),
 					q(8763, {	-- The Hero of the Day
-						["qg"] = 13433,	-- Wulmort Jinglepocket
+						["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
 						["coord"] = { 33.2, 67.8, 87 },
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 87 },	-- Ironforge

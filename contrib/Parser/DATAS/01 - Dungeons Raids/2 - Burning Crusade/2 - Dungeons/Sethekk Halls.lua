@@ -20,7 +20,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			n(-17, {	-- Quests 	
 					q(29605, {	-- Brother Against Brother
-						["qg"] = 54840,	-- Isfar
+						["provider"] = { "n", 54840 },	-- Isfar
 						["sourceQuests"] = 10180,	-- Can't Stay Away
 						["groups"] = {
 							{	-- Mark of the Ravenguard

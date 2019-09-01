@@ -14,12 +14,12 @@ _.Zones =
 				["g"] = {
 					n(-17, {	-- Quests
 						q(53194, {	-- To The Front
-							["qg"] = 142721,		-- Ralston Karn
+							["provider"] = { "n", 142721 },		-- Ralston Karn
 							["coord"] = { 65.89, 26.03, 1161 },
 							["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
 						}),
 						q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
-							["qg"] = 142721,	-- Ralston Karn <Recruitment Officer>
+							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
 							["coord"] = { 66.01, 26.01, 1161 },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
@@ -91,7 +91,7 @@ _.Zones =
 							},
 						}),
 						q(53414, {	-- Warfront: The Battle For Stromgarde [Tier 3]
-							["qg"] = 142721,	-- Ralston Karn <Recruitment Officer>
+							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
 							["coord"] = { 66.01, 26.01, 1161 },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
@@ -110,7 +110,7 @@ _.Zones =
 							},
 						}),
 						q(56136, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
-							["qg"] = 142721,	-- Ralston Karn <Recruitment Officer>
+							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
 							["coord"] = { 66.01, 26.01, 1161 },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {

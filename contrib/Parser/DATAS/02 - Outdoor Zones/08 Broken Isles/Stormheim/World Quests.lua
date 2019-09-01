@@ -448,7 +448,7 @@ _.Zones =
 					["requireSkill"] = 165,	-- Leatherworking
 					["collectible"] = false,
 					["lvl"] = 110,
-					["qg"] = 106904,	-- Valdemar Stormseeker
+					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
 					["groups"] = {
 						i(137880),	-- Recipe: Warhide Footpads (Rank 3)
 					},
@@ -457,7 +457,7 @@ _.Zones =
 					["requireSkill"] = 333,	-- Enchanting
 					["collectible"] = false,
 					["lvl"] = 110,
-					["qg"] = 106904,	-- Valdemar Stormseeker
+					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
 					["groups"] = {
 						i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
 					},

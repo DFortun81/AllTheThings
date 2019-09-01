@@ -395,20 +395,20 @@ _.Zones =
 							i(166744, {	-- Glaive Tosser
 								["description"] = "Cost: 125 7th Legion Service Medals",
 							}),
-							i(166770, {	-- Banded Gilnean Cloak
-								["cost"] = { { "c", 1717, 75 }, },	-- 75x 7th Legion Service Medal
+							i(166770, {	-- Cloak of Hardened Steel
+								["description"] = "Cost: 75 7th Legion Service Medals",
 							}),
-							i(166768, {	-- Hymnal of the 7th Legion
-								["cost"] = { { "c", 1717, 75 }, },	-- 75x 7th Legion Service Medal
+							i(166768, {	-- Battle Hymnal
+								["description"] = "Cost: 75 7th Legion Service Medals",
 							}),
-							i(166769, {	-- Dwarven War Horn
-								["cost"] = { { "c", 1717, 75 }, },	-- 75x 7th Legion Service Medal
+							i(166769, {	-- Bolstering War Horn
+								["description"] = "Cost: 75 7th Legion Service Medals",
 							}),
-							i(166767, {	-- Kaldorei Powder of Twilight
-								["cost"] = { { "c", 1717, 75 }, },	-- 75x 7th Legion Service Medal
+							i(166767, {	-- Dusk Powder
+								["description"] = "Cost: 75 7th Legion Service Medals",
 							}),
-							i(166766, {	-- Tidesages' Warscroll
-								["cost"] = { { "c", 1717, 75 }, },	-- 75x 7th Legion Service Medal
+							i(166766, {	-- Enchanted Warscroll
+								["description"] = "Cost: 75 7th Legion Service Medals",
 							}),
 							i(166550, {	-- Royal Blue Cloak
 								["description"] = "Cost: 125 7th Legion Service Medals",

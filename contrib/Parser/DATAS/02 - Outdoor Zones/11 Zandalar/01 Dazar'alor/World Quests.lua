@@ -47,140 +47,140 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51038, {	-- Supplies Needed: Akunda's Bite
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51044, {	-- Supplies Needed: Blood-Stained Bone
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51045, {	-- Supplies Needed: Calcified Bone
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51046, {	-- Supplies Needed: Deep Sea Satin
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(52387, {	-- Supplies Needed: Frenzied Fangtooth
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(52382, {	-- Supplies Neeeded: Great Sea Catfish
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(52388, {	-- Supplies Needed: Lane Snapper
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51049, {	-- Supplies Neeeded: Mistscale
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51042, {	-- Supplies Needed: Monelite Ore
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51036, {	-- Supplies Needed: Riverbud
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(52383, {	-- Supplies Needed: Sand Shifter
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51041, {	-- Supplies Needed: Sea Stalk
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51048, {	-- Supplies Needed: Shimmerscale
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51040, {	-- Supplies Needed: Siren's Pollen
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51037, {	-- Supplies Needed: Star Moss
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51043, {	-- Supplies Needed: Storm Silver Ore
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51047, {	-- Supplies Needed: Tempest Hide
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51050, {	-- Supplies Needed: Tidespray Line
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(52384, {	-- Supplies Needed: Tiragarde Perch
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
 					}),
 					q(51039, {	-- Supplies Needed: Winter's Kiss
-						["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
@@ -197,7 +197,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52425, {	-- Work Order: Battle Flag: Spirit of Freedom
-						["qg"] = 131287,	-- Natal'hakata
+						["provider"] = { "n", 131287 },	-- Natal'hakata
 						["lvl"] = 120,
 						["coord"] = { 65.61, 72.01, 1163 },
 						["races"] = HORDE_ONLY,

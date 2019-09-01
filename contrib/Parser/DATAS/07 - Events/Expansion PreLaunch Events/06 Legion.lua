@@ -229,23 +229,23 @@ _.WorldEvents =
 					}),
 					n(-17, {	-- Quests
 						q(44421, {	-- Anomalous Anomalies
-							["qg"] = 113986,	-- Archmage Khadgar
+							["provider"] = { "n", 113986 },	-- Archmage Khadgar
 							["sourceQuests"] = { 44182 },	-- City Under Siege
 						}),
 						q(44500, {	-- Author! Author!
-							["qg"] = 113986,	-- Archmage Khadgar
+							["provider"] = { "n", 113986 },	-- Archmage Khadgar
 							["sourceQuests"] = { 44421 },	-- Author! Author!
 						}),
 						q(40717, {	-- Calling of the Council
-							["qg"] = 114550,	-- Khadgar's Upgraded Servant
+							["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 							["races"] = { 1, 3, 4, 7, 11, 22, 25, 29, 30 },	-- Alliance Races
 						}),
 						q(40718, {	-- Calling of the Council
-							["qg"] = 114550,	-- Khadgar's Upgraded Servant
+							["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 							["races"] = { 2, 5, 6, 8, 9, 10, 26, 27, 28 },	-- Horde Races
 						}),
 						q(44182, {	-- City Under Siege
-							["qg"] = 114561,	-- Khadgar's Upgraded Servant
+							["provider"] = { "n", 114561 },	-- Khadgar's Upgraded Servant
 							["sourceQuests"] = { 40755 },	-- Hiding in the Stacks
 						}),
 						q(43291, {	-- Defend (Dun Morogh)
@@ -261,7 +261,7 @@ _.WorldEvents =
 								i(139965),	-- Grips of the Fel Destroyer
 								i(139997),	-- Gauntlets of Legion Devastation
 							},
-							["qg"] = 101547,	-- Archmage Khadgar
+							["provider"] = { "n", 101547 },	-- Archmage Khadgar
 							["sourceQuests"] = { 42970 },	-- The Diamond King
 						}),	
 						q(44184, {	-- In the Blink of an Eye
@@ -269,7 +269,7 @@ _.WorldEvents =
 								-- i(140192),	-- Dalaran Hearthstone
 								-- i(143785),	-- Tome of the Tranquil Mind
 							},
-							["qg"] = 114562,	-- Khadgar's Upgraded Servant
+							["provider"] = { "n", 114562 },	-- Khadgar's Upgraded Servant
 							["sourceQuests"] = { 44500 },	-- Author! Author!
 						}),								
 						q(43301, {	-- Invasion: Azshara
@@ -303,7 +303,7 @@ _.WorldEvents =
 							["u"] = 40,
 						}),
 						q(42970, {	-- The Diamond King
-							["qg"] = 113655,	-- Brann Bronzebeard
+							["provider"] = { "n", 113655 },	-- Brann Bronzebeard
 							["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council
 						}),
 						--q(43289),	-- Defend

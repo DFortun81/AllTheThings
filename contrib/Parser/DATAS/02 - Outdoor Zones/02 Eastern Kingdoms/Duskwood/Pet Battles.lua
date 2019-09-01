@@ -40,17 +40,17 @@ _.Zones =
 					["crs"] = { 61259 },	-- Widow Spiderling
 				}),
 				q(3861, {	-- CLUCK!
-					["qg"] = 620,	-- Chicken
+					["provider"] = { "n", 620 },	-- Chicken
 					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
 					["repeatable"] = true,
 				}),
 				q(31850, {	-- Eric Davidson
-					["qg"] = 65655,	-- Eric Davidson
+					["provider"] = { "n", 65655 },	-- Eric Davidson
 					["coord"] = { 19.8, 44.6, 47 },
 					["isDaily"] = true,
 				}),
 				q(31729, {	-- Steven Lisbane
-					["qg"] = 65655,	-- Eric Davidson
+					["provider"] = { "n", 65655 },	-- Eric Davidson
 					["coord"] = { 19.8, 44.8, 47 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31726,	-- Eric Davidson

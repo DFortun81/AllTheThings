@@ -13,7 +13,7 @@ _.ExpansionFeatures =
 			["g"] = {
 				i(139781, {	-- Marin Noggenfogger's Lucky Coin
 					["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",
-					["qg"] = 102594,	-- Marin Noggenfogger <Baron of Gadgetzan>
+					["provider"] = { "n", 102594 },	-- Marin Noggenfogger <Baron of Gadgetzan>
 					["g"] = {
 						o(252273, {	-- Box of Throwing Daggers
 							i(139589),	-- Poisoned Throwing Knives
@@ -46,7 +46,7 @@ _.ExpansionFeatures =
 						o(252282, {	-- Sparkling Set of Keys
 							i(94222, {	-- Key to the Palace of Lei Shen
 								["description"] = "Speak to Taoshi at the bottom level of the Order Hall to start the Troves of the Thunder King scenario. 1 Key to the Palace of Lei Shen is required for each attempt of this scenario.\n\nThis is the exact same scenario that was available during Mists of Pandaria. The mobs DO SCALE with level up to level 110 though.\n\nComplete the scenario (reaching the end, or until the timer runs out) looting chests and obtaining as many Burial Trove Keys as possible.",
-								["qg"] = 98100,	-- Taoshi
+								["provider"] = { "n", 98100 },	-- Taoshi
 								["maps"] = { 518 },
 								["g"] = {
 									i(95497, {	-- Burial Trove Key
@@ -80,28 +80,28 @@ _.ExpansionFeatures =
 				}),
 				n(-17, {	-- Quests
 					q(45571, {	-- A Bit of Espionage
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
 					q(43958, {	-- A Body of Evidence
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
 					q(43485, {	-- A Burning Distraction
-						["qg"] = 98100,	-- Taoshi
+						["provider"] = { "n", 98100 },	-- Taoshi
 					}),
 					q(40847, {	-- A Friendly Accord
-						["qg"] = 94159,	-- Fleet Admiral Tethys
+						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["classes"] = {4},
 					}),
 					q(43422, {	-- A Hero's Weapon
-						["qg"] = 113362,	-- Lord Jorach Ravenholdt
+						["provider"] = { "n", 113362 },	-- Lord Jorach Ravenholdt
 						["classes"] = {4},
 					}),
 					q(41920, {	-- A Matter of Finesse
-						["qg"] = 98102,	-- Valeera Sanguinara
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinara
 						["classes"] = {4},
 					}),
 					q(42140, {
-						["qg"] = 98092,	-- Nikki the Gossip
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 					}),	-- A More Wretched Hive of Scum and Villainy
 					q(46089, {	-- The Sunken Vault
 						["lvl"] = 110,
@@ -135,63 +135,63 @@ _.ExpansionFeatures =
 					--]]
 					--Followers Sort later
 					q(44181, {	-- Champion: Fleet Admiral Tethys
-						["qg"] = 94159,		-- Fleet Admiral Tethys
+						["provider"] = { "n", 94159 },		-- Fleet Admiral Tethys
 						["g"] = {
 							follower(780),	-- Fleet Admiral Tethys
 						},
 					}),
 					q(43262, {	-- Champion: Garona Halforcen
-						["qg"] = 94141,		-- Garona Halforcen
+						["provider"] = { "n", 94141 },		-- Garona Halforcen
 						["g"] = {
 							follower(778),	-- Garona Halforcen
 						},
 					}),
 					q(44183, {	-- Champion: Lord Jorach Ravenholdt
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["g"] = {
 							follower(779),	-- Lord Jorach Ravenholdt
 						},
 					}),
 					q(44180, {	-- Champion: Marin Noggenfogger
-						["qg"] = 102594,	-- Marin Noggenfogger <Baron of Gadgetzan>
+						["provider"] = { "n", 102594 },	-- Marin Noggenfogger <Baron of Gadgetzan>
 						["g"] = {
 							follower(890),	-- Marin Noggenfogger
 						},
 					}),
 					q(43724, {	-- Champion: Master Mathias Shaw
-						["qg"] = 110953,	-- Master Mathias Shaw <Leader of SI:7>
+						["provider"] = { "n", 110953 },	-- Master Mathias Shaw <Leader of SI:7>
 						["g"] = {
 							follower(893),	-- Master Mathias Shaw
 						},
 					}),
 					q(46059, {	-- Champion: Tess Greymane
-						["qg"] = 94138,		-- Princess Tess Greymane
+						["provider"] = { "n", 94138 },		-- Princess Tess Greymane
 						["races"] = ALLIANCEE_ONLY,
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
 					}),
 					q(46058, {	-- Champion: Lilian Voss
-						["qg"] = 98099,		-- Lilian Voss
+						["provider"] = { "n", 98099 },		-- Lilian Voss
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
 					}),
 					q(43723, {	-- Champion: Taoshi
-						["qg"] = 98100,		-- Taoshi
+						["provider"] = { "n", 98100 },		-- Taoshi
 						["g"] = {
 							follower(892),	-- Taoshi
 						},
 					}),
 					q(42800, {	-- Champion: Valeera Sanguinar
-						["qg"] = 98102,		-- Valeera Sanguinar
+						["provider"] = { "n", 98102 },		-- Valeera Sanguinar
 						["g"] = {
 							follower(891),	-- Valeera Sanguinar
 						},
 					}),
 					q(43261, {	-- Champion: Vanessa VanCleef
-						["qg"] = 102636,	-- Vanessa VanCleef
+						["provider"] = { "n", 102636 },	-- Vanessa VanCleef
 						["g"] = {
 							follower(591),	-- Vanessa VanCleef
 						},

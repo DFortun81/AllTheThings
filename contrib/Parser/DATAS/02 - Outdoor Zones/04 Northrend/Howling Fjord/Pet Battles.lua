@@ -55,7 +55,7 @@ _.Zones =
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
 				q(31931, {	--  Beegle Blastfuse
-					["qg"] = 66635,	-- Beegle Blastfuse
+					["provider"] = { "n", 66635 },	-- Beegle Blastfuse
 					["repeatable"] = true,
 				}),
 			}),

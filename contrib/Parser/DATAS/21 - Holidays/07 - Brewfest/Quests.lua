@@ -17,13 +17,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["sourceQuests"] = { 11318, },	-- Now This is Ram Racing... Almost. (Alliance)
 					}),
 					q(11441, {	-- Brewfest!
-						["qgs"] = {
-							18927,	-- Human Commoner
-							19148,	-- Dwarf Commoner
-							19171,	-- Draenei Commoner
-							19172,	-- Gnome Commoner
-							19173,	-- Night Elf Commoner
-							20102,	-- Goblin Commoner
+						["providers"] = {
+							{ "n", 18927 },	-- Human Commoner
+							{ "n", 19148 },	-- Dwarf Commoner
+							{ "n", 19171 },	-- Draenei Commoner
+							{ "n", 19172 },	-- Gnome Commoner
+							{ "n", 19173 },	-- Night Elf Commoner
+							{ "n", 20102 },	-- Goblin Commoner
 						},
 						["maps"] = {
 							84,	-- Stormwind City
@@ -46,43 +46,43 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12022, {	-- Chug and Chuck! (Alliance)
-						["qg"] = 27215,	-- Boxey Boltspinner
+						["provider"] = { "n", 27215 },	-- Boxey Boltspinner
 						["maps"] = { 27, },	-- Dun Morogh
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11318, {	-- Now This is Ram Racing... Almost. (Alliance)
-						["qg"] = 23558,	-- Neill Ramstein
+						["provider"] = { "n", 23558 },	-- Neill Ramstein
 						["maps"] = { 27, },	-- Dun Morogh
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11118, {	-- Pink Elekks On Parade (Alliance)
-						["qg"] = 23486,	-- Goldark Snipehunter
+						["provider"] = { "n", 23486 },	-- Goldark Snipehunter
 						["maps"] = { 27, },	-- Dun Morogh
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11122, {	-- There and Back Again (Alliance)
-						["qg"] = 23558,	-- Neill Ramstein
+						["provider"] = { "n", 23558 },	-- Neill Ramstein
 						["maps"] = { 27, },	-- Dun Morogh
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- HORDE QUESTS --
-						q(29396, {	-- A New Supplier of Souvenirs (Horde)
+					q(29396, {	-- A New Supplier of Souvenirs (Horde)
 						["groups"] = {
 							un(24, i(56836)),	-- Overflowing Purple Brewfest Stein
 						},
-						["qg"] = 24497,	-- Ram Master Ray
+						["provider"] = { "n", 24497 },	-- Ram Master Ray
 						["maps"] = { 1, },	-- Durotar
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 11409, },	-- Now This is Ram Racing... Almost. (Horde)
 					}),
 					q(11446, {	-- Brewfest!
-						["qgs"] = {
-							19169,	-- Blood Elf Commoner
-							19175,	-- Orc Commoner
-							19176,	-- Tauren Commoner
-							19177,	-- Troll Commoner
-							19178,	-- Forsaken Commoner
-							20102,	-- Goblin Commoner
+						["providers"] = {
+							{ "n", 19169 },	-- Blood Elf Commoner
+							{ "n", 19175 },	-- Orc Commoner
+							{ "n", 19176 },	-- Tauren Commoner
+							{ "n", 19177 },	-- Troll Commoner
+							{ "n", 19178 },	-- Forsaken Commoner
+							{ "n", 20102 },	-- Goblin Commoner
 						},
 						["maps"] = {
 							1,	-- Durotar
@@ -114,22 +114,22 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["races"] = HORDE_ONLY,
 					}),
 					q(12191, {	-- Chug and Chuck! (Horde)
-						["qg"] = 27216,	-- Bizzle Quicklift
+						["provider"] = { "n", 27216 },	-- Bizzle Quicklift
 						["maps"] = { 1, },	-- Durotar
 						["races"] = HORDE_ONLY,
 					}),
 					q(11409, {	-- Now This is Ram Racing... Almost. (Horde)
-						["qg"] = 24497,	-- Ram Master Ray
+						["provider"] = { "n", 24497 },	-- Ram Master Ray
 						["maps"] = { 1, },	-- Durotar
 						["races"] = HORDE_ONLY,
 					}),
 					q(11120, {	-- Pink Elekks On Parade (Horde)
-						["qg"] = 24657,	-- Glodrak Huntsniper
+						["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
 						["maps"] = { 1, },	-- Durotar
 						["races"] = HORDE_ONLY,
 					}),
 					q(11412, {	-- There and Back Again (Horde)
-						["qg"] = 24497,	-- Ram Master Ray
+						["provider"] = { "n", 24497 },	-- Ram Master Ray
 						["maps"] = { 1, },	-- Durotar
 						["races"] = HORDE_ONLY,
 					}),

@@ -33,13 +33,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["groups"] = {
 									q(7045, {	-- A Smokywood Pastures' Thank You! (Alliance)
 										
-										["qg"] = 13433,	-- Wulmort Jinglepocket
+										["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
 										["maps"] = { 87, },	-- Ironforge
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(6984, {	-- A Smokywood Pastures' Thank You! (Horde)
 										
-										["qg"] = 13418,	-- Kaymard Copperpinch
+										["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
 										["maps"] = { 85, },	-- Orgrimmar
 										["races"] = HORDE_ONLY,
 									}),

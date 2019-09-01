@@ -30,7 +30,7 @@ _.Zones =
 						["g"] = {
 							q(13088, {	-- Northern Cooking
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 26989,		-- Quest Giver: Rollick MacKreel <Cooking Trainer>
+								["provider"] = { "n", 26989 },		-- Quest Giver: Rollick MacKreel <Cooking Trainer>
 								["g"] = {
 									recipe(57421),	-- Northern Stew
 								},
@@ -78,7 +78,7 @@ _.Zones =
 							q(13090, {	-- Northern Cooking
 								["coord"] = { 42.0, 54.1, 114 },
 								["races"] = HORDE_ONLY,
-								["qg"] = 26972,	-- Orn Tenderhoof <Cooking Trainer>
+								["provider"] = { "n", 26972 },	-- Orn Tenderhoof <Cooking Trainer>
 								["g"] = {
 									recipe(57421),	-- Northern Stew
 								},
@@ -106,7 +106,7 @@ _.Zones =
 					q(11945, {	-- Preparing for the Worst
 						["isDaily"] = true,
 						["coord"] = { 64.0, 45.7, 114 },
-						["qg"] = 26213,	-- Utaik
+						["provider"] = { "n", 26213 },	-- Utaik
 					}),
 				},
 			}),

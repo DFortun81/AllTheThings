@@ -43,30 +43,30 @@ _.Zones =
 					},
 				}),
 				q(3861, {	-- CLUCK!
-					["qg"] = 620,	-- Chicken
+					["provider"] = { "n", 620 },	-- Chicken
 					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
 					["repeatable"] = true,
 				}),
 				q(31578, {	-- Got one!
-					["qg"] = 63073,	-- Ansel Fincap
+					["provider"] = { "n", 63073 },	-- Ansel Fincap
 					["coord"] = { 60.8, 54.2, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31823,	-- Level Up!
 				}),
 				q(31576, {	-- Learning the Ropes
-					["qg"] = 63073,	-- Ansel Fincap
+					["provider"] = { "n", 63073 },	-- Ansel Fincap
 					["coord"] = { 60.8, 54.2, 18 },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31823, {	-- Level Up!
-					["qg"] = 63073,	-- Ansel Fincap
+					["provider"] = { "n", 63073 },	-- Ansel Fincap
 					["coord"] = { 60.8, 54.2, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31577,	-- On The Mend
 				}),
 				q(31577, {	-- On The Mend
-					["qg"] = 63073,	-- Ansel Fincap
+					["provider"] = { "n", 63073 },	-- Ansel Fincap
 					["coord"] = { 60.8, 54.2, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31576,	-- Learning the Ropes

@@ -74,7 +74,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					q(24815, {	-- Choose Your Path
 						["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
 						["description"] = "If the quest does not appear when you hit Friendly, you may have to relog.",
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50375, {	-- Ashen Band of Courage
 								["questID"] = 24815,	-- Choose Your Path
@@ -103,7 +103,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50388, {	-- Ashen Band of Greater Courage
 								["questID"] = 24827,	-- Path of Courage (Honored)
@@ -115,7 +115,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 						["sourceQuest"] = 24827,	-- Path of Courage (Honored)
 						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50403, {	-- Ashen Band of Unmatched Courage
 								["questID"] = 24834,	-- Path of Courage (Revered)
@@ -127,7 +127,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 						["sourceQuest"] = 24834,	-- Path of Courage (Revered)
 						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50404, {	-- Ashen Band of Endless Courage
 								["questID"] = 24835,	-- Path of Courage (Exalted)
@@ -140,7 +140,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50384, {	-- Ashen Band of Greater Destruction
 								["questID"] = 24828,	-- Path of Destruction (Honored)
@@ -152,7 +152,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 						["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
 						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50397, {	-- Ashen Band of Unmatched Destruction
 								["questID"] = 24823,	-- Path of Destruction [Revered]
@@ -164,7 +164,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 						["sourceQuest"] = 24823,	-- Path of Destruction (Revered)
 						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50398, {	-- Ashen Band of Endless Destruction
 								["questID"] = 24829,	-- Path of Destruction (Exalted)
@@ -177,7 +177,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(52570, {	-- Ashen Band of Greater Might
 								["questID"] = 25239,	-- Path of Might [Honored]
@@ -187,7 +187,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					q(25240, {	-- Path of Might [Revered]
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 25239,	-- Path of Might [Honored]
 						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
 						["g"] = {
@@ -199,7 +199,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					q(25242, {	-- Path of Might [Exalted]
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 25240,	-- Path of Might [Revered]
 						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
 						["g"] = {
@@ -212,7 +212,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				--	Quest Chain: Path of Vengeance
 					q(24826, {	-- Path of Vengeance [Honored]
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
 						["g"] = {
@@ -224,7 +224,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					q(24832, {	-- Path of Vengeance [Revered]
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
 						["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
 						["g"] = {
@@ -236,7 +236,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					q(24833, {	-- Path of Vengeance [Exalted]
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24832,	-- Path of Vengeance [Revered]
 						["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
 						["g"] = {
@@ -249,7 +249,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				--	Quest Chain: Path of Wisdom
 					q(24825, {	-- Path of Wisdom [Honored]
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
 						["g"] = {
@@ -261,7 +261,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					q(24830, {	-- Path of Wisdom [Revered]
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
 						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
 						["g"] = {
@@ -273,7 +273,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					q(24831, {	-- Path of Wisdom [Exalted]
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-						["qg"] = 38316,	-- Ormus the Penitent
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
 						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
 						["g"] = {
@@ -295,7 +295,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["g"] = {
 					{
 						["questID"] = 24545,	-- The Sacred and the Corrupt
-						["qg"] = 37120,	-- Highlord Darion Mograine
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["g"] = {
 							{
 								["itemID"] = 49869,	-- Light's Vengeance
@@ -318,7 +318,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 					{
 						["questID"] = 24743,	-- Shadow's Edge
-						["qg"] = 37120,	-- Highlord Darion Mograine
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["sourceQuest"] = 24545,	-- The Sacred and the Corrupt
 						["g"] = {
 							i(49888),	-- Shadow's Edge
@@ -326,27 +326,27 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 					{
 						["questID"] = 24547,	-- A Feast of Souls
-						["qg"] = 37120,	-- Highlord Darion Mograine
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["sourceQuest"] = 24743,	-- Shadow's Edge
 					},
 					{
 						["questID"] = 24749,	-- Unholy Infusion
-						["qg"] = 37120,	-- Highlord Darion Mograine
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["sourceQuest"] = 24547,	-- A Feast of Souls
 					},
 					{
 						["questID"] = 24756,	-- Blood Infusion
-						["qg"] = 37120,	-- Highlord Darion Mograine
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["sourceQuest"] = 24749,	-- Unholy Infusion
 					},
 					{
 						["questID"] = 24757,	-- Frost Infusion
-						["qg"] = 37120,	-- Highlord Darion Mograine
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["sourceQuest"] = 24756,	-- Blood Infusion
 					},
 					{
 						["questID"] = 24548,	-- The Splintered Throne
-						["qg"] = 37120,	-- Highlord Darion Mograine
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["sourceQuest"] = 24757,	-- Frost Infusion
 						["g"] = {
 							{
@@ -373,7 +373,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 					{
 						["questID"] = 24549,	-- Shadowmourne...
-						["qg"] = 37120,	-- Highlord Darion Mograine
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["sourceQuest"] = 24548,	-- The Splintered Throne
 						["g"] = {
 							i(49623)	-- Shadowmourne
@@ -381,13 +381,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 					{
 						["questID"] = 24748,	-- The Lich King's Last Stand
-						["qg"] = 37120,	-- Highlord Darion Mograine
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["sourceQuest"] = 24549,	-- Shadowmourne...
 					},
 					{
 						["itemID"] = 51315,	-- Sealed Chest
 						["questID"] = 24914,	-- Personal Property
-						["qg"] = 36597,	-- The Lich King
+						["provider"] = { "n", 36597 },	-- The Lich King
 						["sourceQuest"] = 24549,	-- Shadowmourne...
 						["description"] = "Dropped by the Lich King on 25 Man Difficulty while on the quest The Lich King's Last Stand. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.",
 						["g"] = {

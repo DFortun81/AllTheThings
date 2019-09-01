@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 		m(14, {	-- Arathi Highlands
 			n(-17, {	-- Quests [Tier 2]
 				q(53198, {	-- Back to Boralus
-					["qg"] = 143018,	-- Captain Roderick Brewston
+					["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
 					["sourceQuest"] = 53197,	-- Touring the Front
 					["coord"] = { 19.26, 61.77, 14 },
 					["races"] = ALLIANCE_ONLY,
@@ -20,7 +20,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(53212, {	-- Back to Zuldazar
-					["qg"] = 143019,	-- Wistel Sliversnitch
+					["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 					["sourceQuest"] = 53210,	-- Touring the Front
 					["coord"] = { 26.11, 35.59, 14 },
 					["races"] = HORDE_ONLY,
@@ -38,9 +38,9 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 53198,	-- Back to Boralus
-					["qgs"] = {
-						143172,	-- Yvera Dawnwing [Arathi Highlands Location]
-						143380,	-- Yvera Dawnwing [Boralus Location]
+					["providers"] = {
+						{ "n", 143172 },	-- Yvera Dawnwing [Arathi Highlands Location]
+						{ "n", 143380 },	-- Yvera Dawnwing [Boralus Location]
 					},
 					["g"] = {
 						i(164578, {	-- Warfronts Equipment Cache
@@ -58,14 +58,14 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(53197, {	-- Touring the Front (A)
-					["qg"] = 143018,		-- Captain Roderick Brewston
+					["provider"] = { "n", 143018 },		-- Captain Roderick Brewston
 					["coord"] = { 19.26, 61.77, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
 					["sourceQuest"] = 53194,	-- To The Front
 				}),
 				q(53210, {	-- Touring the Front (H)
-					["qg"] = 143019,	-- Wistel Sliversnitch
+					["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 					["races"] = HORDE_ONLY,
 					["coord"] = { 26.11, 35.59, 14 },
 					["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)

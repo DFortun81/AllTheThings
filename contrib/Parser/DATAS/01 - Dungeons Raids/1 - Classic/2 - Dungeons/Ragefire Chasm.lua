@@ -10,29 +10,29 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(-17, {	-- Quests
 				q(30998, {	-- A New Enemy
-					["qg"] = 61823,	-- High Sorceress Aryna
+					["provider"] = { "n", 61823 },	-- High Sorceress Aryna
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30969, {	-- A New Enemy
-					["qg"] = 61716,	-- Invoker Xorenth
+					["provider"] = { "n", 61716 },	-- Invoker Xorenth
 					["races"] = HORDE_ONLY,
 				}),
 				q(26862, {	-- Elemental Tampering
 					["u"] = 40,
-					["qg"] = 44216,	-- Bovaal Whitehorn
+					["provider"] = { "n", 44216 },	-- Bovaal Whitehorn
 					["races"] = HORDE_ONLY,
 				}),
 				q(30995, {	-- No Man Left Behind
-					["qg"] = 61822,	-- SI:7 Field Commander Dirken
+					["provider"] = { "n", 61822 },	-- SI:7 Field Commander Dirken
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30984, {	-- No Orc Left Behind
-					["qg"] = 61823,	-- Commander Bagran
+					["provider"] = { "n", 61823 },	-- Commander Bagran
 					["races"] = HORDE_ONLY,
 				}),
 				q(26856, {	-- Repel the Invasion
 					["u"] = 40,
-					["qg"] = 44217,	-- Stone Guard Kurjack
+					["provider"] = { "n", 44217 },	-- Stone Guard Kurjack
 					["races"] = HORDE_ONLY,
 				}),
 				q(5724, {	-- Returning the Lost Satchel
@@ -45,7 +45,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(26858, {	-- Taragaman the Hungerer
 					["u"] = 40,
-					["qg"] = 44217,	-- Stone Guard Kurjack
+					["provider"] = { "n", 44217 },	-- Stone Guard Kurjack
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28003,	-- Adventurer's Wanted: Ragefire Chasm
@@ -66,7 +66,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(30996, {	-- The Dark Shaman
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 61823,	-- High Sorceress Aryna
+					["provider"] = { "n", 61823 },	-- High Sorceress Aryna
 					["g"] = {
 						i(82893),	-- Hide Vest of the Shaman
 						i(82891),	-- Robes of the Doomed Ritual
@@ -78,7 +78,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(30983, {	-- The Dark Shaman
-					["qg"] = 61716,	-- Invoker Xorenth
+					["provider"] = { "n", 61716 },	-- Invoker Xorenth
 					["races"] = HORDE_ONLY,
 				}),
 			}),

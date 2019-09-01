@@ -22,7 +22,7 @@ _.Zones =
 					["crs"] = { 61828 },	-- Infected Squirrel
 				}),
 				q(31911, {	-- Deiza Plaguehorn
-					["qg"] = 66512,	-- Deiza Plaguehorn
+					["provider"] = { "n", 66512 },	-- Deiza Plaguehorn
 					["coord"] = { 67.0, 52.4, 23 },
 					["isDaily"] = true,
 				}),

@@ -9,7 +9,7 @@ _.Zones =
 				prof(171, {	-- Alchemy
 					q(39334, {	-- Thanks for Flasking
 						["sourceQuests"] = { 39430 },	-- Flasking for a Favor
-						["qg"] = 92242,	-- Barm Stonebreaker
+						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 					}),
 				}),
 				prof(794, {	-- Archaeology
@@ -18,7 +18,7 @@ _.Zones =
 						["sourceQuests"] = { 41189 },	-- A New Lead
 						["requireSkill"] = 794,	-- Archaeology
 						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
-						["qg"] = 103485,	-- Lessah Moonwater
+						["provider"] = { "n", 103485 },	-- Lessah Moonwater
 						--Note!! This resets either bi-weekly or when it comes up against
 						--It does NOT receive repeatable/daily/weekly filter due to this.
 					}),
@@ -26,7 +26,7 @@ _.Zones =
 						["sourceQuests"] = { 41190 },	-- Crystal Eyes
 						["requireSkill"] = 794,	-- Archaeology
 						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
-						["qg"] = 103485,	-- Lessah Moonwater
+						["provider"] = { "n", 103485 },	-- Lessah Moonwater
 						["groups"] = {
 							i(131736),	-- Prizerock Neckband
 						},
@@ -37,18 +37,18 @@ _.Zones =
 				prof(164, {	-- Blacksmithing
 					q(38514, {	-- You Are Not Worthy
 						["sourceQuests"] = { 38513 },	-- The Highmountain Smiths
-						["qg"] = 92242,	-- Barm Stonebreaker
+						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 					}),
 					q(39699, {	-- Ironhorn Leysmithing
 						["sourceQuests"] = { 38514 },	-- You Are Not Worthy
-						["qg"] = 92242,	-- Barm Stonebreaker
+						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 						["groups"] = {
 							i(123933),	-- Plans: Leystone Gauntlets (Rank 2)
 						},
 					}),
 					q(38519, {	-- Grayheft
 						["sourceQuests"] = { 39699 },	-- Ironhorn Leysmithing
-						["qg"] = 92245,	-- Thala Steeltotem
+						["provider"] = { "n", 92245 },	-- Thala Steeltotem
 						["groups"] = {
 							i(137680),	-- Plans: Leystone Greaves (Rank 2)
 						},
@@ -56,11 +56,11 @@ _.Zones =
 					q(38518, {	-- From One Master to Another
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 38519 },	-- Grayheft
-						["qg"] = 92242,	-- Barm Stonebreaker
+						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 					}),
 					q(38531, {	-- Leystone Mastery
 						["sourceQuests"] = { 38530 },	-- The Firmament Stone
-						["qg"] = 92242,	-- Barm Stonebreaker
+						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 						["groups"] = {
 							i(123932),	-- Plans: Leystone Helm (Rank 2)
 							i(123930),	-- Plans: Leystone Pauldrons (Rank 2)
@@ -68,80 +68,80 @@ _.Zones =
 					}),
 					q(38532, {	-- Maw of Souls: Hammered By The Storm
 						["sourceQuests"] = { 38530 },	-- The Firmament Stone
-						["qg"] = 92242,	-- Barm Stonebreaker
+						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 					}),
 					q(38559, {	-- Worthy of the Stone
 						["sourceQuests"] = {
 							38531,	-- Leystone Mastery
 							38532,	-- Maw of Souls: Hammered By The Storm
 						},
-						["qg"] = 92242,	-- Barm Stonebreaker
+						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 					}),
 					q(38833, {	-- The Art of Demonsteel
 						["sourceQuests"] = { 38559 },	-- Worthy of the Stone
-						["qg"] = 92243,	-- Muirn Ironhorn
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn
 						["groups"] = {
 							i(124462),	-- Plans: Demonsteel Bar
 						},
 					}),
 					q(38533, {	-- Tribal Knowledge
 						["sourceQuests"] = { 38833 },	-- The Art of Demonsteel
-						["qg"] = 92243,	-- Muirn Ironhorn
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn
 						["groups"] = {
 							i(123920),	-- Plans: Demonsteel Armguards (Rank 1)
 						},
 					}),
 					q(38534, {	-- Demonsteel Armguards
-						["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 						["groups"] = {
 							i(123940),	-- Recipe: Demonsteel Armguards [Rank 2]
 						},
 					}),
 					q(38538, {	-- Demonsteel Boots
-						["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 						["groups"] = {
 							i(123946),	-- Recipe: Demonsteel Boots [Rank 2]
 						},
 					}),
 					q(38542, {	-- Demonsteel Breastplate
-						["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 						["groups"] = {
 							i(123947),	-- Recipe: Demonsteel Breastplate [Rank 2]
 						},
 					}),
 					q(38539, {	-- Demonsteel Gauntlets
-						["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 						["groups"] = {
 							i(123945),	-- Recipe: Demonsteel Gauntlets [Rank 2]
 						},
 					}),
 					q(38541, {	-- Demonsteel Greaves
-						["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 						["groups"] = {
 							i(123943),	-- Recipe: Demonsteel Greaves [Rank 2]
 						},
 					}),
 					q(38540, {	-- Demonsteel Helm
-						["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 						["groups"] = {
 							i(123944),	-- Recipe: Demonsteel Helm [Rank 2]
 						},
 					}),
 					q(38537, {	-- Demonsteel Pauldrons
-						["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 						["groups"] = {
 							i(123942),	-- Recipe: Demonsteel Pauldrons [Rank 2]
 						},
 					}),
 					q(38536, {	-- Demonsteel Waistguard
-						["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 						["groups"] = {
 							i(123941),	-- Recipe: Demonsteel Waistguard [Rank 2]
 						},
 					}),
 					n(-34, {	-- World Quests
 						q(41635, {	-- Work Order: Leystone Boots
-							["qg"] = 106902,	-- Ransa Greyfeather
+							["provider"] = { "n", 106902 },	-- Ransa Greyfeather
 							["groups"] = {
 								i(137605),	-- Recipe: Leystone Boots (Rank 3)
 							},
@@ -159,7 +159,7 @@ _.Zones =
 							39879,	-- Strong Like the Earth
 							39880,	-- Waste Not
 						},
-						["qg"] = 98017,	-- Guron Twaintail
+						["provider"] = { "n", 98017 },	-- Guron Twaintail
 						["groups"] = {
 							i(128571),	-- Formula: Enchant Cloak - Word of Agility (Rank 1)
 							i(128572),	-- Formula: Enchant Cloak - Word of Intellect (Rank 1)
@@ -353,39 +353,39 @@ _.Zones =
 				}),
 				prof(165, {	-- Leatherworking
 					q(40192, {	-- Claw of the Land
-						["qg"] = 98948,	-- Hrul Sharphoof
+						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["groups"] = {
 							i(137869),	-- Recipe: Warhide Belt (Rank 2)
 							i(137868),	-- Recipe: Warhide Bindings (Rank 2)
 						},
 					}),
 					q(40204, {	-- Evolution of the Past
-						["qg"] = 98948,	-- Hrul Sharphoof
+						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["groups"] = {
 							i(137873),	-- Recipe: Warhide Gloves (Rank 2)
 						},
 					}),
 					q(40205, {	-- Respect for the Past
-						["qg"] = 98948,	-- Hrul Sharphoof
+						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["groups"] = {
 							i(137871),	-- Recipe: Warhide Pants (Rank 2)
 						},
 					}),
 					q(40191, {	-- Stamped Stories
-						["qg"] = 98948,	-- Hrul Sharphoof
+						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["groups"] = {
 							i(137875),	-- Recipe: Warhide Jerkin (Rank 2)
 						},
 					}),
 					q(40203, {	-- Strength of the Past
-						["qg"] = 98948,	-- Hrul Sharphoof
+						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["groups"] = {
 							i(137872),	-- Recipe: Warhide Mask (Rank 2)
 						},
 					}),
 					q(40415, {	-- Well Spent Time
 						["requireSkill"] = 165,	-- Leatherworking
-						["qg"] = 98948,	-- Hrul Sharphoof
+						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 					}),
 				}),
 				prof(393, {	-- Skinning

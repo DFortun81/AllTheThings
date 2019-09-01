@@ -58,7 +58,7 @@ _.WorldEvents =
 					un(3, i(40593)),	-- Argent Tome
 					un(3, i(40492)),	-- Argent War Horn
 					un(3, q(12616, {	-- Chamber of Secrets
-						["qg"] = 16285,	-- Argent Emissary
+						["provider"] = { "n", 16285 },	-- Argent Emissary
 						["groups"] = {
 							un(3, i(40354)),	-- Monster Slayer's Kit
 						},

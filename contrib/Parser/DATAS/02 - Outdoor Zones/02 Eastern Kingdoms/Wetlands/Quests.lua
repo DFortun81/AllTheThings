@@ -10,7 +10,7 @@ _.Zones =
 					["sourceQuests"] = { 25722 },	-- Sedimentary, My Dear
 					["coord"] = { 57.4, 71.4, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41129,	-- Surveyor Thurdan
+					["provider"] = { "n", 41129 },	-- Surveyor Thurdan
 				}),
 				q(304,   {	-- A Grim Task
 					["u"] = 40,	-- Legacy Quests
@@ -22,13 +22,13 @@ _.Zones =
 				q(25820, {	-- A Mother's Worries
 					["coord"] = { 11.8, 57.9, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1484,	-- Derina Rumdnul
+					["provider"] = { "n", 1484 },	-- Derina Rumdnul
 				}),
 				q(26327, {	-- Anvilmar the Hero
 					["isBreadcrumb"] = true,	-- for The Twilight's Hammer Revealed
 					["coord"] = { 49.8, 18.2, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1071,	-- Longbraid the Grim
+					["provider"] = { "n", 1071 },	-- Longbraid the Grim
 				}),
 				q(471,   {	-- Apprentice's Duties
 					["races"] = ALLIANCE_ONLY,
@@ -43,7 +43,7 @@ _.Zones =
 					["sourceQuests"] = { 25777 },	-- Onwards to Menethil
 					["coord"] = { 10.5, 55.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2104,	-- Captain Stoutfist
+					["provider"] = { "n", 2104 },	-- Captain Stoutfist
 					["g"] = {
 						i(59078),	-- Flarecrazed Cloak
 						i(59077),	-- Stoutfist Breastplate
@@ -65,7 +65,7 @@ _.Zones =
 					["sourceQuests"] = { 25800 },	-- When Life Gives You Crabs
 					["coord"] = { 11.0, 57.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41297,	-- Karl Boran
+					["provider"] = { "n", 41297 },	-- Karl Boran
 					["g"] = {
 						i(59082),	-- Merchant Marine Pauldrons
 						i(59081),	-- Merchant Marine Boots
@@ -78,7 +78,7 @@ _.Zones =
 				q(25211, {	-- Cleaning Hovel
 					["coord"] = { 49.9, 79.2, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41074,	-- Mountaineer Grugelm
+					["provider"] = { "n", 41074 },	-- Mountaineer Grugelm
 				}),
 				q(293,   {	-- Cleansing the Eye
 					["races"] = ALLIANCE_ONLY,
@@ -90,19 +90,19 @@ _.Zones =
 				q(25856, {	-- Crocolisk Hides
 					["coord"] = { 26.7, 26.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41433,	-- James Halloran
+					["provider"] = { "n", 41433 },	-- James Halloran
 				}),
 				q(25816, {	-- Cursed to Roam
 					["sourceQuests"] = { 25815 },	-- The Third Fleet
 					["coord"] = { 10.9, 59.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1239,	-- First Mate Fitzsimmons
+					["provider"] = { "n", 1239 },	-- First Mate Fitzsimmons
 				}),
 				q(25866, {	-- Dark Iron Trappers
 					["sourceQuests"] = { 25865 },	-- The Mosshide Job
 					["coord"] = { 26.9, 26.0, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41415,	-- Shilah Slabchisel
+					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 				}),
 				q(474,   {	-- Defeat Nek'rosh
 					["races"] = ALLIANCE_ONLY,
@@ -116,7 +116,7 @@ _.Zones =
 					["sourceQuests"] = { 26980 },	-- Swiftgear Station
 					["coord"] = { 26.9, 26.0, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41415,	-- Shilah Slabchisel
+					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 					["g"] = {
 						i(59095),	-- Swiftgear Belt
 						i(59094),	-- Highland Shoulderguards
@@ -128,13 +128,13 @@ _.Zones =
 					["sourceQuests"] = { 25726 },	-- A Dumpy Job
 					["coord"] = { 57.4, 71.4, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41129,	-- Surveyor Thurdan
+					["provider"] = { "n", 41129 },	-- Surveyor Thurdan
 				}),
 				q(25727, {	-- Drungeld Glowerglare
 					["sourceQuests"] = { 25721 },	-- Fight the Flood
 					["coord"] = { 57.5, 71.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41086,	-- Forba Slabchisel
+					["provider"] = { "n", 41086 },	-- Forba Slabchisel
 					["g"] = {
 						i(59072),	-- Addled Blotter Bracers
 						i(59071),	-- Bad Belt
@@ -146,7 +146,7 @@ _.Zones =
 					["sourceQuests"] = { 25723 },	-- Thresh Out of Luck
 					["coord"] = { 57.8, 71.4, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41128,	-- Dunlor Marblebeard
+					["provider"] = { "n", 41128 },	-- Dunlor Marblebeard
 				}),
 				q(26138, {	-- Ferilon Leafborn
 					["u"] = 1,	-- Never Available
@@ -155,13 +155,13 @@ _.Zones =
 					["sourceQuests"] = { 25770 },	-- Keg Run
 					["coord"] = { 57.5, 71.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41086,	-- Forba Slabchisel
+					["provider"] = { "n", 41086 },	-- Forba Slabchisel
 				}),
 				q(25939, {	-- For Peat's Sake
 					["sourceQuests"] = { 25926 },	-- Mired in Hatred
 					["coord"] = { 56.4, 39.9, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41615,	-- Ferilon Leafborn
+					["provider"] = { "n", 41615 },	-- Ferilon Leafborn
 					["g"] = {
 						i(59109),	-- Marsh Fire Legguards
 						i(59108),	-- Deep Moss Bracers
@@ -175,36 +175,36 @@ _.Zones =
 					["sourceQuests"] = { 25727 },	-- Drungeld Glowerglare
 					["coord"] = { 57.5, 71.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41086,	-- Forba Slabchisel
+					["provider"] = { "n", 41086 },	-- Forba Slabchisel
 				}),
 				q(25855, {	-- Gizmos and Gadgets
 					["sourceQuests"] = { 25854 },	-- I'll Call Him Bitey
 					["coord"] = { 26.8, 25.8, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41435,	-- Fradd Swiftgear
+					["provider"] = { "n", 41435 },	-- Fradd Swiftgear
 				}),
 				q(25867, {	-- Gnoll Escape
 					["sourceQuests"] = { 25865 },	-- The Mosshide Job
 					["coord"] = { 26.9, 26.0, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41415,	-- Shilah Slabchisel
+					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 				}),
 				q(25857, {	-- Hunting Horrorjaw
 					["sourceQuests"] = { 25856 },	-- Crocolisk Hides
 					["coord"] = { 26.7, 26.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41433,	-- James Halloran
+					["provider"] = { "n", 41433 },	-- James Halloran
 				}),
 				q(25854, {	-- I'll Call Him Bitey
 					["coord"] = { 26.8, 25.8, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41435,	-- Fradd Swiftgear
+					["provider"] = { "n", 41435 },	-- Fradd Swiftgear
 				}),
 				q(25735, {	-- Incendicite Ore
 					["sourceQuests"] = { 25725 },	-- Fenbush Berries
 					["coord"] = { 57.8, 71.5, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41128,	-- Dunlor Marblebeard
+					["provider"] = { "n", 41128 },	-- Dunlor Marblebeard
 					["g"] = {
 						i(59066),	-- Stabilized Incendicite Legguards
 						i(59065),	-- Sparkproof Gloves
@@ -217,27 +217,27 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- for Northfold Manor in Arathi Highlands
 					["coord"] = { 51.1, 9.78, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42160,	-- Thargas Anvilmar
+					["provider"] = { "n", 42160 },	-- Thargas Anvilmar
 				}),
 				q(25770, {	-- Keg Run
 					["sourceQuests"] = { 25395 },	-- The Stolen Keg
 					["isBreadcrumb"] = true,	-- for "Fight the Flood"
 					["coord"] = { 49.9, 79.2, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41075,	-- Mountaineer Rharen
+					["provider"] = { "n", 41075 },	-- Mountaineer Rharen
 				}),
 				q(25818, {	-- Lifting the Curse
 					["sourceQuests"] = { 25817 },	-- The Cursed Crew
 					["coord"] = { 15.2, 29.4, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41307,	-- First Mate Snellig
+					["provider"] = { "n", 41307 },	-- First Mate Snellig
 				}),
 				q(26196, {	-- Longbraid the Grim
 					["sourceQuests"] = { 25939 },	-- For Peat's Sake
 				--	possibly requires The Threat of Flame?
 					["coord"] = { 56.4, 40.0, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41615,	-- Ferilon Leafborn
+					["provider"] = { "n", 41615 },	-- Ferilon Leafborn
 				}),
 				q(647,   {	-- MacKreel's Moonshine
 					["u"] = 40,	-- Legacy Quests
@@ -245,7 +245,7 @@ _.Zones =
 				q(25926, {	-- Mired in Hatred
 					["coord"] = { 56.3, 40.4, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41503,	-- Rethiel the Greenwarden
+					["provider"] = { "n", 41503 },	-- Rethiel the Greenwarden
 				}),
 				q(25777, {	-- Onwards to Menethil
 					["sourceQuests"] = {
@@ -256,7 +256,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["coord"] = { 57.4, 71.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41086,	-- Forba Slabchisel
+					["provider"] = { "n", 41086 },	-- Forba Slabchisel
 				}),
 				q(296,   {	-- Ormer's Revenge
 					["u"] = 40,	-- Legacy Quests
@@ -271,7 +271,7 @@ _.Zones =
 					["sourceQuests"] = { 25800 },	-- When Life Gives You Crabs
 					["coord"] = { 11.0, 57.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41297,	-- Karl Boran
+					["provider"] = { "n", 41297 },	-- Karl Boran
 				}),
 				q(25805, {	-- Return the Statuette
 					["sourceQuests"] = { 25804 },	-- Search More Hovels
@@ -304,7 +304,7 @@ _.Zones =
 				q(25722, {	-- Sedimentary, My Dear
 					["coord"] = { 57.4, 71.4, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41129,	-- Surveyor Thurdan
+					["provider"] = { "n", 41129 },	-- Surveyor Thurdan
 					["g"] = {
 						i(59075),	-- Drunkard's Belt
 						i(59074),	-- Topsoil Bracers
@@ -315,7 +315,7 @@ _.Zones =
 				q(25850, {	-- Strike the Earth!
 					["coord"] = { 38.6, 39.5, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41412,	-- Ormer Ironbraid
+					["provider"] = { "n", 41412 },	-- Ormer Ironbraid
 				}),
 				q(26980, {	-- Swiftgear Station
 					["sourceQuests"] = {
@@ -327,19 +327,19 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- for Dinosaur Crisis
 					["coord"] = { 10.5, 55.6, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2104,	-- Captain Stoutfist
+					["provider"] = { "n", 2104 },	-- Captain Stoutfist
 				}),
 				q(26189, {	-- The Angerfang Menace
 					["sourceQuests"] = { 25849 },	-- When Archaeology Attacks
 					["coord"] = { 38.9, 39.3, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41411,	-- Prospector Whelgar
+					["provider"] = { "n", 41411 },	-- Prospector Whelgar
 				}),
 				q(26128, {	-- The Battle of Thandol Span
 					["sourceQuests"] = { 26127 },	-- The Twilight's Hammer Revealed
 					["coord"] = { 49.4, 17.2, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42160,	-- Thargas Anvilmar
+					["provider"] = { "n", 42160 },	-- Thargas Anvilmar
 					["g"] = {
 						i(59113),	-- Khaz Modan Pauldrons (Plate)
 						i(59112),	-- Khaz Modan Spaulders
@@ -352,7 +352,7 @@ _.Zones =
 				q(26120, {	-- The Crazed Dragonmaw
 					["coord"] = { 56.3, 39.8, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41612,	-- Huntress Iczelia
+					["provider"] = { "n", 41612 },	-- Huntress Iczelia
 					["g"] = {
 						i(59116),	-- Ring of Bravery
 						i(59115),	-- Greenwarden's Gift
@@ -363,7 +363,7 @@ _.Zones =
 					["sourceQuests"] = { 25816 },	-- Cursed to Roam
 					["coord"] = { 15.2, 29.4, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41307,	-- First Mate Snellig
+					["provider"] = { "n", 41307 },	-- First Mate Snellig
 					["g"] = {
 						i(59089),	-- Curse Lifter's Gloves
 						i(59088),	-- Snellig's Vest
@@ -392,7 +392,7 @@ _.Zones =
 					["coord"] = { 47.6, 65.6, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\inv_elemental_primal_water",
-					["qg"] = 41167,	-- Torrention
+					["provider"] = { "n", 41167 },	-- Torrention
 					["g"] = {
 						i(59069),	-- Slabchisel Boots
 						i(59068),	-- Waterproof Leggings
@@ -404,7 +404,7 @@ _.Zones =
 					["sourceQuests"] = { 25864 },	-- Dinosaur Crisis
 					["coord"] = { 26.9, 26.0, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41415,	-- Shilah Slabchisel
+					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 					["g"] = {
 						i(59098),	-- Ingot-Handler Gloves
 						i(59097),	-- Royal Treasury Courier's Shield
@@ -426,7 +426,7 @@ _.Zones =
 					},
 					["coord"] = { 49.9, 79.2, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41075,	-- Mountaineer Rharen
+					["provider"] = { "n", 41075 },	-- Mountaineer Rharen
 				}),
 				q(633,   {	-- The Thandol Span
 					["races"] = ALLIANCE_ONLY,
@@ -439,29 +439,29 @@ _.Zones =
 				q(25815, {	-- The Third Fleet
 					["coord"] = { 10.9, 59.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1239,	-- First Mate Fitzsimmons
+					["provider"] = { "n", 1239 },	-- First Mate Fitzsimmons
 				}),
 				q(25927, {	-- The Threat of Flame
 					["sourceQuests"] = { 25926 },	-- Mired in Hatred
 					["coord"] = { 56.3, 40.4, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41503,	-- Rethiel the Greenwarden
+					["provider"] = { "n", 41503 },	-- Rethiel the Greenwarden
 				}),
 				q(26127, {	-- The Twilight's Hammer Revealed
 					["sourceQuests"] = { 26327 },	-- Anvilmar the Hero
 					["coord"] = { 49.4, 17.2, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 42160,	-- Thargas Anvilmar
+					["provider"] = { "n", 42160 },	-- Thargas Anvilmar
 				}),
 				q(25723, {	-- Thresh Out of Luck
 					["coord"] = { 57.8, 71.4, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41128,	-- Dunlor Marblebeard
+					["provider"] = { "n", 41128 },	-- Dunlor Marblebeard
 				}),
 				q(25853, {	-- Tooling Around
 					["coord"] = { 38.8, 39.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41413,	-- Merrin Rockweaver
+					["provider"] = { "n", 41413 },	-- Merrin Rockweaver
 					["g"] = {
 						i(59105),	-- Antique Breastplate
 						i(59104),	-- Unbared Leggings
@@ -483,18 +483,18 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- for When Archaeology Attacks
 					["coord"] = { 26.9, 26.0, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41415,	-- Shilah Slabchisel
+					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 				}),
 				q(25849, {	-- When Archaeology Attacks
 					["sourceQuests"] = { 26981 },	-- Whelgar's Retreat
 					["coord"] = { 38.9, 39.3, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41411,	-- Prospector Whelgar
+					["provider"] = { "n", 41411 },	-- Prospector Whelgar
 				}),
 				q(25800, {	-- When Life Gives You Crabs
 					["coord"] = { 11.0, 57.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41297,	-- Karl Boran
+					["provider"] = { "n", 41297 },	-- Karl Boran
 				}),
 				q(26195, {	-- Who Wards The Greenwarden
 					["sourceQuests"] = {
@@ -504,7 +504,7 @@ _.Zones =
 					},
 					["coord"] = { 38.8, 39.3, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41411,	-- Prospector Whelgar
+					["provider"] = { "n", 41411 },	-- Prospector Whelgar
 				}),
 				q(25868, {	-- Yorla Darksnare
 					["sourceQuests"] = {
@@ -513,7 +513,7 @@ _.Zones =
 					},
 					["coord"] = { 26.9, 26.0, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41415,	-- Shilah Slabchisel
+					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 					["g"] = {
 						i(59102),	-- Old Guard's Hammer
 						i(59101),	-- Shilah's Blade

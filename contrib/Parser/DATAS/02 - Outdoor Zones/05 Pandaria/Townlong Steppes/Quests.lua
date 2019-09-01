@@ -16,22 +16,22 @@ _.Zones =
 				}),
 ]]--
 				q(31895, {	-- Better Off Dread
-					["qg"] = 61584,	-- Sentinel Commander Qipan
+					["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 					["isBreadcrumb"] = true,
 				}),
 				q(31065, {	-- Buried Beneath
-					["qg"] = 62274,	-- Taran Zhu
+					["provider"] = { "n", 62274 },	-- Taran Zhu
 					["sourceQuests"] = { 30980 },	-- Heroes of the Shado-Pan
 				}),
 				q(31120, {	-- Cheng Bo!
-					["qg"] = 63009,	-- Master Snowdrift
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
 					["isDaily"] = true,
 				}),
 				q(31032, {	-- Choking the Skies
 					["groups"] = {
 						i(88589),	-- Cremating Torch
 					},
-					["qg"] = 62573,	-- Marksman Ye
+					["provider"] = { "n", 62573 },	-- Marksman Ye
 				}),
 				--q(31123),	-- Chose Arms Warrior
 				--q(31124),	-- Chose Brewmaster
@@ -40,15 +40,15 @@ _.Zones =
 				--(31052),	-- Chose Priest
 				--q(31122),	-- Chose Prot Warrior
 				q(30898, {	-- Cutting the Swarm
-					["qg"] = 61066,	-- Taran Zhu
+					["provider"] = { "n", 61066 },	-- Taran Zhu
 					["sourceQuests"] = { 30895 },	-- Improvised Ammunition
 				}),
 				q(31043, {	-- Dark Arts
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(31199, {	-- Destroy the Siege Weapons!
-					["qg"] = 63614,	-- Ling of the Six Pools
+					["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 					["isDaily"] = true,
 				}),
 				q(30979, {	-- Devastation Below
@@ -63,14 +63,14 @@ _.Zones =
 						i(84594),	-- Farwatch Heavy Helm
 						i(84595),	-- Farwatch Armored Helm
 					},
-					["qg"] = 61020,	-- Hawkmaster Nurong
+					["provider"] = { "n", 61020 },	-- Hawkmaster Nurong
 					["sourceQuests"] = { 30978 },	-- Hostile Skies
 				}),
 				q(30778, {	-- Dust to Dust
-					["qg"] = 61261,	-- Ban Bearheart
+					["provider"] = { "n", 61261 },	-- Ban Bearheart
 				}),
 				q(31041, {	-- Egg Rescue!
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(30970, {	-- Enraged By Hatred
@@ -81,15 +81,15 @@ _.Zones =
 						i(83744),	-- Fleshripper Cape
 						i(83745),	-- Dusklight Drape
 					},
-					["qg"] = 62436,	-- Taoshi
+					["provider"] = { "n", 62436 },	-- Taoshi
 					["sourceQuests"] = { 30901 },	-- Along the Southern Front
 				}),
 				q(30953, {-- Fallen Sentinels
-					["qg"] = 61585,	-- Yak-Keeper Kyana
+					["provider"] = { "n", 61585 },	-- Yak-Keeper Kyana
 					["isDaily"] = true,
 				}),
 				q(30932, {	-- Father's Footsteps
-					["qg"] = 61584,	-- Sentinel Commander Qipan
+					["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 				}),
 				q(30769, {	-- First Assault
 					["groups"] = {
@@ -103,32 +103,32 @@ _.Zones =
 						i(88088),	-- Temple Guardian Pauldron
 						i(88087),	-- Palewind Pauldron
 					},
-					["qg"] = 60688,	-- Taran Zhu
+					["provider"] = { "n", 60688 },	-- Taran Zhu
 				}),
 				q(31201, {	-- Friends, Not Food!
-					["qg"] = 63614,	-- Ling of the Six Pools
+					["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 					["isDaily"] = true,
 				}),
 				q(31200, {	-- Fumigation
-					["qg"] = 63614,	-- Ling of the Six Pools
+					["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 					["isDaily"] = true,
 				}),
 				q(30785, {	-- Gao-Ran Battlefront
-					["qg"] = 61261,	-- Ban Beartheart
+					["provider"] = { "n", 61261 },	-- Ban Beartheart
 					["isBreadcrumb"] = true,	-- Hidden once completed Quests at Gao-Ran Battlefront
 					["sourceQuests"] = { 30784 },	-- The Point of No Return
 				}),
 				q(30927, {	-- Give Them Peace
-					["qg"] = 61584,	-- Sentinel Commander Qipan
+					["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 				}),
 				q(30788, {	-- Golgoss
-					["qg"] = 61584,	-- Sentinel Commander Qipan
+					["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 				}),
 				q(30790, {	-- Golgoss Hungers
-					["qg"] = 60622,	-- Orbiss
+					["provider"] = { "n", 60622 },	-- Orbiss
 				}),
 				q(31048, {	-- Grave Consequences
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(30977, {	-- Grounded Welcome
@@ -143,27 +143,27 @@ _.Zones =
 						i(84603),	-- Farwatch Heavy Chestpiece
 						i(84604),	-- Farwatch Armored Chestpiece
 					},
-					["qg"] = 62278,	-- Rensai Oakhide
+					["provider"] = { "n", 62278 },	-- Rensai Oakhide
 				}),
 				q(30783, {	-- Hatred Becomes Us
 					["groups"] = {
 						i(88584),	-- Totem of Harmony
 					},
-					["qg"] = 60864,	-- Yalia Sagewhisper
+					["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 				}),
 				q(30980, {	-- Heroes of the Shado-Pan
-					["qg"] = 62786,	-- Hawkmaster Nurong
+					["provider"] = { "n", 62786 },	-- Hawkmaster Nurong
 					["sourceQuests"] = { 30979 },	-- Devastation Below
 				}),
 				q(30978, {	-- Hostile Skies
 					["groups"] = {
 						i(88590),	-- Nurong's Gun
 					},
-					["qg"] = 61020,	-- Hawkmaster Nurong
+					["provider"] = { "n", 61020 },	-- Hawkmaster Nurong
 					["sourceQuests"] = { 30899 },	-- In Skilled Hands
 				}),
 				q(31045, {	-- Illusions Of The Past
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(30895, {	-- Improvised Ammunition
@@ -178,39 +178,39 @@ _.Zones =
 						i(88097),	-- Temple Guardian Pantaloons
 						i(88096),	-- Palewind Pantaloons
 					},
-					["qg"] = 61066,	-- Taran Zhu
+					["provider"] = { "n", 61066 },	-- Taran Zhu
 					["sourceQuests"] = { 30893 },	-- The Endless Swarm
 				}),
 				q(30958, {	-- In Battle's Shadow
-					["qg"] = 61583,	-- High Adept Paosha
+					["provider"] = { "n", 61583 },	-- High Adept Paosha
 					["isDaily"] = true,
 				}),
 				q(30777, {	-- In Search of Suna
-					["qg"] = 60687,	-- Ban Bearheart
+					["provider"] = { "n", 60687 },	-- Ban Bearheart
 					["sourceQuests"] = { 30776 },	-- Jung Duk
 				}),
 				q(30899, {	-- In Skilled Hands
-					["qg"] = 62274,	-- Taran Zhu
+					["provider"] = { "n", 62274 },	-- Taran Zhu
 					["sourceQuests"] = { 30976 },	-- Joining the Hunt
 				}),
 				q(31049, {	-- In Sprite Of Everything
-					["qgs"] = {
-						62304,	-- Ban Bearheart
-						62379,	-- Omnia Mage
-						62295,	-- Omnia Mage
-						62378,	-- Omnia Priest
+					["providers"] = {
+						{ "n", 62304 },	-- Ban Bearheart
+						{ "n", 62379 },	-- Omnia Mage
+						{ "n", 62295 },	-- Omnia Mage
+						{ "n", 62378 },	-- Omnia Priest
 					},
 					["isDaily"] = true,
 				}),
 				q(30897, {	-- In the Wrong Hands
-					["qg"] = 61880,	-- Initiate Chao
+					["provider"] = { "n", 61880 },	-- Initiate Chao
 				}),
 				q(30972, {	-- Joining the Fight
-					["qg"] = 62124,	-- Initiate Pao-Me
+					["provider"] = { "n", 62124 },	-- Initiate Pao-Me
 					["sourceQuests"] = { 30971 },	-- Taking Stock
 				}),
 				q(30976, {	-- Joining the Hunt
-					["qg"] = 62736,	-- Taran Zhu
+					["provider"] = { "n", 62736 },	-- Taran Zhu
 					["sourceQuests"] = { 30975 },	-- The Taking of Dusklight Bridge
 				}),
 				q(30776, {	-- Jung Duk
@@ -225,10 +225,10 @@ _.Zones =
 						i(83696),	-- Temple Guardian Girdle
 						i(83697),	-- Palewind Girdle
 					},
-					["qg"] = 60684,	-- Suna Silentstrike
+					["provider"] = { "n", 60684 },	-- Suna Silentstrike
 				}),
 				q(31063, {	-- Lao-Chin and Serevex
-					["qg"] = 62274,	-- Taran Zhu
+					["provider"] = { "n", 62274 },	-- Taran Zhu
 				}),
 				q(30781, {	-- Last Toll of the Yaungol
 					["groups"] = {
@@ -243,10 +243,10 @@ _.Zones =
 						i(83754),	-- Shado-Pan Ranger's Blade
 						i(83755),	-- Bearheart's Club
 					},
-					["qg"] = 60903,	-- Xiao Tu
+					["provider"] = { "n", 60903 },	-- Xiao Tu
 				}),
 				q(31046, {	-- Little Hatchlings
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(30793, {	-- Mists' Opportunity
@@ -261,16 +261,16 @@ _.Zones =
 						i(83660),	-- Temple Guardian Shoulders
 						i(83661),	-- Palewind Shoulders
 					},
-					["qg"] = 60622,	-- Orbiss
+					["provider"] = { "n", 60622 },	-- Orbiss
 				}),
 				q(31266, {	-- Mogu Incursions
-					["qg"] = 63009,	-- Master Snowdrift
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
 				}),
 				q(30931, {	-- My Father's Crossbow
-					["qg"] = 61539,	-- Ku-Mo
+					["provider"] = { "n", 61539 },	-- Ku-Mo
 				}),
 				q(30922, {	-- Natural Antiseptic
-					["qg"] = 61625,	-- Provisioner Bamfu
+					["provider"] = { "n", 61625 },	-- Provisioner Bamfu
 				}),
 				q(30925, {	-- Niuzao's Price
 					["groups"] = {
@@ -280,28 +280,28 @@ _.Zones =
 						i(83739),	-- Sigil of Patience
 						i(83740),	-- Sigil of Devotion
 					},
-					["qg"] = 61581,	-- Ogo the Younger
+					["provider"] = { "n", 61581 },	-- Ogo the Younger
 					["sourceQuests"] = { 30924 },	-- The Wisdom of Niuzao
 				}),
 				q(31064, {-- Nurong and Rothek
-					["qg"] = 62274,	-- Taran Zhu
+					["provider"] = { "n", 62274 },	-- Taran Zhu
 				}),
 				q(31042, {	-- Onyx Hearts
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(30792, {	-- Orbiss Fades
-					["qg"] = 60622,	-- Orbiss
+					["provider"] = { "n", 60622 },	-- Orbiss
 				}),
 				q(30955, {	-- Paying Tribute
-					["qg"] = 61583,	-- High Adept Paosha
+					["provider"] = { "n", 61583 },	-- High Adept Paosha
 					["isDaily"] = true,
 				}),
 				q(30771, {	-- Perfect Pitch
-					["qg"] = 60688,	-- Taran Zhu
+					["provider"] = { "n", 60688 },	-- Taran Zhu
 				}),
 				q(30930, {	-- Pick a Yak
-					["qg"] = 61161,	-- Bluesaddle
+					["provider"] = { "n", 61161 },	-- Bluesaddle
 					["g"] = {
 						i(82467),	-- Ruthers' Harness
 					},
@@ -310,26 +310,26 @@ _.Zones =
 					["groups"] = {
 						i(88583),	-- Ban's Bag of Bombs
 					},
-					["qg"] = 60687,	-- Ban Bearheart
+					["provider"] = { "n", 60687 },	-- Ban Bearheart
 					["sourceQuests"] = { 30771 },	-- Perfect Pitch
 				}),
 				--q(30974),	-- Raising Spirits -- Never made it out of beta
 				q(30774, {	-- Ranger Rescue
-					["qg"] = 60684,	-- Suna Silentstrike
+					["provider"] = { "n", 60684 },	-- Suna Silentstrike
 				}),
 				q(30960, {	-- Returning from the Pass
-					["qg"] = 61468,	-- Taoshi
+					["provider"] = { "n", 61468 },	-- Taoshi
 					["sourceQuests"] = {
 						30888,	-- Breach in the Defenses
 						30890,	-- The Restless Watch
 					},
 				}),
 				q(31061, {	-- Riding the Storm
-					["qgs"] = {
-						62304,	-- Ban Bearheart
-						62295,	-- Omnia Mage
-						62379,	-- Omnia Mage
-						62378,	-- Omnia Priest
+					["providers"] = {
+						{ "n", 62304 },	-- Ban Bearheart
+						{ "n", 62295 },	-- Omnia Mage
+						{ "n", 62379 },	-- Omnia Mage
+						{ "n", 62378 },	-- Omnia Priest
 					},
 					["isDaily"] = true,
 				}),
@@ -337,10 +337,10 @@ _.Zones =
 					["groups"] = {
 						i(88585),	-- Dislodged Stinger
 					},
-					["qg"] = 61470,	-- Septi the Herbalist
+					["provider"] = { "n", 61470 },	-- Septi the Herbalist
 				}),
 				q(30770, {	-- Running Rampant
-					["qg"] = 60688,	-- Taran Zhu
+					["provider"] = { "n", 60688 },	-- Taran Zhu
 				}),
 				q(30772, {	-- Seeing Red
 					["groups"] = {
@@ -354,70 +354,70 @@ _.Zones =
 						i(83678),	-- Temple Guardian Legguards
 						i(83679),	-- Palewind Legguards
 					},
-					["qg"] = 60684,	-- Suna Silentstrike
+					["provider"] = { "n", 60684 },	-- Suna Silentstrike
 					["sourceQuests"] = { 30769 },	-- First Assault
 				}),
 				q(30933, {	-- Seeking Father
-					["qg"] = 65341,	-- Ku-Mo
+					["provider"] = { "n", 65341 },	-- Ku-Mo
 				}),
 				q(30923, {	-- Set the Mantid Back
-					["qg"] = 61482,	-- Tai Ho
+					["provider"] = { "n", 61482 },	-- Tai Ho
 				}),
 				q(30779, {	-- Slaying the Scavengers
-					["qg"] = 61261,	-- Ban Bearheart
+					["provider"] = { "n", 61261 },	-- Ban Bearheart
 				}),
 				q(31116, {	-- Spirit Dust
-					["qg"] = 63009,	-- Master Snowdrift
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
 					["isDaily"] = true,
 				}),
 				q(30782, {	-- Spiteful Spirits
-					["qg"] = 61261,	-- Ban Bearheart
+					["provider"] = { "n", 61261 },	-- Ban Bearheart
 				}),
 				q(31040, {	-- Spiteful Sprites
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(31196, {	-- Sra'vess Wetwork
-					["qg"] = 63614,	-- Ling of the Six Pools
+					["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 					["isDaily"] = true,
 				}),
 				q(31277, {	-- Surprise Attack!
 					["groups"] = {
 						i(87768),	-- Reins of the Onyx Cloud Serpent
 					},
-					["qg"] = 63009,	-- Master Snowdrift
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
 					["sourceQuests"] = { 31266 },	-- Mogu Incursions
 				}),
 				q(30971, {	-- Taking Stock
-					["qg"] = 62124,	-- Initiate Pao-Me
+					["provider"] = { "n", 62124 },	-- Initiate Pao-Me
 				}),
 				q(30981, {	-- Taoshi and Korvexxis
-					["qg"] = 62274,	-- Taran Zhu
+					["provider"] = { "n", 62274 },	-- Taran Zhu
 				}),
 				q(31204, {	-- Target of Opportunity: Sra'thik Hivelord
-					["qgs"] = {
-						63614,	-- Ling of the Six Pools
-						63623,	-- Wu Kao Assassin
-						63624,	-- Wu Kao Hawkmaster
-						63622,	-- Wu Kao Rogue
+					["providers"] = {
+						{ "n", 63614 },	-- Ling of the Six Pools
+						{ "n", 63623 },	-- Wu Kao Assassin
+						{ "n", 63624 },	-- Wu Kao Hawkmaster
+						{ "n", 63622 },	-- Wu Kao Rogue
 					},
 					["isDaily"] = true,
 				}),
 				q(31203, {	-- Target of Opportunity: Sra'thik Swarmlord
-					["qgs"] = {
-						63614,	-- Ling of the Six Pools
-						63623,	-- Wu Kao Assassin
-						63624,	-- Wu Kao Hawkmaster
-						63622,	-- Wu Kao Rogue
+					["providers"] = {
+						{ "n", 63614 },	-- Ling of the Six Pools
+						{ "n", 63623 },	-- Wu Kao Assassin
+						{ "n", 63624 },	-- Wu Kao Hawkmaster
+						{ "n", 63622 },	-- Wu Kao Rogue
 					},
 					["isDaily"] = true,
 				}),
 				q(31393, {	-- Temple of the White Tiger
-					["qg"] = 66247,	-- Tigermaster Liu-Do
+					["provider"] = { "n", 66247 },	-- Tigermaster Liu-Do
 					["races"] = HORDE_ONLY,
 				}),
 				q(31392, {	-- Temple of the White Tiger
-					["qg"] = 66247,	-- Tigermaster Liu-Do
+					["provider"] = { "n", 66247 },	-- Tigermaster Liu-Do
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30900, {	-- Terror of the Dread Wastes
@@ -428,37 +428,37 @@ _.Zones =
 						i(83729),	-- Ring of Norvakess
 						i(83730),	-- Battlefront Band
 					},
-					["qg"] = 61021,	-- Taoshi
+					["provider"] = { "n", 61021 },	-- Taoshi
 					["sourceQuests"] = { 30898 },	-- Cutting the Swarm
 				}),
 				q(30959, {	-- The Big Guns
-					["qg"] = 61581,	-- Ogo the Younger
+					["provider"] = { "n", 61581 },	-- Ogo the Younger
 					["isDaily"] = true,
 				}),
 				q(31197, {	-- The Bigger They Come...
-					["qg"] = 63614,	-- Ling of the Six Pools
+					["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 					["isDaily"] = true,
 				}),
 				q(31127, {	-- The Challenger's Ring: Chao the Voice
-					["qg"] = 63009,	-- Master Snowdrift
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
 				}),
 				q(31220, {	-- The Challenger's Ring: Hawkmaster Nurong
-					["qg"] = 63614,	-- Ling of the Six Pools
+					["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 				}),
 				q(31128, {	-- The Challenger's Ring: Lao-Chin the Iron Belly
-					["qg"] = 63009,	-- Master Snowdrift
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
 				}),
 				q(31038, {	-- The Challenger's Ring: Snow Blossom
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 				}),
 				q(31221, {	-- The Challenger's Ring: Tenwu of the Red Smoke
-					["qg"] = 63614,	-- Ling of the Six Pools
+					["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 				}),
 				q(31104, {	-- The Challenger's Ring: Yalia Sagewhisper
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 				}),
 				q(31118, {	-- The Deadtalker Cipher
-					["qg"] = 63009,	-- Master Snowdrift
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
 					["isDaily"] = true,
 				}),
 				q(30815, {	-- The Death of Me
@@ -470,7 +470,7 @@ _.Zones =
 						i(83760),	-- Contorted Blade
 						i(83761),	-- Mist-Shaman's Barbs
 					},
-					["qg"] = 60857,	-- Orbiss
+					["provider"] = { "n", 60857 },	-- Orbiss
 					["sourceQuests"] = {
 						30789,	-- Arconiss
 						30788,	-- Golgoss
@@ -488,15 +488,15 @@ _.Zones =
 						i(83705),	-- Temple Guardian Gauntlets
 						i(83706),	-- Palewind Gauntlets
 					},
-					["qg"] = 61066,	-- Taran Zhu
+					["provider"] = { "n", 61066 },	-- Taran Zhu
 					["sourceQuests"] = { 30960 },	-- Returning from the Pass
 				}),
 				q(31119, {	-- The Enemy of My Enemy... Is Still My Enemy!
-					["qg"] = 63009,	-- Master Snowdrift
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
 					["isDaily"] = true,
 				}),
 				q(30775, {	-- The Exile
-					["qg"] = 60735,	-- Katak the Defeated
+					["provider"] = { "n", 60735 },	-- Katak the Defeated
 				}),
 				q(30963, {	-- The Field Armorer
 					["groups"] = {
@@ -510,18 +510,18 @@ _.Zones =
 						i(83687),	-- Temple Guardian Warboots
 						i(83688),	-- Palewind Warboots
 					},
-					["qg"] = 61625,	-- Provisioner Bamfu
+					["provider"] = { "n", 61625 },	-- Provisioner Bamfu
 				}),
 				q(31039, {	-- The Mogu Menace
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(31106, {	-- The Mogu Menace
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(31105, {	-- The Mogu Menace
-					["qg"] = 62304,	-- Ban Bearheart
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
 					["isDaily"] = true,
 				}),
 				q(30921, {	-- The Motives of the Mantid
@@ -536,10 +536,10 @@ _.Zones =
 						i(83714),	-- Temple Guardian Armplates
 						i(83715),	-- Palewind Bracers
 					},
-					["qg"] = 61482,	-- Tai Ho
+					["provider"] = { "n", 61482 },	-- Tai Ho
 				}),
 				q(30957, {	-- The Overwhelming Swarm
-					["qg"] = 61584,	-- Sentinel Commander Qipan
+					["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 					["isDaily"] = true,
 				}),
 				q(30784, {	-- The Point of No Return
@@ -554,7 +554,7 @@ _.Zones =
 						i(83669),	-- Temple Guardian Chestpiece
 						i(83670),	-- Palewind Chestpiece
 					},
-					["qg"] = 61261,	-- Ban Bearheart
+					["provider"] = { "n", 61261 },	-- Ban Bearheart
 				}),
 				q(30890, {	-- The Restless Watch
 					["groups"] = {
@@ -564,10 +564,10 @@ _.Zones =
 						i(84613),	-- Taoshi's Signet
 						i(84614),	-- Seal of the Restless Watch
 					},
-					["qg"] = 61468,	-- Taoshi
+					["provider"] = { "n", 61468 },	-- Taoshi
 				}),
 				q(31688, {	-- The Search for Restless Leng
-					["qg"] = 62278,	-- Rensai Oakhide
+					["provider"] = { "n", 62278 },	-- Rensai Oakhide
 				}),
 				q(30968, {	-- The Sha of Hatred
 					["groups"] = {
@@ -581,7 +581,7 @@ _.Zones =
 						i(83651),	-- Temple Guardian Helm
 						i(83652),	-- Palewind Helm
 					},
-					["qg"] = 62275,	-- Taran Zhu
+					["provider"] = { "n", 62275 },	-- Taran Zhu
 					["sourceQuests"] = {
 						31063,	-- Lao-Chin and Serevex
 						31064,	-- Nurong and Rothek
@@ -589,12 +589,12 @@ _.Zones =
 					},
 				}),
 				q(30956, {	-- The Siege Swells
-					["qg"] = 61580,	-- Ogo the Elder
+					["provider"] = { "n", 61580 },	-- Ogo the Elder
 					["isDaily"] = true,
 				}),
 				q(32681, {	-- The Storm Gathers
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 70360,	-- Vareesa Windrunner
+					["provider"] = { "n", 70360 },	-- Vareesa Windrunner
 					["g"] = {
 						i(95567),	-- Kirin Tor Beacon (TOY!)
 					},
@@ -602,7 +602,7 @@ _.Zones =
 				q(32680, {	-- The Storm Gathers
 					["sourceQuests"] = { 32678 },	-- Thunder Calls
 					["races"] = HORDE_ONLY,
-					["qg"] = 70358,	-- Scout Captain Elsia
+					["provider"] = { "n", 70358 },	-- Scout Captain Elsia
 					["g"] = {
 						i(95568),	-- Sunreaver Beacon (TOY!)
 					},
@@ -615,7 +615,7 @@ _.Zones =
 						i(83724),	-- Kor'thik Seal
 						i(83725),	-- Fleshrender Ring
 					},
-					["qg"] = 61016,	-- Lao-Chin the Iron Belly
+					["provider"] = { "n", 61016 },	-- Lao-Chin the Iron Belly
 				}),
 				q(30926, {	-- The Terrible Truth
 					["groups"] = {
@@ -625,10 +625,10 @@ _.Zones =
 						i(83734),	-- Medallion of the Catacombs
 						i(83735),	-- Symbol of the Catacombs
 					},
-					["qg"] = 61580,	-- Ogo the Elder
+					["provider"] = { "n", 61580 },	-- Ogo the Elder
 				}),
 				q(31656, {	-- The Threat in the South
-					["qg"] = 62802,	-- Taoshi
+					["provider"] = { "n", 62802 },	-- Taoshi
 					["sourceQuests"] = { 30968 },	-- The Sha of Hatred
 				}),
 				q(30787, {	-- The Torches
@@ -639,22 +639,22 @@ _.Zones =
 						i(84608),	-- Pendant of Revenge
 						i(84609),	-- Amulet of Longing
 					},
-					["qg"] = 60857,	-- Orbiss
+					["provider"] = { "n", 60857 },	-- Orbiss
 					["sourceQuests"] = { 30786 },	-- A Spear Through My Side, A Chain Through My Soul
 				}),
 				q(30952, {	-- The Unending Siege
-					["qg"] = 61580,	-- Ogo the Elder
+					["provider"] = { "n", 61580 },	-- Ogo the Elder
 					["isDaily"] = true,
 				}),
 				q(30924, {	-- The Wisdom of Niuzao
-					["qg"] = 61482,	-- Tai Ho
+					["provider"] = { "n", 61482 },	-- Tai Ho
 					["sourceQuests"] = {
 						30923,	-- Set the Mantid Back
 						30921,	-- The Motives of the Mantid
 					},
 				}),
 				q(30896, {	-- Thieves and Troublemakers
-					["qg"] = 61881,	-- Initiate Feng
+					["provider"] = { "n", 61881 },	-- Initiate Feng
 				}),
 				q(31687, {	-- Thinning the Sik'thik
 					["groups"] = {
@@ -664,26 +664,26 @@ _.Zones =
 						i(83719),	-- Crossroads Pendant
 						i(83720),	-- Watchpost Amulet
 					},
-					["qg"] = 62278,	-- Rensai Oakhide
+					["provider"] = { "n", 62278 },	-- Rensai Oakhide
 				}),
 				q(31110, {	-- Through the Portal
-					["qg"] = 62810,	-- Moshu the Arcane
+					["provider"] = { "n", 62810 },	-- Moshu the Arcane
 				}),
 				q(30780, {	-- Totemic Research
-					["qg"] = 60864,	-- Yalia Sagewhisper
+					["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 				}),
 				--q(31053),	-- Tracking Event: Started Shado-Pan Dailies
 				q(30889, {	-- Trap Setting
-					["qg"] = 61467,	-- Mao the Lookout
+					["provider"] = { "n", 61467 },	-- Mao the Lookout
 				}),
 				q(30891, {	-- Treatment for the Troops
-					["qg"] = 61470,	-- Septi the Herbalist
+					["provider"] = { "n", 61470 },	-- Septi the Herbalist
 				}),
 				--q(31125),	-- Unlocked Chao
 				--q(31126),	-- Unlocked Lao-Chen
 				--q(31054),	-- Unlocked Yalia Sagewhisper
 				q(30887, {	-- Unwelcome Intruders
-					["qg"] = 61469,	-- Taoshi
+					["provider"] = { "n", 61469 },	-- Taoshi
 					["sourceQuests"] = { 30884 },	-- Behind the Battlefront
 				}),
 				q(30973, {	-- Up In Flames
@@ -698,22 +698,22 @@ _.Zones =
 						i(88106),	-- Temple Guardian Waistband
 						i(88105),	-- Palewind Waistband
 					},
-					["qg"] = 62273,	-- Taran Zhu
+					["provider"] = { "n", 62273 },	-- Taran Zhu
 				}),
 				q(31117, {	-- Uruk!
-					["qg"] = 63009,	-- Master Snowdrift
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
 					["isDaily"] = true,
 				}),
 				q(30827, {	-- What Lies Beneath
-					["qg"] = 60864,	-- Yalia Sagewhisper
+					["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 					["sourceQuests"] = { 30780 },	-- Totemic Research
 				}),
 				q(31062, {	-- When The Dead Speak
-					["qgs"] = {
-						62304,	-- Ban Bearheart
-						62295,	-- Omnia Mage
-						62379,	-- Omnia Mage
-						62378,	-- Omnia Priest
+					["providers"] = {
+						{ "n", 62304 },	-- Ban Bearheart
+						{ "n", 62295 },	-- Omnia Mage
+						{ "n", 62379 },	-- Omnia Mage
+						{ "n", 62378 },	-- Omnia Priest
 					},
 					["isDaily"] = true,
 				}),

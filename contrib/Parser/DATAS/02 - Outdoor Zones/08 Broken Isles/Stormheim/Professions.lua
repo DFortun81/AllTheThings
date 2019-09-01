@@ -200,7 +200,7 @@ _.Zones =
 						},
 						["requireSkill"] = 393,	-- Skinning
 						["coord"] = { 45.7, 25.6, 634 },
-						["qg"] = 98721,	-- Seymour
+						["provider"] = { "n", 98721 },	-- Seymour
 						["groups"] = {
 							i(130102),	-- Mother's Skinning Knife (TOY!)
 						},
@@ -209,13 +209,13 @@ _.Zones =
 						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
 						["requireSkill"] = 393,	-- Skinning
 						["coord"] = { 45.7, 25.6, 634 },
-						["qg"] = 98721,	-- Seymour
+						["provider"] = { "n", 98721 },	-- Seymour
 					}),
 					q(40148, {	-- Red-Eyed Revenge
 						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
 						["requireSkill"] = 393,	-- Skinning
 						["coord"] = { 45.7, 25.6, 634 },
-						["qg"] = 98721,	-- Seymour
+						["provider"] = { "n", 98721 },	-- Seymour
 					}),
 					{	-- Skinning Technique: Unbroken Claw
 						["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw

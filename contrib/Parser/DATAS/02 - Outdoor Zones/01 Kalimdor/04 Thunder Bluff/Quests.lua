@@ -7,7 +7,7 @@ _.Zones =
 		m(88, {	-- Thunder Bluff
 			n(-17, {	-- Quests
 				q(2968, {	-- A Future Task
-					["qg"] = 3978,	-- Sage Truthseeker
+					["provider"] = { "n", 3978 },	-- Sage Truthseeker
 					["coord"] = { 34.4, 46.9, 88 },
 					["sourceQuest"] = 2967,	-- Return to Thunder Bluff
 					["races"] = HORDE_ONLY,
@@ -19,7 +19,7 @@ _.Zones =
 					},
 				}),
 				q(27283, {	-- A Journey to Moonglade
-					["qg"] = 3034,	-- Sheal Runetotem
+					["provider"] = { "n", 3034 },	-- Sheal Runetotem
 					["coord"] = { 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -27,7 +27,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(5088, {	-- Arikara
-					["qg"] = 4046,	-- Magatha Grimtotem
+					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["coord"] = { 69.9, 30.9, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
@@ -39,7 +39,7 @@ _.Zones =
 					},
 				}),
 				q(27277, {	-- An Audience with Ureda
-					["qg"] = 3047,	-- Archmage Shymm
+					["provider"] = { "n", 3047 },	-- Archmage Shymm
 					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -47,7 +47,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(1102, {	-- A Vengeful Fate
-					["qg"] = 4451,	-- Auld Stonespire
+					["provider"] = { "n", 4451 },	-- Auld Stonespire
 					["coord"] = { 36.2, 59.8 , 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -59,7 +59,7 @@ _.Zones =
 					},
 				}),
 				q(1845, {	-- Brutal Helm
-					["qg"] = 6410,	-- Orm Stonehoof
+					["provider"] = { "n", 6410 },	-- Orm Stonehoof
 					["coord"] = { 38.9, 56.0, 88 },
 					["sourceQuest"] = 1844,	-- Chimaeric Horn
 					["classes"] = { 1 },	-- Warrior
@@ -70,7 +70,7 @@ _.Zones =
 					},
 				}),
 				q(1844, {	-- Chimaeric Horn
-					["qg"] = 6410,	-- Orm Stonehoof
+					["provider"] = { "n", 6410 },	-- Orm Stonehoof
 					["coord"] = { 38.9, 56.0, 88 },
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
 					["classes"] = { 1 },	-- Warrior
@@ -78,7 +78,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(1049, {	-- Compendium of the Fallen
-					["qg"] = 3978,	-- Sage Truthseeker
+					["provider"] = { "n", 3978 },	-- Sage Truthseeker
 					["coord"] = { 34.6, 47.4, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
@@ -90,9 +90,9 @@ _.Zones =
 					},
 				}),
 				q(27334, {	-- Dark Cleric Cecille
-					["qgs"] = {
-						3045,	-- Malakai Cross
-						43870,	-- Seer Beryl
+					["providers"] = {
+						{ "n", 3045 },	-- Malakai Cross
+						{ "n", 43870 },	-- Seer Beryl
 					},
 					["coords"] = {
 						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
@@ -104,19 +104,19 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(1205, {	-- Deadmire
-					["qg"] = 3441,	-- Melor Stonehoof
+					["provider"] = { "n", 3441 },	-- Melor Stonehoof
 					["coord"] = { 61.2, 80.6, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(31036, {	-- Enemies Below
-					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
+					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 					["coord"] = { 60.3, 51.7, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
 				}),
 				q(1136, {	-- Frostmaw
-					["qg"] = 3441,	-- Melor Stonehoof
+					["provider"] = { "n", 3441 },	-- Melor Stonehoof
 					["coord"] = { 61.2, 80.6, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
@@ -126,7 +126,7 @@ _.Zones =
 					},
 				}),
 				q(27304, {	-- Follow the Sun
-					["qg"] = 43795,	-- Aponi Brightmane
+					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = { 6 },	-- Tauren
@@ -134,14 +134,14 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(768, {    -- Gathering Leather
-					["qg"] = 3050,    -- Veren Tallstrider
+					["provider"] = { "n", 3050 },    -- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, 88 },
 					["requireSkill"] = 393,    -- Skinning
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 				}),
 				q(27281, {	-- Grezz Ragefist
-					["qg"] = 3042,	-- Sark Ragetotem
+					["provider"] = { "n", 3042 },	-- Sark Ragetotem
 					["coord"] = { 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -149,7 +149,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(27278, {	-- Grimshot's Call
-					["qg"] = 3039,	-- Holt Thunderhorn
+					["provider"] = { "n", 3039 },	-- Holt Thunderhorn
 					["coord"] = { 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -157,9 +157,9 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(27335, {	-- Journey to Orgrimmar
-					["qgs"] = {
-						3045,	-- Malakai Cross
-						43870,	-- Seer Beryl
+					["providers"] = {
+						{ "n", 3045 },	-- Malakai Cross
+						{ "n", 43870 },	-- Seer Beryl
 					},
 					["coords"] = {
 						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
@@ -171,7 +171,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(769, {	-- Kodo Hide Bag
-					["qg"] = 3050,	-- Veren Tallstrider
+					["provider"] = { "n", 3050 },	-- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, 88 },
 					["requireSkill"] = 165,    -- Leatherworking
 					["races"] = HORDE_ONLY,
@@ -181,7 +181,7 @@ _.Zones =
 					},
 				}),
 				q(27282, {	-- Kranosh's Behest
-					["qg"] = 43881,	-- Delano Morisett
+					["provider"] = { "n", 43881 },	-- Delano Morisett
 					["coord"] = { 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -190,7 +190,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(914, {	-- Leaders of the Fang
-					["qg"] = 5770,	-- Nara Wildmane
+					["provider"] = { "n", 5770 },	-- Nara Wildmane
 					["coord"] = { 75.8, 30.8, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
@@ -201,7 +201,7 @@ _.Zones =
 					},
 				}),
 				q(3562, {	-- Magatha's Payment to Jediga
-					["qg"] = 4046,	-- Magatha Grimtotem
+					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["coord"] = { 69.9, 30.9, 88 },
 					["sourceQuest"] = 3518,	-- Delivery to Magatha
 					["races"] = HORDE_ONLY,
@@ -209,9 +209,9 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(28323, {	-- Meet with Brother Silverhallow
-					["qgs"] = {
-						3045,	-- Malakai Cross
-						43870,	-- Seer Beryl
+					["providers"] = {
+						{ "n", 3045 },	-- Malakai Cross
+						{ "n", 43870 },	-- Seer Beryl
 					},
 					["coords"] = {
 						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
@@ -223,7 +223,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28304, {	-- Meet with Dark Cleric Cecille
-					["qg"] = 3045,	-- Malakai Cross
+					["provider"] = { "n", 3045 },	-- Malakai Cross
 					["coord"] = { 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = { 5 },	-- Undead
@@ -231,7 +231,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28290, {	-- Meet with Grezz Ragefist
-					["qgs"] = 3042,	-- Sark Ragetotem
+					["provider"] = { "n", 3042 },	-- Sark Ragetotem
 					["coord"] = { 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -239,7 +239,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28299, {	-- Meet with Kranosh
-					["qg"] = 43881,	-- Delano Morisett
+					["provider"] = { "n", 43881 },	-- Delano Morisett
 					["coord"] = { 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -247,7 +247,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28303, {	-- Meet with Master Pyreanor
-					["qg"] = 43795,	-- Aponi Brightmane
+					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = { 10 },	-- Blood Elf
@@ -255,7 +255,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28297, {	-- Meet with Ormak Grimshot 
-					["qg"] = 3039,	-- Holt Thunderhorn
+					["provider"] = { "n", 3039 },	-- Holt Thunderhorn
 					["coord"] = { 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -263,7 +263,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28302, {	-- Meet with Sunwalker Atohmo
-					["qg"] = 43795,	-- Aponi Brightmane
+					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = { 6 },	-- Tauren
@@ -271,7 +271,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28301, {	-- Meet with Terga Earthbreaker
-					["qg"] = 51639,	-- Kador Cloudsong
+					["provider"] = { "n", 51639 },	-- Kador Cloudsong
 					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -279,9 +279,9 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28307, {	-- Meet with Tyelis
-					["qgs"] = {
-						3045,	-- Malakai Cross
-						43870,	-- Seer Beryl
+					["providers"] = {
+						{ "n", 3045 },	-- Malakai Cross
+						{ "n", 43870 },	-- Seer Beryl
 					},
 					["coords"] = {
 						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
@@ -293,7 +293,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28300, {	-- Meet with Ureda
-					["qg"] = 3047,	-- Archmage Shymm
+					["provider"] = { "n", 3047 },	-- Archmage Shymm
 					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -301,14 +301,14 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28289, {	-- Moonglade Calls
-					["qg"] = 3034,	-- Sheal Runetotem
+					["provider"] = { "n", 3034 },	-- Sheal Runetotem
 					["coord"] = { 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 50,
 				}),
 				q(2965, {	-- Portents of Uldum
-					["qg"] = 3978,	-- Sage Truthseeker
+					["provider"] = { "n", 3978 },	-- Sage Truthseeker
 					["coord"] = { 34.8, 47.8, 88 },
 					["sourceQuest"] = 2440,	-- The Platinum Discs
 					["races"] = HORDE_ONLY,
@@ -316,7 +316,7 @@ _.Zones =
 					["u"] = 40,
 				}),				
 				q(27292, {	-- Return to Krog
-					["qg"] = 4943,	-- Mosarn
+					["provider"] = { "n", 4943 },	-- Mosarn
 					["coord"] = { 54.1, 80.7, 88 },
 					["sourceQuest"] = 27258,	-- The Black Shield
 					["races"] = HORDE_ONLY,
@@ -328,14 +328,14 @@ _.Zones =
 					},
 				}),
 				q(6364, {	-- Return to Varg
-					["qg"] = 2995,	-- Tal
+					["provider"] = { "n", 2995 },	-- Tal
 					["coord"] = { 46.8, 50.0, 88 },
 					["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
 					["races"] = { 6 },	-- Tauren
 					["lvl"] = 4,
 				}),
 				q(776, {	-- Rites of the Earthmother
-					["qg"] = 3057,	-- Cairne Bloodhoof
+					["provider"] = { "n", 3057 },	-- Cairne Bloodhoof
 					["coord"] = { 60.3, 51.7, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
@@ -345,7 +345,7 @@ _.Zones =
 					},
 				}),
 				q(28164, {	-- Seek Brother Silverhallow
-					["qg"] = 43870,	-- Seer Beryl
+					["provider"] = { "n", 43870 },	-- Seer Beryl
 					["coord"] = { 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = { 9 },	-- Goblin
@@ -353,7 +353,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(27298, {	-- Seek Out Master Pyreanor
-					["qg"] = 43795,	-- Aponi Brightmane
+					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = { 10 },	-- Blood Elf
@@ -361,9 +361,9 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(27332, {	-- Seek the Shadow-Walker
-					["qgs"] = {
-						3045,	-- Malakai Cross
-						43870,	-- Seer Beryl
+					["providers"] = {
+						{ "n", 3045 },	-- Malakai Cross
+						{ "n", 43870 },	-- Seer Beryl
 					},
 					["coords"] = {
 						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
@@ -375,7 +375,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(2966, {	-- Seeing What Happens
-					["qg"] = 5770,	-- Nara Wildmane
+					["provider"] = { "n", 5770 },	-- Nara Wildmane
 					["coord"] = { 75.6, 31.6, 88 },
 					["sourceQuest"] = 2965,	-- Portents of Uldum
 					["races"] = HORDE_ONLY,
@@ -383,7 +383,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(962, {	-- Serpentbloom
-					["qg"] = 3419,	-- Apothecary Zamah
+					["provider"] = { "n", 3419 },	-- Apothecary Zamah
 					["coord"] = { 22.6, 20.2, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
@@ -393,14 +393,14 @@ _.Zones =
 					},
 				}),
 				q(6363, {	-- Tal the Wind Rider Master
-					["qg"] = 8359,	-- Ahanu
+					["provider"] = { "n", 8359 },	-- Ahanu
 					["coord"] = { 45.5, 55.8, 88 },
 					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
 					["races"] = { 6 },	-- Tauren
 					["lvl"] = 4,
 				}),
 				q(27280, {	-- The Earthbreaker Calls
-					["qg"] = 51639,	-- Kador Cloudsong
+					["provider"] = { "n", 51639 },	-- Kador Cloudsong
 					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -408,7 +408,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(2440, {	-- The Platinum Discs
-					["qg"] = 3978,	-- Sage Truthseeker
+					["provider"] = { "n", 3978 },	-- Sage Truthseeker
 					["coord"] = { 34.8, 47.8, 88 },
 					["sourceQuest"] = 2280,	-- The Platinum Discs
 					["races"] = HORDE_ONLY,
@@ -419,9 +419,9 @@ _.Zones =
 					},
 				}),
 				q(27331, {	-- The Seer's Call
-					["qgs"] = {
-						3045,	-- Malakai Cross
-						43870,	-- Seer Beryl
+					["providers"] = {
+						{ "n", 3045 },	-- Malakai Cross
+						{ "n", 43870 },	-- Seer Beryl
 					},
 					["coords"] = {
 						{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
@@ -433,19 +433,19 @@ _.Zones =
 					["lvl"] = 20,
 				}),			
 				q(264, {	-- Until Death Do Us Part
-					["qg"] = 5543,	-- Clarice Foster
+					["provider"] = { "n", 5543 },	-- Clarice Foster
 					["coord"] = { 28.4, 25.5, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(26397, {	-- Walk With The Earth Mother
-					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
+					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 					["coord"] = { 60.3, 51.7, 88 },
 					["races"] = { 6 },	-- Tauren
 					["lvl"] = 4,
 				}),
 				q(24540, {	-- War Dance
-					["qg"] = 36648,	-- Baine Bloodhoof
+					["provider"] = { "n", 36648 },	-- Baine Bloodhoof
 					["coord"] = { 60.3, 51.7, 88 },
 					["sourceQuest"] = 24550,	-- Journey into Thunder Bluff
 					["races"] = { 6 },	-- Tauren

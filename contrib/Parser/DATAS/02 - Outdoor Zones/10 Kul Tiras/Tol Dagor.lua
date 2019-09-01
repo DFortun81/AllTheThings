@@ -22,7 +22,7 @@ _.Zones =
 						a(ach(12582, {	-- Come Sail Away
 							["groups"] = {
 								q(47098, {	-- Out Like Flynn
-									["qg"] = 121239,	-- Flynn Fairwind
+									["provider"] = { "n", 121239 },	-- Flynn Fairwind
 									["sourceQuests"] = { 51341 },	-- Tol Dagor
 									["coord"] = { 47.3, 46.2 },
 								}),

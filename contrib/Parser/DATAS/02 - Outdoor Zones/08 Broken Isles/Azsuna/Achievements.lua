@@ -16,14 +16,14 @@ _.Zones =
 								["classes"] = { 5 },	-- Priest
 								["coord"] = { 58.5, 37.2, 630 },
 								["lvl"] = 103,
-								["qg"] = 110686,	-- Zabra Hexx
+								["provider"] = { "n", 110686 },	-- Zabra Hexx
 							}),
 							q(42137, {	-- Champion: Yalia Sagewhisper
 								["sourceQuests"] = { 43376 },	-- Problem Salver
 								["classes"] = { 5 },	-- Priest
 								["coord"] = { 47.1, 43.9, 630 },
 								["lvl"] = 103,
-								["qg"] = 110687,	-- Yalia Sagewhisper
+								["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 								["g"] = {
 									follower(871),	-- Yalia Sagewhisper
 								},
@@ -33,7 +33,7 @@ _.Zones =
 								["classes"] = { 5 },	-- Priest
 								["coord"] = { 47.1, 43.9, 630 },
 								["lvl"] = 103,
-								["qg"] = 110686,	-- Zabra Hexx
+								["provider"] = { "n", 110686 },	-- Zabra Hexx
 								["g"] = {
 									follower(870),	-- Zabra Hexx
 								},
@@ -44,14 +44,14 @@ _.Zones =
 									42138,	-- Champion: Zabra Hexx
 								},
 								["classes"] = { 5 },
-								["qg"] = 110687,	-- Yalia Sagewhisper
+								["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 							}),
 							q(43374, {	-- Murloc Mind Control
 								["sourceQuests"] = { 43372 },	-- The Best and Brightest
 								["classes"] = { 5 },	-- Priest
 								["coord"] = { 58.5, 37.2, 630 },
 								["lvl"] = 103,
-								["qg"] = 110686,	-- Zabra Hexx
+								["provider"] = { "n", 110686 },	-- Zabra Hexx
 							}),
 							q(43376, {	-- Problem Salver
 								["sourceQuests"] = {
@@ -61,7 +61,7 @@ _.Zones =
 								["classes"] = { 5 },	-- Priest
 								["coord"] = { 58.5, 37.2, 630 },
 								["lvl"] = 103,
-								["qg"] = 112487,	-- Yalia Sagewhisper
+								["provider"] = { "n", 112487 },	-- Yalia Sagewhisper
 							}),
 						},
 					}),
@@ -238,7 +238,7 @@ _.Zones =
 									["itemID"] = 139522,		-- Bloody Note (Item)
 									--["questID"] = 42255,		-- Bloody Note (Quest)
 									["description"] = "Pirates in southern-east Azsuna.",
-									["qgs"] = {108133, 108139, 108153, 108146}
+									["crs"] = {108133, 108139, 108153, 108146}
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -246,7 +246,7 @@ _.Zones =
 									["itemID"] = 139520,		-- Fevered Plea (Item)
 									--["questID"] = 42250,		-- Fevered Plea (Quest)
 									["description"] = "Murlocs at the southern tip in Azsuna.",
-									["qgs"] = {111598, 111630, 111586 }
+									["crs"] = {111598, 111630, 111586 }
 								},
 								{
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
@@ -254,7 +254,7 @@ _.Zones =
 									["itemID"] = 139521,		-- Singed Note (Item)
 									--["questID"] = 42245,		-- Singed Note (Quest)
 									["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",
-									["qgs"] = {88101, 88099, 108146}
+									["crs"] = {88101, 88099, 108146}
 								},
 							}
 						})),

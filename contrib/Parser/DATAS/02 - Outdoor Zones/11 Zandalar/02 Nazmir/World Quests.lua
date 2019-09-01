@@ -262,7 +262,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54136, {	-- March on the Marsh (Faction Assault WQ)
-						["qg"] = 135446,	-- Vindicator Jaelaana <7th Legion Emissary>
+						["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -279,7 +279,7 @@ _.Zones =
 					}),
 					q(52754, {	-- Marshdwellers
 						["lvl"] = 120,
-						["qg"] = 141529,	-- Lozu
+						["provider"] = { "n", 141529 },	-- Lozu
 						["collectible"] = false,
 						["groups"] = {
 							crit(13, {	-- Marshdwellers
@@ -318,7 +318,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52799, {	-- Pack Leader
-						["qg"] = 141799,	-- Grady Prett
+						["provider"] = { "n", 141799 },	-- Grady Prett
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {
@@ -369,7 +369,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54135, {	-- Romp in the Swamp (Faction Assault WQ)
-						["qg"] = 135459,	-- Provisioner Lija <Talanji's Expedition Emissary>
+						["provider"] = { "n", 135459 },	-- Provisioner Lija <Talanji's Expedition Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,

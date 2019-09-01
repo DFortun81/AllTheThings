@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["groups"] = {
 			n(-17, {
 				i(127877, {	-- Bendy Glass Tubes
-					["qg"] = 105824,	-- Grimoira
+					["provider"] = { "n", 105824 },	-- Grimoira
 					["requireSkill"] = 171,	-- Alchemy
 					["groups"] = {
 						q(39343),	-- Vault of the Wardens: Bendy Glass Tubes

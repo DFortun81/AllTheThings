@@ -19,7 +19,7 @@ _.Instances = { tier(1, {	-- Classic
 					["altQuests"] = {
 						7487,	-- Attunement to the Core [Original??]
 					},
-					["qg"] = 14387,	-- Lothos Riftwaker
+					["provider"] = { "n", 14387 },	-- Lothos Riftwaker
 					["coord"] = { 54.2, 83.3, 35 },	-- Blackrock Mountain
 					["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
 					["lvl"] = 55,
@@ -30,7 +30,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["questID"] = 7785,	-- Examine the Vessel
-					["qg"] = 14347,	-- Highlord Demitrian
+					["provider"] = { "n", 14347 },	-- Highlord Demitrian
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
 					["maps"] = { 81 },	-- Silithus
@@ -50,7 +50,7 @@ _.Instances = { tier(1, {	-- Classic
 				{
 					["questID"] = 7787,	-- Rise, Thunderfury!
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-					["qg"] = 14347,	-- Highlord Demitrian
+					["provider"] = { "n", 14347 },	-- Highlord Demitrian
 					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
 					["maps"] = { 81 },	-- Silithus
 					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
@@ -66,7 +66,7 @@ _.Instances = { tier(1, {	-- Classic
 						7521,	-- Thunderaan the Windseeker [Original?]
 					},
 					["sourceQuest"] = 7785,	-- Examine the Vessel
-					["qg"] = 14347,	-- Highlord Demitrian
+					["provider"] = { "n", 14347 },	-- Highlord Demitrian
 					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
 					["maps"] = { 81 },	-- Silithus
 					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior

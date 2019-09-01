@@ -33,7 +33,7 @@ _.Zones =
 				q(37203, {	-- Ashlei
 					["isDaily"] = true,
 					["coord"] = { 50.0, 31.2, 539 },
-					["qg"] = 87124,	-- Ashlei
+					["provider"] = { "n", 87124 },	-- Ashlei
 					["g"] = {
 						i(116415),	-- Shiny Pet Charm
 					},

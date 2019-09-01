@@ -8,17 +8,17 @@ _.Zones =
 			n(-34, {	-- World Quests
 				q(48832, {	-- Admiral Rel'var
 					["lvl"] = 110,
-					["qg"] = 127090,	-- Admiral Rel'var
+					["provider"] = { "n", 127090 },	-- Admiral Rel'var
 					["collectible"] = false,
 				}),
 				q(48837, {	-- All-Seer Xanarian
 					["lvl"] = 110,
-					["qg"] = 127096,	-- All-Seer Xanarian
+					["provider"] = { "n", 127096 },	-- All-Seer Xanarian
 					["collectible"] = false,
 				}),
 				q(48931, {	-- Behemoths Awakened
 					["lvl"] = 110,
-					["qgs"] = {
+					["crs"] = {
 						127670,	-- Hadrox
 						127671,	-- Radix
 					},
@@ -26,18 +26,18 @@ _.Zones =
 				}),
 				q(49054, {	-- Bloat
 					["lvl"] = 110,
-					["qg"] = 128020,	-- Bloat
+					["provider"] = { "n", 128020 },	-- Bloat
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(47561, {	-- Blistermaw
 					["lvl"] = 110,
-					["qg"] = 122958,	-- Blistermaw
+					["provider"] = { "n", 122958 },	-- Blistermaw
 					["collectible"] = false,
 				}),
 				q(48867, {	-- Chief Alchemist Munculus
 					["lvl"] = 110,
-					["qg"] = 127376,	-- Chief Alchemist Munculus
+					["provider"] = { "n", 127376 },	-- Chief Alchemist Munculus
 					["collectible"] = false,
 				}),
 				q(48637, {	-- Cleansing Fire
@@ -46,7 +46,7 @@ _.Zones =
 				}),
 				q(48831, {	-- Commander Texlaz
 					["lvl"] = 110,
-					["qg"] = 127084,	-- Commander Texlaz
+					["provider"] = { "n", 127084 },	-- Commander Texlaz
 					["collectible"] = false,
 				}),
 				q(48777, {	-- Den of Fiends
@@ -55,13 +55,13 @@ _.Zones =
 				}),
 				q(49055, {	-- Earseeker
 					["lvl"] = 110,
-					["qg"] = 128021,	-- Earseeker
+					["provider"] = { "n", 128021 },	-- Earseeker
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(47566, {	-- Gar'zoth
 					["lvl"] = 110,
-					["qg"] = 122999,	-- Gar'zoth
+					["provider"] = { "n", 122999 },	-- Gar'zoth
 					["collectible"] = false,
 				}),
 				q(48780, {	-- Gladius
@@ -70,17 +70,17 @@ _.Zones =
 				}),
 				q(48835, {	-- Houndmaster Kerrax
 					["lvl"] = 110,
-					["qg"] = 127288,	-- Houndmaster Kerrax
+					["provider"] = { "n", 127288 },	-- Houndmaster Kerrax
 					["collectible"] = false,
 				}),
 				q(48830, {	-- Inquisitor Vethroz
 					["lvl"] = 110,
-					["qg"] = 126946,	-- Inquisitor Vethroz
+					["provider"] = { "n", 126946 },	-- Inquisitor Vethroz
 					["collectible"] = false,
 				}),
 				q(48828, {	-- Lieutenant Xakaar
 					["lvl"] = 110,
-					["qg"] = 126254,	-- Lieutenant Xakaar
+					["provider"] = { "n", 126254 },	-- Lieutenant Xakaar
 					["collectible"] = false,
 				}),
 				q(48983, {	-- Mining Regulation
@@ -89,13 +89,13 @@ _.Zones =
 				}),
 				q(49057, {	-- Minixis
 					["lvl"] = 110,
-					["qg"] = 128023,	-- Minixis
+					["provider"] = { "n", 128023 },	-- Minixis
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(47552, {	-- Mistress Il'thendra
 					["lvl"] = 110,
-					["qg"] = 122947,	-- Mistress Il'thendra
+					["provider"] = { "n", 122947 },	-- Mistress Il'thendra
 					["collectible"] = false,
 				}),
 				q(48875, {	-- Mix It Up
@@ -108,29 +108,29 @@ _.Zones =
 				}),
 				q(49058, {	-- One-of-Many
 					["lvl"] = 110,
-					["qg"] = 128024,	-- One-of-Many
+					["provider"] = { "n", 128024 },	-- One-of-Many
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(49056, {	-- Pilfer
 					["lvl"] = 110,
-					["qg"] = 128022,	-- Pilfer
+					["provider"] = { "n", 128022 },	-- Pilfer
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(48467, {	-- Puscilla
 					["lvl"] = 110,
-					["qg"] = 126040,	-- Puscilla
+					["provider"] = { "n", 126040 },	-- Puscilla
 					["collectible"] = false,
 				}),
 				q(48833, {	-- Ritual Completion
 					["lvl"] = 110,
-					["qg"] = 127097,	-- Everburning Doombringer
+					["provider"] = { "n", 127097 },	-- Everburning Doombringer
 					["collectible"] = false,
 				}),
 				q(48958, {	-- Ritual Interruption
 					["lvl"] = 110,
-					["qg"] = 127811,	-- Everburning Doombringer
+					["provider"] = { "n", 127811 },	-- Everburning Doombringer
 					["collectible"] = false,
 				}),
 				q(48526, {	-- Scuttled
@@ -143,7 +143,7 @@ _.Zones =
 				}),
 				q(48514, {	-- Slumbering Behemoths
 					["lvl"] = 110,
-					["qgs"] = {
+					["crs"] = {
 						126164,	-- Hadrox
 						126196,	-- Radix
 					},
@@ -175,33 +175,33 @@ _.Zones =
 				}),
 				q(48827, {	-- Varga
 					["lvl"] = 110,
-					["qg"] = 126208,	-- Varga
+					["provider"] = { "n", 126208 },	-- Varga
 					["collectible"] = false,
 				}),
 				q(48466, {	-- Ven'orn
 					["lvl"] = 110,
-					["qg"] = 126115,	-- Ven'orn
+					["provider"] = { "n", 126115 },	-- Ven'orn
 					["collectible"] = false,
 				}),
 				q(48866, {	-- Void Warden Valsuran
 					["lvl"] = 110,
-					["qg"] = 127300,	-- Void Warden Valsuran
+					["provider"] = { "n", 127300 },	-- Void Warden Valsuran
 					["collectible"] = false,
 				}),
 				q(48465, {	-- Vrax'thul
 					["lvl"] = 110,
-					["qg"] = 126199,	-- Vrax'thul
+					["provider"] = { "n", 126199 },	-- Vrax'thul
 					["collectible"] = false,
 				}),
 				q(49053, {	-- Watcher
 					["lvl"] = 110,
-					["qg"] = 128019,	-- Watcher
+					["provider"] = { "n", 128019 },	-- Watcher
 					["filterID"] = 101,	-- Battle Pet
 					["collectible"] = false,
 				}),
 				q(48836, {	-- Watcher Aival
 					["lvl"] = 110,
-					["qg"] = 127291,	-- Watcher Aival
+					["provider"] = { "n", 127291 },	-- Watcher Aival
 					["collectible"] = false,
 				}),
 				q(48624, {	-- Who Let The Dogs Out?
@@ -230,12 +230,12 @@ _.Zones =
 				}),
 				q(48834, {	-- Worldsplitter Skuul
 					["lvl"] = 110,
-					["qg"] = 127118,	-- Worldsplitter Skuul
+					["provider"] = { "n", 127118 },	-- Worldsplitter Skuul
 					["collectible"] = false,
 				}),
 				q(48829, {	-- Wrath-Lord Yarez
 					["lvl"] = 110,
-					["qg"] = 126338,	-- Wrath-Lord Yarez
+					["provider"] = { "n", 126338 },	-- Wrath-Lord Yarez
 					["collectible"] = false,
 				}),
 			}),

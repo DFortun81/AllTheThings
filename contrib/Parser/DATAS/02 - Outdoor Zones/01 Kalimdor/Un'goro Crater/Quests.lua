@@ -31,13 +31,13 @@ _.Zones =
 				{	-- A Gnome's Assistance
 					["questID"] = 3941,
 					["u"] = 40,
-					["qg"] = 8737,	-- Linken
+					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3914,	-- Linken's Sword
 				},
 				{	-- A Little Help From My Friends
 					["questID"] = 4491,
 					["u"] = 40,
-					["qg"] = 9999,	-- Ringo
+					["provider"] = { "n", 9999 },	-- Ringo
 					["groups"] = {
 						un(2, i(11910)),	-- Bejeweled Legguards
 						un(2, i(11913)),	-- Clayridge Helm
@@ -46,7 +46,7 @@ _.Zones =
 				},
 				{	-- A Little Help From My Friends
 					["questID"] = 24735,
-					["qg"] = 9999,	-- Ringo
+					["provider"] = { "n", 9999 },	-- Ringo
 					["coord"] = { 51.9, 49.8, 78 },
 					["sourceQuest"] = 24734,	-- Lost!
 					["isBreadcrumb"] = true,
@@ -79,7 +79,7 @@ _.Zones =
 				},
 				{	-- A Tale of Two Shovels
 					["questID"] = 24709,
-					["qg"] = 9272,	-- Spark Nilminer
+					["provider"] = { "n", 9272 },	-- Spark Nilminer
 					["coord"] = { 31.8, 50.2, 78 },
 					["sourceQuest"] = 24708,	-- The Fossil-Finder 3000
 					["groups"] = {
@@ -90,7 +90,7 @@ _.Zones =
 				},
 				{	-- A Taste of Their Own Medicine
 					["questID"] = 45055,
-					["qg"] = 115923,	-- Ko'Zan
+					["provider"] = { "n", 115923 },	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, 78 },
 					["requireSkill"] = 164,	-- Blacksmithing
 					["sourceQuests"] = {
@@ -110,7 +110,7 @@ _.Zones =
 				},
 				{	-- Aberrant Flora
 					["questID"] = 24855,
-					["qg"] = 38263,	-- Ithis Moonwarden
+					["provider"] = { "n", 38263 },	-- Ithis Moonwarden
 					["coord"] = { 76.4, 48.3, 78 },
 					["sourceQuest"] = 24687,	-- Bouquets of Death
 					["groups"] = {
@@ -120,14 +120,14 @@ _.Zones =
 				},
 				{	-- Adventures in Archaeology -- TODO:: determine the specific questIDs that unlock this
 					["questID"] = 24698,
-					["qg"] = 38270,	-- Nolen Tacker
+					["provider"] = { "n", 38270 },	-- Nolen Tacker
 					["coord"] = { 55.0, 60.5, 78 },
 					["description"] = "Available after completing all quests at Mossy Pile.",
 					["isBreadcrumb"] = true,
 				},
 				{	-- An Important Lesson
 					["questID"] = 24703,
-					["qg"] = 38237,	-- Maximillian of Northshire
+					["provider"] = { "n", 38237 },	-- Maximillian of Northshire
 					["coord"] = { 30.6, 51.1, 78 },
 				},
 				{	-- Beware of Pterrordax
@@ -146,7 +146,7 @@ _.Zones =
 				},
 				{	-- Blazerunner
 					["questID"] = 24690,
-					["qg"] = 9270,	-- Williden Marshal
+					["provider"] = { "n", 9270 },	-- Williden Marshal
 					["coord"] = { 55.0, 62.2, 78 },
 					["sourceQuest"] = 24740,	-- Volcanic Activity
 					["groups"] = {
@@ -157,25 +157,25 @@ _.Zones =
 				},
 				{	-- Bouquets of Death
 					["questID"] = 24687,
-					["qg"] = 38263,	-- Ithis Moonwarden
+					["provider"] = { "n", 38263 },	-- Ithis Moonwarden
 					["coord"] = { 76.4, 48.3, 78 },
 					["sourceQuest"] = 24689,	-- Flowing to the North
 				},
 				{	-- Carried on the Waves
 					["questID"] = 24686,
-					["qg"] = 38274,	-- Garl Stormclaw
+					["provider"] = { "n", 38274 },	-- Garl Stormclaw
 					["coord"] = { 70.8, 76.6, 78 },
 					["sourceQuest"] = 24719,	-- Claws of White
 				},
 				{	-- Chasing A-Me 01
 					["questID"] = 24714,
-					["qg"] = 9618,	-- Karna Remtravel
+					["provider"] = { "n", 9618 },	-- Karna Remtravel
 					["coord"] = { 43.4, 40.9, 78 },
 					["sourceQuest"] = 24701,	-- Marshal's Refusew
 				},
 				{	-- Claws of White
 					["questID"] = 24719,
-					["qg"] = 38274,	-- Garl Stormclaw
+					["provider"] = { "n", 38274 },	-- Garl Stormclaw
 					["coord"] = { 70.8, 76.6, 78 },
 					["sourceQuest"] = 24854,	-- Finding Stormclaw
 					["groups"] = {
@@ -195,13 +195,13 @@ _.Zones =
 				},
 				{	-- Crystals of Power
 					["questID"] = 24720,
-					["qg"] = 9117,	-- J.D. Collie
+					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["coord"] = { 54.1, 62.5, 78 },
 				},
 				{	-- Dadanga is Hungry!
 					["questID"] = 5150,
 					["u"] = 40,
-					["qg"] = 9274,	-- Dadanga
+					["provider"] = { "n", 9274 },	-- Dadanga
 					["repeatable"] = true,
 					["groups"] = {
 						un(2, i(15699, {	-- Small Brown-wrapped Package
@@ -221,7 +221,10 @@ _.Zones =
 				},
 				{	-- Damsels Were Made to be Saved
 					["questID"] = 24705,
-					["qgs"] = { 38255, 38237 },	-- Maximillian of Northshire (2 phases)
+					["providers"] = {
+						{ "n", 38255 },	-- Maximillian of Northshire
+						{ "n", 38237 },	-- Maximillian of Northshire
+					},
 					["coord"] = { 30.6, 51.1, 78 },
 					["sourceQuest"] = 24703,	-- An Important Lesson
 				},
@@ -251,7 +254,7 @@ _.Zones =
 				},
 				{	-- Ever Watching From Above
 					["questID"] = 24695,
-					["qg"] = 38502,	-- Nablya
+					["provider"] = { "n", 38502 },	-- Nablya
 					["coord"] = { 83.5, 46.0, 78 },
 					["sourceQuest"] = 24694,	-- The Shaper's Terrace
 					["groups"] = {
@@ -262,30 +265,30 @@ _.Zones =
 				},
 				{	-- Finding Stormclaw
 					["questID"] = 24854,
-					["qg"] = 38269,	-- Zen'Aliri
+					["provider"] = { "n", 38269 },	-- Zen'Aliri
 					["coord"] = { 55.7, 60.5, 78 },
 					["isBreadcrumb"] = true,
 				},
 				{	-- Finding the Source
 					["questID"] = 24742,
-					["qg"] = 10302,	-- Krakle
+					["provider"] = { "n", 10302 },	-- Krakle
 					["coord"] = { 55.3, 62.4, 78 },
 				},
 				{	-- Flowing to the North
 					["questID"] = 24689,
-					["qg"] = 38274,	-- Garl Stormclaw
+					["provider"] = { "n", 38274 },	-- Garl Stormclaw
 					["coord"] = { 70.8, 76.6, 78 },
 					["sourceQuest"] = 24686,	-- Carried on the Waves
 				},
 				{	-- Gorishi Grub
 					["questID"] = 13903,
-					["qg"] = 34320,	-- Venomhide Hatchling
+					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				},
 				{	-- Gormashh the Glutinous
 					["questID"] = 24699,
-					["qg"] = 38276,	-- Tara
+					["provider"] = { "n", 38276 },	-- Tara
 					["coord"] = { 43.1, 40.9, 78 },
 					["sourceQuest"] = 24737,	-- Super Sticky
 					["groups"] = {
@@ -295,13 +298,13 @@ _.Zones =
 				},
 				{	-- Hard to Harvest
 					["questID"] = 24700,
-					["qg"] = 38276,	-- Tara
+					["provider"] = { "n", 38276 },	-- Tara
 					["coord"] = { 43.2, 40.8, 78 },
 					["sourceQuest"] = 24693,	-- Mossy Pile
 				},
 				{	-- How to Make Meat Fresh Again
 					["questID"] = 24697,
-					["qg"] = 38270,	-- Nolen Tacker
+					["provider"] = { "n", 38270 },	-- Nolen Tacker
 					["coord"] = { 55.0, 60.5, 78 },
 					["groups"] = {
 						i(53563),	-- Stegodon Tusk Mace
@@ -312,20 +315,20 @@ _.Zones =
 				},
 				{	-- Hungry, Hungry Hatchling
 					["questID"] = 13889,
-					["qg"] = 34320,	-- Venomhide Hatchling
+					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				},
 				{	-- It's a Secret to Everybody
 					["questID"] = 3908,
 					["u"] = 40,
-					["qg"] = 8737,	-- Linken
+					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3845,	-- It's a Secret to Everybody
 				},
 				{	-- It's Dangerous to Go Alone
 					["questID"] = 3962,
 					["u"] = 40,
-					["qg"] = 8737,	-- Linken
+					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3961,	-- Linken's Adventure -- todo: Add this quest line. Maybe blizzard will bring it back!
 					["groups"] = {
 						un(2, i(11905)),	-- Linken's Boomerang
@@ -336,18 +339,18 @@ _.Zones =
 				{	-- Linken's Adventure
 					["questID"] = 3961,
 					["u"] = 40,
-					["qg"] = 9117,	-- J.D. Collie
+					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuest"] = 4005,	-- Aquementas
 				},
 				{	-- Linken's Memory
 					["questID"] = 3942,
 					["u"] = 40,
-					["qg"] = 9117,	-- J.D. Collie
+					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuest"] = 3941,	-- A Gnome's Assistance
 				},
 				{	-- Lost!
 					["questID"] = 24734,
-					["qg"] = 9997,	-- Spraggle Frock
+					["provider"] = { "n", 9997 },	-- Spraggle Frock
 					["coord"] = { 54.9, 62.6, 78 },
 					["sourceQuest"] = 24794,	-- Speak with Spraggle
 					["altQuests"] = {
@@ -357,13 +360,13 @@ _.Zones =
 				{	-- Lost!
 					["questID"] = 4492,
 					["u"] = 40,
-					["qg"] = 9997,	-- Spraggle Frock
+					["provider"] = { "n", 9997 },	-- Spraggle Frock
 				--	["coord"] = { 54.9, 62.6, 78 },
 				--	["sourceQuest"] = 24794,	-- Speak with Spraggle
 				},
 				{	-- Marshal's Refuse
 					["questID"] = 24701,
-					["qg"] = 38277,	-- Doreen
+					["provider"] = { "n", 38277 },	-- Doreen
 					["coord"] = { 43.2, 40.9, 78 },
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["groups"] = {
@@ -374,7 +377,7 @@ _.Zones =
 				},
 				{	-- Mossy Pile
 					["questID"] = 24693,
-					["qg"] = 10977,	-- Quixxil
+					["provider"] = { "n", 10977 },	-- Quixxil
 					["coord"] = { 54.8, 63.8, 78 },
 					["sourceQuest"] = 24691,	-- Peculiar Delicacies
 				},
@@ -404,19 +407,19 @@ _.Zones =
 				},
 				{	-- Peculiar Delicacies
 					["questID"] = 24691,
-					["qg"] = 10977,	-- Quixxil
+					["provider"] = { "n", 10977 },	-- Quixxil
 					["coord"] = { 54.8, 63.8, 78 },
 					["sourceQuest"] = 24690,	-- Blazerunner
 				},
 				{	-- Poached, Scrambled, Or Raw?
 					["questID"] = 13904,
-					["qg"] = 34320,	-- Venomhide Hatchling
+					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				},
 				{	-- Repairing A-Me 01
 					["questID"] = 24715,
-					["qg"] = 9623,	-- A-Me 01
+					["provider"] = { "n", 9623 },	-- A-Me 01
 					["coord"] = { 63.8, 19.7, 78 },
 					["sourceQuest"] = 24714,	-- Chasing A-Me 01
 				},
@@ -431,7 +434,7 @@ _.Zones =
 				},
 				{	-- Reverse Blacksmithing
 					["questID"] = 45051,
-					["qg"] = 115923,	-- Ko'Zan
+					["provider"] = { "n", 115923 },	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, 78 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 45044,	-- Weapon No More
@@ -440,7 +443,7 @@ _.Zones =
 				{	-- Roll the Bones
 					["questID"] = 3882,
 					["u"] = 40,
-					["qg"] = 9272,	-- Spark Nilminer
+					["provider"] = { "n", 9272 },	-- Spark Nilminer
 					["groups"] = {
 						un(2, i(11908)),	-- Archaeologist's Quarry Boots
 						un(2, i(11909)),	-- Excavator's Utility Belt
@@ -448,7 +451,7 @@ _.Zones =
 				},
 				{	-- Roll the Bones
 					["questID"] = 24730,
-					["qg"] = 9272,	-- Spark Nilminer
+					["provider"] = { "n", 9272 },	-- Spark Nilminer
 					["coord"] = { 31.8, 50.2, 78 },
 					["sourceQuest"] = 24698,	-- Adventures in Archaeology
 					["groups"] = {
@@ -458,7 +461,7 @@ _.Zones =
 				},
 				{	-- Saving My Head
 					["questID"] = 45057,
-					["qg"] = 115923,	-- Ko'Zan
+					["provider"] = { "n", 115923 },	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, 78 },
 					["sourceQuest"] = 45055,	-- A Taste of Their Own Medicine
 					["requireSkill"] = 164,	-- Blacksmithing
@@ -468,13 +471,13 @@ _.Zones =
 				},
 				{	-- Searing Roc Feathers
 					["questID"] = 13905,
-					["qg"] = 34320,	-- Venomhide Hatchling
+					["provider"] = { "n", 34320 },	-- Venomhide Hatchling
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				},
 				{	-- Serving A-Me 01
 					["questID"] = 24926,
-					["qg"] = 9623,	-- A-Me 01
+					["provider"] = { "n", 9623 },	-- A-Me 01
 					["coord"] = { 63.8, 19.7, 78 },
 					["sourceQuest"] = 24715,	-- Repairing A-Me 01
 					["groups"] = {
@@ -486,7 +489,7 @@ _.Zones =
 				{	-- Shizzle's Flyer
 					["questID"] = 4503,
 					["u"] = 40,
-					["qg"] = 9998,	-- Shizzle
+					["provider"] = { "n", 9998 },	-- Shizzle
 					["groups"] = {
 						un(2, i(11915)),	-- Shizzle's Drizzle Blocker
 						un(2, i(11916)),	-- Shizzle's Muzzle
@@ -495,7 +498,7 @@ _.Zones =
 				},
 				{	-- Shizzle's Flyer
 					["questID"] = 24736,
-					["qg"] = 9998,	-- Shizzle
+					["provider"] = { "n", 9998 },	-- Shizzle
 					["coord"] = { 43.4, 41.3, 78 },
 					["description"] = "Picking up or completing this quest will make |cFFFFD700Speak with Spraggle|r unavailable, making its quest chain and rewards unobtainable.",
 					["groups"] = {
@@ -506,27 +509,27 @@ _.Zones =
 				},
 				{	-- Speak With Spraggle
 					["questID"] = 24794,
-					["qg"] = 10302,	-- Krakle
+					["provider"] = { "n", 10302 },	-- Krakle
 					["coord"] = { 55.3, 62.4, 78 },
 					["sourceQuest"] = 24742,	-- Finding the Source
 					["isBreadcrumb"] = true,
 				},
 				{	-- Super Sticky
 					["questID"] = 24737,
-					["qg"] = 38276,	-- Tara
+					["provider"] = { "n", 38276 },	-- Tara
 					["coord"] = { 43.2, 40.8, 78 },
 					["sourceQuest"] = 24693,	-- Mossy Pile
 				},
 				{	-- The Apes of Un'Goro
 					["questID"] = 24717,
-					["qg"] = 38275,	-- Gremix
+					["provider"] = { "n", 38275 },	-- Gremix
 					["coord"] = { 43.2, 41.0, 78 },
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
 				},
 				{	-- The Bait for Lar'korwi
 					["questID"] = 4292,
 					["u"] = 40,
-					["qg"] = 9619,	-- Torwa Pathfinder
+					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["sourceQuest"] = 4291,	-- The Scent of Lar'korwi
 					["groups"] = {
 						un(2, i(11882)),	-- Outrider Leggings
@@ -535,7 +538,7 @@ _.Zones =
 				},
 				{	-- The Bait for Lar'korwi
 					["questID"] = 24733,
-					["qg"] = 9619,	-- Torwa Pathfinder
+					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["coord"] = { 71.2, 76.5, 78 },
 					["sourceQuest"] = 24732,	-- The Scent of Lar'korwi
 					["groups"] = {
@@ -545,7 +548,10 @@ _.Zones =
 				},
 				{	-- The Ballad of Maximillian
 					["questID"] = 24707,
-					["qgs"] = { 38237, 38343 },	-- Maximillian of Northshire (2 phases)
+					["providers"] = {
+						{ "n", 38237 },	-- Maximillian of Northshire
+						{ "n", 38343 },	-- Maximillian of Northshire
+					},
 					["coord"] = { 30.6, 51.1, 78 },
 					["sourceQuest"] = 24706,	-- The Spirits of Golakka Hot Springs
 					["groups"] = {
@@ -556,31 +562,34 @@ _.Zones =
 				},
 				{	-- The Dunes of Silithus
 					["questID"] = 28859,
-					["qg"] = 38269,	-- Zen'Aliri
+					["provider"] = { "n", 38269 },	-- Zen'Aliri
 					["coord"] = { 55.7, 60.6, 78 },
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 24695,	-- Ever Watching From Above
 				},
 				{	-- The Eastern Pylon
 					["questID"] = 24721,
-					["qg"] = 38263,	-- ithis Moonwarden
+					["provider"] = { "n", 38263 },	-- ithis Moonwarden
 					["coord"] = { 76.4, 48.3, 78 },
 					["sourceQuest"] = 24855,	-- Aberrant Flora
 				},
 				{	-- The Evil Dragons of Un'Goro Crater
 					["questID"] = 24704,
-					["qgs"] = { 38237, 38255 },	-- Maximillian of Northshire (2 phases)
+					["providers"] = {
+						{ "n", 38237 },	-- Maximillian of Northshire
+						{ "n", 38255 },	-- Maximillian of Northshire
+					},
 					["coord"] = { 30.6, 51.1, 78 },
 					["sourceQuest"] = 24703,	-- An Important Lesson
 				},
 				{	-- The Fare of Lar'korwi
 					["questID"] = 24731,
-					["qg"] = 9619,	-- Torwa Pathfinder
+					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["coord"] = { 71.2, 76.5, 78 },
 				},
 				{	-- The Fledgling Colossus
 					["questID"] = 24692,
-					["qg"] = 9271,	-- Hol'anyee Marshal
+					["provider"] = { "n", 9271 },	-- Hol'anyee Marshal
 					["coord"] = { 55.0, 62.2, 78 },
 					["sourceQuest"] = 24690,	-- Blazerunner
 					["groups"] = {
@@ -591,14 +600,14 @@ _.Zones =
 				},
 				{	-- The Fossil-Finder 3000
 					["questID"] = 24708,
-					["qg"] = 9272,	-- Spark Nilminer
+					["provider"] = { "n", 9272 },	-- Spark Nilminer
 					["coord"] = { 31.8, 50.2, 78 },
 					["sourceQuest"] = 24730,	-- Roll the Bones
 				},
 				{	-- The Mighty U'cha
 					["questID"] = 4301,
 					["u"] = 40,
-					["qg"] = 9619,	-- Torwa Pathfinder
+					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["sourceQuest"] = 4289,	-- The Apes of Un'Goro
 					["groups"] = {
 						un(2, i(11907)),	-- Beastslayer
@@ -617,19 +626,19 @@ _.Zones =
 				},
 				{	-- The Northern Pylon
 					["questID"] = 24722,
-					["qg"] = 38275,	-- Gremix
+					["provider"] = { "n", 38275 },	-- Gremix
 					["coord"] = { 43.2, 41.1, 78 },
 					["sourceQuest"] = 24717,	-- The Apes of Un'Goro
 				},
 				{	-- The Scent of Lar'korwi
 					["questID"] = 24732,
-					["qg"] = 9619,	-- Torwa Pathfinder
+					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["coord"] = { 71.2, 76.5, 78 },
 					["sourceQuest"] = 24731,	-- The Fare of Lar'korwi
 				},
 				{	-- The Shaper's Terrace
 					["questID"] = 24694,
-					["qg"] = 38504,	-- Un'Goro Examinant
+					["provider"] = { "n", 38504 },	-- Un'Goro Examinant
 					["coord"] = { 53.8, 62.5, 78 },
 					["sourceQuests"] = {
 						24721,	-- The Eastern Pylon
@@ -639,7 +648,10 @@ _.Zones =
 				},
 				{	-- The Spirits of Golakka Hot Springs
 					["questID"] = 24706,
-					["qgs"] = { 38255, 38237 },	-- Maximillian of Northshire (2 phases)
+					["providers"] = {
+						{ "n", 38255 },	-- Maximillian of Northshire
+						{ "n", 38237 },	-- Maximillian of Northshire
+					},
 					["sourceQuests"] = {
 						24705,	-- Damsels Were Made to be Saved
 						24704,	-- The Evil Dragons of Un'Goro Crater
@@ -647,13 +659,13 @@ _.Zones =
 				},
 				{	-- The Western Pylon
 					["questID"] = 24723,
-					["qg"] = 9272,	-- Spark Nilminer
+					["provider"] = { "n", 9272 },	-- Spark Nilminer
 					["coord"] = { 31.8, 50.2, 78 },
 					["sourceQuest"] = 24709,	-- A Tale of Two Shovels
 				},
 				{	-- They Grow Up So Fast
 					["questID"] = 13906,
-					["qg"] = 11701,	-- Mor'vek
+					["provider"] = { "n", 11701 },	-- Mor'vek
 					["coord"] = { 71.5, 73.9, 78 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13887,	-- Venomhide Eggs
@@ -663,7 +675,7 @@ _.Zones =
 				},
 				{	-- Toxic Tolerance
 					["questID"] = 13850,
-					["qg"] = 11701,	-- Mor'vek
+					["provider"] = { "n", 11701 },	-- Mor'vek
 					["coord"] = { 71.5, 73.9, 78 },
 					["races"] = HORDE_ONLY,
 				},
@@ -693,14 +705,14 @@ _.Zones =
 				},
 				{	-- Venomhide Eggs
 					["questID"] = 13887,
-					["qg"] = 11701,	-- Mor'vek
+					["provider"] = { "n", 11701 },	-- Mor'vek
 					["coord"] = { 71.5, 73.9, 78 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13850,	-- Toxic Tolerance
 				},
 				{	-- Volcanic Activity
 					["questID"] = 24740,
-					["qg"] = 9270,	-- Williden Marshal
+					["provider"] = { "n", 9270 },	-- Williden Marshal
 					["coord"] = { 55.0, 62.2, 78 },
 					["sourceQuests"] = {
 						28525,	-- Hero's Call: Un'Goro Crater!
@@ -710,7 +722,7 @@ _.Zones =
 				{	-- Zen'Aliri
 					["questID"] = 24688,
 					["u"] = 1,
-					["qg"] = 38263,	-- Ithis Moonwarden
+					["provider"] = { "n", 38263 },	-- Ithis Moonwarden
 				},
 			}),
 		}),

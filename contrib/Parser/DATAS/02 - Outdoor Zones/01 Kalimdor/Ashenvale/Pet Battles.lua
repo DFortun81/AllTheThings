@@ -32,14 +32,14 @@ _.Zones =
 					["crs"] = { 61369 },	-- Toad
 				}),
 				q(31854, {	-- Analynn
-					["qg"] = 66136,	-- Analynn
+					["provider"] = { "n", 66136 },	-- Analynn
 					["coord"] = { 20.2, 29.5, 63 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuests"] = { 31814 },	-- Analynn
 				}),
 				q(31815, {	-- Zonya the Sadist
-					["qg"] = 66136,	-- Analynn
+					["provider"] = { "n", 66136 },	-- Analynn
 					["coord"] = { 20.2, 29.5, 63 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31814 },	-- Analynn

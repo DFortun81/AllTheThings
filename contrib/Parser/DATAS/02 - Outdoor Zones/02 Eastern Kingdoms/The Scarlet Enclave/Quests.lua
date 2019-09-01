@@ -10,7 +10,7 @@ _.Zones =
 					["classes"] = { 6 },	-- Death Knight
 					["g"] = {
 						q(12738, {	-- A Cry For Vengeance!
-							["qg"] = 28913,	-- Thassarian
+							["provider"] = { "n", 28913 },	-- Thassarian
 							["coord"] = { 56.2, 80.1, 124 },
 							["sourceQuests"] = {
 								12727,	-- Bloody Breakout
@@ -18,12 +18,12 @@ _.Zones =
 							},
 						}),
 						q(12755, {	-- A Meeting With Fate
-							["qg"] = 28914,	-- Orbaz Bloodbane
+							["provider"] = { "n", 28914 },	-- Orbaz Bloodbane
 							["coord"] = { 56.2, 79.8, 124 },
 							["sourceQuest"] = 12754,	-- Ambush at the Overlook
 						}),
 						q(12751, {	-- A Sort of Homecoming
-							["qg"] = 29053,	-- Knight Commander Plaguefist
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
 							["coord"] = { 52.6, 81.0, 124 },
 							["sourceQuest"] = 28650,	-- A Special Surprise
 							["g"] = {
@@ -31,7 +31,7 @@ _.Zones =
 							},
 						}),
 						q(28650, {	-- A Special Surprise
-							["qg"] = 29053,	-- Knight Commander Plaguefist
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
 							["coord"] = { 52.6, 81.0, 124 },
 							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 						}),
@@ -41,17 +41,17 @@ _.Zones =
 							["coord"] = { 55.2, 46.2, 124 },
 						}),
 						q(12754, {	-- Ambush at the Overlook
-							["qg"] = 28914,	-- Orbaz Bloodbane
+							["provider"] = { "n", 28914 },	-- Orbaz Bloodbane
 							["coord"] = { 56.2, 79.8, 124 },
 							["sourceQuest"] = 12751,	-- A Sort of Homecoming
 						}),
 						q(12700, {	-- An Attack of Opportunity
-							["qg"] = 28658,	-- Gothik the Harvester
+							["provider"] = { "n", 28658 },	-- Gothik the Harvester
 							["coord"] = { 54.0, 35.0, 124 },
 							["sourceQuest"] = 12698,	-- The Gift That Keeps On Giving
 						}),
 						q(12779, {	-- An End To All Things...
-							["qg"] = 25462,	-- The Lich King
+							["provider"] = { "n", 25462 },	-- The Lich King
 							["coord"] = { 53.5, 36.8, 124 },
 							["sourceQuest"] = 12778,	-- The Scarlet Apocalypse
 							["g"] = {
@@ -59,12 +59,12 @@ _.Zones =
 							},
 						}),
 						q(12723, {	-- Behind Scarlet Lines
-							["qg"] = 28911,	-- Prince Keleseth
+							["provider"] = { "n", 28911 },	-- Prince Keleseth
 							["coord"] = { 54.2, 57.3, 124 },
 							["sourceQuest"] = 12720,	-- How to Win Friends and Influence Enemies
 						}),
 						q(12727, {	-- Bloody Breakout
-							["qg"] = 28912,	-- Koltira Deathweaver
+							["provider"] = { "n", 28912 },	-- Koltira Deathweaver
 							["coord"] = { 62.8, 68.0, 124 },
 							["sourceQuest"] = 12725,	-- Brothers in Death
 							["g"] = {
@@ -72,17 +72,17 @@ _.Zones =
 							},
 						}),
 						q(12725, {	-- Brothers in Death
-							["qg"] = 28913,	-- Thassarian
+							["provider"] = { "n", 28913 },	-- Thassarian
 							["coord"] = { 56.2, 80.1, 124 },
 							["sourceQuest"] = 12723,	-- Behind Scarlet Lines
 						}),
 						q(12641, {	-- Death Comes From On High
-							["qg"] = 25462,	-- The Lich King
+							["provider"] = { "n", 25462 },	-- The Lich King
 							["coord"] = { 51.3, 35.2, 124 },
 							["sourceQuest"] = 12636,	-- The Eye of Acherus
 						}),
 						q(12733, {	-- Death's Challenge
-							["qg"] = 29047,	-- Olrun the Battlecaller
+							["provider"] = { "n", 29047 },	-- Olrun the Battlecaller
 							["coord"] = { 54.4, 34.1, 124 },
 							["sourceQuest"] = 12670,	-- The Scarlet Harvest
 							["g"] = {
@@ -90,17 +90,17 @@ _.Zones =
 							},
 						}),
 						q(12697, {	-- Gothik the Harvester
-							["qg"] = 28377,	-- Prince Valanar
+							["provider"] = { "n", 28377 },	-- Prince Valanar
 							["coord"] = { 52.2, 33.9, 124 },
 							["sourceQuest"] = 12678,	-- If Chaos Drives, Let Suffering Hold the Reins (possibly more requirements)
 						}),
 						q(12680, {	-- Grand Theft Palomino
-							["qg"] = 28653,	-- Salanar the Horseman
+							["provider"] = { "n", 28653 },	-- Salanar the Horseman
 							["coord"] = { 52.4, 34.5, 124 },
 							["sourceQuest"] = 12670,	-- The Scarlet Harvest
 						}),
 						q(12720, {	-- How to Win Friends and Influence Enemies
-							["qg"] = 28911,	-- Prince Keleseth
+							["provider"] = { "n", 28911 },	-- Prince Keleseth
 							["coord"] = { 54.3, 57.3, 124 },
 							["sourceQuest"] = 12719,	-- Nowhere to Run and Nowhere to Hide
 							["g"] = {
@@ -108,7 +108,7 @@ _.Zones =
 							},
 						}),
 						q(12678, {	-- If Chaos Drives, Let Suffering Hold The Reins
-							["qg"] = 28377,	-- Prince Valanar
+							["provider"] = { "n", 28377 },	-- Prince Valanar
 							["coord"] = { 52.2, 33.9, 124 },
 							["sourceQuest"] = 12670,	-- The Scarlet Harvest
 							["g"] = {
@@ -116,16 +116,16 @@ _.Zones =
 							},
 						}),
 						q(12593, {	-- In Service Of The Lich King
-							["qg"] = 25462,	-- The Lich King
+							["provider"] = { "n", 25462 },	-- The Lich King
 							["coord"] = { 51.3, 35.1, 124 },
 						}),
 						q(12687, {	-- Into the Realm of Shadows (grants mount Acherus Deathcharger, spellID 48778)
-							["qg"] = 28653,	-- Salanar the Horseman
+							["provider"] = { "n", 28653 },	-- Salanar the Horseman
 							["coord"] = { 52.2, 34.8, 124 },
 							["sourceQuest"] = 12680,	-- Grand Theft Palomino
 						}),
 						q(12722, {	-- Lambs To The Slaughter
-							["qg"] = 28910,	-- Baron Rivendare
+							["provider"] = { "n", 28910 },	-- Baron Rivendare
 							["coord"] = { 54.6, 57.4, 124 },
 							["sourceQuest"] = 12715,	-- The Crypt of Remembrance
 							["g"] = {
@@ -133,7 +133,7 @@ _.Zones =
 							},
 						}),
 						q(12701, {	-- Massacre At Light's Point
-							["qg"] = 28377,	-- Prince Valanar
+							["provider"] = { "n", 28377 },	-- Prince Valanar
 							["coord"] = { 52.2, 33.9, 124 },
 							["sourceQuest"] = 12700,	-- An Attack of Opportunity
 							["g"] = {
@@ -147,33 +147,33 @@ _.Zones =
 							["sourceQuest"] = 12717,	-- Noth's Special Brew
 						}),
 						q(12717, {	-- Noth's Special Brew
-							["qg"] = 28919,	-- Noth the Plaguebringer
+							["provider"] = { "n", 28919 },	-- Noth the Plaguebringer
 							["coord"] = { 55.8, 52.3 },
 							["sourceQuest"] = 12716,	-- The Plaguebringer's Request
 						}),
 						q(12719, {	-- Nowhere to Run And Nowhere to Hide
-							["qg"] = 28911,	-- Prince Keleseth
+							["provider"] = { "n", 28911 },	-- Prince Keleseth
 							["coord"] = { 54.3, 57.2, 124 },
 							["sourceQuest"] = 12715,	-- The Crypt of Remembrance
 						}),
 						q(12850, {	-- Report to Scourge Commander Thalanor
-							["qg"] = 28444,	-- Highlord Darion Mograine
+							["provider"] = { "n", 28444 },	-- Highlord Darion Mograine
 							["coord"] = { 48.8, 29.7, 124 },
 							["sourceQuest"] = 12657,	-- The Might of the Scourge
 						}),
 						q(12842, {	-- Runeforging: Preparation For Battle
-							["qg"] = 28357,	-- Instructor Razuvious
+							["provider"] = { "n", 28357 },	-- Instructor Razuvious
 							["coord"] = { 47.5, 28.7, 124 },
 							["sourceQuest"] = 12619,	-- The Emblazoned Runeblade
 						}),
 						q(13189, {	-- Saurfang's Blessing
-							["qg"] = 31084,	-- Highlord Darion Mograine
+							["provider"] = { "n", 31084 },	-- Highlord Darion Mograine
 							["coord"] = { 83.4, 49.4, 124 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 13166,	-- The Battle For The Ebon Hold
 						}),
 						q(12757, {	-- Scarlet Armies Approach
-							["qg"] = 28914,	-- Orbaz Bloodbane
+							["provider"] = { "n", 28914 },	-- Orbaz Bloodbane
 							["coord"] = { 56.2, 79.8, 124 },
 							["sourceQuest"] = 12756,	-- The Scarlet Onslaught Emerges
 							["g"] = {
@@ -181,22 +181,22 @@ _.Zones =
 							},
 						}),
 						q(13165, {	-- Taking Back Acherus
-							["qg"] = 29173,	-- Highlord Darion Mograine
+							["provider"] = { "n", 29173 },	-- Highlord Darion Mograine
 							["coord"] = { 39.1, 39.1, 124 },
 							["sourceQuest"] = 12801,	-- The Light of Dawn
 						}),
 						q(13166, {	-- The Battle For The Ebon Hold
-							["qg"] = 31084,	-- Highlord Darion Mograine
+							["provider"] = { "n", 31084 },	-- Highlord Darion Mograine
 							["coord"] = { 83.4, 49.4, 124 },
 							["sourceQuest"] = 13165,	-- Taking Back Acherus
 						}),
 						q(12715, {	-- The Crypt of Remembrance
-							["qg"] = 28907,	-- Prince Valanar
+							["provider"] = { "n", 28907 },	-- Prince Valanar
 							["coord"] = { 53.4, 36.5, 124 },
 							["sourceQuest"] = 12714,	-- The Will of the Lich King
 						}),
 						q(12619, {	-- The Emblazoned Runeblade (grants Runeforging, spellID 53431)
-							["qg"] = 28357,	-- Instructor Razuvious
+							["provider"] = { "n", 28357 },	-- Instructor Razuvious
 							["coord"] = { 47.7, 29.4, 124 },
 							["sourceQuest"] = 12593,
 							["g"] = {
@@ -205,17 +205,17 @@ _.Zones =
 							},
 						}),
 						q(12848, {	-- The Endless Hunger
-							["qg"] = 28357,	-- Instructor Razuvious
+							["provider"] = { "n", 28357 },	-- Instructor Razuvious
 							["coord"] = { 47.6, 29.5, 124 },
 							["sourceQuest"] = 12842,	-- Runeforging: Preparation For Battle
 						}),
 						q(12636, {	-- The Eye of Acherus
-							["qg"] = 28357,	-- Instructor Razuvious
+							["provider"] = { "n", 28357 },	-- Instructor Razuvious
 							["coord"] = { 48.4, 28.0, 124 },
 							["sourceQuest"] = 12848,	-- The Endless Hunger
 						}),
 						q(12698, {	-- The Gift That Keeps On Giving
-							["qg"] = 28658,	-- Gothik the Harvester
+							["provider"] = { "n", 28658 },	-- Gothik the Harvester
 							["coord"] = { 54.0, 35.0, 124 },
 							["sourceQuest"] = 12697,	-- Gothik the Harvester
 							["g"] = {
@@ -223,12 +223,12 @@ _.Zones =
 							},
 						}),
 						q(12800, {	-- The Lich King's Command
-							["qg"] = 29110,	-- The Lich King
+							["provider"] = { "n", 29110 },	-- The Lich King
 							["coord"] = { 53.5, 36.9, 124 },
 							["sourceQuest"] = 12779,	-- An End To All Things...
 						}),
 						q(12801, {	-- The Light of Dawn
-							["qg"] = 31082,	-- Scourge Commander Thalanor
+							["provider"] = { "n", 31082 },	-- Scourge Commander Thalanor
 							["coord"] = { 34.0, 30.3, 124 },
 							["sourceQuest"] = 12800,	-- The Lich King's Command
 							["g"] = {
@@ -238,7 +238,7 @@ _.Zones =
 							},
 						}),
 						q(12657, {	-- The Might of the Scourge
-							["qg"] = 25462,	-- The Lich King
+							["provider"] = { "n", 25462 },	-- The Lich King
 							["coord"] = { 51.3, 35.2, 124 },
 							["sourceQuest"] = 12641,	-- Death Comes From On High
 							["g"] = {
@@ -246,7 +246,7 @@ _.Zones =
 							},
 						}),
 						q(12724, {	-- The Path Of The Righteous Crusader
-							["qg"] = 28914,	-- Orbaz Bloodbane
+							["provider"] = { "n", 28914 },	-- Orbaz Bloodbane
 							["coord"] = { 56.2, 79.8, 124 },
 							["sourceQuest"] = 12723,	-- Behind Scarlet Lines
 							["g"] = {
@@ -254,7 +254,7 @@ _.Zones =
 							},
 						}),
 						q(12716, {	-- The Plaguebringer's Request
-							["qg"] = 28919,	-- Noth the Plaguebringer
+							["provider"] = { "n", 28919 },	-- Noth the Plaguebringer
 							["coord"] = { 55.9, 52.4, 124 },
 							["sourceQuest"] = 12714,	-- The Will of the Lich King
 							["g"] = {
@@ -262,32 +262,32 @@ _.Zones =
 							},
 						}),
 						q(12849, {	-- The Power of Blood, Frost and Unholy
-							["qg"] = 28472,	-- Lord Thorval
+							["provider"] = { "n", 28472 },	-- Lord Thorval
 							["coord"] = { 47.5, 26.5, 124 },
 							["sourceQuest"] = 12657,	-- The Might of the Scourge
 						}),
 						q(12778, {	-- The Scarlet Apocalypse
-							["qg"] = 28444,	-- Highlord Darion Mograine
+							["provider"] = { "n", 28444 },	-- Highlord Darion Mograine
 							["coord"] = { 48.8, 29.7, 124 },
 							["sourceQuest"] = 12757,	-- Scarlet Armies Approach
 						}),
 						q(12670, {	-- The Scarlet Harvest
-							["qg"] = 28510,	-- Scourge Commander Thalanor
+							["provider"] = { "n", 28510 },	-- Scourge Commander Thalanor
 							["coord"] = { 50.6, 34.9, 124 },
 							["sourceQuest"] = 12850,	-- Report to Scourge Commander Thalanor
 						}),
 						q(12756, {	-- The Scarlet Onslaught Emerges
-							["qg"] = 29077,	-- High General Abbendis
+							["provider"] = { "n", 29077 },	-- High General Abbendis
 							["coord"] = { 65.6, 83.8, 124 },
 							["sourceQuest"] = 12755,	-- A Meeting With Fate
 						}),
 						q(12714, {	-- The Will of the Lich King
-							["qg"] = 28444,	-- Highlord Darion Mograine
+							["provider"] = { "n", 28444 },	-- Highlord Darion Mograine
 							["coord"] = { 48.8, 29.7, 124 },
 							["sourceQuest"] = 12706,	-- Victory At Death's Breach!
 						}),
 						q(12679, {	-- Tonight We Dine In Havenshire
-							["qg"] = 28647,	-- Orithos the Sky Darkener
+							["provider"] = { "n", 28647 },	-- Orithos the Sky Darkener
 							["coord"] = { 53.6, 36.3, 124 },
 							["sourceQuest"] = 12670,	-- The Scarlet Harvest
 							["g"] = {
@@ -297,7 +297,7 @@ _.Zones =
 							},
 						}),
 						q(12706, {	-- Victory At Death's Breach!
-							["qg"] = 28377,	-- Prince Valanar
+							["provider"] = { "n", 28377 },	-- Prince Valanar
 							["coord"] = { 52.2, 33.9, 124 },
 							["sourceQuest"] = 12701,	-- Massacre At Light's Point
 							["g"] = {
@@ -305,7 +305,7 @@ _.Zones =
 							},
 						}),
 						q(13188, {	-- Where Kings Walk
-							["qg"] = 31084,	-- Highlord Darion Mograine
+							["provider"] = { "n", 31084 },	-- Highlord Darion Mograine
 							["coord"] = { 83.4, 49.4, 124 },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 13166,	-- The Battle For The Ebon Hold

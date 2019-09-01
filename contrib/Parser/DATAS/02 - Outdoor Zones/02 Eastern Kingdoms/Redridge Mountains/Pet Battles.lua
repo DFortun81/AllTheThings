@@ -25,12 +25,12 @@ _.Zones =
 					["crs"] = { 61169 },	-- Roach
 				}),
 				q(3861, {	-- CLUCK!
-					["qg"] = 620,	-- Chicken
+					["provider"] = { "n", 620 },	-- Chicken
 					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
 					["repeatable"] = true,
 				}),
 				q(31726, {	-- Eric Davidson
-					["qg"] = 65651,	-- Lindsay
+					["provider"] = { "n", 65651 },	-- Lindsay
 					["coord"] = { 33.2, 52.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31725,	-- Lindsay
@@ -39,7 +39,7 @@ _.Zones =
 					},
 				}),
 				q(31781, {	-- Lindsay
-					["qg"] = 65651,	-- Lindsay
+					["provider"] = { "n", 65651 },	-- Lindsay
 					["coord"] = { 33.2, 52.5, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,

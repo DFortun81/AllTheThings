@@ -59,25 +59,25 @@ _.PVP =
 				}),
 				n(-17, {	-- Quests
 					q(55510, {	-- No Mercy for the Merciless
-						["qg"] = 151795,	-- Commander Zanneth
+						["provider"] = { "n", 151795 },	-- Commander Zanneth
 						["coord"] = { 49.6, 20.4, 1334 },
 						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(55511, {	-- Slay them all!
-						["qg"] = 151611,	-- Commander Dardosh
+						["provider"] = { "n", 151611 },	-- Commander Dardosh
 						["coord"] = { 49.6, 20.4, 1334 },
 						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(55508, {	-- Victory in Wintergrasp
-						["qg"] = 152003,	-- Tactical Officer Ahbramis
+						["provider"] = { "n", 152003 },	-- Tactical Officer Ahbramis
 						["coord"] = { 50.2, 17.8, 1334 },
 						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(55509, {	-- Victory in Wintergrasp
-						["qg"] = 152004,	-- Tactical Officer Kilrath
+						["provider"] = { "n", 152004 },	-- Tactical Officer Kilrath
 						["coord"] = { 50.2, 17.8, 1334 },
 						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,

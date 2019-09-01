@@ -10,11 +10,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["g"] = {
 			n(-17, {	-- Quests
 				q(24500, {	-- Wrath of the Lich King
-					["qg"] = 37582,	-- Archmage Koreln <Kirin Tor>
+					["provider"] = { "n", 37582 },	-- Archmage Koreln <Kirin Tor>
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24802, {	-- Wrath of the Lich King
-					["qg"] = 37779,	-- Dark Ranger Loralen
+					["provider"] = { "n", 37779 },	-- Dark Ranger Loralen
 					["races"] = HORDE_ONLY,
 				}),
 			}),

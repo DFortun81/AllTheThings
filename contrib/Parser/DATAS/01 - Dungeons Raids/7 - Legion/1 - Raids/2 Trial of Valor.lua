@@ -12,7 +12,7 @@ _.Instances = { tier(7, {	-- Legion
 			n(-17, {	-- Quests 			
 				q(45088, {	-- Trial of Valor: The Lost Army
 					["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
-					["qg"] = 114263,	-- Odyn
+					["provider"] = { "n", 114263 },	-- Odyn
 					["g"] = {
 						i(143506, {	-- Ensemble: Vestment of the Chosen Dead
 							["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warock

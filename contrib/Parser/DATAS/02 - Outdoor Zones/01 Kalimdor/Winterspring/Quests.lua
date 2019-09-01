@@ -68,14 +68,14 @@ _.Zones =
 				},
 				{	-- A Taste for Bear
 					["questID"] = 28637,
-					["qg"] = 49436,	-- Francis Morcott
+					["provider"] = { "n", 49436 },	-- Francis Morcott
 					["coord"] = { 55.8, 28.2, 83 },
 				},
 				{	-- A Yeti of Your Own
 					["questID"] = 8798,
 					["sourceQuest"] = 5163,	-- [DEPRECATED]Are We There, Yeti?
 					["u"] = 40,
-					["qg"] = 10305,	-- Umi Rumplesnicker
+					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 					["requireSkill"] = 202,	-- Engineering
 					["groups"] = {
 						un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
@@ -83,7 +83,7 @@ _.Zones =
 				},
 				{	-- Altered Beasts
 					["questID"] = 28837,
-					["qg"] = 10929,	-- Haleh
+					["provider"] = { "n", 10929 },	-- Haleh
 					["coord"] = { 58.0, 63.7, 83 },
 					["sourceQuest"] = 28847,	-- The Pursuit of Umbranse
 				},
@@ -91,34 +91,34 @@ _.Zones =
 					-- [DEPRECATED]Are We There, Yeti?
 					["questID"] = 3783,	-- [DEPRECATED]Are We There, Yeti?
 					["u"] = 40,
-					["qg"] = 10305,	-- Umi Rumplesnicker
+					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 				},
 				{
 					-- [DEPRECATED]Are We There, Yeti?
 					["questID"] = 977,	-- [DEPRECATED]Are We There, Yeti?
 					["sourceQuest"] = 3783,	-- [DEPRECATED]Are We There, Yeti?
 					["u"] = 40,
-					["qg"] = 10305,	-- Umi Rumplesnicker
+					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 				},
 				{
 					-- [DEPRECATED]Are We There, Yeti?
 					["questID"] = 5163,	-- [DEPRECATED]Are We There, Yeti?
 					["sourceQuest"] = 977,	-- [DEPRECATED]Are We There, Yeti?
 					["u"] = 40,
-					["qg"] = 10305,	-- Umi Rumplesnicker
+					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 					["groups"] = {
 						i(15778),	-- [DEPRECATED]Are We There, Yeti?
 					},
 				},
 				{	-- Are We There, Yeti?
 					["questID"] = 28629,
-					["qg"] = 10305,	-- Umi Rumplesnicker
+					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 					["coord"] = { 59.3, 49.7, 83 },
 					["sourceQuest"] = 28627,	-- Seril's Boast
 				},
 				{	-- Blackrock Depths: Jewel of the Depths
 					["questID"] = 44952,
-					["qg"] = 11184,	-- Wixxrak
+					["provider"] = { "n", 11184 },	-- Wixxrak
 					["coord"] = { 60.2, 50.2, 83 },
 					["requireSkill"] = 2477,	-- Classic Blacksmithing
 					["groups"] = {
@@ -127,33 +127,33 @@ _.Zones =
 				},
 				{	-- Blasted Lands: The Other Side of the World
 					["questID"] = 28857,
-					["qg"] = 11118,	-- Innkeeper Vizzie
+					["provider"] = { "n", 11118 },	-- Innkeeper Vizzie
 					["coord"] = { 59.8, 51.1, 83 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				},
 				{	-- Blasted Lands: The Other Side of the World
 					["questID"] = 28858,
-					["qg"] = 11118,	-- Innkeeper Vizzie
+					["provider"] = { "n", 11118 },	-- Innkeeper Vizzie
 					["coord"] = { 59.8, 51.1, 83 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				},
 				{	-- Boulder Delivery
 					["questID"] = 28618,
-					["qg"] = 48965,	-- Deez Rocksnitch
+					["provider"] = { "n", 48965 },	-- Deez Rocksnitch
 					["coord"] = { 59.7, 49.6, 83 },
 					["sourceQuest"] = 28610,	-- Rubble Trouble
 				},
 				{	-- Broodling Essence
 					["questID"] = 4726,
 					["u"] = 40,
-					["qg"] = 10267,	-- Tinkee Steamboil
+					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
 				},
 				{	-- Brumeran of the Chillwind
 					["questID"] = 5055,
 					["u"] = 40,
-					["qg"] = 10303,	-- Storm Shadowhoof
+					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
 				},
@@ -164,18 +164,18 @@ _.Zones =
 				{	-- Chillwind Horns
 					["questID"] = 4809,
 					["u"] = 40,
-					["qg"] = 10468,
+					["provider"] = { "n", 10468 },
 					["sourceQuest"] = 4808,	-- Felnok Steelspring
 				},
 				{	-- Chips off the Old Block
 					["questID"] = 28830,
-					["qg"] = 50263,	-- Jadrag the Slicer
+					["provider"] = { "n", 50263 },	-- Jadrag the Slicer
 					["coord"] = { 61.8, 74.6, 83 },
 					["sourceQuest"] = 28829,	-- Razor Beak and Antlers Pointy
 				},
 				{	-- Chop Chop
 					["questID"] = 28625,
-					["qg"] = 48965,	-- Deez Rocksnitch
+					["provider"] = { "n", 48965 },	-- Deez Rocksnitch
 					["coord"] = { 59.7, 49.6, 83 },
 					["sourceQuest"] = 28624,	-- Kilram's Boast
 					["groups"] = {
@@ -188,7 +188,7 @@ _.Zones =
 				{	-- Corruption
 					["questID"] = 5307,
 					["u"] = 40,
-					["qg"] = 11193,	-- Seril Scourgebane
+					["provider"] = { "n", 11193 },	-- Seril Scourgebane
 					["groups"] = {
 						{	-- Plans: Blazing Rapier
 							["itemID"] = 12825,	-- Plans: Blazing Rapier
@@ -198,7 +198,7 @@ _.Zones =
 					},
 				},
 				{	-- Crudely-Written Log
-					["qg"] = 10738,	-- High Chief Winterfall
+					["provider"] = { "n", 10738 },	-- High Chief Winterfall
 					["itemID"] = 12842,
 					["questID"] = 28471,	-- The Final Piece
 					["coord"] = { 36.9, 55.6, 83 },
@@ -206,7 +206,7 @@ _.Zones =
 				},
 				{	-- Damn You, Frostilicus
 					["questID"] = 28831,
-					["qg"] = 50263,	-- Jadrag the Slicer
+					["provider"] = { "n", 50263 },	-- Jadrag the Slicer
 					["coord"] = { 61.8, 74.6, 83 },
 					["sourceQuest"] = 28829,	-- Razor Beak and Antlers Pointy
 					["groups"] = {
@@ -218,19 +218,19 @@ _.Zones =
 				},
 				{	-- Descendants of the High Elves
 					["questID"] = 28535,
-					["qg"] = 48659,	-- Quel'dorei Spirit
+					["provider"] = { "n", 48659 },	-- Quel'dorei Spirit
 					["coord"] = { 50.7, 55.0, 83 },
 					["sourceQuest"] = 28518,	-- Legacy of the High Elves
 				},
 				{	-- Descendants of the Highborne
 					["questID"] = 28534,
-					["qg"] = 48658,	-- Kaldorei Spirit
+					["provider"] = { "n", 48658 },	-- Kaldorei Spirit
 					["coord"] = { 50.7, 54.8, 83 },
 					["sourceQuest"] = 28513,	-- Pride of Highborne
 				},
 				{	-- Doin' De E'ko Magic
 					["questID"] = 28540,
-					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["provider"] = { "n", 10307 },	-- Witch Doctor Mau'ari
 					["coord"] = { 25.1, 58.4, 83 },
 					["groups"] = {
 						i(67162),	-- E'ko Gatherer's Belt
@@ -241,7 +241,7 @@ _.Zones =
 				},
 				{	-- Echo Three
 					["questID"] = 28630,
-					["qg"] = 10305,	-- Umi Rumplesnicker
+					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 					["coord"] = { 59.3, 49.7, 83 },
 					["sourceQuest"] = 28627,	-- Seril's Boast
 				},
@@ -256,31 +256,31 @@ _.Zones =
 				},
 				{	-- Exterminators at Work
 					["questID"] = 28676,
-					["qg"] = 11079,	-- Wynd Nightchaser
+					["provider"] = { "n", 11079 },	-- Wynd Nightchaser
 					["coord"] = { 48.6, 41.0, 83 },
 					["sourceQuest"] = 28674,	-- Starfall Village
 				},
 				{	-- Falling to Corruption
 					["questID"] = 5084,
 					["u"] = 40,
-					["qg"] = 9298,	-- Donovan Snowden
+					["provider"] = { "n", 9298 },	-- Donovan Snowden
 					["sourceQuest"] = 5083,	-- Winterfall Firewater
 				},
 				{	-- Falling to Corruption
 					["questID"] = 28464,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["coord"] = { 25.1, 58.4, 83 },
 				},
 				{	-- Felnok Steelspring
 					["questID"] = 4808,
 					["u"] = 40,
-					["qg"] = 10267,	-- Tinkee Steamboil
+					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
 					["sourceQuest"] = 4726,	-- Broodling Essence
 				},
 				{	-- Fiery Plate Gauntlets
 					["questID"] = 5124,	-- Fiery Plate Gauntlets
 					["u"] = 40,
-					["qg"] = 10637,	-- Malyfous Darkhammer
+					["provider"] = { "n", 10637 },	-- Malyfous Darkhammer
 					["sourceQuest"] = 5103,	-- Hot Fiery Death
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
@@ -290,38 +290,38 @@ _.Zones =
 				},
 				{	-- Fresh From The Hills
 					["questID"] = 28632,
-					["qg"] = 48965,	-- Deez Rocksnitch
+					["provider"] = { "n", 48965 },	-- Deez Rocksnitch
 					["coord"] = { 59.7, 49.6, 83 },
 					["sourceQuest"] = 28627,	-- Seril's Boast
 				},
 				{	-- Fresh Frostsabers
 					["questID"] = 28640,
-					["qg"] = 49396,	-- Jez Goodgrub
+					["provider"] = { "n", 49396 },	-- Jez Goodgrub
 					["coord"] = { 55.9, 28.1, 83 },
 					["sourceQuest"] = 28718,	-- Where There's Smoke, There's Delicious Meat
 				},
 				{	-- Frostsaber Provisions
 					["questID"] = 4970,
 					["u"] = 40,
-					["qg"] = 10618,	-- Rivern Frostwind
+					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				},
 				{	-- Guardians of the Altar
 					["questID"] = 4901,
 					["u"] = 40,
-					["qg"] = 10300,	-- Ranshalla
+					["provider"] = { "n", 10300 },	-- Ranshalla
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- Hammer Time
 					["questID"] = 28609,
-					["qg"] = 11191,	-- Lilith the Lithe
+					["provider"] = { "n", 11191 },	-- Lilith the Lithe
 					["coord"] = { 59.8, 49.1, 83 },
 				},
 				{	-- High Chief Winterfall
 					["questID"] = 5121,
 					["u"] = 40,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 5087,	-- Winterfall Runners
 					["groups"] = {
 						un(2, i(15784)),	-- Crystal Breeze Mantle
@@ -331,7 +331,7 @@ _.Zones =
 				},
 				{	-- High Chief Winterfall
 					["questID"] = 28470,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["coord"] = { 25.1, 58.5, 83 },
 					["sourceQuest"] = 28469,	-- Winterfall Runners
 					["groups"] = {
@@ -343,7 +343,7 @@ _.Zones =
 				},
 				{	-- Ice Delivery
 					["questID"] = 28628,
-					["qg"] = 48965,	-- Deez Rocksnitch
+					["provider"] = { "n", 48965 },	-- Deez Rocksnitch
 					["coord"] = { 59.7, 49.6, 83 },
 					["sourceQuest"] = 28632,	-- Fresh From the Hills
 					["groups"] = {
@@ -355,26 +355,26 @@ _.Zones =
 				},
 				{	-- In Pursuit of Shades
 					["questID"] = 28537,
-					["qg"] = 10920,	-- Kelek Skykeeper
+					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
 					["coord"] = { 46.8, 53.8, 83 },
 					["sourceQuest"] = 28536,	-- The Curse of Zin-Malor
 				},
 				{	-- Kilram's Boast
 					["questID"] = 28624,
-					["qg"] = 11192,	-- Kilram
+					["provider"] = { "n", 11192 },	-- Kilram
 					["coord"] = { 59.8, 49.1, 83 },
 					["sourceQuest"] = 28618,	-- Boulder Delivery
 				},
 				{	-- Legacy of the High Elves
 					["questID"] = 28518,
-					["qg"] = 48659,	-- Quel'dorei Spirit
+					["provider"] = { "n", 48659 },	-- Quel'dorei Spirit
 					["coord"] = { 50.8, 55.0, 83 },
 					["sourceQuest"] = 28534,	-- Descendants of the Highborne
 				},
 				{	-- Lorax's Tale
 					["questID"] = 5126,	-- Lorax's Tale
 					["u"] = 40,
-					["qg"] = 10918,	-- Lorax
+					["provider"] = { "n", 10918 },	-- Lorax
 					["requireSkill"] = 164,	-- Blacksmithing
 				},
 				{	-- Magic Prehistoric
@@ -384,25 +384,25 @@ _.Zones =
 				},
 				{	-- Making Amends
 					["questID"] = 9266,
-					["qg"] = 16416,	-- Bronn Fitzwrench
+					["provider"] = { "n", 16416 },	-- Bronn Fitzwrench
 					["coord"] = { 58.0, 52.2, 83 },
 					["repeatable"] = true,
 				},
 				{	-- Meet at the Grave
 					["questID"] = 3912,
 					["u"] = 40,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 3909,	-- The Videre Elixir
 				},
 				{	-- Out of Harm's Way
 					["questID"] = 28701,
-					["qg"] = 11079,	-- Wynd Nightchaser
+					["provider"] = { "n", 11079 },	-- Wynd Nightchaser
 					["coord"] = { 48.6, 41.0, 83 },
 					["sourceQuest"] = 28674,	-- Starfall Village
 				},
 				{	-- Pain of the Blood Elves
 					["questID"] = 28519,
-					["qg"] = 48660,	-- Sin'dorei Spirit
+					["provider"] = { "n", 48660 },	-- Sin'dorei Spirit
 					["coord"] = { 50.6, 55.0, 83 },
 					["sourceQuest"] = 28535,	-- Descendants of the High Elves
 					["groups"] = {
@@ -416,7 +416,7 @@ _.Zones =
 				{	-- Past Endeavors
 					["questID"] = 5057,
 					["u"] = 40,
-					["qg"] = 10303,	-- Storm Shadowhoof
+					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5056,	-- Shy-Rotam
 					["groups"] = {
@@ -429,7 +429,7 @@ _.Zones =
 				},
 				{	-- Pride of the Highborne
 					["questID"] = 28513,
-					["qg"] = 48658,	-- Kaldorei Spirit
+					["provider"] = { "n", 48658 },	-- Kaldorei Spirit
 					["coord"] = { 50.7, 54.8, 83 },
 					["sourceQuest"] = 28479,	-- The Ruins of Kel'Theril
 					["groups"] = {
@@ -441,26 +441,26 @@ _.Zones =
 				{	-- Rampaging Giants
 					["questID"] = 5981,
 					["u"] = 40,
-					["qg"] = 10618,	-- Rivern Frostwind
+					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				},
 				{	-- Razor Beak and Antlers Pointy
 					["questID"] = 28829,
-					["qg"] = 50263,	-- Jadrag the Slicer
+					["provider"] = { "n", 50263 },	-- Jadrag the Slicer
 					["coord"] = { 61.8, 74.6, 83 },
 				},
 				{	-- Remorseful Highborne
 					["questID"] = 5252,
 					["u"] = 40,
-					["qg"] = 10684,	-- Remorseful Highborne
+					["provider"] = { "n", 10684 },	-- Remorseful Highborne
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 5248,	-- Tormented By the Past
 				},
 				{	-- Return to Tinkee
 					["questID"] = 4810,
 					["u"] = 40,
-					["qg"] = 10468,	-- Felnok Steelspring
+					["provider"] = { "n", 10468 },	-- Felnok Steelspring
 					["sourceQuest"] = 4809,	-- Chillwind Horns
 					["groups"] = {
 						un(2, i(15862)),	-- Blitzcleaver
@@ -469,13 +469,13 @@ _.Zones =
 				},
 				{	-- Rubble Trouble
 					["questID"] = 28610,
-					["qg"] = 48965,	-- Deez Rocksnitch
+					["provider"] = { "n", 48965 },	-- Deez Rocksnitch
 					["coord"] = { 59.7, 49.6, 83 },
 					["sourceQuest"] = 28609,	-- Hammer Time
 				},
 				{	-- Scalding Signs
 					["questID"] = 28530,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["coord"] = { 25.1, 58.4, 83 },
 					["sourceQuest"] = 28467,	-- Mystery Goo
 				},
@@ -485,14 +485,14 @@ _.Zones =
 				},
 				{	-- Seril's Boast
 					["questID"] = 28627,
-					["qg"] = 11193,	-- Seril Scourgebane
+					["provider"] = { "n", 11193 },	-- Seril Scourgebane
 					["coord"] = { 59.7, 49.2, 83 },
 					["sourceQuest"] = 28626,	-- Tree Delivery
 				},
 				{	-- Shy-Rotam
 					["questID"] = 5056,
 					["u"] = 40,
-					["qg"] = 10303,	-- Storm Shadowhoof
+					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5055,	-- Brumeran of the Chillwind
 					["groups"] = {
@@ -514,7 +514,7 @@ _.Zones =
 				{	-- Snakestone of the Shadow Huntress
 					["questID"] = 5306,	-- Snakestone of the Shadow Huntress
 					["u"] = 40,
-					["qg"] = 11192,	-- Kilram
+					["provider"] = { "n", 11192 },	-- Kilram
 					["groups"] = {
 						{	-- Plans: Dawn's Edge
 							["itemID"] = 12821,	-- Plans: Dawn's Edge
@@ -525,18 +525,18 @@ _.Zones =
 				},
 				{	-- Spray it Again
 					["questID"] = 28707,
-					["qg"] = 49399,	-- Remma Curtainfire
+					["provider"] = { "n", 49399 },	-- Remma Curtainfire
 					["coord"] = { 45.6, 41.5, 83 },
 					["sourceQuest"] = 28706,	-- Spray it Forward
 				},
 				{	-- Spray it Forward
 					["questID"] = 28706,
-					["qg"] = 49407,	-- Rinno Curtainfire
+					["provider"] = { "n", 49407 },	-- Rinno Curtainfire
 					["coord"] = { 45.7, 41.0, 83 },
 				},
 				{	-- Spray it One More Time
 					["questID"] = 28710,
-					["qg"] = 49400,	-- Marcy Curtainfire
+					["provider"] = { "n", 49400 },	-- Marcy Curtainfire
 					["coord"] = { 46.2, 42.5, 83 },
 					["sourceQuest"] = 28707,	-- Spray it Again
 					["groups"] = {
@@ -547,7 +547,7 @@ _.Zones =
 				},
 				{	-- Starfall Village
 					["questID"] = 28674,
-					["qg"] = 48965,	-- Deez Rocksnitch
+					["provider"] = { "n", 48965 },	-- Deez Rocksnitch
 					["coord"] = { 59.8, 49.6, 83 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -557,7 +557,7 @@ _.Zones =
 				},
 				{	-- Step Into My Barrow
 					["questID"] = 28703,
-					["qg"] = 49407,	-- Rinno Curtainfire
+					["provider"] = { "n", 49407 },	-- Rinno Curtainfire
 					["coord"] = { 45.7, 41.0, 83 },
 				},
 				{	-- Strange Life Forces
@@ -566,7 +566,7 @@ _.Zones =
 				{	-- Strange Sources
 					["questID"] = 4842,
 					["u"] = 40,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 980,	-- The New Springs
 					["groups"] = {
 						un(2, i(15789)),	-- Deep River Cloak
@@ -575,7 +575,7 @@ _.Zones =
 				{	-- Sweet Serenity
 					["questID"] = 5305,	-- Sweet Serenity
 					["u"] = 40,
-					["qg"] = 11191,	-- Lilith the Lithe
+					["provider"] = { "n", 11191 },	-- Lilith the Lithe
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
 						un(2, i(12824)),	-- Plans: Enchanted Battlehammer
@@ -583,14 +583,14 @@ _.Zones =
 				},
 				{	-- The Arcane Storm Within
 					["questID"] = 28841,
-					["qg"] = 10929,	-- Haleh
+					["provider"] = { "n", 10929 },	-- Haleh
 					["coord"] = { 58.0, 63.7, 83 },
 					["sourceQuest"] = 28840,	-- Winterwater
 				},
 				{	-- The Crystal of Zin-Malor
 					["questID"] = 5253,
 					["u"] = 40,
-					["qg"] = 11079,	-- Wynd Nightchaser
+					["provider"] = { "n", 11079 },	-- Wynd Nightchaser
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 5252,	-- Remorseful Highborne
 					["groups"] = {
@@ -601,14 +601,14 @@ _.Zones =
 				},
 				{	-- The Curse of Zin-Malor
 					["questID"] = 28536,
-					["qg"] = 48660,	-- Sin'dorei Spirit
+					["provider"] = { "n", 48660 },	-- Sin'dorei Spirit
 					["coord"] = { 50.6, 55.0, 83 },
 					["sourceQuest"] = 28519,	-- Pain of the Blood Elves
 				},
 				{	-- The Demon Forge
 					["questID"] = 5127,	-- The Demon Forge
 					["u"] = 40,
-					["qg"] = 10918,	-- Lorax
+					["provider"] = { "n", 10918 },	-- Lorax
 					["sourceQuest"] = 5126,	-- Lorax's Tale
 					["requireSkill"] = 164,	-- Blacksmithing
 					["groups"] = {
@@ -625,24 +625,24 @@ _.Zones =
 				},
 				{	-- The Owlbeasts' Defense
 					["questID"] = 28838,
-					["qg"] = 10929,	-- Haleh
+					["provider"] = { "n", 10929 },	-- Haleh
 					["coord"] = { 58.0, 63.7, 83 },
 					["sourceQuest"] = 28837,	-- Altered Beasts
 				},
 				{	-- The Owls Have It
 					["questID"] = 28638,
-					["qg"] = 49537,	-- Jeb Guthrie
+					["provider"] = { "n", 49537 },	-- Jeb Guthrie
 					["coord"] = { 55.9, 28.2, 83 },
 				},
 				{	-- The Perfect Horns
 					["questID"] = 28631,
-					["qg"] = 10305,	-- Umi Rumplesnicker
+					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 					["coord"] = { 59.3, 49.7, 83 },
 					["sourceQuest"] = 28627,	-- Seril's Boast
 				},
 				{	-- The Pursuit of Umbranse
 					["questID"] = 28847,
-					["qg"] = 50366,	-- Nymn
+					["provider"] = { "n", 50366 },	-- Nymn
 					["coord"] = { 59.6, 50.4, 83 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -652,24 +652,24 @@ _.Zones =
 				},
 				{	-- The Ruins of Kel'Theril
 					["questID"] = 28479,
-					["qg"] = 10920,	-- Kelek Skykeeper
+					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
 					["coord"] = { 46.8, 53.8, 83 },
 				},
 				{	-- The Sands of Silithus
 					["questID"] = 28856,
-					["qg"] = 11118,	-- Innkeeper Vizzie
+					["provider"] = { "n", 11118 },	-- Innkeeper Vizzie
 					["coord"] = { 59.8, 51.1, 83 },
 					["isBreadcrumb"] = true,
 				},
 				{	-- The Videre Elixir
 					["questID"] = 3909,
 					["u"] = 40,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 3908,	-- It's a Secret to Everybody
 				},
 				{	-- Threat of the Winterfall
 					["questID"] = 28460,
-					["qg"] = 9598,	-- Donova Snowden
+					["provider"] = { "n", 9598 },	-- Donova Snowden
 					["coord"] = { 25.1, 58.4, 83 },
 					["sourceQuests"] = {
 						28524,	-- Delivery for Donova
@@ -687,30 +687,30 @@ _.Zones =
 				{	-- Tormented By the Past
 					["questID"] = 5248,
 					["u"] = 40,
-					["qg"] = 10304,	-- Aurora Skycaller
+					["provider"] = { "n", 10304 },	-- Aurora Skycaller
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- Toxic Horrors
 					["questID"] = 5086,
 					["u"] = 40,
-					["qg"] = 9298,	-- Donovan Snowden
+					["provider"] = { "n", 9298 },	-- Donovan Snowden
 					["sourceQuest"] = 5085,	-- Mystery Goo
 				},
 				{	-- Trailing the Spiritspeaker
 					["questID"] = 28848,
-					["qg"] = 10920,	-- Kelek Skykeeper
+					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
 					["coord"] = { 46.8, 53.8, 83 },
 					["sourceQuest"] = 28537,	-- In Pursuit of Shades
 				},
 				{	-- Tree Delivery
 					["questID"] = 28626,
-					["qg"] = 48965,	-- Deez Rocksnitch
+					["provider"] = { "n", 48965 },	-- Deez Rocksnitch
 					["coord"] = { 59.7, 49.6, 83 },
 					["sourceQuest"] = 28625,	-- Chop Chop
 				},
 				{	-- Umbranse's Deliverance
 					["questID"] = 28842,
-					["qg"] = 10929,	-- Haleh
+					["provider"] = { "n", 10929 },	-- Haleh
 					["coord"] = { 58.0, 63.7, 83 },
 					["sourceQuest"] = 28840,	-- Winterwater
 					["groups"] = {
@@ -734,12 +734,12 @@ _.Zones =
 				{	-- Ursius of the Shardtooth
 					["questID"] = 5054,
 					["u"] = 40,
-					["qg"] = 10303,	-- Storm Shadowhoof
+					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
 				},
 				{	-- Where There's Smoke, There's Delicious Meat
 					["questID"] = 28718,
-					["qg"] = 49402,	-- Sana Curtainfire
+					["provider"] = { "n", 49402 },	-- Sana Curtainfire
 					["coord"] = { 48.0, 40.6, 83 },
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28710,	-- Spray it One More Time
@@ -747,7 +747,7 @@ _.Zones =
 				{	-- Wildkin of Elune
 					["questID"] = 4902,
 					["u"] = 40,
-					["qg"] = 7916,	-- Erelas Ambersky
+					["provider"] = { "n", 7916 },	-- Erelas Ambersky
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 4901,	-- Guardians of the Altar
 					["groups"] = {
@@ -768,20 +768,20 @@ _.Zones =
 				{	-- Winterfall Intrusion
 					["questID"] = 5201,
 					["u"] = 40,
-					["qg"] = 10618,	-- Rivern Frostwind
+					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				},
 				{	-- Winterfall Runners
 					["questID"] = 28469,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["coord"] = { 25.1, 58.5, 83 },
 					["sourceQuest"] = 28467,	-- Mystery Goo
 				},
 				{	-- [DEPRECATED] Winterfall Runners
 					["questID"] = 5087,
 					["u"] = 40,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 5086,	-- Toxic Horrors
 				},
 				{	-- Winterwater
@@ -795,7 +795,7 @@ _.Zones =
 				},
 				{	-- Words of the High Chief
 					["questID"] = 28472,
-					["qg"] = 9298,	-- Donova Snowden
+					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["coord"] = { 25.1, 58.5, 83 },
 					["sourceQuest"] = 28471,	-- The Final Piece
 					["groups"] = {
@@ -809,7 +809,7 @@ _.Zones =
 				},
 				{	-- Yetiphobia
 					["questID"] = 28722,
-					["qg"] = 10305,	-- Umi Rumplesnicker
+					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 					["coord"] = { 59.3, 49.7, 83 },
 					["sourceQuests"] = {
 						28629,	-- Are We There, Yeti?
@@ -828,7 +828,7 @@ _.Zones =
 				},
 				{	-- You Gotta Have Eggs
 					["questID"] = 28828,
-					["qg"] = 49396,	-- Jez Goodgrub
+					["provider"] = { "n", 49396 },	-- Jez Goodgrub
 					["coord"] = { 55.9, 28.1, 83 },
 					["groups"] = {
 						i(67220),	-- Goodgrub Cloak

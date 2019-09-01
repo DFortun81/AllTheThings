@@ -150,7 +150,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52878, {	-- Desert Survivors
-						["qg"] = 142054,	-- Kusa
+						["provider"] = { "n", 142054 },	-- Kusa
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {
@@ -202,7 +202,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(51108, {	-- Hivemother Kraxi
-						["qg"] = 130443,	-- Hivemother Kraxi
+						["provider"] = { "n", 130443 },	-- Hivemother Kraxi
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -216,7 +216,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(53885, {	-- Isolated Victory (Faction Assault WQ)
-						["qg"] = 135804,	-- Hoarder Jena <Voldunai Emissary>
+						["provider"] = { "n", 135804 },	-- Hoarder Jena <Voldunai Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
@@ -249,7 +249,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52850, {	-- Keeyo's Champions of Vol'dun
-						["qg"] = 141879,	-- Keeyo
+						["provider"] = { "n", 141879 },	-- Keeyo
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {
@@ -271,7 +271,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(54134, {	-- Many Fine Heroes (Faction Assault WQ)
-						["qg"] = 135446,	-- Vindicator Jaelaana <7th Legion Emissary>
+						["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
@@ -387,7 +387,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52856, {	-- Snakes on a Terrace
-						["qg"] = 141945,	-- Sizzik
+						["provider"] = { "n", 141945 },	-- Sizzik
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {
@@ -465,7 +465,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(52864, {	-- What Do You Mean, Mind Controlling Plants?
-						["qg"] = 141969,	-- Spineleaf
+						["provider"] = { "n", 141969 },	-- Spineleaf
 						["lvl"] = 120,
 						["collectible"] = false,
 						["groups"] = {

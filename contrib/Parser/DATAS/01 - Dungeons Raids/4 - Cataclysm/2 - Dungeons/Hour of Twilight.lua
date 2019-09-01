@@ -15,7 +15,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 			n(-17, {	-- Quests
 				q(30103, {	-- To Wyrmrest!
 					["sourceQuests"] = { 30102 },	-- The Hour of Twilight
-					["qgs"] = { 54548, 54634, 54972, 55779 },	-- Thrall (4 versions, all different areas of the dungeon)
+					["providers"] = {
+						{ "n", 54548 },	-- Thrall (4 versions, all different areas of the dungeon)
+						{ "n", 54634 },
+						{ "n", 54972 },
+						{ "n", 55779 },
+					},
 					["g"] = {
 						i(72858),	-- Safeguard Gloves
 						i(72887),	-- Cinch of the World Shaman
@@ -26,9 +31,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 					["sourceQuests"] = { 30102 },	-- The Hour of Twilight (did not drop for me before completing the chain)
 					["questID"] = 30105,	-- The Twilight Prophet
 					["itemID"] = 77957,	-- Urgent Twilight Missive
-					["qgs"] = {
-						54590,	-- Arcurion
-						54968,	-- Asira Dawnslayer (apparently can drop from this boss if someone queues into the dungeon with the first boss dead)
+					["providers"] = {
+						{ "n", 54590 },	-- Arcurion
+						{ "n", 54968 },	-- Asira Dawnslayer (apparently can drop from this boss if someone queues into the dungeon with the first boss dead)
 					},
 					["g"] = {
 						i(72884),	-- Writhing Wand

@@ -7,7 +7,7 @@ _.Zones =
 		m(21, {	-- Silverpine Forest
 			n(-17, {	-- Quests
 				q(27577, {	-- 7th Legion Battle Plans
-					["qg"] = 45879,	-- Lord Walden
+					["provider"] = { "n", 45879 },	-- Lord Walden
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -32,7 +32,7 @@ _.Zones =
 					},
 				}),
 				q(27510, {	-- A Wolf in Bear's Clothing
-					["qg"] = 45631,	-- High Warlord Cromush
+					["provider"] = { "n", 45631 },	-- High Warlord Cromush
 					["coord"] = { 52.2, 66.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27484 },	-- Only One May Enter
@@ -44,7 +44,7 @@ _.Zones =
 					},
 				}),
 				q(26992, {	-- Agony Abounds
-					["qg"] = 44778,	-- Apothecary Witherbloom
+					["provider"] = { "n", 44778 },	-- Apothecary Witherbloom
 					["coord"] = { 56.7, 9.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
@@ -67,7 +67,7 @@ _.Zones =
 					},
 				}),
 				q(27056, {	-- Belmont's Report
-					["qg"] = 44789,	-- Deathstalker Commander Belmont
+					["provider"] = { "n", 44789 },	-- Deathstalker Commander Belmont
 					["coord"] = { 58.0, 8.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27045 },	-- Waiting to Exsanguinate
@@ -80,13 +80,13 @@ _.Zones =
 					},
 				}),
 				q(27474, {	-- Breaking the Barrier
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 				}),
 				q(27601, {	-- Cities in Dust
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27594 },	-- On Her Majesty's Secret Service
@@ -98,13 +98,13 @@ _.Zones =
 					},
 				}),
 				q(27194, {	-- Cornered and Crushed!
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 44.8, 41.6, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27193 },	-- Seek and Destroy
 				}),
 				q(27476, {	-- Dalar Dawnweaver
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -113,13 +113,13 @@ _.Zones =
 					},
 				}),
 				q(27039, {	-- Dangerous Intentions
-					["qg"] = 44789,	-- Deathstalker Commander Belmont
+					["provider"] = { "n", 44789 },	-- Deathstalker Commander Belmont
 					["coord"] = { 58.0, 8.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26998 },	-- Iterating Upon Success
 				}),
 				q(27094, {	-- Deeper into Darkness
-					["qg"] = 44917,	-- Warlord Torok
+					["provider"] = { "n", 44917 },	-- Warlord Torok
 					["coord"] = { 44.0, 21.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27095 },	-- Skitterweb Menace
@@ -131,20 +131,20 @@ _.Zones =
 					},
 				}),
 				q(27746, {	-- Empire of Dirt
-					["qg"] = 46124,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 46124 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 45.3, 84.4, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27601 },	-- Cities in Dust
 				}),
 				q(27181, {	-- Excising the Taint
-					["qg"] = 45195,	-- Bloodfang Stalker
+					["provider"] = { "n", 45195 },	-- Bloodfang Stalker
 					["coord"] = { 46.1, 50.2, 21 },
 					["races"] = HORDE_ONLY,
 					["description"] = "Available during or after |cFFFFD700Honor the Dead|r.",
 					["sourceQuests"] = { 27180 },	-- Honor the Dead
 				}),
 				q(27575, {	-- From the Belly of the Beast
-					["qg"] = 45878,	-- Lord Godfrey
+					["provider"] = { "n", 45878 },	-- Lord Godfrey
 					["races"] = HORDE_ONLY,
 					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["sourceQuests"] = { 27574 },	-- I Never Forget a Face
@@ -157,19 +157,19 @@ _.Zones =
 					},
 				}),
 				q(27073, {	-- Give 'em Hell!
-					["qg"] = 44917,	-- Warlord Torok
+					["provider"] = { "n", 44917 },	-- Warlord Torok
 					["coord"] = { 43.9, 21.2, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 				}),
 				q(26995, {	-- Guts and Gore
-					["qg"] = 44784,	-- High Apothecary Shana T'veen
+					["provider"] = { "n", 44784 },	-- High Apothecary Shana T'veen
 					["coord"] = { 56.2, 8.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 				}),
 				q(27226, {	-- Hair of the Dog
-					["qg"] = 44917,	-- Warlord Torok
+					["provider"] = { "n", 44917 },	-- Warlord Torok
 					["coord"] = { 45.7, 41.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
@@ -181,7 +181,7 @@ _.Zones =
 					},
 				}),
 				q(27180, {	-- Honor the Dead
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 44.9, 41.6, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
@@ -192,14 +192,14 @@ _.Zones =
 					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
 					["g"] = {
 						q(27574, {	-- I Never Forget a Face
-							["qg"] = 45896,	-- March Crocolisk
+							["provider"] = { "n", 45896 },	-- March Crocolisk
 							["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
 				q(26998, {	-- Iterating Upon Success
-					["qg"] = 44784,	-- High Apothecary Shana T'veen
+					["provider"] = { "n", 44784 },	-- High Apothecary Shana T'veen
 					["coord"] = { 56.2, 8.4, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -214,7 +214,7 @@ _.Zones =
 					},
 				}),
 				q(27088, {	-- It's Only Poisonous if You Ingest It
-					["qg"] = 44912,	-- Apothecary Wormcrud
+					["provider"] = { "n", 44912 },	-- Apothecary Wormcrud
 					["coord"] = { 44.7, 20.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27082 },	-- Playing Dirty
@@ -225,19 +225,19 @@ _.Zones =
 					},
 				}),
 				q(27548, {	-- Lessons in Fear
-					["qg"] = 45879,	-- Lord Walden
+					["provider"] = { "n", 45879 },	-- Lord Walden
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 				}),
 				q(27098, {	-- Lordaeron
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.3, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27099 },	-- No Escape
 				}),
 				q(27093, {	-- Lost in the Darkness
-					["qg"] = 44916,	-- Admiral Hatchet
+					["provider"] = { "n", 44916 },	-- Admiral Hatchet
 					["coord"] = { 44.0, 21.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -246,7 +246,7 @@ _.Zones =
 					},
 				}),
 				q(27099, {	-- No Escape
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 65.7, 26.4, 21 },
 					["sourceQuests"] = { 27097 },	-- Rise, Forsaken
 					["races"] = HORDE_ONLY,
@@ -257,7 +257,7 @@ _.Zones =
 					},
 				}),
 				q(27195, {	-- Nowhere to Run
-					["qg"] = 45228,	-- Master Forteski
+					["provider"] = { "n", 45228 },	-- Master Forteski
 					["coord"] = { 55.8, 46.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27194 },	-- Cornered and Crushed
@@ -269,13 +269,13 @@ _.Zones =
 					},
 				}),
 				q(27547, {	-- Of No Consequence
-					["qg"] = 45880,	-- Baron Ashbury
+					["provider"] = { "n", 45880 },	-- Baron Ashbury
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 				}),
 				q(27594, {	-- On Her Majesty's Secret Service
-					["qg"] = 45878,	-- Lord Godfrey
+					["provider"] = { "n", 45878 },	-- Lord Godfrey
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -287,7 +287,7 @@ _.Zones =
 					},
 				}),
 				q(27484, {	-- Only One May Enter
-					["qg"] = 1938,	-- Dalar Dawnweaver
+					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["coord"] = { 47.0, 43.2, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -296,7 +296,7 @@ _.Zones =
 					},
 				}),
 				q(27096, {	-- Orcs are in Order
-					["qg"] = 44916,	-- Admiral Hatchet
+					["provider"] = { "n", 44916 },	-- Admiral Hatchet
 					["coord"] = { 44.0, 21.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -306,13 +306,13 @@ _.Zones =
 					},
 				}),
 				q(27082, {	-- Playing Dirty
-					["qg"] = 44912,	-- Apothecary Wormcrud
+					["provider"] = { "n", 44912 },	-- Apothecary Wormcrud
 					["coord"] = { 44.7, 20.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 				}),
 				q(27483, {	-- Practical Vengeance
-					["qg"] = 1938,	-- Dalar Dawnweaver
+					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["coord"] = { 47.0, 43.2, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27476 },	-- Dalar Dawnweaver
@@ -333,19 +333,19 @@ _.Zones =
 					},
 				}),
 				q(27550, {	-- Pyrewood's Fall
-					["qg"] = 45878,	-- Lord Godfrey
+					["provider"] = { "n", 45878 },	-- Lord Godfrey
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 				}),
 				q(27231, {	-- Reinforcements from Fenris
-					["qg"] = 44916,	-- Admiral Hatchet
+					["provider"] = { "n", 44916 },	-- Admiral Hatchet
 					["coord"] = { 45.8, 41.9, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
 				}),
 				q(27478, {	-- Relios the Relic Keeper
-					["qg"] = 1938,	-- Dalar Dawnweaver
+					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["coord"] = { 47.0, 43.2, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27476 },	-- Dalar Dawnweaver
@@ -357,25 +357,25 @@ _.Zones =
 					},
 				}),
 				q(27097, {	-- Rise, Forsaken
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.3, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27096 },	-- Orcs are in Order
 				}),
 				q(27472, {	-- Rise, Godfrey
-					["qg"] = 45525,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 45525 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.7, 66.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27438 },	-- The Great Escape
 				}),
 				q(27193, {	-- Seek and Destroy
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 44.8, 41.6, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27181 },	-- Excising the Taint
 				}),
 				q(27095, {	-- Skitterweb Menace
-					["qg"] = 44917,	-- Warlord Torok
+					["provider"] = { "n", 44917 },	-- Warlord Torok
 					["coord"] = { 43.9, 21.2, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -384,7 +384,7 @@ _.Zones =
 					},
 				}),
 				q(27580, {	-- Sowing Discord
-					["qg"] = 45878,	-- Lord Godfrey
+					["provider"] = { "n", 45878 },	-- Lord Godfrey
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -394,7 +394,7 @@ _.Zones =
 					},
 				}),
 				q(27069, {	-- Steel Thunder
-					["qg"] = 44916,	-- Admiral Hatcher
+					["provider"] = { "n", 44916 },	-- Admiral Hatcher
 					["coord"] = { 44.0, 21.3, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
@@ -406,13 +406,13 @@ _.Zones =
 					},
 				}),
 				q(27542, {	-- Taking the Battlefront
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27518 },	-- Transdimensional Warfare: Chapter III
 				}),
 				q(26989, {	-- The Gilneas Liberation Front
-					["qg"] = 44615,	-- Grand Executor Mortuus
+					["provider"] = { "n", 44615 },	-- Grand Executor Mortuus
 					["coord"] = { 57.4, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
@@ -423,13 +423,13 @@ _.Zones =
 					},
 				}),
 				q(26965, {	-- The Warchief Cometh
-					["qg"] = 44615,	-- Grand Executor Mortuus
+					["provider"] = { "n", 44615 },	-- Grand Executor Mortuus
 					["coord"] = { 57.4, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26964 },	-- Warchief's Command: Silverpine Forest!
 				}),
 				q(27065, {	-- The Warchief's Fleet
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.3, 10.1, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27056 },	-- Belmont's Report
@@ -455,7 +455,7 @@ _.Zones =
 					},
 				}),
 				q(27290, {	-- To Forsaken Forward Command
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 44.8, 41.6, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -465,19 +465,19 @@ _.Zones =
 					},
 				}),
 				q(27512, {	-- Transdimensional Warfare: Chapter I
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27484 },	-- Only One May Enter
 				}),
 				q(27513, {	-- Transdimensional Warfare: Chapter II
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27512 },	-- Transdimensional Warfare: Chapter I
 				}),
 				q(27518, {	-- Transdimensional Warfare: Chapter III
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27513 },	-- Transdimensional Warfare: Chapter II
@@ -488,7 +488,10 @@ _.Zones =
 					},
 				}),
 				q(27475, {	-- Unyielding Servitors
-					["qgs"] = { 45610, 45626 },	-- Daschla
+					["providers"] = {
+						{ "n", 45610 },	-- Daschla
+						{ "n", 45626 },	-- Daschla
+					},
 					["coord"] = { 51.8, 64.7, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27472 },	-- Rise, Godfrey
@@ -515,7 +518,7 @@ _.Zones =
 					},
 				}),
 				q(28089, {	-- Warchief's Command: Hillsbrad Foothills!
-					["qg"] = 44640,	-- High Warlord Cromush
+					["provider"] = { "n", 44640 },	-- High Warlord Cromush
 					["races"] = HORDE_ONLY,
 					["altQuests"] = { 27746 },	-- Empire of Dirt
 					["isBreadcrumb"] = true,

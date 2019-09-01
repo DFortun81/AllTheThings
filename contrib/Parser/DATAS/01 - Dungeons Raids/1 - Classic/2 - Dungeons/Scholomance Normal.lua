@@ -12,10 +12,10 @@ _.Instances = { tier(1, {	-- Classic
 			d(1, {		-- Normal
 				n(-17, {	-- Quests
 					q(31447, {	-- An End to the Suffering
-						["qg"] = 64562,	-- Talking Skull
+						["provider"] = { "n", 64562 },	-- Talking Skull
 					}),
 					q(31440, {	-- The Four Tomes
-						["qg"] = 64562,	-- Talking Skull
+						["provider"] = { "n", 64562 },	-- Talking Skull
 					}),
 				}),
 				n(0,   {	-- Zone Drop

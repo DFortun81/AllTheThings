@@ -331,14 +331,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(14, {	-- Normal
 				n(-17, {	-- Quests
 					q(39502, {	-- The Fel Spire
-						["qg"] = 95659,	-- Archmage Khadgar
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["altQuests"] = {
 							39504,	-- The Fel Spire [Heroic]
 							39505,	-- The Fel Spire [Mythic]
 						},
 					}),
 					q(39499, {	-- Well of Souls
-						["qg"] = 95659,	-- Archmage Khadgar
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["altQuests"] = {
 							39500,	-- Well of Souls [Heroic]
 							39501,	-- Well of Souls [Mythic]
@@ -736,11 +736,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(15, {		-- Heroic
 				n(-17, {	-- Quests
 					q(39504, {	-- The Fel Spire [Heroic]
-						["qg"] = 95659,	-- Archmage Khadgar
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["altQuests"] = { 39505 },	-- The Fel Spire [Mythic]
 					}),
 					q(39500, {	-- Well of Souls [Heroic]
-						["qg"] = 95659,	-- Archmage Khadgar
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["altQuests"] = { 39501 },	-- Well of Souls [Mythic]
 					}),
 				}),
@@ -1134,10 +1134,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(16, {		-- Mythic
 				n(-17, {	-- Quests
 					q(39505, {	-- The Fel Spire [Mythic]
-						["qg"] = 95659,	-- Archmage Khadgar
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 					}),
 					q(39501, {	-- Well of Souls [Mythic]
-						["qg"] = 95659,	-- Archmage Khadgar
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 					}),
 				}),
 				n(0, {	-- Zone Drop

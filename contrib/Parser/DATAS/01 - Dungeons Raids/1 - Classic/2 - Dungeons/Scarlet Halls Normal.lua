@@ -12,10 +12,10 @@ _.Instances = { tier(1, {	-- Classic
 			d(1, {		-- Normal
 				n(-17, {	-- Quests
 					q(31493, {	-- Just for Safekeeping, Of Course
-						["qg"] = 64738,	-- Hooded Crusader
+						["provider"] = { "n", 64738 },	-- Hooded Crusader
 					}),
 					q(31490, {	-- Rank and File
-						["qg"] = 64738,	-- Hooded Crusader
+						["provider"] = { "n", 64738 },	-- Hooded Crusader
 					}),
 				}),
 				n(0, { 		-- Zone Drop

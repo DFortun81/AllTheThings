@@ -11,7 +11,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(29807, {	-- Death to the Traitor King
-					["qg"] = 55564,	-- Reclaimer A'zak
+					["provider"] = { "n", 55564 },	-- Reclaimer A'zak
 					["groups"] = {
 						i(44359), 	-- Don Soto's Boots
 						i(44361),	-- Greaves of the Traitor
@@ -20,7 +20,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(29808, {	-- Don't Forget the Eggs!
-					["qg"] = 55564,	-- Reclaimer A'zak
+					["provider"] = { "n", 55564 },	-- Reclaimer A'zak
 					["groups"] = {
 						i(44362), 	-- Expelling Gauntlets
 						i(44365),	-- Gloves of Banished Infliction
@@ -29,7 +29,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(29811, {	-- The Gatewatcher's Talisman
-					["qg"] = 55564,	-- Reclaimer A'zak
+					["provider"] = { "n", 55564 },	-- Reclaimer A'zak
 				}),
 			}),
 			d(1,   {	-- Normal

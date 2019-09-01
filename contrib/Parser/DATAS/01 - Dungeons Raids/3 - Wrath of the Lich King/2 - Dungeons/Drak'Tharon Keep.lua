@@ -10,7 +10,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["groups"] = {
 			n(-17, {	-- Quests 	
 				q(30120,{ 	-- Cleansing Drak'Tharon
-					["qg"] = 58149,	-- Image of Drakuru
+					["provider"] = { "n", 58149 },	-- Image of Drakuru
 					["groups"] = {
 						i(40755), 	-- Enticing Sabatons
 						i(40757),	-- Shackles of Dark Whispers
@@ -19,7 +19,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(13129,{ 	-- Head Games
-					["qg"] = 26664,	-- Kurzel
+					["provider"] = { "n", 26664 },	-- Kurzel
 					["groups"] = {
 						i(44368), 	-- Accused Wristguards
 						i(44369),	-- Disavowed Bracers
@@ -28,7 +28,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(29828, {	-- What the Scourge Dred
-					["qg"] = 26664,	-- Kurzel
+					["provider"] = { "n", 26664 },	-- Kurzel
 				}),
 			}),
 			d(  1, {	-- Normal

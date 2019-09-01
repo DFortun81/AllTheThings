@@ -7,7 +7,7 @@ _.Zones =
 		m(327, {	-- Ahn'Qiraj: The Fallen Kingdom
 			n(-17, {	-- Quests
 				q(8700, {	-- Band of Unending Life
-					["qg"] = 15498,	-- Windcaller Yessendra
+					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 11 },	-- Druid
 					["g"] = {
@@ -15,7 +15,7 @@ _.Zones =
 					},
 				}),
 				q(8699, {	-- Band of Vaulted Secrets
-					["qg"] = 15498,	-- Windcaller Yessendra
+					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 8 },	-- Mage
 					["g"] = {
@@ -23,7 +23,7 @@ _.Zones =
 					},
 				}),
 				q(8701, {	-- Band of Veiled Shadows
-					["qg"] = 15498,	-- Windcaller Yessendra
+					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 4 },	-- Rogue
 					["g"] = {
@@ -31,7 +31,7 @@ _.Zones =
 					},
 				}),
 				q(8711, {	-- Blade of Eternal Justice
-					["qg"] = 15499,	-- Warden Haro
+					["provider"] = { "n", 15499 },	-- Warden Haro
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 2 },	-- Paladin
 					["g"] = {
@@ -39,7 +39,7 @@ _.Zones =
 					},
 				}),
 				q(8707, {	-- Blade of Vaulted Secrets
-					["qg"] = 15499,	-- Warden Haro
+					["provider"] = { "n", 15499 },	-- Warden Haro
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 8 },	-- Mage
 					["g"] = {
@@ -47,7 +47,7 @@ _.Zones =
 					},
 				}),
 				q(8695, {	-- Cape of Eternal Justice
-					["qg"] = 15500,	-- Keyl Swiftclaw
+					["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 2 },	-- Paladin
 					["g"] = {
@@ -55,7 +55,7 @@ _.Zones =
 					},
 				}),
 				q(8692, {	-- Cloak of Unending Life
-					["qg"] = 15500,	-- Keyl Swiftclaw
+					["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 11 },	-- Druid
 					["g"] = {
@@ -63,7 +63,7 @@ _.Zones =
 					},
 				}),
 				q(8693, {	-- Cloak of Veiled Shadows
-					["qg"] = 15500,	-- Keyl Swiftclaw
+					["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 4 },	-- Rogue
 					["g"] = {
@@ -71,7 +71,7 @@ _.Zones =
 					},
 				}),
 				q(8690, {	-- Cloak of the Gathering Storm
-					["qg"] = 15500,	-- Keyl Swiftclaw
+					["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 7 },	-- Shaman
 					["g"] = {
@@ -79,7 +79,7 @@ _.Zones =
 					},
 				}),
 				q(8696, {	-- Cloak of the Unseen Path
-					["qg"] = 15500,	-- Keyl Swiftclaw
+					["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 3 },	-- Hunter
 					["g"] = {
@@ -87,7 +87,7 @@ _.Zones =
 					},
 				}),
 				q(8709, {	-- Dagger of Veiled Shadows
-					["qg"] = 15499,	-- Warden Haro
+					["provider"] = { "n", 15499 },	-- Warden Haro
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 4 },	-- Rogue
 					["g"] = {
@@ -95,7 +95,7 @@ _.Zones =
 					},
 				}),
 				q(8557, {	-- Drape of Unyielding Strength
-					["qg"] = 15500,	-- Keyl Swiftclaw
+					["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 1 },	-- Warrior
 					["g"] = {
@@ -103,7 +103,7 @@ _.Zones =
 					},
 				}),
 				q(8691, {	-- Drape of Vaulted Secrets
-					["qg"] = 15500,	-- Keyl Swiftclaw
+					["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 8 },	-- Mage
 					["g"] = {
@@ -111,7 +111,7 @@ _.Zones =
 					},
 				}),
 				q(8705, {	-- Gavel of Infinite Wisdom
-					["qg"] = 15499,	-- Warden Haro
+					["provider"] = { "n", 15499 },	-- Warden Haro
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 5 },	-- Priest
 					["g"] = {
@@ -119,7 +119,7 @@ _.Zones =
 					},
 				}),
 				q(8706, {	-- Hammer of the Gathering Storm
-					["qg"] = 15499,	-- Warden Haro
+					["provider"] = { "n", 15499 },	-- Warden Haro
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 7 },	-- Shaman
 					["g"] = {
@@ -127,7 +127,7 @@ _.Zones =
 					},
 				}),
 				q(8710, {	-- Kris of Unspoken Names
-					["qg"] = 15499,	-- Warden Haro
+					["provider"] = { "n", 15499 },	-- Warden Haro
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 9 },	-- Warlock
 					["g"] = {
@@ -135,7 +135,7 @@ _.Zones =
 					},
 				}),
 				q(8708, {	-- Mace of Unending Life
-					["qg"] = 15499,	-- Warden Haro
+					["provider"] = { "n", 15499 },	-- Warden Haro
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 11 },	-- Druid
 					["g"] = {
@@ -143,7 +143,7 @@ _.Zones =
 					},
 				}),
 				q(8703, {	-- Ring of Eternal Justice
-					["qg"] = 15498,	-- Windcaller Yessendra
+					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 2 },	-- Paladin
 					["g"] = {
@@ -151,7 +151,7 @@ _.Zones =
 					},
 				}),
 				q(8697, {	-- Ring of Infinite Wisdom
-					["qg"] = 15498,	-- Windcaller Yessendra
+					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 5 },	-- Priest
 					["g"] = {
@@ -159,7 +159,7 @@ _.Zones =
 					},
 				}),
 				q(8702, {	-- Ring of Unspoken Names
-					["qg"] = 15498,	-- Windcaller Yessendra
+					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 9 },	-- Warlock
 					["g"] = {
@@ -167,7 +167,7 @@ _.Zones =
 					},
 				}),
 				q(8698, {	-- Ring of the Gathering Storm
-					["qg"] = 15498,	-- Windcaller Yessendra
+					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 7 },	-- Shaman
 					["g"] = {
@@ -175,7 +175,7 @@ _.Zones =
 					},
 				}),
 				q(8712, {	-- Scythe of the Unseen Path
-					["qg"] = 15499,	-- Warden Haro
+					["provider"] = { "n", 15499 },	-- Warden Haro
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 3 },	-- Hunter
 					["g"] = {
@@ -183,7 +183,7 @@ _.Zones =
 					},
 				}),
 				q(8689, {	-- Shroud of Infinite Wisdom
-					["qg"] = 15500,	-- Keyl Swiftclaw
+					["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 5 },	-- Priest
 					["g"] = {
@@ -191,7 +191,7 @@ _.Zones =
 					},
 				}),
 				q(8694, {	-- Shroud of Unspoken Names
-					["qg"] = 15500,	-- Keyl Swiftclaw
+					["provider"] = { "n", 15500 },	-- Keyl Swiftclaw
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 9 },	-- Warlock
 					["g"] = {
@@ -199,7 +199,7 @@ _.Zones =
 					},
 				}),
 				q(8558, {	-- Sickle of Unyielding Strength
-					["qg"] = 15499,	-- Warden Haro
+					["provider"] = { "n", 15499 },	-- Warden Haro
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 1 },	-- Warrior
 					["g"] = {
@@ -207,7 +207,7 @@ _.Zones =
 					},
 				}),
 				q(8556, {	-- Signet of Unyielding Strength
-					["qg"] = 15498,	-- Windcaller Yessendra
+					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 1 },	-- Warrior
 					["g"] = {
@@ -215,7 +215,7 @@ _.Zones =
 					},
 				}),
 				q(8704, {	-- Signet of the Unseen path
-					["qg"] = 15498,	-- Windcaller Yessendra
+					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },
 					["classes"] = { 3 },	-- Hunter
 					["g"] = {

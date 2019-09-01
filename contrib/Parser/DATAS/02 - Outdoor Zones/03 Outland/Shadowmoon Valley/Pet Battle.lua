@@ -19,7 +19,7 @@ _.Zones =
 					["crs"] = { 62314 },	-- Tainted Cockroach
 				}),
 				q(31920, {	-- Grand Master Antari
-					["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+					["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
 					["coord"] = { 30.4, 41.8, 104 },
 					["sourceQuests"] = { 
 						31919,	-- Battle Pet Tamers: Outland (Alliance Version)
@@ -30,19 +30,19 @@ _.Zones =
 					["sourceQuests"] = { 31920 },	-- Grand Master Antari
 					["coord"] = { 30.4, 41.8, 104 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+					["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
 				}),
 				q(31982, {	-- Exceeding Expectations
 					["sourceQuests"] = { 31920 },	-- Grand Master Antari
 					["coord"] = { 30.4, 41.8, 104 },
 					["races"] = HORDE_ONLY,
-					["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+					["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
 				}),						
 				q(31926, { 	-- Grand Master Antari
 					["sourceQuests"] = { 31920 },	-- Grand Master Antari
 					["isDaily"] = true,					
 					["coord"] = { 30.6, 41.8, 104 },
-					["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+					["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
 					["g"] = {
 						i(89125)	-- Sack of Pet Supplies
 					},

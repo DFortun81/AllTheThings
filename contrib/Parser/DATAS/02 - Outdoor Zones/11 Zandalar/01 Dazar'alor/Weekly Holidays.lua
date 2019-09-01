@@ -10,7 +10,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					q(53034, {	-- A Shattered Path Through Time [Timewalking]
-						["qg"] = 144384,		-- Chronicler Shoopa
+						["provider"] = { "n", 144384 },		-- Chronicler Shoopa
 						["isWeekly"] = true,
 						["coord"] = { 56.63, 88.61, 1165 },
 						["g"] = {
@@ -28,7 +28,7 @@ _.Zones =
 						},
 					}),
 					q(53037, {	-- Emissary of War [4 Mythic Dungeons]
-						["qg"] = 144384,		-- Chronicler Shoopa
+						["provider"] = { "n", 144384 },		-- Chronicler Shoopa
 						["isWeekly"] = true,
 						["coord"] = { 56.63, 88.61, 1165 },
 						["g"] = {
@@ -46,7 +46,7 @@ _.Zones =
 						},
 					}),
 					q(47148, {	-- Something Different
-						["qg"] = 144384,		-- Chronicler Shoopa
+						["provider"] = { "n", 144384 },		-- Chronicler Shoopa
 						["isWeekly"] = true,
 						["coord"] = { 56.63, 88.61, 1165 },
 						["g"] = {
@@ -61,7 +61,7 @@ _.Zones =
 						},
 					}),
 					q(53039, {	-- The Arena Calls
-						["qg"] = 144384,		-- Chronicler Shoopa
+						["provider"] = { "n", 144384 },		-- Chronicler Shoopa
 						["isWeekly"] = true,
 						["coord"] = { 56.63, 88.61, 1165 },
 						["g"] = {
@@ -69,12 +69,12 @@ _.Zones =
 						},
 					}),
 					q(53038, {	-- The Very Best [Pet Battles]
-						["qg"] = 144384,	-- Chronicler Shoopa
+						["provider"] = { "n", 144384 },	-- Chronicler Shoopa
 						["isWeekly"] = true,
 						["coord"] = { 56.63, 88.61, 1165 },
 					}),
 					q(53030, {	-- The World Awaits
-						["qg"] = 144384,	-- Chronicler Shoopa
+						["provider"] = { "n", 144384 },	-- Chronicler Shoopa
 						["isWeekly"] = true,
 						["coord"] = { 56.63, 88.61, 1165 },
 					}),

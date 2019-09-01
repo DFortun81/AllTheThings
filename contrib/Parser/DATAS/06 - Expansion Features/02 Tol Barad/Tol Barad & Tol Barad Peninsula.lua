@@ -851,7 +851,7 @@ _.ExpansionFeatures =
 							["lvl"] = 90,
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["qg"] = 51288,	-- Major Marsden
+							["provider"] = { "n", 51288 },	-- Major Marsden
 							["timeline"] = {
 								"added 4.0.3.13277",
 							},
@@ -863,7 +863,7 @@ _.ExpansionFeatures =
 							["lvl"] = 90,
 							["isWeekly"] = true,
 							["races"] = HORDE_ONLY,
-							["qg"] = 51287,	-- Colonel Karzag
+							["provider"] = { "n", 51287 },	-- Colonel Karzag
 							["timeline"] = {
 								"added 4.0.3.13277",
 							},

@@ -10,14 +10,14 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(-17, {	-- Quests
 				q(33513, {	-- Blackthorn's Lieutenants
-					["qgs"] = {
-						74367,	-- Koristrasza
-						74888,	-- Koristrasza
+					["providers"] = {
+						{ "n", 74367 },	-- Koristrasza
+						{ "n", 74888 },	-- Koristrasza
 					},
 				}),
 				q(3341,  {	-- Bring the End
 					["races"] = HORDE_ONLY,
-					["qg"] = 2308,	-- Andrew Brownell
+					["provider"] = { "n", 2308 },	-- Andrew Brownell
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(10823)),	-- Vanquisher's Sword
@@ -26,7 +26,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(3636,  {	-- Bring the Light
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1284,	-- Archbishop Benedictus
+					["provider"] = { "n", 1284 },	-- Archbishop Benedictus
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(10823)),	-- Vanquisher's Sword
@@ -35,22 +35,22 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(27022, {	-- Extinguishing the Idol
 					["sourceQuests"] = { 27019 },	-- Scourge of the Downs
-					["qg"] = 8516,	-- Belnistrasz
+					["provider"] = { "n", 8516 },	-- Belnistrasz
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(10710)),	-- Dragonclaw Ring
 					},
 				}),
 				q(27024, {	-- Partners in Crime
-					["qg"] = 44837,	-- Koristrasza
+					["provider"] = { "n", 44837 },	-- Koristrasza
 					["u"] = 40,
 				}),
 				q(27019, {	-- Scourge of the Downs
-					["qg"] = 8516,	-- Belnistrasz
+					["provider"] = { "n", 8516 },	-- Belnistrasz
 					["u"] = 40,	-- Legacy Quests
 				}),
 				q(27009, {	-- The Coldbringer
-					["qg"] = 44837,	-- Koristrasza
+					["provider"] = { "n", 44837 },	-- Koristrasza
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						i(65996),	-- Belt of Tyrannic Rule
@@ -61,9 +61,9 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(33514, {	-- The Ritual
-					["qgs"] = {
-						74367,	-- Koristrasza
-						74888,	-- Koristrasza
+					["providers"] = {
+						{ "n", 74367 },	-- Koristrasza
+						{ "n", 74888 },	-- Koristrasza
 					},
 					["g"] = {
 						i(65996),	-- Belt of Tyrannic Rule

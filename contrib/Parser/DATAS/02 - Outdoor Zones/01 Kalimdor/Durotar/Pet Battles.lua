@@ -53,7 +53,7 @@ _.Zones =
 					},
 				}),
 				q(31813, {	-- Dagra the Fierce
-					["qg"] = 66126,	-- Zunta
+					["provider"] = { "n", 66126 },	-- Zunta
 					["coord"] = { 43.9, 28.9, 1 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -61,31 +61,31 @@ _.Zones =
 					},
 				}),
 				q(31570, {	-- Got one!
-					["qg"] = 63061,	-- Narzak
+					["provider"] = { "n", 63061 },	-- Narzak
 					["coord"] = { 52.7, 41.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31830,	-- Level Up!
 				}),
 				q(31571, {	-- Learning the Ropes
-					["qg"] = 63061,	-- Narzak
+					["provider"] = { "n", 63061 },	-- Narzak
 					["coord"] = { 52.7, 41.3, 1 },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31830, {	-- Level Up!
-					["qg"] = 63061,	-- Narzak
+					["provider"] = { "n", 63061 },	-- Narzak
 					["coord"] = { 52.7, 41.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31572,	-- On The Mend
 				}),
 				q(31572, {	-- On The Mend
-					["qg"] = 63061,	-- Narzak
+					["provider"] = { "n", 63061 },	-- Narzak
 					["coord"] = { 52.7, 41.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31571,	-- Learning the Ropes
 				}),
 				q(31818, {	-- Zunta
-					["qg"] = 66126,	-- Zunta
+					["provider"] = { "n", 66126 },	-- Zunta
 					["coord"] = { 43.9, 28.9, 1 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

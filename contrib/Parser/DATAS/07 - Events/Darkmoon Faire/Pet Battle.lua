@@ -16,7 +16,7 @@ _.WorldEvents =
 					i(73953),	-- Sea Pony
 				}),
 				q(36471, {	-- A New Darkmoon Challenger!
-					["qg"] = 85519,	-- Christoph VonFeasel
+					["provider"] = { "n", 85519 },	-- Christoph VonFeasel
 					["coord"] = { 47.4, 62.2, 407 },
 					["isDaily"] = true,
 					["g"] = {
@@ -29,7 +29,7 @@ _.WorldEvents =
 					},
 				}),	
 				q(32175, {	-- Darkmoon Pet Battle!
-					["qg"] = 67370,	-- Jeremy Feasel
+					["provider"] = { "n", 67370 },	-- Jeremy Feasel
 					["coord"] = { 47.8, 62.6, 407 },
 					["isDaily"] = true,
 					["g"] = {

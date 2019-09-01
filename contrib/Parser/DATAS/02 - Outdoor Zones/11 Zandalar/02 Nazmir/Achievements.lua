@@ -146,7 +146,7 @@ _.Zones =
 					["g"] = {
 						{	-- Nazwathan Relic
 							["itemID"] = 157802,
-							["qg"] = 133845,	-- Jani
+							["provider"] = { "n", 133845 },	-- Jani
 							["questID"] = 50441,	-- Loot Treasure
 							["sourceQuest"] = 50440,	--  Item Turn-In
 							["coord"] = { 68.50, 32.77, 863 },	-- Nazmir (Nazwatha)
@@ -160,7 +160,7 @@ _.Zones =
 									["questID"] = 50440,	-- Item Turn-In
 									["npcID"] = -599,	-- Communing with Jani
 									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["qg"] = 133845,	-- Jani
+									["provider"] = { "n", 133845 },	-- Jani
 									["coord"] = { 68.50, 32.77 },
 									["sourceQuests"] = {
 										51145,	-- Curse of Jani [Alliance]
@@ -172,7 +172,7 @@ _.Zones =
 						},
 						{	-- Snapjaw Tail
 							["itemID"] = 157801,	-- Snapjaw Tail
-							["qg"] = 133840,	-- Jani
+							["provider"] = { "n", 133840 },	-- Jani
 							["questID"] = 50437,	-- Loot Treasure
 							["sourceQuest"] = 50436,	-- Item Turn-In
 							["coord"] = { 34.04, 75.07, 863 },
@@ -184,7 +184,7 @@ _.Zones =
 								{	-- Communing with Jani
 									["npcID"] = -601,	-- Communing with Jani
 									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["qg"] = 133840,	-- Jani
+									["provider"] = { "n", 133840 },	-- Jani
 									["questID"] = 50436,	-- Item Turn-In
 									["sourceQuests"] = {
 										51145,	-- Curse of Jani [Alliance]
@@ -196,7 +196,7 @@ _.Zones =
 							},
 						},
 						{	-- Taking the Loa Road
-							["qg"] = 136608,	-- Jani
+							["provider"] = { "n", 136608 },	-- Jani
 							["questID"] = 50444,	-- Taking the Loa Road
 							["coord"] = { 53.99, 74.14, 863 },
 							["description"] = "Click on trash pile to start quest.",
@@ -210,7 +210,7 @@ _.Zones =
 						},
 						{	-- Vilescale Pearl
 							["itemID"] = 157797,	-- Vilescale Pearl
-							["qg"] = 133828,	-- Jani
+							["provider"] = { "n", 133828 },	-- Jani
 							["questID"] = 50435,	-- Loot Treasure
 							["coord"] = { 80.86, 46.79, 863 },	-- Nazmir (Krag'wa's Shore)
 							["sourceQuest"] = 50434,	-- Item Turn-In
@@ -224,7 +224,7 @@ _.Zones =
 								{	-- Communing with Jani
 									["npcID"] = -600,	-- Communing with Jani
 									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["qg"] = 133828,	-- Jani
+									["provider"] = { "n", 133828 },	-- Jani
 									["questID"] = 50434,	-- Item Turn-In
 									["coord"] = { 80.86, 46.79, 863 },
 									["sourceQuests"] = {

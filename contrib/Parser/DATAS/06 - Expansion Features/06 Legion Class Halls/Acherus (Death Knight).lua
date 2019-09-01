@@ -40,55 +40,55 @@ _.ExpansionFeatures =
 					}),
 					--Followers Sort Later
 					q(44247, {	-- Champion: Amal'thazad
-						["qg"] = 93555,		-- Amal'thazad
+						["provider"] = { "n", 93555 },		-- Amal'thazad
 						["groups"] = {
 							follower(854),	-- Amal'thazad
 						},
 					}),
 					q(44245, {	-- Champion: High Inquisitor Whitemane
-						["qg"] = 113481,	-- High Inquisitor Whitemane
+						["provider"] = { "n", 113481 },	-- High Inquisitor Whitemane
 						["groups"] = {
 							follower(839),	-- High Inquisitor Whitemane
 						},
 					}),
 					q(44248, {	-- Champion: Darion Mograine
-						["qg"] = 113695,	-- Highlord Darion Mograine
+						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
 						["groups"] = {
 							follower(855),	-- Highlord Darion Mograine
 						},
 					}),
 					q(44244, {	-- Champion: Koltira Deathweaver
-						["qg"] = 93453,		-- Koltira Deathweaver
+						["provider"] = { "n", 93453 },		-- Koltira Deathweaver
 						["groups"] = {
 							follower(599),	-- Koltira Deathweaver
 						},
 					}),
 					q(46050, {	-- Champion: Minerva Ravensorrow
-						["qg"] = 95900,		-- Minerva Ravensorrow
+						["provider"] = { "n", 95900 },		-- Minerva Ravensorrow
 						["groups"] = {
 							follower(1003),	-- Minerva Ravensorrow
 						},
 					}),
 					q(39818, {	-- Champion: Nazgrim
-						["qg"] = 108975,	-- Rottgut
+						["provider"] = { "n", 108975 },	-- Rottgut
 						["groups"] = {
 							follower(586),	-- Nazgrim
 						},
 					}),
 					q(44246, {	-- Champion: Rottgut
-						--["qg"] = ,		-- Cant find QG
+						--["provider"] = { "n",  },		-- Cant find QG
 						["groups"] = {
 							follower(853),	-- Rottgut
 						},
 					}),
 					q(39816, {	-- Champion: Thassarian
-						--["qg"] = ,		-- Cant find QG
+						--["provider"] = { "n",  },		-- Cant find QG
 						["groups"] = {
 							follower(584),	-- Thassarian
 						},
 					}),
 					q(44243, {	-- Champion: Thoras Trollbane
-						["qg"] = 113419,	-- King Thoras Trollbane
+						["provider"] = { "n", 113419 },	-- King Thoras Trollbane
 						["groups"] = {
 							follower(838),	-- Thoras Trollbane
 						},

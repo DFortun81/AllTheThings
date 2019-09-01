@@ -9,7 +9,7 @@ _.Zones =
 				prof(171, {	-- Alchemy
 					n(-17, {	-- Quests
 						q(29481, {	-- Elixir Master
-							["qg"] = 4160,	-- Ainethil (Darnassus)
+							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -24,7 +24,7 @@ _.Zones =
 							},]]							
 						}),
 						q(29067, {	-- Potion Master
-							["qg"] = 4160,	-- Ainethil (Darnassus)
+							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -39,7 +39,7 @@ _.Zones =
 							},]]	
 						}),
 						q(29482, {	-- Transmutation Master
-							["qg"] = 4160,	-- Ainethil (Darnassus)
+							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = 171,	-- Alchemy
@@ -63,7 +63,7 @@ _.Zones =
 					}),
 					n(-17, { 	-- Quests
 						q(29316, {	-- Back to Basics
-							["qg"] = 4210,	-- Alegorn
+							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -75,7 +75,7 @@ _.Zones =
 							},
 						}),
 						q(29314, {	-- Remembering the Ancestors
-							["qg"] = 4210,	-- Alegorn
+							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -87,7 +87,7 @@ _.Zones =
 							},
 						}),
 						q(29318, {	-- Ribs for the Sentinels
-							["qg"] = 4210,	-- Alegorn
+							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -99,7 +99,7 @@ _.Zones =
 							},
 						}),	
 						q(29357, {	-- Spice Bread Aplenty
-							["qg"] = 4210,	-- Alegorn
+							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -111,7 +111,7 @@ _.Zones =
 							},
 						}),
 						q(29313, {	-- The Secret to Perfect Kimchi
-							["qg"] = 4210,	-- Alegorn
+							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
@@ -132,7 +132,7 @@ _.Zones =
 					}),
 					n(-17, { 	-- Quests
 						q(29325, {	-- A Slippery Snack
-							["qg"] = 4156,	-- Astaia
+							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 129,	-- Fishing
@@ -149,7 +149,7 @@ _.Zones =
 							},
 						}),
 						q(29359, {	-- An Old Favorite
-							["qg"] = 4156,	-- Astaia
+							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 129,	-- Fishing
@@ -166,7 +166,7 @@ _.Zones =
 							},
 						}),
 						q(29321, {	-- Happy as a Clam Digger
-							["qg"] = 4156,	-- Astaia
+							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 129,	-- Fishing
@@ -183,7 +183,7 @@ _.Zones =
 							},
 						}),
 						q(29323, {	-- Stocking Up
-							["qg"] = 4156,	-- Astaia
+							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 129,	-- Fishing
@@ -200,7 +200,7 @@ _.Zones =
 							},
 						}),
 						q(29324, {	-- The Sister's Pendant
-							["qg"] = 4156,	-- Astaia
+							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
 							["requireSkill"] = 129,	-- Fishing
@@ -221,7 +221,7 @@ _.Zones =
 				prof(165, {	-- Leatherworking
 					n(-17, { 	-- Quests
 						q(1582, {	-- Moonglow Vest
-							["qg"] = 6034,	-- Lotherias
+							["provider"] = { "n", 6034 },	-- Lotherias
 							["coord"] = { 60.4, 37.0, 89 },
 							["requireSkill"] = 165,	-- Leatherworking
 							["races"] = ALLIANCE_ONLY,

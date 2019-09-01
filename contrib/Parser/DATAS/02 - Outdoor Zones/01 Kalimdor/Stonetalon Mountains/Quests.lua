@@ -55,19 +55,19 @@ _.Zones =
 				{	-- A Gnome's Respite
 					["questID"] = 1071,
 					["u"] = 40,
-					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["provider"] = { "n", 4077 },	-- Gaxim Rustfizzle
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1085,	-- On Guard in Stonetalon
 				},
 				{	-- A Proper Peace Offerin'
 					["questID"] = 25837,
-					["qg"] = 41278,	-- "Cookie" McWeaksauce
+					["provider"] = { "n", 41278 },	-- "Cookie" McWeaksauce
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25834,	-- Death by Proxy
 				},
 				{	-- A Special Kind of Job
 					["questID"] = 25821,
-					["qg"] = 41277,	-- Lieutenant Paulson
+					["provider"] = { "n", 41277 },	-- Lieutenant Paulson
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25808,	-- Is This Thing On?
@@ -77,13 +77,13 @@ _.Zones =
 				},
 				{	-- All's Clear
 					["questID"] = 25852,
-					["qg"] = 41229,	-- Force Commander Valen
+					["provider"] = { "n", 41229 },	-- Force Commander Valen
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25851,	-- Dances with Grimtotem
 				},
 				{	-- All's Quiet on the Southern Front
 					["questID"] = 26073,
-					["qg"] = 3995,	-- Witch Doctor Jin'Zil
+					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 					["coord"] = { 71.1, 91.2, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -93,27 +93,27 @@ _.Zones =
 				},
 				{	-- Alliance Attack Plans
 					["questID"] = 26002,
-					["qg"] = 40901,	-- Blastgineer Fuzzwhistle
+					["provider"] = { "n", 40901 },	-- Blastgineer Fuzzwhistle
 					["coord"] = { 73.2, 56.6, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26001,	-- The Missing Blastgineer
 				},
 				{	-- And That's Why They Call Them Peons...
 					["questID"] = 26047,
-					["qg"] = 41992,	-- Blastgineer Igore
+					["provider"] = { "n", 41992 },	-- Blastgineer Igore
 					["coord"] = { 67.2, 64.5, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
 				},
 				{	-- Arcane Legacy
 					["questID"] = 25766,
-					["qg"] = 40899,	-- Arcanist Valdurian
+					["provider"] = { "n", 40899 },	-- Arcanist Valdurian
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				},
 				{	-- Armaments for War
 					["questID"] = 25822,
-					["qg"] = 41229,	-- Force Commander Valen
+					["provider"] = { "n", 41229 },	-- Force Commander Valen
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25845,	-- Terms of Service
 					["groups"] = {
@@ -124,13 +124,13 @@ _.Zones =
 				},
 				{	-- Ascending the Vale
 					["questID"] = 25930,
-					["qg"] = 41487,	-- Hierophant Malyk
+					["provider"] = { "n", 41487 },	-- Hierophant Malyk
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				},
 				{	-- Ashes to Ashes
 					["questID"] = 26010,
-					["qg"] = 41023,	-- Overlord Krom'gar
+					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
 					["coord"] = { 66.0, 63.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
@@ -142,13 +142,13 @@ _.Zones =
 				},
 				{	-- Back to the Depths!
 					["questID"] = 25914,
-					["qg"] = 41488,	-- Sentinel Mistress Geleneth
+					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				},
 				{	-- Barrier to Entry
 					["questID"] = 25999,
-					["qg"] = 34341,	-- Saurboz
+					["provider"] = { "n", 34341 },	-- Saurboz
 					["coord"] = { 74.3, 47.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25945,	-- We're Here to Do One Thing, Maybe Two...
@@ -161,21 +161,21 @@ _.Zones =
 				},
 				{	-- Beginning of the End
 					["questID"] = 26074,
-					["qg"] = 41023,	-- Overlord Krom'gar
+					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
 					["coord"] = { 66.1, 63.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front
 				},
 				{	-- Betrayal at the Grove
 					["questID"] = 26098,
-					["qg"] = 42091,	-- Orthus Cliffwalker
+					["provider"] = { "n", 42091 },	-- Orthus Cliffwalker
 					["coord"] = { 39.6, 46.4, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26097,	-- Proof of Lies
 				},
 				{	-- Between a Rock and a Hard Place
 					["questID"] = 26046,
-					["qg"] = 41990,	-- Scout Utvoch
+					["provider"] = { "n", 41990 },	-- Scout Utvoch
 					["coord"] = { 67.0, 64.5, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
@@ -183,7 +183,7 @@ _.Zones =
 				{	-- Bloodfury Bloodline
 					["questID"] = 6283,
 					["u"] = 40,
-					["qg"] = 11860,	-- Maggran Earthbinder
+					["provider"] = { "n", 11860 },	-- Maggran Earthbinder
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(16987)),	-- Screecher Belt
@@ -192,7 +192,7 @@ _.Zones =
 				},
 				{	-- Bombs Away: Mirkfallon Post!
 					["questID"] = 25768,
-					["qg"] = 40896,	-- Lord Fallowmere
+					["provider"] = { "n", 40896 },	-- Lord Fallowmere
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25769,	-- Fallowmere Beckons
 					["groups"] = {
@@ -231,13 +231,13 @@ _.Zones =
 				},
 				{	-- Capturing Memories
 					["questID"] = 25767,
-					["qg"] = 40900,	-- Neophyte Starcrest
+					["provider"] = { "n", 40900 },	-- Neophyte Starcrest
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				},
 				{	-- Commandeer That Balloon!
 					["questID"] = 25652,
-					["qg"] = 40879,	-- Boog the "Gear Whisperer"
+					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25650,	-- Orders from High Command
 					["groups"] = {
@@ -248,14 +248,14 @@ _.Zones =
 				},
 				{	-- Da Voodoo: Ram Horns
 					["questID"] = 26061,
-					["qg"] = 3995,	-- Witch Doctor Jin'Zil
+					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 					["coord"] = { 71.1, 91.2, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 				},
 				{	-- Da Voodoo: Resonite Crystal
 					["questID"] = 26062,
-					["qg"] = 3995,	-- Witch Doctor Jin'Zil
+					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 					["coord"] = { 71.1, 91.2, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -265,14 +265,14 @@ _.Zones =
 				},
 				{	-- Da Voodoo: Stormer Heart
 					["questID"] = 26060,
-					["qg"] = 3995,	-- Witch Doctor Jin'Zil
+					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 					["coord"] = { 71.1, 91.2, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 				},
 				{	-- Dances with Grimtotem
 					["questID"] = 25851,
-					["qg"] = 11858,	-- Grundig Darkcloud
+					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25848,	-- Downfall
 					["groups"] = {
@@ -285,25 +285,25 @@ _.Zones =
 				},
 				{	-- Death by Proxy
 					["questID"] = 25834,
-					["qg"] = 41229,	-- Force Commander Valen
+					["provider"] = { "n", 41229 },	-- Force Commander Valen
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25821,	-- A Special Kind of Job
 				},
 				{	-- Don't Look Them in the Eyes
 					["questID"] = 25642,
-					["qg"] = 40879,	-- Boog the "Gear Whisperer"
+					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine!
 				},
 				{	-- Downfall
 					["questID"] = 25848,
-					["qg"] = 11858,	-- Grundig Darkcloud
+					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25847,	-- Grimtotem Supremacy
 				},
 				{	-- Dream of a Better Tomorrow
 					["questID"] = 26026,
-					["qg"] = 40907,	-- Clarissa
+					["provider"] = { "n", 40907 },	-- Clarissa
 					["coord"] = { 66.0, 64.1, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
@@ -311,7 +311,7 @@ _.Zones =
 				{	-- Earthen Arise
 					["questID"] = 6481,
 					["u"] = 40,
-					["qg"] = 11861,	-- Mor'rogal
+					["provider"] = { "n", 11861 },	-- Mor'rogal
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(16981)),	-- Owlbeard Bracers
@@ -320,21 +320,21 @@ _.Zones =
 				},
 				{	-- Enemy of the Horde: Marshal Paltrow
 					["questID"] = 26011,
-					["qg"] = 40903,	-- Spy-Mistress Anara
+					["provider"] = { "n", 40903 },	-- Spy-Mistress Anara
 					["coord"] = { 65.7, 63.2, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 				},
 				{	-- Eyes and Ears: Malaka'jin
 					["questID"] = 26059,
-					["qg"] = 41023,	-- Overlord Krom'gar
+					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
 					["coord"] = { 66.1, 63.6, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress
 				},
 				{	-- Fallowmere Beckons
 					["questID"] = 25769,
-					["qg"] = 40899,	-- Arcanist Valdurian
+					["provider"] = { "n", 40899 },	-- Arcanist Valdurian
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25766,	-- Arcane Legacy
@@ -343,27 +343,27 @@ _.Zones =
 				},
 				{	-- Fight On Their Stomachs
 					["questID"] = 26064,
-					["qg"] = 3411,	-- Denni'ka
+					["provider"] = { "n", 3411 },	-- Denni'ka
 					["coord"] = { 72.0, 91.2, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 				},
 				{	-- Final Delivery
 					["questID"] = 26077,
-					["qg"] = 42033,	-- Jibbly Rakit
+					["provider"] = { "n", 42033 },	-- Jibbly Rakit
 					["coord"] = { 52.9, 39.1, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26076,	-- Spy Infestation
 				},
 				{	-- Free Our Sisters
 					["questID"] = 25662,
-					["qg"] = 40896,	-- Lord Fallowmere
+					["provider"] = { "n", 40896 },	-- Lord Fallowmere
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 				},
 				{	-- Gerenzo the Traitor
 					["questID"] = 25729,
-					["qg"] = 40895,	-- Professor Xakxak Gyromate
+					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 35.36, 71.14, 63 },
@@ -371,7 +371,7 @@ _.Zones =
 				{	-- Gerenzo Wrenchwhistle
 					["questID"] = 1096,
 					["u"] = 40,
-					["qg"] = 4201,	-- Ziz Fizziks
+					["provider"] = { "n", 4201 },	-- Ziz Fizziks
 					["groups"] = {
 						un(2, i(6668)),	-- Draftsman Boots
 						un(2, i(6667)),	-- Engineer's Cloak
@@ -380,71 +380,71 @@ _.Zones =
 				{	-- Gerenzo's Orders
 					["questID"] = 1092,
 					["u"] = 40,
-					["qg"] = 4276,	-- Piznik
+					["provider"] = { "n", 4276 },	-- Piznik
 					["groups"] = {
 						un(2, i(6666)),	-- Dredge Boots
 					},
 				},
 				{	-- Gnome on the Inside
 					["questID"] = 25875,
-					["qg"] = 41233,	-- Scout Commander Barus
+					["provider"] = { "n", 41233 },	-- Scout Commander Barus
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
 				},
 				{	-- Grimtotem Supremacy
 					["questID"] = 25847,
-					["qg"] = 11858,	-- Grundig Darkcloud
+					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25846,	-- Grundig Darkcloud, Chieftain of the Grimtotem
 				},
 				{	-- Grundig Darkcloud, Chieftain of the Grimtotem
 					["questID"] = 25846,
-					["qg"] = 41229,	-- Force Commander Valen
+					["provider"] = { "n", 41229 },	-- Force Commander Valen
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25822,	-- Armaments for War
 				},
 				{	-- Help for Desolace (mutually exclusive with Rerouted! and Hero's Call: Desolace!)
 					["questID"] = 25938,
-					["qg"] = 41487,	-- Hierophant Malyk
+					["provider"] = { "n", 41487 },	-- Hierophant Malyk
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- Hungry Pups
 					["questID"] = 25935,
-					["qg"] = 41638,	-- Houndmaster Jonathan
+					["provider"] = { "n", 41638 },	-- Houndmaster Jonathan
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				},
 				{	-- I Got Your Parts Right Here...
 					["questID"] = 26045,
-					["qg"] = 41991,	-- Sergeant Dontrag
+					["provider"] = { "n", 41991 },	-- Sergeant Dontrag
 					["coord"] = { 67.1, 64.5, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
 				},
 				{	-- If the Horde Don't Get You...
 					["questID"] = 25739,
-					["qg"] = 40897,	-- Northwatch Captain Kosak
+					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				},
 				{	-- Illegible Orc Letter
 					["itemID"] = 55181,
 					["questID"] = 25647,	-- Illegible Orc Letter
-					["qg"] = 40905,	-- Windshear Overseer
+					["provider"] = { "n", 40905 },	-- Windshear Overseer
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine
 				},
 				{	-- In Defense of Krom'gar Fortress
 					["questID"] = 26058,
-					["qg"] = 40902,	-- Chief Blastgineer Bombguts
+					["provider"] = { "n", 40902 },	-- Chief Blastgineer Bombguts
 					["coord"] = { 66.2, 62.9, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26048,	-- Spare Parts Up in Here!
 				},
 				{	-- Is This Justice?
 					["questID"] = 26099,
-					["qg"] = 42039,	-- High Chieftain Cliffwalker
+					["provider"] = { "n", 42039 },	-- High Chieftain Cliffwalker
 					["coord"] = { 45.0, 32.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26098,	-- Betrayal at the Grove
@@ -462,13 +462,13 @@ _.Zones =
 				},
 				{	-- It's Up There!
 					["questID"] = 25876,
-					["qg"] = 41434,	-- "Goblin" Pump Controller
+					["provider"] = { "n", 41434 },	-- "Goblin" Pump Controller
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25875,	-- Gnome on the Inside
 				},
 				{	-- Jin'Zil's Blessing
 					["questID"] = 26067,
-					["qg"] = 3995,	-- Witch Doctor Jin'Zil
+					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 					["coord"] = { 71.1, 91.2, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26062,	-- Da Voodoo: Resonite Crystal
@@ -476,7 +476,7 @@ _.Zones =
 				{	-- Jin'Zil's Forest Magic
 					["questID"] = 1058,
 					["u"] = 40,
-					["qg"] = 3995,	-- Witch Doctor Jin'Zil
+					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(6665)),	-- Hexed Bracers
@@ -485,13 +485,13 @@ _.Zones =
 				},
 				{	-- Just Ask Alice
 					["questID"] = 25673,
-					["qg"] = 40908,	-- Alice
+					["provider"] = { "n", 40908 },	-- Alice
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon?
 				},
 				{	-- Kobold Fury!
 					["questID"] = 26068,
-					["qg"] = 42023,	-- Subjugator Devo
+					["provider"] = { "n", 42023 },	-- Subjugator Devo
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26066,	-- Reinforcements...
 					["groups"] = {
@@ -503,53 +503,53 @@ _.Zones =
 				},
 				{	-- Krom'gar Fortress
 					["questID"] = 26004,
-					["qg"] = 34341,	-- Saurboz
+					["provider"] = { "n", 34341 },	-- Saurboz
 					["coord"] = { 74.2, 47.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26002,	-- Alliance Attack Plans
 				},
 				{	-- Last Ditch Effort
 					["questID"] = 25891,
-					["qg"] = 41482,	-- Master Thal'darah
+					["provider"] = { "n", 41482 },	-- Master Thal'darah
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25889,	-- Save the Children!
 				},
 				{	-- Leave No Man Behind!
 					["questID"] = 25809,
-					["qg"] = 41282,	-- Corporal Wocard
+					["provider"] = { "n", 41282 },	-- Corporal Wocard
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25793,	-- The Deep Reaches
 				},
 				{	-- Lessons from the Lost Isles
 					["questID"] = 26003,
-					["qg"] = 40926,	-- Kilag Gorefang
+					["provider"] = { "n", 40926 },	-- Kilag Gorefang
 					["coord"] = { 74.4, 47.6, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25999,	-- Barrier to Entry
 				},
 				{	-- Might Makes Right
 					["questID"] = 26101,
-					["qg"] = 41023,	-- Overlord Krom'gar
+					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
 					["coord"] = { 66.1, 63.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26100,	-- The General is Dead
 				},
 				{	-- Might of the Krom'gar
 					["questID"] = 28084,
-					["qg"] = 42028,	-- Krom'gar Quartermaster
+					["provider"] = { "n", 42028 },	-- Krom'gar Quartermaster
 					["coord"] = { 65.9, 64.1, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 				},
 				{	-- Minx'll Fix It
 					["questID"] = 25649,
-					["qg"] = 40879,	-- Boog the "Gear Whisperer"
+					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25647,	-- Illegible Orc Letter
 				},
 				{	-- Mr. D's Wild Ride
 					["questID"] = 26028,
-					["qg"] = 40907,	-- Clarissa
+					["provider"] = { "n", 40907 },	-- Clarissa
 					["coord"] = { 66.1, 64.2, 65 },
 					["races"] = HORDE_ONLY,
 					["description"] = "Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",
@@ -557,14 +557,14 @@ _.Zones =
 				},
 				{	-- Mr. P's Wild Ride
 					["questID"] = 25728,
-					["qg"] = 40908,	-- Alice
+					["provider"] = { "n", 40908 },	-- Alice
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25673,	-- Just Ask Alice
 				},
 				{	-- New Life
 					["questID"] = 6381,
 					["u"] = 40,
-					["qg"] = 11864,	-- Tammra Windfield
+					["provider"] = { "n", 11864 },	-- Tammra Windfield
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(16986)),	-- Sandspire Gloves
@@ -573,7 +573,7 @@ _.Zones =
 				},
 				{	-- Nothing Left for You Here
 					["questID"] = 26134,
-					["qg"] = 42039,	-- High Chieftain Cliffwalker
+					["provider"] = { "n", 42039 },	-- High Chieftain Cliffwalker
 					["coord"] = { 45.5, 33.7, 65 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -581,7 +581,7 @@ _.Zones =
 				},
 				{	-- No Time for Goodbyes!
 					["questID"] = 25877,
-					["qg"] = 41434,	-- "Goblin" Pump Controller
+					["provider"] = { "n", 41434 },	-- "Goblin" Pump Controller
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25876,	-- It's Up There!
 					["groups"] = {
@@ -593,7 +593,7 @@ _.Zones =
 				},
 				{	-- Nura Pathfinder
 					["questID"] = 26069,
-					["qg"] = 3995,	-- Witch Doctor Jin'Zil
+					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 					["coord"] = { 71.0, 91.2, 65 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -602,7 +602,7 @@ _.Zones =
 				{	-- On Guard in Stonetalon
 					["questID"] = 1085,
 					["u"] = 40,
-					["qg"] = 4080,	-- Kaela Shadowspear
+					["provider"] = { "n", 4080 },	-- Kaela Shadowspear
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1070,	-- On Guard in Stonetalon
 				},
@@ -618,33 +618,33 @@ _.Zones =
 				}),
 				{	-- Orders from High Command
 					["questID"] = 25650,
-					["qg"] = 40881,	-- Minx
+					["provider"] = { "n", 40881 },	-- Minx
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25649,	-- Minx'll Fix It
 				},
 				{	-- Preparations for the Future
 					["questID"] = 25741,
-					["qg"] = 40898,	-- Alithia Fallowmere
+					["provider"] = { "n", 40898 },	-- Alithia Fallowmere
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				},
 				{	-- Proof of Lies
 					["questID"] = 26097,
-					["qg"] = 42039,	-- High Chieftain Cliffwalker
+					["provider"] = { "n", 42039 },	-- High Chieftain Cliffwalker
 					["coord"] = { 45.0, 32.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26082,	-- To Battlescar!
 				},
 				{	-- Putting Them to Rest
 					["questID"] = 25913,
-					["qg"] = 41488,	-- Sentinel Mistress Geleneth
+					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				},
 				{	-- Reception from Tyrande
 					["questID"] = 1081,
 					["u"] = 40,
-					["qg"] = 4079,	-- Sentinel Thenysil
+					["provider"] = { "n", 4079 },	-- Sentinel Thenysil
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						un(2, i(6678)),	-- Band of Elven Grace
@@ -656,7 +656,7 @@ _.Zones =
 				{	-- Reclaiming the Charred Vale
 					["questID"] = 1059,
 					["u"] = 40,
-					["qg"] = 3994,	-- Keeper Albagorm
+					["provider"] = { "n", 3994 },	-- Keeper Albagorm
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						un(2, i(6676)),	-- Constable Buckler
@@ -665,7 +665,7 @@ _.Zones =
 				},
 				{	-- Reinforcements...
 					["questID"] = 26066,
-					["qg"] = 42023,	-- Subjugator Devo
+					["provider"] = { "n", 42023 },	-- Subjugator Devo
 					["coord"] = { 71.1, 91.1, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -675,14 +675,14 @@ _.Zones =
 				},
 				{	-- Report to Bombgutz
 					["questID"] = 26020,
-					["qg"] = 41023,	-- Overlord Krom'gar
+					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
 					["coord"] = { 66.2, 63.6, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26010,	-- Ashes to Ashes
 				},
 				{	-- Return to Stardust
 					["questID"] = 25615,
-					["qg"] = 39256,	-- Kalen Trueshot
+					["provider"] = { "n", 39256 },	-- Kalen Trueshot
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25614,	-- The Only Way Down is in a Body Bag
 					["groups"] = {
@@ -694,7 +694,7 @@ _.Zones =
 				},
 				{	-- Rumble in the Lumber... Mill
 					["questID"] = 25669,
-					["qg"] = 41071,	-- Huntress Illiona
+					["provider"] = { "n", 41071 },	-- Huntress Illiona
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25662,	-- Free Our Sisters
 					["groups"] = {
@@ -706,13 +706,13 @@ _.Zones =
 				},
 				{	-- Sating the Savage Beast
 					["questID"] = 25844,
-					["qg"] = 41278,	-- "Cookie" McWeaksauce
+					["provider"] = { "n", 41278 },	-- "Cookie" McWeaksauce
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25837,	-- A Proper Peace Offerin'
 				},
 				{	-- Save the Children!
 					["questID"] = 25889,
-					["qg"] = 41482,	-- Master Thal'darah
+					["provider"] = { "n", 41482 },	-- Master Thal'darah
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25880,	-- Warn Master Thal'darah
 					["groups"] = {
@@ -724,7 +724,7 @@ _.Zones =
 				},
 				{	-- Schemin' That Sabotage
 					["questID"] = 25878,
-					["qg"] = 41441,	-- Scout Mistress Yvonia
+					["provider"] = { "n", 41441 },	-- Scout Mistress Yvonia
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
 					["groups"] = {
@@ -736,7 +736,7 @@ _.Zones =
 				},
 				{	-- Seek and Destroy
 					["questID"] = 26009,
-					["qg"] = 41023,	-- Overlord Krom'gar
+					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
 					["coord"] = { 66.1, 63.7, 65 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -747,7 +747,7 @@ _.Zones =
 				},
 				{	-- Seen Better Days
 					["questID"] = 25912,
-					["qg"] = 41486,	-- Elder Sareth'na
+					["provider"] = { "n", 41486 },	-- Elder Sareth'na
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 					["groups"] = {
@@ -760,7 +760,7 @@ _.Zones =
 				},
 				{	-- Shuttin Her Down
 					["questID"] = 25811,
-					["qg"] = 41276,	-- Steeltoe McGee
+					["provider"] = { "n", 41276 },	-- Steeltoe McGee
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25793,	-- The Deep Reaches
 					["groups"] = {
@@ -769,7 +769,7 @@ _.Zones =
 				},
 				{	-- Spare Parts Up In Here!
 					["questID"] = 26048,
-					["qg"] = 41991,	-- Sergeant Dontrag
+					["provider"] = { "n", 41991 },	-- Sergeant Dontrag
 					["coord"] = { 67.1, 64.5, 65 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -785,7 +785,7 @@ _.Zones =
 				},
 				{	-- Spy Infestation
 					["questID"] = 26076,
-					["qg"] = 42033,	-- Jibbly Rakit
+					["provider"] = { "n", 42033 },	-- Jibbly Rakit
 					["coord"] = { 52.9, 39.1, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26075,	-- The Turd Problem
@@ -823,18 +823,18 @@ _.Zones =
 				},
 				{	-- Tell 'Em Koko Sent You
 					["questID"] = 25765,
-					["qg"] = 40897,	-- Northwatch Captain Kosak
+					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25739,	-- If the Horde Don't Get You...
 				},
 				{	-- Terms of Service
 					["questID"] = 25845,
-					["qg"] = 41350,	-- Ton Windbow
+					["provider"] = { "n", 41350 },	-- Ton Windbow
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25844,	-- Sating the Savage Beast
 				},
 				q(1154, {	-- Test of Lore
-					["qg"] = 4489,	-- Braug Dimspirit
+					["provider"] = { "n", 4489 },	-- Braug Dimspirit
 					["coord"] = { 78.6, 45.6, 65 },
 					["sourceQuest"] = 1152,	-- Test of Lore
 					["races"] = HORDE_ONLY,
@@ -842,7 +842,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(6627, {	-- Test of Lore
-					["qg"] = 4489,	-- Braug Dimspirit
+					["provider"] = { "n", 4489 },	-- Braug Dimspirit
 					["coord"] = { 78.6, 45.6, 65 },
 					["sourceQuest"] = 1154,	-- Test of Lore
 					["races"] = HORDE_ONLY,
@@ -850,7 +850,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(1159, {	-- Test of Lore
-					["qg"] = 4489,	-- Braug Dimspirit
+					["provider"] = { "n", 4489 },	-- Braug Dimspirit
 					["coord"] = { 78.6, 45.6, 65 },
 					["sourceQuest"] = 6627,	-- Test of Lore
 					["races"] = HORDE_ONLY,
@@ -859,20 +859,20 @@ _.Zones =
 				}),
 				{	-- Thal'darah's Vengeance
 					["questID"] = 25925,
-					["qg"] = 41482,	-- Master Thal'darah
+					["provider"] = { "n", 41482 },	-- Master Thal'darah
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				},
 				{	-- The Deep Reaches
 					["questID"] = 25793,
-					["qg"] = 41229,	-- Force Commander Valen
+					["provider"] = { "n", 41229 },	-- Force Commander Valen
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25765,	-- Tell 'Em Koko Sent You
 				},
 				{	-- The Den
 					["questID"] = 1089,
 					["u"] = 40,
-					["qg"] = 4198,	-- Braelyn Firehand
+					["provider"] = { "n", 4198 },	-- Braelyn Firehand
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						un(2, i(6671)),	-- Juggernaut Leggings
@@ -882,34 +882,34 @@ _.Zones =
 				},
 				{	-- The General is Dead
 					["questID"] = 26100,
-					["qg"] = 42047,	-- Masha Cliffwalker
+					["provider"] = { "n", 42047 },	-- Masha Cliffwalker
 					["coord"] = { 45.1, 32.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26099,	-- Is This Justice?
 				},
 				{	-- The Lumbering Oaf Problem
 					["questID"] = 25879,
-					["qg"] = 41441,	-- Scout Mistress Yvonia
+					["provider"] = { "n", 41441 },	-- Scout Mistress Yvonia
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
 				},
 				{	-- The Missing Blastgineer
 					["questID"] = 26001,
-					["qg"] = 34341,	-- Saurboz
+					["provider"] = { "n", 34341 },	-- Saurboz
 					["coord"] = { 74.2, 47.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25999,	-- Barrier to Entry
 				},
 				{	-- The Only Way Down is in a Body Bag
 					["questID"] = 25614,
-					["qg"] = 39256,	-- Kalen Trueshot
+					["provider"] = { "n", 39256 },	-- Kalen Trueshot
 					["coord"] = { 71.8, 45.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25613,	-- Do Yourself a Favor
 				},
 				{	-- The Queen and Her Court (aa?)
 					["questID"] = 26063,
-					["qg"] = 11821,	-- Darn Talongrip
+					["provider"] = { "n", 11821 },	-- Darn Talongrip
 					["coord"] = { 64.9, 82.5, 65 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -919,20 +919,20 @@ _.Zones =
 				},
 				{	-- The Turd Problem
 					["questID"] = 26075,
-					["qg"] = 42033,	-- Jibbly Rakit
+					["provider"] = { "n", 42033 },	-- Jibbly Rakit
 					["coord"] = { 52.9, 39.1, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26074,	-- Beginning of the End
 				},
 				{	-- The Unrelenting Horde
 					["questID"] = 25823,
-					["qg"] = 41229,	-- Force Commander Valen
+					["provider"] = { "n", 41229 },	-- Force Commander Valen
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25845,	-- Terms of Service
 				},
 				{	-- Thinning the Horde
 					["questID"] = 25671,
-					["qg"] = 40896,	-- Lord Fallowmere
+					["provider"] = { "n", 40896 },	-- Lord Fallowmere
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["description"] = "This quest cannot be completed after reaching Exalted with Darnassus, and possibly cannot be completed after reaching level 30 or finishing the Stonetalon Mountains questline.",
@@ -941,13 +941,13 @@ _.Zones =
 				},
 				{	-- They Put the Assass in... Never Mind
 					["questID"] = 25806,
-					["qg"] = 41277,	-- Lieutenant Paulson
+					["provider"] = { "n", 41277 },	-- Lieutenant Paulson
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25793,	-- The Deep Reaches
 				},
 				{	-- To Battlescar!
 					["questID"] = 26082,
-					["qg"] = 42050,	-- General Grebo
+					["provider"] = { "n", 42050 },	-- General Grebo
 					["coord"] = { 45.1, 32.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26077,	-- Final Delivery
@@ -960,7 +960,7 @@ _.Zones =
 				},
 				{	-- To Be Horde...
 					["questID"] = 26115,
-					["qg"] = 42106,	-- Overlord Krom'gar
+					["provider"] = { "n", 42106 },	-- Overlord Krom'gar
 					["coord"] = { 45.6, 34.1, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26101,	-- Might Makes Right
@@ -974,7 +974,7 @@ _.Zones =
 				{	-- Trouble in the Deeps
 					["u"] = 40,
 					["questID"] = 6562,
-					["qg"] = 11862,	-- Tsunaman
+					["provider"] = { "n", 11862 },	-- Tsunaman
 					["races"] = HORDE_ONLY,
 					["coord"] = { 47.2, 64.3, 65 },
 					["isBreadcrumb"] = true,
@@ -996,20 +996,20 @@ _.Zones =
 				},
 				{	-- Warn Master Thal'darah
 					["questID"] = 25880,
-					["qg"] = 41233,	-- Scout Commander Barus
+					["provider"] = { "n", 41233 },	-- Scout Commander Barus
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25877,	-- No Time for Goodbyes!
 				},
 				{	-- Where Are the Parts?
 					["questID"] = 26044,
-					["qg"] = 40902,	-- Chief Blastgineer Bombgutz
+					["provider"] = { "n", 40902 },	-- Chief Blastgineer Bombgutz
 					["coord"] = { 66.2, 62.9, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26020,	-- Report to Bombgutz
 				},
 				{	-- Windshear Mine Cleanup
 					["questID"] = 25646,
-					["qg"] = 40973,	-- Sentinal Heliana
+					["provider"] = { "n", 40973 },	-- Sentinal Heliana
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine
 					["groups"] = {
@@ -1020,7 +1020,7 @@ _.Zones =
 				},
 				{	-- World First: Gnomegen
 					["questID"] = 25934,
-					["qg"] = 41664,	-- Salsbury the "Help"
+					["provider"] = { "n", 41664 },	-- Salsbury the "Help"
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				},

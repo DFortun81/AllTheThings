@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(-17, {	-- Quests
 				q(26870, {	-- Cleansing the Caverns
-					["qg"] = 5768,	-- Ebru
+					["provider"] = { "n", 5768 },	-- Ebru
 					["g"] = {
 						i(65911), 	-- Anacondra's Robe
 						i(65985), 	-- Cleansed Pauldrons
@@ -23,7 +23,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(1487, {	-- Deviate Eradication
 					["u"] = 40,
-					["qg"] = 5768,	-- Ebru
+					["provider"] = { "n", 5768 },	-- Ebru
 					["g"] = {
 						un(8, i(6476)),	-- Pattern: Deviate Scale Belt
 						un(2, i(8071)),	-- Sizzle Stick
@@ -32,17 +32,17 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(1486, {	-- Deviate Hides
 					["u"] = 40,
-					["qg"] = 5767,	-- Nalpak
+					["provider"] = { "n", 5767 },	-- Nalpak
 					["g"] = {
 						un(2, i(6480)),	-- Slick Deviate Leggings
 						un(2, i(918)),	-- Deviate Hide Pack
 					},
 				}),
 				q(26872, {	-- Deviate Hides
-					["qg"] = 5767,	-- Nalpak
+					["provider"] = { "n", 5767 },	-- Nalpak
 				}),
 				q(26873, {	-- Preemptive Methods
-					["qg"] = 5767,	-- Nalpak
+					["provider"] = { "n", 5767 },	-- Nalpak
 				}),
 			}),
 			n(-2, {	-- Vendors

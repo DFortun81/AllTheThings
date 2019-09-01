@@ -7,13 +7,13 @@ _.Zones =
 		m(50, {	-- Northern Stranglethorn
 			n(-17, {	-- Quests
 				q(26317, {	-- A Lashtail Hatchling
-					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["provider"] = { "n", 2465 },	-- Far Seer Mok'thardin
 					["coord"] = { 38.3, 51.0, 50 },
 					["races"] = HORDE_ONLY,
 					["description"] = "Automatically granted after killing 12 eggs during |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
 				}),
 				q(26746, {	-- A Nose for This Sort of Thing (A)
-					["qg"] = 43884,	-- Osborn Obnoticus
+					["provider"] = { "n", 43884 },	-- Osborn Obnoticus
 					["coord"] = { 41.8, 23.3, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26745,	-- Favored Skull
@@ -29,7 +29,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(26747, {	-- A Physical Specimen
-					["qg"] = 43884,	-- Osborn Obnoticus
+					["provider"] = { "n", 43884 },	-- Osborn Obnoticus
 					["coord"] = { 47.1, 10.5, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26746,	-- A Nose for This Sort of Thing
@@ -42,13 +42,13 @@ _.Zones =
 					},
 				}),
 				q(26404, {	-- Above My Pay Grade
-					["qg"] = 42814,	-- Skeezy Whillzap
+					["provider"] = { "n", 42814 },	-- Skeezy Whillzap
 					["coord"] = { 62.7, 40.3, 50 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(9457,  {	-- An Unusual Patron
-					["qg"] = 17094,	-- Nemeth Hawkeye
+					["provider"] = { "n", 17094 },	-- Nemeth Hawkeye
 					["coord"] = { 38.1, 50.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9436,	-- Bloodscalp Insight
@@ -68,7 +68,7 @@ _.Zones =
 					},
 				}),
 				q(26732, {	-- Bad Medicine
-					["qg"] = 739,	-- Brother Nimetz
+					["provider"] = { "n", 739 },	-- Brother Nimetz
 					["coord"] = { 47.2, 11.1, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -79,7 +79,7 @@ _.Zones =
 					},
 				}),
 				q(26775, {	-- Be Raptor (A)
-					["qg"] = 44017,	-- Priestess Thaalia
+					["provider"] = { "n", 44017 },	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26774,	-- Mind Control
@@ -91,7 +91,7 @@ _.Zones =
 					},
 				}),
 				q(26362, {	-- Be Raptor (H)
-					["qg"] = 42812,	-- Priestess Hu'rala
+					["provider"] = { "n", 42812 },	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26360,	-- Mind Control
@@ -103,7 +103,7 @@ _.Zones =
 					},
 				}),
 				q(208,   {	-- Big Game Hunter
-					["qg"] = 715,	-- Hemet Nesingwary Jr.
+					["provider"] = { "n", 715 },	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuests"] = {
 						193,	-- Panther Mastery
@@ -123,25 +123,25 @@ _.Zones =
 					},
 				}),
 				q(26748, {	-- Bloodlord Mandokir (A)
-					["qg"] = 42790,	-- Bloodlord Mandokir
+					["provider"] = { "n", 42790 },	-- Bloodlord Mandokir
 					["coord"] = { 47.1, 10.6, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26747,	-- A Physical Specimen
 				}),
 				q(26334, {	-- Bloodlord Mandokir (H)
-					["qg"] = 42790,	-- Bloodlord Mandokir
+					["provider"] = { "n", 42790 },	-- Bloodlord Mandokir
 					["coord"] = { 38.4, 48.6, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26332,	-- Skullsplitter Mojo
 				}),
 				q(26742, {	-- Bloodscalp Insight (A)
-					["qg"] = 43886,	-- Berrin Burnquill
+					["provider"] = { "n", 43886 },	-- Berrin Burnquill
 					["coord"] = { 47.9, 12.0, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26736,	-- Spared from Madness
 				}),
 				q(9436,  {	-- Bloodscalp Insight (H)
-					["qg"] = 17094,	-- Nemeth Hawkeye
+					["provider"] = { "n", 17094 },	-- Nemeth Hawkeye
 					["coord"] = { 38.1, 50.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26321,	-- I Think She's Hungry
@@ -154,13 +154,13 @@ _.Zones =
 					},
 				}),
 				q(29121, {	-- Bury Me With Me Boots... (A)
-					["qg"] = 52371,	-- Grent Direhammer
+					["provider"] = { "n", 52371 },	-- Grent Direhammer
 					["coord"] = { 76.0, 66.6, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29213,	-- How's the Hunter Holding Up?
 				}),
 				q(29232, {	-- Bury Me With Me Boots... (H)
-					["qg"] = 52371,	-- Grent Direhammer
+					["provider"] = { "n", 52371 },	-- Grent Direhammer
 					["coord"] = { 76.0, 66.6, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29231,	-- How's the Hunter Holding Up?
@@ -180,19 +180,19 @@ _.Zones =
 					},
 				}),
 				q(26733, {	-- Control Sample
-					["qg"] = 739,	-- Brother Nimetz
+					["provider"] = { "n", 739 },	-- Brother Nimetz
 					["coord"] = { 47.2, 11.1, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26732,	-- Bad Medicine
 				}),
 				q(26352, {	-- Cozzle's Plan
-					["qg"] = 42813,	-- Kil'karil
+					["provider"] = { "n", 42813 },	-- Kil'karil
 					["coord"] = { 63.2, 39.8, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26399,	-- The Mosh'Ogg Bounty
 				}),
 				q(26744, {	-- Deep Roots
-					["qg"] = 1422,	-- Corporal Sethman
+					["provider"] = { "n", 1422 },	-- Corporal Sethman
 					["coord"] = { 46.9, 10.8, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26739,	-- I Think She's Hungry
@@ -204,13 +204,13 @@ _.Zones =
 					},
 				}),
 				q(29235, {	-- Defend Grom'gol
-					["qg"] = 52996,	-- Commander Aggro'gosh
+					["provider"] = { "n", 52996 },	-- Commander Aggro'gosh
 					["coord"] = { 38.3, 50.2, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29233,	-- Warn Grom'gol
 				}),
 				q(29131, {	-- Defend the Rebel Camp
-					["qg"] = 52410,	-- Lieutenant Doren
+					["provider"] = { "n", 52410 },	-- Lieutenant Doren
 					["coord"] = { 47.7, 12.0, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29124,	-- Warn the Rebel Camp
@@ -239,7 +239,7 @@ _.Zones =
 				}),
 				q(2765,  {	-- Expert Blacksmith!
 					["u"] = 40,
-					["qg"] = 7802,	-- Galvan the Ancient
+					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["requireSkill"] = 164,	-- Blacksmithing
 					["sourceQuests"] = {
@@ -256,7 +256,7 @@ _.Zones =
 					},
 				}),
 				q(26345, {	-- Excelsior
-					["qg"] = 2495,	-- Drizzlik
+					["provider"] = { "n", 2495 },	-- Drizzlik
 					["coord"] = { 43.6, 23.4, 50 },
 					["sourceQuest"] = 26344,	-- Some Assembly Required
 					["g"] = {
@@ -265,20 +265,20 @@ _.Zones =
 					},
 				}),
 				q(26944, {	-- Exploring Gnomeregan
-					["qg"] = 44018,	-- Wulfred Harrys
+					["provider"] = { "n", 44018 },	-- Wulfred Harrys
 					["coord"] = { 53.3, 66.2, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 26943 },	-- Home Sweet Gnome
 					["isBreadcrumb"] = true,
 				}),
 				q(26745, {	-- Favored Skull (A)
-					["qg"] = 42736,	-- Lashtail Hatchling
+					["provider"] = { "n", 42736 },	-- Lashtail Hatchling
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["sourceQuest"] = 26739,	-- I Think She's Hungry
 				}),
 				q(26323, {	-- Favored Skull (H)
-					["qg"] = 42736,	-- Lashtail Hatchling
+					["provider"] = { "n", 42736 },	-- Lashtail Hatchling
 					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26321,	-- I Think She's Hungry
@@ -313,7 +313,7 @@ _.Zones =
 				}),
 				q(2764,  {	-- Galvin's Finest Pupil
 					["u"] = 40,
-					["qg"] = 7802,	-- Galvan the Ancient
+					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["requireSkill"] = 164,	-- Blacksmithing
 					["sourceQuests"] = {
@@ -323,7 +323,7 @@ _.Zones =
 					},
 				}),
 				q(26776, {	-- Ghaliri
-					["qg"] = 44017,	-- Priestess Thaalia
+					["provider"] = { "n", 44017 },	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26775,	-- Be Raptor
@@ -337,7 +337,7 @@ _.Zones =
 					},
 				}),
 				q(26299, {	-- Headhunting
-					["qg"] = 2497,	-- Nimboya
+					["provider"] = { "n", 2497 },	-- Nimboya
 					["coord"] = { 38.4, 48.7, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26298,	-- Hunt for Yenniku
@@ -381,19 +381,19 @@ _.Zones =
 					},
 				}),
 				q(29213, {	-- How's the Hunter Holding Up? (A)
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["coord"] = { 77.1, 69.1, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29120,	-- Mauti
 				}),
 				q(29231, {	-- How's the Hunter Holding Up? (H)
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["coord"] = { 77.1, 68.9, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29230,	-- Mauti
 				}),
 				q(26298, {	-- Hunt for Yenniku
-					["qg"] = 2497,	-- Nimboya
+					["provider"] = { "n", 2497 },	-- Nimboya
 					["coord"] = { 38.4, 48.7, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -402,25 +402,25 @@ _.Zones =
 					},
 				}),
 				q(26739, {	-- I Think She's Hungry (A)
-					["qg"] = 1422,	-- Corporal Sethman
+					["provider"] = { "n", 1422 },	-- Corporal Sethman
 					["coord"] = { 46.9, 10.8, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26738,	-- Just Hatched
 				}),
 				q(26321, {	-- I Think She's Hungry (H)
-					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["provider"] = { "n", 2465 },	-- Far Seer Mok'thardin
 					["coord"] = { 38.4, 51.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26317,	-- A Lashtail Hatchling
 				}),
 				q(26738, {	-- Just Hatched
-					["qg"] = 1422,	-- Corporal Sethman
+					["provider"] = { "n", 1422 },	-- Corporal Sethman
 					["coord"] = { 46.9, 10.8, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26732,	-- Bad Medicine
 				}),
 				q(26740, {	-- Krazek's Cookery
-					["qg"] = 770,	-- Corporal Kaleb
+					["provider"] = { "n", 770 },	-- Corporal Kaleb
 					["coord"] = { 47.0, 10.6, 50 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -432,7 +432,7 @@ _.Zones =
 					},
 				}),
 				q(29120, {	-- Mauti (A)
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["coord"] = { 77.9, 68.1, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -441,7 +441,7 @@ _.Zones =
 					},
 				}),
 				q(29230, {	-- Mauti (H)
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["coord"] = { 77.7, 68.3, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -450,66 +450,66 @@ _.Zones =
 					},
 				}),
 				q(26774, {	-- Mind Control (A)
-					["qg"] = 44017,	-- Priestess Thaalia
+					["provider"] = { "n", 44017 },	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26773,	-- See Raptor
 				}),
 				q(26360, {	-- Mind Control (H)
-					["qg"] = 42812,	-- Priestess Hu'rala
+					["provider"] = { "n", 42812 },	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26359,	-- See Raptor
 				}),
 				q(26772, {	-- Mind Vision (A)
-					["qg"] = 44017,	-- Priestess Thaalia
+					["provider"] = { "n", 44017 },	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26749,	-- Priestess Thaalia
 				}),
 				q(26351, {	-- Mind Vision (H)
-					["qg"] = 42812,	-- Priestess Hu'rala
+					["provider"] = { "n", 42812 },	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26350,	-- Priestess Hu'rala
 				}),
 				q(29105, {	-- Nesingwary Will Know (A)
-					["qg"] = 52281,	-- Livingston Marshal
+					["provider"] = { "n", 52281 },	-- Livingston Marshal
 					["coord"] = { 52.5, 66.5, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29104,	-- Spirits Are With Us
 				}),
 				q(29223, {	-- Nesingwary Will Know (H)
-					["qg"] = 52980,	-- Kil'karil
+					["provider"] = { "n", 52980 },	-- Kil'karil
 					["coord"] = { 63.3, 39.9, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29222,	-- Spirits Are With Us
 				}),
 				q(26300, {	-- Nezzliok Will Know
-					["qg"] = 2497,	-- Nimboya
+					["provider"] = { "n", 2497 },	-- Nimboya
 					["coord"] = { 38.4, 48.7, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26299,	-- Headhunting
 				}),
 				q(26780, {	-- Nighttime in the Jungle (A)
-					["qg"] = 44043,	-- Kinnel
+					["provider"] = { "n", 44043 },	-- Kinnel
 					["coord"] = { 53.2, 66.5, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26773,	-- See Raptor
 				}),
 				q(26304, {	-- Nighttime in the Jungle (H)
-					["qg"] = 42813,	-- Kil'karil
+					["provider"] = { "n", 42813 },	-- Kil'karil
 					["coord"] = { 63.2, 39.8, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26359,	-- See Raptor
 				}),
 				q(190,   {	-- Panther Hunting
-					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["provider"] = { "n", 718 },	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
 				}),
 				q(193,   {	-- Panther Mastery
-					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["provider"] = { "n", 718 },	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 192,	-- Panther Prowess
 					["g"] = {
@@ -520,12 +520,12 @@ _.Zones =
 					},
 				}),
 				q(191,   {	-- Panther Stalking
-					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["provider"] = { "n", 718 },	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 190,	-- Panther Hunting
 				}),
 				q(192,   {	-- Panther Prowess
-					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["provider"] = { "n", 718 },	-- Sir S. J. Erlgadin
 					["coord"] = { 44.1, 22.2, 50 },
 					["sourceQuest"] = 191,	-- Panther Stalking
 				}),
@@ -540,36 +540,36 @@ _.Zones =
 					["sourceQuest"] = 26553,	-- High Priestess Jeklik
 				}),
 				q(26751, {	-- Population Con-Troll (A)
-					["qg"] = 733,	-- Sergeant Yohwa
+					["provider"] = { "n", 733 },	-- Sergeant Yohwa
 					["coord"] = { 47.5, 10.7, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26746,	-- A Nose for This Sort of Thing
 				}),
 				q(26338, {	-- Population Con-Troll (H)
-					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["provider"] = { "n", 2465 },	-- Far Seer Mok'thardin
 					["coord"] = { 38.3, 51.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26330,	-- Who's a Big Troll?
 				}),
 				q(26350, {	-- Priestess Hu'rala
-					["qg"] = 2497,	-- Nimboya
+					["provider"] = { "n", 2497 },	-- Nimboya
 					["coord"] = { 38.4, 48.7, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26334,	-- Bloodlord Mandokir
 				}),
 				q(26749, {	-- Priestess Thaalia
-					["qg"] = 43884,	-- Osborn Obnoticus
+					["provider"] = { "n", 43884 },	-- Osborn Obnoticus
 					["coord"] = { 47.1, 10.5, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26748,	-- Bloodlord Mandokir
 				}),
 				q(194,   {	-- Raptor Hunting
-					["qg"] = 715,	-- Hemet Nesingwary Jr.
+					["provider"] = { "n", 715 },	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
 				}),
 				q(197,   {	-- Raptor Mastery
-					["qg"] = 715,	-- Hemet Nesingwary Jr.
+					["provider"] = { "n", 715 },	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuest"] = 196,	-- Raptor Prowess
 					["g"] = {
@@ -581,12 +581,12 @@ _.Zones =
 					},
 				}),
 				q(196,   {	-- Raptor Prowess
-					["qg"] = 715,	-- Hemet Nesingwary Jr.
+					["provider"] = { "n", 715 },	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuest"] = 195,	-- Raptor Stalking
 				}),
 				q(195,   {	-- Raptor Stalking
-					["qg"] = 715,	-- Hemet Nesingwary Jr.
+					["provider"] = { "n", 715 },	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuest"] = 194,	-- Raptor Hunting
 				}),
@@ -606,7 +606,7 @@ _.Zones =
 					},
 				}),
 				q(26765, {	-- Return to Corporal Kaleb
-					["qg"] = 773,	-- Krazek
+					["provider"] = { "n", 773 },	-- Krazek
 					["coord"] = { 43.6, 23.1, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26763,	-- Venture Company Mining
@@ -615,7 +615,7 @@ _.Zones =
 					},
 				}),
 				q(26743, {	-- Sacred to the Bloodscalp
-					["qg"] = 43886,	-- Berrin Burnquill
+					["provider"] = { "n", 43886 },	-- Berrin Burnquill
 					["coord"] = { 47.9, 12.0, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26742,	-- Bloodscalp Insight
@@ -635,7 +635,7 @@ _.Zones =
 					},
 				}),
 				q(26305, {	-- Saving Yenniku
-					["qg"] = 2519,	-- Kin'weelay
+					["provider"] = { "n", 2519 },	-- Kin'weelay
 					["coord"] = { 63.0, 41.4, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26303,	-- The Mind's Eye
@@ -647,25 +647,25 @@ _.Zones =
 					},
 				}),
 				q(26773, {	-- See Raptor (A)
-					["qg"] = 44017,	-- Priestess Thaalia
+					["provider"] = { "n", 44017 },	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26772,	-- Mind Vision
 				}),
 				q(26359, {	-- See Raptor (H)
-					["qg"] = 42812,	-- Priestess Hu'rala
+					["provider"] = { "n", 42812 },	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26351,	-- Mind Vision
 				}),
 				q(29103, {	-- Serpents and Poison (A)
-					["qg"] = 52281,	-- Livingston Marshal
+					["provider"] = { "n", 52281 },	-- Livingston Marshal
 					["coord"] = { 64.6, 40.4, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29102,	-- To Fort Livingston
 				}),
 				q(29221, {	-- Serpents and Poison (H)
-					["qg"] = 52980,	-- Kil'karil
+					["provider"] = { "n", 52980 },	-- Kil'karil
 					["coord"] = { 63.3, 39.9, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29220,	-- To Bambala
@@ -679,7 +679,7 @@ _.Zones =
 				}),
 				q(2761,  {	-- Smelt On, Smelt Off
 					["u"] = 40,
-					["qg"] = 7802,	-- Galvan the Ancient
+					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = 164,	-- Blacksmithing
@@ -688,12 +688,12 @@ _.Zones =
 					},
 				}),
 				q(26344, {	-- Some Assembly Required
-					["qg"] = 2495,	-- Drizzlik
+					["provider"] = { "n", 2495 },	-- Drizzlik
 					["coord"] = { 43.6, 23.4, 50 },
 					["sourceQuest"] = 26343,	-- Supply and Demand
 				}),
 				q(29267, {	-- Some Good Will Come (The Zandalar Representative questline)
-					["qg"] = 52374,	-- Panther Cub
+					["provider"] = { "n", 52374 },	-- Panther Cub
 					["coord"] = { 76.1, 66.7, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29121,	-- Bury Me With Me Boots...
@@ -702,7 +702,7 @@ _.Zones =
 					},
 				}),
 				q(29268, {	-- Some Good Will Come (The Zandalari Menace questline)
-					["qg"] = 52374,	-- Panther Cub
+					["provider"] = { "n", 52374 },	-- Panther Cub
 					["coord"] = { 76.1, 66.7, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29232,	-- Bury Me With Me Boots...
@@ -711,7 +711,7 @@ _.Zones =
 					},
 				}),
 				q(26736, {	-- Spared from Madness
-					["qg"] = 469,	-- Lieutenant Doren
+					["provider"] = { "n", 469 },	-- Lieutenant Doren
 					["coord"] = { 47.5, 10.2, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26735,	-- The Fate of Kurzen
@@ -730,12 +730,12 @@ _.Zones =
 					},
 				}),
 				q(29104, {	-- Spirits Are With Us (A)
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29103,	-- Serpents and Poison
 				}),
 				q(29222, {	-- Spirits Are With Us (H)
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					--["coord"] = {}	-- can be picked up anywhere on the map
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29221,	-- Serpents and Poison
@@ -749,7 +749,7 @@ _.Zones =
 					},
 				}),
 				q(26737, {	-- Stopping Kurzen's Legacy
-					["qg"] = 469,	-- Lieutenant Doren
+					["provider"] = { "n", 469 },	-- Lieutenant Doren
 					["coord"] = { 47.5, 10.2, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26736,	-- Spared from Madness
@@ -761,17 +761,17 @@ _.Zones =
 					},
 				}),
 				q(26343, {	-- Supply and Demand
-					["qg"] = 2495,	-- Drizzlik
+					["provider"] = { "n", 2495 },	-- Drizzlik
 					["coord"] = { 43.5, 23.4, 50 },
 				}),
 				q(26386, {	-- Surkhan
-					["qg"] = 42812,	-- Priestess Hu'rala
+					["provider"] = { "n", 42812 },	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26362,	-- Be Raptor
 				}),
 				q(26731, {	-- The Altar of Naias
-					["qg"] = 43885,	-- Emerine Junis
+					["provider"] = { "n", 43885 },	-- Emerine Junis
 					["coord"] = { 47.6, 10.3, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26730,	-- You Can Take the Murloc Out of the Ocean...
@@ -784,7 +784,7 @@ _.Zones =
 				}),
 				q(2763,  {	-- The Art of the Imbue
 					["u"] = 40,
-					["qg"] = 7802,	-- Galvan the Ancient
+					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = 164,	-- Blacksmithing
@@ -800,13 +800,13 @@ _.Zones =
 					},
 				}),
 				q(26280, {	-- The Defense of Grom'gol: Murloc Menace
-					["qg"] = 2464,	-- Commander Aggro'gosh
+					["provider"] = { "n", 2464 },	-- Commander Aggro'gosh
 					["coord"] = { 38.4, 50.4, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
 				}),
 				q(26279, {	-- The Defense of Grom'gol: Ogre Oppression
-					["qg"] = 2464,	-- Commander Aggro'gosh
+					["provider"] = { "n", 2464 },	-- Commander Aggro'gosh
 					["coord"] = { 38.4, 50.4, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
@@ -817,7 +817,7 @@ _.Zones =
 					},
 				}),
 				q(26278, {	-- The Defense of Grom'gol: Raptor Risk
-					["qg"] = 2464,	-- Commander Aggro'gosh
+					["provider"] = { "n", 2464 },	-- Commander Aggro'gosh
 					["coord"] = { 38.4, 50.4, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -826,7 +826,7 @@ _.Zones =
 					},
 				}),
 				q(26281, {	-- The Defense of Grom'gol: Trollish Thievery
-					["qg"] = 2464,	-- Commander Aggro'gosh
+					["provider"] = { "n", 2464 },	-- Commander Aggro'gosh
 					["coord"] = { 38.4, 50.4, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -841,14 +841,14 @@ _.Zones =
 					},
 				}),
 				q(26735, {	-- The Fate of Kurzen
-					["qg"] = 469,	-- Lieutenant Doren
+					["provider"] = { "n", 469 },	-- Lieutenant Doren
 					["coord"] = { 47.5, 10.2, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26838,	-- Rebels Without a Clue
 				}),
 				q(2762,  {	-- The Great Silver Deceiver
 					["u"] = 40,
-					["qg"] = 7802,	-- Galvan the Ancient
+					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = 164,	-- Blacksmithing
@@ -864,7 +864,7 @@ _.Zones =
 					},
 				}),
 				q(26269, {	-- The Green Hills of Stranglethorn
-					["qg"] = 716,	-- Barnil Stonepot
+					["provider"] = { "n", 716 },	-- Barnil Stonepot
 					["coord"] = { 44.2, 22.1, 50 },
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
 				}),
@@ -876,25 +876,25 @@ _.Zones =
 					},
 				}),
 				q(26340, {	-- The Hunt
-					["qg"] = 17094,	-- Nemeth Hawkeye
+					["provider"] = { "n", 17094 },	-- Nemeth Hawkeye
 					["coord"] = { 38.1, 50.0, 50 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(29115, {	-- The Hunter's Revenge (A)
-					["qg"] = 52346,	-- Grent Direhammer
+					["provider"] = { "n", 52346 },	-- Grent Direhammer
 					["coord"] = { 50.3, 21.7, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29114,	-- Track the Tracker
 				}),
 				q(29227, {	-- The Hunter's Revenge (H)
-					["qg"] = 52294,	-- Grent Direhammer
+					["provider"] = { "n", 52294 },	-- Grent Direhammer
 					["coord"] = { 50.3, 21.7, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29226,	-- Track the Tracker
 				}),
 				q(26781, {	-- The Mind's Eye (A)
-					["qg"] = 44019,	-- Livingston Marshal
+					["provider"] = { "n", 44019 },	-- Livingston Marshal
 					["coord"] = { 53.2, 66.9, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -905,14 +905,14 @@ _.Zones =
 					},
 				}),
 				q(26303, {	-- The Mind's Eye (H)
-					["qg"] = 2519,	-- Kin'weelay
+					["provider"] = { "n", 2519 },	-- Kin'weelay
 					["coord"] = { 63.0, 41.4, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26302,	-- Chasing Yenniku's Fate
 				}),
 				q(2760,  {	-- The Mithril Order
 					["u"] = 40,
-					["qg"] = 7794,	-- McGaven
+					["provider"] = { "n", 7794 },	-- McGaven
 					["requireSkill"] = 164,	-- Blacksmithing
 					["sourceQuests"] = {
 						2757,	-- Booty Bay or Bust! (Horde)
@@ -920,12 +920,12 @@ _.Zones =
 					},
 				}),
 				q(26782, {	-- The Mosh'Ogg Bounty (A) -- TODO:: how is this version obtained?
-					["qg"] = 44017,	-- Wulfred Harrys
+					["provider"] = { "n", 44017 },	-- Wulfred Harrys
 					["coord"] = { 53.2, 66.2, 50 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26783, {	-- The Mosh'Ogg Bounty (A)
-					["qg"] = 44018,	-- Wulfred Harrys
+					["provider"] = { "n", 44018 },	-- Wulfred Harrys
 					["coord"] = { 53.3, 66.2, 50 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -933,30 +933,30 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(26399, {	-- The Mosh'Ogg Bounty
-					["qg"] = 42814,	-- Skeezy Whillzap
+					["provider"] = { "n", 42814 },	-- Skeezy Whillzap
 					["coord"] = { 63.4, 41.1, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26407,	-- Mosh'Ogg Handiwork
 				}),
 				q(26734, {	-- The Source of the Madness
-					["qg"] = 739,	-- Brother Nimetz
+					["provider"] = { "n", 739 },	-- Brother Nimetz
 					["coord"] = { 47.2, 11.1, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26733,	-- Control Sample
 				}),
 				q(26400, {	-- The Universal Key
-					["qg"] = 42814,	-- Skeezy Whillzap
+					["provider"] = { "n", 42814 },	-- Skeezy Whillzap
 					["coord"] = { 63.7, 39.7, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26399,	-- The Mosh'Ogg Bounty
 				}),
 				q(185,   {	-- Tiger Hunting
-					["qg"] = 717,	-- Ajeck Rouack
+					["provider"] = { "n", 717 },	-- Ajeck Rouack
 					["coord"] = { 44.5, 22.6, 50 },
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
 				}),
 				q(188,   {	-- Tiger Mastery
-					["qg"] = 717,	-- Ajeck Rouack
+					["provider"] = { "n", 717 },	-- Ajeck Rouack
 					["coord"] = { 44.5, 22.6, 50 },
 					["sourceQuest"] = 187,	-- Tiger Prowess
 					["g"] = {
@@ -969,46 +969,46 @@ _.Zones =
 					},
 				}),
 				q(186,   {	-- Tiger Stalking
-					["qg"] = 717,	-- Ajeck Rouack
+					["provider"] = { "n", 717 },	-- Ajeck Rouack
 					["coord"] = { 44.5, 22.6, 50 },
 					["sourceQuest"] = 185,	-- Tiger Hunting
 				}),
 				q(187,   {	-- Tiger Prowess
-					["qg"] = 717,	-- Ajeck Rouack
+					["provider"] = { "n", 717 },	-- Ajeck Rouack
 					["coord"] = { 44.5, 22.6, 50 },
 					["sourceQuest"] = 186,	-- Tiger Stalking
 				}),
 				q(29236, {	-- To Hardwrench Hideaway
-					["qg"] = 53008,	-- Thysta
+					["provider"] = { "n", 53008 },	-- Thysta
 					["coord"] = { 39.0, 51.2, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29235,	-- Defend Grom'gol
 				}),
 				q(26805, {	-- To the Cape!
-					["qg"] = 44018,	-- Wulfred Harrys
+					["provider"] = { "n", 44018 },	-- Wulfred Harrys
 					["coord"] = { 53.3, 66.2, 50 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29133, {	-- To the Digsite
-					["qg"] = 52753,	-- James Stillair
+					["provider"] = { "n", 52753 },	-- James Stillair
 					["coord"] = { 47.8, 11.8, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29131,	-- Defend the Rebel Camp
 				}),
 				q(29114, {	-- Track the Tracker (A)
-					["qg"] = 52294,	-- Hemet Nesingwary Jr.
+					["provider"] = { "n", 52294 },	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29105,	-- Nesingwary Will Know
 				}),
 				q(29226, {	-- Track the Tracker (H)
-					["qg"] = 52294,	-- Hemet Nesingwary Jr.
+					["provider"] = { "n", 52294 },	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29223,	-- Nesingwary Will Know
 				}),
 				q(26763, {	-- Venture Company Mining (A)
-					["qg"] = 773,	-- Krazek
+					["provider"] = { "n", 773 },	-- Krazek
 					["coord"] = { 43.5, 23.1, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26740,	-- Krazek's Cookery
@@ -1022,7 +1022,7 @@ _.Zones =
 					},
 				}),
 				q(26403, {	-- Venture Company Mining (H)
-					["qg"] = 42814,	-- Skeezy Whillzap
+					["provider"] = { "n", 42814 },	-- Skeezy Whillzap
 					["coord"] = { 63.7, 39.7, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26399,	-- The Mosh'Ogg Bounty
@@ -1035,25 +1035,25 @@ _.Zones =
 					},
 				}),
 				q(29233, {	-- Warn Grom'gol
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					--["coord"] = {},	-- can be picked up anywhere since Bwemba follows you
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29232,	-- Bury Me With Me Boots...
 				}),
 				q(29124, {	-- Warn the Rebel Camp
-					["qg"] = 52234,	-- Bwemba
+					["provider"] = { "n", 52234 },	-- Bwemba
 					["coord"] = { 76.0, 66.6, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29121,	-- Bury Me With Me Boots...
 				}),
 				q(26729, {	-- Water Elementals
-					["qg"] = 43885,	-- Emerine Junis
+					["provider"] = { "n", 43885 },	-- Emerine Junis
 					["coord"] = { 47.6, 10.3, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26736,	-- Spared from Madness
 				}),
 				q(583,   {	-- Welcome to the Jungle
-					["qg"] = 716,	-- Barnil Stonepot
+					["provider"] = { "n", 716 },	-- Barnil Stonepot
 					["coord"] = { 44.2, 22.1, 50 },
 					["sourceQuest"] = 26340,	-- The Hunt
 				}),
@@ -1072,13 +1072,13 @@ _.Zones =
 					},
 				}),
 				q(26730, {	-- You Can Take the Murloc Out of the Ocean...
-					["qg"] = 43885,	-- Emerine Junis
+					["provider"] = { "n", 43885 },	-- Emerine Junis
 					["coord"] = { 47.6, 10.3, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26729,	-- Water Elementals
 				}),
 				q(26779, {	-- Zul'Mamwe Mambo (A)
-					["qg"] = 44021,	-- Ghaliri
+					["provider"] = { "n", 44021 },	-- Ghaliri
 					["coord"] = { 52.6, 66.8, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26773,	-- See Raptor
@@ -1091,7 +1091,7 @@ _.Zones =
 					},
 				}),
 				q(26405, {	-- Zul'Mamwe Mambo (H)
-					["qg"] = 42811,	-- Surkhan
+					["provider"] = { "n", 42811 },	-- Surkhan
 					["coord"] = { 63.2, 38.7, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26359,	-- See Raptor

@@ -23,19 +23,19 @@ _.PVP =
 						ach(710), 	-- The Defiler
 						n(-17, {	-- Quests
 							q(8265, {	-- Defiler's Advanced Care Package
-								["qg"] = 15126,	-- Rutherford Twing
+								["provider"] = { "n", 15126 },	-- Rutherford Twing
 								["lvl"] = 45,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
 							}),
 							q(8263, {	-- Defiler's Basic Care Package
-								["qg"] = 15126,	-- Rutherford Twing
+								["provider"] = { "n", 15126 },	-- Rutherford Twing
 								["lvl"] = 25,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
 							}),
 							q(8264, {	-- Defiler's Standard Care Package
-								["qg"] = 15126,	-- Rutherford Twing
+								["provider"] = { "n", 15126 },	-- Rutherford Twing
 								["lvl"] = 35,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
@@ -130,19 +130,19 @@ _.PVP =
 						ach(711), 	-- Knight of Arathor
 						n(-17, {	-- Quests
 							q(8262, {	-- Arathor Advanced Care Package
-								["qg"] = 15127,	-- Samuel Hawke
+								["provider"] = { "n", 15127 },	-- Samuel Hawke
 								["lvl"] = 45,
 								["races"] = ALLIANCE_ONLY,
 								["minReputation"] = { 509, FRIENDLY },
 							}),
 							q(8260, {	-- Arathor Basic Care Package
-								["qg"] = 15127,	-- Samuel Hawke
+								["provider"] = { "n", 15127 },	-- Samuel Hawke
 								["lvl"] = 25,
 								["races"] = ALLIANCE_ONLY,
 								["minReputation"] = { 509, FRIENDLY },
 							}),
 							q(8261, {	-- Arathor Standard Care Package
-								["qg"] = 15127,	-- Samuel Hawke
+								["provider"] = { "n", 15127 },	-- Samuel Hawke
 								["lvl"] = 35,
 								["races"] = ALLIANCE_ONLY,
 								["minReputation"] = { 509, FRIENDLY },

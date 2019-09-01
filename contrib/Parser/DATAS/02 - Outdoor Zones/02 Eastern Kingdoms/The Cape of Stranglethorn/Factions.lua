@@ -11,7 +11,7 @@ _.Zones =
 					["g"] = {
 						n(-17, {	-- Quests
 							q(4621,  {	-- Avast Ye, Admiral!
-								["qg"] = 2546,	-- Fleet Master Firallon
+								["provider"] = { "n", 2546 },	-- Fleet Master Firallon
 								["coord"] = { 46.7, 95.2, 210 },
 								["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
 								["g"] = {
@@ -19,13 +19,13 @@ _.Zones =
 								},
 							}),
 							q(1036,  {	-- Avast Ye, Scallywag
-								["qg"] = 2545,	-- "Pretty Boy" Duncan
+								["provider"] = { "n", 2545 },	-- "Pretty Boy" Duncan
 								["coord"] = { 44.5, 92.8, 210 },
 								["minReputation"] = { 87, FRIENDLY },
 								["isBreadcrumb"] = true,
 							}),
 							q(9272, {	-- Dressing the Part
-								["qg"] = 2546,	-- Fleet Master Firallon
+								["provider"] = { "n", 2546 },	-- Fleet Master Firallon
 								["coord"] = { 46.6, 95.2, 210 },
 								["minReputation"] = { 87, NEUTRAL },
 								["g"] = bubbleDown({["collectible"] = false }, {

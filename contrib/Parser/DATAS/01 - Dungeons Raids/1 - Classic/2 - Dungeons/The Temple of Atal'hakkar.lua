@@ -9,13 +9,13 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 76.04, 45.21, 51 },	-- The Temple of Atal'hakkar, Swamp of Sorrows
 		["g"] = {
 			n(-1, {	-- Common Boss Drop
-				["qgs"] = {
-					5713,	-- Gasher
-					5715,	-- Hukku
-					5714,	-- Loro
-					5717,	-- Mijan
-					5712,	-- Zolo
-					5716,	-- Zul'Lor
+				["providers"] = {
+					{ "n", 5713 },	-- Gasher
+					{ "n", 5715 },	-- Hukku
+					{ "n", 5714 },	-- Loro
+					{ "n", 5717 },	-- Mijan
+					{ "n", 5712 },	-- Zolo
+					{ "n", 5716 },	-- Zul'Lor
 				},
 				["g"] = {
 					un(2, i(10783)),	-- Atal'ai Spaulders
@@ -29,7 +29,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-17, {	-- Quests
 				q(9053, {	-- A Better Ingredient
 					["u"] = 40,
-					["qg"] = 9619,	-- Torwa Pathfinder
+					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["classes"] = { 11 },	-- Druid
 					["g"] = {
 						un(2, i(22272)),	-- Forest's Embrace
@@ -42,7 +42,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(8257, {	-- Blood of Morphaz
 					["u"] = 40,
-					["qg"] = 8405,	-- Ogtinc
+					["provider"] = { "n", 8405 },	-- Ogtinc
 					["classes"] = { 5 },	-- Priest
 					["g"] = {
 						un(2, i(19990)),	-- Blessed Prayer Beads
@@ -52,7 +52,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(8413, {	-- Da Voodoo
 					["u"] = 40,
-					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["provider"] = { "n", 6176 },	-- Bath'rah the Windwatcher
 					["classes"] = { 7 },	-- Shaman
 					["g"] = {
 						un(2, i(20369)),	-- Azurite Fists
@@ -62,7 +62,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(8253, {	-- Destroy Morphaz
 					["u"] = 40,
-					["qg"] = 8379,	-- Archmage Xylem
+					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { 8 },	-- Mage
 					["g"] = {
 						un(2, i(20037)),	-- Arcane Crystal Pendant
@@ -71,7 +71,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(27605, {	-- Eranikus
-					["qg"] = 46077,	-- Lord Itharius
+					["provider"] = { "n", 46077 },	-- Lord Itharius
 					["sourceQuest"] = 27915,	-- The Heart of the Temple
 					["g"] = {
 						i(65931),	-- Essence of Eranikus' Shade
@@ -79,7 +79,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(8418, {	-- Forging the Mightstone
 					["u"] = 40,
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
 					["g"] = {
@@ -96,7 +96,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(27604, {	-- Jammal'an the Prophet
-					["qg"] = 46077,	-- Lord Itharius
+					["provider"] = { "n", 46077 },	-- Lord Itharius
 				}),
 				q(3447, {	-- Secret of the Circle
 					["u"] = 40,
@@ -110,7 +110,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(8236, {	-- The Azure Key
 					["u"] = 40,
-					["qg"] = 8379,	-- Archmage Xylem
+					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { 4 },	-- Rogue
 					["g"] = {
 						un(2, i(19982)),	-- Duskbat Drape
@@ -119,7 +119,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(27633, {	-- The Blood God Hakkar
-					["qg"] = 46077,	-- Lord Itharius
+					["provider"] = { "n", 46077 },	-- Lord Itharius
 				}),
 				q(3528, {	-- The God Hakkar
 					["u"] = 40,
@@ -131,7 +131,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(8232, {	-- The Green Drake
 					["u"] = 40,
-					["qg"] = 8405,	-- Ogtinc
+					["provider"] = { "n", 8405 },	-- Ogtinc
 					["classes"] = { 3 },	-- Hunter
 					["g"] = {
 						un(2, i(19991)),	-- Devilsaur Eye
@@ -148,7 +148,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(8422, {	-- Trolls of a Feather
 					["u"] = 40,
-					["qg"] = 14470,	-- Impsy
+					["provider"] = { "n", 14470 },	-- Impsy
 					["classes"] = { 9 },	-- Warlock
 					["g"] = {
 						un(2, i(20534)),	-- Abyss Shard
@@ -158,7 +158,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(8425, {	-- Voodoo Feathers
 					["u"] = 40,
-					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["classes"] = { 1 },	-- Warrior
 					["g"] = {
 						un(2, i(20130)),	-- Diamond Flask

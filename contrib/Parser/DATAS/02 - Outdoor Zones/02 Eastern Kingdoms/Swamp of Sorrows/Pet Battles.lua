@@ -28,7 +28,7 @@ _.Zones =
 					["crs"] = { 61367 },	-- Water Snake
 				}),
 				q(31913, {	-- Everessa
-					["qg"] = 66518,	-- Everessa
+					["provider"] = { "n", 66518 },	-- Everessa
 					["coord"] = { 76.8, 41.4, 51 },
 					["isDaily"] = true,
 				}),

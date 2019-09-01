@@ -14,7 +14,7 @@ _.Holidays =
 					{	-- A Trip to the Dark Portal [Alliance - Draenei]
 						["questID"] = 10952,	-- A Trip to the Dark Portal
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22818,			-- Draenei Orphan
+						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
@@ -31,7 +31,7 @@ _.Holidays =
 					{	-- A Trip to the Dark Portal [Horde - Blood Elf]
 						["questID"] = 10951,	-- A Trip to the Dark Portal
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22817,			-- Blood Elf Orphan
+						["provider"] = { "n", 22817 },			-- Blood Elf Orphan
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10942,	-- Children's Week
@@ -48,7 +48,7 @@ _.Holidays =
 					{	-- A Trip To The Wonderworks [Neutral - Oracles]
 						["questID"] = 13937,	-- A Trip To The Wonderworks
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33533,			-- Oracle Orphan
+						["provider"] = { "n", 33533 },			-- Oracle Orphan
 						["crs"] = {
 							29478,	-- Jeppetto Joybuzz
 							96483,	-- Jeppetto Joybuzz
@@ -72,7 +72,7 @@ _.Holidays =
 					{	-- A Trip To The Wonderworks [Neutral - Wolvar]
 						["questID"] = 13938,	-- A Trip To The Wonderworks
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33532,			-- Wolvar Orphan
+						["provider"] = { "n", 33532 },			-- Wolvar Orphan
 						["crs"] = {
 							29478,	-- Jeppetto Joybuzz
 							96483,	-- Jeppetto Joybuzz
@@ -96,7 +96,7 @@ _.Holidays =
 					{	-- A Warden of the Alliance [Alliance - Human - FINAL]
 						["questID"] = 171,	-- A Warden of the Alliance
 						["u"] = 20,			-- Children's Week Filter
-						["qg"] = 14305,		-- Human Orphan
+						["provider"] = { "n", 14305 },		-- Human Orphan
 						["crs"] = {
 							51988,			-- Orphan Matron Nightingale
 						},
@@ -197,7 +197,7 @@ _.Holidays =
 					{	-- A Warden of the Horde [Horde - Orc - FINAL]
 						["questID"] = 5502,	-- A Warden of the Horde
 						["u"] = 20,			-- Children's Week Filter
-						["qg"] = 14444,	-- Orcish Orphan
+						["provider"] = { "n", 14444 },	-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["crs"] = {
 							51989,		-- Orphan Matron Battlewall
@@ -281,7 +281,7 @@ _.Holidays =
 					{	-- Auchindoun and the Ring of Observance [Alliance - Draenei]
 						["questID"] = 10950,	-- Auchindoun and the Ring of Observance
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22818,			-- Draenei Orphan
+						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
@@ -302,7 +302,7 @@ _.Holidays =
 						["questID"] = 10966,	-- Back to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22818,			-- Draenei Orphan
+						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["crs"] = {
 							22819,			-- Orphan Matron Mercy
 						},
@@ -380,7 +380,7 @@ _.Holidays =
 					{	-- Back to the Orphanage [Horde - Blood Elf - FINAL]
 						["questID"] = 10967,	-- Back to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22817,			-- Blood Elf Orphan
+						["provider"] = { "n", 22817 },			-- Blood Elf Orphan
 						["crs"] = {
 							22819,			-- Orphan Matron Mercy
 						},
@@ -459,7 +459,7 @@ _.Holidays =
 					{	-- Back To The Orphanage [Neutral - Oracles - FINAL]
 						["questID"] = 28879,	-- Back to the Orphanage	Note!! 13959 depracated
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33533,			-- Oracle Orphan
+						["provider"] = { "n", 33533 },			-- Oracle Orphan
 						["crs"] = {
 							34365,			-- Orphan Matron Aria
 						},
@@ -528,7 +528,7 @@ _.Holidays =
 					{	-- Back To The Orphanage [Neutral - Wolvar - FINAL]
 						["questID"] = 28880,	-- Back To The Orphanage	Note!! 13960 depracated
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33532,			-- Wolvar Orphan
+						["provider"] = { "n", 33532 },			-- Wolvar Orphan
 						["crs"] = {
 							34365,			-- Orphan Matron Aria
 						},
@@ -597,7 +597,7 @@ _.Holidays =
 					{	-- Bird Friends [Alliance - Kul Tiran]
 						["questID"] = 53863, 	-- Bird Friends
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 145394,		-- Liam
+						["provider"] = { "n", 145394 },		-- Liam
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
 						["sourceQuests"] = {
 							53859,	-- The Mountain Folk
@@ -616,7 +616,7 @@ _.Holidays =
 					{	-- Call on the Farseer [Alliance - Draenei]
 						["questID"] = 10968,	-- Call on the Farseer
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22818,			-- Draenei Orphan
+						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
 							10956,	-- The Seat of the Naaru
@@ -636,7 +636,7 @@ _.Holidays =
 					{	-- Children's Week [Alliance - Draenei - START]
 						["questID"] = 10943,	-- Children's Week [Alliance - Draenei Orphan]
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22819,			-- Orphan Matron Mercy
+						["provider"] = { "n", 22819 },			-- Orphan Matron Mercy
 						["coords"] = {
 							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
 						},
@@ -648,7 +648,7 @@ _.Holidays =
 					{	-- Children's Week [Alliance - Human - START]
 						["questID"] = 1468,		-- Children's Week
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 51988,			-- Orphan Matron Nightingale
+						["provider"] = { "n", 51988 },			-- Orphan Matron Nightingale
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["maps"] = {
 							84,	-- Stormwind City
@@ -661,7 +661,7 @@ _.Holidays =
 					{	-- Children's Week [Alliance - Kul Tiran - START]
 						["questID"] = 53811,	-- Children's Week
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 145291,		-- Oprhan Matron Westerson
+						["provider"] = { "n", 145291 },		-- Oprhan Matron Westerson
 						["maps"] = {
 							1161,	-- Boralus
 						},
@@ -674,7 +674,7 @@ _.Holidays =
 					{	-- Children's Week [Horde - Blood Elf - START]
 						["questID"] = 10942,	-- Children's Week [Horde - Blood Elf Orphan]
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22819,			-- Orphan Matron Mercy
+						["provider"] = { "n", 22819 },			-- Orphan Matron Mercy
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["coords"] = {
 							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
@@ -687,7 +687,7 @@ _.Holidays =
 					{	-- Children's Week [Horde - Orc - START]
 						["questID"] = 172,	-- Children's Week [Horde]
 						["u"] = 20,			-- Children's Week Filter
-						["qg"] = 51989,		-- Orphan Matron Battlewall
+						["provider"] = { "n", 51989 },		-- Orphan Matron Battlewall
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["coords"] = {
 							{ 57.93, 57.63, 85 },	-- Orphan Matron Battlewail
@@ -701,7 +701,7 @@ _.Holidays =
 					{	-- Children's Week [Horde - Zandalari - START]
 						["questID"] = 131346,	-- Children's Week
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 131346,		-- Caretaker Padae
+						["provider"] = { "n", 131346 },		-- Caretaker Padae
 						["maps"] = {
 							1163,	-- The Great Seal [Dazar'alor]
 							1164,	-- Hall of Chroniclers [Dazar'alor]
@@ -716,7 +716,7 @@ _.Holidays =
 					{	-- Cruisin' the Chasm [Alliance - Human]
 						["questID"] = 29093,	-- Cruisin' the Chasm
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14305,			-- Human Orphan
+						["provider"] = { "n", 14305 },			-- Human Orphan
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							1468,	-- Children's Week
@@ -734,7 +734,7 @@ _.Holidays =
 					{	-- Hch'uu and the Mushroom People [Horde - Blood Elf]
 						["questID"] = 10945,	-- Hch'uu and the Mushroom People
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22817,			-- Blood Elf Orphan
+						["provider"] = { "n", 22817 },			-- Blood Elf Orphan
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10942,	-- Children's Week
@@ -752,7 +752,7 @@ _.Holidays =
 					{	-- Home Of The Bear-Men [Neutral - Wolvar]
 						["questID"] = 13930,	-- Home Of The Bear-Men
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33532,			-- Wolvar Orphan
+						["provider"] = { "n", 33532 },			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
 							13927,	-- Little Orphan Kekek Of The Wolvar
@@ -770,7 +770,7 @@ _.Holidays =
 					{	-- Hunting For Gold [Horde - Zandalari]
 						["questID"] = 53969,	-- Hunting for Gold
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 131346,		-- Caretaker Padae
+						["provider"] = { "n", 131346 },		-- Caretaker Padae
 						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
 						["sourceQuests"] = {
 							53966,	-- Loa of Winds
@@ -791,7 +791,7 @@ _.Holidays =
 					{	-- Jheel is at Aeris Landing! [Alliance - Draenei]
 						["questID"] = 10954,	-- Jheel is at Aeris Landing!
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22818,			-- Draenei Orphan
+						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
@@ -809,7 +809,7 @@ _.Holidays =
 					{	-- Let's Go Fly a Kite [Alliance - Human]
 						["questID"] = 29117,	-- Let's Go Fly a Kite
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14305,			-- Human Orphan
+						["provider"] = { "n", 14305 },			-- Human Orphan
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							29093,	-- Cruisin' the Chasm
@@ -844,7 +844,7 @@ _.Holidays =
 					{	-- Let's Go Fly a Kite [Horde - Orc]
 						["questID"] = 29190,	-- Let's Go Fly a Kite
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14444,			-- Orcish Orphan
+						["provider"] = { "n", 14444 },			-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["sourceQuests"] = {
 							29146,	-- Ridin' the Rocketway
@@ -876,7 +876,7 @@ _.Holidays =
 					{	-- Loa of Winds [Horde - Zandalari]
 						["questID"] = 53966,	-- Loa of Winds
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 131346,		-- Caretaker Padae
+						["provider"] = { "n", 131346 },		-- Caretaker Padae
 						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
 						["sourceQuests"] = {
 							131346,	-- Children's Week
@@ -896,7 +896,7 @@ _.Holidays =
 					{	-- Little Orphan Kekek Of The Wolvar [Neutral - Wolvar - START]
 						["questID"] = 13927,	-- Little Orphan Kekek Of The Wolvar
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 34365,			-- Orphan Matron Aria
+						["provider"] = { "n", 34365 },			-- Orphan Matron Aria
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["coords"] = {
 							{ 49.37, 63.26, 125 },	-- Orphan Matron Aria
@@ -908,7 +908,7 @@ _.Holidays =
 					{	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
 						["questID"] = 13926,	-- Little Orphan Roo Of The Oracles
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 34365,			-- Orphan Matron Aria
+						["provider"] = { "n", 34365 },			-- Orphan Matron Aria
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["coords"] = {
 							{ 49.37, 63.26, 125 },	-- Orphan Matron Aria
@@ -920,7 +920,7 @@ _.Holidays =
 					{	-- Malfurion Has Returned! [Alliance - Human] REMOVED
 						["questID"] = 29107,	-- Malfurion Has Returned!
 						["u"] = 2,				-- Unobtainable	Note!! Looks like quest was removed in BFA due to Teladrassil burning!!
-						["qg"] = 14305,			-- Human Orphan
+						["provider"] = { "n", 14305 },			-- Human Orphan
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							1468,	-- Children's Week
@@ -935,7 +935,7 @@ _.Holidays =
 					{	-- Meeting a Great One [Neutral - Oracles]
 						["questID"] = 13956,	-- Meeting a Great One
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33533,			-- Oracle Orphan
+						["provider"] = { "n", 33533 },			-- Oracle Orphan
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
 							13951,	-- Playmates!
@@ -956,7 +956,7 @@ _.Holidays =
 					{	-- Now, When I Grow Up... [Horde - Blood Elf]
 						["questID"] = 11975,	-- Now, When I Grow Up...
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22817,			-- Blood Elf Orphan
+						["provider"] = { "n", 22817 },			-- Blood Elf Orphan
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10951,	-- A Trip to the Dark Portal
@@ -975,7 +975,7 @@ _.Holidays =
 					{	-- Our New Friends [Alliance - Human]
 						["questID"] = 54130,	-- Our New Friends
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14305,			-- Human Orphan
+						["provider"] = { "n", 14305 },			-- Human Orphan
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							1468,	-- Children's Week
@@ -991,7 +991,7 @@ _.Holidays =
 					{	-- Playmates! [Neutral - Oracles]
 						["questID"] = 13950,	-- Playmates!
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33533,			-- Oracle Orphan
+						["provider"] = { "n", 33533 },			-- Oracle Orphan
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
 							13926,	-- Little Orphan Roo Of The Oracles
@@ -1009,7 +1009,7 @@ _.Holidays =
 					{	-- Playmates! [Neutral - Wolvar]
 						["questID"] = 13951,	-- Playmates!
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33532,			-- Wolvar Orphan
+						["provider"] = { "n", 33532 },			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
 							13927,	-- Little Orphan Kekek Of The Wolvar
@@ -1025,7 +1025,7 @@ _.Holidays =
 					{	-- Return to the Hall of Castes [Horde - Zandalari - FINAL]
 						["questID"] = 53971,	-- Return to the Hall of Castes
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 131346,		-- Caretaker Padae
+						["provider"] = { "n", 131346 },		-- Caretaker Padae
 						["crs"] = {
 							131346,		-- Caretaker Padae
 						},
@@ -1111,7 +1111,7 @@ _.Holidays =
 					{	-- Return to the Orphanage [Alliance - Kul Tiran - FINAL]
 						["questID"] = 53865, 	-- Return to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 145394,		-- Liam
+						["provider"] = { "n", 145394 },		-- Liam
 						["crs"] = {
 							145291,		-- Oprhan Matron Westerson
 						},
@@ -1195,7 +1195,7 @@ _.Holidays =
 					{	-- Ridin' the Rocketway [Horde - Orc]
 						["questID"] = 29146,	-- Ridin' the Rocketway
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14444,			-- Orcish Orphan
+						["provider"] = { "n", 14444 },			-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["sourceQuests"] = {
 							172,	-- Children's Week
@@ -1213,7 +1213,7 @@ _.Holidays =
 					{	-- Shapeshifters [Alliance - Kul Tiran]
 						["questID"] = 53864,	-- Shapeshifters
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 145394,		-- Liam
+						["provider"] = { "n", 145394 },		-- Liam
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
 						["sourceQuests"] = {
 							53859,	-- The Mountain Folk
@@ -1234,7 +1234,7 @@ _.Holidays =
 					{	-- Strong New Allies [Horde - Orc]
 						["questID"] = 54146,	-- Strong New Allies
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14444,			-- Orcish Orphan
+						["provider"] = { "n", 14444 },			-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["sourceQuests"] = {
 							172,	-- Children's Week
@@ -1251,7 +1251,7 @@ _.Holidays =
 					{	-- The Banshee Queen [Horde - Orc] REMOVED
 						["questID"] = 29167,	-- The Banshee Queen
 						["u"] = 2,				-- Unobtainable	Note!! Looks like quest was removed in BFA due to Teladrassil burning!!
-						["qg"] = 14444,			-- Orcish Orphan
+						["provider"] = { "n", 14444 },			-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["sourceQuests"] = {
 							172,	-- Children's Week
@@ -1266,7 +1266,7 @@ _.Holidays =
 					{	-- The Biggest Diamond Ever! [Alliance - Human]
 						["questID"] = 29106,	-- The Biggest Diamond Ever!
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14305,			-- Human Orphan
+						["provider"] = { "n", 14305 },			-- Human Orphan
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							1468,	-- Children's Week
@@ -1287,7 +1287,7 @@ _.Holidays =
 					{	-- The Biggest Tree Ever! [Neutral - Oracles]
 						["questID"] = 13929,	-- The Biggest Tree Ever!
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33533,			-- Oracle Orphan
+						["provider"] = { "n", 33533 },			-- Oracle Orphan
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
 							13926,	-- Little Orphan Roo Of The Oracles
@@ -1305,7 +1305,7 @@ _.Holidays =
 					{	-- The Bronze Dragonshrine [Neutral - Oracles]
 						["questID"] = 13933,	-- The Bronze Dragonshrine
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33533,			-- Oracle Orphan
+						["provider"] = { "n", 33533 },			-- Oracle Orphan
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
 							13926,	-- Little Orphan Roo Of The Oracles
@@ -1322,7 +1322,7 @@ _.Holidays =
 					{	-- The Bronze Dragonshrine [Neutral - Wolvar]
 						["questID"] = 13934,	-- The Bronze Dragonshrine
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33532,			-- Wolvar Orphan
+						["provider"] = { "n", 33532 },			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
 							13927,	-- Little Orphan Kekek Of The Wolvar
@@ -1339,7 +1339,7 @@ _.Holidays =
 					{	-- The Dragon Queen [Neutral - Oracles]
 						["questID"] = 13954,	-- The Dragon Queen
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33533,			-- Oracle Orphan
+						["provider"] = { "n", 33533 },			-- Oracle Orphan
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
 							13951,	-- Playmates!
@@ -1357,7 +1357,7 @@ _.Holidays =
 					{	-- The Dragon Queen [Neutral - Wolvar]
 						["questID"] = 13955,	-- The Dragon Queen
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33532,			-- Wolvar Orphan
+						["provider"] = { "n", 33532 },			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
 							13930,	-- Home Of The Bear-Men
@@ -1375,7 +1375,7 @@ _.Holidays =
 					{	-- The Fallen Chieftain [Horde - Orc]
 						["questID"] = 29176,	-- The Fallen Chieftain
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14444,			-- Orcish Orphan
+						["provider"] = { "n", 14444 },			-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["sourceQuests"] = {
 							172,	-- Children's Week
@@ -1394,7 +1394,7 @@ _.Holidays =
 					{	-- The Frogmarsh [Horde - Zandalari]
 						["questID"] = 53967,	-- The Frogmarsh
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 131346,		-- Caretaker Padae
+						["provider"] = { "n", 131346 },		-- Caretaker Padae
 						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
 						["sourceQuests"] = {
 							131346,	-- Children's Week
@@ -1414,7 +1414,7 @@ _.Holidays =
 					{	-- The Mighty Hemet Nesingwary [Neutral - Wolvar]
 						["questID"] = 13957,	-- The Mighty Hemet Nesingwary
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 33532,			-- Wolvar Orphan
+						["provider"] = { "n", 33532 },			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
 							13930,	-- Home Of The Bear-Men
@@ -1432,7 +1432,7 @@ _.Holidays =
 					{	-- The Mountain Folk [Alliance - Kul Tiran]
 						["questID"] = 53859, 	-- The Mountain Folk
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 145394,		-- Liam
+						["provider"] = { "n", 145394 },		-- Liam
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
 						["sourceQuests"] = {
 							53811,	-- Children's Week
@@ -1449,7 +1449,7 @@ _.Holidays =
 					{	-- The Seat of the Naaru [Alliance - Draenei]
 						["questID"] = 10956,	-- The Seat of the Naaru
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22818,			-- Draenei Orphan
+						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
 							10950,	-- Auchindoun and the Ring of Observance
@@ -1469,7 +1469,7 @@ _.Holidays =
 					{	-- The Sethrak Queen [Horde - Zandalari]
 						["questID"] = 53970,	-- The Sethrak Queen
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 131346,		-- Caretaker Padae
+						["provider"] = { "n", 131346 },		-- Caretaker Padae
 						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
 						["sourceQuests"] = {
 							53966,	-- Loa of Winds
@@ -1492,7 +1492,7 @@ _.Holidays =
 					{	-- The Shifting Pack [Horde - Zandalari]
 						["questID"] = 53968,	-- The Shifting Pack
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 131346,		-- Caretaker Padae
+						["provider"] = { "n", 131346 },		-- Caretaker Padae
 						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
 						["sourceQuests"] = {
 							131346,	-- Children's Week
@@ -1512,7 +1512,7 @@ _.Holidays =
 					{	-- The Squid Shrine [Alliance - Kul Tiran]
 						["questID"] = 53862, 	-- The Squid Shrine
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 145394,		-- Liam
+						["provider"] = { "n", 145394 },		-- Liam
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
 						["sourceQuests"] = {
 							53811,	-- Children's Week
@@ -1529,7 +1529,7 @@ _.Holidays =
 					{	-- Time to Visit the Caverns [Alliance - Draenei]
 						["questID"] = 10962,	-- Time to Visit the Caverns
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22818,			-- Draenei Orphan
+						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
 							10950,	-- Auchindoun and the Ring of Observance
@@ -1550,7 +1550,7 @@ _.Holidays =
 					{	-- Time to Visit the Caverns [Horde - Blood Elf]
 						["questID"] = 10963,	-- Time to Visit the Caverns
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22817,			-- Blood Elf Orphan
+						["provider"] = { "n", 22817 },			-- Blood Elf Orphan
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10951,	-- A Trip to the Dark Portal
@@ -1572,7 +1572,7 @@ _.Holidays =
 					{	-- Visit the Throne of the Elements [Horde - Blood Elf]
 						["questID"] = 10953,	-- Visit the Throne of the Elements
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 22817,			-- Blood Elf Orphan
+						["provider"] = { "n", 22817 },			-- Blood Elf Orphan
 						["crs"] = {
 							18072,	-- Elementalist Sharvak
 						},
@@ -1593,7 +1593,7 @@ _.Holidays =
 					{	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
 						["questID"] = 53861, 	-- Yo Ho, Yo Ho!
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 145394,		-- Liam
+						["provider"] = { "n", 145394 },		-- Liam
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
 						["sourceQuests"] = {
 							53811,	-- Children's Week
@@ -1610,7 +1610,7 @@ _.Holidays =
 					{	-- You Scream, I Scream... [Alliance - Human]
 						["questID"] = 29119,	-- You Scream, I Scream...
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14305,			-- Human Orphan
+						["provider"] = { "n", 14305 },			-- Human Orphan
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							29093,	-- Cruisin' the Chasm
@@ -1633,7 +1633,7 @@ _.Holidays =
 					{	-- You Scream, I Scream... [Horde - Orc]
 						["questID"] = 29191,	-- You Scream, I Scream...
 						["u"] = 20,			-- Children's Week Filter
-						["qg"] = 14444,	-- Orcish Orphan
+						["provider"] = { "n", 14444 },	-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["sourceQuests"] = {
 							29146,	-- Ridin' the Rocketway

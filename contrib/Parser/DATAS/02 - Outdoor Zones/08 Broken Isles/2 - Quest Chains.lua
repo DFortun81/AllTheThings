@@ -174,18 +174,18 @@ _.Zones =
 							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required.  not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
 							["classes"] = exclude(2, ALL_CLASSES),	-- all classes, excluding Paladins
 							["coord"] = { 28.9, 48.4, 627 },
-							["qg"] = 90417,	-- Archmage Khadgar
+							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 						}),
 						q(44257, {	-- A Falling Star (Paladin)
 							["classes"] = { 2 },	-- Paladin
-							["qg"] = 90417,	-- Archmage Khadgar
+							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 						}),
 						q(44004, {	-- Bringer of the Light
 							["sourceQuests"] = { 44009 },	-- A Falling Star (not sure if Paladin version of the quest leads to this also, so i didn't include it)
 							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
 							["coord"] = { 27.5, 35.8, 629 },	-- Aegwynn's Gallery
 							["maps"] = { 775, 776 },	-- Scenario: In Defense of the Exodar
-							["qg"] = 112130,	-- Archmage Khadgar
+							["provider"] = { "n", 112130 },	-- Archmage Khadgar
 							["g"] = {
 								i(140614),	-- Amice of Steadfast Allies
 								i(140610),	-- Wristwraps of the Grieving Prophet
@@ -203,7 +203,7 @@ _.Zones =
 								}),
 								q(43705, {	-- Nobundo's Last Stand
 									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. If you want to complete this optional quest, you MUST pick it up before completing the Step 2 objectives (Portals and Terrified Citizens) or else it will not be available!",
-									["qg"] = 110695,	-- Quest Giver: Farseer Nobundo
+									["provider"] = { "n", 110695 },	-- Quest Giver: Farseer Nobundo
 									["g"] = {
 										i(140608),	-- Boots of the Broken
 										i(140604),	-- Britches of Elemental Protection
@@ -220,7 +220,7 @@ _.Zones =
 						q(44153, {	-- Light's Charge
 							["sourceQuest"] = 44004,	-- Bringer of the Light
 							["coord"] = { 28.7, 48.5, 627 },
-							["qg"] = 90417,	-- Quest Giver: Archmage Khadgar
+							["provider"] = { "n", 90417 },	-- Quest Giver: Archmage Khadgar
 							["g"] = {
 								crit(2, {	-- Complete the quest, "Light's Charge."
 									["achievementID"] = 10461,	-- Fighting with Style: Classic
@@ -231,58 +231,64 @@ _.Zones =
 							["sourceQuest"] = 44153,	-- Source Quest: Light's Charge
 							["description"] = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that have.",
 							["lvl"] = 110,
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 						}),
 						{
 							["questID"] = 44338,	-- Goddess Watch Over You
 							["sourceQuest"] = 44153,	-- Source Quest: Light's Charge
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["description"] = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that haven't.",
 							["lvl"] = 110,
 						},
 						{
 							["questID"] = 44448,	-- In the House of Light and Shadow
 							["sourceQuests"] = { 44337, 44338 },	-- Source Quest: Goddess Watch Over You (either version)
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["lvl"] = 110,
 						},
 						{
 							["questID"] = 44464,	-- Awakenings
 							["sourceQuest"] = 44448,	-- Source Quest: In the House of Light and Shadow
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["lvl"] = 110,
 						},
 						{
 							["questID"] = 44466,	-- An Unclear Path
 							["sourceQuest"] = 44464,	-- Source Quest: Awakenings
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["lvl"] = 110,
 						},
 						{
 							["questID"] = 44479,	-- Ravencrest's Legacy
 							["sourceQuest"] = 44466,	-- Source Quest: An Unclear Path
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["description"] = "This quest sends you to a scenario involving Kur'talos Ravencrest, Illidan Stormrage, and the ill-fated Moonguard. Before you kill the final boss, make sure to do everything contained within!",
 							["maps"] = { 793 },	-- Scenario: Black Rook Hold
 							["lvl"] = 110,
 							["groups"] = {
 								{
 									["questID"] = 44414,	-- Felspawns of Lothros
-									["qgs"] = { 113361, 113829 },	-- Quest Giver: Captain Jarod Shadowsong
+									["providers"] = {
+										{ "n", 113361 },	-- Captain Jarod Shadowsong
+										{ "n", 113829 },	-- Captain Jarod Shadowsong
+									},
 									["sourceQuest"] = 44479,	-- Source Quest: Ravencrest's Legacy
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy Scenario",
 									["lvl"] = 110,
 								},
 								{
 									["questID"] = 44415,	-- The Red Axe
-									["qgs"] = { 113361, 113829 },	-- Quest Giver: Captain Jarod Shadowsong
+									["providers"] = {
+										{ "n", 113361 },	-- Captain Jarod Shadowsong
+										{ "n", 113829 },	-- Captain Jarod Shadowsong
+									},
 									["sourceQuest"] = 44414,	-- Source Quest: Felspawns of Lothros
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy Scenario",
 									["lvl"] = 110,
 								},
 								{
 									["questID"] = 44416,	-- Hunter of Night
-									["qg"] = 113355,	-- Quest Giver: Broxigar the Red
+									["provider"] = { "n", 113355 },	-- Quest Giver: Broxigar the Red
 									["sourceQuest"] = 44415,	-- Source Quest: The Red Axe
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy Scenario",
 									["lvl"] = 110,
@@ -307,12 +313,12 @@ _.Zones =
 						{
 							["questID"] = 44480,	-- In My Father's House
 							["sourceQuest"] = 44479,	-- Source Quest: Ravencrest's Legacy
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["lvl"] = 110,
 						},
 						{
 							["questID"] = 44496,	-- Destiny Unfulfilled
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["sourceQuest"] = 44480,	-- Source Quest: In My Father's House
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that haven't killed him.",
 							["lvl"] = 110,
@@ -325,7 +331,7 @@ _.Zones =
 						},
 						{
 							["questID"] = 44497,	-- Destiny Unfulfilled
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["sourceQuest"] = 44480,	-- Source Quest: In My Father's House
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for Hunters and Demon Hunters only.",
 							["lvl"] = 110,
@@ -339,7 +345,7 @@ _.Zones =
 						},
 						{
 							["questID"] = 44481,	-- Destiny Unfulfilled
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["sourceQuest"] = 44480,	-- Source Quest: In My Father's House
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that have defeated him.",
 							["lvl"] = 110,
@@ -353,13 +359,13 @@ _.Zones =
 						{
 							["questID"] = 45174,	-- The Hunt for Illidan Stormrage
 							["sourceQuests"] = { 44496, 44497, 44481 },	-- Source Quest: Destiny Unfulfilled (any of the three)
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["lvl"] = 110,
 						},
 						{
 							["questID"] = 45175,	-- Soul Prism of the Illidari
 							["sourceQuest"] = 45174,	-- Source Quest: The Hunt for Illidan Stormrage
-							["qg"] = 89398,	-- Quest Giver: Allari the Souleater <Illidari>
+							["provider"] = { "n", 89398 },	-- Quest Giver: Allari the Souleater <Illidari>
 							["lvl"] = 110,
 							["groups"] = {
 								i(139930),	-- Belt of the Netherwalker
@@ -375,7 +381,7 @@ _.Zones =
 						{
 							["questID"] = 45176,	-- Trial of Valor: The Once and Future Lord of Shadows
 							["sourceQuest"] = 45175,	-- Source Quest: Soul Prism of the Illidari
-							["qg"] = 89398,	-- Quest Giver: Allari the Souleater <Illidari>
+							["provider"] = { "n", 89398 },	-- Quest Giver: Allari the Souleater <Illidari>
 							["lvl"] = 110,
 							["groups"] = {
 								i(139988),	-- Blazing Purpose Mantle
@@ -391,7 +397,7 @@ _.Zones =
 						{
 							["questID"] = 45177,	-- The Nighthold
 							["sourceQuest"] = 45176,	-- Source Quest: Trial of Valor: The Once and Future Lord of Shadows
-							["qg"] = 113857,	-- Quest Giver: Light's Heart
+							["provider"] = { "n", 113857 },	-- Quest Giver: Light's Heart
 							["lvl"] = 110,
 						},
 					},

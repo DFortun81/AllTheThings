@@ -33,25 +33,25 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["allianceQuestID"] = 29453,	-- Your Time Has Come [Alliance]
 						["hordeQuestID"] = 	  29452,	-- Your Time Has Come [Horde]
-						["qg"] = 53115,	-- Molten Lord
+						["provider"] = { "n", 53115 },	-- Molten Lord
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					},
 					{	---------- A Legendary Engagement (A / H)
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 						["allianceQuestID"] = 29129,	-- A Legendary Engagement [Alliance]
 						["hordeQuestID"] = 	  29132,	-- A Legendary Engagement [Horde]
-						["qg"] = 52382,	-- Ziradormi
+						["provider"] = { "n", 52382 },	-- Ziradormi
 						["sourceQuests"] = { 29453, 29452 },	-- Your Time Has Come
 					},
 					q(29134, {	-- A Wrinkle in Time
-						["qg"] = 15192,	-- Anachronos
+						["provider"] = { "n", 15192 },	-- Anachronos
 						["sourceQuests"] = {
 							29129,	-- A Legendary Engagement (horde)
 							29132,	-- A Legendary Engagement (alliance)
 						},
 					}),
 					q(29135, {	-- All-Seeing Eye
-						["qg"] = 15192,	-- Anachronos
+						["provider"] = { "n", 15192 },	-- Anachronos
 						["sourceQuests"] = { 29134 },	-- A Wrinkle in Time
 						["g"] = {
 							i(71141, {	-- Eternal Ember
@@ -78,20 +78,20 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					q(29193, {	-- On a Wing and a Prayer
-						["qg"] = 15192,	-- Anachronos
+						["provider"] = { "n", 15192 },	-- Anachronos
 						["sourceQuests"] = { 29135 },	-- All-Seeing Eye
 					}),
 					q(29194, {	-- Through a Glass, Darkly
-						["qg"] = 52835,	-- Tarecgosa
+						["provider"] = { "n", 52835 },	-- Tarecgosa
 						["sourceQuests"] = { 29193 },	-- On a Wing and a Prayer
 					}),
 					q(29225, {	-- Actionable Intelligence
-						["qg"] = 53567,	-- Tarecgosa
+						["provider"] = { "n", 53567 },	-- Tarecgosa
 						["sourceQuests"] = { 29194 },	-- Through a Glass, Darkly
 					}),
 					q(29234, {	-- Delegation
 						["description"] = "This is exactly how to do the quest... Start by walking into Firelands. DO NOT KILL ANY OF THE BOSSES. You will need them alive so that you can loot the items for the next phase of the quest after this one.\n\nMouse over each of the requirements below for further instructions.\n\nAfter you are finished, go to Borean Tundra.",
-						["qg"] = 52995,	-- Kalecgos
+						["provider"] = { "n", 52995 },	-- Kalecgos
 						["sourceQuests"] = { 29225 },	-- Actionable Intelligence
 						["g"] = {
 							i(71008, {	-- Charged Rhyolite Focus
@@ -141,23 +141,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					q(29239, {	-- Nordrassil's Bough
-						["qg"] = 53009,	-- Kalecgos
+						["provider"] = { "n", 53009 },	-- Kalecgos
 						["sourceQuests"] = { 29234 },	-- Delegation
 						["g"] = {
 							i(71084),  -- Branch of Nordrassil
 						},
 					}),
 					q(29240, {	-- Emergency Extraction
-						["qg"] = 53009,	-- Kalecgos
+						["provider"] = { "n", 53009 },	-- Kalecgos
 						["sourceQuests"] = { 29239 },	-- Nordrassil's Bough
 					}),
 					q(29269, {	--  At One
-						["qg"] = 53149,	-- Kalecgos
+						["provider"] = { "n", 53149 },	-- Kalecgos
 						["sourceQuests"] = { 29240 },	-- Emergency Extraction
 					}),
 					q(29270, {	-- Time Grows Short
 						["description"] = "You should clear this raid on 25H difficulty for the most gain per boss:\n\n10 Man\n    Normal ---- 18-23\n    Heroic ------ 23-26\n\n25 Man\n    Normal ---- 48-55\n    Heroic ----- 55-66",
-						["qg"] = 53210,	-- Kalecgos
+						["provider"] = { "n", 53210 },	-- Kalecgos
 						["sourceQuests"] = { 29269 },	-- At One
 						["g"] = {
 							i(69815, {	-- Seething Cinder
@@ -176,14 +176,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					q(29285, {	-- Alignment
-						["qg"] = 53215,	-- Kalecgos
+						["provider"] = { "n", 53215 },	-- Kalecgos
 						["sourceQuests"] = { 29270 },	-- Time Grows Short
 						["g"] = {
 							i(71085),	-- Runestaff of Nordrassil
 						},
 					}),
 					{	---------- Heart of Flame (A / H)
-						["qg"] = 53349,	-- Kalecgos
+						["provider"] = { "n", 53349 },	-- Kalecgos
 						["allianceQuestID"] = 29307,	-- Heart of Flame [Alliance]
 						["hordeQuestID"] = 	  29308,	-- Heart of Flame [Horde]
 						["sourceQuests"] = { 29285 },	-- Alignment
@@ -206,7 +206,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					},
 					{	---------- The Stuff of Legends (A / H)
-						["qgs"] = { 53466 },	-- Hallegosa
+						["provider"] = { "n", 53466 },	-- Hallegosa
 						["allianceQuestID"] = 29312,	-- The Stuff of Legends [Alliance]
 						["hordeQuestID"] = 29309,		-- The Stuff of Legends [Horde]
 						["sourceQuests"] = { 29307, 29308 },	-- Heart of Flame

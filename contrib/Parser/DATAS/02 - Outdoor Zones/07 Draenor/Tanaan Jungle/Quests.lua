@@ -69,19 +69,19 @@ _.Zones =
 				}),
 --]]
 				q(39510, {	-- A Little Wetwork
-					["qg"] = 96014,	-- Shadow Hunter Denjai
+					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39568, {	-- A Little Wetwork
-					["qg"] = 90974,	-- Vindicator Krethos
+					["provider"] = { "n", 90974 },	-- Vindicator Krethos
 					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38578, {	-- A Message of Terrible Import -- aa
-					["qg"] = 90584,	-- Goi'orsh
+					["provider"] = { "n", 90584 },	-- Goi'orsh
 					["coord"] = { 44.2, 41.5, 534 },
 				}),
 				q(37940, {	-- Assault on Ironhold Harbor
@@ -233,25 +233,25 @@ _.Zones =
 					},
 				}),
 				q(39511, {	-- Blood of Fallen Brothers
-					["qg"] = 96014,	-- Shadow Hunter Denjai
+					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39509, {	-- Bloodied Blades of Zeth'Gol
-					["qg"] = 96014,	-- Shadow Hunter Denjai
+					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39567, {	-- Bloodied Blades of Zeth'Gol
-					["qg"] = 90974,	-- Vindicator Krethos
+					["provider"] = { "n", 90974 },	-- Vindicator Krethos
 					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39313, {	-- Bring the Reinforcements
-					["qg"] = 90963,	-- Angar Steelbellow
+					["provider"] = { "n", 90963 },	-- Angar Steelbellow
 					["coord"] = { 58.1, 58.6, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
@@ -261,25 +261,25 @@ _.Zones =
 					["sourceQuest"] = 37935,	-- The Assault Base
 				}),
 				q(39569, {	-- Breaking Their Fel Bonds
-					["qg"] = 90974,	-- Vindicator Krethos
+					["provider"] = { "n", 90974 },	-- Vindicator Krethos
 					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39532, {	-- Bringing Down the Iron Horde
-					["qg"] = 93396,	-- Nimi Brightcastle
+					["provider"] = { "n", 93396 },	-- Nimi Brightcastle
 					["coord"] = { 59.6, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39586, {	-- Bringing Down the Iron Horde
-					["qg"] = 96147,	-- Parvink
+					["provider"] = { "n", 96147 },	-- Parvink
 					["coord"] = { 57.8, 59.8, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38446, {	-- Commander in the Field!
-					["qg"] = 91935,	-- Exarch Maladaar
+					["provider"] = { "n", 91935 },	-- Exarch Maladaar
 					["coord"] = { 9.8, 53.5, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38581,	-- The Battle for the West
@@ -289,48 +289,48 @@ _.Zones =
 					["sourceQuest"] = 38577,	-- The Battle for the West
 				}),
 				q(39519, {	-- Demonslayer of Tanaan
-					["qg"] = 93396,	-- Nimi Brightcastle
+					["provider"] = { "n", 93396 },	-- Nimi Brightcastle
 					["coord"] = { 59.6, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39581, {	-- Demonslayer of Tanaan
-					["qg"] = 96147,	-- Parvink
+					["provider"] = { "n", 96147 },	-- Parvink
 					["coord"] = { 57.8, 59.8, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39513, {	-- Disarming Sha'naar
-					["qg"] = 96014,	-- Shadow Hunter Denjai
+					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39571, {	-- Disarming Sha'naar
-					["qg"] = 90974,	-- Vindicator Krethos
+					["provider"] = { "n", 90974 },	-- Vindicator Krethos
 					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38415, {	-- Garrison Campaign: Onslaught at Auchindoun
-					["qg"] = 90481,	-- Draka
+					["provider"] = { "n", 90481 },	-- Draka
 					["coord"] = { 61.4, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(39514, {	-- Harnessing Their Power
-					["qg"] = 96014,	-- Shadow Hunter Denjai
+					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39573, {	-- Harnessing Their Power
-					["qg"] = 90974,	-- Vindicator Krethos
+					["provider"] = { "n", 90974 },	-- Vindicator Krethos
 					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38444, {	-- In, Through, and Beyond!
-					["qg"] = 91923,	-- Exarch Naielle
+					["provider"] = { "n", 91923 },	-- Exarch Naielle
 					["coord"] = { 69.4, 52.9, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38436,	-- Obstacle Course
@@ -352,7 +352,7 @@ _.Zones =
 					},
 				}),
 				q(38436, {	-- Obstacle Course
-					["qg"] = 91913,	-- Exarch Yrel
+					["provider"] = { "n", 91913 },	-- Exarch Yrel
 					["coord"] = { 73.4, 71.1, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38435,	-- The Invasion of Tanaan
@@ -362,42 +362,42 @@ _.Zones =
 					["sourceQuest"] = 37889,	-- The Invasion of Tanaan
 				}),
 				q(39526, {	-- Pressing the Attack
-					["qg"] = 96014,	-- Shadow Hunter Denjai
+					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39574, {	-- Pressing the Attack
-					["qg"] = 90974,	-- Vindicator Krethos
+					["provider"] = { "n", 90974 },	-- Vindicator Krethos
 					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39565, {	-- Rumble in the Jungle
-					["qg"] = 92805,	-- Z'tenga the Walker
+					["provider"] = { "n", 92805 },	-- Z'tenga the Walker
 					["coord"] = { 55.2, 74.7, 534 },
 					["isWeekly"] = true,
 				}),
 				q(39512, {	-- Secrets of the Shadow Council
-					["qg"] = 96014,	-- Shadow Hunter Denjai
+					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39570, {	-- Secrets of the Shadow Council
-					["qg"] = 90974,	-- Vindicator Krethos
+					["provider"] = { "n", 90974 },	-- Vindicator Krethos
 					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38603, {	-- Setting the Signal
-					["qg"] = 90963,	-- Angar Steelbellow
+					["provider"] = { "n", 90963 },	-- Angar Steelbellow
 					["coord"] = { 58.1, 58.5, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
 				}),
 				q(39422, {	-- Shipyard Report
-					["qg"] = 90309,	-- Exarch Yrel
+					["provider"] = { "n", 90309 },	-- Exarch Yrel
 					["coord"] = { 58.4, 60.3, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
@@ -407,7 +407,7 @@ _.Zones =
 					["sourceQuest"] = 37935,	-- The Assault Base
 				}),
 				q(38445, {	-- The Assault Base
-					["qg"] = 91923,	-- Exarch Naielle
+					["provider"] = { "n", 91923 },	-- Exarch Naielle
 					["coord"] = { 62.4, 54.2, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38444,	-- In, Through, and Beyond!
@@ -417,7 +417,7 @@ _.Zones =
 					["sourceQuest"] = 37934,	-- In, Through, and Beyond!
 				}),
 				q(38581, {	-- The Battle for the West
-					["qg"] = 90309,	-- Exarch Yrel
+					["provider"] = { "n", 90309 },	-- Exarch Yrel
 					["coord"] = { 58.4, 60.3, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
@@ -427,7 +427,7 @@ _.Zones =
 					["sourceQuest"] = 37935,	-- The Assault Base
 				}),
 				q(39394, {	-- The Cipher of Damnation
-					["qg"] = 92120,	-- Oronok Torn-heart
+					["provider"] = { "n", 92120 },	-- Oronok Torn-heart
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(128225),	-- Empowered Apexis Fragment
@@ -440,7 +440,7 @@ _.Zones =
 					},
 				}),
 				q(38463, {	-- The Cipher of Damnation
-					["qg"] = 92120,	-- Oronok Torn-heart
+					["provider"] = { "n", 92120 },	-- Oronok Torn-heart
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(128225),	-- Empowered Apexis Fragment
@@ -453,7 +453,7 @@ _.Zones =
 					},
 				}),
 				q(38274, {	-- The Eye of Kilrogg
-					["qg"] = 91324,	-- Braknoth
+					["provider"] = { "n", 91324 },	-- Braknoth
 					["g"] = {
 						i(124553, {	-- Baleful Gauntlets
 							i(124577),	-- Axeclaw Gauntlets
@@ -464,19 +464,19 @@ _.Zones =
 					},
 				}),
 				q(39529, {	-- Tooth and Claw
-					["qg"] = 93396,	-- Nimi Brightcastle
+					["provider"] = { "n", 93396 },	-- Nimi Brightcastle
 					["coord"] = { 59.6, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39582, {	-- Tooth and Claw
-					["qg"] = 96147,	-- Parvink
+					["provider"] = { "n", 96147 },	-- Parvink
 					["coord"] = { 57.8, 59.8, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39432, {	-- Unknowable Power
-					["qg"] = 95424,	-- Dawn-Seeker Krisek
+					["provider"] = { "n", 95424 },	-- Dawn-Seeker Krisek
 					["coords"] = {
 						{ 57.9, 59.3, 534 },	-- alliance
 					},
@@ -486,7 +486,7 @@ _.Zones =
 					},
 				}),
 				q(39433, {	-- Unseen Influence
-					["qg"] = 95424,	-- Dawn-Seeker Krisek
+					["provider"] = { "n", 95424 },	-- Dawn-Seeker Krisek
 					["isDaily"] = true,
 					["sourceQuest"] = 39432,	-- Unknowable Power
 					["coords"] = {

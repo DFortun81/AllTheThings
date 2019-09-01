@@ -1277,7 +1277,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				["description"] = "Use your Totemic Beacon while in Zoram Strand to summon the questgiver.  Coordinates are approximate.",
 				["coord"] = { 10.2, 15.3, 63 },
 				["maps"] = { 63, },	-- Ashenvale
-				["qg"] = 25324,		 -- Earthen Ring Guide
+				["provider"] = { "n", 25324 },		 -- Earthen Ring Guide
 			}),
 			q(9365,  {	-- A Thief's Reward (A)
 				["sourceQuests"] = {
@@ -1294,7 +1294,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					103,	-- The Exodar
 				},
-				["qg"] = 16817,	-- Festival Loremaster
+				["provider"] = { "n", 16817 },	-- Festival Loremaster
 				["g"] = {
 					un(21, i(23323)),	-- Crown of the Fire Festival
 				},
@@ -1315,7 +1315,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 					111,	-- Shattrath City
 				},
-				["qg"] = 16818,	-- Festival Talespinner
+				["provider"] = { "n", 16818 },	-- Festival Talespinner
 				["g"] = {
 					un(21, i(23323)),	-- Crown of the Fire Festival
 				},
@@ -2162,392 +2162,392 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				["coord"] = { 44.3, 45.8, 14 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 14 },	-- Arathi Highlands
-				["qg"] = 25887,	-- Arathi Flame Warden
+				["provider"] = { "n", 25887 },	-- Arathi Flame Warden
 			}),
 			q(11805, {	-- Honor the Flame — Ashenvale
 				["isYearly"] = true,
 				["coord"] = { 87.0, 42.0, 63 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 63 },	-- Ashenvale
-				["qg"] = 25883,	-- Ashenvale Flame Warden
+				["provider"] = { "n", 25883 },	-- Ashenvale Flame Warden
 			}),
 			q(11806, {	-- Honor the Flame — Azuremyst Isle
 				["isYearly"] = true,
 				["coord"] = { 44.0, 53.0, 97 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 97 },	-- Azuremyst Isle
-				["qg"] = 25888,	-- Azuremyst Isle Flame Warden
+				["provider"] = { "n", 25888 },	-- Azuremyst Isle Flame Warden
 			}),
 			q(28925, {	-- Honor the Flame — Badlands
 				["isYearly"] = true,
 				["coord"] = { 18.9, 56.1, 15 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 15 },	-- Badlands
-				["qg"] = 51585,	-- Badlands Flame Warden
+				["provider"] = { "n", 51585 },	-- Badlands Flame Warden
 			}),
 			q(11807, {	-- Honor the Flame — Blade's Edge Mountains
 				["isYearly"] = true,
 				["coord"] = { 42.0, 66.0, 105 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 105 },	-- Blade's Edge Mountains
-				["qg"] = 25889,	-- Blade's Edge Flame Warden
+				["provider"] = { "n", 25889 },	-- Blade's Edge Flame Warden
 			}),
 			q(11808, {	-- Honor the Flame — Blasted Lands
 				["isYearly"] = true,
 				["coord"] = { 55.5, 15.0, 17 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 17 },	-- Blasted Lands
-				["qg"] = 25890,	-- Blasted Lands Flame Warden
+				["provider"] = { "n", 25890 },	-- Blasted Lands Flame Warden
 			}),
 			q(11809, {	-- Honor the Flame — Bloodmyst Isle
 				["isYearly"] = true,
 				["coord"] = { 55.0, 69.0, 106 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 106 },	-- Bloodmyst Isle
-				["qg"] = 25891,	-- Bloodmyst Isle Flame Warden
+				["provider"] = { "n", 25891 },	-- Bloodmyst Isle Flame Warden
 			}),
 			q(13485, {	-- Honor the Flame — Borean Tundra
 				["isYearly"] = true,
 				["coord"] = { 55.0, 20.0, 114 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 114 },	-- Borean Tundra
-				["qg"] = 32801,	-- Borean Tundra Flame Warden
+				["provider"] = { "n", 32801 },	-- Borean Tundra Flame Warden
 			}),
 			q(11810, {	-- Honor the Flame — Burning Steppes
 				["isYearly"] = true,
 				["coord"] = { 68.2, 60.6, 36 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 36 },	-- Burning Steppes
-				["qg"] = 25892,	-- Burning Steppes Flame Warden
+				["provider"] = { "n", 25892 },	-- Burning Steppes Flame Warden
 			}),
 			q(13491, {	-- Honor the Flame — Crystalsong Forest
 				["isYearly"] = true,
 				["coord"] = { 78.0, 75.0, 127 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 127 },	-- Crystalsong Forest
-				["qg"] = 32807,	-- Crystalsong Forest Flame Warden
+				["provider"] = { "n", 32807 },	-- Crystalsong Forest Flame Warden
 			}),
 			q(11811, {	-- Honor the Flame — Darkshore
 				["isYearly"] = true,
 				["coord"] = { 49.0, 23.0, 62 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 62 },	-- Darkshore
-				["qg"] = 25893,	-- Darkshore Flame Warden
+				["provider"] = { "n", 25893 },	-- Darkshore Flame Warden
 			}),
 			q(29036, {	-- Honor the Flame — Deepholm
 				["isYearly"] = true,
 				["coord"] = { 49.4, 51.4, 207 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 207 },	-- Deepholm
-				["qg"] = 51698,	-- Deepholm Flame Guardian
+				["provider"] = { "n", 51698 },	-- Deepholm Flame Guardian
 			}),
 			q(11812, {	-- Honor the Flame — Desolace
 				["isYearly"] = true,
 				["coord"] = { 65.0, 17.0, 66 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 66 },	-- Desolace
-				["qg"] = 25894,	-- Desolace Flame Warden
+				["provider"] = { "n", 25894 },	-- Desolace Flame Warden
 			}),
 			q(13487, {	-- Honor the Flame — Dragonblight
 				["isYearly"] = true,
 				["coord"] = { 75.0, 44.0, 115 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 115 },	-- Dragonblight
-				["qg"] = 32803,	-- Dragonblight Flame Warden
+				["provider"] = { "n", 32803 },	-- Dragonblight Flame Warden
 			}),
 			q(54743, {	-- Honor the Flame — Drustvar
 				["isYearly"] = true,
 				["coord"] = { 40.2, 47.7, 896 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 896 },	-- Drustvar
-				["qg"] = 148934,	-- Drustvar Flame Warden
+				["provider"] = { "n", 148934 },	-- Drustvar Flame Warden
 			}),
 			q(11813, {	-- Honor the Flame — Dun Morogh
 				["isYearly"] = true,
 				["coord"] = { 53.8, 45.2, 27 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 27 },	-- Dun Morogh
-				["qg"] = 25895,	-- Dun Morogh Flame Warden
+				["provider"] = { "n", 25895 },	-- Dun Morogh Flame Warden
 			}),
 			q(11814, {	-- Honor the Flame — Duskwood
 				["isYearly"] = true,
 				["coord"] = { 73.8, 54.7, 47 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 47 },	-- Duskwood
-				["qg"] = 25896,	-- Duskwood Flame Warden
+				["provider"] = { "n", 25896 },	-- Duskwood Flame Warden
 			}),
 			q(11815, {	-- Honor the Flame — Dustwallow Marsh
 				["isYearly"] = true,
 				["coord"] = { 62.0, 40.0, 70 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 70 },	-- Dustwallow Marsh
-				["qg"] = 25897,	-- Dustwallow Marsh Flame Warden
+				["provider"] = { "n", 25897 },	-- Dustwallow Marsh Flame Warden
 			}),
 			q(11816, {	-- Honor the Flame — Elwynn Forest
 				["isYearly"] = true,
 				["coord"] = { 43.5, 62.7, 37 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 37 },	-- Elwynn Forest
-				["qg"] = 25898,	-- Elwynn Forest Flame Warden
+				["provider"] = { "n", 25898 },	-- Elwynn Forest Flame Warden
 			}),
 			q(11817, {	-- Honor the Flame — Feralas
 				["isYearly"] = true,
 				["coord"] = { 47.0, 44.0, 69 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 69 },	-- Feralas
-				["qg"] = 25899,	-- Feralas Flame Warden
+				["provider"] = { "n", 25899 },	-- Feralas Flame Warden
 			}),
 			q(13489, {	-- Honor the Flame — Grizzly Hills
 				["isYearly"] = true,
 				["coord"] = { 34.0, 61.0, 116 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 116 },	-- Grizzly Hills
-				["qg"] = 32805,	-- Grizzly Hills Flame Warden
+				["provider"] = { "n", 32805 },	-- Grizzly Hills Flame Warden
 			}),
 			q(11818, {	-- Honor the Flame — Hellfire Peninsula
 				["isYearly"] = true,
 				["coord"] = { 62.0, 58.0, 100 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 100 },	-- Hellfire Peninsula
-				["qg"] = 25900,	-- Hellfire Peninsula Flame Warden
+				["provider"] = { "n", 25900 },	-- Hellfire Peninsula Flame Warden
 			}),
 			q(13488, {	-- Honor the Flame — Howling Fjord
 				["isYearly"] = true,
 				["coord"] = { 58.0, 16.0, 117 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 117 },	-- Howling Fjord
-				["qg"] = 32804,	-- Howling Fjord Flame Warden
+				["provider"] = { "n", 32804 },	-- Howling Fjord Flame Warden
 			}),
 			q(29030, {	-- Honor the Flame — Hyjal
 				["isYearly"] = true,
 				["coord"] = { 62.8, 22.6, 198 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 198 },	-- Hyjal
-				["qg"] = 51682,	-- Hyjal Flame Guardian
+				["provider"] = { "n", 51682 },	-- Hyjal Flame Guardian
 			}),
 			q(11820, {	-- Honor the Flame — Loch Modan
 				["isYearly"] = true,
 				["coord"] = { 32.3, 41.0, 48 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 48 },	-- Loch Modan
-				["qg"] = 25902,	-- Loch Modan Flame Warden
+				["provider"] = { "n", 25902 },	-- Loch Modan Flame Warden
 			}),
 			q(11821, {	-- Honor the Flame — Nagrand (Outland)
 				["isYearly"] = true,
 				["coord"] = { 51.0, 34.0, 107 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 107 },	-- Nagrand
-				["qg"] = 25903,	-- Nagrand Flame Warden
+				["provider"] = { "n", 25903 },	-- Nagrand Flame Warden
 			}),
 			q(11830, {	-- Honor the Flame — Netherstorm
 				["isYearly"] = true,
 				["coord"] = { 31.0, 63.0, 109 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 109 },	-- Netherstorm
-				["qg"] = 25913,	-- Netherstorm Flame Warden
+				["provider"] = { "n", 25913 },	-- Netherstorm Flame Warden
 			}),
 			q(28922, {	-- Honor the Flame — Northern Stranglethorn
 				["isYearly"] = true,
 				["coord"] = { 52.0, 63.6, 50 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 50 },	-- Northern Stranglethorn
-				["qg"] = 51574,	-- Northern Stranglethorn Flame Warden
+				["provider"] = { "n", 51574 },	-- Northern Stranglethorn Flame Warden
 			}),
 			q(11822, {	-- Honor the Flame — Redridge Mountains
 				["isYearly"] = true,
 				["coord"] = { 25.0, 53.5, 49 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 49 },	-- Redridge Mountains
-				["qg"] = 25904,	-- Redridge Flame Warden
+				["provider"] = { "n", 25904 },	-- Redridge Flame Warden
 			}),
 			q(11823, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
 				["coord"] = { 40.0, 55.0, 104 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 104 },	-- Shadowmoon Valley
-				["qg"] = 25905,	-- Shadowmoon Valley Flame Warden
+				["provider"] = { "n", 25905 },	-- Shadowmoon Valley Flame Warden
 			}),
 			q(44579, {	-- Honor the Flame — Shadowmoon Valley (WoD)
 				["isYearly"] = true,
 				["coord"] = { 42.6, 36.0, 539 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 539 },	-- Shadowmoon Valley
-				["qg"] = 114500,	-- Shadowmoon Valley Flame Warden
+				["provider"] = { "n", 114500 },	-- Shadowmoon Valley Flame Warden
 			}),
 			q(13486, {	-- Honor the Flame — Sholazar Basin
 				["isYearly"] = true,
 				["coord"] = { 47.0, 66.0, 119 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 119 },	-- Sholazar Basin
-				["qg"] = 32802,	-- Sholazar Basin Flame Warden
+				["provider"] = { "n", 32802 },	-- Sholazar Basin Flame Warden
 			}),
 			q(11831, {	-- Honor the Flame — Silithus
 				["isYearly"] = true,
 				["coord"] = { 60.0, 33.0, 81 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 81 },	-- Silithus
-				["qg"] = 25914,	-- Silithus Flame Warden
+				["provider"] = { "n", 25914 },	-- Silithus Flame Warden
 			}),
 			q(28926, {	-- Honor the Flame — Southern Barrens
 				["isYearly"] = true,
 				["coord"] = { 48.0, 72.0, 199 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 199 },	-- Southern Barrens
-				["qg"] = 51586,	-- Southern Barrens Flame Warden
+				["provider"] = { "n", 51586 },	-- Southern Barrens Flame Warden
 			}),
 			q(28928, {	-- Honor the Flame — Stonetalon Mountains
 				["isYearly"] = true,
 				["coord"] = { 49.0, 51.0, 65 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 65 },	-- Stonetalon Mountains
-				["qg"] = 51588,	-- Stonetalon Mountains Flame Warden
+				["provider"] = { "n", 51588 },	-- Stonetalon Mountains Flame Warden
 			}),
 			q(13490, {	-- Honor the Flame — Storm Peaks
 				["isYearly"] = true,
 				["coord"] = { 42.0, 87.0, 120 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 120 },	-- Storm Peaks
-				["qg"] = 32806,	-- Storm Peaks Flame Warden
+				["provider"] = { "n", 32806 },	-- Storm Peaks Flame Warden
 			}),
 			q(54741, {	-- Honor the Flame — Stormsong Valley
 				["isYearly"] = true,
 				["coord"] = { 35.8, 51.2, 942 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 942 },	-- Stormsong Valley
-				["qg"] = 148932,	-- Stormsong Valley Flame Warden
+				["provider"] = { "n", 148932 },	-- Stormsong Valley Flame Warden
 			}),
 			q(44613, {	-- Honor the Flame — Suramar
 				["isYearly"] = true,
 				["coord"] = { 23.0, 58.4, 680 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 680 },	-- Suramar
-				["qg"] = 114519,	-- Suramar Flame Warden
+				["provider"] = { "n", 114519 },	-- Suramar Flame Warden
 			}),
 			q(28929, {	-- Honor the Flame — Swamp of Sorrows
 				["isYearly"] = true,
 				["coord"] = { 70.1, 15.4, 51 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 51 },	-- Swamp of Sorrows
-				["qg"] = 51602,	-- Swamp of Sorrows Flame Warden
+				["provider"] = { "n", 51602 },	-- Swamp of Sorrows Flame Warden
 			}),
 			q(11833, {	-- Honor the Flame — Tanaris
 				["isYearly"] = true,
 				["coord"] = { 52.0, 29.0, 71 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 71 },	-- Tanaris
-				["qg"] = 25916,	-- Tanaris Flame Warden
+				["provider"] = { "n", 25916 },	-- Tanaris Flame Warden
 			}),
 			q(11824, {	-- Honor the Flame — Teldrassil
 				["isYearly"] = true,
 				["coord"] = { 54.8, 52.9, 57 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 57 },	-- Teldrassil
-				["qg"] = 25906,	-- The Teldrassil Flame Warden
+				["provider"] = { "n", 25906 },	-- The Teldrassil Flame Warden
 			}),
 			q(11825, {	-- Honor the Flame — Terokkar Forest
 				["isYearly"] = true,
 				["coord"] = { 55.0, 55.0, 108 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 108 },	-- Terokkar Forest
-				["qg"] = 25907,	-- Terokkar Forest Flame Warden
+				["provider"] = { "n", 25907 },	-- Terokkar Forest Flame Warden
 			}),
 			q(11832, {	-- Honor the Flame — The Cape of Stranglethorn
 				["isYearly"] = true,
 				["coord"] = { 51.9, 67.8, 210 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 210 },	-- The Cape of Stranglethorn
-				["qg"] = 25915,	-- Cape of Stranglethorn Flame Warden
+				["provider"] = { "n", 25915 },	-- Cape of Stranglethorn Flame Warden
 			}),
 			q(11826, {	-- Honor the Flame — The Hinterlands
 				["isYearly"] = true,
 				["coord"] = { 14.4, 50.2, 26 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 26 },	-- The Hinterlands
-				["qg"] = 25908,	-- The Hinterlands Flame Warden
+				["provider"] = { "n", 25908 },	-- The Hinterlands Flame Warden
 			}),
 			q(54737, {	-- Honor the Flame — Tiragarde Sound
 				["isYearly"] = true,
 				["coord"] = { 76.3, 49.9, 895 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 895 },	-- Tiragarde Sound
-				["qg"] = 148917,	-- Tiragarde Sound Flame Warden
+				["provider"] = { "n", 148917 },	-- Tiragarde Sound Flame Warden
 			}),
 			q(28945, {	-- Honor the Flame — Twilight Highlands
 				["isYearly"] = true,
 				["coord"] = { 47.0, 28.0, 241 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 241 },	-- Twilight Highlands
-				["qg"] = 51650,	-- Twilight Highlands Flame Warden
+				["provider"] = { "n", 51650 },	-- Twilight Highlands Flame Warden
 			}),
 			q(28950, {	-- Honor the Flame — Uldum
 				["isYearly"] = true,
 				["coord"] = { 53.0, 32.0, 249 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 249 },	-- Uldum
-				["qg"] = 51653,	-- Uldum Flame Warden
+				["provider"] = { "n", 51653 },	-- Uldum Flame Warden
 			}),
 			q(28932, {	-- Honor the Flame — Un'goro Crater
 				["isYearly"] = true,
 				["coord"] = { 60.0, 63.0, 78 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 78 },	-- Un'goro Crater
-				["qg"] = 51606,	-- Un'Goro Crater Flame Warden
+				["provider"] = { "n", 51606 },	-- Un'Goro Crater Flame Warden
 			}),
 			q(32510, {	-- Honor the Flame — Vale of Eternal Blossoms
 				["isYearly"] = true,
 				["coord"] = { 79.6, 37.2, 390 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 390 },	-- Vale of Eternal Blossoms
-				["qg"] = 69572,	-- Vale of Eternal Blossoms Flame Warden
+				["provider"] = { "n", 69572 },	-- Vale of Eternal Blossoms Flame Warden
 			}),
 			q(29031, {	-- Honor the Flame — Vashj'ir
 				["isYearly"] = true,
 				["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 203, 205 },	-- Vashj'ir + Shimmering Expanse
-				["qg"] = 51697,	-- Vashj'ir Flame Guardian
+				["provider"] = { "n", 51697 },	-- Vashj'ir Flame Guardian
 			}),
 			q(11827, {	-- Honor the Flame — Western Plaguelands
 				["isYearly"] = true,
 				["coord"] = { 43.5, 82.2, 22 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 22 },	-- Western Plaguelands
-				["qg"] = 25909,	-- Western Plaguelands Flame Warden
+				["provider"] = { "n", 25909 },	-- Western Plaguelands Flame Warden
 			}),
 			q(11583, {	-- Honor the Flame — Westfall
 				["isYearly"] = true,
 				["coord"] = { 44.6, 62.1, 52 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 52 },	-- Westfall
-				["qg"] = 25910,	-- Westfall Flame Warden
+				["provider"] = { "n", 25910 },	-- Westfall Flame Warden
 			}),
 			q(11828, {	-- Honor the Flame — Wetlands
 				["isYearly"] = true,
 				["coord"] = { 13.5, 47.1, 56 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 56 },	-- Wetlands
-				["qg"] = 25911,	-- Wetlands Flame Warden
+				["provider"] = { "n", 25911 },	-- Wetlands Flame Warden
 			}),
 			q(11834, {	-- Honor the Flame — Winterspring
 				["isYearly"] = true,
 				["coord"] = { 62.0, 35.0, 83 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 83 },	-- Winterspring
-				["qg"] = 25917,	-- Winterspring Flame Warden
+				["provider"] = { "n", 25917 },	-- Winterspring Flame Warden
 			}),
 			q(11829, {	-- Honor the Flame — Zangarmarsh
 				["isYearly"] = true,
 				["coord"] = { 69.0, 52.0, 102 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 102 },	-- Zangarmarsh
-				["qg"] = 25912,	-- Zangarmarsh Flame Warden
+				["provider"] = { "n", 25912 },	-- Zangarmarsh Flame Warden
 			}),
 			q(13492, {	-- Honor the Flame — Zul'Drak
 				["isYearly"] = true,
 				["coord"] = { 41.0, 61.0, 121 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 121 },	-- Zul'Drak
-				["qg"] = 32808,	-- Zul'Drak Flame Warden
+				["provider"] = { "n", 32808 },	-- Zul'Drak Flame Warden
 			}),
 		--	ALLIANCE "HONOR THE FLAME" QUESTS END HERE.
 		--	HORDE "HONOR THE FLAME" QUESTS START HERE.
@@ -2556,378 +2556,378 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				["coord"] = { 69.0, 42.0, 14 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 14 },	-- Arathi Highlands
-				["qg"] = 25923,	-- Arathi Flame Keeper
+				["provider"] = { "n", 25923 },	-- Arathi Flame Keeper
 			}),
 			q(11841, {	-- Honor the Flame — Ashenvale
 				["isYearly"] = true,
 				["coord"] = { 51.0, 66.0, 63 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 63 },	-- Ashenvale
-				["qg"] = 25884,	-- Ashenvale Flame Keeper
+				["provider"] = { "n", 25884 },	-- Ashenvale Flame Keeper
 			}),
 			q(28923, {	-- Honor the Flame — Azshara
 				["isYearly"] = true,
 				["coord"] = { 60.0, 53.0, 76 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 76 },	-- Azshara
-				["qg"] = 51575,	-- Azshara Flame Keeper
+				["provider"] = { "n", 51575 },	-- Azshara Flame Keeper
 			}),
 			q(11842, {	-- Honor the Flame — Badlands
 				["isYearly"] = true,
 				["coord"] = { 19.0, 56.0, 15 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 15 },	-- Badlands
-				["qg"] = 25925,	-- Badlands Flame Keeper
+				["provider"] = { "n", 25925 },	-- Badlands Flame Keeper
 			}),
 			q(11843, {	-- Honor the Flame — Blade's Edge Mountains
 				["isYearly"] = true,
 				["coord"] = { 50.0, 59.0, 105 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 105 },	-- Blade's Edge Mountains
-				["qg"] = 25926,	-- Blade's Edge Flame Keeper
+				["provider"] = { "n", 25926 },	-- Blade's Edge Flame Keeper
 			}),
 			q(28930, {	-- Honor the Flame — Blasted Lands
 				["isYearly"] = true,
 				["coord"] = { 46.0, 14.0, 17 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 17 },	-- Blasted Lands
-				["qg"] = 51603,	-- Blasted Lands Flame Keeper
+				["provider"] = { "n", 51603 },	-- Blasted Lands Flame Keeper
 			}),
 			q(13493, {	-- Honor the Flame — Borean Tundra
 				["isYearly"] = true,
 				["coord"] = { 51.0, 12.0, 114 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 114 },	-- Borean Tundra
-				["qg"] = 32809,	-- Borean Tundra Flame Keeper
+				["provider"] = { "n", 32809 },	-- Borean Tundra Flame Keeper
 			}),
 			q(11844, {	-- Honor the Flame — Burning Steppes
 				["isYearly"] = true,
 				["coord"] = { 51.0, 29.0, 36 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 36 },	-- Burning Steppes
-				["qg"] = 25927,	-- Burning Steppes Flame Keeper
+				["provider"] = { "n", 25927 },	-- Burning Steppes Flame Keeper
 			}),
 			q(13499, {	-- Honor the Flame — Crystalsong Forest
 				["isYearly"] = true,
 				["coord"] = { 80.0, 53.0, 127 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 127 },	-- Crystalsong Forest
-				["qg"] = 32815,	-- Crystalsong Forest Flame Keeper
+				["provider"] = { "n", 32815 },	-- Crystalsong Forest Flame Keeper
 			}),
 			q(29036, {	-- Honor the Flame — Deepholm
 				["isYearly"] = true,
 				["coord"] = { 49.4, 51.4, 207 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 207 },	-- Deepholm
-				["qg"] = 51698,	-- Deepholm Flame Guardian
+				["provider"] = { "n", 51698 },	-- Deepholm Flame Guardian
 			}),
 			q(11845, {	-- Honor the Flame — Desolace
 				["isYearly"] = true,
 				["coord"] = { 26.0, 76.0, 66 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 66 },	-- Desolace
-				["qg"] = 25928,	-- Desolace Flame Keeper
+				["provider"] = { "n", 25928 },	-- Desolace Flame Keeper
 			}),
 			q(13495, {	-- Honor the Flame — Dragonblight
 				["isYearly"] = true,
 				["coord"] = { 39.0, 48.0, 115 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 115 },	-- Dragonblight
-				["qg"] = 32811,	-- Dragonblight Flame Keeper
+				["provider"] = { "n", 32811 },	-- Dragonblight Flame Keeper
 			}),
 			q(11846, {	-- Honor the Flame — Durotar
 				["isYearly"] = true,
 				["coord"] = { 52.0, 47.0, 1 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 1 },	-- Durotar
-				["qg"] = 25929,	-- Durotar Flame Keeper
+				["provider"] = { "n", 25929 },	-- Durotar Flame Keeper
 			}),
 			q(11847, {	-- Honor the Flame — Dustwallow Marsh
 				["isYearly"] = true,
 				["coord"] = { 33.0, 30.0, 70 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 70 },	-- Dustwallow Marsh
-				["qg"] = 25930,	-- Dustwallow Marsh Flame Keeper
+				["provider"] = { "n", 25930 },	-- Dustwallow Marsh Flame Keeper
 			}),
 			q(11848, {	-- Honor the Flame — Eversong Woods
 				["isYearly"] = true,
 				["coord"] = { 46.0, 50.0, 94 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 94 },	-- Eversong Woods
-				["qg"] = 25931,	-- Eversong Woods Flame Keeper
+				["provider"] = { "n", 25931 },	-- Eversong Woods Flame Keeper
 			}),
 			q(11849, {	-- Honor the Flame — Feralas
 				["isYearly"] = true,
 				["coord"] = { 72.0, 47.0, 69 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 69 },	-- Feralas
-				["qg"] = 25932,	-- Feralas Flame Keeper
+				["provider"] = { "n", 25932 },	-- Feralas Flame Keeper
 			}),
 			q(44580, {	-- Honor the Flame — Frostfire Ridge
 				["isYearly"] = true,
 				["coord"] = { 72.6, 65.0, 525 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 525 },	-- Frostfire Ridge
-				["qg"] = 114499,	-- Frostfire Ridge Flame Keeper
+				["provider"] = { "n", 114499 },	-- Frostfire Ridge Flame Keeper
 			}),
 			q(11850, {	-- Honor the Flame — Ghostlands
 				["isYearly"] = true,
 				["coord"] = { 46.0, 26.0, 95 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 95 },	-- Ghostlands
-				["qg"] = 25933,	-- Ghostlands Flame Keeper
+				["provider"] = { "n", 25933 },	-- Ghostlands Flame Keeper
 			}),
 			q(13497, {	-- Honor the Flame — Grizzly Hills
 				["isYearly"] = true,
 				["coord"] = { 19.0, 61.0, 116 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 116 },	-- Grizzly Hills
-				["qg"] = 32813,	-- Grizzly Hills Flame Keeper
+				["provider"] = { "n", 32813 },	-- Grizzly Hills Flame Keeper
 			}),
 			q(11851, {	-- Honor the Flame — Hellfire Peninsula
 				["isYearly"] = true,
 				["coord"] = { 55.0, 40.0, 100 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 100 },	-- Hellfire Peninsula
-				["qg"] = 25934,	-- Hellfire Peninsula Flame Keeper
+				["provider"] = { "n", 25934 },	-- Hellfire Peninsula Flame Keeper
 			}),
 			q(11853, {	-- Honor the Flame — Hillsbrad Foothills
 				["isYearly"] = true,
 				["coord"] = { 55.0, 50.0, 25 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 25 },	-- Hillsbrad Foothills
-				["qg"] = 25935,	-- Hillsbrad Flame Keeper
+				["provider"] = { "n", 25935 },	-- Hillsbrad Flame Keeper
 			}),
 			q(13496, {	-- Honor the Flame — Howling Fjord
 				["isYearly"] = true,
 				["coord"] = { 48.0, 13.0, 117 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 117 },	-- Howling Fjord
-				["qg"] = 32812,	-- Howling Fjord Flame Keeper
+				["provider"] = { "n", 32812 },	-- Howling Fjord Flame Keeper
 			}),
 			q(29030, {	-- Honor the Flame — Hyjal
 				["isYearly"] = true,
 				["coord"] = { 62.8, 22.6, 198 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 198 },	-- Hyjal
-				["qg"] = 51682,	-- Hyjal Flame Guardian
+				["provider"] = { "n", 51682 },	-- Hyjal Flame Guardian
 			}),
 			q(11852, {	-- Honor the Flame — Mulgore
 				["isYearly"] = true,
 				["coord"] = { 51.0, 59.0, 7 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 7 },	-- Mulgore
-				["qg"] = 25936,	-- Mulgore Flame Keeper
+				["provider"] = { "n", 25936 },	-- Mulgore Flame Keeper
 			}),
 			q(11854, {	-- Honor the Flame — Nagrand (Outland)
 				["isYearly"] = true,
 				["coord"] = { 51.0, 34.0, 107 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 107 },	-- Nagrand
-				["qg"] = 25937,	-- Nagrand Flame Keeper
+				["provider"] = { "n", 25937 },	-- Nagrand Flame Keeper
 			}),
 			q(54747, {	-- Honor the Flame — Nazmir
 				["isYearly"] = true,
 				["coord"] = { 40.0, 74.3, 863 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 863 },	-- Nazmir
-				["qg"] = 148950,    -- Nazmir Flame Keeper
+				["provider"] = { "n", 148950 },    -- Nazmir Flame Keeper
 			}),
 			q(11835, {	-- Honor the Flame — Netherstorm
 				["isYearly"] = true,
 				["coord"] = { 32.0, 68.0, 109 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 109 },	-- Netherstorm
-				["qg"] = 25918,	-- Netherstorm Flame Keeper
+				["provider"] = { "n", 25918 },	-- Netherstorm Flame Keeper
 			}),
 			q(11859, {	-- Honor the Flame — Northern Barrens
 				["isYearly"] = true,
 				["coord"] = { 50.0, 55.0, 10 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 10 },	-- Northern Barrens
-				["qg"] = 25943,	-- The Northern Barrens Flame Keeper
+				["provider"] = { "n", 25943 },	-- The Northern Barrens Flame Keeper
 			}),
 			q(28924, {	-- Honor the Flame — Northern Stranglethorn
 				["isYearly"] = true,
 				["coord"] = { 40.0, 51.0, 50 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 50 },	-- Northern Stranglethorn
-				["qg"] = 51582,	-- Northern Stranglethorn Vale Flame Keeper
+				["provider"] = { "n", 51582 },	-- Northern Stranglethorn Vale Flame Keeper
 			}),
 			q(11855, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
 				["coord"] = { 33.0, 30.0, 104 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 104 },	-- Shadowmoon Valley
-				["qg"] = 25938,	-- Shadowmoon Valley Flame Keeper
+				["provider"] = { "n", 25938 },	-- Shadowmoon Valley Flame Keeper
 			}),
 			q(13494, {	-- Honor the Flame — Sholazar Basin
 				["isYearly"] = true,
 				["coord"] = { 47.0, 62.0, 119 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 119 },	-- Sholazar Basin
-				["qg"] = 32810,	-- Sholazar Basin Flame Keeper
+				["provider"] = { "n", 32810 },	-- Sholazar Basin Flame Keeper
 			}),
 			q(11836, {	-- Honor the Flame — Silithus
 				["isYearly"] = true,
 				["coord"] = { 51.0, 41.0, 81 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 81 },	-- Silithus
-				["qg"] = 25919,	-- Silithus Flame Keeper
+				["provider"] = { "n", 25919 },	-- Silithus Flame Keeper
 			}),
 			q(11584, {	-- Honor the Flame — Silverpine Forest
 				["isYearly"] = true,
 				["coord"] = { 50.0, 38.0, 21 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 21 },	-- Silverpine Forest
-				["qg"] = 25939,	-- Silverpine Forest Flame Keeper
+				["provider"] = { "n", 25939 },	-- Silverpine Forest Flame Keeper
 			}),
 			q(28927, {	-- Honor the Flame — Southern Barrens
 				["isYearly"] = true,
 				["coord"] = { 41.0, 68.0, 10 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 10 },	-- Southern Barrens
-				["qg"] = 51587,	-- The Southern Barrens Flame Keeper
+				["provider"] = { "n", 51587 },	-- The Southern Barrens Flame Keeper
 			}),
 			q(11856, {	-- Honor the Flame — Stonetalon Mountains
 				["isYearly"] = true,
 				["coord"] = { 53.0, 62.0, 65 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 65 },	-- Stonetalon Mountains
-				["qg"] = 25940,	-- Stonetalon Flame Keeper
+				["provider"] = { "n", 25940 },	-- Stonetalon Flame Keeper
 			}),
 			q(13498, {	-- Honor the Flame — Storm Peaks
 				["isYearly"] = true,
 				["coord"] = { 40.0, 86.0, 120 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 120 },	-- Storm Peaks
-				["qg"] = 32814,	-- Storm Peaks Flame Keeper
+				["provider"] = { "n", 32814 },	-- Storm Peaks Flame Keeper
 			}),
 			q(44614, {	-- Honor the Flame — Suramar
 				["isYearly"] = true,
 				["coord"] = { 30.4, 45.4, 680 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 680 },	-- Suramar
-				["qg"] = 114518,	-- Suramar Flame Keeper
+				["provider"] = { "n", 114518 },	-- Suramar Flame Keeper
 			}),
 			q(11857, {	-- Honor the Flame — Swamp of Sorrows
 				["isYearly"] = true,
 				["coord"] = { 76.0, 14.0, 51 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 51 },	-- Swamp of Sorrows
-				["qg"] = 25941,	-- Swamp of Sorrows Flame Keeper
+				["provider"] = { "n", 25941 },	-- Swamp of Sorrows Flame Keeper
 			}),
 			q(11838, {	-- Honor the Flame — Tanaris
 				["isYearly"] = true,
 				["coord"] = { 49.0, 27.0, 71 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 71 },	-- Tanaris
-				["qg"] = 25921,	-- Tanaris Flame Keeper
+				["provider"] = { "n", 25921 },	-- Tanaris Flame Keeper
 			}),
 			q(11858, {	-- Honor the Flame — Terokkar Forest
 				["isYearly"] = true,
 				["coord"] = { 52.0, 43.0, 108 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 108 },	-- Terokkar Forest
-				["qg"] = 25942,	-- Terokkar Forest Flame Keeper
+				["provider"] = { "n", 25942 },	-- Terokkar Forest Flame Keeper
 			}),
 			q(11837, {	-- Honor the Flame — The Cape of Stranglethorn
 				["isYearly"] = true,
 				["coord"] = { 50.0, 70.0, 210 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 210 },	-- The Cape of Stranglethorn
-				["qg"] = 25920,	-- Cape of Stranglethorn Flame Keeper
+				["provider"] = { "n", 25920 },	-- Cape of Stranglethorn Flame Keeper
 			}),
 			q(11860, {	-- Honor the Flame — The Hinterlands
 				["isYearly"] = true,
 				["coord"] = { 76.0, 75.0, 26 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 26 },	-- The Hinterlands
-				["qg"] = 25944,	-- The Hinterlands Flame Keeper
+				["provider"] = { "n", 25944 },	-- The Hinterlands Flame Keeper
 			}),
 			q(11862, {	-- Honor the Flame — Tirisfal Glades
 				["isYearly"] = true,
 				["coord"] = { 57.0, 52.0, 18 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 18 },	-- Tirisfal Glades
-				["qg"] = 25946,	-- Tirisfal Glades Flame Keeper
+				["provider"] = { "n", 25946 },	-- Tirisfal Glades Flame Keeper
 			}),
 			q(28946, {	-- Honor the Flame — Twilight Highlands
 				["isYearly"] = true,
 				["coord"] = { 53.0, 46.0, 241 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 241 },	-- Twilight Highlands
-				["qg"] = 51651,	-- Twilight Highlands Flame Keeper
+				["provider"] = { "n", 51651 },	-- Twilight Highlands Flame Keeper
 			}),
 			q(28949, {	-- Honor the Flame — Uldum
 				["isYearly"] = true,
 				["coord"] = { 53.0, 34.0, 249 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 249 },	-- Uldum
-				["qg"] = 51652,	-- Uldum Flame Keeper
+				["provider"] = { "n", 51652 },	-- Uldum Flame Keeper
 			}),
 			q(28933, {	-- Honor the Flame — Un'goro Crater
 				["isYearly"] = true,
 				["coord"] = { 56.0, 66.0, 78 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 78 },	-- Un'goro Crater
-				["qg"] = 51607,	-- Un'Goro Flame Keeper
+				["provider"] = { "n", 51607 },	-- Un'Goro Flame Keeper
 			}),
 			q(32509, {	-- Honor the Flame — Vale of Eternal Blossoms
 				["isYearly"] = true,
 				["coord"] = { 77.8, 33.1, 390 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 390 },	-- Vale of Eternal Blossoms
-				["qg"] = 69551,	-- Vale of Eternal Blossoms Flame Keeper
+				["provider"] = { "n", 69551 },	-- Vale of Eternal Blossoms Flame Keeper
 			}),
 			q(29031, {	-- Honor the Flame — Vashj'ir
 				["isYearly"] = true,
 				["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
 				["races"] = HORDE_ONLY,
 				["maps"] = { 203, 205 },	-- Vashj'ir + Shimmering Expanse
-				["qg"] = 51697,	-- Vashj'ir Flame Guardian
+				["provider"] = { "n", 51697 },	-- Vashj'ir Flame Guardian
 			}),
 			q(54750, {	-- Honor the Flame — Vol'dun
 				["isYearly"] = true,
 				["coord"] = { 56.0, 47.8, 864 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 864 },	-- Vol'dun
-				["qg"] = 148986,    -- Vol'dun Flame Keeper
+				["provider"] = { "n", 148986 },    -- Vol'dun Flame Keeper
 			}),
 			q(28931, {	-- Honor the Flame — Western Plaguelands
 				["isYearly"] = true,
 				["coord"] = { 29.0, 57.0, 22 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 22 },	-- Western Plaguelands
-				["qg"] = 51604,	-- Western Plaguelands Flame Keeper
+				["provider"] = { "n", 51604 },	-- Western Plaguelands Flame Keeper
 			}),
 			q(11839, {	-- Honor the Flame — Winterspring
 				["isYearly"] = true,
 				["coord"] = { 59.0, 35.0, 83 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 83 },	-- Winterspring
-				["qg"] = 25922,	-- Winterspring Flame Keeper
+				["provider"] = { "n", 25922 },	-- Winterspring Flame Keeper
 			}),
 			q(11863, {	-- Honor the Flame — Zangarmarsh
 				["isYearly"] = true,
 				["coord"] = { 35.3, 51.6, 102 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 102 },	-- Zangarmarsh
-				["qg"] = 25947,	-- Zangarmarsh Flame Keeper
+				["provider"] = { "n", 25947 },	-- Zangarmarsh Flame Keeper
 			}),
 			q(54745, {	-- Honor the Flame — Zuldazar
 				["isYearly"] = true,
 				["coord"] = { 53.3, 48.1, 862 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 862 },	-- Zuldazar
-				["qg"] = 148944,	-- Zuldazar Flame Keeper
+				["provider"] = { "n", 148944 },	-- Zuldazar Flame Keeper
 			}),
 			q(13500, {	-- Honor the Flame — Zul'Drak
 				["isYearly"] = true,
 				["coord"] = { 43.0, 71.0, 121 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 121 },	-- Zul'Drak
-				["qg"] = 32816,	-- Zul'Drak Flame Keeper
+				["provider"] = { "n", 32816 },	-- Zul'Drak Flame Keeper
 			}),
 		--	HORDE "HONOR THE FLAME" QUESTS END HERE.
 		--	NEUTRAL "HONOR THE FLAME" QUESTS START HERE.
@@ -2935,84 +2935,84 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["coord"] = { 48.2, 29.6, 630 },
 				["maps"] = { 630 },	-- Azsuna
-				["qg"] = 114492,	-- Azsuna Flame Guardian
+				["provider"] = { "n", 114492 },	-- Azsuna Flame Guardian
 			}),
 			q(32497, {	-- Honor the Flame — Dread Wastes
 				["isYearly"] = true,
 				["coord"] = { 56.1, 69.5, 422 },
 				["maps"] = { 422 },	-- Dread Wastes
-				["qg"] = 69522,	-- Dread Wastes Flame Guardian
+				["provider"] = { "n", 69522 },	-- Dread Wastes Flame Guardian
 			}),
 			q(44573, {	-- Honor the Flame — Gorgrond
 				["isYearly"] = true,
 				["coord"] = { 43.8, 93.8, 543 },
 				["maps"] = { 543 },	-- Gorgrond
-				["qg"] = 114491,	-- Gorgrond Flame Guardian
+				["provider"] = { "n", 114491 },	-- Gorgrond Flame Guardian
 			}),
 			q(44576, {	-- Honor the Flame — Highmountain
 				["isYearly"] = true,
 				["coord"] = { 55.4, 84.4, 650 },
 				["maps"] = { 650 },	-- Highmountain
-				["qg"] = 114494,	-- Highmountain Flame Guardian
+				["provider"] = { "n", 114494 },	-- Highmountain Flame Guardian
 			}),
 			q(32498, {	-- Honor the Flame — Jade Forest
 				["isYearly"] = true,
 				["coord"] = { 47.2, 47.2, 371 },
 				["maps"] = { 371 },	-- Jade Forest
-				["qg"] = 69529,	-- Jade Forest Flame Guardian
+				["provider"] = { "n", 69529 },	-- Jade Forest Flame Guardian
 			}),
 			q(32499, {	-- Honor the Flame — Krasarang Wilds
 				["isYearly"] = true,
 				["coord"] = { 77.8, 3.60, 418 },
 				["maps"] = { 418 },	-- Krasarang Wilds
-				["qg"] = 69533,	-- Krasarang Wilds Flame Guardian
+				["provider"] = { "n", 69533 },	-- Krasarang Wilds Flame Guardian
 			}),
 			q(32500, {	-- Honor the Flame — Kun-Lai Summit
 				["isYearly"] = true,
 				["coord"] = { 71.1, 90.9, 379 },
 				["maps"] = { 379 },	-- Kun-Lai Summit
-				["qg"] = 69535,	-- Kun-Lai Summit Flame Guardian
+				["provider"] = { "n", 69535 },	-- Kun-Lai Summit Flame Guardian
 			}),
 			q(44572, {	-- Honor the Flame — Nagrand (WoD)
 				["isYearly"] = true,
 				["coord"] = { 80.4, 47.6, 550 },
 				["maps"] = { 550 },	-- Nagrand
-				["qg"] = 114490,	-- Nagrand Flame Guardian
+				["provider"] = { "n", 114490 },	-- Nagrand Flame Guardian
 			}),
 			q(44570, {	-- Honor the Flame — Spires of Arak
 				["isYearly"] = true,
 				["coord"] = { 48.0, 44.6, 542 },
 				["maps"] = { 542 },	-- Spires of Arak
-				["qg"] = 114488,	-- Spires of Arak Flame Guardian
+				["provider"] = { "n", 114488 },	-- Spires of Arak Flame Guardian
 			}),
 			q(44577, {	-- Honor the Flame — Stormheim
 				["isYearly"] = true,
 				["coord"] = { 32.4, 42.2, 634 },
 				["maps"] = { 634 },	-- Stormheim
-				["qg"] = 114496,	-- Stormheim Flame Guardian
+				["provider"] = { "n", 114496 },	-- Stormheim Flame Guardian
 			}),
 			q(44571, {	-- Honor the Flame — Talador
 				["isYearly"] = true,
 				["coord"] = { 43.4, 71.8, 535 },
 				["maps"] = { 535 },	-- Talador
-				["qg"] = 114489,	-- Talador Flame Guardian
+				["provider"] = { "n", 114489 },	-- Talador Flame Guardian
 			}),
 			q(32501, {	-- Honor the Flame — Townlong Steppes
 				["isYearly"] = true,
 				["coord"] = { 71.5, 56.3, 388 },
 				["maps"] = { 388 },	-- Townlong Steppes
-				["qg"] = 69536,	-- Townlong Steppes Flame Guardian
+				["provider"] = { "n", 69536 },	-- Townlong Steppes Flame Guardian
 			}),
 			q(32502, {	-- Honor the Flame — Valley of the Four Winds
 				["isYearly"] = true,
 				["coord"] = { 51.8, 51.4, 376 },["maps"] = { 376 },	-- Valley of the Four Winds
-				["qg"] = 69550,	-- Valley of the Four Winds Flame Guardian
+				["provider"] = { "n", 69550 },	-- Valley of the Four Winds Flame Guardian
 			}),
 			q(44575, {	-- Honor the Flame — Val'sharah
 				["isYearly"] = true,
 				["coord"] = { 44.8, 58.0, 641 },
 				["maps"] = { 641 },	-- Val'sharah
-				["qg"] = 114493,	-- Val'sharah Flame Guardian
+				["provider"] = { "n", 114493 },	-- Val'sharah Flame Guardian
 			}),
 		--	NEUTRAL "HONOR THE FLAME" QUESTS END HERE.
 			q(11966, {	-- Incense for the Festival Scorchlings
@@ -3032,7 +3032,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 					111,	-- Shattrath City
 				},
-				["qg"] = 16818,	-- Festival Talespinner
+				["provider"] = { "n", 16818 },	-- Festival Talespinner
 			}),
 			q(11964, {	-- Incense for the Summer Scorchlings
 				["isYearly"] = true,
@@ -3051,7 +3051,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					103,	-- The Exodar
 					111,	-- Shattrath City
 				},
-				["qg"] = 16817,	-- Festival Loremaster
+				["provider"] = { "n", 16817 },	-- Festival Loremaster
 			}),
 			q(29092, {	-- Inform the Elder (A)
 				["sourceQuests"] = { 11891 },	-- An Innocent Disguise
@@ -3066,7 +3066,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				["coord"] = { 15.6, 20.2, 63 },
 				["races"] = HORDE_ONLY,	-- listed as "both" on wowhead, but this is the version i picked up on Horde, and i got 29092 on Alliance.
 				["maps"] = { 63 },	-- Ashenvale
-				["qg"] = 25324,	-- Earthen Ring Guide
+				["provider"] = { "n", 25324 },	-- Earthen Ring Guide
 			}),
 			q(11924, {	-- More Torch Catching (A)
 				["sourceQuests"] = { 11657 },	-- Torch Catching (A)
@@ -3084,7 +3084,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					103,	-- The Exodar
 				},
-				["qg"] = 25975,	-- Master Fire Eater
+				["provider"] = { "n", 25975 },	-- Master Fire Eater
 			}),
 			q(11925, {	-- More Torch Catching (H)
 				["sourceQuests"] = { 11923 },	-- Torch Catching (H)
@@ -3102,7 +3102,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					90,		-- Undercity
 					111,	-- Silvermoon City
 				},
-				["qg"] = 26113,	-- Master Flame Eater
+				["provider"] = { "n", 26113 },	-- Master Flame Eater
 			}),
 			q(11921, {	-- More Torch Tossing (A)
 				["sourceQuests"] = { 11657 },	-- Torch Catching (A)
@@ -3120,7 +3120,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					103,	-- The Exodar
 				},
-				["qg"] = 25975,	-- Master Fire Eater
+				["provider"] = { "n", 25975 },	-- Master Fire Eater
 			}),
 			q(11926, {	-- More Torch Tossing (H)
 				["sourceQuests"] = { 11923 },	-- Torch Catching (H)
@@ -3138,7 +3138,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					90,		-- Undercity
 					111,	-- Silvermoon City
 				},
-				["qg"] = 26113,	-- Master Flame Eater
+				["provider"] = { "n", 26113 },	-- Master Flame Eater
 			}),
 			q(11882, {	-- Playing with Fire (A)
 				["races"] = ALLIANCE_ONLY,
@@ -3185,7 +3185,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					241,	-- Twilight Highlands
 					249,	-- Uldum
 				},
-				["qg"] = 25962,	-- Fire Eater
+				["provider"] = { "n", 25962 },	-- Fire Eater
 			}),
 			q(11915, {	-- Playing with Fire (H)
 				["races"] = HORDE_ONLY,
@@ -3206,7 +3206,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					119,	-- Sholazar Basin
 					249,	-- Uldum
 				},
-				["qg"] = 25994,	-- Fire Eater
+				["provider"] = { "n", 25994 },	-- Fire Eater
 			}),
 			q(9332,  {	-- Stealing Darnassus's Flame
 				["isYearly"] = true,
@@ -3305,7 +3305,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 					111,	-- Shattrath City
 				},
-				["qg"] = 26221,	-- Earthen Ring Elder
+				["provider"] = { "n", 26221 },	-- Earthen Ring Elder
 				["lvl"] = 16,
 			}),
 			q(11947, {	-- Striking Back
@@ -3333,7 +3333,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 					111,	-- Shattrath City
 				},
-				["qg"] = 26221,	-- Earthen Ring Elder
+				["provider"] = { "n", 26221 },	-- Earthen Ring Elder
 				["lvl"] = 29,
 			}),
 			q(11948, {	-- Striking Back
@@ -3361,7 +3361,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 					111,	-- Shattrath City
 				},
-				["qg"] = 26221,	-- Earthen Ring Elder
+				["provider"] = { "n", 26221 },	-- Earthen Ring Elder
 				["lvl"] = 39,
 			}),
 			q(11952, {	-- Striking Back
@@ -3389,7 +3389,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 					111,	-- Shattrath City
 				},
-				["qg"] = 26221,	-- Earthen Ring Elder
+				["provider"] = { "n", 26221 },	-- Earthen Ring Elder
 				["lvl"] = 49,
 			}),
 			q(11953, {	-- Striking Back
@@ -3417,7 +3417,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 					111,	-- Shattrath City
 				},
-				["qg"] = 26221,	-- Earthen Ring Elder
+				["provider"] = { "n", 26221 },	-- Earthen Ring Elder
 				["lvl"] = 60,
 			}),
 			q(11954, {	-- Striking Back
@@ -3445,7 +3445,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 					111,	-- Shattrath City
 				},
-				["qg"] = 26221,	-- Earthen Ring Elder
+				["provider"] = { "n", 26221 },	-- Earthen Ring Elder
 				["lvl"] = 64,
 			}),
 		--	q(11691),	-- Summon Ahune
@@ -3465,13 +3465,13 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					210,	-- The Cape of Stranglethorn
 					504,	-- Isle of Thunder
 				},
-				["qgs"] = {
-					18927,	-- Human Commoner
-					19148,	-- Dwarf Commoner
-					19171,	-- Draenei Commoner
-					19172,	-- Gnome Commoner
-					19173,	-- Night Elf Commoner
-					20102,	-- Goblin Commoner
+				["providers"] = {
+					{ "n", 18927 },	-- Human Commoner
+					{ "n", 19148 },	-- Dwarf Commoner
+					{ "n", 19171 },	-- Draenei Commoner
+					{ "n", 19172 },	-- Gnome Commoner
+					{ "n", 19173 },	-- Night Elf Commoner
+					{ "n", 20102 },	-- Goblin Commoner
 				},
 			}),
 			q(11971, {	-- The Spinner of Summer Tales
@@ -3492,13 +3492,13 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					125,	-- Dalaran (Northrend)
 					210,	-- The Cape of Stranglethorn
 				},
-				["qgs"] = {
-					19169,	-- Blood Elf Commoner
-					19175,	-- Orc Commoner
-					19176,	-- Tauren Commoner
-					19177,	-- Troll Commoner
-					19178,	-- Forsaken Commoner
-					20102,	-- Goblin Commoner
+				["providers"] = {
+					{ "n", 19169 },	-- Blood Elf Commoner
+					{ "n", 19175 },	-- Orc Commoner
+					{ "n", 19176 },	-- Tauren Commoner
+					{ "n", 19177 },	-- Troll Commoner
+					{ "n", 19178 },	-- Forsaken Commoner
+					{ "n", 20102 },	-- Goblin Commoner
 				},
 			}),
 			q(11657, {	-- Torch Catching (A)
@@ -3516,7 +3516,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					103,	-- The Exodar
 				},
-				["qg"] = 25975,	-- Master Fire Eater
+				["provider"] = { "n", 25975 },	-- Master Fire Eater
 			}),
 			q(11923, {	-- Torch Catching (H)
 				["sourceQuests"] = { 11922 },	-- Torch Tossing
@@ -3533,7 +3533,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					90,		-- Undercity
 					111,	-- Silvermoon City
 				},
-				["qg"] = 26113,	-- Master Flame Eater
+				["provider"] = { "n", 26113 },	-- Master Flame Eater
 			}),
 			q(11731, {	-- Torch Tossing (A)
 				["coords"] = {
@@ -3549,7 +3549,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					89,		-- Darnassus
 					103,	-- The Exodar
 				},
-				["qg"] = 25975,	-- Master Fire Eater
+				["provider"] = { "n", 25975 },	-- Master Fire Eater
 			}),
 			q(11922, {	-- Torch Tossing (H)
 				["coords"] = {
@@ -3565,7 +3565,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					90,		-- Undercity
 					111,	-- Silvermoon City
 				},
-				["qg"] = 26113,	-- Master Flame Eater
+				["provider"] = { "n", 26113 },	-- Master Flame Eater
 			}),
 			q(11886, {	-- Unusual Activity
 				["coords"] = {
@@ -3590,7 +3590,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 					111,	-- Shattrath City
 				},
-				["qg"] = 26221,	-- Earthen Ring Elder
+				["provider"] = { "n", 26221 },	-- Earthen Ring Elder
 			}),
 		}),
 		n(-2,   {	-- Vendors

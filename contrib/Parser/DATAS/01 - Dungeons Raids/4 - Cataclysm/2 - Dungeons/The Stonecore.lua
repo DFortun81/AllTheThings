@@ -10,7 +10,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d( 1, {	-- Normal
 				n(-17, {	-- Quests 				
 					q(28814, {	-- Followers and Leaders
-						["qg"] = 50048,	-- Earthwarden Yrsa
+						["provider"] = { "n", 50048 },	-- Earthwarden Yrsa
 						["sourceQuests"] = {28815},	-- Twilight Documents
 						["groups"] = {
 							i(66892),	-- Band of the One Hundred and One
@@ -19,10 +19,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					q(28815, {	-- Twilight Documents
-						["qg"] = 50048,	-- Earthwarden Yrsa
+						["provider"] = { "n", 50048 },	-- Earthwarden Yrsa
 					}),
 					q(28824, {	-- Wayward Child
-						["qg"] = 42465,	-- Therazane <The Stonemother>
+						["provider"] = { "n", 42465 },	-- Therazane <The Stonemother>
 						["groups"] = {
 							i(66897),	-- Crystal Shimmer Cloak
 							i(66894),	-- Leggings of the Lost Child

@@ -8,20 +8,20 @@ _.Zones =
 			m(217, {	-- Ruins of Gilneas
 				n(-17, {	-- Quests
 					q(27406, {	-- A Man Named Godfrey
-						["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
+						["provider"] = { "n", 45312 },	-- Deathstalker Commander Belmont (secondary QG ID 45474)
 						["coord"] = { 72.9, 30.1, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27405 },	-- Fall Back!
 					}),
 					ql(q(30093, {	-- Assassinate Creed
-						["qg"] = 57770,	-- Zazzo Twinklefingers
+						["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
 						["coord"] = { 70.0, 40.8, 21 },
 						["classes"] = { 4 },	-- Rogue
 						["lvl"] = 85,
 						["sourceQuests"] = { 30092 },	-- Our Man in Gilneas
 					})),
 					q(27349, {	-- Break in Communications: Dreadwatch Outpost
-						["qg"] = 45315,	-- Forward Commander Onslaught
+						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 						["coord"] = { 57.5, 18.2, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -31,13 +31,13 @@ _.Zones =
 						},
 					}),
 					q(27350, {	-- Break in Communications: Rutsak's Guard
-						["qg"] = 45315,	-- Forward Commander Onslaught
+						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27349 },	-- Break in Communications: Dreadwatch Outpost
 					}),
 					q(27405, {	-- Fall Back!
-						["qg"] = 45315,	-- Forward Commander Onslaught
+						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27401 },	-- What Tomorrow Brings
@@ -48,7 +48,7 @@ _.Zones =
 						},
 					}),
 					q(27342, {	-- In Time, All Will Be Revealed
-						["qg"] = 45312,	-- Deathstalker Commander Belmont
+						["provider"] = { "n", 45312 },	-- Deathstalker Commander Belmont
 						["races"] = HORDE_ONLY,
 						["coord"] = { 57.4, 18.9, 217 },
 						["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
@@ -72,25 +72,25 @@ _.Zones =
 						},
 					}),
 					q(27333, {	-- Losing Ground
-						["qg"] = 45315,	-- Forward Commander Onslaught
+						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 						["races"] = HORDE_ONLY,
 						["coord"] = { 57.5, 18.2, 217 },
 						["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 					}),
 					q(27364, {	-- On Whose Orders?
-						["qg"] = 45315,	-- Forward Commander Onslaught
+						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27350 },	-- Break in Communications: Rutsak's Guard
 					}),
 					q(27423, {	-- Resistance is Futile
-						["qg"] = 45315,	-- Forward Commander Onslaught
+						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27405 },	-- Fall Back!
 					}),
 					ql(q(30106, {	-- The Deed is Done
-						["qg"] = 57770,	-- Zazzo Twinklefingers
+						["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
 						["lvl"] = 85,
 						["coord"] = { 70.0, 40.8, 21 },
 						["classes"] = { 4 },	-- Rogue
@@ -101,13 +101,13 @@ _.Zones =
 						},
 					})),
 					q(27345, {	-- The F.C.D.
-						["qg"] = 45315,	-- Forward Commander Onslaught
+						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 						["coord"] = { 57.5, 18.2, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 					}),
 					q(27438, {	-- The Great Escape (awards "Ruins of Gilneas" criteria for zone achievement)
-						["qg"] = 45312,	-- Deathstalker Commander Belmont
+						["provider"] = { "n", 45312 },	-- Deathstalker Commander Belmont
 						["coord"] = { 79.7, 75.7, 21 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -122,7 +122,7 @@ _.Zones =
 						},
 					}),
 					q(27360, {	-- Vengeance for Our Soldiers
-						["qg"] = 45389,	-- Captain Rutsak
+						["provider"] = { "n", 45389 },	-- Captain Rutsak
 						["coord"] = { 65.6, 34.1, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27350 },	-- Break in Communication: Rutsak's Guard
@@ -134,7 +134,7 @@ _.Zones =
 						},
 					}),
 					q(27401, {	-- What Tomorrow Brings
-						["qg"] = 45315,	-- Forward Commander Onslaught
+						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 						["coord"] = { 57.5, 18.2, 21 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {

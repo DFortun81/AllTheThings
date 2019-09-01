@@ -65,7 +65,7 @@ _.Zones =
 					["crs"] = { 88466 },	-- Zangar Crawler
 				}),
 				q(37207, {	-- Vesharr
-					["qg"] = 87123,	-- Vesharr
+					["provider"] = { "n", 87123 },	-- Vesharr
 					["coord"] = { 46.2, 45.3, 542 },
 					["isDaily"] = true,
 					["g"] = {

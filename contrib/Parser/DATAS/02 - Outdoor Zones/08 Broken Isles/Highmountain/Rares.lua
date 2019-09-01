@@ -9,7 +9,7 @@ _.Zones =
 				v(40413,  {	-- "Sure Shot" Arnie (Amateur Hunters)
 					["description"] = "|cff66ccffThere are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage the amateur hunters in combat, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest. |r",
 					["coord"] = { 43.1, 47.9, 650 },
-					["qgs"] = {
+					["crs"] = {
 						100232,	-- Ryael Dawndrifter <Amateur Hunter>
 						100230,	-- "Sure-Shot" Arnie <Amateur Hunter>
 						100231,	-- Dargok Thunderuin <Amateur Hunter>
@@ -29,7 +29,7 @@ _.Zones =
 				v(39784,  {	-- Beastmaster Pao'lek & Arru
 					["description"] = "|cff66ccffSpeak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.|r",
 					["coord"] = { 48.6, 50.0, 650 },
-					["qgs"] = {
+					["crs"] = {
 						97215,	-- Beastmaster Pao'lek
 						97220, 	-- Arru <The Terror>
 					},
@@ -211,7 +211,7 @@ _.Zones =
 				v(40423,  {	-- Puck (Unethical Adventurers)
 					["description"] = "|cff66ccffLoot the treasure inside the cave and a party of enemies will appear.  Kill them and loot the treasure. |r",
 					["coord"] = { 52.3, 58.5, 650 },
-					["qgs"] = {
+					["crs"] = {
 						100302,	-- Puck <Unethical Adventurers>
 						109498,	-- Xaander <Unethical Adventurers>
 						100303,	-- Zenobia <Unethical Adventurers>

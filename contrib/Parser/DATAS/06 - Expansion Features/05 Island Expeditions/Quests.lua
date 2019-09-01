@@ -21,7 +21,7 @@ _.ExpansionFeatures =
 						["coord"] = { 83.2, 29.6, 390 },
 						["g"] = {
 							q(53160, {	-- Ancient Crypt Key
-								["qg"] = 61962,	-- Lorewalker Cho
+								["provider"] = { "n", 61962 },	-- Lorewalker Cho
 							}),
 							crit(19, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 66.6, 35.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 131290,	-- Flynn
+						["provider"] = { "n", 131290 },	-- Flynn
 						["g"] = {
 							i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 							i(166999),	-- Treasure Map
@@ -51,7 +51,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.60, 95.40, 1163 },
-						["qg"] = 123000,	-- Captain Rez'okun
+						["provider"] = { "n", 123000 },	-- Captain Rez'okun
 						["g"] = {
 							i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 							i(166999),	-- Treasure Map
@@ -69,7 +69,7 @@ _.ExpansionFeatures =
 						["coord"] = { 20.2, 54.6, 241 },
 						["g"] = {
 							q(53171, {	-- Battered Twilight Scale
-								["qg"] = 132888,	-- Eryna
+								["provider"] = { "n", 132888 },	-- Eryna
 							}),
 							crit(11, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -80,7 +80,7 @@ _.ExpansionFeatures =
 						["coord"] = { 68.4, 54.2, 634 },
 						["g"] = {
 							q(53163, {	-- Bloodwake Drinking Horn
-								["qg"] = 93231,	-- Vydhar
+								["provider"] = { "n", 93231 },	-- Vydhar
 								["modelScale"] = 1.3,
 							}),
 							crit(17, {
@@ -92,7 +92,7 @@ _.ExpansionFeatures =
 						["coord"] = { 42.0, 74.6, 210 },
 						["g"] = {
 							q(53177, {	-- Broken Compass
-								["qg"] = 908,	-- Flora Silverwind <Herbalism Trainer>
+								["provider"] = { "n", 908 },	-- Flora Silverwind <Herbalism Trainer>
 							}),
 							crit(7, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -103,7 +103,7 @@ _.ExpansionFeatures =
 						["coord"] = { 52.6, 40.6, 80 },
 						["g"] = {
 							q(53181, {	-- Druidic Fur
-								["qg"] = 12042,	-- Loganaar <Druid Trainer>
+								["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
 							}),
 							crit(4, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -114,7 +114,7 @@ _.ExpansionFeatures =
 						["coord"] = { 92.7, 42.0, 76 },	-- Verify Coords/npcid
 						["g"] = {
 							q(53169, {	-- Elemental Core
-								["qg"] = 13278,	-- Duke Hydraxis
+								["provider"] = { "n", 13278 },	-- Duke Hydraxis
 							}),
 							crit(13, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -125,7 +125,7 @@ _.ExpansionFeatures =
 						["coord"] = { 58.8, 46.2, 249 },
 						["g"] = {
 							q(53176, {	-- Glittering Scarab
-								["qg"] = 46134,	-- High Commander Kamses
+								["provider"] = { "n", 46134 },	-- High Commander Kamses
 							}),
 							crit(8, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -136,7 +136,7 @@ _.ExpansionFeatures =
 						["coord"] = { 48.0, 76.0, 115 },
 						["g"] = {
 							q(53167, {	-- Icetusk Fur Cloak
-								["qg"] = 26245,	-- Tua'kea
+								["provider"] = { "n", 26245 },	-- Tua'kea
 							}),
 							crit(15, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -147,7 +147,7 @@ _.ExpansionFeatures =
 						["coord"] = { 41.0, 73.0, 210 },
 						["g"] = {
 							q(53168, {	-- Magical Spyglass
-								["qg"] = 2496,	-- Baron Revilgaz
+								["provider"] = { "n", 2496 },	-- Baron Revilgaz
 							}),
 							crit(14, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -161,7 +161,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							q(53174, {	-- Murloc Eye
-								["qg"] = 98067,	-- King Mrgl-Mrgl <D.E.H.T.A.>
+								["provider"] = { "n", 98067 },	-- King Mrgl-Mrgl <D.E.H.T.A.>
 							}),
 							crit(9, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -172,7 +172,7 @@ _.ExpansionFeatures =
 						["coord"] = { 55.2, 19.2, 371 },
 						["g"] = {
 							q(53155, {	-- Notched Coin
-								["qg"] = 64365,	-- Mili Wanderbrew <Apprentice Brewmaster>
+								["provider"] = { "n", 64365 },	-- Mili Wanderbrew <Apprentice Brewmaster>
 							}),
 							crit(20, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -183,7 +183,7 @@ _.ExpansionFeatures =
 						["coord"] = { 29.6, 39.0, 418 },
 						["g"] = {
 							q(53178, {	-- Razorfin Hunting Spear
-								["qg"] = 58278,	-- Tired Shushen <Waterspeaker>
+								["provider"] = { "n", 58278 },	-- Tired Shushen <Waterspeaker>
 							}),
 							crit(6, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -194,7 +194,7 @@ _.ExpansionFeatures =
 						["coord"] = { 60.2, 51.2, 634 },
 						["g"] = {
 							q(53161, {	-- Ring of the Reefs
-								["qg"] = 106904,	-- Valdemar Stormseeker <Valarjar Emissary>
+								["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
 							}),
 							crit(18, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -205,7 +205,7 @@ _.ExpansionFeatures =
 						["coord"] = { 39.4, 62.0, 388 },
 						["g"] = {
 							q(53164, {	-- Sonic Stone
-								["qg"] = 61584,	-- Sentinel Commander Qipan
+								["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 							}),
 							crit(16, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -216,7 +216,7 @@ _.ExpansionFeatures =
 						["coord"] = { 36.2, 41.8, 80 },
 						["g"] = {
 							q(53182, {	-- Strangling Root
-								["qg"] = 11832,	-- Keeper Remulos
+								["provider"] = { "n", 11832 },	-- Keeper Remulos
 							}),
 							crit(3, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -227,7 +227,7 @@ _.ExpansionFeatures =
 						["coord"] = { 47.8, 68.8, 36 },	-- Verify map/npc id
 						["g"] = {
 							q(53170, {	-- Unscarred Black Scale
-								["qg"] = 66306,	-- Blacktalon Agent <Servant of the Black Prince>
+								["provider"] = { "n", 66306 },	-- Blacktalon Agent <Servant of the Black Prince>
 							}),
 							crit(12, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -242,7 +242,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							q(53172, {	-- Venture Co. Business Plan
 								["description"] = "Pats along the road between The Crossroads and Ratchet",
-								["qg"] = 3658,	-- Lizzarik <Weapon Dealer>
+								["provider"] = { "n", 3658 },	-- Lizzarik <Weapon Dealer>
 							}),
 							crit(10, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -253,7 +253,7 @@ _.ExpansionFeatures =
 						["coord"] = { 26.2, 50.6, 115 },
 						["g"] = {
 							q(53180, {	-- Vorus'arak's Carapace
-								["qg"] = 26653,	-- Kilix the Unraveler
+								["provider"] = { "n", 26653 },	-- Kilix the Unraveler
 							}),
 							crit(5, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -264,7 +264,7 @@ _.ExpansionFeatures =
 						["coord"] = { 52.0, 30.0, 71 },
 						["g"] = {
 							q(53184, {	-- Weathered Pamphlet
-								["qg"] = 132832,	-- Jordle Flangebender
+								["provider"] = { "n", 132832 },	-- Jordle Flangebender
 							}),
 							crit(1, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -276,7 +276,7 @@ _.ExpansionFeatures =
 						["coord"] = { 40.0, 76.6, 81 },
 						["g"] = {
 							q(53183, {	-- Wriggling Mass
-								["qg"] = 132886,	-- Twilight Hermit
+								["provider"] = { "n", 132886 },	-- Twilight Hermit
 							}),
 							crit(2, {
 								["achievementID"] = 13127,	-- Tell Me A Tale
@@ -289,7 +289,7 @@ _.ExpansionFeatures =
 						["coord"] = { 42.2, 44.2, 81 },
 						["g"] = {
 							q(53112, {	-- Azeroth's Tear
-								["qg"] = 130216,	-- Magni Bronzebeard <The Speaker>
+								["provider"] = { "n", 130216 },	-- Magni Bronzebeard <The Speaker>
 								["repeatable"] = true,
 							}),
 						},
@@ -299,7 +299,7 @@ _.ExpansionFeatures =
 						["coord"] = { 68.0, 22.0, 1161 },
 						["g"] = {
 							q(53118, {	-- Dented Coin
-								["qg"] = 122370,	-- Cyrus Crestfall <Harbormaster>
+								["provider"] = { "n", 122370 },	-- Cyrus Crestfall <Harbormaster>
 								["races"] =  ALLIANCE_ONLY,
 								["repeatable"] = true,
 							}),
@@ -310,7 +310,7 @@ _.ExpansionFeatures =
 						["coord"] = { 20.6, 45.6, 896 },
 						["g"] = {
 							q(53120, {	-- Exotic Spices
-								["qg"] = 136269,	-- Xun Xun Sweetflower <Exotic Food & Spices>
+								["provider"] = { "n", 136269 },	-- Xun Xun Sweetflower <Exotic Food & Spices>
 								["races"] =  ALLIANCE_ONLY,
 								["repeatable"] = true,
 							}),
@@ -321,7 +321,7 @@ _.ExpansionFeatures =
 						["coord"] = { 75.6, 56.6, 863 },
 						["g"] = {
 							q(53114, {	-- Golden Beetle
-								["qg"] = 120551,	-- Krag'wa the Huge
+								["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 								["races"] = HORDE_ONLY,
 								["repeatable"] = true,
 							}),
@@ -333,7 +333,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							q(53115, {	-- Island Flotsam
 								["description"] = "Must have unlocked Jani by doing the quest \"Pests\".",
-								["qg"] = 126334,	-- Jani <Loa of Scavengers>
+								["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
 								["races"] = HORDE_ONLY,
 								["repeatable"] = true,
 							}),
@@ -344,7 +344,7 @@ _.ExpansionFeatures =
 						["coord"] = { 59.2, 68.6, 942 },
 						["g"] = {
 							q(53119, {	-- Lost Sea Scroll
-								["qg"] = 130576,	-- Brother Pike
+								["provider"] = { "n", 130576 },	-- Brother Pike
 								["races"] =  ALLIANCE_ONLY,
 								["repeatable"] = true,
 							}),
@@ -355,7 +355,7 @@ _.ExpansionFeatures =
 						["coord"] = { 69.2, 25.0, 1161 },
 						["g"] = {
 							q(53117, {	-- Rusted Alliance Insignia [Alliance]
-								["qg"] = 135446,	-- Vindicator Jaelaana <7th Legion Emissary>
+								["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
 								["races"] =  ALLIANCE_ONLY,
 								["repeatable"] = true,
 							}),
@@ -366,7 +366,7 @@ _.ExpansionFeatures =
 						["coord"] = { 58, 62.6, 862 },
 						["g"] = {
 							q(53116, {	-- Rusted Horde Insignia
-								["qg"] = 135447,	-- Ransa Greyfeather
+								["provider"] = { "n", 135447 },	-- Ransa Greyfeather
 								["races"] = HORDE_ONLY,
 								["repeatable"] = true,
 							}),
@@ -377,7 +377,7 @@ _.ExpansionFeatures =
 						["coord"] = { 56.7, 49.8, 864 },
 						["g"] = {
 							q(53113, {	-- Shimmering Shell
-								["qg"] = 135804,	-- Hoarder Jena
+								["provider"] = { "n", 135804 },	-- Hoarder Jena
 								["races"] = HORDE_ONLY,
 								["repeatable"] = true,
 							}),

@@ -56,14 +56,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				q(32589, {	-- Life Blood
-					["qg"] = 67990,	-- Lor'themar Theron
+					["provider"] = { "n", 67990 },	-- Lor'themar Theron
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(95590),	-- Glorious Standard of the Sunreaver Onslaught Toy
 					},
 				}),
 				q(32599, {	-- Securing A Future
-					["qg"] = 67992,	-- Lady Jaina Proudmoore
+					["provider"] = { "n", 67992 },	-- Lady Jaina Proudmoore
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(95589),	-- Glorious Standard of the Kirin Tor Offensive Toy
@@ -74,7 +74,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					["groups"] = {
 						{
 							["questID"] = 32711,	-- Agony and Anima
-							["qg"] = 70243,	-- Quest Giver: Archritualist Kelada
+							["provider"] = { "n", 70243 },	-- Quest Giver: Archritualist Kelada
 							["collectible"] = false,
 							["isWeekly"] = true,
 							["groups"] = {
@@ -83,7 +83,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						{
 							["questID"] = 32716,	-- Eyes of the Thunder King
-							["qgs"] = {70238, 70249},	-- Quest Giver: Focused Eye / Unblinking Eye
+							["providers"] = {
+								{ "n", 70249 },	-- Focused Eye
+								{ "n", 70238 },	-- Unblinking Eye
+							},
 							["collectible"] = false,
 							["isWeekly"] = true,
 							["groups"] = {
@@ -92,7 +95,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						{
 							["questID"] = 32715,	-- Requiem for a Queen
-							["qg"] = 70440,	-- Quest Giver: Monara <The Last Queen>
+							["provider"] = { "n", 70440 },	-- Quest Giver: Monara <The Last Queen>
 							["collectible"] = false,
 							["isWeekly"] = true,
 							["groups"] = {
@@ -101,7 +104,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						{
 							["questID"] = 32713,	-- Rocks Fall, People Die
-							["qg"] = 70430,	-- Quest Giver: Rocky Horror
+							["provider"] = { "n", 70430 },	-- Quest Giver: Rocky Horror
 							["collectible"] = false,
 							["isWeekly"] = true,
 							["groups"] = {
@@ -110,7 +113,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						{
 							["questID"] = 32710,	-- Something Fouls is Afoot
-							["qg"] = 70429,	-- Quest Giver: Flesh'rok the Diseased <Primordial Saurok Horror>
+							["provider"] = { "n", 70429 },	-- Quest Giver: Flesh'rok the Diseased <Primordial Saurok Horror>
 							["collectible"] = false,
 							["isWeekly"] = true,
 							["groups"] = {
@@ -119,7 +122,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						{
 							["questID"] = 32714,	-- Taming the Tempest
-							["qg"] = 70276,	-- Quest Giver: No'ku Stormsayer <Lord of Tempest>
+							["provider"] = { "n", 70276 },	-- Quest Giver: No'ku Stormsayer <Lord of Tempest>
 							["collectible"] = false,
 							["isWeekly"] = true,
 							["groups"] = {
@@ -128,7 +131,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						{
 							["questID"] = 32712,	-- Zao'cho the Wicked
-							["qg"] = 69843,	-- Quest Giver: Zao'cho <The Emperor's Shield>
+							["provider"] = { "n", 69843 },	-- Quest Giver: Zao'cho <The Emperor's Shield>
 							["collectible"] = false,
 							["isWeekly"] = true,
 							["groups"] = {

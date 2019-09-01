@@ -14,35 +14,35 @@ _.Zones =
 									--["spellID"] = 242180,	-- Broken Shore World Quests
 							--	},
 							--},
-							["qg"] = 120215,	-- Archmage Khadgar
+							["provider"] = { "n", 120215 },	-- Archmage Khadgar
 							["sourceQuests"] = { 45727 },	-- Uniting the Isles
 						}),
 					}),
 					crit(2, {	-- Assault on Broken Shore
 						q(46734, {	-- Assault on Broken Shore
-							["qg"] = 120215,	-- Archmage Khadgar
+							["provider"] = { "n", 120215 },	-- Archmage Khadgar
 							["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 						}),
 					}),
 					crit(3, {	-- Begin Construction
 						q(46286, {	-- Legionfall Supplies
-							["qg"] = 120183,	-- Commander Chambers
+							["provider"] = { "n", 120183 },	-- Commander Chambers
 							["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 							["g"] = {
 								q(46245, {	-- Begin Construction
-									["qg"] = 120183,	-- Commander Chambers
+									["provider"] = { "n", 120183 },	-- Commander Chambers
 									["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 									["g"] = {
 										q(46773, {	-- The Command Center
-											["qg"] = 120183,	-- Commander Chambers
+											["provider"] = { "n", 120183 },	-- Commander Chambers
 											["sourceQuests"] = { 46245 },	-- Begin Construction
 										}),
 										q(46772, {	-- The Mage Tower
-											["qg"] = 120183,	-- Commander Chambers
+											["provider"] = { "n", 120183 },	-- Commander Chambers
 											["sourceQuests"] = { 46245 },	-- Begin Construction
 										}),
 										q(46774, {	-- The Nether Disruptor
-											["qg"] = 120183,	-- Commander Chambers
+											["provider"] = { "n", 120183 },	-- Commander Chambers
 											["sourceQuests"] = { 46245 },	-- Begin Construction
 										}),
 									},
@@ -52,66 +52,66 @@ _.Zones =
 					}),
 					crit(4, {	-- Aalgen Point
 						q(46832, {	-- Aalgen Point
-							["qg"] = 120183,	-- Commander Chambers
+							["provider"] = { "n", 120183 },	-- Commander Chambers
 							["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 						}),
 					}),
 					crit(5, {	-- Vengeance Point
 						q(46845, {	-- Vengeance Point
-							["qg"] = 120118,	-- Heidirk the Scalekeeper
+							["provider"] = { "n", 120118 },	-- Heidirk the Scalekeeper
 							["sourceQuests"] = { 46832 },	-- Aalgen Point
 						}),
 					}),
 					crit(6, {	-- Defending Broken Isles
 						q(46247, {	-- Defending Broken Isles
-							["qg"] = 116576,	-- Maiev Shadowsong
+							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 							["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 						}),
 					}),
 					crit(7, {	-- Champions of Legionfall
 						q(47137, {	-- Champions of Legionfall
-							["qg"] = 116576,	-- Maiev Shadowsong
+							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 							["sourceQuests"] = { 46247 },	-- Defending Broken Isles
 							["g"] = {
 								cl(10, {	-- Monk
 									q(45440, {	-- A Brewing Situation
-										["qg"] = 116929,	-- Brewmaster Blancee
+										["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 										["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 									}),
 									q(45404, {	-- Panic at the Brewery
-										["qg"] = 119664,	-- Brewmaster Almai
+										["provider"] = { "n", 119664 },	-- Brewmaster Almai
 										["sourceQuests"] = { 45440 },	-- A Brewing Situation
 									}),
 									q(45459, {	-- Storming the Legion
-										["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+										["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 										["sourceQuests"] = { 45404 },	-- Panic at the Brewery
 									}),
 									q(45574, {	-- Fel Ingredients
-										["qg"] = 117305,	-- Brewmaster Almai
+										["provider"] = { "n", 117305 },	-- Brewmaster Almai
 										["sourceQuests"] = { 45459 },	-- Storming the Legion
 									}),
 									q(45449, {	-- Alchemist Koryla
-										["qg"] = 117305,	-- Brewer Almai
+										["provider"] = { "n", 117305 },	-- Brewer Almai
 										["sourceQuests"] = { 45459 },	-- Storming the Legion
 									}),
 									q(45545, {	-- Barrel Toss
-										["qg"] = 117305,	-- Brewer Almai
+										["provider"] = { "n", 117305 },	-- Brewer Almai
 										["sourceQuests"] = { 45459 },	-- Storming the Legion
 									}),
 									q(46320, {	-- Hope For a Cure
-										["qg"] = 117305,	-- Brewer Almai
+										["provider"] = { "n", 117305 },	-- Brewer Almai
 										["sourceQuests"] = { 45574, 45449, 45545 },	-- Fel Ingredients / Alchemist Koryla / Barrel Toss
 									}),
 									q(45442, {	-- Not Felling Well
-										["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+										["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 										["sourceQuests"] = { 46320 },	-- Hope For a Cure
 									}),
 									q(45771, {	-- A Time for Everything
-										["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+										["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 										["sourceQuests"] = { 45442 },	-- Not Felling Well
 									}),
 									q(45790, {	-- Champion: Almai
-										["qg"] = 117504,	-- Brewer Almai
+										["provider"] = { "n", 117504 },	-- Brewer Almai
 										["sourceQuests"] = { 45771 },	-- A Time for Everything
 									}),
 								}),
@@ -120,55 +120,55 @@ _.Zones =
 					}),
 					crit(8, {	-- Shard Times
 						q(46251, {	-- Shard Times
-							["qg"] = 116302,	-- Archmage Khadgar
+							["provider"] = { "n", 116302 },	-- Archmage Khadgar
 							["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 						}),
 					}),
 					crit(9, {	-- Mark of the Sentinax
 						q(47139, {	-- Mark of the Sentinax
-							["qg"] = 117873,	-- Illidan Stormrage
+							["provider"] = { "n", 117873 },	-- Illidan Stormrage
 							["sourceQuests"] = { 46251 },	-- Shard Times
 						}),
 					}),
 					crit(10, {	-- Self-Fulfilling Prophecy
 						q(46248, {	-- Self-Fulfilling Prophecy
-							["qg"] = 120372,	-- Prophet Velen
+							["provider"] = { "n", 120372 },	-- Prophet Velen
 							["sourceQuests"] = { 47139 },	-- Mark of the Sentinax
 						}),
 					}),
 					crit(11, {	-- Intolerable Infestation
 						q(46252, {	-- Intolerable Infestation
-							["qg"] = 116576,	-- Maiev Shadowsong
+							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 							["sourceQuests"] = { 46248 },	-- Self-Fulfilling Prophecy
 						}),
 					}),
 					crit(12, {	-- Relieved of Thier Valuables
 						q(46769, {	-- Relieved of Their Valuables
-							["qg"] = 116302,	-- Archmage Khadgar
+							["provider"] = { "n", 116302 },	-- Archmage Khadgar
 							["sourceQuests"] = { 46252 },	-- Intolerable Infestation
 						}),
 					}),
 					crit(13, {	-- Take Out the Head...
 						q(46250, {	-- Take Out the Head...
-							["qg"] = 116576,	-- Maiev Shadowsong
+							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 							["sourceQuests"] = { 46769 },	-- Relieved of Their Valuables
 						}),
 					}),
 					crit(14, {	-- Championing Our Cause
 						q(46249, {	-- Championing Our Cause
-							["qg"] = 116302,	-- Archmage Khadgar
+							["provider"] = { "n", 116302 },	-- Archmage Khadgar
 							["sourceQuests"] = { 46250 },	-- Take Out the Head...
 						}),
 					}),
 					crit(15, {	-- Strike Them Down
 						q(46246, {	-- Strike Them Down
-							["qg"] = 116576,	-- Maiev Shadowsong
+							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 							["sourceQuests"] = { 46249 },	-- Championing Our Cause
 						}),
 					}),
 				}),
 				q(46244, {	-- Cathedral of Eternal Night: Altar of the Aegis
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["g"] = {
 						i(146932),	-- Condensed Storm's Fury
@@ -187,42 +187,42 @@ _.Zones =
 					["sourceQuest"] = 46677,	-- Prick of a Thistle
 					["classes"]= { 11 },	-- Druid
 					["lvl"] = 110,
-					["qgs"] = {
-						120070,	-- Thisalee Crow
-						120084,	-- Druid of the Talon
+					["providers"] = {
+						{ "n", 120070 },	-- Thisalee Crow
+						{ "n", 120084 },	-- Druid of the Talon
 					},
 					["g"] = {
 						i(147461),	-- Unblemished Leaf of Shaladrassil
 					},
 				}),
 				q(47032, {	-- Legion Threat: Azshara
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47030, {	-- Legion Threat: Dalaran Infiltration
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47031, {	-- Legion Threat: Highmountain
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47033, {	-- Legion Threat: Suramar
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47035, {	-- Legion Threat: The Missing Mage
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47034, {	-- Legion Threat: The Necromancer
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47027, {	-- Legion Threat: Val'sharah
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(46827, {	-- Meld Into the Shadows
-					["qg"] = 117259,	-- Lord Jorach Ravenholdt
+					["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },
 				}),
@@ -230,21 +230,21 @@ _.Zones =
 					["lvl"] = 110,
 					["classes"]= { 11 },	-- Druid
 					["sourceQuest"]	= 46674,	-- The Preservation of Nature
-					["qgs"] = {
-						120070,	-- Thisalee Crow
-						120084,	-- Druid of the Talon
+					["providers"] = {
+						{ "n", 120070 },	-- Thisalee Crow
+						{ "n", 120084 },	-- Druid of the Talon
 					},
 				}),
 				q(46253, {	-- Pillars of Creation
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 				}),
 				q(46677, {	-- Prick of a Thistle
 					["lvl"] = 110,
 					["classes"]= { 11 },	-- Druid
-					["qgs"] = {
-						120070,	-- Thisalee Crow
-						120084,	-- Druid of the Talon
+					["providers"] = {
+						{ "n", 120070 },	-- Thisalee Crow
+						{ "n", 120084 },	-- Druid of the Talon
 					},
 					["sourceQuests"] = {
 						46676,	-- Nature's Touch
@@ -252,27 +252,27 @@ _.Zones =
 					},
 				}),
 				q(42074, {	-- Return of the Light
-					["qg"] = 106011,	-- Jace Darkweaver
+					["provider"] = { "n", 106011 },	-- Jace Darkweaver
 					["classes"] = { 5 },
 				}),
 				q(47067, {	-- Seeking Lost Knowledge
 					["u"] = 2,
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(46317, {	-- Talon's Call
-					["qg"] = 118105,	-- Grovewarden Proudhorn
+					["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
 					["classes"] = { 11 },  -- Druid
 				}),
 				q(47000, {	-- The Council's Call
-					["qg"] = 116302,	-- Archmage Khadgar
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						45030,	-- The Fel-Etched Bone
 						46765,	-- The Broken Shore: Investigating the Legion
 					},
 				}),
 				q(54120, {	-- To Orgrimmar
-					["qg"] = 145965,	-- Spirit of Vol'jin
+					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
 					["lvl"] = 120,
 					["coord"] = { 62.3, 30.4, 646 },
 					["races"] = HORDE_ONLY,
@@ -282,13 +282,13 @@ _.Zones =
 					["lvl"] = 110,
 					["classes"]= { 11 },	-- Druid
 					["sourceQuest"]	= 46674,	-- The Preservation of Nature
-					["qgs"] = {
-						120070,	-- Thisalee Crow
-						120084,	-- Druid of the Talon
+					["providers"] = {
+						{ "n", 120070 },	-- Thisalee Crow
+						{ "n", 120084 },	-- Druid of the Talon
 					},
 				}),
 				q(53778, {	-- Where He Fell
-					["qg"] = 145965,	-- Spirit of Vol'jin
+					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
 					["lvl"] = 120,
 					["coord"] = { 63.2, 33.3, 646 },
 					["races"] = HORDE_ONLY,
@@ -296,27 +296,27 @@ _.Zones =
 				}),
 				i(143559, {	-- Wyrmtongue's Cache Key
 					q(46499, {	-- Spiders, Huh?
-						["qg"] = 119886,	-- Excavator Karla
+						["provider"] = { "n", 119886 },	-- Excavator Karla
 						["sourceQuests"] = { 46734 },	-- Assault on Brokeen Shore
 					}),
 					q(46501, {	-- Grave Robbin'
-						["qg"] = 119886,	-- Excavator Karla
+						["provider"] = { "n", 119886 },	-- Excavator Karla
 						["sourceQuests"] = { 46499 },	-- Spiders, Huh?
 					}),
 					q(46509, {	-- Tomb Raidering
-						["qg"] = 119886,	-- Excavator Karla
+						["provider"] = { "n", 119886 },	-- Excavator Karla
 						["sourceQuests"] = { 46501 },	-- Grave Robbin'
 					}),
 					q(46510, {	-- Ship Graveyard
-						["qg"] = 119886,	-- Excavator Karla
+						["provider"] = { "n", 119886 },	-- Excavator Karla
 						["sourceQuests"] = { 46509 },	-- Tomb Raidering
 					}),
 					q(46511, {	-- We're Treasure Hunters
-						["qg"] = 119886,	-- Excavator Karla
+						["provider"] = { "n", 119886 },	-- Excavator Karla
 						["sourceQuests"] = { 46510 },	-- Ship Graveyard
 					}),
 					q(46666, {	-- The Motherlode
-						["qg"] = 119886,	-- Excavator Karla
+						["provider"] = { "n", 119886 },	-- Excavator Karla
 						["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
 					}),
 				}),
@@ -324,7 +324,7 @@ _.Zones =
 				q(44057),	-- A "Noble" Event
 				q(45571),	-- A Bit of Espionage
 				q(44720, {	-- A Call to Action
-					["qg"] = 119531,	-- Muninn
+					["provider"] = { "n", 119531 },	-- Muninn
 				}),
 				q(45343),	-- A Curious Contagion
 				q(46268, {	-- A Found Memento
@@ -340,7 +340,7 @@ _.Zones =
 				q(42708),	-- A Personal Request
 ]]--				
 				q(47097, {	-- A Walk to Remember
-					["qg"] = 121224,	-- Anduin Wrynn
+					["provider"] = { "n", 121224 },	-- Anduin Wrynn
 					["coord"] = { 41.4, 59.4, 646 },
 					["sourceQuest"] = 47202,	-- A Personal Message
 					["races"] = ALLIANCE_ONLY,
@@ -499,7 +499,7 @@ _.Zones =
 				q(46333),	-- Livin' on the Ledge
 ]]--
 				q(47112, {	-- Lost Souls
-					["qg"] = 121226,	-- Anduin Wrynn
+					["provider"] = { "n", 121226 },	-- Anduin Wrynn
 					["coord"] = { 52.6, 48.4, 646 },
 					["sourceQuest"] = 47097,	-- A Walk to Remember
 					["races"] = ALLIANCE_ONLY,
@@ -605,7 +605,7 @@ _.Zones =
 				q(46246),	-- Strike Them Down
 ]]--
 				q(46272, {	-- Summons to the Keep
-					["qg"] = 120281,	-- Captain Shwayder
+					["provider"] = { "n", 120281 },	-- Captain Shwayder
 					["coord"] = { 41.6, 59.6, 646 },
 				--	["sourceQuest"] = 40755,	-- Hiding in the Stacks		-- Need to be confirmed
 					["races"] = ALLIANCE_ONLY,
@@ -648,7 +648,7 @@ _.Zones =
 				q(42537),	-- The King Rises
 ]]--
 				q(46282, {	-- The King's Path
-					["qg"] = 121237,	-- Anduin Wrynn
+					["provider"] = { "n", 121237 },	-- Anduin Wrynn
 					["coord"] = { 58.2, 26.6, 646 },
 					["sourceQuest"] = 47112,	-- Lost Souls
 					["races"] = ALLIANCE_ONLY,

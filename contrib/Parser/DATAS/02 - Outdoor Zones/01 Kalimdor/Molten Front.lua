@@ -82,7 +82,7 @@ _.Zones =
 					n(-17, {	-- Quests
 						{	-- Additional Armaments
 							["questID"] = 29281,
-							["qg"] = 53214,	-- Damek Bloombeard
+							["provider"] = { "n", 53214 },	-- Damek Bloombeard
 							["coord"] = { 47.0, 90.0, 338 },
 							["sourceQuests"] = {
 								29181,	-- Druids of the Talon
@@ -91,7 +91,7 @@ _.Zones =
 						},
 						{	-- Agressive Growth
 							["questID"] = 29139,
-							["qg"] = 52467,	-- Rayne Feathersong
+							["provider"] = { "n", 52467 },	-- Rayne Feathersong
 							["coord"] = { 48.5, 86.2, 338 },
 							["isDaily"] = true,
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -101,7 +101,7 @@ _.Zones =
 						},
 						{	-- Breach in the Defenses
 							["questID"] = 29137,
-							["qg"] = 52824,	-- General Taldris Moonfall
+							["provider"] = { "n", 52824 },	-- General Taldris Moonfall
 							["coord"] = { 45.5, 85.8, 338 },
 							["isDaily"] = true,
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -111,7 +111,7 @@ _.Zones =
 						},
 						{	-- Burn Victims
 							["questID"] = 29138,
-							["qg"] = 53080,	-- Captain Irontree
+							["provider"] = { "n", 53080 },	-- Captain Irontree
 							["coord"] = { 46.8, 90.0, 338 },
 							["isDaily"] = true,
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -121,7 +121,7 @@ _.Zones =
 						},
 						{	-- Calling the Ancients
 							["questID"] = 29283,
-							["qg"] = 53882,	-- Varlan Highbough
+							["provider"] = { "n", 53882 },	-- Varlan Highbough
 							["coord"] = { 44.4, 88.4, 338 },
 							["sourceQuests"] = {
 								29181,	-- Druids of the Talon
@@ -130,7 +130,7 @@ _.Zones =
 						},
 						{	-- Druids of the Talon
 							["questID"] = 29181,
-							["qg"] = 52135,	-- Malfurion Stormrage
+							["provider"] = { "n", 52135 },	-- Malfurion Stormrage
 							["coord"] = { 47.0, 91.3, 338 },
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
 							["g"] = {
@@ -142,7 +142,7 @@ _.Zones =
 						},
 						{	-- Elemental Bonds: Fury
 							["questID"] = 29330,
-							["qg"] = 53925,	-- Aggra
+							["provider"] = { "n", 53925 },	-- Aggra
 							["coord"] = { 51.4, 25.7, 338 },
 							["sourceQuest"] = 29338,	-- Into Unrelenting Flame
 						},
@@ -153,7 +153,7 @@ _.Zones =
 						},
 						{	-- Filling the Moonwell
 							["questID"] = 29279,
-							["qg"] = 53881,	-- Ayla Shadowstorm
+							["provider"] = { "n", 53881 },	-- Ayla Shadowstorm
 							["coord"] = { 47.0, 90.0, 338 },
 							["sourceQuests"] = {
 								29181,	-- Druids of the Talon
@@ -162,7 +162,7 @@ _.Zones =
 						},
 						{	-- Hostile Elements
 							["questID"] = 29179,
-							["qg"] = 52824,	-- General Taldris Moonfall
+							["provider"] = { "n", 52824 },	-- General Taldris Moonfall
 							["coord"] = { 45.5, 85.8, 338 },
 							["isDaily"] = true,
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -172,13 +172,13 @@ _.Zones =
 						},
 						{	-- Some Like It Hot
 							["questID"] = 29299,
-							["qg"] = 52489,	-- Avrilla
+							["provider"] = { "n", 52489 },	-- Avrilla
 							["coord"] = { 50.64, 87.31, 338 },
 							["isDaily"] = true,
 						},
 						{	-- The Harder They Fall
 							["questID"] = 29141,
-							["qg"] = 52824,	-- General Taldris Moonfall
+							["provider"] = { "n", 52824 },	-- General Taldris Moonfall
 							["coord"] = { 45.5, 85.8, 338 },
 							["isDaily"] = true,
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -188,7 +188,7 @@ _.Zones =
 						},
 						{	-- The Shadow Wardens
 							["questID"] = 29214,
-							["qg"] = 52135,	-- Malfurion Stormrage
+							["provider"] = { "n", 52135 },	-- Malfurion Stormrage
 							["coord"] = { 47.0, 91.3, 338 },
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
 							["g"] = {
@@ -200,7 +200,7 @@ _.Zones =
 						},
 						{	-- Traitors Return
 							["questID"] = 29142,
-							["qg"] = 52824,	-- General Taldris Moonfall
+							["provider"] = { "n", 52824 },	-- General Taldris Moonfall
 							["coord"] = { 45.5, 85.8, 338 },
 							["isDaily"] = true,
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -210,7 +210,7 @@ _.Zones =
 						},
 						{	-- Wisp Away
 							["questID"] = 29143,
-							["qg"] = 52467,	-- Rayne Feathersong
+							["provider"] = { "n", 52467 },	-- Rayne Feathersong
 							["coord"] = { 48.5, 86.2, 338 },
 							["isDaily"] = true,
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -222,115 +222,115 @@ _.Zones =
 						--[[
 						
 						q(29263, {	-- A Bitter Pill
-							["qg"] = 53196,	-- 
+							["provider"] = { "n", 53196 },	-- 
 						}),
 						q(29244, {	-- A Lieutenant of Flame
-							["qg"] = 52493,	-- 
+							["provider"] = { "n", 52493 },	-- 
 						}),
 						q(29297, {	-- Bye Bye Burdy
-							["qg"] = 54163,	-- 
+							["provider"] = { "n", 54163 },	-- 
 						}),
 						q(29160, {	-- Egg-stinction
-							["qg"] = 52921,	-- 
+							["provider"] = { "n", 52921 },	-- 
 						}),
 						q(29255, {	-- Embergris
-							["qg"] = 52489,	-- 
+							["provider"] = { "n", 52489 },	-- 
 						}),
 						q(29210, {	-- Enduring the Heat
-							["qg"] = 52494,	-- 
+							["provider"] = { "n", 52494 },	-- 
 						}),
 						q(29275, {	-- Fandral's Methods
-							["qg"] = 52478,	-- 
+							["provider"] = { "n", 52478 },	-- 
 						}),
 						q(29265, {	-- Fire Flowers
-							["qg"] = 52444,	-- 
+							["provider"] = { "n", 52444 },	-- 
 						}),
 						q(29290, {	-- Fire in the Skies
-							["qg"] = 52491,	-- 
+							["provider"] = { "n", 52491 },	-- 
 						}),
 						q(29264, {	-- Flamewakers of the Molten Flow
-							["qg"] = 52444,	-- 
+							["provider"] = { "n", 52444 },	-- 
 						}),
 						q(29274, {	-- Hounds of Shannox
-							["qg"] = 52478,	-- 
+							["provider"] = { "n", 52478 },	-- 
 						}),
 						q(29273, {	-- How Hot
-							["qg"] = 52477,	-- 
+							["provider"] = { "n", 52477 },	-- 
 						}),
 						q(29203, {	-- Into the Depths
-							["qg"] = 52135,	-- 
+							["provider"] = { "n", 52135 },	-- 
 						}),
 						q(29209, {	-- Into the Fiery Depths
-							["qg"] = 52494,	-- 
+							["provider"] = { "n", 52494 },	-- 
 						}),
 						q(29206, {	-- Into the Fire
-							["qg"] = 52824,	-- 
+							["provider"] = { "n", 52824 },	-- 
 						}),
 						q(29254, {	-- Little Lasher
-							["qg"] = 52489,	-- 
+							["provider"] = { "n", 52489 },	-- 
 						}),
 						q(29278, {	-- Living Obsidium
-							["qg"] = 53196,	-- 
+							["provider"] = { "n", 53196 },	-- 
 						}),
 						q(29289, {	-- Mother's Malice
-							["qg"] = 52491,	-- 
+							["provider"] = { "n", 52491 },	-- 
 						}),
 						q(29272, {	-- Need... Water... Badly...
-							["qg"] = 53233,	-- 
+							["provider"] = { "n", 53233 },	-- 
 						}),
 						q(29287, {	-- Peaked Interest
-							["qg"] = 52491,	-- 
+							["provider"] = { "n", 52491 },	-- 
 						}),
 						q(29249, {	-- Planting Season
-							["qg"] = 52489,	-- 
+							["provider"] = { "n", 52489 },	-- 
 						}),
 						q(29159, {	-- Pyrorachnophobia
-							["qg"] = 52921,	-- 
+							["provider"] = { "n", 52921 },	-- 
 						}),
 						q(29293, {	-- Singed Wings
-							["qg"] = 53259,	-- 
+							["provider"] = { "n", 53259 },	-- 
 						}),
 						q(29211, {	-- Solar Core Destruction
-							["qg"] = 52494,	-- 
+							["provider"] = { "n", 52494 },	-- 
 						}),
 						q(29288, {	-- Starting Young
-							["qg"] = 52491,	-- 
+							["provider"] = { "n", 52491 },	-- 
 						}),
 						q(29257, {	-- Steal Magmolias
-							["qg"] = 52489,	-- 
+							["provider"] = { "n", 52489 },	-- 
 						}),
 						q(29243, {	-- Strike at the Heart
-							["qg"] = 52495,	-- 
+							["provider"] = { "n", 52495 },	-- 
 						}),
 						q(29305, {	-- Strike at the Heart
-							["qg"] = 52490,	-- 
+							["provider"] = { "n", 52490 },	-- 
 						}),
 						q(29296, {	-- Territorial Birds
-							["qg"] = 53259,	-- 
+							["provider"] = { "n", 53259 },	-- 
 						}),
 						q(29295, {	-- The Bigger They Are
-							["qg"] = 53304,	-- 
+							["provider"] = { "n", 53304 },	-- 
 						}),
 						q(29304, {	-- The Dogs of War
-							["qg"] = 52824,	-- 
+							["provider"] = { "n", 52824 },	-- 
 						}),
 						q(29276, {	-- The Flame Spider Queen
-							["qg"] = 52477,	-- 
+							["provider"] = { "n", 52477 },	-- 
 						}),
 						q(29205, {	-- The Forlorn Spire
-							["qg"] = 52824,	-- 
+							["provider"] = { "n", 52824 },	-- 
 						}),
 						o(208535, {	-- Dried Acorn
 							q(29245),	-- The Mysterious Seed
 						}),
 						q(29204, {	-- The Warden's Charge
-							["qg"] = 52824,	-- 
+							["provider"] = { "n", 52824 },	-- 
 						}),
 						q(29192, {	-- The Wardens are Watching
-							["qg"] = 52494,	-- 
+							["provider"] = { "n", 52494 },	-- 
 						}),
 						q(29189, {	-- Wicked Webs
-							["qg"] = 52921,	-- 
+							["provider"] = { "n", 52921 },	-- 
 						}),
 						]]--
 					}),

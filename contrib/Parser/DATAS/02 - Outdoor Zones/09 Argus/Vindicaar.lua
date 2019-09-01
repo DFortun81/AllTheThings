@@ -108,7 +108,7 @@ _.Zones =
 				}),
 				n(-169, {	-- Emissary Quests
 					q(48642, {	-- Argussian Reach
-						["qg"] = 127151,	-- Toraan the Revered
+						["provider"] = { "n", 127151 },	-- Toraan the Revered
 						["repeatable"] = true,
 						["groups"] = {
 							i(157831, {	-- Scuffed Krokul Cache
@@ -166,7 +166,7 @@ _.Zones =
 						},
 					}),
 					q(48639, {	-- Army of the Light
-						["qg"] = 127120,	-- Vindicator Jaelaana
+						["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
 						["repeatable"] = true,
 						["groups"] = {
 							i(157829, {	-- Gilded Trunk
@@ -225,7 +225,7 @@ _.Zones =
 					}),
 					n(-206, {	-- Paragon
 						q(48973, {	-- Paragon of Argussian Reach
-							["qg"] = 127151,	-- Toraan the Revered
+							["provider"] = { "n", 127151 },	-- Toraan the Revered
 							["repeatable"] = true,
 							["groups"] = {
 								i(152922, {	-- Brittle Krokul Chest
@@ -234,7 +234,7 @@ _.Zones =
 							},
 						}),
 						q(48974, {	-- Paragon of the Army of the Light
-							["qg"] = 127120,	-- Vindicator Jaelaana
+							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
 							["repeatable"] = true,
 							["groups"] = {
 								i(152923, {	-- Gleaming Footlocker
@@ -250,7 +250,7 @@ _.Zones =
 				n(-17, {	-- Quests
 					{	-- A Colorful Key
 						["questID"] = 48075,	-- A Colorful Key
-						["qg"] = 125343,		-- Vorel
+						["provider"] = { "n", 125343 },		-- Vorel
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["g"] = {
@@ -270,7 +270,7 @@ _.Zones =
 					},
 					{	-- A Crowning Achievement
 						["questID"] = 48076,	--  A Crowning Achievment
-						["qg"] = 125343,		-- Vorel
+						["provider"] = { "n", 125343 },		-- Vorel
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["sourceQuests"] = {
 							48075,	-- A Colorful Key
@@ -302,7 +302,7 @@ _.Zones =
 						},
 					}),
 					q(48055, {	-- Empyrial Strength
-						["qg"] = 125341,	-- Khamir
+						["provider"] = { "n", 125341 },	-- Khamir
 						["requireSkill"] = 164,	-- Blacksmithing
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 						["groups"] = {
@@ -334,7 +334,7 @@ _.Zones =
 						},
 					}),
 					q(49445, {	-- The Prime Exchange
-						["qg"] = 129674,	-- Maras
+						["provider"] = { "n", 129674 },	-- Maras
 					}),
 					q(48069, {	-- The Wrench Calls
 						["requireSkill"] = 202,	-- Engineering

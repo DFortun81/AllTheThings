@@ -34,14 +34,14 @@ _.Zones =
 				{	-- A Humble Offering
 					["questID"] = 9248,
 					["u"] = 40,
-					["qg"] = 15282,	-- Aurel Goldleaf
+					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
 					["g"] = {
 						un(2, i(22725)),	-- Band of Cenarius
 					},
 				},
 				{	-- A Terrible Purpose
 					["questID"] = 8287,
-					["qg"] = 15194,	-- Hermit Ortell
+					["provider"] = { "n", 15194 },	-- Hermit Ortell
 					["coord"] = { 68.6, 63.0, 81 },
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 					["g"] = {
@@ -51,7 +51,7 @@ _.Zones =
 				{ 	-- Abyssal Contacts
 					["questID"] = 8361,
 					["u"] = 40,
-					["qg"] = 15306,	-- Bor Wildmane
+					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(2, i(20603, { 	-- Bag of Spoils
 							un(7, i(20694)), 	-- Glowing Black Orb
@@ -63,7 +63,7 @@ _.Zones =
 				{	-- Armaments of War (Warrior)
 					["questID"] = 8316,
 					["u"] = 40,	-- Legacy Quest
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { 1 },	-- Warrior
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
@@ -74,7 +74,7 @@ _.Zones =
 				{	-- Armaments of War (Paladin)
 					["questID"] = 8376,
 					["u"] = 40,	-- Legacy Quest
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { 2 },	-- Paladin
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
@@ -85,7 +85,7 @@ _.Zones =
 				{	-- Armaments of War (Hunter)
 					["questID"] = 8377,
 					["u"] = 40,	-- Legacy Quest
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { 3 },	-- Hunter
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
@@ -96,7 +96,7 @@ _.Zones =
 				{	-- Armaments of War (Rogue)
 					["questID"] = 8378,
 					["u"] = 40,	-- Legacy Quest
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { 4 },	-- Rogue
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
@@ -107,7 +107,7 @@ _.Zones =
 				{	-- Armaments of War (Priest)
 					["questID"] = 8379,
 					["u"] = 40,	-- Legacy Quest
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { 5 },	-- Priest
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
@@ -118,7 +118,7 @@ _.Zones =
 				{	-- Armaments of War (Shaman)
 					["questID"] = 8380,
 					["u"] = 40,	-- Legacy Quest
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { 7 },	-- Shaman
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
@@ -129,7 +129,7 @@ _.Zones =
 				{	-- Armaments of War (Mage, Warlock)
 					["questID"] = 8381,
 					["u"] = 40,	-- Legacy Quest
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { 8, 9 },	-- Mage, Warlock
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
@@ -141,7 +141,7 @@ _.Zones =
 				{	-- Armaments of War (Druid)
 					["questID"] = 8382,
 					["u"] = 40,	-- Legacy Quest
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { 11 },	-- Druid
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
@@ -176,19 +176,19 @@ _.Zones =
 				},
 				{	-- Blessed Blade of the Windseeker
 					["questID"] = 43002,
-					["qg"] = 14347,	-- Highlord Demitrian
+					["provider"] = { "n", 14347 },	-- Highlord Demitrian
 					["coord"] = { 29.6, 10.6, 81 },
 					["classes"]= { 7 },	-- Shaman
 				},
 				{	-- Breaking the Code
 					["questID"] = 8310,
-					["qg"] = 15171,	-- Frankal Stonebridge
+					["provider"] = { "n", 15171 },	-- Frankal Stonebridge
 					["coord"] = { 46.0, 79.4, 81 },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				},
 				{	-- Call of the Warmatron
 					["questID"] = 28865,
-					["qg"] = 50587,	-- Okril'on Mage
+					["provider"] = { "n", 50587 },	-- Okril'on Mage
 					["coord"] = { 53.2, 33.4, 81 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -196,7 +196,7 @@ _.Zones =
 				{	-- Champion's Battlegear
 					["questID"] = 8573,
 					["u"] = 40,
-					["qg"] = 15176,	-- Vargus
+					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
 						un(2, i(21180)),	-- Earthstrike
 						un(2, i(21188)),	-- Fist of Cenarius
@@ -205,18 +205,18 @@ _.Zones =
 				},
 				{	-- Deadly Desert Venom
 					["questID"] = 8277,
-					["qg"] = 15189,	-- Beetix Ficklespragg
+					["provider"] = { "n", 15189 },	-- Beetix Ficklespragg
 					["coord"] = { 55.2, 36.3, 81 },
 				},
 				{	-- Dearest Natalia
 					["questID"] = 8304,
-					["qg"] = 15181,	-- Commander Mar'alith
+					["provider"] = { "n", 15181 },	-- Commander Mar'alith
 					["coord"] = { 53.2, 32.5, 81 },
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 				},
 				{	-- Desert Recipe
 					["questID"] = 8307,
-					["qg"] = 15174,	-- Calandrath
+					["provider"] = { "n", 15174 },	-- Calandrath
 					["coord"] = { 55.4, 36.6, 81 },
 					["description"] = "This quest is invisible until you reach Cooking 285.",
 					["requiredSkill"] = 185,	-- Cooking
@@ -230,7 +230,7 @@ _.Zones =
 					["g"] = {
 						{	-- Encrypted Twilight Texts
 							["questID"] = 8319,	-- Encrypted Twilight Texts
-							["qg"] = 15306,		-- Bor Wildmane
+							["provider"] = { "n", 15306 },		-- Bor Wildmane
 							["repeatable"] = true,
 							["coords"] = {
 								{ 53.15, 35.12, 81 },
@@ -241,14 +241,14 @@ _.Zones =
 						},
 						{	-- Secret Communication
 							["questID"] = 8318,	-- Secret Communication
-							["qg"] = 15306,		-- Bor Wildmane
+							["provider"] = { "n", 15306 },		-- Bor Wildmane
 							["coords"] = {
 								{ 53.15, 35.12, 81 },
 							},
 						},
 						{	-- Still Believing
 							["questID"] = 8324,
-							["qg"] = 15194,	-- Hermit Ortell
+							["provider"] = { "n", 15194 },	-- Hermit Ortell
 							["repeatable"] = true,
 							["coords"] = {
 								{ 68.66, 63.03, 81 },
@@ -291,7 +291,7 @@ _.Zones =
 						},
 						{	-- True Believers
 							["questID"] = 8323,	-- True Believers
-							["qg"] = 15194,		-- Hermit Ortell
+							["provider"] = { "n", 15194 },		-- Hermit Ortell
 							["coords"] = {
 								{ 68.66, 63.03, 81 },
 							},
@@ -303,7 +303,7 @@ _.Zones =
 				},
 				{	-- Glyph Chasing
 					["questID"] = 8309,
-					["qg"] = 15170,	-- Rutgar Glyphshaper
+					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
 					["coord"] = { 46.4, 79.0, 81 },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				},
@@ -317,45 +317,45 @@ _.Zones =
 				},
 				{	-- Kitchen Assistance
 					["questID"] = 8317,
-					["qg"] = 15174,	-- Calandrath
+					["provider"] = { "n", 15174 },	-- Calandrath
 					["coord"] = { 55.4, 36.6, 81 },
 					["sourceQuest"] = 8313,	-- Sharing the Knowledge
 					["requiredSkill"] = 185,	-- Cooking
 				},
 				{	-- Nethergarde Needs You!
 					["questID"] = 28867,
-					["qg"] = 50588,	-- Nethergarde Mage
+					["provider"] = { "n", 50588 },	-- Nethergarde Mage
 					["coord"] = { 53.4, 33.4, 81 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				},
 				{	-- Noggle's Last Hope
 					["questID"] = 8278,
-					["qg"] = 15189,	-- Beetix Ficklespragg
+					["provider"] = { "n", 15189 },	-- Beetix Ficklespragg
 					["coord"] = { 55.3, 36.3, 81 },
 					["sourceQuest"] = 8277,	-- Deadly Desert Venom
 				},
 				{	-- Noggle's Lost Satchel
 					["questID"] = 8282,
-					["qg"] = 15190,	-- Noggle Ficklespragg
+					["provider"] = { "n", 15190 },	-- Noggle Ficklespragg
 					["coord"] = { 55.2, 36.1, 81 },
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 				},
 				{	-- Report to General Kirika
 					["questID"] = 9416,
-					["qg"] = 17081,	-- Scout Bloodfist
+					["provider"] = { "n", 17081 },	-- Scout Bloodfist
 					["coord"] = { 53.0, 34.6, 81 },
 					["races"] = HORDE_ONLY,
 				},
 				{	-- Report to Marshal Bluewall
 					["questID"] = 9415,
-					["qg"] = 17082,	-- Rifleman Torrig
+					["provider"] = { "n", 17082 },	-- Rifleman Torrig
 					["coord"] = { 54.5, 32.9, 81 },
 					["races"] = ALLIANCE_ONLY,
 				},
 				{	-- Securing the Supply Lines
 					["questID"] = 8280,
-					["qg"] = 15191,	-- Windcaller Proudhorn
+					["provider"] = { "n", 15191 },	-- Windcaller Proudhorn
 					["coord"] = { 54.9, 36.0, 81 },
 					["sourceQuests"] = {
 						28528,	-- Hero's Call: Silithus!
@@ -378,7 +378,7 @@ _.Zones =
 				{ 	-- Scepter of the Council
 					["questID"] = 8352,
 					["u"] = 40,
-					["qg"] = 15306,	-- Bor Wildmane
+					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(2, i(20602, { 	-- Chest of Spoils
 							un(7, i(20722)), 	-- Crystal Slugthrower
@@ -390,7 +390,7 @@ _.Zones =
 				{ 	-- Secrets of the Colossus - Ashi - Was only possible during the 10 hours of AQ opening
 					["questID"] = 8857,
 					["u"] = 40,
-					["qg"] = 15798,	-- Colossus Researcher Nestor
+					["provider"] = { "n", 15798 },	-- Colossus Researcher Nestor
 					["g"] = {
 						un(2, i(21528)), 	-- Colossal Bag of Loot
 					},
@@ -398,7 +398,7 @@ _.Zones =
 				{	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
 					["questID"] = 8858,
 					["u"] = 40,
-					["qg"] = 15799,	-- Colossus Researcher Eazel
+					["provider"] = { "n", 15799 },	-- Colossus Researcher Eazel
 					["g"] = {
 						un(2, i(21528)), 	-- Colossal Bag of Loot
 					},
@@ -406,7 +406,7 @@ _.Zones =
 				{	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
 					["questID"] = 8859,
 					["u"] = 40,
-					["qg"] = 15797,	-- Colossus Researcher Sophia
+					["provider"] = { "n", 15797 },	-- Colossus Researcher Sophia
 					["g"] = {
 						un(2, i(21528)), 	-- Colossal Bag of Loot
 					},
@@ -414,7 +414,7 @@ _.Zones =
 				{	-- Signet of the Dukes
 					["questID"] = 8348,
 					["u"] = 40,
-					["qg"] = 15306,	-- Bor Wildmane
+					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(2, i(20601, { 	-- Sack of Spoils
 							un(7, i(20696)), 	-- Crystal Spiked Maul
@@ -425,7 +425,7 @@ _.Zones =
 				{	-- Stalwart's Battlegear
 					["questID"] = 8574,
 					["u"] = 40,
-					["qg"] = 15176,	-- Vargus
+					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
 						un(2, i(21184)),	-- Deeprock Bracers
 						un(2, i(21185)),	-- Earthcalm Orb
@@ -435,26 +435,26 @@ _.Zones =
 				},
 				{	-- Stepping Up Security
 					["questID"] = 8281,
-					["qg"] = 15191,	-- Windcaller Proudhorn
+					["provider"] = { "n", 15191 },	-- Windcaller Proudhorn
 					["coord"] = { 54.8, 36.0, 81 },
 					["sourceQuest"] = 8280,	-- Securing the Suppy Lines
 				},
 				{	-- The Calling
 					["questID"] = 8315,
 					["u"] = 40,	-- Legacy Quest
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
 				},
 				{	-- The Deserter
 					["questID"] = 8285,
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["coord"] = { 53.6, 35.3, 81 },
 					["sourceQuest"] = 8284,	-- The Twilight Mystery
 				},
 				{	-- The Hand of the Righteous (until Neutral)
 					["questID"] = 8302,
 					["u"] = 40,
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
+					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 					["repeatable"] = true,
 					["g"] = {
 						un(2, i(20403)),	-- 	Proxy of Nozdormu
@@ -463,7 +463,7 @@ _.Zones =
 				{	-- The Path of the Righteous
 					["questID"] = 8301,
 					["u"] = 40,
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
+					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 					["g"] = {
 						un(2, i(20402)),	-- 	Agent of Nozdormu
 					},
@@ -471,7 +471,7 @@ _.Zones =
 				{	-- The Perfect Poison
 					["questID"] = 9023,
 					["u"] = 40,
-					["qg"] = 16091,	-- Dirk Thunderwood
+					["provider"] = { "n", 16091 },	-- Dirk Thunderwood
 					["g"] = {
 						un(2, i(22348)),	-- Doomulus Prime
 						un(2, i(22347)),	-- Fahrad's Reloading Repeater
@@ -483,24 +483,24 @@ _.Zones =
 				},
 				{	-- The Twilight Lexicon
 					["questID"] = 8279,
-					["qg"] = 15194,	-- Hermit Ortell
+					["provider"] = { "n", 15194 },	-- Hermit Ortell
 					["coord"] = { 68.6, 63.0, 81 },
 					["sourceQuest"] = 8285,	-- The Deserter
 				},
 				{	-- The Twilight Mystery
 					["questID"] = 8284,
-					["qg"] = 15183,	-- Geologist Larksbane
+					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["coord"] = { 53.6, 35.3, 81 },
 					["sourceQuest"] = 8321,	-- Vyral the Vile -- this is wrong. Possibly unlocks after "Dearest Natalia" ?
 				},
 				{	-- Twilight Geolords
 					["questID"] = 8320,
-					["qg"] = 15270,	-- Huum Wildmane
+					["provider"] = { "n", 15270 },	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, 81 },
 				},
 				{	-- Unraveling the Mystery
 					["questID"] = 8314,
-					["qg"] = 15170,	-- Rutgar Glyphshaper
+					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
 					["coord"] = { 46.4, 79.0, 81 },
 					["sourceQuests"] = {
 						8310,	-- Breaking the Code
@@ -510,7 +510,7 @@ _.Zones =
 				{	-- Veteran's Battlegear
 					["questID"] = 8572,
 					["u"] = 40,
-					["qg"] = 15176,	-- Vargus
+					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
 						un(2, i(21182)),	-- Band of Earthen Might
 						un(2, i(21183)),	-- Earthpower Vest
@@ -520,7 +520,7 @@ _.Zones =
 				{	-- Volunteer's Battlegear
 					["questID"] = 8548,
 					["u"] = 40,
-					["qg"] = 15176,	-- Vargus
+					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
 						un(2, i(21179)),	-- Band of Earthen Wrath
 						un(2, i(21187)),	-- Earthweave Cloak
@@ -529,7 +529,7 @@ _.Zones =
 				},
 				{	-- Vyral the Vile
 					["questID"] = 8321,
-					["qg"] = 15270,	-- Huum Wildmane
+					["provider"] = { "n", 15270 },	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, 81 },
 					["sourceQuest"] = 8320,	-- Twilight Geolords
 					["g"] = {

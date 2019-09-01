@@ -7,30 +7,30 @@ _.Zones =
 		m(550, {	-- Nagrand (Draenor)
 			n(-17, { 	-- Quests
 				q(34719, {	-- ... and My Hammer
-					["qg"] = 79743,	-- Vindicator Mo'mor
+					["provider"] = { "n", 79743 },	-- Vindicator Mo'mor
 					["coord"] = { 66.7, 68.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34716,	-- Mo'mor Might Know
 				}),
 				q(34769, {	-- A Choice to Make
-					["qg"] = 79674,	-- Thaelin Darkanvil
+					["provider"] = { "n", 79674 },	-- Thaelin Darkanvil
 					["coord"] = { 63.0, 61.9, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34746,	-- Shields Down!
 				}),
 				q(34899, {	-- A Choice to Make
-					["qg"] = 80140,	-- A Choice to Make
+					["provider"] = { "n", 80140 },	-- A Choice to Make
 					["coord"] = { 82.9, 44.1, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34868,	-- Challenge of the Masters
 				}),
 				q(36284, {	-- A Fascinating Fungus
-					["qg"] = 84861,	-- A Fascinating Fungus
+					["provider"] = { "n", 84861 },	-- A Fascinating Fungus
 					["coord"] = { 86.6, 28.3, 550 },
 					["sourceQuest"] = 35146,	-- The Good Doctor
 				}),
 				q(35632, {	-- A Lesson in Archaeology
-					["qg"] = 79201,	-- Gazmolf Futzwangler
+					["provider"] = { "n", 79201 },	-- Gazmolf Futzwangler
 					["coord"] = { 71.1, 52.3, 550 },
 					["sourceQuests"] = {
 						34809,	-- A Lesson in Mineralogy
@@ -38,12 +38,12 @@ _.Zones =
 					},
 				}),
 				q(34809, {	-- A Lesson in Mineralogy
-					["qg"] = 79201,	-- Gazmolf Futzwangler
+					["provider"] = { "n", 79201 },	-- Gazmolf Futzwangler
 					["coord"] = { 71.1, 52.3, 550 },
 					["sourceQuest"] = 34810,	-- Gazmolf Futzwangler and the Highmaul Crusade
 				}),
 				q(35663, {	-- A Lesson in Teamwork
-					["qg"] = 79201,	-- Gazmolf Futzwangler
+					["provider"] = { "n", 79201 },	-- Gazmolf Futzwangler
 					["coord"] = { 71.1, 52.3, 550 },
 					["sourceQuests"] = {
 						34809,	-- A Lesson in Mineralogy
@@ -56,7 +56,7 @@ _.Zones =
 					},
 				}),
 				q(34894, {	-- A Rare Bloom
-					["qg"] = 80434,	-- Gar'rok
+					["provider"] = { "n", 80434 },	-- Gar'rok
 					["coord"] = { 75.0, 22.7, 550 },
 					["sourceQuest"] = 34943,	-- An Old Friend
 				}),
@@ -68,7 +68,7 @@ _.Zones =
 					},
 				}),
 				q(36711, {	-- Abu'gar
-					["qg"] = 82746,	-- Abu'gar
+					["provider"] = { "n", 82746 },	-- Abu'gar
 					["coords"] = {
 						{ 67.2, 56.0, 550 },	-- Abu'gar
 						{ 65.8, 61.1, 550 },	-- Abu'gar's Vitality
@@ -80,28 +80,28 @@ _.Zones =
 					},
 				}),
 				q(35059, {	-- Along the Riverside
-					["qg"] = 79576,	-- Rangari D'kaan
+					["provider"] = { "n", 79576 },	-- Rangari D'kaan
 					["coord"] = { 63.5, 61.8, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34596,	-- Reglakk's Research
 					["isBreadcrumb"] = true,
 				}),
 				q(35095, {	-- Along the Riverside
-					["qg"] = 80003,	-- Thrall
+					["provider"] = { "n", 80003 },	-- Thrall
 					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34918,	-- Shields Down!
 					["isBreadcrumb"] = true,
 				}),
 				q(36193, {	-- An Act of Kindness
-					["qg"] = 84459,	-- Rangari Saardar
+					["provider"] = { "n", 84459 },	-- Rangari Saardar
 					["coord"] = { 49.4, 16.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 36167,	-- The Trial of Heart
 					["description"] = "Available during |cFFFFD700The Trial of Heart|r.",
 				}),
 				q(34943, {	-- An Old Friend
-					["qg"] = 80595,	-- Kalandrios
+					["provider"] = { "n", 80595 },	-- Kalandrios
 					["coord"] = { 72.7, 19.7, 550 },
 					["sourceQuests"] = {
 						35331,	-- Called to the Throne (alliance)
@@ -109,7 +109,7 @@ _.Zones =
 					},
 				}),
 				q(35169, {	-- And Justice for Thrall
-					["qg"] = 79576,	-- Rangari D'kaan
+					["provider"] = { "n", 79576 },	-- Rangari D'kaan
 					["coord"] = { 63.5, 61.8, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -125,7 +125,7 @@ _.Zones =
 					},
 				}),
 				q(35171, {	-- And Justice for Thrall
-					["qg"] = 80003,	-- Thrall
+					["provider"] = { "n", 80003 },	-- Thrall
 					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -141,14 +141,14 @@ _.Zones =
 					},
 				}),
 				q(39299, {	-- Black Marketeering
-					["qg"] = 83888,	-- Mister Knuckles
+					["provider"] = { "n", 83888 },	-- Mister Knuckles
 					["coord"] = { 53.8, 15.0, 550 },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				q(34953, {	-- Blood of the Burning Blade
-					["qg"] = 80161,	-- Lantresor of the Blade
+					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 85.4, 54.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 34952 },	-- The Friend o' My Enemy
@@ -156,7 +156,7 @@ _.Zones =
 					["description"] = "Only available if you do not accept |cFFFFD700The Friend o' My Enemy|r from Hansel Heavyhands.",
 				}),
 				q(35143, {	-- Blood of the Burning Blade
-					["qg"] = 80161,	-- Lantresor of the Blade
+					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 85.4, 54.5, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34808,	-- More Lazy Peons
@@ -164,38 +164,38 @@ _.Zones =
 					["description"] = "Only available if you do not accept |cFFFFD700The Friend of My Enemy|r from Thrall.",
 				}),
 				q(35921, {	-- Bread and Circuses
-					["qg"] = 83606,	-- Lucy Brokerblast
+					["provider"] = { "n", 83606 },	-- Lucy Brokerblast
 					["coord"] = { 63.4, 60.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35062,	-- Lok-rath is Secured
 					["isBreadcrumb"] = true,
 				}),
 				q(35922, {	-- Bread and Circuses
-					["qg"] = 83606,	-- Lucy Brokerblast
+					["provider"] = { "n", 83606 },	-- Lucy Brokerblast
 					["coord"] = { 82.8, 46.8, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35098,	-- Lok-rath is Secured
 					["isBreadcrumb"] = true,
 				}),
 				q(35973, {	-- Brokyo Beatdown
-					["qg"] = 76508,	-- Dizzy Sparkshift
+					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
 					["coord"] = { 40.6, 13.0, 550 },
 					["sourceQuest"] = 37511,	-- Dizzy Sparkshift
 				}),
 				q(35331, {	-- Called to the Throne
-					["qg"] = 82138,	-- Vindicator Nobundo
+					["provider"] = { "n", 82138 },	-- Vindicator Nobundo
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35332,	-- Nobundo Sends Word
 				}),
 				q(34965, {	-- Called to the Throne
-					["qg"] = 80597,	-- Farseer Drek'Thar
+					["provider"] = { "n", 80597 },	-- Farseer Drek'Thar
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34964,	-- The Farseer Awaits
 				}),
 				q(35141, {	-- Carrier Has Arrived
-					["qg"] = 81412,	-- Vindicator Yrel
+					["provider"] = { "n", 81412 },	-- Vindicator Yrel
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35140,	-- THAELIN!
 					["coords"] = {
@@ -204,7 +204,7 @@ _.Zones =
 					},
 				}),
 				q(34957, { 	-- Challenge of the Masters
-					["qg"] = 80161,	-- Lantresor of the Blade
+					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 44.8, 19.8, 551 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34956,	-- Meet Me in the Cavern
@@ -216,7 +216,7 @@ _.Zones =
 					},
 				}),
 				q(34868, {	-- Challenge of the Masters
-					["qg"] = 80319,	-- Lantresor of the Blade
+					["provider"] = { "n", 80319 },	-- Lantresor of the Blade
 					["coord"] = { 44.8, 19.7, 551 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34866,	-- Meet Me in the Cavern
@@ -228,30 +228,30 @@ _.Zones =
 					},
 				}),
 				q(37293, {	-- Clearing the Mist
-					["qg"] = 88240,	-- Shadow Hunter Mok'e
+					["provider"] = { "n", 88240 },	-- Shadow Hunter Mok'e
 					["coord"] = { 52.3, 19.1, 550 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35170, {	-- Consumed by Vengeance
-					["qg"] = 82688,	-- Olgra
+					["provider"] = { "n", 82688 },	-- Olgra
 					["coord"] = { 74.1, 37.5, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35167,	-- Lost in Nagrand
 				}),
 				q(35398, {	-- Dark Binding
-					["qg"] = 82179,	-- Vindicator Nobundo
+					["provider"] = { "n", 82179 },	-- Vindicator Nobundo
 					["coord"] = { 55.5, 55.9, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 				}),
 				q(35144, {	-- Dark Binding
-					["qg"] = 81335,	-- Farseer Drek'Thar
+					["provider"] = { "n", 81335 },	-- Farseer Drek'Thar
 					["coord"] = { 55.5, 55.9, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 				}),
 				q(34512, {	-- Declawing the Competition
-					["qg"] = 79310,	-- Pyxni Pennypocket
+					["provider"] = { "n", 79310 },	-- Pyxni Pennypocket
 					["coord"] = { 78.5, 48.5, 550 },
 					["sourceQuests"] = {
 						34769,	-- A Choice to Make (alliance)
@@ -259,7 +259,7 @@ _.Zones =
 					},
 				}),
 				q(36285, {	-- Dirgemire
-					["qg"] = 84861,	-- A Fascinating Fungus
+					["provider"] = { "n", 84861 },	-- A Fascinating Fungus
 					["coord"] = { 86.6, 28.3, 550 },
 					["sourceQuests"] = {
 						36284,	-- A Fascinating Fungus
@@ -280,7 +280,7 @@ _.Zones =
 					},
 				}),
 				q(37511, {	-- Dizzy Sparkshift
-					["qg"] = 83734,	-- Greblin Fastfizzle
+					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["coord"] = { 39.6, 24.4, 550 },
 					["sourceQuests"] = {
 						35972,	-- Ogre Onslaught
@@ -288,7 +288,7 @@ _.Zones =
 					},
 				}),
 				q(34881, {	-- Earth, Wind and Fire...and Water
-					["qg"] = 80593,	-- Incineratus
+					["provider"] = { "n", 80593 },	-- Incineratus
 					["coord"] = { 71.3, 17.8, 550 },
 					["sourceQuests"] = {
 						35331,	-- Called to the Throne (alliance)
@@ -303,29 +303,29 @@ _.Zones =
 					},
 				}),
 				q(35023, {	-- Echoes of the Past
-					["qg"] = 80866,	-- Dahaka
+					["provider"] = { "n", 80866 },	-- Dahaka
 					["coord"] = { 40.3, 56.7, 550 },
 					["sourceQuest"] = 35393,	-- Spiritual Matters
 				}),
 				q(35333, {	-- Elemental Attunement
-					["qg"] = 82138,	-- Vindicator Nobundo
+					["provider"] = { "n", 82138 },	-- Vindicator Nobundo
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35331,	-- Called to the Throne
 				}),
 				q(34891, {	-- Elemental Attunement
-					["qg"] = 80597,	-- Farseer Drek'Thar
+					["provider"] = { "n", 80597 },	-- Farseer Drek'Thar
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34965,	-- Called to the Throne
 				}),
 				q(36221, {	-- Entry Fee
-					["qg"] = 84720,	-- Kroggol the Wall
+					["provider"] = { "n", 84720 },	-- Kroggol the Wall
 					["coord"] = { 56.8, 19.2, 550 },
 					["sourceQuest"] = 36220,	-- How Tough Are You?
 				}),
 				q(35596, {	-- Feline Friends Forever
-					["qg"] = 80083,	-- Goldmane the Skinner
+					["provider"] = { "n", 80083 },	-- Goldmane the Skinner
 					["crs"] = { 80080 },	-- Bolkar the Cruel
 					["coord"] = { 40.4, 76.1, 550 },
 					["description"] = "Kill |cFFFFD700Bolkar the Cruel|r to loot |cFFFFD700Goldmane's Cage Key|r, then use the key on the cage.";
@@ -344,12 +344,12 @@ _.Zones =
 					},
 				}),
 				q(34819, {	-- Fruitful Ventures
-					["qg"] = 81955,	-- Digrem Orebar
+					["provider"] = { "n", 81955 },	-- Digrem Orebar
 					["coord"] = { 79.2, 52.6, 550 },
 					["sourceQuest"] = 34869,	-- Tastes Like Chicken
 				}),
 				q(34810, {	-- Gazmolf Futzwangler and the Highmaul Crusade
-					["qg"] = 80184,	-- Gabby Goldsnap
+					["provider"] = { "n", 80184 },	-- Gabby Goldsnap
 					["coord"] = { 79.8, 48.8, 550 },
 					["sourceQuests"] = {
 						34769,	-- A Choice to Make (alliance)
@@ -357,7 +357,7 @@ _.Zones =
 					},
 				}),
 				q(34515, {	-- Gobnapped
-					["qg"] = 79312,	-- Greezlex Fizzpinch
+					["provider"] = { "n", 79312 },	-- Greezlex Fizzpinch
 					["coord"] = { 78.9, 58.8, 550 },
 					["sourceQuest"] = 34598,	-- The Missing Caravan
 					["g"] = {
@@ -367,7 +367,7 @@ _.Zones =
 					},
 				}),
 				q(35024, {	-- Golmash Hellscream
-					["qg"] = 80864,	-- Gar'rok
+					["provider"] = { "n", 80864 },	-- Gar'rok
 					["coord"] = { 40.4, 56.7, 550 },
 					["sourceQuests"] = {
 						35023,	-- Echoes of the Past
@@ -382,12 +382,12 @@ _.Zones =
 					},
 				}),
 				q(34811, {	-- Good Help is Hard to Find
-					["qg"] = 82658,	-- Trixi Leroux
+					["provider"] = { "n", 82658 },	-- Trixi Leroux
 					["coord"] = { 71.1, 52.4, 550 },
 					["sourceQuest"] = 34810,	-- Gazmolf Futzwangler and the Highmaul Crusade
 				}),
 				q(35945, {	-- Greblin Fastfizzle
-					["qg"] = 83686,	-- Greblin Fastfizzle
+					["provider"] = { "n", 83686 },	-- Greblin Fastfizzle
 					["coord"] = { 39.6, 24.6, 550 },
 					["sourceQuests"] = {
 						35985,	-- Garrison Campaign: The Broken Precipice (alliance)
@@ -395,7 +395,7 @@ _.Zones =
 					},
 				}),
 				q(34893, {	-- Guardians of the Plateau
-					["qg"] = 80593,	-- Incineratus
+					["provider"] = { "n", 80593 },	-- Incineratus
 					["coord"] = { 71.3, 17.8, 550 },
 					["sourceQuests"] = {
 						35331,	-- Called to the Throne (alliance)
@@ -403,7 +403,7 @@ _.Zones =
 					},
 				}),
 				q(34932, {	-- Guise of the Deceiver
-					["qg"] = 80434,	-- Gar'rok
+					["provider"] = { "n", 80434 },	-- Gar'rok
 					["coord"] = { 75.0, 22.7, 550 },
 					["sourceQuest"] = 34894,	-- A Rare Bloom
 				}),
@@ -433,18 +433,18 @@ _.Zones =
 					["coord"] = { 87.7, 46.8, 550 },
 				}),
 				q(36220, {	-- How Tough Are You?
-					["qg"] = 84637,	-- Gurgthock
+					["provider"] = { "n", 84637 },	-- Gurgthock
 					["coord"] = { 63.0, 36.0, 550 },
 					["sourceQuests"] = { 36219, 36280, 36281, 36282 },	-- Garrison Campaign: The Ring of Blood (4 different versions... come on, blizzard)
 				}),
 				q(34915, {	-- I Help Ya Kill Dem
-					["qg"] = 80429,	-- Shadow Hunter Kajassa
+					["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
 					["coord"] = { 68.5, 64.5, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34914,	-- Target of Opportunity
 				}),
 				q(35068, {	-- If They Won't Surrender...
-					["qg"] = 81097,	-- Lieutenant K. K. Lee
+					["provider"] = { "n", 81097 },	-- Lieutenant K. K. Lee
 					["coord"] = { 55.4, 42.0, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35060,	-- Terms of Surrender
@@ -456,7 +456,7 @@ _.Zones =
 					},
 				}),
 				q(35100, {	-- If They Won't Surrender...
-					["qg"] = 81194,	-- Senior Sergeant Igerdes
+					["provider"] = { "n", 81194 },	-- Senior Sergeant Igerdes
 					["coord"] = { 55.4, 42.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35096,	-- Terms of Surrender
@@ -468,13 +468,13 @@ _.Zones =
 					},
 				}),
 				q(35840, {	-- Intercepting the Orders
-					["qg"] = 83053,	-- Flint Shadowmore
+					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["coord"] = { 41.8, 37.0, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35839,	-- Plans of War
 				}),
 				q(35846, {	-- Intercepting the Orders
-					["qg"] = 83054,	-- Shadow Hunter Kajassa
+					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["coord"] = { 41.8, 37.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35845,	-- Plans of War
@@ -483,7 +483,7 @@ _.Zones =
 					["coord"] = { 40.0, 74.4, 550 },
 				}),
 				q(35357, {	-- King of the Breezestriders
-					["qg"] = 82094,	-- Rangari Laara
+					["provider"] = { "n", 82094 },	-- Rangari Laara
 					["coord"] = { 63.4, 61.4, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35356,	-- Someone's Missing Arrow
@@ -495,7 +495,7 @@ _.Zones =
 					},
 				}),
 				q(35378, {	-- King of the Breezestriders
-					["qg"] = 82080,	-- Stalker Ogka
+					["provider"] = { "n", 82080 },	-- Stalker Ogka
 					["coord"] = { 82.5, 43.9, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35377,	-- Someone's Missing Axe
@@ -507,35 +507,35 @@ _.Zones =
 					},
 				}),
 				q(35022, {	-- Lighting the Darkness
-					["qg"] = 80864,	-- Gar'rok
+					["provider"] = { "n", 80864 },	-- Gar'rok
 					["coord"] = { 40.4, 56.7, 550 },
 					["sourceQuest"] = 35393,	-- Spiritual Matters
 				}),
 				q(35062, {	-- Lok'rath is Secured
-					["qg"] = 81039,	-- Vindicator Yrel
+					["provider"] = { "n", 81039 },	-- Vindicator Yrel
 					["coord"] = { 61.9, 40.5, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35061,	-- The Pride of Lok-rath
 				}),
 				q(35098, {	-- Lok-rath is Secured
-					["qg"] = 81186,	-- Durotan
+					["provider"] = { "n", 81186 },	-- Durotan
 					["coord"] = { 48.5, 48.2, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35097,	-- The Pride of Lok-rath
 				}),
 				q(35167, {	-- Lost in Nagrand
-					["qg"] = 72822,	-- Mankrik
+					["provider"] = { "n", 72822 },	-- Mankrik
 					["coord"] = { 49.2, 47.9, 550 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35928, {	-- Meatgut Needs Bones
-					["qg"] = 82727,	-- Meatgut
+					["provider"] = { "n", 82727 },	-- Meatgut
 					["coord"] = { 78.3, 52.5, 550 },
 					["repeatable"] = true,
 					["sourceQuest"] = 34769,	-- A Choice to Make (todo: verify if needed)
 				}),
 				q(34956, {	-- Meet Me in the Cavern
-					["qg"] = 80161,	-- Lantresor of the Blade
+					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 85.4, 54.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -544,7 +544,7 @@ _.Zones =
 					},
 				}),
 				q(34866, {	-- Meet Me in the Cavern
-					["qg"] = 80161,
+					["provider"] = { "n", 80161 },
 					["coord"] = { 85.4, 54.5, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -553,7 +553,7 @@ _.Zones =
 					},
 				}),
 				q(34716, { 	-- Mo'mor Might Know
-					["qg"] = 79722,	-- Mo'mor Might Know
+					["provider"] = { "n", 79722 },	-- Mo'mor Might Know
 					["coord"] = { 65.8, 68.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34682,	-- Operation: Surprise Party
@@ -565,13 +565,13 @@ _.Zones =
 					},
 				}),
 				q(34808, {	-- More Lazy Peons
-					["qg"] = 80003,	-- Thrall
+					["provider"] = { "n", 80003 },	-- Thrall
 					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34795,	-- The Might of the Warsong
 				}),
 				q(34516, {	-- My Precious!
-					["qg"] = 79899,	-- Bazwix
+					["provider"] = { "n", 79899 },	-- Bazwix
 					["coord"] = { 76.9, 59.2, 550 },
 					["sourceQuest"] = 34598,	-- The Missing Caravan
 				}),
@@ -581,7 +581,7 @@ _.Zones =
 					--["objectID"] = 229344,	-- Buried Timewarped Staff
 				}),
 				q(34900, {	-- New Babies
-					["qg"] = 81955,	-- Digrem Orebar
+					["provider"] = { "n", 81955 },	-- Digrem Orebar
 					["coord"] = { 79.2, 52.6, 550 },
 					["sourceQuest"] = 34819,	-- Fruitful Ventures
 					["g"] = {
@@ -589,26 +589,26 @@ _.Zones =
 					},
 				}),
 				q(37517, {	-- News for Nixxie
-					["qg"] = 76508,	-- Dizzy Sparkshift
+					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
 					["coord"] = { 40.6, 13.0, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35973,	-- Brokyo Breakdown
 				}),
 				q(37516, {	-- News for Nixxie
-					["qg"] = 76508,	-- Dizzy Sparkshift
+					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
 					["coord"] = { 40.6, 13.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35973,	-- Brokyo Breakdown
 				}),
 				q(35332, {	-- Nobundo Sends Word
-					["qg"] = 79576,	-- Rangari D'kaan
+					["provider"] = { "n", 79576 },	-- Rangari D'kaan
 					["coord"] = { 63.5, 61.8, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34596,	-- Reglakk's Research
 					["isBreadcrumb"] = true,
 				}),
 				q(34955, { 	-- Not Without My Honor
-					["qg"] = 80161,	-- Lantresor of the Blade
+					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 85.4, 54.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
@@ -620,7 +620,7 @@ _.Zones =
 					},
 				}),
 				q(34850, {	-- Not Without My Honor
-					["qg"] = 80161,	-- Lantresor of the Blade
+					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 85.4, 54.5, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
@@ -632,7 +632,7 @@ _.Zones =
 					},
 				}),
 				q(34572, {	-- Obliterating Ogres
-					["qg"] = 79282,	-- Rangari Eleena
+					["provider"] = { "n", 79282 },	-- Rangari Eleena
 					["coord"] = { 78.7, 69.2, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34769,	-- A Choice to Make (alliance)
@@ -644,7 +644,7 @@ _.Zones =
 					},
 				}),
 				q(35155, {	-- Obliterating Ogres
-					["qg"] = 79281,	-- Akrosh
+					["provider"] = { "n", 79281 },	-- Akrosh
 					["coord"] = { 83.0, 67.9, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34899,	-- A Choice to Make (horde)
@@ -656,7 +656,7 @@ _.Zones =
 					},
 				}),
 				q(34593, {	-- Obtaining Ogre Offensive Orders
-					["qg"] = 79282,	-- Rangari Eleena
+					["provider"] = { "n", 79282 },	-- Rangari Eleena
 					["coord"] = { 78.7, 69.2, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -665,7 +665,7 @@ _.Zones =
 					},
 				}),
 				q(35157, {	-- Obtaining Ogre Offensive Orders
-					["qg"] = 79281,	-- Akrosh
+					["provider"] = { "n", 79281 },	-- Akrosh
 					["coord"] = { 83.0, 67.9, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -674,49 +674,49 @@ _.Zones =
 					},
 				}),
 				q(35972, {	-- Ogre Onslaught
-					["qg"] = 83734,	-- Greblin Fastfizzle
+					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["coord"] = { 39.6, 24.4, 550 },
 					["sourceQuest"] = 35945,	-- Greblin Fastfizzle
 				}),
 				q(34717, {	-- Operation: Just Arrowhead
-					["qg"] = 79722,	-- Rangari Ogir
+					["provider"] = { "n", 79722 },	-- Rangari Ogir
 					["coord"] = { 65.8, 68.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This version is offered if you do not leave Rangari Ogir's area after turning in Operation: Surprise Party.",
 					["sourceQuest"] = 34682,	-- Operation: Surprise Party
 				}),
 				q(34720, {	-- Operation: Just Arrowhead
-					["qg"] = 79722,	-- Rangari Ogir
+					["provider"] = { "n", 79722 },	-- Rangari Ogir
 					["coord"] = { 65.8, 68.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This version is offered if you left Rangari Ogir's area after turning in Operation: Surprise Party.",
 					["sourceQuest"] = 34682,	-- Operation: Surprise Party
 				}),
 				q(34682, {	-- Operation: Surprise Party
-					["qg"] = 79674,	-- Thaelin Darkanvil
+					["provider"] = { "n", 79674 },	-- Thaelin Darkanvil
 					["coord"] = { 63.0, 61.9, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34678,	-- Up and Running
 				}),
 				q(36290, {	-- Out of the Shadows
-					["qg"] = 84784,	-- Wodin the Troll-Servant
+					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["coord"] = { 56.8, 13.0, 550 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(36289, {	-- Out of the Shadows
-					["qg"] = 84784,	-- Wodin the Troll-Servant
+					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["coord"] = { 56.8, 13.0, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 36222,	-- The Champion of Blood
 				}),
 				q(35845, {	-- Plans of War
-					["qg"] = 83054,	-- Shadow Hunter Kajassa
+					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["coord"] = { 41.8, 37.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35844,	-- The Warlord's Council
 				}),
 				q(35839, {	-- Plans of War
-					["qg"] = 83053,	-- Flint Shadowmore
+					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["coord"] = { 41.8, 37.0, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35838,	-- The Warlord's Council
@@ -732,36 +732,36 @@ _.Zones =
 					},
 				}),
 				q(35970, {	-- Preservation Capitalization
-					["qg"] = 83734,	-- Greblin Fastfizzle
+					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["coord"] = { 39.6, 24.4, 550 },
 					["sourceQuest"] = 35945,	-- Greblin Fastfizzle
 				}),
 				q(35841, {	-- Putting Down the Packleader
-					["qg"] = 83053,	-- Flint Shadowmore
+					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["coord"] = { 41.8, 37.0, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35840,	-- Intercepting the Orders
 				}),
 				q(35842, {	-- Putting Down the Packleader
-					["qg"] = 83054,	-- Shadow Hunter Kajassa
+					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["coord"] = { 41.8, 37.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35846,	-- Intercepting the Orders
 				}),
 				q(35350, {	-- Queen of the Clefthoof
-					["qg"] = 82092,	-- Kia Herman
+					["provider"] = { "n", 82092 },	-- Kia Herman
 					["coord"] = { 63.5, 61.4, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35337,	-- That Pounding Sound
 				}),
 				q(35375, {	-- Queen of the Clefthoof
-					["qg"] = 82078,	-- Shadow Hunter Tax
+					["provider"] = { "n", 82078 },	-- Shadow Hunter Tax
 					["coord"] = { 82.5, 43.9, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35374,	-- That Pounding Sound
 				}),
 				q(34596, {	-- Reglakk's Research
-					["qg"] = 81144,	-- Rangari Eleena
+					["provider"] = { "n", 81144 },	-- Rangari Eleena
 					["coord"] = { 84.0, 76.8, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34593,	-- Obtaining Ogre Offensive Orders
@@ -778,7 +778,7 @@ _.Zones =
 					},
 				}),
 				q(35158, {	-- Reglakk's Research
-					["qg"] = 81361,	-- Dalgorsh
+					["provider"] = { "n", 81361 },	-- Dalgorsh
 					["coord"] = { 83.7, 76.8, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35157,	-- Obtaining Ogre Offensive Orders
@@ -809,7 +809,7 @@ _.Zones =
 					--["objectID"] = 231901,	-- Ogre Scrolls
 				}),
 				q(34877, {	-- Removing the Reinforcements
-					["qg"] = 81144,	-- Rangari Eleena
+					["provider"] = { "n", 81144 },	-- Rangari Eleena
 					["coord"] = { 84.0, 76.8, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -818,18 +818,18 @@ _.Zones =
 					},
 				}),
 				q(35159, {	-- Removing the Reinforcements
-					["qg"] = 81361,	-- Dalgorsh
+					["provider"] = { "n", 81361 },	-- Dalgorsh
 					["coord"] = { 83.7, 76.8, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35157,	-- Obtaining Ogre Offensive Orders
 				}),
 				q(34665, {	-- Ring of Trials: Captain Boomspark
-					["qg"] = 79188,	-- Dexyl Deadblade
+					["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 					["coord"] = { 79.4, 50.2, 550 },
 					["sourceQuest"] = 34664,	-- Ring of Trials: Hol'yelaa
 				}),
 				q(34662, {	-- Ring of Trials: Crushmaul
-					["qg"] = 79188,	-- Dexyl Deadblade
+					["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 					["coord"] = { 79.4, 50.2, 550 },
 					["sourceQuests"] = {
 						34769,	-- A Choice to Make (alliance)
@@ -839,17 +839,17 @@ _.Zones =
 					},
 				}),
 				q(34664, {	-- Ring of Trials: Hol'yelaa
-					["qg"] = 79188,	-- Dexyl Deadblade
+					["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 					["coord"] = { 79.4, 50.2, 550 },
 					["sourceQuest"] = 34663,	-- Ring of Trials: Raketalon
 				}),
 				q(34663, {	-- Ring of Trials: Raketalon
-					["qg"] = 79188,	-- Dexyl Deadblade
+					["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 					["coord"] = { 79.4, 50.2, 550 },
 					["sourceQuest"] = 34662,	-- Ring of Trials: Crushmaul
 				}),
 				q(34666, { 	-- Ring of Trials: Roakk the Zealot
-					["qg"] = 79188,	-- Dexyl Deadblade
+					["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 					["coord"] = { 79.4, 50.2, 550 },
 					["sourceQuest"] = 34665,	-- Ring of Trials: Captain Boomspark
 					["g"] = {
@@ -860,7 +860,7 @@ _.Zones =
 					},
 				}),
 				q(34746, { 	-- Shields Down!
-					["qg"] = 79743,	-- Vindicator Mo'mor
+					["provider"] = { "n", 79743 },	-- Vindicator Mo'mor
 					["coord"] = { 66.7, 68.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -875,7 +875,7 @@ _.Zones =
 					},
 				}),
 				q(34918, {	-- Shields Down!
-					["qg"] = 80429,	-- Shadow Hunter Kajassa
+					["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
 					["coord"] = { 68.5, 64.5, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -891,18 +891,18 @@ _.Zones =
 					},
 				}),
 				q(34917, {	-- Shields Up!
-					["qg"] = 80451,	-- Rangari Keilnei
+					["provider"] = { "n", 80451 },	-- Rangari Keilnei
 					["coord"] = { 68.5, 64.5, 550 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35338, {	-- Shooting the Breeze
-					["qg"] = 82094,	-- Rangari Laara
+					["provider"] = { "n", 82094 },	-- Rangari Laara
 					["coord"] = { 63.4, 61.4, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34769,	-- A Choice to Make
 				}),
 				q(35376, {	-- Shooting the Breeze
-					["qg"] = 82080,	-- Stalker Ogka
+					["provider"] = { "n", 82080 },	-- Stalker Ogka
 					["coord"] = { 82.5, 43.9, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34899,	-- A Choice to Make
@@ -932,13 +932,13 @@ _.Zones =
 					},
 				}),
 				q(35067, {	-- Silence the War Machines
-					["qg"] = 81097,	-- Lieutenant K. K. Lee
+					["provider"] = { "n", 81097 },	-- Lieutenant K. K. Lee
 					["coord"] = { 55.4, 42.0, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35060,	-- Terms of Surrender
 				}),
 				q(35099, {	-- Silence the War Machines
-					["qg"] = 81194,	-- Senior Sergeant Igerdes
+					["provider"] = { "n", 81194 },	-- Senior Sergeant Igerdes
 					["coord"] = { 55.4, 42.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35096,	-- Terms of Surrender
@@ -960,19 +960,19 @@ _.Zones =
 					["coord"] = { 79.1, 29.0, 550 },
 				}),
 				q(35393, {	-- Spiritual Matters
-					["qg"] = 82179,	-- Vindicator Nobundo
+					["provider"] = { "n", 82179 },	-- Vindicator Nobundo
 					["coord"] = { 55.5, 55.9, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 				}),
 				q(35231, {	-- Spiritual Matters
-					["qg"] = 81335,	-- Farseer Drek'Thar
+					["provider"] = { "n", 81335 },	-- Farseer Drek'Thar
 					["coord"] = { 55.5, 55.9, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 				}),
 				q(34914, {	-- Target of Opportunity: Telaar
-					["qg"] = 81189,	-- Aggra
+					["provider"] = { "n", 81189 },	-- Aggra
 					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34899,	-- A Choice to Make
@@ -981,7 +981,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(34869, {	-- Tastes Like Chicken
-					["qg"] = 81955,	-- Digrem Orebar
+					["provider"] = { "n", 81955 },	-- Digrem Orebar
 					["coord"] = { 79.2, 52.6, 550 },
 					["sourceQuests"] = {
 						34769,	-- A Choice to Make (alliance)
@@ -989,7 +989,7 @@ _.Zones =
 					},
 				}),
 				q(35060, {	-- Terms of Surrender
-					["qg"] = 81039,	-- Vindicator Yrel
+					["provider"] = { "n", 81039 },	-- Vindicator Yrel
 					["coord"] = { 61.9, 40.5, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -998,7 +998,7 @@ _.Zones =
 					},
 				}),
 				q(35096, {	-- Terms of Surrender
-					["qg"] = 81186,	-- Durotan
+					["provider"] = { "n", 81186 },	-- Durotan
 					["coord"] = { 48.5, 48.2, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1007,25 +1007,25 @@ _.Zones =
 					},
 				}),
 				q(35069, {	-- Terror of Nagrand
-					["qg"] = 81134,	-- Fallen Alliance Solder
+					["provider"] = { "n", 81134 },	-- Fallen Alliance Solder
 					["coord"] = { 56.1, 43.7, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35060,	-- Terms of Surrender
 				}),
 				q(35101, {	-- Terror of Nagrand
-					["qg"] = 81195,	-- Fallen Horde Soldier
+					["provider"] = { "n", 81195 },	-- Fallen Horde Soldier
 					["coord"] = { 56.1, 43.7, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35096,	-- Terms of Surrender
 				}),
 				q(35140, {	-- THAELIN!
-					["qg"] = 81039,	-- Vindicator Yrel
+					["provider"] = { "n", 81039 },	-- Vindicator Yrel
 					["coord"] = { 61.9, 40.5, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35061,	-- The Pride of Lok-rath
 				}),
 				q(35337, {	-- That Pounding Sound
-					["qg"] = 82092,	-- Kia Herman
+					["provider"] = { "n", 82092 },	-- Kia Herman
 					["coord"] = { 63.5, 61.4, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34769,	-- A Choice to Make
@@ -1039,7 +1039,7 @@ _.Zones =
 					},
 				}),
 				q(35374, {	-- That Pounding Sound
-					["qg"] = 82078,	-- Shadow Hunter Taz
+					["provider"] = { "n", 82078 },	-- Shadow Hunter Taz
 					["coord"] = { 82.5, 43.9, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34899,	-- A Choice to Make
@@ -1053,19 +1053,19 @@ _.Zones =
 					},
 				}),
 				q(34954, {	-- The Blade Itself
-					["qg"] = 80161,	-- Lantresor of the Blade
+					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 85.4, 54.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
 				}),
 				q(34849, {	-- The Blade Itself
-					["qg"] = 80161,	-- Lantresor of the Blade
+					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 85.4, 54.5, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
 				}),
 				q(34916, {	-- The Blessing of Samedi
-					["qg"] = 80429,	-- Shadow Hunter Kajassa
+					["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
 					["coord"] = { 68.5, 64.5, 550 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1076,30 +1076,30 @@ _.Zones =
 					},
 				}),
 				q(37286, {	-- The Bloodshed Never Ends
-					["qg"] = 87311,	-- Kharg
+					["provider"] = { "n", 87311 },	-- Kharg
 					["coord"] = { 33.0, 38.4, 550 },
 					["description"] = "Must have the |cFFFFD700Gladiator's Sanctum|r in your garrison.",
 					["isWeekly"] = true,
 				}),
 				q(35372, {	-- The Call of Oshu'gun
-					["qg"] = 82138,	-- Vindicator Nobundo
+					["provider"] = { "n", 82138 },	-- Vindicator Nobundo
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35330,	-- The Ritual of Binding
 				}),
 				q(35232, {	-- The Call of Oshu'gun
-					["qg"] = 80597,	-- Farseer Drek'Thar
+					["provider"] = { "n", 80597 },	-- Farseer Drek'Thar
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35265,	-- The Ritual of Binding
 				}),
 				q(36222, {	-- The Champion of Blood
-					["qg"] = 84784,	-- Wodin the Troll-Servant
+					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["coord"] = { 56.8, 13.0, 550 },
 					["sourceQuest"] = 36221,	-- Entry Fee
 				}),
 				q(35396, { 	-- The Dark Heart of Oshu'gun
-					["qg"] = 82181,	-- Vindicator Nobundo
+					["provider"] = { "n", 82181 },	-- Vindicator Nobundo
 					["coord"] = { 46.0, 32.7, 553 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -1118,7 +1118,7 @@ _.Zones =
 					},
 				}),
 				q(35317, {	-- The Dark Heart of Oshu'gun
-					["qg"] = 81953,	-- Farseer Drek'Thar
+					["provider"] = { "n", 81953 },	-- Farseer Drek'Thar
 					["coord"] = { 46.0, 32.7, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1137,11 +1137,11 @@ _.Zones =
 					},
 				}),
 				q(37318, {	-- The Dead Do Not Forget...
-					["qg"] = 88500,	-- Murgok
+					["provider"] = { "n", 88500 },	-- Murgok
 					["coord"] = { 79.4, 30.2, 550 },
 				}),
 				q(34941, { 	-- The Debt We Share
-					["qg"] = 80434,	-- Gar'rok
+					["provider"] = { "n", 80434 },	-- Gar'rok
 					["coord"] = { 75.0, 22.7, 550 },
 					["sourceQuest"] = 34932,	-- Guise of the Deceiver
 					["g"] = {
@@ -1156,14 +1156,14 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(34964, {	-- The Farseer Awaits
-					["qg"] = 80003,	-- Thrall
+					["provider"] = { "n", 80003 },	-- Thrall
 					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34918,	-- Shields Down!
 					["isBreadcrumb"] = true,
 				}),
 				q(35395, {	-- The Fate of Gordawg
-					["qg"] = 82181,	-- Vindicator Nobundo
+					["provider"] = { "n", 82181 },	-- Vindicator Nobundo
 					["coord"] = { 46.0, 32.7, 553 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -1172,7 +1172,7 @@ _.Zones =
 					},
 				}),
 				q(34271, {	-- The Fate of Gordawg
-					["qg"] = 81953,	-- Farseer Drek'Thar
+					["provider"] = { "n", 81953 },	-- Farseer Drek'Thar
 					["coord"] = { 46.0, 32.7, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1181,7 +1181,7 @@ _.Zones =
 					},
 				}),
 				q(34952, {	-- The Friend o' My Enemy
-					["qg"] = 79954,	-- Hansel Heavyhands
+					["provider"] = { "n", 79954 },	-- Hansel Heavyhands
 					["coord"] = { 63.5, 61.8, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is only available if you do not accept |cFFFFD700Blood of the Burning Blade|r from Lantresor of the Blade.",
@@ -1189,7 +1189,7 @@ _.Zones =
 					["altQuests"] = { 34953 },	-- Blood of the Burning Blade
 				}),
 				q(34826, {	-- The Friend of My Enemy
-					["qg"] = 80003,	-- Thrall
+					["provider"] = { "n", 80003 },	-- Thrall
 					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
 					["altQuests"] = { 35143 },	-- Blood of the Burning Blade
@@ -1197,11 +1197,11 @@ _.Zones =
 					["description"] = "This quest is only available if you do not accept |cFFFFD700Blood of the Burning Blade|r from Lantresor of the Blade.",
 				}),
 				q(35146, {	-- The Good Doctor
-					["qg"] = 84632,	-- Marybelle Walsh
+					["provider"] = { "n", 84632 },	-- Marybelle Walsh
 					["coord"] = { 77.4, 47.3, 550 },
 				}),
 				q(34747, {	-- The Honor of a Blademaster
-					["qg"] = 81790,	-- Lantresor of the Blade
+					["provider"] = { "n", 81790 },	-- Lantresor of the Blade
 					["coord"] = { 64.2, 59.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34957,	-- Challenge of the Masters
@@ -1210,7 +1210,7 @@ _.Zones =
 					},
 				}),
 				q(34770, {	-- The Honor of a Blademaster
-					["qg"] = 81790,	-- Lantresor of the Blade
+					["provider"] = { "n", 81790 },	-- Lantresor of the Blade
 					["coord"] = { 82.6, 46.7, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34868,	-- Challenge of the Masters
@@ -1219,7 +1219,7 @@ _.Zones =
 					},
 				}),
 				q(34675, {	-- The Might of the Warsong
-					["qg"] = 79263,	-- Lieutenant Balfor
+					["provider"] = { "n", 79263 },	-- Lieutenant Balfor
 					["coord"] = { 86.3, 66.1, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -1229,7 +1229,7 @@ _.Zones =
 					},
 				}),
 				q(34795, {	-- The Might of the Warsong
-					["qg"] = 80001,	-- Stone Guard Brox
+					["provider"] = { "n", 80001 },	-- Stone Guard Brox
 					["coord"] = { 86.3, 66.1, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1239,7 +1239,7 @@ _.Zones =
 					},
 				}),
 				q(34598, {	-- The Missing Caravan
-					["qg"] = 79310,	-- Pyxni Pennypocket
+					["provider"] = { "n", 79310 },	-- Pyxni Pennypocket
 					["coord"] = { 78.5, 48.5, 550 },
 					["sourceQuests"] = {
 						34769,	-- A Choice to Make (alliance)
@@ -1260,25 +1260,25 @@ _.Zones =
 					["sourceQuest"] = 35085,	-- Through the Nether
 				}),
 				q(34718, {	-- The Others
-					["qg"] = 79743,	-- Vindicator Mo'mor
+					["provider"] = { "n", 79743 },	-- Vindicator Mo'mor
 					["coord"] = { 66.7, 68.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34716,	-- Mo'mor Might Know
 				}),
 				q(35397, {	-- The Pale Threat
-					["qg"] = 82179,	-- Vindicator Nobundo
+					["provider"] = { "n", 82179 },	-- Vindicator Nobundo
 					["coord"] = { 55.5, 55.9, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 				}),
 				q(35145, {	-- The Pale Threat
-					["qg"] = 81335,	-- Farseer Drek'Thar
+					["provider"] = { "n", 81335 },	-- Farseer Drek'Thar
 					["coord"] = { 55.5, 55.9, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 				}),
 				q(35061, { 	-- The Pride of Lok-rath
-					["qg"] = 81086,	-- Uruk Foecleaver
+					["provider"] = { "n", 81086 },	-- Uruk Foecleaver
 					["coord"] = { 55.5, 42.0, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35060,	-- Terms of Surrender
@@ -1290,7 +1290,7 @@ _.Zones =
 					},
 				}),
 				q(35097, {	-- The Pride of Lok-rath
-					["qg"] = 81086,	-- Uruk Foecleaver
+					["provider"] = { "n", 81086 },	-- Uruk Foecleaver
 					["coord"] = { 55.5, 42.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35096,	-- Terms of Surrender
@@ -1302,7 +1302,7 @@ _.Zones =
 					},
 				}),
 				q(35330, { 	-- The Ritual of Binding
-					["qg"] = 82138,	-- Vindicator Nobundo
+					["provider"] = { "n", 82138 },	-- Vindicator Nobundo
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -1319,7 +1319,7 @@ _.Zones =
 					},
 				}),
 				q(35265, {	-- The Ritual of Binding
-					["qg"] = 80597,	-- Farseer Drek'Thar
+					["provider"] = { "n", 80597 },	-- Farseer Drek'Thar
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
@@ -1336,7 +1336,7 @@ _.Zones =
 					},
 				}),
 				q(36275, {	-- The Search For Research
-					["qg"] = 84861,	-- A Fascinating Fungus
+					["provider"] = { "n", 84861 },	-- A Fascinating Fungus
 					["coord"] = { 86.6, 28.3, 550 },
 					["sourceQuest"] = 35146,	-- The Good Doctor
 					["g"] = {
@@ -1383,13 +1383,13 @@ _.Zones =
 					["sourceQuest"] = 35085,	-- Through the Nether
 				}),
 				q(35844, {	-- The Warlord's Council
-					["qg"] = 83052,	-- Shadow Hunter Zasta
+					["provider"] = { "n", 83052 },	-- Shadow Hunter Zasta
 					["coord"] = { 49.8, 37.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35843,	-- Garrison Campaign: Deep Recon
 				}),
 				q(35838, {	-- The Warlord's Council
-					["qg"] = 83051,	-- Jeanine Amrell
+					["provider"] = { "n", 83051 },	-- Jeanine Amrell
 					["coord"] = { 49.8, 37.0, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35837,	-- Garrison Campaign: Deep Recon
@@ -1406,19 +1406,19 @@ _.Zones =
 				}),
 				q(37981),	-- The World Famous Ring of Blood!
 				q(34951, {	-- They Call Him Lantresor of the Blade
-					["qg"] = 80624,	-- Vindicator Mo'mor
+					["provider"] = { "n", 80624 },	-- Vindicator Mo'mor
 					["coord"] = { 63.4, 61.8, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34769,	-- A Choice to Make
 				}),
 				q(34818, {	-- They Call Him Lantresor of the Blade
-					["qg"] = 80140,	-- Foreman Thazz'ril
+					["provider"] = { "n", 80140 },	-- Foreman Thazz'ril
 					["coord"] = { 82.9, 44.1, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34808,	-- More Lazy Peons
 				}),
 				q(34514, {	-- They've Got The Goods!
-					["qg"] = 79312,	-- Greezlex Fizzpinch
+					["provider"] = { "n", 79312 },	-- Greezlex Fizzpinch
 					["coord"] = { 78.9, 58.8, 550 },
 					["sourceQuest"] = 34598,	-- The Missing Caravan
 				}),
@@ -1439,21 +1439,21 @@ _.Zones =
 					},
 				}),
 				q(35148, {	-- Trouble at the Overwatch
-					["qg"] = 79954,	-- Hansel Heavyhands
+					["provider"] = { "n", 79954 },	-- Hansel Heavyhands
 					["coord"] = { 63.5, 61.8, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34769,	-- A Choice to Make
 					["isBreadcrumb"] = true,
 				}),
 				q(35150, {	-- Trouble at the Overwatch
-					["qg"] = 81319,	-- Draka
+					["provider"] = { "n", 81319 },	-- Draka
 					["coord"] = { 82.8, 45.0, 550 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34899,	-- A Choice to Make
 					["isBreadcrumb"] = true,
 				}),
 				q(34678, {	-- Up and Running
-					["qg"] = 79576,	-- Rangari D'kaan
+					["provider"] = { "n", 79576 },	-- Rangari D'kaan
 					["coord"] = { 63.5, 61.8, 550 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34675,	-- The Might of the Warsong
@@ -1467,7 +1467,7 @@ _.Zones =
 					--["objectID"] = 230303,	-- Bounty Board
 				}),
 				q(36273, {	-- Whacking Weeds
-					["qg"] = 84632,	-- Marybelle Walsh
+					["provider"] = { "n", 84632 },	-- Marybelle Walsh
 					["coord"] = { 77.4, 47.3, 550 },
 				}),
 			}),

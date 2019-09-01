@@ -14,15 +14,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			n(-17, {	-- Quests
 				{	-- A Proper Fate
 					["questID"] = 29613,	-- A Proper Fate
-					["qg"] = 54848, 		-- Watcher Jhang
+					["provider"] = { "n", 54848 }, 		-- Watcher Jhang
 				},
 				{	-- Containment is Key
 					["questID"] = 29614,	-- Containment is Key
-					["qg"] = 54849, 		-- Naturalist Bite
+					["provider"] = { "n", 54849 }, 		-- Naturalist Bite
 				},
 				{	-- Windcaller Claw and the Water Thief
 					["questID"] = 29615,	-- Windcaller Claw and the Water Thief
-					["qg"] = 54851, 		-- Windcaller Claw
+					["provider"] = { "n", 54851 }, 		-- Windcaller Claw
 				},
 			}),
 			d(1, {	-- Normal

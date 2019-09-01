@@ -10,7 +10,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(28781, {	-- Targets of Opportunity
-					["qg"] = 50038,	-- Captain Hadan
+					["provider"] = { "n", 50038 },	-- Captain Hadan
 					["groups"] = {
 						i(66905),	-- Clandestine Spaulders
 						i(66906),	-- Bracers of the Lost City
@@ -18,7 +18,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 				q(28783, {	-- The Source of Their Power
-					["qg"] = 50038,	-- Captain Hadan
+					["provider"] = { "n", 50038 },	-- Captain Hadan
 					["groups"] = {
 						i(66910),	-- Blight-Lifter's Mantle
 						i(66908),	-- Treads of the Neferset

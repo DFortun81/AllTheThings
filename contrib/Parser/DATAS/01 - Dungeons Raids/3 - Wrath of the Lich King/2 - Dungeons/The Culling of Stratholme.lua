@@ -14,13 +14,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(13149, {	-- Dispelling Illusions
-					["qg"] = 26527,	-- Chromie
+					["provider"] = { "n", 26527 },	-- Chromie
 					["g"] = {
 						i(37888),	-- Arcane Disruptor
 					},
 				}),
 				q(13151, {	-- A Royal Escort
-					["qg"] = 26527,	-- Chromie
+					["provider"] = { "n", 26527 },	-- Chromie
 					["sourceQuest"] = 13149,	-- Dispelling Illusions
 					["g"] = {
 						i(44396),	-- Gloves of the Time Guardian

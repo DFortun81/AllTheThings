@@ -30,86 +30,86 @@ _.ExpansionFeatures =
 				}),
 				n(-17, {	-- Quests
 					q(45440, {	-- A Brewing Situation
-						["qg"] = 116929,	-- Brewmaster Blancee
+						["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 					}),
 					q(45771, {	-- A Time for Everything
-						["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 45442 },	-- Not Felling Well
 					}),
 					q(45449, {	-- Alchemist Koryla
-						["qg"] = 117305,	-- Brewer Almai
+						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 					}),
 					q(45545, {	-- Barrel Toss
-						["qg"] = 117305,	-- Brewer Almai
+						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 					}),
 					q(41739, {	-- Champion: Aegira
-						["qg"] = 105226,	-- Aegira <Brewmaster>
+						["provider"] = { "n", 105226 },	-- Aegira <Brewmaster>
 						["g"] = {
 							follower(607),	-- Aegira
 						},
 					}),
 					q(45790, {	-- Champion: Almai
-						["qg"] = 117504,	-- Brewer Almai
+						["provider"] = { "n", 117504 },	-- Brewer Almai
 						["sourceQuests"] = { 45771 },	-- A Time for Everything
 						["g"] = {
 							follower(998),	-- Brewer Almai
 						},
 					}),
 					q(41736, {	-- Champion: Angus Ironfist
-						["qg"] = 105046,	-- Angus Ironfist
+						["provider"] = { "n", 105046 },	-- Angus Ironfist
 						["g"] = {
 							follower(605),	-- Angus Ironfist
 						},
 					}),
 					q(41115, {	-- Champion: Chen Stormstout
-						["qg"] = 102820,	-- Chen Stormstout
+						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["g"] = {
 							follower(596),	-- Chen Stormstout
 						},
 					}),
 					q(41737, {	-- Champion: Hiro
-						["qg"] = 105058,	-- Hiro
+						["provider"] = { "n", 105058 },	-- Hiro
 						["g"] = {
 							follower(606),	-- Hiro
 						},
 					}),
 					q(40704, {	-- Champion: Li Li Stormstout
-						["qg"] = 101046,	-- Li Li Stormstout
+						["provider"] = { "n", 101046 },	-- Li Li Stormstout
 						["g"] = {
 							follower(588),	-- Li Li Stormstout
 						},
 					}),
 					q(41738, {	-- Champion: Sylara Steelsong
-						["qg"] = 105056,	-- Sylara Steelsong
+						["provider"] = { "n", 105056 },	-- Sylara Steelsong
 						["g"] = {
 							follower(604),	-- Sylara Steelsong
 						},
 					}),
 					q(41734, {	-- Champion: Taran Zhu
-						["qg"] = 104984,	-- Taran Zhu <Lord of the Shado-Pan>
+						["provider"] = { "n", 104984 },	-- Taran Zhu <Lord of the Shado-Pan>
 						["g"] = {
 							follower(603),	-- Taran Zhu
 						},
 					}),
 					q(41735, {	-- Champion: The Monkey King
-						["qg"] = 102902,	-- The Monkey King
+						["provider"] = { "n", 102902 },	-- The Monkey King
 						["g"] = {
 							follower(602),	-- The Monkey King
 						},
 					}),
 					q(46347, {	-- Clean-up on Aisle Sha
-						["qgs"] = 120722,	-- Master Bu
+						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
 					}),
 					q(45574, {	-- Fel Ingredients
-						["qg"] = 117305,	-- Brewmaster Almai
+						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 					}),
 					q(46320, {	-- Hope For a Cure
-						["qg"] = 117305,	-- Brewer Almai
+						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = {
 							45574,	-- Fel Ingredients
 							45449,	-- Alchemist Koryla
@@ -120,31 +120,31 @@ _.ExpansionFeatures =
 						i(139734),	-- Grandmaster's Crown
 					}),
 					q(46349, {	-- Lilies for Ryuli
-						["qgs"] = 120726,	-- Waterspeaker Ryuli
+						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
 					}),
 					q(46353, {	-- Master Who?
-						["qg"] = 118214,	-- Yiska
+						["provider"] = { "n", 118214 },	-- Yiska
 						["sourceQuests"] = { 46246 },	-- Strike Them Down
 					}),
 					q(45442, {	-- Not Felling Well
-						["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 46320 },	-- Hope For a Cure
 					}),
 					q(45404, {	-- Panic at the Brewery
-						["qg"] = 119664,	-- Brewmaster Almai
+						["provider"] = { "n", 119664 },	-- Brewmaster Almai
 						["sourceQuests"] = { 45440 },	-- A Brewing Situation
 					}),
 					q(46342, {	-- Return to the Broken Peak
-						["qg"] = 120758,	-- Master Bu
+						["provider"] = { "n", 120758 },	-- Master Bu
 						["sourceQuests"] = { 46341 },	-- The Tale of Ban-Lu
 					}),
 					q(46344, {	-- Smelly's Luckydo
-						["qgs"] = 120744,	-- Smelly Mountaintop
+						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
 					}),
 					q(41087, {	-- Storm Brew
-						["qgs"] = 100438,	-- Iron-Body Ponshu
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 32442 },	-- Impending Danger
 						["groups"] = {
 							title(329),	-- Grandmaster %s
@@ -162,27 +162,27 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(45459, {	-- Storming the Legion
-						["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 45404 },	-- Panic at the Brewery
 					}),
 					q(46348, {	-- The River to Ban-Lu
-						["qgs"] = 120722,	-- Master Bu
+						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
 					}),
 					q(46346, {	-- The Shadow of Ban-Lu
-						["qgs"] = 120722,	-- Master Bu
+						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
 					}),
 					q(46341, {	-- The Tale of Ban-Lu
-						["qg"] = 120758,	-- Master Bu
+						["provider"] = { "n", 120758 },	-- Master Bu
 						["sourceQuests"] = { 46353 },	-- Master Who?
 					}),
 					q(46343, {	-- The Trail of Ban-Lu
-						["qgs"] = 120722,	-- Master Bu
+						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
 					}),
 					q(46350, {	-- The Trial of Ban-Lu
-						["qgs"] = 120726,	-- Waterspeaker Ryuli
+						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
 						["g"] = {
 							i(142225),	-- Ban-Lu, Grandmaster's Companion
@@ -273,11 +273,11 @@ _.ExpansionFeatures =
 					--]]
 	--[[ These quests moved here from Uldum. Organize later plz?
 						q(40570, {	-- Into The Heavens
-							["qg"] = 47684,	-- King Phaoris
+							["provider"] = { "n", 47684 },	-- King Phaoris
 							["classes"] = {10},
 						}),
 						q(40634, {	-- Thunder on the Sands
-							["qg"] = 47684,	-- King Phaoris
+							["provider"] = { "n", 47684 },	-- King Phaoris
 							["classes"] = {10},
 						}),
 	--]]

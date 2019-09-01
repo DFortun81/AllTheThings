@@ -165,7 +165,7 @@ _.Zones =
 				q(39208),	-- Zul'Drak
 --]]
 				q(12555, {	-- A Tangled Skein
-					["qg"] = 28284,	-- Specialist Cogwheel
+					["provider"] = { "n", 28284 },	-- Specialist Cogwheel
 					["g"] = {
 						i(39806),	-- Blade of Diligence
 						i(39822),	-- Knife of the Dutybound
@@ -176,7 +176,7 @@ _.Zones =
 					},
 				}),
 				q(12647, {	-- An End to the Suffering
-					["qg"] = 28561,	-- Spirit of Rhunok
+					["provider"] = { "n", 28561 },	-- Spirit of Rhunok
 					["g"] = {
 						i(39789),	-- Bloodbinder's Shoulderpads
 						i(39858),	-- Drape of the Bloodletter
@@ -185,7 +185,7 @@ _.Zones =
 					},
 				}),
 				q(12504, {	-- Argent Crusade, We Are Leaving!
-					["qg"] = 28056,	-- Sergeant Stackhammer
+					["provider"] = { "n", 28056 },	-- Sergeant Stackhammer
 					["g"] = {
 						i(39771),	-- Embattled Legwraps
 						i(39834),	-- Embattled Jerkin
@@ -194,7 +194,7 @@ _.Zones =
 					},
 				}),
 				q(12713, {	-- Betrayal
-					["qg"] = 28518,	-- Stefan Vadu
+					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["g"] = {
 						i(39655),	-- Betrayer's Choker
 						i(39653),	-- Choker of Betrayal
@@ -202,7 +202,7 @@ _.Zones =
 					},
 				}),
 				q(12662, {	-- Bringing Down Heb'Jin
-					["qg"] = 28480,	-- Element-Tamer Dagoda
+					["provider"] = { "n", 28480 },	-- Element-Tamer Dagoda
 					["g"] = {
 						i(39777),	-- Band of Misty Mojo
 						i(39836),	-- Supple Mantle of the Bloodletter
@@ -211,7 +211,7 @@ _.Zones =
 					},
 				}),
 				q(12632, {	-- But First My Offspring
-					["qg"] = 28401,	-- Har'koa
+					["provider"] = { "n", 28401 },	-- Har'koa
 					["g"] = {
 						i(39787),	-- Soothsayer's Handwraps
 						i(39856),	-- Bloodletter's Pants
@@ -220,7 +220,7 @@ _.Zones =
 					},
 				}),
 				q(12610, {	-- Clipping Their Wings
-					["qg"] = 28045,	-- Captain Arnath
+					["provider"] = { "n", 28045 },	-- Captain Arnath
 					["g"] = {
 						i(39804),	-- Braided Bat Sinew
 						i(39867),	-- Bat Fur Mitts
@@ -229,7 +229,7 @@ _.Zones =
 					},
 				}),
 				q(12604, {	-- Congratulations!
-					["qg"] = 28039,	-- Commander Kunz
+					["provider"] = { "n", 28039 },	-- Commander Kunz
 					["isDaily"] = true,
 					["g"] = {
 						i(43556, {	-- Patroller's Pack
@@ -244,7 +244,7 @@ _.Zones =
 					},
 				}),
 				q(12730, {	-- Convocation at Zol'Heb
-					["qg"] = 28401,	-- Har'koa
+					["provider"] = { "n", 28401 },	-- Har'koa
 					["g"] = {
 						i(41890),	-- Robe of the Conquered Prophet
 						i(41891),	-- Intricate Zandalari Tunic
@@ -253,7 +253,7 @@ _.Zones =
 					},
 				}),
 				q(12652, {	-- Feedin' Da Goolz
-					["qg"] = 28589,	-- Gristlegut
+					["provider"] = { "n", 28589 },	-- Gristlegut
 					["g"] = {
 						i(39812),	-- Soiled Trousers
 						i(39876),	-- Aged Abomination Tripe
@@ -263,7 +263,7 @@ _.Zones =
 					},
 				}),
 				q(12674, {	-- Hell Hath a Fury
-					["qg"] = 28030,	-- Quetz'lun's Spirit
+					["provider"] = { "n", 28030 },	-- Quetz'lun's Spirit
 					["g"] = {
 						i(39791),	-- Soothsayer's Wristwraps
 						i(39859),	-- Bloodletter's Skullcap
@@ -272,7 +272,7 @@ _.Zones =
 					},
 				}),
 				q(12709, {	-- Hexed Caches
-					["qg"] = 28527,	-- Chronicler To'kini
+					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 					["g"] = {
 						i(39797),	-- Bloodbinder's Hood
 						i(39863),	-- Supple Vest of the Bloodbinder
@@ -281,7 +281,7 @@ _.Zones =
 					},
 				}),
 				q(12661, {	-- Infiltrating Voltarus
-					["qg"] = 28518,	-- Stefan Vadu
+					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["g"] = {
 						i(39809),	-- Sandals of Spying
 						i(39869),	-- Double-Agent's Wristwraps
@@ -291,7 +291,7 @@ _.Zones =
 					},
 				}),
 				q(12512, {	-- Leave No One Behind
-					["qg"] = 28125,	-- Dr. Rogers
+					["provider"] = { "n", 28125 },	-- Dr. Rogers
 					["g"] = {
 						i(39807),	-- Rescuer's Cloak
 						i(39868),	-- Ravager's Skullcap
@@ -300,7 +300,7 @@ _.Zones =
 					},
 				}),
 				q(12554, {	-- Malas the Corrupter
-					["qg"] = 28283,	-- Sergeant Moonshard
+					["provider"] = { "n", 28283 },	-- Sergeant Moonshard
 					["g"] = {
 						i(43160),	-- Leggings of Fastidious Decapitation
 						i(43161),	-- Legguards of Solemn Revenge
@@ -309,7 +309,7 @@ _.Zones =
 					},
 				}),
 				q(12596, {	-- Pa'Troll
-					["qg"] = 28039,	-- Commander Kunz
+					["provider"] = { "n", 28039 },	-- Commander Kunz
 					["g"] = {
 						i(39800),	-- Pantaloons of the Dutybound
 						i(39864),	-- Belt of Service
@@ -319,7 +319,7 @@ _.Zones =
 					},
 				}),
 				q(12740, {	-- Parachutes for the Argent Crusade
-					["qg"] = 28059,	-- Commander Falstaav
+					["provider"] = { "n", 28059 },	-- Commander Falstaav
 					["g"] = {
 						i(39779),	-- Crusader's Ripcord
 						i(39840),	-- Rescuer's Ripcord
@@ -329,7 +329,7 @@ _.Zones =
 					},
 				}),
 				q(12510, {	-- Precious Elemental Fluids
-					["qg"] = 28062,	-- Hexxer Ubungo
+					["provider"] = { "n", 28062 },	-- Hexxer Ubungo
 					["g"] = {
 						i(39781),	-- Bloodbinder's Raiment
 						i(39842),	-- Bloodletter's Boots
@@ -338,7 +338,7 @@ _.Zones =
 					},
 				}),
 				q(12584, {	-- Pure Evil
-					["qg"] = 28044,	-- Captain Rupert
+					["provider"] = { "n", 28044 },	-- Captain Rupert
 					["g"] = {
 						i(39773),	-- Soothsayer's Shoulderpads
 						i(39837),	-- Gloves of Swift Death
@@ -347,7 +347,7 @@ _.Zones =
 					},
 				}),
 				q(12721, {	-- Rampage
-					["qg"] = 28401,	-- Har'koa
+					["provider"] = { "n", 28401 },	-- Har'koa
 					["g"] = {
 						i(39794),	-- Bloodbinder's Gloves
 						i(39862),	-- Supple Vest of the Bloodletter
@@ -356,7 +356,7 @@ _.Zones =
 					},
 				}),
 				q(12676, {	-- Sabotage
-					["qg"] = 28518,	-- Stefan Vadu
+					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["g"] = {
 						i(39811),	-- Badge of the Infiltrator
 						i(39873),	-- Skins of Subterfuge
@@ -365,7 +365,7 @@ _.Zones =
 					},
 				}),
 				q(12669, {	-- So Far, So Bad
-					["qg"] = 28518,	-- Stefan Vadu
+					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["g"] = {
 						i(39810),	-- Cords of Duplicity
 						i(39871),	-- Subtle Boots of the Infiltrator
@@ -374,7 +374,7 @@ _.Zones =
 					},
 				}),
 				q(12609, {	-- Stocking the Shelves
-					["qg"] = 28045,	-- Captain Arnath
+					["provider"] = { "n", 28045 },	-- Captain Arnath
 					["g"] = {
 						i(39865),	-- Knuckle of Victory
 						i(39852),	-- Victorious Spellblade
@@ -384,7 +384,7 @@ _.Zones =
 					},
 				}),
 				q(12903, {	-- That's What Friends Are For...
-					["qg"] = 29689,	-- Crusader MacKellar
+					["provider"] = { "n", 29689 },	-- Crusader MacKellar
 					["g"] = {
 						i(39886),	-- Greenhealer's Gauntlets
 						i(39816),	-- Medic's Hood
@@ -393,7 +393,7 @@ _.Zones =
 					},
 				}),
 				q(12948, {	-- The Champion of Anguish
-					["qg"] = 30007,	-- Gurgthock
+					["provider"] = { "n", 30007 },	-- Gurgthock
 					["g"] = {
 						i(41815),	-- Icier Barbed Spear
 						i(41821),	-- Chilly Slobberknocker
@@ -404,7 +404,7 @@ _.Zones =
 					},
 				}),
 				q(12639, {	-- The Frozen Earth
-					["qg"] = 28480,	-- Element-Tamer Dagoda
+					["provider"] = { "n", 28480 },	-- Element-Tamer Dagoda
 					["g"] = {
 						i(39772),	-- Bloodbinder's Wrist Wraps
 						i(39835),	-- Supple Bloodbinder's Helm
@@ -413,7 +413,7 @@ _.Zones =
 					},
 				}),
 				q(12622, {	-- The Leaders at Jin'Alai
-					["qg"] = 28484,	-- Scalper Ahunae
+					["provider"] = { "n", 28484 },	-- Scalper Ahunae
 					["g"] = {
 						i(39775),	-- Soothsayer's Sandals
 						i(39838),	-- Supple Belt of the Bloodletter
@@ -422,7 +422,7 @@ _.Zones =
 					},
 				}),
 				q(12919, {	-- The Storm King's Vengeance
-					["qg"] = 29647,	-- Gymer
+					["provider"] = { "n", 29647 },	-- Gymer
 					["g"] = {
 						i(41826),	-- Grips of the Giant-Rider
 						i(41829),	-- Horns of Electrified Terror
@@ -432,7 +432,7 @@ _.Zones =
 					},
 				}),
 				q(12859, {	-- This Just In: Fire Still Hot!
-					["qg"] = 29733,	-- Elder Shaman Moky
+					["provider"] = { "n", 29733 },	-- Elder Shaman Moky
 					["g"] = {
 						i(41755, {	-- The Fire Extinguisher
 							["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
@@ -440,7 +440,7 @@ _.Zones =
 					},
 				}),
 				q(12516, {	-- Too Much of a Good Thing
-					["qg"] = 28062,	-- Hexxer Ubungo
+					["provider"] = { "n", 28062 },	-- Hexxer Ubungo
 					["g"] = {
 						i(39785),	-- Soothsayer's Garb
 						i(39843),	-- Supple Wristguards
@@ -449,7 +449,7 @@ _.Zones =
 					},
 				}),
 				q(12861, {	-- Trolls Is Gone Crazy!
-					["qg"] = 29690,	-- Chief Rageclaw
+					["provider"] = { "n", 29690 },	-- Chief Rageclaw
 					["g"] = {
 						i(41760),	-- Emancipator's Robes
 						i(41761),	-- Wristguard of Healing Fingers
@@ -471,7 +471,7 @@ _.Zones =
 					},
 				}),
 				q(12707, {	-- Wooly Justice
-					["qg"] = 28484,	-- Scalper Ahunae
+					["provider"] = { "n", 28484 },	-- Scalper Ahunae
 					["g"] = {
 						i(39770),	-- Soothsayer's Hood
 						i(39833),	-- Supple Bloodbinder's Boots
@@ -481,7 +481,7 @@ _.Zones =
 					},
 				}),
 				q(12685, {	-- You Reap What You Sow
-					["qg"] = 28401,	-- Har'koa
+					["provider"] = { "n", 28401 },	-- Har'koa
 					["g"] = {
 						i(39844),	-- Ritualistic Shield
 						i(39861),	-- Supple Bloodbinder's Leggings

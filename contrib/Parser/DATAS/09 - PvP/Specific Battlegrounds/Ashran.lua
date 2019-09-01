@@ -157,61 +157,61 @@ _.PVP =
 				}),
 				n(-17, {	-- Quests
 					q(56336, {	-- Uncovering the Artifact Fragments (A)
-						["qg"] = 155283,	-- Ecilam
+						["provider"] = { "n", 155283 },	-- Ecilam
 						["coord"] = { 44.6, 74.4, 1478 },
 						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(56337, {	-- Uncovering the Artifact Fragments (H)
-						["qg"] = 155286,	-- Fura
+						["provider"] = { "n", 155286 },	-- Fura
 						["coord"] = { 45.4, 27.1, 1478 },
 						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(56338, {	-- Volrath Must Die
-						["qg"] = 84173,	-- Commander Anne Dunworthy
+						["provider"] = { "n", 84173 },	-- Commander Anne Dunworthy
 						["coord"] = { 44.6, 74.0, 1478 },
 						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(56339, {	-- Tremblade Must Die
-						["qg"] = 84473,	-- General Ushet Wolfbarger
+						["provider"] = { "n", 84473 },	-- General Ushet Wolfbarger
 						["coord"] = { 45.0, 27.8, 1478 },
 						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(35638, {	-- A Few Artifact Fragments (A)
-						["qg"] = 81870,	-- Anenga
+						["provider"] = { "n", 81870 },	-- Anenga
 						["coord"] = { 45.8, 76.2, 1478 },
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36030, {	-- A Few Artifact Fragments (H)
-						["qg"] = 82204,	-- Atomik
+						["provider"] = { "n", 82204 },	-- Atomik
 						["coord"] = { 49.6, 24.6, 1478 },
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(35264, {	-- A Bunch of Artifact Fragments (A)
-						["qg"] = 81870,	-- Anenga
+						["provider"] = { "n", 81870 },	-- Anenga
 						["coord"] = { 45.8, 76.2, 1478 },
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36031, {	-- A Bunch of Artifact Fragments (H)
-						["qg"] = 82204,	-- Atomik
+						["provider"] = { "n", 82204 },	-- Atomik
 						["coord"] = { 49.6, 24.6, 1478 },
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					q(35639, {	-- A TON of Artifact Fragments (A)
-						["qg"] = 81870,	-- Anenga
+						["provider"] = { "n", 81870 },	-- Anenga
 						["coord"] = { 45.8, 76.2, 1478 },
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36032, {	-- A TON of Artifact Fragments (H)
-						["qg"] = 82204,	-- Atomik
+						["provider"] = { "n", 82204 },	-- Atomik
 						["coord"] = { 49.6, 24.6, 1478 },
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,

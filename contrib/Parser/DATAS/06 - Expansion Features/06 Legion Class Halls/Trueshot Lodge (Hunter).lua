@@ -20,12 +20,12 @@ _.ExpansionFeatures =
 				}),
 				n(-17, {	-- Quests
 					q(41541, {	-- A Beastly Expedition 
-						["qg"] = 107317,	-- Emmarel Shadewarden
+						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
 						["classes"] = {3},
 					}),
 	--[[ waiting on Coordinates							
 					q(41541, {	-- A Beastly Expedition
-						["qg"] = 107973,	-- Emmarel Shadewarden
+						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["classes"] = {3},
 					}),
 	--]]							
@@ -150,55 +150,55 @@ _.ExpansionFeatures =
 					--]]
 					--Followers  Sort to other quests later
 					q(42414, {	-- Champion: Addie Fizzlebog
-						["qg"] = 99095,	-- Addie Fizzlebog
+						["provider"] = { "n", 99095 },	-- Addie Fizzlebog
 						["groups"] = {
 							follower(746),	-- Addie Fizzlebog
 						},
 					}),
 					q(42411, {	-- Champion: Beastmaster Hilaire
-						["qg"] = 107316,	-- Beastmaster Hilaire <Unseen Path>
+						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire <Unseen Path>
 						["groups"] = {
 							follower(744),	-- Beastmaster Hilaire
 						},
 					}),
 					q(42519, {	-- Rise, Champions
-						["qg"] = 102940,	-- Altar Keeper Biehn
+						["provider"] = { "n", 102940 },	-- Altar Keeper Biehn
 						["groups"] = {
 							follower(593),	-- Emmarel Shadewarden
 						},
 					}),
 					q(42415, {	-- Champion: Halduron Brightwing
-						["qg"] = 108620,	-- Halduron Brightwing <Ranger-General of the Farstriders>
+						["provider"] = { "n", 108620 },	-- Halduron Brightwing <Ranger-General of the Farstriders>
 						["groups"] = {
 							follower(748),	-- Halduron Brightwing
 						},
 					}),
 					q(42413, {	-- Champion: Hemet Nesingwary
-						["qg"] = 94409,		-- Hemet Nesingwary <Hemet's Hunting Party>
+						["provider"] = { "n", 94409 },		-- Hemet Nesingwary <Hemet's Hunting Party>
 						["groups"] = {
 							follower(745),	-- Hemet Nesingwary
 						},
 					}),
 					q(42412, {	-- Champion: Huntsman Blake
-						["qg"] = 107981,	-- Huntsman Blake <Beastmaster>
+						["provider"] = { "n", 107981 },	-- Huntsman Blake <Beastmaster>
 						["groups"] = {
 							follower(747),	-- Huntsman Blake
 						},
 					}),
 					q(42409, {	-- Champion: Loren Stormhoof
-						["qg"] = 107315,	-- Loren Stormhoof <Skyhorn Emissary>
+						["provider"] = { "n", 107315 },	-- Loren Stormhoof <Skyhorn Emissary>
 						["groups"] = {
 							follower(742),	-- Loren Stormhoof
 						},
 					}),
 					q(46048, {	-- Champion: Nighthuntress Syrenne
-						["qg"] = 117246,	-- Nighthuntress Syrenne
+						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
 						["groups"] = {
 							follower(996),	-- Nighthuntress Syrenne
 						},
 					}),
 					q(42410, {	-- Champion: Rexxar
-						["qg"] = 107425,	-- Rexxar
+						["provider"] = { "n", 107425 },	-- Rexxar
 						["groups"] = {
 							follower(743),	-- Rexxar
 						},

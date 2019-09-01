@@ -17,7 +17,7 @@ _.Zones =
 				p(713), 	-- Softshell Snapling
 				q(31955, {	-- Grand Master Nishi
 					["isDaily"] = true,
-					["qg"] = 66734,	-- Farmer Nishi
+					["provider"] = { "n", 66734 },	-- Farmer Nishi
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},

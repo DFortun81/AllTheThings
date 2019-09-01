@@ -33,7 +33,7 @@ _.Zones =
 								--i(157028),	-- Letter from Lady Sylvanas Windrunner
 								i(157759),	-- Shal'dorei Tabard
 							},
-							["qg"] = 131326,	-- First Arcanist Thalyssra
+							["provider"] = { "n", 131326 },	-- First Arcanist Thalyssra
 							["coord"] = { 59.3, 85.5 },
 						}),
 					}),

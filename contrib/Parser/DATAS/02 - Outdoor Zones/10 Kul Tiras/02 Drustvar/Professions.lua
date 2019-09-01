@@ -9,7 +9,7 @@ _.Zones =
 			n(-38, {	-- Professions
 				prof(171, {	-- Alchemy
 					q(50126, {	-- A Deathly Draught
-						["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+						["provider"] = { "n", 132347 },	-- Quintin Whalgrene <Master of Transmutations>
 						["coord"] = { 30.6, 49.6, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 50125,
@@ -25,13 +25,13 @@ _.Zones =
 						},
 					}),
 					q(50127, {	-- A Stone's Throw
-						["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+						["provider"] = { "n", 132347 },	-- Quintin Whalgrene <Master of Transmutations>
 						["coord"] = { 30.6, 49.6, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 50125,
 					}),
 					q(50128, {	-- Chemically Compounded
-						["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+						["provider"] = { "n", 132347 },	-- Quintin Whalgrene <Master of Transmutations>
 						["coord"] = { 30.6, 49.6, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -44,17 +44,17 @@ _.Zones =
 					q(53998, {	-- Exhumed
 						["sourceQuests"] = { 53997 },	-- The Sixth Sense
 						["coord"] = { 55.3, 46.0, 896 },
-						["qg"] = 146091,	-- Sef Iwen
+						["provider"] = { "n", 146091 },	-- Sef Iwen
 					}),
 					q(53996, {	-- Pick Up Sticks
 						["sourceQuests"] = { 53996, 55635 },	-- A Voice on the Wind (A, H)
 						["coord"] = { 53.3, 40.0, 896 },
-						["qg"] = 146053,	-- Sef Iwen
+						["provider"] = { "n", 146053 },	-- Sef Iwen
 					}),
 					q(54002, {	-- Putting it All Together
 						["sourceQuests"] = { 54001 },	-- We're Going In
 						["coord"] = { 57.8, 80.8, 896 },
-						["qg"] = 152255,	-- Sef Iwen
+						["provider"] = { "n", 152255 },	-- Sef Iwen
 						["g"] = {
 							recipe(287494),	-- Iwen's Enchanting Rod
 						},
@@ -62,22 +62,22 @@ _.Zones =
 					q(54000, {	-- The Beat Goes On
 						["sourceQuests"] = { 53999 },	-- Exhumed
 						["coord"] = { 62.9, 59.5, 896 },
-						["qg"] = 146093,	-- Sef Iwen
+						["provider"] = { "n", 146093 },	-- Sef Iwen
 					}),
 					q(53997, {	-- The Sixth Sense
 						["sourceQuests"] = 53996,	-- Pick Up Sticks
 						["coord"] = { 53.3, 40.0, 896 },
-						["qg"] = 146053,	-- Sef Iwen
+						["provider"] = { "n", 146053 },	-- Sef Iwen
 					}),
 					q(53999, {	-- The Threads That Bind
 						["sourceQuests"] = { 53998 },	-- Exhumed
 						["coord"] = { 55.3, 46.0, 896 },
-						["qg"] = 146091,	-- Sef Iwen
+						["provider"] = { "n", 146091 },	-- Sef Iwen
 					}),
 					q(54001, {	-- We're Going In
 						["sourceQuests"] = { 54000 },	-- The Beat Goes On
 						["coord"] = { 58.9, 62.7, 896 },
-						["qg"] = 146094,	-- Sef Iwen
+						["provider"] = { "n", 146094 },	-- Sef Iwen
 					}),
 				}),
 				prof(182, {	-- Herbalism
@@ -88,7 +88,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51376, {	-- Can't Teach on an Empty Stomach
-						["qg"] = 136141,	-- Xun Xun Sweetflower
+						["provider"] = { "n", 136141 },	-- Xun Xun Sweetflower
 						["coord"] = { 20.61, 45.61, 896 },
 						["sourceQuests"] = { 48762 },	-- Meet Sweetflower
 						["requireSkill"] = 182,	-- Herbalism
@@ -120,7 +120,7 @@ _.Zones =
 				}),
 				prof(186, {	-- Mining
 					q(52050, {	-- A More Challenging Career
-						["qg"] = 139746,		-- First Mate Cinderfuse
+						["provider"] = { "n", 139746 },		-- First Mate Cinderfuse
 						["coord"] = { 19.76, 44.54, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52044 },	-- An Exceptional Platinum Shard
