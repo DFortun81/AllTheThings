@@ -13,7 +13,6 @@ _.Zones =
 				31,		-- Coldridge Valley
 				428,	-- Frostmane Hovel (Coldridge Valley)
 				470,	-- Frostmane Hold
-			--	523,	-- Dun Morogh (Blood in the Snow scenario — commenting out so that random Dun Morogh quests, etc., don't show up in the scenario)
 			},
 			["lvl"] = 1,
 		}),

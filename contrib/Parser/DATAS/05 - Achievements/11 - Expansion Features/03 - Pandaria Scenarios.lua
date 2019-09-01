@@ -16,9 +16,7 @@ _.Achievements =
 		n(-10059, {	-- Pandaria Scenarios
 			ach(7252),		-- A Brewing Storm (A Brewing Storm)
 			ach(7988),		-- A Little Patience (A Little Patience)
-			ach(8319, {		-- Accelerated Archaeology (Dark Heart of Pandaria)
-				["maps"] = { 520, 521 },	-- Dark Heart of Pandaria
-			}),
+			ach(8319),		-- Accelerated Archaeology (Dark Heart of Pandaria)
 			ach(7271),		-- Arena of Annihilation (Arena of Annihilation)
 			ach(8016),		-- Assault on Zan'vess (Assault on Zan'vess)
 			ach(7273),		-- Beat the Heat (Arena of Annihilation)
@@ -33,9 +31,7 @@ _.Achievements =
 					crit(6),		-- Derpa Derpa
 				},
 			}),
-			ach(8316, {		-- Blood in the Snow (Blood in the Snow)
-				["maps"] = { 523 },	-- Blood in the Snow
-			}),
+			ach(8316),		-- Blood in the Snow (Blood in the Snow)
 			ach(6923, {		-- Brewmoon Festival (Brewmoon Festival)
 				["maps"] = { 452 },	-- Brewmoon Festival
 			}),
@@ -43,9 +39,7 @@ _.Achievements =
 			ach(7990),		-- Cannonballer (A Little Patience)
 			ach(7522),		-- Crypt of Forgotten Kings (Crypt of Forgotten Kings)
 			ach(8009),		-- Dagger in the Dark (Dagger in the Dark)
-			ach(8317, {		-- Dark Heart of Pandaria (Dark Heart of Pandaria)
-				["maps"] = { 520, 521 },	-- Dark Heart of Pandaria
-			}),
+			ach(8317),		-- Dark Heart of Pandaria (Dark Heart of Pandaria)
 			{	-- Domination Point [Horde] // Lion's Landing [Alliance]
 				["allianceAchievementID"] = 8010,	-- Lion's Landing [Alliance]
 				["hordeAchievementID"] = 8013,		-- Domination Point [Horde]
@@ -55,12 +49,8 @@ _.Achievements =
 			ach(8368),		-- Fight Anger with Anger (Crypt of the Forgotten Kings)
 			ach(8017),		-- For the Swarm (Assault on Zan'vess)
 			ach(7265),		-- Greenstone Village (Greenstone Village)
-			ach(8329, {		-- Heed the Weed (Blood in the Snow)
-				["maps"] = { 523 },	-- Blood in the Snow
-			}),
-			ach(8330, {		-- Hekima's Heal-Halter (Blood in the Snow)
-				["maps"] = { 523 },	-- Blood in the Snow
-			}),
+			ach(8329),		-- Heed the Weed (Blood in the Snow)
+			ach(8330),		-- Hekima's Heal-Halter (Blood in the Snow)
 			ach(8310),		-- Heroic: A Brewing Storm (A Brewing Storm)
 			{	-- Heroic: Battle on the High Seas
 				["allianceAchievementID"] = 8364,	-- Heroic: Battle on the High Seas [Alliance]
@@ -73,13 +63,9 @@ _.Achievements =
 					},
 				},
 			},
-			ach(8312, {		-- Heroic: Blood in the Snow (Blood in the Snow)
-				["maps"] = { 523 },	-- Blood in the Snow
-			}),
+			ach(8312),		-- Heroic: Blood in the Snow (Blood in the Snow)
 			ach(8311),		-- Heroic: Crypt of Forgotten Kings (Crypt of the Forgotten Kings)
-			ach(8318, {		-- Heroic: Dark Heart of Pandaria (Dark Heart of Pandaria)
-				["maps"] = { 520, 521 },	-- Dark Heart of Pandaria
-			}),
+			ach(8318),		-- Heroic: Dark Heart of Pandaria (Dark Heart of Pandaria)
 			ach(8327),		-- Heroic: The Secrets of Ragefire (The Secrets of Ragefire)
 			ach(7992),		-- I Used To Love Them (A Little Patience)
 			ach(7272, {		-- In the Eye of the Tiger (Arena of Annihilation)

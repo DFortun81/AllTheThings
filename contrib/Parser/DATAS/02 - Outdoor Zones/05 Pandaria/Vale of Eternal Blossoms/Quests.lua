@@ -33,22 +33,9 @@ _.Zones =
 					},	
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 				},
-				q(32806, {	-- The King and the Council
-					["provider"] = { "n", 61962 },	-- Lorewalker Cho
-					["g"] = {
-						i(98133),	-- Greater Cache of Treasures
-					},
-				}),
 				q(32815, {	-- The Old Seer
 					["sourceQuest"] = 32807,	-- The Warchief and the Darkness
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
-				}),
-				q(32807, {	-- The Warchief and the Darkness
-					["sourceQuest"] = 32806,	-- The King and the Council
-					["provider"] = { "n", 61962 },	-- Lorewalker Cho
-					["g"] = {
-						i(98133),	-- Greater Cache of Treasures
-					},
 				}),
 				q(32679, {	-- Thunder Calls (A)
 					["races"] = ALLIANCE_ONLY,
