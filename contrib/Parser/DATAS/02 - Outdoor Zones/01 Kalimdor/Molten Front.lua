@@ -80,17 +80,15 @@ _.Zones =
 						}),
 					}),
 					n(-17, {	-- Quests
-						{	-- Additional Armaments
-							["questID"] = 29281,
+						q(29281, {	-- Additional Armaments
 							["provider"] = { "n", 53214 },	-- Damek Bloombeard
 							["coord"] = { 47.0, 90.0, 338 },
 							["sourceQuests"] = {
 								29181,	-- Druids of the Talon
 								29214,	-- The Shadow Wardens
 							},
-						},
-						{	-- Agressive Growth
-							["questID"] = 29139,
+						}),
+						q(29139, {	-- Agressive Growth
 							["provider"] = { "n", 52467 },	-- Rayne Feathersong
 							["coord"] = { 48.5, 86.2, 338 },
 							["isDaily"] = true,
@@ -98,9 +96,8 @@ _.Zones =
 							["g"] = {
 								currency(416),	-- Mark of the World Tree x2
 							},
-						},
-						{	-- Breach in the Defenses
-							["questID"] = 29137,
+						}),
+						q(29137, {	-- Breach in the Defenses
 							["provider"] = { "n", 52824 },	-- General Taldris Moonfall
 							["coord"] = { 45.5, 85.8, 338 },
 							["isDaily"] = true,
@@ -108,9 +105,8 @@ _.Zones =
 							["g"] = {
 								currency(416),	-- Mark of the World Tree
 							},
-						},
-						{	-- Burn Victims
-							["questID"] = 29138,
+						}),
+						q(29138, {	-- Burn Victims
 							["provider"] = { "n", 53080 },	-- Captain Irontree
 							["coord"] = { 46.8, 90.0, 338 },
 							["isDaily"] = true,
@@ -118,50 +114,43 @@ _.Zones =
 							["g"] = {
 								currency(416),	-- Mark of the World Tree
 							},
-						},
-						{	-- Calling the Ancients
-							["questID"] = 29283,
+						}),
+						q(29283, {	-- Calling the Ancients
 							["provider"] = { "n", 53882 },	-- Varlan Highbough
 							["coord"] = { 44.4, 88.4, 338 },
 							["sourceQuests"] = {
 								29181,	-- Druids of the Talon
 								29214,	-- The Shadow Wardens
 							},
-						},
-						{	-- Druids of the Talon
-							["questID"] = 29181,
+						}),
+						q(29181, {	-- Druids of the Talon
 							["provider"] = { "n", 52135 },	-- Malfurion Stormrage
 							["coord"] = { 47.0, 91.3, 338 },
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
 							["g"] = {
-								{	-- The Molten Front Offensive
+								crit(3, {	-- The Molten Front Offensive (Recruit the Druids of the Talon)
 									["achievementID"] = 5866,
-									["criteriaID"] = 3,	-- Recruit the Druids of the Talon
-								},
+								}),
 							},
-						},
-						{	-- Elemental Bonds: Fury
-							["questID"] = 29330,
+						}),
+						q(29330, {	-- Elemental Bonds: Fury
 							["provider"] = { "n", 53925 },	-- Aggra
 							["coord"] = { 51.4, 25.7, 338 },
 							["sourceQuest"] = 29338,	-- Into Unrelenting Flame
-						},
-						{	-- Elemental Bonds: The Vow
-							["questID"] = 29331,
+						}),
+						q(29331, {	-- Elemental Bonds: The Vow
 							["coord"] = { 51.4, 25.7, 338 },
 							["sourceQuest"] = 29330,	-- Elemental Bonds: Fury
-						},
-						{	-- Filling the Moonwell
-							["questID"] = 29279,
+						}),
+						q(29279, {	-- Filling the Moonwell
 							["provider"] = { "n", 53881 },	-- Ayla Shadowstorm
 							["coord"] = { 47.0, 90.0, 338 },
 							["sourceQuests"] = {
 								29181,	-- Druids of the Talon
 								29214,	-- The Shadow Wardens
 							},
-						},
-						{	-- Hostile Elements
-							["questID"] = 29179,
+						}),
+						q(29179, {	-- Hostile Elements
 							["provider"] = { "n", 52824 },	-- General Taldris Moonfall
 							["coord"] = { 45.5, 85.8, 338 },
 							["isDaily"] = true,
@@ -169,15 +158,13 @@ _.Zones =
 							["g"] = {
 								currency(416),	-- Mark of the World Tree
 							},
-						},
-						{	-- Some Like It Hot
-							["questID"] = 29299,
+						}),
+						q(29299, {	-- Some Like It Hot
 							["provider"] = { "n", 52489 },	-- Avrilla
 							["coord"] = { 50.64, 87.31, 338 },
 							["isDaily"] = true,
-						},
-						{	-- The Harder They Fall
-							["questID"] = 29141,
+						}),
+						q(29141, {	-- The Harder They Fall
 							["provider"] = { "n", 52824 },	-- General Taldris Moonfall
 							["coord"] = { 45.5, 85.8, 338 },
 							["isDaily"] = true,
@@ -185,21 +172,18 @@ _.Zones =
 							["g"] = {
 								currency(416),	-- Mark of the World Tree x2
 							},
-						},
-						{	-- The Shadow Wardens
-							["questID"] = 29214,
+						}),
+						q(29214, {	-- The Shadow Wardens
 							["provider"] = { "n", 52135 },	-- Malfurion Stormrage
 							["coord"] = { 47.0, 91.3, 338 },
 							["sourceQuest"] = 29201,	-- Through the Gates of Hell
 							["g"] = {
-								{	-- The Molten Front Offensive
+								crit(4, {	-- The Molten Front Offensive (Recruit the Shadow Wardens)
 									["achievementID"] = 5866,
-									["criteriaID"] = 4,	-- Recruit the Shadow Wardens
-								},
+								}),
 							},
-						},
-						{	-- Traitors Return
-							["questID"] = 29142,
+						}),
+						q(29142, {	-- Traitors Return
 							["provider"] = { "n", 52824 },	-- General Taldris Moonfall
 							["coord"] = { 45.5, 85.8, 338 },
 							["isDaily"] = true,
@@ -207,9 +191,8 @@ _.Zones =
 							["g"] = {
 								currency(416),	-- Mark of the World Tree
 							},
-						},
-						{	-- Wisp Away
-							["questID"] = 29143,
+						}),
+						q(29143, {	-- Wisp Away
 							["provider"] = { "n", 52467 },	-- Rayne Feathersong
 							["coord"] = { 48.5, 86.2, 338 },
 							["isDaily"] = true,
@@ -217,7 +200,7 @@ _.Zones =
 							["g"] = {
 								currency(416),	-- Mark of the World Tree
 							},
-						},
+						}),
 						
 						--[[
 						

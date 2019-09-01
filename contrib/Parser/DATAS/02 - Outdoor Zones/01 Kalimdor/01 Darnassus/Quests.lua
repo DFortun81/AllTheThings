@@ -89,18 +89,10 @@ _.Zones =
 					["races"] = { 4 },	-- Night Elf
 					["lvl"] = 20,
 				}),
-				q(4493, {	-- March of the Silithid [Alliance]
-					["provider"] = { "n", 7740 },	-- Gracina Spiritmight
-					["coord"] = { 42.0, 85.4, 89 },
-					["sourceQuest"] = 162,	-- Rise of the Silithid [Alliance]
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 50,
-					["u"] = 40
-				}),
-				i(46876, {	-- Riding Training Pamphlet
-					["questID"]	= 14085,	-- Learn to Ride in Darnassus
+				q(14085, {	-- Learn to Ride in Darnassus
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
+					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
 					["u"] = 40,
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
@@ -126,6 +118,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
+				}),
+				q(4493, {	-- March of the Silithid [Alliance]
+					["provider"] = { "n", 7740 },	-- Gracina Spiritmight
+					["coord"] = { 42.0, 85.4, 89 },
+					["sourceQuest"] = 162,	-- Rise of the Silithid [Alliance]
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+					["u"] = 40
 				}),
 				q(1711, {	-- Mathiel's Armor
 					["provider"] = { "n", 6142 },	-- Mathiel

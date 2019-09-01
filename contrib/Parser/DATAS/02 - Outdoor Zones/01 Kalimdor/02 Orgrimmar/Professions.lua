@@ -357,13 +357,12 @@ _.Zones =
 				}),
 				prof(773, {	-- Inscription
 					n(-17, {	-- Quests
-						{	-- Forged Documents
-							["itemID"] = 63276,	-- Forged Documents
-							["questID"] = 27686,	-- Forged Documents
+						q(27686, {	-- Forged Documents
+							["provider"] = { "i", 63276 },	-- Forged Documents
 							["requireSkill"] = 773,	-- Inscription
 							["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
 							["races"] = HORDE_ONLY,
-						},
+						}),
 					}),
 				}),
 				prof(755, {	-- Jewelcrafting
