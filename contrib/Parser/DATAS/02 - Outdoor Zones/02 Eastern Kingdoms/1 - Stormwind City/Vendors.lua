@@ -2809,15 +2809,12 @@ _.Zones =
 					["coord"] = { 74.4, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+					--	all heirlooms have 'cost' defined here.  if you put each 'cost' in its relevant file (e.g. champion's seals in argent tournament and marks of honor here), they merge and overwrite each other.  at some point we need to disentangle holiday bubbleDowns so that holiday descriptions don't get shoved onto heirlooms that can be purchased at any time.
 						i(122375, {	-- Aged Paundrons of The Five Thunders
 							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
 						}),
-						i(122338, {	-- Ancient Heirloom Armor Casing
-							["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
-						}),
-						i(122339, {	-- Ancient Heirloom Scabbard
-							["cost"] = { { "i", 137642, 14 }, },	-- 14x Mark of Honor
-						}),
+						i(122338),	-- Ancient Heirloom Armor Casing ('cost' list defined in argent tournament file)
+						i(122339),	-- Ancient Heirloom Scabbard ('cost' list defined in argent tournament file)
 						i(122369, {	-- Battleworn Thrash Blade
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 						}),

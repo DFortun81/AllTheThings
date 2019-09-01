@@ -372,20 +372,20 @@ _.Zones =
 							i(166743, {	-- Blight Bomber
 								["description"] = "Cost: 125 Honorbound Service Medals",
 							}),
-							i(166752, {	-- Cloak of Hardened Steel
-								["description"] = "Cost: 75 Honorbound Service Medals",
+							i(166752, {	-- Stone Guard's Bladed Cloak
+								["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
 							}),
-							i(166754, {	-- Battle Hymnal
-								["description"] = "Cost: 75 Honorbound Service Medals",
+							i(166754, {	-- Tome of Thalassian Hymns
+								["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
 							}),
-							i(166753, {	-- Bolstering War Horn
-								["description"] = "Cost: 75 Honorbound Service Medals",
+							i(166753, {	-- Orcish War Horn
+								["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
 							}),
-							i(166755, {	-- Dusk Powder
-								["description"] = "Cost: 75 Honorbound Service Medals",
+							i(166755, {	-- Deathstalkers' Gloaming Powder
+								["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
 							}),
-							i(166756, {	-- Enchanted Warscroll
-								["description"] = "Cost: 75 Honorbound Service Medals",
+							i(166756, {	-- Loa-Touched Warscroll
+								["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
 							}),
 							i(166549, {	-- Fine Crimson Cloak
 								["description"] = "Cost: 125 Honorbound Service Medals",

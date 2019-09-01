@@ -1056,132 +1056,260 @@ _.Zones =
 					n(33602, {	-- Anuur <Jewelcrafting Supplies>
 						["coord"] = { 71.4, 20.8, 118 },
 						["g"] = {
-							currency(61, {	-- Dalaran Jewelcrafter's Token
-								i(42298),	-- Design: Bold Dragon's Eye
-								i(41576),	-- Design: Bold Scarlet Ruby
-								i(42309),	-- Design: Brilliant Dragon's Eye
-								i(42300, {	-- Design: Brilliant Dragon's Eye
-									["spellID"] = 0,	-- This is now available via 42309, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41704),	-- Design: Chaotic Skyflare Diamond
-								i(41687),	-- Design: Deft Monarch Topaz
-								i(41792, {	-- Design: Design: Deft Monarch Topaz
-									["spellID"] = 0,	-- This is now available via 41687, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(42301),	-- Design: Delicate Dragon's Eye
-								i(42299, {	-- Design: Delicate Dragon's Eye
-									["spellID"] = 0,	-- This is now available via 42301, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41577),	-- Design: Delicate Scarlet Ruby
-								i(41706),	-- Design: Ember Skyflare Diamond
-								i(41692),	-- Design: Energized Forest Emerald
-								i(41694, {	-- Design: Energized Forest Emerald
-									["spellID"] = 0,	-- This is now available via 41692, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(42302),	-- Design: Flashing Dragon's Eye
-								i(41578),	-- Design: Flashing Scarlet Ruby
-								i(41693),	-- Design: Forceful Forest Emerald
-								i(41582),	-- Design: Glinting Twilight Opal
-								i(41785, {	-- Design: Glinting Twilight Opal
-									["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41796, {	-- Design: Glinting Twilight Opal
-									["spellID"] = 0,	-- This is now available via 41796, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41708),	-- Design: Insightful Earthsiege Diamond
-								i(41709),	-- Design: Invigorating Earthsiege Diamond
-								i(41702),	-- Design: Jagged Forest Emerald
-								i(41696),	-- Design: Lightning Forest Emerald
-								i(41782, {	-- Design: Lightning Forest Emerald
-									["spellID"] = 0,	-- This is now available via 41696, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41565),	-- Design: Lucent Huge Citrine
-								i(41564, {	-- Design: Lucent Huge Citrine
-									["spellID"] = 0,	-- This is now available via 41565, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41575),	-- Design: Mysterious Shadow Crystal
-								i(42305),	-- Design: Mystic Dragon's Eye
-								i(41559),	-- Design: Mystic Sun Crystal
-								i(41698),	-- Design: Nimble Forest Emerald
-								i(41686),	-- Design: Potent Monarch Topaz
-								i(42306),	-- Design: Precise Dragon's Eye
-								i(41579),	-- Design: Quick Autumn's Glow
-								i(42307),	-- Design: Quick Dragon's Eye
-								i(41570),	-- Design: Radiant Dark Jade
-								i(41690),	-- Design: Reckless Monarch Topaz
-								i(41689, {	-- Design: Design: Reckless Monarch Topaz
-									["spellID"] = 0,	-- This is now available via 41690, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41697),	-- Design: Regal Forest Emerald
-								i(41703, {	-- Design: Regal Forest Emerald
-									["spellID"] = 0,	-- This is now available via 41697, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41710),	-- Design: Relentless Earthsiege Diamond
-								i(41566),	-- Design: Resplendent Huge Citrine
-								i(41707),	-- Design: Revitalizing Skyflare Diamond
-								i(42308),	-- Design: Rigid Dragon's Eye
-								i(41580),	-- Design: Rigid Sky Sapphire
-								i(43317),	-- Design: Ring of Earthen Might
-								i(43320),	-- Design: Ring of Northern Tears
-								i(43318),	-- Design: Ring of Scarlet Shadows
-								i(43497),	-- Design: Savage Titanium Band
-								i(43485),	-- Design: Savage Titanium Ring
-								i(41569),	-- Design: Shattered Dark Jade
-								i(41705),	-- Design: Shielded Skyflare Diamond
-								i(41747),	-- Design: Shifting Twilight Opal
-								i(42310),	-- Design: Smooth Dragon's Eye
-								i(42303, {	-- Design: Smooth Dragon's Eye
-									["spellID"] = 0,	-- This is now available via 42310, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(42311),	-- Design: Solid Dragon's Eye
-								i(42138),	-- Design: Solid Sky Sapphire
-								i(42312),	-- Design: Sparkling Dragon's Eye
-								i(42304, {	-- Design: Sparkling Dragon's Eye
-									["spellID"] = 0,	-- This is now available via 42312, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41581),	-- Design: Sparkling Sky Sapphire
-								i(41572),	-- Design: Steady Dark Jade
-								i(41560),	-- Design: Stormy Chalcedony
-								i(42313),	-- Design: Stormy Dragon's Eye
-								i(41719),	-- Design: Subtle Autumn's Glow
-								i(41791, {	-- Design: Subtle Autumn's Glow
-									["spellID"] = 0,	-- This is now available via 41719, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(42314),	-- Design: Subtle Dragon's Eye
-								i(42315, {	-- Design: Subtle Dragon's Eye
-									["spellID"] = 0,	-- This is now available via 42314, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(42652),	-- Design: Titanium Earthguard Chain
-								i(42649),	-- Design: Titanium Earthguard Ring
-								i(43597),	-- Design: Titanium Frostguard Ring
-								i(42648),	-- Design: Titanium Impact Band
-								i(42651),	-- Design: Titanium Impact Choker
-								i(42653),	-- Design: Titanium Spellshock Necklace
-								i(42650),	-- Design: Titanium Spellshock Ring
-								i(41711),	-- Design: Trenchant Earthsiege Diamond
-								i(41571),	-- Design: Turbid Dark Jade
-								i(41573, {	-- Design: Turbid Dark Jade
-									["spellID"] = 0,	-- This is now available via 41571, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(41688),	-- Design: Veiled Twilight Opal
-								i(41563),	-- Design: Willful Huge Citrine
-								i(43319),	-- Design: Windfire Band
-								i(42225),	-- Dragon's Eye
+							i(42298, {	-- Design: Bold Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(41576, {	-- Design: Bold Scarlet Ruby
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(42309, {	-- Design: Brilliant Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(42300, {	-- Design: Brilliant Dragon's Eye
+								["spellID"] = 0,	-- This is now available via 42309, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41704, {	-- Design: Chaotic Skyflare Diamond
+								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
+							}),
+							i(41687, {	-- Design: Deft Monarch Topaz
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41792, {	-- Design: Design: Deft Monarch Topaz
+								["spellID"] = 0,	-- This is now available via 41687, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(42301, {	-- Design: Delicate Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(42299, {	-- Design: Delicate Dragon's Eye
+								["spellID"] = 0,	-- This is now available via 42301, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41577, {	-- Design: Delicate Scarlet Ruby
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41706, {	-- Design: Ember Skyflare Diamond
+								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
+							}),
+							i(41692, {	-- Design: Energized Forest Emerald
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41694, {	-- Design: Energized Forest Emerald
+								["spellID"] = 0,	-- This is now available via 41692, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(42302, {	-- Design: Flashing Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(41578, {	-- Design: Flashing Scarlet Ruby
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41693, {	-- Design: Forceful Forest Emerald
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41582, {	-- Design: Glinting Twilight Opal
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41785, {	-- Design: Glinting Twilight Opal
+								["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41796, {	-- Design: Glinting Twilight Opal
+								["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41708, {	-- Design: Insightful Earthsiege Diamond
+								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
+							}),
+							i(41709, {	-- Design: Invigorating Earthsiege Diamond
+								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
+							}),
+							i(41702, {	-- Design: Jagged Forest Emerald
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41696, {	-- Design: Lightning Forest Emerald
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41782, {	-- Design: Lightning Forest Emerald
+								["spellID"] = 0,	-- This is now available via 41696, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41565, {	-- Design: Lucent Huge Citrine
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(41564, {	-- Design: Lucent Huge Citrine
+								["spellID"] = 0,	-- This is now available via 41565, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41575, {	-- Design: Mysterious Shadow Crystal
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(42305, {	-- Design: Mystic Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(41559, {	-- Design: Mystic Sun Crystal
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(41698, {	-- Design: Nimble Forest Emerald
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41686, {	-- Design: Potent Monarch Topaz
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(42306, {	-- Design: Precise Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(41579, {	-- Design: Quick Autumn's Glow
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(42307, {	-- Design: Quick Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(41570, {	-- Design: Radiant Dark Jade
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(41690, {	-- Design: Reckless Monarch Topaz
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41689, {	-- Design: Reckless Monarch Topaz
+								["spellID"] = 0,	-- This is now available via 41690, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41697, {	-- Design: Regal Forest Emerald
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41703, {	-- Design: Regal Forest Emerald
+								["spellID"] = 0,	-- This is now available via 41697, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41710, {	-- Design: Relentless Earthsiege Diamond
+								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
+							}),
+							i(41566, {	-- Design: Resplendent Huge Citrine
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(41707, {	-- Design: Revitalizing Skyflare Diamond
+								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
+							}),
+							i(42308, {	-- Design: Rigid Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(41580, {	-- Design: Rigid Sky Sapphire
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(43317, {	-- Design: Ring of Earthen Might
+								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+							}),
+							i(43320, {	-- Design: Ring of Northern Tears
+								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+							}),
+							i(43318, {	-- Design: Ring of Scarlet Shadows
+								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+							}),
+							i(43497, {	-- Design: Savage Titanium Band
+								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+							}),
+							i(43485, {	-- Design: Savage Titanium Ring
+								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+							}),
+							i(41569, {	-- Design: Shattered Dark Jade
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(41705, {	-- Design: Shielded Skyflare Diamond
+								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
+							}),
+							i(41747, {	-- Design: Shifting Twilight Opal
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(42310, {	-- Design: Smooth Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(42303, {	-- Design: Smooth Dragon's Eye
+								["spellID"] = 0,	-- This is now available via 42310, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(42311, {	-- Design: Solid Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(42138, {	-- Design: Solid Sky Sapphire
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(42312, {	-- Design: Sparkling Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(42304, {	-- Design: Sparkling Dragon's Eye
+								["spellID"] = 0,	-- This is now available via 42312, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41581, {	-- Design: Sparkling Sky Sapphire
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41572, {	-- Design: Steady Dark Jade
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(41560, {	-- Design: Stormy Chalcedony
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(42313, {	-- Design: Stormy Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(41719, {	-- Design: Subtle Autumn's Glow
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41791, {	-- Design: Subtle Autumn's Glow
+								["spellID"] = 0,	-- This is now available via 41719, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(42314, {	-- Design: Subtle Dragon's Eye
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							i(42315, {	-- Design: Subtle Dragon's Eye
+								["spellID"] = 0,	-- This is now available via 42314, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(42652, {	-- Design: Titanium Earthguard Chain
+								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
+							}),
+							i(42649, {	-- Design: Titanium Earthguard Ring
+								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
+							}),
+							i(43597, {	-- Design: Titanium Frostguard Ring
+								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
+							}),
+							i(42648, {	-- Design: Titanium Impact Band
+								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
+							}),
+							i(42651, {	-- Design: Titanium Impact Choker
+								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
+							}),
+							i(42653, {	-- Design: Titanium Spellshock Necklace
+								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
+							}),
+							i(42650, {	-- Design: Titanium Spellshock Ring
+								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
+							}),
+							i(41711, {	-- Design: Trenchant Earthsiege Diamond
+								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
+							}),
+							i(41571, {	-- Design: Turbid Dark Jade
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(41573, {	-- Design: Turbid Dark Jade
+								["spellID"] = 0,	-- This is now available via 41571, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(41688, {	-- Design: Veiled Twilight Opal
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(41563, {	-- Design: Willful Huge Citrine
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
+							}),
+							i(43319, {	-- Design: Windfire Band
+								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+							}),
+							i(42225, {	-- Dragon's Eye
+								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
 						},
 					}),
@@ -1189,108 +1317,114 @@ _.Zones =
 						["coord"] = { 75.2, 21.6, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(47702),	-- Pauldrons of the Cavalier
+							i(47732),	-- Band of the Invoker
+							i(47729),	-- Bloodshed Band
 							i(47658),	-- Brimstone Igniter
-							i(47674),	-- Helm of Thunderous Rampage
-							i(47677),	-- Faceplate of the Honorbound
-							i(47681),	-- Heaume of the Restless Watch
-							i(47685),	-- Helm of the Brooding Dragon
-							i(47686),	-- Helm of Inner Warmth
-							i(47689),	-- Hood of Lethal Intent
-							i(47690),	-- Helm of Abundant Growth
-							i(47693),	-- Hood of Fiery Aftermath
-							i(47694),	-- Helm of Clouded Sight
-							i(47697),	-- Pauldrons of Trembling Rage
-							i(47698),	-- Shoulderplates of Enduring Order
-							i(47704),	-- Epaulets of the Devourer
-							i(47707),	-- Mantle of the Groundbreaker
+							i(47731),	-- Clutch of Fortification
+							i(47556),	-- Crusader Orb
+							i(47730),	-- Dexterous Brightstone Ring
 							i(47708),	-- Duskstalker Shoulderpads
-							i(47712),	-- Shoulders of the Fateful Accord
-							i(47713),	-- Mantle of Catastrophic Emanation
-							i(47715),	-- Pauldrons of Revered Mortality
-							i(41038),	-- Furious Gladiator's Ringmail Spaulders
-							i(41044),	-- Furious Gladiator's Mail Spaulders
-							i(41081),	-- Furious Gladiator's Linked Armor
+							i(47704),	-- Epaulets of the Devourer
+							i(47677),	-- Faceplate of the Honorbound
 							i(41087),	-- Furious Gladiator's Chain Armor
-							i(41137),	-- Furious Gladiator's Linked Gauntlets
 							i(41143),	-- Furious Gladiator's Chain Gauntlets
-							i(41151),	-- Furious Gladiator's Linked Helm
 							i(41157),	-- Furious Gladiator's Chain Helm
-							i(41199),	-- Furious Gladiator's Linked Leggings
 							i(41205),	-- Furious Gladiator's Chain Leggings
-							i(41211),	-- Furious Gladiator's Linked Spaulders
 							i(41217),	-- Furious Gladiator's Chain Spaulders
-							i(41275),	-- Furious Gladiator's Kodohide Spaulders
-							i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
-							i(41287),	-- Furious Gladiator's Kodohide Gloves
-							i(41293),	-- Furious Gladiator's Wyrmhide Gloves
-							i(41298),	-- Furious Gladiator's Kodohide Legguards
-							i(41304),	-- Furious Gladiator's Wyrmhide Legguards
-							i(41310),	-- Furious Gladiator's Kodohide Robes
-							i(41316),	-- Furious Gladiator's Wyrmhide Robes
-							i(41321),	-- Furious Gladiator's Kodohide Helm
-							i(41327),	-- Furious Gladiator's Wyrmhide Helm
-							i(41650),	-- Furious Gladiator's Leather Tunic
-							i(41655),	-- Furious Gladiator's Leather Legguards
-							i(41661),	-- Furious Gladiator's Dragonhide Robes
-							i(41667),	-- Furious Gladiator's Dragonhide Legguards
-							i(40788),	-- Furious Gladiator's Scaled Chestpiece
-							i(41678),	-- Furious Gladiator's Dragonhide Helm
-							i(41683),	-- Furious Gladiator's Leather Spaulders
-							i(41715),	-- Furious Gladiator's Dragonhide Spaulders
-							i(41767),	-- Furious Gladiator's Leather Gloves
 							i(41773),	-- Furious Gladiator's Dragonhide Gloves
-							i(41854),	-- Furious Gladiator's Mooncloth Hood
-							i(41859),	-- Furious Gladiator's Mooncloth Robe
-							i(41864),	-- Furious Gladiator's Mooncloth Leggings
-							i(41869),	-- Furious Gladiator's Mooncloth Mantle
-							i(41874),	-- Furious Gladiator's Mooncloth Gloves
-							i(41915),	-- Furious Gladiator's Satin Hood
-							i(41921),	-- Furious Gladiator's Satin Robe
-							i(41927),	-- Furious Gladiator's Satin Leggings
-							i(41934),	-- Furious Gladiator's Satin Mantle
-							i(41940),	-- Furious Gladiator's Satin Gloves
-							i(41946),	-- Furious Gladiator's Silk Cowl
-							i(41953),	-- Furious Gladiator's Silk Raiment
-							i(41959),	-- Furious Gladiator's Silk Trousers
-							i(41965),	-- Furious Gladiator's Silk Amice
-							i(41971),	-- Furious Gladiator's Silk Handguards
+							i(41678),	-- Furious Gladiator's Dragonhide Helm
+							i(41667),	-- Furious Gladiator's Dragonhide Legguards
+							i(41661),	-- Furious Gladiator's Dragonhide Robes
+							i(41715),	-- Furious Gladiator's Dragonhide Spaulders
+							i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
+							i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
+							i(40827),	-- Furious Gladiator's Dreadplate Helm
+							i(40848),	-- Furious Gladiator's Dreadplate Legguards
+							i(40868),	-- Furious Gladiator's Dreadplate Shoulders
+							i(42011),	-- Furious Gladiator's Felweave Amice
 							i(41993),	-- Furious Gladiator's Felweave Cowl
+							i(42017),	-- Furious Gladiator's Felweave Handguards
 							i(41998),	-- Furious Gladiator's Felweave Raiment
 							i(42005),	-- Furious Gladiator's Felweave Trousers
-							i(42011),	-- Furious Gladiator's Felweave Amice
-							i(42017),	-- Furious Gladiator's Felweave Handguards
-							i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
-							i(40789),	-- Furious Gladiator's Plate Chestpiece
-							i(40807),	-- Furious Gladiator's Plate Gauntlets
-							i(40808),	-- Furious Gladiator's Scaled Gauntlets
-							i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
-							i(40826),	-- Furious Gladiator's Plate Helm
-							i(40827),	-- Furious Gladiator's Dreadplate Helm
-							i(40828),	-- Furious Gladiator's Scaled Helm
-							i(40847),	-- Furious Gladiator's Plate Legguards
-							i(40848),	-- Furious Gladiator's Dreadplate Legguards
-							i(40849),	-- Furious Gladiator's Scaled Legguards
-							i(40866),	-- Furious Gladiator's Plate Shoulders
-							i(40868),	-- Furious Gladiator's Dreadplate Shoulders
-							i(40869),	-- Furious Gladiator's Scaled Shoulders
+							i(41287),	-- Furious Gladiator's Kodohide Gloves
+							i(41321),	-- Furious Gladiator's Kodohide Helm
+							i(41298),	-- Furious Gladiator's Kodohide Legguards
+							i(41310),	-- Furious Gladiator's Kodohide Robes
+							i(41275),	-- Furious Gladiator's Kodohide Spaulders
+							i(41767),	-- Furious Gladiator's Leather Gloves
+							i(41672),	-- Furious Gladiator's Leather Helm
+							i(41655),	-- Furious Gladiator's Leather Legguards
+							i(41683),	-- Furious Gladiator's Leather Spaulders
+							i(41650),	-- Furious Gladiator's Leather Tunic
+							i(41081),	-- Furious Gladiator's Linked Armor
+							i(41137),	-- Furious Gladiator's Linked Gauntlets
+							i(41151),	-- Furious Gladiator's Linked Helm
+							i(41199),	-- Furious Gladiator's Linked Leggings
+							i(41211),	-- Furious Gladiator's Linked Spaulders
+							i(40993),	-- Furious Gladiator's Mail Armor
+							i(41007),	-- Furious Gladiator's Mail Gauntlets
+							i(41019),	-- Furious Gladiator's Mail Helm
+							i(41033),	-- Furious Gladiator's Mail Leggings
+							i(41044),	-- Furious Gladiator's Mail Spaulders
+							i(41874),	-- Furious Gladiator's Mooncloth Gloves
+							i(41854),	-- Furious Gladiator's Mooncloth Hood
+							i(41864),	-- Furious Gladiator's Mooncloth Leggings
+							i(41869),	-- Furious Gladiator's Mooncloth Mantle
+							i(41859),	-- Furious Gladiator's Mooncloth Robe
 							i(40907),	-- Furious Gladiator's Ornamented Chestguard
 							i(40927),	-- Furious Gladiator's Ornamented Gloves
 							i(40933),	-- Furious Gladiator's Ornamented Headcover
 							i(40939),	-- Furious Gladiator's Ornamented Legplates
 							i(40963),	-- Furious Gladiator's Ornamented Spaulders
+							i(40789),	-- Furious Gladiator's Plate Chestpiece
+							i(40807),	-- Furious Gladiator's Plate Gauntlets
+							i(40826),	-- Furious Gladiator's Plate Helm
+							i(40847),	-- Furious Gladiator's Plate Legguards
+							i(40866),	-- Furious Gladiator's Plate Shoulders
 							i(40992),	-- Furious Gladiator's Ringmail Armor
-							i(40993),	-- Furious Gladiator's Mail Armor
 							i(41001),	-- Furious Gladiator's Ringmail Gauntlets
-							i(41007),	-- Furious Gladiator's Mail Gauntlets
 							i(41013),	-- Furious Gladiator's Ringmail Helm
-							i(41019),	-- Furious Gladiator's Mail Helm
 							i(41027),	-- Furious Gladiator's Ringmail Leggings
-							i(41033),	-- Furious Gladiator's Mail Leggings
-							i(41672),	-- Furious Gladiator's Leather Helm
+							i(41038),	-- Furious Gladiator's Ringmail Spaulders
+							i(41940),	-- Furious Gladiator's Satin Gloves
+							i(41915),	-- Furious Gladiator's Satin Hood
+							i(41927),	-- Furious Gladiator's Satin Leggings
+							i(41934),	-- Furious Gladiator's Satin Mantle
+							i(41921),	-- Furious Gladiator's Satin Robe
+							i(40788),	-- Furious Gladiator's Scaled Chestpiece
+							i(40808),	-- Furious Gladiator's Scaled Gauntlets
+							i(40828),	-- Furious Gladiator's Scaled Helm
+							i(40849),	-- Furious Gladiator's Scaled Legguards
+							i(40869),	-- Furious Gladiator's Scaled Shoulders
+							i(41965),	-- Furious Gladiator's Silk Amice
+							i(41946),	-- Furious Gladiator's Silk Cowl
+							i(41971),	-- Furious Gladiator's Silk Handguards
+							i(41953),	-- Furious Gladiator's Silk Raiment
+							i(41959),	-- Furious Gladiator's Silk Trousers
+							i(41293),	-- Furious Gladiator's Wyrmhide Gloves
+							i(41327),	-- Furious Gladiator's Wyrmhide Helm
+							i(41304),	-- Furious Gladiator's Wyrmhide Legguards
+							i(41316),	-- Furious Gladiator's Wyrmhide Robes
+							i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
 							i(47735),	-- Glyph of Indomitability
+							i(47733),	-- Heartmender Circle
+							i(47681),	-- Heaume of the Restless Watch
+							i(47690),	-- Helm of Abundant Growth
+							i(47694),	-- Helm of Clouded Sight
+							i(47686),	-- Helm of Inner Warmth
+							i(47685),	-- Helm of the Brooding Dragon
+							i(47674),	-- Helm of Thunderous Rampage
+							i(47693),	-- Hood of Fiery Aftermath
+							i(47689),	-- Hood of Lethal Intent
+							i(47713),	-- Mantle of Catastrophic Emanation
+							i(47707),	-- Mantle of the Groundbreaker
 							i(47734),	-- Mark of Supremacy
+							i(47715),	-- Pauldrons of Revered Mortality
+							i(47702),	-- Pauldrons of the Cavalier
+							i(47697),	-- Pauldrons of Trembling Rage
 							i(48722),	-- Shard of the Crystal Heart
+							i(47698),	-- Shoulderplates of Enduring Order
+							i(47712),	-- Shoulders of the Fateful Accord
 							i(48724),	-- Talisman of Resurgence
 						},
 					}),
@@ -1305,7 +1439,7 @@ _.Zones =
 								i(47786),	-- Kel'Thuzad's Robe of Conquest
 								i(47787),	-- Kel'Thuzad's Shoulderpads of Conquest
 							}),
-							gs(722, {	-- Khadgar's Regalia1
+							gs(722, {	-- Khadgar's Regalia
 								i(47752),	-- Khadgar's Gauntlets of Conquest
 								i(47748),	-- Khadgar's Hood of Conquest
 								i(47750),	-- Khadgar's Leggings of Conquest
@@ -1419,122 +1553,137 @@ _.Zones =
 						["coord"] = { 75.4, 22.0, 118 },
 						["races"] = HORDE_ONLY,
 						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
-							gs(350, {	-- Zabra's Regalia
-								i(48068),	-- Zabra's Cowl of Conquest
-								i(48071),	-- Zabra's Shoulderpads of Conquest
-								i(48070),	-- Zabra's Robe of Conquest
-								i(48067),	-- Zabra's Gloves of Conquest
-								i(48069),	-- Zabra's Leggings of Conquest
-								i(48098),	-- Zabra's Circlet of Conquest
-								i(48101),	-- Zabra's Mantle of Conquest
-								i(48100),	-- Zabra's Raiments of Conquest
-								i(48097),	-- Zabra's Handwraps of Conquest
-								i(48099),	-- Zabra's Pants of Conquest
-							}),
-							gs(723, {	-- Sunstrider's Regalia
-								i(47774),	-- Sunstrider's Hood of Conquest
-								i(47777),	-- Sunstrider's Shoulderpads of Conquest
-								i(47776),	-- Sunstrider's Robe of Conquest
-								i(47773),	-- Sunstrider's Gauntlets of Conquest
-								i(47775),	-- Sunstrider's Leggings of Conquest
-							}),
-							gs(675, {	-- Gul'dan's Regalia
-								i(47801),	-- Gul'dan's Hood of Conquest
-								i(47798),	-- Gul'dan's Shoulderpads of Conquest
-								i(47799),	-- Gul'dan's Robe of Conquest
-								i(47802),	-- Gul'dan's Gloves of Conquest
-								i(47800),	-- Gul'dan's Leggings of Conquest
-							}),
-							gs(826, {	-- Runetotem's Battlegear
-								i(48188),	-- Runetotem's Headguard of Conquest
-								i(48191),	-- Runetotem's Shoulderpads of Conquest
-								i(48189),	-- Runetotem's Raiments of Conquest
-								i(48192),	-- Runetotem's Handgrips of Conquest
-								i(48190),	-- Runetotem's Legguards of Conquest
-								i(48184),	-- Runetotem's Cover of Conquest
-								i(48187),	-- Runetotem's Mantle of Conquest
-								i(48186),	-- Runetotem's Vestments of Conquest
-								i(48183),	-- Runetotem's Gloves of Conquest
-								i(48185),	-- Runetotem's Trousers of Conquest
-								i(48154),	-- Runetotem's Headpiece of Conquest
-								i(48157),	-- Runetotem's Spaulders of Conquest
-								i(48156),	-- Runetotem's Robe of Conquest
-								i(48153),	-- Runetotem's Handguards of Conquest
-								i(48155),	-- Runetotem's Leggings of Conquest
-							}),
 							gs(691, {	-- Garona's Battlegear
-								i(48245),	-- Garona's Helmet of Conquest
-								i(48247),	-- Garona's Pauldrons of Conquest
 								i(48243),	-- Garona's Breastplate of Conquest
 								i(48244),	-- Garona's Gauntlets of Conquest
+								i(48245),	-- Garona's Helmet of Conquest
 								i(48246),	-- Garona's Legplates of Conquest
+								i(48247),	-- Garona's Pauldrons of Conquest
 							}),
-							gs(738, {	-- Windrunner's Pursuit
-								i(48277),	-- Windrunner's Headpiece of Conquest
-								i(48279),	-- Windrunner's Spaulders of Conquest
-								i(48275),	-- Windrunner's Tunic of Conquest
-								i(48276),	-- Windrunner's Handguards of Conquest
-								i(48278),	-- Windrunner's Legguards of Conquest
-							}),
-							gs(641, {	-- Thrall's Garb
-								i(48338),	-- Thrall's Helm of Conquest
-								i(48340),	-- Thrall's Shoulderpads of Conquest
-								i(48336),	-- Thrall's Hauberk of Conquest
-								i(48337),	-- Thrall's Gloves of Conquest
-								i(48339),	-- Thrall's Kilt of Conquest
-								i(48368),	-- Thrall's Faceguard of Conquest
-								i(48370),	-- Thrall's Shoulderguards of Conquest
-								i(48366),	-- Thrall's Chestguard of Conquest
-								i(48367),	-- Thrall's Grips of Conquest
-								i(48369),	-- Thrall's War-Kilt of Conquest
-								i(48297),	-- Thrall's Headpiece of Conquest
-								i(48299),	-- Thrall's Spaulders of Conquest
-								i(48295),	-- Thrall's Tunic of Conquest
-								i(48296),	-- Thrall's Handguards of Conquest
-								i(48298),	-- Thrall's Legguards of Conquest
-							}),
-							gs(707, {	-- Liadrin's Plate
-								i(48597),	-- Liadrin's Headpiece of Conquest
-								i(48595),	-- Liadrin's Spaulders of Conquest
-								i(48599),	-- Liadrin's Tunic of Conquest
-								i(48598),	-- Liadrin's Gloves of Conquest
-								i(48596),	-- Liadrin's Greaves of Conquest
-								i(48654),	-- Liadrin's Faceguard of Conquest
-								i(48656),	-- Liadrin's Shoulderguards of Conquest
-								i(48652),	-- Liadrin's Breastplate of Conquest
-								i(48653),	-- Liadrin's Handguards of Conquest
-								i(48655),	-- Liadrin's Legguards of Conquest
-								i(48629),	-- Liadrin's Helm of Conquest
-								i(48627),	-- Liadrin's Shoulderplates of Conquest
-								i(48631),	-- Liadrin's Battleplate of Conquest
-								i(48630),	-- Liadrin's Gauntlets of Conquest
-								i(48628),	-- Liadrin's Legplates of Conquest
+							gs(675, {	-- Gul'dan's Regalia
+								i(47802),	-- Gul'dan's Gloves of Conquest
+								i(47801),	-- Gul'dan's Hood of Conquest
+								i(47800),	-- Gul'dan's Leggings of Conquest
+								i(47799),	-- Gul'dan's Robe of Conquest
+								i(47798),	-- Gul'dan's Shoulderpads of Conquest
 							}),
 							gs(657, {	-- Hellscream's Battlegear
-								i(48388),	-- Hellscream's Helmet of Conquest
-								i(48390),	-- Hellscream's Shoulderplates of Conquest
 								i(48386),	-- Hellscream's Battleplate of Conquest
-								i(48387),	-- Hellscream's Gauntlets of Conquest
-								i(48389),	-- Hellscream's Legplates of Conquest
-								i(48458),	-- Hellscream's Greathelm of Conquest
-								i(48460),	-- Hellscream's Pauldrons of Conquest
 								i(48456),	-- Hellscream's Breastplate of Conquest
+								i(48387),	-- Hellscream's Gauntlets of Conquest
+								i(48458),	-- Hellscream's Greathelm of Conquest
 								i(48457),	-- Hellscream's Handguards of Conquest
+								i(48388),	-- Hellscream's Helmet of Conquest
 								i(48459),	-- Hellscream's Legguards of Conquest
+								i(48389),	-- Hellscream's Legplates of Conquest
+								i(48460),	-- Hellscream's Pauldrons of Conquest
+								i(48390),	-- Hellscream's Shoulderplates of Conquest
 							}),
 							gs(841, {	-- Koltira's Battlegear
-								i(48560),	-- Koltira's Faceguard of Conquest
-								i(48562),	-- Koltira's Pauldrons of Conquest
-								i(48558),	-- Koltira's Chestguard of Conquest
-								i(48559),	-- Koltira's Handguards of Conquest
-								i(48561),	-- Koltira's Legguards of Conquest
-								i(48503),	-- Koltira's Helmet of Conquest
-								i(48505),	-- Koltira's Shoulderpads of Conquest
 								i(48501),	-- Koltira's Battleplate of Conquest
+								i(48558),	-- Koltira's Chestguard of Conquest
+								i(48560),	-- Koltira's Faceguard of Conquest
 								i(48502),	-- Koltira's Gauntlets of Conquest
+								i(48559),	-- Koltira's Handguards of Conquest
+								i(48503),	-- Koltira's Helmet of Conquest
+								i(48561),	-- Koltira's Legguards of Conquest
 								i(48504),	-- Koltira's Legplates of Conquest
+								i(48562),	-- Koltira's Pauldrons of Conquest
+								i(48505),	-- Koltira's Shoulderpads of Conquest
+							}),
+							gs(707, {	-- Liadrin's Plate
+								i(48631),	-- Liadrin's Battleplate of Conquest
+								i(48652),	-- Liadrin's Breastplate of Conquest
+								i(48654),	-- Liadrin's Faceguard of Conquest
+								i(48630),	-- Liadrin's Gauntlets of Conquest
+								i(48598),	-- Liadrin's Gloves of Conquest
+								i(48596),	-- Liadrin's Greaves of Conquest
+								i(48653),	-- Liadrin's Handguards of Conquest
+								i(48597),	-- Liadrin's Headpiece of Conquest
+								i(48629),	-- Liadrin's Helm of Conquest
+								i(48655),	-- Liadrin's Legguards of Conquest
+								i(48628),	-- Liadrin's Legplates of Conquest
+								i(48656),	-- Liadrin's Shoulderguards of Conquest
+								i(48627),	-- Liadrin's Shoulderplates of Conquest
+								i(48595),	-- Liadrin's Spaulders of Conquest
+								i(48599),	-- Liadrin's Tunic of Conquest
+							}),
+							gs(826, {	-- Runetotem's Battlegear
+								i(48184),	-- Runetotem's Cover of Conquest
+								i(48183),	-- Runetotem's Gloves of Conquest
+								i(48192),	-- Runetotem's Handgrips of Conquest
+								i(48153),	-- Runetotem's Handguards of Conquest
+								i(48188),	-- Runetotem's Headguard of Conquest
+								i(48154),	-- Runetotem's Headpiece of Conquest
+								i(48155),	-- Runetotem's Leggings of Conquest
+								i(48190),	-- Runetotem's Legguards of Conquest
+								i(48187),	-- Runetotem's Mantle of Conquest
+								i(48189),	-- Runetotem's Raiments of Conquest
+								i(48156),	-- Runetotem's Robe of Conquest
+								i(48191),	-- Runetotem's Shoulderpads of Conquest
+								i(48157),	-- Runetotem's Spaulders of Conquest
+								i(48185),	-- Runetotem's Trousers of Conquest
+								i(48186),	-- Runetotem's Vestments of Conquest
+							}),
+							gs(723, {	-- Sunstrider's Regalia
+								i(47773),	-- Sunstrider's Gauntlets of Conquest
+								i(47774),	-- Sunstrider's Hood of Conquest
+								i(47775),	-- Sunstrider's Leggings of Conquest
+								i(47776),	-- Sunstrider's Robe of Conquest
+								i(47777),	-- Sunstrider's Shoulderpads of Conquest
+							}),
+							gs(641, {	-- Thrall's Garb
+								i(48366),	-- Thrall's Chestguard of Conquest
+								i(48368),	-- Thrall's Faceguard of Conquest
+								i(48337),	-- Thrall's Gloves of Conquest
+								i(48367),	-- Thrall's Grips of Conquest
+								i(48296),	-- Thrall's Handguards of Conquest
+								i(48336),	-- Thrall's Hauberk of Conquest
+								i(48297),	-- Thrall's Headpiece of Conquest
+								i(48338),	-- Thrall's Helm of Conquest
+								i(48339),	-- Thrall's Kilt of Conquest
+								i(48298),	-- Thrall's Legguards of Conquest
+								i(48370),	-- Thrall's Shoulderguards of Conquest
+								i(48340),	-- Thrall's Shoulderpads of Conquest
+								i(48299),	-- Thrall's Spaulders of Conquest
+								i(48295),	-- Thrall's Tunic of Conquest
+								i(48369),	-- Thrall's War-Kilt of Conquest
+							}),
+							gs(738, {	-- Windrunner's Pursuit
+								i(48276),	-- Windrunner's Handguards of Conquest
+								i(48277),	-- Windrunner's Headpiece of Conquest
+								i(48278),	-- Windrunner's Legguards of Conquest
+								i(48279),	-- Windrunner's Spaulders of Conquest
+								i(48275),	-- Windrunner's Tunic of Conquest
+							}),
+							gs(350, {	-- Zabra's Regalia
+								i(48098),	-- Zabra's Circlet of Conquest
+								i(48068),	-- Zabra's Cowl of Conquest
+								i(48067),	-- Zabra's Gloves of Conquest
+								i(48097),	-- Zabra's Handwraps of Conquest
+								i(48069),	-- Zabra's Leggings of Conquest
+								i(48101),	-- Zabra's Mantle of Conquest
+								i(48099),	-- Zabra's Pants of Conquest
+								i(48100),	-- Zabra's Raiments of Conquest
+								i(48070),	-- Zabra's Robe of Conquest
+								i(48071),	-- Zabra's Shoulderpads of Conquest
 							}),
 						}),
+					}),
+					n(33853, {	-- Broxel Goldgrasp <Souvenirs>
+						["coord"] = { 73.0, 23.0, 118 },
+						["g"] = {
+							i(45670),	-- Darnassus Doublet
+							i(45668),	-- Exodar Doublet
+							i(45671),	-- Gnomeregan Doublet
+							i(45666),	-- Ironforge Doublet
+							i(45672),	-- Orgrimmar Doublet
+							i(45669),	-- Sen'jin Doublet
+							i(45664),	-- Silvermoon Doublet
+							i(45667),	-- Stormwind Doublet
+							i(45673),	-- Thunder Bluff Doublet
+							i(45674),	-- Undercity Doublet
+						},
 					}),
 					n(35576, {	-- Champion Faesrol <Triumphant Armor Vendor>
 						["coord"] = { 75.2, 22.0, 118 },
@@ -1788,80 +1937,250 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(45574),	-- Stormwind Tabard
-							currency(241, {	-- Champion's Seal
-								i(45125),	-- Stormwind Steed
-								i(46752, {	-- Swift Gray Steed
-									["races"] = { 1 },	-- Human
-								}),
-								i(46758, {	-- Swift Grey Steed
-									["races"] = exclude( { 1 }, ALLIANCE_ONLY ),	-- non-Human Alliance
-								}),
-								i(44974),	-- Elwynn Lamb Pet
-								i(45011),	-- Stormwind Banner Toy
+							i(45125, {	-- Stormwind Steed
+								["cost"] = { { "c", 241, 100 }, },	-- 100 Champion's Seal
 							}),
-							i(46114, {	-- Champion's Writ
-								i(45718),	-- Stormwind Commendation Badge
+							i(46752, {	-- Swift Gray Steed
+								["races"] = { 1 },	-- Human
+								["cost"] = { { "c", 241, 5 }, },	-- 5 Champion's Seal
 							}),
-						},
-					}),
-					n(33853, {	-- Broxel Goldgrasp <Souvenirs>
-						["coord"] = { 73.0, 23.0, 118 },
-						["g"] = {
-							i(45670),	-- Darnassus Doublet
-							i(45668),	-- Exodar Doublet
-							i(45671),	-- Gnomeregan Doublet
-							i(45666),	-- Ironforge Doublet
-							i(45672),	-- Orgrimmar Doublet
-							i(45669),	-- Sen'jin Doublet
-							i(45664),	-- Silvermoon Doublet
-							i(45667),	-- Stormwind Doublet
-							i(45673),	-- Thunder Bluff Doublet
-							i(45674),	-- Undercity Doublet
+							i(46758, {	-- Swift Grey Steed
+								["races"] = exclude( { 1 }, ALLIANCE_ONLY ),	-- non-Human Alliance
+								["cost"] = { { "c", 241, 5 }, },	-- 5 Champion's Seal
+							}),
+							i(44974, {	-- Elwynn Lamb Pet
+								["cost"] = { { "c", 241, 40 }, },	-- 40 Champion's Seal
+							}),
+							i(45011, {	-- Stormwind Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15 Champion's Seal
+							}),
+							i(45718, {	-- Stormwind Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },	-- 1 Champion's Writ
+							}),
 						},
 					}),
 					n(34885, {	-- Dame Evniki Kapsalis <Crusader's Quartermaster>
 						["coord"] = { 69.4, 23.1, 118 },
 						["g"] = {
-							currency(241, {	-- Champion's Seal
-								i(47179),	-- Argent Charger
-								i(47180),	-- Argent Warhorse
-								i(46874),	-- Argent Crusader's Tabard
-								i(46843),	-- Argent Crusader's Banner Toy
-								i(47541, {	-- Argent Pony Bridle
-									ach(3736),	-- Pony Up!
-								}),
-								i(122350),	-- Balanced Heartseeker
-								i(122349),	-- Bloodied Arcanite Reaper
-								i(122389),	-- Bloodsoaked Skullforge Reaver
-								i(122363),	-- Burnished Warden Staff
-								i(122352),	-- Charmed Ancient Bone Bow
-								i(122354),	-- Devout Aurastone Hammer
-								i(122353),	-- Dignified Headmaster's Charge
-								i(122391),	-- Flamescarred Draconian Deflector
-								i(122390),	-- Musty Tome of the Lost
-								i(122386),	-- Repurposed Lava Dredger
-								i(122351),	-- Venerable Dal'Rend's Sacred Charge
-								i(122385),	-- Venerable Mass of McGowan
-								i(122392),	-- Weathered Observer's Shield
-								i(122360),	-- Tattered Dreadmist Mantle
-								i(122384),	-- Tattered Dreadmist Robe
-								i(122359),	-- Preened Ironfeather Shoulders
-								i(122382),	-- Preened Ironfeather Brestplate
-								i(122358),	-- Stained Shadowcraft Spaulders
-								i(122383),	-- Stained Shadowcraft Tunic
-								i(122356),	-- Champion Herod's Shoulders
-								i(122379),	-- Champion's Deathdealer Breastplate
-								i(122357),	-- Mystical Pauldrons of Elements
-								i(122380),	-- Mystical Vest of Elements
-								i(122388),	-- Burnished Pauldrons of Might
-								i(122387),	-- Burnished Breastplate of Might
-								i(122355),	-- Polished Spaulders of Valor
-								i(122381),	-- Polished Breastplate of Valor
-								i(122362),	-- Discerning Eye of the Beast
-								i(122361),	-- Swift Hand of Justice
-								i(122338),	-- Ancient Heirloom Armor Casing
-								i(122339),	-- Ancient Heirloom Scabbard
+							i(122338, {	-- Ancient Heirloom Armor Casing
+								["cost"] = {
+									{ "i", 23247, 350},		-- 350x Burning Blossom
+									{ "c", 241, 55 },		-- 55x Champion's Seal
+									{ "i", 21100, 40 },		-- 40x Coin of Ancestry
+									{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
+									{ "i", 137642, 12 },	-- 12x Mark of Honor
+									{ "c", 1166, 750 },		-- 750x Timewarped Badge
+									{ "i", 33226, 250 },	-- 250x Tricky Treat
+								},
 							}),
+							i(122339, {	-- Ancient Heirloom Scabbard
+								["cost"] = {
+									{ "c", 241, 65 },		-- 65x Champion's Seal
+									{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
+									{ "i", 49927, 200 },	-- 200 Love Token
+									{ "i", 137642, 14 },	-- 14x Mark of Honor
+									{ "c", 1166, 900 },		-- 900x Timewarped Badge
+								},
+							}),
+							i(47179,  {	-- Argent Charger (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(46843,  {	-- Argent Crusader's Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
+							}),
+							i(46874,  {	-- Argent Crusader's Tabard
+								["cost"] = { { "c", 241, 50 }, },	-- 50x Champion's Seal
+							}),
+							i(47541,  {	-- Argent Pony Bridle
+								["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
+								["g"] = {
+									ach(3736),	-- Pony Up!
+								},
+							}),
+							i(47180,  {	-- Argent Warhorse (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(122350, {	-- Balanced Heartseeker
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122349, {	-- Bloodied Arcanite Reaper
+								["cost"] = {
+									{ "c", 241, 40 },	-- 40x Champion's Seal
+									{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+								},
+							}),
+							i(122389, {	-- Bloodsoaked Skullforge Reaver
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122387, {	-- Burnished Breastplate of Might
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122388, {	-- Burnished Pauldrons of Might
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122363, {	-- Burnished Warden Staff
+								["cost"] = {
+									{ "c", 241, 40 },	-- 40x Champion's Seal
+									{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+								},
+							}),
+							i(122356, {	-- Champion Herod's Shoulders
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122379, {	-- Champion's Deathdealer Breastplate
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122352, {	-- Charmed Ancient Bone Bow
+								["cost"] = {
+									{ "c", 241, 40 },	-- 40x Champion's Seal
+									{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+								},
+							}),
+							i(122354, {	-- Devout Aurastone Hammer
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122353, {	-- Dignified Headmaster's Charge
+								["cost"] = {
+									{ "c", 241, 40 },	-- 40x Champion's Seal
+									{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+								},
+							}),
+							i(122362, {	-- Discerning Eye of the Beast
+								["cost"] = {
+									{ "c", 241, 35 },	-- 35x Champion's Seal
+									{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
+								},
+							}),
+							i(122391, {	-- Flamescarred Draconian Deflector
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122390, {	-- Musty Tome of the Lost
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122357, {	-- Mystical Pauldrons of Elements
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122380, {	-- Mystical Vest of Elements
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122381, {	-- Polished Breastplate of Valor
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122355, {	-- Polished Spaulders of Valor
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122382, {	-- Preened Ironfeather Brestplate
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122359, {	-- Preened Ironfeather Shoulders
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122386, {	-- Repurposed Lava Dredger
+								["cost"] = {
+									{ "c", 241, 40 },	-- 40x Champion's Seal
+									{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+								},
+							}),
+							i(122358, {	-- Stained Shadowcraft Spaulders
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122383, {	-- Stained Shadowcraft Tunic
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122361, {	-- Swift Hand of Justice
+								["cost"] = {
+									{ "c", 241, 35 },	-- 35x Champion's Seal
+									{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
+								},
+							}),
+							i(122360, {	-- Tattered Dreadmist Mantle
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122384, {	-- Tattered Dreadmist Robe
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122351, {	-- Venerable Dal'Rend's Sacred Charge
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122385, {	-- Venerable Mass of McGowan
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+							i(122392, {	-- Weathered Observer's Shield
+								["cost"] = {
+									{ "c", 241, 25 },	-- 25x Champion's Seal
+									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+								},
+							}),
+
+
+
+							
+							
+							
+							
 						},
 					}),
 					n(33310, {	-- Derrick Brindlebeard <Ironforge Quartermaster>

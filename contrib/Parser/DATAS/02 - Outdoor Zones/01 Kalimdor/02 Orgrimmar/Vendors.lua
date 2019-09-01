@@ -601,25 +601,26 @@ _.Zones =
 					},
 				}),
 				n(52036,  {	-- Galra <Honor Heirlooms>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 38.0, 70.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122364),	-- Sharpened Scarlet Kris
-						i(122365),	-- Reforged Truesilver Champion
-						i(122366),	-- Upgraded Dwarven Hand Cannon
-						i(122367),	-- The Blessed Hammer of Grace
-						i(122368),	-- Grand Staff of Jordan
+						i(122375),	-- Aged Paundrons of The Five Thunders
 						i(122369),	-- Battleworn Thrash Blade
-						i(122370),	-- Inherited Insignia of the Horde
-						i(122372),	-- Strengthened Stockade Pauldrons
+						i(122376),	-- Exceptional Stormshroud Shoulders
+						i(122378),	-- Exquisite Sunderseer Mantle
+						i(122368),	-- Grand Staff of Jordan
+						i(122370, {	-- Inherited Insignia of the Horde
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor (other PVP heirlooms 'cost' defined in stormwind)
+						}),
+						i(122530),	-- Inherited Mark of Tyranny
+						i(122377),	-- Lasting Feralheart Spaulders
 						i(122373),	-- Pristine Lightforge Spaulders
 						i(122374),	-- Prized Beastmaster's Mantle
-						i(122375),	-- Aged Paundrons of The Five Thunders
-						i(122376),	-- Exceptional Stormshroud Shoulders
-						i(122377),	-- Lasting Feralheart Spaulders
-						i(122378),	-- Exquisite Sunderseer Mantle
-						i(122530),	-- Inherited Mark of Tyranny
+						i(122365),	-- Reforged Truesilver Champion
+						i(122364),	-- Sharpened Scarlet Kris
+						i(122372),	-- Strengthened Stockade Pauldrons
+						i(122367),	-- The Blessed Hammer of Grace
+						i(122366),	-- Upgraded Dwarven Hand Cannon
 					},
 				}),
 				n(46555,  {	-- Gunra <Justice Quartermaster>
