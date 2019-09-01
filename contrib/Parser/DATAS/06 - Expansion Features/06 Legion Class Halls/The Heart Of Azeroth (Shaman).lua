@@ -56,6 +56,18 @@ _.ExpansionFeatures =
 					-- q(42995),	-- A Taste For Blood
 					-- q(43003),	-- Return to Janai
 					--Followers Sort Later
+					q(44800, {	-- Against Magatha's Will
+						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
+						["lvl"] = 110,
+						["maps"] = { 64 },
+						["classes"] = { 7 },
+					}),
+					q(45725, {	-- Breaking Chains
+						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
+						["lvl"] = 110,
+						["maps"] = { 64 },
+						["classes"] = { 7 },
+					}),
 					q(41747, {	-- Champion: Avalanchion
 						["provider"] = { "n", 106524 },	-- Avalanchion the Unbroken <Fist of the Stonemother>
 						["groups"] = {
@@ -109,6 +121,18 @@ _.ExpansionFeatures =
 						["groups"] = {
 							follower(608),	-- Stormcaller Mylra
 						},
+					}),
+					q(45724, {	-- Snakes and Stones
+						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
+						["lvl"] = 110,
+						["maps"] = { 64 },
+						["classes"] = { 7 },
+					}),
+					q(45723, {	-- The Crone's Wrath
+						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
+						["lvl"] = 110,
+						["maps"] = { 64 },
+						["classes"] = { 7 },
 					}),
 					q(43644, {	-- To the Deeps
 						["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
