@@ -119,7 +119,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["g"] = {
 							i(50403, {	-- Ashen Band of Unmatched Courage
 								["questID"] = 24834,	-- Path of Courage (Revered)
-								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
+								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
 							}),
 						},
 					}),
@@ -144,7 +144,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["g"] = {
 							i(50384, {	-- Ashen Band of Greater Destruction
 								["questID"] = 24828,	-- Path of Destruction (Honored)
-								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
 							}),
 						},
 					}),
@@ -156,7 +156,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["g"] = {
 							i(50397, {	-- Ashen Band of Unmatched Destruction
 								["questID"] = 24823,	-- Path of Destruction [Revered]
-								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
 							}),
 						},
 					}),
@@ -226,7 +226,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
-						["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+						["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
 						["g"] = {
 							i(50401, {	-- Ashen Band of Unmatched Vengeance
 								["questID"] = 24832,	-- Path of Vengeance [Revered]
@@ -293,66 +293,55 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["isRaid"] = true,
 				["lvl"] = 80,
 				["g"] = {
-					{
-						["questID"] = 24545,	-- The Sacred and the Corrupt
+					q(24545, {	-- The Sacred and the Corrupt
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["g"] = {
-							{
-								["itemID"] = 49869,	-- Light's Vengeance
-								["questID"] = 24545,	-- The Sacred and the Corrupt
+							i(49869, {	-- Light's Vengeance
 								["description"] = "Fly out to Dragonblight and collect this item from a cave after some short RP.",
-							},
-							{
-								["itemID"] = 50226,	-- Festergut's Acidic Blood
 								["questID"] = 24545,	-- The Sacred and the Corrupt
-								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+							}),
+							i(50226, {	-- Festergut's Acidic Blood
 								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
-							},
-							{
-								["itemID"] = 50231,	-- Rotface's Acidic Blood
-								["questID"] = 24545,	-- The Sacred and the Corrupt
 								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+							}),
+							i(50231, {	-- Rotface's Acidic Blood
 								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
-							},
+								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+							}),
 						},
-					},
-					{
-						["questID"] = 24743,	-- Shadow's Edge
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
+					}),
+					q(24743, {	-- Shadow's Edge
 						["sourceQuest"] = 24545,	-- The Sacred and the Corrupt
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["g"] = {
 							i(49888),	-- Shadow's Edge
 						},
-					},
-					{
-						["questID"] = 24547,	-- A Feast of Souls
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
+					}),
+					q(24547, {	-- A Feast of Souls
 						["sourceQuest"] = 24743,	-- Shadow's Edge
-					},
-					{
-						["questID"] = 24749,	-- Unholy Infusion
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
+					}),
+					q(24749, {	-- Unholy Infusion
 						["sourceQuest"] = 24547,	-- A Feast of Souls
-					},
-					{
-						["questID"] = 24756,	-- Blood Infusion
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
+					}),
+					q(24756, {	-- Blood Infusion
 						["sourceQuest"] = 24749,	-- Unholy Infusion
-					},
-					{
-						["questID"] = 24757,	-- Frost Infusion
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
+					}),
+					q(24757, {	-- Frost Infusion
 						["sourceQuest"] = 24756,	-- Blood Infusion
-					},
-					{
-						["questID"] = 24548,	-- The Splintered Throne
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
+					}),
+					q(24548, {	-- The Splintered Throne
 						["sourceQuest"] = 24757,	-- Frost Infusion
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["g"] = {
-							{
-								["itemID"] = 50274,	-- Shadowfrost Shard
+							i(50274, {	-- Shadowfrost Shard
+								["description"] = "These can drop from any of the bosses on 25-Man Normal or Heroic. You need 50 of these, so this quest will take you several weeks to finish.",
 								["questID"] = 24548,	-- The Splintered Throne
-								["description"] = "These can drop from any of the bosses on 25 man difficulty or higher. You need 50 of these, so this quest will take you several weeks to finish.",
 								["crs"] = {
 									36612,	-- Lord Marrowgar
 									36855,	-- Lady Deathwhisper
@@ -368,94 +357,81 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 									36853,	-- Sindragosa
 									36597,	-- The Lich King
 								},
-							},
+							}),
 						},
-					},
-					{
-						["questID"] = 24549,	-- Shadowmourne...
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
+					}),
+					q(24549, {	-- Shadowmourne...
 						["sourceQuest"] = 24548,	-- The Splintered Throne
+						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["g"] = {
 							i(49623)	-- Shadowmourne
 						},
-					},
-					{
-						["questID"] = 24748,	-- The Lich King's Last Stand
+					}),
+					q(24748, {	-- The Lich King's Last Stand
+						["sourceQuest"] = 24549,	-- Shadowmourne...
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
+					}),
+					i(51315, {	-- Sealed Chest
+						["description"] = "Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.",
 						["sourceQuest"] = 24549,	-- Shadowmourne...
-					},
-					{
-						["itemID"] = 51315,	-- Sealed Chest
-						["questID"] = 24914,	-- Personal Property
 						["provider"] = { "n", 36597 },	-- The Lich King
-						["sourceQuest"] = 24549,	-- Shadowmourne...
-						["description"] = "Dropped by the Lich King on 25 Man Difficulty while on the quest The Lich King's Last Stand. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.",
+						["questID"] = 24914,	-- Personal Property
 						["g"] = {
-							{
-								["itemID"] = 51316,	-- Unsealed Chest
-								["sourceQuest"] = 24914,	-- Personal Property
+							i(51316, {	-- Unsealed Chest
 								["description"] = "This item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",
+								["sourceQuest"] = 24914,	-- Personal Property
 								["g"] = {
-									{
-										["itemID"] = 51317,	-- Alexandros' Soul Shard
-										["questID"] = 24915,	-- Mograine's Reunion
+									i(51317, {	-- Alexandros' Soul Shard
 										["description"] = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
+										["questID"] = 24915,	-- Mograine's Reunion
 										["g"] = {
-											i(52200)	-- Reins of the Crimson Deathcharger
+											i(52200)	-- Reins of the Crimson Deathcharger (MOUNT!)
 										},
-									},
-									{
-										["itemID"] = 51319,	-- Arthas' Training Sword
-										["questID"] = 24917,	-- Muradin's Lament
+									}),
+									i(51319, {	-- Arthas' Training Sword
 										["description"] = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
+										["questID"] = 24917,	-- Muradin's Lament
 										["g"] = {
 											i(52201)	-- Muradin's Favor
 										},
-									},
-									{
-										["itemID"] = 51320,	-- Badge of the Silver Hand
-										["questID"] = 24919,	-- The Lightbringer's Redemption
+									}),
+									i(51320, {	-- Badge of the Silver Hand
 										["description"] = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
+										["questID"] = 24919,	-- The Lightbringer's Redemption
 										["g"] = {
 											i(52252)	-- Tabard of the Lightbringer
 										},
-									},
-									{
-										["itemID"] = 51321,	-- Blood of Sylvanas
-										["questID"] = 24918,	-- Sylvanas' Vengeance
+									}),
+									i(51321, {	-- Blood of Sylvanas
 										["description"] = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
+										["questID"] = 24918,	-- Sylvanas' Vengeance
 										["g"] = {
 											i(52253)	-- Sylvanas' Music Box
 										},
-									},
-									{
-										["itemID"] = 51318,	-- Jaina's Locket
-										["questID"] = 24916,	-- Jaina's Locket
+									}),
+									i(51318, {	-- Jaina's Locket
 										["description"] = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
+										["questID"] = 24916,	-- Jaina's Locket
 										["g"] = {
 											i(52251, {	-- Jaina's Locket
 												["ignoreSource"] = true,
 												["collectible"] = false
 											})
 										},
-									},
+									}),
 								},
-							},
+							}),
 						},
-					},
+					}),
 				},
 			}),
-			{	-- Zafod Boombox
-		-- Note!! Putting him here rather than 4 times for an unlearnable shirt
-				["npcID"] = 37184,	-- Zafod Boombox
-				["g"] = {
-					{	-- Goblin Rocket Pack
-						["itemID"] = 49278,	-- Goblin Rocket Pack
-						["u"] = 15,			-- Unlearnable Filter
-						["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
-					},
-				},
-			},
+			n(37184, {	-- Zafod Boombox
+				-- Note!! Putting him here rather than 4 times for an unlearnable shirt
+				i(49278, {	-- Goblin Rocket Pack
+					["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
+					["u"] = 15,			-- Unlearnable Filter
+				}),
+			}),
 			n(0, {	-- Zone Drop
 				["crs"] = {
 					37012,	-- Ancient Skeletal Soldier
@@ -514,93 +490,53 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					37038,	-- Vengeful Fleshreaper
 				},
 				["g"] = {
-					i(50444),	-- Rowan's Rifle of Silver Bullets
-					i(50452),	-- Wodin's Lucky Necklace
-					i(50449),	-- Stiffened Corpse Shoulderpads
 					i(50451),	-- Belt of the Lonely Noble
-					i(50450),	-- Leggings of Dubious Charms
 					i(50447),	-- Harbinger's Bone Band
+					i(50450),	-- Leggings of Dubious Charms
 					i(50453),	-- Ring of Rotting Sinew
+					i(50444),	-- Rowan's Rifle of Silver Bullets
+					i(50449),	-- Stiffened Corpse Shoulderpads
+					i(50452),	-- Wodin's Lucky Necklace
 				},
 			}),
 			n(-2, {	-- Vendors
 				n(38858, { 	-- Goodman the Closer
-					i(49908),	-- Primordial Saronite
-					i(50355),	-- Herkumi War Token
-					i(50356),	-- Corroded Skeleton Key
-					i(50357),	-- Maghia's Misguised Quill
-					i(50358),	-- Purified Lunar Dust
-					
-					i(50468),	-- Drape of the Violet Tower
-					i(50467),	-- Might of the Ocean Serpent
-					i(50470),	-- Recovered Scarlet Onsalught Cape
-					i(50466),	-- Sentinel's Winter Cloak
-					i(50469),	-- Volde's Cloak of the Night Sky
-					
+					i(50993),	-- Band of the Night Raven
+					i(50996),	-- Belt of Omission
+					i(50994),	-- Belt of Petrified Ivy
+					i(50980),	-- Blizzard Keeper's Mitts
 					i(50965),	-- Castle Breaker's Battleplate
+					i(50982),	-- Cat Burglar's Grips
 					i(50968),	-- Cataclysmic Chestguard
 					i(50969),	-- Chestplate of Unspoken Truths
+					i(50997),	-- Circle of Ossus
+					i(50356),	-- Corroded Skeleton Key
+					i(50468),	-- Drape of the Violet Tower
 					i(50975),	-- Ermine Coronation Robes
-					i(50970),	-- Longstrider's Vest
-					i(50971),	-- Mail of the Geyser
-					i(50974),	-- Meteor Chaser's Raiment
-					i(50972),	-- Shadow Seeker's Tunic
-					i(50973),	-- Vestments of Spruce and Fir
-					
-					i(50980),	-- Blizzard Keeper's Mitts
-					i(50982),	-- Cat Burglar's Grips
 					i(50977),	-- Gatecrasher's Gauntlets
 					i(50976),	-- Gauntlets of Overexposure
 					i(50978),	-- Gauntlets of the Kraken
 					i(50984),	-- Gloves of Ambivalence
 					i(50983),	-- Gloves of False Gestures
 					i(50981),	-- Gloves of the Great Horned Owl
-					i(50979),	-- Logsplitters
-					
-					i(50993),	-- Band of the Night Raven
-					i(50996),	-- Belt of Omission
-					i(50994),	-- Belt of Petrified Ivy
-					i(50997),	-- Circle of Ossus
+					i(50355),	-- Herkumi War Token
 					i(50989),	-- Lich Killer's Lanyard
+					i(50979),	-- Logsplitters
+					i(50970),	-- Longstrider's Vest
+					i(50357),	-- Maghia's Misguised Quill
+					i(50971),	-- Mail of the Geyser
 					i(50987),	-- Malevolent Girdle
-					i(50995),	-- Vengeful Noose
-					i(50991),	-- Verdigris Chain Belt
-					i(50992),	-- Waistband of Despair
-					
-					i(50356),	-- Corroded Skeleton Key
-					i(50355),	-- Herkuml War Token
-					i(50357),	-- Maghia's Misguided Quill
+					i(50974),	-- Meteor Chaser's Raiment
+					i(50467),	-- Might of the Ocean Serpent
+					i(49908),	-- Primordial Saronite
 					i(50358),	-- Purified Lunar Dust
-					
-			-- Relentless PvP START
-					gs(373, {	-- Relentless Gladiator's Satin Armor
-						i(41855),	-- Relentless Gladiator's Mooncloth Hood
-						i(41870),	-- Relentless Gladiator's Mooncloth Mantle
-						i(41860),	-- Relentless Gladiator's Mooncloth Robe
-						i(41875),	-- Relentless Gladiator's Mooncloth Gloves
-						i(41865),	-- Relentless Gladiator's Mooncloth Leggings
-						i(41916),	-- Relentless Gladiator's Satin Hood
-						i(41935),	-- Relentless Gladiator's Satin Mantle
-						i(41922),	-- Relentless Gladiator's Satin Robe
-						i(41941),	-- Relentless Gladiator's Satin Gloves
-						i(41928),	-- Relentless Gladiator's Satin Leggings
-					}),
-					gs(775, {	-- Relentless Gladiator's Silk Armor
-						["icon"] = "Interface\\Icons\\INV_Helmet_86",	-- Relentless Silk Cowl Icon as Mage Set didn't have one
-						["g"] = {
-							i(41947),	-- Relentless Gladiator's Silk Cowl
-							i(41966),	-- Relentless Gladiator's Silk Amice
-							i(41954),	-- Relentless Gladiator's Silk Raiment
-							i(41972),	-- Relentless Gladiator's Silk Handguards
-							i(41960),	-- Relentless Gladiator's Silk Trousers
-						},
-					}),
-					gs(771, {	-- Relentless Gladiator's Felweave Armor
-						i(41994),	-- Relentless Gladiator's Felweave Cowl
-						i(42012),	-- Relentless Gladiator's Felweave Amice
-						i(41999),	-- Relentless Gladiator's Felweave Raiment
-						i(42018),	-- Relentless Gladiator's Felweave Handguards
-						i(42006),	-- Relentless Gladiator's Felweave Trousers
+					i(50470),	-- Recovered Scarlet Onsalught Cape
+					gs(776, {	-- Relentless Gladiator's Chain Armor
+						i(41088),	-- Relentless Gladiator's Chain Armor
+						i(41144),	-- Relentless Gladiator's Chain Gauntlets
+						i(41158),	-- Relentless Gladiator's Chain Helm
+						i(41206),	-- Relentless Gladiator's Chain Leggings
+						i(41218),	-- Relentless Gladiator's Chain Spaulders
 					}),
 					gs(777, {	-- Relentless Gladiator's Dragonhide Armor
 						i(41679),	-- Relentless Gladiator's Dragonhide Helm
@@ -619,6 +555,20 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(41288),	-- Relentless Gladiator's Kodohide Gloves
 						i(41299),	-- Relentless Gladiator's Kodohide Legguards
 					}),
+					gs(778, {	-- Relentless Gladiator's Dreaplate Armor
+						i(40830),	-- Relentless Gladiator's Dreadplate Helm
+						i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
+						i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
+						i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
+						i(40851),	-- Relentless Gladiator's Dreadplate Legguards
+					}),
+					gs(771, {	-- Relentless Gladiator's Felweave Armor
+						i(41994),	-- Relentless Gladiator's Felweave Cowl
+						i(42012),	-- Relentless Gladiator's Felweave Amice
+						i(41999),	-- Relentless Gladiator's Felweave Raiment
+						i(42018),	-- Relentless Gladiator's Felweave Handguards
+						i(42006),	-- Relentless Gladiator's Felweave Trousers
+					}),
 					gs(773, {	-- Relentless Gladiator's Leather Armor
 						i(41673),	-- Relentless Gladiator's Leather Helm
 						i(41684),	-- Relentless Gladiator's Leather Spaulders
@@ -626,13 +576,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(41768),	-- Relentless Gladiator's Leather Gloves
 						i(41656),	-- Relentless Gladiator's Leather Legguards
 					}),
-					gs(776, {	-- Relentless Gladiator's Chain Armor
-						i(41158),	-- Relentless Gladiator's Chain Helm
-						i(41218),	-- Relentless Gladiator's Chain Spaulders
-						i(41088),	-- Relentless Gladiator's Chain Armor
-						i(41144),	-- Relentless Gladiator's Chain Gauntlets
-						i(41206),	-- Relentless Gladiator's Chain Leggings
-					}),
+					gs(770, {	-- Relentless Gladiator's Plate Armor
+						i(40829),	-- Relentless Gladiator's Plate Helm
+						i(40870),	-- Relentless Gladiator's Plate Shoulders
+						i(40790),	-- Relentless Gladiator's Plate Chestpiece
+						i(40810),	-- Relentless Gladiator's Plate Gauntlets
+						i(40850),	-- Relentless Gladiator's Plate Legguards
+					}),	
 					gs(772, {	-- Relentless Gladiator's Ringmail Armor
 						i(41152),	-- Relentless Gladiator's Linked Helm
 						i(41212),	-- Relentless Gladiator's Linked Spaulders
@@ -650,6 +600,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
 						i(41028),	-- Relentless Gladiator's Ringmail Leggings
 					}),
+					gs(373, {	-- Relentless Gladiator's Satin Armor
+						i(41855),	-- Relentless Gladiator's Mooncloth Hood
+						i(41870),	-- Relentless Gladiator's Mooncloth Mantle
+						i(41860),	-- Relentless Gladiator's Mooncloth Robe
+						i(41875),	-- Relentless Gladiator's Mooncloth Gloves
+						i(41865),	-- Relentless Gladiator's Mooncloth Leggings
+						i(41916),	-- Relentless Gladiator's Satin Hood
+						i(41935),	-- Relentless Gladiator's Satin Mantle
+						i(41922),	-- Relentless Gladiator's Satin Robe
+						i(41941),	-- Relentless Gladiator's Satin Gloves
+						i(41928),	-- Relentless Gladiator's Satin Leggings
+					}),
 					gs(774, {	-- Relentless Gladiator's Scaled Armor
 						i(40934),	-- Relentless Gladiator's Ornamented Headcover
 						i(40964),	-- Relentless Gladiator's Ornamented Spaulders
@@ -662,21 +624,23 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(40812),	-- Relentless Gladiator's Scaled Gauntlets
 						i(40852),	-- Relentless Gladiator's Scaled Legguards
 					}),
-					gs(770, {	-- Relentless Gladiator's Plate Armor
-						i(40829),	-- Relentless Gladiator's Plate Helm
-						i(40870),	-- Relentless Gladiator's Plate Shoulders
-						i(40790),	-- Relentless Gladiator's Plate Chestpiece
-						i(40810),	-- Relentless Gladiator's Plate Gauntlets
-						i(40850),	-- Relentless Gladiator's Plate Legguards
-					}),		
-					gs(778, {	-- Relentless Gladiator's Dreaplate Armor
-						i(40830),	-- Relentless Gladiator's Dreadplate Helm
-						i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
-						i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
-						i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
-						i(40851),	-- Relentless Gladiator's Dreadplate Legguards
-					}),	
-			-- Relentless PvP END
+					gs(775, {	-- Relentless Gladiator's Silk Armor
+						["icon"] = "Interface\\Icons\\INV_Helmet_86",	-- Relentless Silk Cowl Icon as Mage Set didn't have one
+						["g"] = {
+							i(41947),	-- Relentless Gladiator's Silk Cowl
+							i(41966),	-- Relentless Gladiator's Silk Amice
+							i(41954),	-- Relentless Gladiator's Silk Raiment
+							i(41972),	-- Relentless Gladiator's Silk Handguards
+							i(41960),	-- Relentless Gladiator's Silk Trousers
+						},
+					}),
+					i(50466),	-- Sentinel's Winter Cloak
+					i(50972),	-- Shadow Seeker's Tunic
+					i(50995),	-- Vengeful Noose
+					i(50991),	-- Verdigris Chain Belt
+					i(50973),	-- Vestments of Spruce and Fir
+					i(50469),	-- Volde's Cloak of the Night Sky
+					i(50992),	-- Waistband of Despair
 				}),
 				n(38316, { 	-- Ormus the Penitent	
 					i(50855, {
