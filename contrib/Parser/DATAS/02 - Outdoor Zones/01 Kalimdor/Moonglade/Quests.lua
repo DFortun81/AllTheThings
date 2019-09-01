@@ -3,28 +3,25 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor		
+	m(12, {	-- Kalimdor
 		m(80, {	-- Moonglade
 			n(-17, { 	-- Quests
-				{	-- A Reliquary of Purity
-					["questID"] = 5527,
+				q(5527,  {	-- A Reliquary of Purity
 					["u"] = 40,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
-				},
-				{	-- Aquatic Form
-					["allianceQuestID"] = 5061,
+				}),
+				q(5061,  {	-- Aquatic Form
 					["hordeQuestID"] = 31,
 					["u"] = 40,
 					["provider"] = { "n", 11802 },	-- Dendrite Starblaze
 					["classes"] = { 11 },	-- Druid
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						un(2, i(16608)),	-- Aquarius Belt
 					},
-				},
-				{	-- As Hyjal Burns
-					["questID"] = 25316,
+				}),
+				q(25316, {	-- As Hyjal Burns
 					["provider"] = { "n", 39865 },	-- Emissary Windsong
 					["lvl"] = 80,
 					["coord"] = { 45.4, 44.6, 80 },
@@ -33,34 +30,30 @@ _.Zones =
 						27726,	-- Hero's Call: Mount Hyjal!
 						27721,	-- Warchief's Command: Mount Hyjal!
 					},
-				},
-				{	-- Call of the Wilds
-					["questID"] = 41106,
+				}),
+				q(41106, {	-- Call of the Wilds
 					["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
 					["lvl"] = 98,
 					["coord"] = { 56.2, 32.0, 80 },
 					["classes"]= { 11 },	-- Druid
 					["sourceQuest"] = 40643,	-- A Summons From Moonglade
-				},
-				{	-- Dark Waters
-					["questID"] = 40962,
+				}),
+				q(40962, {	-- Dark Waters
 					["u"] = 40,
 					["provider"] = { "n", 102432 },	-- Malfurion Stormrage
 					["lvl"] = 100,
 					["sourceQuest"] = 40904,	-- Shadow of the Defiler
-					["groups"] = {
+					["g"] = {
 						un(2, i(128422)),	-- Reins of the Grove Warden
 					},
-				},
-				{	-- Hope Within the Emerald Nightmare
-					["questID"] = 13074,
+				}),
+				q(13074, {	-- Hope Within the Emerald Nightmare
 					["provider"] = { "n", 11832 },	-- Keeper Remulos
 					["lvl"] = 67,
 					["coord"] = { 36.2, 41.8, 80 },
 					["sourceQuest"] = 13073,	-- The Keeper's Favor
-				},
-				{	-- Let Sleeping Dogs Lie
-					["questID"] = 45498,
+				}),
+				q(45498, {	-- Let Sleeping Dogs Lie
 					["lvl"] = 110,
 					["coord"] = { 68.0, 54.8, 80 },
 					["classes"]= { 11 },	-- Druid
@@ -69,40 +62,35 @@ _.Zones =
 						{ "n", 120032 },	-- Thisalee Crow
 						{ "n", 120041 },	-- Druid of the Talon
 					},
-				},
-				{	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
-					["questID"] = 47430,
+				}),
+				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
 					["provider"] = { "n", 122134 },	-- Makkaw <Moonkin Festival>
 					["coord"] = { 45.4, 62.0, 80 },
 					["collectible"] = false,
 					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
-					["groups"] = {
-						{
-							["titleID"] = 358,	-- %s, Adventuring Instructor
+					["g"] = {
+						title(358, {	-- %s, Adventuring Instructor
 							["collectible"] = false,
-						},
+						}),
 					},
-				},
-				{	-- Nature's Advance
-					["questID"] = 45426,
+				}),
+				q(45426, {	-- Nature's Advance
 					["provider"] = { "n", 115750 },	-- Goldrinn <Ancient>
 					["lvl"] = 110,
 					["coord"] = { 69.4, 47.8, 80 },
 					["classes"]= { 11 },	-- Druid
 					["sourceQuest"] = 46924,	-- The Wolf's Tale
-				},
-				{	-- Shards of the Felvine
-					["questID"] = 5526,
+				}),
+				q(5526,  {	-- Shards of the Felvine
 					["u"] = 40,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
-					["groups"] = {
+					["g"] = {
 						un(2, i(18535)),	-- Milli's Shield
 						un(2, i(18536)),	-- Milli's Lexicon
 					},
-				},
-				{	-- The Befouled Barrows
-					["questID"] = 45528,
+				}),
+				q(45528, {	-- The Befouled Barrows
 					["lvl"] = 110,
 					["classes"]= { 11 },	-- Druid
 					["coord"] = { 68.0, 54.8, 80 },
@@ -111,25 +99,23 @@ _.Zones =
 						{ "n", 120032 },	-- Thisalee Crow
 						{ "n", 120041 },	-- Druid of the Talon
 					},
-				},
-				{	-- The Boon of Remulos
-					["questID"] = 13075,
+				}),
+				q(13075, {	-- The Boon of Remulos
 					["provider"] = { "n", 11832 },	-- Keeper Remulos
 					["lvl"] = 67,
 					["coord"] = { 36.2, 41.8, 80 },
 					["sourceQuest"] = 13074,	-- Hope Within the Emerald Nightmare
-				},
-				{	-- The Breath of Cenarius
-					["questID"] = 28343,
+				}),
+				q(28343, {	-- The Breath of Cenarius
 					["provider"] = { "n", 12042 },	-- Loganaar
 					["lvl"] = 47,
 					["coord"] = { 52.4, 40.4, 80 },
 					["classes"]= { 11 },	-- Druid
-					["groups"] = {
+					["g"] = {
 						i(65638),	-- Headdress of the Green Circle
 						i(65617),	-- Headdress of the Verdant Circle
 					},
-				},
+				}),
 				q(27356, {	-- The Circle's Future
 					["provider"] = { "n", 12042 },	-- Loganaar
 					["coord"] = { 52.4, 40.4, 80 },
@@ -154,16 +140,14 @@ _.Zones =
 						i(65464),	-- Staff of the Verdant Circle
 					},
 				}),
-				{	-- The Dreamway
-					["questID"] = 40644,
+				q(40644, {	-- The Dreamway
 					["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
 					["lvl"] = 98,
 					["coord"] = { 56.2, 32.0, 80 },
 					["classes"]= { 11 },	-- Druid
 					["sourceQuest"] = 41106,	-- Call of the Wilds
-				},
-				{	-- The Wolf's Tale
-					["questID"] = 46924,
+				}),
+				q(46924, {	-- The Wolf's Tale
 					["lvl"] = 110,
 					["classes"]= { 11 },	-- Druid
 					["providers"] = {
@@ -174,55 +158,49 @@ _.Zones =
 						45498,	-- Let Sleeping Dogs Lie
 						45528,	-- The Befouled Barrows
 					},
-				},
-				{	-- To The Dreamgrove
-					["questID"] = 40645,
+				}),
+				q(40645, {	-- To The Dreamgrove
 					["provider"] = { "n", 103875 },	-- Malfurion Stormrage
 					["lvl"] = 98,
 					["coord"] = { 66.8, 60.4, 80 },
 					["classes"]= { 11 },	-- Druid
 					["sourceQuest"] = 40644,	-- The Dreamway
-				},
-				{	-- Tragedy and Family
-					["questID"] = 29303,
+				}),
+				q(29303, {	-- Tragedy and Family
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 85,
 					["coord"] = { 51.6, 44.8, 80 },
 					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
-				},
-				{	-- Uncovering Past Secrets
-					["questID"] = 6845,
+				}),
+				q(6845,  {	-- Uncovering Past Secrets
 					["u"] = 40,
 					["provider"] = { "n", 11939 },	-- Umber
-					["groups"] = {
+					["g"] = {
 						un(2, i(18402)),	-- Glowing Crystal Ring
 						un(2, i(18400)),	-- Ring of Living Stone
 					},
-				},
-				{	-- Unlocking the Secrets Within
-					["questID"] = 29302,
+				}),
+				q(29302, {	-- Unlocking the Secrets Within
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 85,
 					["coord"] = { 51.6, 44.8, 80 },
 					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
-				},
-				{	-- Waking Legends
-					["questID"] = 8447,
+				}),
+				q(8447,  {	-- Waking Legends
 					["u"] = 40,
 					["provider"] = { "n", 11832 },	-- Keeper Remulos
 					["lvl"] = 60,
 					["sourceQuest"] = 8446,	-- Shrouded in Nightmare
-					["groups"] = {
+					["g"] = {
 						un(2, i(20600)),	-- Malfurion's Signet Ring
 					},
-				},
-				{	-- Wasteland
-					["questID"] = 1124,
+				}),
+				q(1124,  {	-- Wasteland
 					["u"] = 40,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
 					["sourceQuest"] = 1123,	-- Rabine Saturna
-				},
+				}),
 			}),
 		}),
 	}),
