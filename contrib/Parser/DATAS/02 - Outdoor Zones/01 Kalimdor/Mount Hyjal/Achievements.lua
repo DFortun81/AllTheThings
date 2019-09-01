@@ -14,6 +14,42 @@ _.Zones =
 				}),
 				ach(4959),	-- Beware of the 'Unbeatable?' Pterodactyl
 				ach(5483),	-- Bounce
+				ach(4870, {	-- Coming Down the Mountain
+					crit(1, {	-- The Return of the Ancients
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+					}),
+					crit(2, {	-- Shrine of Goldrinn
+						["sourceQuests"] = {
+							25298,	-- Free Your Mind, the Rest Follows
+							25332,	-- Get Me Outta Here! -- verify
+							25312,	-- Return to Duskwhisper
+						},
+					}),
+					crit(3, {	-- Foray into the Firelands
+						["sourceQuest"] = 25612,	-- Return from the Firelands -- verify
+					}),
+					crit(4, {	-- Grove of Aessina
+						["sourceQuests"] = {
+							25382,	-- Disrupting the Rituals
+							29066,	-- Good News... and Bad News
+						},
+					}),
+					crit(5, {	-- Awakening Tortolla
+						["sourceQuest"] = 25520,	-- An Ancient Awakens
+					}),
+					crit(6, {	-- Shrine of Aviana
+						["sourceQuest"] = 25832,	-- Return to Aviana
+					}),
+					crit(7, {	-- The Ancients
+						["sourceQuest"] = 25653,	-- The Ancients are With Us
+					}),
+					crit(8, {	-- Cavorting with Cultists
+						["sourceQuest"] = 25531,	-- Twilight Riot
+					}),
+					crit(9, {	-- Extinguish the Firelord
+						["sourceQuest"] = 25551,	-- The Firelord
+					}),
+				}),
 				ach(5864),	-- Gang War
 				ach(5865, {	-- Have... Have We Met?
 					crit(4),	-- Chromie
@@ -34,7 +70,7 @@ _.Zones =
 				ach(5860, {		-- The 'Unbeatable?' Pterodactyl: BEATEN.
 					i(69838, {		-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
 						["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
-						["groups"] = {
+						["g"] = {
 							i(65661),	-- Blue Mini Jouster
 							i(65662),	-- Gold Mini Jouster
 						},

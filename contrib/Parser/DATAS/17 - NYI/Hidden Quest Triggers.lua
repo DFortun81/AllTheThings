@@ -71,10 +71,12 @@ _.NeverImplemented =
 		-------------------
 		q(38995),	-- Unused
 		
-		
 		-------------------
 		--   CATACLYSM   --
 		-------------------
+		q(25829),	-- Mount Hyjal - goldrinn hub complete
+		q(27872),	-- Mount Hyjal - tortolla hub complete
+		q(27873),	-- Mount Hyjal - aviana hub complete
 		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
 		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
 		-------------------
