@@ -11,13 +11,13 @@ _.Zones =
 					["coord"] = { 55.7, 51.9, 57 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(997, {	-- Denalan's Earth
+				q(997,   {	-- Denalan's Earth
 					["provider"] = { "n", 2083 },	-- Syral Blackleaf
 					["coord"] = { 55.7, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 486,	-- Ursal the Mauler
 				}),
-				q(2561, {	-- Druid of the Claw
+				q(2561,  {	-- Druid of the Claw
 					["provider"] = { "n", 7317 },	-- Oben Rageclaw
 					["coord"] = { 41.1, 83.7, 57 },
 					["races"] = ALLIANCE_ONLY,
@@ -28,7 +28,7 @@ _.Zones =
 						un(2, i(9602)),	-- Brushwood Blade
 					},
 				}),
-				q(1684, {	-- Elanaria
+				q(1684,  {	-- Elanaria
 					["provider"] = { "n", 3598 },	-- Kyra Windblade
 					["coord"] = { 56.2, 59.2, 57 },
 					["races"] = ALLIANCE_ONLY,
@@ -36,7 +36,7 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = 40,
 				}),					
-				q(1581, {	-- Elixirs for the Bladeleafs
+				q(1581,  {	-- Elixirs for the Bladeleafs
 					["provider"] = { "n", 2083 },	-- Syral Bladeleaf
 					["coord"] = { 55.8, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
@@ -56,7 +56,7 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = 40,
 				}),
-				q(5621, {	-- Garments of the Moon
+				q(5621,  {	-- Garments of the Moon
 					["u"] = 40,
 					["races"] = { 4 },	-- Night Elf
 					["classes"] = { 5 },	-- Priest
@@ -64,7 +64,7 @@ _.Zones =
 						un(2, i(16604)),	-- Moon Robes of Elune
 					},
 				}),
-				q(476, {	-- Gnarlpine Corruption
+				q(476,   {	-- Gnarlpine Corruption
 					["provider"] = { "n", 2107 },	-- Gaerolas Talvethren
 					["coord"] = { 64.5, 51.1, 57 },
 					["races"] = ALLIANCE_ONLY,
@@ -93,17 +93,6 @@ _.Zones =
 						i(54871),	-- Cloudsbreak Gloves
 						i(5593),	-- Crag Buckler
 						i(131230),	-- Cloudsbreak Grips
-					},
-				}),
-				i(5179,  {	-- Moss-Twined Heart
-					["crs"] = {
-						3535,	-- Blackmoss the Fetid
-					},
-					["g"] = {
-						q(927, {	-- The Moss-twined Heart
-							["coord"] = { 52.0, 63.6, 57 },
-							["races"] = ALLIANCE_ONLY,
-						}),
 					},
 				}),
 				q(923,   {	-- Mossy Tumors
@@ -163,39 +152,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 488,	-- Zenn's Bidding
 				}),
-				o(7510,  {	-- Sprouted Frond
-					["model"] = 189772,
-					["coords"] = {
-						{ 59.8, 59.9, 57 },
-						{ 43.9, 44.0, 57 },
-					},
-					["g"] = {
-						q(2399, {	-- The Sprouted Fronds
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 931,	-- The Shimmering Frond
-							["description"] = "This quest is unobtainable if you submit |cffffffffThe Shimmering Frond|r to Denalan at Wellspring Hovel (43.8, 44.2) instead of Lake Al'Ameth (59.8, 59.6).",
-						}),
-					},
-				}),
-				o(6752,  {	-- Strange Fronded Plant
-					["model"] = 190380,
-					["coord"] = { 37.2, 25.3, 57 },
-					["g"] = {
-						q(931, {	-- The Shimmering Frond
-							["races"] = ALLIANCE_ONLY,
-							["description"] = "Submit this to Denalan at Lake Al'Ameth (59.8, 59.6) to ensure you get the next quest.",
-						}),
-					},
-				}),
-				o(6751,  {	-- Strange Fruited Plant
-					["model"] = 190381,
-					["coord"] = { 57.6, 63.0, 57 },
-					["g"] = {
-						q(930, {	-- The Glowing Fruit
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
-				}),
 				q(2518,  {	-- Tears of the Moon
 					["provider"] = { "n", 7313 },	-- Priestess A'moora
 					["coord"] = { 39.1, 29.9, 57 },
@@ -249,10 +205,22 @@ _.Zones =
 						i(131229),	-- Shackled Cuffs
 					},
 				}),
+				q(930,   {	-- The Glowing Fruit
+					["model"] = 190381,
+					["coord"] = { 57.6, 63.0, 57 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 6751 },	-- Strange Fruited Plant
+				}),
 				q(28517, {	-- The Howling Oak
 					["provider"] = { "n", 42968 },	-- Krennan Aranas
 					["coord"] = { 55.2, 89.2, 57 },
 					["races"] = { 22 },	-- Worgen
+				}),
+				q(927,   {	-- The Moss-twined Heart
+					["crs"] = { 3535 },	-- Blackmoss the Fetid
+					["coord"] = { 52.0, 63.6, 57 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 5179 },	-- Moss-Twined Heart
 				}),
 				q(483,   {	-- The Relics of Wakening
 					["provider"] = { "n", 2078 },	-- Athridas Bearmantle
@@ -269,11 +237,29 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 483,	-- The Relics of Wakening
 				}),
+				q(931,   {	-- The Shimmering Frond
+					["model"] = 190380,
+					["coord"] = { 37.2, 25.3, 57 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 6752 },	-- Strange Fronded Plant
+					["description"] = "Submit this to Denalan at Lake Al'Ameth (59.8, 59.6) to ensure you get the next quest.",
+				}),
 				q(2541,  {	-- The Sleeping Druid?
 					["provider"] = { "n", 7317 },	-- Oben Rageclaw
 					["coord"] = { 41.1, 83.7, 57 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 476,	-- Gnarlpine Corruption
+				}),
+				q(2399,  {	-- The Sprouted Fronds
+					["model"] = 189772,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 7510 },	-- Sprouted Frond
+					["sourceQuest"] = 931,	-- The Shimmering Frond
+					["description"] = "This quest is unobtainable if you submit |cffffffffThe Shimmering Frond|r to Denalan at Wellspring Hovel (43.8, 44.2) instead of Lake Al'Ameth (59.8, 59.6).",
+					["coords"] = {
+						{ 59.8, 59.9, 57 },
+						{ 43.9, 44.0, 57 },
+					},
 				}),
 				q(14005, {	-- The Vengeance of Elune
 					["provider"] = { "n", 1992 },	-- Tarindrella
