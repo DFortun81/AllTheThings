@@ -6,69 +6,12 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(10, {	-- Northern Barrens
 			n(-17, {	-- Quests
-				{	-- Northern Barrens Quests
-					["achievementID"] = 4933,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						{	-- Far Watch
-							["criteriaID"] = 1,
-							["sourceQuests"] = {
-								5041,	-- Supplies for the Crossroads
-								872,	-- The Far Watch Offensive
-							},
-						},
-						{	-- Grol'dom Farm
-							["criteriaID"] = 2,
-							["sourceQuests"] = {
-								13949,	-- Crossroads Caravan Pickup (verify)
-								13971,	-- The Kodo's Return
-							},
-						},
-						{	-- Defeating the Kolkar
-							["criteriaID"] = 3,
-							["sourceQuests"] = {
-								13975,	-- Crossroads Caravan Delivery (verify)
-								4021,	-- Counterattack!
-							},
-						},
-						{	-- Mysteries of the Oases
-							["criteriaID"] = 4,
-							["sourceQuests"] = {
-								880,	-- Altered Beings
-								877,	-- The Stagnant Oasis
-							},
-						},
-						{	-- Ratchet
-							["criteriaID"] = 5,
-							["sourceQuests"] = {
-								14050,	-- Gazlowe's Fortune
-								14067,	-- The Stolen Silver
-							},
-						},
-						{	-- Nozzlepot's Outpost
-							["criteriaID"] = 6,
-							["sourceQuests"] = {
-								26769,	-- Raging River Ride (verify)
-								29094,	-- The Short Way Home
-							},
-						},
-						{	-- Inspiration and Hope
-							["criteriaID"] = 7,
-							["sourceQuests"] = {
-								867,	-- Harpy Raiders (verify)
-								29111,	-- Mor'shan Caravan Delivery
-							},
-						},
-					},
-				},
-				{	-- A Burning Threat
-					["questID"] = 29090,
+				q(29090, {	-- A Burning Threat
 					["provider"] = { "n", 52192 },	-- Brogor
 					["coord"] = { 44.2, 25.0, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- A Captain's Vengeance
-					["questID"] = 891,
+				}),
+				q(891,   {	-- A Captain's Vengeance
 					["provider"] = { "n", 3339 },	-- Captain Thalo'thas Brightsun
 					["coord"] = { 67.7, 74.0, 10 },
 					["races"] = HORDE_ONLY,
@@ -76,51 +19,45 @@ _.Zones =
 						un(2, i(5309)),	-- Privateer Musket  NOTE: Old reward, quest repurposed, original quest name was The Guns of Northwatch
 						un(2, i(5310)),	-- Sea Dog Britches  NOTE: Old reward, quest repurposed, original quest name was The Guns of Northwatch
 					},
-				},
-				{	-- A Growing Problem
-					["questID"] = 13988,
+				}),
+				q(13988, {	-- A Growing Problem
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["coord"] = { 49.5, 58.6, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 870,	-- The Forgotten Pools
-				},
-				{	-- A Little Diversion
-					["questID"] = 13992,
+				}),
+				q(13992, {	-- A Little Diversion
 					["provider"] = { "n", 34613 },	-- Ta'jari
 					["coord"] = { 37.5, 45.8, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- A Most Unusual Map
-					["questID"] = 14049,
+				}),
+				q(14049, {	-- A Most Unusual Map
 					["provider"] = { "n", 3467 },	-- Baron Longshore
 					["coord"] = { 69.9, 85.1, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14046,	-- The Baron's Demands
-				},
-				{	-- Altered Beings
-					["questID"] = 880,
+				}),
+				q(880,   {	-- Altered Beings
 					["provider"] = { "n", 34626 },	-- Jerrik Highmountain
 					["coord"] = { 60.6, 85.4, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13988,	-- A Growing Problem
-				},
-				{	-- Ammo Kerblammo
-					["questID"] = 14042,
+				}),
+				q(14042, {	-- Ammo Kerblammo
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14038,	-- Love it or Limpet
 					["g"] = {
 						i(59558),	-- Gouging Staff
 						i(59559),	-- Bellipotent Gloves
 					},
-				},
-				{	-- Animal Services
-					["questID"] = 13970,
+				}),
+				q(13970, {	-- Animal Services
 					["provider"] = { "n", 34547 },	-- Grol'dom Kodo
 					["coord"] = { 58.0, 49.4, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13969,	-- Grol'dom's Missing Kodo
-				},					{	-- Betrayal from Within
-					["questID"] = 906,
+				}),
+				q(906,   {	-- Betrayal from Within
 					["u"] = 40,
 					["provider"] = { "n", 3430 },	-- Mangletooth
 					["races"] = HORDE_ONLY,
@@ -128,8 +65,8 @@ _.Zones =
 						un(2, i(5316)),	-- Barkshell Tunic
 						un(2, i(5317)),	-- Dry Moss Tunic
 					},
-				},
-				q(1838, {	-- Brutal Armor
+				}),
+				q(1838,  {	-- Brutal Armor
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1824,	-- Trial at the Field of Giant
@@ -138,7 +75,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				q(1848, {	-- Brutal Hauberk
+				q(1848,  {	-- Brutal Hauberk
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1838,	-- Brutal Armor
@@ -150,16 +87,13 @@ _.Zones =
 						un(2, i(7133)),	-- Brutal Hauberk
 					},
 				}),
-				{	-- By Hook Or By Crook
-					["questID"] = 13963,
+				q(13963, {	-- By Hook Or By Crook
 					["provider"] = { "n", 34513 },	-- Togrik
 					["coord"] = { 56.5, 40.4, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13961,	-- Drag it Out of Them
-				},
-
-				{	-- Centuar Bracers
-					["questID"] = 855,
+				}),
+				q(855,   {	-- Centuar Bracers
 					["provider"] = { "n", 3389 },	-- Regthar Deathgate
 					["coord"] = { 37.9, 55.2, 10 },
 					["races"] = HORDE_ONLY,
@@ -171,21 +105,18 @@ _.Zones =
 						un(2, i(5344)),	-- Pointed Axe NOTE: Old rewards, quest reused
 						un(2, i(5345)),	-- Stonewood Hammer NOTE: Old rewards, quest reused
 					},
-				},
-				{	-- Club Foote
-					["questID"] = 14034,
+				}),
+				q(14034, {	-- Club Foote
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["coord"] = { 68.4, 69.0, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Competition Schmompetition
-					["questID"] = 29086,
+				}),
+				q(29086, {	-- Competition Schmompetition
 					["provider"] = { "n", 3442 },	-- Sputtervalve
 					["coord"] = { 62.3, 17.4, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Consumed by Hatred
-					["questID"] = 899,
+				}),
+				q(899,   {	-- Consumed by Hatred
 					["provider"] = { "n", 3432 },	-- Mankrik
 					["coord"] = { 55.1, 41.0, 10 },
 					["races"] = HORDE_ONLY,
@@ -197,45 +128,8 @@ _.Zones =
 						un(2, i(5314)),	-- Boar Hunter's Cape NOTE: Old rewards, quest reused
 						un(2, i(6477)),	-- Grassland Sash NOTE: Old rewards, quest reused
 					},
-				},
-				{	-- Control Console
-					["objectID"] = 4141,
-					["coord"] = { 50.3, 25.6, 10 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						{	-- Samophlange
-							["questID"] = 29022,
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 29021,	-- Samophlange
-						},
-						{	-- Samophlange
-							["questID"] = 29023,
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 29022,	-- Samophlange
-						},
-						{	-- Samophlange
-							["questID"] = 29024,
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 29023,	-- Samophlange
-							["g"] = {
-								i(59568),	-- Painstakingly Crafted Belt
-								i(59569),	-- Clean Room Boots
-								i(131707),	-- Dusty Treads
-							},
-						},
-						{	-- Samophlange
-							["questID"] = 902,
-							["u"] = 40,
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								un(2, i(5324)),	-- Engineer's Hammer
-								un(2, i(5325)),	-- Welding Shield
-							},
-						},
-					},
-				},
-				{	-- Counterattack!
-					["questID"] = 4021,
+				}),
+				q(4021,  {	-- Counterattack!
 					["provider"] = { "n", 3389 },	-- Regthar Deathgate
 					["coord"] = { 37.9, 55.2, 10 },
 					["races"] = HORDE_ONLY,
@@ -245,16 +139,14 @@ _.Zones =
 						i(59592),	-- Suppressor's Wand
 						i(59593),	-- Deathgate Shield
 					},
-				},
-				{	-- Crossroads Caravan Delivery
-					["questID"] = 13975,
+				}),
+				q(13975, {	-- Crossroads Caravan Delivery
 					["provider"] = { "n", 34578 },	-- Rocco Whipshank
 					["coord"] = { 54.6, 41.4, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13949,	-- Crossroads Caravan Pickup
-				},
-				{	-- Crossroads Caravan Pickup
-					["questID"] = 13949,
+				}),
+				q(13949, {	-- Crossroads Caravan Pickup
 					["provider"] = { "n", 34258 },	-- Halga Bloodeye
 					["coord"] = { 67.3, 38.7, 10 },
 					["races"] = HORDE_ONLY,
@@ -265,9 +157,8 @@ _.Zones =
 						i(59538),	-- Caravan Escort's Gloves
 						i(131324),	-- Kranal's Chestplate
 					},
-				},
-				{	-- Curing the Sick
-					["questID"] = 6129,
+				}),
+				q(6129,  {	-- Curing the Sick
 					["u"] = 40,
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["races"] = HORDE_ONLY,
@@ -275,16 +166,14 @@ _.Zones =
 					["g"] = {
 						un(2, i(15866)),	-- Veildust Medicine Bag
 					},
-				},
-				{	-- Deathgate's Reinforcements
-					["questID"] = 14073,
+				}),
+				q(14073, {	-- Deathgate's Reinforcements
 					["provider"] = { "n", 3429 },	-- Thork
 					["coord"] = { 48.7, 59.5, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 851,	-- Verog the Dervish
-				},
-				{	-- Demon Seed
-					["questID"] = 29112,
+				}),
+				q(29112, {	-- Demon Seed
 					["provider"] = { "n", 52309 },	-- Balgor Whipshank
 					["coord"] = { 41.0, 39.1, 10 },
 					["races"] = HORDE_ONLY,
@@ -292,18 +181,16 @@ _.Zones =
 					["g"] = {
 						i(69219),	-- Sacrificial Blade
 					},
-				},
-				{	-- [DEPRECATED] Apothecary Zamah
-					["questID"] = 853,
+				}),
+				q(853,   {	-- [DEPRECATED] Apothecary Zamah
 					["u"] = 40,
 					["provider"] = { "n", 3390 },	-- Apothecary Helbrim
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(2, i(5340)),	-- Cauldron Stirrer
 					},
-				},
-				{	-- [DEPRECATED] Stolen Silver
-					["questID"] = 3281,
+				}),
+				q(3281,  {	-- [DEPRECATED] Stolen Silver
 					["u"] = 40,
 					["provider"] = { "n", 3464 },	-- Gazrog
 					["races"] = HORDE_ONLY,
@@ -311,9 +198,8 @@ _.Zones =
 						un(2, i(11853)),	-- Rambling Boots
 						un(2, i(2694)),	-- Settler's Leggings
 					},
-				},
-				{	-- Dig Rat Stew
-					["questID"] = 862,
+				}),
+				q(862,   {	-- Dig Rat Stew
 					["u"] = 40,
 					["provider"] = { "n", 3443 },	-- Grub
 					["races"] = HORDE_ONLY,
@@ -321,21 +207,18 @@ _.Zones =
 						un(2, i(10919)),	-- Apothecary Gloves
 						i(5487),	-- Recipe: Dig Rat Stew -- NOTE: This recipe is still available, only quest was retired
 					},
-				},
-				{	-- Disciples of Naralex
-					["questID"] = 26878,
+				}),
+				q(26878, {	-- Disciples of Naralex
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["coord"] = { 49.5, 58.6, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Drag it Out of Them
-					["questID"] = 13961,
+				}),
+				q(13961, {	-- Drag it Out of Them
 					["provider"] = { "n", 34513 },	-- Togrik
 					["coord"] = { 56.5, 40.4, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Echeyakee
-					["questID"] = 881,
+				}),
+				q(881,   {	-- Echeyakee
 					["provider"] = { "n", 3338 },	-- Sergra Darkthorn
 					["coord"] = { 50.0, 59.7, 10 },
 					["races"] = HORDE_ONLY,
@@ -343,9 +226,8 @@ _.Zones =
 						903,	-- Hunting the Huntress
 						845,	-- The Zhevra
 					},
-				},
-				{	-- Egg Hunt
-					["questID"] = 868,
+				}),
+				q(868,   {	-- Egg Hunt
 					["u"] = 40,
 					["provider"] = { "n", 3428 },	-- Korran
 					["races"] = HORDE_ONLY,
@@ -353,50 +235,44 @@ _.Zones =
 						un(2, i(6503)),	-- Harlequin Robes
 						un(2, i(6502)),	-- Violet Scale Armor
 					},
-				},
-				{	-- Empty Quivers
-					["questID"] = 13615,
+				}),
+				q(13615, {	-- Empty Quivers
 					["provider"] = { "n", 33284 },	-- Truun
 					["coord"] = { 42.2, 15.2, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Find Baron Longshore
-					["questID"] = 14045,
+				}),
+				q(14045, {	-- Find Baron Longshore
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["coord"] = { 68.4, 69.0, 10 },
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				q(13618, {	-- Find Gorat!
 					["provider"] = { "n", 8582 },	-- Kadrak
 					["coord"] = { 42.7, 14.9, 10 },
 					["races"] = HORDE_ONLY,
 				}),
-				{	-- Flight to Brackenwall
-					["questID"] = 26701,
+				q(26701, {	-- Flight to Brackenwall
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["lvl"] = 35,
 					["coord"] = { 68.4, 69, 10 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 26696,	-- The Call of Kalimdor
-				},
-				{	-- Flight to Theramore
-					["questID"] = 26702,
+				}),
+				q(26702, {	-- Flight to Theramore
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["lvl"] = 35,
 					["coord"] = { 68.4, 69, 10 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 26596,	-- The Call of Kalimdor
-				},
-				{	-- Flushing Out Verog
-					["questID"] = 14072,
+				}),
+				q(14072, {	-- Flushing Out Verog
 					["provider"] = { "n", 34638 },	-- Shoe
 					["coord"] = { 55.1, 78.3, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Forged Steel
-					["questID"] = 1503,
+				}),
+				q(1503,  {	-- Forged Steel
 					["u"] = 40,
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["races"] = HORDE_ONLY,
@@ -407,9 +283,8 @@ _.Zones =
 						un(2, i(7327)),	-- Thun'grim's Dagger
 						un(2, i(7329)),	-- Thun'grim's Sword
 					},
-				},
-				{	-- Free From the Hold
-					["questID"] = 898,
+				}),
+				q(898,   {	-- Free From the Hold
 					["u"] = 40,
 					["provider"] = { "n", 3465 },	-- Gilthares Firebough
 					["races"] = HORDE_ONLY,
@@ -417,15 +292,13 @@ _.Zones =
 						un(2, i(5311)),	-- Buckled Boots
 						un(2, i(5312)),	-- Riveted Gauntlets
 					},
-				},
-				{	-- Fungal Spores
-					["questID"] = 848,
+				}),
+				q(848,   {	-- Fungal Spores
 					["provider"] = { "n", 3390 },	-- Apothecary Helbrim
 					["coord"] = { 48.6, 58.2, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Gazlowe's Fortune
-					["questID"] = 14050,
+				}),
+				q(14050, {	-- Gazlowe's Fortune
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["coord"] = { 68.4, 69.0, 10 },
 					["races"] = HORDE_ONLY,
@@ -436,14 +309,13 @@ _.Zones =
 						i(59562),	-- Dividend Leggings
 						i(131329),	-- Hauberk of Fortune
 					},
-				},
-				{	-- Glomp is Sitting On It
-					["questID"] = 14056,
+				}),
+				q(14056, {	-- Glomp is Sitting On It
 					["provider"] = { "n", 34749 },	-- Tony Two-Tusk
 					["coord"] = { 77.2, 91.3, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14052,	-- Take it up With Tony
-				},
+				}),
 				q(13621, {	-- Gorat's Vengeance
 					["provider"] = { "n", 33263 },	-- Dinah Halfmoon
 					["coord"] = { 42.4, 15.7, 10 },
@@ -461,34 +333,29 @@ _.Zones =
 					["sourceQuest"] = 13621,	-- Gorat's Vengeance
 					["races"] = HORDE_ONLY,	
 				}),
-				{	-- Grol'dom's Missing Kodo
-					["questID"] = 13969,
+				q(13969, {	-- Grol'dom's Missing Kodo
 					["provider"] = { "n", 5907 },	-- Kranal Fiss
 					["coord"] = { 56.4, 40.3, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13963,	-- By Hook or By Crook
-				},
-				{	-- Guns. We Need Guns.
-					["questID"] = 14057,
+				}),
+				q(14057, {	-- Guns. We Need Guns.
 					["provider"] = { "n", 34749 },	-- Tony Two-Tusk
 					["coord"] = { 77.2, 91.3, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14056,	-- Glomp is Sitting On It
-				},
-				{	-- Harpy Lieutenants
-					["questID"] = 875,
+				}),
+				q(875,   {	-- Harpy Lieutenants
 					["provider"] = { "n", 3449 },	-- Darsok Swiftdagger
 					["coord"] = { 30.6, 45.8, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Harpy Raiders
-					["questID"] = 867,
+				}),
+				q(867,   {	-- Harpy Raiders
 					["provider"] = { "n", 3449 },	-- Darsok Swiftdagger
 					["coord"] = { 30.6, 45.8, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Hezrul Bloodmark
-					["questID"] = 852,
+				}),
+				q(852,   {	-- Hezrul Bloodmark
 					["provider"] = { "n", 3389 },	-- Regthar Deathgate
 					["coord"] = { 37.9, 55.2, 10 },
 					["races"] = HORDE_ONLY,
@@ -500,9 +367,8 @@ _.Zones =
 						i(131220),	-- Hands of Unfocused Rage
 						un(2, i(5351)),	-- Bounty Hunter's Ring  NOTE: Old rewards, quest reused
 					},
-				},
-				{	-- Horde Presence
-					["questID"] = 3514,
+				}),
+				q(3514,  {	-- Horde Presence
 					["u"] = 40,
 					["provider"] = { "n", 8582 },	-- Kadrak
 					["races"] = HORDE_ONLY,
@@ -510,26 +376,23 @@ _.Zones =
 						un(2, i(10654)),	-- Jutebraid Gloves
 						un(2, i(10653)),	-- Trailblazer Boots
 					},
-				},
-				{	-- Hunting the Huntress
-					["questID"] = 903,
+				}),
+				q(903,   {	-- Hunting the Huntress
 					["provider"] = { "n", 3338 },	-- Sergra Darkthorn
 					["coord"] = { 50.0, 59.7, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Hyena Extermination
-					["questID"] = 29088,
+				}),
+				q(29088, {	-- Hyena Extermination
 					["provider"] = { "n", 34698 },	-- Nozzlepot
 					["coord"] = { 62.5, 16.7, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Ignition
-					["questID"] = 858,
+				}),
+				q(858,   {	-- Ignition
 					["provider"] = { "n", 3439 },	-- Wizzlecrank's Shredder
 					["coord"] = { 57.5, 18.2, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				q(871, {	-- In Defense of Far Watch
+				}),
+				q(871,   {	-- In Defense of Far Watch
 					["provider"] = { "n", 3337 },	-- Kargal Battlescar
 					["coord"] = { 67.6, 39.3, 10 },
 					["races"] = HORDE_ONLY,
@@ -539,8 +402,7 @@ _.Zones =
 						28494,	-- Warchief's Command: Northern Barrens!
 					},
 				}),
-				{	-- In Fungus We Trust
-					["questID"] = 13998,
+				q(13998, {	-- In Fungus We Trust
 					["provider"] = { "n", 3390 },	-- Apothecary Helbrim
 					["coord"] = { 48.6, 58.2, 10 },
 					["races"] = HORDE_ONLY,
@@ -550,9 +412,8 @@ _.Zones =
 						i(59546),	-- Ointment-Coated Bracers
 						i(131328),	-- Ointment-Coated Handwraps
 					},
-				},
-				{	-- In Nightmares
-					["allianceQuestID"] = 3370,
+				}),
+				q(3370,  {	-- In Nightmares
 					["hordeQuestID"] = 3369,
 					["u"] = 40,
 					["provider"] = { "n", 8418 },	-- Falla Sagewind
@@ -560,9 +421,8 @@ _.Zones =
 						un(2, i(10658)),	-- Quagmire Galoshes
 						un(2, i(10657)),	-- Talbar Mantle
 					},
-				},
-				{	-- Into the Raptor's Den
-					["questID"] = 905,
+				}),
+				q(905,   {	-- Into the Raptor's Den
 					["provider"] = { "n", 3338 },	-- Sergra Darkthorn
 					["coord"] = { 50.0, 59.8, 10 },
 					["races"] = HORDE_ONLY,
@@ -571,16 +431,14 @@ _.Zones =
 						i(59549),	-- Sunscale Cloak
 						i(59550),	-- Darkthorn Piercer
 					},
-				},
-				{	-- Investigate the Wreckage
-					["questID"] = 14066,
+				}),
+				q(14066, {	-- Investigate the Wreckage
 					["provider"] = { "n", 3464 },	-- Gazrog
 					["coord"] = { 66.8, 72.7, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13991,	-- The Purloined Payroll
-				},
-				{	-- Isha Awak
-					["questID"] = 873,
+				}),
+				q(873,   {	-- Isha Awak
 					["u"] = 40,
 					["provider"] = { "n", 3388 },	-- Mahren Skyseer
 					["races"] = HORDE_ONLY,
@@ -589,9 +447,8 @@ _.Zones =
 						un(2, i(5356)),	-- Branding Rod
 						un(2, i(5357)),	-- Ward of the Vale
 					},
-				},
-				{	-- It's Gotta be the Horn
-					["questID"] = 865,
+				}),
+				q(865,   {	-- It's Gotta be the Horn
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
 					["coord"] = { 67.8, 71.5, 10 },
 					["g"] = {
@@ -601,15 +458,13 @@ _.Zones =
 						i(131223),	-- Smart Sandals
 						un(2, i(5343)),	-- Barkeeper's Cloak NOTE: Old reward, quest repurposed, original quest name was Raptor Horns
 					},
-				},
-				{	-- King of Centaur Mountain
-					["questID"] = 13995,
+				}),
+				q(13995, {	-- King of Centaur Mountain
 					["provider"] = { "n", 34634 },	-- Gorgal Angerscar
 					["coord"] = { 55.1, 78.4, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Kolkar Leaders
-					["questID"] = 850,
+				}),
+				q(850,   {	-- Kolkar Leaders
 					["provider"] = { "n", 34841 },	-- Telar Highstrider
 					["coord"] = { 38.0, 46.5, 10 },
 					["races"] = HORDE_ONLY,
@@ -619,15 +474,14 @@ _.Zones =
 						i(59553),	-- Highstrider Boots
 						i(131218),	-- Cord of the Forgotten Pool
 					},
-				},
-				{	-- Love it or Limpet
-					["questID"] = 14038,
+				}),
+				q(14038, {	-- Love it or Limpet
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["coord"] = { 68.4, 69.0, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14034,	-- Club Foote
-				},
-				q(6365, {	-- Meats to Orgrimmar
+				}),
+				q(6365,  {	-- Meats to Orgrimmar
 					["provider"] = { "n", 3489 },	-- Zargh
 					["coord"] = { 50.6, 57.8, 10 },
 					["races"] = {
@@ -636,16 +490,14 @@ _.Zones =
 						36,	-- Mag'har
 					},
 				}),
-				{	-- Mending Old Wounds (repeatable quest to repair lost rep with Ratchet from getting Insane title)
-					["questID"] = 9267,
+				q(9267,  {	-- Mending Old Wounds (repeatable quest to repair lost rep with Ratchet from getting Insane title)
 					["provider"] = { "n", 16418 },	-- Mupsi Shacklefridd
 					["coord"] = { 65.8, 72.0, 10 },
 					["minReputation"] = { 470, HATED },
 					["maxReputation"] = { 470, NEUTRAL },
 					["repeatable"] = true,
-				},
-				{	-- Miner's Fortune
-					["questID"] = 29015,
+				}),
+				q(29015, {	-- Miner's Fortune
 					["provider"] = { "n", 34674 },	-- Brak Blusterpipe
 					["coord"] = { 62.6, 17.0, 10 },
 					["races"] = HORDE_ONLY,
@@ -656,9 +508,8 @@ _.Zones =
 						i(59572),	-- Misshapen Boots
 						i(131706),	-- Slightly Dented Belt
 					},
-				},
-				{	-- Mor'shan Caravan Delivery
-					["questID"] = 29111,
+				}),
+				q(29111, {	-- Mor'shan Caravan Delivery
 					["provider"] = { "n", 52207 },	-- Nagala Whipshank
 					["coord"] = { 47.5, 39.5, 10 },
 					["races"] = HORDE_ONLY,
@@ -669,23 +520,20 @@ _.Zones =
 						i(131710),	-- Wild Rider's Mail Gauntlets
 						i(69222),	-- Kadrak's Axe
 					},
-				},
-				{	-- Mor'shan Caravan Pick-Up
-					["questID"] = 29109,
+				}),
+				q(29109, {	-- Mor'shan Caravan Pick-Up
 					["provider"] = { "n", 3429 },	-- Thork
 					["coord"] = { 48.7, 59.5, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29095,	-- Report to Thork
-				},
-				{	-- Mor'shan Caravan Rescue
-					["questID"] = 29110,
+				}),
+				q(29110, {	-- Mor'shan Caravan Rescue
 					["provider"] = { "n", 52207 },	-- Nagala Whipshank
 					["coord"] = { 47.5, 39.6, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29109,	-- Mor'shan Caravan Pick-Up
-				},
-				{	-- Mor'shan Defense
-					["questID"] = 13612,
+				}),
+				q(13612, {	-- Mor'shan Defense
 					["provider"] = { "n", 8582 },	-- Kadrak
 					["coord"] = { 42.7, 14.9, 10 },
 					["races"] = HORDE_ONLY,
@@ -693,9 +541,8 @@ _.Zones =
 						29111,	-- Mor'shan Caravan Delivery
 						28493,	-- Warchief's Command: Ashenvale!
 					},
-				},
-				{	-- Mura Runetotem [This quest was repurposed and made obsolete twice]
-					["questID"] = 3301,
+				}),
+				q(3301,  {	-- Mura Runetotem [This quest was repurposed and made obsolete twice]
 					["u"] = 40,
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["races"] = HORDE_ONLY,
@@ -705,9 +552,8 @@ _.Zones =
 						un(2, i(10820)),	-- Jackseed Belt [WotLK version of quest]
 						un(2, i(10821)),	-- Sower's Cloak [WotLK version of quest]
 					},
-				},
-				{	-- Mutiny, Mon!
-					["questID"] = 14063,
+				}),
+				q(14063, {	-- Mutiny, Mon!
 					["provider"] = { "n", 34749 },	-- Tony Two-Tusk
 					["coord"] = { 77.2, 91.3, 10 },
 					["races"] = HORDE_ONLY,
@@ -719,9 +565,8 @@ _.Zones =
 						i(59576),	-- Mutineer's Cloak
 						i(131330),	-- Uninsured Armguards
 					},
-				},
-				{	-- Nether-lace Garment
-					["questID"] = 1946,
+				}),
+				q(1946,  {	-- Nether-lace Garment
 					["u"] = 40,
 					["provider"] = { "n", 3484 },	-- Kil'hala
 					["races"] = HORDE_ONLY,
@@ -730,15 +575,14 @@ _.Zones =
 						un(2, i(7512)),	-- Nether-Lace Robe
 						un(2, i(9515)),	-- Nether-Lace Tunic
 					},
-				},
-				{	-- Nugget Slugs
-					["questID"] = 29027,
+				}),
+				q(29027, {	-- Nugget Slugs
 					["provider"] = { "n", 9316 },	-- Wenikee Boltbucket
 					["coord"] = { 44.3, 24.8, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29026,	-- Wenikee Boltbucket
-				},
-				q(1840, {	-- Orm Stonehoof and the Brutal Helm
+				}),
+				q(1840,  {	-- Orm Stonehoof and the Brutal Helm
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1838,	-- Brutal Armor
@@ -746,28 +590,25 @@ _.Zones =
 					["classes"] = { 1 },	-- Warrior
 					["u"] = 40,
 				}),
-				{	-- Outrider Basic Care Package
-					["questID"] = 7866,
+				q(7866,  {	-- Outrider Basic Care Package
 					["provider"] = { "n", 14754 },	-- Kelm Hargunth
 					["coord"] = { 40.2, 20.0, 10 },
 					["races"] = HORDE_ONLY,
-					["description"] = "Requires reputation level of Friendly with Warsong Outriders to complete.",
-				},
-				{	-- Outrider Standard Care Package
-					["questID"] = 7867,
+					["minReputation"] = { 889, FRIENDLY },
+				}),
+				q(7867,  {	-- Outrider Standard Care Package
 					["provider"] = { "n", 14754 },	-- Kelm Hargunth
 					["coord"] = { 40.2, 20.0, 10 },
 					["races"] = HORDE_ONLY,
-					["description"] = "Requires reputation level of Honored with Warsong Outriders to complete.",
-				},
-				{	-- Outrider Advanced Care Package
-					["questID"] = 7868,
+					["minReputation"] = { 889, HONORED },
+				}),
+				q(7868,  {	-- Outrider Advanced Care Package
 					["provider"] = { "n", 14754 },	-- Kelm Hargunth
 					["coord"] = { 40.2, 20.0, 10 },
 					["races"] = HORDE_ONLY,
-					["description"] = "Requires reputation level of Revered with Warsong Outriders to complete.",
-				},
-				q(1040, {	-- Passage to Booty Bay
+					["minReputation"] = { 889, REVERED },
+				}),
+				q(1040,  {	-- Passage to Booty Bay
 					["provider"] = { "n", 3453 },	-- Wharfmaster Dizzywig
 					["coord"] = { 63.2, 38.4, 10 },
 					["sourceQuest"] = 1039,	-- The Barrens Port
@@ -775,21 +616,18 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
-				{	-- Plainstrider Menace
-					["questID"] = 844,
+				q(844,   {	-- Plainstrider Menace
 					["provider"] = { "n", 34258 },	-- Halga Bloodeye
 					["coord"] = { 67.4, 38.7, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Raging River Ride
-					["questID"] = 26769,
+				}),
+				q(26769, {	-- Raging River Ride
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["coord"] = { 68.4, 69.0, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14050,	-- Gazlowe's Fortune
-				},
-				{	-- Read the Manual
-					["questID"] = 14006,
+				}),
+				q(14006, {	-- Read the Manual
 					["provider"] = { "n", 3442 },	-- Sputtervalve
 					["coord"] = { 62.2, 17.4, 10 },
 					["races"] = HORDE_ONLY,
@@ -798,16 +636,14 @@ _.Zones =
 						i(59547),	-- Out-of-Date Manual
 						i(59548),	-- Scrap Metal Shield
 					},
-				},
-				{	-- Report to Thork
-					["questID"] = 29095,
+				}),
+				q(29095, {	-- Report to Thork
 					["provider"] = { "n", 3449 },	-- Darsok Swiftdagger
 					["coord"] = { 30.6, 45.9, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 876,	-- Serena Bloodfeather
-				},
-				{	-- Rescue the Fallen
-					["questID"] = 13613,
+				}),
+				q(13613, {	-- Rescue the Fallen
 					["provider"] = { "n", 33263 },	-- Dinah Halfmoon
 					["coord"] = { 42.4, 15.7, 10 },
 					["races"] = HORDE_ONLY,
@@ -817,15 +653,14 @@ _.Zones =
 						i(56635),	-- First Responder's Pauldrons
 						i(131294),	-- Battlefield Medic Handguards
 					},
-				},
-				{	-- Return to Samophlanger
-					["questID"] = 14004,
+				}),
+				q(14004, {	-- Return to Samophlanger
 					["provider"] = { "n", 9316 },	-- Wenikee Boltbucket
 					["coord"] = { 44.3, 24.9, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29027,	-- Nugget Slugs
-				},
-				q(6384, {	-- Ride to Orgrimmar
+				}),
+				q(6384,  {	-- Ride to Orgrimmar
 					["provider"] = { "n", 3615 },	-- Devrak
 					["coord"] = { 48.6, 58.6, 10 },
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
@@ -835,30 +670,59 @@ _.Zones =
 						36,	--Mag'har
 					},
 				}),
-				{	-- Root Samples
-					["questID"] = 866,
+				q(866,   {	-- Root Samples
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
 					["coord"] = { 67.8, 71.6, 10 },
 					["requireSkill"] = 182,	-- Herbalism
 					["g"] = {
 						i(5341),	-- Spore-Covered Tunic
 					},
-				},
-				{	-- Samophlange
-					["questID"] = 29021,
+				}),
+				q(29021, {	-- Samophlange
 					["provider"] = { "n", 3442 },	-- Sputtervalve
 					["coord"] = { 62.3, 17.4, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Samophlange Repair
-					["questID"] = 14003,
+				}),
+				q(29022, {	-- Samophlange
+					["coord"] = { 50.3, 25.6, 10 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 4141 },	-- Control Console
+					["sourceQuest"] = 29021,	-- Samophlange
+				}),
+				q(29023, {	-- Samophlange
+					["coord"] = { 50.3, 25.6, 10 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 4141 },	-- Control Console
+					["sourceQuest"] = 29022,	-- Samophlange
+				}),
+				q(29024, {	-- Samophlange
+					["coord"] = { 50.3, 25.6, 10 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 4141 },	-- Control Console
+					["sourceQuest"] = 29023,	-- Samophlange
+					["g"] = {
+						i(59568),	-- Painstakingly Crafted Belt
+						i(59569),	-- Clean Room Boots
+						i(131707),	-- Dusty Treads
+					},
+				}),
+				q(902,   {	-- Samophlange
+					["u"] = 40,
+					["coord"] = { 50.3, 25.6, 10 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 4141 },	-- Control Console
+					["g"] = {
+						un(2, i(5324)),	-- Engineer's Hammer
+						un(2, i(5325)),	-- Welding Shield
+					},
+				}),
+				q(14003, {	-- Samophlange Repair
 					["provider"] = { "n", 3442 },	-- Sputtervalve
 					["coord"] = { 62.3, 17.5, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29024,	-- Samophlange
-				},
-				{	-- Serena Bloodfeather
-					["questID"] = 876,
+				}),
+				q(876,   {	-- Serena Bloodfeather
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 875,	-- Harpy Lieutenants
 					["g"] = {
@@ -866,9 +730,8 @@ _.Zones =
 						un(2, i(5279)),	-- 	Harpy Skinner
 						un(2, i(5318)),	-- 	Zhovur Axe
 					},
-				},
-				{	-- Sludge Beast!
-					["questID"] = 29089,
+				}),
+				q(29089, {	-- Sludge Beast!
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29087,	-- Sludge Investigation
 					["g"] = {
@@ -876,20 +739,18 @@ _.Zones =
 						i(69218),	-- Sludge Fen Cloak
 						i(131708),	-- Sludge Encrusted Vest
 					},
-				},
-				{	-- Sludge Investigation
-					["questID"] = 29087,
+				}),
+				q(29087, {	-- Sludge Investigation
 					["provider"] = { "n", 34698 },	-- Nozzlepot
 					["coord"] = { 62.5, 16.7, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Southsea Freebooters
-					["questID"] = 887,
+				}),
+				q(887,   {	-- Southsea Freebooters
 					["provider"] = { "n", 3453 },	-- Wharfmaster Dizzywig
 					["coord"] = { 69.5, 72.9, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				q(1825, {	-- Speak with Thun'grim
+				}),
+				q(1825,  {	-- Speak with Thun'grim
 					["provider"] = { "n", 6394 },	-- Ruga Ragetotem
 					["coord"] = { 44.6, 59.4, 10 },
 					["sourceQuest"] = 1824,	-- Trial at the Field of Giants
@@ -898,8 +759,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				{	-- Stolen Booty
-					["questID"] = 888,
+				q(888,   {	-- Stolen Booty
 					["u"] = 40,
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["races"] = HORDE_ONLY,
@@ -907,29 +767,25 @@ _.Zones =
 						un(2, i(5320)),	-- Padded Lamellar Boots
 						un(2, i(5337)),	-- Wayfaring Gloves
 					},
-				},
-				{	-- Supplies for the Crossroads
-					["questID"] = 5041,
+				}),
+				q(5041,  {	-- Supplies for the Crossroads
 					["provider"] = { "n", 34258 },	-- Halga Bloodeye
 					["coord"] = { 67.4, 38.7, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 871,	-- In Defense of Far Watch
-				},
-				{	-- Take it up with Tony
-					["questID"] = 14052,
+				}),
+				q(14052, {	-- Take it up with Tony
 					["provider"] = { "n", 3453 },	-- Wharfmaster Dizzywig
 					["coord"] = { 69.5, 72.9, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- The Baron's Demands
-					["questID"] = 14046,
+				}),
+				q(14046, {	-- The Baron's Demands
 					["provider"] = { "n", 3467 },	-- Baron Longshore
 					["coord"] = { 69.9, 85.1, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14045,	-- Find Baron Longshore
-				},
-				{	-- The Binding
-					["questID"] = 1795,
+				}),
+				q(1795,  {	-- The Binding
 					["u"] = 40,
 					["provider"] = { "n", 6251 },	-- Strahad Farsan
 					["lvl"] = 30,
@@ -939,9 +795,8 @@ _.Zones =
 						i(22244),	-- Box of Souls
 						spell(691),	-- Summon Felhunter
 					},
-				},
-				{	-- The Completed Orb of Dar'Orahil
-					["questID"] = 4964,
+				}),
+				q(4964,  {	-- The Completed Orb of Dar'Orahil
 					["u"] = 40,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { 9 },	-- Warlock
@@ -949,9 +804,8 @@ _.Zones =
 						un(2, i(15108)),	-- Orb of Dar'Orahil
 						un(2, i(15106)),	-- Staff of Dar'Orahil
 					},
-				},
-				{	-- The Completed Orb of Noh'Orahil
-					["questID"] = 4975,
+				}),
+				q(4975,  {	-- The Completed Orb of Noh'Orahil
 					["u"] = 40,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { 9 },	-- Warlock
@@ -959,18 +813,16 @@ _.Zones =
 						un(2, i(15107)),	-- Orb of Noh'Orahil
 						un(2, i(15105)),	-- Staff of Noh'Orahil
 					},
-				},
-				{	-- The Completed Robe
-					["questID"] = 4786,
+				}),
+				q(4786,  {	-- The Completed Robe
 					["u"] = 40,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { 9 },	-- Warlock
 					["g"] = {
 						un(2, i(6900)),	-- Enchanted Gold Bloodrobe
 					},
-				},
-				{	-- The Escape
-					["questID"] = 863,
+				}),
+				q(863,   {	-- The Escape
 					["provider"] = { "n", 3439 },	-- Wizzlecrank's Shredder
 					["coord"] = { 57.5, 18.2, 10 },
 					["races"] = HORDE_ONLY,
@@ -983,9 +835,8 @@ _.Zones =
 						un(2, i(5326)),	-- Flaring Baton  NOTE: Old reward, quest repurposed
 						un(2, i(5327)),	-- Greasy Tinker's Pants  NOTE: Old reward, quest repurposed
 					},
-				},
-				{	-- The Far Watch Offensive
-					["questID"] = 872,
+				}),
+				q(872,   {	-- The Far Watch Offensive
 					["provider"] = { "n", 3337 },	-- Kargal Battlescar
 					["coord"] = { 67.7, 39.4, 10 },
 					["races"] = HORDE_ONLY,
@@ -998,21 +849,18 @@ _.Zones =
 						un(2, i(5275)),	-- Binding Girdle NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
 						un(2, i(5328)),	-- Cinched Belt NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
 					},
-				},
-				{	-- The Forgotten Pools
-					["questID"] = 870,
+				}),
+				q(870,   {	-- The Forgotten Pools
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["coord"] = { 49.5, 58.6, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- The Grol'dom Militia
-					["questID"] = 13973,
+				}),
+				q(13973, {	-- The Grol'dom Militia
 					["provider"] = { "n", 34560 },	-- Una Wolfclaw
 					["coord"] = { 54.0, 41.2, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- The Kodo's Return
-					["questID"] = 13971,
+				}),
+				q(13971, {	-- The Kodo's Return
 					["provider"] = { "n", 34547 },	-- Grol'dom Kodo
 					["coord"] = { 58.0, 49.4, 10 },
 					["races"] = HORDE_ONLY,
@@ -1021,39 +869,35 @@ _.Zones =
 						i(59531),	-- Far Watch Musket
 						i(59532),	-- Imported Bracers
 					},
-				},
-				{	-- The Purloined Payroll
-					["questID"] = 13991,
+				}),
+				q(13991, {	-- The Purloined Payroll
 					["provider"] = { "n", 3338 },	-- Sergra Darkthorn
 					["coord"] = { 50.0, 59.9, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 905,	-- Into the Raptor's Den
 					["isBreadcrumb"] = true,
-				},
-				{	-- The Short Way Home
-					["questID"] = 29094,
+				}),
+				q(29094, {	-- The Short Way Home
 					["provider"] = { "n", 3442 },	-- Sputtervalve
 					["coord"] = { 62.3, 17.3, 10 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						29086,	-- Competition Schmompetition
+						29015,	-- Miner's Fortune
+					},
 					["g"] = {
 						i(69217),	-- Test Pilot Britches
 						i(69223),	-- Emergency Hatchet
 						i(131709),	-- Passenger Pantaloons
 					},
-					["sourceQuests"] = {
-						29086,	-- Competition Schmompetition
-						29015,	-- Miner's Fortune
-					},
-				},
-				{	-- The Stagnant Oasis
-					["questID"] = 877,
+				}),
+				q(877,   {	-- The Stagnant Oasis
 					["provider"] = { "n", 34626 },	-- Jerrik Highmountain
 					["coord"] = { 60.6, 85.4, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13988,	-- A Growing Problem
-				},
-				{	-- The Stolen Silver
-					["questID"] = 14067,
+				}),
+				q(14067, {	-- The Stolen Silver
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 869,	-- To Track a Thief
 					["g"] = {
@@ -1061,9 +905,8 @@ _.Zones =
 						i(59555),	-- Silver-Trim Leggings
 						i(131331),	-- Silver-Trim Greaves
 					},
-				},
-				{	-- The Tortusk Takedown
-					["questID"] = 13968,
+				}),
+				q(13968, {	-- The Tortusk Takedown
 					["provider"] = { "n", 34513 },	-- Togrik
 					["coord"] = { 56.5, 40.4, 10 },
 					["races"] = HORDE_ONLY,
@@ -1074,21 +917,18 @@ _.Zones =
 						i(59535),	-- Togrik's Legguards
 						i(131325),	-- Boar Hunter's Treads
 					},
-				},
-				{	-- The Zhevra
-					["questID"] = 845,
+				}),
+				q(845,   {	-- The Zhevra
 					["provider"] = { "n", 3338 },	-- Sergra Darkthorn
 					["coord"] = { 50.0, 59.7, 10 },
 					["races"] = HORDE_ONLY,
-				},
-				{	-- They Call Him Swiftdagger. He Kills Harpies.
-					["questID"] = 28877,
+				}),
+				q(28877, {	-- They Call Him Swiftdagger. He Kills Harpies.
 					["u"] = 40,
 					["provider"] = { "n", 34698 },	-- Nozzlepot
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Through Fire and Flames
-					["questID"] = 13878,
+				}),
+				q(13878, {	-- Through Fire and Flames
 					["provider"] = { "n", 34284 },	-- Dorak
 					["coord"] = { 66.6, 45.4, 10 },
 					["races"] = HORDE_ONLY,
@@ -1097,19 +937,18 @@ _.Zones =
 						i(59530),	-- Wolf Tender's Boots
 						i(131310),	-- Wolf Tender's Footwraps
 					},
-				},
+				}),
 				q(13620, {	-- To Dinah, at Once!
 					["provider"] = { "n", 8582 },	-- Kadrak
 					["coord"] = { 42.6, 14.9, 10 },
 					["sourceQuest"] = 13619,	-- Final Report
 					["races"] = HORDE_ONLY,
 				}),
-				{	-- To the Mor'Shan Ramparts!
-					["questID"] = 28876,
+				q(28876, {	-- To the Mor'Shan Ramparts!
 					["u"] = 40,
 					["provider"] = { "n", 3429 },	-- Thork
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				q(13712, {	-- To the Rescue!
 					["provider"] = { "n", 8582 },	-- Kadrak
 					["coord"] = { 42.6, 14.9, 10 },
@@ -1119,21 +958,19 @@ _.Zones =
 						i(60644),	-- Gorka's Band
 					},
 				}),
-				{	-- To Track a Thief
-					["questID"] = 869,
+				q(869,   {	-- To Track a Thief
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14066,	-- Investigate the Wreckage
-				},
-				{	-- Tome of the Cabal
-					["questID"] = 1758,
+				}),
+				q(1758,  {	-- Tome of the Cabal
 					["u"] = 40,
 					["provider"] = { "n", 6251 },	-- Strahad Farsan
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 9 },	-- Warlock Only
 					["sourceQuest"] = 1798,	-- Seeking Strahad
-				},
-				q(1824, {	-- Trial at the Field of Giants
+				}),
+				q(1824,  {	-- Trial at the Field of Giants
 					["provider"] = { "n", 6394 },	-- Ruga Ragetotem
 					["coord"] = { 44.6, 59.4, 10 },
 					["sourceQuest"] = 1823,	-- Speak with Ruga
@@ -1145,7 +982,7 @@ _.Zones =
 						un(2, i(7120)),	-- Ruga's Bulwark
 					},
 				}),
-				q(1839, {	-- Ula'elek and the Brutal Gauntlets
+				q(1839,  {	-- Ula'elek and the Brutal Gauntlets
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1838,	-- Brutal Armor
@@ -1154,7 +991,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				q(1841, {	-- Velora Nitely and the Brutal Legguards
+				q(1841,  {	-- Velora Nitely and the Brutal Legguards
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1838,	-- Brutal Armor
@@ -1163,8 +1000,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				{	-- Verog the Dervish
-					["questID"] = 851,
+				q(851,   {	-- Verog the Dervish
 					["provider"] = { "n", 34638 },	-- Shoe
 					["coord"] = { 55.2, 78.3, 10 },
 					["races"] = HORDE_ONLY,
@@ -1174,26 +1010,20 @@ _.Zones =
 						i(59567),	-- Murderous Bracers
 						i(131219),	-- Murderous Cuffs
 					},
-				},
-				{	-- WANTED
-					["objectID"] = 3972,
+				}),
+				q(895,   {	-- WANTED: Cap'n Garvey
 					["coord"] = { 68.2, 71.2, 10 },
+					["provider"] = { "o", 3972 },	-- WANTED
 					["g"] = {
-						{	-- WANTED: Cap'n Garvey
-							["questID"] = 895,
-							["g"] = {
-								i(49560),	-- Proof of Death
-								i(49543),	-- Seaworthy Leggings
-								i(49548),	-- Gazlowe's Gloves
-								i(49446),	-- Retainer Vest
-								i(131225),	-- Gazlowe's Grips
-								i(131226),	-- Retainer Tunic
-							},
-						},
+						i(49560),	-- Proof of Death
+						i(49543),	-- Seaworthy Leggings
+						i(49548),	-- Gazlowe's Gloves
+						i(49446),	-- Retainer Vest
+						i(131225),	-- Gazlowe's Grips
+						i(131226),	-- Retainer Tunic
 					},
-				},
-				{	-- Waptor Twapping
-					["questID"] = 14068,
+				}),
+				q(14068, {	-- Waptor Twapping
 					["provider"] = { "n", 34828 },	-- Kala'ma
 					["coord"] = { 62.0, 63.2, 10 },
 					["races"] = HORDE_ONLY,
@@ -1203,21 +1033,19 @@ _.Zones =
 						i(59565),	-- Waptor Scale Bweastpwate
 						i(131332),	-- Waptor Tweads
 					},
-				},
-				{	-- Wenikee Boltbucket
-					["questID"] = 29026,
+				}),
+				q(29026, {	-- Wenikee Boltbucket
 					["provider"] = { "n", 34674 },	-- Brak Blusterpipe
 					["coord"] = { 62.6, 16.9, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14003,	-- Samophlange Repair
-				},
-				{	-- Who's Shroomin' Who?
-					["questID"] = 13999,
+				}),
+				q(13999, {	-- Who's Shroomin' Who?
 					["provider"] = { "n", 3390 },	-- Apothecary Helbrim
 					["coord"] = { 48.6, 58.2, 10 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13998,	-- In Fungus we Trust
-				},
+				}),
 			}),
 		}),
 	}),
