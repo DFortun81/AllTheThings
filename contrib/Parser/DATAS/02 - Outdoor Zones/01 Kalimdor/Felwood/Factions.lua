@@ -8,27 +8,24 @@ _.Zones =
 			n(-6013, {	-- Factions
 				faction(576, {	-- Timbermaw Hold
 					["creatureID"] = 11558,	-- Kernda
-					["groups"] = {
+					["g"] = {
 						ach(944),	-- They Love Me In That Tunnel
 						n(-17, {	-- Quests
-							{	-- Deadwood Ritual Totem
-								["itemID"] = 20741,
-								["questID"] = 8470,	-- Deadwood Ritual Totem
+							q(8470, {	-- Deadwood Ritual Totem
+								["provider"] = { "i", 20741 },
 								["crs"] = {
 									7157,	-- Deadwood Avenger
 									7156,	-- Deadwood Den Watcher
 									7158,	-- Deadwood Shaman
 								},
-							},
-							{	-- Feathers for Grazle
-								["questID"] = 28396,
+							}),
+							q(28396, {	-- Feathers for Grazle
 								["provider"] = { "n", 11554 },	-- Grazle
 								["coord"] = { 51.4, 80.4, 77 },
 								["repeatable"] = true,
 								["sourceQuest"] = 27995,	-- Dance for Ruumbo!
-							},
-							{	-- Feathers for Nafien
-								["questID"] = 28395,
+							}),
+							q(28395, {	-- Feathers for Nafien
 								["provider"] = { "n", 15395 },	-- Nafien
 								["coord"] = { 64.0, 10.3, 77 },
 								["repeatable"] = true,
@@ -36,29 +33,26 @@ _.Zones =
 									28338,	-- Deadwood of the North
 									28366,	-- Disarming Bears
 								},
-							},
-							{	-- Runecloth
-								["questID"] = 6031,
+							}),
+							q(6031, {	-- Runecloth
 								["provider"] = { "n", 11557 },	-- Meilosh
 								["coord"] = { 64.8, 5.2, 77 },
 								["description"] = "You must be Friendly with Timbermaw Hold to pick up this quest.",
-								["groups"] = {
+								["g"] = {
 									i(15822),	-- Shadowskin Spaulders
 									i(15823),	-- Bricksteel Gauntlets
 								},
-							},
-							{	-- Sacred Cloth
-								["questID"] = 6032,
+							}),
+							q(6032, {	-- Sacred Cloth
 								["provider"] = { "n", 11557 },	-- Meilosh
 								["coord"] = { 64.8, 5.2, 77 },
 								["description"] = "You must be Friendly with Timbermaw Hold to pick up this quest.",
 								["requireSkill"] = 197,	-- Requires: Tailoring
-								["groups"] = {
+								["g"] = {
 									recipe(19435),	-- Mooncloth Boots
 								},
-							},
-							{	-- Speak to Salfa
-								["questID"] = 28521,
+							}),
+							q(28521, {	-- Speak to Salfa
 								["provider"] = { "n", 15395 },	-- Nafien
 								["coord"] = { 64.0, 10.4, 77 },
 								["isBreadcrumb"] = true,
@@ -66,28 +60,27 @@ _.Zones =
 									28338,	-- Deadwood of the North
 									28366,	-- Disarming Bears
 								},
-							},
-							{	-- The Root of All Evil
-								["questID"] = 8481,
+							}),
+							q(8481, {	-- The Root of All Evil
 								["provider"] = { "n", 11555 },	-- Gorn One Eye
 								["coord"] = { 64.4, 5.1, 77 },
 								["description"] = "Requires Exalted with Timberbaw Hold.",
-								["groups"] = {
+								["g"] = {
 									i(21326),	-- Defender of the Timbermaw
 								},
-							},
+							}),
 						}),
 						n(-2, {	-- Vendors
 							n(11555, {	-- Gorn One Eye
 								["coord"] = { 64.4, 5.1, 77 },
-								["groups"] = {
+								["g"] = {
 									i(16768),	-- Furbolg Medicine Pouch
 									i(16769),	-- Furbolg Medicine Totem
 								},
 							}),
 							n(11557, {	-- Meilosh
 								["coord"] = { 64.8, 5.2, 77 },
-								["groups"] = {
+								["g"] = {
 									i(22392),	-- Formula: Enchant 2H Weapon - Agility
 									i(19445),	-- Formula: Enchant Weapon - Agility
 									i(19218), 	-- Pattern: Mantle of the Timbermaw

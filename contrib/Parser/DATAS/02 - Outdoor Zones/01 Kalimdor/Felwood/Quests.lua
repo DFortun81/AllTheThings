@@ -6,120 +6,42 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(77, {	-- Felwood
 			n(-17, {	-- Quests
-				{	-- Felwood Quests
-					["achievementID"] = 4931,
-					["groups"] = {
-						{	-- Emerald Sanctuary
-							["criteriaID"] = 1,
-							["sourceQuests"] = {
-								27997,	-- The Corruption of the Jadefire
-								28148,	-- Culling the Corrupted
-								27995,	-- Dance for Ruumbo!
-							},
-						},
-						{	-- Ruins of Constellas
-							["criteriaID"] = 2,
-							["sourceQuest"] = 28288,	-- Open Their Eyes
-						},
-						{	-- Wildheart Point
-							["criteriaID"] = 3,
-							["sourceQuests"] = {
-								28126,	-- Dousing the Flames of Protection (verify)
-								28129,	-- The Demon Prince
-								28128,	-- The Inner Circle (verify)
-							},
-						},
-						{	-- Bloodvenom Post
-							["criteriaID"] = 4,
-							["sourceQuests"] = {
-								28214,	-- Cleanup at Bloodvenom Post
-								28213,	-- Hazzard Disposal
-							},
-						},
-						{	-- Whisperwind Grove
-							["criteriaID"] = 5,
-							["sourceQuests"] = {
-								28341,	-- Collecting Corruption
-								28342,	-- Fel To Pieces
-								28358,	-- Hunting the Damned
-								28359,	-- The Core of Kroshius
-								28374,	-- Weeding the Lawn
-							},
-						},
-						{	-- Rejoining the Forest
-							["criteriaID"] = 6,
-							["sourceQuest"] = 28228,	-- Rejoining the Forest
-						},
-						{	-- A Destiny of Flame and Sorrow
-							["criteriaID"] = 7,
-							["sourceQuest"] = 28264,	-- Navarax's Gambit
-						},
-						{	-- War in the Forest (alliance)
-							["criteriaID"] = 8,
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 28389,	-- Report to the Denmother
-						},
-						{	-- War in the Forest (horde)
-							["criteriaID"] = 8,
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								28340,	-- A Bomb Deal
-								28368,	-- Fire in the Hole!
-							},
-						},
-						{	-- The Timbermaw's Ally
-							["criteriaID"] = 9,
-							["sourceQuests"] = {
-								28338,	-- Deadwood of the North
-								28366,	-- Disarming Bears
-								28364,	-- The Chieftain's Key
-							},
-						},
-					},
-				},
-				{	-- A Bomb Deal
-					["questID"] = 28340,
+				q(28340, {	-- A Bomb Deal
 					["provider"] = { "n", 48333 },	-- Foreman Pikwik
 					["coord"] = { 54.6, 18.3, 77 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28380,	-- Pikwik in Peril
-				},
-				{	-- A Destiny of Flame and Sorrow
-					["questID"] = 28218,
+				}),
+				q(28218, {	-- A Destiny of Flame and Sorrow
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
 					["coord"] = { 45.5, 20.1, 77 },
 					["sourceQuest"] = 28217,	-- Wanted: The Demon Hunter
-				},
-				{	-- A Final Blow
-					["questID"] = 5242,
+				}),
+				q(5242,  {	-- A Final Blow
 					["u"] = 40,
 					["provider"] = { "n", 10922 },	-- Greta Mosshoof
-					["groups"] = {
+					["g"] = {
 						un(2, i(15708)),	-- Blight Leather Gloves
 						un(2, i(15707)),	-- Brantwood Sash
 						un(2, i(15709)),	-- Gearforge Girdle
 					},
-				},
-				{	-- A Flare Fight
-					["questID"] = 28334,
+				}),
+				q(28334, {	-- A Flare Fight
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, 77 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28372,	-- Back in Business
-				},
-				{	-- A Slimy Situation
-					["questID"] = 28207,
+				}),
+				q(28207, {	-- A Slimy Situation
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
 					["coord"] = { 41.2, 49.9, 77 },
 					["sourceQuest"] = 28305,	-- The Fate of Bloodvenom Post
-				},
-				{	-- A Talking Totem
-					["questID"] = 28100,
+				}),
+				q(28100, {	-- A Talking Totem
 					["provider"] = { "n", 11554 },	-- Grazle
 					["coord"] = { 51.4, 80.4, 77 },
-				},
-				{	-- An Arcane Ally
-					["questID"] = 28150,
+				}),
+				q(28150, {	-- An Arcane Ally
 					["provider"] = { "n", 10923 },	-- Tenell Leafrunner
 					["coord"] = { 51.1, 80.4, 77 },
 					["isBreadcrumb"] = true,
@@ -128,25 +50,22 @@ _.Zones =
 						27995,	-- Dance for Ruumbo!
 						27997,	-- The Corruption of the Jadefire
 					},
-				},
-				{	-- Ancient Spirit
-					["questID"] = 4261,
+				}),
+				q(4261,  {	-- Ancient Spirit
 					["u"] = 40,
 					["provider"] = { "n", 9598 },	-- Arei
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						un(2, i(11874)),	-- Clouddrift Mantle
 						un(2, i(11873)),	-- Ethereal Mist Cape
 					},
-				},
-				{	-- Aquementas
-					["questID"] = 4005,
+				}),
+				q(4005,  {	-- Aquementas
 					["u"] = 40,
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
 					["sourceQuest"] = 4084,	-- Silver Heart
-				},
-				{	-- Back to Business
-					["questID"] = 28372,
+				}),
+				q(28372, {	-- Back to Business
 					["provider"] = { "n", 48469 },	-- Fez Hobnob
 					["coord"] = { 44.2, 27.9, 77 },
 					["races"] = HORDE_ONLY,
@@ -155,9 +74,8 @@ _.Zones =
 						28264,	-- Navarax's Gambit
 						28228,	-- Rejoining the Forest
 					},
-				},
-				{	-- Bloody Wages
-					["questID"] = 28388,
+				}),
+				q(28388, {	-- Bloody Wages
 					["provider"] = { "n", 48493 },	-- Alton Redding
 					["coord"] = { 56.8, 18.4, 77 },
 					["races"] = ALLIANCE_ONLY,
@@ -165,34 +83,31 @@ _.Zones =
 						28386,	-- Borrowed Bombs
 						28385,	-- Oil and Irony
 					},
-				},
-				{	-- Borrowed Bombs
-					["questID"] = 28386,
+				}),
+				q(28386, {	-- Borrowed Bombs
 					["provider"] = { "n", 48493 },	-- Alton Redding
 					["coord"] = { 56.8, 18.4, 77 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28337,	-- The Shredders of Irontree
-					["groups"] = {
+					["g"] = {
 						i(65342),	-- Irontree Cloak
 						i(65291),	-- Oilfoot Slippers
 						i(65310),	-- Alton's Leggings
 						i(65329),	-- Breastplate of Protest
 					},
-				},
-				{	-- Break the Unbreakable
-					["questID"] = 28113,
+				}),
+				q(28113, {	-- Break the Unbreakable
 					["provider"] = { "n", 47341 },	-- Arcanist Delaris
 					["coord"] = { 41.9, 72.0, 77 },
 					["sourceQuest"] = 28044,	-- Touch the Untouchable
-					["groups"] = {
+					["g"] = {
 						i(65277),	-- Delaris' Gloves
 						i(65297),	-- Glovelettes of Opening
 						i(65316),	-- Spellbreaker's Helm
 						i(65335),	-- Demon Smasher
 					},
-				},
-				{	-- Burnout
-					["questID"] = 28387,
+				}),
+				q(28387, {	-- Burnout
 					["provider"] = { "n", 48493 },	-- Alton Redding
 					["coord"] = { 56.8, 18.4, 77 },
 					["races"] = ALLIANCE_ONLY,
@@ -200,154 +115,124 @@ _.Zones =
 						28386,	-- Borrowed Bombs
 						28385,	-- Oil and Irony
 					},
-				},
-				{	-- Buzzers for Baby
-					["questID"] = 28219,
+				}),
+				q(28219, {	-- Buzzers for Baby
 					["provider"] = { "n", 48032 },	-- Seedling Protector
 					["coord"] = { 48.6, 25.1, 77 },
 					["sourceQuest"] = 28229,	-- Nature and Nurture
-				},
-				{	-- Cleanup at Bloodvenom Post
-					["questID"] = 28214,
+				}),
+				q(28214, {	-- Cleanup at Bloodvenom Post
 					["provider"] = { "n", 47692 },	-- Altsoba Ragetotem
 					["coord"] = { 41.2, 49.9, 77 },
 					["sourceQuest"] = 28208,	-- Winna's Kitten
-				},
-				{	-- Collecting Corruption
-					["questID"] = 28341,
+				}),
+				q(28341, {	-- Collecting Corruption
 					["provider"] = { "n", 48339 },	-- Elessa Starbreeze
 					["coord"] = { 43.9, 27.8, 77 },
-				},
-				{	-- Corrupted Night Dragon
-					["objectID"] = 164885,
-					["u"] = 43,
-					["groups"] = {
-						{	-- Corrupted Night Dragon
-							["questID"] = 4119,
-							["u"] = 40,
-						},
-						{	-- Corrupted Night Dragon
-							["questID"] = 4447,
-							["u"] = 40,
-							["repeatable"] = true,
-						},
-					},
-				},
-				{	-- Corrupted Songflower
-					["objectID"] = 164886,
-					["u"] = 43,
-					["groups"] = {
-						{	-- Corrupted Songflower
-							["questID"] = 2523,
-							["u"] = 40,
-						},
-						{	-- Corrupted Songflower
-							["questID"] = 3363,
-							["u"] = 40,
-							["repeatable"] = true,
-							["sourceQuest"] = 2523,	-- Corrupted Songflower
-						},
-					},
-				},
-				{	-- Corrupted Whipper Root
-					["objectID"] = 164888,
-					["u"] = 43,
-					["groups"] = {
-						{	-- Corrupted Whipper Root
-							["questID"] = 4117,
-							["u"] = 40,
-						},
-						{	-- Corrupted Whipper Root
-							["questID"] = 4443,
-							["u"] = 40,
-							["repeatable"] = true,
-							["sourceQuest"] = 4117,	-- Corrupted Whipper Root
-						},
-					},
-				},
-				{	-- Corrupted Windblossom
-					["objectID"] = 164887,
-					["u"] = 43,
-					["groups"] = {
-						{	-- Corrupted Windblossom
-							["questID"] = 996,
-							["u"] = 40,
-						},
-						{	-- Corrupted Windblossom
-							["questID"] = 998,
-							["u"] = 40,
-							["repeatable"] = true,
-							["sourceQuest"] = 996,	-- Corrupted Windblossom
-						},
-					},
-				},
-				{	-- Crying Violet
-					["questID"] = 28116,
+				}),
+				q(4119,  {	-- Corrupted Night Dragon
+					["u"] = 40,
+					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
+				}),
+				q(4447,  {	-- Corrupted Night Dragon
+					["u"] = 40,
+					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
+					["repeatable"] = true,
+					["sourceQuest"] = 4119,	-- Corrupted Night Dragon
+				}),
+				q(2523,  {	-- Corrupted Songflower
+					["u"] = 40,
+					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
+				}),
+				q(3363,  {	-- Corrupted Songflower
+					["u"] = 40,
+					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
+					["repeatable"] = true,
+					["sourceQuest"] = 2523,	-- Corrupted Songflower
+				}),
+				q(4117,  {	-- Corrupted Whipper Root
+					["u"] = 40,
+					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
+				}),
+				q(4443,  {	-- Corrupted Whipper Root
+					["u"] = 40,
+					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
+					["repeatable"] = true,
+					["sourceQuest"] = 4117,	-- Corrupted Whipper Root
+				}),
+				q(996,   {	-- Corrupted Windblossom
+					["u"] = 40,
+					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
+				}),
+				q(998,   {	-- Corrupted Windblossom
+					["u"] = 40,
+					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
+					["repeatable"] = true,
+					["sourceQuest"] = 996,	-- Corrupted Windblossom
+				}),
+				q(28116, {	-- Crying Violet
 					["provider"] = { "n", 10922 },	-- Greta Mosshoof
 					["coord"] = { 43.9, 61.8, 77 },
 					["sourceQuest"] = 28152,	-- Jaedenar Awaits
-				},
-				{	-- Culling the Corrupted
-					["questID"] = 28148,
+				}),
+				q(28148, {	-- Culling the Corrupted
 					["provider"] = { "n", 10921 },	-- Taronn Redfeather
 					["coord"] = { 50.9, 80.1, 77 },
-					["groups"] = {
+					["g"] = {
 						i(65275),	-- Angerclaw Leggings
 						i(65295),	-- Felpaw Boots
 						i(65314),	-- Belt of the Sanctuary
 						i(65333),	-- Redfeather Band
 					},
-				},
-				{	-- Deadwood Cauldron
-					["objectID"] = 176091,
-					["u"] = 43,
-					["groups"] = {
-						{	-- Mystery Goo
-							["questID"] = 5085,
-							["u"] = 40,
-							["sourceQuest"] = 5084,
-						},
+				}),
+				q(27995, {	-- Dance for Ruumbo!
+					["coord"] = { 51.4, 83.7, 77 },
+					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
+					["sourceQuests"] = {
+						27989,	-- Ruumbo Demands Honey
+						27994,	-- Ruumbo Demands Justice
 					},
-				},
-				{	-- Deadwood of the North
-					["questID"] = 28338,
+					["g"] = {
+						i(65279),	-- Grazle's Sandals
+						i(65299),	-- Allen's Abandoned Belt
+						i(65318),	-- Ruumbo's Arm
+						i(65336),	-- Pulled Wool
+					},
+				}),
+				q(28338, {	-- Deadwood of the North
 					["provider"] = { "n", 15395 },	-- Nafien
 					["coord"] = { 64.0, 10.3, 77 },
 					["sourceQuest"] = 28392,	-- The Timbermaw Tribe
-					["groups"] = {
+					["g"] = {
 						i(21316),	-- Leggings of the Ursa
 						i(21317),	-- Helm of the Pathfinder
 					},
-				},
-				{	-- Deceivers In Our Midst
-					["questID"] = 28261,
+				}),
+				q(28261, {	-- Deceivers In Our Midst
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
 					["coord"] = { 45.5, 20.1, 77 },
 					["sourceQuest"] = 28257,	-- The Fall of Tichondrius
-				},
-				{	-- [DEPRECATED]Timbermaw Ally
-					["questID"] = 8460,
+				}),
+				q(8460,  {	-- [DEPRECATED]Timbermaw Ally
 					["u"] = 40,
 					["provider"] = { "n", 11554 },	-- Grazle
-					["groups"] = {
+					["g"] = {
 						un(2, i(21312)),	-- Belt of the Den Watcher
 						un(2, i(21311)),	-- Earth Warder's Vest
 					},
-				},
-				{	-- Disarming Bears
-					["questID"] = 28366,
+				}),
+				q(28366, {	-- Disarming Bears
 					["provider"] = { "n", 15395 },	-- Nafien
 					["coord"] = { 64.0, 10.3, 77 },
 					["sourceQuest"] = 28392,	-- The Timbermaw Tribe
-					["groups"] = {
+					["g"] = {
 						i(65343),	-- Timbermaw Breastplate
 						i(65294),	-- Timbermaw Bracers
 						i(65313),	-- Timbermaw Leggings
 						i(65332),	-- Timbermaw Boots
 					},
-				},
-				{	-- Do the Imp-Possible
-					["questID"] = 28000,
+				}),
+				q(28000, {	-- Do the Imp-Possible
 					["provider"] = { "n", 47341 },	-- Arcanist Delaris
 					["coord"] = { 41.9, 72.0, 77 },
 					["sourceQuests"] = {
@@ -356,94 +241,93 @@ _.Zones =
 						27995,	-- Dance for Ruumbo!
 						27997,	-- The Corruption of the Jadefire
 					},
-				},
-				{	-- Dousing the Flames of Protection
-					["questID"] = 28126,
+				}),
+				q(28126, {	-- Dousing the Flames of Protection
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
 					["coord"] = { 36.3, 58.2, 77 },
 					["sourceQuest"] = 28119,	-- Purity from Corruption
-					["groups"] = {
+					["g"] = {
 						i(65281),	-- Belt of the Lost Barrow
 						i(65301),	-- Jade Green Spaulders
 						i(65320),	-- Sanctuary Pauldrons
 						i(65337),	-- Emerald Orb
 					},
-				},
-				{	-- Dying Knowledge
-					["questID"] = 29029,
+				}),
+				q(29029, {	-- Dying Knowledge
 					["u"] = 40,
-				},
-				{	-- Enemy at our Roots
-					["questID"] = 28382,
+				}),
+				q(28382, {	-- Enemy at our Roots
 					["provider"] = { "n", 47931 },	-- Denmother Ulrica
 					["coord"] = { 61.8, 26.6, 77 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28381,	-- The Denmother
-					["groups"] = {
+					["g"] = {
 						i(65341),	-- Bloodwater Shield
 						i(65290),	-- Packrunner's Spaulders
 						i(65309),	-- Deaf Ear Helm
 						i(65328),	-- Talon Branch
 					},
-				},
-				{	-- Fel To Pieces
-					["questID"] = 28342,
+				}),
+				q(28342, {	-- Fel To Pieces
 					["provider"] = { "n", 48339 },	-- Elessa Starbreeze
 					["coord"] = { 43.9, 27.8, 77 },
-				},
-				{	-- Fight the Power
-					["questID"] = 28102,
+				}),
+				q(28102, {	-- Fight the Power
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
 					["coord"] = { 42.0, 71.7, 77 },
 					["sourceQuest"] = 28044,	-- Touch the Untouchable
-				},
-				{	-- Forces of Jaedenar
-					["questID"] = 28121,
+				}),
+				q(28368, {	-- Fire in the Hole!
+					["coord"] = { 60.4, 22.2, 77 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 207104 },	-- Master Control Pump
+					["sourceQuest"] = 28335,	-- Turn It Off! Turn It Off!
+					["g"] = {
+						i(65346),  	-- Gauntlets of Raw Strength
+						i(65349),  	-- Everburning Cloak
+						i(65352),  	-- Drilldozer Band
+					},
+				}),
+				q(28121, {	-- Forces of Jaedenar
 					["provider"] = { "n", 11019 },	-- Jessir Moonbow
 					["coord"] = { 44.0, 61.9, 77 },
-				},
-				{	-- Further Corruption
-					["questID"] = 4906,
+				}),
+				q(4906,  {	-- Further Corruption
 					["u"] = 40,
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						un(2, i(11875)),	-- Breezecloud Bracers
 					},
-				},
-				{	-- Guarding Secrets
-					["questID"] = 4883,
+				}),
+				q(4883,  {	-- Guarding Secrets
 					["u"] = 40,
 					["provider"] = { "n", 10306 },	-- Trull Failbane
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						un(2, i(15796)),	-- Seaspray Bracers
 						un(2, i(15797)),	-- Shining Armplates
 					},
-				},
-				{	-- Hazzard Disposal
-					["questID"] = 28213,
+				}),
+				q(28213, {	-- Hazzard Disposal
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
 					["coord"] = { 41.2, 49.9, 77 },
 					["sourceQuest"] = 28208,	-- Winna's Kitten
-					["groups"] = {
+					["g"] = {
 						i(65283),	-- Flowery Mantle
 						i(65303),	-- Leafsong Vest
 						i(65322),	-- Mr. Tauren's Boots
 						i(65338),	-- Belt of Regret
 					},
-				},
-				{	-- Hunting the Damned
-					["questID"] = 28358,
+				}),
+				q(28358, {	-- Hunting the Damned
 					["provider"] = { "n", 48349 },	-- Hurak Wildhorn
 					["coord"] = { 44.0, 27.8, 77 },
-				},
-				{	-- Into Jaedenar
-					["questID"] = 29028,
+				}),
+				q(29028, {	-- Into Jaedenar
 					["u"] = 40,
-				},
-				{	-- Into the Clearing
-					["questID"] = 28384,
+				}),
+				q(28384, {	-- Into the Clearing
 					["provider"] = { "n", 47931 },	-- Denmother Ulrica
 					["coord"] = { 61.8, 26.6, 77 },
 					["races"] = ALLIANCE_ONLY,
@@ -451,9 +335,8 @@ _.Zones =
 						28382,	-- Enemy at our Roots
 						28383,	-- Wisps of the Woods
 					},
-				},
-				{	-- Is Your Oil Running?
-					["questID"] = 28339,
+				}),
+				q(28339, {	-- Is Your Oil Running?
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, 77 },
 					["races"] = HORDE_ONLY,
@@ -461,98 +344,77 @@ _.Zones =
 						28357,	-- Take it to the Tree
 						28370,	-- Wisp-napping
 					},
-				},
-				{	-- It's Time to Oil Up
-					["questID"] = 28333,
+				}),
+				q(28333, {	-- It's Time to Oil Up
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, 77 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(65344),	-- Overworked Shoulders
 						i(65347),	-- Shredder Operator's Helmet
 						i(65350),	-- Efficiency Spell Mace
 						i(65353),	-- Oil Bailer's Shield
 					},
-				},
-				{	-- Jaedenar Awaits
-					["questID"] = 28152,
+				}),
+				q(28152, {	-- Jaedenar Awaits
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
 					["coord"] = { 42.0, 71.7, 77 },
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28113,	-- Break the Unbreakable
-				},
-				{	-- Kroshius' Infernal Core
-					["questID"] = 7603,
+				}),
+				q(7603,  {	-- Kroshius' Infernal Core
 					["u"] = 40,
 					["provider"] = { "n", 14470 },	-- Impsy
 					["classes"] = { 9 },	-- Warlock
-					["groups"] = {
+					["g"] = {
 						un(2, i(18762)),	-- Shard of the Green Flame
 					},
-				},
-				{	-- Lord Banehollow
-					["questID"] = 28155,
+				}),
+				q(28155, {	-- Lord Banehollow
 					["sourceQuest"] = 28153,	-- Shadow Lord Fel'dan
-					["groups"] = {
+					["g"] = {
 						i(65282),	-- Cleansed Shadow Council Belt
 						i(65302),	-- Farlus' Staff
 					},
-				},
-				{	-- Master Control Pump
-					["objectID"] = 207104,
-					["coord"] = { 60.4, 22.2, 77 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						{	-- Fire in the Hole!
-							["questID"] = 28368,
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 28335,	-- Turn It Off! Turn It Off!
-							["groups"] = {
-								i(65346),  	-- Gauntlets of Raw Strength
-								i(65349),  	-- Everburning Cloak
-								i(65352),  	-- Drilldozer Band
-							},
-						},
-					},
-				},
-				{	-- Nature and Nurture
-					["questID"] = 28229,
+				}),
+				q(5085,  {	-- Mystery Goo
+					["u"] = 40,
+					["provider"] = { "o", 176091 },	-- Deadwood Cauldron
+					["sourceQuest"] = 5084,
+				}),
+				q(28229, {	-- Nature and Nurture
 					["provider"] = { "n", 48126 },	-- Isural Forestsworn
 					["coord"] = { 43.9, 28.1, 77 },
 					["sourceQuest"] = 28374,	-- Weeding the Lawn
-				},
-				{	-- Navarax's Gambit
-					["questID"] = 28264,
+				}),
+				q(28264, {	-- Navarax's Gambit
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
 					["coord"] = { 45.5, 20.1, 77 },
 					["sourceQuest"] = 28261,	-- Deceivers In Our Midst
-					["groups"] = {
+					["g"] = {
 						i(65285),	-- Selura's Cloak
 						i(65305),	-- Demon Heart Pendant
 						i(65324),	-- Navarax's Signet
 					},
-				},
-				{	-- Oil and Irony
-					["questID"] = 28385,
+				}),
+				q(28385, {	-- Oil and Irony
 					["provider"] = { "n", 48493 },	-- Alton Redding
 					["coord"] = { 56.8, 18.4, 77 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28337,	-- The Shredders of Irontree
-				},
-				{	-- Open Their Eyes
-					["questID"] = 28288,
+				}),
+				q(28288, {	-- Open Their Eyes
 					["provider"] = { "n", 47341 },	-- Arcanist Delaris
 					["coord"] = { 41.9, 72.0, 77 },
 					["sourceQuest"] = 28113,	-- Break the Unbreakable
-					["groups"] = {
+					["g"] = {
 						i(65278),	-- Gold Pot Gloves
 						i(65298),	-- Cheerful Shoulders
 						i(65317),	-- Rainbow Band
 						i(133998), 	-- Rainbow Generator (TOY!)
 					},
-				},
-				{	-- Pikwik in Peril
-					["questID"] = 28380,
+				}),
+				q(28380, {	-- Pikwik in Peril
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, 77 },
 					["races"] = HORDE_ONLY,
@@ -560,249 +422,226 @@ _.Zones =
 						28339,	-- Is Your Oil Running?
 						28336,	-- Slap and Cap
 					},
-				},
-				{	-- Purity From Corruption
-					["questID"] = 28119,
+				}),
+				q(28119, {	-- Purity From Corruption
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
 					["coord"] = { 36.3, 58.2, 77 },
 					["sourceQuests"] = {
 						28116,	-- Crying Violet
 						28121,	-- Forces of Jaedenar
 					},
-				},
-				{	-- Rejoining the Forest
-					["questID"] = 28228,
+				}),
+				q(28228, {	-- Rejoining the Forest
 					["provider"] = { "n", 48044 },	-- Flourishing Protector
 					["sourceQuest"] = 28224,	-- The Last Protector
-					["groups"] = {
+					["g"] = {
 						i(65287),	-- Gifted Bough
 						i(65306),	-- Amulet of Living Wood
 						i(65325),	-- Tree Ring Band
 					},
-				},
-				{	-- Report to the Denmother
-					["questID"] = 28389,
+				}),
+				q(28389, {	-- Report to the Denmother
 					["provider"] = { "n", 48493 },	-- Alton Redding
 					["coord"] = { 56.8, 18.4, 77 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(65292),  	-- Fists of the Pack
-						i(65311),  	-- Denmother's Cloak
-						i(65330),  	-- Token of the Bond
-					},
 					["sourceQuests"] = {
 						28388,	-- Bloody Wages
 						28387,	-- Burnout
 					},
-				},
-				{	-- Running Their Course
-					["questID"] = 28360,
+					["g"] = {
+						i(65292),  	-- Fists of the Pack
+						i(65311),  	-- Denmother's Cloak
+						i(65330),  	-- Token of the Bond
+					},
+				}),
+				q(28360, {	-- Running Their Course
 					["provider"] = { "n", 48459 },	-- Tender Puregrove
 					["coord"] = { 43.3, 30.4, 77 },
 					["sourceQuest"] = 28306,	-- Whisperwind Grove
-				},
-				{	-- Salve via Disenchanting
-					["questID"] = 4107,
+				}),
+				q(27989, {	-- Ruumbo Demands Honey
+					["coord"] = { 51.4, 83.7, 77 },
+					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
+					["sourceQuest"] = 28100,	-- A Talking Totem
+				}),
+				q(27994, {	-- Ruumbo Demands Justice
+					["coord"] = { 51.4, 83.7, 77 },
+					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
+					["sourceQuest"] = 28100,	-- A Talking Totem
+				}),
+				q(4107,  {	-- Salve via Disenchanting
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Salve via Disenchanting
-					["questID"] = 4112,
+				}),
+				q(4112,  {	-- Salve via Disenchanting
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4107,	-- Salve via Disenchanting
-				},
-				{	-- Salve via Disenchanting
-					["questID"] = 5886,
+				}),
+				q(5886,  {	-- Salve via Disenchanting
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Salve via Disenchanting
-					["questID"] = 5891,
+				}),
+				q(5891,  {	-- Salve via Disenchanting
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 5886,	-- Salve via Disenchanting
-				},
-				{	-- Salve via Gathering
-					["questID"] = 4105,
+				}),
+				q(4105,  {	-- Salve via Gathering
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Salve via Gathering
-					["questID"] = 4110,
+				}),
+				q(4110,  {	-- Salve via Gathering
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4105,	-- Salve via Gathering
-				},
-				{	-- Salve via Gathering
-					["questID"] = 5884,
+				}),
+				q(5884,  {	-- Salve via Gathering
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Salve via Gathering
-					["questID"] = 5889,
+				}),
+				q(5889,  {	-- Salve via Gathering
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 5884,	-- Salve via Gathering
-				},
-				{	-- Salve via Hunting
-					["questID"] = 4103,
+				}),
+				q(4103,  {	-- Salve via Hunting
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Salve via Hunting
-					["questID"] = 4108,
+				}),
+				q(4108,  {	-- Salve via Hunting
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4103,	-- Salve via Hunting
-				},
-				{	-- Salve via Hunting
-					["questID"] = 5882,
+				}),
+				q(5882,  {	-- Salve via Hunting
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Salve via Hunting
-					["questID"] = 5887,
+				}),
+				q(5887,  {	-- Salve via Hunting
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 5882,	-- Salve via Hunting
-				},
-				{	-- Salve via Mining
-					["questID"] = 4104,
+				}),
+				q(4104,  {	-- Salve via Mining
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Salve via Mining
-					["questID"] = 4109,
+				}),
+				q(4109,  {	-- Salve via Mining
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4104,	-- Salve via Mining
-				},
-				{	-- Salve via Mining
-					["questID"] = 5883,
+				}),
+				q(5883,  {	-- Salve via Mining
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Salve via Mining
-					["questID"] = 5888,
+				}),
+				q(5888,  {	-- Salve via Mining
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 5883,	-- Salve via Mining
-				},
-				{	-- Salve via Skinning
-					["questID"] = 4106,
+				}),
+				q(4106,  {	-- Salve via Skinning
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Salve via Skinning
-					["questID"] = 4111,
+				}),
+				q(4111,  {	-- Salve via Skinning
 					["u"] = 40,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4106,	-- Salve via Skinning
-				},
-				{	-- Salve via Skinning
-					["questID"] = 5885,
+				}),
+				q(5885,  {	-- Salve via Skinning
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Salve via Skinning
-					["questID"] = 5890,
+				}),
+				q(5890,  {	-- Salve via Skinning
 					["u"] = 40,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 5885,	-- Salve via Skinning
-				},
-				{	-- See the Invisible
-					["questID"] = 28049,
+				}),
+				q(28049, {	-- See the Invisible
 					["provider"] = { "n", 47366 },	-- Impsy
 					["coord"] = { 41.8, 71.9, 77 },
 					["sourceQuest"] = 28000,	-- Do the Imp-Possible
-					["groups"] = {
+					["g"] = {
 						i(65276),	-- Gloves of Constellas
 						i(65296),	-- Oozing Vest
 						i(65315),	-- Impish Boots
 						i(65334),	-- Impsy's Wand
 					},
-				},
-				{	-- Seeking Soil
-					["questID"] = 28220,
+				}),
+				q(28220, {	-- Seeking Soil
 					["coord"] = { 48.6, 25.1, 77 },
 					["sourceQuest"] = 28229,	-- Nature and Nurture
-				},
-				{	-- Shadow Lord Fel'dan
-					["questID"] = 28153,
+				}),
+				q(28153, {	-- Shadow Lord Fel'dan
 					["sourceQuest"] = 28131,	-- Twin Temptresses
-				},
-				{	-- Silver Heart
-					["questID"] = 4084,
+				}),
+				q(4084,  {	-- Silver Heart
 					["u"] = 40,
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
 					["sourceQuest"] = 3942,	-- Linken's Memory
-				},
-				{	-- Singin' in the Sun
-					["questID"] = 28222,
+				}),
+				q(28222, {	-- Singin' in the Sun
 					["sourceQuests"] = {
 						28219,	-- Buzzers for Baby
 						28220,	-- Seeking Soil
 					},
-				},
-				{	-- Slap and Cap
-					["questID"] = 28336,
+				}),
+				q(28336, {	-- Slap and Cap
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, 77 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["sourceQuests"] = {
+						28357,	-- Take it to the Tree
+						28370,	-- Wisp-napping
+					},
+					["g"] = {
 						i(65345),	-- Oilfoot Slippers
 						i(65348),	-- Oil Grush Leggings
 						i(65351),	-- Workforce Chestguard
 						i(65354),	-- Cloak of Sleep Deprivation
 					},
-					["sourceQuests"] = {
-						28357,	-- Take it to the Tree
-						28370,	-- Wisp-napping
-					},
-				},
-				{	-- Squirrely Clean
-					["questID"] = 28361,
+				}),
+				q(28361, {	-- Squirrely Clean
 					["provider"] = { "n", 48459 },	-- Tender Puregrove
 					["coord"] = { 43.3, 30.4, 77 },
-				},
-				{	-- Stupid Drizle!
-					["questID"] = 28362,
+				}),
+				q(28362, {	-- Stupid Drizle!
 					["provider"] = { "n", 48461 },	-- Ferli
 					["coord"] = { 64.1, 10.3, 77 },
-				},
-				{	-- Take it to the Tree
-					["questID"] = 28357,
+				}),
+				q(28357, {	-- Take it to the Tree
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, 77 },
 					["races"] = HORDE_ONLY,
@@ -810,65 +649,58 @@ _.Zones =
 						28334,	-- A Flare Fight
 						28333,	-- It's Time to Oil Up
 					},
-				},
-				{	-- The Chieftain's Key
-					["questID"] = 28364,
+				}),
+				q(28364, {	-- The Chieftain's Key
 					["provider"] = { "n", 47556 },	-- Drizle
 					["coord"] = { 60.5, 9.5, 77 },
 					["sourceQuest"] = 28362,	-- Stupid Drizle!
-					["groups"] = {
+					["g"] = {
 						i(65293),	-- Leggings of Mischief
 						i(65312),	-- Vest of Sobbing
 						i(65331),	-- Bloodmaw's Belt
 					},
-				},
-				{	-- The Core of Kroshius
-					["questID"] = 28359,
+				}),
+				q(28359, {	-- The Core of Kroshius
 					["provider"] = { "n", 48349 },	-- Hurak Wildhorn
 					["coord"] = { 44.0, 27.8, 77 },
-					["groups"] = {
+					["g"] = {
 						i(65288),	-- Shadow Curse Hood
 						i(65307),	-- Whisperwind Armbands
 						i(65326),	-- Infernal Breastplate
 						i(65339),	-- Warlockbane Shield
 					},
-				},
-				{	-- The Corruption of the Jadefire
-					["questID"] = 27997,
+				}),
+				q(27997, {	-- The Corruption of the Jadefire
 					["provider"] = { "n", 10923 },	-- Tenell Leafrunner
 					["coord"] = { 51.1, 80.4, 77 },
 					["sourceQuests"] = {
 						28543,	-- Hero's Call: Felwood!
 						28542,	-- Warchief's Command: Felwood!
 					},
-				},
-				{	-- The Demon Prince
-					["questID"] = 28129,
+				}),
+				q(28129, {	-- The Demon Prince
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
 					["coord"] = { 36.3, 58.2, 77 },
 					["sourceQuest"] = 28119,	-- Purity from Corruption
-				},
-				{	-- The Denmother
-					["questID"] = 28381,
+				}),
+				q(28381, {	-- The Denmother
 					["provider"] = { "n", 48491 },	-- James Hallow
 					["coord"] = { 44.2, 28.0, 77 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Enemy at Our Roots"
 					["sourceQuest"] = 28264,	-- Navarax's Gambit
-				},
-				{	-- The Fall of Tichondrius
-					["questID"] = 28257,
+				}),
+				q(28257, {	-- The Fall of Tichondrius
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
 					["coord"] = { 45.5, 20.1, 77 },
 					["sourceQuest"] = 28256,	-- The Skull of Gul'dan
-					["groups"] = {
+					["g"] = {
 						i(65284),	-- Imposter's Mask
 						i(65304),	-- Sindweller's Armguards
 						i(65323),	-- Pauldrons of Thankless Deeds
 					},
-				},
-				{	-- The Fate of Bloodvenom Post
-					["questID"] = 28305,
+				}),
+				q(28305, {	-- The Fate of Bloodvenom Post
 					["provider"] = { "n", 47617 },	-- Farlus Wildheart
 					["coord"] = { 44.1, 61.8, 77 },
 					["isBreadcrumb"] = true,
@@ -877,153 +709,110 @@ _.Zones =
 						28155,	-- Lord Banehollow
 						28128,	-- The Inner Circle
 					},
-				},
-				{	-- The Inner Circle
-					["questID"] = 28128,
+				}),
+				q(28128, {	-- The Inner Circle
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
 					["coord"] = { 36.3, 58.2, 77 },
 					["sourceQuest"] = 28119,	-- Purity From Corruption
-					["groups"] = {
+					["g"] = {
 						i(65280),	-- Shadow Hold Mace
 						i(65300),	-- Moonbow
 						i(65319),	-- Purified Jaedenar Amulet
 						i(156982),	-- Shadow Hold Dagger 
 					},
-				},
-				{	-- The Last Protector
-					["questID"] = 28224,
+				}),
+				q(28224, {	-- The Last Protector
 					["provider"] = { "n", 48044 },	-- Flourishing Protector
 					["sourceQuests"] = {
 						28222,	-- Singin' in the Sun
 						28221,	-- These Roots Were Made For Stompin'
 					},
-				},
-				{	-- The Remains of Trey Lightforge
-					["questID"] = 5385,
+				}),
+				q(5385,  {	-- The Remains of Trey Lightforge
 					["u"] = 40,
 					["provider"] = { "n", 11020 },	-- Remains of Trey Lightforge
-					["groups"] = {
+					["g"] = {
 						un(2, i(15706)),	-- Hunt Tracker Blade
 						un(2, i(15705)),	-- Tidecrest Blade
 					},
-				},
-				{	-- The Ruins of Kel'theril	-- breadcrumb?
-					["questID"] = 28479,
+				}),
+				q(28479, {	-- The Ruins of Kel'theril	-- breadcrumb?
 					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
 					["coords"] = {
 						{ 51.2, 80.3, 77, 77 },
 						{ 46.8, 53.8, 83, 77 },
 					},
-				},
-				{	-- The Shredders of Irontree
-					["questID"] = 28337,
+				}),
+				q(28337, {	-- The Shredders of Irontree
 					["provider"] = { "n", 48493 },	-- Alton Redding
 					["coord"] = { 56.8, 18.4, 77 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28384,	-- Into the Clearing
-				},
-				{	-- The Skull of Gul'dan
-					["questID"] = 28256,
+				}),
+				q(28256, {	-- The Skull of Gul'dan
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
 					["coord"] = { 45.5, 20.1, 77 },
 					["sourceQuest"] = 28218,	-- A Destiny of Flame and Shadow
-				},
-				{	-- The Tainted Ooze
-					["questID"] = 28190,
+				}),
+				q(28190, {	-- The Tainted Ooze
 					["provider"] = { "n", 47692 },	-- Altsoba Ragetotem
 					["coord"] = { 41.2, 49.9, 77 },
-				},
-				{	-- The Timbermaw Tribe
-					["questID"] = 28392,
+				}),
+				q(28392, {	-- The Timbermaw Tribe
 					["provider"] = { "n", 47931 },	-- Denmother Ulrica
 					["coord"] = { 61.8, 26.6, 77 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28389,	-- Report to the Denmother
-				},
-				{	-- These Roots Were Made For Stompin'
-					["questID"] = 28221,
+				}),
+				q(28221, {	-- These Roots Were Made For Stompin'
 					["provider"] = { "n", 48042 },	-- Sapling Protector
 					["sourceQuests"] = {
 						28219,	-- Buzzers for Baby
 						28220,	-- Seeking Soil
 					},
-				},
-				{	-- Timbermaw Hold
-					["questID"] = 28373,
+				}),
+				q(28373, {	-- Timbermaw Hold
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, 77 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28368,	-- Fire in the Hole!
-				},
-				{	-- Totem of Ruumbo
-					["objectID"] = 206585,
-					["coord"] = { 51.4, 83.7, 77 },
-					["groups"] = {
-						{	-- Dance for Ruumbo!
-							["questID"] = 27995,
-							["groups"] = {
-								i(65279),	-- Grazle's Sandals
-								i(65299),	-- Allen's Abandoned Belt
-								i(65318),	-- Ruumbo's Arm
-								i(65336),	-- Pulled Wool
-							},
-							["sourceQuests"] = {
-								27989,	-- Ruumbo Demands Honey
-								27994,	-- Ruumbo Demands Justice
-							},
-						},
-						{	-- Ruumbo Demands Honey
-							["questID"] = 27989,
-							["sourceQuest"] = 28100,	-- A Talking Totem
-						},
-						{	-- Ruumbo Demands Justice
-							["questID"] = 27994,
-							["sourceQuest"] = 28100,	-- A Talking Totem
-						},
-					},
-				},
-				{	-- Touch the Untouchable
-					["questID"] = 28044,
+				}),
+				q(28044, {	-- Touch the Untouchable
 					["provider"] = { "n", 47366 },	-- Impsy
 					["coord"] = { 41.8, 71.9, 77 },
 					["sourceQuest"] = 28049,	-- See the Invisible
-				},
-				{	-- Turn It Off! Turn It Off!
-					["questID"] = 28335,
+				}),
+				q(28335, {	-- Turn It Off! Turn It Off!
 					["provider"] = { "n", 48333 },	-- Foreman Pikwik
 					["coord"] = { 54.6, 18.3, 77 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28380,	-- Pikwik in Peril
-				},
-				{	-- Twin Temptresses
-					["questID"] = 28131,
+				}),
+				q(28131, {	-- Twin Temptresses
 					["sourceQuest"] = 28129,	-- The Demon Prince
-				},
-				{	-- Wanted: The Demon Hunter
-					["questID"] = 28217,
+				}),
+				q(28217, {	-- Wanted: The Demon Hunter
 					["provider"] = { "n", 47843 },	-- Huntress Selura
 					["coord"] = { 43.4, 28.1, 77 },
 					["sourceQuest"] = 28374,	-- Weeding the Lawn
-				},
-				{	-- Weeding the Lawn
-					["questID"] = 28374,
+				}),
+				q(28374, {	-- Weeding the Lawn
 					["provider"] = { "n", 48459 },	-- Tender Puregrove
 					["coord"] = { 43.3, 30.3, 77 },
-					["groups"] = {
+					["sourceQuests"] = {
+						28360,	-- Running Their Course
+						28361,	-- Squirrely Clean
+					},
+					["g"] = {
 						i(65289),	-- Floral Pantaloons
 						i(65308),	-- Puregrove Spaulders
 						i(65327),	-- Weed Puller's Bracers
 						i(65340),	-- Thornward Greaves
 					},
-					["sourceQuests"] = {
-						28360,	-- Running Their Course
-						28361,	-- Squirrely Clean
-					},
-				},
-				{	-- Whisperwind Grove
-					["questID"] = 28306,
+				}),
+				q(28306, {	-- Whisperwind Grove
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
 					["coord"] = { 41.2, 49.9, 77 },
 					["isBreadcrumb"] = true,
@@ -1031,24 +820,21 @@ _.Zones =
 						28214,	-- Cleanup at Bloodvenom Post
 						28213,	-- Hazzard Disposal
 					},
-				},
-				{	-- Winna's Kitten
-					["questID"] = 28208,
+				}),
+				q(28208, {	-- Winna's Kitten
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
 					["coord"] = { 41.2, 49.9, 77 },
 					["sourceQuests"] = {
 						28207,	-- A Slimy Situation
 						28190,	-- The Tainted Ooze
 					},
-				},
-				{	-- Winterspring!
-					["questID"] = 28768,
+				}),
+				q(28768, {	-- Winterspring!
 					["provider"] = { "n", 15395 },	-- Nafien
 					["coord"] = { 64, 10.4, 77 },
 					["isBreadcrumb"] = true,
-				},
-				{	-- Wisp-napping
-					["questID"] = 28370,
+				}),
+				q(28370, {	-- Wisp-napping
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, 77 },
 					["races"] = HORDE_ONLY,
@@ -1056,13 +842,12 @@ _.Zones =
 						28334,	-- A Flare Fight
 						28333,	-- It's Time to Oil Up
 					},
-				},
-				{	-- Wisps of the Woods
-					["questID"] = 28383,
+				}),
+				q(28383, {	-- Wisps of the Woods
 					["provider"] = { "n", 48492 },	-- Lyros Swiftwind
 					["coord"] = { 61.8, 26.6, 77 },
 					["races"] = ALLIANCE_ONLY,
-				},
+				}),
 			}),
 		}),
 	}),
