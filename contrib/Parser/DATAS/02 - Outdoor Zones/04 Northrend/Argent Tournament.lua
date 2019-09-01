@@ -2187,20 +2187,26 @@ _.Zones =
 						["coord"] = { 76.4, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(45577),	-- Ironforge Tabard
-							currency(241, {	-- Champion's Seal
-								i(45586),	-- Ironforge Ram Mount
-								i(46748, {	-- Swift Violet Ram
-									["races"] = { 3 },	-- Dwarf
-								}),
-								i(46762, {	-- Swift Violet Ram
-									["races"] = exclude( { 3 }, ALLIANCE_ONLY ),	-- non-Dwarf Alliance
-								}),
-								i(44970),	-- Dun Morogh Cub Pet
-								i(45018),	-- Ironforge Banner Toy
+							i(44970, {	-- Dun Morogh Cub (PET!)
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 							}),
-							i(46114, {	-- Champion's Writ
-								i(45717),	-- Ironforge Commendation Badge
+							i(45018, {	-- Ironforge Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
+							}),
+							i(45717, {	-- Ironforge Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
+							}),
+							i(45586, {	-- Ironforge Ram (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(45577),	-- Ironforge Tabard
+							i(46748, {	-- Swift Violet Ram
+								["races"] = { 3 },	-- Dwarf
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
+							}),
+							i(46762, {	-- Swift Violet Ram
+								["races"] = exclude( { 3 }, ALLIANCE_ONLY ),	-- non-Dwarf Alliance
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},
 					}),
@@ -2208,53 +2214,69 @@ _.Zones =
 						["coord"] = { 76.2, 24.4, 118 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(46755),	-- Great Golden Kodo (MOUNT!)
+							i(44980, {	-- Mulgore Hatchling (PET!)
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
+							}),
+							i(45013, {	-- Thunder Bluff Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
+							}),
+							i(45722, {	-- Thunder Bluff Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },		-- 1x Champion's Writ
+							}),
+							i(45592, {	-- Thunder Bluff Kodo (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
 							i(45584),	-- Thunder Bluff Tabard
-							currency(241, {	-- Champion's Seal
-								i(46755),	-- Great Golden Kodo
-								i(45592),	-- Thunder Bluff Mount
-								i(44980),	-- Mulgore Hatchling Pet
-								i(45013),	-- Thunder Bluff Banner Toy
-							}),
-							i(46114, {	-- Champion's Writ
-								i(45722),	-- Thunder Bluff Commendation Badge
-							}),
 						},
 					}),
 					n(33555, {	-- Eliza Killian <Undercity Quartermaster>
 						["coord"] = { 76.4, 24.0, 118 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(45597, {	-- Forsaken Warhorse (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(44971, {	-- Tirisfal Batling (PET!)
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
+							}),
+							i(45016, {	-- Undercity Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
+							}),
+							i(45723, {	-- Undercity Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },		-- 1x Champion's Writ
+							}),
 							i(45583),	-- Undercity Tabard
-							currency(241, {	-- Champion's Seal
-								i(45597),	-- Forsaken Mount
-								i(46764),	-- White Skeletal Warhorse Mount
-								i(44971),	-- Tirisfal Batling Pet
-								i(45016),	-- Undercity Banner Toy
-							}),
-							i(46114, {	-- Champion's Writ
-								i(45723),	-- Undercity Commendation Badge
-							}),
+							i(46764),	-- White Skeletal Warhorse Mount
 						},
 					}),
 					n(33594, {	-- Fizzix Blastbolt <Engineering Supplies>
 						["coord"] = { 72.2, 20.8, 118 },
 						["g"] = {
-							i(23817),	-- Schematic: Titanium Toolbox
+							i(23817, {	-- Schematic: Titanium Toolbox
+								["isLimited"] = true,
+							}),
 						},
 					}),
 					n(33553, {	-- Freka Bloodaxe <Orgrimmar Quartermaster>
 						["coord"] = { 76.4, 24.2, 118 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(45581),	-- Orgrimmar Tabard
-							currency(241, {	-- Champion's Seal
-								i(45595),	-- Orgrimmar Wolf Mount
-								i(46757),	-- Swift Burgundy Wolf
-								i(44973),	-- Durotar Scorpion Pet
-								i(45014),	-- Orgrimmar Banner Toy
+							i(44973, {	-- Durotar Scorpion (PET!)
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 							}),
-							i(46114, {	-- Champion's Writ
-								i(45719),	-- Orgrimmar Commendation Badge
+							i(45014, {	-- Orgrimmar Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
+							}),
+							i(45719, {	-- Orgrimmar Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
+							}),
+							i(45581),	-- Orgrimmar Tabard
+							i(45595, {	-- Orgrimmar Wolf (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(46757, {	-- Swift Burgundy Wolf (MOUNT!)
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},
 					}),
@@ -2262,11 +2284,17 @@ _.Zones =
 						["coord"] = { 76.2, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							currency(241, {	-- Champion's Seal
-								i(46813),	-- Silver Convenant Hippogryph
-								i(46815),	-- Quel'dorei Steed
-								i(46817),	-- Silver Covenant Tabard
-								i(46820),	-- Shimmering Wyrmling
+							i(46815, {	-- Quel'dorei Steed
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(46820, {	-- Shimmering Wyrmling
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
+							}),
+							i(46813, {	-- Silver Convenant Hippogryph
+								["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
+							}),
+							i(46817, {	-- Silver Covenant Tabard
+								["cost"] = { { "c", 241, 50 }, },	-- 50x Champion's Seal
 							}),
 						},
 					}),
@@ -2274,20 +2302,24 @@ _.Zones =
 						["coord"] = { 76.2, 19.2, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(45580),	-- Exodar Tabard
-							currency(241, {	-- Champion's Seal
-								i(45590),	-- Exodar Elekk Mount
-								i(46745, {	-- Great Red Elekk
-									["races"] = { 11 },	-- Draenei
-								}),
-								i(46756, {	-- Great Red Elekk
-									["races"] = exclude( { 11 }, ALLIANCE_ONLY ),	-- non-Draenei Alliance
-								}),
-								i(44984),	-- Ammen Vale Lashling Pet
-								i(45020),	-- Exodar Banner Toy
+							i(44984, {	-- Ammen Vale Lashling (PET!)
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 							}),
-							i(46114, {	-- Champion's Writ
-								i(45715),	-- Exodar Commendation Badge
+							i(45020, {	-- Exodar Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
+							}),
+							i(45715, {	-- Exodar Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
+							}),
+							i(45590, {	-- Exodar Elekk (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(45580),	-- Exodar Tabard
+							i(46745, {	-- Great Red Elekk (MOUNT!)
+								["races"] = { 11 },	-- Draenei
+							}),
+							i(46756, {	-- Great Red Elekk (MOUNT!)
+								["races"] = exclude( { 11 }, ALLIANCE_ONLY ),	-- non-Draenei Alliance
 							}),
 						},
 					}),
@@ -2295,8 +2327,13 @@ _.Zones =
 						["coord"] = { 75.2, 22.0, 118 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(47732),	-- Band of the Invoker
+							i(47729),	-- Bloodshed Band
 							i(47658),	-- Brimstone Igniter
+							i(47731),	-- Clutch of Fortification
 							i(47684),	-- Coif of the Brooding Dragon
+							i(47556),	-- Crusader Orb
+							i(47730),	-- Dexterous Brightstone Ring
 							i(47709),	-- Duskstalker Pauldrons
 							i(47710),	-- Epaulets of the Fateful Accord
 							i(47675),	-- Faceplate of Thunderous Rampage
@@ -2380,56 +2417,107 @@ _.Zones =
 							i(41304),	-- Furious Gladiator's Wyrmhide Legguards
 							i(41316),	-- Furious Gladiator's Wyrmhide Robes
 							i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
+							i(47735),	-- Glyph of Indomitability
 							i(47687),	-- Headguard of Inner Warmth
 							i(47678),	-- Headplate of the Honorbound
+							i(47733),	-- Heartmender Circle
 							i(47682),	-- Helm of the Restless Watch
 							i(47695),	-- Hood of Clouded Sight
 							i(47692),	-- Hood of Smoldering Aftermath
 							i(47716),	-- Mantle of Revered Mortality
+							i(47734),	-- Mark of Supremacy
 							i(47691),	-- Mask of Abundant Growth
 							i(47688),	-- Mask of Lethal Intent
 							i(47714),	-- Pauldrons of Catastrophic Emanation
 							i(47705),	-- Pauldrons of the Devourer
+							i(48722),	-- Shard of the Crystal Heart
 							i(47699),	-- Shoulderguards of Enduring Order
 							i(47701),	-- Shoulderplates of the Cavalier
 							i(47696),	-- Shoulderplates of Trembling Rage
 							i(47706),	-- Shoulders of the Groundbreaker
-							i(47735),	-- Glyph of Indomitability
-							i(47734),	-- Mark of Supremacy
-							i(48722),	-- Shard of the Crystal Heart
 							i(48724),	-- Talisman of Resurgence
 						},
 					}),
 					n(33595, {	-- Mera Mistrunner <Cooking Supplies>
 						["coord"] = { 72.4, 20.8, 118 },
 						["g"] = {
-							currency(81, {	-- Epicurean's Award
-								i(134020), 	-- Chef's Hat
-								i(43035),	-- Recipe: Blackened Dragonfin
-								i(43032),	-- Recipe: Blackened Worg Steak
-								i(43029),	-- Recipe: Critter Bites
-								i(43033),	-- Recipe: Cuttlesteak
-								i(43036),	-- Recipe: Dragonfin Filet
-								i(43024),	-- Recipe: Firecracker Salmon
-								i(43017),	-- Recipe: Fish Feast
-								i(43505),	-- Recipe: Gigantic Feast
-								i(43030),	-- Recipe: Hearty Rhino
-								i(43026),	-- Recipe: Imperial Manta Steak
-								i(43018),	-- Recipe: Mega Mammoth Meal
-								i(43022),	-- Recipe: Mighty Rhino Dogs
-								i(43023),	-- Recipe: Poached Northern Sculpin
-								i(43028),	-- Recipe: Rhinolicious Wormsteak
-								i(43506),	-- Recipe: Small Feast
-								i(43031),	-- Recipe: Snapper Extreme
-								i(43034),	-- Recipe: Spiced Mammoth Treats
-								i(43020),	-- Recipe: Spiced Worm Burger
-								i(43025),	-- Recipe: Spicy Blue Nettlefish
-								i(43027),	-- Recipe: Spicy Fried Herring
-								i(43019),	-- Recipe: Tender Shoveltusk Steak
-								i(43037),	-- Recipe: Tracker Snacks
-								i(43021),	-- Recipe: Very Burnt Worg
-								i(44954),	-- Recipe: Worg Tartare
-								i(43007),	-- Northern Spices
+							i(134020, {	-- Chef's Hat
+								["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
+							}),
+							i(43007, {	-- Northern Spices
+								["cost"] = { { "c", 81, 1 }, },	-- 1x Epicurean's Award
+							}),
+							i(43035, {	-- Recipe: Blackened Dragonfin
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43032, {	-- Recipe: Blackened Worg Steak
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43029, {	-- Recipe: Critter Bites
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43033, {	-- Recipe: Cuttlesteak
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43036, {	-- Recipe: Dragonfin Filet
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43024, {	-- Recipe: Firecracker Salmon
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43017, {	-- Recipe: Fish Feast
+								["cost"] = { { "c", 81, 5 }, },	-- 5x Epicurean's Award
+							}),
+							i(43505, {	-- Recipe: Gigantic Feast
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43030, {	-- Recipe: Hearty Rhino
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43026, {	-- Recipe: Imperial Manta Steak
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43018, {	-- Recipe: Mega Mammoth Meal
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43022, {	-- Recipe: Mighty Rhino Dogs
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43023, {	-- Recipe: Poached Northern Sculpin
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43028, {	-- Recipe: Rhinolicious Wormsteak
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43506, {	-- Recipe: Small Feast
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43031, {	-- Recipe: Snapper Extreme
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43034, {	-- Recipe: Spiced Mammoth Treats
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43020, {	-- Recipe: Spiced Worm Burger
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43025, {	-- Recipe: Spicy Blue Nettlefish
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43027, {	-- Recipe: Spicy Fried Herring
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43019, {	-- Recipe: Tender Shoveltusk Steak
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43037, {	-- Recipe: Tracker Snacks
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(43021, {	-- Recipe: Very Burnt Worg
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
+							}),
+							i(44954, {	-- Recipe: Worg Tartare
+								["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
 							}),
 						},
 					}),
@@ -2437,20 +2525,26 @@ _.Zones =
 						["coord"] = { 76.4, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(45578),	-- Gnomeragan Tabard
-							currency(241, {	-- Champion's Seal
-								i(45589),	-- Gnomeregan Mechanostrider Mount
-								i(46747, {	-- Turbostrider
-									["races"] = { 7 },	-- Gnomes
-								}),
-								i(46763, {	-- Turbostrider
-									["races"] = exclude( { 7 }, ALLIANCE_ONLY ),	-- non-Gnome Alliance
-								}),
-								i(45002),	-- Mechanopeep Pet
-								i(45019),	-- Gnomeregan Banner Toy
+							i(45019, {	-- Gnomeregan Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
 							}),
-							i(46114, {	-- Champion's Writ
-								i(45716),	-- Gnomeregan Commendation Badge
+							i(45716, {	-- Gnomeregan Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
+							}),
+							i(45589, {	-- Gnomeregan Mechanostrider (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(45578),	-- Gnomeragan Tabard
+							i(45002, {	-- Mechanopeep (PET!)
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
+							}),
+							i(46747, {	-- Turbostrider
+								["races"] = { 7 },	-- Gnomes
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
+							}),
+							i(46763, {	-- Turbostrider
+								["races"] = exclude( { 7 }, ALLIANCE_ONLY ),	-- non-Gnome Alliance
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},
 					}),
@@ -2458,20 +2552,26 @@ _.Zones =
 						["coord"] = { 76.2, 19.2, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(45579),	-- Darnassus Tabard
-							currency(241, {	-- Champion's Seal
-								i(45591),	-- Darnassian Mount
-								i(46744, {	-- Swift Moonsaber
-									["races"] = { 4 },	-- Night Elf
-								}),
-								i(46759, {	-- Swift Moonsaber
-									["races"] = exclude( { 4 }, ALLIANCE_ONLY ),
-								}),
-								i(44965),	-- Teldrassil Sproutling Pet
-								i(45021),	-- Darnassus Banner Toy
+							i(45591, {	-- Darnassian Nightsaber (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 							}),
-							i(46114, {	-- Champion's Writ
-								i(45714),	-- Darnassus Commendation Badge
+							i(45021, {	-- Darnassus Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
+							}),
+							i(45714, {	-- Darnassus Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
+							}),
+							i(45579),	-- Darnassus Tabard
+							i(46744, {	-- Swift Moonsaber (MOUNT!)
+								["races"] = { 4 },	-- Night Elf
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
+							}),
+							i(46759, {	-- Swift Moonsaber (MOUNT!)
+								["races"] = exclude( { 4 }, ALLIANCE_ONLY ),
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
+							}),
+							i(44965, {	-- Teldrassil Sproutling (PET!)
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 							}),
 						},
 					}),
@@ -2479,15 +2579,21 @@ _.Zones =
 						["coord"] = { 76.0, 24.4, 118 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(45582),	-- Darkspear Tabard
-							currency(241, {	-- Champion's Seal
-								i(45593),	-- Darkspear Raptor Mount
-								i(46760),	-- Swift Purple Raptor
-								i(45606),	-- Sen'jin Fetish Pet
-								i(45015),	-- Sen'jin Banner Toy
+							i(45593, {	-- Darkspear Raptor (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 							}),
-							i(46114, {	-- Champion's Writ
-								i(45720),	-- Sen'jin Commendation Badge
+							i(45582),	-- Darkspear Tabard
+							i(45015, {	-- Sen'jin Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
+							}),
+							i(45720, {	-- Sen'jin Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
+							}),
+							i(45606, {	-- Sen'jin Fetish (PET!)
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
+							}),
+							i(46760, {	-- Swift Purple Raptor (MOUNT!)
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},
 					}),
@@ -2495,156 +2601,340 @@ _.Zones =
 						["coord"] = { 76.2, 23.8, 118 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(45585),	-- Silvermoon Tabard
-							currency(241, {	-- Champion's Seal
-								i(45596),	-- Silvermoon Mount
-								i(46751, {	-- Swift Red Hawkstrider
-									["races"] = { 10 },	-- Blood Elf
-								}),
-								i(46761, {	-- Swift Red Hawkstrider
-									["races"] = exclude( { 10 }, HORDE_ONLY ),	-- non-Blood Elf Horde
-								}),
-								i(44982),	-- Enchanted Broom Pet
-								i(45017),	-- Silvermoon Banner Toy
+							i(44982, {	-- Enchanted Broom (PET!)
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 							}),
-							i(46114, {	-- Champion's Writ
-								i(45721),	-- Silvermoon Commendation Badge
+							i(45017, {	-- Silvermoon City Banner (TOY!)
+								["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
+							}),
+							i(45585),	-- Silvermoon City Tabard
+							i(45721, {	-- Silvermoon Commendation Badge
+								["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
+							}),
+							i(45596, {	-- Silvermoon Hawkstrider (MOUNT!)
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(46751, {	-- Swift Red Hawkstrider (MOUNT!)
+								["races"] = { 10 },	-- Blood Elf
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
+							}),
+							i(46761, {	-- Swift Red Hawkstrider (MOUNT!)
+								["races"] = exclude( { 10 }, HORDE_ONLY ),	-- non-Blood Elf Horde
+								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},
 					}),
 					n(35578, {	-- Valiant Bressia <Triumphant Armor Vendor>
 						["coord"] = { 75.4, 22.0, 118 },
 						["maps"] = {
-							172,
-							173,
+							172,	-- Trial of the Grand Crusader
+							173,	-- Trial of the Grand Crusader
 						},
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(47242, {	-- Trophy of the Crusade
-								-- Priest
-								gs(350, {	-- Zabra's Regalia
-									i(48065),	-- Zabra's Cowl of Triumph
-									i(48062),	-- Zabra's Shoulderpads of Triumph
-									i(48063),	-- Zabra's Robe of Triumph
-									i(48066),	-- Zabra's Gloves of Triumph
-									i(48064),	-- Zabra's Leggings of Triumph
-									i(48095),	-- Zabra's Circlet of Triumph
-									i(48092),	-- Zabra's Mantle of Triumph
-									i(48093),	-- Zabra's Raiments of Triumph
-									i(48096),	-- Zabra's Handwraps of Triumph
-									i(48094),	-- Zabra's Pants of Triumph
+							gs(691, {	-- Garona's Battlegear
+								i(48242, {	-- Garona's Breastplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Mage
-								gs(723, {	-- Sunstrider's Regalia
-									i(47771),	-- Sunstrider's Hood of Triumph
-									i(47768),	-- Sunstrider's Shoulderpads of Triumph
-									i(47769),	-- Sunstrider's Robe of Triumph
-									i(47772),	-- Sunstrider's Gauntlets of Triumph
-									i(47770),	-- Sunstrider's Leggings of Triumph
+								i(48241, {	-- Garona's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Warlock
-								gs(675, {	-- Gul'dan's Regalia
-									i(47804),	-- Gul'dan's Hood of Triumph
-									i(47807),	-- Gul'dan's Shoulderpads of Triumph
-									i(47806),	-- Gul'dan's Robe of Triumph
-									i(47803),	-- Gul'dan's Gloves of Triumph
-									i(47805),	-- Gul'dan's Leggings of Triumph
+								i(48240, {	-- Garona's Helmet of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Druid
-								gs(826, {-- Runetotem's Battlegear
-									i(48194),	-- Runetotem's Headguard of Triumph
-									i(48197),	-- Runetotem's Shoulderpads of Triumph
-									i(48196),	-- Runetotem's Raiments of Triumph
-									i(48193),	-- Runetotem's Handgrips of Triumph
-									i(48195),	-- Runetotem's Legguards of Triumph
-									i(48181),	-- Runetotem's Cover of Triumph
-									i(48178),	-- Runetotem's Mantle of Triumph
-									i(48179),	-- Runetotem's Vestments of Triumph
-									i(48182),	-- Runetotem's Gloves of Triumph
-									i(48180),	-- Runetotem's Trousers of Triumph
-									i(48151),	-- Runetotem's Headpiece of Triumph
-									i(48148),	-- Runetotem's Spaulders of Triumph
-									i(48149),	-- Runetotem's Robe of Triumph
-									i(48152),	-- Runetotem's Handguards of Triumph
-									i(48150),	-- Runetotem's Leggings of Triumph
+								i(48239, {	-- Garona's Legplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Rogue
-								gs(691, {	-- Garona's Battlegear
-									i(48240),	-- Garona's Helmet of Triumph
-									i(48238),	-- Garona's Pauldrons of Triumph
-									i(48242),	-- Garona's Breastplate of Triumph
-									i(48241),	-- Garona's Gauntlets of Triumph
-									i(48239),	-- Garona's Legplates of Triumph
+								i(48238, {	-- Garona's Pauldrons of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Hunter
-								gs(738, {	-- Windrunner's Pursuit
-									i(48272),	-- Windrunner's Headpiece of Triumph
-									i(48270),	-- Windrunner's Spaulders of Triumph
-									i(48274),	-- Windrunner's Tunic of Triumph
-									i(48273),	-- Windrunner's Handguards of Triumph
-									i(48271),	-- Windrunner's Legguards of Triumph
+							}),
+							gs(675, {	-- Gul'dan's Regalia
+								i(47803, {	-- Gul'dan's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Shaman
-								gs(641, {	-- Thrall's Garb
-									i(48333),	-- Thrall's Helm of Triumph
-									i(48331),	-- Thrall's Shoulderpads of Triumph
-									i(48335),	-- Thrall's Hauberk of Triumph
-									i(48334),	-- Thrall's Gloves of Triumph
-									i(48332),	-- Thrall's Kilt of Triumph
-									i(48363),	-- Thrall's Faceguard of Triumph
-									i(48361),	-- Thrall's Shoulderguards of Triumph
-									i(48365),	-- Thrall's Chestguard of Triumph
-									i(48364),	-- Thrall's Grips of Triumph
-									i(48362),	-- Thrall's War-Kilt of Triumph
-									i(48302),	-- Thrall's Headpiece of Triumph
-									i(48304),	-- Thrall's Spaulders of Triumph
-									i(48300),	-- Thrall's Tunic of Triumph
-									i(48301),	-- Thrall's Handguards of Triumph
-									i(48303),	-- Thrall's Legguards of Triumph
+								i(47804, {	-- Gul'dan's Hood of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Paladin
-								gs(707, {	-- Liadrin's Plate
-									i(48592),	-- Liadrin's Headpiece of Triumph
-									i(48590),	-- Liadrin's Spaulders of Triumph
-									i(48594),	-- Liadrin's Tunic of Triumph
-									i(48593),	-- Liadrin's Gloves of Triumph
-									i(48591),	-- Liadrin's Greaves of Triumph
-									i(48659),	-- Liadrin's Faceguard of Triumph
-									i(48661),	-- Liadrin's Shoulderguards of Triumph
-									i(48657),	-- Liadrin's Breastplate of Triumph
-									i(48658),	-- Liadrin's Handguards of Triumph
-									i(48660),	-- Liadrin's Legguards of Triumph
-									i(48624),	-- Liadrin's Helm of Triumph
-									i(48622),	-- Liadrin's Shoulderplates of Triumph
-									i(48626),	-- Liadrin's Battleplate of Triumph
-									i(48625),	-- Liadrin's Gauntlets of Triumph
-									i(48623),	-- Liadrin's Legplates of Triumph
+								i(47805, {	-- Gul'dan's Leggings of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Warrior
-								gs(657, {	-- Hellscream's Battlegear
-									i(48393),	-- Hellscream's Helmet of Triumph
-									i(48395),	-- Hellscream's Shoulderplates of Triumph
-									i(48391),	-- Hellscream's Battleplate of Triumph
-									i(48392),	-- Hellscream's Gauntlets of Triumph
-									i(48394),	-- Hellscream's Legplates of Triumph
-									i(48463),	-- Hellscream's Greathelm of Triumph
-									i(48465),	-- Hellscream's Pauldrons of Triumph
-									i(48461),	-- Hellscream's Breastplate of Triumph
-									i(48462),	-- Hellscream's Handguards of Triumph
-									i(48464),	-- Hellscream's Legguards of Triumph
+								i(47806, {	-- Gul'dan's Robe of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Death Knight
-								gs(841, {	-- Koltira's Battlegear
-									i(48555),	-- Koltira's Faceguard of Triumph
-									i(48553),	-- Koltira's Pauldrons of Triumph
-									i(48557),	-- Koltira's Chestguard of Triumph
-									i(48556),	-- Koltira's Handguards of Triumph
-									i(48554),	-- Koltira's Legguards of Triumph
-									i(48498),	-- Koltira's Helmet of Triumph
-									i(48496),	-- Koltira's Shoulderpads of Triumph
-									i(48500),	-- Koltira's Battleplate of Triumph
-									i(48499),	-- Koltira's Gauntlets of Triumph
-									i(48497),	-- Koltira's Legplates of Triumph
+								i(47807, {	-- Gul'dan's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(657, {	-- Hellscream's Battlegear
+								i(48391, {	-- Hellscream's Battleplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48461, {	-- Hellscream's Breastplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48392, {	-- Hellscream's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48463, {	-- Hellscream's Greathelm of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48462, {	-- Hellscream's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48393, {	-- Hellscream's Helmet of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48464, {	-- Hellscream's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48394, {	-- Hellscream's Legplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48465, {	-- Hellscream's Pauldrons of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48395, {	-- Hellscream's Shoulderplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(841, {	-- Koltira's Battlegear
+								i(48500, {	-- Koltira's Battleplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48557, {	-- Koltira's Chestguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48555, {	-- Koltira's Faceguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48499, {	-- Koltira's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48556, {	-- Koltira's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48498, {	-- Koltira's Helmet of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48554, {	-- Koltira's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48497, {	-- Koltira's Legplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48553, {	-- Koltira's Pauldrons of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48496, {	-- Koltira's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(707, {	-- Liadrin's Plate
+								i(48626, {	-- Liadrin's Battleplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48657, {	-- Liadrin's Breastplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48659, {	-- Liadrin's Faceguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48625, {	-- Liadrin's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48593, {	-- Liadrin's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48591, {	-- Liadrin's Greaves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48658, {	-- Liadrin's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48592, {	-- Liadrin's Headpiece of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48624, {	-- Liadrin's Helm of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48660, {	-- Liadrin's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48623, {	-- Liadrin's Legplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48661, {	-- Liadrin's Shoulderguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48622, {	-- Liadrin's Shoulderplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48590, {	-- Liadrin's Spaulders of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48594, {	-- Liadrin's Tunic of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(826, {	-- Runetotem's Battlegear
+								i(48181, {	-- Runetotem's Cover of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48182, {	-- Runetotem's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48193, {	-- Runetotem's Handgrips of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48152, {	-- Runetotem's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48194, {	-- Runetotem's Headguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48151, {	-- Runetotem's Headpiece of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48150, {	-- Runetotem's Leggings of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48195, {	-- Runetotem's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48178, {	-- Runetotem's Mantle of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48196, {	-- Runetotem's Raiments of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48149, {	-- Runetotem's Robe of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48197, {	-- Runetotem's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48148, {	-- Runetotem's Spaulders of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48180, {	-- Runetotem's Trousers of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48179, {	-- Runetotem's Vestments of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(723, {	-- Sunstrider's Regalia
+								i(47772, {	-- Sunstrider's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(47771, {	-- Sunstrider's Hood of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(47770, {	-- Sunstrider's Leggings of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(47769, {	-- Sunstrider's Robe of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(47768, {	-- Sunstrider's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(641, {	-- Thrall's Garb
+								i(48365, {	-- Thrall's Chestguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48363, {	-- Thrall's Faceguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48334, {	-- Thrall's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48364, {	-- Thrall's Grips of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48301, {	-- Thrall's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48335, {	-- Thrall's Hauberk of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48302, {	-- Thrall's Headpiece of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48333, {	-- Thrall's Helm of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48332, {	-- Thrall's Kilt of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48303, {	-- Thrall's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48361, {	-- Thrall's Shoulderguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48331, {	-- Thrall's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48304, {	-- Thrall's Spaulders of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48300, {	-- Thrall's Tunic of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48362, {	-- Thrall's War-Kilt of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(738, {	-- Windrunner's Pursuit
+								i(48273, {	-- Windrunner's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48272, {	-- Windrunner's Headpiece of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48271, {	-- Windrunner's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48270, {	-- Windrunner's Spaulders of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48274, {	-- Windrunner's Tunic of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(350, {	-- Zabra's Regalia
+								i(48095, {	-- Zabra's Circlet of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48065, {	-- Zabra's Cowl of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48066, {	-- Zabra's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48096, {	-- Zabra's Handwraps of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48064, {	-- Zabra's Leggings of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48092, {	-- Zabra's Mantle of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48094, {	-- Zabra's Pants of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48093, {	-- Zabra's Raiments of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48063, {	-- Zabra's Robe of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48062, {	-- Zabra's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
 							}),
 						},
@@ -2653,135 +2943,313 @@ _.Zones =
 						["coord"] = { 75.4, 21.6, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = {
-							172,
-							173,
+							172,	-- Trial of the Grand Crusader
+							173,	-- Trial of the Grand Crusader
 						},
 						["g"] = {
-							i(47242, {	-- Trophy of the Crusade
-								-- Priest
-								gs(349, {	-- Velen's Regalia
-									i(48078),	-- Velen's Circlet of Triumph
-									i(47984),	-- Velen's Cowl of Triumph
-									i(48081),	-- Velen's Mantle of Triumph
-									i(47987),	-- Velen's Shoulderpads of Triumph
-									i(48080),	-- Velen's Raiments of Triumph
-									i(47986),	-- Velen's Robe of Triumph
-									i(47983),	-- Velen's Gloves of Triumph
-									i(48077),	-- Velen's Handwraps of Triumph
-									i(47985),	-- Velen's Leggings of Triumph
-									i(48079),	-- Velen's Pants of Triumph
+							gs(674, {	-- Kel'Thuzad's Regalia
+								i(47782, {	-- Kel'Thuzad's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Mage
-								gs(722, {	-- Khadgar's Regalia
-									i(47754),	-- Khadgar's Hood of Triumph
-									i(47757),	-- Khadgar's Shoulderpads of Triumph
-									i(47756),	-- Khadgar's Robe of Triumph
-									i(47753),	-- Khadgar's Gauntlets of Triumph
-									i(47755),	-- Khadgar's Leggings of Triumph
+								i(47778, {	-- Kel'Thuzad's Hood of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Warlock
-								gs(674, {	-- Kel'Thuzad's Regalia
-									i(47778),	-- Kel'Thuzad's Hood of Triumph
-									i(47781),	-- Kel'Thuzad's Shoulderpads of Triumph
-									i(47779),	-- Kel'Thuzad's Robe of Triumph
-									i(47782),	-- Kel'Thuzad's Gloves of Triumph
-									i(47780),	-- Kel'Thuzad's Leggings of Triumph
+								i(47780, {	-- Kel'Thuzad's Leggings of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Druid
-								gs(825, {	-- Malfurion's Battlegear
-									i(48164),	-- Malfurion's Cover of Triumph
-									i(48211),	-- Malfurion's Headguard of Triumph
-									i(48134),	-- Malfurion's Headpiece of Triumph
-									i(48167),	-- Malfurion's Mantle of Triumph
-									i(48208),	-- Malfurion's Shoulderpads of Triumph
-									i(48137),	-- Malfurion's Spaulders of Triumph
-									i(48209),	-- Malfurion's Raiments of Triumph
-									i(48136),	-- Malfurion's Robe of Triumph
-									i(48166),	-- Malfurion's Vestments of Triumph
-									i(48163),	-- Malfurion's Gloves of Triumph
-									i(48212),	-- Malfurion's Handgrips of Triumph
-									i(48133),	-- Malfurion's Handguards of Triumph
-									i(48135),	-- Malfurion's Leggings of Triumph
-									i(48210),	-- Malfurion's Legguards of Triumph
-									i(48165),	-- Malfurion's Trousers of Triumph
+								i(47779, {	-- Kel'Thuzad's Robe of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Rogue
-								gs(690, {	-- VanCleef's Battlegear
-									i(48225),	-- VanCleef's Helmet of Triumph
-									i(48227),	-- VanCleef's Pauldrons of Triumph
-									i(48223),	-- VanCleef's Breastplate of Triumph
-									i(48224),	-- VanCleef's Gauntlets of Triumph
-									i(48226),	-- VanCleef's Legplates of Triumph
+								i(47781, {	-- Kel'Thuzad's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Hunter
-								gs(739, {	-- Windrunner's Battlegear
-									i(48257),	-- Windrunner's Headpiece of Triumph
-									i(48259),	-- Windrunner's Spaulders of Triumph
-									i(48255),	-- Windrunner's Tunic of Triumph
-									i(48256),	-- Windrunner's Handguards of Triumph
-									i(48258),	-- Windrunner's Legguards of Triumph
+							}),
+							gs(722, {	-- Khadgar's Regalia
+								i(47753, {	-- Khadgar's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Shaman
-								gs(640, {	-- Nobundo's Garb
-									i(48348),	-- Nobundo's Faceguard of Triumph
-									i(48287),	-- Nobundo's Headpiece of Triumph
-									i(48318),	-- Nobundo's Helm of Triumph
-									i(48350),	-- Nobundo's Shoulderguards of Triumph
-									i(48320),	-- Nobundo's Shoulderpads of Triumph
-									i(48289),	-- Nobundo's Spaulders of Triumph
-									i(48346),	-- Nobundo's Chestguard of Triumph
-									i(48316),	-- Nobundo's Hauberk of Triumph
-									i(48285),	-- Nobundo's Tunic of Triumph
-									i(48317),	-- Nobundo's Gloves of Triumph
-									i(48347),	-- Nobundo's Grips of Triumph
-									i(48286),	-- Nobundo's Handguards of Triumph
-									i(48319),	-- Nobundo's Kilt of Triumph
-									i(48349),	-- Nobundo's War-Kilt of Triumph
-									i(48288),	-- Nobundo's Legguards of Triumph
+								i(47754, {	-- Khadgar's Hood of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Paladin
-								gs(706, {	-- Turalyon's Plate
-									i(48639),	-- Turalyon's Faceguard of Triumph
-									i(48577),	-- Turalyon's Headpiece of Triumph
-									i(48609),	-- Turalyon's Helm of Triumph
-									i(48637),	-- Turalyon's Shoulderguards of Triumph
-									i(48611),	-- Turalyon's Shoulderplates of Triumph
-									i(48579),	-- Turalyon's Spaulders of Triumph
-									i(48607),	-- Turalyon's Battleplate of Triumph
-									i(48641),	-- Turalyon's Breastplate of Triumph
-									i(48575),	-- Turalyon's Tunic of Triumph
-									i(48608),	-- Turalyon's Gauntlets of Triumph
-									i(48576),	-- Turalyon's Gloves of Triumph
-									i(48640),	-- Turalyon's Handguards of Triumph
-									i(48578),	-- Turalyon's Greaves of Triumph
-									i(48638),	-- Turalyon's Legguards of Triumph
-									i(48610),	-- Turalyon's Legplates of Triumph
+								i(47755, {	-- Khadgar's Leggings of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Warrior
-								gs(658, {	-- Wrynn's Battlegear
-									i(48430),	-- Wrynn's Greathelm of Triumph
-									i(48378),	-- Wrynn's Helmet of Triumph
-									i(48454),	-- Wrynn's Pauldrons of Triumph
-									i(48380),	-- Wrynn's Shoulderplates of Triumph
-									i(48376),	-- Wrynn's Battleplate of Triumph
-									i(48450),	-- Wrynn's Breastplate of Triumph
-									i(48377),	-- Wrynn's Gauntlets of Triumph
-									i(48452),	-- Wrynn's Handguards of Triumph
-									i(48446),	-- Wrynn's Legguards of Triumph
-									i(48379),	-- Wrynn's Legplates of Triumph
+								i(47756, {	-- Khadgar's Robe of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
-								-- Death Knight
-								gs(842, {	-- Thassarian's Battlegear
-									i(48540),	-- Thassarian's Faceguard of Triumph
-									i(48483),	-- Thassarian's Helmet of Triumph
-									i(48542),	-- Thassarian's Pauldrons of Triumph
-									i(48485),	-- Thassarian's Shoulderplates of Triumph
-									i(48481),	-- Thassarian's Battleplate of Triumph
-									i(48538),	-- Thassarian's Chestguard of Triumph
-									i(48482),	-- Thassarian's Gauntlets of Triumph
-									i(48539),	-- Thassarian's Handguards of Triumph
-									i(48541),	-- Thassarian's Legguards of Triumph
-									i(48484),	-- Thassarian's Legplates of Triumph
+								i(47757, {	-- Khadgar's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(825, {	-- Malfurion's Battlegear
+								i(48164, {	-- Malfurion's Cover of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48163, {	-- Malfurion's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48212, {	-- Malfurion's Handgrips of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48133, {	-- Malfurion's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48211, {	-- Malfurion's Headguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48134, {	-- Malfurion's Headpiece of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48135, {	-- Malfurion's Leggings of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48210, {	-- Malfurion's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48167, {	-- Malfurion's Mantle of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48209, {	-- Malfurion's Raiments of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48136, {	-- Malfurion's Robe of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48208, {	-- Malfurion's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48137, {	-- Malfurion's Spaulders of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48165, {	-- Malfurion's Trousers of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48166, {	-- Malfurion's Vestments of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(640, {	-- Nobundo's Garb
+								i(48346, {	-- Nobundo's Chestguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48348, {	-- Nobundo's Faceguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48317, {	-- Nobundo's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48347, {	-- Nobundo's Grips of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48286, {	-- Nobundo's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48316, {	-- Nobundo's Hauberk of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48287, {	-- Nobundo's Headpiece of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48318, {	-- Nobundo's Helm of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48319, {	-- Nobundo's Kilt of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48288, {	-- Nobundo's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48350, {	-- Nobundo's Shoulderguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48320, {	-- Nobundo's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48289, {	-- Nobundo's Spaulders of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48285, {	-- Nobundo's Tunic of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48349, {	-- Nobundo's War-Kilt of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(842, {	-- Thassarian's Battlegear
+								i(48481, {	-- Thassarian's Battleplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48538, {	-- Thassarian's Chestguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48540, {	-- Thassarian's Faceguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48482, {	-- Thassarian's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48539, {	-- Thassarian's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48483, {	-- Thassarian's Helmet of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48541, {	-- Thassarian's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48484, {	-- Thassarian's Legplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48542, {	-- Thassarian's Pauldrons of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48485, {	-- Thassarian's Shoulderplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(706, {	-- Turalyon's Plate
+								i(48607, {	-- Turalyon's Battleplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48641, {	-- Turalyon's Breastplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48639, {	-- Turalyon's Faceguard of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48608, {	-- Turalyon's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48576, {	-- Turalyon's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48578, {	-- Turalyon's Greaves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48640, {	-- Turalyon's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48577, {	-- Turalyon's Headpiece of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48609, {	-- Turalyon's Helm of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48638, {	-- Turalyon's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48610, {	-- Turalyon's Legplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48637, {	-- Turalyon's Shoulderguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48611, {	-- Turalyon's Shoulderplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48579, {	-- Turalyon's Spaulders of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48575, {	-- Turalyon's Tunic of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(690, {	-- VanCleef's Battlegear
+								i(48223, {	-- VanCleef's Breastplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48224, {	-- VanCleef's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48225, {	-- VanCleef's Helmet of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48226, {	-- VanCleef's Legplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48227, {	-- VanCleef's Pauldrons of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(349, {	-- Velen's Regalia
+								i(48078, {	-- Velen's Circlet of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(47984, {	-- Velen's Cowl of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(47983, {	-- Velen's Gloves of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48077, {	-- Velen's Handwraps of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(47985, {	-- Velen's Leggings of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48081, {	-- Velen's Mantle of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48079, {	-- Velen's Pants of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48080, {	-- Velen's Raiments of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(47986, {	-- Velen's Robe of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(47987, {	-- Velen's Shoulderpads of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(739, {	-- Windrunner's Battlegear
+								i(48256, {	-- Windrunner's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48257, {	-- Windrunner's Headpiece of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48258, {	-- Windrunner's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48259, {	-- Windrunner's Spaulders of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48255, {	-- Windrunner's Tunic of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+							}),
+							gs(658, {	-- Wrynn's Battlegear
+								i(48376, {	-- Wrynn's Battleplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48450, {	-- Wrynn's Breastplate of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48377, {	-- Wrynn's Gauntlets of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48430, {	-- Wrynn's Greathelm of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48452, {	-- Wrynn's Handguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48378, {	-- Wrynn's Helmet of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48446, {	-- Wrynn's Legguards of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48379, {	-- Wrynn's Legplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48454, {	-- Wrynn's Pauldrons of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+								}),
+								i(48380, {	-- Wrynn's Shoulderplates of Triumph
+									["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
 								}),
 							}),
 						},
@@ -2790,11 +3258,17 @@ _.Zones =
 						["coord"] = { 76.2, 24.0, 118 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							currency(241, {	-- Champion's Seal
-								i(46814),	-- Sunreaver Dragonhawk
-								i(46816),	-- Sunreaver Hawkstrider
-								i(46821),	-- Shimmering Wyrmling
-								i(46818),	-- Sunreaver Tabard
+							i(46821, {	-- Shimmering Wyrmling
+								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
+							}),
+							i(46814, {	-- Sunreaver Dragonhawk
+								["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
+							}),
+							i(46816, {	-- Sunreaver Hawkstrider
+								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
+							}),
+							i(46818, {	-- Sunreaver Tabard
+								["cost"] = { { "c", 241, 50 }, },	-- 50x Champion's Seal
 							}),
 						},
 					}),
