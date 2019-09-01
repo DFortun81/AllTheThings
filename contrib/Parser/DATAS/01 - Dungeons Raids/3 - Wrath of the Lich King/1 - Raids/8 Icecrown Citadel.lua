@@ -8,335 +8,349 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
 		["mapID"] = 186,
-		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 1359},
+		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 1359 },
 		["coord"] = { 53.7, 87.0, 118 },	-- Icecrown Citadel, Icecrown
-		["groups"] = {
-			faction(1156, {		-- The Ashen Verdict
+		["g"] = {
+			faction(1156, {	-- The Ashen Verdict
 				["achievementID"] = 4598,	-- The Ashen Verdict (Achievement)
-				["groups"] = {
-					title(141),		-- Of the Ashen Verdict
+				["g"] = {
+					title(141),	-- Of the Ashen Verdict
 					n(37687, { 	-- Alchemist Finklestein
-						i(49908, {	-- Primordial Saronite
-							i(49959),	-- Pattern: Bladeborn Leggings
-							i(49958),	-- Pattern: Blessed Cenarion Boots
-							i(49954),	-- Pattern: Deathfrost Boots
-							i(49965),	-- Pattern: Draconic Bonesplinter Legguards
-							i(49963),	-- Pattern: Earthsoul Boots
-							i(49961),	-- Pattern: Footpads of Impending Death
-							i(49953),	-- Pattern: Leggings of Woven Death
-							i(49957),	-- Pattern: Legwraps of Unleashed Nature
-							i(49962),	-- Pattern: Lightning-Infused Leggings
-							i(49955),	-- Pattern: Lightweave Leggings
-							i(49966),	-- Pattern: Rock-Steady Treads
-							i(49956),	-- Pattern: Sandals of Consecration
-							i(49974),	-- Plans: Boots of Kingly Upheaval
-							i(49972),	-- Plans: Hellfrozen Bonegrinders
-							i(49971),	-- Plans: Legplates of Painful Death
-							i(49973),	-- Plans: Pillars of Might
-							i(49970),	-- Plans: Protectors of Life
-							i(49969),	-- Plans: Puresteel Legplates
+						i(49959, {	-- Pattern: Bladeborn Leggings
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49958, {	-- Pattern: Blessed Cenarion Boots
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49954, {	-- Pattern: Deathfrost Boots
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49965, {	-- Pattern: Draconic Bonesplinter Legguards
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49963, {	-- Pattern: Earthsoul Boots
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49961, {	-- Pattern: Footpads of Impending Death
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49953, {	-- Pattern: Leggings of Woven Death
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49957, {	-- Pattern: Legwraps of Unleashed Nature
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49962, {	-- Pattern: Lightning-Infused Leggings
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49955, {	-- Pattern: Lightweave Leggings
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49966, {	-- Pattern: Rock-Steady Treads
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49956, {	-- Pattern: Sandals of Consecration
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49974, {	-- Plans: Boots of Kingly Upheaval
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49972, {	-- Plans: Hellfrozen Bonegrinders
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49971, {	-- Plans: Legplates of Painful Death
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49973, {	-- Plans: Pillars of Might
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49970, {	-- Plans: Protectors of Life
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						}),
+						i(49969, {	-- Plans: Puresteel Legplates
+							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
 					}),
-					{
-						["questID"] = 24815,	-- Choose Your Path
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
-						["description"] = "Requires Friendly with The Ashen Verdict before it will be offered. You can get there by clearing ICC and all of the trash mobs. If the quest does not appear, you may have to relog.",
-						["groups"] = {
-							{
-								["itemID"] = 50375,		-- Ashen Band of Courage
+					q(24815, {	-- Choose Your Path
+						["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
+						["description"] = "If the quest does not appear when you hit Friendly, you may have to relog.",
+						["qg"] = 38316,	-- Ormus the Penitent
+						["g"] = {
+							i(50375, {	-- Ashen Band of Courage
 								["questID"] = 24815,	-- Choose Your Path
+								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+							}),
+							i(50377, {	-- Ashen Band of Destruction
+								["questID"] = 24815,	-- Choose Your Path
+								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+							}),
+							i(52569, {	-- Ashen Band of Might
+								["questID"] = 24815,	-- Choose Your Path
+								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+							}),
+							i(50376, {	-- Ashen Band of Vengeance
+								["questID"] = 24815,	-- Choose Your Path
+								["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+							}),
+							i(50378, {	-- Ashen Band of Wisdom
+								["questID"] = 24815,	-- Choose Your Path
+								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+							}),
+						},
+					}),
+				-- 	Quest Chain: Path of Courage
+					q(24827, {	-- Path of Courage (Honored)
+						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+						["sourceQuest"] = 24815,	-- Choose Your Path
+						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["qg"] = 38316,	-- Ormus the Penitent
+						["g"] = {
+							i(50388, {	-- Ashen Band of Greater Courage
+								["questID"] = 24827,	-- Path of Courage (Honored)
+								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+							}),
+						},
+					}),
+					q(24834, {	-- Path of Courage (Revered)
+						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+						["sourceQuest"] = 24827,	-- Path of Courage (Honored)
+						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["qg"] = 38316,	-- Ormus the Penitent
+						["g"] = {
+							i(50403, {	-- Ashen Band of Unmatched Courage
+								["questID"] = 24834,	-- Path of Courage (Revered)
 								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-							},
-							{
-								["itemID"] = 50377,		-- Ashen Band of Destruction
-								["questID"] = 24815,	-- Choose Your Path
+							}),
+						},
+					}),
+					q(24835, {	-- Path of Courage (Exalted)
+						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+						["sourceQuest"] = 24834,	-- Path of Courage (Revered)
+						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["qg"] = 38316,	-- Ormus the Penitent
+						["g"] = {
+							i(50404, {	-- Ashen Band of Endless Courage
+								["questID"] = 24835,	-- Path of Courage (Exalted)
+								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+							}),
+						},
+					}),
+				--	Quest Chain: Path of Destruction
+					q(24828, {	-- Path of Destruction (Honored)
+						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+						["sourceQuest"] = 24815,	-- Choose Your Path
+						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["qg"] = 38316,	-- Ormus the Penitent
+						["g"] = {
+							i(50384, {	-- Ashen Band of Greater Destruction
+								["questID"] = 24828,	-- Path of Destruction (Honored)
 								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-							},
-							{
-								["itemID"] = 52569,		-- Ashen Band of Might
-								["questID"] = 24815,	-- Choose Your Path
-								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-							},
-							{
-								["itemID"] = 50376,		-- Ashen Band of Vengeance
-								["questID"] = 24815,	-- Choose Your Path
-								["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
-							},
-							{
-								["itemID"] = 50378,		-- Ashen Band of Wisdom
-								["questID"] = 24815,	-- Choose Your Path
-								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-							},
+							}),
 						},
-					},
-					-- Quest Chain: Path of Courage
-					{
-						["questID"] = 24827,	-- Path of Courage [Honored]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
-						["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
-						["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-						["groups"] = {
-							{
-								["itemID"] = 50388,		-- Ashen Band of Greater Courage
-								["questID"] = 24827,	-- Path of Courage [Honored]
-								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-							},
-						},
-					},
-					{
-						["questID"] = 24834,	-- Path of Courage [Revered]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
-						["sourceQuest"] = 24827,	-- Path of Courage [Honored]
-						["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-						["groups"] = {
-							{
-								["itemID"] = 50403,		-- Ashen Band of Unmatched Courage
-								["questID"] = 24834,	-- Path of Courage [Revered]
-								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-							},
-						},
-					},
-					{
-						["questID"] = 24835,	-- Path of Courage [Exalted]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
-						["sourceQuest"] = 24834,	-- Path of Courage [Revered]
-						["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-						["groups"] = {
-							{
-								["itemID"] = 50404,		-- Ashen Band of Endless Courage
-								["questID"] = 24835,	-- Path of Courage [Exalted]
-								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-							},
-						},
-					},
-					-- Quest Chain: Path of Destruction
-					{
-						["questID"] = 24828,	-- Path of Destruction [Honored]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
-						["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
-						["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-						["groups"] = {
-							{
-								["itemID"] = 50384,		-- Ashen Band of Greater Destruction
-								["questID"] = 24828,	-- Path of Destruction [Honored]
-								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-							},
-						},
-					},
-					{
-						["questID"] = 24823,	-- Path of Destruction [Revered]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+					}),
+					q(24823, {	-- Path of Destruction (Revered)
+						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 						["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
-						["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-						["groups"] = {
-							{
-								["itemID"] = 50397,		-- Ashen Band of Unmatched Destruction
+						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["qg"] = 38316,	-- Ormus the Penitent
+						["g"] = {
+							i(50397, {	-- Ashen Band of Unmatched Destruction
 								["questID"] = 24823,	-- Path of Destruction [Revered]
 								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-							},
+							}),
 						},
-					},
-					{
-						["questID"] = 24829,	-- Path of Destruction [Exalted]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
-						["sourceQuest"] = 24823,	-- Path of Destruction [Revered]
-						["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-						["groups"] = {
-							{
-								["itemID"] = 50398,		-- Ashen Band of Endless Destruction
-								["questID"] = 24829,	-- Path of Destruction [Exalted]
-								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-							},
+					}),
+					q(24829, {	-- Path of Destruction (Exalted)
+						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+						["sourceQuest"] = 24823,	-- Path of Destruction (Revered)
+						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["qg"] = 38316,	-- Ormus the Penitent
+						["g"] = {
+							i(50398, {	-- Ashen Band of Endless Destruction
+								["questID"] = 24829,	-- Path of Destruction (Exalted)
+								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+							}),
 						},
-					},
-					-- Quest Chain: Path of Might
-					{
-						["questID"] = 25239,	-- Path of Might [Honored]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
-						["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
-						["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-						["groups"] = {
-							{
-								["itemID"] = 52570,		-- Ashen Band of Greater Might
+					}),
+				--	Quest Chain: Path of Might
+					q(25239, {	-- Path of Might (Honored)
+						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+						["sourceQuest"] = 24815,	-- Choose Your Path
+						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["qg"] = 38316,	-- Ormus the Penitent
+						["g"] = {
+							i(52570, {	-- Ashen Band of Greater Might
 								["questID"] = 25239,	-- Path of Might [Honored]
-								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-							},
+								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+							}),
 						},
-					},
-					{
-						["questID"] = 25240,	-- Path of Might [Revered]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+					}),
+					q(25240, {	-- Path of Might [Revered]
+						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+						["qg"] = 38316,	-- Ormus the Penitent
 						["sourceQuest"] = 25239,	-- Path of Might [Honored]
-						["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-						["groups"] = {
-							{
-								["itemID"] = 52571,		-- Ashen Band of Unmatched Might
+						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["g"] = {
+							i(52571, {	-- Ashen Band of Unmatched Might
 								["questID"] = 25240,	-- Path of Might [Revered]
-								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-							},
+								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+							}),
 						},
-					},
-					{
-						["questID"] = 25242,	-- Path of Might [Exalted]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+					}),
+					q(25242, {	-- Path of Might [Exalted]
+						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+						["qg"] = 38316,	-- Ormus the Penitent
 						["sourceQuest"] = 25240,	-- Path of Might [Revered]
-						["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-						["groups"] = {
-							{
-								["itemID"] = 52572,		-- Ashen Band of Endless Might
+						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["g"] = {
+							i(52572, {	-- Ashen Band of Endless Might
 								["questID"] = 25242,	-- Path of Might [Exalted]
-								["classes"] = {1, 2, 6},	-- Warrior, Paladin, Death Knight
-							},
+								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+							}),
 						},
-					},
-					-- Quest Chain: Path of Vengeance
-					{
-						["questID"] = 24826,	-- Path of Vengeance [Honored]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
-						["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
-						["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
-						["groups"] = {
-							{
-								["itemID"] = 50387,		-- Ashen Band of Greater Vengeance
+					}),
+				--	Quest Chain: Path of Vengeance
+					q(24826, {	-- Path of Vengeance [Honored]
+						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+						["qg"] = 38316,	-- Ormus the Penitent
+						["sourceQuest"] = 24815,	-- Choose Your Path
+						["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+						["g"] = {
+							i(50387, {	-- Ashen Band of Greater Vengeance
 								["questID"] = 24826,	-- Path of Vengeance [Honored]
-								["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
-							},
+								["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+							}),
 						},
-					},
-					{
-						["questID"] = 24832,	-- Path of Vengeance [Revered]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+					}),
+					q(24832, {	-- Path of Vengeance [Revered]
+						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+						["qg"] = 38316,	-- Ormus the Penitent
 						["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
 						["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
-						["groups"] = {
-							{
-								["itemID"] = 50401,		-- Ashen Band of Unmatched Vengeance
+						["g"] = {
+							i(50401, {	-- Ashen Band of Unmatched Vengeance
 								["questID"] = 24832,	-- Path of Vengeance [Revered]
-								["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
-							},
+								["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+							}),
 						},
-					},
-					{
-						["questID"] = 24833,	-- Path of Vengeance [Exalted]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+					}),
+					q(24833, {	-- Path of Vengeance [Exalted]
+						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+						["qg"] = 38316,	-- Ormus the Penitent
 						["sourceQuest"] = 24832,	-- Path of Vengeance [Revered]
-						["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
-						["groups"] = {
-							{
-								["itemID"] = 50402,		-- Ashen Band of Endless Vengeance
+						["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+						["g"] = {
+							i(50402, {	-- Ashen Band of Endless Vengeance
 								["questID"] = 24833,	-- Path of Vengeance [Exalted]
-								["classes"] = {11, 3, 4, 7, 10, 12},	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
-							},
+								["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+							}),
 						},
-					},
-					-- Quest Chain: Path of Wisdom
-					{
-						["questID"] = 24825,	-- Path of Wisdom [Honored]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
-						["sourceQuest"] = 24815,	-- Source Quest: Choose Your Path
-						["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-						["groups"] = {
-							{
-								["itemID"] = 50386,		-- Ashen Band of Greater Wisdom
+					}),
+				--	Quest Chain: Path of Wisdom
+					q(24825, {	-- Path of Wisdom [Honored]
+						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+						["qg"] = 38316,	-- Ormus the Penitent
+						["sourceQuest"] = 24815,	-- Choose Your Path
+						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["g"] = {
+							i(50386, {	-- Ashen Band of Greater Wisdom
 								["questID"] = 24825,	-- Path of Wisdom [Honored]
-								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-							},
+								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+							}),
 						},
-					},
-					{
-						["questID"] = 24830,	-- Path of Wisdom [Revered]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+					}),
+					q(24830, {	-- Path of Wisdom [Revered]
+						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+						["qg"] = 38316,	-- Ormus the Penitent
 						["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
-						["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-						["groups"] = {
-							{
-								["itemID"] = 50399,		-- Ashen Band of Unmatched Wisdom
+						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["g"] = {
+							i(50399, {	-- Ashen Band of Unmatched Wisdom
 								["questID"] = 24830,	-- Path of Wisdom [Revered]
-								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-							},
+								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+							}),
 						},
-					},
-					{
-						["questID"] = 24831,	-- Path of Wisdom [Exalted]
-						["qg"] = 38316,			-- Quest Giver: Ormus the Penitent
+					}),
+					q(24831, {	-- Path of Wisdom [Exalted]
+						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+						["qg"] = 38316,	-- Ormus the Penitent
 						["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
-						["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-						["groups"] = {
-							{
-								["itemID"] = 50400,		-- Ashen Band of Endless Wisdom
+						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["g"] = {
+							i(50400, {	-- Ashen Band of Endless Wisdom
 								["questID"] = 24831,	-- Path of Wisdom [Exalted]
-								["classes"] = {2, 8, 11, 5, 7, 9, 10},	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
-							},
+								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+							}),
 						},
-					},
+					}),
 				},
 			}),
 			n(-10066, {	-- Legendary Questline
-				["description"] = "These quests are only able to be completed on 25 Man Normal or Heroic Difficulty.",
-				["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
+				["classes"] = { 1, 2, 6 }, 	-- Warrior, Paladin, DK
 				["title"] = "Shadowmourne",
 				["icon"] = "Interface\\Icons\\INV_Axe_113",
 				["isRaid"] = true,
 				["lvl"] = 80,
-				["groups"] = {
+				["g"] = {
 					{
 						["questID"] = 24545,	-- The Sacred and the Corrupt
-						["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
-						["groups"] = {
+						["qg"] = 37120,	-- Highlord Darion Mograine
+						["g"] = {
 							{
-								["itemID"] = 49869,		-- Light's Vengeance
+								["itemID"] = 49869,	-- Light's Vengeance
 								["questID"] = 24545,	-- The Sacred and the Corrupt
 								["description"] = "Fly out to Dragonblight and collect this item from a cave after some short RP.",
 							},
 							{
-								["itemID"] = 50226,		-- Festergut's Acidic Blood
+								["itemID"] = 50226,	-- Festergut's Acidic Blood
 								["questID"] = 24545,	-- The Sacred and the Corrupt
 								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
-								["description"] = "This can drop from Festergut on 25 man difficulty or higher.",
+								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
 							},
 							{
-								["itemID"] = 50231,		-- Rotface's Acidic Blood
+								["itemID"] = 50231,	-- Rotface's Acidic Blood
 								["questID"] = 24545,	-- The Sacred and the Corrupt
 								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
-								["description"] = "This can drop from Rotface on 25 man difficulty or higher.",
+								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
 							},
 						},
 					},
 					{
 						["questID"] = 24743,	-- Shadow's Edge
-						["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
-						["sourceQuest"] = 24545,	-- Source Quest: The Sacred and the Corrupt
-						["groups"] = {
-							i(49888),			-- Shadow's Edge
+						["qg"] = 37120,	-- Highlord Darion Mograine
+						["sourceQuest"] = 24545,	-- The Sacred and the Corrupt
+						["g"] = {
+							i(49888),	-- Shadow's Edge
 						},
 					},
 					{
 						["questID"] = 24547,	-- A Feast of Souls
-						["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
-						["sourceQuest"] = 24743,	-- Source Quest: Shadow's Edge
+						["qg"] = 37120,	-- Highlord Darion Mograine
+						["sourceQuest"] = 24743,	-- Shadow's Edge
 					},
 					{
 						["questID"] = 24749,	-- Unholy Infusion
-						["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
-						["sourceQuest"] = 24547,	-- Source Quest: A Feast of Souls
+						["qg"] = 37120,	-- Highlord Darion Mograine
+						["sourceQuest"] = 24547,	-- A Feast of Souls
 					},
 					{
 						["questID"] = 24756,	-- Blood Infusion
-						["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
-						["sourceQuest"] = 24749,	-- Source Quest: Unholy Infusion
+						["qg"] = 37120,	-- Highlord Darion Mograine
+						["sourceQuest"] = 24749,	-- Unholy Infusion
 					},
 					{
 						["questID"] = 24757,	-- Frost Infusion
-						["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
-						["sourceQuest"] = 24756,	-- Source Quest: Blood Infusion
+						["qg"] = 37120,	-- Highlord Darion Mograine
+						["sourceQuest"] = 24756,	-- Blood Infusion
 					},
 					{
 						["questID"] = 24548,	-- The Splintered Throne
-						["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
-						["sourceQuest"] = 24757,	-- Source Quest: Frost Infusion
-						["groups"] = {
+						["qg"] = 37120,	-- Highlord Darion Mograine
+						["sourceQuest"] = 24757,	-- Frost Infusion
+						["g"] = {
 							{
-								["itemID"] = 50274,		-- Shadowfrost Shard
+								["itemID"] = 50274,	-- Shadowfrost Shard
 								["questID"] = 24548,	-- The Splintered Throne
 								["description"] = "These can drop from any of the bosses on 25 man difficulty or higher. You need 50 of these, so this quest will take you several weeks to finish.",
 								["crs"] = {
@@ -359,66 +373,66 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 					{
 						["questID"] = 24549,	-- Shadowmourne...
-						["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
-						["sourceQuest"] = 24548,	-- Source Quest: The Splintered Throne
-						["groups"] = {
-							i(49623)			-- Shadowmourne
+						["qg"] = 37120,	-- Highlord Darion Mograine
+						["sourceQuest"] = 24548,	-- The Splintered Throne
+						["g"] = {
+							i(49623)	-- Shadowmourne
 						},
 					},
 					{
 						["questID"] = 24748,	-- The Lich King's Last Stand
-						["qg"] = 37120,			-- Quest Giver: Highlord Darion Mograine
-						["sourceQuest"] = 24549,	-- Source Quest: Shadowmourne...
+						["qg"] = 37120,	-- Highlord Darion Mograine
+						["sourceQuest"] = 24549,	-- Shadowmourne...
 					},
 					{
-						["itemID"] = 51315,		-- Sealed Chest
+						["itemID"] = 51315,	-- Sealed Chest
 						["questID"] = 24914,	-- Personal Property
-						["qg"] = 36597,			-- Quest Giver: The Lich King
-						["sourceQuest"] = 24549,	-- Source Quest: Shadowmourne...
+						["qg"] = 36597,	-- The Lich King
+						["sourceQuest"] = 24549,	-- Shadowmourne...
 						["description"] = "Dropped by the Lich King on 25 Man Difficulty while on the quest The Lich King's Last Stand. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.",
-						["groups"] = {
+						["g"] = {
 							{
-								["itemID"] = 51316,			-- Unsealed Chest
-								["sourceQuest"] = 24914,	-- Source Quest: Personal Property
+								["itemID"] = 51316,	-- Unsealed Chest
+								["sourceQuest"] = 24914,	-- Personal Property
 								["description"] = "This item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",
-								["groups"] = {
+								["g"] = {
 									{
-										["itemID"] = 51317,		-- Alexandros' Soul Shard
+										["itemID"] = 51317,	-- Alexandros' Soul Shard
 										["questID"] = 24915,	-- Mograine's Reunion
 										["description"] = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
-										["groups"] = {
+										["g"] = {
 											i(52200)	-- Reins of the Crimson Deathcharger
 										},
 									},
 									{
-										["itemID"] = 51319,		-- Arthas' Training Sword
+										["itemID"] = 51319,	-- Arthas' Training Sword
 										["questID"] = 24917,	-- Muradin's Lament
 										["description"] = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
-										["groups"] = {
+										["g"] = {
 											i(52201)	-- Muradin's Favor
 										},
 									},
 									{
-										["itemID"] = 51320,		-- Badge of the Silver Hand
+										["itemID"] = 51320,	-- Badge of the Silver Hand
 										["questID"] = 24919,	-- The Lightbringer's Redemption
 										["description"] = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
-										["groups"] = {
+										["g"] = {
 											i(52252)	-- Tabard of the Lightbringer
 										},
 									},
 									{
-										["itemID"] = 51321,		-- Blood of Sylvanas
+										["itemID"] = 51321,	-- Blood of Sylvanas
 										["questID"] = 24918,	-- Sylvanas' Vengeance
 										["description"] = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
-										["groups"] = {
+										["g"] = {
 											i(52253)	-- Sylvanas' Music Box
 										},
 									},
 									{
-										["itemID"] = 51318,		-- Jaina's Locket
+										["itemID"] = 51318,	-- Jaina's Locket
 										["questID"] = 24916,	-- Jaina's Locket
 										["description"] = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
-										["groups"] = {
+										["g"] = {
 											i(52251, {	-- Jaina's Locket
 												["ignoreSource"] = true,
 												["collectible"] = false
@@ -432,12 +446,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				},
 			}),
 			{	-- Zafod Boombox
-				-- Note!! Putting him here rather than 4 times for an unlearnable shirt
+		-- Note!! Putting him here rather than 4 times for an unlearnable shirt
 				["npcID"] = 37184,	-- Zafod Boombox
 				["g"] = {
 					{	-- Goblin Rocket Pack
-						["itemID"] = 49278,			-- Goblin Rocket Pack
-						["u"] = 15,					-- Unlearnable Filter
+						["itemID"] = 49278,	-- Goblin Rocket Pack
+						["u"] = 15,			-- Unlearnable Filter
 						["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
 					},
 				},
@@ -499,7 +513,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					37098,	-- Val'kyr Herald
 					37038,	-- Vengeful Fleshreaper
 				},
-				["groups"] = {
+				["g"] = {
 					i(50444),	-- Rowan's Rifle of Silver Bullets
 					i(50452),	-- Wodin's Lucky Necklace
 					i(50449),	-- Stiffened Corpse Shoulderpads
@@ -510,7 +524,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				},
 			}),
 			n(-2, {	-- Vendors
-				n(38858, { 		-- Goodman the Closer
+				n(38858, { 	-- Goodman the Closer
 					i(49908),	-- Primordial Saronite
 					i(50355),	-- Herkumi War Token
 					i(50356),	-- Corroded Skeleton Key
@@ -558,7 +572,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50357),	-- Maghia's Misguided Quill
 					i(50358),	-- Purified Lunar Dust
 					
-					-- Relentless PvP START
+			-- Relentless PvP START
 					gs(373, {	-- Relentless Gladiator's Satin Armor
 						i(41855),	-- Relentless Gladiator's Mooncloth Hood
 						i(41870),	-- Relentless Gladiator's Mooncloth Mantle
@@ -573,7 +587,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					gs(775, {	-- Relentless Gladiator's Silk Armor
 						["icon"] = "Interface\\Icons\\INV_Helmet_86",	-- Relentless Silk Cowl Icon as Mage Set didn't have one
-						["groups"] = {
+						["g"] = {
 							i(41947),	-- Relentless Gladiator's Silk Cowl
 							i(41966),	-- Relentless Gladiator's Silk Amice
 							i(41954),	-- Relentless Gladiator's Silk Raiment
@@ -662,7 +676,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
 						i(40851),	-- Relentless Gladiator's Dreadplate Legguards
 					}),	
-					-- Relentless PvP END
+			-- Relentless PvP END
 				}),
 				n(38316, { 	-- Ormus the Penitent	
 					i(50855, {
@@ -1506,12 +1520,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50783),	-- Boots of the Frozen Seed
 					i(50342),	-- Whispering Fanged Skull
 				})),
-				e(1626, {			-- Icecrown Gunship Battle
+				e(1626, {	-- Icecrown Gunship Battle
 					["crs"] = {
 						36939,	-- High Overlord Saurfang
 						36948,	-- Muradin Bronzebeard
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Storming the Citadel (10 player): Claim victory in the Gunship Battle
 							["achievementID"] = 4531,	-- Storming the Citadel (10 player)
 							["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
@@ -1558,11 +1572,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(49926),	-- Brazie's Black Book of Secrets
 					},
 				}),
-				n(37217, {			-- Precious
+				n(37217, {	-- Precious
 					i(52019),	-- Precious' Ribbon
 				}),
 				{	-- Fall of the Lich King (10 player): The Plagueworks
@@ -1774,7 +1788,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						36853,	-- Sindragosa
 						36597,	-- The Lich King
 					},
-					["groups"] = {
+					["g"] = {
 						i(49908, {	-- Primordial Saronite
 							["crs"] = {
 								36612,	-- Lord Marrowgar
@@ -1936,12 +1950,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(51920),	-- Boots of the Frozen Seed
 					i(50343),	-- Whispering Fanged Skull
 				})),
-				e(1626, {			-- Icecrown Gunship Battle
+				e(1626, {	-- Icecrown Gunship Battle
 					["crs"] = {
 						36939,	-- High Overlord Saurfang
 						36948,	-- Muradin Bronzebeard
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Heroic: Storming the Citadel (10 player): Claim victory in the Gunship Battle
 							["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
 							["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
@@ -1988,11 +2002,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(49926),	-- Brazie's Black Book of Secrets
 					},
 				}),
-				n(37217, {			-- Precious
+				n(37217, {	-- Precious
 					i(52019),	-- Precious' Ribbon
 				}),
 				{	-- Heroic: The Plagueworks (10 player): The Plagueworks
@@ -2185,7 +2199,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						36853,	-- Sindragosa
 						36597,	-- The Lich King
 					},
-					["groups"] = {
+					["g"] = {
 						i(49908, {	-- Primordial Saronite
 							["crs"] = {
 								36612,	-- Lord Marrowgar
@@ -2359,12 +2373,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(49985),	-- Juggernaut Band
 					i(49990),	-- Ring of Maddening Whispers
 				})),
-				e(1626, {			-- Icecrown Gunship Battle
+				e(1626, {	-- Icecrown Gunship Battle
 					["crs"] = {
 						36939,	-- High Overlord Saurfang
 						36948,	-- Muradin Bronzebeard
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Storming the Citadel (25 player): Claim victory in the Gunship Battle
 							["achievementID"] = 4604,	-- Storming the Citadel (25 player)
 							["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
@@ -2407,11 +2421,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(49926),	-- Brazie's Black Book of Secrets
 					},
 				}),
-				n(37217, {			-- Precious
+				n(37217, {	-- Precious
 					i(52019),	-- Precious' Ribbon
 				}),
 				{	-- Fall of the Lich King (25 player): The Plagueworks
@@ -2420,7 +2434,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				},
 				cr(36626, e(1629, {	-- Festergut
 					{	-- Festergut's Acidic Blood / The Sacred and the Corrupt
-						["itemID"] = 50226,		-- Festergut's Acidic Blood
+						["itemID"] = 50226,	-- Festergut's Acidic Blood
 						["questID"] = 24545,	-- The Sacred and the Corrupt
 						["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 						["description"] = "This can drop from Festergut on 25 man difficulty or higher.",
@@ -2454,7 +2468,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 4614,	-- Dances with Oozes (25 player)
 					},
 					{	-- The Sacred and the Corrupt / Rotface's Acidic Blood
-						["itemID"] = 50231,		-- Rotface's Acidic Blood
+						["itemID"] = 50231,	-- Rotface's Acidic Blood
 						["questID"] = 24545,	-- The Sacred and the Corrupt
 						["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 						["description"] = "This can drop from Rotface on 25 man difficulty or higher.",
@@ -2645,7 +2659,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						36853,	-- Sindragosa
 						36597,	-- The Lich King
 					},
-					["groups"] = {
+					["g"] = {
 						i(49908, {	-- Primordial Saronite
 							["crs"] = {
 								36612,	-- Lord Marrowgar
@@ -2914,12 +2928,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50642),	-- Juggernaut Band
 					i(50644),	-- Ring of Maddening Whispers
 				})),
-				e(1626, {			-- Icecrown Gunship Battle
+				e(1626, {	-- Icecrown Gunship Battle
 					["crs"] = {
 						36939,	-- High Overlord Saurfang
 						36948,	-- Muradin Bronzebeard
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Heroic: Storming the Citadel (25 player): Claim victory in the Gunship Battle
 							["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
 							["criteriaID"] = 3,	-- Claim victory in the Gunship Battle
@@ -2962,11 +2976,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(49926),	-- Brazie's Black Book of Secrets
 					},
 				}),
-				n(37217, {			-- Precious
+				n(37217, {	-- Precious
 					i(52019),	-- Precious' Ribbon
 				}),
 				{	-- Heroic: Fall of the Lich King (25 player): The Plagueworks
@@ -2975,7 +2989,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				},
 				cr(36626, e(1629, {	-- Festergut
 					{	-- The Sacred and the Corrupt / Festergut's Acidic Blood
-						["itemID"] = 50226,		-- Festergut's Acidic Blood
+						["itemID"] = 50226,	-- Festergut's Acidic Blood
 						["questID"] = 24545,	-- The Sacred and the Corrupt
 						["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 						["description"] = "This can drop from Festergut on 25 man difficulty or higher.",
@@ -3003,7 +3017,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 				cr(36627, e(1630, {	-- Rotface
 					{	-- The Sacred and the Corrupt / Rotface's Acidic Blood
-						["itemID"] = 50231,		-- Rotface's Acidic Blood
+						["itemID"] = 50231,	-- Rotface's Acidic Blood
 						["questID"] = 24545,	-- The Sacred and the Corrupt
 						["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
 						["description"] = "This can drop from Rotface on 25 man difficulty or higher.",
