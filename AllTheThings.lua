@@ -6231,8 +6231,20 @@ app.BaseSelfieFilter = {
 			end
 		elseif key == "description" then
 			if t.crs and #t.crs > 0 then
+				local cameraItemID = 122674
+				local cameraItemName = select(2, GetItemInfo(cameraItemID))
+				if not cameraItemName then
+					local retries
+					for retries=0,50 do
+						if not cameraItemName then
+							cameraItemName = select(2, GetItemInfo(cameraItemID))
+						else break end
+						retries = retries + 1
+					end
+					if retries >= 50 then cameraItemName = 'Item #'..cameraItemID end
+				end
 				for i,id in ipairs(t.crs) do
-					return "Take a selfie using your " .. select(2, GetItemInfo(122674)) .. " with |cffff8000" .. (NPCNameFromID[id] or "???")
+					return "Take a selfie using your " .. cameraItemName .. " with |cffff8000" .. (NPCNameFromID[id] or "???")
 					.. "|r" .. (t.maps and (" in |cffff8000" .. (app.GetMapName(t.maps[1]) or "???") .. "|r.") or ".");
 				end
 			end
