@@ -809,6 +809,12 @@ namespace ATT
                 else itemID = -1;
             }
             #endregion
+            #region Utility
+            public static void MarkItemAsReferenced(int itemID)
+            {
+                ITEMS_WITH_REFERENCES[itemID] = true;
+            }
+            #endregion
         }
         #endregion
     }

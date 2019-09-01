@@ -1454,6 +1454,12 @@ namespace ATT
                                     newProvider
                                 };
                             }
+                            // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
+                            if (newProvider[0].ToString() == "i")
+                            {
+                                int itemID = Convert.ToInt32(newProvider[1]);
+                                Items.MarkItemAsReferenced(itemID);
+                            }
                             break;
                         }
                     case "providers":
