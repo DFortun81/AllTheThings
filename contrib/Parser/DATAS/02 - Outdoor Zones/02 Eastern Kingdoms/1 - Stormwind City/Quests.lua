@@ -376,14 +376,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
-				q(335, {	-- A Noble Brew
+				q(335,   {	-- A Noble Brew
 					["provider"] = { "n", 1435 },	-- Zardeth of the Black Claw
 					["coord"] = { 26.4, 78.7, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
-				q(336, {	-- A Noble Brew
+				q(336,   {	-- A Noble Brew
 					["provider"] = { "n", 1435 },	-- Zardeth of the Black Claw
 					["coord"] = { 26.4, 78.7, 84 },
 					["sourceQuest"] = 335,	-- A Noble Brew
@@ -424,10 +424,10 @@ _.Zones =
 					["lvl"] = 90,
 				}),
 				q(27106, {	-- A Villain Unmasked
-					["objectID"] = 205198,	-- Pile of Explosives
 					["coord"] = { 50.4, 42.4, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 84,
+					["provider"] = { "o", 205198 },	-- Pile of Explosives
 					["u"] = 40,
 					["g"] = {
 						un(2, i(63919)),	-- Corruption-Seeking Chestguard
@@ -462,7 +462,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 62,
 				}),
-				q(396, {	-- An Audience with the King
+				q(396,   {	-- An Audience with the King
 					["provider"] = { "n", 1646 },	-- Baros Alexston
 					["coord"] = { 57.6, 47.8, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -486,14 +486,14 @@ _.Zones =
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 20,
 				}),
-				q(325, {	-- Armed and Ready
+				q(325,   {	-- Armed and Ready
 					["provider"] = { "n", 1416 },	-- Grimand Elmore
 					["coord"] = { 59.6, 34.0, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				q(1942, {	-- Astral Knot Garment
+				q(1942,  {	-- Astral Knot Garment
 					["provider"] = { "n", 1309 },	-- Wynne Larson
 					["coord"] = { 41.6, 76.6, 84 },
 					["sourceQuest"] = 1940,	-- Pristine Spider Silk
@@ -526,7 +526,7 @@ _.Zones =
 						i(72042), 	-- Alliance Balloon
 					},
 				}),
-				q(1705, {	-- Burning Blood
+				q(1705,  {	-- Burning Blood
 					["provider"] = { "n", 1416 },	-- Grimand Elmore
 					["coord"] = { 51.6, 12.4, 84 },
 					["sourceQuest"] = 1700,	-- Grimand Elmore
@@ -559,7 +559,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
 				}),
-				q(168, {	-- Collecting Memories
+				q(168,   {	-- Collecting Memories
 					["provider"] = { "n", 656 },	-- Wilder Thistlenettle
 					["coord"] = { 65.2, 21.2, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -631,14 +631,14 @@ _.Zones =
 						i(65482),	-- Staff of the Hallowed
 					},
 				}),
-				q(1271, {	-- Feast at the Blue Recluse
+				q(1271,  {	-- Feast at the Blue Recluse
 					["provider"] = { "n", 1141 },	-- Angus Stern
 					["coord"] = { 49.6, 44.8, 84 },
 					["sourceQuest"] = 1222,	-- Stinky's Escape
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
-				q(1701, {	-- Fire Hardened Mail
+				q(1701,  {	-- Fire Hardened Mail
 					["provider"] = { "n", 5413 },	-- Furen Longbeard
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1702,	-- The Shieldsmith
@@ -647,7 +647,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				q(1782, {	-- Furen's Armor
+				q(1782,  {	-- Furen's Armor
 					["provider"] = { "n", 5413 },	-- Furen Longbeard
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
@@ -684,7 +684,7 @@ _.Zones =
 						i(121761),	-- Skyfire Marine's Vambraces
 					},
 				}),
-				q(1706, {	-- Grimand's Armor
+				q(1706,  {	-- Grimand's Armor
 					["provider"] = { "n", 1416 },	-- Grimand Elmore
 					["coord"] = { 51.6, 12.4, 84 },
 					["sourceQuest"] = 1705,	-- Burning Blood
@@ -696,7 +696,7 @@ _.Zones =
 						un(2, i(6971)),	-- Fire Hardened Coif
 					},
 				}),
-				q(1700, {	-- Grimand Elmore
+				q(1700,  {	-- Grimand Elmore
 					["provider"] = { "n", 5413 },	-- Furen Longbeard
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
@@ -705,13 +705,13 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				q(333, {	-- Harlan Needs a Resupply
+				q(333,   {	-- Harlan Needs a Resupply
 					["provider"] = { "n", 1427 },	-- Harlan Bagley
 					["coord"] = { 62.2, 67.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 				}),
-				q(1939, {	-- High Sorcerer Andromath
+				q(1939,  {	-- High Sorcerer Andromath
 					["provider"] = { "n", 5497 },	-- Jennea Cannon
 					["coord"] = { 38.6, 79.6, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -773,7 +773,7 @@ _.Zones =
 					["races"] = { 24 },	-- Pandaren (neutral)
 					["lvl"] = 5,
 				}),
-				q(1704, {	-- Klockmort Spannerspan
+				q(1704,  {	-- Klockmort Spannerspan
 					["provider"] = { "n", 5413 },	-- Furen Longbeard
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
@@ -805,7 +805,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 98,
 				}),
-				q(1941, {	-- Manaweave Robe
+				q(1941,  {	-- Manaweave Robe
 					["provider"] = { "n", 1309 },	-- Wynne Larson
 					["coord"] = { 41.8, 76.4, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -827,7 +827,7 @@ _.Zones =
 						i(65467),	-- Staff of the Royal Wizard
 					},
 				}),
-				q(1703, {	-- Mathiel
+				q(1703,  {	-- Mathiel
 					["provider"] = { "n", 5413 },	-- Furen Longbeard
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
@@ -836,7 +836,7 @@ _.Zones =
 					["lvl"] = 22,
 					["u"] = 40,
 				}),
-				q(1364, {	-- Mazen's Behest
+				q(1364,  {	-- Mazen's Behest
 					["provider"] = { "n", 5386 },	-- Acolyte Dellis
 					["coord"] = { 51.6, 73.8, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -855,7 +855,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 83,
 				}),
-				q(1861, {	-- Mirror Lake
+				q(1861,  {	-- Mirror Lake
 					["provider"] = { "n", 5497 },	-- Jennea Cannon
 					["coord"] = { 49.6, 86.6, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -886,7 +886,7 @@ _.Zones =
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 50,
 				}),
-				q(167, {	-- Oh Brother...
+				q(167,   {	-- Oh Brother...
 					["provider"] = { "n", 656 },	-- Wilder Thistlenettle
 					["coord"] = { 66.8, 43.8, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -896,7 +896,7 @@ _.Zones =
 						un(2, i(1893)),	-- Miner's Revenge
 					},
 				}),
-				q(6187, {	-- Order Must Be Restored
+				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {
 						{ "n", 1748 },	-- Highlord Bolvar Fordragon
 						{ "n", 29611 },	-- King Varian Wrynn
@@ -911,14 +911,14 @@ _.Zones =
 						un(2, i(16997)),	-- Stormrager
 					},
 				}),
-				q(334, {	-- Package for Thurman
+				q(334,   {	-- Package for Thurman
 					["provider"] = { "n", 1428 },	-- Rema Schneider
 					["coord"] = { 58.0, 67.2, 84 },
 					["sourceQuest"] = 333,	-- Harlan Needs a Resupply
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 				}),
-				q(1940, {	-- Pristine Spider Silk
+				q(1940,  {	-- Pristine Spider Silk
 					["provider"] = { "n", 5694 },	-- High Sorcerer Andromath
 					["coord"] = { 37.6, 81.6, 84 },
 					["sourceQuest"] = 1938,	-- Ur's Treatise on Shadow Magic
@@ -941,7 +941,7 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 90,
 				}),
-				q(1078, {	-- Retrieval for Mauren
+				q(1078,  {	-- Retrieval for Mauren
 					["provider"] = { "n", 4078 },	-- Collin Mauren
 					["coord"] = { 52.8, 86.6, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -987,7 +987,7 @@ _.Zones =
 					["classes"] = { 12 },	-- Demon Hunter
 					["lvl"] = 98,
 				}),
-				q(1798, {	-- Seeking Strahad
+				q(1798,  {	-- Seeking Strahad
 					["provider"] = { "n", 6122 },	-- Gakin the Darkbinder
 					["coord"] = { 39.6, 84.6, 84 },
 					["isBreadcrumb"] = true,
@@ -1015,7 +1015,7 @@ _.Zones =
 						i(65622), 		-- Headcover of the Farseer
 					},
 				}),
-				q(2206, { 	-- Snatch and Grab
+				q(2206,  { 	-- Snatch and Grab
 					["provider"] = { "n", 332 },	-- Master Mathias Shaw
 					["coord"] = { 81.2, 63.2, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -1037,14 +1037,14 @@ _.Zones =
 						i(65621),	-- Horns of Justified Sins
 					},
 				}),
-				q(353, {	-- Stormpike's Delivery
+				q(353,   {	-- Stormpike's Delivery
 					["provider"] = { "n", 1416 },	-- Grimand Elmore
 					["coord"] = { 59.7, 33.7, 84 },
 					["sourceQuest"] = 1097,	-- Elmore's Task
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 				}),
-				q(579, {	-- Stormwind Library
+				q(579,   {	-- Stormwind Library
 					["provider"] = { "n", 2504 },	-- Donyal Tovald
 					["coord"] = { 84.6, 24.2, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -1107,7 +1107,7 @@ _.Zones =
 						i(65624),	-- SI:7 Special Issue Facemask
 					},				
 				}),
-				q(7905, {	-- The Darkmoon Faire
+				q(7905,  {	-- The Darkmoon Faire
 					["provider"] = { "n", 54334 },	-- Darkmoon Faire Mystic Mage
 					["coord"] = { 62.2, 73.0, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -1169,7 +1169,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
 				}),			
-				q(7782, {	-- The Lord of Blackrock
+				q(7782,  {	-- The Lord of Blackrock
 					["provider"] = { "n", 107574 },	-- Anduin Wrynn
 					["coord"] = { 85.6, 31.8, 84 },
 					["sourceQuest"] = 7781,	-- The Lord of Blackrock
@@ -1204,7 +1204,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
-				q(543, {	-- The Perenolde Tiara
+				q(543,   {	-- The Perenolde Tiara
 					["provider"] = { "n", 2285 },	-- Count Remington Ridgewell 
 					["coord"] = { 81.4, 34.2, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -1221,7 +1221,7 @@ _.Zones =
 						i(65620),	-- Hood of the Royal Wizard
 					},
 				}),
-				q(1790, {	-- The Symbol of Life
+				q(1790,  {	-- The Symbol of Life
 					["provider"] = { "n", 6171 },	-- Duthorian Rall
 					["coord"] = { 51.0, 47.6, 84 },
 					["races"] = { 1 },	-- Human
@@ -1306,7 +1306,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 84,
 				}),
-				q(1938, {	-- Ur's Treatise on Shadow Magic
+				q(1938,  {	-- Ur's Treatise on Shadow Magic
 					["provider"] = { "n", 5694 },	-- High Sorcerer Andromath
 					["coord"] = { 37.6, 81.6, 84 },
 					["sourceQuest"] = 1939,	-- High Sorcerer Andromath
@@ -1328,7 +1328,7 @@ _.Zones =
 						i(65646),	-- Headguard of the Order
 					},
 				}),
-				q(332, {	-- Wine Shop Advert
+				q(332,   {	-- Wine Shop Advert
 					["provider"] = { "n", 1432 },	-- Renato Gallina
 					["coord"] = { 63.8, 73.4, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -1342,7 +1342,7 @@ _.Zones =
 					["lvl"] = 110,
 					["u"] = 40,
 				}),
-				q(1698, {	-- Yorus Barleybrew
+				q(1698,  {	-- Yorus Barleybrew
 					["provider"] = { "n", 5479 },	-- Wu Shen
 					["coord"] = { 78.8, 45.4, 84 },
 					["races"] = exclude(11, ALLIANCE_ONLY),	-- All alliance races exception Draenei
@@ -1350,7 +1350,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				q(397, {	-- You Have Served Us Well
+				q(397,   {	-- You Have Served Us Well
 					["provider"] = { "n", 1435 },	-- Zardeth of the Black Claw
 					["coord"] = { 26.4, 78.7, 84 },
 					["sourceQuest"] = 336,	-- A Noble Brew

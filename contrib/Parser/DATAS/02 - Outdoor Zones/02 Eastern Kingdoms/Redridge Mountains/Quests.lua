@@ -6,20 +6,6 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(49, {	-- Redridge Mountains
 			n(-17, {	-- Quests
-				ach(4902, {	-- Redridge Mountain Quests
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(1, {	-- The Gnoll Offensive
-							["sourceQuest"] = 26545,	-- Yowler Must Die!
-						}),
-						crit(2, {	-- Keeshan's Raiders
-							["sourceQuest"] = 26607,	-- They Drew First Blood
-						}),
-						crit(3, {	-- First Blood
-							["sourceQuest"] = 26726,	-- Triumphant Return
-						}),
-					},
-				}),
 				q(26708, {	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 					["provider"] = { "n", 43733 },	-- Colonel Troteman
 					["coord"] = { 77.2, 65.9, 49 },
@@ -95,16 +81,6 @@ _.Zones =
 						i(60713),	-- Redridge Legguards
 					},
 				}),
-				i(58898, {	-- Dirt-Stained Scroll
-					["questID"] = 26519,	-- He Who Controls the Ettins
-					["races"] = ALLIANCE_ONLY,	-- Alliance Only Races
-					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
-					["crs"] = {
-						445,	-- Redridge Alpha
-						446,	-- Redridge Basher
-						430,	-- Redridge Mystic
-					},
-				}),
 				q(116,   {	-- Dry Times
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -112,26 +88,20 @@ _.Zones =
 						un(2, i(1270)),	-- Finely Woven Cloak
 					},
 				}),
-				o(204351, {	-- Ettin Control Orb
-					["model"] = 203892,
-					["coord"] = { 17.8, 18.6, 49 },
-					["g"] = {
-						q(26520, {	-- Saving Foreman Oslow
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26519,	-- He Who Controls the Ettins
-							["g"] = {
-								i(60701),	-- Leverage Bracers
-								i(131543),	-- Leverage Wriststraps
-								i(60700),	-- Solomon's Gavel
-								i(60702),	-- Sword of the Falling Sky
-							},							
-						}),
-					},
-				}),
 				q(26506, {	-- Franks and Beans
 					["provider"] = { "n", 379 },	-- Darchy Parker
 					["coord"] = { 15.6, 65.3, 49 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(26519, {	-- He Who Controls the Ettins
+					["races"] = ALLIANCE_ONLY,	-- Alliance Only Races
+					["provider"] = { "i", 58898 },	-- Dirt-Stained Scroll
+					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
+					["crs"] = {
+						445,	-- Redridge Alpha
+						446,	-- Redridge Basher
+						430,	-- Redridge Mystic
+					},
 				}),
 				q(26728, {	-- Hero's Call: Duskwood!
 					["provider"] = { "n", 900 },	-- Bailiff Conacher
@@ -225,9 +195,18 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(3431)),	-- Bone-Studded Leather 
+						un(2, i(3431)),	-- Bone-Studded Leather
 						un(2, i(1275)),	-- Deputy Chain Coat
 						un(2, i(3555)),	-- Robe of Solomon
+					},
+				}),
+				q(249,   {	-- Morganth
+					["u"] = 40,
+					["model"] = 189908,
+					["provider"] = { "o", 31 },	-- Old Lion Statue
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(5274)),	-- Rose Mantle
 					},
 				}),
 				q(150,   {	-- Murloc Poachers
@@ -241,20 +220,6 @@ _.Zones =
 					["provider"] = { "n", 8965 },	-- Shawn
 					["coord"] = { 28.3, 48.8, 49 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				o(31, {	-- Old Lion Statue
-					["model"] = 189908,
-					["u"] = 43,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						q(249, {	-- Morganth
-							["u"] = 40,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								un(2, i(5274)),	-- Rose Mantle 
-							},
-						}),
-					},
 				}),
 				q(26505, {	-- Parker's Report
 					["provider"] = { "n", 464 },	-- Watch Captain Parker
@@ -290,6 +255,19 @@ _.Zones =
 					["coord"] = { 28.3, 17.0, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26562,	-- And Last But Not Least... Danforth
+				}),
+				q(26520, {	-- Saving Foreman Oslow
+					["model"] = 203892,
+					["coord"] = { 17.8, 18.6, 49 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 204351 },	-- Ettin Control Orb
+					["sourceQuest"] = 26519,	-- He Who Controls the Ettins
+					["g"] = {
+						i(60701),	-- Leverage Bracers
+						i(131543),	-- Leverage Wriststraps
+						i(60700),	-- Solomon's Gavel
+						i(60702),	-- Sword of the Falling Sky
+					},
 				}),
 				q(26692, {	-- Shadowhide Extinction
 					["provider"] = { "n", 43607 },	-- Danforth
@@ -366,7 +344,7 @@ _.Zones =
 						i(60720),	-- Treacherous Treads
 					},
 				}),
-				q(1699, {	-- The Rethban Gauntlet
+				q(1699,  {	-- The Rethban Gauntlet
 					["provider"] = { "n", 6166 },	-- Yorus Barleybrew
 					["coord"] = { 26.8, 44.8, 49 },
 					["sourceQuests"] = {
@@ -438,7 +416,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6092)),	-- Black Whelp Boots 
+						un(2, i(6092)),	-- Black Whelp Boots
 						un(2, i(1302)),	-- Black Whelp Gloves
 					},
 				}),
@@ -448,19 +426,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26639,	-- Point of Contact: Brubaker
 				}),
-				o(204344, {	-- Wanted!
+				q(26504, {	-- Wanted: Redridge Gnolls
+					["provider"] = { "o", 204344 },	-- Wanted!
 					["model"] = 198409,
 					["coord"] = { 16.0, 64.6, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						q(26504, {	-- Wanted: Redridge Gnolls
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(60684),	-- Royal Guard Breastplate
-								i(60683),	-- Tower Watch Bracers
-								i(60682),	-- Watch Captain's Cloak
-							},
-						}),
+						i(60684),	-- Royal Guard Breastplate
+						i(60683),	-- Tower Watch Bracers
+						i(60682),	-- Watch Captain's Cloak
 					},
 				}),
 				q(26510, {	-- We Must Prepare!

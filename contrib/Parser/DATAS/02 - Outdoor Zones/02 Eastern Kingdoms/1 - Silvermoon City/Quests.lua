@@ -22,13 +22,13 @@ _.Zones =
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
 				}),
-				q(9621, {	-- Envoy to the Horde
+				q(9621,  {	-- Envoy to the Horde
 					["provider"] = { "n", 16802 },	-- Lor'themar Theron
 					["coords"] = { 54.0, 20.4, 110 },
 					["sourceQuest"] = 9328,	-- Hero of the Sin'dorei
 					["races"] = { 10 },	-- Blood Elf
 				}),
-				q(9812, {	-- Envoy to the Horde
+				q(9812,  {	-- Envoy to the Horde
 					["provider"] = { "n", 16802 },	-- Lor'themar Theron
 					["coords"] = { 54.0, 20.4, 110 },
 					["sourceQuest"] = 9811,	-- Friend of the Sin'dorei
@@ -174,7 +174,7 @@ _.Zones =
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
 				}),
-				q(9134, {	-- Skymistress Gloaming
+				q(9134,  {	-- Skymistress Gloaming
 					["provider"] = { "n", 16191 },	-- Sathren Azuredawn
 					["coord"] = { 53.9, 71.0, 110 },
 					["sourceQuest"] = 9133,	-- Fly to Silvermoon City

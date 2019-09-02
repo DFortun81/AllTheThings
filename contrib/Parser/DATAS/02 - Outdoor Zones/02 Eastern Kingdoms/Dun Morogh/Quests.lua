@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(27, {	-- Dun Morogh
 			n(-17,  {	-- Quests
-				q(319, {	-- A Favor for Evershine
+				q(319,   {	-- A Favor for Evershine
 					["u"] = 40,
 					["provider"] = { "n", 1374 },	-- Rejold Barleybrew
 					["races"] = ALLIANCE_ONLY,
@@ -22,10 +22,9 @@ _.Zones =
 					},
 				}),
 				q(26855, {	-- A Pilot's Revenge
-				--	["objectID"] = 2059,	-- A Dwarven Corpse
 					["coord"] = { 87.6, 50.2, 27 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\INV_Misc_Bone_DwarfSkull_01",
+					["provider"] = { "o", 2059 },	-- A Dwarven Corpse
 					["g"] = {
 						i(57560),	-- Mangy Claw Mitts
 						i(57566),	-- Siege Engineer's Belt
@@ -50,7 +49,7 @@ _.Zones =
 						i(2889),	-- Recipe: Beer Basted Boar Ribs
 					},
 				}),	
-				q(7674, {	-- Black Ram Exchange
+				q(7674,  {	-- Black Ram Exchange
 					["u"] = 40,
 					["provider"] = { "n", 1261 },	-- Veron Amberstill
 					["races"] = ALLIANCE_ONLY,
@@ -92,7 +91,7 @@ _.Zones =
 					["sourceQuest"] = 26102,	-- Grimaxe's Demise
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(308, {	-- Distracting Jarven
+				q(308,   {	-- Distracting Jarven
 					["u"] = 40,
 					["provider"] = { "n", 1373 },	-- Jarven Thunderbrew
 					["races"] = ALLIANCE_ONLY,
@@ -191,7 +190,7 @@ _.Zones =
 						25792,	-- Pushing Forward
 					},
 				}),
-				q(6387, {	-- Honor Students
+				q(6387,  {	-- Honor Students
 					["provider"] = { "n", 1699 },	-- Gremlock Pilsnor
 					["coord"] = { 54.7, 50.5, 27 },
 					["races"] = {
@@ -199,7 +198,7 @@ _.Zones =
 						7,	-- Gnome
 					},
 				}),
-				q(8149, {	-- Honoring a Hero
+				q(8149,  {	-- Honoring a Hero
 					["u"] = 25,	-- Harvest Festival
 					["provider"] = { "n", 15011 },	-- Wagner Hammerstrike
 					["races"] = ALLIANCE_ONLY,
@@ -236,7 +235,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = { 3 },	-- dwarf
 				}),
-				q(412, {	-- Operation Recombobulation
+				q(412,   {	-- Operation Recombobulation
 					["provider"] = { "n", 1269 },	-- Razzle Sprysprocket
 					["coord"] = { 53.2, 51.9, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -311,12 +310,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 				}),
-				q(320, {	-- Return to Bellowfiz
+				q(320,   {	-- Return to Bellowfiz
 					["u"] = 40,
 					["provider"] = { "n", 1374 },	-- Rejold Barleybrew
 					["races"] = ALLIANCE_ONLY,
 				}),
-				o(270, {	-- Unguarded Thunder Ale Barrel
+				o(270,   {	-- Unguarded Thunder Ale Barrel
 					["model"] = 199563,
 					["u"] = 43,
 					["g"] = {
@@ -326,7 +325,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(6391, {	-- Ride to Ironforge
+				q(6391,  {	-- Ride to Ironforge
 					["provider"] = { "n", 43701 },	-- Brolan Galebeard
 					["coord"] = { 53.8, 52.6, 27 },
 					["sourceQuest"] = 6387,	-- Honor Students
@@ -342,7 +341,7 @@ _.Zones =
 						un(2, i(3565)),	-- Beerstained Gloves
 					},
 				}),
-				q(317, {	-- Stocking Jetsteam
+				q(317,   {	-- Stocking Jetsteam
 					["u"] = 40,
 					["provider"] = { "n", 1378 },	-- Pilot Bellowfiz
 					["races"] = { 3, 7 },	-- Dwarf, Gnome
@@ -359,7 +358,7 @@ _.Zones =
 					["sourceQuest"] = 26085,	-- Rallying the Defenders
 					["races"] = ALLIANCE_ONLY,	
 				}),
-				q(315, {	-- The Perfect Stout
+				q(315,   {	-- The Perfect Stout
 					["provider"] = { "n", 1374 },	-- Rejold Barleybrew
 					["coord"] = { 54.1, 51.1, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -382,7 +381,7 @@ _.Zones =
 						i(131209),	-- Stonehallow's Pressed Cuffs
 					},
 				}),	
-				q(291, {	-- The Reports
+				q(291,   {	-- The Reports
 					["u"] = 40,
 					["provider"] = { "n", 1252 },	-- Senir Whitebeard
 					["races"] = ALLIANCE_ONLY,
@@ -399,12 +398,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 				}),
-				q(432, {	-- Those Blasted Troggs!
+				q(432,   {	-- Those Blasted Troggs!
 					["provider"] = { "n", 1254 },	-- Foreman Stonebrow
 					["coord"] = { 76.3, 54.6, 27 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(400, {	-- Tools for Steelgrill
+				q(400,   {	-- Tools for Steelgrill
 					["u"] = 40,
 					["provider"] = { "n", 1872 },	-- Tharek Blackstone
 					["races"] = ALLIANCE_ONLY,

@@ -277,13 +277,13 @@ _.Zones =
 						["classes"] = { 2 },	-- Paladin
 						["sourceQuest"] = 28762,	-- Beating Them Back!
 					}),
-					q(54, {	-- Report to Goldshire
+					q(54,    {	-- Report to Goldshire
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26390,	-- Ending the Invasion
 					}),
-					q(346, {	-- Return to Kristoff
+					q(346,   {	-- Return to Kristoff
 						["u"] = 40,
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["races"] = ALLIANCE_ONLY,

@@ -313,10 +313,9 @@ _.Zones =
 					},
 				}),
 				q(27794, {	-- Return to Blam (A)
-					--["objectID"] = 206374,	-- Trove of the Watchers
-					["icon"] = "Interface\\Icons\\Buff_FelTreasures",
 					["coord"] = { 50.2, 53.2, 15 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 206374 },	-- Trove of the Watchers
 					["sourceQuests"] = { 27912 },	-- The Titans' Trove
 					["g"] = {
 						i(63176),	-- Well Cushioned Boots
@@ -326,10 +325,9 @@ _.Zones =
 					},
 				}),
 				q(27888, {	-- Return to Blam (H)
-					--["objectID"] = 206374,	-- Trove of the Watchers
-					["icon"] = "Interface\\Icons\\Buff_FelTreasures",
 					["coord"] = { 50.2, 53.2, 15 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 206374 },	-- Trove of the Watchers
 					["sourceQuests"] = { 27913 },	-- The Titans' Trove
 					["g"] = {
 						i(63179),	-- Well Cushioned Boots
@@ -485,17 +483,15 @@ _.Zones =
 					},
 				}),
 				q(27709, {	-- The Sentinel's Game (A)
-					--["objectID"] = 206336,	-- Marble Slab
-					["icon"] = "Interface\\Icons\\INV_Misc_StoneTablet_01",
 					["coord"] = { 47.9, 50.9, 15 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 206336 },	-- Marble Slab
 					["sourceQuests"] = { 27797 },	-- The Sentinel's Pawn
 				}),
 				q(27886, {	-- The Sentinel's Game (H)
-					--["objectID"] = 206336,	-- Marble Slab
-					["icon"] = "Interface\\Icons\\INV_Misc_StoneTablet_01",
 					["coord"] = { 47.9, 50.9, 15 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 206336 },	-- Marble Slab
 					["sourceQuests"] = { 27884 },	-- The Sentinel's Pawn
 				}),
 				q(27797, {	-- The Sentinel's Pawn (A)
@@ -546,17 +542,15 @@ _.Zones =
 					["sourceQuests"] = { 27769 },	-- Rhea Revealed
 				}),
 				q(27693, {	-- The Warden's Game (A)
-					--["objectID"] = 206335,	-- Stone Slab
-					["icon"] = "Interface\\Icons\\INV_Misc_StoneTablet_01",
 					["coord"] = { 50.2, 54.2, 15 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 206335 },	-- Stone Slab
 					["sourceQuests"] = { 27796 },	-- The Warden's Pawn
 				}),
 				q(27885, {	-- The Warden's Game (H)
-					--["objectID"] = 206335,	-- Stone Slab
-					["icon"] = "Interface\\Icons\\INV_Misc_StoneTablet_01",
 					["coord"] = { 50.2, 54.2, 15 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 206335 },	-- Stone Slab
 					["sourceQuests"] = { 27883 },	-- The Warden's Pawn
 				}),
 				q(27796, {	-- The Warden's Pawn (A)

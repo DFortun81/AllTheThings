@@ -6,38 +6,13 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(47, {	-- Duskwood
 			n(-17, {	-- Quests
-				ach(12430, {	-- Duskwood Quests
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(1, {	-- The Legend of Stalvan
-							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
-						}),
-						crit(2, {	-- Morbent Fel
-							["sourceQuest"] = 26754,	-- Morbent's Bane
-						}),
-						crit(3, {	-- A Hermit's Errand
-							["sourceQuest"] = 26727,	-- The Embalmer's Revenge
-						}),
-						crit(4, {	-- Mor'ladim
-							["sourceQuest"] = 26797,	-- A Daughter's Love
-						}),
-						crit(5, {	-- Citizens of Darkshire
-							["sourceQuests"] = {
-								26686,	-- Bones That Walk
-								26623,	-- Dusky Crab Cakes
-								26620,	-- Seasoned Wolf Kabobs
-								26691,	-- Worgen in the Woods
-							},
-						}),
-					},
-				}),
 				q(26720, {	-- A Curse We Cannot Lift
 					["provider"] = { "n", 43730 },	-- Oliver Harris
 					["coord"] = { 18.3, 57.6, 47 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26719,	-- Delivery to Master Harris
 				}),
-				q(231, {	-- A Daughter's Love
+				q(231,   {	-- A Daughter's Love
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -99,7 +74,7 @@ _.Zones =
 						i(131581),	-- Night Watcher's Mail
 					},
 				}),
-				q(253, {	-- Bride of the Embalmer
+				q(253,   {	-- Bride of the Embalmer
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -107,15 +82,12 @@ _.Zones =
 						un(2, i(3560)),	-- Mantle of Honor
 					},
 				}),
-				o(204824, {	-- Lightforged Arch
+				q(26722, {	-- Buried Below
 					["model"] = 189528,
 					["coord"] = { 20.3, 27.4, 47 },
-					["g"] = {
-						q(26722, {	-- Buried Below
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26753,	-- The Halls of the Dead
-						}),
-					},
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 204824 },	-- Lightforged Arch
+					["sourceQuest"] = 26753,	-- The Halls of the Dead
 				}),
 				q(43382, {	-- Champion: Natalie Seline
 					["provider"] = { "n", 110684 },	-- Natalie Seline
@@ -173,7 +145,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26717,	-- The Yorgen Worgen
 				}),
-				q(245, {	-- [DEPRECATED]Eight-Legged Menaces
+				q(245,   {	-- [DEPRECATED]Eight-Legged Menaces
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -265,23 +237,7 @@ _.Zones =
 						i(131579),	-- Retired Linked Pants
 					},
 				}),
-				o(204825, {	-- Lightforged Crest
-					["model"] = 189528,
-					["coord"] = { 18.0, 25.3, 47 },
-					["g"] = {
-						q(26754, {	-- Morbent's Bane
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26722,	-- Buried Below
-							["g"] = {
-								i(60938),	-- Yorgen's Boon
-								i(60939),	-- Ashen Gloves
-								i(60940),	-- Felbane Belt
-								i(131596),	-- Yorgen's Mitts
-							},
-						}),
-					},
-				}),
-				q(181, {	-- Look to the Stars
+				q(181,   {	-- Look to the Stars
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -314,7 +270,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26794,	-- Morgan Ladimore
 				}),
-				q(55, {	-- Morbent Fel
+				q(55,    {	-- Morbent Fel
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -322,6 +278,19 @@ _.Zones =
 						un(2, i(1282)),	-- Sparkmetal Coif
 						un(2, i(7344)),	-- Torch of Holy Flame
 						un(2, i(2953)),	-- Watch Master's Cloak
+					},
+				}),
+				q(26754, {	-- Morbent's Bane
+					["model"] = 189528,
+					["coord"] = { 18.0, 25.3, 47 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 204825 },	-- Lightforged Crest
+					["sourceQuest"] = 26722,	-- Buried Below
+					["g"] = {
+						i(60938),	-- Yorgen's Boon
+						i(60939),	-- Ashen Gloves
+						i(60940),	-- Felbane Belt
+						i(131596),	-- Yorgen's Mitts
 					},
 				}),
 				q(26794, {	-- Morgan Ladimore
@@ -371,7 +340,7 @@ _.Zones =
 					["classes"] = { 5 },	-- Priest
 					["sourceQuest"] = 43392,	-- Into the Void
 				}),
-				q(1383, {	-- Nothing But The Truth
+				q(1383,  {	-- Nothing But The Truth
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -419,7 +388,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26627,	-- The Hermit
 				}),
-				q(1042, {	-- The Carevin Family
+				q(1042,  {	-- The Carevin Family
 					["provider"] = { "n", 267 },	-- Clerk Daltry
 					["coord"] = { 72.6, 46.8, 47 },
 					["sourceQuest"] = 1041,	-- The Caravan Road
@@ -456,7 +425,7 @@ _.Zones =
 						i(60907),	-- Sparkmetal Bracers
 					},
 				}),
-				q(98, {	-- The Legend of Stalvan
+				q(98,    {	-- The Legend of Stalvan
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -464,7 +433,7 @@ _.Zones =
 						un(2, i(2043)),	-- Ring of Forlorn Spirits
 					},
 				}),
-				q(58, {	-- The Night Watch
+				q(58,    {	-- The Night Watch
 					["u"] = 40,
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 					["races"] = ALLIANCE_ONLY,
@@ -474,7 +443,7 @@ _.Zones =
 						un(2, i(3605)),	-- Quiver of the Night Watch
 					},
 				}),
-				q(1043, {	-- The Scythe of Elune
+				q(1043,  {	-- The Scythe of Elune
 					["provider"] = { "n", 661 },	-- Jonathan Carevin
 					["coord"] = { 75.2, 48.8, 47 },
 					["sourceQuest"] = 1042,	-- The Carevin Family
@@ -494,15 +463,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26670,	-- Roland's Doom
 				}),
-				o(204817, {	-- Lightforged Rod
+				q(26753, {	-- The Halls of the Dead
 					["model"] = 189528,
 					["coord"] = { 23.4, 35.4, 47 },
-					["g"] = {
-						q(26753, {	-- The Halls of the Dead
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26725,	-- Guided by the Light
-						}),
-					},
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 204817 },	-- Lightforged Rod
+					["sourceQuest"] = 26725,	-- Guided by the Light
 				}),
 				q(26627, {	-- The Hermit
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke
@@ -558,14 +524,11 @@ _.Zones =
 						i(156974),	-- Archivist's Walking Stick
 					},
 				}),
-				o(61, {	-- A Weathered Grave
+				q(26793, {	-- The Weathered Grave
 					["model"] = 189541,
 					["coord"] = { 17.7, 29.1, 47 },
-					["g"] = {
-						q(26793, {	-- The Weathered Grave
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 61 },	-- A Weathered Grave
 				}),
 				q(26717, {	-- The Yorgen Worgen
 					["provider"] = { "n", 43738 },	-- Apprentice Fess
@@ -584,7 +547,7 @@ _.Zones =
 					["coord"] = { 45.1, 67.0, 47 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(101, {	-- The Totem of Infliction
+				q(101,   {	-- The Totem of Infliction
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -602,7 +565,7 @@ _.Zones =
 						i(131564),	-- Night Watch Hauberk
 					},
 				}),
-				q(223, {	-- Worgen in the Woods
+				q(223,   {	-- Worgen in the Woods
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

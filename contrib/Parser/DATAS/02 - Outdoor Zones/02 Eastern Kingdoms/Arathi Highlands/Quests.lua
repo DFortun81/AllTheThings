@@ -35,9 +35,8 @@ _.Zones =
 					},
 				}),
 				q(26042, {	-- Breaking the Keystone
-					--["objectID"] = 2702,	-- Stone of Inner Binding
-					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
 					["coord"] = { 30.0, 59.0, 14 },
+					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26041,	-- Stones of Binding
 				}),
 				q(679,   {	-- Call to Arms
@@ -221,17 +220,15 @@ _.Zones =
 					},
 				}),
 				q(26346, {	-- Myzrael's Tale (A)
-					--["objectID"] = 2702,	-- Stone of Inner Binding
-					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
 					["coord"] = { 30.0, 58.9, 14 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26042,	-- Breaking the Keystone
 				}),
 				q(26911, {	-- Myzrael's Tale (H)
-					--["objectID"] = 2702,	-- Stone of Inner Binding
-					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
 					["coord"] = { 30.0, 58.9, 14 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26042,	-- Breaking the Keystone
 				}),
 				q(26093, {	-- Northfold Manor
@@ -305,9 +302,8 @@ _.Zones =
 					["sourceQuest"] = 26051,	-- Sunken Treasure
 				}),
 				q(26041, {	-- Stones of Binding
-					--["objectID"] = 2701,	-- Iridescent Shards
-					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
 					["coord"] = { 79.8, 31.6, 14 },
+					["provider"] = { "o", 2701 },	-- Iridescent Shards
 					["sourceQuests"] = { 26039 },	-- The Princess Trapped
 				}),
 				q(682,   {	-- Stromgarde Badges
@@ -387,9 +383,8 @@ _.Zones =
 					["classes"] = { 6 },	-- Death Knight
 				}),
 				q(26039, {	-- The Princess Trapped
-					--["objectID"] = 138492,	-- Shards of Myzrael
-					["icon"] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
 					["coord"] = { 57.2, 34.5, 14 },
+					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 					["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
 				}),
 				q(26049, {	-- The Princess Unleashed (A)
@@ -518,10 +513,9 @@ _.Zones =
 					},
 				}),
 				q(26024, {	-- Wanted! Marez Cowl
-					--["objectID"] = 2713,	-- Wanted Board
-					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 					["coord"] = { 40.1, 49.0, 14 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 2713 },	-- Wanted Board
 					["g"] = {
 						i(59182),	-- Syndicate Dagger
 						i(59183),	-- Silenced Rifle
@@ -539,10 +533,9 @@ _.Zones =
 					},
 				}),
 				q(26079, {	-- Wanted! Otto and Falconcrest
-					--["objectID"] = 2713,	-- Wanted Board
-					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 					["coord"] = { 40.1, 49.0, 14 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 2713 },	-- Wanted Board
 					["g"] = {
 						i(59174),	-- Dustfall Bracers
 						i(59175),	-- Sandals of Sorrow

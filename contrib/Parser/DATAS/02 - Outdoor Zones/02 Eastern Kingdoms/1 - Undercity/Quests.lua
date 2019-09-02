@@ -40,14 +40,14 @@ _.Zones =
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 20,
 				}),
-				q(3564, {	-- Andron's Payment to Jediga
+				q(3564,  {	-- Andron's Payment to Jediga
 					["provider"] = { "n", 6522 },	-- Andron Gant
 					["coord"] = { 54.8, 76.3, 90 },
 					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 				}),
-				q(6521, {	-- An Unholy Alliance
+				q(6521,  {	-- An Unholy Alliance
 						["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 						["coord"] = { 56.1, 92.1, 90 },
 						["races"] = HORDE_ONLY,
@@ -58,7 +58,7 @@ _.Zones =
 							un(2, i(17043)),	-- Zealot's Robe
 						},
 					}),
-				q(1847, {	-- Brutal Legguards
+				q(1847,  {	-- Brutal Legguards
 					["provider"] = { "n", 6411 },	-- Velora Nitely
 					["coord"] = { 62.6,39.4, 90 },
 					["sourceQuest"] = 1846,	-- Dragonmaw Shinbones
@@ -90,7 +90,7 @@ _.Zones =
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
 				}),
-				q(1846, {	-- Dragonmaw Shinbones
+				q(1846,  {	-- Dragonmaw Shinbones
 					["provider"] = { "n", 6411 },	-- Velora Nitely
 					["coord"] = { 62.6,39.4, 90 },
 					["sourceQuest"] = 1841,	-- Velora Nitely and the Brutal Legguards
@@ -99,7 +99,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				q(515, {	-- Elixir of Agony
+				q(515,   {	-- Elixir of Agony
 					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
 					["coord"] = { 48.6, 69.6, 90 },
 					["races"] = HORDE_ONLY,
@@ -115,7 +115,7 @@ _.Zones =
 					["coord"] = { 57.8, 91.6, 90 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(1394, {	-- Final Passage
+				q(1394,  {	-- Final Passage
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
 					["coord"] = { 57.6, 65.0, 90 },
 					["sourceQuest"] = 6628,	-- Test of Lore
@@ -138,7 +138,7 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 20,
 				}),
-				q(737, {	-- Forbidden Knowledge
+				q(737,   {	-- Forbidden Knowledge
 					["provider"] = { "n", 2934 },	-- Keeper Bel'dugur
 					["coord"] = { 53.8, 54.4, 90 },
 					["sourceQuest"] = 736,	-- The Star, the Hand and the Heart
@@ -164,7 +164,7 @@ _.Zones =
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 20,
 				}),
-				q(1048, {	-- Into the Scarlet Monastery
+				q(1048,  {	-- Into the Scarlet Monastery
 					["provider"] = { "n", 2425 },	-- Varimathras
 					["coord"] = { 56.3, 92.2, 90 },
 					["races"] = HORDE_ONLY,
@@ -292,19 +292,19 @@ _.Zones =
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 50,
 				}),
-				q(9626, {	-- Meeting the Orcs
+				q(9626,  {	-- Meeting the Orcs
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
 					["coords"] = { 57.8, 91.6, 90 },
 					["sourceQuest"] = 9621,	-- Envoy to the Horde
 					["races"] = { 10 },	-- Blood Elf
 				}),
-				q(9813, {	-- Meeting the Orcs
+				q(9813,  {	-- Meeting the Orcs
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
 					["coords"] = { 57.8, 91.6, 90 },
 					["sourceQuest"] = 9812,	-- Envoy to the Horde
 					["races"] = HORDE_ONLY,
 				}),
-				q(4642, {	-- Melding of Influences
+				q(4642,  {	-- Melding of Influences
 					["provider"] = { "n", 10136 },	-- Chemist Fuely
 					["coord"] = { 47.5, 73.3, 90 },
 					["races"] = HORDE_ONLY,
@@ -315,7 +315,7 @@ _.Zones =
 						un(2, i(15703)),	-- Chemist's Smock
 					},
 				}),
-				q(6322, {	-- Michael Garrett
+				q(6322,  {	-- Michael Garrett
 					["provider"] = { "n", 4556 },	-- Gordon Wendham
 					["coords"] = { 61.8, 42.0, 90 },
 					["sourceQuest"] = 6323,	-- Ride to the Undercity
@@ -340,7 +340,7 @@ _.Zones =
 						i(122338),	-- Ancient Heirloom Armor Casing
 					},
 				}),
-				q(8273, {	-- Oran's Gratitude
+				q(8273,  {	-- Oran's Gratitude
 					["provider"] = { "n", 7825 },	-- Oran Snakewrithe
 					["coord"] = { 73.1, 32.8, 90 },
 					["races"] = HORDE_ONLY,
@@ -351,13 +351,13 @@ _.Zones =
 						un(2, i(20643)),	-- Undercity Reservist's Cap
 					},
 				}),
-				q(6324, {	-- Return to Morris
+				q(6324,  {	-- Return to Morris
 					["provider"] = { "n", 4551 },	-- Michael Garrett
 					["coords"] = { 63.0, 48.2, 90 },
 					["sourceQuest"] = 6322,	-- Michael Garrett
 					["races"] = { 5 },	-- Undead
 				}),			
-				q(1358, {	-- Sample for Helbrim
+				q(1358,  {	-- Sample for Helbrim
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 					["coord"] = { 50.1, 68.0, 90 },
 					["races"] = HORDE_ONLY,
@@ -392,7 +392,7 @@ _.Zones =
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
 				}),
-				q(1962, {	-- Spellfire Robes
+				q(1962,  {	-- Spellfire Robes
 					["provider"] = { "n", 4576 },	-- Josef Gregorian
 					["coord"] = { 70.8, 30.7, 90 },
 					["races"] = HORDE_ONLY,
@@ -403,7 +403,7 @@ _.Zones =
 						un(2, i(7510)),	-- Lesser Spellfire Robes
 					},
 				}),
-				q(1160, {	-- Test of Lore	
+				q(1160,  {	-- Test of Lore	
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
 					["coord"] = { 57.6, 65.0, 90 },
 					["sourceQuest"] = 1159,	-- Test of Lore
@@ -411,7 +411,7 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
-				q(6628, {	-- Test of Lore	
+				q(6628,  {	-- Test of Lore	
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
 					["coord"] = { 57.6, 65.0, 90 },
 					["sourceQuest"] = 1160,	-- Test of Lore
@@ -419,7 +419,7 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
-				q(1882, {	-- The Balnir Farmstead
+				q(1882,  {	-- The Balnir Farmstead
 					["provider"] = { "n", 4568 },	-- Anastasia Hartwell
 					["coord"] = { 85.1, 10.0, 90 },
 					["races"] = HORDE_ONLY,
@@ -471,7 +471,7 @@ _.Zones =
 						recipe(192804),	-- Steamy Romance Novel Kit
 					},
 				}),
-				q(5725, {	-- The Power to Destroy
+				q(5725,  {	-- The Power to Destroy
 					["provider"] = { "n", 2425 },	-- Varimathras
 					["coord"] = { 56.3, 92.2, 90 },
 					["races"] = HORDE_ONLY,
@@ -511,7 +511,7 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 20,
 				}),
-				q(736, {	-- The Star, the Hand and the Heart
+				q(736,   {	-- The Star, the Hand and the Heart
 					["provider"] = { "n", 2934 },	-- Keeper Bel'dugur
 					["coord"] = { 53.8, 54.4, 90 },
 					["sourceQuest"] = 728,	-- To the Undercity for Yagyin's Digest
@@ -526,7 +526,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 100,
 				}),	
-				q(1164, {	-- To Steal From Thieves
+				q(1164,  {	-- To Steal From Thieves
 					["provider"] = { "n", 4486 },	-- Genavie Callow
 					["coord"] = { 63.8, 49.5, 90 },
 					["races"] = HORDE_ONLY,

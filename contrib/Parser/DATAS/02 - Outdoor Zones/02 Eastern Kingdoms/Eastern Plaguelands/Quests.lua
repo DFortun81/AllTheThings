@@ -990,8 +990,8 @@ _.Zones =
 						i(62966),	-- Emissary's Watch
 					},
 				}),
-				i(61378, {	-- The Baroness' Missive
-					["questID"] = 27551,	-- The Baroness' Missive
+				q(27551, {	-- The Baroness' Missive
+					["provider"] = { "i", 61378 },	-- The Baroness' Missive
 					["sourceQuests"] = { 27525 },	-- Guardians of Stratholme
 					["crs"] = {
 						45868,	-- Karthis Darkrune
@@ -1105,15 +1105,13 @@ _.Zones =
 					["coord"] = { 53.2, 54.5, 23 },
 				}),
 				q(27461, {	-- To Take the Abbey
-					--["objectID"] = 205875,	-- Crusader's Flare
 					["coord"] = { 77.5, 79.4, 23 },
-					["icon"] = "Interface\\Icons\\Spell_Fire_Flare",
+					["provider"] = { "o", 205875 },	-- Crusader's Flare
 					["sourceQuests"] = { 27460 },	-- Soft Landing
 				}),
 				q(27462, {	-- To Take the Barracks
-					--["objectID"] = 205875,	-- Crusader's Flare
 					["coord"] = { 77.5, 79.4, 23 },
-					["icon"] = "Interface\\Icons\\Spell_Fire_Flare",
+					["provider"] = { "o", 205875 },	-- Crusader's Flare
 					["sourceQuests"] = { 27460 },	-- Soft Landing
 				}),
 				q(27381, {	-- Traveling Companions

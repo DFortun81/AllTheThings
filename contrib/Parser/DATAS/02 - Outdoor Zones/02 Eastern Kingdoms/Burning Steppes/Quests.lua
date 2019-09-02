@@ -6,32 +6,6 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(36, {	-- Burning Steppes
 			n(-17, {	-- Quests
-				ach(4901, {	-- Burning Steppes Quests
-					crit(1, {	-- Preparation
-						["sourceQuests"] = {
-							28183,	-- Return to Keeshan (alliance)
-							28425,	-- Return to Ariok (horde)
-						},
-					}),
-					crit(2, {	-- Annihilation
-						["sourceQuests"] = {
-							28322,	-- The Spoils of War (alliance)
-							28456,	-- The Spoils of War (horde)
-						},
-					}),
-					crit(3, {	-- Infiltration
-						["sourceQuests"] = {
-							28286,	-- Enough Damage For One Day (alliance)
-							28441,	-- Enough Damage For One Day (horde)
-						},
-					}),
-					crit(4, {	-- Anticipation
-						["sourceQuests"] = {
-							28326,	-- Placing the Pawns (alliance)
-							28449,	-- Placing the Pawns (horde)
-						},
-					}),
-				}),
 				q(28316, {	-- A Deal With a Dragon
 					["provider"] = { "n", 48306 },	-- John J. Keeshan
 					["coord"] = { 73.5, 67.2, 36 },
@@ -87,6 +61,17 @@ _.Zones =
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28449 },	-- Placing the Pawns
+				}),
+				q(44926, {	-- A Familiar Axe to Grind
+					["provider"] = { "i", 142344 },	-- Broken Axe Blade
+					["requireSkill"] = 164,	-- Classic Blacksmithing
+					["crs"] = {
+						48201,	-- Blackrock Sergeant
+						7027,	-- Blackrock Slayer
+						7025,	-- Blackrock Soldier
+						48120,	-- Firegut Reaver
+						48118,	-- Smolderthorn Shaman
+					},
 				}),
 				q(28178, {	-- A Future Project
 					["provider"] = { "n", 47811 },	-- John J. Keeshan
@@ -192,27 +177,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28438 },	-- Trial by Magma
 				}),
-				o(207304, {	-- Adventure Board
+				q(28068, {	-- Adventurers Wanted: Blackrock Depths
 					["model"] = 199475,
 					["coord"] = { 17.0, 51.7, 36 },
-					["g"] = {
-						q(28068, {	-- Adventurers Wanted: Blackrock Depths
-							["races"] = ALLIANCE_ONLY,
-							["description"] = "Only available between level 47 and 56.",
-							["isBreadcrumb"] = true,
-						}),
-					},
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 207304 },	-- Adventure Board
+					["description"] = "Only available between level 47 and 56.",
+					["isBreadcrumb"] = true,
 				}),
-				o(207303, {	-- Adventure Board
+				q(28069, {	-- Adventurers Wanted: Blackrock Depths
 					["model"] = 199475,
 					["coord"] = { 17.0, 51.7, 36 },
-					["g"] = {
-						q(28069, {	-- Adventurers Wanted: Blackrock Depths
-							["races"] = HORDE_ONLY,
-							["description"] = "Only available between level 47 and 56.",
-							["isBreadcrumb"] = true,
-						}),
-					},
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 207303 },	-- Adventure Board
+					["description"] = "Only available between level 47 and 56.",
+					["isBreadcrumb"] = true,
 				}),
 				q(28320, {	-- Assault on Dreadmaul Rock
 					["provider"] = { "n", 48306 },	-- John J. Keeshan
@@ -262,19 +241,6 @@ _.Zones =
 						28445,	-- A Heap of Delicious Worg
 						28443,	-- Blackened Ashes
 						28444,	-- Latent Demons of the Land
-					},
-				}),
-				i(142344, {	-- Broken Axe Blade
-					["requireSkill"] = 164,	-- Classic Blacksmithing
-					["crs"] = {
-						48201,	-- Blackrock Sergeant
-						7027,	-- Blackrock Slayer
-						7025,	-- Blackrock Soldier
-						48120,	-- Firegut Reaver
-						48118,	-- Smolderthorn Shaman
-					},
-					["g"] = {
-						q(44926),	-- A Familiar Axe to Grind
 					},
 				}),
 				q(28174, {	-- Burning Vengeance -- aa

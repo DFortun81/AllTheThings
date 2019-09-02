@@ -178,40 +178,34 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(13656, {	-- Explorers' League Document (1 of 6)
-				--	["objectID"] = 194387,	-- Stolen Explorers' League Document
 					["coord"] = { 36.7, 61.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\INV_Scroll_11",
+					["provider"] = { "o", 194387 },	-- Stolen Explorers' League Document
 				}),
 				q(13655, {	-- Explorers' League Document (2 of 6)
-					--["objectID"] = 194378,	-- Stolen Explorers' League Document
 					["coord"] = { 41.3, 38.9, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\INV_Scroll_11",
+					["provider"] = { "o", 194378 },	-- Stolen Explorers' League Document
 				}),
 				q(13657, {	-- Explorers' League Document (3 of 6)
-				--	["objectID"] = 194388,	-- Stolen Explorers' League Document
 					["coord"] = { 61.6, 73.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\INV_Scroll_11",
+					["provider"] = { "o", 194388 },	-- Stolen Explorers' League Document
 				}),
 				q(13658, {	-- Explorers' League Document (4 of 6)
-				--	["objectID"] = 194389,	-- Stolen Explorers' League Document
 					["coord"] = { 68.1, 66.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\INV_Scroll_11",
+					["provider"] = { "o", 194389 },	-- Stolen Explorers' League Document
 				}),
 				q(13660, {	-- Explorers' League Document (5 of 6)
-				--	["objectID"] = 194391,	-- Stolen Explorers' League Document
 					["coord"] = { 53.7, 38.1, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\INV_Scroll_11",
+					["provider"] = { "o", 194391 },	-- Stolen Explorers' League Document
 				}),
 				q(13659, {	-- Explorers' League Document (6 of 6)
-				--	["objectID"] = 194390,	-- Stolen Explorers' League Document
 					["coord"] = { 73.1, 35.8, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\INV_Scroll_11",
+					["provider"] = { "o", 194390 },	-- Stolen Explorers' League Document
 				}),
 				q(27074, {	-- Fight the Hammer
 					["sourceQuests"] = { 27035 },	-- Standing Up
@@ -567,10 +561,9 @@ _.Zones =
 					},
 				}),
 				q(13648, {	-- WANTED: The Dark Iron Spy
-				--	["objectID"] = 256,	-- Wanted!
 					["coord"] = { 37.3, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+					["provider"] = { "o", 256 },	-- Wanted!
 				}),
 				q(26845, {	-- Who's In Charge Here?
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder

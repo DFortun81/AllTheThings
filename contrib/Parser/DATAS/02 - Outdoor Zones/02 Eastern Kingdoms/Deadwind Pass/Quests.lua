@@ -306,11 +306,11 @@ _.Zones =
 						i(77948),	-- The Dreamer
 					},
 				})),
-				o(258978, {	-- Waterlogged Tome
-					["model"] = 191946,
-					["questID"] = 44487,	-- Waterlogged Tome
+				q(44487, {	-- Waterlogged Tome
 					["lvl"] = 110,
 					["coord"] = { 39.1, 73.7, 45 },
+					["model"] = 191946,
+					["provider"] = { "o", 258978 },	-- Waterlogged Tome
 					["g"] = {
 						crit(1, {	-- Waterlogged Tome
 							["achievementID"] = 11240,	-- Harbinger

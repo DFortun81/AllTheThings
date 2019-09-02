@@ -16,7 +16,7 @@ _.Zones =
 						i(122339),	-- Ancient Heirloom Scabbard
 					},	
 				}),
-				q(2964, {	-- A Future Task
+				q(2964,  {	-- A Future Task
 					["provider"] = { "n", 2916 },	-- Historian Karnik
 					["coord"] = { 77.4, 11.6, 87 },
 					["sourceQuest"] = 2977,	-- Return to Ironforge
@@ -28,7 +28,7 @@ _.Zones =
 						un(2, i(34419)),	-- Thorium Flight Blade
 					},
 				}),
-				q(700, {	-- A King's Tribute
+				q(700,   {	-- A King's Tribute
 					["provider"] = { "n", 2790 },	-- Grand Mason Marblesten
 					["coord"] = { 38.4, 87.2, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -38,13 +38,13 @@ _.Zones =
 						un(2, i(4535)),	-- Ironforge Memorial Ring
 					},
 				}),
-				q(4512, {	-- A Little Slime Goes a Long Way
+				q(4512,  {	-- A Little Slime Goes a Long Way
 					["provider"] = { "n", 9616 },	-- Laris Geardawdle
 					["coord"] = { 75.7, 23.3, 87 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
-				q(4513, {	-- A Little Slime Goes a Long Way
+				q(4513,  {	-- A Little Slime Goes a Long Way
 					["provider"] = { "n", 9616 },	-- Laris Geardawdle
 					["coord"] = { 75.7, 23.3, 87 },
 					["sourceQuest"] = 4512,	-- A Little Slime Goes a Long Way
@@ -62,7 +62,7 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 90,
 				}),
-				q(762, {	-- An Ambassador of Evil
+				q(762,   {	-- An Ambassador of Evil
 					["provider"] = { "n", 2916 },	-- Historian Karnik
 					["coord"] = { 77.4, 11.6, 87 },
 					["sourceQuest"] = 726,	-- Passing Word of a Threat
@@ -80,7 +80,7 @@ _.Zones =
 					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 50,
 				}),
-				q(8912, {	-- An Earnest Proposition (Warrior)
+				q(8912,  {	-- An Earnest Proposition (Warrior)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -91,7 +91,7 @@ _.Zones =
 						un(2, i(21996)),	-- Bracers of Heroism
 					},
 				}),
-				q(8908, {	-- An Earnest Proposition (Paladin)
+				q(8908,  {	-- An Earnest Proposition (Paladin)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -102,7 +102,7 @@ _.Zones =
 						un(2, i(22088)),	-- Soulforge Bracers
 					},
 				}),
-				q(8906, {	-- An Earnest Proposition (Hunter)
+				q(8906,  {	-- An Earnest Proposition (Hunter)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -113,7 +113,7 @@ _.Zones =
 						un(2, i(22011)),	-- Beastmaster's Bindings
 					},
 				}),
-				q(8910, {	-- An Earnest Proposition (Rogue)
+				q(8910,  {	-- An Earnest Proposition (Rogue)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -124,7 +124,7 @@ _.Zones =
 						un(2, i(22004)),	-- Darkmantle Bracers
 					},
 				}),
-				q(8909, {	-- An Earnest Proposition (Priest)
+				q(8909,  {	-- An Earnest Proposition (Priest)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -146,7 +146,7 @@ _.Zones =
 						un(2, i(22095)),	-- Bindings of The Five Thunders
 					},
 				}),
-				q(8907, {	-- An Earnest Proposition (Mage)
+				q(8907,  {	-- An Earnest Proposition (Mage)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -157,7 +157,7 @@ _.Zones =
 						un(2, i(22063)),	-- Sorcerer's Bindings
 					},
 				}),
-				q(8911, {	-- An Earnest Proposition (Warlock)
+				q(8911,  {	-- An Earnest Proposition (Warlock)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -168,7 +168,7 @@ _.Zones =
 						un(2, i(22071)),	-- Deathmist Bracers
 					},
 				}),
-				q(8905, {	-- An Earnest Proposition (Druid)
+				q(8905,  {	-- An Earnest Proposition (Druid)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -179,7 +179,7 @@ _.Zones =
 						un(2, i(22108)),	-- Feralheart Bracers
 					},
 				}),
-				q(8922, {	-- A Supernatural Device
+				q(8922,  {	-- A Supernatural Device
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuests"] = {
@@ -197,7 +197,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
-				q(8960, {	-- Bodley's Unfortunate Fate
+				q(8960,  {	-- Bodley's Unfortunate Fate
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuests"] = {
@@ -233,13 +233,13 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 20,
 				}),
-				q(2039, {	-- Find Bingles
+				q(2039,  {	-- Find Bingles
 					["provider"] = { "n", 6569 },	-- Gnoarn
 					["coord"] = { 69.4, 50.6, 87 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(737, {	-- Forbidden Knowledge
+				q(737,   {	-- Forbidden Knowledge
 					["provider"] = { "n", 2786 },	-- Gerrig Bonegrip
 					["coord"] = { 50.8, 5.6, 87 },
 					["sourceQuest"] = 736,	-- The Star, the Hand and the Heart
@@ -249,7 +249,7 @@ _.Zones =
 						un(2, i(4984)),	-- Skull of Impending Doom
 					},
 				}),
-				q(2948, {	-- Gnome Improvement
+				q(2948,  {	-- Gnome Improvement
 					["provider"] = { "n", 6826 },	-- Talvash del Kissel
 					["coord"] = { 36.0, 4.0, 87 },
 					["sourceQuest"] = 2947,	-- Return of the Ring
@@ -259,7 +259,7 @@ _.Zones =
 						i(9538),	-- Talvash's Gold Ring
 					},
 				}),
-				q(1682, {	-- Grey Iron Weapons
+				q(1682,  {	-- Grey Iron Weapons
 					["provider"] = { "n", 6031 },	-- Tormus Deepforge
 					["coord"] = { 48.6, 42.5, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -273,7 +273,7 @@ _.Zones =
 						un(2, i(6984)),	-- Umbral Sword
 					},
 				}),
-				q(6388, {	-- Gryth Thurden
+				q(6388,  {	-- Gryth Thurden
 					["provider"] = { "n", 4256 },	-- Golnir Bouldertoe
 					["coord"] = { 51.0, 26.2, 87 },
 					["sourceQuest"] = 6391,	-- Ride to Ironforge
@@ -283,14 +283,14 @@ _.Zones =
 					},
 					["lvl"] = 5,
 				}),
-				q(8929, {	-- In Search of Anthion
+				q(8929,  {	-- In Search of Anthion
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
-				q(1708, {	-- Iron Coral
+				q(1708,  {	-- Iron Coral
 					["provider"] = { "n", 6169 },	-- Klockmort Spannerspan
 					["coord"] = { 67.9, 46.1, 87 },
 					["sourceQuest"] = 1704,	-- Klockmort Spannerspan
@@ -299,7 +299,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
-				q(8937, {	-- Just Compensation (Warrior)
+				q(8937,  {	-- Just Compensation (Warrior)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
@@ -312,7 +312,7 @@ _.Zones =
 						un(2, i(21998)), 	-- Gauntlets of Heroism
 					},
 				}),
-				q(8933, {	-- Just Compensation (Paladin)
+				q(8933,  {	-- Just Compensation (Paladin)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
@@ -325,7 +325,7 @@ _.Zones =
 						un(2, i(22090)), 	-- Soulforge Gauntlets
 					},
 				}),
-				q(8931, {	-- Just Compensation (Hunter)
+				q(8931,  {	-- Just Compensation (Hunter)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
@@ -338,7 +338,7 @@ _.Zones =
 						un(2, i(22015)), 	-- Beastmaster's Gloves
 					},
 				}),
-				q(8935, {	-- Just Compensation (Rogue)
+				q(8935,  {	-- Just Compensation (Rogue)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
@@ -351,7 +351,7 @@ _.Zones =
 						un(2, i(22006)), 	-- Darkmantle Gloves
 					},
 				}),
-				q(8934, {	-- Just Compensation (Priest)
+				q(8934,  {	-- Just Compensation (Priest)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
@@ -377,7 +377,7 @@ _.Zones =
 						un(2, i(22099)), 	-- Gauntlets of The Five Thunders
 					},
 				}),
-				q(8932, {	-- Just Compensation (Mage)
+				q(8932,  {	-- Just Compensation (Mage)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
@@ -390,7 +390,7 @@ _.Zones =
 						un(2, i(22066)), 	-- Sorcerer's Gloves
 					},
 				}),
-				q(8936, {	-- Just Compensation (Warlock)
+				q(8936,  {	-- Just Compensation (Warlock)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
@@ -403,7 +403,7 @@ _.Zones =
 						un(2, i(22077)), 	-- Deathmist Wraps
 					},
 				}),
-				q(8926, {	-- Just Compensation (Druid)
+				q(8926,  {	-- Just Compensation (Druid)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
@@ -424,7 +424,7 @@ _.Zones =
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 20,
 				}),
-				q(1709, {	-- Klockmort's Creation
+				q(1709,  {	-- Klockmort's Creation
 					["provider"] = { "n", 6169 },	-- Klockmort Spannerspan
 					["coord"] = { 67.9, 46.1, 87 },
 					["sourceQuest"] = 1708,	-- Iron Coral
@@ -444,7 +444,7 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 20,
 				}),
-				q(1880, {	-- Mage-tastic Gizmonitor
+				q(1880,  {	-- Mage-tastic Gizmonitor
 					["provider"] = { "n", 5144 },	-- Bink
 					["coord"] = { 27.2, 8.3, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -528,7 +528,7 @@ _.Zones =
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 50,
 				}),
-				q(1050, {	-- Mythology of the Titans
+				q(1050,  {	-- Mythology of the Titans
 					["provider"] = { "n", 3979 },	-- Librarian Mae Paledust
 					["coord"] = { 75.0, 12.5, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -548,14 +548,14 @@ _.Zones =
 						i(122338),	-- Ancient Heirloom Armor Casing
 					},	
 				}),
-				q(725, {	-- Passing Word of a Threat
+				q(725,   {	-- Passing Word of a Threat
 					["provider"] = { "n", 2916 },	-- Historian Karnik
 					["coord"] = { 77.4, 11.6, 87 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["u"] = 40,
 				}),
-				q(726, {	-- Passing Word of a Threat
+				q(726,   {	-- Passing Word of a Threat
 					["provider"] = { "n", 2918 },	-- Advisor Belgrum
 					["coord"] = { 77.3, 9.7, 87 },
 					["sourceQuest"] = 725,	-- Passing Word of a Threat
@@ -563,7 +563,7 @@ _.Zones =
 					["lvl"] = 35,
 					["u"] = 40,
 				}),
-				q(2963, {	-- Portents of Uldum
+				q(2963,  {	-- Portents of Uldum
 					["provider"] = { "n", 5387 },	-- High Explorer Magellas
 					["coord"] = { 70.6, 17.0, 87 },
 					["sourceQuest"] = 2439,	-- The Platinum Discs
@@ -571,7 +571,7 @@ _.Zones =
 					["lvl"] = 45,
 					["u"] = 40,
 				}),
-				q(302, {	-- Powder to Ironband
+				q(302,   {	-- Powder to Ironband
 					["provider"] = { "n", 1356 },	-- Prospector Stormpike
 					["coord"] = { 74.4, 12.0, 87 },
 					["sourceQuest"] = 301,	-- Report to Ironforge
@@ -579,7 +579,7 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = 40,
 				}),
-				q(1453, {	-- Reclaimers' Business in Desolace
+				q(1453,  {	-- Reclaimers' Business in Desolace
 					["provider"] = { "n", 5637 },	-- Roetten Stonehammer
 					["coord"] = { 69.6, 21.0, 87 },
 					["isBreadcrumb"] = true,
@@ -593,7 +593,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),			
-				q(6392, {	-- Return to Gremlock
+				q(6392,  {	-- Return to Gremlock
 					["provider"] = { "n", 1573 },	-- Gryth Thurden
 					["coord"] = { 55.8, 47.8, 87 },
 					["sourceQuest"] = 6388,	-- Gryth Thurden
@@ -602,7 +602,7 @@ _.Zones =
 						7,	-- Gnome
 					},
 				}),
-				q(9006, {	-- Saving the Best for Last (Warrior)
+				q(9006,  {	-- Saving the Best for Last (Warrior)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
@@ -615,7 +615,7 @@ _.Zones =
 						un(2, i(21999)),	-- Helm of Heroism
 					},
 				}),
-				q(9002, {	-- Saving the Best for Last (Paladin)
+				q(9002,  {	-- Saving the Best for Last (Paladin)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
@@ -628,7 +628,7 @@ _.Zones =
 						un(2, i(22091)),	-- Soulforge Helm
 					},
 				}),
-				q(9000, {	-- Saving the Best for Last (Hunter)
+				q(9000,  {	-- Saving the Best for Last (Hunter)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
@@ -641,7 +641,7 @@ _.Zones =
 						un(2, i(22060)),	-- Beastmaster's Tunic
 					},
 				}),
-				q(9004, {	-- Saving the Best for Last (Rogue)					
+				q(9004,  {	-- Saving the Best for Last (Rogue)					
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
@@ -654,7 +654,7 @@ _.Zones =
 						un(2, i(22009)),	-- Darkmantle Tunic
 					},
 				}),
-				q(9003, {	-- Saving the Best for Last (Priest)
+				q(9003,  {	-- Saving the Best for Last (Priest)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
@@ -680,7 +680,7 @@ _.Zones =
 						un(2, i(22102)),	-- Vest of The Five Thunders
 					},
 				}),
-				q(9001, {	-- Saving the Best for Last (Mage)
+				q(9001,  {	-- Saving the Best for Last (Mage)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
@@ -693,7 +693,7 @@ _.Zones =
 						un(2, i(22069)),	-- Sorcerer's Robes
 					},
 				}),
-				q(9005, {	-- Saving the Best for Last (Warlock)
+				q(9005,  {	-- Saving the Best for Last (Warlock)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
@@ -706,7 +706,7 @@ _.Zones =
 						un(2, i(22075)),	-- Deathmist Robe
 					},
 				}),
-				q(8999, {	-- Saving the Best for Last (Druid)
+				q(8999,  {	-- Saving the Best for Last (Druid)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
@@ -719,7 +719,7 @@ _.Zones =
 						un(2, i(22113)),	-- Feralheart Vest
 					},
 				}),
-				q(2946, {	-- Seeing What Happens
+				q(2946,  {	-- Seeing What Happens
 					["provider"] = { "n", 2916 },	-- Historian Karnik
 					["coord"] = { 77.4, 11.6, 87 },
 					["sourceQuest"] = 2963,	-- Portents of Uldum
@@ -776,7 +776,7 @@ _.Zones =
 						i(122341),	-- Timeworn Heirloom Scabbard
 					},	
 				}),
-				q(3701, {	-- The Smoldering Ruins of Thaurissan
+				q(3701,  {	-- The Smoldering Ruins of Thaurissan
 					["provider"] = { "n", 8879 },	-- Royal Historian Archersonus
 					["coord"] = { 38.4, 55.3, 87 },
 					["races"] = ALLIANCE_ONLY,
@@ -785,7 +785,7 @@ _.Zones =
 						un(2, i(12102)),	-- Ring of the Aristocrat
 					},
 				}),				
-				q(735, {	-- The Star, the Hand and the Heart
+				q(735,   {	-- The Star, the Hand and the Heart
 					["provider"] = { "n", 2934 },	-- Gerrig Bonegrip
 					["coord"] = { 50.8, 6.0, 87 },
 					["sourceQuest"] = 727,	-- To Ironforge for Yagyin's Digest
@@ -793,7 +793,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),			
-				q(1789, {	-- The Symbol of Life
+				q(1789,  {	-- The Symbol of Life
 					["provider"] = { "n", 6179 },	-- Tiza Battleforge
 					["coord"] = { 27.4, 12.2, 87 },
 					["races"] = { 3 },	-- Dwarf
@@ -811,7 +811,7 @@ _.Zones =
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
 				}),
-				q(1802, {	-- Tome of the Cabal
+				q(1802,  {	-- Tome of the Cabal
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
 					["coord"] = { 74.2, 9.4, 87 },
 					["sourceQuest"] = 1758,	-- Tome of the Cabal
@@ -820,7 +820,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
-				q(1804, {	-- Tome of the Cabal
+				q(1804,  {	-- Tome of the Cabal
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
 					["coord"] = { 74.2, 9.4, 87 },
 					["sourceQuest"] = 1802,	-- Tome of the Cabal						

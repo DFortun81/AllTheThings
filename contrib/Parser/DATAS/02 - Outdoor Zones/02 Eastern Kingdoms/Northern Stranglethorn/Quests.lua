@@ -19,10 +19,9 @@ _.Zones =
 					["sourceQuest"] = 26745,	-- Favored Skull
 				}),
 				q(26325, {	-- A Nose for This Sort of Thing (H)
-					--["objectID"] = 2076,	-- Bubbling Cauldron
-					["icon"] = "Interface\\Icons\\INV_Misc_Cauldron_Arcane",
 					["coord"] = { 38.5, 48.7, 50 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 26323,	-- Favored Skull
 				}),
 				q(26764, {	-- A New Low
@@ -166,10 +165,9 @@ _.Zones =
 					["sourceQuest"] = 29231,	-- How's the Hunter Holding Up?
 				}),
 				q(26302, {	-- Chasing Yenniku's Fate
-					--["objectID"] = 2076,	-- Bubbling Cauldron
-					["icon"] = "Interface\\Icons\\INV_Misc_Cauldron_Arcane",
 					["coord"] = { 38.5, 48.7, 50 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 26301,	-- Speaking with Nezzliok
 				}),
 				q(202,   {	-- Colonel Kurzen
@@ -214,20 +212,6 @@ _.Zones =
 					["coord"] = { 47.7, 12.0, 50 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 29124,	-- Warn the Rebel Camp
-				}),
-				i(58491, {	-- Disfigured Mosh'Ogg Hand
-					["races"] = HORDE_ONLY,
-					["description"] = "Drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
-					["crs"] = {
-						1142,	-- Mosh'Ogg Brute
-						1144,	-- Mosh'Ogg Witch Doctor
-					},
-					["g"] = {
-						q(26407, {	-- Mosh'Ogg Handiwork
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
-						}),
-					},
 				}),
 				q(3625,  {	-- Enchanted Azsharite Fel Weaponry
 					["u"] = 40,
@@ -290,10 +274,9 @@ _.Zones =
 					["sourceQuest"] = 29115,	-- The Hunter's Revenge
 				}),
 				q(29118, {	-- Follow That Cat (A)
-					--["objectID"] = 208365,	-- Recently Disturbed Dirt Mound
-					["icon"] = "Interface\\Icons\\INV_Misc_Dust_02",
 					["coord"] = { 64.6, 22.0, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 208365 },	-- Recently Disturbed Dirt Mound
 					["description"] = "This version is available if you abandon the quest that was granted automatically.",
 					["sourceQuest"] = 29115,	-- The Hunter's Revenge
 				}),
@@ -304,10 +287,9 @@ _.Zones =
 					["sourceQuest"] = 29227,	-- The Hunter's Revenge
 				}),
 				q(29229, {	-- Follow That Cat (H)
-					--["objectID"] = 208365,	-- Recently Disturbed Dirt Mound
-					["icon"] = "Interface\\Icons\\INV_Misc_Dust_02",
 					["coord"] = { 64.6, 22.0, 50 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 208365 },	-- Recently Disturbed Dirt Mound
 					["description"] = "This version is available if you abandon the quest that was granted automatically.",
 					["sourceQuest"] = 29227,	-- The Hunter's Revenge
 				}),
@@ -472,6 +454,16 @@ _.Zones =
 					["coord"] = { 63.4, 39.0, 50 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26350,	-- Priestess Hu'rala
+				}),
+				q(26407, {	-- Mosh'Ogg Handiwork
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 58491 },	-- Disfigured Mosh'Ogg Hand
+					["description"] = "Drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
+					["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
+					["crs"] = {
+						1142,	-- Mosh'Ogg Brute
+						1144,	-- Mosh'Ogg Witch Doctor
+					},
 				}),
 				q(29105, {	-- Nesingwary Will Know (A)
 					["provider"] = { "n", 52281 },	-- Livingston Marshal
@@ -671,10 +663,9 @@ _.Zones =
 					["sourceQuest"] = 29220,	-- To Bambala
 				}),
 				q(26332, {	-- Skullsplitter Mojo
-					--["objectID"] = 2076,	-- Bubbling Cauldron
-					["icon"] = "Interface\\Icons\\INV_Misc_Cauldron_Arcane",
 					["coord"] = { 38.5, 48.7, 50 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 26330,	-- Who's a Big Troll?
 				}),
 				q(2761,  {	-- Smelt On, Smelt Off
@@ -717,10 +708,9 @@ _.Zones =
 					["sourceQuest"] = 26735,	-- The Fate of Kurzen
 				}),
 				q(26301, {	-- Speaking with Nezzliok
-					--["objectID"] = 2076,	-- Bubbling Cauldron
-					["icon"] = "Interface\\Icons\\INV_Misc_Cauldron_Arcane",
 					["coord"] = { 38.5, 48.7, 50 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 26300,	-- Nezzliok Will Know
 					["g"] = {
 						i(61099),	-- Slaver's Plate
@@ -1058,10 +1048,9 @@ _.Zones =
 					["sourceQuest"] = 26340,	-- The Hunt
 				}),
 				q(26330, {	-- Who's a Big Troll
-					--["objectID"] = 2076,	-- Bubbling Cauldron
-					["icon"] = "Interface\\Icons\\INV_Misc_Cauldron_Arcane",
 					["coord"] = { 38.5, 48.7, 50 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 26325,	-- A Nose for This Sort of Thing
 					["g"] = {
 						i(61096),	-- Electrostatic Legguards

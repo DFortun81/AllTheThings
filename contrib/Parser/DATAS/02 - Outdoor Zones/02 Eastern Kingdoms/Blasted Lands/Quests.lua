@@ -6,26 +6,6 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
 			n(-17,  {	-- Quests
-				ach(4909, {	-- Blasted Lands Quests
-					crit(1, {	-- Razelikh
-						["sourceQuests"] = {
-							26171,	-- You Are Rakh'likh, Demon (alliance)
-							25701,	-- You Are Rakh'likh, Demon (horde)
-						},
-					}),
-					crit(2, {	-- The Tainted Forest
-						["sourceQuests"] = {
-							26187,	-- The Downfall of Marl Wormthorn (alliance)
-							25720,	-- The Downfall of Marl Wormthorn (horde)
-						},
-					}),
-					crit(3, {	-- Avenging the Rockpool
-						["sourceQuests"] = {
-							25705,	-- False Idols
-							25706,	-- Neptool's Revenge
-						},
-					}),
-				}),
 				q(26172, {	-- A Bloodmage's Gotta Eat Too
 					["provider"] = { "n", 42298 },	-- Kasim Sharim
 					["coord"] = { 62.4, 25.8, 17 },
@@ -523,7 +503,7 @@ _.Zones =
 						35462,	-- Under Siege
 					},
 				}),
-				q(7583, {	-- Suppression
+				q(7583,  {	-- Suppression
 					["u"] = 40,
 					["classes"] = { 9 },	-- Warlock
 					["g"] = {
@@ -717,7 +697,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26163,	-- Time Is Short
 				}),
-				q(9407, {	-- Through the Dark Portal
+				q(9407,  {	-- Through the Dark Portal
 					["u"] = 40,
 					["provider"] = { "n", 19254 },	-- Warlord Dar'toon
 					["lvl"] = 58,
@@ -869,7 +849,7 @@ _.Zones =
 						i(59434),	-- Band of Selfless Acts
 					},
 				}),
-				q(3628, {	-- You Are Rakh'likh, Demon
+				q(3628,  {	-- You Are Rakh'likh, Demon
 					["u"] = 40,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["g"] = {

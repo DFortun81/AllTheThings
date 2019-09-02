@@ -201,10 +201,9 @@ _.Zones =
 					},
 				}),
 				q(28189, {	-- Do the Right Thing
-					--["objectID"] = 206944,	-- Shovel
-					["icon"] = "Interface\\Icons\\INV_Misc_Shovel_01",
 					["coord"] = { 39.7, 63.0, 25 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 206944 },	-- Shovel
 					["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
 					["g"] = {
 						i(65667),	-- Shovel of Mercy
@@ -384,7 +383,7 @@ _.Zones =
 				}),
 				q(27480, {	-- Ley Energies
 					["crs"] = { 45728 },	-- Arcane Remnant
-					["itemID"] = 61311,	-- Arcane Remnant
+					["provider"] = { "i", 61310 },	-- Arcane Remnant
 					["races"] = HORDE_ONLY,
 					["description"] = "Must complete part of the Silverpine Forest questline for the quest item to drop.",
 					["sourceQuests"] = { 27483 },	-- Practical Vengeance
@@ -411,9 +410,9 @@ _.Zones =
 					["sourceQuests"] = { 28587 },	-- Aid of the Frostwolf
 				}),
 				q(28154, {	-- Muckgill's Flipper or Something...
-					["provider"] = { "n", 47759 },	-- Muckgill
+					["crs"] = { 47759 },	-- Muckgill
 					["races"] = HORDE_ONLY,
-					["itemID"] = 63090,	-- Muckgill's Flipper
+					["provider"] = { "i", 63090 },	-- Muckgill's Flipper
 					["g"] = {
 						i(65691),	-- Floppy Shoulderguards
 						i(65669),	-- Keyton's Sash
@@ -448,8 +447,8 @@ _.Zones =
 					["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 				}),
 				q(28356, {	-- Preemptive Strike
-					["itemID"] = 63686,	-- Daggerspine Attack Plans
 					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 63686 },	-- Daggerspine Attack Plans
 					["crs"] = {
 						2370,	-- Daggerspine Screamer
 						2369,	-- Daggerspine Shorehunter
@@ -567,10 +566,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(28196, {	-- The Battle for Hillsbrad
-					["itemID"] = 63250,	-- The Battle for Hillsbrad
-					["provider"] = { "n", 47789 },	-- Clerk Horrace Whitesteed
+					["crs"] = { 47789 },	-- Clerk Horrace Whitesteed
 					["coord"] = { 37.6, 63.7, 25 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 63250 },	-- The Battle for Hillsbrad
 					-- TODO: does this always drop or is it only available after "No One Here Gets Out Alive" ?
 				}),
 				q(521,   {	-- [DEPRECATED] The Crown of Will
@@ -729,7 +728,7 @@ _.Zones =
 					["u"] = 40,
 					["coord"] = { 56.5, 47.1, 25 },
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 207279,	-- Warchief's Command Board
+					["provider"] = { "o", 207279 },	-- Warchief's Command Board
 				}),
 				q(28096, {	-- Welcome to the Machine
 					["provider"] = { "n", 2215 },	-- High Executor Darthalia
