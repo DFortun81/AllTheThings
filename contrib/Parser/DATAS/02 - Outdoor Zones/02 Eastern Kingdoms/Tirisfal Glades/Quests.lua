@@ -40,10 +40,10 @@ _.Zones =
 					["coord"] = { 52.5, 54.8, 18 },
 					["races"] = HORDE_ONLY,
 				}),
-				i(52079, {	-- A Scarlet Letter
-					["questID"] = 24979,
+				q(24979, {	-- A Scarlet Letter
 					["crs"] = { 1535 },	-- Scarlet Warrior
 					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 52079 },	-- A Scarlet Letter
 				}),
 				q(24981, {	-- A Thorn in our Side
 					["provider"] = { "n", 1515 },	-- Executor Zygand
@@ -349,13 +349,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 25005 },	-- Speak with Sevren
 				}),
-				i(3082,  {	-- Dargol's Skull
-					q(25030, {	-- The Haunted Mills
-						["crs"] = 1658,	-- Captain Dargol
-						["coord"] = { 52.8, 26.3, 18 },
-						["races"] = HORDE_ONLY,
-						["description"] = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
-					}),
+				q(25030, {	-- The Haunted Mills
+					["crs"] = 1658,	-- Captain Dargol
+					["coord"] = { 52.8, 26.3, 18 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 3082 },	-- Dargol's Skull
+					["description"] = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
 				}),
 				q(26952, {	-- The Menders' Stead
 					["provider"] = { "n", 10839 },	-- Argent Officer Garush

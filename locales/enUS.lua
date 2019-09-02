@@ -25,7 +25,7 @@ app.L = {
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
-	
+
 	-- Binding Localizations
 	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
 	["TOGGLE_COMPLETIONIST_MODE"] = "Toggle Completionist Mode";
@@ -65,7 +65,7 @@ app.L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["SELFIE_FILTERS_HEADER"] = "Selfie Filters";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
-	
+
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
 	["ARTIFACT_ID"] = "Artifact ID";
@@ -96,14 +96,14 @@ app.L = {
 	["ILLUSION_ID"] = "Illusion ID";
 	["VISUAL_ID"] = "Visual ID";
 	["iLvl"] = "iLvl";
-	
+
 	-- Artifact Relic Completion
 	["ARTIFACT_RELIC_CACHE"] = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
 	["ARTIFACT_RELIC_COMPLETION"] = "Artifact Relic Completion";
 	["NOT_TRADEABLE"] = "Not Tradeable";
 	["TRADEABLE"] = "Tradeable";
-	
-	
+
+
 	-- Icons and Collection Text
 	["LOGO_SMALL"] = "Interface\\Addons\\AllTheThings\\assets\\logo_tiny";		-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
 	["COLLECTED_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t";	-- Acquired the colors and icon from CanIMogIt.
@@ -154,7 +154,7 @@ app.L = {
 		["Emissary Quests"] = "Emissary",
 		["World Quests"] = "WQ",
 		["WoW Anniversary"] = "Anniversary",
-		
+
 	};
 	["CUSTOM_DIFFICULTIES"] = {
 		[-1] = "Raid Finder (5.4)",
@@ -228,7 +228,7 @@ app.L = {
 
 		-- "Recipes"
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
-		
+
 		[999] = "Event Item",
 	};
 	["FILTER_ID_ICONS"] = {
@@ -271,7 +271,7 @@ app.L = {
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",						-- Bag
 		[200] = "Interface\\Icons\\inv_scroll_05",							-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",		-- Event Item
-		
+
 	},
 
 	-- These need to be localized manually.
@@ -547,7 +547,7 @@ app.L = {
 		[-538] = "Interface\\Icons\\diabloanniversary_achievement",					-- Diablo 20th Anniversary Promotion
 		[-539] = "Interface\\Icons\\Achievement_zone_silithus_01",					-- Gates of Ahn'Qiraj
 		[-540] = "Interface\\Icons\\inv_stone_02",									-- The Scourge Invasion
-	--		[-541] = "Interface\\Icons\\achievement_zone_silithus_01"					-- 
+	--		[-541] = "Interface\\Icons\\achievement_zone_silithus_01"					--
 	--		[-542] = 	-- Battlefield: Barrens
 		[-543] = "Interface\\Icons\\Achievements_Zone_BrokenShore",					-- Legion Invasions
 		[-544] = "Interface\\Icons\\WoW_Token01",									-- WoW Collector's Edition
@@ -594,7 +594,7 @@ app.L = {
 		[-661] = "Interface\\Worldmap\\GlowSkull_64Purple",							-- Gladator PvP Gear
 		[-662] = "Interface\\Worldmap\\GlowSkull_64Red",							-- Elite PvP Gear
 	--	[-663] = "Interface\\Icons\\",												-- Classic Pre-Season PvP Gear (Placeholder)
-		[-664] = "Interface\\Icons\\achievement_featsofstrength_gladiator_00",		-- Gladiator: Season 1 
+		[-664] = "Interface\\Icons\\achievement_featsofstrength_gladiator_00",		-- Gladiator: Season 1
 		[-665] = "Interface\\Icons\\achievement_featsofstrength_gladiator_01",		-- Merciless Gladiator: Season 2
 		[-666] = "Interface\\Icons\\achievement_featsofstrength_gladiator_02",		-- Vengeful Gladiator: Season 3
 		[-667] = "Interface\\Icons\\achievement_featsofstrength_gladiator_03",		-- Brutal Gladiator: Season 4
@@ -712,26 +712,26 @@ app.L = {
 		[-3311] = "Interface\\Icons\\achievement_bg_killflagcarriers_grabflag_capit", -- Call To Arms [LFD Queue]
 		[-3314] = "Interface\\Icons\\inv_plate_draenorlfr_c_01helm",				-- Storm-Tempered Set
 		[-3340] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",			-- Isle Watcher's Set
-		
+
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",					-- Instance Item Sets, PvP
 		[-4190] = "Interface\\Icons\\ExpansionIcon_BurningCrusade",
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",
-		
+
 		[-5349] = "Interface\\Icons\\achievement_challengemode_scarletmonastery_gold",	-- Miscellaneous Item Sets
 		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",					-- Class Trial Item Sets
-		[-5351] = "Interface\\Icons\\misc_arrowlup",									-- Character Boost					
+		[-5351] = "Interface\\Icons\\misc_arrowlup",									-- Character Boost
 		[-5352] = "Interface\\Icons\\creatureportrait_portal_eyeofthestormhorde",		-- Tier Sets
 		[-6013] = "Interface\\Icons\\achievement_reputation_08",						-- Faction
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",						-- Cities
 		[-6015] = "Interface\\Icons\\battleground_strongbox_gold_horde",				-- Rewards
-		
+
 		[-7776] = "Interface\\Icons\\INV_Helm_Cloth_Holiday_Christmas_A_03",			-- Winter Revelers (for Winter Veil)
 		[-7777] = "Interface\\Icons\\INV_Misc_Basket_05",
 		[-7778] = "Interface\\Icons\\INV_Misc_Bag_28_Halloween",
 		[-7779] = "Interface\\Icons\\inv_misc_treasurechest03a",
 		[-7780] = "Interface\\Icons\\INV_Misc_Bag_10",
 		[-7781] = "Interface\\Icons\\INV_Box_01",
-		
+
 		[-9912] = "Interface\\Icons\\ClassIcon_Paladin", 	 						-- Protection / Retribution Spec
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance", 					-- Alliance
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde", 						-- Horde
@@ -872,18 +872,18 @@ app.L = {
 		[-10049] = "Interface\\Icons\\buff_forcesoforder",							-- Command Center
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
 		[-10067] = "Interface\\Icons\\inv_artifact_tome01", 						-- AK Research Book
-		[-10051] = "Interface\\Icons\\Paladin_Protection",							-- 
-		[-10052] = "Interface\\Icons\\Paladin_Protection",							-- 
-		[-10053] = "Interface\\Icons\\Paladin_Protection",							-- 
-		[-10054] = "Interface\\Icons\\Paladin_Protection",							-- 
-		[-10055] = "Interface\\Icons\\Paladin_Protection",							-- 
-		[-10056] = "Interface\\Icons\\Paladin_Protection",							-- 
-		[-10057] = "Interface\\Icons\\Paladin_Protection",							-- 
-		[-10058] = "Interface\\Icons\\Paladin_Protection",							-- 
+		[-10051] = "Interface\\Icons\\Paladin_Protection",							--
+		[-10052] = "Interface\\Icons\\Paladin_Protection",							--
+		[-10053] = "Interface\\Icons\\Paladin_Protection",							--
+		[-10054] = "Interface\\Icons\\Paladin_Protection",							--
+		[-10055] = "Interface\\Icons\\Paladin_Protection",							--
+		[-10056] = "Interface\\Icons\\Paladin_Protection",							--
+		[-10057] = "Interface\\Icons\\Paladin_Protection",							--
+		[-10058] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10059] = "Interface\\Icons\\Paladin_Protection",							-- Pandaria Scenarios
 		[-10060] = "Interface\\Icons\\achievement_arena_3v3_1",						-- Arena of Annihilation (Scenario)
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
-		[-10070] = "Interface\\Icons\\Paladin_Protection",							-- 
+		[-10070] = "Interface\\Icons\\Paladin_Protection",							--
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -906,18 +906,18 @@ app.L = {
 		[-15] = "Common Vendor Items",											-- Common Vendor Items
 		[-16] = BATTLE_PET_BREED_QUALITY4, 										-- Rares
 		[-17] = TRACKER_HEADER_QUESTS, 											-- Quests
-		
+
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
-		
+
 		[-31] = BATTLE_PET_SOURCE_8,											-- Promotion
 		[-32] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
-		
+
 		[-34] = TRACKER_HEADER_WORLD_QUESTS, 									-- World Quests
-		
+
 		[-36] = BATTLE_PET_SOURCE_10, 											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
 		[-38] = TRADE_SKILLS,													-- Professions
-		
+
 		[-40] = LFG_LIST_LEGACY, 												-- Legacy
 		[-41] = "Cache of Madness",
 -- Armor Types
@@ -1043,7 +1043,7 @@ app.L = {
 		[-192] = PROFESSIONS_COOKING, 											-- Cooking
 		[-193] = PROFESSIONS_FIRST_AID, 										-- First Aid
 		[-194] = PROFESSIONS_FISHING, 											-- Fishing
-		
+
 		[-206] = GetSpellInfo(67772),											-- Paragon
 		[-207] = GetSpellInfo(262064),											-- Lightforged Draenei
 		[-208] = GetSpellInfo(262062),											-- Void Elf
@@ -1075,7 +1075,7 @@ app.L = {
 		[-243] = "Bounty",														-- Bounty
 		[-244] = "Dark Iron Dwarf",												-- Dark Iron Dwarf
 		[-245] = "Mag'har Orc",													-- Mag'har Orc
-	
+
 		[-251] = "Zandalari Troll",												-- Zandalari Troll
 		[-252] = "Kul Tiran",													-- Kul Tiran
 		[-253] = "Horde War Campaign",											-- Horde War Campaign
@@ -1178,8 +1178,8 @@ app.L = {
 		[-514] = C_Map.GetAreaInfo(7139),										-- Elemental Plateau
 		[-515] = C_Map.GetAreaInfo(8648),										-- Aalgen Point
 		[-516] = C_Map.GetAreaInfo(7806),										-- Neltharion's Vault
-		[-517] = GetSpellInfo(265225),											-- Mole Machine										
-		
+		[-517] = GetSpellInfo(265225),											-- Mole Machine
+
 		[-518] = "Kul Tiras and Zandalar",
 		[-520] = "Expansion Pre-Launch",
 		[-521] = "Burning Crusade: Dark Portal Opens",
@@ -1193,7 +1193,7 @@ app.L = {
 		[-532] = "Heroes of the Storm Promotion",
 		[-533] = "Hearthstone Promotion",
 		[-534] = "Collector's Edition",
-		
+
 		[-536] = "Overwatch Promotion",
 		[-537] = "Starcraft Promotion",
 		[-538] = "Diablo 20th Anniversary Promotion",
@@ -1236,7 +1236,7 @@ app.L = {
 		[-575] = "Diablo III: Reaper of Souls",
 		[-576] = "StarCraft II: Legacy of the Void",
 		[-577] = "World of Warcraft Movie",
-		
+
 -- Blacksmithing Specialties
 		[-578] = GetSpellInfo(9787),											-- Weaponsmith
 		[-579] = GetSpellInfo(17041),											-- Master Axesmith
@@ -1268,9 +1268,9 @@ app.L = {
 		[-600] = GetSpellInfo(262954),											-- Communing with Jani [Vilescale Pearl]
 		[-601] = GetSpellInfo(262971),											-- Communing with Jani [Snapjaw Tail]
 		[-650] = "Quest Items",													-- Quest Items
-		
+
 -- PvP Header
-		
+
 -- PvP Set Names
 		[-660] = "Aspirant / Combatant Gear",									-- Aspirant (WoD, BfA) / Combatant (WoD, Legion) PvP Gear
 		[-661] = "Gladiator Gear",												-- Gladiator PvP Gear
@@ -1278,35 +1278,35 @@ app.L = {
 
 -- Classic PvP Seasons
 		[-663] = "Classic Pre-Season Gear",										-- Classic Pre-Season PvP Gear (need a icon)
-		
+
 -- The Burning Crusade PvP Seasons
 		[-664] = select(2, GetAchievementInfo(2091))..": Season 1",				-- Gladiator: Season 1
 		[-665] = select(2, GetAchievementInfo(418))..": Season 2",				-- Merciless Gladiator: Season 2
 		[-666] = select(2, GetAchievementInfo(419))..": Season 3",				-- Vengeful Gladiator: Season 3
 		[-667] = select(2, GetAchievementInfo(420))..": Season 4",				-- Brutal Gladiator: Season 4
-		
+
 -- Wrath of the Lichking PvP Seasons
 		[-668] = select(2, GetAchievementInfo(3336))..": Season 5",				-- Deadly Gladiator: Season 5
 		[-669] = select(2, GetAchievementInfo(3436))..": Season 6",				-- Furious Gladiator: Season 6
 		[-670] = select(2, GetAchievementInfo(3758))..": Season 7",				-- Relentless Gladiator: Season 7
 		[-671] = select(2, GetAchievementInfo(4599))..": Season 8",				-- Wrathful Gladiator: Season 8
-		
+
 -- Cataclysm PvP Seasons
 		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
 		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
 		[-674] = select(2, GetAchievementInfo(6938))..": Season 11",			-- Cataclysmic Gladiator: Season 11
-		
+
 -- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12
 		[-676] = select(2, GetAchievementInfo(8791))..": Season 13",			-- Tyrannical Gladiator: Season 13
 		[-677] = select(2, GetAchievementInfo(8643)),							-- Grievous Gladiator: Season 14
 		[-678] = select(2, GetAchievementInfo(8666)),							-- Prideful Gladiator: Season 15
-		
+
 -- Warlords of Dreanor PvP Seasons
 		[-679] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
 		[-680] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
 		[-681] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
-		
+
 -- Legion PvP Seasons
 		[-682] = select(2, GetAchievementInfo(11012)),							-- Vindictive Gladiator: Legion Season 1
 		[-683] = select(2, GetAchievementInfo(11014)),							-- Fearless Gladiator: Legion Season 2
@@ -1315,7 +1315,7 @@ app.L = {
 		[-686] = select(2, GetAchievementInfo(12010)),							-- Fierce Gladiator: Legion Season 5
 		[-687] = select(2, GetAchievementInfo(12134)),							-- Dominant Gladiator: Legion Season 6
 		[-688] = select(2, GetAchievementInfo(12185)),							-- Demonic Gladiator: Legion Season 7
-		
+
 -- Battle for Azeroth PvP Seasons
 		[-689] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
 		[-690] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
@@ -1329,16 +1329,16 @@ app.L = {
 		[-804] = GetSpellInfo(254763),											-- Uuna
 		[-805] = GetSpellInfo(277461),											-- Baa'l
 		[-806] = "Waist of Time",												-- Waist of Time
-		
+
 -- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-851] = "Irontide Chest",												-- Irontide Chest
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
-		
+
 -- Temporarily Header
 
-		
+
 
 -- Weapon Sets
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
@@ -1517,7 +1517,7 @@ app.L = {
 		[-3319] = "Swarmfury",
 		[-3340] = "Dark Animator",
 		[-3341] = "Duskhaven",
-		
+
 		[-3343] = "Choking Winter",
 		[-3342] = "Fallen Runelord",
 		[-3320] = "Spiritbough",
@@ -1566,9 +1566,9 @@ app.L = {
 		[-5349] = MAC_OPTIONS_MISC.." "..LOOT_JOURNAL_ITEM_SETS, 					-- Miscellaneous Item Sets
 		[-5350] = "Class Trial Item Sets",											-- Class Trial
 		[-5351] = GAMEMENU_BOOST_BUTTON,											-- Character Boost
-		
+
 		[-5352] = GARRISON_TIER.." "..WARDROBE_SETS,								-- Tier Sets
-		
+
 		--Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
 		[-5353] = select(2,GetAchievementInfo(2398)),	-- 4th Anniversary
 		[-5354] = select(2,GetAchievementInfo(4400)),	-- 5th Anniversary
@@ -1589,19 +1589,19 @@ app.L = {
 		[-6013] = FACTION,															-- Faction
 		[-6014] = BUG_CATEGORY4,													-- Cities
 		[-6015] = GUILD_TAB_REWARDS,												-- Rewards
-		
+
 		[-7776] = "Winter Revelers",												-- Winter Revelers (for Winter Veil)
 		[-7777] = "Timed Event",
 		[-7778] = "First Chest",
 		[-7779] = "Second Chest",
 		[-7780] = "Third Chest",
 		[-7781] = "Final Chest",
-		
+
 -- Factions
 		[-9913] = FACTION_HORDE, 													-- Horde
 		[-9914] = FACTION_ALLIANCE, 												-- Alliance
 
-		
+
 -- Classes
 		[-9912] = GetSpellInfo(42206).." & "..GetSpellInfo(137027),					-- Protection / Retribution Paladin Spec
 		[-9915] = GetSpellInfo(137032),	-- Discipline Priest Spec
@@ -1752,8 +1752,8 @@ app.L = {
 		[-10059] = select(1,GetCategoryInfo(15302)),		-- Pandaria Scenarios
 		[-10060] = select(2,GetAchievementInfo(7271)), 		-- Arena of Annihilation (Scenario)
 		[-10061] = select(2,GetAchievementInfo(7333)),		-- The Four Celestials
---[[	-- If we ever need them they need a new number	
-		[-10061] = BATTLE_PET_BREED_QUALITY1,			-- "Poor";				
+--[[	-- If we ever need them they need a new number
+		[-10061] = BATTLE_PET_BREED_QUALITY1,			-- "Poor";
 		[-10062] = BATTLE_PET_BREED_QUALITY2,			-- "Common";
 		[-10063] = BATTLE_PET_BREED_QUALITY3,			-- "Uncommon";
 		[-10064] = BATTLE_PET_BREED_QUALITY4,			-- "Rare";
@@ -1774,6 +1774,7 @@ app.L = {
 		[61] = "Interface\\Icons\\Achievement_BG_Xkills_AVgraveyard",
 		[256] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[259] = "Interface\\Icons\\Archaeology_5_0_EmptyKegOfBrewfatherXinWoYin",
+		[261] = "Interface\\Icons\\inv_crate_02",
 		[270] = "Interface\\Icons\\INV_Holiday_BrewfestBuff_01",
 		[2059] = "Interface\\Icons\\INV_Misc_Bone_DwarfSkull_01",
 		[2076] = "Interface\\Icons\\INV_Misc_Cauldron_Arcane",
@@ -1789,14 +1790,15 @@ app.L = {
 		[7510] = "Interface\\Icons\\INV_Misc_Herb_AzsharasVeil",
 		[19023] = "Interface\\Icons\\INV_Misc_NoteScript2d",
 		[20985] = "Interface\\Icons\\inv_misc_dust",
-		[20992] = "Interface\\Icons\\inv_shield_04", 
-		[21042] = "Interface\\Icons\\inv_shield_05", 
+		[20992] = "Interface\\Icons\\inv_shield_04",
+		[21042] = "Interface\\Icons\\inv_shield_05",
 		[35251] = "Interface\\Icons\\Garrison_BronzeChest",
 		[62483] = "Interface\\Icons\\INV_WorseRobot",
-		[112948] = "Interface\\Icons\\INV_Misc_Food_Lunchbox_Silver",
+		[112948] = "Interface\\Icons\\battleground_strongbox_skirmish_horde",
 		[113768] = "Interface\\Icons\\inv_egg_06",
 		[131474] = "Interface\\Icons\\Creatureportrait_Nexus_Floating_Disc",
 		[138492] = "Interface\\Icons\\inv_enchanting_wod_crystal2",
+		[142151] = "Interface\\Icons\\inv_cask_03",
 		[142195] = "Interface\\Icons\\INV_Misc_Map07",
 		[142343] = "Interface\\Icons\\inv_misc_platnumdisks",
 		[142487] = "Interface\\Icons\\INV_Engineering_Failure Detection Pylon",
@@ -1892,6 +1894,8 @@ app.L = {
 		[190083] = "Interface\\Icons\\Achievement_Halloween_Candy_01",
 		[190085] = "Interface\\Icons\\Achievement_Halloween_Candy_01",
 		[190104] = "Interface\\Icons\\Achievement_Halloween_Candy_01",
+		[190917] = "Interface\\Icons\\inv_letter_09",
+		[190936] = "Interface\\Icons\\INV_Alchemy_70_Cauldron",
 		[191728] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[191760] = "Interface\\Icons\\Icon_UpgradeStone_Mechanical_legendary",
 		[191761] = "Interface\\Icons\\Icon_UpgradeStone_Mechanical_legendary",
@@ -1935,10 +1939,13 @@ app.L = {
 		[202712] = "Interface\\Icons\\INV_Misc_Book_05",
 		[202795] = "Interface\\Icons\\Garrison_Building_Storehouse",
 		[202871] = "Interface\\Icons\\INV_Crate_06",
-		[203128] = "INV_ValentineCologneBottle",
+		[203128] = "Interface\\Icons\\INV_ValentineCologneBottle",
 		[203134] = "Interface\\Icons\\Archaeology_5_0_EdictsOfTheThunderKing",
+		[203140] = "Interface\\Icons\\inv_weapon_halberd_12",
 		[203186] = "Interface\\Icons\\TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK",
 		[203207] = "Interface\\Icons\\INV_Misc_Book_05",
+		[203301] = "Interface\\Icons\\inv_spear_04",
+		[203305] = "Interface\\Icons\\inv_offhand_pvealliance_d_01",
 		[203733] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[203734] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[203755] = "Interface\\Icons\\INV_Inscription_Scroll",
@@ -1953,7 +1960,7 @@ app.L = {
 		[204825] = "Interface\\Icons\\INV_Misc_Dust_02",
 		[205143] = "Interface\\Icons\\INV_Misc_Key_12",
 		[205207] = "Interface\\Icons\\INV_Misc_Book_08",
-		[205258] = "Interface\\Icons\\INV_Crate_07",
+		[205258] = "Interface\\Icons\\inv_misc_desecrated_mailchest",
 		[205332] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[205350] = "Interface\\Icons\\INV_Gizmo_GoblinBoomBox_01",
 		[205875] = "Interface\\Icons\\Spell_Fire_Flare",
@@ -2304,10 +2311,13 @@ app.L = {
 		[303017] = "Interface\\Icons\\INV_Stone_16",
 		[303018] = "Interface\\Icons\\INV_Stone_16",
 		[307265] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[307277] = "Interface\\Icons\\inv_drink_11",
+		[307307] = "Interface\\Icons\\inv_cask_03",
 		[307325] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[307330] = "Interface\\Icons\\inv_misc_crate01",
 		[311218] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_01",
 		[324407] = "Interface\\Icons\\spell_nature_thorns_nightmare",			-- Void Roots
-		[325659] = "Interface\\Icons\\INV_Eng_Crate2", 
+		[325659] = "Interface\\Icons\\INV_Eng_Crate2",
 		[325660] = "Interface\\Icons\\INV_Eng_Crate2",
 		[325661] = "Interface\\Icons\\INV_Eng_Crate2",
 		[325662] = "Interface\\Icons\\INV_Eng_Crate2",
@@ -2405,7 +2415,7 @@ app.L = {
 		[19023] = "|cFFFFFFFFStep 7:|r Page 2351",
 		[20985] = "Loose Dirt",
 		[20992] = "Black Shield",
-		[21042] = "Theramore Guard Badge", 
+		[21042] = "Theramore Guard Badge",
 		[35251] = "Karnitol's Chest",
 		[112948] = "Intrepid's Locked Strongbox",
 		[113768] = GetSpellInfo(61820),
@@ -3307,7 +3317,7 @@ app.L = {
 		[287442] = "Wanted: Cobra Excursion Participants",
 		[287531] = "Small Treasure Chest",
 		[288157] = "WANTED: Yarsel'ghun",
-		[288214] = "Wanted Poster",		
+		[288214] = "Wanted Poster",
 		[288596] = "Cache of Secrets",
 		[288622] = "Wanted Poster",
 		[288641] = "WANTED: Gryphon 'Nappers",
@@ -3418,7 +3428,7 @@ app.L = {
 		[297906] = "Russel's Songbook",
 		[297933] = "Dusty Songbook",
 		[297934] = "Scoundrel's Songbook",
-		[298920] = "Stolen Thornspeaker Cache", 
+		[298920] = "Stolen Thornspeaker Cache",
 		[298858] = "Wanted Poster",
 		[298849] = "Wanted Poster",
 		[298921] = "Ancient Nazmani Tablet",
@@ -3497,38 +3507,38 @@ app.L = {
 		[332575] = "Crystalline Cat Figurine",
 		[332576] = "Crystalline Cat Figurine",
 		[332577] = "Crystalline Cat Figurine",	-- Need to be confirmed
-		[9999908] = "|cFFFFFFFFStep 1:|r Gather Consumables.",	
-		[9999909] = "|cFFFFFFFFStep 2:|r Caverns of Consumption",	
-		[9999910] = "|cFFFFFFFFStep 3:|r Fire Barrier",	
-		[9999911] = "|cFFFFFFFFStep 4:|r Prismatic Barrier",	
-		[9999912] = "|cFFFFFFFFStep 5:|r Diligent Watcher",	
-		[9999913] = "|cFFFFFFFFStep 6:|r Vine Barrier",	
-		[9999914] = "|cFFFFFFFFStep 7:|r Water Barrier",	
-		[9999915] = "|cFFFFFFFFStep 8:|r Stone Golem",	
-		[9999916] = "|cFFFFFFFFStep 9:|r Ethereal Barrier",	
-		[9999917] = "|cFFFFFFFFStep 10:|r Strange Stone",	
-		[9999918] = "|cFFFFFFFFStep 11:|r Metal Gate",	
-		[9999919] = "|cFFFFFFFFStep 12:|r Wisdom Cube",	
+		[9999908] = "|cFFFFFFFFStep 1:|r Gather Consumables.",
+		[9999909] = "|cFFFFFFFFStep 2:|r Caverns of Consumption",
+		[9999910] = "|cFFFFFFFFStep 3:|r Fire Barrier",
+		[9999911] = "|cFFFFFFFFStep 4:|r Prismatic Barrier",
+		[9999912] = "|cFFFFFFFFStep 5:|r Diligent Watcher",
+		[9999913] = "|cFFFFFFFFStep 6:|r Vine Barrier",
+		[9999914] = "|cFFFFFFFFStep 7:|r Water Barrier",
+		[9999915] = "|cFFFFFFFFStep 8:|r Stone Golem",
+		[9999916] = "|cFFFFFFFFStep 9:|r Ethereal Barrier",
+		[9999917] = "|cFFFFFFFFStep 10:|r Strange Stone",
+		[9999918] = "|cFFFFFFFFStep 11:|r Metal Gate",
+		[9999919] = "|cFFFFFFFFStep 12:|r Wisdom Cube",
 		[9999920] = "|cFFFFFFFFStep 13:|r Tarnished Plaque",
-		[9999926] = "Step 1-4: A New Friend",	
-		[9999927] = "Step 5: Bright Lights",	
-		[9999928] = "Step 6: Wanna Be Friends?",	
-		[9999929] = "Step 7: Finding Nuu",	
-		[9999930] = "Step 8: Shooting Stars",	
-		[9999931] = "Step 9: Flower Crown",	
-		[9999932] = "Step 10: Uuna Gets Kidnapped",	
-		[9999933] = "Step 11: Getting Marked",	
-		[9999934] = "Step 12: Shadow of a Tear",	
-		[9999935] = "Scenario",	
-		[9999936] = "Cheer questid?",	
-		[9999937] = "Hug questid?",	
-		[9999938] = "Step One: Gate of the Setting Sun",	
-		[9999939] = "Step Two: Nighthold",	
-		[9999940] = "Step Three: Krasus Landing, Legion Dalaran",	
-		[9999941] = "Step Four: Dragonblight",	
-		[9999942] = "Step Five: Mount Hyjal",	
-		[9999943] = "Step Six: Kun-Lai Summit",	
-		[9999944] = "Step Seven: Blackrock Mountain",	
+		[9999926] = "Step 1-4: A New Friend",
+		[9999927] = "Step 5: Bright Lights",
+		[9999928] = "Step 6: Wanna Be Friends?",
+		[9999929] = "Step 7: Finding Nuu",
+		[9999930] = "Step 8: Shooting Stars",
+		[9999931] = "Step 9: Flower Crown",
+		[9999932] = "Step 10: Uuna Gets Kidnapped",
+		[9999933] = "Step 11: Getting Marked",
+		[9999934] = "Step 12: Shadow of a Tear",
+		[9999935] = "Scenario",
+		[9999936] = "Cheer questid?",
+		[9999937] = "Hug questid?",
+		[9999938] = "Step One: Gate of the Setting Sun",
+		[9999939] = "Step Two: Nighthold",
+		[9999940] = "Step Three: Krasus Landing, Legion Dalaran",
+		[9999941] = "Step Four: Dragonblight",
+		[9999942] = "Step Five: Mount Hyjal",
+		[9999943] = "Step Six: Kun-Lai Summit",
+		[9999944] = "Step Seven: Blackrock Mountain",
 		[9999945] = "Step Eight: Temple of Karabor",
 		[9999946] = "Summon Baa'l",
 		[9999990] = "Treasure Chest",	-- Use these until objectID is found

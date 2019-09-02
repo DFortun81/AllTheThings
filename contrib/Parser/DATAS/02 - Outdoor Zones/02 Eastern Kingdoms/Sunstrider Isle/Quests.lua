@@ -12,31 +12,31 @@ _.Zones =
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuest"] = 8326,	-- Unfortunate Measures
 				}),
-				q(8334, {	-- Aggression
+				q(8334,  {	-- Aggression
 					["provider"] = { "n", 15281 },	-- Lanthan Perilon
 					["coord"] = { 52.8, 49.8, 467 },
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuest"] = 8326,	-- Unfortunate Measures
 				}),
-				q(8347, {	-- Aiding the Outrunners
+				q(8347,  {	-- Aiding the Outrunners
 					["provider"] = { "n", 15281 },	-- Lanthan Perilon
 					["coord"] = { 52.8, 49.7, 467 },
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuest"] = 8335,	-- Felendren the Banished
 					["isBreadcrumb"] = true,
 				}),
-				q(8335, {	-- Felendren the Banished
+				q(8335,  {	-- Felendren the Banished
 					["provider"] = { "n", 15281 },	-- Lanthan Perilon
 					["coord"] = { 52.8, 49.7, 467 },
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuest"] = 8334,	-- Aggression
 				}),
-				q(8325, {	-- Reclaiming Sunstrider Isle
+				q(8325,  {	-- Reclaiming Sunstrider Isle
 					["provider"] = { "n", 15278 },	-- Magistrix Erona
 					["coord"] = { 61.0, 45.1, 467 },
 					["races"] = { 10 },	-- Blood Elves
 				}),
-				q(8327, {	-- Report to Lanthan Perilon
+				q(8327,  {	-- Report to Lanthan Perilon
 					["provider"] = { "n", 15278 },	-- Magistrix Erona
 					["coord"] = { 61.0, 45.1, 467 },
 					["races"] = { 10 },	-- Blood Elves
@@ -48,12 +48,10 @@ _.Zones =
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuest"] = 8326,	-- Unfortunate Measures
 				}),
-				i(20483, {	-- Tainted Arcane Sliver
-					["questID"] = 8338,
+				q(8338,  {	-- Tainted Arcane Sliver
+					["crs"] = { 15298 },	-- Tainted Arcane Wraith
 					["races"] = { 10 },	-- Blood Elves
-					["crs"] = {
-						15298,	-- Tainted Arcane Wraith
-					},
+					["provider"] = { "i", 20483 },	-- Tainted Arcane Sliver
 				}),
 				q(37442, {	-- The Shrine of Dath'Remar
 					["provider"] = { "n", 15295 },	-- Well Watcher Solanian
@@ -67,7 +65,7 @@ _.Zones =
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuest"] = 8326,	-- Unfortunate Measures
 				}),
-				q(8326, {	-- Unfortunate Measures
+				q(8326,  {	-- Unfortunate Measures
 					["provider"] = { "n", 15278 },	-- Magistrix Erona
 					["coord"] = { 61.0, 45.1, 467 },
 					["races"] = { 10 },	-- Blood Elves

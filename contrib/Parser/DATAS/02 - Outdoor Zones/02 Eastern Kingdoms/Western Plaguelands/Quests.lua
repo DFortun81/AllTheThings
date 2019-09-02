@@ -86,10 +86,9 @@ _.Zones =
 					},
 				}),
 				q(27171, {	-- Ambushed!
-					--["objectID"] = 205258,	-- Broken Weapons Crate
-					["icon"] = "Interface\\Icons\\inv_misc_desecrated_mailchest",
 					["coord"] = { 53.7, 80.4, 22 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 205258 },	-- Broken Weapons Crate
 					["sourceQuest"] = 27170,	-- The Abandoned Crypt
 					["g"] = {
 						i(62167),	-- Cloak of the Unrestful
@@ -374,8 +373,8 @@ _.Zones =
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
 				}),
 				q(27057, {	-- Return to the Stead
-					--["objectID"] = 176392,	-- Scourge Cauldron
 					["coord"] = { 62.5, 58.5, 22 },
+					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["sourceQuest"] = 27053,	-- Gahrron's Withering Cauldron
 				}),
 				q(42772, {	-- Sacred Ground

@@ -6,34 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(51, {	-- Swamp of Sorrows
 			n(-17,  {	-- Quests
-				ach(4904, {	-- Swamp of Sorrows Quests
-					crit(1, {	-- Bogpaddle
-						["sourceQuest"] = 27600,	-- In With a Bang
-					}),
-					crit(2, {	-- The Bloodmire (alliance)
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = {
-							27849,	-- Assault on Stonard
-							27851,	-- Cutting Supply
-						},
-					}),
-					crit(2, {	-- The Bloodmire (horde)
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 27857,	-- We're Under Attack!
-					}),
-					crit(3, {	-- The Shifting Mire (alliance)
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 24913,	-- Remember the Light
-					}),
-					crit(3, {	-- The Shifting Mire (horde)
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 27911,	-- With Dying Breath
-					}),
-					crit(4, {	-- The Sunken Temple
-						["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
-					}),
-				}),
-				q(2801, {	-- A Tale of Sorrow
+				q(2801,  {	-- A Tale of Sorrow
 					["u"] = 40,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2783,	-- Petty Squabbles
@@ -130,30 +103,30 @@ _.Zones =
 						i(157012),	-- Broken Silversnap Bottle
 					},
 				}),
-				q(1430, {	-- [DEPRECATED]Fresh Meat
+				q(1430,  {	-- [DEPRECATED]Fresh Meat
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(2, i(9682)),	-- Leather Chef's Belt
 					},
 				}),
-				q(2784, {	-- Fall From Grace
+				q(2784,  {	-- Fall From Grace
 					["u"] = 40,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["races"] = HORDE_ONLY,
 				}),
-				q(1393, {	-- Galen's Escape
+				q(1393,  {	-- Galen's Escape
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(6828)),	-- Visionary Buckler
 					},
 				}),
-				q(2702, {	-- Heroes of Old
+				q(2702,  {	-- Heroes of Old
 					["u"] = 40,
 					["sourceQuest"] = 2681,	-- The Stones that Bind Us
 				}),
-				q(2702, {	-- Heroes of Old 2
+				q(2702,  {	-- Heroes of Old 2
 					["u"] = 40,
 					["sourceQuest"] = 2702,	-- Heroes of Old
 					["g"] = {
@@ -287,7 +260,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27871,	-- To Stonard
 				}),
-				q(2783, {	-- Petty Squabbles
+				q(2783,  {	-- Petty Squabbles
 					["u"] = 40,
 					["provider"] = { "n", 7826 },	-- Ambassador Ardalan
 					["races"] = ALLIANCE_ONLY,
@@ -390,7 +363,7 @@ _.Zones =
 						i(64619),	-- Sinister Belt
 					},
 				}),
-				q(2621, {	-- The Disgraced One
+				q(2621,  {	-- The Disgraced One
 					["u"] = 40,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["races"] = HORDE_ONLY,
@@ -421,7 +394,7 @@ _.Zones =
 					["coord"] = { 69.8, 36.5, 51 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(2622, {	-- The Missing Orders
+				q(2622,  {	-- The Missing Orders
 					["u"] = 40,
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
 					["races"] = HORDE_ONLY,
@@ -445,20 +418,20 @@ _.Zones =
 						27908,	-- Secrets of the Mire
 					},
 				}),
-				q(2681, {	-- The Stones That Bind Us
+				q(2681,  {	-- The Stones That Bind Us
 					["u"] = 40,
 					["sourceQuests"] = {
 						2801,	-- A Tale of Sorrow (A)
 						2623,	-- The Swamp (H)
 					},
 				}),
-				q(2623, {	-- The Swamp
+				q(2623,  {	-- The Swamp
 					["u"] = 40,
 					["provider"] = { "n", 7643 },	-- Bengor
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 2622,	-- The Missing Orders
 				}),
-				q(1427, {	-- [DEPRECATED]Threat From the Sea
+				q(1427,  {	-- [DEPRECATED]Threat From the Sea
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {

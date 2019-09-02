@@ -36,9 +36,8 @@ _.Zones =
 							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 						}),
 						q(12711, {	-- Abandoned Mail
-							--["objectID"] = 190917,	-- Abandoned Mail
-							["icon"] = "Interface\\Icons\\inv_letter_09",
 							["coord"] = { 55.2, 46.2, 124 },
+							["provider"] = { "o", 190917 },	-- Abandoned Mail
 						}),
 						q(12754, {	-- Ambush at the Overlook
 							["provider"] = { "n", 28914 },	-- Orbaz Bloodbane
@@ -141,8 +140,8 @@ _.Zones =
 							},
 						}),
 						q(12718, {	-- More Skulls For Brew
-							["objectID"] = 190936,	-- Plague Cauldron
 							["coord"] = { 56.2, 52.0, 124 },
+							["provider"] = { "o", 190936 },	-- Plague Cauldron
 							["repeatable"] = true,
 							["sourceQuest"] = 12717,	-- Noth's Special Brew
 						}),

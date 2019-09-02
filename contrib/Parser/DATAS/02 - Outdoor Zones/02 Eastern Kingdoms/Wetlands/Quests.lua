@@ -275,10 +275,9 @@ _.Zones =
 				}),
 				q(25805, {	-- Return the Statuette
 					["sourceQuests"] = { 25804 },	-- Search More Hovels
-				--	["objectID"] = 259,	-- Half-Buried Barrel
+					["provider"] = { "o", 259 },	-- Half-Buried Barrel
 					["coord"] = { 13.9, 34.7, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_cask_03",
 					["g"] = {
 						i(59085),	-- Breastplate of the Lost Paladin
 						i(59084),	-- Boran's Shoulderguards
@@ -296,10 +295,9 @@ _.Zones =
 				}),
 				q(25804, {	-- Search More Hovels
 					["sourceQuests"] = { 25803 },	-- The Search Continues
-				--	["objectID"] = 142151,	-- Sealed Barrel
+					["provider"] = { "o", 142151 },	-- Sealed Barrel
 					["coord"] = { 13.6, 38.2, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_cask_03",
 				}),
 				q(25722, {	-- Sedimentary, My Dear
 					["coord"] = { 57.4, 71.4, 56 },
@@ -374,10 +372,9 @@ _.Zones =
 				}),
 				q(25819, {	-- The Eye of Paleth
 					["sourceQuests"] = { 25818 },	-- Lifting the Curse
-				--	["objectID"] = 112948,	-- Intrepid's Locked Strongbox
+					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
 					["coord"] = { 14.3, 24.0, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\battleground_strongbox_skirmish_horde",
 					["g"] = {
 						i(2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
 						i(59092),	-- Haunted Pauldrons
@@ -388,11 +385,10 @@ _.Zones =
 				}),
 				q(25736, {	-- The Floodsurge Core
 					["sourceQuests"] = { 25734 },	-- Down in Thelgen Rock
-				--	["itemID"] = 55243,	-- Floodsurge Core
+					["provider"] = { "i", 55243 },	-- Floodsurge Core
 					["coord"] = { 47.6, 65.6, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_elemental_primal_water",
-					["provider"] = { "n", 41167 },	-- Torrention
+					["crs"] = { 41167 },	-- Torrention
 					["g"] = {
 						i(59069),	-- Slabchisel Boots
 						i(59068),	-- Waterproof Leggings
@@ -414,10 +410,9 @@ _.Zones =
 				}),
 				q(25803, {	-- The Search Continues
 					["sourceQuests"] = { 25802 },	-- Reclaiming Goods
-				--	["objectID"] = 261,	-- Damaged Crate
+					["provider"] = { "o", 261 },	-- Damaged Crate
 					["coord"] = { 13.5, 41.3, 56 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_crate_02",
 				}),
 				q(25395, {	-- The Stolen Keg
 					["sourceQuests"] = {

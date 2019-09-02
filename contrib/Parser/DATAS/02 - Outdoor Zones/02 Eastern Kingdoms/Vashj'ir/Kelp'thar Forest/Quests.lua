@@ -13,9 +13,8 @@ _.Zones =
 						["sourceQuests"] = { 25670 },	-- DUN-dun-DUN-dun-DUN-dun
 					}),
 					q(25388, {	-- A Case of Crabs
-						--["objectID"] = 202871,	-- Sunken Crate
-						["icon"] = "Interface\\Icons\\INV_Crate_06",
 						["coord"] = { 49.6, 40.8, 201 },
+						["provider"] = { "o", 202871 },	-- Sunken Crate
 						["sourceQuests"] = { 25587 },	-- Gimme Shelter
 					}),
 					q(25471, {	-- Across the Great Divide
@@ -24,9 +23,8 @@ _.Zones =
 						["sourceQuests"] = { 27708 },	-- The Warden's Time
 					}),
 					q(25638, {	-- A Desperate Plea
-						--["objectID"] = 203128,	-- Broken Bottle
-						["icon"] = "Interface\\Icons\\inv_drink_10",
 						["coord"] = { 56.4, 30.0, 201 },
+						["provider"] = { "o", 203128 },	-- Broken Bottle
 						["sourceQuests"] = { 25459 },	-- Ophidophobia
 					}),
 					q(25390, {	-- A Girl's Best Friend
@@ -61,8 +59,8 @@ _.Zones =
 						},
 					}),
 					q(27687, {	-- An Opened Can of Whoop Gnash
-						["itemID"] = 62138,	-- Gnash's Head
-						["provider"] = { "n", 40987 },	-- Gnash
+						["crs"] = { 40987 },	-- Gnash
+						["provider"] = { "i", 62138 },	-- Gnash's Head
 						["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
 						["coords"] = {	-- pats up and down
 							{ 51.6, 42.4, 201 },
@@ -83,9 +81,9 @@ _.Zones =
 						},
 					}),
 					q(25503, {	-- Blackfin's Booty
-						["itemID"] = 54639,	-- Waterlogged Journal
-						["provider"] = { "n", 41183 },	-- Gilblingle
+						["crs"] = { 41183 },	-- Gilblingle
 						["coord"] = { 51.1, 52.0, 201 },
+						["provider"] = { "i", 54639 },	-- Waterlogged Journal
 						["g"] = {
 							i(59781),	-- Calanoid Shoulders
 							i(59780),	-- Polychaete Leggings
@@ -245,20 +243,20 @@ _.Zones =
 						},
 					}),
 					q(25883, {	-- How Disarming
-						--["objectID"] = 203301,	-- Naga Tridents
 						["coord"] = { 60.3, 69.8, 201 },
+						["provider"] = { "o", 203301 },	-- Naga Tridents
 						["sourceQuest"] = 25887,	-- Wake of Destruction
 					}),
 					q(25467, {	-- Kliklak's Craw
-						["itemID"] = 54345,	-- Crumpled Treasure Map
 						["crs"] = { 40276 },	-- Sabreclaw Skitterer
+						["provider"] = { "i", 54345 },	-- Crumpled Treasure Map
 						["g"] = {
 							i(59798),	-- Barnacle-Coated Greataxe
 						},
 					}),
 					q(25419, {	-- Lady La-La's Medallion
-						["itemID"] = 55186,	-- Lady La-La's Necklace
 						["crs"] = { 41017 },	-- Gilblin Collector
+						["provider"] = { "i", 55186 },	-- Lady La-La's Necklace
 						["g"] = {
 							i(59784),	-- Dreamfrond Skirt
 							i(59783),	-- Damselfish Shoulderguards
@@ -395,15 +393,12 @@ _.Zones =
 							i(54465),	-- Vashj'ir Seahorse (MOUNT!)
 						},
 					}),
-					i(53053, {	-- Tattered Treasure Map
+					q(25377, {	-- The Horde's Hoard
 						["crs"] = { 39918 },	-- Clacksnap Pincer
+						["provider"] = { "i", 53053 },	-- Tattered Treasure Map
+						["sourceQuest"] = 25558,	-- All or Nothing
 						["g"] = {
-							q(25377, {	-- The Horde's Hoard
-								["sourceQuest"] = 25558,	-- All or Nothing
-								["g"] = {
-									i(59788),	-- Bioluminescent Buckler
-								},
-							}),
+							i(59788),	-- Bioluminescent Buckler
 						},
 					}),
 					q(27708, {	-- The Warden's Time

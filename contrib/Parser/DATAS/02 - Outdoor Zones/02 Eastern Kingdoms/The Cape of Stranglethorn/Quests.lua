@@ -44,10 +44,10 @@ _.Zones =
 					["sourceQuest"] = 26489,	-- It's You!!
 				}),
 				q(26617, {	-- An Old Sea Dog
-				--	["itemID"] = 59143,	-- Weather-Beaten Coin
+					["crs"] = { 43454 },	-- "Good-Boy" Bruce
 					["coord"] = { 41.2, 61.3, 210 },
 					["icon"] = "Interface\\Icons\\inv_misc_coin_16",
-					["provider"] = { "n", 43454 },	-- "Good-Boy" Bruce
+					["provider"] = { "i", 59143 },	-- Weather-Beaten Coin
 				}),
 				q(3721,  {	-- An OOX of Your Own
 					["provider"] = { "n", 7406 },	-- Oglethorpe Obnoticus
@@ -135,9 +135,8 @@ _.Zones =
 				}),
 				q(26610, {	-- Bloodsail Treachery
 					["sourceQuests"] = { 26609 },	-- The Bloodsail Buccaneers
-				--	["objectID"] = 2083,	-- Bloodsail Correspondence
+					["provider"] = { "o", 2083 },	-- Bloodsail Correspondence
 					["coord"] = { 41.2, 61.3, 210 },
-					["icon"] = "Interface\\Icons\\inv_misc_scrollunrolled04",
 				}),
 				q(29153, {	-- Booty Bay's Interests (A)
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
@@ -153,11 +152,10 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(26665, {	-- Call of Booty
-					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
-				--	["objectID"] = 204450,	-- Captain Stillwater's Charts
+					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 					["coord"] = { 50.3, 91.5, 210 },
-					["icon"] = "Interface\\Icons\\Icon_TreasureMap",
 					["sourceQuests"] = {
+						26650,	-- The Damsel's Luck
 						26664,	-- Making Mutiny
 						26663,	-- Sinking From Within
 						26662,	-- The Brashtide Crew
@@ -400,9 +398,8 @@ _.Zones =
 				}),
 				q(26664, {	-- Making Mutiny
 					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
-				--	["objectID"] = 204450,	-- Captain Stillwater's Charts
+					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 					["coord"] = { 50.3, 91.5, 210 },
-					["icon"] = "Interface\\Icons\\Icon_TreasureMap",
 					["g"] = {
 						i(61614),	-- Supposed Mace
 						i(61616),	-- Accusing Finger
@@ -422,8 +419,7 @@ _.Zones =
 					},
 				}),
 				q(26603, {	-- Message in a Bottle -- aa
-				--	["objectID"] = 204406,	-- Half-Buried Bottle
-					["icon"] = "Interface\\Icons\\inv_misc_flaskofvolatility",
+					["provider"] = { "o", 204406 },	-- Half-Buried Bottle
 					["coords"] = {
 						{ 50.2, 76.0, 210 },
 						{ 62.4, 46.7, 210 },
@@ -563,9 +559,8 @@ _.Zones =
 				}),
 				q(26679, {	-- Return to Revilgaz
 					["sourceQuests"] = { 26678 },	-- Doublerum
-				--	["objectID"] = 204578,	-- Barrel of Doublerum
+					["provider"] = { "o", 204578 },	-- Barrel of Doublerum
 					["coord"] = { 40.6, 73.2, 210 },
-					["icon"] = "Interface\\Icons\\achievement_faction_brewmaster",
 				}),
 				q(26593, {	-- Scaring Shaky -- aa
 					["provider"] = { "n", 2501 },	-- "Sea Wolf" MacKinley
@@ -583,9 +578,8 @@ _.Zones =
 				}),
 				q(26663, {	-- Sinking From Within
 					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
-				--	["objectID"] = 204450,	-- Captain Stillwater's Charts
 					["coord"] = { 50.3, 91.5, 210 },
-					["icon"] = "Interface\\Icons\\Icon_TreasureMap",
+					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 				}),
 				q(348,   {	-- Stranglethorn Fever
 					["u"] = 40,
@@ -656,9 +650,8 @@ _.Zones =
 				}),
 				q(26662, {	-- The Brashtide Crew
 					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
-				--	["objectID"] = 204450,	-- Captain Stillwater's Charts
 					["coord"] = { 50.3, 91.5, 210 },
-					["icon"] = "Interface\\Icons\\Icon_TreasureMap",
+					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 				}),
 				q(26596, {	-- The Call of Kalimdor (A)
 					["isBreadcrumb"] = true,	-- leads to Dustwallow Marsh

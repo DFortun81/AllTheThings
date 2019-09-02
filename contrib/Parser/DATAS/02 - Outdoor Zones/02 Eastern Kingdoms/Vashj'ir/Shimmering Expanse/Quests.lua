@@ -45,9 +45,9 @@ _.Zones =
 						},
 					}),
 					q(25442, {	-- A Pearl of Wisdom
-						["itemID"] = 54614,	-- Luminescent Pearl
 						["crs"] = { 40510 },	-- Fathom-Lord Zin'jatar
 						["coord"] = { 67.3, 49.7, 205 },
+						["provider"] = { "i", 54614 },	-- Luminescent Pearl
 						["g"] = {
 							i(59752),	-- Tilefish Crown
 							i(59751),	-- Triggerfish Girdle
@@ -203,9 +203,8 @@ _.Zones =
 						["u"] = 1,
 					}),
 					q(25863, {	-- Chosen Burden
-						--["objectID"] = 203305,	-- Crucible of Nazsharin
-						["icon"] = "Interface\\Icons\\inv_offhand_pvealliance_d_01",
 						["coord"] = { 57.2, 89.9, 205 },
+						["provider"] = { "o", 203305 },	-- Crucible of Nazsharin
 						["sourceQuest"] = 25862,	-- Stolen Property
 					}),
 					q(25539, {	-- Clamming Up
@@ -798,20 +797,18 @@ _.Zones =
 						["sourceQuest"] = 25968,	-- Desperate Plan
 					}),
 					q(25583, {	-- Upon the Scene of Battle (A)
-						--["objectID"] = 203140,	-- Broken Prong
-						["icon"] = "Interface\\Icons\\inv_weapon_halberd_12",
 						["coord"] = { 40.4, 75.4, 205 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "o", 203140 },	-- Broken Prong
 						["sourceQuests"] = {
 							25540,	-- Bellies Await
 							27393,	-- The Call of the Blade (breadcrumb)
 						},
 					}),
 					q(25956, {	-- Upon the Scene of Battle (H)
-						--["objectID"] = 203140,	-- Broken Prong
-						["icon"] = "Interface\\Icons\\inv_weapon_halberd_12",
 						["coord"] = { 40.4, 75.4, 205 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "o", 203140 },	-- Broken Prong
 						["sourceQuests"] = {
 							25595,	-- Something Edible
 							27394,	-- The Call of the Blade (breadcrumb)

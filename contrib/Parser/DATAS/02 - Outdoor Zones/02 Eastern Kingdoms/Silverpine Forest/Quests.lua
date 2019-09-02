@@ -186,17 +186,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
 				}),
-				i(61505, {	-- Partially Digested Head
+				q(27574, {	-- I Never Forget a Face
 					["crs"] = { 45896 },	-- Marsh Crocolisk
 					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 61505 },	-- Partially Digested Head
 					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
-					["g"] = {
-						q(27574, {	-- I Never Forget a Face
-							["provider"] = { "n", 45896 },	-- March Crocolisk
-							["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
-							["races"] = HORDE_ONLY,
-						}),
-					},
+					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
+					["races"] = HORDE_ONLY,
 				}),
 				q(26998, {	-- Iterating Upon Success
 					["provider"] = { "n", 44784 },	-- High Apothecary Shana T'veen
@@ -435,10 +431,9 @@ _.Zones =
 					["sourceQuests"] = { 27056 },	-- Belmont's Report
 				}),
 				q(27232, { 	-- The Waters Run Red...
-					--["objectID"] = 205350,	-- Horde Communication Panel
-					["icon"] = "Interface\\Icons\\INV_Gizmo_GoblinBoomBox_01",
 					["coord"] = { 59.1, 34.2, 21 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 205350 },	-- Horde Communication Panel
 					["sourceQuests"] = { 27231 },	-- Reinforcements from Fenris
 					["g"] = {
 						i(62853),	-- Blood Offering Platter
@@ -497,9 +492,9 @@ _.Zones =
 					["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 				}),
 				q(27045, { 	-- Waiting to Exsanguinate
-					--["objectID"] = 205143,	-- Abandoned Outhouse
 					["coord"] = { 53.8, 12.9, 21 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 205143 },	-- Abandoned Outhouse
 					["sourceQuests"] = { 27039 },	-- Dangerous Intentions
 					["g"] = {
 						i(62833),	-- Cloak of Courage

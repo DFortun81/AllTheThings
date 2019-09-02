@@ -1628,16 +1628,14 @@ _.Zones =
 				}),
 				q(28243, {	-- The Eyes Have It (A)
 					["sourceQuests"] = { 28242 },	-- We All Must Sacrifice
-					--["objectID"] = 206569,	-- Eye of Twilight
-					["icon"] = "Interface\\Icons\\INV_Jewelcrafting_Nightseye_01",
 					["coord"] = { 57.9, 33.5, 241 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 206569 },	-- Eye of Twilight
 				}),
 				q(27954, {	-- The Eyes Have It (H)
-					--["objectID"] = 206569,	-- Eye of Twilight
-					["icon"] = "Interface\\Icons\\INV_Jewelcrafting_Nightseye_01",
 					["coord"] = { 57.9, 33.5, 241 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 206569 },	-- Eye of Twilight
 					["sourceQuest"] = 27951,	-- We All Must Sacrifice
 				}),
 				q(27999, {	-- The Fate of the Doyles
@@ -1895,16 +1893,14 @@ _.Zones =
 				}),
 				q(28242, {	-- We All Must Sacrifice (A)
 					["sourceQuests"] = { 28241 },	-- A Vision of Twilight
-					--["objectID"] = 206569,	-- Eye of Twilight
-					["icon"] = "Interface\\Icons\\INV_Jewelcrafting_Nightseye_01",
 					["coord"] = { 57.9, 33.5, 241 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 206569 },	-- Eye of Twilight
 				}),
 				q(27951, {	-- We All Must Sacrifice (H)
-					--["objectID"] = 206569,	-- Eye of Twilight
-					["icon"] = "Interface\\Icons\\INV_Jewelcrafting_Nightseye_01",
 					["coord"] = { 57.9, 33.5, 241 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 206569 },	-- Eye of Twilight
 					["sourceQuest"] = 27947,	-- A Vision of Twilight
 				}),
 				q(27803, {	-- Welcome Relief

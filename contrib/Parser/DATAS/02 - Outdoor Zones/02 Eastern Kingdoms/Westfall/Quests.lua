@@ -25,10 +25,9 @@ _.Zones =
 					},
 				}),
 				q(26353, {	-- Captain Sanders' Hidden Treasure (#1)
-				--	["itemID"] = 1357,	-- Captain Sanders' Treasure Map
+					["provider"] = { "i", 1357 },	-- Captain Sanders' Treasure Map
 					["coord"] = { 49.2, 9.80, 52 },	-- center of the area where the mobs spawn
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_misc_map_01",
 					["crs"] = {
 						515,	-- Murloc Raider
 						126,	-- Murloc Coastrunner
@@ -37,24 +36,21 @@ _.Zones =
 				}),
 				q(26354, {	-- Captain Sanders' Hidden Treasure (#2)
 					["sourceQuests"] = { 26353 },	-- Captain Sanders' Hidden Treasure (#1)
-				--	["objectID"] = 307330,	-- Captain's Footlocker -- object 35 for pre-cata
+					["provider"] = { "o", 307330 },	-- Captain's Footlocker -- object 35 for pre-cata
 					["coord"] = { 25.9, 47.7, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_misc_crate01",
 				}),
 				q(26355, {	-- Captain Sanders' Hidden Treasure (#3)
 					["sourceQuests"] = { 26354 },	-- Captain Sanders' Hidden Treasure (#2)
-				--	["objectID"] = 307307,	-- broken barrel -- object 36 (Captain's Footlocker) possibly pre-cata?
+					["provider"] = { "o", 307307 },	-- broken barrel -- object 36 (Captain's Footlocker) possibly pre-cata?
 					["coord"] = { 40.6, 47.8, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_cask_03",
 				}),
 				q(26356, {	-- Captain Sanders' Hidden Treasure (#4)
 					["sourceQuests"] = { 26355 },	-- Captain Sanders' Hidden Treasure (#3)
-				--	["objectID"] = 307277,	-- Old Jug -- object 34 (old jug) possibly pre-cata?
+					["provider"] = { "o", 307277 },	-- Old Jug -- object 34 (old jug) possibly pre-cata?
 					["coord"] = { 40.5, 16.8, 52 },
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_drink_11",
 					["g"] = {
 						i(3344),	-- Captain Sanders' Sash
 						i(3342),	-- Captain Sanders' Shirt
@@ -72,10 +68,9 @@ _.Zones =
 				}),
 				q(26296, {	-- Evidence Collection
 					["sourceQuests"] = { 26292 },	-- To Moonbrook
-				--	["itemID"] = 58117,	-- Red Bandana
+					["provider"] = { "i", 58117 },	-- Red Bandana
 					["coord"] = { 42.6, 69.4, 52 },	-- center of area where Moonbrook Thugs spawn
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_misc_clothscrap_02",
 					["crs"] = { 42677 },	-- Moonbrook Thug
 					["g"] = {
 						i(58921),	-- Evidence Collection Gloves
@@ -108,10 +103,9 @@ _.Zones =
 				q(26252, {	-- Heart of the Watcher
 					["sourceQuests"] = { 26236 },	-- Shakedown at the Saldean's
 				--	SQ needs verification.  might only be available when "Times are Tough" is in log, or might have 0 prereqs
-				--	["itemID"] = 57935,	-- Harvest Watcher Heart
+					["provider"] = { "i", 57935 },	-- Harvest Watcher Heart
 					["coord"] = { 54.4, 33.2, 52 },	-- center of area where Harvest Watchers spawn
 					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_misc_enggizmos_04",
 					["crs"] = { 114 },	-- Harvest Watcher
 				}),
 				q(26266, {	-- Hope for the People

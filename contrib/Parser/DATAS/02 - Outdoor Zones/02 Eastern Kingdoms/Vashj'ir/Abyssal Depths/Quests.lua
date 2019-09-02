@@ -49,7 +49,7 @@ _.Zones =
 						["coord"] = { 38.4, 45.3, 204 },
 						["sourceQuest"] = 26140,	-- Communing with the Ancient
 					}),
-					q(26181, {	-- Back to Darkbreak Cove 
+					q(26181, {	-- Back to Darkbreak Cove
 						["provider"] = { "n", 42197 },	-- L'ghorek
 						["coord"] = { 38.4, 45.3, 204 },
 						["races"] = ALLIANCE_ONLY,
@@ -158,8 +158,8 @@ _.Zones =
 						["sourceQuest"] = 29336,	-- Into Coaxing Tides
 					}),
 					q(26019, {	-- Enormous Eel Egg
-						["itemID"] = 56570,	-- Enormous Eel Egg
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "i", 56570 },	-- Enormous Eel Egg
 						["sourceQuest"] = 26015,	-- Phosphora Hunting
 						["crs"] = {
 							41925,	-- Coldlight Hunters
@@ -234,8 +234,8 @@ _.Zones =
 						},
 					}),
 					q(26090, {	-- I Brought You This Egg
-						["itemID"] = 56570,	-- Enormous Eel Egg
 						["races"] = HORDE_ONLY,
+						["provider"] = { "i", 56570 },	-- Enormous Eel Egg
 						["sourceQuest"] = 26087,	-- "Glow-Juice"
 						["crs"] = {
 							41925,	-- Coldlight Hunters
@@ -282,7 +282,7 @@ _.Zones =
 							i(59650),	-- Glovaal's Choppink Svord
 						},
 					}),
-					q(26086, {	-- Orako 
+					q(26086, {	-- Orako
 						["provider"] = { "n", 41663 },	-- Captain "Jewels" Verne
 						["coord"] = { 51.4, 61.5, 204 },
 						["races"] = HORDE_ONLY,
@@ -309,10 +309,10 @@ _.Zones =
 						["sourceQuest"] = 26014,	-- The Brothers Digsong
 					}),
 					q(26144, {	-- Prisoners (A)
-						["itemID"] = 57102,	-- Twilight Cage Key
 						["crs"] = { 41652 },	-- Twilight Champion
-						["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "i", 57102 },	-- Twilight Cage Key
+						["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
 						["sourceQuest"] = 26140,	-- Communing with the Ancient
 						["g"] = {
 							i(59615),	-- Gnomeregan Mindslicer
@@ -321,10 +321,10 @@ _.Zones =
 						},
 					}),
 					q(26149, {	-- Prisoners (H)
-						["itemID"] = 57118,	-- Twilight Cage Key
 						["crs"] = { 41652 },	-- Twilight Champion
-						["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
 						["races"] = HORDE_ONLY,
+						["provider"] = { "i", 57118 },	-- Twilight Cage Key
+						["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
 						["sourceQuest"] = 26140,	-- Communing with the Ancient
 						["g"] = {
 							i(59612),	-- Darkspear Ritual Blade

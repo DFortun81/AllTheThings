@@ -51,7 +51,7 @@ _.Zones =
 						i(63223),	-- Gretel's Pendant
 					},
 				}),
-				q(7723, {	-- Curse These Fat Fingers
+				q(7723,  {	-- Curse These Fat Fingers
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -80,7 +80,7 @@ _.Zones =
 					["coord"] = { 68.5, 53.3, 32 },
 					["sourceQuests"] = { 27963 },	-- A New Master...But Who?
 				}),
-				q(7724, {	-- Fiery Menace!
+				q(7724,  {	-- Fiery Menace!
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -99,7 +99,7 @@ _.Zones =
 					["maxReputation"] = { 59, REVERED },
 					["sourceQuest"] = 28064,	-- Welcome to the Brotherhood
 				}),
-				q(7737, {	-- Gaining Even More Acceptance
+				q(7737,  {	-- Gaining Even More Acceptance
 					["provider"] = { "n", 14624 },	-- Master Smith Burninate
 					["coord"] = { 38.6, 28.7, 32 },
 					["repeatable"] = true,
@@ -111,7 +111,7 @@ _.Zones =
 					["coord"] = { 38.4, 27.8, 32 },
 					["sourceQuests"] = { 27965 }, -- Thorium Point: The Seat of the Brotherhood
 				}),
-				q(7727, {	-- Incendosaurs? Whateverosaur is More Like It
+				q(7727,  {	-- Incendosaurs? Whateverosaur is More Like It
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -126,7 +126,7 @@ _.Zones =
 						28099,	-- Rasha'krak (reported as SQ by Evelynn on Discord)
 					},
 				}),
-				q(7702, {	-- Kill 'em With Sleep Deprivation
+				q(7702,  {	-- Kill 'em With Sleep Deprivation
 					["u"] = 40,	-- Legacy
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -143,7 +143,7 @@ _.Zones =
 						28056,	-- Rise, Obsidion
 					},
 				}),
-				q(4450, {	-- Ledger from Tanaris
+				q(4450,  {	-- Ledger from Tanaris
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -151,19 +151,20 @@ _.Zones =
 						un(2, i(11861)),	-- Girdle of Reprisal
 					},
 				}),
-				i(62933, {	-- Chambermaid Pillaclencher's Pillow
-					--["objectID"] = 179832,	-- Pillaclencher's Ornate Pillow
-					q(28058, {	-- Look at the Size of It!
-						["coord"] = { 46.0, 29.8, 32 },
-						["sourceQuests"] = {
-							28054,	-- Slavery Is Bad
-							28055,	-- Sweet, Horrible Freedom
-							28056,	-- Rise, Obsidion
-						},
-						["g"] = {
-							i(18951),	-- Evonice's Landin' Pilla
-						},
-					}),
+				q(28058, {	-- Look at the Size of It!
+					["coord"] = { 46.0, 29.8, 32 },
+					["providers"] = {
+						{ "i", 62933 },	-- Chambermaid Pillaclencher's Pillow
+						{ "o", 179832 },	-- Pillaclencher's Ornate Pillow
+					},
+					["sourceQuests"] = {
+						28054,	-- Slavery Is Bad
+						28055,	-- Sweet, Horrible Freedom
+						28056,	-- Rise, Obsidion
+					},
+					["g"] = {
+						i(18951),	-- Evonice's Landin' Pilla
+					},
 				}),
 				q(28053, {	-- Lunk Like Your Style
 					["provider"] = { "n", 47429 },	-- Lunk
@@ -243,7 +244,7 @@ _.Zones =
 						i(63212),	-- Ash Feather Cloak
 					},
 				}),
-				q(3378, {	-- Prayer to Elune
+				q(3378,  {	-- Prayer to Elune
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -284,7 +285,7 @@ _.Zones =
 						i(156936),	-- Dark Iron Pike
 					},
 				}),
-				q(3566, {	-- Rise, Obsidion!
+				q(3566,  {	-- Rise, Obsidion!
 					["u"] = 40,
 					["g"] = {
 						un(2, i(10740)),	-- Centurion Legplates
@@ -297,7 +298,7 @@ _.Zones =
 					["coord"] = { 39.4, 67.8, 32 },
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
 				}),
-				q(3463, {	-- Set Them Ablaze
+				q(3463,  {	-- Set Them Ablaze
 					["u"] = 40,
 					["g"] = {
 						un(2, i(10744)),	-- Axe of the Ebon Drake
@@ -305,7 +306,7 @@ _.Zones =
 						un(2, i(10743)),	-- Drakefire Headguard
 					},
 				}),
-				q(3379, {	-- Shadoweaver
+				q(3379,  {	-- Shadoweaver
 					["u"] = 40,
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
 					["requireSkill"] = 197,	-- Tailoring
@@ -324,7 +325,7 @@ _.Zones =
 					["coord"] = { 40.8, 51.6, 32 },
 					["sourceQuest"] = 28052,	-- Operation: Stir the Cauldron
 				}),
-				q(7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
+				q(7728,  {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
 					["u"] = 40,
 					["g"] = {
 						un(2, i(19123)),	-- Everwarm Handwraps
@@ -360,7 +361,7 @@ _.Zones =
 					["provider"] = { "n", 14634 },	-- Lookout Captain Lolo Longstriker
 					["coord"] = { 37.7, 26.5, 32 },
 				}),
-				q(3385, {	-- The Undermarket
+				q(3385,  {	-- The Undermarket
 					["u"] = 40,
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
 					["sourceQuest"] = 3379,	-- Shadoweaver
@@ -369,7 +370,7 @@ _.Zones =
 						un(2, i(10462)),	-- Shadowy Belt
 					},
 				}),
-				q(3402, {	-- The Undermarket
+				q(3402,  {	-- The Undermarket
 					["u"] = 40,
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
 					["sourceQuest"] = 3385,	-- The Undermarket
@@ -412,7 +413,7 @@ _.Zones =
 					["coord"] = { 42.3, 34.5, 32 },
 					["sourceQuest"] = 28057,	-- Kill 'em With Sleep Deprivation
 				}),
-				q(7701, {	-- WANTED: Overseer Maltorius
+				q(7701,  {	-- WANTED: Overseer Maltorius
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
