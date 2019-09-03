@@ -5814,40 +5814,18 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{	-- Handguards of the Prehistoric Marauder
 								["itemID"] = 99408,	-- Handguards of the Prehistoric Marauder
 							},
-						},								
-					},									
-					{	-- Gauntlets of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
-						["itemID"] = 99720,	-- Gauntlets of the Cursed Vanquisher
-						["classes"] = {
-							8,	-- Mage
-							11,	-- Druid
-							4,	-- Rogue
-							6,	-- Death Knight
 						},
-						["g"] = {
-							{	-- Chronomancer Gloves
-								["itemID"] = 99397,	-- Chronomancer Gloves
-							},
-							{	-- Grips of the Shattered Vale
-								["itemID"] = 99327,	-- Grips of the Shattered Vale
-							},
-							{	-- Handguards of the Shattered Vale
-								["itemID"] = 99420,	-- Handguards of the Shattered Vale
-							},
-							{	-- Handwraps of the Shattered Vale
-								["itemID"] = 99435,	-- Handwraps of the Shattered Vale
-							},
-							{	-- Gloves of the Barbed Assassin
-								["itemID"] = 99355,	-- Gloves of the Barbed Assassin
-							},
-							{	-- Gauntlets of Cyclopean Dread
-								["itemID"] = 99336,	-- Gauntlets of Cyclopean Dread
-							},
-							{	-- Handguards of Cyclopean Dread
-								["itemID"] = 99331,	-- Handguards of Cyclopean Dread
-							},
-						},								
-					},	
+					},
+					i(99720, {	-- Gauntlets of the Cursed Vanquisher
+						i(99397),	-- Chronomancer Gloves
+						i(99336),	-- Gauntlets of Cyclopean Dread
+						i(99355),	-- Gloves of the Barbed Assassin
+						i(99432),	-- Gloves of the Shattered Vale
+						i(99327),	-- Grips of the Shattered Vale
+						i(99331),	-- Handguards of Cyclopean Dread
+						i(99420),	-- Handguards of the Shattered Vale
+						i(99435),	-- Handwraps of the Shattered Vale
+					}),	
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
