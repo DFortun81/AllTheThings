@@ -86,70 +86,135 @@ _.Zones =
 						},
 					}),
 					n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
-						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 51.6, 17.6, 123 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(43956, {	-- Reins of the Black War Mammoth
-								ach(2080),		-- Black War Mammoth
+								["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
+								["g"] = {
+									ach(2080),		-- Black War Mammoth
+								},
 							}),
-							i(46058),	-- Titan-Forged Breastplate of Triumph
-							i(46059),	-- Titan-Forged Chain Armor of Triumph
-							i(44903),	-- Titan-Forged Chain Helm of Triumph
-							i(48983),	-- Titan-Forged Chain Leggings of Triumph
-							i(46057),	-- Titan-Forged Chestguard of Salvation
-							i(48991),	-- Titan-Forged Cloth Leggings of Salvation
-							i(48997),	-- Titan-Forged Cloth Trousers of Domination
-							i(44910),	-- Titan-Forged Hood of Dominance
-							i(44909),	-- Titan-Forged Hood of Salvation
-							i(46064),	-- Titan-Forged Leather Chestguard of Dominance
-							i(46063),	-- Titan-Forged Leather Chestguard of Salvation
-							i(44907),	-- Titan-Forged Leather Helm of Dominance
-							i(44906),	-- Titan-Forged Leather Helm of Salvation
-							i(44908),	-- Titan-Forged Leather Helm of Triumph
-							i(48998),	-- Titan-Forged Leather Legguards of Dominance
-							i(48987),	-- Titan-Forged Leather Legguards of Salvation
-							i(48988),	-- Titan-Forged Leather Legguards of Triumph
-							i(46062),	-- Titan-Forged Leather Tunic of Triumph
-							i(46061),	-- Titan-Forged Mail Armor of Domination
-							i(44904),	-- Titan-Forged Mail Helm of Dominance
-							i(48990),	-- Titan-Forged Mail Leggings of Dominance
-							i(44901),	-- Titan-Forged Plate Headcover of Salvation
-							i(44902),	-- Titan-Forged Plate Helm of Triumph
-							i(48992),	-- Titan-Forged Plate Legguards of Salvation
-							i(48993),	-- Titan-Forged Plate Legguards of Triumph
-							i(46065),	-- Titan-Forged Raiment of Dominance
-							i(46066),	-- Titan-Forged Raiment of Salvation
-							i(44905),	-- Titan-Forged Ringmail Helm of Salvation
-							i(48994),	-- Titan-Forged Ringmail Leggings of Salvation
-							i(46060),	-- Titan-Forged Ringmail of Salvation
-							i(51573),	-- Titan-Forged Shoulderpads of Domination
-							i(51572),	-- Titan-Forged Shoulderpads of Salvation
-							i(51581),	-- Titan-Forged Shoulderplates of Salvation
-							i(51580),	-- Titan-Forged Shoulderplates of Triumph
-							i(51578),	-- Titan-Forged Shoulders of Dominance
-							i(51579),	-- Titan-Forged Shoulders of Salvation
-							i(51577),	-- Titan-Forged Shoulders of Triumph
-							i(51574),	-- Titan-Forged Spaulders of Dominance
-							i(51575),	-- Titan-Forged Spaulders of Salvation
-							i(51576),	-- Titan-Forged Spaulders of Triumph
-							i(122375),	-- Aged Pauldrons of The Five Thunders
-							i(122369),	-- Battleworn Thrash Blade
-							i(122376),	-- Exceptional Stormshroud Shoulders
-							i(122378),	-- Exquisite Sunderseer Mantle
-							i(122368),	-- Grand Staff of Jordan
-							i(122370),	-- Inherited Insignia of the Horde
-							i(122530),	-- Inherited Mark of Tyranny
-							i(122377),	-- Lasting Feralheart Spaulders
-							i(122373),	-- Pristine Lightforge Spaulders
-							i(122374),	-- Prized Beastmaster's Mantle
-							i(122365),	-- Reforged Truesilver Champion
-							i(122364),	-- Sharpened Scarlet Kris
-							i(122372),	-- Strengthened Stockade Pauldrons
-							i(122367),	-- The Blessed Hammer of Grace
-							i(122366),	-- Upgraded Dwarven Hand Cannon
-							i(122338),	-- Ancient Heirloom Armor Casing
-							i(122339),	-- Ancient Heirloom Scabbard
+							i(46058, {	-- Titan-Forged Breastplate of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46059, {	-- Titan-Forged Chain Armor of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44903, {	-- Titan-Forged Chain Helm of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48983, {	-- Titan-Forged Chain Leggings of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46057, {	-- Titan-Forged Chestguard of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48991, {	-- Titan-Forged Cloth Leggings of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48997, {	-- Titan-Forged Cloth Trousers of Domination
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44910, {	-- Titan-Forged Hood of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44909, {	-- Titan-Forged Hood of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46064, {	-- Titan-Forged Leather Chestguard of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46063, {	-- Titan-Forged Leather Chestguard of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44907, {	-- Titan-Forged Leather Helm of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44906, {	-- Titan-Forged Leather Helm of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44908, {	-- Titan-Forged Leather Helm of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48998, {	-- Titan-Forged Leather Legguards of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48987, {	-- Titan-Forged Leather Legguards of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48988, {	-- Titan-Forged Leather Legguards of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46062, {	-- Titan-Forged Leather Tunic of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46061, {	-- Titan-Forged Mail Armor of Domination
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44904, {	-- Titan-Forged Mail Helm of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48990, {	-- Titan-Forged Mail Leggings of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44901, {	-- Titan-Forged Plate Headcover of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44902, {	-- Titan-Forged Plate Helm of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48992, {	-- Titan-Forged Plate Legguards of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48993, {	-- Titan-Forged Plate Legguards of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46065, {	-- Titan-Forged Raiment of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46066, {	-- Titan-Forged Raiment of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44905, {	-- Titan-Forged Ringmail Helm of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48994, {	-- Titan-Forged Ringmail Leggings of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46060, {	-- Titan-Forged Ringmail of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51573, {	-- Titan-Forged Shoulderpads of Domination
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51572, {	-- Titan-Forged Shoulderpads of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51581, {	-- Titan-Forged Shoulderplates of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51580, {	-- Titan-Forged Shoulderplates of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51578, {	-- Titan-Forged Shoulders of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51579, {	-- Titan-Forged Shoulders of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51577, {	-- Titan-Forged Shoulders of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51574, {	-- Titan-Forged Spaulders of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51575, {	-- Titan-Forged Spaulders of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51576, {	-- Titan-Forged Spaulders of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
 						},
 					}),
 					n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
@@ -228,70 +293,135 @@ _.Zones =
 						},
 					}),
 					n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
-						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 51.6, 17.6, 123 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(44077, {	-- Reins of the Black War Mammoth
-								ach(2080),		-- Black War Mammoth
+								["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
+								["g"] = {
+									ach(2080),		-- Black War Mammoth
+								},
 							}),
-							i(46058),	-- Titan-Forged Breastplate of Triumph
-							i(46059),	-- Titan-Forged Chain Armor of Triumph
-							i(44903),	-- Titan-Forged Chain Helm of Triumph
-							i(48983),	-- Titan-Forged Chain Leggings of Triumph
-							i(46057),	-- Titan-Forged Chestguard of Salvation
-							i(48991),	-- Titan-Forged Cloth Leggings of Salvation
-							i(48997),	-- Titan-Forged Cloth Trousers of Domination
-							i(44910),	-- Titan-Forged Hood of Dominance
-							i(44909),	-- Titan-Forged Hood of Salvation
-							i(46064),	-- Titan-Forged Leather Chestguard of Dominance
-							i(46063),	-- Titan-Forged Leather Chestguard of Salvation
-							i(44907),	-- Titan-Forged Leather Helm of Dominance
-							i(44906),	-- Titan-Forged Leather Helm of Salvation
-							i(44908),	-- Titan-Forged Leather Helm of Triumph
-							i(48998),	-- Titan-Forged Leather Legguards of Dominance
-							i(48987),	-- Titan-Forged Leather Legguards of Salvation
-							i(48988),	-- Titan-Forged Leather Legguards of Triumph
-							i(46062),	-- Titan-Forged Leather Tunic of Triumph
-							i(46061),	-- Titan-Forged Mail Armor of Domination
-							i(44904),	-- Titan-Forged Mail Helm of Dominance
-							i(48990),	-- Titan-Forged Mail Leggings of Dominance
-							i(44901),	-- Titan-Forged Plate Headcover of Salvation
-							i(44902),	-- Titan-Forged Plate Helm of Triumph
-							i(48992),	-- Titan-Forged Plate Legguards of Salvation
-							i(48993),	-- Titan-Forged Plate Legguards of Triumph
-							i(46065),	-- Titan-Forged Raiment of Dominance
-							i(46066),	-- Titan-Forged Raiment of Salvation
-							i(44905),	-- Titan-Forged Ringmail Helm of Salvation
-							i(48994),	-- Titan-Forged Ringmail Leggings of Salvation
-							i(46060),	-- Titan-Forged Ringmail of Salvation
-							i(51573),	-- Titan-Forged Shoulderpads of Domination
-							i(51572),	-- Titan-Forged Shoulderpads of Salvation
-							i(51581),	-- Titan-Forged Shoulderplates of Salvation
-							i(51580),	-- Titan-Forged Shoulderplates of Triumph
-							i(51578),	-- Titan-Forged Shoulders of Dominance
-							i(51579),	-- Titan-Forged Shoulders of Salvation
-							i(51577),	-- Titan-Forged Shoulders of Triumph
-							i(51574),	-- Titan-Forged Spaulders of Dominance
-							i(51575),	-- Titan-Forged Spaulders of Salvation
-							i(51576),	-- Titan-Forged Spaulders of Triumph
-							i(122375),	-- Aged Pauldrons of The Five Thunders
-							i(122369),	-- Battleworn Thrash Blade
-							i(122376),	-- Exceptional Stormshroud Shoulders
-							i(122378),	-- Exquisite Sunderseer Mantle
-							i(122368),	-- Grand Staff of Jordan
-							i(122370),	-- Inherited Insignia of the Horde
-							i(122530),	-- Inherited Mark of Tyranny
-							i(122377),	-- Lasting Feralheart Spaulders
-							i(122373),	-- Pristine Lightforge Spaulders
-							i(122374),	-- Prized Beastmaster's Mantle
-							i(122365),	-- Reforged Truesilver Champion
-							i(122364),	-- Sharpened Scarlet Kris
-							i(122372),	-- Strengthened Stockade Pauldrons
-							i(122367),	-- The Blessed Hammer of Grace
-							i(122366),	-- Upgraded Dwarven Hand Cannon
-							i(122338),	-- Ancient Heirloom Armor Casing
-							i(122339),	-- Ancient Heirloom Scabbard
+							i(46058, {	-- Titan-Forged Breastplate of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46059, {	-- Titan-Forged Chain Armor of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44903, {	-- Titan-Forged Chain Helm of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48983, {	-- Titan-Forged Chain Leggings of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46057, {	-- Titan-Forged Chestguard of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48991, {	-- Titan-Forged Cloth Leggings of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48997, {	-- Titan-Forged Cloth Trousers of Domination
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44910, {	-- Titan-Forged Hood of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44909, {	-- Titan-Forged Hood of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46064, {	-- Titan-Forged Leather Chestguard of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46063, {	-- Titan-Forged Leather Chestguard of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44907, {	-- Titan-Forged Leather Helm of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44906, {	-- Titan-Forged Leather Helm of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44908, {	-- Titan-Forged Leather Helm of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48998, {	-- Titan-Forged Leather Legguards of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48987, {	-- Titan-Forged Leather Legguards of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48988, {	-- Titan-Forged Leather Legguards of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46062, {	-- Titan-Forged Leather Tunic of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46061, {	-- Titan-Forged Mail Armor of Domination
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44904, {	-- Titan-Forged Mail Helm of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48990, {	-- Titan-Forged Mail Leggings of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44901, {	-- Titan-Forged Plate Headcover of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44902, {	-- Titan-Forged Plate Helm of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48992, {	-- Titan-Forged Plate Legguards of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48993, {	-- Titan-Forged Plate Legguards of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46065, {	-- Titan-Forged Raiment of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46066, {	-- Titan-Forged Raiment of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(44905, {	-- Titan-Forged Ringmail Helm of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(48994, {	-- Titan-Forged Ringmail Leggings of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(46060, {	-- Titan-Forged Ringmail of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51573, {	-- Titan-Forged Shoulderpads of Domination
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51572, {	-- Titan-Forged Shoulderpads of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51581, {	-- Titan-Forged Shoulderplates of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51580, {	-- Titan-Forged Shoulderplates of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51578, {	-- Titan-Forged Shoulders of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51579, {	-- Titan-Forged Shoulders of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51577, {	-- Titan-Forged Shoulders of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51574, {	-- Titan-Forged Spaulders of Dominance
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51575, {	-- Titan-Forged Spaulders of Salvation
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
+							i(51576, {	-- Titan-Forged Spaulders of Triumph
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							}),
 						},
 					}),
 				},

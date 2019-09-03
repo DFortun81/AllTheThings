@@ -194,7 +194,12 @@ _.GearSets =
 					un(2, i(69888)),	-- Burnished Legplates of Might
 					i(122264),	-- Burnished Legplates of Might
 					un(2, i(69890)),	-- Burnished Pauldrons of Might
-					i(122388),	-- Burnished Pauldrons of Might
+					i(122388, {	-- Burnished Pauldrons of Might
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
 					un(2, i(93891)),	-- Gleaming Breastplate of Valor
 					un(2, i(93890)),	-- Gleaming Spaulders of Valor
 					un(2, i(93894)),	-- Immaculate Lightforge Spaulders
@@ -205,12 +210,19 @@ _.GearSets =
 					un(2, i(62023)),	-- Polished Legplates of Valor
 					i(122251),	-- Polished Legplates of Valor
 					un(2, i(42949)),	-- Polished Spaulders of Valor
-					i(122355),	-- Polished Spaulders of Valor
+					i(122355, {	-- Polished Spaulders of Valor
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
 					i(127010),	-- Pristine Lightforge Breastplate
 					i(127012),	-- Pristine Lightforge Helm
 					i(127011),	-- Pristine Lightforge Legplates
 					un(2, i(44100)),	-- Pristine Lightforge Spaulders
-					i(122373),	-- Pristine Lightforge Spaulders
+					i(122373, {	-- Pristine Lightforge Spaulders
+						["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+					}),
 					un(2, i(93895)),	-- Reinforced Stockade Pauldrons
 					un(2, i(44099)),	-- Strengthened Stockade Pauldrons
 					i(122372),	-- Strengthened Stockade Pauldrons

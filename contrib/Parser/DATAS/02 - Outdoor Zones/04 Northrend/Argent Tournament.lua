@@ -2108,7 +2108,7 @@ _.Zones =
 									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 								},
 							}),
-							i(122382, {	-- Preened Ironfeather Brestplate
+							i(122382, {	-- Preened Ironfeather Breastplate
 								["cost"] = {
 									{ "c", 241, 25 },	-- 25x Champion's Seal
 									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
@@ -2174,13 +2174,6 @@ _.Zones =
 									{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 								},
 							}),
-
-
-
-							
-							
-							
-							
 						},
 					}),
 					n(33310, {	-- Derrick Brindlebeard <Ironforge Quartermaster>

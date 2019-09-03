@@ -605,21 +605,57 @@ _.Zones =
 					["coord"] = { 38.0, 70.8, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122364),	-- Sharpened Scarlet Kris
-						i(122365),	-- Reforged Truesilver Champion
-						i(122366),	-- Upgraded Dwarven Hand Cannon
-						i(122367),	-- The Blessed Hammer of Grace
-						i(122368),	-- Grand Staff of Jordan
-						i(122369),	-- Battleworn Thrash Blade
-						i(122370),	-- Inherited Insignia of the Horde
-						i(122372),	-- Strengthened Stockade Pauldrons
-						i(122373),	-- Pristine Lightforge Spaulders
-						i(122374),	-- Prized Beastmaster's Mantle
-						i(122375),	-- Aged Paundrons of The Five Thunders
-						i(122376),	-- Exceptional Stormshroud Shoulders
-						i(122377),	-- Lasting Feralheart Spaulders
-						i(122378),	-- Exquisite Sunderseer Mantle
-						i(122530),	-- Inherited Mark of Tyranny
+						i(122375, {	-- Aged Paundrons of The Five Thunders
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122338, {	-- Ancient Heirloom Armor Casing
+							["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+						}),
+						i(122339, {	-- Ancient Heirloom Scabbard
+							["cost"] = { { "i", 137642, 14 }, },	-- 14x Mark of Honor
+						}),
+						i(122369, {	-- Battleworn Thrash Blade
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122376, {	-- Exceptional Stormshroud Shoulders
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122378, {	-- Exquisite Sunderseer Mantle
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122368, {	-- Grand Staff of Jordan
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122370, {	-- Inherited Insignia of the Horde
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(122530, {	-- Inherited Mark of Tyranny
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(122377, {	-- Lasting Feralheart Spaulders
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122373, {	-- Pristine Lightforge Spaulders
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122374, {	-- Prized Beastmaster's Mantle
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122365, {	-- Reforged Truesilver Champion
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122364, {	-- Sharpened Scarlet Kris
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122372, {	-- Strengthened Stockade Pauldrons
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122367, {	-- The Blessed Hammer of Grace
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122366, {	-- Upgraded Dwarven Hand Cannon
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
 					},
 				}),
 				n(46555,  {	-- Gunra <Justice Quartermaster>

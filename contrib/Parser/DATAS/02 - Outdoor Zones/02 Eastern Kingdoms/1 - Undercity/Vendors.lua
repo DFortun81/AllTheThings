@@ -58,65 +58,298 @@ _.Zones =
 					["coord"] = { 78.2, 76.6, 90 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122349),	-- Bloodied Arcanite Reaper
-						i(122350),	-- Balanced Heartseeker
-						i(122351),	-- Venerable Dal'Rend's Sacred Charge
-						i(122352),	-- Charmed Ancient Bone Bow
-						i(122353),	-- Dignified HEadmaster's Charge
-						i(122354),	-- Devout Aurastone Hammer
-						i(122355),	-- Polished Spaulders of Valor
-						i(122356),	-- Champion Herod's Shoulder
-						i(122357),	-- Mystical Pauldrons of Elements
-						i(122358),	-- Stained Shadowcraft Spaulders
-						i(122359),	-- Preened Ironfeather Shoulders
-						i(122360),	-- Tattered Dreadmist Mantle
-						i(122361),	-- Swift Hand of Justice
-						i(122362),	-- Discerning Eye of the Beast
-						i(122363),	-- Burnished Warden Staff
-						i(122364),	-- Sharpened Scarlet Kris
-						i(122365),	-- Reforged Truesilver Champion
-						i(122366),	-- Upgraded Dwarven Hand Cannon
-						i(122367),	-- The Blessed Hammer of Grace
-						i(122368),	-- Grand Staff of Jordan
-						i(122369),	-- Battleworn Thrash Blade
+						i(122375, {	-- Aged Pauldrons of The Five Thunders
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122338, {	-- Ancient Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 23247, 350},		-- 350x Burning Blossom
+								{ "c", 241, 55 },		-- 55x Champion's Seal
+								{ "i", 21100, 40 },		-- 40x Coin of Ancestry
+								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
+								{ "i", 137642, 12 },	-- 12x Mark of Honor
+								{ "c", 1166, 750 },		-- 750x Timewarped Badge
+								{ "i", 33226, 250 },	-- 250x Tricky Treat
+							},
+						}),
+						i(122339, {	-- Ancient Heirloom Scabbard
+							["cost"] = {
+								{ "c", 241, 65 },		-- 65x Champion's Seal
+								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
+								{ "i", 49927, 200 },	-- 200 Love Token
+								{ "i", 137642, 14 },	-- 14x Mark of Honor
+								{ "c", 1166, 900 },		-- 900x Timewarped Badge
+							},
+						}),
+						i(122350, {	-- Balanced Heartseeker
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 23247, 600 },	-- 600x   Burning Blossom
+								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
+							},
+						}),
+						i(167732, {	-- Battle-Hardened Heirloom Scabbard
+							["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
+						}),
+						i(122369, {	-- Battleworn Thrash Blade
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122349, {	-- Bloodied Arcanite Reaper
+							["cost"] = {
+								{ "c", 241, 40 },	-- 40x Champion's Seal
+								{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+							},
+						}),
+						i(122389, {	-- Bloodsoaked Skullforge Reaver
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122387, {	-- Burnished Breastplate of Might
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122388, {	-- Burnished Pauldrons of Might
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122363, {	-- Burnished Warden Staff
+							["cost"] = {
+								{ "c", 241, 40 },	-- 40x Champion's Seal
+								{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+							},
+						}),
+						i(122356, {	-- Champion Herod's Shoulders
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122379, {	-- Champion's Deathdealer Breastplate
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122352, {	-- Charmed Ancient Bone Bow
+							["cost"] = {
+								{ "c", 241, 40 },	-- 40x Champion's Seal
+								{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+							},
+						}),
+						i(122354, {	-- Devout Aurastone Hammer
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122353, {	-- Dignified Headmaster's Charge
+							["cost"] = {
+								{ "c", 241, 40 },	-- 40x Champion's Seal
+								{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+							},
+						}),
+						i(122362, {	-- Discerning Eye of the Beast
+							["cost"] = {
+								{ "c", 241, 35 },	-- 35x Champion's Seal
+								{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
+							},
+						}),
+						i(140773),	-- Eagletalon Spear
+						i(122663),	-- Eternal Amulet of the Redeemed
+						i(122667),	-- Eternal Emberfury Talisman
+						i(122664),	-- Eternal Horizon Choker
+						i(122662),	-- Eternal Talisman of Evasion
+						i(122668),	-- Eternal Will of the Martyr
+						i(122666),	-- Eternal Woven Ivy Necklace
+						i(122376, {	-- Exceptional Stormshroud Shoulders
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122378, {	-- Exquisite Sunderseer Mantle
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122391, {	-- Flamescarred Draconian Deflector
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122368, {	-- Grand Staff of Jordan
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
 						i(122370, {	-- Inherited Insignia of the Horde
 							["races"] = HORDE_ONLY,
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(122372),	-- Strengthened Stockade Pauldrons
-						i(122373),	-- Pristine Lightforge Spaulders
-						i(122374),	-- Prized Beastmaster's Mantle
-						i(122375),	-- Aged Paundrons of The Five Thunders
-						i(122376),	-- Exceptional Stormshroud Shoulders
-						i(122377),	-- Lasting Feralheart Spaulders
-						i(122378),	-- Exquisite Sunderseer Mantle
-						i(122379),	-- Champion's Deathdealer Breastplate
-						i(122380),	-- Mystical Vest of Elements
-						i(122381),	-- Polished Breastplate of Valor
-						i(122382),	-- Preened Ironfeather Breastplate
-						i(122383),	-- Stained Shadowcraft Tunic
-						i(122384),	-- Tatered Dreadmist Robe
-						i(122385),	-- Venerable Mass of McGowan
-						i(122386),	-- Repurposed Lava Dredger
-						i(122387),	-- Burnished Breastplate of Might
-						i(122388),	-- Burnished Pauldrons of Might
-						i(122389),	-- Bloodsoaked Skullforge Reaver
-						i(122390),	-- Musty Tome of the Lost
-						i(122391),	-- Flamescarred Draconian Deflector
-						i(122392),	-- Weathered Observers Shield
-						i(122530),	-- Inherited Mark of Tyranny
-						i(122662),	-- Eternal Talisman of Evasion
-						i(122663),	-- Eternal Amulet of the Redeemed
-						i(122664),	-- Eternal Horizon Choker
-						i(122666),	-- Eternal Woven Ivy Necklace
-						i(122667),	-- Eternal Emberfury Talisman
-						i(122668),	-- Eternal Will of the Martyr
+						i(122530, {	-- Inherited Mark of Tyranny
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(122377, {	-- Lasting Feralheart Spaulders
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122390, {	-- Musty Tome of the Lost
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122357, {	-- Mystical Pauldrons of Elements
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122380, {	-- Mystical Vest of Elements
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122381, {	-- Polished Breastplate of Valor
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122355, {	-- Polished Spaulders of Valor
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122382, {	-- Preened Ironfeather Breastplate
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122359, {	-- Preened Ironfeather Shoulders
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
 						i(127010),	-- Pristine Lightforge Breastplate
-						i(140773),	-- Eagletalon Spear
-						i(150744, {	-- Walking Kalimdor with the Earthmother Toy
+						i(122373, {	-- Pristine Lightforge Spaulders
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122374, {	-- Prized Beastmaster's Mantle
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122365, {	-- Reforged Truesilver Champion
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122386, {	-- Repurposed Lava Dredger
+							["cost"] = {
+								{ "c", 241, 40 },	-- 40x Champion's Seal
+								{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+							},
+						}),
+						i(122364, {	-- Sharpened Scarlet Kris
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122358, {	-- Stained Shadowcraft Spaulders
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122383, {	-- Stained Shadowcraft Tunic
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122372, {	-- Strengthened Stockade Pauldrons
+							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
+						}),
+						i(122361, {	-- Swift Hand of Justice
+							["cost"] = {
+								{ "c", 241, 35 },	-- 35x Champion's Seal
+								{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
+							},
+						}),
+						i(122360, {	-- Tattered Dreadmist Mantle
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122384, {	-- Tattered Dreadmist Robe
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(150745, {	-- The Azeroth Campaign (TOY!)
 							["races"] = HORDE_ONLY,
 						}),
-						i(150745, {	-- The Azeroth Campaign Toy
+						i(122367, {	-- The Blessed Hammer of Grace
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122340, {	-- Timeworn Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 23247, 600 },	-- 600x   Burning Blossom
+								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
+								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
+								{ "i", 33226, 450 },	-- 450x   Tricky Treat
+							},
+						}),
+						i(122341, {	-- Timeworn Heirloom Scabbard
+							["cost"] = {
+								{ "i", 37829, 500 },	-- 500x   Brewfest Token
+								{ "i", 49927, 450 },	-- 450x   Love Token
+								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
+							},
+						}),
+						i(122366, {	-- Upgraded Dwarven Hand Cannon
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+						}),
+						i(122351, {	-- Venerable Dal'Rend's Sacred Charge
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(122385, {	-- Venerable Mass of McGowan
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
+						}),
+						i(150744, {	-- Walking Kalimdor with the Earthmother (TOY!)
 							["races"] = HORDE_ONLY,
+						}),
+						i(151614, {	-- Weathered Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 23247, 600 },	-- 600x   Burning Blossom
+								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
+								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
+								{ "i", 33226, 450 },	-- 450x   Tricky Treat
+							},
+						}),
+						i(151615, {	-- Weathered Heirloom Scabbard
+							["cost"] = {
+								{ "i", 37829, 500 },	-- 500x   Brewfest Token
+								{ "i", 49927, 450 },	-- 450x   Love Token
+								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
+							},
+						}),
+						i(122392, {	-- Weathered Observer's Shield
+							["cost"] = {
+								{ "c", 241, 25 },	-- 25x Champion's Seal
+								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+							},
 						}),
 					},
 				}),
