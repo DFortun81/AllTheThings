@@ -1362,7 +1362,6 @@ namespace ATT
                         }
 
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
-                    case "cost":
                     case "sym":
                         {
                             // Convert the data to a list of generic objects.
@@ -1374,6 +1373,42 @@ namespace ATT
                                 {
                                     var dict = value as Dictionary<object, object>;
                                     if (dict == null) return;
+                                    else newList = dict.Values.ToList();
+                                }
+                                newListOfLists = new List<List<object>>();
+                                foreach (var o in newList)
+                                {
+                                    var list = o as List<object>;
+                                    if (list == null)
+                                    {
+                                        var dict = o as Dictionary<object, object>;
+                                        if (dict == null) return;
+                                        else list = dict.Values.ToList();
+                                    }
+                                    newListOfLists.Add(list);
+                                }
+                            }
+                            item[field] = newListOfLists;
+                            break;
+                        }
+                    // List O' List O' Objects Data Type Fields that could also be numberical values.
+                    case "cost":
+                        {
+                            
+                            // Convert the data to a list of generic objects.
+                            var newListOfLists = value as List<List<object>>;
+                            if (newListOfLists == null)
+                            {
+                                var newList = value as List<object>;
+                                if (newList == null)
+                                {
+                                    var dict = value as Dictionary<object, object>;
+                                    if (dict == null)
+                                    {
+                                        var cost = Convert.ToInt32(value);
+                                        if(cost > 0) item[field] = cost;
+                                        return;
+                                    }
                                     else newList = dict.Values.ToList();
                                 }
                                 newListOfLists = new List<List<object>>();
