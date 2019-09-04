@@ -155,9 +155,9 @@ _.WorldEvents =
 						["questID"] = 55007,	-- Lord Browne's Debts
 					}),
 					i(164936, {	-- Mysterious Challenge Card
-						["description"] = "If you fail killing Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
+						["description"] = "If you fail to kill Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
 						["questID"] = 55022,	-- Solving the Mystery
-						["groups"] = {
+						["g"] = {
 							n(145782, {	-- Xan-Sallish <Blade of the Watcher>
 								i(164940, {	-- Mysterious Satchel
 									i(164942),	-- Shadowscrawled Tome
@@ -166,7 +166,7 @@ _.WorldEvents =
 						},
 					}),
 				}),
-				n(70723, { -- Dame Jesepha
+				n(70723, {	-- Dame Jesepha
 					i(98121, {	-- Amberseed Bun
 						["description"] = "Throw this at Brawlers while on the 'Flaunt It If You Got It' quest.",
 						["questID"] = 55017,	-- Flaunt It If You Got It
@@ -175,47 +175,47 @@ _.WorldEvents =
 				n(151941, {	-- Dershway the Triggered <Bizmo's Brawlpub Quartermaster>
 					["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 					["g"] = {
-						i(93025),	-- Clock'em Pet
-						i(144394),	-- Tylarr Gronnden Pet
-						i(142403),	-- Brawler's Burly Basilisk Mount
-						i(98405),	-- Brawler's Burly Mushan Beast Mount - Unobtainable unless you reached Rank 8 in either Season 1 or Season 2
-						i(122396),	-- Brawler's Razor Claws
-						i(98543),	-- Wraps of the Blood-Soaked Brawler
-						i(98079),	-- Floot-Tooter's Tunic
-						i(98080),	-- Gorgeous Blouse
-						i(98081),	-- The Boomshirt
-						i(98082),	-- Undisputed Champion's Shirt
-						i(98083),	-- Sharkskin Tunic
-						i(98084),	-- Ooze-Soaked Shirt
-						i(98085),	-- Brucehide Jersey
-						i(98086),	-- Tuxedo-Like Shirt
-						i(98087),	-- Paper Shirt
-						i(98091),	-- Last Seasons Shirt
-						i(98092),	-- Digmaster's Bodysleeve
-						i(98093),	-- Sightless Mantle
-						i(144391, {	-- Pugilist's Powerful Punching Ring
-							["races"] = ALLIANCE_ONLY,
-						}),
+						i(142403),	-- Brawler's Burly Basilisk (MOUNT!)
+						i(98405),	-- Brawler's Burly Mushan Beast (MOUNT!) - Unobtainable unless you reached Rank 8 in either Season 1 or Season 2
 						i(167811),  -- Brawlers Guild Tabard
+						i(122396),	-- Brawler's Razor Claws
+						i(98085),	-- Brucehide Jersey
+						i(93025),	-- Clock'em (PET!)
+						i(98092),	-- Digmaster's Bodysleeve
 						i(167891, {	-- Ensemble: Brawler's Garb
 							["ignoreBonus"] = true,
 							["g"] = {
-								i(167817),	-- Brawler's Headgear
-								i(167819),	-- Brawler's Shoulderpads
-								i(167813),	-- Brawler's Harness
 								i(167821),	-- Brawler's Bracer Chains
+								i(167815),	-- Brawler's Footpads
 								i(167816),	-- Brawler's Gloves
+								i(167813),	-- Brawler's Harness
+								i(167817),	-- Brawler's Headgear
 								i(167820),	-- Brawler's Heavy Belt
 								i(167818),	-- Brawler's Leggings
-								i(167815),	-- Brawler's Footpads
+								i(167819),	-- Brawler's Shoulderpads
 							},
 						}),
+						i(98079),	-- Floot-Tooter's Tunic
 						i(127773, {	-- Gemcutter Module: Mastery
-							["coord"] = { 25.8, 39.7, 534 },	-- Tanaan Jungle
-							["spellID"] = 187636,
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["requireSkill"] = 755,	-- Jewelcrafting
+							["spellID"] = 187636,
+							["coord"] = { 25.8, 39.7, 534 },	-- Tanaan Jungle
 						}),
+						i(98080),	-- Gorgeous Blouse
+						i(98091),	-- Last Season's Shirt
+						i(98084),	-- Ooze-Soaked Shirt
+						i(98087),	-- Paper Shirt
+						i(144391, {	-- Pugilist's Powerful Punching Ring
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(98083),	-- Sharkskin Tunic
+						i(98093),	-- Sightless Mantle
+						i(98081),	-- The Boomshirt
+						i(98086),	-- Tuxedo-Like Shirt
+						i(144394),	-- Tylarr Gronnden (PET!)
+						i(98082),	-- Undisputed Champion's Shirt
+						i(98543),	-- Wraps of the Blood-Soaked Brawler
 					},
 				}),
 				n(70719, { -- Mozzle Gearbeer
@@ -225,9 +225,9 @@ _.WorldEvents =
 					}),
 				}),
 				n(118898, { -- Ulaani
-					["currencyID"] = 1299,	-- Brawler's Gold
-					["groups"] = {
-						i(143763, {	-- Bag of Chipped Dice
+					i(143763, {	-- Bag of Chipped Dice
+						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["g"] = {
 							ach(13194),		-- I Am Thrall's Complete Lack Of Surprise
 							n(117208, {		-- a Seagull
 								i(144375, {		-- Feathered Brawler's Purse
@@ -329,82 +329,106 @@ _.WorldEvents =
 									i(144372),		-- Hide of the Murderaffe
 								}),
 							}),
-						}),
-						i(143761),	-- Blood-Soaked Angel Figurine
-						i(143760),	-- Brawler's Potion Dispenser
-						i(143762, {	-- High Roller's Contract
-							["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
-							["questID"] = 55005,	-- The Financial Participation Incentive
-						}),
-						i(143758, {	-- Free Drinks Voucher
-							["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
-							["questID"] = 55017,	-- Flaunt It If You Got It
-						}),
-						i(142288, {	-- Rumble Card: Grief Warden
-							{
-								["npcID"] = 114943,	-- Grief Warden <Enmity Moose>
+						},
+					}),
+					i(143761, {	-- Blood-Soaked Angel Figurine
+						["cost"] = { { "c", 1299, 250 }, },	-- 250x Brawler's Gold
+					}),
+					i(143760, {	-- Brawler's Potion Dispenser
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+					}),
+					i(143758, {	-- Free Drinks Voucher
+						["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
+						["questID"] = 55017,	-- Flaunt It If You Got It
+						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+					}),
+					i(143762, {	-- High Roller's Contract
+						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
+						["questID"] = 55005,	-- The Financial Participation Incentive
+						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+					}),
+					i(142290, {	-- Rumble Card: Battle of the Brew
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["g"] = {
+							crit(3, {	-- Battle of the Brew
 								["achievementID"] = 11573,	-- Rumble Club
-								["criteriaID"] = 2,	-- Grief Warden
-							},
-						}),
-						i(142290, {	-- Rumble Card: Battle of the Brew
-							{
+							}),
+						},
+					}),
+					i(142288, {	-- Rumble Card: Grief Warden
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["g"] = {
+							n(114943, {	-- Grief Warden <Enmity Moose>
+								crit(2, {	-- Grief Warden
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142294, {	-- Rumble Card: Mazhareen
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["g"] = {
+							n(68251, {	-- Mazhareen
+								crit(1, {	-- Mazhareen
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["g"] = {
+							n(117102, {	-- Mindbreaker Gzzaj
+								crit(4, {	-- Mindbreaker Gzzaj
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142289, {	-- Rumble Card: Penguin Stampede
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["g"] = {
+							n(115185, {	-- Penguin Stampede
+								crit(6, {	-- Penguin Stampede
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142291, {	-- Rumble Card: Senya
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["g"] = {
+							n(115357, {	-- Senya
+								crit(5, {	-- Senya
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142292, {	-- Rumble Card: Stranglethorn Streak
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["g"] = {
+							crit(7, {	-- Stranglethorn Streak
 								["achievementID"] = 11573,	-- Rumble Club
-								["criteriaID"] = 3,	-- Battle of the Brew
-							},
-						}),
-						i(142294, {	-- Rumble Card: Mazhareen
-							{
-								["npcID"] = 68251,	-- Mazhareen
-								["achievementID"] = 11573,	-- Rumble Club
-								["criteriaID"] = 1,	-- Mazhareen
-							},
-						}),
-						i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
-							{
-								["npcID"] = 117102,	-- Mindbreaker Gzzaj
-								["achievementID"] = 11573,	-- Rumble Club
-								["criteriaID"] = 4,	-- Mindbreaker Gzzaj
-							},
-						}),
-						i(142289, {	-- Rumble Card: Penguin Stampede
-							{
-								["npcID"] = 115185,	-- Penguin Stampede
-								["achievementID"] = 11573,	-- Rumble Club
-								["criteriaID"] = 6,	-- Penguin Stampede
-							},
-						}),
-						i(142291, {	-- Rumble Card: Senya
-							{
-								["npcID"] = 115357,	-- Senya
-								["achievementID"] = 11573,	-- Rumble Club
-								["criteriaID"] = 5,	-- Senya
-							},
-						}),
-						i(142292, {	-- Rumble Card: Stranglethorn Streak
-							{
-								["achievementID"] = 11573,	-- Rumble Club
-								["criteriaID"] = 7,	-- Stranglethorn Streak
-							},
-						}),
-						i(143759, {	-- VIP Room Rental Form
-							["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
-							["questID"] = 55016,	-- Undercover Agent: Silent Jussho
-						}),
-					},
+							}),
+						},
+					}),
+					i(143759, {	-- VIP Room Rental Form
+						["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
+						["questID"] = 55016,	-- Undercover Agent: Silent Jussho
+						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+					}),
 				}),
 			}),
-			{	-- Deck Your Collection [Season 2]
-				["achievementID"] = 9176,	-- Deck Your Collection [Season 2]
+			ach(9176, {	-- Deck Your Collection [Season 2]
 				["u"] = 2,					-- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					{	-- Wraps of the Blood-Soaked Brawler
-						["itemID"] = 98543,	-- Wraps of the Blood-Soaked Brawler
+					i(98543, {	-- Wraps of the Blood-Soaked Brawler
 						["u"] = 2,			-- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
-					},
+					}),
 				},
-			},
+			}),
 		},
 	}),
-};	
+};
