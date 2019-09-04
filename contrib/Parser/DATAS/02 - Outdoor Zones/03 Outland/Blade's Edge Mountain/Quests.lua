@@ -53,14 +53,13 @@ _.Zones =
 								i(31478),	-- Rugged Mountain Bracers
 							},
 						}),
-						i(30431, {	-- Thunderlord Clan Artifact
-							q(10524, {	-- Thunderlord Clan Artifacts
-								["crs"] = {
-									19995,	-- Bladespire Brute
-									19998,	-- Bladespire Shaman
-								},
-								["races"] = HORDE_ONLY,
-							}),
+						q(10524, {	-- Thunderlord Clan Artifacts
+							["races"] = HORDE_ONLY,
+							["provider"] = { "i", 30431 },	-- Thunderlord Clan Artifact
+							["crs"] = {
+								19995,	-- Bladespire Brute
+								19998,	-- Bladespire Shaman
+							},
 						}),
 						q(10525, {	-- Vision Guide
 							["provider"] = { "n", 21311 },	-- Rokgah Bloodgrip
@@ -108,19 +107,16 @@ _.Zones =
 								i(31471),	-- T'chali's Kilt
 							},
 						}),
-						o(184660, {	-- Wanted Poster
+						q(10489, {	-- Felling an Ancient Tree
+							["coord"] = { 51.9, 57.8, 105 },
 							["model"] = 191094,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "o", 184660 },	-- Wanted Poster
 							["g"] = {
-								q(10489, {	-- Felling an Ancient Tree
-									["coord"] = { 51.9, 57.8, 105 },
-									["races"] = HORDE_ONLY,
-									["g"] = {
-										i(31486),	-- Bear-Strength Harness
-										i(31488),	-- Boots of the Ancient-Killer
-										i(31485),	-- Dark Deed Leggings
-										i(31487),	-- Wild Horned Helm
-									},
-								}),
+								i(31486),	-- Bear-Strength Harness
+								i(31488),	-- Boots of the Ancient-Killer
+								i(31485),	-- Dark Deed Leggings
+								i(31487),	-- Wild Horned Helm
 							},
 						}),
 						-- Alliance Questline
@@ -225,31 +221,25 @@ _.Zones =
 							["coord"] = { 37.0, 65.6, 105 },
 							["races"] = ALLIANCE_ONLY,
 						}),
-						o(184825, {	-- Lashh'an Tome
+						q(10556, {	-- Scratches
+							["sourceQuest"] = 10555,	-- Malaise
 							["model"] = 198020,
-							["g"] = {
-								q(10556, {	-- Scratches
-									["coords"] = {
-										{ 34.3, 77.4, 105 },
-										{ 35.4, 79.0, 105 },
-									},
-									["sourceQuest"] = 10555,	-- Malaise
-									["races"] = ALLIANCE_ONLY,
-								}),
+							["provider"] = { "o", 184825 },	-- Lashh'an Tome
+							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 34.3, 77.4, 105 },
+								{ 35.4, 79.0, 105 },
 							},
 						}),
-						o(185035, {	-- Wanted Poster
+						q(10690, {	-- The Den Mother
 							["model"] = 199473,
+							["coord"] = { 36.6, 67.3, 105 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "o", 185035 },	-- Wanted Poster
 							["g"] = {
-								q(10690, {	-- The Den Mother
-									["coord"] = { 36.6, 67.3, 105 },
-									["races"] = ALLIANCE_ONLY,
-									["g"] = {
-										i(31424),	-- Arcane Wand of Sylvanaar
-										i(31422),	-- Heavy Elven Dirk
-										i(31423),	-- Wolf Hewer's Axe
-									},
-								}),
+								i(31424),	-- Arcane Wand of Sylvanaar
+								i(31422),	-- Heavy Elven Dirk
+								i(31423),	-- Wolf Hewer's Axe
 							},
 						}),
 					}),
@@ -593,13 +583,12 @@ _.Zones =
 								i(31538),	-- Twin Moon Shoulderguards
 							},
 						}),
-						i(31363, {	-- Gorgrom's Favor
-							q(10795, {	-- Favor of the Gronn
-								["provider"] = { "n", 10797 },	-- Dorgok
-								["coord"] = { 55.0, 24.2, 105 },
-								["description"]	= "You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",
-								["races"] = ALLIANCE_ONLY,
-							}),
+						q(10797, {	-- Favor of the Gronn
+							["crs"] = { 20753 },	-- Dorgok
+							["coord"] = { 55.0, 24.2, 105 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "i", 31363 },	-- Gorgrom's Favor
+							["description"]	= "You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",
 						}),
 						q(10798, {	-- Pay the Baron a Visit
 							["provider"] = { "n", 22149 },	-- Commander Haephus Stonewall
@@ -835,11 +824,10 @@ _.Zones =
 							["coord"] = { 61.9, 39.5, 105 },
 							["sourceQuest"] = 10682,	-- A Time for Negotiation...
 						}),
-						i(31120, {	-- Meeting Note
-							q(10719, {	-- Did You Get The Note?
-								["sourceQuest"] = 10682,	-- A Time for Negotiation...
-								["description"]	= "You have to accept or complete the quest '...and a Time for Action' to receive the item."
-							}),
+						q(10719, {	-- Did You Get The Note?
+							["provider"] = { "i", 31120 },	-- Meeting Note
+							["sourceQuest"] = 10682,	-- A Time for Negotiation...
+							["description"]	= "You have to accept or complete the quest '...and a Time for Action' to receive the item."
 						}),
 						q(10747, {	-- Whelps of the Wyrmcult
 							["provider"] = { "n", 21983 },	-- Samia Inkling
@@ -882,10 +870,9 @@ _.Zones =
 							["provider"] = { "n", 22133 },	-- Faradrella
 							["coord"] = { 62.6, 38.3, 105 },
 						}),
-						i(31384, {	-- Damaged Mask
-							q(10810, {	-- Damaged Mask
-								["sourceQuest"] = 10753,	-- Culling the Wild
-							}),
+						q(10810, {	-- Damaged Mask
+							["provider"] = { "i", 31384 },	-- Damaged Mask
+							["sourceQuest"] = 10753,	-- Culling the Wild
 						}),
 						q(10812, {	-- Mystery Mask
 							["provider"] = { "n", 22020 },	-- O'Mally Zapnabber
@@ -897,23 +884,22 @@ _.Zones =
 							["coord"] = { 62.6, 40.2, 105 },
 							["sourceQuest"] = 10812,	-- Mystery Mask
 						}),
-						o(185165, {	-- Legion Communicator
+						q(10820, {	-- Deceive thy Enemy
+							["coord"] = { 73.23, 40.1, 105 },
 							["model"] = 192342,
+							["provider"] = { "o", 185165 },	-- Legion Communicator
+							["sourceQuest"] = 10819,	-- Felsworn Gas Mask
+						}),
+						q(10821, {	-- You're Fired!
+							["coord"] = { 73.23, 40.1, 105 },
+							["model"] = 192342,
+							["provider"] = { "o", 185165 },	-- Legion Communicator
+							["sourceQuest"] = 10820,	-- Deceive thy Enemy
 							["g"] = {
-								q(10820, {	-- Deceive thy Enemy
-									["coord"] = { 73.23, 40.1, 105 },
-									["sourceQuest"] = 10819,	-- Felsworn Gas Mask
-								}),
-								q(10821, {	-- You're Fired!
-									["coord"] = { 73.23, 40.1, 105 },
-									["sourceQuest"] = 10820,	-- Deceive thy Enemy
-									["g"] = {
-										i(31793),	-- Ruuan Weald Wristguards
-										i(31792),	-- Evergrove Ranger's Cloak
-										i(31790),	-- Expedition Pendant
-										i(31791),	-- Wildlord's Band
-									},
-								}),
+								i(31793),	-- Ruuan Weald Wristguards
+								i(31792),	-- Evergrove Ranger's Cloak
+								i(31790),	-- Expedition Pendant
+								i(31791),	-- Wildlord's Band
 							},
 						}),
 						q(10910, {	-- Death's Door
@@ -943,90 +929,87 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-168, {   	-- Other Quests
-					q(10928, {	-- Killing the Crawlers
-						["provider"] = { "n", 22489 },	-- Grunt Grahk
-						["coord"] = { 53.0, 96.2, 105 },
-						["races"] = HORDE_ONLY,
-					}),
-					q(10927, {	-- Killing the Crawlers
-						["provider"] = { "n", 22488 },	-- Sentinel Moonwhisper
-						["coord"] = { 32.2, 91.1, 105 },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(10860, {	-- Mok'Nathal Treats
-						["provider"] = { "n", 21088 },	-- Matron Varah
-						["coord"] = { 76.1, 60.3, 105 },
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
-						},
-					}),
-					q(10617, {	-- Silkwing Cocoons
-						["provider"] = { "n", 21895 },	-- Taerek
-						["coord"] = { 75.9, 61.4, 105 },
-						["races"] = HORDE_ONLY,
-					}),
-					q(10618, {	-- The Softest Wings
-						["provider"] = { "n", 21896 },	-- Silmara
-						["coord"] = { 75.8, 61.5, 105 },
-						["races"] = HORDE_ONLY,
-					}),
-					i(31489, {	-- Orb of the Grishna
-						q(10825, {	-- The Truth Unorbed
-							["crs"] = {
-								19990,	-- Grishna Scorncrow
-								19989,	-- Grishna Harbinger
-								19988,	-- Grishna Falconwing
-							},
-						}),
-					}),
-					q(10829, {	-- Treebole Must Know
-						["provider"] = { "n", 22007 },	-- Tree Warden Chawn
-						["coord"] = { 62.0, 39.5, 105 },
-						["sourceQuest"] = 10825,	-- The Truth Unorbed
-					}),
-					q(10830, {	-- Exorcising the Trees
-						["provider"] = { "n", 22215 },	-- Treebole
-						["coord"] = { 37.2, 22.2, 105 },
-						["sourceQuest"] = 10829,	-- Treebole Must Know
-						["g"] = {
-							i(31527),	-- Leafbeard Ring
-							i(31526),	-- Raven's Wood Exorciser's Band
-							i(31528),	-- Ring of the Stonebark
-							i(31523),	-- Treebole's Hoop
-						},
-					}),
-					q(11047, {	-- The Apprentice's Request
-						["provider"] = { "n", 23280 },	-- Agadai
-						["coord"] = { 52.0, 54.4, 107 },
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
-					}),
-					q(11043, {	-- Building a Better Gryphon
-						["provider"] = { "n", 21107 },	-- Rip Pedalslam
-						["coord"] = { 61.2, 70.4, 105 },
-						["isBreadcrumb"] = true,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(11036, {	-- Out of This World Produce!
-						["provider"] = { "n", 19471 },	-- Old Orok
-						["coord"] = { 53.2, 54.4, 105 },
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
-					}),
-					q(11040, {	-- Parts for the Rocket-Chief
-						["provider"] = { "n", 21112 },	-- Bossi Pentapiston
-						["coord"] = { 60.8, 69.1, 105 },
-						["isBreadcrumb"] = true,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(11119, {	-- Assault on Bash'ir Landing!
-						["provider"] = { "n", 23334 },	-- Sky Commander Keller
-						["coord"] = { 60.8, 69.1, 105 },
-						["sourceQuest"] = 11010,	-- Bombing Run
-					}),
+				q(10928, {	-- Killing the Crawlers
+					["provider"] = { "n", 22489 },	-- Grunt Grahk
+					["coord"] = { 53.0, 96.2, 105 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(10927, {	-- Killing the Crawlers
+					["provider"] = { "n", 22488 },	-- Sentinel Moonwhisper
+					["coord"] = { 32.2, 91.1, 105 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(10860, {	-- Mok'Nathal Treats
+					["provider"] = { "n", 21088 },	-- Matron Varah
+					["coord"] = { 76.1, 60.3, 105 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(31674),	-- Recipe: Crunchy Serpent
+						i(31675),	-- Recipe: Mok'Nathal Shortribs
+					},
+				}),
+				q(10617, {	-- Silkwing Cocoons
+					["provider"] = { "n", 21895 },	-- Taerek
+					["coord"] = { 75.9, 61.4, 105 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(10618, {	-- The Softest Wings
+					["provider"] = { "n", 21896 },	-- Silmara
+					["coord"] = { 75.8, 61.5, 105 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(10825, {	-- The Truth Unorbed
+					["provider"] = { "i", 31489 },	-- Orb of the Grishna
+					["crs"] = {
+						19990,	-- Grishna Scorncrow
+						19989,	-- Grishna Harbinger
+						19988,	-- Grishna Falconwing
+					},
+				}),
+				q(10829, {	-- Treebole Must Know
+					["provider"] = { "n", 22007 },	-- Tree Warden Chawn
+					["coord"] = { 62.0, 39.5, 105 },
+					["sourceQuest"] = 10825,	-- The Truth Unorbed
+				}),
+				q(10830, {	-- Exorcising the Trees
+					["provider"] = { "n", 22215 },	-- Treebole
+					["coord"] = { 37.2, 22.2, 105 },
+					["sourceQuest"] = 10829,	-- Treebole Must Know
+					["g"] = {
+						i(31527),	-- Leafbeard Ring
+						i(31526),	-- Raven's Wood Exorciser's Band
+						i(31528),	-- Ring of the Stonebark
+						i(31523),	-- Treebole's Hoop
+					},
+				}),
+				q(11047, {	-- The Apprentice's Request
+					["provider"] = { "n", 23280 },	-- Agadai
+					["coord"] = { 52.0, 54.4, 107 },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(11043, {	-- Building a Better Gryphon
+					["provider"] = { "n", 21107 },	-- Rip Pedalslam
+					["coord"] = { 61.2, 70.4, 105 },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11036, {	-- Out of This World Produce!
+					["provider"] = { "n", 19471 },	-- Old Orok
+					["coord"] = { 53.2, 54.4, 105 },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(11040, {	-- Parts for the Rocket-Chief
+					["provider"] = { "n", 21112 },	-- Bossi Pentapiston
+					["coord"] = { 60.8, 69.1, 105 },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11119, {	-- Assault on Bash'ir Landing!
+					["provider"] = { "n", 23334 },	-- Sky Commander Keller
+					["coord"] = { 60.8, 69.1, 105 },
+					["sourceQuest"] = 11010,	-- Bombing Run
 				}),
 			}),
 		}),
