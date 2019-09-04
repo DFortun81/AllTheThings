@@ -4,8 +4,8 @@
 _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island
-		n(-2, {  -- Vendors
-			n(55072, {	-- Barum
+		n(-2, {		-- Vendors
+			n(55072,  {	-- Barum
 				["coord"] = { 47.5, 66.3, 407 },
 				["g"] = {
 					gs(1431, {	-- Battlegear of Valor
@@ -244,166 +244,422 @@ _.WorldEvents =
 					}),
 				},
 			}),
-			n(57983, {	-- Baruma
-				["coords"] = {
-					{ 47.61, 66.05, 407 },
-				},
+			n(57983,  {	-- Baruma
+				["coord"] = { 47.6, 66.0, 407 },
 				["g"] = {
-					gs(360, {	-- Vestments of the Virtuous
-						i(78216),	-- Virtuous Set Helm
-						i(78213),	-- Shoulders
-						i(78212),	-- Chest
-						i(78215),	-- Bracers
-						i(78217),	-- Hands
-						i(78218),	-- Belt
-						i(78214),	-- Legs
-						i(78219),	-- Feet
-					}),
-					gs(855, {	-- Sorcerer's Regalia
-						i(78198),	-- Sorcerer Set Helm
-						i(78201),	-- Shoulders
-						i(78200),	-- Chest
-						i(78203),	-- Bracers
-						i(78197),	-- Hands
-						i(78202),	-- Belt
-						i(78199),	-- Legs
-						i(78196),	-- Feet
-					}),
-					gs(854, {	-- Deathmist Rainment
-						i(78230),	-- Deathmist Set Helm
-						i(78234),	-- Shoulders
-						i(78237),	-- Chest
-						i(78232),	-- Bracers
-						i(78236),	-- Hands
-						i(78233),	-- Belt
-						i(78231),	-- Legs
-						i(78235),	-- Feet	
-					}),
-					gs(858, {	-- Feralheart Rainment
-						i(78249),	-- Feralheart Set Helm
-						i(78247),	-- Shoulders
-						i(78252),	-- Chest
-						i(78253),	-- Bracers
-						i(78248),	-- Hands
-						i(78246),	-- Belt
-						i(78250),	-- Legs
-						i(78251),	-- Feet
-					}),
-					gs(857, {	-- Darkmantle Armor
-						i(78263),	-- Darkmantle Set Helm
-						i(78267),	-- Shoulders
-						i(78269),	-- Chest
-						i(78264),	-- Bracers
-						i(78266),	-- Hands
-						i(78265),	-- Belt
-						i(78268),	-- Legs
-						i(78262),	-- Feet
+					gs(861, {	-- Battlegear of Heroism
+						i(78333, {	-- Replica Belt of Heroism
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78326, {	-- Replica Boots of Heroism
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78327, {	-- Replica Bracers of Heroism
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78328, {	-- Replica Breastplate of Heroism
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78329, {	-- Replica Gauntlets of Heroism
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78330, {	-- Replica Helm of Heroism
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78331, {	-- Replica Legplates of Heroism
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78332, {	-- Replica Spaulders of Heroism
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
 					}),
 					gs(856, {	-- Beastmaster Armor
-						i(78284),	-- Beastmaster Set Helm
-						i(78281),	-- Shoulders
-						i(78282),	-- Chest
-						i(78283),	-- Bracers
-						i(78278),	-- Hands
-						i(78285),	-- Belt
-						i(78280),	-- Legs
-						i(78279),	-- Feet
+						i(78285, {	-- Replica Beastmaster's Belt
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78283, {	-- Replica Beastmaster's Bindings
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78279, {	-- Replica Beastmaster's Boots
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78284, {	-- Replica Beastmaster's Cap
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78278, {	-- Replica Beastmaster's Gloves
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78281, {	-- Replica Beastmaster's Mantle
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78280, {	-- Replica Beastmaster's Pants
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78282, {	-- Replica Beastmaster's Tunic
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
 					}),
-					gs(860, {	-- The Five Thunders
-						i(78294),	-- The Five Thunders Set Helm
-						i(78299),	-- Shoulders
-						i(78300),	-- Chest
-						i(78296),	-- Bracers
-						i(78295),	-- Hands
-						i(78297),	-- Belt
-						i(78301),	-- Legs
-						i(78298),	-- Feet
+					gs(857, {	-- Darkmantle Armor
+						i(78265, {	-- Replica Darkmantle Belt
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78262, {	-- Replica Darkmantle Boots
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78264, {	-- Replica Darkmantle Bracers
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78263, {	-- Replica Darkmantle Cap
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78266, {	-- Replica Darkmantle Gloves
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78268, {	-- Replica Darkmantle Pants
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78267, {	-- Replica Darkmantle Spaulders
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78269, {	-- Replica Darkmantle Tunic
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+					}),
+					gs(854, {	-- Deathmist Rainment
+						i(78233, {	-- Replica Deathmist Belt
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78232, {	-- Replica Deathmist Bracers
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78231, {	-- Replica Deathmist Leggings
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78234, {	-- Replica Deathmist Mantle
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78230, {	-- Replica Deathmist Mask
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78237, {	-- Replica Deathmist Robe
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78235, {	-- Replica Deathmist Sandals
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78236, {	-- Replica Deathmist Wraps
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+					}),
+					gs(858, {	-- Feralheart Rainment
+						i(78246, {	-- Replica Feralheart Belt
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78251, {	-- Replica Feralheart Boots
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78253, {	-- Replica Feralheart Bracers
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78249, {	-- Replica Feralheart Cowl
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78248, {	-- Replica Feralheart Gloves
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78250, {	-- Replica Feralheart Kilt
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78247, {	-- Replica Feralheart Spaulders
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78252, {	-- Replica Feralheart Vest
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),	
+					}),
+					gs(855, {	-- Sorcerer's Regalia
+						i(78202, {	-- Replica Sorcerer's Belt
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78203, {	-- Replica Sorcerer's Bindings
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78196, {	-- Replica Sorcerer's Boots
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78198, {	-- Replica Sorcerer's Crown
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78197, {	-- Replica Sorcerer's Gloves
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78199, {	-- Replica Sorcerer's Leggings
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78201, {	-- Replica Sorcerer's Mantle
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78200, {	-- Replica Sorcerer's Robes
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
 					}),
 					gs(859, {	-- Soulforge Armor	
-						i(78312),	-- Soulforge Set Helm
-						i(78316),	-- Shoulders
-						i(78313),	-- Chest
-						i(78317),	-- Bracers
-						i(78314),	-- Hands
-						i(78311),	-- Belt
-						i(78315),	-- Legs
-						i(78310),	-- Feet
+						i(78311, {	-- Replica Soulforge Belt
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78310, {	-- Replica Soulforge Boots
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78317, {	-- Replica Soulforge Bracers
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78313, {	-- Replica Soulforge Breastplate
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78314, {	-- Replica Soulforge Gauntlets
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78312, {	-- Replica Soulforge Helm
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78315, {	-- Replica Soulforge Legplates
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78316, {	-- Replica Soulforge Spaulders
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
 					}),
-					gs(861, {	-- Battlegear of Heroism
-						i(78330),	-- Heroism Set Helm
-						i(78332),	-- Shoulders
-						i(78328),	-- Chest
-						i(78327),	-- Bracers
-						i(78329),	-- Hands
-						i(78333),	-- Belt
-						i(78331),	-- Legs
-						i(78326),	-- Feet
+					gs(860, {	-- The Five Thunders
+						i(78296, {	-- Replica Bindings of The Five Thunders
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78298, {	-- Replica Boots of The Five Thunders
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78294, {	-- Replica Coif of The Five Thunders
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78297, {	-- Replica Cord of The Five Thunders
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78295, {	-- Replica Gauntlets of The Five Thunders
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78301, {	-- Replica Kilt of The Five Thunders
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78299, {	-- Replica Pauldrons of The Five Thunders
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78300, {	-- Replica Vest of The Five Thunders
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+					}),
+					gs(360, {	-- Vestments of the Virtuous
+						i(78218, {	-- Replica Virtuous Belt
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78215, {	-- Replica Virtuous Bracers
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78216, {	-- Replica Virtuous Crown
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78217, {	-- Replica Virtuous Gloves
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78213, {	-- Replica Virtuous Mantle
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78212, {	-- Replica Virtuous Robe
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
+						i(78219, {	-- Replica Virtuous Sandals
+							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+						}),
+						i(78214, {	-- Replica Virtuous Skirt
+							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+						}),
 					}),
 				},
-				["currencyID"] = 515,	-- Darkmoon Prize Ticket
 			}),
-			{	-- Boomie Sparks
-				["npcID"] = 55278,		-- Boomie Sparks
-				["currencyID"] = 515,	-- Darkmoon Prize Ticket
-				["coords"] = {
-					{ 48.29, 71.93, 407 },
-				},
+			n(55278,  {	-- Boomie Sparks
+				["coord"] = { 48.2, 71.9, 407 },
 				["g"] = {
-					{	-- Sparklepony XL
-						["itemID"] = 138202,	-- Sparklepony XL
-					},
+					i(138202, {	-- Sparklepony XL (TOY!)
+						["cost"] = { { "c", 515, 150 }, },	-- 150x Darkmoon Prize Ticket
+					}),
 				},
-			},
-			{	-- Carl Goodup
-				["npcID"] = 55305,	--- Carl Goodup
-				["currencyID"] = 515,	-- Darkmoon Prize Ticket
-				["coords"] = {
-					{ 49.38, 78.47, 407 },
-				},
-				["g"] = {
-					{	-- Darkmoon Balloon
-						["itemID"] = 73762,	-- Darkmoon	Balloon
-					},
-					{	-- Flimsy Yellow Balloon
-						["itemID"] = 75042,	-- Flimsy Yellow Balloon
-					},
-					{	-- Flimsy Darkmoon Balloon
-						["itemID"] = 75040,	-- Flimsy Darkmoon Balloon
-					},
-					{	-- Flimsy Green Balloon
-						["itemID"] = 75041,	-- Flimsy Green Balloon
-					},
-					{	-- Horse Balloon
-						["itemID"] = 164969,	-- Horse Balloon
-					},
-					{	-- Murloc Balloon
-						["itemID"] = 164971,	-- Murloc Balloon
-					},
-					{	-- Wolf Balloon
-						["itemID"] = 164970,	-- Wolf Balloon
-					},
-				},
-			},
-			n(85484, {	-- Chester
-				["coords"] = {
-					{ 51.47, 75.09, 407 },
-				},
-				["g"] = {
-					i(116138),	-- Last Deck of Nemelex Xobeh
-					i(122238),	-- Music Roll
-					i(116052),
-					i(116133),
-					i(116134),
-					i(116136),
-					i(116137),
-					i(116139),
-				},
-				["currencyID"] = 515,	-- Darkmoon Prize Ticket
 			}),
-			n(56335, {	-- Daenrand Dawncrest <Heirloom Prizes>
+			n(55305,  {	-- Carl Goodup
+				["coord"] = { 49.3, 78.4, 407 },
+				["g"] = {
+					i(73762, {	-- Darkmoon	Balloon (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(75040),	-- Flimsy Darkmoon Balloon
+					i(75041),	-- Flimsy Green Balloon
+					i(75042),	-- Flimsy Yellow Balloon (TOY!)
+					i(164969, {	-- Horse Balloon (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(164971, {	-- Murloc Balloon (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(164970, {	-- Wolf Balloon (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+				},
+			}),
+			n(85484,  {	-- Chester
+				["coord"] = { 51.4, 75.0, 407 },
+				["g"] = {
+					i(116139, {	-- Haunting Memento (TOY!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(116138, {	-- Last Deck of Nemelex Xobeh
+						["cost"] = { { "c", 515, 130 }, },	-- 130x Darkmoon Prize Ticket
+					}),
+					i(122238, {	-- Music Roll: Darkmoon Carousel
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(116134, {	-- Noble's Fancy Boots
+						["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
+					}),
+					i(116052, {	-- Nobleman's Coat
+						["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+					}),
+					i(116133, {	-- Nobleman's Pantaloons
+						["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+					}),
+					i(116137, {	-- Noblewoman's Finery
+						["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+					}),
+					i(116136, {	-- Noblewoman's Skirt
+						["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+					}),
+				},
+			}),
+			n(56335,  {	-- Daenrand Dawncrest <Heirloom Prizes>
 				["coord"] = { 47.6, 66.7, 407 },
 				["g"] = {
+					i(122338, {	-- Ancient Heirloom Armor Casing
+						["cost"] = {
+							{ "i", 23247, 350},		-- 350x Burning Blossom
+							{ "c", 241, 55 },		-- 55x Champion's Seal
+							{ "i", 21100, 40 },		-- 40x Coin of Ancestry
+							{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
+							{ "i", 137642, 12 },	-- 12x Mark of Honor
+							{ "c", 1166, 750 },		-- 750x Timewarped Badge
+							{ "i", 33226, 250 },	-- 250x Tricky Treat
+						},
+					}),
+					i(122339, {	-- Ancient Heirloom Scabbard
+						["cost"] = {
+							{ "c", 241, 65 },		-- 65x Champion's Seal
+							{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
+							{ "i", 49927, 200 },	-- 200 Love Token
+							{ "i", 137642, 14 },	-- 14x Mark of Honor
+							{ "c", 1166, 900 },		-- 900x Timewarped Badge
+						},
+					}),
+					i(122350, {	-- Balanced Heartseeker
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122349, {	-- Bloodied Arcanite Reaper
+						["cost"] = {
+							{ "c", 241, 40 },	-- 40x Champion's Seal
+							{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+						},
+					}),
+					i(122389, {	-- Bloodsoaked Skullforge Reaver
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122387, {	-- Burnished Breastplate of Might
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
 					i(122388, {	-- Burnished Pauldrons of Might
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122363, {	-- Burnished Warden Staff
+						["cost"] = {
+							{ "c", 241, 40 },	-- 40x Champion's Seal
+							{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+						},
+					}),
+					i(122356, {	-- Champion Herod's Shoulders
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122379, {	-- Champion's Deathdealer Breastplate
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122352, {	-- Charmed Ancient Bone Bow
+						["cost"] = {
+							{ "c", 241, 40 },	-- 40x Champion's Seal
+							{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+						},
+					}),
+					i(122354, {	-- Devout Aurastone Hammer
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122353, {	-- Dignified Headmaster's Charge
+						["cost"] = {
+							{ "c", 241, 40 },	-- 40x Champion's Seal
+							{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+						},
+					}),
+					i(122362, {	-- Discerning Eye of the Beast
+						["cost"] = {
+							{ "c", 241, 35 },	-- 35x Champion's Seal
+							{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
+						},
+					}),
+					i(122391, {	-- Flamescarred Draconian Deflector
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122390, {	-- Musty Tome of the Lost
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122357, {	-- Mystical Pauldrons of Elements
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122380, {	-- Mystical Vest of Elements
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122381, {	-- Polished Breastplate of Valor
 						["cost"] = {
 							{ "c", 241, 25 },	-- 25x Champion's Seal
 							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
@@ -415,266 +671,331 @@ _.WorldEvents =
 							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 						},
 					}),
-					i(122350),	-- Balanced Heartseeker
-					i(122349),	-- Bloodied Arcanite Reaper
-					i(122389),	-- Bloodsoaked Skullforge Reaver
-					i(122363),	-- Burnished Warden Staff
-					i(122352),	-- Charmed Ancient Bone Bow
-					i(122354),	-- Devout Aurastone Hammer
-					i(122353),	-- Dignified Headmaster's Charge
-					i(122391),	-- Flamescarred Draconian Deflector
-					i(122390),	-- Musty Tome of the Lost
-					i(122386),	-- Repurposed Lava Dredger
-					i(122351),	-- Venerable Dal'Rend's Sacred Charge
-					i(122385),	-- Venerable Mass of McGowan
-					i(122392),	-- Weathered Observer's Shield
-					i(122360),	-- Tattered Dreadmist Mantle
-					i(122384),	-- Tattered Dreadmist Robe
-					i(122359),	-- Preened Ironfeather Shoulders
-					i(122382),	-- Preened Ironfeather Brestplate
-					i(122358),	-- Stained Shadowcraft Spaulders
-					i(122383),	-- Stained Shadowcraft Tunic
-					i(122356),	-- Champion Herod's Shoulders
-					i(122379),	-- Champion's Deathdealer Breastplate
-					i(122357),	-- Mystical Pauldrons of Elements
-					i(122380),	-- Mystical Vest of Elements
-					i(122387),	-- Burnished Breastplate of Might
-					i(122381),	-- Polished Breastplate of Valor
+					i(122382, {	-- Preened Ironfeather Breastplate
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122359, {	-- Preened Ironfeather Shoulders
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122386, {	-- Repurposed Lava Dredger
+						["cost"] = {
+							{ "c", 241, 40 },	-- 40x Champion's Seal
+							{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
+						},
+					}),
+					i(122358, {	-- Stained Shadowcraft Spaulders
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122383, {	-- Stained Shadowcraft Tunic
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122361, {	-- Swift Hand of Justice
+						["cost"] = {
+							{ "c", 241, 35 },	-- 35x Champion's Seal
+							{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
+						},
+					}),
+					i(122360, {	-- Tattered Dreadmist Mantle
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122384, {	-- Tattered Dreadmist Robe
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122351, {	-- Venerable Dal'Rend's Sacred Charge
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122385, {	-- Venerable Mass of McGowan
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
+					i(122392, {	-- Weathered Observer's Shield
+						["cost"] = {
+							{ "c", 241, 25 },	-- 25x Champion's Seal
+							{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
+						},
+					}),
 				},
-				["currencyID"] = 515,	-- Darkmoon Prize Ticket
 			}),
-			n(14860, {	-- Flik
-				["coords"] = {
-					{ 55.41, 70.13, 407 },
-				},
+			n(14860,  {	-- Flik
+				["coord"] = { 55.4, 70.1, 407 },
 				["g"] = {
 					i(11026),	-- Tree Frog Box
-					i(11027),	-- Wood Frog Box
-				},
-				["currencyID"] = 515,	-- Darkmoon Prize Ticket
-			}),
-			n(55103, {	-- Galissa Sundew <Fishing Prizes>
-				["g"] = {
-					i(126929), 	-- Recipe: Fancy Darkmoon Feast
-					i(126928),	-- Recipe: Lemon Herb Filet
-					i(126927), 	-- Recipe: Sugar-Crusted Fish Feast
-					i(126930),	-- Faded Treasure Map
-					i(142398),	-- Darkwater Skate
-					i(126925),	-- Blorp's Bubble
-					i(126926),	-- Translucent Shell
-					i(126931),	-- Seafarer's Slidewhistle
-				},
-				["itemID"] = 124669,	--  Darkmoon Daggermaw
-				["coords"] = {
-					{ 52.51, 88.79, 407 },
+					i(11027, {	-- Wood Frog Box
+						["isLimited"] = true,
+					}),
 				},
 			}),
-			n(14828, {	-- Gelvas Grimegate <Souvenir & Toy Prizes>
-				["coords"] = {
-					{ 47.76, 64.77, 407 },
-				},
+			n(55103,  {	-- Galissa Sundew <Fishing Prizes>
+				["coord"] = { 52.5, 88.7, 407 },
 				["g"] = {
-					i(73762),	-- Darkmoon Balloon
-					i(90899),	-- Darkmoon Whistle
-					i(97994),	-- Darkmoon Seesaw
-					i(78341),	-- Darkmoon Hammer
-					i(78340),	-- Cloak of the Darkmoon Faire
-					i(19291),	-- Darkmoon Storage Box
+					i(126925, {	-- Blorp's Bubble (PET!)
+						["cost"] = { { "i", 124669, 50 }, },	-- 50x Darkmoon Daggermaw
+					}),
+					i(142398, {	-- Darkwater Skate (MOUNT!)
+						["cost"] = { { "i", 124669, 500 }, },	-- 500x Darkmoon Daggermaw
+					}),
+					i(126930, {	-- Faded Treasure Map
+						["cost"] = { { "i", 124669, 100 }, },	-- 100x Darkmoon Daggermaw
+					}),
+					i(126929, {	-- Recipe: Fancy Darkmoon Feast
+						["cost"] = { { "i", 124669, 50 }, },	-- 50x Darkmoon Daggermaw
+					}),
+					i(126928, {	-- Recipe: Lemon Herb Filet
+						["cost"] = { { "i", 124669, 10 }, },	-- 10x Darkmoon Daggermaw
+					}),
+					i(126927, {	-- Recipe: Sugar-Crusted Fish Feast
+						["cost"] = { { "i", 124669, 25 }, },	-- 25x Darkmoon Daggermaw
+					}),
+					i(126931, {	-- Seafarer's Slidewhistle (TOY!)
+						["cost"] = { { "i", 124669, 25 }, },	-- 25x Darkmoon Daggermaw
+					}),
+					i(126926, {	-- Translucent Shell (PET!)
+						["cost"] = { { "i", 124669, 100 }, },	-- 100x Darkmoon Daggermaw
+					}),
 				},
-				["currencyID"] = 515,	-- Darkmoon Prize Ticket
 			}),
-			n(14846, {	-- Lhara
-				["coords"] = {
-					{ 48.09, 69.55, 407 },
-				},
+			n(14828,  {	-- Gelvas Grimegate <Souvenir & Toy Prizes>
+				["coord"] = { 47.7, 64.7, 407 },
 				["g"] = {
-					i(73766),	-- Darkmoon Dancing Bear Mount
-					i(153485),	-- Darkmoon Dirigible Mount
-					i(72140),	-- Swift Forest Strider Mount
-					i(73762),	-- Darkmoon Balloon Pet
-					i(74981),	-- Darkmoon Cub Pet
-					i(91003),	-- Darkmoon Hatchling Pet
-					i(73764),	-- Darkmoon Monkey Pet
-					i(73903),	-- Darkmoon Tonk Pet
-					i(73765),	-- Darkmoon Turtle Pet					
-					i(73905),	-- Darkmoon Zeppelin Pet
+					i(78340, {	-- Cloak of the Darkmoon Faire
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(73762, {	-- Darkmoon Balloon (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(78341, {	-- Darkmoon Hammer
+						["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
+					}),
+					i(97994, {	-- Darkmoon Seesaw (TOY!)
+						["cost"] = { { "c", 515, 50 }, },	-- 50x Darkmoon Prize Ticket
+					}),
+					i(19291, {	-- Darkmoon Storage Box
+						["cost"] = { { "c", 515, 1 }, },	-- 1x Darkmoon Prize Ticket
+					}),
+					i(90899, {	-- Darkmoon Whistle (TOY!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+				},
+			}),
+			n(14846,  {	-- Lhara
+				["coord"] = { 48.0, 69.5, 407 },
+				["g"] = {
+					i(73762, {	-- Darkmoon Balloon (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(74981, {	-- Darkmoon Cub  (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(73766, {	-- Darkmoon Dancing Bear (MOUNT!)
+						["cost"] = { { "c", 515, 180 }, },	-- 180x Darkmoon Prize Ticket
+					}),
+					i(153485, {	-- Darkmoon Dirigible (MOUNT!)
+						["cost"] = { { "c", 515, 1000 }, },	-- 1,000x Darkmoon Prize Ticket
+					}),
+					i(91003, {	-- Darkmoon Hatchling  (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(73764, {	-- Darkmoon Monkey  (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
 					un(2, i(19303)),	-- Darkmoon Necklace
 					un(2, i(19302)),	-- Darkmoon Ring
+					i(73903, {	-- Darkmoon Tonk  (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(73765, {	-- Darkmoon Turtle  (PET!)					
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(73905, {	-- Darkmoon Zeppelin  (PET!)
+						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					}),
+					i(72140, {	-- Swift Forest Strider (MOUNT!)
+						["cost"] = { { "c", 515, 180 }, },	-- 180x Darkmoon Prize Ticket
+					}),
 				},
-				["currencyID"] = 515,	-- Darkmoon Prize Ticket
 			}),
-			{	-- Professor Thaddeus Paleo
-				["npcID"] = 14847,	-- Professor Thaddeus
-				["coords"] = {
-					{ 51.91, 60.93, 407 },
-				},
+			n(14847,  {	-- Professor Thaddeus
+				["coord"] = { 51.9, 60.9, 407 },
 				["g"] = {
-					{	-- Darkmoon Prize Ticket
-						["currencyID"] = 515,	-- Darkmoon Prize Ticket
-						["g"] = {
-							{	-- Technique: Darkmoon Card of the Legion [Rank 2]
-								["itemID"] = 137790,	-- Technique: Darkmoon Card of the Legion [Rank 2]
-							},
-							{	-- Technique: Darkmoon Card of the Legion [Rank 3]
-								["itemID"] = 137791,	-- Technique: Darkmoon Card of the Legion [Rank 3]
-							},
-							{	-- Technique: Propehcy Tarot [Rank 2]
-								["itemID"] = 137745,	-- Technique: Propehcy Tarot [Rank 2]
-							},
-							{	-- Technique: Propehcy Tarot [Rank 3]
-								["itemID"] = 137746,	-- Technique: Propehcy Tarot [Rank 3]
-							},
-						},
-					},
-					{	-- Moon Joker
-						["itemID"] = 113142,	-- Moon Joker
-						["g"] = {
-							{	-- Ace of the Moon
-								["itemID"] = 112302,	-- Ace of the Moon
-							},
-							{	-- Two of the Moon
-								["itemID"] = 112301,	-- Two of the Moon
-							},
-							{	-- Three of the Moon
-								["itemID"] = 112300,	-- Three of the Moon
-							},
-							{	-- Four of the Moon
-								["itemID"] = 112299,	-- Four of the Moon
-							},
-							{	-- Five of the Moon
-								["itemID"] = 112298,	-- Five of the Moon
-							},
-							{	-- Six of the Moon
-								["itemID"] = 112297,	-- Six of the Moon
-							},
-							{	-- Seven of the Moon
-								["itemID"] = 112296,	-- Seven of the Moon
-							},
-							{	-- Eight of the Moon
-								["itemID"] = 112295,	-- Eight of the Moon
-							},
-						},
-					},
-					{	-- Visions Joker
-						["itemID"] = 113139,	-- Visions Joker
-						["g"] = {
-							{	-- Ace of Visions
-								["itemID"] = 112286,	-- Ace of Visions
-							},
-							{	-- Two of Visions
-								["itemID"] = 112285,	-- Two of Visions
-							},
-							{	-- Three of Visions
-								["itemID"] = 112284,	-- Three of Visions
-							},
-							{	-- Four of Visions
-								["itemID"] = 112283,	-- Four of Visions
-							},
-							{	-- Five of Visions
-								["itemID"] = 112282,	-- Five of Visions
-							},
-							{	-- Six of Visions
-								["itemID"] = 112281,	-- Six of Visions
-							},
-							{	-- Seven of Visions
-								["itemID"] = 112280,	-- Seven of Visions
-							},
-							{	-- Eight of Visions
-								["itemID"] = 112279,	-- Eight of Visions
-							},
-						},
-					},
-					{	-- War Joker
-						["itemID"] = 113140,	-- War Joker
-						["g"] = {
-							{	-- Ace of War
-								["itemID"] = 112294,	-- Ace of War
-							},
-							{	-- Two of War
-								["itemID"] = 112293,	-- Two of War
-							},
-							{	-- Three of War
-								["itemID"] = 112292,	-- Three of War
-							},
-							{	-- Four of War
-								["itemID"] = 112291,	-- Four of War
-							},
-							{	-- Five of War
-								["itemID"] = 112290,	-- Five of War
-							},
-							{	-- Six of War
-								["itemID"] = 112289,	-- Six of War
-							},
-							{	-- Seven of War
-								["itemID"] = 112288,	-- Seven of War
-							},
-							{	-- Eight of War
-								["itemID"] = 112287,	-- Eight of War
-							},
-						},
-					},
+					i(112278, {	-- Ace of Iron
+						["cost"] = { { "i", 113135, 1 }, },	-- Iron Joker
+					}),
+					i(112302, {	-- Ace of the Moon
+						["cost"] = { { "i", 113142, 1 }, },	-- Moon Joker
+					}),
+					i(112286, {	-- Ace of Visions
+						["cost"] = { { "i", 113139, 1 }, },	-- Visions Joker
+					}),
+					i(112294, {	-- Ace of War
+						["cost"] = { { "i", 113140, 1 }, },	-- War Joker
+					}),
+					i(112271, {	-- Eight of Iron
+						["cost"] = { { "i", 113135, 1 }, },	-- Iron Joker
+					}),
+					i(112295, {	-- Eight of the Moon
+						["cost"] = { { "i", 113142, 1 }, },	-- Moon Joker
+					}),
+					i(112279, {	-- Eight of Visions
+						["cost"] = { { "i", 113139, 1 }, },	-- Visions Joker
+					}),
+					i(112287, {	-- Eight of War
+						["cost"] = { { "i", 113140, 1 }, },	-- War Joker
+					}),
+					i(112275, {	-- Five of Iron
+						["cost"] = { { "i", 113135, 1 }, },	-- Iron Joker
+					}),
+					i(112298, {	-- Five of the Moon
+						["cost"] = { { "i", 113142, 1 }, },	-- Moon Joker
+					}),
+					i(112282, {	-- Five of Visions
+						["cost"] = { { "i", 113139, 1 }, },	-- Visions Joker
+					}),
+					i(112290, {	-- Five of War
+						["cost"] = { { "i", 113140, 1 }, },	-- War Joker
+					}),
+					i(112274, {	-- Four of Iron
+						["cost"] = { { "i", 113135, 1 }, },	-- Iron Joker
+					}),
+					i(112299, {	-- Four of the Moon
+						["cost"] = { { "i", 113142, 1 }, },	-- Moon Joker
+					}),
+					i(112283, {	-- Four of Visions
+						["cost"] = { { "i", 113139, 1 }, },	-- Visions Joker
+					}),
+					i(112291, {	-- Four of War
+						["cost"] = { { "i", 113140, 1 }, },	-- War Joker
+					}),
+					i(112272, {	-- Seven of Iron
+						["cost"] = { { "i", 113135, 1 }, },	-- Iron Joker
+					}),
+					i(112296, {	-- Seven of the Moon
+						["cost"] = { { "i", 113142, 1 }, },	-- Moon Joker
+					}),
+					i(112280, {	-- Seven of Visions
+						["cost"] = { { "i", 113139, 1 }, },	-- Visions Joker
+					}),
+					i(112288, {	-- Seven of War
+						["cost"] = { { "i", 113140, 1 }, },	-- War Joker
+					}),
+					i(112273, {	-- Six of Iron
+						["cost"] = { { "i", 113135, 1 }, },	-- Iron Joker
+					}),
+					i(112297, {	-- Six of the Moon
+						["cost"] = { { "i", 113142, 1 }, },	-- Moon Joker
+					}),
+					i(112281, {	-- Six of Visions
+						["cost"] = { { "i", 113139, 1 }, },	-- Visions Joker
+					}),
+					i(112289, {	-- Six of War
+						["cost"] = { { "i", 113140, 1 }, },	-- War Joker
+					}),
+					i(137790, {	-- Technique: Darkmoon Card of the Legion (Rank 2)
+						["cost"] = { { "c", 515, 50 }, },	-- 50x Darkmoon Prize Ticket
+					}),
+					i(137791, {	-- Technique: Darkmoon Card of the Legion (Rank 3)
+						["cost"] = { { "c", 515, 250 }, },	-- 250x Darkmoon Prize Ticket
+					}),
+					i(137745, {	-- Technique: Propehcy Tarot (Rank 2)
+						["cost"] = { { "c", 515, 5 }, },	-- 5x Darkmoon Prize Ticket
+					}),
+					i(137746, {	-- Technique: Propehcy Tarot (Rank 3)
+						["cost"] = { { "c", 515, 35 }, },	-- 35x Darkmoon Prize Ticket
+					}),
+					i(112276, {	-- Three of Iron
+						["cost"] = { { "i", 113135, 1 }, },	-- Iron Joker
+					}),
+					i(112300, {	-- Three of the Moon
+						["cost"] = { { "i", 113142, 1 }, },	-- Moon Joker
+					}),
+					i(112284, {	-- Three of Visions
+						["cost"] = { { "i", 113139, 1 }, },	-- Visions Joker
+					}),
+					i(112292, {	-- Three of War
+						["cost"] = { { "i", 113140, 1 }, },	-- War Joker
+					}),
+					i(112277, {	-- Two of Iron
+						["cost"] = { { "i", 113135, 1 }, },	-- Iron Joker
+					}),
+					i(112301, {	-- Two of the Moon
+						["cost"] = { { "i", 113142, 1 }, },	-- Moon Joker
+					}),
+					i(112285, {	-- Two of Visions
+						["cost"] = { { "i", 113139, 1 }, },	-- Visions Joker
+					}),
+					i(112293, {	-- Two of War
+						["cost"] = { { "i", 113140, 1 }, },	-- War Joker
+					}),
 				},
-			},
+			}),
 			n(108785, {	-- Scarlet Quartermaster
-				["coords"] = {
-					{ 58.21, 80.66, 407 },
-				},
-				["itemID"] = 23192,	-- Tabard of the Scarlet Crusade [Note: Required to purchase these]
+				["description"] = "|cff66ccffYou must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster.  A tabard that has been transmogged will NOT work.|r",
+				["coord"] = { 58.2, 80.6, 407 },
 				["g"] = {
-					i(138429),	-- Tabard
-					{ -- Ensemble: Chain of the Scarlet Crusade
-						["g"] = {
-							i(10328),	-- chest
-							i(10333),	-- bracers
-							i(10331),	-- gloves
-							i(10329),	-- belt
-							i(10330),	-- legs
-							i(10332),	-- feet
-						},
-						["ignoreBonus"] = true,
-						["itemID"] = 138430,
-					},
-					{ -- Ensemble: Scale of the Scarlet Crusade
-						["g"] = {
-							i(138423),	-- chest
-							i(138428),	-- bracers
-							i(138426),	-- gloves
-							i(138424),	-- belt
-							i(138425),	-- legs
-							i(138427),	-- feet
-						},
-						["ignoreBonus"] = true,
-						["itemID"] = 138431,
-					},
+					i(23192, {	-- Tabard of the Scarlet Crusade (must be wearing to purchase)
+						i(138429),	-- Cropped Tabard of the Scarlet Crusade
+						i(138430, { -- Ensemble: Chain of the Scarlet Crusade
+							["ignoreBonus"] = true,
+							["g"] = {
+								i(10329),	-- Scarlet Belt
+								i(10332),	-- Scarlet Boots
+								i(10328),	-- Scarlet Chestpiece
+								i(10331),	-- Scarlet Gauntlets
+								i(10330),	-- Scarlet Leggings
+								i(10333),	-- Scarlet Wristguards
+							},
+						}),
+						i(138431, { -- Ensemble: Scale of the Scarlet Crusade
+							["ignoreBonus"] = true,
+							["g"] = {
+								i(138424),	-- Scarlet Belt
+								i(138427),	-- Scarlet Boots
+								i(138423),	-- Scarlet Chestpiece
+								i(138426),	-- Scarlet Gauntlets
+								i(138425),	-- Scarlet Leggings
+								i(138428),	-- Scarlet Wristguards
+							},
+						}),
+					}),
 				},
-				["description"] = "|cff66ccffMust be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster.  If you are not wearing it then you will just get flavor text.  A tabard that has been transmog will NOT work.|r"
 			}),
-			{	-- Stamp Thunderhorn
-				["npcID"] = 14845,		-- Stamp Thunderhorn
-				["coords"] = {
-					{ 52.89, 67.92, 407 },
-				},
-				["currencyID"] = 515,	-- Darkmoon Prize Ticket
+			n(14845,  {	-- Stamp Thunderhorn
+				["coord"] = { 52.8, 67.9, 407 },
 				["g"] = {
-					{	-- Hot Buttered Popcorn
-						["itemID"] = 162539,	-- Hot Buttered Popcorn
-					},
+					i(162539, {	-- Hot Buttered Popcorn
+						["cost"] = { { "c", 515, 50 }, },	-- 50x Darkmoon Prize Ticket
+					}),
 				},
-			},
-			{	-- Tatia Brine
-				["npcID"] = 56069,	-- Tatia Brine
-				["coords"] = {
-					{ 52.37, 88.76, 407 },
-				},
+			}),
+			n(56069,  {	-- Tatia Brine
+				["coord"] = { 52.37, 88.76, 407 },
 				["g"] = {
-					{	-- Recipe: Brilliant Smallfish
-						["itemID"] = 6325,	-- Recipe: Brilliant Smallfish
-					},
-					{	-- Recipe: Bristle Whisker Catfish
-						["itemID"] = 6330,	-- Recipe: Bristle Whisker Catfish
-					},
+					i(6325),	-- Recipe: Brilliant Smallfish
+					i(6330),	-- Recipe: Bristle Whisker Catfish
 				},
-			},
-		}),	
-	}),	
-};	
+			}),
+		}),
+	}),
+};
