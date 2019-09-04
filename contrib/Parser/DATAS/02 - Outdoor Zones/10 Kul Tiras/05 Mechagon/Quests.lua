@@ -717,10 +717,13 @@ _.Zones =
 							["groups"] = {
 								i(168264, {	-- Recycling Requisition(Green)
 									i(169167),	-- Blueprint: Orange Spraybot
-									i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
-										crit(37, {	-- Re-Procedurally Genereated Punchcard
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
+									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
+										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
+										["g"] = {
+											crit(37, {	-- Re-Procedurally Generated Punchcard
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
 									}),
 									i(167795, {	-- Paint Vial: Copper Trim
 										["questID"] = 55456,	-- Paint Vial: Copper Trim
@@ -734,10 +737,13 @@ _.Zones =
 								}),
 								i(168266, {	-- Strange Recycling Requisiton(Epic)
 									--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
-									i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
-										crit(37, {	-- Re-Procedurally Genereated Punchcard
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
+									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
+										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
+										["g"] = {
+											crit(37, {	-- Re-Procedurally Generated Punchcard
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
 									}),
 									i(167795, {	-- Paint Vial: Copper Trim
 										["questID"] = 55456,	-- Paint Vial: Copper Trim
@@ -776,10 +782,13 @@ _.Zones =
 							["groups"] = {
 								i(168264, {	-- Recycling Requisition(Green)
 									i(169167),	-- Blueprint: Orange Spraybot
-									i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
-										crit(37, {	-- Re-Procedurally Genereated Punchcard
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
+									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
+										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
+										["g"] = {
+											crit(37, {	-- Re-Procedurally Generated Punchcard
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
 									}),
 									i(167795, {	-- Paint Vial: Copper Trim
 										crit(4, {	-- Copper Trim
@@ -790,10 +799,13 @@ _.Zones =
 								}),
 								i(168266, {	-- Strange Recycling Requisiton(Epic)
 									--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
-									i(168220, {	-- Blueprint: Re-Procedurally Genereated Punchcard
-										crit(37, {	-- Re-Procedurally Genereated Punchcard
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
+									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
+										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
+										["g"] = {
+											crit(37, {	-- Re-Procedurally Generated Punchcard
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
 									}),
 									i(167795, {	-- Paint Vial: Copper Trim
 										crit(4, {	-- Copper Trim
