@@ -292,6 +292,15 @@ _.Zones =
 						i(27688),	-- Recipe: Ravager Dog
 					},
 				}),
+				n(19436, {	-- Supply Master Broog
+					["coord"] = { 87.9, 48.3, 100 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(30744, {	-- Draenic Leather Pack
+							["cost"] = 120000,	-- 12g
+						}),
+					},
+				}),
 				n(19001, {	-- Talaara <Weapon Merchant>
 					["coord"] = { 23.2, 40.0, 100 },
 					["races"] = ALLIANCE_ONLY,
