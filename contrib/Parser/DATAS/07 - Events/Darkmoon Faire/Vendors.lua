@@ -955,9 +955,12 @@ _.WorldEvents =
 				["coord"] = { 58.2, 80.6, 407 },
 				["g"] = {
 					i(23192, {	-- Tabard of the Scarlet Crusade (must be wearing to purchase)
-						i(138429),	-- Cropped Tabard of the Scarlet Crusade
+						i(138429, {	-- Cropped Tabard of the Scarlet Crusade
+							["cost"] = 250000000,	-- 25,000g
+						}),
 						i(138430, { -- Ensemble: Chain of the Scarlet Crusade
 							["ignoreBonus"] = true,
+							["cost"] = 100000000,	-- 10,000g
 							["g"] = {
 								i(10329),	-- Scarlet Belt
 								i(10332),	-- Scarlet Boots
@@ -969,6 +972,7 @@ _.WorldEvents =
 						}),
 						i(138431, { -- Ensemble: Scale of the Scarlet Crusade
 							["ignoreBonus"] = true,
+							["cost"] = 100000000,	-- 10,000g
 							["g"] = {
 								i(138424),	-- Scarlet Belt
 								i(138427),	-- Scarlet Boots
