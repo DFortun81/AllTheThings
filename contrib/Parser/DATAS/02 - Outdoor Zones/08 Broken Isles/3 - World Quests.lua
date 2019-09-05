@@ -229,7 +229,7 @@ _.Zones =
 					i(136739),	-- Shadow Stalker Boots
 				}),
 				n(-45,  {	-- Mail
-					n(-3340, {	-- Isle Watcher's Set
+					n(-3346, {	-- Isle Watcher's Set
 						i(136757);	-- Isle Watcher's Helm
 						i(136759);	-- Isle Watcher's Spaulders
 						i(136760);	-- Isle Watcher's Hauberk

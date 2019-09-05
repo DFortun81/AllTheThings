@@ -17,17 +17,6 @@ _.ExpansionFeatures =
 			}),
 			n(-17, {	-- Quests
 				["groups"] = {
-					i(163470, {	 -- Ancient Crypt Key
-						["coord"] = { 83.2, 29.6, 390 },
-						["g"] = {
-							q(53160, {	-- Ancient Crypt Key
-								["provider"] = { "n", 61962 },	-- Lorewalker Cho
-							}),
-							crit(19, {
-								["achievementID"] = 13127,	-- Tell Me A Tale
-							}),
-						},
-					}),
 					q(53436, { 	-- Azerite for the Alliance
 						["repeatable"] = true,
 						["isWeekly"] = true,
@@ -64,6 +53,18 @@ _.ExpansionFeatures =
 							i(170149),	-- Map to the Last WOrldvein
 						},
 						["maps"] = { 1163 },	-- Dazar'Alor
+					}),
+					-- Item drop quests
+					i(163470, {	 -- Ancient Crypt Key
+						["coord"] = { 83.2, 29.6, 390 },
+						["g"] = {
+							q(53160, {	-- Ancient Crypt Key
+								["provider"] = { "n", 61962 },	-- Lorewalker Cho
+							}),
+							crit(19, {
+								["achievementID"] = 13127,	-- Tell Me A Tale
+							}),
+						},
 					}),
 					i(163478, {	 -- Battered Twilight Scale
 						["coord"] = { 20.2, 54.6, 241 },

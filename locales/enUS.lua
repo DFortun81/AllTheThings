@@ -711,7 +711,38 @@ app.L = {
 		[-3310] = "Interface\\Icons\\Achievement_Garrison_blueprint_large",			-- Garrison Architect
 		[-3311] = "Interface\\Icons\\achievement_bg_killflagcarriers_grabflag_capit", -- Call To Arms [LFD Queue]
 		[-3314] = "Interface\\Icons\\inv_plate_draenorlfr_c_01helm",				-- Storm-Tempered Set
-		[-3340] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",			-- Isle Watcher's Set
+		[-3346] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",			-- Isle Watcher's Set
+		-- Island Expeditions
+		[-3315] = "Interface\\Icons\\Inv_helm_robe_raidwarlock_j_01",				-- Spider Acolyte
+		[-3316] = "Interface\\Icons\\inv_helmet_robe_raidpriest_j_01",				-- Hydraxian
+		[-3317] = "Interface\\Icons\\Inv_helmet_robe_raidmage_j_01",				-- Frostwind
+		[-3318] = "Interface\\Icons\\Inv_helmet_robe_raidwarlock_k_01",				-- Faceless Follower
+		[-3319] = "Interface\\Icons\\Inv_helm_cloth_raidwarlock_q_01",				-- Swarmfury
+		[-3320] = "Interface\\Icons\\Inv_helmet_leather_raiddruid_j_01",			-- Spiritbough
+		[-3321] = "Interface\\Icons\\Inv_helmet_leather_raidmonk_l_01",				-- Tranquil Path
+		[-3322] = "Interface\\Icons\\Inv_helm_leather_vrykulhunter_b_01",			-- Miststalker
+		[-3323] = "Interface\\Icons\\Inv_helmet_leatherraidrogue_i_01",				-- Whirling Dervish
+		[-3324] = "Interface\\Icons\\Inv_helm_leather_raiddruid_l_01",				-- Feralbark
+		[-3325] = "Interface\\Icons\\Inv_helm_leather_firelandsdruid_d_01",			-- Firekin
+		[-3326] = "Interface\\Icons\\Inv_helm_mail_raidhunter_l_01",				-- Wild Marauder
+		[-3327] = "Interface\\Icons\\Inv_helm_mail_vrykuldragonrider_b_01",			-- Dragonrider
+		[-3328] = "Interface\\Icons\\Inv_helm_mail_raidhunter_m_01",				-- Saurok
+		[-3329] = "Interface\\Icons\\Inv_helm_mail_raidhunter_i_01",				-- Mrrglurggl
+		[-3330] = "Interface\\Icons\\Inv_helmet_mail_raidshaman_k_01",				-- Headshrinker
+		[-3331] = "Interface\\Icons\\Inv_helmet_116",								-- Voodoo Stalker
+		[-3332] = "Interface\\Icons\\Inv_helmet_plate_raidwarrior_i_01",			-- Geocrag
+		[-3333] = "Interface\\Icons\\Inv_helmet_plate_raidpaladin_j_01",			-- Razorfin
+		[-3334] = "Interface\\Icons\\Inv_helmet_plate_raidwarrior_m_01",			-- Tomb-Keeper
+		[-3335] = "Interface\\Icons\\Inv_helm_plate_vrykulwarrior_b_01",			-- Bloodwake
+		[-3336] = "Interface\\Icons\\Inv_helmet_114",								-- Rattling Bone
+		[-3337] = "Interface\\Icons\\Inv_helmet_plate_raidwarrior_k_01",			-- Twilight Dragon
+		[-3339] = "Interface\\Icons\\Achievement_transmog_collections",				-- Item Sets
+		[-3340] = "Interface\\Icons\\inv_helmet_30",								-- Dark Animator
+		[-3341] = "Interface\\Icons\\inv_helmet_51",								-- Duskhaven
+		[-3342] = "Interface\\Icons\\inv_helm_cloth_vrykulcaster_b_01",				-- Fallen Runelord
+		[-3343] = "Interface\\Icons\\inv_helmet_153",								-- Choking Winter
+		[-3344] = "Interface\\Icons\\inv_helmet_157",								-- Frostsworn
+		[-3345] = "Interface\\Icons\\Inv_helmet_151",								-- Sanctified Scourgelord
 
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",					-- Instance Item Sets, PvP
 		[-4190] = "Interface\\Icons\\ExpansionIcon_BurningCrusade",
@@ -1476,6 +1507,7 @@ app.L = {
 		[-3283] = "Shrinebreaker Set",
 		[-3284] = "Galvanized Stormscale Set",
 		[-3285] = "If you see this contact Lucetia please",
+		[-3346] = "Isle Watcher's Set";
 -- Dungeon 3 Sets [Tier 3.5]
 		[-3286] = "Hallowed Raiment", -- Priest
 		[-3287] = "Incanter's Regalia", -- Mage
@@ -1545,7 +1577,6 @@ app.L = {
 		[-3338] = ISLANDS_HEADER,													-- Island Expeditions
 		[-3339] = LOOT_JOURNAL_ITEM_SETS,											-- Item Sets
 -- Additional Mail WQ Gear
-		[-3340] = "Isle Watcher's Set";
 
 -- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
