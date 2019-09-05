@@ -9,10 +9,10 @@ _.Zones =
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,
 			["icon"] = "Interface\\Icons\\achievement_doublejeopardyhorde",
-			["maps"] = { 392 },
+			["maps"] = { 392 },	-- upper level
 			["lvl"] = 78,
 			["g"] = {
-				n(-4,  {	--Achievements
+				n(-4,  {	-- Achievements
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
 				n(-17, {	-- Quests
@@ -95,8 +95,9 @@ _.Zones =
 					}),
 					]]--
 				}),
-				n(-2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(64067, {	-- Barleyflower <Cooking Supplies>
+						["coord"] = { 68.7, 69.5, 392 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
@@ -104,921 +105,1446 @@ _.Zones =
 						},
 					}),
 					n(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor>
+						["coord"] = { 42.9, 74.7, 392 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(105861, {	-- Essence of the Cursed Conqueror
-								i(99678, {	-- Chest of the Cursed Conquerer
-									i(99003),	-- Breastplate of Winged Triumph
-									i(99004),	-- Raiment of the Ternion Glory
-									i(99017),	-- Robes of the Ternion Glory
-									i(99031),	-- Chestguard of Winged Triumph
-									i(99052),	-- Battleplate of Winged Triumph
-									i(99056),	-- Robes of the Horned Nightmare
-								}),
-								i(99681, {	-- Gauntlets of the Cursed Conquerer
-									i(98982),	-- Gloves of Winged Triumph
-									i(99002),	-- Gauntlets of Winged Triumph
-									i(99019),	-- Gloves of the Ternion Glory
-									i(99023),	-- Handwraps of the Ternion Glory
-									i(99028),	-- Handguards of Winged Triumph
-									i(99053),	-- Gloves of the Horned Nightmare
-								}),
-								i(99672, {	-- Helm of the Cursed Conquerer
-									i(98979),	-- Headguard of Winged Triumph
-									i(98985),	-- Helmet of Winged Triumph
-									i(99020),	-- Hood of the Ternion Glory
-									i(99024),	-- Cowl of the Ternion Glory
-									i(99029),	-- Faceguard of Winged Triumph
-									i(99054),	-- Hood of the Horned Nightmare
-								}),
-								i(99675, {	-- Leggings of the Cursed Conquerer
-									i(98980),	-- Greaves of Winged Triumph
-									i(98986),	-- Legplates of Winged Triumph
-									i(99021),	-- Leggings of Ternion Glory
-									i(99025),	-- Legwraps of Ternion Glory
-									i(99026),	-- Legguards of Winged Triumph
-									i(99055),	-- Leggings of the Horned Nightmare
-								}),
-								i(99669, {	-- Shoulders of the Cursed Conquerer
-									i(98987),	-- Pauldrons of Winged Triumph
-									i(99005),	-- Shoulderguards of the Ternion Glory
-									i(99018),	-- Mantle of the Ternion Glory
-									i(99027),	-- Shouldergaurds of Winged Triumph
-									i(99045),	-- Mantle of the Horned Nightmare
-									i(99076),	-- Mantle of Winged Triumph
-								}),
+							i(99047, {	-- Battleplate of the Prehistoric Marauder
+								["cost"] = { { "i", 99679, 1 }, },	-- Chest of the Cursed Protector
 							}),
-							i(105860, {	-- Essence of the Cursed Protector
-								i(99679, {	-- Chest of the Cursed Protector
-									i(98992),	-- Cuirass of Celestial Harmony
-									i(99011),	-- Tunic of Celestial Harmony
-									i(99037),	-- Chestguard of the Prehistoric Marauder
-									i(99047),	-- Battleplate of the Prehistoric Marauder
-									i(99061),	-- Vest of Seven Sacred Seals
-									i(99063),	-- Chestguard of Seven Sacred Seals
-									i(99071),	-- Tunic of Seven Sacred Seals
-									i(99085),	-- Tunic of the Unblinking Vigil
-									i(99087),	-- Hauberk of Celestial Harmony
-								}),
-								i(99667, {	-- Gauntlets of the Cursed Protector
-									i(99064),	-- Gauntlets of Saven Sacred Seals
-									i(99034),	-- Gauntlets of the Prehistoric Marauder
-									i(99088),	-- Gloves of Celestial Harmony
-									i(99086),	-- Gloves of the Unblinking Vigil
-									i(98993),	-- Grips of Celestial Harmony
-									i(99072),	-- Grips of Seven Sacred Seals
-									i(99038),	-- Handguards of the Prehistoric Marauder
-									i(98988),	-- Handwraps of Celestial Harmony
-									i(99068),	-- Handwraps of Seven Sacred Seals
-								}),
-								i(99673, {	-- Helm of the Cursed Protector
-									i(98983),	-- Helmet of Celestial Harmony
-									i(98989),	-- Faceguard of Celestial Harmony
-									i(99032),	-- Faceguard of the Prehistoric Marauder
-									i(99046),	-- Helmet of the Prehistoric Marauder
-									i(99065),	-- Crown of Seven Sacred Seals
-									i(99069),	-- Helm of Seven Sacred Seals
-									i(99073),	-- Headpiece of Seven Sacred Seals
-									i(99080),	-- Headguard of the Unblinking Vigil
-									i(99089),	-- Headpiece of Celestial Harmony
-								}),
-								i(99676, {	-- Leggings of the Cursed Protector
-									i(98984),	-- Legguards of Celestial Harmony
-									i(98990),	-- Legwraps of Celestial Harmony
-									i(99033),	-- Legguards of the Prehistoric Marauder
-									i(99035),	-- Legplates of the Prehistoric Marauder
-									i(99050),	-- Legguards of Seven Sacred Seals
-									i(99070),	-- Legwraps of Seven Sacres Seals
-									i(99074),	-- Leggings of Seven Sacred Seals
-									i(99081),	-- Legguards of the Unblinking Vigil
-									i(99090),	-- Leggings of Celestial Harmony
-								}),
-								i(99670, {	-- Shoulders of the Cursed Protector
-									i(98977),	-- Spaulders of Celestial Harmony
-									i(98991),	-- Mantle of Celestial Harmony
-									i(99030),	-- Shoulderguards of the Prehistoric Marauder
-									i(99036),	-- Pauldrons of the Prehistoric Marauder
-									i(99051),	-- Shoulderguards of Saven Sacred Seals
-									i(99062),	-- Mantle of Saven Sacred Seals
-									i(99075),	-- Spaulders of Seven Sacred Seals
-									i(99082),	-- Spaulders of the Unblinking Vigil
-									i(99091),	-- Shoulderwrap sof Celestial Harmony
-								}),
+							i(99052, {	-- Battleplate of Winged Triumph
+								["cost"] = { { "i", 99678, 1 }, },	-- Chest of the Cursed Conqueror
 							}),
-							i(105862, {	-- Essence of the Cursed Vanquisher
-								i(99677, {	-- Chest of the Cursed Vanquisher
-									i(98997),	-- Vestment of the Shattered Vale
-									i(98999),	-- Tunic of the Shattered Vale
-									i(99006),	-- Tunic of the Barbed Assassin
-									i(99015),	-- Robes of the Shattered Vale
-									i(99041),	-- Raiment of the Shattered Vale
-									i(99060),	-- Chestguard of Cyclopean Dread
-									i(99066),	-- Breastplate of Cyclopeaan Dread
-									i(99078),	-- Chronomancer Robes
-								}),
-								i(99680, {	-- Gauntlets of the Cursed Vanquisher
-									i(98994),	-- Gloves of the Shattered Vale
-									i(99000),	-- Handguards of the Shattered Vale
-									i(99007),	-- Gloves of the Barbed Assassin
-									i(99012),	-- Handwraps of the Shattered Vale
-									i(99042),	-- Grips of the Shattered Vale
-									i(99048),	-- Handguards of Cyclopean Dread
-									i(99067),	-- Gauntlets of Cyclopean Dread
-									i(99083),	-- Chronomancer Gloves
-								}),
-								i(99671, {	-- Helm of the Cursed Vanquisher
-									i(98995),	-- Cover of the Shattered Vale
-									i(99001),	-- Headguard of the Shattered Vale
-									i(99008),	-- Helmet of the Barbed Assassin
-									i(99013),	-- Helm of the Shattered Vale
-									i(99043),	-- Headpiece of the Shattered Vale
-									i(99049),	-- Faceguard of Cyclopean Dread
-									i(99057),	-- Helmet of Cyclopean Dread
-									i(99084),	-- Chronomancer Hood
-								}),
-								i(99674, {	-- Leggings of the Cursed Vanquisher
-									i(98981),	-- Breeches od the Shattered Vale
-									i(98996),	-- Leggings of the Shattered Vale
-									i(99009),	-- Legguards of the Barbed Assassin
-									i(99014),	-- Legwraps of the Shattered Vale
-									i(99039),	-- Legguards of Cyclopean Dread
-									i(99044),	-- Legguards of the Shattered Vale
-									i(99058),	-- Greaves of Cyclopean Dread
-									i(99077),	-- Chronomancer Leggings
-								}),
-								i(99668, {	-- Shoulders of the Cursed Vanquisher
-									i(98978),	-- Shoulderguards of the Shattered Vale
-									i(98998),	-- Shoulderwraps of the Shattered Vale
-									i(99010),	-- Spaulders of the Barbed Assassin
-									i(99016),	-- Mantle of the Shattered Vale
-									i(99022),	-- Spaulders of the Shattered Vale
-									i(99040),	-- Shoulderguards of Cyclopean Dread
-									i(99059),	-- Pauldrons of Cyclopean Dread
-									i(99079),	-- Chronomancer Mantle
-								}),
+							i(99066, {	-- Breastplate of Cyclopeaan Dread
+								["cost"] = { { "i", 99677, 1 }, },	-- Chest of the Cursed Vanquisher
 							}),
-							i(98977),	-- Spaulders of Celestial HarmonyShaman
-							i(98978),	-- Shoulderguards of the Shattered ValeDruid
-							i(98979),	-- Headguard of Winged TriumphPaladin
-							i(98980),	-- Greaves of Winged TriumphPaladin
-							i(98981),	-- Breeches of the Shattered ValeDruid
-							i(98982),	-- Gloves of Winged TriumphPaladin
-							i(98983),	-- Helmet of Celestial HarmonyShaman
-							i(98984),	-- Legguards of Celestial HarmonyShaman
-							i(98985),	-- Helmet of Winged TriumphPaladin
-							i(98986),	-- Legplates of Winged TriumphPaladin
-							i(98987),	-- Pauldrons of Winged TriumphPaladin
-							i(98988),	-- Handwraps of Celestial HarmonyShaman
-							i(98989),	-- Faceguard of Celestial HarmonyShaman
-							i(98990),	-- Legwraps of Celestial HarmonyShaman
-							i(98991),	-- Mantle of Celestial HarmonyShaman
-							i(98992),	-- Cuirass of Celestial HarmonyShaman
-							i(98993),	-- Grips of Celestial HarmonyShaman
-							i(98994),	-- Gloves of the Shattered ValeDruid
-							i(98995),	-- Cover of the Shattered ValeDruid
-							i(98996),	-- Leggings of the Shattered ValeDruid
-							i(98997),	-- Vestment of the Shattered ValeDruid
-							i(98998),	-- Shoulderwraps of the Shattered ValeDruid
-							i(98999),	-- Tunic of the Shattered ValeDruid
-							i(99000),	-- Handguards of the Shattered ValeDruid
-							i(99001),	-- Headguard of the Shattered ValeDruid
-							i(99002),	-- Gauntlets of Winged TriumphPaladin
-							i(99003),	-- Breastplate of Winged TriumphPaladin
-							i(99004),	-- Raiment of the Ternion GloryPriest
-							i(99005),	-- Shoulderguards of the Ternion GloryPriest
-							i(99006),	-- Tunic of the Barbed AssassinRogue
-							i(99007),	-- Gloves of the Barbed AssassinRogue
-							i(99008),	-- Helmet of the Barbed AssassinRogue
-							i(99009),	-- Legguards of the Barbed AssassinRogue
-							i(99010),	-- Spaulders of the Barbed AssassinRogue
-							i(99011),	-- Tunic of Celestial HarmonyShaman
-							i(99012),	-- Handwraps of the Shattered ValeDruid
-							i(99013),	-- Helm of the Shattered ValeDruid
-							i(99014),	-- Legwraps of the Shattered ValeDruid
-							i(99015),	-- Robes of the Shattered ValeDruid
-							i(99016),	-- Mantle of the Shattered ValeDruid
-							i(99017),	-- Robes of the Ternion GloryPriest
-							i(99018),	-- Mantle of the Ternion GloryPriest
-							i(99019),	-- Gloves of the Ternion GloryPriest
-							i(99020),	-- Hood of the Ternion GloryPriest
-							i(99021),	-- Leggings of the Ternion GloryPriest
-							i(99022),	-- Spaulders of the Shattered ValeDruid
-							i(99023),	-- Handwraps of the Ternion GloryPriest
-							i(99024),	-- Cowl of the Ternion GloryPriest
-							i(99025),	-- Legwraps of the Ternion GloryPriest
-							i(99026),	-- Legguards of Winged TriumphPaladin
-							i(99027),	-- Shoulderguards of Winged TriumphPaladin
-							i(99028),	-- Handguards of Winged TriumphPaladin
-							i(99029),	-- Faceguard of Winged TriumphPaladin
-							i(99030),	-- Shoulderguards of the Prehistoric MarauderWarrior
-							i(99031),	-- Chestguard of Winged TriumphPaladin
-							i(99032),	-- Faceguard of the Prehistoric MarauderWarrior
-							i(99033),	-- Legguards of the Prehistoric MarauderWarrior
-							i(99034),	-- Gauntlets of the Prehistoric MarauderWarrior
-							i(99035),	-- Legplates of the Prehistoric MarauderWarrior
-							i(99036),	-- Pauldrons of the Prehistoric MarauderWarrior
-							i(99037),	-- Chestguard of the Prehistoric MarauderWarrior
-							i(99038),	-- Handguards of the Prehistoric MarauderWarrior
-							i(99039),	-- Legguards of Cyclopean DreadDeath Knight
-							i(99040),	-- Shoulderguards of Cyclopean DreadDeath Knight
-							i(99041),	-- Raiment of the Shattered ValeDruid
-							i(99042),	-- Grips of the Shattered ValeDruid
-							i(99043),	-- Headpiece of the Shattered ValeDruid
-							i(99044),	-- Legguards of the Shattered ValeDruid
-							i(99045),	-- Mantle of the Horned NightmareWarlock
-							i(99046),	-- Helmet of the Prehistoric MarauderWarrior
-							i(99047),	-- Battleplate of the Prehistoric MarauderWarrior
-							i(99048),	-- Handguards of Cyclopean DreadDeath Knight
-							i(99049),	-- Faceguard of Cyclopean DreadDeath Knight
-							i(99050),	-- Legguards of Seven Sacred SealsMonk
-							i(99051),	-- Shoulderguards of Seven Sacred SealsMonk
-							i(99052),	-- Battleplate of Winged TriumphPaladin
-							i(99053),	-- Gloves of the Horned NightmareWarlock
-							i(99054),	-- Hood of the Horned NightmareWarlock
-							i(99055),	-- Leggings of the Horned NightmareWarlock
-							i(99056),	-- Robes of the Horned NightmareWarlock
-							i(99057),	-- Helmet of Cyclopean DreadDeath Knight
-							i(99058),	-- Greaves of Cyclopean DreadDeath Knight
-							i(99059),	-- Pauldrons of Cyclopean DreadDeath Knight
-							i(99060),	-- Chestguard of Cyclopean DreadDeath Knight
-							i(99061),	-- Vest of Seven Sacred SealsMonk
-							i(99062),	-- Mantle of Seven Sacred SealsMonk
-							i(99063),	-- Chestguard of Seven Sacred SealsMonk
-							i(99064),	-- Gauntlets of Seven Sacred SealsMonk
-							i(99065),	-- Crown of Seven Sacred SealsMonk
-							i(99066),	-- Breastplate of Cyclopean DreadDeath Knight
-							i(99067),	-- Gauntlets of Cyclopean DreadDeath Knight
-							i(99068),	-- Handwraps of Seven Sacred SealsMonk
-							i(99069),	-- Helm of Seven Sacred SealsMonk
-							i(99070),	-- Legwraps of Seven Sacred SealsMonk
-							i(99071),	-- Tunic of Seven Sacred SealsMonk
-							i(99072),	-- Grips of Seven Sacred SealsMonk
-							i(99073),	-- Headpiece of Seven Sacred SealsMonk
-							i(99074),	-- Leggings of Seven Sacred SealsMonk
-							i(99075),	-- Spaulders of Seven Sacred SealsMonk
-							i(99076),	-- Mantle of Winged TriumphPaladin
-							i(99077),	-- Chronomancer LeggingsMage
-							i(99078),	-- Chronomancer RobesMage
-							i(99079),	-- Chronomancer MantleMage
-							i(99080),	-- Headguard of the Unblinking VigilHunter
-							i(99081),	-- Legguards of the Unblinking VigilHunter
-							i(99082),	-- Spaulders of the Unblinking VigilHunter
-							i(99083),	-- Chronomancer GlovesMage
-							i(99084),	-- Chronomancer HoodMage
-							i(99085),	-- Tunic of the Unblinking VigilHunter
-							i(99086),	-- Gloves of the Unblinking VigilHunter
-							i(99087),	-- Hauberk of Celestial HarmonyShaman
-							i(99088),	-- Gloves of Celestial HarmonyShaman
-							i(99089),	-- Headpiece of Celestial HarmonyShaman
-							i(99090),	-- Leggings of Celestial HarmonyShaman
-							i(99091),	-- Shoulderwraps of Celestial HarmonyShaman
+							i(99003, {	-- Breastplate of Winged Triumph
+								["cost"] = { { "i", 99678, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(98981, {	-- Breeches od the Shattered Vale
+								["cost"] = { { "i", 99674, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99678, {	-- Chest of the Cursed Conquerer
+								["cost"] = { { "i", 105861, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99679, {	-- Chest of the Cursed Protector
+								["cost"] = { { "i", 105860, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99677, {	-- Chest of the Cursed Vanquisher
+								["cost"] = { { "i", 105862, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99060, {	-- Chestguard of Cyclopean Dread
+								["cost"] = { { "i", 99677, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99063, {	-- Chestguard of Seven Sacred Seals
+								["cost"] = { { "i", 99679, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99037, {	-- Chestguard of the Prehistoric Marauder
+								["cost"] = { { "i", 99679, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99031, {	-- Chestguard of Winged Triumph
+								["cost"] = { { "i", 99678, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99083, {	-- Chronomancer Gloves
+								["cost"] = { { "i", 99680, 1 }, },	-- Gloves of the Cursed Vanquisher
+							}),
+							i(99084, {	-- Chronomancer Hood
+								["cost"] = { { "i", 99671, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99077, {	-- Chronomancer Leggings
+								["cost"] = { { "i", 99674, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99079, {	-- Chronomancer Mantle
+								["cost"] = { { "i", 99668, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99078, {	-- Chronomancer Robes
+								["cost"] = { { "i", 99677, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(98995, {	-- Cover of the Shattered Vale
+								["cost"] = { { "i", 99671, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99024, {	-- Cowl of the Ternion Glory
+								["cost"] = { { "i", 99672, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99065, {	-- Crown of Seven Sacred Seals
+								["cost"] = { { "i", 99673, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(98992, {	-- Cuirass of Celestial Harmony
+								["cost"] = { { "i", 99679, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(98989, {	-- Faceguard of Celestial Harmony
+								["cost"] = { { "i", 99673, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99049, {	-- Faceguard of Cyclopean Dread
+								["cost"] = { { "i", 99671, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99032, {	-- Faceguard of the Prehistoric Marauder
+								["cost"] = { { "i", 99673, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99029, {	-- Faceguard of Winged Triumph
+								["cost"] = { { "i", 99672, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99067, {	-- Gauntlets of Cyclopean Dread
+								["cost"] = { { "i", 99680, 1 }, },	-- Gloves of the Cursed Vanquisher
+							}),
+							i(99064, {	-- Gauntlets of Seven Sacred Seals
+								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99681, {	-- Gauntlets of the Cursed Conquerer
+								["cost"] = { { "i", 105861, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99667, {	-- Gauntlets of the Cursed Protector
+								["cost"] = { { "i", 105860, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99680, {	-- Gauntlets of the Cursed Vanquisher
+								["cost"] = { { "i", 105862, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99034, {	-- Gauntlets of the Prehistoric Marauder
+								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99002, {	-- Gauntlets of Winged Triumph
+								["cost"] = { { "i", 99681, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99088, {	-- Gloves of Celestial Harmony
+								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99007, {	-- Gloves of the Barbed Assassin
+								["cost"] = { { "i", 99680, 1 }, },	-- Gloves of the Cursed Vanquisher
+							}),
+							i(99053, {	-- Gloves of the Horned Nightmare
+								["cost"] = { { "i", 99681, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(98994, {	-- Gloves of the Shattered Vale
+								["cost"] = { { "i", 99680, 1 }, },	-- Gloves of the Cursed Vanquisher
+							}),
+							i(99019, {	-- Gloves of the Ternion Glory
+								["cost"] = { { "i", 99681, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99086, {	-- Gloves of the Unblinking Vigil
+								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(98982, {	-- Gloves of Winged Triumph
+								["cost"] = { { "i", 99681, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99058, {	-- Greaves of Cyclopean Dread
+								["cost"] = { { "i", 99674, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(98980, {	-- Greaves of Winged Triumph
+								["cost"] = { { "i", 99675, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(98993, {	-- Grips of Celestial Harmony
+								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99072, {	-- Grips of Seven Sacred Seals
+								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99042, {	-- Grips of the Shattered Vale
+								["cost"] = { { "i", 99680, 1 }, },	-- Gloves of the Cursed Vanquisher
+							}),
+							i(99048, {	-- Handguards of Cyclopean Dread
+								["cost"] = { { "i", 99680, 1 }, },	-- Gloves of the Cursed Vanquisher
+							}),
+							i(99038, {	-- Handguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99000, {	-- Handguards of the Shattered Vale
+								["cost"] = { { "i", 99680, 1 }, },	-- Gloves of the Cursed Vanquisher
+							}),
+							i(99028, {	-- Handguards of Winged Triumph
+								["cost"] = { { "i", 99681, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(98988, {	-- Handwraps of Celestial Harmony
+								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99068, {	-- Handwraps of Seven Sacred Seals
+								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99012, {	-- Handwraps of the Shattered Vale
+								["cost"] = { { "i", 99680, 1 }, },	-- Gloves of the Cursed Vanquisher
+							}),
+							i(99023, {	-- Handwraps of the Ternion Glory
+								["cost"] = { { "i", 99681, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99087, {	-- Hauberk of Celestial Harmony
+								["cost"] = { { "i", 99679, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99001, {	-- Headguard of the Shattered Vale
+								["cost"] = { { "i", 99671, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99080, {	-- Headguard of the Unblinking Vigil
+								["cost"] = { { "i", 99673, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(98979, {	-- Headguard of Winged Triumph
+								["cost"] = { { "i", 99672, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99089, {	-- Headpiece of Celestial Harmony
+								["cost"] = { { "i", 99673, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99073, {	-- Headpiece of Seven Sacred Seals
+								["cost"] = { { "i", 99673, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99043, {	-- Headpiece of the Shattered Vale
+								["cost"] = { { "i", 99671, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99069, {	-- Helm of Seven Sacred Seals
+								["cost"] = { { "i", 99673, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99672, {	-- Helm of the Cursed Conquerer
+								["cost"] = { { "i", 105861, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99673, {	-- Helm of the Cursed Protector
+								["cost"] = { { "i", 105860, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99671, {	-- Helm of the Cursed Vanquisher
+								["cost"] = { { "i", 105862, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99013, {	-- Helm of the Shattered Vale
+								["cost"] = { { "i", 99671, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(98983, {	-- Helmet of Celestial Harmony
+								["cost"] = { { "i", 99673, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99057, {	-- Helmet of Cyclopean Dread
+								["cost"] = { { "i", 99671, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99008, {	-- Helmet of the Barbed Assassin
+								["cost"] = { { "i", 99671, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99046, {	-- Helmet of the Prehistoric Marauder
+								["cost"] = { { "i", 99673, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(98985, {	-- Helmet of Winged Triumph
+								["cost"] = { { "i", 99672, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99054, {	-- Hood of the Horned Nightmare
+								["cost"] = { { "i", 99672, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99020, {	-- Hood of the Ternion Glory
+								["cost"] = { { "i", 99672, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99090, {	-- Leggings of Celestial Harmony
+								["cost"] = { { "i", 99676, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99074, {	-- Leggings of Seven Sacred Seals
+								["cost"] = { { "i", 99676, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99675, {	-- Leggings of the Cursed Conquerer
+								["cost"] = { { "i", 105861, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99676, {	-- Leggings of the Cursed Protector
+								["cost"] = { { "i", 105860, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99674, {	-- Leggings of the Cursed Vanquisher
+								["cost"] = { { "i", 105862, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99055, {	-- Leggings of the Horned Nightmare
+								["cost"] = { { "i", 99675, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(98996, {	-- Leggings of the Shattered Vale
+								["cost"] = { { "i", 99674, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99021, {	-- Leggings of Ternion Glory
+								["cost"] = { { "i", 99675, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(98984, {	-- Legguards of Celestial Harmony
+								["cost"] = { { "i", 99676, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99039, {	-- Legguards of Cyclopean Dread
+								["cost"] = { { "i", 99674, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99050, {	-- Legguards of Seven Sacred Seals
+								["cost"] = { { "i", 99676, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99009, {	-- Legguards of the Barbed Assassin
+								["cost"] = { { "i", 99674, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99033, {	-- Legguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99676, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99044, {	-- Legguards of the Shattered Vale
+								["cost"] = { { "i", 99674, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99081, {	-- Legguards of the Unblinking Vigil
+								["cost"] = { { "i", 99676, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99026, {	-- Legguards of Winged Triumph
+								["cost"] = { { "i", 99675, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99035, {	-- Legplates of the Prehistoric Marauder
+								["cost"] = { { "i", 99676, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(98986, {	-- Legplates of Winged Triumph
+								["cost"] = { { "i", 99675, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(98990, {	-- Legwraps of Celestial Harmony
+								["cost"] = { { "i", 99676, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99070, {	-- Legwraps of Seven Sacres Seals
+								["cost"] = { { "i", 99676, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99014, {	-- Legwraps of the Shattered Vale
+								["cost"] = { { "i", 99674, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99025, {	-- Legwraps of Ternion Glory
+								["cost"] = { { "i", 99675, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(98991, {	-- Mantle of Celestial Harmony
+								["cost"] = { { "i", 99670, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99062, {	-- Mantle of Seven Sacred Seals
+								["cost"] = { { "i", 99670, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99045, {	-- Mantle of the Horned Nightmare
+								["cost"] = { { "i", 99669, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99016, {	-- Mantle of the Shattered Vale
+								["cost"] = { { "i", 99668, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99018, {	-- Mantle of the Ternion Glory
+								["cost"] = { { "i", 99669, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99076, {	-- Mantle of Winged Triumph
+								["cost"] = { { "i", 99669, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99059, {	-- Pauldrons of Cyclopean Dread
+								["cost"] = { { "i", 99668, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99036, {	-- Pauldrons of the Prehistoric Marauder
+								["cost"] = { { "i", 99670, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(98987, {	-- Pauldrons of Winged Triumph
+								["cost"] = { { "i", 99669, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99041, {	-- Raiment of the Shattered Vale
+								["cost"] = { { "i", 99677, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99004, {	-- Raiment of the Ternion Glory
+								["cost"] = { { "i", 99678, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99056, {	-- Robes of the Horned Nightmare
+								["cost"] = { { "i", 99678, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99015, {	-- Robes of the Shattered Vale
+								["cost"] = { { "i", 99677, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99017, {	-- Robes of the Ternion Glory
+								["cost"] = { { "i", 99678, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99040, {	-- Shoulderguards of Cyclopean Dread
+								["cost"] = { { "i", 99668, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99051, {	-- Shoulderguards of Seven Sacred Seals
+								["cost"] = { { "i", 99670, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99030, {	-- Shoulderguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99670, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(98978, {	-- Shoulderguards of the Shattered Vale
+								["cost"] = { { "i", 99668, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99005, {	-- Shoulderguards of the Ternion Glory
+								["cost"] = { { "i", 99669, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99027, {	-- Shouldergaurds of Winged Triumph
+								["cost"] = { { "i", 99669, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99669, {	-- Shoulders of the Cursed Conquerer
+								["cost"] = { { "i", 105861, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99670, {	-- Shoulders of the Cursed Protector
+								["cost"] = { { "i", 105860, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99668, {	-- Shoulders of the Cursed Vanquisher
+								["cost"] = { { "i", 105862, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99091, {	-- Shoulderwraps of Celestial Harmony
+								["cost"] = { { "i", 99670, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(98998, {	-- Shoulderwraps of the Shattered Vale
+								["cost"] = { { "i", 99668, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(98977, {	-- Spaulders of Celestial Harmony
+								["cost"] = { { "i", 99670, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99075, {	-- Spaulders of Seven Sacred Seals
+								["cost"] = { { "i", 99670, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99010, {	-- Spaulders of the Barbed Assassin
+								["cost"] = { { "i", 99668, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99022, {	-- Spaulders of the Shattered Vale
+								["cost"] = { { "i", 99668, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99082, {	-- Spaulders of the Unblinking Vigil
+								["cost"] = { { "i", 99670, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99011, {	-- Tunic of Celestial Harmony
+								["cost"] = { { "i", 99679, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99071, {	-- Tunic of Seven Sacred Seals
+								["cost"] = { { "i", 99679, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99006, {	-- Tunic of the Barbed Assassin
+								["cost"] = { { "i", 99677, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(98999, {	-- Tunic of the Shattered Vale
+								["cost"] = { { "i", 99677, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99085, {	-- Tunic of the Unblinking Vigil
+								["cost"] = { { "i", 99679, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99061, {	-- Vest of Seven Sacred Seals
+								["cost"] = { { "i", 99679, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(98997, {	-- Vestment of the Shattered Vale
+								["cost"] = { { "i", 99677, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
 						},
 					}),
 					n(64051, {	-- Esha the Loommaiden <Tailoring Supplies>
+						["requireSkill"] = 197,	-- Tailoring
+						["coord"] = { 31.5, 53.6, 391 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(76061, {	-- Spirit of Harmony
-								i(86361),	-- Pattern: Contender's Satin Amice
-								i(86367),	-- Pattern: Contender's Satin Belt
-								i(86360),	-- Pattern: Contender's Satin Cowl
-								i(86365),	-- Pattern: Contender's Satin Cuffs
-								i(86366),	-- Pattern: Contender's Satin Footwraps
-								i(86363),	-- Pattern: Contender's Satin Handwraps
-								i(86364),	-- Pattern: Contender's Satin Pants
-								i(86362),	-- Pattern: Contender's Satin Raiment
-								i(86353),	-- Pattern: Contender's Silk Amice
-								i(86359),	-- Pattern: Contender's Silk Belt
-								i(86352),	-- Pattern: Contender's Silk Cowl
-								i(86357),	-- Pattern: Contender's Silk Cuffs
-								i(86358),	-- Pattern: Contender's Silk Footwraps
-								i(86355),	-- Pattern: Contender's Silk Handwraps
-								i(86356),	-- Pattern: Contender's Silk Pants
-								i(86354),	-- Pattern: Contender's Silk Raiment
+							i(86361, {	-- Pattern: Contender's Satin Amice
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86367, {	-- Pattern: Contender's Satin Belt
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86360, {	-- Pattern: Contender's Satin Cowl
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86365, {	-- Pattern: Contender's Satin Cuffs
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86366, {	-- Pattern: Contender's Satin Footwraps
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86363, {	-- Pattern: Contender's Satin Handwraps
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86364, {	-- Pattern: Contender's Satin Pants
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86362, {	-- Pattern: Contender's Satin Raiment
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86353, {	-- Pattern: Contender's Silk Amice
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86359, {	-- Pattern: Contender's Silk Belt
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86352, {	-- Pattern: Contender's Silk Cowl
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86357, {	-- Pattern: Contender's Silk Cuffs
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86358, {	-- Pattern: Contender's Silk Footwraps
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86355, {	-- Pattern: Contender's Silk Handwraps
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86356, {	-- Pattern: Contender's Silk Pants
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86354, {	-- Pattern: Contender's Silk Raiment
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 							}),
 						},
 					}),
 					n(64062, {	-- Gentle Dari <First Aid Supplies>
+						["coord"] = { 32.6, 73.7, 391 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(44693),	-- Wound Dressing Shirt
-							i(44694),	-- Antiseptic-Soaked Dressing Shirt
+							i(44694),	-- Antiseptic-Soaked Dressing
+							i(44693),	-- Wound Dressing
 						},
 					}),
 					n(64058, {	-- Jorunga Stonehoof <Blacksmithing Supplies>
-						["races"] = HORDE_ONLY,
 						["requireSkill"] = 164,	-- Blacksmithing
+						["coord"] = { 26.0, 46.2, 391 },
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(84158),	-- Plans: Contender's Revenant Belt
-							i(84159),	-- Plans: Contender's Revenant Boots
-							i(84160),	-- Plans: Contender's Revenant Bracers
-							i(84161),	-- Plans: Contender's Revenant Breastplate
-							i(84162),	-- Plans: Contender's Revenant Gauntlets
-							i(84163),	-- Plans: Contender's Revenant Helm
-							i(84164),	-- Plans: Contender's Revenant Legplates
-							i(84165),	-- Plans: Contender's Revenant Shoulders
-							i(84166),	-- Plans: Contender's Spirit Belt
-							i(84167),	-- Plans: Contender's Spirit Boots
-							i(84168),	-- Plans: Contender's Spirit Bracers
-							i(84169),	-- Plans: Contender's Spirit Breastplate
-							i(84170),	-- Plans: Contender's Spirit Gauntlets
-							i(84171),	-- Plans: Contender's Spirit Helm
-							i(84172),	-- Plans: Contender's Spirit Legplates
-							i(84173),	-- Plans: Contender's Spirit Shoulders
-							i(84208),	-- Plans: Masterwork Lightsteel Shield
-							i(84219),	-- Plans: Masterwork Spiritguard Belt
-							i(84220),	-- Plans: Masterwork Spiritguard Boots
-							i(84221),	-- Plans: Masterwork Spiritguard Bracers
-							i(84222),	-- Plans: Masterwork Spiritguard Breastplate
-							i(84223),	-- Plans: Masterwork Spiritguard Gauntlets
-							i(84224),	-- Plans: Masterwork Spiritguard Helm
-							i(84225),	-- Plans: Masterwork Spiritguard Legplates
-							i(84226),	-- Plans: Masterwork Spiritguard Shield
-							i(84227),	-- Plans: Masterwork Spiritguard Shoulders
+							i(84158, {	-- Plans: Contender's Revenant Belt
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84159, {	-- Plans: Contender's Revenant Boots
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84160, {	-- Plans: Contender's Revenant Bracers
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84161, {	-- Plans: Contender's Revenant Breastplate
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84162, {	-- Plans: Contender's Revenant Gauntlets
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84163, {	-- Plans: Contender's Revenant Helm
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84164, {	-- Plans: Contender's Revenant Legplates
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84165, {	-- Plans: Contender's Revenant Shoulders
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84166, {	-- Plans: Contender's Spirit Belt
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84167, {	-- Plans: Contender's Spirit Boots
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84168, {	-- Plans: Contender's Spirit Bracers
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84169, {	-- Plans: Contender's Spirit Breastplate
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84170, {	-- Plans: Contender's Spirit Gauntlets
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84171, {	-- Plans: Contender's Spirit Helm
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84172, {	-- Plans: Contender's Spirit Legplates
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84173, {	-- Plans: Contender's Spirit Shoulders
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84208, {	-- Plans: Masterwork Lightsteel Shield
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84219, {	-- Plans: Masterwork Spiritguard Belt
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84220, {	-- Plans: Masterwork Spiritguard Boots
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84221, {	-- Plans: Masterwork Spiritguard Bracers
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84222, {	-- Plans: Masterwork Spiritguard Breastplate
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84223, {	-- Plans: Masterwork Spiritguard Gauntlets
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84224, {	-- Plans: Masterwork Spiritguard Helm
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84225, {	-- Plans: Masterwork Spiritguard Legplates
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84226, {	-- Plans: Masterwork Spiritguard Shield
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(84227, {	-- Plans: Masterwork Spiritguard Shoulders
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
 						},
 					}),
 					n(74012, {	-- Ki'agnuu <Heroic Vendor>
+						["coord"] = { 43.1, 78.7, 392 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(105858, {	-- Essence of the Cursed Conqueror
-								i(99686, {	-- Chest of the Cursed Conquerer
-									i(99133),	-- Breastplate of Winged Triumph
-									i(99110),	-- Raiment of the Ternion Glory
-									i(99119),	-- Robes of the Ternion Glory
-									i(99126),	-- Chestguard of Winged Triumph
-									i(99136),	-- Battleplate of Winged Triumph
-									i(99204),	-- Robes of the Horned Nightmare
-								}),
-								i(99687, {	-- Gauntlets of the Cursed Conquerer
-									i(99134),	-- Gloves of Winged Triumph
-									i(99137),	-- Gauntlets of Winged Triumph
-									i(99121),	-- Gloves of the Ternion Glory
-									i(99131),	-- Handwraps of the Ternion Glory
-									i(99127),	-- Handguards of Winged Triumph
-									i(99096),	-- Gloves of the Horned Nightmare
-								}),
-								i(99689, {	-- Helm of the Cursed Conquerer
-									i(99135),	-- Headguard of Winged Triumph
-									i(99138),	-- Helmet of Winged Triumph
-									i(99122),	-- Hood of the Ternion Glory
-									i(99117),	-- Cowl of the Ternion Glory
-									i(99128),	-- Faceguard of Winged Triumph
-									i(99097),	-- Hood of the Horned Nightmare
-								}),
-								i(99688, {	-- Leggings of the Cursed Conquerer
-									i(99124),	-- Greaves of Winged Triumph
-									i(99139),	-- Legplates of Winged Triumph
-									i(99123),	-- Leggings of Ternion Glory
-									i(99118),	-- Legwraps of Ternion Glory
-									i(99129),	-- Legguards of Winged Triumph
-									i(99098),	-- Leggings of the Horned Nightmare
-								}),
-								i(99690, {	-- Shoulders of the Cursed Conquerer
-									i(99132),	-- Pauldrons of Winged Triumph
-									i(99111),	-- Shoulderguards of the Ternion Glory
-									i(99120),	-- Mantle of the Ternion Glory
-									i(99130),	-- Shouldergaurds of Winged Triumph
-									i(99205),	-- Mantle of the Horned Nightmare
-									i(99125),	-- Mantle of Winged Triumph
-								}),
+							i(99197, {	-- Battleplate of the Prehistoric Marauder
+								["cost"] = { { "i", 99691, 1 }, },	-- Chest of the Cursed Protector
 							}),
-							i(105857, {	-- Essence of the Cursed Protector
-								i(99691, {	-- Chest of the Cursed Protector
-									i(99101),	-- Cuirass of Celestial Harmony
-									i(99107),	-- Tunic of Celestial Harmony
-									i(99201),	-- Chestguard of the Prehistoric Marauder
-									i(99197),	-- Battleplate of the Prehistoric Marauder
-									i(99150),	-- Vest of Seven Sacred Seals
-									i(99140),	-- Chestguard of Seven Sacred Seals
-									i(99154),	-- Tunic of Seven Sacred Seals
-									i(99167),	-- Tunic of the Unblinking Vigil
-									i(99106),	-- Hauberk of Celestial Harmony
-								}),
-								i(99692, {	-- Gauntlets of the Cursed Protector
-									i(99141),	-- Gauntlets of Saven Sacred Seals
-									i(99198),	-- Gauntlets of the Prehistoric Marauder
-									i(99092),	-- Gloves of Celestial Harmony
-									i(99168),	-- Gloves of the Unblinking Vigil
-									i(99102),	-- Grips of Celestial Harmony
-									i(99155),	-- Grips of Seven Sacred Seals
-									i(99202),	-- Handguards of the Prehistoric Marauder
-									i(99108),	-- Handwraps of Celestial Harmony
-									i(99147),	-- Handwraps of Seven Sacred Seals
-								}),
-								i(99694, {	-- Helm of the Cursed Protector
-									i(99103),	-- Helmet of Celestial Harmony
-									i(99109),	-- Faceguard of Celestial Harmony
-									i(99203),	-- Faceguard of the Prehistoric Marauder
-									i(99206),	-- Helmet of the Prehistoric Marauder
-									i(99142),	-- Crown of Seven Sacred Seals
-									i(99148),	-- Helm of Seven Sacred Seals
-									i(99156),	-- Headpiece of Seven Sacred Seals
-									i(99157),	-- Headguard of the Unblinking Vigil
-									i(99093),	-- Headpiece of Celestial Harmony
-								}),
-								i(99693, {	-- Leggings of the Cursed Protector
-									i(99104),	-- Legguards of Celestial Harmony
-									i(99099),	-- Legwraps of Celestial Harmony
-									i(99195),	-- Legguards of the Prehistoric Marauder
-									i(99199),	-- Legplates of the Prehistoric Marauder
-									i(99143),	-- Legguards of Seven Sacred Seals
-									i(99149),	-- Legwraps of Seven Sacres Seals
-									i(99145),	-- Leggings of Seven Sacred Seals
-									i(99158),	-- Legguards of the Unblinking Vigil
-									i(99094),	-- Leggings of Celestial Harmony
-								}),
-								i(99695, {	-- Shoulder of the Cursed Protector
-									i(99105),	-- Spaulders of Celestial Harmony
-									i(99100),	-- Mantle of Celestial Harmony
-									i(99095),	-- Shoulderguards of the Prehistoric Marauder
-									i(99200),	-- Pauldrons of the Prehistoric Marauder
-									i(99144),	-- Shoulderguards of Saven Sacred Seals
-									i(99151),	-- Mantle of Saven Sacred Seals
-									i(99146),	-- Spaulders of Seven Sacred Seals
-									i(99159),	-- Spaulders of the Unblinking Vigil
-									i(99196),	-- Shoulderwrap sof Celestial Harmony
-								}),
+							i(99136, {	-- Battleplate of Winged Triumph
+								["cost"] = { { "i", 99686, 1 }, },	-- Chest of the Cursed Conquerer
 							}),
-							i(105859, {	-- Essence of the Cursed Vanquisher
-								i(99696, {	-- Chest of the Cursed Vanquisher
-									i(99177),	-- Vestment of the Shattered Vale
-									i(99170),	-- Tunic of the Shattered Vale
-									i(99112),	-- Tunic of the Barbed Assassin
-									i(99172),	-- Robes of the Shattered Vale
-									i(99180),	-- Raiment of the Shattered Vale
-									i(99188),	-- Chestguard of Cyclopean Dread
-									i(99192),	-- Breastplate of Cyclopeaan Dread
-									i(99152),	-- Chronomancer Robes
-								}),
-								i(99682, {	-- Gauntlets of the Cursed Vanquisher
-									i(99174),	-- Gloves of the Shattered Vale
-									i(99163),	-- Handguards of the Shattered Vale
-									i(99113),	-- Gloves of the Barbed Assassin
-									i(99185),	-- Handwraps of the Shattered Vale
-									i(99181),	-- Grips of the Shattered Vale
-									i(99189),	-- Handguards of Cyclopean Dread
-									i(99193),	-- Gauntlets of Cyclopean Dread
-									i(99160),	-- Chronomancer Gloves
-								}),
-								i(99683, {	-- Helm of the Cursed Vanquisher
-									i(99175),	-- Cover of the Shattered Vale
-									i(99164),	-- Headguard of the Shattered Vale
-									i(99114),	-- Helmet of the Barbed Assassin
-									i(99178),	-- Helm of the Shattered Vale
-									i(99182),	-- Headpiece of the Shattered Vale
-									i(99190),	-- Faceguard of Cyclopean Dread
-									i(99194),	-- Helmet of Cyclopean Dread
-									i(99161),	-- Chronomancer Hood
-								}),
-								i(99684, {	-- Leggings of the Cursed Vanquisher
-									i(99165),	-- Breeches od the Shattered Vale
-									i(99176),	-- Leggings of the Shattered Vale
-									i(99115),	-- Legguards of the Barbed Assassin
-									i(99171),	-- Legwraps of the Shattered Vale
-									i(99191),	-- Legguards of Cyclopean Dread
-									i(99183),	-- Legguards of the Shattered Vale
-									i(99186),	-- Greaves of Cyclopean Dread
-									i(99162),	-- Chronomancer Leggings
-								}),
-								i(99685, {	-- Shoulders of the Cursed Vanquisher
-									i(99166),	-- Shoulderguards of the Shattered Vale
-									i(99169),	-- Shoulderwraps of the Shattered Vale
-									i(99116),	-- Spaulders of the Barbed Assassin
-									i(99173),	-- Mantle of the Shattered Vale
-									i(99184),	-- Spaulders of the Shattered Vale
-									i(99179),	-- Shoulderguards of Cyclopean Dread
-									i(99187),	-- Pauldrons of Cyclopean Dread
-									i(99153),	-- Chronomancer Mantle
-								}),
+							i(99192, {	-- Breastplate of Cyclopeaan Dread
+								["cost"] = { { "i", 99696, 1 }, },	-- Chest of the Cursed Vanquisher
 							}),
-							i(99092),	-- Gloves of Celestial HarmonyShaman
-							i(99093),	-- Headpiece of Celestial HarmonyShaman
-							i(99094),	-- Leggings of Celestial HarmonyShaman
-							i(99095),	-- Shoulderwraps of Celestial HarmonyShaman
-							i(99096),	-- Gloves of the Horned NightmareWarlock
-							i(99097),	-- Hood of the Horned NightmareWarlock
-							i(99098),	-- Leggings of the Horned NightmareWarlock
-							i(99099),	-- Legwraps of Celestial HarmonyShaman
-							i(99100),	-- Mantle of Celestial HarmonyShaman
-							i(99101),	-- Cuirass of Celestial HarmonyShaman
-							i(99102),	-- Grips of Celestial HarmonyShaman
-							i(99103),	-- Helmet of Celestial HarmonyShaman
-							i(99104),	-- Legguards of Celestial HarmonyShaman
-							i(99105),	-- Spaulders of Celestial HarmonyShaman
-							i(99106),	-- Hauberk of Celestial HarmonyShaman
-							i(99107),	-- Tunic of Celestial HarmonyShaman
-							i(99108),	-- Handwraps of Celestial HarmonyShaman
-							i(99109),	-- Faceguard of Celestial HarmonyShaman
-							i(99110),	-- Raiment of the Ternion GloryPriest
-							i(99111),	-- Shoulderguards of the Ternion GloryPriest
-							i(99112),	-- Tunic of the Barbed AssassinRogue
-							i(99113),	-- Gloves of the Barbed AssassinRogue
-							i(99114),	-- Helmet of the Barbed AssassinRogue
-							i(99115),	-- Legguards of the Barbed AssassinRogue
-							i(99116),	-- Spaulders of the Barbed AssassinRogue
-							i(99117),	-- Cowl of the Ternion GloryPriest
-							i(99118),	-- Legwraps of the Ternion GloryPriest
-							i(99119),	-- Robes of the Ternion GloryPriest
-							i(99120),	-- Mantle of the Ternion GloryPriest
-							i(99121),	-- Gloves of the Ternion GloryPriest
-							i(99122),	-- Hood of the Ternion GloryPriest
-							i(99123),	-- Leggings of the Ternion GloryPriest
-							i(99124),	-- Greaves of Winged TriumphPaladin
-							i(99125),	-- Mantle of Winged TriumphPaladin
-							i(99126),	-- Chestguard of Winged TriumphPaladin
-							i(99127),	-- Handguards of Winged TriumphPaladin
-							i(99128),	-- Faceguard of Winged TriumphPaladin
-							i(99129),	-- Legguards of Winged TriumphPaladin
-							i(99130),	-- Shoulderguards of Winged TriumphPaladin
-							i(99131),	-- Handwraps of the Ternion GloryPriest
-							i(99132),	-- Pauldrons of Winged TriumphPaladin
-							i(99133),	-- Breastplate of Winged TriumphPaladin
-							i(99134),	-- Gloves of Winged TriumphPaladin
-							i(99135),	-- Headguard of Winged TriumphPaladin
-							i(99136),	-- Battleplate of Winged TriumphPaladin
-							i(99137),	-- Gauntlets of Winged TriumphPaladin
-							i(99138),	-- Helmet of Winged TriumphPaladin
-							i(99139),	-- Legplates of Winged TriumphPaladin
-							i(99140),	-- Chestguard of Seven Sacred SealsMonk
-							i(99141),	-- Gauntlets of Seven Sacred SealsMonk
-							i(99142),	-- Crown of Seven Sacred SealsMonk
-							i(99143),	-- Legguards of Seven Sacred SealsMonk
-							i(99144),	-- Shoulderguards of Seven Sacred SealsMonk
-							i(99145),	-- Leggings of Seven Sacred SealsMonk
-							i(99146),	-- Spaulders of Seven Sacred SealsMonk
-							i(99147),	-- Handwraps of Seven Sacred SealsMonk
-							i(99148),	-- Helm of Seven Sacred SealsMonk
-							i(99149),	-- Legwraps of Seven Sacred SealsMonk
-							i(99150),	-- Vest of Seven Sacred SealsMonk
-							i(99151),	-- Mantle of Seven Sacred SealsMonk
-							i(99152),	-- Chronomancer RobesMage
-							i(99153),	-- Chronomancer MantleMage
-							i(99154),	-- Tunic of Seven Sacred SealsMonk
-							i(99155),	-- Grips of Seven Sacred SealsMonk
-							i(99156),	-- Headpiece of Seven Sacred SealsMonk
-							i(99157),	-- Headguard of the Unblinking VigilHunter
-							i(99158),	-- Legguards of the Unblinking VigilHunter
-							i(99159),	-- Spaulders of the Unblinking VigilHunter
-							i(99160),	-- Chronomancer GlovesMage
-							i(99161),	-- Chronomancer HoodMage
-							i(99162),	-- Chronomancer LeggingsMage
-							i(99163),	-- Handguards of the Shattered ValeDruid
-							i(99164),	-- Headguard of the Shattered ValeDruid
-							i(99165),	-- Breeches of the Shattered ValeDruid
-							i(99166),	-- Shoulderguards of the Shattered ValeDruid
-							i(99167),	-- Tunic of the Unblinking VigilHunter
-							i(99168),	-- Gloves of the Unblinking VigilHunter
-							i(99169),	-- Shoulderwraps of the Shattered ValeDruid
-							i(99170),	-- Tunic of the Shattered ValeDruid
-							i(99171),	-- Legwraps of the Shattered ValeDruid
-							i(99172),	-- Robes of the Shattered ValeDruid
-							i(99173),	-- Mantle of the Shattered ValeDruid
-							i(99174),	-- Gloves of the Shattered ValeDruid
-							i(99175),	-- Cover of the Shattered ValeDruid
-							i(99176),	-- Leggings of the Shattered ValeDruid
-							i(99177),	-- Vestment of the Shattered ValeDruid
-							i(99178),	-- Helm of the Shattered ValeDruid
-							i(99179),	-- Shoulderguards of Cyclopean DreadDeath Knight
-							i(99180),	-- Raiment of the Shattered ValeDruid
-							i(99181),	-- Grips of the Shattered ValeDruid
-							i(99182),	-- Headpiece of the Shattered ValeDruid
-							i(99183),	-- Legguards of the Shattered ValeDruid
-							i(99184),	-- Spaulders of the Shattered ValeDruid
-							i(99185),	-- Handwraps of the Shattered ValeDruid
-							i(99186),	-- Greaves of Cyclopean DreadDeath Knight
-							i(99187),	-- Pauldrons of Cyclopean DreadDeath Knight
-							i(99188),	-- Chestguard of Cyclopean DreadDeath Knight
-							i(99189),	-- Handguards of Cyclopean DreadDeath Knight
-							i(99190),	-- Faceguard of Cyclopean DreadDeath Knight
-							i(99191),	-- Legguards of Cyclopean DreadDeath Knight
-							i(99192),	-- Breastplate of Cyclopean DreadDeath Knight
-							i(99193),	-- Gauntlets of Cyclopean DreadDeath Knight
-							i(99194),	-- Helmet of Cyclopean DreadDeath Knight
-							i(99195),	-- Legguards of the Prehistoric MarauderWarrior
-							i(99196),	-- Shoulderguards of the Prehistoric MarauderWarrior
-							i(99197),	-- Battleplate of the Prehistoric MarauderWarrior
-							i(99198),	-- Gauntlets of the Prehistoric MarauderWarrior
-							i(99199),	-- Legplates of the Prehistoric MarauderWarrior
-							i(99200),	-- Pauldrons of the Prehistoric MarauderWarrior
-							i(99201),	-- Chestguard of the Prehistoric MarauderWarrior
-							i(99202),	-- Handguards of the Prehistoric MarauderWarrior
-							i(99203),	-- Faceguard of the Prehistoric MarauderWarrior
-							i(99204),	-- Robes of the Horned NightmareWarlock
-							i(99205),	-- Mantle of the Horned NightmareWarlock
-							i(99206),	-- Helmet of the Prehistoric MarauderWarrior
+							i(99133, {	-- Breastplate of Winged Triumph
+								["cost"] = { { "i", 99686, 1 }, },	-- Chest of the Cursed Conquerer
+							}),
+							i(99165, {	-- Breeches of the Shattered Vale
+								["cost"] = { { "i", 99684, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99686, {	-- Chest of the Cursed Conqueror
+								["cost"] = { { "i", 105858, 1 }, },	-- Essence of the Cursed Conquerer
+							}),
+							i(99691, {	-- Chest of the Cursed Protector
+								["cost"] = { { "i", 105857, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99696, {	-- Chest of the Cursed Vanquisher
+								["cost"] = { { "i", 105859, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99188, {	-- Chestguard of Cyclopean Dread
+								["cost"] = { { "i", 99696, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99140, {	-- Chestguard of Seven Sacred Seals
+								["cost"] = { { "i", 99691, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99201, {	-- Chestguard of the Prehistoric Marauder
+								["cost"] = { { "i", 99691, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99126, {	-- Chestguard of Winged Triumph
+								["cost"] = { { "i", 99686, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99160, {	-- Chronomancer Gloves
+								["cost"] = { { "i", 99682, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99161, {	-- Chronomancer Hood
+								["cost"] = { { "i", 99683, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99162, {	-- Chronomancer Leggings
+								["cost"] = { { "i", 99684, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99153, {	-- Chronomancer Mantle
+								["cost"] = { { "i", 99685, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99152, {	-- Chronomancer Robes
+								["cost"] = { { "i", 99696, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99175, {	-- Cover of the Shattered Vale
+								["cost"] = { { "i", 99683, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99117, {	-- Cowl of the Ternion Glory
+								["cost"] = { { "i", 99689, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99142, {	-- Crown of Seven Sacred Seals
+								["cost"] = { { "i", 99694, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99101, {	-- Cuirass of Celestial Harmony
+								["cost"] = { { "i", 99691, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99109, {	-- Faceguard of Celestial Harmony
+								["cost"] = { { "i", 99694, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99190, {	-- Faceguard of Cyclopean Dread
+								["cost"] = { { "i", 99683, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99203, {	-- Faceguard of the Prehistoric Marauder
+								["cost"] = { { "i", 99694, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99128, {	-- Faceguard of Winged Triumph
+								["cost"] = { { "i", 99689, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99193, {	-- Gauntlets of Cyclopean Dread
+								["cost"] = { { "i", 99682, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99141, {	-- Gauntlets of Seven Sacred Seals
+								["cost"] = { { "i", 99692, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99687, {	-- Gauntlets of the Cursed Conquerer
+								["cost"] = { { "i", 105858, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99692, {	-- Gauntlets of the Cursed Protector
+								["cost"] = { { "i", 105857, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99682, {	-- Gauntlets of the Cursed Vanquisher
+								["cost"] = { { "i", 105859, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99198, {	-- Gauntlets of the Prehistoric Marauder
+								["cost"] = { { "i", 99692, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99137, {	-- Gauntlets of Winged Triumph
+								["cost"] = { { "i", 99687, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99092, {	-- Gloves of Celestial Harmony
+								["cost"] = { { "i", 99692, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99113, {	-- Gloves of the Barbed Assassin
+								["cost"] = { { "i", 99682, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99096, {	-- Gloves of the Horned Nightmare
+								["cost"] = { { "i", 99687, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99174, {	-- Gloves of the Shattered Vale
+								["cost"] = { { "i", 99682, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99121, {	-- Gloves of the Ternion Glory
+								["cost"] = { { "i", 99687, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99168, {	-- Gloves of the Unblinking Vigil
+								["cost"] = { { "i", 99692, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99134, {	-- Gloves of Winged Triumph
+								["cost"] = { { "i", 99687, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99186, {	-- Greaves of Cyclopean Dread
+								["cost"] = { { "i", 99684, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99124, {	-- Greaves of Winged Triumph
+								["cost"] = { { "i", 99688, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99102, {	-- Grips of Celestial Harmony
+								["cost"] = { { "i", 99692, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99155, {	-- Grips of Seven Sacred Seals
+								["cost"] = { { "i", 99692, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99181, {	-- Grips of the Shattered Vale
+								["cost"] = { { "i", 99682, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99189, {	-- Handguards of Cyclopean Dread
+								["cost"] = { { "i", 99682, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99202, {	-- Handguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99692, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99163, {	-- Handguards of the Shattered Vale
+								["cost"] = { { "i", 99682, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99127, {	-- Handguards of Winged Triumph
+								["cost"] = { { "i", 99687, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99108, {	-- Handwraps of Celestial Harmony
+								["cost"] = { { "i", 99692, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99147, {	-- Handwraps of Seven Sacred Seals
+								["cost"] = { { "i", 99692, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99185, {	-- Handwraps of the Shattered Vale
+								["cost"] = { { "i", 99682, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99131, {	-- Handwraps of the Ternion Glory
+								["cost"] = { { "i", 99687, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99106, {	-- Hauberk of Celestial Harmony
+								["cost"] = { { "i", 99691, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99164, {	-- Headguard of the Shattered Vale
+								["cost"] = { { "i", 99683, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99157, {	-- Headguard of the Unblinking Vigil
+								["cost"] = { { "i", 99694, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99135, {	-- Headguard of Winged Triumph
+								["cost"] = { { "i", 99689, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99093, {	-- Headpiece of Celestial Harmony
+								["cost"] = { { "i", 99694, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99156, {	-- Headpiece of Seven Sacred Seals
+								["cost"] = { { "i", 99694, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99182, {	-- Headpiece of the Shattered Vale
+								["cost"] = { { "i", 99683, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99148, {	-- Helm of Seven Sacred Seals
+								["cost"] = { { "i", 99694, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99689, {	-- Helm of the Cursed Conquerer
+								["cost"] = { { "i", 105858, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99694, {	-- Helm of the Cursed Protector
+								["cost"] = { { "i", 105857, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99683, {	-- Helm of the Cursed Vanquisher
+								["cost"] = { { "i", 105859, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99178, {	-- Helm of the Shattered Vale
+								["cost"] = { { "i", 99683, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99103, {	-- Helmet of Celestial Harmony
+								["cost"] = { { "i", 99694, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99194, {	-- Helmet of Cyclopean Dread
+								["cost"] = { { "i", 99683, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99114, {	-- Helmet of the Barbed Assassin
+								["cost"] = { { "i", 99683, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99206, {	-- Helmet of the Prehistoric Marauder
+								["cost"] = { { "i", 99694, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99138, {	-- Helmet of Winged Triumph
+								["cost"] = { { "i", 99689, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99097, {	-- Hood of the Horned Nightmare
+								["cost"] = { { "i", 99689, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99122, {	-- Hood of the Ternion Glory
+								["cost"] = { { "i", 99689, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99094, {	-- Leggings of Celestial Harmony
+								["cost"] = { { "i", 99693, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99145, {	-- Leggings of Seven Sacred Seals
+								["cost"] = { { "i", 99693, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99688, {	-- Leggings of the Cursed Conquerer
+								["cost"] = { { "i", 105858, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99693, {	-- Leggings of the Cursed Protector
+								["cost"] = { { "i", 105857, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99684, {	-- Leggings of the Cursed Vanquisher
+								["cost"] = { { "i", 105859, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99098, {	-- Leggings of the Horned Nightmare
+								["cost"] = { { "i", 99688, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99176, {	-- Leggings of the Shattered Vale
+								["cost"] = { { "i", 99684, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99123, {	-- Leggings of Ternion Glory
+								["cost"] = { { "i", 99688, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99104, {	-- Legguards of Celestial Harmony
+								["cost"] = { { "i", 99693, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99191, {	-- Legguards of Cyclopean Dread
+								["cost"] = { { "i", 99684, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99143, {	-- Legguards of Seven Sacred Seals
+								["cost"] = { { "i", 99693, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99115, {	-- Legguards of the Barbed Assassin
+								["cost"] = { { "i", 99684, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99195, {	-- Legguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99693, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99183, {	-- Legguards of the Shattered Vale
+								["cost"] = { { "i", 99684, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99158, {	-- Legguards of the Unblinking Vigil
+								["cost"] = { { "i", 99693, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99129, {	-- Legguards of Winged Triumph
+								["cost"] = { { "i", 99688, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99199, {	-- Legplates of the Prehistoric Marauder
+								["cost"] = { { "i", 99693, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99139, {	-- Legplates of Winged Triumph
+								["cost"] = { { "i", 99688, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99099, {	-- Legwraps of Celestial Harmony
+								["cost"] = { { "i", 99693, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99149, {	-- Legwraps of Seven Sacres Seals
+								["cost"] = { { "i", 99693, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99171, {	-- Legwraps of the Shattered Vale
+								["cost"] = { { "i", 99684, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99118, {	-- Legwraps of Ternion Glory
+								["cost"] = { { "i", 99688, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99100, {	-- Mantle of Celestial Harmony
+								["cost"] = { { "i", 99695, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99151, {	-- Mantle of Seven Sacred Seals
+								["cost"] = { { "i", 99695, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99205, {	-- Mantle of the Horned Nightmare
+								["cost"] = { { "i", 99690, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99173, {	-- Mantle of the Shattered Vale
+								["cost"] = { { "i", 99685, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99120, {	-- Mantle of the Ternion Glory
+								["cost"] = { { "i", 99690, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99125, {	-- Mantle of Winged Triumph
+								["cost"] = { { "i", 99690, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99187, {	-- Pauldrons of Cyclopean Dread
+								["cost"] = { { "i", 99685, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99200, {	-- Pauldrons of the Prehistoric Marauder
+								["cost"] = { { "i", 99695, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99132, {	-- Pauldrons of Winged Triumph
+								["cost"] = { { "i", 99690, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99180, {	-- Raiment of the Shattered Vale
+								["cost"] = { { "i", 99696, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99110, {	-- Raiment of the Ternion Glory
+								["cost"] = { { "i", 99686, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99204, {	-- Robes of the Horned Nightmare
+								["cost"] = { { "i", 99686, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99172, {	-- Robes of the Shattered Vale
+								["cost"] = { { "i", 99696, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99119, {	-- Robes of the Ternion Glory
+								["cost"] = { { "i", 99686, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99179, {	-- Shoulderguards of Cyclopean Dread
+								["cost"] = { { "i", 99685, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99144, {	-- Shoulderguards of Seven Sacred Seals
+								["cost"] = { { "i", 99695, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99196, {	-- Shoulderwrap sof Celestial Harmony
+								["cost"] = { { "i", 99695, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99166, {	-- Shoulderguards of the Shattered Vale
+								["cost"] = { { "i", 99685, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99111, {	-- Shoulderguards of the Ternion Glory
+								["cost"] = { { "i", 99690, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99130, {	-- Shouldergaurds of Winged Triumph
+								["cost"] = { { "i", 99690, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99690, {	-- Shoulders of the Cursed Conquerer
+								["cost"] = { { "i", 105858, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99695, {	-- Shoulders of the Cursed Protector
+								["cost"] = { { "i", 105857, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99685, {	-- Shoulders of the Cursed Vanquisher
+								["cost"] = { { "i", 105859, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99095, {	-- Shoulderguards of Celestial Harmony
+								["cost"] = { { "i", 99695, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99169, {	-- Shoulderwraps of the Shattered Vale
+								["cost"] = { { "i", 99685, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99105, {	-- Spaulders of Celestial Harmony
+								["cost"] = { { "i", 99695, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99146, {	-- Spaulders of Seven Sacred Seals
+								["cost"] = { { "i", 99695, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99116, {	-- Spaulders of the Barbed Assassin
+								["cost"] = { { "i", 99685, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99184, {	-- Spaulders of the Shattered Vale
+								["cost"] = { { "i", 99685, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99159, {	-- Spaulders of the Unblinking Vigil
+								["cost"] = { { "i", 99695, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99107, {	-- Tunic of Celestial Harmony
+								["cost"] = { { "i", 99691, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99154, {	-- Tunic of Seven Sacred Seals
+								["cost"] = { { "i", 99691, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99112, {	-- Tunic of the Barbed Assassin
+								["cost"] = { { "i", 99696, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99170, {	-- Tunic of the Shattered Vale
+								["cost"] = { { "i", 99696, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99167, {	-- Tunic of the Unblinking Vigil
+								["cost"] = { { "i", 99691, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99150, {	-- Vest of Seven Sacred Seals
+								["cost"] = { { "i", 99691, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99177, {	-- Vestment of the Shattered Vale
+								["cost"] = { { "i", 99696, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
 						},
 					}),
 					n(64054, {	-- Krogo Darkhide <Leatherworking & Skinning Supplies>
-						["races"] = HORDE_ONLY,
 						["requireSkill"] = 165,	-- Leatherworking
+						["coord"] = { 30.5, 46.5, 391 },
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(76061, {	-- Spirit of Harmony
-								i(86240),	-- Pattern: Contender's Dragonscale Belt
-								i(86241),	-- Pattern: Contender's Dragonscale Boots
-								i(86242),	-- Pattern: Contender's Dragonscale Bracers
-								i(86243),	-- Pattern: Contender's Dragonscale Chestguard
-								i(86244),	-- Pattern: Contender's Dragonscale Gloves
-								i(86245),	-- Pattern: Contender's Dragonscale Helm
-								i(86246),	-- Pattern: Contender's Dragonscale Leggings
-								i(86247),	-- Pattern: Contender's Dragonscale Shoulders
-								i(86248),	-- Pattern: Contender's Leather Belt
-								i(86249),	-- Pattern: Contender's Leather Boots
-								i(86250),	-- Pattern: Contender's Leather Bracers
-								i(86251),	-- Pattern: Contender's Leather Chestguard
-								i(86252),	-- Pattern: Contender's Leather Gloves
-								i(86253),	-- Pattern: Contender's Leather Helm
-								i(86254),	-- Pattern: Contender's Leather Leggings
-								i(86255),	-- Pattern: Contender's Leather Shoulders
-								i(86256),	-- Pattern: Contender's Scale Belt
-								i(86257),	-- Pattern: Contender's Scale Boots
-								i(86258),	-- Pattern: Contender's Scale Bracers
-								i(86259),	-- Pattern: Contender's Scale Chestguard
-								i(86260),	-- Pattern: Contender's Scale Gloves
-								i(86261),	-- Pattern: Contender's Scale Helm
-								i(86262),	-- Pattern: Contender's Scale Leggings
-								i(86263),	-- Pattern: Contender's Scale Shoulders
-								i(86264),	-- Pattern: Contender's Wyrmhide Belt
-								i(86265),	-- Pattern: Contender's Wyrmhide Boots
-								i(86266),	-- Pattern: Contender's Wyrmhide Bracers
-								i(86267),	-- Pattern: Contender's Wyrmhide Chestguard
-								i(86268),	-- Pattern: Contender's Wyrmhide Gloves
-								i(86269),	-- Pattern: Contender's Wyrmhide Helm
-								i(86270),	-- Pattern: Contender's Wyrmhide Leggings
-								i(86271),	-- Pattern: Contender's Wyrmhide Shoulders
+							i(86240, {	-- Pattern: Contender's Dragonscale Belt
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86241, {	-- Pattern: Contender's Dragonscale Boots
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86242, {	-- Pattern: Contender's Dragonscale Bracers
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86243, {	-- Pattern: Contender's Dragonscale Chestguard
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86244, {	-- Pattern: Contender's Dragonscale Gloves
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86245, {	-- Pattern: Contender's Dragonscale Helm
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86246, {	-- Pattern: Contender's Dragonscale Leggings
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86247, {	-- Pattern: Contender's Dragonscale Shoulders
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86248, {	-- Pattern: Contender's Leather Belt
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86249, {	-- Pattern: Contender's Leather Boots
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86250, {	-- Pattern: Contender's Leather Bracers
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86251, {	-- Pattern: Contender's Leather Chestguard
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86252, {	-- Pattern: Contender's Leather Gloves
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86253, {	-- Pattern: Contender's Leather Helm
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86254, {	-- Pattern: Contender's Leather Leggings
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86255, {	-- Pattern: Contender's Leather Shoulders
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86256, {	-- Pattern: Contender's Scale Belt
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86257, {	-- Pattern: Contender's Scale Boots
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86258, {	-- Pattern: Contender's Scale Bracers
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86259, {	-- Pattern: Contender's Scale Chestguard
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86260, {	-- Pattern: Contender's Scale Gloves
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86261, {	-- Pattern: Contender's Scale Helm
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86262, {	-- Pattern: Contender's Scale Leggings
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86263, {	-- Pattern: Contender's Scale Shoulders
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86264, {	-- Pattern: Contender's Wyrmhide Belt
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86265, {	-- Pattern: Contender's Wyrmhide Boots
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86266, {	-- Pattern: Contender's Wyrmhide Bracers
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86267, {	-- Pattern: Contender's Wyrmhide Chestguard
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86268, {	-- Pattern: Contender's Wyrmhide Gloves
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86269, {	-- Pattern: Contender's Wyrmhide Helm
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86270, {	-- Pattern: Contender's Wyrmhide Leggings
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
+							}),
+							i(86271, {	-- Pattern: Contender's Wyrmhide Shoulders
+								["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 							}),
 						},
 					}),
 					n(74010, {	-- Nadina Stargem <Raid Vendor>
+						["coord"] = { 43.3, 76.0, 392 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(105864, {	-- Essence of the Cursed Conquerer
-								i(99743, {	-- Chest of the Cursed Conquerer
-									i(99626),	-- Breastplate of Winged Triumph
-									i(99627),	-- Raiment of the Ternion Glory
-									i(99584),	-- Robes of the Ternion Glory
-									i(99598),	-- Chestguard of Winged Triumph
-									i(99566),	-- Battleplate of Winged Triumph
-									i(99570),	-- Robes of the Horned Nightmare
-								}),
-								i(99746, {	-- Gauntlets of the Cursed Conquerer
-									i(99648),	-- Gloves of Winged Triumph
-									i(99625),	-- Gauntlets of Winged Triumph
-									i(99586),	-- Gloves of the Ternion Glory
-									i(99590),	-- Handwraps of the Ternion Glory
-									i(99595),	-- Handguards of Winged Triumph
-									i(99567),	-- Gloves of the Horned Nightmare
-								}),
-								i(99749, {	-- Helm of the Cursed Conquerer
-									i(99665),	-- Headguard of Winged Triumph
-									i(99651),	-- Helmet of Winged Triumph
-									i(99587),	-- Hood of the Ternion Glory
-									i(99591),	-- Cowl of the Ternion Glory
-									i(99596),	-- Faceguard of Winged Triumph
-									i(99568),	-- Hood of the Horned Nightmare
-								}),
-								i(99752, {	-- Leggings of the Cursed Conquerer
-									i(99666),	-- Greaves of Winged Triumph
-									i(99661),	-- Legplates of Winged Triumph
-									i(99588),	-- Leggings of Ternion Glory
-									i(99592),	-- Legwraps of Ternion Glory
-									i(99593),	-- Legguards of Winged Triumph
-									i(99569),	-- Leggings of the Horned Nightmare
-								}),
-								i(99755, {	-- Shoulders of the Cursed Conquerer
-									i(99662),	-- Pauldrons of Winged Triumph
-									i(99628),	-- Shoulderguards of the Ternion Glory
-									i(99585),	-- Mantle of the Ternion Glory
-									i(99594),	-- Shouldergaurds of Winged Triumph
-									i(99601),	-- Mantle of the Horned Nightmare
-									i(99656),	-- Mantle of Winged Triumph
-								}),
+							i(99603, {	-- Battleplate of the Prehistoric Marauder
+								["cost"] = { { "i", 99744, 1 }, },	-- Chest of the Cursed Protector
 							}),
-							i(105863, {	-- Essence of the Cursed Protector
-								i(99744, {	-- Chest of the Cursed Protector
-									i(99615),	-- Cuirass of Celestial Harmony
-									i(99636),	-- Tunic of Celestial Harmony
-									i(99562),	-- Chestguard of the Prehistoric Marauder
-									i(99603),	-- Battleplate of the Prehistoric Marauder
-									i(99641),	-- Vest of Seven Sacred Seals
-									i(99643),	-- Chestguard of Seven Sacred Seals
-									i(99555),	-- Tunic of Seven Sacred Seals
-									i(99577),	-- Tunic of the Unblinking Vigil
-									i(99579),	-- Hauberk of Celestial Harmony
-								}),
-								i(99747, {	-- Gauntlets of the Cursed Protector
-									i(99644),	-- Gauntlets of Saven Sacred Seals
-									i(99559),	-- Gauntlets of the Prehistoric Marauder
-									i(99580),	-- Gloves of Celestial Harmony
-									i(99578),	-- Gloves of the Unblinking Vigil
-									i(99616),	-- Grips of Celestial Harmony
-									i(99556),	-- Grips of Seven Sacred Seals
-									i(99563),	-- Handguards of the Prehistoric Marauder
-									i(99611),	-- Handwraps of Celestial Harmony
-									i(99552),	-- Handwraps of Seven Sacred Seals
-								}),
-								i(99750, {	-- Helm of the Cursed Protector
-									i(99649),	-- Helmet of Celestial Harmony
-									i(99612),	-- Faceguard of Celestial Harmony
-									i(99557),	-- Faceguard of the Prehistoric Marauder
-									i(99602),	-- Helmet of the Prehistoric Marauder
-									i(99607),	-- Crown of Seven Sacred Seals
-									i(99553),	-- Helm of Seven Sacred Seals
-									i(99653),	-- Headpiece of Seven Sacred Seals
-									i(99660),	-- Headguard of the Unblinking Vigil
-									i(99645),	-- Headpiece of Celestial Harmony
-								}),
-								i(99753, {	-- Leggings of the Cursed Protector
-									i(99650),	-- Legguards of Celestial Harmony
-									i(99613),	-- Legwraps of Celestial Harmony
-									i(99558),	-- Legguards of the Prehistoric Marauder
-									i(99560),	-- Legplates of the Prehistoric Marauder
-									i(99606),	-- Legguards of Seven Sacred Seals
-									i(99554),	-- Legwraps of Seven Sacres Seals
-									i(99654),	-- Leggings of Seven Sacred Seals
-									i(99573),	-- Legguards of the Unblinking Vigil
-									i(99646),	-- Leggings of Celestial Harmony
-								}),
-								i(99756, {	-- Shoulder of the Cursed Protector
-									i(99663),	-- Spaulders of Celestial Harmony
-									i(99614),	-- Mantle of Celestial Harmony
-									i(99597),	-- Shoulderguards of the Prehistoric Marauder
-									i(99561),	-- Pauldrons of the Prehistoric Marauder
-									i(99565),	-- Shoulderguards of Saven Sacred Seals
-									i(99642),	-- Mantle of Saven Sacred Seals
-									i(99655),	-- Spaulders of Seven Sacred Seals
-									i(99574),	-- Spaulders of the Unblinking Vigil
-									i(99647),	-- Shoulderwrap sof Celestial Harmony
-								}),
+							i(99566, {	-- Battleplate of Winged Triumph
+								["cost"] = { { "i", 99743, 1 }, },	-- Chest of the Cursed Conqueror
 							}),
-							i(105865, {	-- Essence of the Cursed Vanquisher
-								i(99742, {	-- Chest of the Cursed Vanquisher
-									i(99620),	-- Vestment of the Shattered Vale
-									i(99622),	-- Tunic of the Shattered Vale
-									i(99629),	-- Tunic of the Barbed Assassin
-									i(99582),	-- Robes of the Shattered Vale
-									i(99632),	-- Raiment of the Shattered Vale
-									i(99640),	-- Chestguard of Cyclopean Dread
-									i(99608),	-- Breastplate of Cyclopeaan Dread
-									i(99658),	-- Chronomancer Robes
-								}),
-								i(99745, {	-- Gauntlets of the Cursed Vanquisher
-									i(99617),	-- Gloves of the Shattered Vale
-									i(99623),	-- Handguards of the Shattered Vale
-									i(99630),	-- Gloves of the Barbed Assassin
-									i(99637),	-- Handwraps of the Shattered Vale
-									i(99633),	-- Grips of the Shattered Vale
-									i(99604),	-- Handguards of Cyclopean Dread
-									i(99609),	-- Gauntlets of Cyclopean Dread
-									i(99575),	-- Chronomancer Gloves
-								}),
-								i(99748, {	-- Helm of the Cursed Vanquisher
-									i(99618),	-- Cover of the Shattered Vale
-									i(99624),	-- Headguard of the Shattered Vale
-									i(99631),	-- Helmet of the Barbed Assassin
-									i(99638),	-- Helm of the Shattered Vale
-									i(99599),	-- Headpiece of the Shattered Vale
-									i(99605),	-- Faceguard of Cyclopean Dread
-									i(99571),	-- Helmet of Cyclopean Dread
-									i(99576),	-- Chronomancer Hood
-								}),
-								i(99751, {	-- Leggings of the Cursed Vanquisher
-									i(99610),	-- Breeches od the Shattered Vale
-									i(99619),	-- Leggings of the Shattered Vale
-									i(99634),	-- Legguards of the Barbed Assassin
-									i(99581),	-- Legwraps of the Shattered Vale
-									i(99564),	-- Legguards of Cyclopean Dread
-									i(99600),	-- Legguards of the Shattered Vale
-									i(99572),	-- Greaves of Cyclopean Dread
-									i(99657),	-- Chronomancer Leggings
-								}),
-								i(99754, {	-- Shoulders of the Cursed Vanquisher
-									i(99664),	-- Shoulderguards of the Shattered Vale
-									i(99621),	-- Shoulderwraps of the Shattered Vale
-									i(99635),	-- Spaulders of the Barbed Assassin
-									i(99583),	-- Mantle of the Shattered Vale
-									i(99589),	-- Spaulders of the Shattered Vale
-									i(99652),	-- Shoulderguards of Cyclopean Dread
-									i(99639),	-- Pauldrons of Cyclopean Dread
-									i(99659),	-- Chronomancer Mantle
-								}),
+							i(99608, {	-- Breastplate of Cyclopeaan Dread
+								["cost"] = { { "i", 99742, 1 }, },	-- Chest of the Cursed Vanquisher
 							}),
-							i(99552),	-- Handwraps of Seven Sacred Seals Monk
-							i(99553),	-- Helm of Seven Sacred Seals Monk
-							i(99554),	-- Legwraps of Seven Sacred Seals Monk
-							i(99555),	-- Tunic of Seven Sacred Seals Monk
-							i(99556),	-- Grips of Seven Sacred Seals Monk
-							i(99557),	-- Faceguard of the Prehistoric Marauder Warrior
-							i(99558),	-- Legguards of the Prehistoric Marauder Warrior
-							i(99559),	-- Gauntlets of the Prehistoric Marauder Warrior
-							i(99560),	-- Legplates of the Prehistoric Marauder Warrior
-							i(99561),	-- Pauldrons of the Prehistoric Marauder Warrior
-							i(99562),	-- Chestguard of the Prehistoric Marauder Warrior
-							i(99563),	-- Handguards of the Prehistoric Marauder Warrior
-							i(99564),	-- Legguards of Cyclopean Dread Death Knight
-							i(99565),	-- Shoulderguards of Seven Sacred Seals Monk
-							i(99566),	-- Battleplate of Winged Triumph Paladin
-							i(99567),	-- Gloves of the Horned Nightmare Warlock
-							i(99568),	-- Hood of the Horned Nightmare Warlock
-							i(99569),	-- Leggings of the Horned Nightmare Warlock
-							i(99570),	-- Robes of the Horned Nightmare Warlock
-							i(99571),	-- Helmet of Cyclopean Dread Death Knight
-							i(99572),	-- Greaves of Cyclopean Dread Death Knight
-							i(99573),	-- Legguards of the Unblinking Vigil Hunter
-							i(99574),	-- Spaulders of the Unblinking Vigil Hunter
-							i(99575),	-- Chronomancer Gloves Mage
-							i(99576),	-- Chronomancer Hood Mage
-							i(99577),	-- Tunic of the Unblinking Vigil Hunter
-							i(99578),	-- Gloves of the Unblinking Vigil Hunter
-							i(99579),	-- Hauberk of Celestial Harmony Shaman
-							i(99580),	-- Gloves of Celestial Harmony Shaman
-							i(99581),	-- Legwraps of the Shattered Vale Druid
-							i(99582),	-- Robes of the Shattered Vale Druid
-							i(99583),	-- Mantle of the Shattered Vale Druid
-							i(99584),	-- Robes of the Ternion Glory Priest
-							i(99585),	-- Mantle of the Ternion Glory Priest
-							i(99586),	-- Gloves of the Ternion Glory Priest
-							i(99587),	-- Hood of the Ternion Glory Priest
-							i(99588),	-- Leggings of the Ternion Glory Priest
-							i(99589),	-- Spaulders of the Shattered Vale Druid
-							i(99590),	-- Handwraps of the Ternion Glory Priest
-							i(99591),	-- Cowl of the Ternion Glory Priest
-							i(99592),	-- Legwraps of the Ternion Glory Priest
-							i(99593),	-- Legguards of Winged Triumph Paladin
-							i(99594),	-- Shoulderguards of Winged Triumph Paladin
-							i(99595),	-- Handguards of Winged Triumph Paladin
-							i(99596),	-- Faceguard of Winged Triumph Paladin
-							i(99597),	-- Shoulderguards of the Prehistoric Marauder Warrior
-							i(99598),	-- Chestguard of Winged Triumph Paladin
-							i(99599),	-- Headpiece of the Shattered Vale Druid
-							i(99600),	-- Legguards of the Shattered Vale Druid
-							i(99601),	-- Mantle of the Horned Nightmare Warlock
-							i(99602),	-- Helmet of the Prehistoric Marauder Warrior
-							i(99603),	-- Battleplate of the Prehistoric Marauder Warrior
-							i(99604),	-- Handguards of Cyclopean Dread Death Knight
-							i(99605),	-- Faceguard of Cyclopean Dread Death Knight
-							i(99606),	-- Legguards of Seven Sacred Seals Monk
-							i(99607),	-- Crown of Seven Sacred Seals Monk
-							i(99608),	-- Breastplate of Cyclopean Dread Death Knight
-							i(99609),	-- Gauntlets of Cyclopean Dread Death Knight
-							i(99610),	-- Breeches of the Shattered Vale Druid
-							i(99611),	-- Handwraps of Celestial Harmony Shaman
-							i(99612),	-- Faceguard of Celestial Harmony Shaman
-							i(99613),	-- Legwraps of Celestial Harmony Shaman
-							i(99614),	-- Mantle of Celestial Harmony Shaman
-							i(99615),	-- Cuirass of Celestial Harmony Shaman
-							i(99616),	-- Grips of Celestial Harmony Shaman
-							i(99617),	-- Gloves of the Shattered Vale Druid
-							i(99618),	-- Cover of the Shattered Vale Druid
-							i(99619),	-- Leggings of the Shattered Vale Druid
-							i(99620),	-- Vestment of the Shattered Vale Druid
-							i(99621),	-- Shoulderwraps of the Shattered Vale Druid
-							i(99622),	-- Tunic of the Shattered Vale Druid
-							i(99623),	-- Handguards of the Shattered Vale Druid
-							i(99624),	-- Headguard of the Shattered Vale Druid
-							i(99625),	-- Gauntlets of Winged Triumph Paladin
-							i(99626),	-- Breastplate of Winged Triumph Paladin
-							i(99627),	-- Raiment of the Ternion Glory Priest
-							i(99628),	-- Shoulderguards of the Ternion Glory Priest
-							i(99629),	-- Tunic of the Barbed Assassin Rogue
-							i(99630),	-- Gloves of the Barbed Assassin Rogue
-							i(99631),	-- Helmet of the Barbed Assassin Rogue
-							i(99632),	-- Raiment of the Shattered Vale Druid
-							i(99633),	-- Grips of the Shattered Vale Druid
-							i(99634),	-- Legguards of the Barbed Assassin Rogue
-							i(99635),	-- Spaulders of the Barbed Assassin Rogue
-							i(99636),	-- Tunic of Celestial Harmony Shaman
-							i(99637),	-- Handwraps of the Shattered Vale Druid
-							i(99638),	-- Helm of the Shattered Vale Druid
-							i(99639),	-- Pauldrons of Cyclopean Dread Death Knight
-							i(99640),	-- Chestguard of Cyclopean Dread Death Knight
-							i(99641),	-- Vest of Seven Sacred Seals Monk
-							i(99642),	-- Mantle of Seven Sacred Seals Monk
-							i(99643),	-- Chestguard of Seven Sacred Seals Monk
-							i(99644),	-- Gauntlets of Seven Sacred Seals Monk
-							i(99645),	-- Headpiece of Celestial Harmony Shaman
-							i(99646),	-- Leggings of Celestial Harmony Shaman
-							i(99647),	-- Shoulderwraps of Celestial Harmony Shaman
-							i(99648),	-- Gloves of Winged Triumph Paladin
-							i(99649),	-- Helmet of Celestial Harmony Shaman
-							i(99650),	-- Legguards of Celestial Harmony Shaman
-							i(99651),	-- Helmet of Winged Triumph Paladin
-							i(99652),	-- Shoulderguards of Cyclopean Dread Death Knight
-							i(99653),	-- Headpiece of Seven Sacred Seals Monk
-							i(99654),	-- Leggings of Seven Sacred Seals Monk
-							i(99655),	-- Spaulders of Seven Sacred Seals Monk
-							i(99656),	-- Mantle of Winged Triumph Paladin
-							i(99657),	-- Chonomancer Leggings Monk
-							i(99658),	-- Chronomancer Robes Monk
-							i(99659),	-- Chronomancer Mantle Monk
-							i(99660),	-- Headguard of the Unblinking Vigil Hunter
-							i(99661),	-- Legplates of Winged Triumph
-							i(99662),	-- Pauldrons of Winged Triumph
-							i(99663),	-- Spaulders of Celestial Harmony
-							i(99664),	-- Shoulderguards of the Stattered Vale
-							i(99665),	-- Headguard of Winged Triumph
-							i(99666),	-- Greaves of Winged Triumph
+							i(99626, {	-- Breastplate of Winged Triumph
+								["cost"] = { { "i", 99743, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99610, {	-- Breeches od the Shattered Vale
+								["cost"] = { { "i", 99751, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99743, {	-- Chest of the Cursed Conquerer
+								["cost"] = { { "i", 105864, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99744, {	-- Chest of the Cursed Protector
+								["cost"] = { { "i", 105863, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99742, {	-- Chest of the Cursed Vanquisher
+								["cost"] = { { "i", 105865, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99640, {	-- Chestguard of Cyclopean Dread
+								["cost"] = { { "i", 99742, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99643, {	-- Chestguard of Seven Sacred Seals
+								["cost"] = { { "i", 99744, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99562, {	-- Chestguard of the Prehistoric Marauder
+								["cost"] = { { "i", 99744, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99598, {	-- Chestguard of Winged Triumph
+								["cost"] = { { "i", 99743, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99575, {	-- Chronomancer Gloves
+								["cost"] = { { "i", 99745, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99576, {	-- Chronomancer Hood
+								["cost"] = { { "i", 99748, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99657, {	-- Chronomancer Leggings
+								["cost"] = { { "i", 99751, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99659, {	-- Chronomancer Mantle
+								["cost"] = { { "i", 99754, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99658, {	-- Chronomancer Robes
+								["cost"] = { { "i", 99742, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99618, {	-- Cover of the Shattered Vale
+								["cost"] = { { "i", 99748, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99591, {	-- Cowl of the Ternion Glory
+								["cost"] = { { "i", 99749, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99607, {	-- Crown of Seven Sacred Seals
+								["cost"] = { { "i", 99750, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99615, {	-- Cuirass of Celestial Harmony
+								["cost"] = { { "i", 99744, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99612, {	-- Faceguard of Celestial Harmony
+								["cost"] = { { "i", 99750, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99605, {	-- Faceguard of Cyclopean Dread
+								["cost"] = { { "i", 99748, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99557, {	-- Faceguard of the Prehistoric Marauder
+								["cost"] = { { "i", 99750, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99596, {	-- Faceguard of Winged Triumph
+								["cost"] = { { "i", 99749, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99609, {	-- Gauntlets of Cyclopean Dread
+								["cost"] = { { "i", 99745, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99644, {	-- Gauntlets of Seven Sacred Seals
+								["cost"] = { { "i", 99747, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99746, {	-- Gauntlets of the Cursed Conquerer
+								["cost"] = { { "i", 105864, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99747, {	-- Gauntlets of the Cursed Protector
+								["cost"] = { { "i", 105863, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99745, {	-- Gauntlets of the Cursed Vanquisher
+								["cost"] = { { "i", 105865, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99559, {	-- Gauntlets of the Prehistoric Marauder
+								["cost"] = { { "i", 99747, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99625, {	-- Gauntlets of Winged Triumph
+								["cost"] = { { "i", 99746, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99580, {	-- Gloves of Celestial Harmony
+								["cost"] = { { "i", 99747, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99630, {	-- Gloves of the Barbed Assassin
+								["cost"] = { { "i", 99745, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99567, {	-- Gloves of the Horned Nightmare
+								["cost"] = { { "i", 99746, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99617, {	-- Gloves of the Shattered Vale
+								["cost"] = { { "i", 99745, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99586, {	-- Gloves of the Ternion Glory
+								["cost"] = { { "i", 99746, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99578, {	-- Gloves of the Unblinking Vigil
+								["cost"] = { { "i", 99747, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99648, {	-- Gloves of Winged Triumph
+								["cost"] = { { "i", 99746, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99572, {	-- Greaves of Cyclopean Dread
+								["cost"] = { { "i", 99751, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99666, {	-- Greaves of Winged Triumph
+								["cost"] = { { "i", 99752, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99616, {	-- Grips of Celestial Harmony
+								["cost"] = { { "i", 99747, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99556, {	-- Grips of Seven Sacred Seals
+								["cost"] = { { "i", 99747, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99633, {	-- Grips of the Shattered Vale
+								["cost"] = { { "i", 99745, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99604, {	-- Handguards of Cyclopean Dread
+								["cost"] = { { "i", 99745, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99563, {	-- Handguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99747, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99623, {	-- Handguards of the Shattered Vale
+								["cost"] = { { "i", 99745, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99595, {	-- Handguards of Winged Triumph
+								["cost"] = { { "i", 99746, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99611, {	-- Handwraps of Celestial Harmony
+								["cost"] = { { "i", 99747, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99552, {	-- Handwraps of Seven Sacred Seals
+								["cost"] = { { "i", 99747, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99637, {	-- Handwraps of the Shattered Vale
+								["cost"] = { { "i", 99745, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99590, {	-- Handwraps of the Ternion Glory
+								["cost"] = { { "i", 99746, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99579, {	-- Hauberk of Celestial Harmony
+								["cost"] = { { "i", 99744, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99624, {	-- Headguard of the Shattered Vale
+								["cost"] = { { "i", 99748, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99660, {	-- Headguard of the Unblinking Vigil
+								["cost"] = { { "i", 99750, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99665, {	-- Headguard of Winged Triumph
+								["cost"] = { { "i", 99749, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99645, {	-- Headpiece of Celestial Harmony
+								["cost"] = { { "i", 99750, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99653, {	-- Headpiece of Seven Sacred Seals
+								["cost"] = { { "i", 99750, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99599, {	-- Headpiece of the Shattered Vale
+								["cost"] = { { "i", 99748, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99553, {	-- Helm of Seven Sacred Seals
+								["cost"] = { { "i", 99750, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99749, {	-- Helm of the Cursed Conquerer
+								["cost"] = { { "i", 105864, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99750, {	-- Helm of the Cursed Protector
+								["cost"] = { { "i", 105863, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99748, {	-- Helm of the Cursed Vanquisher
+								["cost"] = { { "i", 105865, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99638, {	-- Helm of the Shattered Vale
+								["cost"] = { { "i", 99748, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99649, {	-- Helmet of Celestial Harmony
+								["cost"] = { { "i", 99750, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99571, {	-- Helmet of Cyclopean Dread
+								["cost"] = { { "i", 99748, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99631, {	-- Helmet of the Barbed Assassin
+								["cost"] = { { "i", 99748, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99602, {	-- Helmet of the Prehistoric Marauder
+								["cost"] = { { "i", 99750, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99651, {	-- Helmet of Winged Triumph
+								["cost"] = { { "i", 99749, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99568, {	-- Hood of the Horned Nightmare
+								["cost"] = { { "i", 99749, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99587, {	-- Hood of the Ternion Glory
+								["cost"] = { { "i", 99749, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99646, {	-- Leggings of Celestial Harmony
+								["cost"] = { { "i", 99753, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99654, {	-- Leggings of Seven Sacred Seals
+								["cost"] = { { "i", 99753, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99752, {	-- Leggings of the Cursed Conquerer
+								["cost"] = { { "i", 105864, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99753, {	-- Leggings of the Cursed Protector
+								["cost"] = { { "i", 105863, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99751, {	-- Leggings of the Cursed Vanquisher
+								["cost"] = { { "i", 105865, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99569, {	-- Leggings of the Horned Nightmare
+								["cost"] = { { "i", 99752, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99619, {	-- Leggings of the Shattered Vale
+								["cost"] = { { "i", 99751, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99588, {	-- Leggings of Ternion Glory
+								["cost"] = { { "i", 99752, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99650, {	-- Legguards of Celestial Harmony
+								["cost"] = { { "i", 99753, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99564, {	-- Legguards of Cyclopean Dread
+								["cost"] = { { "i", 99751, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99606, {	-- Legguards of Seven Sacred Seals
+								["cost"] = { { "i", 99753, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99634, {	-- Legguards of the Barbed Assassin
+								["cost"] = { { "i", 99751, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99558, {	-- Legguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99753, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99600, {	-- Legguards of the Shattered Vale
+								["cost"] = { { "i", 99751, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99573, {	-- Legguards of the Unblinking Vigil
+								["cost"] = { { "i", 99753, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99593, {	-- Legguards of Winged Triumph
+								["cost"] = { { "i", 99752, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99560, {	-- Legplates of the Prehistoric Marauder
+								["cost"] = { { "i", 99753, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99661, {	-- Legplates of Winged Triumph
+								["cost"] = { { "i", 99752, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99613, {	-- Legwraps of Celestial Harmony
+								["cost"] = { { "i", 99753, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99554, {	-- Legwraps of Seven Sacres Seals
+								["cost"] = { { "i", 99753, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99581, {	-- Legwraps of the Shattered Vale
+								["cost"] = { { "i", 99751, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99592, {	-- Legwraps of Ternion Glory
+								["cost"] = { { "i", 99752, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99614, {	-- Mantle of Celestial Harmony
+								["cost"] = { { "i", 99756, 1 }, },	-- Shoulder of the Cursed Protector
+							}),
+							i(99642, {	-- Mantle of Seven Sacred Seals
+								["cost"] = { { "i", 99756, 1 }, },	-- Shoulder of the Cursed Protector
+							}),
+							i(99601, {	-- Mantle of the Horned Nightmare
+								["cost"] = { { "i", 99755, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99583, {	-- Mantle of the Shattered Vale
+								["cost"] = { { "i", 99754, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99585, {	-- Mantle of the Ternion Glory
+								["cost"] = { { "i", 99755, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99656, {	-- Mantle of Winged Triumph
+								["cost"] = { { "i", 99755, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99639, {	-- Pauldrons of Cyclopean Dread
+								["cost"] = { { "i", 99754, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99561, {	-- Pauldrons of the Prehistoric Marauder
+								["cost"] = { { "i", 99756, 1 }, },	-- Shoulder of the Cursed Protector
+							}),
+							i(99662, {	-- Pauldrons of Winged Triumph
+								["cost"] = { { "i", 99755, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99632, {	-- Raiment of the Shattered Vale
+								["cost"] = { { "i", 99742, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99627, {	-- Raiment of the Ternion Glory
+								["cost"] = { { "i", 99743, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99570, {	-- Robes of the Horned Nightmare
+								["cost"] = { { "i", 99743, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99582, {	-- Robes of the Shattered Vale
+								["cost"] = { { "i", 99742, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99584, {	-- Robes of the Ternion Glory
+								["cost"] = { { "i", 99743, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99652, {	-- Shoulderguards of Cyclopean Dread
+								["cost"] = { { "i", 99754, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99565, {	-- Shoulderguards of Seven Sacred Seals
+								["cost"] = { { "i", 99756, 1 }, },	-- Shoulder of the Cursed Protector
+							}),
+							i(99597, {	-- Shoulderguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99756, 1 }, },	-- Shoulder of the Cursed Protector
+							}),
+							i(99664, {	-- Shoulderguards of the Shattered Vale
+								["cost"] = { { "i", 99754, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99628, {	-- Shoulderguards of the Ternion Glory
+								["cost"] = { { "i", 99755, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99594, {	-- Shouldergaurds of Winged Triumph
+								["cost"] = { { "i", 99755, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99755, {	-- Shoulders of the Cursed Conquerer
+								["cost"] = { { "i", 105864, 1 }, },	-- Essence of the Cursed Conquerer
+							}),
+							i(99756, {	-- Shoulder of the Cursed Protector
+								["cost"] = { { "i", 105863, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99754, {	-- Shoulders of the Cursed Vanquisher
+								["cost"] = { { "i", 105865, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99647, {	-- Shoulderwraps of Celestial Harmony
+								["cost"] = { { "i", 99756, 1 }, },	-- Shoulder of the Cursed Protector
+							}),
+							i(99621, {	-- Shoulderwraps of the Shattered Vale
+								["cost"] = { { "i", 99754, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99663, {	-- Spaulders of Celestial Harmony
+								["cost"] = { { "i", 99756, 1 }, },	-- Shoulder of the Cursed Protector
+							}),
+							i(99655, {	-- Spaulders of Seven Sacred Seals
+								["cost"] = { { "i", 99756, 1 }, },	-- Shoulder of the Cursed Protector
+							}),
+							i(99635, {	-- Spaulders of the Barbed Assassin
+								["cost"] = { { "i", 99754, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99589, {	-- Spaulders of the Shattered Vale
+								["cost"] = { { "i", 99754, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99574, {	-- Spaulders of the Unblinking Vigil
+								["cost"] = { { "i", 99756, 1 }, },	-- Shoulder of the Cursed Protector
+							}),
+							i(99636, {	-- Tunic of Celestial Harmony
+								["cost"] = { { "i", 99744, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99555, {	-- Tunic of Seven Sacred Seals
+								["cost"] = { { "i", 99744, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99629, {	-- Tunic of the Barbed Assassin
+								["cost"] = { { "i", 99742, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99622, {	-- Tunic of the Shattered Vale
+								["cost"] = { { "i", 99742, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99577, {	-- Tunic of the Unblinking Vigil
+								["cost"] = { { "i", 99744, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99641, {	-- Vest of Seven Sacred Seals
+								["cost"] = { { "i", 99744, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99620, {	-- Vestment of the Shattered Vale
+								["cost"] = { { "i", 99742, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
 						},
 					}),
 					n(64126, {	-- Stephen Wong <Cooking Supplies>
+						["coord"] = { 27.5, 65.0, 391 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
@@ -1026,274 +1552,399 @@ _.Zones =
 						},
 					}),
 					n(74019, {	-- Tu'aho Pathcutter <Mythic Vendor>
+						["coord"] = { 43.4, 80.4, 392 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(105867, {	-- Essence of the Cursed Conqueror
-								i(99715, {	-- Chest of the Cursed Conquerer
-									i(99374),	-- Breastplate of Winged Triumph
-									i(99362),	-- Raiment of the Ternion Glory
-									i(99357),	-- Robes of the Ternion Glory
-									i(99368),	-- Chestguard of Winged Triumph
-									i(99387),	-- Battleplate of Winged Triumph
-									i(99416),	-- Robes of the Horned Nightmare
-								}),
-								i(99721, {	-- Gauntlets of the Cursed Conquerer
-									i(99375),	-- Gloves of Winged Triumph
-									i(99380),	-- Gauntlets of Winged Triumph
-									i(99359),	-- Gloves of the Ternion Glory
-									i(99365),	-- Handwraps of the Ternion Glory
-									i(99369),	-- Handguards of Winged Triumph
-									i(99424),	-- Gloves of the Horned Nightmare
-								}),
-								i(99724, {	-- Helm of the Cursed Conquerer
-									i(99376),	-- Headguard of Winged Triumph
-									i(99379),	-- Helmet of Winged Triumph
-									i(99360),	-- Hood of the Ternion Glory
-									i(99366),	-- Cowl of the Ternion Glory
-									i(99370),	-- Faceguard of Winged Triumph
-									i(99425),	-- Hood of the Horned Nightmare
-								}),
-								i(99712, {	-- Leggings of the Cursed Conquerer
-									i(99377),	-- Greaves of Winged Triumph
-									i(99372),	-- Legplates of Winged Triumph
-									i(99361),	-- Leggings of Ternion Glory
-									i(99367),	-- Legwraps of Ternion Glory
-									i(99371),	-- Legguards of Winged Triumph
-									i(99426),	-- Leggings of the Horned Nightmare
-								}),
-								i(99718, {	-- Shoulders of the Cursed Conquerer
-									i(99373),	-- Pauldrons of Winged Triumph
-									i(99363),	-- Shoulderguards of the Ternion Glory
-									i(99358),	-- Mantle of the Ternion Glory
-									i(99364),	-- Shouldergaurds of Winged Triumph
-									i(99417),	-- Mantle of the Horned Nightmare
-									i(99378),	-- Mantle of Winged Triumph
-								}),
+							i(99411, {	-- Battleplate of the Prehistoric Marauder
+								["cost"] = { { "i", 99716, 1 }, },	-- Chest of the Cursed Protector
 							}),
-							i(105866, {	-- Essence of the Cursed Protector
-								i(99716, {	-- Chest of the Cursed Protector
-									i(99347),	-- Cuirass of Celestial Harmony
-									i(99351),	-- Tunic of Celestial Harmony
-									i(99415),	-- Chestguard of the Prehistoric Marauder
-									i(99411),	-- Battleplate of the Prehistoric Marauder
-									i(99391),	-- Vest of Seven Sacred Seals
-									i(99382),	-- Chestguard of Seven Sacred Seals
-									i(99396),	-- Tunic of Seven Sacred Seals
-									i(99405),	-- Tunic of the Unblinking Vigil
-									i(99344),	-- Hauberk of Celestial Harmony
-								}),
-								i(99722, {	-- Gauntlets of the Cursed Protector
-									i(99383),	-- Gauntlets of Saven Sacred Seals
-									i(99412),	-- Gauntlets of the Prehistoric Marauder
-									i(99345),	-- Gloves of Celestial Harmony
-									i(99406),	-- Gloves of the Unblinking Vigil
-									i(99340),	-- Grips of Celestial Harmony
-									i(99392),	-- Grips of Seven Sacred Seals
-									i(99408),	-- Handguards of the Prehistoric Marauder
-									i(99352),	-- Handwraps of Celestial Harmony
-									i(99388),	-- Handwraps of Seven Sacred Seals
-								}),
-								i(99725, {	-- Helm of the Cursed Protector
-									i(99341),	-- Helmet of Celestial Harmony
-									i(99353),	-- Faceguard of Celestial Harmony
-									i(99409),	-- Faceguard of the Prehistoric Marauder
-									i(99418),	-- Helmet of the Prehistoric Marauder
-									i(99384),	-- Crown of Seven Sacred Seals
-									i(99389),	-- Helm of Seven Sacred Seals
-									i(99393),	-- Headpiece of Seven Sacred Seals
-									i(99402),	-- Headguard of the Unblinking Vigil
-									i(99332),	-- Headpiece of Celestial Harmony
-								}),
-								i(99713, {	-- Leggings of the Cursed Protector
-									i(99342),	-- Legguards of Celestial Harmony
-									i(99354),	-- Legwraps of Celestial Harmony
-									i(99410),	-- Legguards of the Prehistoric Marauder
-									i(99413),	-- Legplates of the Prehistoric Marauder
-									i(99385),	-- Legguards of Seven Sacred Seals
-									i(99390),	-- Legwraps of Seven Sacres Seals
-									i(99394),	-- Leggings of Seven Sacred Seals
-									i(99403),	-- Legguards of the Unblinking Vigil
-									i(99333),	-- Leggings of Celestial Harmony
-								}),
-								i(99719, {	-- Shoulder of the Cursed Protector
-									i(99343),	-- Spaulders of Celestial Harmony
-									i(99346),	-- Mantle of Celestial Harmony
-									i(99407),	-- Shoulderguards of the Prehistoric Marauder
-									i(99414),	-- Pauldrons of the Prehistoric Marauder
-									i(99386),	-- Shoulderguards of Saven Sacred Seals
-									i(99381),	-- Mantle of Saven Sacred Seals
-									i(99395),	-- Spaulders of Seven Sacred Seals
-									i(99404),	-- Spaulders of the Unblinking Vigil
-									i(99334),	-- Shoulderwraps of Celestial Harmony
-								}),
+							i(99387, {	-- Battleplate of Winged Triumph
+								["cost"] = { { "i", 99715, 1 }, },	-- Chest of the Cursed Conqueror
 							}),
-							i(105868, {	-- Essence of the Cursed Vanquisher
-								i(99714, {	-- Chest of the Cursed Vanquisher
-									i(99427),	-- Vestment of the Shattered Vale
-									i(99419),	-- Tunic of the Shattered Vale
-									i(99356),	-- Tunic of the Barbed Assassin
-									i(99430),	-- Robes of the Shattered Vale
-									i(99326),	-- Raiment of the Shattered Vale
-									i(99330),	-- Chestguard of Cyclopean Dread
-									i(99335),	-- Breastplate of Cyclopeaan Dread
-									i(99400),	-- Chronomancer Robes
-								}),
-								i(99720, {	-- Gauntlets of the Cursed Vanquisher
-									i(99432),	-- Gloves of the Shattered Vale
-									i(99420),	-- Handguards of the Shattered Vale
-									i(99355),	-- Gloves of the Barbed Assassin
-									i(99435),	-- Handwraps of the Shattered Vale
-									i(99327),	-- Grips of the Shattered Vale
-									i(99331),	-- Handguards of Cyclopean Dread
-									i(99336),	-- Gauntlets of Cyclopean Dread
-									i(99397),	-- Chronomancer Gloves
-								}),
-								i(99723, {	-- Helm of the Cursed Vanquisher
-									i(99433),	-- Cover of the Shattered Vale
-									i(99421),	-- Headguard of the Shattered Vale
-									i(99348),	-- Helmet of the Barbed Assassin
-									i(99436),	-- Helm of the Shattered Vale
-									i(99328),	-- Headpiece of the Shattered Vale
-									i(99323),	-- Faceguard of Cyclopean Dread
-									i(99337),	-- Helmet of Cyclopean Dread
-									i(99398),	-- Chronomancer Hood
-								}),
-								i(99726, {	-- Leggings of the Cursed Vanquisher
-									i(99422),	-- Breeches of the Shattered Vale
-									i(99434),	-- Leggings of the Shattered Vale
-									i(99349),	-- Legguards of the Barbed Assassin
-									i(99429),	-- Legwraps of the Shattered Vale
-									i(99324),	-- Legguards of Cyclopean Dread
-									i(99329),	-- Legguards of the Shattered Vale
-									i(99338),	-- Greaves of Cyclopean Dread
-									i(99399),	-- Chronomancer Leggings
-								}),
-								i(99717, {	-- Shoulders of the Cursed Vanquisher
-									i(99423),	-- Shoulderguards of the Shattered Vale
-									i(99428),	-- Shoulderwraps of the Shattered Vale
-									i(99350),	-- Spaulders of the Barbed Assassin
-									i(99431),	-- Mantle of the Shattered Vale
-									i(99322),	-- Spaulders of the Shattered Vale
-									i(99325),	-- Shoulderguards of Cyclopean Dread
-									i(99339),	-- Pauldrons of Cyclopean Dread
-									i(99401),	-- Chronomancer Mantle
-								}),
+							i(99335, {	-- Breastplate of Cyclopeaan Dread
+								["cost"] = { { "i", 99714, 1 }, },	-- Chest of the Cursed Vanquisher
 							}),
-							i(99423),	-- Shoulderguards of the Shattered Vale
-							i(99428),	-- Shoulderwraps of the Shattered Vale
-							i(99350),	-- Spaulders of the Barbed Assassin
-							i(99431),	-- Mantle of the Shattered Vale
-							i(99322),	-- Spaulders of the Shattered Vale
-							i(99325),	-- Shoulderguards of Cyclopean Dread
-							i(99339),	-- Pauldrons of Cyclopean Dread
-							i(99401),	-- Chronomancer Mantle
-							i(99373),	-- Pauldrons of Winged Triumph
-							i(99363),	-- Shoulderguards of the Ternion Glory
-							i(99358),	-- Mantle of the Ternion Glory
-							i(99364),	-- Shouldergaurds of Winged Triumph
-							i(99417),	-- Mantle of the Horned Nightmare
-							i(99378),	-- Mantle of Winged Triumph
-							i(99343),	-- Spaulders of Celestial Harmony
-							i(99346),	-- Mantle of Celestial Harmony
-							i(99407),	-- Shoulderguards of the Prehistoric Marauder
-							i(99414),	-- Pauldrons of the Prehistoric Marauder
-							i(99386),	-- Shoulderguards of Saven Sacred Seals
-							i(99381),	-- Mantle of Saven Sacred Seals
-							i(99395),	-- Spaulders of Seven Sacred Seals
-							i(99404),	-- Spaulders of the Unblinking Vigil
-							i(99334),	-- Shoulderwraps of Celestial Harmony
-							i(99433),	-- Cover of the Shattered Vale
-							i(99421),	-- Headguard of the Shattered Vale
-							i(99348),	-- Helmet of the Barbed Assassin
-							i(99436),	-- Helm of the Shattered Vale
-							i(99328),	-- Headpiece of the Shattered Vale
-							i(99323),	-- Faceguard of Cyclopean Dread
-							i(99337),	-- Helmet of Cyclopean Dread
-							i(99398),	-- Chronomancer Hood
-							i(99376),	-- Headguard of Winged Triumph
-							i(99379),	-- Helmet of Winged Triumph
-							i(99360),	-- Hood of the Ternion Glory
-							i(99366),	-- Cowl of the Ternion Glory
-							i(99370),	-- Faceguard of Winged Triumph
-							i(99425),	-- Hood of the Horned Nightmare
-							i(99341),	-- Helmet of Celestial Harmony
-							i(99353),	-- Faceguard of Celestial Harmony
-							i(99409),	-- Faceguard of the Prehistoric Marauder
-							i(99418),	-- Helmet of the Prehistoric Marauder
-							i(99384),	-- Crown of Seven Sacred Seals
-							i(99389),	-- Helm of Seven Sacred Seals
-							i(99393),	-- Headpiece of Seven Sacred Seals
-							i(99402),	-- Headguard of the Unblinking Vigil
-							i(99332),	-- Headpiece of Celestial Harmony
-							i(99422),	-- Breeches of the Shattered Vale
-							i(99434),	-- Leggings of the Shattered Vale
-							i(99349),	-- Legguards of the Barbed Assassin
-							i(99429),	-- Legwraps of the Shattered Vale
-							i(99324),	-- Legguards of Cyclopean Dread
-							i(99329),	-- Legguards of the Shattered Vale
-							i(99338),	-- Greaves of Cyclopean Dread
-							i(99399),	-- Chronomancer Leggings
-							i(99377),	-- Greaves of Winged Triumph
-							i(99372),	-- Legplates of Winged Triumph
-							i(99361),	-- Leggings of Ternion Glory
-							i(99367),	-- Legwraps of Ternion Glory
-							i(99371),	-- Legguards of Winged Triumph
-							i(99426),	-- Leggings of the Horned Nightmare
-							i(99342),	-- Legguards of Celestial Harmony
-							i(99354),	-- Legwraps of Celestial Harmony
-							i(99410),	-- Legguards of the Prehistoric Marauder
-							i(99413),	-- Legplates of the Prehistoric Marauder
-							i(99385),	-- Legguards of Seven Sacred Seals
-							i(99390),	-- Legwraps of Seven Sacres Seals
-							i(99394),	-- Leggings of Seven Sacred Seals
-							i(99403),	-- Legguards of the Unblinking Vigil
-							i(99333),	-- Leggings of Celestial Harmony
-							i(99427),	-- Vestment of the Shattered Vale
-							i(99419),	-- Tunic of the Shattered Vale
-							i(99356),	-- Tunic of the Barbed Assassin
-							i(99430),	-- Robes of the Shattered Vale
-							i(99326),	-- Raiment of the Shattered Vale
-							i(99330),	-- Chestguard of Cyclopean Dread
-							i(99335),	-- Breastplate of Cyclopeaan Dread
-							i(99400),	-- Chronomancer Robes
-							i(99374),	-- Breastplate of Winged Triumph
-							i(99362),	-- Raiment of the Ternion Glory
-							i(99357),	-- Robes of the Ternion Glory
-							i(99368),	-- Chestguard of Winged Triumph
-							i(99387),	-- Battleplate of Winged Triumph
-							i(99416),	-- Robes of the Horned Nightmare
-							i(99347),	-- Cuirass of Celestial Harmony
-							i(99351),	-- Tunic of Celestial Harmony
-							i(99415),	-- Chestguard of the Prehistoric Marauder
-							i(99411),	-- Battleplate of the Prehistoric Marauder
-							i(99391),	-- Vest of Seven Sacred Seals
-							i(99382),	-- Chestguard of Seven Sacred Seals
-							i(99396),	-- Tunic of Seven Sacred Seals
-							i(99405),	-- Tunic of the Unblinking Vigil
-							i(99344),	-- Hauberk of Celestial Harmony
-							i(99432),	-- Gloves of the Shattered Vale
-							i(99420),	-- Handguards of the Shattered Vale
-							i(99355),	-- Gloves of the Barbed Assassin
-							i(99435),	-- Handwraps of the Shattered Vale
-							i(99327),	-- Grips of the Shattered Vale
-							i(99331),	-- Handguards of Cyclopean Dread
-							i(99336),	-- Gauntlets of Cyclopean Dread
-							i(99397),	-- Chronomancer Gloves
-							i(99375),	-- Gloves of Winged Triumph
-							i(99380),	-- Gauntlets of Winged Triumph
-							i(99359),	-- Gloves of the Ternion Glory
-							i(99365),	-- Handwraps of the Ternion Glory
-							i(99369),	-- Handguards of Winged Triumph
-							i(99424),	-- Gloves of the Horned Nightmare
-							i(99383),	-- Gauntlets of Saven Sacred Seals
-							i(99412),	-- Gauntlets of the Prehistoric Marauder
-							i(99345),	-- Gloves of Celestial Harmony
-							i(99406),	-- Gloves of the Unblinking Vigil
-							i(99340),	-- Grips of Celestial Harmony
-							i(99392),	-- Grips of Seven Sacred Seals
-							i(99408),	-- Handguards of the Prehistoric Marauder
-							i(99352),	-- Handwraps of Celestial Harmony
-							i(99388),	-- Handwraps of Seven Sacred Seals
+							i(99374, {	-- Breastplate of Winged Triumph
+								["cost"] = { { "i", 99715, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99422, {	-- Breeches of the Shattered Vale
+								["cost"] = { { "i", 99726, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99715, {	-- Chest of the Cursed Conquerer
+								["cost"] = { { "i", 105867, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99716, {	-- Chest of the Cursed Protector
+								["cost"] = { { "i", 105866, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99714, {	-- Chest of the Cursed Vanquisher
+								["cost"] = { { "i", 105868, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99330, {	-- Chestguard of Cyclopean Dread
+								["cost"] = { { "i", 99714, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99382, {	-- Chestguard of Seven Sacred Seals
+								["cost"] = { { "i", 99716, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99415, {	-- Chestguard of the Prehistoric Marauder
+								["cost"] = { { "i", 99716, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99368, {	-- Chestguard of Winged Triumph
+								["cost"] = { { "i", 99715, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99397, {	-- Chronomancer Gloves
+								["cost"] = { { "i", 99720, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99398, {	-- Chronomancer Hood
+								["cost"] = { { "i", 99723, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99399, {	-- Chronomancer Leggings
+								["cost"] = { { "i", 99726, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99401, {	-- Chronomancer Mantle
+								["cost"] = { { "i", 99717, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99400, {	-- Chronomancer Robes
+								["cost"] = { { "i", 99714, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99433, {	-- Cover of the Shattered Vale
+								["cost"] = { { "i", 99723, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99366, {	-- Cowl of the Ternion Glory
+								["cost"] = { { "i", 99724, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99384, {	-- Crown of Seven Sacred Seals
+								["cost"] = { { "i", 99725, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99347, {	-- Cuirass of Celestial Harmony
+								["cost"] = { { "i", 99716, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99353, {	-- Faceguard of Celestial Harmony
+								["cost"] = { { "i", 99725, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99323, {	-- Faceguard of Cyclopean Dread
+								["cost"] = { { "i", 99723, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99409, {	-- Faceguard of the Prehistoric Marauder
+								["cost"] = { { "i", 99725, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99370, {	-- Faceguard of Winged Triumph
+								["cost"] = { { "i", 99724, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99336, {	-- Gauntlets of Cyclopean Dread
+								["cost"] = { { "i", 99720, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99383, {	-- Gauntlets of Seven Sacred Seals
+								["cost"] = { { "i", 99722, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99721, {	-- Gauntlets of the Cursed Conquerer
+								["cost"] = { { "i", 105867, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99722, {	-- Gauntlets of the Cursed Protector
+								["cost"] = { { "i", 105866, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99720, {	-- Gauntlets of the Cursed Vanquisher
+								["cost"] = { { "i", 105868, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99412, {	-- Gauntlets of the Prehistoric Marauder
+								["cost"] = { { "i", 99722, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99380, {	-- Gauntlets of Winged Triumph
+								["cost"] = { { "i", 99721, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99345, {	-- Gloves of Celestial Harmony
+								["cost"] = { { "i", 99722, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99355, {	-- Gloves of the Barbed Assassin
+								["cost"] = { { "i", 99720, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99424, {	-- Gloves of the Horned Nightmare
+								["cost"] = { { "i", 99721, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99432, {	-- Gloves of the Shattered Vale
+								["cost"] = { { "i", 99720, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99359, {	-- Gloves of the Ternion Glory
+								["cost"] = { { "i", 99721, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99406, {	-- Gloves of the Unblinking Vigil
+								["cost"] = { { "i", 99722, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99375, {	-- Gloves of Winged Triumph
+								["cost"] = { { "i", 99721, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99338, {	-- Greaves of Cyclopean Dread
+								["cost"] = { { "i", 99726, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99377, {	-- Greaves of Winged Triumph
+								["cost"] = { { "i", 99712, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99340, {	-- Grips of Celestial Harmony
+								["cost"] = { { "i", 99722, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99392, {	-- Grips of Seven Sacred Seals
+								["cost"] = { { "i", 99722, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99327, {	-- Grips of the Shattered Vale
+								["cost"] = { { "i", 99720, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99331, {	-- Handguards of Cyclopean Dread
+								["cost"] = { { "i", 99720, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99408, {	-- Handguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99722, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99420, {	-- Handguards of the Shattered Vale
+								["cost"] = { { "i", 99720, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99369, {	-- Handguards of Winged Triumph
+								["cost"] = { { "i", 99721, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99352, {	-- Handwraps of Celestial Harmony
+								["cost"] = { { "i", 99722, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99388, {	-- Handwraps of Seven Sacred Seals
+								["cost"] = { { "i", 99722, 1 }, },	-- Gauntlets of the Cursed Protector
+							}),
+							i(99435, {	-- Handwraps of the Shattered Vale
+								["cost"] = { { "i", 99720, 1 }, },	-- Gauntlets of the Cursed Vanquisher
+							}),
+							i(99365, {	-- Handwraps of the Ternion Glory
+								["cost"] = { { "i", 99721, 1 }, },	-- Gauntlets of the Cursed Conqueror
+							}),
+							i(99344, {	-- Hauberk of Celestial Harmony
+								["cost"] = { { "i", 99716, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99421, {	-- Headguard of the Shattered Vale
+								["cost"] = { { "i", 99723, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99402, {	-- Headguard of the Unblinking Vigil
+								["cost"] = { { "i", 99725, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99376, {	-- Headguard of Winged Triumph
+								["cost"] = { { "i", 99724, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99332, {	-- Headpiece of Celestial Harmony
+								["cost"] = { { "i", 99725, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99393, {	-- Headpiece of Seven Sacred Seals
+								["cost"] = { { "i", 99725, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99328, {	-- Headpiece of the Shattered Vale
+								["cost"] = { { "i", 99723, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99389, {	-- Helm of Seven Sacred Seals
+								["cost"] = { { "i", 99725, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99724, {	-- Helm of the Cursed Conquerer
+								["cost"] = { { "i", 105867, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99725, {	-- Helm of the Cursed Protector
+								["cost"] = { { "i", 105866, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99723, {	-- Helm of the Cursed Vanquisher
+								["cost"] = { { "i", 105868, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99436, {	-- Helm of the Shattered Vale
+								["cost"] = { { "i", 99723, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99341, {	-- Helmet of Celestial Harmony
+								["cost"] = { { "i", 99725, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99337, {	-- Helmet of Cyclopean Dread
+								["cost"] = { { "i", 99723, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99348, {	-- Helmet of the Barbed Assassin
+								["cost"] = { { "i", 99723, 1 }, },	-- Helm of the Cursed Vanquisher
+							}),
+							i(99418, {	-- Helmet of the Prehistoric Marauder
+								["cost"] = { { "i", 99725, 1 }, },	-- Helm of the Cursed Protector
+							}),
+							i(99379, {	-- Helmet of Winged Triumph
+								["cost"] = { { "i", 99724, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99425, {	-- Hood of the Horned Nightmare
+								["cost"] = { { "i", 99724, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99360, {	-- Hood of the Ternion Glory
+								["cost"] = { { "i", 99724, 1 }, },	-- Helm of the Cursed Conqueror
+							}),
+							i(99333, {	-- Leggings of Celestial Harmony
+								["cost"] = { { "i", 99713, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99394, {	-- Leggings of Seven Sacred Seals
+								["cost"] = { { "i", 99713, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99712, {	-- Leggings of the Cursed Conquerer
+								["cost"] = { { "i", 105867, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99713, {	-- Leggings of the Cursed Protector
+								["cost"] = { { "i", 105866, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99726, {	-- Leggings of the Cursed Vanquisher
+								["cost"] = { { "i", 105868, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99426, {	-- Leggings of the Horned Nightmare
+								["cost"] = { { "i", 99712, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99434, {	-- Leggings of the Shattered Vale
+								["cost"] = { { "i", 99726, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99361, {	-- Leggings of Ternion Glory
+								["cost"] = { { "i", 99712, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99342, {	-- Legguards of Celestial Harmony
+								["cost"] = { { "i", 99713, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99324, {	-- Legguards of Cyclopean Dread
+								["cost"] = { { "i", 99726, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99385, {	-- Legguards of Seven Sacred Seals
+								["cost"] = { { "i", 99713, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99349, {	-- Legguards of the Barbed Assassin
+								["cost"] = { { "i", 99726, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99410, {	-- Legguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99713, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99329, {	-- Legguards of the Shattered Vale
+								["cost"] = { { "i", 99726, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99403, {	-- Legguards of the Unblinking Vigil
+								["cost"] = { { "i", 99713, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99371, {	-- Legguards of Winged Triumph
+								["cost"] = { { "i", 99712, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99413, {	-- Legplates of the Prehistoric Marauder
+								["cost"] = { { "i", 99713, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99372, {	-- Legplates of Winged Triumph
+								["cost"] = { { "i", 99712, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99354, {	-- Legwraps of Celestial Harmony
+								["cost"] = { { "i", 99713, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99390, {	-- Legwraps of Seven Sacres Seals
+								["cost"] = { { "i", 99713, 1 }, },	-- Leggings of the Cursed Protector
+							}),
+							i(99429, {	-- Legwraps of the Shattered Vale
+								["cost"] = { { "i", 99726, 1 }, },	-- Leggings of the Cursed Vanquisher
+							}),
+							i(99367, {	-- Legwraps of Ternion Glory
+								["cost"] = { { "i", 99712, 1 }, },	-- Leggings of the Cursed Conqueror
+							}),
+							i(99346, {	-- Mantle of Celestial Harmony
+								["cost"] = { { "i", 99719, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99381, {	-- Mantle of Seven Sacred Seals
+								["cost"] = { { "i", 99719, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99417, {	-- Mantle of the Horned Nightmare
+								["cost"] = { { "i", 99718, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99431, {	-- Mantle of the Shattered Vale
+								["cost"] = { { "i", 99717, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99358, {	-- Mantle of the Ternion Glory
+								["cost"] = { { "i", 99718, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99378, {	-- Mantle of Winged Triumph
+								["cost"] = { { "i", 99718, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99339, {	-- Pauldrons of Cyclopean Dread
+								["cost"] = { { "i", 99717, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99414, {	-- Pauldrons of the Prehistoric Marauder
+								["cost"] = { { "i", 99719, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99373, {	-- Pauldrons of Winged Triumph
+								["cost"] = { { "i", 99718, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99326, {	-- Raiment of the Shattered Vale
+								["cost"] = { { "i", 99714, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99362, {	-- Raiment of the Ternion Glory
+								["cost"] = { { "i", 99715, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99416, {	-- Robes of the Horned Nightmare
+								["cost"] = { { "i", 99715, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99430, {	-- Robes of the Shattered Vale
+								["cost"] = { { "i", 99714, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99357, {	-- Robes of the Ternion Glory
+								["cost"] = { { "i", 99715, 1 }, },	-- Chest of the Cursed Conqueror
+							}),
+							i(99325, {	-- Shoulderguards of Cyclopean Dread
+								["cost"] = { { "i", 99717, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99386, {	-- Shoulderguards of Seven Sacred Seals
+								["cost"] = { { "i", 99719, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99407, {	-- Shoulderguards of the Prehistoric Marauder
+								["cost"] = { { "i", 99719, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99423, {	-- Shoulderguards of the Shattered Vale
+								["cost"] = { { "i", 99717, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99363, {	-- Shoulderguards of the Ternion Glory
+								["cost"] = { { "i", 99718, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99364, {	-- Shouldergaurds of Winged Triumph
+								["cost"] = { { "i", 99718, 1 }, },	-- Shoulders of the Cursed Conqueror
+							}),
+							i(99718, {	-- Shoulders of the Cursed Conqueror
+								["cost"] = { { "i", 105867, 1 }, },	-- Essence of the Cursed Conqueror
+							}),
+							i(99719, {	-- Shoulders of the Cursed Protector
+								["cost"] = { { "i", 105866, 1 }, },	-- Essence of the Cursed Protector
+							}),
+							i(99717, {	-- Shoulders of the Cursed Vanquisher
+								["cost"] = { { "i", 105868, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
+							i(99334, {	-- Shoulderwraps of Celestial Harmony
+								["cost"] = { { "i", 99719, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99428, {	-- Shoulderwraps of the Shattered Vale
+								["cost"] = { { "i", 99717, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99343, {	-- Spaulders of Celestial Harmony
+								["cost"] = { { "i", 99719, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99395, {	-- Spaulders of Seven Sacred Seals
+								["cost"] = { { "i", 99719, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99350, {	-- Spaulders of the Barbed Assassin
+								["cost"] = { { "i", 99717, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99322, {	-- Spaulders of the Shattered Vale
+								["cost"] = { { "i", 99717, 1 }, },	-- Shoulders of the Cursed Vanquisher
+							}),
+							i(99404, {	-- Spaulders of the Unblinking Vigil
+								["cost"] = { { "i", 99719, 1 }, },	-- Shoulders of the Cursed Protector
+							}),
+							i(99351, {	-- Tunic of Celestial Harmony
+								["cost"] = { { "i", 99716, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99396, {	-- Tunic of Seven Sacred Seals
+								["cost"] = { { "i", 99716, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99356, {	-- Tunic of the Barbed Assassin
+								["cost"] = { { "i", 99714, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99419, {	-- Tunic of the Shattered Vale
+								["cost"] = { { "i", 99714, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
+							i(99405, {	-- Tunic of the Unblinking Vigil
+								["cost"] = { { "i", 99716, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99391, {	-- Vest of Seven Sacred Seals
+								["cost"] = { { "i", 99716, 1 }, },	-- Chest of the Cursed Protector
+							}),
+							i(99427, {	-- Vestment of the Shattered Vale
+								["cost"] = { { "i", 99714, 1 }, },	-- Chest of the Cursed Vanquisher
+							}),
 						},
 					}),
 				}),

@@ -944,6 +944,7 @@ _.Zones =
 						},
 					}),
 					n(64052, {	-- Raishen the Needle <Tailoring Supplies>
+						["requireSkill"] = 197,	-- Tailoring
 						["coord"] = { 64.7, 44.1, 393 },
 						["g"] = {
 							i(86361, {	-- Pattern: Contender's Satin Amice
@@ -1588,11 +1589,11 @@ _.Zones =
 								["cost"] = { { "i", 105861, 1 }, },	-- Essence of the Cursed Conqueror
 							}),
 							i(99667, {	-- Gauntlets of the Cursed Protector
-							["cost"] = { { "i", 105860, 1 }, },	-- Essence of the Cursed Protector
-						}),
+								["cost"] = { { "i", 105860, 1 }, },	-- Essence of the Cursed Protector
+							}),
 							i(99680, {	-- Gauntlets of the Cursed Vanquisher
-							["cost"] = { { "i", 105862, 1 }, },	-- Essence of the Cursed Vanquisher
-						}),
+								["cost"] = { { "i", 105862, 1 }, },	-- Essence of the Cursed Vanquisher
+							}),
 							i(99034, {	-- Gauntlets of the Prehistoric Marauder
 								["cost"] = { { "i", 99667, 1 }, },	-- Gauntlets of the Cursed Protector
 							}),
