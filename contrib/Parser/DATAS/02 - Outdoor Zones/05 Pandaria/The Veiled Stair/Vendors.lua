@@ -10,12 +10,30 @@ _.Zones =
 					["description"] = "To purchase the epic cloaks you must have obtained the achievement |r |cFFFFD700'Chapter IV: Celestial Blessings'|r during Mists of Pandaria. ",
 					["coord"] = { 54.2, 72.9, 433 },
 					["g"] = {
-						un(38, i(98149)),	-- Cranewing Cloak
-						un(38, i(98150)),	-- Jadefire Drape
-						un(38, i(98335)),	-- Oxhoof Greatcloak
-						un(38, i(98146)),	-- Oxhorn Bladebreaker
-						un(38, i(98147)),	-- Tigerclaw Cape
-						un(38, i(98148)),	-- Tigerfang Wrap
+						i(98149, {	-- Cranewing Cloak
+							["cost"] = 100000000,	-- 10,000g
+							["u"] = 38,	-- Ordos - Legendary Cloak
+						}),
+						i(98150, {	-- Jadefire Drape
+							["cost"] = 100000000,	-- 10,000g
+							["u"] = 38,	-- Ordos - Legendary Cloak
+						}),
+						i(98335, {	-- Oxhoof Greatcloak
+							["cost"] = 100000000,	-- 10,000g
+							["u"] = 38,	-- Ordos - Legendary Cloak
+						}),
+						i(98146, {	-- Oxhorn Bladebreaker
+							["cost"] = 100000000,	-- 10,000g
+							["u"] = 38,	-- Ordos - Legendary Cloak
+						}),
+						i(98147, {	-- Tigerclaw Cape
+							["cost"] = 100000000,	-- 10,000g
+							["u"] = 38,	-- Ordos - Legendary Cloak
+						}),
+						i(98148, {	-- Tigerfang Wrap
+							["cost"] = 100000000,	-- 10,000g
+							["u"] = 38,	-- Ordos - Legendary Cloak
+						}),
 						i(102457, {	-- Timeless Essence of the Black Dragonflight
 							["description"] = "To purchase the legendary cloak token you must have obtained the achievement |r |cFFFFD700'Chapter V: Judgment of the Black Prince'|r during Mists of Pandaria.",
 							["g"] = {
