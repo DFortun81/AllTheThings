@@ -283,6 +283,7 @@ _.NeverImplemented =
 		q(44600),	-- Tracking Quest: Working with the Wardens 4
 		q(44601),	-- Tracking Quest: Working with the Wardens 5
 		q(44382),	-- Vengeance Chosen — chose to pursue Vengeance artifact while on quest 44383, "In Pursuit of Power"
+		q(48570),	-- Antorus, The Burning Throne - Triggers when the door opens to Kin'garoth
 		
 	--	Treasures
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
