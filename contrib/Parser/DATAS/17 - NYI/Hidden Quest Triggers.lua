@@ -609,6 +609,7 @@ _.NeverImplemented =
 		-- Eternal Palace
 		-- Azerite essences assembled with Aqueous Reliquary
 		q(55756),	-- Triggered in the hallway after Orgozoa but before queen's court. Possibly the Azshara dialog
+		q(55761),	-- Triggered after killing heroic azshara. probably the cinematic followed by her body despawning
 		q(56957),	-- Grid of Bursting Vitality (Rank 3)
 		q(56956),	-- Mesh of Expanding Vitality (Rank 2)
 		q(56950),	-- Resonating Elemental Heart (Rank 3)
