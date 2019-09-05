@@ -35,6 +35,7 @@ _.Zones =
 						["provider"] = { "n", 5887 },	-- Canaga Earthcaller
 						["coord"] = { 41.7, 70.0, 461 },
 						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25127,	-- Sting of the Scorpid
 						["isBreadcrumb"] = true,
 					}),
 					q(25172, {	-- Invaders In Our Home
