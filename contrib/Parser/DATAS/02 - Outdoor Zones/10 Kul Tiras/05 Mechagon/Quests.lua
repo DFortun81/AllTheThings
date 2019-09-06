@@ -716,7 +716,14 @@ _.Zones =
 							["isDaily"] = true,
 							["groups"] = {
 								i(168264, {	-- Recycling Requisition(Green)
-									i(169167),	-- Blueprint: Orange Spraybot
+									i(169167, {	-- Blueprint: Orange Spraybot
+										["questID"] = 55075,
+										["g"] = {
+											crit(27, {	-- Orange Spraybot
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
+									}),
 									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 										["g"] = {
@@ -736,7 +743,14 @@ _.Zones =
 									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 								}),
 								i(168266, {	-- Strange Recycling Requisiton(Epic)
-									--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
+									i(169167, {	-- Blueprint: Orange Spraybot
+										["questID"] = 55075,
+										["g"] = {
+											crit(27, {	-- Orange Spraybot
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
+									}),
 									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 										["g"] = {
@@ -781,7 +795,14 @@ _.Zones =
 							["repeatable"] = true,
 							["groups"] = {
 								i(168264, {	-- Recycling Requisition(Green)
-									i(169167),	-- Blueprint: Orange Spraybot
+									i(169167, {	-- Blueprint: Orange Spraybot
+										["questID"] = 55075,
+										["g"] = {
+											crit(27, {	-- Orange Spraybot
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
+									}),
 									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 										["g"] = {
@@ -798,7 +819,14 @@ _.Zones =
 									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 								}),
 								i(168266, {	-- Strange Recycling Requisiton(Epic)
-									--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
+									i(169167, {	-- Blueprint: Orange Spraybot
+										["questID"] = 55075,
+										["g"] = {
+											crit(27, {	-- Orange Spraybot
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
+									}),
 									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 										["g"] = {

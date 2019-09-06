@@ -643,7 +643,14 @@ _.Zones =
 							["repeatable"] = true,
 							["questID"] = 55148,
 							["g"] = {
-								i(169167),	-- Blueprint: Orange Spraybot
+								i(169167, {	-- Blueprint: Orange Spraybot
+									["questID"] = 55075,
+									["g"] = {
+										crit(27, {	-- Orange Spraybot
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
 								i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 									["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 									["g"] = {
@@ -667,7 +674,14 @@ _.Zones =
 							["questID"] = 56079,	-- triggered when completing normal-mode rig and receiving this item on top of normal box
 							["isDaily"] = true,
 							["g"] = {
-								--i(169167),	-- Blueprint: Orange Spraybot  NOT CONFIRMED YET
+								i(169167, {	-- Blueprint: Orange Spraybot
+									["questID"] = 55075,
+									["g"] = {
+										crit(27, {	-- Orange Spraybot
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
 								i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 									["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 									["g"] = {
