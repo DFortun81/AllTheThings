@@ -303,10 +303,11 @@ _.Zones =
 					},
 				}),
 				n(151569, {	-- Deepwater Maw
+					["creatureID"] = 151558,	-- Hundred-Fathom Lure
 					["questID"] = 55514,
 					["coord"] = { 35.3, 43.0, 1462 },
 					["isDaily"] = true,
-					["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn him.  Summoning requires a |cffa335eeHundred-Fathom Lure|r.",
+					["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn Deepwater Maw.  Summoning requires a |cffa335eeHundred-Fathom Lure|r.",
 					["g"] = {
 						crit(11, {	-- Deepwater Maw
 							["achievementID"] = 13470,	-- Rest in Pistons
