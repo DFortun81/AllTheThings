@@ -38,6 +38,7 @@ _.NeverImplemented =
 		q(35929),	-- Blackfathom Deeps: bonus objective rewarded
 		q(35598),	-- Razorfen Downs: dungeon completion
 		q(35615),	-- Razorfen Kraul: dungeon completion
+		q(35304),	-- Shadowfang Keep: dungeon completion
 		q(35518),	-- Shattered Halls Reward Quest (completed Timewalking Shattered Halls)
 		q(33226),	-- Short-Supply Reward (Celestials bonus roll)
 		q(32923),	-- Short-Supply Reward (Galleon bonus roll)
