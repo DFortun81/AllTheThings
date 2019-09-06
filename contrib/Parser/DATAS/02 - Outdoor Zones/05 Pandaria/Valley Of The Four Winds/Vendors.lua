@@ -5,20 +5,20 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(376, {	-- Valley of the Four Winds				
-			n(-2, {	-- Vendors
+			n(-2, {		-- Vendors
 				n(58713, {	-- Anthea Ironpaw <Master of the Wok>
 					["coord"] = { 52.8, 51.8, 376 },
 					["g"] = {
+						un(1, i(87231)),	-- Recipe: Banquet of the Wok
+						recipe(125594),		-- Banquet of the Wok
+						un(1, i(87233)),	-- Recipe: Great Banquet of the Wok
+						recipe(125595),		-- Great Banquet of the Wok
 						un(1, i(74666)),	-- Recipe: Sauteed Carrots
 						recipe(104301),		-- Sauteed Carrots
 						un(1, i(74668)),	-- Recipe: Sea Mist Rice Noodles
 						recipe(104303),		-- Sea Mist Rice Noodles
 						un(1, i(74667)),	-- Recipe: Valley Stir Fry
 						recipe(104302),		-- Valley Stir Fry
-						un(1, i(87231)),	-- Recipe: Banquet of the Wok
-						recipe(125594),		-- Banquet of the Wok
-						un(1, i(87233)),	-- Recipe: Great Banquet of the Wok
-						recipe(125595),		-- Great Banquet of the Wok
 					},
 				}),
 				n(70101, {	-- Armsmaster Holinka >S13< Elite
@@ -333,151 +333,126 @@ _.Zones =
 				n(58717, {	-- Bobo Ironpaw <Master of the Brew>
 					["coord"] = { 53.0, 52.0, 376 },
 					["g"] = {
-						recipe(124052),		-- Ginseng Tea
-						recipe(124053),		-- Jade Witch Brew
-						recipe(124054),		-- Mad Brewer's Breakfast
 						un(1, i(87247)),	-- Recipe: Banquet of the Brew
 						recipe(125602),		-- Banquet of the Brew
+						recipe(124052),		-- Ginseng Tea
 						un(1, i(87249)),	-- Recipe: Great Banquet of the Brew
 						recipe(125603),		-- Great Banquet of the Brew
+						recipe(124053),		-- Jade Witch Brew
+						recipe(124054),		-- Mad Brewer's Breakfast
 					},
 				}),
 				n(61215, {	-- Claretta <Adventuring Supplies>
 					["coord"] = { 84.8, 21.6, 376 },
 					["g"] = {
-						-- Weapons
+						i(81655),	-- Faded Forest Amulet
+						i(81650),	-- Faded Forest Armored Bracers
+						i(81605),	-- Faded Forest Armored Chestpiece
+						i(81641),	-- Faded Forest Armored Gauntlets
+						i(81632),	-- Faded Forest Armored Girdle
+						i(81587),	-- Faded Forest Armored Helm
+						i(81614),	-- Faded Forest Armored Legguards
+						i(81596),	-- Faded Forest Armored Shoulders
+						i(81623),	-- Faded Forest Armored Warboots
 						i(81686),	-- Faded Forest Axe
+						i(81665),	-- Faded Forest Badge
+						i(81656),	-- Faded Forest Band
 						i(81683),	-- Faded Forest Barrier
 						i(81674),	-- Faded Forest Battlemace
 						i(81685),	-- Faded Forest Blade
-						i(81676),	-- Faded Forest Crossbow
+						i(81645),	-- Faded Forest Burnished Bracers
+						i(81600),	-- Faded Forest Burnished Chestguard
+						i(81627),	-- Faded Forest Burnished Clasp
+						i(81636),	-- Faded Forest Burnished Gloves
+						i(81618),	-- Faded Forest Burnished Greaves
+						i(81582),	-- Faded Forest Burnished Headcover
+						i(81609),	-- Faded Forest Burnished Legplates
+						i(81591),	-- Faded Forest Burnished Spaulders
+						i(81668),	-- Faded Forest Cape
+						i(81603),	-- Faded Forest Chain Armor
+						i(81639),	-- Faded Forest Chain Gauntlets
+						i(81585),	-- Faded Forest Chain Helm
+						i(81612),	-- Faded Forest Chain Leggings
+						i(81630),	-- Faded Forest Chain Links
+						i(81621),	-- Faded Forest Chain Sabatons
+						i(81594),	-- Faded Forest Chain Spaulders
+						i(81648),	-- Faded Forest Chain Wristguards
+						i(81652),	-- Faded Forest Choker
+						i(81670),	-- Faded Forest Cloak
 						i(81673),	-- Faded Forest Combat Staff
+						i(81676),	-- Faded Forest Crossbow
 						i(81679),	-- Faded Forest Dagger
 						i(81672),	-- Faded Forest Diviner's Rod
+						i(81667),	-- Faded Forest Drape
+						i(81662),	-- Faded Forest Emblem
 						i(81681),	-- Faded Forest Greatsword
 						i(81675),	-- Faded Forest Handaxe
-						i(81682),	-- Faded Forest Mace
-						i(81671),	-- Faded Forest Meditation Staff
-						i(81677),	-- Faded Forest Saber
-						i(81678),	-- Faded Forest Scepter
-						i(81684),	-- Faded Forest Shield
-						i(81680),	-- Faded Forest Smasher
-
-						-- Helms
-						i(81587),	-- Faded Forest Armored Helm
-						i(81582),	-- Faded Forest Burnished Headcover
-						i(81585),	-- Faded Forest Chain Helm
-						i(81586),	-- Faded Forest Heavy Helm
-						i(81580),	-- Faded Forest Hide Helm
-						i(81584),	-- Faded Forest Leather Helm
-						i(81581),	-- Faded Forest Ringmail Helm
-						i(81579),	-- Faded Forest Satin Hood
-						i(81583),	-- Faded Forest Silk Cowl
-
-						-- Necklaces
-						i(81655),	-- Faded Forest Amulet
-						i(81652),	-- Faded Forest Choker
-						i(81651),	-- Faded Forest Locket
-						i(81653),	-- Faded Forest Necklace
-						i(81654),	-- Faded Forest Pendant
-
-						-- Cloak
-						i(81668),	-- Faded Forest Cape
-						i(81670),	-- Faded Forest Cloak
-						i(81667),	-- Faded Forest Drape
-						i(81669),	-- Faded Forest Manteau
-						i(81666),	-- Faded Forest Shawl
-
-						-- Shoulders
-						i(81596),	-- Faded Forest Armored Shoulders
-						i(81591),	-- Faded Forest Burnished Spaulders
-						i(81594),	-- Faded Forest Chain Spaulders
-						i(81595),	-- Faded Forest Heavy Shoulders
-						i(81589),	-- Faded Forest Hide Spaulders
-						i(81593),	-- Faded Forest Leather Spaulders
-						i(81590),	-- Faded Forest Ringmail Spaulders
-						i(81588),	-- Faded Forest Satin Mantle
-						i(81592),	-- Faded Forest Silk Amice
-
-						-- Chest
-						i(81605),	-- Faded Forest Armored Chestpiece
-						i(81600),	-- Faded Forest Burnished Chestguard
-						i(81603),	-- Faded Forest Chain Armor
-						i(81604),	-- Faded Forest Heavy Chestpiece
-						i(81598),	-- Faded Forest Hide Robes
-						i(81602),	-- Faded Forest Leather Tunic
-						i(81599),	-- Faded Forest Ringmail Armor
-						i(81597),	-- Faded Forest Satin Robe
-						i(81601),	-- Faded Forest Silk Robe
-
-						-- Wrists
-						i(81650),	-- Faded Forest Armored Bracers
-						i(81645),	-- Faded Forest Burnished Bracers
-						i(81648),	-- Faded Forest Chain Wristguards
 						i(81649),	-- Faded Forest Heavy Armplates
-						i(81643),	-- Faded Forest Hide Bindings
-						i(81647),	-- Faded Forest Leather Armwraps
-						i(81644),	-- Faded Forest Ringmail Armbands
-						i(81642),	-- Faded Forest Satin Cuffs
-						i(81646),	-- Faded Forest Silk Cuffs
-
-						-- Gloves
-						i(81641),	-- Faded Forest Armored Gauntlets
-						i(81636),	-- Faded Forest Burnished Gloves
-						i(81639),	-- Faded Forest Chain Gauntlets
+						i(81604),	-- Faded Forest Heavy Chestpiece
 						i(81640),	-- Faded Forest Heavy Gauntlets
-						i(81634),	-- Faded Forest Hide Gloves
-						i(81638),	-- Faded Forest Leather Gloves
-						i(81635),	-- Faded Forest Ringmail Gauntlets
-						i(81633),	-- Faded Forest Satin Gloves
-						i(81637),	-- Faded Forest Silk Handguards
-
-						-- Waist
-						i(81632),	-- Faded Forest Armored Girdle
-						i(81627),	-- Faded Forest Burnished Clasp
-						i(81630),	-- Faded Forest Chain Links
 						i(81631),	-- Faded Forest Heavy Girdle
-						i(81625),	-- Faded Forest Hide Belt
-						i(81629),	-- Faded Forest Leather Belt
-						i(81626),	-- Faded Forest Ringmail Waistguard
-						i(81624),	-- Faded Forest Satin Cord
-						i(81628),	-- Faded Forest Silk Cord
-
-						-- Legs
-						i(81614),	-- Faded Forest Armored Legguards
-						i(81609),	-- Faded Forest Burnished Legplates
-						i(81612),	-- Faded Forest Chain Leggings
+						i(81586),	-- Faded Forest Heavy Helm
 						i(81613),	-- Faded Forest Heavy Legguards
-						i(81607),	-- Faded Forest Hide Legguards
-						i(81611),	-- Faded Forest Leather Legguards
-						i(81608),	-- Faded Forest Ringmail Leggings
-						i(81606),	-- Faded Forest Satin Leggings
-						i(81610),	-- Faded Forest Silk Trousers
-
-						-- Feet
-						i(81623),	-- Faded Forest Armored Warboots
-						i(81618),	-- Faded Forest Burnished Greaves
-						i(81621),	-- Faded Forest Chain Sabatons
+						i(81595),	-- Faded Forest Heavy Shoulders
 						i(81622),	-- Faded Forest Heavy Warboots
+						i(81625),	-- Faded Forest Hide Belt
+						i(81643),	-- Faded Forest Hide Bindings
 						i(81616),	-- Faded Forest Hide Footguards
-						i(81620),	-- Faded Forest Leather Boots
-						i(81617),	-- Faded Forest Ringmail Sabatons
-						i(81615),	-- Faded Forest Satin Treads
-						i(81619),	-- Faded Forest Silk Treads
-
-						-- Finger
-						i(81656),	-- Faded Forest Band
-						i(81658),	-- Faded Forest Loop
-						i(81657),	-- Faded Forest Ring
-						i(81660),	-- Faded Forest Seal
-						i(81659),	-- Faded Forest Signet
-
-						-- Trinkets
-						i(81665),	-- Faded Forest Badge
-						i(81662),	-- Faded Forest Emblem
+						i(81634),	-- Faded Forest Hide Gloves
+						i(81580),	-- Faded Forest Hide Helm
+						i(81607),	-- Faded Forest Hide Legguards
+						i(81598),	-- Faded Forest Hide Robes
+						i(81589),	-- Faded Forest Hide Spaulders
 						i(81664),	-- Faded Forest Insignia
+						i(81647),	-- Faded Forest Leather Armwraps
+						i(81629),	-- Faded Forest Leather Belt
+						i(81620),	-- Faded Forest Leather Boots
+						i(81638),	-- Faded Forest Leather Gloves
+						i(81584),	-- Faded Forest Leather Helm
+						i(81611),	-- Faded Forest Leather Legguards
+						i(81593),	-- Faded Forest Leather Spaulders
+						i(81602),	-- Faded Forest Leather Tunic
+						i(81651),	-- Faded Forest Locket
+						i(81658),	-- Faded Forest Loop
+						i(81682),	-- Faded Forest Mace
+						i(81669),	-- Faded Forest Manteau
 						i(81663),	-- Faded Forest Medal
 						i(81661),	-- Faded Forest Medallion
+						i(81671),	-- Faded Forest Meditation Staff
+						i(81653),	-- Faded Forest Necklace
+						i(81654),	-- Faded Forest Pendant
+						i(81657),	-- Faded Forest Ring
+						i(81644),	-- Faded Forest Ringmail Armbands
+						i(81599),	-- Faded Forest Ringmail Armor
+						i(81635),	-- Faded Forest Ringmail Gauntlets
+						i(81581),	-- Faded Forest Ringmail Helm
+						i(81608),	-- Faded Forest Ringmail Leggings
+						i(81617),	-- Faded Forest Ringmail Sabatons
+						i(81590),	-- Faded Forest Ringmail Spaulders
+						i(81626),	-- Faded Forest Ringmail Waistguard
+						i(81677),	-- Faded Forest Saber
+						i(81624),	-- Faded Forest Satin Cord
+						i(81642),	-- Faded Forest Satin Cuffs
+						i(81633),	-- Faded Forest Satin Gloves
+						i(81579),	-- Faded Forest Satin Hood
+						i(81606),	-- Faded Forest Satin Leggings
+						i(81588),	-- Faded Forest Satin Mantle
+						i(81597),	-- Faded Forest Satin Robe
+						i(81615),	-- Faded Forest Satin Treads
+						i(81678),	-- Faded Forest Scepter
+						i(81660),	-- Faded Forest Seal
+						i(81666),	-- Faded Forest Shawl
+						i(81684),	-- Faded Forest Shield
+						i(81659),	-- Faded Forest Signet
+						i(81592),	-- Faded Forest Silk Amice
+						i(81628),	-- Faded Forest Silk Cord
+						i(81583),	-- Faded Forest Silk Cowl
+						i(81646),	-- Faded Forest Silk Cuffs
+						i(81637),	-- Faded Forest Silk Handguards
+						i(81601),	-- Faded Forest Silk Robe
+						i(81619),	-- Faded Forest Silk Treads
+						i(81610),	-- Faded Forest Silk Trousers
+						i(81680),	-- Faded Forest Smasher
 					},
 				}),
 				n(69968, {	-- Ethan Natice Season 14 Elite
@@ -1220,14 +1195,18 @@ _.Zones =
 				n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
 					["coord"] = { 53.2, 51.6, 376 },
 					["g"] = {
+						i(90175),	-- Gin'Ji Knife Set (TOY!)
 						i(93226),	-- Grand Commendation of the Tillers
+						i(89869),	-- Pandaren Scarecrow (TOY!)
 						i(74657),	-- Recipe: Spicy Salmon
 						i(74658),	-- Recipe: Spicy Vegetable Chips
-						i(90175),	-- Gin'Ji Knife Set Toy
-						i(89869),	-- Pandaren Scarecrow Toy
-						i(89391),	-- Reins of the Black Riding Goat Mount
-						i(89362),	-- Reins of the Brown Riding Goat Mount
-						i(89390),	-- Reins of the White Riding Goat Mount
+						i(89391, {	-- Reins of the Black Riding Goat (MOUNT!)
+							["cost"] = 12750000,	-- 1,275g
+						}),
+						i(89362),	-- Reins of the Brown Riding Goat (MOUNT!)
+						i(89390, {	-- Reins of the White Riding Goat (MOUNT!)
+							["cost"] = 27625000,	-- 2,762g 50s
+						}),
 						i(90893),	-- Straw Hat - Cloth
 						i(90894),	-- Straw Hat - Leather
 						i(90895),	-- Straw Hat - Mail
@@ -1411,29 +1390,29 @@ _.Zones =
 				n(58716, {	-- Jian Ironpaw <Master of the Oven>
 					["coord"] = { 53.2, 51.6, 376 },
 					["g"] = {
+						un(1, i(87243)),	-- Recipe: Banquet of the Oven
+						recipe(125600),		-- Banquet of the Oven
 						un(1, i(74677)),	-- Recipe: Chun Tian Spring Rolls
 						recipe(104312),		-- Chun Tian Spring Rolls
+						un(1, i(87245)),	-- Recipe: Great Banquet of the Oven
+						recipe(125601),		-- Great Banquet of the Oven
 						un(1, i(74676)),	-- Recipe: Twin Fish Platter
 						recipe(104311),		-- Twin Fish Platter
 						un(1, i(74675)),	-- Recipe: Wildfowl Roast
 						recipe(104310),		-- Wildfowl Roast
-						un(1, i(87243)),	-- Recipe: Banquet of the Oven
-						recipe(125600),		-- Banquet of the Oven
-						un(1, i(87245)),	-- Recipe: Great Banquet of the Oven
-						recipe(125601),		-- Great Banquet of the Oven
 					},
 				}),
 				n(58712, {	-- Kol Ironpaw <Master of the Grill>
 					["coord"] = { 53.0, 51.4, 376 },
 					["g"] = {
+						un(1, i(87227)),	-- Recipe: Banquet of the Grill
+						recipe(125141),		-- Banquet of the Grill
 						un(1, i(74665)),	-- Recipe: Black Pepper Ribs and Shrimp
 						recipe(104300),		-- Black Pepper Ribs and Shrimp
 						un(1, i(74663)),	-- Recipe: Charbroiled Tiger Steak
 						recipe(104298),		-- Charbroiled Tiger Steak
 						un(1, i(74664)),	-- Recipe: Eternal Blossom Fish
 						recipe(104299),		-- Eternal Blossom Fish
-						un(1, i(87227)),	-- Recipe: Banquet of the Grill
-						recipe(125141),		-- Banquet of the Grill
 						un(1, i(87229)),	-- Recipe: Great Banquet of the Grill
 						recipe(125142),		-- Great Banquet of the Grill
 					},
@@ -1447,8 +1426,8 @@ _.Zones =
 						un(2, i(84789)),	-- Malevolent Gladiator's Staff
 						un(2, i(85127)),	-- Elite Malevolent Gladiator's Spellblade 	-- Daggers
 						un(2, i(85133)),	-- Elite Malevolent Gladiator's Shanker
-						un(2, i(84961)),		-- Malevolent Gladiator's shellblade (used to upgrade to elite)
-						un(2, i(84967)),		-- Malevolent Gladiator's shanker (used to upgrade to elite)
+						un(2, i(84961)),	-- Malevolent Gladiator's shellblade (used to upgrade to elite)
+						un(2, i(84967)),	-- Malevolent Gladiator's shanker (used to upgrade to elite)
 						un(2, i(85109)),	-- Elite Malevolent Gladiator's Battle Staff 	-- Staffs
 						un(2, i(85111)),	-- Elite Malevolent Gladiator's Staff
 						un(2, i(85110)),	-- Elite Malevolent Gladiator's Energy Staff
@@ -1477,7 +1456,7 @@ _.Zones =
 						un(2, i(84896)),	-- Malevolent Gladiator's Longbow (used to upgrade to elite)
 						un(2, i(85119)),	-- Elite Malevolent Gladiator's Longbow 	-- Ranged Weapons
 						un(2, i(85123)),	-- Elite Malevolent Gladiator's Rifle
-						un(2, i(84900)),		-- Malevolent Gladiator's Rifle(used to upgrade to elite)
+						un(2, i(84900)),	-- Malevolent Gladiator's Rifle(used to upgrade to elite)
 						un(2, i(85120)),	-- Elite Malevolent Gladiator's Crossbow
 						un(2, i(85122)),	-- Elite Malevolent Gladiator's Baton of Light
 						un(2, i(85120)),	-- Elite Malevolent Gladiator's Heavy Crossbow
@@ -1789,16 +1768,16 @@ _.Zones =
 				n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
 					["coord"] = { 52.6, 51.6, 376 },
 					["g"] = {
+						un(1, i(87235)),	-- Recipe: Banquet of the Pot
+						recipe(125596),		-- Banquet of the Pot
 						un(1, i(74670)),	-- Recipe: Braised Turtle
 						recipe(104305),		-- Braised Turtle
+						un(1, i(87237)),	-- Recipe: Great Banquet of the Pot
+						recipe(125597),		-- Great Banquet of the Pot
 						un(1, i(74671)),	-- Recipe: Mogu Fish Stew
 						recipe(104306),		-- Mogu Fish Stew
 						un(1, i(74669)),	-- Recipe: Swirling Mist Soup
 						recipe(104304),		-- Swirling Mist Soup
-						un(1, i(87235)),	-- Recipe: Banquet of the Pot
-						recipe(125596),		-- Banquet of the Pot
-						un(1, i(87237)),	-- Recipe: Great Banquet of the Pot
-						recipe(125597),		-- Great Banquet of the Pot
 					},
 				}),
 				n(58718, {	-- Merchant Greenfield
@@ -1815,19 +1794,31 @@ _.Zones =
 				n(64395, {	-- Nam Ironpaw <Stockmaster>
 					["coord"] = { 53.6, 51.2, 376 },
 					["g"] = {
-						currency(402, {	-- Ironpaw Token
-							i(75013),	-- Recipe: Pandaren Banquet
-							i(75017),	-- Recipe: Great Pandaren Banquet
-							i(86425),	-- Cooking School Bell
-							i(88801),	-- Flippable Table
-							i(86468),	-- Apron
-							i(86559, {	-- Frying Pan
-								["description"] = "In order to mark this item as collected you will need to shift+click the ATT header.",
-							}),
-							i(86558, {	-- Rolling Pin
-								["description"] = "In order to mark this item as collected you will need to shift+click the ATT header.",
-							}),
-							i(92748),	-- Portable Refrigerator
+						i(86468, {	-- Apron
+							["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+						}),
+						i(86425, {	-- Cooking School Bell
+							["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+						}),
+						i(88801, {	-- Flippable Table (TOY!)
+							["cost"] = { { "c", 402, 40 }, },	-- 40x Ironpaw Token
+						}),
+						i(86559, {	-- Frying Pan
+							["description"] = "In order to mark this item as collected you will need to shift+click the ATT header.",
+							["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+						}),
+						i(92748, {	-- Portable Refrigerator
+							["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
+						}),
+						i(75017, {	-- Recipe: Great Pandaren Banquet
+							["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
+						}),
+						i(75013, {	-- Recipe: Pandaren Banquet
+							["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
+						}),
+						i(86558, {	-- Rolling Pin
+							["description"] = "In order to mark this item as collected you will need to shift+click the ATT header.",
+							["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
 						}),
 					},
 				}),
@@ -1841,19 +1832,21 @@ _.Zones =
 				n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
 					["coord"] = { 16.0, 83.0, 376 },
 					["g"] = {
-						i(88802),	-- Foxicopter Controller Toy
-						i(91904),	-- Stackable Stag Toy
+						i(88802, {	-- Foxicopter Controller (TOY!)
+							["cost"] = 10000000,	-- 1,000g
+						}),
+						i(91904, {	-- Stackable Stag (TOY!)
+							["cost"] = 10000000,	-- 1,000g
+						}),
 					},
 				}),
 				faction(1278, {	-- Sho
-					["g"] = {
-						i(85497, {	-- Chirping Package
-							["description"] = "Once you hit Exalted with Sho you receive this in the mail.",
-							["g"] = {
-								i(85222),	-- Red Cricket
-							},
-						}),
-					},
+					i(85497, {	-- Chirping Package
+						["description"] = "Once you hit Exalted with Sho you receive this in the mail.",
+						["g"] = {
+							i(85222),	-- Red Cricket
+						},
+					}),
 				}),
 				n(78456, {	-- Starlight Sinclair <Prideful Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
@@ -2075,154 +2068,129 @@ _.Zones =
 						{ 55.6, 49.8, 376 },
 					},
 					["g"] = {
-						-- Weapons
+						i(81655),	-- Faded Forest Amulet
+						i(81650),	-- Faded Forest Armored Bracers
+						i(81605),	-- Faded Forest Armored Chestpiece
+						i(81641),	-- Faded Forest Armored Gauntlets
+						i(81632),	-- Faded Forest Armored Girdle
+						i(81587),	-- Faded Forest Armored Helm
+						i(81614),	-- Faded Forest Armored Legguards
+						i(81596),	-- Faded Forest Armored Shoulders
+						i(81623),	-- Faded Forest Armored Warboots
 						i(81686),	-- Faded Forest Axe
+						i(81665),	-- Faded Forest Badge
+						i(81656),	-- Faded Forest Band
 						i(81683),	-- Faded Forest Barrier
 						i(81674),	-- Faded Forest Battlemace
 						i(81685),	-- Faded Forest Blade
-						i(81676),	-- Faded Forest Crossbow
+						i(81645),	-- Faded Forest Burnished Bracers
+						i(81600),	-- Faded Forest Burnished Chestguard
+						i(81627),	-- Faded Forest Burnished Clasp
+						i(81636),	-- Faded Forest Burnished Gloves
+						i(81618),	-- Faded Forest Burnished Greaves
+						i(81582),	-- Faded Forest Burnished Headcover
+						i(81609),	-- Faded Forest Burnished Legplates
+						i(81591),	-- Faded Forest Burnished Spaulders
+						i(81668),	-- Faded Forest Cape
+						i(81603),	-- Faded Forest Chain Armor
+						i(81639),	-- Faded Forest Chain Gauntlets
+						i(81585),	-- Faded Forest Chain Helm
+						i(81612),	-- Faded Forest Chain Leggings
+						i(81630),	-- Faded Forest Chain Links
+						i(81621),	-- Faded Forest Chain Sabatons
+						i(81594),	-- Faded Forest Chain Spaulders
+						i(81648),	-- Faded Forest Chain Wristguards
+						i(81652),	-- Faded Forest Choker
+						i(81670),	-- Faded Forest Cloak
 						i(81673),	-- Faded Forest Combat Staff
+						i(81676),	-- Faded Forest Crossbow
 						i(81679),	-- Faded Forest Dagger
 						i(81672),	-- Faded Forest Diviner's Rod
+						i(81667),	-- Faded Forest Drape
+						i(81662),	-- Faded Forest Emblem
 						i(81681),	-- Faded Forest Greatsword
 						i(81675),	-- Faded Forest Handaxe
-						i(81682),	-- Faded Forest Mace
-						i(81671),	-- Faded Forest Meditation Staff
-						i(81677),	-- Faded Forest Saber
-						i(81678),	-- Faded Forest Scepter
-						i(81684),	-- Faded Forest Shield
-						i(81680),	-- Faded Forest Smasher
-
-						-- Helms
-						i(81587),	-- Faded Forest Armored Helm
-						i(81582),	-- Faded Forest Burnished Headcover
-						i(81585),	-- Faded Forest Chain Helm
-						i(81586),	-- Faded Forest Heavy Helm
-						i(81580),	-- Faded Forest Hide Helm
-						i(81584),	-- Faded Forest Leather Helm
-						i(81581),	-- Faded Forest Ringmail Helm
-						i(81579),	-- Faded Forest Satin Hood
-						i(81583),	-- Faded Forest Silk Cowl
-
-						-- Necklaces
-						i(81655),	-- Faded Forest Amulet
-						i(81652),	-- Faded Forest Choker
-						i(81651),	-- Faded Forest Locket
-						i(81653),	-- Faded Forest Necklace
-						i(81654),	-- Faded Forest Pendant
-
-						-- Cloak
-						i(81668),	-- Faded Forest Cape
-						i(81670),	-- Faded Forest Cloak
-						i(81667),	-- Faded Forest Drape
-						i(81669),	-- Faded Forest Manteau
-						i(81666),	-- Faded Forest Shawl
-
-						-- Shoulders
-						i(81596),	-- Faded Forest Armored Shoulders
-						i(81591),	-- Faded Forest Burnished Spaulders
-						i(81594),	-- Faded Forest Chain Spaulders
-						i(81595),	-- Faded Forest Heavy Shoulders
-						i(81589),	-- Faded Forest Hide Spaulders
-						i(81593),	-- Faded Forest Leather Spaulders
-						i(81590),	-- Faded Forest Ringmail Spaulders
-						i(81588),	-- Faded Forest Satin Mantle
-						i(81592),	-- Faded Forest Silk Amice
-
-						-- Chest
-						i(81605),	-- Faded Forest Armored Chestpiece
-						i(81600),	-- Faded Forest Burnished Chestguard
-						i(81603),	-- Faded Forest Chain Armor
-						i(81604),	-- Faded Forest Heavy Chestpiece
-						i(81598),	-- Faded Forest Hide Robes
-						i(81602),	-- Faded Forest Leather Tunic
-						i(81599),	-- Faded Forest Ringmail Armor
-						i(81597),	-- Faded Forest Satin Robe
-						i(81601),	-- Faded Forest Silk Robe
-
-						-- Wrists
-						i(81650),	-- Faded Forest Armored Bracers
-						i(81645),	-- Faded Forest Burnished Bracers
-						i(81648),	-- Faded Forest Chain Wristguards
 						i(81649),	-- Faded Forest Heavy Armplates
-						i(81643),	-- Faded Forest Hide Bindings
-						i(81647),	-- Faded Forest Leather Armwraps
-						i(81644),	-- Faded Forest Ringmail Armbands
-						i(81642),	-- Faded Forest Satin Cuffs
-						i(81646),	-- Faded Forest Silk Cuffs
-
-						-- Gloves
-						i(81641),	-- Faded Forest Armored Gauntlets
-						i(81636),	-- Faded Forest Burnished Gloves
-						i(81639),	-- Faded Forest Chain Gauntlets
+						i(81604),	-- Faded Forest Heavy Chestpiece
 						i(81640),	-- Faded Forest Heavy Gauntlets
-						i(81634),	-- Faded Forest Hide Gloves
-						i(81638),	-- Faded Forest Leather Gloves
-						i(81635),	-- Faded Forest Ringmail Gauntlets
-						i(81633),	-- Faded Forest Satin Gloves
-						i(81637),	-- Faded Forest Silk Handguards
-
-						-- Waist
-						i(81632),	-- Faded Forest Armored Girdle
-						i(81627),	-- Faded Forest Burnished Clasp
-						i(81630),	-- Faded Forest Chain Links
 						i(81631),	-- Faded Forest Heavy Girdle
-						i(81625),	-- Faded Forest Hide Belt
-						i(81629),	-- Faded Forest Leather Belt
-						i(81626),	-- Faded Forest Ringmail Waistguard
-						i(81624),	-- Faded Forest Satin Cord
-						i(81628),	-- Faded Forest Silk Cord
-
-						-- Legs
-						i(81614),	-- Faded Forest Armored Legguards
-						i(81609),	-- Faded Forest Burnished Legplates
-						i(81612),	-- Faded Forest Chain Leggings
+						i(81586),	-- Faded Forest Heavy Helm
 						i(81613),	-- Faded Forest Heavy Legguards
-						i(81607),	-- Faded Forest Hide Legguards
-						i(81611),	-- Faded Forest Leather Legguards
-						i(81608),	-- Faded Forest Ringmail Leggings
-						i(81606),	-- Faded Forest Satin Leggings
-						i(81610),	-- Faded Forest Silk Trousers
-
-						-- Feet
-						i(81623),	-- Faded Forest Armored Warboots
-						i(81618),	-- Faded Forest Burnished Greaves
-						i(81621),	-- Faded Forest Chain Sabatons
+						i(81595),	-- Faded Forest Heavy Shoulders
 						i(81622),	-- Faded Forest Heavy Warboots
+						i(81625),	-- Faded Forest Hide Belt
+						i(81643),	-- Faded Forest Hide Bindings
 						i(81616),	-- Faded Forest Hide Footguards
-						i(81620),	-- Faded Forest Leather Boots
-						i(81617),	-- Faded Forest Ringmail Sabatons
-						i(81615),	-- Faded Forest Satin Treads
-						i(81619),	-- Faded Forest Silk Treads
-
-						-- Finger
-						i(81656),	-- Faded Forest Band
-						i(81658),	-- Faded Forest Loop
-						i(81657),	-- Faded Forest Ring
-						i(81660),	-- Faded Forest Seal
-						i(81659),	-- Faded Forest Signet
-
-						-- Trinkets
-						i(81665),	-- Faded Forest Badge
-						i(81662),	-- Faded Forest Emblem
+						i(81634),	-- Faded Forest Hide Gloves
+						i(81580),	-- Faded Forest Hide Helm
+						i(81607),	-- Faded Forest Hide Legguards
+						i(81598),	-- Faded Forest Hide Robes
+						i(81589),	-- Faded Forest Hide Spaulders
 						i(81664),	-- Faded Forest Insignia
+						i(81647),	-- Faded Forest Leather Armwraps
+						i(81629),	-- Faded Forest Leather Belt
+						i(81620),	-- Faded Forest Leather Boots
+						i(81638),	-- Faded Forest Leather Gloves
+						i(81584),	-- Faded Forest Leather Helm
+						i(81611),	-- Faded Forest Leather Legguards
+						i(81593),	-- Faded Forest Leather Spaulders
+						i(81602),	-- Faded Forest Leather Tunic
+						i(81651),	-- Faded Forest Locket
+						i(81658),	-- Faded Forest Loop
+						i(81682),	-- Faded Forest Mace
+						i(81669),	-- Faded Forest Manteau
 						i(81663),	-- Faded Forest Medal
 						i(81661),	-- Faded Forest Medallion
+						i(81671),	-- Faded Forest Meditation Staff
+						i(81653),	-- Faded Forest Necklace
+						i(81654),	-- Faded Forest Pendant
+						i(81657),	-- Faded Forest Ring
+						i(81644),	-- Faded Forest Ringmail Armbands
+						i(81599),	-- Faded Forest Ringmail Armor
+						i(81635),	-- Faded Forest Ringmail Gauntlets
+						i(81581),	-- Faded Forest Ringmail Helm
+						i(81608),	-- Faded Forest Ringmail Leggings
+						i(81617),	-- Faded Forest Ringmail Sabatons
+						i(81590),	-- Faded Forest Ringmail Spaulders
+						i(81626),	-- Faded Forest Ringmail Waistguard
+						i(81677),	-- Faded Forest Saber
+						i(81624),	-- Faded Forest Satin Cord
+						i(81642),	-- Faded Forest Satin Cuffs
+						i(81633),	-- Faded Forest Satin Gloves
+						i(81579),	-- Faded Forest Satin Hood
+						i(81606),	-- Faded Forest Satin Leggings
+						i(81588),	-- Faded Forest Satin Mantle
+						i(81597),	-- Faded Forest Satin Robe
+						i(81615),	-- Faded Forest Satin Treads
+						i(81678),	-- Faded Forest Scepter
+						i(81660),	-- Faded Forest Seal
+						i(81666),	-- Faded Forest Shawl
+						i(81684),	-- Faded Forest Shield
+						i(81659),	-- Faded Forest Signet
+						i(81592),	-- Faded Forest Silk Amice
+						i(81628),	-- Faded Forest Silk Cord
+						i(81583),	-- Faded Forest Silk Cowl
+						i(81646),	-- Faded Forest Silk Cuffs
+						i(81637),	-- Faded Forest Silk Handguards
+						i(81601),	-- Faded Forest Silk Robe
+						i(81619),	-- Faded Forest Silk Treads
+						i(81610),	-- Faded Forest Silk Trousers
+						i(81680),	-- Faded Forest Smasher
 					},
 				}),
 				n(58715, {	-- Yan Ironpaw <Master of the Steamer>
 					["coord"] = { 52.6, 51.6, 376 },
 					["g"] = {
+						un(1, i(87239)),	-- Recipe: Banquet of the Steamer
+						recipe(125598),		-- Banquet of the Steamer
 						un(1, i(74673)),	-- Recipe: Fire Spirit Salmon
 						recipe(104308),		-- Fire Spirit Salmon
+						un(1, i(87241)),	-- Recipe: Great Banquet of the Steamer
+						recipe(125599),		-- Great Banquet of the Steamer
 						un(1, i(74672)),	-- Recipe: Shrimp Dumplings
 						recipe(104307),		-- Shrimp Dumplings
 						un(1, i(74674)),	-- Recipe: Steamed Crab Surprise
 						recipe(104309),		-- Steamed Crab Surprise
-						un(1, i(87239)),	-- Recipe: Banquet of the Steamer
-						recipe(125598),		-- Banquet of the Steamer
-						un(1, i(87241)),	-- Recipe: Great Banquet of the Steamer
-						recipe(125599),		-- Great Banquet of the Steamer
 					},
 				}),
 			}),

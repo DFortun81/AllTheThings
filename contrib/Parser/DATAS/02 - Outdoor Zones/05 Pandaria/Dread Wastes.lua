@@ -1141,29 +1141,63 @@ _.Zones =
 							i(89063),	-- Klaxxi Lash of the Seeker
 							i(89058),	-- Klaxxi Lash of the Winnower
 							i(89798),	-- Klaxxi Tabard
-							i(89093),	-- Kovok's Riven Legguards
+							i(89093, {	-- Kovok's Riven Legguards
+								["cost"] = 5019100,	-- 501g 91s
+							}),
 							i(89651),	-- Krompf's Fine-Tuning Gloves
 							i(89088),	-- Leggings of the Poisoned Soul
 							i(89095),	-- Legguards of the Unscathed
 							i(89067),	-- Links of the Lucid
-							i(89092),	-- Locust Swarm Legguards
+							i(89092, {	-- Locust Swarm Legguards
+								["cost"] = 5001400,	-- 500g 14s
+							}),
 							i(89066),	-- Paragon's Pale Pendant
-							i(83791),	-- Plans: Breastplate of Ancient Steel
-							i(83792),	-- Plans: Gauntlets of Ancient Steel
-							i(90531),	-- Plans: Ghost Iron Shield Spike
-							i(83787),	-- Plans: Ghost Reaver's Breastplate
-							i(83788),	-- Plans: Ghost Reaver's Gauntlets
-							i(84196),	-- Plans: Living Steel Belt Buckle
-							i(83789),	-- Plans: Living Steel Breastplate
-							i(83790),	-- Plans: Living Steel Gauntlets
-							i(90532),	-- Plans: Living Steel Weapon Chain
-							i(84197),	-- Plans: Masterwork Forgewire Axe
-							i(84198),	-- Plans: Masterwork Ghost Shard
-							i(84200),	-- Plans: Masterwork Ghost-Forged Blade
-							i(84217),	-- Plans: Masterwork Phantasmal Hammer
-							i(84218),	-- Plans: Masterwork Spiritblade Decimator
+							i(83791, {	-- Plans: Breastplate of Ancient Steel
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(83792, {	-- Plans: Gauntlets of Ancient Steel
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(90531, {	-- Plans: Ghost Iron Shield Spike
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(83787, {	-- Plans: Ghost Reaver's Breastplate
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(83788, {	-- Plans: Ghost Reaver's Gauntlets
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(84196, {	-- Plans: Living Steel Belt Buckle
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(83789, {	-- Plans: Living Steel Breastplate
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(83790, {	-- Plans: Living Steel Gauntlets
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(90532, {	-- Plans: Living Steel Weapon Chain
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(84197, {	-- Plans: Masterwork Forgewire Axe
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(84198, {	-- Plans: Masterwork Ghost Shard
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(84200, {	-- Plans: Masterwork Ghost-Forged Blade
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(84217, {	-- Plans: Masterwork Phantasmal Hammer
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
+							i(84218, {	-- Plans: Masterwork Spiritblade Decimator
+								["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
+							}),
 							i(89087),	-- Poisoncrafter's Kilt
-							i(85262),	-- Reins of the Amber Scorpion
+							i(85262, {	-- Reins of the Amber Scorpion
+								["cost"] = 100000000,	-- 10,000g
+							}),
 							i(89646),	-- Runoff Wristguards
 							i(89644),	-- Sudden Insight Bracers
 							i(89091),	-- Swarmkeeper's Leggings

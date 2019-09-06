@@ -9,6 +9,7 @@ _.Zones =
 			["description"] = "|cff66ccffThe Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.|r",
 			["lvl"] = 81,
 			["g"] = {
+			--	if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
 				n(-4, {	-- Achievements
 					ach(7287),	-- Champion of Chi-Ji (Cradle of Chi-Ji)
 					ach(7284, {	-- Is Another Man's Treasure
@@ -1824,10 +1825,9 @@ _.Zones =
 				}),
 				n(-2, {		-- Vendor
 					n(69059, {	-- Agent Malley <Operation: Shieldwall Quartermaster>
+						["coord"] = { 94.5, 29.2, 418 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(93231),	-- Grand Commendation of Operation: Shieldwall
-							i(93168),	-- Grand Armored Gryphon Mount
 							i(93347),	-- Arcane Badge of the Shieldwall
 							i(93258),	-- Arrowflight Medallion
 							i(93244),	-- Band of the Shieldwall
@@ -1839,6 +1839,10 @@ _.Zones =
 							i(93334),	-- Divide's Loyal Clasp
 							i(93350),	-- Durable Badge of the Shieldwall
 							i(93332),	-- Girdle of Crushing Strength
+							i(93168, {	-- Grand Armored Gryphon (MOUNT!)
+								["cost"] = 20000000,	-- 2,000g
+							}),
+							i(93231),	-- Grand Commendation of Operation: Shieldwall
 							i(93274),	-- Greatboots of Flashing Light
 							i(93260),	-- Heartwarmer Medallion
 							i(93261),	-- Helmbreaker Medallion
@@ -1864,56 +1868,69 @@ _.Zones =
 						},
 					}),
 					n(63721, {	-- Nat Pagle <The Anglers Quartermaster>
-						i(168416),	-- Angler's Water Striders
-						i(93225),	-- Grand Commendation of the Anglers
-						i(81354),	-- Reins of the Azure Water Strider Mount
-						i(85505),	-- Recipe: Krasarang Fritters
-						i(85502),	-- Recipe: Viseclaw Soup
-						i(89401),	-- Angler's Tabard
-						i(85500),	-- Angler's Fishing Raft Toy
-						i(107950, {	-- Bipsi's Bobbing Berg
-							["classes"] = { 8 },	-- Mage
-						}),
-						i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE
-						i(86596),	-- Nat's Fishing Chair Toy
-						i(88710),	-- Nat's Hat -- NOT MOGGABLE
-						i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
-						i(88535),	-- Sharpened Tuskarr Pole -- NOT MOGGABLE
-						i(85447),	-- Tiny Goldfish Pet
+						["coord"] = { 71.6, 40.0, 418 },
+						["g"] = {
+							i(85500, {	-- Angler's Fishing Raft (TOY!)
+								["cost"] = 8500000,	-- 850g
+							}),
+							i(89401),	-- Angler's Tabard
+							i(168416),	-- Angler's Water Striders
+							i(107950, {	-- Bipsi's Bobbing Berg
+								["classes"] = { 8 },	-- Mage
+								["cost"] = 10000000,	-- 1,000g
+							}),
+							i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE
+							i(93225),	-- Grand Commendation of the Anglers
+							i(86596),	-- Nat's Fishing Chair (TOY!)
+							i(88710),	-- Nat's Hat -- NOT MOGGABLE
+							i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
+							i(85505),	-- Recipe: Krasarang Fritters
+							i(85502),	-- Recipe: Viseclaw Soup
+							i(81354, {	-- Reins of the Azure Water Strider (MOUNT!)
+								["cost"] = 9500000,	-- 950g
+							}),
+							i(88535, {	-- Sharpened Tuskarr Pole -- NOT MOGGABLE
+								["cost"] = 12750000,	-- 1,275g
+							}),
+							i(85447),	-- Tiny Goldfish Pet
+						},
 					}),
 					n(67751, {	-- Ongrom Black Tooth <Collector of Commissions>
+						["coord"] = { 9.71, 51.0, 418 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(91838, {  -- Lion's Landing Commission
-								i(122211),	-- Music Roll: War March
-								i(92527, {	-- Rodent Crate
-									["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
-									["g"] = {
-										p(1128), 	-- Sumprush Rodent
-									},
-								}),
+							i(122211, {	-- Music Roll: War March
+								["cost"] = { { "i", 91838, 500 }, },	-- 500x Lion's Landing Commission
+							}),
+							i(92527, {	-- Rodent Crate
+								["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
+								["cost"] = { { "i", 91838, 2000 }, },	-- 2,000x Lion's Landing Commission
+								["g"] = {
+									p(1128), 	-- Sumprush Rodent
+								},
 							}),
 						},
 					}),
 					n(67881, {	-- Proveditor Grantley <Collector of Commissions>
+						["coord"] = { 94.4, 29.3, 418 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(91877, {	--  Domination Point Commission
-								i(122202),	-- Music Roll: High Seas
-								i(92532, {	-- Rodent Crate
-									["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
-									["g"] = {
-										p(1128), 	-- Sumprush Rodent
-									},
-								}),
+							i(122202, {	-- Music Roll: High Seas
+								["cost"] = { { "i", 91877, 500 }, },	-- 500x Domination Point Commission
+							}),
+							i(92532, {	-- Rodent Crate
+								["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
+								["cost"] = { { "i", 91877, 2000 }, },	-- 2,000x Domination Point Commission
+								["g"] = {
+									p(1128), 	-- Sumprush Rodent
+								},
 							}),
 						},
 					}),
 					n(69060, {	-- Tuskripper Grukna <Dominance Offensive Quartermaster>
+						["coord"] = { 9.71, 51.0, 418 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(93232),	-- Grand Commendation of the Dominance Offensive
-							i(93169),	-- Grand Armored Wyvern
 							i(93329),	-- Bambrick's Striking Strap
 							i(93271),	-- Beach-Born Sandals
 							i(93327),	-- Bloodbinder Links
@@ -1932,6 +1949,10 @@ _.Zones =
 							i(93343),	-- Dominator's Mending Badge
 							i(93252),	-- Dominator's Seal
 							i(93248),	-- Dominator's Signet
+							i(93169, {	-- Grand Armored Wyvern (MOUNT!)
+								["cost"] = 20000000,	-- 2,000g
+							}),
+							i(93232),	-- Grand Commendation of the Dominance Offensive
 							i(93267),	-- Greaves of Manifest Destiny
 							i(93263),	-- Groundbreaker Sabatons
 							i(93324),	-- Immovable Waistplate
