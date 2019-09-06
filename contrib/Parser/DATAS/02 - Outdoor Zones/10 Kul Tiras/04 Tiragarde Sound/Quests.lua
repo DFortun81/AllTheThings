@@ -774,12 +774,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127161 },	-- Alanna Holton
 				}),
-				q(51436, {	-- Parleyin' Wit Pirates
-					["sourceQuests"] = { 51435 },	-- Swashbuckling in Style
-					["coord"] = { 89.4, 53.4, 895 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 137675 },	-- Shadow Hunter Ty'jin
-				}),
 				q(49733, {	-- Patching Up the Rear
 					["sourceQuests"] = { 49715 },	-- Trouble at Greystone Keep
 					["coord"] = { 81.0, 42.4, 895 },
@@ -1019,12 +1013,6 @@ _.Zones =
 					["coord"] = { 76.7, 43.4, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 122671 },	-- Cagney
-				}),
-				q(51435, {	-- Swashbuckling in Style
-					["sourceQuests"] = { 51421 },	-- Shiver Me Timbers
-					["coord"] = { 89.4, 53.4, 895 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 137675 },	-- Shadow Hunter Ty'jin
 				}),
 				q(48354, {	-- Tainted Shipments
 					["sourceQuests"] = {

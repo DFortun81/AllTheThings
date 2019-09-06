@@ -1507,11 +1507,14 @@ _.Zones =
 				["isWeekly"] = true,
 				["description"] = "500 rep with your Nazjatar faction",
 			}),
-			q(56807, {	-- Real Friends Help Hide Bodies — NEEDS CONFIRMATION.  i got credit for this when i turned in the Rank 13 quest for Farseer Ori on Alliance
-				["sourceQuests"] = { 55500 },	-- Save a Friend
+			q(56807, {	-- Real Friends Help Hide Bodies
+				["providers"] = {
+					{ "n", 151309 },	-- Kelfin Scout (Vim Brineheart)
+					{ "n", 149906 },	-- Vim Brineheart
+				},
 				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 13.",
 				["races"] = HORDE_ONLY,
-				["provider"] = { "n", 151309 },	-- Vim Brineheart
+				["sourceQuest"] = 55500,	-- Save a Friend
 				["g"] = {
 					i(169922),	-- Vim's Gift of Appreciation
 				},

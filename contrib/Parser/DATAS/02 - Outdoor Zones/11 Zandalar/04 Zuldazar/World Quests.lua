@@ -212,11 +212,19 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(51178, {	-- Hundred Troll Holdout
+					q(51178, {	-- Hundred Troll Holdout (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
+							ach(13035),	-- By de Power of de Loa!
+						},
+					}),
+					q(51232, {	-- Hundred Troll Holdout (H)
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["g"] = {
 							ach(13035),	-- By de Power of de Loa!
 						},
 					}),

@@ -65,15 +65,14 @@ _.ExpansionFeatures =
 						i(163664),	-- Honorbound Artificer's Robes
 						i(163666),	-- Honorbound Artificer's Mantle
 						i(163667),	-- Honorbound Artificer's Skullcap
-						
 						-- Leather
 						i(163668),	-- Honorbound Outrider's Mantle
 						i(163669),	-- Honorbound Outrider's Faceguard
-						i(163671),	-- Honorbound Outrider's Vestments	
-						
+						i(163671),	-- Honorbound Outrider's Vestments
 						-- Mail
-						
-						
+						i(163665),	-- Honorbound Vanguard's Chainmail
+						i(163672),	-- Honorbound Vanguard's Helm
+						i(163670),	-- Honorbound Vanguard's Pauldrons
 						-- Plate
 						i(163675),	-- Honorbound Centurion's Breastplate
 						i(163674),	-- Honorbound Centurion's Helmet
@@ -234,28 +233,99 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 					}),
-					-- Missing Quests !!
+					q(51526, {	-- The Warlord's Call
+						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 862 },
+						["sourceQuest"] = 51802,	-- Foothold: Stormsong Valley
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(51532, {	-- Storming In
+						["provider"] = { "n", 138365 },	-- High Warlord Cromush
+						["coord"] = { 51.1, 21.1, 942 },
+						["sourceQuest"] = 51526,	-- The Warlord's Call
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51643, {	-- A Wall of Iron
+						["provider"] = { "n", 138365 },	-- High Warlord Cromush
+						["coord"] = { 51.1, 21.1, 942 },
+						["sourceQuest"] = 51532,	-- Storming In
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51536, {	-- On the Hunt
+						["provider"] = { "n", 138365 },	-- High Warlord Cromush
+						["coord"] = { 51.1, 21.1, 942 },
+						["sourceQuest"] = 51643,	-- A Wall of Iron
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51587, {	-- Onward!
+						["provider"] = { "n", 138131 },	-- Rexxar
+						["coord"] = { 50.4, 26.2, 942 },
+						["sourceQuest"] = 51536,	-- On the Hunt
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51674, {	-- Douse the Flames
+						["provider"] = { "n", 138677 },	-- Rexxar
+						["coord"] = { 51.7, 29.9, 942 },
+						["sourceQuest"] = 51587,	-- Onward!
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51675, {	-- Hunt Them Down
+						["provider"] = { "n", 138688 },	-- Centurion Kaga Warmstone
+						["coord"] = { 51.7, 29.8, 942 },
+						["sourceQuest"] = 51587,	-- Onward!
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51691, {	-- Almost Worth Saving
+						["provider"] = { "n", 138365 },	-- Centurion Kaga Warmstone
+						["coord"] = { 51.7, 29.8, 942 },
+						["sourceQuest"] = 51587,	-- Onward!
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(51696, {	-- Reclaiming What's Ours
+						["provider"] = { "n", 138867 },	-- Rexxar
+						["coord"] = { 49.3, 34.3, 942 },
+						["sourceQuests"] = {
+							51674,	-- Douse the Flames
+							51675,	-- Hunt Them Down
+							51691,	-- Almost Worth Saving
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 942 },	-- Stormsong Valley
+					}),
 					q(51753, {	-- Champion: Rexxar
 						["provider"] = { "n", 138876 },	-- Rexxar
-						["coord"] = { 52.0, 33.6, 942 },
+						["coord"] = { 52.1, 33.7, 942 },
 						["sourceQuest"] = 51696,	-- Reclaiming What's Ours
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
+						["maps"] = { 942 },	-- Stormsong Valley
 						["g"] = {
 							follower(1069),	-- Rexxar
 						},
 					}),
 					q(51986, {	-- Return to Zuldazar (Stormsong Valley Foothold)
 						["provider"] = { "n", 138876 },	-- Rexxar
-						["coord"] = { 52.0, 33.6, 942 },
+						["coord"] = { 52.1, 33.7, 942 },
 						["sourceQuest"] = 51753,	-- Champion: Rexxar
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
-						["g"] = {
-							i(163672),	-- Honorbound Vanguard's Helm
-							i(163670),	-- Honorbound Vanguard's Pauldrons
-							i(163665),	-- Honorbound Vanguard's Chainmail
-						},
+						["maps"] = { 942 },	-- Stormsong Valley
 					}),
 					-- Tiragarde Sound Foothold
 					q(51800, {	-- Foothold: Tiragarde Sound
@@ -270,11 +340,84 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 51800,	-- Foothold: Tiragarde Sound
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
 					}),
-					-- Missing Quests !!
+					q(51435, {	-- Swashbuckling in Style
+						["provider"] = { "n", 137675 },	-- Shadow Hunter Ty'jin
+						["coord"] = { 89.3, 53.4, 895 },
+						["sourceQuest"] = 51421,	-- Shiver Me Timbers
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51436, {	-- Parleyin' Wit Pirates
+						["provider"] = { "n", 137675 },	-- Shadow Hunter Ty'jin
+						["coord"] = { 89.3, 53.4, 895 },
+						["sourceQuest"] = 51435,	-- Swashbuckling in Style
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51437, {	-- Spike the Punch
+						["provider"] = { "n", 137727 },	-- First Mate Owings
+						["coord"] = { 87.3, 50.0, 895 },
+						["sourceQuest"] = 51436,	-- Parleyin' Wit Pirates
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51439, {	-- Cannonball Collection
+						["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
+						["coord"] = { 87.3, 50.0, 895 },
+						["sourceQuest"] = 51436,	-- Parleyin' Wit Pirates
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51440, {	-- A Change in Direction
+						["provider"] = { "n", 137727 },	-- First Mate Owings
+						["coord"] = { 87.3, 50.0, 895 },
+						["sourceQuests"] = {
+							51437,	-- Spike the Punch
+							51439,	-- Cannonball Collection
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51441, {	-- Thar She Blows!
+						["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
+						["coord"] = { 87.3, 50.0, 895 },
+						["sourceQuests"] = {
+							51437,	-- Spike the Punch
+							51439,	-- Cannonball Collection
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51442, {	-- I'm the Captain Now
+						["provider"] = { "n", 137727 },	-- First Mate Owings
+						["coord"] = { 87.3, 50.0, 895 },
+						["sourceQuests"] = {
+							51440,	-- A Change in Direction
+							51441,	-- Thar She Blows!
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
+					q(51438, {	-- Marking Our Territory
+						["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
+						["coord"] = { 87.3, 50.0, 895 },
+						["sourceQuest"] = 51442,	-- I'm the Captain Now
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["maps"] = { 895 },	-- Tiragarde Sound
+					}),
 					q(51975, {	-- Champion: Shadow Hunter Ty'jin
 						["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
-						["coord"] = { 87.2, 50.0, 895 },
+						["coord"] = { 87.3, 50.0, 895 },
 						["sourceQuest"] = 51438,	-- Marking Our Territory
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
@@ -285,7 +428,7 @@ _.ExpansionFeatures =
 					}),
 					q(51984, {	-- Return to Zuldazar (Tiragarde Foothold)
 						["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
-						["coord"] = { 87.2, 50.0, 895 },
+						["coord"] = { 87.3, 50.0, 895 },
 						["sourceQuest"] = 51975,	-- Champion: Shadow Hunter Ty'jin
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
@@ -1052,7 +1195,7 @@ _.ExpansionFeatures =
 						["maps"] = { 895 },	-- Tiragarde Sound
 					}),
 					q(54022, {	-- Mekkatorque's Battle Plans
-						["itemID"] = 164987,	-- Alliance Battle Plans
+						["provider"] = { "i", 164987 },	-- Alliance Battle Plans
 						["sourceQuest"] = 54007,	-- Insurance Policy
 						["minReputation"] = { 2157, REVERED+7000 },
 						["races"] = HORDE_ONLY,
