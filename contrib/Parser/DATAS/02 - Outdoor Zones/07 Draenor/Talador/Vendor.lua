@@ -5,21 +5,23 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
-			n(-2, {	-- Vendors
+			n(-2, {		-- Vendors
 				n(84212, {	-- Kazbala
 					["description"] = "This vendor is only available until you reach level 100. Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.|r",
 					["coord"] = { 45.2, 38.8, 535 },
 					["g"] = {
-						i(54436),	-- Blue Clockwork Rocket Bot Pet
-						i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
-						i(104324),	-- Foot Ball Toy
-						i(137663),	-- Small Foam Sword Toy
-						i(104323),	-- The Pigskin Toy
-						i(54438),	-- Tiny Blue Ragdoll Toy
-						i(54437),	-- Tiny Green Ragdoll Toy
-						i(44606),	-- Toy Train Set Toy
-						i(95621),	-- Warbot Ignition Key Pet
-						i(45057),	-- Wind-Up Train Wreck Toy
+						i(54436),	-- Blue Clockwork Rocket Bot (PET!)
+						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
+						i(104324),	-- Foot Ball (TOY!)
+						i(137663),	-- Soft Foam Sword (TOY!)
+						i(104323),	-- The Pigskin (TOY!)
+						i(54438),	-- Tiny Blue Ragdoll (TOY!)
+						i(54437),	-- Tiny Green Ragdoll (TOY!)
+						i(44606),	-- Toy Train Set (TOY!)
+						i(95621, {	-- Warbot Ignition Key (PET!)
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(45057),	-- Wind-Up Train Wreck (TOY!)
 					},
 				}),
 				n(84216, {	-- Talgaiir the Ironrender
@@ -72,7 +74,9 @@ _.Zones =
 					["coord"] = { 71.6, 30.2, 535 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(23799),	-- Schematic: Adamantite Rifle
+						i(23799, {	-- Schematic: Adamantite Rifle
+							["isLimited"] = true,
+						}),
 						i(23807),	-- Schematic: Adamantite Scope
 						i(23803),	-- Schematic: Cogspinner Goggles
 						i(23816),	-- Schematic: Fel Iron Toolbox

@@ -5,46 +5,92 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
-			n(-2, {	-- Vendors
+			n(-2, {		-- Vendors
 				n(-390, {	-- Smuggler's Den
 					n(82459, {	-- Honest Jim
 						["description"] = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(113096),	-- Bloodmane Charm
-							i(116915, {	-- Inactive Apexis Guardian
-								follower(168),  -- Ziri'ak
+							i(113096, {	-- Bloodmane Charm (TOY!)
+								["isLimited"] = true,
+								["cost"] = 5000000,	-- 500g
 							}),
-							i(117415),	-- Smuggled Tonic
-							i(113273),	-- Orb of the Soulstealer
-							i(113274),	-- Plume of Celerity
-							i(113275),	-- Ravenlord's Talon
-							i(113276),	-- Pridehunter's Fang
-							i(113277),	-- Ogreblood Potion
-							i(113278),	-- Scavenger's Eyepiece
-							i(113290),	-- Spirevine Fruit
-							i(113094),	-- Gronnskin Bag
 							i(79249),	-- Fel-Charred Tome
+							i(113094, {	-- Gronnskin Bag
+								["isLimited"] = true,
+								["cost"] = 22000000,	-- 2,200g
+							}),
+							i(116915, {	-- Inactive Apexis Guardian
+								["isLimited"] = true,
+								["g"] = {
+									follower(168),  -- Ziri'ak
+								},
+							}),
+							i(113277, {	-- Ogreblood Potion
+								["isLimited"] = true,
+							}),
+							i(113273, {	-- Orb of the Soulstealer
+								["isLimited"] = true,
+							}),
+							i(113274, {	-- Plume of Celerity
+								["isLimited"] = true,
+							}),
+							i(113276, {	-- Pridehunter's Fang
+								["isLimited"] = true,
+							}),
+							i(113275, {	-- Ravenlord's Talon
+								["isLimited"] = true,
+							}),
+							i(113278, {	-- Scavenger's Eyepiece
+								["isLimited"] = true,
+							}),
+							i(117415, {	-- Smuggled Tonic
+								["isLimited"] = true,
+							}),
+							i(113290),	-- Spirevine Fruit
 						},
 					}),
 					n(84243, {	-- Linny "The Skinny" Leadpockets
 						["description"] = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(113096),	-- Bloodmane Charm
-							i(116915, {	-- Inactive Apexis Guardian
-								follower(168),  -- Ziri'ak
+							i(113096, {	-- Bloodmane Charm (TOY!)
+								["isLimited"] = true,
+								["cost"] = 5000000,	-- 500g
 							}),
-							i(117415),	-- Smuggled Tonic
-							i(113273),	-- Orb of the Soulstealer
-							i(113274),	-- Plume of Celerity
-							i(113275),	-- Ravenlord's Talon
-							i(113276),	-- Pridehunter's Fang
-							i(113277),	-- Ogreblood Potion
-							i(113278),	-- Scavenger's Eyepiece
-							i(113290),	-- Spirevine Fruit
-							i(113094),	-- Gronnskin Bag
 							i(79249),	-- Fel-Charred Tome
+							i(113094, {	-- Gronnskin Bag
+								["isLimited"] = true,
+								["cost"] = 22000000,	-- 2,200g
+							}),
+							i(116915, {	-- Inactive Apexis Guardian
+								["isLimited"] = true,
+								["g"] = {
+									follower(168),  -- Ziri'ak
+								},
+							}),
+							i(113277, {	-- Ogreblood Potion
+								["isLimited"] = true,
+							}),
+							i(113273, {	-- Orb of the Soulstealer
+								["isLimited"] = true,
+							}),
+							i(113274, {	-- Plume of Celerity
+								["isLimited"] = true,
+							}),
+							i(113276, {	-- Pridehunter's Fang
+								["isLimited"] = true,
+							}),
+							i(113275, {	-- Ravenlord's Talon
+								["isLimited"] = true,
+							}),
+							i(113278, {	-- Scavenger's Eyepiece
+								["isLimited"] = true,
+							}),
+							i(117415, {	-- Smuggled Tonic
+								["isLimited"] = true,
+							}),
+							i(113290),	-- Spirevine Fruit
 						},
 					}),
 				}),
@@ -60,7 +106,9 @@ _.Zones =
 					["coord"] = { 46.4, 45.2, 542 },
 					["g"] = {
 						i(120051),	-- Kaliri Hatchling
-						i(120050),	-- Veilwatcher Hatchling
+						i(120050, {	-- Veilwatcher Hatchling
+							["cost"] = 10000000,	-- 1,000g
+						}),
 					},
 				}),
 			}),

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(534, {	-- Tanaan Jungle
-			n(-2, {	-- Vendors
+			n(-2, {		-- Vendors
 				n(95424, {	-- Dawn-Seeker Krisek <Order of the Awakened>
 					["coords"] = {
 						{ 60.4, 46.6, 534 },	-- Horde accessible

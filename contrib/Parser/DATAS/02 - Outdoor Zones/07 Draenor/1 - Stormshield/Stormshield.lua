@@ -486,28 +486,67 @@ _.Zones =
 							["description"] = "You can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
 							["coord"] = { 52.0, 63.6, 622 },
 							["g"] = {
-								i(136854),	-- Arsenal: Draenor Challenger's Armaments
-								i(118401),	-- Arcana Shard Spire
-								i(118396),	-- Bloodmaw Gargoyle
-								i(118395),	-- Claws of Creation
-								i(118409),	-- Cloudsong Glaive
-								i(118411),	-- Crystal-Shot Longrifle
-								i(118403),	-- Dimension-Ripper's Staff
-								i(118408),	-- Elemental Crescent
-								i(118397),	-- Equus
-								i(118407),	-- Face of the Guardian
-								i(118413),	-- Flamegrinder
-								i(118406),	-- Furnace of the Great Machine
-								i(118402),	-- Greatstaff of Infinite Knowledge
-								i(118412),	-- Greatsword of the Inferno
-								i(118404),	-- Living Longbow
-								i(118405),	-- Shifting Felblade
-								i(118398),	-- Soul Eater
-								i(118399),	-- Suneater
-								i(118410),	-- Tesseract Timepiece
+								i(118401, {	-- Arcana Shard Spire
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(136854, {	-- Arsenal: Draenor Challenger's Armaments
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(118396, {	-- Bloodmaw Gargoyle
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118395, {	-- Claws of Creation
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118409, {	-- Cloudsong Glaive
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118411, {	-- Crystal-Shot Longrifle
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118403, {	-- Dimension-Ripper's Staff
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118408, {	-- Elemental Crescent
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118397, {	-- Equus
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118407, {	-- Face of the Guardian
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118413, {	-- Flamegrinder
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118406, {	-- Furnace of the Great Machine
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118402, {	-- Greatstaff of Infinite Knowledge
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118412, {	-- Greatsword of the Inferno
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118404, {	-- Living Longbow
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118405, {	-- Shifting Felblade
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118398, {	-- Soul Eater
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118399, {	-- Sunblade
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118410, {	-- Tesseract Timepiece
+									["cost"] = 10000000,	-- 1,000g
+								}),
 								un(2, i(119032, {	-- Rusted Challenger's Strongbox
 									["description"] = "This box was from the WoD Challenge Mode Dailies.",
 									["g"] = {
+										un(2, i(118996)),	-- Blackfire Amulet
 										un(2, i(118997)),	-- Blackfire Cape
 										un(2, i(118998)),	-- Blackfire Crystal
 										un(2, i(118999)),	-- Blackfire Ring
@@ -660,192 +699,467 @@ _.Zones =
 						n(128756, {	-- Crafticus Mindbender
 							["coord"] = { 54.8, 16.8, 622 },
 							["g"] = {
-								i(137642, {	-- Mark of Honor
-									i(116776),	-- Pale Thorngrazer
-								}),
 								i(114126),	-- Disposable Pocket Flying Machine
+								i(116776, {	-- Pale Thorngrazer
+									["cost"] = {
+										{ "g", 50000000 },		-- 5,000g
+										{ "i", 137642, 100 },	-- 100x Mark of Honor
+									},
+								}),
 								i(115517),	-- Wrynn's Vanguard Tabard
 							},
 						}),
 						n(92501, {	-- Dawn-Seeker Kasrek <Apexis Belt Trader>
 							["coord"] = { 51.2, 61.8, 622 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									i(119821, {	-- Contact: Dawnseeker Rukaryx
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 50000000 },	-- 5,000g
+									},
+									["g"] = {
 										follower(462),	-- Dawnseeker Rukaryx
-									}),
-									i(116768),	-- Mosshide Riverwallow
+									},
 								}),
-								i(115380),	-- Crystal-Leaf Chain
-								i(115381),	-- Crystal-Plated Greatbelt
-								i(115379),	-- Crystalhide Belt
-								i(122322),	-- Ethereal Crystal-Leaf Chain
-								i(122323),	-- Ethereal Crystal-Plated Greatbelt
-								i(122321),	-- Ethereal Crystalhide Belt
-								i(122320),	-- Ethereal Windcrystal Cord
-								i(116937),	-- Exceptional Crystal-Leaf Chain
-								i(116938),	-- Exceptional Crystal-Plated Greatbelt
-								i(116936),	-- Exceptional Crystalhide Belt
-								i(116935),	-- Exceptional Windcrystal Cord
-								i(116941),	-- Flawless Crystal-Leaf Chain
-								i(116942),	-- Flawless Crystal-Plated Greatbelt
-								i(116940),	-- Flawless Crystalhide Belt
-								i(116939),	-- Flawless Windcrystal Cord
-								i(115378),	-- Windcrystal Cord
+								i(115380, {	-- Crystal-Leaf Chain
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(115381, {	-- Crystal-Plated Greatbelt
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(115379, {	-- Crystalhide Belt
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(122322, {	-- Ethereal Crystal-Leaf Chain
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122323, {	-- Ethereal Crystal-Plated Greatbelt
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(116936, {	-- Exceptional Crystalhide Belt
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122320, {	-- Ethereal Windcrystal Cord
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(116937, {	-- Exceptional Crystal-Leaf Chain
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116938, {	-- Exceptional Crystal-Plated Greatbelt
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(122321, {	-- Ethereal Crystalhide Belt
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116935, {	-- Exceptional Windcrystal Cord
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116941, {	-- Flawless Crystal-Leaf Chain
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116942, {	-- Flawless Crystal-Plated Greatbelt
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116940, {	-- Flawless Crystalhide Belt
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116939, {	-- Flawless Windcrystal Cord
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116768, {	-- Mosshide Riverwallow
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 500000000 },	-- 50,000g
+									},
+								}),
+								i(115378, {	-- Windcrystal Cord
+									["cost"] = 10000000,	-- 1,000g
+								}),
 							},
 						}),
 						n(86391, {	-- Dawn-Seeker Krek <Apexis Leggings Trader>
 							["coord"] = { 50.7, 61.5, 622 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									i(119821, {	-- Contact: Dawnseeker Rukaryx
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 50000000 },	-- 5,000g
+									},
+									["g"] = {
 										follower(462),	-- Dawnseeker Rukaryx
-									}),
-									i(116768),	-- Mosshide Riverwallow
+									},
 								}),
-								i(115376),	-- Crystal-Leaf Legguards
-								i(115377),	-- Crystal-Plated Legplates
-								i(115375),	-- Crystalhide Legguards
-								i(122318),	-- Ethereal Crystal-Leaf Legguards
-								i(122319),	-- Ethereal Crystal-Plated Legplates
-								i(122317),	-- Ethereal Crystalhide Legguards
-								i(122316),	-- Ethereal Windcrystal Leggings
-								i(116929),	-- Exceptional Crystal-Leaf Legguards
-								i(116930),	-- Exceptional Crystal-Plated Legplates
-								i(116928),	-- Exceptional Crystalhide Legguards
-								i(116927),	-- Exceptional Windcrystal Leggings
-								i(116933),	-- Flawless Crystal-Leaf Legguards
-								i(116934),	-- Flawless Crystal-Plated Legplates
-								i(116932),	-- Flawless Crystalhide Legguards
-								i(116931),	-- Flawless Windcrystal Leggings
-								i(115374),	-- Windcrystal Leggings
+								i(115376, {	-- Crystal-Leaf Legguards
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(115377, {	-- Crystal-Plated Legplates
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(115375, {	-- Crystalhide Legguards
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(122318, {	-- Ethereal Crystal-Leaf Legguards
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122319, {	-- Ethereal Crystal-Plated Legplates
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122317, {	-- Ethereal Crystalhide Legguards
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122316, {	-- Ethereal Windcrystal Leggings
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(116929, {	-- Exceptional Crystal-Leaf Legguards
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116930, {	-- Exceptional Crystal-Plated Legplates
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116928, {	-- Exceptional Crystalhide Legguards
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116927, {	-- Exceptional Windcrystal Leggings
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116933, {	-- Flawless Crystal-Leaf Legguards
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116934, {	-- Flawless Crystal-Plated Legplates
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116932, {	-- Flawless Crystalhide Legguards
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116931, {	-- Flawless Windcrystal Leggings
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116768, {	-- Mosshide Riverwallow
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 500000000 },	-- 50,000g
+									},
+								}),
+								i(115374, {	-- Windcrystal Leggings
+									["cost"] = 10000000,	-- 1,000g
+								}),
 							},
 						}),
 						n(86387, {	-- Dawn-Seeker Rilak <Apexis Helm Trader>
 							["coord"] = { 50.0, 61.2, 622 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									i(119821, {	-- Contact: Dawnseeker Rukaryx
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 50000000 },	-- 5,000g
+									},
+									["g"] = {
 										follower(462),	-- Dawnseeker Rukaryx
-									}),
-									i(116768),	-- Mosshide Riverwallow
+									},
 								}),
-								i(116955),	-- Crystal-Leaf Helm
-								i(116956),	-- Crystal-Plated Greathelm
-								i(116954),	-- Crystalhide Cowl
-								i(122310),	-- Ethereal Crystal-Leaf Helm
-								i(122311),	-- Ethereal Crystal-Plated Greathelm
-								i(122309),	-- Ethereal Crystalhide Cowl
-								i(122308),	-- Ethereal Windcrystal Hood
-								i(116959),	-- Exceptional Crystal-Leaf Helm
-								i(116960),	-- Exceptional Crystal-Plated Greathelm
-								i(116958),	-- Exceptional Crystalhide Cowl
-								i(116957),	-- Exceptional Windcrystal Hood
-								i(115398),	-- Flawless Crystal-Leaf Helm
-								i(115399),	-- Flawless Crystal-Plated Greathelm
-								i(115397),	-- Flawless Crystalhide Cowl
-								i(115396),	-- Flawless Windcrystal Hood
-								i(116953),	-- Windcrystal Hood
+								i(116955, {	-- Crystal-Leaf Helm
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(116956, {	-- Crystal-Plated Greathelm
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(116954, {	-- Crystalhide Cowl
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(122310, {	-- Ethereal Crystal-Leaf Helm
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122311, {	-- Ethereal Crystal-Plated Greathelm
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122309, {	-- Ethereal Crystalhide Cowl
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122308, {	-- Ethereal Windcrystal Hood
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(116959, {	-- Exceptional Crystal-Leaf Helm
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116960, {	-- Exceptional Crystal-Plated Greathelm
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116958, {	-- Exceptional Crystalhide Cowl
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116957, {	-- Exceptional Windcrystal Hood
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(115398, {	-- Flawless Crystal-Leaf Helm
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(115399, {	-- Flawless Crystal-Plated Greathelm
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(115397, {	-- Flawless Crystalhide Cowl
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(115396, {	-- Flawless Windcrystal Hood
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116768, {	-- Mosshide Riverwallow
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 500000000 },	-- 50,000g
+									},
+								}),
+								i(116953, {	-- Windcrystal Hood
+									["cost"] = 10000000,	-- 1,000g
+								}),
 							},
 						}),
 						n(91321, {	-- Dawn-Seeker Skelak <Apexis Bracer Trader>
 							["coord"] = { 50.0, 61.6, 622 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									i(119821, {	-- Contact: Dawnseeker Rukaryx
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 50000000 },	-- 5,000g
+									},
+									["g"] = {
 										follower(462),	-- Dawnseeker Rukaryx
-									}),
-									i(116768),	-- Mosshide Riverwallow
+									},
 								}),
-								i(116967),	-- Crystal-Leaf Bracers
-								i(116968),	-- Crystal-Plated Bracers
-								i(116966),	-- Crystalhide Bracers
-								i(122314),	-- Ethereal Crystal-Leaf Bracers
-								i(122315),	-- Ethereal Crystal-Plated Bracers
-								i(122313),	-- Ethereal Crystalhide Bracers
-								i(116963),	-- Exceptional Crystal-Leaf Bracers
-								i(116964),	-- Exceptional Crystal-Plated Bracers
-								i(116962),	-- Exceptional Crystalhide Bracers
-								i(116961),	-- Exceptional Windcrystal Bracers
-								i(115401),	-- Flawless Crystalhide Bracers
-								i(115402),	-- Flawless Crystal-Leaf Bracers
-								i(115403),	-- Flawless Crystal-Plated Bracers
-								i(115400),	-- Flawless Windcrystal Bracers
-								i(122312),	-- Ethereal Windcrystal Bracers
-								i(116965),	-- Windcrystal Bracers
+								i(116967, {	-- Crystal-Leaf Bracers
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(116968, {	-- Crystal-Plated Bracers
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(116966, {	-- Crystalhide Bracers
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(122314, {	-- Ethereal Crystal-Leaf Bracers
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122315, {	-- Ethereal Crystal-Plated Bracers
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122313, {	-- Ethereal Crystalhide Bracers
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122312, {	-- Ethereal Windcrystal Bracers
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(116963, {	-- Exceptional Crystal-Leaf Bracers
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116964, {	-- Exceptional Crystal-Plated Bracers
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116962, {	-- Exceptional Crystalhide Bracers
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116961, {	-- Exceptional Windcrystal Bracers
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(115401, {	-- Flawless Crystalhide Bracers
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(115402, {	-- Flawless Crystal-Leaf Bracers
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(115403, {	-- Flawless Crystal-Plated Bracers
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(115400, {	-- Flawless Windcrystal Bracers
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116768, {	-- Mosshide Riverwallow
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 500000000 },	-- 50,000g
+									},
+								}),
+								i(116965, {	-- Windcrystal Bracers
+									["cost"] = 10000000,	-- 1,000g
+								}),
 							},
 						}),
 						n(86390, {	-- Dawn-Seeker Vallar <Apexis Glove Trader>
 							["coord"] = { 48.5, 62.3, 622 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									i(119821, {	-- Contact: Dawnseeker Rukaryx
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 50000000 },	-- 5,000g
+									},
+									["g"] = {
 										follower(462),	-- Dawnseeker Rukaryx
-									}),
-									i(116768),	-- Mosshide Riverwallow
+									},
 								}),
-								i(116945),	-- Crystal-Leaf Gloves
-								i(116946),	-- Crystal-Plated Gauntlets
-								i(116944),	-- Crystalhide Grips
-								i(122326),	-- Ethereal Crystal-Leaf Gloves
-								i(122327),	-- Ethereal Crystal-Plated Gauntlets
-								i(122325),	-- Ethereal Crystalhide Grips
-								i(122324),	-- Ethereal Windcrystal Wraps
-								i(115389),	-- Exceptional Crystal-Leaf Gloves
-								i(115390),	-- Exceptional Crystal-Plated Gauntlets
-								i(115388),	-- Exceptional Crystalhide Grips
-								i(115387),	-- Exceptional Windcrystal Wraps
-								i(116949),	-- Flawless Crystal-Leaf Gloves
-								i(116950),	-- Flawless Crystal-Plated Gauntlets
-								i(116948),	-- Flawless Crystalhide Grips
-								i(116947),	-- Flawless Windcrystal Wraps
-								i(116943),	-- Windcrystal Wraps
+								i(116945, {	-- Crystal-Leaf Gloves
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(116946, {	-- Crystal-Plated Gauntlets
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(116944, {	-- Crystalhide Grips
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(122326, {	-- Ethereal Crystal-Leaf Gloves
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122327, {	-- Ethereal Crystal-Plated Gauntlets
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122325, {	-- Ethereal Crystalhide Grips
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122324, {	-- Ethereal Windcrystal Wraps
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(115389, {	-- Exceptional Crystal-Leaf Gloves
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(115390, {	-- Exceptional Crystal-Plated Gauntlets
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(115388, {	-- Exceptional Crystalhide Grips
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(115387, {	-- Exceptional Windcrystal Wraps
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116949, {	-- Flawless Crystal-Leaf Gloves
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116950, {	-- Flawless Crystal-Plated Gauntlets
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116948, {	-- Flawless Crystalhide Grips
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116947, {	-- Flawless Windcrystal Wraps
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116768, {	-- Mosshide Riverwallow
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 500000000 },	-- 50,000g
+									},
+								}),
+								i(116943, {	-- Windcrystal Wraps
+									["cost"] = 10000000,	-- 1,000g
+								}),
 							},
 						}),
 						n(86389, {	-- Dawn-Seeker Verroak <Apexis Cloak Trader>
 							["coord"] = { 49.4, 61.3, 622 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									i(119821, {	-- Contact: Dawnseeker Rukaryx
+								i(119821, {	-- Contact: Dawnseeker Rukaryx
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 50000000 },	-- 5,000g
+									},
+									["g"] = {
 										follower(462),	-- Dawnseeker Rukaryx
-									}),
-									i(116768),	-- Mosshide Riverwallow
+									},
 								}),
-								i(116976),	-- Crystal Reinforced Doomcloak
-								i(116973),	-- Crystal-Edged Bladecloak
-								i(116974),	-- Crystalclasp Stormcloak
-								i(122332),	-- Ethereal Crystal Reinforced Doomcloak
-								i(122329),	-- Ethereal Crystal-Edged Bladecloak
-								i(122330),	-- Ethereal Crystalclasp Stormcloak
-								i(122331),	-- Ethereal Refractory Heartcloak
-								i(122328),	-- Ethereal Shard-Covered Dreadcloak
-								i(115394),	-- Exceptional Crystal Reinforced Doomcloak
-								i(115391),	-- Exceptional Crystal-Edged Bladecloak
-								i(115392),	-- Exceptional Crystalclasp Stormcloak
-								i(115393),	-- Exceptional Refractory Heartcloak
-								i(115395),	-- Exceptional Shard-Covered Dreadcloak
-								i(116972),	-- Flawless Crystal Reinforced Doomcloak
-								i(116969),	-- Flawless Crystal-Edged Bladecloak
-								i(116970),	-- Flawless Crystalclasp Stormcloak
-								i(116971),	-- Flawless Refractory Heartcloak
-								i(116951),	-- Flawless Shard-Covered Dreadcloak
-								i(116975),	-- Refractory Heartcloak
-								i(116952),	-- Shard-Covered Dreadcloak
+								i(116976, {	-- Crystal Reinforced Doomcloak
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(116973, {	-- Crystal-Edged Bladecloak
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(116974, {	-- Crystalclasp Stormcloak
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(122332, {	-- Ethereal Crystal Reinforced Doomcloak
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122329, {	-- Ethereal Crystal-Edged Bladecloak
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122330, {	-- Ethereal Crystalclasp Stormcloak
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122331, {	-- Ethereal Refractory Heartcloak
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(122328, {	-- Ethereal Shard-Covered Dreadcloak
+									["cost"] = 200000000,	-- 20,000g
+								}),
+								i(115394, {	-- Exceptional Crystal Reinforced Doomcloak
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(115391, {	-- Exceptional Crystal-Edged Bladecloak
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(115392, {	-- Exceptional Crystalclasp Stormcloak
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(115393, {	-- Exceptional Refractory Heartcloak
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(115395, {	-- Exceptional Shard-Covered Dreadcloak
+									["cost"] = 50000000,	-- 5,000g
+								}),
+								i(116972, {	-- Flawless Crystal Reinforced Doomcloak
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116969, {	-- Flawless Crystal-Edged Bladecloak
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116970, {	-- Flawless Crystalclasp Stormcloak
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116971, {	-- Flawless Refractory Heartcloak
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116951, {	-- Flawless Shard-Covered Dreadcloak
+									["cost"] = 100000000,	-- 10,000g
+								}),
+								i(116768, {	-- Mosshide Riverwallow
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 500000000 },	-- 50,000g
+									},
+								}),
+								i(116975, {	-- Refractory Heartcloak
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(116952, {	-- Shard-Covered Dreadcloak
+									["cost"] = 10000000,	-- 1,000g
+								}),
 							},
 						}),
 						n(88482, {	-- Gazrix Gearlock <Steamwheedle "Preservation" Society Quartermaster>
 							["coord"] = { 43.1, 77.7, 622 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									i(119149),	-- Captured Forest Sproutling
-									i(116672),	-- Domesticated Razorback
-									i(119148),	-- Indentured Albino River Calf
+								i(119149, {	-- Captured Forest Sproutling
+									["cost"] = {
+										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+										{ "g", 10000000 },	-- 1,000g
+									},
 								}),
 								i(119165, {	-- Contract: Professor Felblast
-									follower(460),	-- Professor Felblast
+									["cost"] = 50000000,	-- 5,000g
+									["g"] = {
+										follower(460),	-- Professor Felblast
+									},
+								}),
+								i(116672, {	-- Domesticated Razorback (MOUNT!)
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 50000000 },	-- 5,000g
+									},
 								}),
 								i(110426),	-- Goblin Hot Potato
-								i(118683),	-- Portable Goon Squad
+								i(119148, {	-- Indentured Albino River Calf (PET!)
+									["cost"] = {
+										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+										{ "g", 10000000 },	-- 1,000g
+									},
+								}),
+								i(118683, {	-- Portable Goon Squad
+									["cost"] = 5000000,	-- 500g
+								}),
 								i(119137),	-- Steamwheedle "Preservation" Society Tabard
 								i(118667),	-- Steamwheedle Elixir
 							},
@@ -1369,27 +1683,67 @@ _.Zones =
 						}),
 						n(85849, {	-- Kinkade Jakobs <Blueprints Trader>
 							["coord"] = { 29.7, 52.9, 622 },
-							["g"]	= {
-								i(111929),	-- Alchemy Lab, Level 2
-								i(111968),	-- Barn, Level 2
-								i(111970),	-- Barracks, Level 2
-								i(111966),	-- Dwarven Bunker, Level 2
-								i(111972),	-- Enchanter's Study, Level 2
-								i(109256),	-- Engineering Works, Level 2
-								i(111974),	-- Gem Boutique, Level 2
-								i(111980),	-- Gladiator's Sanctum, Level 2
-								i(111984),	-- Gnomish Gearworks, Level 2
-								i(109254),	-- Lumber Mill, Level 2
-								i(107694),	-- Lunarfall Inn, Level 2
-								i(109062),	-- Mage Tower, Level 2
-								i(111976),	-- Salvage Yard, Level 2
-								i(111978),	-- Scribe's Quarters, Level 2
-								i(112002),	-- Stables, Level 2
-								i(111982),	-- Storehouse, Level 2
-								i(111992),	-- Tailoring Emporium, Level 2
-								i(111990),	-- The Forge, Level 2
-								i(111988),	-- The Tannery, Level 2
-								i(111986),	-- Trading Post, Level 2
+							["g"] = {
+								i(111929, {	-- Alchemy Lab, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111968, {	-- Barn, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111970, {	-- Barracks, Level 2
+									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+								}),
+								i(111966, {	-- Dwarven Bunker, Level 2
+									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+								}),
+								i(111972, {	-- Enchanter's Study, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(109256, {	-- Engineering Works, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111974, {	-- Gem Boutique, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111980, {	-- Gladiator's Sanctum, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111984, {	-- Gnomish Gearworks, Level 2
+									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+								}),
+								i(109254, {	-- Lumber Mill, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(107694, {	-- Lunarfall Inn, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(109062, {	-- Mage Tower, Level 2
+									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+								}),
+								i(111976, {	-- Salvage Yard, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111978, {	-- Scribe's Quarters, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(112002, {	-- Stables, Level 2
+									["cost"] = { { "i", 116395, 1 }, },	-- Comprehensive Outpost Construction Guide
+								}),
+								i(111982, {	-- Storehouse, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111992, {	-- Tailoring Emporium, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111990, {	-- The Forge, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111988, {	-- The Tannery, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
+								i(111986, {	-- Trading Post, Level 2
+									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
+								}),
 							},
 						}),
 						n(93915, {	-- Li "Crunchpaw" Tsang <Warmongering Combatant>
@@ -1601,30 +1955,39 @@ _.Zones =
 									i(118488),	-- Schematic: Wormhole Centrifuge
 									i(128327),	-- Small Pouch of Coins
 								}),
-								{	-- Schematic: Blackrock Rifling
-									["itemID"] = 120267,	-- Schematic: Blackrock Rifling
+								i(120267, {	-- Schematic: Blackrock Rifling
 									["u"] = 2,	-- Deprecated and removed in 6.2.0
-								},
-								{	-- Schematic: Oglethorpe's Octagonal Lenses
-									["itemID"] = 122546,	-- Schematic: Oglethorpe's Octagonal Lenses
+								}),
+								i(122546, {	-- Schematic: Oglethorpe's Octagonal Lenses
 									["u"] = 2,	-- Deprecated and removed in 6.2.0
-								},
-								{	-- Schematic: Precision Scope Tuning Kit
-									["itemID"] = 122554,	-- Schematic: Precision Scope Tuning Kit
+								}),
+								i(122554, {	-- Schematic: Precision Scope Tuning Kit
 									["u"] = 2,	-- Deprecated and removed in 6.2.0
-								},
+								}),
 							},
 						}),
 						n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
 							["coord"] = { 44.5, 75.0, 622 },
 							["g"] = {
-								currency (823, {	-- Apexis Crystal
-									i(116772),	-- Shadowmane Charger
-									i(119143),	-- Son of Sethe
+								i(118666, {	-- Arakkoa Elixir
+									["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
 								}),
-								i(118666),	-- Arakkoa Elixir
 								i(119136),	-- Arakkoa Outcasts Tabard
-								i(118682),	-- Saberon Protector
+								i(118682, {	-- Saberon Protector
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(116772, {	-- Shadowmane Charger (MOUNT!)
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 50000000 },	-- 5,000g
+									},
+								}),
+								i(119143, {	-- Son of Sethe (PET!)
+									["cost"] = {
+										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+										{ "g", 10000000 },	-- 1,000g
+									},
+								}),
 							},
 						}),
 						n(93906, {	-- Slugg Spinbolt <Wild Combatant>
@@ -1766,18 +2129,37 @@ _.Zones =
 						n(85932, {	-- Vindicator Nuurem <Council of Exarchs Quartermaster>
 							["coord"] = { 46.6, 76.7, 622 },
 							["g"] = {
-								currency(823, {	-- Apexis Crystal
-									i(119142),	-- Draenei Micro Defender
-									i(116664),	-- Dusty Rockhide
-									i(118665),	-- Exarch Elixir
-								}),
 								i(119162, {	-- Contract: Cleric Maluuf
-									follower(459),	-- Cleric Maluuf
+									["cost"] = 50000000,	-- 5,000g
+									["g"] = {
+										follower(459),	-- Cleric Maluuf
+									},
 								}),
 								i(119135),	-- Council of Exarchs Tabard
-								i(115472),	-- Permanent Time Bubble
-								i(118663),	-- Relic of Karabor
-								i(118680),	-- Tranquility of the Exarchs
+								i(119142, {	-- Draenei Micro Defender (PET!)
+									["cost"] = {
+										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+										{ "g", 10000000 },	-- 1,000g
+									},
+								}),
+								i(116664, {	-- Dusty Rockhide (MOUNT!)
+									["cost"] = {
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										{ "g", 50000000 },	-- 5,000g
+									},
+								}),
+								i(118665, {	-- Exarch Elixir
+									["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
+								}),
+								i(115472, {	-- Permanent Time Bubble (TOY!)
+									["cost"] = 10000000,	-- 1,000g
+								}),
+								i(118663, {	-- Relic of Karabor
+									["cost"] = 25000000,	-- 2,500g
+								}),
+								i(118680, {	-- Tranquility of the Exarchs
+									["cost"] = 5000000,	-- 500g
+								}),
 							},
 						}),
 					},

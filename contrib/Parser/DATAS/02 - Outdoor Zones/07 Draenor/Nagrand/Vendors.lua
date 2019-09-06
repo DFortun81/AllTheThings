@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(550, {	-- Nagrand (Draenor)
-			n(-2, {	-- Vendors
+			n(-2, {		-- Vendors
 				n(82754, {	-- Nurse Lizz <First Aid>
 					["coord"] = { 78.6, 47.8, 550 },
 					["g"] = {
