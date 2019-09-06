@@ -1248,7 +1248,7 @@ namespace ATT
                         }
 
                     // Float Data Type Fields (field conversions)
-                    case "dr":
+                    //case "dr":
                     case "modelRotation":
                     case "modelScale":
                         {

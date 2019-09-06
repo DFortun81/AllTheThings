@@ -289,7 +289,7 @@ namespace ATT
                     case "mounts":
                     case "icon":
                     case "text":
-                    case "dr":
+                    //case "dr":
                     case "isAquatic":
                     case "isFlying":
                     case "isGround":

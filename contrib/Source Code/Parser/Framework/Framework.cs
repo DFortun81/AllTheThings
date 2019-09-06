@@ -805,14 +805,14 @@ namespace ATT
                     {
                         return "s";
                     }
-
+                /*
                 case "dr":
                 case "droprate":
                 case "dropRate":
                     {
                         return "dr";
                     }
-
+                */
                 case "requireSkill":
                 case "requiredSkill":
                     {

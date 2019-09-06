@@ -870,11 +870,7 @@ end
 local function BuildSourceText(group, l)
 	if group.parent then
 		if l < 1 then
-			if group.dr then
-				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
-			else
-				return BuildSourceText(group.parent, l + 1);
-			end
+			return BuildSourceText(group.parent, l + 1);
 		else
 			return BuildSourceText(group.parent, l + 1) .. " -> " .. (group.text or "*");
 		end
@@ -884,11 +880,7 @@ end
 local function BuildSourceTextForChat(group, l)
 	if group.parent then
 		if l < 1 then
-			if group.dr then
-				return BuildSourceTextForChat(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
-			else
-				return BuildSourceTextForChat(group.parent, l + 1);
-			end
+			return BuildSourceTextForChat(group.parent, l + 1);
 		else
 			return BuildSourceTextForChat(group.parent, l + 1) .. " -> " .. (group.text or "*");
 		end
@@ -2032,9 +2024,6 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			
 			-- If there's progress to display, then let's summarize a bit better.
 			if right then
-				-- If this group has a droprate, add it to the display.
-				if group.dr then right = "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r " .. right; end
-				
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
 				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group.u][1]] .. ":0|t "; end
@@ -8797,7 +8786,6 @@ local function RowOnEnter(self)
 		end
 		if reference.bonusID and app.Settings:GetTooltipSetting("bonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
 		if reference.modID and app.Settings:GetTooltipSetting("modID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
-		if reference.dr then GameTooltip:AddDoubleLine(L["DROP_RATE"], "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
 		if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
 			local found = false;
 			for i=1,GameTooltip:NumLines() do
