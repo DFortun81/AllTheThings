@@ -86,6 +86,11 @@ _.Zones =
 					["sourceQuests"] = { 50149 },	-- A Weather Eye
 					-- May be available earlier; needs confirmation.
 				}),
+				q(53463, {	-- An Eight-Legged Curse
+					["coord"] = { 34.6, 30.6, 896 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 143871 },	-- Foreman Cogbutton
+				}),
 				q(49807, {	-- A New Order
 					["provider"] = { "n", 129642 },	-- Lucille Waycrest
 					["coord"] = { 36.8, 50.1, 896 },
@@ -186,6 +191,11 @@ _.Zones =
 					["coord"] = { 31.2, 29.9, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50003 },	-- The First Watch
+				}),
+				q(53462, {	-- All Wrapped Up
+					["coord"] = { 34.6, 30.6, 896 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 143871 },
 				}),
 				q(50453, {	-- Barrier Buster
 					["provider"] = { "n", 132193 },	-- Angus Ballaster
@@ -774,6 +784,11 @@ _.Zones =
 					["coord"] = { 31.4, 30.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 50149 },	-- A Weather Eye
+				}),
+				q(53461, {	-- Precious Metals
+					["coord"] = { 36.4, 25.8, 896 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 143878 },	-- Reez Grimelock
 				}),
 				q(48678, {	-- Questionable Offerings
 					["provider"] = { "n", 127080 },	-- Lord Autumnvale
@@ -1455,23 +1470,11 @@ _.Zones =
 				q(50149, {	-- A Weather Eye
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50174, {	-- All Wrapped Up
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53462, {	-- All Wrapped Up
-					["races"] = HORDE_ONLY,
-				}),
 				q(48538, {	-- An Airtight Alibi
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50988, {	-- An Economic Opportunity
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50175, {	-- An Eight-Legged Curse
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53463, {	-- An Eight-Legged Curse
-					["races"] = HORDE_ONLY,
 				}),
 				q(50253, {	-- An Improvised Arsenal
 					["races"] = ALLIANCE_ONLY,
@@ -2142,12 +2145,6 @@ _.Zones =
 				}),
 				q(50929, {	-- Powder to the People
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50173, {	-- Precious Metals
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53461, {	-- Precious Metals
-					["races"] = HORDE_ONLY,
 				}),
 				q(48678, {	-- Questionable Offerings
 					["races"] = ALLIANCE_ONLY,

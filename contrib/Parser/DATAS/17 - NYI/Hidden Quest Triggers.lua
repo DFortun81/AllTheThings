@@ -140,6 +140,7 @@ _.NeverImplemented =
 		q(39724),	-- Tracking Quest. Related to rare naval missions in the shipyard
 		q(39725),	-- Tracking Quest. Related to rare naval missions in the shipyard
 		q(39750),	-- Tracking Quest. Related to rare naval missions in the shipyard
+		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
 		
 		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
 
@@ -266,12 +267,15 @@ _.NeverImplemented =
 		--    Legion     --
 		-------------------
 	--	Various tracking quests
+		q(44502),	-- Calamir loot tracking quest? Need to confirm if this or 43193 is the weekly credit
 		q(45533),	-- Legion Dungeon Reward Quest
+		q(44437),	-- Legion dungeon reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
 		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(37526),	-- Farondis Murder Flag — triggers between turning in "The Tidestone: Shattered" and starting "Save Yourself" in Azsuna
 		q(41891),	-- Tainted Growth — got credit for this when turning in 38684, "Reading the Leaves"
+		q(43510),	-- Seal of Fate: Class Hall. Weekly quest, various sources
 		q(43806),	-- The Battle for Broken Shore Scenario Skip (A)
 		q(44543),	-- The Battle for Broken Shore Scenario Skip (H)
 		q(38994),	-- TRACKING Encounter Botanist — this quest and the one below are during/after doing the "To Old Friends" quest in Val'sharah

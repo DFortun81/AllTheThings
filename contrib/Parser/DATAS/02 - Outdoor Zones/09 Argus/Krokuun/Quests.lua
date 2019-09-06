@@ -192,97 +192,100 @@ _.Zones =
 						}),
 					}),
 					n(-168, {	-- Other Quests
-						["groups"] = {
-							q(49014, {	-- The Burning Throne
-								["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-								["sourceQuests"] = { 48559 },	-- An Oferring of Light
-							}),
-							q(49015, {	-- Antorus, the Burning Throne: The Death of a Titan
-								["groups"] = {
-									i(152984),	-- Boon of the Pantheon
-									i(152626),	-- Insignia of the Grand Army
-								},
-								["provider"] = { "n", 120533 },	-- Prophet Velen
-								["sourceQuests"] = { 49014 },	-- The Burning Throne
-							}),
-							spell(253365, {	-- Krokuun Equipment
-								q(48460, {	-- The Wranglers [Breadcrumb - Required]
-									["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-									["sourceQuests"] = { 48199 },	-- The Burning Heart
-								}),
-								q(47967, {	-- An Argus Roper
-									["provider"] = { "n", 126160 },	-- Lead Rider Jerek
-									["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
-								}),
-								q(48455, {	-- Duskcloak Problem
-									["provider"] = { "n", 126160 },	-- Lead Rider Jerek
-									["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
-								}),
-								q(48453, {	-- Strike Back
-									["provider"] = { "n", 126160 },	-- Lead Rider Jerek
-									["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
-								}),
-								q(48544, {	-- Woah, Nelly
-									["provider"] = { "n", 126160 },	-- Lead Rider Jerek
-									["sourceQuests"] = { 47967, 48455, 48453 },	-- An Argus Roper / Duskcloak Problem / Strike Back
-								}),
-								q(48441, {	-- Remnants of Darkfall Ridge
-									["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-									["sourceQuests"] = { 48544 },	-- Woah, Nelly
-								}),
-								q(48442, {	-- Nath'raxas Hold: Preparations
-									["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-									["sourceQuests"] = { 48441 },	-- Remnants of Darkfall Ridge
-								}),
-								q(48910, {	-- Supplying Krokuun
-									["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-									["repeatable"] = true,
-									["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
-									["groups"] = {
-										i(152095),	-- Krokul Ridgestalker
-									},
-								}),
-								q(48443, {	-- Nath'raxas Hold: Rescue Mission
-									["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-									["sourceQuests"] = { 48910 },	-- Supplying Krokuun
-								}),
-								q(48634, {	-- Further Supplying Krokuun
-									["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-									["repeatable"] = true,
-									["sourceQuests"] = { 48443 },	-- Nath'raxas Hold: Rescue Mission
-									["groups"] = {
-										i(152095),	-- Krokul Ridgestalker
-									},
-								}),
-							}),
-							{	-- Ascending Alchemy
-								["questID"] = 48016,
-								["provider"] = { "n", 125346 },	-- Alchemist Funen
-								["coord"] = { 56.2, 66.8 },
-								["groups"] = {
-									i(151706),	-- Recipe: Astral Alchemist Stone (Rank 1)
-								},
-								["requireSkill"] = 171,	-- Alchemy
+						q(49014, {	-- The Burning Throne
+							["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+							["sourceQuests"] = { 48559 },	-- An Oferring of Light
+						}),
+						q(49015, {	-- Antorus, the Burning Throne: The Death of a Titan
+							["groups"] = {
+								i(152984),	-- Boon of the Pantheon
+								i(152626),	-- Insignia of the Grand Army
 							},
-							{	-- Limited Supplies
-								["questID"] = 48002,
-								["provider"] = { "n", 125346 },	-- Alchemist Funen
-								["coord"] = { 56.2, 66.8 },
+							["provider"] = { "n", 120533 },	-- Prophet Velen
+							["sourceQuests"] = { 49014 },	-- The Burning Throne
+						}),
+						spell(253365, {	-- Krokuun Equipment
+							q(48460, {	-- The Wranglers [Breadcrumb - Required]
+								["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+								["sourceQuests"] = { 48199 },	-- The Burning Heart
+							}),
+							q(47967, {	-- An Argus Roper
+								["provider"] = { "n", 126160 },	-- Lead Rider Jerek
+								["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
+							}),
+							q(48455, {	-- Duskcloak Problem
+								["provider"] = { "n", 126160 },	-- Lead Rider Jerek
+								["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
+							}),
+							q(48453, {	-- Strike Back
+								["provider"] = { "n", 126160 },	-- Lead Rider Jerek
+								["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
+							}),
+							q(48544, {	-- Woah, Nelly
+								["provider"] = { "n", 126160 },	-- Lead Rider Jerek
+								["sourceQuests"] = { 47967, 48455, 48453 },	-- An Argus Roper / Duskcloak Problem / Strike Back
+							}),
+							q(48441, {	-- Remnants of Darkfall Ridge
+								["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+								["sourceQuests"] = { 48544 },	-- Woah, Nelly
+							}),
+							q(48442, {	-- Nath'raxas Hold: Preparations
+								["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+								["sourceQuests"] = { 48441 },	-- Remnants of Darkfall Ridge
+							}),
+							q(48910, {	-- Supplying Krokuun
+								["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+								["repeatable"] = true,
+								["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
 								["groups"] = {
-									i(151657),	-- Recipe: Lightblood Elixir (Rank 1)
+									i(152095),	-- Krokul Ridgestalker
 								},
-								["requireSkill"] = 171,	-- Alchemy
-							},
-							{	-- Tracking the Trackers
-								["questID"] = 48013,
-								["provider"] = { "n", 125346 },	-- Alchemist Funen
-								["coord"] = { 56.2, 66.8 },
+							}),
+							q(48443, {	-- Nath'raxas Hold: Rescue Mission
+								["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+								["sourceQuests"] = { 48910 },	-- Supplying Krokuun
+							}),
+							q(48634, {	-- Further Supplying Krokuun
+								["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+								["repeatable"] = true,
+								["sourceQuests"] = { 48443 },	-- Nath'raxas Hold: Rescue Mission
 								["groups"] = {
-									i(151703),	-- Recipe: Tears of the Naaru (Rank 1)
+									i(152095),	-- Krokul Ridgestalker
 								},
-								["requireSkill"] = 171,	-- Alchemy
+							}),
+						}),
+						q(48016, {	-- Ascending Alchemy
+							["provider"] = { "n", 125346 },	-- Alchemist Funen
+							["coord"] = { 56.2, 66.8, 830 },
+							["groups"] = {
+								i(151706),	-- Recipe: Astral Alchemist Stone (Rank 1)
 							},
-						},
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						q(48002, {	-- Limited Supplies
+							["provider"] = { "n", 125346 },	-- Alchemist Funen
+							["coord"] = { 56.2, 66.8, 830 },
+							["groups"] = {
+								i(151657),	-- Recipe: Lightblood Elixir (Rank 1)
+							},
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						q(48013, {	-- Tracking the Trackers
+							["provider"] = { "n", 125346 },	-- Alchemist Funen
+							["coord"] = { 56.2, 66.8, 830 },
+							["groups"] = {
+								i(151703),	-- Recipe: Tears of the Naaru (Rank 1)
+							},
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						q(48280, {	-- Visions of Another
+							["coord"] = { 57.0, 65.6, 830 },
+							["provider"] = { "n", 124595 },	-- Magni Bronzebeard
+						}),
+						q(48272, {	-- Visions of Fear
+							["coord"] = { 57.0, 65.6, 830 },
+							["provider"] = { "n", 124595 },	-- Magni Bronzebeard
+						}),
 					}),
 				},
 				["description"] = "\nThis quest ends in Krokuun after you finish |cFFFFD700Seat of the Triumvirate|r dungeon quest\n",

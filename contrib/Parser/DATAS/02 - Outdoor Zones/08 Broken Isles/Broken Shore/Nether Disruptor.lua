@@ -14,6 +14,12 @@ _.Zones =
 							i(147451),	-- Armorcrafter's Commendation
 						},
 					}),
+					q(46736, {	-- Contribute to Nether Disruptor
+						["repeatable"] = true,
+						["g"] = {
+							currency(1226),	-- 75x Nethershard
+						},
+					}),
 					i(147451, {	-- Armorcrafter's Commendation
 						q(46696, {	-- Fashion History and a Philosophy of Style
 							["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard

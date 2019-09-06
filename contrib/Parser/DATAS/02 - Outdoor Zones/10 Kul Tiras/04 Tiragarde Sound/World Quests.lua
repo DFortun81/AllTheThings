@@ -773,15 +773,6 @@ _.Zones =
 					q(49408, {	-- Pirate Dice
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50164, {	-- Polly Want A Cracker?
-						["collectible"] = false,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51646, {	-- Polly Want A Cracker?
-						["collectible"] = false,
-						["lvl"] = 120,
-					}),
 					q(48356, {	-- Possessive Headgear
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1895,6 +1886,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+					}),
+					q(51646, {	-- Polly Want A Cracker? (Possibly a horde equivalent? Why are these different?)
+						["collectible"] = false,
+						["lvl"] = 120,
 					}),
 					q(51661, {	-- Raging Swell
 						["lvl"] = 120,

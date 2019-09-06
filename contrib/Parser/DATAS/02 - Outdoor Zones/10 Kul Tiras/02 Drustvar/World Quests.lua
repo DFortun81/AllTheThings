@@ -78,20 +78,11 @@ _.Zones =
 				q(50174, {	-- All Wrapped Up
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53462, {	-- All Wrapped Up
-					["races"] = HORDE_ONLY,
-				}),
 				q(48538, {	-- An Airtight Alibi
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50988, {	-- An Economic Opportunity
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50175, {	-- An Eight-Legged Curse
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53463, {	-- An Eight-Legged Curse
-					["races"] = HORDE_ONLY,
 				}),
 				q(50253, {	-- An Improvised Arsenal
 					["races"] = ALLIANCE_ONLY,
@@ -761,12 +752,6 @@ _.Zones =
 				}),
 				q(50929, {	-- Powder to the People
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50173, {	-- Precious Metals
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53461, {	-- Precious Metals
-					["races"] = HORDE_ONLY,
 				}),
 				q(48678, {	-- Questionable Offerings
 					["races"] = ALLIANCE_ONLY,
