@@ -59,8 +59,10 @@ _.Zones =
 				q(29689, {	-- Advancing the Campaign (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(29688, {	-- Advancing the Campaign (H)
+				q(29688, {	-- Advancing the Campaign (H) -- aa
+					["coord"] = { 55.0, 36.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16575 },	-- Shadow Hunter Ty'jin
 				}),
 				q(9383,  {	-- An Ambitious Plan
 					["races"] = ALLIANCE_ONLY,
@@ -78,8 +80,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10450 },	-- Bonechewer Blood
 				}),
-				q(9374,  {	-- Arelion's Journal
+				q(9374,  {	-- Arelion's Journal -- aa
+					["coord"] = { 26.3, 60.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16793 },	-- Magistrix Carinda
 				}),
 				q(9472,  {	-- Arelion's Mistress
 					["races"] = HORDE_ONLY,
@@ -95,9 +99,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49862 },	-- To Outland [Breadcrumb]
 				}),
-				q(10120, {	-- Arrival in Outland (H)
-					["provider"] = { "n", 19253 },	-- Lieutenant General Orion
+				q(10120, {	-- Arrival in Outland (H) -- aa
+					["coord"] = { 87.3, 49.8, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19253 },	-- Lieutenant General Orion
 					["sourceQuests"] = { 49816 },	-- To Outland [Breadcrumb]
 				}),
 				q(10369, {	-- Arzeth's Demise
@@ -105,7 +110,7 @@ _.Zones =
 				q(9543,  {	-- Atonement
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(9418,  {	-- Avruu's Orb
+				q(9418,  {	-- Avruu's Orb -- aa
 					["crs"] = { 17084 },	-- Avruu
 					["provider"] = { "i", 23580 },	-- Avruu's Orb
 					["coords"] = {
@@ -132,8 +137,10 @@ _.Zones =
 				q(45415, {	-- Between Worlds
 					["u"] = 40,
 				}),
-				q(9397,  {	-- Birds of a Feather
+				q(9397,  {	-- Birds of a Feather -- aa
+					["coord"] = { 27.7, 60.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16790 },
 				}),
 				q(11516, {	-- Blast the Gateway
 				}),
@@ -152,10 +159,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10242 },	-- Spinebreaker Post
 				}),
-				q(10450, {	-- Bonechewer Blood
-					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
+				q(10450, {	-- Bonechewer Blood -- aa
+					["coord"] = { 55.1, 36.3, 100 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 10291 },	-- Report to Nazgrel
+					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
 					["g"] = {
 						i(29919),	-- Adamantine Kite Shield
 						i(29915),	-- Desolation Rod
@@ -259,8 +266,9 @@ _.Zones =
 					},
 				}),
 				q(10208, {	-- Disrupt Their Reinforcements (H)
-					["provider"] = { "n", 19273 },	-- Forward Commander To'arch
+					["coord"] = { 65.8, 43.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19273 },	-- Forward Commander To'arch
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["g"] = {
 						i(29932),	-- Arcane Ringed Tunic
@@ -301,10 +309,10 @@ _.Zones =
 					["provider"] = { "n", 4949 },	-- Thrall
 					["races"] = HORDE_ONLY
 				}),
-				q(10121, {	-- Eradicate the Burning Legion
-					["provider"] = { "n", 3230 },	-- Nazgrel
+				q(10121, {	-- Eradicate the Burning Legion -- aa
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 10291 },	-- Report to Nazgrel
+					["provider"] = { "n", 3230 },	-- Nazgrel
 				}),
 				q(10143, {	-- Expedition Point
 					["provider"] = { "n", 19309 },	-- Sergeant Altumus
@@ -312,15 +320,16 @@ _.Zones =
 					["sourceQuests"] = { 10142 },	-- The Path of Anguish
 				}),
 				q(9498,  {	-- Falcon Watch
+					["coord"] = { 55.1, 39.1, 100 },
+					["races"] = exclude({ 10 }, HORDE_ONLY),	-- Every horde race but Blood Elves
 					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
-					["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 },	-- Every race but Blood Elves
-					["sourceQuests"] = { 10450 },	-- Bonechewer Blood
+					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["isBreadcrumb"] = true,
 				}),
 				q(9499,  {	-- Falcon Watch
 					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
 					["races"] = { 10 },	-- Blood Elves
-					["sourceQuests"] = { 10450 },	-- Bonechewer Blood
+					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["isBreadcrumb"] = true,
 				}),
 				q(10919, {	-- Fei Fei's Treat
@@ -342,8 +351,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10123, {	-- Felspark Ravine
-					["provider"] = { "n", 19256 },	-- Sergeant Shatterskull
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19256 },	-- Sergeant Shatterskull
 					["sourceQuests"] = { 10121 },	-- Eradicate the Burning Legion
 					["g"] = {
 						i(29911),	-- Agamaggan's Quill
@@ -359,14 +369,19 @@ _.Zones =
 					["sourceQuests"] = { 10140 },	-- Journey to Honor Hold
 				}),
 				q(10390, {	-- Forge Camp: Mageddon
-					["provider"] = { "n", 3230 },	-- Nazgrel
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3230 },	-- Nazgrel
 					["sourceQuests"] = { 10388 },	-- Return to Thrallmar
 				}),
 				q(10124, {	-- Forward Base: Reaver's Fall
-					["provider"] = { "n", 19256 },	-- Sergeeant Shatterskull
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19256 },	-- Sergeeant Shatterskull
 					["sourceQuests"] = { 10123 },	-- Felspark Ravine
+				}),
+				q(10207, {	-- Forward Base: Reaver's Fall REUSE (NYI)
+					["u"] = 1,
 				}),
 				q(10295, {  -- From the Abyss
 					["races"] = HORDE_ONLY,
@@ -419,8 +434,9 @@ _.Zones =
 					},
 				}),
 				q(13409, {	-- Hellfire Fortifications (H)
-					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
+					["coord"] = { 55.9, 39.2, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["g"] = {
 						i(40477),	-- Insignia of the Horde
@@ -434,9 +450,10 @@ _.Zones =
 				q(10443, {	-- Helping the Cenarion Post (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(10442, {	-- Helping the Cenarion Post (H)
-					["provider"] = { "n", 16790 },	-- Falconer Drenna Riverwind
+				q(10442, {	-- Helping the Cenarion Post (H) -- aa
+					["coord"] = { 27.7, 60.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16790 },	-- Falconer Drenna Riverwind
 				}),
 				q(10258, {  -- Honor the Fallen
 					["races"] = HORDE_ONLY,
@@ -453,9 +470,10 @@ _.Zones =
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 					["sourceQuests"] = { 10236 },	-- Outland Sucks!
 				}),
-				q(10086, {	-- I Work... For the Horde!
-					["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
+				q(10086, {	-- I Work... For the Horde! -- aa
+					["coord"] = { 55.1, 38.7, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
 					["g"] = {
 						i(29938),	-- Battle Seeker Chesguard
 						i(29943),	-- Legionnaire's Studded Helm
@@ -468,13 +486,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10482 },	-- Fel Orc Scavengers
 				}),
-				q(10161, {  -- In Case of Emergency...
-					i(25980),	-- Aerodynamic Scaled Vest
-					i(25981),	-- Dirigible Crash Helmet
-					i(25979),	-- Flintlocke's Piloting Pants
+				q(10161, {  -- In Case of Emergency... -- aa
+					["coord"] = { 49.1, 74.8, 100 },
+					["provider"] = { "n", 19367 },
+					["g"] = {
+						i(25980),	-- Aerodynamic Scaled Vest
+						i(25981),	-- Dirigible Crash Helmet
+						i(25979),	-- Flintlocke's Piloting Pants
+					},
 				}),
-				q(9366,  {	-- In Need of Felblood
+				q(9366,  {	-- In Need of Felblood -- aa
+					["coord"] = { 26.9, 59.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16791 },	-- Ryathen the Somber
 				}),
 				q(9390,  {	-- In Search of Sedai
 					["races"] = ALLIANCE_ONLY,
@@ -485,8 +509,10 @@ _.Zones =
 				q(29543, {	-- Invading the Citadel (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(29542, {	-- Invading the Citadel (H)
+				q(29542, {	-- Invading the Citadel (H) -- aa
+					["coord"] = { 58.0, 41.2, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19256 },	-- Sergeant Shatterskull
 				}),
 				q(10397, {	-- Invasion Point: Annihilator
 					["races"] = ALLIANCE_ONLY,
@@ -500,9 +526,11 @@ _.Zones =
 					["sourceQuests"] = { 10288 },	-- Arrival in Outland
 				}),
 				q(10289, {	-- Journey to Thrallmar
-					["provider"] = { "n", 18930 },	-- Vlagga Freyfeather
+					["coord"] = { 87.3, 48.1, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 18930 },	-- Vlagga Freyfeather
 					["sourceQuests"] = { 10120 },	-- Arrival in Outlanad
+					["isBreadcrumb"] = true,
 				}),
 				q(10159, {	-- Keep Thornfang Hill Clear!
 					["provider"] = { "n", 16888 },	-- Mahuram Stouthoof
@@ -534,12 +562,15 @@ _.Zones =
 						i(25993),	-- Finely Wrought Chain
 					},
 				}),
-				q(9396,  {	-- Magic of the Arakkoa
+				q(9396,  {	-- Magic of the Arakkoa -- aa
+					["coord"] = { 27.0, 59.7, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16792 },	-- Arcanist Calesthris Dawnstar
 				}),
-				q(10220, {	-- Make Them Listen
-					["provider"] = { "n", 19682 },	-- Emissary Mordiba
+				q(10220, {	-- Make Them Listen -- aa
+					["coord"] = { 61.7, 81.7, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19682 },	-- Emissary Mordiba
 				}),
 				q(9424,  {  -- Makuru's Vengeance
 					["races"] = ALLIANCE_ONLY,
@@ -565,6 +596,9 @@ _.Zones =
 				}),
 				q(9373,  {	-- Missing Missive
 				}),
+				q(10125, {	-- Mission: Disrupt Communications (NYI)
+					["u"] = 1,
+				}),
 				q(10146, {	-- Mission: Gateways Murketh and Shaadraz (A)
 					["provider"] = { "n", 19310 },	-- Forward Commander Kingston
 					["races"] = ALLIANCE_ONLY,
@@ -577,8 +611,9 @@ _.Zones =
 					},
 				}),
 				q(10129, {	-- Mission: Gateways Murketh and Shaadraz (H)
-					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
+					["coord"] = { 65.8, 43.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
 					["sourceQuests"] = { 10208 },	-- Disrupt Their Reinforcements
 					["g"] = {
 						i(29942),	-- Battle Scarred Leggings
@@ -599,8 +634,9 @@ _.Zones =
 					},
 				}),
 				q(10162, {	-- Mission: The Abyssal Shelf (H)
-					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
+					["coord"] = { 65.8, 43.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
 					["sourceQuests"] = { 10129 },	-- Mission: Gatewayas Murketh and Shaadraz
 					["g"] = {
 						i(29933),	-- Arcane Ringed Greaves
@@ -621,10 +657,8 @@ _.Zones =
 						i(28070),	-- Verdant Handwraps
 					},
 				}),
-				q(31922, {	-- Nicki Tinytech
-					["isDaily"] = true,
-				}),
-				q(10236, {	-- Outland Sucks!
+				q(10236, {	-- Outland Sucks! -- aa
+					["coord"] = { 51.3, 30.5, 100 },
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 				}),
 				q(10400, {	-- Overlord
@@ -635,9 +669,10 @@ _.Zones =
 						i(28040),	-- Vengeance of the Illidari
 					},
 				}),
-				q(9345,  {	-- Preparing the Salve
-					["provider"] = { "n", 16858 },	-- Grelag
+				q(9345,  {	-- Preparing the Salve -- aa
+					["coord"] = { 60.9, 81.6, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16858 },	-- Grelag
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior)
 					["u"] = 40,
@@ -652,20 +687,25 @@ _.Zones =
 				q(9385,  {	-- Rampaging Ravagers
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(9349,  {	-- Ravager Egg Roundup
+				q(9349,  {	-- Ravager Egg Roundup -- aa
+					["coord"] = { 49.2, 74.8, 100 },
+					["provider"] = { "n", 19344 },	-- Legassi
 				}),
 				q(10875, {	-- Report to Nazgrel
 					["provider"] = { "n", 16588 },	-- Apothecary Antonivich
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10838 },	-- The Demonaic Scryer
 				}),
-				q(10291, {	-- Report to Nazgrel
-					["provider"] = { "n", 19255 },	-- General Krakork
+				q(10291, {	-- Report to Nazgrel -- aa
+					["coord"] = { 55.8, 36.8, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19255 },	-- General Krakork
 					["sourceQuests"] = { 10289 },	-- Journey to Thrallmar
 				}),
-				q(10103, {	-- Report to Zurai
+				q(10103, {	-- Report to Zurai -- aa
+					["coord"] = { 28.4, 60.2, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16789 },	-- Ranger Captain Venn'ren
 				}),
 				q(10903, {	-- Return to Honor Hold
 					["races"] = ALLIANCE_ONLY,
@@ -690,9 +730,16 @@ _.Zones =
 					},
 				}),
 				q(10388, {	-- Return to Thrallmar
-					["provider"] = { "n", 19273 },	-- Forwarad Commander To'arch
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10129 },	-- Mission: Gatewayas Murketh and Shaadraz
+					["coords"] = {
+						{ 65.8, 43.5, 100 },	-- To'arch
+						{ 65.0, 44.2, 100 },	-- Overlord Hun Maimfist
+					},
+					["providers"] = {
+						{ "n", 19273 },	-- Forwarad Commander To'arch
+						{ "n", 16576 },	-- Overlord Hun Maimfist
+					},
 				}),
 				q(9430,  {	-- Sha'naar Relics
 					["races"] = ALLIANCE_ONLY,
@@ -710,8 +757,10 @@ _.Zones =
 				q(9356,  {	-- Smooth as Butter
 					i(27684),	-- Recipe: Buzzard Bites
 				}),
-				q(9387,  {  -- Source of the Corruption
+				q(9387,  {  -- Source of the Corruption -- aa
+					["coord"] = { 26.7, 59.7, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16794 },	-- Apothecary Azethen
 					["g"] = {
 						i(25914),	-- Broken Choker
 						i(25915),	-- Fallen Vindicator's Blade
@@ -739,9 +788,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9400,  {	-- The Assassin
-					["provider"] = { "n", 3230 },	-- Nazgrel
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 10388 },	-- Return to Thrallmar
+					["provider"] = { "n", 3230 },	-- Nazgrel
+					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 				}),
 				q(10230, {	-- The Battle Horn
 					["races"] = HORDE_ONLY,
@@ -816,15 +866,17 @@ _.Zones =
 						i(31719),	-- Stormstrike Vest
 					},
 				}),
-				q(9340,  {	-- The Great Fissure
+				q(9340,  {	-- The Great Fissure -- aa
+					["coord"] = { 28.4, 60.2, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16789 },	-- Ranger Captain Venn'ren
 				}),
 				q(10399, {	-- The Heart of Darkness
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10141, {	-- The Legion Reborn
-					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
 					["sourceQuests"] = { 10254 },	-- Force Commander Danath
 				}),
 				q(9558,  {	-- The Longbeards
@@ -862,7 +914,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9375,  {	-- The Road to Falcon Watch
+					["coord"] = { 24.5, 76.0, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16993 },	-- Wounded Blood Elf Pilgrim
 				}),
 				q(9490,  {  -- The Rock Flayer Matriarch
 					["races"] = ALLIANCE_ONLY,
@@ -888,9 +942,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 9401 },	-- The Warchief's Mandate
 				}),
-				q(10278, {	-- The Warp Rifts
-					["provider"] = { "n", 19683 },	-- Ogath the Mad
+				q(10278, {	-- The Warp Rifts -- aa
+					["coord"] = { 61.8, 81.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19683 },	-- Ogath the Mad
 				}),
 				q(10119, {	-- Through the Dark Portal (A)
 					["races"] = ALLIANCE_ONLY,
@@ -911,8 +966,10 @@ _.Zones =
 				q(10936, {	-- Trollbane is Looking for You
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(9381,  {	-- Trueflight Arrows
+				q(9381,  {	-- Trueflight Arrows -- aa
+					["coord"] = { 27.7, 60.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16790 },	-- Falconer Drenna Riverwind
 				}),
 				q(10050, {	-- Unyielding Souls
 					["races"] = ALLIANCE_ONLY,
@@ -931,8 +988,10 @@ _.Zones =
 					i(25787),	-- Charm of Alacrity
 					i(25786),	-- Hypnotist's Watch
 				}),
-				q(9466,  {	-- Wanted: Blacktalon the Savage
+				q(9466,  {	-- Wanted: Blacktalon the Savage -- aa
+					["coord"] = { 28.0, 60.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 181638 },
 					["g"] = {
 						i(25483),	-- Fine Sash
 						i(25482),	-- Venn'ren's Boots

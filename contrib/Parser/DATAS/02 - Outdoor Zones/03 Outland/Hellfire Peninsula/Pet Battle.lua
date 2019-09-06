@@ -12,6 +12,11 @@ _.Zones =
 				p(414, {	-- Scorpid
 					["crs"] = { 61326 },	-- Scorpid
 				}),
+				q(31922, {	-- Nicki Tinytech
+					["provider"] = { "n", 66550 },	-- Nicki Tinytech
+					["coord"] = { 64.3, 49.3, 100 },
+					["isDaily"] = true,
+				}),
 			}),
 		}),
 	}),

@@ -75,6 +75,11 @@ _.NeverImplemented =
 		q(38995),	-- Unused
 		
 		-------------------
+		---   OUTLAND   ---
+		-------------------
+		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
+		
+		-------------------
 		--   CATACLYSM   --
 		-------------------
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
