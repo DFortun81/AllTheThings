@@ -95,6 +95,25 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
+				n(16602, {	-- Floyd Pinkus <Innkeeper>
+					["coord"] = { 56.7, 37.5, 100 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(30744),	-- Draenic Leather Pack
+						i(30748, {	-- Enchanter's Satchel
+							["isLimited"] = true,
+						}),
+						i(30747, {	-- Gem Pouch
+							["isLimited"] = true,
+						}),
+						i(30746, {	-- Mining Sack
+							["isLimited"] = true,
+						}),
+						i(30745, {	-- Heavy Toolbox
+							["isLimited"] = true,
+						}),
+					},
+				}),
 				n(35101, {	-- Grunda Bronzewing <Gryphon Keeper>
 					["coord"] = { 54.2, 62.6, 100 },
 					["races"] = ALLIANCE_ONLY,

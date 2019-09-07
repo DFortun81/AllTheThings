@@ -9,15 +9,34 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 68,
 		["mapID"] = 331,
 		["coord"] = { 47.51, 52.08, 100 },	-- Magtheridon's Lair, Hellfire Peninsula
-		["groups"] = {
+		["g"] = {
+			n(-17, {	-- Quests
+				q(11002, {	-- The Fall of Magtheridon (A)
+					["crs"] = { 17257 },	-- Magtheridon
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 32385 },	-- Magtheridon's Head
+					["g"] = {
+						i(28792),	-- A'dal's Signet of Defense
+						i(28793),	-- Band of Crimson Fury
+						i(28790),	-- Naaru Lightwarden's Band
+						i(28791),	-- Ring of the Recalcitrant
+					},
+				}),
+				q(11003, {	-- The Fall of Magtheridon (H)
+					["crs"] = { 17257 },	-- Magtheridon
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 32386 },	-- Magtheridon's Head
+					["g"] = {
+						i(28792),	-- A'dal's Signet of Defense
+						i(28793),	-- Band of Crimson Fury
+						i(28790),	-- Naaru Lightwarden's Band
+						i(28791),	-- Ring of the Recalcitrant
+					},
+				}),
+				
+			}),
 			cr(17257, e(1566, {
 				ach(693),	-- Magtheridon's Lair
-				a(i(32385, {	-- Magtheridon's Head (Alliance)
-					a(q(11002)),	-- The Fall of Magtheridon (Alliance)
-				})),
-				h(i(32386, {	-- Magtheridon's Head (Horde)
-					h(q(11003)),	-- The Fall of Magtheridon (Horde)
-				})),
 				i(29754, {		-- Chestguard of the Fallen Champion
 					i(27702),	-- Gladiator's Lamellar Chestpiece
 					i(31613),	-- Gladiator's Ornamented Chestguard

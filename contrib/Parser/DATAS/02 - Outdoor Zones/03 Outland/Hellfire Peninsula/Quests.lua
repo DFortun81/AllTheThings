@@ -26,7 +26,10 @@ _.Zones =
 					},
 				}),
 				q(9376,  {  -- A Pilgrim's Plight
+					["coord"] = { 27.1, 61.9, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17015 },
+					["sourceQuest"] = 9375,	-- The Road to Falcon Watch
 					["g"] = {
 						i(25783),	-- Pilgrim's Cover
 						i(25781),	-- Segmented Breastplate
@@ -161,8 +164,14 @@ _.Zones =
 					["provider"] = { "n", 16790 },
 				}),
 				q(11516, {	-- Blast the Gateway
+					["coord"] = { 58.2, 17.6, 100 },
+					["isDaily"] = true,
+					["provider"] = { "n", 24937 },	-- Magistrix Seyla
 				}),
 				q(11515, {	-- Blood for Blood
+					["coord"] = { 58.2, 17.6, 100 },
+					["isDaily"] = true,
+					["provider"] = { "n", 24937 },	-- Magistrix Seyla
 				}),
 				q(47025, {	-- Blood: Aid of the Illidari
 					["u"] = 40,
@@ -271,6 +280,10 @@ _.Zones =
 				q(9372,  {	-- Demonic Contamination -- aa
 					["coord"] = { 15.6, 52.0, 100 },
 					["provider"] = { "n", 16991 },	-- Thiah Redmane
+					["sourceQuests"] = {
+						10443,	-- Helping the Cenarion Post (A)
+						10442,	-- Helping the Cenarion Post (H)
+					},
 				}),
 				q(10916, {	-- Digging for Prayer Beads
 					["races"] = ALLIANCE_ONLY,
@@ -469,6 +482,11 @@ _.Zones =
 				}),
 				q(10106, {	-- Hellfire Fortifications (A)
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["sourceQuests"] = {
+						13410,	-- Hellfire Fortifications
+						13408,	-- Hellfire Fortifications
+					},
 				}),
 				q(13410, {	-- Hellfire Fortifications (A)
 					["races"] = ALLIANCE_ONLY,
@@ -489,17 +507,26 @@ _.Zones =
 					},
 				}),
 				q(10110, {	-- Hellfire Fortifications (H)
-					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
+					["coord"] = { 55.9, 39.2, 100 },
 					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 					["sourceQuests"] = { 13409 },	-- Hellfire Fortifications
+					["g"] = {
+						i(24581),	-- Mark of Thrallmar
+					},
 				}),
 				q(10443, {	-- Helping the Cenarion Post (A)
+					["coord"] = { 23.4, 36.6, 100 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 16796 },	-- Amaan the Wise
+					["isBreadcrumb"] = true,
 				}),
 				q(10442, {	-- Helping the Cenarion Post (H) -- aa
 					["coord"] = { 27.7, 60.3, 100 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 16790 },	-- Falconer Drenna Riverwind
+					["isBreadcrumb"] = true,
 				}),
 				q(10258, {  -- Honor the Fallen
 					["coord"] = { 61.7, 81.7, 100 },
@@ -656,6 +683,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(9373,  {	-- Missing Missive
+					["provider"] = { "i", 23338 },	-- Eroded Leather Case
+					["crs"] = {
+						16857,	-- Marauding Crust Burster
+						16968,	-- Tunneler
+					},
 				}),
 				q(10125, {	-- Mission: Disrupt Communications (NYI)
 					["u"] = 1,
@@ -796,9 +828,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10347, {	-- Return to the Abyssal Shelf (H)
+					["coord"] = { 66.0, 43.7, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19401 },	-- Wing Commander Brack
+					["repeatable"] = true,
+					["sourceQuest"] = 10162,	-- Mission: The Abyssal Shelf
 				}),
 				q(9732,  {	-- Return to the Marsh (awarded "Draining the Marsh" criteria for Zangarmarsh)
+					["coord"] = { 16.0, 52.1, 100 },
 					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
 					["description"] = "This quest is required for the 'Draining the Marsh' criteria in Zangarmarsh.",
 					["sourceQuests"] = { 9724 },	-- Warning the Cenarion Circle
@@ -822,9 +859,6 @@ _.Zones =
 				}),
 				q(9430,  {	-- Sha'naar Relics
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(14065, {	-- Sharing a Bountiful Feast
-					["races"] = HORDE_ONLY,
 				}),
 				q(10340, {	-- Shatter Point
 					["races"] = ALLIANCE_ONLY,
@@ -891,7 +925,7 @@ _.Zones =
 				}),
 				q(9912,  {	-- The Cenarion Expedition -- aa
 					["coord"] = { 16.0, 52.1, 100 },
-					["provider"] = { "n", 16885 },
+					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
 					["isBreadcrumb"] = true,
 				}),
 				q(9370,  {  -- The Cleansing Must Be Stopped
@@ -935,24 +969,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 22231 },	-- Zezzak
 					["sourceQuest"] = 10792,	-- Zeth'Gor Must Burn!
-				}),
-				q(11002, {	-- The Fall of Magtheridon (A)
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(28792),	-- A'dal's Signet of Defense
-						i(28793),	-- Band of Crimson Fury
-						i(28790),	-- Naaru Lightwarden's Band
-						i(28791),	-- Ring of the Recalcitrant
-					},
-				}),
-				q(11003, {	-- The Fall of Magtheridon (H)
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(28792),	-- A'dal's Signet of Defense
-						i(28793),	-- Band of Crimson Fury
-						i(28790),	-- Naaru Lightwarden's Band
-						i(28791),	-- Ring of the Recalcitrant
-					},
 				}),
 				q(9420,  {  -- The Finest Down
 					["races"] = ALLIANCE_ONLY,
@@ -1005,8 +1021,6 @@ _.Zones =
 						i(25983),	-- Heavy Miner's Belt
 						i(25984),	-- Miner's Brace
 					},
-				}),
-				q(11526, {	-- The Missing Magistrix
 				}),
 				q(10287, {	-- The Mistress Revealed
 					["races"] = HORDE_ONLY,
@@ -1072,12 +1086,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 19683 },	-- Ogath the Mad
 				}),
-				q(10119, {	-- Through the Dark Portal (A)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(9407,  {	-- Through the Dark Portal (H)
-					["races"] = HORDE_ONLY,
-				}),
 				q(49816, {	-- To Outland!
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1141,8 +1149,6 @@ _.Zones =
 				}),
 				q(10485, {	-- Warlord of the Bleeding Hollow
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(9724,  {	-- Warning the Cenarion Circle
 				}),
 				q(10055, {	-- Waste Not, Want Not
 					["provider"] = { "n", 21209 },	-- Dumphry
