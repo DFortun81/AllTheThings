@@ -225,9 +225,9 @@ _.Zones =
 				q(45414, {	-- Confirming Suspicions
 					["u"] = 40,
 				}),
-				q(10134, {	-- Crimson Crystal Clue
-					["provider"] = { "i", 29476 },	-- Crimson Crystal Shard
+				q(10134, {	-- Crimson Crystal Clue -- aa
 					["crs"] = { 19188 },	-- Raging Colossus
+					["provider"] = { "i", 29476 },	-- Crimson Crystal Shard
 				}),
 				q(9399,  {	-- Cruel Taskmasters
 					["races"] = ALLIANCE_ONLY,
@@ -709,6 +709,7 @@ _.Zones =
 					},
 				}),
 				q(10351, {	-- Natural Remedies
+					["coord"] = { 15.9, 51.5, 100 },
 					["provider"] = { "n", 19294 },	-- Earthbinder Galandria Nightbreeze
 					["sourceQuests"] = { 10349 },	-- The Earthbinder
 					["g"] = {
@@ -842,6 +843,7 @@ _.Zones =
 					["sourceQuests"] = { 10449 },	-- Apothecary Zelana
 				}),
 				q(10255, {	-- Testing the Antidote
+					["coord"] = { 15.6, 52.0, 100 },
 					["provider"] = { "n", 16991 },	-- Thiah Redmane
 					["sourceQuests"] = { 9372 },	-- Demonic Contamination
 					["g"] = {
@@ -902,6 +904,7 @@ _.Zones =
 				q(10368, {	-- The Dreghood Elders
 				}),
 				q(10349, {	-- The Earthbinder
+					["coord"] = { 15.6, 52.0, 100 },
 					["provider"] = { "n", 19293 },	-- Tola'thion
 					["sourceQuests"] = { 10134 },	-- Crimson Crystal Clue
 				}),

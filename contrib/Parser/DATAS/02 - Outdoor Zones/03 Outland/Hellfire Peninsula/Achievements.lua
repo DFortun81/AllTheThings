@@ -25,7 +25,10 @@ _.Zones =
 						crit(7, {	-- Green, But Not Orcs [Missing Rest that procs achieve]
 						}),
 						crit(8, {	-- Cenarion Post
-							["sourceQuest"] = 10255,	-- Testing the Antidote
+							["sourceQuests"] = {
+								10351,	-- Natural Remedies
+								10255,	-- Testing the Antidote
+							},
 						}),
 					},
 				}),
@@ -71,7 +74,10 @@ _.Zones =
 							},
 						}),
 						crit(8, {	-- Cenarion Post
-							["sourceQuest"] = 10255,	-- Testing the Antidote
+							["sourceQuests"] = {
+								10351,	-- Natural Remedies
+								10255,	-- Testing the Antidote
+							},
 						}),
 					},
 				}),
