@@ -5,91 +5,115 @@ _.NeverImplemented =
 {
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
-	n(-9956, {	-- Quests
-		q(24644),	-- Troll introduction complete
-	
-		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
-	
-		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success"
-		q(25040),	-- Tirisfal Glades - attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
-		q(27224),	-- Western Plaguelands - Andorhal Phase Flag - triggers during "The Depravity of the Forsaken"
-		
+	n(-9956, {	-- Quests				
 		q(13807),	-- FLAG: Tournament Invitation
-		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
-		q(35903),	-- Blackrock Depths: bonus boss killed
-		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
-		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
-		q(35894),	-- Dire Maul: Bonus objective complete
-		q(32750),	-- Durumu Dead (killed Durumu on normal in ToT)
-		q(32755),	-- Empyreal Queens Dead (killed Twin Consorts in ToT)
+
+
+		-------------------
+		--  UNKNOWN/NYI  --
+		-------------------
+		q(38995),	-- Unused
+		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+
+		
+		-------------------
+		--    VARIOUS    --
+		-------------------
+		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
+		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
+
+
+		-------------------
+		---   CLASSIC   ---
+		-------------------
+	--	QUESTING / LEVELING
+		q(27224),	-- Andorhal Phase Flag — Western Plaguelands — triggers during "The Depravity of the Forsaken"
+		q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
+		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
+		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success"
+		q(24644),	-- Troll Introduction Complete
+
+	--	DUNGEONS
+		q(35929),	-- Blackfathom Deeps Reward Quest
+		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
+		q(35894),	-- Dire Maul (Bonus) Reward Quest
 		q(35601),	-- Gnomeregan Reward Quest - received after killing Mekgineer Thermaplugg
 		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - received after killing Grubbis
+		q(35888),	-- Maraudon (Everything) Reward Quest — dungeon completion
+		q(35598),	-- Razorfen Downs Reward Quest — dungeon completion
+		q(35615),	-- Razorfen Kraul Reward Quest — dungeon completion
+		q(35304),	-- Shadowfang Keep Reward Quest — dungeon completion
+		q(35563),	-- Stratholme - Main Gate - Reward Quest
+		q(35564),	-- Stratholme - Main Gate - Bonus Objective Reward Quest
+		q(35575),	-- Stratholme - Service Entrance Bonus Objective Reward Quest
+		q(35574),	-- Stratholme - Service Entrance Reward Quest
+		q(35307),	-- Wailing Caverns Bonus Objective
+		q(35303),	-- Wailing Caverns Reward Quest — Naralax awakening ritual complete
+		q(35588),	-- Zul'Farrak Reward Quest — end-of-dungeon reward granted
+		q(35589),	-- Zul'Farrak Bonus Reward
+
+		
+		-------------------
+		---   OUTLAND   ---
+		-------------------
+	--	QUESTING / LEVELING
+		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
+	
+	--	DUNGEONS
 		q(35572),	-- Hellfire Ramparts Reward Quest (Triggered by completing Hellfire Ramparts)
+		q(35532),	-- Magisters' Terrace Reward Quest (completed Timewalking Magisters' Terrace)
+		q(35518),	-- Shattered Halls Reward Quest (completed Timewalking Shattered Halls)
+		q(35538),	-- The Arcatraz Reward Quest (completed Timewalking Arcatraz)
+		q(35522),	-- The Black Morass Reward Quest (completed Timewalking Black Morass)
+		q(35566),	-- The Blood Furnace Reward Quest (Triggered by completing The Blood Furnace)
+
+		
+		-------------------
+		--   CATACLYSM   --
+		-------------------
+		q(35348),	-- Blackrock Caverns Reward Quest
+		q(25829),	-- Mount Hyjal - goldrinn hub complete
+		q(27872),	-- Mount Hyjal - tortolla hub complete
+		q(27873),	-- Mount Hyjal - aviana hub complete
+		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
+		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
+		
+
+		-------------------
+		--      MOP      --
+		-------------------
+	--	DUNGEONS
+		q(35595),	-- Scholomance Reward Quest
+	
+	--	RAIDS
+		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
+		q(32750),	-- Durumu Dead (killed Durumu on normal in ToT)
+		q(32755),	-- Empyreal Queens Dead (killed Twin Consorts in ToT)
 		q(32745),	-- Horridon Dead (killed Horridon on normal in ToT)
 		q(32754),	-- Iron Qon Dead (killed Iron Qon on normal in ToT)
 		q(32749),	-- Ji'kun Dead (killed Ji'kun on normal in ToT)
 		q(32744),	-- Jin'rokh Dead (killed Jin'rokh on normal in ToT)
 		q(32756),	-- Lei Shen Dead (killed Lei Shen on normal in ToT)
 		q(32748),	-- Maegaera Dead (killed Megaera on heroic in ToT — yes, "Megaera" is spelled wrong in the tracking quest title)
-		q(35532),	-- Magisters' Terrace Reward Quest (completed Timewalking Magisters' Terrace)
-		q(35888),	-- Maraudon: dungeon completion
-		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
 		q(32751),	-- Primordious Dead (killed Primordius on normal in ToT — again, "Primordius" is spelled wrong in the tracking quest title)
-		q(35929),	-- Blackfathom Deeps: bonus objective rewarded
-		q(35598),	-- Razorfen Downs: dungeon completion
-		q(35615),	-- Razorfen Kraul: dungeon completion
-		q(35304),	-- Shadowfang Keep: dungeon completion
-		q(35518),	-- Shattered Halls Reward Quest (completed Timewalking Shattered Halls)
+		q(32747),	-- Tortos Dead (killed Tortos on heroic in ToT)
+		q(32746),	-- Zandalari Council Dead (killed Council of Elders on heroic in ToT)
+		
+	--	WORLD BOSSES
 		q(33226),	-- Short-Supply Reward (Celestials bonus roll)
 		q(32923),	-- Short-Supply Reward (Galleon bonus roll)
 		q(32919),	-- Short-Supply Reward (Nalak bonus roll)
 		q(32922),	-- Short-Supply Reward (Oondasta bonus roll)
 		q(33225),	-- Short-Supply Reward (Ordos bonus roll)
 		q(32924),	-- Short-Supply Reward (Sha of Anger bonus roll)
-		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
-		q(35563),	-- Stratholme main gate bonus reward
-		q(35564),	-- Stratholme main gate bonus objective completed
-		q(35575),	-- Stratholme service entrance bonus reward
-		q(35574),	-- Stratholme service entrance end of dungeon bonus reward
-		q(35538),	-- The Arcatraz Reward Quest (completed Timewalking Arcatraz)
-		q(35522),	-- The Black Morass Reward Quest (completed Timewalking Black Morass)
-		q(35566),	-- The Blood Furnace Reward Quest (Triggered by completing The Blood Furnace)
-		q(32747),	-- Tortos Dead (killed Tortos on heroic in ToT)
-		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
-		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
-		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
-		q(35307),	-- Wailing Caverns: bonus objective complete
-		q(35303),	-- Wailing Caverns: Naralax awakening ritual complete
-		q(35963),	-- Warlords Heroic Dungeon Reward Quest (triggered at the end of Mythic Grimrail Depot)
-		q(35962),	-- Warlords Max Level Dungeon Reward Quest (triggered at the end of Normal Grimrail Depot)
-		q(32746),	-- Zandalari Council Dead (killed Council of Elders on heroic in ToT)
-		q(35588),	-- Zul'Farrak: end-of-dungeon reward granted
-		q(35589),	-- Zul'Farrak: bonus objective completed
-		
-		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-		
-		-------------------
-		--  UNKNOWN/NYI  --
-		-------------------
-		q(38995),	-- Unused
-		
-		-------------------
-		---   OUTLAND   ---
-		-------------------
-		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
-		
-		-------------------
-		--   CATACLYSM   --
-		-------------------
-		q(25829),	-- Mount Hyjal - goldrinn hub complete
-		q(27872),	-- Mount Hyjal - tortolla hub complete
-		q(27873),	-- Mount Hyjal - aviana hub complete
-		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
-		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
+
+
 		-------------------
 		--      WOD      --
 		-------------------
+	--	QUESTING / LEVELING / VARIOUS
+		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
 		q(37187),	-- The Dark Portal
 		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
@@ -97,58 +121,7 @@ _.NeverImplemented =
 		q(35253),	-- triggered during "Onslaught's End" when door to Teron'gor was opened
 		q(35297),	-- triggered during "Blazing of Glory" when you approach Khadgar around 67.6,60.5
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
-		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking herbs
-		q(33964),	-- Arak Flowerpicker
-		q(36636),	-- Blueprint Read
-		q(36856),	-- Burning Missive
-		q(36849),	-- Burning Missive
-		q(36850),	-- Burning Missive
-		q(36851),	-- Burning Missive
-		q(36852),	-- Burning Missive
-		q(36853),	-- Burning Missive
-		q(36854),	-- Burning Missive
-		q(36855),	-- Burning Missive
-		q(34580),	-- Draenor Flowerpicker
-		q(34581),	-- Draenor Flowerpicker Note Found
-		q(37311),	-- Drafting Table Interact
 		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
-		q(34831),	-- Encounter Mushroom
-		q(36640),	-- Followers Obtained
-		q(33961),	-- Frostfire Flowerpicker
-		q(33966),	-- Gorgrond Flowerpicker
-		q(33963),	-- Nagrand Flowerpicker
-		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle
-		q(34872),	-- Prized Repossessions Tracking
-		q(34985),	-- Prized Repossessions Tracking
-		q(34986),	-- Punching Through Tracking
-		q(34873),	-- Punching Through Tracking
-		q(35192),	-- See Reinforcements Teleport
-		q(33962),	-- Shadowmoon Flowerpicker
-		q(34053),	-- SoL Conversation Tracker
-		q(36942),	-- Soulbinder Aedraa
-		q(36951),	-- Arakkoa Exodus - offered by garrison bulletin/command board. Duplicate questID
-		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
-		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
-		q(38348),	-- Triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar". Appears to be a duplicate ID
-		q(34871),	-- Supply Recovery Tracking
-		q(34984),	-- Supply Recovery Tracking
-		q(33960),	-- Talador Flowerpicker
-		q(33965),	-- Tanaan Flowerpicker
-		q(39434),	-- Short-Supply Reward
-		q(39375),	-- Short-Supply Reward
-		q(39376),	-- Short-Supply Reward
-		q(39377),	-- Short-Supply Reward
-		q(39378),	-- Short-Supply Reward
-		q(39128),	-- Tanaan Vignette
-		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
-		q(39723),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(39724),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(39725),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(39750),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
-		
-		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
-
 		q(36249),	-- Gorgrond - Active Choice: Lumbermill - trigger if the lumbermill is currently active
 		q(36250),	-- Gorgrond - Active Choice: Lumbermill - see 36249
 		q(35064),	-- Gorgrond - Sparring Arena
@@ -164,16 +137,6 @@ _.NeverImplemented =
 		q(39307),	-- Gorgrond - Mechasuit
 		q(36712),	-- Gorgrond - Mill Treasure 1 - triggers when looting the ancient titan chest questID 35701
 		q(35946),	-- Gorgrond - Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the sparring arena active (37.3, 70.7)
-
-		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
-					
-		q(34679),	-- Nagrand - Alliance Stables Tracking Event
-		q(34680),	-- Nagrand - Alliance Workshop Tracking Event
-		q(37202),	-- Nagrand - Hemet Nesingwary Visitor Tracking Event
-		q(34812),	-- Nagrand - Horde Stables Tracking Event
-		q(34813),	-- Nagrand - Horde Workshop Tracking Event
-		q(34518),	-- Nagrand - Nagrand Corral
-		
 		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
 		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
 		q(35628),	-- Shadowmoon Valley - Friend of the Exarchs: Rangari Chel selected
@@ -186,7 +149,6 @@ _.NeverImplemented =
 		q(33167),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 3
 		q(33166),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 4
 		q(34896),	-- Shadowmoon Valley - Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
-
 		q(35874),	-- Spires of Arak - Apparatus - triggers after finishing "The Ebon Hunter" quest
 		q(36859),	-- Spires of Arak - Deprecated version of "The Howling Crag" bonus objective
 		q(35201),	-- Spires of Arak - Krixel
@@ -208,7 +170,6 @@ _.NeverImplemented =
 		q(36798),	-- Spires of Arak - Rooby Roo fed 3x to reveal the treasure
 		q(35028),	-- Spires of Arak - Krikka and Vakora Tracking - triggers during "The Bloodmane" and "Words of the Raven Mother"
 		q(36724),	-- Spires of Arak - Reshad Tracking - triggers after turning in "Call of the Raven Mother"
-
 		q(34935),	-- Talador - After Wall Greeting. Triggers during "Dropping In" after taking the portal
 		q(34560),	-- Talador - Armory
 		q(34568),	-- Talador - Armory
@@ -257,7 +218,6 @@ _.NeverImplemented =
 		q(34503),	-- Talador - Screaming Telmor Citizen,	-- triggers in Telmor
 		q(34760),	-- Talador - triggered when looting the Rusted Lockbox. WoWhead lists as a nagrand treasure but that treasure doesn't seem to exist
 		q(35491),	-- Talador - Underseer Bloodmane vignette duplicate flag
-		
 		q(37969),	-- Tanaan Jungle - Vol'mar built
 		q(38433),	-- Tanaan Jungle - lion's watch built
 		q(39306),	-- Tanaan Jungle - Call to Arms chosen during "Bring the Reinforcements"
@@ -265,14 +225,87 @@ _.NeverImplemented =
 		q(37887),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE
 		q(38583),	-- Tanaan Jungle - Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden
 		q(38587),	-- Tanaan Jungle - Assault on the Throne of Kil'jaeden - criteria complete
+
+	--	DUNGEONS
+		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
+		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
+		q(35963),	-- Warlords Heroic Dungeon Reward Quest (triggered at the end of Mythic Grimrail Depot)
+		q(35962),	-- Warlords Max Level Dungeon Reward Quest (triggered at the end of Normal Grimrail Depot)
+		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
+	
+	--	GARRISON
+		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
+		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking herbs
+		q(37311),	-- Drafting Table Interact
+		q(36640),	-- Followers Obtained
+		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
+		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
+		q(38348),	-- Triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar". Appears to be a duplicate ID
+		q(39723),	-- Tracking Quest. Related to rare naval missions in the shipyard
+		q(39724),	-- Tracking Quest. Related to rare naval missions in the shipyard
+		q(39725),	-- Tracking Quest. Related to rare naval missions in the shipyard
+		q(39750),	-- Tracking Quest. Related to rare naval missions in the shipyard
+		q(34679),	-- Nagrand - Alliance Stables Tracking Event
+		q(34680),	-- Nagrand - Alliance Workshop Tracking Event
+		q(37202),	-- Nagrand - Hemet Nesingwary Visitor Tracking Event
+		q(34812),	-- Nagrand - Horde Stables Tracking Event
+		q(34813),	-- Nagrand - Horde Workshop Tracking Event
+		q(34518),	-- Nagrand - Nagrand Corral
+
+	--	TREASURES
+		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
+		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
+	
+	--	WORLD BOSSES (probably?  'short-supply reward' is usually a bonus roll)
+		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
+		q(39434),	-- Short-Supply Reward
+		q(39375),	-- Short-Supply Reward
+		q(39376),	-- Short-Supply Reward
+		q(39377),	-- Short-Supply Reward
+		q(39378),	-- Short-Supply Reward
+
+	--	???
+		q(33964),	-- Arak Flowerpicker
+		q(36636),	-- Blueprint Read
+		q(36856),	-- Burning Missive
+		q(36849),	-- Burning Missive
+		q(36850),	-- Burning Missive
+		q(36851),	-- Burning Missive
+		q(36852),	-- Burning Missive
+		q(36853),	-- Burning Missive
+		q(36854),	-- Burning Missive
+		q(36855),	-- Burning Missive
+		q(34580),	-- Draenor Flowerpicker
+		q(34581),	-- Draenor Flowerpicker Note Found
+		q(34831),	-- Encounter Mushroom
+		q(33961),	-- Frostfire Flowerpicker
+		q(33966),	-- Gorgrond Flowerpicker
+		q(33963),	-- Nagrand Flowerpicker
+		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle
+		q(34872),	-- Prized Repossessions Tracking
+		q(34985),	-- Prized Repossessions Tracking
+		q(34986),	-- Punching Through Tracking
+		q(34873),	-- Punching Through Tracking
+		q(35192),	-- See Reinforcements Teleport
+		q(33962),	-- Shadowmoon Flowerpicker
+		q(34053),	-- SoL Conversation Tracker
+		q(36942),	-- Soulbinder Aedraa
+		q(36951),	-- Arakkoa Exodus - offered by garrison bulletin/command board. Duplicate questID
+		q(34871),	-- Supply Recovery Tracking
+		q(34984),	-- Supply Recovery Tracking
+		q(33960),	-- Talador Flowerpicker
+		q(33965),	-- Tanaan Flowerpicker
+		q(39128),	-- Tanaan Vignette
+		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
 		
-		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		
+
 		-------------------
 		--    Legion     --
 		-------------------
+		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 	--	Various tracking quests
 		q(44502),	-- Calamir loot tracking quest? Need to confirm if this or 43193 is the weekly credit
+		q(49177),	-- Sotanathor kill or bonus roll (?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion dungeon reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -333,6 +366,7 @@ _.NeverImplemented =
 	--	Various non-zone bonus objectives
 		q(43483),	-- Fel Annihilation — bonus objective in "In Defense of the Exodar" scenario, unavailable afterwards
 		
+
 		-------------------
 		--      BFA      --
 		-------------------
@@ -360,8 +394,22 @@ _.NeverImplemented =
 		q(57096),	-- 
 		]]--
 		
+	--	INCURSIONS
+		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
+		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
+		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde)
+		q(53640),	-- Zuldazar (playing as Horde) / Tiragarde (playing as Alliance) Secret Supply Chest
+		q(54714),	-- Tiragarde Sound Secret Supply Chest
+		q(55347),	-- Tiragarde Sound Secret Supply Chest
+		
+	--	PVP / WAR MODE
+		q(53636),	-- Looting a bounty in Stormsong as Horde (all 3 trigger at the same time)
+		q(53638),	-- Looting a bounty in Stormsong as Horde
+		q(53639),	-- Looting a bounty in Stormsong as Horde
+		
 		q(56056),	-- Wekemara kill questID (secondary to WQ, which needs to be attached for /attwq)
 		q(56899),	-- Wekemara bonus roll
+		q(56527),	-- Queen Azshara bonus roll (LFR)
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
 		q(51871),	-- Drustvar repeatable random chest
 		q(51875),	-- Drustvar repeatable random chest
