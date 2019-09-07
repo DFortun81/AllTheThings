@@ -46,15 +46,28 @@ _.Zones =
 							["sourceQuest"] = 10876,	-- The Foot of the Citadel
 						}),
 						crit(4, {	-- Spinebreaker Post
+							["sourceQuests"] = {
+								10295,	-- From the Abyss
+								10834,	-- Grillok "Darkeye"
+								10258,	-- Honor the Fallen (probably)
+								10220,	-- Make Them listen
+								9345,	-- Preparing the Salve
+							},
 						}),
 						crit(5, {	-- The Mag'har
 							["sourceQuest"] = 9406,	-- The Mag'har
 						}),
 						crit(6, {	-- Falcon Watch
+							["sourceQuests"] = {
+								9370,	-- The Cleansing Must Be Stopped
+							},
 						}),
-						crit(7, {	-- Green, But Not Orcs [Missing Rest that procs achieve]
+						crit(7, {	-- Green, But Not Orcs
 							["sourceQuests"] = {
 								10630,	-- Beneath Thrallmar
+								10087,	-- Burn It Up... For the Horde! (probably)b
+								9356,	-- Smooth as Butter
+								9351,	-- Voidwalkers Gone Wild
 							},
 						}),
 						crit(8, {	-- Cenarion Post

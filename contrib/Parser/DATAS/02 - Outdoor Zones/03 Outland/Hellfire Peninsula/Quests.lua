@@ -34,16 +34,21 @@ _.Zones =
 					},
 				}),
 				q(9410,  {	-- A Spirit Guide
-					["provider"] = { "n", 16574 },	-- Far Seer Regulkut
+					["coord"] = { 54.2, 37.8, 100 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 9405 },	-- The Warchief's Mandate
+					["provider"] = { "n", 16574 },	-- Far Seer Regulkut
+					["sourceQuest"] = 9405,	-- The Warchief's Mandate
 				}),
 				q(9401,  {	-- A Strange Weapon
-					["provider"] = { "n", 17062 },	-- Fel Orc Corpse
+					["coord"] = { 33.6, 43.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17062 },	-- Fel Orc Corpse
 					["sourceQuests"] = { 9400 },	-- The Assassin
 				}),
-				q(10367, {	-- A Traitor Among Us
+				q(10367, {	-- A Traitor Among Us -- aa
+					["coord"] = { 16.2, 65.0, 100 },
+					["provider"] = { "n", 19361 },	-- Naladu
+					["sourceQuest"] = 10403,	-- Naladu
 				}),
 				q(9447,  {	-- Administering the Salve
 					["u"] = 40,
@@ -156,7 +161,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10250, {	-- Bloody Vengeance
+					["coord"] = { 61.7, 81.7, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19736 },	-- Althen the Historian
+					["sourceQuest"] = 10230,	-- The Battle Horn
 				}),
 				q(10538, {	-- Boiling Blood
 					["coord"] = { 61.1, 81.7, 100 },
@@ -181,9 +189,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10087, {	-- Burn It Up... For the Horde!
-					["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
+					["coord"] = { 55.1, 38.7, 100 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 10086 },	-- Work For the Horde
+					["provider"] = { "n", 21283 },	-- Megzeg Nukklebust
+					["sourceQuest"] = 10086,	-- Work For the Horde
 					["g"] = {
 						i(29934),	-- Helm of Affinity
 						i(29930),	-- Nature-Stitched Kilt
@@ -205,7 +214,8 @@ _.Zones =
 						i(25484),	-- Telhamat Pendant
 					},
 				}),
-				q(10132, {	-- Colossal Menace
+				q(10132, {	-- Colossal Menace -- aa
+					["coord"] = { 15.6, 52.0, 100 },
 					["provider"] = { "n", 19293 },	-- Tola'thion
 					["g"] = {
 						i(28062),	-- Expedition Repeater
@@ -244,9 +254,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10229, {	-- Decipher the Tome
+					["crs"] = { 16906 },	-- Unyielding Knight
 					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 28552 },	-- A Mysterious Tome
+					["description"] = "Must have started or completed |cFFFFD700Make Them Listen|r for this quest to become available.",
 				}),
-				q(9372,  {	-- Demonic Contamination
+				q(9372,  {	-- Demonic Contamination -- aa
+					["coord"] = { 15.6, 52.0, 100 },
 					["provider"] = { "n", 16991 },	-- Thiah Redmane
 				}),
 				q(10916, {	-- Digging for Prayer Beads
@@ -398,7 +412,10 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(10295, {  -- From the Abyss
+					["coord"] = { 61.8, 81.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19683 },	-- Ogath the Mad
+					["sourceQuest"] = 10294,	-- Void Ridge
 					["g"] = {
 						i(29400),	-- Abyssal Shroud
 						i(29398),	-- Circle of Banishing
@@ -419,7 +436,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10834, {  -- Grillok "Darkeye"
+					["coord"] = { 61.6, 81.8, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 22231 },	-- Zezzak
+					["sourceQuest"] = 10813,	-- The Eyes of Grillok
 					["g"] = {
 						i(28057),	-- Bonechewer Berserker's Vest
 						i(28055),	-- Gilded Crimson Chestplate
@@ -434,6 +454,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9361,  {	-- Helboar, the Other White Meat
+					["coord"] = { 49.2, 74.8, 100 },
+					["provider"] = { "n", 19344 },	-- Legassi
+					["sourceQuest"] = 9349,	-- Ravager Egg Roundup
 				}),
 				q(10106, {	-- Hellfire Fortifications (A)
 					["races"] = ALLIANCE_ONLY,
@@ -470,7 +493,10 @@ _.Zones =
 					["provider"] = { "n", 16790 },	-- Falconer Drenna Riverwind
 				}),
 				q(10258, {  -- Honor the Fallen
+					["coord"] = { 61.7, 81.7, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19736 },	-- Althen the Historian
+					["sourceQuest"] = 10250,	-- Bloody Vengeance
 					["g"] = {
 						i(29108),	-- Blade of the Unyielding
 						i(29109),	-- Rod of the Unyielding
@@ -533,7 +559,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10213, {	-- Investigate the Crash
+					["coord"] = { 60.9, 81.6, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16858 },	-- Grelag
+					["sourceQuest"] = 9345,	-- Preparing the Salve
 				}),
 				q(10140, {	-- Journey to Honor Hold
 					["provider"] = { "n", 18931 },	-- Amish Wildhammer
@@ -547,7 +576,8 @@ _.Zones =
 					["sourceQuests"] = { 10120 },	-- Arrival in Outlanad
 					["isBreadcrumb"] = true,
 				}),
-				q(10159, {	-- Keep Thornfang Hill Clear!
+				q(10159, {	-- Keep Thornfang Hill Clear! -- aa
+					["coord"] = { 15.9, 52.1, 100 },
 					["provider"] = { "n", 16888 },	-- Mahuram Stouthoof
 				}),
 				q(10160, {	-- Know Your Enemy
@@ -666,7 +696,17 @@ _.Zones =
 						i(29926),	-- Whispering Tunic
 					},
 				}),
-				q(10403, {	-- Naladu
+				q(10403, {	-- Naladu -- aa
+					["coords"] = {
+						{ 15.5, 58.7, 100 },	-- Akoru the Firecaller
+						{ 13.0, 58.4, 100 },	-- Aylaan the Waterwaker
+						{ 13.1, 61.0, 100 },	-- Morod the Windstirrer
+					},
+					["providers"] = {
+						{ "n", 20678 },	-- Akoru the Firecaller
+						{ "n", 20679 },	-- Aylaan the Waterwaker
+						{ "n", 20677 },	-- Morod the Windstirrer
+					},
 				}),
 				q(10351, {	-- Natural Remedies
 					["provider"] = { "n", 19294 },	-- Earthbinder Galandria Nightbreeze
@@ -778,7 +818,12 @@ _.Zones =
 					["sourceQuests"] = { 10238 },	-- How to Serve Goblins
 				}),
 				q(9356,  {	-- Smooth as Butter
-					i(27684),	-- Recipe: Buzzard Bites
+					["coord"] = { 49.2, 74.8, 100 },
+					["provider"] = { "n", 19344 },	-- Legassi
+					["sourceQuest"] = 9361,	-- Helboar, the Other White Meat
+					["g"] = {
+						i(27684),	-- Recipe: Buzzard Bites
+					},
 				}),
 				q(9387,  {  -- Source of the Corruption -- aa
 					["coord"] = { 26.7, 59.7, 100 },
@@ -821,14 +866,21 @@ _.Zones =
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 				}),
 				q(10230, {	-- The Battle Horn
+					["coord"] = { 61.7, 81.7, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19736 },	-- Althen the Historian
+					["sourceQuest"] = 10229,	-- Decipher the Tome
 				}),
-				q(9912,  {	-- The Cenarion Expedition
+				q(9912,  {	-- The Cenarion Expedition -- aa
+					["coord"] = { 16.0, 52.1, 100 },
 					["provider"] = { "n", 16885 },
 					["isBreadcrumb"] = true,
 				}),
 				q(9370,  {  -- The Cleansing Must Be Stopped
+					["coord"] = { 26.9, 59.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16791 },	-- Ryathen the Somber
+					["sourceQuest"] = 9366,	-- In Need of Felblood
 					["g"] = {
 						i(25499),	-- Felblood Band
 						i(25500),	-- Felforce Medallion
@@ -857,7 +909,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10813, {	-- The Eyes of Grillok
+					["coord"] = { 61.6, 81.8, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 22231 },	-- Zezzak
+					["sourceQuest"] = 10792,	-- Zeth'Gor Must Burn!
 				}),
 				q(11002, {	-- The Fall of Magtheridon (A)
 					["races"] = ALLIANCE_ONLY,
@@ -899,6 +954,10 @@ _.Zones =
 					["coord"] = { 28.4, 60.2, 100 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 16789 },	-- Ranger Captain Venn'ren
+					["sourceQuests"] = {
+						9498,	-- Falcon Watch (all but blood elves)
+						9499,	-- Falcon Watch (blood elves only)
+					},
 				}),
 				q(10399, {	-- The Heart of Darkness
 					["races"] = ALLIANCE_ONLY,
@@ -910,6 +969,12 @@ _.Zones =
 				}),
 				q(9558,  {	-- The Longbeards
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(9406, {	-- The Mag'har
+					["coord"] = { 31.9, 27.7, 100 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16845 },	-- Gorkan Bloodfish
+					["sourceQuest"] = 9410,	-- A Spirit Guide
 				}),
 				q(10099, {  -- The Mastermind
 					["races"] = ALLIANCE_ONLY,
@@ -967,9 +1032,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9405,  {	-- The Warchief's Mandate
-					["provider"] = { "n", 3230 },	-- Nazgrel
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 9401 },	-- The Warchief's Mandate
+					["provider"] = { "n", 3230 },	-- Nazgrel
+					["sourceQuest"] = 9401,	-- The Warchief's Mandate
 				}),
 				q(10278, {	-- The Warp Rifts -- aa
 					["coord"] = { 61.8, 81.5, 100 },
@@ -1013,11 +1079,19 @@ _.Zones =
 					["provider"] = { "i", 29590 },	-- Burning Legion Missive
 				}),
 				q(10294, {	-- Void Ridge
+					["coord"] = { 61.8, 81.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 19683 },	-- Ogath the Mad
+					["sourceQuest"] = 10278,	-- The Warp Rifts
 				}),
 				q(9351,  {	-- Voidwalkers Gone Wild
-					i(25787),	-- Charm of Alacrity
-					i(25786),	-- Hypnotist's Watch
+					["coord"] = { 49.1, 74.8, 100 },
+					["provider"] = { "n", 19367 },	-- "Screaming" Screed Luckheed
+					["sourceQuest"] = 10161,	-- In Case of Emergency...
+					["g"] = {
+						i(25787),	-- Charm of Alacrity
+						i(25786),	-- Hypnotist's Watch
+					},
 				}),
 				q(9466,  {	-- Wanted: Blacktalon the Savage -- aa
 					["coord"] = { 28.0, 60.3, 100 },
@@ -1068,7 +1142,10 @@ _.Zones =
 					},
 				}),
 				q(10792, {	-- Zeth'Gor Must Burn! (H)
+					["coord"] = { 61.2, 81.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 22107 },	-- Captain Darkhowl
+					["sourceQuest"] = 10809,	-- WANTED: Worg Master Kruush
 					["g"] = {
 						i(27732),	-- Infiltrator's Cloak
 						i(27731),	-- Vindicator's Cloak
