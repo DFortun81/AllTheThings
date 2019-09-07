@@ -94,13 +94,19 @@ _.Zones =
 					["provider"] = { "n", 16793 },	-- Magistrix Carinda
 				}),
 				q(9472,  {	-- Arelion's Mistress
+					["coord"] = { 26.3, 60.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16793 },
+					["sourceQuest"] = 10287,	-- The Mistress Revealed
 					["g"] = {
 						i(25505),	-- Carinda's Wedding Band
 					},
 				}),
 				q(10286, {	-- Arelion's Secret
+					["coord"] = { 26.3, 60.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16793 },
+					["sourceQuest"] = 9374,	-- Arelion's Journal
 				}),
 				q(10288, {	-- Arrival in Outland (A)
 					["provider"] = { "n", 19229 },	-- Commander Duron
@@ -114,6 +120,9 @@ _.Zones =
 					["sourceQuests"] = { 49816 },	-- To Outland [Breadcrumb]
 				}),
 				q(10369, {	-- Arzeth's Demise
+					["coord"] = { 16.2, 65.0, 100 },
+					["provider"] = { "n", 19361 },	-- Naladu
+					["sourceQuest"] = 10368,	-- The Dreghood Elders
 				}),
 				q(9543,  {	-- Atonement
 					["races"] = ALLIANCE_ONLY,
@@ -597,7 +606,11 @@ _.Zones =
 					},
 				}),
 				q(9483,  {	-- Life's Finer Pleasures
+					["coord"] = { 27.2, 62.0, 100 },
 					["races"] = HORDE_ONLY,
+					["collectible"] = false,
+					["repeatable"] = true,
+					["description"] = "Only available during |cFFFFD700Arelion's Mistress|r.",
 				}),
 				q(10057, {	-- Looking to the Leadership
 					["races"] = ALLIANCE_ONLY,
@@ -626,7 +639,10 @@ _.Zones =
 					},
 				}),
 				q(9391,  {  -- Marking the Path
+					["coord"] = { 28.4, 60.2, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16789 },	-- Ranger Captain Venn'ren
+					["sourceQuest"] = 9340,	-- The Great Fissure
 					["g"] = {
 						i(25503),	-- Flamehandler's Gloves
 						i(25502),	-- Lightbearer's Gauntlets
@@ -902,6 +918,9 @@ _.Zones =
 					},
 				}),
 				q(10368, {	-- The Dreghood Elders
+					["coord"] = { 16.2, 65.0, 100 },
+					["provider"] = { "n", 19361 },
+					["sourceQuest"] = 10367,	-- A Traitor Among Us
 				}),
 				q(10349, {	-- The Earthbinder
 					["coord"] = { 15.6, 52.0, 100 },
@@ -991,6 +1010,14 @@ _.Zones =
 				}),
 				q(10287, {	-- The Mistress Revealed
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 20159 },	-- Megister Aledis
+					["sourceQuest"] = 10286,	-- Arelion's Secret
+					["coords"] = {
+						{ 10.3, 50.3, 100 },
+						{ 15.7, 50.0, 100 },
+						{ 20.0, 50.0, 100 },
+						{ 24.8, 49.3, 100 },
+					},
 				}),
 				q(10142, {	-- The Path of Anguish
 					["provider"] = { "n", 19309 },	-- Sergeant Altumus

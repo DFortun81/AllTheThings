@@ -62,7 +62,12 @@ _.Zones =
 						}),
 						crit(6, {	-- Falcon Watch
 							["sourceQuests"] = {
+								9397,	-- Birds of a Feather
 								9370,	-- The Cleansing Must Be Stopped
+								-- all quests below need to be confirmed
+								9472,	-- Arelion's Mistress 
+								9391,	-- Marking the Path
+								9387,	-- Source of the Corruption
 							},
 						}),
 						crit(7, {	-- Green, But Not Orcs
