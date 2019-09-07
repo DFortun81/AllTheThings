@@ -17,7 +17,7 @@ _.Zones =
 				}),
 				q(31923, {	-- Ras'an
 					["isDaily"] = true,
-					["coord"] = { 17.23, 50.51, 102 },
+					["coord"] = { 17.2, 50.5, 102 },
 					["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
 				}),
 			}),

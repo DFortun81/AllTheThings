@@ -834,16 +834,18 @@ _.Zones =
 					["repeatable"] = true,
 					["sourceQuest"] = 10162,	-- Mission: The Abyssal Shelf
 				}),
-				q(9732,  {	-- Return to the Marsh (awarded "Draining the Marsh" criteria for Zangarmarsh)
+				q(9732,  {	-- Return to the Marsh
 					["coord"] = { 16.0, 52.1, 100 },
 					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
-					["description"] = "This quest is required for the 'Draining the Marsh' criteria in Zangarmarsh.",
 					["sourceQuests"] = { 9724 },	-- Warning the Cenarion Circle
 					["g"] = {
 						i(25524),	-- Cenarion Expedition Boots
 						i(25522),	-- Marshstrider's Spaulders
 						i(25523),	-- Windcaller's Gauntlets
 					},
+				}),
+				q(9734,  {	-- Return to the Marsh (NYI)
+					["u"] = 1,
 				}),
 				q(10388, {	-- Return to Thrallmar
 					["races"] = HORDE_ONLY,

@@ -29,13 +29,6 @@ _.Zones =
 									}),
 								}),
 							}),
-							q(9802, {	-- Plants of Zangarmarsh
-								["provider"] = { "n", 17909 },	-- Lauranna Thar'well
-								["coord"] = { 80.3, 64.2, 102 },
-								["g"] = {
-									i(24402),	-- Package of Identified Plants
-								},
-							}),
 						}),
 						n(-2,   {	-- Vendors
 							n(17904,  {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
@@ -102,33 +95,34 @@ _.Zones =
 								["coord"] = { 19.1, 49.4, 102 },
 								["sourceQuest"] = 9806,	-- Fertile Spores
 								["repeatable"] = true,
-								["maxReputation"] = { 942, FRIENDLY },
+								["maxReputation"] = { 970, FRIENDLY },
 							}),
 							q(9809, {	-- More Glowcaps 
 								["provider"] = { "n", 17924 },	-- Mshii'fn
 								["coord"] = { 19.7, 52.1, 102 },
 								["sourceQuest"] = 9808,	-- Glowcap Mushrooms
 								["repeatable"] = true,
-								["maxReputation"] = { 942, FRIENDLY },
+								["maxReputation"] = { 970, FRIENDLY },
 							}),
 							q(9742, {	-- More Spore Sacs
 								["provider"] = { "n", 17923 },	-- Fahssn
 								["coord"] = { 19.0, 63.4, 102 },
 								["sourceQuest"] = 9739,	-- The Sporelings' Plight
 								["repeatable"] = true,
-								["maxReputation"] = { 942, FRIENDLY },
+								["maxReputation"] = { 970, FRIENDLY },
 							}),
 							q(9744, {	-- More Tendrils!
 								["provider"] = { "n", 17923 },	-- Fahssn
 								["coord"] = { 19.0, 63.4, 102 },
 								["sourceQuest"] = 9743,	-- Natural Enemies
 								["repeatable"] = true,
-								["maxReputation"] = { 942, FRIENDLY },
+								["maxReputation"] = { 970, FRIENDLY },
 							}),
 							q(9727, {	-- Now That We're Still Friends...
 								["provider"] = { "n", 17856 },	-- Gzhun'tt
 								["coord"] = { 19.5, 50.0, 102 },
 								["sourceQuest"] = 9726,	-- Now That We're Friends...
+								["minReputation"] = { 970, FRIENDLY },
 								["repeatable"] = true,
 							}),
 						}),

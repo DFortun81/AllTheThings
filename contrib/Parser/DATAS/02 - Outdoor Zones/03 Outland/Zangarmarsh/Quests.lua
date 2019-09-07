@@ -80,7 +80,7 @@ _.Zones =
 				}),
 				q(9845,  {	-- Angling to Beat the Competition
 					["provider"] = { "n", 18018 },	-- Zurjaya
-					["coord"] = { 32.9, 48.9, 102 },
+					["coord"] = { 32.2, 49.6, 102 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9835,  {	-- Ango'rosh Encroachment
@@ -179,7 +179,6 @@ _.Zones =
 				q(9806,  {	-- Fertile Spores
 					["provider"] = { "n", 17925 },	-- Gshaff
 					["coord"] = { 19.1, 49.4, 102 },
-					["sourceQuest"] = 9919,	-- Sporeggar
 					["minReputation"] = { 970, NEUTRAL },
 				}),
 				q(9729,  {	-- Fhwoor Smash!
@@ -207,7 +206,6 @@ _.Zones =
 					["provider"] = { "n", 17924 },	-- Msshi'fn
 					["coord"] = { 19.7, 52.1, 102 },
 					["repeatable"] = true,
-					["sourceQuest"] = 9919,	-- Sporeggar
 					["minReputation"] = { 970, NEUTRAL },
 					["maxReputation"] = { 970, FRIENDLY },
 				}),
@@ -322,7 +320,7 @@ _.Zones =
 				}),
 				q(9743,  {	-- Natural Enemies
 					["provider"] = { "n", 17923 },	-- Fahssn
-					["coord"] = { 19.0, 63,4, 102 },
+					["coord"] = { 19.0, 62.6, 102 },
 				}),
 				q(10105, {	-- News for Rakoria
 					["provider"] = { "n", 18013 },	-- Shadow Hunter Denjai
@@ -362,7 +360,6 @@ _.Zones =
 				q(9726,  {	-- Now That We're Friends...
 					["provider"] = { "n", 17856 },	-- Gzhun'tt
 					["coord"] = { 19.5, 50.0, 102 },
-					["sourceQuest"] = 50130,	-- A Friendly Gesture
 					["minReputation"] = { 970, FRIENDLY },
 					["g"] = {
 						i(27750),	-- Hammer of the Sporelings
@@ -387,6 +384,13 @@ _.Zones =
 						i(25618),	-- Telaar Courier's Cloak
 					},
 				}),
+				q(9802, {	-- Plants of Zangarmarsh -- aa
+					["provider"] = { "n", 17909 },	-- Lauranna Thar'well
+					["coord"] = { 80.3, 64.2, 102 },
+					["g"] = {
+						i(24402),	-- Package of Identified Plants
+					},
+				}),
 				q(9904,  {	-- Pursuing Terrorclaw
 					["provider"] = { "n", 18018 },	-- Zurjaya
 					["coord"] = { 32.9, 48.9, 102 },
@@ -409,15 +413,6 @@ _.Zones =
 					["provider"] = { "n", 18011 },	-- Zurai
 					["coord"] = { 85.3, 54.8, 102 },
 					["races"] = HORDE_ONLY,
-				}),
-				q(9732,  {	-- Return to the Marsh
-					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
-					["sourceQuest"] = 9724,	-- Warning the Cenarion Circle
-					["g"] = {
-						i(25524),	-- Cenarion Expedition Boots
-						i(25523),	-- Windcaller's Gauntlets
-						i(25522),	-- Marshstrider's Spaulders
-					},
 				}),
 				q(9894,  {	-- Safeguarding the Watchers
 					["provider"] = { "n", 18070 },	-- Windcaller Blackhoof
@@ -458,10 +453,6 @@ _.Zones =
 					["provider"] = { "n", 17923 },	-- Fahssn
 					["coord"] = { 19.0, 63,4, 102 },
 					["minReputation"] = { 970, NEUTRAL },
-					["sourceQuests"] = {
-						9743,	-- Natural Enemies
-						9739,	-- The Sporelings' Plight
-					},
 				}),
 				q(9709,  {	-- Stealing Back the Mushrooms
 					["provider"] = { "n", 17831 },	-- Watcher Leesa'oh
@@ -551,7 +542,7 @@ _.Zones =
 				}),
 				q(9739,  {	-- The Sporelings' Plight
 					["provider"] = { "n", 17923 },	-- Fahssn
-					["coord"] = { 19.0, 63,4, 102 },
+					["coord"] = { 19.0, 62.6, 102 },
 				}),
 				q(9902,  {	-- The Terror of Marshlight Lake
 					["provider"] = { "n", 18009 },	-- Puluu
@@ -654,6 +645,9 @@ _.Zones =
 					["provider"] = { "n", 17841 },	-- Ysiel Windsinger
 					["coord"] = { 78.4, 62.0, 102 },
 					["isBreadcrumb"] = true,	-- for "A Warm Welcome"
+				}),
+				q(9733,  {	-- Warning the Cenarion Circle (NYI)
+					["u"] = 1,
 				}),
 				q(9724,  {	-- Warning the Cenarion Circle
 					["provider"] = { "n", 17841 },	-- Ysiel Windsinger

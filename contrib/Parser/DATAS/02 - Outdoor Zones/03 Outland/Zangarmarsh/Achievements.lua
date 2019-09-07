@@ -14,8 +14,9 @@ _.Zones =
 					crit(1, {	-- Swamprat Post (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
-							9899,	-- A Job Undone
 							9772,	-- Jyoba's Report
+							-- TODO:: verify below
+							9899,	-- A Job Undone
 							9898,	-- Nothin' Says Lovin' Like a Big Stinger
 							9769,	-- There's No Explanation for Fashion
 						},
@@ -24,6 +25,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							9783,	-- An Unnatural Drought
+							-- TODO:: verify below
 							9896, 	-- Blacksting's Bane
 							9790,	-- Diaphanous Wings
 							9777,	-- Fulgor Spores
@@ -33,9 +35,10 @@ _.Zones =
 					crit(2, {	-- Zabra'jin (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
+							9904,	-- Pursuing Terrorclaw
+							-- TODO:: verify below
 							9847,	-- A Spirit Ally?
 							9816,	-- Have You Ever Seen One of These?
-							9904,	-- Pursuing Terrorclaw
 							9775,	-- Report to Shadow Hunter Denjai
 							9903,	-- The Biggest of Them All
 							9842,	-- The Sharpest Blades
@@ -44,20 +47,22 @@ _.Zones =
 					crit(3, {	-- Orebor Harborage (A)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
+							9902,	-- The Terror of Marshlight Lake
+							-- TODO:: verify below
 							10115,	-- Daggerfen Deviance
 							9905,	-- Maktu's Revenge
 							9839,	-- Overlord Gorefist
 							9848,	-- Secrets of the Daggerfen
 							9830,	-- Stinger Venom
 							9833,	-- Lines of Communication
-							9902,	-- The Terror of Marshlight Lake
 						},
 					}),
 					crit(3, {	-- The Defense of Zabra'jin (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
-							9823,	-- Us or Them
 							10118,	-- Message to the Daggerfen
+							-- TODO:: verify below
+							9823,	-- Us or Them
 							10117,	-- Wanted: Chieftain Mummaki
 						},
 					}),
@@ -70,18 +75,18 @@ _.Zones =
 					crit(6, {	-- Saving the Sporeloks
 						["sourceQuests"] = {
 							9788,	-- A Damp, Dark Place
+							-- TODO:: verify below
 							9894,	-- Safeguarding the Watchers
 							10096,	-- Saving the Sporeloks
 						},
 					}),
 					crit(7, {	-- A Trip With the Sporelings
 						["sourceQuests"] = {
-							9806,	-- Fertile Spores
-							9729,	-- Fhwoor Smash!
-							9808,	-- Glowcap Mushrooms
-							9743,	-- Natural Enemies
 							9726,	-- Now That We're Friends...
-							9739,	-- The Sporelings' Plight
+							9919,	-- Sporeggar
+							-- TODO:: verify below
+							9806,	-- Fertile Spores (probably)
+							9729,	-- Fhwoor Smash! (probably)
 						},
 					}),
 				}),
