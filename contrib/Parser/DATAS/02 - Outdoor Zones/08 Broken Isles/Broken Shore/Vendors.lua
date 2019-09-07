@@ -5,16 +5,16 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
-			n(-2, {	-- Vendors
+			n(-2, {		-- Vendors
 				n(118403, {	-- Syaith <Loaner Demon>
-					["description"] = "/kiss her during Where There is a Whip... WQ.",
-					["coord"] = { 49.0, 55.8 },
+					["description"] = "/kiss her during the Where There is a Whip... WQ.",
+					["coord"] = { 49.0, 55.8, 646 },
 					["g"] = {
 						i(147120),	-- Technique: Glyph of the Shadow Succubus
 					},
 				}),
 				n(121589, {	-- Thaumaturge Vashreen <Purveryor of Exquisite Furnishings>
-					["description"] = "|cff66ccffThis vendor no longer exists on the Broken Shore and the only way to obtain these appearances are by the Legion Invasion bosses, and Legion Invasion quests only.|r",
+					["description"] = "|cff66ccffThis vendor no longer exists on the Broken Shore and the only way to obtain these appearances is from the Legion Invasion bosses, and Legion Invasion quests only.|r",
 					["g"] = {
 						un(2, i(147796, {	-- Relinquished Hood
 							i(146786),	-- Cloth
@@ -70,127 +70,197 @@ _.Zones =
 					},
 				}),
 				n(120076, {	-- Treasure Master Iks'reeged
-					currency(1226, {	-- Nethershard
-						i(142452),	-- Lingering Wyrmtongue Essence Toy
-						i(143559, {	-- Wyrmtongue's Cache Key
-							o(268551, {	-- Curious Wyrmtongue Cache [Used first one out of many]
-								i(147867),	-- Pilfered Sweeper Toy
-								i(146953),	-- Scraps Pet
-							}),
+					["sourceQuests"] = { 46666 },	-- The Motherlode!
+					["coord"] = { 47.8, 67.4, 646 },
+					["g"] = {
+						i(142452, {	-- Lingering Wyrmtongue Essence (TOY!)
+							["cost"] = { { "c", 1226, 50000 }, },	-- 50,000x Nethershard
 						}),
-					}),
+						i(143559, {	-- Wyrmtongue's Cache Key
+							["cost"] = { { "c", 1226, 2000 }, },	-- 2,000x Nethershard
+							["g"] = {
+								o(268551, {	-- Curious Wyrmtongue Cache [Used first one out of many]
+									i(147867),	-- Pilfered Sweeper (TOY!)
+									i(146953),	-- Scraps (PET!)
+								}),
+							},
+						}),
+					},
 				}),
 				n(120898, {	-- Warmage Kath'leen <Legionfall Artificer>
-					currency(1226, {	-- Nethershard
-						i(147451),	-- Armorcrafter's Commendation
-						i(141372, { -- Arsenal: Armaments of the Ebon Blade
-							["ignoreBonus"] = true,
-							["g"] = {
-								i(141365),	-- Blood 2H Axe
-								i(141377),	-- Blood 1H Sword
-								i(141366),	-- Blood 2H Polearm
-								i(141379),	-- Blood 1H Warsword
-								i(141375),	-- Blood 2H Sword
-								i(141381),	-- Icy 2H Axe
-								i(141362),	-- Icy 1H Sword
-								i(141373),	-- Icy 2H Polearm
-								i(141363),	-- Icy 1H Warsword
-								i(141376),	-- Icy 2H Sword
-								i(141382),	-- Unholy 2H Axe
-								i(141378),	-- Unholy 1H Sword
-								i(141374),	-- Unholy 2H Polearm
-								i(141380),	-- Unholy 1H Warsword
-								i(141364),	-- Unholy 2H Sword
-							},
-						}),
-						i(141371, { -- Arsenal: Armaments of the Silver Hand
-							["ignoreBonus"] = true,
-							["g"] = {
-								i(141370),	-- Ardent Defender
-								i(150953),	-- Ardent Gavel
-								i(141367),	-- Ardent Hammer
-								i(141368),	-- Ardent Warhammer
-								i(141654),	-- Gilded Defender
-								i(141653),	-- Gilded Warhammer
-							},
-						}),
-						i(147708),	-- Legion Invasion Simulator Toy
-						i(130199),	-- Legion Pocket Poral Toy
-						i(147205),	-- Legionfall Tabard
-						i(147775, {	-- Nether Portal Disruptor
-							["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. Can be bought or sold on the Auction House.",
-						}),
-						i(151541),	-- Technique: Glyph of Floating
-						i(141067),	-- Technique: Glyph of Wrathguard
-						i(147216, {	-- Dauntless Hood
-							i(147241),	-- Cloth
-							i(147242),	-- Leather
-							i(147243),	-- Mail
-							i(147244),	-- Plate
-						}),
-						i(147221, {	-- Dauntless Choker
+					i(147451, {	-- Armorcrafter's Commendation
+						["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
+					}),
+					i(141372, { -- Arsenal: Armaments of the Ebon Blade
+						["ignoreBonus"] = true,
+						["cost"] = { { "c", 1226, 2000 }, },	-- 2,000x Nethershard
+						["g"] = {
+							i(141365),	-- Blood 2H Axe
+							i(141377),	-- Blood 1H Sword
+							i(141366),	-- Blood 2H Polearm
+							i(141379),	-- Blood 1H Warsword
+							i(141375),	-- Blood 2H Sword
+							i(141381),	-- Icy 2H Axe
+							i(141362),	-- Icy 1H Sword
+							i(141373),	-- Icy 2H Polearm
+							i(141363),	-- Icy 1H Warsword
+							i(141376),	-- Icy 2H Sword
+							i(141382),	-- Unholy 2H Axe
+							i(141378),	-- Unholy 1H Sword
+							i(141374),	-- Unholy 2H Polearm
+							i(141380),	-- Unholy 1H Warsword
+							i(141364),	-- Unholy 2H Sword
+						},
+					}),
+					i(141371, { -- Arsenal: Armaments of the Silver Hand
+						["ignoreBonus"] = true,
+						["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
+						["g"] = {
+							i(141370),	-- Ardent Defender
+							i(150953),	-- Ardent Gavel
+							i(141367),	-- Ardent Hammer
+							i(141368),	-- Ardent Warhammer
+							i(141654),	-- Gilded Defender
+							i(141653),	-- Gilded Warhammer
+						},
+					}),
+					i(147698, {	-- Cauterizing Void Shard
+						["cost"] = { { "c", 1226, 5000 }, },	-- 5,000x Nethershard
+					}),
+					i(139879, {	-- Crate of Champion Equipment
+						["cost"] = { { "c", 1226, 250 }, },		-- 250x Nethershard
+					}),
+					i(147212, {	-- Dauntless Bracers
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
+							i(147226),	-- Fel-Treated Bracers
+							i(147227),	-- Galvanized Stormscale Bracers
+							i(147225),	-- Ley-Touched Bracers
+							i(147228),	-- Storm-Tempered Bracers
+						},
+					}),
+					i(147221, {	-- Dauntless Choker
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
 							i(147263),	-- Animus Pendant
-						}),
-						i(147218, {	-- Dauntless Spaulders
-							i(147249),	-- Cloth
-							i(147250),	-- Leather
-							i(147251),	-- Mail
-							i(147252),	-- Plate
-						}),
-						i(147222, {	-- Dauntless Cloak
-							i(147269) -- Cloak
-						}),
-						i(147213, {	-- Dauntless Tunic
-							i(147232),	-- Cloth
-							i(147229),	-- Leather
-							i(147230),	-- Mail
-							i(147231),	-- Plate
-						}),
-						i(147212, {	-- Dauntless Bracers
-							i(147225),	-- Cloth
-							i(147226),	-- Leather
-							i(147227),	-- Mail
-							i(147228),	-- Plate
-						}),
-						i(147215, {	-- Dauntless Gauntlets
-							i(147237),	-- Cloth
-							i(147238),	-- Leather
-							i(147239),	-- Mail
-							i(147240),	-- Plate
-						}),
-						i(147219, {	-- Dauntless Girdle
-							i(147253),	-- Cloth
-							i(147254),	-- Leather
-							i(147255),	-- Mail
-							i(147256),	-- Plate
-						}),
-						i(147217, {	-- Dauntless Leggings
-							i(147245),	-- Cloth
-							i(147246),	-- Leather
-							i(147247),	-- Mail
-							i(147248),	-- Plate
-						}),
-						i(147214, {	-- Dauntless Treads
-							i(147233),	-- Cloth
-							i(147234),	-- Leather
-							i(147235),	-- Mail
-							i(147236),	-- Plate
-						}),
-						i(147220, {	-- Dauntless Ring
+						},
+					}),
+					i(147222, {	-- Dauntless Cloak
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
+							i(147269) -- Unifying Drape
+						},
+					}),
+					i(147215, {	-- Dauntless Gauntlets
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
+							i(147238),	-- Fel-Treated Gauntlets
+							i(147239),	-- Galvanized Stormscale Gauntlets
+							i(147237),	-- Ley-Touched Gloves
+							i(147240),	-- Storm-Tempered Gauntlets
+						},
+					}),
+					i(147219, {	-- Dauntless Girdle
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
+							i(147254),	-- Fel-Treated Belt
+							i(147255),	-- Galvanized Stormscale Belt
+							i(147253),	-- Ley-Touched Cord
+							i(147256),	-- Storm-Tempered Girdle
+						},
+					}),
+					i(147216, {	-- Dauntless Hood
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
+							i(147242),	-- Fel-Treated Hood
+							i(147243),	-- Galvanized Stormscale Helm
+							i(147241),	-- Ley-Touched Hood
+							i(147244),	-- Storm-Tempered Greathelm
+						},
+					}),
+					i(147217, {	-- Dauntless Leggings
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
+							i(147246),	-- Fel-Treated Legguards
+							i(147247),	-- Galvanized Stormscale Legguards
+							i(147245),	-- Ley-Touched Trousers
+							i(147248),	-- Storm-Tempered Legplates
+						},
+					}),
+					i(147220, {	-- Dauntless Ring
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
 							i(147257),	-- Avenging Band
-						}),
-						i(147223, {	-- Dauntless Trinket
+						},
+					}),
+					i(147218, {	-- Dauntless Spaulders
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
+							i(147250),	-- Fel-Treated Spaulders
+							i(147251),	-- Galvanized Stormscale Spaulders
+							i(147249),	-- Ley-Touched Mantle
+							i(147252),	-- Storm-Tempered Shoulderguard
+						},
+					}),
+					i(147214, {	-- Dauntless Treads
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
+							i(147234),	-- Fel-Treated Boots
+							i(147235),	-- Galvanized Stormscale Boots
+							i(147233),	-- Ley-Touched Sandals
+							i(147236),	-- Storm-Tempered Greaves
+						},
+					}),
+					i(147223, {	-- Dauntless Trinket
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
 							i(147275),	-- Beguiler's Talisman
 							i(147276),	-- Spellbinder's Seal
 							i(147278),	-- Stalwart Crest
-						}),
-						i(146659),	-- Nethershard Essence
-						i(153006),	-- Grimoire of Lost Knowledge
-						i(147864),	-- Legionfall Banner
-						i(147698),	-- Cauterizing Void Shard
-						i(147707),	-- Repurposed Fel Focuser
-						i(156630),	-- Relinquished Armor Set
-						i(139879),	-- Crate of Champion Equipment
+						},
+					}),
+					i(147213, {	-- Dauntless Tunic
+						["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+						["g"] = {
+							i(147229),	-- Fel-Treated Chestguard
+							i(147230),	-- Galvanized Stormscale Chestguard
+							i(147232),	-- Ley-Touched Robes
+							i(147231),	-- Storm-Tempered Breastplate
+						},
+					}),
+					i(153006, {	-- Grimoire of Lost Knowledge
+						["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
+					}),
+					i(147708, {	-- Legion Invasion Simulator (TOY!)
+						["cost"] = { { "c", 1226, 25000 }, },	-- 25,000x Nethershard
+					}),
+					i(130199, {	-- Legion Pocket Portal (TOY!)
+						["cost"] = { { "c", 1226, 7500 }, },	-- 7,500x Nethershard
+					}),
+					i(147864, {	-- Legionfall Banner
+						["cost"] = { { "c", 1226, 4000 }, },	-- 4,000x Nethershard
+					}),
+					i(147205, {	-- Legionfall Tabard
+						["cost"] = { { "c", 1226, 10000 }, },	-- 10,000x Nethershard
+					}),
+					i(147775, {	-- Nether Portal Disruptor
+						["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. Can be bought or sold on the Auction House.",
+						["cost"] = { { "c", 1226, 250 }, },		-- 250x Nethershard
+					}),
+					i(146659, {	-- Nethershard Essence
+						["cost"] = { { "c", 1226, 8000 }, },	-- 8,000x Nethershard
+					}),
+					i(156630, {	-- Relinquished Armor Set
+						["cost"] = { { "c", 1226, 400 }, },		-- 1,000x Nethershard
+					}),
+					i(147707, {	-- Repurposed Fel Focuser
+						["cost"] = { { "c", 1226, 7500 }, },	-- 7,500x Nethershard
+					}),
+					i(151541, {	-- Technique: Glyph of Floating Shards
+						["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
+					}),
+					i(141067, {	-- Technique: Glyph of Wrathguard
+						["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
 					}),
 				}),
 			}),

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-2, { 	-- Vendors
+			n(-2, {	-- Vendors
 				n(107139, {	-- Enchantress Ilyana
 					["coord"] = { 46.8, 40.8, 630 },
 					["g"] = {
@@ -83,7 +83,7 @@ _.Zones =
 						i(130157, {	-- Syxsehnz Rod (TOY!)
 							["cost"] = 5000000,		-- 500g
 						}),
-						i(130191), 	-- Trapped Treasure Chest Kit (TOY!)
+						i(130191),	-- Trapped Treasure Chest Kit (TOY!)
 						i(137773, {	-- Vantus Rune Technique: Cenarius (Rank 3)
 							["cost"] = 20000000,	-- 2,000g
 						}),
@@ -96,35 +96,62 @@ _.Zones =
 						i(139603, {	-- Vault Patroller's Warboots
 							["cost"] = 10000000,	-- 1,000g
 						}),
-						i(140580), 	-- Warden's Tabard
+						i(140580),	-- Warden's Tabard
 					},
 				}),
 				n(107376, {	-- Veridis Fallon <Court of Farondis Emissary>
 					["coord"] = { 46.9, 41.4, 630 },
 					["g"] = {
-						i(137978),	-- Pattern: Imbued Silkweave Gloves (Rank 3)
-						i(137977),	-- Pattern: Imbued Silkweave Hood (Rank 3)
-						i(138015),	-- Pattern: Silkweave Pantaloons (Rank 3)
-						i(137980),	-- Pattern: Imbued Silkweave Robe (Rank 3)
-						i(137780),	-- Vantus Rune Technique: Krosus (Rank 3)
-						i(137774),	-- Vantus Rune Technique: Skorpyron (Rank 3)
-						i(137779),	-- Vantus Rune Technique: High Botanist Tel'arn (Rank 3)
-						i(137776),	-- Vantus Rune Technique: Trilliax (Rank 3)
-						i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
-							artifact(224),	-- Marksmanship Hunter Hidden Appearance
-						}),
 						i(129276, {	-- Beginner's Guide to Dimensional Rifting
-							ach(11175),	-- Higher Dimensional Rifting
+							["cost"] = 5000000,	-- 500g
+							["g"] = {
+								ach(11175),	-- Higher Dimensional Rifting
+							},
 						}),
-						i(140672), 	-- Court Scribe Pet
-						i(129279), 	-- Enchanted Stone Whistle Toy
-						i(140577), 	-- Court of Farondis Tabard
-						i(139606), 	-- Cadet's Gaudy Scarf
-						i(139595), 	-- Once-Fashionable Nar'thalas Leggings
-						{
-							["itemID"] = 139631,	-- Vainglorious Draught
+						i(139606, {	-- Cadet's Gaudy Scarf
+							["cost"] = 10000000,	-- 1,000g
+						}),
+						i(140577),	-- Court of Farondis Tabard
+						i(140672, {	-- Court Scribe (PET!)
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(129279),	-- Enchanted Stone Whistle (TOY!)
+						i(139595, {	-- Once-Fashionable Nar'thalas Leggings
+							["cost"] = 50000000,	-- 5,000g
+						}),
+						i(137978, {	-- Pattern: Imbued Silkweave Gloves (Rank 3)
+							["cost"] = 30000000,	-- 3,000g
+						}),
+						i(137977, {	-- Pattern: Imbued Silkweave Hood (Rank 3)
+							["cost"] = 30000000,	-- 3,000g
+						}),
+						i(137980, {	-- Pattern: Imbued Silkweave Robe (Rank 3)
+							["cost"] = 30000000,	-- 3,000g
+						}),
+						i(138015, {	-- Pattern: Silkweave Pantaloons (Rank 3)
+							["cost"] = 5500000,	-- 550g
+						}),
+						i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
+							["cost"] = 20000000,	-- 2,000g
+							["g"] = {
+								artifact(224),	-- Marksmanship Hunter Hidden Appearance
+							},
+						}),
+						i(139631, {	-- Vainglorious Draught
 							["questID"] = 43514,	-- A Vainglorious Past
-						},
+						}),
+						i(137779, {	-- Vantus Rune Technique: High Botanist Tel'arn (Rank 3)
+							["cost"] = 20000000,	-- 2,000g
+						}),
+						i(137780, {	-- Vantus Rune Technique: Krosus (Rank 3)
+							["cost"] = 20000000,	-- 2,000g
+						}),
+						i(137774, {	-- Vantus Rune Technique: Skorpyron (Rank 3)
+							["cost"] = 20000000,	-- 2,000g
+						}),
+						i(137776, {	-- Vantus Rune Technique: Trilliax (Rank 3)
+							["cost"] = 20000000,	-- 2,000g
+						}),
 					},
 				}),
 			}),
