@@ -129,6 +129,7 @@ _.Zones =
 					},
 				}),
 				q(10630, {	-- Beneath Thrallmar
+					["coord"] = { 51.3, 30.5, 100 },
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 					["sourceQuests"] = { 10629 },	-- Shizz Work
 					["g"] = {
@@ -191,7 +192,10 @@ _.Zones =
 					},
 				}),
 				q(10391, {	-- Cannons of Rage
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3230 },	-- Nazgrel
+					["sourceQuest"] = 10390,	-- Forge Camp: Mageddon
 				}),
 				q(9427,  {  -- Cleansing the Waters
 					["races"] = ALLIANCE_ONLY,
@@ -219,7 +223,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10136, {	-- Cruel's Intentions
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3230 },	-- Nazgrel
+					["sourceQuest"] = 10392,	-- Doorway to the Abyss
 					["g"] = {
 						i(28041),	-- Bladefist's Breadth
 						i(28042),	-- Regal Protectorate
@@ -286,7 +293,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10392, {	-- Doorway to the Abyss
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3230 },	-- Nazgrel
+					["sourceQuest"] = 10391,	-- Cannons of Rage
 				}),
 				q(10937, {  -- Drill the Drillmaster
 					["races"] = ALLIANCE_ONLY,
@@ -471,6 +481,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10238, {	-- How to Serve Goblins
+					["coord"] = { 51.3, 30.5, 100 },
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 					["sourceQuests"] = { 10236 },	-- Outland Sucks!
 				}),
@@ -601,6 +612,12 @@ _.Zones =
 				q(9373,  {	-- Missing Missive
 				}),
 				q(10125, {	-- Mission: Disrupt Communications (NYI)
+					["u"] = 1,
+				}),
+				q(10401, {	-- Mission: End All, Be All (NYI)
+					["u"] = 1,
+				}),
+				q(10149, {	-- Mission: End All, Be All (NYI)
 					["u"] = 1,
 				}),
 				q(10146, {	-- Mission: Gateways Murketh and Shaadraz (A)
@@ -756,6 +773,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10629, {	-- Shizz Work
+					["coord"] = { 51.3, 30.5, 100 },
 					["provider"] = { "n", 16915 },	-- Foreman Razelcraz
 					["sourceQuests"] = { 10238 },	-- How to Serve Goblins
 				}),
@@ -788,7 +806,10 @@ _.Zones =
 					},
 				}),
 				q(10389, {	-- The Agony and the Darkness
+					["coord"] = { 55.1, 36.0, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 21175 },	-- Magister Bloodhawk
+					["sourceQuest"] = 10392,	-- Doorway to the Abyss
 				}),
 				q(9417,  {	-- The Arakkoa Threat
 					["races"] = ALLIANCE_ONLY,
@@ -987,7 +1008,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10393, {	-- Vile Plans
+					["crs"] = { 20798 },	-- Razorsaw
 					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 29590 },	-- Burning Legion Missive
 				}),
 				q(10294, {	-- Void Ridge
 					["races"] = HORDE_ONLY,

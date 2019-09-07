@@ -36,6 +36,11 @@ _.Zones =
 							["sourceQuest"] = 10388,	-- Return to Thrallmar
 						}),
 						crit(2, {	-- Cruel's Intentions
+							["sourceQuests"] = {
+								10136,	-- Cruel's Intentions
+								10389,	-- The Agony and the Darkness
+								10393,	-- Vile Plans
+							},
 						}),
 						crit(3, {	-- The Hand of Kargath
 							["sourceQuest"] = 10876,	-- The Foot of the Citadel
@@ -48,7 +53,9 @@ _.Zones =
 						crit(6, {	-- Falcon Watch
 						}),
 						crit(7, {	-- Green, But Not Orcs [Missing Rest that procs achieve]
-							["sourceQuest"] = 10630,	-- Beneath Thrallmar
+							["sourceQuests"] = {
+								10630,	-- Beneath Thrallmar
+							},
 						}),
 						crit(8, {	-- Cenarion Post
 							["sourceQuest"] = 10255,	-- Testing the Antidote
