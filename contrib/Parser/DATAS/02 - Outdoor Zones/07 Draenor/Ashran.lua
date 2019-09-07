@@ -1687,9 +1687,10 @@ _.Zones =
 					n(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							currency(823, {	-- Apexis Crystal
-								["g"] = {
-									un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
+							i(116776, {	-- Pale Thorngrazer
+								["cost"] = {
+									{ "g", 50000000 },	-- 5,000g
+									{ "i", 137642, 100 },	-- 100x Mark of Honor
 								},
 							}),
 							i(115517),	-- Wrynn's Vanguard Tabard
@@ -1698,8 +1699,11 @@ _.Zones =
 					n(85115, {	-- Dazzerian <Warspear Quartermaster>
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							currency(823, {	-- Apexis Crystal
-								un(2, i(116775)),	-- Breezestrider Stallion (Rep removed from Medallion of the Legion in hotfix for 8.0)
+							i(116775, {	-- Breezestrider Stallion
+								["cost"] = {
+									{ "g", 50000000 },		-- 5,000g
+									{ "i", 137642, 100 },	-- 100x Mark of Honor
+								},
 							}),
 							i(115518),	-- Vol'jin's Spear Tabard
 						},
