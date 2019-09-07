@@ -629,7 +629,6 @@ _.Zones =
 						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
 					}),
-					i(170075),	-- Recipe: Unagi Skewer
 				},
 			}),
 			q(56370, {	-- Break a Few Eggs (A)
@@ -908,7 +907,7 @@ _.Zones =
 			q(56001, {	-- Drunk Angry Murlocs
 				["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
-				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.  Your cooking may also need to be at a certain level to receive the recipe as a reward.  I saw it at Cooking 168. — slumber",
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.  If the recipe doesn't appear as a quest reward, send in a ticket and a GM will grant it to you.  This is a known issue!",
 				["isDaily"] = true,
 				["coord"] = { 25.5, 26.5, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -920,7 +919,7 @@ _.Zones =
 				["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 				["coord"] = { 25.5, 26.5, 1355 },
 				["sourceQuest"] = 55500,	-- Save A Friend
-				["description"] = "Requires |cFFFFD700Poen Gillbrack||r as your friend.  The recipe reward is maybe bugged please report in the ATT Discord if you get the recipe.",
+				["description"] = "Requires |cFFFFD700Poen Gillbrack||r as your friend.  If the recipe doesn't appear as a quest reward, send in a ticket and a GM will grant it to you.  This is a known issue!",
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -2013,7 +2012,7 @@ _.Zones =
 				["sourceQuest"] = 56429,	-- Up Against It
 			}),
 			q(56830, {	-- Summons from the Deep
-				["description"] = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time).  A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
+				["description"] = "This event takes place every 3 hours (based on realm time, it starts at 3:00, 6:00, 9:00, and 12:00 for NA realms; 1:00, 4:00, 7:00, and 10:00 for EU realms).  A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
 				["isDaily"] = true,
 				["coords"] = {
 					{ 48.5, 40.4, 1355 },
