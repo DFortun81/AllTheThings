@@ -5,25 +5,30 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(261, { 	-- The Steamvault
 		["lvl"] = 65,
-		["maps"] = { 
+		["maps"] = {
 			263,	-- The Steamvault
 			264,	-- The Cooling Pools
 		},
 		["coord"] = { 50.35, 33.39, 102 },	-- The Steamvault, Zangarmarsh
 		["g"] = {
 			n(-17, {	-- Quests
-				{	-- A Proper Fate
-					["questID"] = 29613,	-- A Proper Fate
+				q(29613, {	-- A Proper Fate
 					["provider"] = { "n", 54848 }, 		-- Watcher Jhang
-				},
-				{	-- Containment is Key
-					["questID"] = 29614,	-- Containment is Key
+				}),
+				q(29614, {	-- Containment is Key
 					["provider"] = { "n", 54849 }, 		-- Naturalist Bite
-				},
-				{	-- Windcaller Claw and the Water Thief
-					["questID"] = 29615,	-- Windcaller Claw and the Water Thief
+				}),
+				q(29615, {	-- Windcaller Claw and the Water Thief
 					["provider"] = { "n", 54851 }, 		-- Windcaller Claw
-				},
+				}),
+			}),
+			n(0, {	-- Zone Drops
+				i(24159, {	-- Design: Khorium Band of Frost
+					["crs"] = { 17722 },	-- Coilfang Sorceress
+				}),
+				i(22533, {	-- Formula: Enchant Bracer - Fortitude
+					["crs"] = { 17803 },	-- Coilfang Oracle
+				}),
 			}),
 			d(1, {	-- Normal
 				cr(17797, e(573, {	-- Hydromancer Thespia
@@ -111,23 +116,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
-				["g"] = {
-					{	-- Design: Khorium Band of Frost
-						["itemID"] = 24159,	-- Design: Khorium Band of Frost
-						["crs"] = {
-							17722,	-- Coilfang Sorceress 
-						},
-					},
-					{	-- Formula: Enchant Bracer - Fortitude
-						["itemID"] = 22533,	-- Formula: Enchant Bracer - Fortitude
-						["crs"] = {
-							17803,	-- Coilfang Oracle
-						},
-					},
-				},
-			},
 		},
 	}),
 })};

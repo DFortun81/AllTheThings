@@ -31,7 +31,10 @@ _.Zones =
 					i(24954),	-- Bogslayer Helm
 					i(24955),	-- Bogslayer Legplates
 					i(24956),	-- Bogslayer Pauldrons
-					i(24951),	-- Bogslayer Sabatons
+					i(24951),	-- Bogslayer Sabatons					
+					i(29960, {	-- Captured Firefly
+						["crs"] = { 20197 },	-- Bogflare Needler
+					}),
 					i(25314),	-- Ceremonial Hammer
 					i(25313),	-- Cold-Iron Scepter
 					i(25298),	-- Combustion Dagger

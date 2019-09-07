@@ -6,9 +6,6 @@ _.Zones =
 	m(101, {	-- Outland
 		m(102, {	-- Zangarmarsh
 			filter(101, {	-- Pet Battle
-				i(29960, {	-- Captured Firefly
-					["crs"] = { 20197 },	-- Bogflare Needler
-				}),
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
 				}),
