@@ -7,8 +7,9 @@ _.Zones =
 		m(100, {	-- Hellfire Peninsula
 			n(-17, {  	-- Quests
 				q(10864, {	-- A Burden of Souls
-					["provider"] = { "n", 16588 },	-- Apothecary Antonivich
+					["coord"] = { 52.2, 36.4, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16588 },	-- Apothecary Antonivich
 					["sourceQuests"] = { 10835 },	-- Apothecary Antonivich
 				}),
 				q(9442,  {	-- A Debilitating Sickness
@@ -71,13 +72,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10835, {	-- Apothecary Antonivich
-					["provider"] = { "n", 21279 },	-- Apothecary Albreck
+					["coord"] = { 61.1, 81.7, 100 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 10242 },	-- Boiling Blood
+					["provider"] = { "n", 21279 },	-- Apothecary Albreck
+					["sourceQuests"] = { 10538 },	-- Boiling Blood
 				}),
 				q(10449, {	-- Apothecary Zelana
-					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
+					["coord"] = { 55.1, 36.3, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
 					["sourceQuests"] = { 10450 },	-- Bonechewer Blood
 				}),
 				q(9374,  {	-- Arelion's Journal -- aa
@@ -155,8 +158,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(10538, {	-- Boiling Blood
-					["provider"] = { "n", 21279 },	--Apothecary Albreck
+					["coord"] = { 61.1, 81.7, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 21279 },	--Apothecary Albreck
 					["sourceQuests"] = { 10242 },	-- Spinebreaker Post
 				}),
 				q(10450, {	-- Bonechewer Blood -- aa
@@ -692,8 +696,9 @@ _.Zones =
 					["provider"] = { "n", 19344 },	-- Legassi
 				}),
 				q(10875, {	-- Report to Nazgrel
-					["provider"] = { "n", 16588 },	-- Apothecary Antonivich
+					["coord"] = { 52.2, 36.4, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16588 },	-- Apothecary Antonivich
 					["sourceQuests"] = { 10838 },	-- The Demonaic Scryer
 				}),
 				q(10291, {	-- Report to Nazgrel -- aa
@@ -768,8 +773,9 @@ _.Zones =
 					},
 				}),
 				q(10242, {	-- Spinebreaker Post
-					["provider"] = { "n", 21257 },	-- Apothecary Zelana
+					["coord"] = { 66.1, 41.9, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 21257 },	-- Apothecary Zelana
 					["sourceQuests"] = { 10449 },	-- Apothecary Zelana
 				}),
 				q(10255, {	-- Testing the Antidote
@@ -812,12 +818,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10838, {	-- The Demonaic Scryer
+					["coord"] = { 52.2, 36.4, 100 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16588 },	-- Apothecary Antonivichk
+					["sourceQuests"] = { 10864 },	-- A Burden of Souls
 					["g"] = {
 						i(31715),	-- Demoniac Soul Prison
 					},
-					["provider"] = { "n", 16588 },	-- Apothecary Antonivichk
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 10864 },	-- A Burden of Souls
 				}),
 				q(10368, {	-- The Dreghood Elders
 				}),
@@ -856,8 +863,9 @@ _.Zones =
 					},
 				}),
 				q(10876, {	-- The Foot of the Citadel
-					["provider"] = { "n", 3230 },	-- Nazgrel
+					["coord"] = { 55.0, 35.9, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3230 },	-- Nazgrel
 					["sourceQuests"] = { 10875 },	-- Report to Nazgrel
 					["g"] = {
 						i(31720),	-- Battlemaster's Breastplate
@@ -999,7 +1007,10 @@ _.Zones =
 					},
 				}),
 				q(10809, {	-- Wanted: Worg Master Kruush
+					["coord"] = { 61.2, 80.5, 100 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 185166 },	-- Wanted Poster
+					["sourceQuest"] = 10449,	-- Apothecary Zelana (TODO:: verify this. It isn't always available, but first seen while on "Spinebreaker Post")
 				}),
 				q(10485, {	-- Warlord of the Bleeding Hollow
 					["races"] = ALLIANCE_ONLY,
