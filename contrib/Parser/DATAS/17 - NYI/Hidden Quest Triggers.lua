@@ -65,6 +65,7 @@ _.NeverImplemented =
 		q(35532),	-- Magisters' Terrace Reward Quest (completed Timewalking Magisters' Terrace)
 		q(35518),	-- Shattered Halls Reward Quest (completed Timewalking Shattered Halls)
 		q(35538),	-- The Arcatraz Reward Quest (completed Timewalking Arcatraz)
+		q(35521),	-- The Black Morass Reward Quest (lower level version according to blizz API)
 		q(35522),	-- The Black Morass Reward Quest (completed Timewalking Black Morass)
 		q(35566),	-- The Blood Furnace Reward Quest (Triggered by completing The Blood Furnace)
 
