@@ -1405,7 +1405,7 @@ namespace ATT
                                     var dict = value as Dictionary<object, object>;
                                     if (dict == null)
                                     {
-                                        var cost = Convert.ToInt32(value);
+                                        var cost = Convert.ToInt64(value);
                                         if(cost > 0) item[field] = cost;
                                         return;
                                     }
