@@ -12,19 +12,28 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
-					q(51131, {	-- Absolutely Barbaric
+					q(51131, {	-- Absolutely Barbaric (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50549, {	-- Absolutely Barbaric (H)
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(52803, {	-- Accidental Dread
 						["lvl"] = 120,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							crit(16, {	-- Accidental Dread
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(50718, {	-- Agent of Death
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 					q(50488, {	-- Ancient Jawbreaker
 						["lvl"] = 120,
@@ -59,6 +68,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54664, {	-- Azerite Transport
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51064, {	-- Azerite Wounds
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -80,6 +93,20 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50572, {	-- Bloody Intrusion
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53292, {	-- Blooming Siren's Sting
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(53291, {	-- Blooming Star Moss
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
 					q(54691, {	-- Brewmaster Lin (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -100,11 +127,16 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(53323, {	-- Burnished Platinum
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 186,	-- Mining
+					}),
 					q(55342, {	-- Calligraphy
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							crit(1, {	-- Circle
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
@@ -114,14 +146,20 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							ach(13021, {	-- A Most Efficient Apocalypse
 								["races"] = HORDE_ONLY,
 							}),
 						},
 					}),
+					q(50813, {	-- Cargo Reclamation
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50962, {	-- Cargo Reclamation
 						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50568, {	-- Chag's Challenge
@@ -148,7 +186,7 @@ _.Zones =
 					q(52779, {	-- Crawg in the Bog
 						["lvl"] = 120,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							crit(14, {	-- Crawg in the Bog
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -162,7 +200,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							ach(13026),	-- 7th Legion Spycatcher
 						},
 					}),
@@ -170,42 +208,69 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							ach(13025),	-- Zandalari Spycatcher
 						},
 					}),
-					q(51166, {	-- Down to the Roots
+					q(51166, {	-- Down to the Roots (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(51172, {	-- Forked Lightning
+					q(50443, {	-- Down to the Roots (H)
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52007, {	-- Engines of War
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53290, {	-- Flourishing Riverbud
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(53289, {	-- Flourishing Sea Stalks
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(51172, {	-- Forked Lightning (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(50545, {	-- Forked Lightning
+					q(50545, {	-- Forked Lightning (H)
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(51127, {	-- Getting Out of Hand (A)
 						["hordeQuestID"] = 50559,	-- Getting Out of Hand (H)
-						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 120,
-						["groups"] = {
+						["g"] = {
 							ach(13023),	-- It's Really Getting Out of Hand
 						},
 					}),
-					q(50498, {	-- Gutrip
+					q(53322, {	-- Gleaming Storm Silver
 						["lvl"] = 120,
 						["collectible"] = false,
+						["requireSkill"] = 186,	-- Mining
 					}),
 					q(50496, {	-- Glompmaw
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50498, {	-- Gutrip
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50499, {	-- Gwugnug
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50695, {	-- It's Never Time for Cannibalism
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -214,9 +279,14 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
-					q(51546, {	-- It's the Pits
+					q(51546, {	-- It's the Pits (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50689, {	-- It's the Pits (H)
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50502, {	-- Jax'teb the Reanimated
@@ -252,6 +322,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50566, {	-- Lost Scroll
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(53321, {	-- Luminous Monelite
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -266,22 +340,20 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
-						["groups"] = {
-							{
+						["g"] = {
+							crit(5, {	-- Frontline Warrior (March on the Marsh)
 								["achievementID"] = 13283,	-- Frontline Warrior
-								["criteriaID"] = 5,	-- March on the Marsh
-							},
-							{
+							}),
+							crit(5, {	-- Frontline Veteran (March on the Marsh)
 								["achievementID"] = 13387,	-- Frontline Veteran
-								["criteriaID"] = 5,	-- March on the Marsh
-							},
+							}),
 						},
 					}),
 					q(52754, {	-- Marshdwellers
 						["lvl"] = 120,
 						["provider"] = { "n", 141529 },	-- Lozu
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							crit(13, {	-- Marshdwellers
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -290,19 +362,25 @@ _.Zones =
 					q(54267, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
 					q(54236, {	-- Naga Attack!
 						["lvl"] = 120,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
-					q(51548, {	-- Nagative Feedback
+					q(51548, {	-- Nagative Feedback (A)
 						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50587, {	-- Nagative Feedback (H)
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(53293, {	-- Overgrown Anchor Weed
@@ -311,7 +389,11 @@ _.Zones =
 						["lvl"] = 120,
 						["g"] = {
 							i(163601),	-- Overgrown Anchor Weed (QI)
-						},	
+						},
+					}),
+					q(54671, {	-- Overgrown Ancient
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 					q(50510, {	-- Overstuffed Saurolisk
 						["lvl"] = 120,
@@ -321,7 +403,7 @@ _.Zones =
 						["provider"] = { "n", 141799 },	-- Grady Prett
 						["lvl"] = 120,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							crit(15, {	-- Pack Leader
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -359,7 +441,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							ach(13022),	-- Revenge is Best Served Speedily
 						},
 					}),
@@ -368,25 +450,32 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50676, {	-- River Toll
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54135, {	-- Romp in the Swamp (Faction Assault WQ)
 						["provider"] = { "n", 135459 },	-- Provisioner Lija <Talanji's Expedition Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
-						["groups"] = {
-							{
+						["g"] = {
+							crit(2, {	-- Frontline Warrior (Romp in the Swamp)
 								["achievementID"] = 13284,	-- Frontline Warrior
-								["criteriaID"] = 2,	-- Romp in the Swamp
-							},
-							{
+							}),
+							crit(2, {	-- Frontline Veteran (Romp in the Swamp)
 								["achievementID"] = 13388,	-- Frontline Veteran
-								["criteriaID"] = 2,	-- Romp in the Swamp
-							},
+							}),
 						},
 					}),
 					q(50961, {	-- Save Our Scrolls!
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50634, {	-- Save Our Scrolls!
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
 					q(50521, {	-- Scorched Earth
@@ -445,14 +534,27 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(52181, {	-- Smoke and Shadow
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54694, {	-- Stormcaller Morka (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(52385, {	-- Supplies Needed: Slimy Mackerel
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50936, {	-- Survival Strategy
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50660, {	-- Survival Strategy
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(50513, {	-- Tainted Guardian
@@ -465,6 +567,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(55302, {	-- The Cycle of Life
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50474, {	-- The Other Side
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -482,7 +588,15 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54700, {	-- Thomas Vandergrief
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50514, {	-- Totem Maker Jash'ga
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50577, {	-- Unaccounted For
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -491,13 +605,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50483, {	-- Underlord Xerxiz
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54500, {	-- Untapped Potential (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
-					}),
-					q(50483, {	-- Underlord Xerxiz
-						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(50490, {	-- Uroku the Bound
@@ -526,25 +640,40 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 197,	-- Tailoring
-						["groups"] = {
+						["g"] = {
 							i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
 						},
+					}),
+					q(51009, {	-- Work Order: Calcified Bone
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(52396, {	-- Work Order: Contract: Talanji's Expedition
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 773,	-- Inscription
-						["groups"] = {
+						["g"] = {
 							i(162368),	-- Contract: Talanji's Expedition [Rank 3]
 						},
+					}),
+					q(51015, {	-- Work Order: Deep Sea Satin
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52418, {	-- Work Order: Drums of the Maelstrom
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(52360, {	-- Work Order: Enchant Weapon - Coastal Surge
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 333,	-- Enchanting
-						["groups"] = {
+						["g"] = {
 							i(162315),	-- Formula: Enchant Weapon - Coastal Surge (Rank 3)
 						},
 					}),
@@ -553,25 +682,55 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 333,	-- Enchanting
-						["groups"] = {
+						["g"] = {
 							i(162319),	-- Formula: Enchant Weapon - Torrent of Elements (Rank 3)
 						},
+					}),
+					q(52411, {	-- Work Order: Kubiline
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51006, {	-- Work Order: Monelite Ore
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(52337, {	-- Work Order: Sea Mist Potion
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 171,	-- Alchemy
-						["groups"] = {
+						["g"] = {
 							i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
 						},
+					}),
+					q(51005, {	-- Work Order: Sea Stalk
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51012, {	-- Work Order: Shimmerscale
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51004, {	-- Work Order: Siren's Pollen
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(52410, {	-- Work Order: Solstone
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(52372, {	-- Work Order: XA-1000 Surface Skimmer
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 						["requireSkill"] = 202,	-- Engineering
-						["groups"] = {
+						["g"] = {
 							i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
 						},
 					}),
@@ -580,6 +739,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(50519, {	-- Za'amar
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50518, {	-- Zanxib
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -596,7 +759,7 @@ _.Zones =
 						-- Include the one extra.
 						{"select", "itemID", 166672},	-- Bloodhunter's Drape
 						{"finalize"},	-- Push the items to the finalized list.
-						
+
 						{"select", "mapID", 863},	-- Tiragarde Sound
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "npcID", -34 },	-- Select the World Quests Header.
@@ -605,7 +768,7 @@ _.Zones =
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
-						
+
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
