@@ -113,17 +113,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 				}),
-				q(49768, {	-- Nesingwary's Trek
-				--	confirm SQ when flying is implemented.
-				--	wasn't available immediately, and this is the point where i first noticed it being available (i'd checked a few times while questing.)
-					["sourceQuests"] = {
-						47439,	-- Gonk, Lord of the Pack
-						47440,	-- Pa'ku, Master of Winds
-					},
-					["coord"] = { 51.9, 41.5, 1165 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 130785 },	-- Huntmaster Kil'ja
-				}),
 				q(47440, {	-- Pa'ku, Master of Winds
 					["sourceQuests"] = { 47438 },	-- Picking a Side
 					["coord"] = { 42.5, 9.30, 1165 },

@@ -188,7 +188,7 @@ _.Zones =
 						["requireSkill"] = 186,	-- Mining
 						["description"] = "Requires 130 Zandalari Mining",
 						["g"] = {
-							recipe(253335),	-- Monelite Deposit Rank 2
+							recipe(253335),	-- Monelite Deposit Rank 3
 						},
 					}),
 					q(51965, {	-- Lending a Hand
@@ -268,6 +268,70 @@ _.Zones =
 								recipe(253340),	-- Platinum Deposit Rank 2
 							},
 						}),
+					}),
+				}),
+				prof(393, {	-- Skinning
+					q(51575, {	-- Lost But Not Forgotten
+						["provider"] = { "n", 122699 },	-- Rana the Cutta
+						["coord"] = { 43.8, 34.7, 1165 },
+						["requireSkill"] = 393,	-- Skinning
+						["description"] = "Requires 50 Zandalari Skinning",
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(257147),	-- Leather Gathering (Rank 2)
+						},
+					}),
+					q(52213, {	-- Ancient Skinning Knife
+						["provider"] = { "i", 161431 },	-- Ancient Skinning Knife
+						["sourceQuest"] = 51575,	-- Lost But Not Forgotten
+						["requireSkill"] = 393,	-- Skinning
+						["description"] = "Requires 150 Zandalari Skinning to get the item.",
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(257148),	-- Leather Gathering (Rank 3)
+						},
+					}),
+					q(52214, {	-- Ceremonial Vestments
+						["provider"] = { "n", 122699 },	-- Rana the Cutta
+						["coord"] = { 43.8, 34.7, 1165 },
+						["requireSkill"] = 393,	-- Skinning
+						["description"] = "Requires 50 Zandalari Skinning",
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(257150),	-- Scale Gathering (Rank 2)
+						},
+					}),
+					q(52215, {	-- A Thicker Thread
+						["provider"] = { "n", 122699 },	-- Rana the Cutta
+						["coord"] = { 43.8, 34.7, 1165 },
+						["sourceQuest"] = 52214,	-- Ceremonial Vestments
+						["requireSkill"] = 393,	-- Skinning
+						["description"] = "Requires 150 Zandalari Skinning",
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(257151),	-- Scale Gathering (Rank 3)
+						},
+					}),
+					q(52216, {	-- Hexoskeleton
+						["provider"] = { "n", 122699 },	-- Rana the Cutta
+						["coord"] = { 43.8, 34.7, 1165 },
+						["requireSkill"] = 393,	-- Skinning
+						["description"] = "Requires 50 Zandalari Skinning",
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(257153),	-- Bone Gathering (Rank 2)
+						},
+					}),
+					q(52217, {	-- Loa Fit For A King
+						["provider"] = { "n", 122699 },	-- Rana the Cutta
+						["coord"] = { 43.8, 34.7, 1165 },
+						["sourceQuest"] = 52216,	-- Hexoskeleton
+						["requireSkill"] = 393,	-- Skinning
+						["description"] = "Requires 150 Zandalari Skinning",
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(257154),	-- Bone Gathering (Rank 3)
+						},
 					}),
 				}),
 				prof(197, {	-- Tailoring

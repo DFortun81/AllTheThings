@@ -225,8 +225,9 @@ _.Zones =
 						}),
 						o(324407, {	-- Void Roots
 							["questID"] = 55467,
-							["maps"] = { 1475 },	-- The Emerald Dream
+							["coord"] = { 61.9, 94.6, 1475 },
 							["lvl"] = 120,
+							["maps"] = { 1475 },	-- The Emerald Dream
 							["g"] = {
 								i(167873),	-- Remnant of the Void (white item — not sure what this is used for.  mysteryyyyyyy!)
 							},

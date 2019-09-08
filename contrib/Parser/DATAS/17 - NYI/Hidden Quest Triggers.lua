@@ -84,6 +84,7 @@ _.NeverImplemented =
 		--      MOP      --
 		-------------------
 	--	DUNGEONS
+		q(35324),	-- Stormstout Brewery Reward Quest
 		q(35595),	-- Scholomance Reward Quest
 		q(35320),	-- Shado-Pan Monastery Reward Quest
 	
@@ -495,18 +496,6 @@ _.NeverImplemented =
 		q(50921),	-- Vol'dun repeatable random chest
 		q(50917),	-- Vol'dun repeatable random chest
 		q(50919),	-- Vol'dun repeatable random chest
-		q(50711),	-- Zuldazar repeatable random chest
-		q(50715),	-- Zuldazar repeatable random chest
-		q(50716),	-- Zuldazar repeatable random chest
-		q(50720),	-- Zuldazar repeatable random chest
-		q(50721),	-- Zuldazar repeatable random chest
-		q(50722),	-- Zuldazar repeatable random chest
-		q(50723),	-- Zuldazar repeatable random chest
-		q(50724),	-- Zuldazar repeatable random chest
-		q(50726),	-- Zuldazar repeatable random chest
-		q(50727),	-- Zuldazar repeatable random chest
-		q(50728),	-- Zuldazar repeatable random chest
-		q(51346),	-- Zuldazar repeatable random chest
 		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
@@ -542,11 +531,30 @@ _.NeverImplemented =
 		q(53423),	-- for clicking on Lost Spawn of Krag'wa at { 28.89, 83.16, 863 }, in Nazmir
 		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley		
 
-		-- Bonus Objectives: Zuldazar
+	-- Zuldazar
+		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
+
+		-- Bonus Objectives
 		q(47527),	-- Rituals of Heresy
 		q(47797),	-- Occupation Hazard
+		q(50178),	-- Trouble in the Rootway
+		q(49918),	-- Gorilla Gorge
 		
-		-- Nazjatar
+		-- Chests
+		q(50711),	-- Zuldazar repeatable random chest
+		q(50715),	-- Zuldazar repeatable random chest
+		q(50716),	-- Zuldazar repeatable random chest
+		q(50720),	-- Zuldazar repeatable random chest
+		q(50721),	-- Zuldazar repeatable random chest
+		q(50722),	-- Zuldazar repeatable random chest
+		q(50723),	-- Zuldazar repeatable random chest
+		q(50724),	-- Zuldazar repeatable random chest
+		q(50726),	-- Zuldazar repeatable random chest
+		q(50727),	-- Zuldazar repeatable random chest
+		q(50728),	-- Zuldazar repeatable random chest
+		q(51346),	-- Zuldazar repeatable random chest
+		
+	-- Nazjatar
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires
 		q(56881),	-- Triggered upon first entry into Nazjatar
@@ -647,7 +655,7 @@ _.NeverImplemented =
 		q(56894),	-- Shadowbinder Athissa
 		q(56890),	-- Theurgist Nitara
 		q(56893),	-- Warlord Zalzjar
-		-- Mechagon
+	-- Mechagon
 					-- Arachnoid Harvester first kill	-- 55913 and 56506 both (Missing in ATT) triggered
 					-- Armored Vaultbot first kill
 					-- Boilburn first kill  -- No first kill id

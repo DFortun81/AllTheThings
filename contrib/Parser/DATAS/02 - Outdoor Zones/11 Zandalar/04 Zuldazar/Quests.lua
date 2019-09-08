@@ -267,18 +267,21 @@ _.Zones =
 					["coord"] = { 41.4, 72.2, 1164 },
 					["sourceQuest"] = 49310,	-- The Prophet's Ploy
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
 				}),
 				q(47915, {	-- Rescuing the Taken
 					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
 					["coord"] = { 42.6, 21.4, 1165 },
 					["sourceQuest"] = 47509,	-- Terrace of the Chosen
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1165 },	-- Dazar'alor
 				}),
 				q(47897, {	-- Zanchuli Traitors
 					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
 					["coord"] = { 42.6, 21.4, 1165 },
 					["sourceQuest"] = 47509,	-- Terrace of the Chosen
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1165 },	-- Dazar'alor
 				}),
 				q(47518, {	-- Raal
 					["providers"] = {
@@ -291,6 +294,7 @@ _.Zones =
 						47915,	-- Rescuing the Taken
 					},
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1165 },	-- Dazar'alor
 					["g"] = {
 						i(158399),	-- Rastari Wargreaves
 						i(158400),	-- Zanchuli Leggings
@@ -313,6 +317,7 @@ _.Zones =
 						47915,	-- Rescuing the Taken
 					},
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
 				}),
 				q(47521, {	-- Midnight in the Garden of the Loa
 					["provider"] = { "n", 133324 },	-- Hexlord Raal
@@ -322,6 +327,7 @@ _.Zones =
 						47518,	-- Raal
 					},
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
 				}),
 				q(47522, {	-- The Hunter
 					["provider"] = { "n", 122760 },	-- Wardruid Loti
@@ -503,6 +509,7 @@ _.Zones =
 					},
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
 				}),
 				q(49965, {	-- The Warpack
 					["provider"] = { "n", 129491 },	-- King Rastakhan
@@ -513,6 +520,7 @@ _.Zones =
 						47741,	-- To Sacrifice a Loa
 					},
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1165 },	-- Dazar'alor
 				}),
 				q(49422, {	-- Heretics
 					["provider"] = { "n", 129740 },	-- Gonk
@@ -710,6 +718,357 @@ _.Zones =
 						ach(13542, crit(2)),	-- How to Train Your Direhorn / Held For Observation
 					},
 				}),
+				q(55254, {	-- An Unending Sleep
+					["provider"] = { "n", 151283 },	-- Direhorn Hatchling
+					["coord"] = { 68.2, 41.8, 862 },
+					["sourceQuest"] = 52857,	-- Held For Observation
+					["races"] = HORDE_ONLY,
+				}),
+				q(55252, {	-- A Loa Without a Temple
+					["provider"] = { "n", 121706 },	-- Beastlord L'kala
+					["coord"] = { 66.8, 42.5, 862 },
+					["sourceQuest"] = 55254,	-- An Unending Sleep
+					["races"] = HORDE_ONLY,
+				}),
+				q(55253, {	-- A Show of Faith
+					["provider"] = { "n", 151257 },	-- Torcali
+					["coord"] = { 68.2, 29.7, 862 },
+					["sourceQuest"] = 55252,	-- A Loa Without a Temple
+					["races"] = HORDE_ONLY,
+				}),
+				q(55258, {	-- Sleep, Eat, Repeat
+					["provider"] = { "n", 151286 },	-- Child of Torcali
+					["coord"] = { 68.1, 41.7, 862 },
+					["sourceQuest"] = 55253,	-- A Show of Faith
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						ach(13542, crit(3)),	-- How to Train Your Direhorn / Sleep, Eat, Repeat
+					},
+				}),
+				-- Missing Quests (Need to wait a day for the next Quests)
+				
+				-- Hemet Nesingwary
+				q(49768, {	-- Nesingwary's Trek
+					["provider"] = { "n", 130785 },	-- Huntmaster Kil'ja
+					["coord"] = { 51.9, 41.5, 1165 },
+					["sourceQuests"] = {
+						47439,	-- Gonk, Lord of the Pack
+						47440,	-- Pa'ku, Master of Winds
+					},
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1165 },	-- Dazar'alor
+				}),
+				q(50466, {	-- He's Gone Mad!
+					["provider"] = { "n", 123005 },	-- Hemet Nesingwary
+					["coord"] = { 67.5, 17.7, 862 },
+					["sourceQuest"] = 49768,	-- Nesingwary's Trek
+					["g"] = {
+						i(158447),	-- Jambani Armguards
+						i(158423),	-- Jambani Gloves
+						i(158445),	-- Rastari Armguards
+						i(158424),	-- Rastari Battlegloves
+						i(158426),	-- Torcalin Gauntlets
+						i(158446),	-- Torcalin Wristguards
+						i(158444),	-- Zanchuli Bands
+						i(158425),	-- Zanchuli Gloves
+					},
+				}),
+				q(47583, {	-- Die, Die, Diemetradon
+					["provider"] = { "n", 123022 },	-- Tracker Burke
+					["coord"] = { 67.6, 17.7, 862 },
+					["sourceQuest"] = 49768,	-- Nesingwary's Trek
+				}),
+				q(47584, {	-- A Thorn in the Side
+					["provider"] = { "n", 123026 },	-- Erak the Aloof
+					["coord"] = { 67.4, 17.7, 862 },
+					["sourceQuest"] = 49768,	-- Nesingwary's Trek
+				}),
+				q(47585, {	-- Predatory
+					["provider"] = { "n", 123118 },	-- Trapper Custer
+					["coord"] = { 68.9, 19.4, 862 },
+					["sourceQuest"] = 49768,	-- Nesingwary's Trek
+				}),
+				q(47706, {	-- Hunt for King K'tal
+					["provider"] = { "o", 271706 },	-- Hunters' Board
+					["coord"] = { 67.4, 17.9, 862 },
+					["sourceQuest"] = 49768,	-- Nesingwary's Trek
+				}),
+				q(51091, {	-- WANTED: Ten'gor and Nol'ixwan
+					["provider"] = { "o", 271706 },	-- Hunters' Board
+					["coord"] = { 67.4, 17.9, 862 },
+					["sourceQuest"] = 49768,	-- Nesingwary's Trek
+				}),
+				q(47586, {	-- Hunting the Hunter
+					["provider"] = { "n", 123019 },	-- Huntmaster Vol'ka
+					["coord"] = { 57.5, 17.6, 862 },
+					["sourceQuests"] = {
+						50466,	-- He's Gone Mad!
+						47583,	-- Die, Die, Diemetradon
+						47584,	-- A Thorn in the Side
+						47585,	-- Predatory
+					},
+				}),
+				q(47587, {	-- Headhunter Jo
+					["provider"] = { "n", 138669 },	-- Hemet Nesingwary
+					["coord"] = { 63.5, 16.1, 862 },
+					["sourceQuest"] = 47586,	-- Hunting the Hunter
+					["g"] = {	-- The rewards are Horde-only.
+						i(159120, {	-- Great Hunt Warglaive
+							["races"] = HORDE_ONLY,
+						}),
+						i(159117, {	-- Great Hunt Skullcracker
+							["races"] = HORDE_ONLY,
+						}),
+						i(159121, {	-- Headhunter Jo's Longstaff
+							["races"] = HORDE_ONLY,
+						}),
+						i(159119, {	-- Headhunter Jo's Machete
+							["races"] = HORDE_ONLY,
+						}),
+						i(159115, {	-- K'tal Fang Blade
+							["races"] = HORDE_ONLY,
+						}),
+						i(159114, {	-- Rootway Safari Greatbow
+							["races"] = HORDE_ONLY,
+						}),
+						i(159118, {	-- Rootway Safari Magestaff
+							["races"] = HORDE_ONLY,
+						}),
+						i(159116, {	-- Wildtusk Ivory Cudgel
+							["races"] = HORDE_ONLY,
+						}),
+						i(159122, {	-- Wildtusk Ivory Headcracker
+							["races"] = HORDE_ONLY,
+						}),
+					},
+				}),
+				-- Sandscar Breach
+				q(49940, {	-- Sandscar Breach
+					["provider"] = { "n", 131287 },	-- Natal'hakata
+					["coord"] = { 68.7, 71.8, 1164 },
+					["sourceQuest"] = 49426,	-- The King's Gambit
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
+				}),
+				q(49678, {	-- I Spy a Spire
+					["provider"] = { "n", 130450 },	-- Bladeguard Sonji
+					["coord"] = { 47.3, 25.0, 862 },
+					["sourceQuest"] = 49940,	-- Sandscar Breach
+					["races"] = HORDE_ONLY,
+				}),
+				q(49679, {	-- The Sethrak Incursion
+					["provider"] = { "n", 131354 },	-- Beastmother Jabati
+					["coord"] = { 47.3, 25.1, 862 },
+					["sourceQuest"] = 49940,	-- Sandscar Breach
+					["races"] = HORDE_ONLY,
+				}),
+				q(49680, {	-- Skycaller Soltok
+					["provider"] = { "n", 130450 },	-- Bladeguard Sonji
+					["coord"] = { 47.3, 25.0, 862 },
+					["sourceQuest"] = 49940,	-- Sandscar Breach
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155311),	-- Soltok's Drape
+						i(155309),	-- Lightning Caller's Band
+					},
+				}),
+				q(49681, {	-- Lil' Tika
+					["provider"] = { "n", 130468 },	-- Lil' Tika
+					["coord"] = { 46.2, 23.3, 862 },
+					["sourceQuest"] = 49940,	-- Sandscar Breach
+					["races"] = HORDE_ONLY,
+				}),
+				-- Village in the Vines (Horde)
+				q(49917, {	-- Kaja'mite? Kaja'must!
+					["provider"] = { "n", 130932 },	-- Nok'tal
+					["coord"] = { 65.4, 82.6, 1164 },
+				--	["sourceQuest"] = 49426,	-- The King's Gambit			-- Need to confim
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
+				}),
+				q(49919, {	-- Kaja'mite Ore Bust
+					["provider"] = { "n", 132267 },	-- Bently Greaseflare
+					["coord"] = { 51.6, 50.6, 862 },
+					["sourceQuest"] = 49917,	-- Kaja'mite? Kaja'must!
+					["races"] = HORDE_ONLY,
+				}),
+				q(49922, {	-- King Da'ka
+					["provider"] = { "n", 132267 },	-- Bently Greaseflare
+					["coord"] = { 51.6, 50.6, 862 },
+					["sourceQuest"] = 49917,	-- Kaja'mite? Kaja'must!
+					["races"] = HORDE_ONLY,
+				}),
+				q(49920, {	-- Gorilla Warfare
+					["provider"] = { "n", 130947 },	-- Tsunga
+					["coord"] = { 50.2, 54.6, 862 },
+					["sourceQuest"] = 49917,	-- Kaja'mite? Kaja'must!
+					["races"] = HORDE_ONLY,
+				}),
+				q(51072, {	-- WANTED: Prime Thumpknuckle
+					["provider"] = { "o", 287189 },	-- Wanted: Dangerous Beasts
+					["coord"] = { 51.6, 45.4, 862 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(51071, {	-- WANTED: Sabertusk Empress
+					["provider"] = { "o", 287189 },	-- Wanted: Dangerous Beasts
+					["coord"] = { 51.6, 45.4, 862 },
+					["races"] = HORDE_ONLY,
+				}),
+				-- Village in the Vines (Alliance)
+				q(53449, {	-- Apes of Wrath
+					["provider"] = { "n", 129589 },	-- The Monkey King
+					["coord"] = { 47.0, 88.4, 1165 },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 1165 },	-- Dazar'alor
+				}),
+				q(53453, {	-- To Stomp or Not To Stomp
+					["provider"] = { "n", 143787 },	-- Flap-Flap
+					["coord"] = { 51.4, 53.0, 862 },
+					["sourceQuest"] = 53449,	-- Apes of Wrath
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53450, {	-- King Da'ka
+					["provider"] = { "n", 129589 },	-- The Monkey King
+					["coord"] = { 51.4, 53.0, 862 },
+					["sourceQuest"] = 53449,	-- Apes of Wrath
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53452, {	-- Gorilla Warfare
+					["provider"] = { "n", 130947 },	-- Tsunga
+					["coord"] = { 50.2, 54.6, 862 },
+					["sourceQuest"] = 53449,	-- Apes of Wrath
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53337, {	-- WANTED: Prime Thumpknuckle
+					["provider"] = { "o", 287189 },	-- Wanted: Dangerous Beasts
+					["coord"] = { 51.6, 45.4, 862 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53336, {	-- WANTED: Sabertusk Empress
+					["provider"] = { "o", 287189 },	-- Wanted: Dangerous Beasts
+					["coord"] = { 51.6, 45.4, 862 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				-- Xibala (Horde)
+				q(47257, {	-- The Bones of Xibala
+					["provider"] = { "n", 120168 },	-- Chronicler To'kini
+					["coord"] = { 69.5, 47.5, 1164 },
+					["sourceQuest"] = 49426,	-- The King's Gambit
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
+				}),
+				q(51087, {	-- Wanted: Dark Chronicler
+					["provider"] = { "o", 287229 },	-- Wanted: Dark Chronicler
+					["coord"] = { 44.3, 72.2, 862 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(47329, {	-- The Bloodwatcher Legacy
+					["provider"] = { "n", 131582 },	-- Examiner Tae'shara Bloodwatcher
+					["coord"] = { 43.9, 72.1, 862 },
+					["sourceQuest"] = 47257,	-- The Bones of Xibala
+					["races"] = HORDE_ONLY,
+				}),
+				q(47228, {	-- Xibalan Ecology
+					["provider"] = { "n", 131582 },	-- Examiner Tae'shara Bloodwatcher
+					["coord"] = { 43.9, 72.1, 862 },
+					["sourceQuest"] = 47329,	-- The Bloodwatcher Legacy
+					["races"] = HORDE_ONLY,
+				}),
+				q(50043, {	-- Archaeological Efficiency
+					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
+					["coord"] = { 43.9, 72.1, 862 },
+					["sourceQuest"] = 47329,	-- The Bloodwatcher Legacy
+					["races"] = HORDE_ONLY,
+				}),
+				q(47235, {	-- Scrying for the Eye
+					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
+					["coord"] = { 43.9, 72.1, 862 },
+					["sourceQuest"] = 47329,	-- The Bloodwatcher Legacy
+					["races"] = HORDE_ONLY,
+				}),
+				q(48317, {	-- A Nose for Magic
+					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
+					["coord"] = { 43.9, 72.1, 862 },
+					["sourceQuests"] = {
+						47228,	-- Xibalan Ecology
+						50043,	-- Archaeological Efficiency
+						47235,	-- Scrying for the Eye
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(48399, {	-- A Dark (Iron) Tide
+					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
+					["coord"] = { 40.0, 76.5, 862 },
+					["sourceQuest"] = 48317,	-- A Nose for Magic
+					["races"] = HORDE_ONLY,
+				}),
+				q(48400, {	-- Grand Theft Telemancy
+					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
+					["coord"] = { 40.0, 76.5, 862 },
+					["sourceQuest"] = 48317,	-- A Nose for Magic
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155310),	-- Reliquary Explorer's Drape
+						i(158419),	-- Rastari Treads
+						i(158420),	-- Zanchuli Footwraps
+						i(158421),	-- Torcalin Treads
+						i(158422),	-- Jambani Treads
+					},
+				}),
+				-- Xibala (Alliance)
+				q(49059, {	-- The Bones of Xibala
+				--	["provider"] = { "n", ??? },	-- ???
+				--	["coord"] = { 40.0, 76.5, 862 },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49276, {	-- The Thrill of Exploration
+					["provider"] = { "n", 131777 },	-- Acadia Chistlestone
+					["coord"] = { 41.2, 71.4, 862 },
+					["sourceQuest"] = 49059,	-- The Bones of Xibala
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49060, {	-- Xibalan Ecology
+					["provider"] = { "n", 131777 },	-- Acadia Chistlestone
+					["coord"] = { 41.2, 71.4, 862 },
+				--	["sourceQuest"] = 49276,	-- The Thrill of Exploration
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49274, {	-- Morgrum's Survey
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+					["coord"] = { 44.4, 73.4, 862 },
+				--	["sourceQuest"] = 49276,	-- The Thrill of Exploration
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50044, {	-- Archaeological Efficiency
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+					["coord"] = { 44.4, 73.4, 862 },
+				--	["sourceQuest"] = 49276,	-- The Thrill of Exploration
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49282, {	-- Morgrum's Extended Survey
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+					["coord"] = { 44.4, 73.4, 862 },
+				--	["sourceQuest"] = {
+				--		49060,	-- Xibalan Ecology
+				--		49274,	-- Morgrum's Survey
+				--		50044,	-- Archaeological Efficiency
+				--	},
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49427, {	-- Not Our Purple Elves
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+					["coord"] = { 44.4, 73.4, 862 },
+				--	["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49428, {	-- Grand Theft Telemancy
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+					["coord"] = { 44.4, 73.4, 862 },
+				--	["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
+					["races"] = ALLIANCE_ONLY,
+				}),
 				
 			--	unsorted
 				{	-- A Growing Appetite
@@ -815,42 +1174,7 @@ _.Zones =
 					},
 				},
 
-				-- Start How to Train Your Direhorn Crit 3
-				{	-- An Unending Sleep
-					["questID"] = 55254,
-					["provider"] = { "n", 151283 },	-- Direhorn Hatchling
-					["coord"] = { 68.1, 41.7, 862 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 52857,	-- Held For Observation
-				},
-				{	-- A Loa Without a Temple
-					["questID"] = 55252,
-					["provider"] = { "n", 121706 },	-- Beastlord L'kala
-					["coord"] = { 66.8, 42.5, 862 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55254,	-- An Unending Sleep
-				},
-				{	-- A Show of Faith
-					["questID"] = 55253,
-					["provider"] = { "n", 151257 },	-- Torcali
-					["coord"] = { 68.3, 29.6, 862 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55252,	-- A Loa Without a Temple
-				},
-				{	-- Sleep, Eat, Repeat
-					["questID"] = 55258, -- also triggered 55259. I suspect 55259 is a daily questID
-					["provider"] = { "n", 151286 },	-- Child of Torcali
-					["coord"] = { 68.1, 41.7, 862 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55253,	-- A Show of Faith
-					["g"] = {
-						{	-- How To Train Your Direhorn (Sleep, Eat, Repeat)
-							["achievementID"] = 13542,
-							["criteriaID"] = 3,
-						},
-					},
-				},
-				-- End How to Train Your Direhorn Crit 3
+				
 				-- Start How to Train Your Direhorn Crit 4
 				q(55462, { 	-- The Wanderer's Call
 					["races"] = HORDE_ONLY,
@@ -975,63 +1299,8 @@ _.Zones =
 						i(155308),	-- Whispering Seawitch's Ring
 					},
 				}),
-				q(48400, {	-- Grand Theft Telemancy
-					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(155310),	-- Reliquary Explorer's Drape
-						i(158419),	-- Rastari Treads
-						i(158420),	-- Zanchuli Footwraps
-						i(158421),	-- Torcalin Treads
-						i(158422),	-- Jambani Treads
-					},
-				}),
-				q(47587, {	-- Headhunter Jo
-					["provider"] = { "n", 138669 },	-- Hemet Nesingwary
-					["sourceQuests"] = { 47586 },	-- Hunting the Hunter
-					["g"] = {	-- the quest is neutral, but the rewards are horde-only.  thanks, blizzard!
-						i(159120, {	-- Great Hunt Warglaive
-							["races"] = HORDE_ONLY,
-						}),
-						i(159117, {	-- Great Hunt Skullcracker
-							["races"] = HORDE_ONLY,
-						}),
-						i(159121, {	-- Headhunter Jo's Longstaff
-							["races"] = HORDE_ONLY,
-						}),
-						i(159119, {	-- Headhunter Jo's Machete
-							["races"] = HORDE_ONLY,
-						}),
-						i(159115, {	-- K'tal Fang Blade
-							["races"] = HORDE_ONLY,
-						}),
-						i(159114, {	-- Rootway Safari Greatbow
-							["races"] = HORDE_ONLY,
-						}),
-						i(159118, {	-- Rootway Safari Magestaff
-							["races"] = HORDE_ONLY,
-						}),
-						i(159116, {	-- Wildtusk Ivory Cudgel
-							["races"] = HORDE_ONLY,
-						}),
-						i(159122, {	-- Wildtusk Ivory Headcracker
-							["races"] = HORDE_ONLY,
-						}),
-					},
-				}),
-				q(50466, {	-- He's Gone Mad!
-					["provider"] = { "n", 123005 },	-- Hemet Nesingwary
-					["g"] = {
-						i(158447),	-- Jambani Armguards
-						i(158423),	-- Jambani Gloves
-						i(158445),	-- Rastari Armguards
-						i(158424),	-- Rastari Battlegloves
-						i(158426),	-- Torcalin Gauntlets
-						i(158446),	-- Torcalin Wristguards
-						i(158444),	-- Zanchuli Bands
-						i(158425),	-- Zanchuli Gloves
-					},
-				}),
+				
+				
 				q(49884, {	-- Hope's Blue Light
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1048,14 +1317,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159942),	-- Zul Adherent's Band
-					},
-				}),
-				q(49680, {	-- Skycaller Soltok
-					["provider"] = { "n", 130450 },	-- Bladeguard Sonji
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(155311),	-- Soltok's Drape
-						i(155309),	-- Lightning Caller's Band
 					},
 				}),
 				q(53476, {	-- The Great Sea Scrolls
@@ -1108,24 +1369,7 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 55253,	-- A Show of Faith
 				}),
-				o(287189, {	-- Wanted: Dangerous Beasts
-					q(51072, {	-- WANTED: Prime Thumpknuckle
-						["races"] = HORDE_ONLY,
-						["coord"] = { 51.62, 45.44, 862 },
-					}),
-					q(53337, {	-- WANTED: Prime Thumpknuckle
-						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 51.62, 45.44, 862 },
-					}),
-					q(51071, {	-- WANTED: Sabertusk Empress
-						["races"] = HORDE_ONLY,
-						["coord"] = { 51.62, 45.44, 862 },
-					}),
-					q(53336, {	-- WANTED: Sabertusk Empress
-						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 51.62, 45.44, 862 },
-					}),
-				}),
+					
 			}),
 		}),
 	}),
