@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
-			n(-2,     {	-- Vendors
+			n(-2, {		-- Vendors
 				n(98367, {	-- Tigrid the Charmer <Enchantress>
 					i(124440, {	-- Arkhana
 						i(128617),	-- Formula: Enchant Gloves - Legion Herbalism

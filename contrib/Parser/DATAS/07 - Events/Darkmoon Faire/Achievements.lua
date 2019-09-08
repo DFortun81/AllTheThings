@@ -3,24 +3,19 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	{	-- Darkmoon Island
-		["mapID"] = 407,	-- Darkmoon Island
-		["g"] = {
-			n(-4, {	 -- Achievements
-				{	-- Come One, Come All!
-					["achievementID"] = 6019,	-- Come One, Come All!
-				},
-				{	-- Fairgoer's Feast	[Expand Upon]
-					["achievementID"] = 6026,	-- Fairgoer's Feast
-				},
-				{	-- I Was Promised a Pony
-					["achievementID"] = 6025,	-- I Was Promised a Pony
-				},
-				{	--   Taking the Show on the Road
-					["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
-					["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
-				},
-			}),
-		},
-	},	
-};	
+	m(407, {	-- Darkmoon Island
+		n(-4, {	 -- Achievements
+			ach(6019),	-- Come One, Come All!
+			ach(6028),	-- Darkmoon Defender
+			ach(6029),	-- Darkmoon Despoiler
+			ach(6027),	-- Darkmoon Dungeoneer
+			ach(6032),	-- Faire Favors
+			ach(6026),	-- Fairgoer's Feast
+			ach(6025),	-- I Was Promised a Pony
+			{	--   Taking the Show on the Road
+				["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
+				["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
+			},
+		}),
+	}),	
+};
