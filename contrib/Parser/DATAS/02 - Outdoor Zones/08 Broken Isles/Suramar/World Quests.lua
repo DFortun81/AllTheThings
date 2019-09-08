@@ -6,71 +6,6 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(680, {	-- Suramar
 			n(-34, {	-- World Quests
---[[
-				q(41493),	-- Brimstone Destroyer
-				q(41492),	-- Brimstone Destroyer
-				q(41491),	-- Brimstone Destroyer
-				q(41447),	-- Burning Felslate Deposits
-				q(41195),	-- Culling Ambervale
-				q(44113),	-- DANGER: Achronos
-				q(44121),	-- DANGER: Az'jatar
-				q(41697),	-- DANGER: Colerian, Alteria, and Selenyi
-				q(42799),	-- DANGER: Oglok the Furious
-				q(44122),	-- DANGER: Sorallus
-				q(41446),	-- Darkened Felslate Deposits
-				q(41347),	-- Extra-Rancid Felhound Hide
-				q(41572),	-- Felhide
-				q(41573),	-- Felhide
-				q(41571),	-- Felhide
-				q(41508),	-- Felslate Basilisks
-				q(41509),	-- Felslate Basilisks
-				q(41352),	-- Felslate Basilisks
-				q(41523),	-- Felwort
-				q(41524),	-- Felwort
-				q(41522),	-- Felwort
-				q(43930),	-- Fiends of Tel'anor
-				q(41304),	-- Flourishing Starlight Roses
-				q(41448),	-- Heavy Felslate Deposits
-				q(41617),	-- Huge Runescale Koi
-				q(41538),	-- Iridescent Starlight Roses
-				q(41605),	-- Lively Runescale Koi
-				q(41604),	-- Lively Runescale Koi
-				q(41461),	-- Malevolent Felslate Outcropping
-				q(43513),	-- Na'zak the Fiend
-				q(41305),	-- Nightborne Herb Trader
-				q(41353),	-- Odious Felslate Outcropping
-				q(42830),	-- Pest Management
-				q(41357),	-- Primordial Felslate Deposits
-				q(41349),	-- Rock-Hard Crab Chitin
-				q(41354),	-- Shattered Felslate Seams
-				q(41558),	-- Slab of Bacon
-				q(41557),	-- Slab of Bacon
-				q(41262),	-- Slab of Bacon
-				q(41539),	-- Sparkling Starlight Roses
-				q(41301),	-- Starlight Rose Cluster
-				q(41318),	-- Supplies Needed: Felslate
-				q(41303),	-- Supplies Needed: Starlight Roses
-				q(43435),	-- The Battle Rages On
-				q(42082),	-- The Shattered Locus
-				q(41346),	-- Velvety Stalker Hide
-				q(44032),	-- WANTED: Apothecary Faldren
-				q(44186),	-- WANTED: Broodmother Shu'malis
-				q(44030),	-- WANTED: Guardian Thor'el
-				q(44021),	-- WANTED: Hertha Grimdottir
-				q(44027),	-- WANTED: Magister Phaedris
-				q(44015),	-- WANTED: Mal'Dreth the Corruptor
-				q(44026),	-- WANTED: Mal'Dreth the Corruptor
-				q(44185),	-- WANTED: Sanaar
-				q(44022),	-- WANTED: Shal'an
-				q(44024),	-- WANTED: Shal'an
-				q(44012),	-- WANTED: Siegemaster Aedrin
-				q(44023),	-- WANTED: Siegemaster Aedrin
-				q(41314),	-- Work Order: Felslate
-				q(41282),	-- Work Order: Runescale Koi
-				q(41661),	-- Work Order: Skystep Potions
-				q(41302),	-- Work Order: Starlight Roses
-				q(41350),	-- Work Order: Stonehide Leather
---]]
 				q(42859, {	-- A Draught of Hope
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -103,11 +38,31 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41493, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41492, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41491, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41447, {	-- Burning Felslate Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41990, {	-- Chopped
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(28, {	-- Chopped
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -121,7 +76,7 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(27, {	-- Clear the Catacombs
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -143,7 +98,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41195, {	-- Culling Ambervale
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44856, {	-- Cut the Cattitude
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44113, {	-- DANGER: Achronos (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -151,7 +114,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(42797, {	-- DANGER: Scythemaster Cil'raman
+				q(44121, {	-- DANGER: Az'jatar (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41697, {	-- DANGER: Colerian, Alteria, and Selenyi (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -159,9 +126,26 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42799, {	-- DANGER: Oglok the Furious (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42797, {	-- DANGER: Scythemaster Cil'raman
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44122, {	-- DANGER: Sorallus (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44119, {	-- DANGER: Volshax, Breaker of Will
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41446, {	-- Darkened Felslate Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
 				}),
 				q(44801, {	-- Defending Shal'aran
 					["lvl"] = 110,
@@ -171,11 +155,70 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41347, {	-- Extra-Rancid Felhound Hide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41572, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41573, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41571, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41508, {	-- Felslate Basilisks
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41509, {	-- Felslate Basilisks
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41352, {	-- Felslate Basilisks
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41523, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41524, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41522, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(43930, {	-- Fiends of Tel'anor
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41304, {	-- Flourishing Starlight Roses
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(40337, {	-- Flummoxed
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(29, {	-- Flummoxed
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -188,6 +231,11 @@ _.Zones =
 				q(42209, {	-- Freeing the Taken
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41448, {	-- Heavy Felslate Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
 				}),
 				q(44811, {	-- Help on the Way
 					["lvl"] = 110,
@@ -207,9 +255,19 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
+				q(41617, {	-- Huge Runescale Koi
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
 				q(44805, {	-- In the Thick of It
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41538, {	-- Iridescent Starlight Roses
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(42169, {	-- Left for Dead
 					["lvl"] = 110,
@@ -240,16 +298,31 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
+				q(41605, {	-- Lively Runescale Koi
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41604, {	-- Lively Runescale Koi
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
 				q(41537, {	-- Lively Starlight Roses
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
+				q(41461, {	-- Malevolent Felslate Outcropping
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41931, {	-- Mana Tap
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(31, {	-- Mana Tap
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -259,17 +332,37 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43513, {	-- Na'zak the Fiend
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41305, {	-- Nightborne Herb Trader
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(44857, {	-- Not There, Not Then, Not Forever
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(44025, {	-- WANTED: Oreth the Vile
+				q(41353, {	-- Odious Felslate Outcropping
 					["lvl"] = 110,
 					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
 				}),
 				q(42830, {	-- Pest Management
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41357, {	-- Primordial Felslate Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41349, {	-- Rock-Hard Crab Chitin
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(44812, {	-- Running on Empty
 					["lvl"] = 110,
@@ -287,6 +380,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41354, {	-- Shattered Felslate Seams
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(44815, {	-- Sick of the Sycophants
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -294,6 +392,31 @@ _.Zones =
 				q(42090, {	-- Skittering Subjects
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41558, {	-- Slab of Bacon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 185,	-- Cooking
+				}),
+				q(41557, {	-- Slab of Bacon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 185,	-- Cooking
+				}),
+				q(41262, {	-- Slab of Bacon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 185,	-- Cooking
+				}),
+				q(41539, {	-- Sparkling Starlight Roses
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41301, {	-- Starlight Rose Cluster
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(43959, {	-- Stelleris Shakedown
 					["lvl"] = 110,
@@ -308,11 +431,25 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41318, {	-- Supplies Needed: Felslate
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41303, {	-- Supplies Needed: Starlight Roses
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(41351, {	-- Supplies Needed: Stonehide Leather
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(41283, {	-- The Angler Mangler
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43435, {	-- The Battle Rages On
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -328,17 +465,21 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(26, {	-- The Master of Pets
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
 				}),
+				q(42082, {	-- The Shattered Locus
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42015, {	-- Threads of Fate
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(30, {	-- Threads of Fate
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -360,7 +501,16 @@ _.Zones =
 						i(137771),	-- Vantus Rune Technique: Xavius [Rank 3]
 					},
 				}),
+				q(41346, {	-- Velvety Stalker Hide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
 				q(44017, {	-- WANTED: Apothecary Faldren
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44032, {	-- WANTED: Apothecary Faldren (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -368,7 +518,7 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(44031, {	-- WANTED: Cadraeus
+				q(44186, {	-- WANTED: Broodmother Shu'malis (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -376,15 +526,23 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44031, {	-- WANTED: Cadraeus (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44013, {	-- WANTED: Guardian Thor'el
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(44029, {	-- WANTED: Hertha Grimdottir
+				q(44030, {	-- WANTED: Guardian Thor'el (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(44028, {	-- WANTED: Lieutenant Strathmar
+				q(44021, {	-- WANTED: Hertha Grimdottir
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44029, {	-- WANTED: Hertha Grimdottir (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -392,7 +550,23 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44028, {	-- WANTED: Lieutenant Strathmar (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(44018, {	-- WANTED: Magister Phaedris
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44027, {	-- WANTED: Magister Phaedris (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44015, {	-- WANTED: Mal'Dreth the Corruptor
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44026, {	-- WANTED: Mal'Dreth the Corruptor (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -400,7 +574,31 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44025, {	-- WANTED: Oreth the Vile (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42795, {	-- WANTED: Sanaar
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44185, {	-- WANTED: Sanaar (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44022, {	-- WANTED: Shal'an
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44024, {	-- WANTED: Shal'an (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44012, {	-- WANTED: Siegemaster Aedrin
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44023, {	-- WANTED: Siegemaster Aedrin (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -413,7 +611,7 @@ _.Zones =
 						692,	-- Falanaar Arcway
 						693,	-- Falanaar Arcway
 					},
-					["groups"] = {
+					["g"] = {
 						n(109556, {	-- Treasure Chest
 							i(136914),	-- Leyline Broodling
 						}),
@@ -461,35 +659,63 @@ _.Zones =
 				q(41643, {	-- Work Order: Battlebound Leggings
 					["requireSkill"] = 165,	-- Leatherworking
 					["collectible"] = false,
-					["groups"] = {
+					["g"] = {
 						i(137909),	-- Recipe: Battlebound Leggings (Rank 3)
 					},
 				}),
 				q(41679, {	-- Work Order: Deployable Bullet Dispenser
 					["requireSkill"] = 202,	-- Engineering
 					["collectible"] = false,
-					["groups"] = {
+					["g"] = {
 						i(137719),	-- Schematic: Deployable Bullet Dispenser (Rank 3)
 					},
+				}),
+				q(41314, {	-- Work Order: Felslate
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41655, {	-- Work Order: Queen's Opal Pendant
 					["collectible"] = false,
 					["requireSkill"] = 755,	-- Jewelcrafting
-					["groups"] = {
+					["g"] = {
 						i(137866),	-- Design: Queen's Opal Pendant (Rank 3)
 					},
+				}),
+				q(41282, {	-- Work Order: Runescale Koi
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41649, {	-- Work Order: Silkweave Slippers
 					["requireSkill"] = 197,	-- Tailoring
 					["collectible"] = false,
-					["groups"] = {
+					["g"] = {
 						i(138014),	-- Pattern: Silkweave Slippers (Rank 3)
 					},
+				}),
+				q(41661, {	-- Work Order: Skystep Potions
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["g"] = {
+						i(127924),	-- Recipe: Skystep Potion (Rank 2)
+					},
+				}),
+				q(41302, {	-- Work Order: Starlight Roses
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41350, {	-- Work Order: Stonehide Leather
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41673, {	-- Work Order: Word of Mastery
 					["requireSkill"] = 333,	-- Enchanting
 					["collectible"] = false,
-					["groups"] = {
+					["g"] = {
 						i(128598),	-- Formula: Enchant Ring - Word of Mastery (Rank 3)
 					},
 				}),
@@ -503,7 +729,7 @@ _.Zones =
 				}),
 				n(-3243, {	-- Manawracker Set
 					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134304),	-- Manawracker Crown
 						i(134309),	-- Manawracker Shoulders
 						i(134307),	-- Manawracker Vestments
@@ -516,7 +742,7 @@ _.Zones =
 				}),
 				n(-3262, {	-- Swordsinger Set
 					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134284),	-- Swordsinger's Hood
 						i(134286),	-- Swordsinger's Shoulders
 						i(134285),	-- Swordsinger's Vest
@@ -529,7 +755,7 @@ _.Zones =
 				}),
 				n(-3274, {	-- Ley Dragoon Set
 					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134299),	-- Ley Dragoon's Headgear
 						i(134301),	-- Ley Dragoon's Spaulders
 						i(134302),	-- Ley Dragoon's Hauberk
@@ -542,7 +768,7 @@ _.Zones =
 				}),
 				n(-3299, {	-- Arcane Defender Set
 					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134270),	-- Arcane Defender's Helm
 						i(134272),	-- Arcane Defender's Pauldrons
 						i(134267),	-- Arcane Defender's Breastplate

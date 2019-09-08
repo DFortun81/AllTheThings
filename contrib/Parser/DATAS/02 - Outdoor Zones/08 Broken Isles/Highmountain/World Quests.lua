@@ -6,90 +6,24 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
 			n(-34,  {	-- World Quests
---[[				
-				q(43985),	-- A Dark Tide
-				q(45840),	-- Assault on Highmountain
-				q(46191),	-- Balinar
-				q(40980),	-- Boilback Plague
-				q(41310),	-- Border Reinforcements
-				q(41203),	-- Bright Leystone Deposits
-				q(41208),	-- Brimstone Destroyer
-				q(41209),	-- Brimstone Destroyer
-				q(41210),	-- Brimstone Destroyer
-				q(41233),	-- Bristled Bear Skin
-				q(41238),	-- Calcified Wormscales
-				q(41201),	-- Coarse Leystone Outcropping
-				q(46183),	-- Commander Zarthak
-				q(41699),	-- Crabby Crunchies
-				q(41202),	-- Crude Leystone Seams
-				q(41685),	-- DANGER: Ala'washte
-				q(41695),	-- DANGER: Defilia
-				q(41686),	-- DANGER: Olokk the Shipbreaker
-				q(41703),	-- DANGER: Ormagrogg
-				q(41816),	-- DANGER: Oubdob da Smasher
-				q(41884),	-- Dark Tales
-				q(41835),	-- Deworming
-				q(39424),	-- Everything!
-				q(41561),	-- Felhide
-				q(41560),	-- Felhide
-				q(41239),	-- Felhide
-				q(41432),	-- Fiery Leystone Deposits
-				q(41219),	-- Flourishing Foxflower
-				q(41228),	-- Foxflower Cluster
-				q(41544),	-- Foxflower Cluster
-				q(46184),	-- Gelgothar
-				q(41882),	-- Grey Idols
-				q(41204),	-- Hard Leystone Deposits
-				q(41243),	-- Huge Highmountain Salmon
-				q(46185),	-- Iroxus
-				q(41196),	-- Leystone Basilisks
-				q(41198),	-- Leystone Basilisks
-				q(41199),	-- Leystone Rumblers
-				q(45048),	-- Like the Wind
-				q(41596),	-- Lively Highmountain Salmon
-				q(41244),	-- Lively Highmountain Salmon
-				q(41597),	-- Lively Highmountain Salmon
-				q(41090),	-- Lords of the Hills
-				q(41089),	-- Lords of the Hills
-				q(41433),	-- Massive Leystone Deposits
-				q(41057),	-- Primal Payback
-				q(41055),	-- Primal Payback
-				q(40985),	-- Rimescale Naga Incursion: Highmountain
-				q(41200),	-- Rough Leystone Outcropping
-				q(46262),	-- Save the Tadpoles!
-				q(41234),	-- Shaggy Saber Hide
-				q(41242),	-- Slab of Bacon
-				q(41549),	-- Slab of Bacon
-				q(41550),	-- Slab of Bacon
-				q(40920),	-- Stonebinder Bounty
-				q(41207),	-- Supplies Needed: Leystone
-				q(41237),	-- Supplies Needed: Stonehide Leather
-				q(43448),	-- The Frozen King
-				q(41232),	-- Thick Ironhorn Hide
-				q(44823),	-- Thunder Totem Cleanup Detail
-				q(43616),	-- WANTED: Bodash the Hoarder
-				q(44291),	-- WANTED: Crawshuk the Hungry
-				q(43617),	-- WANTED: Devouring Darkness
-				q(44292),	-- WANTED: Majestic Elderhorn
-				q(44294),	-- WANTED: Sekhan
-				q(43619),	-- WANTED: Shara Felbreath
-				q(41257),	-- Warden Tower Assault: Cordana's Apex
-				q(41420),	-- Warden Tower Assault: Nightwatcher's Perch
-				q(41205),	-- Warm Leystone Deposits
-				q(41321),	-- Weapons of Deathwing
-				q(41252),	-- Wild Northern Barracuda
-				q(41659),	-- Work Order: Avalanche Elixirs
-				q(41223),	-- Work Order: Foxflower
-				q(41206),	-- Work Order: Leystone
-				q(41647),	-- Work Order: Silkweave Robe
-				q(41235),	-- Work Order: Stonehide Leather
---]]
+				q(43985, {	-- A Dark Tide (Flotsam)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45840, {	-- Assault on Highmountain (Invasion "wrapper" quest)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(41705, {	-- Assault on Thunder Totem
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(41026, {	-- Back to the Shadows
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46191, {	-- Balinar (Invasion wq)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(45071, {	-- Barrels o' Fun
@@ -108,7 +42,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(40980, {	-- Boilback Plague
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41308, {	-- Border Reinforcements
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41310, {	-- Border Reinforcements
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -116,14 +58,44 @@ _.Zones =
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
-				q(41706, {	-- Briny Waters	
+				q(41203, {	-- Bright Leystone Deposits
 					["lvl"] = 110,
 					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41208, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41209, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41210, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41706, {	-- Briny Waters
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41233, {	-- Bristled Bear Skin
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41526, {	-- Bushy Foxflower
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41238, {	-- Calcified Wormscales
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41623, {	-- Champions of Highmountain
 					["lvl"] = 110,
@@ -133,6 +105,19 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 98,
 				}),
+				q(41201, {	-- Coarse Leystone Outcropping
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(46183, {	-- Commander Zarthak (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41699, {	-- Crabby Crunchies
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41622, {	-- Crawliac's Legacy
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -141,11 +126,36 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41202, {	-- Crude Leystone Seams
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41685, {	-- DANGER: Ala'washte
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41695, {	-- DANGER: Defilia
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41093, {	-- DANGER: Durguth
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(41696, {	-- DANGER: Mawat'aki
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41686, {	-- DANGER: Olokk the Shipbreaker
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41703, {	-- DANGER: Ormagrogg
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41816, {	-- DANGER: Oubdob da Smasher
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -158,6 +168,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(41835, {	-- Deworming
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41024, {	-- Dirge of the Dead
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -165,6 +179,25 @@ _.Zones =
 				q(43767, {	-- Enigmatic
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(39424, {	-- Everything!
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41561, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41560, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41239, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41511, {	-- Felwort
 					["lvl"] = 110,
@@ -181,12 +214,36 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
+				q(41432, {	-- Fiery Leystone Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41219, {	-- Flourishing Foxflower
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41228, {	-- Foxflower Cluster
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41544, {	-- Foxflower Cluster
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(46197, {	-- From the Skies They Fel (Invasion WQ)
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(41014, {	-- Fury Road
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46184, {	-- Gelgothar (Invasion wq)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(41701, {	-- Gettin' Tuffer
@@ -197,6 +254,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41204, {	-- Hard Leystone Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(44746, {	-- Helarjar Landing: Rockaway Coast
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -206,11 +268,20 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
+				q(41243, {	-- Huge Highmountain Salmon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(46185, {	-- Iroxus (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(42064, {	-- It's Illid... Wait.
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(17, {	-- It's Illid... Wait.
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -228,9 +299,56 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41196, {	-- Leystone Basilisks
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41198, {	-- Leystone Basilisks
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41199, {	-- Leystone Rumblers
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(45048, {	-- Like the Wind
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41596, {	-- Lively Highmountain Salmon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41244, {	-- Lively Highmountain Salmon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41597, {	-- Lively Highmountain Salmon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41090, {	-- Lords of the Hills
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41089, {	-- Lords of the Hills
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41091, {	-- Lords of the Hills
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41433, {	-- Massive Leystone Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41253, {	-- Migrating Highmountain Salmon
 					["lvl"] = 110,
@@ -261,6 +379,14 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41057, {	-- Primal Payback
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41055, {	-- Primal Payback
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(40850, {	-- Prisoners of Greystone
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -277,6 +403,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(40985, {	-- Rimescale Naga Incursion: Highmountain
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41025, {	-- Rise of the Fallen
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -289,19 +419,29 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(19, {	-- Rocko Needs a Shave
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(41200, {	-- Rough Leystone Outcropping
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(46262, {	-- Save the Tadpoles! (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
 				}),
 				q(41691, {	-- Sea of Feathers
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(41234, {	-- Shaggy Saber Hide
-					["collectible"] = false,
 					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(46189, {	-- Shel'zuul (Invasion WQ)
 					["lvl"] = 98,
@@ -311,11 +451,26 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41242, {	-- Slab of Bacon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 185,	-- Cooking
+				}),
+				q(41549, {	-- Slab of Bacon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 185,	-- Cooking
+				}),
+				q(41550, {	-- Slab of Bacon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 185,	-- Cooking
+				}),
 				q(41687, {	-- Snail Fight!
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(18, {	-- Snail Fight!
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -325,7 +480,19 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(40920, {	-- Stonebinder Bounty
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41224, {	-- Supplies Needed: Foxflower
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41207, {	-- Supplies Needed: Leystone
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41237, {	-- Supplies Needed: Stonehide Leather
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -337,11 +504,24 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43448, {	-- The Frozen King (Drugon the Frostblood)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43766, {	-- The Magic of Flight
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41232, {	-- Thick Ironhorn Hide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
 				q(40896, {	-- Threnody of Chieftains
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44823, {	-- Thunder Totem Cleanup Detail
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -349,7 +529,7 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(15, {	-- Tiny Poacher, Tiny Animals
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -359,7 +539,7 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(14, {	-- Training with Bredda
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -385,11 +565,11 @@ _.Zones =
 						i(137767),	-- Vantus Rune Technique: Ursoc [Rank 3]
 					},
 				}),
-				q(44289, {	-- WANTED: Arru
+				q(41824, {	-- WANTED: Arru
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(41824, {	-- WANTED: Arru
+				q(44289, {	-- WANTED: Arru (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -397,7 +577,7 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(44290, {	-- WANTED: Bristlemaul
+				q(44290, {	-- WANTED: Bristlemaul (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -405,7 +585,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43616, {	-- WANTED: Bodash the Hoarder (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41826, {	-- WANTED: Crawshuk the Hungry
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(44291, {	-- WANTED: Crawshuk the Hungry (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -413,11 +601,15 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
+				q(43617, {	-- WANTED: Devouring Darkness (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41819, {	-- WANTED: Gurbog da Basher
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43618, {	-- WANTED: Gurbog da Basher
+				q(43618, {	-- WANTED: Gurbog da Basher (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -425,11 +617,23 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44292, {	-- WANTED: Majestic Elderhorn (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41844, {	-- WANTED: Sekhan
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44294, {	-- WANTED: Sekhan (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(41821, {	-- WANTED: Shara Felbreath
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43619, {	-- WANTED: Shara Felbreath (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -456,7 +660,21 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 				}),
+				q(41420, {	-- Warden Tower Assault: Nightwatcher's Perch (H)
+					["lvl"] = 110,
+					["races"] = HORDE_ONLY,
+					["collectible"] = false,
+				}),
+				q(41205, {	-- Warm Leystone Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41145, {	-- Water of Life
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41321, {	-- Weapons of Deathwing
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -464,11 +682,16 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41252, {	-- Wild Northern Barracuda
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
 				q(41766, {	-- Wildlife Protection Force
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(16, {	-- Wildlife Protection Force
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -487,36 +710,67 @@ _.Zones =
 					["requireSkill"] = 202,	-- Engineering
 					["lvl"] = 110,
 					["collectible"] = false,
-					["groups"] = {
+					["g"] = {
 						i(137723),	-- Schematic: Auto-Hammer (Rank 3)
+					},
+				}),
+				q(41659, {	-- Work Order: Avalanche Elixirs
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["g"] = {
+						i(127922),	-- Recipe: Avalanche Elixir (Rank 2)
 					},
 				}),
 				q(41641, {	-- Work Order: Battlebound Armbands
 					["requireSkill"] = 165,	-- Leatherworking
 					["lvl"] = 110,
 					["collectible"] = false,
-					["groups"] = {
+					["g"] = {
 						i(137908),	-- Recipe: Battlebound Armbands (Rank 3)
 					},
 				}),
-				q(41653, {	-- Work Order: Skystone Pendant
-					["requireSkill"] = 755,	-- Jewelcrafting
+				q(41223, {	-- Work Order: Foxflower
 					["lvl"] = 110,
 					["collectible"] = false,
-					["groups"] = {
-						i(137842),	-- Design: Skystone Pendant (Rank 3)
-					},
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41240, {	-- Work Order: Highmountain Salmon
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
+				q(41206, {	-- Work Order: Leystone
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41647, {	-- Work Order: Silkweave Robe
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 197,	-- Tailoring
+					["g"] = {
+						i(137964),	-- Pattern: Silkweave Robe (Rank 3)
+					},
+				}),
+				q(41653, {	-- Work Order: Skystone Pendant
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["lvl"] = 110,
+					["collectible"] = false,
+					["g"] = {
+						i(137842),	-- Design: Skystone Pendant (Rank 3)
+					},
+				}),
+				q(41235, {	-- Work Order: Stonehide Leather
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
 				q(41671, {	-- Work Order: Word of Strength
 					["requireSkill"] = 333,	-- Enchanting
 					["lvl"] = 110,
 					["collectible"] = false,
-					["groups"] = {
+					["g"] = {
 						i(128604),	-- Formula: Enchant Cloak - Word of Strength (Rank 3)
 					},
 				}),
@@ -534,7 +788,7 @@ _.Zones =
 				}),
 				n(-3247, {	-- Roggthread Set
 					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134172),	-- Roggthread Headdress
 						i(134177),	-- Roggthread Mantle
 						i(134175),	-- Roggthread Robe
@@ -547,7 +801,7 @@ _.Zones =
 				}),
 				n(-3249, {	-- Sunfrost Set
 					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
-					["groups"] = {
+					["g"] = {
 						i(139124),	-- Sunfrost Aurora
 						i(139129),	-- Sunfrost Mantle
 						i(139127),	-- Sunfrost Robes
@@ -560,7 +814,7 @@ _.Zones =
 				}),
 				n(-3263, {	-- Rivermane Set
 					["icon"] = "Interface\\Icons\\inv_helm_leather_legionquest100_b_01",
-					["groups"] = {
+					["g"] = {
 						i(139108),	-- Rivermane Hood
 						i(139110),	-- Rivermane Shoulders
 						i(139109),	-- Rivermane Robe
@@ -573,7 +827,7 @@ _.Zones =
 				}),
 				n(-3270, {	-- Steelgazer Set
 					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134152),	-- Steelgazer Hide Hood
 						i(134154),	-- Steelgazer Hide Mantle
 						i(134153),	-- Steelgazer Hide Jerkin
@@ -586,7 +840,7 @@ _.Zones =
 				}),
 				n(-3275, {	-- Skyhorn Set
 					["icon"] = "Interface\\Icons\\inv_helm_mail_legionquest100_b_01",
-					["groups"] = {
+					["g"] = {
 						i(139119),	-- Skyhorn Headgear
 						i(139121),	-- Skyhorn Mantle
 						i(139122),	-- Skyhorn Vest
@@ -599,7 +853,7 @@ _.Zones =
 				}),
 				n(-3300, {	-- Greystone Set
 					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(139096),	-- Greystone Helm
 						i(139098),	-- Greystone Pauldrons
 						i(139093),	-- Greystone Chestpiece
@@ -612,7 +866,7 @@ _.Zones =
 				}),
 				n(-3308, {	-- Rockbound Set
 					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134138),	-- Rockbound Helm
 						i(134140),	-- Rockbound Pauldrons
 						i(134135),	-- Rockbound Chestguard
@@ -624,7 +878,7 @@ _.Zones =
 					},
 				}),
 				n(-384, {	-- Neck
-					
+
 				}),
 				n(-386,  {	-- Trinkets
 					i(139114),	-- An'she's Infusion of Light

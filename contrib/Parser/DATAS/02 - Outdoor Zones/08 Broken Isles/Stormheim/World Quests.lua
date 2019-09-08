@@ -6,79 +6,6 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
 			n(-34,    {	-- World Quests
---[[
-				q(45439),	-- An Invasion of... Murlocs?
-				q(41443),	-- Ancient Leystone Deposits
-				q(45839),	-- Assault on Stormheim
-				q(46010),	-- Bonecrusher Korgolath
-				q(41534),	-- Brambly Fjarnskaggl
-				q(41490),	-- Brimstone Destroyer
-				q(41489),	-- Brimstone Destroyer
-				q(41488),	-- Brimstone Destroyer
-				q(46011),	-- Colossal Infernal
-				q(43745),	-- Culling the Storm
-				q(42806),	-- DANGER: Fjorlag, the Grave's Chill
-				q(42798),	-- DANGER: Huntress Estrid
-				q(42963),	-- DANGER: Rulf Bonesnapper
-				q(42991),	-- DANGER: Runeseer Sigvid
-				q(42953),	-- DANGER: Soulbinder Halldora
-				q(41444),	-- Dark Leystone Deposits
-				q(41459),	-- Dense Leystone Outcropping
-				q(46012),	-- Fel Commander Urgoz
-				q(41570),	-- Felhide
-				q(41569),	-- Felhide
-				q(41568),	-- Felhide
-				q(41519),	-- Felwort
-				q(46013),	-- Firecaller Rok'duun
-				q(41296),	-- Fjarnskaggl Cluster
-				q(41547),	-- Fjarnskaggl Cluster
-				q(41299),	-- Flourishing Fjarnskaggl
-				q(41275),	-- Huge Stormrays
-				q(41615),	-- Huge Stormrays
-				q(46015),	-- Idra'zuul
-				q(41505),	-- Leystone Basilisks
-				q(41506),	-- Leystone Basilisks
-				q(41507),	-- Leystone Basilisks
-				q(41274),	-- Lively Stormrays
-				q(41603),	-- Lively Stormrays
-				q(46016),	-- Magdrezoth
-				q(43752),	-- Oh, Ship!
-				q(41340),	-- Perfect Storm Drake Scale
-				q(41460),	-- Primal Leystone Outcropping
-				q(41536),	-- Pungent Fjarnskaggl
-				q(41276),	-- Rocket Boot Fishing
-				q(43722),	-- Sacred Bones
-				q(42270),	-- Scourge of the Skies
-				q(46017),	-- Shel'drozul
-				q(41300),	-- Singed Fjarnskaggl
-				q(41555),	-- Slab of Bacon
-				q(41556),	-- Slab of Bacon
-				q(41261),	-- Slab of Bacon
-				q(41343),	-- Solid Crabshell Fragment
-				q(41445),	-- Stormy Leystone Deposits
-				q(41442),	-- Striking Leystone Deposits
-				q(41345),	-- Supplies Needed: Stormscales
-				q(43721),	-- The Helarjar Have Surfaced
-				q(42269),	-- The Soultakers
-				q(46264),	-- Their Eyes Are Upon Us
-				q(46021),	-- Thel'draz
-				q(41342),	-- Thick Bear Hide
-				q(42182),	-- To Battle!
-				q(43620),	-- WANTED: Egyl the Enduring
-				q(43621),	-- WANTED: Fathnyr
-				q(43622),	-- WANTED: Glimar Ironfist
-				q(43624),	-- WANTED: Isel the Hammer
-				q(43438),	-- WANTED: Nameless King
-				q(43626),	-- WANTED: Thane Irglov
-				q(43628),	-- WANTED: Urgev the Flayer
-				q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
-				q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
-				q(41497),	-- Wild Leystone Seams
-				
-				q(41313),	-- Work Order: Leystone
-				q(41660),	-- Work Order: Skaggldrynk
-				q(41344),	-- Work Order: Stormscales
---]]				
 				q(43964, {	-- A Jarl's Feast
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -87,7 +14,7 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(20, {	-- All Howl, No Bite
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -97,18 +24,31 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(24, {	-- All Pets Go to Heaven
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
 				}),
+				q(45439, {	-- An Invasion of... Murlocs? (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(43951, {	-- An Overdue Debt
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41443, {	-- Ancient Leystone Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41451, {	-- Assault on Hrydshal
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(45839, {	-- Assault on Stormheim (Invasion "wrapper")
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(46008 ,{	-- Balnazoth (Invasion WQ)
@@ -132,14 +72,42 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(25, {	-- Beasts of Burden
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
 				}),
+				q(46010, {	-- Bonecrusher Korgolath (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41534, {	-- Brambly Fjarnskaggl
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41490, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41489, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41488, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41938, {	-- Brothers of Skovald
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46011, {	-- Colossal Infernal (Invasion wq)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(46216, {	-- Congealed Corruption (Invasion WQ)
@@ -152,6 +120,10 @@ _.Zones =
 				}),
 				q(46179, {	-- Crushing the Legion (Invasion WQ)
 					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(43745, {	-- Culling the Storm
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(42820, {	-- DANGER: Aegir Wavecrusher
@@ -170,9 +142,39 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42806, {	-- DANGER: Fjorlag, the Grave's Chill (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42798, {	-- DANGER: Huntress Estrid (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42964, {	-- DANGER: Lagertha
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(42963, {	-- DANGER: Rulf Bonesnapper (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42991, {	-- DANGER: Runeseer Sigvid (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42953, {	-- DANGER: Soulbinder Halldora (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41444, {	-- Dark Leystone Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41459, {	-- Dense Leystone Outcropping
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
 				}),
 				q(43710, {	-- Dark Runes
 					["lvl"] = 110,
@@ -198,12 +200,55 @@ _.Zones =
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
+				q(46012, {	-- Fel Commander Urgoz (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41570, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41569, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41568, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
 				q(41520, {	-- Felwort
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41521, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41519, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(46013, {	-- Firecaller Rok'duun (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41296, {	-- Fjarnskaggl Cluster
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41547, {	-- Fjarnskaggl Cluster
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41299, {	-- Flourishing Fjarnskaggl
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
@@ -229,11 +274,25 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
+				q(41275, {	-- Huge Stormrays
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41615, {	-- Huge Stormrays
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(46015, {	-- Idra'zuul (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(41944, {	-- Jarrun's Ladder
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(21, {	-- Jarrun's Ladder
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -242,6 +301,21 @@ _.Zones =
 				q(43769, {	-- Ley Race
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41505, {	-- Leystone Basilisks
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41506, {	-- Leystone Basilisks
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41507, {	-- Leystone Basilisks
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
 				}),
 				q(45049, {	-- Like the Wind
 					["lvl"] = 110,
@@ -252,11 +326,25 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
+				q(41274, {	-- Lively Stormrays
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41603, {	-- Lively Stormrays
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(46016, {	-- Magdrezoth (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(40278, {	-- My Beasts's Bidding
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(23, {	-- My Beasts's Bidding
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
@@ -270,22 +358,42 @@ _.Zones =
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						crit(22, {	-- Oh, Ominitron
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
 				}),
-				q(43751, {	-- Oh, Ship!
+				q(43751, {	-- Oh, Ship! (A)
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
+				}),
+				q(43752, {	-- Oh, Ship! (H)
+					["lvl"] = 110,
+					["races"] = HORDE_ONLY,
+					["collectible"] = false,
+				}),
+				q(41340, {	-- Perfect Storm Drake Scale
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(43786, {	-- Pesty Nests
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(41535, {	-- Prickly Fjarnskaggl
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41460, {	-- Primal Leystone Outcropping
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41536, {	-- Pungent Fjarnskaggl
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
@@ -306,18 +414,60 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41276, {	-- Rocket Boot Fishing
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 356,	-- Fishing
+				}),
 				q(41927, {	-- Ruining the Runewood
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43722, {	-- Sacred Bones
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42270, {	-- Scourge of the Skies (Nithogg)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46017, {	-- Shel'drozul (Invasion wq)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(42178, {	-- Shock Absorber
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41300, {	-- Singed Fjarnskaggl
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41555, {	-- Slab of Bacon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 185,	-- Cooking
+				}),
+				q(41556, {	-- Slab of Bacon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 185,	-- Cooking
+				}),
+				q(41261, {	-- Slab of Bacon
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 185,	-- Cooking
+				}),
 				q(41278, {	-- Slippery Stormrays
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41343, {	-- Solid Crabshell Fragment
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(45390, {	-- Souls of the Vrykul (Invasion WQ)
 					["lvl"] = 98,
@@ -327,11 +477,25 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41445, {	-- Stormy Leystone Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41442, {	-- Striking Leystone Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41298, {	-- Supplies Needed: Fjarnskaggl
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(41317, {	-- Supplies Needed: Leystone
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41345, {	-- Supplies Needed: Stormscales
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -343,6 +507,10 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43721, {	-- The Helarjar Have Surfaced
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42013, {	-- The Helmouth
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -351,9 +519,31 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(42183, {	-- To Battle!
+				q(42269, {	-- The Soultakers
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46264, {	-- Their Eyes Are Upon Us (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(46021, {	-- Thel'draz (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(41342, {	-- Thick Bear Hide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(42183, {	-- To Battle! (A)
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
+					["collectible"] = false,
+				}),
+				q(42182, {	-- To Battle! (H)
+					["lvl"] = 110,
+					["races"] = HORDE_ONLY,
 					["collectible"] = false,
 				}),
 				q(41930, {	-- Valor Calls
@@ -368,7 +558,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43620, {	-- WANTED: Egyl the Enduring (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43434, {	-- WANTED: Fathnyr
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43621, {	-- WANTED: Fathnyr (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -376,11 +574,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43622, {	-- WANTED: Glimar Ironfist (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43453, {	-- WANTED: Hannval the Butcher
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43623, {	-- WANTED: Hannval the Butcher
+				q(43623, {	-- WANTED: Hannval the Butcher (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -388,7 +590,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43625, {	-- WANTED: Nameless King
+				q(43624, {	-- WANTED: Isel the Hammer (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43438, {	-- WANTED: Nameless King
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43625, {	-- WANTED: Nameless King (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -396,7 +606,7 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43627, {	-- WANTED: Tiptog the Lost
+				q(43626, {	-- WANTED: Thane Irglov (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -404,7 +614,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43627, {	-- WANTED: Tiptog the Lost (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43451, {	-- WANTED: Urgev the Flayer
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43628, {	-- WANTED: Urgev the Flayer (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -413,16 +631,31 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 				}),
+				q(43598, {	-- Warden Tower Assault: Blackhawk's Bulwark (H)
+					["lvl"] = 110,
+					["races"] = HORDE_ONLY,
+					["collectible"] = false,
+				}),
 				q(43601, {	-- Warden Tower Assault: Whisperwind's Citadel [A]
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 				}),
+				q(43600, {	-- Warden Tower Assault: Whisperwind's Citadel (H)
+					["lvl"] = 110,
+					["races"] = HORDE_ONLY,
+					["collectible"] = false,
+				}),
+				q(41497, {	-- Wild Leystone Seams
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41654, {	-- Work Order: Queen's Opal Loop
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["collectible"] = false,
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						i(137865),	-- Design: Queen's Opal Loop (Rank 3)
 					},
 				}),
@@ -431,12 +664,25 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
+				q(41313, {	-- Work Order: Leystone
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41648, {	-- Work Order: Silkweave Bracers
 					["requireSkill"] = 197,	-- Tailoring
 					["collectible"] = false,
 					["lvl"] = 110,
-					["groups"] = {
+					["g"] = {
 						i(137961),	-- Pattern: Silkweave Bracers (Rank 3)
+					},
+				}),
+				q(41660, {	-- Work Order: Skaggldrynk
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["g"] = {
+						i(127923),	-- Recipe: Skaggldrynk (Rank 2)
 					},
 				}),
 				q(41277, {	-- Work Order: Stormrays
@@ -444,12 +690,17 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
+				q(41344, {	-- Work Order: Stormscales
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
 				q(41642, {	-- Work Order: Warhide Footpads
 					["requireSkill"] = 165,	-- Leatherworking
 					["collectible"] = false,
 					["lvl"] = 110,
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
-					["groups"] = {
+					["g"] = {
 						i(137880),	-- Recipe: Warhide Footpads (Rank 3)
 					},
 				}),
@@ -458,7 +709,7 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 110,
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
-					["groups"] = {
+					["g"] = {
 						i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
 					},
 				}),
@@ -471,7 +722,7 @@ _.Zones =
 				}),
 				n(-3242, {	-- Bonespeaker Set
 					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134216),	-- Bonespeaker Cowl
 						i(134221),	-- Bonespeaker Mantle
 						i(134219),	-- Bonespeaker Robes
@@ -484,7 +735,7 @@ _.Zones =
 				}),
 				n(-3266, {	-- Biornskin Set
 					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134196),	-- Biornskin Hood
 						i(134198),	-- Biornskin Shoulderpads
 						i(134197),	-- Biornskin Vest
@@ -497,7 +748,7 @@ _.Zones =
 				}),
 				n(-3278, {	-- Tideskorn Set
 					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134211),	-- Tideskorn Coif
 						i(134213),	-- Tideskorn Mantle
 						i(134214),	-- Tideskorn Vest
@@ -510,7 +761,7 @@ _.Zones =
 				}),
 				n(-3302, {	-- Skoldiir Set
 					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-					["groups"] = {
+					["g"] = {
 						i(134182),	-- Skoldiir Helm
 						i(134184),	-- Skoldiir Shoulderguards
 						i(134179),	-- Skoldiir Breastplate
@@ -529,7 +780,7 @@ _.Zones =
 					i(134203),	-- Three-Toed Rabbit Foot
 				}),
 				n(-387, {	-- Relics
-					i(143691),	-- Bloody Kvaldir Pennant 
+					i(143691),	-- Bloody Kvaldir Pennant
 					i(143687),	-- Felskorn Mania
 					i(141261),	-- Fires of Heaven
 					i(141262),	-- Rune-Etched Quill
@@ -540,6 +791,6 @@ _.Zones =
 					i(143689),	-- Weight of Tradition
 				}),
 			}),
-		}),	
+		}),
 	}),
 };
