@@ -14,9 +14,8 @@ _.Zones =
 					crit(1, {	-- Swamprat Post (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
-							9772,	-- Jyoba's Report
-							-- TODO:: verify below
 							9899,	-- A Job Undone
+							9772,	-- Jyoba's Report
 							9898,	-- Nothin' Says Lovin' Like a Big Stinger
 							9769,	-- There's No Explanation for Fashion
 						},
@@ -35,13 +34,12 @@ _.Zones =
 					crit(2, {	-- Zabra'jin (H)
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
+							9816,	-- Have You Ever Seen One of These?
 							9904,	-- Pursuing Terrorclaw
 							-- TODO:: verify below
-							9847,	-- A Spirit Ally?
-							9816,	-- Have You Ever Seen One of These?
-							9775,	-- Report to Shadow Hunter Denjai
-							9903,	-- The Biggest of Them All
-							9842,	-- The Sharpest Blades
+							9847,	-- A Spirit Ally? (probably)
+							9903,	-- The Biggest of Them All (probably)
+							9842,	-- The Sharpest Blades (probably)
 						},
 					}),
 					crit(3, {	-- Orebor Harborage (A)
@@ -61,9 +59,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							10118,	-- Message to the Daggerfen
-							-- TODO:: verify below
 							9823,	-- Us or Them
-							10117,	-- Wanted: Chieftain Mummaki
 						},
 					}),
 					crit(4, {	-- Don't Eat THOSE Mushrooms!
@@ -75,7 +71,6 @@ _.Zones =
 					crit(6, {	-- Saving the Sporeloks
 						["sourceQuests"] = {
 							9788,	-- A Damp, Dark Place
-							-- TODO:: verify below
 							9894,	-- Safeguarding the Watchers
 							10096,	-- Saving the Sporeloks
 						},

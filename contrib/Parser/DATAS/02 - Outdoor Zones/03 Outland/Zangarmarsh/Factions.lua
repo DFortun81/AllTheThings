@@ -17,17 +17,16 @@ _.Zones =
 								["repeatable"] = true,
 								["maxReputation"] = { 942, HONORED },
 								["g"] = {
-									i(24402),	-- Package of Identified Plants
+									i(24402, {	-- Package of Identified Plants
+										i(24407),	-- Uncatalogued Species
+									}),
 								},
 							}),
-							i(24402, {	-- Package of Identified Plants
-								i(24407, {	-- Uncatalogued Species
-									q(9875, {	-- Uncatalogued Species
-										["sourceQuest"] = 9784,	-- Identify Plant Parts
-										["repeatable"] = true,
-										["maxReputation"] = { 942, HONORED },
-									}),
-								}),
+							q(9875, {	-- Uncatalogued Species
+								["provider"] = { "i", 24407 },	-- Uncatalogued Species
+								["repeatable"] = true,
+								["sourceQuest"] = 9784,	-- Identify Plant Parts
+								["maxReputation"] = { 942, HONORED },
 							}),
 						}),
 						n(-2,   {	-- Vendors

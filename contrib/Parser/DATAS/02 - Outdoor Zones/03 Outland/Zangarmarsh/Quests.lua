@@ -289,7 +289,7 @@ _.Zones =
 					["coord"] = { 67.6, 47.8, 102 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(9770,  {	-- Menacing Marshfangs (H) -- aa
+				q(9770,  {	-- Menacing Marshfangs (H)
 					["provider"] = { "n", 18012 },	-- Reavij
 					["coord"] = { 85.0, 54.0, 102 },
 					["races"] = HORDE_ONLY,
@@ -334,7 +334,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(9773,  {	-- No More Mushrooms! -- aa
+				q(9773,  {	-- No More Mushrooms!
 					["provider"] = { "n", 18016 },	-- Magasha
 					["coord"] = { 84.4, 54.3, 102 },
 					["races"] = HORDE_ONLY,
@@ -384,7 +384,7 @@ _.Zones =
 						i(25618),	-- Telaar Courier's Cloak
 					},
 				}),
-				q(9802, {	-- Plants of Zangarmarsh -- aa
+				q(9802, {	-- Plants of Zangarmarsh
 					["provider"] = { "n", 17909 },	-- Lauranna Thar'well
 					["coord"] = { 80.3, 64.2, 102 },
 					["g"] = {
@@ -409,7 +409,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(9775,  {	-- Report to Shadow Hunter Denjai -- aa
+				q(9775,  {	-- Report to Shadow Hunter Denjai
 					["provider"] = { "n", 18011 },	-- Zurai
 					["coord"] = { 85.3, 54.8, 102 },
 					["races"] = HORDE_ONLY,
@@ -593,12 +593,12 @@ _.Zones =
 					["coord"] = { 67.8, 48.0, 102 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(9769,  {	-- There's No Explanation for Fashion -- aa
+				q(9769,  {	-- There's No Explanation for Fashion
 					["provider"] = { "n", 18016 },	-- Magasha
 					["coord"] = { 84.4, 54.3, 102 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(9774,  {	-- Thick Hydra Scales -- aa
+				q(9774,  {	-- Thick Hydra Scales
 					["provider"] = { "n", 18011 },	-- Zurai
 					["coord"] = { 85.3, 54.8, 102 },
 					["races"] = HORDE_ONLY,
