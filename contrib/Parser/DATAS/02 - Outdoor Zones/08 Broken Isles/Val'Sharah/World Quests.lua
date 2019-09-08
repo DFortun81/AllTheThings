@@ -153,6 +153,7 @@ _.Zones =
 
 				q(39098),	-- 7.0 Val'sharah - Village - Small Treasure 003 - twh
 
+
 				q(38646),	-- A Sight For Sore Eyes
 
 				q(39032),	-- A Summons from Saylanna
@@ -161,16 +162,8 @@ _.Zones =
 
 				q(39149),	-- A Village in Peril
 
-				q(45924, {	-- Abyssal Monstrosity
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(38889),	-- Adopting the Adorable
 
-				q(45922, {	-- Agmozuul
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(42883),	-- All Grell Broke Loose
 
 				q(38737),	-- An End To War
@@ -183,10 +176,6 @@ _.Zones =
 
 				q(38382),	-- Archdruid of the Vale
 
-				q(45812, {	-- Assault on Val'sharah
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(46962),	-- Assault Treasure
 
 				q(46959),	-- Assault Treasure
@@ -203,80 +192,30 @@ _.Zones =
 
 				q(46958),	-- Assault Treasure
 
-				q(44033, {	-- Aw, Nuts!
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38143),	-- Awakening the Archdruid
 
-				q(45070, {	-- Barrels o' Fun
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(42080, {	-- Bastion of Bradensbrook
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(45856),	-- Battle for Val'sharah
 
 				q(46830),	-- Battlefield
 
 				q(38716),	-- Black Rook Hold
 
-				
 				q(39011),	-- Black Rook Invasion
 
 				q(38648),	-- Black Rook Orders
 
 				q(38717),	-- Black Rook Prison
 
-				
-				q(41955, {	-- Bloodline of Stone
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38469),	-- Bonus Objective: The Moonclaw Vale
 
-				q(42075, {	-- Botanical Backlash
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41484, {	-- Brimstone Destroyer
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41487, {	-- Brimstone Destroyer
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41486, {	-- Brimstone Destroyer
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41336, {	-- Bristly Musken Hide
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(44457),	-- Brotherly Love
 
 				q(38724),	-- Brotherly Love
 
-				q(41273, {	-- Buoy Fishing
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41532, {	-- Bushy Dreamleaf
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(40122),	-- Cenarius, Keeper of the Grove
 
 				q(38305),	-- Cenarius, Keeper of the Grove
 
-				q(42174, {	-- Champions of Elune
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38645),	-- Children of the Night
 
 				q(38660),	-- Cleansing the Corruption
@@ -287,51 +226,6 @@ _.Zones =
 				q(38687, {	-- Close Enough to Touch
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(43738, {	-- Coastal Gloom
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43344, {	-- DANGER: Aodh Witherpetal
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43346, {	-- DANGER: Ealdis
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43345, {	-- DANGER: Harbinger of Screams
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(42870, {	-- DANGER: Kathaw the Savage
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43152, {	-- DANGER: Lytheron
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(42927, {	-- DANGER: Malisandra
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43333, {	-- DANGER: Nylaathria the Forgotten
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43347, {	-- DANGER: Rabxach
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41700, {	-- DANGER: Shalas'aman
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43101, {	-- DANGER: Witchdoctor Grgl-Brgl
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				
 				q(41708, {	-- Dark Side of the Moon
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -340,20 +234,12 @@ _.Zones =
 				}),
 				q(40567),	-- Darkheart Thicket: Enter the Nightmare
 
-				q(41860, {	-- Dealing with Satyrs
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38225),	-- Death to the Witchmother
 
 				q(39029),	-- Defend The Temple
 
 				q(38219),	-- Defending The Grove
 
-				q(44884, {	-- Defense of Emerald Bay
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(41880),	-- Den of Shadows
 
 				q(39383),	-- Dishonored
@@ -362,112 +248,40 @@ _.Zones =
 
 				q(42750),	-- Dreamcatcher
 
-				q(41291, {	-- Dreamleaf Cluster
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41546, {	-- Dreamleaf Cluster
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41295, {	-- Dreamleaf-Covered Ancient
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(46763, {	-- Drol'maz
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(42748),	-- Emerald Sisters
 
-				q(43756, {	-- Enigmatic
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38147),	-- Entangled Dreams
 
-				q(41439, {	-- Exquisite Leystone Deposits
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38842),	-- Faerie Fracas
 
-				q(41567, {	-- Felhide
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41565, {	-- Felhide
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41566, {	-- Felhide
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41516, {	-- Felwort
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38840),	-- Fishy Business
 
-				q(41294, {	-- Flourishing Dreamleaf
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(43241),	-- Flow of the Nightmare
 
 				q(38647),	-- For the Corn!
 
 				q(41875),	-- Found First Clue
 
-				q(41533, {	-- Fragrant Dreamleaf
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38455),	-- Frenzied Furbolgs
 
 				q(44070),	-- Gathenak
 
-				q(45928, {	-- Gelthrak
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(41893, {	-- Given to Corruption
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(41749, {	-- Given to Corruption
 					["races"] = HORDE_ONLY,
 				}),
-				q(45923, {	-- Gloth
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(42884),	-- Grassroots Effort
 
-				q(42087, {	-- Green Horror
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43332, {	-- Grell in a Handbasket
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(42865),	-- Grell to Pay
 
 				q(42786),	-- Grotesque Remains
 
-				q(42124, {	-- Hags and Hexes
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38341),	-- Halting the Nightmare
 
 				q(38745),	-- Hard Lessons
 
-				q(41458, {	-- Hardened Leystone Outcropping
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38675, {	-- Heart of the Nightmare
 					["races"] = HORDE_ONLY,
 				}),
@@ -476,106 +290,25 @@ _.Zones =
 				}),
 				q(44789),	-- Holding the Ramparts
 
-				q(41613, {	-- Huge Mossgill Perch
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41270, {	-- Huge Mossgill Perch
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				
 				q(38719),	-- Illidari Freedom
 
 				q(44278),	-- Illidari Freedom
 
-				q(45804, {	-- Impvasion!
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
-				q(42028, {	-- Into the Nightmare
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41271, {	-- Into the Whirlpool
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41531, {	-- Iridescent Dreamleaf
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38691),	-- Jarod's Mission
 
-				q(42150, {	-- Kal'delar Naga Incursion
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(42094, {	-- Keepers of the Dream
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38718),	-- Kur'talos Ravencrest
 
-				q(43753, {	-- Ley Race
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41503, {	-- Leystone Basilisks
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41504, {	-- Leystone Basilisks
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41502, {	-- Leystone Basilisks
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38721),	-- Lieutenant of the Tower
 
-				q(45047, {	-- Like the Wind
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38922),	-- Littlefur
 
-				q(41530, {	-- Lively Dreamleaf
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41269, {	-- Lively Mossgill Perch
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41601, {	-- Lively Mossgill Perch
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41600, {	-- Lively Mossgill Perch
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38671),	-- Lost in Retreat
 
-				q(44011, {	-- Lost Wisp
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(41054, {	-- Love Lost
 					["races"] = HORDE_ONLY,
 				}),
 				q(41056, {	-- Love Lost
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(41965, {	-- Lunarwing Liberation
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41440, {	-- Magnificent Leystone Deposits
-					["collectible"] = false,
-					["lvl"] = 110,
 				}),
 				q(38714),	-- Maiev's Trail
 
@@ -583,10 +316,6 @@ _.Zones =
 
 				q(38656),	-- Mark of the Demon
 
-				q(41861, {	-- Meet The Maw
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38285),	-- Menacing Sprites
 
 				q(42857),	-- Moist Around the Hedges
@@ -597,68 +326,16 @@ _.Zones =
 
 				q(39388),	-- Moonclaw's Wisdom
 
-				q(41334, {	-- Musky Bear Hide
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38384),	-- Nature's Call
 
-				q(45925, {	-- Nez'val
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(38661),	-- Nightmare Bombs
 
-				q(41862, {	-- Only Pets Can Prevent Forest Fires
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38145),	-- Out of the Dream
 
-				q(42145, {	-- Out of the Woodwork
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(46797),	-- Paragon of the Dreamweavers
 
-				q(41956, {	-- Petrified Acolytes
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(42819, {	-- Pocket Wizard
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41964, {	-- Poisoned Waters
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41337, {	-- Pristine Stag Hide
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43336, {	-- Purge of the Nightmare
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38708),	-- Purge the River
 
-				q(41457, {	-- Radiant Leystone Outcropping
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43324, {	-- Rage of the Owlbeasts
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44730, {	-- Ravaged Dreams
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
-				q(41496, {	-- Raw Leystone Seams
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38684),	-- Reading the Leaves
 
 				q(43576),	-- Regroup at the Refuge
@@ -677,86 +354,26 @@ _.Zones =
 
 				q(38655),	-- Root Cause
 
-				q(41333, {	-- Rugged Wolf Hide
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38748),	-- Ruins of Shala'nir
 
 				q(39428),	-- Satyr Line TRACKING
 
-				q(43709, {	-- Seal Clubbing
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(42076, {	-- Shadowfen Village
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44895, {	-- Sharptalon Swarm!
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(39117),	-- Shriek No More
 
-				q(41553, {	-- Slab of Bacon
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41554, {	-- Slab of Bacon
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41260, {	-- Slab of Bacon
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(43702),	-- Softening the Target
 
 				q(38235),	-- Solid as a Rock
 
 				q(40221),	-- Spread Your Lunarwings and Fly
 
-				q(41855, {	-- Stand Up to Bullies
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41441, {	-- Superior Leystone Deposits
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(46747),	-- Supplies From the Dreamweavers
 
-				q(41293, {	-- Supplies Needed: Dreamleaf
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41316, {	-- Supplies Needed: Leystone
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41339, {	-- Supplies Needed: Stonehide Leather
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(41874),	-- Talked to Tyrande to Start Events
 
-				q(41996, {	-- Tangled Nightmare
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(41879),	-- TBD
 
 				q(38662),	-- Tears for Fears
 
-				q(41980, {	-- Temple Defense
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(45921, {	-- Thal'xur
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(38146),	-- The Chieftain's Beads
 
 				q(39384),	-- The Corruptor
@@ -775,38 +392,18 @@ _.Zones =
 
 				q(38743),	-- The Fate of Val'sharah
 
-				q(46265, {	-- The Fel and the Fawns
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
-				q(43755, {	-- The Magic of Flight
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(40573),	-- The Nightmare Lord
 
 				q(38715),	-- The Rook's Guard
 
-				q(42779, {	-- The Sleeping Corruption
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38697),	-- The Sword of Truth
 
-				q(46261, {	-- The Taste of Corruption
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(40890),	-- The Tears of Elune
 
 				q(38641),	-- The Temple of Elune
 
 				q(39731),	-- The Tranquil Forest
 
-				q(44759, {	-- The Vale of Dread
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(38711),	-- The Warden's Signet
 
 				q(38673),	-- The Wormtalon Crone
@@ -815,10 +412,6 @@ _.Zones =
 
 				q(40220),	-- Thorny Dancing
 
-				q(43303, {	-- Time to Rumble!
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38582),	-- To Old Friends
 
 				q(38246),	-- Totemic Call
@@ -843,22 +436,10 @@ _.Zones =
 
 				q(40422),	-- Tracking Quest: VotW Started
 
-				q(40279, {	-- Training with Durian
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(38277),	-- Treasure: Honey Hive
 
-				q(41992, {	-- Twisted Ash
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(39861),	-- Tying Up Loose Ends
 
-				q(46766, {	-- Ulgthax
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 				q(41876),	-- Umbraxis Tracker
 
 				q(38938),	-- Unbearable
@@ -871,10 +452,6 @@ _.Zones =
 
 				q(39460),	-- Vale POI Event TRACKING
 
-				q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(43446),	-- Vignette: Bahagar
 
 				q(41917),	-- Vignette: Bear Cub
@@ -901,160 +478,12 @@ _.Zones =
 
 				q(43447),	-- Vignette: Wraithtalon
 
-				q(42077, {	-- Waking Nightmares
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44301, {	-- WANTED: Bahagar
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44305, {	-- WANTED: Bahagar
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44299, {	-- WANTED: Darkshade
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44304, {	-- WANTED: Darkshade
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44298, {	-- WANTED: Dreadbog
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44303, {	-- WANTED: Dreadbog
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43460, {	-- WANTED: Kiranys Duskwhisper
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				
-				q(43630, {	-- WANTED: Perrexx
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43458, {	-- WANTED: Perrexx
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44300, {	-- WANTED: Seersei
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(44302, {	-- WANTED: Seersei
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43456, {	-- WANTED: Skul'vrax
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43631, {	-- WANTED: Skul'vrax
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43632, {	-- WANTED: Theryssia
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43457, {	-- WANTED: Theryssia
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43459, {	-- WANTED: Thondrax
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				
-				q(43247, {	-- Warden Tower Assault: Darkfollow's Spire
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43248, {	-- Warden Tower Assault: Darkfollow's Spire
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(43183, {	-- Warden Tower Assault: Starstalker's Point
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(42070, {	-- Warden Tower Assault: Starstalker's Point
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43784, {	-- What a Nightmare
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(42747),	-- Where the Wildkin Are
 
-				q(43759, {	-- Where's the Reef?
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(43758, {	-- Wherever I May Gloam
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(42190, {	-- Wildlife Conservationist
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(39354),	-- Wisp in the Willows
 
 				q(44825),	-- Wisp in the Willows
 
-				q(41652, {	-- Work Order: Deep Amber Loop
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41292, {	-- Work Order: Dreamleaf
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41312, {	-- Work Order: Leystone
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41634, {	-- Work Order: Leystone Armguards
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41272, {	-- Work Order: Mossgill Perch
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41676, {	-- Work Order: Pump-Action Bandage Gun
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41646, {	-- Work Order: Silkweave Gloves
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41338, {	-- Work Order: Stonehide Leather
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41658, {	-- Work Order: Sylvan Elixirs
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41640, {	-- Work Order: Warhide Mask
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(41670, {	-- Work Order: Word of Agility
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
 				q(41707),	-- Wormtalon Wreckage
 
 				q(46819),	-- Wrecked Cart
@@ -1063,16 +492,16 @@ _.Zones =
 
 				q(39420),	-- Xavius Event TRACKING
 
-				q(45927, {	-- Zagmothar
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
-				q(45926, {	-- Zar'teth
-					["collectible"] = false,
-					["lvl"] = 98,
-				}),
 ]]--			
 				q(45924, {	-- Abyssal Monstrosity (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(45922, {	-- Agmozuul (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(45812, {	-- Assault on Val'sharah (Invasion WQ "wrapper" - the one you get by zoning in)
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
@@ -1109,36 +538,81 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41484, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41486, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41487, {	-- Brimstone Destroyer
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41336, {	-- Bristly Musken Hide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
 				q(41273, {	-- Buoy Fishing
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
+				q(41532, {	-- Bushy Dreamleaf
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(42174, {	-- Champions of Elune
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43738, {	-- Coastal Glooom
+				q(43738, {	-- Coastal Gloom
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(42927, {	-- DANGER: Malisandra
+				q(43344, {	-- DANGER: Aodh Witherpetal (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43347, {	-- DANGER: Rabxach
+				q(43346, {	-- DANGER: Ealdis (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(41700, {	-- DANGER: Shalas'aman
+				q(43345, {	-- DANGER: Harbinger of Screams (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43344, {	-- DANGER: Aodh Witherpetal
+				q(42870, {	-- DANGER: Kathaw the Savage (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43101, {	-- DANGER: Witchdoctor Grgl-Brgl
+				q(43152, {	-- DANGER: Lytheron (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42927, {	-- DANGER: Malisandra (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43333, {	-- DANGER: Nylaathria the Forgotten (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43347, {	-- DANGER: Rabxach (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(41700, {	-- DANGER: Shalas'aman (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43101, {	-- DANGER: Witchdoctor Grgl-Brgl (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -1160,14 +634,53 @@ _.Zones =
 					["lvl"] = 98,
 					["collectible"] = false,
 				}),
+				q(41291, {	-- Dreamleaf Cluster
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(41546, {	-- Dreamleaf Cluster
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
+				q(41295, {	-- Dreamleaf-Covered Ancient
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(46763, {	-- Drol'maz (Invasion WQ)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(43756, {	-- Enigmatic
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41439, {	-- Exquisite Leystone Deposits
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41567, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41565, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41566, {	-- Felhide
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41516, {	-- Felwort
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41517, {	-- Felwort
 					["lvl"] = 110,
@@ -1178,6 +691,24 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41294, {	-- Flourishing Dreamleaf
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41533, {	-- Fragrant Dreamleaf
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(45928, {	-- Gelthrak (Invasion wq)
+					["collectible"] = false,
+					["lvl"] = 98,
+				}),
+				q(45923, {	-- Gloth (Invasion wq)
+					["collectible"] = false,
+					["lvl"] = 98,
 				}),
 				q(42087, {	-- Green Horror
 					["lvl"] = 110,
@@ -1191,14 +722,38 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41458, {	-- Hardened Leystone Outcropping
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41612, {	-- Huge Mossgill Perch
 					["requireSkill"] = 356,	-- Fishing
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
+				q(41613, {	-- Huge Mossgill Perch
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41270, {	-- Huge Mossgill Perch
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(45804, {	-- Impvasion! (Invasion wq)
+					["collectible"] = false,
+					["lvl"] = 98,
+				}),
 				q(42028, {	-- Into the Nightmare
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41271, {	-- Into the Whirlpool
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41531, {	-- Iridescent Dreamleaf
 					["lvl"] = 110,
@@ -1209,13 +764,47 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42094, {	-- Keepers of the Dream
+					["collectible"] = false,
+					["lvl"] = 110,
+				}),
 				q(43753, {	-- Ley Race
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41503, {	-- Leystone Basilisks
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41504, {	-- Leystone Basilisks
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41502, {	-- Leystone Basilisks
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(45047, {	-- Like the Wind
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41530, {	-- Lively Dreamleaf
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41601, {	-- Lively Mossgill Perch
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(41600, {	-- Lively Mossgill Perch
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41269, {	-- Lively Mosgill Perch
 					["lvl"] = 110,
@@ -1230,6 +819,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41440, {	-- Magnificent Leystone Deposits
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 186,	-- Mining
+				}),
 				q(41861, {	-- Meet The Maw
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -1239,6 +833,15 @@ _.Zones =
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(41334, {	-- Musky Bear Hide
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(45925, {	-- Nez'val (Invasion wq)
+					["collectible"] = false,
+					["lvl"] = 98,
 				}),
 				q(41862, {	-- Only Pets Can Prevent Forest Fires
 					["collectible"] = false,
@@ -1258,13 +861,27 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(42819, {	-- Pocket Wizard
+					["collectible"] = false,
+					["lvl"] = 110,
+				}),
 				q(41964, {	-- Poisoned Waters
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41337, {	-- Pristine Stag Hide
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 393,	-- Skinning
+				}),
 				q(43336, {	-- Purge of the Nightmare
 					["lvl"] = 110,
 					["collectible"] = false,
+				}),
+				q(41457, {	-- Radiant Leystone Outcropping
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 186,	-- Mining
 				}),
 				q(43324, {	-- Rage of the Owlbeasts
 					["lvl"] = 110,
@@ -1273,6 +890,16 @@ _.Zones =
 				q(44730, {	-- Ravaged Dreams (Invasion WQ)
 					["lvl"] = 98,
 					["collectible"] = false,
+				}),
+				q(41496, {	-- Raw Leystone Seams
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41333, {	-- Rugged Wolf Hide
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(43709, {	-- Seal Clubbing
 					["lvl"] = 110,
@@ -1286,6 +913,21 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(41553, {	-- Slab of Bacon
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 185,	-- Cooking
+				}),
+				q(41554, {	-- Slab of Bacon
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 185,	-- Cooking
+				}),
+				q(41260, {	-- Slab of Bacon
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 185,	-- Cooking
+				}),
 				q(41855, {	-- Stand Up to Bullies
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -1296,9 +938,25 @@ _.Zones =
 						}),
 					},
 				}),
+				q(41441, {	-- Superior Leystone Deposits
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41293, {	-- Supplies Needed: Dreamleaf
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
 				q(41316, {	-- Supplies Needed: Leystone
 					["lvl"] = 110,
 					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41339, {	-- Supplies Needed: Stonehide Leather
+					["collectible"] = false,
+					["lvl"] = 110,
+					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41996, {	-- Tangeld Nightmare
 					["lvl"] = 110,
@@ -1308,7 +966,19 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(45921, {	-- Thal'xur (Invasion wq)
+					["collectible"] = false,
+					["lvl"] = 98,
+				}),
+				q(46265, {	-- The Fel and the Fawns (Invasion wq)
+					["lvl"] = 98,
+					["collectible"] = false,
+				}),
 				q(43755, {	-- The Magic of Flight
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(42779, {	-- The Sleeping Corruption (Epic elite - Shar'thos)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -1318,6 +988,10 @@ _.Zones =
 				}),
 				q(44759, {	-- The Vale of Dread (Invasion WQ)
 					["lvl"] = 98,
+					["collectible"] = false,
+				}),
+				q(43303, {	-- Time to Rumble!
+					["lvl"] = 110,
 					["collectible"] = false,
 				}),
 				q(40279, {	-- Training with Durian
@@ -1332,6 +1006,10 @@ _.Zones =
 				}),
 				q(41992, {	-- Twisted Ash
 					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46766, {	-- Ulgthax (Invasion wq)
+					["lvl"] = 98,
 					["collectible"] = false,
 				}),
 				q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
@@ -1351,7 +1029,7 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(44305, {	-- WANTED: Bahagar
+				q(44305, {	-- WANTED: Bahagar (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -1359,7 +1037,7 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(44304, {	-- WANTED: Darkshade
+				q(44304, {	-- WANTED: Darkshade (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -1367,19 +1045,23 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44303, {	-- WANTED: Dreadbog (rare wq)
+					["collectible"] = false,
+					["lvl"] = 110,
+				}),
 				q(43460, {	-- WANTED: Kiranys Duskwhisper
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43629, {	-- WANTED: Kiranys Duskwhisper
-					["collectible"] = false,
+				q(43629, {	-- WANTED: Kiranys Duskwhisper (rare wq)
 					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(43458, {	-- WANTED: Perrexx
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43630, {	-- WANTED: Perrexx
+				q(43630, {	-- WANTED: Perrexx (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -1387,7 +1069,15 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(44302, {	-- WANTED: Seersei (rare wq)
+					["collectible"] = false,
+					["lvl"] = 110,
+				}),
 				q(43456, {	-- WANTED: Skul'vrax
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43631, {	-- WANTED: Skul'vrax (rare wq)
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -1395,17 +1085,26 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(43632, {	-- WANTED: Theryssia (rare wq)
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(43459, {	-- WANTED: Thondrax
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
-				q(43633, {	-- WANTED: Thondrax
-					["collectible"] = false,
+				q(43633, {	-- WANTED: Thondrax (rare wq)
 					["lvl"] = 110,
+					["collectible"] = false,
 				}),
 				q(43248, {	-- Warden Tower Assault: Darkfollow's Spire [A]
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
+					["collectible"] = false,
+				}),
+				q(43247, {	-- Warden Tower Assault: Darkfollow's Spire (H)
+					["lvl"] = 110,
+					["races"] = HORDE_ONLY,
 					["collectible"] = false,
 				}),
 				q(43183, {	-- Warden Tower Assault: Starstalker's Point [A]
@@ -1413,7 +1112,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 				}),
+				q(42070, {	-- Warden Tower Assault: Starstalker's Point (H)
+					["lvl"] = 110,
+					["races"] = HORDE_ONLY,
+					["collectible"] = false,
+				}),
 				q(43784, {	-- What a Nightmare
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(43759, {	-- Where's the Reef?
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
@@ -1429,6 +1137,32 @@ _.Zones =
 						crit(36, {	-- Wildlife Conservationist
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
+					},
+				}),
+				q(41652, {	-- Work Order: Deep Amber Loop
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["g"] = {
+						i(137838),	-- Design: Deep Amber Loop (Rank 3)
+					},
+				}),
+				q(41292, {	-- Work Order: Dreamleaf
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 182,	-- Herbalism
+				}),
+				q(41312, {	-- Work Order: Leystone
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 186,	-- Mining
+				}),
+				q(41634, {	-- Work Order: Leystone Armguards
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 164,	-- Blacksmithing
+					["g"] = {
+						i(123936),	-- Recipe: Leystone Armguards (Rank 3)
 					},
 				}),
 				q(41272, {	-- Work Order: Mossgill Perch
@@ -1452,6 +1186,19 @@ _.Zones =
 						i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
 					},
 				}),
+				q(41338, {	-- Work Order: Stonehide Leather
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 393,	-- Skinning
+				}),
+				q(41658, {	-- Work Order: Sylvan Elixirs
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+					["g"] = {
+						i(127921),	-- Ripe: Sylvan Elixir (Rank 2)
+					},
+				}),
 				q(41640, {	-- Work Order: Warhide Mask
 					["requireSkill"] = 165,	-- Leatherworking
 					["lvl"] = 110,
@@ -1468,6 +1215,10 @@ _.Zones =
 					["groups"] = {
 						i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
 					},
+				}),
+				q(45927, {	-- Zagmothar (Invasion WQ)
+					["collectible"] = false,
+					["lvl"] = 98,
 				}),
 				q(45926, {	-- Zar'teth (Invasion WQ)
 					["lvl"] = 98,
