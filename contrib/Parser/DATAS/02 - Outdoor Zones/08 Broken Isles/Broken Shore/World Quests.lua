@@ -30,7 +30,6 @@ _.Zones =
 					q(46046),	-- Life's a Lich
 					q(46754),	-- Magical Beasts
 					q(46755),	-- Mission: Felraging
-					q(46822),	-- Natural Selection
 					q(46833),	-- Nature Unshackled
 					q(45793),	-- Occultist Onslaught
 					q(46752),	-- On Borrowed Wings
@@ -187,6 +186,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46825, {	-- Mud Mucking
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46822, {	-- Natural Selection
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

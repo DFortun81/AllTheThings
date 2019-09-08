@@ -85,6 +85,7 @@ _.NeverImplemented =
 		-------------------
 	--	DUNGEONS
 		q(35595),	-- Scholomance Reward Quest
+		q(35320),	-- Shado-Pan Monastery Reward Quest
 	
 	--	RAIDS
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
@@ -99,6 +100,7 @@ _.NeverImplemented =
 		q(32751),	-- Primordious Dead (killed Primordius on normal in ToT — again, "Primordius" is spelled wrong in the tracking quest title)
 		q(32747),	-- Tortos Dead (killed Tortos on heroic in ToT)
 		q(32746),	-- Zandalari Council Dead (killed Council of Elders on heroic in ToT)
+		q(32753),	-- Ra-den Dead (weekly)
 		
 	--	WORLD BOSSES
 		q(33226),	-- Short-Supply Reward (Celestials bonus roll)
@@ -327,6 +329,8 @@ _.NeverImplemented =
 		q(44601),	-- Tracking Quest: Working with the Wardens 5
 		q(44382),	-- Vengeance Chosen — chose to pursue Vengeance artifact while on quest 44383, "In Pursuit of Power"
 		q(48570),	-- Antorus, The Burning Throne - Triggers when the door opens to Kin'garoth
+		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
+		q(46775),	-- Campaign Cooldown - triggers during the legionfall campaign
 		
 	--	Treasures
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
@@ -366,6 +370,11 @@ _.NeverImplemented =
 	--	Various non-zone bonus objectives
 		q(43483),	-- Fel Annihilation — bonus objective in "In Defense of the Exodar" scenario, unavailable afterwards
 		
+	-- Deaths of Chromie scenario
+		q(48032),	-- FLAG - Hyjal Scene Seen - immediately upon entering Hyjal
+		q(47829),	-- FLAG - Hyjal complete
+		q(48031),	-- FLAG - Andorhal scene seen
+		q(48043),	-- FLAG - Plating Cleared - destroy cannon plating in andorhal
 
 		-------------------
 		--      BFA      --
