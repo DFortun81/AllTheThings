@@ -204,6 +204,34 @@ app.GetDataSubMember = GetDataSubMember;
 app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
 
+local function formatNumericWithCommas(amount)
+  local formatted = amount
+  while true do  
+    formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+    if (k==0) then
+      break
+    end
+  end
+  return formatted
+end
+local function GetMoneyString(amount)
+	if amount > 0 then
+		local formatted
+		local g,s,c = math.floor(amount / 100 / 100), math.floor((amount / 100) % 100), math.floor(amount % 100)
+		if g > 0 then -- PR#V
+			formatted = formatNumericWithCommas(g) .. "|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t"
+		end
+		if s > 0 then
+			formatted = (formatted or "") .. s .. "|TInterface\\MONEYFRAME\\UI-SilverIcon:0|t"
+		end
+		if c > 0 then
+			formatted = (formatted or "") .. c .. "|TInterface\\MONEYFRAME\\UI-CopperIcon:0|t"
+		end
+		return formatted
+	end
+	return amount
+end
+
 (function()
 	local tradeSkillSpecializationMap = {
 		-- Engineering Skills
@@ -8890,19 +8918,20 @@ local function RowOnEnter(self)
 					_ = v[1];
 					if _ == "i" then
 						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
-						amount = "x" .. v[3];
+						amount = "x" .. formatNumericWithCommas(v[3]);
 					elseif _ == "c" then
 						name,_,icon = GetCurrencyInfo(v[2])
-						amount = "x" .. v[3];
+						amount = "x" .. formatNumericWithCommas(v[3]);
 					elseif _ == "g" then
 						name = "";
 						icon = nil;
-						amount = GetCoinTextureString(v[2]);
+						amount = GetMoneyString(v[2])
 					end
 					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " " .. amount);
 				end
 			else
-				GameTooltip:AddDoubleLine("Cost", GetCoinTextureString(reference.cost));
+				local amount = GetMoneyString(reference.cost)
+				GameTooltip:AddDoubleLine("Cost", amount);
 			end
 		end
 		if reference.criteriaID and reference.achievementID then
