@@ -81,6 +81,17 @@ _.Zones =
 								}),
 							},
 						}),
+						q(56500, {	-- Storming the Battlefields
+							["provider"] = { "n", 143555 },	-- Xander Silberman
+							["coord"] = { 51.6, 58.2, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(168442),	-- Roiling Blood of the Vanquished
+								i(168920),	-- Azerite-Encrusted Timequartz
+								i(168578),	-- Sphere of Suppressed Force
+							},
+						}),
 						--[[q(54068, { 	-- Conquest's Reward  -- Needs more research.  Same quest name, but changes weekly as the season goes on for diffrent rewards?
 							["repeatable"] = true,
 							["coord"] = { 51.56, 58.06 },
@@ -88,20 +99,19 @@ _.Zones =
 						}),]]
 					},
 				}),
-				
-			-- QUESTS START HERE	
-				
+			-- The Throne of Zuldazar Quests
+				-- Portents and Prophecies
 				q(49491, {	-- Fuel for the Voodoo
-					["sourceQuests"] = { 49488 },	-- Tal'gurub
-					["coord"] = { 63.5, 31.7, 862 },
-					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 130706 },	-- Izita's Spirit
+					["coord"] = { 63.5, 31.7, 862 },
+					["sourceQuest"] = 49488,	-- Tal'gurub
+					["races"] = HORDE_ONLY,
 				}),
 				q(49489, {	-- Needs a Little Body
-					["sourceQuests"] = { 49488 },	-- Tal'gurub
-					["coord"] = { 62.8, 32.5, 862 },
-					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 129907 },	-- Zul the Prophet
+					["coord"] = { 62.8, 32.5, 862 },
+					["sourceQuest"] = 49488,	-- Tal'gurub
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161139),	-- Spirit Twister's Band
 						i(155255),	-- Rastari Legguards
@@ -111,27 +121,597 @@ _.Zones =
 					},
 				}),
 				q(49490, {	-- The Urn of Voices
-					["sourceQuests"] = { 49488 },	-- Tal'gurub
-					["coord"] = { 62.8, 32.5, 862 },
-					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 129907 },	-- Zul the Prophet
-				}),
-				q(46957, {	-- Welcome to Zuldazar
-					["sourceQuests"] = { 50769 },  -- The Stormwind Extraction
-					["coord"] = { 57.9, 62.4, 862 },
+					["coord"] = { 62.8, 32.5, 862 },
+					["sourceQuest"] = 49488,	-- Tal'gurub
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 132332 },	-- Princess Talanji
 				}),
-		--[[		["sourceQuests"] = {  },	-- 
-					["coord"] = { , , 862 },
+				q(49492, {	-- Arrogance of Vol'jamba
+					["provider"] = { "n", 129907 },	-- Zul the Prophet
+					["coord"] = { 42.9, 28.2, 862 },
+					["sourceQuests"] = {
+						49489,	-- Needs a Little Body
+						49490,	-- The Urn of Voices
+						49491,	-- Fuel for the Voodoo
+					},
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n",  },	-- 
+					["g"] = {
+						i(155300),	-- Jambani Deflector
+						i(159763),	-- Jambani Hex Focus
+						i(155302),	-- Idol of Vol'jamba
+					},	
 				}),
-				
-		--]]
+				q(49494, {	-- Zuvembi Brew
+					["provider"] = { "n", 129907 },	-- Zul the Prophet
+					["coord"] = { 64.4, 28.5, 862 },
+					["sourceQuest"] = 49492,	-- Arrogance of Vol'jamba
+					["races"] = HORDE_ONLY,
+				}),
+				q(49493, {	-- Zul's Ethical Dilemma
+					["provider"] = { "n", 129907 },	-- Zul the Prophet
+					["coord"] = { 64.4, 28.5, 862 },
+					["sourceQuest"] = 49492,	-- Arrogance of Vol'jamba
+					["races"] = HORDE_ONLY,
+				}),
+				q(51663, {	-- Preparing for the Fall
+					["provider"] = { "o", 290750 },	-- Jambani Stockpile
+					["coord"] = { 65.3, 28.3, 862 },
+					["sourceQuest"] = 49492,	-- Arrogance of Vol'jamba
+					["races"] = HORDE_ONLY,
+				}),
+				q(49495, {	-- Enforcing Fate
+					["provider"] = { "n", 129907 },	-- Zul the Prophet
+					["coord"] = { 65.7, 30.2, 862 },
+					["sourceQuests"] = {
+						49493,	-- Zul's Ethical Dilemma
+						49494,	-- Zuvembi Brew
+						51663,	-- Preparing for the Fall
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(49905, {	-- Plot Twist
+					["provider"] = { "n", 129907 },	-- Zul the Prophet
+					["coord"] = { 65.7, 30.2, 862 },
+					["sourceQuest"] = 49495,	-- Enforcing Fate
+					["races"] = HORDE_ONLY,
+				}),
+				q(49663, {	-- False Prophecies
+					["provider"] = { "n", 129907 },	-- Zul the Prophet
+					["coord"] = { 65.6, 30.5, 862 },
+					["sourceQuest"] = 49905,	-- Plot Twist
+					["races"] = HORDE_ONLY,
+				}),
+				-- Warport Rastari
+				q(49144, {	-- Wrath of the Zandalari
+					["provider"] = { "n", 127815 },	-- Zolani
+					["coord"] = { 47.9, 60.4, 862 },
+					["sourceQuest"] = 49122,	-- A Port in Peril
+					["races"] = HORDE_ONLY,	
+				}),
+				q(49145, {	-- No Troll Left Behind
+					["provider"] = { "n", 127814 },	-- Habutu
+					["coord"] = { 47.9, 60.4, 862 },
+					["sourceQuest"] = 49122,	-- A Port in Peril
+					["races"] = HORDE_ONLY,
+				}),
+				q(49146, {	-- Spirits' Belongings
+					["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
+					["coord"] = { 47.1, 60.5, 862 },
+					["sourceQuest"] = 49122,	-- A Port in Peril
+					["races"] = HORDE_ONLY,
+				}),
+				q(49147, {	-- Show of Strength
+					["provider"] = { "n", 127814 },	-- Habutu
+					["coord"] = { 47.9, 60.4, 862 },
+					["sourceQuests"] = {
+						49144,	-- Wrath of the Zandalari
+						49145,	-- No Troll Left Behind
+						49146,	-- Spirits' Belongings	
+					},
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155304),	-- Stormbinder Signet Ring
+						i(158412),	-- Zanchuli Cuffs
+						i(158413),	-- Rastari Bracers
+						i(158414),	-- Torcalin Bindings
+						i(158415),	-- Jambani Wristwraps
+					},
+				}),
+				q(49148, {	-- Crumbling Apart
+					["provider"] = { "n", 127815 },	-- Zolani
+					["coord"] = { 47.9, 60.4, 862 },
+					["sourceQuests"] = {
+						49144,	-- Wrath of the Zandalari
+						49145,	-- No Troll Left Behind
+						49146,	-- Spirits' Belongings	
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(49149, {	-- Embrace the Voodoo
+					["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
+					["coord"] = { 48.1, 60.4, 862 },
+					["sourceQuests"] = {
+						49144,	-- Wrath of the Zandalari
+						49145,	-- No Troll Left Behind
+						49146,	-- Spirits' Belongings	
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(49309, {	-- Thunder's Fall
+					["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
+					["coord"] = { 49.6, 64.5, 862 },
+					["sourceQuests"] = {
+						49147,	-- Show of Strength
+						49148,	-- Crumbling Apart
+						49149,	-- Embrace the Voodoo
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(49310, {	-- The Prophet's Ploy
+					["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
+					["coord"] = { 49.6, 64.5, 862 },
+					["sourceQuest"] = 49309,	-- Thunder's Fall
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155250),	-- Rastari Helm
+						i(155260),	-- Rastari Pauldrons
+						i(155239),	-- Rastari Breastplate
+						i(155252),	-- Torcalin Coif
+						i(155262),	-- Torcalin Spaulders
+						-- Get rest of rewards
+					},	
+				}),
+				-- Web of Lies
+				q(47509, {	-- Terrace of the Chosen
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, 1164 },
+					["sourceQuest"] = 49310,	-- The Prophet's Ploy
+					["races"] = HORDE_ONLY,
+				}),
+				q(47915, {	-- Rescuing the Taken
+					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
+					["coord"] = { 42.6, 21.4, 1165 },
+					["sourceQuest"] = 47509,	-- Terrace of the Chosen
+					["races"] = HORDE_ONLY,
+				}),
+				q(47897, {	-- Zanchuli Traitors
+					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
+					["coord"] = { 42.6, 21.4, 1165 },
+					["sourceQuest"] = 47509,	-- Terrace of the Chosen
+					["races"] = HORDE_ONLY,
+				}),
+				q(47518, {	-- Raal
+					["providers"] = {
+						{ "n", 123335 },	-- Wardruid Loti
+						{ "n", 133302 },	-- Druid of Gonk (Wardruid Loti)
+					},
+					["coord"] = { 39.4, 13.8, 1165 },
+					["sourceQuests"] = {
+						47897,	-- Zanchuli Traitors
+						47915,	-- Rescuing the Taken
+					},
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158399),	-- Rastari Wargreaves
+						i(158400),	-- Zanchuli Leggings
+						i(158401),	-- Torcalin Breeches
+						i(158402),	-- Jambani Pants
+						i(158668),	-- Jambani Cord
+						i(158669),	-- Torcalin Waistwrap
+						i(158670),	-- Zanchuli Waistwrap
+						i(158671),	-- Rastari Belt
+					},
+				}),
+				q(47520, {	-- Walls Have Ears
+					["providers"] = {
+						{ "n", 123335 },	-- Wardruid Loti
+						{ "n", 133302 },	-- Druid of Gonk (Wardruid Loti)
+					},
+					["coord"] = { 39.4, 13.8, 1165 },
+					["sourceQuests"] = {
+						47897,	-- Zanchuli Traitors
+						47915,	-- Rescuing the Taken
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(47521, {	-- Midnight in the Garden of the Loa
+					["provider"] = { "n", 133324 },	-- Hexlord Raal
+					["coord"] = { 42.5, 9.5, 1165 },
+					["sourceQuests"] = {
+						47520,	-- Walls Have Ears
+						47518,	-- Raal
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(47522, {	-- The Hunter
+					["provider"] = { "n", 122760 },	-- Wardruid Loti
+					["coord"] = { 50.7, 29.7, 862 },
+					["sourceQuest"] = 47521,	-- Midnight in the Garden of the Loa
+					["races"] = HORDE_ONLY,
+				}),
+				q(47963, {	-- The Ancient One
+					["provider"] = { "n", 133653 },	-- Hexlord Raal
+					["coord"] = { 50.7, 29.6 },
+					["sourceQuest"] = 47521,	-- Midnight in the Garden of the Loa
+					["races"] = HORDE_ONLY,
+				}),
+				q(47528, {	-- Mistress of Lies
+					["provider"] = { "n", 124749 },	-- Acolyte Mali
+					["sourceQuests"] = {
+						47963,	-- The Ancient One
+						47522,	-- The Hunter
+					},
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159105),	-- Spy Mistress Chopper
+						i(159106),	-- Venom Queen Longbow
+						i(159107),	-- Shadra Disciple's Hexknife
+						i(159108),	-- Hexlord's Polearm
+						i(159109),	-- Loa-Defender's Battleaxe
+						i(159110),	-- Fallen Spider Handaxe
+						i(159111),	-- Loa-Defender's Longspear
+						i(159112),	-- Shadra Disciple's Stabber
+					},
+				}),
+				-- Among the People
+				q(51101, {	-- The Wounded King
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, 1164 },
+					["sourceQuest"] = 49310,	-- The Prophet's Ploy
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazzalor
+				}),
+				q(51680, {	-- In Bwonsamdi's Shadow
+					["provider"] = { "n", 124083 },	-- Zolani
+					["coord"] = { 76.7, 16.3, 862 },
+					["sourceQuest"] = 51101,	-- The Wounded King
+					["races"] = HORDE_ONLY,
+				}),
+				q(47735, {	-- Ancient Tortollan Remedies
+					["provider"] = { "n", 124063 },	-- Jol the Ancient
+					["coord"] = { 76.4, 16.2, 862 },
+					["sourceQuest"] = 51680,	-- In Bwonsamdi's Shadow
+					["races"] = HORDE_ONLY,
+				}),
+				q(47739, {	-- The Scent of Vengeance
+					["provider"] = { "n", 132637 },	-- Jamil Abul'housin
+					["coord"] = { 76.5, 16.0, 862 },
+					["sourceQuest"] = 51680,	-- In Bwonsamdi's Shadow
+					["races"] = HORDE_ONLY,
+				}),
+				q(50235, {	-- No Safe Haven
+					["provider"] = { "n", 124083 },	-- Zolani
+					["coord"] = { 76.7, 16.3, 862 },
+					["sourceQuest"] = 51680,	-- In Bwonsamdi's Shadow
+					["races"] = HORDE_ONLY,
+				}),
+				q(47733, {	-- The Loa-Speaker's Betrayal
+					["provider"] = { "n", 138520 },	-- Zeb'ahari Villager
+					["coord"] = { 79.4, 16.8, 862 },
+					["sourceQuest"] = 51680,	-- In Bwonsamdi's Shadow
+					["races"] = HORDE_ONLY,
+				}),
+				q(51677, {	-- Mending Body and Soul
+					["provider"] = { "n", 124063 },	-- Jol the Ancient
+					["coord"] = { 76.4, 16.2, 862 },
+					["sourceQuests"] = {
+						47735,	-- Ancient Tortollan Remedies
+						47739,	-- The Scent of Vengeance
+						47733,	-- The Loa-Speaker's Betrayal
+						50235,	-- No Safe Haven
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(47738, {	-- The Will of the Loa
+					["provider"] = { "n", 132637 },	-- Jamil Abul'housin
+					["coord"] = { 76.5, 16.0, 862 },
+					["sourceQuest"] = 51677,	-- Mending Body and Soul
+					["races"] = HORDE_ONLY,
+				}),
+				q(47742, {	-- Zul's Mutiny
+					["provider"] = { "n", 124062 },	-- King Rastakhan
+					["coord"] = { 76.7, 16.1, 862 },
+					["sourceQuest"] = 47738,	-- The Will of the Loa
+					["races"] = HORDE_ONLY,
+				}),
+				q(51678, {	-- Rastakhan's Might
+					["provider"] = { "n", 124062 },	-- King Rastakhan
+					["coord"] = { 76.7, 16.1, 862 },
+					["sourceQuest"] = 47738,	-- The Will of the Loa
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155242),	-- Rastari Warboots
+						i(155243),	-- Zanchuli Slippers
+						i(155244),	-- Torcalin Boots
+						i(155245),	-- Jambani Footpads
+						i(158391),	-- Jambani Handwraps
+						i(158392),	-- Rastari Handguards
+						i(158393),	-- Zanchuli Grips
+						i(158394),	-- Torcalin Handguards
+					},
+				}),
+				q(51679, {	-- A Strange Port of Call
+					["provider"] = { "n", 124083 },	-- Zolani
+					["coord"] = { 76.6, 16.2, 862 },
+					["sourceQuest"] = 47738,	-- The Will of the Loa
+					["races"] = HORDE_ONLY,
+				}),
+				q(47737, {	-- The Temple of Rezan
+					["provider"] = { "n", 124062 },	-- King Rastakhan
+					["coord"] = { 76.7, 16.1, 862 },
+					["sourceQuests"] = {
+						51679,	-- A Strange Port of Call
+						51678,	-- Rastakhan's Might
+						47742,	-- Zul's Mutiny
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(47736, {	-- Heads Will Roll
+					["provider"] = { "n", 124656 },	-- Zolani
+					["coord"] = { 72.1, 21.2, 862 },
+					["sourceQuest"] = 47737,	-- The Temple of Rezan
+					["races"] = HORDE_ONLY,
+				}),
+				q(47740, {	-- House of the King
+					["provider"] = { "n", 124655 },	-- King Rastakhan
+					["coord"] = { 72.0, 21.0, 862 },
+					["sourceQuest"] = 47737,	-- The Temple of Rezan
+					["races"] = HORDE_ONLY,
+				}),
+				q(47734, {	-- Partners in Heresy
+					["provider"] = { "n", 124655 },	-- King Rastakhan
+					["coord"] = { 74.9, 24.9, 862 },
+					["sourceQuests"] = {
+						47736,	-- Heads Will Roll
+						47740,	-- House of the King
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(47741, {	-- To Sacrifice a Loa
+					["provider"] = { "n", 124655 },	-- King Rastakhan
+					["coord"] = { 74.9, 24.9, 862 },
+					["sourceQuest"] = 47737,	-- The Temple of Rezan
+					["races"] = HORDE_ONLY,
+				}),
+				-- March of the Loa
+				q(50433, {	-- Zanchuli Disbanded
+					["provider"] = { "n", 122760 },	-- Wardruid Loti
+					["coord"] = { 48.6, 26.8, 862 },
+					["sourceQuests"] = {
+						47528,	-- Mistress of Lies
+						47741,	-- To Sacrifice a Loa
+					},
+					["altQuests"] = { 51111 },	-- King or Prey
+					["races"] = HORDE_ONLY,
+				}),
+				q(51111, {	-- King or Prey
+					["provider"] = { "n", 124915 },	-- King Rastakhan
+					["coord"] = { 71.0, 29.8, 862 },
+					["sourceQuests"] = {
+						47528,	-- Mistress of Lies
+						47741,	-- To Sacrifice a Loa
+					},
+					["altQuests"] = { 50433 },	-- Zanchuli Disbanded
+					["races"] = HORDE_ONLY,
+				}),
+				q(49421, {	-- Hunting Zul
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, 1164 },
+					["sourceQuests"] = {
+						50433,	-- Zanchuli Disbanded
+						51111,	-- King or Prey
+					},
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49965, {	-- The Warpack
+					["provider"] = { "n", 129491 },	-- King Rastakhan
+					["coord"] = { 38.9, 27.2, 1165 },
+					["sourceQuests"] = {
+						49421,	-- Hunting Zul
+						47528,	-- Mistress of Lies
+						47741,	-- To Sacrifice a Loa
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(49422, {	-- Heretics
+					["provider"] = { "n", 129740 },	-- Gonk
+					["coord"] = { 49.3, 44.3, 862 },
+					["sourceQuest"] = 49965,	-- The Warpack
+					["races"] = HORDE_ONLY,
+				}),
+				q(49424, {	-- The Full Prophecy
+					["provider"] = { "n", 129561 },	-- Wardruid Loti
+					["coord"] = { 49.3, 44.4, 862 },
+					["sourceQuest"] = 49965,	-- The Warpack
+					["races"] = HORDE_ONLY,
+				}),
+				q(49425, {	-- City of Gold
+					["provider"] = { "n", 129703 },	-- Hexlord Raal
+					["coord"] = { 49.6, 38.0, 862 },
+					["sourceQuests"] = {
+						49422,	-- Heretics
+						49424,	-- The Full Prophecy	
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(49426, {	-- The King's Gambit
+					["provider"] = { "n", 131049 },	-- Rezan
+					["coord"] = { 43.6, 39.2, 862 },
+					["sourceQuests"] = 49425,	-- City of Gold
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155239),	-- Rastari Breastplate [was given this as reward 5/3/2019, not sure why it is listed for Prophet's Ploy also]
+						i(161143),	-- Rastari Helmet
+						i(161141),	-- Torcalin Headguard
+						i(155240),	-- Torcalin Chainmail
+					},
+				}),
+				q(49901, {	-- Atal'Dazar: Yazma the Fallen Priestess
+					["provider"] = { "n", 129757 },	-- King Rastakhan
+					["coord"] = { 42.7, 37.7, 862 },
+					["sourceQuest"] = 49426,	-- The King's Gambit
+					["races"] = HORDE_ONLY,
+				}),
+				q(50963, {	-- Of Dark Deeds and Dark Days
+					["provider"] = { "n", 129757 },	-- King Rastakhan
+					["coord"] = { 42.7, 37.7, 862 },
+					["sourceQuest"] = 49426,	-- The King's Gambit
+					["races"] = HORDE_ONLY,
+				}),
+			-- Other Quests
+				-- Warbeast Kraal Questline / How to Train Your Direhorn Achievment
+				q(50538, {	-- The Missing Handler
+					["provider"] = { "n", 131287 },	-- Natal'hakata
+					["coord"] = { 68.7, 71.8, 1164 },
+					["sourceQuest"] = 50881,	-- Royal Report
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },
+				}),
+				q(47226, {	-- The Orphaned Hatchling
+					["provider"] = { "n", 122939 },	-- Direhorn Hatchling
+					["coord"] = { 64.3, 44.7, 862 },
+					["sourceQuest"] = 50538,	-- The Missing Handler
+					["races"] = HORDE_ONLY,
+				}),
+				q(47259, {	-- Direhorn Daycare
+					["provider"] = { "n", 121706 },	-- Beastlord L'kala
+					["coord"] = { 66.8, 42.5, 862 },
+					["sourceQuest"] = 47226,	-- The Orphaned Hatchling
+					["races"] = HORDE_ONLY,
+				}),
+				q(48527, {	-- Ravenous Landsharks
+					["provider"] = { "n", 121706 },	-- Beastlord L'kala
+					["coord"] = { 66.8, 42.5, 862 },
+					["sourceQuest"] = 47226,	-- The Orphaned Hatchling
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159764),	-- Enraged Diemetradon Fin
+						i(158390),	-- Jambani Striders
+						i(158387),	-- Rastari Footguards
+						i(158389),	-- Torcalin Sabatons
+						i(158388),	-- Zanchuli Sandals
+					},
+				}),
+				q(47311, {	-- Headbutting 101
+					["provider"] = { "n", 121706 },	-- Beastlord L'kala
+					["coord"] = { 66.8, 42.5, 862 },
+					["sourceQuests"] = {
+						47259,	-- Direhorn Daycare
+						48527,	-- Ravenous Landsharks
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(47272, {	-- Direhorn Growth Hormone
+					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
+					["coord"] = { 66.8, 42.6, 862 },
+					["sourceQuests"] = {
+						47259,	-- Direhorn Daycare
+						48527,	-- Ravenous Landsharks
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(51980, {	-- WANTED: Jabra'kan
+					["provider"] = { "o", 291291 },	-- Wanted: Poacher
+					["coord"] = { 69.0, 40.9, 862 },
+					["sourceQuests"] = {
+						47259,	-- Direhorn Daycare
+						48527,	-- Ravenous Landsharks
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(47312, {	-- Queenfeather
+					["provider"] = { "n", 125486 },	-- Wingrider Nivek
+					["coord"] = { 69.0, 40.7, 862 },
+					["sourceQuests"] = {
+						47259,	-- Direhorn Daycare
+						48527,	-- Ravenous Landsharks
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(51990, {	-- Wings for the Kraal
+					["provider"] = { "n", 121706 },	-- Beastlord L'kala
+					["coord"] = { 66.8, 42.5, 862 },
+					["sourceQuests"] = {
+						47311,	-- Headbutting 101
+						47272,	-- Direhorn Growth Hormone
+						51980,	-- WANTED: Jabra'kan
+						47312,	-- Queenfeather
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(51998, {	-- DGH: Now With Real Direhorn
+					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
+					["coord"] = { 66.8, 42.6, 862 },
+					["sourceQuests"] = {
+						47311,	-- Headbutting 101
+						47272,	-- Direhorn Growth Hormone
+						51980,	-- WANTED: Jabra'kan
+						47312,	-- Queenfeather
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(47418, {	-- Growing Pains
+					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
+					["coord"] = { 66.8, 42.6, 862 },
+					["sourceQuests"] = {
+						51990,	-- Wings for the Kraal
+						51998,	-- DGH: Now With Real Direhorn
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				q(47261, {	-- How to Train Your Direhorn
+					["provider"] = { "n", 121706 },	-- Beastlord L'kala
+					["coord"] = { 66.8, 42.5, 862 },
+					["sourceQuest"] = 47418,	-- Growing Pains
+					["races"] = HORDE_ONLY,
+				}),
+				q(48581, {	-- A Good Spanking
+					["provider"] = { "n", 122009 },	-- Kraal Master B'khor
+					["coord"] = { 67.6, 43.4, 862 },
+					["sourceQuest"] = 47261,	-- How to Train Your Direhorn
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158411),	-- Jambani Girdle
+						i(158434),	-- Jambani Legwraps
+						i(158408),	-- Rastari Girdle
+						i(158431),	-- Rastari Legplates
+						i(158410),	-- Torcalin Chain
+						i(158433),	-- Torcalin Greaves
+						i(158409),	-- Zanchuli Cincture
+						i(158432),	-- Zanchuli Trousers
+					},
+				}),
+				q(47310, {	-- Naptime
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 121706 },	-- Beastlord L'kala
+					["g"] = {
+						ach(13542, crit(1)),	-- How to Train Your Direhorn / Naptime
+					},
+				}),
+				q(47260, {	-- Side Effects May Include...
+					["provider"] = { "n", 141952 },	-- Direhorn Juvenile
+					["coord"] = { 68.2, 41.7, 862 },
+					["sourceQuest"] = 47310,	-- Naptime
+					["races"] = HORDE_ONLY,
+				}),
+				q(52855, {	-- Alchemy is an Inexact Science
+					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
+					["coord"] = { 66.7, 42.7, 862 },
+					["sourceQuest"] = 47260,	-- Side Effects May Include...
+					["races"] = HORDE_ONLY,
+				}),
+				q(52857, {	-- Held For Observation
+					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
+					["coord"] = { 66.7, 42.7, 862 },
+					["sourceQuest"] = 47310,	-- Naptime
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						ach(13542, crit(2)),	-- How to Train Your Direhorn / Held For Observation
+					},
+				}),
 				
 			--	unsorted
-
 				{	-- A Growing Appetite
 					["questID"] = 55250,	-- A Growing Appetite
 					["races"] = HORDE_ONLY,
@@ -234,157 +814,7 @@ _.Zones =
 						},
 					},
 				},
-				q(49901, {	-- Atal'Dazar: Yazma the Fallen Priestess
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129757 },	-- King Rastakhan
-					["sourceQuests"] = { 49426 },	-- The King's Gambit
-				}),
-				q(49425, {	-- City of Gold
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129703 },	-- Hexlord Raal
-					["sourceQuests"] = {
-						49424,	-- The Full Prophecy
-						49422,	-- Heretics
-					},
-				}),
-				q(49422, {	-- Heretics
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129740 },	-- Gonk
-					["sourceQuests"] = { 49965 },	-- The Warpack
-				}),
-				q(49421, {	-- Hunting Zul
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-					["sourceQuests"] = { 50433 },	-- Zanchuli Disbanded
-				}),
-				q(50963, {	-- Of Dark Deeds and Dark Days [Note: Final Quest needed to trigger criteria]
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129757 },	-- King Rastakhan
-					["sourceQuests"] = { 49901 },	-- Atal'Dazar: Yazma the Fallen Priestess
-				}),
-				q(49424, {	-- The Full Prophecy
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129561 },	-- Wardruid Loti
-					["sourceQuests"] = { 49965 },	-- The Warpack
-				}),
-				q(49426, {	-- The King's Gambit
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 131049 },	-- Rezan
-					["sourceQuests"] = { 49425 },	-- City of Gold
-					["g"] = {
-						i(155239),	-- Rastari Breastplate [was given this as reward 5/3/2019, not sure why it is listed for Prophet's Ploy also]
-						i(161143),	-- Rastari Helmet
-						i(161141),	-- Torcalin Headguard
-						i(155240),	-- Torcalin Chainmail
-					},
-				}),
-				q(49965, {	-- The Warpack
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129491 },	-- King Rastakhan
-					["sourceQuests"] = { 49421 },	-- Hunting Zul
-				}),
-				q(50433, {	-- Zanchuli Disbanded
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 122760 }	-- Wardruid Loti
-				}),
-				q(51679, {	-- A Strange Port of Call
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124083 },	-- Zolani
-					["sourceQuests"] = { 47738 },	-- The Will of the Loa
-				}),
-				q(47735, {	-- Ancient Tortollan Remedies
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124063 },	-- Jol the Ancient
-					["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-				}),
-				q(47736, {	-- Heads Will Roll
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124656 },	-- Zolani
-					["sourceQuests"] = { 47737 },	-- The Temple of Rezan
-				}),
-				q(47740, {	-- House of the King  [Note: Final Quest needed to trigger criteria]
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124655 },	-- King Rastakhan
-					["sourceQuests"] = { 47737 },	-- The Temple of Rezan
-				}),
-				q(51680, {	-- In Bwonsamdi's Shadow
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124083 },	-- Zolani
-					["sourceQuests"] = { 51101 },	-- The Wounded King
-				}),
-				q(51677, {	-- Mending Body and Soul
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124063 },	-- Jol the Ancient
-					["sourceQuests"] = {
-						47735,	-- Ancient Tortollan Remedies
-						47739,	-- The Scent of Vengeance
-						47733,	-- The Loa-Speaker's Betrayal
-						50235,	-- No Safe Haven
-					},
-				}),
-				q(50235, {	-- No Safe Haven
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124083 },	-- Zolani
-					["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-				}),
-				q(51678, {	-- Rastakhan's Might
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(155242),	-- Rastari Warboots
-						i(155243),	-- Zanchuli Slippers
-						i(155244),	-- Torcalin Boots
-						i(155245),	-- Jambani Footpads
-						i(158391),	-- Jambani Handwraps
-						i(158392),	-- Rastari Handguards
-						i(158393),	-- Zanchuli Grips
-						i(158394),	-- Torcalin Handguards
-					},
-					["provider"] = { "n", 124062 },	-- King Rastakhan
-					["sourceQuests"] = { 47738 },	-- The Will of the Loa
-				}),
-				q(47733, {	-- The Loa-Speaker's Betrayal
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 138520 },	-- Zeb'ahari Villager
-					["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-				}),
-				q(47739, {	-- The Scent of Vengeance
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 132637 },	-- Jamil Abul'housin
-					["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-				}),
-				q(47737, {	-- The Temple of Rezan
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124062 },	-- King Rastakhan
-					["sourceQuests"] = {
-						51679,	-- A Strange Port of Call
-						51678,	-- Rastakhan's Might
-						47742,	-- Zul's Mutiny
-					},
-				}),
-				-- Start How to Train Your Direhorn Achievment
-				-- Start How to Train Your Direhorn Crit 1
-				q(47310, {	-- Naptime
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 121706 },	-- Beastlord L'kala
-					["g"] = {
-						crit(1, {	-- Naptime
-							["achievementID"] = 13542,	-- How to Train Your Direhorn
-						}),
-					},
-				}),
-				-- End How to Train Your Direhorn Crit 1
-				-- Start How to Train Your Direhorn Crit 2
-				q(52857, {	-- Held For Observation
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
-					["sourceQuest"] = 47310,	-- Naptime
-					["g"] = {
-						crit(2, {	-- Held For Observation
-							["achievementID"] = 13542,	-- How to Train Your Direhorn
-						}),
-					},
-				}),
-				-- End How to Train Your Direhorn Crit 2
+
 				-- Start How to Train Your Direhorn Crit 3
 				{	-- An Unending Sleep
 					["questID"] = 55254,
@@ -520,267 +950,7 @@ _.Zones =
 					["coord"] = { 68.2, 41.8, 862 },
 					["isDaily"] = true,
 				}),
-				q(51101, {	-- The Wounded King
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 141555 }	-- Baine Bloodhoof
-				}),
-				q(47738, {	-- The Will of the Loa
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 132637 },	-- Jamil Abul'housin
-					["sourceQuests"] = { 51677 },	-- Mending Body and Soul
-				}),
-				q(47742, {	-- Zul's Mutiny
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124062 },	-- King Rastakhan
-					["sourceQuests"] = { 47738 },	-- The Will of the Loa
-				}),
-				q(51111, {	-- King or Prey
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124915 }	-- King Rastakhan
-				}),
-				q(47521, {	-- Midnight in the Garden of the Loa
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 133324 },	-- Hexlord Raal
-					["sourceQuests"] = {
-						47520,	-- Walls Have Ears
-						47518,	-- Raal
-					},
-				}),
-				q(47528, {	-- Mistress of Lies [Note: Final Quest needed to trigger criteria]
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(159105),	-- Spy Mistress Chopper
-						i(159106),	-- Venom Queen Longbow
-						i(159107),	-- Shadra Disciple's Hexknife
-						i(159108),	-- Hexlord's Polearm
-						i(159109),	-- Loa-Defender's Battleaxe
-						i(159110),	-- Fallen Spider Handaxe
-						i(159111),	-- Loa-Defender's Longspear
-						i(159112),	-- Shadra Disciple's Stabber
-					},
-					["provider"] = { "n", 124749 },	-- Acolyte Mali
-					["sourceQuests"] = {
-						47963,	-- The Ancient One
-						47522,	-- The Hunter
-					},
-				}),
-				q(47518, {	-- Raal
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(158399),	-- Rastari Wargreaves
-						i(158400),	-- Zanchuli Leggings
-						i(158401),	-- Torcalin Breeches
-						i(158402),	-- Jambani Pants
-						i(158668),	-- Jambani Cord
-						i(158669),	-- Torcalin Waistwrap
-						i(158670),	-- Zanchuli Waistwrap
-						i(158671),	-- Rastari Belt
-					},
-					["provider"] = { "n", 123335 },	-- Wardruid Loti
-					["sourceQuests"] = {
-						47897,	-- Zanchuli Traitors
-						47915,	-- Rescuing the Taken
-					},
-				}),
-				q(47915, {	-- Rescuing the Taken
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
-					["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
-				}),
-				q(56500, {	-- Storming the Battlefields
-					["provider"] = { "n", 143555 },	-- Xander Silberman
-					["coord"] = { 51.6, 58.2, 862 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						i(168442),	-- Roiling Blood of the Vanquished
-						i(168920),	-- Azerite-Encrusted Timequartz
-						i(168578),	-- Sphere of Suppressed Force
-					},
-				}),
-				q(47509, {	-- Terrace of the Chosen
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-					["sourceQuests"] = { 51111 },	-- King or Prey
-				}),
-				q(47963, {	-- The Ancient One
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 133653 },	-- Hexlord Raal
-					["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
-				}),
-				q(47522, {	-- The Hunter
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 122760 },	-- Wardruid Loti
-					["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
-				}),
-				q(47520, {	-- Walls Have Ears
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 133302 },	-- Druid of Gonk
-					["sourceQuests"] = {
-						47897,	-- Zanchuli Traitors
-						47915,	-- Rescuing the Taken
-					},
-				}),
-				q(47897, {	-- Zanchuli Traitors
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
-					["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
-				}),
-				q(49122, {	-- A Port in Peril
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 127815 },	-- Zolani
-					["sourceQuests"] = { 49663 },	-- False Prophecies
-				}),
-				q(49148, {	-- Crumbling Apart
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 127815 },	-- Zolani
-					["sourceQuests"] = {
-						49146,	-- Spirits' Belongings
-						49145,	-- No Troll Left Behind
-						49144,	-- Wrath of the Zandalari
-					},
-				}),
-				q(49149, {	-- Embrace the Voodoo
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
-					["sourceQuests"] = {
-						49146,	-- Spirits' Belongings
-						49145,	-- No Troll Left Behind
-						49144,	-- Wrath of the Zandalari
-					},
-				}),
-				q(49145, {	-- No Troll Left Behind
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 127814 },	-- Habutu
-					["sourceQuests"] = { 49122 },	-- A Port in Peril
-				}),
-				q(49146, {	-- Spirits' Belongings
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
-					["sourceQuests"] = { 49122 },	-- A Port in Peril
-				}),
-				q(49147, {	-- Show of Strength
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(155304),	-- Stormbinder Signet Ring
-						i(158412),	-- Zanchuli Cuffs
-						i(158413),	-- Rastari Bracers
-						i(158414),	-- Torcalin Bindings
-						i(158415),	-- Jambani Wristwraps
-					},
-					["provider"] = { "n", 127814 },	-- Habutu
-					["sourceQuests"] = {
-						49146,	-- Spirits' Belongings
-						49145,	-- No Troll Left Behind
-						49144,	-- Wrath of the Zandalari
-					},
-				}),
-				q(49310, {	-- The Prophet's Ploy[Note: Final Quest needed to trigger criteria]
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(155250),	-- Rastari Helm
-						i(155260),	-- Rastari Pauldrons
-						i(155239),	-- Rastari Breastplate
-						i(155252),	-- Torcalin Coif
-						i(155262),	-- Torcalin Spaulders
-						-- Get rest of rewards
-					},
-					["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
-					["sourceQuests"] = { 49309 },	-- Thunder's Fall
-				}),
-				q(49309, {	-- Thunder's Fall
-					["sourceQuests"] = {
-						49147,	-- Show of Strength
-						49148,	-- Crumbling Apart
-						49149,	-- Embrace the Voodoo
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				q(49144, {	-- Wrath of the Zandalari
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 127815 },	-- Zolani
-					["sourceQuests"] = { 49122 },	-- A Port in Peril
-				}),
-				q(49492, {	-- Arrogance of Vol'jamba
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(155300),	-- Jambani Deflector
-						i(159763),	-- Jambani Hex Focus
-						i(155302),	-- Idol of Vol'jamba
-					},
-					["provider"] = { "n", 129907 },	-- Zul the Prophet
-					["sourceQuests"] = {
-						49489,	-- Needs a Little Body
-						49490,	-- The Urn of Voices
-						49491,	-- Fuel for the Voodoo
-					},
-				}),
-				q(49495, {	-- Enforcing Fate
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129907 },	-- Zul the Prophet
-					["sourceQuests"] = {
-						49493,	-- Zul's Ethical Dilemma
-						49494,	-- Zuvembi Brew
-						51663,	-- Preparing for the Fall
-					},
-				}),
-				q(49663, {	-- False Prophecies [Note: Final Quest needed to trigger criteria]
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129907 },	-- Zul the Prophet
-					["sourceQuests"] = { 49905 },	-- Plot Twist
-					--["icon"] = "Interface\\Addons\\AllTheThings\\assets\\star",	-- Quest Finale
-				}),
-				q(49905, {	-- Plot Twist
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129907 },	-- Zul the Prophet
-					["sourceQuests"] = { 49495 },	-- Enforcing Fate
-				}),
-				q(51663, {	-- Preparing for the Fall
-					["races"] = HORDE_ONLY,
-					--["provider"] = { "n", 290750 },	-- Jambani Stockpile  [IS OBJECT]
-					["sourceQuests"] = {
-						49489,	-- Needs a Little Body
-						49490,	-- The Urn of Voices
-						49491,	-- Fuel for the Voodoo
-					},
-				}),
-				q(49493, {	-- Zul's Ethical Dilemma
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129907 },	-- Zul the Prophet
-					["sourceQuests"] = {
-						49489,	-- Needs a Little Body
-						49490,	-- The Urn of Voices
-						49491,	-- Fuel for the Voodoo
-					},
-				}),
-				q(49494, {	-- Zuvembi Brew
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 129907 },	-- Zul the Prophet
-					["sourceQuests"] = {
-						49492,	-- Arrogance of Vol'jamba
-						51663,	-- Preparing for the Fall
-						49493,	-- Zul's Ethical Dilemma
-					},
-				}),
-				q(47514, {	-- Zuldazar
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 135775 },	-- Scouting Map
-					-- ["sourceQuests"] = { 52131 },	-- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievement because they can't pick anything up regardless and less spammy in Quest Chain window
-				}),
-				q(48581, {	-- A Good Spanking
-					["provider"] = { "n", 122009 },	-- Kraal Master B'khor
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(158411),	-- Jambani Girdle
-						i(158434),	-- Jambani Legwraps
-						i(158408),	-- Rastari Girdle
-						i(158431),	-- Rastari Legplates
-						i(158410),	-- Torcalin Chain
-						i(158433),	-- Torcalin Greaves
-						i(158409),	-- Zanchuli Cincture
-						i(158432),	-- Zanchuli Trousers
-					},
-				}),
+				
 				q(49289, {	-- A Special Stone
 					["provider"] = { "n", 128925 },	-- Deyon
 					["g"] = {
@@ -878,17 +1048,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159942),	-- Zul Adherent's Band
-					},
-				}),
-				q(48527, {	-- Ravenous Landsharks
-					["provider"] = { "n", 121706 },	-- Beastlord L'kala
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(159764),	-- Enraged Diemetradon Fin
-						i(158390),	-- Jambani Striders
-						i(158387),	-- Rastari Footguards
-						i(158389),	-- Torcalin Sabatons
-						i(158388),	-- Zanchuli Sandals
 					},
 				}),
 				q(49680, {	-- Skycaller Soltok

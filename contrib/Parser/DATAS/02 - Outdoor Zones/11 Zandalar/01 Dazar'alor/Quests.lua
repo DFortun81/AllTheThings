@@ -14,6 +14,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 137818 },	-- Myxle "The Searat" Gutwrench
 				}),
+				q(49122, {	-- A Port in Peril
+					["provider"] = { "n", 127815 },	-- Zolani
+					["coord"] = { 49.9, 46.6, 1165 },
+					["sourceQuests"] = {
+						50881,	-- Royal Report
+						47432,	-- The Bargain is Struck (Paku)
+						48897,	-- The Bargain is Struck (Gonk)
+						49663,	-- False Prophecies
+					},
+					["races"] = HORDE_ONLY,
+				}),
 				q(47437, {	-- Competitive Devotion
 					["sourceQuests"] = {
 						47434,	-- Restraining Order
@@ -241,17 +252,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 120740 },	-- King Rastakhan
 				}),
-				q(47432, {	-- The Bargain is Struck
+				q(47432, {	-- The Bargain is Struck (Paku)
 					["sourceQuests"] = { 47440 },	-- Pa'ku, Master of Winds
 					["coord"] = { 49.9, 33.5, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 127489 },	-- Hexlord Raal
 				}),
-				q(50538, {	-- The Missing Handler
-					["sourceQuests"] = { 50881 },	-- Royal Report
-					["coord"] = { 68.7, 71.8, 1164 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 131287 },	-- Natal'hakata
+				q(48897, {	-- The Bargain is Struck (Gonk)
+					["provider"] = { "n", 127489 },	-- Hexlord Raal
+					["coord"] = { 49.9, 33.5, 1165 },
+					["sourceQuest"] = 47439,	-- Gonk, Lord of the Pack
+					["races"] = HORDE_ONLY,	
 				}),
 				q(50835, {	-- The Port of Zandalar
 					["sourceQuests"] = { 47514 },	-- Zuldazar
@@ -303,6 +314,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 133050 },	-- Princes Talanji
 				}),
+				q(46957, {	-- Welcome to Zuldazar
+					["provider"] = { "n", 132332 },	-- Princess Talanji
+					["coord"] = { 57.9, 62.4, 862 },
+					["sourceQuest"] = 50769,  -- The Stormwind Extraction
+					["races"] = HORDE_ONLY,
+					["maps"] = { 862 },	-- Zuldazar
+				}),
 				q(52131, {	-- We Need Each Other
 					["sourceQuests"] = { 52139 },	-- To Matters at Hand
 					["coord"] = { 41.1, 64.4, 1164 },
@@ -318,7 +336,7 @@ _.Zones =
 				}),
 				q(47514, {	-- Zuldazar
 				--	no strict SQ since it depends on the order in which you choose to do the zones.
-					["description"] = "Picked up at the Scouting Map.",
+					["provider"] = { "n", 135775 },	-- Scouting Map
 					["coord"] = { 40.1, 69.1, 1164 },
 					["races"] = HORDE_ONLY,
 				}),

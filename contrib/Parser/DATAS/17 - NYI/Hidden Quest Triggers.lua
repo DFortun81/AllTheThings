@@ -478,10 +478,12 @@ _.NeverImplemented =
 		q(50715),	-- Zuldazar repeatable random chest
 		q(50716),	-- Zuldazar repeatable random chest
 		q(50720),	-- Zuldazar repeatable random chest
+		q(50721),	-- Zuldazar repeatable random chest
 		q(50722),	-- Zuldazar repeatable random chest
 		q(50723),	-- Zuldazar repeatable random chest
 		q(50724),	-- Zuldazar repeatable random chest
 		q(50726),	-- Zuldazar repeatable random chest
+		q(50727),	-- Zuldazar repeatable random chest
 		q(50728),	-- Zuldazar repeatable random chest
 		q(51346),	-- Zuldazar repeatable random chest
 		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
@@ -518,6 +520,10 @@ _.NeverImplemented =
 		q(53426),	-- for clicking on Lost Spawn of Krag'wa at { 25.68, 40.57, 863 }, in Nazmir
 		q(53423),	-- for clicking on Lost Spawn of Krag'wa at { 28.89, 83.16, 863 }, in Nazmir
 		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley		
+
+		-- Bonus Objectives: Zuldazar
+		q(47527),	-- Rituals of Heresy
+		q(47797),	-- Occupation Hazard
 		
 		-- Nazjatar
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
