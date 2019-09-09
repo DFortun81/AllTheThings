@@ -538,13 +538,15 @@ _.NeverImplemented =
 		-- Bonus Objectives
 		q(47527),	-- Rituals of Heresy
 		q(47797),	-- Occupation Hazard
-		q(50178),	-- Trouble in the Rootway
+		q(49315),	-- Dreadpearl Collusion
 		q(49918),	-- Gorilla Gorge
+		q(50178),	-- Trouble in the Rootway
 		
 		-- Chests
 		q(50711),	-- Zuldazar repeatable random chest
 		q(50715),	-- Zuldazar repeatable random chest
 		q(50716),	-- Zuldazar repeatable random chest
+		q(50719),	-- Zuldazar repeatable random chest
 		q(50720),	-- Zuldazar repeatable random chest
 		q(50721),	-- Zuldazar repeatable random chest
 		q(50722),	-- Zuldazar repeatable random chest

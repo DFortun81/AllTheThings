@@ -1069,6 +1069,247 @@ _.Zones =
 				--	["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- 	Isle of Fangs / Tusk Isle
+				q(52210, {	-- Sending Out An SOS
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, 1164 },
+					["sourceQuests"] = {
+						50433,	-- Zanchuli Disbanded
+						51111,	-- King or Prey
+					},
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
+				}),
+				q(49758, {	-- Send the Signal!
+					["provider"] = { "n", 140590 },	-- Captain Grez'ko
+					["coord"] = { 46.1, 94.5, 1165 },
+					["sourceQuest"] = 52210,	-- Sending Out An SOS
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1165 },	-- Dazar'alor
+				}),
+				q(49775, {	-- Key to the Brig
+					["provider"] = { "n", 135576 },	-- Bo'tzun Maset
+					["coord"] = { 54.4, 87.0, 862 },
+					["sourceQuest"] = 49758,	-- Send the Signal!
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159942),	-- Zul Adherent's Band
+					},
+				}),
+				q(49754, {	-- Not "Only Zul"
+					["provider"] = { "n", 130821 },	-- Wavemaster Lanfa
+					["coord"] = { 45.5, 52.2, 862 },
+					["sourceQuest"] = 49775,	-- Key to the Brig
+					["races"] = HORDE_ONLY,
+				}),
+				q(49871, {	-- Against the Tide
+					["provider"] = { "n", 130821 },	-- Wavemaster Lanfa
+					["coord"] = { 54.4, 87.0, 862 },
+					["sourceQuest"] = 49754,	-- Not "Only Zul"
+					["races"] = HORDE_ONLY,
+				}),
+				q(49785, {	-- Destroy the Weapon
+					["provider"] = { "n", 130750 },	-- Captain Grez'ko
+					["coord"] = { 54.7, 89.7, 862 },
+					["sourceQuest"] = 49871,	-- Against the Tide
+					["races"] = HORDE_ONLY,
+				}),
+				q(49884, {	-- Hope's Blue Light
+					["provider"] = { "n", 130833 },	-- Captain Grez'ko
+					["coord"] = { 54.7, 89.7, 862 },
+					["sourceQuest"] = 49754,	-- Not "Only Zul"
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159152),	-- Torcalin Grips
+						i(159153),	-- zanchuli Grips
+						i(159154),	-- Rastari Gloves
+						i(159155),	-- Jambani Handguards
+						i(158667),	-- Blue Flame Spelltorch
+						i(159124),	-- Golden Fleet Buckler
+					},
+				}),
+				-- Talanji's Rebuke
+				q(51555, {	-- Keep Them On Task
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, 1164 },
+					["sourceQuests"] = {
+						50433,	-- Zanchuli Disbanded
+						51111,	-- King or Prey
+					},
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
+				}),
+				q(51246, {	-- The Wreckoning
+					["provider"] = { "n", 137075 },	-- Lieutenant Dennis Grimtale
+					["coord"] = { 76.6, 48.5, 862 },
+					["sourceQuest"] = 51555,	-- Keep Them On Task
+					["races"] = HORDE_ONLY,
+				}),
+				q(51247, {	-- The Things They Carried
+					["provider"] = { "n", 137075 },	-- Lieutenant Dennis Grimtale
+					["coord"] = { 76.6, 48.5, 862 },
+					["sourceQuest"] = 51555,	-- Keep Them On Task
+					["races"] = HORDE_ONLY,
+				}),
+				q(51248, {	-- Productive Pests
+					["provider"] = { "n", 135855 },	-- Teekay Treadlebobbin
+					["coord"] = { 76.4, 48.7, 862 },
+					["sourceQuest"] = 51555,	-- Keep Them On Task
+					["races"] = HORDE_ONLY,
+				}),
+				q(51249, {	-- Crabulous Feast
+					["provider"] = { "n", 135803 },	-- J'eebi
+					["coord"] = { 76.4, 48.7, 862 },
+					["sourceQuest"] = 51555,	-- Keep Them On Task
+					["races"] = HORDE_ONLY,
+				}),
+				q(51286, {	-- Stop the Evacuation
+					["provider"] = { "n", 137075 },	-- Lieutenant Dennis Grimtale
+					["coord"] = { 76.6, 48.5, 862 },
+					["sourceQuests"] = {
+						51246,	-- The Wreckoning
+						51247,	-- The Things They Carried
+						51248,	-- Productive Pests
+						51249,	-- Crabulous Feast
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				-- 	Tortollan
+				q(49283, {	-- Who Seeks the Seekers?
+					["provider"] = { "n", 128909 },	-- Shalo
+					["coord"] = { 57.8, 92.3, 1165 },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1165 },	-- Dazar'alor
+				}),
+				q(49284, {	-- Perfect Tidings
+					["provider"] = { "n", 129586 },	-- Batu
+					["coord"] = { 70.5, 65.2, 862 },
+					["sourceQuest"] = 49283,	-- Who Seeks the Seekers?
+				}),
+				q(49285, {	-- Tiny Treasures
+					["provider"] = { "n", 128888 },	-- Koba
+					["coord"] = { 70.2, 65.0, 862 },
+					["sourceQuest"] = 49283,	-- Who Seeks the Seekers?
+					["g"] = {
+						i(156871),	-- Spitzy (TOY!)
+					},
+				}),
+				q(49286, {	-- Caged Wisdom
+					["provider"] = { "n", 128889 },	-- Deyon
+					["coord"] = { 73.7, 61.0, 862 },
+					["sourceQuests"] = { 
+						49284,	-- Perfect Tidings
+						49285,	-- Tiny Treasures
+					},
+				}),
+				q(49287, {	-- Lost Chelonians
+					["provider"] = { "n", 128889 },	-- Deyon
+					["coord"] = { 73.7, 61.0, 862 },
+					["sourceQuest"] = 49286,	-- Caged Wisdom
+				}),
+				q(49288, {	-- Scrollhunters
+					["provider"] = { "n", 128889 },	-- Deyon
+					["coord"] = { 73.7, 61.0, 862 },
+					["sourceQuest"] = 49286,	-- Caged Wisdom
+				}),
+				q(49289, {	-- A Special Stone
+					["provider"] = { "n", 128925 },	-- Deyon
+					["coord"] = { 75.2, 61.5, 862 },
+					["sourceQuests"] = {
+						49287,	-- Lost Chelonians
+						49288,	-- Scrollhunters
+					},
+					["g"] = {
+						i(159151),	-- Tidemistress Greatcloak
+						i(158440),	-- Rastari Waistplate
+						i(158441),	-- Zanchuli Cord
+						i(158442),	-- Torcalin Belt
+						i(158443),	-- Jambani Belt
+						i(157539),	-- Scroll of Storm Control (QI)
+					},
+				}),
+				q(51407, {	-- Find Their Words
+					["providers"] = {
+						{ "n", 128925 },	-- Deyon
+						{ "n", 129717 },	-- Akru
+					},
+					["coords"] = {
+						{ 75.2, 61.5, 862 },	-- Deyon
+						{ 70.3, 65.1, 862 },	-- Deyon
+						{ 70.6, 64.9, 862 },	-- Akru
+					},
+					["sourceQuest"] = 49286,	-- Caged Wisdom
+				}),
+				q(50331, {	-- A Different Outcome
+					["provider"] = { "n", 129717 },	-- Akru
+					["coord"] = { 70.6, 64.9, 862 },
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 49286,	-- Caged Wisdom
+				}),
+				q(49769, {	-- Wreckage of the Cataclysm
+				--	["provider"] = { "n", 129717 },	-- Akru
+				--	["coord"] = { 70.6, 64.9, 862 },
+					["isBreadcrumb"] = true,
+				--	["sourceQuest"] = 49286,	-- Caged Wisdom
+				}),
+				q(48014, {	-- Clear the Riffraff
+					["provider"] = { "n", 125047 },	-- Rokor
+					["coord"] = { 81.3, 45.8, 862 },
+					["sourceQuests"] = {
+						50331,	-- A Different Outcome
+						49769,	-- Wreckage of the Cataclysm
+					},
+				}),
+				q(48015, {	-- The Scrolls of Gral
+					["provider"] = { "n", 125047 },	-- Rokor
+					["coord"] = { 81.3, 45.8, 862 },
+					["sourceQuests"] = {
+						50331,	-- A Different Outcome
+						49769,	-- Wreckage of the Cataclysm
+					},
+				}),
+				q(49969, {	-- Awaken a God
+					["provider"] = { "n", 125039 },	-- Trader Kro
+					["coord"] = { 79.2, 42.3, 862 },
+					["sourceQuests"] = {
+						48014,	-- Clear the Riffraff
+						48015,	-- The Scrolls of Gral
+					},
+				}),
+				q(48025, {	-- Saving for Later
+					["provider"] = { "n", 125041 },	-- Scrollsage Goji
+					["coord"] = { 79.2, 42.1, 862 },
+					["sourceQuests"] = {
+						48014,	-- Clear the Riffraff
+						48015,	-- The Scrolls of Gral
+					},
+				}),
+				q(48026, {	-- Beneath the Waves
+					["provider"] = { "n", 131475 },	-- Shrine of Gral
+					["coord"] = { 79.2, 42.1, 862 },
+					["sourceQuests"] = {
+						49969,	-- Awaken a God
+						48025,	-- Saving for Later
+					},
+					["g"] = {
+						i(159765),	-- Empowered Shark's Tooth
+						i(155308),	-- Whispering Seawitch's Ring
+					},
+				}),
+				q(51538, {	-- Word from the Deep
+					["provider"] = { "n", 131461 },	-- Spirit of Gral
+					["coord"] = { 79.2, 42.1, 862 },
+					["sourceQuest"] = 48026,	-- Beneath the Waves
+				}),
+				q(51539, {	-- Inform the Horde!
+					["provider"] = { "n", 125041 },	-- Scrollsage Goji
+					["coord"] = { 79.2, 42.1, 862 },
+					["sourceQuest"] = 51538,	-- Word from the Deep
+					["races"] = HORDE_ONLY,
+				}),
+				
 				
 			--	unsorted
 				{	-- A Growing Appetite
@@ -1275,49 +1516,12 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				
-				q(49289, {	-- A Special Stone
-					["provider"] = { "n", 128925 },	-- Deyon
-					["g"] = {
-						i(159151),	-- Tidemistress Greatcloak
-						i(158440),	-- Rastari Waistplate
-						i(158441),	-- Zanchuli Cord
-						i(158442),	-- Torcalin Belt
-						i(158443),	-- Jambani Belt
-						i(157539),	-- Scroll of Storm Control
-					},
-				}),
+				
 				q(51516, {	-- Atal'Dazr: Ashes of a Warchief
 					["provider"] = { "n", 138138 },	-- Princess Telanji
 					["coord"] = { 43.7, 39.5 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
-				}),
-				q(48026, {	-- Beneath the Waves
-					["provider"] = { "n", 131475 },	-- Shrine of Gral
-					["g"] = {
-						i(159765),	-- Empowered Shark's Tooth
-						i(155308),	-- Whispering Seawitch's Ring
-					},
-				}),
-				
-				
-				q(49884, {	-- Hope's Blue Light
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(159152),	-- Torcalin Grips
-						i(159153),	-- zanchuli Grips
-						i(159154),	-- Rastari Gloves
-						i(159155),	-- Jambani Handguards
-						i(158667),	-- Blue Flame Spelltorch
-						i(159124),	-- Golden Fleet Buckler
-					},
-				}),
-				q(49775, {	-- Key to the Brig
-					["provider"] = { "n", 135576 },	-- Bo'tzun Maset
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(159942),	-- Zul Adherent's Band
-					},
 				}),
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
@@ -1341,14 +1545,7 @@ _.Zones =
 						i(159123),	-- Jambani Barrier
 					},
 				}),
-				q(49285, {	-- Tiny Treasures
-					["g"] = {
-						i(156871),	-- Spitzy (TOY!)
-					},
-					["provider"] = { "n", 128888 },	-- Koba
-					["coord"] = { 70.2, 65.0, 862 },
-					["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers? (Horde) - NEEDS VERIFICATION, per wowhead comment.  Also need to make sure Alliance side has no prereqs.
-				}),
+				
 				q(52113, {	-- Vol'jin, Son of Sen'jin
 					["provider"] = { "n", 137878 },	-- Master Gadrin
 					["coord"] = { 45.5, 35.8 },
