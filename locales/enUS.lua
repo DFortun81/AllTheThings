@@ -2030,6 +2030,7 @@ app.L = {
 		[209076] = "Interface\\Icons\\INV_Crate_01",
 		[209095] = "Interface\\Icons\\INV_Crate_01",
 		[209270] = "Interface\\Icons\\INV_Misc_NoteScript2d",
+		[209620] = "Interface\\Icons\\garrison_silverchest",
 		[211424] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[213363] = "Interface\\Icons\\inv_weapon_shortblade_46",
 		[213364] = "Interface\\Icons\\inv_pick_05",

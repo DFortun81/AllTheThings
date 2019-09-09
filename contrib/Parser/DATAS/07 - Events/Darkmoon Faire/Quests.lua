@@ -7,28 +7,8 @@ _.WorldEvents =
 	m(407, {	-- Darkmoon Island
 		n(-17, {	-- Quests
 			o(209620, {	-- Darkmoon Treasure Chest
-				["icon"] = "Interface\\Icons\\garrison_silverchest",
 				["coord"] = { 44.6, 78.9, 407 },	-- Chest
 				["g"] = {
-					q(29761, {	-- Master Pit Fighter
-						["sourceQuests"] = { 29760 },	-- Pit Fighter
-						["collectible"] = false,
-						["provider"] = { "n", 55402 },	-- Korgol Crushskull
-						["coord"] = { 47.3, 78.9, 407 },
-						["g"] = {
-							i(74035),	-- Master Pit Fighter
-							ach(6024),	-- Darkmoon Dominator
-						},
-					}),
-					q(29760, {	-- Pit Fighter
-						["collectible"] = false,
-						["provider"] = { "n", 55402 },	-- Korgol Crushskull
-						["coord"] = { 47.3, 78.9, 407 },
-						["g"] = {
-							i(74034),	-- Pit Fighter
-							ach(6023),	-- Darkmoon Duelist
-						},
-					}),
 					i(126949, {	-- Returning Champion
 						["sourceQuests"] = { 29761 },	-- Master Pit Fighter
 					}),
@@ -156,7 +136,7 @@ _.WorldEvents =
 							i(19290),	-- Darkmoon Card: Twisting Nether
 						},
 					}),
-					q(13324, {	-- Darkmoon Prisms Deck	
+					q(13324, {	-- Darkmoon Prisms Deck
 						["repeatable"] = true,
 						["provider"] = { "n", 14847 },			-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
@@ -237,18 +217,14 @@ _.WorldEvents =
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 				["u"] = 40,
 				["g"] = {
-					i(19491, {	-- Amulet of the Darkmoon
-						["u"] = 2,
-					}),
+					un(2, i(19491)),	-- Amulet of the Darkmoon
 				},
 			}),
 			q(7940,  {	-- 1200 Tickets - Orb of the Darkmoon
-				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 				["u"] = 40,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 				["g"] = {
-					i(19426, {	-- Orb of the Darkmoon
-						["u"] = 2,
-					}),
+					un(2, i(19426)),	-- Orb of the Darkmoon
 				},
 			}),
 			i(71083, {	-- Darkmoon Game Token
@@ -263,7 +239,7 @@ _.WorldEvents =
 					i(90899),	-- Darkmoon Whistle
 					i(73905),	-- Darkmoon Zeppelin (PET!)
 				}),
-			}),	
+			}),
 			q(29456, {	-- A Captured Banner
 				["repeatable"] = true,
 				["provider"] = { "i", 71951 },	-- Banner of the Fallen
@@ -332,6 +308,25 @@ _.WorldEvents =
 					crit(4, {	-- Ornate Weapon
 						["achievementID"] = 6029,	-- Darkmoon Despoiler
 					}),
+				},
+			}),
+			q(29761, {	-- Master Pit Fighter
+				["sourceQuests"] = { 29760 },	-- Pit Fighter
+				["collectible"] = false,
+				["provider"] = { "n", 55402 },	-- Korgol Crushskull
+				["coord"] = { 47.3, 78.9, 407 },
+				["g"] = {
+					i(74035),	-- Master Pit Fighter
+					ach(6024),	-- Darkmoon Dominator
+				},
+			}),
+			q(29760, {	-- Pit Fighter
+				["collectible"] = false,
+				["provider"] = { "n", 55402 },	-- Korgol Crushskull
+				["coord"] = { 47.3, 78.9, 407 },
+				["g"] = {
+					i(74034),	-- Pit Fighter
+					ach(6023),	-- Darkmoon Duelist
 				},
 			}),
 			q(29458, {	-- The Captured Journal
@@ -414,11 +409,10 @@ _.WorldEvents =
 					},
 				},
 			},
-			{	-- Baby Needs Two Pair of Shoes [Blacksmithing]
-				["questID"] = 29468,	-- Baby Needs Two Pair of Shoes
+			q(29468, {	-- Baby Needs Two Pair of Shoes
 				["u"] = 1,
 				["requireSkill"] = 164,	-- Blacksmithing
-			},
+			}),
 			{	-- Banners, Banners Everywhere! [Leatherworking]
 				["questID"] = 29520,	-- Banners, Banners Everywhere!
 				["provider"] = { "n", 10445 },			-- Selina Dourman
@@ -435,6 +429,9 @@ _.WorldEvents =
 					},
 				},
 			},
+			q(29480, {	-- Banners, Banners Everywhere!
+				["u"] = 40,
+			}),
 			{	-- Eye on the Prizes [Tailoring]
 				["questID"] = 29517,	-- Eyes on the Prizes
 				["provider"] = { "n", 14841 },			-- Rinling
@@ -467,6 +464,9 @@ _.WorldEvents =
 					},
 				},
 			},
+			q(29479, {	-- Herbs for Healing
+				["u"] = 40,
+			}),
 			{	-- Herbs for Healing [Herbalism]
 				["questID"] = 29514,	-- Herbs for Healing
 				["provider"] = { "n", 14833 },			-- Chronos
@@ -497,6 +497,9 @@ _.WorldEvents =
 					},
 				},
 			},
+			q(29466, {	-- Plenty of Plump Frogs
+				["u"] = 40,
+			}),
 			{	-- Putting the Carnies Back Together Again [First Aid]
 				["questID"] = 29512,	-- Putting the Carnies Back Together Again
 				["provider"] = { "n", 14833 },			-- Chronos
@@ -568,6 +571,9 @@ _.WorldEvents =
 					},
 				},
 			},
+			q(29467, {	-- Talkin' Tonks
+				["u"] = 40,
+			}),
 			{	-- Talking' Tonks [Engineering]
 				["questID"] = 29511,	-- Talking' Tonks
 				["provider"] = { "n", 14841 },			-- Rinling
@@ -614,7 +620,6 @@ _.WorldEvents =
 					},
 				},
 			},
-
 			{	-- Faded Treasure Map
 				["itemID"] = 126930,	-- Faded Treasure Map
 				["questID"] = 38934,	-- Sila's Secret Stash
@@ -763,6 +768,9 @@ _.WorldEvents =
 					--]]
 				},
 			},
+			q(29484, {	-- Putting the Crunch in the Frog
+				["u"] = 40,
+			}),
 			{	-- Ring of Promises
 				["itemID"] = 116068,	-- Ring of Promises
 				["questID"] = 36477,	-- Ring of Promises
@@ -1090,16 +1098,14 @@ _.WorldEvents =
 					},
 				},
 			},
-		}),
-		n(-40, {
-			n(-17, {
-				{	-- Your Fortune Awaits You...
-					["questID"] = 7945,
-					["itemID"] = 19452,	-- Sayge's Fortune #27
-					["provider"] = { "n", 14822 },	-- Sayge
-					["u"] = 40,
-				},
+			q(29471, {	-- Writing the Future
+				["u"] = 40,
+				["requireSkill"] = 773,	-- Inscription
+			}),
+			q(7945, {	-- Your Fortune Awaits You...
+				["u"] = 40,
+				["provider"] = { "i", 19452 },	-- Sayge's Fortune #27
 			}),
 		}),
-	}),	
-};	
+	}),
+};
