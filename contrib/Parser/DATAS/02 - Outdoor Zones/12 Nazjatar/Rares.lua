@@ -612,9 +612,13 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170185, {	-- Intact Naga Skeleton
-						crit(37, {	-- Intact Naga Skeleton
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
+						["repeatable"] = true,
+						["questID"] = 57138,
+						["g"] = {
+							crit(37, {	-- Intact Naga Skeleton
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),
 					i(169370, {	-- Scalebrood Hydra (PET!)
 						crit(7, {	-- Scalebrood Hydra
@@ -633,9 +637,13 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170185, {	-- Intact Naga Skeleton
-						crit(37, {	-- Intact Naga Skeleton
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
+						["repeatable"] = true,
+						["questID"] = 57138,
+						["g"] = {
+							crit(37, {	-- Intact Naga Skeleton
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),
 					i(169370, {	-- Scalebrood Hydra (PET!)
 						crit(7, {	-- Scalebrood Hydra
@@ -655,9 +663,13 @@ _.Zones =
 					}),
 					i(168155),	-- Chum
 					i(170185, {	-- Intact Naga Skeleton
-						crit(37, {	-- Intact Naga Skeleton
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
+						["repeatable"] = true,
+						["questID"] = 57138,
+						["g"] = {
+							crit(37, {	-- Intact Naga Skeleton
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),
 					i(169370, {	-- Scalebrood Hydra (PET!)
 						crit(7, {	-- Scalebrood Hydra

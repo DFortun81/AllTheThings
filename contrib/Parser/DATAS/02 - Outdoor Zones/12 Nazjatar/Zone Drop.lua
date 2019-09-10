@@ -191,6 +191,8 @@ _.Zones =
 				},
 			}),
 			i(170185, {	-- Intact Naga Skeleton
+				["repeatable"] = true,
+				["questID"] = 57138,
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					145340,	-- Siltridge Hydra
 					152541,	-- Siltridge Marauder

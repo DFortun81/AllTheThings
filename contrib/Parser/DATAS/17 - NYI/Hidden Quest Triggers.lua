@@ -85,9 +85,11 @@ _.NeverImplemented =
 		--      MOP      --
 		-------------------
 	--	DUNGEONS
+		q(35316),	-- Gate of the Setting Sun Reward Quest
 		q(35324),	-- Stormstout Brewery Reward Quest
 		q(35595),	-- Scholomance Reward Quest
 		q(35320),	-- Shado-Pan Monastery Reward Quest
+		q(35327),	-- Temple of the Jade Serpent Reward Quest
 	
 	--	RAIDS
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
@@ -231,6 +233,7 @@ _.NeverImplemented =
 		q(38587),	-- Tanaan Jungle - Assault on the Throne of Kil'jaeden - criteria complete
 
 	--	DUNGEONS
+		q(35960),	-- Auchindoun Reward Quest
 		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
 		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
 		q(35963),	-- Warlords Heroic Dungeon Reward Quest (triggered at the end of Mythic Grimrail Depot)
