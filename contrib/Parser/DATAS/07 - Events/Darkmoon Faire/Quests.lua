@@ -1,10 +1,24 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+-- //Add quests that were removed, but kept (Quests)
 _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island
 		n(-17, {	-- Quests
+			i(71083, {	-- Darkmoon Game Token
+				i(93724, {	-- Darkmoon Game Prize
+					i(78340),	-- Cloak of the Darkmoon Faire
+					i(73762),	-- Darkmoon Balloon
+					i(74981),	-- Darkmoon Cub (PET!)
+					i(91003),	-- Darkmoon Hatchling (PET!)
+					i(73764),	-- Darkmoon Monkey (PET!)
+					i(73903),	-- Darkmoon Tonk (PET!)
+					i(73765),	-- Darkmoon Turtle (PET!)
+					i(90899),	-- Darkmoon Whistle
+					i(73905),	-- Darkmoon Zeppelin (PET!)
+				}),
+			}),
 			o(209620, {	-- Darkmoon Treasure Chest
 				["coord"] = { 44.6, 78.9, 407 },	-- Chest
 				["g"] = {
@@ -69,7 +83,7 @@ _.WorldEvents =
 					}),
 					q(7929,  {	-- Darkmoon Elementals Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
@@ -79,7 +93,7 @@ _.WorldEvents =
 					i(31907, {	-- Furies Deck
 						q(10940, {	-- Darkmoon Furies Deck
 							["repeatable"] = true,
-							["provider"] = { "n", 14847 },			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },	-- Professor Thaddeus
 							["coord"] = { 51.9, 60.9, 407 },
 							["lvl"] = 70,
 							["g"] = {
@@ -89,7 +103,7 @@ _.WorldEvents =
 					}),
 					q(27665, {	-- Darkmoon Hurricane Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 85,
 						["g"] = {
@@ -100,7 +114,7 @@ _.WorldEvents =
 					i(31914, {	-- Lunacy Deck
 						q(10941, {	-- Darkmoon Lunacy Deck
 							["repeatable"] = true,
-							["provider"] = { "n", 14847 },			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },	-- Professor Thaddeus
 							["coord"] = { 51.9, 60.9, 407 },
 							["lvl"] = 70,
 							["g"] = {
@@ -110,7 +124,7 @@ _.WorldEvents =
 					}),
 					q(13326, {	-- Darkmoon Nobles Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 80,
 						["g"] = {
@@ -122,7 +136,7 @@ _.WorldEvents =
 					}),
 					q(30450, {	-- Darkmoon Ox Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 90,
 						["g"] = {
@@ -131,7 +145,7 @@ _.WorldEvents =
 					}),
 					q(7927,  {	-- Darkmoon Portals Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
@@ -140,7 +154,7 @@ _.WorldEvents =
 					}),
 					q(13324, {	-- Darkmoon Prisms Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 80,
 						["g"] = {
@@ -149,7 +163,7 @@ _.WorldEvents =
 					}),
 					q(30451, {	-- Darkmoon Serpent Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 90,
 						["g"] = {
@@ -159,7 +173,7 @@ _.WorldEvents =
 					i(31891, {	-- Storms Deck
 						q(10939, {	-- Darkmoon Storms Deck
 							["repeatable"] = true,
-							["provider"] = { "n", 14847 },			-- Professor Thaddeus
+							["provider"] = { "n", 14847 },	-- Professor Thaddeus
 							["coord"] = { 51.9, 60.9, 407 },
 							["lvl"] = 70,
 							["g"] = {
@@ -169,7 +183,7 @@ _.WorldEvents =
 					}),
 					q(30452, {	-- Darkmoon Tiger Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 90,
 						["g"] = {
@@ -179,7 +193,7 @@ _.WorldEvents =
 					}),
 					q(27666, {	-- Darkmoon Tsunami Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 85,
 						["g"] = {
@@ -188,7 +202,7 @@ _.WorldEvents =
 					}),
 					q(13327, {	-- Darkmoon Undeath Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 80,
 						["g"] = {
@@ -197,7 +211,7 @@ _.WorldEvents =
 					}),
 					q(27664, {	-- Darkmoon Volcanic Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 85,
 						["g"] = {
@@ -206,7 +220,7 @@ _.WorldEvents =
 					}),
 					q(7928,  {	-- Darkmoon Warlords Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },			-- Professor Thaddeus
+						["provider"] = { "n", 14847 },	-- Professor Thaddeus
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
@@ -217,30 +231,17 @@ _.WorldEvents =
 			}),
 			q(7981,  {	-- 1200 Tickets - Amulet of the Darkmoon
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 				["g"] = {
 					un(2, i(19491)),	-- Amulet of the Darkmoon
 				},
 			}),
 			q(7940,  {	-- 1200 Tickets - Orb of the Darkmoon
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 				["g"] = {
 					un(2, i(19426)),	-- Orb of the Darkmoon
 				},
-			}),
-			i(71083, {	-- Darkmoon Game Token
-				i(93724, {	-- Darkmoon Game Prize
-					i(78340),	-- Cloak of the Darkmoon Faire
-					i(73762),	-- Darkmoon Balloon
-					i(74981),	-- Darkmoon Cub (PET!)
-					i(91003),	-- Darkmoon Hatchling (PET!)
-					i(73764),	-- Darkmoon Monkey (PET!)
-					i(73903),	-- Darkmoon Tonk (PET!)
-					i(73765),	-- Darkmoon Turtle (PET!)
-					i(90899),	-- Darkmoon Whistle
-					i(73905),	-- Darkmoon Zeppelin (PET!)
-				}),
 			}),
 			q(29456, {	-- A Captured Banner
 				["repeatable"] = true,
@@ -282,20 +283,6 @@ _.WorldEvents =
 					}),
 				},
 			}),
-			q(29446, {	-- A Wondrous Weapon
-				["repeatable"] = true,
-				["provider"] = { "i", 71638 },	-- Ornate Weapon
-				["coord"] = { 51.9, 60.9, 407 },
-				["lvl"] = 10,
-				["g"] = {
-					crit(5, {	-- Ornate Weapon
-						["achievementID"] = 6027,	-- Darkmoon Dungeoneer
-					}),
-					crit(4, {	-- Ornate Weapon
-						["achievementID"] = 6029,	-- Darkmoon Despoiler
-					}),
-				},
-			}),
 			q(29444, {	-- An Exotic Egg
 				["repeatable"] = true,
 				["provider"] = { "i", 71636 },	-- Monstrous Egg
@@ -311,7 +298,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29449, {	-- An Intriguing Grimoire
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(29445, {	-- An Intriguing Grimoire
 				["repeatable"] = true,
@@ -327,49 +314,62 @@ _.WorldEvents =
 					}),
 				},
 			}),
-			q(29468, {	-- Baby Needs Two Pair of Shoes
-				["u"] = 1,
-				["requireSkill"] = 164,	-- Blacksmithing
+			q(29446, {	-- A Wondrous Weapon
+				["repeatable"] = true,
+				["provider"] = { "i", 71638 },	-- Ornate Weapon
+				["coord"] = { 51.9, 60.9, 407 },
+				["lvl"] = 10,
+				["g"] = {
+					crit(5, {	-- Ornate Weapon
+						["achievementID"] = 6027,	-- Darkmoon Dungeoneer
+					}),
+					crit(4, {	-- Ornate Weapon
+						["achievementID"] = 6029,	-- Darkmoon Despoiler
+					}),
+				},
 			}),
 			q(29508, {	-- Baby Needs Two Pair of Shoes
+				["requireSkill"] = 164,	-- Blacksmithing
+				["repeatable"] = true,
 				["provider"] = { "n", 14829 },	-- Yebb Neblegear
 				["coord"] = { 51.1, 82.0, 407 },
-				["repeatable"] = true,
-				["requireSkill"] = 164,	-- Blacksmithing
 				["g"] = {
 					crit(3, {	-- Blacksmithing
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
 			}),
-			q(29480, {	-- Banners, Banners Everywhere!
-				["u"] = 40,
+			q(29468, {	-- Baby Needs Two Pair of Shoes
+				["u"] = 1,
+				["requireSkill"] = 164,	-- Blacksmithing
 			}),
 			q(29520, {	-- Banners, Banners Everywhere!
-				["provider"] = { "n", 10445 },			-- Selina Dourman
-				["coord"] = { 55.56, 55.03, 407 },
-				["repeatable"] = true,
 				["requireSkill"] = 165,	-- Leatherworking
 				["description"] = "Requires |CFFFFD70010 Shiny Bauble|r, |CFFFFD7005 Coarse Thread|r, |CFFFFD7005 Blue Dye|r to complete.",
+				["repeatable"] = true,
+				["provider"] = { "n", 10445 },	-- Selina Dourman
+				["coord"] = { 55.56, 55.03, 407 },
 				["g"] = {
 					crit(12, {	-- Leatherworking
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
 			}),
+			q(29480, {	-- Banners, Banners Everywhere!
+				["u"] = 40,	-- Legacy Quests
+			}),
 			q(33354, {	-- Den Mother's Demise
-				["crs"] = { 71992 },	-- Moonfang
-				["provider"] = { "i", 105891 },	-- Moonfang's Pelt
-				["coord"] = { 39.36, 43.68, 407 },
+				["creatureID"] = 71992,	-- Moonfang
 				["repeatable"] = true,
-				["isWeekly"] = true,
+				["provider"] = { "i", 105891 },	-- Moonfang's Pelt
+				["coord"] = { 39.3, 43.6, 407 },
 			}),
 			q(29517, {	-- Eyes on the Prizes
-				["provider"] = { "n", 14841 },	-- Rinling
-				["coord"] = { 49.25, 60.79, 407 },
-				["repeatable"] = true,
 				["requireSkill"] = 197,	-- Tailoring
 				["description"] = "Requires |CFFFFD7001 Coarse Thread|r, |CFFFFD7001 Red Dye|r, |CFFFFD7001 Blue Dye|r, to complete.",
+				["repeatable"] = true,
+				["provider"] = { "n", 14841 },	-- Rinling
+				["coord"] = { 49.2, 60.7, 407 },
 				["g"] = {
 					crit(15, {	-- Tailoring
 						["achievementID"] = 6032,	-- Faire Favors
@@ -377,10 +377,9 @@ _.WorldEvents =
 				},
 			}),
 			q(36481, {	-- Firebird's Challenge
-				["isDaily"] = true,
-				["repeatable"] = true,
 				["provider"] = { "n", 85546 },	-- Ziggie Sparks
-				["coord"] = { 48.36, 71.37, 407 },
+				["isDaily"] = true,
+				["coord"] = { 48.3, 71.3, 407 },
 				["g"] = {
 					ach(9252, {	-- Brood of Alysrazor
 						i(116115),	-- Blazing Wings
@@ -389,22 +388,35 @@ _.WorldEvents =
 				},
 			}),
 			q(29507, {	-- Fun for the Little Ones
-				["provider"] = { "n", 14847 },	-- Professor Thaddeus
-				["coord"] = { 51.9, 60.9, 407 },
-				["repeatable"] = true,
 				["requireSkill"] = 794,	-- Archaeology
 				["description"] = "Requires |CFFFFD70050 Fossil Archaeology Fragments|r to complete.",
+				["repeatable"] = true,
+				["provider"] = { "n", 14847 },	-- Professor Thaddeus
+				["coord"] = { 51.9, 60.9, 407 },
 				["g"] = {
 					crit(2, {	-- Archaeology
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
 			}),
+			q(29479, {	-- Herbs for Healing
+				["u"] = 40,	-- Legacy Quests
+			}),
+			q(29514, {	-- Herbs for Healing
+				["requireSkill"] = 182,	-- Herbalism
+				["repeatable"] = true,
+				["provider"] = { "n", 14833 },	-- Chronos
+				["coord"] = { 54.9, 70.7, 407 },
+				["g"] = {
+					crit(9, {	-- Herbalism
+						["achievementID"] = 6032,	-- Faire Favors
+					}),
+				},
+			}),
 			q(29438, {	-- He Shoots, He Scores!
 				["isDaily"] = true,
-				["repeatable"] = true,
 				["provider"] = { "n", 14841 },	-- Rinling
-				["coord"] = { 49.25, 60.79, 407 },
+				["coord"] = { 49.2, 60.7, 407 },
 				["g"] = {
 					ach(6022),	-- Quick Shot
 					crit(2, {	-- Shooting Gallery
@@ -413,29 +425,14 @@ _.WorldEvents =
 					i(93724),	-- Darkmoon Game Prize
 				},
 			}),
-			q(29479, {	-- Herbs for Healing
-				["u"] = 40,
-			}),
-			q(29514, {	-- Herbs for Healing
-				["provider"] = { "n", 14833 },			-- Chronos
-				["repeatable"] = true,
-				["coord"] = { 54.99, 70.78, 407 },
-				["requireSkill"] = 182,	-- Herbalism
-				["g"] = {
-					crit(9, {	-- Herbalism
-						["achievementID"] = 6032,	-- Faire Favors
-					}),
-				},
-			}),
 			q(35504, {	-- Iron Joker
 				["repeatable"] = true,
 				["provider"] = { "i", 113135 },
 			}),
 			q(29463, {	-- It's Hammer Time
-				["isDaily"] = true,
-				["repeatable"] = true,
 				["provider"] = { "n", 54601 },	-- Mola
-				["coord"] = { 53.28, 54.35, 407 },
+				["isDaily"] = true,
+				["coord"] = { 53.2, 54.3, 407 },
 				["g"] = {
 					ach(9983, {	-- That's Whack!
 						i(123862),	-- Hogs' Studded Collar
@@ -447,10 +444,10 @@ _.WorldEvents =
 				},
 			}),
 			q(29516, {	-- Keeping the Faire Sparkling
-				["provider"] = { "n", 14833 },			-- Chronos
-				["repeatable"] = true,
-				["coord"] = { 54.99, 70.78, 407 },
 				["requireSkill"] = 755,	-- Jewelcrafting
+				["repeatable"] = true,
+				["provider"] = { "n", 14833 },	-- Chronos
+				["coord"] = { 54.9, 70.7, 407 },
 				["g"] = {
 					crit(11, {	-- Jewelcrafting
 						["achievementID"] = 6032,	-- Faire Favors
@@ -458,11 +455,11 @@ _.WorldEvents =
 				},
 			}),
 			q(33756, {	-- Let's Keep Racing
-				["provider"] = { "n", 74056 },			-- Malle Earnhard
-				["isDaily"] = true,
+				["sourceQuests"] = { 37910 },	-- Welcome to the Darkmoon Races
 				["repeatable"] = true,
-				["sourceQuest"] = 37910,	-- Welcome to the Darkmoon Races
-				["coord"] = { 48.98, 88.31, 407 },
+				["provider"] = { "n", 74056 },	-- Malle Earnhard
+				["isDaily"] = true,
+				["coord"] = { 48.9, 88.3, 407 },
 			}),
 			q(12518, {	-- Mages Deck
 				["provider"] = { "i", 44148 },	-- Mages Deck
@@ -484,26 +481,26 @@ _.WorldEvents =
 				},
 			}),
 			q(7941,  {	-- More Armor Kits
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(7943,  {	-- More Bat Eyes
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(7939,  {	-- More Dense Grinding Stones
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(8223,  {	-- More Glowing Scorpid Blood
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(7942,  {	-- More Thorium Widgets
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(37868, {	-- More Big Racing!
-				["provider"] = { "n", 90473 },			-- Patti Earnhard
-				["isDaily"] = true,
+				["sourceQuests"] = { 37911 },	-- The Real Big Race
 				["repeatable"] = true,
-				["sourceQuest"] = 37911,	-- The Real Big Race
-				["coord"] = { 53.25, 87.6, 407 },
+				["provider"] = { "n", 90473 },	-- Patti Earnhard
+				["isDaily"] = true,
+				["coord"] = { 53.2, 87.6, 407 },
 			}),
 			q(29760, {	-- Pit Fighter
 				["collectible"] = false,
@@ -515,35 +512,38 @@ _.WorldEvents =
 				},
 			}),
 			q(29466, {	-- Plenty of Plump Frogs
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(29512, {	-- Putting the Carnies Back Together Again
-				["u"] = 40,	-- First Aid removed in 8.0.1 BfA Prepatch
-				["provider"] = { "n", 14833 },			-- Chronos
-				["repeatable"] = true,
-				["coord"] = { 54.99, 70.78, 407 },
 				["requireSkill"] = 129,	-- First Aid
+				["repeatable"] = true,
+				["provider"] = { "n", 14833 },	-- Chronos
+				["coord"] = { 54.9, 70.7, 407 },
+				["u"] = 40,	-- Legacy Quests — First Aid removed in 8.0.1 BfA Prepatch
 			}),
 			q(29484, {	-- Putting the Crunch in the Frog
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(29509, {	-- Putting the Crunch in the Frog
-				["provider"] = { "n", 14845 },			-- Stamp Thunderhorn
-				["coord"] = { 52.89, 67.94, 407 },
-				["repeatable"] = true,
 				["requireSkill"] = 185,	-- Cooking
 				["description"] = "Requires |CFFFFD7005 Simple Flour|r to complete.",
+				["repeatable"] = true,
+				["provider"] = { "n", 14845 },	-- Stamp Thunderhorn
+				["coord"] = { 52.8, 67.9, 407 },
 				["g"] = {
 					crit(4, {	-- Cooking
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
 			}),
+			q(29484, {	-- Putting the Crunch in the Frog
+				["u"] = 40,	-- Legacy Quests
+			}),
 			q(29510, {	-- Putting Trash to Good Use
-				["provider"] = { "n", 14822 },	-- Sayge
-				["repeatable"] = true,
-				["coord"] = { 53.2, 75.8, 407 },
 				["requireSkill"] = 333,	-- Enchanting
+				["repeatable"] = true,
+				["provider"] = { "n", 14822 },	-- Sayge
+				["coord"] = { 53.2, 75.8, 407 },
 				["g"] = {
 					crit(5, {	-- Enchanting
 						["achievementID"] = 6032,	-- Faire Favors
@@ -551,13 +551,13 @@ _.WorldEvents =
 				},
 			}),
 			q(29469, {	-- Rearm, Reuse, Recycle
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(29518, {	-- Rearm, Reuse, Recycle
-				["provider"] = { "n", 14841 },	-- Rinling
-				["coord"] = { 49.25, 60.79, 407 },
-				["repeatable"] = true,
 				["requireSkill"] = 186,	-- Mining
+				["repeatable"] = true,
+				["provider"] = { "n", 14841 },	-- Rinling
+				["coord"] = { 49.2, 60.7, 407 },
 				["g"] = {
 					crit(13, {	-- Mining
 						["achievementID"] = 6032,	-- Faire Favors
@@ -565,13 +565,8 @@ _.WorldEvents =
 				},
 			}),
 			q(36477, {	-- Ring of Promises
-				["itemID"] = 116068,	-- Ring of Promises
-				["provider"] = { "n", 85531 },			-- Erinys
-				["coords"] = {
-					{ 74.84, 33.49, 407 },	-- Entrance
-					{ 74.26, 44.29, 407 },	-- Enrinys
-					{ 51.21, 75.01, 407 },	-- Chester [Turn-In]
-				},
+				["provider"] = { "i", 116068 },	-- Erinys
+				["coord"] = { 74.8, 33.4, 407 },	-- Entrance
 				["g"] = {
 					i(116067),	-- Ring of Broken Promises
 				},
@@ -588,27 +583,29 @@ _.WorldEvents =
 				},
 			}),
 			q(38934, {	-- Sila's Secret Stash
-				["provider"] = { "i", 126930 },	-- Faded Treasure Map
-				["coord"] = { 52.51, 88.79, 407 },
+				["providers"] = {
+					{ "i", 126930 },	-- Faded Treasure Map
+					{ "n", 55103 },		-- Galissa Sundew
+				},
+				["coord"] = { 52.5, 88.7, 407 },
 				["g"] = {
 					i(127148, {	-- Sila's Secret Stash
-						["description"] = "This item contains 100 Darkmoon Faire Tickets!!",
+						["description"] = "This item contains 100 Darkmoon Faire Tickets.",
 					}),
 				},
 			}),
 			q(7946,  {	-- Spawn of Jubjub
-				["provider"] = { "i", 19462 },	-- Unhatched Jubling Egg
-				["crs"] = { 14871 },		-- Morja
-				["coord"] = { 55.94, 70.73, 407 },
+				["provider"] = { "n", 14871 },	-- Morja
+				["coord"] = { 55.9, 70.7, 407 },
 				["g"] = {
 					i(19450),	-- Jubling
 				},
 			}),
 			q(29513, {	-- Spoilin' for Salty Sea Dogs
-				["provider"] = { "n", 14845 },	-- Stamp Thunderhorn
-				["coord"] = { 52.89, 67.94, 407 },
-				["repeatable"] = true,
 				["requireSkill"] = 356,	-- Fishing
+				["repeatable"] = true,
+				["provider"] = { "n", 14845 },	-- Stamp Thunderhorn
+				["coord"] = { 52.8, 67.9, 407 },
 				["g"] = {
 					crit(8, {	-- Fishing
 						["achievementID"] = 6032,	-- Faire Favors
@@ -616,13 +613,13 @@ _.WorldEvents =
 				},
 			}),
 			q(29467, {	-- Talkin' Tonks
-				["u"] = 40,
+				["u"] = 40,	-- Legacy Quests
 			}),
-			q(29511, {	-- Talkin' Tonks
-				["provider"] = { "n", 14841 },	-- Rinling
-				["coord"] = { 49.25, 60.79, 407 },
-				["repeatable"] = true,
+			q(29511, {	-- Talking' Tonks
 				["requireSkill"] = 202,	-- Engineering
+				["repeatable"] = true,
+				["provider"] = { "n", 14841 },	-- Rinling
+				["coord"] = { 49.2, 60.7, 407 },
 				["g"] = {
 					crit(6, {	-- Engineering
 						["achievementID"] = 6032,	-- Faire Favors
@@ -630,10 +627,10 @@ _.WorldEvents =
 				},
 			}),
 			q(29519, {	-- Tan My Hide
-				["provider"] = { "n", 14833 },			-- Chronos
-				["repeatable"] = true,
-				["coord"] = { 54.99, 70.78, 407 },
 				["requireSkill"] = 393,	-- Skinning
+				["repeatable"] = true,
+				["provider"] = { "n", 14833 },	-- Chronos
+				["coord"] = { 54.9, 70.7, 407 },
 				["g"] = {
 					crit(14, {	-- Skinning
 						["achievementID"] = 6032,	-- Faire Favors
@@ -641,10 +638,9 @@ _.WorldEvents =
 				},
 			}),
 			q(29455, {	-- Target: Turtle
+				["provider"] = { "n", 29455 },	-- Jessica Rogers
 				["isDaily"] = true,
-				["repeatable"] = true,
-				["provider"] = { "n", 29455 },			-- Jessica Rogers
-				["coord"] = { 51.51, 77.1, 407 },
+				["coord"] = { 51.5, 77.1, 407 },
 				["g"] = {
 					crit(3, {	-- Ring Toss
 						["achievementID"] = 6020,	-- Step Right Up
@@ -656,9 +652,9 @@ _.WorldEvents =
 				},
 			}),
 			q(29433, {	-- Test Your Strength
-				["provider"] = { "n", 14832 },			-- Kerri Hicks
 				["repeatable"] = true,
-				["coord"] = { 47.91, 67.12, 407 },
+				["provider"] = { "n", 14832 },	-- Kerri Hicks
+				["coord"] = { 47.9, 67.1, 407 },
 			}),
 			q(29458, {	-- The Captured Journal
 				["repeatable"] = true,
@@ -689,10 +685,9 @@ _.WorldEvents =
 				},
 			}),
 			q(29436, {	-- The Humanoid Cannonball
-				["isDaily"] = true,
-				["repeatable"] = true,
 				["provider"] = { "n", 15303 },	-- Maxima Blastenheimer
-				["coord"] = { 52.49, 56.14, 407 },
+				["isDaily"] = true,
+				["coord"] = { 52.4, 56.1, 407 },
 				["g"] = {
 					ach(6021),	-- Blastenheimer Bullseye
 					crit(1, {	-- Cannon Blast
@@ -715,61 +710,13 @@ _.WorldEvents =
 					}),
 				},
 			}),
-			q(37910, {	-- The Real Race
-				["provider"] = { "n", 74056 },	-- Malle Earnhard
-				["isDaily"] = true,
-				["repeatable"] = true,
-				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
-				["coord"] = { 48.98, 88.31, 407 },
-				["g"] = {
-					ach(9761, {	-- Darkmoon Racer Roadhog [Real Race -- S11]*
-						["crs"] = { 90148 },	-- Racing Strider
-						["g"] = {
-							i(122129),	-- Fire-Eater Vial
-							ach(9760),	-- Darkmoon Racer Leadfoot
-							ach(9759),	-- Darkmoon Racer Jockey
-							ach(9756),	-- Darkmoon Racer Novice
-						},
-					}),
-					ach(9785, {	-- Powermonger: Gold [Real Race -- P11]*
-						["crs"] = { 89732 },	-- Powermonger
-						["g"] = {
-							i(122120),	-- Gaze of the Darkmoon
-							ach(9783),	-- Powermonger: Silver
-							ach(9781),	-- Powermonger: Bronze
-							ach(9780),	-- Go-Getter
-						},
-					}),
-					ach(9764, {	-- Rocketeer: Gold [Real Race -- R11]*
-						["crs"] = { 89734 },	-- Rocketeer
-						["g"] = {
-							i(122119),	-- Everlasting Darkmoon Firework
-							ach(9766),	-- Rocketeer: Silver
-							ach(9769),	-- Rocketeer: Bronze
-							ach(9770),	-- Blast Off!
-						},
-					}),
-					ach(9792, {	-- Wanderluster: Gold [Real Race -- W11]
-						["crs"] = { 89736 },	-- Wanderluster
-						["g"] = {
-							i(122126),	-- Attraction Sign
-							ach(9819),	-- Darkmoon Like the Wind
-							ach(9790),	-- Wanderluster: Silver
-							ach(9787),	-- Wanderluster: Bronze
-							ach(9786),	-- Wayfarer
-						},
-					}),
-					i(93724),	-- Darkmoon Game Prize
-				},
-			}),
 			q(37911, {	-- The Real Big Race
+				["sourceQuests"] = { 37819 },	-- Welcome to the Darkmoon Races
 				["provider"] = { "n", 90473 },	-- Patti Earnhard
 				["isDaily"] = true,
-				["repeatable"] = true,
-				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
-				["coord"] = { 53.25, 87.6, 407 },
+				["coord"] = { 53.2, 87.6, 407 },
 				["g"] = {
-					ach(9817, {	-- Big Powermonger: Gold [Real Big Race -- S20]*
+					ach(9817, {	-- Big Powermonger: Gold
 						["crs"] = { 89732 },	-- Powermonger
 						["g"] = {
 							i(122124),	-- Darkmoon Cannon
@@ -778,7 +725,7 @@ _.WorldEvents =
 							ach(9812),	-- Big Powermonger: Gold
 						},
 					}),
-					ach(9799, {	-- Big Race Roadhog [Real Big Race -- S20]*
+					ach(9799, {	-- Big Race Roadhog
 						["crs"] = { 90148 },	-- Racing Strider
 						["g"] = {
 							i(122128),	-- Checkered Flag
@@ -788,7 +735,7 @@ _.WorldEvents =
 							ach(9793),	-- Big Race Enthusiast
 						},
 					}),
-					ach(9805, {	-- Big Rocketeer: Gold [Real Big Race -- R20]*
+					ach(9805, {	-- Big Rocketeer: Gold
 						["crs"] = { 89734 },	-- Rocketeer
 						["g"] = {
 							i(122125),	-- Race MiniZep
@@ -797,7 +744,7 @@ _.WorldEvents =
 							ach(9800),	-- Rocket Man
 						},
 					}),
-					ach(9811, {	-- Big Wanderluster: Gold [Real Big Race -- R20]*
+					ach(9811, {	-- Big Wanderluster: Gold
 						["crs"] = { 89736 },	-- Wanderluster
 						["g"] = {
 							i(122121),	-- Darkmoon Gazer
@@ -810,11 +757,56 @@ _.WorldEvents =
 					i(93724),	-- Darkmoon Game Prize
 				},
 			}),
-			q(29434, {	-- Tonk Commander
+			q(37910, {	-- The Real Race
+				["sourceQuests"] = { 37819 },	-- Welcome to the Darkmoon Races
+				["provider"] = { "n", 74056 },	-- Malle Earnhard
 				["isDaily"] = true,
-				["repeatable"] = true,
+				["coord"] = { 48.9, 88.3, 407 },
+				["g"] = {
+					ach(9761, {	-- Darkmoon Racer Roadhog
+						["crs"] = { 90148 },	-- Racing Strider
+						["g"] = {
+							i(122129),	-- Fire-Eater Vial
+							ach(9760),	-- Darkmoon Racer Leadfoot
+							ach(9759),	-- Darkmoon Racer Jockey
+							ach(9756),	-- Darkmoon Racer Novice
+						},
+					}),
+					ach(9785, {	-- Powermonger: Gold
+						["crs"] = { 89732 },	-- Powermonger
+						["g"] = {
+							i(122120),	-- Gaze of the Darkmoon
+							ach(9783),	-- Powermonger: Silver
+							ach(9781),	-- Powermonger: Bronze
+							ach(9780),	-- Go-Getter
+						},
+					}),
+					ach(9764, {	-- Rocketeer: Gold
+						["crs"] = { 89734 },	-- Rocketeer
+						["g"] = {
+							i(122119),	-- Everlasting Darkmoon Firework
+							ach(9766),	-- Rocketeer: Silver
+							ach(9769),	-- Rocketeer: Bronze
+							ach(9770),	-- Blast Off!
+						},
+					}),
+					ach(9792, {	-- Wanderluster: Gold
+						["crs"] = { 89736 },	-- Wanderluster
+						["g"] = {
+							i(122126),	-- Attraction Sign
+							ach(9819),	-- Darkmoon Like the Wind
+							ach(9790),	-- Wanderluster: Silver
+							ach(9787),	-- Wanderluster: Bronze
+							ach(9786),	-- Wayfarer
+						},
+					}),
+					i(93724),	-- Darkmoon Game Prize
+				},
+			}),
+			q(29434, {	-- Tonk Commander
 				["provider"] = { "n", 54605 },	-- Finaly Coolshot
-				["coord"] = { 50.71, 65.17, 407 },
+				["isDaily"] = true,
+				["coord"] = { 50.7, 65.1, 407 },
 				["g"] = {
 					ach(9885, {	-- Ace Tonk Commander
 						i(122122),	-- Darkmoon Tonk Controller
@@ -837,31 +829,31 @@ _.WorldEvents =
 				},
 			}),
 			q(37819, {	-- Welcome to the Darkmoon Races
-				["provider"] = { "n", 74056 },			-- Malle Earnhard
-				["coord"] = { 48.98, 88.31, 407 },
+				["provider"] = { "n", 74056 },	-- Malle Earnhard
+				["coord"] = { 48.9, 88.3, 407 },
 				["g"] = {
 					ach(9755),	-- Darkmoon Race Enthusiast
 					i(93724),	-- Darkmoon Game Prize
 				},
 			}),
-			q(29471, {	-- Writing the Future
-				["u"] = 40,
-				["requireSkill"] = 773,	-- Inscription
-			}),
 			q(29515, {	-- Writing the Future
-				["provider"] = { "n", 14822 },	-- Sayge
-				["repeatable"] = true,
-				["coord"] = { 53.2, 75.8, 407 },
 				["requireSkill"] = 773,	-- Inscription
 				["description"] = "Requires |CFFFFD7005 Light Parchment|r to complete.",
+				["repeatable"] = true,
+				["provider"] = { "n", 14822 },	-- Sayge
+				["coord"] = { 53.2, 75.8, 407 },
 				["g"] = {
 					crit(10, {	-- Inscription
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
 			}),
-			q(7945,  {	-- Your Fortune Awaits You...
-				["u"] = 40,
+			q(29471, {	-- Writing the Future
+				["u"] = 40,	-- Legacy Quests
+				["requireSkill"] = 773,	-- Inscription
+			}),
+			q(7945, {	-- Your Fortune Awaits You...
+				["u"] = 40,	-- Legacy Quests
 				["provider"] = { "i", 19452 },	-- Sayge's Fortune #27
 			}),
 		}),
