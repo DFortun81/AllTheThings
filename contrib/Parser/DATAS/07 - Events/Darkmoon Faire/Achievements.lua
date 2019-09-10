@@ -12,10 +12,12 @@ _.WorldEvents =
 			ach(6032),	-- Faire Favors
 			ach(6026),	-- Fairgoer's Feast
 			ach(6025),	-- I Was Promised a Pony
-			{	--   Taking the Show on the Road
-				["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
-				["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
-			},
+			ach(6030, {	-- Taking the Show on the Road (A)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(6031, {	-- Taking the Show on the Road (H)
+				["races"] = HORDE_ONLY,
+			}),
 		}),
-	}),	
+	}),
 };
