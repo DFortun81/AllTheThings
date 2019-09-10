@@ -15,7 +15,7 @@ _.NeverImplemented =
 		q(38995),	-- Unused
 		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
 		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-
+		q(48674),	-- Lockout Tracking - Normal - Islands. Possibly used in multiple situations
 		
 		-------------------
 		--    VARIOUS    --
@@ -333,6 +333,10 @@ _.NeverImplemented =
 		q(48570),	-- Antorus, The Burning Throne - Triggers when the door opens to Kin'garoth
 		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
 		q(46775),	-- Campaign Cooldown - triggers during the legionfall campaign
+		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
+		
+		-- Invasion points
+		q(48982),	-- Invasion Point: Aurinor
 		
 	--	Treasures
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
