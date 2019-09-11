@@ -450,8 +450,6 @@ _.NeverImplemented =
 		q(52999),	-- Hailstone Construct kill
 		q(52268),	-- Hailstone Construct bonus roll
 		
-		q(56527),	-- Queen Azshara bonus roll (LFR)
-		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
 		q(51871),	-- Drustvar repeatable random chest
 		q(51875),	-- Drustvar repeatable random chest
 		q(51878),	-- Drustvar repeatable random chest
@@ -732,13 +730,35 @@ _.NeverImplemented =
 		q(55623),	-- Seems to trigger after completion of the WQ zone daily.  Mechanized chests and Rustbolt Rebellion WQ confirmed triggering this.
 		q(56307),	-- Opened the mechanized supply chest
 		
-		-- Eternal Palace
+	-- Dungeons
+		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
+		
+	-- Eternal Palace
+		q(56527),	-- Queen Azshara Bonus Roll (LFR)
+		
+		q(55754),	-- Abyssal Commander Sivara HC LootID
+		q(55755),	-- Radiance of Azshara HC LootID
+		q(55756),	-- Orgozoa HC LootID
+		q(55757),	-- Blackwater Behemoth HC LootID
+		q(55758),	-- Lady Ashvane HC LootID
+		q(55760),	-- Queen's Court HC LootID
+		q(55761),	-- Queen Azshara HC LootID
+		
+		-- Aqueous Reliquary LootIDs (This is a guess ... have to determine which ID is for which difficulty, - sadidorf)
+		q(56961),	-- Radiance of Azshara Aqueous Reliquary LFR? LootID 
+		q(56962),	-- Radiance of Azshara Aqueous Reliquary NHC? LootID
+		q(56964),	-- Radiance of Azshara Aqueous Reliquary HC? LootID
+		q(56965),	-- Queen's Court Aqueous Reliquary LFR? LootID 
+		q(56966),	-- Queen's Court Aqueous Reliquary NHC? LootID
+		q(56968),	-- Queen's Court Aqueous Reliquary HC? LootID
+		
 		-- Azerite essences assembled with Aqueous Reliquary
-		q(55756),	-- Triggered in the hallway after Orgozoa but before queen's court. Possibly the Azshara dialog
-		q(55761),	-- Triggered after killing heroic azshara. probably the cinematic followed by her body despawning
-		q(56957),	-- Grid of Bursting Vitality (Rank 3)
-		q(56956),	-- Mesh of Expanding Vitality (Rank 2)
-		q(56950),	-- Resonating Elemental Heart (Rank 3)
 		q(56946),	-- Vitality Redistribution Lattice (Rank 1)
+		q(56950),	-- Resonating Elemental Heart (Rank 3)
+		q(56956),	-- Mesh of Expanding Vitality (Rank 2)
+		q(56957),	-- Grid of Bursting Vitality (Rank 3)
+		q(56958),	-- Tempered Azerite Formation (Rank 3)
+		
+		
 	}),
 };
