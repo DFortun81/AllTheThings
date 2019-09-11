@@ -142,10 +142,12 @@ _.Zones =
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
 			--	["objectID"] = ,	-- Arcane Cache — unknown, not linked to quest
+				["isDaily"] = true,
 				["coord"] = { 53.1, 28.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56233, {	-- Arcane Cache (H)
+				["isDaily"] = true,
 				["coord"] = { 53.1, 28.3, 1355 },
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",	

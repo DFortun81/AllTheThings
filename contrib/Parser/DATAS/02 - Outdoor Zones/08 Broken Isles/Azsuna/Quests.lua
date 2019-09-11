@@ -479,7 +479,10 @@ _.Zones =
 					},
 				}),
 				q(37857, {	-- Runas Knows the Way
-					["sourceQuests"] = { 37957 },	-- Runas the Shamed
+					["sourceQuests"] = {
+						37957,	-- Runas the Shamed
+						37859,	-- The Consumed
+					},
 					["coord"] = { 49.1, 16.1, 630 },
 					["provider"] = { "n", 90383 },	-- Runas the Shamed
 				}),

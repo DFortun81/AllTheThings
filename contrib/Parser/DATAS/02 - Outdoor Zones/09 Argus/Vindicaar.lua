@@ -17,13 +17,13 @@ _.Zones =
 			},
 			["lvl"] = 110,
 			["isRaid"] = true,
-			["groups"] = {
+			["g"] = {
 				n(-4, { 	-- Achievement
 					ach(12073, {	-- Locked and Loaded
 						{
 							["itemID"] = 147496,	-- Fel Heart of Argus
 							["sourceQuest"] = 47182,	-- Long Overdue
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12073,	-- Locked and Loaded
 									["criteriaID"] = 3,	-- Fel Heart of Argus
@@ -44,7 +44,7 @@ _.Zones =
 						{
 							["itemID"] = 151830,	-- Light's Judgement
 							["sourceQuest"] = 47287,	-- The Vindicaar Matrix Core
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12073,	-- Locked and Loaded
 									["criteriaID"] = 1,	-- Light's Judgement
@@ -65,7 +65,7 @@ _.Zones =
 						{
 							["itemID"] = 152098,	-- Lightforged Warframe
 							["sourceQuest"] = 47994,	-- Forming a Bond
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12073,	-- Locked and Loaded
 									["criteriaID"] = 2,	-- Lightforged Warframe
@@ -86,7 +86,7 @@ _.Zones =
 						{
 							["itemID"] = 151912,	-- Shroud of Arcane Echoes
 							["sourceQuest"] = 48107,	-- The Sigil of Awakening
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12073,	-- Locked and Loaded
 									["criteriaID"] = 4,	-- Shroud of Arcane Echoes
@@ -110,7 +110,7 @@ _.Zones =
 					q(48642, {	-- Argussian Reach
 						["provider"] = { "n", 127151 },	-- Toraan the Revered
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							i(157831, {	-- Scuffed Krokul Cache
 								["sym"] = {
 									{"select", "itemID", 152740},	-- Unsullied Cloak
@@ -168,7 +168,7 @@ _.Zones =
 					q(48639, {	-- Army of the Light
 						["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							i(157829, {	-- Gilded Trunk
 								["sym"] = {
 									{"select", "itemID", 152740},	-- Unsullied Cloak
@@ -227,7 +227,7 @@ _.Zones =
 						q(48973, {	-- Paragon of Argussian Reach
 							["provider"] = { "n", 127151 },	-- Toraan the Revered
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(152922, {	-- Brittle Krokul Chest
 									i(153127),	-- Cube of Discovery
 								}),
@@ -236,7 +236,7 @@ _.Zones =
 						q(48974, {	-- Paragon of the Army of the Light
 							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(152923, {	-- Gleaming Footlocker
 									i(153044),	-- Avenging Felcrusher Mount
 									i(153043),	-- Blessed Felcrusher Mount
@@ -248,55 +248,33 @@ _.Zones =
 					}),
 				}),
 				n(-17, {	-- Quests
-					{	-- A Colorful Key
-						["questID"] = 48075,	-- A Colorful Key
+					q(48075, {	-- A Colorful Key
 						["provider"] = { "n", 125343 },		-- Vorel
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["g"] = {
-							{	-- Design: Deadly Deep Chemirine
-								["itemID"] = 151736,	-- Design: Deadly Deep Chemirine
-							},
-							{	-- Design: Masterful Argulite
-								["itemID"] = 151738,	-- Design: Masterful Argulite
-							},
-							{	-- Design: Quick Lightsphene
-								["itemID"] = 151737,	-- Design: Quick Lightsphene
-							},
-							{	-- Design: Versatile Labradorite
-								["itemID"] = 151739,	-- Design: Versatile Labradorite
-							},
+							i(151736),	-- Design: Deadly Deep Chemirine
+							i(151738),	-- Design: Masterful Argulite
+							i(151737),	-- Design: Quick Lightsphene
+							i(151739),	-- Design: Versatile Labradorite
 						},
-					},
-					{	-- A Crowning Achievement
-						["questID"] = 48076,	--  A Crowning Achievment
+					}),
+					q(48076, {	-- A Crowning Achievment
 						["provider"] = { "n", 125343 },		-- Vorel
 						["requireSkill"] = 755,	-- Jewelcrafting
-						["sourceQuests"] = {
-							48075,	-- A Colorful Key
-						},
-						["coords"] = {
-							{ 44.45, 73.35 },
-						},
+						["sourceQuests"] = { 48075 },	-- A Colorful Key
+						["coords"] = { 44.45, 73.35, 831 },
 						["g"] = {
-							{	-- Design: Empyrial Cosmic Crown (Rank 1)
-								["itemID"] = 151724,	-- Design: Empyrial Cosmic Crown (Rank 1)
-							},
-							{	-- Design: Empyrial Deep Crown (Rank 1)
-								["itemID"] = 151727	-- Design: Empyrial Deep Crown (Rank 1)
-							},
-							{	-- Design: Empyrial Elemental Crown (Rank 1)
-								["itemID"] = 151730	-- Design: Empyrial Elemental Crown (Rank 1)
-							},
-							{	-- Design: Empyrial Titan Crown (Rank 1)
-								["itemID"] = 151733	-- Design: Empyrial Titan Crown (Rank 1)
-							},
+							i(151724),	-- Design: Empyrial Cosmic Crown (Rank 1)
+							i(151727),	-- Design: Empyrial Deep Crown (Rank 1)
+							i(151730),	-- Design: Empyrial Elemental Crown (Rank 1)
+							i(151733),	-- Design: Empyrial Titan Crown (Rank 1)
 						},
-					},
+					}),
 					q(48078, {	-- Counterbalancing
 						["requireSkill"] = 165,	-- Leatherworking
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-						["groups"] = {
+						["g"] = {
 							i(151740),	-- Recipe: Fiendish Shoulderguards (Rank 1)					
 							i(151743),	-- Recipe: Fiendish Spaulders (Rank 1)					
 						},
@@ -305,31 +283,39 @@ _.Zones =
 						["provider"] = { "n", 125341 },	-- Khamir
 						["requireSkill"] = 164,	-- Blacksmithing
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-						["groups"] = {
-							{	-- Plans: Empyrial Breastplate [Rank 1]
-								["itemID"] = 151711,	-- Plans: Empyrial Breastplate [Rank 1]
-							},
+						["g"] = {
+							i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
 						},
 					}),
 					q(48065, {	-- Extraterrestrial Exploration
 						["requireSkill"] = 202,	-- Engineering
 						["sourceQuests"] = { 48069 },	-- The Wrench Calls
-						["groups"] = {
-							{	-- Wormhole Generator: Argus
-								["recipeID"] = 247744, 	-- Wormhole Generator: Argus
-							},
+						["g"] = {
+							recipe(247744),	-- Wormhole Generator: Argus
 						},
+					}),
+					q(48799, {	-- Fuel of a Doomed World
+					--	["sourceQuests"] = {  },	-- ???
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["isWeekly"] = true,
+						["coord"] = { 46.7, 24.6, 831 },
+					}),
+					q(49293, {	-- Invasion Onslaught
+					--	["sourceQuests"] = {  },	-- ???
+						["provider"] = { "n", 126408 },	-- Illidan Stormrage
+						["isWeekly"] = true,
+						["coord"] = { 40.1, 21.3, 831 },
 					}),
 					q(48074, {	-- Looming Over Me
 						["requireSkill"] = 197,	-- Tailoring
 						["sourceQuests"] = { 46941 },	-- The Path Forward
-						["groups"] = {
+						["g"] = {
 							i(151571),	-- Lightweave Breeches
 						},
 					}),
 					q(48912, {	-- Supplying the Antoran Campaign
 						["isWeekly"] = true,
-						["groups"] = {
+						["g"] = {
 							i(152097),	-- Lightforged Bulwark
 						},
 					}),
@@ -385,7 +371,7 @@ _.Zones =
 					n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 						["currencyID"] = 1508,	-- Veil Argunite
 						["modID"]  = 43,	-- Relinquished
-						["groups"] = {
+						["g"] = {
 							i(153211, {	-- Relinquished Hood
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_HEAD"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!

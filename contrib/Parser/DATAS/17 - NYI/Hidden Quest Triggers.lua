@@ -73,6 +73,7 @@ _.NeverImplemented =
 		-------------------
 		--   CATACLYSM   --
 		-------------------
+		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(35348),	-- Blackrock Caverns Reward Quest
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
 		q(27872),	-- Mount Hyjal - tortolla hub complete
@@ -338,8 +339,13 @@ _.NeverImplemented =
 		q(46775),	-- Campaign Cooldown - triggers during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
 		
-		-- Invasion points
+	-- Invasion points
 		q(48982),	-- Invasion Point: Aurinor
+		q(49213),	-- triggered upon completing Aurinor, but not the official quest.  possibly tied to loot?  received unsullied plate vambraces
+		q(49099),	-- Invasion Point: Bonich
+		q(49215),	-- triggered upon completing Bonich, but not the official quest.  possibly tied to loot?  received AotL insignia
+		q(49091),	-- Invasion Point: Val
+		q(49210),	-- triggered upon completing Val, but not the official quest.  possibly tied to loot?  received insignias for argussian reach and AotL
 		
 	--	Treasures
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
@@ -437,8 +443,13 @@ _.NeverImplemented =
 		q(53638),	-- Looting a bounty in Stormsong as Horde
 		q(53639),	-- Looting a bounty in Stormsong as Horde
 		
-		q(56056),	-- Wekemara kill questID (secondary to WQ, which needs to be attached for /attwq)
+	--	WORLD BOSSES
+		q(56058),	-- Ulmath, the Soulbinder kill
+		q(56055),	-- Wekemara kill questID (secondary to WQ, which needs to be attached for /attwq)
 		q(56899),	-- Wekemara bonus roll
+		q(52999),	-- Hailstone Construct kill
+		q(52268),	-- Hailstone Construct bonus roll
+		
 		q(56527),	-- Queen Azshara bonus roll (LFR)
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
 		q(51871),	-- Drustvar repeatable random chest
@@ -549,7 +560,7 @@ _.NeverImplemented =
 		q(49918),	-- Gorilla Gorge
 		q(50178),	-- Trouble in the Rootway
 		
-		-- Chests
+	-- Chests
 		q(50711),	-- Zuldazar repeatable random chest
 		q(50715),	-- Zuldazar repeatable random chest
 		q(50716),	-- Zuldazar repeatable random chest
@@ -647,25 +658,36 @@ _.NeverImplemented =
 		q(56605),	-- Toxigore the Alpha first kill
 		q(56584),	-- Urduu first kill
 		q(57083),	-- Wayward Algan Benthic loot
-		-- The Laboratory of Mardivas
+	--	PVP
+		q(56792),	-- Nazjatar Horde supply chest
+		q(57111),	-- Nazjatar Horde supply chest (both triggered simultaneously)
+	--	The Laboratory of Mardivas
 		q(56708),	-- Lesser Lithic Arcanocrystal Selection	-- Needs confirmation
 		q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
-		q(56488),	-- Triggered after killing Herald of Salgos
-		q(55891),	-- Triggered after killing Herald of Salgos
-		q(56892),	-- Triggered after killing Herald of Burning Amalgamation, Salgos, and Zomera
-		q(55145),	-- Triggered after killing Burning Amalgamation
-		q(56481),	-- Triggered after killing Burning Amalgamation
-		q(56725),	-- Triggered after killing Burning Amalgamation
-		q(56891),	-- Triggered after killing Burning Amalgamation
-		q(56480),	-- Triggered after killing Zomera
-		q(56723),	-- Triggered after killing Zomera
-		--	Naga Commanders
+		q(55144),	-- Summoned Dusty Amalgamation
+		q(55201),	-- Summoned Spawn of Salgos
+		q(55204),	-- Summoned Xue
+		q(55145),	-- Killed Burning Amalgamation
+		q(56481),	-- Killed Burning Amalgamation
+		q(56725),	-- Killed Burning Amalgamation
+		q(56891),	-- Killed Burning Amalgamation and Xue
+		q(56485),	-- Killed Dusty Amalgamation
+		q(56488),	-- Killed Herald of Salgos
+		q(55891),	-- Killed Herald of Salgos
+		q(56892),	-- Killed Herald of Burning Amalgamation, Salgos, Xue, and Zomera
+		q(56486),	-- Killed Spawn of Salgos
+		q(56482),	-- Killed Xue
+		q(56726),	-- Killed Xue
+		q(56480),	-- Killed Zomera
+		q(56723),	-- Killed Zomera
+	--	Naga Commanders
 		q(56882),	-- Commander Minezra
 		q(56895),	-- Incantatrix Vazina
 		q(56894),	-- Shadowbinder Athissa
 		q(56890),	-- Theurgist Nitara
 		q(56893),	-- Warlord Zalzjar
-	-- Mechagon
+	
+	--	Mechagon
 					-- Arachnoid Harvester first kill	-- 55913 and 56506 both (Missing in ATT) triggered
 					-- Armored Vaultbot first kill
 					-- Boilburn first kill  -- No first kill id

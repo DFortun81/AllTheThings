@@ -257,6 +257,9 @@ _.WorldEvents =
 					}),
 				},
 			}),
+			q(29447, {	-- A Curious Crystal
+				["u"] = 40,	-- Legacy Quests
+			}),
 			q(29443, {	-- A Curious Crystal
 				["repeatable"] = true,
 				["provider"] = { "i", 71635 },	-- Imbued Crystal

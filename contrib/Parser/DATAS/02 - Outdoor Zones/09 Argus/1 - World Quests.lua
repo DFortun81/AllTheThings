@@ -50,10 +50,10 @@ _.Zones =
 					i(150956),	-- Garothi Greaves
 					i(150963),	-- Garothi Sabatons
 				}),
-				--[[
 				n(-384, {	-- Neck
-					
+					i(136733),	-- Warden Pendant
 				}),
+				--[[
 				n(-386,  {	-- Trinkets
 					
 				}),
