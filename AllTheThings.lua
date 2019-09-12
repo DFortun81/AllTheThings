@@ -10065,10 +10065,11 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 					},
 				}),
 				app.CreateInstance(228, {	-- Blackrock Depths
-					['description'] = "This item has been listed as a drop from General Angerforge in the Adventure Guide since 7.3.5 and has never dropped. Originally dropped from Princess Moira Bronzebeard during the Emperor Dagran Thaurissan encounter.\n\nThere is currently an outstanding 100k gold bounty on this item posted by Crieve of the ATT Discord that has yet to be claimed.",
-					['g'] = {
-						app.CreateItemSource(4464, 12557),	-- Ebonsteel Spaulders
-					},
+					['description'] = "Ebonsteel Spaulders have been hotfixed! All of the items previously marked Unobtainable from General Angerforge have been fixed and confirmed as dropping once again!",
+					['visible'] = true, 
+					['OnUpdate'] = function(data) 
+						data.visible = true;
+					end,
 				}),
 				app.CreateInstance(230, {	-- Dire Maul (West)
 					['description'] = "This item used to drop from Prince Tortheldrin, but was moved to Tendris Warpwood during 7.3.5's Legacy Loot Mode adjustments. It remained on the loot table in the Adventure Guide until 8.1 when it was removed from the Adventure Guide completely.\n\nDon't be lazy.\nPlease add this item back.",

@@ -825,7 +825,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(11816), 	-- Angerforge's Battle Axe
 					i(11932), 	-- Guiding Stave of Wisdom
 					i(11817), 	-- Lord General's Sword
-					un(45, i(12557)),	-- Ebonsteel Spaulders
+					i(12557),	-- Ebonsteel Spaulders
 					i(11820), 	-- Royal Decorated Armor
 					i(11821), 	-- Warstrife Leggings
 					i(11810),	-- Force of Will
