@@ -48,6 +48,7 @@ _.NeverImplemented =
 		q(35564),	-- Stratholme - Main Gate - Bonus Objective Reward Quest
 		q(35575),	-- Stratholme - Service Entrance Bonus Objective Reward Quest
 		q(35574),	-- Stratholme - Service Entrance Reward Quest
+		q(35582),	-- Sunken Temple Reward Quest
 		q(35307),	-- Wailing Caverns Bonus Objective
 		q(35303),	-- Wailing Caverns Reward Quest — Naralax awakening ritual complete
 		q(35588),	-- Zul'Farrak Reward Quest — end-of-dungeon reward granted
