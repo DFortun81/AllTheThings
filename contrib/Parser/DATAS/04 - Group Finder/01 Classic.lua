@@ -35,7 +35,7 @@ _.GroupFinder =
 				i(160608),			-- Tumultuous Necklace		— 9/13/19
 				i(51992),			-- Tumultuous Ring [INT]
 				i(160601),			-- Tumultuous Ring [AGI] 	— 4/7/19
-				i(160602),			-- Tumultuous Ring [STR]
+				i(160602),			-- Tumultuous Ring [STR]	— 9/13/19
 				i(51964),			-- Vigorous Belt			— 4/7/19
 				i(51962),			-- Vigorous Bracers			— 4/7/19
 				i(51965),			-- Vigorous Handguards		— 4/8/19

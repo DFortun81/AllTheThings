@@ -37,6 +37,7 @@ _.NeverImplemented =
 	--	DUNGEONS
 		q(35929),	-- Blackfathom Deeps Reward Quest
 		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
+		q(35902),	-- Blackrock Depths (Upper City) Reward Quest
 		q(35894),	-- Dire Maul (Bonus) Reward Quest
 		q(35601),	-- Gnomeregan Reward Quest - received after killing Mekgineer Thermaplugg
 		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - received after killing Grubbis
@@ -691,7 +692,7 @@ _.NeverImplemented =
 					-- Arachnoid Harvester first kill	-- 55913 and 56506 both (Missing in ATT) triggered
 					-- Armored Vaultbot first kill
 					-- Boilburn first kill  -- No first kill id
-					-- Boggac Skullbash first kill
+		q(55920),	-- Boggac Skullbash first kill
 		q(55919),	-- Bonepicker first kill
 					-- Caustic Mechaslime first kill
 		q(55927),	-- Crazed Trogg first kill

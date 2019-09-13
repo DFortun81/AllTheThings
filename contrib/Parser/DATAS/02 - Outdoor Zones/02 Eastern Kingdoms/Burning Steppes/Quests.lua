@@ -73,17 +73,23 @@ _.Zones =
 						48118,	-- Smolderthorn Shaman
 					},
 				}),
-				q(28178, {	-- A Future Project
+				q(28178, {	-- A Future Project (A)
 					["provider"] = { "n", 47811 },	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance
+					["g"] = {
+						i(64503),	-- Ember Worg Eye
+					},
 				}),
-				q(28420, {	-- A Future Project
+				q(28420, {	-- A Future Project (H)
 					["provider"] = { "n", 48559 },	-- Ariok
 					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28418 },	-- Burning Vengeance
+					["g"] = {
+						i(64504),	-- Ember Worg Eye
+					},
 				}),
 				q(28313, {	-- A Heap of Delicious Worg
 					["provider"] = { "n", 48307 },	-- Colonel Troteman
