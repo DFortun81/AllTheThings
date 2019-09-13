@@ -24,14 +24,15 @@ _.GroupFinder =
 				i(51968),			-- Enumerated Wrap
 				i(51989),			-- Stalwart Bands			— 4/16/19
 				i(143582),			-- Stalwart Belt			— 4/16/19
-				i(143583),			-- Stalwart Grips			- 4/16/19
+				i(143583),			-- Stalwart Grips			— 4/16/19
 				i(51984),			-- Stalwart Shoulderpads
 				un(2, i(51997)),	-- Stalwart Spaulders
 				i(51990),			-- Stalwart Treads			— 4/16/19
 				i(51994),			-- Tumultuous Cloak
 				i(160598),			-- Tumultuous Cloak			— 4/21/19
 				i(160597),			-- Tumultuous Cloak			— 4/7/19
-				i(51996),			-- Tumultuous Necklace		- 4/19/19
+				i(51996),			-- Tumultuous Necklace		— 4/19/19
+				i(160608),			-- Tumultuous Necklace		— 9/13/19
 				i(51992),			-- Tumultuous Ring [INT]
 				i(160601),			-- Tumultuous Ring [AGI] 	— 4/7/19
 				i(160602),			-- Tumultuous Ring [STR]
