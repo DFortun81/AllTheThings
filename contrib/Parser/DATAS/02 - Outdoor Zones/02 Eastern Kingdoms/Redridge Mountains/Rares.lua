@@ -8,7 +8,7 @@ _.Zones =
 			n(-16, {	-- Rares
 				n(14273, { 	-- Boulderheart
 					["coord"] = { 56.6, 51.6, 49 },
-					["groups"] = {
+					["g"] = {
 						i(9766),	-- Greenweave Sash
 						i(9783),	-- Raider's Chestpiece
 						i(9776),	-- Bandit Boots
@@ -44,7 +44,7 @@ _.Zones =
 				}), 
 				n(616, { 	-- Chatter
 					["coord"] = { 38.2, 35.8, 49 },
-					["groups"] = {
+					["g"] = {
 						i(6557),	-- Bard's Boots
 						i(9786),	-- Raider's Cloak
 						i(6539),	-- Willow Belt
@@ -75,7 +75,7 @@ _.Zones =
 				}), 
 				n(52146, { 	-- Chitter
 					["coord"] = { 63.8, 65.2, 49 },
-					["groups"] = {
+					["g"] = {
 						i(6545),	-- Soldier's Armor
 						i(9779),	-- Bandit Cloak
 						i(6553),	-- Bard's Trousers
@@ -108,14 +108,16 @@ _.Zones =
 					},
 				}),
 				n(147222, {	-- Gnollfeaster
+					["isDaily"] = true,
+					["questID"] = 54214,
 					["coord"] = { 24.4, 70.9, 49 },
-					["groups"] = {
-						i(165722),	-- Redridge Tarantula Egg
+					["g"] = {
+						i(165722),	-- Redridge Tarantula Egg (PET!)
 					},
 				}),
 				n(584, { 	-- Kazon
 					["coord"] = { 34.8, 12.2, 49 },
-					["groups"] = {
+					["g"] = {
 						i(6547),	-- Soldier's Gauntlets
 						i(6546),	-- Soldier's Leggings
 						i(9785),	-- Raider's Bracers
@@ -150,7 +152,7 @@ _.Zones =
 						{ 30.0, 60.2, 49 },
 						{ 29.6, 64.2, 49 },
 					},
-					["groups"] = {
+					["g"] = {
 						i(6557),	-- Bard's Boots
 						i(6539),	-- Willow Belt
 						i(6541),	-- Willow Gloves
@@ -180,7 +182,7 @@ _.Zones =
 				}), 
 				n(947, {	-- Rohh the Silent
 					["coord"] = { 68.0, 35.6, 49 },
-					["groups"] = {
+					["g"] = {
 						i(6540),	-- Willow Pants
 						i(9779),	-- Bandit Cloak
 						i(9788),	-- Raider's Belt
@@ -218,7 +220,7 @@ _.Zones =
 				}),
 				n(14269, {	-- Seeker Aqualon
 					["coord"] = { 71.05, 55.0, 49 },
-					["groups"] = {
+					["g"] = {
 						i(6540),	-- Willow Pants
 						i(9779),	-- Bandit Cloak
 						i(6553),	-- Bard's Trousers
@@ -253,7 +255,7 @@ _.Zones =
 				}), 
 				n(14272, {	-- Snarlflare
 					["coord"] = { 34.0, 57.0, 49 },
-					["groups"] = {
+					["g"] = {
 						i(6551),	-- Soldier's Boots
 						i(6547),	-- Soldier's Gauntlets
 						i(6546),	-- Soldier's Leggings
@@ -288,7 +290,7 @@ _.Zones =
 				}),
 				n(14270, {	-- Squiddic
 					["coord"] = { 37.4, 42.6, 49 },
-					["groups"] = {
+					["g"] = {
 						i(6557),	-- Bard's Boots
 						i(6548),	-- Soldier's Girdle
 						i(6539),	-- Willow Belt

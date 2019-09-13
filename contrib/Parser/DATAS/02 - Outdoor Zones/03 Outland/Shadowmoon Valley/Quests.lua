@@ -1223,11 +1223,6 @@ _.Zones =
 						{ 35.4, 41.8, 104 },
 					},
 				}),
-				q(10944, {	-- The Secret Compromised (UNTESTED - qg may only be in SSC, can't test)
-					["provider"] = { "n", 22820 },	-- Seer Olum
-					["coord"] = { 58.0, 48.2, 104 },	-- NEEDS CONFIRMATION, may only be in SSC
-					["sourceQuests"] = { 10708 },	-- Akama's Promise
-				}),
 				q(10576, {	-- The Shadowmoon Shuffle
 					["provider"] = { "n", 21293 },	-- Borak, Son of Oronok
 					["sourceQuests"] = { 10570 },	-- To Catch a Thistlehead
