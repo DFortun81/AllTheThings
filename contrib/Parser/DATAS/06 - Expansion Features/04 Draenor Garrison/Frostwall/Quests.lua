@@ -8,11 +8,6 @@ _.ExpansionFeatures =
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				n(-17, { 	-- Quests
-					prof(794, {	-- Archaeology
-						i(114216, {	-- Pristine Burial Urn
-							["questID"] = 36772,
-						}),
-					}),
 					ach(8671, {	-- You'll Get Caught Up In The... Frostfire!
 						["races"] = HORDE_ONLY,
 						["g"] = {

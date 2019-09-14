@@ -6,11 +6,6 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			n(-17, {	-- Quests
-				prof(794, {	-- Archaeology
-					i(114216, {	-- Pristine Burial Urn
-						["questID"] = 36772,
-					}),
-				}),
 				garrisonBuilding(28,  {	-- Barracks (rank 1: 26, rank 2: 27, rank 3: 28)
 					q(37080, {	-- Glorious Slaughter
 						["provider"] = { "n", 86927 },	-- Stormshield Death Knight(Delvar Ironfist)
