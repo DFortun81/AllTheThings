@@ -562,6 +562,7 @@ _.NeverImplemented =
 		q(50178),	-- Trouble in the Rootway
 		
 	-- Chests
+		q(50710),	-- Zuldazar repeatable random chest
 		q(50711),	-- Zuldazar repeatable random chest
 		q(50715),	-- Zuldazar repeatable random chest
 		q(50716),	-- Zuldazar repeatable random chest
