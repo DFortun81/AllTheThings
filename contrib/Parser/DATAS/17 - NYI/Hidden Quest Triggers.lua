@@ -42,9 +42,14 @@ _.NeverImplemented =
 		q(35601),	-- Gnomeregan Reward Quest - received after killing Mekgineer Thermaplugg
 		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - received after killing Grubbis
 		q(35888),	-- Maraudon (Everything) Reward Quest — dungeon completion
+		q(35287),	-- Ragefire Chasm
 		q(35598),	-- Razorfen Downs Reward Quest — dungeon completion
 		q(35615),	-- Razorfen Kraul Reward Quest — dungeon completion
-		q(35304),	-- Shadowfang Keep Reward Quest — dungeon completion
+		q(35606),	-- Scarlet Halls normal completion
+		q(35607),	-- Scarlet Halls normal bonus objective complete (Kill Armsmaster Harlan)
+		q(35612),	-- Scarlet Monastery normal completion
+		q(35305),	-- Shadowfang Keep normal bonus objective comlete
+		q(35304),	-- Shadowfang Keep normal dungeon completion
 		q(35563),	-- Stratholme - Main Gate - Reward Quest
 		q(35564),	-- Stratholme - Main Gate - Bonus Objective Reward Quest
 		q(35575),	-- Stratholme - Service Entrance Bonus Objective Reward Quest
@@ -67,31 +72,44 @@ _.NeverImplemented =
 		q(35532),	-- Magisters' Terrace Reward Quest (completed Timewalking Magisters' Terrace)
 		q(35518),	-- Shattered Halls Reward Quest (completed Timewalking Shattered Halls)
 		q(35538),	-- The Arcatraz Reward Quest (completed Timewalking Arcatraz)
-		q(35521),	-- The Black Morass Reward Quest (lower level version according to blizz API)
-		q(35522),	-- The Black Morass Reward Quest (completed Timewalking Black Morass)
+		q(35521),	-- The Black Morass normal completion
+		q(35522),	-- The Black Morass heroic completion
 		q(35566),	-- The Blood Furnace Reward Quest (Triggered by completing The Blood Furnace)
-
+		q(35542),	-- The Escape From Durnholde normal completion
+		q(35543),	-- The Escape From Durnholde heroic completion
 		
 		-------------------
 		--   CATACLYSM   --
 		-------------------
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(35348),	-- Blackrock Caverns Reward Quest
+		q(35472),	-- Culling of Stratholme normal completion
+		q(35473),	-- Culling of Stratholme bonus objective (kill the infinite corruptor)
+		q(35474),	-- Culling of Stratholme heroic completion (kill Mal'ganis)
+		q(35358),	-- End Time heroic completion
+		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
+		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
 		q(27872),	-- Mount Hyjal - tortolla hub complete
 		q(27873),	-- Mount Hyjal - aviana hub complete
+		q(35311),	-- Shadowfang Keep heroic bonus objective complete
+		q(35309),	-- Shadowfang Keep heroic completion (Kill Lord Godfrey)
 		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
 		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
-		
+		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 
 		-------------------
 		--      MOP      --
 		-------------------
 	--	DUNGEONS
 		q(35316),	-- Gate of the Setting Sun Reward Quest
-		q(35324),	-- Stormstout Brewery Reward Quest
-		q(35595),	-- Scholomance Reward Quest
+		q(35609),	-- Scarlet Halls heroic bonus objective complete (kill Armsmaster Harlan)
+		q(35608),	-- Scarlet Halls heroic completion (Kill Flameweaver Koegler)
+		q(35613),	-- Scarlet Monastery heroic completion
+		q(35594),	-- Scholomance normal completion
+		q(35595),	-- Scholomance heroic completion
 		q(35320),	-- Shado-Pan Monastery Reward Quest
+		q(35324),	-- Stormstout Brewery Reward Quest
 		q(35327),	-- Temple of the Jade Serpent Reward Quest
 	
 	--	RAIDS
@@ -516,6 +534,7 @@ _.NeverImplemented =
 		q(50921),	-- Vol'dun repeatable random chest
 		q(50917),	-- Vol'dun repeatable random chest
 		q(50919),	-- Vol'dun repeatable random chest
+		q(50915),	-- Vol'dun repeatable random chest
 		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
