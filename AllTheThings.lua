@@ -3585,16 +3585,17 @@ local function SortAlphabetically(group)
 end
 app.GetCurrentMapID = function()
 	local uiMapID = C_Map_GetBestMapForUnit("player");
-	local map = C_Map.GetMapInfo(uiMapID);
-	if map and (map.mapType == 0 or map.mapType == 1 or map.mapType == 2) then
-		-- Onyxia's Lair fix
-		local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
-		if text_to_mapID then
-			local otherMapID = (GetRealZoneText() and text_to_mapID[GetRealZoneText()]) or (GetSubZoneText() and text_to_mapID[GetSubZoneText()]);
-			if otherMapID then uiMapID = otherMapID; end
+	if uiMapID then
+		local map = C_Map.GetMapInfo(uiMapID);
+		if map and (map.mapType == 0 or map.mapType == 1 or map.mapType == 2) then
+			-- Onyxia's Lair fix
+			local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
+			if text_to_mapID then
+				local otherMapID = (GetRealZoneText() and text_to_mapID[GetRealZoneText()]) or (GetSubZoneText() and text_to_mapID[GetSubZoneText()]);
+				if otherMapID then uiMapID = otherMapID; end
+			end
 		end
 	end
-	
 	-- print("Current UI Map ID: ", uiMapID);
 	return uiMapID;
 end
