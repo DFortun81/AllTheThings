@@ -3627,6 +3627,7 @@ app.L = {
 	["ZONE_TEXT_TO_MAP_ID"] = {
 		["Onyxia's Lair"] = 248,
 		["The Trial of Style"] = -777,
+		["Razorfen Downs"] = 300,
 	};
 
 	-- Unobtainable Listing (for fellow 100%s out there)
