@@ -575,6 +575,7 @@ _.NeverImplemented =
 		q(50727),	-- Zuldazar repeatable random chest
 		q(50728),	-- Zuldazar repeatable random chest
 		q(51346),	-- Zuldazar repeatable random chest
+		q(51363),	-- Weekly m+ chest looted (Horde, probably alliance too?)
 		
 	-- Nazjatar
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
