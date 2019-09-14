@@ -68,6 +68,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50652, {	-- Biting the Hand that Feeds Them
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54523, {	-- Blinky Gizmospark (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
@@ -77,7 +81,25 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(53304, {	-- Blooming Siren's Sting
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(53303, {	-- Blooming Star Moss
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
 					q(50868, {	-- Bramblewing
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50848, {	-- Brgl-Lrgl the Basher
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50578, {	-- Bring Ruin Again
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -94,6 +116,15 @@ _.Zones =
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
 						},
+					}),
+					q(50966, {	-- Cleanup Crew
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(52251, {	-- Compromised Reconnaissance
+						["lvl"] = 120,
+						["collectible"] = false,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(54524, {	-- Crate n' Barrel (Faction Assault WQ)
 						["lvl"] = 110,
@@ -135,6 +166,11 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(53328, {	-- Dense Storm Silver
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 186,	-- Mining
+					}),
 					q(54513, {	-- Dino Time! (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -149,6 +185,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+					}),
+					q(53329, {	-- Ductile Platinum
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 186,	-- Mining
 					}),
 					q(51373, {	-- Ears Everywhere
 						["lvl"] = 120,
@@ -168,6 +209,11 @@ _.Zones =
 					q(50548, {	-- Enforcing the Will of the King
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(53301, {	-- Flourishing Sea Stalks
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(50877, {	-- Gahz'ralka
 						["lvl"] = 120,
@@ -208,9 +254,21 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(53327, {	-- Hardened Monelite
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 186,	-- Mining
+					}),
 					q(50846, {	-- Headhunter Lee'za
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(51497, {	-- Hex Education
+						["lvl"] = 120,
+						["collectible"] = false,
+						["g"] = {
+							i(160307),	-- Raal's Hexing Stick
+						},
 					}),
 					q(51178, {	-- Hundred Troll Holdout (A)
 						["lvl"] = 120,
@@ -228,6 +286,10 @@ _.Zones =
 							ach(13035),	-- By de Power of de Loa!
 						},
 					}),
+					q(51305, {	-- Jelly Clouds (possibly NYI?)
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50859, { 	-- Kandak
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -236,7 +298,19 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(50547, {	-- Knives of Zul
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50852, {	-- Lady Seirine
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50885, { 	-- Lei-zhi
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51496, {	-- Loa Your Standards
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -275,6 +349,10 @@ _.Zones =
 							i(160509), 	-- Echoes of Rezan (TOY!)
 						},
 					}),
+					q(51495, {	-- Old Rotana
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(53305, {	-- Overgrown Anchor Weed
 						["requireSkill"] = 182,	-- Herbalism
 						["collectible"] = false,
@@ -283,14 +361,13 @@ _.Zones =
 							i(163601),	-- Overgrown Anchor Weed (QI)
 						},	
 					}),
-					q(51821, { 	-- Quelling the Cove
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
-					}),
 					q(54535, {	-- Portal Keeper Romiir (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50574, {	-- Preservation Methods
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51816, {	-- Pterrible Ingredients
@@ -303,10 +380,34 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50524, {	-- Purify the Temple
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(49068, {	-- Quelling the Cove
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51821, { 	-- Quelling the Cove
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50540, {	-- Rally the Rastari
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
+					}),
+					q(50636, {	-- Ravoracious
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51814, {	-- Ravoracious
+						["lvl"] = 120,
+						["collectible"] = false,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(54532, {	-- Receding Treeline (Faction Assault WQ)
 						["lvl"] = 110,
@@ -328,11 +429,6 @@ _.Zones =
 								["criteriaID"] = 6,	-- Ritual Rampage
 							},
 						},
-					}),
-					q(51814, {	-- Ravoracious
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
 					}),
 					q(52250, {	-- Saving Xibala
 						["lvl"] = 120,
@@ -402,6 +498,11 @@ _.Zones =
 							ach(13440),	-- Pushing the Payload
 						},
 					}),
+					q(53165, {	-- Stopping Antiquities Theft
+						["lvl"] = 120,
+						["collectible"] = false,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(50873, {	-- Strange Egg
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -451,6 +552,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50592, {	-- Tiny Terror
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50861, {	-- Torraske the Eternal
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -468,6 +573,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50287, {	-- Unending Gorilla Warfare
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
 					q(50872, {	-- Warcrawler Karkithiss
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -475,6 +585,10 @@ _.Zones =
 					q(54017, {	-- Wet Work: Warbeast Kraal (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50619, {	-- What Goes Up
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(52393, {	-- Work Order: Contract: Tortollan Seekers

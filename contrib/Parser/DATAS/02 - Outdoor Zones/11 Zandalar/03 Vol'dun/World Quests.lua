@@ -286,7 +286,7 @@ _.Zones =
 							},
 						},
 					}),
-					q(51153, { 	-- Mor'fani the Exile
+					q(50851, {	-- Mor'fani the Exile
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

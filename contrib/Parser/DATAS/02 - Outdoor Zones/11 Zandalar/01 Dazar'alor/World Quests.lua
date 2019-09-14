@@ -17,6 +17,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50765, {	-- Herding Children
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(50845, { 	-- Kul'krazahn
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -29,6 +33,14 @@ _.Zones =
 					q(50747, { 	-- No Good Amani
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(50744, {	-- Refresh Their Memory
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50964, {	-- Ritual Combat
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(49413, { 	-- Scamps With Scrolls
@@ -66,6 +78,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.01, 32.21, 1163 },
 						["collectible"] = false,
+					}),
+					q(51046, {	-- Supplies Needed: Coarse Leather
+						["lvl"] = 120,
+						["collectible"] = false,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale
 					}),
 					q(51046, {	-- Supplies Needed: Deep Sea Satin
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
