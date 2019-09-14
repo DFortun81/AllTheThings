@@ -95,10 +95,6 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
-					q(50848, {	-- Brgl-Lrgl the Basher
-						["lvl"] = 120,
-						["collectible"] = false,
-					}),
 					q(50578, {	-- Bring Ruin Again
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -528,6 +524,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(52169, {	-- The Matriarch
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(52248, {	-- The Shores of Xibala
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -588,6 +588,10 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					q(50619, {	-- What Goes Up
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(50849, {	-- Witch Doctor Habra'du
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),

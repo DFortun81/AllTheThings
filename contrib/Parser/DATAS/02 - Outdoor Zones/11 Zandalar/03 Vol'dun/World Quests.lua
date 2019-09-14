@@ -15,9 +15,22 @@ _.Zones =
 							ach(13041),	-- Hungry, Hungry Ranishu
 						},
 					}),
+					q(49013, {	-- A Jolt of Power
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51238, {	-- Abandoned in the Burrows
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51105, {	-- Ak'tar
 						["lvl"] = 120,
 						["collectible"] = false,
+					}),
+					q(53294, {	-- Akunda's Bite Cluster
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(51095, {	-- Ashmane
 						["lvl"] = 120,
@@ -53,6 +66,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54644, {	-- Azerite Transport (Faction Assault WQ)
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51428, {	-- Azerite Wounds
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -79,14 +96,18 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(54609, {	-- Beastlord Drakara (Faction Assault WQ)
+						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(54638, {	-- Beat Up the Drums (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
-					q(54609, {	-- Beastlord Drakara (Faction Assault WQ)
-						["lvl"] = 110,
-						["races"] = ALLIANCE_ONLY,
+					q(51210, {	-- Blast Back the Siege
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51097, {	-- Bloated Krolusk
@@ -112,11 +133,29 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(50848, {	-- Brgl-Lrgl the Basher
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51155, {	-- Brgl-Lrgl the Basher
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51791, {	-- Bubbling Totem Testing
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51793, {	-- Bubbling Totem Testing
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(49345, {	-- Buried Treasure
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51250, {	-- Buzz Off!
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -129,6 +168,11 @@ _.Zones =
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
 						},
+					}),
+					q(53325, {	-- Coarse Storm Silver
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 186,	-- Mining
 					}),
 					q(51098, {	-- Commodore Calhoun
 						["lvl"] = 120,
@@ -159,6 +203,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51780, {	-- Dinner for Dolly and Dot
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51121, {	-- Enraged Krolusk
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -173,7 +221,27 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(54643, {	-- Evezon the Eternal (Faction Assault WQ)
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51900, {	-- Faithless Follow-Through
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51924, {	-- Faithless Follow-Through
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51156, {	-- Fangcaller Xorreth
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51285, {	-- Feeding Frenzy
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51565, {	-- Feeding Frenzy
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -186,6 +254,15 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
+					}),
+					q(54649, {	-- Flames of War (Faction Assault WQ)
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(53296, {	-- Flourishing Sea Stalks
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(54645, {	-- Fury of the Earth (Faction Assault WQ)
 						["lvl"] = 110,
@@ -201,8 +278,16 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51099, {	-- Gut-Gut the Glutton
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51108, {	-- Hivemother Kraxi
 						["provider"] = { "n", 130443 },	-- Hivemother Kraxi
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51228, {	-- Instant Meat, Ready to Eat
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
@@ -213,6 +298,30 @@ _.Zones =
 					q(51180, {	-- Instructions Not Included
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,	-- very slim chance this isn't Horde only but given that there are 8 versions of the quest with 4 marked Alliance only it's more likely than not (could still use verification though)
+						["collectible"] = false,
+					}),
+					q(51931, {	-- Instructions Not Included
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51174, {	-- Instructions Not Included
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51181, {	-- Instructions Not Included
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51925, {	-- Instructions Not Included
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51933, {	-- Instructions Not Included
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51928, {	-- Instructions Not Included
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(53885, {	-- Isolated Victory (Faction Assault WQ)
@@ -301,6 +410,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51834, {	-- No Negotiations
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(54170, {	-- Ormin Rocketbop (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
@@ -324,13 +437,35 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(47704, {	-- Ranishu Feeding Frenzy
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51760, {	-- Ranishu Feeding Frenzy
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
 					q(51124, {	-- Relic Hunter Hazaak
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51330, {	-- Resilient Seeds
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(54127, {	-- Rocket Hop (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(53324, {	-- Rough Monelite
+						["lvl"] = 120,
+						["collectible"] = false,
+						["requireSkill"] = 186,
+					}),
+					q(51804, {	-- Running Interference
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(54636, {	-- Sandbinder Sodir (Faction Assault WQ)
@@ -351,6 +486,10 @@ _.Zones =
 								crit(5),	-- Adept Sandfisher — Onyx Sandworm Scale
 							}),
 						},
+					}),
+					q(52196, {	-- Sandswept Bones
+						["lvl"] = 120,
+						["collectible"] = false,
 					}),
 					q(51107, {	-- Scaleclaw Broodmother
 						["lvl"] = 120,
@@ -400,6 +539,10 @@ _.Zones =
 						["lvl"] = 120,
 						["collectible"] = false,
 					}),
+					q(51836, {	-- Sourching Resources
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51558, {	-- Spider Scorching
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -416,6 +559,11 @@ _.Zones =
 					}),
 					q(54786, {	-- Stop the Shipments (Faction Assault WQ)
 						["lvl"] = 110,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51831, {	-- Swift Strike
+						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
@@ -438,13 +586,39 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51963, {	-- The Wrath of Vorrik
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51957, {	-- The Wrath of Vorrik
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51119, {	-- Vathikur
 						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51983, {	-- Vorrik's Vengeance
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51995, {	-- Vorrik's Vengeance
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
 					q(54415, {	-- Vulpera for a Day (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51316, {	-- Walking in a Spiderweb
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
+					q(51223, {	-- Walking on Broken Glass
+						["lvl"] = 120,
 						["collectible"] = false,
 					}),
 					q(51112, {	-- Warbringer Hozzik
@@ -474,6 +648,10 @@ _.Zones =
 							}),
 						},
 					}),
+					q(51315, {	-- Wild Flutterbies
+						["lvl"] = 120,
+						["collectible"] = false,
+					}),
 					q(51322, {	-- Wings and Stingers
 						["lvl"] = 120,
 						["collectible"] = false,
@@ -483,6 +661,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,
 					}),
+					q(51002, {	-- Work Order: Akunda's Bite
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
 					q(52427, {	-- Work Order: Battle Flag: Rallying Swiftness
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -491,6 +675,18 @@ _.Zones =
 						["groups"] = {
 							i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
 						},
+					}),
+					q(51008, {	-- Work Order: Blood-Stained Bone
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 393,	-- Skinning
+					}),
+					q(52419, {	-- Work Order: Coarse Leather Barding
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 165,	-- Leatherworking
 					}),
 					q(52397, {	-- Work Order: Contract: Voldunai
 						["lvl"] = 120,
@@ -519,6 +715,12 @@ _.Zones =
 							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
 					}),
+					q(52413, {	-- Work Order: Golden Beryl
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					}),
 					q(52338, {	-- Work Order: Potion of Concealment
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -528,6 +730,24 @@ _.Zones =
 							i(162260),	-- Recipe: Potion of Concealment (Rank 3)
 						},
 					}),
+					q(52412, {	-- Work Order: Rubelite
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					}),
+					q(51007, {	-- Work Order: Storm Silver Ore
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 186,	-- Mining
+					}),
+					q(51011, {	-- Work Order: Tempest Hide
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 393,	-- Skinning
+					}),
 					q(52370, {	-- Work Order: Thermo-Accelerated Plague Spreader
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -536,6 +756,22 @@ _.Zones =
 						["groups"] = {
 							i(162736), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
 						},
+					}),
+					q(51003, {	-- Work Order: Winter's Kiss
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(51783, {	-- Zem'lan Rescue
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+					}),
+					q(51763, {	-- Zem'lan Rescue
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["collectible"] = false,
 					}),
 					q(51115, {	-- Zunashi the Exile
 						["lvl"] = 120,
@@ -548,7 +784,7 @@ _.Zones =
 						-- Include the one extra.
 						{"select", "itemID", 166673},	-- Devoted Lookout's Windcloak
 						{"finalize"},	-- Push the items to the finalized list.
-						
+
 						{"select", "mapID", 864},	-- Vol'dun
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "npcID", -34 },	-- Select the World Quests Header.
@@ -557,7 +793,7 @@ _.Zones =
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
-						
+
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},

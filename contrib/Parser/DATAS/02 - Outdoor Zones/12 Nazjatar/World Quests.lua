@@ -5,6 +5,11 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		n(-34,  {	-- World Quests
+			q(55664, {	-- A Blow to Morale
+				["lvl"] = 120,
+				["races"] = HORDE_ONLY,
+				["collectible"] = false,
+			}),
 			q(56036, {	-- A Steamy Situation
 				["lvl"] = 120,
 				["collectible"] = false,
