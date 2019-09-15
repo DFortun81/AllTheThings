@@ -38,6 +38,7 @@ _.NeverImplemented =
 		q(35929),	-- Blackfathom Deeps Reward Quest
 		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
 		q(35902),	-- Blackrock Depths (Upper City) Reward Quest
+		q(35586),	-- Deadmines normal completion
 		q(35894),	-- Dire Maul (Bonus) Reward Quest
 		q(35601),	-- Gnomeregan Reward Quest - received after killing Mekgineer Thermaplugg
 		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - received after killing Grubbis
@@ -55,6 +56,9 @@ _.NeverImplemented =
 		q(35575),	-- Stratholme - Service Entrance Bonus Objective Reward Quest
 		q(35574),	-- Stratholme - Service Entrance Reward Quest
 		q(35582),	-- Sunken Temple Reward Quest
+		q(35288),	-- The Stockade
+		q(35605),	-- Uldaman dungeon completion (Kill Archaedas)
+		q(35610),	-- Uldaman bonus objective complete
 		q(35307),	-- Wailing Caverns Bonus Objective
 		q(35303),	-- Wailing Caverns Reward Quest — Naralax awakening ritual complete
 		q(35588),	-- Zul'Farrak Reward Quest — end-of-dungeon reward granted
@@ -86,6 +90,7 @@ _.NeverImplemented =
 		q(35472),	-- Culling of Stratholme normal completion
 		q(35473),	-- Culling of Stratholme bonus objective (kill the infinite corruptor)
 		q(35474),	-- Culling of Stratholme heroic completion (kill Mal'ganis)
+		q(35587),	-- Deadmines heroic completion
 		q(35358),	-- End Time heroic completion
 		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
 		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
