@@ -9,7 +9,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["coord"] = { 46.06, 51.74, 100 },	-- The Blood Furnace, Hellfire Peninsula
 		["g"] = {
 			n(-17, {	-- Quests
-				q(29539, {	-- Heart of Rage
+				q(29539, {	-- Heart of Rage (A)
+					["provider"] = { "n", 54629 },	-- Gunny
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25714),	-- Crimson Pendant of Clarity
@@ -17,7 +18,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(25712),	-- Perfectly Balanced Cape
 					},
 				}),
-				q(29536, {	-- Heart of Rage
+				q(29536, {	-- Heart of Rage (H)
+					["provider"] = { "n", 54636 },	-- Caza'rez
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25714),	-- Crimson Pendant of Clarity
@@ -25,7 +27,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(25712),	-- Perfectly Balanced Cape
 					},
 				}),
-				q(29540, {	-- Mind the Gap
+				q(29540, {	-- Mind the Gap (A)
+					["provider"] = { "n", 54629 },	-- Gunny
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25701),	-- Breastplate of Retribution
@@ -34,7 +37,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(25702),	-- Scaled Legs of Ruination
 					},
 				}),
-				q(29537, {	-- Mind the Gap
+				q(29537, {	-- Mind the Gap (H)
+					["provider"] = { "n", 54636 },	-- Caza'rez
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25701),	-- Breastplate of Retribution
@@ -42,6 +46,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(25710),	-- Moonkin Headdress
 						i(25702),	-- Scaled Legs of Ruination
 					},
+				}),
+				q(29535, {	-- Make Them Bleed (A)
+					["provider"] = { "n", 54629 },	-- Gunny
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29538, {	-- Make Them Bleed (H)
+					["provider"] = { "n", 54636 },	-- Caza'rez
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			d(1, {	-- Normal

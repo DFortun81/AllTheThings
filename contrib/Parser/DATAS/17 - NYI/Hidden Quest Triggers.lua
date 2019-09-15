@@ -72,13 +72,16 @@ _.NeverImplemented =
 		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
 	
 	--	DUNGEONS
-		q(35572),	-- Hellfire Ramparts Reward Quest (Triggered by completing Hellfire Ramparts)
+		q(35572),	-- Hellfire Ramparts normal completion
+		q(35573),	-- Hellfire Ramparts heroic completion
 		q(35532),	-- Magisters' Terrace Reward Quest (completed Timewalking Magisters' Terrace)
-		q(35518),	-- Shattered Halls Reward Quest (completed Timewalking Shattered Halls)
+		q(35517),	-- Shattered Halls normal completion
+		q(35518),	-- Shattered Halls heroic completion
 		q(35538),	-- The Arcatraz Reward Quest (completed Timewalking Arcatraz)
 		q(35521),	-- The Black Morass normal completion
 		q(35522),	-- The Black Morass heroic completion
-		q(35566),	-- The Blood Furnace Reward Quest (Triggered by completing The Blood Furnace)
+		q(35565),	-- The Blood Furnace normal completion
+		q(35566),	-- The Blood Furnace heroic completion
 		q(35542),	-- The Escape From Durnholde normal completion
 		q(35543),	-- The Escape From Durnholde heroic completion
 		
