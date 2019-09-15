@@ -8,6 +8,19 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 266,
 		["coord"] = { 71.74, 54.95, 109 },	-- The Botanica, Netherstorm
 		["groups"] = {
+			n(-17, {	-- Quests
+				q(29669, {	-- A Most Somber Task
+					["provider"] = { "n", 18481 },	-- Adal, auto-granted
+					["sourceQuest"] = 29667,	-- Culling the Herd
+				}),
+				q(29667, {	-- Culling the Herd
+					["provider"] = { "n", 18481 },	-- Adal, auto-granted
+					["sourceQuest"] = 29660,	-- Saving the Botanica
+				}),
+				q(29660, {	-- Saving the Botanica
+					["provider"] = { "n", 18481 },	-- Adal, auto-granted
+				}),
+			}),
 			n(0, {	-- Zone Drops
 				model(17819, n(18422, {	-- Sunseeker Botanist
 					i(24172),	-- Design: Coronet of Verdant Flame

@@ -77,13 +77,18 @@ _.NeverImplemented =
 		q(35532),	-- Magisters' Terrace Reward Quest (completed Timewalking Magisters' Terrace)
 		q(35517),	-- Shattered Halls normal completion
 		q(35518),	-- Shattered Halls heroic completion
-		q(35538),	-- The Arcatraz Reward Quest (completed Timewalking Arcatraz)
+		q(35535),	-- The Arcatraz normal completion
+		q(35538),	-- The Arcatraz heroic completion
 		q(35521),	-- The Black Morass normal completion
 		q(35522),	-- The Black Morass heroic completion
 		q(35565),	-- The Blood Furnace normal completion
 		q(35566),	-- The Blood Furnace heroic completion
+		q(35525),	-- The Botanica normal completion
+		q(35526),	-- The Botanica heroic completion
 		q(35542),	-- The Escape From Durnholde normal completion
 		q(35543),	-- The Escape From Durnholde heroic completion
+		q(35528),	-- The Mechanar normal completion
+		q(35529),	-- The Mechanar heroic completion
 		
 		-------------------
 		--   CATACLYSM   --
