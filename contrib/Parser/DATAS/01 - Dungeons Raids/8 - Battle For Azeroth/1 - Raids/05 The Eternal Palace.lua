@@ -49,8 +49,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				ach(13718, {	-- The Grand Reception
 					["g"] = {
 						e(2352, {	-- Abyssal Commander Sivara
-							["cr"] = 155144,
+							["cr"] = 151881,
 							["g"] = {
+								crit(1, {	-- Abyssal Commander Sivara
+									["achievementID"] = 13718,	-- The Grand Reception
+								}),
 								i(168306),	-- Shiver Venom Lance
 								i(168276),	-- Claw of the Myrmidon
 								i(168901),	-- Royal Scaleguard's Battleaxe
@@ -72,8 +75,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							},
 						}),
 						e(2347, {	-- Blackwater Behemoth
-							["cr"] = 154986,
+							["cr"] = 150653,
 							["g"] = {
+								crit(2, {	-- Blackwater Behemoth
+									["achievementID"] = 13718,	-- The Grand Reception
+								}),
 								i(169360),	-- Mindlost Bloodfrenzy
 								i(168900),	-- Diver's Folly
 								i(168397),	-- Fang of the Behemoth
@@ -95,6 +101,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						e(2353, {	-- Radiance of Azshara
 							["cr"] = 152364,
 							["g"] = {
+								crit(3, {	-- Radiance of Azshara
+									["achievementID"] = 13718,	-- The Grand Reception
+								}),
 								i(170163),	-- Technique: Glyph of the Dark Depths
 								i(169694),	-- Aqueous Reliquary
 								i(168478),	-- Monstrosity's Shipbreaker
@@ -119,8 +128,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				ach(13719, {	-- Depths of the Devoted
 					["g"] = {
 						e(2354, {	-- Lady Ashvane
-							["cr"] = 153142,
+							["cr"] = 152236,
 							["g"] = {
+								crit(1, {	-- Lady Ashvane
+									["achievementID"] = 13719,	-- Depths of the Devoted
+								}),
 								i(169358),	-- Lightless Ambusher
 								i(168904),	-- Current-Weaver's Gavel
 								i(168347),	-- Helm of Hideous Transformation
@@ -140,6 +152,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						e(2351, {	-- Orgozoa
 							["cr"] = 152128,
 							["g"] = {
+								crit(2, {	-- Orgozoa
+									["achievementID"] = 13719,	-- Depths of the Devoted
+								}),
 								i(168274),	-- Aqua-Pulse Trident
 								i(168897),	-- Tentacle Crusher
 								i(168893),	-- Hatchery Scraper
@@ -158,8 +173,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							},
 						}),
 						e(2359, {	-- The Queen's Court
-							["cr"] = 152853,
+							["crs"] = {
+								152852,	-- Pashmar the Fanatical
+								152853,	-- Silivaz the Zealous
+							},
 							["g"] = {
+								crit(3, {	-- The Queen's Court
+									["achievementID"] = 13719,	-- Depths of the Devoted
+								}),
 								i(169694),	-- Aqueous Reliquary
 								i(168892),	-- Court Dagger of Sentencing
 								i(168898),	-- Pashmar's Finial
@@ -183,6 +204,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 							["cr"] = 150859,
 							["g"] = {
+								crit(1, {	-- Za'qul
+									["achievementID"] = 13725,	-- The Circle of Stars
+								}),
 								i(169362),	-- Nameless Octopode
 								i(168902),	-- Dream's End
 								i(168301),	-- Sever, Edge of Madness
@@ -201,6 +225,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						e(2361, {	-- Queen Azshara
 							["cr"] = 152910,
 							["g"] = {
+								crit(2, {	-- Queen Azshara
+									["achievementID"] = 13725,	-- The Circle of Stars
+								}),
 								i(169348),	-- Zanj'ir Poker
 								i(169694),	-- Aqueous Reliquary
 								i(168854),	-- Animated Elemental Heart
@@ -239,12 +266,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(167171),	-- Azshari Bloatray
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
-					["cr"] = 155144,
+					["cr"] = 151881,	-- Abyssal Commander Sivara
 					["g"] = {
-						{	-- The Grand Reception (Abyssal Commander Sivara)
-							["achievementID"] = 13718,
-							["criteriaID"] = 1,
-						},
+						crit(1, {	-- Abyssal Commander Sivara
+							["achievementID"] = 13718,	-- The Grand Reception
+						}),
 						ach(13684),	-- You and What Army?
 						i(168306),	-- Shiver Venom Lance
 						i(168276),	-- Claw of the Myrmidon
@@ -267,7 +293,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2347, {	-- Blackwater Behemoth
-					["cr"] = 154986,
+					["cr"] = 150653,
 					["g"] = {
 						{	-- The Grand Reception (Blackwater Behemoth)
 							["achievementID"] = 13718,
@@ -320,7 +346,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2354, {	-- Lady Ashvane
-					["cr"] = 153142,
+					["cr"] = 152236,
 					["g"] = {
 						{	-- Depths of the Devoted (Lady Ashvane)
 							["achievementID"] = 13719,
@@ -459,7 +485,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(167171),	-- Azshari Bloatray
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
-					["cr"] = 155144,
+					["cr"] = 151881,
 					["g"] = {
 						{	-- The Grand Reception (Abyssal Commander Sivara)
 							["achievementID"] = 13718,
@@ -487,7 +513,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2347, {	-- Blackwater Behemoth
-					["cr"] = 154986,
+					["cr"] = 150653,
 					["g"] = {
 						{	-- The Grand Reception (Blackwater Behemoth)
 							["achievementID"] = 13718,
@@ -540,7 +566,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2354, {	-- Lady Ashvane
-					["cr"] = 153142,
+					["cr"] = 152236,
 					["g"] = {
 						{	-- Depths of the Devoted (Lady Ashvane)
 							["achievementID"] = 13719,
@@ -681,7 +707,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(167171),	-- Azshari Bloatray
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
-					["cr"] = 155144,
+					["cr"] = 151881,
 					["g"] = {
 						ach(13726),	-- Mythic: Abyssal Commander Sivara
 						{	-- The Grand Reception (Abyssal Commander Sivara)
@@ -710,7 +736,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2347, {	-- Blackwater Behemoth
-					["cr"] = 154986,
+					["cr"] = 150653,
 					["g"] = {
 						ach(13728),	-- Mythic: Blackwater Behemoth
 						{	-- The Grand Reception (Blackwater Behemoth)
@@ -765,7 +791,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2354, {	-- Lady Ashvane
-					["cr"] = 153142,
+					["cr"] = 152236,
 					["g"] = {
 						ach(13729),	-- Mythic: Lady Ashvane
 						{	-- Depths of the Devoted (Lady Ashvane)

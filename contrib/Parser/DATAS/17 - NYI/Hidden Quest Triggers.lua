@@ -768,10 +768,14 @@ _.NeverImplemented =
 		q(55623),	-- Seems to trigger after completion of the WQ zone daily.  Mechanized chests and Rustbolt Rebellion WQ confirmed triggering this.
 		q(56307),	-- Opened the mechanized supply chest
 		
-	-- Dungeons
+	--	Dungeons
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
+	
+	--	Raids
+	--	Battle of Dazar'alor
+		q(55024),	-- Battle of Dazar'alor — LFR, moving into the hallway after Opulence (not a killID -- this triggered in chat while i was in combat with the trash in the hall)
 		
-	-- Eternal Palace
+	--	Eternal Palace
 		q(56527),	-- Queen Azshara Bonus Roll (LFR)
 		
 		q(55754),	-- Abyssal Commander Sivara HC LootID

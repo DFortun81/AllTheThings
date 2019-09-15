@@ -14,7 +14,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			n(-1,  {	-- Common Boss Drop
 				["crs"] = {
 					144754,	-- Fa'thuul the Feared
-					146497,	-- Zaxasj the Speaker
+					144755,	-- Zaxasj the Speaker
 					145371,	-- Uu'nat, Harbinger of the Void
 				},
 				["g"] = {
@@ -29,7 +29,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						e(2328, {	-- The Restless Cabal
 							["crs"] = {
 								144754,	-- Fa'thuul the Feared
-								146497,	-- Zaxasj the Speaker
+								144755,	-- Zaxasj the Speaker
 							},
 							["g"] = {
 								crit(1, {	-- The Restless Cabal
@@ -70,7 +70,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
-						146497,	-- Zaxasj the Speaker
+						144755,	-- Zaxasj the Speaker
 					},
 					["g"] = {
 						crit(1, {	-- The Restless Cabal
@@ -109,7 +109,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
-						146497,	-- Zaxasj the Speaker
+						144755,	-- Zaxasj the Speaker
 					},
 					["g"] = {
 						crit(1, {	-- The Restless Cabal
@@ -149,7 +149,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
-						146497,	-- Zaxasj the Speaker
+						144755,	-- Zaxasj the Speaker
 					},
 					["g"] = {
 						crit(1, {	-- The Restless Cabal (Crucible of Storms)
