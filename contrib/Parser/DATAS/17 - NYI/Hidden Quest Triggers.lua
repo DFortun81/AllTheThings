@@ -89,6 +89,12 @@ _.NeverImplemented =
 		q(35543),	-- The Escape From Durnholde heroic completion
 		q(35528),	-- The Mechanar normal completion
 		q(35529),	-- The Mechanar heroic completion
+		q(35561),	-- The Slave Pens normal completion
+		q(35562),	-- The Slave Pens heroic completion
+		q(35533),	-- The Steamvault normal completion
+		q(35534),	-- The Steamvault heroic completion
+		q(35559),	-- The Underbog normal completion
+		q(35560),	-- The Underbog heroic completion
 		
 		-------------------
 		--   CATACLYSM   --
