@@ -2986,6 +2986,15 @@ fieldConverters = {
 		end
 	end,
 	]]--
+	["cost"] = function(group, value)
+		for k,v in pairs(value) do
+			if v[1] == "i" and v[2] > 0 then
+				CacheField(group, "itemID", v[2]);
+			elseif v[1] == "o" and v[2] > 0 then
+				CacheField(group, "objectID", v[2]);
+			end
+		end
+	end,
 	["c"] = function(group, value)
 		if not containsValue(value, app.ClassIndex) then
 			rawset(group, "nmc", true); -- "Not My Class"
