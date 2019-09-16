@@ -2993,8 +2993,8 @@ fieldConverters = {
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
 					CacheField(group, "itemID", v[2]);
-				elseif v[1] == "o" and v[2] > 0 then
-					CacheField(group, "objectID", v[2]);
+				elseif v[1] == "c" and v[2] > 0 then
+					CacheField(group, "currencyID", v[2]);
 				end
 			end
 		end
