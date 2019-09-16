@@ -22,6 +22,14 @@ _.NeverImplemented =
 		-------------------
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
+		q(42873),	-- Tome of Illusions - Outland
+		q(42874),	-- Tome of Illusions - Northrend
+		q(42875),	-- Tome of Illusions - Cataclysm
+		q(42876),	-- Tome of Illusions - Elemental Lords
+		q(42877),	-- Tome of Illusions - Pandaria
+		q(42878),	-- Tome of Illusions - Secrets of the Shado-Pan
+		q(42879),	-- Tome of Illusions - Draenor
+		q(42943),	-- Illusion - Frostbrand
 
 
 		-------------------
