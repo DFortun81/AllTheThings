@@ -72,9 +72,16 @@ _.NeverImplemented =
 		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
 	
 	--	DUNGEONS
+		q(35544),	-- Auchinai Crypts normal completion
+		q(35545),	-- Auchinai Crypts heroic completion
 		q(35572),	-- Hellfire Ramparts normal completion
 		q(35573),	-- Hellfire Ramparts heroic completion
-		q(35532),	-- Magisters' Terrace Reward Quest (completed Timewalking Magisters' Terrace)
+		q(35531),	-- Magisters' Terrace normal completion
+		q(35532),	-- Magisters' Terrace heroic completion
+		q(35546),	-- Mana Tombs normal completion
+		q(35547),	-- Mana Tombs heroic completion
+		q(35539),	-- Sethekk Halls normal completion
+		q(35540),	-- Sethekk Halls heroic completion
 		q(35517),	-- Shattered Halls normal completion
 		q(35518),	-- Shattered Halls heroic completion
 		q(35535),	-- The Arcatraz normal completion
@@ -89,6 +96,8 @@ _.NeverImplemented =
 		q(35543),	-- The Escape From Durnholde heroic completion
 		q(35528),	-- The Mechanar normal completion
 		q(35529),	-- The Mechanar heroic completion
+		q(35519),	-- The Shadow Labyrinth normal completion
+		q(35520),	-- The Shadow Labyrinth heroic completion
 		q(35561),	-- The Slave Pens normal completion
 		q(35562),	-- The Slave Pens heroic completion
 		q(35533),	-- The Steamvault normal completion

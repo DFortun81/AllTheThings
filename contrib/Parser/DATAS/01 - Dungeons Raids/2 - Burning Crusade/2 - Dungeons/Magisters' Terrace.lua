@@ -12,50 +12,43 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["coord"] = { 61.23, 30.94, 122 },	-- Magister's Terrace, Isle of Quel'Danas
 		["groups"] = {
 			n(-17, {	-- Quests
-				{	-- A Radical Notion
-					["questID"] = 29686,	-- A Radical Notion
+				q(29686, {	-- A Radical Notion
 					["provider"] = { "n", 55007 },	-- Exarch Larethor
-				},
-				{	-- Hard to Kill
-					["questID"] = 29685,	-- Hard to Kill
+				}),
+				q(29685, {	-- Hard to Kill
 					["provider"] = { "n", 24848 },	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
-				},
-				{	-- Severed Communications
-					["questID"] = 29684,	-- Severed Communications
+				}),
+				q(29684, {	-- Severed Communications
 					["provider"] = { "n", 55007 },	-- Exarch Larethor
 					["sourceQuest"] = 11482,	-- Duty Calls
-				},
-				{	-- The Scryer's Scryer
-					["questID"] = 11490,	-- The Scryer's Scryer
+				}),
+				q(11490, {	-- The Scryer's Scryer
 					["provider"] = { "n", 24822 },	-- Tyrith
 					["sourceQuest"] = 29684,	-- Severed Communications
-				},
-				{	-- Twisted Associations
-					["questID"] = 29687,	-- Twisted Associations
+				}),
+				q(29687, {	-- Twisted Associations
 					["provider"] = { "n", 55007 },	-- Exarch Larethor
-				},
+				}),
 			}),
 			n(0, {	-- Zone Drops
-				["groups"] = {
-					i(35516, {	-- Sun Touched Satchel
-						["crs"] = {
-							24686,	-- Sunblade Warlock
-							24685,	-- Sunblade Magister
-							24683,	-- Sunblade Mage Guard
-							24687,	-- Sunblade Physician
-							24688,	-- Wretched Skulker
-							24684,	-- Sunblade Blood Knight
-							24689,	-- Wretched Bruiser
-							24690,	-- Wretched Husk
-							24697,	-- Sister of Torment
-							24698,	-- Ethereum Smuggler
-							24762,	-- Sunblade Keeper
-							24777,	-- Sunblade Sentinel
-							24696,	-- Coilskar Witch
-						},
-					}),
-				},
+				i(35516, {	-- Sun Touched Satchel
+					["crs"] = {
+						24686,	-- Sunblade Warlock
+						24685,	-- Sunblade Magister
+						24683,	-- Sunblade Mage Guard
+						24687,	-- Sunblade Physician
+						24688,	-- Wretched Skulker
+						24684,	-- Sunblade Blood Knight
+						24689,	-- Wretched Bruiser
+						24690,	-- Wretched Husk
+						24697,	-- Sister of Torment
+						24698,	-- Ethereum Smuggler
+						24762,	-- Sunblade Keeper
+						24777,	-- Sunblade Sentinel
+						24696,	-- Coilskar Witch
+					},
+				}),
 			}),
 			n(-1, {	-- Common Boss Drop
 				i(35275, { 	-- Orb of Sin'dorei
