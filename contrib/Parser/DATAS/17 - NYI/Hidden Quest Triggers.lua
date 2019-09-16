@@ -810,12 +810,14 @@ _.NeverImplemented =
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
 	
 	--	Raids
+	--	Uldir
+		q(53269),	-- killed Taloc the Corrupted in LFR
+
 	--	Battle of Dazar'alor
 		q(55024),	-- Battle of Dazar'alor — LFR, moving into the hallway after Opulence (not a killID -- this triggered in chat while i was in combat with the trash in the hall)
 		
 	--	Eternal Palace
-		q(56527),	-- Queen Azshara Bonus Roll (LFR)
-		
+		q(56527),	-- Queen Azshara killed (LFR)
 		q(55754),	-- Abyssal Commander Sivara HC LootID
 		q(55755),	-- Radiance of Azshara HC LootID
 		q(55756),	-- Orgozoa HC LootID
