@@ -3621,6 +3621,7 @@ app.L = {
 		["The Sunwell"] = "Sunwell Plateau";
 		["Tempest Keep"] = "The Eye";
 		["The Violet Hold"] = "Violet Hold";
+		["Magister's Terrace"] = "Magisters' Terrace";
 	};
 
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
