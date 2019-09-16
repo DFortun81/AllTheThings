@@ -379,13 +379,17 @@ _.NeverImplemented =
 		q(46775),	-- Campaign Cooldown - triggers during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
 		
-	-- Invasion points
+	--	Invasion points
+	--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
+	--	secondary quests don't seem to be tied to loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
 		q(48982),	-- Invasion Point: Aurinor
-		q(49213),	-- triggered upon completing Aurinor, but not the official quest.  possibly tied to loot?  received unsullied plate vambraces
 		q(49099),	-- Invasion Point: Bonich
-		q(49215),	-- triggered upon completing Bonich, but not the official quest.  possibly tied to loot?  received AotL insignia
+		q(49097),	-- Invasion Point: Sangua
 		q(49091),	-- Invasion Point: Val
-		q(49210),	-- triggered upon completing Val, but not the official quest.  possibly tied to loot?  received insignias for argussian reach and AotL
+		q(49213),	-- triggered upon completing Aurinor, but not the official quest.
+		q(49215),	-- triggered upon completing Bonich, but not the official quest.
+		q(49212),	-- triggered upon completing Sangua, but not the official quest.
+		q(49210),	-- triggered upon completing Val, but not the official quest.
 		
 	--	Treasures
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)

@@ -177,7 +177,7 @@ _.Zones =
 						["sourceQuest"] = 47744,	-- Smoke, Meat, and Pretty Flowers
 					}),
 				}),
-				n(27856, {		-- Chromie (Faction)
+				n(27856, {	-- Chromie (Faction)
 					ach(11941, {	-- Chromie Homie
 						title(361),		-- Title: Timelord
 					}),
@@ -240,8 +240,8 @@ _.Zones =
 						},
 					}),
 					i(151482, { 	-- Time-Lost Wallet
-						i(151829), 		-- Bronze Proto-Whelp Pet
-						i(151828), 		-- Ageless Bronze Drake Pet
+						i(151829), 		-- Bronze Proto-Whelp (PET!)
+						i(151828), 		-- Ageless Bronze Drake (PET!)
 					}),
 				}),
 			},

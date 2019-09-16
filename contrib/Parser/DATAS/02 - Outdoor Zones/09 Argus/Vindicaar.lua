@@ -18,92 +18,68 @@ _.Zones =
 			["lvl"] = 110,
 			["isRaid"] = true,
 			["g"] = {
-				n(-4, { 	-- Achievement
+				n(-4,   {	-- Achievement
 					ach(12073, {	-- Locked and Loaded
-						{
-							["itemID"] = 147496,	-- Fel Heart of Argus
-							["sourceQuest"] = 47182,	-- Long Overdue
-							["g"] = {
-								{
-									["achievementID"] = 12073,	-- Locked and Loaded
-									["criteriaID"] = 3,	-- Fel Heart of Argus
-								},
-								{
-									["spellID"] = 248011,	-- Fel Heart of Argus
-								},
-								{
-									["questID"] = 48450,	-- First Time Tracking Quest?
-									["repeatable"] = true,
-								},
-								{
-									["questID"] = 48860,	-- Tracking Quest - Active?
-									["repeatable"] = true,
-								},
-							},
-						},
-						{
-							["itemID"] = 151830,	-- Light's Judgement
+						i(151830, {		-- Light's Judgement
 							["sourceQuest"] = 47287,	-- The Vindicaar Matrix Core
 							["g"] = {
-								{
+								crit(1, {	-- Light's Judgement
 									["achievementID"] = 12073,	-- Locked and Loaded
-									["criteriaID"] = 1,	-- Light's Judgement
-								},
-								{
-									["spellID"] = 247427,	-- Light's Judgement
-								},
-								{
-									["questID"] = 48451,	-- First Time Tracking Quest?
+								}),
+								spell(247427),	-- Light's Judgement
+								q(48451, {	-- First Time Tracking Quest?
 									["repeatable"] = true,
-								},
-								{
-									["questID"] = 48858,	-- Tracking Quest - Active?
+								}),
+								q(48858, {	-- Tracking Quest - Active?
 									["repeatable"] = true,
-								},
+								}),
 							},
-						},
-						{
-							["itemID"] = 152098,	-- Lightforged Warframe
+						}),
+						i(152098, {		-- Lightforged Warframe
 							["sourceQuest"] = 47994,	-- Forming a Bond
 							["g"] = {
-								{
+								crit(2, {	-- Lightforged Warframe
 									["achievementID"] = 12073,	-- Locked and Loaded
-									["criteriaID"] = 2,	-- Lightforged Warframe
-								},
-								{
-									["spellID"] = 250436,	-- Lightforged Warframe
-								},
-								{
-									["questID"] = 48449,	-- First Time Tracking Quest?
+								}),
+								spell(250436),	-- Lightforged Warframe
+								q(48449, {	-- First Time Tracking Quest?
 									["repeatable"] = true,
-								},
-								{
-									["questID"] = 48859,	-- Tracking Quest - Active?
+								}),
+								q(48859, {	-- Tracking Quest - Active?
 									["repeatable"] = true,
-								},
+								}),
 							},
-						},
-						{
-							["itemID"] = 151912,	-- Shroud of Arcane Echoes
+						}),
+						i(147496, {		-- Fel Heart of Argus
+							["sourceQuest"] = 47182,	-- Long Overdue
+							["g"] = {
+								crit(3, {	-- Fel Heart of Argus
+									["achievementID"] = 12073,	-- Locked and Loaded
+								}),
+								spell(248011),	-- Fel Heart of Argus
+								q(48450, {	-- First Time Tracking Quest?
+									["repeatable"] = true,
+								}),
+								q(48860, {	-- Tracking Quest - Active?
+									["repeatable"] = true,
+								}),
+							},
+						}),
+						i(151912, {		-- Shroud of Arcane Echoes
 							["sourceQuest"] = 48107,	-- The Sigil of Awakening
 							["g"] = {
-								{
+								crit(4, {	-- Shroud of Arcane Echoes
 									["achievementID"] = 12073,	-- Locked and Loaded
-									["criteriaID"] = 4,	-- Shroud of Arcane Echoes
-								},
-								{
-									["spellID"] = 248779,	-- Shroud of Arcane Echoes
-								},
-								{
-									["questID"] = 48450,	-- First Time Tracking Quest?
+								}),
+								spell(248779),	-- Shroud of Arcane Echoes
+								q(48450, {	-- First Time Tracking Quest?
 									["repeatable"] = true,
-								},
-								{
-									["questID"] = 48579,	-- Tracking Quest - Active?
+								}),
+								q(48579, {	-- Tracking Quest - Active?
 									["repeatable"] = true,
-								},
+								}),
 							},
-						},
+						}),
 					}),
 				}),
 				n(-169, {	-- Emissary Quests
@@ -238,16 +214,16 @@ _.Zones =
 							["repeatable"] = true,
 							["g"] = {
 								i(152923, {	-- Gleaming Footlocker
-									i(153044),	-- Avenging Felcrusher Mount
-									i(153043),	-- Blessed Felcrusher Mount
-									i(153042),	-- Glorious Felcrusher Mount
-									i(153182),	-- Holy Lightsphere Toy
+									i(153044),	-- Avenging Felcrusher (MOUNT!)
+									i(153043),	-- Blessed Felcrusher (MOUNT!)
+									i(153042),	-- Glorious Felcrusher (MOUNT!)
+									i(153182),	-- Holy Lightsphere (TOY!)
 								}),
 							},
 						}),
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					q(48075, {	-- A Colorful Key
 						["provider"] = { "n", 125343 },		-- Vorel
 						["requireSkill"] = 755,	-- Jewelcrafting
@@ -331,42 +307,84 @@ _.Zones =
 					["achievementID"] = 11217,
 					["modelScale"] = 0.65,
 				}),
-				n(-2, {	-- Vendors
+				n(-2,   {	-- Vendors
 					n(127120, {	-- Vindicator Jaelaana <Army of the Light Emissary>
 						i(152399),	-- Army of the Light Tabard
-						i(151725),	-- Design: Empyrial Cosmic Crown (Rank 2)
-						i(151728),	-- Design: Empyrial Deep Crown (Rank 2)
-						i(151731),	-- Design: Empyrial Elemental Crown (Rank 2)
-						i(151734),	-- Design: Empyrial Titan Crown (Rank 2)
+						i(151725, {	-- Design: Empyrial Cosmic Crown (Rank 2)
+							["cost"] = 20000000,	-- 2,0000g
+						}),
+						i(151728, {	-- Design: Empyrial Deep Crown (Rank 2)
+							["cost"] = 20000000,	-- 2,0000g
+						}),
+						i(151731, {	-- Design: Empyrial Elemental Crown (Rank 2)
+							["cost"] = 20000000,	-- 2,0000g
+						}),
+						i(151734, {	-- Design: Empyrial Titan Crown (Rank 2)
+							["cost"] = 20000000,	-- 2,0000g
+						}),
 						i(152726),	-- Design: Mass Prospect Empyrium
-						i(152400),	-- Embroidered Lightforged Drape
-						i(152788),	-- Lightforged Warframe Mount
-						i(151712),	-- Recipe: Empyrial Breastplate (Rank 2)
-						i(151741),	-- Recipe: Fiendish Shoulderguards (Rank 2)
-						i(151744),	-- Recipe: Fiendish Spaulders (Rank 2)
-						i(151747),	-- Recipe: Lightweave Breeches (Rank 2)
+						i(152400, {	-- Embroidered Lightforged Drape
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(152788, {	-- Lightforged Warframe (MOUNT!)
+							["cost"] = 6250000000,	-- 625,000g
+						}),
+						i(151712, {	-- Recipe: Empyrial Breastplate (Rank 2)
+							["cost"] = 20000000,	-- 2,0000g
+						}),
+						i(151741, {	-- Recipe: Fiendish Shoulderguards (Rank 2)
+							["cost"] = 20000000,	-- 2,0000g
+						}),
+						i(151744, {	-- Recipe: Fiendish Spaulders (Rank 2)
+							["cost"] = 20000000,	-- 2,0000g
+						}),
+						i(151747, {	-- Recipe: Lightweave Breeches (Rank 2)
+							["cost"] = 20000000,	-- 2,0000g
+						}),
 						i(153032),	-- Technique: Glyph of the Lightspawn
 					}),
 					n(127151, {	-- Toraan the Revered <Argussian Reach Emissary>
-						i(152658),	-- Formula: Chaos Shatter
-						i(151707),	-- Recipe: Astral Alchemist Stone [Rank 2]
-						i(151708),	-- Recipe: Astral Alchemist Stone [Rank 3]
-						i(152618),	-- Recipe: Astral Healing Potion [Rank 3]
-						i(152725),	-- Technique: Mass Mill Astral Glory
-						i(152794),	-- Reins of the Amethyst Ruinstrider Mount
-						i(152795),	-- Reins of the Beryl Ruinstrider Mount
-						i(152797),	-- Reins of the Cerulean Ruinstrider Mount
-						i(152793),	-- Reins of the Russet Ruinstrider Mount
-						i(152791),	-- Reins of the Sable Ruinstrider Mount
-						i(152796),	-- Reins of the Umber Ruinstrider Mount
-						i(153027),	-- Orphaned Marsuul Pet
 						i(152669),	-- Argussian Reach Tabard
-						i(153039),	-- Crystalline Campfire Toy				
-						i(153290),	-- Krokul Mining Pick
+						i(153039),	-- Crystalline Campfire (TOY!)
+						i(152658),	-- Formula: Chaos Shatter
 						i(152964, {	-- Krokul Flute
 							["collectible"] = false,
+							["cost"] = 5000000,	-- 500g
 							["f"] = 55,	-- Consumables
 						}),
+						i(153290),	-- Krokul Mining Pick
+						i(153027, {	-- Orphaned Marsuul (PET!)
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(151707, {	-- Recipe: Astral Alchemist Stone (Rank 2)
+							["cost"] = 20000000,	-- 2,0000g
+						}),
+						i(151708, {	-- Recipe: Astral Alchemist Stone (Rank 3)
+							["cost"] = 30000000,	-- 3,0000g
+						}),
+						i(152618, {	-- Recipe: Astral Healing Potion (Rank 3)
+							["cost"] = 30000000,	-- 3,0000g
+						}),
+						i(152794, {	-- Reins of the Amethyst Ruinstrider Mount
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						i(152795, {	-- Reins of the Beryl Ruinstrider Mount
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						i(152797, {	-- Reins of the Cerulean Ruinstrider Mount
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						i(152793, {	-- Reins of the Russet Ruinstrider Mount
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						i(152791, {	-- Reins of the Sable Ruinstrider Mount
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						i(152796, {	-- Reins of the Umber Ruinstrider Mount
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						i(152725),	-- Technique: Mass Mill Astral Glory
+						
 					}),
 					n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 						["currencyID"] = 1508,	-- Veil Argunite
