@@ -106,6 +106,17 @@ _.NeverImplemented =
 		q(35560),	-- The Underbog heroic completion
 		
 		-------------------
+		--     WOTLK     --
+		-------------------
+		q(35442),	-- Halls of Reflection heroic completion
+		q(35440),	-- Pit of Saron heroic completion
+		q(35437),	-- The Forge of Souls heroic completion
+		q(35950),	-- Trial of the Champion heroic completion) (possibly shared with normal?)
+		q(35478),	-- Violet Hold normal completion
+		q(35480),	-- Violet Hold heroic completion
+		
+		
+		-------------------
 		--   CATACLYSM   --
 		-------------------
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
