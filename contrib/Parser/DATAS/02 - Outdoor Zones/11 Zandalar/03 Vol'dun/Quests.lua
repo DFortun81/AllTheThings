@@ -980,23 +980,22 @@ _.Zones =
 							48533,	-- Vol'duni Fried Chicken
 						},
 					}),
-					o(276187, {	-- Junji
-						["g"] = {
-							q(48656, {	-- Savage Saurolisks
-								["sourceQuests"] = { 48655 },	-- The Chef's Apprentice
-							}),
-							q(48657, {	-- They Might Be Delicious
-								["g"] = {
-									i(159978),	-- Junji's Egg Timer
-									i(159996),	-- Lastwind Cuffs
-									i(159997),	-- Exiled Veteran's Vambraces
-									i(159998),	-- Resilient Outcast's Bracers
-									i(159999),	-- Scorching Sands Bracers
-								},
-								["sourceQuests"] = { 48655 },	-- The Chef's Apprentice
-							}),
-						},
+					q(48656, {	-- Savage Saurolisks
 						["coord"] = { 43.3, 78.6 },
+						["provider"] = { "o", 276187 },	-- Junji
+						["sourceQuests"] = { 48655 },	-- The Chef's Apprentice
+					}),
+					q(48657, {	-- They Might Be Delicious
+						["coord"] = { 43.3, 78.6 },
+						["provider"] = { "o", 276187 },	-- Junji
+						["sourceQuests"] = { 48655 },	-- The Chef's Apprentice
+						["g"] = {
+							i(159978),	-- Junji's Egg Timer
+							i(159996),	-- Lastwind Cuffs
+							i(159997),	-- Exiled Veteran's Vambraces
+							i(159998),	-- Resilient Outcast's Bracers
+							i(159999),	-- Scorching Sands Bracers
+						},
 					}),
 					q(48530, {	-- I Heard You Lost the Herd
 						["provider"] = { "n", 126576 },	-- Razgaji
@@ -1063,11 +1062,9 @@ _.Zones =
 						["sourceQuests"] = { 48847 },	-- Arming the Tribe
 					}),
 					--
-					o(273854, {	-- Backpack
-						["g"] = {
-							q(48585),	-- Wasteland Survivor
-						},
-						["coord"] = { 40.4, 73.6 }
+					q(48585, {	-- Wasteland Survivor
+						["coord"] = { 40.4, 73.6 },
+						["provider"] = { "o", 273854 },	-- Backpack
 					}),
 					--
 					q(47939, {	-- If the Key Fits...
@@ -1224,32 +1221,23 @@ _.Zones =
 						["sourceQuests"] = { 48326 },	-- This Be Mutiny
 					}),
 					--
-					o(287442, {	-- Wanted: Cobra Excursion Participants
-						["g"] = {
-							q(51164),	-- WANTED: Cobra Excursion Participants
-						},
+					q(51164, {	-- WANTED: Cobra Excursion Participants
 						["coord"] = { 43.6, 59.9 },
+						["provider"] = { "o", 287442 },	-- Wanted: Cobra Excursion Participants
 					}),
-					o(287440, {	-- Wanted: Taz'raka
-						["g"] = {
-							q(51162),	-- WANTED: Taz'raka the Traitor
-						},
+					q(51162, {	-- WANTED: Taz'raka the Traitor
 						["coord"] = { 38.8, 77.0 },
+						["provider"] = { "o", 287440 },	-- Wanted: Taz'raka
 					}),
-					o(287398, {	-- Wanted: Za'roco
-						["g"] = {
-							q(51161, {	-- WANTED: Za'roco
-								["sourceQuests"] = { 51668 },	-- Mojambo
-							}),
-						},
+					q(51161, {	-- WANTED: Za'roco
 						["coord"] = { 43.1, 76.5 },
+						["provider"] = { "o", 287398 },	-- Wanted: Za'roco
+						["sourceQuests"] = { 51668 },	-- Mojambo
 					}),
 					--
-					o(289728, {	-- Captain Gulnaku's Treasure Map
-						["g"] = {
-							q(49138),	-- Captain Gulnaku's Treasure
-						},
-						["coord"] = { 35.0, 80.4 }
+					q(49138, {	-- Captain Gulnaku's Treasure
+						["coord"] = { 35.0, 80.4 },
+						["provider"] = { "o", 289728 },	-- Captain Gulnaku's Treasure Map
 					}),
 					-- Goldtusk Inn:
 					q(48327, {	-- A Strange Delivery
@@ -1358,11 +1346,9 @@ _.Zones =
 						},
 					}),
 					--
-					o(282498, {	-- Desert Flute
-						["g"] = {
-							q(50818),	-- A Lost Flute
-						},
-						["coord"] = { 28.9, 54.6 }
+					q(50818, {	-- A Lost Flute
+						["coord"] = { 28.9, 54.6 },
+						["provider"] = { "o", 282498 },	-- Desert Flute
 					}),
 					q(50817, {	-- A Charming Tail
 						["provider"] = { "n", 135400 },	-- Jenoh
@@ -1541,11 +1527,9 @@ _.Zones =
 						},
 					}),
 					--
-					o(278368, {	-- Tattered Note
-						["g"] = {
-							q(49437),	-- Tattered Note
-						},
+					q(49437, {	-- Tattered Note
 						["coord"] = { 54.3, 34.2 },
+						["provider"] = { "o", 278368 },	-- Tattered Note
 					}),
 					-- Bonus objective quests:
 					q(47647),	-- Monsters of Zem'lan

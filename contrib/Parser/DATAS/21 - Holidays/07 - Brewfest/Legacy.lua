@@ -7,22 +7,18 @@ _.Holidays = bubbleDown({["u"] = 24},
 		n(-40, {	-- Legacy
 			["groups"] = {
 				n(-17, {	-- Quests
-					o(186881, {	-- Dark Iron Sabotage Plans
-						["groups"] = {
-							q(11454, {	-- Seek the Saboteurs
-								["maps"] = {
-									1,	-- Durotar
-									27,	-- Dun Morogh
-								},
-								["groups"] = {
-									i(34140, {	-- Dark Iron Tankard
-										["u"] = 32,	-- Reworked Rewards
-									}),
-								},
-								["u"] = 40,
+					q(11454, {	-- Seek the Saboteurs
+						["u"] = 40,
+						["provider"] = { "o", 186881 },	-- Dark Iron Sabotage Plans
+						["maps"] = {
+							1,	-- Durotar
+							27,	-- Dun Morogh
+						},
+						["g"] = {
+							i(34140, {	-- Dark Iron Tankard
+								["u"] = 32,	-- Reworked Rewards
 							}),
 						},
-						["u"] = 40,	-- Legacy Quest/Quest Item
 					}),
 					--[[
 					q(11486, {	-- The Best of Brews (Alliance)

@@ -383,24 +383,22 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 29402 },	-- Taking Precautions (Alliance)
 					}),
-					o(209072, {	-- Stolen Crate
-						q(29411, {	-- What Now? (Alliance)
-							["maps"] = { 84 },	-- Stormwind City
-						["u"] = 26,				-- Hallow's End Filter
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 29403 },	-- The Collector's Agent (Alliance)
-						}),
+					q(29411, {	-- What Now? (Alliance)
+						["maps"] = { 84 },	-- Stormwind City
+						["u"] = 26,	-- Hallow's End Filter
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "o", 209072 },	-- Stolen Crate
+						["sourceQuests"] = { 29403 },	-- The Collector's Agent (Alliance)
 					}),
-					o(209076, {	-- Anson's Crate
-						q(29413, {	-- The Creepy Crate (Alliance)
-							["groups"] = {
-								un(26, i(71076)),	-- Creepy Crate (Pet)
-							},
-							["maps"] = { 84 },	-- Stormwind City
-						["u"] = 26,				-- Hallow's End Filter
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 29411 },	-- What Now? (Alliance)
-						}),
+					q(29413, {	-- The Creepy Crate (Alliance)
+						["u"] = 26,	-- Hallow's End Filter
+						["maps"] = { 84 },	-- Stormwind City
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "o", 209076 },	-- Anson's Crate
+						["sourceQuests"] = { 29411 },	-- What Now? (Alliance)
+						["g"] = {
+							un(26, i(71076)),	-- Creepy Crate (Pet)
+						},
 					}),
 					q(29431, {	-- A Friend in Need (Horde)
 						["provider"] = { "n", 53763 },	-- Gretchen Fenlow
@@ -443,24 +441,22 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 29426 },	-- Taking Precautions (HORDE)
 					}),
-					o(209094, {	-- Stolen Crate
-						q(29428, {	-- What Now? (Horde)
-							["maps"] = { 85 },	-- Orgrimmar
-							["races"] = HORDE_ONLY,
-						["u"] = 26,				-- Hallow's End Filter
-							["sourceQuests"] = { 29427 },	-- The Collector's Agent (Horde)
-						}),
+					q(29428, {	-- What Now? (Horde)
+						["u"] = 26,	-- Hallow's End Filter
+						["maps"] = { 85 },	-- Orgrimmar
+						["races"] = HORDE_ONLY,
+						["provider"] = { "o", 209094 },	-- Stolen Crate
+						["sourceQuests"] = { 29427 },	-- The Collector's Agent (Horde)
 					}),
-					o(209095, {	-- Edgar's Crate
-						q(29429, {	-- The Creepy Crate (Horde)
-							["groups"] = {
-								un(26, i(71076)),	-- Creepy Crate (Pet)
-							},
-							["maps"] = { 85 },	-- Orgrimmar
-							["races"] = HORDE_ONLY,
-						["u"] = 26,				-- Hallow's End Filter
-							["sourceQuests"] = { 29428 },	-- What Now? (Horde)
-						}),
+					q(29429, {	-- The Creepy Crate (Horde)
+						["u"] = 26,	-- Hallow's End Filter
+						["maps"] = { 85 },	-- Orgrimmar
+						["races"] = HORDE_ONLY,
+						["provider"] = { "o", 209095 },	-- Edgar's Crate
+						["sourceQuests"] = { 29428 },	-- What Now? (Horde)
+						["g"] = {
+							un(26, i(71076)),	-- Creepy Crate (Pet)
+						},
 					}),
 					q(8356, {	-- Flexing for Nougat (Alliance)
 						["provider"] = { "n", 6740 },	-- Innkeeper Allison

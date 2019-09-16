@@ -6,25 +6,6 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		n(-17, {	-- Quests
 			--[[
-			possible secrets:
-			"Neri's Spot" npc at 71.5, 19.4 at the top of a hidden path behind the waterfall
-			"Neri's Find" npc at 44.9, 60.7 atop of the overhand above Newhome. Approach from ~45.3, 64.8
-			"Neri's Ruse" npc at 36.1, 70.3
-			"Poen's Hidey Hole" npc at 67.6, 30.8 on top of the rocks
-			"Poen's Wonder" npc at 67.8, 31.5 in a cave
-			"Vim's Round" npc at 64.1, 57.4
-			"Gorm's Lantern" npc at 36.2, 87.0
-			
-			
-			Map model found at 43.8, 54.7. May not mean anything, but could be worth investigating
-			
-			"Malfunctioning Arcane Device" in hidden cave at 55.5, 28.5. Cave contains a crystal cat, maybe something else?
-			"Murloco's Marvelous Hat" at (45.4, 32.6) gives you  the "Murloco's Marvelous Hat" buff
-			
-			GLoomseeker Yarga at (38.1, 59.2) in the underwater cave has a chest behind him, but it's locked
-			
-			flopping fish at (47.4, 61.0), (48.5, 60.5), (50.5, 58.8). interacting knocks it away, but it bounces right back
-			
 			56521 popped randomly. possibly a progress flag for 55663?
 			56325 - alliance end to the zone, completed after turning in The Tide Turns (55799)
 			]]--
@@ -43,26 +24,28 @@ _.Zones =
 					i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 				},
 			}),
-			o(329805, {	-- Strange Crystal
+			q(56561, {	-- A Curious Discovery (A)
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "o", 329805 },	-- Strange Crystal
+				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["coords"] = {
 					{ 32.8, 39.5, 1355 },
 					{ 55.2, 48.8, 1355 },
 				},
 				["g"] = {
-					q(56561, {	-- A Curious Discovery (A)
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 56156,	-- A Tempered Blade
-						["g"] = {
-							i(169778),	-- Enchanting Crystal (QI)
-						},
-					}),
-					q(56560, {	-- A Curious Discovery (H)
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 55500,	-- Save a Friend
-						["g"] = {
-							i(169778),	-- Enchanting Crystal (QI)
-						},
-					}),
+					i(169778),	-- Enchanting Crystal (QI)
+				},
+			}),
+			q(56560, {	-- A Curious Discovery (H)
+				["races"] = HORDE_ONLY,
+				["provider"] = { "o", 329805 },	-- Strange Crystal
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["coords"] = {
+					{ 32.8, 39.5, 1355 },
+					{ 55.2, 48.8, 1355 },
+				},
+				["g"] = {
+					i(169778),	-- Enchanting Crystal (QI)
 				},
 			}),
 			q(56787, {	-- Additional Supplies
@@ -121,16 +104,13 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 9.",
 			}),
-			o(325853, {	-- Empty Bookcase
+			q(55636, {	-- A Life's Work
 				["coord"] = { 78.4, 28.6, 1355 },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					q(55636, {	-- A Life's Work
-						["isDaily"] = true,
-						["sourceQuest"] = 56156,	-- A Tempered Blade
-						["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-					}),
-				},
+				["isDaily"] = true,
+				["provider"] = { "o", 325853 },	-- Empty Bookcase
+				["sourceQuest"] = 56156,	-- A Tempered Blade
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
 			q(55993, {	-- A Little Edge
 				["provider"] = { "n", 153743 },	-- Kade Makreef
@@ -266,6 +246,20 @@ _.Zones =
 					i(169903),	-- Nazjatar Survival Pack
 				},
 			}),
+			q(56346, {	-- Ancient Technology
+				["coord"] = { 38.1, 36.9, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "o", 327596 },	-- Broken Abyssal Focus
+				["description"] = "This quest is not available unless you have 150 in Kul Tiran Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
+				["sourceQuest"] = 56156,	-- A Tempered Blade
+			}),
+			q(56354, {	-- Ancient Technology
+				["coord"] = { 38.1, 36.9, 1355 },
+				["races"] = HORDE_ONLY,
+				["provider"] = { "o", 327596 },	-- Broken Abyssal Focus
+				["description"] = "This quest is not available unless you have 150 in Zandalari Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
+				["sourceQuest"] = 55500,	-- Save a Friend
+			}),
 			q(56814, {	-- Anytime You Need a Friend
 				["provider"] = { "n", 149904 },	-- Neri Sharpfin
 				["races"] = HORDE_ONLY,
@@ -275,19 +269,6 @@ _.Zones =
 						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 					i(169908),	-- Cleverly Concealed Supplies
-				},
-			}),
-			o(326588, {	-- Azerite Weapons Cache -- TODO: 326588 was the original objectID on horde, but alliance is 326393. Has this changed for horde as well?
-				["coord"] = { 46.0, 51.9, 1355 },
-				["g"] = {
-					q(55937, {	-- Clearing Out the Cache (A)
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 55861,	-- Let the Residue Lead You
-					}),
-					q(55869, {	-- Clearing Out the Cache (H)
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 55868,	-- Let the Residue Lead You
-					}),
 				},
 			}),
 			q(56218, {	--	Beauty in the Deeps
@@ -587,52 +568,6 @@ _.Zones =
 					55500,	-- Save A Friend (H)
 				},
 			}),
-			o(326140, {	-- Bounty Board
-				["coord"] = { 39.1, 54.1, 1355 },
-				["races"] = ALLIANCE_ONLY,
-				["description"] = "The daily quest that is offered is only available if you select the right follower for the day.",	-- the conch/flame gives a "Daily Quest" indicator if the board has something, but it's currently bugged
-				["g"] = {
-					q(55777, {	-- Wanted: Braxicus
-						["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(55770, {	-- WANTED: Commander Sarj'eth
-						["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(55772, {	-- WANTED: Lady Narjiss
-						["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					}),
-				},
-			}),
-			o(327585, {	-- Bounty Board
-				["coord"] = { 47.9, 61.3, 1355 },
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					--[[ -- todo:: verify
-					{	-- Wanted: Braxicus
-						["questID"] = 55404,
-						["isDaily"] = true,
-					},
-					]]--
-					q(56223, {	-- Wanted: Commander Sarj'eth
-						["isDaily"] = true,
-						["races"] = HORDE_ONLY,
-					}),
-					q(56227, {	-- WANTED: Inquisitor Ithriza
-						["isDaily"] = true,
-						["races"] = HORDE_ONLY,
-					}),
-					q(56225, {	-- Wanted: Lady Narjiss
-						["isDaily"] = true,
-						["races"] = HORDE_ONLY,
-					}),
-				},
-			}),
 			q(56370, {	-- Break a Few Eggs (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
@@ -653,21 +588,6 @@ _.Zones =
 				["g"] = {
 					q(55531, {	-- What Will It Mine?
 						currency(1721),	-- Prismatic Manapearl
-					}),
-				},
-			}),
-			o(327596, {	-- Broken Abyssal Focus
-				["coord"] = { 38.1, 36.9, 1355 },
-				["g"] = {
-					q(56346, {	-- Ancient Technology
-						["description"] = "This quest is not available unless you have 150 in Kul Tiran Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 56156,	-- A Tempered Blade
-					}),
-					q(56354, {	-- Ancient Technology
-						["description"] = "This quest is not available unless you have 150 in Zandalari Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 55500,	-- Save a Friend
 					}),
 				},
 			}),
@@ -744,6 +664,18 @@ _.Zones =
 				["coord"] = { 73.4, 47.8, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55500,	-- Save a Friend
+			}),
+			q(55937, {	-- Clearing Out the Cache (A)
+				["coord"] = { 46.0, 51.9, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "o", 326588 },	-- Azerite Weapons Cache`
+				["sourceQuest"] = 55861,	-- Let the Residue Lead You
+			}),
+			q(55869, {	-- Clearing Out the Cache (H)
+				["coord"] = { 46.0, 51.9, 1355 },
+				["races"] = HORDE_ONLY,
+				["provider"] = { "o", 326588 },	-- Azerite Weapons Cache`
+				["sourceQuest"] = 55868,	-- Let the Residue Lead You
 			}),
 			q(55601, {	-- Coveted Crystals (A)
 				["provider"] = { "n", 153385 },	-- Blademaster Okani
@@ -845,18 +777,17 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55862,	-- Insight into Our Enemies
 			}),
-			o(327591, {	-- Preserved Journal
+			q(56243, {	-- Diaries of the Dead (A)
 				["coord"] = { 81.4, 45.4, 1355 },
-				["g"] = {
-					q(56243, {	-- Diaries of the Dead
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 56241,	-- Preserved Clues
-					}),
-					q(56244, {	-- Diaries of the Dead
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 56242,	-- Preserved Clues
-					}),
-				},
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "o", 327591 },	-- Preserved Journal
+				["sourceQuest"] = 56241,	-- Preserved Clues
+			}),
+			q(56244, {	-- Diaries of the Dead (H)
+				["coord"] = { 81.4, 45.4, 1355 },
+				["races"] = HORDE_ONLY,
+				["provider"] = { "o", 327591 },	-- Preserved Journal
+				["sourceQuest"] = 56242,	-- Preserved Clues
 			}),
 			q(56641, {	-- Disruption of Power
 				["provider"] = { "n", 155482 },	-- Sentinel (Shandris Feathermoon)
@@ -950,44 +881,19 @@ _.Zones =
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 			}),
-			o(325869, {	-- Empty Cask
-				["coord"] = { 59.5, 41.8, 1355 },
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					q(55638, {	-- Making Kelpberry Wine
-						["isDaily"] = true,
-						["sourceQuest"] = 55500,	-- Save A Friend
-					}),
-				},
-			}),
-			o(327592, {	-- Enchanted Lock
+			q(56246, {	-- Enchanted Lock (A)
 				["coord"] = { 78.8, 41.1, 1355 },
-				["g"] = {
-					q(56246, {	-- Enchanted Lock (A)
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 56243,	-- Diaries of the Dead
-						["description"] = "Match 3 purple runes.",
-					}),
-					q(56245, {	-- Enchanted Lock (H)
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 56244,	-- Diaries of the Dead
-						["description"] = "Match 3 purple runes.",
-					}),
-					q(56247, {	-- Treasure Tale (A)
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 56246,	-- Enchanted Lock
-						["g"] = {
-							spell(305101),	-- Curios of Nazjatar
-						},
-					}),
-					q(56248, {	-- Treasure Tale (H)
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 56245,	-- Enchanted Lock
-						["g"] = {
-							spell(305101),	-- Curios of Nazjatar
-						},
-					}),
-				},
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "o", 327592 },	-- Enchanted Lock
+				["sourceQuest"] = 56243,	-- Diaries of the Dead
+				["description"] = "Match 3 purple runes.",
+			}),
+			q(56245, {	-- Enchanted Lock (H)
+				["coord"] = { 78.8, 41.1, 1355 },
+				["races"] = HORDE_ONLY,
+				["provider"] = { "o", 327592 },	-- Enchanted Lock
+				["sourceQuest"] = 56244,	-- Diaries of the Dead
+				["description"] = "Match 3 purple runes.",
 			}),
 			q(55851, {	-- Essential Empowerment
 				["providers"] = {
@@ -1267,13 +1173,20 @@ _.Zones =
 					55870,	-- Sea Slug Liquidation
 				},
 			}),
-			q(56146, {	-- Making Kelpberry Wine
+			q(56146, {	-- Making Kelpberry Wine (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-			--	["objectID"] = 325869,	-- Empty Cask
+				["provider"] = { "o", 325869 },	-- Empty Cask
 				["isDaily"] = true,
 				["coord"] = { 59.5, 42.0, 1355 },
 				["races"] = ALLIANCE_ONLY,
+			}),
+			q(55638, {	-- Making Kelpberry Wine (H)
+				["coord"] = { 59.5, 41.8, 1355 },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+				["provider"] = { "o", 325869 },	-- Empty Cask
+				["sourceQuest"] = 55500,	-- Save A Friend
 			}),
 			q(55482, {	-- Making the Connection
 				["provider"] = { "n", 152066 },	-- First Arcanist Thalyssra
@@ -2013,6 +1926,18 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56429,	-- Up Against It
 			}),
+			q(56037, {	-- Stealing the Naga's Secrets (A)
+				["coord"] = { 34.6, 21.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "o", 327170 },	-- Weapon Rack
+				["sourceQuest"] = 56039,	-- We Can't Have Dull Weapons
+			}),
+			q(56045, {	-- Stealing the Naga's Secrets (H)
+				["coord"] = { 34.6, 21.1, 1355 },
+				["races"] = HORDE_ONLY,
+				["provider"] = { "o", 327170 },	-- Weapon Rack
+				["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
+			}),
 			q(56830, {	-- Summons from the Deep
 				["description"] = "This event takes place every 3 hours (based on realm time, it starts at 3:00, 6:00, 9:00, and 12:00 for NA realms; 1:00, 4:00, 7:00, and 10:00 for EU realms).  A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
 				["isDaily"] = true,
@@ -2326,6 +2251,24 @@ _.Zones =
 					i(169917),	-- Mysterious Azshari Cache
 				},
 			}),
+			q(56247, {	-- Treasure Tale (A)
+				["coord"] = { 78.8, 41.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "o", 327592 },	-- Enchanted Lock
+				["sourceQuest"] = 56246,	-- Enchanted Lock
+				["g"] = {
+					spell(305101),	-- Curios of Nazjatar
+				},
+			}),
+			q(56248, {	-- Treasure Tale (H)
+				["coord"] = { 78.8, 41.1, 1355 },
+				["races"] = HORDE_ONLY,
+				["provider"] = { "o", 327592 },	-- Enchanted Lock
+				["sourceQuest"] = 56245,	-- Enchanted Lock
+				["g"] = {
+					spell(305101),	-- Curios of Nazjatar
+				},
+			}),
 			q(56790, {	-- Treasure to Find
 				["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 9.",
 				["races"] = ALLIANCE_ONLY,
@@ -2401,10 +2344,30 @@ _.Zones =
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 			}),
+			q(55777, {	-- Wanted: Braxicus
+				["coord"] = { 39.1, 54.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
+				["provider"] = { "o", 326140 },	-- Bounty Board
+				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			}),
+			q(55770, {	-- WANTED: Commander Sarj'eth (A)
+				["coord"] = { 39.1, 54.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
+				["provider"] = { "o", 326140 },	-- Bounty Board
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			}),
+			q(56223, {	-- Wanted: Commander Sarj'eth (H)
+				["coord"] = { 47.9, 61.3, 1355 },
+				["isDaily"] = true,
+				["provider"] = { "o", 327585 },	-- Bounty Board
+				["races"] = HORDE_ONLY,
+			}),
 			q(55776, {	-- WANTED: Emorneth
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
-			--	["objectID"] = 326140,	-- Bounty Board
+				["provider"] = { "o", 326140 },	-- Bounty Board
 				["isDaily"] = true,
 				["coord"] = { 39.2, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -2412,7 +2375,7 @@ _.Zones =
 			q(55773, {	-- WANTED: Gler'thogg (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-			--	["objectID"] = 326142,	-- Bounty Board
+				["provider"] = { "o", 326142 },	-- Bounty Board
 				["isDaily"] = true,
 				["coord"] = { 39.2, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -2420,7 +2383,7 @@ _.Zones =
 			q(56226, {	-- WANTED: Gler'thogg (H)
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			--	["objectID"] = 326142,	-- Bounty Board
+				["provider"] = { "o", 326142 },	-- Bounty Board
 				["isDaily"] = true,
 				["coord"] = { 48.0, 61.5, 1355 },
 				["races"] = HORDE_ONLY,
@@ -2428,12 +2391,12 @@ _.Zones =
 			q(55775, {	-- WANTED: Haggronar
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
-			--	["objectID"] = 326140,	-- Bounty Board
+				["provider"] = { "o", 326140 },	-- Bounty Board
 				["isDaily"] = true,
 				["coord"] = { 39.2, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(55774, {	-- WANTED: Inquisitor Ithriza
+			q(55774, {	-- WANTED: Inquisitor Ithriza (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			--	["objectID"] = ,	-- Bounty Board (unknown objectID, not linked to quest)
@@ -2441,10 +2404,29 @@ _.Zones =
 				["coord"] = { 39.2, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
 			}),
+			q(56227, {	-- WANTED: Inquisitor Ithriza (H)
+				["coord"] = { 47.9, 61.3, 1355 },
+				["isDaily"] = true,
+				["provider"] = { "o", 327585 },	-- Bounty Board
+				["races"] = HORDE_ONLY,
+			}),
+			q(55772, {	-- WANTED: Lady Narjiss (A)
+				["coord"] = { 39.1, 54.1, 1355 },
+				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
+				["provider"] = { "o", 326140 },	-- Bounty Board
+				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			}),
+			q(56225, {	-- Wanted: Lady Narjiss (H)
+				["coord"] = { 47.9, 61.3, 1355 },
+				["isDaily"] = true,
+				["provider"] = { "o", 327585 },	-- Bounty Board
+				["races"] = HORDE_ONLY,
+			}),
 			q(55750, {	-- WANTED: Lady Naz'jess
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-			--	["objectID"] = 326142,	-- Bounty Board
+				["provider"] = { "o", 326142 },	-- Bounty Board
 				["isDaily"] = true,
 				["coord"] = { 39.1, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -2452,7 +2434,7 @@ _.Zones =
 			q(56222, {	-- WANTED: Lady Naz'jess
 				["sourceQuest"] = 55500,	-- Save a Friend
 				--["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-				--["objectID"] = 326142,	-- Bounty Board
+				["provider"] = { "o", 326142 },	-- Bounty Board
 				["isDaily"] = true,
 				["coord"] = { 48.0, 61.5, 1355 },
 				["races"] = HORDE_ONLY,
@@ -2460,7 +2442,7 @@ _.Zones =
 			q(55771, {	-- WANTED: Lord Ha'kass
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-			--	["objectID"] = 326142,	-- Bounty Board
+				["provider"] = { "o", 326142 },	-- Bounty Board
 				["isDaily"] = true,
 				["coord"] = { 39.1, 54.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -2468,7 +2450,7 @@ _.Zones =
 			q(56224, {	-- WANTED: Lord Ha'kass
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-				--["objectID"] = 326142,	-- Bounty Board
+				["provider"] = { "o", 326142 },	-- Bounty Board
 				["isDaily"] = true,
 				["coord"] = { 48.0, 61.5, 1355 },
 				["races"] = HORDE_ONLY,
@@ -2517,19 +2499,6 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
-			}),
-			o(327170, {	-- Weapon Rack
-				["coord"] = { 34.6, 21.1, 1355 },
-				["g"] = {
-					q(56037, {	-- Stealing the Naga's Secrets (A)
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 56039,	-- We Can't Have Dull Weapons
-					}),
-					q(56045, {	-- Stealing the Naga's Secrets (H)
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
-					}),
-				},
 			}),
 			q(55561, {	-- What Remains of Zin-Azshari
 				["sourceQuests"] = { 55558 },	-- A Bolt Hole
