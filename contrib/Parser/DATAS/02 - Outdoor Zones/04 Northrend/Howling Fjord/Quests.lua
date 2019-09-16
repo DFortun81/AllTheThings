@@ -604,7 +604,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11396, {	-- Bring Down Those Shields [Alliance]
-					["qg"] =23833,	-- Explorer Jaren
+					["provider"] = { "n", 23833 },	-- Explorer Jaren
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {11395},
 					["g"] = {

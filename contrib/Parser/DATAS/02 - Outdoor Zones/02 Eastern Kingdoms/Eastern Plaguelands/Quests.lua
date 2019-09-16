@@ -699,7 +699,7 @@ _.Zones =
 				}),
 				q(5243,  {	-- Houses of the Holy
 					["u"] = 40,
-					["qg"]	= 11036,	-- Leonid Barthalomew the Revered
+					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["g"] = {
 						un(2, i(13217)),	-- Band of the Penitent
 						un(2, i(13216)),	-- Crown of the Penitent

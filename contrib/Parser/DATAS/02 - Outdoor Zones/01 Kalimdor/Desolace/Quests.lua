@@ -891,13 +891,13 @@ _.Zones =
 					["sourceQuest"] = 14318,	-- Delicate Negotiations
 				}),
 				q(14363, {	-- You'll Know It When You See It (A)
-					["qg"] = 5396,	-- Captain Pentigast
+					["provider"] = { "n", 5396 },	-- Captain Pentigast
 					["coord"] = { 66.6, 11.0, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14361,	-- Peace of Mind
 				}),
 				q(14225, {	-- You'll Know It When You See It (H)
-					["qg"] = 35298,	-- Sorrem
+					["provider"] = { "n", 35298 },	-- Sorrem
 					["coord"] = { 44.8, 29.4, 66 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14223,	-- Peace of Mind

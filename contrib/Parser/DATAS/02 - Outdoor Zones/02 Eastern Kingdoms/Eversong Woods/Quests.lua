@@ -312,7 +312,7 @@ _.Zones =
 					["sourceQuest"] = 9395,	-- Saltheril's Haven
 				}),
 				q(9403,  {	-- The Purest Water
-					["qg"]	= 15970,	-- Instructor Antheol
+					["provider"] = { "n", 15970 },	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, 94 },
 					["classes"] = { 8 },	-- Mage
 					["races"] = HORDE_ONLY,
