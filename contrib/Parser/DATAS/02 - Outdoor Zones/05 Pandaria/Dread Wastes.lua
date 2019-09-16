@@ -198,6 +198,7 @@ _.Zones =
 					}),
 					q(31730, {	-- A Not So Friendly Request
 						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
+						["isBreadcrumb"] = true,
 					}),
 					q(31210, {	-- A Shade of Dread
 						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
@@ -888,6 +889,8 @@ _.Zones =
 					}),
 					q(31605, {	-- The Zan'thik Dig
 						["provider"] = { "n", 64815 },	-- Kor'ik
+						["minReputation"] = { 1337 , HONORED },
+						["isBreadcrumb"] = true,
 					}),
 					q(31208, {	-- Venomous Intent
 						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
