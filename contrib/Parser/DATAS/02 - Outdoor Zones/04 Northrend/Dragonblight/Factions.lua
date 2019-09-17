@@ -37,6 +37,10 @@ _.Zones =
 							["isDaily"] = true,
 							["provider"] = { "n", 26228 },	-- Trapper Mau'i
 						}),
+						q(26178, {	-- Planning for the Future (old quest reworked to be a daily)
+							["u"] = 40,
+							["provider"] = { "n", 26228 },	-- Trapper Mau'i
+						}),
 					},
 				}),
 				faction(1091, {	-- The Wyrmrest Accord

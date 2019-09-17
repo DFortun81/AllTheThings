@@ -98,6 +98,7 @@ _.Zones =
 						["coord"] = { 43.9, 69.2, 899 },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 124154 },	-- Chromie
+						["repeatable"] = true,
 						["sourceQuest"] = 47559,	-- Gleaming Chronoshard
 						["g"] = {
 							i(151493),	-- Sands of Time
@@ -106,6 +107,7 @@ _.Zones =
 					q(47772, {	-- Sky Ablaze With Cannonfire
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 124154 },	-- Chromie
+						["repeatable"] = true,
 						["sourceQuest"] = 47559,	-- Gleaming Chronoshard
 						["g"] = {
 							i(151493),	-- Sands of Time
