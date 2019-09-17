@@ -320,20 +320,32 @@ _.Zones =
 						["lvl"] = 120,
 						["g"] = {
 							n(130216, {	-- Magni Bronzebeard
-								["coord"] = { 42.22, 44.27, 81 },
+								["coord"] = { 42.2, 44.2, 81 },
 								["g"] = {
-									i(160544),	-- Champions of Azeroth Tabard
+									i(161555, {	-- Azerothian Champion's Crown
+										["cost"] = 22500000,	-- 2,250g
+									}),
+									i(161560, {	-- Azerothian Champion's Spaulders
+										["cost"] = 22500000,	-- 2,250g
+									}),
+									i(160544, {	-- Champions of Azeroth Tabard
+										["cost"] = 6250000,	-- 625g
+									}),
+									i(160537, {	-- Drape of the Azerothian Champion
+										["cost"] = 11000000,	-- 1,100g
+									}),
 									i(163555, {	-- Drop of Azerite
 										["cost"] = { { "i", 163036, 200 } },	-- 200x Polished Pet Charm
+									}),
+									i(161563, {	-- Helm of the Azerothian Champion
+										["cost"] = 22500000,	-- 2,250g
 									}),
 									i(163515, {	-- Shard of Azerite
 										["cost"] = { { "i", 163036, 100 } },	-- 100x Polished Pet Charm
 									}),
-									i(161555),	-- Azerothian Champion's Crown
-									i(161563),	-- Helm of the Azerothian Champion
-									i(161560),	-- Azerothian Champion's Spaulders
-									i(161557),	-- Vest of the Azerothian Champion
-									i(160537),	-- Drape of the Azerothian Champion
+									i(161557, {	-- Vest of the Azerothian Champion
+										["cost"] = 22500000,	-- 2,250g
+									}),
 								},
 							}),
 						},
