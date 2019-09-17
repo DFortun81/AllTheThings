@@ -116,10 +116,29 @@ _.NeverImplemented =
 		-------------------
 		--     WOTLK     --
 		-------------------
+		q(35472),	-- Culling of Stratholme normal completion
+		q(35473),	-- Culling of Stratholme bonus objective (kill the infinite corruptor)
+		q(35474),	-- Culling of Stratholme heroic completion (kill Mal'ganis)
+		q(35483),	-- Drak'tharon Keep normal completion
+		q(35484),	-- Drak'tharon Keep heroic completion
+		q(35477),	-- Gundrak bonus objective completion (Kill Ekk the Ferocious)
+		q(35475),	-- Gundrak normal completion
+		q(35476),	-- Gundrak heroic completion
+		q(35456),	-- Halls of Lightning normal completion
+		q(35458),	-- Halls of Lightning heroic completion
+		q(35441),	-- Halls of Reflection normal completion
 		q(35442),	-- Halls of Reflection heroic completion
+		q(35465),	-- Halls of Stone normal completion
+		q(35468),	-- Halls of Stone heroic completion
+		q(35438),	-- Pit of Saron normal completion
 		q(35440),	-- Pit of Saron heroic completion
+		q(35436),	-- The Forge of Souls normal completion
 		q(35437),	-- The Forge of Souls heroic completion
 		q(35950),	-- Trial of the Champion heroic completion) (possibly shared with normal?)
+		q(35502),	-- Utgarde Keep normal completion
+		q(35512),	-- Utgarde Keep heroic completion
+		q(35449),	-- Utgarde Pinnacle normal completion
+		q(35453),	-- Utgarde Pinnacle heroic completion
 		q(35478),	-- Violet Hold normal completion
 		q(35480),	-- Violet Hold heroic completion
 		
@@ -129,9 +148,6 @@ _.NeverImplemented =
 		-------------------
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(35348),	-- Blackrock Caverns Reward Quest
-		q(35472),	-- Culling of Stratholme normal completion
-		q(35473),	-- Culling of Stratholme bonus objective (kill the infinite corruptor)
-		q(35474),	-- Culling of Stratholme heroic completion (kill Mal'ganis)
 		q(35587),	-- Deadmines heroic completion
 		q(35358),	-- End Time heroic completion
 		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)

@@ -9,7 +9,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["maps"] = { 134, 135 },
 		["groups"] = {
 			n(-17, {	-- Quests
-				h(q(30112,{ 	-- A Score to Settle
+				q(30112,{ 	-- A Score to Settle
+					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
 					["groups"] = {
 						i(39679), 	-- Runecaster's Bracers
@@ -17,18 +18,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(39678), 	-- Vendetta Bindings
 						i(39676), 	-- Wraps of the San'layn
 					},
-				})),
-				h(q(11272,{ 	-- A Score to Settle
-					["provider"] = { "n", 23780 },	-- High Executor Anselm
-					["sourceQuests"] = {11234},
-					["groups"] = {
-						i(39679), 	-- Runecaster's Bracers
-						i(39680),	-- Vambraces of the Vengeance Bringer
-						i(39678), 	-- Vendetta Bindings
-						i(39676), 	-- Wraps of the San'layn
-					},
-				})),
-				a(q(29764, {	-- Disarmament
+				}),
+				q(29764, {	-- Disarmament
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24111 },	-- Defender Mordun
 					["groups"] = {
 						i(44374),	-- Amulet of the Tranquil Mind
@@ -36,8 +28,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(44376),	-- Necklace of Fragmented Light
 						i(44377),	-- Woven Steel Necklace
 					},
-				})),
-				h(q(13206, {	-- Disarmament
+				}),
+				q(13206, {	-- Disarmament
+					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
 					["groups"] = {
 						i(44400),	-- Necklace of Calm Skies
@@ -45,8 +38,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(44402),	-- Tiled-Stone Pendant
 						i(44403),	-- Amulet of Constrained Power
 					},
-				})),
-				a(q(29803,{ 	-- Ears of the Lich King
+				}),
+				q(29803,{ 	-- Ears of the Lich King
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24111 },	-- Defender Mordun
 					["groups"] = {
 						i(39679), 	-- Runecaster's Bracers
@@ -54,25 +48,27 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(39678), 	-- Vendetta Bindings
 						i(39676), 	-- Wraps of the San'layn
 					},
-				})),
-				h(q(11262, {	-- Ingvar Must Die!
+				}),
+				q(11262, {	-- Ingvar Must Die!
+					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
 					["groups"] = {
 						i(38218),	-- Executioner's Band
 						i(38219),	-- Ring of Decimation
 						i(38220),	-- Signet of Swift Judgement
 					},
-				})),
-				a(q(29763, {	-- Stealing Their Thunder
+				}),
+				q(29763, {	-- Stealing Their Thunder
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24111 },	-- Defender Mordun
 					["groups"] = {
 						i(38218),	-- Executioner's Band
 						i(38219),	-- Ring of Decimation
 						i(38220),	-- Signet of Swift Judgement
 					},
-				})),
+				}),
 			}),
-			d(  1, {	-- Normal
+			d(1, {	-- Normal
 				n(0, {	-- Zone Drop
 					{	-- Skein Woven Mantle
 						["itemID"] = 35580,	-- Skein Woven Mantle

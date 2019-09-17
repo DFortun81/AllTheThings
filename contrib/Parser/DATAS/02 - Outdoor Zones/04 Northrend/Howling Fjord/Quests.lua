@@ -527,6 +527,17 @@ _.Zones =
 						i(35867),	-- Nimblefinger Band
 					},
 				}),
+				q(11272,{ 	-- A Score to Settle
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23780 },	-- High Executor Anselm
+					["sourceQuest"] = 11234,
+					["groups"] = {
+						i(39679), 	-- Runecaster's Bracers
+						i(39680),	-- Vambraces of the Vengeance Bringer
+						i(39678), 	-- Vendetta Bindings
+						i(39676), 	-- Wraps of the San'layn
+					},
+				}),
 				q(11305, {	-- A Tailor-Made Formula
 					["races"] = HORDE_ONLY,
 					["g"] = {
