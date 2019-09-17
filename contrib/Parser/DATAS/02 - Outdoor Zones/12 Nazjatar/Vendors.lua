@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-2, {	-- Vendors
+		n(-2, {		-- Vendors
 			n(153510, {	-- Artisan Itanu
 				["coord"] = { 37.8, 55.7, 1355 },
 				["races"] = ALLIANCE_ONLY,

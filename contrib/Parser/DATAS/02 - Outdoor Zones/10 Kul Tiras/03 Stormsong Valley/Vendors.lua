@@ -15,7 +15,7 @@ _.Zones =
 						i(160538, {	-- Cape of the Scroll Keepers*
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(163513, {	-- Cou'pa
+						i(163513, {	-- Cou'pa (PET!)
 							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 						}),
 						i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike (Rank 3)

@@ -146,7 +146,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(148024, {	-- Dodger
+				n(148024, {	-- Dodger <Pet Smuggler>
 					["description"] = "To unlock this vendor, win PvP pet battles until the mission \"A Shady Message\" spawns.  Complete the mission, and you'll be able to purchase items from the vendor.  It could take 1, 10, 100 or 1,000 PvP pet battles before it spawns.",
 					["coord"] = { 68.9, 17.0, 1161 },
 					["races"] = ALLIANCE_ONLY,
@@ -817,7 +817,22 @@ _.Zones =
 						}),
 					},
 				}),
-				n(142691, {	-- Tricky Nick
+				n(149045, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
+					["currencyID"] = 1718,	-- Titan Residuum
+					["coord"] = { 71.7, 13.7, 1161 },
+					["g"] = {
+						i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
+							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+						}),
+						i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
+							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+						}),
+						i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
+							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+						}),
+					},
+				}),
+				n(142691, {	-- Tricky Nick <Shady Vendor>
 					["coord"] = { 56.7, 47.0, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

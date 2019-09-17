@@ -176,10 +176,13 @@ _.Zones =
 					["provider"] = { "n", 135441 },	-- Zolani
 				}),
 				i(163621, {	-- Rusted Horde Insignia
-					q(53116, {	-- Rusted Horde Insignia
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-					}),
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						q(53116, {	-- Rusted Horde Insignia
+							["races"] = HORDE_ONLY,
+							["repeatable"] = true,
+						}),
+					},
 				}),
 				q(52834, {	-- Seal of Wartorn Fate: Gold
 					["coord"] = { 53.9, 88.4, 1165 },
