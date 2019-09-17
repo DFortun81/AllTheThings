@@ -116,9 +116,12 @@ _.NeverImplemented =
 		-------------------
 		--     WOTLK     --
 		-------------------
-		q(35472),	-- Culling of Stratholme normal completion
-		q(35473),	-- Culling of Stratholme bonus objective (kill the infinite corruptor)
-		q(35474),	-- Culling of Stratholme heroic completion (kill Mal'ganis)
+		
+		q(35489),	-- Ahn'Kahet: The Old Kingdom normal completion
+		q(35490),	-- Ahn'Kahet: The Old Kingdom heroic completion
+		q(35493),	-- Ahn'Kahet: The Old Kingdom bonus objective completed (kill Amanitar, heroic only)
+		q(35497),	-- Azjol-nerub normal completion
+		q(35498),	-- Azjol-nerub heroic completion
 		q(35483),	-- Drak'tharon Keep normal completion
 		q(35484),	-- Drak'tharon Keep heroic completion
 		q(35477),	-- Gundrak bonus objective completion (Kill Ekk the Ferocious)
@@ -132,15 +135,23 @@ _.NeverImplemented =
 		q(35468),	-- Halls of Stone heroic completion
 		q(35438),	-- Pit of Saron normal completion
 		q(35440),	-- Pit of Saron heroic completion
+		q(35472),	-- The Culling of Stratholme normal completion
+		q(35473),	-- The Culling of Stratholme bonus objective (kill the infinite corruptor)
+		q(35474),	-- The Culling of Stratholme heroic completion (kill Mal'ganis)
 		q(35436),	-- The Forge of Souls normal completion
 		q(35437),	-- The Forge of Souls heroic completion
+		q(35513),	-- The Nexus normal completion
+		q(35514),	-- The Nexus heroic completion
+		q(35515),	-- The Nexus bonus objective complete (kill Commander Stoutbeard)
+		q(35446),	-- The Oculus normal completion
+		q(35447),	-- The Oculus heroic completion
+		q(35478),	-- The Violet Hold normal completion
+		q(35480),	-- The Violet Hold heroic completion
 		q(35950),	-- Trial of the Champion heroic completion) (possibly shared with normal?)
 		q(35502),	-- Utgarde Keep normal completion
 		q(35512),	-- Utgarde Keep heroic completion
 		q(35449),	-- Utgarde Pinnacle normal completion
 		q(35453),	-- Utgarde Pinnacle heroic completion
-		q(35478),	-- Violet Hold normal completion
-		q(35480),	-- Violet Hold heroic completion
 		
 		
 		-------------------
