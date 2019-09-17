@@ -814,7 +814,8 @@ _.NeverImplemented =
 		q(53269),	-- killed Taloc the Corrupted in LFR
 
 	--	Battle of Dazar'alor
-		q(55024),	-- Battle of Dazar'alor — LFR, moving into the hallway after Opulence (not a killID -- this triggered in chat while i was in combat with the trash in the hall)
+		q(54963),	-- LFR, cinematic at the start of Siege of Dazar'alor wing
+		q(55024),	-- LFR, moving into the hallway after Opulence (not a killID -- this triggered in chat while i was in combat with the trash in the hall)
 		
 	--	Eternal Palace
 		q(56527),	-- Queen Azshara killed (LFR)
