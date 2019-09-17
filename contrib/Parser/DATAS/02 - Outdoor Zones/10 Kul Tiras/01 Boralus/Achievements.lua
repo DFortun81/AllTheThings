@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
 				ach(12891, {	-- A Nation United
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
