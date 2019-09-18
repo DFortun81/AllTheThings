@@ -439,12 +439,16 @@ _.NeverImplemented =
 	--	secondary quests don't seem to be tied to loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
 		q(48982),	-- Invasion Point: Aurinor
 		q(49099),	-- Invasion Point: Bonich
+		q(49098),	-- Invasion Point: Cen'gar
+		q(49096),	-- Invasion Point: Naigtal
 		q(49097),	-- Invasion Point: Sangua
 		q(49091),	-- Invasion Point: Val
 		q(49213),	-- triggered upon completing Aurinor, but not the official quest.
 		q(49215),	-- triggered upon completing Bonich, but not the official quest.
+		q(49211),	-- triggered upon completing Cen'gar, but not the official quest.  Gorgolath killID?
+		q(49214),	-- triggered upon completing Naigtal, but not the official quest.  Fel Lord Kaz'ral killID?
 		q(49212),	-- triggered upon completing Sangua, but not the official quest.
-		q(49210),	-- triggered upon completing Val, but not the official quest.
+		q(49210),	-- triggered upon completing Val, but not the official quest.  Baldrazar killID?
 		
 	--	Treasures
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
@@ -456,6 +460,8 @@ _.NeverImplemented =
 		q(42297),	-- Azsuna - Treasure 039 (Large) - Mountain Top — looted treasure chest near Felwing encounter
 		q(38369),	-- 7.0 Val'sharah - Treasure 006 - Ravencourt - twh — Small Treasure Chest (39.9, 54.6)
 		q(39080),	-- 7.0 Val'sharah - Treasure 032 - Heathrow Manor - twh — Small Treasure Chest inside the cellar of Heathrow Manor
+		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
+		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
 		
 	--	putting bonus objectives here because it'd be impossible to do them all unless you locked your XP and did all the quests in every legion zone.
 	--	they aren't automatically up as soon as you're 100; most of them are locked behind specific questlines, and then they all disappear as soon as you hit 110.

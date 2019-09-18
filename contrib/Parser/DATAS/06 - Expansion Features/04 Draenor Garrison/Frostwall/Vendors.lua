@@ -5,28 +5,40 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			n(-2, {   	-- Vendors
+			n(-2, {		-- Vendors
 				n(88779, {	-- Benjamin Brode <Traveling Merchant>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(119210), 		-- Hearthstone Board
-						i(119212), 		-- Winning Hand
+						i(119210, {	-- Hearthstone Board (TOY!)
+							["cost"] = 10000000,	-- 1,000g
+						}),
+						i(119212),	-- Winning Hand (TOY!)
 					},
 				}),
 				n(91034, {	-- Calvo Klyne <Fur Trader>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122716),	-- Pattern: Primal Weaving
-						i(120945),	-- Primal Spirit
-						i(127724),	-- Recipe: Mighty Hexweave Essence
-						i(127742),	-- Recipe: Savage Hexweave Essence
+						i(122716, {	-- Pattern: Primal Weaving
+							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
+						}),
+						i(120945, {	-- Primal Spirit
+							["cost"] = { { "i", 111557, 5 }, },		-- 5x Sumptuous Fur
+						}),
+						i(127724, {	-- Recipe: Mighty Hexweave Essence
+							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
+						}),
+						i(127742, {	-- Recipe: Savage Hexweave Essence
+							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
+						}),
 					},
 				}),
 				n(80285, {	-- Guh <Bladespire Trader>
+					["description"] = "|cff66ccffFound at 37.4,60.2 in Frostfire Ridge - speak with him to have him visit your garrison.|r",
 					["races"] = HORDE_ONLY,
-					["description"] = "|cff66ccffFound at 37.4,60.2 in Frostfire Ridge - Speak with him and have him visit your garrison.|r",
 					["g"] = {
-						i(119430),	-- Gas-Powered Stick
+						i(119430, {	-- Gas-Powered Stick
+							["cost"] = 10000000,	-- 1,000g
+						}),
 					},
 				}),
 				n(76928, {	-- Kraank <Food & Drink>
@@ -44,109 +56,175 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(119255, {	-- Contract: Bruto
-							follower(176),	-- Bruto
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(176),	-- Bruto
+							},
 						}),
 						i(119245, {	-- Contract: Dark Ranger Velonara
-							follower(453),	-- Dark Ranger Velonara
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(453),	-- Dark Ranger Velonara
+							},
 						}),
 						i(122135, {	-- Contract: Greatmother Geyah
-							follower(186),	-- Greatmother Geyah
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(186),	-- Greatmother Geyah
+							},
 						}),
 						i(122136, {	-- Contract: Kal'gor the Honorable
-							follower(184),	-- Kal'gor the Honorable
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(184),	-- Kal'gor the Honorable
+							},
 						}),
 						i(119233, {	-- Contract: Kaz the Shrieker
-							follower(159),	-- Kaz the Shrieker
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(159),	-- Kaz the Shrieker
+							},
 						}),
 						i(119240, {	-- Contract: Lokra
-							follower(185),	-- Lokra
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(185),	-- Lokra
+							},
 						}),
 						i(119243, {	-- Contract: Magister Krelas
-							follower(154),	-- Magister Krelas
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(154),	-- Magister Krelas
+							},
 						}),
 						i(119418, {	-- Contract: Morketh Bladehowl
-							follower(155),	-- Morketh Bladehowl
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(155),	-- Morketh Bladehowl
+							},
 						}),
 						i(119257, {	-- Contract: Penny Clobberbottom
-							follower(211),	-- Penny Clobberbottom
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(211),	-- Penny Clobberbottom
+							},
 						}),
 						i(119253, {	-- Contract: Spirit of Bony Xuk
-							follower(212),	-- Spirit of Bony Xuk
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(212),	-- Spirit of Bony Xuk
+							},
 						}),
 						i(114825, {	-- Contract: Ulna Thresher
 							follower(463),	-- Ulna Thresher
 						}),
 						i(119267, {	-- Contract: Ziri'ak
-							follower(168),	-- Ziri'ak
+							["cost"] = 50000000,	-- 5,000g
+							["g"] = {
+								follower(168),	-- Ziri'ak
+							},
 						}),
 					},
 				}),
 				n(91031, {	-- Nicholas Mitrik <Herb Trader>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(108996, {	-- Alchemical Catalyst
-							i(122599, {	-- Tome of Sorcerous Elements
-								["spellID"] = 0,
-								["g"] = {
-									recipe(181637),	-- Transmute: Sorcerous Air to Earth
-									recipe(181633),	-- Transmute: Sorcerous Air to Fire
-									recipe(181636),	-- Transmute: Sorcerous Air to Water
-									recipe(181631),	-- Transmute: Sorcerous Earth to Air
-									recipe(181632),	-- Transmute: Sorcerous Earth to Fire
-									recipe(181635),	-- Transmute: Sorcerous Earth to Water
-									recipe(181627),	-- Transmute: Sorcerous Fire to Air
-									recipe(181625),	-- Transmute: Sorcerous Fire to Earth
-									recipe(181628),	-- Transmute: Sorcerous Fire to Water
-									recipe(181630),	-- Transmute: Sorcerous Water to Air
-									recipe(181629),	-- Transmute: Sorcerous Water to Earth
-									recipe(181634),	-- Transmute: Sorcerous Water to Fire
-								},
-							}),
-							i(122605, {	-- Tome of the Stones
-								["spellID"] = 0,
-								["g"] = {
-									recipe(181650),	-- Stone of Fire
-									recipe(181648),	-- Stone of the Earth
-									recipe(181649),	-- Stone of the Waters
-									recipe(181647),	-- Stone of Wind
-								},
-							}),
-							i(122600),	-- Recipe: Savage Blood
-							i(128160),	-- Recipe: Wildswater
-							i(128161),	-- Recipe: Elemental Distillate
+						i(120945, {	-- Primal Spirit
+							["cost"] = { { "i", 109125, 5 }, },	-- 5x Fireweed
 						}),
-						i(114931, {	-- Cerulean Pigment
-							i(128410),	-- Technique: Mass Mill Fireweed
-							i(128409),	-- Technique: Mass Mill Frostweed
-							i(128411),	-- Technique: Mass Mill Gorgrond Flytrap
-							i(128413),	-- Technique: Mass Mill Nagrand Arrowbloom
-							i(128412),	-- Technique: Mass Mill Starflower
-							i(128414),	-- Technique: Mass Mill Talador Orchid
-							i(127723),	-- Technique: Mighty Ensorcelled Tarot
-							i(127728),	-- Technique: Mighty Weapon Crystal
-							i(127741),	-- Technique: Savage Ensorcelled Tarot
-							i(127746),	-- Technique: Savage Weapon Crystal
-							i(141642),	-- Technique: Tome of the Clear Mind
-							i(122713),	-- Technique: The Spirit of War
+						i(128161, {	-- Recipe: Elemental Distillate
+							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
-						i(109125, {	-- Fireweed
-							i(120945),	-- Primal Spirit
+						i(122710, {	-- Recipe: Primal Alchemy
+							["cost"] = { { "i", 109127, 60 }, },	-- 60x Starflower
 						}),
-						i(109127, {	-- Starflower
-							i(122710),	-- Recipe: Primal Alchemy
+						i(122600, {	-- Recipe: Savage Blood
+							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
+						}),
+						i(128160, {	-- Recipe: Wildswater
+							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
+						}),
+						i(128410, {	-- Technique: Mass Mill Fireweed
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(128409, {	-- Technique: Mass Mill Frostweed
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(128411, {	-- Technique: Mass Mill Gorgrond Flytrap
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(128413, {	-- Technique: Mass Mill Nagrand Arrowbloom
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(128412, {	-- Technique: Mass Mill Starflower
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(128414, {	-- Technique: Mass Mill Talador Orchid
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(127723, {	-- Technique: Mighty Ensorcelled Tarot
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(127728, {	-- Technique: Mighty Weapon Crystal
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(127741, {	-- Technique: Savage Ensorcelled Tarot
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(127746, {	-- Technique: Savage Weapon Crystal
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(122713, {	-- Technique: The Spirit of War
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(141642, {	-- Technique: Tome of the Clear Mind
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
+						}),
+						i(122599, {	-- Tome of Sorcerous Elements
+							["spellID"] = 0,
+							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
+							["g"] = {
+								recipe(181637),	-- Transmute: Sorcerous Air to Earth
+								recipe(181633),	-- Transmute: Sorcerous Air to Fire
+								recipe(181636),	-- Transmute: Sorcerous Air to Water
+								recipe(181631),	-- Transmute: Sorcerous Earth to Air
+								recipe(181632),	-- Transmute: Sorcerous Earth to Fire
+								recipe(181635),	-- Transmute: Sorcerous Earth to Water
+								recipe(181627),	-- Transmute: Sorcerous Fire to Air
+								recipe(181625),	-- Transmute: Sorcerous Fire to Earth
+								recipe(181628),	-- Transmute: Sorcerous Fire to Water
+								recipe(181630),	-- Transmute: Sorcerous Water to Air
+								recipe(181629),	-- Transmute: Sorcerous Water to Earth
+								recipe(181634),	-- Transmute: Sorcerous Water to Fire
+							},
+						}),
+						i(122605, {	-- Tome of the Stones
+							["spellID"] = 0,
+							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
+							["g"] = {
+								recipe(181650),	-- Stone of Fire
+								recipe(181648),	-- Stone of the Earth
+								recipe(181649),	-- Stone of the Waters
+								recipe(181647),	-- Stone of Wind
+							},
 						}),
 					},
 				}),
 				n(91029, {	-- Rath'thul Moonvale <Dust Trader>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122711),	-- Formula: Temporal Binding
-						i(120945),	-- Primal Spirit
+						i(122711, {	-- Formula: Temporal Binding
+							["cost"] = { { "i", 111245, 5 }, },	-- 5x Luminous Shard
+						}),
+						i(120945, {	-- Primal Spirit
+							["cost"] = { { "i", 109693, 5 }, },	-- 5x Draenic Dust
+						}),
 					},
 				}),
 				n(79619, {	-- Rezlak <Blueprints Vendor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						i(111929),	-- Alchemy Lab, Level 2
 						i(118215, {	-- Book of Garrison Blueprints [Can learn all lvl 1 blueprints except Salvage Yard]
 							i(111812),	-- Alchemy Lab, Level 1
 							i(111959, {	-- Barn, Level 1 [Building must be attached in order for the blueprint to be collectible]
@@ -189,7 +267,6 @@ _.ExpansionFeatures =
 							}),
 						}),
 						i(111957),	-- Salvage Yard, Level 1
-						i(111929),	-- Alchemy Lab, Level 2
 						i(111968),	-- Barn, Level 2
 						i(111970),	-- Barracks, Level 2
 						i(111972),	-- Enchanter's Study, Level 2
@@ -324,41 +401,93 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(88228, {	-- Sergeant Grimjaw - Garrison Quartermaster
-					["crs"] = {79774},
+				n(88228, {	-- Sergeant Grimjaw <Garrison Quartermaster>
 					["races"] = HORDE_ONLY,
+					["crs"] = { 79774 },	-- Sergeant Grimjaw <Garrison Quartermaster> (secondary version)
 					["g"] = {
-						i(114931, {	-- Cerulean Pigment
-							i(141642),	-- Technique: Tome of the Clear Mind
+						i(120348, {	-- Enchanted Crystal of Freezing
+							["cost"] = { { "c", 824, 60 }, },	-- 60x Garrison Resources
 						}),
-						currency(824, {	-- Garrison Resources
-							i(122307),	-- Rush Order: Barn
-							i(122496),	-- Rush Order: Garden Shipment [Horde]
-							i(122487),	-- Rush Order: Gladiator's Sanctum
-							i(122501),	-- Rush Order: Goblin Workshop [Horde]
-							i(122502),	-- Rush Order: Mine Shipment [Horde]
-							i(128373),	-- Rush Order: Shipyard
-							i(122491),	-- Rush Order: War Mill [Horde]
-							i(122424),	-- Scouting Missive: Broken Precipice [Horde]
-							i(122418),	-- Scouting Missive: Darktide Roost [Horde]
-							i(122400),	-- Scouting Missive: Everbloom Wilds [Horde]
-							i(122402),	-- Scouting Missive: Iron Siegeworks [Horde]
-							i(122413),	-- Scouting Missive: Lost Veil Anzu [Horde]
-							i(122403),	-- Scouting Missive: Magnarok [Horde]
-							i(122421),	-- Scouting Missive: Mok'gol Watchpost [Horde]
-							i(122411),	-- Scouting Missive: Pillars of Fate [Horde]
-							i(122412),	-- Scouting Missive: Shattrath Harbor [Horde]
-							i(122408),	-- Scouting Missive: Skettis [Horde]
-							i(122416),	-- Scouting Missive: Socrethar's Rise [Horde]
-							i(122405),	-- Scouting Missive: Stonefury Cliffs [Horde]
-							i(133884),	-- Scouting Missive: The Heart of Shattrath [Horde]
-							i(133876),	-- Scouting Missive: The Pit [Horde]
-							i(122272),	-- Follower Ability Retraining Manual
-							i(122273),	-- Follower Trait Retraining Guide
-							i(120348),	-- Enchanted Crystal of Freezing
-							i(120347),	-- Enchanted Crystal of Replenishment
-							i(120349),	-- Enduring Vial of Swiftness
-							i(120182),	-- Excess Potion of Accelerated Learning
+						i(120347, {	-- Enchanted Crystal of Replenishment
+							["cost"] = { { "c", 824, 60 }, },	-- 60x Garrison Resources
+						}),
+						i(120349, {	-- Enduring Vial of Swiftness
+							["cost"] = { { "c", 824, 60 }, },	-- 60x Garrison Resources
+						}),
+						i(120182, {	-- Excess Potion of Accelerated Learning
+							["cost"] = { { "c", 824, 100 }, },	-- 100x Garrison Resources
+						}),
+						i(122272, {	-- Follower Ability Retraining Manual
+							["cost"] = { { "c", 824, 1000 }, },	-- 1,000x Garrison Resources
+						}),
+						i(122273, {	-- Follower Trait Retraining Guide
+							["cost"] = { { "c", 824, 1000 }, },	-- 1,000x Garrison Resources
+						}),
+						i(122307, {	-- Rush Order: Barn
+							["cost"] = { { "c", 824, 1000 }, },	-- 1,000x Garrison Resources
+						}),
+						i(122496, {	-- Rush Order: Garden Shipment
+							["cost"] = { { "c", 824, 300 }, },	-- 300x Garrison Resources
+						}),
+						i(122487, {	-- Rush Order: Gladiator's Sanctum
+							["cost"] = { { "c", 824, 1000 }, },	-- 1,000x Garrison Resources
+						}),
+						i(122501, {	-- Rush Order: Goblin Workshop
+							["cost"] = { { "c", 824, 1000 }, },	-- 1,000x Garrison Resources
+						}),
+						i(122502, {	-- Rush Order: Mine Shipment
+							["cost"] = { { "c", 824, 300 }, },	-- 300x Garrison Resources
+						}),
+						i(128373, {	-- Rush Order: Shipyard
+							["cost"] = { { "c", 824, 500 }, },	-- 500x Garrison Resources
+						}),
+						i(122491, {	-- Rush Order: War Mill
+							["cost"] = { { "c", 824, 1000 }, },	-- 1,000x Garrison Resources
+						}),
+						i(122424, {	-- Scouting Missive: Broken Precipice
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122418, {	-- Scouting Missive: Darktide Roost
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122400, {	-- Scouting Missive: Everbloom Wilds
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122402, {	-- Scouting Missive: Iron Siegeworks
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122413, {	-- Scouting Missive: Lost Veil Anzu
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122403, {	-- Scouting Missive: Magnarok
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122421, {	-- Scouting Missive: Mok'gol Watchpost
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122411, {	-- Scouting Missive: Pillars of Fate
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122412, {	-- Scouting Missive: Shattrath Harbor
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122408, {	-- Scouting Missive: Skettis
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122416, {	-- Scouting Missive: Socrethar's Rise
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(122405, {	-- Scouting Missive: Stonefury Cliffs
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(133884, {	-- Scouting Missive: The Heart of Shattrath
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(133876, {	-- Scouting Missive: The Pit
+							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+						}),
+						i(141642, {	-- Technique: Tome of the Clear Mind
+							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 					},
 				}),
@@ -405,7 +534,7 @@ _.ExpansionFeatures =
 					n(79812, {	-- Moz'def
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(122298), 		-- Bodyguard Miniaturization Device
+							i(122298),	-- Bodyguard Miniaturization Device
 						},
 					}),
 				}),
@@ -469,7 +598,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-121, {	-- Frostwall Tavern
-					n(87302, { 		-- Murg
+					n(87302, {	-- Murg
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(119207),
@@ -590,11 +719,11 @@ _.ExpansionFeatures =
 					}),
 				}),
 --[[
-				n(-116, { 		-- Tailoring Emporium
+				n(-116, {	-- Tailoring Emporium
 					n(79864, {	-- 	Warra the Weaver
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(115357), 		-- Teaches Sumptious cowl,leggings, robes, hexweave cloth, secrets of draenor tailoring
+							i(115357),	-- Teaches Sumptious cowl,leggings, robes, hexweave cloth, secrets of draenor tailoring
 							i(114852),
 							i(114853),
 							i(114854),
@@ -615,7 +744,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 --]]
-				n(-117, { 		-- The Forge
+				n(-117, {	-- The Forge
 					n(79867, {	-- Orgek Ironhand
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -657,7 +786,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-118, { 		-- The Tannery
+				n(-118, {	-- The Tannery
 					n(79834, {	-- Murne Greenhoof
 						["races"] = HORDE_ONLY,
 						["g"] = {

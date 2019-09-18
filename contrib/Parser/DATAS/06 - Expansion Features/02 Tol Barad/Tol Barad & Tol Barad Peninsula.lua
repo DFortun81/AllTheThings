@@ -4,7 +4,13 @@
 _.ExpansionFeatures =
 {
 	m(245, {	-- Tol Barad Peninsula
+		["achievementID"] = 4874,
+		["description"] = "|cff66ccffTol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.|r",
+		["lvl"] = 80,
 		["g"] = {
+			filter(101, {	-- Battle Pet
+				p(410),	-- Wharf Rat
+			}),
 			n(-17, {	-- Quests
 				q(28684, {	-- A Sticky Task
 					["lvl"] = 85,
@@ -491,22 +497,8 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			filter(101, { 	-- Pet Battle
-				p(410), 	-- Wharf Rat
-			}),
-			n(-16, { 	-- Rare
-				n(47676, { 	-- Baradin Fox
-					i(64403),  -- Fox Kit Pet
-				}),
-			}),
-			n(-38, { 	-- Profession
-				n(-188, { 	-- Mining
-					["g"] = {
-						i(67282), 	-- Pet Elementium Geode
-					},
-					["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
-				}),
-				prof(356, {
+			n(-38, {	-- Profession
+				prof(356, {	-- Fishing
 					o(207724, {	-- Shipwreck Debris
 						["g"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
@@ -524,65 +516,178 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
+				prof(186, {	-- Mining
+					i(67282),	-- Pet Elementium Geode
+				}),
+				
 			}),
-			n(-2, { 	-- Vendor
-				n(48531, {	-- Pogg
+			n(-2,  {	-- Vendor
+				n(48531, {	-- Pogg <Hellscream's Reach Quartermaster>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						currency(391, {	-- Tol Barad Commendation
-							i(65356), 	-- Drake of the West Wind (MOUNT!)
-							i(64999), 	-- Spectral Wolf (MOUNT!)
-							i(90898),	-- Fox Kit (PET!)
-							i(64996), 	-- Rustberg Gull (PET!)
-							i(64997), 	-- Tol Barad Searchlight (TOY!)
-							i(62454), 	-- Blade of the Fearless
-							i(62456), 	-- Dagger of Restless Nights
-							i(68740),	-- Darkheart Hacker
-							i(63378), 	-- Hellscream's Reach Tabard
-							i(62458), 	-- Insidious Staff
-							i(62457), 	-- Ravening Slicer
-							i(62459), 	-- Shimmering Morningstar
-							i(62460), 	-- Sky Piercer
-							i(62455), 	-- Spear of Trailing Shadows
-							i(63518),	-- Hellscream's Reach Commendation
-							i(68774),	-- Greater Inscription of Vicious Agility
-							i(68772),	-- Greater Inscription of Vicious Intellect
-							i(68773),	-- Greater Inscription of Vicious Strength
+						i(65176, {	-- Baradin Grunt's Talisman
+							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
+						}),
+						i(62454, {	-- Blade of the Fearless
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62456, {	-- Dagger of Restless Nights
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(68740, {	-- Darkheart Hacker
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(90898, {	-- Fox Kit (PET!)
+							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
+						}),
+						i(68774, {	-- Greater Inscription of Vicious Agility
+							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
+						}),
+						i(68772, {	-- Greater Inscription of Vicious Intellect
+							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
+						}),
+						i(68773, {	-- Greater Inscription of Vicious Strength
+							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
+						}),
+						i(63518, {	-- Hellscream's Reach Commendation
+							["cost"] = { { "c", 391, 10 }, },	-- 10x Tol Barad Commendation
+						}),
+						i(63378, {	-- Hellscream's Reach Tabard
+							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
+						}),
+						i(62464, {	-- Impatience of Youth
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
+						}),
+						i(62458, {	-- Insidious Staff
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62467, {	-- Mandala of Stirring Patterns
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
+						}),
+						i(62466, {	-- Mirror of Broken Images
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
+						}),
+						i(62457, {	-- Ravening Slicer
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(65356, {	-- Reins of the Drake of the West Wind (MOUNT!)
+							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
+						}),
+						i(64999, {	-- Reins of the Spectral Wolf (MOUNT!)
+							["cost"] = { { "c", 391, 165 }, },	-- 165x Tol Barad Commendation
+						}),
+						i(64996, {	-- Rustberg Gull (PET!)
+							["cost"] = { { "c", 391, 50 }, },	-- 50x Tol Barad Commendation
+						}),
+						i(62459, {	-- Shimmering Morningstar
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62460, {	-- Sky Piercer
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62455, {	-- Spear of Trailing Shadows
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62465, {	-- Stump of Time
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
+						}),
+						i(64997, {	-- Tol Barad Searchlight (TOY!)
+							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
+						}),
+						i(62463, {	-- Unsolvable Riddle
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
 						}),
 					},
 				}),
-				n(47328, {	-- Quartermaster Brazie
+				n(47328, {	-- Quartermaster Brazie <Baradin's Wardens Quartermaster>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						currency(391, {	-- Tol Barad Commendation
-							i(63039),	-- Drake of the West Wind (MOUNT!)
-							i(64998),	-- Spectral Steed (MOUNT!)
-							i(90897),	-- Fox Kit (PET!)
-							i(63355),	-- Rustberg Gull (PET!)
-							i(63141),	-- Tol Barad Searchlight (TOY!)
-							i(63379),	-- Baradin's Warden's Tabard
-							i(62473),	-- Blade of the Fearless
-							i(62475),	-- Dagger of Restless Nights
-							i(68739),	-- Darkheart Hacker
-							i(62477),	-- Insidious Staff
-							i(62476),	-- Ravening Slicer
-							i(62478),	-- Shimmering Morningstar
-							i(62479),	-- Sky Piercer
-							i(62474),	-- Spear of Trailing Shadows
-							i(63517),	-- Baradin's Wardens Commendation
-							i(68774),	-- Greater Inscription of Vicious Agility
-							i(68772),	-- Greater Inscription of Vicious Intellect
-							i(68773),	-- Greater Inscription of Vicious Strength
+						i(65175, {	-- Baradin Footman's Tags
+							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
+						}),
+						i(63517, {	-- Baradin's Wardens Commendation
+							["cost"] = { { "c", 391, 10 }, },	-- 10x Tol Barad Commendation
+						}),
+						i(63379, {	-- Baradin's Warden's Tabard
+							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
+						}),
+						i(62473, {	-- Blade of the Fearless
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62475, {	-- Dagger of Restless Nights
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(68739, {	-- Darkheart Hacker
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(90897, {	-- Fox Kit (PET!)
+							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
+						}),
+						i(68774, {	-- Greater Inscription of Vicious Agility
+							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
+						}),
+						i(68772, {	-- Greater Inscription of Vicious Intellect
+							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
+						}),
+						i(68773, {	-- Greater Inscription of Vicious Strength
+							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
+						}),
+						i(62469, {	-- Impatience of Youth
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
+						}),
+						i(62477, {	-- Insidious Staff
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62472, {	-- Mandala of Stirring Patterns
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
+						}),
+						i(62471, {	-- Mirror of Broken Images
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
+						}),
+						i(62476, {	-- Ravening Slicer
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(63039, {	-- Reins of the Drake of the West Wind (MOUNT!)
+							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
+						}),
+						i(64998, {	-- Reins of the Spectral Steed (MOUNT!)
+							["cost"] = { { "c", 391, 165 }, },	-- 165x Tol Barad Commendation
+						}),
+						i(63355, {	-- Rustberg Gull (PET!)
+							["cost"] = { { "c", 391, 50 }, },	-- 50x Tol Barad Commendation
+						}),
+						i(62478, {	-- Shimmering Morningstar
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62479, {	-- Sky Piercer
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62474, {	-- Spear of Trailing Shadows
+							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
+						}),
+						i(62470, {	-- Stump of Time
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
+						}),
+						i(63141, {	-- Tol Barad Searchlight (TOY!)
+							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
+						}),
+						i(62468, {	-- Unsolvable Riddle
+							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
 						}),
 					},
 				}),
 			}),
-			m(244, { 	-- Tol Barad
+			n(0,   {	-- Zone Drop
+				n(47676, {	-- Baradin Fox
+					i(64403),  -- Fox Kit Pet
+				}),
+			}),
+			m(244, {	-- Tol Barad
 				["description"] = "|cff66ccffTol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.|r",
 				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
 				["maps"] =  { 773 },	-- Tol Barad (used in "An Eye for a Scepter" Warlock artifact scenario
 				["g"] = {
-					n(-17, { 	-- Quests
+					n(-17, {	-- Quests
 						q(28122, {	-- A Huge Problem
 							["lvl"] = 85,
 							["isDaily"] = true,
@@ -872,19 +977,13 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-38, { 	-- Profession
-						n(-188, { 	-- Mining
-							["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
-							["g"] = {
-								i(67282), 	-- Pet Elementium Geode
-							},
+					n(-38, {	-- Profession
+						prof(186, {	-- Mining
+							i(67282),	-- Pet Elementium Geode
 						}),
 					}),
 				},
 			}),
 		},
-		["description"] = "|cff66ccffTol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.|r",
-		["achievementID"] = 4874,
-		["lvl"] = 80,
 	}),
 };
