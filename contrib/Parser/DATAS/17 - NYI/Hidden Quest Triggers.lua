@@ -667,6 +667,7 @@ _.NeverImplemented =
 	-- Chests
 		q(50710),	-- Zuldazar repeatable random chest
 		q(50711),	-- Zuldazar repeatable random chest
+		q(50712),	-- Zuldazar repeatable random chest
 		q(50715),	-- Zuldazar repeatable random chest
 		q(50716),	-- Zuldazar repeatable random chest
 		q(50719),	-- Zuldazar repeatable random chest
