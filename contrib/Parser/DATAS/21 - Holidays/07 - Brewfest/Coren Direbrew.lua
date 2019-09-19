@@ -5,27 +5,29 @@ _.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
 		n(23872, { 	-- Coren Direbrew
-			["groups"] = {
-				un(24, i(149752, {	-- Keg-Shaped Treasure Box [Uncommon Quality]
-					["groups"] = bubbleDown({["u"] = 24}, {
+			["description"] = "|cff66ccffYou can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.|r",
+			["maps"] = {
+				242,	-- Blackrock Depths
+				243,	-- Blackrock Depths
+			},
+			["g"] = {
+				un(24, i(149752, {	-- Keg-Shaped Treasure Box		(Uncommon Quality)
+					["lvl"] = 46,
+					["g"] = bubbleDown({["u"] = 24}, {
 						i(117378), 	-- Direbrew's Bloodied Shanker
 						i(150922), 	-- Terrific Tankard O'Terror
 						i(117379), 	-- Tremendous Tankard O'Terror
 						i(37863),	-- Direbrew's Remote
 					}),
-					["lvl"] = 46,
 				})),
-				un(24, i(117393, {	-- Keg-Shaped Treasure Chest [Epic Quality]
-					["groups"] = bubbleDown({["u"] = 24}, {
+				un(24, i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
+					["lvl"] = 98,
+					["g"] = bubbleDown({["u"] = 24}, {
 						i(37828, {	-- Great Brewfest Kodo
-							["groups"] = {
-								ach(3496),	-- A Brew-FAST Mount
-							},
+							ach(3496),	-- A Brew-FAST Mount
 						}),
 						i(33977, {	-- Swift Brewfest Ram
-							["groups"] = {
-								ach(3496),	-- A Brew-FAST Mount
-							},
+							ach(3496),	-- A Brew-FAST Mount
 						}),
 						un(2, i(71331)), 	-- Direbrew's Bloodied Shanker [Level 85]
 						un(2, i(107217)),	-- Direbrew's Bloodied Shanker [Level 90]
@@ -36,7 +38,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(117379), 	-- Tremendous Tankard O'Terror [Level 100+]
 						i(37863),	-- Direbrew's Remote
 					}),
-					["lvl"] = 98,
 				})),
 				un(2, i(37597)),	-- Direbrew's Shanker [Level 70]
 				un(2, i(37128)),	-- Balebrew Charm [Level 70]
@@ -71,23 +72,16 @@ _.Holidays = bubbleDown({["u"] = 24},
 				un(24, i(117360)),	-- Coren's Cold Chromium Coaster [Level 100+]
 				un(24, i(117358)),	-- Mithril Wristwatch [Level 100+]
 				un(24, i(117359)),	-- Thousand-Year Pickled Egg [Level 100+]
-				{
-					["itemID"] = 38280,		-- Direbrew's Dire Brew
-					["questID"] = 12491,	-- Direbrew's Dire Brew
-					["u"] = 24,
+				q(12491, {	-- Direbrew's Dire Brew
+					["provider"] = { "i", 38280 },	-- Direbrew's Dire Brew
 					["races"] = ALLIANCE_ONLY,
-				},
-				{
-					["itemID"] = 38281,		-- Direbrew's Dire Brew
-					["questID"] = 12492,	-- Direbrew's Dire Brew
 					["u"] = 24,
+				}),
+				q(12492, {	-- Direbrew's Dire Brew
+					["provider"] = { "i", 38281 },	-- Direbrew's Dire Brew
 					["races"] = HORDE_ONLY,
-				},
-			},
-			["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",
-			["maps"] = {
-				242,	-- Blackrock Depths
-				243,	-- Blackrock Depths
+					["u"] = 24,
+				}),
 			},
 		}),
 	}),

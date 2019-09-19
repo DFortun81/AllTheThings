@@ -5,10 +5,10 @@ _.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
 		n(-40, {	-- Legacy
-			["groups"] = {
+			["g"] = {
 				n(-17, {	-- Quests
 					q(11454, {	-- Seek the Saboteurs
-						["u"] = 40,
+						["u"] = 40,	-- Legacy Quests
 						["provider"] = { "o", 186881 },	-- Dark Iron Sabotage Plans
 						["maps"] = {
 							1,	-- Durotar
@@ -22,7 +22,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 					--[[
 					q(11486, {	-- The Best of Brews (Alliance)
-						["groups"] = {
+						["g"] = {
 							un(2, i(34140)),	-- Dark Iron Tankard
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -32,7 +32,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["maps"] = { 242, },	-- Blackrock Depths
 					}),
 					q(11487, {	-- The Best of Brews (Horde)
-						["groups"] = {
+						["g"] = {
 							un(2, i(34140)),	-- Dark Iron Tankard
 						},
 						["provider"] = { "n", 23872 },	-- Coren Direbrew
@@ -80,7 +80,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 					--]]
 					i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
-						["groups"] = {
+						["g"] = {
 							q(11419, {	-- Brewfest Riding Rams
 								
 								["maps"] = { 27, },	-- Dun Morogh
@@ -91,7 +91,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["u"] = 40,	-- Legacy Quest/Quest Item
 					}),
 					i(33978, {	-- "Honorary Brewer" Hand Stamp (Horde)
-						["groups"] = {
+						["g"] = {
 							q(11400, {	-- Brewfest Riding Rams
 								
 								["maps"] = { 1, },	-- Durotar
